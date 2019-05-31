@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: plain
 title:  "Emise CO<sub>2</sub> v ČR"
 categories: sections
 weight: 2

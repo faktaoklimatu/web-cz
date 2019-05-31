@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: plain
 title:  "Změna teplot v ČR a ve světě"
 categories: sections
 weight: 1
