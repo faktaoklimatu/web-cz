@@ -13,18 +13,17 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fakta</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Změny teplot v ČR a ve světě</a>
-                        <a class="dropdown-item" href="#">Emise CO<sub>2eq</sub> ČR</a>
-                        <a class="dropdown-item" href="#">Body zvratu</a>
-                        <a class="dropdown-item" href="#">CO<sub>2eq</sub> rozpočet</a>
-                        <a class="dropdown-item" href="#">Predikce a dopady v ČR</a>
+                        {% assign sorted_sections = (site.categories.sections | sort: 'weight') %}
+                        {% for section in sorted_sections %}
+                          <a class="dropdown-item" href="#{{ section.id }}">{{ section.title }}</a>
+                        {% endfor %}
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tvůrci</a>
+                    <a class="nav-link" href="#creators">Tvůrci</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontakt</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
                 </li>
             </ul>
         </div>

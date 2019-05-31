@@ -7,9 +7,33 @@
 <body>
   {% include navigation.html %}
   <main role="main" class="container">
-    {% for section in site.categories.sections %}
-      {{ section.output }}
+    {% assign sorted_sections = (site.categories.sections | sort: 'weight') %}
+    {% for section in sorted_sections %}
+      <div class="section" id="{{ section.id }}">
+        {{ section.output }}
+      </div>
     {% endfor %}
+
+    <div class="section" id="creators">
+      <h1>Kdo stojí za tímto webem</h1>
+      <ul>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+        <li>Josef Novák</li>
+      </ul>
+    </div>
+
+    <div class="section" id="contact">
+      <h1>Kontakt</h1>
+      Foo bar
+    </div>
   </main>
   {% include scripts.html %}
 </body>
