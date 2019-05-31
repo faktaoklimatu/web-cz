@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Page title
+layout: home
+title: Přehled
 ---
-
-# Hello climate!
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
