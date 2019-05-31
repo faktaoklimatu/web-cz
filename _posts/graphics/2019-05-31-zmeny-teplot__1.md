@@ -12,21 +12,22 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant 
 
 
 <div class="row" markdown="on">
-    <div class="col">
-        <img src="{{ page.image }}" alt="{{ page.title }}">
+    <div class="col-sm-12 col-md-8">
+        <img class="graphics-image" src="{{site.baseurl}}/{{ page.image }}" alt="{{ page.title }}">
     </div>
     <div class="col">
-        asdfasdas
-        # Zdroj dat
+        <h2>Data</h2>
+        <p>
+            <a href="" class="btn btn-primary" role="button">Naše zdrojová data</a><br>
+            <a href="" class="btn btn-default" role="button">Původní zdrojová data</a>
+        </p>
+      
+        <h2>Licence</h2>
+        <p>Licence jednotlivých infografik je TBD.</p>
+        
+        <h2>Další odkazy</h2>
+        <ul>
+            <li><a href="https://example.com">Example.com</a></li>
+        </ul>
     </div>
 </div>
-
-## Zdroj dat
-
-Autor, link, licence
-
-## Datové zdroje
-
-- Původní datový soubor
-- Zpracovaný datový soubor
-- Další podklady

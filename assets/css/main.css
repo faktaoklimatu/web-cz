@@ -3,5 +3,10 @@ body {
 }
 
 .section {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.graphics-image {
+    max-width: 100%;
 }
