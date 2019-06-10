@@ -4,6 +4,7 @@ email:
 author:
 description:
 url:
+contact: repli2dev@gmail.com
 
 # Build settings
 permalink: /:categories/:title/

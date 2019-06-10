@@ -2,7 +2,7 @@
 
 {% capture tag %}{{ page.id | slugify }}{% endcapture %}
 
-{% assign sorted_graphics = (site.categories.graphics | sort: 'weight') %}
+{% assign sorted_graphics = site.categories.graphics | sort: 'weight' %}
 {% for graphics in sorted_graphics %}
     {% if graphics.tags contains tag %}
         <a href="{{ graphics.url }}">{{ graphics.title }}</a>

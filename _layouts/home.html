@@ -6,33 +6,134 @@
 
 <body>
   {% include navigation.html %}
-  <main role="main" class="container">
-    {% assign sorted_sections = (site.categories.sections | sort: 'weight') %}
+  <main role="main">
+    <div class="section">
+        <div class="container">
+          <h1 class="intro">Fakta o změně<br>klimatu</h1>
+          <span class="intro-motto">Veřejně dostupné infografiky</span>
+          <p class="intro-about">Co najdeš na této stránce a s jakou myšlenkou to děláme. Sed convallis magna eu sem. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nulla non arcu lacinia neque faucibus fringilla. Duis pulvinar. Etiam commodo dui eget wisi. Fusce nibh. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante</p>
+        </div>
+    </div>
+    {% assign sorted_sections = site.categories.sections | sort: 'weight' %}
     {% for section in sorted_sections %}
       <div class="section" id="{{ section.id }}">
-        {{ section.output }}
+          <div class="container">
+            {{ section.output }}
+          </div>
       </div>
     {% endfor %}
 
+    <div class="section" id="datasets">
+        <div class="container">
+          <h1>Datové sady</h1>
+            <p>Všechna naše práce je podložena daty. Chceš si je projít důkladněji?</p>
+            <a href="" class="btn btn-primary">Datové sady</a>
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        <div class="container">
+          <h1>Další projekty</h1>
+
+            <div class="projects-grid d-flex justify-content-around align-content-between flex-wrap">
+                <a href="https://example.com">
+                    <div class="card project">
+                        <img src="https://picsum.photos/id/1044/200/200" class="card-img-top" alt="TBD">
+                        <div class="card-body">
+                            <p class="card-text"><b>Extinction Rebellion</b><br>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com">
+                    <div class="card project">
+                        <img src="https://picsum.photos/id/1054/200/200" class="card-img-top" alt="TBD">
+                        <div class="card-body">
+                            <p class="card-text"><b>Fridays for Future</b><br>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://example.com">
+                    <div class="card project">
+                        <img src="https://picsum.photos/id/1064/200/200" class="card-img-top" alt="TBD">
+                        <div class="card-body">
+                            <p class="card-text"><b>People</b><br>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="partners">
+        <div class="container">
+          <h1>Partneři</h1>
+
+            <div class="partners-grid d-flex justify-content-around align-content-between flex-wrap">
+                <a href="https://example.com" class="partner-logo"><img src="https://camo.githubusercontent.com/e4923bf90c04345e43aada42486ebc4f9a3e56eb/687474703a2f2f7069676d656e742e6769746875622e696f2f66616b652d6c6f676f732f6c6f676f732f766563746f722f636f6c6f722f677265656e732d666f6f642d737570706c696572732e737667" /></a>
+                <a href="https://example.com" class="partner-logo"><img src="https://camo.githubusercontent.com/b9d65aaf5e5d1769f8bb0e04247ff6cfa0efa2ab/687474703a2f2f7069676d656e742e6769746875622e696f2f66616b652d6c6f676f732f6c6f676f732f766563746f722f636f6c6f722f666173742d62616e616e612e737667" /></a>
+                <a href="https://example.com" class="partner-logo"><img src="https://camo.githubusercontent.com/e4eb289d352d7c4cbb8493d6a212448036e3e2d2/687474703a2f2f7069676d656e742e6769746875622e696f2f66616b652d6c6f676f732f6c6f676f732f766563746f722f636f6c6f722f796f67612d626162792e737667" /></a>
+                <a href="https://example.com" class="partner-logo"><img src="https://camo.githubusercontent.com/e4923bf90c04345e43aada42486ebc4f9a3e56eb/687474703a2f2f7069676d656e742e6769746875622e696f2f66616b652d6c6f676f732f6c6f676f732f766563746f722f636f6c6f722f677265656e732d666f6f642d737570706c696572732e737667" /></a>
+            </div>
+        </div>
+    </div>
+
     <div class="section" id="creators">
-      <h1>Kdo stojí za tímto webem</h1>
-      <ul>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-        <li>Josef Novák</li>
-      </ul>
+        <div class="container">
+          <h1>Tvůrci</h1>
+
+            <div class="persons-grid d-flex justify-content-around align-content-between flex-wrap">
+                <div class="card person-card">
+                    <img src="https://picsum.photos/id/1044/200/200" class="card-img-top" alt="TBD">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card person-card">
+                    <img src="https://picsum.photos/id/1054/200/200" class="card-img-top" alt="TBD">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card person-card">
+                    <img src="https://picsum.photos/id/1064/200/200" class="card-img-top" alt="TBD">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card person-card">
+                    <img src="https://picsum.photos/id/1074/200/200" class="card-img-top" alt="TBD">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>Další lidé, kteří přispěli v různých formách podobě tohoto webu a dat, které na něm vidíte: Josef Novák, Jan František, Petra Votavová, Tereza Svobodová, Anna Tomášů.</p>
+        </div>
     </div>
 
     <div class="section" id="contact">
-      <h1>Kontakt</h1>
-      Foo bar
+        <div class="container">
+          <h1>Kontakt</h1>
+
+            <p>Kontaktovat nás můžete na e-mailové adrese <a href="mailto:{{ site.contact }}">{{ site.contact }}</a> a nebo skrze formulář níže.</p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-6">
+                    <form action="https://formspree.io/{{ site.contact }}" method="post">
+                        <div class="form-group">
+                            <label for="email">Vaše e-mailová adresa</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Váš e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Vaše zpráva</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
   </main>
   {% include scripts.html %}

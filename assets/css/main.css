@@ -1,5 +1,40 @@
 body {
     padding-top: 5rem;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #000080;
+    font-size: 1.0rem;
+    background: #F7F7F7;
+    position: relative;
+}
+
+span.intro-motto {
+    text-transform: uppercase;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    width: 15.2rem;
+    word-spacing: 10rem;
+    margin-top: 1rem;
+}
+
+h1.intro {
+    font-size: 4.5rem;
+}
+
+p.intro-about {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 19rem;
+    margin-top: -3.5rem;
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-weight: bold !important;
+    text-transform: uppercase;
 }
 
 .section {
@@ -7,6 +42,115 @@ body {
     padding-bottom: 3rem;
 }
 
+.section:nth-of-type(odd) {
+    background: white;
+}
 .graphics-image {
     max-width: 100%;
+}
+
+.bg-custom {
+    background: #F7F7F7;
+}
+
+a {
+    cursor: pointer;
+}
+.navbar-scrolled {
+    box-shadow: 0 3px 10px #e2e2ff;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000080;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:  #000000;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    font-weight: bold;
+    color: #000080;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.persons-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.person-card {
+    width: 12rem;
+    float: left;
+    margin: 1rem;
+}
+
+.partners-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.partner-logo {
+    float: left;
+    margin: 2rem;
+}
+
+.projects-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project {
+    width: 15rem;
+    float: left;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    span.intro-motto {
+        float: none;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        word-spacing: 0;
+        margin-bottom: 1rem;
+    }
+
+    p.intro-about {
+        padding-left: 0;
+        margin-top: 0;
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000080;
+    border-color: #000080;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
+a {
+    color: #000080;
+    text-decoration: underline;
 }

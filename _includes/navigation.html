@@ -1,23 +1,32 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-custom fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/">Fakta o klimatu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Zobrazit/skrýt navigaci">
+        <a class="navbar-brand d-lg-none d-xl-none" href="/">Fakta o klimatu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Zobrazit/skrýt navigaci">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
                     <a class="nav-link" href="/">Úvod</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fakta</a>
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         {% assign sorted_sections = (site.categories.sections | sort: 'weight') %}
                         {% for section in sorted_sections %}
                           <a class="dropdown-item" href="/#{{ section.id }}">{{ section.title }}</a>
                         {% endfor %}
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#datasets">Datové sady</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#projects">Další projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#partners">Partneři</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/#creators">Tvůrci</a>
