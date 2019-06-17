@@ -49,10 +49,3 @@ Na webu https://www.faktaoklimatu.cz (https://mukrop.github.io/faktaoklimatu/) s
 na GitHubu.
 
 V případě potíží zůstane k dispozici stará verze a důvod selhání bude potřeba získat skrze správce, tím je vlastník tohoto repozitáře.
-
-## Funkcionalita k dokončení
-
-- Galerie
-- Lightboxy
-- ScrollSpy v hlavním menu
-- Layout lightboxu a stránky detailu infografiky
