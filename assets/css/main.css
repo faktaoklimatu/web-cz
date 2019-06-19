@@ -154,3 +154,13 @@ a {
     color: #000080;
     text-decoration: underline;
 }
+
+img.infographic-link {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #aaaaaa;
+}
+
+img.infographic-link:hover {
+    border-color: #000080;
+}
