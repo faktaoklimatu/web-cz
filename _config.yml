@@ -1,10 +1,10 @@
 # Site settings
-title:
-email:
+title: Fakta o změně klimatu
+email: info@faktaoklimatu.cz
 author:
-description:
-url:
-contact: repli2dev@gmail.com
+description: Veřejně dostupné infografiky o změně klimatu země
+url: https://faktaoklimatu.cz
+contact: info@faktaoklimatu.cz
 
 # Build settings
 permalink: /:categories/:title/
