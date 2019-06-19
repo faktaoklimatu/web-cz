@@ -6,7 +6,7 @@ Nahrávání obsahu vyžaduje drobné technické zkušenosti, schopnost pracovat
 
 Obsah je členěn do sekcí, ke kterým je jedna či více info grafik, které odkazují vždy jeden obrázek.
 
-Jednotlivé sekce
+## Jednotlivé sekce
 
 ### Vytvoření sekce
 
