@@ -7,6 +7,36 @@
 <body>
   {% include navigation.html %}
   <main role="main" class="container">
+
+    <h1><a href="/">&lt;</a> {{ page.title }}</h1>
+
+    <div class="row" markdown="on">
+        <div class="col-sm-12 col-md-8">
+            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
+            <p>{{ page.caption }}</p>
+        </div>
+        <div class="col">
+            <h2>Sdílení</h2>
+            FB, Twitter, Ig, ...
+
+            <h2>Na stažení</h2>
+            PDF, SVG, PNG, ...
+
+            <h2>Podkladová data</h2>
+            <a href="" class="btn btn-primary" role="button">Naše zdrojová data</a><br>
+
+            <h2>Licence</h2>
+            <p>Licence jednotlivých infografik je TBD.</p>
+
+            <h2>Data</h2>
+            <p>
+                
+                <a href="" class="btn btn-default" role="button">Původní zdrojová data</a>
+            </p>
+
+            </ul>
+        </div>
+    </div>
     {{ content }}
   </main>
   {% include scripts.html %}
