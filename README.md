@@ -19,13 +19,13 @@ Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váho
 
 Zobrazují se v galerii na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku v `_posts/graphics/`.
 Názvy souborů musí mít vždy formát `YYYY-MM-DD-<SLUG>.md`. Pro přehlednost je doporučeno dávat název souboru stejný jako u sekce a
-rozlišovat je pomocí číselného suffixu (`__2.md`).
+rozlišovat je pomocí číselného suffixu (`-2.md`).
 
 Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci.
 Nezbytné pro správné zobrazení jsou následující tagy:
 
-- `tags: sections-zmeny-teplot`, zde zadejte název typu (`sections-`) doplněný o SLUG.
-- `image: assets/data/zmeny-teplot/zmeny-teplot-1.jpg` adresa v rámci repozitáře.
+- `tags: sections-teploty`, zde zadejte název typu (`sections-`) doplněný o SLUG.
+- `image: assets/data/teploty-1/zmeny-teplot-cr.jpg` adresa v rámci repozitáře.
 
 Obrázky jednotlivých grafik nahrávejte do složky `assets/data/` do struktury dle vlastního uvážení.
 
@@ -45,7 +45,6 @@ Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větv
 
 ## Jak nasadit novou verzi
 
-Na webu https://www.faktaoklimatu.cz (https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře
-na GitHubu.
+Na webu https://www.faktaoklimatu.cz (https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.
 
 V případě potíží zůstane k dispozici stará verze a důvod selhání bude potřeba získat skrze správce, tím je vlastník tohoto repozitáře.
