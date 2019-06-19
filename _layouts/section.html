@@ -26,12 +26,14 @@
                 <div class="modal fade" id="{{ graphics.url }}" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document" width="100%" >
                     <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">{{ graphics.title }}</h5>
+                      
+                        <div class="modal-header">
+                          <h2 class="modal-title" id="exampleModalLabel">{{ graphics.title }}</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
+                      
                       <div class="modal-body">
                         <div class="row">
                             <div class="col-1">
@@ -41,8 +43,7 @@
                             </div>
                             <div class="col-10">
                                 <img src="{{site.baseurl}}/{{ graphics.image }}" alt="{{ graphics.title }}" class="img-fluid" />
-
-                                {{ content }}
+                                <p>{{ graphics.caption }}</p>
                             </div>
                             <div class="col-1">
                                 <a class="carousel-control right" href="#/current/next" data-slide="next">
@@ -50,11 +51,12 @@
                                 </a>
                             </div>
                         </div>
-
                       </div>
+
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       </div>
+
                     </div>
                   </div>
                 </div>
