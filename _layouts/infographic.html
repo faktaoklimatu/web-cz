@@ -12,7 +12,7 @@
 
     <div class="row" markdown="on">
         <div class="col-sm-12 col-md-8">
-            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
+            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png" alt="{{ page.title }}">
             <p>{{ page.caption }}</p>
         </div>
         <div class="col">
@@ -20,10 +20,15 @@
             FB, Twitter, Ig, ...
 
             <h2>Na stažení</h2>
-            PDF, SVG, PNG, ...
+            <a href="{{ site.baseurl }}/{{ page.image }}.pdf">PDF</a>,
+            <a href="{{ site.baseurl }}/{{ page.image }}.svg">SVG</a>,
+            PNG (
+            <a href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>,
+            <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>,
+            <a href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>)
 
             <h2>Podkladová data</h2>
-            <a href="" class="btn btn-primary" role="button">Naše zdrojová data</a><br>
+            <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary" role="button">Naše zdrojová data</a><br>
 
             <h2>Licence</h2>
             <p>Licence jednotlivých infografik je TBD.</p>
