@@ -24,10 +24,10 @@
 
             <h2>Ke stažení</h2>
 	    <div class="dropdown show">
-		<a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink"
+		<a class="btn btn-primary dropdown-toggle " role="button" id="dropdownMenuLink"
 		    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG
 		</a>
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
 		    <a class="dropdown-item"
 			href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>
 		    <a class="dropdown-item"
@@ -40,7 +40,7 @@
             <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
 
             <h2>Podkladová data</h2>
-            <a href="" class="btn btn-primary" role="button">Zdrojová data ČHMÚ</a>
+	    <a href="{{ srclink }}" class="btn btn-primary" role="button">{{page.src }}</a>
             <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary"
 		role="button">Naše zpracovaná data</a><br>
 
