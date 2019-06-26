@@ -12,35 +12,33 @@
 
     <div class="row" markdown="on">
         <div class="col-sm-12 col-md-8">
-            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png" alt="{{ page.title }}">
+	    <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
+		<img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
+		alt="{{ page.title }}"></a>
             <p>{{ page.caption }}</p>
 
             {{ content }}
             
         </div>
         <div class="col">
-            <h2>Sdílení</h2>
-            FB, Twitter, Ig, ...
 
             <h2>Na stažení</h2>
-            <a href="{{ site.baseurl }}/{{ page.image }}.pdf">PDF</a>,
-            <a href="{{ site.baseurl }}/{{ page.image }}.svg">SVG</a>,
-            PNG (
-            <a href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>,
-            <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>,
-            <a href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>)
+            <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
+            <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
+	    <button class="btn btn-primary" role="button">PNG</button>
+	    <div class="dropdown-content">
+		<a href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>,
+		<a href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>,
+		<a href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>)
+	    </div>
 
             <h2>Podkladová data</h2>
-            <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary" role="button">Naše zdrojová data</a><br>
+            <a href="" class="btn btn-primary" role="button">Zdrojová data ČHMÚ</a>
+            <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary"
+		role="button">Naše zpracovaná data</a><br>
 
-            <h2>Licence</h2>
-            <p>Licence jednotlivých infografik je TBD.</p>
-
-            <h2>Data</h2>
-            <p>
-                
-                <a href="" class="btn btn-default" role="button">Původní zdrojová data</a>
-            </p>
+	    <h2>Licence</h2>
+	    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
             </ul>
         </div>
