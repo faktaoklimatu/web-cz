@@ -22,15 +22,22 @@
         </div>
         <div class="col">
 
-            <h2>Na stažení</h2>
+            <h2>Ke stažení</h2>
+	    <div class="dropdown show">
+		<a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink"
+		    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG
+		</a>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		    <a class="dropdown-item"
+			href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>
+		    <a class="dropdown-item"
+			href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>
+		    <a class="dropdown-item"
+			href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>
+		</div>
+	    </div>
             <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
             <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
-	    <button class="btn btn-primary" role="button">PNG</button>
-	    <div class="dropdown-content">
-		<a href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>,
-		<a href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>,
-		<a href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>)
-	    </div>
 
             <h2>Podkladová data</h2>
             <a href="" class="btn btn-primary" role="button">Zdrojová data ČHMÚ</a>

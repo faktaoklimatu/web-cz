@@ -33,6 +33,7 @@ h1 {
 }
 
 h2 {
+    font-size: 1rem;
     font-weight: bold !important;
     text-transform: uppercase;
 }
@@ -136,6 +137,7 @@ a {
     background-color: #000080;
     border-color: #000080;
     text-decoration: none;
+    margin-bottom: 0.5rem;
 }
 
 .btn-primary:hover {
@@ -149,6 +151,9 @@ a {
     background-color: #1b1bff;
     border-color: #1b1bff;
 }
+
+
+
 
 a {
     color: #000080;
