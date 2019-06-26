@@ -14,6 +14,9 @@
         <div class="col-sm-12 col-md-8">
             <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png" alt="{{ page.title }}">
             <p>{{ page.caption }}</p>
+
+            {{ content }}
+            
         </div>
         <div class="col">
             <h2>Sdílení</h2>
@@ -42,7 +45,6 @@
             </ul>
         </div>
     </div>
-    {{ content }}
   </main>
   {% include scripts.html %}
 </body>
