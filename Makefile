@@ -1,0 +1,3 @@
+all: web
+
+web:
