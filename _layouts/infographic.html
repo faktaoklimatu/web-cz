@@ -12,38 +12,32 @@
         <h1>{{ page.title }}</h1>
 
         <div class="row" markdown="on">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-8 col-lg-9">
             <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
             <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
             alt="{{ page.title }}"></a>
                 <p>{{ page.caption }}</p>
             </div>
-            <div class="col">
+            
+            <div class="col-sm-12 col-md-4 col-lg-3">
                 <h2>Ke stažení</h2>
                 <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
                 <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
-            <div class="dropdown show">
-            <a class="btn btn-primary dropdown-toggle " role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG
-            </a>
-            <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item"
-                href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>
-                <a class="dropdown-item"
-                href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>
-                <a class="dropdown-item"
-                href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>
-            </div>
-            </div>
+                <span class="dropdown">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</a>
+                    <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000 x 4000 px</a>
+                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920 x 1080 px</a>
+                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200 x 900 px</a>
+                    </div>
+                </span>
+            
                 <h2>Podkladová data</h2>
-            <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src }}</a>
-                <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary"
-            role="button">Naše zpracovaná data</a><br>
+                <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
+                <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src}}</a>
 
-            <h2>Licence</h2>
-            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-
-                </ul>
+                <h2>Licence</h2>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>            
             </div>
         </div>
       </div>
