@@ -1,2 +1,6 @@
+# Build Jekyll site
 _site/*
+
+# Temporary files
 Gemfile.lock
+*~
