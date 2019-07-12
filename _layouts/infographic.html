@@ -12,15 +12,16 @@
         <h1>{{ page.title }}</h1>
 
         <div class="row" markdown="on">
-            <div class="col-sm-12 col-md-8 col-lg-9">
+            <div class="col-md-12 col-lg-9">
             <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
             <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
             alt="{{ page.title }}"></a>
                 <p>{{ page.caption }}</p>
             </div>
             
-            <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="col-md-12 col-lg-3">
                 <h2>Ke stažení</h2>
+                <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
                 <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
                 <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
                 <span class="dropdown">
@@ -32,11 +33,15 @@
                     </div>
                 </span>
             
+                <hr/>
                 <h2>Podkladová data</h2>
+                <p>Chcete vědět, jaké jsou konktétní čísla? Stáhněte si náš dataset nebo ten původní, ze kterého vycházíme.</p>
                 <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
                 <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src}}</a>
 
+                <hr/>
                 <h2>Licence</h2>
+                <p>Všechny naše infografiky jsou k dispozici pro další použití pod licení (CC BY 4.0).</p>
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>            
             </div>
         </div>
