@@ -6,49 +6,53 @@
 
 <body>
   {% include navigation.html %}
-  <main role="main" class="container">
+  <main role="main">
+    <div class="section">
+      <div class="container">
+        <h1><a href="/">&lt;</a> {{ page.title }}</h1>
 
-    <h1><a href="/">&lt;</a> {{ page.title }}</h1>
+        <div class="row" markdown="on">
+            <div class="col-sm-12 col-md-8">
+            <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
+            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
+            alt="{{ page.title }}"></a>
+                <p>{{ page.caption }}</p>
+            </div>
+            <div class="col">
+                <h2>Ke stažení</h2>
+                <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
+                <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
+            <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle " role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG
+            </a>
+            <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item"
+                href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>
+                <a class="dropdown-item"
+                href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>
+                <a class="dropdown-item"
+                href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>
+            </div>
+            </div>
+                <h2>Podkladová data</h2>
+            <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src }}</a>
+                <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary"
+            role="button">Naše zpracovaná data</a><br>
 
-    <div class="row" markdown="on">
-        <div class="col-sm-12 col-md-8">
-	    <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
-		<img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
-		alt="{{ page.title }}"></a>
-            <p>{{ page.caption }}</p>
+            <h2>Licence</h2>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-            {{ content }}
-            
+                </ul>
+            </div>
         </div>
-        <div class="col">
-
-            <h2>Ke stažení</h2>
-            <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button">PDF</a>
-            <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button">SVG</a>
-	    <div class="dropdown show">
-		<a class="btn btn-primary dropdown-toggle " role="button" id="dropdownMenuLink"
-		    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG
-		</a>
-		<div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
-		    <a class="dropdown-item"
-			href="{{ site.baseurl }}/{{ page.image }}_6000.png">6000</a>
-		    <a class="dropdown-item"
-			href="{{ site.baseurl }}/{{ page.image }}_1920.png">1920</a>
-		    <a class="dropdown-item"
-			href="{{ site.baseurl }}/{{ page.image }}_1200.png">1200</a>
-		</div>
-	    </div>
-
-            <h2>Podkladová data</h2>
-	    <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src }}</a>
-            <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary"
-		role="button">Naše zpracovaná data</a><br>
-
-	    <h2>Licence</h2>
-	    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-
-            </ul>
-        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h1>Další komentáře a odkazy</h1>
+        {{ content }}
+      </div>
     </div>
   </main>
   {% include scripts.html %}
