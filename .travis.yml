@@ -3,6 +3,7 @@ install:
   - sudo apt update
   - sudo apt install -y inkscape
 script: make web
+before_deploy: git add -f assets/data/*/*.pdf assets/data/*/*.png
 deploy:
   provider: pages
   skip_cleanup: true
