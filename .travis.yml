@@ -3,14 +3,14 @@ install:
   - sudo apt update
   - sudo apt install -y inkscape
 script: make web
-before_deploy: git add -f assets/data/*/*.pdf assets/data/*/*.png
+before_deploy: rm .gitignore
 deploy:
   provider: pages
   skip_cleanup: true
   local_dir: .
   target_branch: gh-pages
   keep_history: false
-  verbose: false
+  verbose: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
     branch: master
