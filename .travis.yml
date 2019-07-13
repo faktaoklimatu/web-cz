@@ -1,7 +1,7 @@
 language: minimal
 install: 
-  - sudo apt udapte
-  - sudo apt install inkscape
+  - sudo apt update
+  - sudo apt install -y inkscape
 script: make web
 deploy:
   provider: pages
