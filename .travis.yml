@@ -1,16 +1,17 @@
+dist: xenial
 language: minimal
 install: 
   - sudo apt update
   - sudo apt install -y inkscape
 script: make web
-before_deploy: rm .gitignore
+before_deploy: rm .gitignore # So that built infographics are commited back to GitHub
 deploy:
   provider: pages
   skip_cleanup: true
   local_dir: .
   target_branch: gh-pages
   keep_history: false
-  verbose: true
+  verbose: false
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
     branch: master
