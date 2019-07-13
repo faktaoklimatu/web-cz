@@ -1,3 +1,7 @@
+# Generated infographic formats
+assets/data/*/*.pdf
+assets/data/*/*.png
+
 # Build Jekyll site
 _site/*
 
