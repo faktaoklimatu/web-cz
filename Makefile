@@ -12,6 +12,9 @@ local:
 
 web: $(INFOGRAPHICS_GENERATED)
 
+clean:
+	rm -rf assets/data/*/*.pdf assets/data/*/*.png
+
 %.pdf: %.svg
 	inkscape --without-gui --export-area-page --export-background=white --export-pdf=$@ --file=$<
 
@@ -24,4 +27,4 @@ web: $(INFOGRAPHICS_GENERATED)
 %_6000.png: %.svg
 	inkscape --without-gui --export-area-page --export-background=white --export-width=6000 --export-height=4000 --export-png=$@ --file=$<
 
-.PHONY: all web local *.svg
+.PHONY: all web local clean
