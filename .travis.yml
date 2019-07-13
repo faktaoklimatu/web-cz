@@ -1,4 +1,5 @@
 language: minimal
+install: sudo apt install inkscape
 script: make web
 deploy:
   provider: pages
