@@ -1,7 +1,7 @@
 dist: xenial
 language: minimal
 install: 
-  - sudo add-apt-repository ppa:inkscape.dev/stable
+  - sudo add-apt-repository ppa:inkscape.dev/stable -y
   - sudo apt update
   - sudo apt install -y inkscape
 script: make web
