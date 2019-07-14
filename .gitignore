@@ -1,4 +1,5 @@
-# Generated infographic formats
+# Generated web files
+_includes/version.html
 assets/data/*/*.pdf
 assets/data/*/*.png
 

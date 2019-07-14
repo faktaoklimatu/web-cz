@@ -45,6 +45,20 @@ h2 {
 .section:nth-of-type(odd) {
     background: white;
 }
+
+.page-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #E7E7E7;
+    color: #303030;
+    font-size: 80%;
+}
+
+.page-footer a {
+    color: #303030;
+    text-decoration: none;
+}
+
 .graphics-image {
     max-width: 100%;
 }
@@ -151,12 +165,10 @@ a {
     border-color: #1b1bff;
 }
 
-
 .dropdown-links a {
     font-size: 1.4rem;
     text-decoration: none;
 }
-
 
 a {
     color: #000080;
@@ -165,8 +177,8 @@ a {
 
 img.infographic-link {
     border-style: solid;
-    border-width: 4px;
-    border-color: #aaaaaa;
+    border-width: 3px;
+    border-color: #E7E7E7;
 }
 
 img.infographic-link:hover {
