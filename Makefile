@@ -14,7 +14,7 @@ web: _includes/version.html $(INFOGRAPHICS_GENERATED)
 clean:
 	rm -rf assets/data/*/*.pdf assets/data/*/*.png
 
-_includes/version.html: .git/COMMIT_EDITMSG
+_includes/version.html:
 	echo -n 'Poslední změna: <a target="_blank" ' >$@
 	echo -n 'href="$(REPO_URL)/commit/'`git rev-parse HEAD`'" ' >>$@
 	echo -n 'title="commit '`git rev-parse --short HEAD`'">' >>$@
@@ -36,4 +36,4 @@ _includes/version.html: .git/COMMIT_EDITMSG
 %_6000.png: %.svg
 	inkscape --without-gui --export-area-page --export-background=white --export-width=6000 --export-height=4000 --export-png=$@ --file=$<
 
-.PHONY: all web local clean
+.PHONY: all web local clean _includes/version.html
