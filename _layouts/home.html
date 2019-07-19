@@ -9,9 +9,9 @@
   <main role="main">
     <div class="section">
         <div class="container">
-          <h1 class="intro">Fakta o změně<br>klimatu</h1>
-          <span class="intro-motto">Veřejně dostupné infografiky a datasety</span>
-          <p class="intro-about">TOTO JE <strong>PRACOVNÍ VERZE</strong> URČENÁ PRO ZÍSKÁVÁNÍ ZPĚTNÉ VAZBY od cílových uživatelů. Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro další použití. Budeme rádi za vaši zpětnou vazbu: <a href="mailto:{{ site.contact }}">{{ site.contact }}</a> </p>
+          <h1 class="intro">{{ page.intro-heading }}</h1>
+          <span class="intro-motto">{{ page.intro-tagline }}</span>
+          <p class="intro-about">{{ page.intro }}</p>
         </div>
     </div>
     {% assign sorted_sections = site.categories.sections | sort: 'weight' %}
@@ -85,8 +85,8 @@
 
     <div class="section" id="creators">
         <div class="container">
-          <h1>Myšlenka projektu a tvůrci</h1>
-
+          <h1>{{ page.authors-heading }}</h1>
+          {{ page.authors | markdownify }}
             <!--
             <div class="persons-grid d-flex justify-content-around align-content-between flex-wrap">
                 <div class="card person-card">
@@ -115,10 +115,6 @@
                 </div>
             </div>
             -->
-            <p>Jsme studenti, doktorandi, akademici nebo IT profesionálové. Sami jsme si zkusili vyhledat data o teplotě či emisích, najít určité informace v mnohasetstránkových zprávách IPCC nebo původních článcích. Jde to, ale zabere to hodně času, musíte umět dobře anglicky a musíte si dohledávat spoustu souvislostí. Běžný novinář nebo politik (ani bězný čech) většinou nemá tolik trpělivosti nebo dostatečnou úroveň angličtiny a tak si data nevyhledá. Rozhodli jsme se proto, že tu práci, kterou jsme s hledáním dat měli, ostatním ušetříme - zpracujeme infografiky, dáme odkazy na původní data i naše zpracované datasety na jedno místo a doplníme základní souvislosti a dáme je k dispozici všem, pro koho budou užitečné. A doufáme, že se postupně tyto informace dostanou ke všem, kterých se změny klimatu týkají. Tedy ke všem.</p>
-            
-            <p> Lidé, kteří přispěli v různých formách podobě tohoto webu a dat, které na něm vidíte: Ondáš Přibyla, Martin Ukrop, Marek Lahoda, Martin crysman Zahradník, Petr Novotný, Kristýna Zakopčanová, Daniel Rychlý, Jan Drábek, Marko Řeháček a další.</p>
-            <p>Kontaktovat nás můžete na e-mailové adrese <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>
         </div>
     </div>
 
