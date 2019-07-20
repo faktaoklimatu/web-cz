@@ -13,7 +13,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        {% assign sorted_sections = (site.categories.sections | sort: 'weight') %}
+                        {% assign sorted_sections = (site.sekce | sort: 'weight') %}
                         {% for section in sorted_sections %}
                           <a class="dropdown-item" href="/#{{ section.id }}">{{ section.title }}</a>
                         {% endfor %}

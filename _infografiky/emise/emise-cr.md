@@ -1,13 +1,12 @@
 ---
 layout:     infographic
-title:      "Emise Skleníkových plynů ČR podle sektorů"
-caption:    "Zdrojová data: Eurostat. Rozložení celkových emisí skleníkových plynů (v tunách CO2 ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 130,35 mil. tun (údaj z roku 2016). V přepočtu na obyvatele to je 12,3 tCO2eq/obyvatele."
-categories: infographics
+title:      "Emise skleníkových plynů ČR"
+slug:       emise-cr
 weight:     1
-tags:       sections-emise
+tags:       [ emise ]
+caption:    "Zdrojová data: Eurostat. Rozložení celkových emisí skleníkových plynů (v tunách CO2 ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 130,35 mil. tun (údaj z roku 2016). V přepočtu na obyvatele to je 12,3 tCO2eq/obyvatele."
 src:	    "Zdrojová data EEA"
 srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23"
-image:      assets/data/emise-1/Emise-sklenikovych-plynu-CR-podle-sektoru
 ---
 
 ## Klíčové souvislosti 

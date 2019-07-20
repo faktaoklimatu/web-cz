@@ -10,33 +10,34 @@
     <div class="section">
       <div class="container">
         <h1>{{ page.title }}</h1>
+        {% assign download_path = site.baseurl | append: "/assets/infographics/" | append: page.slug %}
 
         <div class="row" markdown="on">
             <div class="col-md-12 col-lg-9">
-            <a href="{{ site.baseurl }}/{{ page.image }}_1920.png">
-            <img class="graphics-image" src="{{ site.baseurl }}/{{ page.image }}_1920.png"
+            <a href="{{ download_path }}_1920.png">
+            <img class="graphics-image" src="{{ download_path }}_1920.png"
             alt="{{ page.title }}"></a>
                 <p>{{ page.caption }}</p>
             </div>
-            
+
             <div class="col-md-12 col-lg-3">
                 <h2>Ke stažení</h2>
                 <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
-                <a href="{{ site.baseurl }}/{{ page.image }}.pdf" class="btn btn-primary" role="button" download>PDF</a>
-                <a href="{{ site.baseurl }}/{{ page.image }}.svg" class="btn btn-primary" role="button" download>SVG</a>
+                <a href="{{ download_path }}.pdf" class="btn btn-primary" role="button" download>PDF</a>
+                <a href="{{ download_path }}.svg" class="btn btn-primary" role="button" download>SVG</a>
                 <span class="dropdown">
                     <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</a>
                     <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_6000.png" download>6000 x 4000 px</a>
-                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_1920.png" download>1920 x 1080 px</a>
-                        <a class="dropdown-item" href="{{ site.baseurl }}/{{ page.image }}_1200.png" download>1200 x 900 px</a>
+                        <a class="dropdown-item" href="{{ download_path }}_6000.png" download>6000 x 4000 px</a>
+                        <a class="dropdown-item" href="{{ download_path }}_1920.png" download>1920 x 1080 px</a>
+                        <a class="dropdown-item" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
                     </div>
                 </span>
             
                 <hr/>
                 <h2>Podkladová data</h2>
                 <p>Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
-                <a href="{{ site.baseurl }}/{{ page.image }}.xlsx" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
+                <a href="{{ download_path }}.xlsx" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
                 <a href="{{ page.srclink }}" class="btn btn-primary" role="button">{{page.src}}</a>
 
                 <hr/>

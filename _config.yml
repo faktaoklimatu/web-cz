@@ -7,7 +7,14 @@ url: https://faktaoklimatu.cz
 contact: info@faktaoklimatu.cz
 
 # Build settings
-permalink: /:categories/:title/
+collections:
+    infografiky:
+        output: true
+        permalink: /:collection/:title
+    sekce:
+        output: false
+        permalink: /:collection/:title
+permalink: /:title
 sass:
     sass_dir: assets/css
 

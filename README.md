@@ -17,17 +17,13 @@ Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váho
 
 ### Vytvoření stránky grafiky
 
-Zobrazují se v galerii na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku v `_posts/graphics/`.
-Názvy souborů musí mít vždy formát `YYYY-MM-DD-<SLUG>.md`. Pro přehlednost je doporučeno dávat název souboru stejný jako u sekce a
-rozlišovat je pomocí číselného suffixu (`-2.md`).
+Zobrazují se v sekcích na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku v `_infografiky/`.
+Názvy souborů musí mít vždy formát `<SLUG>.md`. Soubory jsou pro přehlednost ukládány v složkách podle primárního tagu.
 
 Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci.
-Nezbytné pro správné zobrazení jsou následující tagy:
+Nezbytné pro správné zobrazení jsou tagy, např. `tags: [ teploty ]`. Zde se vyskytují tagy, podle kterých se infografiky vybírají do sekcí na úvodni stránce.
 
-- `tags: sections-teploty`, zde zadejte název typu (`sections-`) doplněný o SLUG.
-- `image: assets/data/teploty-1/zmeny-teplot-cr.jpg` adresa v rámci repozitáře.
-
-Obrázky jednotlivých grafik nahrávejte do složky `assets/data/` do struktury dle vlastního uvážení.
+Obrázky jednotlivých grafik (pouze SVG) a data (aktuálně pouze XLSX) nahrávejte do stejé složky jako infografiky se stejným názvem jako je souor infografiky.
 
 ## Změna e-mailové adresy pro kontaktní formulář
 
@@ -36,9 +32,10 @@ V souboru `_config.yml` nakonfigurujte pomocí hodnoty `contact`.
 ## Jak vyvíjet lokálně
 
 Stránku lze vyvíjet i na svém osobním stroji a experimentovat tak například s novým typem obsahu, stylem stránky...
-Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
+Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll). Dále je potřeba mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/),
+který se používá na konverzi infografik.
 
-Poté již stačí v kořenové složce projektu spustit příkaz `jekyll serve`, který zpřístupní web na adrese
+Poté již stačí v kořenové složce projektu spustit příkaz `make local`, který sestaví, co je potřeba, zpřístupní web na adrese
 http://127.0.0.1:4000 a následně bude monitorovat soubory a v případě jejich změny automaticky sestaví novou verzi stránky.
 
 Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větve u které následně požádáte o *Pull Request*, aby existovala možnost práci zkontrolovat.

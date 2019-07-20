@@ -14,7 +14,7 @@
           <p class="intro-about">{{ page.intro }}</p>
         </div>
     </div>
-    {% assign sorted_sections = site.categories.sections | sort: 'weight' %}
+    {% assign sorted_sections = site.sekce | sort: 'weight' %}
     {% for section in sorted_sections %}
       <div class="section" id="{{ section.id }}">
           <div class="container">

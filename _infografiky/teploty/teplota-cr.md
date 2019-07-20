@@ -1,13 +1,12 @@
 ---
 layout:     infographic
 title:      "Průměrná roční teplota v ČR"
-caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2°C."
-categories: infographics
+slug:       teplota-cr
 weight:     1
-tags:       sections-teploty
+tags:       [ teploty ]
+caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2°C."
 src:	    "Zdrojová data ČHMÚ"
 srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
-image:      assets/data/teploty-1/prumerna-teplota-cr
 ---
 
 * Průměrná teplota jednotlivých měsíců roste různě rychle. Nejvíce se oteplují leden, červenec a srpen (o více než 2,5°C od roku 1961) nejméně září a říjen. Podrobněji viz [trendy teplot pro jednotlivé měsíce](https://faktaoklimatu.cz/infographics/teploty-3).

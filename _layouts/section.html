@@ -5,15 +5,14 @@
             {{ content }}
         </div>
         <div class="col-12">
-            {% capture tag %}{{ page.id | slugify }}{% endcapture %}
-
-            {% assign sorted_infographics = site.categories.infographics | sort: 'weight' %}
+            {% assign sorted_infographics = site.infografiky | sort: 'weight' %}
             <div class="row justify-content-md-center">
             {% for infographics in sorted_infographics %}
-                {% if infographics.tags contains tag %}
+                {% if infographics.tags contains page.filter-tag %}
                         <div class="col-sm-5 col-md-6 col-lg-4" style="padding: 10px">
+                            {{ infographics.dir }}
                             <a href="{{ infographics.url }}">
-                                <img src="{{ site.baseurl }}/{{ infographics.image }}_600.png" alt="{{ infographics.title }}" class="infographic-link img-fluid" />
+                                <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="infographic-link img-fluid" />
                             </a>
                         </div>
                 {% endif %}

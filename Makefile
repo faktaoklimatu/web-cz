@@ -1,6 +1,9 @@
-INFOGRAPHICS=$(wildcard assets/data/*/*.svg)
-INFOGRAPHICS_PDF=$(INFOGRAPHICS:.svg=.pdf)
-INFOGRAPHICS_PNG=$(INFOGRAPHICS:.svg=_600.png) $(INFOGRAPHICS:.svg=_1200.png) $(INFOGRAPHICS:.svg=_1920.png) $(INFOGRAPHICS:.svg=_6000.png)
+INFOGRAPHICS_FOLDER=assets/infographics
+INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.svg)
+INFOGRAPHICS_DATA=$(INFOGRAPHICS_SRC:.svg=.xlsx)
+INFOGRAPHICS_SVG=$(addprefix assets/infographics/,$(notdir $(INFOGRAPHICS_SRC)))
+INFOGRAPHICS_PDF=$(INFOGRAPHICS_SVG:.svg=.pdf)
+INFOGRAPHICS_PNG=$(INFOGRAPHICS_SVG:.svg=_600.png) $(INFOGRAPHICS_SVG:.svg=_1200.png) $(INFOGRAPHICS_SVG:.svg=_1920.png) $(INFOGRAPHICS_SVG:.svg=_6000.png)
 INFOGRAPHICS_GENERATED=$(INFOGRAPHICS_PDF) $(INFOGRAPHICS_PNG)
 REPO_URL=https://github.com/mukrop/faktaoklimatu
 
@@ -9,10 +12,15 @@ all: web
 local: web
 	jekyll serve
 
-web: _includes/version.html $(INFOGRAPHICS_GENERATED)
+web: _includes/version.html web-init $(INFOGRAPHICS_GENERATED)
+
+web-init:
+	mkdir -p $(INFOGRAPHICS_FOLDER)
+	cp -u $(INFOGRAPHICS_SRC) $(INFOGRAPHICS_FOLDER)
+	-cp -u $(INFOGRAPHICS_DATA) $(INFOGRAPHICS_FOLDER)
 
 clean:
-	rm -rf assets/data/*/*.pdf assets/data/*/*.png
+	rm -rf $(INFOGRAPHICS_FOLDER)
 
 _includes/version.html:
 	echo -n 'Poslední změna: <a target="_blank" ' >$@
@@ -36,4 +44,4 @@ _includes/version.html:
 %_6000.png: %.svg
 	inkscape --without-gui --export-area-page --export-background=white --export-width=6000 --export-height=4000 --export-png=$@ --file=$<
 
-.PHONY: all web local clean _includes/version.html
+.PHONY: all web web-init local clean _includes/version.html
