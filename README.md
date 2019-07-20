@@ -10,8 +10,8 @@ Obsah je členěn do sekcí, ke kterým je jedna či více info grafik, které o
 
 ### Vytvoření sekce
 
-Jednotlivé sekce se zobrazují na úvodní stránce a vytváří se v `_posts/sections/`. Názvy souborů musí mít vždy formát:
-`YYYY-MM-DD-<SLUG>.md`, kde SLUG je nějaké zkrácené smysluplné jméno používající jen znaky anglické abecedy, číslice a znaky jako `-` a `_`.
+Jednotlivé sekce se zobrazují na úvodní stránce a vytváří se v `_sekce/`. Názvy souborů musí mít vždy formát
+`<SLUG>.md`, kde SLUG je nějaké zkrácené smysluplné jméno používající jen znaky anglické abecedy, číslice a znaky jako `-` a `_`.
 
 Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váhou určete pořadí na úvodní stránce.
 
