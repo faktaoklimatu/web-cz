@@ -1,10 +1,12 @@
 body {
     padding-top: 3rem;
+    padding-bottom: 2rem;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: #000080;
     font-size: 1.0rem;
     background: #F7F7F7;
     position: relative;
+    min-height: 100vh;
 }
 
 span.intro-motto {
@@ -47,6 +49,9 @@ h2 {
 }
 
 .page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: #E7E7E7;
