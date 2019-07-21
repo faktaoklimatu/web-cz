@@ -4,7 +4,7 @@ title:      "Trendy nárůstu teploty v ČR v jednotlivých měsících"
 slug:       narust-teplot-cr
 weight:     3
 tags:       [ teploty ]
-caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C. Trendy v oteplování jednotlivých měsíců jsou různé. Nevětší nárůst teplot je v lednu, červenci a srpnu - tyto měsíce se or roku 1960 oteplily o více než 2.6 °C"
+caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C. Trendy v oteplování jednotlivých měsíců jsou různé. Nevětší nárůst teplot je v lednu, červenci a srpnu &ndash; tyto měsíce se od roku 1960 oteplily o více než 2,6 °C"
 src:	    "Zdrojová data ČHMÚ"
 srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 ---
