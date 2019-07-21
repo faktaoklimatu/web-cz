@@ -180,6 +180,10 @@ a {
     text-decoration: underline;
 }
 
+.col-infographic {
+    padding-top: 15px;
+}
+
 img.infographic-link {
     border-style: solid;
     border-width: 3px;

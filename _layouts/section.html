@@ -1,24 +1,15 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>{{ page.title }}</h1>
-            {{ content }}
-        </div>
-        <div class="col-12">
-            {% assign sorted_infographics = site.infografiky | sort: 'weight' %}
-            <div class="row justify-content-md-center">
-            {% for infographics in sorted_infographics %}
-                {% if infographics.tags contains page.filter-tag %}
-                        <div class="col-sm-5 col-md-6 col-lg-4" style="padding: 10px">
-                            {{ infographics.dir }}
-                            <a href="{{ infographics.url }}">
-                                <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="infographic-link img-fluid" />
-                            </a>
-                        </div>
-                {% endif %}
-            {% endfor %}
+<h1>{{ page.title }}</h1>
+{{ content }}
+{% assign sorted_infographics = site.infografiky | sort: 'weight' %}
+<div class="row justify-content-md-center">
+{% for infographics in sorted_infographics %}
+    {% if infographics.tags contains page.filter-tag %}
+            <div class="col-md-6 col-lg-4 col-infographic">
+                {{ infographics.dir }}
+                <a href="{{ infographics.url }}">
+                    <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="infographic-link img-fluid" />
+                </a>
             </div>
-        </div>
-    </div>
+    {% endif %}
+{% endfor %}
 </div>
-
