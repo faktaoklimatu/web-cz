@@ -14,7 +14,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 - [Méně podrobné zobrazení emisí ČR](https://faktaoklimatu.cz/infografiky/emise-cr)
 <!-- Srovnání emisí států EU viz graf FIXME -->
 <!-- Srovnání emisí na obyvatele pro státy EU FIXME-->
-- [Srovnání emisí jednotlivých sektorů ČR na obyvatele s dalšími státy EU](https://faktaoklimatu.cz/infografiky/emise-srovnání)  
+- [Srovnání emisí jednotlivých sektorů ČR na obyvatele s dalšími státy EU](https://faktaoklimatu.cz/infografiky/emise-srovnani)  
 
 ## Jak číst tento graf a co znamenají jednotlivé sektory?
 
