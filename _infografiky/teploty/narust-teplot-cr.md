@@ -14,6 +14,6 @@ srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 
 ## Související grafy
 * [Vývoj průměrné roční teploty v ČR](https://faktaoklimatu.cz/infografiky/teplota-cr)
-* [Trend změny teploty v ČR pro jednotlivé měsíce](https://faktaoklimatu.cz/infografiky/teplota-cr-mesice)
+* [Srovnání teplot jednotlivých měsíců v ČR nyní a v letech 1961-1965](https://faktaoklimatu.cz/infografiky/teplota-cr-mesice)
 
 
