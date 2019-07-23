@@ -14,7 +14,9 @@ collections:
     sekce:
         output: false
         permalink: /:collection/:title
-permalink: /:title
+    stranky:
+        output: true
+        permalik: /:title
 sass:
     sass_dir: assets/css
 

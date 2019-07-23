@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Přehled infografik
+slug: index-new
 
 intro-heading: Fakta o změně<br>klimatu
 intro-tagline: Veřejně dostupné infografiky a datasety
