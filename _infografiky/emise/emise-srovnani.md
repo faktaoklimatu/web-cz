@@ -11,7 +11,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Klíčové souvislosti 
 
-- [Podrobné zobrazení emisí ČR podle sektorů](https://faktaoklimatu.cz/infographics/emise-2/)
+- [Podrobné zobrazení emisí ČR podle sektorů](https://faktaoklimatu.cz/infographics/emise-cr-detail)
 <!-- Srovnání emisí států EU viz graf FIXME -->
 <!-- Srovnání emisí na obyvatele pro státy EU FIXME--> 
 
