@@ -1,6 +1,5 @@
 INFOGRAPHICS_FOLDER=assets/infographics
 INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.svg)
-INFOGRAPHICS_DATA=$(INFOGRAPHICS_SRC:.svg=.xlsx)
 INFOGRAPHICS_SVG=$(addprefix assets/infographics/,$(notdir $(INFOGRAPHICS_SRC)))
 INFOGRAPHICS_PDF=$(INFOGRAPHICS_SVG:.svg=.pdf)
 INFOGRAPHICS_PNG=$(INFOGRAPHICS_SVG:.svg=_600.png) $(INFOGRAPHICS_SVG:.svg=_1200.png) $(INFOGRAPHICS_SVG:.svg=_1920.png) $(INFOGRAPHICS_SVG:.svg=_6000.png)
@@ -17,7 +16,6 @@ web: _includes/version.html web-init $(INFOGRAPHICS_GENERATED)
 web-init:
 	mkdir -p $(INFOGRAPHICS_FOLDER)
 	cp -u $(INFOGRAPHICS_SRC) $(INFOGRAPHICS_FOLDER)
-	-cp -u $(INFOGRAPHICS_DATA) $(INFOGRAPHICS_FOLDER)
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
