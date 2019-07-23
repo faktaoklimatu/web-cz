@@ -7,6 +7,10 @@ url: https://faktaoklimatu.cz
 contact: info@faktaoklimatu.cz
 
 # Build settings
+exclude: [ "Gemfile", "Gemfile.lock", "Makefile", # Build settings
+           "README.md", # Internal notes
+           "_infografiky/*/*.svg" # Original infographics (build moves them to assets)
+         ]
 collections:
     infografiky:
         output: true
@@ -16,7 +20,7 @@ collections:
         permalink: /:collection/:title
     stranky:
         output: true
-        permalik: /:title
+        permalink: /:title
 sass:
     sass_dir: assets/css
 
