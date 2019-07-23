@@ -1,7 +1,7 @@
 ---
 layout:     infographic
 title:      "Trendy nárůstu teploty v ČR v jednotlivých měsících"
-slug:       narust-teplot-cr
+slug:       trend-teplot-cr
 weight:     3
 tags:       [ teploty ]
 caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C. Trendy v oteplování jednotlivých měsíců jsou různé. Nevětší nárůst teplot je v lednu, červenci a srpnu &ndash; tyto měsíce se od roku 1960 oteplily o více než 2,6 °C"
@@ -13,7 +13,7 @@ srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 * Vyšší teploty v zimních měsících způsobují méně sněhu (místo sněžení prší), což může mít dopady na doplňování spodních vod (pomalu tající sníh se lépe vsakuje než déšť, který stéká). 
 
 ## Související grafy
-* [Vývoj průměrné roční teploty v ČR](https://faktaoklimatu.cz/infografiky/teplota-cr)
-* [Srovnání teplot jednotlivých měsíců v ČR nyní a v letech 1961-1965](https://faktaoklimatu.cz/infografiky/teplota-cr-mesice)
+* [Vývoj průměrné roční teploty v ČR](/infografiky/teplota-cr)
+* [Srovnání teplot jednotlivých měsíců v ČR nyní a v letech 1961-1965](/infografiky/teplota-cr-mesice)
 
 

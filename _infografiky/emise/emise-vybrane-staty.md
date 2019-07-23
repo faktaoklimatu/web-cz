@@ -1,7 +1,7 @@
 ---
 layout:     infographic
 title:      "Srovnání emisí skleníkových plynů"
-slug:       emise-srovnani
+slug:       emise-vybrane-staty
 weight:     3
 tags:       [ emise ]
 caption:    "Zdrojová data: Eurostat. Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazzeny podle sektorů.  "
@@ -11,7 +11,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Klíčové souvislosti 
 
-- [Podrobné zobrazení emisí ČR podle sektorů](https://faktaoklimatu.cz/infografiky/emise-cr-detail)
+- [Podrobné zobrazení emisí ČR podle sektorů](/infografiky/emise-cr-detail)
 <!-- Srovnání emisí států EU viz graf FIXME -->
 <!-- Srovnání emisí na obyvatele pro státy EU FIXME--> 
 
