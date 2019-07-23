@@ -28,5 +28,11 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 - __Odpadové hospodářství:__ 3,67 mil. tun CO<sub>2</sub>eq ročně (2,82 % celkových emisí, 530kg CO<sub>2</sub>eq na obyvatele ročně). Emise z odpadového hospodářství produkují především skládky odpadu, ze kterých do atmosféry uniká metan, který vzniká rozkladem biologicky rozložitelného materiálu v tělese skládky. Řešením je zákaz skládkování využitelných odpadů po vzoru většiny zemí EU a využití biologicky rozložitelných odpadů k produkci biometanu pro užití namísto zemního plynu například v dopravě.
 - __Zemědělství:__ 8,52 mil. tun CO<sub>2</sub>eq (6,53 % celkových emisí, 810kg CO<sub>2</sub>eq na obyvatele ročně). Emise v zemědělství pochází především z chovu hospodářských zvířat (4,5 mil. tun) v podobě emisí metanu a také z obdělávání půdy a s tím spojenými emisemi N<sub>2</sub>O (3,6 mil. tun CO<sub>2</sub>eq). Omezení emisí metanu ze zemědělství by pomohlo menší množství chovaného dobytka (snížení spotřeby hovězího masa a mléčných výrobků), správné nakládání se statkovými hnojivy (například jejich stabilizací v bioplynových stanicích) a méně intenzivní hnojení průmyslovými hnojivy.
 
+## Poznámky k datům o emisích
+* Data o emisích poskytují Eurostatu jednotlivé země EU - tedy data za Českou republiku reportovala přímo Česká republika. 
+* Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok. 
+* Údaje odpovídají emisím vyprodukovaným v dané zemi - ovšem vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny. V údajích o emisích nejsou zahrnuty emise z mezinárodní letecké dopravy, protože je komplikované přisoudit, které zemi by emise daného letu měly "patřit". (místo vzletu?, místo přistání?, země která vyprodukovala letecké palivo?)  
+
+
 
 
