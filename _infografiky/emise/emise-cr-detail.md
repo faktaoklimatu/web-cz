@@ -11,10 +11,10 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Klíčové souvislosti 
 
-- [Méně podrobné zobrazení emisí ČR](https://faktaoklimatu.cz/infographics/emise-1/)
+- [Méně podrobné zobrazení emisí ČR](https://faktaoklimatu.cz/infographics/emise-cr/)
 <!-- Srovnání emisí států EU viz graf FIXME -->
 <!-- Srovnání emisí na obyvatele pro státy EU FIXME-->
-- [Srovnání emisí jednotlivých sektorů ČR na obyvatele s dalšími státy EU](https://faktaoklimatu.cz/infographics/emise-3/)  
+- [Srovnání emisí jednotlivých sektorů ČR na obyvatele s dalšími státy EU](https://faktaoklimatu.cz/infographics/emise-srovnání/)  
 
 ## Jak číst tento graf a co znamenají jednotlivé sektory?
 
@@ -25,7 +25,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 - __Spalování v průmyslu:__ Emise, které pochází ze spalování fosilních paliv pro potřeby průmyslu, typicky když je při výrobě potřeba něco zahřívat (destilace, sušení, tavení apod.), ročně činí 9,4 mil. tun CO<sub>2</sub> (7,21 % celkových emisí).
 - __Domácnosti a instituce__ jsou zodpovědné za 13,55 mil. tun emisí CO<sub>2</sub> ročně, což reprezentuje 10,4 % celkových ročních emisí. Jde o topení a ohřev vody (pokud energie není dodávána z teplárny), vaření apod.
 - __Odpadové hospodářství:__ Emise z odpadového hospodářství produkují především skládky odpadu, ze kterých do atmosféry uniká metan. Jedná se ročně o 3,67 mil. tun CO<sub>2</sub>eq ročně, což je 2,82 % celkových ročních emisí. Metan je na skládkách emitován rozkladem biologicky rozložitelného materiálu v tělese skládky. Řešením je zákaz skládkování využitelných odpadů po vzoru většiny zemí EU a využití biologicky rozložitelných odpadů k produkci biometanu pro užití namísto zemního plynu například v dopravě.
-- __Zemědělství:__ Emise ze zemědělství v objemu 8,52 mil. tun CO<sub>2</sub>eq (6,53 % celkových emisí) pochází především z chovu hospodářských zvířat (4,5 mil. tun) v podobě emisí metanu a také z obdělávání půdy a s tím spojenými emisemi N2O (3,6 mil. tun CO<sub>2</sub>eq). Omezení emisí metanu ze zemědělství by pomohlo správné nakládání se statkovými hnojivy – například jejich stabilizací v bioplynových stanicích.
+- __Zemědělství:__ Emise ze zemědělství v objemu 8,52 mil. tun CO<sub>2</sub>eq (6,53 % celkových emisí) pochází především z chovu hospodářských zvířat (4,5 mil. tun) v podobě emisí metanu a také z obdělávání půdy a s tím spojenými emisemi N<sub>2</sub>O (3,6 mil. tun CO<sub>2</sub>eq). Omezení emisí metanu ze zemědělství by pomohlo menší množství chovaného dobytka (snížení spotřeby hovězího masa a mléčných výrobků), správné nakládání se statkovými hnojivy (například jejich stabilizací v bioplynových stanicích) a méně intenzivní hnojení průmyslovými hnojivy.
 
 
 
