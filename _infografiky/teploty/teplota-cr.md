@@ -13,3 +13,8 @@ srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 * S oteplením souvisí vyšší teploty v zimních měsících (a tedy méně sněhu), vlny veder a vyšší teploty v letních měsících (a tedy zvýšený odpar zesilující sucho) nebo třeba dřívější kvetení stromů a rostlin (důsledky pro alergiky).
 * Nárůst teploty v ČR je přibližně dvojnásobný než nárůst světové průměrné teplotní anomálie. Obecně platí, že pevnina se otepluje rychleji než oceán a severní polokoule se otepluje rychleji než jižní - světová průměrná teplotní anomálie však průměruje pevninu, oceán severní i jižní polokouli a tedy světový trend oteplování je přibližně poloviční než oteplení v pevninských částech severní polokoule.  
 * Růst teploty je způsoben především činností člověka - emisemi skleníkových plynů, odlesňováním apod. O dynamice klimatického systému bylo napsáno mnoho knih a studií, proto uvádíme odkaz na český překlad webu s dalšími informacemi: [Sceptical science v češtině](https://skepticalscience.com/translation.php?lang=1)
+
+## Související grafy
+* [Srovnání teplot jednotlivých měsíců v ČR nyní a v letech 1961-1965](https://faktaoklimatu.cz/infografiky/teplota-cr-mesice)
+* [Trend změny teploty v ČR pro jednotlivé měsíce](https://faktaoklimatu.cz/infografiky/narust-teplot-cr)
+
