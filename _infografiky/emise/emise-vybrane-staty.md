@@ -31,3 +31,8 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 - __Rozdíly v Odpadovém hospodářství:__ Emise z odpadového hospodářství produkují především skládky odpadu, ze kterých do atmosféry uniká metan. V zemích EU mají všechny státy emise z odpadového hospodářství mezi 0,1-0,65 tun CO<sub>2</sub>eq na obyvatele na rok.  
 - __Rozdíly v Zemědělství:__ pochází především z chovu hospodářských zvířat (metan) a z obdělávání půdy (průmyslová hnojiva produkují N2O). Téměř všechny státy v EU mají emise ze zemědělství mezi 0,4&ndash;1,2 tCO<sub>2</sub>eq/osobu na rok. Vyjímky jsou Irsko (4,07 tCO<sub>2</sub>eq), Dánsko (1.85 tCO<sub>2</sub>eq), Lotyšsko (1,54 tCO<sub>2</sub>eq) a Litva (1,35 tCO<sub>2</sub>eq). V případě Irska a Dánska připadají tři čtvrtiny na chov dobytka, naopak v případě Lotyška a Litvy je více než polovina emisí ze zemědělství způsobena průmyslovými hnojivy. 
 
+## Poznámky k datům o emisích
+* Data o emisích poskytují Eurostatu jednotlivé země EU - tedy data za Českou republiku reportovala přímo Česká republika. 
+* Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok. 
+* Údaje odpovídají emisím vyprodukovaným v dané zemi - ovšem vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny. V údajích o emisích nejsou zahrnuty emise z mezinárodní letecké dopravy, protože je komplikované přisoudit, které zemi by emise daného letu měly "patřit". (místo vzletu?, místo přistání?, země která vyprodukovala letecké palivo?)  
+
