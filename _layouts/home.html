@@ -7,11 +7,11 @@
 <body>
   {% include navigation.html %}
   <main role="main">
-    <div class="section">
+    <div class="section intro">
         <div class="container">
-          <h1 class="intro">{{ page.intro-heading }}</h1>
-          <span class="intro-motto">{{ page.intro-tagline }}</span>
-          <p class="intro-about">{{ page.intro }}</p>
+          <h1>{{ page.intro-heading }}</h1>
+          <span class="tagline">{{ page.intro-tagline }}</span>
+          <p>{{ page.intro }}</p>
         </div>
     </div>
     {% assign sorted_sections = site.sekce | sort: 'weight' %}

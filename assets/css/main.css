@@ -1,32 +1,12 @@
 body {
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: #000080;
     font-size: 1.0rem;
     background: #F7F7F7;
     position: relative;
     min-height: 100vh;
-}
-
-span.intro-motto {
-    text-transform: uppercase;
-    text-align: right;
-    display: inline-block;
-    float: left;
-    width: 15.2rem;
-    margin-top: 1rem;
-}
-
-h1.intro {
-    font-size: 4.5rem;
-}
-
-p.intro-about {
-    font-size: 1.5rem;
-    text-align: justify;
-    padding-left: 19rem;
-    margin-top: -3.5rem;
 }
 
 h1 {
@@ -48,6 +28,26 @@ h2 {
     background: white;
 }
 
+.intro .tagline {
+    text-transform: uppercase;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    width: 15.2rem;
+    margin-top: 1rem;
+}
+
+.intro h1 {
+    font-size: 4.5rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 19rem;
+    margin-top: -3.5rem;
+}
+
 .page-footer {
     position: absolute;
     bottom: 0;
@@ -57,6 +57,14 @@ h2 {
     background: #E7E7E7;
     color: #303030;
     font-size: 80%;
+}
+
+.page-footer .tagline {
+    text-transform: uppercase;
+}
+
+.page-footer .float-right {
+    text-align: right;
 }
 
 .page-footer a {

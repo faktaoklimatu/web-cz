@@ -1,9 +1,11 @@
 <div class="page-footer">
     <div class="container clearfix">
         <span class="float-left">
-            &copy; 2019 faktaoklimatu.cz
+            <span class="tagline">{{ site.description }}</span><br/>
+            Kontakt: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </span>
         <span class="float-right">
+            &copy; 2019 faktaoklimatu.cz<br/>
             {% include version.html %}
         </span>
     </div>
