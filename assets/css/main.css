@@ -1,3 +1,5 @@
+/* Common HTML tags */
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -7,6 +9,7 @@ body {
     background: #F7F7F7;
     position: relative;
     min-height: 100vh;
+    text-align: justify;
 }
 
 h1 {
@@ -14,10 +17,18 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold !important;
     text-transform: uppercase;
 }
+
+a {
+    color: #000080;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Core design: sectioning, header, footer, buttons */
 
 .section {
     padding-top: 3rem;
@@ -28,57 +39,6 @@ h2 {
     background: white;
 }
 
-.intro .tagline {
-    text-transform: uppercase;
-    text-align: right;
-    display: inline-block;
-    float: left;
-    width: 15.2rem;
-    margin-top: 1rem;
-}
-
-.intro h1 {
-    font-size: 4.5rem;
-}
-
-.intro p {
-    font-size: 1.5rem;
-    text-align: justify;
-    padding-left: 19rem;
-    margin-top: -3.5rem;
-}
-
-.page-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background: #E7E7E7;
-    color: #303030;
-    font-size: 80%;
-}
-
-.page-footer .tagline {
-    text-transform: uppercase;
-}
-
-.page-footer .float-right {
-    text-align: right;
-}
-
-.page-footer a {
-    color: #303030;
-    text-decoration: none;
-}
-
-.bg-custom {
-    background: #F7F7F7;
-}
-
-a {
-    cursor: pointer;
-}
 .navbar-scrolled {
     box-shadow: 0 3px 10px #e2e2ff;
 }
@@ -105,6 +65,126 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.bg-custom {
+    background: #F7F7F7;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #E7E7E7;
+    color: #303030;
+    font-size: 80%;
+}
+
+.page-footer .tagline {
+    text-transform: uppercase;
+}
+
+.page-footer .float-right {
+    text-align: right;
+}
+
+.page-footer a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000080;
+    border-color: #000080;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
+/* Intro page customizations */
+
+.intro .tagline {
+    text-transform: uppercase;
+    text-align: right;
+    float: left;
+    width: 15.2rem;
+    margin-top: 1rem;
+}
+
+.intro h1 {
+    font-size: 4.5rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 19rem;
+    margin-top: -3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .intro .tagline {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        word-spacing: 0;
+        margin-bottom: 1rem;
+    }
+
+    .intro h1 {
+        text-align: center;
+    }
+
+    .intro p {
+        padding-left: 0;
+        margin-top: 0;
+    }
+}
+
+/* Infographic section/page customizations */
+
+img.infographic {
+    max-width: 100%;
+}
+
+.col-infographic {
+    padding-top: 15px;
+}
+
+img.infographic-thumb {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #E7E7E7;
+}
+
+img.infographic-thumb:hover {
+    border-color: #000080;
+}
+
+.download-buttons {
+    text-align: left;
+}
+
+.dropdown-links a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+/* Intro page -- currently unused */
 
 .persons-grid {
     margin-top: 2rem;
@@ -136,68 +216,4 @@ a {
     width: 15rem;
     float: left;
     margin: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    span.intro-motto {
-        float: none;
-        text-align: left;
-        display: inline-block;
-        width: 100%;
-        word-spacing: 0;
-        margin-bottom: 1rem;
-    }
-
-    p.intro-about {
-        padding-left: 0;
-        margin-top: 0;
-    }
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #000080;
-    border-color: #000080;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #1b1bff;
-    border-color: #1b1bff;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #1b1bff;
-    border-color: #1b1bff;
-}
-
-.dropdown-links a {
-    font-size: 1.4rem;
-    text-decoration: none;
-}
-
-a {
-    color: #000080;
-    text-decoration: underline;
-}
-
-img.infographic {
-    max-width: 100%;
-}
-
-.col-infographic {
-    padding-top: 15px;
-}
-
-img.infographic-thumb {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #E7E7E7;
-}
-
-img.infographic-thumb:hover {
-    border-color: #000080;
 }
