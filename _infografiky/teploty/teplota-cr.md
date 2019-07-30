@@ -5,7 +5,7 @@ slug:       teplota-cr
 weight:     1
 tags:       [ teploty ]
 data:       "https://docs.google.com/spreadsheets/d/14eph67uGIQJgEBSmvWAufdRY49sI3JFq9G9_lH8G7h4/edit?usp=sharing"
-caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2°C."
+caption:    "<a href=http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty>Zdroj dat: ČHMÚ</a>. Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C."
 src:	    "Zdrojová data ČHMÚ"
 srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 ---
