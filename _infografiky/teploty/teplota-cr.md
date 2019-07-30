@@ -15,7 +15,7 @@ srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 * Průměrná teplota jednotlivých měsíců roste různě rychle. Nejvíce se oteplují leden, červenec a srpen (o více než 2,5°C od roku 1961) nejméně září a říjen. Podrobněji viz [trendy teplot pro jednotlivé měsíce](/infografiky/trend-teplot-cr).
 * S oteplením souvisí vyšší teploty v zimních měsících (a tedy méně sněhu), vlny veder a vyšší teploty v letních měsících (a tedy zvýšený odpar zesilující sucho) nebo třeba dřívější kvetení stromů a rostlin (s důsledky pro alergiky).
 * Nárůst teploty v ČR je přibližně dvojnásobný než nárůst světové průměrné teplotní anomálie([NOAA](https://www.climate.gov/maps-data/dataset/global-temperature-anomalies-graphing-tool), [NASA](https://earthobservatory.nasa.gov/world-of-change/DecadalTemp)). Obecně platí, že pevnina se otepluje rychleji než oceán a severní polokoule se otepluje rychleji než jižní. Světová průměrná teplotní anomálie však průměruje pevninu, oceán, severní i jižní polokouli a tedy světový trend oteplování je přibližně poloviční než oteplení v pevninských částech severní polokoule.  
-* Růst teploty je způsoben především činností člověka - emisemi skleníkových plynů, odlesňováním apod. O dynamice klimatického systému bylo napsáno mnoho knih a studií, proto uvádíme odkaz na český překlad webu s dalšími informacemi: [Skeptical science v češtině](https://skepticalscience.com/translation.php?lang=1)
+* Růst teploty je způsoben především činností člověka - emisemi skleníkových plynů, odlesňováním apod. O dynamice klimatického systému bylo napsáno mnoho knih a studií, proto uvádíme odkaz na český překlad webu [Skeptical science](https://skepticalscience.com/translation.php?lang=1) s dalšími informacemi.
 
 ## Související grafy
 
