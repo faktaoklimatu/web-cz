@@ -20,6 +20,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 - Roční objemy emisí skleníkových plynů jsou v různých státech EU různé - nejvíce emisí produkují Německo, Velká Británie a Francie &ndash; ale tyto země mají také nejvíce obyvatel. Aby bylo možné čísla srovnávat, uvádíme přepočet v tunách CO<sub>2</sub>eq na obyvatele na rok. 
 - Výběr států pro graf: zobrazení všech států EU by bylo nepřehledné a zásadní rozdíly by nebyly dobe vidět. Vybrali jsme tedy vedle ČR šest dalších států tak, aby byly zastoupeny sousední země i určité extrémy v Evropě, tak aby byl vzorek pokud možno reprezentativní. Z vybraných zemí má ČR nejvyšší emise, což ale odráží i pozici ČR v EU. (Vyššší emise na obyvatele než ČR má jen Estonsko, Irsko a Lucembursko)
+- V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako CO<sub>2</sub> ekvivalent. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential) 
 
 ## Co znamenají jednotlivé sektory a jaké jsou v nich rozdíly v rámci EU?
 
