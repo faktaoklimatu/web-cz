@@ -12,6 +12,12 @@ body {
     text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        text-align: left;
+    }
+}
+
 h1 {
     font-weight: bold !important;
 }
@@ -157,8 +163,21 @@ a {
 
 /* Infographic section/page customizations */
 
+a.infographic {
+    display: block;
+    overflow: hidden;
+}
+
+/* We cut 9% top and 3.5% from other sides */
 img.infographic {
-    max-width: 100%;
+    margin: -9.7% -3.75% -3.75% -3.75%;
+    max-width: 107.5%;
+}
+
+p.caption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .col-infographic {
