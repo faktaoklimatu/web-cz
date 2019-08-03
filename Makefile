@@ -9,7 +9,7 @@ REPO_URL=https://github.com/mukrop/faktaoklimatu
 all: web
 
 local: web
-	jekyll serve
+	bundle exec jekyll serve --unpublished
 
 web: _includes/version.html web-init $(INFOGRAPHICS_GENERATED)
 

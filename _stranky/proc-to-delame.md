@@ -2,6 +2,7 @@
 layout:     default
 title:      "Proč to děláme?"
 slug:       proc-to-delame
+published:  false
 ---
 
 ## Problém
