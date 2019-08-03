@@ -48,6 +48,6 @@ Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větv
 
 ## Jak nasadit novou verzi
 
-Na webu https://www.faktaoklimatu.cz (https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.
+Na webu https://faktaoklimatu.cz (resp. https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.
 
 V případě potíží zůstane k dispozici stará verze a důvod selhání bude potřeba získat skrze správce, tím je vlastník tohoto repozitáře.
