@@ -24,22 +24,22 @@
             <div class="col-md-12 col-lg-3 download-buttons">
                 <h2>Ke stažení</h2>
                 <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
-                <a href="{{ download_path }}.pdf" class="btn btn-primary" role="button" download>PDF</a>
-                <a href="{{ download_path }}.svg" class="btn btn-primary" role="button" download>SVG</a>
+                <a href="{{ download_path }}.pdf" id="infographic-pdf" class="btn btn-primary" role="button" download>PDF</a>
+                <a href="{{ download_path }}.svg" id="infographic-svg" class="btn btn-primary" role="button" download>SVG</a>
                 <span class="dropdown">
                     <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</a>
                     <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="{{ download_path }}_6000.png" download>6000 x 4000 px</a>
-                        <a class="dropdown-item" href="{{ download_path }}_1920.png" download>1920 x 1080 px</a>
-                        <a class="dropdown-item" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
+                        <a class="dropdown-item" id="infographic-png" href="{{ download_path }}_6000.png" download>6000 x 4000 px</a>
+                        <a class="dropdown-item" id="infographic-png" href="{{ download_path }}_1920.png" download>1920 x 1080 px</a>
+                        <a class="dropdown-item" id="infographic-png" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
                     </div>
                 </span>
             
                 <hr/>
                 <h2>Podkladová data</h2>
                 <p>Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
-                <a href="{{ page.data }}" target="_blank" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
-                <a href="{{ page.srclink }}" target="_blank" class="btn btn-primary" role="button">{{page.src}}</a>
+                <a href="{{ page.data }}" target="_blank" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a><br>
+                <a href="{{ page.srclink }}" target="_blank" id="data-orignal" class="btn btn-primary" role="button">{{page.src}}</a>
 
                 <hr/>
                 <h2>Licence</h2>
