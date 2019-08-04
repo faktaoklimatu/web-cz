@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Přehled infografik
+title: Fakta o klimatu
 slug: index
 
 intro-heading: Fakta o změně<br>klimatu
