@@ -8,19 +8,21 @@ data:       "#"
 caption:    "Zdroj dat: NASA. "
 src:	    "Zdrojová data NASA"
 srclink:    "https://data.giss.nasa.gov/gistemp/"
+published: false
 ---
 
-## Klíčové souvislosti 
+## Souvislosti 
 
-- [Podrobné zobrazení emisí ČR podle sektorů](/infografiky/teplota-cr-)
+- [Vývoj teploty v ČR](/infografiky/teplota-cr-)
 
 ## Co je zobrazeno v grafu
 * Data jsou zpracovány z měření 6300  stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v arktidě a antarktidě. 
-* V grafu je znázorněn vývoj teplotní anomálie vzhledem k referenčnímu období 1951-1980, nejde o graf koliv průměrné teploty. Podrobnosti k výpočtu teplotní anomálie viz níže.
+* V grafu je znázorněn vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1951-1980__, nejde o graf průměrné teploty. Podrobnosti k výpočtu teplotní anomálie viz níže.
 
 ## Klíčová fakta
 
-* Svět se oteplil o cca 1 °C. Zatím nejvyšší teplotní anomálie byla v roce 2016 (roční průměr teplotní anomálie byla +1,01 °C, přičemž v lednu 2016 dosáhl měsíční průměr TA 1,37 °C v roce 2016 (roční průměr teplotní anomálie). Dvě třetiny oteplení nastaly po roce 1975, trend oteplování se pohybuje mezi 0,15&ndash;0,20 °C za dekádu.
+* Svět se oteplil o cca 1 °C. Zatím nejvyšší teplotní anomálie (TA) byla v roce 2016 (roční průměrná teplotní anomálie byla +1,01 °C, přičemž v lednu 2016 dosáhl měsíční průměr TA 1,37 °C). 
+* Dvě třetiny oteplení nastaly po roce 1975, trend oteplování se pohybuje mezi 0,15&ndash;0,20 °C za dekádu.
 
 * Lokální teploty se mění &ndash; částečně v předvídatelných cyklech den&ndash;noc a léto&ndash;zima, částečně nepravidelnými atmosférickými jevy. Ale globální teplota je určena tím, kolik energie přijme Země ve formě záření od Slunce, a kolik jej vyzáří do vesmírů. Tato množství se v průběhu času mění jen málo. Množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry &ndash; konkrétně na koncentracích skleníkových plynů.
 Oteplení planety o 1 °C je velmi významné, protože i k tak “malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo ochlazení o 5 °C k době ledové a zalednění velké části Evropy a Severní Ameriky.
