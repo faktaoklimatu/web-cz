@@ -4,7 +4,7 @@ title:      "Vývoj průměrné světové teplotní anomálie"
 slug:       vyvoj-teplotni-anomalie
 weight:     2
 tags:       [ teploty ]
-data:       "#"
+data:       "https://docs.google.com/spreadsheets/d/1dIK4lqpfGxr0Ea_KT_WmR6GpB2nc2Y9ylYf_3TBu95M/edit?usp=sharing"
 caption:    "Zdroj dat: NASA. "
 src:	    "Zdrojová data NASA"
 srclink:    "https://data.giss.nasa.gov/gistemp/"
