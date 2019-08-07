@@ -8,7 +8,6 @@ data:       "https://docs.google.com/spreadsheets/d/1dIK4lqpfGxr0Ea_KT_WmR6GpB2n
 caption:    "Zdroj dat: NASA. "
 src:	    "Zdrojová data NASA"
 srclink:    "https://data.giss.nasa.gov/gistemp/"
-published: false
 ---
 
 ## Souvislosti 
