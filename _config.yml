@@ -8,8 +8,8 @@ contact: info@faktaoklimatu.cz
 
 # Build settings
 exclude: [ "Gemfile", "Gemfile.lock", "Makefile", # Build settings
-           "README.md", # Internal notes
-           "_infografiky/*/*.svg" # Original infographics (build moves them to assets)
+           "README.md", "utils", # Development files
+           "_infografiky/*/*.pdf" # Original infographics (build moves them to assets)
          ]
 collections:
     infografiky:
