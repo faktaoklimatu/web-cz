@@ -5,12 +5,12 @@ slug:       vyvoj-teplotni-anomalie
 weight:     2
 tags:       [ teploty ]
 data:       "https://docs.google.com/spreadsheets/d/1dIK4lqpfGxr0Ea_KT_WmR6GpB2nc2Y9ylYf_3TBu95M/edit?usp=sharing"
-caption:    "Svět je nyní o 0,8–1,0 °C teplejší než v letech 1951–1980."
+caption:    "Planeta je nyní o 0,8–1,0 °C teplejší než v letech 1951–1980. To je však průměrná hodnota teplotní anomálie pro celou planetu - většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2-3°C."
 src:	      "Zdrojová data NASA"
 srclink:    "https://data.giss.nasa.gov/gistemp/"
 ---
 
-## Souvislosti 
+## Související infografiky
 
 - [Vývoj teploty v ČR](/infografiky/teplota-cr)
 
