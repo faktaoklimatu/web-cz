@@ -12,7 +12,7 @@ srclink:    "https://data.giss.nasa.gov/gistemp/"
 
 ## Souvislosti 
 
-- [Vývoj teploty v ČR](/infografiky/teplota-cr-)
+- [Vývoj teploty v ČR](/infografiky/teplota-cr)
 
 ## Co je zobrazeno v grafu
 * Data jsou zpracovány z měření 6300  stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v arktidě a antarktidě. 
