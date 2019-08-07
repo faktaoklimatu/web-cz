@@ -1,21 +1,17 @@
 INFOGRAPHICS_FOLDER=assets/infographics
-INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.svg)
-INFOGRAPHICS_SVG=$(addprefix assets/infographics/,$(notdir $(INFOGRAPHICS_SRC)))
-INFOGRAPHICS_PDF=$(INFOGRAPHICS_SVG:.svg=.pdf)
-INFOGRAPHICS_PNG=$(INFOGRAPHICS_SVG:.svg=_600.png) $(INFOGRAPHICS_SVG:.svg=_1200.png) $(INFOGRAPHICS_SVG:.svg=_1920.png) $(INFOGRAPHICS_SVG:.svg=_6000.png)
-INFOGRAPHICS_GENERATED=$(INFOGRAPHICS_PDF) $(INFOGRAPHICS_PNG)
+INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.pdf)
+INFOGRAPHICS_DST=$(addprefix $(INFOGRAPHICS_FOLDER)/,$(notdir $(INFOGRAPHICS_SRC)))
 REPO_URL=https://github.com/mukrop/faktaoklimatu
+
+test:
+	@echo INFOGRAPHICS_DST: $(INFOGRAPHICS_DST)
 
 all: web
 
 local: web
 	bundle exec jekyll serve --unpublished
 
-web: _includes/version.html web-init $(INFOGRAPHICS_GENERATED)
-
-web-init:
-	mkdir -p $(INFOGRAPHICS_FOLDER)
-	cp -u $(INFOGRAPHICS_SRC) $(INFOGRAPHICS_FOLDER)
+web: _includes/version.html $(INFOGRAPHICS_DST)
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
@@ -23,19 +19,7 @@ clean:
 _includes/version.html:
 	utils/web-version.sh $(REPO_URL) >$@
 
-%.pdf: %.svg
-	inkscape --without-gui --export-area-page --export-background=white --export-pdf=$@ --file=$<
+$(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
+	utils/convert-infographic.sh $< $@
 
-%_600.png: %.svg
-	inkscape --without-gui --export-area-page --export-background=white --export-width=600 --export-height=400 --export-png=$@ --file=$<
-
-%_1200.png: %.svg
-	inkscape --without-gui --export-area-page --export-background=white --export-width=1200 --export-height=800 --export-png=$@ --file=$<
-
-%_1920.png: %.svg
-	inkscape --without-gui --export-area-page --export-background=white --export-width=1920 --export-height=1280 --export-png=$@ --file=$<
-
-%_6000.png: %.svg
-	inkscape --without-gui --export-area-page --export-background=white --export-width=6000 --export-height=4000 --export-png=$@ --file=$<
-
-.PHONY: all web web-init local clean _includes/version.html
+.PHONY: all web local clean _includes/version.html

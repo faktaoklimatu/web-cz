@@ -3,7 +3,7 @@ language: minimal
 install: 
   - sudo add-apt-repository ppa:inkscape.dev/stable -y
   - sudo apt update
-  - sudo apt install -y inkscape
+  - sudo apt install -y inkscape pdf2svg
 script: make web
 before_deploy: rm .gitignore # So that built infographics are commited back to GitHub
 deploy:
