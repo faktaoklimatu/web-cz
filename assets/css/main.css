@@ -54,6 +54,14 @@ a {
     text-decoration: none;
 }
 
+.navbar-brand {
+    padding-left: 2rem;
+    background-image: url(/assets/img/favicon.png);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: left;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #000080;
 }
