@@ -7,9 +7,10 @@ url: https://faktaoklimatu.cz
 contact: info@faktaoklimatu.cz
 
 # Build settings
-exclude: [ "Gemfile", "Gemfile.lock", "Makefile", # Build settings
-           "README.md", "utils", # Development files
-           "_infografiky/*/*.pdf" # Original infographics (build moves them to assets)
+exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
+         , "README.md", "utils"                     # Development files
+         , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
+         , "_studie/*.jpg"                          # Study images
          ]
 collections:
     infografiky:

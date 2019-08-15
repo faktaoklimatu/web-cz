@@ -216,4 +216,22 @@ p.caption {
 
 /* Study page customizations */
 
-/* TBA */
+.study-metadata {
+    text-align: left;
+    float: right;
+    padding: 0rem 0rem 1rem 2rem;
+}
+
+.study-metadata img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.study-metadata .btn {
+    display: block;
+}
+
+.study-metadata ul {
+    list-style-type: none;
+    padding: 0;
+}

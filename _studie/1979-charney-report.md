@@ -12,6 +12,8 @@ study-publisher:    "The National Academia Press"
 study-year:         1979
 ---
 
+Nejaky intro odstavec, ktory popisuje, co je to zac (ale dlhsi, ako je caption).
+
 ## Hlavní závěry
 
 * při zdvojnásobení koncentrace CO2 v atmosféře dojde ke zvýšení průměrné povrchové teploty planety o 3 °C s nejistotou 1,5°C) -- s vyššími nárůsty v severních zeměpisných šířkách. Žádný z modelů nepředpovídá menší oteplení než 1,5 °C. 
