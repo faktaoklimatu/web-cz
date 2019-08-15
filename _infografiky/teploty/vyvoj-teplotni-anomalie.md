@@ -10,10 +10,6 @@ src:	      "Zdrojová data NASA"
 srclink:    "https://data.giss.nasa.gov/gistemp/"
 ---
 
-## Související infografiky
-
-- [Vývoj teploty v ČR](/infografiky/teplota-cr)
-
 ## Co je zobrazeno v grafu
 * Data jsou zpracovány z měření 6&thinsp;300  stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě.
 * V grafu je znázorněn vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1951--1980__, nejde o graf průměrné teploty. Podrobnosti k výpočtu teplotní anomálie viz níže.

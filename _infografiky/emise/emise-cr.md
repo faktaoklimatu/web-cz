@@ -10,13 +10,6 @@ src:	    "Zdrojová data Eurostat"
 srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23"
 ---
 
-## Klíčové souvislosti
-
-- [Podrobnější zobrazení emisí ČR](/infografiky/emise-cr-detail)
-<!-- Srovnání emisí států EU viz graf FIXME -->
-<!-- Srovnání emisí na obyvatele pro státy EU FIXME-->
-- [Srovnání emisí jednotlivých sektorů ČR na obyvatele s dalšími státy EU](/infografiky/emise-vybrane-staty)
-
 ## Jak číst tento graf a co znamenají jednotlivé sektory?
 
 - Roční objem emisí České republiky je 130,35 mil. tun CO<sub>2</sub>eq (údaj z roku 2016). __V přepočtu na obyvatele to je 12,3 tCO<sub>2</sub>eq/obyvatele.__

@@ -10,12 +10,6 @@ src:	    "Zdrojová data Eurostat"
 srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23"
 ---
 
-## Klíčové souvislosti
-
-- [Podrobné zobrazení emisí ČR podle sektorů](/infografiky/emise-cr-detail)
-<!-- Srovnání emisí států EU viz graf FIXME -->
-<!-- Srovnání emisí na obyvatele pro státy EU FIXME-->
-
 ## Co je v grafice zobrazeno?
 
 - Roční objemy emisí skleníkových plynů jsou v různých státech EU různé - nejvíce emisí produkují Německo, Velká Británie a Francie &ndash; ale tyto země mají také nejvíce obyvatel. Aby bylo možné čísla srovnávat, uvádíme přepočet v tunách CO<sub>2</sub>eq na obyvatele na rok.

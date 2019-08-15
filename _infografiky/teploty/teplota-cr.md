@@ -17,8 +17,3 @@ srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
 * Nárůst teploty v ČR je přibližně dvojnásobný než nárůst světové průměrné teplotní anomálie ([NOAA](https://www.climate.gov/maps-data/dataset/global-temperature-anomalies-graphing-tool), [NASA](https://earthobservatory.nasa.gov/world-of-change/DecadalTemp)). Obecně platí, že pevnina se otepluje rychleji než oceán a severní polokoule se otepluje rychleji než jižní. Světová průměrná teplotní anomálie však průměruje pevninu, oceán, severní i jižní polokouli a tedy světový trend oteplování je přibližně poloviční než oteplení v pevninských částech severní polokoule.  
 * Růst teploty je způsoben především činností člověka -- emisemi skleníkových plynů, odlesňováním apod. O dynamice klimatického systému bylo napsáno mnoho knih a studií. Pro stručnost uvádíme odkaz na český překlad webu [Skeptical science](https://skepticalscience.com/translation.php?lang=1) s dalšími informacemi.
 
-## Související grafy
-
-* [Srovnání teplot jednotlivých měsíců v ČR nyní a v letech 1961-1965](/infografiky/teplota-cr-mesice)
-* [Trend změny teploty v ČR pro jednotlivé měsíce](/infografiky/trend-teplot-cr)
-
