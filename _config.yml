@@ -21,6 +21,9 @@ collections:
     stranky:
         output: true
         permalink: /:title
+    studie:
+        output: true
+        permalink: /:collection/:title
 sass:
     sass_dir: assets/css
 
