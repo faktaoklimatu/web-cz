@@ -210,6 +210,15 @@ img.infographic-thumb:hover {
     text-decoration: none;
 }
 
+.btn-sharing svg {
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  vertical-align: middle;
+  fill: #fff;
+  stroke: none;
+}
+
 /* Intro page -- currently unused */
 
 .persons-grid {
