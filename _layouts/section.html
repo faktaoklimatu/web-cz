@@ -1,15 +1,24 @@
 <h1>{{ page.title }}</h1>
 {{ content }}
-{% assign sorted_infographics = site.infografiky | sort: 'weight' %}
+{% assign sorted_items = site.infografiky | concat: site.studie | sort: 'weight' %}
 <div class="row justify-content-md-center">
-{% for infographics in sorted_infographics %}
-    {% if infographics.tags contains page.filter-tag %}
-            <div class="col-md-6 col-lg-4 col-infographic">
-                {{ infographics.dir }}
-                <a href="{{ infographics.url }}">
-                    <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="infographic-thumb img-fluid" />
-                </a>
-            </div>
-    {% endif %}
+{% for item in sorted_items %}
+{% if item.tags contains page.filter-tag %}
+    <div class="col-md-6 col-lg-4 homepage-card">
+        <a href="{{ item.url }}">
+            {% case item.layout %}
+            {% when 'infographic' %}
+                <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="infographic-thumb img-fluid" />
+            {% when 'study' %}
+                <div class="card-body">
+                    <h5>{{ item.title }}</h5>
+                    <p class="card-text">{{ item.caption }}</p>
+                </div>
+            {% else %}
+                <p>Unknown layout.</p>
+            {% endcase %}
+        </a>
+    </div>
+{% endif %}
 {% endfor %}
 </div>

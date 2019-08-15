@@ -28,6 +28,10 @@ h2 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-weight: bold;
+}
+
 a {
     color: #000080;
     text-decoration: underline;
@@ -160,7 +164,29 @@ a {
     }
 }
 
-/* Infographic section/page customizations */
+/* Homepage section customizations */
+
+.homepage-card {
+    padding-top: 15px;
+}
+
+.homepage-card a {
+    display: block;
+    background-color: #fff;
+    background-clip: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
+    border-radius: .25rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.homepage-card a:hover {
+    border-color: rgba(0,0,128,0.5);
+}
+
+/* Infographic page customizations */
 
 a.infographic {
     display: block;
@@ -179,20 +205,6 @@ p.caption {
     font-style: italic;
 }
 
-.col-infographic {
-    padding-top: 15px;
-}
-
-img.infographic-thumb {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #E7E7E7;
-}
-
-img.infographic-thumb:hover {
-    border-color: #000080;
-}
-
 .download-buttons {
     text-align: left;
 }
@@ -202,36 +214,6 @@ img.infographic-thumb:hover {
     text-decoration: none;
 }
 
-/* Intro page -- currently unused */
+/* Study page customizations */
 
-.persons-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.person-card {
-    width: 12rem;
-    float: left;
-    margin: 1rem;
-}
-
-.partners-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.partner-logo {
-    float: left;
-    margin: 2rem;
-}
-
-.projects-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.project {
-    width: 15rem;
-    float: left;
-    margin: 1rem;
-}
+/* TBA */

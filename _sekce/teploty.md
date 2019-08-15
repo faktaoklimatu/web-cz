@@ -1,6 +1,7 @@
 ---
 layout:     section
 title:      "Vývoj teplot"
+navbar:     infographics
 filter-tag: teploty
 weight:     1
 ---

@@ -3,9 +3,9 @@ layout:     study
 title:      "Charneyho zpráva"
 slug:       charneyho-zprava
 weight:     1
-tags:       [ svet, zprava ]
+tags:       [ studie, svet ]
 srclink:    "#"
-published:  false
+caption:    "Výsledky 40let staré zprávy o tehdejších znalostech klimatu"
 ---
 
 ## Hlavní závěry
