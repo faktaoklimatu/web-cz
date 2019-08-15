@@ -1,9 +1,8 @@
 <h1>{{ page.title }}</h1>
 {{ content }}
-{% assign sorted_items = site.infografiky | concat: site.studie | sort: 'weight' %}
+{% assign sorted_items = site.infografiky | concat: site.studie | where_exp:"item","item.tags contains page.filter-tag" | sort: 'weight' %}
 <div class="row justify-content-md-center">
 {% for item in sorted_items %}
-{% if item.tags contains page.filter-tag %}
     <div class="col-md-6 col-lg-4 homepage-card">
         <a href="{{ item.url }}">
             {% case item.layout %}
@@ -19,6 +18,5 @@
             {% endcase %}
         </a>
     </div>
-{% endif %}
 {% endfor %}
 </div>
