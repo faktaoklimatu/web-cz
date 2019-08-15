@@ -219,6 +219,11 @@ img.infographic-thumb:hover {
   stroke: none;
 }
 
+#sharing-embed svg {
+    width: 1.3em;
+    height: 1.3em;
+}
+
 /* Intro page -- currently unused */
 
 .persons-grid {
