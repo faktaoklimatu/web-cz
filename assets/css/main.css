@@ -36,6 +36,12 @@ a {
 
 /* Core design: sectioning, header, footer, buttons */
 
+@media screen and (max-width: 992px) {
+    .hide-md {
+        display: none;
+    }
+}
+
 .section {
     padding-top: 3rem;
     padding-bottom: 3rem;

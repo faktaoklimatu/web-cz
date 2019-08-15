@@ -22,6 +22,7 @@
             </div>
 
             <div class="col-md-12 col-lg-3 download-buttons">
+              <div class="hide-md">
                 <h2>Ke stažení</h2>
                 <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
                 <div class="btn-group" role="group">
@@ -34,16 +35,19 @@
                         <a class="dropdown-item" id="infographic-png" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
                     </div>
                 </div>
-            
                 <hr/>
+              </div>
+              <div class="hide-md">
                 <h2>Podkladová data</h2>
                 <p>Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
+              </div>
                 <a href="{{ page.data }}" target="_blank" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
                 <a href="{{ page.srclink }}" target="_blank" id="data-original" class="btn btn-primary" role="button">{{page.src}}</a>
-
+              <div class="hide-md">
                 <hr/>
                 <h2>Sdílení</h2>
                 <p>Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" target="_blank" rel="license">CC BY 4.0</a>.</p>
+              </div>
                 <div class="btn-group" role="group">
                   <a class="btn btn-primary btn-sharing" id="sharing-facebook" title="Sdílet na Facebooku" href="https://facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | cgi_escape }}" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
