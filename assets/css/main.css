@@ -2,7 +2,7 @@
 
 body {
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: #000080;
     font-size: 1.0rem;
@@ -41,8 +41,19 @@ a {
     padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 576px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
 .section:nth-of-type(odd) {
     background: white;
+}
+
+ul:last-child {
+    margin-bottom: 0;
 }
 
 .navbar-scrolled {
