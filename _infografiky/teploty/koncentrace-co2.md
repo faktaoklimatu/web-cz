@@ -15,3 +15,5 @@ published: false
 * Jednotka _ppm__ znamená *parts per milion*, tedy označuje počet částic v jednom milionu. (podobně jako procenta, tedy *per cent* znamená počet ve stovce a promile znamená počet v tisici). Tedy koncentrace 400ppm tedy odpovídá 0,4 promile, nebo 0,04%.
 
 ## Jak se zjišťují historické koncentrace CO2 z vrtů v ledovci?
+Vrty pro 800000 jsou z Antarktidy - EPICA, VOSTOK
+
