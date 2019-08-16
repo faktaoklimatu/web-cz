@@ -5,7 +5,7 @@ slug:       koncentrace-co2
 weight:     5
 tags:       [ CO2, svet ]
 data:       ""
-caption:    "Koncentrace CO<sub>2</sub> zjištěná z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Manuna Loa, Hawai."
+caption:    "Koncentrace CO<sub>2</sub> zjištěná z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
 src:	    "Zdrojová data"
 srclink:    ""
 ---
@@ -22,9 +22,7 @@ srclink:    ""
 * Mladší data (0-2000let před současností) jsou složením současných měření na Mauna Loa, Hawai a měření z ledovcových vrtů na Jižním pólu. [data Scripps](http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products)
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
-Různé zdroje oxidu uhličitého mají různé isotopové složení. Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy 14C, oxid uhličitý vydechovaný rostlinami má nižší koncentraci 13C než uhlík, který vychází z oceánu. Oxi uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html)
-
-
+* Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C, oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html)
 
 <<<<<<< HEAD
 ## Jak se zjišťují historické koncentrace CO2 z vrtů v ledovci?
