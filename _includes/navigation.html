@@ -7,10 +7,10 @@
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#home">Úvod</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         {% assign sorted_sections = (site.sekce | sort: 'weight') %}
@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/#partners">Partneři</a>
                 </li>
                 -->
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#creators">Tvůrci</a>
                 </li>
                 <!--
