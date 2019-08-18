@@ -4,19 +4,19 @@
   {% include header.html %}
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
   {% include navigation.html %}
   <main role="main">
     <div class="section intro">
         <div class="container">
-          <h1>{{ page.intro-heading }}</h1>
+          <h1 id="home">{{ page.intro-heading }}</h1>
           <span class="tagline">{{ page.intro-tagline }}</span>
           <p>{{ page.intro }}</p>
         </div>
     </div>
     {% assign sorted_sections = site.sekce | sort: 'weight' %}
     {% for section in sorted_sections %}
-      <div class="section" id="{{ section.id }}">
+      <div class="section">
           <div class="container">
             {{ section.output }}
           </div>
@@ -85,7 +85,7 @@
 
     <div class="section" id="creators">
         <div class="container">
-          <h1>{{ page.authors-heading }}</h1>
+          <h1 id="creators">{{ page.authors-heading }}</h1>
           {{ page.authors | markdownify }}
             <!--
             <div class="persons-grid d-flex justify-content-around align-content-between flex-wrap">

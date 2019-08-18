@@ -1,21 +1,21 @@
-<nav class="navbar navbar-expand-md navbar-light bg-custom fixed-top">
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">Fakta o klimatu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Zobrazit/skrýt navigaci">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Zobrazit/skrýt navigaci">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarDefault">
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Úvod</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#home">Úvod</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         {% assign sorted_sections = (site.sekce | sort: 'weight') %}
                         {% for section in sorted_sections %}
-                          <a class="dropdown-item" href="/#{{ section.id }}">{{ section.title }}</a>
+                          <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#{{ section.id }}">{{ section.title }}</a>
                         {% endfor %}
                     </div>
                 </li>
@@ -35,7 +35,7 @@
                 </li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/#creators">Tvůrci</a>
+                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#creators">Tvůrci</a>
                 </li>
                 <!--
                 <li class="nav-item">

@@ -62,6 +62,10 @@ ul:last-child {
     margin-bottom: 0;
 }
 
+.navbar {
+    background: #F7F7F7;
+}
+
 .navbar-scrolled {
     box-shadow: 0 3px 10px #e2e2ff;
 }
@@ -95,10 +99,6 @@ ul:last-child {
 .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-.bg-custom {
-    background: #F7F7F7;
 }
 
 .page-footer {
