@@ -28,6 +28,13 @@ h2 {
     text-transform: uppercase;
 }
 
+/* Fix anchor links */
+h1:target,
+h2:target {
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
 a {
     color: #000080;
     text-decoration: underline;
