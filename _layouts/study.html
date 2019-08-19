@@ -12,17 +12,17 @@
         <h1>{{ page.title }}</h1>
         {% assign download_path = site.baseurl | append: "/assets/studies/" | append: page.slug %}
 
-        <div class="col-md-12 col-lg-3 study-metadata">
+        <div class="col-md-12 col-lg-4 study-metadata">
           <a href="{{ page.srclink }}" target="_blank" id="study-link" title="{{ page.study-title }} ({{ page.study-year}})">
             <img src="{{ download_path }}.jpg" alt="{{ page.title }}">
           </a>
           <a href="{{ page.srclink }}" target="_blank" id="study-link" class="btn btn-primary" role="button" download>Původní studie</a>
           <h2>{{ page.study-title }}</h2>
           <ul>
-            <li>Název: {{ page.study-title }}</li>
-            <li>Autor: {{ page.study-author }}</li>
-            <li>Vydal: {{ page.study-publisher }}</li>
-            <li>Rok vydání: {{ page.study-year }}</li>
+            <li><strong>Název</strong>: {{ page.study-title }}</li>
+            <li><strong>Autor</strong>: {{ page.study-author }}</li>
+            <li><strong>Vydal</strong>: {{ page.study-publisher }}</li>
+            <li><strong>Rok vydání</strong>: {{ page.study-year }}</li>
           </ul>
         </div>
         {{ content }}

@@ -219,7 +219,7 @@ p.caption {
 .study-metadata {
     text-align: left;
     float: right;
-    padding: 0rem 0rem 1rem 2rem;
+    padding: 0rem 0rem 1rem 3rem;
 }
 
 .study-metadata img {
@@ -234,4 +234,9 @@ p.caption {
 .study-metadata ul {
     list-style-type: none;
     padding: 0;
+}
+
+img.study-thumb {
+    width: 30%;
+    height: auto;
 }
