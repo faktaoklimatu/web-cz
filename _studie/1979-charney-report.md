@@ -5,14 +5,14 @@ slug:       1979-charney-report
 weight:     1
 tags:       [ studie, svet ]
 srclink:    "https://www.nap.edu/catalog/19856/carbon-dioxide-and-climate-a-scientific-assessment"
-caption:    "Výsledky 40 let staré zprávy o tehdejších znalostech klimatu"
+caption:    "V roce 1979 vědci popsali a vcelku přesně předpověděli klimatickou změnu. Jejich výsledky jsou stále platné."
 study-title:        "Carbon Dioxide and Climate: A Scientific Assessment"
 study-author:       "National Research Council"
 study-publisher:    "The National Academia Press"
 study-year:         1979
 ---
 
-V roce 1979, tedy před 40lety, se sešel tým vědců a publikoval zprávu o dopadech zvyšujících se koncentrací CO<sub>2</sub> v atmosféře. Výsledky této studie se ukázaly být přesné a byly od té doby mnohokrát potvrzeny mnohem přesnějšími metodami. Již tehdy vědci v předslovu psali o nebezpečí setrvačnosti klimatického systému: *"...politika vyčkávání může znamenat čekání až do chvíle, kdy bude příliš pozdě."*  
+V roce 1979, tedy před čtyřiceti lety, se sešel tým vědců a publikoval zprávu o dopadech zvyšujících se koncentrací CO<sub>2</sub> v atmosféře. Výsledky této studie se ukázaly být přesné a byly od té doby mnohokrát potvrzeny mnohem přesnějšími metodami. Již tehdy vědci v předslovu psali o nebezpečí setrvačnosti klimatického systému: *"...politika vyčkávání může znamenat čekání až do chvíle, kdy bude příliš pozdě."*  
 
 ## Hlavní závěry
 
