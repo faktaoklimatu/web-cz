@@ -85,6 +85,8 @@ ul:last-child {
 
 .navbar {
     background: #F7F7F7;
+    top: 0;
+    transition: top 300ms;
 }
 
 .navbar-scrolled {
