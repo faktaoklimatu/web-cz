@@ -12,6 +12,10 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Jak číst tento graf a co znamenají jednotlivé sektory?
 
+- celkové emise skleníkových plynů EU jsou XX  a tvoří X% světových emisí... 
+
+- V emisích na obyvatele je ČR třetí v EU. Před námi jsou pouze...
+-----------------
 - Roční objem emisí České republiky je 130,35 mil. tun CO<sub>2</sub>eq (údaj z roku 2016). __V přepočtu na obyvatele to je 12,3 tCO<sub>2</sub>eq/obyvatele.__
 - V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako *CO<sub>2</sub> ekvivalent*. Jednotka *CO<sub>2</sub> ekvivalent* zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
 - __Energetika:__ 54,45 milionů tun CO<sub>2</sub> (41,8 % celkových emisí, 5&thinsp;160 kg CO<sub>2</sub>eq na obyvatele ročně). Emise v energetice pochází především ze spalování hnědého uhlí v elektrárnách, z výroby tepla a výroby paliv. Emise skleníkových plynů pocházející z energetiky je možné snížit energetickými úsporami a rozvojem obnovitelných a nízkouhlíkových zdrojů energie.
