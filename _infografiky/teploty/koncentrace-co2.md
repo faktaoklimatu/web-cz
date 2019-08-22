@@ -5,7 +5,7 @@ slug:       koncentrace-co2
 weight:     3
 tags:       [ teploty, CO2, svet ]
 data:       "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
-caption:    "Koncentrace CO<sub>2</sub> zjištěná z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
+caption:    "Od průmyslové revoluce rostou koncentrace Oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800&thinsp;000let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
 src:	    "Zdrojová data"
 srclink:    "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products"
 ---
