@@ -1,7 +1,7 @@
 ---
 layout:     study
 title:      "Charneyho zpráva"
-slug:       1979-charney-report
+slug:       1979_charneyho-zprava
 weight:     1
 tags:       [ studie, svet ]
 srclink:    "https://www.nap.edu/catalog/19856/carbon-dioxide-and-climate-a-scientific-assessment"

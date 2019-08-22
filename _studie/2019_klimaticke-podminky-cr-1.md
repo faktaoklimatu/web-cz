@@ -1,7 +1,7 @@
 ---
 layout:     study
 title:      "Očekávané klimatické podmínky v České republice - část I."
-slug:       2019-AVCR_SustES_CzechGlobe
+slug:       2019_klimaticke-podminky-cr-1
 weight:     2
 tags:       [ studie, cr, predpovedi ]
 srclink:    "https://www.klimatickazmena.cz/cs/o-nas/aktuality/ocekavane-klimaticke-podminky-v-ceske-republice-cast-i-zmena-zakladnich-parametru/"

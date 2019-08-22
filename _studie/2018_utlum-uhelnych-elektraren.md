@@ -1,7 +1,7 @@
 ---
 layout:     study
 title:      "Jak může česká síť zvládnout útlum uhelných elektráren a nástup obnovitelných zdrojů"
-slug:       2018-glopolis_frankbold-report
+slug:       2018_utlum-uhelnych-elektraren
 weight:     3
 tags:       [ studie, cr ]
 srclink:    "https://frankbold.org/sites/default/files/publikace/infolist-sit_bez_uhli.pdf"
