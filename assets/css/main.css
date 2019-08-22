@@ -124,6 +124,23 @@ a {
     border-color: #1b1bff;
 }
 
+.table table {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.table thead {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
 /* Intro page customizations */
 
 .intro .tagline {
@@ -218,13 +235,12 @@ p.caption {
 
 .study-metadata {
     text-align: left;
-    float: right;
-    padding: 0rem 0rem 1rem 3rem;
 }
 
 .study-metadata img {
-    max-width: 100%;
-    margin-bottom: 0.5rem;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
 }
 
 .study-metadata .btn {
@@ -234,9 +250,4 @@ p.caption {
 .study-metadata ul {
     list-style-type: none;
     padding: 0;
-}
-
-img.study-thumb {
-    width: 30%;
-    height: auto;
 }
