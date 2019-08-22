@@ -2,7 +2,7 @@
 layout:     infographic
 title:      "Vývoj koncentrace CO<sub>2</sub> v historii"
 slug:       koncentrace-co2
-weight:     5
+weight:     3
 tags:       [ teploty, CO2, svet ]
 data:       "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
 caption:    "Koncentrace CO<sub>2</sub> zjištěná z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
