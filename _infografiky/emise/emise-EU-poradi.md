@@ -1,9 +1,9 @@
 ---
 layout:     infographic
-title:      "Emise skleníkových plynů EU"
-slug:       emise-EU
-weight:     1
-tags:       [ emise, EU, CO2 ]
+title:      "Pořadí států EU podle emisí skleníkových plynů"
+slug:       emise-EU-poradi
+weight:     5
+tags:       [ emise, EU ]
 data:       ""
 caption:    ""
 src:	    "Zdrojová data Eurostat"
@@ -12,9 +12,11 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Jak číst tento graf?
 
+
 ## Poznámky k datům o emisích
 * Data o emisích poskytují Eurostatu jednotlivé země EU -- tedy data za Českou republiku reportovala přímo Česká republika.
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny. V údajích o emisích nejsou zahrnuty emise z mezinárodní letecké dopravy, protože je komplikované přisoudit, které zemi by emise daného letu měly „patřit“ (místo vzletu?, místo přistání?, země která vyprodukovala letecké palivo?).
+
 
 
