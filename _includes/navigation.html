@@ -13,35 +13,18 @@
                 <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        {% assign sorted_sections = (site.sekce | sort: 'weight') %}
+                        {% assign sorted_sections = (site.sekce | where:"navbar","infographics" | sort: 'weight') %}
                         {% for section in sorted_sections %}
                           <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#{{ section.id }}">{{ section.title }}</a>
                         {% endfor %}
                     </div>
                 </li>
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="/#datasets">Datové sady</a>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#/sekce/studie">Studie</a>
                 </li>
-                -->
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="/#projects">Další projekty</a>
-                </li>
-                -->
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="/#partners">Partneři</a>
-                </li>
-                -->
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#creators">Tvůrci</a>
                 </li>
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="/#contact">Kontakt</a>
-                </li>
-                -->
             </ul>
         </div>
     </div>

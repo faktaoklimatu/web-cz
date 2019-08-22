@@ -41,6 +41,10 @@ h2:target {
     margin-top: -5rem;
 }
 
+h5 {
+    font-weight: bold;
+}
+
 a {
     color: #000080;
     text-decoration: underline;
@@ -162,6 +166,23 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
+.table table {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.table thead {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
 /* Intro page customizations */
 
 .intro .tagline {
@@ -202,7 +223,29 @@ ul:last-child {
     }
 }
 
-/* Infographic section/page customizations */
+/* Homepage section customizations */
+
+.homepage-card {
+    padding-top: 15px;
+}
+
+.homepage-card a {
+    display: block;
+    background-color: #fff;
+    background-clip: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
+    border-radius: .25rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.homepage-card a:hover {
+    border-color: rgba(0,0,128,0.5);
+}
+
+/* Infographic page customizations */
 
 a.infographic {
     display: block;
@@ -219,20 +262,6 @@ img.infographic {
 p.caption {
     font-size: 1.2rem;
     font-style: italic;
-}
-
-.col-infographic {
-    padding-top: 15px;
-}
-
-img.infographic-thumb {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #E7E7E7;
-}
-
-img.infographic-thumb:hover {
-    border-color: #000080;
 }
 
 .download-buttons {
@@ -281,36 +310,23 @@ pre {
     word-wrap: break-word;
 }
 
-/* Intro page -- currently unused */
+/* Study page customizations */
 
-.persons-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.study-metadata {
+    text-align: left;
 }
 
-.person-card {
-    width: 12rem;
-    float: left;
-    margin: 1rem;
+.study-metadata img {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
 }
 
-.partners-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.study-metadata .btn {
+    display: block;
 }
 
-.partner-logo {
-    float: left;
-    margin: 2rem;
-}
-
-.projects-grid {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.project {
-    width: 15rem;
-    float: left;
-    margin: 1rem;
+.study-metadata ul {
+    list-style-type: none;
+    padding: 0;
 }

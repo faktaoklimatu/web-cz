@@ -1,6 +1,7 @@
 ---
 layout:     section
 title:      "Emise skleníkových plynů"
+navbar:     infographics
 filter-tag: emise
 weight:     2
 ---
