@@ -3,12 +3,15 @@ layout:     infographic
 title:      "Vývoj koncentrace CO<sub>2</sub> v historii"
 slug:       koncentrace-co2
 weight:     5
-tags:       [ CO2, svet ]
+tags:       [ teploty, CO2, svet ]
 data:       ""
 caption:    "Koncentrace CO<sub>2</sub> zjištěná z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
 src:	    "Zdrojová data"
-srclink:    ""
+srclink:    "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products"
 ---
+## Související infografiky
+- [Vývoj světové teplotn anomálie](/infografiky/teplota-cr)
+
 ## Jak číst tento graf? 
 * V posledních 800 000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170-280ppm a kolísání odpovídalo střídání ledových a meziledových. (pro srovnání: první nálezy *Homo Sapiens* mají stáří přibližně 300 000let)
 * Během posledních 2000 let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilní v rozmezí 275-280ppm. 
