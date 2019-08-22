@@ -4,7 +4,7 @@ title:      "Očekávané klimatické podmínky v ČR"
 slug:       2019_klimaticke-podminky-cr-1
 weight:     2
 tags:       [ studie, cr, predpovedi ]
-caption:    "Studie modeluje změny oteplení a zmněny množství a rozložení srážek v ČR během 21.století."
+caption:    "Studie modeluje změny teploty a změny množství a rozložení srážek v ČR během 21.století."
 study-title:        "Očekávané klimatické podmínky v České Republice, část I."
 study-author:       "Petr Štěpánek a kol."
 study-institution:  "Ústav výzkumu globální změny, Akademie věd České republiky"
