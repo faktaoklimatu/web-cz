@@ -12,7 +12,7 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Jak číst tento graf?
 
-* Graf zobrazuje vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele. Česká republika je zvýrazněna, tloušťka čar se mění dle velikostí rozporu mezi absolutní a relativní hodnotou (čím větší rozdíl, tím tmavší).
+* Graf zobrazuje vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele. Česká republika je zvýrazněna, barva čar se mění dle velikosti rozporu mezi absolutní a relativní hodnotou (čím větší rozdíl, tím tmavší).
 * Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population), tak [z hlediska HDP](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))) mají v absolutních číslech nejvyšší emise:
   * Německo se svými cca 83 mil. obyvateli 935,8 mil. t CO<sub>2</sub> eq
   * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub> eq
