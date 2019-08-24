@@ -19,7 +19,8 @@ summary: |
         - Neplánovaný výpadek největšího zdroje v české elektrizační soustavě (blok jaderné elektrárny Temelín).
         - Extrémní počasí (tři zimní týdny v řadě, kdy průměrná teplota dosahuje mínus stupňů Celsia a současně dochází k velmi nízké produkci větrných elektráren).
         - Nárust spotřeby elektřiny v důsledku nástupu tepelných čerpadel a elektromobility.
-        - Současné omezení instalovaného výkonu v Polsku, Neměcku a Francii.
+        - Současné omezení instalovaného výkonu v Polsku, Německu a Francii.
+
 
     * Stávající podoba české elektrizační soustavy není překážkou pro přechod na čistější energetiku, díky těmto důvodům:
 
@@ -34,24 +35,22 @@ summary: |
 
 ## Předpoklady a metodologie
 
-* Pro rok 2030 je uvažována čistá spotřeba na úrovni 65 TWh, oproti 60,7 TWh v roce 2017. Česká republika zůstane zemí, která vyváží více elektřiny, než dováží, byť čistý export klesne na 4 TWh oproti 13TWh v roce 2017.
+* Pro rok 2030 je uvažována čistá spotřeba na úrovni 65 TWh, oproti 60,7 TWh v roce 2017. Česká republika zůstane zemí, která vyváží více elektřiny, než dováží, byť čistý export klesne na 4 TWh oproti 13 TWh v roce 2017.
 * V provozu zůstanou pouze uhelné zdroje s kombinovanou výrobou tepla a elektřiny, a kogenerační zdroje v průmyslových podnicích. Budou dokončeny v současné době plánované projekty rozvoje přenosové soustavy.
-
-* Objem výroby z jaderných elektráren bude zachován . Výroba energie z hnědého uhlí oproti roku 2017 klesne na 20%, výroba z černého uhlí klesne na 46%. Výroba energie ze zdrojů na zemní plyn vzroste o 95%. Výroba energie z obnovitelných zdrojů (vodní elektrárny, přečerpávací vodní elektrárny, větrné elektrárny, fotovoltaické elektrárny, bioplyn, biomasa, geotermální elektrárny) stoupne o 111%. Obnovitelné zdroje pokryjí celkem 54% výroby energie oproti 25% z roku 2017.
 
 <div class="table table-striped table-hover" markdown="1">
 
-| Zdroj                | Výkon 2017             | Výkon 2030 | Nárůst |
+| Zdroj                | Výkon 2017             | Výkon 2030 | Rozdíl |
 | -------------------- |-----------------------:| ----------:| ------:|
-| Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |  0 %   |
-| Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   | -79%   |
-| Zdroje na černé uhlí | 1496 MWe               | 696 MWe    | -53%   |
-| Zdroje na zemní plyn | 1433 MWe               | 2796 MWe   | +95%   |
-| Vodní elektrárny     | 1090 MWe               | 1142 MWe   | +5%    |
-| Přečerpávací vodní elektrárny | 1130 MWe      | 1175 MWe   | +4%    |
-| Větrné elektrárny    | 278 MWe                | 2050 MWe   | +637%  |
-| Fotovoltaické elektrárny | 2100 MWe           | 5500 MWe   | +162%  |
-| Zdroje na biomasu a bioplyn |  758 MWe        | 1385 MWe   | +83%   |
+| Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |  0&thinsp;%   |
+| Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   | -79&thinsp;%   |
+| Zdroje na černé uhlí | 1496 MWe               | 696 MWe    | -53&thinsp;%   |
+| Zdroje na zemní plyn | 1433 MWe               | 2796 MWe   | +95&thinsp;%   |
+| Vodní elektrárny     | 1090 MWe               | 1142 MWe   | +5&thinsp;%    |
+| Přečerpávací vodní elektrárny | 1130 MWe      | 1175 MWe   | +4&thinsp;%    |
+| Větrné elektrárny    | 278 MWe                | 2050 MWe   | +637&thinsp;%  |
+| Fotovoltaické elektrárny | 2100 MWe           | 5500 MWe   | +162&thinsp;%  |
+| Zdroje na biomasu a bioplyn |  758 MWe        | 1385 MWe   | +83&thinsp;%   |
 | Geotermální zdroje   | 0 MWe                  | 50 MWe     | N/A    |
 
 </div>
