@@ -18,7 +18,7 @@ web: _includes/version.html $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
 check: web
 	bundle exec jekyll build
-	bundle exec htmlproofer --assume-extension --check_favicon --check_html --check_img_http --only_4xx --url_ignore "/$(REPO_URL)/" ./_site
+	bundle exec htmlproofer --assume-extension --check_favicon --check_html --check_img_http --url_ignore "/$(REPO_URL)/,/skepticalscience.com/" ./_site
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
