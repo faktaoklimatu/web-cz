@@ -1,10 +1,17 @@
-dist: xenial
-language: minimal
-install: 
-  - sudo add-apt-repository ppa:inkscape.dev/stable -y
+language: ruby
+
+before_install:
   - sudo apt update
   - sudo apt install -y inkscape pdf2svg
-script: make web
+
+script: make check
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+# cache: bundler # caching bundler gem packages will speed up build
+
 before_deploy: rm .gitignore # So that built infographics are commited back to GitHub
 deploy:
   provider: pages
