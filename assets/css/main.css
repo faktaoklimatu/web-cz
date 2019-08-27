@@ -51,6 +51,10 @@ a {
     cursor: pointer;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /* Core design: sectioning, header, footer, buttons */
 
 @media screen and (max-width: 992px) {
