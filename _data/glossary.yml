@@ -1,0 +1,10 @@
+- id: chmu  # Interne ID
+  name-short: "ČHMÚ"  # Nazev, ktery se zobrazuje primo na strance
+  name-long: "Český hydrometeorologický ústav"  # Text v popup-e primo na strance
+  description: "ČHMÚ je ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie.[1] Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu. Hlavní sídlo ústavu se nachází v Praze-Komořanech na adrese Na Šabatce 17, Praha 4. Kromě toho má ČHMÚ regionální pracoviště (pobočku) v dalších šesti českých městech (Brno, Ostrava, Plzeň, Ústí nad Labem, Hradec Králové a České Budějovice). Ředitelem ústavu je od roku 2017 Mgr. Mark Rieder." # Text hesla ve slovnicku
+
+# Dalsi heslo
+- id: nasa
+  name-short: "NASA"
+  name-long: "Space agency bla bla"
+  description: "Je to agentura ..."
