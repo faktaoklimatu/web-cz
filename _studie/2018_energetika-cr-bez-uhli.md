@@ -5,7 +5,7 @@ slug:       2018_energetika-cr-bez-uhli
 weight:     3
 tags:       [ studie, cr ]
 caption:    "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů k roku 2030."
-
+intro:      "Studie zkoumá dopady ukončení provozu českých uhelných elektráren (které jsou aktuálně jedním z hlavních zdrojů emisí CO2 v ČR) na stabilitu elektrizační soustavy, při současném rozvoji obnovitelných zdrojů. Reaguje tak na častý argument proti transformaci české energetiky, poukazující právě na ohrožení bezpečnosti dodávek elektrické energie."
 study-title:        "Czech power grid without electricity from coal by 2030"
 study-author:       "Peter-Philipp Schierhorn, M.Sc. et al."
 study-institution:  "Energynautics"
@@ -15,18 +15,15 @@ study-pdf:          "http://glopolis.org/wp-content/uploads/Czech-Grid-Without-C
 summary: |
     * Studie dochází k závěru, že __stabilita sítě není zásadní překážkou pro přechod české energetiky od uhlí k obnovitelným zdrojům.__
     * Bezpečnost dodávek bude při uvažovaném scénáři možné zajistit i pro následující události/varianty dalšího vývoje:
-
         - Neplánovaný výpadek největšího zdroje v české elektrizační soustavě (blok jaderné elektrárny Temelín).
-        - Extrémní počasí (tři zimní týdny v řadě, kdy průměrná teplota dosahuje mínus stupňů Celsia a současně dochází k velmi nízké produkci větrných elektráren).
+        - Extrémní počasí (tři zimní týdny v řadě, kdy průměrná teplota dosahuje -15 °C a současně je velmi nízká produkce větrných elektráren).
         - Nárust spotřeby elektřiny v důsledku nástupu tepelných čerpadel a elektromobility.
         - Současné omezení instalovaného výkonu v Polsku, Německu a Francii.
 
 
     * Stávající podoba české elektrizační soustavy není překážkou pro přechod na čistější energetiku, díky těmto důvodům:
-
         - Soustava je dimenzována s vysokým koeficientem bezpečnosti.
-        - Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky.
-        - Problémy přenosu větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavují vážný problém.
+        - Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
         - Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
         - Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
 
@@ -40,7 +37,7 @@ summary: |
 
 <div class="table table-striped table-hover" markdown="1">
 
-| Zdroj                | Výkon 2017             | Výkon 2030 | Rozdíl |
+| Zdroj                | Instalovaný výkon 2017 | Instalovaný výkon 2030 | Rozdíl |
 | -------------------- |-----------------------:| ----------:| ------:|
 | Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |  0&thinsp;%   |
 | Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   | -79&thinsp;%   |
