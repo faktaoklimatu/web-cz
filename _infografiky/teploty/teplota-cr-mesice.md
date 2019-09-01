@@ -4,10 +4,9 @@ title:      "Srovnání průměrné teploty v ČR v jednotlivých měsících"
 slug:       teplota-cr-mesice
 weight:     3
 tags:       [ teploty ]
-data:       "https://docs.google.com/spreadsheets/d/14eph67uGIQJgEBSmvWAufdRY49sI3JFq9G9_lH8G7h4/edit?usp=sharing"
 caption:    "Srovnání teplot jednotlivých měsíců pětiletky 1961–1965 a 2014–2018. Průměrná roční teplota se od roku 1961 zvýšila o 2 °C, ale oteplení se v různých měsících liší. Největší změny v teplotě se udály v prosinci, lednu, červenci a srpnu."
-src:	    "Zdrojová data ČHMÚ"
-srclink:    "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty"
+data-our:   "https://docs.google.com/spreadsheets/d/14eph67uGIQJgEBSmvWAufdRY49sI3JFq9G9_lH8G7h4/edit?usp=sharing"
+data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 
 ---
 

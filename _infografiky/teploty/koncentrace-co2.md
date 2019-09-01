@@ -4,10 +4,11 @@ title:      "Vývoj koncentrace CO<sub>2</sub> v historii"
 slug:       koncentrace-co2
 weight:     3
 tags:       [ teploty, CO2, svet ]
-data:       "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
 caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800&thinsp;000&nbsp;let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
-src:	    "Zdrojová data"
-srclink:    "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products"
+data-our:   "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
+data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
+            , [ "Scripps", "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
+            , [ "Scripps CO<sub>2</sub> program", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
 ---
 
 ## Jak číst tento graf?
