@@ -37,7 +37,7 @@ summary: |
 
 <div class="table table-striped table-hover" markdown="1">
 
-| Zdroj                | Instalovaný výkon 2017 | Instalovaný výkon 2030 | Rozdíl |
+| Zdroj                | Instalovaný<br/>výkon 2017 | Instalovaný<br/>výkon 2030 | Rozdíl |
 | -------------------- |-----------------------:| ----------:| ------:|
 | Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |  0&thinsp;%   |
 | Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   | -79&thinsp;%   |
