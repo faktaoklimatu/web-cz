@@ -15,19 +15,15 @@ study-pdf:          "http://glopolis.org/wp-content/uploads/Czech-Grid-Without-C
 summary: |
     * Studie dochází k závěru, že __stabilita sítě není zásadní překážkou pro přechod české energetiky od uhlí k obnovitelným zdrojům.__
     * Bezpečnost dodávek bude při uvažovaném scénáři možné zajistit i pro následující události/varianty dalšího vývoje:
-        - Neplánovaný výpadek největšího zdroje v české elektrizační soustavě (blok jaderné elektrárny Temelín).
-        - Extrémní počasí (tři zimní týdny v řadě, kdy průměrná teplota dosahuje -15 °C a současně je velmi nízká produkce větrných elektráren).
-        - Nárust spotřeby elektřiny v důsledku nástupu tepelných čerpadel a elektromobility.
-        - Současné omezení instalovaného výkonu v Polsku, Německu a Francii.
-
-
+        * Neplánovaný výpadek největšího zdroje v české elektrizační soustavě (blok jaderné elektrárny Temelín).
+        * Extrémní počasí (tři zimní týdny v řadě, kdy průměrná teplota dosahuje -15 °C a současně je velmi nízká produkce větrných elektráren).
+        * Nárust spotřeby elektřiny v důsledku nástupu tepelných čerpadel a elektromobility.
+        * Současné omezení instalovaného výkonu v Polsku, Německu a Francii.
     * Stávající podoba české elektrizační soustavy není překážkou pro přechod na čistější energetiku, díky těmto důvodům:
-        - Soustava je dimenzována s vysokým koeficientem bezpečnosti.
-        - Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
-        - Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
-        - Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
-
-
+        * Soustava je dimenzována s vysokým koeficientem bezpečnosti.
+        * Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
+        * Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
+        * Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
 ---
 
 ## Předpoklady a metodologie
@@ -57,7 +53,3 @@ summary: |
 Studii zpracovala německá energetická poradenská společnost [Energynautics](https://energynautics.com/en/), která se dlouhodobě zabývá problematikou stability sítí, integrací obnovitelných zdrojů energie a inovativním návrhům sítí. Společnost disponuje vlastním softwarem, který umožňuje modelování a simulace provozu elektrizačních soustav.
 
 Studii zadaly organizace Glopolis, Frank Bold, CEE Bankwatch Network, Aliance pro energetickou soběstačnost a Hnutí DUHA.
-
-## Další souvislosti
-
-* ...
