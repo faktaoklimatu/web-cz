@@ -33,8 +33,3 @@ summary: |
 
 * __CzechGlobe__ je součástí Akademie věd ČR. Předmětem výzkumu jsou zejména vývoj klimatu a jeho budoucí scénáře, uhlíkový cyklus a dopady měnících se podmínek na produkci a biologickou rozmanitost ekosystémů a dopady na rozvoj a chování společnosti.
 * Studie vznikla v rámci projektu __SustES__, jehož cílem je popsat „národní adaptační strategie pro zajištění udržitelnosti ekosystémových služeb a zvláště pak potravinové bezpečnosti v podmínkách probíhajících klimatických i socioekonomických změn.“
-
-
-## Další souvislosti
-
-* ...
