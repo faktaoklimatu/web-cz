@@ -150,12 +150,15 @@ ul:last-child {
     text-decoration: none;
 }
 
+.btn {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #000080;
     border-color: #000080;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
 }
 
 .btn-primary:hover {

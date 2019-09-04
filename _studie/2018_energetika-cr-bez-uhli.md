@@ -24,6 +24,7 @@ summary: |
         * Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
         * Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
         * Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
+metadata-extra: '<a href="http://glopolis.org/wp-content/uploads/Infolist-sit-bez-uhli.pdf" target="_blank" id="study-link-3" class="btn btn-secondary">Infolist studie (česky)</a>'
 ---
 
 ## Předpoklady a metodologie
