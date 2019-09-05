@@ -54,3 +54,8 @@ metadata-extra: '<a href="http://glopolis.org/wp-content/uploads/Infolist-sit-be
 Studii zpracovala německá energetická poradenská společnost [Energynautics](https://energynautics.com/en/), která se dlouhodobě zabývá problematikou stability sítí, integrací obnovitelných zdrojů energie a inovativním návrhům sítí. Společnost disponuje vlastním softwarem, který umožňuje modelování a simulace provozu elektrizačních soustav.
 
 Studii zadaly organizace Glopolis, Frank Bold, CEE Bankwatch Network, Aliance pro energetickou soběstačnost a Hnutí DUHA.
+
+## Další poznámky, souvislosti a FAQ:
+
+* __Je firma, která studii zpracovala, dostatečně expertně zdatná a důvěryhodná?__ Energynautics má zahraniční zkušenosti ze 32 zemí, bohatý [seznam referencí](https://energynautics.com/en/references/) a vede ji Thomas Ackermann s 25 lety zkušeností v oboru a dlouhým seznamem [odborných publikací](https://energynautics.com/content/uploads/2016/11/Publications_Ackermann.pdf).
+Také další vedoucí zaměstanci [E. Troester](https://energynautics.com/content/uploads/2016/11/Publications_Troester.pdf) a [N. Nartensen](https://energynautics.com/content/uploads/2016/11/CV_Martensen_english.pdf) jsou odborníci v oboru. Nejde tedy o studii, jejíž výstupy stojí za to zpochybňovat nedostatečnou expertizou zpracovatele.  
