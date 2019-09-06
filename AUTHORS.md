@@ -22,6 +22,7 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Dominika Krejčí
 * Henrich Lauko
 * Jakub Novák
+* Petr Novotný
 * Tomáš Protivinský
 * Daniel Rychlý
 * Marko Řeháček
