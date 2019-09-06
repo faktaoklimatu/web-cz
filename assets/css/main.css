@@ -45,10 +45,18 @@ h5 {
     font-weight: bold;
 }
 
+h2 a {
+    text-decoration: none;
+}
+
 a {
     color: #000080;
     text-decoration: underline;
     cursor: pointer;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 strong {
@@ -333,4 +341,28 @@ pre {
 .study-metadata ul {
     list-style-type: none;
     padding: 0;
+}
+
+/* Customizations of resource page */
+
+.resources .lead {
+    margin-bottom: 0.5rem;
+}
+
+.resources {
+    margin-bottom: 3rem;
+}
+
+.resources:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .resources {
+        text-align: center;
+    }
+    .resources img {
+        max-width: 150px;
+        margin-bottom: 1rem;
+    }
 }
