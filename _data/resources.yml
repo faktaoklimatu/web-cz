@@ -1,0 +1,20 @@
+- title: "NASA Goddard institute for space studies"
+  tags: [ zdroje, anglicky, svět, teploty ]
+  url: "https://www.giss.nasa.gov/"
+  image: "nasa.png"
+  description-short: "Výzkumné centrum NASA zabývající se fyzikou a modelováním atmosféry a modely klimatické změny"
+  description-long: "NASA GISS sídlí v kampusu University of Colombia v New Yorku. Na jejich stránkách můžete najít repozitář dat z meteorologických stanic ([odkaz](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/)), zpracovaná souhrnná data o teplotách na planetě ve formě map, grafů a animací ([odkaz](https://data.giss.nasa.gov/gistemp/graphs_v4/)), kompletní dokumentaci k aktuálním verzím GCM modelů včetně kódů ([odkaz](https://data.giss.nasa.gov/gistemp/animations/)) a samozřejmě jako u každé vědecké instituce aktuální seznam publikací ([odkaz](https://pubs.giss.nasa.gov/))."
+
+- title: "Český_hydrometeorologický_ústav"
+  tags: [ zdroje, česky, Česká republika, teploty ]
+  url: "http://portal.chmi.cz/"
+  image: "chmu.png"
+  description-short: "ČHMÚ je ústřední státní orgán ČR pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie"
+  description-long: "Delší text o webu, může obsahovat další odkazy."
+
+- title: "Klimatická změna.cz"
+  tags: [ zdroje, česky, Česká republika ]
+  url: "https://www.klimatickazmena.cz/cs/"
+  image: "klimaticka-zmena-cz.png"
+  description-short: "Web Centra výzkumu globální změny AV ČR (CzechGlobe) prezentující data a modely klimatické změny v ČR"
+  description-long: "Delší text o webu, může obsahovat další odkazy."
