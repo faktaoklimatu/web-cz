@@ -14,6 +14,6 @@ authors: |
     
     Rozhodli jsme se proto, že tu práci, kterou jsme s hledáním dat sami měli, ostatním ušetříme -- zpracujeme infografiky, dáme odkazy na původní data i naše zpracované datasety na jedno místo a doplníme základní souvislosti. A dáme je k dispozici všem, pro koho budou užitečné. Doufáme, že se postupně tyto informace dostanou ke všem, kterých se změny klimatu týkají. Tedy ke všem.
 
-    Lidé, kteří přispěli v různých formách k podobě tohoto webu a dat, které na něm vidíte: Ondráš Přibyla, Martin Ukrop, Marek Lahoda, Martin crysman Zahradník, Kristína Zákopčanová, Jeňa Krčál, Petr Novotný, Daniel Rychlý, Jan Drábek, Marko Řeháček a další.
+    Lidé, kteří výrazně přispěli k podobě tohoto webu a dat, které na něm vidíte: Ondráš Přibyla, Martin Ukrop, Kika Zákopčanová, Martin crysman Zahradník, Marek Lahoda, Olda Sklenář, Jeňa Krčál a mnozí další. Úplný seznam lidí, kteří pomohli, byť i s drobnostma, [najdete zde](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md).
 ---
 
