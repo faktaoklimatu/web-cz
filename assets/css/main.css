@@ -366,3 +366,7 @@ pre {
         margin-bottom: 1rem;
     }
 }
+
+.notransform {
+  text-transform: none
+}

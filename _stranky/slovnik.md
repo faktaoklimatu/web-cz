@@ -4,11 +4,14 @@ title:      "Slovník pojmů"
 slug:       slovnik
 published:  false
 ---
-Intro odstavec: Toto je slovnik pojmov, preco je tam, co v nom najdu, ...
+<!--
+ukázka jak používat hesla v textech stránek: {% include glossary.html id='chmu' %}
+-->
 
-Ukazka vkladania vstupov slovnika do textu: Napr. zmienit {% include glossary.html id='chmu' %} alebo inu instituciu.
+<p>Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.</p>
+<p>&nbsp;</p>
 
 {% for item in site.data.glossary %}
-<h2 id="{{ item.id }}">{{ item.name-long }}</h2>
-<p>{{ item.description }}</p>
+<h2 id="{{ item.id }}" class="notransform">{{ item.name-short }}</h2>
+<p>{{ item.name-long }} &ndash; {{ item.description }}</p>
 {% endfor %}

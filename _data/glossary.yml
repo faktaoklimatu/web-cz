@@ -1,10 +1,44 @@
-- id: chmu  # Interne ID
-  name-short: "ČHMÚ"  # Nazev, ktery se zobrazuje primo na strance
-  name-long: "Český hydrometeorologický ústav"  # Text v popup-e primo na strance
-  description: "ČHMÚ je ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie.[1] Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu. Hlavní sídlo ústavu se nachází v Praze-Komořanech na adrese Na Šabatce 17, Praha 4. Kromě toho má ČHMÚ regionální pracoviště (pobočku) v dalších šesti českých městech (Brno, Ostrava, Plzeň, Ústí nad Labem, Hradec Králové a České Budějovice). Ředitelem ústavu je od roku 2017 Mgr. Mark Rieder." # Text hesla ve slovnicku
+#- id: <no-spaces-string>  # Interne ID
+#  name-short: "<string>"  # Nazev, ktery se zobrazuje primo na strance
+#  name-long: "<string>"  # Text v popup-e primo na strance
+#  description: "<string>" # Text hesla ve slovnicku
 
-# Dalsi heslo
+# uvnitř řetězců můžete použít HTML
+# prosím, udržujte seznam řazený dle abecedy
+
+- id: chmu
+  name-short: "ČHMÚ"
+  name-long: "Český hydrometeorologický ústav"
+  description: "ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu."
+
+- id: co2e
+  name-short: "CO<sub>2</sub>e"
+  name-long: "CO<sub>2</sub> ekvivalent"
+  description: "koncentrace CO<sub>2</sub> která by způsobila stejnou míru radiačního působení jako druh a koncentrace jiných skleníkových plynů (typicky např. CH<sub>4</sub>, NO<sub>2</sub>, CFC a dalších). Zjednodušeně řečeno, je to množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry stejný jako množství příslušného plynu. Např. pro metan je to hodnota 20, což se dá zjednodušeně číst jako \"1l NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 20l CO<sub>2</sub>\". Zde na faktaoklimatu.cz, pokud to dostupná data a jejich zpracování správné umožňují, upřednostňujeme CO<sub>2</sub>e, protože umožňuje se dívat na problematiku komplexněji a přesněji."
+
+- id: ipcc
+  name-short: "IPCC"
+  name-long: "The Intergovernmental Panel on Climate Change (Mezivládní panel pro změny klimatu)"
+  description: "vědecký mezivládní orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl."
+
 - id: nasa
   name-short: "NASA"
-  name-long: "Space agency bla bla"
-  description: "Je to agentura ..."
+  name-long: "National Aeronautics and Space Administration (Národní úřad pro letectví a kosmonautiku)"
+  description: "americká vládní agentura zodpovědná za americký kosmický program, všeobecný výzkum v oblasti letectví a lepší porozumění Zemi."
+
+- id: ppm
+  name-short: "ppm"
+  name-long: "parts per million (počet částic v milionu)"
+  description: "podobně jako procenta (<em>per cento</em>) znamená počet ve stovce a promile (<em>per mīlle</em>) znamená počet v tisici, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 &permil; nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
+
+- id: w
+  name-short: "W"
+  name-long: "Watt (jednotka výkonu)"
+  description: "v našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820&nbsp;MW (1&nbsp;MW = milión W) a za rok vyrobí zhruba 3500&nbsp;GWh elektrické energie. Jedna standardní LED \"žárovka\" má příkon kolem 9&nbsp;W, její klasický starý ekvivalent s žhaveným vláknem cca 60&nbsp;W &ndash; pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4&nbsp;MWh/os./rok [<a href=\"https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=\">zdroj</a>]."
+
+#
+#- id: xxx
+#  name-short: "xxx"
+#  name-long: "xxx"
+#  description: "xxx"
+#  
