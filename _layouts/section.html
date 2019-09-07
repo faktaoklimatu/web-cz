@@ -7,7 +7,7 @@
         <a href="{{ item.url }}">
             {% case item.layout %}
             {% when 'infographic' %}
-                <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png?{{ site.time | date: '%s' }}" alt="{{ item.title }}" title="{{ item.title }}" class="infographic-thumb img-fluid" />
+                <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="infographic-thumb img-fluid" />
             {% when 'study' %}
                 <div class="card-body">
                     <h5>{{ item.title }}</h5>
