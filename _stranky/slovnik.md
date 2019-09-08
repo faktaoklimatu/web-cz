@@ -2,7 +2,6 @@
 layout:     default
 title:      "Slovník pojmů"
 slug:       slovnik
-published:  false
 ---
 <!--
 ukázka jak používat hesla v textech stránek: {% include glossary.html id='chmu' %}
