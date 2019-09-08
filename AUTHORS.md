@@ -27,7 +27,7 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Daniel Rychlý
 * Marko Řeháček
 * Lenka Sedlačková
-* Anna Segencová
+* Anna Segečová
 * Petr "Kaluž" Špaček
 * Vladimír "Vláďa" Štill
 * Radka "Bludička" Zounková
