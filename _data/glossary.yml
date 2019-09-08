@@ -11,10 +11,10 @@
   name-long: "Český hydrometeorologický ústav"
   description: "ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu."
 
-- id: co2e
-  name-short: "CO<sub>2</sub>e"
+- id: co2eq
+  name-short: "CO<sub>2</sub>eq"
   name-long: "CO<sub>2</sub> ekvivalent"
-  description: "koncentrace CO<sub>2</sub> která by způsobila stejnou míru radiačního působení jako druh a koncentrace jiných skleníkových plynů (typicky např. CH<sub>4</sub>, NO<sub>2</sub>, CFC a dalších). Zjednodušeně řečeno, je to množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry stejný jako množství příslušného plynu. Např. pro metan je to hodnota 20, což se dá zjednodušeně číst jako \"1l NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 20l CO<sub>2</sub>\". Zde na faktaoklimatu.cz, pokud to dostupná data a jejich zpracování správné umožňují, upřednostňujeme CO<sub>2</sub>e, protože umožňuje se dívat na problematiku komplexněji a přesněji."
+  description: "množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100&nbsp;let) &ndash; konkrétně je to množství příslušného plynu &times; <a href=\"https://en.wikipedia.org/wiki/Global_warming_potential#Values\">GWP koeficient</a>. Např. pro metan je to hodnota cca 28, což se dá číst jako \"1t NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\" &ndash; zjednodušeně řečeno, metan je 28&times; silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
 - id: ipcc
   name-short: "IPCC"
