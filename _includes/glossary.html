@@ -1,2 +1,2 @@
-{% assign item = site.data.glossary | where:"id",id | first %}
-<a href="/slovnik#{{ item.id }}" title="{{ item.name-long }}">{{ item.name-short }}</a>
+{% assign item = site.data.glossary | where:"id",include.id | first %}
+<a href="/slovnik#{{ item.id }}" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="{{ item.name-long }}">{{ item.name-short }}</a>
