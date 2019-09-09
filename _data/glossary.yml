@@ -9,22 +9,22 @@
 - id: chmu
   name-short: "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
-  description: "ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu."
+  description: "ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu [<a href=\"https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%BD_hydrometeorologick%C3%BD_%C3%BAstav\">zdroj</a>]."
 
 - id: co2eq
   name-short: "CO<sub>2</sub>eq"
   name-long: "CO<sub>2</sub> ekvivalent"
-  description: "množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100&nbsp;let) &ndash; konkrétně je to množství příslušného plynu &times; <a href=\"https://en.wikipedia.org/wiki/Global_warming_potential#Values\">GWP koeficient</a>. Např. pro metan je to hodnota cca 28, což se dá číst jako \"1t NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\" &ndash; zjednodušeně řečeno, metan je 28&times; silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
+  description: "množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100&nbsp;let) &ndash; konkrétně je to množství příslušného plynu &times; <a href=\"https://en.wikipedia.org/wiki/Global_warming_potential#Values\">GWP koeficient</a>. Např. pro metan je to hodnota cca 28 [<a href=\"https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf\">zdroj</a> (strana 714)], což se dá číst jako \"1t NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\" &ndash; zjednodušeně řečeno, metan je 28&times; silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
 - id: ipcc
   name-short: "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change (Mezivládní panel pro změny klimatu)"
-  description: "vědecký mezivládní orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl."
+  description: "vědecký mezivládní orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl [<a href=\"https://cs.wikipedia.org/wiki/IPCC\">zdroj</a>]."
 
 - id: nasa
   name-short: "NASA"
   name-long: "National Aeronautics and Space Administration (Národní úřad pro letectví a kosmonautiku)"
-  description: "americká vládní agentura zodpovědná za americký kosmický program, všeobecný výzkum v oblasti letectví a lepší porozumění Zemi."
+  description: "americká vládní agentura zodpovědná za americký kosmický program, všeobecný výzkum v oblasti letectví a lepší porozumění Zemi [<a href=\"https://en.wikipedia.org/wiki/NASA\">zdroj</a>]."
 
 - id: ppm
   name-short: "ppm"
@@ -34,7 +34,7 @@
 - id: w
   name-short: "W"
   name-long: "Watt (jednotka výkonu)"
-  description: "v našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820&nbsp;MW (1&nbsp;MW = milión W) a za rok vyrobí zhruba 3500&nbsp;GWh elektrické energie. Jedna standardní LED \"žárovka\" má příkon kolem 9&nbsp;W, její klasický starý ekvivalent s žhaveným vláknem cca 60&nbsp;W &ndash; pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4&nbsp;MWh/os./rok [<a href=\"https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=\">zdroj</a>]."
+  description: "v našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820&nbsp;MW (1&nbsp;MW = milión W) a za rok vyrobí zhruba 3500&nbsp;GWh elektrické energie [<a href=\"https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice\">zdroj</a>]. Jedna standardní LED \"žárovka\" má příkon kolem 9&nbsp;W, její klasický starý ekvivalent s žhaveným vláknem cca 60&nbsp;W &ndash; pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4&nbsp;MWh/os./rok [<a href=\"https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=\">zdroj</a>]."
 
 #
 #- id: xxx
