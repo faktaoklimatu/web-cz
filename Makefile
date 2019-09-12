@@ -12,7 +12,7 @@ test:
 all: web
 
 local: web
-	bundle exec jekyll serve --unpublished
+	bundle exec jekyll serve
 
 web: _includes/version.html $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
