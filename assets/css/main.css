@@ -367,15 +367,13 @@ pre {
     }
 }
 
-.notransform {
-  text-transform: none
-}
+/* Glossary page customizations */
 
-/* glossary (slovnik/slovník) customizations */
 .glossary-item {
   text-decoration-line: underline;
   text-decoration-style: dotted;
 }
+
 .glossary-item:hover:before {
   content: "🕮"; /* &#x1f56e; */
 }
