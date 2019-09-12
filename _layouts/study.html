@@ -13,7 +13,7 @@
         {% assign download_path = site.baseurl | append: "/assets/studies/" | append: page.slug %}
         <div class="row">
           <div class="col-sm-12 col-md-7 col-lg-8 lead">
-            <p>{{ page.intro }}</p>
+            {{ page.intro | markdownify }}
             <h2>Hlavní závěry</h2>
             {{ page.summary | markdownify }}
           </div>
