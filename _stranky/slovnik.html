@@ -4,10 +4,11 @@ title:      "Slovník pojmů"
 slug:       slovnik
 ---
 
-<p>Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.</p>
+<p class="lead">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.</p>
 
 {% assign sorted_glossary = site.data.glossary | sort_natural: "id" %}
 {% for item in sorted_glossary %}
+<hr/>
 <h3 id="{{ item.id }}"><strong>{{ item.name-short }}</strong> <span class="lead">({{ item.name-long }})</span></h3>
 <p>{{ item.description }}</p>
 {% endfor %}
