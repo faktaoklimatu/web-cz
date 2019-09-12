@@ -6,7 +6,8 @@ slug:       slovnik
 
 <p>Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.</p>
 
-{% for item in site.data.glossary %}
+{% assign sorted_glossary = site.data.glossary | sort_natural: "id" %}
+{% for item in sorted_glossary %}
 <h3 id="{{ item.id }}"><strong>{{ item.name-short }}</strong> <span class="lead">({{ item.name-long }})</span></h3>
 <p>{{ item.description }}</p>
 {% endfor %}
