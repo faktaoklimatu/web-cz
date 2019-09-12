@@ -26,11 +26,4 @@
   url: "https://www.warningstripes.com/"
   image: "warningstripes.png"
   description-short: "Weblog s vizualizací minulých a budoucích scénářů z pohledu teplot"
-  description-long: "Monotematické a přehledné stránky barevně ukazující jak náš svět bude pravděpodobně vypadat v závislosti na našich ne/akcích ohledně klimatické krize, nabízí různé scénaře budoucnosti z pohledu teplot (dle {% include glossary.html id='rcp' %}) FIXME."
-
-#- title: "xxx"
-#  tags: [ xxx, xxx ]
-#  url: "xxx"
-#  image: "xxx"
-#  description-short: "xxx"
-#  description-long: "xxx" 
+  description-long: "Monotematické a přehledné stránky barevně ukazující jak náš svět bude pravděpodobně vypadat v závislosti na našich ne/akcích ohledně klimatické krize, nabízí různé scénaře budoucnosti z pohledu teplot <a href=\"/slovnik#rcp\" class=\"glossary-item\">RCP <i class=\"fas fa-book\"></i></a>."
