@@ -24,6 +24,29 @@
     {% endfor %}
 
     <div class="section">
+      <div class="container">
+        <h1 id="pages">Další stránky</h1>
+        Zde najdete seznam dalších stránek, které máme.
+        <div class="row justify-content-md-center">
+          <div class="col-6 col-xs-12 homepage-card">
+            <div class="card-body">
+              <h5>Další zdroje a odkazy</h5>
+              <p class="card-text">Seznam odkazů na stránky jiných relevantních projektů – vybrané výzkumné instituce, repozitáře dat i projekty vizualizující tato data.</p>
+              <a href="/zdroje" class="btn btn-primary btn-block"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
+            </div>
+          </div>
+          <div class="col-6 col-xs-12 homepage-card">
+            <div class="card-body">
+              <h5>Slovník pojmů</h5>
+              <p class="card-text">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem. Slovník postupně dopracováváme.</p>
+              <a href="/slovnik" class="btn btn-primary btn-block"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
         <div class="container">
           <h1 id="creators">{{ page.authors-heading }}</h1>
           {{ page.authors | markdownify }}

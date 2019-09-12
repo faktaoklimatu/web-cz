@@ -241,7 +241,7 @@ ul:last-child {
     padding-top: 15px;
 }
 
-.homepage-card a {
+.homepage-card>* {
     display: block;
     background-color: #fff;
     background-clip: border-box;
@@ -253,8 +253,9 @@ ul:last-child {
     text-align: left;
 }
 
-.homepage-card a:hover {
+.homepage-card>a:hover {
     border-color: rgba(0,0,128,0.5);
+    text-decoration: none;
 }
 
 /* Infographic page customizations */
