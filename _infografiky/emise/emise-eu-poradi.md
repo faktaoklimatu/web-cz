@@ -12,14 +12,15 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 
 ## Jak číst tento graf?
 
+* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' %}.
 * Graf zobrazuje vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele. Česká republika je zvýrazněna, barva čar se mění dle velikosti rozporu mezi absolutní a relativní hodnotou (čím větší rozdíl, tím tmavší).
 * Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population), tak [z hlediska HDP](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))) mají v absolutních číslech nejvyšší emise:
-  * Německo se svými cca 83 mil. obyvateli 935,8 mil. t CO<sub>2</sub> eq
-  * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub> eq
-  * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub> eq
-  * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub> eq
+  * Německo se svými cca 83 mil. obyvateli 935,8 mil. t CO<sub>2</sub>eq
+  * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub>eq
+  * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub>eq
+  * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub>eq
   * ...
-  * Česká Republika se svými cca 10,5 mil. obyvateli 131,3 mil. t CO<sub>2</sub> eq
+  * Česká Republika se svými cca 10,5 mil. obyvateli 131,3 mil. t CO<sub>2</sub>eq
 * Nicméně, __v přepočtu na obyvatele je Česká republika 4. největším emitentem EU__, má 2x vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
@@ -35,4 +36,4 @@ srclink:    "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-0
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
 * V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy.
-* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako CO<sub>2</sub> ekvivalent. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
+* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako {% include glossary.html id='co2eq' %}.

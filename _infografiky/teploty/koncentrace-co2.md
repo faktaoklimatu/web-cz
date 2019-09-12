@@ -12,6 +12,7 @@ srclink:    "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_prod
 
 ## Jak číst tento graf?
 
+* Koncentrace uvádíme v jednotkách {% include glossary.html id='ppm' %}.
 * V posledních 800&thinsp;000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170--280ppm a kolísání odpovídalo střídání dob ledových a meziledových (pro srovnání: první nálezy *Homo Sapiens* mají stáří přibližně 300&thinsp;000&nbsp;let).
 * Během posledních 2000&nbsp;let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilní v rozmezí 275--280ppm.
 * __Od průmyslové revoluce, tedy přibližně od roku 1750 koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot, než kdykoliv za poledních 800&thinsp;000&nbsp;let.__ Tempo růstu se navíc také zrychluje: v letech 1750--1949 je tempo růstu 2,1 ppm za dekádu, v letech 1950--1999 je tempo růstu 12,1 ppm za dekádu a v letech 2000--2019 je tempo 21,1 ppm za dekádu.
