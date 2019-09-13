@@ -1,5 +1,5 @@
 ---
-layout:     default
+layout:     single-section-page
 title:      "Proč to děláme?"
 slug:       proc-to-delame
 published:  false

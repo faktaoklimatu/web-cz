@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  {% include header.html %}
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+  {% include navigation.html %}
+  <main role="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>

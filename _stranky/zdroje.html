@@ -1,48 +1,52 @@
 ---
-layout:     default
+layout:     empty
 title:      "Další zdroje a odkazy"
 slug:       zdroje
+intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizující data."
 ---
-<p class="lead">Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizující data.</p>
-
-    </div> <!-- .container -->
-</div> <!-- .section -->
 <div class="section">
     <div class="container">
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.intro }}</p>
+    </div>
+</div>
 
+<div class="section">
+    <div class="container">
 {% assign resources_filtered = site.data.resources | where_exp:"item","item.tags contains 'česky'" %}
 {% for item in resources_filtered %}
-    <div class="row resources">
-        <div class="col-12 col-sm-3 col-lg-2">
-            <a href="{{ item.url }}" target="_blank">
-                <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
-            </a>
+        <div class="row resources">
+            <div class="col-12 col-sm-3 col-lg-2">
+                <a href="{{ item.url }}" target="_blank">
+                    <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
+                </a>
+            </div>
+            <div class="col-12 col-sm-9 col-lg-10">   
+                <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
+                <p class="lead">{{ item.description-short }}</p>
+                {{ item.description-long | markdownify }}
+            </div>
         </div>
-        <div class="col-12 col-sm-9 col-lg-10">   
-            <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
-            <p class="lead">{{ item.description-short }}</p>
-            {{ item.description-long | markdownify }}
-        </div>
-    </div>
 {% endfor %}
+    </div>
+</div>
 
-    </div> <!-- .container -->
-</div> <!-- .section -->
 <div class="section">
     <div class="container">
-
 {% assign resources_filtered = site.data.resources | where_exp:"item","item.tags contains 'anglicky'" %}
 {% for item in resources_filtered %}
-    <div class="row resources">
-        <div class="col-12 col-sm-3 col-lg-2">
-            <a href="{{ item.url }}" target="_blank">
-                <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
-            </a>
+        <div class="row resources">
+            <div class="col-12 col-sm-3 col-lg-2">
+                <a href="{{ item.url }}" target="_blank">
+                    <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
+                </a>
+            </div>
+            <div class="col-12 col-sm-9 col-lg-10">
+                <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
+                <p class="lead">{{ item.description-short }}</p>
+                {{ item.description-long | markdownify }}
+            </div>
         </div>
-        <div class="col-12 col-sm-9 col-lg-10">
-            <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
-            <p class="lead">{{ item.description-short }}</p>
-            {{ item.description-long | markdownify }}
-        </div>
-    </div>
 {% endfor %}
+    </div>
+</div>
