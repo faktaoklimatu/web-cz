@@ -5,6 +5,7 @@ assets/studies/*
 
 # Build Jekyll site
 _site/*
+.jekyll-cache
 
 # Temporary files
 Gemfile.lock

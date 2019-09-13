@@ -6,10 +6,11 @@ STUDIES_SRC=$(wildcard _studie/*.jpg)
 STUDIES_DST=$(addprefix $(STUDIES_FOLDER)/,$(notdir $(STUDIES_SRC)))
 REPO_URL=https://github.com/mukrop/faktaoklimatu
 
-test:
-	@echo INFOGRAPHICS_DST: $(INFOGRAPHICS_DST)
-
 all: web
+
+reinstall:
+	rm Gemfile.lock
+	bundle install
 
 local: web
 	bundle exec jekyll serve
