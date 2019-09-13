@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Srovnání emisí skleníkových plynů"
-slug:       emise-vybrane-staty
+slug:       "emise-vybrane-staty"
+redirect_from: "/emise-vybrane-staty"
 weight:     3
 tags:       [ emise, EU, CO2 ]
 caption:    "Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazeny podle sektorů."

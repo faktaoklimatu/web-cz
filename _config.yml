@@ -11,6 +11,7 @@ exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
          , "README.md", "utils"                     # Development files
          , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
          , "_studie/*.jpg"                          # Study images
+         , "AUTHORS.md"                             # Authors file
          ]
 collections:
     infografiky:
@@ -40,3 +41,6 @@ cdn:
     popper_hash:      "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     fa:               "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     fa_hash:          "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+
+plugins:
+  - jekyll-redirect-from

@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Emise skleníkových plynů EU"
-slug:       emise-eu
+slug:       "emise-eu"
+redirect_from: "/emise-eu"
 weight:     1
 tags:       [ emise, EU, CO2 ]
 caption:    "Poměrové srovnání ročních emisí 28 členských států EU a přepočet na obyvatele"

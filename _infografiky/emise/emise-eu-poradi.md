@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Pořadí států EU podle emisí skleníkových plynů"
-slug:       emise-eu-poradi
+slug:       "emise-eu-poradi"
+redirect_from: "/emise-eu-poradi"
 weight:     2
 tags:       [ emise, EU, CO2 ]
 caption:    "Vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele"
