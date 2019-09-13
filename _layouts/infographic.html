@@ -25,15 +25,15 @@
               <div class="hide-md">
                 <h2>Ke stažení</h2>
                 <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
-                <div class="btn-group" role="group">
+                <div class="btn-group dropdown" role="group">
                   <a href="{{ download_path }}.pdf" id="infographic-pdf" class="btn btn-primary" download>PDF</a>
                   <a href="{{ download_path }}.svg" id="infographic-svg" class="btn btn-primary" download>SVG</a>
-                    <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</button>
-                    <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4000 px</a>
-                        <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1080 px</a>
-                        <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
-                    </div>
+                  <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownPNGselection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</button>
+                  <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownPNGselection">
+                      <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4000 px</a>
+                      <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1080 px</a>
+                      <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 900 px</a>
+                  </div>
                 </div>
                 <hr/>
               </div>
@@ -41,11 +41,23 @@
                 <h2>Podkladová data</h2>
                 <p>Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
               </div>
-                <a href="{{ page.data }}" target="_blank" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
-                <a href="{{ page.srclink }}" target="_blank" id="data-original" class="btn btn-primary" role="button">{{page.src}}</a>
+                <a href="{{ page.data-our }}" target="_blank" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
+                {% if page.data-orig.size == 1 %}
+                <a href="{{ page.data-orig[0][1] }}" target="_blank" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
+                {% else %}
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zdrojová data</button>
+                  <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
+                    {% assign numDataSources = page.data-orig.size | minus: 1 %}
+                    {% for i in (0..numDataSources) %}
+                    <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}" target="_blank">{{ page.data-orig[i][0] }}</a>
+                    {% endfor %}
+                  </div>
+                </div>
+                {% endif %}
               <div class="hide-md">
                 <hr/>
-                <h2>Sdílení</h2>
+                <h2>Sdílení a licence</h2>
                 <p>Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" target="_blank" rel="license">CC BY 4.0</a>.</p>
               </div>
                 <div class="btn-group" role="group">

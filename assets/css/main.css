@@ -93,6 +93,8 @@ ul:last-child {
 
 .navbar {
     background: #F7F7F7;
+    top: 0;
+    transition: top 300ms;
 }
 
 .navbar-scrolled {
@@ -158,12 +160,15 @@ ul:last-child {
     text-decoration: none;
 }
 
+.btn {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #000080;
     border-color: #000080;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
 }
 
 .btn-primary:hover {
@@ -282,7 +287,6 @@ p.caption {
 }
 
 .dropdown-links a {
-    font-size: 1.4rem;
     text-decoration: none;
 }
 

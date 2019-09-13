@@ -13,7 +13,7 @@
         {% assign download_path = site.baseurl | append: "/assets/studies/" | append: page.slug %}
         <div class="row">
           <div class="col-sm-12 col-md-7 col-lg-8 lead">
-            <p>{{ page.caption }}</p>
+            {{ page.intro | markdownify }}
             <h2>Hlavní závěry</h2>
             {{ page.summary | markdownify }}
           </div>
@@ -31,6 +31,7 @@
                 </ul>
                 {% if page.study-url %}<a href="{{ page.study-url }}" target="_blank" id="study-link-1" class="btn btn-primary">Web studie</a>{% endif %}
                 {% if page.study-pdf %}<a href="{{ page.study-pdf }}" target="_blank" id="study-link-2" class="btn btn-primary">PDF studie</a>{% endif %}
+                {% if page.metadata-extra %} {{ page.metadata-extra }} {% endif %}
               </div>
             </div>
           </div>
