@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Průměrná roční teplota v ČR"
-slug:       teplota-cr
+slug:       "teplota-cr"
+redirect_from: "/teplota-cr"
 weight:     1
 tags:       [ teploty ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C."

@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Trendy nárůstu teploty v ČR v jednotlivých měsících"
-slug:       trend-teplot-cr
+slug:       "trend-teplot-cr"
+redirect_from: "/trend-teplot-cr"
 weight:     4
 tags:       [ teploty ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C. Trendy v oteplování jednotlivých měsíců jsou různé. Největší nárůst teplot je v lednu, červenci a srpnu &ndash; tyto měsíce se od roku 1960 oteplily o více než 2,6 °C"

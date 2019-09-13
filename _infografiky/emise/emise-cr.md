@@ -1,7 +1,8 @@
 ---
 layout:     infographic
 title:      "Emise skleníkových plynů ČR"
-slug:       emise-cr
+slug:       "emise-cr"
+redirect_from: "/emise-cr"
 weight:     5
 tags:       [ emise, CO2, CR ]
 caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 130,35 mil. tun (údaj z roku 2016). V přepočtu na obyvatele to je 12,3&nbsp;tCO<sub>2</sub>eq/obyvatele."
