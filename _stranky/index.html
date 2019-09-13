@@ -1,0 +1,63 @@
+---
+layout: empty
+title: Fakta o klimatu
+slug: index
+
+intro-heading: Fakta o změně<br>klimatu
+intro-tagline: Veřejně dostupné infografiky a datasety
+intro: |
+    Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro další použití.
+
+authors-heading: O nás a myšlenka projektu
+authors: |
+    Jsme studenti, doktorandi, akademici nebo IT profesionálové. Sami jsme si zkusili vyhledat data o teplotě či emisích, najít určité informace v mnohasetstránkových zprávách IPCC nebo původních článcích. Jde to, ale musíte umět dobře anglicky, musíte si dohledávat spoustu souvislostí a stojí to spoustu času.
+    
+    Rozhodli jsme se proto, že tu práci, kterou jsme s hledáním dat sami měli, ostatním ušetříme -- zpracujeme infografiky, dáme odkazy na původní data i naše zpracované datasety na jedno místo a doplníme základní souvislosti. A dáme je k dispozici všem, pro koho budou užitečné. Doufáme, že se postupně tyto informace dostanou ke všem, kterých se změny klimatu týkají. Tedy ke všem.
+
+    Lidé, kteří výrazně přispěli k podobě tohoto webu a dat, které na něm vidíte: Ondráš Přibyla, Martin Ukrop, Kika Zákopčanová, Martin crysman Zahradník, Marek Lahoda, Olda Sklenář, Jeňa Krčál a mnozí další. Úplný seznam lidí, kteří pomohli, byť i s drobnostmi, [najdete zde](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md).
+---
+<div class="section intro">
+    <div class="container">
+        <h1 id="home">{{ page.intro-heading }}</h1>
+        <span class="tagline">{{ page.intro-tagline }}</span>
+        <p>{{ page.intro }}</p>
+    </div>
+</div>
+
+{% assign sorted_sections = site.sekce | sort: 'weight' %}
+{% for section in sorted_sections %}
+    <div class="section">
+        <div class="container">
+        {{ section.output }}
+        </div>
+    </div>
+{% endfor %}
+
+<div class="section">
+    <div class="container">
+        <h1 id="pages">Ostatní stránky</h1>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-sm-6 homepage-card">
+            <div class="card-body">
+                <h5>Další zdroje a odkazy</h5>
+                <p class="card-text">Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizující data.</p>
+                <a href="/zdroje" class="btn btn-primary btn-block"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 homepage-card">
+            <div class="card-body">
+                <h5>Slovník pojmů</h5>
+                <p class="card-text">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem. Slovník postupně dopracováváme.</p>
+                <a href="/slovnik" class="btn btn-primary btn-block"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h1 id="creators">{{ page.authors-heading }}</h1>
+        {{ page.authors | markdownify }}
+    </div>
+</div>

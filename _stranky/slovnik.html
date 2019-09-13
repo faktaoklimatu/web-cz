@@ -1,10 +1,11 @@
 ---
-layout:     default
+layout:     single-section-page
 title:      "Slovník pojmů"
 slug:       slovnik
+intro:      "Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem."
 ---
 
-<p class="lead">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.</p>
+<p class="lead">{{ page.intro }}</p>
 
 {% assign sorted_glossary = site.data.glossary | sort_natural: "id" %}
 {% for item in sorted_glossary %}
