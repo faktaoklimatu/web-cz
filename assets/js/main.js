@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    // change styling of navbar if the page is scrolled
+// change styling of navbar if the page is scrolled
+$(document).ready(function() {
     $(document).scroll(function() {
         var scrolled = $(this).scrollTop();
         if(scrolled > 50) {
@@ -8,7 +8,6 @@ $(document).ready(function(){
             $(".navbar").removeClass('navbar-scrolled');
         }
     });
-
     // hide navbar if the screen is small and the page is scrolled
     var prevScrollpos = window.pageYOffset;
     $(document).scroll(function () {
@@ -26,10 +25,12 @@ $(document).ready(function(){
         prevScrollpos = currentScrollPos;
     });
 });
+
 // Enable all poppers in the document
 $(document).ready(setTimeout(function () {
     $('[data-toggle="popover"]').popover();
 }, 500));
+
 // Automatically replace spaces after prepositions with non-breakable spaces
 $(document).ready(function(){
     var x = document.querySelector("body");

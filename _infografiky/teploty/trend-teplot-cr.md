@@ -13,4 +13,3 @@ data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/p
 
 * Vyšší teploty v letních měsících se projevují jako vlny veder a větší počet tropických dní (tedy dní, kdy ani v noci teplota neklesne pod 20 °C). Zároveň vyšší teploty v letních měsících způsobují zvýšený odpar a tedy dále zesilují sucho. (Viz např. článek [Sucho v podzemních vodách](https://www.vtei.cz/2015/08/hydrologicke-sucho-v-podzemnich-vodach/).)
 * Vyšší teploty v zimních měsících způsobují menší sněhovou pokrývku (sníh rychleji taje nebo místo sněžení prší), což může mít dopady na doplňování spodních vod -- pomalu tající sníh se vsakuje lépe než déšť, který stéká.
-
