@@ -10,6 +10,7 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ---
 
 ## Co je zobrazeno v grafu
+
 * Data jsou zpracovány z měření 6&thinsp;300  stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě.
 * V grafu je znázorněn vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1951--1980__, nejde o graf průměrné teploty. Podrobnosti k výpočtu teplotní anomálie viz níže.
 
@@ -31,4 +32,3 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 
 * Typicky se místa na souši oteplují rychleji než oceány &ndash; v Evropě a severní Asii je trend v rychlosti oteplování asi 2&ndash;3krát vyšší než trend světové teplotní anomálie, v arktických oblastech je oteplování přibližně 3--4krát rychlejší než světový trend.
 * Proč se používá Teplotní anomálie místo absolutní průměrné teploty? Důvodů je více, všechny se ale týkají správnosti zpracování dat. Například: teplota typicky závisí na nadmořské výšce a kdybychom přidali do datového souboru několik vysokohorských stanic, poklesla by průměrná hodnota &ndash; jinak řečeno teplota planety by závisela na výběru poloh měřicích stanic. To se ale při použití teplotní anomálie neděje. Je typické, že pokud je teplota na Sněžce o 2 °C nižší než dlouhodobý průměr, je teplota v Praze přibližně o 2 °C nižší také &ndash; jinak řečeno teplotní anomálie v geograficky blízkých místech bývají podobné. Když bude mít měřicí stanice na Sněžce výpadek, výslednou teplotní anomálii to neovlivní, ale výslednou průměrnou teplotu ano.
-
