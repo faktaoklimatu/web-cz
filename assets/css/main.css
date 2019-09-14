@@ -82,12 +82,6 @@ strong {
 
 /* Core design: sectioning, header, footer, buttons */
 
-@media screen and (max-width: 992px) {
-    .hide-md {
-        display: none;
-    }
-}
-
 .section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -194,7 +188,9 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #1b1bff;
     border-color: #1b1bff;
@@ -300,6 +296,7 @@ p.caption {
 }
 
 .download-buttons {
+    margin-top: 1rem;
     text-align: left;
 }
 
