@@ -29,8 +29,8 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
 
 ## Poznámky k datům o emisích
 
-* Data o emisích poskytují Eurostatu jednotlivé země EU -- tedy data za Českou republiku reportovala přímo Česká republika.
+* Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Českou republiku reportovala přímo Česká republika.
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
-* Údaje odpovídají emisím vyprodukovaným v dané zemi -- ovšem vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
+* Údaje odpovídají emisím vyprodukovaným v dané zemi – ovšem vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
 * V rámci této infografiky jsou v údajích o emisích zahrnuty i emise z letecké dopravy.
-* Všechny údaje jsou zaokrouhlené na jedno desetinné místo, ale velikosti plochy odpovídají přesným hodnotám. V důsledku toho se mohou lišit velikosti jednotlivých čtverců, i když se neliší číselný údaj (např. u Francie jsou emise  ze *spalování v průmyslu* 0,74 tCO<sub>2</sub>eq na ovyvatele za rok a emise z *průmyslových procesů* 0.65 tCO<sub>2</sub>eq -- obě položky se zaokrouhlí na 0,7 ale oba čtverce jsou různě velké).
+* Všechny údaje jsou zaokrouhlené na jedno desetinné místo, ale velikosti plochy odpovídají přesným hodnotám. V důsledku toho se mohou lišit velikosti jednotlivých čtverců, i když se neliší číselný údaj (např. u Francie jsou emise  ze *spalování v průmyslu* 0,74 tCO<sub>2</sub>eq na ovyvatele za rok a emise z *průmyslových procesů* 0.65 tCO<sub>2</sub>eq – obě položky se zaokrouhlí na 0,7 ale oba čtverce jsou různě velké).
