@@ -30,9 +30,3 @@ $(document).ready(function() {
 $(document).ready(setTimeout(function () {
     $('[data-toggle="popover"]').popover();
 }, 500));
-
-// Automatically replace spaces after prepositions with non-breakable spaces
-$(document).ready(function(){
-    var x = document.querySelector("body");
-    x.innerHTML = x.innerHTML.replace(/ ([ai]|[kosuvz]|do|ke|na|od|po|se|ve|za|ze) /ig, " $1&nbsp;");
-});
