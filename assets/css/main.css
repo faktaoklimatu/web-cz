@@ -168,7 +168,7 @@ ul:last-child {
 
 .page-footer a {
     color: #303030;
-    text-decoration: none;
+/*    text-decoration: none; */
 }
 
 .btn {
@@ -180,6 +180,10 @@ ul:last-child {
     color: #fff;
     background-color: #000080;
     border-color: #000080;
+}
+
+.btn-secondary {
+    background-color: #404080;
 }
 
 .btn-primary:hover {
