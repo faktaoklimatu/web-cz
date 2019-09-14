@@ -32,7 +32,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
 
 ## Poznámky k datům o emisích
 
-* Data o emisích poskytují Eurostatu jednotlivé země EU -- tedy data za Českou republiku reportovala přímo Česká republika.
+* Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Českou republiku reportovala přímo Česká republika.
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
 * V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy.
