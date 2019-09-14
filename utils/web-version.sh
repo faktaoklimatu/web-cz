@@ -14,8 +14,8 @@ fi
 
 REPO_URL=$1
 
-echo -n 'Poslední změna: <a target="_blank" '
-echo -n 'href="'$REPO_URL'/commit/'`git rev-parse HEAD`'" '
+echo -n 'Poslední změna: <a '
+echo -n 'class="no-ext-link-icon" href="'$REPO_URL'/commit/'`git rev-parse HEAD`'" '
 echo -n 'title="commit '`git rev-parse --short HEAD`'">'
 echo -n `git log -1 --date=short --format=%cd`
 echo '</a>'

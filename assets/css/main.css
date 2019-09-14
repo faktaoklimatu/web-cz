@@ -55,6 +55,23 @@ a {
     cursor: pointer;
 }
 
+a.ext-link:after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    margin-left: 0.3em;
+    font-size: 60%;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    top: -0.15em;
+}
+
+a.no-ext-link-icon:after {
+    content: none;
+}
+
 p:last-child {
     margin-bottom: 0;
 }

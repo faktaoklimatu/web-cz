@@ -17,12 +17,12 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
 {% for item in resources_filtered %}
         <div class="row resources">
             <div class="col-12 col-sm-3 col-lg-2">
-                <a href="{{ item.url }}" target="_blank">
+                <a href="{{ item.url }}" class="no-ext-link-icon">
                     <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
                 </a>
             </div>
             <div class="col-12 col-sm-9 col-lg-10">   
-                <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
+                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
                 <p class="lead">{{ item.description-short }}</p>
                 {{ item.description-long | markdownify }}
             </div>
@@ -37,12 +37,12 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
 {% for item in resources_filtered %}
         <div class="row resources">
             <div class="col-12 col-sm-3 col-lg-2">
-                <a href="{{ item.url }}" target="_blank">
+                <a href="{{ item.url }}" class="no-ext-link-icon">
                     <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
                 </a>
             </div>
             <div class="col-12 col-sm-9 col-lg-10">
-                <h2><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h2>
+                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
                 <p class="lead">{{ item.description-short }}</p>
                 {{ item.description-long | markdownify }}
             </div>

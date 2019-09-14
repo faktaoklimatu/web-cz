@@ -44,3 +44,6 @@ cdn:
 
 plugins:
   - jekyll-redirect-from
+
+target-blank:
+    add_css_classes: ext-link
