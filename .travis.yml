@@ -12,11 +12,10 @@ env:
 
 # cache: bundler # caching bundler gem packages will speed up build
 
-before_deploy: rm .gitignore # So that built infographics are commited back to GitHub
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: .
+  local_dir: _site
   target_branch: gh-pages
   keep_history: false
   verbose: false
