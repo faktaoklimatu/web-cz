@@ -15,7 +15,7 @@ reinstall:
 local: web
 	bundle exec jekyll serve
 
-web: _includes/version.html $(INFOGRAPHICS_DST) $(STUDIES_DST)
+web: $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
 check: web
 	bundle exec jekyll build
@@ -24,9 +24,6 @@ check: web
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
 
-_includes/version.html:
-	utils/web-version.sh $(REPO_URL) >$@
-
 $(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
 	utils/convert-infographic.sh $< $@
 
@@ -34,4 +31,4 @@ $(STUDIES_FOLDER)/%.jpg: _studie/%.jpg
 	mkdir -p $(@D)
 	cp -v $< $@
 
-.PHONY: all web local clean _includes/version.html
+.PHONY: all web local clean
