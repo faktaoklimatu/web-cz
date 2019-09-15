@@ -169,6 +169,7 @@ ul:last-child {
 
 .page-footer a {
     color: #303030;
+    text-decoration: none;
 }
 
 .btn {
