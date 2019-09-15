@@ -398,3 +398,35 @@ pre {
         margin-bottom: 1rem;
     }
 }
+
+/* Customizations of news page */
+
+.news-item {
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.news-item .date {
+    width: 5.5em;
+    vertical-align: top;
+    padding-right: 1rem;
+    margin-bottom: 0.2rem;
+    color: #303030;
+}
+
+.news-item .date:before {
+    content: "\2022";
+    display: block;
+    line-height: 0;
+    position: relative;
+    left: -0.5em;
+    top: 0.18em;
+    font-size: 3em;
+    color: #000080;
+}
+
+.news-item h2 {
+    margin-bottom: 0;
+}
