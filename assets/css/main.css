@@ -36,7 +36,8 @@ h2 {
 
 /* Fix anchor links */
 h1:target,
-h2:target {
+h2:target,
+h3:target {
     padding-top: 5rem;
     margin-top: -5rem;
 }
@@ -168,7 +169,6 @@ ul:last-child {
 
 .page-footer a {
     color: #303030;
-/*    text-decoration: none; */
 }
 
 .btn {
@@ -182,12 +182,20 @@ ul:last-child {
     border-color: #000080;
 }
 
-.btn-secondary {
-    background-color: #404080;
-}
-
 .btn-primary:hover {
     color: #fff;
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
+.btn-secondary {
+    background-color: rgba(0,0,0,0);
+    color: inherit;
+    border-width: 3px;
+    border-color: #000080;
+}
+
+.btn-secondary:hover {
     background-color: #1b1bff;
     border-color: #1b1bff;
 }
