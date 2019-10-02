@@ -430,3 +430,7 @@ pre {
 .news-item h2 {
     margin-bottom: 0;
 }
+
+.subscription-form .btn {
+    margin-bottom: 0;
+}
