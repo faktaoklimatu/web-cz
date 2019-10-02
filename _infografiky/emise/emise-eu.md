@@ -19,16 +19,14 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
   * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub>eq
   * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub>eq
   * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub>eq
-  * ...
-  * Česká Republika se svými cca 10,5 mil. obyvateli 131,3 mil. t CO<sub>2</sub>eq
-* Nicméně, __v přepočtu na obyvatele je Česká republika 4. největším emitentem EU__, má 2x vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
+* Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 131,3 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 4. největším emitentem EU__ a má 2x vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
 * Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu ([5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=R24))
 * Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky ([4,5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=H22))
 * Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce ([skoro 5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=I27))
-* Česká Republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky ([2x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=E22), zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
+* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky ([2x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=E22), zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
 
 ## Poznámky k datům o emisích
 
