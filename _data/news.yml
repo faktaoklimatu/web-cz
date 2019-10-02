@@ -1,3 +1,11 @@
+- date: 2019-XX-XX
+  title: "FIXME týden za klima"
+  summary: "FIXME"
+
+- date: 2019-10-02
+  title: "FIXME-tý klimatický hackathon"
+  summary: "Poměrně velký hackathon (cca 10 lidí)... FIXME"
+
 - date: 2019-09-06
   title: "Pridanie aktualit a newslettra"
   summary: "Preco to pridavame, co tam najdu + odkazy."
@@ -19,21 +27,30 @@
   title: "Vznik sekcie studie"
   summary: "Popisat, preco tuto sekciu chceme a co v nej bude byvat."
 
+#- date: 2019-08-07
+#  summary: "Ve 12:30 obdržen první e-mail 'se zuřivou láskou' od pana E.G. ;)"
+
 - date: 2019-08-05
-  title: "Rozhovor v radiu Wave"
-  summary: "Kto tam bol + popis rozhovoru + link."
+  title: "Rozhovor v rádiu Wave"
+  summary: "Ondráš přibyla a Marek Lahoda představují projekt v [rozhovoru pro rádio Wave](https://wave.rozhlas.cz/projekt-fakta-o-klimatu-v-mediich-maji-popiraci-klimatickych-zmen-vetsi-prostor-8033240): _'...My bychom chtěli nejdřív pokrýt něco, co by se dalo považovat za základní znalosti. Grafy, které bychom chtěli publikovat v tomto roce, by měly pokrýt něco ‚jako maturitu z klimatických změn‘. To znamená, chceme, aby lidi věděli, že se Česká republika oteplila o dva stupně od roku 1960, zhruba jaké jsou emise v Česku a ve světě a proč je vůbec důležité to řešit. Ono se zdá, že změna o jeden a půl stupně Celsia je malá, ale je potřeba vysvětlit, co to znamená z hlediska bodů zlomu, ke kterým se blížíme, a z hlediska celého klimatického systému planety...'_"
+
+- date: 2019-07-25
+  summary: "První e-mailové dotazy od veřejnosti (s oceněním práce a mj. s žádostí o rozšíření infografik o rozptyl teplot). Za 48 hodin od zveřejnění cca 2000 návštěvníků webu."
 
 - date: 2019-07-23
-  title: "Zverejnena prva verzia webu"
-  summary: "Kratky popis, co obsahovala."
+  title: "faktaoklimatu.cz jsou online!"
+  summary: "Zveřejněna první verze webu obsahující základní set infografik: 4&times; [Vývoj teplot a koncentrací skleníkových plynů](/#sekce/teploty), 3&times; [Emise skleníkových plynů](/#sekce/emise) a úvodní slovo."
 
 - date: 2019-06-26
-  summary: "Druhy hackathon, kratky popis."
+  summary: "Třetí klimatický hackathon - pokračující přípravy na zveřejnění webu, sepisování a ladění textů, rozšiřování infografik, vznikla první verze našeho [mission statement](/#creators), založen e-mail [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz)."
+
+- date: 2019-06-19
+  summary: "Druhý klimatický hackathon - práce na infografikách, strukturalizace datasetů, přípravy na zveřejnění webu, zakoupena doména _faktaoklimatu.cz_."
 
 - date: 2019-05-31
-  title: "Projekt sa rozbieha, prvy hackathon"
-  summary: "TBA kolko ludi + co sa urobilo."
+  title: "První klimatický hackathon"
+  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <a href=\"/slovnik#hackathon\" class=\"glossary-item\">hackathon<i class=\"fas fa-book\"></i></a> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ - jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu)."
 
-- date: 2019-01-01
-  title: "Prva poulicna akademina v Brne"
-  summary: "Testovanie pouzitelnosti a efektov infogarfik, prve verzie namalovane rucne na plachtach, link na fotky."
+- date: 2019-05-03
+  title: "První pouliční akademie v Brně"
+  summary: "Ondráš Přibyla organizuje první klimatickou pouliční akademii v rámci studentské klimatické stávky [Fridays For Future](http://www.fridaysforfuture.cz/). Celkem tři infografiky, zatím ručně malované. Pouliční akademie = banery s infografikou, u kterých jsou kompetentní osoby poskytující výklad a doplňující informace a zodpovídající dotazy z publika, celkem cca 3 &times; 7 minut. Zde je [pár fotografií z akce FIXME](FIXME)."
