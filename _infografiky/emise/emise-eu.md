@@ -36,4 +36,4 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
 * V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy.
-* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako {% include glossary.html id='co2eq' %}.
+* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> ({% include glossary.html id='antropogennisklenikoveplyny' %}) vyjádřené jako {% include glossary.html id='co2eq' %}.

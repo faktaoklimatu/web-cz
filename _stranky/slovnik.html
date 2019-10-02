@@ -5,11 +5,13 @@ slug:       slovnik
 intro:      "Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem."
 ---
 
+<!-- FIXME dodělat markdownify filtr a upravit glossary.yml --#McZ_2019-10-02 -->
+
 <p class="lead">{{ page.intro }}</p>
 
 {% assign sorted_glossary = site.data.glossary | sort_natural: "id" %}
 {% for item in sorted_glossary %}
 <hr/>
-<h3 id="{{ item.id }}"><strong>{{ item.name-short }}</strong> <span class="lead">({{ item.name-long }})</span></h3>
+<h3 id="{{ item.id }}"><strong>{{ item.name-short }}</strong>{% if item.name-long %}<span class="lead"> ({{ item.name-long }})</span>{% endif %}</h3>
 <p>{{ item.description }}</p>
 {% endfor %}
