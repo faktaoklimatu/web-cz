@@ -38,7 +38,10 @@ V souboru `_config.yml` nakonfigurujte pomocí hodnoty `contact`.
 ## Jak vyvíjet lokálně
 
 Stránku lze vyvíjet i na svém osobním stroji a experimentovat tak například s novým typem obsahu, stylem stránky...
-Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll). Dále je potřeba mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/) a utilitu `pdf2svg`,
+Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto 
+[návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) (v případě Ubuntu 
+18.04 nutno nejdříve nainstalovat balíčky `libpng-dev zlib1g-dev build-essential dh-autoreconf`). Dále je potřeba 
+mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/) a utilitu `pdf2svg`,
 které se používají na konverzi infografik.
 
 Poté již stačí v kořenové složce projektu spustit příkaz `make local`, který sestaví, co je potřeba, zpřístupní web na adrese
