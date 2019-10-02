@@ -13,7 +13,7 @@
 - id: co2eq
   name-short: "CO<sub>2</sub>eq"
   name-long: "CO<sub>2</sub> ekvivalent"
-  description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) &ndash; konkrétně je to množství příslušného plynu &times; <a href=\"https://en.wikipedia.org/wiki/Global_warming_potential#Values\">GWP koeficient</a>. Např. pro metan je to hodnota cca 28 [<a href=\"https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf\">IPCC</a> (strana 714)], což se dá číst jako \"1t NH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\" &ndash; zjednodušeně řečeno, metan je 28&times; silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
+  description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) &ndash; konkrétně je to množství příslušného plynu &times; <a href=\"https://en.wikipedia.org/wiki/Global_warming_potential#Values\">GWP koeficient</a>. Např. pro metan je to hodnota cca 28 [<a href=\"https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf\">IPCC</a> (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\" &ndash; zjednodušeně řečeno, metan je 28&times; silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
 - id: ipcc
   name-short: "IPCC"
@@ -28,7 +28,7 @@
 - id: ppm
   name-short: "ppm"
   name-long: "parts per million"
-  description: "Počet částic v milionu, podobně jako procenta (<em>per cento</em>) znamená počet ve stovce a promile (<em>per mīlle</em>) znamená počet v tisici, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 &permil; nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
+  description: "Počet částic v milionu, podobně jako procenta (<em>per cento</em>) znamená počet ve stovce a promile (<em>per mīlle</em>) znamená počet v tisíci, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 &permil; nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
   
 - id: rcp
   name-short: "RCP"
