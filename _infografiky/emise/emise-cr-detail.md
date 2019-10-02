@@ -6,7 +6,7 @@ redirect_from: "/emise-cr-detail"
 weight:     4
 tags:       [ emise, CO2, CR ]
 caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 130,35 mil. tun (údaj z roku 2016). V přepočtu na obyvatele to je 12,3 tCO<sub>2</sub>eq/obyvatele."
-data-our:   "https://docs.google.com/spreadsheets/d/1igCIcrkec7J6sfp4L4lGMzeDS4Mf-o7GZOxduZC8-pc/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit?usp=sharing"
 data-orig:  [ [ "Eurostat", "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23" ]
             , ["European Commission", "https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2016_en.xlsx" ] ]
 ---
