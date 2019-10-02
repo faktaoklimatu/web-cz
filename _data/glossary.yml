@@ -1,6 +1,10 @@
 # uvnitř řetězců můžete použít HTML
 # prosím, udržujte seznam řazený dle abecedy
 
+- id: antropogennisklenikoveplyny
+  name-short: "Antropogenní skleníkové plyny"
+  description: "V současnosti mají státy vázané <em>UNFCCC</em> a <em>Kjótským protokolem</em> povinnost inventarizovat emise 7 skleníkových plynů [<a href=\"https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf\">ghgprotocol.org</a>]: <em>antropogenní CO<sub>2</sub></em> (oxid uhličitý), <em>CH<sub>4</sub></em> (metan), <em>N<sub>2</sub>O</em> (oxid dusný), <em>PFCs</em> (zcela fluorované uhlovodíky), <em>HFCs</em> (částečně fluorované uhlovodíky), <em>SF<sub>6</sub></em> (fluorid sírový) a <em>NF<sub>3</sub></em> (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz <em>CO2eq</em> níže)."
+
 - id: chmu
   name-short: "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
