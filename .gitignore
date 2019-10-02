@@ -9,3 +9,6 @@ _site/*
 # Temporary files
 Gemfile.lock
 *~
+
+# Rubymine IDE files
+.idea
