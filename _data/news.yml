@@ -1,9 +1,6 @@
-- date: 2019-XX-FIXME
-  summary: "FIXME (Pouzitie nasich inforgafik na poulicnej akademii v Prahe).
-  "
 
-- date: 2019-XX-FIXME
-  summary: "FIXME (opravena chyba v leteckej doprave + odkazy na dane infografiky).
+- date: 2019-10-12
+  summary: "Dokončeno řešení problémů se zazpočtením letecké dopravy. Texty sjednoceny, čísla opraveny.
   "
   
 - date: 2019-10-02
@@ -29,12 +26,12 @@
   "
 
 - date: 2019-09-03
-  summary: "Rozšíření týmu o další lidi (kdo? FIXME), aktualizace sekce [O nás](/#creators), publikování kompletního seznamu na projektu se podílejících lidí ([AUTHORS.md](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md)), u některých infografik přidáno více primárních zdrojů dat.
+  summary: "Rozšíření core týmu o Oldu Sklenáře, Toma Protivínského a Jana Krčála, aktualizace sekce [O nás](/#creators), publikování kompletního seznamu na projektu se podílejících lidí ([AUTHORS.md](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md)), u některých infografik přidáno více primárních zdrojů dat.
   "
 
 - date: 2019-08-23
   title: "Vznik sekce Studie a 3 nové infografiky"
-  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2).
+  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy - dataset z Eurostatu umožňuje započítání letecké dorpavy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12.řijna 2019 - defaultně budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce.  
   "
 
 #- date: 2019-08-07
@@ -50,7 +47,7 @@
 
 - date: 2019-07-23
   title: "faktaoklimatu.cz online!"
-  summary: "Zveřejněna první verze webu obsahující základní set infografik: 4&times; [Vývoj teplot a koncentrací skleníkových plynů](/#sekce/teploty), 3&times; [Emise skleníkových plynů](/#sekce/emise) a úvodní slovo.
+  summary: "Zveřejněna první verze webu obsahující základní set infografik: 3&times; [Vývoj teplot a koncentrací skleníkových plynů](/#sekce/teploty), 3&times; [Emise skleníkových plynů](/#sekce/emise) a úvodní slovo.
   "
 
 - date: 2019-06-26
@@ -68,5 +65,5 @@
 
 - date: 2019-05-03
   title: "První pouliční akademie v Brně"
-  summary: "Ondráš Přibyla organizuje první klimatickou pouliční akademii v rámci studentské klimatické stávky [Fridays For Future](http://www.fridaysforfuture.cz/). Celkem tři infografiky, zatím ručně malované. Pouliční akademie = banery s infografikou, u kterých jsou kompetentní osoby poskytující výklad a doplňující informace a zodpovídající dotazy z publika, celkem cca 3 &times; 7 minut. Zde je [pár fotografií z akce FIXME](FIXME).
+  summary: "Ondráš Přibyla organizuje první klimatickou pouliční akademii v rámci studentské klimatické stávky [Fridays For Future](http://www.fridaysforfuture.cz/). Celkem tři infografiky, zatím ručně malované. Pouliční akademie = banery s infografikou, u kterých jsou kompetentní osoby poskytující výklad a doplňující informace a zodpovídající dotazy z publika, celkem cca 3 &times; 7 minut.
   "
