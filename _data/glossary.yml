@@ -1,6 +1,10 @@
 # uvnitř řetězců můžete použít HTML
 # prosím, udržujte seznam řazený dle abecedy
 
+- id: adaptace
+  name-short: "Adaptace"
+  description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příkladem adaptačních opatření jsou například protipovodňové zábrany."
+
 - id: antropogennisklenikoveplyny
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané <em>UNFCCC</em> a <em>Kjótským protokolem</em> povinnost inventarizovat emise 7 skleníkových plynů [<a href=\"https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf\">ghgprotocol.org</a>]: <em>antropogenní CO<sub>2</sub></em> (oxid uhličitý), <em>CH<sub>4</sub></em> (metan), <em>N<sub>2</sub>O</em> (oxid dusný), <em>PFCs</em> (zcela fluorované uhlovodíky), <em>HFCs</em> (částečně fluorované uhlovodíky), <em>SF<sub>6</sub></em> (fluorid sírový) a <em>NF<sub>3</sub></em> (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz <em>CO2eq</em> níže)."
@@ -19,6 +23,10 @@
   name-short: "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change"
   description: "<em>Mezivládní panel pro změny klimatu</em> je vědecký orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl [<a href=\"https://cs.wikipedia.org/wiki/IPCC\">cs.wikipedia</a>]."
+
+- id: mitigace
+  name-short: "Mitigace"
+  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů. Příkladem mitigačních opatření je uhlíková daň nebo využívání obnovitelných zdrojů energie."
 
 - id: nasa
   name-short: "NASA"
