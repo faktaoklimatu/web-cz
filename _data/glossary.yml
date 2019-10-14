@@ -3,7 +3,7 @@
 
 - id: adaptace
   name-short: "Adaptace"
-  description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příkladem adaptačních opatření jsou například protipovodňové zábrany."
+  description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příklady současných adaptačních opatření jsou například protipovodňové zábrany, změny pěstovaných plodin nebo přesídlení do výše položených oblastí, které nebudou postiženy zvyšováním hladiny oceánů. Některé očekávané dopady klimatických změn, jako například silnější hurikány nebo rozšíření tropických nemocí, umožňují jen minimální prevenci a zvládání škod jimi způsobených bude nákladné."
 
 - id: antropogennisklenikoveplyny
   name-short: "Antropogenní skleníkové plyny"
@@ -31,7 +31,7 @@
 
 - id: mitigace
   name-short: "Mitigace"
-  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů. Příkladem mitigačních opatření je uhlíková daň nebo využívání obnovitelných zdrojů energie."
+  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen CO<sub>2</sub>, ale i methanu,  <em>N<sub>2</sub>O</em> a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
 
 - id: nasa
   name-short: "NASA"
