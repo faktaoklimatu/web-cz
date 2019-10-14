@@ -1,6 +1,6 @@
 
 - date: 2019-10-12
-  summary: "Dokončeno řešení problémů se započtením emisí letecké dopravy - ve všech infografikách, kde je to relevantní, zzobrazujeme emise včetně letecké dopravy.
+  summary: "Dokončeno řešení problémů se započtením emisí letecké dopravy - ve všech infografikách, kde je to relevantní, zobrazujeme emise včetně letecké dopravy.
   "
   
 - date: 2019-10-02
@@ -17,7 +17,7 @@
   
   A) uspořádali besedu 'Co víme o klimatu a klimatické změně?' s anotací <em>'Zprávy o klimatické změně a o tom, jak ji můžeme ovlivnit jsou někdy protichůdné, často vytržené ze souvislostí, někdy mohou vypadat jako náhodné výkřiky, jindy jako souboj \"alarmistů\" a \"popíračů\". Jak se v tom vyznat? V přednášce chceme pomoci laikům zorientovat se v tématu. Co víme o klimatickém systému s jistotou a co naopak víme jen přibližně? Na čem stojí přesvědčení, že současné změny klimatu způsobuje lidská činnost? Jaký můžeme očekávat další vývoj, jaké dopady jsou nevyhnutelné a co je možné ovlivnit? Jak vypadají různé scénáře vývoje? V čem jsou nepřesné nebo chybné argumenty stávkujících studentů nebo skeptiků?'</em>
 
-  B) zorganizovali další dvě pouliční akademie - jednu velkou při klimaticé stávce, druhou malou v rámci zakončení Týdne pro klima. Celkem tedy ke konci září máme za sebou již 5 pouličních akademií.
+  B) zorganizovali další dvě pouliční akademie - jednu velkou při klimatické stávce, druhou malou v rámci zakončení Týdne pro klima. Celkem tedy ke konci září máme za sebou již 5 pouličních akademií.
   "
 
 - date: 2019-09-13
@@ -31,7 +31,7 @@
 
 - date: 2019-08-23
   title: "Vznik sekce Studie a 3 nové infografiky"
-  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy - dataset z Eurostatu umožňuje započítání letecké dorpavy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12.řijna 2019 - defaultně budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce.  
+  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy - dataset z Eurostatu umožňuje započítání letecké dopravy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12.října 2019 - budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce.  
   "
 
 #- date: 2019-08-07
