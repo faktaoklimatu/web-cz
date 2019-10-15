@@ -19,7 +19,7 @@ study-pdf:          "https://science.sciencemag.org/content/364/6436/139.2.full.
 
 ## Celý text článku
 
-Po celém světě dnes můžeme vidět mládež vytrvale demonstrující za ochranu zemského klimatu a další otázky, jež jsou zásadní pro budoucí prosperitu lidské civilizace. (1, 2) Jako vědci a badatelé, kteří v nedávné době iniciovali podobné dopisy na národní úrovni, vyzýváme nyní své kolegy ze všech vědních disciplín po celém světě k podpoře mladých lidí žádajících účinnou ochranu klimatu.(3) Prohlašujeme, že jejich obavy jsou opodstatněné a opírají se o dosud nejlepší a nejpřesnější vědecké poznatky. Dosavadní způsoby ochrany klimatu a biosféry jsou naprosto nedostačující. 
+Po celém světě dnes můžeme vidět mládež vytrvale demonstrující za ochranu zemského klimatu a další otázky, jež jsou zásadní pro budoucí prosperitu lidské civilizace. (1, 2) Jako vědci a badatelé, kteří v nedávné době iniciovali podobné dopisy na národní úrovni, vyzýváme nyní své kolegy ze všech vědních disciplín po celém světě k podpoře mladých lidí žádajících účinnou ochranu klimatu (3). Prohlašujeme, že jejich obavy jsou opodstatněné a opírají se o dosud nejlepší a nejpřesnější vědecké poznatky. Dosavadní způsoby ochrany klimatu a biosféry jsou naprosto nedostačující. 
 
 Téměř všechny země světa podepsaly a ratifikovaly Pařížskou dohodu z roku 2015, v níž se v souladu s mezinárodním právem zavázaly udržet globální oteplování výrazně pod hranicí 2 °C (oproti předindustriální úrovni) a usilovat o omezení oteplování do 1,5 °C (4). Vědecká obec došla k jasnému závěru, že globální oteplení o 2 °C by oproti 1,5 °C mělo podstatně vyšší klimatické dopady, a to dokonce s rizikem, že některé by mohly být již nevratné (5). Vzhledem k nerovnoměrné intenzitě většiny dopadů v různých částech světa by navíc oteplení o 2 °C dále výrazně zvětšilo dnes existující rozdíly mezi těmito částmi světa (5).
 
@@ -41,7 +41,18 @@ Současná obrovská, zespodu jdoucí vlna mobilizace (2) studentského klimatic
 7. Fridays for Future [www.fridaysforfuture.org](www.fridaysforfuture.org).
 8. IPCC, Climate Change 2014: Synthesis Report: Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Core Writing Team, R. K. Pachauri, L. A. Meyer, Eds. (IPCC, Geneva, Switzerland, 2014)
 
+## Z Českých vědců se k této výzvě přidávají: 
+
+Mgr. Alexander Ač, PhD, Centrum výzkumu globální změny AV ČR
+doc. Mgr. Bohuslav Binka, Ph.D., Katedra environmentálních studií FSS MU
+doc. Dominik Heger, Ph.D. , Ústav Chemie, PřF MU, Brno
+Mgr. Tomáš Chabada, výzkumný pracovník, Katedra environmentálních studií FSS MU
+Mgr. Věra Kollárová, Ph.D., Ústav fyzikálního inženýrství, VUT, Brno 
+PHDr. Jan Krajhanzl, PhD, Katedra enviromentálních studií FSS MU
+Tomáš Šolomek, PhD, Department of Chemistry, University of Basel, Switzerland
+Mgr. et Mgr. Marek Vácha, Ph.D., Přednosta Ústavu etiky a humanitních studií LF UK
+
 ## Jak se přidat k podpisu této výzvy?
 
-* Pro zobrazení vašeho podpisu na této stránce, prosím ...
-* Pro přidání vašeho podpisu na mezinárodní seznam **Scientists for Future** (který ale nejsme schopni zobrazit zde) vyplňte formulář na:  [www.scientistsforfuture.org/international/](www.scientistsforfuture.org/international/) 
+* Pro zobrazení vašeho podpisu na této stránce, prosím pošlete email na adresu scientistsforfuture@faktaoklimatu.cz, který bude obsahovat vaše jméno včetně titulů, název katedry nebo ústavu, na kterém působíte a URL webové stránky, skrz kterou můžeme ověřit, že jste skutečně pracovníkem dané instituce. (Většina pracovišť má na webu seznam zaměstnanců). Email prosím pošlete z adresy, která odpovídá vaší instituci. Podpisy budeme aktualizovat jednou za týden. 
+* Pro přidání vašeho podpisu na mezinárodní seznam **Scientists for Future** (který nezobrazujeme zde) vyplňte formulář na:  [www.scientistsforfuture.org/international/](www.scientistsforfuture.org/international/) 
