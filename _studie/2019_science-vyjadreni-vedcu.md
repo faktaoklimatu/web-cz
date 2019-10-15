@@ -43,14 +43,18 @@ Současná obrovská, zespodu jdoucí vlna mobilizace (2) studentského klimatic
 
 ## Z Českých vědců se k této výzvě přidávají: 
 
-Mgr. Alexander Ač, PhD, Centrum výzkumu globální změny AV ČR
-doc. Mgr. Bohuslav Binka, Ph.D., Katedra environmentálních studií FSS MU
-doc. Dominik Heger, Ph.D. , Ústav Chemie, PřF MU, Brno
-Mgr. Tomáš Chabada, výzkumný pracovník, Katedra environmentálních studií FSS MU
-Mgr. Věra Kollárová, Ph.D., Ústav fyzikálního inženýrství, VUT, Brno 
-PHDr. Jan Krajhanzl, PhD, Katedra enviromentálních studií FSS MU
-Tomáš Šolomek, PhD, Department of Chemistry, University of Basel, Switzerland
-Mgr. et Mgr. Marek Vácha, Ph.D., Přednosta Ústavu etiky a humanitních studií LF UK
+Mgr. Alexander Ač, PhD, Centrum výzkumu globální změny AV ČR  
+doc. Mgr. Bohuslav Binka, Ph.D., Katedra environmentálních studií FSS MU  
+Ing. Jiří Dlouhý, Centrum pro otázky životního prostředí UK  
+doc. Dominik Heger, Ph.D. , Ústav Chemie, PřF MU, Brno  
+Mgr. Tomáš Chabada, výzkumný pracovník, Katedra environmentálních studií FSS MU  
+Mgr. Lukáš Kala, Ph.D, Botanický ústav AV ČR  
+Mgr. Věra Kollárová, Ph.D., Ústav fyzikálního inženýrství, VUT, Brno   
+PHDr. Jan Krajhanzl, PhD, Katedra enviromentálních studií FSS MU  
+prof. RNDr. Bedřich Moldan, CSc., dr.h.c., Centrum pro otázky životního prostředí UK  
+Tomáš Šolomek, PhD, Department of Chemistry, University of Basel, Switzerland  
+Mgr. et Mgr. Marek Vácha, Ph.D., Přednosta Ústavu etiky a humanitních studií LF UK  
+doc. Jan Weinzettel, Ph.D., Centrum pro otázky životního prostředí, UK  
 
 ## Jak se přidat k podpisu této výzvy?
 
