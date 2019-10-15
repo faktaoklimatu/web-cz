@@ -5,7 +5,7 @@ slug:       2006_sternova-zprava
 weight:     1
 tags:       [ studie, svet ]
 caption:    "Ekonomická analýza dopadů klimatických změn a nákladů a přínosů opatření na na snížení emisí z roku 2006."
-intro:      "Sternova zpráva je ekonomickou analýzou dopadů klimatických změn a nákladů a přínosů opatření na snížení emisí skleníkových plynů z roku 2006. Ukazuje, že přínosy silných a včasných opatření výrazně převyšují jejich náklady, a proto ignorování klimatických změn povede ke snížení hospodářského růstu. Zpráva doporučuje investovat do opatření na snížení emisí cca 1% HDP ročně, tedy podstatně méně než odhadované náklady na adaptaci a škody na hospodářství, pokud k radikálnímu snížení emisí nedojde. (Odhady nákladů na adaptaci a škody při scénáři bussines-as-usual jsou 5-20% celosvětového HDP). Čím dříve potřebná opatření přijmeme, tím levnější bude jejich cena. Zpráva se dále zaměřuje na nejúčinnější opatření pro snížení emisí skleníkových plynů."
+intro:      "Sternova zpráva je ekonomickou analýzou dopadů klimatických změn a nákladů a přínosů opatření na snížení emisí skleníkových plynů z roku 2006. Ukazuje, že přínosy silných a včasných opatření výrazně převyšují jejich náklady, a ignorování klimatických změn povede ke snížení hospodářského růstu. Zpráva doporučuje investovat do opatření na snížení emisí cca 1% HDP ročně, tedy podstatně méně než odhadované náklady na adaptaci a škody na hospodářství, pokud k radikálnímu snížení emisí nedojde. (Odhady nákladů na adaptaci a škody při scénáři bussines-as-usual jsou 5-20% celosvětového HDP). Zpráva se dále zaměřuje na nejúčinnější opatření pro snížení emisí skleníkových plynů."
 study-title:        "Stern Review: The Economics of Climate Change"
 study-author:       "Nicholas Stern"
 study-institution:  "Cabinet Office - HM Treasury"
@@ -23,19 +23,11 @@ Pokud nebudeme jednat, skleníkové plyny v atmosféře mohou na konci století 
 
 #### 1. Analýza nákladů způsobených klimatickými změnami
 
-**Klimatické změny (bez přijatých opatření na {% include glossary.html id='mitigace' %}) povedou ke snížení celosvětového a každoročního HDP o nejméně 5 %** (v sekci Předpoklady a metodologie níže je přesnější popis, co to znamená). Zároveň zpráva upozorňuje, že se jedná o konzervativní odhad a skutečné dopady mohou být násobně vyšší:
-
-* Zohlednění “netržních” nákladů (dopady na lidské zdraví a životní prostředí) zvyšuje odhad na 11 % každoročního HDP.
-* Některé nové vědecké studie naznačují, že pozitivní zpětná vazba klimatických změn může být silnější než se dříve předpokládalo (například rychlejší uvolňování metanu z permafrostu v důsledku teplejšího klimatu), v takovém případě by dopad na HDP byl zvýšen na 7 % (respektive 14 % při zohlednění “netržních” dopadů).
-* Převod na světové HDP dává jednotlivým zemím váhu podle jejich úrovně HDP, avšak klimatické změny zasáhnou více regiony chudších zemí. Pokud by přepočet na světové HDP odpovídal rozložení populace, byly by očekávané dopady přibližně o čtvrtinu vyšší.
-
-Celkový dopad klimatických změn bez opatření na jejich zmírnění lze tedy srovnat s dlouhodobým snížením spotřeby o 5-20 %.
+**Klimatické změny (bez přijatých opatření na {% include glossary.html id='mitigace' %}) povedou ke snížení celosvětového a každoročního HDP o nejméně 5 %** (v sekci Předpoklady a metodologie níže je přesnější popis, co to znamená). Zároveň zpráva upozorňuje, že se jedná o konzervativní odhad. Při zohlednění "netržních" nákladů (dopady na lidské zdraví a životní prostředí) a zpětných vazeb v klimatickém systému dochází zpráva k **hornímu odhadu 20% celosvětového HDP** na řešení dopadů a škod. Celkový dopad klimatických změn bez opatření na jejich zmírnění lze tedy srovnat s dlouhodobým snížením spotřeby o 5-20 %.
 
 #### 2. Analýza nákladů na snížení emisí skleníkových plynů
 
-**Odhadované náklady na stabilizaci emisí v atmosféře na úrovni 500-550 ppm CO2eq odpovídají přibližně 1 % celosvětového HDP ročně.** Tato cena je vysoká, avšak přijatelná a nepředstavuje ohrožení budoucího hospodářského růstu, narozdíl od nezmírněných klimatických změn.
-
-Zpráva připouští, že stabilizace na úrovni 450 ppm CO2eq by byla výrazně nákladnější a může již být mimo náš dosah (překročení této úrovně znamená, že oteplení s velkou pravděpodobností přesáhne 2 °C).
+**Odhadované náklady na stabilizaci emisí v atmosféře na úrovni 500-550 ppm CO2eq odpovídají přibližně 1 % celosvětového HDP ročně.** Tato cena je vysoká, avšak přijatelná a nepředstavuje ohrožení budoucího hospodářského růstu, narozdíl od nezmírněných klimatických změn. Zpráva připouští, že stabilizace na úrovni 450 ppm CO2eq by byla výrazně nákladnější a může již být mimo náš dosah (překročení této úrovně znamená, že oteplení s velkou pravděpodobností přesáhne 2 °C).
 
 #### 3. Účinná politická opatření na snížení emisí
 
@@ -49,11 +41,7 @@ Klíčovou roli hrají tři oblasti: zpoplatnění emisí, podpora vývoje efekt
 
 #### Mezinárodní spolupráce je nezbytná
 
-Koordinovaná mezinárodní akce je stěžejní pro zmírnění klimatických změn a zvyšuje efektivity přijatých opatření. **Globální klima je veřejným statkem, jehož kvalita záleží na součinnosti všech zemí, zároveň však každá jednotlivá země má sama o sobě jen malý dopad.** Některé země tak mohou být v pokušení přenést odpovědnost za snižování emisí na ostatní země. Rámcová úmluva OSN o změně klimatu představuje platformu pro mezinárodní koordinaci.
-
-_**“Zatím se ještě můžeme vyhnout nejhorším dopadům klimatických změn, pokud teď skutečně začneme účinně a kolektivně jednat.”**_
-
-Cena za snížení emisí skleníkových plynů je mnohonásobně nižší než celospolečenské náklady dopadů nezmírněných klimatických změny, avšak odkládání účinné akce a přijetí potřebných opatření zvyšuje cenu. Soukromý sektor se může stát hlavním aktérem změny při odstranění tržních selhání a vhodném nastavení pobídek. Klíčová je spolupráce na mnoha úrovních: mezi vládou, soukromým sektorem i občanskou společností v rámci jednotlivých zemí, ale také na globální úrovni při koordinaci všech zemí k dosažení společného cíle.
+Koordinovaná mezinárodní akce je stěžejní pro zmírnění klimatických změn a zvyšuje efektivity přijatých opatření. **Globální klima je veřejným statkem, jehož kvalita záleží na součinnosti všech zemí, zároveň však každá jednotlivá země má sama o sobě jen malý dopad.** Některé země tak mohou být v pokušení přenést odpovědnost za snižování emisí na ostatní země. Rámcová úmluva OSN o změně klimatu představuje platformu pro mezinárodní koordinaci. Cena za snížení emisí skleníkových plynů je mnohonásobně nižší než celospolečenské náklady dopadů nezmírněných klimatických změny, avšak odkládání účinné akce a přijetí potřebných opatření zvyšuje cenu. Soukromý sektor se může stát hlavním aktérem změny při odstranění tržních selhání a vhodném nastavení pobídek. Klíčová je spolupráce na mnoha úrovních: mezi vládou, soukromým sektorem i občanskou společností v rámci jednotlivých zemí, ale také na globální úrovni při koordinaci všech zemí k dosažení společného cíle.
 
 ## Předpoklady a metodologie
 
@@ -64,7 +52,7 @@ Dopady klimatických změn a náklady na mitigaci jsou odlišně rozloženy v č
 * Celosvětový HDP lze přepočíst na užitek na osobu, výpočty následně porovnávají celkový užitek v jednotlivých scénářích.
 * Užitek budoucích generací má stejnou váhu jako užitek současné generace (váha užitku budoucích generací se snižuje jen velice mírně).
 * V bohatších společnostech přinese určité zvýšení HDP relativně nižší zvýšení užitku v porovnání s chudšími společnostmi (zjednodušeně, je-li společnost dvakrát více bohatá, každý dodatečný dolar přinese poloviční užitek; společnost zde znamená jak různé regiony, tak různé generace v čase).
-* Uvažovaný horizont dopadů klimatických změn je do roku 2020.
+* Uvažovaný horizont dopadů klimatických změn je do roku 2020. FIXME??
 * Předpoklady studie o růstu HDP společně s agregací založenou na užitku jsou přibližně srovnatelné s prostým agregováním HDP s běžným diskontním faktorem 1,4 %.
 
 Nejmírnější odhad ceny dopadů klimatických změn ve výši 5 % HDP tedy znamená, že celkový užitek při nezmírněných klimatických změnách bude srovnatelný s užitkem, ke kterému by vedlo trvalé snížení celosvětového HDP, v každém roce vždy o 5 % předpokládané hodnoty HDP.
