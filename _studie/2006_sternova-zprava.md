@@ -47,7 +47,7 @@ Dopady klimatických změn a náklady na mitigaci jsou odlišně rozloženy v č
 * Celosvětový HDP lze přepočíst na užitek na osobu, výpočty následně porovnávají celkový užitek v jednotlivých scénářích.
 * Užitek budoucích generací má stejnou váhu jako užitek současné generace (váha užitku budoucích generací se snižuje jen velice mírně).
 * V bohatších společnostech přinese určité zvýšení HDP relativně nižší zvýšení užitku v porovnání s chudšími společnostmi (zjednodušeně, je-li společnost dvakrát více bohatá, každý dodatečný dolar přinese poloviční užitek; společnost zde znamená jak různé regiony, tak různé generace v čase).
-* Uvažovaný horizont dopadů klimatických změn je do roku 2020. FIXME??
+* Uvažovaný horizont dopadů klimatických změn je do roku 2200. 
 * Předpoklady studie o růstu HDP společně s agregací založenou na užitku jsou přibližně srovnatelné s prostým agregováním HDP s běžným diskontním faktorem 1,4 %.
 
 Nejmírnější odhad ceny dopadů klimatických změn ve výši 5 % HDP tedy znamená, že celkový užitek při nezmírněných klimatických změnách bude srovnatelný s užitkem, ke kterému by vedlo trvalé snížení celosvětového HDP, v každém roce vždy o 5 % předpokládané hodnoty HDP.
