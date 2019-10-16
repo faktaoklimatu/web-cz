@@ -1,69 +1,50 @@
 
 - date: 2019-10-12
-  summary: "Dokončeno řešení problémů se započtením emisí letecké dopravy - ve všech infografikách, kde je to relevantní, zobrazujeme emise včetně letecké dopravy.
-  "
+  summary: "Dokončeno řešení problémů se započtením emisí letecké dopravy. Ve všech infografikách, kde je to relevantní, zobrazujeme emise včetně letecké dopravy."
   
 - date: 2019-10-02
-  summary: "Významně zpřehledněny některé naše datasety (viz např. zde pro [Emise ČR](https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit#gid=0)).
-  "
+  summary: "Významně zpřehledněny některé naše datasety (viz např. zde pro [Emise ČR](https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit#gid=0))."
 
 - date: 2019-09-29
-  summary: "Jedna z našich infografik se objevila v [České televizi, v pořadu 168 hodin](https://www.ceskatelevize.cz/porady/10117034229-168-hodin/219452801100929/video/723111).
-  "
+  summary: "Jedna z našich infografik se objevila v [České televizi, v pořadu 168 hodin](https://www.ceskatelevize.cz/porady/10117034229-168-hodin/219452801100929/video/723111)."
 
 - date: 2019-09-20
   title: "První veřejná debata, další pouliční akademie"
   summary: "V rámci [Týdne pro klima](https://www.tydenproklima.cz/brno) jsme v Brně za Fakta o klimatu:
-  
-  A) uspořádali besedu 'Co víme o klimatu a klimatické změně?' s anotací <em>'Zprávy o klimatické změně a o tom, jak ji můžeme ovlivnit jsou někdy protichůdné, často vytržené ze souvislostí, někdy mohou vypadat jako náhodné výkřiky, jindy jako souboj \"alarmistů\" a \"popíračů\". Jak se v tom vyznat? V přednášce chceme pomoci laikům zorientovat se v tématu. Co víme o klimatickém systému s jistotou a co naopak víme jen přibližně? Na čem stojí přesvědčení, že současné změny klimatu způsobuje lidská činnost? Jaký můžeme očekávat další vývoj, jaké dopady jsou nevyhnutelné a co je možné ovlivnit? Jak vypadají různé scénáře vývoje? V čem jsou nepřesné nebo chybné argumenty stávkujících studentů nebo skeptiků?'</em>
-
-  B) zorganizovali další dvě pouliční akademie - jednu velkou při klimatické stávce, druhou malou v rámci zakončení Týdne pro klima. Celkem tedy ke konci září máme za sebou již 5 pouličních akademií.
-  "
+  A) uspořádali besedu 'Co víme o klimatu a klimatické změně?' s anotací _'Zprávy o klimatické změně a o tom, jak ji můžeme ovlivnit jsou někdy protichůdné, často vytržené ze souvislostí, někdy mohou vypadat jako náhodné výkřiky, jindy jako souboj \"alarmistů\" a \"popíračů\". Jak se v tom vyznat? V přednášce chceme pomoci laikům zorientovat se v tématu. Co víme o klimatickém systému s jistotou a co naopak víme jen přibližně? Na čem stojí přesvědčení, že současné změny klimatu způsobuje lidská činnost? Jaký můžeme očekávat další vývoj, jaké dopady jsou nevyhnutelné a co je možné ovlivnit? Jak vypadají různé scénáře vývoje? V čem jsou nepřesné nebo chybné argumenty stávkujících studentů nebo skeptiků?'_
+  B) zorganizovali další dvě pouliční akademie – jednu velkou při klimatické stávce, druhou malou v rámci zakončení Týdne pro klima. Celkem tedy ke konci září máme za sebou již 5 pouličních akademií."
 
 - date: 2019-09-13
   title: "Rozšíření o Další sekce a odkazy, Slovník pojmů"
-  summary: "V nové sekci [Další zdroje a odkazy](/zdroje) uvádíme rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat, projektů vizualizující data a další. Ve [Slovníku pojmů](/slovnik) uvádíme pro přehlednost a vyšší srozumitelnost stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem.
-  "
+  summary: "V nové sekci [Další zdroje a odkazy](/zdroje) uvádíme rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat, projektů vizualizující data a další. Ve [Slovníku pojmů](/slovnik) uvádíme pro přehlednost a vyšší srozumitelnost stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem."
 
 - date: 2019-09-03
-  summary: "Rozšíření core týmu o Oldu Sklenáře, Toma Protivínského a Jana Krčála, aktualizace sekce [O nás](/#creators), publikování kompletního seznamu na projektu se podílejících lidí ([AUTHORS.md](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md)), u některých infografik přidáno více primárních zdrojů dat.
-  "
+  summary: "Rozšíření core týmu o Oldu Sklenáře, Toma Protivínského a Jana Krčála, aktualizace [sekce O nás](/#creators), publikování kompletního seznamu na projektu se podílejících lidí ([AUTHORS.md](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md)), u některých infografik přidáno více primárních zdrojů dat."
 
 - date: 2019-08-23
-  title: "Vznik sekce Studie a 3 nové infografiky"
-  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy - dataset z Eurostatu umožňuje započítání letecké dopravy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12.října 2019 - budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce.  
-  "
-
-#- date: 2019-08-07
-#  summary: "Ve 12:30 obdržen první e-mail 'se zuřivou láskou' od pana E.G. ;)"
+  title: "Vznik sekce Studie a tři nové infografiky"
+  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy – dataset z Eurostatu umožňuje započítání letecké dopravy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12. října 2019: budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce."
 
 - date: 2019-08-05
-  summary: "Rozhovor v rádiu Wave &ndash; Ondráš přibyla a Marek Lahoda představují projekt v [rozhovoru pro rádio Wave](https://wave.rozhlas.cz/projekt-fakta-o-klimatu-v-mediich-maji-popiraci-klimatickych-zmen-vetsi-prostor-8033240): _'...My bychom chtěli nejdřív pokrýt něco, co by se dalo považovat za základní znalosti. Grafy, které bychom chtěli publikovat v tomto roce, by měly pokrýt něco ‚jako maturitu z klimatických změn‘. To znamená, chceme, aby lidi věděli, že se Česká republika oteplila o dva stupně od roku 1960, zhruba jaké jsou emise v Česku a ve světě a proč je vůbec důležité to řešit. Ono se zdá, že změna o jeden a půl stupně Celsia je malá, ale je potřeba vysvětlit, co to znamená z hlediska bodů zlomu, ke kterým se blížíme, a z hlediska celého klimatického systému planety...'_
-  "
+  summary: "Rozhovor v rádiu Wave – Ondráš Přibyla a Marek Lahoda představují projekt v [rozhovoru pro rádio Wave](https://wave.rozhlas.cz/projekt-fakta-o-klimatu-v-mediich-maji-popiraci-klimatickych-zmen-vetsi-prostor-8033240): _'My bychom chtěli nejdřív pokrýt něco, co by se dalo považovat za základní znalosti. Grafy, které bychom chtěli publikovat v tomto roce, by měly pokrýt něco ‚jako maturitu z klimatických změn‘. To znamená, chceme, aby lidi věděli, že se Česká republika oteplila o dva stupně od roku 1960, zhruba jaké jsou emise v Česku a ve světě a proč je vůbec důležité to řešit. Ono se zdá, že změna o jeden a půl stupně Celsia je malá, ale je potřeba vysvětlit, co to znamená z hlediska bodů zlomu, ke kterým se blížíme, a z hlediska celého klimatického systému planety...'_"
 
 - date: 2019-07-25
-  summary: "První e-mailové dotazy od veřejnosti (s oceněním práce a mj. s žádostí o rozšíření infografik o rozptyl teplot). Za 48 hodin od zveřejnění cca 2000 návštěvníků webu.
-  "
+  summary: "První e-mailové dotazy od veřejnosti (s oceněním práce a mj. s žádostí o rozšíření infografik o rozptyl teplot). Za 48 hodin od zveřejnění cca 2000 návštěvníků webu."
 
 - date: 2019-07-23
   title: "faktaoklimatu.cz online!"
-  summary: "Zveřejněna první verze webu obsahující základní set infografik: 3&times; [Vývoj teplot a koncentrací skleníkových plynů](/#sekce/teploty), 3&times; [Emise skleníkových plynů](/#sekce/emise) a úvodní slovo.
-  "
+  summary: "Zveřejněna první verze webu obsahující základní set infografik: 3&times; [Vývoj teplot a koncentrací skleníkových plynů](/#/sekce/teploty), 3&times; [Emise skleníkových plynů](/#/sekce/emise) a úvodní slovo."
 
 - date: 2019-06-26
-  summary: "Třetí klimatický hackathon - pokračující přípravy na zveřejnění webu, sepisování a ladění textů, rozšiřování infografik, vznikla první verze našeho [mission statement](/#creators), založen e-mail [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz).
-  "
+  summary: "Třetí klimatický hackathon – pokračující přípravy na zveřejnění webu, sepisování a ladění textů, rozšiřování infografik, založen e-mail [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz)."
 
 - date: 2019-06-19
-  summary: "Druhý klimatický hackathon - práce na infografikách, strukturalizace datasetů, přípravy na zveřejnění webu, zakoupena doména _faktaoklimatu.cz_.
-  "
+  summary: "Druhý klimatický hackathon – práce na infografikách, strukturalizace datasetů, přípravy na zveřejnění webu, zakoupena doména _faktaoklimatu.cz_."
 
 - date: 2019-05-31
   title: "První klimatický hackathon"
-  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <a href=\"/slovnik#hackathon\" class=\"glossary-item\">hackathon<i class=\"fas fa-book\"></i></a> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ - jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu).
-  "
+  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <a href=\"/slovnik#hackathon\" class=\"glossary-item\">hackathon <i class=\"fas fa-book\"></i></a> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ – jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu)."
 
 - date: 2019-05-03
   title: "První pouliční akademie v Brně"
-  summary: "Ondráš Přibyla organizuje první klimatickou pouliční akademii v rámci studentské klimatické stávky [Fridays For Future](http://www.fridaysforfuture.cz/). Celkem tři infografiky, zatím ručně malované. Pouliční akademie = banery s infografikou, u kterých jsou kompetentní osoby poskytující výklad a doplňující informace a zodpovídající dotazy z publika, celkem cca 3 &times; 7 minut.
-  "
+  summary: "Ondráš Přibyla organizuje první klimatickou pouliční akademii v rámci studentské klimatické stávky [Fridays For Future](http://www.fridaysforfuture.cz/). Celkem tři infografiky, zatím ručně malované. Pouliční akademie = banery s infografikou, u kterých jsou kompetentní osoby poskytující výklad a doplňující informace a zodpovídající dotazy z publika, celkem cca 3×7 minut."

@@ -409,7 +409,7 @@ pre {
 }
 
 .news-item .date {
-    width: 5.5em;
+    width: 6em;
     vertical-align: top;
     padding-right: 1rem;
     margin-bottom: 0.2rem;
@@ -429,7 +429,7 @@ pre {
 
 @media screen and (min-width: 768px) {
     .news-item .summary {
-        width: calc(100% - 6.5em);
+        width: calc(100% - 7em);
     }
 }
 
