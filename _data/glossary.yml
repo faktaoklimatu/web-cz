@@ -31,7 +31,7 @@
 
 - id: mitigace
   name-short: "Mitigace"
-  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen CO<sub>2</sub>, ale i methanu,  <em>N<sub>2</sub>O</em> a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
+  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen <em>CO<sub>2</sub></em>, ale i metanu,  <em>N<sub>2</sub>O</em> a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
 
 - id: nasa
   name-short: "NASA"
