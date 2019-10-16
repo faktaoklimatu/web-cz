@@ -189,6 +189,16 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
+.btn-outline-primary {
+    color: #000080;
+    border-color: #000080;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1b1bff;
+    border-color: #1b1bff;
+}
+
 .btn-secondary {
     background-color: rgba(0,0,0,0);
     color: inherit;
@@ -244,6 +254,10 @@ ul:last-child {
     font-size: 1.5rem;
     padding-left: 19rem;
     margin-top: -3.5rem;
+}
+
+.intro .btn {
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 768px) {
