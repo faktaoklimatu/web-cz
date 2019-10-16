@@ -2,7 +2,7 @@
 layout:     study
 title:      "Charneyho zpráva"
 slug:       1979_charneyho-zprava
-weight:     1
+weight:     5
 tags:       [ studie, svet ]
 caption:    "V roce 1979 vědci popsali a vcelku přesně předpověděli klimatickou změnu. Jejich výsledky jsou stále platné."
 intro:      "V roce 1979 vědci publikovali zprávu o dopadech zvyšujících se koncentrací CO<sub>2</sub> v atmosféře. Výsledky této studie se ukázaly být přesné a byly od té doby mnohokrát potvrzeny mnohem přesnějšími metodami. Již tehdy vědci v úvodu psali o nebezpečí setrvačnosti klimatického systému"
