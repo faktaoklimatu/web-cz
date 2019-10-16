@@ -33,16 +33,31 @@ Klíčovou odpovědností dnešních politiků je vytvořit včas podmínky, je�
 
 Současná obrovská, zespodu jdoucí vlna mobilizace[^2] studentského klimatického hnutí (Fridays for Future a další hnutí) ukazuje, že mladí lidé situaci chápou. My jako vědci s nimi souhlasíme a podporujeme jejich požadavky na rychlou a zásadní změnu. Chápeme jako svou společenskou, morální i akademickou povinnost říci velmi jasně: pouze pokud bude lidstvo jednat rychle a rozhodně, dokážeme globální oteplování omezit a budeme schopni zastavit probíhající masové vymírání živočišných a rostlinných druhů, zachovat podmínky potřebné k produkci potravin a umožnit kvalitní život a prosperitu generace současné i těch budoucích. Právě toho chtějí mladí lidé svými protesty dosáhnout a zasluhují si náš respekt a plnou podporu.
 
+## Je možné se přidat k podpisu této výzvy?
+
+<div class="row justify-content-md-center">
+    <div class="col-12 col-sm-6 homepage-card">
+        <div class="card-body">
+            <h5>Český seznam</h5>
+            <p class="card-text" markdown="1">Pro zobrazení vašeho podpisu na této stránce, prosím pošlete email na adresu [scientistsforfuture@faktaoklimatu.cz](mailto:scientistsforfuture@faktaoklimatu.cz?subject=Podpis+české+výzvy+Scientists+for+Future&body=Dobrý+den,%0A%0Arád+bych+se+přidal+k+české+verzi+výzvy+Scientists+for+Future.%0A%0AMoje+plné+jméno+s+tituly:+TBA%0AInstituce:+TBA%0AWeb+instituce+s+mým+jménem:+TBA), který bude obsahovat vaše jméno včetně titulů, název instituce, na které působíte a webstránku, která ukazuje vaši příslušnost k dané organizaci. Email prosím pošlete z adresy, která odpovídá vaší instituci. Podpisy budeme aktualizovat jednou za týden.</p>
+            <a class="btn btn-primary btn-block" href="mailto:scientistsforfuture@faktaoklimatu.cz?subject=Podpis+české+výzvy+Scientists+for+Future&body=Dobrý+den,%0A%0Arád+bych+se+přidal+k+české+verzi+výzvy+Scientists+for+Future.%0A%0AMoje+plné+jméno+s+tituly:+TBA%0AInstituce:+TBA%0AWeb+instituce+s+mým+jménem:+TBA"><i class="fas fa-fw fa-map-marker-alt"></i> Podepsat českou verzi</a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 homepage-card">
+        <div class="card-body">
+            <h5>Mezinárodní seznam</h5>
+            <p class="card-text" markdown="1">Pro přidání vašeho podpisu na mezinárodní seznam **Scientists for Future** (který zde nezobrazujeme) vyplňte formulář na jejich stránkách.</p>
+            <a class="btn btn-primary btn-block" href="https://www.scientistsforfuture.org/international"><i class="fas fa-fw fa-globe"></i> Podepsat mezinárodní verzi</a>
+        </div>
+    </div>
+</div>
+<br/>
+
 ## Z Českých vědců se k této výzvě přidávají
 
 {% for item in site.data.science-czech-signers %}
 * {{ item.name }} (_{{ item.institution }}_)
 {% endfor %}
-
-## Jak se přidat k podpisu této výzvy?
-
-* Pro zobrazení vašeho podpisu na této stránce, prosím pošlete email na adresu scientistsforfuture@faktaoklimatu.cz, který bude obsahovat vaše jméno včetně titulů, název katedry nebo ústavu, na kterém působíte a URL webové stránky, skrz kterou můžeme ověřit, že jste skutečně pracovníkem dané instituce. (Většina pracovišť má na webu seznam zaměstnanců). Email prosím pošlete z adresy, která odpovídá vaší instituci. Podpisy budeme aktualizovat jednou za týden.
-* Pro přidání vašeho podpisu na mezinárodní seznam **Scientists for Future** (který nezobrazujeme zde) vyplňte formulář na:  [www.scientistsforfuture.org/international/](https://www.scientistsforfuture.org/international/)
 
 ---
 
