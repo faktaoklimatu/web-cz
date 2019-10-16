@@ -4,7 +4,7 @@ title:      "Obavy mladých protestujících jsou opodstatněné"
 slug:       2019_science-vyjadreni-vedcu
 weight:     1
 tags:       [ studie, svet ]
-caption:    "V časopise Science vyšel na jaře 2019 článek, v němž více než 3000 světových vědců a akademiků vyjádřilo podporu hnutím za záchranu klimatu. Uvádíme plné nění článku."
+caption:    "V časopise Science vyšel na jaře 2019 článek, v němž více než 3000 světových vědců a akademiků vyjádřilo podporu hnutím za záchranu klimatu. Uvádíme plné znění článku."
 intro:      "V časopise Science vyšel na jaře 2019 článek, v němž více než 3000 světových vědců a akademiků vyjádřilo podporu hnutím za záchranu klimatu. Samotný text článku je krátký, ale jeho příloha obsahuje 51 stran plných podpisů vědců z celého světa."
 summary:    |
     V textu článku vědci mimo jiné říkají:
@@ -35,11 +35,11 @@ Současná obrovská, zespodu jdoucí vlna mobilizace (2) studentského klimatic
 
 ## Reference a poznámky
 
-1. M. Warren, Nature 567, 291 (2019)
+1. M. Warren, "Thousands of scientists are backing the kids striking for climate change", Nature 567, str. 291–292 (2019)
 2. “Pictures from youth climate strikes around the world,” The New York Times (2019); [www.nytimes.com/2019/03/15/climate/climate-school-strikes.html](https://www.nytimes.com/2019/03/15/climate/climate-school-strikes.html)
 3. Please show support by signing the open letter at [www.scientistsforfuture.org/international/](https://www.scientistsforfuture.org/international/)
 4. United Nations Framework Convention on Climate Change, “Decision 1/CP.21: Adoption of the Paris Agreement,” (Paris, France, 2015); [https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf](https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf)
-5. IPCC, “Summary for policymakers: Global warming of 1.5 °C—An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty,” V. Masson-Delmotte et al., Eds. (IPCC, World Meteorological Organization, United Nations Environment Programme, Geneva, Switzerland, 2018); [www.ipcc.ch/report/sr15](https://www.ipcc.ch/report/sr15)
+5. IPCC, “Summary for policymakers: Global warming of 1.5 °C — An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty,” V. Masson-Delmotte et al., Eds. (IPCC, World Meteorological Organization, United Nations Environment Programme, Geneva, Switzerland, 2018); [www.ipcc.ch/report/sr15](https://www.ipcc.ch/report/sr15)
 6. C. Kolstad et al., in Climate Change 2014: Mitigation of Climate Change: Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, O. Edenhofer et al., Eds. (Cambridge Univ. Press, Cambridge, UK, 2014).
 7. Fridays for Future [www.fridaysforfuture.org](https://www.fridaysforfuture.org).
 8. IPCC, Climate Change 2014: Synthesis Report: Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Core Writing Team, R. K. Pachauri, L. A. Meyer, Eds. (IPCC, Geneva, Switzerland, 2014)
