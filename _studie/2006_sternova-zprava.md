@@ -13,6 +13,7 @@ study-year:         2006
 study-isbn:          "9780521700801"
 study-url:          "https://www.cambridge.org/us/academic/subjects/earth-and-environmental-science/climatology-and-climate-change/economics-climate-change-stern-review?format=PB&isbn=9780521700801"
 study-pdf:          "https://web.archive.org/web/20081211182219/http://www.hm-treasury.gov.uk/stern_review_final_report.htm"
+metadata-extra: '<a href="http://amper.ped.muni.cz/gw/stern_review/stern_rev_cz32.pdf" id="study-link-3" class="btn btn-secondary">Shrnující zpráva v češtině (PDF)</a>'
 summary: |
     **Okamžitá a účinná opatření na zmírnění klimatických změn se z ekonomického pohledu jednoznačně vyplatí.** Z dlouhodobého pohledu se jedná o strategii umožňující budoucí hospodářský růst a při vhodném provedení nebude omezovat růstové ambice rozvojových, ale ani rozvinutých zemí. Odhadovaná cena dopadů klimatických změn, pokud emise radikálně nesnížíme, je v rozsahu 5–20 % každoročního celosvětového HDP (hrubého domácího produktu), oproti tomu náklady na snížení emisí skleníkových plynů jsou přibližně 1 % HDP. Čím dříve potřebná opatření přijmeme, tím levnější bude jejich cena.
 ---
