@@ -1,4 +1,6 @@
-# prosím udržovat abecedně řazeno pro lepší orientaci při editacích
+# Pořadí položek v souboru odpovídá pořadí zobrazení na webu.
+
+# České zdroje
 
 - title: "Český hydrometeorologický ústav"
   tags: [ zdroje, česky, Česká republika, teploty ]
@@ -14,12 +16,7 @@
   description-short: "Web Centra výzkumu globální změny AV ČR (CzechGlobe) prezentující data a modely klimatické změny v ČR"
   description-long: "Můžeme doporučit mj. studii *[Očekávané klimatické podmínky v České republice](https://www.klimatickazmena.cz/cs/o-nas/aktuality/ocekavane-klimaticke-podminky-v-ceske-republice-cast-i-zmena-zakladnich-parametru/)*."
 
-- title: "NASA Goddard institute for space studies"
-  tags: [ zdroje, anglicky, svět, teploty ]
-  url: "https://www.giss.nasa.gov/"
-  image: "nasa.png"
-  description-short: "NASA GISS je výzkumné centrum zabývající se fyzikou a modelováním atmosféry a modely klimatické změny"
-  description-long: "Na jejich stránkách můžete najít [repozitář dat z meteorologických stanic](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/), zpracovaná souhrnná data o teplotách na planetě ve formě [map, grafů a animací](https://data.giss.nasa.gov/gistemp/graphs_v4/), kompletní [dokumentaci k aktuálním verzím GCM modelů](https://data.giss.nasa.gov/gistemp/animations/) včetně kódů a samozřejmě jako u každé vědecké instituce [aktuální seznam publikací](https://pubs.giss.nasa.gov/)."
+# Anglické zdroje
 
 - title: "Warningstripes.com"
   tags: [ anglicky, svět, teploty, předpovědi ]
@@ -27,3 +24,66 @@
   image: "warningstripes.png"
   description-short: "Weblog s vizualizací minulých a budoucích scénářů z pohledu teplot"
   description-long: "Monotematické a přehledné stránky barevně ukazující očekávaný vývoj teplot v závislosti na emisních scénářích <a href=\"/slovnik#rcp\" class=\"glossary-item\">RCP <i class=\"fas fa-book\"></i></a>."
+
+- title: "Climate action tracker"
+  tags: [ anglicky, svět ]
+  url: "https://climateactiontracker.org"
+  image: "climate-action-tracker.png"
+  description-short: "Nezávislá vědecká analýza, která pravidelně sleduje vládní klimatická opatření v kontextu Pařížské smlouvy už od roku 2009."
+  description-long: "Web také obsahuje [odhadované teploty v roce 2100](https://climateactiontracker.org/global/cat-thermometer/) v závislosti na přijatých opatřeních, [souhrnná data o emisích zemí EU](https://climateactiontracker.org/countries/eu/) a mnoho dalšího."
+
+- title: "NASA Earth Observatory"
+  tags: [ anglicky, svět ]
+  url: "https://earthobservatory.nasa.gov/"
+  image: "earth-observatory.png"
+  description-short: "The Earth Observatory je součást NASA Goddard Space Flight Center."
+  description-long: "Web obsahuje satelitní fotografie, [články](https://earthobservatory.nasa.gov/world-of-change) o současném stavu různých míst na planetě, data a jejich výklady. Za pozornost stojí přehledné vysvětlení [světové teplotní anomálie](https://earthobservatory.nasa.gov/world-of-change/DecadalTemp)."
+
+- title: "The Intergovernmental Panel on Climate Change (IPCC)"
+  tags: [ anglicky, svět ]
+  url: "https://www.ipcc.ch/"
+  image: "ipcc.png"
+  description-short: "Mezivládní panel pro změny klimatu zřízen při Organizaci spojených národů."
+  description-long: "Stránky oficiálního orgánu OSN pro zprostředkování vědeckých studií o klimatu autoritám."
+
+- title: "NOAA Climate.gov"
+  tags: [ anglicky, svět ]
+  url: "https://www.climate.gov/"
+  image: "climate-gov.png"
+  description-short: "Stránky o klimatu spravované americkým Národním ústavem pro oceán a atmosféru."
+  description-long: "Jsou rozdělené na tři sekce věnované různým cílovým skupinám: [novinky](https://www.climate.gov/news-features) – popularizační vědecký magazín o klimatu určený pro veřejnost, [mapy a data](https://www.climate.gov/maps-data) určené zejména odborníkům jako podklady pro prezentaci jejich rozhodnutí a [učební materiály](https://www.climate.gov/teaching) vhodné pro formální i neformální vzdělávání o klimatu. Na webu lze mimo jiné najít [graf vývoje světových teplotních anomálií](https://www.climate.gov/maps-data/dataset/global-temperature-anomalies-graphing-tool) se stručným vysvětlením, nebo [datasety z ledovcových jader](https://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/ice-core)."
+
+- title: "NASA Goddard institute for space studies"
+  tags: [ zdroje, anglicky, svět, teploty ]
+  url: "https://www.giss.nasa.gov/"
+  image: "nasa.png"
+  description-short: "NASA GISS je výzkumné centrum zabývající se fyzikou a modelováním atmosféry a modely klimatické změny"
+  description-long: "Na jejich stránkách můžete najít [repozitář dat z meteorologických stanic](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/), zpracovaná souhrnná data o teplotách na planetě ve formě [map, grafů a animací](https://data.giss.nasa.gov/gistemp/graphs_v4/), kompletní [dokumentaci k aktuálním verzím GCM modelů](https://data.giss.nasa.gov/gistemp/animations/) včetně kódů a samozřejmě jako u každé vědecké instituce [aktuální seznam publikací](https://pubs.giss.nasa.gov/)."
+
+- title: "Skeptical Science"
+  tags: [ anglicky, svět ]
+  url: "https://skepticalscience.com"
+  image: "skeptical-science.jpg"
+  description-short: "Stránky o klimatických změnách z pohledu skeptického empirismu."
+  description-long: "Stránky mimo jiné obsahují [oblíbené mýty](https://skepticalscience.com/argument.php) a jejich vědecká vyvrácení, [10 viditelných dopadů](https://skepticalscience.com/10-Indicators-of-a-Human-Fingerprint-on-Climate-Change.html) lidského jednání na klima, [indikátory](https://skepticalscience.com/graphics.php?g=8), že oteplování je reálné a [názorná grafická znázornění](https://skepticalscience.com/graphics.php) mnoha jevů."
+
+- title: "Carbon Atlas"
+  tags: [ anglicky, svět ]
+  url: "http://www.globalcarbonatlas.org"
+  image: "carbon-atlas.png"
+  description-short: "Stránky vědeckého programu, který má za cíl poskytnutí kompletního obrázku uhlíkového cyklu na naší planetě."
+  description-long: "Kromě map a infografik znázorňující emise oxidu uhličitého a metanu  je pro širokou veřejnost na stránkách ilustrovaný [\"příběh uhlíku\"](http://www.globalcarbonatlas.org/en/outreach), který znázorňuje historii vlivu člověka na množstí uhlíku v atmosféře."
+
+- title: "Carbon Independent"
+  tags: [ anglicky, svět ]
+  url: "http://carbonindependent.org/"
+  image: "carbon-independent.png"
+  description-short: "Iniciativa zaměřená na snížení uhlíkové stopy a poskytování dat o klimatické změně."
+  description-long: "Web poskytuje kvalitní data o emisích z dopravy, energetiky apod. Dohledat lze emise z [autobusů](https://www.carbonindependent.org/20.html) a emise z [letecké dopravy](https://www.carbonindependent.org/22.html) nebo [kalkulačku uhlíkové stopy](https://www.carbonindependent.org/index.html)."
+
+- title: "CO2.earth"
+  tags: [ anglicky, svět ]
+  url: "https://www.co2.earth/"
+  image: "co2-earth.png"
+  description-short: "CO2.earth je občanská iniciativa, která provozuje web poskytující data o aktuálních koncentracích CO2 v atmosféře."
+  description-long: "Stránka obsahuje i odkazy na [historické datasety](https://www.co2.earth/historical-co2-datasets) (paleoklimatologie). Monitoruje např. [globální teplotu](https://www.co2.earth/global-warming-update), [akceleraci nárůstu CO2](https://www.co2.earth/co2-acceleration), [globální emise](https://www.co2.earth/co2-acceleration) či [pH v oceánech](https://www.co2.earth/carbon-in-the-ocean). Web udává i koncentrace CO2 z Ice core."
