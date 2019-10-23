@@ -6,7 +6,7 @@ redirect_from: "/emise-vybrane-staty"
 weight:     3
 tags:       [ emise, EU, CO2 ]
 caption:    "Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazeny podle sektorů."
-data-our:   "https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1Oi6MiPxSKRN2vlssITAqsVwjsalQazCyymNdHHc-iYg/edit#gid=979818322"
 data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23" ] ]
 ---
 
