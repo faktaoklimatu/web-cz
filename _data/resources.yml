@@ -51,7 +51,7 @@
   url: "https://www.climate.gov/"
   image: "climate-gov.png"
   description-short: "Stránky o klimatu spravované americkým Národním ústavem pro oceán a atmosféru."
-  description-long: "Jsou rozdělené na tři sekce věnované různým cílovým skupinám: [novinky](https://www.climate.gov/news-features) – popularizační vědecký magazín o klimatu určený pro veřejnost, [mapy a data](https://www.climate.gov/maps-data) určené zejména odborníkům jako podklady pro prezentaci jejich rozhodnutí a [učební materiály](https://www.climate.gov/teaching) vhodné pro formální i neformální vzdělávání o klimatu. Na webu lze mimo jiné najít [graf vývoje světových teplotních anomálií](https://www.climate.gov/maps-data/dataset/global-temperature-anomalies-graphing-tool) se stručným vysvětlením, nebo [datasety z ledovcových jader](https://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/ice-core)."
+  description-long: "Tři sekce věnované různým cílovým skupinám: [novinky](https://www.climate.gov/news-features) – popularizační vědecký magazín o klimatu určený pro veřejnost, [mapy a data](https://www.climate.gov/maps-data) určené zejména odborníkům a [učební materiály](https://www.climate.gov/teaching) vhodné pro formální i neformální vzdělávání o klimatu. Na webu lze mimo jiné najít [graf vývoje světových teplotních anomálií](https://www.climate.gov/maps-data/dataset/global-temperature-anomalies-graphing-tool) s vysvětlením, nebo [datasety z ledovcových jader](https://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/ice-core)."
 
 - title: "NASA Goddard institute for space studies"
   tags: [ zdroje, anglicky, svět, teploty ]
