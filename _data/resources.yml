@@ -71,8 +71,8 @@
   tags: [ anglicky, svět ]
   url: "http://www.globalcarbonatlas.org"
   image: "carbon-atlas.png"
-  description-short: "Stránky vědeckého programu, který má za cíl poskytnutí kompletního obrázku uhlíkového cyklu na naší planetě."
-  description-long: "Kromě map a infografik znázorňující emise oxidu uhličitého a metanu  je pro širokou veřejnost na stránkách ilustrovaný [\"příběh uhlíku\"](http://www.globalcarbonatlas.org/en/outreach), který znázorňuje historii vlivu člověka na množstí uhlíku v atmosféře."
+  description-short: "Vědecký program poskytující data o emisích CO<sub>2</sub> a methanu, včetně zdrojů z přírodních procesů."
+  description-long: "Mapy, interaktivní infografiky a přehledné odkazy na původní zdroje. Ilustrovaný [\"příběh uhlíku\"](http://www.globalcarbonatlas.org/en/outreach), který znázorňuje historii vlivu člověka na množství uhlíku v atmosféře."
 
 - title: "Carbon Independent"
   tags: [ anglicky, svět ]
