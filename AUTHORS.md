@@ -20,6 +20,7 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Lenka Knapová
 * František "Franta" Kotas
 * Dominika Krejčí
+* Martin "Set" Křivánek
 * Henrich Lauko
 * Jakub Novák
 * Petr Novotný
