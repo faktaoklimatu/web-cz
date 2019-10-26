@@ -20,6 +20,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
   * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub>eq
   * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub>eq
 * Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 131,3 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 4. největším emitentem EU__ a má 2x vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
+* Infografika [Emise skleníkových plynů světa](/infografiky/emise-svet) ukazuje stejné údaje pro jednotlivé světové regiony.
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
