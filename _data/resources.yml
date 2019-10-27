@@ -29,8 +29,8 @@
   tags: [ anglicky, svět ]
   url: "https://climateactiontracker.org"
   image: "climate-action-tracker.png"
-  description-short: "Nezávislá vědecká analýza, která pravidelně sleduje vládní klimatická opatření v kontextu [Pařížské dohody](https://cs.wikipedia.org/wiki/Pa%C5%99%C3%AD%C5%BEsk%C3%A1_dohoda) už od roku 2009."
-  description-long: "Web mj. obsahuje [odhadované teploty v roce 2100](https://climateactiontracker.org/global/cat-thermometer/) v závislosti na přijatých opatřeních, [souhrnná data o emisích zemí EU](https://climateactiontracker.org/countries/eu/) a mnoho dalšího."
+  description-short: "Nezávislá vědecká analýza, která pravidelně sleduje vládní klimatická opatření v kontextu Pařížské dohody už od roku 2009."
+  description-long: "Web mj. obsahuje [odhadované teploty v roce 2100](https://climateactiontracker.org/global/cat-thermometer/) v závislosti na přijatých opatřeních, [souhrnná data o emisích zemí EU](https://climateactiontracker.org/countries/eu/) a mnoho dalšího. Základní informace k Pařížské dohodě najdete třeba na [české wikipedii](https://cs.wikipedia.org/wiki/Pa%C5%99%C3%AD%C5%BEsk%C3%A1_dohoda)."
 
 - title: "NASA Earth Observatory"
   tags: [ anglicky, svět ]

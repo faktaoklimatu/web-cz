@@ -23,7 +23,7 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
             </div>
             <div class="col-12 col-sm-9 col-lg-10">   
                 <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-                <p class="lead">{{ item.description-short | markdownify }}</p> <!-- FIXME - nefunguje .lead CSS -->
+                <p class="lead">{{ item.description-short }}</p>
                 {{ item.description-long | markdownify }}
             </div>
         </div>
@@ -43,7 +43,7 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
             </div>
             <div class="col-12 col-sm-9 col-lg-10">
                 <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-                <p class="lead">{{ item.description-short | markdownify }}</p> <!-- FIXME - nefunguje .lead CSS -->
+                <p class="lead">{{ item.description-short }}</p>
                 {{ item.description-long | markdownify }}
             </div>
         </div>
