@@ -10,7 +10,7 @@ end
 
 def replace(content)
   content.gsub!(/ ([ai]|[kosuvz]) /i, ' \1&nbsp;')
-  content.gsub!(/([0-9]) (000)/, '\1&thinsp;\2')
+  content.gsub!(/([0-9]) ([0-9]{3})/, '\1&thinsp;\2')
   content.gsub!(/([0-9]) (%)/, '\1&thinsp;\2')
   content.gsub!(/([0-9]) (°C|ppm|kg|mil\.|tCO)/, '\1&nbsp;\2')
   content.gsub!(/([0-9]) (W|Wh|kW|MW|GW|kWh|MWh|GWh)/, '\1&nbsp;\2')
