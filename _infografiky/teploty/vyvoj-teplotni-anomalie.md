@@ -20,7 +20,7 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 * Svět se oteplil o cca 1 °C. Zatím největší teplotní anomálie (TA) nastala v roce 2016 (roční průměrná teplotní anomálie byla +1,01 °C, přičemž v lednu 2016 dosáhl měsíční průměr TA 1,37 °C).
 * Dvě třetiny oteplení nastaly po roce 1975. Trend oteplování se pohybuje mezi 0,15&ndash;0,20 °C za dekádu.
 * Lokální teploty se mění &ndash; částečně v předvídatelných cyklech den&ndash;noc a léto&ndash;zima, částečně nepravidelnými atmosférickými jevy. Ale globální teplota je určena tím, kolik energie přijme Země ve formě záření od Slunce a kolik jej vyzáří do vesmíru. Tato množství se v průběhu času mění jen málo. Množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry &ndash; na koncentracích skleníkových plynů.
-* Oteplení planety o 1 °C je velmi významné, protože i k tak “malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo ochlazení o 5 °C k době ledové a zalednění velké části Evropy a Severní Ameriky.
+* Oteplení planety o 1 °C je velmi významné, protože i k tak "malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo ochlazení o 5 °C k době ledové a zalednění velké části Evropy a Severní Ameriky.
 
 ## Metoda výpočtu teplotní anomálie
 
