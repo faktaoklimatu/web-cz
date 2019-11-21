@@ -8,7 +8,7 @@ tags:       [ teploty, CO2, svet ]
 caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800 000 let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
 data-our:   "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
-            , [ "Scripps", "http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
+            , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
             , [ "Scripps CO<sub>2</sub> program", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
 ---
 
@@ -25,7 +25,7 @@ data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarcti
 
 * Vzorky ledu z hloubkových ledovcových vrtů (až 3 800 m) obsahují velmi starý led (až 800 000 let). Fyzikální vlastnosti tohoto ledu vypovídají o podmínkách v dobách, kdy led zamrzl. Z množství isotopů kyslíku a vodíku lze určit tehdejší průměrnou teplotu planety, z bublinek zachycených v ledu lze určit složení tehdejšího vzduchu.
 * Starší data (0–800 000 let před současností) pocházejí z projektu EPICA (European Project for Ice Coring in Antartica), konkrétně z vrtů "Dome C", které sahají do hloubky 3 190 m a odpovídající stáří ledu je 798 000 let ([data EPICA](ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls)).
-* Mladší data (0-2 000 let před současností) jsou složením současných měření na Mauna Loa, Hawai a měření z ledovcových vrtů na Jižním pólu ([data Scripps](http://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products)).
+* Mladší data (0-2 000 let před současností) jsou složením současných měření na Mauna Loa, Hawai a měření z ledovcových vrtů na Jižním pólu ([data Scripps](https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products)).
 * Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa, Hawai, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/).
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
