@@ -18,8 +18,10 @@ local: web
 web: $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
 check: web
-	bundle exec jekyll build
-	bundle exec htmlproofer --assume-extension --check_favicon --check_html --check_img_http --url_ignore "/$(REPO_URL)/,/skepticalscience.com/" ./_site
+	@echo "Building the website using Jekyll ..."
+	@bundle exec jekyll build
+	@echo "Running tests on the generated sites using html-proofer ..."
+	@ruby utils/test.rb
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
