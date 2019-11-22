@@ -28,6 +28,7 @@ collections:
         permalink: /:collection/:title
 sass:
     sass_dir: assets/css
+cache_dir: .cache
 
 cdn:
     # See https://www.srihash.org for info on how to generate the hashes
