@@ -17,7 +17,7 @@ study-year:         2019
 study-doi:          ""
 study-url:          "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019"
 study-pdf:          ""
-metadata-extra: '<a href="https://science.sciencemag.org/content/sci/suppl/2019/04/10/364.6436.139-b.DC1/aax3807-Hagedorn-SM.pdf" id="study-link-3" class="btn btn-secondary">Příloha s podpisy (PDF)</a>'
+
 ---
 ## 
 
