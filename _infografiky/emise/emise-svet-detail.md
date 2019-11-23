@@ -17,7 +17,20 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 * V pravé části jsou roční emise přepočtené na jednoho obyvatele daného regionu, vyjádřeno v tunách CO<sub>2</sub>eq. Levá část tedy umožňuje porovnání absolutních emisí regionů, oproti tomu pravá část ukazuje, jak k celosvětovým emisím přispívá průměrný obyvatel daného regionu.
 * Infografika [Emise skleníkových plynů EU](/infografiky/emise-eu) znázorňuje stejné údaje pro jednotlivé státy Evropské unie včetně České republiky.
 
-## Zajímavosti a komentáře ke grafu
+## Doplňující informace k skupinám států
+
+* __Obecná kritéria pro zobrazení států__:
+* __Asie A__: (*Brunej, Malajsie, Mongolsko, Singapur*). Státy v této skupině mají emise vyšší než 9 tCO<sub>2</sub>eq na osobu, drtivá většina celkových emisí z těchto států připadá na Malajsii, která má v této skupině zdaleka největší populaci. 
+* __Asie B__: (*Afghánistán, Bangladéš, Pákistán, Filipíny, Vietnam* a další země Asie a ostrovní státy v Tichém Oceánu). Asijské a tichomořské státy s emisemi na obyvatele nižšími než 6 tCO<sub>2</sub>eq na osobu, přičemž většina států této skupiny má emise na osobu nižší než 2 tCO<sub>2</sub>eq. Nejvyšší celkové emise z této skupiny má Pákistán.
+* __Blízký východ A__: (*Spojené arabské emiráty, Bahrajn, Kuvajt, Omán, Katar*) Ropné státy Blízkého východu s poměrně malou populací. Všechny státy této skupiny mají emise na obyvatele vyšší než 19 tCO<sub>2</sub>eq. 
+* __Blízký východ B__: (*Izrael, Jordánsko, Libanon, Sýrie, Jemen*) Státy blízkého východu, které nejsou významnými vývozci ropy. Emise na osobu mají nižší než 5 tCO<sub>2</sub>eq, kromě Izraele, který má 10 tCO<sub>2</sub>eq na osobu.  
+* __Evropa OECD__: (Rozvinuté Evropské země: *Rakousko, Belgie, Dánsko, Estonsko, Finsko, Řecko, Maďarsko, Island, Irsko, Lotyšsko, Litva, Lucembursko,Nizozemsko, Norsko, Portugalsko, Slovensko, Slovinsko, Švédsko, Švýcarsko*). Menší rozvinuté evropské státy s emisemi typicky mezi 8 a 15 tCO<sub>2</sub>eq na osobu.   
+* __Evropa a Eurásie mimo OECD__: (*Albánie, Bělorusko, Bulharsko, Rumunsko, Tádžikistán, Uzbekistán* a další malé státy Evropy a Eurásie) Méně rozvinuté Evropské státy s emisemi mezi 2 a 10 tCO<sub>2</sub>eq na osobu. 
+* __Afrika__: (Africké státy mimo Lybii a Jihoafrickou Republiku) Typické emise na osobu jsou 1 až 4 tCO<sub>2</sub>eq. 
+* __Jižní Amerika__: (Státy Jižní a střední Ameriky mimo Brazílii) Typické emise na osobu jsou 2 až 6 tCO<sub>2</sub>eq, některé rozvinutější státy jako např. Argentina mají emise 8 až 10 tCO<sub>2</sub>eq na osobu.  
+
+
+## Komentáře ke grafu
 
 * Česká republika produkuje 0,14 gigatun CO<sub>2</sub>eq ročně, to odpovídá 0,3 % světových emisí při 0,15 % globální populace. Pokud by každý obyvatel země produkoval tolik emisí jako průměrný Čech, globální emise by vzrostly na 92 gigatun CO<sub>2</sub>eq ročně, tedy na dvojnásobek současných emisí.
 * Asie produkuje více než polovinu globálních emisí, zároveň však představuje 59&thinsp;% globální populace. Pokud by každý obyvatel planety produkoval stejně emisí jako průměrný asiat, celkové emise by poklesly na 41 gigatun CO<sub>2</sub>eq ročně.
