@@ -1,0 +1,43 @@
+---
+layout:     infographic
+title:      "Proč je oteplení o více než 1,5 °C problém? [1/3]"
+slug:       "porovnani-opatreni-IMF"
+redirect_from: "/porovnani-opatreni-IMF"
+weight:     1
+tags:       [ opatreni ]
+caption:    ""
+data-our:   ""
+data-orig:	[ [ "IPCC SR15 kapitola 3", "https://www.ipcc.ch/sr15/chapter/chapter-3" ] ]
+---
+
+## Opatření ke zmírnění klimatické změny
+
+Mezinárodní měnový fond v roce 2019 publikoval studii, ve které hodnotí čtyři různé nástroje, pomocí nichž vlády mohou snižovat emise skleníkových plynů, a tak přispívat ke zmírnění klimatické změny. Infografika porovnává tyto nástroje v sedmi vybraných kritériích a ukazuje, že nejefektivnější jsou opatření zpoplatňující uhlíkové emise - uhlíková daň, následovaná systémy pro obchodování s emisními povolenkami. 
+
+## Popis jednotlivých nástrojů
+
+* __Uhlíková daň:__ daňové zatížení producentů fosilních paliv podle celkového obsahu uhlíku.
+* __Obchod s emisními povolenkami:__ firmy mohou vypouštět skleníkové plyny, pouze pokud mají povolení v odpovídající výši emisí. Celkové množství emisních povolenek je stanoveno vládou, firmy s nimi mohou volně obchodovat.
+* __Poplatky a příspěvky:__ produkty a aktivity s nadprůměrnými emisemi jsou zatíženy poplatkem, produkty a aktivity s podprůměrnými emisemi obdrží příspěvek. Opatření se doporučuje zavádět jako příjmově neutrální, tzn. příspěvky jsou vypláceny z vybraných poplatků.
+* __Regulace:__ například standardy pro emise motorových vozidel a pro účinnost elektrických spotřebičů nebo stanovený minimální podíl elektřiny z obnovitelných zdrojů.
+
+## Popis kritérií
+* __Rozsah opatření:__ jaké množství aktivit a produktů přispívajících k emisím skleníkových plynů bude opatřením ovlivněno. Širší rozsah snižuje emise účinněji.
+* __Tržní mechanismus:__ tržní opatření převádějí informaci o emisích skleníkových plynů do ceny. Z ekonomického pohledu jsou ceny klíčovým mechanismem zprostředkujícím informace v ekonomii. Pokud spotřebitelé mají o něco zájem, pak vyšší poptávka vede k vyšší ceně, vyšší cena k vyšším ziskům výrobců a dodavatelů a následně ke vstupu nových firem do odvětví. Podobně vyšší cena na straně nabídky vede k nižšímu zájmu zákazníků. Pokud bude cena produktů a služeb odrážet produkci skleníkových plynů při jejich uvedení na trh, firmy i domácnosti budou přirozeně motivovány ke snížení emisí.
+* __Převedení opatření v praxi:__ do jaké míry se mohou firmy a lidé rozhodnout, jakým způsobem emise sníží. V případě regulací je možnost rozhodování zachována jen v rámci dílčích oblastí nebo jsou některé produkty a aktivity zcela zakázány (či naopak přikázány) vládou. Oproti tomu uhlíková daň pouze zvyšuje cenu aktivit vedoucích k emisím skleníkových plynů a firmy a lidé mají plnou svobodu, jakým způsobem budou šetřit - zdali sníží spotřebu energií, nebo přejdou na efektivnější technologie, apod. Větší svoboda pro rozhodování firem a jednotlivců znamená nalezení efektivnějšího způsobu snížení emisí.
+Přijatelnost dopadu na ceny energií: některá opatření mohou vést k vyššímu nárůstu cen energií a v takovém případě lze očekávat silnější opozici proti zavedení daného opatření. Vhodnou implementací je možné negativní dopady na nízkopříjmové skupiny obyvatel kompenzovat.
+* __Předvídatelnost ceny:__ do jaké míry lze předvídat budoucí cenu energií (a případně dalších produktů ovlivněných opatřením). Stabilnější a předvídatelnější prostředí je lepší pro firmy i domácnosti.
+Příjem do rozpočtu: některá opatření přináší peníze do rozpočtu a vláda může využít takto vybranou částku ke snížení jiných daní, ke kompenzaci některých negativních dopadů opatření nebo k podpoře investic do čistších technologií.
+* __Administrativní zátěž:__ zdali jsou potřeba nové administrativní kapacity pro zavedení opatření.
+
+## Doplňující komentáře
+Široký rozsah, tržní mechanismus a možnost samostatného rozhodování firem a jednotlivců jsou klíčová kritéria pro efektivní snížení emisí skleníkových plynů. Regulace a standardy zpravidla vyloučí některé aktivity či produkty – například auta s příliš vysokými emisemi, avšak neovlivní míru využívání ostatních aut. Oproti tomu tržní mechanismy mohou vést také ke snížení míry využívání vozidel přispívajících k emisím skleníkových plynů.
+Konkrétní implementace je důležitá, vhodným nastavením parametrů opatření lze zpravidla kompenzovat některé nevýhody.
+Zavedení méně účinných opatření je výrazně lepší než nezavedení žádných opatření.
+Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
+
+## Další zdroje
+Studie
+Infografiky o uhlíkové dani
+Odkaz na IMF studii
+
