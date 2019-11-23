@@ -1,18 +1,18 @@
 ---
 layout:     infographic
-title:      "Proč je oteplení o více než 1,5 °C problém? [1/3]"
+title:      "Porovnání mitigačních opatření"
 slug:       "porovnani-opatreni-IMF"
 redirect_from: "/porovnani-opatreni-IMF"
 weight:     1
 tags:       [ opatreni ]
 caption:    ""
 data-our:   ""
-data-orig:	[ [ "IPCC SR15 kapitola 3", "https://www.ipcc.ch/sr15/chapter/chapter-3" ] ]
+data-orig:	[ [ "Zpráva MMF", "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019" ] ]
 ---
 
 ## Opatření ke zmírnění klimatické změny
 
-Mezinárodní měnový fond v roce 2019 publikoval studii, ve které hodnotí čtyři různé nástroje, pomocí nichž vlády mohou snižovat emise skleníkových plynů, a tak přispívat ke zmírnění klimatické změny. Infografika porovnává tyto nástroje v sedmi vybraných kritériích a ukazuje, že nejefektivnější jsou opatření zpoplatňující uhlíkové emise - uhlíková daň, následovaná systémy pro obchodování s emisními povolenkami. 
+Mezinárodní měnový fond v roce 2019 publikoval [studii](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019 ), ve které hodnotí čtyři různé nástroje, pomocí nichž vlády mohou snižovat emise skleníkových plynů, a tak přispívat ke zmírnění klimatické změny. Infografika porovnává tyto nástroje v sedmi vybraných kritériích a ukazuje, že nejefektivnější jsou opatření zpoplatňující uhlíkové emise - uhlíková daň, následovaná systémy pro obchodování s emisními povolenkami. 
 
 ## Popis jednotlivých nástrojů
 
@@ -31,10 +31,10 @@ Příjem do rozpočtu: některá opatření přináší peníze do rozpočtu a v
 * __Administrativní zátěž:__ zdali jsou potřeba nové administrativní kapacity pro zavedení opatření.
 
 ## Doplňující komentáře
-Široký rozsah, tržní mechanismus a možnost samostatného rozhodování firem a jednotlivců jsou klíčová kritéria pro efektivní snížení emisí skleníkových plynů. Regulace a standardy zpravidla vyloučí některé aktivity či produkty – například auta s příliš vysokými emisemi, avšak neovlivní míru využívání ostatních aut. Oproti tomu tržní mechanismy mohou vést také ke snížení míry využívání vozidel přispívajících k emisím skleníkových plynů.
-Konkrétní implementace je důležitá, vhodným nastavením parametrů opatření lze zpravidla kompenzovat některé nevýhody.
-Zavedení méně účinných opatření je výrazně lepší než nezavedení žádných opatření.
-Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
+* Široký rozsah, tržní mechanismus a možnost samostatného rozhodování firem a jednotlivců jsou klíčová kritéria pro efektivní snížení emisí skleníkových plynů. 
+* Regulace a standardy zpravidla vyloučí některé aktivity či produkty – například auta s příliš vysokými emisemi, avšak neovlivní míru využívání ostatních aut. Oproti tomu tržní mechanismy mohou vést také ke snížení míry využívání vozidel přispívajících k emisím skleníkových plynů.
+* Konkrétní implementace je důležitá, vhodným nastavením parametrů opatření lze zpravidla kompenzovat některé nevýhody. Zavedení méně účinných opatření je výrazně lepší než nezavedení žádných opatření.
+* Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
 
 ## Další zdroje
 Studie
