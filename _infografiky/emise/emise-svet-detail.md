@@ -1,8 +1,8 @@
 ---
 layout:     infographic
 title:      "Emise skleníkových plynů světa"
-slug:       "emise-svet"
-redirect_from: "/emise-svet"
+slug:       "emise-svet-detail"
+redirect_from: "/emise-svet-detail"
 weight:     1
 tags:       [ emise, svet, CO2 ]
 caption:    "Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele."
