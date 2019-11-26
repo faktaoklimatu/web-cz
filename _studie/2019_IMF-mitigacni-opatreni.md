@@ -1,83 +1,72 @@
 ---
 layout:     study
-title:      "Obavy mladých protestujících jsou opodstatněné"
+title:      "Jak zmírnit dopady klimatické změny"
 slug:       2019_IMF-mitigacni-opatreni
 weight:     1
 tags:       [ studie, svet, opatreni ]
-caption:    ""
-intro:      "Zpráva Mezinárodního měnového fondu vydaná v říjnu 2019 zdůrazňuje zásadní roli fiskálních nástrojů (tedy nástrojů založených na rozpočtových a daňových opatřeních) pro mitigaci klimatické změny."
+caption:    "Studie Mezinárodního měnového fondu ukazuje, proč uhlíková daň a emisní povolenky jsou efektivní opatření."
+intro:      "Zpráva Mezinárodního měnového fondu vydaná v říjnu 2019 zdůrazňuje zásadní roli fiskálních nástrojů pro mitigaci klimatické změny. Fiskální nástroje jsou opatření založená na daních a rozpočtových výdajích jako například daň z přidané hodnoty, daň z tabáku nebo pojištění v nezaměstnanosti. Pro zmírnění klimatické změny mohou vlády použít uhlíkovou daň, obchod s emisními povolenkami, regulace nebo systém poplatků a příspěvků."
 summary:    |
-    V textu článku vědci mimo jiné říkají:
-    * _\"Vyzýváme nyní své kolegy ze všech vědních disciplín po celém světě k podpoře mladých lidí žádajících účinnou ochranu klimatu. Prohlašujeme, že jejich obavy jsou opodstatněné a opírají se o dosud nejlepší a nejpřesnější vědecké poznatky. Dosavadní způsoby ochrany klimatu a biosféry jsou naprosto nedostačující.\"_
-    * _\"Chápeme jako svou společenskou, morální i akademickou povinnost říci velmi jasně: pouze pokud bude lidstvo jednat rychle a rozhodně, dokážeme globální oteplování omezit a budeme schopni zastavit probíhající masové vymírání živočišných a rostlinných druhů, zachovat podmínky potřebné k produkci potravin a umožnit kvalitní život a prosperitu generace současné i těch budoucích. Právě toho chtějí mladí lidé svými protesty dosáhnout a zasluhují si náš respekt a plnou podporu.\"_
-study-title:        "Concerns of young protesters are justified"
-study-author:       ""
-study-institution:  ""
+    * **Uhlíková daň uvalená na producenty fosilních paliv je nejefektivnějším opatřením** pro mitigaci klimatické změny, neboť ponechává na firmách a domácnostech volbu nejméně nákladného způsobu snížení spotřeby energií a emisí.
+    * Široká politická podpora je nezbytná pro přijetí potřebných opatření. Příjmy z uhlíkové daně mohou být využity **pro zmírnění dopadů na nízkopříjmové skupiny a nejvíce zasažené regiony, jako investice do čistších technologií nebo na podporu ekonomiky snížením daní z příjmu.**
+    * Globální průměrná cena za emise skleníkových plynů je $2/t CO2, avšak omezení globálního oteplení do 2 °C vyžaduje cenu $75/t CO2 v roce 2030. **Mezinárodní spolupráce zemí je klíčová, například v zavedení minimální ceny za emise skleníkových plynů.** Pro rozvíjející se země může být stanovena nižší minimální cena nebo mohou obdržet přímou finanční podporu.
+
+study-title:        "How to Mitigate Climate Change"
+study-author:       "FISCAL MONITOR"
+study-institution:  "International Monetary Fund"
 study-year:         2019
-study-doi:          ""
+study-isbn:         "978-1-51351-533-5"
 study-url:          "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019"
-study-pdf:          ""
+study-pdf:          "https://www.imf.org/~/media/Files/Publications/fiscal-monitor/2019/October/English/text.ashx?la=en"
 
 ---
-## 
-
-Jak zabránit klimatické změně
-
-
-
-## HLAVNÍ ZÁVĚRY
-Uhlíková daň uvalená na producenty fosilních paliv je nejefektivnějším opatřením pro mitigaci klimatické změny, neboť ponechává rozhodování na firmách a domácnostech, aby zvolily nejméně nákladný způsob snížení spotřeby energií a emisí.
-Široká politická podpora je nezbytná pro přijetí potřebných opatření. Příjmy z uhlíkové daně mohou být využity na zmírnění dopadů na nízkopříjmové skupiny a nejvíce zasažené regiony, pro investice do čistších technologií nebo na podporu ekonomiky snížením daní z příjmu.
-Globální průměrná cena za emise skleníkových plynů je $2 / t CO2, avšak omezení globálního oteplení do 2 °C vyžaduje cenu $75 / t CO2 v roce 2030. Mezinárodní spolupráce zemí je klíčová, například zavedením minimální ceny za emise skleníkových plynů. Pro rozvíjející se země může být stanovena nižší minimální cena nebo mohou obdržet přímou finanční podporu.
 
 ## SHRNUTÍ
-Globální teplota se do roku 2100 zvýší přibližně o 4 °C v porovnání s předindustriální érou, pokud nebudou přijata efektivní opatření pro mitigaci klimatické změny. Emise skleníkových plynů představují externalitu na národní i globální úrovni. Opatření na národní úrovni narovnají tržní prostředí a poskytnou firmám a domácnostem pobídky k úspoře energií či k přechodu na čistší technologie. Žádná země však nemůže problém klimatických změn vyřešit sama, mezinárodní spolupráce je nezbytná, aby všechny země přijaly potřebná opatření a nepřenášely svůj díl odpovědnosti na ostatní státy.
+Pokud nebudou přijata efektivní opatření pro mitigaci klimatické změny, globální teplota se do roku 2100 zvýší přibližně o 4 °C v porovnání s předindustriální érou. Emise skleníkových plynů představují {% include glossary.html id='externalita' %} na národní i globální úrovni - producenti skleníkových plynů a státy s vyššími emisemi způsobují ostatním dodatečné náklady v podobě klimatické změny, za které však nemusí platit. Opatření na národní úrovni přenáší náklady klimatické změny zpět na firmy vypouštějící skleníkové plyny, tím narovnávají tržní prostředí a poskytují firmám i domácnostem pobídky k úspoře energií či k přechodu na čistší technologie. Žádná země však nemůže problém klimatických změn vyřešit sama a mezinárodní spolupráce je nezbytná, aby všechny země přijaly potřebná opatření a nepřenášely svůj díl odpovědnosti na ostatní státy.
 
-## Fiskální opatření pro mitigaci
-Studie představuje čtyři základní fiskální opatření pro mitigaci klimatických změn a srovnává jejich dopady a efektivitu na základě různých hledisek.
+**Fiskální opatření pro mitigaci**
 
-Uhlíková daň - daňové zatížení producentů fosilních paliv podle obsahu celkového obsahu uhlíku.
-Systémy pro obchodování s emisními povoleními - firmy mohou emitovat skleníkové plyny, pouze pokud mají povolení v odpovídajícím výši emisí. Celkové množství emisních povolení je stanoveno vládou, firmy s nimi následně volně obchodují.
-“Feebates” - produkty a aktivity s nadprůměrnými emisemi jsou zatíženy poplatkem, oproti tomu produkty a aktivity s podprůměrnými emisemi obdrží příspěvek. Opatření je zpravidla příjmově neutrální.
-Regulace - například standardy pro emise motorových vozidel a pro účinnost elektrických spotřebičů nebo minimální zastoupení obnovitelných zdrojů v energetice.
+Studie představuje čtyři základní rozpočtová opatření pro {% include glossary.html id='mitigace' %} klimatických změn a porovnává účinnost na základě různých hledisek.
 
+* **Uhlíková daň** - daňové zatížení producentů fosilních paliv podle celkového obsahu uhlíku.
+* **Obchodování s emisními povolenkami** - firmy mohou emitovat skleníkové plyny, pouze pokud mají povolenky v odpovídající výši emisí. Celkové množství emisních povolenek je stanoveno vládou a firmy s nimi následně volně obchodují.
+* **Poplatky a příspěvky** - produkty a aktivity s nadprůměrnými emisemi jsou zatíženy poplatkem, oproti tomu produkty a aktivity s podprůměrnými emisemi obdrží příspěvek. Opatření je zpravidla příjmově neutrální.
+* **Regulace** - například standardy pro emise motorových vozidel a pro účinnost elektrických spotřebičů nebo minimální zastoupení obnovitelných zdrojů v energetice.
 
+Na základě [srovnání posuzovaných kritérií](/infografiky/porovnani-opatreni-IMF) je nejefektivnějším fiskálním opatřením uhlíková daň. Zatížením producentů fosilních paliv se opatření promítá do široké škály lidských činností, ve kterých motivuje k využívání čistších technologií a produktů. Například zvýšení cen pohonných hmot povede ke zvýhodnění lokálních producentů, dražší elektřina z uhlí motivuje k využívání šetrnějších spotřebičů a k přechodu na obnovitelné zdroje. Uhlíková daň je tržním nástrojem, neboť zahrnuje část celospolečenských nákladů způsobených producenty skleníkových plynů zpět do cen a ponechává rozhodování o způsobu snížení emisí na firmách a domácnostech. Pokud je definována budoucí výše uhlíkové daně, jsou ceny předvídatelné a poskytují stabilní prostředí pro firmy. Důsledkem uhlíkové daně může být znatelný nárůst cen energií a dalších produktů a služeb (např. paliv a následně dopravy), proto je vhodné použít část dodatečných příjmů pro zmírnění tohoto dopadu na nízkopříjmové skupiny a nejvíce postižené regiony. Implementace uhlíkové daně je také snadná z administrativního pohledu, lze využít existující infrastrukturu pro výběr daní.
 
+Systémy pro obchodování s emisními povolenkami jsou téměř srovnatelně účinné jako uhlíková daň, zejména pokud jsou doplněny o minimální a maximální cenu emisních povolenek. Umožňují cílit na konkrétní celkové množství emisí (neboť je určené počtem vydaných povolenek), avšak vyžadují navýšení administrativních kapacit pro implementaci a monitorování obchodního systému.
 
-* Systemy pro obchodování s emisními povoleními mohou být kombinovány s minimální a maximální cenou povolení, pak je budoucí cena určité míry předvídatelná.
+Regulační přístup nebo zavedení systému poplatků a příspěvků jsou v porovnání s cenovými mechanismy přibližně o třetinu méně efektivní. Přesto i tyto méně účinné nástroje jsou výrazně lepší než nepřijmout žádná opatření.
 
-Za základě srovnání posuzovaných kritérií je nejefektivnějším fiskálním opatřením uhlíková daň. Zatížením producentů fosilních paliv lze snadno zahrnout velice širokou škálu aktivit. Jedná se o tržní nástroj, který zahrnuje část externalit zpět do cen a ponechává rozhodování o způsobu snížení emisí na firmách a domácnostech. Pokud je definována budoucí výše uhlíkové daně, jsou ceny předvídatelné a poskytují stabilní prostředí pro firmy. Důsledkem uhlíkové daně může být znatelný nárůst cen energii, proto je vhodné použít část dodatečných příjmů pro zmírnění tohoto dopadu na nízkopříjmové skupiny a nejvíce postižené regiony. Implementace uhlíkové daně je také snadná z administrativního pohledu.
+**Mezinárodní spolupráce**
 
-Systémy pro obchodování s emisními povoleními jsou v zásadě srovnatelné s uhlíkovou daní, zejména pokud jsou doplněny o minimální a maximální cenu emisních povolení. Umožňují cílit na konkrétní celkové množství emisí, avšak vyžadují navýšení administrativních kapacit pro implementaci a monitorování obchodního systému.
+Přijetí mitigačních opatření vyžaduje koordinaci na globální úrovni, protože:
 
-Regulační přístup a “feebates” jsou v porovnání s cenovými mechanismy přibližně o třetinu méně efektivní, avšak i tato opatření jsou výrazně lepší než žádná nepřijatá opatření.
+* Jednotlivé země preferují nižší uhlíkovou daň na svém území pro zachování konkurenceschopnosti firem. Zároveň každá země má z navýšení vlastní uhlíkové daně pouze omezený přínos, neboť se jedná o globální jev.
+* Neexistuje jednotný a transparentní způsob měření mitigačních cílů jednotlivých zemí. Některé země usilují o nižší emise, jiné své cíle definují pomocí podílu čisté energie nebo emisní intenzitou ekonomiky (množství emisí potřebných k vyprodukování určitého HDP).
+* Větší potenciál ke snížení emisí je především ve velkých, rychle se rozvíjejících tržních ekonomikách, zpravidla založených na uhlí. 
 
-## Mezinárodní spolupráce
-Koordinace na globální úrovni je nutná pro překonání tří překážek:
+Globální spolupráce podpoří přijetí odpovědnosti za zmírnění klimatických změn všemi zeměmi a také může podpořit sjednocení mitigačních cílů a způsobů jejich měření. Z mezinárodního pohledu je velice efektivním opatřením zavedení jednotné minimální výše uhlíkové daně, případně doplněné o dodatečnou finanční či technologickou podporu pro rozvíjející se země.
 
-Jednotlivé země preferují nižší uhlíkovou daň pro zachování konkurenceschopnosti svých firem. Každá jednotlivá země z navýšení vlastní uhlíkové daně má pouze omezený přínos, neboť se jedná o globální jev.
-Neexistuje jednotný a transparentní způsob měření mitigačních cílů jednotlivých zemí.
-Větší potenciál ke snížení emisí je především ve velkých, rychle se rozvíjejících tržních ekonomikách, zpravidla založených na uhlí. 
+**Společenská přijatelnost mitigačních opatření**
 
-Nejefektivnějším opatřením je jednotná minimální výše uhlíkové daně, případně doplněná o dodatečnou finanční či technologickou podporu pro rozvíjející se země.
+Některé skupiny obyvatel a průmyslová odvětví mohou být mitigačními opatřeními zasažené více, proto mohou oponovat jejich přijetí. Zkušenost se zaváděním opatření poukazuje na několik důležitých předpokladů úspěšné implementace:
 
-Společenská přijatelnost mitigačních opatření
-Některé skupiny obyvatel a průmyslová odvětví mohou být mitigačními opatřeními zasažené více, proto mohou oponovat přijetí takových opatření. Zkušenost se zaváděním mitigačních opatření poukazuje na několik důležitých opatření pro úspěšnost implementace:
+* Jasná trajektorie zvyšování uhlíkové daně zakotvená v legislativě poskytuje srozumitelné a stabilní prostředí.
+* Konzultace se zapojenými skupinami a s veřejností, doplněná o komunikační kampaň založenou na faktech a případně vysvětlující určitá neporozumění či mylná očekávání.
+* Transparentní a prospěšné využití nových rozpočtových příjmů.
+* Cílená podpora domácností a regionů, které jsou nejvíce zasažené daným opatřením.
 
-Jasná trajektorie zvyšování uhlikových cen zakotvená v legislativě poskytuje srozumitelné a stabilní prostředí. 
-Konzultace se zapojenými skupinami a s veřejností, doplněná o komunikační kampaň založenou na faktech a případně vysvětlující určitá neporozumění či mylná očekávání.
-Transparentní a prospěšné využití nových příjmů.
-Cílená asistence pro více zasažené domácnosti, skupiny, firmy a regiony.
+Příjem z uhlíkové daně v zemích G20 je v roce 2030 odhadovaný na 1,5 % HDP. Ačkoli je možné tyto prostředky rozdělit zpět rovnoměrně mezi občany jako jednorázovou dividendu, jiná využití mohou dosáhnout vyšší ekonomické efektivity, a tak vést k nižší celkové ceně zmírnění klimatické změny. Například použití jedné čtvrtiny prostředků na podporu nízkopříjmových skupin a zbylou část využít ke snížení daně z příjmu by vedlo k podpoře hospodářské aktivity a k vyšší zaměstnanosti, tím by se odhadovaná cena mitigace snížila na $20/t CO<sub>2</sub> (oproti předpokládaným $75/t CO<sub>2</sub> při rozdělení příjmů v podobě univerzální dividendy a s uhlíkovou daní ve výši $50/t CO<sub>2</sub>).
 
-Příjem z uhlíkové daně v zemích G20 v roce 2030 je odhadovaný na 1,5 % HDP. Ačkoli je možné tyto prostředky rozdělit zpět rovnoměrně mezi občany jako jednorázovou dividendu, jiná využití mohou dosáhnout vyšší ekonomické efektivity, a tak vést k nižším cenám mitigačních opatření. Například použití jedné čtvrtiny prostředků na podporu nízkopříjmových skupin a zbylou část využít ke snížení příjmových daní na podporu ekonomiky by vedlo k odhadovaným nákladům mitigace $20 / t CO2, oproti odhadovaným nákladům $75 při rozdělení příjmů v podobě univerzální dividendy (za předpokládané uhlíkové dani $50 / t CO2).
+**Podpora investic do čistých technologií**
 
-Podpora investic do čistých technologií
-Investice do nízkouhlíkových technologií mohou být i při uhlíkové dani stále nízké kvůli tržním selháním a frikcím. Vlády zde mají prostor pro navýšení investic do výzkumu a vývoje a pro podporu rozšíření nových technologií, které mohou mít široký společenský přínos.
-Závěr
-Zpráva poukazuje na zásadní roli, kterou při prevenci klimatických změn hrají fiskální nástroje a ministři financí jednotlivých zemí. Vhodným nastavením daní a dalšími rozpočtovými opatřeními lze vytvořit mitigační strategii, která bude ekonomicky efektivní a společensky a politicky přijatelná. Je nezbytný koncepční přístup, plánování v dlouhodobém horizontu a brát v úvahu dopad strategie na různé skupiny. Zkušenosti se zavaděním opatření v jiných zemích nabízí mnoho inspirace a příkladů dobré praxe.
+Investice do nízkouhlíkových technologií mohou být i při uhlíkové dani stále nízké kvůli tržním selháním a setrvačnosti některých odvětví. Vlády zde mají prostor pro navýšení investic do výzkumu a vývoje a pro podporu rozšíření nových technologií, které mohou mít celospolečenský přínos.
 
+**Závěr**
+
+Vládní politika a fiskální nástroje mají zásadní roli při zmírňování klimatické změny na úrovni jednotlivých států. Ministři financí mohou vhodným nastavením daní a dalšími rozpočtovými opatřeními vytvořit mitigační strategii, která bude ekonomicky efektivní a společensky a politicky přijatelná. Je nezbytné k situaci přistupovat koncepčně, plánovat v dlouhodobém horizontu a zohlednit dopad strategie na různé skupiny. Koordinace na mezinárodní úrovni zvyšuje účinnost mitigačních opatření, umožňuje zachování konkurenceschopnosti jednotlivých ekonomik a přispívá k šíření příkladů dobré praxe.
 
 ## POZNÁMKY O ZPRACOVATELI
-Mezinárodní měnový fond je mezinárodní organizace, která si klade za cíl globální měnovou spolupráci, zajištování finanční stability, podporu mezinárodního obchodu a udržitelný ekonomický růst. Autorský tým z Mezinárodního měnového fondu studii při přípravě také konzultoval s dalšími výzkumníky ze Světové banky, z různých univerzit a dalších institucí.
-
-
+Mezinárodní měnový fond je mezinárodní organizace, která si klade za cíl globální měnovou spolupráci, zajišťování finanční stability, podporu mezinárodního obchodu a udržitelný ekonomický růst. Autorský tým z Mezinárodního měnového fondu studii při přípravě konzultoval s dalšími výzkumníky ze Světové banky, z různých univerzit a dalších institucí.
