@@ -5,14 +5,14 @@ slug:       "porovnani-opatreni-IMF"
 redirect_from: "/porovnani-opatreni-IMF"
 weight:     1
 tags:       [ opatreni ]
-caption:    ""
+caption:    "Čtyři mitigační opatření – uhlíková daň, obchod s emisními povolenkami, poplatky a příspěvky a regulace – jsou porovnány na základě sedmi kritérií. Zpráva Mezinárodního měnového fondu ukazuje, že nejúčinnějším opatřením jsou uhlíková daň a obchodování s emisními povolenkami."
 data-our:   ""
 data-orig:	[ [ "Zpráva MMF", "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019" ] ]
 ---
 
 ## Opatření ke zmírnění klimatické změny
 
-Mezinárodní měnový fond v roce 2019 publikoval [studii](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019 ), ve které hodnotí čtyři různé nástroje, pomocí nichž vlády mohou snižovat emise skleníkových plynů, a tak přispívat ke zmírnění klimatické změny. Infografika porovnává tyto nástroje v sedmi vybraných kritériích a ukazuje, že nejefektivnější jsou opatření zpoplatňující uhlíkové emise - uhlíková daň, následovaná systémy pro obchodování s emisními povolenkami. 
+Mezinárodní měnový fond v roce 2019 publikoval [studii](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019 ), ve které hodnotí čtyři různé nástroje, pomocí nichž vlády mohou snižovat emise skleníkových plynů, a tak přispívat ke zmírnění klimatické změny. Infografika porovnává tyto nástroje v sedmi vybraných kritériích a ukazuje, že nejefektivnější jsou opatření zpoplatňující uhlíkové emise – uhlíková daň, následovaná systémy pro obchodování s emisními povolenkami. 
 
 ## Popis jednotlivých nástrojů
 
@@ -37,7 +37,6 @@ Příjem do rozpočtu: některá opatření přináší peníze do rozpočtu a v
 * Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
 
 ## Další zdroje
-Studie
-Infografiky o uhlíkové dani
-Odkaz na IMF studii
+* [Shrnutí zprávy Jak zmírnit dopady klimatické změny](/studie/2019_IMF-mitigacni-opatreni)
+* [Originální studie Mezinárodního měnového fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019)
 
