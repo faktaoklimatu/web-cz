@@ -48,7 +48,12 @@
   name-long: "Representative Concentration Pathway"
   description: "<em>Reprezentativní směry vývoje koncentrací</em> jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář <em>RCP2.6</em> znamená 2,6 W/m<sup>2</sup>[<a href=\"https://en.wikipedia.org/wiki/Representative_Concentration_Pathway\">en.wikipedia</a>]"  
 
+  - id: phase-out
+  name-short: "Uhelný phase-out"
+  description: "Na výrobu elektrické energie vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
+
 - id: w
   name-short: "W a Wh (kW, MW&hellip; a kWh, MWh&hellip;)"
   name-long: "watt, watthodina a jejich násobky"
   description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektrické energie [<a href=\"https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice\">cs.wikipedia</a>]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W &ndash; pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok [<a href=\"https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=\">Český statistický úřad</a>]."
+
