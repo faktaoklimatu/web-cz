@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Vývoj koncentrace CO<sub>2</sub> v historii"
+title:      "Historický vývoj koncentrace CO<sub>2</sub>"
 slug:       "koncentrace-co2"
 redirect_from: "/koncentrace-co2"
 weight:     3
