@@ -1,8 +1,8 @@
 ---
 layout:     infographic
-title:      "Porovnání mitigačních opatření"
-slug:       "porovnani-opatreni-IMF"
-redirect_from: "/porovnani-opatreni-IMF"
+title:      "Srovnání mitigačních opatření"
+slug:       "mitigacni-opatreni"
+redirect_from: "/mitigacni-opatreni"
 weight:     1
 tags:       [ opatreni ]
 caption:    "Čtyři mitigační opatření – uhlíková daň, obchod s emisními povolenkami, poplatky a příspěvky a regulace – jsou porovnány na základě sedmi kritérií. Zpráva Mezinárodního měnového fondu ukazuje, že nejúčinnějším opatřením jsou uhlíková daň a obchodování s emisními povolenkami."
@@ -37,6 +37,6 @@ Příjem do rozpočtu: některá opatření přináší peníze do rozpočtu a v
 * Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
 
 ## Další zdroje
-* [Shrnutí zprávy Jak zmírnit dopady klimatické změny](/studie/2019_IMF-mitigacni-opatreni)
+* Shrnutí zprávy Mezinárodního měnového fondu [Jak zmírnit dopady klimatické změny](/studie/2019_IMF-mitigacni-opatreni)
 * [Originální studie Mezinárodního měnového fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019)
 
