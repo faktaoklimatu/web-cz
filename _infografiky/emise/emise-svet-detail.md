@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Emise skleníkových plynů světa"
+title:      "Světové emise skleníkových plynů"
 slug:       "emise-svet-detail"
 redirect_from: "/emise-svet-detail"
 weight:     1
@@ -19,9 +19,9 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 
 ## Doplňující informace k skupinám států
 
-* __Obecná kritéria pro zobrazení států__:
-* __Asie A__ (*Brunej, Malajsie, Mongolsko, Singapur*): státy v této skupině mají emise vyšší než 9 t CO<sub>2</sub>eq na osobu, drtivá většina celkových emisí z těchto států připadá na Malajsii, která má v této skupině zdaleka největší populaci. 
-* __Asie B__ (*Afghánistán, Bangladéš, Pákistán, Filipíny, Vietnam* a další země Asie a ostrovní státy v Tichém Oceánu): asijské a tichomořské státy s emisemi na obyvatele nižšími než 6 t CO<sub>2</sub>eq na osobu, přičemž většina států této skupiny má emise na osobu nižší než 2 t CO<sub>2</sub>eq. Nejvyšší celkové emise z této skupiny má Pákistán.
+* __Obecný popis zobrazených regionů__:
+* __Asie A__ (*Brunej, Malajsie, Mongolsko, Singapur*): státy v této skupině mají emise vyšší než 9 t CO<sub>2</sub>eq na osobu a drtivá většina celkových emisí z těchto států připadá na Malajsii, která má v této skupině zdaleka největší populaci. 
+* __Asie B__ (*Afghánistán, Bangladéš, Pákistán, Filipíny, Vietnam* a další země Asie a ostrovní státy v Tichém oceánu): asijské a tichomořské státy s emisemi na obyvatele nižšími než 6 t CO<sub>2</sub>eq na osobu, přičemž většina států této skupiny má emise na osobu nižší než 2 t CO<sub>2</sub>eq. Nejvyšší celkové emise z této skupiny má Pákistán.
 * __Blízký východ A__ (*Spojené arabské emiráty, Bahrajn, Kuvajt, Omán, Katar*): ropné státy Blízkého východu s poměrně malou populací. Všechny státy této skupiny mají emise na obyvatele vyšší než 19 t CO<sub>2</sub>eq. 
 * __Blízký východ B__ (*Izrael, Jordánsko, Libanon, Sýrie, Jemen*): státy Blízkého východu, které nejsou významnými vývozci ropy. Emise na osobu mají nižší než 5 t CO<sub>2</sub>eq kromě Izraele, který má 10 t CO<sub>2</sub>eq na osobu.  
 * __Evropa OECD__ (Rozvinuté evropské země: *Rakousko, Belgie, Dánsko, Estonsko, Finsko, Řecko, Maďarsko, Island, Irsko, Lotyšsko, Litva, Lucembursko,Nizozemsko, Norsko, Portugalsko, Slovensko, Slovinsko, Švédsko, Švýcarsko*): menší rozvinuté evropské státy s emisemi typicky mezi 8 a 15 t CO<sub>2</sub>eq na osobu.   
