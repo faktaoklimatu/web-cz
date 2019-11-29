@@ -1,10 +1,18 @@
+dist: bionic    # Ubuntu 18.04 LTS
 language: ruby
+
+# clone full git history for git-restore-mtime to work
+git:
+  depth: false
 
 before_install:
   - sudo apt update
   - sudo apt install -y inkscape pdf2svg
+  - git clone https://github.com/MestreLion/git-tools # Distro version is currently broken
 
-script: make check
+script: 
+  - ./git-tools/git-restore-mtime
+  - make check
 
 env:
   global:
@@ -14,6 +22,7 @@ cache:
   bundler: true               # Enable caching of bundler gem packages
   directories:
   - $TRAVIS_BUILD_DIR/.cache  # Enable caching link checks
+  - $TRAVIS_BUILD_DIR/assets  # Enable caching of generated infographics
 
 deploy:
   provider: pages
