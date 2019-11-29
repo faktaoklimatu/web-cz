@@ -13,7 +13,7 @@ env:
 cache:
 #  bundler # caching bundler gem packages will speed up build
   directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer # Enable caching link checks
+  - $TRAVIS_BUILD_DIR/.cache # Enable caching link checks
 
 deploy:
   provider: pages
