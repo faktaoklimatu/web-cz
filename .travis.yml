@@ -11,9 +11,9 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 cache:
-#  bundler # caching bundler gem packages will speed up build
+  bundler: true               # Enable caching of bundler gem packages
   directories:
-  - $TRAVIS_BUILD_DIR/.cache # Enable caching link checks
+  - $TRAVIS_BUILD_DIR/.cache  # Enable caching link checks
 
 deploy:
   provider: pages
