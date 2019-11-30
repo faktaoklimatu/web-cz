@@ -48,7 +48,7 @@
   name-long: "Representative Concentration Pathway"
   description: "<em>Reprezentativní směry vývoje koncentrací</em> jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář <em>RCP2.6</em> znamená 2,6 W/m<sup>2</sup>[<a href=\"https://en.wikipedia.org/wiki/Representative_Concentration_Pathway\">en.wikipedia</a>]"  
 
-  - id: phase-out
+- id: phase-out
   name-short: "Uhelný phase-out"
   description: "Na výrobu elektrické energie vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
 
