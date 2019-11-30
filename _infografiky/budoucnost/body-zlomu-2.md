@@ -20,7 +20,6 @@ data-orig:	[ [ "IPCC SR15 kapitola 3", "https://www.ipcc.ch/sr15/chapter/chapter
 * Jako zdroj pro části textů, které mají vysvětlující charakter (např. rozloha tajgy, velikost Grónského ledovce) a neobsahují tvrzení o bodech zlomu jsme použili anglickou Wikipedii. V češtině by se tyto obecné informace daly najít třeba v učebnicích – pro anglickou Wikipedii jsme se v tomto případě rozhodli proto, že je k dispozici online, jde o jednotný zdroj pro tento typ informací a ve většině případů je kvalitně odzdrojovaná.
 * __Tipping point a tipping element.__ V angličtině pojem  _tipping element_ znamená systém (kryosférický, klimatický, nebo ekosystém), který "se může zlomit" – tedy přejít do kvalitativně výrazně odlišného stavu. Pojem _tipping point_ pak označuje hranici, při které tento zlom pravděpodobně nastane (nebo matematicky přesněji interval parametru, zpravidla teploty). Pro účely této grafiky píšeme prostě o _bodech zlomu_ a vhodné české pojmenování necháváme na lingvistech.
 
-
 ## Další zdroje o bodech zlomu
 
-* V lispotadu 2019 uveřejnil časopis Nature článek o bodech zlomu a možnosti kaskádového spuštění. [Climate tipping points](https://www.nature.com/articles/d41586-019-03595-0?fbclid=IwAR1i_9wQU--GWf8AKcnym8rZawmrW3Q9rS_osx0NFjwOEe3xOJaZSXBlWyo)
+* V lispotadu 2019 uveřejnil časopis Nature článek o bodech zlomu a možnosti kaskádového spuštění: [Climate tipping points](https://www.nature.com/articles/d41586-019-03595-0?fbclid=IwAR1i_9wQU--GWf8AKcnym8rZawmrW3Q9rS_osx0NFjwOEe3xOJaZSXBlWyo).
