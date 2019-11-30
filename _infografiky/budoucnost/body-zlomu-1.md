@@ -22,4 +22,4 @@ data-orig:	[ [ "IPCC SR15 kapitola 3", "https://www.ipcc.ch/sr15/chapter/chapter
 
 ## Další zdroje o bodech zlomu
 
-* V lispotadu 2019 uveřejnil časopis Nature článek o bodech zlomu a možnosti kaskádového spuštění. [Climate tipping points](https://www.nature.com/articles/d41586-019-03595-0?fbclid=IwAR1i_9wQU--GWf8AKcnym8rZawmrW3Q9rS_osx0NFjwOEe3xOJaZSXBlWyo)
+* V lispotadu 2019 uveřejnil časopis Nature článek o bodech zlomu a možnosti kaskádového spuštění: [Climate tipping points](https://www.nature.com/articles/d41586-019-03595-0?fbclid=IwAR1i_9wQU--GWf8AKcnym8rZawmrW3Q9rS_osx0NFjwOEe3xOJaZSXBlWyo).
