@@ -108,23 +108,25 @@
         {{ content }}
       </div>
     </div>
+    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]" 
+    | where_exp:"item","item.slug != page.slug" | sort: 'weight' %}
+    {% if sorted_infographics.size > 0 %}
     <div class="section">
-        <div class="container">
-          <h2>Související infografiky</h2>
-          <p>Zaujala vás tato infografika? Zde je přehled souvisejících infografik:</p>
-          {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]" 
-                                        | where_exp:"item","item.slug != page.slug" | sort: 'weight' %}
-          <div class="row justify-content-md-left">
-            {% for infographics in sorted_infographics %}
-                <div class="col-sm-6 col-md-4 col-lg-3 homepage-card">
-                  <a href="{{ infographics.url }}">
-                    <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="img-fluid" />
-                  </a>
-                </div>
-            {% endfor %}
-          </div>
+      <div class="container">
+        <h2>Související infografiky</h2>
+        <p>Zaujala vás tato infografika? Zde je přehled souvisejících infografik:</p>
+        <div class="row justify-content-md-left">
+          {% for infographics in sorted_infographics %}
+            <div class="col-sm-6 col-md-4 col-lg-3 homepage-card">
+              <a href="{{ infographics.url }}">
+                <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="img-fluid" />
+              </a>
+            </div>
+          {% endfor %}
         </div>
       </div>
+    </div>
+    {% endif %}
   </main>
   {% include footer.html %}
   {% include scripts.html %}
