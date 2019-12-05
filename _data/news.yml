@@ -1,16 +1,14 @@
-- date: 2019-xx-xx
+- date: 2019-12-02
+  title: "Adaptační a mitigační opatření"
+  summary: "Nová sekce *Adaptační a mitigační opatření*, související infografika [Srovnání mitigačních opatření](/infografiky/mitigacni-opatreni-mmf) a doplněna studie Mezinárodního měnového fondu [Jak zmírnit dopady klimatické změny](studie/2019_mitigacni-opatreni-mmf)"
+
+- date: 2019-11-30
   title: "Elektřina v ČR: výroba, spotřeba a emise"
-  summary: "xxxxxxx"
+  summary: "Z dat energetického regulačního úřadu jsme zpracovali [grafiku](/infografiky/elektrina-cr) výroby a spotřeby elektrické energie v ČR a souvisejících emisí."
 
-- date: 2019-xx-xx
-  title: "Adaptační a mitigační opatření, rozšířen slovník pojmů"
-  summary: |
-    * Nová sekce [Adaptační a mitigační opatření](/sekce/opatreni) a související infografika [Srovnání mitigačních opatření](/infografiky/mitigacni-opatreni-mmf)
-    * rozšířen [Slovníku pojmů](/slovnik) o nová hesla
-
-- date: 2019-xx-xx
-  title: "Scénáře budoucího vývoje, rizika a dopady, proč je oteplení problém"
-  summary: "Nová sekce [Scénáře budoucího vývoje, rizika a dopady](/sekce/budoucnost) - zatím je to hlavně graficky zpracovaná rešerše článků o [bodech zlomu v ekosystémech], [bodech zlomu v kryosféře], a [bodech zlomu v atmosférických a oceánských prouděních]."
+- date: 2019-11-04
+  title: "Proč je oteplení o více než 1,5°C problém?"
+  summary: "Nová sekce *Scénáře budoucího vývoje, rizika a dopady* a v ní graficky zpracovaná rešerše článků o [bodech zlomu v ekosystémech](infografiky/body-zlomu-1), [bodech zlomu v kryosféře](infografiky/body-zlomu-2), a [bodech zlomu v atmosférických a oceánských prouděních](infografiky/body-zlomu-3)."
     
 - date: 2019-10-26
   title: "Světové emise a další zdroje a odkazy"
@@ -54,6 +52,9 @@
 
 - date: 2019-08-05
   summary: "Rozhovor v rádiu Wave – Ondráš Přibyla a Marek Lahoda představují projekt v [rozhovoru pro rádio Wave](https://wave.rozhlas.cz/projekt-fakta-o-klimatu-v-mediich-maji-popiraci-klimatickych-zmen-vetsi-prostor-8033240): _'My bychom chtěli nejdřív pokrýt něco, co by se dalo považovat za základní znalosti. Grafy, které bychom chtěli publikovat v tomto roce, by měly pokrýt něco 'jako maturitu z klimatických změn'. To znamená, chceme, aby lidi věděli, že se Česká republika oteplila o dva stupně od roku 1960, zhruba jaké jsou emise v Česku a ve světě a proč je vůbec důležité to řešit. Ono se zdá, že změna o jeden a půl stupně Celsia je malá, ale je potřeba vysvětlit, co to znamená z hlediska bodů zlomu, ke kterým se blížíme, a z hlediska celého klimatického systému planety...'_"
+
+- date: 2019-07-27
+  summary: "Naše infografiky se objevují na české Wikipedii v článku _[Globální oteplování v Česku](https://cs.wikipedia.org/wiki/Glob%C3%A1ln%C3%AD_oteplov%C3%A1n%C3%AD_v_%C4%8Cesku)_ (aniž bychom Wikipedii editovali my)"
 
 - date: 2019-07-25
   summary: "První e-mailové dotazy od veřejnosti (s oceněním práce a mj. s žádostí o rozšíření infografik o rozptyl teplot). Za 48 hodin od zveřejnění cca 2000 návštěvníků webu."
