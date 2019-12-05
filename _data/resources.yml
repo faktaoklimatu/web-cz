@@ -9,6 +9,14 @@
   description-short: "ČHMÚ je ústřední státní orgán ČR pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie."
   description-long: "V současné době nejvíce těžíme z [přehledu územních teplot](http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty)."
 
+- title: "CENIA"
+  tags: [ zdroje, česky, Česká republika ]
+  url: "http://chmi.cz/"
+  image: "cenia.png"
+  description-short: "CENIA, česká informační agentura životního prostředí, příspěvková organizace MŽP."
+  description-long: " Posláním CENIA je shromažďování, hodnocení a interpretace informací o životním prostředí a jejich poskytování odborné i laické veřejnosti. Web obsahuje např. každoročně updatované publikace [Statistická ročenka životního prostředí ČR](https://www.cenia.cz/publikace/statisticka-rocenka-zivotniho-prostredi-cr/) a [Zpráva o životním prostředí ČR](https://www.cenia.cz/publikace/zpravy-o-zp/), nebo datový portál [ISSaR](https://issar.cenia.cz/), kde je možné vyhledávat údaje o emisích a kvalitě ovzduší, spotřebě energie, jakosti vody a dalších indikátorech životního prostředí."
+
+
 - title: "Klimatická změna.cz"
   tags: [ zdroje, česky, Česká republika ]
   url: "https://www.klimatickazmena.cz/cs/"
