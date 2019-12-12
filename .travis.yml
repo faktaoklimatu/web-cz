@@ -1,13 +1,18 @@
 dist: bionic    # Ubuntu 18.04 LTS
 language: ruby
 
-# clone full git history for git-restore-mtime to work
+# Clone full git history for git-restore-mtime to work
 git:
   depth: false
 
+# Install the necessary software
+addons:
+  apt:
+    packages:
+    - inkscape
+    - pdf2svg
+
 before_install:
-  - sudo apt update
-  - sudo apt install -y inkscape pdf2svg
   - git clone https://github.com/MestreLion/git-tools # Distro version is currently broken
 
 script: 
@@ -16,7 +21,7 @@ script:
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up installation of html-proofer
 
 cache:
   bundler: true               # Enable caching of bundler gem packages
