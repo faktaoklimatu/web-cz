@@ -37,26 +37,22 @@ pdf2svg $SRC_FILE_PDF $DST_FILE_SVG
 echo -e "\t\t [ OK ]"
 
 echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_600 ..."
-inkscape --without-gui --export-area-page --export-background=white \
-         --export-width=600 --export-height=400 \
+inkscape --without-gui --export-area-page --export-background=white --export-width=600 \
          --export-png=$DST_FILE_PNG_600 --file=$DST_FILE_SVG 1>/dev/null 2>&1
 echo -e "\t\t [ OK ]"
 
 echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_1200 ..."
-inkscape --without-gui --export-area-page --export-background=white \
-         --export-width=1200 --export-height=800 \
+inkscape --without-gui --export-area-page --export-background=white --export-width=1200 \
          --export-png=$DST_FILE_PNG_1200 --file=$DST_FILE_SVG 1>/dev/null 2>&1
 echo -e "\t\t [ OK ]"
 
 echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_1920 ..."
-inkscape --without-gui --export-area-page --export-background=white \
-         --export-width=1920 --export-height=1280 \
+inkscape --without-gui --export-area-page --export-background=white --export-width=1920 \
          --export-png=$DST_FILE_PNG_1920 --file=$DST_FILE_SVG 1>/dev/null 2>&1
 echo -e "\t\t [ OK ]"
 
 echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_6000 ..."
-inkscape --without-gui --export-area-page --export-background=white \
-         --export-width=6000 --export-height=4000 \
+inkscape --without-gui --export-area-page --export-background=white --export-width=6000 \
          --export-png=$DST_FILE_PNG_6000 --file=$DST_FILE_SVG 1>/dev/null 2>&1
 echo -e "\t\t [ OK ]"
 
