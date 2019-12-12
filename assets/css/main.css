@@ -318,8 +318,8 @@ a.infographic {
 /* We cut ~3.5% from sides, ~13.5% from top and 5.3% from bottom */
 /* Note that all margin percentages bind to the _width_ */
 img.infographic {
-    margin: -9.7% -3.75% -3.75% -3.75%;
-    max-width: 107.5%;
+    margin: -7.3% -3.5% -4% -3.5%;
+    max-width: 107%;
 }
 
 p.caption {
