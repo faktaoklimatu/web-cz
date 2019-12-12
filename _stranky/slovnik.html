@@ -13,5 +13,5 @@ intro:      "Stručný přehled nejčastěji používaných hesel a zkratek s kr
 {% for item in sorted_glossary %}
 <hr/>
 <h3 id="{{ item.id }}"><strong>{{ item.name-short }}</strong>{% if item.name-long %}<span class="lead"> ({{ item.name-long }})</span>{% endif %}</h3>
-<p>{{ item.description }}</p>
+<p>{{ item.description | markdownify }}</p>
 {% endfor %}
