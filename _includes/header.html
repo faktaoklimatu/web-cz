@@ -1,7 +1,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="{{ site.description }}">
-<meta name="author" content="{{ site.author }}">
+<meta name="keywords" content="{{ site.keywords }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title }}">
+{% if  page.caption %}
+  <meta property="og:description" content="{{ page.caption }}">
+  <meta name="twitter:description" content="{{ page.caption }}">
+{% else %}
+  <meta property="og:description" content="{{ page.intro }}">
+  <meta name="twitter:description" content="{{ page.intro }}">
+{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+{% case page.layout %}
+{% when 'infographic' %}
+  {% assign social_image = site.url | append: "/assets/infographics/" | append: page.slug | append: ".png" %}
+{% when 'study' %}
+  {% assign social_image = site.url | append: "/assets/studies/" | append: page.slug | append: ".jpg" %}
+{% else %}
+  {% assign social_image = site.url | append: "/assets/img/favicon.png" %}
+{% endcase %}
+<meta property="og:image" content="{{ social_image }}">
+<meta name="twitter:image" content="{{ social_image }}">
+<meta name="twitter:image:alt" content="{{ page.title }}">
 
 <title>{{ page.title }}</title>
 

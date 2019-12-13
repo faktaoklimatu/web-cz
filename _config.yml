@@ -1,12 +1,11 @@
 # Site settings
-title: Fakta o změně klimatu
+url: https://faktaoklimatu.cz
 email: info@faktaoklimatu.cz
 twitter: "faktaoklimatu"
 newsletter: "https://tinyletter.com/faktaoklimatu/subscribe"
-author:
+author: faktaoklimatu.cz
 description: Veřejně dostupné infografiky o změně klimatu země
-url: https://faktaoklimatu.cz
-contact: info@faktaoklimatu.cz
+keywords: klima, změna klimatu, infografiky
 
 # Build settings
 exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
