@@ -21,4 +21,5 @@ begin
     HTMLProofer.check_directory("./_site", options).run
 rescue => msg
     puts "#{msg}"
+    exit(false)
 end

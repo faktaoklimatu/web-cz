@@ -29,9 +29,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: bold !important;
     text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold !important;
 }
 
 /* Fix anchor links */

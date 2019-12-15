@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Vývoj koncentrace CO<sub>2</sub> v historii"
+title:      "Vývoj koncentrace CO<sub>2</sub> v atmosféře"
 slug:       "koncentrace-co2"
 redirect_from: "/koncentrace-co2"
 weight:     3
@@ -19,7 +19,7 @@ data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarcti
 * Během posledních 2 000 let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilně v rozmezí 275–280 ppm.
 * __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 12,1 ppm za dekádu a v letech 2000–2019 koncentrace CO<sub>2</sub> rostla tempem 21,1 ppm za dekádu.
 * Koncentrace CO<sub>2</sub> v průběhu roku kolísá o přibližně 5 ppm, maximum nastává na jaře, minimum na podzim. __V květnu 2019 dosáhly průměrné koncentrace CO<sub>2</sub> hodnoty 414,7 ppm__, nejnižší naměřené hodnoty 2019 zatím byly 410 ppm. (V grafu ponecháváme hodnotu 410 ppm v souladu s metodikou použitou v časové řadě.)
-* Jednotka *ppm* znamená *parts per million*, tedy označuje počet částic v jednom milionu (podobně jako procenta, tedy *per cent* znamená počet ve stovce a promile znamená počet v tisíci). Tedy koncentrace 400 ppm odpovídá 0,4 promile nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul oxidu uhličitého.
+* Jednotka *ppm* znamená *parts per million*, tedy označuje počet částic v jednom milionu, podobně jako procento \[%], tedy *per cent* znamená počet ve stovce a promile \[‰] označuje počet v tisíci. Koncentrace 400 ppm znamená, že v jednom milionu molekul vzduchu je 400 molekul oxidu uhličitého, co odpovídá 0,4 ‰ nebo 0,04 %.
 
 ## Jak se měří historické koncentrace CO<sub>2</sub>?
 
