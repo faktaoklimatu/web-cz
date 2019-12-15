@@ -16,6 +16,7 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 * V levé části jsou celkové roční emise světových regionů za rok 2012 v gigatunách CO<sub>2</sub>eq včetně procentuálního zastoupení (jedna gigatuna je miliarda tun). Plochy jednotlivých obdélníků odpovídají relativním emisím daného regionu. **Celosvětové emise v roce 2012 byly 46 gigatun CO<sub>2</sub>eq.**
 * V pravé části jsou roční emise přepočtené na jednoho obyvatele daného regionu vyjádřeny v tunách CO<sub>2</sub>eq. Levá část tedy umožňuje porovnání absolutních emisí regionů, oproti tomu pravá část ukazuje, jak k celosvětovým emisím přispívá průměrný obyvatel daného regionu.
 * Infografika [Emise skleníkových plynů EU](/infografiky/emise-eu) znázorňuje stejné údaje pro jednotlivé státy Evropské unie včetně České republiky.
+* Podrobnější srovnání států a regionů podle emisí na osobu ukazuje související infografika [Emise světových regionů přepočtené na osobu](/infografiky/emise-svet-na-osobu).
 
 ## Zajímavosti a komentáře ke grafu
 
