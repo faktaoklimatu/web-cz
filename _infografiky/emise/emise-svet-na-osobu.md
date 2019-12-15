@@ -12,14 +12,13 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 
 ## Jak číst tento graf?
 
-* Vertikální osa zobrazuje výši emisí {% include glossary.html id='co2eq' %} v tunách na obyvatele, šířka obdélníků regionů odpovídá jejich populaci. Plocha obdélníků tedy odpovídá celkovým emisím {% include glossary.html id='co2eq' %}.
+* Vertikální osa zobrazuje výši emisí {% include glossary.html id='co2eq' %} v tunách na obyvatele, šířka obdélníků regionů odpovídá jejich populaci. Plocha obdélníků tedy odpovídá celkovým emisím CO<sub>2</sub>eq.
 * Světový průměr emisí přepočtených na osobu je 6,51 tuna CO<sub>2</sub>eq za rok.
 * Velké geografické celky (kontinenty a Rusko) jsou seřazeny zleva do prava od nejvyšších celkových emisí po nejnižší. Srovnání emisí skleníkových plynů pro jednotlivé kontinenty přehledně znázorňuje infografika [Světové emise skleníkových plynů](/infografiky/emise-svet).
 * Vybrané státy jsou v infografice zobrazeny samostatně (zpravidla státy s větší populací nebo s vyššími emisemi skleníkových plynů), ostatní státy daných regionů jsou zpravidla rozděleny na skupinu A s vyššími emisemi na osobu a skupinu B s nižšími emisemi na osobu. Přesné zařazení států do regionů popisuje následující odstavec.
 
 ## Doplňující informace ke skupinám států
 
-* __Obecný popis zobrazených regionů__:
 * __Asie A__ (*Brunej, Malajsie, Mongolsko, Singapur*): státy v této skupině mají emise vyšší než 9 t CO<sub>2</sub>eq na osobu a drtivá většina celkových emisí z těchto států připadá na Malajsii, která má v této skupině zdaleka největší populaci. 
 * __Asie B__ (*Afghánistán, Bangladéš, Filipíny, Myanmar, Pákistán, Vietnam* a další země Asie a ostrovní státy v Tichém oceánu): asijské a tichomořské státy s emisemi na obyvatele nižšími než 9 t CO<sub>2</sub>eq na osobu, přičemž většina států této skupiny má emise na osobu nižší než 3 t CO<sub>2</sub>eq. Nejvyšší celkové emise z této skupiny má Pákistán, který je také nejlidnatější zemí regionu.
 * __Blízký východ A__ (*Bahrajn, Katar, Kuvajt, Omán, Spojené arabské emiráty*): ropné státy Blízkého východu s poměrně malou populací. Všechny státy této skupiny mají emise na obyvatele vyšší než 19 t CO<sub>2</sub>eq.
