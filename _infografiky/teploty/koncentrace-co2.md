@@ -6,7 +6,7 @@ redirect_from: "/koncentrace-co2"
 weight:     3
 tags:       [ teploty, CO2, svet ]
 caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800 000 let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
-data-our:   "https://docs.google.com/spreadsheets/d/1fV9lD8vdVRpijeswxnuqDnbRQOXayiP_mTLZvDOflmQ/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
             , [ "Scripps CO<sub>2</sub> program", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
@@ -15,10 +15,10 @@ data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarcti
 ## Jak číst tento graf?
 
 * Koncentrace uvádíme v jednotkách {% include glossary.html id='ppm' %}.
-* V posledních 800 000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170–280 ppm a kolísání odpovídalo střídání dob ledových a meziledových (pro srovnání: první nálezy *Homo sapiens* mají stáří přibližně 300 000 let).
+* V posledních 800 000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170–300 ppm a kolísání odpovídalo střídání dob ledových a meziledových (pro srovnání: první nálezy *Homo sapiens* mají stáří přibližně 300 000 let).
 * Během posledních 2 000 let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilně v rozmezí 275–280 ppm.
-* __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 12,1 ppm za dekádu a v letech 2000–2019 koncentrace CO<sub>2</sub> rostla tempem 21,1 ppm za dekádu.
-* Koncentrace CO<sub>2</sub> v průběhu roku kolísá o přibližně 5 ppm, maximum nastává na jaře, minimum na podzim. __V květnu 2019 dosáhly průměrné koncentrace CO<sub>2</sub> hodnoty 414,7 ppm__, nejnižší naměřené hodnoty 2019 zatím byly 410 ppm. (V grafu ponecháváme hodnotu 410 ppm v souladu s metodikou použitou v časové řadě.)
+* __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 11,8 ppm za dekádu a v letech 2000–2019 koncentrace CO<sub>2</sub> rostla tempem 21,7 ppm za dekádu.
+* Koncentrace CO<sub>2</sub> v průběhu roku kolísá o přibližně 5 ppm, maximum nastává na jaře, minimum na podzim. __V květnu 2019 dosáhly průměrné koncentrace CO<sub>2</sub> hodnoty 414,7 ppm__, nejnižší naměřené hodnoty 2019 byly 408,5 ppm.
 * Jednotka *ppm* znamená *parts per million*, tedy označuje počet částic v jednom milionu, podobně jako procento \[%], tedy *per cent* znamená počet ve stovce a promile \[‰] označuje počet v tisíci. Koncentrace 400 ppm znamená, že v jednom milionu molekul vzduchu je 400 molekul oxidu uhličitého, co odpovídá 0,4 ‰ nebo 0,04 %.
 
 ## Jak se měří historické koncentrace CO<sub>2</sub>?
