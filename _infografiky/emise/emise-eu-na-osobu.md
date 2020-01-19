@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Emise států EU přepočtené na osobu"
 slug:       "emise-eu-na-osobu"
 redirect_from: "/emise-eu-na-osobu"
-weight:     1
+weight:     92
 tags:       [ emise, EU, CO2 ]
 caption:    "Srovnání ročních emisí skleníkových plynů států Evropské unie, vyjádřeno na obyvatele i za celou populaci."
 data-our:   "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"

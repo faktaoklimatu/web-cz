@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Proč je oteplení o více než 1,5 °C problém? [2/3]"
 slug:       "body-zlomu-2"
 redirect_from: "/body-zlomu-2"
-weight:     1
+weight:     98
 tags:       [ budoucnost ]
 caption:    "Pařížská dohoda deklaruje úsilí o to, aby nárůst globální průměrné teploty výrazně nepřekročil hranici 1,5 °C. Jedním z hlavních důvodů pro stanovení této hranice je riziko překročení tzv. bodů zlomu (tipping points). Při oteplení nad 2 °C se blížíme pravděpodobným bodům zlomu mnoha velkých planetárních systémů."
 data-our:   "https://docs.google.com/spreadsheets/d/1Hr-NNo1_WRSPWyW8YxP14WfqgOjk2xxrFsCh6enMDKI/edit#gid=2029240771"
