@@ -6,24 +6,23 @@ redirect_from: "/emise-eu-na-osobu"
 weight:     1
 tags:       [ emise, EU, CO2 ]
 caption:    "Srovnání ročních emisí skleníkových plynů států Evropské unie, vyjádřeno na obyvatele i za celou populaci."
-data-our:   "https://docs.google.com/spreadsheets/d/1Oi6MiPxSKRN2vlssITAqsVwjsalQazCyymNdHHc-iYg/edit#gid=979818322"
+data-our:   "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"
 data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/nui/show.do?query=BOOKMARK_DS-089165_QID_20FB36E9_UID_-3F171EB0&layout=GEO,L,X,0;AIREMSECT,B,Y,0;UNIT,L,Z,0;AIRPOL,L,Z,1;TIME,C,Z,2;INDICATORS,C,Z,3;&zSelection=DS-089165INDICATORS,OBS_FLAG;DS-089165TIME,2016;DS-089165UNIT,MIO_T;DS-089165AIRPOL,GHG;&rankName1=UNIT_1_2_-1_2&rankName2=AIRPOL_1_2_-1_2&rankName3=INDICATORS_1_2_-1_2&rankName4=TIME_1_0_0_0&rankName5=GEO_1_2_0_0&rankName6=AIREMSECT_1_2_0_1&rStp=&cStp=&rDCh=&cDCh=&rDM=true&cDM=true&footnes=false&empty=false&wai=false&time_mode=NONE&time_most_recent=false&lang=EN&cfo=%23%23%23.%23%23%23%2C%23%23%23" ] ]
 ---
 
 ## Jak číst tento graf?
 
 * Vertikální osa zobrazuje výši emisí {% include glossary.html id='co2eq' %} v tunách na obyvatele, šířka obdélníků regionů odpovídá jejich populaci. Plocha obdélníků tedy odpovídá celkovým emisím CO<sub>2</sub>eq.
-* __NECO O ROZDELENI STATU PODLE BAREV VYJADRUJICICH CELKOVE EMISE__
-* Názorné srovnání celkových emisí skleníkových plynů států Evropské unie ukazuje infografika [Emise skleníkových plynů](/infografiky/emise-eu).
+* Státy s malou populací jsou mírně širší než odpovídá jejich počtu obyvatel, v opačném případě by byly jen obtížně viditelné.
+* Jednotlivé barvy rozdělují státy do skupin podle výše celkových ročních emisí skleníkových plynů.
+* Jiný pohled na srovnání celkových emisí skleníkových plynů států Evropské unie nabízí infografika [Emise skleníkových plynů](/infografiky/emise-eu).
 
 ## Komentáře ke grafu
 
 * Průměrné emise na osobu v Evropské unii jsou 8,7 tun CO<sub>2</sub>eq. Oproti tomu světový průměr emisí na osobu je 6,51 tun CO<sub>2</sub>eq na rok. Pokud by každý člověk na zemi vypouštěl tolik emisí jako průměrný obyvatel Evropské unie, vzrostly by celosvětové emise o více než 30 %.
-* __TODO - dopln zbytek az bude infografika, abych vedel presne co komentuji__
-* Česká republika vyprodukovala 13 tun CO<sub>2</sub>eq na osobu v roce 2012, zatímco světový průměr byl 6,5 tun CO<sub>2</sub>eq. Průměrný obyvatel České republiku tedy vypouští přibližně dvojnásobné množství skleníkových plynů oproti celosvětovému průměru. Z více než 200 zahrnutých zemí jich pouze 24 má vyšší emise na obyvatele než Česká republika, celková populace těchto států je 660 milionů obyvatel (tedy méně než 10 % celosvětové populace). 
-* Asie produkuje více než polovinu globálních emisí, zároveň však představuje 59&thinsp;% globální populace. Pokud by každý obyvatel planety produkoval stejně emisí jako průměrný Asiat, celkové emise by poklesly přibližně o 10 %.
-* Nejvyšší emise skleníkových plynů na obyvatele má Katar, 73 t CO<sub>2</sub> ročně. Z větších států pak Austrálie, 27 t CO<sub>2</sub> ročně. V celkovém množství vypouštěných skleníkových plynů jsou největšími znečišťovateli Čína a Spojené státy americké.
-* Přepočet emisí skleníkových plynů na obyvatele umožňuje srovnání zemí z určitého pohledu, avšak nezohledňuje rozdíly v životní úrovni jednotlivých zemí. Například Norsko má mírně vyšší emise na osobu než Česká republika (průměrný Nor vyprodukuje 14 t ročně, průměrný Čech 13 t CO<sub>2</sub>eq), zároveň však obyvatelé Norska mají dvojnásobnou životní úroveň oproti České republice. Oproti tomu obyvatelé Běloruska mají jen mírně nižší průměrné emise (12 t), avšak téměř poloviční životní úroveň v porovnání s obyvateli České republiky. V mezinárodním srovnání je proto užitečná tzv. {% include glossary.html id='emisniintenzitaekonomiky' %}, její rozdíly mezi státy ukazují, že [vhodnými opatřeními](/infografiky/mitigacni-opatreni-mmf) lze snižovat emise skleníkových plynů a zároveň zvyšovat životní úroveň obyvatel.
+* Největším producentem skleníkových plynů v Evropské unii je v absolutním srovnání Německo, které je zároveň také nejlidnatějším státem unie.
+* V přepočtu na obyvatele vypouští nejvíce skleníkových plynů Lucembursko (20 t CO<sub>2</sub>eq ročně), kde více než 60 % emisí pochází z dopravy, dle platformy [Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) je to způsobené nafto-benzínovým turismem. Druhé Estonsko (15 t CO<sub>2</sub>eq) a čtvrtá Česká republika (12,4 CO<sub>2</sub>eq) mají vysoké emise kvůli energetickému mixu založenému na uhlí a třetí Irsko (13,6 t CO<sub>2</sub>eq) kvůli zemědělství. Detailnější analýzu emisí podle jednotlivých sektorů lze nalézt ve [zpracovaném datasetu](https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322).
+* Naopak nejnižší emise na osobu má z Evropských států Malta (5,1 t CO<sub>2</sub>eq), následovaná Švédskem (5,6 t CO<sub>2</sub>eq). Zároveň životní úroveň ve Švědsku je téměř o [40 % procent vyšší](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita) než v České republice, snižování emisí tedy nemusí být překážkou zvyšování životní úrovně obyvatel. Švédsko má zavedenou uhlíkovou daň již od roku 1991, dnes nejvyšší z celého světa - 127 $ / t CO<sub>2</sub>. Ve [zprávě z roku 2019](/studie/2019_mitigacni-opatreni-mmf) Mezinárodní měnový fond vysvětluje, proč je uhlíková daň nejefektivnějším opatřením na snižování emisí skleníkových plynů, jak zobrazuje také související infografika o [mitigačních opatřeních](/infografiky/mitigacni-opatreni-mmf).
 
 ## Poznámky k datům o emisích
 
