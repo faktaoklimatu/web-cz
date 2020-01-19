@@ -9,6 +9,10 @@
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
+- id: citlivost
+  name-short: "Citlivost klimatu"
+  description: "_Citlivost klimatu_ (z angl. “climate sensitivity”) udává o kolik °C se zvýší průměrná globální teplota vzduchu, pokud navýšíme koncentrace skleníkových plynů v atmosféře. V případě zvýšení koncentrace CO2 na dvojnásobek oproti hodnotám před průmyslovou revolucí (~ 280 ppm) činí citlivost klimatu přibližně 3 °C (± 1,5 °C). Přitom hodnoty 560 ppm bude v případě scénáře RCP8.5 (“business as usual” = bez omezování emisí) dosaženo zhruba v roce 2050. V obecnější rovině se jedná o změnu průměrné globální teploty vzduchu v reakci na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), tj. v radiační bilanci systému Země-Vesmír. [[Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf), [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761), [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)]"
+
 - id: chmu
   name-short: "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
@@ -24,8 +28,8 @@
   description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující splodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci - například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
 
 - id: hackathon
-  name-short: "hackathon"
-  name-long: "klimatický hackathon"
+  name-short: "Hackathon"
+  name-long: "Klimatický hackathon"
   description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
 
 - id: ipcc
