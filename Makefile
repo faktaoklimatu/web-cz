@@ -19,9 +19,9 @@ web: $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
 check: web
 	@echo "Building the website using Jekyll ..."
-	@bundle exec jekyll build
+	bundle exec jekyll build
 	@echo "Running tests on the generated sites using html-proofer ..."
-	@bundle exec ruby utils/test.rb
+	-bundle exec ruby utils/test.rb
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)

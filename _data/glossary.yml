@@ -9,6 +9,10 @@
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
+- id: citlivost
+  name-short: "Citlivost klimatu"
+  description: "_Citlivost klimatu_ (z angl. “climate sensitivity”) udává o kolik stupňů se zvýší průměrná globální teplota vzduchu, pokud dojde ke zdvojnásobení koncentrace skleníkových plynů v atmosféře. Klimatologické modely předpovídají hodnoty citlivosti v intervalu 2–4,5 °C s nejpravděpodobnější hodnotou 3 °C. To znamená, že při zvýšení koncentrace na dvojnásobek předindustriální hodnoty (z 280 ppm na 560 ppm) můžeme očekávat zvýšení průměrné globální teploty o 3°C – s tím, že zvýšení bude spolehlivě alespoň o 2 °C a nemůžeme vyloučit zvýšení o 4,5 °C. Koncentrace CO<sub>2</sub> v roce 2019 byly 411 ppm a hodnoty 560 ppm bude v případě scénáře RCP8.5 (bez omezování emisí) dosaženo zhruba v roce 2050. Podrobnější diskusi důvodů, které fundamentálně znemožňují zpřesnit interval odhadu nabízí přehledové články [Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf) a [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761). V obecné rovině se jedná o odezvu klimatického systému na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), podrobnou diskusi konceptu citlivosti klimatu z pohledu různých časových škál obsahuje [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)."
+
 - id: chmu
   name-short: "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
@@ -28,8 +32,8 @@
   description: "Intenzita emisí skleníkových plynů v hospodářství je definovaná jako poměr mezi emisemi CO<sub>2</sub>eq a HDP dané ekonomiky. HDP se zpravidla vyjadřuje pomocí parity kupní síly, kdy jsou zohledněny různé cenové hladiny v jednotlivých zemích. K emisím skleníkových plynů dochází při hospodářské aktivitě, emisní intenzitu lze tedy chápat jako ukazatel efektivity nebo čistoty dané ekonomiky vzhledem k množství vypouštěných skleníkových plynů. Zpravidla se udává v kg CO<sub>2</sub>eq na $ HDP, mezi státy s nejnižší a nejvyšší emisní intenzitou jsou až desetinásobné rozdíly."
 
 - id: hackathon
-  name-short: "hackathon"
-  name-long: "klimatický hackathon"
+  name-short: "Hackathon"
+  name-long: "Klimatický hackathon"
   description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
 
 - id: ipcc
