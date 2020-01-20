@@ -10,5 +10,6 @@ _site/*
 Gemfile.lock
 *~
 
-# Rubymine IDE files
+# IDE files
 .idea
+.vscode
