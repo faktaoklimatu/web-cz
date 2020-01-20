@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Emise světových regionů přepočtené na osobu"
 slug:       "emise-svet-na-osobu"
 redirect_from: "/emise-svet-na-osobu"
-weight:     1
+weight:     91
 tags:       [ emise, svet, CO2 ]
 caption:    "Srovnání ročních emisí vybraných států a světových regionů, vyjádřeno na obyvatele i za celou populaci."
 data-our:   "https://drive.google.com/open?id=1aZNVRC7lJM28FxbKKnXo7HsPlyE2RaMbG3KDs8igwec"
@@ -13,9 +13,9 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 ## Jak číst tento graf?
 
 * Vertikální osa zobrazuje výši emisí {% include glossary.html id='co2eq' %} v tunách na obyvatele, šířka obdélníků regionů odpovídá jejich populaci. Plocha obdélníků tedy odpovídá celkovým emisím CO<sub>2</sub>eq.
-* Světový průměr emisí přepočtených na osobu je 6,51 tuna CO<sub>2</sub>eq za rok.
-* Velké geografické celky (kontinenty a Rusko) jsou seřazeny zleva do prava od nejvyšších celkových emisí po nejnižší. Srovnání emisí skleníkových plynů pro jednotlivé kontinenty přehledně znázorňuje infografika [Světové emise skleníkových plynů](/infografiky/emise-svet).
-* Vybrané státy jsou v infografice zobrazeny samostatně (zpravidla státy s větší populací nebo s vyššími emisemi skleníkových plynů), ostatní státy daných regionů jsou zpravidla rozděleny na skupinu A s vyššími emisemi na osobu a skupinu B s nižšími emisemi na osobu. Přesné zařazení států do regionů popisuje následující odstavec.
+* Světový průměr emisí připadajících na osobu je 6,51 tuna CO<sub>2</sub>eq za rok, v grafu jej znázorňuje šedá tečkovaná čára.
+* Velké geografické celky (kontinenty a Rusko) jsou seřazeny zleva doprava od nejvyšších celkových emisí po nejnižší. Srovnání emisí skleníkových plynů pro jednotlivé kontinenty přehledně znázorňuje infografika [Světové emise skleníkových plynů](/infografiky/emise-svet).
+* Vybrané státy jsou v infografice zobrazeny samostatně (typicky státy s větší populací nebo s vyššími emisemi skleníkových plynů), ostatní státy daných regionů jsou zpravidla rozděleny na skupinu A s vyššími emisemi na osobu a skupinu B s nižšími emisemi na osobu. Přesné zařazení států do regionů popisuje následující odstavec.
 
 ## Doplňující informace ke skupinám států
 
@@ -23,8 +23,8 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 * __Asie B__ (*Afghánistán, Bangladéš, Filipíny, Myanmar, Pákistán, Vietnam* a další země Asie a ostrovní státy v Tichém oceánu): asijské a tichomořské státy s emisemi na obyvatele nižšími než 9 t CO<sub>2</sub>eq na osobu, přičemž většina států této skupiny má emise na osobu nižší než 3 t CO<sub>2</sub>eq. Nejvyšší celkové emise z této skupiny má Pákistán, který je také nejlidnatější zemí regionu.
 * __Blízký východ A__ (*Bahrajn, Katar, Kuvajt, Omán, Spojené arabské emiráty*): ropné státy Blízkého východu s poměrně malou populací. Všechny státy této skupiny mají emise na obyvatele vyšší než 19 t CO<sub>2</sub>eq.
 * __Blízký východ B__ (*Izrael, Jemen, Jordánsko, Libanon, Sýrie*): státy Blízkého východu, které nejsou významnými vývozci ropy. Emise na osobu mají nižší než 5 t CO<sub>2</sub>eq kromě Izraele, který má 10 t CO<sub>2</sub>eq na osobu.  
-* __Evropa A__ (*Estonsko, Finsko, Gibraltar, Irsko, Island, Lucembursko a Norsko*): malá skupina evropských států, které mají vyšší emise na osobu než Česká republika (tedy 13 t CO<sub>2</sub>).
-* __Evropa B__ (*Belgie, Bělorusko, Dánsko, Maďarsko, Nizozemsko, Portugalsko, Rakousko, Řecko, Slovensko, Švédsko* a další menší evropské státy): ostatní evropské státy s nižšími emise na osobu než Česká reblika (tedy 13 t CO<sub>2</sub>).
+* __Evropa A__ (*Estonsko, Finsko, Gibraltar, Irsko, Island, Lucembursko a Norsko*): malá skupina evropských států, které mají vyšší emise na osobu než Česká republika (tedy více než 13 t CO<sub>2</sub>).
+* __Evropa B__ (*Belgie, Bělorusko, Dánsko, Maďarsko, Nizozemsko, Portugalsko, Rakousko, Řecko, Slovensko, Švédsko* a další menší evropské státy): ostatní evropské státy s nižšími emise na osobu než Česká reblika (méně než 13 t CO<sub>2</sub>).
 * __Afrika__ (Africké státy mimo Lybii a Jihoafrickou Republiku): typické emise na osobu jsou 1 až 4 t CO<sub>2</sub>eq. 
 * __Jižní Amerika__ (Státy Jižní a střední Ameriky mimo Brazílii): typické emise na osobu jsou 2 až 6 t CO<sub>2</sub>eq, některé rozvinutější státy jako např. Argentina mají emise 8 až 10 t CO<sub>2</sub>eq na osobu.  
 
