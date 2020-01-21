@@ -1,10 +1,21 @@
+- date: 2020-01-19
+  title: "vícedenní klimaton, twitter, nové infografiky, přednášky"
+  summary: |
+    Proběhl první vícedenní <a href="/slovnik#hackathon" class="glossary-item">hackathon <i class="fas fa-book"></i></a> jádra týmu - během víkendu jsme udělali spoustu práce, mj. např.:    
+    * Od teď nás můžete [sledovat i na Twitteru](https://twitter.com/faktaoklimatu).
+    * Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele najdete v infografice [Světové emise skleníkových plynů](/infografiky/emise-svet).
+    * Srovnání vybraných států a světových regionů podle ročních emisí skleníkových plynů na obyvatele doplněné o velikost populace a celkové emise najdete v infografice [Emise světových regionů přepočtené na osobu](/infografiky/emise-svet-na-osobu).
+    * Ve stejném duchu jsme zpracovali i EU v infografice [Emise států EU přepočtené na osobu](infografiky/emise-eu-na-osobu).
+    * Rozšířili jsme Slovník pojmů o <a href="/slovnik#citlivost" class="glossary-item">Citlivost klimatu <i class="fas fa-book"></i></a>.
+    * V aktivní roli jsme se účastnili několika přednášek, např. na Pražském studentském summitu či finské ambasádě.
+
 - date: 2019-12-02
   title: "Adaptační a mitigační opatření"
-  summary: "Nová sekce *Adaptační a mitigační opatření*, související infografika [Srovnání mitigačních opatření](/infografiky/mitigacni-opatreni-mmf) a doplněna studie Mezinárodního měnového fondu [Jak zmírnit dopady klimatické změny](studie/2019_mitigacni-opatreni-mmf)"
+  summary: "Nová sekce *Adaptační a mitigační opatření*, související infografika [Srovnání mitigačních opatření](/infografiky/mitigacni-opatreni-mmf) a doplněna studie Mezinárodního měnového fondu [Jak zmírnit dopady klimatické změny](studie/2019_mitigacni-opatreni-mmf)."
 
 - date: 2019-11-30
   title: "Elektřina v ČR: výroba, spotřeba a emise"
-  summary: "Z dat energetického regulačního úřadu jsme zpracovali [grafiku](/infografiky/elektrina-cr) výroby a spotřeby elektrické energie v ČR a souvisejících emisí."
+  summary: "Z dat energetického regulačního úřadu jsme zpracovali infografiku [Elektřina v ČR: výroba, spotřeba a emise](/infografiky/elektrina-cr) zabývající se výrobou a spotřebou elektrické energie v ČR a souvisejících emisí."
 
 - date: 2019-11-04
   title: "Proč je oteplení o více než 1,5°C problém?"
