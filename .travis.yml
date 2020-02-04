@@ -1,3 +1,4 @@
+os: linux
 dist: bionic    # Ubuntu 18.04 LTS
 language: ruby
 
@@ -31,11 +32,10 @@ cache:
 
 deploy:
   provider: pages
-  skip_cleanup: true
   local_dir: _site
   target_branch: gh-pages
   keep_history: false
   verbose: false
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
     branch: master
