@@ -5,7 +5,7 @@ slug:       2018_energetika-cr-bez-uhli
 weight:     3
 tags:       [ studie, cr ]
 caption:    "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů k roku 2030."
-intro:      "Studie zkoumá dopady ukončení provozu českých uhelných elektráren (které jsou aktuálně jedním z hlavních zdrojů emisí CO2 v ČR) na stabilitu elektrizační soustavy, při současném rozvoji obnovitelných zdrojů. Reaguje tak na častý argument proti transformaci české energetiky, poukazující právě na ohrožení bezpečnosti dodávek elektrické energie."
+intro:      "Studie zkoumá dopady ukončení provozu českých uhelných elektráren (které jsou aktuálně jedním z hlavních zdrojů emisí CO2 v ČR) na stabilitu elektrizační soustavy, při současném rozvoji obnovitelných zdrojů. Reaguje tak na častý argument proti transformaci české energetiky, poukazující právě na ohrožení bezpečnosti dodávek elektřiny."
 study-title:        "Czech power grid without electricity from coal by 2030"
 study-author:       "Peter-Philipp Schierhorn, M.Sc. et al."
 study-institution:  "Energynautics"
