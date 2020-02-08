@@ -16,11 +16,11 @@
 <meta name="twitter:card" content="summary_large_image">
 {% case page.layout %}
 {% when 'infographic' %}
-  {% assign social_image = site.url | append: "/assets/infographics/" | append: page.slug | append: ".png" %}
+  {% assign social_image = site.url | append: "/assets/infographics/" | append: page.slug | append: "_1200.png" %}
 {% when 'study' %}
   {% assign social_image = site.url | append: "/assets/studies/" | append: page.slug | append: ".jpg" %}
 {% else %}
-  {% assign social_image = site.url | append: "/assets/img/favicon.png" %}
+  {% assign social_image = site.url | append: "/assets/img/preview.png" %}
 {% endcase %}
 <meta property="og:image" content="{{ social_image }}">
 <meta name="twitter:image" content="{{ social_image }}">
