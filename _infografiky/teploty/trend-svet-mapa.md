@@ -5,7 +5,7 @@ slug:       "trend-svet-mapa"
 redirect_from: "/trend-teplot-cr"
 weight:     99
 tags:       [ teploty ]
-caption:    "Svět se za posledních 60 let oteplil přibližně o 1°C, ale různá místa se oteplují různě rychle. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,5°C, většina pevniny se otepluje rychleji. K největšímu oteplení přesahujícímu 4°C za posledních 60let dochází v severním ledovém oceánu."
+caption:    "Svět se za posledních 60 let oteplil přibližně o 1°C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,5°C, většina pevniny se otepluje rychleji. K největšímu oteplení, které a posledních 60 let přesáhlo 4°C, dochází v Severním ledovém oceánu."
 data-our:   ""
 data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ] ]
 ---
@@ -18,9 +18,9 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 * Data pocházejí z [NASA GISS](https://data.giss.nasa.gov/gistemp/), kde dlouhodobě sbírají teplotní data z měřicích stanic na pevnině i na moři. Datové řady začínají rokem 1880, my jsme se rozhodli použít data od roku 1961, aby je bylo možné dobře srovnát s teplotami pro ČR od ČHMÚ, která začínají rokem 1961.   
 
-* Konkrétní příkladem místa s velkým nárůstem teploty jsou Špicberky, kde se teplota za posledních 60 let zvýšila v průměru o 5°C, v zimních měsících dokonce o 7°C. (měřicí stanice Barencburg (78.10N, 14.30E) Ny Alesund (78.92N, 11.93E). Příkladem místa, které zaznamenalo mírný pokles teploty  (přibližně o 1°C od roku 1961) je stanice Halley (75.45S, 26.217W) na pobřeží Weddellova moře, Antarktida jako kontinent se ale mírně otepluje. 
+* Konkrétním příkladem místa s velkým nárůstem teploty jsou Špicberky, kde se teplota za posledních 60 let zvýšila průměrná roční teplota o 4,5°C, v zimních měsících dokonce o 7°C (měřicí stanice Barencburg (78.10N, 14.30E) Ny Alesund (78.92N, 11.93E). Příkladem místa, které zaznamenalo mírný pokles teploty  (přibližně o 1°C od roku 1961) je stanice Halley (75.45S, 26.217W) na pobřeží Weddellova moře, Antarktida jako kontinent se ale mírně otepluje. 
 
-* Data z jednotlivých měřicích stanic si můžete procházet na interaktivní aplikaci [NASA GISS](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/)
+* Data z jednotlivých měřicích stanic si můžete procházet v interaktivní aplikaci [NASA GISS](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/)
 
 * Citace: GISTEMP Team, 2019: GISS Surface Temperature Analysis (GISTEMP). NASA Goddard Institute for Space Studies. Dataset accessed 20YY-MM-DD at data.giss.nasa.gov/gistemp/.
 Lenssen, N., G. Schmidt, J. Hansen, M. Menne,A. Persin,R. Ruedy, and D. Zyss, 2019: Improvements in the GISTEMP uncertainty model. J. Geophys. Res. Atmos., 124, no. 12, 6307-6326, doi:10.1029/2018JD029522.
