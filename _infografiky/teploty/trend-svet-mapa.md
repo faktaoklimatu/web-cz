@@ -18,7 +18,7 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 * Data pocházejí z [NASA GISS](https://data.giss.nasa.gov/gistemp/), kde dlouhodobě sbírají teplotní data z měřicích stanic na pevnině i na moři. Datové řady začínají rokem 1880, my jsme se rozhodli použít data od roku 1961, aby je bylo možné dobře srovnát s teplotami pro ČR od ČHMÚ, která začínají rokem 1961.   
 
-* Konkrétním příkladem místa s velkým nárůstem teploty jsou Špicberky, kde se teplota za posledních 60 let zvýšila průměrná roční teplota o 4,5°C, v zimních měsících dokonce o 7°C (měřicí stanice Barencburg (78.10N, 14.30E) Ny Alesund (78.92N, 11.93E). Příkladem místa, které zaznamenalo mírný pokles teploty  (přibližně o 1°C od roku 1961) je stanice Halley (75.45S, 26.217W) na pobřeží Weddellova moře, Antarktida jako kontinent se ale mírně otepluje. 
+* Konkrétním příkladem místa s velkým nárůstem teploty jsou Špicberky, kde se teplota za posledních 60 let zvýšila průměrná roční teplota o 4°C, v zimních měsících dokonce o 6°C (měřicí stanice Barencburg (78.10N, 14.30E) Ny Alesund (78.92N, 11.93E). Příkladem místa, které zaznamenalo pokles teploty  (přibližně o 1°C od roku 1961) je stanice Halley (75.45S, 26.217W) na pobřeží Weddellova moře, Antarktida jako kontinent se ale mírně otepluje. 
 
 * Data z jednotlivých měřicích stanic si můžete procházet v interaktivní aplikaci [NASA GISS](https://data.giss.nasa.gov/gistemp/station_data_v4_globe/)
 
