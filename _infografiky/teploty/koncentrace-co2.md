@@ -14,7 +14,7 @@ data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarcti
 
 ## Jak číst tento graf?
 
-* Koncentrace uvádíme v jednotkách {% include glossary.html id='ppm' %}.
+* Koncentrace uvádíme v jednotkách {% include glossary.html id='ppm' nameDeclension=0%}.
 * V posledních 800 000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170–300 ppm a kolísání odpovídalo střídání dob ledových a meziledových (pro srovnání: první nálezy *Homo sapiens* mají stáří přibližně 300 000 let).
 * Během posledních 2 000 let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilně v rozmezí 275–280 ppm.
 * __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 11,8 ppm za dekádu a v letech 2000–2019 koncentrace CO<sub>2</sub> rostla tempem 21,7 ppm za dekádu.

@@ -12,7 +12,7 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 
 ## Jak číst tento graf?
 
-* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' %}.
+* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' nameDeclension=0%}.
 * V levé části jsou celkové roční emise světových regionů za rok 2012 v gigatunách CO<sub>2</sub>eq včetně procentuálního zastoupení (jedna gigatuna je miliarda tun). Plochy jednotlivých obdélníků odpovídají relativním emisím daného regionu. **Celosvětové emise v roce 2012 byly 46 gigatun CO<sub>2</sub>eq.**
 * V pravé části jsou roční emise přepočtené na jednoho obyvatele daného regionu vyjádřeny v tunách CO<sub>2</sub>eq. Levá část tedy umožňuje porovnání absolutních emisí regionů, oproti tomu pravá část ukazuje, jak k celosvětovým emisím přispívá průměrný obyvatel daného regionu.
 * Infografika [Emise skleníkových plynů EU](/infografiky/emise-eu) znázorňuje stejné údaje pro jednotlivé státy Evropské unie včetně České republiky.
@@ -30,4 +30,4 @@ data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/ove
 * Zdrojem dat je databáze EDGAR (Emission Database for Global Atmospheric Research, Emisní databáze pro globální výzkum atmosféry) provozovaná Evropskou agenturou pro životní prostředí.
 * Graf uvádí data za rok 2012, neboť v době přípravy podkladů pro graf (září 2019) nebyly k dispozici novější data o emisích skleníkových plynů za jednotlivé státy světa (novější data jsou dostupná pouze pro některé regiony nebo se týkají pouze emisí oxidu uhličitého a nezahrnují ostatní skleníkové plyny).
 * Údaje odpovídají emisím vyprodukovaným v daném regionu, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v daném regionu.
-* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub>, N<sub>2</sub>O a CH<sub>4</sub> ({% include glossary.html id='antropogennisklenikoveplyny' %}) vyjádřené jako {% include glossary.html id='co2eq' %}, nejsou zde zahrnuty některé marginální skleníkové plyny.
+* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub>, N<sub>2</sub>O a CH<sub>4</sub> ({% include glossary.html id='antropogennisklenikoveplyny' nameDeclension=0%}) vyjádřené jako {% include glossary.html id='co2eq' nameDeclension=0%}, nejsou zde zahrnuty některé marginální skleníkové plyny.

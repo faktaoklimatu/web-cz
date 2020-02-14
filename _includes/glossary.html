@@ -1,2 +1,3 @@
 {% assign item = site.data.glossary | where:"id",include.id | first %}
-<a href="/slovnik#{{ item.id }}" class="glossary-item" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-title="{{ item.name-long }}" data-content="{{ item.description | truncatewords: 16 }}">{{ item.name-short }} <i class="fas fa-book"></i></a>
+<a href="/slovnik#{{ item.id }}" class="glossary-item" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-title="{{ item.name-long }}" data-content="{{ item.description | truncatewords: 16 }}">{{ item.name-short[include.nameDeclension] }} <i class="fas fa-book"></i></a>
+

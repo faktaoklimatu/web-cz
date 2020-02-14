@@ -12,7 +12,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
 
 ## Jak číst tento graf?
 
-* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' %}.
+* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' nameDeclension=0%}.
 * V levé části jsou celkové roční emise členských států EU za rok 2016 v mil. tun CO<sub>2</sub>eq, vč. procentuálního zastoupení. Plocha zabraná konkrétním státem odpovídá poměru vůči celku.
 * Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population), tak [z hlediska HDP](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))) mají v absolutních číslech nejvyšší emise:
   * Německo se svými cca 83 mil. obyvateli 935,8 mil. t CO<sub>2</sub>eq
@@ -35,4 +35,4 @@ data-orig:  [ [ "Zdrojová data Eurostat", "http://appsso.eurostat.ec.europa.eu/
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
 * V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy a zobrazené hodnoty odpovídají emisím vyprodukovaným z letů z letišť v dané zemi. Hodnota tedy nemusí odpovídat přesně množství emisí, které obyvatelé daného státu způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do emisí ČR jen jako Praha-Amsterdam, zatímco emise z letu Amsterdam-New York se započtou Nizozemí). Není také zazpočítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt.
-* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFCs, PFCs, SF<sub>6</sub>, NF<sub>3</sub> ({% include glossary.html id='antropogennisklenikoveplyny' %}) vyjádřené jako {% include glossary.html id='co2eq' %}.
+* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFCs, PFCs, SF<sub>6</sub>, NF<sub>3</sub> ({% include glossary.html id='antropogennisklenikoveplyny' nameDeclension=0%}) vyjádřené jako {% include glossary.html id='co2eq' nameDeclension=0%}.

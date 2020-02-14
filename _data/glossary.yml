@@ -2,70 +2,87 @@
 # prosím, udržujte seznam řazený dle abecedy
 
 - id: adaptace
-  name-short: "Adaptace"
+  name-short:
+    - "Adaptace"
   description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příklady současných adaptačních opatření jsou například protipovodňové zábrany, změny pěstovaných plodin nebo přesídlení do výše položených oblastí, které nebudou postiženy zvyšováním hladiny oceánů. Některé očekávané dopady klimatických změn, jako například silnější hurikány nebo rozšíření tropických nemocí, umožňují jen minimální prevenci a zvládání škod jimi způsobených bude nákladné."
 
 - id: antropogennisklenikoveplyny
-  name-short: "Antropogenní skleníkové plyny"
+  name-short:
+    - "Antropogenní skleníkové plyny"
+    - "Antropogenních skleníkových plynů"
+    - "Antropogenním skleníkovým plynům"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
 - id: citlivost
-  name-short: "Citlivost klimatu"
+  name-short:
+    - "Citlivost klimatu"
   description: "_Citlivost klimatu_ (z angl. “climate sensitivity”) udává, o kolik stupňů Celsia se zvýší průměrná globální teplota vzduchu, pokud dojde ke zdvojnásobení koncentrace skleníkových plynů v atmosféře. Klimatologické modely předpovídají hodnoty citlivosti v intervalu 2–4,5 °C s nejpravděpodobnější hodnotou 3 °C. To znamená, že při zvýšení koncentrace na dvojnásobek předindustriální hodnoty (z 280 ppm na 560 ppm) můžeme očekávat nárůst průměrné globální teploty o 3 °C – s tím, že oteplení bude spolehlivě o alespoň 2 °C a nemůžeme vyloučit zvýšení teploty až o 4,5 °C. Koncentrace CO<sub>2</sub> v roce 2019 byly 411 ppm a hodnoty 560 ppm bude v případě scénáře RCP8.5 (bez omezování emisí) dosaženo zhruba v roce 2050. Podrobnější diskusi důvodů, které fundamentálně znemožňují zpřesnit interval odhadu, nabízí přehledové články [Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf) a [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761). V obecné rovině se jedná o odezvu klimatického systému na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), podrobnou diskusi konceptu citlivosti klimatu z pohledu různých časových škál obsahuje [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)."
 
 - id: chmu
-  name-short: "ČHMÚ"
+  name-short:
+    - "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
   description: "Ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu [[cs.wikipedia](https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%BD_hydrometeorologick%C3%BD_%C3%BAstav)]."
 
 - id: co2eq
-  name-short: "CO<sub>2</sub>eq"
+  name-short:
+    - "CO<sub>2</sub>eq"
   name-long: "CO<sub>2</sub> ekvivalent"
   description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) – konkrétně je to množství příslušného plynu × [GWP koeficient](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Např. pro metan je to hodnota cca 28 [[IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf) (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\". Zjednodušeně řečeno, metan je 28krát silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
 - id: externalita
-  name-short: "Externalita"
+  name-short:
+    - "Externalita"
   description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující splodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci - například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
 
 - id: emisniintenzitaekonomiky
-  name-short: "Emisní intenzita ekonomiky"
+  name-short:
+    - "Emisní intenzita ekonomiky"
   description: "Intenzita emisí skleníkových plynů v hospodářství je definovaná jako poměr mezi emisemi CO<sub>2</sub>eq a HDP dané ekonomiky. HDP se zpravidla vyjadřuje pomocí parity kupní síly, kdy jsou zohledněny různé cenové hladiny v jednotlivých zemích. K emisím skleníkových plynů dochází při hospodářské aktivitě, emisní intenzitu lze tedy chápat jako ukazatel efektivity nebo čistoty dané ekonomiky vzhledem k množství vypouštěných skleníkových plynů. Zpravidla se udává v kg CO<sub>2</sub>eq na $ HDP, mezi státy s nejnižší a nejvyšší emisní intenzitou jsou až desetinásobné rozdíly."
 
 - id: hackathon
-  name-short: "Hackathon"
+  name-short:
+    - "Hackathon"
   name-long: "Klimatický hackathon"
   description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
 
 - id: ipcc
-  name-short: "IPCC"
+  name-short:
+    - "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change"
   description: "_Mezivládní panel pro změny klimatu_ je vědecký orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl [[cs.wikipedia](https://cs.wikipedia.org/wiki/IPCC)]."
 
 - id: mitigace
-  name-short: "Mitigace"
+  name-short:
+    - "Mitigace"
   description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu,  _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
 
 - id: nasa
-  name-short: "NASA"
+  name-short:
+    - "NASA"
   name-long: "National Aeronautics and Space Administration"
   description: "NASA je americká vládní agentura zodpovědná za americký kosmický program, všeobecný výzkum v oblasti letectví a lepší porozumění Zemi [[en.wikipedia](https://en.wikipedia.org/wiki/NASA)]."
 
 - id: ppm
-  name-short: "ppm"
+  name-short:
+    - "ppm"
   name-long: "parts per million"
   description: "Počet částic v milionu, podobně jako procenta (_per cento_) znamená počet ve stovce a promile (_per mīlle_) znamená počet v tisíci, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 ‰ nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
   
 - id: rcp
-  name-short: "RCP"
+  name-short:
+    - "RCP"
   name-long: "Representative Concentration Pathway"
   description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"  
 
 - id: phase-out
-  name-short: "Uhelný phase-out"
+  name-short:
+    - "Uhelný phase-out"
   description: "Na výrobu elektrické energie vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
 
 - id: w
-  name-short: "W a Wh (kW, MW… a kWh, MWh…)"
+  name-short:
+    - "W a Wh (kW, MW… a kWh, MWh…)"
   name-long: "watt, watthodina a jejich násobky"
   description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektrické energie [[cs.wikipedia](https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice)]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W – pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok [[Český statistický úřad](https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=)]."
 

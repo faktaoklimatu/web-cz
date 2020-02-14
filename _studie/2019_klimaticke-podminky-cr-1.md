@@ -26,9 +26,9 @@ summary: |
 
 ## Předpoklady a metodologie
 
-* Zpráva vychází z {% include glossary.html id='rcp' %} (emisních scénářů) {% include glossary.html id='ipcc' %} (RCP2.6, 4.5, 8.5), na jejichž základě jsou namodelovány konkrétní dopady změn klimatu na území ČR pomocí simulací z projektu Euro-CORDEX.
+* Zpráva vychází z {% include glossary.html id='rcp' nameDeclension=0%} (emisních scénářů) {% include glossary.html id='ipcc' nameDeclension=0%} (RCP2.6, 4.5, 8.5), na jejichž základě jsou namodelovány konkrétní dopady změn klimatu na území ČR pomocí simulací z projektu Euro-CORDEX.
 * Studie vyhodnocuje výsledky ansámblu 27 globálních (GCM) klimatických modelů a 19 regionálních (RCM) modelů s horizontálním rozlišením 12,5km. Dohromady tedy studie posuzuje přes sto modelových simulací budoucího vývoje klimatických charakteristik. Z těchto dat pak vyvozuje tzv. minimální očekávatelnou změnu a střední hodnoty změn klimatických parametrů.
-* Modely byly ověřeny pomocí historických měření z meteorologických stanic {% include glossary.html id='chmu' %}, na jehož datech byla provedena kontrola kvality – detekce chyb měření, testování homogenity, případná homogenizace časových řad atp.
+* Modely byly ověřeny pomocí historických měření z meteorologických stanic {% include glossary.html id='chmu' nameDeclension=0%}, na jehož datech byla provedena kontrola kvality – detekce chyb měření, testování homogenity, případná homogenizace časových řad atp.
 
 ## Poznámky o zpracovateli
 

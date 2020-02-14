@@ -23,11 +23,11 @@ study-pdf:          "https://www.imf.org/~/media/Files/Publications/fiscal-monit
 
 ## Shrnutí
 
-Pokud nebudou přijata efektivní opatření pro mitigaci klimatické změny, globální teplota se do roku 2100 zvýší přibližně o 4 °C v porovnání s předindustriální érou. Emise skleníkových plynů představují {% include glossary.html id='externalita' %} na národní i globální úrovni – producenti skleníkových plynů a státy s vyššími emisemi způsobují ostatním dodatečné náklady v podobě klimatické změny, za které však nemusí platit. Opatření na národní úrovni přenáší náklady klimatické změny zpět na firmy vypouštějící skleníkové plyny, tím narovnávají tržní prostředí a poskytují firmám i domácnostem pobídky k úspoře energií či k přechodu na čistší technologie. Žádná země však nemůže problém klimatických změn vyřešit sama a mezinárodní spolupráce je nezbytná, aby všechny země přijaly potřebná opatření a nepřenášely svůj díl odpovědnosti na ostatní státy.
+Pokud nebudou přijata efektivní opatření pro mitigaci klimatické změny, globální teplota se do roku 2100 zvýší přibližně o 4 °C v porovnání s předindustriální érou. Emise skleníkových plynů představují {% include glossary.html id='externalita' nameDeclension=0%} na národní i globální úrovni – producenti skleníkových plynů a státy s vyššími emisemi způsobují ostatním dodatečné náklady v podobě klimatické změny, za které však nemusí platit. Opatření na národní úrovni přenáší náklady klimatické změny zpět na firmy vypouštějící skleníkové plyny, tím narovnávají tržní prostředí a poskytují firmám i domácnostem pobídky k úspoře energií či k přechodu na čistší technologie. Žádná země však nemůže problém klimatických změn vyřešit sama a mezinárodní spolupráce je nezbytná, aby všechny země přijaly potřebná opatření a nepřenášely svůj díl odpovědnosti na ostatní státy.
 
 ### Fiskální opatření pro mitigaci
 
-Studie představuje čtyři základní rozpočtová opatření pro {% include glossary.html id='mitigace' %} klimatických změn a porovnává účinnost na základě různých hledisek.
+Studie představuje čtyři základní rozpočtová opatření pro {% include glossary.html id='mitigace' nameDeclension=0%} klimatických změn a porovnává účinnost na základě různých hledisek.
 
 * **Uhlíková daň:** daňové zatížení producentů fosilních paliv podle celkového obsahu uhlíku.
 * **Obchodování s emisními povolenkami:** firmy mohou emitovat skleníkové plyny, pouze pokud mají povolenky v odpovídající výši emisí. Celkové množství emisních povolenek je stanoveno vládou a firmy s nimi následně volně obchodují.
