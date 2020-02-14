@@ -27,6 +27,9 @@ collections:
     studie:
         output: true
         permalink: /:collection/:title
+    datasety:
+        output: true
+        permalink: /datasety/:title
 sass:
     sass_dir: assets/css
 cache_dir: .cache

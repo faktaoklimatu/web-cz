@@ -1,0 +1,10 @@
+{% if include.warning %}
+<div class="card card-body">{{ include.warning }}</div>
+{% endif %}
+<a class="btn btn-primary" data-toggle="collapse" href="{{ include.data-url }}" role="button">Data</a>
+{% if include.citation %}
+<a class="btn btn-primary" data-toggle="collapse" href="#{{ include.id }}" role="button" aria-expanded="false" aria-controls="{{ include.id }}">Jak citovat tyto data</a>
+<div class="collapse" id="{{ include.id }}">
+    <div class="card card-body">{{ include.citation }}</div>
+</div>
+{% endif %}
