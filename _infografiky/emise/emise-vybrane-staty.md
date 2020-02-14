@@ -12,10 +12,10 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
 
 ## Co je v grafice zobrazeno?
 
-* Všechny hodnoty emisí uvádíme v jednotkách {% include glossary.html id='co2eq' %}.
+* Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 * Roční objemy emisí skleníkových plynů jsou v různých státech EU různé - nejvíce emisí produkují Německo, Velká Británie a Francie &ndash; ale tyto země mají také nejvíce obyvatel. Aby bylo možné čísla srovnávat, uvádíme přepočet v tunách CO<sub>2</sub>eq na obyvatele na rok.
 * Výběr států pro graf: zobrazení všech států EU by bylo nepřehledné a zásadní rozdíly by nebyly dobře vidět. Vybrali jsme tedy vedle ČR šest dalších států tak, aby byly zastoupeny sousední země i určité extrémy v Evropě, a celý vzorek tak byl co nejvíce reprezentativní. Z vybraných zemí má ČR nejvyšší emise, což ale odráží i pozici ČR v EU. (Vyšší emise na obyvatele než ČR má jen Estonsko, Irsko a Lucembursko)
-* V grafu jsou zobrazeny antropogenní emise CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> ({% include glossary.html id='antropogennisklenikoveplyny' %}) vyjádřené jako {% include glossary.html id='co2eq' %}.
+* V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 
 ## Co znamenají jednotlivé sektory a jaké jsou v nich rozdíly v rámci EU?
 
@@ -33,5 +33,5 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
 * Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Českou republiku reportovala přímo Česká republika, konkrétně skrze Evropskou agenturu pro životní prostředí.
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi – ovšem vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
-* V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy a zobrazené hodnoty odpovídají emisím vyprodukovaným z letů z letišť v dané zemi. Hodnota tedy nemusí odpovídat přesnému množství emisí, které obyvatelé daného státu způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do emisí ČR jen jako Praha-Amsterdam, zatímco emise z letu Amsterdam-New York se započtou Nizozemí). Není také zazpočítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt. 
+* V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy a zobrazené hodnoty odpovídají emisím vyprodukovaným z letů z letišť v dané zemi. Hodnota tedy nemusí odpovídat přesnému množství emisí, které obyvatelé daného státu způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do emisí ČR jen jako Praha-Amsterdam, zatímco emise z letu Amsterdam-New York se započtou Nizozemí). Není také zazpočítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt.
 * Všechny údaje jsou zaokrouhlené na jedno desetinné místo, ale velikosti plochy odpovídají přesným hodnotám. V důsledku toho se mohou lišit velikosti jednotlivých čtverců, i když se neliší číselný údaj (např. u Francie jsou emise ze *spalování v průmyslu* 0,74 t CO<sub>2</sub>eq na obyvatele za rok a emise z *průmyslových procesů* 0,65 t CO<sub>2</sub>eq – obě položky se zaokrouhlí na 0,7, ale tyto čtverce jsou různě velké).
