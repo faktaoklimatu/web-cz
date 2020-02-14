@@ -6,7 +6,7 @@ redirect_from: "/emise-svet-na-osobu"
 weight:     90
 tags:       [ emise, svet, CO2 ]
 caption:    "Srovnání ročních emisí vybraných států a světových regionů, vyjádřeno na obyvatele i za celou populaci."
-data-our:   "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ"
+dataset:    "emise-svet"
 data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" ] ]
 ---
 
