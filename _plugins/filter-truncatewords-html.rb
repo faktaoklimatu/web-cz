@@ -4,24 +4,40 @@ require 'set'
 
 module Jekyll
   module TruncateWordsHtmlFilter
+    @@tag_re = /<(\/)?([^> ]+)[^>]*>/
+    @@separator_re = /[^[:word:]]+/
+
+    private
+    def append_words(chunk, words)
+      chunk_pos = 0
+      output = ""
+      while words > 0 and m_sep = @@separator_re.match(chunk, chunk_pos) do
+        if (words -= 1) <= 0
+          output += chunk[chunk_pos...m_sep.begin(0)]
+        else
+          output += chunk[chunk_pos...m_sep.end(0)]
+        end
+        chunk_pos = m_sep.end(0)
+      end
+
+      if chunk.length - chunk_pos > 0 and (words -= 1) >= 0
+        output += chunk[chunk_pos...chunk.length]
+      end
+
+      return output, words
+    end
+
+    public
     def truncatewords_html(input, words)
-      tag_re = /<(\/)?([^> ]+)[^>]*>/
-      separator_re = /[^[:word:]]+/
       open_tags = Set[]
       pos = 0
       output = ""
 
-      while m_tag = tag_re.match(input, pos) do
+      while m_tag = @@tag_re.match(input, pos) do
         chunk = input[pos...m_tag.begin(0)]
-        chunk_pos = 0
-        while words > 0 and m_sep = separator_re.match(chunk, chunk_pos) do
-          if (words -= 1) <= 0
-            output += chunk[chunk_pos...m_sep.begin(0)]
-          else
-            output += chunk[chunk_pos...m_sep.end(0)]
-          end
-          chunk_pos = m_sep.end(0)
-        end
+        chunk, words = append_words(chunk, words)
+        output += chunk
+        pos = m_tag.end(0)
 
         if words <= 0
           break
@@ -33,8 +49,11 @@ module Jekyll
         else
           open_tags.delete(m_tag[2])
         end
-        pos = m_tag.end(0)
       end
+
+      chunk = input[pos...input.length]
+      chunk, words = append_words(chunk, words)
+      output += chunk
 
       if words <= 0 then
         output += "&#8230;"
