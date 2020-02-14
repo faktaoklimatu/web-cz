@@ -25,15 +25,19 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Dominika Krejčí
 * Martin "Set" Křivánek
 * Henrich Lauko
+* Šimon Leitgeb
 * Ondřej "Blonďák" Lomič
 * Honza Mysliveček
 * Jakub Novák
 * Petr Novotný
+* Marcela Pokorná
 * Daniel Rychlý
 * Marko Řeháček
 * Lenka Sedlačková
+* Vladimír "Vláďa" Sedláček
 * Anna Segečová
 * Petr "Kaluž" Špaček
 * Vladimír "Vláďa" Štill
+* Anh Minh Tran
 * Ondřej Urbančík
 * Radka "Bludička" Zounková
