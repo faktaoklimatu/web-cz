@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'ffi-icu'
 gem 'html-proofer'
+gem 'jekyll'
 gem 'jekyll-redirect-from'
 
 # temporary workaround
