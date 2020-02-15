@@ -7,23 +7,42 @@ DATASETS_DST=$(addprefix $(DATASETS_FOLDER)/,$(notdir $(DATASETS_SRC:.md=.png)))
 STUDIES_FOLDER=assets/studies
 STUDIES_SRC=$(wildcard _studie/*.jpg _studie/*.png)
 STUDIES_DST=$(addprefix $(STUDIES_FOLDER)/,$(notdir $(STUDIES_SRC)))
-REPO_URL=https://github.com/mukrop/faktaoklimatu
+
+PODMAN=podman
+CONTAINER_IMAGE=faktaoklimatu/web
+CONTAINER_NAME=faktaoklimatu
 
 all: web
 
+# Phony targets for container management.
+container:
+	if $(PODMAN) inspect $(CONTAINER_NAME) >/dev/null 2>&1 ; \
+		then $(PODMAN) start -a $(CONTAINER_NAME) ||: ; \
+		else make build-container; fi
+
+build-container:
+	$(PODMAN) build --file Dockerfile --tag $(CONTAINER_IMAGE) .
+	$(PODMAN) run --interactive --tty --name $(CONTAINER_NAME) \
+		--volume $$PWD:/srv/jekyll --publish 4000:4000 $(CONTAINER_IMAGE) ||:
+
+delete-container:
+	$(PODMAN) rm --force $(CONTAINER_NAME)
+
+# Targets for generating files and managing the Jekyll site.
 reinstall:
-	rm Gemfile.lock
+	-rm Gemfile.lock
 	bundle install
 
 local: web
-	bundle exec jekyll serve
+	[ -f Gemfile.lock ] || bundle install
+	bundle exec jekyll serve --trace
 
 web: $(INFOGRAPHICS_DST) $(STUDIES_DST) # $(DATASETS_DST)
 
 check: web
 	@echo "Building the website using Jekyll ..."
 	bundle exec jekyll build
-	@echo "Running tests on the generated sites using html-proofer ..."
+	@echo "Running tests on the generated site using html-proofer ..."
 	-bundle exec ruby utils/test.rb
 
 clean:
@@ -42,3 +61,4 @@ $(DATASETS_FOLDER)/%.png: _datasety/%.md
 	@bash utils/download-dataset-preview.sh $< $@
 
 .PHONY: all web local clean
+.PHONY: container build-container delete-container
