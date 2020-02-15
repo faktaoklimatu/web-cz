@@ -1,7 +1,7 @@
 # This generator creates non-breaking spaces, thin spaces, dashes and similar glyphs
 
 Jekyll::Hooks.register :site, :post_render do |site|
-  puts "                  * Replacing spaces and glyphs ..."
+  Jekyll.logger.info  "                  * Replacing spaces and glyphs ..."
   
   site.documents.each do |page|
     replace!(page.output)
