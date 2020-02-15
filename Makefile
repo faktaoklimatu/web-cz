@@ -9,10 +9,11 @@ REPO_URL=https://github.com/mukrop/faktaoklimatu
 all: web
 
 reinstall:
-	rm Gemfile.lock
+	rm Gemfile.lock ||:
 	bundle install
 
 local: web
+	[ -f Gemfile.lock ] || bundle install
 	bundle exec jekyll serve
 
 web: $(INFOGRAPHICS_DST) $(STUDIES_DST)

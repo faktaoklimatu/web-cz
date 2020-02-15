@@ -49,6 +49,16 @@ http://127.0.0.1:4000 a následně bude monitorovat soubory a v případě jejic
 
 Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větve u které následně požádáte o *Pull Request*, aby existovala možnost práci zkontrolovat.
 
+### Kontejnery
+
+Pro usnadnění lokálního vývoje a testovaní na Linuxových platformách je v kořenovém adresáři přichystaný `Dockerfile` pro použití s kontejnerovými technologiemi jako [Docker](https://www.docker.com/) nebo [Podman](https://podman.io). Pro ilustraci zde uvedeme příklad s Podmanem. Použití s Dockerem by mělo být totožné.
+
+Prvním krokem je sestavení obrazu, který obsahuje všechen potřebný software a nastavení pro vývoj webu. To se provede spuštěním příkazu `podman build --tag faktaoklimatu .` v kořenovém adresáři repozitáře. Tím se vytvoří obraz s názvem `faktaoklimatu`.
+
+Ve druhém kroku stačí spustit kontejner nad právě vytvořeným obrazem příkazem `podman run --name faktaweb -p 4000:4000 -v $PWD:/srv/jekyll -it faktaoklimatu`.
+
+Jakmile je vše připraveno, objeví se hláška `Server running... press ctrl-c to stop.`. Vygenerovaný web je pak přístupný na adrese <http://localhost:4000/> po dobu běhu kontejneru.
+
 ## Jak nasadit novou verzi
 
 Na webu https://faktaoklimatu.cz (resp. https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.

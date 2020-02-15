@@ -8,12 +8,16 @@ description: Veřejně dostupné infografiky o změně klimatu Země
 keywords: klima, změna klimatu, infografiky
 
 # Build settings
-exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
-         , "README.md", "utils"                     # Development files
-         , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
-         , "_studie/*.jpg"                          # Study images
-         , "AUTHORS.md"                             # Authors file
-         ]
+exclude:
+    - README.md
+    - Gemfile              # Build settings
+    - Gemfile.lock         # Build settings
+    - Makefile             # Build settings
+    - utils                # Development files
+    - Dockerfile           # Containerization
+    - _infografiky/*/*.pdf # Original infographics (build moves them to assets)
+    - _studie/*.jpg        # Study images
+    - AUTHORS.md           # Authors file
 collections:
     infografiky:
         output: true
