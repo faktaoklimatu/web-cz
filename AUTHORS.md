@@ -15,12 +15,14 @@ Za projektem Fakta o klimatu stojí mnoho lidí. Někteří zpracovávají data,
 
 Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracování dat, jazykové korektury, grafické připomínky, programování webu či jinou pomoc. Jejich jména uvádíme níže (v abecedním pořadí). Děkujeme.
 
+* Vojta Boček
 * Jaroslav "Jarda" Čechak
 * Jan Drábek
 * Dan Farkač
 * Matěj Grabovský
 * Vojtěch "Vojta" Jelínek
 * Lenka Knapová
+* Kateřina Kolouchová
 * František "Franta" Kotas
 * Dominika Krejčí
 * Martin "Set" Křivánek
@@ -40,4 +42,5 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Vladimír "Vláďa" Štill
 * Anh Minh Tran
 * Ondřej Urbančík
+* Jakub Zamouřil 
 * Radka "Bludička" Zounková
