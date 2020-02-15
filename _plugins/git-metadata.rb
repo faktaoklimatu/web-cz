@@ -9,7 +9,7 @@ module Jekyll
       safe true
 
       def generate(site)
-        puts "                  * Getting git metadata ..."
+        Jekyll.logger.info "                  * Getting git metadata ..."
         raise "Git is not installed" unless git_installed?    
 
         data = {
