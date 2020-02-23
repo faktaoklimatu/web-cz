@@ -5,7 +5,7 @@ slug:       "zpoplatneni-emisi-ve-svete"
 redirect_from: "/zpoplatneni-emisi-ve-svete"
 weight:     1
 tags:       [ opatreni ]
-caption:    "Zpoplatnění emisí skleníkových plynů není jen doména Evropské Unie - mnoho zemí světa má zavedenu uhlíkovou daň nebo systém emisních povolenek."
+caption:    "Zpoplatnění emisí skleníkových plynů není jen doména Evropské Unie – mnoho zemí světa má zavedenu uhlíkovou daň nebo systém emisních povolenek."
 data-our:   ""
 data-orig:	[ [ "Zpráva WBG", "https://openknowledge.worldbank.org/handle/10986/31755" ] ]
 ---
@@ -17,7 +17,7 @@ Plocha největšího z kruhů (Čína) odpovídá množství 12,4 Gt {% include 
 
 ### Podrobněji k jednotlivým státům:
 * Kanadská opatření zahrnují obě složky federálního systému (ETS i uhlíkovou daň) a také provinční opatření zpoplatňující uhlíkové emise. 
-* RGGI (Regional Greenhouse Gas Initiative) byl prvním opatřením zpoplatňujícím skleníkové plyny ve Spojených státech a dnes je do něj zapojeno deset severovýchodních států. 
+* RGGI (Regional Greenhouse Gas Initiative) bylo prvním opatřením zpoplatňujícím skleníkové plyny ve Spojených státech a dnes je do něj zapojeno deset severovýchodních států. 
 * Evropský systém pro obchodování s emisními povoleními zahrnuje také Norsko, Island a Lichtenštejnsko. Kromě plošného ETS implementovaly některé ze zemí EU i uhlíkovou daň. 
 * Japonský systém zahrnuje ETS prefektury Satiama a Tokijský ETS. 
 * V Číně dosud funguje osm pilotních ETS systémů, v roce 2020 bude spuštěný také národní ETS. Rozsah pokrytí udává předběžné neoficiální odhady založené na oznámení Státního výboru pro rozvoj a reformy Čínské lidové republiky. Národní ETS zpočátku pokryje pouze energetický sektor, ostatní odvětví jsou pokryta jednotlivými pilotními ETS.
@@ -29,7 +29,7 @@ Infografiku jsme přebrali ze [studie](https://openknowledge.worldbank.org/handl
 
 * Iniciativy na zpoplatnění emisí skleníkových plynů pokrývají **20 % celosvětových emisí**. 
 * Počet iniciativ rychle roste, 38 z nich bylo implementováno v posledních 10 letech. 
-* 51 % z pokrytého množství emisí se pohybuje pod úrovní 10$ za tunu ekvivalentu CO2, přičemž **cena, která by byla vedla k naplnění cílů Pařížské klimatické dohody je 40$ — 80$**za tunu CO<sub>2</sub>eq, v závislosti na lokalitě, což ve výsledku splňuje pouze 5 % ze zahrnutých emisí. Nejvyšší jednotkovou cenu zavedlo Švédsko — 127$ za tunu CO<sub>2</sub>eq.
+* 51 % z pokrytého množství emisí se pohybuje pod úrovní 10$ za tunu ekvivalentu CO2, přičemž **cena, která by byla vedla k naplnění cílů Pařížské klimatické dohody je 40$ – 80$**za tunu CO<sub>2</sub>eq, v závislosti na lokalitě, což ve výsledku splňuje pouze 5 % ze zahrnutých emisí. Nejvyšší jednotkovou cenu zavedlo Švédsko – 127$ za tunu CO<sub>2</sub>eq.
 * Studie se nově věnuje i tzv. implicitnímu zpoplatnění emisí, což zahrnuje například vyšší zdanění fosilních paliv. Celkový podíl emisí pokrytých nějakou legislativou je tedy ještě o něco vyšší než uvedených 20 %.
 
 Shrnutí studie můžete vidět také v krátkém [rozhovoru](https://www.youtube.com/watch?v=jBcpZahjKcE)
@@ -40,6 +40,7 @@ Opatření pro zpoplatnění emisí jsou obecně považována za efektivní nás
 * *Jak vysoká je cena emisí v jednotlivých státech?* 
 * *Jaký efekt mělo zavedení daného opatření na emise a ekonomiku země?* 
 * *Jakými způsoby lze ovlivnit zavádění opatření v dalších zemích?*
+* *Je možné propojovat systémy pro obchodování s emisemi a zavést jednotnou mezinárodní cenu, případně jednotnou uhlíkovou daň?*
 
 O finančních nástrojích pro mitigaci klimatické změny podrobněji pojednává [studie Mezinárodního Měnového Fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019) z níž jsme přeložili [infografiku](https://faktaoklimatu.cz/infografiky/mitigacni-opatreni-mmf), která jednotlivé mechanismy pro regulaci emisí skleníkových plynů srovnává.
 
@@ -47,7 +48,7 @@ O finančních nástrojích pro mitigaci klimatické změny podrobněji pojedná
 
 ## Komentář: Evropský systém pro obchodování s emisními povoleními
 
-Evropský ETS byl spuštěn **v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami** a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Po pilotním testování byla v roce 2008 zahájena druhá fáze se snížením množstvím povolenek, do které se připojily také některé země mimo EU (Island, Lichtenštejnsko a Norsko). Množství povolenek ve druhé fázi bylo upraveno dle skutečných emisí, avšak ekonomická krize v roce 2008 způsobila propad výroby, tím také propad emisí skleníkových plynů a následně ceny emisních povolení. 
+[Evropský ETS](https://ec.europa.eu/clima/policies/ets_en) byl spuštěn **v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami** a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Po pilotním testování byla v roce 2008 zahájena druhá fáze se snížením množstvím povolenek, do které se připojily také některé země mimo EU (Island, Lichtenštejnsko a Norsko). Množství povolenek ve druhé fázi bylo upraveno dle skutečných emisí, avšak ekonomická krize v roce 2008 způsobila propad výroby, tím také propad emisí skleníkových plynů a následně ceny emisních povolení. 
 
 Třetí fáze byla zahájena v roce 2013 a přinesla několik dalších změn – emisní povolenky jsou vydávány v dražbě, maximální množství povolenek je stanoveno na úrovni celé Evropské unie a došlo k rozšíření zahrnutých sektorů. Množství dražených povolenek je každý rok sníženo a celkové emise klesají v souladu s tímto snížením. Ve čtvrté fázi, která začne v roce 2021, bude množství povolenek snížováno rychleji. **V letošním roce budou emise o 21 % nižší oproti roku 2005 a v roce 2030 bude množství povolení (a tedy také emisí) o 43 % nižší.** Snížení emisí v sektorech pokrytých evropským ETS probíhá rychleji než v ostatních sektorech. Cenu evropských emisních povolenek lze nalézt pod symbolem EUA a na počátku roku 2020 byla přibližně 24 eur za tunu CO<sub>2</sub>eq.
 
