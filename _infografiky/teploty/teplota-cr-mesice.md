@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Srovnání průměrné teploty v ČR v jednotlivých měsících"
+title:      "Průměrná teplota v ČR v jednotlivých měsících"
 slug:       "teplota-cr-mesice"
 redirect_from: "/teplota-cr-mesice"
 weight:     105

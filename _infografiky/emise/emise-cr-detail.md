@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Emise skleníkových plynů ČR (detailní)"
+title:      "Emise skleníkových plynů v ČR podle sektorů (detail)"
 slug:       "emise-cr-detail"
 redirect_from: "/emise-cr-detail"
 weight:     97

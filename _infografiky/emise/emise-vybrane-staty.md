@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Srovnání emisí skleníkových plynů"
+title:      "Srovnání emisí skleníkových plynů na obyvatele"
 slug:       "emise-vybrane-staty"
 redirect_from: "/emise-vybrane-staty"
 weight:     96

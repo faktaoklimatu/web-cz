@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Zpoplatnění emisí: Rozšíření ve světě"
+title:      "Zpoplatnění emisí: rozšíření ve světě"
 slug:       "zpoplatneni-emisi-svet"
 redirect_from: "/zpoplatneni-emisi-svet"
 weight:     95
