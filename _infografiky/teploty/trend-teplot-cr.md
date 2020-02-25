@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Trendy nárůstu teploty v ČR v jednotlivých měsících"
+title:      "Trend nárůstu teplot v ČR v jednotlivých měsících"
 slug:       "trend-teplot-cr"
 redirect_from: "/trend-teplot-cr"
 weight:     100

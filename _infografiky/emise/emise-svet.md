@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Světové emise skleníkových plynů"
+title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
 redirect_from: "/emise-svet"
 weight:     94

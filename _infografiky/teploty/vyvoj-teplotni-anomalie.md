@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Vývoj průměrné světové teplotní anomálie"
+title:      "Vývoj světové teplotní anomálie"
 slug:       "vyvoj-teplotni-anomalie"
 redirect_from: "/vyvoj-teplotni-anomalie"
 weight:     97

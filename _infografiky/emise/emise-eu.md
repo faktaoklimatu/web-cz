@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Emise skleníkových plynů EU"
+title:      "Emise skleníkových plynů států EU"
 slug:       "emise-eu"
 redirect_from: "/emise-eu"
 weight:     95

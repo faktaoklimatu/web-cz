@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Emise států EU přepočtené na osobu"
+title:      "Emise skleníkových plynů Evropské unie"
 slug:       "emise-eu-na-osobu"
 redirect_from: "/emise-eu-na-osobu"
 weight:     92
