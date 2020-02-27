@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Mapa nárůstu teploty v letech 1961 - 2019"
+title:      "Mapa změny teploty v letech 1961 - 2019"
 slug:       "mapa-zmeny-teploty"
 redirect_from: "/mapa-zmeny-teploty"
 weight:     99
