@@ -54,4 +54,4 @@ Třetí fáze byla zahájena v roce 2013 a přinesla několik dalších změn �
 
 ## Zdroj a licence
 
-_Tento překlad nebyl vytvořený Světovou bankou a neměl by být považovaný za oficiální překlad. Světová banka nepřebírá odpovědnost za obsah ani za případné chyby v tomto překladu. Puvodní zdroj: [State and Trends of Carbon Pricing 2019](https://openknowledge.worldbank.org/handle/10986/31755), World Bank, Washington, DC. Doi: 10.1596/978-1-4648-1435-8. Licence: [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/)._
+_Tento překlad nebyl vytvořený Světovou bankou a neměl by být považovaný za oficiální překlad. Světová banka nepřebírá odpovědnost za obsah ani za případné chyby v tomto překladu. Původní zdroj: [State and Trends of Carbon Pricing 2019](https://openknowledge.worldbank.org/handle/10986/31755), World Bank, Washington, DC. Doi: 10.1596/978-1-4648-1435-8. Licence: [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/)._
