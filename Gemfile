@@ -4,6 +4,7 @@ gem 'ffi-icu'
 gem 'html-proofer'
 gem 'jekyll'
 gem 'jekyll-redirect-from'
+gem 'nokogumbo'
 
 # temporary workaround
 # see https://github.com/sass/sassc-ruby/issues/146
