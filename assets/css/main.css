@@ -369,6 +369,17 @@ pre {
     word-wrap: break-word;
 }
 
+/* Dataset page customizations */
+
+ul.data-header {
+    margin: 1em 0 1em 0;
+}
+
+ul.data-header li.active {
+    background-color: #000080;
+    border-color: #000080;
+}
+
 /* Study page customizations */
 
 .study-metadata {

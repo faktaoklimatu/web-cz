@@ -40,19 +40,6 @@
               <h2 class="d-none d-lg-block">Podkladová data</h2>
               <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
               <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
-              {% if page.data-orig.size == 1 %}
-              <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
-              {% else %}
-              <span class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
-                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zdrojová data</button>
-                <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
-                  {% assign numDataSources = page.data-orig.size | minus: 1 %}
-                  {% for i in (0..numDataSources) %}
-                  <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
-                  {% endfor %}
-                </div>
-              </span>
-              {% endif %}
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
               <p class="d-none d-lg-block">Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
@@ -106,11 +93,11 @@
 
     {{ content }}
 
-    {% assign sorted_infographics = site.infografiky | where:"dataset","page.slug" | sort: 'weight' %}
+    {% assign sorted_infographics = site.infografiky %} <!-- | where:"dataset","page.slug" | sort: 'weight' %} -->
     {% if sorted_infographics.size > 0 %}
     <div class="section">
       <div class="container">
-        <h2>Infografiky vycházející z tohoto datasetu</h2>
+        <h2>Infografiky postavené na tomto datasetu</h2>
         <div class="row justify-content-md-left">
           {% for infographics in sorted_infographics %}
             <div class="col-sm-6 col-md-4 col-lg-3 homepage-card">

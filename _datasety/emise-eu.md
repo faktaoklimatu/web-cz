@@ -9,20 +9,11 @@ data:   "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEs
 ---
 <div class="section"><div class="container" markdown="1">
 
-## Velikost populace
-
-{% include data-buttons.html id="emise" data-url="http://appsso.eurostat.ec.europa.eu/nui/show.do?wai=true&dataset=demo_pjan" source="Eurostat" title="dataset demo_pjan" citation="Citace" licence="CC BY 4.0" licence-proof="https://ec.europa.eu/info/legal-notice_en" %}
-
-Z tohoto datasetu vybíráme pouze data za rok 2016.
-
-</div></div>
-<div class="section"><div class="container" markdown="1">
-
 ## Emise skleníkových plynů
 
-{% include data-buttons.html id="emise" data-url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" source="Eurostat" description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2016 v milionech tun CO2eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)." licence="CC BY 4.0" licence-link="https://creativecommons.org/licenses/by/4.0/" licence-proof="https://ec.europa.eu/info/legal-notice_en" warning="V současnosti už jsou pro tento indikátor k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali." %}
+{% include data-header.html name="Eurostat" description="Dataset env_air_gge V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2016 v milionech tun CO2eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)." url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" licence="CC BY 4.0" licence-url="https://creativecommons.org/licenses/by/4.0/" licence-proof="https://ec.europa.eu/info/legal-notice_en" %}
 
-{% include data-buttons.html id="emise" data-url="https://www.eea.europa.eu/data-and-maps/data/national-emissions-reported-to-the-unfccc-and-to-the-eu-greenhouse-gas-monitoring-mechanism-15" source="EEA (European Environmental Agency)" licence="Licence EEA (podobná CC BY)" licence-proof="https://www.eea.europa.eu/legal/copyright" %}
+{% include data-header.html name="EEA (European Environmental Agency)" description="dataset demo_pjan" url="https://www.eea.europa.eu/data-and-maps/data/national-emissions-reported-to-the-unfccc-and-to-the-eu-greenhouse-gas-monitoring-mechanism-15" licence="Licence EEA (podobná CC BY)" licence-url="#" licence-proof="https://www.eea.europa.eu/legal/copyright" %}
 
 **Data emisí skleníkových plynů** jsou shromažďována v rámci inventarizace emisí skleníkových plynů jednotlivých státu podle Rámcové úmluvy OSN o změně klimatu (UNFCCC). Za evropskou unii data kompiluje EEA (European Environmental Agency) do souhrnné zprávy a dále data publikuje Eurostat.
 
@@ -35,5 +26,14 @@ Z tohoto datasetu vybíráme pouze data za rok 2016.
 * LULUCF: Land Use -- Land Use Change-- Forestry (využítí zemědělské půdy, změna využítí zemědělské půdy a lesnictví), má smysl oddělit od zbytku, protože TODO a také proto je v našich grafikách nezahrnujeme. Emise v tomto sektoru jsou ve většině zemí Evropy (včetně České republiky) záporné.
 
 Detailní metodické pokyny k shromažďování dat o emisích CRF (Common Reporting Format) nabízí např. (starší) [dokument UNFCCC](https://unfccc.int/resource/docs/cop5/07.pdf). [Více kontextu](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Greenhouse_gas_emission_statistics&redirect=no#Trends_in_greenhouse_gas_emissions) této statistiky také nabízí Eurostat. 
+
+</div></div>
+<div class="section"><div class="container" markdown="1">
+
+## Velikost populace
+
+{% include data-header.html name="Eurostat" description="dataset demo_pjan" url="http://appsso.eurostat.ec.europa.eu/nui/show.do?wai=true&dataset=demo_pjan" licence="CC BY 4.0" licence-url="https://creativecommons.org/licenses/by/4.0/" licence-proof="https://ec.europa.eu/info/legal-notice_en" %}
+
+Z tohoto datasetu vybíráme pouze data za rok 2016.
 
 </div></div>

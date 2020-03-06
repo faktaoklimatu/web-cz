@@ -1,0 +1,15 @@
+<ul class="list-group data-header">
+    <li class="list-group-item active">Zdroj: {{ include.name }}</li>
+    {% if include.description %}
+    <li class="list-group-item">Popis: {{ include.description }}</li>
+    {% endif %}
+    <li class="list-group-item">Odkaz: <a href="{{ include.url }}">{{ include.url }}</a></li>
+    {% if include.doi %}
+    <li class="list-group-item">DOI: {{ include.doi }}</li>
+    {% endif %}
+    <li class="list-group-item">Licence: <a href="{{ include.licence-url }}">{{ include.licence }}</a>
+        {% if include.licence-proof %}
+        (viz. <a href="{{ include.licence-proof }}">informace o licenci</a>)
+        {% endif %}
+    </li>
+</ul>
