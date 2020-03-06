@@ -3,7 +3,7 @@
     {% if include.description %}
     <li class="list-group-item">Popis: {{ include.description }}</li>
     {% endif %}
-    <li class="list-group-item">Odkaz: <a href="{{ include.url }}">{{ include.url }}</a></li>
+    <li class="list-group-item ellipsis">Odkaz: <a href="{{ include.url }}">{{ include.url }}</a></li>
     {% if include.doi %}
     <li class="list-group-item">DOI: {{ include.doi }}</li>
     {% endif %}
