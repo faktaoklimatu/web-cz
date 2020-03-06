@@ -1,5 +1,6 @@
 # Generated web files
 assets/infographics/*
+assets/datasets/*
 assets/studies/*
 
 # Build Jekyll site

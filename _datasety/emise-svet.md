@@ -5,7 +5,7 @@ slug:       "emise-svet"
 weight:     10
 tags:       [ emise, svet ]
 caption:    "Delší časové řady zachycují vývoj emisí v čase, propojení všech indikátorů umožňuje detailnější analýzu, například srovnání emisí na obyvatele nebo na jednotku HDP."
-data:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
+dataset-url:    "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 ---
 <div class="section"><div class="container" markdown="1">
 

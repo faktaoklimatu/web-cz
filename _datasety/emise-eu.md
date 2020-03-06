@@ -5,7 +5,7 @@ slug:       "emise-eu"
 weight:     10
 tags:       [ emise, eu ]
 caption:    "Dataset obsahuje dva indikátory pro všechny státy EU (a některé další státy): Velikost populace (k 1. 1. 2016) a Emise skleníkových plynů (CO2, N2O, CH4, HFC, PFC, SF6, NF3 a přepočet na CO2eq, pro rok 2016)."
-data:   "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"
+dataset-url:    "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"
 ---
 <div class="section"><div class="container" markdown="1">
 

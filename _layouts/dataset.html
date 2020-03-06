@@ -10,36 +10,18 @@
     <div class="section">
       <div class="container">
         <h1>Dataset: {{ page.title }}</h1>
-        {% assign download_path = site.baseurl | append: "/assets/infographics/" | append: page.slug %}
 
         <div class="row" markdown="on">
             <div class="col-md-12 col-lg-9">
-            <a class="infographic" id="infographic-fullscreen" href="{{ download_path }}_1920.png">
-              <img class="infographic" src="{{ download_path }}_1200.png" alt="{{ page.title }}">
-            </a>
-            <hr/>
-            <p class="caption">{{ page.caption }}</p>
+              <img class="dataset" src="{{ site.baseurl }}/assets/datasets/{{ page.slug }}.png" alt="Dataset: {{ page.title }}">
+              <hr/>
+              <p class="caption">{{ page.caption }}</p>
             </div>
 
             <div class="col-md-12 col-lg-3 download-buttons">
-              <h2 class="d-block d-lg-none">Data, licence a sdílení</h2>
-              <p class="d-block d-lg-none">Podívejte se na podkladová data nebo infografiku sdílejte. Všechny naše infografiky jsou k dispozici pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
-              <h2 class="d-none d-lg-block">Ke stažení</h2>
-              <p class="d-none d-lg-block">Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
-              <div class="btn-group dropdown d-none d-lg-inline-flex" role="group">
-                <a href="{{ download_path }}.pdf" id="infographic-pdf" class="btn btn-primary" download>PDF</a>
-                <a href="{{ download_path }}.svg" id="infographic-svg" class="btn btn-primary" download>SVG</a>
-                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownPNGselection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</button>
-                <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownPNGselection">
-                    <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4242 px</a>
-                    <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1358 px</a>
-                    <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 848 px</a>
-                </div>
-              </div>
-              <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Podkladová data</h2>
               <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
-              <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
+              <a href="{{ page.dataset-url }}" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
               <p class="d-none d-lg-block">Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>

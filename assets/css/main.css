@@ -371,6 +371,10 @@ pre {
 
 /* Dataset page customizations */
 
+img.dataset {
+    max-width: 100%;
+}
+
 ul.data-header {
     margin: 1em 0 1em 0;
 }
@@ -378,6 +382,12 @@ ul.data-header {
 ul.data-header li.active {
     background-color: #000080;
     border-color: #000080;
+}
+
+ul.data-header .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Study page customizations */
