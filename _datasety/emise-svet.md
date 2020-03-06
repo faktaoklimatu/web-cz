@@ -15,15 +15,11 @@ Data emisí skleníkových plynů pochází z Emisní databáze pro globální v
 
 V době přípravy datasetu (září 2019) nebyla dostupná novější celosvětová data emisí skleníkových plynů. V listopadu 2019 Společné výzkumné středisko zveřejnilo novou verzi databáze EDGAR v5.0, s daty až do roku 2015, v případě emisí CO2 dokonce až do roku 2018. Rovněž pro některé regiony existují novější data (OECD nabízí data o emisích skleníkových plynů členských států až do roku 2017). Globální uhlíkový atlas (Global Carbon Atlas) uvádí emise pouze pro CO2 pro jednotlivé státy mezi lety 1960 a 2018.
 
-{% include data-buttons.html id="emise" data-url="https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" citation="Citace" warning="Pozor, tieto data uz su stare." %}
-
 </div></div>
 <div class="section"><div class="container" markdown="1">
 
 ## Velikost populace
 
 Data o velikosti populací pochází od Světové banky, konkrétně se jedná o indikátor SP.POP.TOTL.
-
-{% include data-buttons.html id="populace" data-url="https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" citation="Citace" %}
 
 </div></div>
