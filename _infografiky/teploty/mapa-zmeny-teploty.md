@@ -6,7 +6,7 @@ redirect_from: "/mapa-zmeny-teploty"
 weight:     99
 tags:       [ teploty ]
 caption:    "Svět se od roku 1961 oteplil přibližně o 1 °C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,8 °C, většina pevniny se otepluje rychleji. K největšímu oteplení, které za posledních 60 let přesáhlo 4 °C, dochází v Severním ledovém oceánu."
-# data-our:   ""
+data-our:   "https://docs.google.com/spreadsheets/d/16bTWzt0y8Omne9xxjd3o1rpszF764ATaC5UpFO5Zd7I/edit?usp=sharing"
 data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ] ]
 ---
 
