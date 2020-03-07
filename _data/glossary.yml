@@ -64,6 +64,11 @@
   name-short: "Uhelný phase-out"
   description: "Na výrobu elektřiny vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
 
+- id: carbon-neutrality
+  name-short: "Uhlíková neutralita"
+  description: "Stav, kdy jsou veškeré vypouštěné emise uhlíku (tzv. skleníkové plyny) eliminovány přírodními či technologickými procesy. Pokud máme udržet úroveň globálního oteplení pod 1,5 - 2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)
+). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
+
 - id: w
   name-short: "W a Wh (kW, MW… a kWh, MWh…)"
   name-long: "watt, watthodina a jejich násobky"
