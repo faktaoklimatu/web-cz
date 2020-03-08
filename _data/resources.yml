@@ -100,14 +100,14 @@
   tags: [ anglicky, svět, data, emise ]
   url: "https://edgar.jrc.ec.europa.eu/"
   image: "edgar.png"
-  description-short: "Nezávislá globální databáze emisí skleníkových plynů a znečištění ovzduší"
+  description-short: "Nezávislá globální databáze emisí skleníkových plynů a znečištění ovzduší."
   description-long: "EDGAR (zkratka z Emissions Database for Global Atmospheric Research) je společným projektem evropské JRC (Joint Research Centre) a nizozemské PBL (Environmental Assessment Agency). Kromě detailních emisních dat (databáze [EDGAR v5.0](https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG) obsahuje časové řady od roku 1970), map a infografik obsahuje také [souhrnné zprávy](https://edgar.jrc.ec.europa.eu/overview.php?v=booklet2019) za poslední roky. Pomocí EDGAR je např. možné vyhodnocovat strategie a zavedená opatření pro zmírnění emisí (i v rámci mezinárodních smluv), vytvářet analýzy a projekce, modelovat změny klimatu (lokálně i globálně) a sledovat změny ve zdrojích emisí i relevantních technologiích."
 
-- title: "COPERNICUS"
+- title: "Copernicus"
   tags: [ anglicky, EU, data, teploty ]
   url: "https://www.copernicus.eu/en"
   image: "copernicus.png"
-  description-short: "program EU zaměřený na sledování zemského povrchu a poskytování dat získaných družicovým snímáním a pozemním měřením. "
-  description-long: "Program je zaměřen na šest tematických oblastí (území, mořské prostředí, atmosféra, bezpečnost, krizové řízení a změna klimatu). Copernicus analyzuje data a vytváří rozsáhlou databázi informací o zemském povrchu.  Vesmírnou komponentu tvoří družice mise Sentinel Evropské vesmírné agentury (ESA), které nepřetržitě monitorují různé parametry  zemského povrchu. Získané snímky mohou uživatelé stahovat nebo prohlížet např. prostřednictvím služby [SCIHUB](https://scihub.copernicus.eu/dhus/#/home). Historická data, dlouhodobé trendy a předpovědi jsou dostupné v několika desítkách datasetů na [Copernicus Climate Data Storage](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset). Užitečné mohou být dále [predikce budoucího vývoje teplot](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-projections?tab=app) na území Evropy. Doplňující informace ke změně klimatu, vhodná adaptační a mitigační opatření jsou dostupná na [Climate Change Service](https://climate.copernicus.eu).  
+  description-short: "Program EU zaměřený na sledování zemského povrchu a poskytování dat získaných družicovým snímáním a pozemním měřením."
+  description-long: "Program je zaměřen na šest tematických oblastí (území, mořské prostředí, atmosféra, bezpečnost, krizové řízení a změna klimatu). Copernicus analyzuje data a vytváří rozsáhlou databázi informací o zemském povrchu. Vesmírnou komponentu tvoří družice mise Sentinel Evropské vesmírné agentury (ESA), které nepřetržitě monitorují různé parametry zemského povrchu. Získané snímky mohou uživatelé stahovat nebo prohlížet např. prostřednictvím služby [SCIHUB](https://scihub.copernicus.eu/dhus/#/home). Historická data, dlouhodobé trendy a předpovědi jsou dostupné v několika desítkách datasetů na [Copernicus Climate Data Storage](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset). Užitečné mohou být dále [predikce budoucího vývoje teplot](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-projections?tab=app) na území Evropy. Doplňující informace ke změně klimatu, vhodná adaptační a mitigační opatření jsou dostupná na [Climate Change Service](https://climate.copernicus.eu).  
 "
 
