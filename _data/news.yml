@@ -1,3 +1,21 @@
+- date: 2020-03-06
+  title: "Souhrnný report větších změn v infografikách"
+  summary: |
+    * [Trend nárůstu teplot v ČR v jednotlivých měsících](/infografiky/trend-teplot-cr) &rarr; ver. 2.0, doplněno o rok 2019
+    * [Průměrná roční teplota v ČR](/infografiky/teplota-cr) &rarr; ver. 2.0, doplněno o rok 2019
+    * [Průměrná teplota v ČR v jednotlivých měsících](/infografiky/teplota-cr-mesice) &rarr; ver. 2.0, doplněno o rok 2019
+    * [Vývoj koncentrace CO₂ v atmosféře](/infografiky/koncentrace-co2) &rarr; ver. 2.0, odstraněn rok 2019 v rámci vyšší konzistence a koherence použitých datových sad
+    * [Emise skleníkových plynů v ČR podle sektorů](/infografiky/emise-cr) (oba grafy) &rarr; ver. 3.x, opravena chyba v celkovém čísle, nárůst o 0,96Mt
+
+- date: 2020-03-02
+  summary: "První účast na větší konferenci - přímo v panelu na [Climate Open Data Expo](https://osf.cz/open-data-expo-2020/). Mimo to jsme také zhruba dva týdny předtím přednášeli na Přírodovědecké fakultě MU či Biskupském Gymnáziu v Brně."
+
+- date: 2020-02-27
+  title: "Mapa změn teploty a zpoplatnění emisí"
+  summary: |
+    * Nová infografika: [Mapa změny teploty mezi lety 1961–2019](/infografiky/mapa-zmeny-teploty)
+    * Nová infografika: [Zpoplatnění emisí: rozšíření ve světě](/infografiky/zpoplatneni-emisi-svet)
+
 - date: 2020-01-19
   title: "Vícedenní klimaton, Twitter, nové infografiky"
   summary: |
