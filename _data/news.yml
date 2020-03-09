@@ -5,7 +5,7 @@
     * [Průměrná roční teplota v ČR](/infografiky/teplota-cr) &rarr; ver. 2.0, doplněno o rok 2019
     * [Průměrná teplota v ČR v jednotlivých měsících](/infografiky/teplota-cr-mesice) &rarr; ver. 2.0, doplněno o rok 2019
     * [Vývoj koncentrace CO₂ v atmosféře](/infografiky/koncentrace-co2) &rarr; ver. 2.0, odstraněn rok 2019 v rámci vyšší konzistence a koherence použitých datových sad
-    * [Emise skleníkových plynů v ČR podle sektorů](/infografiky/emise-cr) (oba grafy) &rarr; ver. 3.x, opravena chyba v celkovém čísle, nárůst o 0,96Mt
+    * [Emise skleníkových plynů v ČR podle sektorů](/infografiky/emise-cr) (oba grafy) &rarr; ver. 3.x, opravena chyba v celkovém čísle. (Původní data nezměněna, číslo uvedené na grafice předchozí verze odpovídalo položce TOTX4_MEMO, která nezahrnuje emise letecké dopravy, zatímco všechna ostatní podkladová data pro grafiku leteckou dopravu zahrnovala)
 
 - date: 2020-03-02
   summary: "První účast na větší konferenci - přímo v panelu na [Climate Open Data Expo](https://osf.cz/open-data-expo-2020/). Mimo to jsme také zhruba dva týdny předtím přednášeli na Přírodovědecké fakultě MU či Biskupském Gymnáziu v Brně."
