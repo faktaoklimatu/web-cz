@@ -6,6 +6,7 @@ redirect_from: "/teplota-cr-mesice"
 weight:     105
 tags:       [ teploty ]
 caption:    "Srovnání teplot jednotlivých měsíců dekády 1961–1970 a let 2010–2019. Průměrná roční teplota se od roku 1961 zvýšila o 2 °C, ale oteplení se v různých měsících liší, například v květnu se teplota zvýšila o 1,4 °C. Největší změny v teplotě se udály v prosinci, lednu, červenci a srpnu."
+dataset:    "teplota-cr"
 data-our:   "https://docs.google.com/spreadsheets/d/1pNBmfQbz6QKAl9nLc5RnoLrJMFrCSxzk_KOY4Ns7xTY/edit?usp=sharing"
 data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 
