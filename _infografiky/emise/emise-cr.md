@@ -6,6 +6,7 @@ redirect_from: "/emise-cr"
 weight:     98
 tags:       [ emise, CO2, CR ]
 caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 131,31 mil. tun (údaj z roku 2016). V přepočtu na obyvatele to je 12,44 tCO<sub>2</sub>eq/obyvatele."
+dataset:    "emise-cr"
 data-our:   "https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ] ]
 ---

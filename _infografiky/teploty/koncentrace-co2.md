@@ -6,6 +6,7 @@ redirect_from: "/koncentrace-co2"
 weight:     95
 tags:       [ teploty, CO2, svet ]
 caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800 000 let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
+dataset:    "koncentrace-co2"
 data-our:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
