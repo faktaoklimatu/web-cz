@@ -3,7 +3,7 @@ layout:     dataset
 title:      "Vývoj koncentrace CO₂ v atmosféře"
 slug:       "koncentrace-co2"
 weight:     10
-tags:       [ co2, svet ]
+tags:       [ co2, svet, casova-rada ]
 caption:    "TODO"
 # dataset-url:    ""
 ---
