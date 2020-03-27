@@ -53,3 +53,10 @@ plugins:
 
 target-blank:
     add_css_classes: ext-link
+
+jekyll-archives:
+  enabled: [ "tags" ]
+  layouts:
+    tag: tag
+  collections:
+    merge_tags: true

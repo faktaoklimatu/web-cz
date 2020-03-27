@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  {% include header.html %}
+</head>
+
+<body>
+  {% include navigation.html %}
+  <main role="main">
+    <div class="section">
+      <div class="container clearfix">
+        <h1>Položky se štítkem "{{ page.title }}" <small class="text-muted">{{ page.posts|size }}</small></h1>
+      </div>
+    </div>
+    {% for col in page.collections %}
+    <div class="section">
+      <div class="container clearfix">
+        <h2>{{col[0]}}  <small class="text-muted">{{ col[1]|size }}</small></h2>
+        {% assign sorted_items = col[1] %}
+        {% include section_items.html %}
+      </div>
+    </div>
+    {% endfor %}
+  </main>
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>
