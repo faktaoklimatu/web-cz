@@ -1,13 +1,21 @@
 <h1 id="{{ page.id }}">{{ page.title }}</h1>
 {{ content }}
-{% assign sorted_items = site.infografiky | concat: site.studie | where_exp:"item","item.tags contains page.filter-tag" | sort: 'weight' %}
+{% assign all_items = site.infografiky | concat: site.datasety | concat: site.studie | sort: 'weight' %}
+{% assign prefiltered_items = all_items | where:"layout",page.filter-layout %}
+{% if page.filter-tag %}
+    {% assign filtered_items = prefiltered_items | where_exp:"item","item.tags contains page.filter-tag" %}
+{% else %}
+    {% assign filtered_items = prefiltered_items %}
+{% endif %}
 <div class="row justify-content-md-center">
-{% for item in sorted_items %}
+{% for item in filtered_items %}
     <div class="col-md-6 col-lg-4 homepage-card">
         <a href="{{ item.url }}">
             {% case item.layout %}
             {% when 'infographic' %}
                 <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid" />
+            {% when 'dataset' %}
+                <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid" />
             {% when 'study' %}
                 <div class="card-body">
                     <h5>{{ item.title }}</h5>
