@@ -7,6 +7,7 @@ weight:     90
 tags:       [ emise, svet, CO2 ]
 caption:    "Srovnání ročních emisí vybraných států a světových regionů, vyjádřeno na obyvatele i za celou populaci."
 dataset:    "emise-svet"
+data-our:   "https://drive.google.com/open?id=1aZNVRC7lJM28FxbKKnXo7HsPlyE2RaMbG3KDs8igwec"
 data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" ] ]
 ---
 
