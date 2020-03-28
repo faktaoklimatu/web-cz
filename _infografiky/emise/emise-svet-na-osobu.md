@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Emise světových regionů přepočtené na osobu"
 slug:       "emise-svet-na-osobu"
 redirect_from: "/emise-svet-na-osobu"
-weight:     91
+weight:     90
 tags:       [ emise, svet, CO2 ]
 caption:    "Srovnání ročních emisí vybraných států a světových regionů, vyjádřeno na obyvatele i za celou populaci."
 data-our:   "https://drive.google.com/open?id=1aZNVRC7lJM28FxbKKnXo7HsPlyE2RaMbG3KDs8igwec"
