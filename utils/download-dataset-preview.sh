@@ -23,7 +23,7 @@ DST_FILE_PNG=$2
 
 SRC_URL=`cat $SRC_FILE_MD | grep "^dataset-url:" | sed 's/^dataset-url:[ \t]*//'`
 
-echo -n "Downloading preview of $SRC_FILE_MD to $DST_FILE_PNG ..."
+# echo "Downloading preview of $SRC_FILE_MD to $DST_FILE_PNG ..."
 echo firefox --screenshot $DST_FILE_PNG --window-size=1200,800 $SRC_URL
-firefox --screenshot $DST_FILE_PNG --window-size=1200,800 $SRC_URL
-echo -e "\t\t [ OK ]"
+# firefox --screenshot $DST_FILE_PNG --window-size=1200,800 $SRC_URL
+# echo -e "\t\t [ OK ]"

@@ -18,7 +18,7 @@ reinstall:
 local: web
 	bundle exec jekyll serve
 
-web: $(INFOGRAPHICS_DST) $(DATASETS_DST) $(STUDIES_DST)
+web: $(INFOGRAPHICS_DST) $(STUDIES_DST)
 
 check: web
 	@echo "Building the website using Jekyll ..."
@@ -32,11 +32,13 @@ clean:
 $(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
 	utils/convert-infographic.sh $< $@
 
-$(DATASETS_FOLDER)/%.png: _datasety/%.md
-	bash utils/download-dataset-preview.sh $< $@
-
 $(STUDIES_FOLDER)/%.jpg: _studie/%.jpg
 	mkdir -p $(@D)
 	cp -v $< $@
+
+dataset-images: $(DATASETS_DST)
+
+$(DATASETS_FOLDER)/%.png: _datasety/%.md
+	@bash utils/download-dataset-preview.sh $< $@
 
 .PHONY: all web local clean
