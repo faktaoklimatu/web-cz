@@ -1,7 +1,7 @@
 # Generated web files
 assets/infographics/*
-assets/datasets/*
 assets/studies/*
+#assets/datasets/* # currently commited to repo
 
 # Build Jekyll site
 _site/*

@@ -12,6 +12,7 @@ addons:
     packages:
     - inkscape
     - pdf2svg
+    - wkhtmltopdf
 
 before_install:
   - git clone --depth=1 https://github.com/MestreLion/git-tools # Distro version is currently broken
