@@ -11,9 +11,12 @@ data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?da
 ---
 <div class="section"><div class="container" markdown="1">
 
-TODO: STALENESS WARNING: V současnosti už jsou pro emise skleníkových plynů i pro data emisních povolenek k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali.
-
 ## Emise skleníkových plynů
+
+{% include warning.html
+    title="Tyto data nejsou úplně aktuální"
+    text="V současnosti už jsou pro emise skleníkových plynů i pro data emisních povolenek k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali."
+%}
 
 {% include data-header.html name="Eurostat" description="Dataset env_air_gge V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2016 v milionech tun CO2eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)." url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" licence="CC BY 4.0" licence-url="https://creativecommons.org/licenses/by/4.0/" licence-proof="https://ec.europa.eu/info/legal-notice_en" %}
 
