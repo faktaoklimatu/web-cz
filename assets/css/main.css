@@ -390,6 +390,11 @@ ul.data-header .ellipsis {
     text-overflow: ellipsis;
 }
 
+.alert.data-staleness {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Study page customizations */
 
 .study-metadata {
