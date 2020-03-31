@@ -391,8 +391,8 @@ ul.data-header .ellipsis {
 }
 
 .alert.data-staleness {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 /* Study page customizations */
