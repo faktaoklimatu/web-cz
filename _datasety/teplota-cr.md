@@ -11,3 +11,7 @@ data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/p
 <div class="section"><div class="container" markdown="1">
 
 ## Teplota ČR
+
+TODO: source table
+
+TODO: text

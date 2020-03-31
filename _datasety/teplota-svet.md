@@ -12,3 +12,7 @@ dataset-url:    "https://docs.google.com/spreadsheets/d/16bTWzt0y8Omne9xxjd3o1rp
 <div class="section"><div class="container" markdown="1">
 
 ## Světová teplotní anomálie
+
+TODO: source table
+
+TODO: text
