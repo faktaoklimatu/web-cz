@@ -15,7 +15,10 @@
             {% when 'infographic' %}
                 <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid" />
             {% when 'dataset' %}
-                <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid" />
+                <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid card-img" />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                </div>
             {% when 'study' %}
                 <div class="card-body">
                     <h5>{{ item.title }}</h5>
