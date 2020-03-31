@@ -20,8 +20,23 @@
 
             <div class="col-md-12 col-lg-3 download-buttons">
               <h2 class="d-none d-lg-block">Podkladová data</h2>
-              <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
-              <a href="{{ page.dataset-url }}" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
+              <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Podívejte se na celý dataset i původní zdroje.</p>
+              {% if page.dataset-url %}
+              <a href="{{ page.dataset-url }}" id="data-our" class="btn btn-primary" role="button">Náš dataset</a>
+              {% endif %}
+              {% if page.data-orig.size == 1 %}
+              <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
+              {% elsif page.data-orig.size > 1 %}
+              <span class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
+                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Původní zdroj dat</button>
+                <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
+                  {% assign numDataSources = page.data-orig.size | minus: 1 %}
+                  {% for i in (0..numDataSources) %}
+                  <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
+                  {% endfor %}
+                </div>
+              </span>
+              {% endif %}
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
               <p class="d-none d-lg-block">Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
