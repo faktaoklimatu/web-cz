@@ -14,7 +14,7 @@ data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?da
 ## Emise skleníkových plynů
 
 {% include warning.html
-    title="Tyto data nejsou úplně aktuální"
+    title="Tato data nejsou úplně aktuální"
     text="V současnosti už jsou pro emise skleníkových plynů i pro data emisních povolenek k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali."
 %}
 
