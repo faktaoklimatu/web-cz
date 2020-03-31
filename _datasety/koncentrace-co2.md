@@ -13,3 +13,7 @@ data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarcti
 <div class="section"><div class="container" markdown="1">
 
 ## Vývoj koncentrace CO₂ v atmosféře
+
+TODO: source table
+
+TODO: text
