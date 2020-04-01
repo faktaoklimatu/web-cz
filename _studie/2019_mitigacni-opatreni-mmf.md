@@ -18,7 +18,6 @@ study-year:         2019
 study-isbn:         "978-1-51351-533-5"
 study-url:          "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019"
 study-pdf:          "https://www.imf.org/~/media/Files/Publications/fiscal-monitor/2019/October/English/text.ashx?la=en"
-
 ---
 
 ## Shrnutí

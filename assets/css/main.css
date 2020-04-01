@@ -190,20 +190,9 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
-.btn-outline-primary {
-    color: #000080;
-    border-color: #000080;
-}
-
-.btn-outline-primary:hover {
-    background-color: #1b1bff;
-    border-color: #1b1bff;
-}
-
 .btn-secondary {
-    background-color: rgba(0,0,0,0);
-    color: inherit;
-    border-width: 3px;
+    background-color: transparent;
+    color: #000080;
     border-color: #000080;
 }
 
