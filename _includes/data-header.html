@@ -7,7 +7,12 @@
     {% if include.doi %}
     <li class="list-group-item">DOI: {{ include.doi }}</li>
     {% endif %}
-    <li class="list-group-item">Licence: <a href="{{ include.licence-url }}">{{ include.licence }}</a>
+    <li class="list-group-item">Licence:
+        {% if include.licence-url %}
+        <a href="{{ include.licence-url }}">{{ include.licence }}</a>
+        {% else %}
+        {{ include.licence }}
+        {% endif %}
         {% if include.licence-proof %}
         (viz. <a href="{{ include.licence-proof }}">informace o licenci</a>)
         {% endif %}
