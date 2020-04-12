@@ -17,7 +17,7 @@
                 <img class="dataset" src="{{ site.baseurl }}/assets/datasets/{{ page.slug }}.png" alt="Dataset: {{ page.title }}">
               </a>
               <hr/>
-              <p class="caption">{{ page.caption }}</p>
+              <p class="dataset-caption">{{ page.caption }}</p>
             </div>
 
             <div class="col-md-12 col-lg-3 download-buttons">
@@ -41,7 +41,8 @@
               {% endif %}
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
-              <p class="d-none d-lg-block">Všechny naše datasety jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>. Původní data mají různé licence, detaily najdete v podrobném textu k datasetu.</p>
+              <p class="d-none d-lg-block">Všechny naše datasety jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
+              <p class="d-none d-lg-block">Původní data mají různé licence, detaily najdete v podrobném textu k datasetu.</p>
               <div class="btn-group" role="group">
                 <a class="btn btn-primary btn-sharing no-ext-link-icon" id="sharing-facebook" title="Sdílet na Facebooku" href="https://facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | cgi_escape }}" rel="noopener">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
