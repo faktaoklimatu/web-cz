@@ -42,9 +42,9 @@
                 <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Tato infografika je postavená na námi zpracovaném datasetu.</p>
                 <a href="/datasety/{{ page.dataset }}" class="btn btn-primary" role="button">Náš dataset</a>
               {% else %}
-                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Podívejte se na původní vstupní data a náš překlad.</p>
+                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Podívejte se na původní zdroje a naši zpracovanou tabulku.</p>
                 {% if page.data-our and page.data-our != '' %}
-                <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Náš překlad dat</a>
+                <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše tabulka s daty</a>
                 {% endif %}
                 {% if page.data-orig.size == 1 %}
                 <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
