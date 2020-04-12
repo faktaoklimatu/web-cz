@@ -4,15 +4,14 @@ title:      "Vývoj koncentrace CO₂ v atmosféře"
 slug:       "koncentrace-co2"
 weight:     10
 tags:       [ co2, svet, casova-rada ]
-caption:    "Dataset obsahuje tři různé datové řady lišící se časovým rozsahem, zdrojem dat i metodikou."
+caption:    "Dataset obsahuje tři různé datové řady lišící se časovým rozsahem, zdrojem dat i metodikou. Koncentrace CO₂ jsou uvedeny v jednotkách <glossary id='ppm'>ppm</glossary>."
 dataset-url:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
             , [ "Scripps CO<sub>2</sub> program", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
 ---
-<div class="section"><div class="container" markdown="1">
 
-Koncentrace CO₂ jsou uvedeny v jednotkách <glossary id="ppm">ppm</glossary>.
+<div class="section"><div class="container" markdown="1">
 
 ## Keelingova křivka, rok 1958 -- současnost
 
@@ -81,7 +80,7 @@ Tento dataset je ovšem složen z měření z mnohem více ledovcových vrtů z 
 * Vostok, měřený od sedmdesátých let u sovětské polární stanice Vostok (78°27′50″S 106°50′15″E, hloubka nejhlubšího vrtu z roku 1996 je 3623 m).
 
 Přestože mnohé z vrtů obsahují záznamy z širšího časového období, tento dataset je složen následujícím způsobem
-(níže používané "BP" je zkratka pro __before present__ a odkazuje pro roky před rokem 1950):
+(níže používané "BP" je zkratka pro *before present* a odkazuje pro roky před rokem 1950):
 
 * -51-2000 let BP: Law Dome (Rubino et al., 2013, MacFarling Meure et al., 2006),
 * 2-11 tisíc let BP: Dome C (Monnin et al., 2001 + 2004),

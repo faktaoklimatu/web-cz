@@ -329,6 +329,11 @@ p.caption {
     font-style: italic;
 }
 
+p.dataset-caption {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
 .download-buttons {
     margin-top: 1rem;
     text-align: left;
