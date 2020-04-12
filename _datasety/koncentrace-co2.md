@@ -8,7 +8,7 @@ caption:    "Dataset obsahuje tři různé datové řady lišící se časovým 
 dataset-url:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
-            , [ "Scripps CO<sub>2</sub> program", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
+            , [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
 ---
 
 <div class="section"><div class="container" markdown="1">
@@ -32,7 +32,7 @@ Datová sada obsahuje jen měsíční průměry měření, detailní denní a t�
 </div></div>
 <div class="section"><div class="container" markdown="1">
 
-## Kompozitní dataset SCRIPPS, posledních 2000 let
+## Kompozitní dataset Scripps, posledních 2000 let
 
 {% include data-header.html
     name="Scripps Institution of Oceanography"
@@ -66,7 +66,7 @@ Jsou současná měření a historická data srovnatelná? Měřené hodnoty z b
     licence-proof="https://www1.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt"
 %}
 
-V rámci projektu EPICA (European Project for Ice Coring in Antartica) byly získány nejstarší vzorky ledu pro měření koncentrace CO₂, které má doposud vědecká komunita k dispozici. Ty pocházejí ze dvou vrtů na Antarktidě:
+V rámci projektu EPICA (European Project for Ice Coring in Antartica) byly získány nejstarší vzorky ledu pro měření koncentrace CO₂ v rámci tohoto datasetu. Ty pocházejí ze dvou vrtů na Antarktidě:
 
 * Epica-DML, u německé Kohnovy stanice (75°00′06″S; 00°04′04″E, hloubka vrtu 2 774 m).
 * Dome C, u francouzsko-italské stanice Concordia (75°06′04″S; 123°20′52″E, hloubka vrtu 3 270 m).
