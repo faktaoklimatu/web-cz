@@ -388,7 +388,7 @@ img.dataset {
 
 ul.data-header {
     margin: 1em 0em;
-    max-width: 75%;
+    max-width: 825px;
 }
 
 ul.data-header li.list-group-item {
@@ -398,14 +398,14 @@ ul.data-header li.list-group-item {
 
 ul.data-header li span.title {
     float: left;
-    width: 12%;
+    width: 13%;
     padding: .25rem .5rem;
     font-weight: 600;
 }
 
 ul.data-header li span.text {
     float:left;
-    width: 88%;
+    width: 87%;
     padding: .25rem .5rem;
     border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
