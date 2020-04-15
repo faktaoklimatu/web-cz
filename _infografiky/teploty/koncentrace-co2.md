@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Vývoj koncentrace CO₂ v atmosféře"
+title:      "Vývoj koncentrace CO<sub>2</sub> v atmosféře"
 slug:       "koncentrace-co2"
 redirect_from: "/koncentrace-co2"
 weight:     95
