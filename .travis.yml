@@ -12,7 +12,6 @@ addons:
     packages:
     - inkscape
     - pdf2svg
-    - wkhtmltopdf
 
 before_install:
   - git clone --depth=1 https://github.com/MestreLion/git-tools # Distro version is currently broken
@@ -31,7 +30,7 @@ cache:
   directories:
   - $TRAVIS_BUILD_DIR/.cache  # Enable caching link checks
   - $TRAVIS_BUILD_DIR/assets/infographics  # Enable caching of generated infographics
-  - $TRAVIS_BUILD_DIR/assets/datasets  # Enable caching of infographic preview images
+#  - $TRAVIS_BUILD_DIR/assets/datasets  # Enable caching of infographic preview images
 
 deploy:
   provider: pages
