@@ -2,7 +2,7 @@
 layout:     dataset
 title:      "Vývoj změny teploty světa"
 slug:       "vyvoj-teplota-svet"
-weight:     10
+weight:     40
 tags:       [ teploty, svet, casova-rada ]
 caption:    "TODO"
 published:     false

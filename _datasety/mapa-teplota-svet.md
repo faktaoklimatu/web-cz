@@ -2,7 +2,7 @@
 layout:     dataset
 title:      "Mapa změny teploty světa"
 slug:       "mapa-teplota-svet"
-weight:     10
+weight:     20
 tags:       [ teploty, svet, mapa ]
 caption:    "TODO"
 published:     false

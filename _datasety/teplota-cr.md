@@ -2,7 +2,7 @@
 layout:     dataset
 title:      "Teplota ČR"
 slug:       "teplota-cr"
-weight:     10
+weight:     30
 tags:       [ teplota, cr ]
 caption:    "TODO"
 published:  false
