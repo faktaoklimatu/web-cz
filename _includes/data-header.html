@@ -1,14 +1,14 @@
-<ul class="list-group data-header">
-    <li class="list-group-item"><span class="title">Zdroj</span><span class="text">{{ include.name }}</span></li>
+<dl class="data-header">
+    <dt>Zdroj</dt><dd>{{ include.name }}</dd>
     {% if include.description %}
-    <li class="list-group-item"><span class="title">Popis</span><span class="text">{{ include.description }}</span></li>
+    <dt>Popis</dt><dd>{{ include.description }}</dd>
     {% endif %}
-    <li class="list-group-item"><span class="title">Odkaz</span><span class="text ellipsis"><a href="{{ include.url }}">{{ include.url }}</a></span></li>
+    <dt>Odkaz</dt><dd class="ellipsis"><a href="{{ include.url }}">{{ include.url }}</a></dd>
     {% if include.doi %}
-    <li class="list-group-item"><span class="title">DOI</span><span class="text ellipsis"><a href="{{ include.doi }}">{{ include.doi }}</a></span></li>
+    <dt>DOI</dt><dd class="ellipsis"><a href="{{ include.doi }}">{{ include.doi }}</a></dd>
     {% endif %}
-    <li class="list-group-item"><span class="title">Licence</span>
-        <span class="text">
+    <dt>Licence</dt>
+    <dd>
             {% if include.licence-url %}
             <a href="{{ include.licence-url }}">{{ include.licence }}</a>
             {% else %}
@@ -17,6 +17,5 @@
             {% if include.licence-proof %}
             (viz. <a href="{{ include.licence-proof }}">informace o licenci</a>)
             {% endif %}
-        </span>
-    </li>
-</ul>
+    </dd>
+</dl>
