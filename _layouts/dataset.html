@@ -30,7 +30,7 @@
               <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
               {% elsif page.data-orig.size > 1 %}
               <span class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
-                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Původní zdroj dat</button>
+                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Původní zdroje dat</button>
                 <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
                   {% assign numDataSources = page.data-orig.size | minus: 1 %}
                   {% for i in (0..numDataSources) %}
