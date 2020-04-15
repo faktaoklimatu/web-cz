@@ -51,6 +51,8 @@ Indikátor NY.GDP.MKTP.PP.KD tedy používá korekci pro inflaci i pro odlišné
 
 ## Geografická data
 
+Pro prezentaci výsledků potřebujeme další dvě pomocné tabulky, a to velikost populace v jednotlivých zemích a rozdělení zemí do regoinů.
+
 ### Velikost populace
 
 {% include data-header.html
