@@ -6,8 +6,7 @@ redirect_from: "/emise-svet-na-hdp"
 weight:     91
 tags:       [ emise, svet, CO2 ]
 caption:    "Roční emise vybraných států a světových regionů, přepočteno v poměru k HDP a srovnáno s celkovou velikostí ekonomiky."
-data-our:   "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ"
-data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" ] ]
+dataset:    "emise-svet"
 ---
 
 ## Jak číst tento graf?
