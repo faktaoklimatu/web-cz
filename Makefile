@@ -18,7 +18,7 @@ reinstall:
 local: web
 	bundle exec jekyll serve
 
-web: $(INFOGRAPHICS_DST) $(STUDIES_DST)
+web: $(INFOGRAPHICS_DST) $(STUDIES_DST) # $(DATASETS_DST)
 
 check: web
 	@echo "Building the website using Jekyll ..."
