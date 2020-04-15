@@ -37,7 +37,7 @@ data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?da
 %}
 </div></div>
 
-**Emise skleníkových plynů.** Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je omezen na Českou republiku. Více informací o této datové sadě je na stránce datasetu [Emise EU](emise-eu).
+**Emise skleníkových plynů.** Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je omezen na Českou republiku. Více informací o této datové sadě je na [stránce datasetu Emise EU](emise-eu).
 
 </div></div>
 <div class="section"><div class="container" markdown="1">
