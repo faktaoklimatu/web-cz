@@ -66,14 +66,20 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   name-long: "Representative Concentration Pathway"
   description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"  
 
+- id: sr15
+  name-short: "SR15"
+  name-long: "Special Report on Global Warming of 1.5 °C"
+  description: "Zvláštní zpráva ke globálnímu oteplení o 1,5 °C, vydaná IPCC v roce 2018. Zpráva srovná dopady oteplení o 1,5 °C proti oteplení o 2 °C (vzhledem k předindustriální době) a navrhuje scénáře snižování emisí skleníkových plynů, které by pomohly omezit oteplení v nejbližších letech. Ze zprávy vyplývá, že negativní dopady oteplení o 2 °C by byly výrazně vyšší, než při oteplení o 1,5 °C, a že je stále možné dosáhnout nárůstu teploty menšího než 1,5 °C – je k tomu nutné razantní snížení emisí od roku 2020 a dosažení uhlíkové neutrality do roku 2050."
 
 - id: srccl
-  name-short: SRCCL (Special Report on climate change and land)
-  decsription: Zvláštní zpráva o změně klimatu, krajině a půdě, publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje. 
+  name-short: "SRCCL" 
+  name-long: "Special Report on climate change and land"
+  decsription: "Zvláštní zpráva o změně klimatu, krajině a půdě, publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje."
 
 - id: srocc
-  name-short: SROCC (Special Report on the Ocean and Cryosphere in a Changing Climate)
-  description: Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu, vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy.
+  name-short: "SROCC"
+  name-long: "Special Report on the Ocean and Cryosphere in a Changing Climate"
+  description: "Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu, vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy."
 
 - id: phase-out
   name-short: "Uhelný phase-out"
