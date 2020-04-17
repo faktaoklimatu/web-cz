@@ -1,4 +1,4 @@
 <h1 id="{{ page.id }}">{{ page.title }}</h1>
 {{ content }}
 {% assign sorted_items = site.infografiky | concat: site.studie | where_exp:"item","item.tags contains page.filter-tag" | sort: 'weight' %}
-{% include section_items.html %}
+{% include preview-blocks.html blocks=sorted_items %}

@@ -201,23 +201,6 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
-.btn-tag {
-    margin: 0;
-    padding: .15rem .5rem;
-    border-radius: 1em;
-    color: #777777;
-    border-color: #777777;
-}
-
-.btn-tag-link {
-    margin-bottom: 10px;
-}
-
-.btn-tag-link:hover {
-    border-color: #000080;
-    color: #000080;
-}
-
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
@@ -305,6 +288,8 @@ a.preview-card:hover {
     padding-bottom: 3.25em;
 }
 
+/* Tag-related style */
+
 .tags-overlay-box {
     top: auto;
     padding: 40px 15px 15px 15px;
@@ -319,6 +304,27 @@ a.preview-card:hover {
 .tags {
     /* Padding to prevent click shadow cut */
     padding-bottom: 3px;
+}
+
+.btn-tag {
+    margin: 0;
+    padding: .15rem .5rem;
+    border-radius: 1em;
+    color: #777777;
+    border-color: #777777;
+}
+
+.btn-tag-link {
+    margin-bottom: 10px;
+}
+
+.btn-tag-link:hover {
+    border-color: #000080;
+    color: #000080;
+}
+
+#page-tag h2 {
+    margin-top: 1.5em;
 }
 
 /* Infographic page customizations */
