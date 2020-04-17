@@ -71,6 +71,10 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   name-short: SRCCL (Special Report on climate change and land)
   decsription: Zvláštní zpráva o změně klimatu, krajině a půdě, publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje. 
 
+- id: srocc
+  name-short: SROCC (Special Report on the Ocean and Cryosphere in a Changing Climate)
+  description: Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu, vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy.
+
 - id: phase-out
   name-short: "Uhelný phase-out"
   description: "Na výrobu elektřiny vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
