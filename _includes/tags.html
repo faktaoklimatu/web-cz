@@ -1,0 +1,11 @@
+{% if include.tags %}
+<div class="tags {{ include.container-class }}">
+    {% for tag in include.tags %}
+        {% if include.link == "true" %}
+            <a href="/tag/{{ tag | slugify }}" class="btn btn-tag btn-tag-link btn-sm" role="button">{{ tag }}</a>
+        {% else %}
+            <div class="btn btn-tag btn-sm">{{ tag }}</div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endif %}

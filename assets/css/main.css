@@ -201,6 +201,19 @@ ul:last-child {
     border-color: #1b1bff;
 }
 
+.btn-tag {
+    margin: 0;
+    padding: .15rem .5rem;
+    border-radius: 1em;
+    color: #777777;
+    border-color: #777777;
+}
+
+.btn-tag-link:hover {
+    border-color: #000080;
+    color: #000080;
+}
+
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
@@ -272,25 +285,36 @@ ul:last-child {
 
 /* Homepage section customizations */
 
-.homepage-card {
-    padding-top: 15px;
-}
-
-.homepage-card>* {
-    display: block;
-    background-color: #fff;
-    background-clip: border-box;
+.preview-card {
+    margin-top: 15px;
     border-width: 2px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.125);
-    border-radius: .25rem;
     text-decoration: none;
     text-align: left;
 }
 
-.homepage-card>a:hover {
+a.preview-card:hover {
     border-color: rgba(0,0,128,0.5);
     text-decoration: none;
+}
+
+.card-body-study {
+    padding-bottom: 3.25em;
+}
+
+.tags-overlay-box {
+    top: auto;
+    padding: 40px 15px 15px 15px;
+    background-image: linear-gradient(transparent, white, white);
+    overflow: hidden;
+}
+
+.tags-overlay-box .tags {
+    width: max-content;
+}
+
+.tags {
+    /* Padding to prevent click shadow cut */
+    padding-bottom: 3px;
 }
 
 /* Infographic page customizations */
