@@ -20,7 +20,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
 <div class="row"><div class="col-md-6">
 {% include data-header.html
     name="Eurostat"
-    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2016 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
+    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů (GHG)</glossary> pro rok 2016 v milionech tun <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
     url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
@@ -38,7 +38,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
 
 Data emisí skleníkových plynů jsou shromažďována v rámci inventarizace emisí skleníkových plynů jednotlivých státu podle Rámcové úmluvy OSN o změně klimatu (UNFCCC). Za Evropskou unii data kompiluje EEA (_European Environmental Agency_) do souhrnné zprávy a dále data publikuje Eurostat.
 
-### Přepočet na CO2eq
+### Přepočet na <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>
 
 Z databáze vybíráme hodnotu pro všechny sledované skleníkové plyny: CO<sub>2</sub> a další plyny (CH<sub>4</sub>, N<sub>2</sub>O, SF<sub>6</sub>, HFC, PFC, NF<sub>3</sub>) přepočtené na ekvivalentní množství CO<sub>2</sub> emisí pomocí [koeficientu GWP](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Tento koeficient pro každý plyn zohledňuje jeho absorpční vlastnosti a dobu, po kterou zůstane v atmosféře. V souladu s Kjótským protokolem data používají pro přepočet časový horizont 100 let. Koeficienty GWP použité pro přepočet jsou podle IPCC AR4, což byla [platná metodika](https://unfccc.int/process-and-meetings/transparency-and-reporting/methods-for-climate-change-transparency/common-metrics) UNFCCC pro rok 2016. Konkrétně jsou to hodnoty 25 pro CH<sub>4</sub>, 298 pro N<sub>2</sub>0, 22800 pro SF<sub>6</sub> a 17200 pro NF<sub>3</sub>. HFC a PFC zahrnují celou řadu plynů s rozdílnými koeficienty, všechny hodnoty najdete v tabulce 2.14 v [errata k AR4](https://www.ipcc.ch/site/assets/uploads/2018/05/ar4-wg1-errata.pdf).
 
