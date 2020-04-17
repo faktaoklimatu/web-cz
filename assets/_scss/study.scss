@@ -1,0 +1,44 @@
+/* Study page customizations */
+
+.study-metadata {
+    text-align: left;
+}
+
+.study-metadata img {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
+}
+
+.study-metadata .btn {
+    display: block;
+}
+
+.study-metadata ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Customizations of resource page */
+
+.resources .lead {
+    margin-bottom: 0.5rem;
+}
+
+.resources {
+    margin-bottom: 3rem;
+}
+
+.resources:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .resources {
+        text-align: center;
+    }
+    .resources img {
+        max-width: 150px;
+        margin-bottom: 1rem;
+    }
+}

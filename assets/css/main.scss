@@ -1,0 +1,15 @@
+---
+# Tento soubor by měl obsahovat pouze @importy ze složky assets/_scss.
+# Samotná složka _scss není exportovaná na web, je pouze použita na zkompilování
+# celého CSS souboru.
+---
+
+@import "_colors.scss";
+@import "_common.scss";
+
+@import "core_design.scss";
+@import "dataset.scss";
+@import "index.scss";
+@import "infographic.scss";
+@import "news.scss";
+@import "study.scss";

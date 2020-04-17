@@ -1,0 +1,85 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 5.5rem;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: $c-primary;
+    font-size: 1.0rem;
+    background: $c-body;
+    position: relative;
+    min-height: 100vh;
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: left;
+    }
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold !important;
+}
+
+/* Fix anchor links */
+h1:target,
+h2:target,
+h3:target {
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+a {
+    color: $c-primary;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.ext-link:after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    margin-left: 0.3em;
+    font-size: 60%;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    top: -0.15em;
+}
+
+a.no-ext-link-icon:after {
+    content: none;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: bold;
+}
