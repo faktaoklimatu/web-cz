@@ -116,7 +116,8 @@ books_en:
   items:
   - title: "There is no planet B"
     image: "there-is-no-planet-b.png"
-    author: Mike Berners-Lee
-    ISBN: 9781108439589
+    meta:
+      Autor: Mike Berners-Lee
+      ISBN: 9781108439589
     description-short: Kniha There is no planet B je koncipovaná jako série každodenních otázek, která nás postupně provádí různými tématy souvisejícími se změnou klimatu.
     description-long: Kniha There is no planet B je koncipovaná jako série každodenních otázek, která nás postupně provádí různými tématy souvisejícími se změnou klimatu. Jaká je uhlíková stopa jednotlivých potravin? Může nás spasit jaderná fůze? Mám si koupit elektromobil? Autor odpovídá za pomocí čísel podložených vyčerpávajícím výzkumem. Čtenář tak získá představu o tom, jak může každý den malým dílem přispět k záchraně planety A. Z knihy je navíc patrné, ve kterých oblastech je možné dosáhnout výrazného systémového zlepšení (např. ve které fázi produkce potravin lze zásadním způsobem omezit ztráty) a jaké snahy přinášejí naopak spíše marginální výsledky.
