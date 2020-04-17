@@ -13,28 +13,26 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
 
 <div class="section">
     <div class="container">
-{% assign resources_filtered = site.data.resources | where_exp:"item","item.tags contains 'česky'" %}
-{% for item in resources_filtered %}
-        <div class="row resources">
-            <div class="col-12 col-sm-3 col-lg-2">
-                <a href="{{ item.url }}" class="no-ext-link-icon">
-                    <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
+        <div class="row justify-content-md-center align-items-stretch">
+            {% for res in site.data.resources %}
+            <div class="col-12 col-sm-4 homepage-card">
+                <a href="#{{ res[0] }}">
+                    <div class="card-body">
+                        <h5>{{ res[1].name }}</h5>
+                    </div>
                 </a>
             </div>
-            <div class="col-12 col-sm-9 col-lg-10">   
-                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-                <p class="lead">{{ item.description-short }}</p>
-                {{ item.description-long | markdownify }}
-            </div>
+            {% endfor %}
         </div>
-{% endfor %}
     </div>
 </div>
 
+{% for res in site.data.resources %}
+<a name="{{res[0]}}"></a>
 <div class="section">
     <div class="container">
-{% assign resources_filtered = site.data.resources | where_exp:"item","item.tags contains 'anglicky'" %}
-{% for item in resources_filtered %}
+        <h2 class="mb-5">{{res[1].name}}</h2>
+        {% for item in res[1].items %}
         <div class="row resources">
             <div class="col-12 col-sm-3 col-lg-2">
                 <a href="{{ item.url }}" class="no-ext-link-icon">
@@ -43,10 +41,17 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
             </div>
             <div class="col-12 col-sm-9 col-lg-10">
                 <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+                {% if item.author %}
+                <span class="text-secondary mr-2">Autor: <b>{{ item.author }}</b></span>
+                {% endif %}
+                {% if item.ISBN %}
+                <span class="text-secondary mr-2">ISBN: <b>{{ item.ISBN }}</b></span>
+                {% endif %}
                 <p class="lead">{{ item.description-short }}</p>
                 {{ item.description-long | markdownify }}
             </div>
         </div>
-{% endfor %}
+        {% endfor %}
     </div>
 </div>
+{% endfor %}
