@@ -28,8 +28,7 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
 </div>
 
 {% for res in site.data.resources %}
-<a name="{{res[0]}}"></a>
-<div class="section">
+<div class="section" id="{{res[0]}}">
     <div class="container">
         <h2 class="mb-5">{{res[1].name}}</h2>
         {% for item in res[1].items %}
