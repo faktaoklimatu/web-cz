@@ -31,7 +31,8 @@ collections:
         output: true
         permalink: /datasety/:title
 sass:
-    sass_dir: assets/css
+    sass_dir: assets/_scss
+    style: compressed
 cache_dir: .cache
 
 cdn:

@@ -1,0 +1,150 @@
+/* Core design: sectioning, header, footer, buttons */
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.section:nth-of-type(odd) {
+    background: white;
+}
+
+ul:last-child {
+    margin-bottom: 0;
+}
+
+.navbar {
+    background: $c-body;
+    top: 0;
+    transition: top 300ms;
+}
+
+.navbar-scrolled {
+    box-shadow: 0 3px 10px #e2e2ff;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    background-image: url(/assets/img/favicon.png);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: left;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $c-primary;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:  #000000;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    font-weight: bold;
+    color: $c-primary;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #E7E7E7;
+    color: $c-secondary;
+    font-size: 80%;
+}
+
+.page-footer .float-right {
+    text-align: right;
+}
+
+.page-footer a {
+    color: $c-secondary;
+    text-decoration: none;
+}
+
+.btn {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $c-primary;
+    border-color: $c-primary;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $c-primary-lighten;
+    border-color: $c-primary-lighten;
+}
+
+.btn-outline-primary {
+    color: $c-primary;
+    border-color: $c-primary;
+}
+
+.btn-outline-primary:hover {
+    background-color: $c-primary-lighten;
+    border-color: $c-primary-lighten;
+}
+
+.btn-secondary {
+    background-color: rgba(0,0,0,0);
+    color: inherit;
+    border-width: 3px;
+    border-color: $c-primary;
+}
+
+.btn-secondary:hover {
+    background-color: $c-primary-lighten;
+    border-color: $c-primary-lighten;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $c-primary-lighten;
+    border-color: $c-primary-lighten;
+}
+
+.table table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table thead {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.05);
+}

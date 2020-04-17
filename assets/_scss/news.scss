@@ -1,0 +1,41 @@
+/* Customizations of news page */
+
+.news-item {
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.news-item .date {
+    width: 6em;
+    vertical-align: top;
+    padding-right: 1rem;
+    margin-bottom: 0.2rem;
+    color: $c-secondary;
+}
+
+.news-item .date:before {
+    content: "\2022";
+    display: block;
+    line-height: 0;
+    position: relative;
+    left: -0.5em;
+    top: 0.18em;
+    font-size: 3em;
+    color: $c-primary;
+}
+
+@media screen and (min-width: 768px) {
+    .news-item .summary {
+        width: calc(100% - 7em);
+    }
+}
+
+.news-item h2 {
+    margin-bottom: 0;
+}
+
+.subscription-form .btn {
+    margin-bottom: 0;
+}

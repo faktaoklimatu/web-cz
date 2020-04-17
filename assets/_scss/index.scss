@@ -1,0 +1,72 @@
+/* Intro page customizations */
+
+.intro .tagline {
+    text-transform: uppercase;
+    text-align: right;
+    float: left;
+    width: 15.2rem;
+    margin-top: 1rem;
+}
+
+.intro h1 {
+    font-size: 4.5rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    padding-left: 19rem;
+    margin-top: -3.5rem;
+}
+
+.intro .btn {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .intro .tagline {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        word-spacing: 0;
+        margin-bottom: 1rem;
+    }
+
+    .intro h1 {
+        text-align: center;
+    }
+
+    .intro p {
+        padding-left: 0;
+        margin-top: 0;
+    }
+}
+
+/* Homepage section customizations */
+
+.homepage-card {
+    padding-top: 15px;
+}
+
+.homepage-card>* {
+    display: block;
+    background-color: #fff;
+    background-clip: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.125);
+    border-radius: .25rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.homepage-card>a:hover {
+    border-color: rgba($c-primary, 0.5);
+    text-decoration: none;
+}
+
+.homepage-card .card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: auto;
+    margin: 17px;
+}

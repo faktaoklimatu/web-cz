@@ -1,0 +1,49 @@
+/* Dataset page customizations */
+
+img.dataset {
+    max-width: 100%;
+}
+
+dl.data-header {
+    margin: 1em 0em;
+    max-width: 825px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: border-box;
+    overflow: hidden;
+}
+
+dl.data-header dt {
+    flex-basis: 13%;
+    background-color: rgba(0, 0, 0, 0.125);
+    padding: .25rem .5rem;
+    margin: 0em;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+dl.data-header dd {
+    flex-basis: 80%;
+    flex-grow: 1;
+    padding: .25rem .5rem;
+    margin: 0em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+dl.data-header dd:last-of-type, dl.data-header dt:last-of-type {
+    border-bottom-width: 0px;
+}
+
+dl.data-header .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.alert.data-staleness {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
