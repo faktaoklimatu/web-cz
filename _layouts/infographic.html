@@ -45,7 +45,7 @@
               {% if page.data-orig.size == 1 %}
               <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
               {% elsif page.data-orig.size > 1 %}
-              <span class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
+              <div class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
                 <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zdrojová data</button>
                 <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
                   {% assign numDataSources = page.data-orig.size | minus: 1 %}
@@ -53,7 +53,7 @@
                   <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
                   {% endfor %}
                 </div>
-              </span>
+              </div>
               {% endif %}
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
@@ -110,7 +110,7 @@
         {{ content }}
       </div>
     </div>
-    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]" 
+    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]"
     | where_exp:"item","item.slug != page.slug" | sample: 4 %}
     {% if sorted_infographics.size > 0 %}
     <div class="section">
