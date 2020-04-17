@@ -66,6 +66,11 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   name-long: "Representative Concentration Pathway"
   description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"  
 
+
+- id: srccl
+  name-short: SRCCL (Special Report on climate change and land)
+  decsription: Zvláštní zpráva o změně klimatu, krajině a půdě, publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje. 
+
 - id: phase-out
   name-short: "Uhelný phase-out"
   description: "Na výrobu elektřiny vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
