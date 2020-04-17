@@ -5,6 +5,12 @@
   name-short: "Adaptace"
   description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příklady současných adaptačních opatření jsou například protipovodňové zábrany, změny pěstovaných plodin nebo přesídlení do výše položených oblastí, které nebudou postiženy zvyšováním hladiny oceánů. Některé očekávané dopady klimatických změn, jako například silnější hurikány nebo rozšíření tropických nemocí, umožňují jen minimální prevenci a zvládání škod jimi způsobených bude nákladné."
 
+- id: albedo
+  name-short: "Albedo"
+  description: "Albedo vyjadřuje odrazivost povrchu, tedy kolik z příchozího záření odrazí povrch zpět. Povrch, který veškeré záření pohltí, má albedo 0 a povrch, který veškeré záření odrazí, má albedo 1. V klimatologii hraje albedo důležitou roli v úvahách o energetické bilanci planety a při určování v množství slunečního záření, které povrch planety odrazí. 
+Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijatého záření se odrazí a dvě třetiny se přemění na teplo. Různé oblasti planety však mají různé albedo, které se může navíc měnit během roku, podle typu vegetace, množství sněhu nebo zámrzu na vodní hladině - čerstvý sníh má albedo 0,8 (tedy odráží 80% záření), albedo ledovců je mezi 0,5 až 0,7.  Naopak volný oceán nebo černý asfalt pohltí skoro všechno záření, které na ně dopadne - oceán má albedo 0,06 a asfalt 0,04.
+"
+
 - id: antropogennisklenikoveplyny
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
