@@ -3,10 +3,8 @@
 .section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
 
-@media screen and (max-width: 576px) {
-    .section {
+    @media screen and (max-width: 576px) {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -24,32 +22,31 @@ ul:last-child {
     background: $c-body;
     top: 0;
     transition: top 300ms;
-}
 
-.navbar-scrolled {
-    box-shadow: 0 3px 10px #e2e2ff;
-}
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 
-.navbar a {
-    text-transform: uppercase;
-    text-decoration: none;
-}
+    &-scrolled {
+        box-shadow: 0 3px 10px #e2e2ff;
+    }
 
-.navbar-brand {
-    padding-left: 2rem;
-    background-image: url(/assets/img/favicon.png);
-    background-repeat: no-repeat;
-    background-size: 1.5rem;
-    background-position: left;
+    &-brand {
+        padding-left: 2rem;
+        background-image: url(/assets/img/favicon.png);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: left;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: $c-primary;
-}
 
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color:  #000000;
+    &:focus, &:hover {
+        color:  #000000;
+    }
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -74,15 +71,15 @@ ul:last-child {
     background: #E7E7E7;
     color: $c-secondary;
     font-size: 80%;
-}
 
-.page-footer .float-right {
-    text-align: right;
-}
+    .float-right {
+        text-align: right;
+    }
 
-.page-footer a {
-    color: $c-secondary;
-    text-decoration: none;
+    a {
+        color: $c-secondary;
+        text-decoration: none;
+    }
 }
 
 .btn {
@@ -94,22 +91,22 @@ ul:last-child {
     color: #fff;
     background-color: $c-primary;
     border-color: $c-primary;
-}
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: $c-primary-lighten;
-    border-color: $c-primary-lighten;
+    &:hover {
+        color: #fff;
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
 }
 
 .btn-outline-primary {
     color: $c-primary;
     border-color: $c-primary;
-}
 
-.btn-outline-primary:hover {
-    background-color: $c-primary-lighten;
-    border-color: $c-primary-lighten;
+    &:hover {
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
 }
 
 .btn-secondary {
@@ -117,11 +114,11 @@ ul:last-child {
     color: inherit;
     border-width: 3px;
     border-color: $c-primary;
-}
 
-.btn-secondary:hover {
-    background-color: $c-primary-lighten;
-    border-color: $c-primary-lighten;
+    &:hover {
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -132,19 +129,21 @@ ul:last-child {
     border-color: $c-primary-lighten;
 }
 
-.table table {
-    margin-left: auto;
-    margin-right: auto;
-}
+.table {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.table thead {
-    background-color: rgba(0,0,0,.05);
-}
+    thead {
+        background-color: rgba(0,0,0,.05);
+    }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02);
-}
+    &-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0,0,0,.02);
+    }
 
-.table-hover tbody tr:hover {
-    background-color: rgba(0,0,0,.05);
+    &-hover tbody tr:hover {
+        background-color: rgba(0,0,0,.05);
+    }
 }
