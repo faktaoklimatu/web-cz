@@ -14,10 +14,11 @@ addons:
     - pdf2svg
 
 before_install:
-  - git clone https://github.com/MestreLion/git-tools # Distro version is currently broken
+  - git clone --depth=1 https://github.com/MestreLion/git-tools # Distro version is currently broken
 
-script: 
+script:
   - ./git-tools/git-restore-mtime
+  - rm -rf ./git-tools
   - make check
 
 env:
