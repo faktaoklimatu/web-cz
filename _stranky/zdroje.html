@@ -35,12 +35,16 @@ intro:      "Rozcestník odkazů na stránky vybraných výzkumných institucí,
         {% for item in res[1].items %}
         <div class="row resources">
             <div class="col-12 col-sm-3 col-lg-2">
-                <a href="{{ item.url }}" class="no-ext-link-icon">
+                {% if item.url %}<a href="{{ item.url }}" class="no-ext-link-icon">{% endif %}
                     <img src="/assets/resources/{{ item.image }}" class="img-fluid" alt="{{ item.title }}">
-                </a>
+                {% if item.url %}</a>{% endif %}
             </div>
             <div class="col-12 col-sm-9 col-lg-10">
-                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+                <h2>
+                    {% if item.url %}<a href="{{ item.url }}">{% endif %}
+                        {{ item.title }}
+                    {% if item.url %}</a>{% endif %}
+                </h2>
                 {% for m in item.meta %}
                 <span class="text-secondary mr-2">{{ m[0] }}: <b>{{ m[1] }}</b></span>
                 {% endfor %}
