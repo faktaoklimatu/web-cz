@@ -42,6 +42,11 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   name-long: "Klimatický hackathon"
   description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
 
+- id: ipccar
+  name-short: "Hodnotící zprávy IPCC"
+  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisic stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací, tedy zmírněním dopadů změny klimatu. Vedle hodnotících zpráv připravuje IPCC také zvlášntí zprávy ke konkrétním problémům.
+
+
 - id: ipcc
   name-short: "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change"
