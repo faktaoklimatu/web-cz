@@ -53,7 +53,7 @@
 - id: ppm
   name-short: "ppm"
   name-long: "parts per million"
-  description: "Počet částic v milionu, podobně jako procenta (_per cento_) znamená počet ve stovce a promile (_per mīlle_) znamená počet v tisíci, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 ‰ nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
+  description: "Jednotka koncentrace s významem počet částic v milionu, tedy jde o jiný zápis jednotky μmol/mol. Podobně jako procenta (_per cento_) znamená počet ve stovce a promile (_per mīlle_) znamená počet v tisíci, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 ‰ nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
   
 - id: rcp
   name-short: "RCP"
