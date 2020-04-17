@@ -115,6 +115,8 @@ books_en:
   name: Anglické knihy
   items:
   - title: "There is no planet B"
+    url: https://theresnoplanetb.net/
+    tags: [ anglicky ]
     image: "there-is-no-planet-b.png"
     meta:
       Autor: Mike Berners-Lee
