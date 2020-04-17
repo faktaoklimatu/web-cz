@@ -8,17 +8,15 @@ body {
     position: relative;
     min-height: 100vh;
     text-align: justify;
-}
 
-@media screen and (max-width: 500px) {
-    body {
-        padding-bottom: 6rem;
-    }
-}
+    @media screen {
+        @media (max-width: 500px) {
+            padding-bottom: 6rem;
+        }
 
-@media screen and (max-width: 768px) {
-    body {
-        text-align: left;
+        @media (max-width: 768px) {
+            text-align: left;
+        }
     }
 }
 
@@ -30,6 +28,10 @@ h2 {
     font-size: 1.35rem;
     font-weight: bold !important;
     text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 h3 {
@@ -47,10 +49,6 @@ h3:target {
 
 h5 {
     font-weight: bold;
-}
-
-h2 a {
-    text-decoration: none;
 }
 
 a {
