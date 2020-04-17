@@ -209,6 +209,10 @@ ul:last-child {
     border-color: #777777;
 }
 
+.btn-tag-link {
+    margin-bottom: 10px;
+}
+
 .btn-tag-link:hover {
     border-color: #000080;
     color: #000080;
