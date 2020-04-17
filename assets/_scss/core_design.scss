@@ -1,4 +1,99 @@
-/* Core design: sectioning, header, footer, buttons */
+body {
+    padding-top: 3rem;
+    padding-bottom: 5.5rem;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: $c-primary;
+    font-size: 1.0rem;
+    background: $c-body;
+    position: relative;
+    min-height: 100vh;
+    text-align: justify;
+
+    @media screen {
+        @media (max-width: 500px) {
+            padding-bottom: 6rem;
+        }
+
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+    }
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: bold !important;
+    text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold !important;
+}
+
+/* Fix anchor links */
+h1:target,
+h2:target,
+h3:target {
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+a {
+    color: $c-primary;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.ext-link:after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    margin-left: 0.3em;
+    font-size: 60%;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    top: -0.15em;
+}
+
+a.no-ext-link-icon:after {
+    content: none;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+pre {
+    margin: 1rem 0 1rem 0;
+    background: rgba(0,0,0,0.05);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
 
 .section {
     padding-top: 3rem;
