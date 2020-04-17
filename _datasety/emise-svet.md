@@ -4,13 +4,13 @@ title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
 weight:     50
 tags:       [ emise, svet ]
-caption:    "Dataset obsahuje časové řady tří indikátorů pro všechny státy (a některá závislá území) světa. Delší časové řady zachycují vývoj emisí v čase, propojení všech indikátorů umožňuje detailnější analýzu - například srovnání emisí na obyvatele nebo na jednotku HDP."
+caption:    "Dataset obsahuje časové řady tří indikátorů pro všechny státy (a některá závislá území) světa: emise skleníkových plynů, velikost populace a velikost ekonomik. Delší časové řady zachycují vývoj emisí v čase, propojení všech indikátorů umožňuje detailnější analýzu – například srovnání emisí na obyvatele nebo na jednotku HDP."
 dataset-url:    "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ"
 data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" ] ]
 ---
 <div class="section"><div class="container" markdown="1">
 
-## Emise skleníkových plynů za rok 2015
+## Emise skleníkových plynů (období 1970–2015)
 
 {% include data-header.html
     name="Evropská komise, JRC (Joint Research Centre)"
@@ -28,7 +28,7 @@ Data za rok 2015 jsou nejnovější existující pro celý svět pro emise <glos
 </div></div>
 <div class="section"><div class="container" markdown="1">
 
-## Velikost ekonomik
+## Velikost ekonomik (období 1990–2018)
 
 {% include data-header.html
     name="Světová banka"
@@ -53,7 +53,7 @@ Indikátor NY.GDP.MKTP.PP.KD tedy používá korekci pro inflaci i pro odlišné
 
 Pro prezentaci výsledků potřebujeme další dvě pomocné tabulky, a to velikost populace v jednotlivých zemích a rozdělení zemí do regionů.
 
-### Velikost populace
+### Velikost populace (období 1960–2018)
 
 {% include data-header.html
     name="Světová banka"
@@ -68,6 +68,6 @@ Data o velikosti populací pochází také od Světové banky, konkrétně se je
 
 ### Rozdělení do regionů
 
-Země jsou v jednotlivých listech označené třípísmenným kódem podle normy [ISO 3166-1](https://cs.wikipedia.org/wiki/ISO_3166-1), která umožňuje propojení dat z různých zdrojů (jména zemí zpravidla nejsou konzistentní pro různé zdroje). Dataset rovněž obsahuje přiřazení zemí do větších geografických celků. Toto zařazení závisí vždy na výběru konkrétních regionů a není zcela jednoznačné, proto dataset obsahuje několik geografických rozdělení – do regionů podle Světové banky a podle doporučení [Wikimedia](https://meta.wikimedia.org/wiki/List_of_countries_by_regional_classification), rovněž i námi vytvořené přiřazení pro infografiky.
+Země jsou v jednotlivých listech označené třípísmenným kódem podle normy [ISO 3166-1](https://cs.wikipedia.org/wiki/ISO_3166-1), která umožňuje propojení dat z různých zdrojů (jména zemí zpravidla nejsou konzistentní pro různé zdroje). Dataset rovněž obsahuje přiřazení zemí do větších geografických celků. Vybrané geografické celky vždy závisí na účelu dané infografiky, proto dataset obsahuje několik geografických rozdělení podle potřeb jednotlivých infografik.
 
 </div></div>
