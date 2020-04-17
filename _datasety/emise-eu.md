@@ -4,7 +4,7 @@ title:      "Emise skleníkových plynů EU"
 slug:       "emise-eu"
 weight:     60
 tags:       [ emise, eu ]
-caption:    "Dataset obsahuje dva indikátory pro všechny státy EU (a některé další státy): Velikost populace k 1. 1. 2016 a Emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2016."
+caption:    "Dataset obsahuje dva indikátory pro všechny státy EU (a některé další státy): Velikost populace k 1. 1. 2016 a Emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na tuny CO<sub>2</sub>eq) za rok 2016."
 dataset-url:    "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"
 data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ] ]
 ---
@@ -40,7 +40,7 @@ Data emisí skleníkových plynů jsou shromažďována v rámci inventarizace e
 
 ### Přepočet na CO2eq
 
-Z databáze vybíráme hodnotu pro všechny sledované skleníkové plyny: CO<sub>2</sub> a další plyny (CH<sub>4</sub>, N<sub>2</sub>O, SF<sub>6</sub>, HFC, PFC, NF<sub>3</sub>) přepočtené na ekvivalentní množství CO<sub>2</sub> emisí pomocí potenciálu globálního oteplování (GWP). Tento potenciál u každého plynu závisí na jeho radiačních vlastnostech, molekulární váze a na době, po kterou zůstane v atmosféře. V souladu s Kjótským protokolem data používají pro přepočet časový horizont 100 let. Konstanty GWP použité pro přepočet jsou podle IPCC AR4, což byla [platná metodika](https://unfccc.int/process-and-meetings/transparency-and-reporting/methods-for-climate-change-transparency/common-metrics) UNFCCC pro rok 2016. Konkrétně jsou to hodnoty 25 pro CH<sub>4</sub>, 298 pro N<sub>2</sub>0, 22800 pro SF<sub>6</sub> a 17200 pro NF<sub>3</sub>. HFC a PFC zahrnují celou řadu plynů s rozdílnými koeficienty, všechny hodnoty najdete v tabulce 2.14 v [errata k AR4](https://www.ipcc.ch/site/assets/uploads/2018/05/ar4-wg1-errata.pdf).
+Z databáze vybíráme hodnotu pro všechny sledované skleníkové plyny: CO<sub>2</sub> a další plyny (CH<sub>4</sub>, N<sub>2</sub>O, SF<sub>6</sub>, HFC, PFC, NF<sub>3</sub>) přepočtené na ekvivalentní množství CO<sub>2</sub> emisí pomocí [koeficientu GWP](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Tento koeficient pro každý plyn zohledňuje jeho absorpční vlastnosti, a na dobu, po kterou zůstane v atmosféře. V souladu s Kjótským protokolem data používají pro přepočet časový horizont 100 let. Koeficienty GWP použité pro přepočet jsou podle IPCC AR4, což byla [platná metodika](https://unfccc.int/process-and-meetings/transparency-and-reporting/methods-for-climate-change-transparency/common-metrics) UNFCCC pro rok 2016. Konkrétně jsou to hodnoty 25 pro CH<sub>4</sub>, 298 pro N<sub>2</sub>0, 22800 pro SF<sub>6</sub> a 17200 pro NF<sub>3</sub>. HFC a PFC zahrnují celou řadu plynů s rozdílnými koeficienty, všechny hodnoty najdete v tabulce 2.14 v [errata k AR4](https://www.ipcc.ch/site/assets/uploads/2018/05/ar4-wg1-errata.pdf).
 
 ### Kategorie emisí podle zdroje
 
