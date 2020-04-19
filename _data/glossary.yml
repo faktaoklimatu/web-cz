@@ -31,7 +31,7 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
 
 - id: externalita
   name-short: "Externalita"
-  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující splodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci - například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
+  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci - například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
 
 - id: emisniintenzitaekonomiky
   name-short: "Emisní intenzita ekonomiky"
@@ -44,7 +44,7 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
 
 - id: ipccar
   name-short: "Hodnotící zprávy IPCC"
-  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisic stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací, tedy zmírněním dopadů změny klimatu. Vedle hodnotících zpráv připravuje IPCC také zvlášntí zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
+  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
 
 
 - id: ipcc
