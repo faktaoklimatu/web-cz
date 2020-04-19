@@ -7,9 +7,8 @@
 
 - id: albedo
   name-short: "Albedo"
-  description: "Albedo vyjadřuje odrazivost povrchu, tedy kolik z příchozího záření odrazí povrch zpět. Povrch, který veškeré záření pohltí, má albedo 0 a povrch, který veškeré záření odrazí, má albedo 1. V klimatologii hraje albedo důležitou roli v úvahách o energetické bilanci planety a při určování v množství slunečního záření, které povrch planety odrazí. 
-Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijatého záření se odrazí a dvě třetiny se přemění na teplo. Různé oblasti planety však mají různé albedo, které se může navíc měnit během roku, podle typu vegetace, množství sněhu nebo zámrzu na vodní hladině - čerstvý sníh má albedo 0,8 (tedy odráží 80% záření), albedo ledovců je mezi 0,5 až 0,7.  Naopak volný oceán nebo černý asfalt pohltí skoro všechno záření, které na ně dopadne - oceán má albedo 0,06 a asfalt 0,04.
-"
+  description: "Albedo vyjadřuje odrazivost povrchu, tedy kolik z příchozího záření odrazí povrch zpět. Povrch, který veškeré záření pohltí, má albedo 0 a povrch, který veškeré záření odrazí, má albedo 1. V klimatologii hraje albedo důležitou roli v úvahách o energetické bilanci planety a při určování v množství slunečního záření, které povrch planety odrazí.<br/>
+  Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijatého záření se odrazí a dvě třetiny se přemění na teplo. Různé oblasti planety však mají různé albedo, které se může navíc měnit během roku, podle typu vegetace, množství sněhu nebo zámrzu na vodní hladině – čerstvý sníh má albedo 0,8 (tedy odráží 80 % záření), albedo ledovců je mezi 0,5 až 0,7.  Naopak volný oceán nebo černý asfalt pohltí skoro všechno záření, které na ně dopadne - oceán má albedo 0,06 a asfalt 0,04."
 
 - id: antropogennisklenikoveplyny
   name-short: "Antropogenní skleníkové plyny"
@@ -46,7 +45,6 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   name-short: "Hodnotící zprávy IPCC"
   description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
 
-
 - id: ipcc
   name-short: "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change"
@@ -54,7 +52,7 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
 
 - id: mitigace
   name-short: "Mitigace"
-  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu,  _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
+  description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu, _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
 
 - id: nasa
   name-short: "NASA"
@@ -69,7 +67,7 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
 - id: rcp
   name-short: "RCP"
   name-long: "Representative Concentration Pathway"
-  description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"  
+  description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"
 
 - id: sr15
   name-short: "SR15"
@@ -77,7 +75,7 @@ Průměrné albedo Země je mezi 0,30 a 0,35, tedy přibližně třetina přijat
   description: "[Zvláštní zpráva ke globálnímu oteplení o 1,5 °C](https://www.ipcc.ch/sr15/), vydaná IPCC v roce 2018. Zpráva srovná dopady oteplení o 1,5 °C proti oteplení o 2 °C (vzhledem k předindustriální době) a navrhuje scénáře snižování emisí skleníkových plynů, které by pomohly omezit oteplení v nejbližších letech. Ze zprávy vyplývá, že negativní dopady oteplení o 2 °C by byly výrazně vyšší, než při oteplení o 1,5 °C, a že je stále možné dosáhnout nárůstu teploty menšího než 1,5 °C – je k tomu nutné razantní snížení emisí od roku 2020 a dosažení uhlíkové neutrality do roku 2050."
 
 - id: srccl
-  name-short: "SRCCL" 
+  name-short: "SRCCL"
   name-long: "Special Report on climate change and land"
   description: "[Zvláštní zpráva o změně klimatu, krajině a půdě](https://www.ipcc.ch/srccl/), publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje."
 
