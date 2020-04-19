@@ -2,6 +2,7 @@
 
 web_cs:
   name: České weby
+  icon: "fas fa-globe-americas"
   items:
   - title: "Český hydrometeorologický ústav"
     tags: [ zdroje, česky, Česká republika, teploty ]
@@ -26,6 +27,7 @@ web_cs:
 
 web_en:
   name: Anglické weby
+  icon: "fas fa-globe-americas"
   items:
   - title: "Warningstripes.com"
     tags: [ anglicky, svět, teploty, předpovědi ]
@@ -113,6 +115,7 @@ web_en:
 
 books_en:
   name: Anglické knihy
+  icon: "fas fa-book"
   items:
   - title: "There is no planet B"
     url: https://theresnoplanetb.net/
