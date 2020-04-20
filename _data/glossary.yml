@@ -30,7 +30,7 @@
 
 - id: externalita
   name-short: "Externalita"
-  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci - například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
+  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
 
 - id: emisniintenzitaekonomiky
   name-short: "Emisní intenzita ekonomiky"
@@ -43,7 +43,7 @@
 
 - id: ipccar
   name-short: "Hodnotící zprávy IPCC"
-  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
+  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I, z anglického Working Group) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) (z anglického Assessment Report) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
 
 - id: ipcc
   name-short: "IPCC"
@@ -72,7 +72,7 @@
 - id: sr15
   name-short: "SR15"
   name-long: "Special Report on Global Warming of 1.5 °C"
-  description: "[Zvláštní zpráva ke globálnímu oteplení o 1,5 °C](https://www.ipcc.ch/sr15/), vydaná IPCC v roce 2018. Zpráva srovná dopady oteplení o 1,5 °C proti oteplení o 2 °C (vzhledem k předindustriální době) a navrhuje scénáře snižování emisí skleníkových plynů, které by pomohly omezit oteplení v nejbližších letech. Ze zprávy vyplývá, že negativní dopady oteplení o 2 °C by byly výrazně vyšší, než při oteplení o 1,5 °C, a že je stále možné dosáhnout nárůstu teploty menšího než 1,5 °C – je k tomu nutné razantní snížení emisí od roku 2020 a dosažení uhlíkové neutrality do roku 2050."
+  description: "[Zvláštní zpráva ke globálnímu oteplení o 1,5 °C](https://www.ipcc.ch/sr15/), vydaná IPCC v roce 2018. Zpráva srovnává dopady oteplení o 1,5 °C proti oteplení o 2 °C (vzhledem k předindustriální době) a navrhuje scénáře snižování emisí skleníkových plynů, které by pomohly omezit oteplení v nejbližších letech. Ze zprávy vyplývá, že negativní dopady oteplení o 2 °C by byly výrazně vyšší než při oteplení o 1,5 °C a že je stále možné dosáhnout nárůstu teploty menšího než 1,5 °C – k tomu je nutné razantní snížení emisí od roku 2020 a dosažení uhlíkové neutrality do roku 2050."
 
 - id: srccl
   name-short: "SRCCL"
