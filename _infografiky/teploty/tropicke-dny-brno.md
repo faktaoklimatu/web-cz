@@ -1,8 +1,8 @@
 ---
 layout:     infographic
-title:      "Tropické a mrazivé dny v Brně"
-slug:       "tropicke-dni-brno"
-redirect_from: "/tropicke-dni-brno"
+title:      "Tropické a ledové dny v Brně-Tuřanech"
+slug:       "tropicke-dny-brno"
+redirect_from: "/tropicke-dny-brno"
 weight:     98
 tags:       [ teploty ]
 caption:    "Popis pod obrázkem."
