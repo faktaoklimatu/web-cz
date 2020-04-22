@@ -1,13 +1,24 @@
 ---
 layout:     infographic
-title:      "Emise světových regionů přepočtené na HDP"
-slug:       "emise-svet-na-hdp"
-redirect_from: "/emise-svet-na-hdp"
-weight:     90
+title:      "Emisní intenzity světových regionů"
+slug:       "emisni-intenzity"
+redirect_from: "/emisni-intenzity"
+weight:     91
 tags:       [ emise, svet, CO2 ]
-caption:    "Roční emise vybraných států a světových regionů, přepočteno v poměru k HDP a srovnáno s celkovou velikostí ekonomiky."
+caption:    "Srovnání emisních intenzit ekonomik a HDP na osobu pro vybrané státy a světové regiony za rok 2015, doplněné o emise skleníkových plynů na osobu a celkovou populaci."
 dataset:    "emise-svet"
 ---
+
+<!--
+Nadpis do grafiky:
+    Emisní intenzity světových regionů
+Podnadpis do grafiky:
+    Srovnání emisních intenzit ekonomik a HDP na osobu pro vybrané státy a světové regiony za rok 2015, doplněné o emise skleníkových plynů na osobu a celkovou populaci.
+Slug: 
+    emisni-intenzity
+Další úpravy:
+    Doplnit světový průměr - x = 439, y = 14 851 (a tedy emise na osobu 6,53)
+ -->
 
 ## Jak číst tento graf?
 
