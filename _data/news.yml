@@ -1,3 +1,6 @@
+- date: 2020-04-20
+  summary: "Rozšířili jsme [Slovník pojmů](/slovnik) (např. _Albedo_ či _Zvláštní zprávy IPCC_) a překročili tak počet 20 obsáhnutých hesel."
+  
 - date: 2020-04-17
   title: "Stránky k našim datovým sadám"
   summary: |
@@ -6,6 +9,11 @@
     * [Emise skleníkových plynů světa](/datasety/emise-svet)
     * [Emise skleníkových plynů EU](/datasety/emise-eu)
     * [Emise skleníkových plynů ČR](/datasety/emise-cr)
+
+- date: 2020-03-31
+  title: "Emisní intenzity ekonomik"
+  summary: |
+    * Nová infografika: [Emise světových regionů přepočtené na HDP](/infografiky/emise-svet-na-hdp)
 
 - date: 2020-03-06
   title: "Souhrnný report větších změn v infografikách"
