@@ -5,7 +5,7 @@ slug:       "emisni-intenzity"
 redirect_from: "/emisni-intenzity"
 weight:     91
 tags:       [ emise, svet, CO2 ]
-caption:    "Srovnání emisních intenzit ekonomik a HDP na osobu pro vybrané státy a světové regiony za rok 2015, doplněné o emise skleníkových plynů na osobu a celkovou populaci."
+caption:    "Graf znázorňuje souvislosti mezi hmotnou životní úrovní obyvatel, emisní intenzitou ekonomik a ročními emisemi na osobu vybraných zemí a světových regionů."
 dataset:    "emise-svet"
 ---
 
@@ -32,12 +32,12 @@ Další úpravy:
 
 ## Komentáře ke grafu
 
-* Graf ilustruje **souvislost mezi emisní intenzitou ekonomiky a celkovými emisemi daného regionu**.
-* Například celá evropská ekonomika je mírně větší než čínská, přesto však produkuje jen přibližně 40 % čínských emisí. Zároveň i mezi evropskými státy jsou výrazné rozdíly v emisní intenzitě – například **Francie produkuje 171 gramů emisí na dolar HDP, zatímco Česká republika 396 gramů**. Ukrajina se výrazně odlišuje od ostatních evropských států, neboť válka způsobila hluboký propad HDP.
-* Emisní intenzita do velké míry **souvisí s energetickým mixem a způsobem výroby elektřiny** v daných zemích a regionech. Více než polovina čínské energie pochází z uhlí, proto Čína produkuje relativně vysoké množství emisí na dolar HDP. Podobně i evropské státy s vysokou spotřebou uhlí uvolňují více skleníkových plynů na jednotku HDP. Na opačné straně spektra je Francie, která vyrábí více než 70 % své elektřiny v jaderných elektrárnách a ze zobrazených zemí produkuje nejnižší emise na dolar.
-* Dalším faktorem ovlivňujícím emisní intenzitu ekonomik je životní úroveň dané země, která souvisí se strukturou ekonomické produkce. **Zemědělství, stavebnictví a průmysl produkuje relativně více emisí než služby**, v bohatších zemích zpravidla služby představují větší podíl ekonomiky.
-* Velmi nízké emise na jednotku HDP mají například Švýcarsko, Singapur, Hongkong a Švédsko (méně než 150 gramů na dolar HDP). Více emisí na dolar HDP produkují častěji chudší země (například Etiopie nebo z evropských zemí Ukrajina), avšak relativně vysoké emise na HDP má také bohatá Austrálie.
-* HDP je snadno dostupný ukazatel pro porovnání velikostí ekonomik a určitý ukazatel životní úrovně. Jedná se však o neúplný ukazatel zahrnující pouze materiální aspekt životní úrovně, který také nezohledňuje nerovnosti mezi obyvateli dané země. Srovnávání zemí na základě HDP je v mnoha případech užitečné, avšak je nutné si uvědomovat limity tohoto nástroje. 
+* **Graf je komplexní a znázorňuje souvislosti mezi čtyřmi různými ukazateli: hmotná životní úroveň obyvatel (vyjádřeno jako HDP na osobu za rok), emisní intenzita ekonomik (množství vyprodukovaných emisí na dolar HDP), roční emise na osobu a celková populace jednotlivých regionů.**
+* Hyperboly ukazují hladiny ročních emisí skleníkových plynů na osobu a postupně se zvyšují směrem k pravému hornímu rohu. Nejnižší emise na osobu mají Etiopie, Nigérie a další africké státy (přibližně 2 t CO<sub>2</sub>eq na osobu ročně), srovnáním s y-ovou osou je zřejmé, že se jedná o chudé státy s velmi nízkým HDP na osobu. Oproti tomu nejvyšší emise na osobu mají ropné státy blízkého východu (skupina A), které mají velmi vysoké HDP na osobu, zároveň také produkují relativně vysoké množství emisí na každý dolar HDP.
+* Z grafu je také patrné, že mezi státy se stejnými ročními emisemi na osobu mohou existovat výrazné rozdíly – například **Francie, Turecko, Mexiko a Ukrajina mají srovnatelné emise na osobu 6,5 t CO<sub>2</sub>eq, avšak naprosto odlišné životní podmínky**. Válkou zasažená Ukrajina je velice chudá, oproti tomu obyvatelé Francie mají vysokou životní úroveň, převážně díky nízkoemisní elektřině z jaderných elektráren.
+* Chudší státy často vykazují vyšší emise na HDP než bohatší státy, příčinou je struktura ekonomické produkce. V bohatších státech v ekonomice převažuje sektor služeb, který je emisně méně náročný než odvětví výrazněji zastoupené v chudších ekonomikách – zemědělství, průmysl a stavebnictví. Existují však výjimky, například bohatá Austrálie uvolňuje na každý dolar ekonomické produkce více emisí než většina chudých asijských a afrických států.
+* **Pro snižování emisí na osobu je nutný posun směrem doleva nebo dolů, z pohledu životní úrovně je samozřejmě přijatelnější směřování doleva.** Většina evropských států a některé asijské ukazují, že je možné mít relativně nižší emise na osobu a zároveň vysokou životní úroveň. Například obyvatelé Německa, Kanady a Austrálie mají srovnatelnou životní úroveň, avšak průměrný Němec produkuje přibližně polovinu emisí v porovnání s průměrným Kanaďanem a ještě nižší oproti průměrnému obyvateli Austrálie. **Přijetí <glossary id="mitigace">mitigačních opatření</glossary> je nezbytným krokem ke snížení emisí a k žádoucímu posunu států v grafu. Srovnání vybraných mitigačních opatření ukazuje [samostatná infografika](/infografiky/mitigacni-opatreni-mmf).**
+* HDP je snadno dostupný ukazatel pro porovnání velikostí ekonomik a určitý ukazatel životní úrovně. Jedná se však o neúplný ukazatel zahrnující převážně materiální aspekt životní úrovně, který také nezohledňuje nerovnosti mezi obyvateli dané země. Srovnávání zemí na základě HDP je v mnoha případech užitečné, avšak je nutné si uvědomovat limity tohoto nástroje.
 
 ## Doplňující informace ke skupinám států
 
@@ -51,7 +51,7 @@ Další úpravy:
 * __Jižní Amerika__ (Státy Jižní a střední Ameriky mimo Brazílii): typické emise na osobu jsou 2–6 t CO<sub>2</sub>eq, některé rozvinutější státy jako např. Argentina mají emise 8–10 t CO<sub>2</sub>eq na osobu.
 
 
-## Poznámky k datům o emisích
+## Poznámky k datům
 
 * Zdrojem emisních dat je databáze EDGAR (Emission Database for Global Atmospheric Research, Emisní databáze pro globální výzkum atmosféry) provozovaná Společných výzkumným střediskem Evropské komise. Zdrojem ekonomických dat je Světová banka, HDP je přepočteno podle parity kupní síly, aby nedocházelo ke zkreslení způsobenému odlišnými cenami produktů v různých zemích. Hodnoty HDP jsou založené na indikátoru GDP, PPP (constant 2011 international $) Světové banky, který vyjadřuje HDP za rok 2015 přepočtený na ceny roku 2011 (toto o očištění o inflaci umožňuje také srovnávání hodnot HDP v čase).
 * Graf uvádí data za rok 2015, neboť novější data pro hlavní skleníkové plyny dosud nebyla publikována.
