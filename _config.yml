@@ -8,6 +8,7 @@ description: Veřejně dostupné infografiky o změně klimatu Země
 keywords: klima, změna klimatu, infografiky
 
 # Build settings
+include: [ ".well-known" ]
 exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
          , "README.md", "utils"                     # Development files
          , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)

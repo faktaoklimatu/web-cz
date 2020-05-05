@@ -1,0 +1,4 @@
+Contact: info@faktaoklimatu.cz
+Acknowledgments: https://faktaoklimatu.cz/humans.txt
+Preferred-Languages: cs, sk, en
+Canonical: https://faktaoklimatu.cz/.well-known/security.txt
