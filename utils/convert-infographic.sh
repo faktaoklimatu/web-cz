@@ -33,7 +33,7 @@ mkdir -p `dirname $DST_FILE_PDF`
 
 # Do SVG and PNG conversion
 echo -n "Converting $SRC_FILE_PDF to $DST_FILE_SVG ..."
-pdf2svg $SRC_FILE_PDF $DST_FILE_SVG
+pdf2svg $SRC_FILE_PDF $DST_FILE_SVG 1>/dev/null 2>&1
 echo -e "\t\t [ OK ]"
 
 INKSCAPE_v1_0=`inkscape --version | grep -F 1. | wc -l`
@@ -41,20 +41,20 @@ INKSCAPE_v1_0=`inkscape --version | grep -F 1. | wc -l`
 if [ $INKSCAPE_v1_0 -eq 1 ]
 then
     echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_600 ..."
-    inkscape --without-gui --export-area-page --export-background=white --export-background-opacity=255 --export-width=600 \
-            --export-type=png --export-file=$DST_FILE_PNG_600 $DST_FILE_SVG 1>/dev/null 2>&1
+    inkscape --export-area-page --export-background=white --export-background-opacity=255 --export-width=600 \
+            --export-type=png --export-filename=$DST_FILE_PNG_600 $DST_FILE_SVG 1>/dev/null 2>&1
     echo -e "\t\t [ OK ]"
     echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_1200 ..."
-    inkscape --without-gui --export-area-page --export-background=white --export-background-opacity=255 --export-width=1200 \
-            --export-type=png --export-file=$DST_FILE_PNG_1200 $DST_FILE_SVG 1>/dev/null 2>&1
+    inkscape --export-area-page --export-background=white --export-background-opacity=255 --export-width=1200 \
+            --export-type=png --export-filename=$DST_FILE_PNG_1200 $DST_FILE_SVG 1>/dev/null 2>&1
     echo -e "\t\t [ OK ]"
     echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_1920 ..."
-    inkscape --without-gui --export-area-page --export-background=white --export-background-opacity=255 --export-width=1920 \
-            --export-type=png --export-file=$DST_FILE_PNG_1920 $DST_FILE_SVG 1>/dev/null 2>&1
+    inkscape --export-area-page --export-background=white --export-background-opacity=255 --export-width=1920 \
+            --export-type=png --export-filename=$DST_FILE_PNG_1920 $DST_FILE_SVG 1>/dev/null 2>&1
     echo -e "\t\t [ OK ]"
     echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_6000 ..."
-    inkscape --without-gui --export-area-page --export-background=white --export-background-opacity=255 --export-width=6000 \
-            --export-type=png --export-file=$DST_FILE_PNG_6000 $DST_FILE_SVG 1>/dev/null 2>&1
+    inkscape --export-area-page --export-background=white --export-background-opacity=255 --export-width=6000 \
+            --export-type=png --export-filename=$DST_FILE_PNG_6000 $DST_FILE_SVG 1>/dev/null 2>&1
     echo -e "\t\t [ OK ]"
 else
     echo -n "Converting $DST_FILE_SVG to $DST_FILE_PNG_600 ..."
