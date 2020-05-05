@@ -19,6 +19,7 @@ before_install:
 script:
   - ./git-tools/git-restore-mtime
   - rm -rf ./git-tools
+  - mv CONTRIBUTORS.md humans.txt
   - make check
 
 env:
