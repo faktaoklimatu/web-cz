@@ -12,7 +12,6 @@ exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
          , "README.md", "utils"                     # Development files
          , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
          , "_studie/*.jpg"                          # Study images
-         , "AUTHORS.md"                             # Authors file
          ]
 collections:
     infografiky:
