@@ -54,6 +54,8 @@ kramdown:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-last-modified-at
 
 target-blank:
     add_css_classes: ext-link

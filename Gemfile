@@ -5,6 +5,8 @@ gem 'html-proofer'
 gem 'jekyll'
 gem 'jekyll-redirect-from'
 gem 'nokogumbo'
+gem 'jekyll-last-modified-at'
+gem 'jekyll-sitemap'
 
 # temporary workaround
 # see https://github.com/sass/sassc-ruby/issues/146
