@@ -1,17 +1,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="{{ site.description }}">
-<meta name="keywords" content="{{ site.keywords }}">
+{% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' | prepend: ', ' | prepend: site.keywords }}">
+{% else %}
+  <meta name="keywords" content="{{ site.keywords }}">
+{% endif %}
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
 <meta property="og:title" content="{{ page.title }}">
 <meta name="twitter:title" content="{{ page.title }}">
 {% if page.caption %}
+  <meta name="description" content="{{ page.caption }}">
   <meta property="og:description" content="{{ page.caption }}">
   <meta name="twitter:description" content="{{ page.caption }}">
-{% else %}
+{% elsif page.intro %}
+  <meta name="description" content="{{ page.intro }}">
   <meta property="og:description" content="{{ page.intro }}">
   <meta name="twitter:description" content="{{ page.intro }}">
+{% else %}
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 <meta name="twitter:card" content="summary_large_image">
 {% case page.layout %}
