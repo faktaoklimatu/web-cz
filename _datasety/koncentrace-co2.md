@@ -4,7 +4,7 @@ title:      "Vývoj koncentrace CO₂ v atmosféře"
 slug:       "koncentrace-co2"
 weight:     10
 tags-scopes: [ svět ]
-tags-topics: [ CO2 ]
+tags-topics: [ "skleníkové plyny" ]
 caption:    "Dataset obsahuje tři různé datové řady lišící se časovým rozsahem, zdrojem dat i metodikou. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
 dataset-url:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
