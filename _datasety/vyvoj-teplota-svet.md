@@ -4,7 +4,7 @@ title:      "Vývoj změny teploty světa"
 slug:       "vyvoj-teplota-svet"
 weight:     40
 tags-scopes: [ svět ]
-tags-topics: [ teploty, casova-rada ]
+tags-topics: [ teploty ]
 caption:    "TODO"
 published:     false
 dataset-url:    "https://docs.google.com/spreadsheets/d/1mYBzne9T_tVpjNFmBuv1e6tNlUAVtADoQNGRJjuiyE4/edit?usp=sharing"

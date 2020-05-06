@@ -5,7 +5,7 @@ slug:       "emise-eu"
 redirect_from: "/emise-eu"
 weight:     95
 tags-scopes: [ EU ]
-tags-topics: [ emise, CO2 ]
+tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí 28 členských států EU a přepočet na obyvatele."
 dataset:    "emise-eu"
 ---

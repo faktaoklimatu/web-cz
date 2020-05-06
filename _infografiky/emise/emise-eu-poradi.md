@@ -5,7 +5,7 @@ slug:       "emise-eu-poradi"
 redirect_from: "/emise-eu-poradi"
 weight:     99
 tags-scopes: [ EU ]
-tags-topics: [ emise, CO2 ]
+tags-topics: [ emise ]
 caption:    "Vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele."
 dataset:    "emise-eu"
 ---

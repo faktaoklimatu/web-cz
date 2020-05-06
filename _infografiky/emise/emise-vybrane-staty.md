@@ -5,7 +5,7 @@ slug:       "emise-vybrane-staty"
 redirect_from: "/emise-vybrane-staty"
 weight:     96
 tags-scopes: [ EU ]
-tags-topics: [ emise, CO2 ]
+tags-topics: [ emise ]
 caption:    "Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazeny podle sektorů."
 dataset:    "emise-eu"
 ---
