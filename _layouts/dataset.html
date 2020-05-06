@@ -10,6 +10,7 @@
     <div class="section">
       <div class="container">
         <h1>Dataset: {{ page.title }}</h1>
+        {% include tags.html tags=page.tags link="true" %}
 
         <div class="row" markdown="on">
             <div class="col-md-12 col-lg-9">
