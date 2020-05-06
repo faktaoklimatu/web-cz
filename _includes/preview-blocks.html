@@ -12,7 +12,9 @@
                 <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid card-img" />
                 <div class="card-img-overlay card-dataset-overlay">
                   <h5 class="card-title">{{ item.title }}</h5>
-                  {% include tags.html tags=item.tags %}
+                </div>
+                <div class="card-img-overlay tags-overlay-box">
+                    {% include tags.html tags=item.tags %}
                 </div>
             {% when 'study' %}
                 <div class="card-body">

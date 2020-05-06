@@ -4,7 +4,8 @@ title:      "Emise skleníkových plynů Evropské unie"
 slug:       "emise-eu-na-osobu"
 redirect_from: "/emise-eu-na-osobu"
 weight:     92
-tags:       [ emise, EU, CO2 ]
+tags-scopes: [ EU ]
+tags-topics: [ emise, CO2 ]
 caption:    "Srovnání ročních emisí skleníkových plynů států Evropské unie, vyjádřeno na obyvatele i za celou populaci."
 dataset:    "emise-eu"
 ---

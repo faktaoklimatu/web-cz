@@ -4,7 +4,8 @@ title:      "Vývoj koncentrace CO₂ v atmosféře"
 slug:       "koncentrace-co2"
 redirect_from: "/koncentrace-co2"
 weight:     95
-tags:       [ teploty, CO2, svet ]
+tags-scopes: [ svět ]
+tags-topics: [ teploty, CO2 ]
 caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800 000 let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
 dataset:    "koncentrace-co2"
 ---

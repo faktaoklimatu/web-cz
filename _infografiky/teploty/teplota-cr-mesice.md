@@ -4,7 +4,7 @@ title:      "Průměrná teplota v ČR v jednotlivých měsících"
 slug:       "teplota-cr-mesice"
 redirect_from: "/teplota-cr-mesice"
 weight:     105
-tags:       [ teploty ]
+tags-topics: [ teploty ]
 caption:    "Srovnání teplot jednotlivých měsíců dekády 1961–1970 a let 2010–2019. Průměrná roční teplota se od roku 1961 zvýšila o 2 °C, ale oteplení se v různých měsících liší, například v květnu se teplota zvýšila o 1,4 °C. Největší změny v teplotě se udály v prosinci, lednu, červenci a srpnu."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"

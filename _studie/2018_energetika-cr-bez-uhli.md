@@ -3,7 +3,8 @@ layout:     study
 title:      "Česká energetika bez uhlí"
 slug:       2018_energetika-cr-bez-uhli
 weight:     3
-tags:       [ studie, cr ]
+tags-scopes: [ ČR ]
+tags-topics: [ studie ]
 caption:    "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů k roku 2030."
 intro:      "Studie zkoumá dopady ukončení provozu českých uhelných elektráren (které jsou aktuálně jedním z hlavních zdrojů emisí CO<sub>2</sub> v ČR) na stabilitu elektrizační soustavy, při současném rozvoji obnovitelných zdrojů. Reaguje tak na častý argument proti transformaci české energetiky, poukazující právě na ohrožení bezpečnosti dodávek elektřiny."
 study-title:        "Czech power grid without electricity from coal by 2030"
@@ -57,17 +58,17 @@ Studii zadaly organizace Glopolis, Frank Bold, CEE Bankwatch Network, Aliance pr
 
 ## Často kladené otázky
 
-__Je firma, která studii zpracovala, dostatečně expertně zdatná a důvěryhodná?__  
+__Je firma, která studii zpracovala, dostatečně expertně zdatná a důvěryhodná?__
 Energynautics má zahraniční zkušenosti ze 32 zemí a bohatý [seznam referencí](https://energynautics.com/en/references/) včetně studií pro Světovou banku nebo státní instituce evropských i mimoevropských zemí. Společnost je vedena Thomasem Ackermannem, který má 25 let zkušeností v oboru a dlouhý seznam [odborných publikací](https://energynautics.com/content/uploads/Publications_Ackermann.pdf).
-Také další vedoucí zaměstnanci [E. Troester](https://energynautics.com/content/uploads/2016/11/Publications_Troester.pdf) a [N. Nartensen](https://energynautics.com/content/uploads/CV_Martensen_english.pdf) jsou odborníci v oboru. Nejde tedy o studii, jejíž výstupy stojí za to zpochybňovat nedostatečnou expertizou zpracovatele.  
+Také další vedoucí zaměstnanci [E. Troester](https://energynautics.com/content/uploads/2016/11/Publications_Troester.pdf) a [N. Nartensen](https://energynautics.com/content/uploads/CV_Martensen_english.pdf) jsou odborníci v oboru. Nejde tedy o studii, jejíž výstupy stojí za to zpochybňovat nedostatečnou expertizou zpracovatele.
 
-__Nakolik je zvolený časový horizont relevantní z hlediska probíhající klimatické změny?__  
+__Nakolik je zvolený časový horizont relevantní z hlediska probíhající klimatické změny?__
 Uvažovaný rok 2030, ke kterému je dle studie možné přestat vyrábět elektřinu z uhlí, plně koresponduje se závěry studie *[A stress test for coal in Europe under the Paris Agreement](https://climateanalytics.org/media/eu_coal_stress_test_report_2017.pdf)* (Zátěžový test pro uhlí v Evropě vzhledem k Pařížské dohodě o ochraně klimatu). V té se uvádí, že pro dosažení cílů Pařížské dohody je nezbytné odstavit všechny evropské uhelné elektrárny právě do roku 2030.
 
-__Jaké kroky v této oblasti plánují ostatní evropské státy?__  
+__Jaké kroky v této oblasti plánují ostatní evropské státy?__
 Téměř všechny západoevropské země již určily konkrétní datum odstavení svých uhelných elektráren. U většiny z těchto států se navíc počítá s ukončením provozu výrazně dříve než v roce 2030. Podrobnosti v češtině uvádí například [tento souhrnný text](https://www.irozhlas.cz/zpravy-domov/uhli-klima-cez-energetika-obnovitelne-zdroje_1904020600_jab).
 
-__Je vůbec realizovatelný předpokládaný nárůst podílu obnovitelných zdrojů?__  
+__Je vůbec realizovatelný předpokládaný nárůst podílu obnovitelných zdrojů?__
 Existuje celá řada studií zkoumajících potenciál výroby elektřiny z obnovitelných zdrojů v rámci ČR:
 
 * [Studie z roku 2019](https://www.solarniasociace.cz/aktuality/20190107_oponentni-posudek-k-nkep-pro-fve.pdf) od renomované poradenské společnosti EGÚ Brno uvádí celkový technický potenciál fotovoltaických elektráren, umístěných na budovách a na brownfieldech, na přibližně 39 GW, tj. cca sedmkrát více, než kolik je uvažováno ve scénáři Energynautics.
@@ -76,5 +77,5 @@ Existuje celá řada studií zkoumajících potenciál výroby elektřiny z obno
 * Zatímco dnešní instalovaný výkon větrných elektráren je pouhých 316 MW, realizovatelný potenciál dle [analýzy větrné energetiky](http://www.csve.cz/img/wysiwyg/file/KomoraOZE_analyza-potencial-OZE_dilci-VTE_log.pdf) z roku 2015 je asi osmnáctkrát vyšší, tj. zhruba 5800 MW, což je téměř trojnásobek potřebného výkonu, se kterým počítá scénář Energynautics.
 * Celkový technický potenciál větrné energetiky v ČR je dle [studie Ústavu fyziky atmosféry AV ČR](http://www.csve.cz/img/wysiwyg/file/VtE_potencial2012.pdf) přibližně 28,9 GW, tj. asi čtrnáctkrát více, než kolik je uvažováno ve scénáři Energynautics.
 
-__Jaké dopady by měl nárůst obnovitelných zdrojů na českou ekonomiku?__  
+__Jaké dopady by měl nárůst obnovitelných zdrojů na českou ekonomiku?__
 Touto otázkou se zabývá např. [aktuální studie](https://www2.deloitte.com/content/dam/Deloitte/cz/Documents/energy-resources/rozvoj_obnovitelnych_zdroju_do_roku_2030_3.pdf ) od nadnárodní společnosti Deloitte, která řeší dopady rozvoje obnovitelných zdrojů výrazně nad úroveň uvažovanou ve scénáři Energynautics. Dle závěrů této analýzy by potřebné prostředky neměly významně navýšit stávající podporu z veřejných zdrojů. Současně se otevře prostor pro investice, které modernizují českou energetiku. Ekonomické dopady těchto investic se ve všech modelovaných scénářích projeví pozitivním impulzem, spojeným s růstem přidané hodnoty o řádově jednotky procent HDP a tvorbou desítek tisíc nových pracovních míst (konkrétní čísla viz odkazovaná studie).

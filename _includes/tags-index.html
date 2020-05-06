@@ -1,0 +1,13 @@
+
+{% assign sorted = (include.tags | sort:0) %}
+<div>
+    {% for t in sorted %}
+        <a role="button" class="btn btn-tag btn-tag-link btn-sm {{include.tag-class}}" href="/tag/{{ t[0] | slugify }}">
+        {%- if t[1]["name"] -%}
+            {{t[1]["name"]}}
+        {%- else -%}
+            <span class="text-capitalize">{{t[0]}}</span>
+        {%- endif -%}
+        </a>
+    {% endfor %}
+</div>

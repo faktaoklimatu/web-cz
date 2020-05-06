@@ -57,16 +57,40 @@ module Jekyll
         read_dates
       end
 
-      def read_tags
-        if enabled? "tags"
-          if @config["collections"]&.fetch("merge_tags", false)
-            @site.collections.each do |_, col|
-              col.docs.each do |post|
-                post.data["tags"].each do |tag|
-                  tags[tag].nil? ? tags[tag] = [ post ] : tags[tag].push(post)
+      def merge_collection_tags
+        tag_keys = [ "tags", "tags-scopes", "tags-topics" ]
+        cats = Hash[ tag_keys.map{ |k| [k, {}] } ]
+        @site.data["tags_categorized"] = cats
+
+        @site.collections.each_value do |col|
+          col.docs.each do |post|
+            tag_keys.each do |key|
+              if !post.data.key?(key)
+                next
+              end
+
+              post.data[key].each do |tag|
+                tags[tag].nil? ? tags[tag] = [ post ] : tags[tag].push(post)
+                cats[key][tag] = true
+                if key != "tags"
+                  post.data["tags"].push(tag)
                 end
               end
             end
+          end
+        end
+
+        cats.each do |cat,tags|
+          tags.each_key do |tag|
+            tags[tag] = @site.data["tags"][tag]
+          end
+        end
+      end
+
+      def read_tags
+        if enabled? "tags"
+          if @config["collections"]&.fetch("merge_tags", false)
+            merge_collection_tags
           end
 
           tags.each do |title, posts|
