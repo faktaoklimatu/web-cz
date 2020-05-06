@@ -19,6 +19,7 @@
             {% when 'study' %}
                 <div class="card-body">
                     <h5>{{ item.title }}</h5>
+                    <p class="text-secondary">{{ item.study-institution }}, {{ item.study-year }}</p>
                     <p class="card-text">{{ item.caption }}</p>
                     {% include tags.html tags=item.tags %}
                 </div>

@@ -10,7 +10,7 @@ caption:    "Studie modeluje změny teploty a změny množství a rozložení sr
 intro:      "Studie poskytuje zatím nejpřesnější odpověď na otázku _“Jak moc se v ČR oteplí a jak se změní množství a rozložení srážek během 21. století?“_ na základě vyhodnocení ansámblu  několika desítek globálních a regionálních klimatických modelů."
 study-title:        "Očekávané klimatické podmínky v České Republice, část I."
 study-author:       "Petr Štěpánek a kol."
-study-institution:  "Ústav výzkumu globální změny, Akademie věd České republiky"
+study-institution:  "CzechGlobe, AV ČR"
 study-year:         2019
 study-isbn:         "978-8-87902-28-8"
 study-url:          "https://www.klimatickazmena.cz/cs/o-nas/aktuality/ocekavane-klimaticke-podminky-v-ceske-republice-cast-i-zmena-zakladnich-parametru/"
