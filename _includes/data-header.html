@@ -1,0 +1,21 @@
+<dl class="data-header">
+    <dt>Zdroj</dt><dd>{{ include.name }}</dd>
+    {% if include.description %}
+    <dt>Popis</dt><dd>{{ include.description }}</dd>
+    {% endif %}
+    <dt>Odkaz</dt><dd class="ellipsis"><a href="{{ include.url }}">{{ include.url }}</a></dd>
+    {% if include.doi %}
+    <dt>DOI</dt><dd class="ellipsis"><a href="{{ include.doi }}">{{ include.doi }}</a></dd>
+    {% endif %}
+    <dt>Licence</dt>
+    <dd>
+            {% if include.licence-url %}
+            <a href="{{ include.licence-url }}">{{ include.licence }}</a>
+            {% else %}
+            {{ include.licence }}
+            {% endif %}
+            {% if include.licence-proof %}
+            (viz. <a href="{{ include.licence-proof }}">informace o licenci</a>)
+            {% endif %}
+    </dd>
+</dl>

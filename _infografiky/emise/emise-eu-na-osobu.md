@@ -6,8 +6,7 @@ redirect_from: "/emise-eu-na-osobu"
 weight:     92
 tags:       [ emise, EU, CO2 ]
 caption:    "Srovnání ročních emisí skleníkových plynů států Evropské unie, vyjádřeno na obyvatele i za celou populaci."
-data-our:   "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk"
-data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ] ]
+dataset:    "emise-eu"
 ---
 
 ## Jak číst tento graf?

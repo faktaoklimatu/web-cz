@@ -1,0 +1,248 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 5.5rem;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: $c-primary;
+    font-size: 1.0rem;
+    background: $c-body;
+    position: relative;
+    min-height: 100vh;
+    text-align: justify;
+
+    @media screen {
+        @media (max-width: 500px) {
+            padding-bottom: 6rem;
+        }
+
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+    }
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: bold !important;
+    text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold !important;
+}
+
+/* Fix anchor links */
+h1:target,
+h2:target,
+h3:target {
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+a {
+    color: $c-primary;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.ext-link:after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    margin-left: 0.3em;
+    font-size: 60%;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    top: -0.15em;
+}
+
+a.no-ext-link-icon:after {
+    content: none;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+pre {
+    margin: 1rem 0 1rem 0;
+    background: rgba(0,0,0,0.05);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media screen and (max-width: 576px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.section:nth-of-type(odd) {
+    background: white;
+}
+
+ul:last-child {
+    margin-bottom: 0;
+}
+
+.navbar {
+    background: $c-body;
+    top: 0;
+    transition: top 300ms;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &-scrolled {
+        box-shadow: 0 3px 10px #e2e2ff;
+    }
+
+    &-brand {
+        padding-left: 2rem;
+        background-image: url(/assets/img/favicon.png);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: left;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $c-primary;
+
+    &:focus, &:hover {
+        color:  #000000;
+    }
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    font-weight: bold;
+    color: $c-primary;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #E7E7E7;
+    color: $c-secondary;
+    font-size: 80%;
+
+    .float-right {
+        text-align: right;
+    }
+
+    a {
+        color: $c-secondary;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        color: #fff;
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
+}
+
+.btn-outline-primary {
+    color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
+}
+
+.btn-secondary {
+    background-color: rgba(0,0,0,0);
+    color: inherit;
+    border-width: 3px;
+    border-color: $c-primary;
+
+    &:hover {
+        background-color: $c-primary-lighten;
+        border-color: $c-primary-lighten;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $c-primary-lighten;
+    border-color: $c-primary-lighten;
+}
+
+.table {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    thead {
+        background-color: rgba(0,0,0,.05);
+    }
+
+    &-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0,0,0,.02);
+    }
+
+    &-hover tbody tr:hover {
+        background-color: rgba(0,0,0,.05);
+    }
+}
+
+.text-secondary {
+    color: #303030;
+}

@@ -31,29 +31,34 @@
                 <a href="{{ download_path }}.svg" id="infographic-svg" class="btn btn-primary" download>SVG</a>
                 <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownPNGselection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</button>
                 <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownPNGselection">
-                    <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4242 px</a>
-                    <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1358 px</a>
-                    <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 848 px</a>
+                  <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4242 px</a>
+                  <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1358 px</a>
+                  <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 848 px</a>
                 </div>
               </div>
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Podkladová data</h2>
-              <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Stáhněte si náš zpracovaný dataset, nebo ten původní, ze kterého vycházíme.</p>
-              {% if page.data-our and page.data-our != '' %}
-              <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše zpracovaná data</a>
-              {% endif %}
-              {% if page.data-orig.size == 1 %}
-              <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
-              {% elsif page.data-orig.size > 1 %}
-              <span class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
-                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zdrojová data</button>
-                <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
-                  {% assign numDataSources = page.data-orig.size | minus: 1 %}
-                  {% for i in (0..numDataSources) %}
-                  <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
-                  {% endfor %}
-                </div>
-              </span>
+              {% if page.dataset %}
+                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Tato infografika je postavená na námi zpracovaném datasetu.</p>
+                <a href="/datasety/{{ page.dataset }}" class="btn btn-primary" role="button">Náš dataset</a>
+              {% else %}
+                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Podívejte se na naši tabulku s daty nebo na původní zdroje.</p>
+                {% if page.data-our and page.data-our != '' %}
+                <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše tabulka s daty</a>
+                {% endif %}
+                {% if page.data-orig.size == 1 %}
+                <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
+                {% elsif page.data-orig.size > 1 %}
+              <div class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
+                  <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Původní zdroje dat</button>
+                  <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
+                    {% assign numDataSources = page.data-orig.size | minus: 1 %}
+                    {% for i in (0..numDataSources) %}
+                    <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
+                    {% endfor %}
+                  </div>
+              </div>
+                {% endif %}
               {% endif %}
               <hr class="d-none d-lg-block" />
               <h2 class="d-none d-lg-block">Sdílení a licence</h2>
@@ -110,7 +115,7 @@
         {{ content }}
       </div>
     </div>
-    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]" 
+    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]"
     | where_exp:"item","item.slug != page.slug" | sample: 4 %}
     {% if sorted_infographics.size > 0 %}
     <div class="section">
@@ -119,8 +124,8 @@
         <p>Zaujala vás tato infografika? Zde je pár náhodně vylosovaných ze stejné kategorie:</p>
         <div class="row justify-content-md-left">
           {% for infographic in sorted_infographics %}
-            <div class="col-sm-6 col-md-4 col-lg-3 homepage-card">
-              <a href="{{ infographic.url }}">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <a href="{{ infographic.url }}" class="preview-card card">
                 <img src="{{ site.baseurl }}/assets/infographics/{{ infographic.slug }}_600.png" alt="{{ infographic.title }}" title="{{ infographic.title }}" class="img-fluid" />
               </a>
             </div>

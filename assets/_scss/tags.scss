@@ -1,0 +1,38 @@
+/* Tag-related style */
+
+.tags-overlay-box {
+    top: auto;
+    padding: 40px 15px 15px 15px;
+    background-image: linear-gradient(transparent, white, white);
+    overflow: hidden;
+
+    .tags {
+        width: max-content;
+    }
+}
+
+.tags {
+    /* Padding to prevent click shadow cut */
+    padding-bottom: 3px;
+}
+
+.btn-tag {
+    margin: 0;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1em;
+    color: #777777;
+    border-color: #777777;
+}
+
+.btn-tag-link {
+    margin-bottom: 10px;
+
+    &:hover {
+        border-color: $c-primary;
+        color: $c-primary;
+    }
+}
+
+#page-tag h2 {
+    margin-top: 1.5em;
+}

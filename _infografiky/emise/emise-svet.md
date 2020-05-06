@@ -6,6 +6,8 @@ redirect_from: "/emise-svet"
 weight:     94
 tags:       [ emise, svet, CO2 ]
 caption:    "Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele."
+# TODO: Nahradit za dataset, až bude grafika založena na datech EDGAR 5.
+# dataset:    "emise-svet"
 data-our:   "https://drive.google.com/open?id=1aZNVRC7lJM28FxbKKnXo7HsPlyE2RaMbG3KDs8igwec"
 data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=432_GHG" ] ]
 ---

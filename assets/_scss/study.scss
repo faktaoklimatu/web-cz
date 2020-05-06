@@ -1,0 +1,43 @@
+/* Study page customizations */
+
+.study-metadata {
+    text-align: left;
+
+    img {
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,0.125);
+    }
+
+    .btn {
+        display: block;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+/* Customizations of resource page */
+
+.resources {
+    margin-bottom: 3rem;
+
+    .lead {
+        margin-bottom: 0.5rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 575px) {
+        text-align: center;
+
+        img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+    }
+}

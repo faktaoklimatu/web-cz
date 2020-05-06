@@ -4,15 +4,15 @@ email: info@faktaoklimatu.cz
 twitter: "faktaoklimatu"
 newsletter: "https://tinyletter.com/faktaoklimatu/subscribe"
 author: faktaoklimatu.cz
-description: Veřejně dostupné infografiky o změně klimatu Země
+description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
 
 # Build settings
+include: [ ".well-known" ]
 exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
          , "README.md", "utils"                     # Development files
          , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
          , "_studie/*.jpg"                          # Study images
-         , "AUTHORS.md"                             # Authors file
          ]
 collections:
     infografiky:
@@ -27,8 +27,12 @@ collections:
     studie:
         output: true
         permalink: /:collection/:title
+    datasety:
+        output: true
+        permalink: /datasety/:title
 sass:
-    sass_dir: assets/css
+    sass_dir: assets/_scss
+    style: compressed
 cache_dir: .cache
 
 cdn:
@@ -50,6 +54,8 @@ kramdown:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-last-modified-at
 
 target-blank:
     add_css_classes: ext-link

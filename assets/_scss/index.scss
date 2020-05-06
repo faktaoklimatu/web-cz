@@ -1,0 +1,64 @@
+/* Intro page customizations */
+
+.intro {
+    .tagline {
+        text-transform: uppercase;
+        text-align: right;
+        float: left;
+        width: 15.2rem;
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-left: 19rem;
+        margin-top: -3.5rem;
+    }
+
+    .btn {
+        margin-top: 1em;
+    }
+
+    @media screen and (max-width: 768px) {
+        .tagline {
+            float: none;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            word-spacing: 0;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding-left: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+/* Homepage section customizations */
+
+.preview-card {
+    margin-top: 15px;
+    border-width: 2px;
+    text-decoration: none;
+    text-align: left;
+}
+
+a.preview-card:hover {
+    border-color: rgba($c-primary, 0.5);
+    text-decoration: none;
+}
+
+.card-dataset-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: auto;
+}
