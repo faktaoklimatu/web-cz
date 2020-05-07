@@ -4,8 +4,8 @@ title:      "Tropické a ledové dny v Praze-Libuši"
 slug:       "tropicke-dny-praha"
 redirect_from: "/tropicke-dny-praha"
 weight:     98
-tags:       [ teploty ]
-caption:    "Popis pod obrázkem."
+tags:       [ teploty, praha, tropicke-dny, ledove-dny ]
+caption:    "Vývoj počtu tropických a ledových dní v Praze-Libuši v letech 1961–2020."
 data-our:   "#"
 data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data" ] ]
 ---
