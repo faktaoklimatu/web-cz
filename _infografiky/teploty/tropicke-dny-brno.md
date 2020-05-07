@@ -4,8 +4,8 @@ title:      "Tropické a ledové dny v Brně-Tuřanech"
 slug:       "tropicke-dny-brno"
 redirect_from: "/tropicke-dny-brno"
 weight:     98
-tags:       [ teploty ]
-caption:    "Popis pod obrázkem."
+tags:       [ teploty, brno, tropicke-dny, ledove-dny ]
+caption:    "Vývoj počtu tropických a ledových dní v Brně-Tuřanech v letech 1961–2020."
 data-our:   "#"
 data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data" ] ]
 ---
