@@ -26,16 +26,16 @@ study-pdf:          "https://www.imf.org/~/media/Files/Publications/fiscal-monit
 
 <div class="table table-striped table-hover" markdown="1">
 
-| Region               | Vyrobeno <br/>celkem 2019 | Podíl<br/>uhlí | Podíl<br/>plynu | Podíl<br/>OZE |Spotřeba<br/>na obyvatele 2019 | Uhlíková intenzita<br/>g CO2 / kWh |
-| -------------------- |--------------------------:| --------------:| ---------------:| -------------:|------------------------------:| ----------------------------------:|
-| Celý svět            | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 3408 kWh                      | 442                                |
-| EU                   | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 6259 kWh                      | 256                                |
-| USA                  | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 12 661 kWh                    | 406                                |
-| Čína                 | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 5109 kWh                      | 576                                |
-| Indie                | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 1008 kWh                      | 651                                |
-| Ostatní státy        | 4290 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | 2478 kWh                      | 388                                |
-| -------------------- |--------------------------:| --------------:| ---------------:| -------------:|------------------------------:| ----------------------------------:|
-| ČR (pro srovnání)    | 8707 MWe                  | 0&thinsp;%     |    0&thinsp;%   | 0&thinsp;%    | ???? kWh                      | ???                                |
+| Region               | Vyrobeno <br/>celkem | Podíl<br/>uhlí | Podíl<br/>plynu | Podíl<br/>Jádra| Podíl<br/>OZE |Spotřeba<br/>na obyvatele | Uhlíková<br/>intenzita<br/>g CO2 / kWh |
+| -------------------- |---------------------:| --------------:| ---------------:| -------------:|--------------:|-------------------------:| ---------------------------------------:|
+| Celý svět            | 25 821 TWh           | 35&thinsp;%    |   24&thinsp;%   | 11&thinsp;%   | 27&thinsp;%   | 3 408 kWh                | 442                                |
+| EU                   | 3 211 TWh            | 14&thinsp;%    |   22&thinsp;%   | 26&thinsp;%   | 35&thinsp;%   | 6 259 kWh                | 256                                |
+| USA                  | 4 153 TWh            | 23&thinsp;%    |   38&thinsp;%   | 19&thinsp;%   | 18&thinsp;%   | 12 661 kWh               | 406                                |
+| Čína                 | 7 325 TWh            | 62&thinsp;%    |    3&thinsp;%   | 5&thinsp;%    | 28&thinsp;%   | 5 109 kWh                | 576                                |
+| Indie                | 1 378 TWh            | 72&thinsp;%    |    3&thinsp;%   | 3&thinsp;%    | 21&thinsp;%   | 1 008 kWh                | 651                                |
+| Ostatní státy        | 9 754 TWh            | 21&thinsp;%    |   36&thinsp;%   | 7&thinsp;%    | 28&thinsp;%   | 2 478 kWh                | 388                                |
+| -------------------- |---------------------:| --------------:| ---------------:| -------------:|--------------:|-------------------------:| ----------------------------------:|
+| ČR (pro srovnání)    | 86 TWh               | 43&thinsp;%    |    7&thinsp;%   | 35&thinsp;%   | 13&thinsp;%   | 6 916 kWh                | ???                                |
 
 </div>
 
