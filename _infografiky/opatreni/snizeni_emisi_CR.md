@@ -11,9 +11,6 @@ data-orig:	[ ]
 ---
 ## Jak číst infografiku?
 
-Tato infografika zobrazuje **celkové množství emisí pro danou zemi** nebo region, vyjádřené jako velikost plochy kruhu. Barevný výsek udává **množství emisí pokryté uhlíkovou daní nebo systémem emisních povolenek**, barva, případně kombinace barev, odpovídá **typu implementovaného opatření**. Symboly ilustrují **hospodářská odvětví spadající pod daná opatření**.
-
-Plocha největšího z kruhů (Čína) odpovídá množství 12,4 Gt <glossary id="co2eq">CO<sub>2</sub>eq</glossary> a velikost nejmenšího kruhu (Švýcarsko) množství 0,05 Gt CO<sub>2</sub>eq. Jednotlivá opatření byla rozdělena na systémy obchodování s emisemi (ETS, emission trading system) a uhlíkovou daň v závislosti na tom, jak ve skutečnosti fungují. **Přístupy ke zpoplatnění emisí uhlíku se v posledních letech vyvíjí** a některé z nich nelze přímo zařadit do jedné ze zde popsaných kategorií. Autoři připouštějí, že lze použít jinou kategorizaci.
 
 ## Změny spotřebních návyků (individuální opatření)
 
@@ -28,12 +25,18 @@ O změnách spotřebních návyků můžeme přemýšlet jako o individuálních
   *  **Letecká doprava**. Kdyby lidé nalétali polovinu vzdálenosti, ušetří se 0,5 - 1,0 % současných emisí skleníkových plynů v ČR. Polovina nalétané vzdálenosti
   *  **Konzumace masa**. Poloviční množství zkonzumovaného masa
   *  **Konzumace mléka a mléčných výrobků.** Poloviční množství zkonzumovaného mléka a mléčných výrobků
-- Poloviční množství netříděného plastového odpadu
-- Snížení spotřeby elektřiny v domácnostech na polovinu
-- Snížení spotřeby tepla v domácnostech na polovinu
-Systémová opatření
+  * Poloviční množství netříděného plastového odpadu
+  * Snížení spotřeby elektřiny v domácnostech na polovinu
+  * Snížení spotřeby tepla v domácnostech na polovinu
+
+
+## Systémová opatření
 - Výsadba 10 mil. stromů
 - Cílená sekvestrace CO2 na orné půdě
 - Zavedení zákazu skládkování
 - Odstavení uhelných zdrojů, odpovídajících čistému exportu elektřiny
 - Česká energetika bez uhlí (2030)
+
+## Přímé a nepřímé emise z průmyslu
+
+Průmyslové procesy (výroba cementu, zpracování oceli apod.) a spalování fosilních paliv v průmyslu - tedy přímé emise z průmyslu - zodpovídají za 18,8% emisí skleníkových plynů ČR. Nepřímé emise, tedy emise v důsledku spotřeby elektrické energie v průmyslu, tvoří dalších 8,6 % emisí ČR. Celkově lze tedy průmyslu a průmyslovým procesům přisoudit přibližně 25 % celkových emisí ČR. 
