@@ -7,7 +7,7 @@ weight:     111
 tags:       [ teploty, brno, tropicke-dny, ledove-dny ]
 caption:    "Jako ukazatel změny klimatu v ČR může sloužit i pokles počtu tropických a nárůst počtu ledových dní. V Brně je posledních několika letech více dní s teplotou nad 30 °C než s teplotou pod 0 °C."
 data-our:   "https://docs.google.com/spreadsheets/d/105PpUjpl5T3Wz5oFMUQYBj-KaqAUU6zF-Vv-RQ1zj3E/edit?usp=sharing"
-data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data" ] ]
+data-orig:	[ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data/data-ze-stanic-site-RBCN" ] ]
 ---
 
 ## Jak číst tento graf?
