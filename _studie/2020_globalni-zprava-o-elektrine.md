@@ -4,8 +4,8 @@ title:      "Globální zpráva o elektřině 2020"
 slug:       2020_globalni-zprava-o-elektrine
 weight:     7
 tags:       [ studie, svet, elektrina ]
-caption:    ""
-intro:      "Zpráva think-tanku EMBER vydaná v březnu 2020 nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změny ve výrobě elektřiny oproti předchozím rokům. Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
+caption:    "Zpráva nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě oproti předchozím rokům."
+intro:      "Zpráva think-tanku EMBER vydaná v březnu 2020 nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě elektřiny oproti předchozím rokům. Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
 summary:    |
     * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
     * Mezi jednotlivými regiony jsou značné rozdíly. **Lídry v nahrazování uhlí jinými zdroji jsou Evropská unie a Spojené státy americké, od roku 2007 míra využívání uhlí pro výrobu elektřinu v obou poklesla na polovinu.** V EU byl tento pokles nahrazen obnovitelnými zdroji (větrné a solární elektrárny), v USA bylo uhlí nahrazeno převážně zemním plynem.
