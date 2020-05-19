@@ -30,7 +30,7 @@ Tabulka shrnuje produkci elektřiny v roce 2019 celosvětově, v hlavních regio
 
 <div class="table table-striped table-hover" markdown="1">
 
-| Region               | Vyrobeno <br/>celkem | Podíl<br/>uhlí | Podíl<br/>plynu | Podíl<br/>Jádra| Podíl<br/>OZE* |Spotřeba<br/>na obyvatele | Uhlíková<br/>intenzita<br/>g CO<sub>2</sub> / kWh |
+| Region               | Vyrobeno <br/>celkem | Podíl<br/>uhlí | Podíl<br/>plynu | Podíl<br/>Jádra| Podíl<br/>OZE* |Spotřeba<br/>na obyvatele | Uhlíková<br/>intenzita**<br/>g CO<sub>2</sub> / kWh |
 | -------------------- |---------------------:| --------------:| ---------------:| -------------:|--------------:|-------------------------:| ---------------------------------------:|
 | Celý svět            | 25 821 TWh           | 35&thinsp;%    |   24&thinsp;%   | 11&thinsp;%   | 27&thinsp;%   | 3 408 kWh                | 442                                |
 | Evropská unie        | 3 211 TWh            | 14&thinsp;%    |   22&thinsp;%   | 26&thinsp;%   | 35&thinsp;%   | 6 259 kWh                | 256                                |
@@ -39,15 +39,16 @@ Tabulka shrnuje produkci elektřiny v roce 2019 celosvětově, v hlavních regio
 | Indie                | 1 378 TWh            | 72&thinsp;%    |    3&thinsp;%   | 3&thinsp;%    | 21&thinsp;%   | 1 008 kWh                | 651                                |
 | Ostatní státy        | 9 754 TWh            | 21&thinsp;%    |   36&thinsp;%   | 7&thinsp;%    | 28&thinsp;%   | 2 478 kWh                | 388                                |
 | -------------------- |---------------------:| --------------:| ---------------:| -------------:|--------------:|-------------------------:| ----------------------------------:|
-| Česká republika    | 86 TWh               | 43&thinsp;%    |    7&thinsp;%   | 35&thinsp;%   | 13&thinsp;%   | 6 916 kWh                | FIXME 657**                               |
+| Česká republika    | 86 TWh               | 43&thinsp;%    |    7&thinsp;%   | 35&thinsp;%   | 13&thinsp;%   | 6 916 kWh                | 411 ***                               |
 
 </div>
 *\* Do podílu výroby OZE jsou započítávány elektrárny vodní, větrné, solární a na biomasu.*   
-*\*\* Uhlíková intenzita pro ČR je založena na datech z roku 2016, hodnota za rok 2019 bude s velkou pravděpodobností podobná.*
+*\*\* Uhlíková intenzita je počítána jako přímé emise výroby, nikoliv pro emise celého životního cyklu (včetně budování a likvidace) elektráren.* 
+*\*\*\* Uhlíková intenzita pro ČR je založena na výpočtu FIXME*
 
 ### Evropská Unie
 
-Poptávka po elektřině v Evropské Unii dlouhodobě stagnuje. Mezi roky 2018 a 2019 došlo v EU k propadu využívání uhlí k výrobě elektřiny o 24 % a emise skleníkových plynů z výroby elektřiny poklesly o 13 %. Jde o pokračování dlouhodobého trendu, kdy v rámci EU je uhlí postupně nahrazováno obnovitelnými zdroji, zejména ve státech západní Evropy. Pro dosažení udržitelných scénářů podle IEA či IPCC (1,5 °C scénář) je tento trend dostatečný, pokud se ho podaří udržet. Především je nutné dále nahrazovat uhelné elektrárny ve státech jako je Německo nebo Polsko. Uhlíková intenzita výroby elektřiny v EU je 256 g CO2 / kWh, o 42 % nižší než je světový průměr a uhlí se na výrobě elektřiny podílí pouhými 14 %.
+Poptávka po elektřině v Evropské Unii dlouhodobě stagnuje. Mezi roky 2018 a 2019 došlo v EU k propadu využívání uhlí k výrobě elektřiny o 24 % a emise skleníkových plynů z výroby elektřiny poklesly o 13 %. Jde o pokračování dlouhodobého trendu, kdy v rámci EU je uhlí postupně nahrazováno obnovitelnými zdroji, zejména ve státech západní Evropy. Pro dosažení udržitelných scénářů podle IEA či IPCC (1,5 °C scénář) je tento trend dostatečný, pokud se ho podaří udržet. Především je nutné dále nahrazovat uhelné elektrárny ve státech jako je Německo nebo Polsko. Uhlíková intenzita výroby elektřiny v EU je 256 g CO<sub>2</sub> / kWh, o 42 % nižší než je světový průměr a uhlí se na výrobě elektřiny podílí pouhými 14 %.
 
 ### Spojené státy americké 
 
@@ -69,7 +70,7 @@ Poptávka po elektřině v ostatních státech světa roste v poslední dekádě
 
 * Dataset obsahuje údaje z let 2000–2019 pro 224 zemí. U hlavních zemí byla data získána od národních zdrojů (jedná se o Čínu, Spojené státy americké, Indii, Evropskou unii a 15 dalších větších států), údaje pro ostatní státy byly získány prostřednictvím [Mezinárodní energetické agentury](https://www.iea.org/). V některých případech byla data doplněná o další odhady (zpravidla se jednalo o produkci elektřiny podle jednotlivých typů výroby u dat z IEA). Detailnější metodologii těchto odhadů a dalších výpočtů popisuje příslušná část zprávy.
 
-* FIXME. Údaje pro emise z výroby elektřiny zahrnují provozní / lifecycle emissions.
+* Údaje pro emise ve zprávě a datasetu jsou přímé emise z výroby elektřiny, nikoliv emise životního cyklu. Není v nich tedy započáno budování zdrojů a jejich likvidace, emise z těžby apod.
 
 ## Poznámky o zpracovateli
 
