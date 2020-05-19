@@ -43,8 +43,8 @@ Tabulka shrnuje produkci elektřiny v roce 2019 celosvětově, v hlavních regio
 
 </div>
 *\* Do podílu výroby OZE jsou započítávány elektrárny vodní, větrné, solární a na biomasu.*   
-*\*\* Uhlíková intenzita je počítána jako přímé emise výroby, nikoliv pro emise celého životního cyklu (včetně budování a likvidace) elektráren.* 
-*\*\*\* Uhlíková intenzita pro ČR je založena na výpočtu FIXME*
+*\*\* Uhlíková intenzita jsou udávány jako přímé emise výroby, nikoliv jako emise celého životního cyklu elektráren.* 
+*\*\*\* Údaj o uhlíková intenzitě pro ČR nepochází přímo ze zprávy. Je vypočtený z dat o výrobě pomocí příslušných emisních koeficientů z [IPCC 2014: ANNEX III, Technology-specific Cost and Performance Parameters](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf) *
 
 ### Evropská Unie
 
@@ -70,7 +70,7 @@ Poptávka po elektřině v ostatních státech světa roste v poslední dekádě
 
 * Dataset obsahuje údaje z let 2000–2019 pro 224 zemí. U hlavních zemí byla data získána od národních zdrojů (jedná se o Čínu, Spojené státy americké, Indii, Evropskou unii a 15 dalších větších států), údaje pro ostatní státy byly získány prostřednictvím [Mezinárodní energetické agentury](https://www.iea.org/). V některých případech byla data doplněná o další odhady (zpravidla se jednalo o produkci elektřiny podle jednotlivých typů výroby u dat z IEA). Detailnější metodologii těchto odhadů a dalších výpočtů popisuje příslušná část zprávy.
 
-* Údaje pro emise ve zprávě a datasetu jsou přímé emise z výroby elektřiny, nikoliv emise životního cyklu. Není v nich tedy započáno budování zdrojů a jejich likvidace, emise z těžby apod.
+* Údaje pro emise ve zprávě a datasetu jsou přímé emise výroby elektřiny, nikoliv emise životního cyklu. Není v nich tedy započáno budování zdrojů a infrastruktury, emise z těžby a přepravy paliv apod.
 
 ## Poznámky o zpracovateli
 
