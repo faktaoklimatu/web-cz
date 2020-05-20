@@ -11,7 +11,7 @@ dataset:    "tropicke-dny"
 
 ## Jak číst tento graf?
 
-* Graf zobrazuje vývoj počtu ledových (modré body) a tropických dní (červené body) v Brně-Tuřanech v letech 1961–2020, jejich klouzavý průměr přes 5 let a trendové křivky. Jako ledové se označují dny, jejichž maximální teplota byla nižší než 0 °C. Za tropické jsou považovány ty, jejichž maximální teplota překročila 30 °C.
+* Graf zobrazuje vývoj počtu ledových (modré body) a tropických dní (červené body) v Brně-Tuřanech v letech 1961–2019, jejich klouzavý průměr přes 5 let a trendové křivky. Jako ledové se označují dny, jejichž maximální teplota byla nižší než 0 °C. Za tropické jsou považovány ty, jejichž maximální teplota překročila 30 °C.
 * V grafu je vidět, že počty ledových i tropických dní každoročně kolísají, i přesto je však patrný trend, který je pro ledové dny klesající a pro tropické rostoucí. V průměru za posledních 6 dekád přibyde v Brně každou dekádu 2,7 tropického dne a ubyde 2,1 ledového dne. Z grafu je však patrné, že trend je v poslední dekádě rychlejší.
 
 ## Zajímavosti a komentáře ke grafu
