@@ -16,7 +16,7 @@ data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/
     name="ČHMÚ"
     description="Historická data – meteorologie a klimatologie"
     url="http://portal.chmi.cz/historicka-data/pocasi/denni-data/data-ze-stanic-site-RBCN"
-    licence="zdarma k použití, vyžaduje odkázání zdroje"
+    licence="volně k použití, vyžaduje odkázání zdroje"
     licence-proof="http://portal.chmi.cz/files/portal/docs/meteo/ok/denni_data/Podminky_uziti_udaju.pdf"
 %}
 
