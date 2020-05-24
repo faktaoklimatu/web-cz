@@ -1,6 +1,6 @@
 <h1 id="{{ page.id }}">{{ page.title }}</h1>
 {{ content }}
-{% assign all_items = site.infografiky | concat: site.datasety | concat: site.studie | sort: 'weight' %}
+{% assign all_items = site.infografiky | concat: site.datasety | concat: site.studie %}
 {% assign prefiltered_items = all_items | where:"layout",page.filter-layout %}
 {% if page.filter-tag %}
     {% assign filtered_items = prefiltered_items | where_exp:"item","item.tags contains page.filter-tag" %}

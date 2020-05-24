@@ -24,8 +24,8 @@
         {% endif %}
         {% for col in page.collections %}
           <h2>{{col[0]}} <small class="text-muted">({{ col[1]|size }})</small></h2>
-          {% assign sorted_items = col[1] %}
-          {% include preview-blocks.html blocks=sorted_items %}
+          {% assign items = col[1] %}
+          {% include preview-blocks.html blocks=items %}
         {% endfor %}
       </div>
     </div>

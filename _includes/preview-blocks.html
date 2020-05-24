@@ -1,5 +1,6 @@
 <div class="row justify-content-md-center">
-{% for item in include.blocks %}
+{% assign sorted_blocks = include.blocks | sort: 'weight' %}
+{% for item in sorted_blocks %}
     <div class="col-md-6 col-lg-4">
         <a href="{{ item.url }}" class="preview-card card">
             {% case item.layout %}
