@@ -5,7 +5,7 @@ slug:       "teplota-cr"
 redirect_from: "/teplota-cr"
 weight:     96
 tags-scopes: [ ČR ]
-tags-topics: [ teploty ]
+tags-topics: [ klima ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 60 let o 2 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"

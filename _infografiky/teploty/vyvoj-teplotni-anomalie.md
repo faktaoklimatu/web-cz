@@ -5,7 +5,7 @@ slug:       "vyvoj-teplotni-anomalie"
 redirect_from: "/vyvoj-teplotni-anomalie"
 weight:     97
 tags-scopes: [ svět ]
-tags-topics: [ teploty ]
+tags-topics: [ klima ]
 caption:    "Planeta je nyní o 0,8–1,0 °C teplejší než v letech 1951–1980. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "vyvoj-teplota-svet"

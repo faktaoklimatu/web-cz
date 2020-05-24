@@ -3,7 +3,7 @@ layout:         section
 title:          "Vývoj teplot a koncentrací skleníkových plynů"
 navbar:         infographics
 filter-layout:  infographic
-filter-tag:     teploty
+filter-tag:     klima
 weight:         1
 ---
 

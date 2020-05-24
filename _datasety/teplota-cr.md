@@ -4,7 +4,7 @@ title:      "Teplota ČR"
 slug:       "teplota-cr"
 weight:     30
 tags-scopes: [ ČR ]
-tags-topics: [ teploty ]
+tags-topics: [ klima ]
 caption:    "TODO"
 published:  false
 dataset-url:    "https://docs.google.com/spreadsheets/d/1pNBmfQbz6QKAl9nLc5RnoLrJMFrCSxzk_KOY4Ns7xTY/edit?usp=sharing"
