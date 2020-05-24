@@ -12,7 +12,7 @@
       <div class="container clearfix">
         <h1>Téma: {{ tag.name-long | capitalize }}</h1>
         {% if tag.description %}
-          <div class="lead">{{ tag.description }}</p>
+          <span class="lead">{{ tag.description | markdownify }}</span>
         {% else %}
           <p class="lead">Na této stránce najdete všechny infografiky, studie a datasety týkajíci se tématu "{{ tag.name-long }}".</p>
         {% endif %}
