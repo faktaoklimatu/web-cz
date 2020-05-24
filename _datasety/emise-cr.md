@@ -3,7 +3,7 @@ layout:     dataset
 title:      "Emise skleníkových plynů ČR"
 slug:       "emise-cr"
 weight:     70
-tags-scopes: [ ČR ]
+tags-scopes: [ cr ]
 tags-topics: [ emise ]
 caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2016 a data ze systému emisních povolenek za rok 2016."
 dataset-url:    "https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit?usp=sharing"

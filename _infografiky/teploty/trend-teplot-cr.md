@@ -4,7 +4,7 @@ title:      "Trend nárůstu teplot v ČR v jednotlivých měsících"
 slug:       "trend-teplot-cr"
 redirect_from: "/trend-teplot-cr"
 weight:     100
-tags-scopes: [ ČR ]
+tags-scopes: [ cr ]
 tags-topics: [ klima ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 59 let o 2 °C. Trendy v oteplování jednotlivých měsíců jsou však různé. Největší nárůst teplot je v lednu, červenci a srpnu – tyto měsíce se mezi roky 1961 až 2019 oteplily o více než 2,5 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.

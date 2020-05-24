@@ -4,7 +4,7 @@ title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
 redirect_from: "/emise-svet"
 weight:     94
-tags-scopes: [ svět ]
+tags-scopes: [ svet ]
 tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele."
 # TODO: Nahradit za dataset, až bude grafika založena na datech EDGAR 5.

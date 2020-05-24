@@ -4,7 +4,7 @@ title:      "Emise světových regionů přepočtené na osobu"
 slug:       "emise-svet-na-osobu"
 redirect_from: "/emise-svet-na-osobu"
 weight:     89
-tags-scopes: [ svět ]
+tags-scopes: [ svet ]
 tags-topics: [ emise ]
 caption:    "Srovnání ročních emisí vybraných států a světových regionů, vyjádřeno na obyvatele i za celou populaci."
 dataset:    "emise-svet"

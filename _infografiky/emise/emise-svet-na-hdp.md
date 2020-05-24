@@ -4,7 +4,7 @@ title:      "Emise světových regionů přepočtené na HDP"
 slug:       "emise-svet-na-hdp"
 redirect_from: "/emise-svet-na-hdp"
 weight:     90
-tags-scopes: [ svět ]
+tags-scopes: [ svet ]
 tags-topics: [ emise, ekonomika ]
 caption:    "Roční emise vybraných států a světových regionů, přepočteno v poměru k HDP a srovnáno s celkovou velikostí ekonomiky."
 dataset:    "emise-svet"

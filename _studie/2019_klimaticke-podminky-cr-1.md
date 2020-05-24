@@ -3,7 +3,7 @@ layout:     study
 title:      "Očekávané klimatické podmínky v ČR"
 slug:       2019_klimaticke-podminky-cr-1
 weight:     2
-tags-scopes: [ ČR ]
+tags-scopes: [ cr ]
 tags-topics: [ budoucnost ]
 caption:    "Studie modeluje změny teploty a změny množství a rozložení srážek v ČR během 21.století."
 # Technicka poznamka: Uvozovky v 'intro' jsou zamerne smart, protoze smart konverze zpusobi YAML error.

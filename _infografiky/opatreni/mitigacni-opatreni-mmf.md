@@ -4,8 +4,8 @@ title:      "Srovnání mitigačních opatření"
 slug:       "mitigacni-opatreni-mmf"
 redirect_from: "/mitigacni-opatreni-mmf"
 weight:     99
-tags-scopes: [ svět ]
-tags-topics: [ opatření ]
+tags-scopes: [ svet ]
+tags-topics: [ opatreni ]
 caption:    "Čtyři mitigační opatření (uhlíková daň, obchod s emisními povolenkami, poplatky a příspěvky a regulace) jsou porovnány na základě sedmi kritérií. Zpráva Mezinárodního měnového fondu ukazuje, že nejúčinnějším opatřením jsou uhlíková daň a obchodování s emisními povolenkami."
 data-our:   "https://docs.google.com/spreadsheets/d/1KnjFmzFuK7Ssg-DRavuMJ2l9C7YU1uP6hQkScCyCRZE/edit?usp=sharing"
 data-orig:	[ [ "Zpráva MMF", "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019" ] ]

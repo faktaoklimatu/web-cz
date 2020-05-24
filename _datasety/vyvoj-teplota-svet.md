@@ -3,7 +3,7 @@ layout:     dataset
 title:      "Vývoj změny teploty světa"
 slug:       "vyvoj-teplota-svet"
 weight:     40
-tags-scopes: [ svět ]
+tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "TODO"
 published:     false

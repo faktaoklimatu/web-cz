@@ -3,7 +3,8 @@ layout:     study
 title:      "Globální zpráva o elektřině 2020"
 slug:       2020_globalni-zprava-o-elektrine
 weight:     0
-tags:       [ studie, svet, elektrina ]
+tags-scopes: [ svet ]
+tags-topics: [ energetika ]
 caption:    "Zpráva nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě oproti předchozím rokům."
 intro:      "Zpráva think-tanku EMBER vydaná v březnu 2020 nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě elektřiny oproti předchozím rokům. Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
 summary:    |

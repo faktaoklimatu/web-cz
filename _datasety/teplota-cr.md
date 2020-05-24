@@ -3,7 +3,7 @@ layout:     dataset
 title:      "Teplota ČR"
 slug:       "teplota-cr"
 weight:     30
-tags-scopes: [ ČR ]
+tags-scopes: [ cr ]
 tags-topics: [ klima ]
 caption:    "TODO"
 published:  false
