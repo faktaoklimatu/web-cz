@@ -205,9 +205,8 @@ ul:last-child {
 }
 
 .btn-secondary {
-    background-color: rgba(0,0,0,0);
-    color: inherit;
-    border-width: 3px;
+    background-color: transparent;
+    color: $c-primary;
     border-color: $c-primary;
 
     &:hover {
