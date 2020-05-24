@@ -7,7 +7,7 @@ weight:     92.5
 tags:       [ emise, energetika, elektrina, EU ]
 caption:    "Vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2019 a srovnání se spotřebou pro členské státy Evropské unie a Velkou Británii. Hodnoty jsou uváděné v kWh na osobu za rok."
 data-our:   ""
-data-orig:  [["Původní zdroj dat: Ember", "https://ember-climate.org/project/data-global-electricity-review/"]]
+data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 
 ## Jak číst tento graf
@@ -27,6 +27,6 @@ data-orig:  [["Původní zdroj dat: Ember", "https://ember-climate.org/project/d
 
 ## Zdroj dat
 
-* Infografika je založená na datech od organizace Ember (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
-* Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla převzata z národních a dalších zdrojů.
+* Infografika je založená na datech o výrobě a spotřebě elektřiny od organizace Ember (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla doplněna z národních a dalších zdrojů.
 * Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020_globalni-zprava-o-elektrine).
+* Data o populaci jsou převzata od Organizace spojených národů.
