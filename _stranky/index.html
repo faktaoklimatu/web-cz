@@ -25,8 +25,10 @@ authors: |
             <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
             <a href="{{ site.newsletter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
         </p>
-        <div style="margin-left: 19rem">
-            {% include tags-index.html tags=site.data.tags_categorized.tags-scopes tag-class='font-weight-bold' %}
+        <hr/>
+        <span class="tagline">Přehled témat, kterým se věnujeme</span>
+        <div class="tags-list">
+            {% include tags-index.html tags=site.data.tags_categorized.tags-scopes tag-class='font-weight-bold, mt-2' %}
             {% include tags-index.html tags=site.data.tags_categorized.tags-topics %}
         </div>
     </div>
