@@ -7,27 +7,31 @@ weight:     92.3
 tags:       [ emise, energetika, elektrina, svet ]
 caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
 data-our:   ""
-data-orig:  [["Původní zdroj dat: Ember", "https://ember-climate.org/project/data-global-electricity-review/"]]
+data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 
 ## Jak číst tento graf
 
-* Graf znázorňuje množství vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2019 ve všech členských státech Evropské unie a ve Velké Británii. Hodnoty jsou uváděné v kWh vyrobené (a spotřebované) elektřiny na osobu za rok.
-* Výroba elektřiny je také doplněna o průměrnou spotřebu, která v roce 2019 v celé Evropské unii byla 6259 kWh na osobu. Graf ukazuje, jak se tato průměrná spotřeba liší v jednotlivých členských státech a jak se tato spotřeba vyvíjí v čase. Rozdíl mezi průměrnou výrobou a průměrnou spotřebou představuje dovoz a vývoz elektřiny.
-* Ostatní fosilní paliva zahrnují především zemní plyn, obnovitelné zdroje obsahují solární, větrné i vodní elektrárny, výrobu elektřiny z biomasy, bioplynu a ze spalování odpadu.
+* Graf znázorňuje celosvětový vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2019 a také srovnání s vybranými světovými regiony. Hodnoty jsou uváděné v kWh vyrobené elektřiny na osobu za rok.
+* Všechny grafy mají shodnou vertikální osu, proto u regionů s velmi nízkou průměrnou spotřebou na osobu zabírá vyplněná část jen velmi malý prostor grafu.
+* Srovnání na osobu však nezohledňuje odlišnou velikost jednotlivých regionů, proto pravý sloupec doplňuje podíl regionů na celkové globální výrobě elektřiny v roce 2019.
 
 ## Komentáře ke grafu
+* Výroba elektřiny na osobu v Česká republice v roce 2019 byla 8066 TWh, tedy výrazně více než průměry ve většině zobrazených regionů s výjimkou USA. Česká republika je zároveň velký vývozce elektřiny, proto průměrná spotřeba elektřiny na osobu byla nižší, 6891 TWh. I tato hodnota je více než dvojnásobná oproti světovému průměru.
+* Celosvětově došlo mezi lety 2000 a 2019 k navýšení produkce elektřiny o 75 %, zároveň v tomto období došlo k nárůstu populace o 1,6 miliardy obyvatel. V přepočtu na osobu se výroba elektřiny zvýšila o 39 %, v absolutních hodnotách došlo k navýšení kapacit všech zdrojů výroby elektřiny s výjimkou jaderných. Podíl uhlí na výrobě elektřiny mírně klesl (z 37,9 % na 35,2 %), podíl jádra klesl ještě výrazněji (z 16,9 % na 10,5 %), naopak došlo ke zvýšení podílů zemního plynu (z 18,2 % na 23,5 %) a obnovitelných zdrojů (z 19,5 % na 27,3 %, především díky rozvoji větrných a solárních elektráren).
+* Z grafu jsou také patrné trendy jednotlivých regionů:
+  * V Evropské unii se spotřeba elektřiny na osobu prakticky nemění, dochází však k výraznému nahrazování uhlí ve výrobě elektřiny obnovitelnými zdroji.
+  * Spotřeba elektřiny na osobu v USA mírně klesla, stále je však mnohonásobně vyšší než světový průměr. Od roku 2007 dochází k poklesu podílu uhlí ve výrobě elektřiny, které je však nahrazováno především zemním plynem, částečně také obnovitelnými zdroji.
+  * V Číně se spotřeba elektřiny na osobu zvýšila mezi lety 2000 a 2019 pětinásobně, průměrná spotřeba je již na 82 % průměrné spotřeby obyvatele Evropské unie. Došlo k navyšování kapacit všech zdrojů výroby elektřiny, přesto uhlí je v Číně stále dominujícím zdrojem s 62% podílem. V přepočtu na osobu Čína vyrobila z uhlí 3180 kWh v roce 2019, což je nejvíce ze zobrazených regionů. Pro srovnání Česká republika ve stejném roce vyrobila z uhlí 3439 kWh na osobu.
+  * V Indii došlo k více než dvojnásobnému nárůstu výroby elektřiny na osobu v daném období, přesto je však stále nižší než třetinová ve srovnání s celosvětovým průměrem. Uhlí je stále dominantním zdrojem při výrobě elektřiny se 72% podílem, přesto dochází také k pozvolnému rozvoji ostatních zdrojů.
+  * Ostatní státy světa představují velice různorodou skupinu, kde výroba elektřiny na osobu některých států převyšuje USA (například Kanada nebo některé státy blízkého východu), zároveň v mnoha jiných státech je nižší než v Indii (zpravidla africké a některé asijské státy).
+* Graf zobrazuje elektřinu vyrobenou v jednotlivých regionech, nikoli skutečně spotřebovanou. Například v případě České republiky tvoří čistý export téměř 15 % vyrobené elektřiny. U velkých regionů v grafu je však dovoz a vývoz prakticky zanedbatelný, u všech zobrazených regionů je nižší než 1 %.
 * Elektřina představuje pouze část z celkové spotřeby energií, například většina energie spotřebovaná na dopravu či vytápění není v grafu zahrnuta (neboť se jedná o přímé spalování fosilních paliv, nikoli o elektřinu).
-* Z grafu jsou zřejmé velké rozdíly v množství vyrobené i spotřebované elektřiny mezi jednotlivými státy. V některých případech lze tyto rozdíly vysvětlit právě rozdílnou mírou elektrifikace dopravy nebo vytápění, například u Švédska.
-* Ačkoli uhlí je jen jedním z fosilních paliv, jeho spalování uvolňuje nejvíce emisí v přepočtu na získanou energii. Například zemní plyn uvolňuje přibližně jen poloviční množství skleníkových plynů na jednotku energie oproti uhlí (zejména hnědému). Proto má smysl uvádět v infografice podíl uhlí jako samostatnou kategorii – a proto je samozřejmě také důležité usilovat o snížení podílu uhlí ve výrobě elektřiny.
-* Podíl uhlí na výrobě elektřiny v EU klesl z 30,6 % v roce 2000 na 14,5 % v roce 2019. Uhlí bylo nahrazeno obnovitelnými zdroji (nárůst z 15 % na 35,4 %), především rozvojem větrných elektráren, ovšem ke značnému nárůstu došlo i u solárních elektráren a výroby elektřiny z biomasy a odpadu. Podíl jaderné elektřiny se snížil z 31,4 % na 25,6 %, podíl ostatních fosilních paliv mírně vzrostl z 23,1 % na 24,6 % (a zejména zastoupení plynu mezi ostatními fosilními palivy se zvýšilo).
-* Pokles zastoupení uhlí a jeho nahrazení obnovitelnými zdroji vedly k výraznému zlepšení uhlíkové intenzity při výrobě elektřiny, v roce 2000 se při výrobě 1 kWh elektřiny uvolnilo 450 gramů CO<sub>2</sub>, v roce 2019 již pouze 256 gramů CO<sub>2</sub>.
-* Nejvyšší podíl uhlí na výrobě elektřiny ze států EU má Polsko – 74 % v roce 2019, Česká republika byla druhá se 42,6 %. Pouze 7 států Evropské unie má podíl uhlí na výrobě elektřiny vyšší než 15 %. Naopak nejnižší podíl uhlí při výrobě elektřiny mají Francie (vyrobí více než 70 % elektřiny z jaderných elektráren), Švédsko (téměř veškerá energie je vyráběna z obnovitelných zdrojů – vodních a větrných elektráren – a z jádra), Belgie (kombinace jaderné elektřiny, obnovitelných zdrojů a zemního plynu) a některé další menší státy (Kypr, Litva, Lotyšsko, Lucembursko a Malta).
-* Mnoho států vyváží nebo dováží větší množství elektřiny, Evropská unie jako celek je však v oblasti elektřiny prakticky soběstačná (dováží v průměru pouze 0,5 % spotřebované elektřiny).
+* Do grafu nejsou zahrnuté některé další obnovitelné zdroje s marginálním podílem na výrobě (například geotermální energie), celosvětově se jedná o 0,4 % produkce elektřiny.
 
 ## Zdroj dat
 
 * Infografika je založená na datech od organizace Ember (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
-* Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla převzata z národních a dalších zdrojů.
-* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020_globalni-zprava-o-elektrine).
-* FIXME - info o populačních datech 
+* Ember vychází především z dat Eurostatu pro Evropskou unii, z národních databází pro USA, Čínu, Indii a další větší státy a z mezinárodní datové sekce amerického ministerstva energetiky pro ostatní státy světa.
+* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020_globalni-zprava-o-elektrine). Tato infografika vychází především z datasetu, který byl přílohou této zprávy.
+* Data o populaci jsou převzata od Organizace spojených národů.
