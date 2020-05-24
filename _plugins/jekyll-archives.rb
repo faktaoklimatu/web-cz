@@ -59,7 +59,7 @@ module Jekyll
 
       def merge_collection_tags
         tag_keys = [ "tags", "tags-scopes", "tags-topics" ]
-        cats = Hash[ tag_keys.map{ |k| [k, {}] } ]
+        cats = Hash[ tag_keys.map{ |k| [k, []] } ]
         @site.data["tags_categorized"] = cats
 
         @site.collections.each_value do |col|
@@ -70,19 +70,14 @@ module Jekyll
               end
 
               post.data[key].each do |tag|
+                tag_full_info = @site.data["tags"].select {|t| t["id"] == tag}
                 tags[tag].nil? ? tags[tag] = [ post ] : tags[tag].push(post)
-                cats[key][tag] = true
+                cats[key].nil? ? cats[key] = [ tag_full_info ] : cats[key] |= tag_full_info
                 if key != "tags"
                   post.data["tags"].push(tag)
                 end
               end
             end
-          end
-        end
-
-        cats.each do |cat,tags|
-          tags.each_key do |tag|
-            tags[tag] = @site.data["tags"][tag]
           end
         end
       end

@@ -64,5 +64,7 @@ jekyll-archives:
   enabled: [ "tags" ]
   layouts:
     tag: tag
+  permalinks:
+    tag: '/temata/:name/'
   collections:
     merge_tags: true

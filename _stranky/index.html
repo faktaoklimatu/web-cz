@@ -28,8 +28,10 @@ authors: |
         <hr/>
         <span class="tagline">Přehled témat, kterým se věnujeme</span>
         <div class="tags-list">
-            {% include tags-index.html tags=site.data.tags_categorized.tags-scopes tag-class='font-weight-bold, mt-2' %}
-            {% include tags-index.html tags=site.data.tags_categorized.tags-topics %}
+            {% assign tags-scopes-all = site.data.tags_categorized.tags-scopes | map: "id" %}
+            {% include tags.html tags=tags-scopes-all link="true" friendly-name="true" container-class="mt-4" %}
+            {% assign tags-topics-all = site.data.tags_categorized.tags-topics | map: "id" %}
+            {% include tags.html tags=tags-topics-all link="true" %}
         </div>
     </div>
 </div>

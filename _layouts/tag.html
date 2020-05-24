@@ -6,21 +6,15 @@
 
 <body>
   {% include navigation.html %}
-
-  {% assign tag = site.data["tags"][page.title] %}
-  {% if tag["name"] %}
-    {% assign friendly_name = tag["name"] %}
-  {% else %}
-    {% assign friendly_name = page.title | capitalize %}
-  {% endif %}
-
+  {% assign tag = site.data.tags | where: "id", page.title | first %}
   <main role="main" id="page-tag">
     <div class="section">
       <div class="container clearfix">
-        <h1>Štítek: {{ friendly_name }}</h1>
-        <p class="lead font-italic">Na této stránce najdete všechny infografiky, studie a datasety se štítkem "{{ page.title }}".</p>
-        {% if tag["description"] %}
-          <p class="lead">{{tag["description"]}}</p>
+        <h1>Téma: {{ tag.name-long | capitalize }}</h1>
+        {% if tag.description %}
+          <div class="lead">{{ tag.description }}</p>
+        {% else %}
+          <p class="lead">Na této stránce najdete všechny infografiky, studie a datasety týkajíci se tématu "{{ tag.name-long }}".</p>
         {% endif %}
         {% for col in page.collections %}
           <h2>{{col[0]}} <small class="text-muted">({{ col[1]|size }})</small></h2>
