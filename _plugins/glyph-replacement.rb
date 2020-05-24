@@ -12,7 +12,7 @@ def replace!(content)
   # One-letter conjunctions and prepositions should not be left hanging.
   content.gsub!(/ ([aikosuvz]) /i, ' \1&nbsp;')
   # Thin sapces before percent sign and before groups of digits.
-  content.gsub!(/(?<=\d) (%|\d{3})/, '&thinsp;\1')
+  content.gsub!(/(?<=\d) (%|\d{3})/, '&#8239;\1')
   # Non-breaking spaces before units.
   content.gsub!(/(?<=\d) (°C|ppm|kg|mil\.|tCO)/, '&nbsp;\1')
   content.gsub!(/(?<=\d) ([kMGT]?Wh?)/, '&nbsp;\1')

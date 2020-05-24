@@ -1,6 +1,11 @@
-- date: 2020-04-20
-  summary: "Rozšířili jsme [Slovník pojmů](/slovnik) (např. _Albedo_ či _Zvláštní zprávy IPCC_) a překročili tak počet 20 obsáhnutých hesel."
+
+- date: 2020-05-19
+  title: "Globální zpráva o elektřině a dvě nové grafiky" 
+  summary: |
+    * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020_globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20let. 
+    * Nové grafiky: [Emisní intenzita](/infografiky/emisni-intenzity) a [Tropické a mrazové dny](/infografiky/tropicke-dny-brno)
   
+ 
 - date: 2020-04-17
   title: "Stránky k našim datovým sadám"
   summary: |
@@ -28,7 +33,7 @@
   summary: "První účast na větší konferenci - přímo v panelu na [Climate Open Data Expo](https://osf.cz/open-data-expo-2020/). Mimo to jsme také zhruba dva týdny předtím přednášeli na Přírodovědecké fakultě MU či Biskupském Gymnáziu v Brně."
 
 - date: 2020-02-27
-  title: "Mapa změn teploty a zpoplatnění emisí"
+  title: "Mapa změn teploty a grafika zpoplatnění emisí"
   summary: |
     * Nová infografika: [Mapa změny teploty mezi lety 1961–2019](/infografiky/mapa-zmeny-teploty)
     * Nová infografika: [Zpoplatnění emisí: rozšíření ve světě](/infografiky/zpoplatneni-emisi-svet)

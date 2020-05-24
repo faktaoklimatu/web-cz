@@ -37,16 +37,16 @@ metadata-extra: '<a href="http://glopolis.org/wp-content/uploads/Infolist-sit-be
 
 | Zdroj                | Instalovaný<br/>výkon 2017 | Instalovaný<br/>výkon 2030 | Rozdíl |
 | -------------------- |-----------------------:| ----------:| ------:|
-| Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |  0&thinsp;%   |
-| Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   | -79&thinsp;%   |
-| Zdroje na černé uhlí | 1496 MWe               | 696 MWe    | -53&thinsp;%   |
-| Zdroje na zemní plyn | 1433 MWe               | 2796 MWe   | +95&thinsp;%   |
-| Vodní elektrárny     | 1090 MWe               | 1142 MWe   | +5&thinsp;%    |
-| Přečerpávací vodní elektrárny | 1130 MWe      | 1175 MWe   | +4&thinsp;%    |
-| Větrné elektrárny    | 278 MWe                | 2050 MWe   | +637&thinsp;%  |
-| Fotovoltaické elektrárny | 2100 MWe           | 5500 MWe   | +162&thinsp;%  |
-| Zdroje na biomasu a bioplyn |  758 MWe        | 1385 MWe   | +83&thinsp;%   |
-| Geotermální zdroje   | 0 MWe                  | 50 MWe     | N/A    |
+| Jaderné elektrárny   | 4290 MWe               | 4290 MWe   |    0 % |
+| Zdroje na hnědé uhlí | 8707 MWe               | 1825 MWe   |  -79 % |
+| Zdroje na černé uhlí | 1496 MWe               | 696 MWe    |  -53 % |
+| Zdroje na zemní plyn | 1433 MWe               | 2796 MWe   |  +95 % |
+| Vodní elektrárny     | 1090 MWe               | 1142 MWe   |   +5 % |
+| Přečerpávací vodní elektrárny | 1130 MWe      | 1175 MWe   |   +4 % |
+| Větrné elektrárny    | 278 MWe                | 2050 MWe   | +637 % |
+| Fotovoltaické elektrárny | 2100 MWe           | 5500 MWe   | +162 % |
+| Zdroje na biomasu a bioplyn |  758 MWe        | 1385 MWe   |  +83 % |
+| Geotermální zdroje   | 0 MWe                  | 50 MWe     |    N/A |
 
 </div>
 
