@@ -5,7 +5,7 @@ slug:       "elektrina-na-osobu-svet"
 redirect_from: "/elektrina-na-osobu-svet"
 weight:     92.3
 tags:       [ emise, energetika, elektrina, svet ]
-caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2019 a srovnání se spotřebou, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
+caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
 data-our:   ""
 data-orig:  [["Původní zdroj dat: Ember", "https://ember-climate.org/project/data-global-electricity-review/"]]
 ---
@@ -30,3 +30,4 @@ data-orig:  [["Původní zdroj dat: Ember", "https://ember-climate.org/project/d
 * Infografika je založená na datech od organizace Ember (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
 * Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla převzata z národních a dalších zdrojů.
 * Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020_globalni-zprava-o-elektrine).
+* FIXME - info o populačních datech 
