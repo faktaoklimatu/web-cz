@@ -94,7 +94,7 @@
 
     {{ content }}
 
-    {% assign sorted_infographics = site.infografiky | where:"dataset",page.slug | sort: 'weight' %}
+    {% assign sorted_infographics = site.infografiky | where: "dataset", page.slug | sort: 'weight' %}
     {% if sorted_infographics.size > 0 %}
     <div class="section">
       <div class="container">
