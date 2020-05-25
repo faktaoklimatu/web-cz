@@ -1,15 +1,16 @@
 {% if include.tags %}
-{% assign sorted_tags = include.tags | sort_czech: name_short %}
+{% assign sorted_full_tags = site.data.tags | sort_czech: "name-short" | sort: "is_scope", "last" %}
 <div class="tags {{ include.container-class }}">
-    {% for tag_id in sorted_tags %}
-        {% assign tag = site.data.tags | where: "id", tag_id | first %}
-        {% if include.link %}
-            <a href="/temata/{{ tag_id }}" class="btn btn-tag btn-tag-link btn-sm" role="button">
-        {% else %}
-            <div class="btn btn-tag btn-sm">
+    {% for tag in sorted_full_tags %}
+        {% if include.tags contains tag.id %}
+            {% if include.link %}
+                <a href="/temata/{{ tag.id }}" class="btn btn-tag btn-tag-link btn-sm" role="button">
+            {% else %}
+                <div class="btn btn-tag btn-sm">
+            {% endif %}
+            {% if include.friendly-name %}{{ tag.name-long }}{% else %}{{ tag.name-short }}{% endif %}
+            {% if include.link %}</a>{% else %}</div>{% endif %}
         {% endif %}
-        {% if include.friendly-name %}{{ tag.name-long }}{% else %}{{ tag.name-short }}{% endif %}
-        {% if include.link %}</a>{% else %}</div>{% endif %}
     {% endfor %}
 </div>
 {% endif %}
