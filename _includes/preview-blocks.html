@@ -1,3 +1,4 @@
+{% if include.blocks %}
 <div class="row justify-content-md-center">
 {% assign sorted_blocks = include.blocks | sort: 'weight' %}
 {% for item in sorted_blocks %}
@@ -31,3 +32,4 @@
     </div>
 {% endfor %}
 </div>
+{% endif %}
