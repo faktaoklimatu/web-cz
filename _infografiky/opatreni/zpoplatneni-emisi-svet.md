@@ -5,7 +5,7 @@ slug:       "zpoplatneni-emisi-svet"
 redirect_from: "/zpoplatneni-emisi-svet"
 weight:     95
 tags-scopes: [ svet ]
-tags-topics: [ opatreni ]
+tags-topics: [ opatreni, ekonimika ]
 caption:    "Zpoplatnění emisí skleníkových plynů není jen doménou Evropské Unie – mnoho zemí světa má zavedenu uhlíkovou daň nebo systém emisních povolenek."
 data-our:   "https://docs.google.com/spreadsheets/d/1uviqyDXF48fg49m9MKZV-ghN_nmoteMqfFgt01ouqjg/edit?usp=sharing"
 data-orig:	[ [ "Zpráva WBG", "https://openknowledge.worldbank.org/handle/10986/31755" ] ]
