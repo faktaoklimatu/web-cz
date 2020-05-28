@@ -106,6 +106,6 @@ Jsme akademici, doktorandi, klimatologové, IT profesionálové nebo studenti. S
 
 Rozhodli jsme se proto, že tu práci, kterou jsme s hledáním dat sami měli, ostatním ušetříme – zpracujeme infografiky, dáme odkazy na původní data i naše zpracované datasety na jedno místo a doplníme základní souvislosti. A dáme je k dispozici všem, pro koho budou užitečné. Doufáme, že se postupně tyto informace dostanou ke všem, kterých se změny klimatu týkají. Tedy ke všem.
 
-Lidé, kteří výrazně přispěli k podobě tohoto webu a dat, které na něm vidíte: Ondráš Přibyla, Martin Ukrop, Kristi Zákopčanová, Martin crysman Zahradník, Marek Lahoda, Olda Sklenář, Jeňa Krčál, Tom Protivinský, Tom Pšorn, Martin Set Křivánek a mnozí další. Úplný seznam lidí, kteří pomohli, byť i s drobnostmi, [najdete zde](https://github.com/mukrop/faktaoklimatu/blob/master/CONTRIBUTORS.md).
+Lidé, kteří výrazně přispěli k podobě tohoto webu a dat, které na něm vidíte: Ondráš Přibyla, Martin Ukrop, Kristi Zákopčanová, Martin crysman Zahradník, Marek Lahoda, Olda Sklenář, Jeňa Krčál, Tom Protivinský, Tom Pšorn, Martin Set Křivánek a mnozí další. Úplný seznam lidí, kteří pomohli, byť i s drobnostmi, [najdete zde](https://github.com/faktaoklimatu/web/blob/master/CONTRIBUTORS.md#readme).
 
 </div></div>
