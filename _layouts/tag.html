@@ -17,7 +17,7 @@
           <p class="lead">Na této stránce najdete všechny infografiky, studie a datasety týkajíci se {% if tag.is_scope %}oblasti{% else %}tématu{% endif %} "{{ tag.name-long }}".</p>
         {% endif %}
         {% for col in page.collections %}
-          <h2>{{col[0]}} <small class="text-muted">({{ col[1]|size }})</small></h2>
+          <h2>{{col[0]}} <small class="text-secondary">({{ col[1]|size }})</small></h2>
           {% assign items = col[1] %}
           {% include preview-blocks.html blocks=items %}
         {% endfor %}
