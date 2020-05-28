@@ -7,17 +7,17 @@
 - id: cr
   name-short: ČR
   name-long: Česká republika
-  is_scope: true
+  is-scope: true
 
 - id: eu
   name-short: EU
   name-long: Evropská unie
-  is_scope: true
+  is-scope: true
 
 - id: svet
   name-short: svět
   name-long: celý svět
-  is_scope: true
+  is-scope: true
 
 - id: klima
   name-short: klima

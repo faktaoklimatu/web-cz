@@ -1,5 +1,5 @@
 {% if include.tags %}
-{% assign sorted_full_tags = site.data.tags | sort_czech: "name-short" | sort: "is_scope", "last" %}
+{% assign sorted_full_tags = site.data.tags | sort_czech: "name-short" | sort: "is-scope", "last" %}
 <div class="tags {{ include.container-class }}">
     {% for tag in sorted_full_tags %}
         {% if include.tags contains tag.id %}
