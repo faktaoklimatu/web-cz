@@ -8,6 +8,25 @@
   {% include navigation.html %}
   {% assign tag = site.data.tags | where: "id", page.title | first %}
   <main role="main" id="page-tag">
+    <div class="section intro pb-4">
+      <div class="container">
+          <h1 id="home">Fakta o změně<br>klimatu</h1>
+          <span class="tagline">Veřejně dostupné infografiky a datasety</span>
+          <p>Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro další použití.<br/>
+              <a href="/aktuality" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-newspaper"></i> Aktuality</a>
+              <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
+              <a href="{{ site.newsletter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
+          </p>
+          <hr/>
+          <span class="tagline">Přehled oblastí a témat,<br/>kterým se věnujeme</span>
+          <div class="tags-list">
+              {% assign tags-scopes-all = site.data.tags_categorized.tags-scopes | map: "id" %}
+              {% include tags.html tags=tags-scopes-all link="true" name-long="true" container-class="mt-4" highlighted=tag.id %}
+              {% assign tags-topics-all = site.data.tags_categorized.tags-topics | map: "id" %}
+              {% include tags.html tags=tags-topics-all link="true" highlighted=tag.id %}
+          </div>
+      </div>
+    </div>
     <div class="section">
       <div class="container clearfix">
         <h1>{% if tag.is_scope %}Oblast{% else %}Téma{% endif %}: {{ tag.name-long | capitalize }}</h1>

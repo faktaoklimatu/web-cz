@@ -13,10 +13,10 @@ slug: index
             <a href="{{ site.newsletter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
         </p>
         <hr/>
-        <span class="tagline">Přehled témat, kterým se věnujeme</span>
+        <span class="tagline">Přehled oblastí a témat,<br/>kterým se věnujeme</span>
         <div class="tags-list">
             {% assign tags-scopes-all = site.data.tags_categorized.tags-scopes | map: "id" %}
-            {% include tags.html tags=tags-scopes-all link="true" friendly-name="true" container-class="mt-4" %}
+            {% include tags.html tags=tags-scopes-all link="true" name-long="true" container-class="mt-4" %}
             {% assign tags-topics-all = site.data.tags_categorized.tags-topics | map: "id" %}
             {% include tags.html tags=tags-topics-all link="true" %}
         </div>

@@ -3,13 +3,15 @@
 <div class="tags {{ include.container-class }}">
     {% for tag in sorted_full_tags %}
         {% if include.tags contains tag.id %}
-            {% if include.link %}
-                <a href="/temata/{{ tag.id }}" class="btn btn-tag btn-tag-link btn-sm" role="button">
+            {% if include.highlighted == tag.id %}
+            <a href="/" role="button" class="btn btn-tag btn-sm btn-tag-highlighted">
+            {% elsif include.link %}
+            <a href="/temata/{{ tag.id }}" role="button" class="btn btn-tag btn-sm btn-tag-link">
             {% else %}
-                <div class="btn btn-tag btn-sm">
+            <div class="btn btn-tag btn-sm">
             {% endif %}
-            {% if include.friendly-name %}{{ tag.name-long }}{% else %}{{ tag.name-short }}{% endif %}
-            {% if include.link %}</a>{% else %}</div>{% endif %}
+            {% if include.name-long %}{{ tag.name-long }}{% else %}{{ tag.name-short }}{% endif %}
+            {% if include.highlighted == tag.id or include.link %}</a>{% else %}</div>{% endif %}
         {% endif %}
     {% endfor %}
 </div>

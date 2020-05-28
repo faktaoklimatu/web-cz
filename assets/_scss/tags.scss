@@ -20,16 +20,30 @@
     margin: 0;
     padding: 0.15rem 0.5rem;
     border-radius: 1em;
-    color: #777777;
-    border-color: #777777;
+    color: $c-grey;
+    border-color: $c-grey;
 }
 
 .btn-tag-link {
     margin-bottom: 10px;
+    color: $c-primary;
+    border-color: $c-primary;
 
     &:hover {
-        border-color: $c-primary;
-        color: $c-primary;
+        background-color: $c-primary;
+        color: $c-body;
+    }
+}
+
+.btn-tag-highlighted {
+    margin-bottom: 10px;
+    background-color: $c-primary;
+    color: $c-body;
+    
+    &:hover {
+        border-color: $c-primary-lighten;
+        background-color: $c-primary-lighten;
+        color: $c-body;
     }
 }
 
