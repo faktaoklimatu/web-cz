@@ -22,6 +22,14 @@ body {
 
 h1 {
     font-weight: bold !important;
+
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $c-primary;
+        }
+    }
 }
 
 h2 {

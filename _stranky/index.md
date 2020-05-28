@@ -5,8 +5,8 @@ slug: index
 ---
 <div class="section intro pb-4">
     <div class="container">
-        <h1 id="home">Fakta o změně<br>klimatu</h1>
-        <span class="tagline">Veřejně dostupné infografiky a datasety</span>
+        <h1 id="home"><a href="/">Fakta o změně<br>klimatu</a></h1>
+        <span class="tagline">Veřejně dostupné<br>infografiky a datasety</span>
         <p>Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro další použití.<br/>
             <a href="/aktuality" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-newspaper"></i> Aktuality</a>
             <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
