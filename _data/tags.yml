@@ -21,7 +21,7 @@
 
 - id: klima
   name-short: klima
-  name-long: teploty a koncentrace skleníkových plynů
+  name-long: klimatické ukazatele
   index-weight: 1
   description: Průměrná globální teplota vzduchu od začátku průmyslové revoluce, tedy za posledních 200 let, stoupla o zhruba 1 °C. V České republice za posledních 60 let vzrostla už o 2 °C. Koncentrace CO<sub>2</sub> dosahují hodnot vyšších než kdykoliv během existence rodu *Homo sapiens*.
 
@@ -33,7 +33,7 @@
 
 - id: budoucnost
   name-short: budoucnost
-  name-long: scénáře budoucího vývoje, rizika a dopady
+  name-long: Budoucnost, scénáře vývoje
   index-weight: 3
   description: Budoucí vývoj klimatu závisí do velké míry na tom, jak se budou dále vyvíjet emise skleníkových plynů nebo odlesňování. Pro porovnání možných budoucností slouží [emisní scénáře RCP](/slovnik#rcp). Zároveň větší změna klimatu přináší větší rizika a při překročení bodů zlomu i možnost kolapsu některých ekosystémů a klimatických systémů.
 
@@ -45,8 +45,8 @@
 
 - id: ekonomika
   name-short: ekonomika
-  name-long: souvis s ekonomikou
+  name-long: ekonomika
 
 - id: energetika
   name-short: energetika
-  name-long: elektroenergetika
+  name-long: energetika
