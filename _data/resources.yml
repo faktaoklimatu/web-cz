@@ -34,7 +34,7 @@ web_en:
     url: "https://www.warningstripes.com/"
     image: "warningstripes.png"
     description-short: "Weblog s vizualizací minulých a budoucích scénářů z pohledu teplot."
-    description-long: "Monotematické a přehledné stránky barevně ukazující očekávaný vývoj teplot v závislosti na emisních scénářích <a href=\"/slovnik#rcp\" class=\"glossary-item\">RCP <i class=\"fas fa-book\"></i></a>."
+    description-long: "Monotematické a přehledné stránky barevně ukazující očekávaný vývoj teplot v závislosti na emisních scénářích <glossary id='rcp'>RCP</glossary>."
 
   - title: "Climate action tracker"
     tags: [ anglicky, svět ]
