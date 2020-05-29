@@ -1,23 +1,24 @@
 ---
 layout:     study
-title:      "Globální výhled pro obnovitelné zdroje energie: energetická transformace do 2050"
+title:      "Energetická transformace do 2050"
 slug:       2020_transformace-energetiky-do-2050
-weight:     50
-tags:       [ studie, svet, elektrina ]
+weight:     60
+tags-scopes: [ svet ]
+tags-topics: [ energetika ]
 caption:    ""
 intro:      "Energetika vs Elektřina"
 summary:    |
     * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
     * Mezi jednotlivými regiony jsou značné rozdíly. **Lídry v nahrazování uhlí jinými zdroji jsou Evropská unie a Spojené státy americké, od roku 2007 míra využívání uhlí pro výrobu elektřinu v obou poklesla na polovinu.** V EU byl tento pokles nahrazen obnovitelnými zdroji (větrné a solární elektrárny), v USA bylo uhlí nahrazeno převážně zemním plynem.
     * Produkce z větrných a solárních elektráren vzrostla v roce 2019 o 15 %, kdy tyto zdroje vyrobily 8 % celosvětové elektřiny.
-    *
 
 study-title:        "Global Renewables Outlook: Energy transformation 2050"
-study-author:       ""
-study-institution:  ""
+study-author:       "Renewable Energy Roadmap and Policy teams"
+study-institution:  "International Renewable Energy Agency (IRENA)"
 study-year:         2020
-study-url:          ""
-study-pdf:          ""
+study-isbn:         "978-92-9260-238-3"
+study-url:          "https://www.irena.org/publications/2020/Apr/Global-Renewables-Outlook-2020"
+study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf"
 
 ---
 
