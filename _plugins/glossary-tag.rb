@@ -8,7 +8,7 @@ module Jekyll
       ###
       # Replace '<glossary id="xxx">...</glossary>' tags in document's HTML output with
       # likns to individual glossary items.
-      def process(content, site, path)
+      def process(content, site)
         # Glossary items from the YAML file in _data/glossary.yaml.
         glossary = site.data['glossary']
 
@@ -33,21 +33,20 @@ module Jekyll
           id = element['id']
           # Require that each reference specify the ID of the referenced item.
           if id.nil?
-            Jekyll.logger.error "Glossary reference in #{path} has no id attribute"
+            Jekyll.logger.error "Glossary reference has no id attribute"
             raise RuntimeError
           end
 
           # Require that the tag have contents, i.e. disallow <glossary id="xxx" />
           if element.children.empty?
-            Jekyll.logger.error "Glossary tag cannot be empty in #{path}"
+            Jekyll.logger.error "Glossary tag #{id} cannot be empty"
             raise RuntimeError
           end
 
           # Find the definition of the corresponding item in the glossary.
           item = glossary.find { |it| it['id'] == id }
           if item.nil?
-            Jekyll.logger.error "Item with id #{id} referenced from #{path} does "\
-                                "not exist in glossary"
+            Jekyll.logger.error "Item with id #{id} does not exist in glossary"
             raise RuntimeError
           end
 
@@ -63,10 +62,9 @@ module Jekyll
   end
 end
 
-Jekyll::Hooks.register :documents, :post_render do |doc|
-  doc.output = Jekyll::GlossaryTag.process(doc.output, doc.site, doc.relative_path)
-end
-
-Jekyll::Hooks.register :pages, :post_render do |page|
-  page.output = Jekyll::GlossaryTag.process(page.output, page.site, page.relative_path)
+class Jekyll::Converters::Markdown::FaktaOKlimatuProcessor < Jekyll::Converters::Markdown::KramdownParser
+  def convert(content)
+    content = Jekyll::GlossaryTag.process(content, Jekyll.sites[0])
+    super
+  end
 end

@@ -29,7 +29,7 @@
   name-short: emise
   name-long: emise skleníkových plynů
   index-weight: 2
-  description: "<span><glossary id='antropogennisklenikoveplyny'>Skleníkové plyny</glossary> se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika jejich významným producentem, a to nejen v Evropském kontextu.</span>"
+  description: "<glossary id='antropogennisklenikoveplyny'>Skleníkové plyny</glossary> se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika jejich významným producentem, a to nejen v Evropském kontextu."
 
 - id: budoucnost
   name-short: budoucnost
@@ -41,7 +41,7 @@
   name-short: opatření
   name-long: adaptační a mitigační opatření
   index-weight: 4
-  description: "<span><glossary id='mitigace'>Mitigační opatření</glossary> směřují ke zmírnění klimatické změny – jde především o snahy o omezení emisí skleníkových plynů skrze uhlíkovou daň, emisní povolenky nebo nahrazení uhelných elektráren jinými zdroji energie (tzv. uhelný phase-out). V současné době probíhá v České republice jednání [uhelné komise](http://www.zelenykruh.cz/na-cem-pracujeme/uhelna-komise), která má o ukončení provozu hnědouhlených elektráren rozhodnout. Adaptační opatření směřují k přizpůsobení společnosti klimatickým změnám – typicky může jít o změny pěstování plodin nebo opatření na udržování vody v krajině.</span>"
+  description: "<glossary id='mitigace'>Mitigační opatření</glossary> směřují ke zmírnění klimatické změny – jde především o snahy o omezení emisí skleníkových plynů skrze uhlíkovou daň, emisní povolenky nebo nahrazení uhelných elektráren jinými zdroji energie (tzv. uhelný phase-out). V současné době probíhá v České republice jednání [uhelné komise](http://www.zelenykruh.cz/na-cem-pracujeme/uhelna-komise), která má o ukončení provozu hnědouhlených elektráren rozhodnout. Adaptační opatření směřují k přizpůsobení společnosti klimatickým změnám – typicky může jít o změny pěstování plodin nebo opatření na udržování vody v krajině."
 
 - id: ekonomika
   name-short: ekonomika
