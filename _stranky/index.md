@@ -31,7 +31,7 @@ slug: index
 # {{ index_tag.name-long | capitalize }}
 
 {:.lead}
-{{ index_tag.description }}
+{{ index_tag.description | markdownify }}
 
 {% assign infographics = site.infografiky | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
 {% include preview-blocks.html blocks=infographics %}

@@ -61,26 +61,12 @@ module Jekyll
       end
     end
   end
+end
 
-  # Monkey-patching Jekyll's renderer in order to apply our changes precisely where we
-  # need them, that is just before converters like Kramdown take over.
-  class Renderer
-    def convert(content)
-      # This is our addition.
-      content = GlossaryTag.process(content, site, document.relative_path)
+Jekyll::Hooks.register :documents, :post_render do |doc|
+  doc.output = Jekyll::GlossaryTag.process(doc.output, doc.site, doc.relative_path)
+end
 
-      # The rest is original code from lib/jekyll/renderer.rb
-      converters.reduce(content) do |output, converter|
-        begin
-          converter.convert output
-        rescue StandardError => e
-          Jekyll.logger.error "Conversion error:",
-                              "#{converter.class} encountered an error while "\
-                              "converting '#{document.relative_path}':"
-          Jekyll.logger.error("", e.to_s)
-          raise e
-        end
-      end
-    end
-  end
+Jekyll::Hooks.register :pages, :post_render do |page|
+  page.output = Jekyll::GlossaryTag.process(page.output, page.site, page.relative_path)
 end
