@@ -52,6 +52,8 @@ cdn:
 kramdown:
     smart_quotes: sbquo,lsquo,bdquo,ldquo
 
+markdown: FaktaOKlimatuProcessor
+
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
