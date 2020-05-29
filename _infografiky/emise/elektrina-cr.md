@@ -5,7 +5,7 @@ slug:       "elektrina-cr"
 redirect_from: "/elektrina-cr"
 weight:     93
 tags-scopes: [ cr ]
-tags-topics: [ emise, energetika ]
+tags-topics: [ energetika, emise ]
 caption:    "Přehled výroby elektřiny podle zdrojů, souvisejících emisí CO<sub>2</sub>eq a spotřeby elektřiny podle sektorů. Uhelné zdroje produkují naprostou většinu emisí v rámci české elektroenergetiky."
 data-our:   "https://docs.google.com/spreadsheets/d/1q8LGAmpIOhdNUtljeOWxljy_FIE63THlnr3z9lsJTlI/edit?usp=sharing"
 data-orig:  [ [ "Energetický regulační úřad", "http://www.eru.cz/documents/10540/4580207/Rocni_zprava_provoz_ES_2018.pdf/" ]
