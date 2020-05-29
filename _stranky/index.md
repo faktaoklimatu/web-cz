@@ -93,6 +93,15 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                     </div>
                 </a>
             </div>
+            <div class="col-12 col-sm-4">
+                <a href="/jak-pouzivat" class="preview-card card">
+                    <div class="card-body">
+                        <h5>Jak používat naše materiály</h5>
+                        <p class="card-text">Instrukce, jak správně používat a citovat naše infografiky a datasety. Také kontaktní informace pro případ zájmu o konzultaci nebo spolupráci.</p>
+                        <button class="btn btn-primary btn-block"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</button>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
