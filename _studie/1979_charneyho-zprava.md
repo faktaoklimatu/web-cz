@@ -2,7 +2,7 @@
 layout:     study
 title:      "Charneyho zpráva"
 slug:       1979_charneyho-zprava
-weight:     5
+weight:     200
 tags-scopes: [ svet ]
 tags-topics: [ klima, emise ]
 caption:    "V roce 1979 vědci popsali a vcelku přesně předpověděli klimatickou změnu. Jejich výsledky jsou stále platné."

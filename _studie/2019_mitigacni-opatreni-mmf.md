@@ -2,7 +2,7 @@
 layout:     study
 title:      "Jak zmírnit dopady klimatické změny"
 slug:       2019_mitigacni-opatreni-mmf
-weight:     1
+weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, emise ]
 caption:    "Studie Mezinárodního měnového fondu ukazuje, proč uhlíková daň a emisní povolenky jsou efektivní opatření."

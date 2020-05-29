@@ -2,7 +2,7 @@
 layout:     study
 title:      "Obavy mladých protestujících jsou opodstatněné"
 slug:       2019_science-vyjadreni-vedcu
-weight:     1
+weight:     100
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost ]
 caption:    "Článek z časopisu Science, v němž více než 3000 vědců vyjádřilo podporu hnutím za záchranu klimatu."

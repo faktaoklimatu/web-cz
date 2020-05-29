@@ -2,7 +2,7 @@
 layout:     study
 title:      "Sternova zpráva"
 slug:       2006_sternova-zprava
-weight:     4
+weight:     180
 tags-scopes: [ svet ]
 tags-topics: [ ekonomika ]
 caption:    "Ekonomická analýza dopadů klimatických změn a nákladů a přínosů opatření na na snížení emisí z roku 2006."

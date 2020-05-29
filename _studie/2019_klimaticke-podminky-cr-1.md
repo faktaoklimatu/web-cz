@@ -2,7 +2,7 @@
 layout:     study
 title:      "Očekávané klimatické podmínky v ČR"
 slug:       2019_klimaticke-podminky-cr-1
-weight:     2
+weight:     140
 tags-scopes: [ cr ]
 tags-topics: [ budoucnost, klima ]
 caption:    "Studie modeluje změny teploty a změny množství a rozložení srážek v ČR během 21.století."
