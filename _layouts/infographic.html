@@ -9,8 +9,13 @@
   <main role="main">
     <div class="section">
       <div class="container">
-        <h1>{{ page.title }}</h1>
-        {% include tags.html tags=page.tags link="true" %}
+        <div class="d-flex align-items-center flex-wrap flex-lg-nowrap">
+          <div class="mr-auto"><h1>{{ page.title }}</h1></div>
+          <div><h2><a href="#changelog"  class="text-secondary">{{page.changelog[0].date}}</a></h2></div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="mr-auto">{% include tags.html tags=page.tags link="true" %}</div>
+        </div>
         {% assign download_path = site.baseurl | append: "/assets/generated/" | append: page.slug %}
         <div class="row" markdown="on">
             <div class="col-md-12 col-lg-9">
@@ -99,6 +104,18 @@
         {{ content }}
       </div>
     </div>
+    {% if page.changelog %}
+    <div class="section" id="changelog">
+      <div class="container">
+        <h2>Seznam změn</h2>
+        <ul>
+        {% for e in page.changelog %}
+          <li><b class="mr-1">{{e.date |  date: "%d. %m. %Y" }}</b> {{e.description | markdownify| remove: '<p>' | remove: '</p>' }} </li>
+        {% endfor%}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
     {% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains page.tags-topics[0]"
     | where_exp:"item","item.slug != page.slug" | sample: 3 %}
     {% if objects.size > 0 %}

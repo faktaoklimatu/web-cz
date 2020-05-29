@@ -11,6 +11,69 @@ caption:    "Přehled výroby elektřiny podle zdrojů, souvisejících emisí C
 data-our:   "https://docs.google.com/spreadsheets/d/1q8LGAmpIOhdNUtljeOWxljy_FIE63THlnr3z9lsJTlI/edit?usp=sharing"
 data-orig:  [ [ "Energetický regulační úřad", "http://www.eru.cz/documents/10540/4580207/Rocni_zprava_provoz_ES_2018.pdf/" ]
             , ["IPCC 2014: ANNEX III", "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf" ] ]
+changelog:
+  - date: "2020-05-29"
+    description: |
+      Upraveno pořadí témat u Elektřiny ČR
+      Je to kvůli zobrazování souvisejících infografik, které závisí na prvním tags-topics.
+  - date: "2020-05-24"
+    description: |
+      Upraveny štítky infografik, datasetů a studií
+      Nyní bez diakritiky.
+  - date: "2020-05-06"
+    description: "Aktualizace štítků z gdrive"
+  - date: "2020-05-06"
+    description: |
+      Práce na štítkovacím systému
+      * Rozdělení na dvě kategorie - scopes a topics
+      * Zobrazení seznamu tagů na index.html
+      * Podpora pro rozšiřující informace ke štítkům
+      * Mírné sjednocení tagů
+  - date: "2020-02-14"
+    description: "nesprávný pojem el.energie opraven na elektřina, globálně"
+  - date: "2020-01-21"
+    description: "Odstranění červených okrajů pro tisk"
+  - date: "2020-01-19"
+    description: |
+      Upraveno pořadí infografik v sekcích
+      * Nejnovější infografika je vždy první.
+      * Čísluje je od 99 dolů.
+  - date: "2019-12-12"
+    description: "grafika elektrina-cr v1.2"
+  - date: "2019-12-12"
+    description: "Nová verze elektrina-cr"
+  - date: "2019-12-01"
+    description: "oprava preklepu v grafice"
+  - date: "2019-11-30"
+    description: "procenta opraveny"
+  - date: "2019-11-29"
+    description: |
+      Opět zapnuto přesměrování pro elektřinu v CR
+      Kvůli chybě #257.
+  - date: "2019-11-29"
+    description: |
+      Dočasně odstraněn redirect
+      Kvůli problému #257.
+  - date: "2019-11-29"
+    description: |
+      Drobné opravy
+      * Přidána mezera před procenta.
+      * Dodrženy konvenve MD souborů (volné řádky a pod.).
+      * Před TWh se nyní doplňuje nezlomitelná mezera.
+  - date: "2019-11-29"
+    description: "Správná verze grafiky se spravnými čísly"
+  - date: "2019-11-29"
+    description: |
+      Finalizace
+      nejnovejsi verze infografiky + doplnena tabulka dat
+  - date: "2019-11-29"
+    description: "Vylepšení popisku"
+  - date: "2019-11-29"
+    description: "nová verze grafiky"
+  - date: "2019-11-29"
+    description: |
+      new infographic Elektrina-CR
+      md file with text + pdf file infographics
 ---
 
 ## Jak číst tento graf
