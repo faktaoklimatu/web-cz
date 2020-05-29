@@ -27,10 +27,13 @@ study-pdf:          "https://ember-climate.org/wp-content/uploads/2020/03/Ember-
 
 ## Poznámky o metodice
 
-Jedná se o shrnující (meta)studii, která vychází z předchozích IRENA studií a shrnuje tak výsledky více jak deseti let práce agentury. Například vyčíslení socio-ekonomických dopadů vychází ze zprávy Measuring the Economics (2016), která pracuje s nástroji popsanými v publikaci The Socio-economic Benefits of Solar and Wind Energy (2014).
-Základem pro zpracovávanéscénáře je kombinace modelů E3ME Univerzity v Cambridge, vlastní Energy Economy Environment model hodnotící dopady opatření a mnoha dalších, jejichž metodologie je detailně popsána v dílčích studiích.
-Studie pracuje se čtyřmi scénáři vývoje (BES, PES, TES, nulový), které popisují stupnující se úsilí v omezení emisí - blíže jsou popsány ve shrnutí. Důsledky těchto scénářů studie kvantifikuje pomocí souhrnného ukazatele blahobytu (welfare). Tento ukazatel je tvořen zaměstnaností, vybranými složkami HDP (spotřeba, investice a vládní výdaje na školství), zdravím populace, emisemi a materiální náročností ekonomiky (podrobněji o struktuře ukazatele blahobytu viz tabulka ve studii na straně 112).
+* Jedná se o shrnující (meta)studii, která vychází z předchozích IRENA studií a shrnuje tak výsledky více jak deseti let práce agentury. Například vyčíslení socio-ekonomických dopadů vychází ze zprávy Measuring the Economics (2016), která pracuje s nástroji popsanými v publikaci The Socio-economic Benefits of Solar and Wind Energy (2014).
 
+* Základem pro socio-ekonomické vyhodnocení zpracovávaných scénářů je makro-ekonomický model E3ME Univerzity v Cambridge. FIXME vlastní Energy Economy Environment model hodnotící dopady opatření a mnoha dalších, jejichž metodologie je detailně popsána v dílčích studiích.
+
+* Studie pracuje se čtyřmi scénáři vývoje (BES, PES, TES, DDP), které popisují stupnující se úsilí v omezení emisí - blíže jsou popsány ve shrnutí. Důsledky těchto scénářů studie kvantifikuje pomocí souhrnného ukazatele blahobytu (welfare). Tento ukazatel je tvořen zaměstnaností, vybranými složkami HDP (spotřeba, investice a vládní výdaje na školství), zdravím populace, emisemi a materiální náročností ekonomiky (podrobněji o struktuře ukazatele blahobytu viz tabulka ve studii na straně 112).
+
+* Porovnání se scénáři budoucnosti od jiných zpracovatelů (IEA, IPCC, Shell, McKinsey a další ) ve studii diskutuje podrobněji [Infobox 1.8 (str. 88)](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=88)
 
 ## Poznámky o zpracovateli
 
