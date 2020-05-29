@@ -22,63 +22,43 @@
             </div>
 
             <div class="col-md-12 col-lg-3 download-buttons">
-              <h2 class="d-block d-lg-none">Data, licence a sdílení</h2>
-              <p class="d-block d-lg-none">Podívejte se na podkladová data nebo infografiku sdílejte. Všechny naše infografiky jsou k dispozici pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
-              <h2 class="d-none d-lg-block">Ke stažení</h2>
-              <p class="d-none d-lg-block">Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
-              <div class="btn-group dropdown d-none d-lg-inline-flex" role="group">
-                <a href="{{ download_path }}.pdf" id="infographic-pdf" class="btn btn-primary" download>PDF</a>
-                <a href="{{ download_path }}.svg" id="infographic-svg" class="btn btn-primary" download>SVG</a>
-                <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownPNGselection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PNG</button>
-                <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownPNGselection">
-                  <a class="dropdown-item" id="infographic-png-3" href="{{ download_path }}_6000.png" download>6000 x 4242 px</a>
-                  <a class="dropdown-item" id="infographic-png-2" href="{{ download_path }}_1920.png" download>1920 x 1358 px</a>
-                  <a class="dropdown-item" id="infographic-png-1" href="{{ download_path }}_1200.png" download>1200 x 848 px</a>
-                </div>
+              <div class="d-none d-lg-block">
+                <h2>Ke stažení</h2>
+                <p>Líbí se vám naše infografika? Stáhněte si ji a používejte dál!</p>
+                {% include infographic-sidebar.html section="downloads" %}
+                <hr />
+
+                <h2>Podkladová data</h2>
+                {% include infographic-sidebar.html section="data" %}
+                <hr />
+
+                <h2>Sdílení a licence</h2>
+                <p>Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
+                {% include infographic-sidebar.html section="sharing" %}
               </div>
-              <hr class="d-none d-lg-block" />
-              <h2 class="d-none d-lg-block">Podkladová data</h2>
-              {% if page.dataset %}
-                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Tato infografika je postavená na námi zpracovaném datasetu.</p>
-                <a href="/datasety/{{ page.dataset }}" class="btn btn-primary" role="button">Náš dataset</a>
-              {% else %}
-                <p class="d-none d-lg-block">Chcete vidět konkrétní čísla? Podívejte se na naši tabulku s daty nebo na původní zdroje.</p>
-                {% if page.data-our and page.data-our != '' %}
-                <a href="{{ page.data-our }}" id="data-our" class="btn btn-primary" role="button">Naše tabulka s daty</a>
-                {% endif %}
-                {% if page.data-orig.size == 1 %}
-                <a href="{{ page.data-orig[0][1] }}" id="data-original" class="btn btn-primary" role="button">{{ page.data-orig[0][0] }}</a>
-                {% elsif page.data-orig.size > 1 %}
-              <div class="dropdown"> <!-- Do not delete this element -- makes dropdown work -->
-                  <button class="btn btn-primary dropdown-toggle" role="button" id="dropdownDataSources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Původní zdroje dat</button>
-                  <div class="dropdown-menu dropdown-links" aria-labelledby="dropdownDataSources">
-                    {% assign numDataSources = page.data-orig.size | minus: 1 %}
-                    {% for i in (0..numDataSources) %}
-                    <a class="dropdown-item" id="data-original-{{ i }}" href="{{ page.data-orig[i][1] }}">{{ page.data-orig[i][0] }}</a>
-                    {% endfor %}
+              <div class="d-lg-none download-buttons-smallscreen">
+                <h2>Data, licence a sdílení</h2>
+                <p>Podívejte se na podkladová data nebo infografiku sdílejte. Všechny naše infografiky jsou k dispozici pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
+                <div class="d-flex d-lg-none align-items-center mt-5 text-secondary">
+                  <div>Stažení</div>
+                  <div class="ml-auto text-right">
+                    {% include infographic-sidebar.html section="downloads" %}
                   </div>
-              </div>
-                {% endif %}
-              {% endif %}
-              <hr class="d-none d-lg-block" />
-              <h2 class="d-none d-lg-block">Sdílení a licence</h2>
-              <p class="d-none d-lg-block">Všechny naše infografiky jsou k dispozici pro další použití pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
-              <div class="btn-group" role="group">
-                <a class="btn btn-primary btn-sharing no-ext-link-icon" id="sharing-facebook" title="Sdílet na Facebooku" href="https://facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | cgi_escape }}" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
-                  </svg>
-                </a>
-                <a class="btn btn-primary btn-sharing no-ext-link-icon" id="sharing-twitter" title="Sdílet na Twittru" href="https://twitter.com/intent/tweet/?text={{ page.title | cgi_escape }}+@{{ site.twitter }}&amp;url={{ page.url | absolute_url | cgi_escape }}" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
-                  </svg>
-                </a>
-                <a class="btn btn-primary btn-sharing" id="sharing-embed" title="Vložit na jinou stránku" role="button" data-toggle="modal" data-target="#embed-modal">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                    <path d="m3.77123617 12.0448291-3.77123617-3.77123617 3.77123617-3.77123617 1.07749604 1.07749605-2.69374011 2.69374012 2.69374011 2.69374007zm7.97292653-7.54247234 3.7712362 3.77123617-3.7712362 3.77123617-1.077496-1.0774961 2.6937401-2.69374007-2.6937401-2.69374012zm-3.64007835-2.50235676 1.50065944.26460675-2.11685398 12.00527545-1.50065943-.2646067z"></path>
-                  </svg>
-                </a>
+                </div>
+                <hr class="w-100 my-0">
+                <div class="d-flex d-lg-none align-items-center text-secondary">
+                  <div>Podklady</div>
+                  <div class="ml-auto text-right">
+                    {% include infographic-sidebar.html section="data" %}
+                  </div>
+                </div>
+                <hr class="w-100 my-0">
+                <div class="d-flex d-lg-none align-items-center text-secondary">
+                  <div>Sdílení</div>
+                  <div class="ml-auto text-right">
+                    {% include infographic-sidebar.html section="sharing" %}
+                  </div>
+                </div>
               </div>
               <div class="modal fade" id="embed-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">

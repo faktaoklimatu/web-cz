@@ -22,13 +22,17 @@ p.caption {
     text-align: left;
 }
 
+.download-buttons-smallscreen .btn {
+    margin-top: 0.5rem;
+}
+
 .dropdown-links a {
     text-decoration: none;
 }
 
 .btn-sharing svg {
   width: 1em;
-  height: 1em;
+  height: 1.5em;
   margin: 0;
   vertical-align: middle;
   fill: #fff;
