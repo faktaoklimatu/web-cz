@@ -36,7 +36,12 @@
 <meta name="twitter:image" content="{{ social_image }}">
 <meta name="twitter:image:alt" content="{{ page.title }}">
 
-<title>{{ page.title }}</title>
+{% case page.layout %}
+{% when 'tag' %}
+  <title>Položky se štítkem "{{ page.title }}"</title>
+{% else %}
+  <title>{{ page.title }}</title>
+{% endcase %}
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

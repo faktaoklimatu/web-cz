@@ -19,8 +19,8 @@
         margin-top: -3.5rem;
     }
 
-    .btn {
-        margin-top: 1em;
+    .tags-list {
+        padding-left: 19rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -40,36 +40,31 @@
         p {
             padding-left: 0;
             margin-top: 0;
+            text-align: center;
+        }
+
+        .tags-list {
+            padding-left: 0;
+            text-align: center;
         }
     }
 }
 
 /* Homepage section customizations */
 
-.homepage-card {
-    padding-top: 15px;
-
-    > * {
-        display: block;
-        background-color: #fff;
-        background-clip: border-box;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgba(0,0,0,0.125);
-        border-radius: .25rem;
-        text-decoration: none;
-        text-align: left;
-    }
-
-    > a:hover {
-        border-color: rgba($c-primary, 0.5);
-        text-decoration: none;
-    }
-
+.preview-card {
+    margin: 15px 0 15px 0;
+    border-width: 2px;
+    text-decoration: none;
+    text-align: left;
 }
 
-.homepage-card .card-img-overlay {
+a.preview-card:hover {
+    border-color: rgba($c-primary, 0.5);
+    text-decoration: none;
+}
+
+.card-dataset-overlay {
     background-color: rgba(255, 255, 255, 0.9);
     bottom: auto;
-    margin: 17px;
 }

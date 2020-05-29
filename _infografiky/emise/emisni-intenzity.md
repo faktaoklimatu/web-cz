@@ -4,7 +4,8 @@ title:      "Emisní intenzity světových regionů"
 slug:       "emisni-intenzity"
 redirect_from: "/emisni-intenzity"
 weight:     91
-tags:       [ emise, svet, CO2 ]
+tags-scopes: [ svet ]
+tags-topics: [ emise, ekonomika ]
 caption:    "Graf znázorňuje souvislosti mezi hmotnou životní úrovní obyvatel, emisní intenzitou ekonomik a ročními emisemi na osobu vybraných zemí a světových regionů."
 dataset:    "emise-svet"
 ---

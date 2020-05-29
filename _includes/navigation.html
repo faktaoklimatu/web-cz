@@ -11,19 +11,19 @@
                     <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#home">Úvod</a>
                 </li>
                 <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infografiky</a>
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Témata</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        {% assign sorted_sections = (site.sekce | where:"navbar","infographics" | sort: 'weight') %}
-                        {% for section in sorted_sections %}
-                          <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#{{ section.id }}">{{ section.title }}</a>
+                        {% assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" %}
+                        {% for tag in sorted_index_tags %}
+                          <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#{{ tag.id }}">{{ tag.name-long }}</a>
                         {% endfor %}
                     </div>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#/sekce/studie">Studie</a>
+                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#studie">Studie</a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#/sekce/datasety">Datasety</a>
+                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#datasety">Datasety</a>
                 </li>
                 <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Více</a>

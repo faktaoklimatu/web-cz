@@ -1,29 +1,29 @@
-<h1 id="{{ page.id }}">{{ page.title }}</h1>
-{{ content }}
-{% assign all_items = site.infografiky | concat: site.datasety | concat: site.studie | sort: 'weight' %}
-{% assign prefiltered_items = all_items | where:"layout",page.filter-layout %}
-{% if page.filter-tag %}
-    {% assign filtered_items = prefiltered_items | where_exp:"item","item.tags contains page.filter-tag" %}
-{% else %}
-    {% assign filtered_items = prefiltered_items %}
-{% endif %}
-<div class="row justify-content-md-center">
-{% for item in filtered_items %}
-    <div class="col-md-6 col-lg-4 homepage-card">
-        <a href="{{ item.url }}">
+{% if include.blocks %}
+<div class="row justify-content-md">
+{% assign sorted_blocks = include.blocks | sort: 'weight' %}
+{% for item in sorted_blocks %}
+    <div class="col-md-6 col-lg-4">
+        <a href="{{ item.url }}" class="preview-card card">
             {% case item.layout %}
             {% when 'infographic' %}
                 <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid" />
+                <div class="card-img-overlay tags-overlay-box">
+                    {% include tags.html tags=item.tags %}
+                </div>
             {% when 'dataset' %}
                 <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid card-img" />
-                <div class="card-img-overlay">
+                <div class="card-img-overlay card-dataset-overlay">
                   <h5 class="card-title">{{ item.title }}</h5>
+                </div>
+                <div class="card-img-overlay tags-overlay-box">
+                    {% include tags.html tags=item.tags %}
                 </div>
             {% when 'study' %}
                 <div class="card-body">
                     <h5>{{ item.title }}</h5>
                     <p class="text-secondary">{{ item.study-institution }}, {{ item.study-year }}</p>
                     <p class="card-text">{{ item.caption }}</p>
+                    {% include tags.html tags=item.tags %}
                 </div>
             {% else %}
                 <p>Unknown layout.</p>
@@ -32,3 +32,4 @@
     </div>
 {% endfor %}
 </div>
+{% endif %}

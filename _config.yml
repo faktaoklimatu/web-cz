@@ -59,3 +59,12 @@ plugins:
 
 target-blank:
     add_css_classes: ext-link
+
+jekyll-archives:
+  enabled: [ "tags" ]
+  layouts:
+    tag: tag
+  permalinks:
+    tag: '/temata/:name/'
+  collections:
+    merge_tags: true

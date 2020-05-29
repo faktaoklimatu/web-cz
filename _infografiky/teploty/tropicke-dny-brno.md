@@ -4,7 +4,8 @@ title:      "Tropické a ledové dny v Brně-Tuřanech"
 slug:       "tropicke-dny-brno"
 redirect_from: "/tropicke-dny-brno"
 weight:     111
-tags:       [ teploty, brno, tropicke-dny, ledove-dny ]
+tags-scopes: [ cr ]
+tags-topics: [ klima ]
 caption:    "Jako ukazatel změny klimatu v ČR může sloužit i nárůst počtu tropických a pokles počtu ledových dní. V Brně je posledních několika letech více dní s teplotou nad 30 °C než s teplotou pod 0 °C."
 dataset:    "tropicke-dny"
 ---

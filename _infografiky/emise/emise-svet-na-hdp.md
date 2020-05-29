@@ -4,7 +4,8 @@ title:      "Emise světových regionů přepočtené na HDP"
 slug:       "emise-svet-na-hdp"
 redirect_from: "/emise-svet-na-hdp"
 weight:     90
-tags:       [ emise, svet, CO2 ]
+tags-scopes: [ svet ]
+tags-topics: [ emise, ekonomika ]
 caption:    "Roční emise vybraných států a světových regionů, přepočteno v poměru k HDP a srovnáno s celkovou velikostí ekonomiky."
 dataset:    "emise-svet"
 ---
@@ -26,7 +27,7 @@ dataset:    "emise-svet"
 * Emisní intenzita do velké míry **souvisí s energetickým mixem a způsobem výroby elektřiny** v daných zemích a regionech. Více než polovina čínské energie pochází z uhlí, proto Čína produkuje relativně vysoké množství emisí na dolar HDP. Podobně i evropské státy s vysokou spotřebou uhlí uvolňují více skleníkových plynů na jednotku HDP. Na opačné straně spektra je Francie, která vyrábí více než 70 % své elektřiny v jaderných elektrárnách a ze zobrazených zemí produkuje nejnižší emise na dolar.
 * Dalším faktorem ovlivňujícím emisní intenzitu ekonomik je životní úroveň dané země, která souvisí se strukturou ekonomické produkce. **Zemědělství, stavebnictví a průmysl produkuje relativně více emisí než služby**, v bohatších zemích zpravidla služby představují větší podíl ekonomiky.
 * Velmi nízké emise na jednotku HDP mají například Švýcarsko, Singapur, Hongkong a Švédsko (méně než 150 gramů na dolar HDP). Více emisí na dolar HDP produkují častěji chudší země (například Etiopie nebo z evropských zemí Ukrajina), avšak relativně vysoké emise na HDP má také bohatá Austrálie.
-* HDP je snadno dostupný ukazatel pro porovnání velikostí ekonomik a určitý ukazatel životní úrovně. Jedná se však o neúplný ukazatel zahrnující pouze materiální aspekt životní úrovně, který také nezohledňuje nerovnosti mezi obyvateli dané země. Srovnávání zemí na základě HDP je v mnoha případech užitečné, avšak je nutné si uvědomovat limity tohoto nástroje. 
+* HDP je snadno dostupný ukazatel pro porovnání velikostí ekonomik a určitý ukazatel životní úrovně. Jedná se však o neúplný ukazatel zahrnující pouze materiální aspekt životní úrovně, který také nezohledňuje nerovnosti mezi obyvateli dané země. Srovnávání zemí na základě HDP je v mnoha případech užitečné, avšak je nutné si uvědomovat limity tohoto nástroje.
 
 ## Poznámky k datům o emisích
 

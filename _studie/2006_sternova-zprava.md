@@ -3,7 +3,8 @@ layout:     study
 title:      "Sternova zpráva"
 slug:       2006_sternova-zprava
 weight:     4
-tags:       [ studie, svet ]
+tags-scopes: [ svet ]
+tags-topics: [ ekonomika ]
 caption:    "Ekonomická analýza dopadů klimatických změn a nákladů a přínosů opatření na na snížení emisí z roku 2006."
 intro:      "Sternova zpráva je ekonomickou analýzou dopadů klimatických změn a nákladů a přínosů opatření na snížení emisí skleníkových plynů z roku 2006. Ukazuje, že přínosy silných a včasných opatření výrazně převyšují jejich náklady a ignorování klimatických změn povede ke snížení hospodářského růstu. Zpráva doporučuje investovat do opatření na snížení emisí cca 1 % HDP ročně, tedy podstatně méně než odhadované náklady na adaptaci a škody na hospodářství, pokud k radikálnímu snížení emisí nedojde. (Odhady nákladů na adaptaci a škody při scénáři _business-as-usual_ jsou 5–20 % celosvětového HDP). Zpráva se dále zaměřuje na nejúčinnější opatření pro snížení emisí skleníkových plynů."
 study-title:        "Stern Review: The Economics of Climate Change"

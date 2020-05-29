@@ -22,6 +22,14 @@ body {
 
 h1 {
     font-weight: bold !important;
+
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $c-primary;
+        }
+    }
 }
 
 h2 {
@@ -205,14 +213,13 @@ ul:last-child {
 }
 
 .btn-secondary {
-    background-color: rgba(0,0,0,0);
-    color: inherit;
-    border-width: 3px;
+    background-color: transparent;
+    color: $c-primary;
     border-color: $c-primary;
 
     &:hover {
-        background-color: $c-primary-lighten;
-        border-color: $c-primary-lighten;
+        background-color: $c-primary;
+        color: $c-body;
     }
 }
 
@@ -241,8 +248,4 @@ ul:last-child {
     &-hover tbody tr:hover {
         background-color: rgba(0,0,0,.05);
     }
-}
-
-.text-secondary {
-    color: #303030;
 }

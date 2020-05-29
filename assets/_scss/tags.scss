@@ -1,0 +1,52 @@
+/* Tag-related style */
+
+.tags-overlay-box {
+    top: auto;
+    padding: 40px 15px 15px 15px;
+    background-image: linear-gradient(transparent, white, white);
+    overflow: hidden;
+
+    .tags {
+        width: max-content;
+    }
+}
+
+.tags {
+    /* Padding to prevent click shadow cut */
+    padding-bottom: 3px;
+}
+
+.btn-tag {
+    margin: 0;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1em;
+    color: $c-grey;
+    border-color: $c-grey;
+}
+
+.btn-tag-link {
+    margin-bottom: 10px;
+    color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        background-color: $c-primary;
+        color: $c-body;
+    }
+}
+
+.btn-tag-highlighted {
+    margin-bottom: 10px;
+    background-color: $c-primary;
+    color: $c-body;
+    
+    &:hover {
+        border-color: $c-primary-lighten;
+        background-color: $c-primary-lighten;
+        color: $c-body;
+    }
+}
+
+#page-tag h2 {
+    margin-top: 1.5em;
+}

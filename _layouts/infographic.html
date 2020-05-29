@@ -10,8 +10,8 @@
     <div class="section">
       <div class="container">
         <h1>{{ page.title }}</h1>
+        {% include tags.html tags=page.tags link="true" %}
         {% assign download_path = site.baseurl | append: "/assets/infographics/" | append: page.slug %}
-
         <div class="row" markdown="on">
             <div class="col-md-12 col-lg-9">
             <a class="infographic" id="infographic-fullscreen" href="{{ download_path }}_1920.png">
@@ -115,7 +115,7 @@
         {{ content }}
       </div>
     </div>
-    {% assign sorted_infographics = site.infografiky | where_exp:"item","item.tags contains page.tags[0]"
+    {% assign sorted_infographics = site.infografiky | where_exp: "item", "item.tags contains page.tags-topics[0]"
     | where_exp:"item","item.slug != page.slug" | sample: 4 %}
     {% if sorted_infographics.size > 0 %}
     <div class="section">
@@ -124,8 +124,8 @@
         <p>Zaujala vás tato infografika? Zde je pár náhodně vylosovaných ze stejné kategorie:</p>
         <div class="row justify-content-md-left">
           {% for infographic in sorted_infographics %}
-            <div class="col-sm-6 col-md-4 col-lg-3 homepage-card">
-              <a href="{{ infographic.url }}">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <a href="{{ infographic.url }}" class="preview-card card">
                 <img src="{{ site.baseurl }}/assets/infographics/{{ infographic.slug }}_600.png" alt="{{ infographic.title }}" title="{{ infographic.title }}" class="img-fluid" />
               </a>
             </div>

@@ -3,7 +3,8 @@ layout:     study
 title:      "Jak zmírnit dopady klimatické změny"
 slug:       2019_mitigacni-opatreni-mmf
 weight:     1
-tags:       [ studie, svet ]
+tags-scopes: [ svet ]
+tags-topics: [ opatreni ]
 caption:    "Studie Mezinárodního měnového fondu ukazuje, proč uhlíková daň a emisní povolenky jsou efektivní opatření."
 intro:      "Zpráva Mezinárodního měnového fondu vydaná v říjnu 2019 zdůrazňuje zásadní roli fiskálních nástrojů pro mitigaci klimatické změny. Fiskální nástroje jsou opatření založená na daních a rozpočtových výdajích jako například daň z přidané hodnoty, daň z tabáku nebo pojištění v nezaměstnanosti. Pro zmírnění klimatické změny mohou vlády použít uhlíkovou daň, obchod s emisními povolenkami, regulace nebo systém poplatků a příspěvků."
 summary:    |
@@ -18,7 +19,6 @@ study-year:         2019
 study-isbn:         "978-1-51351-533-5"
 study-url:          "https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019"
 study-pdf:          "https://www.imf.org/~/media/Files/Publications/fiscal-monitor/2019/October/English/text.ashx?la=en"
-
 ---
 
 ## Shrnutí
