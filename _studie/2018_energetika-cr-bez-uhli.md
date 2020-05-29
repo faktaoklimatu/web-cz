@@ -4,7 +4,7 @@ title:      "Česká energetika bez uhlí"
 slug:       2018_energetika-cr-bez-uhli
 weight:     3
 tags-scopes: [ cr ]
-tags-topics: [ opatreni, energetika ]
+tags-topics: [ opatreni, energetika, emise ]
 caption:    "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů k roku 2030."
 intro:      "Studie zkoumá dopady ukončení provozu českých uhelných elektráren (které jsou aktuálně jedním z hlavních zdrojů emisí CO<sub>2</sub> v ČR) na stabilitu elektrizační soustavy, při současném rozvoji obnovitelných zdrojů. Reaguje tak na častý argument proti transformaci české energetiky, poukazující právě na ohrožení bezpečnosti dodávek elektřiny."
 study-title:        "Czech power grid without electricity from coal by 2030"
