@@ -41,12 +41,12 @@
 - date: 2020-01-19
   title: "Vícedenní klimaton, Twitter, nové infografiky"
   summary: |
-    Proběhl první vícedenní <a href="/slovnik#hackathon" class="glossary-item">hackathon <i class="fas fa-book"></i></a> jádra týmu - během víkendu jsme udělali spoustu práce, mj. např.:    
+    Proběhl první vícedenní <glossary id="hackathon">hackathon</glossary> jádra týmu - během víkendu jsme udělali spoustu práce, mj. např.:    
     * Od teď nás můžete [sledovat i na Twitteru](https://twitter.com/faktaoklimatu).
     * Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele najdete v infografice [Světové emise skleníkových plynů](/infografiky/emise-svet).
     * Srovnání vybraných států a světových regionů podle ročních emisí skleníkových plynů na obyvatele doplněné o velikost populace a celkové emise najdete v infografice [Emise světových regionů přepočtené na osobu](/infografiky/emise-svet-na-osobu).
     * Ve stejném duchu jsme zpracovali i EU v infografice [Emise států EU přepočtené na osobu](infografiky/emise-eu-na-osobu).
-    * Rozšířili jsme Slovník pojmů o <a href="/slovnik#citlivost" class="glossary-item">Citlivost klimatu <i class="fas fa-book"></i></a>.
+    * Rozšířili jsme Slovník pojmů o <glossary id="citlivost">Citlivost klimatu</glossary>.
 
 - date: 2019-12-02
   title: "Adaptační a mitigační opatření"
@@ -121,7 +121,7 @@
 
 - date: 2019-05-31
   title: "První klimatický hackathon"
-  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <a href=\"/slovnik#hackathon\" class=\"glossary-item\">hackathon <i class=\"fas fa-book\"></i></a> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ – jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu)."
+  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <glossary id="hackathon">hackathon</glossary> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ – jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu)."
 
 - date: 2019-05-03
   title: "První pouliční akademie v Brně"
