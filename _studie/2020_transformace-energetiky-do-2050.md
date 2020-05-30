@@ -11,9 +11,10 @@ intro:      "Zpráva Mezinárodní agentury pro obnovitelnou energii vydaná v d
 Zpráva se zabývá celým sektorem energetiky, který vedle výroby elektřiny zahrnuje také dopravu, topení a další spalování fosilních paliv při průmyslové výrobě. 
 "
 summary:    |
-    * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
-    * Mezi jednotlivými regiony jsou značné rozdíly. **Lídry v nahrazování uhlí jinými zdroji jsou Evropská unie a Spojené státy americké, od roku 2007 míra využívání uhlí pro výrobu elektřinu v obou poklesla na polovinu.** V EU byl tento pokles nahrazen obnovitelnými zdroji (větrné a solární elektrárny), v USA bylo uhlí nahrazeno převážně zemním plynem.
-    * Produkce z větrných a solárních elektráren vzrostla v roce 2019 o 15 %, kdy tyto zdroje vyrobily 8 % celosvětové elektřiny.
+    * Současné cíle a závazky snižování emisí CO<sub>2</sub> povedou k zastavení růstu ročních emisí na hodnotě okolo 33 Gt/rok. Pro naplnění Pařížské dohohy a zastavení nárůstu světové teploty okolo 2°C je potřeba světové emise do roku 2050 snížit na 10 Gt/rok. Takového snížení emisí dosahuje *Transformační scénář*, který je založený na elektrifikaci, obnovitelný zdrojích energie, zvyšování flexibility sítě a využití elektřiny k výrobě vodíku.
+    * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů USD. Oproti tomu investice do Transformačního scénáře zpráva odhaduje na 110 biliónů USD a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů USD. Socio-ekonomické modelování ukazuje, že transformační scénář povede k vyššímů světovému HDP a vyšší zaměstnanosti.   
+    * Ze světových regionů bude z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie jakožto region s vyspělou a globálně integrovanou ekonomikou bude z dodatečných investic profitovat nejvíce, následován Severní Amerikou. Právě na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50% projektovaného nárůstu HDP.
+
     * FIXME REgional factsheets
 
 study-title:        "Global Renewables Outlook: Energy transformation 2050"
@@ -25,6 +26,9 @@ study-url:          "https://www.irena.org/publications/2020/Apr/Global-Renewabl
 study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf"
 
 ---
+## Kontext zprávy - klíčové souvislosti
+
+* *Pro zastavení globálního oteplování okolo 1,5°C musí globální emise CO<sub>2</sub> klesnout do roku 2030 na polovinu a musí být nulové okolo roku 2050. Pro zastavení oteplování na či blízko 2°C musí do roku 2030 emise klesnout o 25 % a být nulové kolem roku 2070 ([IPCC SR15](https://www.ipcc.ch/sr15/chapter/chapter-2/)). Oteplení v ČR je přitom zhruba dvojnásobek světového, tedy světové oteplení o 2°C odpovídá oteplení o 4°C v ČR.*
 
 ## Shrnutí
 

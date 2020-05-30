@@ -26,8 +26,8 @@ study-pdf:          "https://ember-climate.org/wp-content/uploads/2020/03/Ember-
 
 ## Kontext zprávy - klíčové souvislosti
 
-* *Čtvrtina světových emisí CO<sub>2</sub> vzniká při výrobě elektřiny v uhelných elektrárnách.*
-* *Aby globální oteplování nepřesáhlo do 2100 limit 1,5°C, je potřeba do roku 2050 dosáhnout uhlíkové neutrality. Pro omezení globálního oteplování na hranici 2°C by mělo stačit omezit emise CO<sub>2</sub> do roku 2050 na 70 %. Přitom světové oteplení o 2°C odpovídá oteplení o 4°C v ČR*
+* *Pro zastavení globálního oteplování okolo 1,5°C musí globální emise CO<sub>2</sub> klesnout do roku 2030 na polovinu a musí být nulové okolo roku 2050. Pro zastavení oteplování na či blízko 2°C musí do roku 2030 emise klesnout o 25 % a být nulové kolem roku 2070 ([IPCC SR15](https://www.ipcc.ch/sr15/chapter/chapter-2/)). Oteplení v ČR je přitom zhruba dvojnásobek světového, tedy světové oteplení o 2°C odpovídá oteplení o 4°C v ČR.*
+* *Čtvrtina světových emisí CO<sub>2</sub> vzniká při výrobě elektřiny v uhelných elektrárnách, proto se je nahrazení uhlí obnovitelnými zdroji nebo zemním plynem tématem. Zemní plyn má nižší emise na jednotku vyrobené energie než uhlí.*
 
 ## Shrnutí
 
