@@ -6,7 +6,8 @@ weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ energetika, emise ]
 caption:    "Zpráva nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě oproti předchozím rokům."
-intro:      "Zpráva think-tanku EMBER vydaná v březnu 2020 nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě elektřiny oproti předchozím rokům. Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
+intro:      "Cílem studie think-tanku EMBER vydané v březnu 2020 je předložit analýzu světových trendů ve výrobě a spotřebě elektřiny a podrobněji diskutovat stav v roce 2019 s vyvojem v předchozích dvaceti letech. Zabývá se pouze výrobou elektřiny, nikoli celým energetickýcm sektorem, není tak zahrnuta například energie vyrobena spalováním paliv v dopravě (benzín, nafta) či na vytápění (zejména zemní plyn). 
+Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
 summary:    |
     * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
     * Mezi jednotlivými regiony jsou značné rozdíly. **Lídry v nahrazování uhlí jinými zdroji jsou Evropská unie a Spojené státy americké, od roku 2007 míra využívání uhlí pro výrobu elektřinu v obou poklesla na polovinu.** V EU byl tento pokles nahrazen obnovitelnými zdroji (větrné a solární elektrárny), v USA bylo uhlí nahrazeno převážně zemním plynem.
@@ -22,6 +23,11 @@ study-url:          "https://ember-climate.org/project/global-power-2020/"
 study-pdf:          "https://ember-climate.org/wp-content/uploads/2020/03/Ember-2020GlobalElectricityReview-Web.pdf"
 
 ---
+
+## Kontext zprávy - klíčové souvislosti
+
+* *Čtvrtina světových emisí CO<sub>2</sub> vzniká při výrobě elektřiny v uhelných elektrárnách.*
+* *Aby globální oteplování nepřesáhlo do 2100 limit 1,5°C, je potřeba do roku 2050 dosáhnout uhlíkové neutrality. Pro omezení globálního oteplování na hranici 2°C by mělo stačit omezit emise CO<sub>2</sub> do roku 2050 na 70 %. Přitom světové oteplení o 2°C odpovídá oteplení o 4°C v ČR*
 
 ## Shrnutí
 
