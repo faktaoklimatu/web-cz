@@ -5,8 +5,11 @@ slug:       2020_transformace-energetiky-do-2050
 weight:     60
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
-caption:    ""
-intro:      "Energetika vs Elektřina"
+caption:    "Zpráva srovnává možné scénáře vývoje energetiky a ukazuje náklady a dopady transformačního scénáře."
+intro:      "Zpráva Mezinárodní agentury pro obnovitelnou energii vydaná v dubnu 2020 je shrnutím předchozích zpráv agentury a dílčích studií. Podrobně zkoumá možný scénář transformace energetiky do roku 2050 a srovnává jej s jinými scénáři budoucího vývoje a vyčísluje očekávané náklady a dopady scénářů na HDP, zaměstnanost a další socioekonomické ukazatele na úrovni světových regionů. 
+
+Zpráva se zabývá celým sektorem energetiky, který vedle výroby elektřiny zahrnuje také dopravu, topení a další spalování fosilních paliv při průmyslové výrobě. 
+"
 summary:    |
     * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
     * Mezi jednotlivými regiony jsou značné rozdíly. **Lídry v nahrazování uhlí jinými zdroji jsou Evropská unie a Spojené státy americké, od roku 2007 míra využívání uhlí pro výrobu elektřinu v obou poklesla na polovinu.** V EU byl tento pokles nahrazen obnovitelnými zdroji (větrné a solární elektrárny), v USA bylo uhlí nahrazeno převážně zemním plynem.
