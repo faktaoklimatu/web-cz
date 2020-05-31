@@ -14,7 +14,7 @@ summary:    |
     * Současné cíle a závazky snižování emisí CO<sub>2</sub> povedou k zastavení růstu ročních emisí na hodnotě okolo 33 Gt/rok. Pro naplnění Pařížské dohody a zastavení nárůstu světové teploty okolo 2°C je potřeba světové emise do roku 2050 snížit na 10 Gt/rok. Takového snížení emisí dosahuje transformační scénář, který je založený na elektrifikaci, obnovitelný zdrojích energie, zvyšování flexibility sítě a využití elektřiny k výrobě vodíku.
     * Podobně jako [Sternova zpráva](/studie/2006_sternova-zprava) i tato publikace říká, že **investice do energetické udržitelnosti se jednoznačně vrátí**, respektive, že náklady současného směřování budou vyšší než náklady transformačního scénáře. Agentura ve své zprávě vyčíslila čistý rozdíl mezi plánovaným a transformačním scénářem (PES vs. TES v roce 2050) v zaměstnanosti o +0,15 %, v HDP o +2,4 % a v indikátoru blahobytu dokonce o +13,5 %.
     * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů dolarů. Oproti tomu investice do transformačního scénáře zpráva odhaduje na 110 biliónů dolarů a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů dolarů. Přínosy transformace jsou však vyšší než dodatečné investice.
-    * Ze světových regionů bude **z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie**, následována Severní Amerikou. V regionu Evropské Unie, vychází v transformačním scénáři zaměstnanost o +2,6 %, HDP o +7,4 % a blahobyt o +10,6 % vyšší než v Plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50 % očekávaného nárůstu HDP.
+    * Ze světových regionů bude **z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie**, následována Severní Amerikou. V regionu Evropské Unie, vychází v transformačním scénáři zaměstnanost o +2,6 %, HDP o +7,4 % a blahobyt o +10,6 % vyšší než v plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50 % očekávaného nárůstu HDP.
 
 study-title:        "Global Renewables Outlook: Energy transformation 2050"
 study-author:       "Renewable Energy Roadmap and Policy teams"
@@ -27,7 +27,7 @@ study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publicatio
 ---
 ## Kontext zprávy – klíčové souvislosti
 
-_Pro zastavení globálního oteplování okolo 1,5 °C musí globální emise CO<sub>2</sub> klesnout do roku 2030 na polovinu a musí být nulové okolo roku 2050. Pro zastavení oteplování na či blízko 2°C musí do roku 2030 emise klesnout o 25 % a být nulové kolem roku 2070 ([IPCC SR15](https://www.ipcc.ch/sr15/chapter/chapter-2/)). Oteplení v ČR je přitom zhruba dvojnásobek světového, tedy světové oteplení o 2 °C odpovídá oteplení o 4 °C v ČR._
+_Pro zastavení globálního oteplování okolo 1,5 °C musí globální emise CO<sub>2</sub> klesnout do roku 2030 na polovinu a být nulové okolo roku 2050. Pro zastavení oteplování na či blízko 2°C musí do roku 2030 emise klesnout o 25 % a být nulové kolem roku 2070 ([IPCC SR15](https://www.ipcc.ch/sr15/chapter/chapter-2/)). Oteplení v ČR je přitom zhruba dvojnásobek světového, tedy světové oteplení o 2 °C odpovídá oteplení o 4 °C v ČR._
 
 ## Shrnutí
 
@@ -44,39 +44,39 @@ V [první kapitole]({{ page.study-pdf }}#page=57) zprávy jsou podrobněji disku
 
 ### Socio-ekonomické ukazatele
 
-* Zpráva vyčísluje nutné investice do scénářů PES, TES a DDP, vyčísluje počty pracovních míst, které vzniknou přímo v souvislosti s transformací a modeluje celkové dopady na ekonomiku, tedy celkovou zaměstnanost, HDP a další socioekonomické ukazatele.
+* Zpráva vyčísluje nutné investice do scénářů PES, TES a DDP, vyčísluje počty pracovních míst, které vzniknou přímo v souvislosti s transformací, a modeluje celkové dopady na ekonomiku, tedy celkovou zaměstnanost, HDP a další socioekonomické ukazatele.
 
 <div class="table table-striped table-hover" markdown="1">
 
 | Ekonomické dopady         | Plánovaný<br/>energetický scénář | Transformační<br/>energetický scénář |
 | --------------- | ----------:| ----:| ----:| ----:|-----:|-----------:| ---:|
-| Nutné celkové     investice         |   95 bil. $ | 110 bil $ |
+| Nutné celkové     investice         |   95 biliónů $ | 110 biliónů $ |
 | Počet pracovních  míst ve světě     |   4 238 miliard  | 4 245 miliard  |
 | Světové HDP per capita v roce 2050 |   22 890 $ |  23 440 $  |
 | HDP per capita v EU v roce 2050    |   70 000 $ |  75 000 $  |
 
 </div>
 
-* Zpráva jde ve vyčíslení dopadů až na úroveň světových regionů, kde vznikají významné odlišnosti. V souvislosti s očekávaným demografickým vývojem a současným technologicko-ekonomickým pokrokem méně rozvinutých regionů, způsobením doháněním vyspělých zemí, zpráva projektuje nejrychlejší růst v aktuálně nejslabších regionech jižní, centrální a jihovýchodní Asie, subsaharské Afriky a Latinské Ameriky.
-* Co se však týče přínosů, které zpráva přisuzuje přímo energetické transformaci, respektive **rozdílu mezi PES a TES scénářem**, jsou na tom relativně lépe vyspělé regiony díky vzájemné integraci, nízkým bariérám obchodu a dostupnosti technologií. V regionu Evropské Unie, kde je zahrnuta i Česká Republika, vychází v Transformačním scénáři zaměstnanost o +2.6 %, HDP o +7.4 % a blahobyt o +10.6 % vyšší než v Plánovaném scénáři. Absolutně tedy na region EU připadne 5 ze 6 nově vzniklých pracovních míst a HDP v průměru vzroste o 2 950 dolarů na hlavu, což je 8× víc než očekávaný světový průměr.
+* Zpráva jde ve vyčíslení dopadů až na úroveň světových regionů, kde vznikají významné odlišnosti. V souvislosti s očekávaným demografickým vývojem a současným technologicko-ekonomickým pokrokem méně rozvinutých regionů, způsobeným doháněním vyspělých zemí, zpráva predikuje nejrychlejší hospodářský růst v aktuálně nejslabších regionech jižní, centrální a jihovýchodní Asie, subsaharské Afriky a Latinské Ameriky.
+* Co se však týče přínosů, které zpráva přisuzuje přímo energetické transformaci, respektive **rozdílu mezi PES a TES scénářem**, jsou na tom relativně lépe vyspělé regiony díky vzájemné integraci, nízkým bariérám obchodu a dostupnosti technologií. V regionu Evropské Unie, kde je zahrnuta i Česká Republika, vychází v Transformačním scénáři zaměstnanost o +2,6 %, HDP o +7,4 % a blahobyt o +10,6 % vyšší než v Plánovaném scénáři. Absolutně tedy na region EU připadne 5 ze 6 nově vzniklých pracovních míst a HDP v průměru vzroste o 2 950 dolarů na hlavu, což je 8× víc než očekávaný světový průměr.
 * Podrobné výstupy k jednotlivým světovým regionům jsou obsaženy v dodatku [_Regional Factsheets_](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_GRO_Regional_Factsheets.pdf).
 
 ### Transformační energetický scénář staví na pěti pilířích
 
-1. **Elektrifikace založená na obnovitelných zdrojích.** Přímé spalování fosilních paliv (doprava, topení, průmyslová výrobě apod.) je v rámci scénáře nahrazováno využíváním elektřiny (tedy velký rozvoj elektromobilů, tepelných čerpadel a pod.). V důsledku to znamená zvýšenou poptávku po elektřině, kterou bude nutné naplnit výrobou z obnovitelných zdrojů energie.
+1. **Elektrifikace založená na obnovitelných zdrojích.** Přímé spalování fosilních paliv (doprava, topení, průmyslová výroba a další) je v rámci scénáře nahrazováno využíváním elektřiny (tedy velký rozvoj elektromobilů, tepelných čerpadel apod.). V důsledku to znamená zvýšenou poptávku po elektřině, kterou bude nutné naplnit výrobou z obnovitelných zdrojů energie.
 2. **Zvýšení flexibility sítě.** Energetický systém budoucnosti bude decentralizovaný a velká část výroby elektřiny bude pocházet ze zdrojů, jejichž výkon je proměnlivý. Bude tedy nutné zlepšit krátkodobé a dlouhodobé skladování elektřiny. (Baterie, přečerpávací elektrárny, _"Power-to-gas"_)
-3. **Využití obnovitelných zdrojů energie.** Podíl OZE na finálním využití energie by se měl zvýšit ze současných 10 % (rok 2018) na 66 % v roce 2050. Scář počítá s navýšením výrobních kapacit nejen fotovoltaiky a větrných elektráren, ale také vodních, solárních tepelných elektráren a biopaliv.
+3. **Využití obnovitelných zdrojů energie.** Podíl OZE na finálním využití energie by se měl zvýšit ze současných 10 % (rok 2018) na 66 % v roce 2050. Scénář počítá s navýšením výrobních kapacit nejen fotovoltaiky a větrných elektráren, ale také vodních, solárních tepelných elektráren a biopaliv.
 4. **Zelený vodík.** Využívání vodíku jako paliva je další důležitou cestou k nahrazení fosilních paliv. Tzv. "modrý" vodík je vyráběný elektrolýzou s využitím elektřiny z fosilních zdrojů, zatímco tzv. "zelený" vodík je vyráběný z elektřiny z obnovitelných zdrojů. Scénář počítá s velkým využitím zeleného vodíku.
 5. **Inovace.** Lodní doprava, letecká doprava a těžký průmysl nemohou využívat elektřinu jako zdroj energie. Cestu ke snížení uhlíkové stopy těchto odvětví bude potřeba hledat využitím nových paliv a nových materiálů.
 
-Transformační scénář předpokládá také zvyšování energetické efektivity, které se prolíná výše zmíněnými pilíři. Podrobněji jsou jednotlivé pilíře, konkrétní technologie a potřebný rozsah jejich rozšíření diskutovány v první kapitole [na stranách 67-97]({{ page.study-pdf }}#page=159)
+Transformační scénář předpokládá také zvyšování energetické efektivity, které se prolíná výše zmíněnými pilíři. Podrobněji jsou jednotlivé pilíře, konkrétní technologie a potřebný rozsah jejich rozšíření diskutovány v první kapitole [na stranách 67-97]({{ page.study-pdf }}#page=159).
 
 ## Poznámky o metodice
 
 * Jedná se o shrnující (meta)studii, která vychází z předchozích IRENA studií a shrnuje tak výsledky více jak deseti let práce agentury. Například vyčíslení socio-ekonomických dopadů vychází ze zprávy Measuring the Economics (2016), která pracuje s nástroji popsanými v publikaci The Socio-economic Benefits of Solar and Wind Energy (2014).
 * Základem pro socio-ekonomické vyhodnocení zpracovávaných scénářů je makro-ekonomický model E3ME Univerzity v Cambridge. Studie využívá řady dalších dílčích modelů (pro hodnocení dopadů opatření, pro odhad investic apod.), jejichž metodologie je detailně popsána v předchozích studiích IRENA a odkazovaných článcích.
-* Studie pracuje se čtyřmi scénáři vývoje (BES, PES, TES, DDP), které popisují stupňující se úsilí v omezení emisí - blíže jsou popsány ve shrnutí. Důsledky těchto scénářů studie kvantifikuje pomocí souhrnného ukazatele blahobytu (welfare). Tento ukazatel je tvořen zaměstnaností, vybranými složkami HDP (spotřeba, investice a vládní výdaje na školství), zdravím populace, emisemi a materiální náročností ekonomiky (podrobněji o struktuře ukazatele blahobytu viz [infobox 2.3 (str. 112)]({{ page.study-pdf }}#page=112)).
-* Porovnání se scénáři budoucnosti od jiných zpracovatelů (IEA, IPCC, Shell, McKinsey a další ) ve studii diskutuje podrobněji [infobox 1.8 (str. 88)]({{ page.study-pdf }}#page=88)
+* Studie pracuje se čtyřmi scénáři vývoje (BES, PES, TES, DDP), které popisují stupňující se úsilí v omezení emisí – blíže jsou popsány ve shrnutí. Důsledky těchto scénářů studie kvantifikuje pomocí souhrnného ukazatele blahobytu (welfare). Tento ukazatel je tvořen zaměstnaností, vybranými složkami HDP (spotřeba, investice a vládní výdaje na školství), zdravím populace, emisemi a materiální náročností ekonomiky (podrobněji o struktuře ukazatele blahobytu viz [infobox 2.3 (str. 112)]({{ page.study-pdf }}#page=112)).
+* Porovnání se scénáři budoucnosti od jiných zpracovatelů (IEA, IPCC, Shell, McKinsey a další ) ve studii diskutuje podrobněji [infobox 1.8 (str. 88)]({{ page.study-pdf }}#page=88).
 
 ## Poznámky o zpracovateli
 
