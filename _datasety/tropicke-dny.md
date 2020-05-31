@@ -5,7 +5,7 @@ slug:       "tropicke-dny"
 weight:     50
 tags:       [ teploty, brno, praha, tropicke-dny, ledove-dny ]
 caption:    "Dataset obsahuje počty letních dní, tropických dní, tropických nocí, ledových dní, mrazových dní a dní sněhem, lineární trend a klouzavý průměr počtu ledových a tropických dní přes 5 let pro Prahu-Ruzyni a Brno-Tuřany v období let 1961–2019."
-dataset-url:    "https://docs.google.com/spreadsheets/d/105PpUjpl5T3Wz5oFMUQYBj-KaqAUU6zF-Vv-RQ1zj3E/edit?usp=sharing"
+data-our:    "https://docs.google.com/spreadsheets/d/105PpUjpl5T3Wz5oFMUQYBj-KaqAUU6zF-Vv-RQ1zj3E/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data/data-ze-stanic-site-RBCN" ] ]
 ---
 <div class="section"><div class="container" markdown="1">

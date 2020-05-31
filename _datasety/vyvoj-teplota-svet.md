@@ -7,7 +7,7 @@ tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "TODO"
 published:     false
-dataset-url:    "https://docs.google.com/spreadsheets/d/1mYBzne9T_tVpjNFmBuv1e6tNlUAVtADoQNGRJjuiyE4/edit?usp=sharing"
+data-our:    "https://docs.google.com/spreadsheets/d/1mYBzne9T_tVpjNFmBuv1e6tNlUAVtADoQNGRJjuiyE4/edit?usp=sharing"
 ---
 <div class="section"><div class="container" markdown="1">
 

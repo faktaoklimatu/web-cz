@@ -6,7 +6,7 @@ weight:     50
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
 caption:    "Dataset obsahuje časové řady tří indikátorů pro všechny státy (a některá závislá území) světa: emise skleníkových plynů, velikost populace a velikost ekonomik. Delší časové řady zachycují vývoj emisí v čase, propojení všech indikátorů umožňuje detailnější analýzu – například srovnání emisí na obyvatele nebo na jednotku HDP."
-dataset-url:    "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ"
+data-our:    "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ"
 data-orig:  [ [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/overview.php?v=50_GHG" ] ]
 ---
 <div class="section"><div class="container" markdown="1">
