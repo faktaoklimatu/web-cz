@@ -1,6 +1,6 @@
 ---
 layout:     study
-title:      "Energetická transformace do 2050"
+title:      "Transformace energetiky do 2050"
 slug:       2020_transformace-energetiky-do-2050
 weight:     60
 tags-scopes: [ svet ]
@@ -14,7 +14,7 @@ summary:    |
     * Současné cíle a závazky snižování emisí CO<sub>2</sub> povedou k zastavení růstu ročních emisí na hodnotě okolo 33 Gt/rok. Pro naplnění Pařížské dohohy a zastavení nárůstu světové teploty okolo 2°C je potřeba světové emise do roku 2050 snížit na 10 Gt/rok. Takového snížení emisí dosahuje *Transformační scénář*, který je založený na elektrifikaci, obnovitelný zdrojích energie, zvyšování flexibility sítě a využití elektřiny k výrobě vodíku.
     * Podobně jako Sternova zpráva i tato publikace říká, že **investice do energetické udržitelnosti se jednoznačně vrátí**, respektive, že náklady současného směřování budou vyšší než náklady transformačního scénáře. Agentura ve své zprávě vyčíslila čistý rozdíl mezi plánovaným a transformačním scénářem (PES vs. TES v roce 2050) v zaměstnanosti o +0,15 %, v HDP o +2,4 % a v indikátoru blahobytu dokonce o +13,5 %.
     * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů USD. Oproti tomu investice do Transformačního scénáře zpráva odhaduje na 110 biliónů USD a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů USD. Přínosy transformace jsou však vyšší než dodatečné investice.  
-    * Ze světových regionů bude z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie, následována Severní Amerikou. V regionu Evropské Unie, vychází v Transformačním scénáři zaměstnanost o +2.6 %, HDP o +7.4 % a blahobyt o +10.6 % vyšší než v Plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50% očekávavého nárůstu HDP. 
+    * Ze světových regionů bude **z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie**, následována Severní Amerikou. V regionu Evropské Unie, vychází v Transformačním scénáři zaměstnanost o +2.6 %, HDP o +7.4 % a blahobyt o +10.6 % vyšší než v Plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50% očekávavého nárůstu HDP. 
 
 study-title:        "Global Renewables Outlook: Energy transformation 2050"
 study-author:       "Renewable Energy Roadmap and Policy teams"
@@ -31,7 +31,7 @@ study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publicatio
 
 ## Shrnutí
 
-V [první kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=56) zprávy jsou podrobněji diskutovány technologie a rozsah jejich aplikace, potřebný k dosažení snížení emisí z energetiky. To jsou vstupní parametry pro odhad nutných investic a důsledků pro zaměstnanost, které jsou vysvětleny ve [druhé kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=98). Druhá kapitola zároveň shrnuje výstupy socio-ekonomického modelování dopadů různých scénářů na ekonomiku, HDP a další ukazatele, kterou jsou shrnuty v indikátoru blahobytu (wellbeing). [Třetí kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=116) řeší techno-ekonomický kontext jednotlivých světových regionů a [čvtrtá kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=136) regionální socio-ekonomické dopady scénářů. [Pátá kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=158) podrobněji diskutuje možné cesty k úplné dekarbonizaci energetiky.    
+V [první kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=57) zprávy jsou podrobněji diskutovány technologie a rozsah jejich aplikace, potřebný k dosažení snížení emisí z energetiky. To jsou vstupní parametry pro odhad nutných investic a důsledků pro zaměstnanost, které jsou vysvětleny ve [druhé kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=99). Druhá kapitola zároveň shrnuje výstupy socio-ekonomického modelování dopadů různých scénářů na ekonomiku, HDP a další ukazatele, kterou jsou shrnuty v indikátoru blahobytu (wellbeing). [Třetí kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=117) řeší techno-ekonomický kontext jednotlivých světových regionů a [čvtrtá kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=137) regionální socio-ekonomické dopady scénářů. [Pátá kapitola](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=159) podrobněji diskutuje možné cesty k úplné dekarbonizaci energetiky.    
 
 
 ### Srovnávané scénáře
@@ -48,12 +48,27 @@ V [první kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication
 
 ### Socio-ekonomické ukazatele
 
-!!FIXME diskuse a tabulka
+* Zpráva vyčísluje nutné investice do scénářů PES, TES a DDP, vyčísluje počty pracovních míst, které vzniknou přímo v souvislosti s transformací a modeluje celkové dopady na ekonomiku, tedy celkovou zaměstnanost, HDP a další socioekonomické ukazatele. 
+
+<div class="table table-striped table-hover" markdown="1">
+
+| Ekonomické dopady         | Plánovaný <br/> energetický scénář | Transformační<br/>energetický scénář |
+| --------------- | ----------:| ----:| ----:| ----:|-----:|-----------:| ---:|
+| Nutné celkové     investice         |   95 bil. USD | 110 bil USD |
+| Počet pracovních  míst ve světě     |   4 238 mld   | 4 245 mld   |
+| Světové HDP per capita v roce 2050 |   22 890 USD |  23 440 USD  |
+| HDP per capita v EU v roce 2050    |   70 000 USD |  75 000 USD  |
+
+</div>
+
+* Zpráva jde ve vyčíslení dopadů až na úroveň světových regionů, kde vznikají významné odlišnosti. V souvislosti s očekávaným demografickým vývojem a současným technologicko-ekonomickým pokrokem méně rozvinutých regionů, způsobením doháněním vyspělých zemí, zpráva projektuje nejrychlejší růst v aktuálně nejslabších regionech jižní, centrální a jihovýchodní Asie, subsaharské Afriky a Latinské Ameriky. 
+
+* Co se však týče přínosů, které zpráva přisuzuje přímo energetické transformaci, respektive **rozdílu mezi PES a TES scénářem**, jsou na tom relativně lépe vyspělé regiony díky vzájemné integraci, nízkým bariérám obchodu a dostupnosti technologií. V regionu Evropské Unie, kde je zahrnuta i Česká Republika, vychází v Transformačním scénáři zaměstnanost o +2.6 %, HDP o +7.4 % a blahobyt o +10.6 % vyšší než v Plánovaném scénáři. Absolutně tedy na region EU připadne 5 ze 6 nově vzniklých pracovních míst a HDP v průměru vzroste o 2950 USD na hlavu, což je 8x víc než očekávaný světový průměr. 
 
 * Podrobné výstupy k jednotlivým světovým regionům jsou obsaženy v dodatku [Regional Factsheets](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_GRO_Regional_Factsheets.pdf). 
 
 
-### Scénář TES staví na pěti pilířích:
+### Transformační energetický scénář staví na pěti pilířích:
 
   * **Elektrifikace založená na obnovitelných zdrojích.** Přímé spalování fosilních paliv (doprava, topení, průmyslová výrobě apod.) je v rámci scénáře nahrazovano využíváním elektřiny (tedy velký rozvoj elektromobilů, tepelných čerpadel adpo.). V důsledku to znamená zvýšenou poptávku po elektřině, kterou bude nutné naplnit výrobou z obnovitelných zdrojů energie.  
   * **Zvýšení flexibility sítě.** Energetický systém budoucnosti bude decentralizovaný a velká část výroby elektřiny bude pocházet ze zdrojů, jejichž výkon je proměnlivý. Bude tedy nutné zlepšit krátkodobé a dlouhodobé skladování elektřiny. (Baterie, přečerpávací elektrárny, "Power-to-gas")
@@ -61,9 +76,7 @@ V [první kapitole](https://www.irena.org/-/media/Files/IRENA/Agency/Publication
   * **Zelený vodík.** Využívání vodíku jako paliva je další důelžitou cestou k nahrazení fosilních paliv. Tzv. "modrý" vodík je vyráběný elektrolýzou s využitím elektřiny z fosilních zdrojů, zatímco tzv. "zelený" vodík je vyráběný z elektřiny z obnovitelných zdrojů. Scénář počítá s velkým využitím zeleného vodíku.   
   * **Inovace.** Lodní doprava, letecká doprava a těžký průmysl nemohou využívat elektřinu jako zdroj energie. Cestu ke snížení uhlíkové stopy těchto odvětví bude potřeba hledat využitím nových paliv a nových materiálů.  
 
-Scénář TES předpokládá také zvyšování energetické efektivity, které se prolíná výše zmíněnými pilíři.  
-
-!!FIXME odkaz na diskuse o technologiich
+Transformační scénář předpokládá také zvyšování energetické efektivity, které se prolíná výše zmíněnými pilíři. Podrobněji jsou jednotlivé pilíře, konkrétní technologie a potřebný rozsah jejich rozšíření diskutovány v první kapitole [na stranách 67-97](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page=159)   
 
 
 ## Poznámky o metodice
