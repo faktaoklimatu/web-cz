@@ -5,7 +5,7 @@ slug:       "elektrina-svet"
 redirect_from: "/elektrina-svet"
 weight:     92.2
 tags-scopes: [ svet ]
-tags-topics: [ energetika, emise ]
+tags-topics: [ energetika ]
 caption:    "Vývoj celkové vyrobené elektřiny ve světě podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v TWh za rok."
 data-our:   "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I"
 data-orig:  [["Zdrojová data Ember", "https://ember-climate.org/project/data-global-electricity-review/"]]
