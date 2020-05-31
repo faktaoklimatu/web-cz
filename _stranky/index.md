@@ -70,7 +70,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                 <a href="/zdroje" class="preview-card card">
                     <div class="card-body">
                         <h5>Další zdroje a odkazy</h5>
-                        <p class="card-text">Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizující data.</p>
+                        <p class="card-text">Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizujících data.</p>
                         <button class="btn btn-primary btn-block"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</button>
                     </div>
                 </a>
@@ -79,7 +79,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                 <a href="/slovnik" class="preview-card card">
                     <div class="card-body">
                         <h5>Slovník pojmů</h5>
-                        <p class="card-text">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem. Slovník postupně dopracováváme.</p>
+                        <p class="card-text">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem. Slovník postupně doplňujeme.</p>
                         <button class="btn btn-primary btn-block"><i class="fas fa-fw fa-book"></i> Slovník pojmů</button>
                     </div>
                 </a>
