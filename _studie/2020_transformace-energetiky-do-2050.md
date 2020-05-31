@@ -6,14 +6,15 @@ weight:     60
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Zpráva srovnává možné scénáře vývoje energetiky a ukazuje náklady a dopady transformačního scénáře."
-intro:      "Zpráva Mezinárodní agentury pro obnovitelnou energii vydaná v dubnu 2020 je shrnutím předchozích zpráv agentury a dílčích studií. Podrobně zkoumá možný scénář transformace energetiky do roku 2050 a srovnává jej s jinými scénáři budoucího vývoje a vyčísluje očekávané náklady a dopady scénářů na HDP, zaměstnanost a další socioekonomické ukazatele na úrovni světových regionů. 
+intro:      "Zpráva Mezinárodní agentury pro obnovitelnou energii vydaná v dubnu 2020 je shrnutím předchozích zpráv agentury a dílčích studií. Podrobně zkoumá možný scénář transformace energetiky do roku 2050, srovnává jej s jinými scénáři budoucího vývoje a vyčísluje očekávané náklady a dopady scénářů na HDP, zaměstnanost a další socioekonomické ukazatele na úrovni světových regionů. 
 
 Zpráva se zabývá celým sektorem energetiky, který vedle výroby elektřiny zahrnuje také dopravu, topení a další spalování fosilních paliv při průmyslové výrobě. 
 "
 summary:    |
     * Současné cíle a závazky snižování emisí CO<sub>2</sub> povedou k zastavení růstu ročních emisí na hodnotě okolo 33 Gt/rok. Pro naplnění Pařížské dohohy a zastavení nárůstu světové teploty okolo 2°C je potřeba světové emise do roku 2050 snížit na 10 Gt/rok. Takového snížení emisí dosahuje *Transformační scénář*, který je založený na elektrifikaci, obnovitelný zdrojích energie, zvyšování flexibility sítě a využití elektřiny k výrobě vodíku.
-    * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů USD. Oproti tomu investice do Transformačního scénáře zpráva odhaduje na 110 biliónů USD a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů USD. Socio-ekonomické modelování ukazuje, že transformační scénář povede k vyššímů světovému HDP a vyšší zaměstnanosti.   
-    * Ze světových regionů bude z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie, následována Severní Amerikou. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50% očekávavého nárůstu HDP. Podrobné výstupy k jednotlivým světovým regionům jsou obsaženy v dodatku. 
+    * Podobně jako Sternova zpráva i tato publikace říká, že **investice do energetické udržitelnosti se jednoznačně vrátí**, respektive, že náklady nicnedělání budou vyšší než náklady na zavedení vybraných opatření. Agentura ve své zprávě vyčíslila čistý rozdíl mezi plánovaným a transformačním scénářem (PES vs. TES v roce 2050) průměrným globálním nárůstem zaměstnanosti o +0,15 %, HDP o +2,4 % a indikátorem blahobytu dokonce o +13,5 %.
+    * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů USD. Oproti tomu investice do Transformačního scénáře zpráva odhaduje na 110 biliónů USD a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů USD. 
+    * Ze světových regionů bude z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie, následována Severní Amerikou. V regionu Evropské Unie, vychází v Transformačním scénáři zaměstnanost o +2.6 %, HDP o +7.4 % a blahobyt o +10.6 % vyšší než v Plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50% očekávavého nárůstu HDP. 
 
 study-title:        "Global Renewables Outlook: Energy transformation 2050"
 study-author:       "Renewable Energy Roadmap and Policy teams"
@@ -30,9 +31,11 @@ study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publicatio
 
 ## Shrnutí
 
+Kapitoly zprávy
+
 ### Srovnávané scénáře
 
-* **Základní scénář** (*Baseline Energy Scenario, BES*) reflektuje energetické politiky a závazky jednotlivých zemí z roku 2015 a předpokládá další zvyšování světových emisí CO<sub>2</sub>. Protože jde o cíle a závazky v budoucnosti, nebyly zatím implementována všechna opatření a je teoreticky možné, že vývoj světových emisí bude vyšší než předpokládá tento scénář.
+* **Základní scénář** (*Baseline Energy Scenario, BES*) reflektuje energetickou politiku a závazky jednotlivých zemí z roku 2015 a předpokládá další zvyšování světových emisí CO<sub>2</sub>. Protože jde o cíle a závazky v budoucnosti, nebyly zatím implementována všechna opatření a je teoreticky možné, že vývoj světových emisí bude vyšší než předpokládá tento scénář.
 
 * **Plánovaný scénář** (*Planned Energy Scenario, PES*) slouží jako hlavní referenční scénář a reflektuje stav závazků zemí z roku 2019. Kdyby země svoje závazky naplnily, povede k stabilizaci ročních emisí na 33 Gt CO<sub>2</sub>/rok, ale také k růstu světové teploty oproti pre-industriálním hodnotám o více  než 2,5°C do konce století.
 
@@ -40,9 +43,10 @@ study-pdf:          "https://www.irena.org/-/media/Files/IRENA/Agency/Publicatio
 
 * **Úplná dekarbonizace** (*Deep Decarbonization Perspective, DDP*) popisuje možnosti dosažení nulových emisí CO<sub>2</sub> do roku 2050. 
 
-* Podrobné výstupy k jednotlivým světovým regionům jsou obsaženy v dodatku Regional Factsheets(https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_GRO_Regional_Factsheets.pdf). 
 
+### Socio-ekonomické ukazatele
 
+* Podrobné výstupy k jednotlivým světovým regionům jsou obsaženy v dodatku [Regional Factsheets](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_GRO_Regional_Factsheets.pdf). 
 
 
 ### Scénář TES staví na pěti pilířích:
