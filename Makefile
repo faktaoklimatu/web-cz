@@ -5,7 +5,7 @@ DATASETS_FOLDER=assets/datasets
 DATASETS_SRC=$(wildcard _datasety/*.md)
 DATASETS_DST=$(addprefix $(DATASETS_FOLDER)/,$(notdir $(DATASETS_SRC:.md=.png)))
 STUDIES_FOLDER=assets/studies
-STUDIES_SRC=$(wildcard _studie/*.jpg)
+STUDIES_SRC=$(wildcard _studie/*.jpg _studie/*.png)
 STUDIES_DST=$(addprefix $(STUDIES_FOLDER)/,$(notdir $(STUDIES_SRC)))
 REPO_URL=https://github.com/mukrop/faktaoklimatu
 
@@ -32,7 +32,7 @@ clean:
 $(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
 	utils/convert-infographic.sh $< $@
 
-$(STUDIES_FOLDER)/%.jpg: _studie/%.jpg
+$(STUDIES_FOLDER)/%: _studie/%
 	mkdir -p $(@D)
 	cp -v $< $@
 

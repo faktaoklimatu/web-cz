@@ -12,7 +12,7 @@ include: [ ".well-known" ]
 exclude: [ "Gemfile", "Gemfile.lock", "Makefile"    # Build settings
          , "README.md", "utils"                     # Development files
          , "_infografiky/*/*.pdf"                   # Original infographics (build moves them to assets)
-         , "_studie/*.jpg"                          # Study images
+         , "_studie/*.jpg", "_studie/*.png"         # Study images
          ]
 collections:
     infografiky:
