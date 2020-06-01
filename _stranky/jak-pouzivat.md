@@ -16,16 +16,27 @@ Věříme, že volné šíření informací a kultivace veřejné debaty pomáha
 <div class="container" markdown="1">
 ## Jak mohu použít infografiky a data z Fakta o klimatu?
 
+<figure class="d-none d-md-block float-right w-50 ml-4">
+<img src="/assets/infographics/emise-cr-detail_600.png" class="w-100" />
+<figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Zdroj: <a href="https://faktaoklimatu.cz/">Fakta o klimatu</a>: <em><a href="https://faktaoklimatu.cz/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
+</figure>
+
 Veškerá naše práce je zveřejněna pod licencí [Creative Commons Uveďte původ 4.0 Mezinárodní (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.cs). V krátkosti, tato licence vám umožňuje naše dílo
 
 * **sdílet**, tj. rozmnožovat a distribuovat materiál prostřednictvím jakéhokoli média v jakémkoli formátu, a
 * **upravovat**, tj. remixovat, měnit a vycházet z původního díla pro jakýkoliv účel, a to i komerční,
 
-za podmínky **uvedení původu**, tzn. uvést nás jako autory díla, uvést název licence a odkaz na její znění a vyznačit případné změny v infografice nebo datasetu.
+za podmínky **uvedení původu**, tzn. uvést nás jako autory díla, uvést odkaz na naše stránky, název licence a odkaz na její znění a vyznačit případné změny v infografice nebo datasetu. Tyto informace mohou mít různou vizuální podobu v závislosti na médiu (např. webová stránka, novinový článek), musí však být za každých okolností zřetelně uvedeny.
 
-U každého použití naší infografiky či našich dat odkazujte buď přímo na stránku konkrétní infografiky nebo datasetu, např. _"zdroj: Fakta o klimatu, https://faktaoklimatu.cz/infografiky/koncentrace-co2"_ či na hlavní stránku projektu, tedy _"zdroj: Fakta o klimatu, faktaoklimatu.cz"_.
+U každého použití naší infografiky či našich dat odkazujte na stránku konkrétní infografiky nebo datasetu, nikoliv přímo na obrázek. Správně je tedy např. _"Zdroj: Fakta o klimatu, https://faktaoklimatu.cz/infografiky/koncentrace-co2, licencována za podmínek CC BY 4.0."_ Viz též ilustrační obrázek s ukázkou citace infografiky.
 
 Citaci si také můžete nechat vygenerovat přímo na stránce každé infografiky nebo datasetu kliknutím na tlačítko sdílení (se symbolem <tt>&lt;/&gt;</tt>) v sekci "Sdílení a licence".
+
+<figure class="d-md-none w-100 mt-2">
+<img src="/assets/infographics/emise-cr-detail_600.png" class="w-100" />
+<figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Zdroj: <a href="https://faktaoklimatu.cz/">Fakta o klimatu</a>: <em><a href="https://faktaoklimatu.cz/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
+</figure>
+
 </div>
 </div>
 
