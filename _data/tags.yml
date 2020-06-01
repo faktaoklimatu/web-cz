@@ -36,7 +36,7 @@
   name-short: energetika
   name-long: energetika
   index-weight: 3
-  description: Všechny infografiky, studie a datasety týkajíci se tématu "energetika".
+  description: Sektor elektroenergetiky je celosvětově největším zdrojem emisí skleníkových plynů (v roce 2017 tvořil cca 40 % emisí CO<sub>2</sub> a cca 25 % emisí všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary> měřeno v <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>). Svým dopadem výrazně přesahuje zemědělství stejně jako spalování fosilních paliv v dopravě, spalování fosilních paliv v průmyslu nebo produkci cementu. V rámci elektroenergetiky přes 70 % emisí pochází z uhlí, přes 20 % ze zemního plynu, asi 5 % tvoří deriváty ropy.
 
 - id: budoucnost
   name-short: budoucnost
