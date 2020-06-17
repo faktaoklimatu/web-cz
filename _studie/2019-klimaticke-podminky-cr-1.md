@@ -7,7 +7,7 @@ published:  2019-08-22
 weight:     99
 tags-scopes: [ cr ]
 tags-topics: [ budoucnost, klima ]
-caption:    "Studie modeluje změny teploty a změny množství a rozložení srážek v ČR během 21.století."
+caption:    "Studie modeluje změny teploty a změny množství a rozložení srážek v ČR během 21. století."
 # Technicka poznamka: Uvozovky v 'intro' jsou zamerne smart, protoze smart konverze zpusobi YAML error.
 intro:      "Studie poskytuje zatím nejpřesnější odpověď na otázku _„Jak moc se v ČR oteplí a jak se změní množství a rozložení srážek během 21. století?“_ na základě vyhodnocení ansámblu  několika desítek globálních a regionálních klimatických modelů."
 study-title:        "Očekávané klimatické podmínky v České Republice, část I."
