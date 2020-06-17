@@ -44,7 +44,7 @@ V [první kapitole]({{ page.study-pdf }}#page=57) zprávy jsou podrobněji disku
 
 ### Socioekonomické ukazatele
 
-* Zpráva vyčísluje nutné investice do scénářů PES, TES a DDP, vyčísluje počty pracovních míst, které vzniknou přímo v souvislosti s transformací a modeluje celkové dopady na ekonomiku, tedy celkovou zaměstnanost, HDP a další socioekonomické ukazatele.
+* Zpráva vyčísluje nutné investice do scénářů PES, TES a DDP, vyčísluje počty pracovních míst, která vzniknou přímo v souvislosti s transformací, a modeluje celkové dopady na ekonomiku, tedy celkovou zaměstnanost, HDP a další socioekonomické ukazatele.
 
 <div class="table table-striped table-hover" markdown="1">
 
