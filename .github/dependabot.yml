@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Check for updates of used GitHub actions
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    asignees:
+      - 'mukrop'
+    reviewers:
+      - 'mukrop'
+    
