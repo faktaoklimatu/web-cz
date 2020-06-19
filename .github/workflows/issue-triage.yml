@@ -1,0 +1,25 @@
+name: "Mark issues without priority or project"
+on:
+  issues:
+    types: [ opened ]
+
+jobs:
+  - issue-triage:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Label missing priority"
+      uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: "Toto issue zatím nemá přirazenou prioritu nebo projekt."
+        stale-issue-label: "chybí priorita"
+        days-before-stale: 0
+        days-before-close: -1
+        exempt-issue-labels: "1: nízká priorita,2: střední priorita,3: vysoká priorita"
+    - name: "Label missing project"
+      uses: Logerfo/triage-action@0.0.2
+      with: 
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        label: "chybí projekt/garant"
+        project: 'true'
+        milestone: 'false'
