@@ -1,0 +1,27 @@
+name: Mark issues without priority or project
+
+on:
+  schedule:
+  - cron: "30 1 * * *"
+
+jobs:
+  - prioritize:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Toto issue zatím nemá přirazenou prioritu nebo projekt.'
+        stale-pr-message: 'Tento pull request zatím nemá přirazenou prioritu nebo projekt.'
+        stale-issue-label: 'na roztřízení'
+        stale-pr-label: 'na roztřízení'
+        days-before-stale: 1
+        days-before-close: -1
+        exempt-issue-labels: '1: nízká priorita,2: střední priorita,3: vysoká priorita'
+  - name: triage-action
+    - uses: Logerfo/triage-action@0.0.2
+      with: 
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        label: 'na roztřízení'
+        project: 'true'
+        milestone: 'false'
