@@ -4,7 +4,7 @@ on:
     types: [ opened ]
 
 jobs:
-  - issue-triage:
+  issue-triage:
     runs-on: ubuntu-latest
     steps:
     - name: "Label missing priority"
