@@ -6,7 +6,7 @@ redirect_from: "/tropicke-dny-brno"
 weight:     111
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
-caption:    "Jako ukazatel změny klimatu v ČR může sloužit i nárůst počtu tropických a pokles počtu ledových dní. V Brně je posledních několika letech více dní s teplotou nad 30 °C než s teplotou pod 0 °C."
+caption:    "Jako ukazatel změny klimatu v ČR může sloužit i nárůst počtu tropických a pokles počtu ledových dní. V Brně je za posledních několik let více dní s teplotou nad 30 °C než s teplotou pod 0 °C."
 dataset:    "tropicke-dny"
 ---
 
