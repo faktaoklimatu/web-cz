@@ -6,13 +6,45 @@ redirect_from: "/keeling"
 weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Od průmyslové revoluce rostou koncentrace oxidu uhličitého vysoko nad hodnoty, které byly na planetě během posledních 800 000 let a výrazně zvyšují skleníkový efekt a způsobují globální oteplování. Data pochází z analýzy ledovcových vrtů EPICA v Antarktidě a z přímých měření na Mauna Loa, Hawai."
+caption:    "Dlouhodobý nárůst koncentrací CO<sub>2</sub> a pokles koncentrací kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti –⁠ spalováním fosilních paliv."
 dataset:    "koncentrace-co2"
 ---
 
-## Jak číst tento graf?
+## Co vidíme v grafu?
 
-* Koncentrace uvádíme v jednotkách <glossary id="ppm">ppm</glossary>.
+* Koncentrace CO<sub>2</sub> a pokles koncentrací O<sub>2</sub> uvádíme v jednotkách <glossary id="ppm">ppm</glossary>.
+* Koncentrace CO<sub>2</sub> jsou v grafu znázorněny světle modrou. Vlivem fotosyntézy a dýchání se mění během roku, od května do října klesají a během zbytku roku zase rostou. Dlouhodobě vlivem spalování fosilních paliv koncentrace CO<sub>2</sub> rostou tempem okolo 20 ppm za desetiletí. V roce 1960 byly hodnoty okolo 315 ppm, v roce 2020 okolo 415ppm –⁠ to je nárůst přibližně o 30 %.
+* Pokles koncentrací O<sub>2</sub> oproti referncčnímu roku 1991 je v grafu znázorněn tmavou modrou. Podobně jako koncentrace CO<sub>2</sub>, také  koncentrace O<sub>2</sub> se mění během roku vlivem fotosyntézy a dýchání, ale průběh je opačný. Tedy koncentrace O<sub>2</sub> od května do řijna rostou a po zbytek roku klesají. Dlouhodobě vlivem spalování fosilních paliv koncentrace O<sub>2</sub> klesají tempem asi 40 ppm za desetiletí.
+* V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu desítek molekul působit zásadně. I takto malá změna však má velký vliv –⁠ připomeňme, že  zdvojnásobení CO<sub>2</sub> vede k dlouhodobému zvýšení teploty na planetě o 3 °C <glossary id="citlivost">ppm</glossary>.
+
+## Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?
+
+* Přesnou metodu měření, která dokáže koncentraci stanovit s přesností 0.1 ppm, tedy 0.00001 %, vyvinul Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože zaznamenával různé koncentrace ve dne a v noci a také se měnily podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Francisku ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů velmi vzdálené. Přesunul se tedy doprostřed Tichého oceánu na Mauna Loa na Hawai, stanici, která je 3400 metrů nad mořem. Nejdelší konzistentní řada měření koncentrací COCO<sub>2</sub> je právě z Mauna Loa. Od té doby se ale přidaly další měřicí stanice v Antarktidě, Aljašce a některých dalších ostrovech v Tichém oceánu. Všechna tato místa vykazují stejný dlouhodobý pokles a podobné kolísání mezi létem a zimou. (velikost kolísání je v různých místech různá, obecně na severní polokouli je větší a na jižní polokouli menší - záleží na vzdálenosti od velkých lesů, které svým dýcháním tyto koncentrace ovlivňují).
+
+* Podrobněji je Keelingova metoda měření popsána v článku [Story of Atmoshperic CO<sub>2</sub> measurement](https://pubs.acs.org/doi/pdf/10.1021/ac1001492). Další kontext, včetně vysvětlení izotopových stop najdete v článku [Keeling curve: Carbon dioxide measuements on Mauna Loa](https://www.acs.org/content/acs/en/education/whatischemistry/landmarks/keeling-curve.html).
+
+* Důkaz, že je nárůst koncentrací CO2 v atmosféře skutečně způsobený spalováním, přinesl Keelingův syn Ralph. Ten v roce 1988 objevil způsob, jak velmi přesně měřit koncentrace kyslíku. Jeho měření ukazují na dlouhodobý nepřirozený pokles koncentrací kyslíku v atmosféře. Dnes existují i další vědecké práce, které potvrzují, že oxid uhličitý, který v atmosféře přibývá, pochází ze spalování fosilních paliv. Je proto jisté, že nárůst koncentrací CO2 je skutečně způsobený člověkem.   
+
+* Izotopové stopy
+
+* Disertace Ralpha Keelinga
+
+
+
+
+Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydechují kyslík. Dýchání je opačný proces, při kterém se kyslík spotřebovává a vydechuje oxid uhličitý. 
+
+CO2 + H2O <-> O2 + sacharidy
+
+Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza  – rostliny odčerpávají oxid uhličitý z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijou a uvolňují oxid uhličitý zpátky.
+
+
+Spalování spotřebovává kyslík a uvolňuje oxid uhličitý. Při spalování uhlí je reakce jednoduchá: C + O2 -> CO2. Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára CH4 + 2 O2 -> CO2 + 2 H2O 
+
+## Další poznámky k metodice měření a zpracování dat
+
+Převod per meg na ppm: http://scrippso2.ucsd.edu/faq.html
+
 * V posledních 800 000 letech se koncentrace CO<sub>2</sub> pohybovaly v rozsahu 170–300 ppm a kolísání odpovídalo střídání dob ledových a meziledových (pro srovnání: první nálezy *Homo sapiens* mají stáří přibližně 300 000 let).
 * Během posledních 2 000 let byly koncetrace CO<sub>2</sub> až do roku 1750 stabilně v rozmezí 275–280 ppm.
 * __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 11,8 ppm za dekádu a v letech 2000–2019 koncentrace CO<sub>2</sub> rostla tempem 21,7 ppm za dekádu.
