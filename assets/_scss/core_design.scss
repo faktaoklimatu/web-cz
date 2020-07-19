@@ -1,22 +1,17 @@
 body {
     padding-top: 3rem;
-    padding-bottom: 5.5rem;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: $c-primary;
     font-size: 1.0rem;
     background: $c-body;
     position: relative;
+    display: flex;
     min-height: 100vh;
+    flex-direction: column;
     text-align: justify;
 
-    @media screen {
-        @media (max-width: 500px) {
-            padding-bottom: 6rem;
-        }
-
-        @media (max-width: 768px) {
-            text-align: left;
-        }
+    @media screen and (max-width: 768px) {
+        text-align: left;
     }
 }
 
@@ -165,22 +160,38 @@ ul:last-child {
     padding-right: 1rem;
 }
 
-.page-footer {
-    position: absolute;
-    bottom: 0;
+footer {
+    flex: 1;
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background: #E7E7E7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    background: rgba(0,0,0,0.05);
     color: $c-secondary;
-    font-size: 80%;
 
-    .float-right {
+    .footer-left {
+        float: left;
+    }
+    
+    .footer-right {
+        float: right;
         text-align: right;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-right {
+            margin-top: 1rem;
+            float: left;
+            text-align: left;
+        }
     }
 
     a {
         color: $c-secondary;
+        text-decoration: none;
+    }
+
+    a:hover {
         text-decoration: none;
     }
 }
