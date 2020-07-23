@@ -9,7 +9,7 @@ tags-topics: [ klima ]
 caption:    "Planeta je nyní o 1,2 °C teplejší než v tzv. předindustriálním období, tedy v letech 1850–1900. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "vyvoj-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/1mYBzne9T_tVpjNFmBuv1e6tNlUAVtADoQNGRJjuiyE4/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1XDa9X1W-bEJhKYMtefvwPuz5N0l2HPyio5dR5KI9qsY/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ---
 
