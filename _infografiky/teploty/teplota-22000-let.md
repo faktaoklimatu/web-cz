@@ -1,15 +1,13 @@
 ---
 layout:     infographic
 title:      "Teplota 22kyr"
-slug:       "teplota-22kyr"
-redirect_from: "/teplota-22kyr"
+slug:       "teplota-22000-let"
+redirect_from: "/teplota-22000-let"
 weight:     99
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Zatímco v průběhu přirozeného přechodu mezi dobou ledovou a meziledovou trvalo planetě Zemi oteplení o 1 °C více než tisíc let, nyní se vlivem člověkem vypouštěných skleníkových plynů ohřála o 1 °C za méně než sto let. Podle předpovědí se do konce tohoto století planeta oteplí o další 1 – 3 °C, v závislosti na množství emisí skleníkových plynů."
-# TODO: Nahradit za dataset, až bude text dopsaný.
-# dataset:    "mapa-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/16bTWzt0y8Omne9xxjd3o1rpszF764ATaC5UpFO5Zd7I/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1XDa9X1W-bEJhKYMtefvwPuz5N0l2HPyio5dR5KI9qsY/edit?usp=sharing"
 data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ] ]
 ---
 
@@ -40,7 +38,7 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 ## Jak se předpovídá budoucí teplota?
 * Díky znalosti radiačního efektu skleníkových plynů je možné předpovědět, o kolik se zvýší energie přicházející k Zemi při zvýšení koncentrace skleníkových plynů. Protože v zemském klimatu působí různé pozitivní a negativní zpětné vazby, které výslednou teplotu ovlivňují, změna globální teploty se simuluje za pomoci klimatických modelů. Tyto modely jsou trénovány a testovány za pomoci historických dat.
 * Na světě existuje zhruba stovka nezávislých týmů, které vyvíjí vlastní klimatický model. Mezivládní panel pro změnu klimatu (IPCC) pak shrnuje výsledky těchto jednotlivých týmů a publikuje predikované hodnoty oteplení
-* Budoucí oteplení závisí na budoucím množství emisí skleníkových plynů. Proto IPCC vydává čtyři různé předpovědi pro čtyři emisní scénáře (Representative Concentration Pathways, RCP). Nejnižší emisní scénář RCP2.6, který by zaručoval udržení oteplení pod hodnotou 1,5 °C je v současnosti již nepravděpodobný. Na druhém konci škály, scénář RCP8.5, který by nastal v případě rozšíření využívání fosilních paliv a způsobil oteplení o více než 5 °C, je v současnosti také již nepravděpodobný díky klimatickým závazkům, které jsou všude po světě přijímány. V současnosti je svět na trajektorii k oteplení zhruba o 3 °C (tedy oteplení srovnatelné s rozdílem mezi dobou ledovou a meziledovou).
+* Budoucí oteplení závisí na budoucím množství emisí skleníkových plynů. Proto IPCC vydává čtyři různé předpovědi pro čtyři emisní scénáře (Representative Concentration Pathways, RCP). Nejnižší emisní scénář RCP2.6, který by zaručoval udržení oteplení pod hodnotou 1,5 °C je v současnosti již nepravděpodobný. Na druhém konci škály, scénář RCP8.5, který by nastal v případě rozšíření využívání fosilních paliv a způsobil oteplení o více než 5 °C, je v současnosti také již nepravděpodobný díky klimatickým závazkům, které jsou všude po světě přijímány. Pokud by byly přijaté závazky skutečně implementovány, odhaduje se, že  je svět na trajektorii k oteplení zhruba o 2,8 °C (odhad z červenec 2020, podrobněji viz [Carbon Action Tracker](https://climateactiontracker.org/).
 
 
 ## Zdroj dat
