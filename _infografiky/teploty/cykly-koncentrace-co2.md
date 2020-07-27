@@ -1,8 +1,8 @@
 ---
 layout:     infographic
 title:      "Vývoj koncentrace CO₂ v atmosféře"
-slug:       "keeling"
-redirect_from: "/keeling"
+slug:       "cykly-koncentrace-co2"
+redirect_from: "/cykly-koncentrace-co2"
 weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
