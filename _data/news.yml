@@ -1,4 +1,24 @@
 
+- date: 2020-07-23
+  summary: "podkladová data a grafika [Vývoj světové tepotní anomálie](/infografiky/vyvoj-teplotni-anomalie) byla převedena na referenční období _pre-industriál_, tedy 1850-1900. Důvodem je, že Pařížská dohoda, zpráva SR15 IPCC i mnohé další dokumenty a články vztahují hodnoty oteplení právě vzhledem k tomuto referenčnímu období."
+
+- date: 2020-06-02
+  summary: "Spolu s Asociací pro mezinárodní otázky a Danuší Nerudovou jsme připravili mediální brífing _Konec uhlí v Čechách_ shrnující světový a český kontext uhelného phase outu."
+
+- date: 2020-05-31
+  title: "Nová sekce Energetika"
+  summary: |
+    Zpracovali jsme několik grafik, které zobrazují data o výrobě a spotřebě elektřiny: 
+    * [Uhelný phase-out ve státech EU](/infografiky/uhelny-phaseout-eu)
+    * [Výroba elektřiny ve světových regionech](/infografiky/elektrina-svet)
+    * [Výroba elektřiny na osobu ve světových regionech](/infografiky/elektrina-na-osobu-svet)
+    * [Výroba elektřiny na osobu ve státech EU ](/infografiky/elektrina-na-osobu-eu)
+    
+    a studii [Transformace energetiky do 2050](/studie/2020_transformace-energetiky-do-2050) od Mezinárodní Agentury pro obnovitelnou energii. 
+
+- date: 2020-05-30
+  summary: "Protože množství grafik, studií a datasetů přesáhlo čtyřicítku, vytvořili jsme na stránkách vyhledávání podle štítků, které dělí grafiky na kategorie _budoucnost, ekonomika, emise, energetika, klima_ a _opatření_."
+
 - date: 2020-05-19
   title: "Globální zpráva o elektřině a dvě nové grafiky" 
   summary: |
