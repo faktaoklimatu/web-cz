@@ -1,15 +1,16 @@
 ---
 layout:     dataset
-title:      "Vývoj koncentrace CO₂ v atmosféře"
+title:      "Vývoj koncentrace CO₂ a O₂  v atmosféře"
 slug:       "koncentrace-co2"
 weight:     10
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Dataset obsahuje tři různé datové řady lišící se časovým rozsahem, zdrojem dat i metodikou. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
-data-our:   "https://docs.google.com/spreadsheets/d/10Ku7uOPfDmbvrzWFtvlqvZ-ImWbS6QDHrxKtRIyO4r4/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1DYrIsmgy_S6IIWGtsk55Jor6zSDrf6-qT8Og9n7oDoU/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
-            , [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
+            , [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] 
+            , [ "Koncentrace O₂", "http://scrippso2.ucsd.edu/osub2sub-data.html"]]
 ---
 
 <div class="section"><div class="container" markdown="1">
