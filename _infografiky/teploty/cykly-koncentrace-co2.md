@@ -18,7 +18,7 @@ dataset:    "koncentrace-co2"
 
 * Koncentrace CO<sub>2</sub> a pokles koncentrací O<sub>2</sub> uvádíme v jednotkách <glossary id="ppm">ppm</glossary>. Jednotka *ppm* znamená *parts per million*, tedy označuje počet částic v jednom milionu, podobně jako procento \[%], tedy *per cent*, znamená počet ve stovce a promile \[‰] označuje počet v tisíci. Koncentrace 400 ppm znamená, že v jednom milionu molekul vzduchu je 400 molekul oxidu uhličitého, což odpovídá 0,4 ‰ nebo 0,04 %.
 
-* V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu desítek molekul působit zásadně. I takto malá změna však má velký vliv –⁠ připomeňme, že  zdvojnásobení CO<sub>2</sub> vede k dlouhodobému zvýšení teploty na planetě o 3 °C <glossary id="citlivost">ppm</glossary>.
+* V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu desítek molekul působit zásadně. I takto malá změna však má velký vliv –⁠ připomeňme, že  zdvojnásobení CO<sub>2</sub> vede k dlouhodobému zvýšení teploty na planetě o 2 - 4,5 °C - viz <glossary id="citlivost">citlivost klimatu</glossary>.
 
 ## Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?
 
@@ -30,11 +30,7 @@ dataset:    "koncentrace-co2"
 
 ## Jak se projevuje fotosyntéza, dýchání a spalování fosilních paliv na koncentracích CO<sub>2</sub> a O<sub>2</sub>?
 
-* Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydechují kyslík. Dýchání je opačný proces, při kterém se kyslík spotřebovává a oxid uhličitý vydechuje:
-
-  CO<sub>2</sub> + H<sub>2</sub>O ↔ O<sub>2</sub> + sacharidy
-
-  Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza  – rostliny odčerpávají oxid uhličitý z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijí a uvolňují oxid uhličitý zpět do atmosféry. Dýchání kyslík mimo vegetační sezónu spotřebovává. Tak vzniká pravidelné kolísání koncentrací kyslíku a CO<sub>2</sub>.
+* Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydechují kyslík. Dýchání je opačný proces, při kterém se kyslík spotřebovává a oxid uhličitý vydechuje: CO<sub>2</sub> + H<sub>2</sub>O ↔ O<sub>2</sub> + sacharidy. Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza  – rostliny odčerpávají oxid uhličitý z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijí a uvolňují oxid uhličitý zpět do atmosféry. Dýchání kyslík mimo vegetační sezónu spotřebovává. Tak vzniká pravidelné kolísání koncentrací kyslíku a CO<sub>2</sub>.
 
 * Spalování spotřebovává kyslík a uvolňuje oxid uhličitý. Reakce při spalování uhlí je jednoduchá: C + O<sub>2</sub> → CO<sub>2</sub>. Na jeden spálený atom uhlíku připadají dva atomy kyslíku. Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára: CH<sub>4</sub> + 2 O<sub>2</sub> → CO<sub>2</sub> + 2 H<sub>2</sub>O. Spalování fosilních paliv tedy dlouhodobě odčerpává z atmosféry kyslík a naopak zvyšuje koncentrace oxidu uhličitého.
 
@@ -43,10 +39,10 @@ dataset:    "koncentrace-co2"
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 
-* Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fosilních paliv je několik:
+Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fosilních paliv je několik:
 
-* Lidstvo ročně spálí přes 5 miliard tun uhlí, asi 4 miliardy tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
+  * Lidstvo ročně spálí přes 5 miliard tun uhlí, asi 4 miliardy tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
 
-* Nárůst koncentrací CO<sub>2</sub> je doprovázen poklesem koncentrací O<sub>2</sub>, který přesně odpovídá směšovacím poměrům při spalování fosilních paliv (po započtení pohlcení části CO<sub>2</sub> v oceánech) – tedy jde o další důkaz, že za zvyšování koncentrací CO<sub>2</sub> může právě spalování.
+  * Nárůst koncentrací CO<sub>2</sub> je doprovázen poklesem koncentrací O<sub>2</sub>, který přesně odpovídá směšovacím poměrům při spalování fosilních paliv (po započtení pohlcení části CO<sub>2</sub> v oceánech) – tedy jde o další důkaz, že za zvyšování koncentrací CO<sub>2</sub> může právě spalování.
 
-* Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C a sníženou koncentraci <sup>13</sup>C. Oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na webu [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html).
+  * Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C a sníženou koncentraci <sup>13</sup>C. Oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na webu [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html).
