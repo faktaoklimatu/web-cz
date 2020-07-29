@@ -14,7 +14,7 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 ## Co je zobrazeno v grafu
 
-* V grafu je znázorněn vývoj **teplotní anomálie** vzhledem k **“předindustriálnímu” referenčnímu období 1850–1900** (nejde o graf průměrné teploty, ale odchylky od průměrných teplot v referenčním období z let 1850 -1900) během posledních 22 000 let
+* V grafu je znázorněn vývoj **teplotní anomálie** vzhledem k **“předindustriálnímu” referenčnímu období 1850–1900** (nejde o graf průměrné teploty, ale odchylky od průměrných teplot v referenčním období z let 1850-1900) během posledních 22 000 let
 
 * Graf začíná v době vrcholu poslední doby ledové, 20 000 let př. n. l. Můžeme pozorovat přirozené oteplení které proběhlo během konce doby ledové, a následné  ustálení teplot v nynější době meziledové. V pravé části grafu vidíme současné oteplení od roku 1880, tedy současnou klimatickou změnu, která je důsledkem zvyšujících se koncentrací CO<sub>2</sub> v atmosféře. 
 
