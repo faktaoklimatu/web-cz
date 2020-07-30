@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Cykly koncentrací CO₂ a O₂ v atmosféře"
 slug:       "cykly-koncentrace-co2"
 redirect_from: "/cykly-koncentrace-co2"
-weight:     95
+weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Dlouhodobý nárůst koncentrací CO<sub>2</sub> a pokles koncentrací kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti –⁠ spalováním fosilních paliv."
