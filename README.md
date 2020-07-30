@@ -1,6 +1,6 @@
 # O projektu Fakta o klimatu
 
-Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro další použití.
+Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy, infografiky a přístupné datasety pro další použití.
 
 Jsme studenti, doktorandi, akademici nebo IT profesionálové. Sami jsme si zkusili vyhledat data o teplotě či emisích, najít určité informace v mnohasetstránkových zprávách IPCC nebo původních článcích. Jde to, ale zabere to hodně času. Musíte umět dobře anglicky a musíte si dohledávat spoustu souvislostí. Běžný novinář nebo politik (ani bězný Čech) většinou nemá tolik trpělivosti nebo dostatečnou úroveň angličtiny a tak si data nevyhledá. Rozhodli jsme se proto, že tu práci, kterou jsme s hledáním dat sami měli, ostatním ušetříme - zpracujeme infografiky, dáme odkazy na původní data i naše zpracované datasety na jedno místo a doplníme základní souvislosti. A dáme je k dispozici všem, pro koho budou užitečné. Doufáme, že se postupně tyto informace dostanou ke všem, kterých se změny klimatu týkají. Tedy ke všem.
 
@@ -23,13 +23,13 @@ Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váho
 
 ### Vytvoření stránky grafiky
 
-Zobrazují se v sekcích na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku v `_infografiky/`.
-Názvy souborů musí mít vždy formát `<SLUG>.md`. Soubory jsou pro přehlednost ukládány v složkách podle primárního tagu.
+Zobrazují se v sekcích na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku ve složce `_infografiky/`.
+Názvy souborů musí mít vždy formát `<SLUG>.md`. Soubory jsou pro přehlednost ukládány ve složkách podle primárního tagu.
 
-Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci.
+Co se týče formátu, inspirujte se u existujících a dodržujte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci – stránky s nižší váhou se zobrazí před stránkami s váhou vyšší.
 Nezbytné pro správné zobrazení jsou tagy, např. `tags: [ teploty ]`. Zde se vyskytují tagy, podle kterých se infografiky vybírají do sekcí na úvodni stránce.
 
-Obrázky jednotlivých grafik (pouze SVG) a data (aktuálně pouze XLSX) nahrávejte do stejé složky jako infografiky se stejným názvem jako je souor infografiky.
+Obrázky jednotlivých grafik (pouze PDF) nahrávejte do stejé složky jako infografiky se stejným názvem jako je souor infografiky.
 
 ## Změna e-mailové adresy pro kontaktní formulář
 
@@ -51,6 +51,6 @@ Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větv
 
 ## Jak nasadit novou verzi
 
-Na webu https://faktaoklimatu.cz (resp. https://mukrop.github.io/faktaoklimatu/) se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.
+Na webu https://faktaoklimatu.cz se nasadí automaticky každá verze, která je v hlavní větvi (`master`) tohoto repozitáře na GitHubu.
 
 V případě potíží zůstane k dispozici stará verze a důvod selhání bude potřeba získat skrze správce, tím je vlastník tohoto repozitáře.
