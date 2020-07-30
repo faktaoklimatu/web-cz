@@ -6,7 +6,7 @@ redirect_from: "/cykly-koncentrace-co2"
 weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Dlouhodobý nárůst koncentrací CO<sub>2</sub> a pokles koncentrací kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti –⁠ spalováním fosilních paliv."
+caption:    "Takzvaná Keelingova křivka je nejdelší souvislý záznam vývoje koncentrací CO<sub>2</sub> v atmosféře. Dlouhodobý nárůst koncentrací CO<sub>2</sub> a pokles koncentrací kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti –⁠ spalováním fosilních paliv."
 dataset:    "koncentrace-co2"
 ---
 
