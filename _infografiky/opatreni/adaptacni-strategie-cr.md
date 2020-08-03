@@ -1,8 +1,8 @@
 ---
 layout:     infographic
 title:      "Adaptační strategie České republiky"
-slug:       "adaptacni-strategie-ceske-republiky"
-redirect_from: "/adaptacni-strategie-ceske-republiky"
+slug:       "adaptacni-strategie-cr"
+redirect_from: "/adaptacni-strategie-cr"
 weight:     99
 tags:       [ opatreni ]
 caption:    "Adaptační strategie České republiky je dokument shrnující dopady změny klimatu na život v České republice a navrhuje adaptační opatření jejichž cílem je zmírnění dopadů změny klimatu. Naše infografika poskytuje shrnutí nejdůležitějších aspektů národní adaptační strategie, odkazuje na zdroje mapující dopady jednotlivých projevý změny klimatu, ukazuje příklady již existujících opatření."
