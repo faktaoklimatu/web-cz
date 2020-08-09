@@ -10,30 +10,18 @@ Jsme studenti, doktorandi, akademici nebo IT profesionálové. Sami jsme si zkus
 
 Nahrávání obsahu vyžaduje drobné technické zkušenosti, schopnost pracovat s verzovacím systémem Git a dodržení tohoto návodu.
 
-Obsah je členěn do sekcí, ke kterým je jedna či více info grafik, které odkazují vždy jeden obrázek.
+## Titulní stránka
 
-## Jednotlivé sekce
-
-### Vytvoření sekce
-
-Jednotlivé sekce se zobrazují na úvodní stránce a vytváří se v `_sekce/`. Názvy souborů musí mít vždy formát
-`<SLUG>.md`, kde SLUG je nějaké zkrácené smysluplné jméno používající jen znaky anglické abecedy, číslice a znaky jako `-` a `_`.
-
-Co se týče formátu, inspirujte se u existujících, dodržte hlavičku. Váhou určete pořadí na úvodní stránce.
+Obsah je členěn do sekcí, ke kterým je jedna či více info grafik, které odkazují vždy jeden obrázek. Po sekcích následuje seznam studií, datasetů a dalších stránek. Obsah sekcí odpovídá tématům (`tags-topics`) definovaných u jednotlivých objektů. Metadata těchto sekcí (název, popis, ...) jsou uloženy v `_data/tags.yml`. Obsah ostatních částí (studie, datasety, stránky) je definován v souboru titulní stránky (`_stranky/index.md`)
 
 ### Vytvoření stránky grafiky
 
 Zobrazují se v sekcích na úvodní stránce, každá infografika musí mít svoji stránku samostatnou stránku ve složce `_infografiky/`.
-Názvy souborů musí mít vždy formát `<SLUG>.md`. Soubory jsou pro přehlednost ukládány ve složkách podle primárního tagu.
+Názvy souborů musí mít vždy formát `<SLUG>.md`. Soubory jsou pro přehlednost ukládány ve složkách podle primárního tématu.
 
-Co se týče formátu, inspirujte se u existujících a dodržujte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci – stránky s nižší váhou se zobrazí před stránkami s váhou vyšší.
-Nezbytné pro správné zobrazení jsou tagy, např. `tags: [ teploty ]`. Zde se vyskytují tagy, podle kterých se infografiky vybírají do sekcí na úvodni stránce.
+Co se týče formátu, inspirujte se u existujících a dodržujte hlavičku. Váhou určíte pořadí v rámci grafik v jedné sekci – stránky s nižší váhou se zobrazí před stránkami s váhou vyšší. Nezbytné pro správné zobrazení jsou témata (`tags-topics`) a oblasti (`tags-scope`). Zde se vyskytují tagy, podle kterých se infografiky vybírají do sekcí na úvodní stránce.
 
-Obrázky jednotlivých grafik (pouze PDF) nahrávejte do stejé složky jako infografiky se stejným názvem jako je souor infografiky.
-
-## Změna e-mailové adresy pro kontaktní formulář
-
-V souboru `_config.yml` nakonfigurujte pomocí hodnoty `contact`.
+Obrázky jednotlivých grafik (pouze PDF) nahrávejte do stejné složky jako infografiky se stejným názvem jako je soubor infografiky.
 
 ## Jak vyvíjet lokálně
 
