@@ -24,10 +24,11 @@ dataset:    "emise-eu"
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
-* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu ([5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=R24))
-* Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky ([4,5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=H22))
-* Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce ([skoro 5x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=I27))
-* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky ([2x vyšší než průměr EU](https://docs.google.com/spreadsheets/d/1ldy3l-W0HDG1cHK393_rQC5pGXIWbVw94Dh3ie4aEI8/edit#gid=1336176067&range=E22), zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika zobrazující podíl jednotlivých činností na celkové emise CO<sub>2</sub>](/infografiky/emise-cr-detail).
+* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5x vyšší než průměr EU)
+* Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky (4,5x vyšší než průměr EU)
+* Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce (skoro 5x vyšší než průměr EU)
+* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky (2x vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
+* Všechny zmíněné údaje najdete v našem podrobném datasetu v sekci "Emise na obyvatele podle základních kategorií".
 
 ## Poznámky k datům o emisích
 * Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (common reporting format), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy [UNFCCC](https://cs.wikipedia.org/wiki/R%C3%A1mcov%C3%A1_%C3%BAmluva_OSN_o_zm%C4%9Bn%C4%9B_klimatu).
