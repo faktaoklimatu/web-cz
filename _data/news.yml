@@ -122,11 +122,11 @@
   summary: "V nové sekci [Další zdroje a odkazy](/zdroje) uvádíme rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat, projektů vizualizující data a další. Ve [Slovníku pojmů](/slovnik) uvádíme pro přehlednost a vyšší srozumitelnost stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem."
 
 - date: 2019-09-03
-  summary: "Rozšíření core týmu o Oldu Sklenáře, Toma Protivínského a Jana Krčála, aktualizace [sekce O nás](/#creators), publikování kompletního seznamu na projektu se podílejících lidí ([AUTHORS.md](https://github.com/mukrop/faktaoklimatu/blob/master/AUTHORS.md)), u některých infografik přidáno více primárních zdrojů dat."
+  summary: "Rozšíření core týmu o Oldu Sklenáře, Toma Protivínského a Jana Krčála, aktualizace [sekce O nás](/#creators), publikování [kompletního seznamu](https://github.com/faktaoklimatu/web/blob/master/CONTRIBUTORS.md#readme) na projektu se podílejících lidí, u některých infografik přidáno více primárních zdrojů dat."
 
 - date: 2019-08-23
   title: "Vznik sekce Studie a tři nové infografiky"
-  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#/sekce/studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy – dataset z Eurostatu umožňuje započítání letecké dopravy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12. října 2019: budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce."
+  summary: "V rámci zvyšování kvality a důvěryhodnosti jsme zapracovali první tři významné studie, na které se odkazujeme, a/nebo které jsou pro doplňující pochopení a vzhled do tématu změn klimatu důležité ([sekce Studie](/#studie)). Dále jsme rozšířili paletu infografik o [Emise skleníkových plynů EU](/infografiky/emise-eu), [Pořadí států EU podle emisí skleníkových plynů](/infografiky/emise-eu-poradi), a [Vývoj koncentrace CO<sub>2</sub> v historii](/infografiky/koncentrace-co2). Tímto také vzniká problém se započtením emisí letecké dopravy – dataset z Eurostatu umožňuje započítání letecké dopravy (i když trochu problematické) a my díky tomu začínáme řešit, pro jaký standard se rozhodneme. Problém se podařilo uzavřít 12. října 2019: budeme leteckou dopravu zobrazovat, i když je tam problematická atribuce."
 
 - date: 2019-08-05
   summary: "Rozhovor v rádiu Wave – Ondráš Přibyla a Marek Lahoda představují projekt v [rozhovoru pro rádio Wave](https://wave.rozhlas.cz/projekt-fakta-o-klimatu-v-mediich-maji-popiraci-klimatickych-zmen-vetsi-prostor-8033240): _'My bychom chtěli nejdřív pokrýt něco, co by se dalo považovat za základní znalosti. Grafy, které bychom chtěli publikovat v tomto roce, by měly pokrýt něco 'jako maturitu z klimatických změn'. To znamená, chceme, aby lidi věděli, že se Česká republika oteplila o dva stupně od roku 1960, zhruba jaké jsou emise v Česku a ve světě a proč je vůbec důležité to řešit. Ono se zdá, že změna o jeden a půl stupně Celsia je malá, ale je potřeba vysvětlit, co to znamená z hlediska bodů zlomu, ke kterým se blížíme, a z hlediska celého klimatického systému planety...'_"
@@ -139,7 +139,7 @@
 
 - date: 2019-07-23
   title: "faktaoklimatu.cz online!"
-  summary: "Zveřejněna první verze webu obsahující základní set infografik: 3&times; [Vývoj teplot a koncentrací skleníkových plynů](/#/sekce/teploty), 3&times; [Emise skleníkových plynů](/#/sekce/emise) a úvodní slovo."
+  summary: "Zveřejněna první verze webu obsahující základní set infografik: 3&times; _Vývoj teplot a koncentrací skleníkových plynů_, 3&times; _Emise skleníkových plynů_ a úvodní slovo."
 
 - date: 2019-06-26
   summary: "Třetí klimatický hackathon – pokračující přípravy na zveřejnění webu, sepisování a ladění textů, rozšiřování infografik, založen e-mail [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz)."
