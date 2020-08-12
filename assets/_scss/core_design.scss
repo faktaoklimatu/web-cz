@@ -60,21 +60,27 @@ a {
     cursor: pointer;
 }
 
-a.ext-link:after {
+.ext-link:after, .glossary-link:after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     content: "\f35d";
     margin-left: 0.3em;
-    font-size: 60%;
+    font-size: 70%;
     font-weight: 900;
     font-style: normal;
     text-decoration: none;
     position: relative;
-    top: -0.15em;
+    top: -0.1em;
 }
 
-a.no-ext-link-icon:after {
+.no-ext-link-icon:after {
     content: none;
+}
+
+.glossary-link:after {
+    content: "\f02d";
+    top: 0;
+    font-size: 100%;
 }
 
 p:last-child {
