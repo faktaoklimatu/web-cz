@@ -11,8 +11,8 @@ study-title:        "Czech power grid without electricity from coal by 2030"
 study-author:       "Peter-Philipp Schierhorn, M.Sc. et al."
 study-institution:  "Energynautics"
 study-year:         2018
-study-url:          "https://glopolis.org/_publications/jak-muze-ceska-sit-zvladnout-utlum-uhelnych-elektraren-a-nastup-obnovitelnych-zdroju"
-study-pdf:          "http://glopolis.org/wp-content/uploads/Czech-Grid-Without-Coal-By-2030_fin.pdf"
+study-url:          "https://web.archive.org/web/20200420141655/https://glopolis.org/_publications/jak-muze-ceska-sit-zvladnout-utlum-uhelnych-elektraren-a-nastup-obnovitelnych-zdroju"
+study-pdf:          "https://web.archive.org/web/20190904122943if_/http://glopolis.org/wp-content/uploads/Czech-Grid-Without-Coal-By-2030_fin.pdf"
 summary: |
     * Studie dochází k závěru, že __stabilita sítě není zásadní překážkou pro přechod české energetiky od uhlí k obnovitelným zdrojům.__
     * Bezpečnost dodávek bude při uvažovaném scénáři možné zajistit i pro následující události/varianty dalšího vývoje:
@@ -25,13 +25,13 @@ summary: |
         * Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
         * Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
         * Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
-metadata-extra: '<a href="http://glopolis.org/wp-content/uploads/Infolist-sit-bez-uhli.pdf" id="study-link-3" class="btn btn-secondary">Infolist studie (česky)</a>'
+metadata-extra: '<a href="https://web.archive.org/web/20191231044313if_/http://glopolis.org/wp-content/uploads/Infolist-sit-bez-uhli.pdf" id="study-link-3" class="btn btn-secondary">Infolist studie (česky)</a>'
 ---
 
 ## Předpoklady a metodologie
 
 * Pro rok 2030 je uvažována čistá spotřeba na úrovni 65 TWh oproti 60,7 TWh v roce 2017. Česká republika zůstane zemí, která vyváží více elektřiny, než dováží, byť čistý export klesne na 4 TWh oproti 13 TWh v roce 2017.
-* Autoři studie podrobně modelovali chování sítě pro různé scénáře denní spotřeby v roce 2030. Vstupní údaje o rychlosti větru a slunečním záření vycházejí z konkrétních údajů pro rok 2012 (průměrný větrný a sluneční rok ve střední Evropě) v 15 minutovém rozlišení. Simulace síťových parametrů byla provedena v hodinovém rozlišení pro celý rok 2030. Modelovaný průběh výroby a spotřeby je ve studii zobrazen pro některé měsíce [formou grafů (str. 22)](http://glopolis.org/wp-content/uploads/Czech-Grid-Without-Coal-By-2030_fin.pdf#page=22).
+* Autoři studie podrobně modelovali chování sítě pro různé scénáře denní spotřeby v roce 2030. Vstupní údaje o rychlosti větru a slunečním záření vycházejí z konkrétních údajů pro rok 2012 (průměrný větrný a sluneční rok ve střední Evropě) v 15 minutovém rozlišení. Simulace síťových parametrů byla provedena v hodinovém rozlišení pro celý rok 2030. Modelovaný průběh výroby a spotřeby je ve studii zobrazen pro některé měsíce [formou grafů (str. 22)](https://web.archive.org/web/20190904122943if_/http://glopolis.org/wp-content/uploads/Czech-Grid-Without-Coal-By-2030_fin.pdf#page=22).
 * V provozu zůstanou pouze uhelné zdroje s kombinovanou výrobou tepla a elektřiny a kogenerační zdroje v průmyslových podnicích. Budou dokončeny v současné době plánované projekty rozvoje přenosové soustavy.
 
 <div class="table table-striped table-hover" markdown="1">
