@@ -23,9 +23,8 @@ DST_FILE_SVG=${DST_FILE_PDF%.pdf}.svg
 mkdir -p $(dirname $DST_FILE_PDF)
 
 # Convert original PDF to SVG
-echo -n "Converting $SRC_FILE_PDF to SVG..."
+echo -e `basename $SRC_FILE_PDF`": converting to SVG..."
 pdf2svg "$SRC_FILE_PDF" "$DST_FILE_SVG" >/dev/null 2>&1
-echo " OK"
 
 INKSCAPE_VERSION_1=
 if inkscape --version 2>/dev/null | grep '^Inkscape 1\.' >/dev/null; then
@@ -60,15 +59,13 @@ convert_svg_to_png() {
 }
 
 # Convert SVG into PNGs of various sizes
-echo "Converting $DST_FILE_SVG to PNG:"
 for width in ${WIDTHS[@]}; do
-    echo -en "    Width ${width}px..."
+    echo -e `basename $DST_FILE_SVG`": converting to PNG (${width}px)..."
     convert_svg_to_png "$DST_FILE_SVG" $width
-    echo " OK"
 done
 
 # If all previous conversions pass, copy the file checked by Make
-echo "Copying $SRC_FILE_PDF to $DST_FILE_PDF"
+echo `basename $SRC_FILE_PDF`": copying to $DST_FILE_PDF..."
 cp "$SRC_FILE_PDF" "$DST_FILE_PDF"
 
-echo "All done"
+echo `basename $SRC_FILE_PDF`": All done."
