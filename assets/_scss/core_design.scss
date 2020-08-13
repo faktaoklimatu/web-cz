@@ -169,21 +169,9 @@ footer {
     background: rgba(0,0,0,0.05);
     color: $c-secondary;
 
-    .footer-left {
-        float: left;
-    }
-    
-    .footer-right {
-        float: right;
-        text-align: right;
-    }
-
-    @media screen and (max-width: 768px) {
-        .footer-right {
-            margin-top: 1rem;
-            float: left;
-            text-align: left;
-        }
+    > .container {
+        display: flex;
+        justify-content: space-between;
     }
 
     a {
