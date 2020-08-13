@@ -47,13 +47,14 @@ check: web
 
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
+	rm -rf $(STUDIES_FOLDER)
 
 $(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
-	utils/convert-infographic.sh $< $@
+	@utils/convert-infographic.sh $< $@
 
 $(STUDIES_FOLDER)/%: _studie/%
 	mkdir -p $(@D)
-	cp -v $< $@
+	cp $< $@
 
 dataset-images: $(DATASETS_DST)
 
