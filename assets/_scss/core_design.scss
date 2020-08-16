@@ -73,10 +73,17 @@ a {
     top: -0.1em;
 }
 
+// Smaller external link icon in lead text
+.lead .ext-link:after {
+    font-size: 55%;
+}
+
+// No external link icon if manually specified
 .no-ext-link-icon:after {
     content: none;
 }
 
+// Book icon instead of external link in glossary links
 .glossary-link:after {
     content: "\f02d";
     top: 0;
