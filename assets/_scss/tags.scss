@@ -3,12 +3,15 @@
 .tags-overlay-box {
     top: auto;
     padding: 40px 15px 15px 15px;
-    background-image: linear-gradient(transparent, white, white);
     overflow: hidden;
 
     .tags {
         width: max-content;
     }
+}
+
+.tags-gradient-background {
+    background-image: linear-gradient(transparent, white, white);
 }
 
 .tags {
