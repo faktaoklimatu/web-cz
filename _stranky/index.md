@@ -67,7 +67,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
         <h1 id="pages">Ostatní stránky</h1>
         <div class="row justify-content-md-center">
             <div class="col-md-6 col-lg-4">
-                <a href="/zdroje" class="preview-card card">
+                <a href="/zdroje" class="preview-card page-link-card card">
                     <div class="card-body">
                         <h5>Další zdroje a odkazy</h5>
                         <p class="card-text">Rozcestník odkazů na stránky vybraných výzkumných institucí, repozitářů dat i projektů vizualizujících data.</p>
@@ -76,7 +76,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                 </a>
             </div>
             <div class="col-md-6 col-lg-4">
-                <a href="/slovnik" class="preview-card card">
+                <a href="/slovnik" class="preview-card page-link-card card">
                     <div class="card-body">
                         <h5>Slovník pojmů</h5>
                         <p class="card-text">Stručný přehled nejčastěji používaných hesel a zkratek s krátkým vysvětlením či komentářem. Slovník postupně doplňujeme.</p>
@@ -85,7 +85,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                 </a>
             </div>
             <div class="col-md-6 col-lg-4">
-                <a href="/aktuality" class="preview-card card">
+                <a href="/aktuality" class="preview-card page-link-card card">
                     <div class="card-body">
                         <h5>Aktuality</h5>
                         <p class="card-text">Stručný přehled novinek, oprav a aktualizací na našem webu.</p>
@@ -94,7 +94,7 @@ Najít data vědeckých či statistických institucí a zorientovat se v nich, t
                 </a>
             </div>
             <div class="col-md-6 col-lg-4">
-                <a href="/jak-pouzivat" class="preview-card card">
+                <a href="/jak-pouzivat" class="preview-card page-link-card card">
                     <div class="card-body">
                         <h5>Jak používat naše materiály</h5>
                         <p class="card-text">Instrukce, jak správně používat a citovat naše infografiky a datasety. Také kontaktní informace pro případ zájmu o konzultaci nebo spolupráci.</p>

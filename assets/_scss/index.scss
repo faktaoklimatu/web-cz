@@ -50,13 +50,14 @@
     }
 }
 
-/* Homepage section customizations */
-
 .preview-card {
     margin: 15px 0 15px 0;
     border-width: 2px;
     text-decoration: none;
     text-align: left;
+    // enforce 10:7 aspect ratio
+    height: 0;
+    padding-bottom: 70%;
 }
 
 a.preview-card:hover {
@@ -67,4 +68,12 @@ a.preview-card:hover {
 .card-dataset-overlay {
     background-color: rgba(255, 255, 255, 0.9);
     bottom: auto;
+}
+
+// Temporary solution to not force aspect ratio here
+// Page links will probably not be cards in the future
+
+.page-link-card {
+        height: auto;
+        padding-bottom: 0;
 }
