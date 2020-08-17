@@ -28,13 +28,13 @@ slug: index
 <div class="section"><div class="container" markdown="1">
 
 {:#{{ index_tag.id }}}
-# {{ index_tag.name-long | capitalize }}
+# [{{ index_tag.name-long | capitalize }}](/temata/{{ index_tag.id }})
 
 {:.lead}
 {{ index_tag.description | markdownify }}
 
 {% assign infographics = site.infografiky | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
-{% include preview-blocks.html blocks=infographics %}
+{% include preview-blocks.html blocks=infographics tag=index_tag limit=6 %}
 
 </div></div>
 {% endfor %}

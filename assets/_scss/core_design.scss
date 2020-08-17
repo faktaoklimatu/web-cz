@@ -20,10 +20,13 @@ h1 {
 
     a {
         text-decoration: none;
-        &:hover {
-            text-decoration: none;
-            color: $c-primary;
-        }
+    }
+}
+
+h1#home a:hover {
+    &:hover {
+        text-decoration: none;
+        color: $c-primary;
     }
 }
 

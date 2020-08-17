@@ -74,6 +74,21 @@ a.preview-card:hover {
 // Page links will probably not be cards in the future
 
 .page-link-card {
-        height: auto;
-        padding-bottom: 0;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.more-overlay-box {
+    overflow: hidden;
+    background-image: radial-gradient(white 30%, rgba(255,255,255,0.8) 60%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+
+    i { // Font Awesome icon
+        padding-bottom: 0.2em;
+        font-size: 300%;
+    }
 }
