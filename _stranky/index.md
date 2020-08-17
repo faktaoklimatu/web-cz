@@ -33,34 +33,11 @@ slug: index
 {:.lead}
 {{ index_tag.description | markdownify }}
 
-{% assign infographics = site.infografiky | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
-{% include preview-blocks.html blocks=infographics tag=index_tag limit=6 %}
+{% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
+{% include preview-blocks.html blocks=objects tag=index_tag limit=6 %}
 
 </div></div>
 {% endfor %}
-
-<div class="section"><div class="container" markdown="1">
-
-{:#studie}
-# Studie, články, analýzy
-
-{:.lead}
-Zde pro vás vybíráme nejdůležitější studie, články a analýzy týkající se změn klimatu – vždy uvádíme, proč je studie důležitá, jaké jsou její hlavní závěry a další komentáře a poznámky.
-
-{% include preview-blocks.html blocks=site.studie %}
-
-</div></div>
-<div class="section"><div class="container" markdown="1">
-
-{:#datasety}
-# Naše datasety
-
-{:.lead}
-Najít data vědeckých či statistických institucí a zorientovat se v nich, to je velký kus naší práce. Její výsledek dáváme k dispozici v této sekci s přehledem našich datasetů. V sekci _Naše datasety_ odkazujeme na původní zdroje a vysvětlujeme, jak přesně z těchto dat vycházejí naše infografiky. Můžou vám pomoci jak hlouběji pochopit fakta, tak při tvorbě vašich vlastních materiálů.
-
-{% include preview-blocks.html blocks=site.datasety %}
-
-</div></div>
 
 <div class="section">
     <div class="container">
