@@ -23,6 +23,19 @@ slug: index
     </div>
 </div>
 
+<div class="section"><div class="container" markdown="1">
+
+{:#new}
+# Nejnovější grafiky, studie a datasety
+
+{:.lead}
+Zajímá vás, co máme nové? V této sekci vždy najdete výběr těch nejnovějších infografik, výtahů studií a datasetů z naší dílny. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
+
+{% assign objects = site.infografiky | concat: site.studie | concat: site.datasety | sort: "published" | reverse %}
+{% include preview-blocks.html blocks=objects tag="news" limit=6 %}
+
+</div></div>
+
 {% assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" %}
 {% for index_tag in sorted_index_tags %}
 <div class="section"><div class="container" markdown="1">
