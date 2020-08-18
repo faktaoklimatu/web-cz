@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
+published:  2020-04-19
 weight:     50
 tags-scopes: [ svet ]
 tags-topics: [ emise ]

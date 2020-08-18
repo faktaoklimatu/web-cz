@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů států EU"
 slug:       "emise-eu"
 redirect_from: "/emise-eu"
+published:  2019-08-22
 weight:     95
 tags-scopes: [ eu ]
 tags-topics: [ emise ]

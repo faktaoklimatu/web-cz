@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Mapa změny teploty mezi lety 1961–2019"
 slug:       "mapa-zmeny-teploty"
 redirect_from: "/mapa-zmeny-teploty"
+published:  2020-02-27
 weight:     99
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

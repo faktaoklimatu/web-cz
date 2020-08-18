@@ -2,6 +2,7 @@
 layout:     study
 title:      "Charneyho zpráva"
 slug:       1979_charneyho-zprava
+published:  2019-08-22
 weight:     200
 tags-scopes: [ svet ]
 tags-topics: [ klima, emise ]

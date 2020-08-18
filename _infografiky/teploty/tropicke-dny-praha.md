@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Tropické a ledové dny v Praze-Ruzyni"
 slug:       "tropicke-dny-praha"
 redirect_from: "/tropicke-dny-praha"
+published:  2020-05-13
 weight:     110
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

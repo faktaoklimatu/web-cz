@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
 redirect_from: "/emise-svet"
+published:  2019-10-28
 weight:     94
 tags-scopes: [ svet ]
 tags-topics: [ emise ]

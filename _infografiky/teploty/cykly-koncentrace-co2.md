@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Cykly koncentrací CO₂ a O₂ v atmosféře"
 slug:       "cykly-koncentrace-co2"
 redirect_from: "/cykly-koncentrace-co2"
+published:  2020-07-30
 weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

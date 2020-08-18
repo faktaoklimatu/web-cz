@@ -2,6 +2,7 @@
 layout:     study
 title:      "Globální zpráva o elektřině 2020"
 slug:       2020_globalni-zprava-o-elektrine
+published:  2020-05-22
 weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ energetika, emise ]

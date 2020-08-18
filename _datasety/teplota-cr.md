@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Teplota ČR"
 slug:       "teplota-cr"
+published:  2020-04-19
 weight:     30
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

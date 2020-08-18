@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Tropické a ledové dny – Praha, Brno"
 slug:       "tropicke-dny"
+published:  2020-05-24
 weight:     50
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

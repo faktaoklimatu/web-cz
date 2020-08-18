@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Trend nárůstu teplot v ČR v jednotlivých měsících"
 slug:       "trend-teplot-cr"
 redirect_from: "/trend-teplot-cr"
+published:  2019-07-23
 weight:     104
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

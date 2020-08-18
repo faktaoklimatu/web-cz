@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Tropické a ledové dny v Brně-Tuřanech"
 slug:       "tropicke-dny-brno"
 redirect_from: "/tropicke-dny-brno"
+published:  2020-05-13
 weight:     111
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

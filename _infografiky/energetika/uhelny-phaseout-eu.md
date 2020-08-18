@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Uhelný phase-out ve státech EU"
 slug:       "uhelny-phaseout-eu"
 redirect_from: "/uhelny-phaseout-eu"
+published:  2020-06-01
 weight:     92.6
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]

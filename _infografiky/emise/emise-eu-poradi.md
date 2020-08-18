@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Pořadí států EU podle emisí skleníkových plynů"
 slug:       "emise-eu-poradi"
 redirect_from: "/emise-eu-poradi"
+published:  2019-08-22
 weight:     99
 tags-scopes: [ eu ]
 tags-topics: [ emise ]

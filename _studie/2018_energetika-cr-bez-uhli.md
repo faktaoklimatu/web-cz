@@ -2,6 +2,7 @@
 layout:     study
 title:      "Česká energetika bez uhlí"
 slug:       2018_energetika-cr-bez-uhli
+published:  2019-08-22
 weight:     160
 tags-scopes: [ cr ]
 tags-topics: [ opatreni, energetika, emise ]

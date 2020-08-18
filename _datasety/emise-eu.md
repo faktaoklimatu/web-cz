@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Emise skleníkových plynů EU"
 slug:       "emise-eu"
+published:  2020-04-19
 weight:     60
 tags-scopes: [ eu ]
 tags-topics: [ emise ]

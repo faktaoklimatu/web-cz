@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů v ČR podle sektorů detailně"
 slug:       "emise-cr-detail"
 redirect_from: "/emise-cr-detail"
+published:  2019-07-20
 weight:     97
 tags-scopes: [ cr ]
 tags-topics: [ emise ]

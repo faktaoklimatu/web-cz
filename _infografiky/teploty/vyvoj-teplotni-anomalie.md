@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Vývoj světové teplotní anomálie"
 slug:       "vyvoj-teplotni-anomalie"
 redirect_from: "/vyvoj-teplotni-anomalie"
+published:  2019-08-03
 weight:     97
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
