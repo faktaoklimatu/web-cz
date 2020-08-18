@@ -32,7 +32,7 @@ slug: index
 Zajímá vás, co máme nové? V této sekci vždy najdete výběr těch nejnovějších infografik, výtahů studií a datasetů z naší dílny. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
 
 {% assign objects = site.infografiky | concat: site.studie | concat: site.datasety | sort: "published" | reverse %}
-{% include preview-blocks.html blocks=objects tag="news" limit=6 %}
+{% include preview-blocks.html blocks=objects link="news" limit=6 %}
 
 </div></div>
 
@@ -47,7 +47,7 @@ Zajímá vás, co máme nové? V této sekci vždy najdete výběr těch nejnov�
 {{ index_tag.description | markdownify }}
 
 {% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
-{% include preview-blocks.html blocks=objects tag=index_tag limit=6 %}
+{% include preview-blocks.html blocks=objects link=index_tag limit=6 %}
 
 </div></div>
 {% endfor %}

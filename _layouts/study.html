@@ -44,6 +44,17 @@
         {{ content }}
       </div>
     </div>
+    {% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains page.tags-topics[0]"
+    | where_exp:"item","item.slug != page.slug" %}
+    {% if objects.size > 0 %}
+    <div class="section">
+      <div class="container">
+        <h2>Související infografiky a studie</h2>
+        <p>Zaujala vás tato studie? Prozkoumejte další související infografiky a studie:</p>
+        {% include preview-blocks.html blocks=objects limit=3 %}
+      </div>
+    </div>
+    {% endif %}
   </main>
   {% include footer.html %}
   {% include scripts.html %}
