@@ -1,10 +1,13 @@
 {% if include.blocks %}
 <div class="row justify-content-md">
-{% assign sorted_blocks = include.blocks | sort: 'weight' %}
-{% for item in sorted_blocks limit:include.limit %}
+{% for item in include.blocks limit:include.limit %}
     <div class="col-md-6 col-lg-4">
         {% if forloop.index == include.limit %}
-        <a href="{{ site.baseurl }}/temata/{{ include.tag.id }}" class="preview-card card">
+            {% if include.tag == "news" %}
+            <a href="{{ site.baseurl }}/aktuality" class="preview-card card">
+            {% else %}
+            <a href="{{ site.baseurl }}/temata/{{ include.tag.id }}" class="preview-card card">
+            {% endif %}
         {% else %}
         <a href="{{ item.url }}" class="preview-card card">
         {% endif %}
@@ -37,8 +40,13 @@
             {% if forloop.index == include.limit %}
                 <div class="card-img-overlay more-overlay-box">
                     <div>
-                        <i class="fas fa-angle-double-right"></i>
-                        <p>Další infografiky, studie a datasety k tématu <em>{{ include.tag.name-long }}</em>...</p>
+                        {% if include.tag == "news" %}
+                            <i class="fas fa-newspaper"></i>
+                            <p>Zobrazit celý přehled novinek, oprav a aktualizací...</p>
+                        {% else %}
+                            <i class="fas fa-angle-double-right"></i>
+                            <p>Další infografiky, studie a datasety k tématu <em>{{ include.tag.name-long }}</em>...</p>
+                        {% endif %}
                     </div>
                 </div>
             {% endif %}
