@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Vývoj změny teploty světa"
 slug:       "vyvoj-teplota-svet"
+published:  2020-04-19
 weight:     40
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

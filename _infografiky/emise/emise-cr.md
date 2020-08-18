@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů ČR"
 slug:       "emise-cr"
 redirect_from: "/emise-cr"
+published:  2019-07-20
 weight:     98
 tags-scopes: [ cr ]
 tags-topics: [ emise ]

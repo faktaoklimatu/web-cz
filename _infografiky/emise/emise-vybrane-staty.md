@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Srovnání emisí skleníkových plynů na obyvatele"
 slug:       "emise-vybrane-staty"
 redirect_from: "/emise-vybrane-staty"
+published:  2019-07-23
 weight:     96
 tags-scopes: [ eu ]
 tags-topics: [ emise ]

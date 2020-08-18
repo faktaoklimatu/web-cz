@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů Evropské unie"
 slug:       "emise-eu-na-osobu"
 redirect_from: "/emise-eu-na-osobu"
+published:  2020-01-19
 weight:     92
 tags-scopes: [ eu ]
 tags-topics: [ emise ]

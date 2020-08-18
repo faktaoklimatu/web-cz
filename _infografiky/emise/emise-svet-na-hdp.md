@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise světových regionů přepočtené na HDP"
 slug:       "emise-svet-na-hdp"
 redirect_from: "/emise-svet-na-hdp"
+published:  2020-03-31
 weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ emise, ekonomika ]

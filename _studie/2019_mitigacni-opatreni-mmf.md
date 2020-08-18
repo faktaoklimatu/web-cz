@@ -2,6 +2,7 @@
 layout:     study
 title:      "Jak zmírnit dopady klimatické změny"
 slug:       2019_mitigacni-opatreni-mmf
+published:  2019-12-03
 weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, emise ]

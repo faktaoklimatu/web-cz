@@ -2,6 +2,7 @@
 layout:     study
 title:      "Sternova zpráva"
 slug:       2006_sternova-zprava
+published:  2019-10-16
 weight:     180
 tags-scopes: [ svet ]
 tags-topics: [ ekonomika ]

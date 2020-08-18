@@ -2,6 +2,7 @@
 layout:     dataset
 title:      "Mapa změny teploty světa"
 slug:       "mapa-teplota-svet"
+published:  2020-04-19
 weight:     20
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

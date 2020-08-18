@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Elektřina v ČR: výroba, spotřeba a emise"
 slug:       "elektrina-cr"
 redirect_from: "/elektrina-cr"
+published:  2020-06-01
 weight:     93
 tags-scopes: [ cr ]
 tags-topics: [ energetika ]

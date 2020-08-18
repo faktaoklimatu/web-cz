@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Emise světových regionů přepočtené na osobu"
 slug:       "emise-svet-na-osobu"
 redirect_from: "/emise-svet-na-osobu"
+published:  2020-01-20
 weight:     89
 tags-scopes: [ svet ]
 tags-topics: [ emise ]

@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Výroba elektřiny ve světových regionech"
 slug:       "elektrina-svet"
 redirect_from: "/elektrina-svet"
+published:  2020-06-01
 weight:     92.2
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]

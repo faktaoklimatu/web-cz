@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Vývoj koncentrace CO₂ v atmosféře"
 slug:       "koncentrace-co2"
 redirect_from: "/koncentrace-co2"
+published:  2019-08-13
 weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

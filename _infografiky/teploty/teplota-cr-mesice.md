@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Průměrná teplota v ČR v jednotlivých měsících"
 slug:       "teplota-cr-mesice"
 redirect_from: "/teplota-cr-mesice"
+published:  2019-07-20
 weight:     105
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

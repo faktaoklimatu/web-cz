@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Proč je oteplení o více než 1,5 °C problém? [3/3]"
 slug:       "body-zlomu-3"
 redirect_from: "/body-zlomu-3"
+published:  2019-11-04
 weight:     99
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost ]

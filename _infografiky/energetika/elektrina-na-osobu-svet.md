@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Výroba elektřiny na osobu ve světových regionech"
 slug:       "elektrina-na-osobu-svet"
 redirect_from: "/elektrina-na-osobu-svet"
+published:  2020-06-01
 weight:     92.3
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]

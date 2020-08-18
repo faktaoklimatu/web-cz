@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Světová teplotní anomálie za 22 000 let"
 slug:       "teplota-22000-let"
 redirect_from: "/teplota-22000-let"
+published:  2020-07-30
 weight:     100
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

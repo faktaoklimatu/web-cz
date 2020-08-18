@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Výroba elektřiny na osobu ve státech EU"
 slug:       "elektrina-na-osobu-eu"
 redirect_from: "/elektrina-na-osobu-eu"
+published:  2020-06-01
 weight:     92.5
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]

@@ -3,6 +3,7 @@ layout:     infographic
 title:      "Zpoplatnění emisí: rozšíření ve světě"
 slug:       "zpoplatneni-emisi-svet"
 redirect_from: "/zpoplatneni-emisi-svet"
+published:  2020-02-24
 weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, ekonimika ]
