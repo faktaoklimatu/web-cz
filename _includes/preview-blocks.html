@@ -38,7 +38,7 @@
                 <p>Unknown layout.</p>
             {% endcase %}
             {% if forloop.index == include.limit and include.link %}
-                <div class="card-img-overlay more-overlay-box">
+                <div class="card-img-overlay more-overlay-box {% if include.link == "news" %}news-overlay-box{% endif %}">
                     <div>
                         {% if include.link == "news" %}
                             <i class="fas fa-newspaper"></i>

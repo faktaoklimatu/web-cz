@@ -23,13 +23,13 @@ slug: index
     </div>
 </div>
 
-<div class="section"><div class="container" markdown="1">
+<div class="section section-new"><div class="container" markdown="1">
 
 {:#new}
-# Nejnovější grafiky, studie a datasety
+# Nejnovější materiály
 
 {:.lead}
-Zajímá vás, co máme nové? V této sekci vždy najdete výběr těch nejnovějších infografik, výtahů studií a datasetů z naší dílny. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
+Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky, výtahy studií a datasety. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
 
 {% assign objects = site.infografiky | concat: site.studie | concat: site.datasety | sort: "published" | reverse %}
 {% include preview-blocks.html blocks=objects link="news" limit=6 %}
