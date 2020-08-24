@@ -45,7 +45,7 @@
       </div>
     </div>
     {% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains page.tags-topics[0]"
-    | where_exp:"item","item.slug != page.slug" %}
+    | where_exp:"item","item.slug != page.slug" | sample: 3 %}
     {% if objects.size > 0 %}
     <div class="section">
       <div class="container">
