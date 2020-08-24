@@ -3,7 +3,7 @@ layout:     study
 title:      "Globální zpráva o elektřině 2020"
 slug:       2020_globalni-zprava-o-elektrine
 published:  2020-05-22
-weight:     80
+weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ energetika, emise ]
 caption:    "Zpráva nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě oproti předchozím rokům."

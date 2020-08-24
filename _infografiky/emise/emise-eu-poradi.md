@@ -4,7 +4,7 @@ title:      "Pořadí států EU podle emisí skleníkových plynů"
 slug:       "emise-eu-poradi"
 redirect_from: "/emise-eu-poradi"
 published:  2019-08-22
-weight:     99
+weight:     60
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele."

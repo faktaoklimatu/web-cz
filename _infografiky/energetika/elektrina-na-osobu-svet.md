@@ -4,7 +4,7 @@ title:      "Výroba elektřiny na osobu ve světových regionech"
 slug:       "elektrina-na-osobu-svet"
 redirect_from: "/elektrina-na-osobu-svet"
 published:  2020-06-01
-weight:     92.3
+weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
