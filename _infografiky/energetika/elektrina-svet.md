@@ -4,7 +4,7 @@ title:      "Výroba elektřiny ve světových regionech"
 slug:       "elektrina-svet"
 redirect_from: "/elektrina-svet"
 published:  2020-06-01
-weight:     92.2
+weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Vývoj celkové vyrobené elektřiny ve světě podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v TWh za rok."
