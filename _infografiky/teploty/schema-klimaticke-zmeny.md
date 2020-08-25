@@ -30,7 +30,13 @@ data-orig:	[ ]
 
 * Zvyšující se teploty stojí rovněž za táním horských ledovců v Alpách, Himalájích, Andách a dalších světových pohořích. To bude mít zásadní dopad na zemědělství a zásoby vody, neboť v mnoha oblastech světa jsou řeky napájeny z tajících horských ledovců.
 
-## Technické komentáře
+## Podrobnější diskuse schématu a jeho některých zjednodušení
+
+Toto schéma má sloužit k základní orientaci v problematice probíhající klimatické změny a nemůže tedy ukazovat úplnou komplexnost problému. Zde proto podrobněji zmíníme o aspekty, ve kterých je schéma zjednodušující, nebo které vyžadují další komentář.   
+
+* Schéma zachycuje dlouhodbý pohled (*klima*) a nevěnuje se krátkodobým změnám (*počasí*). Stejně tak schéma neukazuje dynamickou povahu proudění v atmosféře a oceánech, která zásadně ovlivňuje distribuci tepla a srážek. K podrobnějšímu zachycení dynamické povahy jsou potřeba počítačové modely klimatu, které modelují časový vývoj atmosférických a oceánských proudění i jejich interakce. Ve schématu je toto dynamické ovlivňování pouze naznačeno oboustranou šipkou mezi teplotami vzduchu teplotami oceánů. 
+
+* Schéma neukazuje tzv. cyklické zpětné vazby, jako například [*Ice-Albedo feedback*](https://en.wikipedia.org/wiki/Ice%E2%80%93albedo_feedback), kdy roztátí mořského ledu vede k odhalení volné hladiny, která pohlcuje více slunečního záření a tedy způsobuje zvýšení teploty vody a další tání ledu. Tato zpětná vazba je pouze naznačena oboustranou šipkou. Jako vhodný rozcestník mohou posloužit třeba stránky anglické wikipedie o [zpětných vazbách v klimatickém systému](https://en.wikipedia.org/wiki/Climate_change_feedback).
 
 * Oxid uhličitý v průmyslu vzniká jednak spalováním fosilních paliv při zahřívání (tavení, destilace, sušení apod.) a jednak při některých chemických reakcích např. při výrobě cementu nebo železa. Pokud se emise třídí podle těchto kritérií, pak například část emisí z výroby cementu bude započítána jako "průmyslové procesy", zatímco druhá část, která souvisí se zahříváním na vysokou teplotu, bude započítána jako "spalování v průmyslu". 
 
