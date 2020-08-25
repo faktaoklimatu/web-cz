@@ -3,11 +3,13 @@ layout:     infographic
 title:      "Adaptační strategie České republiky"
 slug:       "adaptacni-strategie-cr"
 redirect_from: "/adaptacni-strategie-cr"
+published:  2020-08-25
 weight:     99
-tags:       [ opatreni ]
+tags-scopes: [ cr ]
+tags-topics: [ opatreni, ekonomika ]
 caption:    "Adaptační strategie České republiky je dokument shrnující dopady změny klimatu na život v České republice a navrhuje adaptační opatření jejichž cílem je zmírnění dopadů změny klimatu. Naše infografika poskytuje shrnutí nejdůležitějších aspektů národní adaptační strategie, odkazuje na zdroje mapující dopady jednotlivých projevý změny klimatu, ukazuje příklady již existujících opatření."
 data-our:   "https://docs.google.com/spreadsheets/d/18YAJuU9SLfiAuFPqBjXR7d39-k_0kCJ6DZattEgyURQ/edit#gid=0"
-data-orig:	[ [ "Strategie přizpůsobení se změně klimatu v podmínkách ČR", "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf" ] ]
+data-orig:	[ [ "Strategie ČR", "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf" ] ]
 ---
 
 ## Shrnutí
@@ -34,7 +36,7 @@ Financování adaptační strategie probíhá formou evropských a národních d
 * [Program péče o krajinu](http://www.dotace.nature.cz/ppk-programy.html)
 * [Program prevence před povodněmi III](http://www.dotace.nature.cz/129-260.html))
 * [Programu rozvoje venkova](https://www.szif.cz/cs/prv2014)
-* [Operační program životního prostředí](https://www.opzp.cz/) 
+* [Operační program životního prostředí](https://www.opzp.cz/)
 * [Program Evropské unie LIFE](https://www.program-life.cz/).
 
 **Aktuální seznam všech dostupných dotačních programů naleznete na stránkách [Agentury ochrany přírody a krajiny ČR](http://www.dotace.nature.cz/) (AOPK).**
@@ -81,7 +83,7 @@ Zemědělství trpí vlivem projevů změny klimatu zvýšenou nejistotou dosaž
 
 ### Inspirace
 
-Podle [Jiřího Musila](https://inodpady.cz/takove-mohou-byt-plody-digitalizace-ceskeho-zemedelstvi/) ze společnosti Agdata, českého dodavatele technologií pro chytré zemědělství, šetří digitalizace zemědělství zhruba 50 % člověkohodin měsíčně. To například pro malou farmu může znamenat náklady na jednu mzdu.  
+Podle [Jiřího Musila](https://inodpady.cz/takove-mohou-byt-plody-digitalizace-ceskeho-zemedelstvi/) ze společnosti Agdata, českého dodavatele technologií pro chytré zemědělství, šetří digitalizace zemědělství zhruba 50 % člověkohodin měsíčně. To například pro malou farmu může znamenat náklady na jednu mzdu.
 
 ## Vodní hospodářství
 
@@ -172,7 +174,7 @@ Důraz adaptačních opatření je kladen zejména na osvětu všech účastník
 
 ### Ekonomické aspekty
 
-Některé pesimistické [prognózy](https://zpravy.aktualne.cz/zahranici/spatna-zprava-pro-lyzare-z-alp-bude-mizet-snih-varuji-vedci/r~33521e4a0fce11e7b7fa0025900fea04/) předvídají, že alpské rezorty by mohly do roku 2099 přijít až o 70 % sněhu. 
+Některé pesimistické [prognózy](https://zpravy.aktualne.cz/zahranici/spatna-zprava-pro-lyzare-z-alp-bude-mizet-snih-varuji-vedci/r~33521e4a0fce11e7b7fa0025900fea04/) předvídají, že alpské rezorty by mohly do roku 2099 přijít až o 70 % sněhu.
 
 I u optimistického scénáře vývoje klimatu lze předpokládat, že k hlavním zasaženým územím by patřily právě oblasti
 soustředěného cestovního ruchu ([ASČR str. 87](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=87)). Takový scénář by měl velmi negativní důsledky pro české podnikatele a firmy závislé na zimní turistice.
