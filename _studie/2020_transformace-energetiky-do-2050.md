@@ -3,7 +3,7 @@ layout:     study
 title:      "Transformace energetiky do 2050"
 slug:       2020_transformace-energetiky-do-2050
 published:  2020-05-31
-weight:     90
+weight:     96
 tags-scopes: [ svet ]
 tags-topics: [ energetika, opatreni ]
 caption:    "Zpráva srovnává možné scénáře vývoje energetiky a ukazuje náklady a dopady transformačního scénáře."

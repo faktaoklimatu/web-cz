@@ -4,7 +4,7 @@ title:      "Emise skleníkových plynů Evropské unie"
 slug:       "emise-eu-na-osobu"
 redirect_from: "/emise-eu-na-osobu"
 published:  2020-01-19
-weight:     92
+weight:     96
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Srovnání ročních emisí skleníkových plynů států Evropské unie, vyjádřeno na obyvatele i za celou populaci."
