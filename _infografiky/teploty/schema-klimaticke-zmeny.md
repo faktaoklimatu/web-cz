@@ -8,8 +8,6 @@ weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Klimatická změna není jen nárůst teploty – jde o souhrnný pojem pro řadu vzájemně provázaných jevů. Změna jednoho faktoru, například zvýšení koncentrace CO<sub>2</sub> v atmosféře, vyvolává dlouhý řetězec příčin a následků."
-data-our:   ""
-data-orig:	[ ]
 ---
 
 ## Základní výklad (Jak číst tento graf?)

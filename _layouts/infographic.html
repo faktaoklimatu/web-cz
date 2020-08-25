@@ -28,9 +28,11 @@
                 {% include infographic-dataset-sidebar.html section="downloads" %}
                 <hr />
 
-                <h2>Podkladová data</h2>
-                {% include infographic-dataset-sidebar.html section="data" %}
-                <hr />
+                {% if page.dataset or page.data-our or page.data-orig %}
+                  <h2>Podkladová data</h2>
+                  {% include infographic-dataset-sidebar.html section="data" %}
+                  <hr />
+                {% endif %}
 
                 <h2>Sdílení a licence</h2>
                 <p>Všechny naše infografiky jsou k dispozici pro <a href="/jak-pouzivat" title="Jak používat naše materiály">další použití</a> pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" title="Creative Commons Uveďte původ 4.0 Mezinárodní" rel="license">CC BY 4.0</a>.</p>
