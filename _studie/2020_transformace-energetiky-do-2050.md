@@ -5,7 +5,7 @@ slug:       2020_transformace-energetiky-do-2050
 published:  2020-05-31
 weight:     90
 tags-scopes: [ svet ]
-tags-topics: [ energetika ]
+tags-topics: [ energetika, opatreni ]
 caption:    "Zpráva srovnává možné scénáře vývoje energetiky a ukazuje náklady a dopady transformačního scénáře."
 intro:      "Zpráva Mezinárodní agentury pro obnovitelnou energii vydaná v dubnu 2020 je shrnutím předchozích zpráv agentury a dílčích studií. Podrobně zkoumá možný scénář transformace energetiky do roku 2050, srovnává jej s jinými scénáři budoucího vývoje a vyčísluje očekávané náklady a dopady scénářů na HDP, zaměstnanost a další socioekonomické ukazatele na úrovni světových regionů.
 
