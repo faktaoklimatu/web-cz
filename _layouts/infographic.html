@@ -48,13 +48,15 @@
                   </div>
                 </div>
                 <hr class="w-100 my-0">
-                <div class="d-flex d-lg-none align-items-center text-secondary">
-                  <div>Data</div>
-                  <div class="ml-auto text-right">
-                    {% include infographic-dataset-sidebar.html section="data" %}
+                {% if page.dataset or page.data-our or page.data-orig %}
+                  <div class="d-flex d-lg-none align-items-center text-secondary">
+                    <div>Data</div>
+                    <div class="ml-auto text-right">
+                      {% include infographic-dataset-sidebar.html section="data" %}
+                    </div>
                   </div>
-                </div>
-                <hr class="w-100 my-0">
+                  <hr class="w-100 my-0">
+                {% endif %}
                 <div class="d-flex d-lg-none align-items-center text-secondary">
                   <div>Sdílení</div>
                   <div class="ml-auto text-right">
