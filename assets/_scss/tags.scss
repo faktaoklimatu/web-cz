@@ -11,7 +11,7 @@
 }
 
 .tags-gradient-background {
-    background-image: linear-gradient(transparent, white, white);
+    background-image: linear-gradient(rgba(255,255,255,0), white 80%);
 }
 
 .tags {
@@ -23,6 +23,7 @@
     margin: 0;
     padding: 0.15rem 0.5rem;
     border-radius: 1em;
+    background-color: white;
     color: $c-grey;
     border-color: $c-grey;
 }
