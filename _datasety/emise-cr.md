@@ -6,24 +6,19 @@ published:  2020-04-19
 weight:     70
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
-caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2016 a data ze systému emisních povolenek za rok 2016."
-data-our:    "https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit?usp=sharing"
+caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2018 a data ze systému emisních povolenek za rok 2018."
+data-our:    "https://docs.google.com/spreadsheets/d/17HOhx8aSDhWUY_dAE2f21GcBT510t5dd9LsXuFEMs_M/edit?usp=sharing"
 data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ]
-            , ["European Commission", "https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2016_en.xlsx" ] ]
+            , ["European Commission", "https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2018_en.xlsx" ] ]
 ---
 <div class="section"><div class="container" markdown="1">
 
-## Emise skleníkových plynů za rok 2016
-
-{% include warning.html
-    title="Tato data nejsou úplně nejnovější"
-    text="V současnosti už jsou pro emise skleníkových plynů k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali."
-%}
+## Emise skleníkových plynů za rok 2018
 
 <div class="row"><div class="col-md-6">
 {% include data-header.html
     name="Eurostat"
-    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2016 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
+    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2018 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
     url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
@@ -44,17 +39,12 @@ Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je ome
 </div></div>
 <div class="section"><div class="container" markdown="1">
 
-## Data ze systému emisních povolenek za rok 2016
-
-{% include warning.html
-    title="Tato data nejsou úplně nejnovější"
-    text="V současnosti už jsou pro data emisních povolenek k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali."
-%}
+## Data ze systému emisních povolenek za rok 2018
 
 {% include data-header.html
     name="Evropská komise"
-    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2016."
-    url="https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2016_en.xlsx"
+    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2018."
+    url="https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2018_en.xlsx"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
     licence-proof="https://ec.europa.eu/info/legal-notice_en"
