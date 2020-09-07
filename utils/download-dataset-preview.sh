@@ -21,7 +21,7 @@ trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
 SRC_FILE_MD=$1
 DST_FILE_PNG=$2
 
-SRC_URL=`cat $SRC_FILE_MD | grep "^dataset-url:" | sed 's/^dataset-url:[ \t]*//'`
+SRC_URL=`cat $SRC_FILE_MD | grep "^data-our:" | sed 's/^data-our:[ \t]*//'`
 
 # echo "Downloading preview of $SRC_FILE_MD to $DST_FILE_PNG ..."
 echo firefox --screenshot $DST_FILE_PNG --window-size=1200,800 $SRC_URL
