@@ -8,7 +8,6 @@ weight:     99
 tags-scopes: [ cr ]
 tags-topics: [ opatreni, ekonomika ]
 caption:    "Adaptační strategie České republiky je dokument shrnující dopady změny klimatu na život v České republice a navrhuje adaptační opatření jejichž cílem je zmírnění dopadů změny klimatu. Naše infografika poskytuje shrnutí nejdůležitějších aspektů národní adaptační strategie, odkazuje na zdroje mapující dopady jednotlivých projevý změny klimatu, ukazuje příklady již existujících opatření."
-data-our:   "https://docs.google.com/spreadsheets/d/18YAJuU9SLfiAuFPqBjXR7d39-k_0kCJ6DZattEgyURQ/edit#gid=0"
 data-orig:	[ [ "Strategie ČR", "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf" ] ]
 ---
 
