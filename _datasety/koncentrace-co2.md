@@ -6,7 +6,7 @@ published:  2020-04-19
 weight:     10
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Dataset obsahuje tři různé datové řady lišící se časovým rozsahem, zdrojem dat i metodikou. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
+caption:    "Dataset obsahuje tři různé datové řady pro CO₂ lišící se časovým rozsahem, zdrojem dat i metodikou a jednu datovou řadu pro koncentrace O₂. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
 data-our:   "https://docs.google.com/spreadsheets/d/1DYrIsmgy_S6IIWGtsk55Jor6zSDrf6-qT8Og9n7oDoU/edit?usp=sharing"
 data-orig:	[ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
             , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
@@ -95,5 +95,19 @@ Přestože mnohé z vrtů obsahují záznamy z širšího časového období, te
 * 155–393 tisíc let BP: Vostok (Petit et al., 1999),
 * 393–611 tisíc let BP: Dome C (Siegenthaler et al., 2005),
 * 612–800 tisíc let BP: Dome C (Bereiter et al., 2014).
+
+</div></div>
+<div class="section"><div class="container" markdown="1">
+
+## Koncentrace O<sub>2</sub> na Mauna Loa, rok 1989–současnost
+
+{% include data-header.html
+    name="Scripps Institution of Oceanography"
+    description="Scripps O<sub>2</sub> Program, Atmospheric Oxygen Research."
+    url="https://scrippso2.ucsd.edu/index.html"
+    licence="otevřená vědecká data (licence není specifikovaná)"
+%}
+
+Tento dataset pochází z instrumentálního měření na sopce Mauna Loa na Havaji. Metodu pro velmi přesné měření koncentrací O<sub>2</sub> objevil v roce 1988 Ralph Keeling, syn Charlese Keelinga, a podrobně ji popsal ve své [disertační práci](http://bluemoon.ucsd.edu/publications/ralph/34_PhDthesis.pdf). Tato metoda spočívá v interferometrickém měření indexu lomu vzduchu, který je závislý na poměru koncentrací kyslíku a dusíku. Tento dataset tedy technicky obsahuje měření poměru koncentrace O<sub>2</sub>/N<sub>2</sub> a je udáván ve formě relativního rozdílu vůči referenčnímu vzorku přibližně z poloviny osmdesátých let (vynásobené milionem, proto je označována "per meg"). Přesnou definici této jednotky včetně převodu na ppm najdete na stránkách [Scrippsova O2 programu](http://scrippso2.ucsd.edu/units-and-terms.html). Podle těchto instrukcí jsme také převedli tato naměřená data na jednotky ppm, abychom je mohli srovnat s růstem koncentrace CO<sub>2</sub>.
 
 </div></div>
