@@ -19,22 +19,35 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
  * D.Archer, R.Pierrehumbert: [The Warming Papers](https://www.wiley.com/en-us/The+Warming+Papers%3A+The+Scientific+Foundation+for+the+Climate+Change+Forecast-p-9781405196161). 
 
 ## Více o jednotlivých událostech a objevech
-* 1824 *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall. 
-* 1859 *[John Tyndall]()*zkoumá pohlcování tepelného záření oxidem uhličitým a dochází k formulaci principů skleníkového efektu.
-* 1800 - 1880: První průmyslová revoluce. Rozvoj těžby uhlí, parní stroje, železnice způsobují nárůst emisí oxidu uhličitého. 
-* 1896 *[Svante Arrhenius]()* publikuje první výpočet síly skleníkového efektu. Jeho výpočet je z dnešního pohledu spíše odhad. Citlivost klimatu mu vychází 4 °C. 
-* 1920 - 1925 začíná těžba ropy v Texasu a Perském zálivu, začíná éra levné energie
-* 1938 *[Guy Stewart Callendar]()* dává do souvislosti pozorovaný nárůst teplot a emise CO2. Tvrdí, že oteplování je důsledkem skleníkového efektu. 
-* 1939 - 1945. Druhá světová válka. Strategie je zásadně ovlivňována snahou o kontrolu ropných polí. 
-* 1957 Roger Revelle ve svých výzkumech dochází k závěru, že oceán dokáže pohlcovat asi jen polovinu emisí CO2
-* 1960 Charles Keeling měří koncentrace CO2 v atmosféře a zjišťuje dlouhodobý nárůst: Tehdejší hodnoty jsou 315 ppm. (viz Keeling)
-* 1969 Přistání člověka na měsíci, lidé začínají vidět planetu jako křehký celek.
-* 1969 Satelity umožňují přesné měření teploty atmosféry ve velkých výškách a nad oceány. 
-* 1972 Vrty z ledovcových jader ukazují historické koncentrace CO2 a jejich vliv na střídání dob ledových a meziledových (viz CO2 800Kyr)
+
+* **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall. 
+
+* **1859:** *[John Tyndall](https://en.wikipedia.org/wiki/John_Tyndall#Molecular_physics_of_radiant_heat)* zkoumá pohlcování tepelného záření různými plyny. Jako první správně změřil absorpční koeficienty dusíku, kyslíku, oxidu uhličitého a dalších plynů a dochází k formulaci principů skleníkového efektu.
+
+* **1800 - 1880:** [Průmyslová revoluce](https://en.wikipedia.org/wiki/Industrial_Revolution) . Ačkoliv byl [parní stroj](https://en.wikipedia.org/wiki/Steam_engine) vynalezen roku 1698, trvalo ještě téměř celé století než se stal široce využívaným. Svou první aplikaci získal jako pumpa k odčerpávání vody z uhelných dolů a teprve později začal být používán k dopravě (vlaky a parní lodě) a k pohonu strojů v tehdy rychle rostoucím textilním průmyslu. Průmyslová revoluce probíhala v různých částech světa v různé době - začala v Anglii  a postupně se šířila v kontinentální Evropě a dále do USA, Japonska a kolonií. Období od roku 1850, kdy došlo k velkému rozšiřování výroby oceli, se někdy označuje jako druhá průmyslová revoluce. **Rozvoj těžby uhlí, parní stroje, železnice způsobují nárůst emisí oxidu uhličitého a zvyšování jeho koncentrací v atmosféře.** 
+
+* **1896:** *[Svante Arrhenius](https://en.wikipedia.org/wiki/Svante_Arrhenius#Greenhouse_effect)* publikuje [první výpočet](https://www.tandfonline.com/doi/abs/10.1080/14786449608620846) síly skleníkového efektu. Pomocí měření absorpce infračerveného záření měsíce zjišťuje, jak velká část je pohlcována vodní parou a oxidem uhličitým v atmosféře a odvozuje, že každé zdvojnásobení koncentrací oxidu uhličitého by mělo vést ke zvýšení teploty o stejnou teplotu. (neboli že teplota závisí na logaritmu koncentrace).Jeho výpočet je z dnešního pohledu spíše odhad, protože nijak nemodeluje proudění vzduchu a vody v atmosféře a řeší pouze změnu teploty vlivem změny koncentrací CO<sub>2</sub> a vodní páry. Citlivost klimatu - tedy hodnota, o kterou se zvýší průměrná teplota planety při zdvojnásobení koncentrací v CO<sub>2</sub> - mu vychází 4 °C. 
+
+* **1920 - 1925:** začíná těžba ropy v Texasu a Perském zálivu, začíná éra levné energie. Petrolej a ropa byly známy [od starověku](https://en.wikipedia.org/wiki/Petroleum#History). Teprve na začátku dvacátého století, díky vynálezu spalovacího motoru, začaly nacházet širší průmyslové využití. Objevy velkých ropných polí v [Texasu](https://en.wikipedia.org/wiki/Texas_oil_boom), [Perském zálivu](https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/the-discovery-of-oil-in-the-middle-east/) a dalších zemí umožňovaly levnou těžbu a v důsledku i levnou energii. 
+
+* **1938:** *[Guy Stewart Callendar](https://en.wikipedia.org/wiki/Guy_Stewart_Callendar#Research)* dává do souvislosti již tehdy pozorovaný nárůst teplot a rostoucí koncentrace CO<sub>2</sub>. Tvrdí, že oteplování je důsledkem skleníkového efektu. 
+
+* **1939 - 1945:** Druhá světová válka. Strategie je zásadně ovlivňována snahou o [kontrolu ropných polí](https://en.wikipedia.org/wiki/Oil_campaign_of_World_War_II). 
+
+* **1957:** *[Roger Revelle](https://en.wikipedia.org/wiki/Roger_Revelle#Global_warming)* spolu se svým doktorandem *Hansem Suessem* podrobně popsali chemické mechanismy absorpce oxidu uhličitého v oceánech a  také použili isotopovou analýzu uhlíku jako důkaz, že zvyšující se koncentrace CO<sub>2</sub> v atmosféře jsou důsledkem spalování fosilních paliv. Dochází k závěru, že oceán dokáže pohlcovat asi polovinu emisí CO<sub>2</sub>
+
+* **1960:** *[Charles Keeling](https://en.wikipedia.org/wiki/Charles_David_Keeling#Work_with_Scripps_Institution_of_Oceanography,_1958%E2%80%932005)* publikuje [první výsledky](https://scrippsco2.ucsd.edu/assets/publications/keeling_tellus_1960.pdf) svých měření koncentrací CO<sub>2</sub> v atmosféře. Ačkoliv se dlouho vědělo o tom, že se koncentrace oxidu uhličitého v atmosféře zvyšují, nebyla známa metoda, jak je změřit přesně. S tou přišel až Keeling v roce 1956 a v roce 1958 začíná budovat měřicí stanici na Mauna Loa na Hawai, uprostřed Tichého oceánu. Data z měření, která pokračují dodnes, jsou dostupná na stránkách [Scrippsova Oceanografického Institutu](https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html) a příběh Keelinových měření v [článku (Anal.Chem. 2010)](https://pubs.acs.org/doi/pdf/10.1021/ac1001492). Keelingův článek [Atmospheric carbon dioxide variations at Mauna Loa Observatory](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2153-3490.1976.tb00701.x) z roku 1976, shrnující výsledky šestnácti let měření koncentrací CO<sub>2</sub>, se stal jedním z nejvíce citovaných článků v klimatologii. 
+
+* **1967:** *Syokuro Manabe* a *Richard T. Wetherald* publikují výsledky počítačového modelování klimatu a odhadu citlivosti klimatu. Jejich článek [Thermal Equilibrium of the Atmosphere with a Given Distribution of Relative Humidity](https://journals.ametsoc.org/jas/article/24/3/241/17328/Thermal-Equilibrium-of-the-Atmosphere-with-a-Given) se stal nejcitovanějším článkem v klimatologii. Slo o první práci, kdy byl počítačový model zemského klimatu použit k odhadu důsledků zdvojnásobení CO<sub>2</sub> na světovou teplotu. Práce použila výrazně realističtější model zpětné vazby vodní páry (_water vapour feedack_) než kterékoliv předchozí výzkumy. 
+    
+
+* **1969:** Přistání člověka na měsíci, lidé začínají vidět planetu jako křehký celek.
+* **1969:** Satelity umožňují přesné měření teploty atmosféry ve velkých výškách a nad oceány. 
+* 1972 Vrty z ledovcových jader ukazují historické koncentrace CO<sub>2</sub> a jejich vliv na střídání dob ledových a meziledových (viz CO2 800Kyr)
 * 1975 objev ozonové díry
 * 1979 Akademie věd USA zveřejňuje tzv Charneyho zprávu, která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO2 povede k oteplení o 1.5-4v.5 °C se střední hodnotou 3 °C
 * 1981 Osobní počítače, ekonomický růst přestává být výlučně závislý na energetice
-* 1985 Mezinárodní vědecká konference ve Villachu deklaruje shodu mezi experty na tom, že globální oteplování se děje a měly by být přijaty mezinárodní dohody omezující emise CO2
+* 1985 Mezinárodní vědecká konference ve Villachu deklaruje shodu mezi experty na tom, že globální oteplování se děje a měly by být přijaty mezinárodní dohody omezující emise CO<sub>2</sub>
 * 1987 Mezinárodní dohoda “Montrealský protokol” omezuje emise látek narušujících ozonovou vrstvu
 * 1988 Ralph Keeling objevil metodu přesného měření koncentrace kyslíku v atmosféře
 * 2018 Speciální zpráva IPCC o oteplení podrobně zkoumá dosažitelnost hranice oteplení o 1.5 °C. Dochází k závěru, že při velkém snížení emisí je stále ještě možné udržet oteplení pod 1.5 °C.
