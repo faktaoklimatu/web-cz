@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Adaptační strategie České republiky"
 slug:       "adaptacni-strategie-cr"
 redirect_from: "/adaptacni-strategie-cr"
-published:  2020-08-25
+published:  2020-09-25
 weight:     99
 tags-scopes: [ cr ]
 tags-topics: [ opatreni, ekonomika ]
@@ -13,7 +13,7 @@ data-orig:	[ [ "Strategie ČR", "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_kl
 
 ## Shrnutí
 
-Strategie přizpůsobení se změně klimatu v podmínkách ČR je dokument definující adaptační strategii České republiky (ASČR), závazný pro zastupitele územně samosprávných celků (kraje, města, obce,...). Dokument obsahuje analýzu dopadů, adaptačních opatření, souvisejících legislativních a ekonomických aspektů pro oblasti, ve kterých se očekávají zásadní dopady změny klimatu například v zemědělství nebo v lesním hospodářství.
+Strategie přizpůsobení se změně klimatu v podmínkách ČR je dokument definující adaptační strategii České republiky (ASČR), závazný pro zastupitele územně samosprávných celků (kraje, města, obce, ...). Dokument obsahuje analýzu dopadů, adaptačních opatření, souvisejících legislativních a ekonomických aspektů pro oblasti, ve kterých se očekávají zásadní dopady změny klimatu například v zemědělství nebo v lesním hospodářství.
 
 Kromě jednotlivých resortů vlády se na vypracování a revizi dokumentu podíleli Český hydrometeorologický ústav (ČHMÚ), Univerzita Karlova a Akademie věd ČR.
 
