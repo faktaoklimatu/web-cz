@@ -41,11 +41,15 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 * **1967:** *Syokuro Manabe* a *Richard T. Wetherald* publikují výsledky počítačového modelování klimatu a odhadu citlivosti klimatu. Jejich článek [Thermal Equilibrium of the Atmosphere with a Given Distribution of Relative Humidity](https://journals.ametsoc.org/jas/article/24/3/241/17328/Thermal-Equilibrium-of-the-Atmosphere-with-a-Given) se stal nejcitovanějším článkem v klimatologii. Slo o první práci, kdy byl počítačový model zemského klimatu použit k odhadu důsledků zdvojnásobení CO<sub>2</sub> na světovou teplotu. Práce použila výrazně realističtější model zpětné vazby vodní páry (_water vapour feedack_) než kterékoliv předchozí výzkumy. 
     
 
-* **1969:** Přistání člověka na měsíci, lidé začínají vidět planetu jako křehký celek.
-* **1969:** Satelity umožňují přesné měření teploty atmosféry ve velkých výškách a nad oceány. 
+* **1969:** Přistání člověka na měsíci. Vesmírný program přinesl nejen výzkum prostoru mimo Zemi, od nízkých oběžných drah až po měsíc, ale také jiný pohled na naši planetu. Skrze fotky astronautů lidé poprvé vidí planetu jako celek, zjišťují, že při pohledu z vesmíru vypadá jako "modrá planeta". Ikonickou fotkou z té doby je [východ Země](https://en.wikipedia.org/wiki/Earthrise) nad povrchem měsíce. 
+
+* **1969:** Satelity umožňují přesné měření teploty atmosféry ve velkých výškách a nad oceány. [První meteorologické družice](https://en.wikipedia.org/wiki/Weather_satellite#History) byly vypouštěny na oběžnou dráhu v průběhu šedesátých let a postupně se podařilo měřeními teplot pokrýt oceány i vyšší vrstvy troposféry. Tyto data umožňily přesnější předpovědi počasí např. pro lodní dopravu, ale také přesnější stanovení rychlosti globálního oteplování. 
+
 * 1972 Vrty z ledovcových jader ukazují historické koncentrace CO<sub>2</sub> a jejich vliv na střídání dob ledových a meziledových (viz CO2 800Kyr)
 * 1975 objev ozonové díry
-* 1979 Akademie věd USA zveřejňuje tzv Charneyho zprávu, která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO2 povede k oteplení o 1.5-4v.5 °C se střední hodnotou 3 °C
+* 1979 Akademie věd USA zveřejňuje tzv Charneyho zprávu, která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO<sub>2</sub> povede k oteplení o 1.5-4.5 °C se střední hodnotou 3 °C
+
+
 * 1981 Osobní počítače, ekonomický růst přestává být výlučně závislý na energetice
 * 1985 Mezinárodní vědecká konference ve Villachu deklaruje shodu mezi experty na tom, že globální oteplování se děje a měly by být přijaty mezinárodní dohody omezující emise CO<sub>2</sub>
 * 1987 Mezinárodní dohoda “Montrealský protokol” omezuje emise látek narušujících ozonovou vrstvu
