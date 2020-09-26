@@ -7,7 +7,7 @@ published:  2020-09-20
 weight:     110
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "...myšlenky o skleníkovém efektu se objevily"
+caption:    " Skleníkový efekt je zkoumán více než 100let. První výpočty síly skleníkového efektu se objevily v devatenáctém století, měření a výpočty v průběhu dvacátého století je dále zpřesnily."
 dataset:    
 ---
 
@@ -49,15 +49,21 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 
 * **1975:** Objev ozónové díry. Okolo roku 1975 několik [výzkumých týmů](https://en.wikipedia.org/wiki/Ozone_depletion#Research_history)  konstatovalo, že chlor-fluorované uhlovodíky (CFC, freony) se kumulují a mění reakce ve stratosféře, čímž dochází k úbytku ozónu. Za tyto objevy byla v roce 1995 udělena Nobelova cena za Chemii.  
 
-* **1979:** Akademie věd USA zveřejňuje tzv Charneyho zprávu, která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO<sub>2</sub> povede k oteplení o 1.5-4.5 °C se střední hodnotou 3 °C
+* **1979:** Akademie věd USA zveřejňuje tzv. [Charneyho zprávu](https://faktaoklimatu.cz/studie/1979_charneyho-zprava), která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO<sub>2</sub> povede k oteplení o 1,5-4,5 °C se střední hodnotou 3 °C. V podstatě jde o potvrzení Arrheniova odhadu citlivosti klimatu z roku 1896 při započítání dynamických procesů v atmosféře a oceánech, které počítačové modely dokážou modelovat. 
 
+* **1981:** Rozvoj [osobních počítačů](https://en.wikipedia.org/wiki/History_of_personal_computers) probíhal v osmdesátých letech - v roce 1981 uvedla firma IBM na trh svoje první PC. Spolu s pozdějším rozvojem internety a dalších technologií významně napomohl tomu, že ekonomický růst přestává být výlučně závislý na energetice a spotřebě surovin a začíná docházet k tzv. [decouplingu](https://www.enviwiki.cz/wiki/Decoupling)
 
-* **1981:** Osobní počítače, ekonomický růst přestává být výlučně závislý na energetice
-* **1985:** Mezinárodní vědecká konference ve Villachu deklaruje shodu mezi experty na tom, že globální oteplování se děje a měly by být přijaty mezinárodní dohody omezující emise CO<sub>2</sub>
-* **1987:** Mezinárodní dohoda “Montrealský protokol” omezuje emise látek narušujících ozonovou vrstvu
-* **1988:** Ralph Keeling objevil metodu přesného měření koncentrace kyslíku v atmosféře
-* **2018:** Speciální zpráva IPCC o oteplení podrobně zkoumá dosažitelnost hranice oteplení o 1.5 °C. Dochází k závěru, že při velkém snížení emisí je stále ještě možné udržet oteplení pod 1.5 °C.
-* **2020:** Nejnovější výzkum podrobně analyzuje změny klimatu v historii a zpřesňuje očekávané rozmezí citlivosti klimatu na 2.6 - 4.1°C.  
+* **1982:** Společnost Exxon Mobile vydává interní zprávu [CO<sub>2</sub> Greenhouse effect - technical review](https://insideclimatenews.org/sites/default/files/documents/1982%20Exxon%20Primer%20on%20CO2%20Greenhouse%20Effect.pdf). V ní mimo jiné konstatuje, že zdvojnásobení koncentrací CO<sub>2</sub> povede k oteplení o 1,5 - 4 °C a odhaduje, že světové teploty budou v roce 2020 průměrně o 1 °C vyšší, než v roce 1960. Jde o jeden z důkazů, že informace o důsledcích spalování fosilních paliv byly těžařským společnostem dlouho známé.   
+
+* **1985:** Mezinárodní vědecká [konference ve Villachu](http://what-when-how.com/global-warming/villach-conference-global-warming/) deklaruje shodu mezi experty na tom, že globální oteplování se děje a měly by být přijaty mezinárodní dohody omezující emise CO<sub>2</sub>.
+
+* **1987:** [Montrealský protokol](https://en.wikipedia.org/wiki/Montreal_Protocol), mezinárodní dohoda podepsaná roku 1987, omezuje emise látek narušujících ozonovou vrstvu. Dohoda byla úspěšná a vedla postupně k zastavení produkce většiny látek, které poškozují ozonovou vrstvu. Jak ukazují současná měření https://ozonewatch.gsfc.nasa.gov/ ozonová díra se v roce 2019 začala zmenšovat (tedy asi 40 let po objevu ozonové díry a asi 30 let po přijetí dohody). Montrealský protokol je často udávan jako příklad úspěšné mezinárodní snahy o ochranu klimatu. 
+
+* **1988:** Ralph Keeling objevil [metodu přesného měření koncentrace kyslíku v atmosféře](http://bluemoon.ucsd.edu/publications/ralph/34_PhDthesis.pdf) a jeho měření ukazují, že spalování fosilních paliv nejen zvyšuje koncentrace CO<sub>2</sub>, ale také snižuje atmosférické koncentrace kyslíku. Souvislosti ukazujeme v naší grafice [Cykly koncentrací CO₂ a O₂ v atmosféře](https://faktaoklimatu.cz/infografiky/cykly-koncentrace-co2).
+
+* **2018:** [Speciální zpráva IPCC SR15](https://www.ipcc.ch/sr15/) podrobně shrnuje výsledky výzkumů o dosažitelnosti hranice oteplení o 1.5 °C a srovnává dopady oteplení o 1,5 °C s očekávanými doapdy  otepelní o 2°C.  Dochází k závěru, že při rychlém snížení emisí skleníkových plynů je stále ještě možné udržet oteplení pod 1,5 °C.
+
+* **2020:** [Nejnovější výzkum](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678) podrobně analyzuje změny klimatu v historii a zpřesňuje očekávané rozmezí <glossary id="citlivost">citlivosti klimatu</glossary> na 2,6 - 4,1°C.  
 
 
 ## Další odkazy a poznámky
