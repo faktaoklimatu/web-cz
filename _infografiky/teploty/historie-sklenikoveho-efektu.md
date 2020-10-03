@@ -20,7 +20,7 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 
 ## Více o jednotlivých událostech a objevech
 
-* **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall. 
+* **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od Slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána Sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall. 
 
 * **1859:** *[John Tyndall](https://en.wikipedia.org/wiki/John_Tyndall#Molecular_physics_of_radiant_heat)* zkoumá pohlcování tepelného záření různými plyny. Jako první správně změřil absorpční koeficienty dusíku, kyslíku, oxidu uhličitého a dalších plynů a dochází k formulaci principů skleníkového efektu.
 
