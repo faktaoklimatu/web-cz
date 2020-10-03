@@ -58,6 +58,7 @@
     // enforce 10:7 aspect ratio
     height: 0;
     padding-bottom: 70%;
+    overflow: hidden;
 }
 
 a.preview-card:hover {
