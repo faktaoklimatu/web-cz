@@ -63,7 +63,7 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 
 * **2018:** [Speciální zpráva IPCC SR15](https://www.ipcc.ch/sr15/) podrobně shrnuje výsledky výzkumů o dosažitelnosti hranice oteplení o 1,5 °C a srovnává dopady oteplení o 1,5 °C s očekávanými dopady  oteplení o 2 °C.  Dochází k závěru, že při rychlém snížení emisí skleníkových plynů je stále ještě možné udržet oteplení pod 1,5 °C.
 
-* **2020:** [Nejnovější výzkum](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678) podrobně analyzuje změny klimatu v historii a zpřesňuje očekávané rozmezí <glossary id="citlivost">citlivosti klimatu</glossary> na 2,6 - 4,1°C.  
+* **2020:** [Nejnovější výzkum](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678) podrobně analyzuje změny klimatu v historii a zpřesňuje očekávané rozmezí <glossary id="citlivost">citlivosti klimatu</glossary> na 2,6 - 4,1 °C.  
 
 
 ## Další odkazy a poznámky
