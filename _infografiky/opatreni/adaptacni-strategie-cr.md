@@ -33,7 +33,7 @@ Financování adaptační strategie probíhá formou evropských a národních d
 
 * [Program Podpora obnovy přirozených funkcí krajiny](http://www.dotace.nature.cz/popfk-programy.html)
 * [Program péče o krajinu](http://www.dotace.nature.cz/ppk-programy.html)
-* [Program prevence před povodněmi III](http://www.dotace.nature.cz/129-260.html))
+* [Program prevence před povodněmi III](http://www.dotace.nature.cz/129-260.html)
 * [Programu rozvoje venkova](https://www.szif.cz/cs/prv2014)
 * [Operační program životního prostředí](https://www.opzp.cz/)
 * [Program Evropské unie LIFE](https://www.program-life.cz/).
@@ -44,7 +44,10 @@ Financování adaptační strategie probíhá formou evropských a národních d
 
 Příprava, plánování a realizace adaptačních opatření probíhá na úrovni samosprávných celků, což do celého procesu vnáší řadu institucionálních bariér. [Studie](http://www.uur.cz/images/5-publikacni-cinnost-a-knihovna/casopis/2019/2019-01/02-administrativni.pdf) publikovaná časopisem Urbanismus a územní rozvoj tyto bariéry mapuje a navrhuje jak způsoby jejich minimalizace. Za zdroj inspirace lze považovat projekty v rámci každoročně udělovaného ocenění [Adapterra Awards](https://www.adapterraawards.cz/), či seznam již realizovaných projektů na [stránkách](https://www.mzp.cz/cz/adaptacni_projekty_cr_odkazy) Ministerstva životního prostředí.
 
-## Lesní hospodářství
+<details markdown=1>
+<summary>
+<h2>Lesní hospodářství</h2>
+</summary>
 
 * **Dopady**  
   Dopady změny klimatu na lesní hospodářství jsou spojené především se suchem a extrémními projevy počasí. **Sucho snižuje přirozenou obranyschopnost lesních porostů vůči různým druhům škůdců a silnému větru, zároveň zvyšuje riziko lesních požárů.** Celá situace je komplikována složením lesních porostů v Česku, které neodpovídá stavu, ve kterém je obranyschopnost zaručena přirozenými mechanismy. Tyto dopady zásadním způsobem ovlivňují mimo jiné i produkci dřeva v ČR ([ASČR str. 26](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=26)).  
@@ -55,8 +58,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   Realizace adaptačních opatření bude respektovat ekonomické cíle lesního hospodářství (zásadu zachování konkurenceschopnosti). **Obecně lze ale očekávat, že zvýšené náklady na šetrnější těžbu a dopravu dříví budou kompenzovány nižšími náklady na obnovu a výchovu mladých lesních porostů.** Pokud navíc dojde díky realizaci navržených opatření ke snížení objemu nahodilých, kalamitních těžeb, přispěje vyšší rovnoměrnost a stabilita dodávek dříví k prosperitě lesního hospodářství a dřevozpracujícího průmyslu ([ASČR str. 79](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=79)).
 * **Inspirace**  
   Cílem projektu [Česko sází budoucnost](https://www.sazimebudoucnost.cz) je do pěti let vysázet 10 milionů stromů mimo les.
+</details>
 
-## Zemědělství
+<details markdown=1>
+<summary>
+<h2>Zemědělství</h2>
+</summary>
 
 * **Dopady**  
   Změna klimatu ovlivňuje různými mechanismy stabilitu zemědělské produkce. Dochází k posunu hlavního vegetačního období na začátek března a celkovému zvýšení teploty, což je potenciálně přínosné, v budoucnosti bude možné pěstovat na našem území teplomilnějších plodiny. Riziko spočívá v častějším výskytem ranních mrazíků, a suchých období v letních měsících a výskytem extrémních srážek. Ranní mrazíky mohou mít devastující účinky například na některé druhy ovocných stromů. Letní sucha budou ovlivňovat především oblasti střední a jižní Moravy, středních a severozápadních Čech, dolního a středního Polabí a Povltaví, které jsou klíčové pro zemědělskou produkci ČR. Extrémní srážky podporují erozi půdy ([ASČR str. 30–31](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=30)).  
@@ -67,8 +74,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   Zemědělství trpí vlivem projevů změny klimatu zvýšenou nejistotou dosažení předpokládané produkce, a zvýšení nákladů ([ASČR str. 31](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=31)).
 * **Inspirace**  
   Podle [Jiřího Musila](https://inodpady.cz/takove-mohou-byt-plody-digitalizace-ceskeho-zemedelstvi/) ze společnosti Agdata, českého dodavatele technologií pro chytré zemědělství, šetří digitalizace zemědělství zhruba 50 % člověkohodin měsíčně. To například pro malou farmu může znamenat náklady na jednu mzdu.
+</details>
 
-## Vodní hospodářství
+<details markdown=1>
+<summary>
+<h2>Vodní hospodářství</h2>
+</summary>
 
 * **Dopady**  
   V souvislosti s narůstající průměrnou teplotou dochází k nárůstu vypařování vody z krajiny a vodních ploch, zároveň dochází k častějšímu výskytu extrémních srážkových událostí. Citelným dopadem změny klimatu na vodní hospodářství  je stav sněhové pokrývky, která přirozeným způsobem akumuluje vodu. **Tání sněhu se posouvá směrem do zimy a voda poté chybí v pozdních letních a podzimních měsících.** Celkově dochází k poklesu zásob podzemní vody ([ASČR str. 36–37](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=36)).
@@ -79,8 +90,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   Celkově jsou ve vodním hospodářství náklady na kompenzaci škod způsobených klimatickou změnou výrazně vyšší, než náklady na plánovaná systémová opatření. **Předpokládaná roční výše finančních prostředků pro systémová adaptační opatření je 4,2 mld. Kč, zatímco průměrný roční podíl státu na náhradách škod způsobených povodněmi je odhadován na 8,5 mld. Kč (období mezi roky 1990 a 2010).** Stát se navíc podílí například i na kompenzaci dopadů sucha v zemědělství ([ASČR str. 87](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=87)). Pro regulaci a financování adaptačních opatření lze využít již existujících ekonomických nástrojů, jako například platby za odebrané množství podzemní vody, nebo platby za vypouštění odpadních vod ([ASČR str. 81](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=81)).
 * **Inspirace**  
   [Kozmická ptačí luka](https://ostrava.rozhlas.cz/kozmicke-ptaci-louky-oblast-kde-ma-hlavni-slovo-voda-6972701) na Hlučínsku byla v 70. letech srovnána a odvodněna z důvodu lepšího obhospodařovávání. Po obnově původní říční krajiny, jejíž přestavba započala v roce 2014, jsou zde dnes k nalezení opět tůně, pestré kvetoucí louky a navrátivší ptáci, obojživelníci a chráněné rostliny.
+</details>
 
-## Města (Urbanizovaná krajina)
+<details markdown=1>
+<summary>
+<h2>Města (Urbanizovaná krajina)</h2>
+</summary>
 
 * **Dopady**  
   Městské prostředí je nejvíce ovlivněno projevy sucha, zvyšujících se průměrných teplot a výskytem dní s extrémními tropickými teplotami. Těmto projevům zde navíc chybí protiváha v podobě odpařování vláhy a umocňuje je zvýšené pohlcování a akumulace tepla. V důsledku toho může být ohroženo zdraví obyvatelstva letních měsících. V budoucnosti může docházet k závažným problémům spojeným se sníženou dostupností a kvalitou vody ([ASČR str. 44](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=44)).
@@ -91,8 +106,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
 * **Inspirace**  
   [Město Chrudim](https://zpravy.aktualne.cz/domaci/chrudim-zdrave-mesto/r~50329632ca7611eaa7deac1f6b220ee8/?utm_source=centrumHP&utm_medium=dynamicleadbox&utm_content=default&utm_term=position-0&utm_campaign=Aktualne&fbclid=IwAR3oT0Tx5mkrqMk94jBLvYWJFUNCIKjsISK17h7am63oUK0zXCBuz8sA70c) se adaptaci na projevy změny klimatu, zejména na sucho, věnuje již několik let. Iniciativa bývalého starosty vyústila v celou řadu realizovaných adaptačních opatření a přečkala i změnu politické reprezentace města.  
   [Rodinný dům](https://www.adapterraawards.cz/Databaze/2019/Dum-s-mokradni-strechou-korenovou-cistirnou) ve vnitrobloku na pražské Letné se stal jedním z vítězů prvního ročníku soutěže Adapterra Awards. Jedná se o pasivní budovu, jejíž střechu pokrývá vegetace, která slouží jako mokřadní čistírna odpadní vody.
+</details>
 
-## Biodiverzita a ekosystémové služby
+<details markdown=1>
+<summary>
+<h2>Biodiverzita a ekosystémové služby</h2>
+</summary>
 
 * **Dopady**  
   Ekosystémy jsou obecně citlivé na změny okolních podmínek, zároveň je jejich odolnost úměrná biodiverzitě. Vedle zásahů člověka je tedy ovlivňuje právě změna klimatu. Například **změna průměrné roční teploty může vést k vymizení určitých druhů rostlin, nebo živočichů.** Protikladem jsou zde invazivní druhy rostlin a živočichů, které jsou odolné vůči změnám klimatu, mohou se nekontrolovaně šířit a zaujmout v ekosystému místo původních druhů. Tím však dochází k oslabení ekosystému a může dojít i k degradaci některých ekosystémových služeb ([ASČR str. 50–51](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=50)).
@@ -103,8 +122,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
 * **Inspirace**  
   [Vlčí a Rysí hlídky](https://www.selmy.cz/) jsou skupiny speciálně vyškolených dobrovolných spolupracovníků Hnutí DUHA, které každou zimu monitorují terén v Beskydech a na Šumavě. Mají odradit myslivce a pytláky od ilegálního lovu, a také monitorovat pohyb velkých šelem.  
   Platba za ekosystémové služby (PES) má v současné době úspěch v [Mexiku](https://blogs.worldbank.org/latinamerica/paying-ecosystem-services-successful-approach-reducing-deforestation-mexico).
+</details>
 
-## Zdraví a hygiena
+<details markdown=1>
+<summary>
+<h2>Zdraví a hygiena</h2>
+</summary>
 
 * **Dopady**  
   Zdraví a hygiena mohou být ovlivněny extrémními teplotami a s nimi souvisejícím, zvýšeným výskytem hmyzu, roztočů, infekčních nemocí. V důsledku sucha poté může docházet k migraci obyvatelstva. **Vliv sucha se může projevit v povrchových zdrojích kontaminací bakteriálního a virového původu, kontaminací pitné vody pesticidy a dusičnany s dopady na zdraví, a snižováním zásob surové vody.**  
@@ -115,8 +138,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   Stát každoročně vynaloží jednotky milionů korun na osvětu obyvatelstva, prevenci a monitorování zoonóz ([ASČR str. 80](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=80)).
 * **Inspirace**  
   [Interaktivní mapa](https://www.kliste.cz/cz/mapa-aktivity) výskytu infikovaných klíšťat. Zobrazená data pocházejí z více než 12 000 analyzovaných vzorků ze soukromé laboratoře. V mapě lze vybrat riziko infekce při napadení (klíšťová encefalitida, borelióza, apod.) a to pro jednotlivé roky, nebo jako predikci do budoucna.
+</details>
 
-## Cestovní ruch
+<details markdown=1>
+<summary>
+<h2>Cestovní ruch</h2>
+</summary>
 
 * **Dopady**  
   Projevy změny klimatu mohou na jedné straně snížit atraktivitu jednotlivých turistických destinací například vlivem úbytku sněhové pokrývky, zároveň zde lze očekávat zvýšený výskyt a šíření infekčních nemocí.Zvýšení teplot a postupné ubývání srážek v zimním období zhoršuje podmínky pro zimní rekreaci, zkracuje zimní sezónu, posouvá lyžařské areály s vhodnými podmínkami do vyšších nadmořských výšek, případně zvyšuje požadavky na vodní zdroje, což může vést k zvýšení konfliktů se zájmy ochrany přírody a jinými veřejnými zájmy ([ASČR str. 58](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=58)).
@@ -125,8 +152,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
 * **Ekonomické aspekty**  
   Některé pesimistické [prognózy](https://zpravy.aktualne.cz/zahranici/spatna-zprava-pro-lyzare-z-alp-bude-mizet-snih-varuji-vedci/r~33521e4a0fce11e7b7fa0025900fea04/) předvídají, že alpské rezorty by mohly do roku 2099 přijít až o 70 % sněhu.  
   I u optimistického scénáře vývoje klimatu lze předpokládat, že k hlavním zasaženým územím by patřily právě oblasti soustředěného cestovního ruchu ([ASČR str. 87](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=87)). Takový scénář by měl velmi negativní důsledky pro české podnikatele a firmy závislé na zimní turistice.
+</details>
 
-## Doprava
+<details markdown=1>
+<summary>
+<h2>Doprava</h2>
+</summary>
 
 * **Dopady**  
   Česká republika hraje významnou roli tranzitní země jak v dopravě silniční, tak i železniční. **Vlivem extrémních projevů počasí, může dojít k dočasnému omezení průjezdnosti některých tahů.** Vodní doprava je navíc vzhledem k poloze ČR provozována na krátkých splavných úsecích některý řek, na kterých vlivem sucha dochází k omezení splavnosti některých úseků ([ASČR str. 60](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=60)).
@@ -136,8 +167,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   Z ekonomického hlediska jsou adaptační opatření v oblasti dopravy především příležitostí k investicím do výzkumu a vývoje nových technologií ([ASČR str. 86](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=86)).
 * **Inspirace**  
   [Dopravní podnik Ostrava](https://zdravaova.cz/prvni-cestujici-se-dnes-svezli-novymi-elektrobusy-ekova-electron/) jako první v České republice koncem roku 2018 zahájil provoz elektrobusů s technologií „opportunity charging“, která umožňuje ultrarychlé dobíjení, a to během 1 minuty na další hodinu provozu. DPO zároveň plánuje mít vozový park bez dieselových motorů do konce roku 2020.
+</details>
 
-## Průmysl a energetika
+<details markdown=1>
+<summary>
+<h2>Průmysl a energetika</h2>
+</summary>
 
 * **Dopady**  
   Změna klimatu se v oblasti průmyslu a energetiky projevuje zejména ohrožením stability kritické infrastruktury. Například sucho ovlivňuje výrobu vodních elektráren, zároveň však může snižovat chladící kapacitu tepelných elektráren a snížení objemu vody v akumulačních nádržích přečerpávacích elektráren ([ASČR str. 63](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=63)).
@@ -148,8 +183,12 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
 * **Inspirace**  
   Obec Mikolajice na Opavsku jako první využívá [mikroelektrárnu Wave](https://ct24.ceskatelevize.cz/domaci/2739806-teplo-i-svetlo-zaroven-mikolajice-vyuzivaji-prvni-mikroelektrarnu-na-svete), která je podle tvůrců prvním zařízením svého druhu na světě. Jde o automatický kotel na biomasu, jenž kromě tepla produkuje i elektřinu.  
   Jako topivo využívá elektrárna dřevěné pelety, ale po úpravách jí nevadí ani štěpka horší kvality. Zařízení, které dosahuje tepelného výkonu až 50 kW, dokáže fungovat i nezávisle na distribuční síti a v případě výpadku elektrické energie je schopno fungovat v takzvaném off gridu a zásobovat obecní budovy (obecní úřad, hasičská zbrojnice a prodejna potravin), elektřinou po dobu minimálně 12 hodin.
+</details>
 
-## Mimořádné události a ochrana obyvatelstva
+<details markdown=1>
+<summary>
+<h2>Mimořádné události a ochrana obyvatelstva</h2>
+</summary>
 
 * **Dopady**  
   V důsledku změny klimatu **dochází k nárůstu intenzity i četnosti extrémních meteorologických jevů, dlouhodobého sucha, povodní, lesních požárů, ohrožení energetické soustavy a související migrace obyvatel** ([ASČR str. 66](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=66)).
@@ -157,3 +196,4 @@ Příprava, plánování a realizace adaptačních opatření probíhá na úrov
   V rámci adaptačních opatření dopručuje národní adaptační strategie podporovat a vyvýjet systémy predikce a varování před mimořádnými událostmi. Prioritou by mělo být zajištění vhodného krizového scénáře pro ochranu obyvatelstva i životního prostředí ([ASČR str. 66–69](https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf#page=66)).
 * **Inspirace**  
   Průkopníky v oblasti mimořádných událostí a ochrany obyvatelstva je v tuzemsku platforma [Mobilní rozhlas](https://www.czechcrunch.cz/2020/05/mobilni-rozhlas-v-krizi-ukazal-svou-silu-pouziva-ho-uz-pres-800-starostu-pres-prahu-a-brno-az-po-mala-mesta-a-vesnice/) pro efektivní komunikaci samospráv s občany a aplikace [Záchranka](https://www.novinky.cz/domaci/clanek/aplikaci-zachranka-ma-milion-cechu-pomohla-v-desitkach-tisic-pripadu-40289869), která umožňuje v krizových situacích rychlým způsobem kontaktovat záchranáře. Obě aplikace spadají pod Systém digitálního varování obyvatelstva (SDVO) a  jsou podřízeny složkám krizového řízení a ochrany obyvatel.
+</details>
