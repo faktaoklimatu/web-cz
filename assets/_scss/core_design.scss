@@ -271,3 +271,52 @@ img.text-img {
     margin: 10px auto 10px auto;
     display: block;
 }
+
+// Collapssible sections in texts.
+details {
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background: rgba(255, 255, 255, 0.5);
+
+    + details {
+        border-top: 0;
+    }
+
+    > summary {
+        padding: 0.75rem 0 0.75rem 0;
+
+        &::marker {
+            content: "⯆";
+        }
+
+        h2, h3, h4 {
+            display: inline;
+            margin-left: 0.5em;
+        }
+    }
+
+    > summary:hover {
+        color: #0056b3;
+    }
+
+    &[open] {
+        padding-bottom: 1.5em;
+
+        > summary {
+            margin-bottom: 0.25em;
+        }
+
+        > summary::marker {
+            content: "⯅";
+        }
+    }
+
+    h2, h3, h4, p {
+        margin-left: 1.75rem;
+    }
+
+    + h2, + h3, + p, + ul {
+        margin-top: 1rem;
+    }
+}
