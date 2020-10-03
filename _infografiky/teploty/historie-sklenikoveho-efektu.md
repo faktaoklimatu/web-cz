@@ -47,7 +47,7 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 
 * **1972:** [Vrty z ledovcových jader](https://en.wikipedia.org/wiki/Ice_core#History) v Antarktidě a Grónsku ukazují historické koncentrace CO<sub>2</sub>, metanu a dallších plynů a dokládají jejich roli ve střídání dob ledových a meziledových. Zobrazení dat o koncentracích CO<sub>2</sub> za posledních 800 000 let najdete v [naší grafice](https://faktaoklimatu.cz/infografiky/koncentrace-co2). 
 
-* **1975:** Objev ozónové díry. Okolo roku 1975 několik [výzkumých týmů](https://en.wikipedia.org/wiki/Ozone_depletion#Research_history)  konstatovalo, že chlor-fluorované uhlovodíky (CFC, freony) se kumulují a mění reakce ve stratosféře, čímž dochází k úbytku ozónu. Za tyto objevy byla v roce 1995 udělena Nobelova cena za Chemii.  
+* **1975:** Objev ozónové díry. Okolo roku 1975 několik [výzkumých týmů](https://en.wikipedia.org/wiki/Ozone_depletion#Research_history)  konstatovalo, že chlor-fluorované uhlovodíky (CFC, freony) se kumulují a mění reakce ve stratosféře, čímž dochází k úbytku ozónu. Za tyto objevy byla v roce 1995 udělena Nobelova cena za chemii.  
 
 * **1979:** Akademie věd USA zveřejňuje tzv. [Charneyho zprávu](https://faktaoklimatu.cz/studie/1979_charneyho-zprava), která na základě počítačových modelů dochází k závěru, že zdvojnásobení koncentrací CO<sub>2</sub> povede k oteplení o 1,5-4,5 °C se střední hodnotou 3 °C. V podstatě jde o potvrzení Arrheniova odhadu citlivosti klimatu z roku 1896 při započítání dynamických procesů v atmosféře a oceánech, které počítačové modely dokážou modelovat. 
 
