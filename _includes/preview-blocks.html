@@ -14,7 +14,7 @@
             {% case item.layout %}
             {% when 'infographic' %}
                 <img src="{{ site.baseurl }}/assets/infographics/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid" />
-                <div class="card-img-overlay tags-overlay-box tags-gradient-background">
+                <div class="card-img-overlay tags-overlay-box">
                     {% include tags.html tags=item.tags %}
                 </div>
             {% when 'dataset' %}
@@ -22,7 +22,7 @@
                 <div class="card-img-overlay card-dataset-overlay">
                   <h5 class="card-title">{{ item.title }}</h5>
                 </div>
-                <div class="card-img-overlay tags-overlay-box tags-gradient-background">
+                <div class="card-img-overlay tags-overlay-box">
                     {% include tags.html tags=item.tags %}
                 </div>
             {% when 'study' %}

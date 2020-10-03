@@ -4,14 +4,11 @@
     top: auto;
     padding: 40px 15px 15px 15px;
     overflow: hidden;
+    background-image: linear-gradient(rgba(255,255,255,0), white 80%);
 
     .tags {
         width: max-content;
     }
-}
-
-.tags-gradient-background {
-    background-image: linear-gradient(rgba(255,255,255,0), white 80%);
 }
 
 .tags {
