@@ -7,26 +7,27 @@
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link" href="{% if page.slug != 'index' %}/{% endif %}#home">Úvod</a>
-                </li>
-                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Témata</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="nav-link" href="/">Úvod</a></li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown_topics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Témata</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_topics">
                         {% assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" %}
                         {% for tag in sorted_index_tags %}
-                          <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#{{ tag.id }}">{{ tag.name-long }}</a>
+                          <a class="dropdown-item" href="/temata/{{ tag.id }}">{{ tag.name-long }}</a>
                         {% endfor %}
                     </div>
                 </li>
-                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
-                    <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Více</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="/zdroje">Další zdroje a odkazy</a>
-                        <a class="dropdown-item" href="/slovnik">Slovník pojmů</a>
+                <li><a class="nav-link" href="/explainery">Explainery</a></li>
+                <li><a class="nav-link" href="/o-projektu">O projektu</a></li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown_more" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Více</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_more">
                         <a class="dropdown-item" href="/aktuality">Aktuality</a>
+                        <a class="dropdown-item" href="/atlas">Atlas klimatické změny</a>
+                        <a class="dropdown-item" href="/slovnik">Slovník pojmů</a>
+                        <a class="dropdown-item" href="/zdroje">Další zdroje a odkazy</a>
+                        <a class="dropdown-item" href="/podporte-nas">Podpořte Fakta o klimatu</a>
                         <a class="dropdown-item" href="/jak-pouzivat">Jak používat naše materiály</a>
-                        <a class="dropdown-item" href="{% if page.slug != 'index' %}/{% endif %}#creators">O nás</a>
                     </div>
                 </li>
             </ul>

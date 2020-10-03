@@ -15,47 +15,26 @@ body {
     }
 }
 
-h1 {
-    font-weight: bold !important;
+/* Headings */
 
-    a {
-        text-decoration: none;
-    }
-}
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.2rem; }
+h1, h2, h3, h4, h5, .display-1, .display-2, .display-3 { font-weight: bold; }
+h2 { text-transform: uppercase; }
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
 
-h1#home a:hover {
-    &:hover {
-        text-decoration: none;
-        color: $c-primary;
-    }
-}
+// Display versions for the title page
+.display-1 { font-size: 4.5rem; }
+.display-2 { font-size: 2.5rem; text-transform: none; }
+.display-3 { font-size: 1.75em; }
 
-h2 {
-    font-size: 1.35rem;
-    font-weight: bold !important;
-    text-transform: uppercase;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-weight: bold !important;
-}
-
-/* Fix anchor links */
-h1:target,
-h2:target,
-h3:target {
+// Fix anchor links
+h1:target, h2:target, h3:target {
     padding-top: 5rem;
     margin-top: -5rem;
 }
 
-h5 {
-    font-weight: bold;
-}
+/* Links */
 
 a {
     color: $c-primary;
@@ -93,6 +72,8 @@ a {
     font-size: 100%;
 }
 
+/* Textual elements */
+
 p:last-child {
     margin-bottom: 0;
 }
@@ -114,6 +95,8 @@ pre {
     word-wrap: break-word;
 }
 
+/* Structure elements: section, ul, table, img text */
+
 .section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -131,6 +114,92 @@ pre {
 ul:last-child {
     margin-bottom: 0;
 }
+
+.table {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    thead {
+        background-color: rgba(0,0,0,.05);
+    }
+
+    &-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0,0,0,.02);
+    }
+
+    &-hover tbody tr:hover {
+        background-color: rgba(0,0,0,.05);
+    }
+}
+
+img.text-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto 10px auto;
+    display: block;
+}
+
+/* Buttons */
+
+.btn {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        color: #fff;
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
+    }
+}
+
+.btn-outline-primary {
+    color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        background-color: $c-light-blue;
+        border-color: $c-light-blue;
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover {
+        background-color: $c-primary;
+        color: $c-body;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $c-light-blue;
+    border-color: $c-light-blue;
+}
+
+.button-block {
+    text-align: center;
+}
+
+.button-block .btn {
+    display: inline-block;
+    width: 40%;
+    margin: 1em 1em;
+}
+
+/* Navigation bar */
 
 .navbar {
     background: $c-body;
@@ -176,6 +245,8 @@ ul:last-child {
     padding-right: 1rem;
 }
 
+/* Footer */
+
 footer {
     flex: 1;
     width: 100%;
@@ -200,79 +271,8 @@ footer {
     }
 }
 
-.btn {
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
+/* Collapssible sections in texts. */
 
-.btn-primary {
-    color: #fff;
-    background-color: $c-primary;
-    border-color: $c-primary;
-
-    &:hover {
-        color: #fff;
-        background-color: $c-primary-lighten;
-        border-color: $c-primary-lighten;
-    }
-}
-
-.btn-outline-primary {
-    color: $c-primary;
-    border-color: $c-primary;
-
-    &:hover {
-        background-color: $c-primary-lighten;
-        border-color: $c-primary-lighten;
-    }
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: $c-primary;
-    border-color: $c-primary;
-
-    &:hover {
-        background-color: $c-primary;
-        color: $c-body;
-    }
-}
-
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: $c-primary-lighten;
-    border-color: $c-primary-lighten;
-}
-
-.table {
-    table {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    thead {
-        background-color: rgba(0,0,0,.05);
-    }
-
-    &-striped tbody tr:nth-of-type(odd) {
-        background-color: rgba(0,0,0,.02);
-    }
-
-    &-hover tbody tr:hover {
-        background-color: rgba(0,0,0,.05);
-    }
-}
-
-img.text-img {
-    width: 100%;
-    max-width: 600px;
-    margin: 10px auto 10px auto;
-    display: block;
-}
-
-// Collapssible sections in texts.
 details {
     padding-right: 2rem;
     padding-left: 1rem;

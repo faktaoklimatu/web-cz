@@ -1,16 +1,14 @@
 /* Intro page customizations */
 
 .intro {
+    padding-bottom: 0;
+
     .tagline {
         text-transform: uppercase;
         text-align: right;
         float: left;
         width: 15.2rem;
         margin-top: 1rem;
-    }
-
-    h1 {
-        font-size: 4.5rem;
     }
 
     p {
@@ -71,14 +69,6 @@ a.preview-card:hover {
     bottom: auto;
 }
 
-// Temporary solution to not force aspect ratio here
-// Page links will probably not be cards in the future
-
-.page-link-card {
-    height: auto;
-    padding-bottom: 0;
-}
-
 .more-overlay-box {
     overflow: hidden;
     background-image: radial-gradient(white 30%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0) 100%);
@@ -94,10 +84,35 @@ a.preview-card:hover {
     }
 }
 
-.section-new {
-    background: $c-primary-extra-lighten;
+.bg-extralight-blue { background: $c-extralight-blue !important; }
+.bg-extralight-green { background: $c-extralight-orange !important; }
+.bg-extralight-red { background: $c-extralight-yellow !important; }
+
+.nav-tabs .nav-link {
+    border: 0;
+    margin: 0 10px 0 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
 }
 
-.news-overlay-box {
-    background-color: $c-primary-extra-lighten;;
+.accordion-item {
+    border-bottom: 1px solid rgba(0,0,0,.25);
+}
+
+.accordion-item:last-child {
+    border: none;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+
+.accordion-header .fa {
+    transition: .3s transform ease-in-out;
+  }
+
+.accordion-header.collapsed .fa {
+    transform: rotate(180deg);
 }
