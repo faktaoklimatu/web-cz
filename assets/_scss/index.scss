@@ -116,3 +116,11 @@ a.preview-card:hover {
 .accordion-header.collapsed .fa {
     transform: rotate(180deg);
 }
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 20% 50px 20%;
+}

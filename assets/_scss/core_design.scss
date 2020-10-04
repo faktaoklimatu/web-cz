@@ -145,7 +145,7 @@ img.text-img {
 
 .btn {
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin: 0 0.25em 0.5rem 0.25em;
 }
 
 .btn-primary {
@@ -187,16 +187,6 @@ img.text-img {
     color: #fff;
     background-color: $c-light-blue;
     border-color: $c-light-blue;
-}
-
-.button-block {
-    text-align: center;
-}
-
-.button-block .btn {
-    display: inline-block;
-    width: 40%;
-    margin: 1em 1em;
 }
 
 /* Navigation bar */
