@@ -9,51 +9,56 @@ slug: index
         <span class="tagline">Veřejně dostupné<br>infografiky a datasety</span>
         <p class="mb-5">Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro <a href="/jak-pouzivat" title="Jak používat naše materiály">další použití</a>.<br/>
             <a href="/aktuality" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-newspaper"></i> Aktuality</a>
-            <a href="/o-projektu" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i> O projektu</a>
-            <a href="/podporte-nas" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
+            <a href="#o-projektu" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i> O projektu</a>
+            <!-- <a href="/podporte-nas" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a> -->
         </p>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="homee-tab" data-toggle="tab" href="#homee" role="tab" aria-controls="homee" aria-selected="true">Pro veřejnost</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="public-tab" data-toggle="tab" href="#public" role="tab" aria-controls="public" aria-selected="true">Pro veřejnost</h2>
             </li>
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-green" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pro učitele</h2>
+                <h2 class="nav-link bg-extralight-green" id="teachers-tab" data-toggle="tab" href="#teachers" role="tab" aria-controls="teachers" aria-selected="false">Pro učitele</h2>
             </li>
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-red" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Pro novináře</h2>
+                <h2 class="nav-link bg-extralight-red" id="journalists-tab" data-toggle="tab" href="#journalists" role="tab" aria-controls="journalists" aria-selected="false">Pro novináře</h2>
             </li>
         </ul>
     </div>
 </div>
 
 <div class="tab-content" id="myTabContent">
-  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="homee" role="tabpanel" aria-labelledby="homee-tab"><div class="container">
+  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="public" role="tabpanel" aria-labelledby="public-tab"><div class="container">
     <p class="lead mb-0">Fakta o klimatu neslouží odborníkům, ale všem lidem se zájmem o téma klimatické změny. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2, body-zlomu-1, teplota-22000-let, teplota-cr, potencial-zpusobu-snizeni-emisi, elektrina-cr" | split: ", " %}
     {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
-    <p class="lead">Pro pravidelné kvalitní informace o klimatické změně můžete sledovat náš newsletter nebo Twitter. Komplexní a přístupný pohled na klimatickou změnu představuje naše publikace <a href="{{ site.baseurl }}/atlas">Atlas klimatické změny</a>. Kvalitní debatu o klimatické změně a projekt Fakta o klimatu můžete také podpořit – finančně nebo používáním našich dat a grafik.</p>
+    <p class="lead">Pro pravidelné kvalitní informace o klimatické změně můžete sledovat náš newsletter nebo Twitter.
+    <!-- Komplexní a přístupný pohled na klimatickou změnu představuje naše publikace <a href="{{ site.baseurl }}/atlas">Atlas klimatické změny</a>. -->
+    Kvalitní debatu o klimatické změně a projekt Fakta o klimatu můžete také podpořit – finančně nebo používáním našich dat a grafik.</p>
     <a href="{{ site.newsletter }}" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
     <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
-    <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a>
+    <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
     <a href="" class="btn btn-secondary"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
   </div></div>
   
-  <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="container">
-    <p class="lead">Texty a grafiky projektu Fakta o klimatu lze použít jako materiál pro přípravu různých vzdělávacích aktivit. Při práci se snažíme nerezignovat na vědeckou přesnost a komplexnost, použití našich textů a grafik proto doporučujeme ve vyšších ročnících ZŠ nebo na SŠ a VŠ.</p>
-    <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p>
-    <a href="/atlas" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a>
-    <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a>
-    <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+  <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="teachers" role="tabpanel" aria-labelledby="teachers-tab"><div class="container">
+    <p class="lead mb-0">Texty a grafiky projektu Fakta o klimatu lze použít jako materiál pro přípravu různých vzdělávacích aktivit. Při práci se snažíme nerezignovat na vědeckou přesnost a komplexnost, použití našich textů a grafik proto doporučujeme ve vyšších ročnících ZŠ nebo na SŠ a VŠ. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
+    {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2" | split: ", " %}
+    {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
+    {% include preview-blocks.html blocks=featured limit=3 %}
+    <!-- <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p> -->
+    <!-- <a href="/atlas" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a> -->
+    <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
+    <a href="/slovnik" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
     <a href="/jak-pouzivat" class="btn btn-secondary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
   </div></div>
 
-  <div class="section tab-pane fade bg-extralight-red pt-4 pb-4" id="contact" role="tabpanel" aria-labelledby="contact-tab"><div class="container">
+  <div class="section tab-pane fade bg-extralight-red pt-4 pb-4" id="journalists" role="tabpanel" aria-labelledby="journalists-tab"><div class="container">
     <p class="lead">Pokud připravujete článek či se chystáte na diskusi nebo rozhovor, naše materiály vám pomohou získat přehled a aktuální data. I těžko srozumitelné problémy můžete díky našim grafikám prezentovat přehledně a srozumitelně. Data čerpáme z ověřených a transparentních zdrojů, posouzení jejich faktické správnosti jsme udělali za vás.</p>
-    <p class="lead">Naše data a grafiky lze snadno sdílet, upravovat a šířit. Pokud je plánujete využít, nezapomeňte se prosím seznámit s pravidly jak používat naše materiály. Máte-li zájem o bližší informace o projektu nebo o spolupráci, kdykoli nás také můžete <a href="/o-projektu#kontakt">kontaktovat</a>.</p>
+    <p class="lead">Naše data a grafiky lze snadno sdílet, upravovat a šířit. Pokud je plánujete využít, nezapomeňte se prosím seznámit s pravidly jak používat naše materiály. Máte-li zájem o bližší informace o projektu nebo o spolupráci, kdykoli nás také můžete <a href="/jak-pouziva#kontakt">kontaktovat</a>.</p>
     <a href="/jak-pouzivat" class="btn btn-primary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
-    <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a>
+    <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
   </div></div>
 </div>
@@ -103,7 +108,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 
 </div></div>
 <div class="section"><div class="container" markdown="1">
-{:#creators .display-2}
+{:#o-projektu .display-2}
 ## O nás a naší práci
 
 {:.lead}
@@ -114,23 +119,24 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
   <ol class="carousel-indicators">
     <li data-target="#carousel_successes" data-slide-to="0" class="active"></li>
     <li data-target="#carousel_successes" data-slide-to="1"></li>
-    <li data-target="#carousel_successes" data-slide-to="2"></li>
+    <!-- <li data-target="#carousel_successes" data-slide-to="2"></li> -->
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="6000">
+    <a href="https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721" class="no-ext-link-icon carousel-item active" data-interval="6000">
       <img src="{{ site.baseurl }}/assets/img/carousel-senat.jpg" class="d-block w-100" alt="Fakta o klimatu v senátu" />
       <div class="carousel-caption d-none d-md-block">
         <h5>Fakta o klimatu v senátu</h5>
         <p>Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v senátu, aby podpořil kvalitní debatu o transformaci energetiky.</p>
       </div>
-    </div>
-    <div class="carousel-item" data-interval="6000">
+    </a>
+    <a href="https://www.irozhlas.cz/veda-technologie/priroda/klima-data-fakta-o-klimatu_2002060600_jab" class="no-ext-link-icon carousel-item" data-interval="6000">
       <img src="{{ site.baseurl }}/assets/img/carousel-media.png" class="d-block w-100" alt="Naše práce v médiích" />
       <div class="carousel-caption d-none d-md-block">
         <h5>Naše práce v médiích</h5>
         <p>Za jeden z největších úspěchů považujeme, že data a grafiky našeho projektu přebírají česká a slovenská média.</p>
       </div>
-    </div>
+    </a>
+    <!--
     <div class="carousel-item" data-interval="6000">
       <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
       <div class="carousel-caption d-none d-md-block">
@@ -138,6 +144,7 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
         <p>Z našich dat a grafik jsme připravili první ucelenou publikaci, Atlas klimatické změny. Brzy začne její distribuce do škol a k zájemcům o téma klimatické změny.</p>
       </div>
     </div>
+    -->
   </div>
   <a class="carousel-control-prev" href="#carousel_successes" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -155,9 +162,11 @@ Debata o klimatické změně je komplikovaná a na všech stranách plná zbyte�
 {:.lead}
 Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.
 
+<!--
 <div class="row">
   <a href="/o-projektu" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-info"></i> Více o projektu</a>
   <a href="/podporte-nas" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
 </div>
+-->
 
 </div></div>
