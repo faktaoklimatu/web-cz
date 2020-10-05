@@ -62,6 +62,7 @@ U každé naší infografiky jsou také k dispozici podkladová data.
 
 <div class="section">
 <div class="container" markdown="1">
+{:#kontakt}
 ## Jak nás kontaktovat?
 
 Chcete-li s námi konzultovat použití našich infografik či dat (například pro použití v médiích), ozvěte se našemu týmu na e-mailu [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz). Případně můžete kontaktovat přímo Ondráše Přibylu na [ondras.pribyla@faktaoklimatu.cz](mailto:ondras.pribyla@faktaoklimatu.cz) nebo na tel. +420 775 988 882.

@@ -84,6 +84,8 @@ a.preview-card:hover {
     }
 }
 
+/* Tabs for role-specific links */
+
 .bg-extralight-blue { background: $c-extralight-blue !important; }
 .bg-extralight-green { background: $c-extralight-orange !important; }
 .bg-extralight-red { background: $c-extralight-yellow !important; }
@@ -94,6 +96,8 @@ a.preview-card:hover {
     padding: 0.5em 1em;
     cursor: pointer;
 }
+
+/* Accordion of topics covered */
 
 .accordion-item {
     border-bottom: 1px solid rgba(0,0,0,.25);
@@ -116,6 +120,8 @@ a.preview-card:hover {
 .accordion-header.collapsed .fa {
     transform: rotate(180deg);
 }
+
+/* Carousel with successes */
 
 .carousel-caption {
     background: rgba(0,0,0,0.6);
