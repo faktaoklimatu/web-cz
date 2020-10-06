@@ -15,7 +15,7 @@ data-our:   "https://docs.google.com/spreadsheets/d/1RNOUtou04LNlVw8Wkk9-evhcL7T
 
 V tomto grafu srovnáváme rámcové odhady emisních úspor v různých oblastech fungování společnosti. V levém sloupci ukazujeme potenciál individuálních úspor, pokud by se zapojila velká část společnosti a společnými silami snížila celkovou spotřebu v dané kategorii na polovinu. Tento faktor snížení emisí je zvolen symbolicky, dosažení takových cílů by bylo velmi náročné (a různě náročné v různých kategoriích, viz níže). Například omezení nalétané vzdálenosti na polovinu by ušetřilo jen asi 0,8 % celkových emisí v porovnání s rokem 2018.
 
-V pravém sloupci ukazujeme potenciál úspor, které přímo nesouvisí s individuální spotřebou a k jejichž dosažení je potřeba systémovější přístup. Např. vysázení 10 milionů stromů navíc by přineslo v horizontu roku 2030 úsporu jen asi 0,2 % celkových emisí v porovnání s rokem 2018. Naopak transformace energetiky by přinesla 50–100x vyšší úsporu emisí.
+V pravém sloupci ukazujeme potenciál úspor, které přímo nesouvisí s individuální spotřebou a k jejichž dosažení je potřeba systémovější přístup. Např. vysázení 10 milionů stromů navíc by přineslo v horizontu roku 2030 úsporu jen asi 0,2 % celkových emisí v porovnání s rokem 2018. Naopak transformace energetiky by přinesla 50–100× vyšší úsporu emisí.
 
 ## Kontext k sekci: Co mohou ovlivnit lidé svojí spotřebou
 

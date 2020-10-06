@@ -20,14 +20,14 @@ dataset:    "emise-eu"
   * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub>eq
   * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub>eq
   * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub>eq
-* Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 131,3 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 4. největším emitentem EU__ a má 2x vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
+* Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 131,3 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 4. největším emitentem EU__ a má 2× vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
-* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5x vyšší než průměr EU)
-* Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky (4,5x vyšší než průměr EU)
-* Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce (skoro 5x vyšší než průměr EU)
-* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky (2x vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
+* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5× vyšší než průměr EU)
+* Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky (4,5× vyšší než průměr EU)
+* Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce (skoro 5× vyšší než průměr EU)
+* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky (2× vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
 * Všechny zmíněné údaje najdete v našem podrobném datasetu v sekci "Emise na obyvatele podle základních kategorií".
 
 ## Poznámky k datům o emisích
