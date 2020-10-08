@@ -148,6 +148,11 @@ img.text-img {
     margin: 0 0.25em 0.5rem 0.25em;
 }
 
+.btn-group .btn {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .btn-primary {
     color: #fff;
     background-color: $c-primary;
