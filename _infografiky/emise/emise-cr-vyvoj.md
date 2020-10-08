@@ -3,15 +3,16 @@ layout:        infographic
 title:         "Vývoj emisí v ČR v letech 1990–2018"
 slug:          "emise-cr-vyvoj"
 redirect_from: "/emise-cr-vyvoj"
-# TODO: Před publikací aktualizovat datum.
 published:     2020-10-09
-# TODO: Jakou váhu udělit?
-weight:        55
+weight:        75
 tags-scopes:   [ cr ]
 tags-topics:   [ emise ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 200 mil. tun CO<sub>2</sub>eq, klesly celkové emise ČR o více než třetinu na 129 mil. tun CO<sub>2</sub>eq v roce 2018."
-# TODO: Aktualizovat.
-dataset:       "emise-cr"
+# TODO: Přidat odkaz na docs.google
+data-our:   "https://docs.google.com/spreadsheets/d/1CfPYmK_buWl4pYH025dbCo3mj2bCzZ2udxRbUujdrm0/edit?usp=sharing"
+data-orig:  [
+    ["Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE"]
+]
 ---
 
 ## Jak číst tento graf
