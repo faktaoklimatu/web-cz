@@ -3,8 +3,9 @@ layout:     infographic
 title:      "Emise skleníkových plynů Slovenska podle sektorů detailně"
 slug:       "emise-sr-detail"
 redirect_from: "/emise-sr-detail"
+published:  2020-10-09
 weight:     97
-tags-scopes: []
+tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v SR za rok 2018 v jednotlivých sektorech lidské činnosti. Roční objem emisí Slovenska je 43,53 mil. tun. V přepočtu na obyvatele to je 8 t CO<sub>2</sub>eq na obyvatele."
 data-our:   "https://docs.google.com/spreadsheets/d/1FIuOP9Q58_0LEEuuhggXpuAnvRcs13e8H1buZKWJB3Y/edit?usp=sharing"
