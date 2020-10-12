@@ -3,11 +3,11 @@ layout:     infographic
 title:      "Emise skleníkových plynů Slovenska podle sektorů detailně"
 slug:       "emise-sr-detail"
 redirect_from: "/emise-sr-detail"
-published:  2020-10-09
+published:  2020-10-12
 weight:     97
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
-caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v SR za rok 2018 v jednotlivých sektorech lidské činnosti. Roční objem emisí Slovenska je 43,53 mil. tun. V přepočtu na obyvatele to je 8 t CO<sub>2</sub>eq na obyvatele."
+caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) na Slovensku za rok 2018 v jednotlivých sektorech lidské činnosti. Roční objem emisí Slovenska je 43,53 mil. tun. V přepočtu na obyvatele to je 8 t CO<sub>2</sub>eq na obyvatele."
 data-our:   "https://docs.google.com/spreadsheets/d/1FIuOP9Q58_0LEEuuhggXpuAnvRcs13e8H1buZKWJB3Y/edit?usp=sharing"
 data-orig:  [
     ["Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"]
@@ -29,6 +29,6 @@ data-orig:  [
 
 ## Poznámky k datům o emisích
 
-* Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (common reporting format), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy [UNFCCC](https://cs.wikipedia.org/wiki/R%C3%A1mcov%C3%A1_%C3%BAmluva_OSN_o_zm%C4%9Bn%C4%9B_klimatu).
+* Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (*common reporting format*), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy [UNFCCC](https://cs.wikipedia.org/wiki/R%C3%A1mcov%C3%A1_%C3%BAmluva_OSN_o_zm%C4%9Bn%C4%9B_klimatu).
 * Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Slovensko reportovalo přímo Slovensko, konkrétně skrze Ministerstvo životného prostredia a Slovenský hydrometeorologický ústav, viz [web národního inventarizačního systému emisí](https://ghg-inventory.shmu.sk/main.php).
-* Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. Slovensko například do dalších zemí EU vyváží automobily, ocel apod. a dováží zboží z jiných zemí EU nebo z Číny. Zahrnutí letecké dopravy je podobně problematické - zobrazený příspěvek letecké dopravy odpovídá emisím vyprodukovaným lety z letišť na Slovensku. Je tedy pravděpodobně podhodnocený (mnoho Slováků létá z Vídně) a neodpovídá zcela množství emisí, které Slováci způsobí (typicky např. let z Bratislavy do New Yorku s přestupem v Dublinu se započítá do zobrazených emisí jen jako Bratislava-Dublin, zatímco emise z letu Dublin-New York se započtou Irsku). Není také započítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt.
+* Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. Slovensko například do dalších zemí EU vyváží automobily, ocel apod. a dováží zboží z jiných zemí EU nebo z Číny. Zahrnutí letecké dopravy je podobně problematické – zobrazený příspěvek letecké dopravy odpovídá emisím vyprodukovaným lety z letišť na Slovensku. Je tedy pravděpodobně podhodnocený (mnoho Slováků létá z Vídně) a neodpovídá zcela množství emisí, které Slováci způsobí (typicky např. let z Bratislavy do New Yorku s přestupem v Dublinu se započítá do zobrazených emisí jen jako Bratislava-Dublin, zatímco emise z letu Dublin-New York se započtou Irsku). Není také započítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt.
