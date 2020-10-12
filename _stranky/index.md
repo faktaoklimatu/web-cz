@@ -123,10 +123,10 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
   </ol>
   <div class="carousel-inner">
     <a href="https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721" class="no-ext-link-icon carousel-item active" data-interval="6000">
-      <img src="{{ site.baseurl }}/assets/img/carousel-senat.jpg" class="d-block w-100" alt="Fakta o klimatu v senátu" />
+      <img src="{{ site.baseurl }}/assets/img/carousel-senat.jpg" class="d-block w-100" alt="Fakta o klimatu v Senátu" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>Fakta o klimatu v senátu</h5>
-        <p>Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v senátu, aby podpořil kvalitní debatu o transformaci energetiky.</p>
+        <h5>Fakta o klimatu v Senátu</h5>
+        <p>Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v Senátu Parlamentu ČR, aby podpořil kvalitní debatu o transformaci energetiky.</p>
       </div>
     </a>
     <a href="https://www.irozhlas.cz/veda-technologie/priroda/klima-data-fakta-o-klimatu_2002060600_jab" class="no-ext-link-icon carousel-item" data-interval="6000">
