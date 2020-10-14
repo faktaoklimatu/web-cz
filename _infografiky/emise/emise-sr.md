@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Emise skleníkových plynů Slovenska podle sektorů"
 slug:       "emise-sr"
 redirect_from: "/emise-sr"
-published:  2020-10-12
+published:  2020-10-14
 weight:     97
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
