@@ -1,0 +1,26 @@
+---
+layout:     empty
+title:      "O nás"
+slug:       o-nas
+intro:      "Představení Fakt o klimatu – náš příběh, naši členové."
+---
+<div class="section">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.intro }}</p>
+        <p>Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé. Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.</p>
+        <h2>Náš příběh:</h2>
+        {% assign pribeh = site.data.pribeh %}
+        {% for item in pribeh %}
+        <div class="news-item">
+            <div class="d-block d-md-inline-block date">
+                    <p>{{ item.title}}</p>
+            </div>
+            <div class="d-inline-block summary">
+                {{ item.text | markdownify }}
+            </div>
+        </div>
+        {% endfor %}
+        <p>Všechny tyto činnosti děláme, protože chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změna klimatu týkají. Tedy všem.</p>
+    </div>
+</div>
