@@ -34,6 +34,7 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Honza Mysliveček
 * Jakub Novák
 * Petr Novotný
+* Tomáš Obšívač
 * Marcela Pokorná
 * Daniel Rychlý
 * Marko Řeháček
