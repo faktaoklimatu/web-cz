@@ -1,3 +1,7 @@
+- date: 2020-10-15
+  title: "Rozhovor na radiu Wave"
+  summary: "Ondráš Přibyla a Jan Krčál [v rozhovoru](https://wave.rozhlas.cz/nasimi-grafikami-chceme-jednoduse-popsat-rizika-klimaticke-zmeny-rikaji-clenove-8340222?fbclid=IwAR3_0OFeXdDAkRw6Xk0ORPhu77jcifWwsNp3vM21KP6FMVpciJPxh6vC79Y) komentují roční působení našeho projektu."
+
 - date: 2020-10-14
   title: "Emise skleníkových plynů Slovenska"
   summary: "Vydali jsme novou infografiku [Emise skleníkových plnyů v SR podle sektorů detailně](/infografiky/emise-sr-detail), která ukazuje, kolik Slovensko v roce 2018 vyprodukovalo emisí."
@@ -9,9 +13,25 @@
 - date: 2020-10-05
   summary: "Udělali jsme několik funkčních vylepšení našeho webu. Na titulní stránku jsme přidali rozcestník specifický pro různé role (veřejnost, učitele, novináře) a přepsali sekci o týmu. Pro zpřehlednění dlouhých textů jsme přidali rozbalovací sekce (viz například text ke grafice [Národních adaptačních strategií](/infografiky/adaptacni-strategie-cr) nebo [Potenciál vybraných způsobů snížení emisí v ČR](/infografiky/potencial-zpusobu-snizeni-emisi))."
 
+- date: 2020-10-03
+  title: "Historie výzkumu skleníkového efektu"
+  summary: "V nově zveřejněné grafice zobrazujeme [vývoj poznání o skleníkovém efektu](/infografiky/historie-sklenikoveho-efektu) od 19. století."
+
+- date: 2020-09-24
+  title: "Národní adaptační strategie"
+  summary: "Nová grafika představuje [strategii České Republiky pro adaptaci na změny klimatu](/infografiky/adaptacni-strategie-cr), dokument Ministerstva životního prostředí. Tato strategie popisuje dopady změny klimatu na našem území a doporučuje konkrétní adaptační opatření pro jednotlivé segmenty lidské činnosti, například zemědělství, nebo lesní a vodní hospodářství."
+
+- date: 2020-09-08
+  title: "Účast na expertním kulatém stolu v Senátu PČR"
+  summary: "Olda Sklenář prezentoval možné scénáře dekarbonizace české energetiky během expertního kulatého stolu na téma \"Scénáře nízkouhlíkové budoucnosti pro ČR\"."
+
 - date: 2020-09-07
   title: "Potenciál způsobů snížení emisí"
   summary: "Nová grafika se zaměřuje na [porovnání způsobů](/infografiky/potencial-zpusobu-snizeni-emisi), jak teď můžeme začít snížovat emise v Česku. Srovnáváme možnosti dopadu individuálních změn spotřeby lidí (v celospolečenském rozsahu) s možnostmi dopadu systémovějších zásahů. Zdaleka největší potenciál nabízí systémová proměna výroby elektřiny."
+
+- date: 2020-08-24
+  title: "Schématická mapa klimatické změny"
+  summary: "Pro lepší pochopení [základních souvislostí změny klimatu](/infografiky/schema-klimaticke-zmeny) jsme vytvořilii grafiku, ve které se dozvíte, jak jednotlivé oblasti lidské činnosti ovlivňují celoplanetární systémy a k jakým důsledkům takové změny vedou."
 
 - date: 2020-07-30
   title: "Keelingova křivka"
