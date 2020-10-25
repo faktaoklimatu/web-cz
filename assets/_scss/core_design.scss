@@ -15,6 +15,10 @@ body {
     }
 }
 
+main {
+    flex-grow: 1;
+}
+
 /* Headings */
 
 h2 { font-size: 1.35rem; }
@@ -243,7 +247,7 @@ img.text-img {
 /* Footer */
 
 footer {
-    flex: 1;
+    flex-shrink: 1;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;

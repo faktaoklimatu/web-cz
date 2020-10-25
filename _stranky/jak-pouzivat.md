@@ -13,11 +13,11 @@ Věříme, že volné šíření informací a kultivace veřejné debaty pomáha
 </div>
 
 <div class="section">
-<div class="container" markdown="1">
+<div class="container clearfix" markdown="1">
 ## Jak mohu použít infografiky a data z Fakta o klimatu?
 
 <figure class="d-none d-md-block float-right w-50 ml-4">
-<a href="/infografiky/emise-cr-detail"><img src="/assets/infographics/emise-cr-detail_600.png" class="w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
+<a href="/infografiky/emise-cr-detail"><img src="/assets/infographics/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
 <figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ U každého použití naší infografiky či našich dat odkazujte na stránku k
 Citaci si také můžete nechat vygenerovat přímo na stránce každé infografiky nebo datasetu kliknutím na tlačítko sdílení (se symbolem <tt>&lt;/&gt;</tt>) v sekci "Sdílení a licence".
 
 <figure class="d-md-none w-100 mt-2">
-<a href="/infografiky/emise-cr-detail"><img src="/assets/infographics/emise-cr-detail_600.png" class="w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
+<a href="/infografiky/emise-cr-detail"><img src="/assets/infographics/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
 <figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
 
