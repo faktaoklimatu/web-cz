@@ -12,15 +12,15 @@ slug: index
             <a href="#o-projektu" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i> O projektu</a>
             <!-- <a href="/podporte-nas" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a> -->
         </p>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="public-tab" data-toggle="tab" href="#public" role="tab" aria-controls="public" aria-selected="true">Pro veřejnost</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-public" data-toggle="tab" href="#public" role="tab" aria-controls="public" aria-selected="true">Pro veřejnost</h2>
             </li>
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-green" id="teachers-tab" data-toggle="tab" href="#teachers" role="tab" aria-controls="teachers" aria-selected="false">Pro učitele</h2>
+                <h2 class="nav-link bg-extralight-green" id="tab-role-teachers" data-toggle="tab" href="#teachers" role="tab" aria-controls="teachers" aria-selected="false">Pro učitele</h2>
             </li>
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-red" id="journalists-tab" data-toggle="tab" href="#journalists" role="tab" aria-controls="journalists" aria-selected="false">Pro novináře</h2>
+                <h2 class="nav-link bg-extralight-red" id="tab-role-journalists" data-toggle="tab" href="#journalists" role="tab" aria-controls="journalists" aria-selected="false">Pro novináře</h2>
             </li>
         </ul>
     </div>
