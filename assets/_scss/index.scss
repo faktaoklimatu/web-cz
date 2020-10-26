@@ -48,9 +48,12 @@
     }
 }
 
-.preview-card {
+.card {
     margin: 15px 0 15px 0;
     border-width: 2px;
+}
+
+.preview-card {
     text-decoration: none;
     text-align: left;
     // enforce 10:7 aspect ratio
