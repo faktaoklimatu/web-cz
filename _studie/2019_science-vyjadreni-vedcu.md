@@ -35,6 +35,8 @@ Klíčovou odpovědností dnešních politiků je vytvořit včas podmínky, je�
 
 Současná obrovská, zespodu jdoucí vlna mobilizace[^2] studentského klimatického hnutí (Fridays for Future a další hnutí) ukazuje, že mladí lidé situaci chápou. My jako vědci s nimi souhlasíme a podporujeme jejich požadavky na rychlou a zásadní změnu. Chápeme jako svou společenskou, morální i akademickou povinnost říci velmi jasně: pouze pokud bude lidstvo jednat rychle a rozhodně, dokážeme globální oteplování omezit a budeme schopni zastavit probíhající masové vymírání živočišných a rostlinných druhů, zachovat podmínky potřebné k produkci potravin a umožnit kvalitní život a prosperitu generace současné i těch budoucích. Právě toho chtějí mladí lidé svými protesty dosáhnout a zasluhují si náš respekt a plnou podporu.
 
+{% comment %}
+
 ## Je možné se přidat k podpisu této výzvy?
 
 <div class="row justify-content-md-center">
@@ -58,6 +60,8 @@ Současná obrovská, zespodu jdoucí vlna mobilizace[^2] studentského klimatic
     </div>
 </div>
 <br/>
+
+{% endcomment %}
 
 ## Z českých vědců se k této výzvě přidávají
 
