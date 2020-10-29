@@ -13,6 +13,22 @@ sitemap:    false
         <p class="lead pt-3">I díky vašemu příspěvku můžeme dál fungovat.</p>
         <p class="lead">Potvrzení transakce (a instrukce v případě platby převodem) jsme vám odeslali emailem. V případě dotazů se nám neváhejte ozvat na <a href="mailto:dary@faktaoklimatu.cz" title="Kontaktní adresa pro dárce">dary@faktaoklimatu.cz</a>.</p>
         <p class="lead pb-2">Chcete-li být informováni o novinkách, přihlaste se do odběru našeho newslettru nebo sledujte náš Twitter.</p>
+        <div class="payment-box">
+            <table id="payment-table">
+            <tr>
+                <th>Číslo účtu</th>
+                <td>2198370339/0800</td>
+            </tr>
+            <tr>
+                <th>VS</th>
+                <td id="vs"></td>
+            </tr>
+            <tr>
+                <th>Částka</th>
+                <td><span id="amount"></span> Kč</td>
+            </tr>
+            </table>
+        </div>
         <a href="{{ site.newsletter }}" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
         <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
         <figure class="d-md-none w-100 mt-2">
