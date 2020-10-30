@@ -8,10 +8,10 @@ intro:      "Představení Fakt o klimatu – náš příběh, naši členové."
     <div class="container">
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.intro }}</p>
-        <p>Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé. Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.</p>
+        <p>Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.</p>
         <h2>Náš příběh:</h2>
-        {% assign pribeh = site.data.pribeh %}
-        {% for item in pribeh %}
+        {% assign story = site.data.story %}
+        {% for item in story %}
         <div class="news-item">
             <div class="d-block d-md-inline-block date">
                     <p>{{ item.title}}</p>
@@ -22,5 +22,24 @@ intro:      "Představení Fakt o klimatu – náš příběh, naši členové."
         </div>
         {% endfor %}
         <p>Všechny tyto činnosti děláme, protože chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změna klimatu týkají. Tedy všem.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container"> 
+        <h2>Náš tým</h2>
+        Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací.
+        <div class="card-columns", style="margin-top: 10px;">
+            {% assign members = site.data.members %}
+            {% for item in members %}
+                <div class="card border-light mb-3"">
+                    <img class="card-img-top" style="padding:1rem" src="/assets/img/members/{{item.img}}.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ item.name}}</h5>
+                    <p class="card-text">{{ item.summary }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
