@@ -137,16 +137,16 @@ a.preview-card:hover {
 .payment-box {
   display: none;
   #payment-table {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 
     th {
       text-align: right;
-      padding: 5px 10px;
+      padding: 3px 10px;
     }
 
     td {
-      padding: 5px 10px;
-      border-left: 1px solid #a0a0d0;
+      padding: 3px 10px;
+      border-left: 2px solid $c-primary;
     }
   }
 }
