@@ -11,11 +11,16 @@ caption:    "Přehled o složení Uhelné komise a pracovních skupin. Grafika u
 data-orig:  [ [ "Zelený kruh", "http://zelenykruh.cz/na-cem-pracujeme/uhelna-komise/?fbclid=IwAR2mtTAim4IHf7yMcFuvLNjTIsLri1o40PBDjjv7uCQWe8Ty4WtBCH3nILA" ]]
 ---
 
-Uhelná komise je poradním orgánem vlády, jejím hlavním cílem je stanovit datum, kdy Česká Republika odstaví úhelné elektrárny. V komisi jsou kromě členů Poslanecké sněmovny ČR, jejích výborů a regionálních politiků zastoupeni i zástupci průmyslu, odborů, ekologů i akademické sféry. Podklady pro uhelnou komisi připravují tři experní skupiny:
+**Uhelná komise** je poradním orgánem vlády. Jejím hlavním cílem je stanovit datum, kdy Česká Republika odstaví úhelné elektrárny. V komisi jsou kromě členů Poslanecké sněmovny PČR, jejích výborů a regionálních politiků zastoupeni i zástupci průmyslu, odborářských a ekologických organizací i akademické sféry. Podklady pro uhelnou komisi připravují tři expertní skupiny, které mají za úkol zahrnout zájmy všech zůčastněných stran.
 
-1. pracovní skupina pro **stanovení harmonogramu útlumu využití uhlí, a to v celkovém kontextu energetického mixu ČR a ochrany klimatu**
-2. pracovní skupina pro **stanovení parametrů pro případný útlum zdrojů a problematiku legislativy**
-3. pracovní skupina pro **identifikaci sociálních a ekonomických dopadů**
+První pracovní skupina, skupina pro **stanovení harmonogramu útlumu využití uhlí, a to v celkovém kontextu energetického mixu ČR a ochrany klimatu**, by se měla kromě sjednocení datové základny zabývat analýzou současného energetického mixu a stanovením, realistického odhadu jeho budoucího vývoje zejména se zaměřením na zdroje a využití hnědého a černého uhlí. **Jejím výstupem by mělo být stanovení harmonogramu útlumu využití uhlí.**
+
+Druhá pracovní skupina, sukpina pro **stanovení parametrů pro případný útlum zdrojů a problematiku legislativy**, by se měla zabývat stanovením základních pravidel pro útlum jednotlivých paliv a energetických zdrojů a nutným legislativním úpravám.
+
+
+Třetí pracovní skupina, skupina pro **identifikaci sociálních a ekonomických dopadů**, by měla připravit podklady k socioekonomickým dopadům a dopadům majícím přímý či nepřímý vliv na možnosti místního rozvoje tří dotčených regionů. Zároveň je jejím úkolem identifikovat časově a finančně vymezená podpůrná a rozvojová opatření s cílem eliminovat negativní dopady transformace energetiky a využít potenciálu souvisejících změn.
+
+Více se o zaměření jednotlivých pracovních skupin se dočtete na webu [asociace ekologických organizací Zelený kruh](http://zelenykruh.cz/na-cem-pracujeme/uhelna-komise/?fbclid=IwAR2mtTAim4IHf7yMcFuvLNjTIsLri1o40PBDjjv7uCQWe8Ty4WtBCH3nILA).
 
 <details markdown=1>
 <summary>
