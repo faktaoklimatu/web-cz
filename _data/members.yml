@@ -1,28 +1,25 @@
 - name: "Ondráš Přibyla"
   summary: "Ondráš je Ondráš"
   img: "ondras-pribyla"
+  email: "ondras@faktaoklimatu.cz"
 
 - name: "Martin Ukrop"
   summary: "Martin je Martin"
   img: "martin-ukrop"
+  email: "martin@faktaoklimatu.cz"
 
 - name: "Jeňa Krčál"
   summary: "Jeňa je Jeňa"
   img: "jena-krcal"
+  email: "jena@faktaoklimatu.cz"
 
 - name: "Tom Protivínský"
   summary: "Tom je Tom"
   img: "tom-protivinsky"
+  email: "tom@faktaoklimatu.cz"
 
 - name: "Kristína Zákopčanová"
   summary: "Kiki je Kiki"
   img: "kiki-zakopcanova"
-
-- name: "Crysman"
-  summary: "Crysman je Crysman"
-  img: "crysman"
-
-- name: "Olda Sklenář"
-  summary: "Olda je Olda"
-  img: "olda-sklenar"
+  email: "kiki@faktaoklimatu.cz"
 
