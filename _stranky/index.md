@@ -33,7 +33,7 @@ slug: index
     {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
     <p class="lead">Pro pravidelné kvalitní informace o klimatické změně můžete sledovat náš newsletter nebo Twitter.
-    <!-- Komplexní a přístupný pohled na klimatickou změnu představuje naše publikace <a href="{{ site.baseurl }}/atlas">Atlas klimatické změny</a>. -->
+    Komplexní a přístupný pohled na klimatickou změnu představuje naše publikace <a href="{{ site.baseurl }}/assets/files/atlas-klimaticke-zmeny.pdf" target="_blank">Atlas klimatické změny</a>.
     Kvalitní debatu o klimatické změně a projekt Fakta o klimatu můžete také podpořit – finančně nebo používáním našich dat a grafik.</p>
     <a href="{{ site.newsletter }}" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
     <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
@@ -47,10 +47,11 @@ slug: index
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2" | split: ", " %}
     {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
-    <!-- <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p> -->
-    <!-- <a href="/atlas" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a> -->
+    <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. </p>
+    <!-- Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p> -->
+    <a href="{{ site.baseurl }}/assets/files/atlas-klimaticke-zmeny.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a>
     <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
-    <a href="/slovnik" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+    <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
     <a href="/jak-pouzivat" class="btn btn-secondary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
   </div></div>
 
