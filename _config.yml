@@ -36,6 +36,9 @@ collections:
     datasety:
         output: true
         permalink: /datasety/:title
+    rozcestniky:
+        output: true
+        permalink: /rozcestnik/:title
 sass:
     sass_dir: assets/_scss
     style: compressed
