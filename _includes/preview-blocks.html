@@ -34,6 +34,14 @@
                 <div class="card-img-overlay tags-overlay-box">
                     {% include tags.html tags=item.tags %}
                 </div>
+            {% when 'signpost' %}
+                <div class="card-body">
+                    <h5>{{ item.title }}</h5>
+                    <p class="card-text mt-3">{{ item.caption }}</p>
+                </div>
+                <div class="card-img-overlay tags-overlay-box">
+                    {% include tags.html tags=item.tags %}
+                </div>
             {% else %}
                 <p>Unknown layout.</p>
             {% endcase %}

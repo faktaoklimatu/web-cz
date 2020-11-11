@@ -32,13 +32,15 @@
         {% endif %}
         {% for col in page.collections %}
           <h2>{{col[0]}} <small class="text-secondary">({{ col[1]|size }})</small></h2>
-          {% case forloop.index %}
-            {% when 1 %}
+          {% case col[0] %}
+            {% when 'infografiky' %}
             <p class="lead">Naše infografiky týkající se tématu. Na stránce grafiky vždy naleznete zdroj dat i podrobnější informace.</p>
-            {% when 2 %}
+            {% when 'studie' %}
             <p class="lead">Naše shrnutí studií a analýz týkajících se tématu. Vždy uvádíme, proč je studie důležitá a jaké jsou její hlavní závěry.</p>
-            {% when 3 %}
+            {% when 'datasety' %}
             <p class="lead">Naše datasety vztahující se k tématu. Typicky kombinujeme více zdrojů a vysvětlujeme, jak přesně z nich vycházejí naše infografiky.</p>
+            {% when 'rozcestniky' %}
+            <p class="lead">Rozcestníky přehledně shrnují zdroje, které v souvislosti s daným tématem považujeme za důležité. U každé položky uvádíme základní charakteristiky a odkazy na původní materiály.</p>
           {% endcase %}
           {% assign items = col[1] | sort: "weight" %}
           {% include preview-blocks.html blocks=items %}
