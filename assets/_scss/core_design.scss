@@ -8,7 +8,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    text-align: justify;
 
     @media screen and (max-width: 768px) {
         text-align: left;
@@ -77,6 +76,10 @@ a {
 }
 
 /* Textual elements */
+
+p, li, dd {
+    text-align: justify;
+}
 
 p:last-child {
     margin-bottom: 0;
