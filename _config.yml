@@ -35,10 +35,10 @@ collections:
         permalink: /:collection/:title
     datasety:
         output: true
-        permalink: /datasety/:title
+        permalink: /:collection/:title
     rozcestniky:
         output: true
-        permalink: /rozcestnik/:title
+        permalink: /:collection/:title
 sass:
     sass_dir: assets/_scss
     style: compressed
