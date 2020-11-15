@@ -26,11 +26,11 @@ intro:      "Pro kultivovanou veřejnou debatu o klimatické změně jsou nezbyt
                 </summary>
                 Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek o klimatické změně. Lze začít u zvyšování teplot, u emisí skleníkových plynů anebo třeba u dopadů změny na obyvatele různých oblastí. My jsme v Atlase uspořádali grafiky a texty tak, že ilustrují následující linku argumentů.
                 <ol>
-                    <li><b>Lidská činnost mění složení atmosféry</b> - zejména kvůli spalování uhlí, ropy a plynu se v atmosféře hromadí oxid uhličitý.</li>
-                    <li><b>Oxid uhličitý zesiluje skleníkový efekt</b> - výpočty a modely ukazují, že při zvýšení koncentrací CO2 z 280ppm na 540ppm se planeta jako celek oteplí v průměru o 3 °C.</li>
-                    <li><b>Globální oteplování je už nyní jasně pozorovaný a daty dobře podložený jev</b> - v průběhu 20. Století se teplota zvýšila o 1,2 °C, přičemž oteplení nebylo všude stejné. Některé části světa se  za posledních 60 let oteplily téměř o 5°C. Současné globální oteplování probíhá také vyjímečně rychle.</li>
-                    <li><b>Česká republika se otepluje přibližně dvakrát rychleji než světový průměr</b> - za posledních 60 let se oteplila o 2°C,  je to dáno její vnitrozemskou polohou na severní polokouli. Jedním z důsledků je masivní úhyn smrkových lesů.</li>
-                    <li><b>Kdyby se planeta oteplila o více než 1.5 °C, došlo by ke kolapsu mnoha světových ekosystémů a velkým změnám v kryosféře a atmosférických a oceánských prouděních</b> - proto se státy v Pařížské dohodě zavázaly k úsilí udržet globální oteplování pod hranicí 1.5 °C.</li>
+                    <li><b>Lidská činnost mění složení atmosféry</b> – zejména kvůli spalování uhlí, ropy a plynu se v atmosféře hromadí oxid uhličitý.</li>
+                    <li><b>Oxid uhličitý zesiluje skleníkový efekt</b> – výpočty a modely ukazují, že při zvýšení koncentrací CO2 z 280ppm na 540ppm se planeta jako celek oteplí v průměru o 3 °C.</li>
+                    <li><b>Globální oteplování je už nyní jasně pozorovaný a daty dobře podložený jev</b> – v průběhu 20. Století se teplota zvýšila o 1,2 °C, přičemž oteplení nebylo všude stejné. Některé části světa se  za posledních 60 let oteplily téměř o 5°C. Současné globální oteplování probíhá také vyjímečně rychle.</li>
+                    <li><b>Česká republika se otepluje přibližně dvakrát rychleji než světový průměr</b> – za posledních 60 let se oteplila o 2°C,  je to dáno její vnitrozemskou polohou na severní polokouli. Jedním z důsledků je masivní úhyn smrkových lesů.</li>
+                    <li><b>Kdyby se planeta oteplila o více než 1.5 °C, došlo by ke kolapsu mnoha světových ekosystémů a velkým změnám v kryosféře a atmosférických a oceánských prouděních</b> – proto se státy v Pařížské dohodě zavázaly k úsilí udržet globální oteplování pod hranicí 1.5 °C.</li>
                     <li><b>Aby se oteplení podařilo udržet pod hranicí 1,5°C, je potřeba dosáhnout uhlíkové neutrality do roku 2050.</b></li>
                 </ol>
                 </details>
