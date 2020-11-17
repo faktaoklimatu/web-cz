@@ -5,7 +5,7 @@ slug:        "energeticky-scenar-bloomberg"
 published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
+tags-topics: [ energetika, opatreni, scenare-cr-2030 ]
 caption:     "BloombergNEF BloombergNEF BloombergNEF BloombergNEF"
 # data-our:    "https://example.com"
 # data-orig:   []
