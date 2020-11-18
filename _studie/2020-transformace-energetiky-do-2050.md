@@ -1,7 +1,8 @@
 ---
 layout:     study
 title:      "Transformace energetiky do 2050"
-slug:       2020_transformace-energetiky-do-2050
+slug:       2020-transformace-energetiky-do-2050
+redirect_from: "/2020-transformace-energetiky-do-2050"
 published:  2020-05-31
 weight:     96
 tags-scopes: [ svet ]

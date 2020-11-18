@@ -1,7 +1,8 @@
 ---
 layout:     study
 title:      "Obavy mladých protestujících jsou opodstatněné"
-slug:       2019_science-vyjadreni-vedcu
+slug:       2019-science-vyjadreni-vedcu
+redirect_from: "/2019-science-vyjadreni-vedcu"
 published:  2019-10-16
 weight:     100
 tags-scopes: [ svet ]
