@@ -1,8 +1,8 @@
 ### Emise skleníkových plynů
 
 Většina z pokrytých studií nějakým způsobem počítá emise CO<sub>2</sub> v energetice a jakého snížení dosáhne jejich scénář v roce 2030. Takové odhady typicky stojí na emisních koeficientech, tedy kolik gramů CO<sub>2</sub> (nebo CO<sub>2</sub>eq) způsobí hrubá výroba 1 kWh elektřiny. Emisní koeficienty jsou dvou druhů:
-1. **Přímé emise**: zahrnují jen provoz elektrárny (u fosilních zdrojů to je hlavně CO<sub>2</sub> vypouštěné při spalování).
-2. **Emise celého cyklu**: navíc zahrnují emise spojené se stavbou elektrárny a výrobou jejích komponent (např. tavení křemíku pro solární panely), emise spojené s těžbou a úniky skleníkových plynů při těžbě a transportu surovin (např. u zemního plynu).
+1. **Přímé emise:** zahrnují jen provoz elektrárny (u fosilních zdrojů to je hlavně CO<sub>2</sub> vypouštěné při spalování).
+2. **Emise celého cyklu:** navíc zahrnují emise spojené se stavbou elektrárny a výrobou jejích komponent (např. tavení křemíku pro solární panely), emise spojené s těžbou a úniky skleníkových plynů při těžbě a transportu surovin (např. u zemního plynu).
 
 Pokud bychom se chtěli jen dívat na úspory v emisích skleníkových plynů produkovaných na českém území, tak to nejlépe vyjádří přímé emise (příp. doplněné o emise související s těžbou uhlí). Takovéto národní emise srovnáváme v mnohých [našich infografikách](/temata/emise/) a také se na ně vztahují emisní cíle Evropské unie a Česka.
 
