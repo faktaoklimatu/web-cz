@@ -1,7 +1,8 @@
 ---
 layout:     study
 title:      "Očekávané klimatické podmínky v ČR"
-slug:       2019_klimaticke-podminky-cr-1
+slug:       2019-klimaticke-podminky-cr-1
+redirect_from: "/2019-klimaticke-podminky-cr-1"
 published:  2019-08-22
 weight:     99
 tags-scopes: [ cr ]

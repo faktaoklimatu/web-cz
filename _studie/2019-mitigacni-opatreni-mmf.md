@@ -1,7 +1,8 @@
 ---
 layout:     study
 title:      "Jak zmírnit dopady klimatické změny"
-slug:       2019_mitigacni-opatreni-mmf
+slug:       2019-mitigacni-opatreni-mmf
+redirect_from: "/2019-mitigacni-opatreni-mmf"
 published:  2019-12-03
 weight:     120
 tags-scopes: [ svet ]
