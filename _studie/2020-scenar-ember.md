@@ -1,7 +1,8 @@
 ---
 layout:      infographic
 title:       "Ember: Scénář transformace elektroenergetiky ČR"
-slug:        "energeticky-scenar-ember"
+slug:        "2020-scenar-ember"
+redirect_from: "/2020-scenar-ember"
 # published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]

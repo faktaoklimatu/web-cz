@@ -1,7 +1,8 @@
 ---
 layout:      infographic
 title:       "Energynautics: Scénář transformace elektroenergetiky ČR"
-slug:        "energeticky-scenar-energynautics"
+slug:        "2018-scenar-energynautics"
+redirect_from: "/2018-scenar-energynautics"
 # published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]

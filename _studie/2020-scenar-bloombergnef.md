@@ -1,7 +1,8 @@
 ---
 layout:      infographic
 title:       "BloombergNEF: Scénář transformace elektroenergetiky ČR"
-slug:        "energeticky-scenar-bloomberg"
+slug:        "2020-scenar-bloombergnef"
+redirect_from: "/2020-scenar-bloombergnef"
 # published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]
