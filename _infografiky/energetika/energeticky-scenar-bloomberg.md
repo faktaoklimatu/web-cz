@@ -7,47 +7,31 @@ weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni, scenare-cr-2030 ]
 caption:     "BloombergNEF BloombergNEF BloombergNEF BloombergNEF"
-# data-our:    "https://example.com"
+data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 # data-orig:   []
 ---
 
-## Jak číst tento graf
+{% include _texts/energeticke-scenare/jak-cist.md %}
 
-[Doplnit...]
-
-## Další komentáře
+{% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
 <summary>
-<h3>Rozdělení zdrojů do kategorií</h3>
+<h2>Metodické komentáře ke grafice</h2>
 </summary>
+### Rozdělení zdrojů do kategorií
+{% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
-[Doplnit...]
-</details>
+#### Rok 2030
 
-<details markdown=1>
-<summary>
-<h3>V čem se scénáře shodují</h3>
-</summary>
+Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
 
-[Doplnit...]
+{% include _texts/energeticke-scenare/emise.md %}
 </details>
 
 <details markdown=1>
 <summary>
-<h3>Emise skleníkových plynů</h3>
+<h2>O studii BloombergNEF</h2>
 </summary>
-
-[Doplnit...]
+...
 </details>
-
-[Doplnit...]
-</details>
-
-## O studii NECP
-
-[Doplnit...]
-
-## Zdroj dat
-
-[Doplnit...]

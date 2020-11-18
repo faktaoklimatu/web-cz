@@ -7,68 +7,28 @@ weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni, scenare-cr-2030 ]
 caption:     "Ember Ember Ember Ember"
-# data-our:    "https://example.com"
+data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 # data-orig:   []
 ---
 
-## Jak číst tento graf
+{% include _texts/energeticke-scenare/jak-cist.md %}
 
-V této infografice dáváme základní přehled o scénáři transformace české elektroenergetiky do roku 2030 podle studie Ember. Tato grafika je součastí [kolekce grafik](/temata/scenare-cr-2030/) k různým scénářům vývoje elektroenergetiky v ČR. 
-
-Stav v roce 2019 a stav v roce 2030 podle tohoto scénáře srovnáváme ve dvou hlavních parametrech:
- 1. **instalovaný výkon (dole)**: Tento parametr zachycuje, jaké elektrárny máme a můžeme v budoucnu mít. Tedy kolik bude v Česku konvenčních elektráren na uhlí nebo na plyn, kolik solárních panelů a kolik větrných elektráren, kolik bioplynových stanic, kolik tepláren na biomasu, apod. Čtverečky zobrazují instalovaný výkon, ale nijak nevypovídají o zastavěné ploše, která by byla pro každý typ elektráren jiná.
- 2. **výroba elektřiny (nahoře)**: Tento parametr zachycuje, kolik které zdroje elektřiny skutečně dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý vývoz_ nebo že dokonce budeme více elektřiny dovážet než vyvážet. Spotřeba je odvozená jako rozdíl výroby a čistého vývozu (tedy formálně jde o součet tzv. _čisté spotřeby_ a _ztrát v sítích_).
-
-**Koeficient využití**: Množství vyrobené elektřiny není přímo úměrné instalovanému výkonu, protože každý typ zdroje má jiné možnosti a jinou roli v systému. Např. stávající jaderné elektrárny se vyplatí provozovat v nepřetržitém provozu, jejich provozní náklady jsou relativně nízké a jejich potřebné technologické odstávky jsou krátké, proto většinu času vyrábějí na hranici svého instalovaného výkonu. V technickém jazyce to znamená, že jejich _koeficient (ročního) využití_ se blíží 100 %. Naopak solární elektrárny vyrábějí na hranici svého instalovaného výkonu jen při ideálních podmínkách (slunce kolmo k panelu, jasná obloha). Spoustu času panely nevyrábějí vůbec (v noci) nebo vyrábějí málo (zataženo), proto je jejich koeficient využití blízko 10 %. Elektrárny na zemní plyn by mohly fungovat nepřetržitě, ale plyn je na výrobu elektřiny poměrně drahý a současně je možné je velmi rychle zapínat a vypínat. Proto ve scénářích s velkým množstvím nestabilních obnovitelných zdrojů se vyplatí je používat jako záložní zdroj, který primárně vyrábí, když nesvítí nebo nefouká nebo když například dojde k odstávce některého z jaderných bloků. Proto je jejich koeficient využití výrazně nižší, než třeba právě u jádra.
-
-**Emise skleníkových plynů**: Postupný odklon od fosilních zdrojů a nejvíce pak od uhlí znamená snížení emisí skleníkových plynů. Každá studie takové snížení počítá pomocí vlastní metodiky (a nebo nepočítá vůbec). Proto pro všechny studie **uvádíme náš výpočet snížení emisí** založený na rozdílu v mixu výroby mezi lety 2019 a 2030 a na emisních koeficientech od IPCC. Více o metodice výpočtu najdete níže.
-
-### V čem se scénáře shodují
-
-[Všechny tyto scénáře](/temata/scenare-cr-2030/) ukazují, že významný **odklon od uhlí jako primárního zdroje elektřiny je proveditelný**, resp. že překážky k takovému odklonu nejsou na úrovni bezpečnosti dodávek nebo stability přenosové soustavy. Potenciální překážky mohou zůstávat na úrovni nižší infrastruktury distribuční sítě, alokace investic, lidských zdrojů, legislativy nebo vůle ke změně.
-
-Scénáře také do roku 2030 ve svých hlavních variantách **nepočítají s velkým rozvojem skladování elektřiny** nebo výroby zeleného vodíku.
-
-Scénáře se také shodují v **instalovaném výkonu jaderných a vodních elektráren**. U těchto zdrojů je dlouhý proces výstavby a proto žádný ze scénářů neočekává do roku 2030 podstatné změny. Dostavba elektrárny v Dukovanech bude dokončena nejdříve v roce 2036 (pokud k ní vůbec dojde). Stejně tak nelze očekávat v další dekádě stavbu podstatné vodní elektrárny, některé scénáře počítají s mírným rozvojem v oblasti malých vodních elektráren.
+{% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
 <summary>
 <h2>Metodické komentáře ke grafice</h2>
 </summary>
+{% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
-### Rozdělení zdrojů do kategorií
-
-#### Rok 2019
-Pro výrobu za rok 2019 vycházíme z dat [Energetického regulačního úřadu](https://www.eru.cz) (ERÚ) a uvažujeme množství vyrobené elektřiny z dané suroviny nehledě na typ elektrárny, ve které byla vyrobena. Pro instalovaný výkon v roce 2019 vycházíme z dat ERÚ a státní akciové společnosti [OTE](https://www.ote-cr.cz/cs), která má v Česku roli operátora trhu s elektřinou a plynem. Jednotlivé kategorie určujeme takto:
-
-* **uhlí**: Pro instalovaný výkon uvažujeme všechny tzv. _parní elektrárny_ kromě těch, kde probíhá spalování čisté biomasy a kromě spaloven komunálního odpadu (obě výjimky podle registru OTE). Jako uhelné elektrárny a teplárny tedy uvažujeme i ty, ve kterých probíhá spoluspalování biomasy (poměrně časté) nebo spoluspalování zemního plynu či ostatních plynů (např. důlních plynů, vysokopecních plynů, aj.).
-* **plyn**: Pro instalovaný výkon uvažujeme malé plynové kogenerační jednotky (teplárny, které vyrábějí i elektřinu) a velké paroplynové elektrárny včetně těch, které spalují koksárenský plyn vyrobený z uhlí. Ve výrobě uvažujeme jak zemní plyn, tak všechny ostatní plyny (koksárenský, důlní, vysokopecní, aj.). Část z těchto ostatních plynů se fakticky spoluspaluje v uhelných elektrárnách (viz výše).
-* **biomasa**: Pro instalovaný výkon uvažujeme pouze elektrárny v registru OTE v kategorii _spalování čisté biomasy_. Pro výrobu uvažujeme veškerou elektřinu z biomasy včetně úměrné části vyrobené ze spoluspalování. Koeficient využití tedy je u biomasy trochu nadsazený.
-* **bioplyn**: Data o instalovaném výkonu bioplynových stanic jsou z registru OTE, výroba z bioplynu probíhá téměř výhradně v těchto zařízeních a tak dobře odpovídají instalovanému výkonu.
-
-Kromě toho zbývá malá kategorie ostatních zdrojů, které v grafikách pro přehlednost nezobrazujeme (protože energetické scénáře je typicky neuvádějí). Jejich instalovaný výkon je asi 320 MW, tedy asi 1,5 % celkového výkonu. Tento výkon odpovídá spalovnám odpadu a dalším malým kogeneračním jednotkám, ke kterým nemáme dostupná data. Ostatní výroba je 0,27 TWh, tedy jen asi 0,3 % celkové výroby. Zde zahrnujeme komunální a průmyslový odpad, odpadní teplo, topné oleje a ostatní kapalná paliva. Tedy výroba opět přímo neodpovídá zdrojům, ale v celkovém pohledu je tato kategorie zanedbatelná.
-
-#### Rok 2030
+### Rozdělení zdrojů do kategorií: rok 2030
 
 Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, aby více odpovídala našemu rozdělení pro rok 2019 a také dalším studiím. 
 
 * **plyn**: Studie Ember jako plyn označuje pouze paroplynové elektrárny a nové plynové kogenerační jednotky, protože stávající kogenerační jednotky nejsou předmětem optimalizace v jejich modelu. My je této kategorii přidáváme, konkrétně kategorii “Other thermal” z jejich podkladových dat. Kromě stávajících kogeneračních jednotek jsou v kategorii _Other thermal_ další zařízení, jako například spalovny odpadu. Ty jsou ovšem zanedbatelné instalovaným výkonem i výrobou, a tak jejich zařazení do kategorie plyn nemá znatelný vliv na grafiku ani na odhad emisí.
 * **biomasa a bioplyn**: Studie tuto kategorii neuvádí (protože není předmětem optimalizace v modelu), my do ní z podkladových dat vybíráme kategorii _Other renewable_, což je v naprosté většině právě biomasa a bioplyn (kromě toho také biologicky rozložitelný komunální odpad).
 
-### Emise skleníkových plynů
-
-Většina z pokrytých studií nějakým způsobem počítá emise CO<sub>2</sub> v energetice a jakého snížení dosáhne jejich scénář v roce 2030. Takové odhady typicky stojí na emisních koeficientech, tedy kolik gramů CO<sub>2</sub> (nebo CO<sub>2</sub>eq) způsobí hrubá výroba 1 kWh elektřiny. Emisní koeficienty jsou dvou druhů:
-1. **Přímé emise**: zahrnují jen provoz elektrárny (u fosilních zdrojů to je hlavně CO<sub>2</sub> vypouštěné při spalování).
-2. **Emise celého cyklu**: navíc zahrnují emise spojené se stavbou elektrárny a výrobou jejích komponent (např. tavení křemíku pro solární panely), emise spojené s těžbou a úniky skleníkových plynů při těžbě a transportu surovin (např. u zemního plynu).
-
-Pokud bychom se chtěli jen dívat na úspory v emisích skleníkových plynů produkovaných na českém území, tak to nejlépe vyjádří přímé emise (příp. doplněné o emise související s těžbou uhlí). Takovéto národní emise srovnáváme v mnohých [našich infografikách](/temata/emise/) a také se na ně vztahují emisní cíle Evropské unie a Česka.
-
-Na druhou stranu, pokud nás v důsledku nejvíce zajímá celosvětová suma emisí a český přínos k ní, tak to nejlépe vyjádří emise celého cyklu. Fakta o klimatu se přiklání k tomuto druhému pohledu z několika důvodů:
-* Není hodnotné snižovat české emise za cenu výrazného navýšení emisí jinde. Proto naše metrika potřebuje zachytit i takové případné navýšení jinde.
-* Scénáře transformace elektroenergetiky stojí na výrazném zvyšování obnovitelných zdrojů, jejichž přímé emise jsou téměř nulové. Přímé emise tedy do určité míry těmto zdrojům oproti konvenčním fosilním zdrojům straní. Emise celého cyklu jsou férovější.
-
-Pro výpočet emisí tedy používáme emisní koeficienty celého cyklu, konkrétně mediánové hodnoty z páte hodnotící zprávy IPCC (Tabulka A.III.2 v [příloze III](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf)).
-
+{% include _texts/energeticke-scenare/emise.md %}
 </details>
 
 <details markdown=1>
