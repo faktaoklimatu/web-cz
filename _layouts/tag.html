@@ -31,12 +31,12 @@
           <p class="lead">Všechny infografiky, studie a datasety týkajíci se {% if tag.is-scope %}oblasti{% else %}tématu{% endif %} "{{ tag.name-long }}".</p>
         {% endif %}
         {% for col in page.collections %}
-          <h2>{{col[0]}} <small class="text-secondary">({{ col[1]|size }})</small></h2>
+          <h2>{% if col[0] == 'studie' %}Studie a rešerše{% else %}{{ col[0] }}{% endif %} <small class="text-secondary">({{ col[1]|size }})</small></h2>
           {% case col[0] %}
             {% when 'infografiky' %}
             <p class="lead">Naše infografiky týkající se tématu. Na stránce grafiky vždy naleznete zdroj dat i podrobnější informace.</p>
             {% when 'studie' %}
-            <p class="lead">Naše shrnutí studií a analýz týkajících se tématu. Vždy uvádíme, proč je studie důležitá a jaké jsou její hlavní závěry.</p>
+            <p class="lead">Naše rešerše a shrnutí studií týkajících se tématu. U studií uvádíme, proč je studie důležitá a jaké jsou její hlavní závěry.</p>
             {% when 'datasety' %}
             <p class="lead">Naše datasety vztahující se k tématu. Typicky kombinujeme více zdrojů a vysvětlujeme, jak přesně z nich vycházejí naše infografiky.</p>
           {% endcase %}
