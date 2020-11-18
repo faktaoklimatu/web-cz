@@ -14,7 +14,7 @@ Zpráva se zabývá celým sektorem energetiky, který vedle výroby elektřiny 
 "
 summary:    |
     * Současné cíle a závazky snižování emisí CO<sub>2</sub> povedou k zastavení růstu ročních emisí na hodnotě okolo 33 Gt/rok. Pro naplnění Pařížské dohody a zastavení nárůstu světové teploty okolo 2 °C je potřeba světové emise do roku 2050 snížit na 10 Gt/rok. Takového snížení emisí dosahuje transformační scénář, který je založený na elektrifikaci, obnovitelný zdrojích energie, zvyšování flexibility sítě a využití elektřiny k výrobě vodíku.
-    * Podobně jako [Sternova zpráva](/studie/2006_sternova-zprava) i tato publikace říká, že **investice do energetické udržitelnosti se jednoznačně vrátí**, respektive, že náklady současného směřování budou vyšší než náklady transformačního scénáře. Agentura ve své zprávě vyčíslila čistý rozdíl mezi plánovaným a transformačním scénářem (PES vs. TES v roce 2050) v zaměstnanosti o +0,15 %, v HDP o +2,4 % a v indikátoru blahobytu dokonce o +13,5 %.
+    * Podobně jako [Sternova zpráva](/studie/2006-sternova-zprava) i tato publikace říká, že **investice do energetické udržitelnosti se jednoznačně vrátí**, respektive, že náklady současného směřování budou vyšší než náklady transformačního scénáře. Agentura ve své zprávě vyčíslila čistý rozdíl mezi plánovaným a transformačním scénářem (PES vs. TES v roce 2050) v zaměstnanosti o +0,15 %, v HDP o +2,4 % a v indikátoru blahobytu dokonce o +13,5 %.
     * Celkové investice nutné k naplnění současných závazků zpráva odhaduje na 95 biliónů dolarů. Oproti tomu investice do transformačního scénáře zpráva odhaduje na 110 biliónů dolarů a celkové investice nutné k úplné dekarbonizaci energetiky do roku 2050 na 130 biliónů dolarů. Přínosy transformace jsou však vyšší než dodatečné investice.
     * Ze světových regionů bude **z dodatečných investic do transformace energetiky profitovat nejvíce Evropská unie**, následována Severní Amerikou. V regionu Evropské unie, vychází v transformačním scénáři zaměstnanost o +2,6 %, HDP o +7,4 % a blahobyt o +10,6 % vyšší než v plánovaném scénáři. Na region EU připadne 5 ze 6 nově vzniklých pracovních míst a více jak 50 % očekávaného nárůstu HDP.
 
@@ -42,7 +42,7 @@ V [první kapitole]({{ page.study-pdf }}#page=57) zprávy jsou podrobněji disku
 * **Transformační scénář** (_Transforming Energy Scenario, TES_) popisuje ambiciózní, ale realistickou transformaci energetiky založenou z velké části na obnovitelných zdrojích energie. Tento scénář je v souladu s cíli Pařížské dohody zastavit globální oteplování pod hodnotou +2 °C.
 * **Úplná dekarbonizace** (_Deep Decarbonization Perspective, DDP_) popisuje možnosti dosažení nulových emisí CO<sub>2</sub> do roku 2050.
 
-[![Velikost redukce emisí: obnovitelné zdroje a efektivita]({{ site.baseurl | append: "/assets/studies/" }}2020_transformace-energetiky-do-2050-graf.png){:.text-img}]({{ page.study-pdf }}#page=33){:.no-ext-link-icon}
+[![Velikost redukce emisí: obnovitelné zdroje a efektivita]({{ site.baseurl | append: "/assets/studies/" }}2020-transformace-energetiky-do-2050-graf.png){:.text-img}]({{ page.study-pdf }}#page=33){:.no-ext-link-icon}
 
 ### Socioekonomické ukazatele
 

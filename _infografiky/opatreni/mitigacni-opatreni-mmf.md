@@ -42,5 +42,5 @@ Mezinárodní měnový fond v roce 2019 publikoval [studii](https://www.imf.org/
 
 ## Další zdroje
 
-* Shrnutí zprávy Mezinárodního měnového fondu: [Jak zmírnit dopady klimatické změny](/studie/2019_mitigacni-opatreni-mmf)
+* Shrnutí zprávy Mezinárodního měnového fondu: [Jak zmírnit dopady klimatické změny](/studie/2019-mitigacni-opatreni-mmf)
 * [Originální studie Mezinárodního měnového fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019)

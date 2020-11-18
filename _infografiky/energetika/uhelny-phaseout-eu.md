@@ -39,7 +39,7 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 
 **Jakými zdroji je uhlí při výrobě elektřiny nahrazováno?** V USA bylo uhlí dosud nahrazováno z velké části zemním plynem, v případě EU především obnovitelnými zdroji. Detaily viz související infografika o [výrobě elektřiny ve světových regionech](/elektrina-svet). Uhelný phase-out nutně neznamená zavření všech současných uhelných elektráren. Napříč Evropou jsou některé uhelné elektrárny přestavovány na zemní plyn (který má asi poloviční emisní intenzitu oproti uhlí) nebo na biomasu (jejíž emisní intenzita závisí na způsobu výroby a transportu biomasy, samotné spalování přirozeně vyrostlé biomasy je v principu uhlíkově neutrální).
 
-**Jaké by byly dopady uzavření českých uhelných elektráren do roku 2030 na stabilitu elektrizační soustavy?** Podívejte se na náš výtah ze související [studie od Energynautics](/studie/2018_energetika-cr-bez-uhli).
+**Jaké by byly dopady uzavření českých uhelných elektráren do roku 2030 na stabilitu elektrizační soustavy?** Podívejte se na náš výtah ze související [studie od Energynautics](/studie/2018-energetika-cr-bez-uhli).
 
 **Jaké jsou konkrétní mechanismy, jejichž prostřednictvím lze realizovat uhelný phase-out?**
 
@@ -55,6 +55,6 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 
 * Infografika je založená na datech od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
 * Pro státy EU Ember vychází především z dat Eurostatu. Data za roky 2018 a 2019 (pro které zatím nejsou oficiální statistiky Eurostatu zpracované) vychází z vlastní analytické práce této organizace, založené na datech Evropské sítě provozovatelů přenosových soustav elektřiny (ENTSO-E) a na dalších zdrojích. Tyto údaje jsou tedy jejich nejlepší možné odhady skutečného stavu, jak ho později zachytí Eurostat. Z minulých let se ukazuje, že tyto odhady zachycují realitu velmi přesně, s odchylkami v řádu desetin procenta celkové produkce elektřiny.
-* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020_globalni-zprava-o-elektrine). Tato infografika vychází z datasetu, který byl přílohou této zprávy.
+* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020-globalni-zprava-o-elektrine). Tato infografika vychází z datasetu, který byl přílohou této zprávy.
 * Přehled o termínech phase-outu je založen na rešerši organizace Europe Beyond Coal nazvané [Coal Exit Tracker](https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4). Některé údaje jsme zpřesnili na základě naší vlastní rešerše.
 * Data o populaci jsou převzata od Organizace spojených národů.
