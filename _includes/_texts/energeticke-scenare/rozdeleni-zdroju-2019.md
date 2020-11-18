@@ -1,4 +1,3 @@
-
 ### Rozdělení zdrojů do kategorií: rok 2019
 Pro výrobu za rok 2019 vycházíme z dat [Energetického regulačního úřadu](https://www.eru.cz) (ERÚ) a uvažujeme množství vyrobené elektřiny z dané suroviny nehledě na typ elektrárny, ve které byla vyrobena. Pro instalovaný výkon v roce 2019 vycházíme z dat ERÚ a státní akciové společnosti [OTE](https://www.ote-cr.cz/cs), která má v Česku roli operátora trhu s elektřinou a plynem. Jednotlivé kategorie určujeme takto:
 

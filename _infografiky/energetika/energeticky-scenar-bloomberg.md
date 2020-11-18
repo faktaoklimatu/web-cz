@@ -19,10 +19,9 @@ data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUA
 <summary>
 <h2>Metodické komentáře ke grafice</h2>
 </summary>
-### Rozdělení zdrojů do kategorií
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
-#### Rok 2030
+### Rozdělení zdrojů do kategorií: rok 2030
 
 Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
 

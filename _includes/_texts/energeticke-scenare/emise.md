@@ -1,4 +1,3 @@
-
 ### Emise skleníkových plynů
 
 Většina z pokrytých studií nějakým způsobem počítá emise CO<sub>2</sub> v energetice a jakého snížení dosáhne jejich scénář v roce 2030. Takové odhady typicky stojí na emisních koeficientech, tedy kolik gramů CO<sub>2</sub> (nebo CO<sub>2</sub>eq) způsobí hrubá výroba 1 kWh elektřiny. Emisní koeficienty jsou dvou druhů:
