@@ -2,7 +2,10 @@
 layout:      infographic
 title:       "Energynautics: Scénář transformace elektroenergetiky ČR"
 slug:        "2018-scenar-energynautics"
-redirect_from: "/2018-scenar-energynautics"
+redirect_from:
+  - /2018-scenar-energynautics
+# TODO: Sloučit s předchozí stránkou studie.
+#  - /2018-energetika-cr-bez-uhli
 # published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]
@@ -42,7 +45,7 @@ Studie, ze které v této vizualizaci vycházíme, byla společnosti Energynauti
 
 Původní studie byla zveřejněna v květnu 2018 pod názvem [_Czech Power Grid without Electricity from Coal by 2030_](Czech Power Grid without Electricity from Coal by 2030) s podtitulem _Possibilities for Integration of Renewable Resources and Transition into a System Based on Decentralized Sources_. K dispozici je i [pětistránkové shrnutí studie](https://frankbold.org/sites/default/files/publikace/infolist-sit_bez_uhli.pdf) v českém jazyce.
 
-V říjnu 2018 byla publikována [doplňující studie](https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf), která upřesňuje a opravuje některé informace z původní studie. Dále rozšiřuje scénář o čtyři další varianty budoucího vývoje: (1) extrémní zima (tři týdny s průměrnou teplotou pod −15 °C) a s tím související zvýšená poptávka po energii; (2) ukončení provozu Jaderné elektrárny Dukovany do roku 2030; (3) snížení produkce elektřiny v Německu, Francii a Polsku a tudíž omezené možnosti importu z Německa a Polska; (4) rozšíření elektromobility a tepelných čerpadel v ČR.
+V říjnu 2018 byla publikována [doplňující studie](https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf), která upřesňuje a opravuje některé informace z původní studie. Dále rozšiřuje scénář o čtyři další varianty budoucího vývoje: (1) extrémní zima (tři týdny s průměrnou teplotou pod −15 °C) a s tím související zvýšená poptávka po energii; (2) ukončení provozu Jaderné elektrárny Dukovany do roku 2030; (3) omezení možností importu elektřiny ze sousedních zemí v důsledku snížení produkce v Německu, Francii a Polsku; (4) rozšíření elektromobility a tepelných čerpadel v ČR.
 
 ### Zaměření studie
 
@@ -58,6 +61,11 @@ Model uvažuje pouze přenosovou soustavu ČR a agregovanou soustavu na evropsk�
 
 Studie se taktéž nezabývá výpočtem nutných investic do zdrojů a infrastruktury, ani nevyčísluje úspory v emisích skleníkových plynů z výroby elektřiny.
 
+### Model přenosové soustavy a spotřeby
+
+Studie modeluje elektrizační soustavu na dvou úrovních detailu. Pro Českou republiku používá podrobný statický model přenosové soustavy (220 a 400kV vedení) s linearizovanými toky. Na mezinárodní úrovni pak uvažuje agregovaný model evropské sítě ENTSO-E.
+
+Výroba a spotřeba elektřiny jsou modelovány v hodinovém rozlišení podle dat ENTSO-E, přičemž rozložení spotřeby v rámci ČR je zhruba úměrné rozložení obyvatelstva. Počasí je modelováno po 15 minutách a to podle roku 2012, který byl pro solární a větrné zdroje poměrně nepříznivý.
 </details>
 
 <details markdown=1>
@@ -65,5 +73,14 @@ Studie se taktéž nezabývá výpočtem nutných investic do zdrojů a infrastr
 <h2>Výsledky studie Energynautics</h2>
 </summary>
 
-Hlavním závěrem studie je, že předpokládaný rozvoj obnovitelných zdrojů neohrozí stabilitu sítě ani bezpečnost dodávek elektřiny a stávající podoba přenosové sítě není pro takový rozvoj obnovitelných zdrojů energie překážkou.
+Hlavním závěrem studie je, že předpokládaný rozvoj obnovitelných zdrojů neohrozí stabilitu sítě ani bezpečnost dodávek elektřiny a stávající podoba přenosové sítě není pro takový rozvoj obnovitelných zdrojů energie překážkou. Navíc v hlavní variantě scénáře ČR zůstane čístým vývozcem elektřiny.
+
+Doplňující studie navíc ukazuje, že bezpečnost dodávek elektřiny bude zajištěna i v dalších variantách budoucího vývoje: (1) při neplánovaném výpadku největšího zdroje v české elektrizační síti, jednoho bloku Jaderné elektrárny Temelín; (2) při velmi chladné zimě, kdy by po tři týdny průměrná teplota klesala k −15 °C; (3) při nárůstu spotřeby v důsledku nástupu tepelných čerpadel a elektromobility a (4) při současném omezení instalovaného výkonu v Polsku, Německu a Francii.
+
+Stávající podoba české elektrizační soustavy není překážkou pro přechod na čistější energetiku díky těmto důvodům:
+
+*   Soustava je dimenzována s vysokým koeficientem bezpečnosti.
+*   Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
+*   Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
+*   Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
 </details>
