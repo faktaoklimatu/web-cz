@@ -6,7 +6,7 @@ redirect_from: "/emise-cr-vyvoj"
 published:     2020-10-09
 weight:        75
 tags-scopes:   [ cr ]
-tags-topics:   [ emise ]
+tags-topics:   [ emise, energetika ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 200 mil. tun CO<sub>2</sub>eq, klesly celkové emise ČR o více než třetinu na 129 mil. tun CO<sub>2</sub>eq v roce 2018."
 data-our:   "https://docs.google.com/spreadsheets/d/1CfPYmK_buWl4pYH025dbCo3mj2bCzZ2udxRbUujdrm0/edit?usp=sharing"
 data-orig:  [
