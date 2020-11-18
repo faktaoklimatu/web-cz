@@ -7,44 +7,31 @@ weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni, scenare-cr-2030 ]
 caption:     "Energynautics Energynautics Energynautics Energynautics"
-# data-our:    "https://example.com"
+data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 # data-orig:   []
 ---
 
-## Jak číst tento graf
+{% include _texts/energeticke-scenare/jak-cist.md %}
 
-[Doplnit...]
-
-## Další komentáře
+{% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
 <summary>
-<h3>Rozdělení zdrojů do kategorií</h3>
+<h2>Metodické komentáře ke grafice</h2>
 </summary>
+### Rozdělení zdrojů do kategorií
+{% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
-[Doplnit...]
+#### Rok 2030
+
+Čísla udávaná přímo ve studii dobře odpovídají naší kategorizaci, takže je přímo přebíráme.
+
+{% include _texts/energeticke-scenare/emise.md %}
 </details>
 
 <details markdown=1>
 <summary>
-<h3>V čem se scénáře shodují</h3>
+<h2>O studii Energynautics</h2>
 </summary>
-
-[Doplnit...]
+...
 </details>
-
-<details markdown=1>
-<summary>
-<h3>Emise skleníkových plynů</h3>
-</summary>
-
-[Doplnit...]
-</details>
-
-## O studii NECP
-
-[Doplnit...]
-
-## Zdroj dat
-
-[Doplnit...]
