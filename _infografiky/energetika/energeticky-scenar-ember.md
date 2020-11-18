@@ -2,7 +2,7 @@
 layout:      infographic
 title:       "Ember: Scénář transformace elektroenergetiky ČR"
 slug:        "energeticky-scenar-ember"
-published:   2020-11-20
+# published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
