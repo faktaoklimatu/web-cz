@@ -37,7 +37,7 @@ Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, a
 <h2>O studii EMBER</h2>
 </summary>
 
-[EMBER](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci byla zveřejněna v listopadu 2020 a shrnutí studie je k dispozici v [češtině TODO:link](). Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
+[EMBER](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a shrnutí studie je k dispozici v [češtině TODO:link](). Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
 
 ### Zaměření studie
 
@@ -87,7 +87,7 @@ Model se zaměřuje jen na teplo v současnosti vyráběné z uhlí (asi 60 PJ v
 * U neuhelných zdrojů tepla předpokládají postupný rozvoj podle NECP.
 * U uhelných tepláren, které nevyrábějí elektřinu, předpokládají úplnou náhradu za jiný zdroj (vzhledem k současnému ekonomickému tlaku na uhelné teplárny).
 
-Z toho vychází, že **v roce 2030 bude potřeba pokrýt 40 PJ tepla jako náhrada za odstavené uhelné elektrárny**. Optimální výrobu tohoto chybějícího tepla hledají za následujících omezení:
+Z toho vychází, že **v roce 2030 bude potřeba pokrýt 40 PJ tepla jako náhradu za odstavené uhelné elektrárny**. Optimální výrobu tohoto chybějícího tepla hledají za následujících omezení:
 * Na základě studií o využití odpadního tepla (z průmyslu) v ČR odhadují potenciál tohoto zdroje do roku 2030 na 11 PJ. Tato výroba tepla může probíhat nepřetržitě a proto o tuto hodnotu snižují poptávku.
 * Pro zbývající poptávku umožňují kombinaci velkých tepelných čerpadel (s topným faktorem 3,5), kogenerační jednotek na plyn nebo biomasu a tepláren na plyn nebo biomasu. Vynucují, aby alespoň 15 PJ bylo pokryto kogeneračními jednotkami nebo teplárnami. Toto množství tepla odpovídá odhadu poptávky po teple v průmyslových podnicích, kde konzervativně očekávají náhradu uhlí za technicky obdobné řešení.
 
