@@ -19,6 +19,11 @@
     }
 }
 
+// No margin after the last button link
+table td .btn:last-of-type {
+    margin-bottom: 0;
+}
+
 /* Customizations of resource page */
 
 .resources {

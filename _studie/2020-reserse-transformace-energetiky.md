@@ -9,10 +9,7 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky z posledních let."
 intro: |
-  Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie
-  zpracovávat, je taktéž nemalé množství. Tento rozcestník podává přehledné shrnutí
-  klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny
-  chronologicky od nejnovější po nejstarší.
+  Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
   - title:   "Klimaticky neutrální Česko: Cesty k dekarbonizaci ekonomiky"
     url:     "https://www.mckinsey.com/cz/~/media/mckinsey/locations/europe%20and%20middle%20east/czech%20republic/our%20work/decarbonization_report_cz_vf.pdf"
@@ -60,7 +57,7 @@ items:
     authors:
       - name: ČEPS
         url:  "https://www.ceps.cz/cs/"
-    timeframe: 2030–2050
+    timeframe: 2030 až 2050
   - title:   "Impacts of Green New Deal Energy Plans on Grid Stability, Costs, Jobs, Health, and Climate in 143 Countries"
     date:    Prosinec 2019
     url:     "https://www.cell.com/one-earth/fulltext/S2590-3322(19)30225-8"
@@ -81,7 +78,7 @@ items:
     authors:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
-    timeframe: 2030–2040
+    timeframe: 2030 až 2040
     infographic: energeticky-scenar-necp
   - title:   "Czech Power Grid without Electricity from Coal by 2030"
     url:     "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf"
@@ -91,7 +88,7 @@ items:
         url:  https://energynautics.com/en/
     timeframe: 2050
     infographic: energeticky-scenar-energynautics
-    study:       2018_energetika-cr-bez-uhli
+    study:       2018-energetika-cr-bez-uhli
   - title:   "Global Energy System based on 100% Renewable Energy – Power Sector"
     url:     "http://energywatchgroup.org/wp-content/uploads/2017/11/Full-Study-100-Renewable-Energy-Worldwide-Power-Sector.pdf"
     date:    Listopad 2017
@@ -100,28 +97,28 @@ items:
         url:  https://www.lut.fi/web/en/
       - name: Energy Watch Group
         url:  https://energywatchgroup.org/
-    timeframe: 2030–2050
+    timeframe: 2030 až 2050
   - title:   "80% snížení emisí skleníkových plynů: analýza vývoje energetiky České republiky do roku 2050"
     url:     "https://idea.cerge-ei.cz/files/IDEA_Studie_21_2016_Snizeni_emisi_sklenikovych_plynu.pdf"
     date:    Prosinec 2016
     authors:
       - name: Institut pro demokracii a ekonomickou analýzu
         url:  https://idea.cerge-ei.cz/
-    timeframe: 2030–2050
+    timeframe: 2030 až 2050
   - title:   "Aktualizovaná státní energetická koncepce"
     url:     "https://www.mpo.cz/dokument158059.html"
     date:    Srpen 2015
     authors:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
-    timeframe: 2030–2045
+    timeframe: 2030 až 2045
   - title:   "Energetická [r]evoluce"
     url:     "https://storage.googleapis.com/planet4-czech-republic-stateless/2018/10/c6cea469-c6cea469-er-pro-%C4%8Cr-2012.pdf"
     date:    Červen 2012
     authors:
       - name: Německé středisko pro letectví a kosmonautiku
         url:  https://www.dlr.de/
-    timeframe: 2030–2050
+    timeframe: 2030 až 2050
 ---
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
@@ -130,11 +127,7 @@ items:
   {% for item in page.items %}
   <div class="card mb-3">
     <div class="card-body">
-      {% if item.url %}
-      <h3 class="card-title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
-      {% else %}
       <h3 class="card-title">{{ item.title }}</h3>
-      {% endif %}
       <p class="card-text text-muted">{{ item.date }}</p>
       <dl>
         <dt>Zpracovatel</dt>
@@ -148,13 +141,11 @@ items:
         {%- endif -%}
         {% endfor %}
         </dd>
-
         {% if item.timeframe %}
         <dt>Časový horizont</dt>
         <dd>{{ item.timeframe }}</dd>
         {% endif %}
       </dl>
-
       <div class="d-flex flex-column flex-sm-row justify-content-end">
         <div class="d-flex flex-column flex-sm-row">
           {% if item.infographic %}
@@ -162,6 +153,9 @@ items:
           {% endif %}
           {% if item.study %}
           <a href="/studie/{{ item.study }}" class="btn btn-sm btn-primary my-sm-0">Shrnutí studie</a>
+          {% endif %}
+          {% if item.url %}
+          <a href="{{ item.url }}" class="btn btn-sm btn-secondary">Zdroj</a>
           {% endif %}
         </div>
       </div>
@@ -173,28 +167,22 @@ items:
 {% comment %}
   Plná verze rešerše: tabulka s jednotlivými studiemi.
 {% endcomment %}
-<table class="table table-striped table-hover d-none d-md-table mt-5">
+<table class="table table-striped table-hover d-none d-md-table mt-4">
   <thead>
     <tr>
-      <th scope="col">Název studie</th>
-      <th scope="col">Datum zveřejnění</th>
-      <th scope="col">Zpracovatel</th>
-      <th scope="col">Časový horizont</th>
-      <th scope="col">Naše materiály</th>
+      <th scope="col" class="text-uppercase align-middle">Studie</th>
+      <th scope="col" class="text-uppercase align-middle">Publikováno</th>
+      <th scope="col" class="text-uppercase align-middle">Zpracovatel</th>
+      <th scope="col" class="text-uppercase align-middle">Časový horizont</th>
+      <th scope="col" class="text-uppercase align-middle text-center">Odkaz</th>
     </tr>
   </thead>
   <tbody>
     {% for item in page.items %}
     <tr>
-      <td>
-        {% if item.url %}
-        <a href="{{ item.url }}">{{ item.title }}</a>
-        {% else %}
-        {{ item.title }}
-        {% endif %}
-      </td>
-      <td>{{ item.date }}</td>
-      <td>
+      <td class="align-middle"><strong>{{ item.title }}</strong></td>
+      <td class="align-middle">{{ item.date }}</td>
+      <td class="align-middle">
         {% for author in item.authors -%}
         {%- if forloop.index > 1 %},{% endif %}
         {% if author.url %}
@@ -204,13 +192,16 @@ items:
         {%- endif -%}
         {% endfor %}
       </td>
-        <td>{% if item.timeframe %}{{ item.timeframe }}{% else %}—{% endif %}</td>
-      <td>
+      <td class="align-middle">{% if item.timeframe %}{{ item.timeframe }}{% else %}—{% endif %}</td>
+      <td class="align-middle text-center">
         {% if item.infographic %}
-        <a href="/infografiky/{{ item.infographic }}" class="btn btn-sm btn-secondary mt-0">Infografika</a>
+        <a href="/infografiky/{{ item.infographic }}" class="btn btn-sm btn-primary">Infografika</a>
         {% endif %}
         {% if item.study %}
-        <a href="/studie/{{ item.study }}" class="btn btn-sm btn-secondary my-0">Shrnutí</a>
+        <a href="/studie/{{ item.study }}" class="btn btn-sm btn-primary">Shrnutí</a>
+        {% endif %}
+        {% if item.url %}
+        <a href="{{ item.url }}" class="btn btn-sm btn-secondary">Zdroj</a>
         {% endif %}
       </td>
     </tr>
