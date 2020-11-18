@@ -5,7 +5,7 @@ slug:        "srovnani-energetickych-scenaru-cr"
 published:   2020-11-20
 weight:      90
 tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni, scenare-cr-2030 ]
+tags-topics: [ energetika, opatreni ]
 caption:     "TODO"
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 # data-orig:   []
@@ -13,7 +13,7 @@ data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUA
 
 ## Jak číst tento graf
 
-V této infografice dáváme srovnání [různých scénářů](/temata/scenare-cr-2030/) vývoje elektroenergetiky v ČR.
+V této infografice dáváme srovnání [různých scénářů](/temata/energetika) vývoje elektroenergetiky v ČR.
 
 Stav v roce 2019 a stav v roce 2030 srovnáváme podle **výroby elektřiny**: Tento parametr zachycuje, kolik které zdroje elektřiny dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý vývoz_ nebo že dokonce budeme více elektřiny dovážet než vyvážet.
 
