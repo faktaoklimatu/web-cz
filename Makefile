@@ -1,5 +1,5 @@
 INFOGRAPHICS_FOLDER=assets/infographics
-INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.pdf)
+INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.pdf _studie/*.pdf)
 INFOGRAPHICS_DST=$(addprefix $(INFOGRAPHICS_FOLDER)/,$(notdir $(INFOGRAPHICS_SRC)))
 DATASETS_FOLDER=assets/datasets
 DATASETS_SRC=$(wildcard _datasety/*.md)
@@ -50,6 +50,9 @@ clean:
 	rm -rf $(STUDIES_FOLDER)
 
 $(INFOGRAPHICS_FOLDER)/%.pdf: _infografiky/*/%.pdf
+	@utils/convert-infographic.sh $< $@
+
+$(INFOGRAPHICS_FOLDER)/%.pdf: _studie/%.pdf
 	@utils/convert-infographic.sh $< $@
 
 $(STUDIES_FOLDER)/%: _studie/%

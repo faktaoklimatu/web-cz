@@ -20,6 +20,7 @@ exclude:
     - _infografiky/*/*.pdf # Original infographics (build moves them to assets)
     - _studie/*.jpg        # Study images
     - _studie/*.png        # Study images
+    - _studie/*.pdf        # Original study infographics (build moves them to assets)
 collections:
     infografiky:
         output: true
