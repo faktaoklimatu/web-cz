@@ -34,9 +34,9 @@ Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních el
 <h2>O studii BloombergNEF</h2>
 </summary>
 
-Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci tohoto roku. 
+Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci tohoto roku.
 
-## Zaměření scénáře a použitá metodika 
+## Zaměření scénáře a použitá metodika
 
 Zmíněná studie se zabývá možností přechodu k nízkouhlíkovému hospodářství ve vybraných státech EU, které mají vysoký podíl fosilních zdrojů na výrobě elektřiny, ale přitom stále nemají stanovený termín odstavení uhelných elektráren. Ve výsledku tak modeluje proces přechodu na čistou výrobu elektřiny pro Polsko, Česko, Rumunsko a Bulharsko v horizontu roku 2030.
 
@@ -44,7 +44,7 @@ Scénář vychází z vlastní metodiky, tzv. [New Energy Outlook](https://about
 
 V daném případě se jedná o srovnání sdružených nákladů na výrobu elektřiny (včetně ceny uhlíku, respektive uhlíkových povolenek, obchodovaných v rámci systému EUA), dostupnost jednotlivých zdrojů elektřiny a provozní podmínky, které stanovují jejich vyžití v čase.
 
-Výrobní mix je řešen pomocí vlastního NEFM modelu, jehož cílem je minimalizovat systémové náklady při splnění špičkové poptávky. Prognoza spotřeby elektřiny je poté založena na vlastních scénářích, které berou v úvahu zejména očekávaný vývoj HDP, mimo jiné i s ohledem na probíhající pandemii koronaviru.
+Výrobní mix je řešen pomocí vlastního NEFM modelu, jehož cílem je minimalizovat systémové náklady při splnění špičkové poptávky. Prognóza spotřeby elektřiny je poté založena na vlastních scénářích, které berou v úvahu zejména očekávaný vývoj HDP, mimo jiné i s ohledem na probíhající pandemii koronaviru.
 
 Ve studii nejsou zmíněny žádné bližší detaily ohledně modelování elektrizační soustavy a to jak na úrovni ČR, tak na úrovni případných vyšších celků.
 
