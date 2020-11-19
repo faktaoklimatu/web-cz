@@ -73,16 +73,16 @@ Výroba a spotřeba elektřiny jsou modelovány v hodinovém rozlišení podle d
 <h2>Výsledky studie Energynautics</h2>
 </summary>
 
-Hlavním závěrem studie je, že předpokládaný rozvoj obnovitelných zdrojů neohrozí stabilitu sítě ani bezpečnost dodávek elektřiny a stávající podoba přenosové sítě není pro takový rozvoj obnovitelných zdrojů energie překážkou. Navíc v hlavní variantě scénáře ČR zůstane čístým vývozcem elektřiny.
+Hlavním závěrem studie je, že předpokládaný rozvoj obnovitelných zdrojů neohrozí stabilitu sítě ani bezpečnost dodávek elektřiny a stávající podoba přenosové sítě není pro takový rozvoj obnovitelných zdrojů energie překážkou. Navíc v hlavní variantě scénáře ČR zůstane čistým vývozcem elektřiny.
 
 Doplňující studie navíc ukazuje, že bezpečnost dodávek elektřiny bude zajištěna i v dalších variantách budoucího vývoje: (1) při neplánovaném výpadku největšího zdroje v české elektrizační síti, jednoho bloku Jaderné elektrárny Temelín; (2) při velmi chladné zimě, kdy by po tři týdny průměrná teplota klesala k −15 °C; (3) při nárůstu spotřeby v důsledku nástupu tepelných čerpadel a elektromobility a (4) při současném omezení instalovaného výkonu v Polsku, Německu a Francii.
 
 Stávající podoba české elektrizační soustavy není překážkou pro přechod na čistější energetiku díky těmto důvodům:
 
-*   Soustava je dimenzována s vysokým koeficientem bezpečnosti.
-*   Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
-*   Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
-*   Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
+* Soustava je dimenzována s vysokým koeficientem bezpečnosti.
+* Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
+* Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
+* Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
 
 V hlavním scénáři uvažovaném ve studii navíc Česká republika zůstane v roce 2030 čistým vývozcem elektřiny, ač čistý export klesne na 4 TWh oproti 13 TWh v roce 2017.
 </details>
