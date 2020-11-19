@@ -6,7 +6,7 @@ redirect_from:
   - /2018-scenar-energynautics
   - /2018-energetika-cr-bez-uhli
   - /studie/2018-energetika-cr-bez-uhli
-# published:   2020-11-20
+published:   2020-11-19
 weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
