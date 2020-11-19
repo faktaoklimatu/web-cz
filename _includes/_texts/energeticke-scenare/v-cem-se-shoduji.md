@@ -4,4 +4,4 @@
 
 Scénáře také do roku 2030 ve svých hlavních variantách **nepočítají s velkým rozvojem skladování elektřiny** nebo výroby zeleného vodíku.
 
-Scénáře se také shodují v **instalovaném výkonu jaderných a vodních elektráren**. U těchto zdrojů je dlouhý proces výstavby a proto žádný ze scénářů neočekává do roku 2030 podstatné změny. Dostavba elektrárny v Dukovanech bude dokončena nejdříve v roce 2036 (pokud k ní vůbec dojde). Stejně tak nelze očekávat v další dekádě stavbu podstatné vodní elektrárny, některé scénáře počítají s mírným rozvojem v oblasti malých vodních elektráren.
+Scénáře se také shodují v **instalovaném výkonu jaderných a vodních elektráren**. U těchto zdrojů je dlouhý proces výstavby a proto žádný ze scénářů neočekává do roku 2030 podstatné změny. Rozšíření elektrárny v Dukovanech bude dokončeno nejdříve v roce 2036 (pokud k němu vůbec dojde). Stejně tak nelze očekávat v další dekádě stavbu podstatné vodní elektrárny, některé scénáře počítají s mírným rozvojem v oblasti malých vodních elektráren.
