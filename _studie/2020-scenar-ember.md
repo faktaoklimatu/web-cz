@@ -29,6 +29,9 @@ Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, a
 * **Biomasa a bioplyn:** Studie tuto kategorii neuvádí (protože není předmětem optimalizace v modelu), my do ní z podkladových dat vybíráme kategorii _Other renewable_, což je v naprosté většině právě biomasa a bioplyn (kromě toho také biologicky rozložitelný komunální odpad).
 
 {% include _texts/energeticke-scenare/emise.md %}
+
+Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí pouze z výroby elektřiny**. Studie zahrnuje také transformaci teplárenství, která by vedla k dalším úsporám emisí z výroby tepla. Tyto úspory infografika nevyčísluje (pro srovnatelnost s dalšími scénáři, které teplárenství neřeší).
+
 </details>
 
 <details markdown=1>
