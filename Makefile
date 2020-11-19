@@ -1,4 +1,4 @@
-INFOGRAPHICS_FOLDER=assets/infographics
+INFOGRAPHICS_FOLDER=assets/generated
 INFOGRAPHICS_SRC=$(wildcard _infografiky/*/*.pdf _studie/*.pdf)
 INFOGRAPHICS_DST=$(addprefix $(INFOGRAPHICS_FOLDER)/,$(notdir $(INFOGRAPHICS_SRC)))
 DATASETS_FOLDER=assets/datasets

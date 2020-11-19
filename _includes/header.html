@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 {% case page.layout %}
 {% when 'infographic' %}
-  {% assign social_image = site.url | append: "/assets/infographics/" | append: page.slug | append: "_1200.png" %}
+  {% assign social_image = site.url | append: "/assets/generated/" | append: page.slug | append: "_1200.png" %}
 {% when 'study' %}
   {% assign social_image = site.url | append: "/assets/studies/" | append: page.slug | append: ".jpg" %}
 {% else %}
