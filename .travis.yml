@@ -30,7 +30,7 @@ cache:
   bundler: true               # Enable caching of bundler gem packages
   directories:
   - $TRAVIS_BUILD_DIR/.cache  # Enable caching link checks
-  - $TRAVIS_BUILD_DIR/assets/infographics  # Enable caching of generated infographics
+  - $TRAVIS_BUILD_DIR/assets/generated  # Enable caching of generated infographics
 #  - $TRAVIS_BUILD_DIR/assets/datasets  # Enable caching of infographic preview images
 
 deploy:

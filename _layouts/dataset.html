@@ -91,7 +91,7 @@
           {% for infographics in sorted_infographics %}
             <div class="col-sm-6 col-md-4 col-lg-3">
               <a href="{{ infographics.url }}" class="preview-card card">
-                <img src="{{ site.baseurl }}/assets/infographics/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="img-fluid" />
+                <img src="{{ site.baseurl }}/assets/generated/{{ infographics.slug }}_600.png" alt="{{ infographics.title }}" title="{{ infographics.title }}" class="img-fluid" />
               </a>
             </div>
           {% endfor %}
