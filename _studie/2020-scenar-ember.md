@@ -39,7 +39,7 @@ Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí po
 <h2>O studii EMBER</h2>
 </summary>
 
-[EMBER](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a shrnutí studie je k dispozici v [češtině TODO:link](). Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
+[EMBER](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a shrnutí studie je k dispozici v češtině. Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
 
 ### Zaměření studie
 
