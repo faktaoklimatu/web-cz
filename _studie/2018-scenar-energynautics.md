@@ -7,7 +7,7 @@ redirect_from:
   - /2018-energetika-cr-bez-uhli
   - /studie/2018-energetika-cr-bez-uhli
 published:   2020-11-19
-weight:      100
+weight:      92
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů do roku 2030 na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."

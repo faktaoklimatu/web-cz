@@ -3,7 +3,7 @@ layout:      infographic
 title:       "Srovnání scénářů transformace elektroenergetiky ČR"
 slug:        "srovnani-energetickych-scenaru-cr"
 published:   2020-11-20
-weight:      90
+weight:      73
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "TODO"
