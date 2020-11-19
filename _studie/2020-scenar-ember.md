@@ -9,7 +9,8 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Ember Ember Ember Ember"
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
-data-orig:   [ [ "Původní studie", "" ] ]
+data-orig:   [ [ "Původní studie", "https://ember-climate.org/project/coal-free-czechia-2030/
+" ] ]
 ---
 ---
 
