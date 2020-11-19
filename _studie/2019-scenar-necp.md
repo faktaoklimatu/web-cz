@@ -3,7 +3,7 @@ layout:      infographic
 title:       "NECP: Scénář transformace elektroenergetiky ČR"
 slug:        "2019-scenar-necp"
 redirect_from: "/2019-scenar-necp"
-# published:   2020-11-20
+published:   2020-11-19
 weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]

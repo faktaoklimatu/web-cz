@@ -3,7 +3,7 @@ layout:      infographic
 title:       "Co je scénář transformace elektroenergetiky"
 slug:        "scenar-transformace-elektroenergetiky"
 redirect_from: "/scenar-transformace-elektroenergetiky"
-#published:   2020-11-20
+published:   2020-11-20
 weight:      110
 tags-scopes: [ cr ]
 tags-topics: [ energetika ]
