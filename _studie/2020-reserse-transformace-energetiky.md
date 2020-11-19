@@ -24,7 +24,7 @@ items:
       - name: Ember
         url:  "https://ember-climate.org/"
     timeframe: 2030
-    infographic: energeticky-scenar-ember
+    study:     2020-scenar-ember
   - title:   "Energy Transition Outlook 2020"
     url:     "https://eto.dnvgl.com/2020/index.html"
     date:    Září 2020
@@ -41,7 +41,7 @@ items:
       - name: Bloomberg Philanthropies
         url:  "https://www.bloomberg.org/"
     timeframe: 2030
-    infographic: energeticky-scenar-bloomberg
+    study:     2020-scenar-bloombergnef
   - title:   "Modernizace evropského hnědouhelného trojúhelníku: Směrem k bezpečné, dostupné a udržitelné transformaci energetiky"
     url:     "https://www.agora-energiewende.de/fileadmin2/Partnerpublikationen/2020/Lignite_Triangle/CZ-Modernizace_evropske__ho_hne__douhelne__ho_troju__helni__ku_net.pdf"
     date:    Červen 2020
@@ -79,7 +79,7 @@ items:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
     timeframe: 2030 až 2040
-    infographic: energeticky-scenar-necp
+    study:     2019-scenar-necp
   - title:   "Czech Power Grid without Electricity from Coal by 2030"
     url:     "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf"
     date:    Květen 2018
@@ -87,7 +87,7 @@ items:
       - name: Energynautics
         url:  https://energynautics.com/en/
     timeframe: 2050
-    infographic: energeticky-scenar-energynautics
+    study:     2018-scenar-energynautics
     study:       2018-energetika-cr-bez-uhli
   - title:   "Global Energy System based on 100% Renewable Energy – Power Sector"
     url:     "http://energywatchgroup.org/wp-content/uploads/2017/11/Full-Study-100-Renewable-Energy-Worldwide-Power-Sector.pdf"
@@ -147,17 +147,12 @@ items:
         {% endif %}
       </dl>
       <div class="d-flex flex-column flex-sm-row justify-content-end">
-        <div class="d-flex flex-column flex-sm-row">
-          {% if item.infographic %}
-          <a href="/infografiky/{{ item.infographic }}" class="btn btn-sm btn-primary my-sm-0">Infografika</a>
-          {% endif %}
-          {% if item.study %}
-          <a href="/studie/{{ item.study }}" class="btn btn-sm btn-primary my-sm-0">Shrnutí studie</a>
-          {% endif %}
-          {% if item.url %}
-          <a href="{{ item.url }}" class="btn btn-sm btn-secondary">Zdroj</a>
-          {% endif %}
-        </div>
+        {% if item.study %}
+        <a href="/studie/{{ item.study }}" class="btn btn-sm btn-primary">Shrnutí studie</a>
+        {% endif %}
+        {% if item.url %}
+        <a href="{{ item.url }}" class="btn btn-sm btn-secondary">Zdroj</a>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -194,9 +189,6 @@ items:
       </td>
       <td class="align-middle">{% if item.timeframe %}{{ item.timeframe }}{% else %}—{% endif %}</td>
       <td class="align-middle text-center">
-        {% if item.infographic %}
-        <a href="/infografiky/{{ item.infographic }}" class="btn btn-sm btn-primary">Infografika</a>
-        {% endif %}
         {% if item.study %}
         <a href="/studie/{{ item.study }}" class="btn btn-sm btn-primary">Shrnutí</a>
         {% endif %}
