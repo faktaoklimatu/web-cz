@@ -88,7 +88,6 @@ items:
         url:  https://energynautics.com/en/
     timeframe: 2050
     study:     2018-scenar-energynautics
-    study:       2018-energetika-cr-bez-uhli
   - title:   "Global Energy System based on 100% Renewable Energy – Power Sector"
     url:     "http://energywatchgroup.org/wp-content/uploads/2017/11/Full-Study-100-Renewable-Energy-Worldwide-Power-Sector.pdf"
     date:    Listopad 2017
