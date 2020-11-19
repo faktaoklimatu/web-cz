@@ -4,13 +4,13 @@ title:       "Energynautics: Scénář transformace elektroenergetiky ČR"
 slug:        "2018-scenar-energynautics"
 redirect_from:
   - /2018-scenar-energynautics
-# TODO: Sloučit s předchozí stránkou studie.
-#  - /2018-energetika-cr-bez-uhli
+  - /2018-energetika-cr-bez-uhli
+  - /studie/2018-energetika-cr-bez-uhli
 # published:   2020-11-20
 weight:      100
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
-caption:     "Energynautics Energynautics Energynautics Energynautics"
+caption:     "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů do roku 2030 na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 data-orig:
   - [ "Původní studie", "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf" ]
@@ -83,4 +83,6 @@ Stávající podoba české elektrizační soustavy není překážkou pro přec
 *   Síť rozvádí elektřinu od několika centrálních zdrojů do poměrně vzdálených míst spotřeby. To je rozdíl ve srovnání s Velkou Británií nebo Německem, kde jsou elektrárny často postaveny v blízkostí míst s vysokou spotřebou.
 *   Obnovitelné zdroje jsou vcelku rovnoměrně rozmístěny po území České republiky. Přenos větrné elektřiny na velké vzdálenosti, jak je známe z Velké Británie nebo Německa, zde nepředstavuje vážný problém.
 *   Významný podíl výroby elektřiny z obnovitelných zdrojů pokrývají zdroje na biomasu a bioplyn, které jsou do určité míry dispečersky řiditelné.
+
+V hlavním scénáři uvažovaném ve studii navíc Česká republika zůstane v roce 2030 čistým vývozcem elektřiny, ač čistý export klesne na 4 TWh oproti 13 TWh v roce 2017.
 </details>
