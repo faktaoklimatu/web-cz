@@ -86,7 +86,7 @@ items:
     authors:
       - name: Energynautics
         url:  https://energynautics.com/en/
-    timeframe: 2050
+    timeframe: 2030
     study:     2018-scenar-energynautics
   - title:   "Global Energy System based on 100% Renewable Energy – Power Sector"
     url:     "http://energywatchgroup.org/wp-content/uploads/2017/11/Full-Study-100-Renewable-Energy-Worldwide-Power-Sector.pdf"
