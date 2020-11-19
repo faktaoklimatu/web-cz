@@ -9,7 +9,8 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Ember Ember Ember Ember"
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
-# data-orig:   []
+data-orig:   [ [ "Původní studie", "" ] ]
+---
 ---
 
 {% include _texts/energeticke-scenare/jak-cist.md %}

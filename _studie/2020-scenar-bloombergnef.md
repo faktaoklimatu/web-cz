@@ -9,7 +9,7 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "BloombergNEF BloombergNEF BloombergNEF BloombergNEF"
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
-# data-orig:   []
+data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ] ]
 ---
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
