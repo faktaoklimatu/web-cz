@@ -10,7 +10,7 @@ published:   2020-11-19
 weight:      92
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
-caption:     "Studie zkoumá dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů do roku 2030 na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."
+caption:     "Studie Energynautics zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně analyzuje dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 data-orig:
   - [ "Původní studie", "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf" ]
@@ -18,8 +18,6 @@ data-orig:
 ---
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
-
-{% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
 <summary>
@@ -43,7 +41,7 @@ data-orig:
 
 Studie, ze které v této vizualizaci vycházíme, byla společnosti Energynautics zadána ke zpracování skupinou pěti českých nevládních organizací: Glopolis, Frank Bold, Hnutí DUHA, Aliance pro energetickou soběstačnost a CEE Bankwatch Network.
 
-Původní studie byla zveřejněna v květnu 2018 pod názvem [_Czech Power Grid without Electricity from Coal by 2030_](Czech Power Grid without Electricity from Coal by 2030) s podtitulem _Possibilities for Integration of Renewable Resources and Transition into a System Based on Decentralized Sources_. K dispozici je i [pětistránkové shrnutí studie](https://frankbold.org/sites/default/files/publikace/infolist-sit_bez_uhli.pdf) v českém jazyce.
+Původní studie byla zveřejněna v květnu 2018 pod názvem [_Czech Power Grid without Electricity from Coal by 2030_](https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf) s podtitulem _Possibilities for Integration of Renewable Resources and Transition into a System Based on Decentralized Sources_. K dispozici je i [pětistránkové shrnutí studie](https://frankbold.org/sites/default/files/publikace/infolist-sit_bez_uhli.pdf) v českém jazyce.
 
 V říjnu 2018 byla publikována [doplňující studie](https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf), která upřesňuje a opravuje některé informace z původní studie. Dále rozšiřuje scénář o čtyři další varianty budoucího vývoje: (1) extrémní zima (tři týdny s průměrnou teplotou pod −15 °C) a s tím související zvýšená poptávka po energii; (2) ukončení provozu Jaderné elektrárny Dukovany do roku 2030; (3) omezení možností importu elektřiny ze sousedních zemí v důsledku snížení produkce v Německu, Francii a Polsku; (4) rozšíření elektromobility a tepelných čerpadel v ČR.
 

@@ -7,14 +7,12 @@ published:   2020-11-19
 weight:      90
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
-caption:     "NECP NECP NECP NECP"
+caption:     "Vnitrostátní plán České republiky v oblasti energetiky a klimatu (NECP) popisuje český příspěvěk k cílům EU na snižování emisí, zvyšování podílu obnovitelných zdrojů energie a zvýšení energetické účinnosti. Tato grafika shrnuje proměnu české elektroenergetiky do roku 2030 podle tohoto plánu. "
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
 data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ] ]
 ---
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
-
-{% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
 <summary>
@@ -52,13 +50,12 @@ V rámci dekarbonizace si Česká republika vytyčila cíl dosáhnout 22% podíl
 
 NECP dále vychází z Státní energetické koncepce ASEK, která počítá s navýšením produkce elektřiny z jádra do roku 2040 na 46-58%. Plánovaná dostavba nových bloků se sice přímo neprojeví do roku 2030, nepřímo však souvisí s jen pomalým navyšováním OZE v rámci NECP.
 
-## Metodika
-
+### Metodika
 K metodice výpočtů hodnot výroby elektřiny či instalovaného výkonu jednotlivých zdrojů NECP uvádí zpravidla: “Zdroj: Vlastní zpracování MPO pro účely Vnitrostátního plánu”. Lze očekávat, že půjde o hodnoty z jiných dokumentů (např. Státní Energetická Koncepce), expertní odhady, nebo o rozpady cílů, které byly s Evropskou Unií vyjednány na politické úrovni. NECP modelování nebo kritéria optimalizace nezmiňuje.  
 
 Pro naše zobrazení scénáře elektroenergetiky, jak ji uvažuje NECP jsme použili:  
-Hodnoty hrubé výroby elektřiny podle paliv - tabulka 168 na straně 341.
-Hodnoty výroby elektřiny z OZE  - tabulka 15. na straně 31.
-Instalovaný výkon OZE - tabulka 18. na straně 33.
+* Hodnoty hrubé výroby elektřiny podle paliv - Tabulka 168 na straně 341. 
+* Hodnoty výroby elektřiny z OZE - Tabulka 15 na straně 31.
+* Instalovaný výkon OZE - Tabulka 18 na straně 33. 
 
 </details>
