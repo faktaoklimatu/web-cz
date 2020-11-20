@@ -32,7 +32,8 @@ Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních el
 <h2>O studii BloombergNEF</h2>
 </summary>
 
-Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci tohoto roku.
+Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci roku 2020.
+V listopadu 2020 pak byla zveřejněna navazující studie [Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals](https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/), která zkoumala stejný model za předpokladu výrazně vyšších cen uhlíkových povolenek, souvisejících s vyššími ambicemi Evropské unie. Tato infografika ovšem tuto navazující studii nepokrývá.
 
 ### Zaměření scénáře a použitá metodika
 
