@@ -21,6 +21,7 @@ script:
   - rm -rf ./git-tools
   - mv CONTRIBUTORS.md humans.txt
   - make check
+  - make deploy
 
 env:
   global:

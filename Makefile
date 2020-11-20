@@ -45,6 +45,10 @@ check: web
 	@echo "Running tests on the generated site using html-proofer ..."
 	-bundle exec ruby utils/test.rb
 
+deploy: web
+	@echo "Building production version using Jekyll ..."
+	JEKYLL_ENV=production bundle exec jekyll build
+
 clean:
 	rm -rf $(INFOGRAPHICS_FOLDER)
 	rm -rf $(STUDIES_FOLDER)
