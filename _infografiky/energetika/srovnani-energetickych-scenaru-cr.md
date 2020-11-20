@@ -16,12 +16,16 @@ data-orig:
   - [ "NECP", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ]
 ---
 
+V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR:
+<a href="/studie/2020-scenar-ember" class="btn btn-secondary">Ember</a>
+<a href="/studie/2018-scenar-energynautics" class="btn btn-secondary">Energynautics</a>
+<a href="/studie/2020-scenar-bloombergnef" class="btn btn-secondary">BloombergNEF</a>
+<a href="/studie/2019-scenar-necp" class="btn btn-secondary">NECP</a>.
+
 <details markdown=1>
 <summary>
 <h2>Jak číst tento graf</h2>
 </summary>
-
-V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR: [Ember](/studie/2020-scenar-ember), [Energynautics](/studie/2018-scenar-energynautics), [BloombergNEF](/studie/2020-scenar-bloombergnef) a [NECP](/studie/2019-scenar-necp).
 
 **V horní části grafiky** srovnáváme stav v roce 2019 a stav v roce 2030 podle **výroby elektřiny**: Tento parametr zachycuje, kolik které zdroje elektřiny dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý vývoz_ nebo že dokonce budeme více elektřiny dovážet než vyvážet.
 
