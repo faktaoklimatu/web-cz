@@ -9,8 +9,9 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie Ember zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně zkoumá variantu ukončení provozu všech českých uhelných elektráren a uhelných tepláren. V tomto rámci pak hledá nákladově optimální výstavbu a provoz elektráren. Studie ukazuje, že i takto ambiciózní scénář je myslitelný, vyžaduje ale výrazné tempo rozvoje solárních, větrných i záložních plynových elektráren."
 data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
-data-orig:   [ [ "Původní studie", "https://ember-climate.org/project/coal-free-czechia-2030/
-" ] ]
+data-orig:
+  - [ "Shrnutí (CZ)", "https://ember-climate.org/wp-content/uploads/2020/11/Cesko_bez_uhli_od_2030_Ember.pdf" ]
+  - [ "Podrobná zpráva (EN)", "https://ember-climate.org/project/coal-free-czechia-2030/" ]
 ---
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
@@ -39,7 +40,7 @@ Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí po
 <h2>O studii Ember</h2>
 </summary>
 
-[Ember](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a shrnutí studie je k dispozici v češtině. Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
+[Ember](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a [shrnutí studie](https://ember-climate.org/wp-content/uploads/2020/11/Cesko_bez_uhli_od_2030_Ember.pdf) je k dispozici v češtině. Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
 
 ### Zaměření studie
 
