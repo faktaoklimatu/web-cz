@@ -1,9 +1,6 @@
 V této infografice dáváme základní přehled o jednom scénáři transformace české elektroenergetiky do roku 2030. Tato grafika je součastí kolekce grafik k různým scénářům vývoje elektroenergetiky v ČR včetně [srovnání všech těchto scénářů](/infografiky/srovnani-energetickych-scenaru-cr) na jedné grafice.
 
-<details markdown=1>
-<summary>
-<h2>Jak číst tento graf</h2>
-</summary>
+## Jak číst tento graf
 
 Stav v roce 2019 a stav v roce 2030 podle tohoto scénáře srovnáváme ve dvou hlavních parametrech:
 1. **Instalovaný výkon (dole):** Tento parametr zachycuje, jaké elektrárny máme a můžeme v budoucnu mít. Tedy kolik bude v Česku konvenčních elektráren na uhlí nebo na plyn, kolik solárních panelů a kolik větrných elektráren, kolik bioplynových stanic, kolik tepláren na biomasu, apod. Čtverečky zobrazují instalovaný výkon, ale nijak nevypovídají o zastavěné ploše, která by byla pro každý typ elektráren jiná.
@@ -14,5 +11,3 @@ Stav v roce 2019 a stav v roce 2030 podle tohoto scénáře srovnáváme ve dvou
 **Emise skleníkových plynů:** Postupný odklon od fosilních zdrojů a nejvíce pak od uhlí znamená snížení emisí skleníkových plynů. Každá studie takové snížení počítá pomocí vlastní metodiky (a nebo nepočítá vůbec). Proto pro všechny studie **uvádíme náš výpočet snížení emisí** založený na rozdílu v mixu výroby mezi lety 2019 a 2030 a na emisních koeficientech od <glossary id=ipcc>IPCC</glossary>. Více o metodice výpočtu najdete níže.
 
 {% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
-
-</details>
