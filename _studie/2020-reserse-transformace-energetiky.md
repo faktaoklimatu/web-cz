@@ -25,6 +25,15 @@ items:
         url:  "https://ember-climate.org/"
     timeframe: 2030
     study:     2020-scenar-ember
+  - title:   "Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals"
+    date:    Listopad 2020
+    url:     "https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/"
+    authors:
+      - name: BloombergNEF
+        url:  "https://about.bnef.com/"
+      - name: Bloomberg Philanthropies
+        url:  "https://www.bloomberg.org/"
+    timeframe: 2030
   - title:   "Energy Transition Outlook 2020"
     url:     "https://eto.dnvgl.com/2020/index.html"
     date:    Září 2020
@@ -42,15 +51,6 @@ items:
         url:  "https://www.bloomberg.org/"
     timeframe: 2030
     study:     2020-scenar-bloombergnef
-  - title:   "Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals"
-    date:    Listopad 2020
-    url:     "https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/"
-    authors:
-      - name: BloombergNEF
-        url:  "https://about.bnef.com/"
-      - name: Bloomberg Philanthropies
-        url:  "https://www.bloomberg.org/"
-    timeframe: 2030
   - title:   "Modernizace evropského hnědouhelného trojúhelníku: Směrem k bezpečné, dostupné a udržitelné transformaci energetiky"
     url:     "https://www.agora-energiewende.de/fileadmin2/Partnerpublikationen/2020/Lignite_Triangle/CZ-Modernizace_evropske__ho_hne__douhelne__ho_troju__helni__ku_net.pdf"
     date:    Červen 2020
