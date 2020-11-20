@@ -1,4 +1,4 @@
-V této infografice dáváme základní přehled o jednom scénáři transformace české elektroenergetiky do roku 2030. Tato grafika je součastí kolekce grafik k různým scénářům vývoje elektroenergetiky v ČR včetně [srovnání všech těchto scénářů](/infografiky/srovnani-energetickych-scenaru-cr) na jedné grafice.
+V této infografice dáváme základní přehled o jednom scénáři transformace české elektroenergetiky do roku 2030. Tato grafika je součástí kolekce grafik k různým scénářům vývoje elektroenergetiky v ČR včetně [srovnání všech těchto scénářů](/infografiky/srovnani-energetickych-scenaru-cr) na jedné grafice.
 
 <details markdown=1>
 <summary>
