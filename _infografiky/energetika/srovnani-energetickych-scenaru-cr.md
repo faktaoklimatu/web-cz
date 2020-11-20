@@ -22,10 +22,7 @@ V této infografice dáváme srovnání více scénářů vývoje [elektroenerge
 <a href="/studie/2020-scenar-bloombergnef" class="btn btn-secondary">BloombergNEF</a>
 <a href="/studie/2019-scenar-necp" class="btn btn-secondary">NECP</a>.
 
-<details markdown=1>
-<summary>
-<h2>Jak číst tento graf</h2>
-</summary>
+## Jak číst tento graf
 
 **V horní části grafiky** srovnáváme stav v roce 2019 a stav v roce 2030 podle **výroby elektřiny**: Tento parametr zachycuje, kolik které zdroje elektřiny dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý vývoz_ nebo že dokonce budeme více elektřiny dovážet než vyvážet.
 
@@ -42,7 +39,6 @@ Scénáře se liší v **míře předvídaného [uhelného phase-outu](/infograf
 Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Například scénář Energynautics se zaměřuje na stabilitu přenosové soustavy, a proto stanovuje instalovaný výkon jednotlivých zdrojů na základě expertních odhadů. Naopak scénáře Ember a BloombergNEF hledají změny v instalovaném výkonu pomocí tržní optimalizace. Scénář Ember při tom zkoumá, jak by vypadala varianta úplného uhelného phase-outu, zatímco scénář BloombergNEF posuzuje variantu s celkově nejnižšími náklady.
 
 {% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
-</details>
 
 <details markdown=1>
 <summary>
