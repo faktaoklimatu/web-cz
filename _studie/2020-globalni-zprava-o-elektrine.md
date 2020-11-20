@@ -8,7 +8,7 @@ weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ energetika, emise ]
 caption:    "Zpráva nabízí globální analýzu zdrojů výroby elektřiny v roce 2019 a změn ve výrobě oproti předchozím rokům."
-intro:      "Cílem studie think-tanku EMBER vydané v březnu 2020 je předložit analýzu světových trendů ve výrobě a spotřebě elektřiny a podrobněji diskutovat stav v roce 2019 s vývojem v předchozích dvaceti letech. Zabývá se pouze výrobou elektřiny, nikoli celým energetickým sektorem, není tak zahrnuta například energie vyrobená spalováním paliv v dopravě (benzín, nafta) či na vytápění (zejména zemní plyn). 
+intro:      "Cílem studie think-tanku Ember vydané v březnu 2020 je předložit analýzu světových trendů ve výrobě a spotřebě elektřiny a podrobněji diskutovat stav v roce 2019 s vývojem v předchozích dvaceti letech. Zabývá se pouze výrobou elektřiny, nikoli celým energetickým sektorem, není tak zahrnuta například energie vyrobená spalováním paliv v dopravě (benzín, nafta) či na vytápění (zejména zemní plyn).
 Zpráva také obsahuje kompletní dataset popisující zdroje výroby elektřiny pro všechny státy světa za posledních 20 let."
 summary:    |
     * **Výroba elektřiny z uhlí se v roce 2019 celosvětově propadla o 3 % ve srovnání s rokem 2018.** V důsledku došlo k poklesu celkových emisí při výrobě elektřiny o 2 %, jedná se však spíše o jednorázový pokles než o začátek dlouhodobého trendu.
