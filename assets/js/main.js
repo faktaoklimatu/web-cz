@@ -24,9 +24,16 @@ $(document).ready(function() {
         }
         prevScrollpos = currentScrollPos;
     });
-});
 
-// Enable all poppers in the document
-$(document).ready(setTimeout(function () {
-    $('[data-toggle="popover"]').popover();
-}, 500));
+    // Open the correponding <details> rolldown if the URL target is inside one.
+    if (location.hash) {
+        const parentDetails = $(location.hash).parents('details')[0];
+        if (parentDetails)
+            parentDetails.open = true;
+    }
+
+    // Enable all poppers in the document
+    setTimeout(function () {
+        $('[data-toggle="popover"]').popover();
+    }, 500);
+});
