@@ -16,10 +16,8 @@ data-orig:
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
-<details markdown=1>
-<summary markdown=1>
 ## Metodické komentáře ke grafice
-</summary>
+
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
@@ -33,12 +31,7 @@ Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, a
 
 Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí pouze z výroby elektřiny**. Studie zahrnuje také transformaci teplárenství, která by vedla k dalším úsporám emisí z výroby tepla. Tyto úspory infografika nevyčísluje (pro srovnatelnost s dalšími scénáři, které teplárenství neřeší).
 
-</details>
-
-<details markdown=1>
-<summary markdown=1>
 ## O studii Ember
-</summary>
 
 [Ember](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a [shrnutí studie](https://ember-climate.org/wp-content/uploads/2020/11/Cesko_bez_uhli_od_2030_Ember.pdf) je k dispozici v češtině. Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
 
@@ -62,12 +55,7 @@ Studie dále nemodeluje národní přenosovou a distribuční soustavu. To zname
 
 Tento zjednodušený přístup je použit i pro distribuci tepla. Tedy celá ČR je agregovaná a model nijak neřeší lokality, ve kterých je potřeba budovat nové teplárenské kapacity místo uhelných tepláren.
 
-</details>
-
-<details markdown=1>
-<summary markdown=1>
 ## Metodika modelování studie Ember
-</summary>
 
 Ember pro tento model použil zavedený nástroj [Artelys Crystal Supergrid](https://www.artelys.com/crystal/super-grid/), který umožňuje plánovat a optimalizovat investice v elektrizační soustavě. Tento model stojí na řadě předpokladů:
 
@@ -101,12 +89,7 @@ Z toho vychází, že **v roce 2030 bude potřeba pokrýt 40 PJ tepla jako náhr
 * Na základě studií o využití odpadního tepla (z průmyslu) v ČR odhadují potenciál tohoto zdroje do roku 2030 na 11 PJ. Tato výroba tepla může probíhat nepřetržitě, a proto o tuto hodnotu snižují poptávku.
 * Pro zbývající poptávku umožňují kombinaci velkých tepelných čerpadel (s topným faktorem 3,5), kogeneračních jednotek na plyn nebo biomasu a tepláren na plyn nebo biomasu. Vynucují, aby alespoň 15 PJ bylo pokryto kogeneračními jednotkami nebo teplárnami. Toto množství tepla odpovídá odhadu poptávky po teple v průmyslových podnicích, kde konzervativně očekávají náhradu uhlí za technicky obdobné řešení.
 
-</details>
-
-<details markdown=1>
-<summary markdown=1>
 ## Výsledky studie Ember
-</summary>
 
 ### Náhrada uhlí ve výrobě elektřiny
 
@@ -134,12 +117,7 @@ Pro transformaci teplárenství odhadují náklady okolo 2,2 mld. euro. Toto zah
 * Zbylou poptávku plní ve velké míře nové plynové kogenerační jednotky a v zanedbatelné míře plynové teplárny.
 * Biomasa pro velké provozní náklady v této optimalizaci není použita vůbec (nad rámec odhadů v NECP).
 
-</details>
-
-<details markdown=1>
-<summary markdown=1>
 ## Varianty scénáře Ember
-</summary>
 
 Ember ještě kromě hlavního scénáře modeloval dva alternativní.
 
@@ -156,5 +134,3 @@ Pro srovnání, [scénář BloombergNEF](2020-scenar-bloombergnef) také nevyža
 Stejný jako hlavní scénář, jen vyžaduje instalaci bateriových systémů pro solární elektrárny. Konkrétně jde o Li-ion baterie s 2 GW instalovaného výkonu (to odpovídá 20 % solárního instalovaného výkonu) a kapacitou na 2 hodiny.
 
 Tento scénář vedl ke snížené výstavbě paroplynových elektráren (v roce 2030 celkem 3 GW, tedy o 1 GW méně než v hlavním scénáři). V důsledku nasazení baterií nejsou přebytky v obnovitelné výrobě exportované, ale později (během večerní špičky) spotřebované v Česku (+0,5 TWh). To nadále oslabuje ekonomiku provozu plynových elektráren (−1,4 TWh) a místo toho upřednostňuje import (+1 TWh).
-
-</details>

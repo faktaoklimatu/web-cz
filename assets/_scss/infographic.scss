@@ -13,17 +13,21 @@ img.infographic {
 }
 
 p.caption {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-style: italic;
 }
 
-.download-buttons {
+.downloads-box {
     margin-top: 1rem;
-    text-align: left;
-}
 
-.download-buttons-smallscreen .btn {
-    margin-top: 0.5rem;
+    h2 {
+        margin-top: 0;
+        font-size: 1.35rem;
+    }
+
+    p {
+        text-align: left;
+    }
 }
 
 .dropdown-links a {
@@ -52,4 +56,27 @@ p.caption {
     border-style: solid;
     border-color: rgba(0,0,0,0.05);
     margin: 1rem 0 -1rem 0;
+}
+
+.infographic-text {
+    font-size: 1.1rem;
+    line-height: 1.6em;
+
+    h2 {
+        font-size: 1.75rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
 }

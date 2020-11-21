@@ -40,10 +40,7 @@ Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Nap
 
 {% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
-<details markdown=1>
-<summary markdown=1>
 ## Metodické komentáře ke grafice
-</summary>
 
 ### Rozdělení zdrojů do kategorií: rok 2019
 
@@ -65,4 +62,3 @@ Kromě toho zbývá malá kategorie ostatní výroby, kterou pro přehlednost ne
 **[NECP](/studie/2019-scenar-necp):** Čísla o výrobě přebíráme přímo ze studie (ve skutečnosti jsou kombinací dvou tabulek, jedna udává výrobu z obnovitelných zdrojů v TJ, druhá výrobu z konvenčních zdrojů v TWh).
 
 {% include _texts/energeticke-scenare/emise.md %}
-</details>
