@@ -2,7 +2,7 @@ body {
     padding-top: 56px;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: $c-primary;
-    font-size: 1.0rem;
+    font-size: 1rem;
     background: $c-body;
     position: relative;
     display: flex;
@@ -20,16 +20,15 @@ main {
 
 /* Headings */
 
-h2 { font-size: 1.35rem; }
+h2 { font-size: 1.35rem; text-transform: uppercase; }
 h3 { font-size: 1.2rem; }
 h1, h2, h3, h4, h5, .display-1, .display-2, .display-3 { font-weight: bold; }
-h2 { text-transform: uppercase; }
 h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
 
 // Display versions for the title page
 .display-1 { font-size: 4.5rem; }
 .display-2 { font-size: 2.5rem; text-transform: none; }
-.display-3 { font-size: 1.75em; }
+.display-3 { font-size: 1.75em; margin: 0rem}
 
 // Fix anchor links
 h1::before, h2::before, h3::before, h4::before {
