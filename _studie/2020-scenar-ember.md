@@ -52,15 +52,15 @@ Studie Ember nabízí jeden z nejambicióznějších scénářů pro český uhe
 
 To znamená, že výroba v jednotlivých státech a přeshraniční toky elektřiny jsou v každé hodině určovány (1) tržními mechanismy (bez předpokladů jakýchkoliv dotací), (2) limity přenosové soustavy a (3) momentálním počasím (to je důležité pro větrné a solární elektrárny).
 
-V tomto rámci pak model optimalizuje výstavbu vybraných typů nových zdrojů v ČR (konkrétně paroplynových elektráren, plynových tepláren, větrných elektráren a solárních elektráren), tak aby naplnil po celou dobu životnosti těchto zdrojů poptávku po elektřině za minimální cenu. Ani pro výstavbu obnovitelných zdrojů nejsou předpokládány žádné dotace.
+V tomto rámci pak model optimalizuje výstavbu vybraných typů nových zdrojů v ČR (konkrétně paroplynových elektráren, plynových tepláren, větrných elektráren a solárních elektráren) tak, aby naplnil po celou dobu životnosti těchto zdrojů poptávku po elektřině za minimální cenu. Ani pro výstavbu obnovitelných zdrojů nejsou předpokládány žádné dotace.
 
 ### Co studie neřeší
 
-Studie Ember optimalizuje výstavbu zdrojů jen v rámci ČR. Pro všechny ostatní státy předpokládá fixní rozvoj zdrojů a přenosové soustavy podle plánů TYNDP evropské sítě regulačních úřadu [ENTSO-E](https://www.entsoe.eu/). To není zcela realistické, protože v důsledku může být levnější dovážet více elektřiny ze zahraničních zdrojů, např. z off-shore větrných farem v Polsku nebo v Německu, než tuto elektřinu vyrábět lokálně. Takto tento model vynucuje, aby se v Česku přibližně pokryla poptávka po elektřině domácí výrobou. To ovšem z pohledu státu a energetické bezpečnosti může být atraktivní výsledek, a tak může případný rozdíl nákladů dotovat.
+Studie Ember optimalizuje výstavbu zdrojů jen v rámci ČR. Pro všechny ostatní státy předpokládá fixní rozvoj zdrojů a přenosové soustavy podle plánů TYNDP _Evropské sítě provozovatelů přenosových soustav_ ([ENTSO-E](https://www.entsoe.eu/)). To není zcela realistické, protože v konečném důsledku může být levnější dovážet více elektřiny ze zahraničních zdrojů, např. z off-shore větrných farem v Polsku nebo v Německu, než tuto elektřinu vyrábět lokálně. Tento model však vynucuje, aby se v Česku přibližně pokryla poptávka po elektřině domácí výrobou. Což ovšem z pohledu státu a energetické bezpečnosti může být atraktivní výsledek, a tak může případný rozdíl nákladů (mezi levným dovozem a dražší výrobou) dotovat.
 
 Studie dále nemodeluje národní přenosovou a distribuční soustavu. To znamená, že tato studie vlastně předpokládá, že elektřina vyrobená kdekoliv v ČR se dostane v kteroukoliv hodinu ke kterýmkoliv zákazníkům v ČR (a to stejné pro další státy EU). V důsledku studie není schopná vzít v potaz omezení spojená s připojením nových obnovitelných zdrojů do distribuční soustavy a s tím spojené nutné investice v infrastruktuře.
 
-Tento zjednodušený přístup je použitý i pro distribuci tepla vyrobeného místo tepla z uhelných elektráren a tepláren. Tedy celá ČR je agregovaná a model nijak neřeší lokality, ve kterých je potřeba budovat nové teplárenské kapacity.
+Tento zjednodušený přístup je použit i pro distribuci tepla. Tedy celá ČR je agregovaná a model nijak neřeší lokality, ve kterých je potřeba budovat nové teplárenské kapacity místo uhelných tepláren.
 
 </details>
 
@@ -73,11 +73,11 @@ Ember pro tento model použil zavedený nástroj [Artelys Crystal Supergrid](htt
 
 ### Kontext
 
-* U energetiky v jiných evropských zemích se předpokládá vývoj podle plánů TYNDP evropské sítě regulačních úřadu [ENTSO-E](https://www.entsoe.eu/), konkrétně scénář _Sustainable Transition_ z [verze plánů z roku 2018](https://tyndp.entsoe.eu/tyndp2018/). Výhled pro uhelné kapacity okolních zemí podle tohoto scénáře je zhruba konzistentní s jejich národními plány NECP.
+* U energetiky v jiných evropských zemích se předpokládá vývoj podle plánů TYNDP _Evropské sítě provozovatelů přenosových soustav_ [ENTSO-E](https://www.entsoe.eu/), konkrétně scénář _Sustainable Transition_ z [verze plánů z roku 2018](https://tyndp.entsoe.eu/tyndp2018/). Výhled pro uhelné kapacity okolních zemí podle tohoto scénáře je zhruba konzistentní s jejich národními plány NECP.
 * Vzhledem k omezeným datům o dalších státech EU je modelování provedeno pouze pro roky 2020, 2025 a 2030.
 * Přenosová soustava je zjednodušená na vedení vysokého napětí propojující jednotlivé státy.
 * Poptávka po elektřině se vyvíjí podle predikce NECP.
-* Počasí je v modelu zohledněno pomocí průběhu ve třech referenčních obdobích (roky 2002, 2006 a 2010) hodinu po hodině. Tyto roky byly vybrány tak, aby zachytily možnou meziroční variabilitu počasí. Toto je jediný nástroj, který tato studie používá ke zkoumání extrémních vlivů počasí pro stabilitu sítě.
+* Počasí je v modelu zohledněno pomocí průběhu ve třech referenčních obdobích (roky 2002, 2006 a 2010) hodinu po hodině. Tyto roky byly vybrány tak, aby zachytily možnou meziroční variabilitu počasí. Toto je jediný nástroj, který tato studie používá ke zkoumání extrémních vlivů počasí na stabilitu sítě.
 
 ### Omezení instalovaného výkonu
 
@@ -98,8 +98,8 @@ Model se zaměřuje jen na teplo v současnosti vyráběné z uhlí (asi 60 PJ v
 
 Z toho vychází, že **v roce 2030 bude potřeba pokrýt 40 PJ tepla jako náhradu za odstavené uhelné elektrárny**. Optimální výrobu tohoto chybějícího tepla hledají za následujících omezení:
 
-* Na základě studií o využití odpadního tepla (z průmyslu) v ČR odhadují potenciál tohoto zdroje do roku 2030 na 11 PJ. Tato výroba tepla může probíhat nepřetržitě a proto o tuto hodnotu snižují poptávku.
-* Pro zbývající poptávku umožňují kombinaci velkých tepelných čerpadel (s topným faktorem 3,5), kogenerační jednotek na plyn nebo biomasu a tepláren na plyn nebo biomasu. Vynucují, aby alespoň 15 PJ bylo pokryto kogeneračními jednotkami nebo teplárnami. Toto množství tepla odpovídá odhadu poptávky po teple v průmyslových podnicích, kde konzervativně očekávají náhradu uhlí za technicky obdobné řešení.
+* Na základě studií o využití odpadního tepla (z průmyslu) v ČR odhadují potenciál tohoto zdroje do roku 2030 na 11 PJ. Tato výroba tepla může probíhat nepřetržitě, a proto o tuto hodnotu snižují poptávku.
+* Pro zbývající poptávku umožňují kombinaci velkých tepelných čerpadel (s topným faktorem 3,5), kogeneračních jednotek na plyn nebo biomasu a tepláren na plyn nebo biomasu. Vynucují, aby alespoň 15 PJ bylo pokryto kogeneračními jednotkami nebo teplárnami. Toto množství tepla odpovídá odhadu poptávky po teple v průmyslových podnicích, kde konzervativně očekávají náhradu uhlí za technicky obdobné řešení.
 
 </details>
 
@@ -141,7 +141,7 @@ Pro transformaci teplárenství odhadují náklady okolo 2,2 mld. euro. Toto zah
 <h2>Varianty scénáře Ember</h2>
 </summary>
 
-Ember modeloval ještě kromě hlavního scénáře modeloval dva alternativní scénáře.
+Ember ještě kromě hlavního scénáře modeloval dva alternativní.
 
 ### Referenční scénář
 
@@ -155,6 +155,6 @@ Pro srovnání, [scénář BloombergNEF](2020-scenar-bloombergnef) také nevyža
 
 Stejný jako hlavní scénář, jen vyžaduje instalaci bateriových systémů pro solární elektrárny. Konkrétně jde o Li-ion baterie s 2 GW instalovaného výkonu (to odpovídá 20 % solárního instalovaného výkonu) a kapacitou na 2 hodiny.
 
-Tento scénář vedl k snížené výstavbě paroplynových elektráren (v roce 2030 celkem 3 GW, tedy o 1 GW méně než v hlavním scénáři). V důsledku nasazení baterií nejsou přebytky v obnovitelné výrobě exportované, ale později (během večerní špičky) spotřebované v Česku (+0,5 TWh). To nadále oslabuje ekonomiku provozu plynových elektráren (−1,4 TWh) a místo toho upřednostňuje import (+1 TWh).
+Tento scénář vedl ke snížené výstavbě paroplynových elektráren (v roce 2030 celkem 3 GW, tedy o 1 GW méně než v hlavním scénáři). V důsledku nasazení baterií nejsou přebytky v obnovitelné výrobě exportované, ale později (během večerní špičky) spotřebované v Česku (+0,5 TWh). To nadále oslabuje ekonomiku provozu plynových elektráren (−1,4 TWh) a místo toho upřednostňuje import (+1 TWh).
 
 </details>
