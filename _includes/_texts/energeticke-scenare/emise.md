@@ -6,7 +6,7 @@ Většina z pokrytých studií nějakým způsobem počítá emise CO<sub>2</sub
 
 Úsporu v emisích skleníkových plynů produkovaných na českém území nejlépe vyjadřují emise přímé (příp. doplněné o emise související s těžbou uhlí). Takovéto národní emise srovnáváme v mnohých [našich infografikách](/temata/emise/) a také se na ně vztahují emisní cíle Evropské unie a Česka.
 
-Na druhou stranu, emise celého cyklu lépe vystihují český přínos v kontextu celosvětové sumy emisí. Fakta o klimatu se přiklání k tomuto druhému pohledu z několika důvodů:
+Na druhou stranu emise celého cyklu lépe vystihují český přínos v kontextu celosvětové sumy emisí. Fakta o klimatu se přiklání k tomuto druhému pohledu z několika důvodů:
 * Není hodnotné snižovat české emise za cenu výrazného navýšení emisí jinde. Proto naše metrika potřebuje zachytit i takové případné navýšení jinde.
 * Scénáře transformace elektroenergetiky stojí na výrazném zvyšování podílu obnovitelných zdrojů, jejichž přímé emise jsou téměř nulové. Přímé emise tedy do určité míry těmto zdrojům oproti konvenčním fosilním zdrojům straní. Emise celého cyklu jsou v tomto ohledu férovější.
 
