@@ -27,7 +27,7 @@ data-orig:
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
-Čísla udávaná přímo ve studii dobře odpovídají naší kategorizaci, takže je přímo přebíráme.
+Čísla udávaná ve studii dobře odpovídají naší kategorizaci, takže je přímo přebíráme.
 
 {% include _texts/energeticke-scenare/emise.md %}
 </details>

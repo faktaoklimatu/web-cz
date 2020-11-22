@@ -41,7 +41,7 @@ Zmíněná studie se zabývá možností přechodu k nízkouhlíkovému hospodá
 
 Scénář vychází z vlastní metodiky, tzv. [New Energy Outlook](https://about.bnef.com/new-energy-outlook/). Ta je postavena na stávajících schématech (neuvažuje nové mechanismy podpory), přičemž určuje ekonomické faktory a body zvratu, které formují výsledný stav.
 
-V daném případě se jedná o srovnání sdružených nákladů na výrobu elektřiny (včetně ceny uhlíku, respektive uhlíkových povolenek, obchodovaných v rámci systému ETS), dostupnost jednotlivých zdrojů elektřiny a provozní podmínky, které stanovují jejich vyžití v čase.
+V daném případě se jedná o srovnání sdružených nákladů na výrobu elektřiny (včetně ceny uhlíku, respektive uhlíkových povolenek, obchodovaných v rámci systému ETS), dostupnost jednotlivých zdrojů elektřiny a provozní podmínky, které stanovují jejich využití v čase.
 
 Výrobní mix je řešen pomocí vlastního modelu NEFM, jehož cílem je minimalizovat systémové náklady při splnění špičkové poptávky. Prognóza spotřeby elektřiny je poté založena na vlastních scénářích, které berou v úvahu zejména očekávaný vývoj HDP, mimo jiné i s ohledem na probíhající pandemii koronaviru.
 
@@ -51,8 +51,8 @@ Ve studii nejsou zmíněny žádné bližší detaily ohledně modelování elek
 
 Výsledný mix počítá s poklesem instalovaného výkonu v uhlí a výrazným zvýšením výkonu větrných elektráren (nejvíce z uvedených scénářů). Na rozdíl od ostatních scénářů nepočítá BloombergNEF se zvýšením instalovaného výkonu plynových elektráren.
 
-Pro využití obnovitelných zdrojů jsou klíčové tzv. body zlomu, které určují okamžik, kdy se výroba z těchto zdrojů (včetně počáteční investice) stává levnější, než výroba ze stávajících fosilních elektráren. V případě větrných elektráren tak Bloomberg NEF počítá s jejich rozvojem především po roce 2025, zatímco u solárních elektráren předpokládá největší nárůst až v samém závěru dekády.
+Pro využití obnovitelných zdrojů jsou klíčové tzv. body zlomu, které určují okamžik, kdy se výroba z těchto zdrojů (včetně počáteční investice) stává levnější, než výroba ze stávajících fosilních elektráren. V případě větrných elektráren tak BloombergNEF počítá s jejich rozvojem především po roce 2025, zatímco u solárních elektráren předpokládá největší nárůst až v samém závěru dekády.
 
-Předpokládané náklady na výstavbu nových obnovitelných zdrojů jsou dle scénáře 5,8 mld. EUR. Investice do infrastruktury scénář nemodeluje.
+Předpokládané náklady na výstavbu nových obnovitelných zdrojů jsou dle scénáře 5,8 mld. eur. Investice do infrastruktury scénář nemodeluje.
 
 </details>
