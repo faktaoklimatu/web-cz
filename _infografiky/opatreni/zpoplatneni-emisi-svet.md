@@ -46,7 +46,7 @@ Opatření pro zpoplatnění emisí jsou obecně považována za efektivní nás
 * *Jakými způsoby lze ovlivnit zavádění opatření v dalších zemích?*
 * *Je možné propojovat systémy pro obchodování s emisemi a zavést jednotnou mezinárodní cenu, případně jednotnou uhlíkovou daň?*
 
-O finančních nástrojích pro mitigaci klimatické změny podrobněji pojednává [studie Mezinárodního Měnového Fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019), z níž jsme přeložili [infografiku](https://faktaoklimatu.cz/infografiky/mitigacni-opatreni-mmf), která jednotlivé mechanismy pro regulaci emisí skleníkových plynů srovnává.
+O finančních nástrojích pro mitigaci klimatické změny podrobněji pojednává [studie Mezinárodního Měnového Fondu](https://www.imf.org/en/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019), z níž jsme přeložili [infografiku](/infografiky/mitigacni-opatreni-mmf), která jednotlivé mechanismy pro regulaci emisí skleníkových plynů srovnává.
 
 ## Komentář: Evropský systém pro obchodování s emisními povolenkami
 

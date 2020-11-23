@@ -39,7 +39,7 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 
 **Jakými zdroji je uhlí při výrobě elektřiny nahrazováno?** V USA bylo uhlí dosud nahrazováno z velké části zemním plynem, v případě EU především obnovitelnými zdroji. Detaily viz související infografika o [výrobě elektřiny ve světových regionech](/elektrina-svet). Uhelný phase-out nutně neznamená zavření všech současných uhelných elektráren. Napříč Evropou jsou některé uhelné elektrárny přestavovány na zemní plyn (který má asi poloviční emisní intenzitu oproti uhlí) nebo na biomasu (jejíž emisní intenzita závisí na způsobu výroby a transportu biomasy, samotné spalování přirozeně vyrostlé biomasy je v principu uhlíkově neutrální).
 
-**Jaké by byly dopady uzavření českých uhelných elektráren do roku 2030 na stabilitu elektrizační soustavy?** Podívejte se na náš výtah ze související [studie od Energynautics](/studie/2018-energetika-cr-bez-uhli).
+**Jaké by byly dopady uzavření českých uhelných elektráren do roku 2030 na stabilitu elektrizační soustavy?** Podívejte se na náš výtah ze související [studie od Energynautics](/studie/2018-scenar-energynautics).
 
 **Jaké jsou konkrétní mechanismy, jejichž prostřednictvím lze realizovat uhelný phase-out?**
 
