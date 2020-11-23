@@ -44,18 +44,18 @@ NECP přitom vychází zejména ze dvou strategických dokumentů, [Aktualizovan
 
 ### Jaké jsou cíle ČR, ze kterých NECP vychází?
 
-V oblasti snižování emisí je cílem ČR snížit celkové emise skleníkových plynů (tedy nejen z výroby elektřiny) do roku 2030 o 30 % v porovnání s rokem 2005, což odpovídá snížení emisí o 44 MtCO2eq. Podle emisních projekcí dojde při naplnění politik a opatření obsažených ve Vnitrostátním plánu k poklesu emisí skleníkových plynů o 34% (v porovnání s rokem 2005).
+V oblasti snižování emisí je cílem ČR snížit celkové emise skleníkových plynů (tedy nejen z výroby elektřiny) do roku 2030 o 30 % v porovnání s rokem 2005, což odpovídá snížení emisí o 44 Mt CO<sub>2</sub>eq. Podle emisních projekcí dojde při naplnění politik a opatření obsažených ve Vnitrostátním plánu k poklesu emisí skleníkových plynů o 34 % (v porovnání s rokem 2005).
 
-V rámci dekarbonizace si Česká republika vytyčila cíl dosáhnout 22% podílu obnovitelných zdrojů na hrubé konečné spotřebě energie. Ta obsahuje  nejen elektřinu, ale i spotřebu energie při chlazení a výrobě tepla, v dopravě apod. V roce 2020 je tento podíl 13%.
+V rámci dekarbonizace si Česká republika vytyčila cíl dosáhnout 22% podílu obnovitelných zdrojů na hrubé konečné spotřebě energie. Ta obsahuje  nejen elektřinu, ale i spotřebu energie při chlazení a výrobě tepla, v dopravě apod. V roce 2020 je tento podíl 13 %.
 
-NECP dále vychází ze Státní energetické koncepce ASEK, která počítá s navýšením produkce elektřiny z jádra do roku 2040 na 46-58%. Plánovaná dostavba nových bloků se sice přímo neprojeví do roku 2030, nepřímo však souvisí s jen pomalým navyšováním OZE v rámci NECP.
+NECP dále vychází ze Státní energetické koncepce ASEK, která počítá s navýšením produkce elektřiny z jádra do roku 2040 na 46–58 %. Plánovaná dostavba nových bloků se sice přímo neprojeví do roku 2030, nepřímo však souvisí s jen pomalým navyšováním OZE v rámci NECP.
 
 ### Metodika
 K metodice výpočtů hodnot výroby elektřiny či instalovaného výkonu jednotlivých zdrojů NECP uvádí zpravidla: “Zdroj: Vlastní zpracování MPO pro účely Vnitrostátního plánu”. Lze očekávat, že půjde o hodnoty z jiných dokumentů (např. Státní energetické koncepce), expertní odhady, nebo o rozpady cílů, které byly s Evropskou Unií vyjednány na politické úrovni. NECP modelování nebo kritéria optimalizace nezmiňuje.
 
 Pro naše zobrazení scénáře elektroenergetiky, jak ji uvažuje NECP, jsme použili:
-* Hodnoty hrubé výroby elektřiny podle paliv - Tabulka 168 na straně 341. 
-* Hodnoty výroby elektřiny z OZE - Tabulka 15 na straně 31.
-* Instalovaný výkon OZE - Tabulka 18 na straně 33. 
+* Hodnoty hrubé výroby elektřiny podle paliv – Tabulka 168 na straně 341.
+* Hodnoty výroby elektřiny z OZE – Tabulka 15 na straně 31.
+* Instalovaný výkon OZE – Tabulka 18 na straně 33.
 
 </details>
