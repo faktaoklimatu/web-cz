@@ -2,7 +2,10 @@
 layout:     study
 title:      "Sternova zpráva"
 slug:       2006-sternova-zprava
-redirect_from: "/2006-sternova-zprava"
+redirect_from:
+  - /2006-sternova-zprava
+  - /2006_sternova-zprava
+  - /studie/2006_sternova-zprava
 published:  2019-10-16
 weight:     180
 tags-scopes: [ svet ]

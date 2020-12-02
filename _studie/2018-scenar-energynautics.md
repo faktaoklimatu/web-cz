@@ -4,8 +4,8 @@ title:       "Energynautics: Scénář transformace elektroenergetiky ČR"
 slug:        "2018-scenar-energynautics"
 redirect_from:
   - /2018-scenar-energynautics
-  - /2018-energetika-cr-bez-uhli
-  - /studie/2018-energetika-cr-bez-uhli
+  - /2018_energetika-cr-bez-uhli
+  - /studie/2018_energetika-cr-bez-uhli
 published:   2020-11-19
 weight:      92
 tags-scopes: [ cr ]

@@ -2,7 +2,10 @@
 layout:     study
 title:      "Charneyho zpráva"
 slug:       1979-charneyho-zprava
-redirect_from: "/1979-charneyho-zprava"
+redirect_from:
+  - /1979-charneyho-zprava
+  - /1979_charneyho-zprava
+  - /studie/1979_charneyho-zprava
 published:  2019-08-22
 weight:     200
 tags-scopes: [ svet ]
