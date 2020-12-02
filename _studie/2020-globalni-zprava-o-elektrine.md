@@ -2,7 +2,10 @@
 layout:     study
 title:      "Globální zpráva o elektřině 2020"
 slug:       2020-globalni-zprava-o-elektrine
-redirect_from: "/2020-globalni-zprava-o-elektrine"
+redirect_from:
+  - /2020-globalni-zprava-o-elektrine
+  - /2020_globalni-zprava-o-elektrine
+  - /studie/2020_globalni-zprava-o-elektrine
 published:  2020-05-22
 weight:     95
 tags-scopes: [ svet ]
