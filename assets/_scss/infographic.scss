@@ -58,7 +58,7 @@ p.caption {
     margin: 1rem 0 -1rem 0;
 }
 
-.infographic-text {
+.longread {
     font-size: 1.1rem;
     line-height: 1.6em;
 
@@ -78,5 +78,28 @@ p.caption {
         font-size: 1.2rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+    }
+}
+
+.sticky-toc {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0rem;
+
+    .is-active-li {
+        font-weight: bold;
+    }
+
+    li {
+        text-align: left;
+    }
+
+    ol {
+        padding-left: 1rem;
+
+        ol {
+            padding-left: 2rem;
+            list-style-type: lower-alpha;
+        }
     }
 }

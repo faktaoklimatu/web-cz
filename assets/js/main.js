@@ -46,4 +46,12 @@ $(document).ready(function() {
     setTimeout(function () {
         $('[data-toggle="popover"]').popover();
     }, 500);
+
+    // Render table if contents, if available.
+    tocbot.init({
+        tocSelector: '#TOC',
+        contentSelector: '.longread',
+        headingSelector: 'h2, h3',
+        smoothScroll: false,
+    });
 });
