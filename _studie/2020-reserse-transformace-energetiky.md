@@ -20,6 +20,7 @@ items:
     timeframe: "2030, 2050"
   - title:   "Coal-Free Czechia 2030"
     date:    Listopad 2020
+    url:     https://ember-climate.org/project/coal-free-czechia-2030/
     authors:
       - name: Ember
         url:  "https://ember-climate.org/"
