@@ -47,12 +47,20 @@ slug: index
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2" | split: ", " %}
     {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
-    <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. </p>
-    <!-- Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p> -->
-    <a href="/atlas" class="btn btn-primary" target="_blank"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a>
-    <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
-    <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
-    <a href="/jak-pouzivat" class="btn btn-secondary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
+    <div class="row justify-content-md">
+      <div class="col-md-6 col-lg-8">
+        <p class="lead">Jazykově a obsahově nejpřístupnější je naše publikace Atlas klimatické změny, která uceleně vysvětluje jevy způsobující nebo provázející klimatickou změnu. </p>
+        <!-- Práci s texty a grafikami se snažíme usnadnit pomocí slovníku pojmů a explainerů („vysvětlovačů“).</p> -->
+        <a href="/atlas" class="btn btn-primary" target="_blank"><i class="fas fa-fw fa-atlas"></i> Atlas klimatické změny</a>
+        <!-- <a href="/explainery" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a> -->
+        <br/>
+        <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+        <a href="/jak-pouzivat" class="btn btn-secondary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="/atlas" class="card"><img src="/assets/img/atlas-mockup.png" alt="Alas klimatické změny" class="img-fluid"></a>
+      </div>
+    </div>
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-red pt-4 pb-4" id="journalists" role="tabpanel" aria-labelledby="journalists-tab"><div class="container">
