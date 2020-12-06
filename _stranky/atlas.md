@@ -10,7 +10,7 @@ intro:      "Pro kultivovanou veřejnou debatu o klimatické změně jsou nezbyt
     <div class="col-md-12 col-lg-9">
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.intro }}</p>
-        <img src="/assets/img/atlas-preview.jpg" class="img-fluid" alt="Alas klimatické změny" style="margin-bottom: 1rem;">
+        <img src="/assets/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
         <p>O. Přibyla, K. Zákopčanová a O. Pechník, <em>Atlas klimatické změny: Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2020. ISBN 978-80-88212-36-2</p>
     </div>
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
