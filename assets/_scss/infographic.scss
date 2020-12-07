@@ -17,6 +17,28 @@ p.caption {
     font-style: italic;
 }
 
+p.perex {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+div.highlight-box {
+    float: right;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    color: $c-light-blue;
+    border-left: 2px solid $c-light-blue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -20%;
+    padding: 0rem 0.75rem;
+
+    h4 {
+        margin-top: 0rem;
+    }
+}
+
 .downloads-box {
     margin-top: 1rem;
 
@@ -61,6 +83,8 @@ p.caption {
 .longread {
     font-size: 1.1rem;
     line-height: 1.6em;
+    position: relative;
+    right: 20%;
 
     h2 {
         font-size: 1.75rem;
@@ -81,10 +105,20 @@ p.caption {
     }
 }
 
+.longread-toc {
+    position: relative;
+    right: 30%;
+}
+
 .sticky-toc {
     position: sticky;
     position: -webkit-sticky;
     top: 0rem;
+    left: 100px;
+
+    li {
+        text-align: left;
+    }
 
     .is-active-li {
         font-weight: bold;
