@@ -38,7 +38,9 @@ Klimatická změna je důležitým problémem současnosti, a je proto pevně sp
 Grafiky a texty projektu Fakta o klimatu chceme do budoucna provázet metodickými materiály, které učitelům, lektorům a dalším poslouží jako zdroj otázek a aktivit pro práci se žáky či studenty.
 
 <details markdown="1">
-<summary>Jak učit o klimatu a klimatické změně?</summary>
+<summary markdown=1>
+## Jak učit o klimatu a klimatické změně?
+</summary>
 
 Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek o klimatické změně. Lze začít u zvyšování teplot, u emisí skleníkových plynů anebo třeba u dopadů změny na obyvatele různých oblastí. My jsme v Atlase uspořádali grafiky a texty tak, že ilustrují následující linku argumentů.
 
@@ -52,7 +54,9 @@ Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek 
 </details>
 
 <details markdown="1">
-<summary>Recenzenti a poděkování</summary>
+<summary markdown=1>
+## Recenzenti a poděkování
+</summary>
 
 Atlas recenzovali:
 
@@ -68,7 +72,9 @@ Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi,
 </details>
 
 <details markdown="1">
-<summary>Další díly a aktualizace atlasu</summary>
+<summary markdown=1>
+## Další díly a aktualizace atlasu
+</summary>
 
 V budoucnosti bychom rádi připravili další díly atlasu pokrývající například enegetiku a sénáře jejích transformací, emise, a další témata. Zároveň budeme první díl atlasu aktualizovat o nově vydávaná data.
 </details>

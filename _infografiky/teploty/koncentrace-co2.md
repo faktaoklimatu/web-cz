@@ -22,8 +22,8 @@ dataset:    "koncentrace-co2"
 
 
 <details markdown=1>
-<summary>
-<h2>Jak se měří historické koncentrace CO<sub>2</sub>?</h2>
+<summary markdown=1>
+## Jak se měří historické koncentrace CO<sub>2</sub>?
 </summary>
 
 * Vzorky ledu z hloubkových ledovcových vrtů (až 3 800 m) obsahují velmi starý led (až 800 000 let). Fyzikální vlastnosti tohoto ledu vypovídají o podmínkách v dobách, kdy led zamrzl. Z množství isotopů kyslíku a vodíku lze určit tehdejší průměrnou teplotu planety, z bublinek zachycených v ledu lze určit složení tehdejšího vzduchu.
@@ -36,8 +36,8 @@ dataset:    "koncentrace-co2"
 
 
 <details markdown=1>
-<summary>
-<h2>Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?</h2>
+<summary markdown=1>
+## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 </summary>
 
 Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fosilních paliv je několik:

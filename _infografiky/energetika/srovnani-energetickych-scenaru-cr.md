@@ -41,8 +41,8 @@ Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Nap
 {% include _texts/energeticke-scenare/v-cem-se-shoduji.md %}
 
 <details markdown=1>
-<summary>
-<h2>Metodické komentáře ke grafice</h2>
+<summary markdown=1>
+## Metodické komentáře ke grafice
 </summary>
 
 ### Rozdělení zdrojů do kategorií: rok 2019

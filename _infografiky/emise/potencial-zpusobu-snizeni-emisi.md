@@ -22,8 +22,8 @@ V pravém sloupci ukazujeme potenciál úspor, které přímo nesouvisí s indiv
 V této sekci vysvětlujeme podrobněji jednotlivé odhady a předpoklady, ze kterých vycházíme. Přesné odvození jednotlivých čísel najdete v naší tabulce s daty.
 
 <details markdown=1>
-<summary>
-<h3>Osobními auty ujedeme polovinu vzdálenosti</h3>
+<summary markdown=1>
+### Osobními auty ujedeme polovinu vzdálenosti
 </summary>
 
 Největší skupina českých řidičů najede ročně mezi [5 až 10 tisíci km](https://www.opojisteni.cz/pojistny-trh/pojistne-produkty/pruzkum-pojistovny-direct-jak-cesi-jezdi/c:11746/) a osobní automobily zodpovídají v ČR celkem za 11,9 milionů tun emisí <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. **Kdyby se celkový roční nájezd snížil na polovinu, ušetřilo by se ročně asi 5,9 milionů tun emisí CO<sub>2</sub>eq.**
@@ -32,8 +32,8 @@ Takového snížení by bylo možné dosáhnout např. ještě vyšším využí
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Nalétáme polovinu vzdálenosti</h3>
+<summary markdown=1>
+### Nalétáme polovinu vzdálenosti
 </summary>
 
 Letecká doprava odpovídá za přibližně 2,5 % světových emisí CO<sub>2</sub> (bez EWF, viz níže), rozpočítávání emisí na jednotlivé státy je ale komplikované. Většina "emisních účetnictví" počítá emise podle dopravy z letišť na území daného státu (pro ČR zejména Praha-Ruzyně). V tomto přístupu budou emise lidí z ČR mírně podhodnocené, neboť Češi využívají také letiště ve Vídni či Bratislavě. EUROSTAT uvádí, že emise z letecké dopravy v ČR v roce 2018 byly 1,25 milionů tun <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Spalováním leteckého benzínu vzniká nejen oxid uhličitý, ale i oxidy dusíku (NO<sub>X</sub>) a síry. Vypouštění těchto emisí vysoko v atmosféře vytváří ozon (skleníkový plyn) a kondenzační stopy, které je nutné započítat do celkového radiačního působení vypouštěných emisí. To se prakticky provádí pomocí EWF (emission weighting factor). Pro náš výpočet vycházíme ze [studie](https://link.springer.com/article/10.1007/s10584-011-0168-8), která odhaduje střední hodnotu EWF na 1,7. **Kdyby obyvatelé ČR nalétali poloviční vzdálenost, snížily by se efektivní emise ČR o 1,1 milionů tun CO<sub>2</sub>eq.**
@@ -42,8 +42,8 @@ Pro dopravu na kratší vzdálenosti v rámci Evropy je možné letadla částe�
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Zkonzumujeme poloviční množství mléka a mléčných výrobků / masa</h3>
+<summary markdown=1>
+### Zkonzumujeme poloviční množství mléka a mléčných výrobků / masa
 </summary>
 
 Podle Českého statistického úřadu sní průměrný Čech ročně asi 70 kg masa, z toho je přibližně 6 kg hovězího. Při započtení všech druhů masa, včetně rozlišení mléčného a masného skotu, jsou emise související se spotřebou masa v ČR celkem 6,8 milionů tun <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. V této hodnotě je započten celý cyklus výroby, tedy obsahuje například i krmivo či doprava do obchodu. Zároveň je třeba poznamenat, že část produkce masa se do ČR dováží, takže hodnota odpovídá emisím souvisejícím se spotřebovaným masem, nikoliv s masem produkovaným v ČR. **Pokud by lidé spotřebovali poloviční množství masa, ušetřilo by se ročně 3,4 milionů tun emisí CO<sub>2</sub>eq.**
@@ -56,8 +56,8 @@ Emisní koeficienty celého cyklu produkce potravin přebíráme ze zdroje [Our 
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Snížíme spotřebu elektřiny v domácnostech na polovinu</h3>
+<summary markdown=1>
+### Snížíme spotřebu elektřiny v domácnostech na polovinu
 </summary>
 
 V domácnostech se spotřebuje asi jen 17 % elektřiny, která je v ČR vyrobena a zároveň výroba elektřiny a tepla vyprodukuje téměř 40 % ročních emisí ČR. Je tedy vhodné pokládat si otázku k jak velkému snížení emisí by vedla úspora elektřiny v domácnostech. Abychom mohli takový odhad udělat, musíme učinit několik předpokladů o výrobě, spotřebě a trhu s elektřinou, které nejsou samozřejmé.
@@ -73,8 +73,8 @@ Je třeba mít na paměti, že pokud výroba elektřiny v Česku projde v dalš�
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Omezíme emise z vytápění a ohřevu vody na polovinu</h3>
+<summary markdown=1>
+### Omezíme emise z vytápění a ohřevu vody na polovinu
 </summary>
 
 Podle EUROSTATu způsobilo spalování v domácnostech v roce 2018 emise oxidu uhličitého ve výši 9,1 Mt <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Spalování v domácnostech primárně znamená lokální vytápění a ohřev vody, malou část také tvoří vaření na zemním plynu. **Kdyby se tyto emise snížily na polovinu, pak ušetříme 4,6 Mt CO<sub>2</sub>eq.**
@@ -87,8 +87,8 @@ Nástroje ke snížení emisí existují: pokračující zateplení budov, moder
 Přesné odvození jednotlivých čísel opět najdete v naší tabulce s daty.
 
 <details markdown=1>
-<summary>
-<h3>Výsadba 10 milionů stromů navíc</h3>
+<summary markdown=1>
+### Výsadba 10 milionů stromů navíc
 </summary>
 
 Vysazování stromů bývá považováno za důležitý nástroj k sekvestraci uhlíku, což se promítá i do některých politických [prohlášení](https://www.facebook.com/AndrejBabis/posts/1636697499800221/). Deset milionů stromů volíme symbolicky (jeden strom na jednoho občana ČR) a také v návaznosti na stejný cíl projektu Sázíme budoucnost založený Nadací Partnerství a zaštítěný Ministerstvem životního prostředí. Cílem projektu je do roku 2025 vysázet 10 milionů nových stromů mimo území lesa (tedy tvorbou nových alejí, sadů, remízků, větrolamů, atd.)
@@ -107,8 +107,8 @@ Sekvestrace uhlíku samozřejmě není jediné kritérium. Sázení nových stro
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Sekvestrace na orné půdě (změna hospodaření)</h3>
+<summary markdown=1>
+### Sekvestrace na orné půdě (změna hospodaření)
 </summary>
 
 Zemědělská půda přirozeně váže uhlík a v závislosti na zvolené technice hospodaření se množství vázaného uhlíku v průběhu let zvyšuje nebo klesá. V uplynulých dekádách na různých místech světa probíhají dlouhodobé studie, které srovnávají různé techniky hospodaření podle jejich sekvestračního potenciálu. Podle [studie](https://aa.ecn.cz/img_upload/410697af7dfcb092dfd4e3937dd69e3f/klima_co2_web_final.pdf) Organizace pro výživu a zemědělství (která spadá pod OSN) může hektar půdy obdělávané v režimu ekologického zemědělství uložit okolo 200 kg CO<sub>2</sub> za rok. Když se k tomu dále přidají techniky minimálního zpracování orné půdy, zvýší se sekvestrační potenciál na přibližně 500 kg CO<sub>2</sub> za rok. U vyčerpaných půd může být tato sekvestrace ještě vyšší, dlouhodobé studie ukazují, že sekvestrační potenciál se příliš nesnižuje ani po 30 letech takového hospodaření.
@@ -121,8 +121,8 @@ Přechod na takový režim zemědělství by v mnoha oblastech by vedl ke sníž
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Snížení emisí ze skládek odpadu na polovinu</h3>
+<summary markdown=1>
+### Snížení emisí ze skládek odpadu na polovinu
 </summary>
 
 Jednou z oblastí, kde emise České republiky od roku 1990 rostou, je odpadové hospodářství. Na skládkách skončí ročně cca 2,7 milionů tun odpadu a při jeho rozkládání vzniká především metan, který je silným skleníkovým plynem. Ročně tak emise skleníkových plynů ze skládek odpovídají 3,7 miliónů tun <glossary id="co2eq">CO<sub>2</sub>eq</glossary>, což je o 80 % více než v roce 1990. Kdyby se podařilo snížit emise ze skládkování odpadu na polovinu, uspořilo by to 1,8 miliónů tun CO<sub>2</sub>eq ročně.
@@ -131,8 +131,8 @@ Možností, jak snížit množství odpadů na skládkách je mnoho: v duchu hes
 </details>
 
 <details markdown=1>
-<summary>
-<h3>Změna energetického mixu</h3>
+<summary markdown=1>
+### Změna energetického mixu
 </summary>
 
 Při pohledu na [emise skleníkových plynů](/infografiky/emise-cr-detail) v ČR dle podle sektorů je na první pohled patrné, že největší podíl emisí připadá na výrobu elektřiny. V roce 2018 to bylo 39,5 % celkových emisí ČR. Je to dáno tím, že většina elektřiny se v ČR stále získává spalováním hnědého uhlí. Uhelné elektrárny se tak v roce 2018 podílely na výrobě elektřiny ze 47 %, přitom ale vyprodukovaly na 88 % všech emisí v daném sektoru.

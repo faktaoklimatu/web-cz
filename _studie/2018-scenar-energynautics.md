@@ -20,8 +20,8 @@ data-orig:
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
 <details markdown=1>
-<summary>
-<h2>Metodické komentáře ke grafice</h2>
+<summary markdown=1>
+## Metodické komentáře ke grafice
 </summary>
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
@@ -33,8 +33,8 @@ data-orig:
 </details>
 
 <details markdown=1>
-<summary>
-<h2>O studii Energynautics</h2>
+<summary markdown=1>
+## O studii Energynautics
 </summary>
 
 [Energynautics](https://energynautics.com/en/) je německá konzultační společnost, která se specializuje na analýzu elektrických sítí, jejich stabilitu a na integraci obnovitelných zdrojů do energetického mixu. Společnost disponuje vlastním softwarem, který umožňuje modelování a simulace provozu elektrizačních soustav.
@@ -67,8 +67,8 @@ Výroba a spotřeba elektřiny jsou modelovány v hodinovém rozlišení podle d
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Výsledky studie Energynautics</h2>
+<summary markdown=1>
+## Výsledky studie Energynautics
 </summary>
 
 Hlavním závěrem studie je, že předpokládaný rozvoj obnovitelných zdrojů neohrozí stabilitu sítě ani bezpečnost dodávek elektřiny a stávající podoba přenosové sítě není pro takový rozvoj obnovitelných zdrojů energie překážkou. Navíc v hlavní variantě scénáře ČR zůstane čistým vývozcem elektřiny.

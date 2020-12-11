@@ -20,8 +20,8 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 
 
 <details markdown=1>
-<summary>
-<h2>Více o jednotlivých událostech a objevech</h2>
+<summary markdown=1>
+## Více o jednotlivých událostech a objevech
 </summary>
 
 * **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od Slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána Sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall.
@@ -50,8 +50,8 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Další odkazy a poznámky</h2>
+<summary markdown=1>
+## Další odkazy a poznámky
 </summary>
 
 * [Analýza citovanosti](https://www.carbonbrief.org/the-most-influential-climate-change-papers-of-all-time) z časopisu Carbon Brief, ukazuje, že nevlivnější, tedy nejvíce citované články o klimatu jsou následující:

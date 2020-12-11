@@ -15,8 +15,8 @@ data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategi
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
 <details markdown=1>
-<summary>
-<h2>Metodické komentáře ke grafice</h2>
+<summary markdown=1>
+## Metodické komentáře ke grafice
 </summary>
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
@@ -28,8 +28,8 @@ data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategi
 </details>
 
 <details markdown=1>
-<summary>
-<h2>O scénáři NECP</h2>
+<summary markdown=1>
+## O scénáři NECP
 </summary>
 
 Národní energeticko-klimatický plán (NECP, National Energy and Climate Plan) dala

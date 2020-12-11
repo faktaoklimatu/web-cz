@@ -57,8 +57,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 
 
 <details markdown=1>
-<summary>
-<h2>Lesní hospodářství</h2>
+<summary markdown=1>
+## Lesní hospodářství
 </summary>
 
 * **Dopady**  
@@ -73,8 +73,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Zemědělství</h2>
+<summary markdown=1>
+## Zemědělství
 </summary>
 
 * **Dopady**  
@@ -89,8 +89,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Vodní hospodářství</h2>
+<summary markdown=1>
+## Vodní hospodářství
 </summary>
 
 * **Dopady**  
@@ -105,8 +105,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Města (Urbanizovaná krajina)</h2>
+<summary markdown=1>
+## Města (urbanizovaná krajina)
 </summary>
 
 * **Dopady**  
@@ -121,8 +121,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Biodiverzita a ekosystémové služby</h2>
+<summary markdown=1>
+## Biodiverzita a ekosystémové služby
 </summary>
 
 * **Dopady**  
@@ -137,8 +137,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Zdraví a hygiena</h2>
+<summary markdown=1>
+## Zdraví a hygiena
 </summary>
 
 * **Dopady**  
@@ -153,8 +153,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Cestovní ruch</h2>
+<summary markdown=1>
+## Cestovní ruch
 </summary>
 
 * **Dopady**  
@@ -167,8 +167,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Doprava</h2>
+<summary markdown=1>
+## Doprava
 </summary>
 
 * **Dopady**  
@@ -182,8 +182,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Průmysl a energetika</h2>
+<summary markdown=1>
+## Průmysl a energetika
 </summary>
 
 * **Dopady**  
@@ -198,8 +198,8 @@ Věda a výzkum mají zásadní roli při zdokonalování adaptace na změnu kli
 </details>
 
 <details markdown=1>
-<summary>
-<h2>Mimořádné události a ochrana obyvatelstva</h2>
+<summary markdown=1>
+## Mimořádné události a ochrana obyvatelstva
 </summary>
 
 * **Dopady**  
