@@ -30,8 +30,8 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 
 <details markdown=1>
-<summary>
-<h2>Jak se zjišťuje teplota v minulosti?</h2>
+<summary markdown=1>
+## Jak se zjišťuje teplota v minulosti?
 </summary>
 
 * Teploty naměřené teploměry máme k dispozici pouze posledních zhruba 150 let. Abychom zjistili, jaké teploty panovaly na různých místech dříve v historii, je nutné teplotu zrekonstruovat za pomoci tzv. proxy měření. Nejčastěji používaným proxy měřením je měření relativních koncentrací izotopů kyslíku v hloubkových vrtech. Jak se v historii postupně usazovaly ledovce a mořské sedimenty, byly v nich zachycovány malé bublinky vzduchu. Poměr izotopů kyslíku v těchto zachycených bublinkách závisí na teplotě, která v době usazení v okolí panovala. Vědci tedy provádějí hloubkové vrty do ledovců a mořských sedimentů, kde věk vzorku se zvyšuje s hloubkou vrtu, a dokáží tak časově zrekonstruovat historické průměrné teploty v místě vrtu.
@@ -42,8 +42,8 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 
 <details markdown=1>
-<summary>
-<h2>Jak se předpovídá budoucí teplota?</h2>
+<summary markdown=1>
+## Jak se předpovídá budoucí teplota?
 </summary>
 
 * Díky znalosti radiačního efektu skleníkových plynů je možné předpovědět, o kolik se zvýší energie přicházející k Zemi při zvýšení koncentrace skleníkových plynů. Protože v zemském klimatu působí různé pozitivní a negativní zpětné vazby, které výslednou teplotu ovlivňují, změna globální teploty se simuluje za pomoci klimatických modelů. Tyto modely jsou trénovány a testovány za pomoci historických dat.
@@ -54,8 +54,8 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 
 <details markdown=1>
-<summary>
-<h2>Zdroje dat</h2>
+<summary markdown=1>
+## Zdroje dat
 </summary>
 
 * Shakun, J., Clark, P., He, F. et al. _Global warming preceded by increasing carbon dioxide concentrations during the last deglaciation._ Nature 484, 49–54 (2012). [DOI 10.1038/nature10915](https://doi.org/10.1038/nature10915)

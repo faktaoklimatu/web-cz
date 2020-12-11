@@ -15,8 +15,8 @@ data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
 <details markdown=1>
-<summary>
-<h2>Metodické komentáře ke grafice</h2>
+<summary markdown=1>
+## Metodické komentáře ke grafice
 </summary>
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
@@ -28,8 +28,8 @@ Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních el
 </details>
 
 <details markdown=1>
-<summary>
-<h2>O studii BloombergNEF</h2>
+<summary markdown=1>
+## O studii BloombergNEF
 </summary>
 
 Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci roku 2020.

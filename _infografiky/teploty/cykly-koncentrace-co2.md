@@ -23,8 +23,8 @@ dataset:    "koncentrace-co2"
 
 
 <details markdown=1>
-<summary>
-<h2>Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?</h2>
+<summary markdown=1>
+## Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?
 </summary>
 
 * Přesnou metodu měření, která dokáže koncentraci stanovit s přesností 0,1 ppm, tedy 0,00001 %, vyvinul Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože zaznamenával různé koncentrace ve dne a v noci a také se měnily podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Francisku ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů velmi vzdálené. Přesunul se tedy doprostřed Tichého oceánu na Mauna Loa na Havaji, stanici, která leží 3400 metrů nad mořem. Nejdelší konzistentní řada měření koncentrací CO<sub>2</sub> je právě z Mauna Loa. Od té doby se přidaly další měřicí stanice v Antarktidě, Aljašce a některých dalších ostrovech v Tichém oceánu. Všechna tato místa vykazují stejný dlouhodobý pokles a podobné kolísání mezi létem a zimou. (Velikost kolísání je v různých místech různá. Obecně na severní polokouli je větší a na jižní polokouli menší – záleží na vzdálenosti od velkých lesů, které svým dýcháním tyto koncentrace ovlivňují.)
@@ -35,8 +35,8 @@ dataset:    "koncentrace-co2"
 
 
 <details markdown=1>
-<summary>
-<h2>Jak se projevuje fotosyntéza, dýchání a spalování fosilních paliv na koncentracích CO<sub>2</sub> a O<sub>2</sub>?</h2>
+<summary markdown=1>
+## Jak se projevuje fotosyntéza, dýchání a spalování fosilních paliv na koncentracích CO<sub>2</sub> a O<sub>2</sub>?
 </summary>
 
 * Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydechují kyslík. Dýchání je opačný proces, při kterém se kyslík spotřebovává a oxid uhličitý vydechuje: CO<sub>2</sub> + H<sub>2</sub>O ↔ O<sub>2</sub> + sacharidy. Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza  – rostliny odčerpávají oxid uhličitý z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijí a uvolňují oxid uhličitý zpět do atmosféry. Dýchání kyslík mimo vegetační sezónu spotřebovává. Tak vzniká pravidelné kolísání koncentrací kyslíku a CO<sub>2</sub>.
@@ -47,8 +47,8 @@ dataset:    "koncentrace-co2"
 
 
 <details markdown=1>
-<summary>
-<h2>Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?</h2>
+<summary markdown=1>
+## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 </summary>
 
 Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fosilních paliv je několik:
