@@ -25,11 +25,15 @@ $(document).ready(function() {
         prevScrollpos = currentScrollPos;
     });
 
-    // Open the correponding <details> rolldown if the URL target is inside one.
+    // Open the correponding <details> rolldown if the URL target is inside one
+    // and scroll browser view to the target element.
     if (location.hash) {
-        const parentDetails = $(location.hash).parents('details')[0];
-        if (parentDetails)
+        const targetEl = $(location.hash);
+        const parentDetails = targetEl.parents('details')[0];
+        if (parentDetails) {
             parentDetails.open = true;
+            targetEl[0].scrollIntoView();
+        }
     }
 
     // Enable all poppers in the document
