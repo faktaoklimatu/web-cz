@@ -14,10 +14,8 @@ data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
-<details markdown=1>
-<summary markdown=1>
 ## Metodické komentáře ke grafice
-</summary>
+
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
@@ -25,12 +23,8 @@ data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/
 Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
 
 {% include _texts/energeticke-scenare/emise.md %}
-</details>
 
-<details markdown=1>
-<summary markdown=1>
 ## O studii BloombergNEF
-</summary>
 
 Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci roku 2020.
 V listopadu 2020 pak byla zveřejněna navazující studie [Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals](https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/), která zkoumala stejný model za předpokladu výrazně vyšších cen uhlíkových povolenek, souvisejících s vyššími ambicemi Evropské unie. Tato infografika ovšem tuto navazující studii nepokrývá.
@@ -54,5 +48,3 @@ Výsledný mix počítá s poklesem instalovaného výkonu v uhlí a výrazným 
 Pro využití obnovitelných zdrojů jsou klíčové tzv. body zlomu, které určují okamžik, kdy se výroba z těchto zdrojů (včetně počáteční investice) stává levnější, než výroba ze stávajících fosilních elektráren. V případě větrných elektráren tak BloombergNEF počítá s jejich rozvojem především po roce 2025, zatímco u solárních elektráren předpokládá největší nárůst až v samém závěru dekády.
 
 Předpokládané náklady na výstavbu nových obnovitelných zdrojů jsou dle scénáře 5,8 mld. eur. Investice do infrastruktury scénář nemodeluje.
-
-</details>
