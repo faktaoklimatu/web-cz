@@ -41,7 +41,13 @@ Podrobnou metodologickou diskusi najdete v článku [Global Carbon Budget 2019](
 
 ## Proč se v rámci Pařížské dohody stanovil cíl omezit oteplení o 1,5 °C resp 2 °C?
 
+__Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí..."_ (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
+
+Vzhledem k tomu, že v současnosti dosáhlo oteplení hodnoty přibližně 1,2 °C oproti předindustriálnímu období a emise dále rostou, je cíl udržet nárůst teploty pod 1,5 °C na hranici dosažitelnosti a cíl udržet nárůst teploty pod hranicí 2 °C velmi ambiciózní. Zároveň ale již oteplení okolo 2°C může překročit mnoho ekosystémových bodů zlomu a bude mít velké negativní dopady pro lidstvo. Podrobněji se srovnání dopadů oteplení o 1,5 °C, 2°C a 3 °C věnuje [zpráva IPCC SR15](https://www.ipcc.ch/sr15/) a poznání o bodech zlomu shrnují [naše grafiky](https://faktaoklimatu.cz/infografiky/body-zlomu-1).    
+
 ## Z čeho vychází odhady budoucích emisí pro naplnění cílů Pařížské dohody? 
+
+Emisní scénáře pro omezení oteplení na 1,5 °C resp 2 °C podrobně diskutuje druhá kapitola zprávy [IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107). Autoři zprávy sesbírali výstupy z více než stovky emisních scénářů a skrze globální klimatické modely porovnávali, jaké oteplení způsobily. Oblasti zobrazené v grafice odpovídají rozsahům emisí v takových scénářích, které dosáhly hranice oteplení 1,5 °C resp. 2°C, přičemž čára zobrazuje medián z daného souboru.     
 
 ## Jak je možné dosáhnout takového snížení emisí CO<sub>2</sub>?
 
