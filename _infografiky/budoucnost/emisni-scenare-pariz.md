@@ -28,18 +28,25 @@ Budoucí emisní scénáře předpokládají různé průběhy emisí různých 
 
 Zobrazené scénáře předpokládají pokles emisí metanu přibližně na polovinu okolo roku 2030 a následnou stabilizaci, a v případě N<sub>2</sub>O pokles přibližně na 80% a následnou stabilizaci - tedy ani u metanu, ani u N<sub>2</sub>O nepředpokládají dosažení nulových emisí, ale pouze snížení oproti dnešnímu stavu. To je rozumný předpoklad, protože metan i N<sub>2</sub>O jsou z velké části produkovány v zemědělství a (chov dobytka, pěstování rýže, hnojiva) a nelze tedy očekávat úplnou eliminaci těchto emisí. Pro podrobnější diskusi vývoje emisí těchto plynů viz [graf v IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=27) případně kompletní diskusi potenciálu mitigačních scénářů ve druhé kapitole [IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107).  
 
-## Co je započítáno v historických emisích CO2?
+## Co je započítáno v historických emisích CO<sub>2</sub>?
 
-## Více o kontextu cílů Pařížské dohody
+Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plyněch a jejich cyklech. 
+
+Zobrazená data obsahují: 
+ - emise ze spalování fosilních paliv (uhlí, ropa, plyn)
+ - emise z průmyslových procesů - zejména výroba cementu, ale i další oxidační procesy
+ - emise způsobené odlesňováním a změnami využití půdy - do této kategorie spadá nejen kácení tropických či jiných lesů a lesní požáry, ale také změny v množství organického uhlíku vázaného v půdě, zalesňování a další člověkem způsobené změny ve využití půdy. Odhady těchto emisí ze změn využití půdy vyžadují složitější modelování a uváděné hodnoty jsou průměrem z několika modelů. 
+
+Podrobnou metodologickou diskusi najdete v článku [Global Carbon Budget 2019](https://www.researchgate.net/publication/337742746_Global_Carbon_Budget_2019)
+
+## Proč se v rámci Pařížské dohody stanovil cíl omezit oteplení o 1,5 °C resp 2 °C?
 
 ## Z čeho vychází odhady budoucích emisí pro naplnění cílů Pařížské dohody? 
 
-## Jak je možné dosáhnout takového snížení emisí CO2?
+## Jak je možné dosáhnout takového snížení emisí CO<sub>2</sub>?
 
-Základním způsobem, jak můžeme radikálně snížit emise CO2 je přestat používat fosilní paliva (uhlí, ropa, plyn) v dopravě, průmyslu a energetice. Právě výroba elektřiny a tepla se na celkové produkci emisí podílí nejvíce a je v současnosti z velké části závislá na uhlí. Odklon od fosilnách paliv vyžaduje přechod na nízkoemisní výrobu energie, tedy využívání obnovitelných zdrojů (slunce, vítr) nebo jaderné energie.
+Základním způsobem, jak můžeme radikálně snížit emise CO<sub>2</sub> je přestat používat fosilní paliva (uhlí, ropa, plyn) v dopravě, průmyslu a energetice. Právě výroba elektřiny a tepla se na celkové produkci emisí podílí nejvíce a je v současnosti z velké části závislá na uhlí. Odklon od fosilnách paliv vyžaduje přechod na nízkoemisní výrobu energie, tedy využívání obnovitelných zdrojů (slunce, vítr) nebo jaderné energie.
 
 Důležitým mechanismem pro přechod k nízkoemisní ekonomice jsou systémy zpoplatnění produkce skleníkových plynů, které vytváří ekonomicky výhodné podmínky pro nízkoemisní technologie. Příkladem je systém pro obchodování s emisemi (ETS = emission trading system), který zavedla evropská unie v roce 2005. Tento systém ukládá uhelným elektrárnám, železárnám a dalším producentům emisí skleníkových plynů povinnost pokrýt svou produkci povolenkami. Část povolenek získají podniky bezplatně, část se na trh uvádí prostřednictvím dražeb. Množství každoročně vydaných povolenek je limitované a postupně se snižuje. S rostoucí cenou povolenky jsou tak firmy motivované snižovat své emise. Spalování fosilních paliv se díky tomu přestává vyplácet a například některé uhelné elektrárny jsou odstavovány a nahrazovány šetrnějšími zdroji energie jako slunce nebo vítr. Firmy, které se rozhodnou snížit emise nejvíce, mohou také vydělat prodejem svých emisních povolenek. Podobný systém zpoplatnění emisí zavádí i řada dalších zemí včetně Číny, Austrálie nebo některých států v USA.  
 
 
-
-Podrobná metodologická diskuse: https://www.researchgate.net/publication/337742746_Global_Carbon_Budget_2019
