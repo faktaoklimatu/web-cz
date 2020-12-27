@@ -14,10 +14,8 @@ data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategi
 
 {% include _texts/energeticke-scenare/jak-cist.md %}
 
-<details markdown=1>
-<summary markdown=1>
 ## Metodické komentáře ke grafice
-</summary>
+
 {% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
@@ -25,12 +23,8 @@ data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategi
 Čísla o výrobě přebíráme přímo ze studie (ve skutečnosti jsou kombinací dvou tabulek, jedna udává výrobu z obnovitelných zdrojů v TJ, druhá výrobu z konvenčních zdrojů v TWh). Predikci instalovaného výkonu studie udává pouze u obnovitelných zdrojů. Kromě zřejmé predikce u jádra tak ve studii chybí odhad pro uhelné a plynové elektrárny.
 
 {% include _texts/energeticke-scenare/emise.md %}
-</details>
 
-<details markdown=1>
-<summary markdown=1>
 ## O scénáři NECP
-</summary>
 
 Národní energeticko-klimatický plán (NECP, National Energy and Climate Plan) dala
 Evropská unie za úkol sestavit každé zemi, aby bylo možné koordinovat emisní cíle EU a opatření pro jejich plnění. Český NECP, nazvaný [Vnitrostátní plán České republiky v oblasti energetiky a klimatu](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/), zpracovávalo Ministerstvo průmyslu a obchodu.
@@ -51,11 +45,11 @@ V rámci dekarbonizace si Česká republika vytyčila cíl dosáhnout 22% podíl
 NECP dále vychází ze Státní energetické koncepce ASEK, která počítá s navýšením produkce elektřiny z jádra do roku 2040 na 46–58 %. Plánovaná dostavba nových bloků se sice přímo neprojeví do roku 2030, nepřímo však souvisí s jen pomalým navyšováním OZE v rámci NECP.
 
 ### Metodika
+
 K metodice výpočtů hodnot výroby elektřiny či instalovaného výkonu jednotlivých zdrojů NECP uvádí zpravidla: "Zdroj: Vlastní zpracování MPO pro účely Vnitrostátního plánu". Lze očekávat, že půjde o hodnoty z jiných dokumentů (např. Státní energetické koncepce), expertní odhady, nebo o rozpady cílů, které byly s Evropskou Unií vyjednány na politické úrovni. NECP modelování nebo kritéria optimalizace nezmiňuje.
 
 Pro naše zobrazení scénáře elektroenergetiky, jak ji uvažuje NECP, jsme použili:
+
 * Hodnoty hrubé výroby elektřiny podle paliv – Tabulka 168 na straně 341.
 * Hodnoty výroby elektřiny z OZE – Tabulka 15 na straně 31.
 * Instalovaný výkon OZE – Tabulka 18 na straně 33.
-
-</details>

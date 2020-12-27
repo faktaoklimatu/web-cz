@@ -26,40 +26,21 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 * Během posledních 100 let se planeta kvůli působení lidmi vypouštěných skleníkových plynů oteplila o více než 1 °C. Toto oteplování bude pokračovat dokud lidstvo nepřestane zvyšovat koncentrace skleníkových plynů v atmosféře. Budoucí růst teplot závisí na tom, jak rychle se podaří ukončit toto zvyšování koncentrací.
 * V případě, kdy lidstvo co nejrychleji odstoupí od využívání fosilních paliv, se růst teplot zastaví na 1,5 °C nad hodnotami, které byly běžné před průmyslovou revolucí. V případě, kdy lidstvo naopak zvýší využívání fosilních paliv, bude růst teplot pokračovat a před koncem tohoto století dosáhne více než 4 °C, což je více než rozdíl mezi dobou ledovou a meziledovou. (Údaje zvýšení teploty jsou však udávány jako průměr celé planety. Kontinenty se oteplují přibližně dvakrát rychleji, severní ledový oceán téměř čtyřikrát rychleji. Pro Českou republiku znamená nízký emisní scénář oteplení o cca 3 °C v roce 2100 oproti teplotám běžným v minulém století a vysoký emisní scénář povede k oteplení ČR o 6 °C v roce 2100.)
 
-
-
-
-<details markdown=1>
-<summary markdown=1>
 ## Jak se zjišťuje teplota v minulosti?
-</summary>
 
 * Teploty naměřené teploměry máme k dispozici pouze posledních zhruba 150 let. Abychom zjistili, jaké teploty panovaly na různých místech dříve v historii, je nutné teplotu zrekonstruovat za pomoci tzv. proxy měření. Nejčastěji používaným proxy měřením je měření relativních koncentrací izotopů kyslíku v hloubkových vrtech. Jak se v historii postupně usazovaly ledovce a mořské sedimenty, byly v nich zachycovány malé bublinky vzduchu. Poměr izotopů kyslíku v těchto zachycených bublinkách závisí na teplotě, která v době usazení v okolí panovala. Vědci tedy provádějí hloubkové vrty do ledovců a mořských sedimentů, kde věk vzorku se zvyšuje s hloubkou vrtu, a dokáží tak časově zrekonstruovat historické průměrné teploty v místě vrtu.
 * Proxy měření ovšem existuje více druhů, teplotu je možné také (s určitou nejistotou) zrekonstruovat například z letokruhů stromů, zkoumáním fosilií rostlin, pylových zrn z usazenin, či zkoumáním poměrů hořčíku a vápníku v mořských sedimentech.
 * Pro zrekonstruování průměrné globální teploty je nutné provést mnoho takových měření po celé Zemi a vytvořit z nich vážený průměr. Rekonstrukce teploty ve studii Shakun (2012) využila data z 80 vrtů rozmístěných po celém světě; studie Marcott (2013) využila data ze 73 míst. Díky využití dat z více míst mají výsledné průměrné odchylky světové teploty poměrně nízkou nejistotu – u většiny datových bodů je nejistota mezi 0,2 °C a 0,3 °C (2σ).
 
-</details>
-
-
-<details markdown=1>
-<summary markdown=1>
 ## Jak se předpovídá budoucí teplota?
-</summary>
 
 * Díky znalosti radiačního efektu skleníkových plynů je možné předpovědět, o kolik se zvýší energie přicházející k Zemi při zvýšení koncentrace skleníkových plynů. Protože v zemském klimatu působí různé pozitivní a negativní zpětné vazby, které výslednou teplotu ovlivňují, změna globální teploty se simuluje za pomoci klimatických modelů. Tyto modely jsou trénovány a testovány za pomoci historických dat.
 * Na světě existuje zhruba stovka nezávislých týmů, které vyvíjí vlastní klimatický model. Mezivládní panel pro změnu klimatu (IPCC) pak shrnuje výsledky těchto jednotlivých týmů a publikuje predikované hodnoty oteplení
 * Budoucí oteplení závisí na budoucím množství emisí skleníkových plynů. Proto IPCC vydává čtyři různé předpovědi pro čtyři emisní scénáře (<glossary id="rcp">Representative Concentration Pathways, RCP</glossary>). Nejnižší emisní scénář RCP2.6, který by zaručoval udržení oteplení pod hodnotou 1,5 °C by vyžadoval rychlý celosvětový přechod ke klimatické neutralitě. Na druhém konci škály je scénář RCP8.5, který by nastal v případě významného zvýšení využívání fosilních paliv a způsobil by oteplení o více než 4 °C. Tento vysoký emisní scénář je v současnosti také čím dál méně pravděpodobný díky klimatickým závazkům, které jsou všude po světě přijímány. Pokud by byly přijaté závazky skutečně implementovány, odhaduje se, že je svět na trajektorii k oteplení zhruba o 2,8 °C (odhad z července 2020, podrobněji viz [Carbon Action Tracker](https://climateactiontracker.org/).
 
-</details>
-
-
-<details markdown=1>
-<summary markdown=1>
 ## Zdroje dat
-</summary>
 
 * Shakun, J., Clark, P., He, F. et al. _Global warming preceded by increasing carbon dioxide concentrations during the last deglaciation._ Nature 484, 49–54 (2012). [DOI 10.1038/nature10915](https://doi.org/10.1038/nature10915)
 * Marcott, S., Shakun, J.,  & Clark, P., Mix, A. _A Reconstruction of Regional and Global Temperature for the Past 11,300 Years._ Science 339, 1198-201, (2013) [DOI 10.1126/science.1228026](https://doi.org/10.1126/science.1228026).
 * GISTEMP Team, _2019: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2020-02-27 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
 * Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy a D. Zyss, _2019: Improvements in the GISTEMP uncertainty model._ Journal of Geophysical Research: Atmospheres, 124, č. 12, str. 6307–6326, [DOI 10.1029/2018JD029522](http://dx.doi.org/10.1029/2018JD029522).
-</details>

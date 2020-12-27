@@ -18,11 +18,7 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 * S.R. Weart: [The Discovery of Global Warming](https://www.hup.harvard.edu/catalog.php?isbn=9780674031890) [Online verze](https://history.aip.org/climate/method.htm)
 * D.Archer, R.Pierrehumbert: [The Warming Papers](https://www.wiley.com/en-us/The+Warming+Papers%3A+The+Scientific+Foundation+for+the+Climate+Change+Forecast-p-9781405196161).
 
-
-<details markdown=1>
-<summary markdown=1>
 ## Více o jednotlivých událostech a objevech
-</summary>
 
 * **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od Slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána Sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall.
 * **1859:** *[John Tyndall](https://en.wikipedia.org/wiki/John_Tyndall#Molecular_physics_of_radiant_heat)* zkoumá pohlcování tepelného záření různými plyny. Jako první správně změřil absorpční koeficienty dusíku, kyslíku, oxidu uhličitého a dalších plynů a dochází k formulaci principů skleníkového efektu.
@@ -47,15 +43,9 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 * **2018:** [Speciální zpráva IPCC SR15](https://www.ipcc.ch/sr15/) podrobně shrnuje výsledky výzkumů o dosažitelnosti hranice oteplení o 1,5 °C a srovnává dopady oteplení o 1,5 °C s očekávanými dopady  oteplení o 2 °C.  Dochází k závěru, že při rychlém snížení emisí skleníkových plynů je stále ještě možné udržet oteplení pod 1,5 °C.
 * **2020:** [Nejnovější výzkum](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678) podrobně analyzuje změny klimatu v historii a zpřesňuje očekávané rozmezí <glossary id="citlivost">citlivosti klimatu</glossary> na 2,6–4,1 °C.
 
-</details>
-
-<details markdown=1>
-<summary markdown=1>
 ## Další odkazy a poznámky
-</summary>
 
 * [Analýza citovanosti](https://www.carbonbrief.org/the-most-influential-climate-change-papers-of-all-time) z časopisu Carbon Brief, ukazuje, že nevlivnější, tedy nejvíce citované články o klimatu jsou následující:
   * Manabe, Wetherald: [Thermal Equilibrium of the Atmosphere with a Given Distribution of Relative Humidity](https://journals.ametsoc.org/jas/article/24/3/241/17328/Thermal-Equilibrium-of-the-Atmosphere-with-a-Given) (1967). Jde o první práci, kdy byl počítačový model zemského klimatu použit k odhadu důsledků zdvojnásobení CO<sub>2</sub> na světovou teplotu. Práce použila výrazně realističtější model zpětné vazby vodní páry (_water vapour feedack_) než kterékoliv předchozí výzkumy.
   * Keeling: [Atmospheric carbon dioxide variations at Mauna Loa Observatory](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2153-3490.1976.tb00701.x)(1976). Článek ukazuje výsledky šestnácti let měření koncentrací CO<sub>2</sub> na Mauna Loa, ukazuje dlouhodobý nárůst koncentrací a je tedy první zprávou o velikosti efektu spalování fosilních paliv na složení atmosféry.
   * Held, Soden: [Robust Responses of the Hydrological Cycle to Global Warming](https://www.gfdl.noaa.gov/bibliography/related_files/ih0601.pdf) (2006). Tento článek na základě výsledků z modelování jako první prokázal obecnou tendenci, že důsledkem globálního oteplování budou suché oblasti sušší a vlhké oblasti získají ještě více srážek.
-</details>
