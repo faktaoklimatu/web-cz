@@ -3,13 +3,13 @@ layout:      infographic
 title:       "Emisní scénáře pro naplnění Pařížské dohody"
 slug:        "emisni-scenare-pariz"
 redirect_from: "/emisni-scenare-pariz"
-published:   2020-01-20
-weight:      93
+published:   2020-01-10
+weight:      90
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
-caption:     "Udržet nárůst teploty v mezích, které nezpůsobí rozsáhlou destrukci životního prostředí, vyžaduje radikální snížení emisí. Scénáře, které vedou k nárůstu globální teploty do 1,5 °C oproti předindustriálnímu období počítají se snížením emisí CO<sub>2</sub> na polovinu do roku 2030 a dosažením uhlíkové neutrality do roku 2050. Kdybychom se spokojili s omezením oteplení na 2 °C, znamená to snížit emise o čtvrtinu do roku 2030 a uhlíkové neutrailty dosáhnout kolem roku 2070."
-data-our:    "https://docs.google.com/spreadsheets/d/1AKd0CkTi69TEHq7ulKFLehElKriEdjvS7CZy-qFY_PI/edit?usp=sharing"
-data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ] ]
+caption:     "Udržet nárůst teploty v mezích, které nezpůsobí rozsáhlou destrukci životního prostředí, vyžaduje radikální snížení emisí. Scénáře, které vedou k nárůstu globální teploty do 1,5 °C oproti předindustriálnímu období, počítají se snížením emisí CO<sub>2</sub> na polovinu do roku 2030 a dosažením uhlíkové neutrality do roku 2050. Kdybychom se spokojili s omezením oteplení na 2 °C, znamená to snížit emise o čtvrtinu do roku 2030 a uhlíkové neutrailty dosáhnout kolem roku 2070."
+data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2019" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
 Účelem této grafiky je srovnání dosavadního vývoje emisí CO2 a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5°C resp. více než 2°C a do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
@@ -20,9 +20,9 @@ Emisní scénáře jsou možné varianty budoucího vývoje emisí lidstva, kter
 
 Samozřejmě existují i jiné emisní scénáře, než ty, které jsme zobrazili v grafu: například scénář "business as usual", který počítá s tím,, že emise CO<sub>2</sub> nebudeme nijak omezovat a porostou dál dosavadním tempem. Do konce století bychom takto kolem roku 2100 dospěli ke koncentraci CO<sub>2</sub> okolo 1000 ppm a průměrnému oteplení planety o téměř 5 °C oproti předindustriálnímu období. 
 
-## Proč je zobrazen pouze vývoj emisí CO2 a ne emise dalších skleníkových plynů (metan, N2O)? 
+## Proč je zobrazen pouze vývoj emisí CO<sub>2</sub> a ne emise dalších skleníkových plynů (metan, N<sub>2</sub>O)? 
 
-Emise oxidu uhličitého způsobují přibližně tři čtvrtiny výsledného skleníkového efektu. Zbývající čtvrtina je způsoben metanem (CH<sub>4</sub>), oxidem dusným (N<sub>2</sub>O) a dalšími plyny (SF<sub>6</sub>, CFC, HFC). Je běžná praxe přepočítávat emise těchto dalších skleníkových plynů na ekvivalentní množství CO<sub>2</sub>, což se pak označuje jednotkou CO<sub>2</sub>eq. Pro ilustraci: zatímco emise oxidu uhličitého byly v roce 2018 přibližně 42,1 miliard tun CO<sub>2</sub>, emise všech skleníkových plynů včetně metanu, oxidu dusného a dalších byly 55,3 miliard tun CO<sub>2</sub>eq. Většinou v našich materiálech zobrazujeme emise všech antropogenních skleníkových plynů (CO<sub>2</sub>eq) - proč tedy v této grafice děláme vyjímku?
+Emise oxidu uhličitého způsobují přibližně tři čtvrtiny výsledného skleníkového efektu. Zbývající čtvrtina je způsobena metanem (CH<sub>4</sub>), oxidem dusným (N<sub>2</sub>O) a dalšími plyny (SF<sub>6</sub>, CFC, HFC). Je běžná praxe přepočítávat emise těchto dalších skleníkových plynů na ekvivalentní množství CO<sub>2</sub>, což se pak označuje jednotkou CO<sub>2</sub>eq. Pro ilustraci: zatímco emise oxidu uhličitého byly v roce 2018 přibližně 42,1 miliard tun CO<sub>2</sub>, emise všech skleníkových plynů včetně metanu, oxidu dusného a dalších byly 55,3 miliard tun CO<sub>2</sub>eq. Většinou v našich materiálech zobrazujeme emise všech antropogenních skleníkových plynů (CO<sub>2</sub>eq) - proč tedy v této grafice děláme vyjímku?
 
 Budoucí emisní scénáře předpokládají různé průběhy emisí různých skleníkových plynů, což bychom sice mohli zobrazit, ale výsledek by byl komplikovaný a pro mnoho lidí matoucí. Zobrazujeme proto pouze zjednodušeně průběh emisí CO<sub>2</sub>, který hraje v globálním oteplování zdaleka nejvýznamnější roli. 
 
@@ -30,9 +30,7 @@ Zobrazené scénáře předpokládají pokles emisí metanu přibližně na polo
 
 ## Co je započítáno v historických emisích CO<sub>2</sub>?
 
-Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plyněch a jejich cyklech. 
-
-Zobrazená data obsahují: 
+Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plyněch a jejich cyklech. Zobrazená data obsahují: 
  - emise ze spalování fosilních paliv (uhlí, ropa, plyn)
  - emise z průmyslových procesů - zejména výroba cementu, ale i další oxidační procesy
  - emise způsobené odlesňováním a změnami využití půdy - do této kategorie spadá nejen kácení tropických či jiných lesů a lesní požáry, ale také změny v množství organického uhlíku vázaného v půdě, zalesňování a další člověkem způsobené změny ve využití půdy. Odhady těchto emisí ze změn využití půdy vyžadují složitější modelování a uváděné hodnoty jsou průměrem z několika modelů. 
@@ -43,7 +41,7 @@ Podrobnou metodologickou diskusi najdete v článku [Global Carbon Budget 2019](
 
 __Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí..."_ (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
 
-Vzhledem k tomu, že v současnosti dosáhlo oteplení hodnoty přibližně 1,2 °C oproti předindustriálnímu období a emise dále rostou, je cíl udržet nárůst teploty pod 1,5 °C na hranici dosažitelnosti a cíl udržet nárůst teploty pod hranicí 2 °C velmi ambiciózní. Zároveň ale již oteplení okolo 2°C může překročit mnoho ekosystémových bodů zlomu a bude mít velké negativní dopady pro lidstvo. Podrobněji se srovnání dopadů oteplení o 1,5 °C, 2°C a 3 °C věnuje [zpráva IPCC SR15](https://www.ipcc.ch/sr15/) a poznání o bodech zlomu shrnují [naše grafiky](https://faktaoklimatu.cz/infografiky/body-zlomu-1).    
+Vzhledem k tomu, že v současnosti dosáhlo oteplení hodnoty přibližně 1,2 °C oproti předindustriálnímu období a emise dále rostou, je cíl udržet nárůst teploty pod 1,5 °C na hranici dosažitelnosti a cíl udržet nárůst teploty pod hranicí 2 °C velmi ambiciózní. Zároveň ale již oteplení okolo 2 °C může překročit mnoho ekosystémových bodů zlomu a bude mít velké negativní dopady pro lidstvo. Podrobněji se srovnání dopadů oteplení o 1,5 °C, 2 °C a 3 °C věnuje [zpráva IPCC SR15](https://www.ipcc.ch/sr15/) a poznání o bodech zlomu shrnují [naše grafiky](https://faktaoklimatu.cz/infografiky/body-zlomu-1).    
 
 ## Z čeho vychází odhady budoucích emisí pro naplnění cílů Pařížské dohody? 
 
