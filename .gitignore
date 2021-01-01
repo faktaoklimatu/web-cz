@@ -7,6 +7,10 @@ assets/studies/*
 _site/*
 .cache/*
 
+# Local bundle configuration and gems
+.bundle
+vendor
+
 # Temporary files
 Gemfile.lock
 *~
