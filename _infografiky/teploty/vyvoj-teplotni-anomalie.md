@@ -17,67 +17,56 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ## Co je vidíme v grafu?
 
 Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 140 letech. Teplotní anomálie pro daný rok udává,
-o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě.
+o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě (podrobněji níže).
 
-Z grafu můžeme také vidět, že rok 2016 byl nejteplejším rokem v historii měření, jako druhý následuje rok 2019. 
-V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého.
+Z grafu můžeme také vidět, že rok 2016 byl nejteplejším rokem v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,24 °C. V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého. Nejteplejší měsíc byl únor 2016, s teplotní anomálií 1,60°C.* Lze také ukázat, že dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu.
+
+## Důležité souvislosti: místní trendy a rychlost oteplování
+
+Světová teplotní anomálie je pouze průměrnou hodnotou - z grafu tedy přímo nevidíme, že severní polokoule otepluje rychleji než jižní a místa na souši se oteplují rychleji než oceány.  V Evropě a severní Asii jsou současné teploty o 2-3°C teplejší než před sto lety v arktických oblastech až o 4°C. Podrobněji tyto místní trendy zobrazuje [Mapa změn teploty](https://faktaoklimatu.cz/infografiky/mapa-zmeny-teploty). 
+
+Tempo, kterým oteplení v posledním století probíhá, je asi desetkrát rychlejší, než změny teplot planety kdykoliv v historii lidstva. Podrobněji tuto rychlost oteplení ukazuje graf [teplotní anomálie od poslední doby ledové](https://faktaoklimatu.cz/infografiky/teplota-22000-let).    
 
 ## Co je to referenční období?
 
 Když chceme říct, o kolik bylo v daném roce nějaké místo nebo celý svět teplejší než "normálně", musíme nejdřív vyjasnit, co znamená to "normálně". 
 Říká se tomu referenční období. Například v celosvětovém průměru byl rok 2016 o 1,2 °C teplejší než průměr z let 1850–1900, ale jen o 0,6 °C teplejší než průměr z let 1981–2010. Tedy když v jiných zdrojích uvidíte jiné uváděné hodnoty teplotní anomálie, podívejte se, k jakému referenčnímu období jsou hodnoty vztahovány. 
 
-Na těchto stránkách __používáme jako referenční období roky 1850–1900__, protože např. Pařížská dohoda, ale i většina vědeckých publikací, vztahuje hodnoty dosaženého nebo předpokládaného oteplení planety právě k touto období. Toto období se označuje se jako *pre-industriální*, což znamená *před průmyslovou revolucí*. Z historického pohledu to není přesné pojemnování, neboť průmyslová revoluce v té době již probíhala. Z období před rokem 1850 však nemáme k dispozici dostatek teplotních záznamů a do roku 1900 se koncentrace CO2 v atmosféře se pohybovaly okolo 280–300 ppm – a tedy teplota planety ještě nebyla příliš ovlivněna zesilujícím se skleníkovým efektem. Proto zpráva [IPCC SR15](https://www.ipcc.ch/sr15/) pro potřeby vědecké komunity definuje roku 1850 - 1900 jako standardní referenční období pro preindustriální teploty. 
+Na těchto stránkách __používáme jako referenční období roky 1850–1900__, protože např. Pařížská dohoda, ale i většina vědeckých publikací, vztahuje hodnoty dosaženého nebo předpokládaného oteplení planety právě k touto období. Toto období se označuje se jako *pre-industriální*, což znamená *před průmyslovou revolucí*. Z historického pohledu to není přesné pojemnování, neboť průmyslová revoluce v té době již probíhala. Z období před rokem 1850 však nemáme k dispozici dostatek teplotních záznamů a do roku 1900 se koncentrace CO<sub>2</sub> v atmosféře se pohybovaly okolo 280–300 ppm – a tedy teplota planety ještě nebyla příliš ovlivněna zesilujícím se skleníkovým efektem. Proto zpráva [IPCC SR15](https://www.ipcc.ch/sr15/) pro potřeby vědecké komunity definuje roku 1850 - 1900 jako standardní referenční období pro preindustriální teploty. 
 
 Původní data z NASA GISS používaly jako referenční období roky 1951-1980, pro převedení na "pre-industriál" jsme použili výstupy analýzy teplotních řad ze zprávy [IPCC SR15 ](https://www.ipcc.ch/sr15/).
 
 ## Jak se počítá světová teplotní anomálie?
 
-Teplotní anomálie pro daný rok udává,
-o kolik byl svět teplejší než průměrná teplota
-ve vybraném referenčním období. Teplotní
-anomálie pro rok 2016, který je v době vydání
-této publikace zatím nejteplejší v historii,
-byla 1,2 °C – to znamená, že v celoplanetárním průměru byl rok 2016 o 1,2 °C teplejší
-než období 1850–1900. Různá místa na
-planetě však v různých měsících zažívala
-různé teploty. Třeba listopad roku 2016 byl
-v Kanadě o více než 5 °C teplejší, pro většinu
-Ruska o 4 °C chladnější a v Evropě jen slabě
-nadprůměrný. Tato chladnější a teplejší místa
-se při průměrování vyrovnají, celoplanetární
-a celoroční průměr pro rok 2016 vyšel 1,2 °C.
+Místní teplotní anomálie pro daný rok udává, o kolik bylo dané místo teplejší než *normálně*, tedy než průměrná roční teplota ve vybraném referenčním období. 
+Světová teplotní anomálie je pak vypočtena jako vážený průměr místních teplotních anomálií pro jednotlivé měřicí stanice. Vážený průměr koriguje rozdílnou hustotu měřicích stanic v různých místech. Místní či světová teplotní anomálie pro určitý měsíc se počítá podobně, jen místo celého roku se počítá rozdíl od průměrné teploty daného měsíce. 
 
-* Graf znázorňuje světovou teplotní anomálii, nikoliv absolutní teplotu.
-* Světová teplotní anomálie je vypočtena jako vážený průměr místních teplotních anomálií pro jednotlivé měřicí stanice. Vážený průměr koriguje rozdílnou hustotu měřicích stanic v různých místech.
-* Místní teplotní anomálie pro daný den je definována jako rozdíl aktuální denní teploty a průměru teplot pro daný den v referenčním období (tzn. v letech 1850–1900). Místní teplotní anomálie tedy udává, o kolik stupňů je dané místo v daný den teplejší/chladnější než průměrný odpovídající den v referenčním období.
-* Růst teplotní anomálie neznamená, že všechna místa na Zemi se oteplila o 1 °C. Teplota v jednom roce může být například v Evropě o 3 °C vyšší než dlouhodobý průměr, zatímco v Indii o 2 °C nižší než dlouhodobý průměr. Případně teplá zima může být vyvážena studeným létem apod.
+Nepříklad teplotní anomálie pro rok 2016, který je v době vydání této publikace zatím nejteplejší v historii, byla 1,2 °C – to znamená, že v celoplanetárním průměru byl rok 2016 o 1,2 °C teplejší než období 1850–1900. Různá místa na planetě však v různých měsících zažívala různé teploty. Třeba listopad roku 2016 byl v Kanadě o více než 5 °C teplejší, pro většinu Ruska o 4 °C chladnější a v Evropě jen slabě nadprůměrný. Tato chladnější a teplejší místa se při průměrování vyrovnají, celoplanetární a celoroční průměr pro rok 2016 vyšel 1,2 °C.
 
 ## Proč se používá teplotní anomálie místo absolutní průměrné teploty? 
 
-* Důvodů je více, všechny se ale týkají správnosti zpracování dat. Například: teplota typicky závisí na nadmořské výšce a kdybychom přidali do datového souboru několik vysokohorských stanic, průměrná hodnota by poklesla. Teplota planety by tedy závisela na výběru poloh měřicích stanic. To se ale při použití teplotní anomálie neděje.
-* Teplotní anomálie v geograficky blízkých místech bývají podobné. Jinak řečeno, pokud je teplota na Sněžce o 2 °C nižší než dlouhodobý průměr, je teplota v Praze typicky přibližně o 2 °C nižší také. Když bude mít měřicí stanice na Sněžce výpadek, výslednou teplotní anomálii to neovlivní, ale výslednou průměrnou teplotu ano.
+Především proto, že průměrná teplota je užitečná pro relativně malé geografické celky, ale přestává dávat smysl pro kontinenty nebo celý svět. Jistě si dokážete představit, co znamená, když řekneme, že průměrná teplota v Brně byla letos třeba 10 °C. Když budeme mluvit o průměrné teplotě celé České republiky, je průměr o něco méně reprezentativní kvůli různým nadmořským výškám - ale pořád dává smysl mluvit o průměrné teplotě ČR. Ale průměrná teplota celé Evropy, nebo celého světa je údaj, který sice můžeme spočítat, ale nic si pod ním nedokážeme představit a srovnávali bychom nesouvisející teploty. Například: Kanada byla v listopadu roku 2016 o 5 °C teplejší a Afrika o 1°C teplejší - kdybychom počítali průměrnou teplotu, budeme průměrovat teplotu v Kanadě s teplotou v Afice, zatímco při počítání teplotní anomálie průměrujeme odchylky od normální teploty v obou oblastech.   
 
-## Klíčová fakta
+Dalším důvodem je, že průměrná teplota planety má charakteristický roční průběh - v měsících, kdy je na severní polokouli léto vychází průměr teplot celé planety asi o 3 °C vyšší než v zimních měsících. To je způsobeno tím, že na severní polokouli je výrazně více pevniny a když dopadá sluneční záření na souš, ohřeje se rychleji a více než oceán. Teplotní anomálie je od tohoto kolísání očištěna. 
 
-* Svět se oteplil o cca 1,2 °C. Zatím největší teplotní anomálie (TA) nastala v roce 2016 (roční průměrná teplotní anomálie byla +1,24 °C, přičemž v únoru 2016 dosáhl měsíční průměr TA 1,60 °C).
-* Dvě třetiny oteplení nastaly po roce 1975. Trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu.
-* Lokální teploty se mění – částečně v předvídatelných cyklech den–noc a léto–zima, částečně nepravidelnými atmosférickými jevy. Ale globální teplota je určena tím, kolik energie přijme Země ve formě záření od Slunce a kolik jej vyzáří do vesmíru. Tato množství se v průběhu času mění jen málo. Množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry – na koncentracích skleníkových plynů.
-* Oteplení planety o 1 °C je velmi významné, protože i k tak "malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo oteplení o 3-4 °C ke konci doby ledové, kdy postupně roztálo zalednění velké části Evropy a Severní Ameriky.
+A další důvody jsou metodologické: ne všechna měření teploty jsou k dispozici každý den - občas se stane, že některá stanice má výpadek. Představme si pro ilustraci, že bychom počítali teplotu v ČR jako průměr ze dvou stanic: v Praze a na Sněžce. Na Sněžce jsou teploty typicky o 8 °C nižší než v Praze kvůli nadmořské výšce. Když by měla stanice na Sněžce jednodenní výpadek, vyšly by průměrné teploty ČR pro ten den o 8°C vyšší, pouze jako důsledek nedokonalosti metody. Použití teplotní anomálie však při výpadku stanice žádnou takovou chybu nezpůsobí: byla-li v daný den Praha teplejší než běžně, je velmi pravděpodobné, že Sněžka byla také teplejší, protože počasí v rámci celé republiky je podobné. Tedy i když má některá stanice výpadek, nezpůsobí to zásadní chybu v údaji průměrné teplotní anomálie.   
 
+Podrobnější diskusi o použití teplotní anomálie najdete na stránkách [NASA GISS](https://data.giss.nasa.gov/gistemp/faq/).
 
-## Jak souvisí světová teplotní anomálie s oteplením jednotlivých regionů?  
+## Odkud pocházejí data a jak jsou zpracována? 
 
-* Typicky se místa na souši oteplují rychleji než oceány – v Evropě a severní Asii je trend v rychlosti oteplování asi 2–3× vyšší než trend světové teplotní anomálie, v arktických oblastech je oteplování přibližně 3–4× rychlejší než světový trend. https://faktaoklimatu.cz/infografiky/mapa-zmeny-teploty
+Data pocházejí z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě. Z toho asi jen 6000 stanic má teplotní záznamy starší než 100 let a okolo 1000 stanic z doby před rokem 1880. O kompletaci těchto dat se stará [Internationa Surface Temperature Initiative](http://www.surfacetemperatures.org/) a podrobnou diskusi o metodice zatím posledního zkompletovaného datasetu GHCNm-v4 můžete najít v [průvodním článku](https://journals.ametsoc.org/view/journals/clim/31/24/jcli-d-18-0094.1.xml?tab_body=fulltext-display) nebo v sekci [často kladených otázek](https://data.giss.nasa.gov/gistemp/faq/) k datové sadě GISSTEMP. 
 
-## Odpovídá současné oteplení předpovědím z klimatických modelů? 
+## Čím je pozorované oteplování způsobeno? 
 
-Od roku 1900 se koncentrace CO2 zvýšila z 295 ppm na 410 ppm, tedy skoro o 40 %. Jestliže zdvojnásobení koncentrace má
+Místní počasí se celkem bežně mění – částečně v předvídatelných cyklech den–noc a léto–zima, částečně nepravidelně vlivem přicházejících tlakových výší a níží a dalšími atmosférickými jevy. Teplota planety jako celku je však z dlouhodobého pohledu je určena radiační rovnováhou, tedy rozdílem mezi množstvím  energie, které planeta přijímá od Slunce a množstvím energie, které planeta ve formě tepelného záření vyzáří do vesmíru. Dlouhodobý nárůst teplot znamená, že planeta více energie přijme, než jí vyzáří. 
+
+Množství záření, které planeta přijímá od slunce se mění jen málo v rámci slunečních cyklů a tyto změny pozorovanému nárůstu teplot neodpovídají. Naopak množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry – na koncentracích skleníkových plynů. A právě zvyšování koncentrací skleníkových plynů odpovídá pozorovaný nárůst velmi dobře, a snížení množstní odcházejícího infračerveného záření je prokázáno měřeními. 
+
+I bez podrobného klimatického modelu můžeme ilustrovat souvislosti následujícím odhadem: Zdvojnásobení koncentrací CO<sub>2</sub> by mělo vést k oteplení planety asi o 3°C - to je údaj, ke kterému na základě zkoumání pohlcování infračerveného záření v plynech dospěl roku 1896 Svante Arrhenius a novější výpočty a modely tuto hodnotu jen dále potvrzují. Od roku 1900 se koncentrace CO<sub>2</sub> zvýšila z 295 ppm na 410 ppm, tedy skoro o 40 %. Jestliže zdvojnásobení koncentrace má
 podle klimatických simulací vést k oteplení o 3 °C, nárůst o 40 % by měl způsobit oteplení o 1,2 °C. Výsledek měření skutečných
-teplotních anomálií je stejný: 1,2 °C oproti předindustriálnímu období (více o něm dále
-v textu). Toto srovnání je zjednodušené – nezahrnuje další skleníkové plyny (metan CH4
+teplotních anomálií je stejný: 1,2 °C oproti předindustriálnímu období. Toto srovnání je zjednodušené – nezahrnuje další skleníkové plyny (metan CH4
 a oxid dusný N2O) ani setrvačnost klimatu, ale dobře ukazuje, že pozorovaný nárůst teploty rámcově odpovídá předpovědím.
 
 
 
-## Více o datasetu a metodice zpracování dat. 
