@@ -17,33 +17,22 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ## Co je vidíme v grafu?
 
 Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 140 letech. Teplotní anomálie pro daný rok udává,
-o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. 
+o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě.
+
 Z grafu můžeme také vidět, že rok 2016 byl nejteplejším rokem v historii měření, jako druhý následuje rok 2019. 
-V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordy jsou ze století jednadvacátého.
+V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého.
 
-* FIXME!! Data jsou zpracována z měření 6 300  stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě.
-* V grafu je znázorněn vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__, nejde o graf průměrné teploty. Podrobnosti k výpočtu teplotní anomálie níže.
+## Co je to referenční období?
 
-## Klíčová fakta
+Když chceme říct, o kolik bylo v daném roce nějaké místo nebo celý svět teplejší než "normálně", musíme nejdřív vyjasnit, co znamená to "normálně". 
+Říká se tomu referenční období. Například v celosvětovém průměru byl rok 2016 o 1,2 °C teplejší než průměr z let 1850–1900, ale jen o 0,6 °C teplejší než průměr z let 1981–2010. Tedy když v jiných zdrojích uvidíte jiné uváděné hodnoty teplotní anomálie, podívejte se, k jakému referenčnímu období jsou hodnoty vztahovány. 
 
-* Svět se oteplil o cca 1,2 °C. Zatím největší teplotní anomálie (TA) nastala v roce 2016 (roční průměrná teplotní anomálie byla +1,24 °C, přičemž v únoru 2016 dosáhl měsíční průměr TA 1,60 °C).
-* Dvě třetiny oteplení nastaly po roce 1975. Trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu.
-* Lokální teploty se mění – částečně v předvídatelných cyklech den–noc a léto–zima, částečně nepravidelnými atmosférickými jevy. Ale globální teplota je určena tím, kolik energie přijme Země ve formě záření od Slunce a kolik jej vyzáří do vesmíru. Tato množství se v průběhu času mění jen málo. Množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry – na koncentracích skleníkových plynů.
-* Oteplení planety o 1 °C je velmi významné, protože i k tak "malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo oteplení o 3-4 °C ke konci doby ledové, kdy postupně roztálo zalednění velké části Evropy a Severní Ameriky.
+Na těchto stránkách __používáme jako referenční období roky 1850–1900__, protože např. Pařížská dohoda, ale i většina vědeckých publikací, vztahuje hodnoty dosaženého nebo předpokládaného oteplení planety právě k touto období. Toto období se označuje se jako *pre-industriální*, což znamená *před průmyslovou revolucí*. Z historického pohledu to není přesné pojemnování, neboť průmyslová revoluce v té době již probíhala. Z období před rokem 1850 však nemáme k dispozici dostatek teplotních záznamů a do roku 1900 se koncentrace CO2 v atmosféře se pohybovaly okolo 280–300 ppm – a tedy teplota planety ještě nebyla příliš ovlivněna zesilujícím se skleníkovým efektem. Proto zpráva [IPCC SR15](https://www.ipcc.ch/sr15/) pro potřeby vědecké komunity definuje roku 1850 - 1900 jako standardní referenční období pro preindustriální teploty. 
+
+Původní data z NASA GISS používaly jako referenční období roky 1951-1980, pro převedení na "pre-industriál" jsme použili výstupy analýzy teplotních řad ze zprávy [IPCC SR15 ](https://www.ipcc.ch/sr15/).
 
 ## Jak se počítá světová teplotní anomálie?
 
-Co je to teplotní anomálie?
-Píšeme-li v této publikaci, o kolik se otepluje
-planeta Země, záměrně k tomu nepoužíváme
-její průměrnou teplotu. Počítat průměrnou
-teplotu u tak nehomogenního celku, jakým
-je Země, přináší spoustu metodologických
-i praktických problémů. V celoplanetárním
-měřítku je vhodnější pracovat s takzvanou
-teplotní anomálií. Průměrnou roční teplotu
-má smysl sledovat u menších celků, jako
-jsou města nebo malé státy.
 Teplotní anomálie pro daný rok udává,
 o kolik byl svět teplejší než průměrná teplota
 ve vybraném referenčním období. Teplotní
@@ -63,12 +52,19 @@ a celoroční průměr pro rok 2016 vyšel 1,2 °C.
 * Světová teplotní anomálie je vypočtena jako vážený průměr místních teplotních anomálií pro jednotlivé měřicí stanice. Vážený průměr koriguje rozdílnou hustotu měřicích stanic v různých místech.
 * Místní teplotní anomálie pro daný den je definována jako rozdíl aktuální denní teploty a průměru teplot pro daný den v referenčním období (tzn. v letech 1850–1900). Místní teplotní anomálie tedy udává, o kolik stupňů je dané místo v daný den teplejší/chladnější než průměrný odpovídající den v referenčním období.
 * Růst teplotní anomálie neznamená, že všechna místa na Zemi se oteplila o 1 °C. Teplota v jednom roce může být například v Evropě o 3 °C vyšší než dlouhodobý průměr, zatímco v Indii o 2 °C nižší než dlouhodobý průměr. Případně teplá zima může být vyvážena studeným létem apod.
-* Původní data z NASA GISS používají referenční období roky 1951-1980. Pro převedení na "pre-industriál" jsme použili výstupy analýzy teplotních řad ze zprávy [IPCC SR15 ](https://www.ipcc.ch/sr15/). Důvodem pro tento převod je, že např. Pařížská dohoda, ale i většina vědeckých publikací, vztahuje hodnoty dosaženého nebo předpokládaného oteplení planety právě k období před průmyslovou revolucí ("pre-industriál"). IPCC SR15 pro potřeby vědecké komunity definuje pre-industriální období jako roky 1850-1900. Toto období je zvolené kompromisně - průmyslová revoluce se historicky datuje někdy ke konci osmnáctého století. Před rokem 1850 však existuje málo teplotních záznamů, proto bylo zvoleno období 1850-1900, ve kterém koncentrace skleníkových plynů v atmosféře ještě nebyly příliš ovlivněny spalováním fosilních paliv.
 
 ## Proč se používá teplotní anomálie místo absolutní průměrné teploty? 
 
 * Důvodů je více, všechny se ale týkají správnosti zpracování dat. Například: teplota typicky závisí na nadmořské výšce a kdybychom přidali do datového souboru několik vysokohorských stanic, průměrná hodnota by poklesla. Teplota planety by tedy závisela na výběru poloh měřicích stanic. To se ale při použití teplotní anomálie neděje.
 * Teplotní anomálie v geograficky blízkých místech bývají podobné. Jinak řečeno, pokud je teplota na Sněžce o 2 °C nižší než dlouhodobý průměr, je teplota v Praze typicky přibližně o 2 °C nižší také. Když bude mít měřicí stanice na Sněžce výpadek, výslednou teplotní anomálii to neovlivní, ale výslednou průměrnou teplotu ano.
+
+## Klíčová fakta
+
+* Svět se oteplil o cca 1,2 °C. Zatím největší teplotní anomálie (TA) nastala v roce 2016 (roční průměrná teplotní anomálie byla +1,24 °C, přičemž v únoru 2016 dosáhl měsíční průměr TA 1,60 °C).
+* Dvě třetiny oteplení nastaly po roce 1975. Trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu.
+* Lokální teploty se mění – částečně v předvídatelných cyklech den–noc a léto–zima, částečně nepravidelnými atmosférickými jevy. Ale globální teplota je určena tím, kolik energie přijme Země ve formě záření od Slunce a kolik jej vyzáří do vesmíru. Tato množství se v průběhu času mění jen málo. Množství energie, kterou Země vyzáří ve formě tepelného záření do vesmíru, silně záleží na chemickém složení atmosféry – na koncentracích skleníkových plynů.
+* Oteplení planety o 1 °C je velmi významné, protože i k tak "malé” změně teploty oceánů a souše je nutné obrovské množství energie. Před 20 000 lety vedlo oteplení o 3-4 °C ke konci doby ledové, kdy postupně roztálo zalednění velké části Evropy a Severní Ameriky.
+
 
 ## Jak souvisí světová teplotní anomálie s oteplením jednotlivých regionů?  
 
@@ -76,21 +72,12 @@ a celoroční průměr pro rok 2016 vyšel 1,2 °C.
 
 ## Odpovídá současné oteplení předpovědím z klimatických modelů? 
 
-* Od roku 1900 se koncentrace CO2 zvýšila z 295 ppm na 410 ppm, tedy skoro o 40 %. Jestliže zdvojnásobení koncentrace má
+Od roku 1900 se koncentrace CO2 zvýšila z 295 ppm na 410 ppm, tedy skoro o 40 %. Jestliže zdvojnásobení koncentrace má
 podle klimatických simulací vést k oteplení o 3 °C, nárůst o 40 % by měl způsobit oteplení o 1,2 °C. Výsledek měření skutečných
 teplotních anomálií je stejný: 1,2 °C oproti předindustriálnímu období (více o něm dále
 v textu). Toto srovnání je zjednodušené – nezahrnuje další skleníkové plyny (metan CH4
 a oxid dusný N2O) ani setrvačnost klimatu, ale dobře ukazuje, že pozorovaný nárůst teploty rámcově odpovídá předpovědím.
 
 
-## Co je to referenční období?
 
-Když chceme říct, o kolik se svět oteplil, musíme si nejdřív vyjasnit, k jakému období budeme toto oteplení vztahovat. Tomu se říká
-referenční období. Například rok 2016 byl o 1,2 °C teplejší než průměr z let 1850–1900, ale jen o 0,6 °C teplejší než průměr z let 1981–2010.
-V klimatologii se jako referenční období často používá období 1850–1900, označované jako předindustriální. Není to zcela
-přesné, neboť průmyslová revoluce v té době již probíhala, nicméně koncentrace CO2 v atmosféře se pohybovaly okolo
-280–300 ppm – teplota planety ještě nebyla příliš ovlivněna zesilujícím se skleníkovým efektem.
-Proto všechny hodnoty oteplení, o kterých v tomto atlase mluvíme, vztahujeme k těmto
-předindustriálním rokům 1850–1900. Když v jiných zdrojích uvidíte jiné hodnoty, podívejte se, s jakým referenčním obdobím jsou
-porovnávány.
-
+## Více o datasetu a metodice zpracování dat. 
