@@ -16,11 +16,15 @@ data-orig:
   - [ "NECP", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ]
 ---
 
-V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR:
-<a href="/studie/2020-scenar-ember" class="btn btn-secondary">Ember</a>
-<a href="/studie/2018-scenar-energynautics" class="btn btn-secondary">Energynautics</a>
-<a href="/studie/2020-scenar-bloombergnef" class="btn btn-secondary">BloombergNEF</a>
-<a href="/studie/2019-scenar-necp" class="btn btn-secondary">NECP</a>.
+V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR.
+
+{% include preview-box.html
+    title="Jednotlivé scénáře"
+    class="fullsize-box"
+    card_class="col-6 col-xl-6 p-1"
+    text="Ke každému scénáři máme detailní infografiku."
+    slug="2020-scenar-ember,2018-scenar-energynautics,2020-scenar-bloombergnef,2019-scenar-necp"
+%}
 
 ## Jak číst tento graf
 

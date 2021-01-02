@@ -1,0 +1,35 @@
+{% assign item = include.item %}
+{% case item.layout %}
+    {% when 'infographic' %}
+        <img src="{{ site.baseurl }}/assets/generated/{{ item.slug }}_600.png" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid" />
+        <div class="card-img-overlay tags-overlay-box">
+            {% include tags.html tags=item.tags %}
+        </div>
+    {% when 'dataset' %}
+        <img src="{{ site.baseurl }}/assets/datasets/{{ item.slug }}.png" alt="Dataset: {{ item.title }}" title="Dataset: {{ item.title }}" class="img-fluid card-img" />
+        <div class="card-img-overlay card-dataset-overlay">
+          <h5 class="card-title">{{ item.title }}</h5>
+        </div>
+        <div class="card-img-overlay tags-overlay-box">
+            {% include tags.html tags=item.tags %}
+        </div>
+    {% when 'study' %}
+        <div class="card-body">
+            <h5>{{ item.title }}</h5>
+            <p class="text-secondary">{{ item.study-institution }}, {{ item.study-year }}</p>
+            <p class="card-text">{{ item.caption }}</p>
+        </div>
+        <div class="card-img-overlay tags-overlay-box">
+            {% include tags.html tags=item.tags %}
+        </div>
+    {% when 'survey' %}
+        <div class="card-body">
+            <h5>{{ item.title }}</h5>
+            <p class="card-text mt-3">{{ item.caption }}</p>
+        </div>
+        <div class="card-img-overlay tags-overlay-box">
+            {% include tags.html tags=item.tags %}
+        </div>
+    {% else %}
+        <p>Unknown layout.</p>
+{% endcase %}

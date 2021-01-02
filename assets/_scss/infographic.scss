@@ -22,23 +22,6 @@ p.perex {
     font-weight: bold;
 }
 
-div.highlight-box {
-    float: right;
-    position: relative;
-    left: 25%;
-    width: 50%;
-    color: $c-light-blue;
-    border-left: 2px solid $c-light-blue;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: -20%;
-    padding: 0rem 0.75rem;
-
-    h4 {
-        margin-top: 0rem;
-    }
-}
-
 .downloads-box {
     margin-top: 1rem;
 
@@ -80,11 +63,80 @@ div.highlight-box {
     margin: 1rem 0 -1rem 0;
 }
 
+div.longread-box {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+    color: $c-light-blue;
+    border-left: 2px solid $c-light-blue;
+    
+    h4 {
+        margin-top: 0rem;
+    }
+    p {
+        text-align: left;
+    }
+    div.row {
+        margin: 0px;
+        margin-bottom: 1rem;
+    }
+    .card {
+        margin: 0px;
+    }
+}
+
+div.highlight-box {
+    float: right;
+    width: 55%;
+    margin-left: calc(-25px + 2rem);
+    position: relative;
+    left: 25px;
+}
+
+div.fullsize-box {
+    width: calc(100% + 25px);
+}
+
+@media (min-width: 1200px) {
+    .container-xl-fluid {
+        max-width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .longread-xl-space-left {
+        flex: 2 0 0px;
+    }
+    .longread-toc {
+        flex: 4 0 240px;
+    }
+    .longread-xl-space-middle {
+        flex: 4 0 0px;
+    }
+    .longread {
+        flex: 0 0 640px;
+        line-height: 1.6em;
+    }
+    .longread-xl-space-right {
+        flex: 10 0 240px;
+    }
+
+    div.highlight-box {
+        width: 60%;
+        position: relative;
+        left: 40%;
+        margin-left: calc(-40% + 2rem);
+    }
+
+    div.fullsize-box {
+        width: calc(140%);
+    }
+}
+
 .longread {
     font-size: 1.1rem;
-    line-height: 1.6em;
-    position: relative;
-    right: 20%;
 
     h2 {
         font-size: 1.75rem;
@@ -105,16 +157,12 @@ div.highlight-box {
     }
 }
 
-.longread-toc {
-    position: relative;
-    right: 30%;
-}
-
 .sticky-toc {
     position: sticky;
     position: -webkit-sticky;
     top: 0rem;
     left: 100px;
+    margin-bottom: 4rem;
 
     li {
         text-align: left;
