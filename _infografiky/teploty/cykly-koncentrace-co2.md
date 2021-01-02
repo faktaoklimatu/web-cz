@@ -31,6 +31,13 @@ V absolutních číslech nemusí nárůst koncentrace CO2 v řádu desítek mole
 
 ## Jak číst tento graf
 
+{% include preview-box.html
+    title="Delší řada koncentrace CO2"
+    class="highlight-box"
+    text="Rekonstrukce historických hodnot koncentrace CO2 za posledních 800 tisíc let."
+    slug="koncentrace-co2"
+%}
+
 * Koncentrace CO<sub>2</sub> jsou v grafu znázorněny tyrkysovou barvou. Vlivem fotosyntézy a dýchání se koncentrace mění během roku, od května do října klesají a během zbytku roku zase rostou. Dlouhodobě vlivem spalování fosilních paliv koncentrace CO<sub>2</sub> rostou tempem okolo 20 ppm za desetiletí. V roce 1960 byly hodnoty okolo 315 ppm, v roce 2020 okolo 415 ppm –⁠ to je nárůst přibližně o 30 %.
 
 * Pokles koncentrací O<sub>2</sub> oproti referenčnímu roku 1991 je v grafu znázorněn tmavou modrou. Podobně jako koncentrace CO<sub>2</sub>, také koncentrace O<sub>2</sub> se mění během roku vlivem fotosyntézy a dýchání, ale průběh je opačný. Tedy koncentrace O<sub>2</sub> od května do října rostou a po zbytek roku klesají. Dlouhodobě vlivem spalování fosilních paliv koncentrace O<sub>2</sub> klesají tempem asi 40 ppm za desetiletí.
@@ -43,13 +50,15 @@ V absolutních číslech nemusí nárůst koncentrace CO2 v řádu desítek mole
 
 Přesnou metodu měření koncentrace CO2 s přesností 0,1 ppm (tedy 0,00001 %) vyvinul teprve Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože se koncentrace chaoticky měnila podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Franciscu ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů hodně vzdálené. Přesunul se proto doprostřed Tichého oceánu na Mauna Loa na Havaji. Tam jeho měření začalo dávat smysl – koncentrace zůstávala stabilní. Po několika měsících viděl, že hodnoty kolísají během roku – od května do října klesají a po zbytek roku zase stoupají. Pochopil, že pozoruje dýchání celé planety.
 
-<div class="highlight-box" markdown="1">
-#### Fotosyntéza
-
+{% include text-box.html
+    title="Fotosyntéza"
+    class="highlight-box"
+    text="
 Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydávají kyslík. Při dýchání naopak kyslík spotřebovávají a vydechují oxid uhličitý.
 
 CO2 + H2O O2 + sacharidy
-</div>
+"
+%}
 
 Většina světových lesů se nachází na severní
 polokouli. V létě mají listnaté stromy listy

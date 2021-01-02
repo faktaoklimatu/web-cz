@@ -1,0 +1,17 @@
+<div class="longread-box {{ include.class }}">
+{% assign slugs = include.slug | split: "," %}
+<h4>{{ include.title }}</h4>
+<div class="row">
+  {% for needle in slugs %}
+    <div class="{{ include.card_class }}">
+      {% assign item = site.infografiky | concat: site.studie | find_exp:"item","item.slug == needle" %}
+      <a href="{{ item.url }}" class="preview-card card">
+        {% include preview-block.html item=item %}
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<div markdown="1">
+  {{ include.text }}
+</div>
+</div>
