@@ -16,6 +16,9 @@ addons:
 before_install:
   - git clone --depth=1 https://github.com/MestreLion/git-tools # Distro version is currently broken
 
+install:
+  - bundle install
+
 script:
   - ./git-tools/git-restore-mtime
   - rm -rf ./git-tools
@@ -36,9 +39,10 @@ cache:
 
 deploy:
   provider: pages
+  strategy: git
   local_dir: _site
   target_branch: gh-pages
-  skip_cleanup: true
+  cleanup: false
   keep_history: false
   verbose: false
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
