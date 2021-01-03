@@ -44,6 +44,7 @@ sass:
     sass_dir: assets/_scss
     style: compressed
 cache_dir: .cache
+force_polling: true    # Force polling to resolve Windows issues with watch
 
 cdn:
     # See https://www.srihash.org for info on how to generate the hashes
