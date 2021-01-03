@@ -26,7 +26,7 @@ study-institution:  "Ember: Coal to Clean Energy Policy"
 study-year:         2020
 study-url:          "https://ember-climate.org/project/global-power-2020/"
 study-pdf:          "https://ember-climate.org/wp-content/uploads/2020/03/Ember-2020GlobalElectricityReview-Web.pdf"
-
+metadata-extra: '<a href="https://ember-climate.org/project/data-global-electricity-review/" id="study-link-3" class="btn btn-secondary">Podkladová data studie</a>'
 ---
 
 ## Kontext zprávy – klíčové souvislosti
