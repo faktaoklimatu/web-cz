@@ -135,6 +135,20 @@ div.fullsize-box {
     }
 }
 
+@media (max-width: 575.98px) {
+    div.highlight-box {
+        float: right;
+        width: 50%;
+        margin-left: 2rem;
+        position: static;
+        left: 0px;
+    }
+
+    div.fullsize-box {
+        width: 100%;
+    }
+}
+
 .longread {
     font-size: 1.1rem;
 
