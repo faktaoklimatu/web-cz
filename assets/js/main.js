@@ -23,7 +23,7 @@ $(document).ready(function() {
             return;
         }
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        if (currentScrollPos < navHeight || prevScrollpos > currentScrollPos) {
             $(".navbar").css('top', 0);
         } else {
             $(".navbar").css('top', (-1 * navHeight) + 'px');
