@@ -1,8 +1,11 @@
 ---
 layout:     infographic
 title:      "Vývoj světové teplotní anomálie"
-slug:       "vyvoj-teplotni-anomalie"
-redirect_from: "/vyvoj-teplotni-anomalie"
+slug:       "teplotni-anomalie"
+redirect_from:
+  - /teplotni-anomalie
+  - /vyvoj-teplotni-anomalie
+  - /infografiky/vyvoj-teplotni-anomalie
 published:  2019-08-03
 weight:     100
 tags-scopes: [ svet ]
@@ -23,9 +26,9 @@ Z grafu můžeme také vidět, že rok 2016 byl nejteplejším rokem v historii 
 
 ## Důležité souvislosti: místní trendy a rychlost oteplování
 
-Světová teplotní anomálie je pouze průměrnou hodnotou – z grafu tedy přímo nevidíme, že severní polokoule se otepluje rychleji než jižní a místa na souši se oteplují rychleji než oceány. V Evropě a severní Asii jsou současné teploty o 2-3°C teplejší než před sto lety, v arktických oblastech až o 4°C. Podrobněji tyto místní trendy zobrazuje [Mapa změn teploty](https://faktaoklimatu.cz/infografiky/mapa-zmeny-teploty).
+Světová teplotní anomálie je pouze průměrnou hodnotou – z grafu tedy přímo nevidíme, že severní polokoule se otepluje rychleji než jižní a místa na souši se oteplují rychleji než oceány. V Evropě a severní Asii jsou současné teploty o 2-3°C teplejší než před sto lety, v arktických oblastech až o 4°C. Podrobněji tyto místní trendy zobrazuje [Mapa změn teploty](/infografiky/mapa-zmeny-teploty).
 
-__Tempo, kterým oteplení v posledním století probíhá, je asi desetkrát rychlejší, než změny teplot planety kdykoliv v historii lidstva__. Podrobněji tuto rychlost oteplení ukazuje graf [teplotní anomálie od poslední doby ledové](https://faktaoklimatu.cz/infografiky/teplota-22000-let).
+__Tempo, kterým oteplení v posledním století probíhá, je asi desetkrát rychlejší, než změny teplot planety kdykoliv v historii lidstva__. Podrobněji tuto rychlost oteplení ukazuje graf [teplotní anomálie od poslední doby ledové](/infografiky/teplota-22000-let).
 
 ## Co je to referenční období?
 
