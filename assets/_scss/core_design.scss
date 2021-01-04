@@ -1,5 +1,5 @@
 body {
-    padding-top: 3rem;
+    padding-top: 56px;
     font-family: 'Source Sans Pro', sans-serif !important;
     color: $c-primary;
     font-size: 1.0rem;
@@ -207,6 +207,8 @@ img.text-img {
     background: $c-body;
     top: 0;
     transition: top 300ms;
+    flex-direction: column;
+    padding: 0;
 
     a {
         text-transform: uppercase;
@@ -224,6 +226,10 @@ img.text-img {
         background-size: 1.5rem;
         background-position: left;
     }
+}
+
+.navbar .container {
+    padding: 0.5em 1em;
 }
 
 .navbar-light .navbar-nav .nav-link {

@@ -1,4 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
+{% if jekyll.environment != "production" %}
+<div id="dev-warning" class="alert-warning w-100 mb-0">
+    <div class="container">
+        <p><i class="fas fa-fw fa-code"></i><strong> Tohle je vývojářská verze webu.</strong> Oproti produkční verzi v ní chybí web analytika.</p>
+    </div>
+</div>
+{% endif %}
     <div class="container">
         <a class="navbar-brand" href="/">Fakta o klimatu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Zobrazit/skrýt navigaci">
