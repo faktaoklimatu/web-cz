@@ -1,5 +1,12 @@
-// change styling of navbar if the page is scrolled
 $(document).ready(function() {
+    // Development version adjustments
+    var navHeight = $("nav").height();
+    if ($("#dev-warning")) {
+        console.log('This is the local development version of the website.');
+        $("body").css('padding-top', navHeight + 'px');
+    }
+
+    // change styling of navbar if the page is scrolled
     $(document).scroll(function() {
         var scrolled = $(this).scrollTop();
         if(scrolled > 50) {
@@ -11,7 +18,6 @@ $(document).ready(function() {
     // hide navbar if the screen is small and the page is scrolled
     var prevScrollpos = window.pageYOffset;
     $(document).scroll(function () {
-        console.log($(window).height());
         if ($(window).height() > 741) { // iPhone 6 plus / Galaxy S9 screen viewport height
             $(".navbar").css('top', 0);
             return;
@@ -20,7 +26,7 @@ $(document).ready(function() {
         if (prevScrollpos > currentScrollPos) {
             $(".navbar").css('top', 0);
         } else {
-            $(".navbar").css('top', '-56px');
+            $(".navbar").css('top', (-1 * navHeight) + 'px');
         }
         prevScrollpos = currentScrollPos;
     });
