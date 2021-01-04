@@ -135,6 +135,14 @@ div.fullsize-box {
     }
 }
 
+@media (max-width: 1199.98px) {
+    .longread-toc-none {
+        // Keep it visible for the largest size so that it does not break the
+        // central alignment of the .longread box.
+        display: none;
+    }
+}
+
 @media (max-width: 575.98px) {
     div.highlight-box {
         float: right;
@@ -169,6 +177,10 @@ div.fullsize-box {
         margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
+}
+
+.longread-toc-hidden {
+    visibility: hidden;
 }
 
 .sticky-toc {

@@ -47,11 +47,16 @@ $(document).ready(function() {
         $('[data-toggle="popover"]').popover();
     }, 500);
 
-    // Render table if contents, if available.
+    // Render table if contents, if it is non-trivial.
     tocbot.init({
         tocSelector: '#TOC',
         contentSelector: '.longread',
         headingSelector: 'h2, h3',
         smoothScroll: false,
     });
+    if (document.querySelectorAll("#TOC a").length > 3) {
+        document.querySelector(".longread-toc").classList.remove("longread-toc-hidden");
+    } else {
+        document.querySelector(".longread-toc").classList.add("longread-toc-none");
+    }
 });
