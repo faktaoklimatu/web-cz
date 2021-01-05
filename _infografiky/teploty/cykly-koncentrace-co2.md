@@ -60,23 +60,11 @@ CO2 + H2O O2 + sacharidy
 "
 %}
 
-Většina světových lesů se nachází na severní
-polokouli. V létě mají listnaté stromy listy
-a převažuje fotosyntéza – rostliny odčerpávají CO2 z atmosféry a ukládají uhlík do svých
-kmenů a listů. Na podzim stromy shazují
-listy, které hnijí a uvolňují CO2 zpátky.
-Kromě tohoto kolísání mezi létem a zimou
-viděl Keeling také dlouhodobý nárůst koncentrace CO2, který přičítal spalování uhlí, ropy a zemního plynu.
+Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza – rostliny odčerpávají CO2 z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijí a uvolňují CO2 zpátky. Kromě tohoto kolísání mezi létem a zimou viděl Keeling také dlouhodobý nárůst koncentrace CO2, který přičítal spalování uhlí, ropy a zemního plynu.
 
 Keelingova metoda měření koncentrací CO<sub>2</sub> spočívá v extrémně přesném měření absorpce specifických vlnových délek infračerveného záření ve vzorku vzduchu. Podrobněji je popsána v článku [_The Story of Atmoshperic CO<sub>2</sub> Measurements_](https://pubs.acs.org/doi/pdf/10.1021/ac1001492) (PDF). Další kontext, včetně vysvětlení měření izotopových stop, najdete v článku [_The Keeling Curve: Carbon Dioxide Measuements at Mauna Loa_](https://www.acs.org/content/acs/en/education/whatischemistry/landmarks/keeling-curve.html).
 
-Důkaz, že je nárůst koncentrace CO2 v atmosféře skutečně způsobený spalováním, přinesl Keelingův syn Ralph. Ten v roce 1988 objevil způsob, jak velmi přesně měřit koncentraci kyslíku. Jeho měření ukazují na dlouhodobý nepřirozený pokles koncentrace kyslíku v atmosféře. Dnes existují
-i další vědecké práce, založené mimo jiné na
-zkoumání izotopových stop, které potvrzují,
-že oxid uhličitý, který v atmosféře přibývá,
-pochází ze spalování fosilních paliv. Je proto
-jisté, že nárůst koncentrace CO2 je skutečně
-způsobený člověkem.
+Důkaz, že je nárůst koncentrace CO2 v atmosféře skutečně způsobený spalováním, přinesl Keelingův syn Ralph. Ten v roce 1988 objevil způsob, jak velmi přesně měřit koncentraci kyslíku. Jeho měření ukazují na dlouhodobý nepřirozený pokles koncentrace kyslíku v atmosféře. Dnes existují i další vědecké práce, založené mimo jiné na zkoumání izotopových stop, které potvrzují, že oxid uhličitý, který v atmosféře přibývá, pochází ze spalování fosilních paliv. Je proto jisté, že nárůst koncentrace CO2 je skutečně způsobený člověkem.
 
 ## Jak se projevuje fotosyntéza, dýchání a spalování fosilních paliv na koncentracích CO<sub>2</sub> a O<sub>2</sub>?
 
@@ -93,4 +81,3 @@ Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fos
 * Lidstvo ročně spálí přes 5 miliard tun uhlí, asi 4 miliardy tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
 * Nárůst koncentrací CO<sub>2</sub> je doprovázen poklesem koncentrací O<sub>2</sub>, který přesně odpovídá směšovacím poměrům při spalování fosilních paliv (po započtení pohlcení části CO<sub>2</sub> v oceánech) – tedy jde o další důkaz, že za zvyšování koncentrací CO<sub>2</sub> může právě spalování.
 * Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C a sníženou koncentraci <sup>13</sup>C. Oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na webu [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html).
-

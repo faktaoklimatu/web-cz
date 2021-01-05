@@ -10,6 +10,7 @@ V této infografice dáváme základní přehled o jednom scénáři transformac
 %}
 
 Stav v roce 2019 a stav v roce 2030 podle tohoto scénáře srovnáváme ve dvou hlavních parametrech:
+
 1. **Instalovaný výkon (dole):** Tento parametr zachycuje, jaké elektrárny máme a můžeme v budoucnu mít. Tedy kolik bude v Česku konvenčních elektráren na uhlí nebo na plyn, kolik solárních panelů a kolik větrných elektráren, kolik bioplynových stanic, kolik tepláren na biomasu, apod. Čtverečky zobrazují instalovaný výkon, ale nijak nevypovídají o zastavěné ploše, která by byla pro každý typ elektráren jiná.
 2. **Výroba elektřiny (nahoře):** Tento parametr zachycuje, kolik které zdroje elektřiny skutečně dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý export_ nebo že dokonce budeme více elektřiny dovážet než vyvážet. Spotřeba je odvozená jako rozdíl výroby a čistého exportu (tedy formálně jde o součet tzv. _čisté spotřeby_, _ztrát v sítích_ a ztrát při provozu přečerpávacích elektráren).
 
