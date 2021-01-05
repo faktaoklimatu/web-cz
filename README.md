@@ -72,7 +72,7 @@ Kontejner zastavíte stisknutím <kbd>Ctrl</kbd>+<kbd>C</kbd>. Znovu jej spustí
 
 #### Ruční instalace
 
-Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) (v případě Ubuntu 18.04 nutno nejdříve nainstalovat balíčky `build-essential libpng-dev ruby-dev zlib1g-dev`). Dále je potřeba mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/) a utilitu `pdf2svg`, které se používají na konverzi infografik.
+Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) (v případě Ubuntu 18.04 nutno nejdříve nainstalovat balíčky `build-essential libpng-dev ruby-dev zlib1g-dev`). Dále je potřeba mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/) verze alespoň 1.0, který se používá na konverzi infografik.
 
 Poté již stačí v kořenové složce projektu spustit příkaz `make local`, který sestaví, co je potřeba, zpřístupní web na adrese <http://localhost:4000> a následně bude monitorovat soubory a v případě jejich změny automaticky sestaví novou verzi stránky.
 
