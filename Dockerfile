@@ -9,11 +9,6 @@ RUN apt-get update && \
     apt-get install --assume-yes --no-install-suggests --no-install-recommends \
         build-essential git inkscape pdf2svg ruby-bundler ruby-dev zlib1g-dev libffi-dev
 
-# Install gems during build of the image so that we can leverage the cache.
-COPY Gemfile* /tmp
-WORKDIR /tmp
-RUN bundle install
-
 EXPOSE 4000
 VOLUME /srv/jekyll
 WORKDIR /srv/jekyll
