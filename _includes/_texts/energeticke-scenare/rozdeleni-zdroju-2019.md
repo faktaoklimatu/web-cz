@@ -1,4 +1,5 @@
 ### Rozdělení zdrojů do kategorií: rok 2019
+
 Pro výrobu za rok 2019 vycházíme z dat [Energetického regulačního úřadu](https://www.eru.cz) (ERÚ) a uvažujeme množství vyrobené elektřiny z dané suroviny nehledě na typ elektrárny, ve které byla vyrobena. Pro instalovaný výkon v roce 2019 vycházíme z dat ERÚ a státní akciové společnosti [OTE](https://www.ote-cr.cz/cs), která má v Česku roli operátora trhu s elektřinou a plynem. Jednotlivé kategorie určujeme takto:
 
 * **Uhlí:** Pro instalovaný výkon uvažujeme všechny tzv. _parní elektrárny_ kromě těch, kde probíhá spalování čisté biomasy a kromě spaloven komunálního odpadu (obě výjimky podle registru OTE). Jako uhelné elektrárny a teplárny tedy uvažujeme i ty, ve kterých probíhá spoluspalování biomasy (poměrně časté) nebo spoluspalování zemního plynu či ostatních plynů (např. důlních plynů, vysokopecních plynů, aj.).
