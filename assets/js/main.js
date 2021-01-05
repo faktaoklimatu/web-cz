@@ -4,6 +4,7 @@ $(document).ready(function() {
     if ($("#dev-warning")) {
         console.log('This is the local development version of the website.');
         $("body").css('padding-top', navHeight + 'px');
+        $(".sticky-toc").css('top', navHeight + 'px');
     }
 
     // change styling of navbar if the page is scrolled
