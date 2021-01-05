@@ -29,12 +29,12 @@ delete-container:
 	$(PODMAN) rm --force $(CONTAINER_NAME)
 
 # Targets for generating files and managing the Jekyll site.
-install:
+reinstall:
 	-rm -rf vendor/bundle
 	bundle install
 
 local: web
-	[ -d vendor/bundle ] || bundle install
+	bundle install
 	bundle exec jekyll serve --trace
 
 web: $(INFOGRAPHICS_DST) $(STUDIES_DST) # $(DATASETS_DST)
