@@ -39,10 +39,9 @@ cache:
 
 deploy:
   provider: pages
-  strategy: git
   local_dir: _site
   target_branch: gh-pages
-  cleanup: false
+  skip_cleanup: true
   keep_history: false
   verbose: false
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
