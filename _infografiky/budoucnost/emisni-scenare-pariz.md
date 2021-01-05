@@ -3,7 +3,7 @@ layout:      infographic
 title:       "Emisní scénáře pro naplnění Pařížské dohody"
 slug:        "emisni-scenare-pariz"
 redirect_from: "/emisni-scenare-pariz"
-published:   2020-01-10
+published:   2021-01-06
 weight:      90
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
