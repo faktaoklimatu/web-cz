@@ -4,7 +4,6 @@ V této infografice dáváme základní přehled o jednom scénáři transformac
 
 {% include preview-box.html
     title="Srovnání energetických scénářů"
-    class="highlight-box"
     text="Tato grafika je součástí kolekce grafik k různým scénářům vývoje elektroenergetiky v ČR. Podívejte se na jejich srovnání v jedné grafice."
     slug="srovnani-energetickych-scenaru-cr"
 %}
