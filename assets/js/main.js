@@ -55,7 +55,7 @@ $(document).ready(function() {
         headingSelector: 'h2, h3',
         smoothScroll: false,
     });
-    if (document.querySelectorAll("#TOC a").length > 3) {
+    if (document.querySelectorAll("#TOC a").length > 1) {
         document.querySelector(".longread-toc").classList.remove("longread-toc-hidden");
     } else {
         document.querySelector(".longread-toc").classList.add("longread-toc-none");
