@@ -70,18 +70,17 @@ div.longread-box {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     
-    color: $c-light-blue;
     border-left: 2px solid $c-light-blue;
     
     h4 {
+        color: $c-light-blue;
         margin-top: 0rem;
     }
     p {
         text-align: left;
     }
     div.row {
-        margin: 0px;
-        margin-bottom: 1rem;
+        margin: 0.5rem 0rem;
     }
     .card {
         margin: 0px;
@@ -90,14 +89,11 @@ div.longread-box {
 
 div.highlight-box {
     float: right;
+    clear: right;
     width: 55%;
     margin-left: calc(-25px + 2rem);
     position: relative;
     left: 25px;
-}
-
-div.fullsize-box {
-    width: calc(100% + 25px);
 }
 
 @media (min-width: 1200px) {
@@ -129,10 +125,6 @@ div.fullsize-box {
         left: 40%;
         margin-left: calc(-40% + 2rem);
     }
-
-    div.fullsize-box {
-        width: calc(140%);
-    }
 }
 
 @media (max-width: 1199.98px) {
@@ -149,10 +141,6 @@ div.fullsize-box {
         margin-left: 2rem;
         position: static;
         left: 0px;
-    }
-
-    div.fullsize-box {
-        width: 100%;
     }
 }
 
@@ -191,7 +179,7 @@ div.fullsize-box {
     }
 
     h2, li, a:not(:hover) {
-        color: var(--secondary);
+        color: $c-grey;
     }
 
     li {

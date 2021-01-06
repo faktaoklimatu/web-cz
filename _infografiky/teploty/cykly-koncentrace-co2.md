@@ -33,7 +33,6 @@ V absolutních číslech nemusí nárůst koncentrace CO2 v řádu desítek mole
 
 {% include preview-box.html
     title="Delší řada koncentrace CO2"
-    class="highlight-box"
     text="Rekonstrukce historických hodnot koncentrace CO2 za posledních 800 tisíc let."
     slug="koncentrace-co2"
 %}
@@ -50,9 +49,8 @@ V absolutních číslech nemusí nárůst koncentrace CO2 v řádu desítek mole
 
 Přesnou metodu měření koncentrace CO2 s přesností 0,1 ppm (tedy 0,00001 %) vyvinul teprve Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože se koncentrace chaoticky měnila podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Franciscu ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů hodně vzdálené. Přesunul se proto doprostřed Tichého oceánu na Mauna Loa na Havaji. Tam jeho měření začalo dávat smysl – koncentrace zůstávala stabilní. Po několika měsících viděl, že hodnoty kolísají během roku – od května do října klesají a po zbytek roku zase stoupají. Pochopil, že pozoruje dýchání celé planety.
 
-{% include text-box.html
+{% include preview-box.html
     title="Fotosyntéza"
-    class="highlight-box"
     text="
 Při fotosyntéze rostliny spotřebovávají oxid uhličitý z atmosféry a vydávají kyslík. Při dýchání naopak kyslík spotřebovávají a vydechují oxid uhličitý.
 
