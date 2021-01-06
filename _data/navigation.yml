@@ -1,0 +1,33 @@
+- title: Úvod
+  link: /
+
+- title: Témata
+  dropdown: temata
+  list-topics: true
+
+# - title: Explainery
+#  link: /explainery
+
+# - title: O projektu
+#   link: /o-projektu
+
+- title: Více
+  dropdown:
+    - title: Aktuality
+      link: /aktuality
+
+    - title: Slovník pojmů
+      link: /slovnik
+
+    - title: Další zdroje a odkazy
+      link: /zdroje
+
+    - title: Jak používat naše materiály
+      link: /jak-pouzivat
+
+    - title: Atlas klimatické změny
+      link: /atlas
+
+    - title: Podpořte nás <i class="fas fa-fw fa-heart"></i>
+      fundraising: true
+      class: no-ext-link-icon

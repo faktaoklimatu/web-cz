@@ -14,30 +14,27 @@
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li><a class="nav-link" href="/">Úvod</a></li>
+            {%- for menu-item in site.data.navigation -%}
+                {%- if menu-item.link %}
+                <li><a class="nav-link {{ menu-item.class }}" href="{% if menu-item.fundraising %}{{ site.fundraising }}{% else %}{{ menu-item.link }}{% endif %}">{{ menu-item.title }}</a></li>
+                {%- elsif menu-item.dropdown %}
                 <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdown_topics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Témata</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown_topics">
-                        {% assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" %}
-                        {% for tag in sorted_index_tags %}
-                          <a class="dropdown-item" href="/temata/{{ tag.id }}">{{ tag.name-long }}</a>
-                        {% endfor %}
+                    <a class="nav-link dropdown-toggle" id="dropdown_{{ menu-item.title | slugify }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu-item.title }}</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_{{ menu-item.title | slugify }}">
+                        {%- if menu-item.list-topics -%}
+                            {%- assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" -%}
+                            {%- for tag in sorted_index_tags %}
+                            <a class="dropdown-item" href="/{{ menu-item.dropdown }}/{{ tag.id }}">{{ tag.name-long }}</a>
+                            {%- endfor- %}
+                        {%- else -%}
+                            {%- for submenu-item in menu-item.dropdown %}
+                            <a class="dropdown-item {{ submenu-item.class }}" href="{% if submenu-item.fundraising %}{{ site.fundraising }}{% else %}{{ submenu-item.link }}{% endif %}">{{ submenu-item.title }}</a>
+                            {%- endfor -%}
+                        {%- endif %}
                     </div>
                 </li>
-                <!-- <li><a class="nav-link" href="/explainery">Explainery</a></li> -->
-                <!-- <li><a class="nav-link" href="/o-projektu">O projektu</a></li> -->
-                <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdown_more" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Více</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown_more">
-                        <a class="dropdown-item" href="/aktuality">Aktuality</a>
-                        <!-- <a class="dropdown-item" href="/atlas">Atlas klimatické změny</a> -->
-                        <a class="dropdown-item" href="/slovnik">Slovník pojmů</a>
-                        <a class="dropdown-item" href="/zdroje">Další zdroje a odkazy</a>
-                        <a class="dropdown-item" href="/jak-pouzivat">Jak používat naše materiály</a>
-                        <a class="dropdown-item" href="/atlas">Atlas klimatické změny</a>
-                        <a class="dropdown-item no-ext-link-icon" href="{{ site.fundraising }}">Podpořte nás <i class="fas fa-fw fa-heart"></i></a>
-                    </div>
-                </li>
+                {%- endif -%}
+            {%- endfor %}
             </ul>
         </div>
     </div>
