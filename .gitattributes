@@ -1,1 +1,13 @@
-* text=auto
+*       text=auto
+*.md    text
+*.html  text
+*.yml   text
+*.txt   text
+*.js    text
+*.rb    text
+*.sh    text eol=lf
+*.scss  text
+*.pdf   -text
+*.jpg   -text
+*.png   -text
+*.pdf   -text
