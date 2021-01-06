@@ -107,16 +107,16 @@ div.fullsize-box {
         margin-right: 30px;
     }
     .longread-xl-space-left {
-        flex: 2 0 0px;
+        flex: 3 0 0px;
     }
     .longread-toc {
         flex: 4 0 240px;
     }
     .longread-xl-space-middle {
-        flex: 4 0 0px;
+        flex: 3 0 0px;
     }
     .longread {
-        flex: 0 0 640px;
+        flex: 3 0 640px;
         line-height: 1.6em;
     }
     .longread-xl-space-right {
@@ -145,8 +145,7 @@ div.fullsize-box {
 
 @media (max-width: 575.98px) {
     div.highlight-box {
-        float: right;
-        width: 50%;
+        width: 100%;
         margin-left: 2rem;
         position: static;
         left: 0px;
@@ -184,11 +183,16 @@ div.fullsize-box {
 }
 
 .sticky-toc {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 56px;
-    left: 100px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    h2::before {
+        height: 5px;
+        margin-top: -5px;
+    }
+
+    h2, li, a:not(:hover) {
+        color: var(--secondary);
+    }
 
     li {
         text-align: left;
@@ -209,5 +213,14 @@ div.fullsize-box {
             padding-left: 2rem;
             list-style-type: lower-alpha;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky-toc {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 56px;
+        left: 100px;
     }
 }
