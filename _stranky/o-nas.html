@@ -10,6 +10,11 @@ intro:      "Debata o klimatické změně je komplikovaná a na všech stranách
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.intro }}</p>
         <img src="/assets/img/tym-fakta-o-klimatu.jpg" class="img-fluid" alt="Responsive image", style="margin-bottom: 1rem;">
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
         <h2>Náš příběh</h2>
         {% assign story = site.data.story %}
         {% for item in story %}
@@ -26,18 +31,20 @@ intro:      "Debata o klimatické změně je komplikovaná a na všech stranách
 </div>
 
 <div class="section">
-    <div class="container"> 
+    <div class="container">
         <h2>Náši členové</h2>
         Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změna klimatu týkají. Tedy všem.
-        <div class="card-columns", style="margin-top: 10px;">
+        <div class="card-columns align-items-start mt-2">
             {% assign members = site.data.members %}
             {% for item in members %}
-                <div class="card">
-                    <img class="card-img-top" style="padding:1rem" src="/assets/img/members/{{item.img}}.png" alt="Card image cap">
+                <div class="card bg-grey">
+                    <div class="text-center">
+                        <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="Card image cap">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">{{ item.name}}</h5>
+                        <p class="card-subtitle mb-2 font-weight-bold">{{ item.email}}</p>
                         <p class="card-text">{{ item.summary }}</p>
-                        <a href="mailto:{{ item.email }}" class="btn btn-primary btn-block"><i class="fas fa-fw fa-book"></i> {{ item.email }} </a>
                     </div>
                 </div>
             {% endfor %}
