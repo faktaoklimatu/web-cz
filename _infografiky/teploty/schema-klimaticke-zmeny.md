@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Schématická mapa klimatické změny"
+title:      "Schematická mapa klimatické změny"
 slug:       "schema-klimaticke-zmeny"
 redirect_from: "/schema-klimaticke-zmeny"
 published:  2020-08-24
