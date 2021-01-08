@@ -18,15 +18,17 @@ data-orig:
 
 V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR.
 
-{% include preview-box.html
-    title="Jednotlivé scénáře"
-    text_pre="Ke každému scénáři jsme připravili detailní samostatnou infografiku."
-    slug="2020-scenar-ember,2018-scenar-energynautics,2020-scenar-bloombergnef,2019-scenar-necp"
-%}
-
 ## Jak číst tento graf
 
 **V horní části grafiky** srovnáváme stav v roce 2019 a stav v roce 2030 podle **výroby elektřiny**: Tento parametr zachycuje, kolik které zdroje elektřiny dodají do přenosové soustavy. Formálně je to tzv. _čistá výroba_, která nepočítá elektřinu, kterou elektrárny samy spotřebují. Snížení celkové výroby znamená, že se (vlivem úspor) sníží spotřeba, že se sníží _čistý vývoz_ nebo že dokonce budeme více elektřiny dovážet než vyvážet.
+
+{% include preview-box.html
+    title="Jednotlivé scénáře"
+    class="highlight-box wider-box"
+    card_class="col-6 p-1"
+    text_pre="Ke každému scénáři jsme připravili detailní samostatnou infografiku."
+    slug="2020-scenar-ember,2018-scenar-energynautics,2020-scenar-bloombergnef,2019-scenar-necp"
+%}
 
 Postupný odklon od fosilních zdrojů a nejvíce pak od uhlí znamená snížení **emisí skleníkových plynů**. Každá studie takové snížení počítá pomocí vlastní metodiky (a nebo nepočítá vůbec). Proto pro všechny studie **uvádíme náš výpočet snížení emisí**, založený na rozdílu v mixu výroby mezi lety 2019 a 2030 a na emisních koeficientech od IPCC. Více o metodice výpočtu najdete níže.
 

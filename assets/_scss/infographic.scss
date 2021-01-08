@@ -96,6 +96,10 @@ div.highlight-box {
     left: 25px;
 }
 
+div.wider-box {
+    width: 70%;
+}
+
 @media (min-width: 1200px) {
     .container-xl-fluid {
         max-width: calc(100% - 60px);
@@ -125,6 +129,13 @@ div.highlight-box {
         left: 40%;
         margin-left: calc(-40% + 2rem);
     }
+
+    div.wider-box {
+        width: 75%;
+        position: relative;
+        left: 40%;
+        margin-left: calc(-40% + 2rem);
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -135,12 +146,26 @@ div.highlight-box {
     }
 }
 
+@media (max-width: 1199.98px) {
+    div.wider-box {
+        width: 90%;
+        margin: 0% 5%;
+        position: static;
+    }
+}
+
+@media (max-width: 767.98px) {
+    div.wider-box {
+        width: 100%;
+        margin: 0%;
+    }
+}
+
 @media (max-width: 575.98px) {
     div.highlight-box {
         width: 100%;
         margin-left: 2rem;
         position: static;
-        left: 0px;
     }
 }
 
