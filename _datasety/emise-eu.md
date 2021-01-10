@@ -10,7 +10,6 @@ caption:    "Dataset obsahuje dva indikátory pro všechny státy EU (a někter�
 data-our:    "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit#gid=979818322"
 data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ] ]
 ---
-<div class="section"><div class="container" markdown="1">
 
 ## Emise skleníkových plynů
 
@@ -36,7 +35,6 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
     licence="Licence EEA, podobná CC BY"
     licence-proof="https://www.eea.europa.eu/legal/copyright"
 %}
-</div></div>
 
 Data emisí skleníkových plynů jsou shromažďována v rámci inventarizace emisí skleníkových plynů jednotlivých státu podle Rámcové úmluvy OSN o změně klimatu (UNFCCC). Za Evropskou unii data kompiluje EEA (_European Environmental Agency_) do souhrnné zprávy a dále data publikuje Eurostat.
 
@@ -54,9 +52,6 @@ Emise jsou rozděleny podle jejich zdrojů podle metodiky UNFCCC nazvané CRF (_
 
 Detailní metodické pokyny k shromažďování dat o emisích CRF (_Common Reporting Format_) nabízí např. (starší) [dokument UNFCCC](https://unfccc.int/resource/docs/cop5/07.pdf). [Více kontextu](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Greenhouse_gas_emission_statistics&redirect=no#Trends_in_greenhouse_gas_emissions) této statistiky také nabízí Eurostat.
 
-</div></div>
-<div class="section"><div class="container" markdown="1">
-
 ## Velikost populace
 
 {% include data-header.html
@@ -69,5 +64,3 @@ Detailní metodické pokyny k shromažďování dat o emisích CRF (_Common Repo
 %}
 
 Z tohoto datasetu vybíráme pouze data za rok 2016.
-
-</div></div>

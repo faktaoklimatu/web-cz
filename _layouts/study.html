@@ -40,8 +40,21 @@
       </div>
     </div>
     <div class="section">
-        <div class="container clearfix">
-        {{ content }}
+      <div class="container container-xl-fluid">
+        <div class="row justify-content-center">
+          <div class="longread-xl-space-left"></div>
+          <div class="col-lg-4 longread-toc longread-toc-hidden">
+            <div class="sticky-toc">
+              <h2>Obsah</h2>
+              <div id="TOC"></div>
+            </div>
+          </div>
+          <div class="longread-xl-space-middle"></div>
+          <div class="col-lg-8 longread">
+            {{ content }}
+          </div>
+          <div class="longread-xl-space-right"></div>
+        </div>
       </div>
     </div>
     {% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains page.tags-topics[0]"

@@ -10,7 +10,6 @@ caption:    "TODO"
 published:     false
 data-our:    "https://docs.google.com/spreadsheets/d/1mYBzne9T_tVpjNFmBuv1e6tNlUAVtADoQNGRJjuiyE4/edit?usp=sharing"
 ---
-<div class="section"><div class="container" markdown="1">
 
 ## Světová teplotní anomálie
 
