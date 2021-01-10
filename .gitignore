@@ -1,15 +1,3 @@
-# Generated web files
-assets/generated/*
-assets/studies/*
-#assets/datasets/* # currently commited to repo
-
-# Build Jekyll site
-_site/*
-.cache/*
-
-# Locally donwloaded and installed gems
-vendor
-
 # Temporary files
 *~
 
