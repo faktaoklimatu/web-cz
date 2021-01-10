@@ -1,0 +1,3 @@
+[submodule "web-core"]
+	path = web-core
+	url = ../web-core
