@@ -13,13 +13,9 @@ before_install:
   - sudo apt -y install inkscape
   - git clone --depth=1 https://github.com/MestreLion/git-tools # Distro version is currently broken
 
-install:
-  - bundle install
-
 script:
   - ./git-tools/git-restore-mtime
   - rm -rf ./git-tools
-  - mv CONTRIBUTORS.md humans.txt
   - make check
   - make deploy
 
@@ -30,13 +26,12 @@ env:
 cache:
   bundler: true               # Enable caching of bundler gem packages
   directories:
-  - $TRAVIS_BUILD_DIR/.cache  # Enable caching link checks
-  - $TRAVIS_BUILD_DIR/assets/generated  # Enable caching of generated infographics
-#  - $TRAVIS_BUILD_DIR/assets/datasets  # Enable caching of infographic preview images
+  - $TRAVIS_BUILD_DIR/web-core/.cache  # Enable caching link checks
+  - $TRAVIS_BUILD_DIR/web-core/assets/generated  # Enable caching of generated infographics
 
 deploy:
   provider: pages
-  local_dir: _site
+  local_dir: web-core/_site
   target_branch: gh-pages
   skip_cleanup: true
   keep_history: false
