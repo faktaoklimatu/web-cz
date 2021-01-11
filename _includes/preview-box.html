@@ -1,20 +1,26 @@
 <div class="longread-box {{ include.class | default: 'highlight-box' }}">
 {% assign slugs = include.slug | split: "," %}
 <h4>{{ include.title }}</h4>
+{%- if include.text_pre %}
 <div markdown="1">
   {{ include.text_pre }}
 </div>
+{%- endif %}
+{%- if include.slug %}
 <div class="row">
   {% for needle in slugs %}
     <div class="{{ include.card_class | default: 'py-1' }}">
       {% assign item = site.infografiky | concat: site.studie | find_exp:"item","item.slug == needle" %}
       <a href="{{ item.url }}" class="preview-card card">
-        {% include preview-block.html item=item %}
+        {% include preview-block.html item=item no_include_tags=true %}
       </a>
     </div>
   {% endfor %}
 </div>
+{%- endif %}
+{%- if include.text %}
 <div markdown="1">
   {{ include.text }}
 </div>
+{%- endif %}
 </div>
