@@ -30,7 +30,7 @@ slug: index
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="public" role="tabpanel" aria-labelledby="public-tab"><div class="container">
     <p class="lead mb-0">Fakta o klimatu neslouží odborníkům, ale všem lidem se zájmem o téma klimatické změny. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2, body-zlomu-1, teplota-22000-let, teplota-cr, potencial-zpusobu-snizeni-emisi, elektrina-cr" | split: ", " %}
-    {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
+    {% assign featured = site.infographics | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
     <p class="lead">Pro pravidelné kvalitní informace o klimatické změně můžete sledovat náš newsletter nebo Twitter.
     Komplexní a přístupný pohled na klimatickou změnu představuje naše publikace <a href="/atlas" target="_blank">Atlas klimatické změny</a>.
@@ -45,7 +45,7 @@ slug: index
   <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="teachers" role="tabpanel" aria-labelledby="teachers-tab"><div class="container">
     <p class="lead mb-0">Texty a grafiky projektu Fakta o klimatu lze použít jako materiál pro přípravu různých vzdělávacích aktivit. Při práci se snažíme nerezignovat na vědeckou přesnost a komplexnost, použití našich textů a grafik proto doporučujeme ve vyšších ročnících ZŠ nebo na SŠ a VŠ. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2" | split: ", " %}
-    {% assign featured = site.infografiky | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
+    {% assign featured = site.infographics | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
     {% include preview-blocks.html blocks=featured limit=3 %}
     <div class="row justify-content-md">
       <div class="col-md-6 col-lg-8">
@@ -80,7 +80,7 @@ slug: index
 {:.lead}
 Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky, výtahy studií a datasety. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
 
-{% assign objects = site.infografiky | concat: site.studie | concat: site.datasety | sort: "published" | reverse %}
+{% assign objects = site.infographics | concat: site.studies | concat: site.datasets | sort: "published" | reverse %}
 {% include preview-blocks.html blocks=objects link="news" limit=6 %}
 
 </div></div>
@@ -107,7 +107,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 {:.lead}
 {{ index_tag.description | markdownify }}
 
-{% assign objects = site.infografiky | concat: site.studie | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
+{% assign objects = site.infographics | concat: site.studies | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
 {% include preview-blocks.html blocks=objects link=index_tag limit=6 %}
 
 </div>
