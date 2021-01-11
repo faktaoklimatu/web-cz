@@ -211,10 +211,6 @@ div.wider-box {
         text-align: left;
     }
 
-    .is-active-li {
-        font-weight: bold;
-    }
-
     li {
         text-align: left;
     }
@@ -235,5 +231,9 @@ div.wider-box {
         position: -webkit-sticky;
         top: 56px;
         left: 100px;
+    }
+
+    a.is-active-link {
+        font-weight: bold;
     }
 }
