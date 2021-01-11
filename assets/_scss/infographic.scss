@@ -199,6 +199,10 @@ div.wider-box {
         margin-top: -5px;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     h2, li, a:not(:hover) {
         color: $c-grey;
     }
