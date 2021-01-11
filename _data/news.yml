@@ -54,7 +54,7 @@
   summary: "Zpracovali jsme data z článků, které analyzovaly průběh teplot planety od poslední doby ledové a zpracovali jej do grafiky [Světová teplotní anomálie za 22000 let](/infografiky/teplota-22000-let). V ní je možné srovnat o kolik je probíhající klimatická změna rychlejší než konec poslední doby ledové."
 
 - date: 2020-07-23
-  summary: "Podkladová data a grafika [Vývoj světové teplotní anomálie](/infografiky/vyvoj-teplotni-anomalie) byla převedena na _předindustriální_ referenční období, tedy 1850–1900. Důvodem je, že Pařížská dohoda, zpráva SR15 IPCC i mnohé další dokumenty a články vztahují hodnoty oteplení právě vzhledem k tomuto referenčnímu období."
+  summary: "Podkladová data a grafika [Vývoj světové teplotní anomálie](/infografiky/teplotni-anomalie) byla převedena na _předindustriální_ referenční období, tedy 1850–1900. Důvodem je, že Pařížská dohoda, zpráva SR15 IPCC i mnohé další dokumenty a články vztahují hodnoty oteplení právě vzhledem k tomuto referenčnímu období."
 
 - date: 2020-06-02
   summary: "Spolu s Asociací pro mezinárodní otázky a Danuší Nerudovou jsme připravili mediální brífing _Konec uhlí v Čechách_ shrnující světový a český kontext uhelného phase-outu."
@@ -78,8 +78,7 @@
   summary: |
     * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020-globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20let. 
     * Nové grafiky: [Emisní intenzita](/infografiky/emisni-intenzity) a [Tropické a ledové dny](/infografiky/tropicke-dny-brno)
-  
- 
+
 - date: 2020-04-17
   title: "Stránky k našim datovým sadám"
   summary: |
