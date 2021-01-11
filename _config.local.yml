@@ -13,16 +13,16 @@ test: infografiky
 
 # Set permalinks in local language
 collections:
-    infografiky:
+    infographics:
         output: true
         permalink: /infografiky/:title
-    stranky:
+    pages:
         output: true
         permalink: /:title
-    studie:
+    studies:
         output: true
         permalink: /studie/:title
-    datasety:
+    datasets:
         output: true
         permalink: /datasety/:title
     explainery:
