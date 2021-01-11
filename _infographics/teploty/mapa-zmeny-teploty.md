@@ -16,7 +16,7 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 ## Další komentáře a odkazy
 
-* Svět se od roku 1961 oteplil přibližně o 1 °C (viz. infografika [Světová teplotní anomálie](/infografiky/vyvoj-teplotni-anomalie)). Nicméně  pevniny se oteplují přibližně dvakrát rychlejším tempem než oceány, severní polokoule se otepluje rychleji než jižní polokoule. Oteplení je navíc různé v různých obdobích roku – například v zimních měsících v Severním ledovém oceánu přesahuje oteplení hodnoty +6 °C od roku 1961.
+* Svět se od roku 1961 oteplil přibližně o 1 °C (viz. infografika [Světová teplotní anomálie](/infografiky/teplotni-anomalie)). Nicméně  pevniny se oteplují přibližně dvakrát rychlejším tempem než oceány, severní polokoule se otepluje rychleji než jižní polokoule. Oteplení je navíc různé v různých obdobích roku – například v zimních měsících v Severním ledovém oceánu přesahuje oteplení hodnoty +6 °C od roku 1961.
 
 * Zesílení oteplování nad pevninou a na severní polokouli je způsobeno zpětnými vazbami v klimatickém systému a je dobře modelováno současnými klimatickými modely. Už v roce 1979 shrnovala [Charneyho zpráva](/studie/1979-charneyho-zprava) výsledky tehdejších klimatických modelů a autoři konstatovali: "…pokud dojde ke zdvojnásobení koncentrace CO<sub>2</sub> v atmosféře a dosažení termodynamické rovnováhy, dojde k oteplení o 2–3,5 °C, s vyššími nárůsty v severních zeměpisných šířkách."
 
