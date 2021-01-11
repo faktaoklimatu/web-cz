@@ -13,12 +13,12 @@ img.infographic {
 }
 
 p.caption {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-style: italic;
 }
 
 p.perex {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -27,11 +27,12 @@ p.perex {
 
     h2 {
         margin-top: 0;
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 
     p {
         text-align: left;
+        font-size: 0.91rem;
     }
 }
 
@@ -170,22 +171,17 @@ div.wider-box {
 }
 
 .longread {
-    font-size: 1.1rem;
-
     h2 {
-        font-size: 1.75rem;
         margin-top: 2.5rem;
         margin-bottom: 1rem;
     }
 
     h3 {
-        font-size: 1.4rem;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     }
 
     h4 {
-        font-size: 1.2rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
@@ -193,6 +189,7 @@ div.wider-box {
 
 .sticky-toc {
     margin-bottom: 2rem;
+    font-size: 0.91rem;
 
     h2::before {
         height: 5px;
