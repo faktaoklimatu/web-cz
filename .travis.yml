@@ -26,6 +26,7 @@ env:
 cache:
   bundler: true               # Enable caching of bundler gem packages
   directories:
+  - $TRAVIS_BUILD_DIR/web-core/vendor  # Enable caching installed bundle gems
   - $TRAVIS_BUILD_DIR/web-core/.cache  # Enable caching link checks
   - $TRAVIS_BUILD_DIR/web-core/assets/generated  # Enable caching of generated infographics
 
