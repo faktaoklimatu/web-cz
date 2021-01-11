@@ -53,6 +53,7 @@ $(document).ready(function() {
         tocSelector: '#TOC',
         contentSelector: '.longread',
         headingSelector: 'h2, h3',
+        headingsOffset: -780,
         smoothScroll: false,
     });
     if (document.querySelectorAll("#TOC a").length > 1) {
