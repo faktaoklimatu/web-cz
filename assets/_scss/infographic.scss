@@ -74,16 +74,16 @@ div.longread-box {
     
     h4 {
         color: $c-light-blue;
-        margin-top: 0rem;
+        margin-top: 0;
     }
     p {
         text-align: left;
     }
     div.row {
-        margin: 0.5rem 0rem;
+        margin: 0.5rem 0 0;
     }
     .card {
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -107,13 +107,13 @@ div.wider-box {
         margin-right: 30px;
     }
     .longread-xl-space-left {
-        flex: 3 0 0px;
+        flex: 3 0 0;
     }
     .longread-toc {
         flex: 4 0 240px;
     }
     .longread-xl-space-middle {
-        flex: 3 0 0px;
+        flex: 3 0 0;
     }
     .longread {
         flex: 3 0 640px;
