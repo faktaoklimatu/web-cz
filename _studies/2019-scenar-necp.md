@@ -12,17 +12,17 @@ data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUA
 data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ] ]
 ---
 
-{% include _texts/energeticke-scenare/jak-cist.md %}
+{% include local-includes/energeticke-scenare/jak-cist.md %}
 
 ## Metodické komentáře ke grafice
 
-{% include _texts/energeticke-scenare/rozdeleni-zdroju-2019.md %}
+{% include local-includes/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
 Čísla o výrobě přebíráme přímo ze studie (ve skutečnosti jsou kombinací dvou tabulek, jedna udává výrobu z obnovitelných zdrojů v TJ, druhá výrobu z konvenčních zdrojů v TWh). Predikci instalovaného výkonu studie udává pouze u obnovitelných zdrojů. Kromě zřejmé predikce u jádra tak ve studii chybí odhad pro uhelné a plynové elektrárny.
 
-{% include _texts/energeticke-scenare/emise.md %}
+{% include local-includes/energeticke-scenare/emise.md %}
 
 ## O scénáři NECP
 
