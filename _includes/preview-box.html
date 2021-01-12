@@ -1,6 +1,8 @@
-<div class="longread-box {{ include.class | default: 'highlight-box' }}">
+<div class="longread-box {{ include.class | default: 'preview-box' }}">
 {% assign slugs = include.slug | split: "," %}
+{%- if include.title %}
 <h4>{{ include.title }}</h4>
+{%- endif %}
 {%- if include.text_pre %}
 <div markdown="1">
   {{ include.text_pre }}
