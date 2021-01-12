@@ -66,8 +66,6 @@ CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O.
 
 Důkaz, že je nárůst koncentrace CO<sub>2</sub> v atmosféře skutečně způsobený spalováním, přinesl Keelingův syn Ralph. Ten v roce 1988 objevil způsob, jak velmi přesně měřit koncentraci kyslíku. Jeho měření ukazují na dlouhodobý nepřirozený pokles koncentrace kyslíku v atmosféře. Dnes existují i další vědecké práce, založené mimo jiné na zkoumání izotopových stop, které potvrzují, že oxid uhličitý, který v atmosféře přibývá, pochází ze spalování fosilních paliv. Je proto jisté, že nárůst koncentrace CO<sub>2</sub> je skutečně způsobený člověkem.
 
-Koncentrace CO<sub>2</sub> jsou také částečně ovlivněny pohlcováním části CO<sub>2</sub> v oceánu, což má za následek zvyšování kyselosti mořské vody.
-
 Keelingova metoda měření koncentrací CO<sub>2</sub> spočívá v extrémně přesném měření absorpce specifických vlnových délek infračerveného záření ve vzorku vzduchu. Podrobněji je popsána v článku [_The Story of Atmoshperic CO<sub>2</sub> Measurements_](https://pubs.acs.org/doi/pdf/10.1021/ac1001492) (PDF). Další kontext, včetně vysvětlení měření izotopových stop, najdete v článku [_The Keeling Curve: Carbon Dioxide Measuements at Mauna Loa_](https://www.acs.org/content/acs/en/education/whatischemistry/landmarks/keeling-curve.html).
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
