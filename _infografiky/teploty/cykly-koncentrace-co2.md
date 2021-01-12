@@ -33,26 +33,35 @@ V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu de
 
 ## Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?
 
-Přesnou metodu měření koncentrace CO<sub>2</sub> s přesností 0,1 ppm (tedy 0,00001 %) vyvinul teprve Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože se koncentrace chaoticky měnila podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Franciscu ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů hodně vzdálené. Přesunul se proto doprostřed Tichého oceánu na Mauna Loa na Havaji. Tam jeho měření začalo dávat smysl – koncentrace zůstávala stabilní. Po několika měsících viděl, že hodnoty kolísají během roku – od května do října klesají a po zbytek roku zase stoupají. Pochopil, že pozoruje dýchání celé planety.
-
 {% include preview-box.html
+    class="preview-box highlight-text-box"
     text="Při **fotosyntéze** rostliny spotřebovávají oxid uhličitý z atmosféry a vydávají kyslík. Při **dýchání** naopak kyslík spotřebovávají a vydechují oxid uhličitý.
 
-CO<sub>2</sub> + H<sub>2</sub>O ⟷ O<sub>2</sub> + sacharidy"
+<div class='equation'>
+CO<sub>2</sub> + H<sub>2</sub>O ⟷ O<sub>2</sub> + sacharidy.
+</div>
+"
 %}
+
+Přesnou metodu měření koncentrace CO<sub>2</sub> s přesností 0,1 ppm (tedy 0,00001 %) vyvinul teprve Charles Keeling v roce 1952. Nejprve byl výsledky svých měření překvapen, protože se koncentrace chaoticky měnila podle toho, odkud foukal vítr. Došlo mu, že jeho měření v San Franciscu ovlivňují okolní lesy (fotosyntéza) a továrny (spalování) a že potřebuje měřit na místě, které bude od takových vlivů hodně vzdálené. Přesunul se proto doprostřed Tichého oceánu na Mauna Loa na Havaji. Tam jeho měření začalo dávat smysl – koncentrace zůstávala stabilní. Po několika měsících viděl, že hodnoty kolísají během roku – od května do října klesají a po zbytek roku zase stoupají. Pochopil, že pozoruje dýchání celé planety.
 
 Většina světových lesů se nachází na severní polokouli. V létě mají listnaté stromy listy a převažuje fotosyntéza – rostliny odčerpávají CO<sub>2</sub> z atmosféry a ukládají uhlík do svých kmenů a listů. Na podzim stromy shazují listy, které hnijí a uvolňují CO<sub>2</sub> zpátky.
 
 Kromě tohoto kolísání mezi létem a zimou viděl Keeling také dlouhodobý nárůst koncentrace CO<sub>2</sub>, který přičítal spalování uhlí, ropy a zemního plynu.
 
 {% include preview-box.html
+    class="preview-box highlight-text-box"
     text="**Spalování** spotřebovává kyslík a uvolňuje oxid uhličitý. Při spalování uhlí je reakce jednoduchá:
 
+<p class='equation'>
 C + O<sub>2</sub> ⟶ CO<sub>2</sub>.
+</p>
 
 Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára: 
 
-CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O
+<p class='equation'>
+CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O.
+</p>
 
 Spalování fosilních paliv tedy dlouhodobě odčerpává z atmosféry kyslík a naopak zvyšuje koncentrace oxidu uhličitého."
 %}

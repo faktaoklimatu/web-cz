@@ -88,13 +88,21 @@ div.longread-box {
     }
 }
 
-div.highlight-box {
+div.preview-box {
     float: right;
     clear: right;
     width: 55%;
     margin-left: calc(-25px + 2rem);
     position: relative;
     left: 25px;
+}
+
+div.highlight-text-box {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    border-width: 0px;
+    border-left-width: 2px;
+    background-color: transparent;
 }
 
 div.wider-box {
@@ -124,7 +132,7 @@ div.wider-box {
         flex: 10 0 240px;
     }
 
-    div.highlight-box {
+    div.preview-box {
         width: 60%;
         position: relative;
         left: 40%;
@@ -163,7 +171,7 @@ div.wider-box {
 }
 
 @media (max-width: 575.98px) {
-    div.highlight-box {
+    div.preview-boxbox {
         width: 100%;
         margin-left: 0;
         position: static;
