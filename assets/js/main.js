@@ -35,14 +35,12 @@ $(document).ready(function() {
     // Open the correponding <details> rolldown if the URL target is inside one
     // and scroll browser view to the target element.
     if (location.hash) {
-        try {
-            const targetEl = $(location.hash);
-            const parentDetails = targetEl.parents('details')[0];
-            if (parentDetails) {
-                parentDetails.open = true;
-                targetEl[0].scrollIntoView();
-            }
-        } catch (e) {}
+        const targetEl = $(decodeURIComponent(location.hash));
+        const parentDetails = targetEl.parents('details')[0];
+        if (parentDetails) {
+            parentDetails.open = true;
+            targetEl[0].scrollIntoView();
+        }
     }
 
     // Enable all poppers in the document
