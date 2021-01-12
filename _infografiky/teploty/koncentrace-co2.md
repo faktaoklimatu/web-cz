@@ -27,6 +27,7 @@ dataset:    "koncentrace-co2"
 * V roce 2016 byly v Antarktidě objeveny ledovcové oblasti se stářím ledu okolo 2 miliónů let. Koncentrace CO<sub>2</sub> v bublinkách takto starého ledu se pohybovaly v rozmezí 200–280 ppm. Viz [článek](https://www.nature.com/articles/s41586-019-1692-3) z časopisu _Nature_.
 * Mladší data (0-2 000 let před současností) jsou složením současných měření na Mauna Loa, Hawai a měření z ledovcových vrtů na Jižním pólu ([data Scripps](https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products)).
 * Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa, Hawai, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/).
+* Časovou hustotu údajů o koncentraci CO<sub>2</sub> v atmosféře za posledních 800 000 let ukazuje [animovaná vizualizace](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html) NOAA.
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 
