@@ -228,6 +228,10 @@ div.wider-box {
             list-style-type: lower-alpha;
         }
     }
+
+    .is-active-li .is-active-link, .is-active-li::marker {
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 992px) {
@@ -236,9 +240,5 @@ div.wider-box {
         position: -webkit-sticky;
         top: 56px;
         left: 100px;
-    }
-
-    a.is-active-link {
-        font-weight: bold;
     }
 }
