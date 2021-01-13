@@ -1,15 +1,20 @@
 ---
-layout:     empty
-title:      "O nás"
-slug:       o-nas
-intro:      "Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý."
+layout: empty
+title: "O nás"
+slug: o-nas
+intro: "Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme
+poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni
+lidé. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší
+činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý
+projekt, který může podpořit každý."
 ---
 
 <div class="section">
     <div class="container">
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.intro }}</p>
-        <img src="/assets/img/tym-fakta-o-klimatu.jpg" class="img-fluid" alt="Responsive image", style="margin-bottom: 1rem;">
+        <img src="/assets/img/tym-fakta-o-klimatu.jpg" class="img-fluid" alt="Responsive image" ,
+            style="margin-bottom: 1rem;">
     </div>
 </div>
 
@@ -20,7 +25,7 @@ intro:      "Debata o klimatické změně je komplikovaná a na všech stranách
         {% for item in story %}
         <div class="news-item">
             <div class="d-block d-md-inline-block date">
-                    <p style="font-weight:bold; color: #000080;">{{ item.title}}</p>
+                <p style="font-weight:bold; color: #000080;">{{ item.title}}</p>
             </div>
             <div class="d-inline-block summary">
                 {{ item.text | markdownify }}
@@ -33,20 +38,29 @@ intro:      "Debata o klimatické změně je komplikovaná a na všech stranách
 <div class="section">
     <div class="container">
         <h2>Náši členové</h2>
-        Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změna klimatu týkají. Tedy všem.
-        <div class="card-columns align-items-start mt-2">
+        <div class="lead">
+            Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo
+            komunikací.
+            Chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání
+            všem,
+            kterých se změna klimatu týkají. Tedy všem.
+        </div>
+        <div class="row mt-5">
             {% assign members = site.data.members %}
             {% for item in members %}
-                <div class="card bg-grey">
+            <dic class="col-4 d-flex align-items-stretch">
+                <div class="card bg-grey border-0">
                     <div class="text-center">
-                        <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="Card image cap">
+                        <img class="card-img-top p-2" style="width: 50%; border-radius: 50%"
+                            src="/assets/img/members/{{item.img}}" alt="Card image cap">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{ item.name}}</h5>
-                        <p class="card-subtitle mb-2 font-weight-bold">{{ item.email}}</p>
-                        <p class="card-text">{{ item.summary }}</p>
+                        <h5 class="card-title text-center">{{ item.name}}</h5>
+                        <p class="card-text text-center">{{ item.summary }}</p>
+                        <p class="card-subtitle mb-2 text-center font-italic">{{ item.email}}</p>
                     </div>
                 </div>
+            </dic>
             {% endfor %}
         </div>
     </div>
