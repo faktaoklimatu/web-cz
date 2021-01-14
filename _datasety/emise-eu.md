@@ -18,7 +18,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
     text="V současnosti už jsou pro oba indikátory k dispozici data i za rok 2017, zatím jsme datovou sadu neaktualizovali."
 %}
 
-<div class="row"><div class="col-md-6">
+
 {% include data-header.html
     name="Eurostat"
     description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů (GHG)</glossary> pro rok 2016 v milionech tun <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
@@ -27,7 +27,7 @@ data-orig:  [ [ "Zdrojová data Eurostat", "https://appsso.eurostat.ec.europa.eu
     licence-url="https://creativecommons.org/licenses/by/4.0/"
     licence-proof="https://ec.europa.eu/info/legal-notice_en"
 %}
-</div><div class="col-md-6">
+
 {% include data-header.html
     name="EEA (European Environmental Agency)"
     description="Dataset demo_pjan. Agentura EEA je pověřená tato data shromažďovat od členských států EU, Eurostat tato data jen přebírá (ovšem má lepší rozhraní pro prohlížení dat)."
