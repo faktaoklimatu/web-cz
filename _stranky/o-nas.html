@@ -55,7 +55,13 @@ projekt, který může podpořit každý."
                             src="/assets/img/members/{{item.img}}" alt="Card image cap">
                     </div>
                     <div class="card-body">
+                        {% if item.linkedin%}
+                        <h5 class="card-title text-center">{{ item.name}}
+                            <a class="no-ext-link-icon" href="{{ item.linkedin }}">
+                                <span class="fab fa-fw fa-linkedin"></span></a></h5>
+                        {% else %}
                         <h5 class="card-title text-center">{{ item.name}}</h5>
+                        {% endif %}
                         <p class="card-text text-center">{{ item.summary }}</p>
                         <p class="card-subtitle mb-2 text-center font-italic">{{ item.email}}</p>
                     </div>
