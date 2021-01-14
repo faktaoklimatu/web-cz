@@ -148,7 +148,7 @@ p.perex {
 .longread-box {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0rem 1rem 1.5rem;
     border-left: 0.15rem solid rgba(0,0,0,0.2);
     font-size: 1rem;
     line-height: 1.5em;
@@ -177,7 +177,6 @@ p.perex {
 }
 
 .highlight-text-box {
-    padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
 }
 
@@ -232,15 +231,20 @@ p.perex {
 }
 
 @media (max-width: 767.98px) {
+    .preview-box {
+        width: 60%;
+    }
     .wider-box {
-        width: 100%;
-        margin: 0.5rem 0;
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 0%;
     }
 }
 
 @media (max-width: 575.98px) {
     .preview-box {
-        width: 100%;
+        width: 95%;
+        margin-left: 5%;
         position: static;
     }
 }
