@@ -31,3 +31,6 @@
     - title: Podpořte nás <i class="fas fa-fw fa-heart"></i>
       fundraising: true
       class: no-ext-link-icon
+
+    - title: O nás
+      link: /o-nas
