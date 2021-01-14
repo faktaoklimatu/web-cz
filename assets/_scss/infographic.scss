@@ -146,6 +146,9 @@ p.perex {
 }
 
 .longread-box {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 1rem 0rem 1rem 1.5rem;
@@ -167,21 +170,27 @@ p.perex {
     }
 }
 
-.preview-box {
-    float: right;
-    clear: right;
-    width: 55%;
-    margin-left: calc(-25px + 2rem);
-    position: relative;
-    left: 25px;
+.preview-box, .highlight-text-box {
+    max-width: 350px;
 }
 
 .highlight-text-box {
     font-size: 1.2rem;
 }
 
-.wider-box {
-    width: 70%;
+@media (min-width: 576px) {
+    .preview-box, .highlight-text-box {
+        float: right;
+        clear: right;
+        width: 55%;
+        margin-left: calc(-25px + 2rem);
+        margin-right: 0;
+        position: relative;
+        left: 25px;
+    }
+    .wider-preview-box {
+        max-width: 550px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -207,44 +216,19 @@ p.perex {
         flex: 10 0 240px;
     }
 
-    .preview-box {
+    .preview-box, .highlight-text-box {
         width: 60%;
-        position: relative;
         left: 40%;
         margin-left: calc(-40% + 2rem);
     }
 
-    .wider-box {
+    .wider-preview-box {
+        float: right;
+        clear: right;
         width: 75%;
+        margin-left: calc(-40% + 2rem);
+        margin-right: 0;
         position: relative;
         left: 40%;
-        margin-left: calc(-40% + 2rem);
-    }
-}
-
-@media (max-width: 1199.98px) {
-    .wider-box {
-        width: 90%;
-        margin: 0.5rem 5%;
-        position: static;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .preview-box {
-        width: 60%;
-    }
-    .wider-box {
-        width: 95%;
-        margin-left: 5%;
-        margin-right: 0%;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .preview-box {
-        width: 95%;
-        margin-left: 5%;
-        position: static;
     }
 }

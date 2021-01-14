@@ -34,7 +34,7 @@ V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu de
 ## Jak se měří koncentrace CO<sub>2</sub> a O<sub>2</sub>?
 
 {% include preview-box.html
-    class="preview-box highlight-text-box"
+    class="highlight-text-box"
     text="Při **fotosyntéze** rostliny spotřebovávají oxid uhličitý z atmosféry a vydávají kyslík. Při **dýchání** naopak kyslík spotřebovávají a vydechují oxid uhličitý.
 
 {:.equation}
@@ -49,7 +49,7 @@ Většina světových lesů se nachází na severní polokouli. V létě mají l
 Kromě tohoto kolísání mezi létem a zimou viděl Keeling také dlouhodobý nárůst koncentrace CO<sub>2</sub>, který přičítal spalování uhlí, ropy a zemního plynu.
 
 {% include preview-box.html
-    class="preview-box highlight-text-box"
+    class="highlight-text-box"
     text="**Spalování** spotřebovává kyslík a uvolňuje oxid uhličitý. Při spalování uhlí je reakce jednoduchá:
 
 {:.equation}
