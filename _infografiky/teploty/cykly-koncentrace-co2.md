@@ -37,9 +37,8 @@ V absolutních číslech nemusí nárůst koncentrace CO<sub>2</sub> v řádu de
     class="preview-box highlight-text-box"
     text="Při **fotosyntéze** rostliny spotřebovávají oxid uhličitý z atmosféry a vydávají kyslík. Při **dýchání** naopak kyslík spotřebovávají a vydechují oxid uhličitý.
 
-<div class='equation'>
+{:.equation}
 CO<sub>2</sub> + H<sub>2</sub>O ⟷ O<sub>2</sub> + sacharidy.
-</div>
 "
 %}
 
@@ -53,15 +52,13 @@ Kromě tohoto kolísání mezi létem a zimou viděl Keeling také dlouhodobý n
     class="preview-box highlight-text-box"
     text="**Spalování** spotřebovává kyslík a uvolňuje oxid uhličitý. Při spalování uhlí je reakce jednoduchá:
 
-<p class='equation'>
+{:.equation}
 C + O<sub>2</sub> ⟶ CO<sub>2</sub>.
-</p>
 
 Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára: 
 
-<p class='equation'>
-CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O.
-</p>"
+{:.equation}
+CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O."
 %}
 
 Důkaz, že je nárůst koncentrace CO<sub>2</sub> v atmosféře skutečně způsobený spalováním, přinesl Keelingův syn Ralph. Ten v roce 1988 objevil způsob, jak velmi přesně měřit koncentraci kyslíku. Jeho měření ukazují na dlouhodobý nepřirozený pokles koncentrace kyslíku v atmosféře. Dnes existují i další vědecké práce, založené mimo jiné na zkoumání izotopových stop, které potvrzují, že oxid uhličitý, který v atmosféře přibývá, pochází ze spalování fosilních paliv. Je proto jisté, že nárůst koncentrace CO<sub>2</sub> je skutečně způsobený člověkem.
