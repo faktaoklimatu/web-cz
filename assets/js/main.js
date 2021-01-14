@@ -48,17 +48,17 @@ $(document).ready(function() {
         $('[data-toggle="popover"]').popover();
     }, 500);
 
-    // Render table if contents, if it is non-trivial.
-    tocbot.init({
-        tocSelector: '#TOC',
-        contentSelector: '.longread',
-        headingSelector: 'h2, h3',
-        headingsOffset: -780,
-        smoothScroll: false,
-    });
-    if (document.querySelectorAll("#TOC a").length > 1) {
-        document.querySelector(".longread-toc").classList.remove("invisible");
+    // Render table of contents if it is non-trivial.
+    if ($('.longread h2, .longread h3').length > 1) {
+        tocbot.init({
+            tocSelector: '#TOC',
+            contentSelector: '.longread',
+            headingSelector: 'h2, h3',
+            headingsOffset: -780,
+            smoothScroll: false,
+        });
+        $('.longread-toc').removeClass('invisible');
     } else {
-        document.querySelector(".longread-toc").classList.add("longread-toc-none");
+        $('.longread-toc').addClass('longread-toc-none');
     }
 });
