@@ -1,0 +1,39 @@
+- name: "Ondráš Přibyla"
+  summary: "Řeším hlavně strategii, rád se dostanu k analytické práci a neúspěšně se snažím vyhýbat administrativě."
+  img: "ondras-pribyla.png"
+  email: "ondras.pribyla@faktaoklimatu.cz"
+  category: "spravni-rada"
+  linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
+
+- name: "Martin Ukrop"
+  summary: "Starám se o web i všechny ostatní technologie. Snažím se udržet naši komunikaci konzistentní a spolehlivou."
+  img: "martin-ukrop.jpg"
+  category: "spravni-rada"
+  email: "martin.ukrop@faktaoklimatu.cz"
+
+- name: "Jeňa Krčál"
+  summary: "Zpracovávám analýzy a podkladová data, obzvláště v oblasti energetiky a emisí."
+  img: "jena-krcal.png"
+  category: "spravni-rada"
+  email: "jan.krcal@faktaoklimatu.cz"
+
+- name: "Tom Protivínský"
+  summary: "Věnuji se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn."
+  img: "tomas-protivinsky.jpg"
+  category: "spravni-rada"
+  email: "tomas.protivinsky@faktaoklimatu.cz"
+
+- name: "Kristína Zákopčanová"
+  summary: "Zabývám se vizuální komunikací dat, zpracováním jednotlivých grafik a grafických výstupů."
+  img: "kristi-zakopcanova.jpg"
+  category: "spravni-rada"
+  email: "kristi.zakopcanova@faktaoklimatu.cz"
+  linkedin: "https://www.linkedin.com/in/kristina-zakopcanova/"
+
+- name: "Dobrovolník"
+  category: "dobrovolnik"
+  summary: "Občas se zůčastním nějakého pracovního setkání a pomůžu udělat rešerši, naprogramovat komponentu na webu, nebo napsat text. A je nás <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'> víc</a>."
+  img: "dobrovolnik.png"
+
+
+
