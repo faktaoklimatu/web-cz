@@ -171,7 +171,11 @@ p.perex {
 }
 
 .preview-box, .highlight-text-box {
-    max-width: 350px;
+    max-width: 300px;
+}
+
+.double-preview-box {
+    max-width: 590px;
 }
 
 .highlight-text-box {
@@ -182,14 +186,19 @@ p.perex {
     .preview-box, .highlight-text-box {
         float: right;
         clear: right;
-        width: 55%;
+        min-width: 320px;
+        width: 50%;
+        max-width: 400px;
         margin-left: calc(-25px + 2rem);
         margin-right: 0;
         position: relative;
         left: 25px;
     }
-    .wider-preview-box {
-        max-width: 550px;
+}
+
+@media (min-width: 992px) {
+    .preview-box, .highlight-text-box {
+        min-width: 350px;
     }
 }
 
@@ -222,13 +231,15 @@ p.perex {
         margin-left: calc(-40% + 2rem);
     }
 
-    .wider-preview-box {
+    .double-preview-box {
         float: right;
         clear: right;
-        width: 75%;
-        margin-left: calc(-40% + 2rem);
+        min-width: 550px;
+        width: 80%;
+        max-width: 700px;
+        margin-left: calc(-45% + 2rem);
         margin-right: 0;
         position: relative;
-        left: 40%;
+        left: 45%;
     }
 }
