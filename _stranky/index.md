@@ -171,7 +171,7 @@ Debata o klimatické změně je komplikovaná a na všech stranách plná zbyte�
 {:.lead}
 Jsme tým profesionálů zabývajících se různými obory – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.
 
- <a href="/o-nas" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i>Náš příběh, naši členové</a>
+ <a href="/o-nas" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i>O nás a naší práci</a>
 
 <!--
 <div class="row">
