@@ -1,15 +1,17 @@
 # Local Jekyll config file (will be appended after master)
 
 # Site settings
+title: "Fakta o klimatu"
 url: https://faktaoklimatu.cz
 email: info@faktaoklimatu.cz
+github: faktaoklimatu/web-cz
 twitter: "faktaoklimatu"
 newsletter: "https://tinyletter.com/faktaoklimatu/subscribe"
 fundraising: "https://www.darujme.cz/projekt/1203742"
 author: faktaoklimatu.cz
+copyright: "&copy; 2021 Otevřená data o klimatu, z. ú."
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
-test: infografiky
 
 # Set permalinks in local language
 collections:
