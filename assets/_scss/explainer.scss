@@ -1,13 +1,32 @@
+.cover-header {
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > .section {
+        background: linear-gradient(rgba(255, 255, 255, 0.8) 80%, #f7f7f7);
+        text-shadow: 0 0 6px rgba(0, 0, 0, .125);
+    }
+}
+
+.explainer-perex {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
 .explainer-metadata {
     font-size: 1.1rem;
     margin-top: 1rem;
 
-    .perex {
-        margin-bottom: 2.5rem;
-    }
-
     .author {
         font-weight: bold;
         padding-right: 1.5rem;
+    }
+
+    .tags {
+        margin-top: 1rem;
     }
 }
