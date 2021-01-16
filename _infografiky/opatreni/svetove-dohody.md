@@ -69,7 +69,7 @@ V roce 2010 vznikl mezinárodní fond, jehož smyslem je **financování klimati
 ### 2015 COP + 2016 – Pařížská dohoda 
 Pařížská dohoda je mezinárodní dohoda uzavřená pod Rámcovou úmluvou OSN o změně klimatu a jejím cílem je mezinárodního snaha o omezení emisí skleníkových plynů. Dohoda byla sjednána v prosinci 2015 v Paříži (COP21), schválena všemi 195 smluvními stranami a podepsaná 12. prosince 2016. **Všechny zúčastněné státy se dohodly, že budou přijímat taková opatření, která udrží růst globální teploty pod 2 stupni Celsia.** Současně budou vzhledem k vážným rizikům usilovat o to, aby globální teplota nevzrostla o víc než 1,5 stupně. 
 
-Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradí nynější kjótský protokol z roku 1997. Prezident Trump dohodu vypověděl na základě toho, že chce podporovat průmyslová odvětví. USA tak od dohody odstoupily 4. listopadu 2020, nicméně nastupující prezident Joe Biden již prohlásil, že se USA k dohodě znovu připojí.
+Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradí nynější kjótský protokol z roku 1997. Minulý prezident USA Donald Trump dohodu vypověděl na základě toho, že chce podporovat průmyslová odvětví. USA tak od dohody odstoupily 4. listopadu 2020, nicméně nastupující prezident Joe Biden již prohlásil, že se USA k dohodě znovu připojí.
 
 Evropský parlament smlouvu schválil 4. října 2016 a k 5. říjnu se podařilo dosáhnout cíle, aby dohodu ratifikovalo 55 zemí, které se celkově podílejí na více než 55 procentech emisí skleníkových plynů světa. Dohoda z Paříže je takzvanou smíšenou dohodou, některé její prvky jsou v odpovědnosti celé EU, za jiné odpovídají členské státy unie.
 
