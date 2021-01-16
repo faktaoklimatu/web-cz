@@ -24,7 +24,7 @@ Konference se uskutečnila ve dnech 12.–23. února 1979 v Ženevě, kde sídl�
 - [International Council of Scientific Unions, ICSU](http://www.icsu.org/)
  
 ### 1988 – Vznik IPCC 
-WMO a Program OSN pro životní prostředí (UNEP) zakládají Mezinárodní panel pro změny klimatu (IPCC). Tento vědecký panel od té doby vydává každých pět let souhrnný report, poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích), jejich potenciálních dopadech a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsensuálně zástupci vlád zemí (cca 120 zástupců). 
+WMO a Program OSN pro životní prostředí (UNEP) zakládají Mezivládní panel pro změny klimatu (IPCC). Tento vědecký panel od té doby vydává každých pět let souhrnný report, přehled poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích) a jejich potenciálních dopadech, a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (Summary for Policymakers, SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsenzuálně zástupci vlád zapojených zemí (cca 120 zástupců). 
  
 **Zdroje:**
 - [Web IPCC](https://www.ipcc.ch/)
@@ -41,7 +41,7 @@ UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezen�
 [Agenda 21](https://web.archive.org/web/20140730190755/http://habitat.igc.org/agenda21/)
  
 ### 1997 – Kjótský protokol 
-Kjótský protokol o snížení emisí skleníkových plynů je protokolem k Rámcové úmluvě OSN o změnách klimatu (UNFCCC), která byla přijata v červnu 1992 v Riu de Janeiro a vstoupila v platnost v březnu 1994. Přijetím Kjótského protokolu o snížení emisí plynů způsobujících skleníkový efekt skončila 11. prosince 1997 konference OSN o změnách podnebí v japonském Kjótu. Průmyslové země se v ní zavázaly snížit emise skleníkových plynů o 5,2 % v porovnání s rokem 1990. Protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a EU jako celek (před rozšířením v roce 2004). USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, a protože se ke konkrétnímu závazku snižování emisí nepřipojily Čína a Indie. Dokument měl od počátku řadu kritiků. Jedni mu vyčítají, že je vzhledem k vynaloženým nákladům neefektivní, jiní jej zase kritizují jako málo ambiciózní. Svého cíle protokol nedosáhl. Dohoda již neplatí, nahrazuje ji nová globální dohoda o klimatu, která byla uzavřena na konferenci v Paříži v prosinci 2015. 
+Kjótský protokol o snížení emisí skleníkových plynů je protokolem k Rámcové úmluvě OSN o změnách klimatu (UNFCCC), která byla přijata v červnu 1992 v Riu de Janeiro a vstoupila v platnost v březnu 1994. Přijetím Kjótského protokolu o snížení emisí plynů způsobujících skleníkový efekt skončila 11. prosince 1997 konference OSN o změnách podnebí v japonském Kjótu (COP 3). Průmyslové země se v ní zavázaly snížit emise skleníkových plynů o 5,2 % v porovnání s rokem 1990. Protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a EU jako celek (před rozšířením v roce 2004). USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, a protože se ke konkrétnímu závazku snižování emisí nepřipojily Čína a Indie. Dokument měl od počátku řadu kritiků. Jedni mu vyčítají, že je vzhledem k vynaloženým nákladům neefektivní, jiní jej zase kritizují jako málo ambiciózní. Svého cíle protokol nedosáhl a dnes již neplatí, nahrazuje jej nová globální dohoda o klimatu, která byla uzavřena na konferenci v Paříži v prosinci 2015 (COP 21). 
  
 **Zdroje:**
 - [UNFCCC, OSN](https://unfccc.int/resource/docs/convkp/kpeng.html)
@@ -53,7 +53,7 @@ Systém začal být uplatňován v roce 2005 s cílem podpořit snižování emi
 
 V letech 2013–2020 se obchodování s povolenkami účastní více než 11 000 firem. Patří mezi ně elektrárny a spalovací zařízení s výkonem nad 20 MW, rafinérie, koksovny, železárny a ocelárny, cementárny, výrobci skla, keramiky a cihel, celulózky a papírny, výrobci hliníku a chemický průmysl. Systém EU ETS pokrývá 45 procent všech emisí oxidu uhličitého v EU.
 
-Systém má fungovat do roku 2020, kdy se dovršuje reforma, která řeší např. přebytek povolenek a snižující se motivaci investování do čistých technologií. Od roku 2021 navrhuje Evropská komise udělat mnohé změny (např. revizi bezplatného přidělování povolenek) a zavést podpůrné mechanismy - Fond inovací a Modernizační fond. 
+V roce 2020 proběhla reforma, která řeší například přebytek povolenek a snižující se motivaci investování do čistých technologií. Od roku 2021 navrhuje Evropská komise udělat mnohé změny (např. revizi bezplatného přidělování povolenek) a zavést podpůrné mechanismy – Fond inovací a Modernizační fond. 
  
 **Zdroje:**
 - [Evropský parlament, EP](https://www.europarl.europa.eu/news/cs/headlines/society/20170213STO62208/evropsky-system-pro-obchodovani-s-emisemi-ets-a-jeho-reforma)
@@ -64,7 +64,7 @@ Systém má fungovat do roku 2020, kdy se dovršuje reforma, která řeší nap�
 V roce 2010 vznikl mezinárodní fond, jehož smyslem je financování klimatických opatření v průmyslově méně rozvinutých zemích světa. Fond je součástí klimatické politiky zavazující průmyslově rozvinuté země přispívat finance, které jsou využívány k zajištění klimatických opatření v méně průmyslově rozvinutých zemích světa. Fond má disponovat 100 miliardami dolarů v roce 2020. Sídlo fondu je v Jižní Koreji. 
  
 **Zdroje:**
-- Web fondu: https://www.greenclimate.fund/
+- [Zelený klimatický fond, GCF](https://www.greenclimate.fund/)
  
 ### 2015 COP + 2016 – Pařížská dohoda 
 Pařížská dohoda je mezinárodní dohoda uzavřená pod Rámcovou úmluvou OSN o změně klimatu a jejím cílem je mezinárodního snaha o omezení emisí skleníkových plynů. Dohoda byla sjednána v prosinci 2015 v Paříži (COP21), schválena všemi 195 smluvními stranami a podepsaná 12. prosince 2016. Všechny zúčastněné státy se dohodly, že budou přijímat taková opatření, která udrží růst globální teploty pod 2 stupni Celsia. Současně budou vzhledem k vážným rizikům usilovat o to, aby globální teplota nevzrostla o víc než 1,5 stupně. 
