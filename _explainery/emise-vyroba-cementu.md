@@ -7,7 +7,8 @@ author:      "Ondráš Přibyla"
 weight:      73
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
-perex:     "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody a omezení globálního oteplování na 1,5°C nebo 2°C bude nutné dramatické snížení emisí z výroby cementu, což se zatím příliš nedaří."
+cover:       cover/concrete.jpg
+perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody a omezení globálního oteplování na 1,5 °C nebo 2 °C bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
 ---
 
 ## Co je cement?
@@ -51,6 +52,6 @@ Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě
 
 ## Hlavní zdroje
 
-- <https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change>
-- <http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf>
-- <https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf>
+- Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
+- http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf
+- https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf
