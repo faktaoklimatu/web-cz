@@ -29,7 +29,10 @@ Obrázky jednotlivých grafik (pouze PDF) nahrávejte do stejné složky jako in
 
 _Fakta o klimatu_ lze vyvíjet a testovat i lokálně na vlastním stroji. Můžete tak okamžitě vidět, jak bude například nová infografika, stránka datasetu nebo studie vypadat na živém webu. Zároveň lze experimentovat například s novým typem obsahu, stylem stránek atd.
 
-Aktuálně podporujeme dva způsoby lokálního vývoje: pomocí kontejnerů (preferovaný způsob), nebo ruční instalací nutných balíčků. Oba způsoby jsme prozatím ozkoušeli a fungují pouze na populárních linuxových distribucích (Fedora, Ubuntu atd.).
+Aktuálně podporujeme dva způsoby lokálního vývoje:
+- pomocí kontejnerů (preferovaný způsob), nebo
+- ruční instalací nutných balíčků.
+Oba způsoby jsme prozatím ozkoušeli a fungují na populárních linuxových distribucích (Fedora, Ubuntu atd.)
 
 #### Kontejnery
 
@@ -70,13 +73,27 @@ Kontejner zastavíte stisknutím <kbd>Ctrl</kbd>+<kbd>C</kbd>. Znovu jej spustí
 
 **Poznámka:** Pokud přidáváte novou stránku, např. novou infografiku, je potřeba kontejner zastavit a znovu spustit, aby se vygenerovaly všechny potřebné soubory. Pokud pouze upravujete texty, není třeba kontejner restartovat.
 
-#### Ruční instalace
+#### Klasický local build s ruční instalací balíčků
 
 Je k tomu potřeba si připravit potřebné nástroje, doporučujeme postupovat podle tohoto [návodu](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) (v případě Ubuntu 18.04 nutno nejdříve nainstalovat balíčky `build-essential libpng-dev ruby-dev zlib1g-dev`). Dále je potřeba mít nainstalovaný vektorový editor [Inkscape](https://inkscape.org/) verze alespoň 1.0, který se používá na konverzi infografik.
 
-Poté již stačí v kořenové složce projektu spustit příkaz `make local`, který sestaví, co je potřeba, zpřístupní web na adrese <http://localhost:4000> a následně bude monitorovat soubory a v případě jejich změny automaticky sestaví novou verzi stránky.
+Na Ubuntu 20.10 je instalace prerekvizit snadná:
+```
+sudo apt install jekyll ruby bundler inkscape build-essential
+```
 
-Po provedení všech změn nezapomeňte pushnout, ideálně do samostatné větve u které následně požádáte o *Pull Request*, aby existovala možnost práci zkontrolovat.
+Poté již stačí v kořenové složce projektu spustit příkaz `make -j local` (`-j` pro vícevláknový běh, cca +25% rychlejší), který sestaví, co je potřeba, spustí lokální webserver na adrese <http://localhost:4000> a následně monitoruje soubory a v případě jejich změny automaticky sestaví novou verzi stránky.
+
+### Workflow
+1. natáhnout si změny z origin repa: `git pull`
+1. local build: `make -j local`
+1. před úpravama vytvořit samostatnou větev: `git checkout -b mojenovavetev`
+1. editovat, upravovat, přidávat, odstraňovat...
+1. promítnout změny ve všech souborech: `git add .`
+1. commit s [vhodným komentářem](https://github.com/erlang/otp/wiki/writing-good-commit-messages): `git commit -am 'vhodný komentář'`
+1. ověřit, že vše OK: `git status`
+1. pushnout na server: `git push`
+1. založit *Pull Request* tu na GitHubu, aby existovala možnost práci zkontrolovat.
 
 ### Jak nasadit novou verzi
 
