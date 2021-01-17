@@ -7,8 +7,8 @@ author:      "Jakub Zamouřil"
 weight:      74
 tags-scopes: [ evropa ]
 tags-topics: [ opatreni ]
-# cover-image: cover/concrete.jpg
-perex:     "Evropská komise v prosinci 2020 představila Evropskou zelenou dohodu, která nastiňuje klimatické ambice EU na příštích 30 let. Co tato dohoda obsahuje?"
+cover:       cover/evropska-zelena-dohoda.jpg
+perex:       "Evropská komise v prosinci 2020 představila Evropskou zelenou dohodu, která nastiňuje klimatické ambice EU na příštích 30 let. Co tato dohoda obsahuje?"
 ---
 
 ## Jaké jsou hlavní cíle dohody?
