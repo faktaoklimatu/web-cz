@@ -178,6 +178,13 @@ p.caption {
     font-size: 1.2rem;
 }
 
+div.longread-figure {
+    margin: 2rem 0rem;
+    img {
+        width: 100%;
+    }
+}
+
 @media (min-width: 576px) {
     .preview-box, .highlight-text-box {
         float: right;

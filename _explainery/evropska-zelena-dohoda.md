@@ -19,6 +19,8 @@ Vedlejší projevy této transformace budou i výrazné snížení znečištěn�
 
 Evropská komise připouští, že k zastavení globální změny klimatu nestačí, aby Evropa v této oblasti jednala sama. Proto komise plánuje využít politický vliv sjednocené EU, její expertízu v technické oblasti a její finanční prostředky k podpoře ostatních světových zemí, aby směřovaly ke stejnému cíli. Zároveň uznává, že může být nutné chránit evropské zdroje a konkurenceschopnost vůči zemím, které by odmítly postupovat v souladu s klimatickými cíli, například vyšším zdaněním výrobků dovezených z těchto zemí.
 
+{% include figure.html name="zavazky.jpg" %}
+
 V současnosti je Evropská zelená dohoda [24-stránkový dokument](https://ec.europa.eu/info/sites/info/files/european-green-deal-communication_en.pdf), který popisuje ambice v jednotlivých odvětvích a způsoby, jakým jich může být dosaženo.
 
 ## Jaké konkrétní kroky dohoda navrhuje?
@@ -29,6 +31,8 @@ V praxi dohoda cílí nejvíce na energetický sektor, který v EU produkuje nej
 
 Pomoci k dosažení klimatické neutrality v energetickém sektoru má i zvyšování efektivity spotřebičů a snižování energetické náročnosti budov, což celkově sníží nároky na množství vyrobené energie. V plánu je také kompletní propojení a digitalizace evropských energetických sítí.
 
+{% include figure.html name="principy.jpg" %}
+
 ### Průmysl
 
 V průmyslové oblasti dohoda cílí na výzkum a inovace vedoucí k dlouhodobé udržitelnosti. Zatímco v současnosti se většina výrobků vyrobí z prvotních surovin a na konci své životnosti jsou vyhozeny bez dalšího využití (pouze 12 % výrobků pochází z recyklovaných materiálů), cílem této dohody je do roku 2050 v co nejvíce odvětvích dosáhnout cirkulární ekonomiky, tedy využívání odpadu a recyklovaných materiálů k výrobě nových výrobků, zvyšování jejich životnosti a minimalizace množství nevyužitelného odpadu. Toto opatření zároveň sníží nutnost těžby nerostných surovin a tím uleví životnímu prostředí.
@@ -38,6 +42,8 @@ Evropská unie bude také výrazně investovat do výzkumu a vývoje nových udr
 ### Zemědělství
 
 Dohoda cílí i na zvýšení dlouhodobé udržitelnosti v oblasti zemědělství, rozšíření ekologického zemědělství a snížení množství užívaných pesticidů a dalších chemikálií. Důležitým bodem je omezení či zákaz dovozu jídla, které nebude splňovat standardy Evropské unie. Naopak ale v plánu chybí zmínka, zda je v plánu omezování živočišné produkce, jejíž snížení označila [nedávná vědecká zpráva](https://www.czechsight.cz/pres-11-000-vedcu-podporilo-vyhlaseni-klimaticke-nouze/) jako důležitou součást boje proti klimatickým změnám.
+
+{% include figure.html name="strategie.jpg" %}
 
 ### Doprava
 
@@ -62,6 +68,8 @@ Protože každá země má své unikátní problémy a prostředky, každá zem�
 Opatření popsaná v tomto plánu budou vyžadovat vysoké investice – Evropská komise odhaduje, že k splnění současných cílů bude nutné ročně investovat zhruba 260 miliard eur, což je přibližně 1,5 % evropského HDP. Tyto investice budou financovány z kombinace rozpočtu EU, národních rozpočtů a soukromých investic za pomoci Evropské investiční banky a zisků z prodeje emisních povolenek.
 
 Tento investiční plán bude vyžadovat rozsáhlé změny v systémech evropského financování a [je označován jako "ambiciózní"](https://eeb.org/library/game-changer-financing-the-european-green-deal/); přesto Evropskou zelenou dohodu některé ekologické organizace považují za nedostatečnou a [volají po zvýšení jejích cílů](https://www.greenpeace.org/czech/clanek/5252/evropsky-green-deal-je-krok-spravnym-smerem-ale-sam-o-sobe-nestaci/). Pro srovnání, v 90. letech investovala Česká republika i [více než 2 % svého HDP](https://ekolist.cz/cz/zpravodajstvi/zpravy/investice-do-zivotniho-prostredi-stagnuji-tvrdi-statistici) do obnovy a ochrany životního prostředí poškozeného totalitním režimem – tyto investice vedly např. k odsíření uhelných elektráren či modernizaci těžkého průmyslu a zpracování odpadů, což značně zlepšilo místní kvalitu ovzduší i zdraví obyvatel.
+
+{% include figure.html name="rizika.jpg" %}
 
 ## Co si EU od této dohody slibuje?
 
