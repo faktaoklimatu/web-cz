@@ -7,7 +7,7 @@
 <body>
   {% include navigation.html %}
   <main role="main">
-    <div class="section">
+    <div class="section explainer-cover">
       <div class="container clearfix">
         <div class="row justify-content-center">
           <div class="col-12 col-xl-10">
@@ -18,9 +18,9 @@
             </p>
             {% endif %}
             <div class="explainer-metadata">
+              {% include tags.html tags=page.tags link="true" %}
               <span class="author">{{ page.author }}</span>
               <span class="date">{{ page.published | date: "%-d. %-m. %Y" }}</span>
-              {% include tags.html tags=page.tags link="true" %}
               {% assign download_path = site.baseurl | append: "/assets/studies/" | append: page.slug %}
             </div>
           </div>

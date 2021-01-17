@@ -1,5 +1,9 @@
+.explainer-cover {
+    padding-bottom: 1rem;
+}
+
 .cover-header {
-    padding-top: 30%;
+    padding-top: 33.33%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,21 +11,27 @@
 
 .explainer-perex {
     margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.4rem;
     line-height: 1.5em;
 }
 
 .explainer-metadata {
     font-size: 1.1rem;
-    margin-top: 1rem;
+    text-align: right;
 
     .author {
         font-weight: bold;
-        padding-right: 1.5rem;
+    }
+
+    .date::before {
+        content: "•";
+        font-weight: bold;
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
 
     .tags {
-        margin-top: 1rem;
+        float: left;
     }
 }
