@@ -7,9 +7,6 @@
 <body>
   {% include navigation.html %}
   <main role="main">
-    {% if page.cover %}
-    <div class="cover-header" style="background-image: url(/assets/img/{{ page.cover }});">
-    {% endif %}
     <div class="section">
       <div class="container clearfix">
         <div class="row justify-content-center">
@@ -31,6 +28,7 @@
       </div>
     </div>
     {% if page.cover %}
+    <div class="cover-header" style="background-image: url(/assets/img/cover/{{ page.cover }});">
     </div>
     {% endif %}
     <div class="section">
