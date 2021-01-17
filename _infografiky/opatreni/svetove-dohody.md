@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Vývoj mezinárodního úsilí v ochraně klimatu"
+title:      "Mezinárodní klimatické dohody"
 slug:       "svetove-dohody"
 redirect_from: "/svetove-dohody"
 published:  2020-10-25
