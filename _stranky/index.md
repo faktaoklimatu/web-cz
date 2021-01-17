@@ -126,34 +126,37 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
 
 <div id="carousel_successes" class="carousel slide mb-4 mt-4" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carousel_successes" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel_successes" data-slide-to="1"></li>
-    <!-- <li data-target="#carousel_successes" data-slide-to="2"></li> -->
+    {%- assign sorted_success = site.data.successes | sort: "priority" | reverse -%}
+    {%- for item in sorted_success %}
+    <li data-target="#carousel_successes" data-slide-to="{{- forloop.index0 -}}"{%- if forloop.index0==0 %} class="active"{%- endif -%}> </li>
+    {%- endfor %}
   </ol>
   <div class="carousel-inner">
-    <a href="https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721" class="no-ext-link-icon carousel-item active" data-interval="6000">
-      <img src="{{ site.baseurl }}/assets/img/carousel-senat.jpg" class="d-block w-100" alt="Fakta o klimatu v Senátu" />
+    {%- for item in sorted_success -%}
+    {%- if item.link %}
+    <a href="{{- item.link -}}" class="no-ext-link-icon carousel-item{%- if forloop.index0==0 %} active{%- endif -%}" data-interval="6000">
+    {%- else %}
+    <div class="carousel-item {%- if forloop.index0==0 %} active{%- endif -%}" data-interval="6000">
+    {%- endif %}
+      {%- if item.img %}
+      <img src="{{ site.baseurl }}/assets/img/{{- item.img -}}" class="d-block w-100" alt="{{- item.title -}}" />
+      {%- else %}
+      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: empty slide">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#555"></rect>
+        <text x="50%" y="50%" fill="#333" dy=".3em">Bez obrázku</text>
+      </svg>
+      {%- endif %}
       <div class="carousel-caption d-none d-md-block">
-        <h5>Fakta o klimatu v Senátu</h5>
-        <p>Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v Senátu Parlamentu ČR, aby podpořil kvalitní debatu o transformaci energetiky.</p>
+        <h5>{{- item.title -}}</h5>
+        <p>{{- item.summary -}}</p>
       </div>
+    {%- if item.link %}
     </a>
-    <a href="https://www.irozhlas.cz/veda-technologie/priroda/klima-data-fakta-o-klimatu_2002060600_jab" class="no-ext-link-icon carousel-item" data-interval="6000">
-      <img src="{{ site.baseurl }}/assets/img/carousel-media.png" class="d-block w-100" alt="Naše práce v médiích" />
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Naše práce v médiích</h5>
-        <p>Za jeden z největších úspěchů považujeme, že data a grafiky našeho projektu přebírají česká a slovenská média.</p>
-      </div>
-    </a>
-    <!--
-    <div class="carousel-item" data-interval="6000">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Atlas klimatické změny</h5>
-        <p>Z našich dat a grafik jsme připravili první ucelenou publikaci, Atlas klimatické změny. Brzy začne její distribuce do škol a k zájemcům o téma klimatické změny.</p>
-      </div>
+    {%- else %}
     </div>
-    -->
+    {%- endif %}
+    {%- endfor %}      
   </div>
   <a class="carousel-control-prev" href="#carousel_successes" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
