@@ -34,7 +34,7 @@ Datová sada obsahuje jen měsíční průměry měření, detailní denní a t�
 
 {% include data-header.html
     name="Scripps Institution of Oceanography"
-    description="Macfarling Meure, C. et al., 2006: Law Dome CO2, CH4 and N2O ice core records extended to 2000 years BP. Geophysical Research Letters, 33."
+    description="MacFarling Meure, C. et al., 2006: Law Dome CO2, CH4 and N2O ice core records extended to 2000 years BP. Geophysical Research Letters, 33."
     url="https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products.html"
     doi="https://doi.org/10.1029/2006GL026152"
     licence="zdarma k použití, vyžaduje odkázání zdroje"
@@ -61,7 +61,7 @@ Jsou současná měření a historická data srovnatelná? Měřené hodnoty z b
     licence-proof="https://www1.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt"
 %}
 
-V rámci projektu EPICA (European Project for Ice Coring in Antartica) byly získány nejstarší vzorky ledu pro měření koncentrace CO<sub>2</sub> v rámci tohoto datasetu. Ty pocházejí ze dvou vrtů na Antarktidě:
+V rámci projektu EPICA (European Project for Ice Coring in Antarctica) byly získány nejstarší vzorky ledu pro měření koncentrace CO<sub>2</sub> v rámci tohoto datasetu. Ty pocházejí ze dvou vrtů na Antarktidě:
 
 * Epica-DML, u německé Kohnovy stanice (75°00′06″S; 00°04′04″E, hloubka vrtu 2 774 m).
 * Dome C, u francouzsko-italské stanice Concordia (75°06′04″S; 123°20′52″E, hloubka vrtu 3 270 m).

@@ -28,7 +28,7 @@
         {% if tag.description %}
           <span class="lead">{{ tag.description | markdownify }}</span>
         {% else %}
-          <p class="lead">Všechny infografiky, studie a datasety týkajíci se {% if tag.is-scope %}oblasti{% else %}tématu{% endif %} "{{ tag.name-long }}".</p>
+          <p class="lead">Všechny infografiky, studie a datasety týkající se {% if tag.is-scope %}oblasti{% else %}tématu{% endif %} "{{ tag.name-long }}".</p>
         {% endif %}
         {% for col in page.collections %}
           <h2>{% if col[0] == 'studie' %}Studie a rešerše{% else %}{{ col[0] }}{% endif %} <small class="text-secondary">({{ col[1]|size }})</small></h2>

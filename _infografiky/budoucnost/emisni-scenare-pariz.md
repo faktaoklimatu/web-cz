@@ -30,7 +30,7 @@ Zobrazené scénáře předpokládají pokles emisí metanu přibližně na polo
 
 ## Co je započítáno v historických emisích CO<sub>2</sub>?
 
-Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plyněch a jejich cyklech. Zobrazená data obsahují:
+Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plynech a jejich cyklech. Zobrazená data obsahují:
 
 * emise ze spalování fosilních paliv (uhlí, ropa, plyn),
 * emise z průmyslových procesů (zejména výroba cementu, ale i další oxidační procesy),

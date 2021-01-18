@@ -20,7 +20,7 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 * Zesílení oteplování nad pevninou a na severní polokouli je způsobeno zpětnými vazbami v klimatickém systému a je dobře modelováno současnými klimatickými modely. Už v roce 1979 shrnovala [Charneyho zpráva](/studie/1979-charneyho-zprava) výsledky tehdejších klimatických modelů a autoři konstatovali: "…pokud dojde ke zdvojnásobení koncentrace CO<sub>2</sub> v atmosféře a dosažení termodynamické rovnováhy, dojde k oteplení o 2–3,5 °C, s vyššími nárůsty v severních zeměpisných šířkách."
 
-* Data pocházejí z [NASA GISS](https://data.giss.nasa.gov/gistemp/), kde dlouhodobě sbírají teplotní data z měřicích stanic na pevnině i na moři. Datové řady začínají rokem 1880, my jsme se rozhodli použít data od roku 1961, aby je bylo možné srovnát s teplotami pro ČR od ČHMÚ, která začínají rokem 1961.
+* Data pocházejí z [NASA GISS](https://data.giss.nasa.gov/gistemp/), kde dlouhodobě sbírají teplotní data z měřicích stanic na pevnině i na moři. Datové řady začínají rokem 1880, my jsme se rozhodli použít data od roku 1961, aby je bylo možné srovnat s teplotními daty pro ČR od ČHMÚ, která začínají rokem 1961.
 
 * Konkrétním příkladem místa s velkým nárůstem teploty jsou ostrovy v Severním ledovém oceánu – Špicberky, nebo Země Františka Josefa. Na Špicberkách se zvýšila průměrná roční teplota o 3,7 °C, v Zemi Františka Josefa o 4,9 °C. Příkladem místa, které zaznamenalo pokles teploty  (přibližně o 1 °C od roku 1961) je stanice Halley (75,45S, 26,217W) na pobřeží Weddellova moře. Antarktida jako kontinent se ale mírně otepluje.
 
