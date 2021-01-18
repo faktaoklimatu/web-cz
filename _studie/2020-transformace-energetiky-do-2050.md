@@ -41,7 +41,7 @@ V [první kapitole]({{ page.study-pdf }}#page=57) zprávy jsou podrobněji disku
 ### Srovnávané scénáře
 
 * **Základní scénář** (_Baseline Energy Scenario, BES_) reflektuje energetickou politiku a závazky jednotlivých zemí z roku 2015 a předpokládá další zvyšování světových emisí CO<sub>2</sub>. Protože jde o cíle a závazky v budoucnosti, nebyly zatím implementována všechna opatření a je teoreticky možné, že vývoj světových emisí bude vyšší, než předpokládá tento scénář.
-* **Plánovaný scénář** (_Planned Energy Scenario, PES_) slouží jako hlavní referenční scénář a reflektuje stav závazků zemí z roku 2019. Kdyby země svoje závazky naplnily, povede k stabilizaci ročních emisí na 33 Gt CO<sub>2</sub>/rok, ale také k růstu světové teploty oproti pre-industriálním hodnotám o více než 2,5 °C do konce století.
+* **Plánovaný scénář** (_Planned Energy Scenario, PES_) slouží jako hlavní referenční scénář a reflektuje stav závazků zemí z roku 2019. Kdyby země svoje závazky naplnily, povede k stabilizaci ročních emisí na 33 Gt CO<sub>2</sub>/rok, ale také k růstu světové teploty oproti předindustriálním hodnotám o více než 2,5 °C do konce století.
 * **Transformační scénář** (_Transforming Energy Scenario, TES_) popisuje ambiciózní, ale realistickou transformaci energetiky založenou z velké části na obnovitelných zdrojích energie. Tento scénář je v souladu s cíli Pařížské dohody zastavit globální oteplování pod hodnotou +2 °C.
 * **Úplná dekarbonizace** (_Deep Decarbonization Perspective, DDP_) popisuje možnosti dosažení nulových emisí CO<sub>2</sub> do roku 2050.
 

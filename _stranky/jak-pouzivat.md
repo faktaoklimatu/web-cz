@@ -18,7 +18,7 @@ Věříme, že volné šíření informací a kultivace veřejné debaty pomáha
 
 <figure class="d-none d-md-block float-right w-50 ml-4">
 <a href="/infografiky/emise-cr-detail"><img src="/assets/generated/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
-<figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
+<figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
 
 Veškerá naše práce je zveřejněna pod licencí [Creative Commons Uveďte původ 4.0 Mezinárodní (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.cs). V krátkosti, tato licence vám umožňuje naše dílo
@@ -34,7 +34,7 @@ Citaci si také můžete nechat vygenerovat přímo na stránce každé infograf
 
 <figure class="d-md-none w-100 mt-2">
 <a href="/infografiky/emise-cr-detail"><img src="/assets/generated/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
-<figcaption class="pt-2">Ukázka použítí infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
+<figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
 
 </div>
@@ -55,7 +55,7 @@ U každé naší infografiky najdete tlačítko ke stažení. Můžete si vybrat
 U každé naší infografiky jsou také k dispozici podkladová data.
 
 * Tlačítko "Náš dataset" u infografik odkazuje na naši stránku se zpracovanými daty, jejich popisem a dalšími odkazy na zdrojová data.
-* Tlačítko "Naše tabulka s daty" u infografik a datasetů odkazuje na námi vytvořenou tabulku. Námi vytvořená a zpracovaná data jsou zveřejněna pod licencí [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs), tedy je možné si je stáhnout, upravit a zveřejnit při uvedení původu a odkazu na licenci. Vstupní data však často mají svoji vlastní licenci, která je u káždého zdroje v tabulce uvedena.
+* Tlačítko "Naše tabulka s daty" u infografik a datasetů odkazuje na námi vytvořenou tabulku. Námi vytvořená a zpracovaná data jsou zveřejněna pod licencí [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs), tedy je možné si je stáhnout, upravit a zveřejnit při uvedení původu a odkazu na licenci. Vstupní data však často mají svoji vlastní licenci, která je u každého zdroje v tabulce uvedena.
 * Tlačítko "Zdrojová data" u infografik a datasetů odkazuje na původní data sesbíraná, vytvořená nebo zpracovaná jinými institucemi. Tato data mají často vlastní licenci, která je u každého zdroje uvedena.
 </div>
 </div>

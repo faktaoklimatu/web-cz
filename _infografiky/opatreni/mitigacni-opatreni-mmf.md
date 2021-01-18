@@ -38,7 +38,7 @@ Mezinárodní měnový fond v roce 2019 publikoval [studii](https://www.imf.org/
 * Široký rozsah, tržní mechanismus a možnost samostatného rozhodování firem a jednotlivců jsou klíčová kritéria pro efektivní snížení emisí skleníkových plynů.
 * Regulace a standardy zpravidla vyloučí některé aktivity či produkty – například auta s příliš vysokými emisemi, avšak neovlivní míru využívání ostatních aut. Oproti tomu tržní mechanismy mohou vést také ke snížení míry využívání vozidel přispívajících k emisím skleníkových plynů.
 * Konkrétní implementace je důležitá, vhodným nastavením parametrů opatření lze zpravidla kompenzovat některé nevýhody. Zavedení méně účinných opatření je výrazně lepší než nezavedení žádných opatření.
-* Účinnost všech opatření může být dále posílena mezinárodní spoluprácí a podporou investic do čistých technologií.
+* Účinnost všech opatření může být dále posílena mezinárodní spoluprací a podporou investic do čistých technologií.
 
 ## Další zdroje
 
