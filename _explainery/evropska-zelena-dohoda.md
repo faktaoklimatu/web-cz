@@ -7,7 +7,8 @@ author:      "Jakub Zamouřil"
 weight:      74
 tags-scopes: [ evropa ]
 tags-topics: [ opatreni ]
-cover:       evropska-zelena-dohoda.jpg
+cover-source-text: "Evropská komise"
+cover-source-url: "https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 perex:       "Evropská komise v prosinci 2020 představila Evropskou zelenou dohodu, která nastiňuje klimatické ambice EU na příštích 30 let. Co tato dohoda obsahuje?"
 ---
 
@@ -19,7 +20,11 @@ Vedlejší projevy této transformace budou i výrazné snížení znečištěn�
 
 Evropská komise připouští, že k zastavení globální změny klimatu nestačí, aby Evropa v této oblasti jednala sama. Proto komise plánuje využít politický vliv sjednocené EU, její expertízu v technické oblasti a její finanční prostředky k podpoře ostatních světových zemí, aby směřovaly ke stejnému cíli. Zároveň uznává, že může být nutné chránit evropské zdroje a konkurenceschopnost vůči zemím, které by odmítly postupovat v souladu s klimatickými cíli, například vyšším zdaněním výrobků dovezených z těchto zemí.
 
-{% include figure.html name="zavazky.jpg" %}
+{% include figure.html
+    name="zavazky.jpg"
+    source-text="Evropská komise"
+    source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
+%}
 
 V současnosti je Evropská zelená dohoda [24-stránkový dokument](https://ec.europa.eu/info/sites/info/files/european-green-deal-communication_en.pdf), který popisuje ambice v jednotlivých odvětvích a způsoby, jakým jich může být dosaženo.
 
@@ -31,7 +36,11 @@ V praxi dohoda cílí nejvíce na energetický sektor, který v EU produkuje nej
 
 Pomoci k dosažení klimatické neutrality v energetickém sektoru má i zvyšování efektivity spotřebičů a snižování energetické náročnosti budov, což celkově sníží nároky na množství vyrobené energie. V plánu je také kompletní propojení a digitalizace evropských energetických sítí.
 
-{% include figure.html name="principy.jpg" %}
+{% include figure.html
+    name="principy.jpg"
+    source-text="Evropská komise"
+    source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
+%}
 
 ### Průmysl
 
@@ -43,7 +52,11 @@ Evropská unie bude také výrazně investovat do výzkumu a vývoje nových udr
 
 Dohoda cílí i na zvýšení dlouhodobé udržitelnosti v oblasti zemědělství, rozšíření ekologického zemědělství a snížení množství užívaných pesticidů a dalších chemikálií. Důležitým bodem je omezení či zákaz dovozu jídla, které nebude splňovat standardy Evropské unie. Naopak ale v plánu chybí zmínka, zda je v plánu omezování živočišné produkce, jejíž snížení označila [nedávná vědecká zpráva](https://www.czechsight.cz/pres-11-000-vedcu-podporilo-vyhlaseni-klimaticke-nouze/) jako důležitou součást boje proti klimatickým změnám.
 
-{% include figure.html name="strategie.jpg" %}
+{% include figure.html
+    name="strategie.jpg"
+    source-text="Evropská komise"
+    source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
+%}
 
 ### Doprava
 
@@ -69,7 +82,11 @@ Opatření popsaná v tomto plánu budou vyžadovat vysoké investice – Evrops
 
 Tento investiční plán bude vyžadovat rozsáhlé změny v systémech evropského financování a [je označován jako "ambiciózní"](https://eeb.org/library/game-changer-financing-the-european-green-deal/); přesto Evropskou zelenou dohodu některé ekologické organizace považují za nedostatečnou a [volají po zvýšení jejích cílů](https://www.greenpeace.org/czech/clanek/5252/evropsky-green-deal-je-krok-spravnym-smerem-ale-sam-o-sobe-nestaci/). Pro srovnání, v 90. letech investovala Česká republika i [více než 2 % svého HDP](https://ekolist.cz/cz/zpravodajstvi/zpravy/investice-do-zivotniho-prostredi-stagnuji-tvrdi-statistici) do obnovy a ochrany životního prostředí poškozeného totalitním režimem – tyto investice vedly např. k odsíření uhelných elektráren či modernizaci těžkého průmyslu a zpracování odpadů, což značně zlepšilo místní kvalitu ovzduší i zdraví obyvatel.
 
-{% include figure.html name="rizika.jpg" %}
+{% include figure.html
+    name="rizika.jpg"
+    source-text="Evropská komise"
+    source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
+%}
 
 ## Co si EU od této dohody slibuje?
 

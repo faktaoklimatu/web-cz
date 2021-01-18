@@ -12,11 +12,11 @@
         <div class="row justify-content-center">
           <div class="col-12 col-xl-10">
             <h1>{{ page.title }}</h1>
-            {% if page.perex %}
+            {%- if page.perex %}
             <p class="perex explainer-perex">
               {{ page.perex }}
             </p>
-            {% endif %}
+            {%- endif %}
             <div class="explainer-metadata">
               {% include tags.html tags=page.tags link="true" %}
               <span class="author">{{ page.author }}</span>
@@ -27,10 +27,13 @@
         </div>
       </div>
     </div>
-    {% if page.cover %}
-    <div class="cover-header" style="background-image: url(/assets/img/cover/{{ page.cover }});">
+    {%- if page.cover-source-text and page.cover-source-url %}
+    <div class="cover-header" style="background-image: url(/assets/img/cover/{{ page.slug }}.jpg);">
     </div>
-    {% endif %}
+    <div class="cover-header-source">
+      Zdroj: <a href="{{ page.cover-source-url }}">{{ page.cover-source-text }}</a>
+    </div>
+    {%- endif %}
     <div class="section">
       <div class="container container-xl-fluid">
         <div class="row justify-content-center">

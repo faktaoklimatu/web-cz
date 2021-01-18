@@ -8,6 +8,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.cover-header-source {
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    color: $c-grey;
+
+    a {
+        color: $c-grey;
+    }
+}
 
 .explainer-perex {
     margin-top: 1rem;
