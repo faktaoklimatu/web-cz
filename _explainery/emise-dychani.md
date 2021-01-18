@@ -7,8 +7,9 @@ author:      "Ondráš Přibyla"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
-# cover-image: cover/concrete.jpg
-# perex:     "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody a omezení globálního oteplování na 1,5°C nebo 2°C bude nutné dramatické snížení emisí z výroby cementu, což se zatím příliš nedaří."
+cover-source-text: "Unsplash, dan carlson"
+cover-source-url: "https://unsplash.com/photos/G86MS2ZsiJA"
+# perex:     ""
 ---
 
 Při normálním dýchání projde plícemi průměrného člověka za minutu asi 6 litrů vzduchu. Zatímco koncentrace CO<sub>2</sub> ve vdechovaném vzduchu je 0,04 %, ve vydechovaném je to stokrát více, tedy asi 4 %. Člověk tak produkuje CO<sub>2</sub>... ale překvapivě, lidské (a obecně živočišné) dýchání v dlouhodobém měřítku vůbec nepřispívá e zvyšování koncentrací CO<sub>2</sub> v atmosféře.

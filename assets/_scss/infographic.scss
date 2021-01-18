@@ -183,6 +183,15 @@ div.longread-figure {
     img {
         width: 100%;
     }
+    .source {
+        text-align: right;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+        color: $c-grey;
+        a {
+            color: $c-grey;
+        }
+    }
 }
 
 @media (min-width: 576px) {
