@@ -46,10 +46,10 @@
 
 - id: opatreni
   name-short: opatření
-  name-long: adaptační a mitigační opatření
+  name-long: opatření, dokumenty, dohody
   index-weight: 5
   # Extra span řeší problém se slovníkovým odkazem na začátku odstavce.
-  description: <span><glossary id='mitigace'>Mitigační opatření</glossary></span> směřují ke zmírnění klimatické změny – jde především o snahy o omezení emisí skleníkových plynů skrze uhlíkovou daň, emisní povolenky nebo nahrazení uhelných elektráren jinými zdroji energie (tzv. uhelný phase-out). V současné době probíhá v České republice jednání [uhelné komise](http://www.zelenykruh.cz/na-cem-pracujeme/uhelna-komise), která má o ukončení provozu hnědouhelných elektráren rozhodnout. Adaptační opatření směřují k přizpůsobení společnosti klimatickým změnám – typicky může jít o změny pěstování plodin nebo opatření na udržování vody v krajině."
+  description: Snahy řešit klimatickou změnu a její dopady vedou k mezinárodním jednáním a dohodám a vzniku strategických dokumentů, které vytyčují národní plány a cíle. Také jsou přijímany právně závazná opatření nebo vytvářeny finanční nástroje, jako uhlíková daň nebo systémy pro obchodování s emisními povolenkami, které mají snížit emise skleníkvých plynů a zabránit dalšímu zesilování globálního oteplování (tzv. <glossary id='Mitigace'>mitigační opatření</glossary>). Na úrovni regionů nebo měst pak vznikají adaptační opatření, jejichž cílem je region na probíhající klimatickou změnu adaptovat. Typicky může jít o zelené střechy ve městech, zakládání tůní pro udržení vody v krajině nebo zavádění odolnějších plodin v zemědělství.  
 
 - id: ekonomika
   name-short: ekonomika
