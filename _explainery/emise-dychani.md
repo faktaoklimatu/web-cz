@@ -1,12 +1,13 @@
 ---
 layout:      explainer
-title:       "Jakým dílem přispívá k emisím člověk svým dýcháním?"
+title:       "Jakým dílem přispívá k emisím člověk svým dýcháním? (neveřejné)"
 slug:        "emise-dychani"
 published:   2021-01-15
 author:      "Ondráš Přibyla"
 weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ emise ]
+# tags-scopes: [ svet ]
+# tags-topics: [ emise ]
+sitemap:     false
 cover-source-text: "Unsplash, dan carlson"
 cover-source-url: "https://unsplash.com/photos/G86MS2ZsiJA"
 # perex:     ""
