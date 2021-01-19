@@ -18,6 +18,13 @@ Tato časová osa vychází z těchto dvou přehledových publikací o výzkumu 
 * S.R. Weart: [The Discovery of Global Warming](https://www.hup.harvard.edu/catalog.php?isbn=9780674031890) [Online verze](https://history.aip.org/climate/method.htm)
 * D.Archer, R.Pierrehumbert: [The Warming Papers](https://www.wiley.com/en-us/The+Warming+Papers%3A+The+Scientific+Foundation+for+the+Climate+Change+Forecast-p-9781405196161).
 
+
+{% include preview-box.html
+    title="Časová osa mezinárodních jednání o ochraně klimatu"
+    text="Vědecké úsilí o pochopení klimatické změny vyústilo v mezinárodních jednání k přijetí dohod, jako například Kjótský protokol nebo Pařížská dododa."
+    slug="svetove-dohody"
+%}
+
 ## Více o jednotlivých událostech a objevech
 
 * **1824:** *[J.B Fouriere](https://en.wikipedia.org/wiki/Joseph_Fourier#Discovery_of_the_greenhouse_effect)* ze známé vzdálenosti Země od Slunce a měření intenzity slunečního záření vypočítal, jaká by měla být průměrná teplota Země, kdyby byla pouze ohřívána Sluncem. Protože mu vycházela teplota nižší, než jaká je skutečně měřená, uvažoval o dalších možných zdrojích tepla (např. o kosmickém záření), nebo o možném izolačním efektu atmosféry. Jakým mechanismem atmosféra může zachycovat teplo objevil o 35 let později John Tyndall.
