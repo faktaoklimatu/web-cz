@@ -309,6 +309,10 @@ details {
             display: inline;
             margin-left: 0.5em;
         }
+
+        h2::before, h3::before, h4::before {
+            content: none;
+        }
     }
 
     > summary:hover {
