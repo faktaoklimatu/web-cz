@@ -12,6 +12,12 @@ caption:    "Časová osa zachycuje klíčové události světového úsilí v o
 
 Infografika poskytuje přehled o hlavních mezinárodních klimatických jednáních a znázorňuje jejich výstupy a aktéry, kteří se na nich podíleli. Infografika obsahuje také přehled o tom, které dohody jsou stále aktuální a které už nikoli. 
 
+{% include preview-box.html
+    title="Historie výzkumu skleníkového efektu"
+    text="Mezinárodní úsilí o ochranu klimatu navazuje na dlouhodobé výzkumy globálního oteplování a skleníkového efektu."
+    slug="historie-sklenikoveho-efektu"
+%}
+
 ## Více o jednotlivých událostech a dohodách 
 
 ### 1979 – První světová klimatická konference, Ženeva
@@ -24,7 +30,7 @@ Konference se uskutečnila ve dnech 12.–23. února 1979 v Ženevě, kde sídl�
 - [International Council of Scientific Unions, ICSU](http://www.icsu.org/)
  
 ### 1988 – Vznik IPCC 
-WMO a Program OSN pro životní prostředí (UNEP) zakládají Mezivládní panel pro změny klimatu (IPCC). Tento **vědecký panel od té doby vydává každých pět let souhrnný report**, přehled poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích) a jejich potenciálních dopadech, a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (Summary for Policymakers, SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsenzuálně zástupci vlád zapojených zemí (cca 120 zástupců). 
+Světová meteorologická organizace (WMO) a Program OSN pro životní prostředí (UNEP) zakládají Mezivládní panel pro změny klimatu (IPCC). Tento **vědecký panel od té doby vydává každých pět let <glossary id='ipccar'>souhrnnou hodnotící zprávu</glossary>**, která obsahuje přehled nových poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích) a jejich potenciálních dopadech, a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (Summary for Policymakers, SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsenzuálně zástupci vlád zapojených zemí (cca 120 zástupců). 
  
 **Zdroje:**
 - [Web IPCC](https://www.ipcc.ch/)
@@ -41,10 +47,13 @@ UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezen�
 - [Agenda 21](https://web.archive.org/web/20140730190755/http://habitat.igc.org/agenda21/)
  
 ### 1997 – Kjótský protokol 
-Kjótský protokol o snížení emisí skleníkových plynů je protokolem k Rámcové úmluvě OSN o změnách klimatu (UNFCCC), která byla přijata v červnu 1992 v Riu de Janeiro a vstoupila v platnost v březnu 1994. Přijetím Kjótského protokolu o snížení emisí plynů způsobujících skleníkový efekt skončila 11. prosince 1997 konference OSN o změnách podnebí v japonském Kjótu (COP 3). **Průmyslové země se v ní zavázaly snížit emise skleníkových plynů o 5,2 % v porovnání s rokem 1990.** Protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a EU jako celek (před rozšířením v roce 2004). USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, a protože se ke konkrétnímu závazku snižování emisí nepřipojily Čína a Indie. Dokument měl od počátku řadu kritiků. Jedni mu vyčítají, že je vzhledem k vynaloženým nákladům neefektivní, jiní jej zase kritizují jako málo ambiciózní. **Svého cíle protokol nedosáhl a dnes již neplatí**, nahrazuje jej nová globální dohoda o klimatu, která byla uzavřena na konferenci v Paříži v prosinci 2015 (COP 21). 
+Kjótský protokol byl přijat na třetí konferenci (COP 3) států účastnících se Rámcové úmluvy UNFCCC o změně klimatu. **Rozvinuté průmyslové země se v něm zavázaly do roku 2012 snížit emise skleníkových plynů v průměru o 4,2% oproti emisím v roce 1990**, konrétní [cíle jednotlivých zemí](https://en.wikipedia.org/wiki/Kyoto_Protocol#Annex_I_parties_with_targets) se však lišily. Na jednání v Doha (Katar) bylo domluveno návazné snižování emisí v letech 2012-2020 s novými závazky pro jednotlivé země, dohoda z Doha však byla nahrazena tzv. Pařížskou dohodou, přijatou v roce 2015 na konferenci COP 21 Paříži.
+
+Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a v té době patnáctičlenná Evropská Unie, nicméně nerozvinuté země, jako Čína, nebo Indie neměly v rámci Kjótského protokolu závazky ke snižování emisí. USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, Kanada od protokolu odstoupila v roce 2011.  **Závazky ke snížení emisí se tak týkaly jen 36 zemí a téměř všechny tyto země své závazky snižování emisí naplnily.** Přesto světové emise byly v roce 2010 o 32% vyšší než v roce 1990, především kvůli nárůstu emisí v zemích jako Čína či Indie, které se v Kjótském protokolu k žádným snížením nezavázaly.
  
 **Zdroje:**
 - [UNFCCC, OSN](https://unfccc.int/resource/docs/convkp/kpeng.html)
+- [Anglická Wikipedie](https://en.wikipedia.org/wiki/Kyoto_Protocol)
 - [Ministerstvo životního prostředí, MŽP](https://www.mzp.cz/cz/kjotsky_protokol)
 - Ekolist: [Co přináší Kjótský protokol](https://ekolist.cz/cz/zpravodajstvi/zpravy/co-prinasi-kjotsky-protokol) nebo [Před 20 lety byl přijat Kjótský protokol na ochranu ovzduší](https://ekolist.cz/cz/zpravodajstvi/zpravy/pred-20-lety-byl-prijat-kjotsky-protokol-na-ochranu-ovzdusi)
  
@@ -66,7 +75,7 @@ V roce 2010 vznikl mezinárodní fond, jehož smyslem je **financování klimati
 **Zdroje:**
 - [Zelený klimatický fond, GCF](https://www.greenclimate.fund/)
  
-### 2015 COP21 + 2016 – Pařížská dohoda 
+### 2015 – Pařížská dohoda 
 Pařížská dohoda je mezinárodní dohoda uzavřená pod Rámcovou úmluvou OSN o změně klimatu a jejím cílem je mezinárodního snaha o omezení emisí skleníkových plynů. Dohoda byla sjednána v prosinci 2015 v Paříži (COP21), schválena všemi 195 smluvními stranami a podepsaná 12. prosince 2016. **Všechny zúčastněné státy se dohodly, že budou přijímat taková opatření, která udrží růst globální teploty pod 2 stupni Celsia.** Současně budou vzhledem k vážným rizikům usilovat o to, aby globální teplota nevzrostla o víc než 1,5 stupně. 
 
 Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradí nynější kjótský protokol z roku 1997. Minulý prezident USA Donald Trump dohodu vypověděl na základě toho, že chce podporovat průmyslová odvětví. USA tak od dohody odstoupily 4. listopadu 2020, nicméně nastupující prezident Joe Biden již prohlásil, že se USA k dohodě znovu připojí.
