@@ -116,7 +116,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 </div> <!-- accordion end -->
 
 </div></div>
-<div class="section"><div class="container" markdown="1">
+<div class="section"><div class="container clearfix" markdown="1">
 {:#o-projektu .display-2}
 ## O nás a naší práci
 
@@ -177,5 +177,11 @@ Jsme tým profesionálů zabývajících se různými obory – přírodovědou,
   <a href="/podporte-nas" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
 </div>
 -->
+
+<a href="https://www.climate-kic.org/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets/img/logo-climate-kic.png" /></a>
+<a href="https://climatechallenge.impacthub.cz/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets/img/logo-climate-challenge.png" /></a>
+
+{:.lead}
+V roce 2020 jsme zvítězili v akceleračním programu [Climate Challenge](https://climatechallenge.impacthub.cz/) pořádaným sítí podnikatelských inkubátorů [Impact Hub](https://impacthub.cz). V rámci toho náš projekt podpořila evropská iniciativa [Climate-KIC](https://www.climate-kic.org/), která hledá inovativní řešení na klimatickou krizi.
 
 </div></div>
