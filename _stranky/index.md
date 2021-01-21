@@ -174,7 +174,7 @@ Jsme tým profesionálů zabývajících se různými obory – přírodovědou,
 
 <div class="row">
   <a href="/o-nas" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-info"></i> Více o projektu</a>
-  <a href="/podporte-nas" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
+  <a href="{{ site.fundraising }}" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
 </div>
 
 

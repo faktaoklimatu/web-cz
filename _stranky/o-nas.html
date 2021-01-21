@@ -16,75 +16,69 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
 <div class="section">
     <div class="container">
         <h2>Náš příběh</h2>
-        {% assign story = site.data.organization-story %}
-        {% for item in story %}
+        {%- assign story = site.data.organization-story %}
+        {%- for item in story %}
         <div class="news-item">
             <div class="d-block d-md-inline-block date">
-                <p style="font-weight:bold; color: #000080;">{{ item.title}}</p>
+                <p style="font-weight:bold; color: #000080;">{{ item.title }}</p>
             </div>
             <div class="d-inline-block summary">
                 {{ item.text | markdownify }}
             </div>
         </div>
-        {% endfor %}
+        {%- endfor %}
     </div>
 </div>
-
 <div class="section">
     <div class="container">
         <h2>Náši členové</h2>
         <div class="lead">
             Jsme tým profesionálů zabývajících se různými obory – přírodovědou, IT, pedagogikou nebo komunikací. Chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změny klimatu týkají. Tedy všem.
         </div>
-        <!-- <h3 class="mt-2">Ředitel a správní rada</h3> -->
+        <h3 class="mt-2">Ředitel a správní rada</h3>
         <div class="row mt-2">
-            {% assign members = site.data.organization-members | where: "category", "spravni-rada" %}
-            {% for item in members %}
-            <dic class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3">
+            {%- assign members = site.data.organization-members | where: "category", "spravni-rada" -%}
+            {%- for item in members %}
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3">
                 <div class="card bg-grey border-0">
                     <div class="text-center">
                         <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="{{item.name }}">
                     </div>
                     <div class="card-body d-flex flex-column">
-                        {% if item.linkedin%}
-                        <h5 class="card-title text-center">{{ item.name}} <a class="no-ext-link-icon"
-                                href="{{ item.linkedin }}"><span class="fab fa-fw fa-linkedin"></span></a></h5>
-                        {% else %}
-                        <h5 class="card-title text-center">{{ item.name}}</h5>
-                        {% endif %}
+                        <h5 class="card-title text-center">
+                            {{ item.name}} {% if item.linkedin%}<a class="no-ext-link-icon" href="{{ item.linkedin }}"><span class="fab fa-fw fa-linkedin"></span></a>{% endif %}
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">{{ item.position }}</h6>
                         <p class="card-text text-center">{{ item.summary }}</p>
                         <div class="mt-auto text-center">
                             <a class="align-self-end" href="mailto:{{ item.email}}">{{ item.email }}</a>
                         </div>
                     </div>
                 </div>
-            </dic>
+            </div>
+            {%- endfor %}
+        </div>
+        <h3 class="mt-2">Dobrovolníci</h3>
+        <div class="row mt-2">
+            {% assign members = site.data.organization-members | where: "category", "dobrovolnik" -%}
+            {%- for item in members -%}
+            <div class="col-sm-4">
+                <div class="card bg-grey border-0">
+                    <div class="text-center">
+                        <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="{{item.name }}">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">
+                            {{ item.name}} {% if item.linkedin%}<a class="no-ext-link-icon" href="{{ item.linkedin }}"><span class="fab fa-fw fa-linkedin"></span></a>{% endif %}
+                        </h5>
+                        <p class="card-text text-center">{{ item.summary }}</p>
+                        <div class="mt-auto text-center">
+                            <a class="align-self-end" href="mailto:{{ item.email}}">{{ item.email }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
         </div>
-        <!-- <h3 class="mt-2">Dobrovolníci</h3>
-        <div class="row mt-2">
-            {% assign members = site.data.organization-members | where: "category", "dobrovolnik" %}
-            {% for item in members %}
-            <dic class="col-sm-4">
-                <div class="card bg-grey border-0">
-                    <div class="text-center">
-                        <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="{{item.name }}">
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        {% if item.linkedin%}
-                        <h5 class="card-title text-center">{{ item.name}} <a class="no-ext-link-icon"
-                                href="{{ item.linkedin }}"><span class="fab fa-fw fa-linkedin"></span></a></h5>
-                        {% else %}
-                        <h5 class="card-title text-center">{{ item.name}}</h5>
-                        {% endif %}
-                        <p class="card-text text-center">{{ item.summary }}</p>
-                        <div class="mt-auto text-center">
-                            <a class="align-self-end" href="mailto:{{ item.email}}">{{ item.email }}</a>
-                        </div>
-                    </div>
-                </div>
-            </dic>
-            {% endfor %}
-        </div> -->
     </div>
 </div>
