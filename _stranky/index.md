@@ -126,37 +126,29 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
 
 <div id="carousel_successes" class="carousel slide mb-4 mt-4" data-ride="carousel">
   <ol class="carousel-indicators">
-    {%- assign sorted_success = site.data.successes | sort: "priority" | reverse -%}
+    {%- assign sorted_success = site.data.successes | where_exp: "item", "item.display != false" -%}
     {%- for item in sorted_success %}
-    <li data-target="#carousel_successes" data-slide-to="{{- forloop.index0 -}}"{%- if forloop.index0==0 %} class="active"{%- endif -%}> </li>
+    <li data-target="#carousel_successes" data-slide-to="{{- forloop.index0 -}}"{%- if forloop.index0 == 0 %} class="active"{%- endif -%}> </li>
     {%- endfor %}
   </ol>
   <div class="carousel-inner">
     {%- for item in sorted_success -%}
     {%- if item.link %}
-    <a href="{{- item.link -}}" class="no-ext-link-icon carousel-item{%- if forloop.index0==0 %} active{%- endif -%}" data-interval="6000">
+    <a href="{{ item.link }}" class="no-ext-link-icon carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- else %}
-    <div class="carousel-item {%- if forloop.index0==0 %} active{%- endif -%}" data-interval="6000">
+    <div class="carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- endif %}
-      {%- if item.img %}
-      <img src="{{ site.baseurl }}/assets/img/{{- item.img -}}" class="d-block w-100" alt="{{- item.title -}}" />
-      {%- else %}
-      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: empty slide">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#555"></rect>
-        <text x="50%" y="50%" fill="#333" dy=".3em">Bez obrázku</text>
-      </svg>
-      {%- endif %}
+      <img src="{{ site.baseurl }}/assets/img/{{ item.img }}" class="d-block w-100" alt="{{- item.title -}}" />
       <div class="carousel-caption d-none d-md-block">
-        <h5>{{- item.title -}}</h5>
-        <p>{{- item.summary -}}</p>
+        <h5>{{ item.title }}</h5>
+        <p>{{ item.summary }}</p>
       </div>
     {%- if item.link %}
     </a>
     {%- else %}
     </div>
     {%- endif %}
-    {%- endfor %}      
+    {%- endfor %}
   </div>
   <a class="carousel-control-prev" href="#carousel_successes" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
