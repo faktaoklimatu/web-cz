@@ -62,7 +62,7 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
         <div class="row mt-2">
             {% assign members = site.data.organization-members | where: "category", "dobrovolnik" -%}
             {%- for item in members -%}
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3">
                 <div class="card bg-grey border-0">
                     <div class="text-center">
                         <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets/img/members/{{item.img}}" alt="{{item.name }}">
