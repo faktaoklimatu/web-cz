@@ -58,9 +58,9 @@ Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí
 - Ekolist: [Co přináší Kjótský protokol](https://ekolist.cz/cz/zpravodajstvi/zpravy/co-prinasi-kjotsky-protokol) nebo [Před 20 lety byl přijat Kjótský protokol na ochranu ovzduší](https://ekolist.cz/cz/zpravodajstvi/zpravy/pred-20-lety-byl-prijat-kjotsky-protokol-na-ochranu-ovzdusi)
 
 {% include preview-box.html
-    title="Historie výzkumu skleníkového efektu"
-    text="Mezinárodní úsilí o ochranu klimatu navazuje na dlouhodobé výzkumy globálního oteplování a skleníkového efektu."
-    slug="historie-sklenikoveho-efektu"
+    title="Srovnání typů mitigačních opatření"
+    text="Porovnání různých typů mitigačních opatření ukazuje výhody a nevýhody uhlíkové daně a systémů pro obchodování s emisemi. "
+    slug="mitigacni-opatreni-mmf"
 %}
 
 ### 2005 – Systém EU obchodování s emisemi (EU ETS)
@@ -76,25 +76,30 @@ V roce 2020 proběhla reforma, která řeší například přebytek povolenek a 
 - [Ministerstvo životního prostředí, MŽP](https://www.mzp.cz/cz/emisni_obchodovani)
  
 ### 2010 – Zelený klimatický fond (GCF)
-V roce 2010 vznikl mezinárodní fond, jehož smyslem je **financování klimatických opatření v průmyslově méně rozvinutých zemích světa.** Fond je součástí klimatické politiky zavazující průmyslově rozvinuté země přispívat finance na klimatická opatření v ostatních částech světa. Fond disponoval přibližně 100 miliardami dolarů v roce 2020. Sídlo fondu je v Jižní Koreji. 
+V roce 2010 vznikl mezinárodní fond, jehož smyslem je **financování klimatických opatření v průmyslově méně rozvinutých zemích světa.** Fond je součástí klimatické politiky zavazující průmyslově rozvinuté země přispívat finance na klimatická opatření v ostatních částech světa. V roce 2020 fond disponoval přibližně 100 miliardami dolarů. Sídlo fondu je v Jižní Koreji. 
  
 **Zdroje:**
 - [Zelený klimatický fond, GCF](https://www.greenclimate.fund/)
  
 ### 2015 – Pařížská dohoda 
-Pařížská dohoda je mezinárodní dohoda uzavřená pod Rámcovou úmluvou OSN o změně klimatu a jejím cílem je mezinárodního snaha o omezení emisí skleníkových plynů. Dohoda byla sjednána v prosinci 2015 v Paříži (COP21), schválena všemi 195 smluvními stranami a podepsaná 12. prosince 2016. **Všechny zúčastněné státy se dohodly, že budou přijímat taková opatření, která udrží růst globální teploty pod 2 stupni Celsia.** Současně budou vzhledem k vážným rizikům usilovat o to, aby globální teplota nevzrostla o víc než 1,5 stupně. 
+Pařížská dohoda byla sjednána v prosinci 2015 v Paříži a je to podobně jako Kjótský protokol právně závazná mezinárodní dohoda, která je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC). Pařížská dohoda delkaruje následující cíle: 
 
-Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradí nynější kjótský protokol z roku 1997. Minulý prezident USA Donald Trump dohodu vypověděl na základě toho, že chce podporovat průmyslová odvětví. USA tak od dohody odstoupily 4. listopadu 2020, nicméně nastupující prezident Joe Biden již prohlásil, že se USA k dohodě znovu připojí.
+* _Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí._
+* _Zvyšování schopnosti přizpůsobit se nepříznivým dopadům změny klimatu a posilování odolnosti vůči změně klimatu a nízkoemisního rozvoje způsobem, který neohrozí produkci potravin._
+* _Sladění finančních toků s nízkoemisním rozvojem odolným vůči změně klimatu._ 
+
+Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradila nynější kjótský protokol z roku 1997. USA od Pařížské dohody odstoupily 4. listopadu 2020 na základě jednání bývalého prezidenta D.Trumpa, nicméně nastupující prezident Joe Biden USA k dohodě znovu připojil [v den svého nástupu do funkce](https://www.whitehouse.gov/briefing-room/statements-releases/2021/01/20/paris-climate-agreement/), 20.ledna 2021.
 
 Evropský parlament smlouvu schválil 4. října 2016 a k 5. říjnu se podařilo dosáhnout cíle, aby dohodu ratifikovalo 55 zemí, které se celkově podílejí na více než 55 procentech emisí skleníkových plynů světa. Dohoda z Paříže je takzvanou smíšenou dohodou, některé její prvky jsou v odpovědnosti celé EU, za jiné odpovídají členské státy unie.
 
-Nezávazná příloha dohody uvádí, že vlády rozvinutých zemí se mají do roku 2025 dohodnout na výši finanční podpory určené pro potřeby a priority rozvojových zemí, přičemž minimem bude 100 miliard dolarů ročně. Finančně by měli pomáhat ti, kdo "jsou v pozici tak učinit". Právně závazný text dohody neobsahuje žádné konkrétní zmínky o trzích s emisemi CO<sub>2</sub>, ani o možnosti postihů za emise oxidu uhličitého v letectví či lodní dopravě. Obsahuje však zmínku o "využití mezinárodně přenosných zmírňujících opatření", která by umožnila státům na bázi dobrovolnosti kompenzovat jejich vlastní emise nákupem emisních kreditů jiných států.
+Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDC, Nationally determined targets) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. V článku 6. dohoda uznává důležitost spolupráce a tržních mechanismů ke snižování emisí, nicméně jejich konkrétní podoba je předmětem [dalších jednání](https://www.carbonbrief.org/in-depth-q-and-a-how-article-6-carbon-markets-could-make-or-break-the-paris-agreement).
 
 **Zdroje:**
-- [UNFCCC, OSN](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement)
-- [UNFCCC, originální text dohody](https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf)
-- [Ministerstvo životního prostředí, MŽP](https://www.mzp.cz/cz/parizska_dohoda)
-- [Ekolist](https://ekolist.cz/cz/zpravodajstvi/zpravy/usa-mohou-zahajit-proceduru-vypovezeni-parizske-klimaticke-dohody)
+- Vysvětlení [základních souvislostí](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) Pařížské dohody, UNFCCC/OSN
+- [Klíčové aspekty](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement/key-aspects-of-the-paris-agreement) Pařížské dohody, UNFCCC/OSN.
+- [Originální text dohody, UNFCCC](https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf)
+- [Český překlad textu dohody](https://www.mzp.cz/cz/parizska_dohoda) na stránkách Ministerstva životního prostředí ČR
+
 
 ### 2018 – IPCC 1.5 – Zvláštní zpráva IPCC ke globálnímu oteplení o 1,5 °C
 Na základě výzvy z COP21 v Paříži byla IPCC vypracována zpráva, která se **zaměřuje na dopady oteplení o více než 1,5 °C a na scénáře snižování emisí skleníkových plynů**, které budou směřovat ke splnění cíle 1,5 °C. Tuto zprávu vydal IPCC 8. října 2018. Zpráva byla připravena 91 autory ze 40 zemí a její obsah je podložen více než 6000 vědeckými odkazy. 
