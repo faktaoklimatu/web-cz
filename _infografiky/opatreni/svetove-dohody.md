@@ -56,11 +56,17 @@ Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí
 - [Anglická Wikipedie](https://en.wikipedia.org/wiki/Kyoto_Protocol)
 - [Ministerstvo životního prostředí, MŽP](https://www.mzp.cz/cz/kjotsky_protokol)
 - Ekolist: [Co přináší Kjótský protokol](https://ekolist.cz/cz/zpravodajstvi/zpravy/co-prinasi-kjotsky-protokol) nebo [Před 20 lety byl přijat Kjótský protokol na ochranu ovzduší](https://ekolist.cz/cz/zpravodajstvi/zpravy/pred-20-lety-byl-prijat-kjotsky-protokol-na-ochranu-ovzdusi)
- 
-### 2005 – Systém EU obchodování s emisemi (EU ETS)
-Systém začal být uplatňován v roce 2005 s cílem podpořit snižování emisí skleníkových plynů nákladově efektivním a ekonomicky účinným způsobem. Jedná se o omezování objemu skleníkových plynů, které mohou energeticky náročná průmyslová odvětví, výrobci energie a letecké společnosti vypouštět do ovzduší. Počet emisních povolenek je zastropován na určité úrovni, kterou určuje EU, a podnikům se jednotlivé povolenky přidělují nebo si je tyto podniky kupují. Strop je v průběhu času snižován, aby se i množství emisí postupně redukovalo. **EU ETS byl prvním zavedeným systémem obchodování s emisemi na světě a jedním z jeho cílů je snížení emisí skleníkových plynů v EU nejméně o 40 % do roku 2030.**
 
-V letech 2013–2020 se obchodování s povolenkami účastní více než 11 000 firem. Patří mezi ně elektrárny a spalovací zařízení s výkonem nad 20 MW, rafinérie, koksovny, železárny a ocelárny, cementárny, výrobci skla, keramiky a cihel, celulózky a papírny, výrobci hliníku a chemický průmysl. Systém EU ETS pokrývá 45 procent všech emisí oxidu uhličitého v EU.
+{% include preview-box.html
+    title="Historie výzkumu skleníkového efektu"
+    text="Mezinárodní úsilí o ochranu klimatu navazuje na dlouhodobé výzkumy globálního oteplování a skleníkového efektu."
+    slug="historie-sklenikoveho-efektu"
+%}
+
+### 2005 – Systém EU obchodování s emisemi (EU ETS)
+Systém pro obchodování s emisními povolenkami je podobně jako uhlíková daň nástrojem, který umožnuje ekonomicky postihnout aktivity, které vypouštějí emise skleníkových plynů. **Velcí emitenti mají povinnost nakoupit odpovídají množství povolenek, přičemž celkové množství emisních povolenek je stanoveno vládou a firmi s nimi mohou volně obchodovat**.  Množství povolenek je postupně snižováno, čímž se zajišťuje snižování celkových emisí a zároveň je tak ovlivňována poptávka a tržní cena emisních povolenek. EU ETS byl prvním zavedeným systémem obchodování s emisemi na světě, začal být uplatňován v roce 2005 s cílem podpořit snižování emisí skleníkových plynů ekonomicky účinným způsobem.  
+
+V letech 2013–2020 se obchodování s povolenkami účastnilo více než 11 000 firem. Patří mezi ně elektrárny a spalovací zařízení s výkonem nad 20 MW, rafinérie, koksovny, železárny a ocelárny, cementárny, výrobci skla, keramiky a cihel, celulózky a papírny, výrobci hliníku a chemický průmysl. Systém EU ETS pokrývá 45 % všech emisí oxidu uhličitého v EU.
 
 V roce 2020 proběhla reforma, která řeší například přebytek povolenek a snižující se motivaci k investování do čistých technologií. Od roku 2021 navrhuje Evropská komise udělat mnohé změny (např. revizi bezplatného přidělování povolenek) a zavést podpůrné mechanismy – Fond inovací a Modernizační fond. 
  
