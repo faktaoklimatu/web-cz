@@ -63,7 +63,6 @@ $(document).ready(function() {
     }
 
     $('#omnisearch').on('show.bs.modal', function (event) {
-        $("#searchbox").focus();
         var searchbox = $(this).find('#searchbox');
         // Init the search results.
         search(searchbox.val());
@@ -73,7 +72,10 @@ $(document).ready(function() {
             e.preventDefault();
             search(searchbox.val());
         });
-      })
+      });
+    $('#omnisearch').on('shown.bs.modal', function (event) {
+        $("#searchbox").focus();
+    });
 });
 
 var posts = []; // will hold the json array from your site.json file
