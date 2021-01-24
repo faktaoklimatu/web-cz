@@ -155,3 +155,15 @@ a.card:hover {
     height: 100px;
     padding: 10px 0 10px 30px;
 }
+
+#omnisearch {
+    #searchbox {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    #omnisearch .modal-lg {
+        max-width: 1140px;
+    }
+}

@@ -61,4 +61,82 @@ $(document).ready(function() {
     } else {
         $('.longread-toc').addClass('longread-toc-none');
     }
+
+    $('#omnisearch').on('show.bs.modal', function (event) {
+        $("#searchbox").focus();
+        var searchbox = $(this).find('#searchbox');
+        // Init the search results.
+        search(searchbox.val());
+
+        // Refresh results while user is typing.
+        searchbox.keyup(function (e) {
+            e.preventDefault();
+            search(searchbox.val());
+        });
+      })
 });
+
+var posts = []; // will hold the json array from your site.json file
+
+function search(searchStr) {
+	fetchSiteJson(function () {
+        var maxLength = 6;
+        var options = { 		// initialize options for fuse.js
+            shouldSort: true,
+            threshold: 0.3,
+            ignoreLocation: true,
+            maxPatternLength: 32,
+            minMatchCharLength: 1,
+            keys: [
+                {
+                    name: "title",
+                    weight: 0.2		// give title more importance
+                },
+                {
+                    name: "perex",
+                    weight: 0.3		// give perex more importance
+                },
+                {
+                    name: "content",
+                    weight: 0.6
+                }
+            ]
+        };
+
+        // initialize fuse.js library
+        var fuse = new Fuse(posts, options);
+        var results = fuse.search(searchStr); // invoke search method in fuse.js library
+
+        if (searchStr.length === 0) {
+            updateResults(posts.slice(0, maxLength), true); // if there are no search results, show some suggestions
+        } else {
+            updateResults(results, false);
+        }
+    });
+}
+
+function updateResults(results, isSuggestion) {
+    $('#omnisearch-suggestions-heading').text(isSuggestion ? 'Nejnovější' : 'Výsledky');
+
+    var resultsHtml = '';
+    results.forEach(function (res) {
+        item = res.url ? res : res.item;
+        resultsHtml += '<div class="col-lg-6 col-xl-4"><a href="' + item.url + '" class="preview-card card">' + item.html + '</a></div>';
+    });
+
+    $('#omnisearch-suggestions-list').html(resultsHtml);
+}
+
+function fetchSiteJson(callback) {
+    if (posts.length === 0) {
+        // fetch site.json file
+        jQuery.get("/search.json", function (data) {
+            posts = data;
+            callback();
+        }).fail(function() {
+            // TODO: handle failure gracefully.
+        });
+    } else { // we already have the posts so simply use it instead of downloading the file again
+        callback();
+    }
+}

@@ -1,0 +1,19 @@
+---
+layout: null
+---
+[
+  {%- assign objects = site.infografiky | concat: site.studie | sort: "published" | reverse %}
+  {%- for page in objects %}
+    {
+        "title" : "{{ page.title | strip_html }}",
+        "url" : "{{ page.url }}",
+        "slug" : "{{ page.slug }}",
+        "date" : "{{ page.date | date: "%b %d, %Y" }}",
+        {%- assign perex = page.caption | append: " " | append: page.perex %}
+        "perex" : "{{ perex }}",
+        "content" : "{{ page.content | strip | strip_html | strip_newlines | replace: '"', '' | slice: 0, 300 }}",
+        {%- capture html %}{% include preview-block.html item=page %}{%- endcapture %}
+        "html" : {{ html | jsonify }}
+    }{%- if forloop.last %}{% else %},{% endif %}
+  {%- endfor %}
+]

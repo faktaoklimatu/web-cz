@@ -36,6 +36,36 @@
                 {%- endif -%}
             {%- endfor %}
             </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#omnisearch">
+                <span class="btn-inner--icon"></span>
+                <span class="btn-inner--text">Hledat</span>
+            </button>
         </div>
     </div>
 </nav>
+
+
+<!-- Modal -->
+<div id="omnisearch" class="modal fade" tabindex="-1" aria-labelledby="Vyhledávání" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form onsubmit="return false;">
+                            <input id="searchbox" type="text" class="form-control" placeholder="Pište zde...">
+                        </form>
+                    </div>
+                    <div id="omnisearch-suggestions">
+                        <h2 id="omnisearch-suggestions-heading"></h2>
+                        <div id="omnisearch-suggestions-list" class="row">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
