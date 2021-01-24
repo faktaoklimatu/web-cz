@@ -12,7 +12,7 @@ data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxg
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2019" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
-Účelem této grafiky je srovnání dosavadního vývoje emisí CO2 a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5°C resp. více než 2°C a do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
+Účelem této grafiky je srovnání dosavadního vývoje emisí CO2 a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C resp. více než 2 °C a do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
 
 ## Co jsou emisní scénáře?
 
