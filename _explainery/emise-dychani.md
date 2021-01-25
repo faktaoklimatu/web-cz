@@ -10,7 +10,7 @@ weight:      74
 sitemap:     false
 cover-source-text: "Unsplash, dan carlson"
 cover-source-url: "https://unsplash.com/photos/G86MS2ZsiJA"
-# perex:     "O oxidu uhličitém slyšela většina lidí poprvé na základní škole v přírodopise, kde se dozvěděli, že oxid uhličitý vzniká při hoření a při dýchání. A také víme, že v místnosti může být vydýcháno, což prakticky znamená, že je tam více oxidu uhličitého, než by bylo příjemné. V souvislosti s klimatickou změnou se pak mluví o oxidu uhličitém jako o skleníkovém plynu a řeší se snižování emisí CO<sub>2</sub>. Je tedy na místě otázka, zda lidské  dýchání vlastně není podstatným zdrojem emisí CO<sub>2</sub>, zejména když je nyní na planetě 7 miliard lidí? V tomto clánku se podíváme na tedy podíváme na vliv dýchání člověka, dalších živočichů a rostlin podrobněji. "
+perex:     "O oxidu uhličitém slyšela většina lidí poprvé na základní škole v přírodopise, kde se dozvěděli, že oxid uhličitý vzniká při hoření a při dýchání. A také víme, že v místnosti může být vydýcháno, což prakticky znamená, že je tam více oxidu uhličitého, než by bylo příjemné. V souvislosti s klimatickou změnou se pak mluví o oxidu uhličitém jako o skleníkovém plynu a řeší se snižování emisí CO<sub>2</sub>. Je tedy na místě otázka, zda lidské  dýchání vlastně není podstatným zdrojem emisí CO<sub>2</sub>, zejména když je nyní na planetě 7 miliard lidí? V tomto clánku se podíváme na tedy podíváme na vliv dýchání člověka, dalších živočichů a rostlin podrobněji. "
 ---
 
 ## Vliv lidského dýchání
