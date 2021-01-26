@@ -11,14 +11,16 @@ weight:      73
 sitemap:     false
 cover-source-text: "Wikimedia"
 cover-source-url: "https://commons.wikimedia.org/wiki/File:Factory_of_National_Cement_Share_Company.jpg"
-perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody a omezení globálního oteplování na 1,5 °C nebo 2 °C bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
+perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
 ---
 
-## Co je cement?
 
-Cement je zásadní součástí betonu, ze kterého jsou postaveny mosty, budovy, přehrady -- prostě většina staveb, které kolem sebe vidíme. Celkově se na světě spotřebuje okolo [4 miliard tun betonu ročně](https://www.freedoniagroup.com/World-Cement.html).
+{% include preview-box.html
+    class="highlight-text-box"
+    text="**Beton** je směs písku nebo štěrku a cementu, který při tuhnutí betonu písková a štěrková zrna slepí. **Cement** samotný je směsí oxidu vápenatého (CaO) oxidu křemičitého (Si<sub>2</sub>O) a malých množství oxidů hliníku a železa -- podrobněji viz [Wikipedie](https://cs.wikipedia.org/wiki/Cement#Slo%C5%BEen%C3%AD_cementu).
+"
+%}
 
-Pro jistotu doplníme, že beton je tvořen směsí písku nebo štěrku, cementu, který při tuhnutí betonu písková a štěrková zrna "slepí" a vody, která způsobuje chemickou reakci tuhnutí a "slepení". Z chemického pohledu je cement směsí oxidu vápenatého (CaO) oxidu křemičitého (Si<sub>2</sub>O) a malých množství oxidů hliníku a železa (Al<sub>2</sub>O<sub>3</sub> a Fe<sub>2</sub>O<sub>3</sub>) -- podrobněji viz [Wikipedie](https://cs.wikipedia.org/wiki/Cement#Slo%C5%BEen%C3%AD_cementu).
 
 ## Proč výroba cementu produkuje tolik CO<sub>2</sub>?
 
@@ -27,7 +29,7 @@ Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450
 {:.equation}
 CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>
 
-Výroba jedné tuny cementu vytvoří asi 1–1,25 tun CO<sub>2</sub>, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina emisí z výroby cementu je způsobena touto chemickou reakcí, což je důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce. Zbytek emisí z výroby cementu souvisí se spalováním fosilních paliv při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů.
+**Výroba jedné tuny cementu vytvoří asi 1–1,25 tun CO<sub>2</sub>**, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina z těchto emisí souvisí se spalováním uhlí nebo plynu při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů. Druhá polovina emisí z výroby cementu je způsobena výše zmíněnou chemickou reakcí. To je také důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce. 
 
 ## A co beton? Neváže se CO<sub>2</sub> při tuhnutí betonu zpět?
 
@@ -35,7 +37,7 @@ Tuhnutí betonu a tuhnutí malty jsou dva chemicky velmi odlišné procesy, a je
 
 Tuhnutí betonu je ale jiný a v jistém smyslu složitější proces. Nezpůsobuje jej reakce se vzduchem, ale reakce s vodou, při které vznikají tzv. [hydratační produkty](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf). To jsou sloučeniny obsahující chemicky vázanou (krystalovou) vodu. Tyto hydratační produkty jsou ve vodě nerozpustné a velmi pevné. K vázání CO<sub>2</sub> při tom nedochází a ztuhlý beton vápenec téměř neobsahuje.
 
-K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při tzv. korozi betonu, neboli zvětrávání, kdy působením vody a oxidu uhličitého vzniká zejména na povrchu betonu vápenec. Tento proces je ale nežádoucí, zhoršuje kvalitu betonu a proto se mu snažíme zabránit.
+K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrávání betonu, kdy působením vody a oxidu uhličitého vzniká zejména na povrchu betonu vápenec. Tento proces je ale nežádoucí, zhoršuje kvalitu betonu a proto se mu snažíme zabránit.
 
 ## Které státy mají vysoké emise z výroby cementu?
 
@@ -43,7 +45,7 @@ K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při tzv. kor
 
 ## Kolik emisí pochází z produkce cementu v Česku?
 
-Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR asi 1,7 milionů tun CO<sub>2</sub> jako důsledek procesu reakce. Emise vycházející ze spalování CO<sub>2</sub> při výrobě Eurostat samostatně neuvádí, ale na základě známých parametrů efektivity lze očekávat, že budou okolo 1,7–1,9 milionů tun CO<sub>2</sub>. Celkové emise spojené s výrobou cementu v ČR jsou tedy 3,4–3,6 milionů tun CO<sub>2</sub>, což je přibližně 2,7 % celkových emisí skleníkových plynů v ČR. (V údaji 2,7 % je započtena celková produkce všech skleníkových plynů v ČR, vč. methanu, N<sub>2</sub>O a dalších, formou přepočtu na ekvivalentní množství CO<sub>2</sub>.)
+Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR asi 1,7 milionů tun CO<sub>2</sub> jako důsledek procesu reakce. Emise vycházející ze spalování CO<sub>2</sub> při výrobě Eurostat samostatně neuvádí, ale na základě známých parametrů efektivity lze očekávat, že budou okolo 1,7–1,9 milionů tun CO<sub>2</sub>. Celkové emise spojené s výrobou cementu v ČR jsou tedy 3,4–3,6 milionů tun CO<sub>2</sub>, což je přibližně 2,7 % celkových emisí skleníkových plynů v ČR. (V tomto údaji 2,7 % je započtena celková produkce všech skleníkových plynů v ČR, vč. methanu, N<sub>2</sub>O a dalších, formou přepočtu na ekvivalentní množství CO<sub>2</sub>.)
 
 ## Je možné emise z výroby cementu snížit?
 
