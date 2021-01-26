@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Jakým ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře? (neveřejné)"
+title:       "Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře? (neveřejné)"
 slug:        "emise-dychani"
 published:   2021-01-15
 author:      "Ondráš Přibyla"
@@ -23,22 +23,27 @@ Samozřejmě skupina lidí v uzavřené místnosti - například třída student
 
 ## Dýchání a fotosyntéza rostlin
 
-Ve dne, kdy svítí slunce a probíhá fotosyntéza, rostliny z oxidu uhličitého a vody vyrábí kyslík a sacharidy. Kyslík vypouští do atmosféry a sacharidy si nechávají v buňkách jako zdroj energie, nebo jako stavební materiál pro další části rostliny. Naopak v noci, probíhá takzvané buněčné dýchání, proces se obrátí a rostliny kyslík spotřebovávají a vydechují oxid uhličitý.
+Ve dne, kdy svítí slunce a probíhá **fotosyntéza**, rostliny z oxidu uhličitého a vody vyrábí kyslík a sacharidy. Kyslík vypouští do atmosféry a sacharidy si nechávají v buňkách jako zdroj energie, nebo jako stavební materiál pro další části rostliny. Naopak v noci, probíhá takzvané **buněčné dýchání**, proces se obrátí a rostliny kyslík spotřebovávají a vydechují oxid uhličitý.
 
 {:.equation}
 CO<sub>2</sub> + H<sub>2</sub>O ⟷ O<sub>2</sub> + sacharidy.
 
 Je důležité si uvědomit, že když se díváte list salátu nebo kmen starého dubu jsou tvořeny z velké části uhlíkem, který rostlina navázala ze vzduchu. Jinak řečeno, rostliny dokáží oxid uhličitý z atmosféry odebírat a ukládat jej do svých těl. Jak se to projevuje na koncentracích CO<sub>2</sub> v atmosféře? 
 
+### Změny koncentrací mezi dnem a nocí
 
-Rostlina přece získává uhlík z půdy. To není pravda. Rostliny z půdy získávají vodu a ve vodě rozpustné živiny, ale uhlík, jako základní stavební prvek pro svá těla, získávají pouze ze vzduchu. Kdyby stromy získávaly uhlík z půdy, musela by být kolem každého staršího stromu pořádná díra.
+Rozdíl mezi dnem a nocí, tedy fotosyntézou a buňečným dýcháním, by se měl projevit na místních koncentracích CO<sub>2</sub>. Ve dne by se koncentrace CO<sub>2</sub> měly snižovat, v noci zvyšovat.  S tímto jevem se poprvé setkal při svých prvních měřeních Charles Keeling v roce 1956. V článku [Story of atmoshperic CO<sub>2</sub> measurements](https://pubs.acs.org/doi/pdf/10.1021/ac1001492) popisují autoři problémy, se kterými tehdy v Kalifornii potýkal:
 
-A co sezónní cykly? Většina rostlin či obilí, které jíme, vyroste v létě. V zimě mají naopak stromy spadané listí a k fotosyntéze nedochází... To je pravda a je to vidět na zaznamenaných koncentracích CO<sub>2</sub> v atmosféře. Měření sice pocházejí z Mauna Loa na Havaji, uprostřed Tichého oceánu, ale je na nich vidět, že každý rok v průběhu vegetační sezóny na severní polokouli, zhruba od května do října, koncentrace CO<sub>2</sub> klesají. V řijnu dosahují minima a pak zase rostou až do května dalšího roku.
+*...vzduch během slunných odpolední měl koncentrace  CO<sub>2</sub> blízké 310 ppm, ale během nocí ukazovaly měření různé hodnoty. Stejnou charakteristiku vykazovaly měření z různýh míst. Vysvětlení nalezl v knize "Klimatické podmínky blízko zemského povrchu". Během jasných dní slunce ohřívalo vzduch poblíž povrchu, který stoupal a tím se dobře promíchával s vyššími vrstvami asmosféry, což způsobovalo téměř konstatntní výsledky měření blízké hodnotě 310 ppm. Během nocí, zejména když nefoukal vítr, se blízko zemského povrchu vytvářela vrstva chladnějšícho a relativně stabilního vzduchu, ve které se během noci hromadil oxid uhličitý, který produkovaly rostliny při dýchání. Aby mohl měřit koncetrace bez těchto vlivů přesunul Keeling svá měření na vrchol hory Mauna Loa na Hawai,  3400 metrů nad mořem uprostřed Tichého Oceánu.* (volný překlad/výtah z článku)
+
+### Změny koncentrace v průběhu roku 
 
 {% include preview-box.html
-    title="Delší řada koncentrace CO<sub>2</sub>"
-    text="Rekonstrukce historických hodnot koncentrace CO<sub>2</sub> za posledních 800 tisíc let."
-    slug="koncentrace-co2"
+    title="Sezónní cykly koncentrace CO<sub>2</sub>"
+    text="Koncentrace CO<sub>2</sub> v průběhu roku pravidelně kolísá, nejvyšších hodnot dosahuje vždy v květnu, nejnižších v září."
+    slug="cykly-koncentrace-co2"
 %}
 
-A co spalování fosilních paliv -- ty jsou přece také z rostlin? [...]
+Další kolísání koncentrací způsobují rostliny během roku. Na jaře a v létě, kdy je dostatek slunečního svitu, převažuje fotosyntéza a rostliny zabudovávají oxid uhličitý ze vzduch do svých listů a kmenů. Na podzim a v zimě je slunečního svitu méně, převažuje dýchání a rostliny oxid uhličitý do atmosféru uvolňují. K tomu přispívá také třeba rozklad listů, které opadavé stromy na podzim shazují. A protože mnohem více lesů je na severní polokouli, celosvětové koncentrace klesají od května do září, tedy v době, kdy je léto na severní polokouli. Zároveň toto kolísání koncentrací je výrazně větší na měřících stanicích na severní polokouli (až 20 ppm na severu Aljašky), směrem k rovníku se snižuje (na Hawai okolo 5 ppm) a na jižním pólu je téměř nulové, jak ukazuje [podrobnější analýza NOAA](https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_trend.html), případně [animovan8 grafika NOAA](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html).
+
+## Ukládání CO2 do dřevní hmoty a půdy
