@@ -23,7 +23,7 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
                 <p style="font-weight:bold; color: #000080;">{{ item.title }}</p>
             </div>
             <div class="d-inline-block summary">
-                {{ item.text | markdownify }}
+                {{ item.text | markdownify -}}
             </div>
         </div>
         {%- endfor %}
@@ -49,9 +49,11 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
                         </h5>
                         <h6 class="card-subtitle mb-2 text-muted text-center">{{ item.position }}</h6>
                         <p class="card-text text-center">{{ item.summary }}</p>
+                        {%- if item.email %}
                         <div class="mt-auto text-center">
-                            <a class="align-self-end" href="mailto:{{ item.email}}">{{ item.email }}</a>
+                            <a class="align-self-end" href="mailto:{{item.email }}">{{ item.email }}</a>
                         </div>
+                        {% endif -%}
                     </div>
                 </div>
             </div>
