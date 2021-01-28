@@ -27,9 +27,9 @@ collections:
     datasets:
         output: true
         permalink: /datasety/:title
-    explainery:
+    explainers:
         output: true
-        permalink: /:collection/:title
+        permalink: /explainery/:title
 
 # Set topic permalinks in local language
 jekyll-archives:
