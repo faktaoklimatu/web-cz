@@ -31,14 +31,14 @@ V současnosti je Evropská zelená dohoda [24-stránkový dokument](https://ec.
 
 {% include figure.html
     name="zavazky.jpg"
+    alt="Cíle Evropské zelené dohody"
     source-text="Evropská komise"
     source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 %}
 
-
 ## Jaké konkrétní kroky dohoda navrhuje?
 
-### Výroba elektřiny a tepla 
+### Výroba elektřiny a tepla
 
 V praxi dohoda cílí nejvíce na energetický sektor, který v EU produkuje největší množství emisí skleníkových plynů. Cílem je téměř **kompletní dekarbonizace energetiky** tedy odstoupení od využívání uhlí, zemního plynu a ropy a jejich nahrazení obnovitelnými nebo jadernými zdroji. Evropská komise doporučuje především stavbu pobřežních větrných elektráren, které jsou nyná nejlevnějším a nejefektivnějším obnovitelným zdrojem elektřiny. Na využití jaderné energie není v EU shoda. Zatímco některé státy novým jadenrým elektrárnám odporují, pro jiné státy (včetně Česka) byla možnost jejich výstavby podmínkou pro souhlas s přijetím dohody.
 
@@ -46,6 +46,7 @@ Dále EU usiluje o **úspory energie** (snížení energetické náročnosti bud
 
 {% include figure.html
     name="principy.jpg"
+    alt="Principy Evropské zelené dohody"
     source-text="Evropská komise"
     source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 %}
@@ -62,6 +63,7 @@ Dohoda cílí na **rozšíření ekologického zemědělství a snížení množ
 
 {% include figure.html
     name="strategie.jpg"
+    alt="Strategie Evropské zelené dohody"
     source-text="Evropská komise"
     source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 %}
@@ -92,6 +94,7 @@ Tento investiční plán bude vyžadovat rozsáhlé změny v systémech evropsk�
 
 {% include figure.html
     name="rizika.jpg"
+    alt="Ekonomické důsledky nenaplnění Evropské zelené dohody"
     source-text="Evropská komise"
     source-url="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 %}
