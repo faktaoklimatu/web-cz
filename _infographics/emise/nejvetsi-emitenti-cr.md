@@ -7,39 +7,28 @@ published:  2021-07-20
 weight:     98
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
-caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR za jeden rok v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 129,39 mil. tun (údaj z roku 2018). V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele."
+caption:    "Téměř polovinu roční produkce skleníkových plynů vypustí několik desítek producentů - elektráren, železáren, cementáren a rafinerií. Většina z nich se nachází v Ústeckém nebo Moravsko-slezském kraji. "
 dataset:    "emise-cr"
 ---
 
-## Jak číst tento graf? Co vidíme v mapě?
+## Co vidíme v mapě?
 
-* Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>
 
-* Mapa zobrazuje 31 největších emitentů v České republice podle množství potvrzených emisí z emisního povolenkového systému EU ETS. V mapě jsou zobrazeni emitenti podílející se na 86.5 % emisí z celkového počtu potvrzených emisí ze systému EU ETS pro Českou republiku. V poměru k ročnímu objemu emisí České republiky (129.39 mil. TCO2eq) je na mapě 	zobrazeno 45 % z celkového množství.   	
+* Mapa zobrazuje 31 největších zdrojů emisí skleníkových plynů v České republice - elektrárny a teplárny, ocelárny, cementárny a rafinerie. Zobrazené zdroje pokrývají 87 % emisí pokrytých emisními povolenkami ze systému EU ETS pro Českou republiku a celkově 45 % ročních emisí skleníkových plynů České republiky. 
 
-* U každého bodu je pomocí čtverců znázorněno množství emisí emitující daným zařízením (jeden čtverec udává 250 000 tCO2eq). Barvy čtverců odlišují jednotlivá zařízení podle typu hlavní aktivity, a to na: elektrárny a teplárny, vápenky a cementárny, rafinérie, železárny a ocelárny.
-V oblasti Západních Čech je nakumulována většina zařízení určených k výrobě elektřiny a tepla, oproti tomu v Moravskoslezském kraji jsou hlavními emitenty podniky určené k výrobě železa a oceli. Významným emitentem emisí CO2 jsou také cementárny, jejichž celkový příspěvek podle ETS v roce2018 činil 3.5 Megatun CO2 ekv. 
+* U každého zdroje je znázorněno množství vytvořených emisí, jeden čtvereček odpovídá 250 000 <glossary id="co2eq">t CO<sub>2</sub>eq</glossary>). Barvy odlišují jednotlivá zařízení podle typu hlavní aktivity: elektrárny a teplárny, vápenky a cementárny, rafinérie, železárny a ocelárny.
+V oblasti Západních Čech je nakumulována většina zařízení určených k výrobě elektřiny a tepla, oproti tomu v Moravskoslezském kraji jsou hlavními emitenty podniky určené k výrobě železa a oceli. Významným zdrojem emisí CO<sub>2</sub> jsou také cementárny, jejichž celkový příspěvek byl v roce 2018 činil 3,5 Mt CO<sub>2</sub>eq. 
+
+* Prakticky všechny zobrazené zdroje produkují pouze CO<sub>2</sub>, pouze rafinerie mohou vedle CO<sub>2</sub> vytvářet další skleníkové plyny. V rámci systému obchodování s emisními povolenkami EU ETS i v naší grafice jsou jiné skleníkové plyny než oxid uhličitý převedeny na ekvivalentní množství CO<sub>2</sub>, označované <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
+
+## Další poznámky
+
+* Protože jsou údaje z roku 2018, některé podniky již omezily či ukončily provoz v důsledku růstu cen emisních povolenek, nebo prošly rozsáhlejší ekologizací.  Například v roce 2020 byl ukončen provoz první hnědouhelné elektrárny Prunéřov I, a tak v provozu nadále zůstává pouze Elektrárna Prunéřov II. Potvrzené emise Prunéřova se tímto snížily o 50 %.
+
+* Evropský ETS byl spuštěn v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Data z EU ETS poskytují souhrnné údaje o emisích a povolenkách podle zemí, odvětví a roku a pocházejí hlavně z protokolu transakcí EU EUTL. Data jsou poskytována Evropskou komisí a spravována Evropskou agenturou pro ochranu životního prostředí.
 
 ČEZ vlastní 10 zařízení, další jsou ve vlastnictví Sev.en Energy, SKupina TAURON a skupina ArcelorMittal Steel 
 
-Poznámky:
-Protože jsou údaje z roku 2018, některé podniky již ukončily provoz či prošly rozsáhlou ekologizací v důsledku stoupajícího tlaku ze strany ETS (zdražování povolenek, větší množství povolenek odebraných z trhu). Například v roce 2020 byl ukončen provoz první hnědouhelné elektrárny Prunéřov I, a tak v provozu nadále zůstává pouze Elektrárna Prunéřov II. Potvrzené emise Prunéřova se tímto snížily o 50 %.
-
-Poznámky k datům o emisích:
-Evropský ETS byl spuštěn v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví.
-Data z  EU ETS poskytují souhrnné údaje o emisích a povolenkách podle zemí, odvětví a roku a pocházejí hlavně z protokolu transakcí EU EUTL
-Data jsou poskytována Evropskou komisí a spravována Evropskou agenturou pro ochranu životního prostředí (ale?)
-
-* Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
-* Roční objem emisí České republiky je 129,39 mil. tun CO<sub>2</sub>eq (údaj z roku 2018). __V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele.__
-* V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential)
-* __Energetika:__ 51,07 milionů tun CO<sub>2</sub> (39,5 % celkových emisí, 4&thinsp;810 kg CO<sub>2</sub>eq na obyvatele ročně). Emise v energetice pochází především ze spalování hnědého uhlí v elektrárnách, z výroby tepla a výroby paliv. Emise skleníkových plynů pocházející z energetiky je možné snížit energetickými úsporami a rozvojem obnovitelných a nízkouhlíkových zdrojů energie.
-* __Doprava:__ 20,3 mil. tun CO<sub>2</sub> (15,7 % celkových emisí, 1&thinsp;910 kg CO<sub>2</sub>eq na obyvatele ročně). Emise pocházejí hlavně z osobní a nákladní automobilové dopravy. Vlaková doprava je v grafu započtena, ale její příspěvek je příliš malý na to, aby se zobrazil. Příspěvek letecké dopravy odpovídá emisím vyprodukovaným z letů z letišť v ČR. Je tedy pravděpodobně podhodnocený (mnoho Čechů létá z Vídně či Bratislavy) a neodpovídá zcela množství emisí, které Češi způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do zobrazených emisí jen jako Praha–Amsterdam, zatímco emise z letu Amsterdam–New York se započtou Nizozemí). Není také započítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt. Snížit emise z dopravy je možné přechodem na nízkouhlíková paliva (např. na elektřinu, biometan nebo vodík), zvýšením podílu vlakové a autobusové dopravy a snížením nutnosti přepravy jako takové (což může znamenat třeba bydlet blíže práci).
-* __Průmyslové procesy:__ 16,26 mil. tun CO<sub>2</sub> (12,6 % celkových emisí, 1&thinsp;530 kg CO<sub>2</sub>eq na obyvatele ročně). Emise z průmyslových procesů, při kterých dochází k uvolňování skleníkových plynů do atmosféry jinak než spalováním fosilních paliv – patří sem například výroba cementu, výroba železa a oceli apod.
-* __Spalování v průmyslu:__ 9,96 mil. tun CO<sub>2</sub> (7,7 % celkových emisí, tedy 940 kg CO<sub>2</sub>eq na obyvatele ročně). Jedná se o emise, které pochází ze spalování fosilních paliv pro potřeby průmyslu, typicky když je při výrobě potřeba něco zahřívat (destilace, sušení, tavení apod.).
-* __Spalování v domácnostech, institucích a zemědělství:__ 13,15 mil. tun CO<sub>2</sub> (10,2 % celkových emisí, tedy 1240 kg CO<sub>2</sub>eq na obyvatele ročně). Jde o topení a ohřev vody (pokud energie není dodávána z teplárny), vaření apod. Také sem patří spalování pohonných hmot v zemědělství a lesnictví.
-* __Odpadové hospodářství:__ 5,7 mil. tun CO<sub>2</sub>eq ročně (4,4 % celkových emisí, 540 kg CO<sub>2</sub>eq na obyvatele ročně). Emise z odpadového hospodářství produkují především skládky odpadu, ze kterých do atmosféry uniká metan, který vzniká rozkladem biologicky rozložitelného materiálu v tělese skládky. Řešením je zákaz skládkování využitelných odpadů po vzoru většiny zemí EU a využití biologicky rozložitelných odpadů k produkci biometanu pro užití namísto zemního plynu například v dopravě.
-* __Zemědělství:__ 8,61 mil. tun CO<sub>2</sub>eq (6,7 % celkových emisí, 810 kg CO<sub>2</sub>eq na obyvatele ročně). Emise v zemědělství pochází především z chovu hospodářských zvířat (4,1 mil. tun) v podobě emisí metanu a také z obdělávání půdy a s tím spojenými emisemi N<sub>2</sub>O (4,23 mil. tun CO<sub>2</sub>eq). K omezení emisí metanu ze zemědělství by pomohlo snížení počtu chovaného dobytka (a s tím související snížení spotřeby hovězího masa a mléčných výrobků), správné nakládání se statkovými hnojivy (například jejich stabilizací v bioplynových stanicích) a méně intenzivní hnojení průmyslovými hnojivy.
 
 ## Poznámky k datům o emisích
 
