@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 7rem;
+}
+
 body {
     padding-top: 56px;
     font-family: 'Source Sans Pro', sans-serif !important;
@@ -29,15 +33,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; }
 .display-1 { font-size: 4.5rem; }
 .display-2 { font-size: 2.5rem; text-transform: none; }
 .display-3 { font-size: 1.75em; margin: 0rem}
-
-// Fix anchor links
-h1::before, h2::before, h3::before, h4::before {
-    display: block;
-    visibility: hidden;
-    height: 7rem;
-    margin-top: -7rem;
-    content: " ";
-}
 
 /* Links */
 
@@ -308,10 +303,6 @@ details {
         h2, h3, h4 {
             display: inline;
             margin-left: 0.5em;
-        }
-
-        h2::before, h3::before, h4::before {
-            content: none;
         }
     }
 
