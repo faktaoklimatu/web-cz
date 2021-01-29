@@ -55,7 +55,7 @@ $(document).ready(function() {
             contentSelector: '.longread',
             headingSelector: 'h2, h3',
             headingsOffset: -780,
-            smoothScroll: false,
+            scrollSmooth: false,
         });
         $('.longread-toc').removeClass('invisible');
     } else {
