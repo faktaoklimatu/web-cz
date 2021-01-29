@@ -33,5 +33,4 @@ V oblasti Západních Čech je nakumulována většina zařízení určených k 
 
 * Evropský ETS byl spuštěn v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Data z EU ETS poskytují souhrnné údaje o emisích a povolenkách podle zemí, odvětví a roku a pocházejí hlavně z protokolu transakcí EU EUTL. Data jsou poskytována Evropskou komisí a spravována Evropskou agenturou pro ochranu životního prostředí.
 
-
-
+* Uhelné elektrárny na světě je možné zobrazit a [interaktivní mapě](https://www.carbonbrief.org/mapped-worlds-coal-power-plants). 
