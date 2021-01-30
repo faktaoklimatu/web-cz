@@ -31,7 +31,7 @@ V oblasti Západních Čech je nakumulována většina zařízení určených k 
 
 ## Další poznámky
 
-* Protože jsou údaje z roku 2018, některé podniky již omezily či ukončily provoz v důsledku růstu cen emisních povolenek nebo prošly rozsáhlejší ekologizací.  Například v polovině roku 2020 byl ukončen provoz hnědouhelné Elektrárny Prunéřov I, a tak v provozu nadále zůstává pouze Elektrárna Prunéřov II. Emise Prunéřova se tímto sníží asi o 50 %.
+* Protože jsou údaje z roku 2018, některé podniky již omezily či ukončily provoz v důsledku růstu cen emisních povolenek nebo prošly rozsáhlejší ekologizací.  Například v polovině roku 2020 byl ukončen provoz hnědouhelné Elektrárny Prunéřov I, a tak v provozu nadále zůstává pouze Elektrárna Prunéřov II. Emise Prunéřova se tímto do budoucna sníží asi o 50 % oproti tomu, co zobrazujeme v infografice.
 
 * Evropský ETS byl spuštěn v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Data z EU ETS poskytují souhrnné údaje o emisích a povolenkách podle zemí, odvětví a roku a pocházejí hlavně z protokolu transakcí EU EUTL. Data jsou poskytována Evropskou komisí a spravována Evropskou agenturou pro ochranu životního prostředí.
 
