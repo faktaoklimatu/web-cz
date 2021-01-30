@@ -1,7 +1,7 @@
 WEB_CORE_FOLDER=web-core
 
 all web check local deploy clean reinstall container build-container delete-container: web-core
-	cd $(WEB_CORE_FOLDER) && make $@
+	$(MAKE) -C $(WEB_CORE_FOLDER) $@
 
 web-core:
 	git submodule update --init --recursive
