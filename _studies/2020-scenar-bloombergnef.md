@@ -12,17 +12,17 @@ data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUA
 data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ] ]
 ---
 
-{% include local-includes/energeticke-scenare/jak-cist.md %}
+{% include includes-local/energeticke-scenare/jak-cist.md %}
 
 ## Metodické komentáře ke grafice
 
-{% include local-includes/energeticke-scenare/rozdeleni-zdroju-2019.md %}
+{% include includes-local/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
 Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
 
-{% include local-includes/energeticke-scenare/emise.md %}
+{% include includes-local/energeticke-scenare/emise.md %}
 
 ## O studii BloombergNEF
 

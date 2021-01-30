@@ -14,11 +14,11 @@ data-orig:
   - [ "Podrobná zpráva (EN)", "https://ember-climate.org/project/coal-free-czechia-2030/" ]
 ---
 
-{% include local-includes/energeticke-scenare/jak-cist.md %}
+{% include includes-local/energeticke-scenare/jak-cist.md %}
 
 ## Metodické komentáře ke grafice
 
-{% include local-includes/energeticke-scenare/rozdeleni-zdroju-2019.md %}
+{% include includes-local/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
@@ -27,7 +27,7 @@ Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, a
 * **Plyn:** Studie Ember jako plyn označuje pouze paroplynové elektrárny a nové plynové kogenerační jednotky, protože stávající kogenerační jednotky nejsou předmětem optimalizace v jejich modelu. My je k této kategorii přidáváme, konkrétně kategorii _Other thermal_ z jejich podkladových dat. Kromě stávajících kogeneračních jednotek jsou v kategorii _Other thermal_ další zařízení, jako například spalovny odpadu. Ty jsou ovšem zanedbatelné instalovaným výkonem i výrobou, a tak jejich zařazení do kategorie plyn nemá znatelný vliv na grafiku ani na odhad emisí.
 * **Biomasa a bioplyn:** Studie tuto kategorii neuvádí (protože není předmětem optimalizace v modelu). My do ní z podkladových dat vybíráme kategorii _Other renewable_, což je v naprosté většině právě biomasa a bioplyn (kromě toho také biologicky rozložitelný komunální odpad).
 
-{% include local-includes/energeticke-scenare/emise.md %}
+{% include includes-local/energeticke-scenare/emise.md %}
 
 Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí pouze z výroby elektřiny**. Studie zahrnuje také transformaci teplárenství, která by vedla k dalším úsporám emisí z výroby tepla. Tyto úspory infografika nevyčísluje (pro srovnatelnost s dalšími scénáři, které teplárenství neřeší).
 
