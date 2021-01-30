@@ -17,4 +17,4 @@ Stav v roce 2019 a stav v roce 2030 podle tohoto scénáře srovnáváme ve dvou
 
 **Emise skleníkových plynů:** Postupný odklon od fosilních zdrojů a nejvíce pak od uhlí znamená snížení emisí skleníkových plynů. Každá studie takové snížení počítá pomocí vlastní metodiky (a nebo nepočítá vůbec). Proto pro všechny studie **uvádíme náš výpočet snížení emisí**, založený na rozdílu v mixu výroby mezi lety 2019 a 2030 a na emisních koeficientech od <glossary id=ipcc>IPCC</glossary>. Více o metodice výpočtu najdete níže.
 
-{% include local-includes/energeticke-scenare/v-cem-se-shoduji.md %}
+{% include includes-local/energeticke-scenare/v-cem-se-shoduji.md %}

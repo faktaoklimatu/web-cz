@@ -17,17 +17,17 @@ data-orig:
   - [ "Doplňující analýza citlivosti", "https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf" ]
 ---
 
-{% include local-includes/energeticke-scenare/jak-cist.md %}
+{% include includes-local/energeticke-scenare/jak-cist.md %}
 
 ## Metodické komentáře ke grafice
 
-{% include local-includes/energeticke-scenare/rozdeleni-zdroju-2019.md %}
+{% include includes-local/energeticke-scenare/rozdeleni-zdroju-2019.md %}
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
 Čísla udávaná ve studii dobře odpovídají naší kategorizaci, takže je přímo přebíráme.
 
-{% include local-includes/energeticke-scenare/emise.md %}
+{% include includes-local/energeticke-scenare/emise.md %}
 
 ## O studii Energynautics
 

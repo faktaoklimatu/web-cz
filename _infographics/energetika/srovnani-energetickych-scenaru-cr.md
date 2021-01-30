@@ -42,7 +42,7 @@ Scénáře se liší v **míře předvídaného [uhelného phase-outu](/infograf
 
 Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Například scénář Energynautics se zaměřuje na stabilitu přenosové soustavy, a proto stanovuje instalovaný výkon jednotlivých zdrojů na základě expertních odhadů. Naopak scénáře Ember a BloombergNEF hledají změny v instalovaném výkonu pomocí tržní optimalizace. Scénář Ember při tom zkoumá, jak by vypadala varianta úplného uhelného phase-outu, zatímco scénář BloombergNEF posuzuje variantu s celkově nejnižšími náklady.
 
-{% include local-includes/energeticke-scenare/v-cem-se-shoduji.md %}
+{% include includes-local/energeticke-scenare/v-cem-se-shoduji.md %}
 
 ## Metodické komentáře ke grafice
 
@@ -65,4 +65,4 @@ Kromě toho zbývá malá kategorie ostatní výroby, kterou pro přehlednost ne
 
 **[NECP](/studie/2019-scenar-necp):** Čísla o výrobě přebíráme přímo ze studie (ve skutečnosti jsou kombinací dvou tabulek, jedna udává výrobu z obnovitelných zdrojů v TJ, druhá výrobu z konvenčních zdrojů v TWh).
 
-{% include local-includes/energeticke-scenare/emise.md %}
+{% include includes-local/energeticke-scenare/emise.md %}
