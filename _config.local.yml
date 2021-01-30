@@ -15,21 +15,31 @@ keywords: klima, změna klimatu, infografiky
 
 # Set permalinks in local language
 collections:
-    infographics:
-        output: true
-        permalink: /infografiky/:title
-    pages:
-        output: true
-        permalink: /:title
-    studies:
-        output: true
-        permalink: /studie/:title
-    datasets:
-        output: true
-        permalink: /datasety/:title
-    explainers:
-        output: true
-        permalink: /explainery/:title
+  pages:
+    output: true
+    permalink: /:title
+    title: stránky
+    weight: 0
+  infographics:
+    output: true
+    permalink: /infografiky/:title
+    title: infografiky
+    weight: 1
+  explainers:
+    output: true
+    permalink: /explainery/:title
+    title: explainery
+    weight: 2
+  studies:
+    output: true
+    permalink: /studie/:title
+    title: studie a rešerše
+    weight: 3
+  datasets:
+    output: true
+    permalink: /datasety/:title
+    title: datasety
+    weight: 4
 
 # Set topic permalinks in local language
 jekyll-archives:
