@@ -2,6 +2,7 @@
 layout:     empty
 title:      Děkujeme za podporu!
 slug:       dekujeme
+extrascripts: thankyou
 sitemap:    false
 ---
 <div class="section">
