@@ -18,6 +18,15 @@ Celkové emise za rok 2019 byly
 
 ## Více o použití jednotlivých paliv a cementu
 
+<<<<<<< HEAD
+=======
+{% include preview-box.html
+    title="Výroba elektřiny z různých zdrojů "
+    text="Rekonstrukce historických hodnot koncentrace CO<sub>2</sub> za posledních 800 tisíc let."
+    slug="elektrina-svet"
+%} 
+
+>>>>>>> Rešerše, kusy textu
 ### Uhlí
 
 Uhlí se spaluje především při výrobě elektřiny a tepla a v průmyslu pro tavení železa, skla nebo zahřívání například při výrobě cementu.   
@@ -27,11 +36,15 @@ Nejvíce uhlí se těží v Číně USA a Indii.
 
 Na grafu je vidět pozoruhodný nárůst emisí a tedy i spotřeby uhlí po roce 2000, který byl způsoben prakticky výhradně nárůstem spotřeby v Číně, Indii a dalších Asijských zemích. Spotřeba uhlí v EU a USA v posledních desetiletích klesá. 
 
+<<<<<<< HEAD
 {% include preview-box.html
     title="Výroba elektřiny z různých zdrojů "
     text="Rekonstrukce historických hodnot koncentrace CO<sub>2</sub> za posledních 800 tisíc let."
     slug="elektrina-svet"
 %}
+=======
+
+>>>>>>> Rešerše, kusy textu
 
 ### Ropa
 
@@ -40,6 +53,11 @@ Celkově se za rok 2019 vytěžilo přibližně 100 miliónů barelů ropy, což
 https://www.eia.gov/outlooks/steo/report/global_oil.php
 Doprava ropy
 
+<<<<<<< HEAD
+=======
+Ropná krize roku 1979 https://en.wikipedia.org/wiki/1979_oil_crisis
+
+>>>>>>> Rešerše, kusy textu
 
 ### Plyn
 
