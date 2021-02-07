@@ -7,11 +7,60 @@ published:  2021-02-04
 weight:     95
 tags-scopes: [ svět ]
 tags-topics: [ emise, energetika ]
-caption:    ""
+caption:    "Světové emise CO<sub>2</sub> ze spalování uhlí, ropy a plynu za posledních 60 let narostly čtyřnásobně. K dosažení uhlíkové neutrality bude potřeba aby klesly praticky na nulu. "
 dataset:    "emise-fosilni-paliva"
 ---
 
 ## Jak číst tento graf?
+
+* Graf ukazuje světové emise ze spalování uhlí, ropy a zemního plynu a pro srovnání také emise z výroby cementu
+Celkové emise za rok 2019 byly 
+
+## Více o použití jednotlivých paliv a cementu
+
+### Uhlí
+
+Uhlí se spaluje především při výrobě elektřiny a tepla a v průmyslu pro tavení železa, skla nebo zahřívání například při výrobě cementu.   
+Celkově se za rok 2019 vytěžilo přibližně 8 miliard tun uhlí https://www.iea.org/reports/coal-information-overview
+
+Nejvíce uhlí se těží v Číně USA a Indii. 
+
+Na grafu je vidět pozoruhodný nárůst emisí a tedy i spotřeby uhlí po roce 2000, který byl způsoben prakticky výhradně nárůstem spotřeby v Číně, Indii a dalších Asijských zemích. Spotřeba uhlí v EU a USA v posledních desetiletích klesá. 
+
+{% include preview-box.html
+    title="Výroba elektřiny z různých zdrojů "
+    text="Rekonstrukce historických hodnot koncentrace CO<sub>2</sub> za posledních 800 tisíc let."
+    slug="elektrina-svet"
+%}
+
+### Ropa
+
+Témeř všechna ropa - či přesněji řečeno benzín a nafta z ropy vyrobené - se spaluje v dopravě 
+Celkově se za rok 2019 vytěžilo přibližně 100 miliónů barelů ropy, což odpovídá přibližně 12 miliónům m3 
+https://www.eia.gov/outlooks/steo/report/global_oil.php
+Doprava ropy
+
+
+### Plyn
+
+Kde se spaluje elektřina, teplo ale také vaření
+
+Doprava plynu
+
+Mezi největší producenty patří USA (21%), Rusko (17%) a státy Perského zálivu (dohromady 18%)
+Celkově se za rok 2019 vytěžilo 4000 miliard m3 
+https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/energy-economics/statistical-review/bp-stats-review-2019-natural-gas.pdf
+Supply chain emissions (fugitive + flaring)
+
+
+### Cement
+
+
+
+- člověk má dojem, že emise neklesají vůbec, ale ony klesají v určitých regionech.
+- vysvětlit rozdílné použití a charakteristiky: auto na uhlí nejezdí + emise z těžby + emisní intenzita při výrobě elektřiny
+- sektor využití: výroba elektřiny, doprava, spalování v průmyslu, ...
+- ad cement - vysvětlit, zda jde o emise z reakce nebo i ze spalování
 
 * Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 * V levé části jsou celkové roční emise členských států EU za rok 2016 v mil. tun CO<sub>2</sub>eq, vč. procentuálního zastoupení. Plocha zabraná konkrétním státem odpovídá poměru vůči celku.
