@@ -13,80 +13,47 @@ dataset:    "emise-fosilni-paliva"
 
 ## Jak číst tento graf?
 
-* Graf ukazuje světové emise ze spalování uhlí, ropy a zemního plynu a pro srovnání také emise z výroby cementu
-Celkové emise za rok 2019 byly 
+* Graf ukazuje **světové emise ze spalování uhlí, ropy a zemního plynu** a pro srovnání také **emise z výroby cementu**. Celkové emise z těchto zdrojů za rok 2019 byly  35 897 miliónů tun CO<sub>2</sub>.
 
-## Více o použití jednotlivých paliv a cementu
+* V grafu jsou jako emise z výroby cementu znázorněny pouze emise pocházející z chemické reakce CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>. Emise vzniklé spalováním uhlí či plynu na ohřev jsou započteny jako emise příslušného paliva.  
+
+## Více o jednotlivých palivech a cementu
 
 {% include preview-box.html
-    title="Výroba elektřiny z různých zdrojů "
-    text="Rekonstrukce historických hodnot koncentrace CO<sub>2</sub> za posledních 800 tisíc let."
+    title="Z čeho se vyrábí elektřina?"
+    text="Narozdíl od ropy jsou uhlí a zemní plyn významými palivy pro výrobu elektřiny."
     slug="elektrina-svet"
 %}
 
 ### Uhlí
 
-Uhlí se spaluje především při výrobě elektřiny a tepla a v průmyslu pro tavení železa, skla nebo zahřívání například při výrobě cementu.   
-Celkově se za rok 2019 vytěžilo přibližně 8 miliard tun uhlí https://www.iea.org/reports/coal-information-overview
+* **Použití:** Především výroba elektřiny a tepla ([Mapa uhelných elektráren světa](https://www.carbonbrief.org/mapped-worlds-coal-power-plants)), v průmyslu pro tavení železa, skla nebo jiné zahřívání. 
 
-Nejvíce uhlí se těží v Číně USA a Indii. 
+* **Těžba a přeprava:** Celkově se za rok 2019 vytěžilo přibližně [8 miliard tun uhlí](https://www.iea.org/reports/coal-information-overview). Zdaleka nejvíce uhlí se těží v Číně - 46 % světové produkce), následují Indie (10 %), USA (8 %), Indonésie (8 %) a Austrálie (6 %). Narozdíl od ropy a zemního plynu, které lze přepravovat ropovody a plynovody je uhlí nutné na místo spotřeby dovézt
 
-Na grafu je vidět pozoruhodný nárůst emisí a tedy i spotřeby uhlí po roce 2000, který byl způsoben prakticky výhradně nárůstem spotřeby v Číně, Indii a dalších Asijských zemích. Spotřeba uhlí v EU a USA v posledních desetiletích klesá. 
-
-
+* V grafu je vidět pozoruhodný **nárůst spotřeby uhlí po roce 2000** , který byl způsoben industrializací Číny, Indie a dalších Asijských zemí. Spotřeba uhlí v Evropě i USA v posledních desetiletích klesá.
 
 ### Ropa
 
-Témeř všechna ropa - či přesněji řečeno benzín a nafta z ropy vyrobené - se spaluje v dopravě 
-Celkově se za rok 2019 vytěžilo přibližně 100 miliónů barelů ropy, což odpovídá přibližně 12 miliónům m3 
-https://www.eia.gov/outlooks/steo/report/global_oil.php
-Doprava ropy
+* **Použití:** Většina ropy - či přesněji řečeno benzínu a nafty z ropy vyrobených - se spaluje v dopravě. K výrobě elektřiny a tepla se používá spíše vyjímečně. 
 
-Ropná krize roku 1979 https://en.wikipedia.org/wiki/1979_oil_crisis
+* **Těžba a přeprava:** Celkově se na světě těží okolo [100 miliónů barelů ropy](https://www.eia.gov/outlooks/steo/report/global_oil.php) za den, tedy asi 5 miliard tun za rok (2019). Nejvíce ropy se těží v zemích Perského zálivu (asi 32 % světové produkce), dále v USA (15 %) a Rusku (13 %). Zatímco USA pokrývá těžbou vlastní spotřebu, většina ostatních významných producentů ropy svou těžbu exportuje. Asi 61 % ropy se [přepravuje po moři](https://talkbusiness.net/2017/08/61-of-global-crude-oil-and-petroleum-products-transported-by-sea/), zbytek skrze [ropovody](http://worldmap.harvard.edu/data/geonode:global_oil_pipelines_7z9).  
+
+* V grafu je vidět několikaletý **pokles spotřeby po roce 1979**, který byl způsoben [ropnou krizí](https://en.wikipedia.org/wiki/1979_oil_crisis) po revoluci v Iránu a následné válce mezi Iránem a Irákem. Světová těžba tehdy poklesla asi o 4 % a cena ropy vyskočila na dvojnásobek.     
 
 ### Plyn
 
-Kde se spaluje elektřina, teplo ale také vaření
+* **Použití:** Výroba elektřiny a tepla, v domácnostech (topení, vaření, ohřev vody) i v průmyslu. 
 
-Doprava plynu
+* **Těžba a přeprava:** Celkově se za rok 2019 vytěžilo [4000 miliard m<sup>3</sup>](https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/energy-economics/statistical-review/bp-stats-review-2019-natural-gas.pdf), tedy asi 3,2 miliard tunzemního plynu. Mezi největší producenty patří USA (21 % světové produkce), Rusko (17 %) a státy Perského zálivu (dohromady 18 %). [Přeprava zemního plynu](https://en.wikipedia.org/wiki/Natural_gas#/media/File:Global_Gas_trade_both_LNG_and_Pipeline.png) probíhá jak skrz plynovody, tak pomocí lodí, které přepravují zkapalněný plyn. 
 
-Mezi největší producenty patří USA (21%), Rusko (17%) a státy Perského zálivu (dohromady 18%)
-Celkově se za rok 2019 vytěžilo 4000 miliard m3 
-https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/energy-economics/statistical-review/bp-stats-review-2019-natural-gas.pdf
-Supply chain emissions (fugitive + flaring)
+* Spalování zemního plynu je pro výrobu elektřiny výrazně efektivnější než spalování uhlí. IPCC odhaduje emisní intenzitu zemního plynu v rozmezí 410 - 650 g CO<sub>2</sub>eq./kWh (včetně těžby a přepravy), pro spalování uhlí uvádí rozmezí 740 - 910 g CO<sub>2</sub>eq./kWh. To je významný důvod pro tzv. uhelný phase-out, kdy jsou uhelné elektrárny nahrazovány kombinací obnovitelných zdrojů energie a plynových elektráren. 
 
+* Kromě emisí CO<sub>2</sub> ze spalování vznikají při těžbě a přepravě zemního plynu i emise metanu. Jde především o [úniky plynu při těžbě](https://en.wikipedia.org/wiki/Fugitive_emission), jejichž roční objem se odhaduje na asi [100 miliónů tun CH<sub>4</sub>](https://www.carbonbrief.org/scientists-concerned-by-record-high-global-methane-emissions), tedy asi třetina antropogenních emisí methanu. 
 
 ### Cement
 
+* Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450 °C, kdy působením se působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý. Přibližně polovina celkových emisí CO<sub>2</sub> z výroby cementu vzniká jako důsledek chemické reakce CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>, druhá polovina celkových emisí souvisí se spalováním uhlí či plynu. V kategorii *cement* jsou v grafu zaneseny pouze emise z chemické reakce. Emise ze spalování jsou součástí grafů pro příslušná fosilní paliva.
+ 
+* Celkové emise z výroby cementu (včetně paliv na ohřev)) významné jsou přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce CO<sub>2</sub>.  Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. 
 
-
-- člověk má dojem, že emise neklesají vůbec, ale ony klesají v určitých regionech.
-- vysvětlit rozdílné použití a charakteristiky: auto na uhlí nejezdí + emise z těžby + emisní intenzita při výrobě elektřiny
-- sektor využití: výroba elektřiny, doprava, spalování v průmyslu, ...
-- ad cement - vysvětlit, zda jde o emise z reakce nebo i ze spalování
-
-* Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
-* V levé části jsou celkové roční emise členských států EU za rok 2016 v mil. tun CO<sub>2</sub>eq, vč. procentuálního zastoupení. Plocha zabraná konkrétním státem odpovídá poměru vůči celku.
-* Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population), tak [z hlediska HDP](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))) mají v absolutních číslech nejvyšší emise:
-  * Německo se svými cca 83 mil. obyvateli 935,8 mil. t CO<sub>2</sub>eq
-  * Francie se svými cca 67 mil. obyvateli 475,4 mil. t CO<sub>2</sub>eq
-  * Velká Británie se svými cca 66 mil. obyvateli 516,8 mil. t CO<sub>2</sub>eq
-  * Itálie se svými cca 60 mil. obyvateli 438,2 mil. t CO<sub>2</sub>eq
-* Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 131,3 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 4. největším emitentem EU__ a má 2× vyšší emise na obyvatele než srovnatelně velké Švédsko (cca 10 mil. obyvatel)
-* Infografika [Emise skleníkových plynů světa](/infografiky/emise-svet) ukazuje stejné údaje pro jednotlivé světové regiony.
-
-## Zajímavosti a komentáře k ročním emisím na obyvatele
-
-* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5× vyšší než průměr EU)
-* Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky (4,5× vyšší než průměr EU)
-* Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce (skoro 5× vyšší než průměr EU)
-* Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky (2× vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
-* Všechny zmíněné údaje najdete v našem podrobném datasetu v sekci "Emise na obyvatele podle základních kategorií".
-
-## Poznámky k datům o emisích
-* Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (common reporting format), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy [UNFCCC](https://cs.wikipedia.org/wiki/R%C3%A1mcov%C3%A1_%C3%BAmluva_OSN_o_zm%C4%9Bn%C4%9B_klimatu).
-* Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Českou republiku reportovala přímo Česká republika, konkrétně skrze Evropskou agenturu pro životní prostředí.
-* Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
-* Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
-* V rámci této infografiky jsou v údajích o emisích zahrnuty emise z letecké dopravy a zobrazené hodnoty odpovídají emisím vyprodukovaným z letů z letišť v dané zemi. Hodnota tedy nemusí odpovídat přesně množství emisí, které obyvatelé daného státu způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do emisí ČR jen jako Praha-Amsterdam, zatímco emise z letu Amsterdam-New York se započtou Nizozemí). Není také započítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt.
-* V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFCs, PFCs, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
