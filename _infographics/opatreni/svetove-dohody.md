@@ -6,7 +6,7 @@ redirect_from: "/svetove-dohody"
 published:  2021-01-23
 weight:     95.5
 tags-scopes: [ svet ]
-tags-topics: [ opatreni, dohody ]
+tags-topics: [ opatreni, dohody, budoucnost ]
 caption:    "Časová osa zachycuje klíčové události světového úsilí v ochraně klimatu."
 ---
 
