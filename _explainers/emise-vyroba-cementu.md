@@ -53,7 +53,7 @@ K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrá
 
 ## Kolik emisí pochází z produkce cementu v Česku?
 
-Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR asi 1,7 milionů tun CO<sub>2</sub> jako důsledek procesu reakce. Emise vycházející ze spalování CO<sub>2</sub> při výrobě Eurostat samostatně neuvádí, ale na základě známých parametrů efektivity lze očekávat, že budou okolo 1,7–1,9 milionů tun CO<sub>2</sub>. Celkové emise spojené s výrobou cementu v ČR jsou tedy 3,4–3,6 milionů tun CO<sub>2</sub>, což je přibližně 2,7 % celkových emisí skleníkových plynů v ČR. (V tomto údaji 2,7 % je započtena celková produkce všech skleníkových plynů v ČR, vč. methanu, N<sub>2</sub>O a dalších, formou přepočtu na ekvivalentní množství CO<sub>2</sub>.)
+Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR asi FIXME 1,7 milionů tun CO<sub>2</sub> jako důsledek procesu reakce. Emise vycházející ze spalování CO<sub>2</sub> při výrobě Eurostat samostatně neuvádí, ale na základě známých parametrů efektivity lze očekávat, že budou okolo 1,7–1,9 milionů tun CO<sub>2</sub>. Celkové emise spojené s výrobou cementu v ČR jsou tedy 3,4–3,6 milionů tun CO<sub>2</sub>, což je přibližně 2,7 % celkových emisí skleníkových plynů v ČR. (V tomto údaji 2,7 % je započtena celková produkce všech skleníkových plynů v ČR, vč. methanu, N<sub>2</sub>O a dalších, formou přepočtu na ekvivalentní množství CO<sub>2</sub>.)
 
 {% include figure.html
     name="emise-cr.svg"
