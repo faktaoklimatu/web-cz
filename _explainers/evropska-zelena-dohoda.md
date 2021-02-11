@@ -81,7 +81,7 @@ K zajištění spravedlivé transformace pomůže tzv. **Just Transition Fund** 
 
 ## Jak se bude v nejbližší budoucnosti dohoda zavádět do praxe?
 
-Představený dokument je pouze obecný plán, jehož jednotlivé kapitoly bude evropská komise v příštích šesti měsících rozpracovávat do detailů a vydávat je postupně jak budou dokončovány. V červnu 2020 pak na základě detailního plánu komise rozhodne, jaké klimatické cíle stanoví pro rok 2030. Současné cíle pro rok 2030 jsou totiž označovány jako [nedostatečné k udržení globálního oteplení pod 2 °C](https://climateactiontracker.org/countries/eu/).
+Představený dokument je pouze obecný plán, jehož jednotlivé kapitoly bude evropská komise v příštích šesti měsících rozpracovávat do detailů a vydávat je postupně jak budou dokončovány. V FIXME červnu 2020 pak na základě detailního plánu komise rozhodne, jaké klimatické cíle stanoví pro rok 2030. Současné cíle pro rok 2030 jsou totiž označovány jako [nedostatečné k udržení globálního oteplení pod 2 °C](https://climateactiontracker.org/countries/eu/).
 
 Různé země mají své unikátní problémy a prostředky, proto si každý stát připravuje vlastní klimatický a energetický plán. První verze těchto plánů se nyní finišují a budou brzy zveřejněny. V průběhu roku 2021 provede Evropská komise hodnocení těchto plánů a v případě potřeby dá státům doporučení, jak tyto plány vylepšit. Aktualizace těchto národních plánů pak proběhne v roce 2023.
 
