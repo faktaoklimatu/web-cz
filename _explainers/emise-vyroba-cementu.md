@@ -1,15 +1,13 @@
 ---
 layout:      explainer
-title:       "Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně
-? (neveřejné)"
+title:       "Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
 slug:        "emise-vyroba-cementu"
-published:   2021-01-15
+published:   2021-02-13
 author:      "Ondráš Přibyla"
 weight:      73
-# tags-scopes: [ svet ]
-# tags-topics: [ emise ]
-sitemap:     false
-cover-source-text: "Wikimedia"
+tags-scopes: [ svet ]
+tags-topics: [ emise ]
+cover-source-text: "Wikimedia Commons"
 cover-source-url: "https://commons.wikimedia.org/wiki/File:Factory_of_National_Cement_Share_Company.jpg"
 perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
 ---
