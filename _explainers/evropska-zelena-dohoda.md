@@ -40,7 +40,7 @@ V současnosti je Evropská zelená dohoda [24-stránkový dokument](https://ec.
 
 ### Výroba elektřiny a tepla
 
-V praxi dohoda cílí nejvíce na energetický sektor, který v EU produkuje největší množství emisí skleníkových plynů. Cílem je téměř **kompletní dekarbonizace energetiky** tedy odstoupení od využívání uhlí, zemního plynu a ropy a jejich nahrazení obnovitelnými nebo jadernými zdroji. Evropská komise doporučuje především stavbu pobřežních větrných elektráren, které jsou nyná nejlevnějším a nejefektivnějším obnovitelným zdrojem elektřiny. Na využití jaderné energie není v EU shoda. Zatímco některé státy novým jadenrým elektrárnám odporují, pro jiné státy (včetně Česka) byla možnost jejich výstavby podmínkou pro souhlas s přijetím dohody.
+V praxi dohoda cílí nejvíce na energetický sektor, který v EU produkuje největší množství emisí skleníkových plynů. Cílem je téměř **kompletní dekarbonizace energetiky** tedy odstoupení od využívání uhlí, zemního plynu a ropy a jejich nahrazení obnovitelnými nebo jadernými zdroji. Evropská komise doporučuje především stavbu pobřežních větrných elektráren, které jsou nyní nejlevnějším a nejefektivnějším obnovitelným zdrojem elektřiny. Na využití jaderné energie není v EU shoda. Zatímco některé státy novým jaderným elektrárnám odporují, pro jiné státy (včetně Česka) byla možnost jejich výstavby podmínkou pro souhlas s přijetím dohody.
 
 Dále EU usiluje o **úspory energie** (snížení energetické náročnosti budov a zvyšování efektivity spotřebičů) a propojení a digitalizaci evropských energetických sítí.
 
@@ -55,7 +55,7 @@ Dále EU usiluje o **úspory energie** (snížení energetické náročnosti bud
 
 V současnosti se většina výrobků vyrobí z prvotních surovin a když doslouží jsou vyhozeny bez dalšího využití. Jen 12 % výrobků pochází z recyklovaných materiálů). Cílem zelené dohody je do roku 2050 v co nejvíce odvětvích **dosáhnout cirkulární ekonomiky**, tedy využívání recyklovaných materiálů, zvyšování životnosti výrobků a minimalizace nevyužitelného odpadu. Důsledkem bude snížení těžby nerostných surovin, čímž se uleví životnímu prostředí.
 
-EU bude také výrazně **investovat do výzkumu a vývoje nových technologií**, které vedou k větší udržitelnosti. Mezi ně patří například nízkouhlíkový proces výroby oceli, palivové články na vodík, nové typy baterií, či zachycování a ukládání CO<sub>2</sub>. 
+EU bude také výrazně **investovat do výzkumu a vývoje nových technologií**, které vedou k větší udržitelnosti. Mezi ně patří například nízkouhlíkový proces výroby oceli, palivové články na vodík, nové typy baterií, či zachycování a ukládání CO<sub>2</sub>.
 
 ### Zemědělství
 
@@ -74,7 +74,7 @@ EU plánuje **podporu výstavby dobíjecích stanic** pro elektromobily, vodíko
 
 ### Biodiverzita
 
-Ochraně biodiverzity má pomoci **rozšíření území chráněných krajinných oblastí**, zalesňování, omezení používání chemikálií či **šetrnější rybolov**. Životnímu prostředí i adaptaci na změnu klimatu má pak pomoci obnova přirozených funkcí krajiny, včetně přirozené zádrže vody v krajině. 
+Ochraně biodiverzity má pomoci **rozšíření území chráněných krajinných oblastí**, zalesňování, omezení používání chemikálií či **šetrnější rybolov**. Životnímu prostředí i adaptaci na změnu klimatu má pak pomoci obnova přirozených funkcí krajiny, včetně přirozené zádrže vody v krajině.
 
 ### Podpora regionů
 
@@ -84,7 +84,7 @@ K zajištění spravedlivé transformace pomůže tzv. **Just Transition Fund** 
 
 Představený dokument je pouze obecný plán, jehož jednotlivé kapitoly bude evropská komise v příštích šesti měsících rozpracovávat do detailů a vydávat je postupně jak budou dokončovány. V červnu 2020 pak na základě detailního plánu komise rozhodne, jaké klimatické cíle stanoví pro rok 2030. Současné cíle pro rok 2030 jsou totiž označovány jako [nedostatečné k udržení globálního oteplení pod 2 °C](https://climateactiontracker.org/countries/eu/).
 
-Různé země mají své unikátní problémy a prostředky, proto si každý stát připravuje vlastní klimatický a energetický plán. První verze těchto plánů se nyní finišují a budou brzy zveřejněny. V průběhu roku 2021 provede Evropská komise hodnocení těchto plánů a v případě potřeby dá státům doporučení, jak tyto plány vylepšit. Aktualizace těchto národních plánů pak proběhne v roce 2023. 
+Různé země mají své unikátní problémy a prostředky, proto si každý stát připravuje vlastní klimatický a energetický plán. První verze těchto plánů se nyní finišují a budou brzy zveřejněny. V průběhu roku 2021 provede Evropská komise hodnocení těchto plánů a v případě potřeby dá státům doporučení, jak tyto plány vylepšit. Aktualizace těchto národních plánů pak proběhne v roce 2023.
 
 ## Jak bude Evropská zelená dohoda financována?
 

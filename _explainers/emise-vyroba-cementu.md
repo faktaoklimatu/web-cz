@@ -12,13 +12,11 @@ cover-source-url: "https://commons.wikimedia.org/wiki/File:Factory_of_National_C
 perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
 ---
 
-
 {% include preview-box.html
     class="highlight-text-box"
     text="**Beton** je směs písku nebo štěrku a cementu, který při tuhnutí betonu písková a štěrková zrna slepí. **Cement** samotný je směsí oxidu vápenatého (CaO) oxidu křemičitého (Si<sub>2</sub>O) a malých množství oxidů hliníku a železa -- podrobněji viz [Wikipedie](https://cs.wikipedia.org/wiki/Cement#Slo%C5%BEen%C3%AD_cementu).
 "
 %}
-
 
 ## Proč výroba cementu produkuje tolik CO<sub>2</sub>?
 
@@ -27,7 +25,7 @@ Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450
 {:.equation}
 CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>
 
-**Výroba jedné tuny cementu vytvoří asi 1–1,25 tun CO<sub>2</sub>**, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina z těchto emisí souvisí se spalováním uhlí nebo plynu při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů. Druhá polovina emisí z výroby cementu je způsobena výše zmíněnou chemickou reakcí. To je také důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce. 
+**Výroba jedné tuny cementu vytvoří asi 1–1,25 tun CO<sub>2</sub>**, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina z těchto emisí souvisí se spalováním uhlí nebo plynu při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů. Druhá polovina emisí z výroby cementu je způsobena výše zmíněnou chemickou reakcí. To je také důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce.
 
 ## A co beton? Neváže se CO<sub>2</sub> při tuhnutí betonu zpět?
 
@@ -55,6 +53,6 @@ Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě
 
 ## Hlavní zdroje
 
-- Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
-- http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf
-- https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf
+* Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
+* http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf
+* https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf
