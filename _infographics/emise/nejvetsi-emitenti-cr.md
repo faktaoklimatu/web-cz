@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Největší emitenti ČR"
 slug:       "nejvetsi-emitenti-cr"
 redirect_from: "/nejvetsi-emitenti-cr"
-published:  2021-07-20
+published:  2021-01-20
 weight:     98
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
