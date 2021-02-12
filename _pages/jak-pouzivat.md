@@ -42,6 +42,7 @@ Citaci si také můžete nechat vygenerovat přímo na stránce každé infograf
 
 <div class="section">
 <div class="container" markdown="1">
+{:#file-formats}
 ## V jakém formátu stáhnout naše infografiky
 
 U každé naší infografiky najdete tlačítko ke stažení. Můžete si vybrat z vektorových formátů (PDF či SVG) či rastrového formátu (PNG v různých velikostech).

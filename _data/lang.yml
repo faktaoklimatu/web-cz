@@ -8,3 +8,38 @@ footer:
   get-newsletter: "Odebírejte newsletter"
   support-us: "Podpořte nás"
   last-change: "Poslední změna"
+
+licence:
+  id: "CC BY 4.0"
+  title: "Creative Commons Uveďte původ 4.0 Mezinárodní"
+  link: "https://creativecommons.org/licenses/by/4.0/deed.cs"
+
+sidebar:
+  download:
+    title: "Ke stažení"
+    caption: "Líbí se vám naše infografika? Stáhněte si ji a používejte dál!"
+    which-file-format: "Který formát vybrat?"
+  data:
+    title: "Podkladová data"
+    caption-dataset: "Chcete vidět konkrétní čísla? Tato infografika je postavená na námi zpracovaném datasetu."
+    caption-data: "Chcete vidět konkrétní čísla? Podívejte se na naši tabulku s daty nebo na původní zdroje."
+    button-dataset: "Náš dataset"
+    button-data: "Naše tabulka s daty"
+    button-data-orig: "Původní zdroje dat"
+  share:
+    title: "Sdílení a licence"
+    caption-infographic: "Všechny naše infografiky jsou k dispozici pro další použití pod licencí"
+    caption-dataset-1: "Všechny naše datasety jsou k dispozici pro další použití pod licencí"
+    caption-dataset-2: "Původní data mají různé licence, detaily najdete v podrobném textu k datasetu."
+    usage: "Jak správně použít?"
+    button-facebook: "Sdílet na Facebooku"
+    button-twitter: "Sdílet na Twittru"
+    button-embed: "Vložit na jinou stránku"
+    modal-title: "Jak správně odkazovat faktaoklimatu.cz?"
+  mobile:
+    title: "Data, licence a sdílení"
+    caption-infographic: "Podívejte se na podkladová data nebo infografiku sdílejte. Všechny naše infografiky jsou k dispozici pod licencí"
+    caption-dataset: "Podívejte se na podkladová data nebo je sdílejte dál. Všechny naše infografiky jsou k dispozici pod licencí"
+    download: "Stažení"
+    data: "Data"
+    share: "Sdílení"

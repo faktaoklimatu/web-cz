@@ -13,6 +13,14 @@ copyright: "&copy; 2021 Otevřená data o klimatu, z. ú."
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
 
+slugs:
+  infographics: infografiky
+  studies: studie
+  datasets: datasety
+  topics: temata
+  glossary: slovnik
+  how-to-use: jak-pouzivat
+
 # Set permalinks in local language
 collections:
   pages:

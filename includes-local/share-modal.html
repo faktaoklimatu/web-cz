@@ -1,0 +1,28 @@
+{%- case page.layout -%}
+    {%- when "infographic" -%}
+        <h2>Odkazy na infografiku</h2>
+        Chcete-li odkazovat na tuto infografiku, odkazujte prosím na stránku s průvodním textem, ne pouze na obrázek (garantujeme dlouhodobou funkčnost URL stránky, ne však obrázku). Pro aktuální infografiku to vypadá následovně:
+        <div class="embed-example-caption">
+            <a href="{{ page.url }}" target="_blank">{{ page.title }}</a>
+        </div>
+        <pre class="highlight"><code>&lt;a href="{{ site.url }}{{ page.url }}" target="_blank" rel="noopener"&gt;{{ page.title }}&lt;/a&gt;</code></pre>
+        <h2>Přímé použití infografiky</h2>
+        Jestli chcete, můžete na svůj web či jiný projekt použít přímo <strong>staženou</strong> infografiku. Použitá licence však vyžaduje uvést název, autora, zdroj a licenci. Pro aktuální infografiku to vypadá následovně:
+        <div class="embed-example-caption">
+            <a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.title }}</a> od autora <a href="{{ site.url }}" target="_blank" rel="noopener">Fakta o klimatu</a>, licencovaný pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" class="no-ext-link-icon" target="_blank" rel="noopener">CC BY 4.0</a>.
+        </div>
+        <pre><code>&lt;a href="{{ site.url }}{{ page.url }}" target="_blank"&gt;{{ page.title }}&lt;/a&gt; od autora &lt;a href="{{ site.url }}" target="_blank"&gt;Fakta o klimatu&lt;/a&gt;, licencovaný pod &lt;a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank">CC BY 4.0&lt;/a&gt;.</code></pre>
+    {%- when "dataset" -%}
+        <h2>Odkazy na dataset</h2>
+        Chcete-li odkazovat na tento dataset, odkazujte prosím na stránku s průvodním textem, ne pouze na tabulku (garantujeme dlouhodobou funkčnost URL stránky, ne však tabulky). Pro aktuální dataset to vypadá následovně:
+        <div class="embed-example-caption">
+            <a href="{{ page.url }}" target="_blank">{{ page.title }}</a>
+        </div>
+        <pre class="highlight"><code>&lt;a href="{{ site.url }}{{ page.url }}" target="_blank" rel="noopener"&gt;{{ page.title }}&lt;/a&gt;</code></pre>
+        <h2>Přímé použití datasetu</h2>
+        Jestli chcete, můžete na svůj web či jiný projekt použít přímo <strong>stažený</strong> dataset. Použitá licence však vyžaduje uvést název, autora, zdroj a licenci. Pro aktuální dataset to vypadá následovně:
+        <div class="embed-example-caption">
+            <a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.title }}</a> od autora <a href="{{ site.url }}" target="_blank" rel="noopener">Fakta o klimatu</a>, licencovaný pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" class="no-ext-link-icon" target="_blank" rel="noopener">CC BY 4.0</a>.
+        </div>
+        <pre><code>&lt;a href="{{ site.url }}{{ page.url }}" target="_blank"&gt;{{ page.title }}&lt;/a&gt; od autora &lt;a href="{{ site.url }}" target="_blank"&gt;Fakta o klimatu&lt;/a&gt;, licencovaný pod &lt;a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank">CC BY 4.0&lt;/a&gt;.</code></pre>
+{%- endcase -%}
