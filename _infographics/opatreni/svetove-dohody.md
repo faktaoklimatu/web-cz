@@ -26,7 +26,7 @@ Konference se uskutečnila ve dnech 12.–23. února 1979 v Ženevě, kde sídl�
 
 **Zdroje:**
 
-- Stránky o [Světových klimatických konferencích](https://en.wikipedia.org/wiki/World_Climate_Conference) na anglické wikipedii
+- Stránky o [Světových klimatických konferencích](https://en.wikipedia.org/wiki/World_Climate_Conference) na anglické Wikipedii
 - [Factsheet o mezinárodních jednáních](https://unfccc.int/cop3/fccc/climate/fact17.htm) z webu UNFCCC
 - [Zpráva z konference ve Villachu, 1985](https://library.wmo.int/doc_num.php?explnum_id=8512)
 
@@ -50,7 +50,7 @@ UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezen�
 - [Oficiální stránky UNFCCC](https://unfccc.int/)
 - [Archiv zpráv z konference v Rio de Janeiro, 1992](https://www.un.org/esa/dsd/resources/res_docukeyconf_eartsumm.shtml) na stránkách OSN.
 - Text deklarace [Agenda 21](https://web.archive.org/web/20140730190755/http://habitat.igc.org/agenda21/), který byl přijat na konferenci v Riu jako strategický akční plán mezinárodního společenství.
-- Stránky o deklaraci [Agenda 21](https://cs.wikipedia.org/wiki/M%C3%ADstn%C3%AD_Agenda_21) na české wikipedii
+- Stránky o deklaraci [Agenda 21](https://cs.wikipedia.org/wiki/M%C3%ADstn%C3%AD_Agenda_21) na české Wikipedii
 
 ### 1997 – Kjótský protokol
 
@@ -61,7 +61,7 @@ Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí
 **Zdroje:**
 
 - [Text Kjótského protokolu](https://unfccc.int/resource/docs/convkp/kpeng.html) na webu UNFCCC
-- Stránka o [Kjótském protokolu](https://en.wikipedia.org/wiki/Kyoto_Protocol) na anglické wikipedii.
+- Stránka o [Kjótském protokolu](https://en.wikipedia.org/wiki/Kyoto_Protocol) na anglické Wikipedii.
 - Text [Kjótského protokolu v češtině](https://www.mzp.cz/cz/kjotsky_protokol) na stránkách Ministerstva Životního Prostředí
 
 {% include preview-box.html
@@ -72,7 +72,7 @@ Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí
 
 ### 2005 – Systém EU obchodování s emisemi (EU ETS)
 
-Systém pro obchodování s emisními povolenkami je podobně jako uhlíková daň nástrojem, který umožnuje ekonomicky postihnout aktivity, které vypouštějí emise skleníkových plynů. **Velcí emitenti mají povinnost nakoupit odpovídají množství povolenek, přičemž celkové množství emisních povolenek je stanoveno vládou a firmy s nimi mohou volně obchodovat**. Množství povolenek je postupně snižováno, čímž se zajišťuje snižování celkových emisí a zároveň je tak ovlivňována poptávka a tržní cena emisních povolenek. EU ETS byl prvním zavedeným systémem obchodování s emisemi na světě, začal být uplatňován v roce 2005 s cílem podpořit snižování emisí skleníkových plynů ekonomicky účinným způsobem.
+Systém pro obchodování s emisními povolenkami je podobně jako uhlíková daň nástrojem, který umožňuje ekonomicky postihnout aktivity, které vypouštějí emise skleníkových plynů. **Velcí emitenti mají povinnost nakoupit odpovídají množství povolenek, přičemž celkové množství emisních povolenek je stanoveno vládou a firmy s nimi mohou volně obchodovat**. Množství povolenek je postupně snižováno, čímž se zajišťuje snižování celkových emisí a zároveň je tak ovlivňována poptávka a tržní cena emisních povolenek. EU ETS byl prvním zavedeným systémem obchodování s emisemi na světě, začal být uplatňován v roce 2005 s cílem podpořit snižování emisí skleníkových plynů ekonomicky účinným způsobem.
 
 V letech 2013–2020 se obchodování s povolenkami účastnilo více než 11 000 firem. Patří mezi ně elektrárny a spalovací zařízení s výkonem nad 20 MW, rafinérie, koksovny, železárny a ocelárny, cementárny, výrobci skla, keramiky a cihel, celulózky a papírny, výrobci hliníku a chemický průmysl. Systém EU ETS pokrývá 45 % všech emisí oxidu uhličitého v EU.
 
@@ -80,7 +80,7 @@ V roce 2020 proběhla reforma, která řeší například přebytek povolenek a 
 
 **Zdroje:**
 
-- Stránky o [EU ETS](https://en.wikipedia.org/wiki/European_Union_Emission_Trading_Scheme) na anglické wikipedii.
+- Stránky o [EU ETS](https://en.wikipedia.org/wiki/European_Union_Emission_Trading_Scheme) na anglické Wikipedii.
 - [Dokumenty o obchodování s emisemi](https://www.mzp.cz/cz/emisni_obchodovani) na stránkách Ministerstva životního prostředí
 
 ### 2010 – Zelený klimatický fond (GCF)
@@ -136,7 +136,7 @@ Zpráva uvádí několik významných výsledků:
 
 Zelená dohoda pro Evropu (European Green Deal) je balíček opatření Evropské komise představený v prosinci 2019 jako cesta k transformaci evropské ekonomiky tak, aby byla dlouhodobě ekologicky udržitelná. Návrh obsahuje **snižování emisí, investice do vědy a inovací a další kroky k přechodu k bezuhlíkové ekonomice** a klade si za cíl začlenit do právních předpisů závazek, aby Evropská Unie byla v roce 2050 byla uhlíkově neutrální.
 
-V tomto plánu jsou uvedeny potřebné investice a dostupné finanční nástroje. Rovněž je v něm vysvětleno, jak zajistit spravedlivou a inkluzivní transformaci. **EU se chce do roku 2050 stát klimaticky neutrálním kontinentem.** Za tímto účelem Komise předložila návrh evropského právního rámce pro klima, čímž má tento politický závazek získat také právní závaznost.
+V tomto plánu jsou uvedeny potřebné investice a dostupné finanční nástroje. Rovněž je v něm vysvětleno, jak zajistit spravedlivou a inkluzivní transformaci. **EU se chce do roku 2050 stát klimaticky neutrálním územím.** Za tímto účelem Komise předložila návrh evropského právního rámce pro klima, čímž má tento politický závazek získat také právní závaznost.
 
 K dosažení tohoto cíle bude nutné přijmout náležitá opatření ve všech odvětvích hospodářství:
 
