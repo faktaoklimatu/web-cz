@@ -1,13 +1,12 @@
 ---
 layout:      explainer
-title:       "Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře? (neveřejné)"
+title:       "Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře?"
 slug:        "emise-dychani"
-published:   2021-01-15
+published:   2021-02-13
 author:      "Ondráš Přibyla"
 weight:      74
-# tags-scopes: [ svet ]
-# tags-topics: [ emise ]
-sitemap:     false
+tags-scopes: [ svet ]
+tags-topics: [ emise ]
 cover-source-text: "Unsplash, dan carlson"
 cover-source-url: "https://unsplash.com/photos/G86MS2ZsiJA"
 perex:     "O oxidu uhličitém slyšela většina lidí poprvé na základní škole v přírodopise, kde se dozvěděli, že oxid uhličitý vzniká při hoření a při dýchání. A když je v místnosti hodně oxidu uhličitého, říkáme, že je tam vydýcháno. V souvislosti s klimatickou změnou se pak o CO<sub>2</sub> mluví jako o skleníkovém plynu a řeší se snižování emisí CO<sub>2</sub>. Jak moc tedy přispívá 7 miliard lidí svým dýcháním k růstu koncentrací CO<sub>2</sub>? A jaký vliv má dýchání ostatních živočichů a rostlin? "
