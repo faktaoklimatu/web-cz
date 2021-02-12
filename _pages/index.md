@@ -80,7 +80,7 @@ slug: index
 {:.lead}
 Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky, výtahy studií a datasety. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
 
-{% assign objects = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers | sort: "published" | where_exp: "item","item.sitemap != false" | reverse %}
+{% assign objects = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers | sort: "published" | reverse %}
 {% include preview-blocks.html blocks=objects link="news" limit=6 %}
 
 </div></div>
