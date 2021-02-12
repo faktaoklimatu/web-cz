@@ -80,7 +80,7 @@ slug: index
 {:.lead}
 Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky, výtahy studií a datasety. Úplný seznam novinek a aktualit najdete i v [přehledu na samostatné stránce](/aktuality).
 
-{% assign objects = site.infographics | concat: site.studies | concat: site.datasets | sort: "published" | reverse %}
+{% assign objects = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers | sort: "published" | where_exp: "item","item.sitemap != false" | reverse %}
 {% include preview-blocks.html blocks=objects link="news" limit=6 %}
 
 </div></div>
@@ -107,7 +107,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 {:.lead}
 {{ index_tag.description | markdownify }}
 
-{% assign objects = site.infographics | concat: site.studies | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
+{% assign objects = site.infographics | concat: site.studies | concat: site.explainers | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
 {% include preview-blocks.html blocks=objects link=index_tag limit=6 %}
 
 </div>
