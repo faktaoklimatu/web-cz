@@ -2,12 +2,11 @@
 layout:      explainer
 title:       "V čem spočívá Evropská zelená dohoda? (neveřejné)"
 slug:        "evropska-zelena-dohoda"
-published:   2021-01-15
+published:   false
 author:      "Jakub Zamouřil"
 weight:      74
-# tags-scopes: [ evropa ]
-# tags-topics: [ opatreni ]
-sitemap:     false
+tags-scopes: [ evropa ]
+tags-topics: [ opatreni ]
 cover-source-text: "Evropská komise"
 cover-source-url: "https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 perex:       "Evropská komise v prosinci 2020 představila Evropskou zelenou dohodu, která nastiňuje klimatické ambice EU na příštích 30 let. Co tato dohoda obsahuje?"
