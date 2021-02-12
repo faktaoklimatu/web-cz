@@ -28,15 +28,15 @@ collections:
     permalink: /:title
     title: stránky
     weight: 0
-  infographics:
-    output: true
-    permalink: /infografiky/:title
-    title: infografiky
-    weight: 1
   explainers:
     output: true
     permalink: /explainery/:title
     title: explainery
+    weight: 1
+  infographics:
+    output: true
+    permalink: /infografiky/:title
+    title: infografiky
     weight: 2
   studies:
     output: true
