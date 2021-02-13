@@ -1,0 +1,22 @@
+{%- if include.tag -%}
+{%- assign num_infographics = site.infographics | where_exp: "item", "item.tags contains include.tag" | size -%}
+{%- assign num_studies = site.studies | where_exp: "item", "item.tags contains include.tag" | size -%}
+{%- assign num_datasets = site.datasets | where_exp: "item", "item.tags contains include.tag" | size -%}
+{%- case num_infographics -%}
+    {%- when 0 -%}
+    {%- when 1 -%}1 infografika
+    {%- when 2, 3, 4 -%}{{num_infographics}} infographics
+    {%- else -%}{{num_infographics}} infografik
+{%- endcase -%}
+{%- case num_studies -%}
+    {%- when 0 -%}
+    {%- when 1, 2, 3, 4 -%}, {{num_studies}} studie/rešerše
+    {%- else -%}, {{num_studies}} studií/rešerší
+{%- endcase -%}
+{%- case num_datasets -%}
+    {%- when 0 -%}
+    {%- when 1 -%}1 dataset
+    {%- when 2, 3, 4 -%}, {{num_datasets}} datasety
+    {%- else -%}, {{num_infographics}} datasetů
+{%- endcase -%}
+{%- endif -%}

@@ -100,7 +100,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
         <h3 class="display-3">
         <span class="fa fa-fw fa-chevron-up"></span>
         {{ index_tag.name-long | capitalize }}
-        <small class="text-secondary d-none d-md-inline">({% include object-stats.html tag=index_tag.id %})</small>
+        <small class="text-secondary d-none d-md-inline">({% include includes-local/object-stats.html tag=index_tag.id %})</small>
         </h3>
     </div>
     <div class="collapse" id="collapse_{{ index_tag.id }}"  aria-labelledby="heading_{{ index_tag.id }}" data-parent="#accordionExample" markdown="1">
