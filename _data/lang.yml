@@ -50,3 +50,19 @@ sidebar:
     download: "Stažení"
     data: "Data"
     share: "Sdílení"
+  study:
+    author: "Autor"
+    institution: "Instituce"
+    year: "Rok vydání"
+    source-web: "Web studie"
+    source-pdf: "PDF studie"
+
+tag:
+  all-tags-caption: "Přehled oblastí a témat,<br/>kterým se věnujeme"
+  scope: "Oblast"
+  topic: "Téma"
+  all-scope: "Všechny infografiky, studie a datasety týkající se oblasti"
+  all-topic: "Všechny infografiky, studie a datasety týkající se tématu"
+  all-infographics: "Naše infografiky týkající se tématu. Na stránce grafiky vždy naleznete zdroj dat i podrobnější informace."
+  all-studies: "Naše rešerše a shrnutí studií týkajících se tématu. U studií uvádíme, proč je studie důležitá a jaké jsou její hlavní závěry."
+  all-datasets: "Naše datasety vztahující se k tématu. Typicky kombinujeme více zdrojů a vysvětlujeme, jak přesně z nich vycházejí naše infografiky."
