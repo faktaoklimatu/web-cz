@@ -14,6 +14,13 @@ licence:
   title: "Creative Commons Uveďte původ 4.0 Mezinárodní"
   link: "https://creativecommons.org/licenses/by/4.0/deed.cs"
 
+text:
+  toc: "Obsah"
+  related:
+    title: "Související infografiky a studie"
+    caption: "Zaujala vás naše práce? Prozkoumejte další související infografiky a studie:"
+    dataset-based: "Infografiky postavené na tomto datasetu"
+
 sidebar:
   download:
     title: "Ke stažení"
