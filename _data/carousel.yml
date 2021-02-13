@@ -1,0 +1,15 @@
+- title: "Fakta o klimatu v Senátu"
+  link: "https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721"
+  img: "senat.jpg"
+  summary: "Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v Senátu Parlamentu ČR, aby podpořil kvalitní debatu o transformaci energetiky."
+
+- title: "Naše práce v médiích"
+  link: "https://www.irozhlas.cz/veda-technologie/priroda/klima-data-fakta-o-klimatu_2002060600_jab"
+  img: "media.png"
+  summary: "Za jeden z největších úspěchů považujeme, že data a grafiky našeho projektu přebírají česká a slovenská média."
+
+- title: "Atlas klimatické změny"
+  link: "/atlas"
+  img: "media.png"
+  summary: "Z našich dat a grafik jsme připravili první ucelenou publikaci, Atlas klimatické změny. Brzy začne její distribuce do škol a k zájemcům o téma klimatické změny."
+  display: false

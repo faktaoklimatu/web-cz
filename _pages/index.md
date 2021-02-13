@@ -58,7 +58,7 @@ slug: index
         <a href="/jak-pouzivat" class="btn btn-secondary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
       </div>
       <div class="col-md-6 col-lg-4">
-        <a href="/atlas" class="card"><img src="/assets/img/atlas-mockup.png" alt="Alas klimatické změny" class="img-fluid"></a>
+        <a href="/atlas" class="card"><img src="/assets-local/img/atlas-mockup.png" alt="Alas klimatické změny" class="img-fluid"></a>
       </div>
     </div>
   </div></div>
@@ -126,7 +126,7 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
 
 <div id="carousel_successes" class="carousel slide mb-4 mt-4" data-ride="carousel">
   <ol class="carousel-indicators">
-    {%- assign sorted_success = site.data.successes | where_exp: "item", "item.display != false" -%}
+    {%- assign sorted_success = site.data.carousel | where_exp: "item", "item.display != false" -%}
     {%- for item in sorted_success %}
     <li data-target="#carousel_successes" data-slide-to="{{- forloop.index0 -}}"{%- if forloop.index0 == 0 %} class="active"{%- endif -%}> </li>
     {%- endfor %}
@@ -138,7 +138,7 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
     {%- else %}
     <div class="carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- endif %}
-      <img src="{{ site.baseurl }}/assets/img/{{ item.img }}" class="d-block w-100" alt="{{- item.title -}}" />
+      <img src="{{ site.baseurl }}/assets-local/carousel/{{ item.img }}" class="d-block w-100" alt="{{- item.title -}}" />
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ item.title }}</h5>
         <p>{{ item.summary }}</p>
@@ -171,8 +171,8 @@ Jsme tým profesionálů zabývajících se různými obory – přírodovědou,
   <a href="{{ site.fundraising }}" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
 </div>
 
-<a href="https://www.climate-kic.org/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets/img/logo-climate-kic.png" alt="Climate-KIC logo"/></a>
-<a href="https://climatechallenge.impacthub.cz/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets/img/logo-climate-challenge.png" alt="Climate Challenge logo"/></a>
+<a href="https://www.climate-kic.org/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets-local/img/logo-climate-kic.png" alt="Climate-KIC logo"/></a>
+<a href="https://climatechallenge.impacthub.cz/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets-local/img/logo-climate-challenge.png" alt="Climate Challenge logo"/></a>
 
 {:.lead}
 V roce 2020 jsme zvítězili v akceleračním programu [Climate Challenge](https://climatechallenge.impacthub.cz/) pořádaným sítí podnikatelských inkubátorů [Impact Hub](https://impacthub.cz). V rámci toho náš projekt podpořila evropská iniciativa [Climate-KIC](https://www.climate-kic.org/), která hledá inovativní řešení na klimatickou krizi.

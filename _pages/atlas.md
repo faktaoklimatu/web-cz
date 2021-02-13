@@ -10,13 +10,13 @@ intro:      "Pro kultivovanou veřejnou debatu o klimatické změně jsou nezbyt
     <div class="col-md-12 col-lg-9">
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.intro }}</p>
-        <img src="/assets/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
+        <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
         <p>O. Přibyla, K. Zákopčanová a O. Pechník, <em>Atlas klimatické změny: Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2020. ISBN 978-80-88212-36-2</p>
     </div>
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
         <h2>Ke stažení</h2>
         <p>Líbí se vám náš atlas? Stáhněte si jej nebo si zakupte tištěnou verzi z e-shopu Lipky.</p>
-        <a href="{{ site.baseurl }}/assets/files/atlas-klimaticke-zmeny.pdf" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+        <a href="{{ site.baseurl }}/assets-local/files/atlas-klimaticke-zmeny.pdf" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
         <a href="https://www.lipka.cz/lipka?idk=zbozi93|5" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
         <h2>Podpořte naši práci</h2>
