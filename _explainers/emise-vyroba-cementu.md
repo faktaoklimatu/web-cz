@@ -54,5 +54,5 @@ Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě
 ## Hlavní zdroje
 
 * Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
-* http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf
-* https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf
+* [Materiály k přednášce o betonu](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf), VŠB - Technická univerzita Ostrava
+* Robbie M. Andrew: [Global CO<sub>2</sub> emissions from cement production](https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf)
