@@ -9,7 +9,7 @@ tags-scopes: [ svet ]
 tags-topics: [ emise ]
 cover-source-text: "Wikimedia Commons"
 cover-source-url: "https://commons.wikimedia.org/wiki/File:Factory_of_National_Cement_Share_Company.jpg"
-perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je asi čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat, ale zároveň pro naplnění cílů Pařížské dohody bude nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
+perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce. To je zhruba čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat. Pro naplnění cílů Pařížské dohody bude zároveň nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
 ---
 
 {% include preview-box.html
@@ -20,7 +20,7 @@ perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise tř
 
 ## Proč výroba cementu produkuje tolik CO<sub>2</sub>?
 
-Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450 °C, kdy působením se působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý.
+Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450 °C, kdy se působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý.
 
 {:.equation}
 CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>
@@ -33,7 +33,7 @@ Tuhnutí betonu a tuhnutí malty jsou dva chemicky velmi odlišné procesy, a je
 
 Tuhnutí betonu je ale jiný a v jistém smyslu složitější proces. Nezpůsobuje jej reakce se vzduchem, ale reakce s vodou, při které vznikají tzv. [hydratační produkty](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf). To jsou sloučeniny obsahující chemicky vázanou (krystalovou) vodu. Tyto hydratační produkty jsou ve vodě nerozpustné a velmi pevné. K vázání CO<sub>2</sub> při tom nedochází a ztuhlý beton vápenec téměř neobsahuje.
 
-K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrávání betonu, kdy působením vody a oxidu uhličitého vzniká zejména na povrchu betonu vápenec. Tento proces je ale nežádoucí, zhoršuje kvalitu betonu a proto se mu snažíme zabránit.
+K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrávání betonu, kdy působením vody a oxidu uhličitého vzniká zejména na povrchu betonu vápenec. Tento proces je ale nežádoucí, zhoršuje kvalitu betonu, a proto se mu snažíme zabránit.
 
 ## Které státy mají vysoké emise z výroby cementu?
 
@@ -45,7 +45,7 @@ Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR 
 
 ## Je možné emise z výroby cementu snížit?
 
-Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě naroste o 12–23% do roku 2050. Zároveň pro naplnění Pařížské dohody a omezení oteplování na 2 °C, musejí emise z výroby cementu klesnout do roku 2050 asi o čtvrtinu. Snížení emisní intenzity výroby je možné dosáhnout několika způsoby:
+Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě naroste o 12–23 % do roku 2050. Zároveň pro naplnění Pařížské dohody a omezení oteplování na 2 °C musejí emise z výroby cementu klesnout do roku 2050 asi o čtvrtinu. Snížení emisní intenzity výroby je možné dosáhnout několika způsoby:
 
 1. Zvýšení efektivity spalování v pecích nebo použitím alternativních paliv (vodík, biomasa).
 2. Snížení množství oxidu vápenatého v cementu a jeho nahrazení jinými sloučeninami.
@@ -54,5 +54,5 @@ Dlouhodobé scénáře vývoje očekávají, že poptávka po cementu ve světě
 ## Hlavní zdroje
 
 * Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
-* [Materiály k přednášce o betonu](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf), VŠB - Technická univerzita Ostrava
+* [Materiály k přednášce o betonu](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf), VŠB – Technická univerzita Ostrava
 * Robbie M. Andrew: [Global CO<sub>2</sub> emissions from cement production](https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf)
