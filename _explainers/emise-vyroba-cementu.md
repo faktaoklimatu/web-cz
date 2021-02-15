@@ -22,10 +22,17 @@ perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise tř
 
 Cement se vyrábí zahříváním směsi vápence a jílů na teploty okolo 1450 °C, kdy se působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý.
 
-{:.equation}
-CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>
+{% include figure.html
+    name="vzorec.svg"
+    alt="CaCO3 + teplo ⟶ CaO + CO2"
+%}
 
-**Výroba jedné tuny cementu vytvoří asi 1–1,25 tun CO<sub>2</sub>**, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina z těchto emisí souvisí se spalováním uhlí nebo plynu při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů. Druhá polovina emisí z výroby cementu je způsobena výše zmíněnou chemickou reakcí. To je také důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce.
+**Výroba jedné tuny cementu vytvoří asi 1–1,2 tun CO<sub>2</sub>**, podle efektivity spalovacího procesu při zahřívání. Zhruba polovina z těchto emisí souvisí se spalováním uhlí nebo plynu při zahřívání cementových pecí a s naftou potřebnou k dolování a dopravě materiálů. Druhá polovina emisí z výroby cementu je způsobena výše zmíněnou chemickou reakcí. To je také důvod, proč je technologicky obtížné emise z výroby cementu snížit -- nahrazení fosilních paliv obnovitelnými zdroji nemění povahu chemické reakce.
+
+{% include figure.html
+    name="diagram.svg"
+    alt="Asi polovina emisí vzniká při výrobě tepla pro chemicko reakci, druhá polovina vzniká při samotné chemické reakci."
+%}
 
 ## A co beton? Neváže se CO<sub>2</sub> při tuhnutí betonu zpět?
 
@@ -39,9 +46,19 @@ K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrá
 
 Čína produkuje přibližně 60 % světového cementu, následována Indií se 7 % světové produkce.
 
+{% include figure.html
+    name="vyroba-svet.svg"
+    alt="V roce 2018 se ve světě vyrobily asi 4 miliardy tun cementu."
+%}
+
 ## Kolik emisí pochází z produkce cementu v Česku?
 
 Data Eurostatu ukazují, že v roce 2016 tvořily emise z výroby cementu v ČR asi 1,7 milionů tun CO<sub>2</sub> jako důsledek procesu reakce. Emise vycházející ze spalování CO<sub>2</sub> při výrobě Eurostat samostatně neuvádí, ale na základě známých parametrů efektivity lze očekávat, že budou okolo 1,7–1,9 milionů tun CO<sub>2</sub>. Celkové emise spojené s výrobou cementu v ČR jsou tedy 3,4–3,6 milionů tun CO<sub>2</sub>, což je přibližně 2,7 % celkových emisí skleníkových plynů v ČR. (V tomto údaji 2,7 % je započtena celková produkce všech skleníkových plynů v ČR, vč. methanu, N<sub>2</sub>O a dalších, formou přepočtu na ekvivalentní množství CO<sub>2</sub>.)
+
+{% include figure.html
+    name="emise-cr.svg"
+    alt="V roce 2018 se ve světě vyrobily asi 4 miliardy tun cementu."
+%}
 
 ## Je možné emise z výroby cementu snížit?
 
