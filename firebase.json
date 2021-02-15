@@ -1,0 +1,29 @@
+{
+    "hosting": {
+      "public": "web-core/_site",
+      "trailingSlash": false,
+      "headers": [ {
+        "source": "**",
+        "headers": [ {
+          "key": "Report-To",
+          "value": "{\"group\": \"default\", \"max_age\": 10886400, \"endpoints\": [{\"url\": \"https://nkas07xe.uriports.com/reports\"}], \"include_subdomains\": true}"
+        }, {
+          "key": "NEL",
+          "value": "{\"report_to\": \"default\", \"max_age\": 2592000, \"include_subdomains\": true, \"failure_fraction\": 1.0}"
+        }, {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; report-uri https://nkas07xe.uriports.com/reports/report; report-to default"
+        }, {
+          "key": "Expect-CT",
+          "value": "max-age=86400,report-uri=\"https://nkas07xe.uriports.com/reports/report\""
+        }, {
+          "key": "Cross-Origin-Embedder-Policy-Report-Only",
+          "value": "require-corp; report-to='default'"
+        }, {
+          "key": "Cross-Origin-Opener-Policy-Report-Only",
+          "value": "same-origin; report-to='default'"
+        } ]
+      } ]
+    }
+  }
+  
