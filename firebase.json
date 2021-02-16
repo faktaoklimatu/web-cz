@@ -1,6 +1,7 @@
 {
     "hosting": {
       "public": "web-core/_site",
+      "cleanUrls": true,
       "trailingSlash": false,
       "headers": [ {
         "source": "**",
