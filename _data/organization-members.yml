@@ -46,11 +46,14 @@
   summary: "Přemýšlím, jak můžeme mít jako Fakta o klimatu co největší dopad – a jak co nejvíce zhodnotit existující infografiky a materiály."
   img: "martin-krivanek.jpg"
   linkedin: "https://www.linkedin.com/in/martin-krivanek/"
+  
+- name: "Martin crysman Zahradník"
+  position: "Dobrovolník"
+  summary: "Nejvíc píšu newslettery (už nás <a href=\"https://tinyletter.com/faktaoklimatu/subscribe/validate\" target=\"_blank\" title=\"přejít na stránku s newsletterem\">odebírate?</a> :) Mimo to jsem prokletý a všude vidím chyby, což se naštěstí dá tady v projektu využít pozitivně, a příležitostně se tedy starám o korektury a opravy nebo navrhuju vylepšováky. Rád si ujíždím na psaní <em>bash</em> skriptů. Občas trochu rebeluju (ale pstruhy nelechtám <a href=\"https://archive.org/details/theme-hospital-doctor-burmore\" target=\"_blank\" title=\"nejsem doktor Burmore…\">⁈</a>)"
+  img: "martin-crysman-zahradnik.png"
 
 - name: "Dobrovolník"
   position: "Dobrovolník"
   summary: "Občas se zůčastním nějakého pracovního setkání a pomůžu udělat rešerši, naprogramovat komponentu na webu, nebo napsat text. A je nás <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'> víc</a>."
   img: "dobrovolnik.png"
-
-
 
