@@ -20,14 +20,14 @@ perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise tř
 
 ## Proč výroba cementu produkuje tolik CO<sub>2</sub>?
 
-**Výroba jedné tuny cementu vytvoří přibližně 1–1,2 tuny CO<sub>2</sub>**. Oxid uhličitý přitom vzniká dvěma způsoby: jednak jako produkt chemické reakce, a jednak při spalování uhlí nebo plynu při zahřívání. Cement se vyrábí v pecích, zahříváním směsi rozemletého vápence a jílů na teploty okolo 1450 °C. Působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý a tato chemická reakce je zodpovědná přibližně za polovinu emisí CO<sub>2</sub> z výroby cementu: 
+**Výroba jedné tuny cementu vytvoří přibližně 1–1,2 tuny CO<sub>2</sub>**. Oxid uhličitý přitom vzniká dvěma způsoby: jednak jako produkt chemické reakce, a jednak při spalování uhlí nebo plynu při zahřívání. Cement se vyrábí v pecích, zahříváním směsi rozemletého vápence a jílů na teploty okolo 1450 °C. Působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý a tato chemická reakce je zodpovědná přibližně za polovinu emisí CO<sub>2</sub> z výroby cementu:
 
 {% include figure.html
     name="vzorec.svg"
     alt="CaCO3 + teplo ⟶ CaO + CO2"
 %}
 
-Druhá polovina emisí z výroby cementu je důsledkem spalování uhlí nebo plynu při zahřívání. Zatímco zahřívání je možné provádět i s mnohem nižšími emisemi, například spalováním vodíku, **oxid uhličitý z chemické reakce není prakticky možné snížit. Proto je dekarbonizace výroby cementu tak obtížná**. 
+Druhá polovina emisí z výroby cementu je důsledkem spalování uhlí nebo plynu při zahřívání. Zatímco zahřívání je možné provádět i s mnohem nižšími emisemi, například spalováním vodíku, **oxid uhličitý z chemické reakce není prakticky možné snížit. Proto je dekarbonizace výroby cementu tak obtížná**.
 
 {% include figure.html
     name="diagram.svg"
@@ -42,7 +42,7 @@ K velmi slabému vázání CO<sub>2</sub> ze vzduchu dochází až při zvětrá
 
 ## Které státy vyrábí nejvíce cementu?
 
-V současné době je zdaleka největším producentem cementu Čína, kde se vyrábí přibližně 60 % světové produkce. To je ale důsledek poměrně nedávného vývoje –  ještě v roce 1990 Čína vyráběla méně než čtvrtinu světové produkce. Další významní producenti cementu jsou Indie, USA a Evropská unie. Zatímco v USA a EU výroba cementu postupně klesá, v Indii a dalších rozvíjejících se ekonomikách očekáváme další růst. 
+V současné době je zdaleka největším producentem cementu Čína, kde se vyrábí přibližně 60 % světové produkce. To je ale důsledek poměrně nedávného vývoje –  ještě v roce 1990 Čína vyráběla méně než čtvrtinu světové produkce. Další významní producenti cementu jsou Indie, USA a Evropská unie. Zatímco v USA a EU výroba cementu postupně klesá, v Indii a dalších rozvíjejících se ekonomikách očekáváme další růst.
 
 {% include figure.html
     name="vyroba-svet.svg"
@@ -63,15 +63,14 @@ V roce 2018 vzniklo v České republice kvůli produkci cementu celkem asi 3,8 m
 Ke snížení by samozřejmě nejvíce přispěl pokles spotřeby cementu, tedy méně staveb z betonu. Dlouhodobé scénáře vývoje však očekávají, že poptávka po cementu ve světě naroste o 12–23 % do roku 2050, zejména v důsledku rozvoje zemí jako Indie, Indonésie či Brazílie. Na druhou stranu, pro naplnění _Pařížské dohody_ a omezení oteplování na 2 °C musejí emise z výroby cementu klesnout do roku 2050 asi o čtvrtinu. Je tedy možné snížit celkové emise z výroby, i když se bude zvyšovat objem jeho výroby? Lze uvažovat o kombinaci několika přístupů:
 
 1. Zvýšení efektivity spalování v pecích – odhaduje se, že použití nejnovějších technologií by mohlo snížit emisní intenzitu výroby na 0,8 tun CO<sub>2</sub> na tunu cementu.  
-2. Použití alternativních paliv – vzhledem k vysoké teplotě nelze k zahřívání použít elektřinu, přichází v úvahu vodík nebo syntetická paliva z biomasy. V této oblasti můžeme v následujícím desetiletí čekat velký pokrok, ale není jasné, jak rychle bude použití alternativních paliv škálovatelné.    
+2. Použití alternativních paliv – vzhledem k vysoké teplotě nelze k zahřívání použít elektřinu, přichází v úvahu vodík nebo syntetická paliva z biomasy. V této oblasti můžeme v následujícím desetiletí čekat velký pokrok, ale není jasné, jak rychle bude použití alternativních paliv škálovatelné.
 3. Snížení množství CaO v cementu a jeho nahrazení jinými sloučeninami – i tento přístup je oblastí vývoje a experimentování. Nemůžeme ale očekávat velké snížení emisní intenzity výroby, protože je potřeba zachovat materiálové vlastnosti betonu.  
 4. Zachycování uhlíku (CCS, _carbon capture and storage_) při výrobě cementu – do technologie zachycování uhlíku se vkládají velké naděje a už existují testovací projekty. Není ale zatím jasné, jak drahé a škálovatelné řešení to bude, a odborníci se navíc v hodnocení potenciálu CCS velmi rozcházejí.
 
-Výroba cementu se proto řadí k průmyslovým procesům, jejichž emise sice lze snížit, ale mnohem obtížněji než například v energetice. Proto také scénáře dekarbonizace ekonomiky, např. [McKinsey: Net-zero Europe](https://www.mckinsey.com/business-functions/sustainability/our-insights/how-the-european-union-could-achieve-net-zero-emissions-at-net-zero-cost), očekávají, že výroba cementu bude dekarbonizována jako jeden z posledních sektorů ekonomiky. 
+Výroba cementu se proto řadí k průmyslovým procesům, jejichž emise sice lze snížit, ale mnohem obtížněji než například v energetice. Proto také scénáře dekarbonizace ekonomiky, např. [McKinsey: Net-zero Europe](https://www.mckinsey.com/business-functions/sustainability/our-insights/how-the-european-union-could-achieve-net-zero-emissions-at-net-zero-cost), očekávají, že výroba cementu bude dekarbonizována jako jeden z posledních sektorů ekonomiky.
 
 ## Zdroje
 
 * Carbon Brief: [Q&A: Why cement emissions matter for climate change](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change)
 * [Materiály k přednášce o betonu](http://homel.vsb.cz/~khe0007/Predmety/Stavebni%20hmoty/Prednaska_c.6.pdf), VŠB – Technická univerzita Ostrava
 * Robbie M. Andrew: [Global CO<sub>2</sub> emissions from cement production](https://essd.copernicus.org/articles/10/195/2018/essd-10-195-2018.pdf)
-* https://d-nb.info/1163628514/34
