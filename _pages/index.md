@@ -137,7 +137,7 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
     {%- else %}
     <div class="carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- endif %}
-      <img src="{{ site.baseurl }}/assets-local/carousel/{{ item.img }}" class="d-block w-100" alt="{{- item.title -}}" />
+      <img src="/assets-local/carousel/{{ item.img }}" class="d-block w-100" alt="{{- item.title -}}" />
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ item.title }}</h5>
         <p>{{ item.summary }}</p>
