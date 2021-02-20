@@ -1,6 +1,21 @@
+- date: 2021-XX-XX
+  title: "FIXME Rozšíření na Slovensko"
+  summary: "FIXME fundraising kampaň blabla"
+
+- date: 2021-02-20
+  title: "První dva explainery"
+  summary: |
+    FIXME blablabla: 
+    * [FIXME výroba cementu](/explainery/emise-vyroba-cementu)
+    * [FIXME dýchání](/explainery/emise-dychani)
+    
 - date: 2021-01-30
   title: "Největší emitenti ČR"
   summary: "Prošli jsme databázi emisních povolenek EU ETS a vytáhli jsme z ní [největší české emitenty](/infografiky/nejvetsi-emitenti-cr) v rámci tohoto systému. Jde o nejnovější dostupná data, za rok 2018."
+
+- date: 2021-01-23
+  title: "Mezinárodní klimatické dohody"
+  summary: "Zveřejnili jsme novou infografiku o [mezinárodních klimatických dohodách](/infografiky/svetove-dohody) – na časové ose zachycuje klíčové události světového úsilí v ochraně klimatu."
 
 - date: 2021-01-06
   title: "Emisní scénáře pro naplnění Pařížské dohody"
