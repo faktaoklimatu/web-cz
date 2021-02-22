@@ -42,5 +42,5 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 
 * Shakun, J., Clark, P., He, F. et al. _Global warming preceded by increasing carbon dioxide concentrations during the last deglaciation._ Nature 484, 49–54 (2012). [DOI 10.1038/nature10915](https://doi.org/10.1038/nature10915)
 * Marcott, S., Shakun, J.,  & Clark, P., Mix, A. _A Reconstruction of Regional and Global Temperature for the Past 11,300 Years._ Science 339, 1198-201, (2013) [DOI 10.1126/science.1228026](https://doi.org/10.1126/science.1228026).
-* GISTEMP Team, _2019: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2020-02-27 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
+* GISTEMP Team, _2020: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2021-02-20 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
 * Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy a D. Zyss, _2019: Improvements in the GISTEMP uncertainty model._ Journal of Geophysical Research: Atmospheres, 124, č. 12, str. 6307–6326, [DOI 10.1029/2018JD029522](http://dx.doi.org/10.1029/2018JD029522).
