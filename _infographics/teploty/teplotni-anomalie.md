@@ -13,7 +13,7 @@ tags-topics: [ klima ]
 caption:    "Planeta je nyní o 1,2 °C teplejší než v tzv. předindustriálním období, tedy v letech 1850–1900. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "vyvoj-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/1XDa9X1W-bEJhKYMtefvwPuz5N0l2HPyio5dR5KI9qsY/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1PBBQyBb2hI1R8mTeXqPT5yOt0m2IQ6DBZRCG-ogYkZ8/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ---
 
@@ -22,7 +22,7 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 140 letech. Teplotní anomálie pro daný rok udává,
 o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě (podrobněji níže).
 
-Z grafu můžeme také vidět, že rok 2016 byl nejteplejším rokem v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,24 °C. V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého. Nejteplejší měsíc byl únor 2016, s teplotní anomálií 1,60°C. __Dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu__.
+Z grafu můžeme také vidět, že roky 2016 a 2020 byly nejteplejšími v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,24 °C. V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého. Nejteplejší měsíc byl únor 2016, s teplotní anomálií 1,60°C. __Dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu__.
 
 ## Důležité souvislosti: místní trendy a rychlost oteplování
 
@@ -43,7 +43,7 @@ Původní data z NASA GISS používaly jako referenční období roky 1951–198
 
 Místní teplotní anomálie pro daný rok udává, o kolik bylo dané místo teplejší než *normálně*, tedy než průměrná roční teplota ve vybraném referenčním období. Světová teplotní anomálie je pak vypočtena jako vážený průměr místních teplotních anomálií pro jednotlivé měřicí stanice. Vážený průměr koriguje rozdílnou hustotu měřicích stanic v různých místech. Místní či světová teplotní anomálie pro určitý měsíc se počítá podobně, jen místo celého roku se počítá rozdíl od průměrné teploty daného měsíce.
 
-Například teplotní anomálie pro rok 2016, který je zatím (k lednu 2021) nejteplejší v historii, byla 1,2 °C – to znamená, že v celoplanetárním průměru byl rok 2016 o 1,2 °C teplejší než období 1850–1900. Různá místa na planetě však v různých měsících zažívala různé teploty. Třeba listopad roku 2016 byl v Kanadě o více než 5 °C teplejší, pro většinu Ruska o 4 °C chladnější a v Evropě jen slabě nadprůměrný. Tato chladnější a teplejší místa se při průměrování vyrovnají, celoplanetární a celoroční průměr pro rok 2016 vyšel 1,2 °C.
+Například teplotní anomálie pro rok 2016, který je spolu s rokem 2020 zatím nejteplejší v historii, byla 1,2 °C – to znamená, že v celoplanetárním průměru byl rok 2016 o 1,2 °C teplejší než období 1850–1900. Různá místa na planetě však v různých měsících zažívala různé teploty. Třeba listopad roku 2016 byl v Kanadě o více než 5 °C teplejší, pro většinu Ruska o 4 °C chladnější a v Evropě jen slabě nadprůměrný. Tato chladnější a teplejší místa se při průměrování vyrovnají, celoplanetární a celoroční průměr pro rok 2016 vyšel 1,2 °C.
 
 ## Proč se používá teplotní anomálie místo absolutní průměrné teploty?
 
