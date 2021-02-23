@@ -22,7 +22,7 @@
         "value": "{\"report_to\": \"default\", \"max_age\": 2592000, \"include_subdomains\": true, \"failure_fraction\": 1.0}"
       }, {
         "key": "Content-Security-Policy-Report-Only",
-        "value": "default-src 'self'; font-src 'self' https://use.fontawesome.com; img-src 'self'; script-src 'self' https://www.googletagmanager.com https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com; style-src 'self' https://maxcdn.bootstrapcdn.com https://use.fontawesome.com; connect-src https://www.google-analytics.com; frame-src: https://www.googletagmanager.com; report-uri https://nkas07xe.uriports.com/reports/report; report-to default"
+        "value": "default-src 'self'; font-src 'self' https://use.fontawesome.com; img-src 'self'; script-src 'self' https://www.googletagmanager.com https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com; style-src 'self' https://maxcdn.bootstrapcdn.com https://use.fontawesome.com; connect-src https://www.google-analytics.com; frame-src https://www.googletagmanager.com; report-uri https://nkas07xe.uriports.com/reports/report; report-to default"
       }, {
         "key": "Expect-CT",
         "value": "max-age=86400,report-uri=\"https://nkas07xe.uriports.com/reports/report\""
