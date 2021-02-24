@@ -41,7 +41,7 @@ data-orig:  [ [ "Global Carbon Project", "https://data.icos-cp.eu/licence_accept
 
 * **Těžba a přeprava:** Celkově se na světě těží okolo [100 milionů barelů ropy](https://www.eia.gov/outlooks/steo/report/global_oil.php) za den, tedy asi 5 miliard tun za rok (2019). Nejvíce ropy se těží v zemích Perského zálivu (asi 32 % světové produkce), dále v USA (15 %) a Rusku (13 %). Zatímco USA pokrývá těžbou vlastní spotřebu, většina ostatních významných producentů ropy svou těžbu exportuje. Asi 61 % ropy se [přepravuje po moři](https://talkbusiness.net/2017/08/61-of-global-crude-oil-and-petroleum-products-transported-by-sea/), zbytek skrze [ropovody](http://worldmap.harvard.edu/data/geonode:global_oil_pipelines_7z9).  
 
-* V grafu je vidět několikaletý **pokles spotřeby po roce 1979**, který byl způsoben [ropnou krizí](https://en.wikipedia.org/wiki/1979_oil_crisis) po revoluci v Iránu a následné válce mezi Iránem a Irákem. Světová těžba tehdy poklesla asi o 4 % a cena ropy vyskočila na dvojnásobek.
+* V grafu je vidět několikaletý **pokles spotřeby po roce 1979**, který byl způsoben [ropnou krizí](https://en.wikipedia.org/wiki/1979_oil_crisis) po revoluci v Íránu a následné válce mezi Íránem a Irákem. Světová těžba tehdy poklesla asi o 4 % a cena ropy vyskočila na dvojnásobek.
 
 ### Plyn
 
