@@ -20,6 +20,7 @@ slugs:
   topics: temata
   glossary: slovnik
   how-to-use: jak-pouzivat
+  news: aktuality
 
 # Set permalinks in local language
 collections:
