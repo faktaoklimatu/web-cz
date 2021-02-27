@@ -6,12 +6,12 @@ published:  2020-05-24
 weight:     50
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
-caption:    "Dataset obsahuje počty letních dní, tropických dní, tropických nocí, ledových dní, mrazových dní a dní sněhem, lineární trend a klouzavý průměr počtu ledových a tropických dní přes 5 let pro Prahu-Ruzyni a Brno-Tuřany v období let 1961–2019."
+caption:    "Dataset obsahuje počty letních dní, tropických dní, tropických nocí, ledových dní, mrazových dní a dní sněhem, lineární trend a klouzavý průměr počtu ledových a tropických dní přes 5 let pro Prahu-Ruzyni a Brno-Tuřany v období let 1961–2020."
 data-our:    "https://docs.google.com/spreadsheets/d/105PpUjpl5T3Wz5oFMUQYBj-KaqAUU6zF-Vv-RQ1zj3E/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/denni-data/data-ze-stanic-site-RBCN" ] ]
 ---
 
-## Historická denní data ČHMÚ (období 1961–2019)
+## Historická denní data ČHMÚ (období 1961–2020)
 
 {% include data-header.html
     name="ČHMÚ"

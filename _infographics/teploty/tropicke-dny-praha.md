@@ -13,8 +13,8 @@ dataset:    "tropicke-dny"
 
 ## Jak číst tento graf?
 
-* Graf zobrazuje vývoj počtu ledových (modré body) a tropických dní (červené body) v Praze-Ruzyni v letech 1961–2019, jejich klouzavý průměr přes 5 let a trendové křivky. Jako ledové se označují dny, jejichž maximální teplota byla nižší než 0 °C. Za tropické jsou považovány ty, jejichž maximální teplota překročila 30 °C.
-* V grafu je vidět, že počty ledových i tropických dní každoročně kolísají, i přesto je však patrný trend, který je pro ledové dny klesající a pro tropické rostoucí. V průměru za posledních 6 dekád přibyde v Praze každou dekádu 1,1 tropického dne a ubyde 2,1 ledového dne. Z grafu je však patrné, že trend je v poslední dekádě rychlejší.
+* Graf zobrazuje vývoj počtu ledových (modré body) a tropických dní (červené body) v Praze-Ruzyni v letech 1961–2020, jejich klouzavý průměr přes 5 let a trendové křivky. Jako ledové se označují dny, jejichž maximální teplota byla nižší než 0 °C. Za tropické jsou považovány ty, jejichž maximální teplota překročila 30 °C.
+* V grafu je vidět, že počty ledových i tropických dní každoročně kolísají, i přesto je však patrný trend, který je pro ledové dny klesající a pro tropické rostoucí. V průměru za posledních 6 dekád přibylo v Praze každou dekádu 1,1 tropického dne a ubylo 2,4 ledového dne. Z grafu je však patrné, že trend je v poslední dekádě rychlejší.
 
 ## Zajímavosti a komentáře ke grafu
 
@@ -26,4 +26,4 @@ dataset:    "tropicke-dny"
 
 * Zdrojem dat jsou historická denní data <glossary id="chmu">ČHMÚ</glossary>, která obsahují údaje o průměrné, maximální a minimální teplotě, rychlosti větru, tlaku vzduchu, vlhkosti vzduchu, úhrnu srážek, celkové výšce sněhu a slunečním svitu pro 11 stanic na území ČR. Aktualizace datových souborů probíhá jednou za rok.
 * Pro potřeby grafu výše byly na základě denních dat o maximální teplotě vypočteny sumy tropických a ledových dní pro jednotlivé kalendářní roky. Počty ledových dní během každé zimy byly tím pádem rozděleny do dvou datových bodů.
-* Datové podklady pro graf byly zpracovány v březnu 2020.
+* Datové podklady pro graf byly zpracovány v únoru 2021.
