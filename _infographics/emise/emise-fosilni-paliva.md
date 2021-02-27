@@ -47,5 +47,11 @@ data-orig:  [ [ "Global Carbon Project", "https://data.icos-cp.eu/licence_accept
 
 ### Cement
 
+{% include preview-box.html
+    title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
+    text=Výroba jedné tuny cementu vytvoří přibližně 1–1,2 tuny CO₂."
+    slug="emise-vyroba-cementu"
+%}
+
 * Cement se vyrábí zahříváním směsi vápence a jílu na teploty okolo 1450 °C, kdy se působením tepla vápenec rozkládá na oxid vápenatý a oxid uhličitý. Přibližně polovina celkových emisí CO<sub>2</sub> z výroby cementu vzniká jako důsledek chemické reakce CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>, druhá polovina celkových emisí souvisí se spalováním uhlí či plynu. V kategorii *cement* jsou v grafu zaneseny pouze emise z chemické reakce. Emise ze spalování jsou součástí grafů pro příslušná fosilní paliva.
-* Celkové emise z výroby cementu (včetně paliv na ohřev) jsou přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce CO<sub>2</sub>.  Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA.
+* Celkové emise z výroby cementu (včetně paliv na ohřev) jsou přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světové produkce CO<sub>2</sub>. Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA.
