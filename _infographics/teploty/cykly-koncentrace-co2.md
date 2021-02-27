@@ -68,8 +68,12 @@ Keelingova metoda měření koncentrací CO<sub>2</sub> spočívá v extrémně 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 
 Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fosilních paliv je několik:
-
-* Lidstvo ročně spálí přes 5 miliard tun uhlí, asi 4 miliardy tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
+{% include preview-box.html
+    title="Emise CO<sub>2</sub> ze spalování uhlí, ropy a plynu"
+    text="Lidstvo ročně spálí asi 8 miliard tun uhlí, 5 miliard tun ropy a asi 3 miliardy tun zemního plynu."
+    slug="emise-fosilni-paliva"
+%}
+* Lidstvo ročně spálí asi 8 miliard tun uhlí, 5 miliard tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
 * Nárůst koncentrací CO<sub>2</sub> je doprovázen poklesem koncentrací O<sub>2</sub>, který přesně odpovídá směšovacím poměrům při spalování fosilních paliv (po započtení pohlcení části CO<sub>2</sub> v oceánech) – tedy jde o další důkaz, že za zvyšování koncentrací CO<sub>2</sub> může právě spalování.
 * Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C a sníženou koncentraci <sup>13</sup>C. Oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na webu [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html).
 
