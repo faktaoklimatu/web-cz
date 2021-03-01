@@ -7,6 +7,10 @@ author:      "Jakub Zamouřil"
 weight:      74
 tags-scopes: [ evropa ]
 tags-topics: [ opatreni ]
+# TODO: aktualizovat cover art, doplnit licenci a autora.
+# cover-source-author: "??"
+# cover-source-license: "CC BY 4.0 ??"
+# cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"
 cover-source-text: "Evropská komise"
 cover-source-url: "https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
 perex:       "Evropská komise v prosinci 2020 představila Evropskou zelenou dohodu, která nastiňuje klimatické ambice EU na příštích 30 let. Co tato dohoda obsahuje?"
