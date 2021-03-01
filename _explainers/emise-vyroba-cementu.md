@@ -7,6 +7,9 @@ author:      "Ondráš Přibyla"
 weight:      73
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
+cover-source-author: "Gavin Houtheusen/Department for International Development"
+cover-source-license: "CC BY 3.0"
+cover-source-license-url: "https://creativecommons.org/licenses/by/3.0/deed.en"
 cover-source-text: "Wikimedia Commons"
 cover-source-url: "https://commons.wikimedia.org/wiki/File:Factory_of_National_Cement_Share_Company.jpg"
 perex:       "Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě, hned po Číně a USA. V roce 2015 způsobila výroba cementu přibližně 2,8 miliard tun CO<sub>2</sub>, tedy asi 8 % světových emisí. To je zhruba čtyřikrát více než letecká doprava.  Můžeme očekávat, že díky rozvoji měst bude poptávka po cementu a betonu ve světovém měřítku dále narůstat. Pro naplnění cílů Pařížské dohody bude zároveň nutné dramaticky snížit emise z výroby cementu, což se zatím příliš nedaří."
