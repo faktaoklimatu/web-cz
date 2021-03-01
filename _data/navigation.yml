@@ -34,3 +34,13 @@
 
     - title: O nás
       link: /o-nas
+
+- title: česky
+  lang: cs
+  dropdown:
+    - title: slovensky
+      lang: sk
+      link: https://faktyoklime.sk
+    - title: english
+      lang: en
+      link: https://factsonclimate.org
