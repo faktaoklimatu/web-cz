@@ -29,6 +29,9 @@ text:
     title: "Související infografiky a studie"
     caption: "Zaujala vás naše práce? Prozkoumejte další související infografiky a studie:"
     dataset-based: "Infografiky postavené na tomto datasetu"
+  index:
+    all-news: "Zobrazit celý přehled novinek, oprav a aktualizací..."
+    all-tag: "Další infografiky, studie a datasety k tématu"
 
 sidebar:
   download:
