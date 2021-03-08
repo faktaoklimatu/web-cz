@@ -3,6 +3,8 @@
 navigation:
   dev-version: "Vývojářská verze webu"
   dev-differences: "Oproti produkční verzi v ní chybí web analytika."
+  search-empty: "Nic nenalezeno"
+  search-failed: "Hledání nefunguje. Možná je chyba v připojení k internetu?"
 
 footer:
   get-newsletter: "Odebírejte newsletter"
