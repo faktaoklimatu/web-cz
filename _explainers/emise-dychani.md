@@ -9,6 +9,8 @@ tags-scopes: [ svet ]
 tags-topics: [ emise ]
 cover-source-author: "dan carlson"
 cover-source-text: "Unsplash"
+cover-source-license: "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
 cover-source-url: "https://unsplash.com/photos/G86MS2ZsiJA"
 perex:     "O oxidu uhličitém jsme většinou slyšeli poprvé na základní škole. Z přírodopisu si zřejmě pamatujeme, že vzniká při hoření a při dýchání. V souvislosti s klimatickou změnou se o CO<sub>2</sub> mluví jako o skleníkovém plynu a řeší se snižování emisí CO<sub>2</sub>. Kolik oxidu uhličitého člověk vydechne za den? Jak moc tedy přispívá 7 miliard lidí svým dýcháním k růstu koncentrací CO<sub>2</sub>? A jaký vliv má dýchání ostatních živočichů a rostlin?"
 ---
