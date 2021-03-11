@@ -8,8 +8,8 @@ weight:     95
 tags-scopes: [ svet ]
 tags-topics: [ emise, energetika ]
 caption:    "Světové emise CO<sub>2</sub> ze spalování uhlí, ropy a plynu narostly za posledních 60 let čtyřnásobně. K dosažení uhlíkové neutrality bude potřeba, aby klesly prakticky na nulu. "
-data-our:   "https://docs.google.com/spreadsheets/d/1livivZOC7ha7UkAqiMJtvt1AnMRUq-aNsta8KKgxQ44/edit?usp=sharing"
-data-orig:  [ [ "Global Carbon Project", "https://data.icos-cp.eu/licence_accept?ids=%5B%226QlPjfn_7uuJtAeuGGFXuPwz%22%5D" ]
+data-our:   "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
+data-orig:  [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ]
             ]
 ---
 

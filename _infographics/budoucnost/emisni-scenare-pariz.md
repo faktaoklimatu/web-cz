@@ -9,7 +9,7 @@ tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Udržet nárůst teploty v mezích, které nezpůsobí rozsáhlou destrukci životního prostředí, vyžaduje radikální snížení emisí. Scénáře, které vedou k nárůstu globální teploty do 1,5 °C oproti předindustriálnímu období, počítají se snížením emisí CO<sub>2</sub> na polovinu do roku 2030 a dosažením uhlíkové neutrality do roku 2050. Kdybychom se spokojili s omezením oteplení na 2 °C, znamená to snížit emise o čtvrtinu do roku 2030 a uhlíkové neutrality dosáhnout kolem roku 2070."
 data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
-data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2019" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
 {% include preview-box.html
