@@ -1,3 +1,7 @@
+- date: 2021-03-01
+  title: "Rozšíření na Slovensko"
+  summary: "Spustili jsme první další pořádnou jazykovou mutaci webu! Zatím relevantní především pro lidi na Slovensku - [faktyoklime.sk](https://faktyoklime.sk/). Zároveň máme [základní info v angličtině](https://factsonclimate.org/) - vizte vlaječky nahoře v menu."
+
 - date: 2021-02-26
   title: "Světové emise CO2 z fosilních paliv a výroby cementu"
   summary: "Nová infografika ukazuje [vývoj světových emisí oxidu uhličitého](/infografiky/emise-fosilni-paliva) ze spalování uhlí, ropy, plynu a výroby cementu v letech 1960–2019. Tyto emise vzrostly od roku 1960 téměř čtyřikrát."
@@ -6,9 +10,20 @@
   title: "Světová teplotní anomálie za rok 2020"
   summary: "Infografiky [Vývoj světové teplotní anomálie](/infografiky/teplotni-anomalie) a [Světová teplotní anomálie za 22 000 let](/infografiky/teplota-22000-let) jsme aktualizovali o data za rok 2020."
 
+- date: 2021-02-20
+  title: "První dva explainery"
+  summary: | 
+    Zavedli jsme nový druh stránek, tzv. _explainery_ - stránky věnující se podrobně úzkému tématu zaměřené na detaily fungování s ambicí podrobně vysvětlit, jak něco ne/funguje. Zde jsou první dva:
+    * _"Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě..."_ - více vizte explainer [Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?](/explainery/emise-vyroba-cementu)
+    * _"V dlouhodobém měřítku lidské dýchání nepřispívá ke zvyšování koncentrací CO2 v atmosféře, protože..."_ - více vizte explainer [Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO2 v atmosféře?](/explainery/emise-dychani)
+
 - date: 2021-01-30
   title: "Největší emitenti ČR"
   summary: "Prošli jsme databázi emisních povolenek EU ETS a vytáhli jsme z ní [největší české emitenty](/infografiky/nejvetsi-emitenti-cr) v rámci tohoto systému. Jde o nejnovější dostupná data, za rok 2018."
+
+- date: 2021-01-23
+  title: "Mezinárodní klimatické dohody"
+  summary: "Zveřejnili jsme novou infografiku o [mezinárodních klimatických dohodách](/infografiky/svetove-dohody) – na časové ose zachycuje klíčové události světového úsilí v ochraně klimatu."
 
 - date: 2021-01-06
   title: "Emisní scénáře pro naplnění Pařížské dohody"
@@ -54,7 +69,7 @@
   summary: "Nová grafika se zaměřuje na [porovnání způsobů](/infografiky/potencial-zpusobu-snizeni-emisi), jak teď můžeme začít snižovat emise v Česku. Srovnáváme možnosti dopadu individuálních změn spotřeby lidí (v celospolečenském rozsahu) s možnostmi dopadu systémovějších zásahů. Zdaleka největší potenciál nabízí systémová proměna výroby elektřiny."
 
 - date: 2020-08-24
-  title: "Schématická mapa klimatické změny"
+  title: "Schematická mapa klimatické změny"
   summary: "Pro lepší pochopení [základních souvislostí změny klimatu](/infografiky/schema-klimaticke-zmeny) jsme vytvořili grafiku, ve které se dozvíte, jak jednotlivé oblasti lidské činnosti ovlivňují celoplanetární systémy a k jakým důsledkům takové změny vedou."
 
 - date: 2020-07-30
@@ -69,7 +84,7 @@
   summary: "Podkladová data a grafika [Vývoj světové teplotní anomálie](/infografiky/teplotni-anomalie) byla převedena na _předindustriální_ referenční období, tedy 1850–1900. Důvodem je, že Pařížská dohoda, zpráva SR15 IPCC i mnohé další dokumenty a články vztahují hodnoty oteplení právě vzhledem k tomuto referenčnímu období."
 
 - date: 2020-06-02
-  summary: "Spolu s Asociací pro mezinárodní otázky a Danuší Nerudovou jsme připravili mediální brífing _Konec uhlí v Čechách_ shrnující světový a český kontext uhelného phase-outu."
+  summary: "Spolu s Asociací pro mezinárodní otázky a Danuší Nerudovou jsme připravili mediální brífink _Konec uhlí v Čechách_ shrnující světový a český kontext uhelného phase-outu."
 
 - date: 2020-05-31
   title: "Nová sekce Energetika"
@@ -88,7 +103,7 @@
 - date: 2020-05-19
   title: "Globální zpráva o elektřině a dvě nové grafiky" 
   summary: |
-    * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020-globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20let. 
+    * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020-globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20 let. 
     * Nové grafiky: [Emisní intenzita](/infografiky/emisni-intenzity) a [Tropické a ledové dny](/infografiky/tropicke-dny-brno)
 
 - date: 2020-04-17
@@ -206,7 +221,7 @@
 
 - date: 2019-05-31
   title: "První klimatický hackathon"
-  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <glossary id='hackathon'>hackathon</glossary> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ – jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na githubu](https://github.com/mukrop/faktaoklimatu)."
+  summary: "Ondráš Přibyla a Martin Ukrop s podporou Marka Lahody a Martina crysmana Zahradníka zorganizovali první klimatický <glossary id='hackathon'>hackathon</glossary> ('klimaton') s poměrně velkou účastí (přes 15 lidí), kde byly položeny základy projektu _faktaoklimatu.cz_ – jaké infografiky chceme nejdříve, co na nich má být, jak má zhruba vypadat struktura a obsah webu, na jaké doméně má běžet atd. Založen [projekt na GitHubu](https://github.com/mukrop/faktaoklimatu)."
 
 - date: 2019-05-03
   title: "První pouliční akademie v Brně"
