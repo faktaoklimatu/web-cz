@@ -19,7 +19,10 @@ licence:
 text:
   toc: "Obsah"
   study:
+    study: "Studie"
     summary: "Hlavní závěry"
+  survey:
+    survey: "Rešerše"
   dataset:
     dataset: "Dataset"
     source: "Zdroj"
