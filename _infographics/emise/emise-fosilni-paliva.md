@@ -48,8 +48,8 @@ data-orig:  [ [ "Global Carbon Project", "https://data.icos-cp.eu/licence_accept
 ### Cement
 
 {% include preview-box.html
-    title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
-    text="Výroba jedné tuny cementu vytvoří přibližně 1–1,2 tuny CO₂."
+    title="Podrobněji o emisích z výroby cementu"
+    text="Výroba jedné tuny cementu vytvoří přibližně 1 až 1,2 tuny CO₂. Náš explainer tento proces přibližuje podrobněji."
     slug="emise-vyroba-cementu"
 %}
 
