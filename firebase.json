@@ -3,6 +3,11 @@
     "public": "web-core/_site",
     "cleanUrls": true,
     "trailingSlash": false,
+    "redirects": [ {
+      "source": "/assets/files/atlas-klimaticke-zmeny.pdf",
+      "destination": "/assets-local/files/atlas-klimaticke-zmeny.pdf",
+      "type": 301
+    } ],
     "headers": [ {
       "source": "**",
       "headers": [ {
