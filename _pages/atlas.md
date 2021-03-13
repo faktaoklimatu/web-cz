@@ -45,11 +45,11 @@ Grafiky a texty projektu Fakta o klimatu chceme do budoucna provázet metodický
 Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek o klimatické změně. Lze začít u zvyšování teplot, u emisí skleníkových plynů anebo třeba u dopadů změny na obyvatele různých oblastí. My jsme v Atlase uspořádali grafiky a texty tak, že ilustrují následující linku argumentů.
 
 1. **Lidská činnost mění složení atmosféry** – zejména kvůli spalování uhlí, ropy a plynu se v atmosféře hromadí oxid uhličitý.
-2. **Oxid uhličitý zesiluje skleníkový efekt** – výpočty a modely ukazují, že při zvýšení koncentrací CO2 z 280ppm na 540ppm se planeta jako celek oteplí v průměru o 3 °C.
+2. **Oxid uhličitý zesiluje skleníkový efekt** – výpočty a modely ukazují, že při zvýšení koncentrací CO<sub>2</sub> z 280 ppm na 540 ppm se planeta jako celek oteplí v průměru o 3 °C.
 3. **Globální oteplování je už nyní jasně pozorovaný a daty dobře podložený jev** – v průběhu 20. Století se teplota zvýšila o 1,2 °C, přičemž oteplení nebylo všude stejné. Některé části světa se  za posledních 60 let oteplily téměř o 5°C. Současné globální oteplování probíhá také výjimečně rychle.
-4. **Česká republika se otepluje přibližně dvakrát rychleji než světový průměr** – za posledních 60 let se oteplila o 2°C,  je to dáno její vnitrozemskou polohou na severní polokouli. Jedním z důsledků je masivní úhyn smrkových lesů.
-5. **Kdyby se planeta oteplila o více než 1.5 °C, došlo by ke kolapsu mnoha světových ekosystémů a velkým změnám v kryosféře a atmosférických a oceánských prouděních** – proto se státy v Pařížské dohodě zavázaly k úsilí udržet globální oteplování pod hranicí 1.5 °C.
-6. **Aby se oteplení podařilo udržet pod hranicí 1,5°C, je potřeba dosáhnout uhlíkové neutrality do roku 2050.**
+4. **Česká republika se otepluje přibližně dvakrát rychleji než světový průměr** – za posledních 60 let se oteplila o 2 °C,  je to dáno její vnitrozemskou polohou na severní polokouli. Jedním z důsledků je masivní úhyn smrkových lesů.
+5. **Kdyby se planeta oteplila o více než 1.5 °C, došlo by ke kolapsu mnoha světových ekosystémů a velkým změnám v kryosféře a atmosférických a oceánských prouděních** – proto se státy v Pařížské dohodě zavázaly k úsilí udržet globální oteplování pod hranicí 1,5 °C.
+6. **Aby se oteplení podařilo udržet pod hranicí 1,5 °C, je potřeba dosáhnout uhlíkové neutrality do roku 2050.**
 
 </details>
 

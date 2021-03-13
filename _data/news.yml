@@ -7,7 +7,7 @@
   summary: "Aktualizovali jsme infografiky týkající se teplotních podmínek v České republice na nová data od ČHMÚ za rok 2020. Jedná se celkem o pět infografik: [Průměrná roční teplota v ČR](/infografiky/teplota-cr), [Průměrná teplota v ČR v jednotlivých měsících](/infografiky/teplota-cr-mesice), [Trend nárůstu teplot v ČR v jednotlivých měsících](/infografiky/trend-teplot-cr), [Tropické a ledové dny v Brně-Tuřanech](/infografiky/tropicke-dny-brno) a [Tropické a ledové dny v Praze-Ruzyni](/infografiky/tropicke-dny-praha)."
 
 - date: 2021-02-26
-  title: "Světové emise CO2 z fosilních paliv a výroby cementu"
+  title: "Světové emise CO<sub>2</sub> z fosilních paliv a výroby cementu"
   summary: "Nová infografika ukazuje [vývoj světových emisí oxidu uhličitého](/infografiky/emise-fosilni-paliva) ze spalování uhlí, ropy, plynu a výroby cementu v letech 1960–2019. Tyto emise vzrostly od roku 1960 téměř čtyřikrát."
 
 - date: 2021-02-22
@@ -18,8 +18,8 @@
   title: "První dva explainery"
   summary: | 
     Zavedli jsme nový druh stránek, tzv. _explainery_ – stránky věnující se podrobně úzkému tématu zaměřené na detaily fungování s ambicí podrobně vysvětlit, jak něco ne/funguje. Zde jsou první dva:
-    * _"Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě..."_ – více vizte explainer [Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?](/explainery/emise-vyroba-cementu).
-    * _"V dlouhodobém měřítku lidské dýchání nepřispívá ke zvyšování koncentrací CO2 v atmosféře, protože..."_ – více vizte explainer [Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO2 v atmosféře?](/explainery/emise-dychani).
+    * _"Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě..."_ – více vizte explainer [Jakou roli hrají emise CO<sub>2</sub> z výroby cementu v klimatické změně?](/explainery/emise-vyroba-cementu).
+    * _"V dlouhodobém měřítku lidské dýchání nepřispívá ke zvyšování koncentrací CO<sub>2</sub> v atmosféře, protože..."_ – více vizte explainer [Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře?](/explainery/emise-dychani).
 
 - date: 2021-01-30
   title: "Největší emitenti ČR"
