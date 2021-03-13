@@ -99,11 +99,11 @@ Pařížská dohoda byla sjednána v prosinci 2015 v Paříži a je to podobně 
 - _Zvyšování schopnosti přizpůsobit se nepříznivým dopadům změny klimatu a posilování odolnosti vůči změně klimatu a nízkoemisního rozvoje způsobem, který neohrozí produkci potravin._
 - _Sladění finančních toků s nízkoemisním rozvojem odolným vůči změně klimatu._
 
-Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradila nynější kjótský protokol z roku 1997. USA od Pařížské dohody odstoupily 4. listopadu 2020 na základě jednání bývalého prezidenta D. Trumpa, nicméně nastupující prezident Joe Biden USA k dohodě znovu připojil [v den svého nástupu do funkce](https://www.whitehouse.gov/briefing-room/statements-releases/2021/01/20/paris-climate-agreement/), 20. ledna 2021.
+Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradila nynější Kjótský protokol z roku 1997. USA od Pařížské dohody odstoupily 4. listopadu 2020 na základě jednání bývalého prezidenta D. Trumpa, nicméně nastupující prezident Joe Biden USA k dohodě znovu připojil [v den svého nástupu do funkce](https://www.whitehouse.gov/briefing-room/statements-releases/2021/01/20/paris-climate-agreement/), 20. ledna 2021.
 
 Evropský parlament dohodu schválil 4. října 2016 a k 5. říjnu se podařilo dosáhnout cíle, aby dohodu ratifikovalo 55 zemí, které se celkově podílejí na více než 55 procentech emisí skleníkových plynů světa. Dohoda z Paříže je takzvanou smíšenou dohodou, některé její prvky jsou v odpovědnosti celé EU, za jiné odpovídají členské státy unie.
 
-Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDC, Nationally determined targets) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. V článku 6. dohoda uznává důležitost spolupráce a tržních mechanismů ke snižování emisí, nicméně jejich konkrétní podoba je předmětem [dalších jednání](https://www.carbonbrief.org/in-depth-q-and-a-how-article-6-carbon-markets-could-make-or-break-the-paris-agreement).
+Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs, Nationally Determined Contributions) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. V článku 6. dohoda uznává důležitost spolupráce a tržních mechanismů ke snižování emisí, nicméně jejich konkrétní podoba je předmětem [dalších jednání](https://www.carbonbrief.org/in-depth-q-and-a-how-article-6-carbon-markets-could-make-or-break-the-paris-agreement).
 
 **Zdroje:**
 
