@@ -49,7 +49,7 @@
   name-long: opatření, dokumenty, dohody
   index-weight: 5
   # Extra span řeší problém se slovníkovým odkazem na začátku odstavce.
-  description: Snahy řešit klimatickou změnu a její dopady vedou k mezinárodním jednáním a dohodám a k vzniku strategických dokumentů, které vytyčují národní plány a cíle. Také jsou přijímána právně závazná opatření nebo vytvářeny finanční nástroje, jako uhlíková daň nebo systémy pro obchodování s emisními povolenkami, které mají snížit emise skleníkvých plynů a zabránit dalšímu zesilování globálního oteplování (tzv. <glossary id='mitigace'>mitigační opatření</glossary>). Na úrovni regionů nebo měst pak vznikají <glossary id='adaptace'>adaptační opatření</glossary>, jejichž cílem je region na probíhající klimatickou změnu adaptovat. Typicky může jít o zelené střechy ve městech, zakládání tůní pro udržení vody v krajině nebo zavádění odolnějších plodin v zemědělství. 
+  description: Snahy řešit klimatickou změnu a její dopady vedou k mezinárodním jednáním a dohodám a k vzniku strategických dokumentů, které vytyčují národní plány a cíle. Také jsou přijímána právně závazná opatření nebo vytvářeny finanční nástroje, jako uhlíková daň nebo systémy pro obchodování s emisními povolenkami, které mají snížit emise skleníkových plynů a zabránit dalšímu zesilování globálního oteplování (tzv. <glossary id='mitigace'>mitigační opatření</glossary>). Na úrovni regionů nebo měst pak vznikají <glossary id='adaptace'>adaptační opatření</glossary>, jejichž cílem je region na probíhající klimatickou změnu adaptovat. Typicky může jít o zelené střechy ve městech, zakládání tůní pro udržení vody v krajině nebo zavádění odolnějších plodin v zemědělství. 
 
 - id: ekonomika
   name-short: ekonomika
