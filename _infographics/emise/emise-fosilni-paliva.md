@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Světové emise CO2 z fosilních paliv a výroby cementu"
+title:      "Světové emise CO₂ z fosilních paliv a výroby cementu"
 slug:       "emise-fosilni-paliva"
 redirect_from: "/emise-fosilni-paliva"
 published:  2021-02-26
