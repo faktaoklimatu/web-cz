@@ -8,33 +8,23 @@ Debata o klimatické změně je komplikovaná a na všech stranách plná zbyte�
 
 Jsme [tým profesionálů zabývajících se různými obory]](CONTRIBUTORS.md) – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.
 
-## Dokumentace pro obsahové editory
+## Konvence v repozitáři
 
-Chcete-li vyvíjet lokálně (tj. mít možnost sestavit si stránky u sebe), budete potřebovat linuxové prostředí (WSL ve Windows 10 je dostatečné). Aktuálně máme otestovanou funkčnost pro systémy Ubuntu, Fedora a Windows 10 (WSL1). Podporujeme dva způsoby lokálního sestavování stránek:
-
-* pomocí lokální instalace (aktuálně stabilnější), nebo
-* pomocí kontejnerů (do budoucna možná jednodušší, ale aktuálně méně stabilní).
-
-Základní průběh vývoje pak vypadá následovně:
-
-1. Aktualizujete si lokální verzi git repozitáře (`git checkout master && git pull`).
-2. Vytvořte si samostatnou větev z aktuální produkční verze (`git checkout -b moje-nova-vetev`).
-3. Udělejte potřebné změny (úpravy textu, infografik, ...).
-4. Sestavte si stránky lokálně a zkontrolujte svoji práci vizuálně (`make local -j4`).
-5. Spusťte lokální testy (`make check`).
-    * Poznámka: Nejprve se pouští testy na naše stránky, které musí projít. Pak se pouští kontrola dostupnosti externích odkazů, která nemusí projít (ani neprochází, jelikož některé stránky nejsou úplně zodpovědně dostupné...).
-6. Udělejte _commit_ své práce, podívejte se na konvence níže (`git add <zmenene-soubory>`, pak `git commit`).
-7. Odešlete své změny na GitHub server (`git push`).
-8. Založte _pull request_ na GitHubu a označte vhodné lidi pro kontrolu vaší práce.
-
-### Konvence v repozitáři
-
+* Při vývoji postupujte dle [návodů v systému Notion](https://www.notion.so/faktaoklimatu/GitHub-workflow-4c5b294731dc4f9a8b2203daefcff432).
+* Při psaní textů dodržujte české typografické konvence, viz [dokument v systému Notion](https://www.notion.so/faktaoklimatu/Stylistika-a-typografie-0e01939715434294bf80494ad851d22b).
 * Nadpisy _issues_ a _pull requestů_ jsou psány v češtině s diakritikou a začínají velkým písmenem. Udržte je krátké a věcné.
 * Text a diskuze v issue může být méně formální, klidně bez diakritiky a klidně ve slovenštině.
 * Snažte se každému _issue_ přiradit vhodné štítky a projekt. Jestli nevíte zvolit, přidejte štítek _na roztřízení_.
 * Nadpisy ke _commitům_ pište v češtině s diakritikou, velkým prvním písmenem a bez tečky na konci. Snažte se udržet je krátké (ideálně do 50 znaků).
 * Detailní popis _commitů_ může mít dle potřeby klidně i několik řádků. Používejte odrážky nebo celé věty (s tečkou na konci).
 * Chcete-li po přijetí commitu do produkce automaticky zavřít odpovídající _issue_ na GitHubu, přidejte větu _Resolves #257._ (257 nahraďte za dané číslo issue). Viz také [dokumentace](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue).
+
+## Lokální vývoj pro obsahové editory
+
+Chcete-li vyvíjet lokálně (tj. mít možnost sestavit si stránky u sebe), budete potřebovat linuxové prostředí (WSL ve Windows 10 je dostatečné). Aktuálně máme otestovanou funkčnost pro systémy Ubuntu, Fedora a Windows 10 (WSL1). Podporujeme dva způsoby lokálního sestavování stránek:
+
+* pomocí lokální instalace (aktuálně stabilnější), nebo
+* pomocí kontejnerů (do budoucna možná jednodušší, ale aktuálně méně stabilní).
 
 ### Lokální instalace
 
