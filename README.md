@@ -34,8 +34,9 @@ Lokální instalace má tyto prerekvizity (nainstalujte do systému):
 * GNU Make (balík `make` nebo součást základních vývojářských balíků jako je `build-essential`).
 * Jekyll a Bundler (balíky `jekyll` a `bundler`)
 * Inkscape ve verzi alespoň 1.0 (balík `inkscape`, zkontrolujte si však verzi!)
+* ImageMagic (balík `imagemagick`)
 
-Na Ubuntu 20.10 nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
+Na Ubuntu 20.10 nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential imagemagick`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
 
 ### Instalace v kontejneru
 
@@ -50,7 +51,7 @@ Kontejnery umožňují oddělit programy nutné pro sestavení a spuštění web
 
 ### Tipy a triky v případě technických problémů
 
-* Jekyll padá s nedostatečnými právy zápisu: Pravděpodobně mícháte-li build přes kontejner a lokální instalaci. Smažte podsložky `vendor`, `.cache` a `_site` ve `web-core` a zkuste znova.
+* Jekyll padá s nedostatečnými právy zápisu: Pravděpodobně mícháte-li build přes kontejner a lokální instalaci. Smažte všechny artefakty vzniklé při sestavování pomocí `make clean-build`.
 * Sestavení padá s tím, že Inkscape nezná použité argumenty: Pravděpodobně máte verzi Inkscape nižší než 1.0.
 * Změny v souborech se nepromítají do lokálně zobrazeného webu na `localhost:4000`: Pravděpodobně jste změnili obsah, který je předzpracováván před spuštěním Jekyllu (například PDF infografik). Zastavte lokálně sestavený web a dejte ho sestavit znova.
 * V `git status` vidím změny v souboru `web-core`, i když jsem v něm nic nedělal: Nejste-li vývojář [web-core](https://github.com/faktaoklimatu/web-core), netrapte se tím. Dost možná to znova zmizí, až příště sestavíte web.
