@@ -7,8 +7,8 @@ published:  2020-06-01
 weight:     90
 tags-scopes: [ eu ]
 tags-topics: [ energetika, opatreni ]
-caption:    "Stav uhelného phase-outu v zemích EU ke konci května 2020. Hodnoty produkce elektřiny z uhlí jsou uváděné v kWh na osobu za rok."
-data-our:   "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I"
+caption:    "Stav uhelného phase-outu v zemích EU ke konci dubna 2021. Hodnoty produkce elektřiny z uhlí jsou uváděné v kWh na osobu za rok."
+data-our:   "https://docs.google.com/spreadsheets/d/1oIeGtP4AFbNi3Dv-8AojfeptYoDYu0LGRaHEB4nPh2U"
 data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["Europe Beyond Coal (termíny phase-outů)", "https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 
@@ -20,7 +20,7 @@ data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.o
 
 * **Podíl uhlí na výrobě elektřiny** – nalevo od údajů o výrobě z uhlí na osobu jsou zobrazeny hodnoty určující podíl elektřiny z uhlí na energetickém mixu daného státu. Např. v Polsku je tento podíl 74 %. Uhelný phase-out tak bude pro Polsko mnohem větší výzvou než např. pro Francii, kde v roce 2019 tvořila výroba z uhlí méně než 1 % z celkové produkce elektřiny.
 
-* **Stav uhelného phase-outu** – země jsou v přehledu barevně rozlišeny podle toho, jaký je jejich aktuální stav z hlediska uhelného phase-outu. V Belgii, Rakousku a Švédsku již byl phase-out dokončen a většina dalších evropských zemí má stanovený konkrétní termín, kdy se tak stane. V České republice a Slovinsku momentálně probíhají jednají o termínu a strategii dosažení uhelného phase-outu. Polsko a balkánské státy jednání na vládní úrovni zatím ani nezahájily. Mapový přehled v pravé části grafiky ukazuje rozdělení Evropy na bloky zemí dle jejich stavu.
+* **Stav uhelného phase-outu** – země jsou v přehledu barevně rozlišeny podle toho, jaký je jejich aktuální stav z hlediska uhelného phase-outu. V Belgii, Rakousku a Švédsku již byl phase-out dokončen a většina dalších evropských zemí má stanovený konkrétní termín, kdy se tak stane. V České republice a Slovinsku momentálně probíhají jednání o termínu a strategii dosažení uhelného phase-outu. V Česku tzv. Uhelná komise doporučila na konci roku 2020 ukončit využívání uhlí do roku 2038, avšak vláda o termínu dosud definitivně nerozhodla. Polsko a balkánské státy jednání na vládní úrovni zatím ani nezahájily. Mapový přehled v pravé části grafiky ukazuje rozdělení Evropy na bloky zemí dle jejich stavu.
 
 * **Plánovaný termín uhelného phase-outu** – udává rok, ke kterému se dané země zavázaly k vyřazení uhlí ze svého energetického mixu, tj. nejzazší datum, kdy má dojít k odstavení poslední uhelné elektrárny. V případě Německa jsou uvedeny termíny dva. Je to dáno tím, že dle dohody zainteresovaných subjektů by Německo mělo opustit uhlí nejpozději do roku 2038, pokud to však okolnosti dovolí, stane se tak již o tři roky dříve.
 
@@ -46,8 +46,8 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 * **Zpoplatněním emisí napříč mnoha sektory** – v rámci EU se jedná o obchodování s emisními povolenkami (EU ETS), kterého se jako členský stát účastní i Česká republika. Díky změnám v systému cena tuny CO<sub>2</sub> v posledních letech výrazně stoupla na současných cca [20–25 EUR za tunu CO<sub>2</sub>](https://ember-climate.org/carbon-price-viewer/) (v loňském roce se pohybovala okolo 25 EUR, s útlumem ekonomiky v důsledku koronaviru poklesla cca na 20 EUR za tunu CO<sub>2</sub>).
 * **Omezením dotací** – na úrovni EU např. [došlo](https://www.iisd.org/sites/default/files/publications/stories-g20-eu-en.pdf) k úplnému zákazu dotování těžby černého uhlí (od roku 2018) a dalšímu tlaku na snižování všech dotací pro těžbu a spalování fosilních paliv.
 * **Doplňkovou uhlíkovou daní v energetice** nad rámec EU ETS (např. ve Velké Británii zavedena v roce 2013, v současnosti v přepočtu asi [20 EUR za tunu CO<sub>2</sub>](https://phys.org/news/2020-01-british-carbon-tax-coal-fired-electricity.html)).
-* **Zákonným omezením emisní intenzity pro elektrárny** (např. ve Francii bude v platnosti od roku 2023).
-* **Přímým zákazem provozování uhelných elektráren** (např. v Nizozemsku od roku 2030 nebo ve Finsku od roku 2029).
+* **Zákonným omezením emisní intenzity pro elektrárny** (např. ve Francii bude v platnosti od roku 2022).
+* **Přímým zákazem provozování uhelných elektráren** (např. ve Finsku od května 2029 nebo v Nizozemsku od ledna roku 2030).
 * **Vyplacením odškodného provozovatelům uhelných zdrojů** (plánováno v Německu částečně pomocí fixního odškodnění a částečně pomocí aukcí; Finsko nabízí provozovatelům symbolické odškodné pokud přestanou s výrobou o 5 let dříve než ji zakazuje zákon)
 * **Prostřednictvím strukturální podpory** pro zasažené uhelné regiony (plánuje např. Německo, Španělsko, Francie).
 
