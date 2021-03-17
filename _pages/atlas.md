@@ -3,6 +3,8 @@ layout:     empty
 title:      "Atlas klimatické změny"
 slug:       atlas
 intro:      "Pro kultivovanou veřejnou debatu o klimatické změně jsou nezbytná dobrá a především srozumitelně vysvětlená data. Proto v tomto atlasu nabízíme snadno pochopitelné grafy a mapy, které jsou navíc vždy doplněny textem, který danou problematiku vysvětluje."
+search_type: "Atlas"
+search_image: "/assets-local/img/atlas-mockup.png"
 ---
 
 <div class="section"><div class="container">
