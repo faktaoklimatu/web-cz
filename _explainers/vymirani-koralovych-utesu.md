@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Proč umírají korálové útesy a jakou roli v tom hraje klimatická změna? (neveřejné)"
+title:       "Proč umírají korálové útesy? (neveřejné)"
 slug:        "vymirani-koralovych-utesu"
 published:   true
 author:      "Tereza Jarníková, University of British Columbia"
@@ -16,7 +16,21 @@ cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_la
 perex:       "text - perex shrnující článek"
 ---
 
+
+
+PIC ISSUE 1. Jako hlavní obrázech bych chtěl něco barevnýho s rybičkama pro zdůraznění message, že jde o biodiversity hotspots.
+
+PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou. 
+
+PIC ISSUE 3. Ilustrace, že koráli mají uvnitř buněk zooxanthelu mi přijde dobrá, ale uspořádání obrázků na čtverec moc rozbíjí text. Prosím o přeuspořádání obrázků do řady, tak aby výsledný obr měl menší výšku. Obrázky jsou volně dostupné na linku. Stačí vybrat 3 - jde o to ilustrovat, že různé koráli mají stejnou zooxanthelu.
+
+PIC ISSUE 4. Zvažuju ještě obrázek ukazující Bleeching.. nebyly by lepší obrázky C a D z tohoto zdroje? https://www.frontiersin.org/files/Articles/252954/fmars-04-00158-HTML/image_m/fmars-04-00158-g004.jpg
+
+
+---
+
 ## Co přesně jsou koráli?
+
 
 Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, jež tvoří základ ekosystémů korálových útesů u pobřeží a jsou klimatickou změnou nejvíce ohroženy. 
 
