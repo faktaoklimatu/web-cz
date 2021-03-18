@@ -7,25 +7,39 @@ author:      "Tereza Jarníková, University of British Columbia"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
-cover-source-author: "NOAA Fisheries/Louise Giuseffi"
-# obrazek2 cover-source-author: "NOAA Fisheries/Jeffrey Milisen"
-cover-source-license: "none"
-cover-source-license-url: "https://www.omao.noaa.gov/find/media/images/image-licensing-usage-info"
-cover-source-text: "NOAA"
-cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_large.jpg"
+cover-source-author: "Coral Reef Image Bank/Yen-Yi Lee"
+cover-source-license: "NC"
+cover-source-license-url: "https://theoceanagency.org/terms-of-service"
+cover-source-text: "Coral Reef Image Bank"
+cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiLee_03jpg.zip"
+# obrazek 2
+# cover-source-author: "The Ocean Agency/NOAA Fisheries"
+# cover-source-license: "NC"
+# cover-source-license-url: "https://theoceanagency.org/terms-of-service"
+# cover-source-text: "The Ocean Agency"
+# cover-source-url: "https://www.coralreefimagebank.org/s/CoralReefImageBank_Palmyra_TheOceanAgency_14jpg.zip"
+# obrazek 3
+# cover-source-author: "NOAA Fisheries/Jeffrey Milisen"
+# cover-source-license: "není"
+# cover-source-license-url: "https://www.omao.noaa.gov/find/media/images/image-licensing-usage-info"
+# cover-source-text: "NOAA"
+# cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_large.jpg"
 perex:       "text - perex shrnující článek"
 ---
 
 
 
 PIC ISSUE 1. Jako hlavní obrázech bych chtěl něco barevnýho s rybičkama pro zdůraznění message, že jde o biodiversity hotspots.
+HOTOVO: množství barev a ryb bylo maximalizováno. Kdyby náhodou, máš na výběr dvě další fotky včetně metadat
 
-PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou. 
+PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
+K ŘEŠENÍ: našel jsem ve větším rozlišení, ale nevím jestli je košér oříznout ten rámeček. Původním autorem je zřejmě Dirk Bryant.
 
 PIC ISSUE 3. Ilustrace, že koráli mají uvnitř buněk zooxanthelu mi přijde dobrá, ale uspořádání obrázků na čtverec moc rozbíjí text. Prosím o přeuspořádání obrázků do řady, tak aby výsledný obr měl menší výšku. Obrázky jsou volně dostupné na linku. Stačí vybrat 3 - jde o to ilustrovat, že různé koráli mají stejnou zooxanthelu.
+HOTOVO
 
 PIC ISSUE 4. Zvažuju ještě obrázek ukazující Bleeching.. nebyly by lepší obrázky C a D z tohoto zdroje? https://www.frontiersin.org/files/Articles/252954/fmars-04-00158-HTML/image_m/fmars-04-00158-g004.jpg
-
+HOTOVO: nechal jsem ve složce i ty původní varianty
 
 ---
 
@@ -37,8 +51,8 @@ Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny �
 {% include figure.html
     name="mapa_vyskytu_koralu.jpg"
     alt="kde se nachazi korali"
-    source-text="Hugo Ahlenius, UNEP/GRID-Arenda"
-    source-url="https://www.grida.no/resources/7197"
+    source-text="Bryant et al."
+    source-url="https://www.researchgate.net/publication/259481906_Reefs_at_Risk_A_Map-Based_Indicator_of_Threats_to_the_World's_Coral_Reefs"
 %}
 
 Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou, což je druh mořské řasy, která žije přímo v buňkách hostitelských korálů. Koráli jí poskytují ochranu a lepší podmínky pro fotosyntézu, řasa jim to pak vrací formou potravy – až 90 % z toho, co při fotosyntéze vyprodukuje, předává řasa korálům. Ty mohou díky tomu rychle růst a vytvářet své vápenaté schránky. Díky této symbióze existují celé ekosystémy korálových útesů v tropických oceánských vodách po celé planetě.
@@ -49,7 +63,6 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou, co
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
-NOTE: vybrat obrázek z https://www.flickr.com/photos/tags/credittoddclajeunesse
 
 ## Proč nám na korálech tak záleží?
 
@@ -64,11 +77,13 @@ Existují tři hlavní faktory, které způsobují umírání teplovodních kor�
 Většina korálů roste nejlépe při [teplotách vody 23 - 29 °C](https://oceanservice.noaa.gov/facts/coralwaters.html). Vyšší teplota vody je pro koráli stresující a způsobí, že koráli koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká **zbělení korálů** ([*coral bleeching*](https://oceanservice.noaa.gov/facts/coral_bleach.html)). Neznamená to automaticky smrt korálu, ale ztráta symbiotické řasy znamená ztrátu živin a korál oslabuje. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit, i když to může trvat roky či desetiletí.  Déletrvající mořská "vlna veder" však způsobí smrt celého korálového útesu. Vypuzení řasy a zbělení korálů mohou způsobit i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jehož sránkách můžete vidět aktuální stav ohrožení korálových útesů. 
 
 {% include figure.html
-    name="beleni2.jpg"
+    name="beleni.jpg"
     alt="vybělení koráli"
-    source-text="IPCC"
-    source-url="https://www.ipcc.ch/site/assets/uploads/2018/03/WGII-AR5_Oceans-Compendium.pdf"
+    source-text="The Ocean Agency"
+    source-url="https://miro.medium.com/max/8000/1*-PZwwFfl9uxI4IuNQRwS_Q.jpeg"
 %}
+[//]: # (obrázek 2: source-text="IPCC" source-url="https://www.ipcc.ch/site/assets/uploads/2018/03/WGII-AR5_Oceans-Compendium.pdf")
+[//]: # (obrázek 3: source-text="NOAA" source-url="https://oceanservice.noaa.gov/education/tutorial_corals/media/coral02d_480.jpg")
 
 ### Okyselování oceánů
 
