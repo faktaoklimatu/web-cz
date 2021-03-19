@@ -51,13 +51,13 @@ Tabulka shrnuje produkci elektřiny v roce 2019 celosvětově, v hlavních regio
 | Indie           | 1 378 TWh  | 72 % |  3 % | 3 %  | 21 % | 1 008 kWh  | 651 |
 | Ostatní státy   | 9 754 TWh  | 21 % | 36 % | 7 %  | 28 % | 2 478 kWh  | 388 |
 | --------------- | ----------:| ----:| ----:| ----:|-----:|-----------:| ---:|
-| Česká republika | 86 TWh     | 43 % |  7 % | 35 % | 13 % | 6 916 kWh  | 411<sup>3</sup> |
+| Česká republika | 86 TWh     | 43 % |  7 % | 35 % | 13 % | 6 916 kWh  | 369<sup>3</sup> |
 
 </div>
 
 *<sup>1</sup> Do podílu výroby OZE jsou započítávány elektrárny vodní, větrné, solární a na biomasu.*  
 *<sup>2</sup> Uhlíková intenzita je udávána jako přímé emise výroby, nikoliv jako emise celého životního cyklu elektráren.*  
-*<sup>3</sup> Údaj o uhlíkové intenzitě pro ČR nepochází přímo ze zprávy. Je vypočtený z dat o výrobě pomocí příslušných emisních koeficientů z [IPCC 2014: ANNEX III, Technology-specific Cost and Performance Parameters](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf)*
+*<sup>3</sup> Údaj o uhlíkové intenzitě pro ČR nepochází přímo ze zprávy. Je vypočtený z dat o výrobě pomocí příslušných emisních koeficientů z [IPCC 2014: ANNEX III, Technology-specific Cost and Performance Parameters](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf). Výpočet včetně srovnání s dalšími státy EU najdete v [doprovodné tabulce](https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322).*
 
 ### Evropská unie
 
