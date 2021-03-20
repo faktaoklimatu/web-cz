@@ -29,14 +29,9 @@ perex:       "text - perex shrnující článek"
 
 
 
-PIC ISSUE 1. Jako hlavní obrázech bych chtěl něco barevnýho s rybičkama pro zdůraznění message, že jde o biodiversity hotspots.
-HOTOVO: množství barev a ryb bylo maximalizováno. Kdyby náhodou, máš na výběr dvě další fotky včetně metadat
 
 PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
 K ŘEŠENÍ: našel jsem ve větším rozlišení, ale nevím jestli je košér oříznout ten rámeček. Původním autorem je zřejmě Dirk Bryant.
-
-PIC ISSUE 3. Ilustrace, že koráli mají uvnitř buněk zooxanthelu mi přijde dobrá, ale uspořádání obrázků na čtverec moc rozbíjí text. Prosím o přeuspořádání obrázků do řady, tak aby výsledný obr měl menší výšku. Obrázky jsou volně dostupné na linku. Stačí vybrat 3 - jde o to ilustrovat, že různé koráli mají stejnou zooxanthelu.
-HOTOVO
 
 PIC ISSUE 4. Zvažuju ještě obrázek ukazující Bleeching.. nebyly by lepší obrázky C a D z tohoto zdroje? https://www.frontiersin.org/files/Articles/252954/fmars-04-00158-HTML/image_m/fmars-04-00158-g004.jpg
 HOTOVO: nechal jsem ve složce i ty původní varianty
