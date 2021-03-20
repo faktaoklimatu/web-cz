@@ -27,9 +27,6 @@ cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiL
 perex:       "text - perex shrnující článek"
 ---
 
-
-
-
 PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
 K ŘEŠENÍ: našel jsem ve větším rozlišení, ale nevím jestli je košér oříznout ten rámeček. Původním autorem je zřejmě Dirk Bryant.
 
@@ -39,7 +36,6 @@ HOTOVO: nechal jsem ve složce i ty původní varianty
 ---
 
 ## Co přesně jsou koráli?
-
 
 Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, jež tvoří základ ekosystémů korálových útesů u pobřeží a jsou klimatickou změnou nejvíce ohroženy. 
 
@@ -61,7 +57,7 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou, co
 
 ## Proč nám na korálech tak záleží?
 
-Korálové útesy jsou domovem pro ohromná množství živočichů – pestrobarevné rybky, mořští ježci, chobotnice, želvy, krevetky a jiní korýši – ti všichni jsou součástí potravní pyramidy na jejímž vrcholu najdeme mořské ptáky a žraloky. Z hlediska biodiverzity překonávají dkorálové útesy i tropické deštné pralesy – **ačkoli zabírají pouze 0,1 % oceánského dna, vytvářejí životní podmínky pro život nejméně 25 % všech známých mořských druhů** (Fisher 2015 in HG15). Jejich zánik by znamenal velkou ztrátu mořské biodiverzity. Ale i my lidé je potřebujeme: **na korálových útesech závisí živobytí asi půl miliardy lidí** a tvoří přirozenou bariéru, jež chrání hustě zalidněné pobřeží mnoha zemí před bouřemi a přílivovými vlnami z otevřeného oceánu atd. (Ferrario 2014).
+Korálové útesy jsou domovem pro ohromná množství živočichů – pestrobarevné rybky, mořští ježci, chobotnice, želvy, krevetky a jiní korýši – ti všichni jsou součástí potravní pyramidy na jejímž vrcholu najdeme mořské ptáky a žraloky. Z hlediska biodiverzity překonávají korálové útesy i tropické deštné pralesy – **ačkoli zabírají pouze 0,1 % oceánského dna, vytvářejí životní podmínky pro život nejméně 25 % všech známých mořských druhů** [^1]. Jejich zánik by znamenal velkou ztrátu mořské biodiverzity. Ale i my lidé je potřebujeme: **na korálových útesech závisí živobytí asi půl miliardy lidí** a tvoří přirozenou bariéru, jež chrání hustě zalidněné pobřeží mnoha zemí před bouřemi a přílivovými vlnami z otevřeného oceánu atd. [^2].
 
 ## Proč jsou koráli v ohrožení?
 
@@ -69,7 +65,7 @@ Existují tři hlavní faktory, které způsobují umírání teplovodních kor�
 
 ### Zvyšování teploty vody
 
-Většina korálů roste nejlépe při [teplotách vody 23 - 29 °C](https://oceanservice.noaa.gov/facts/coralwaters.html). Vyšší teplota vody je pro koráli stresující a způsobí, že koráli koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká **zbělení korálů** ([*coral bleeching*](https://oceanservice.noaa.gov/facts/coral_bleach.html)). Neznamená to automaticky smrt korálu, ale ztráta symbiotické řasy znamená ztrátu živin a korál oslabuje. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit, i když to může trvat roky či desetiletí.  Déletrvající mořská "vlna veder" však způsobí smrt celého korálového útesu. Vypuzení řasy a zbělení korálů mohou způsobit i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jehož sránkách můžete vidět aktuální stav ohrožení korálových útesů. 
+Většina korálů roste nejlépe při teplotách vody 23 - 29 °C [^3]. Vyšší teplota vody je pro koráli stresující a způsobí, že koráli koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). Neznamená to automaticky smrt korálu, ale ztráta symbiotické řasy znamená ztrátu živin a korál oslabuje. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit, i když to může trvat roky či desetiletí. Déletrvající mořská "vlna veder" však způsobí smrt celého korálového útesu. Vypuzení řasy a zbělení korálů mohou způsobit i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíž stránkách můžete vidět aktuální stav ohrožení korálových útesů. 
 
 {% include figure.html
     name="beleni.jpg"
@@ -86,27 +82,26 @@ Běžně má mořská voda pH okolo 8,2 což znamená, že je slabě zásaditá.
 
 ## Současný stav a vyhlídky do budoucna? 
 
-První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby [o 50 % svých korálových útesů](https://www.frontiersin.org/articles/10.3389/fmars.2017.00158/full). K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014-17, které zasáhlo 38 % korálových útesů světa [Le Nohaic 2017].
+První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby o 50 % svých korálových útesů [^4]. K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014-17, které zasáhlo 38 % korálových útesů světa [^5].
 Snímky ze sledování prováděného satelity NOAA ukazují současné velmi nepříznivé podmínky trvalého charakteru – zde je situace od konce prosince 2020 do začátku března 2021: 
 
 {% include figure.html
     name="mapa-ohrozeni-animace.gif"
     alt="mapa aktuálních úrovní ohrožení korálů"
     source-text="NOAA"
-    source-url="https://coralreefwatch.noaa.gov/data/5km/v3.1/current/animation/gif/baa-max_animation_90day_large.gif"
+    source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
 %}
-NOTE: Možná raději odkaz na Coral Reef Watch https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php
 
 Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář někdy v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad probíhjící klimatické změny na korály. 
 
-Zpráva <glossary id="sr15">IPCC SR15</glossary> odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C přijdeme o 70 - 90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**. (CITACE IPCC SR15 strana 229 Box 3.4)
+Zpráva <glossary id="sr15">IPCC SR15</glossary> [^6] odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C přijdeme o 70 - 90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**.
 
 
 ## Jaká rizika se týkají hlubokomořských korálů?
 
 Ne o všech korálech platí, že mají tvrdou schránku, tvoří útesy nebo že využívají fotosyntézu. Koráli žijící v mořských hlubinách (větevníci, laločníci...), kam sluneční světlo téměř nebo vůbec nepronikne, fotosyntézu nevyužívají, a proto také méně trpí bělením. Tyto populace korálů se vyznačují malou rychlostí růstu a vysokou délkou života: mohou žít celá staletí, v případě některých druhů, jako jsou např. trnatci (černí koráli), i tisíce let. 
 
-Pomalý růst však také znamená mnohem pomalejší obnovu v případě poškození. Mezi největší hrozby pro hlubokomořské koráli (a na ně navázané ekosystémy) patří komerční rybolov do sítí vlečených po dně, hlubinná těžba ropy a jiných minerálů, vedení kabelů a potrubí po mořském dně a průmyslové znečištění. (Hall-Spencer et al., 2002; Turley et al., 2007; Roberts and Cairns, 2014).  
+Pomalý růst však také znamená mnohem pomalejší obnovu v případě poškození. Mezi největší hrozby pro hlubokomořské korály (a na ně navázané ekosystémy) patří komerční rybolov do sítí vlečených po dně, hlubinná těžba ropy a jiných minerálů, vedení kabelů a potrubí po mořském dně a průmyslové znečištění [^7][^8][^9].   
 
 
 {% include figure.html
@@ -116,7 +111,14 @@ Pomalý růst však také znamená mnohem pomalejší obnovu v případě poško
     source-url="https://coralreef.noaa.gov/media/images_gallery/leaving_scars_600.jpg"
 %}
 
-## Zdroje (k doplnění)
+## Zdroje
 
-* Ove Hoegh-Guldberg et. al. 2017:[Coral Reef Ecosystems under Climate Change and Ocean Acidification](https://www.frontiersin.org/articles/10.3389/fmars.2017.00158/full)
-* Le Nohaic 2017: [Rozsáhlé zbělení korálů](https://www.nature.com/articles/s41598-017-14794-y)
+[^1]: Fisher, R. et al. ["Species richness on coral reefs and the pursuit of convergent global estimates"](https://doi.org/10.1016/j.cub.2014.12.022) Current Biology 25, str. 500–505 (2015).
+[^2]: Ferrario, F., Beck, M., Storlazzi, C. et al., ["The effectiveness of coral reefs for coastal hazard risk reduction and adaptation"](https://doi.org/10.1038/ncomms4794),  Nature Communication 5, čl. 3794 (2014).
+[^3]: NOAA, ["In what types of water do corals live?"](https://oceanservice.noaa.gov/facts/coralwaters.html)
+[^4]: Hoegh-Guldberg O, Poloczanska ES, Skirving W and Dove S, ["Coral Reef Ecosystems under Climate Change and Ocean Acidification"](https://doi.org/10.3389/fmars.2017.00158) Frontiers in Marine Science 4, str. 158 (2017).
+[^5]: Le Nohaïc, M., Ross, C.L., Cornwall, C.E. et al. ["Marine heatwave causes unprecedented regional mass bleaching of thermally resistant corals in northwestern Australia"](https://doi.org/10.1038/s41598-017-14794-y), Scientific Reports 7, čl. 14999 (2017).
+[^6]: IPCC, ["Summary for policymakers: Global warming of 1.5 °C](https://www.ipcc.ch/report/sr15) — An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty”, editoři V. Masson-Delmotte et al., IPCC, World Meteorological Organization, United Nations Environment Programme (Geneva, Switzerland, 2018).
+[^7]: Hall-Spencer, J., Allain, V., Fosså, J.H., ["Trawling damage to Northeast Atlantic ancient coral reefs"](https://doi.org/10.1098/rspb.2001.1910) Proceedings of the Royal Society B, Biological Sciences 269, str. 507–511 (2002).
+[^8]: Turley, C.M., Roberts, J.M., Guinotte, J.M., ["Corals in deep-water: will the unseen hand of ocean acidification destroy cold-water ecosystems?"](https://doi.org/10.1007/s00338-007-0247-5). Coral Reefs 26, str. 445–448 (2007).
+[^9]: Roberts J.M., Cairns, S.D. ["Cold-water corals in a changing ocean"](https://doi.org/10.1016/j.cosust.2014.01.004) Current Opinion in Environmental Sustainability 7, str. 118–126 (2014).
