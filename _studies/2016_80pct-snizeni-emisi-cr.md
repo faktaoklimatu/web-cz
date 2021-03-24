@@ -4,7 +4,7 @@ title:      "80% snížení emisí skleníkových plynů do roku 2050 v ČR"
 slug:       2016_80pct-snizeni-emisi-cr
 weight:     8
 tags-scopes: [ cr ]
-tags-topics: [ emise, energetika ]
+tags-topics: [ emise, energetika, opatreni ]
 caption:    "Studie Institutu pro demokracii a ekonomickou analýzu se zabývá možností snížit emise o 80 % do roku 2050."
 intro:      "Studie Institutu pro demokracii a ekonomickou analýzu (IDEA) z roku 2016 se zabývá možností snížit emise skleníkových plynů o 80 % do roku 2050. Česká vláda se přihlásila k dlouhodobé strategii dekarbonizace Evropské unie a tím se zavázala snížit emise skleníkových plynů do roku 2050 o 80–95 % oproti roku 1990. Státní energetická koncepce z roku 2015 předpokládá snížení skleníkových plynů o 66,5 % do roku 2050, studie prostřednictvím komplexního energetického dynamického modelu TIMES-CZ srovnává scénář podle této státní koncepce (SEK scénář) se třemi alternativními scénáři, které skutečně dosahují snížení emisí skleníkových plynů o 80 % v souladu s cíli Evropské unie definovanými v EU Energy Roadmap 2012. 
 
