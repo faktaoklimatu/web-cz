@@ -121,6 +121,7 @@ items:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
     timeframe: 2030 až 2045
+    study:     2016_80pct-snizeni-emisi-cr
   - title:   "Energetická [r]evoluce"
     url:     "https://storage.googleapis.com/planet4-czech-republic-stateless/2018/10/c6cea469-c6cea469-er-pro-%C4%8Cr-2012.pdf"
     date:    Červen 2012
