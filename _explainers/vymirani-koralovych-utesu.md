@@ -24,7 +24,7 @@ cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiL
 # cover-source-license-url: "https://www.omao.noaa.gov/find/media/images/image-licensing-usage-info"
 # cover-source-text: "NOAA"
 # cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_large.jpg"
-perex:       "text - perex shrnující článek"
+perex:       "Pro Středoevropana mají nádech exotiky: šnorchlování, teplé moře a pestrobarevná podívaná, která se jen tak neomrzí. Je nám líto, že pomalu mizí, ztrácíme však mnohem víc než jen potěšení během dovolené – korálové útesy hrají zásadní roli v tom, jak se daří životu v moři (ale i na zemi). Jaké jsou jejich vyhlídky? A jak konkrétně jsou zasaženy probíhající klimatickou změnou?"
 ---
 
 PIC ISSUE 2. mapa výskytu korálů je low resolution (je potreba high). Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
