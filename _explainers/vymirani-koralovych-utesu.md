@@ -37,7 +37,7 @@ HOTOVO: nechal jsem ve složce i ty původní varianty
 
 ## Co přesně jsou koráli?
 
-Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, jež tvoří základ ekosystémů korálových útesů u pobřeží a jsou klimatickou změnou nejvíce ohroženy. 
+Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce. 
 
 {% include figure.html
     name="mapa_vyskytu_koralu.jpg"
@@ -46,7 +46,7 @@ Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny �
     source-url="https://www.researchgate.net/publication/259481906_Reefs_at_Risk_A_Map-Based_Indicator_of_Threats_to_the_World's_Coral_Reefs"
 %}
 
-Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (rod *Symbiodinium*), což je druh mořské řasy, která žije přímo v buňkách hostitelských korálů. Koráli jí poskytují ochranu a lepší podmínky pro fotosyntézu, řasa jim to pak vrací formou potravy – až 90 % z toho, co při fotosyntéze vyprodukuje, předává řasa korálům. Ty mohou díky tomu rychle růst a vytvářet své vápenaté schránky. Díky této symbióze existují celé ekosystémy korálových útesů v tropických oceánských vodách po celé planetě.
+Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (rod *Symbiodinium*), což je druh mořské řasy, která žije přímo v buňkách hostitelských korálů. Koráli jí poskytují ochranu a lepší podmínky pro fotosyntézu, řasa jim to pak vrací formou potravy – až 90 % z toho, co při fotosyntéze vyprodukuje, předává řasa korálům. Tím jim umožňuje rychle růst a vytvářet vápenaté schránky. Tato symbióza je základem ekosystémů korálových útesů v tropických oceánských vodách po celé planetě.
 
 {% include figure.html
     name="korali_zooxanthela.jpg"
@@ -57,7 +57,7 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (ro
 
 ## Proč nám na korálech tak záleží?
 
-Korálové útesy jsou domovem pro ohromná množství živočichů – pestrobarevné rybky, mořští ježci, chobotnice, želvy, krevetky a jiní korýši – ti všichni jsou součástí potravní pyramidy na jejímž vrcholu najdeme mořské ptáky a žraloky. Z hlediska biodiverzity překonávají korálové útesy i tropické deštné pralesy – **ačkoli zabírají pouze 0,1 % oceánského dna, vytvářejí životní podmínky pro život nejméně 25 % všech známých mořských druhů** [^1]. Jejich zánik by znamenal velkou ztrátu mořské biodiverzity. Ale i my lidé je potřebujeme: **na korálových útesech závisí živobytí asi půl miliardy lidí** a tvoří přirozenou bariéru, jež chrání hustě zalidněné pobřeží mnoha zemí před bouřemi a přílivovými vlnami z otevřeného oceánu atd. [^2].
+Korálové útesy jsou domovem obrovského množství živočichů. Pestrobarevné rybky, mořští ježci, chobotnice, želvy, krevetky a jiní korýši – ti všichni jsou součástí potravní pyramidy, na jejímž vrcholu najdeme mořské ptáky a žraloky. Z hlediska druhové pestrosti překonávají korálové útesy i tropické deštné pralesy – **ačkoli zabírají pouze 0,1 % oceánského dna, vytvářejí životní podmínky pro život nejméně 25 % všech známých mořských druhů** [^1]. Jejich zánik by znamenal velkou ztrátu mořské biodiverzity. Ale i my lidé je potřebujeme: **na korálových útesech závisí živobytí asi půl miliardy lidí**, dále tvoří přirozenou bariéru, jež chrání hustě zalidněné pobřeží mnoha zemí před bouřemi a přílivovými vlnami z otevřeného oceánu atd. [^2].
 
 ## Proč jsou koráli v ohrožení?
 
@@ -65,7 +65,7 @@ Existují dva hlavní faktory, které způsobují umírání teplovodních korá
 
 ### Zvyšování teploty vody
 
-Většina korálů roste nejlépe při teplotách vody 23 - 29 °C [^3]. Vyšší teplota vody je pro koráli stresující a způsobí, že koráli koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). Neznamená to automaticky smrt korálu, ale ztráta symbiotické řasy znamená ztrátu živin a korál oslabuje. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit, i když to může trvat roky či desetiletí. Déletrvající mořská "vlna veder" však způsobí smrt celého korálového útesu. Vypuzení řasy a zbělení korálů mohou způsobit i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíž stránkách můžete vidět aktuální stav ohrožení korálových útesů. 
+Většina korálů roste nejlépe při teplotách vody 23–29 °C [^3]. Vyšší teplota vody je pro korály stresující a způsobí, že koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). To sice automaticky neznamená, že korál odumře, nicméně ztráta symbiotické řasy pro něj představuje ztrátu živin a oslabuje jej. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit (tento proces ale může trvat roky, ba i desetiletí). Déletrvající "vlna veder" v moři však způsobí smrt celého korálového útesu. Vypuzení řasy a zbělení korálů mohou způsobit i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíchž stránkách lze najít aktuální stav ohrožení korálových útesů. 
 
 {% include figure.html
     name="beleni.jpg"
@@ -78,13 +78,13 @@ Většina korálů roste nejlépe při teplotách vody 23 - 29 °C [^3]. Vyšš�
 
 ### Okyselování oceánů
 
-Běžně má mořská voda pH okolo 8,2 což znamená, že je slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH se snižuje. Za poslední století se snížilo pH asi o 0,1. Může se to zdát málo, ale tato malá změna v pH znamená že je v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. Podobná změna v pH krve by člověku způsobila bezvědomí. Jaký vliv to má na koráli a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (i dalších mořských živočichů, kteří si staví schránku z CaCO<sub>3</sub>). Pro koráli je tak náročnější budovat si svoje schránky a jejich růst nebo obnova po zbělení je pomalejší[^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification). NOTE: upravit odkazy. 
+Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě, a její pH se snižuje (za poslední století se snížilo asi o 0,1). Může se to zdát málo, ale tato malá změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí. Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší[^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification). NOTE: upravit odkazy. 
 
-Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části velkého bariérového útesu.   
+Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části Velkého bariérového útesu.   
 
 ## Současný stav a vyhlídky do budoucna? 
 
-První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby o 50 % svých korálových útesů [^5]. K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014-17, které zasáhlo 38 % korálových útesů světa [^6].
+První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby o 50 % svých korálových útesů [^5]. K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014–17: tehdy zasáhlo 38 % korálových útesů světa [^6].
 Snímky ze sledování prováděného satelity NOAA ukazují současné velmi nepříznivé podmínky trvalého charakteru – zde je situace od konce prosince 2020 do začátku března 2021: 
 
 {% include figure.html
@@ -94,9 +94,9 @@ Snímky ze sledování prováděného satelity NOAA ukazují současné velmi ne
     source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
 %}
 
-Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář někdy v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad probíhjící klimatické změny na korály. 
+Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální, silně negativní dopad, který má na korály probíhající klimatická změna. 
 
-Zpráva <glossary id="sr15">IPCC SR15</glossary> [^7] odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C přijdeme o 70 - 90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**.
+Zpráva <glossary id="sr15">IPCC SR15</glossary> [^7] odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C, přijdeme o 70–90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**.
 
 
 ## Jaká rizika se týkají hlubokomořských korálů?
