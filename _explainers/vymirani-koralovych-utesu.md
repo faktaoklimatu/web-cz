@@ -27,7 +27,7 @@ cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiL
 perex:       "text - perex shrnující článek"
 ---
 
-PIC ISSUE 2. mapa výskytu korálů je low resolution. Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
+PIC ISSUE 2. mapa výskytu korálů je low resolution (je potreba high). Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
 K ŘEŠENÍ: našel jsem ve větším rozlišení, ale nevím jestli je košér oříznout ten rámeček. Původním autorem je zřejmě Dirk Bryant.
 
 PIC ISSUE 4. Zvažuju ještě obrázek ukazující Bleeching.. nebyly by lepší obrázky C a D z tohoto zdroje? https://www.frontiersin.org/files/Articles/252954/fmars-04-00158-HTML/image_m/fmars-04-00158-g004.jpg
