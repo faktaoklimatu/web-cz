@@ -114,6 +114,7 @@ items:
       - name: Institut pro demokracii a ekonomickou analýzu
         url:  https://idea.cerge-ei.cz/
     timeframe: 2030 až 2050
+    study:     2016-snizeni-emisi-cr
   - title:   "Aktualizovaná státní energetická koncepce"
     url:     "https://www.mpo.cz/dokument158059.html"
     date:    Srpen 2015
@@ -121,7 +122,6 @@ items:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
     timeframe: 2030 až 2045
-    study:     2016_80pct-snizeni-emisi-cr
   - title:   "Energetická [r]evoluce"
     url:     "https://storage.googleapis.com/planet4-czech-republic-stateless/2018/10/c6cea469-c6cea469-er-pro-%C4%8Cr-2012.pdf"
     date:    Červen 2012

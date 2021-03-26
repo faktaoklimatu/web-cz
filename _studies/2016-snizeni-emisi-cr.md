@@ -1,8 +1,10 @@
 ---
 layout:     study
 title:      "80% snížení emisí skleníkových plynů do roku 2050 v ČR"
-slug:       2016_80pct-snizeni-emisi-cr
-weight:     8
+slug:       "2016-snizeni-emisi-cr"
+redirect_from: "/2016-snizeni-emisi-cr"
+published:   2021-03-26
+weight:     110
 tags-scopes: [ cr ]
 tags-topics: [ emise, energetika, opatreni ]
 caption:    "Studie Institutu pro demokracii a ekonomickou analýzu se zabývá možností snížit emise o 80 % do roku 2050."
@@ -33,7 +35,7 @@ Studie srovnává **scénář Státní energetické koncepce (SEK scénář)**, 
 
 * **Scénář N35** – předpokládá životnost jaderné elektrárny Dukovany do období 2035–37 a výstavbu čtyř nových jaderných bloků.
 * **Scénář N45** – předpokládá životnost jaderné elektrárny Dukovany do období 2045–47 a pozdější výstavbu čtyř nových jaderných bloků.
-* **Scénář N-opt** – nepředpokládá žádná ad-hoc politická rozhodnutí o výstavbě jaderných zdrojů, vývoj scénáře je determinován na základě nejnižších energetických cen. 
+* **Scénář N-opt** – nepředpokládá žádná ad-hoc politická rozhodnutí o výstavbě jaderných zdrojů, vývoj scénáře je determinován na základě nejnižších energetických cen.
 
 Ve scénáři SEK je hlavním impulsem k omezení emisí skleníkových plynů systém pro obchodování s emisními povolenkami (EU ETS), proto ke snižování emisí dochází téměř výhradně v sektorech zařazených do EU ETS. Menší znečišťovatelé nejsou do systému zahrnutí, proto ani vyšší předpokládaná cena povolenek nemůže dosáhnout 80% snížení emisí. V alternativních scénářích dochází ke konci období také k výraznému snížení emisí ze zdrojů nezahrnutých v EU ETS, proto tyto scénáře skutečně dosahují snížení emisí o 80 % oproti roku 1990.
 
