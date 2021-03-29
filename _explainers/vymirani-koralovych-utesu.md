@@ -26,15 +26,6 @@ cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiL
 # cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_large.jpg"
 perex:       "Pro Středoevropana mají nádech exotiky: šnorchlování, teplé moře a pestrobarevná podívaná, která se jen tak neomrzí. Je nám líto, že pomalu mizí, ne každý však ví, že ztrácíme mnohem víc než jen potěšení během dovolené – korálové útesy hrají zásadní roli v tom, jak se daří životu v moři (ale i na zemi). Jaké jsou jejich vyhlídky? A jak konkrétně jsou zasaženy probíhající klimatickou změnou?"
 ---
-
-PIC ISSUE 2. mapa výskytu korálů je low resolution (je potreba high). Lze napsat autorovi o high-res (autor to explicitně říká v odkazu), nebo si můžeme zkusit najít jinou.
-K ŘEŠENÍ: našel jsem ve větším rozlišení, ale nevím jestli je košér oříznout ten rámeček. Původním autorem je zřejmě Dirk Bryant.
-
-PIC ISSUE 4. Zvažuju ještě obrázek ukazující Bleeching.. nebyly by lepší obrázky C a D z tohoto zdroje? https://www.frontiersin.org/files/Articles/252954/fmars-04-00158-HTML/image_m/fmars-04-00158-g004.jpg
-HOTOVO: nechal jsem ve složce i ty původní varianty
-
----
-
 ## Co přesně jsou koráli?
 
 Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i v hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce. 
@@ -54,6 +45,8 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (ro
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
+CAPTION: Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. Všechny ale obsahují symbiotickou řasu, která pro ně produkuje živiny. 
+
 
 ## Proč nám na korálech tak záleží?
 
@@ -75,10 +68,11 @@ Většina korálů roste nejlépe při teplotách vody 23–29 °C [^3]. Vyšš�
 %}
 [//]: # (obrázek 2: source-text="IPCC" source-url="https://www.ipcc.ch/site/assets/uploads/2018/03/WGII-AR5_Oceans-Compendium.pdf")
 [//]: # (obrázek 3: source-text="NOAA" source-url="https://oceanservice.noaa.gov/education/tutorial_corals/media/coral02d_480.jpg")
+CAPTION: Fotky korálového útesu na ostrově Samoa. Levý obrázek ukazuje zdravý korálový útes, pravý ukazuje stejný útes poškozený zbělením. 
 
 ### Okyselování oceánů
 
-Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH klesá. Za poslední století se snížilo asi o 0,1 – může se to zdát málo, ale tato nevelká změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí. Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší [^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification). NOTE: upravit odkazy. 
+Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH klesá. Za poslední století se snížilo asi o 0,1 – může se to zdát málo, ale tato nevelká změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí. Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší [^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification). 
 
 Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části Velkého bariérového útesu.   
 
@@ -93,6 +87,7 @@ Snímky ze sledování prováděného satelity NOAA ukazují současné velmi ne
     source-text="NOAA"
     source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
 %}
+CAPTION: Záznam monitorování teploty vody a rizika pro korálové útesy v období prosinec 2020 - březen 2021.
 
 Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad, který má na korály probíhající klimatická změna. 
 
@@ -112,6 +107,7 @@ Pomalý růst však také znamená mnohem pomalejší obnovu v případě poško
     source-text="NOAA"
     source-url="https://coralreef.noaa.gov/media/images_gallery/leaving_scars_600.jpg"
 %}
+CAPTION: Poškození korálů rybářskými sítěmi.
 
 ## Zdroje
 
