@@ -2,6 +2,7 @@
 layout:      infographic
 title:       "Srovnání scénářů transformace elektroenergetiky ČR"
 slug:        "srovnani-energetickych-scenaru-cr"
+redirect_from: "/srovnani-scenaru"
 published:   2020-11-20
 weight:      73
 tags-scopes: [ cr ]
