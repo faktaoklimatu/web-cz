@@ -1,30 +1,29 @@
 ---
 layout:     infographic
 title:      "Souvislost koncentrace CO₂ a globálního oteplování"
-slug:       "souvislost-oteplovani-koncentrace"
-redirect_from: "/souvislost-oteplovani-koncentrace"
+slug:       "souvislost-koncentrace-oteplovani"
+redirect_from: "/souvislost-koncentrace-oteplovani"
 published:  2021-04-1
 weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Graf ukazuje takzvanou Keelingovu křivku, tedy nejdelší souvislý záznam vývoje koncentrací CO<sub>2</sub> v atmosféře."
-dataset:    "koncentrace-co2"
+caption:    ""
+dataset:    ""
 ---
 
 <p class="perex">
-Dlouhodobý nárůst koncentrace oxidu uhličitého a pokles koncentrace kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti – především spalováním fosilních paliv.
+Souvislost globálního oteplování a koncentrace atmosferického oxidu uhličitého (CO2) je jednou z klíčových a nejdéle zkoumaných souvislostí v rámci studia klimatické změny. Již v roce 1906 odhadoval Arrhenius, že citlivost klimatu, tedy mírou oteplení atmosféry v případě zdvojnásobení vzdušného CO2, jsou zhruba 4°C. Jedna z nejnovějších studií z roku 2020 uvádí hodnotu citlivosti 3°C.
 </p>
 
 {% include preview-box.html
-    title="Podrobněji o emisích z výroby cementu"
-    text="Výroba jedné tuny cementu vytvoří přibližně 1 až 1,2 tuny CO₂. Náš explainer tento proces přibližuje podrobněji."
-    slug="ex-souvislost-koncentrace-oteplovani"
+    title="Podrobněji o souvislosti koncentrace CO₂ a oteplování "
+    text="V textu explaineru podrobněji vysvětlujeme přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a vlivy dalších skleníkových plynů a aerosolů nebo setrvačnosti klimatu."
+    slug="expl-souvislost-koncentrace-oteplovani"
 %}
 
-Souvislost globálního oteplování a koncentrace atmosferického oxidu uhličitého (CO2) je jednou z klíčových a nejdéle zkoumaných souvislostí v rámci studia klimatické změny. Již v roce 1906 odhadoval Arrhenius, že citlivost klimatu, tedy mírou oteplení atmosféry v případě zdvojnásobení vzdušného CO2, jsou zhruba 4°C. Jedna z nejnovějších studií z roku 2020 uvádí hodnotu citlivosti 3°C.
 
+## Co je zobrazeno v grafu
 
-Co je zobrazeno v grafu
 Naše infografika zobrazuje závislost světové teplotní anomálie, rozdílu průměrné roční teploty vzhledem k „předindustriálnímu“ období, na koncentraci CO2 v atmosféře.
 Červenou barvou jsou znázorněny naměřené hodnoty teploty a koncentrace CO2.
 Modře je vyznačen vývoj teploty v závislosti na zvyšovaní koncentrace CO2 v budoucnosti, včetně nejistoty spojené s nejistotou ve výpočtu citlivosti klimatu. 
