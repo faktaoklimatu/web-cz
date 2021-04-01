@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Proč umírají korálové útesy? (neveřejné)"
+title:       "Proč umírají korálové útesy?"
 slug:        "vymirani-koralovych-utesu"
 published:   2021-04-03
 author:      "Tereza Jarníková, University of British Columbia"
