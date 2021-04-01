@@ -18,7 +18,7 @@ Dlouhodobý nárůst koncentrace oxidu uhličitého a pokles koncentrace kyslík
 {% include preview-box.html
     title="Podrobněji o emisích z výroby cementu"
     text="Výroba jedné tuny cementu vytvoří přibližně 1 až 1,2 tuny CO₂. Náš explainer tento proces přibližuje podrobněji."
-    slug="zavislost--cementu"
+    slug="ex-souvislost-koncentrace-oteplovani"
 %}
 
 Souvislost globálního oteplování a koncentrace atmosferického oxidu uhličitého (CO2) je jednou z klíčových a nejdéle zkoumaných souvislostí v rámci studia klimatické změny. Již v roce 1906 odhadoval Arrhenius, že citlivost klimatu, tedy mírou oteplení atmosféry v případě zdvojnásobení vzdušného CO2, jsou zhruba 4°C. Jedna z nejnovějších studií z roku 2020 uvádí hodnotu citlivosti 3°C.
