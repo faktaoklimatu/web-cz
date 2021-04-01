@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Proč umírají korálové útesy? (neveřejné)"
 slug:        "vymirani-koralovych-utesu"
-published:   true
+published:   2021-04-03
 author:      "Tereza Jarníková, University of British Columbia"
 weight:      74
 tags-scopes: [ svet ]
@@ -12,23 +12,11 @@ cover-source-license: "NC"
 cover-source-license-url: "https://theoceanagency.org/terms-of-service"
 cover-source-text: "Coral Reef Image Bank"
 cover-source-url: "https://www.coralreefimagebank.org/s/ImageBank_Taiwan_Yen-YiLee_03jpg.zip"
-# obrazek 2
-# cover-source-author: "The Ocean Agency/NOAA Fisheries"
-# cover-source-license: "NC"
-# cover-source-license-url: "https://theoceanagency.org/terms-of-service"
-# cover-source-text: "The Ocean Agency"
-# cover-source-url: "https://www.coralreefimagebank.org/s/CoralReefImageBank_Palmyra_TheOceanAgency_14jpg.zip"
-# obrazek 3
-# cover-source-author: "NOAA Fisheries/Jeffrey Milisen"
-# cover-source-license: "není"
-# cover-source-license-url: "https://www.omao.noaa.gov/find/media/images/image-licensing-usage-info"
-# cover-source-text: "NOAA"
-# cover-source-url: "https://coralreef.noaa.gov/media/images_gallery/coral_head_large.jpg"
 perex:       "Pro Středoevropana mají nádech exotiky: šnorchlování, teplé moře a pestrobarevná podívaná, která se jen tak neomrzí. Je nám líto, že pomalu mizí, ne každý však ví, že ztrácíme mnohem víc než jen potěšení během dovolené – korálové útesy hrají zásadní roli v tom, jak se daří životu v moři (ale i na zemi). Jaké jsou jejich vyhlídky? A jak konkrétně jsou zasaženy probíhající klimatickou změnou?"
 ---
 ## Co přesně jsou koráli?
 
-Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i v hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce. 
+Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i v hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce.
 
 {% include figure.html
     name="mapa_vyskytu_koralu.jpg"
@@ -41,12 +29,11 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (ro
 
 {% include figure.html
     name="korali_zooxanthela.jpg"
+    caption="Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. Všechny ale obsahují symbiotickou řasu, která pro ně produkuje živiny."
     alt="Zooxanthella uvnitř buněk korálů"
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
-CAPTION: Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. Všechny ale obsahují symbiotickou řasu, která pro ně produkuje živiny. 
-
 
 ## Proč nám na korálech tak záleží?
 
@@ -58,64 +45,59 @@ Existují dva hlavní faktory, které způsobují umírání teplovodních korá
 
 ### Zvyšování teploty vody
 
-Většina korálů roste nejlépe při teplotách vody 23–29 °C [^3]. Vyšší teplota je pro korály stresující a způsobí, že koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). To sice automaticky neznamená, že korál odumře, nicméně vypuzení symbiotické řasy pro něj představuje ztrátu živin, a tedy oslabení. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit (tento proces ale může trvat roky, ba i desetiletí). Déletrvající "vlna veder" v moři však způsobí smrt celého korálového útesu. Příčinou vypuzení řasy a zbělení korálů mohou být i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíchž stránkách lze najít aktuální stav ohrožení korálových útesů. 
+Většina korálů roste nejlépe při teplotách vody 23–29 °C [^3]. Vyšší teplota je pro korály stresující a způsobí, že koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). To sice automaticky neznamená, že korál odumře, nicméně vypuzení symbiotické řasy pro něj představuje ztrátu živin, a tedy oslabení. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit (tento proces ale může trvat roky, ba i desetiletí). Déletrvající "vlna veder" v moři však způsobí smrt celého korálového útesu. Příčinou vypuzení řasy a zbělení korálů mohou být i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíchž stránkách lze najít aktuální stav ohrožení korálových útesů.
 
 {% include figure.html
     name="beleni.jpg"
+    caption="Fotky korálového útesu na ostrově Samoa. Levý obrázek ukazuje zdravý korálový útes, pravý ukazuje stejný útes poškozený zbělením."
     alt="vybělení koráli"
     source-text="The Ocean Agency"
     source-url="https://miro.medium.com/max/8000/1*-PZwwFfl9uxI4IuNQRwS_Q.jpeg"
 %}
-[//]: # (obrázek 2: source-text="IPCC" source-url="https://www.ipcc.ch/site/assets/uploads/2018/03/WGII-AR5_Oceans-Compendium.pdf")
-[//]: # (obrázek 3: source-text="NOAA" source-url="https://oceanservice.noaa.gov/education/tutorial_corals/media/coral02d_480.jpg")
-CAPTION: Fotky korálového útesu na ostrově Samoa. Levý obrázek ukazuje zdravý korálový útes, pravý ukazuje stejný útes poškozený zbělením. 
 
 ### Okyselování oceánů
 
-Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH klesá. Za poslední století se snížilo asi o 0,1 – může se to zdát málo, ale tato nevelká změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí. Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší [^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification). 
+Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH klesá. Za poslední století se snížilo asi o 0,1 – může se to zdát málo, ale tato nevelká změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí. Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup> , ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší [^4]. Podrobnější informace o okyselování oceánů lze najít na [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [en.wiki](https://en.wikipedia.org/wiki/Ocean_acidification).
 
-Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části Velkého bariérového útesu.   
+Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části Velkého bariérového útesu.
 
-## Současný stav a vyhlídky do budoucna? 
+## Současný stav a vyhlídky do budoucna?
 
 První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby o 50 % svých korálových útesů [^5]. K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014–17: tehdy zasáhlo 38 % korálových útesů světa [^6].
-Snímky ze sledování prováděného satelity NOAA ukazují současné velmi nepříznivé podmínky trvalého charakteru – zde je situace od konce prosince 2020 do začátku března 2021: 
+Snímky ze sledování prováděného satelity NOAA ukazují současné velmi nepříznivé podmínky trvalého charakteru – zde je situace od konce prosince 2020 do začátku března 2021:
 
 {% include figure.html
     name="mapa-ohrozeni-animace.gif"
+    caption="Záznam monitorování teploty vody a rizika pro korálové útesy v období prosinec 2020 – březen 2021."
     alt="mapa aktuálních úrovní ohrožení korálů"
     source-text="NOAA"
     source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
 %}
-CAPTION: Záznam monitorování teploty vody a rizika pro korálové útesy v období prosinec 2020 - březen 2021.
 
-Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad, který má na korály probíhající klimatická změna. 
+Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad, který má na korály probíhající klimatická změna.
 
 Zpráva <glossary id="sr15">IPCC SR15</glossary> [^7] odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C, přijdeme o 70–90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**.
 
-
 ## Jaká rizika se týkají hlubokomořských korálů?
 
-Ne o všech korálech platí, že mají tvrdou schránku, tvoří útesy nebo že využívají fotosyntézu. Koráli žijící v mořských hlubinách (větevníci, laločníci...), kam sluneční světlo téměř nebo vůbec nepronikne, fotosyntézu nevyužívají, a proto také méně trpí bělením. Tyto populace korálů se vyznačují malou rychlostí růstu a vysokou délkou života: mohou žít celá staletí, v případě některých druhů, jako jsou např. trnatci (černí koráli), i tisíce let. 
+Ne o všech korálech platí, že mají tvrdou schránku, tvoří útesy nebo že využívají fotosyntézu. Koráli žijící v mořských hlubinách (větevníci, laločníci...), kam sluneční světlo téměř nebo vůbec nepronikne, fotosyntézu nevyužívají, a proto také méně trpí bělením. Tyto populace korálů se vyznačují malou rychlostí růstu a vysokou délkou života: mohou žít celá staletí, v případě některých druhů, jako jsou např. trnatci (černí koráli), i tisíce let.
 
-Pomalý růst však také znamená mnohem pomalejší obnovu v případě poškození. Mezi největší hrozby pro hlubokomořské korály (a na ně navázané ekosystémy) patří komerční rybolov do sítí vlečených po dně, hlubinná těžba ropy a jiných minerálů, vedení kabelů a potrubí po mořském dně a průmyslové znečištění [^8] [^9] [^10].   
-
+Pomalý růst však také znamená mnohem pomalejší obnovu v případě poškození. Mezi největší hrozby pro hlubokomořské korály (a na ně navázané ekosystémy) patří komerční rybolov do sítí vlečených po dně, hlubinná těžba ropy a jiných minerálů, vedení kabelů a potrubí po mořském dně a průmyslové znečištění [^8] [^9] [^10].
 
 {% include figure.html
     name="lidska-cinnost.jpg"
-    alt="poskození korálů rybolovem"
+    caption="Poškození korálů rybářskými sítěmi."
+    alt="poškození korálů rybolovem"
     source-text="NOAA"
     source-url="https://coralreef.noaa.gov/media/images_gallery/leaving_scars_600.jpg"
 %}
-CAPTION: Poškození korálů rybářskými sítěmi.
 
 ## Zdroje
 
 [^1]: Fisher, R. et al. ["Species richness on coral reefs and the pursuit of convergent global estimates"](https://doi.org/10.1016/j.cub.2014.12.022) Current Biology 25, str. 500–505 (2015).
 [^2]: Ferrario, F., Beck, M., Storlazzi, C. et al., ["The effectiveness of coral reefs for coastal hazard risk reduction and adaptation"](https://doi.org/10.1038/ncomms4794),  Nature Communication 5, čl. 3794 (2014).
 [^3]: NOAA, ["In what types of water do corals live?"](https://oceanservice.noaa.gov/facts/coralwaters.html)
-[^4]: Spalding Ch., Finnegan, S., Fischer W., [Energetic costs of calcification under ocean acidification](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016GB005597), Global Biochemical Cycles (2017) 
-
+[^4]: Spalding Ch., Finnegan, S., Fischer W., [Energetic costs of calcification under ocean acidification](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016GB005597), Global Biochemical Cycles (2017)
 [^5]:Hoegh-Guldberg O., Poloczanska E.S., Skirving W. and Dove S., ["Coral Reef Ecosystems under Climate Change and Ocean Acidification"](https://doi.org/10.3389/fmars.2017.00158) Frontiers in Marine Science 4, str. 158 (2017).
 [^6]: Le Nohaïc, M., Ross, C.L., Cornwall, C.E. et al. ["Marine heatwave causes unprecedented regional mass bleaching of thermally resistant corals in northwestern Australia"](https://doi.org/10.1038/s41598-017-14794-y), Scientific Reports 7, čl. 14999 (2017).
 [^7]: IPCC, ["Summary for policymakers: Global warming of 1.5 °C](https://www.ipcc.ch/report/sr15) — An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty", editoři V. Masson-Delmotte et al., IPCC, World Meteorological Organization, United Nations Environment Programme (Geneva, Switzerland, 2018).
