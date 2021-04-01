@@ -29,7 +29,7 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (ro
 
 {% include figure.html
     name="korali_zooxanthela.jpg"
-    caption="Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. Všechny ale obsahují symbiotickou řasu, která pro ně produkuje živiny."
+    caption="Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. U všech ale najdeme symbiotickou řasu, která pro ně produkuje živiny."
     alt="Zooxanthella uvnitř buněk korálů"
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
