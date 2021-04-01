@@ -19,7 +19,7 @@ perex:       "Pro Středoevropana mají nádech exotiky: šnorchlování, teplé
 Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i v hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce.
 
 {% include figure.html
-    name="mapa_vyskytu_koralu.jpg"
+    name="mapa_vyskytu_koralu.png"
     alt="kde se nachazi korali"
     source-text="Bryant et al."
     source-url="https://www.researchgate.net/publication/259481906_Reefs_at_Risk_A_Map-Based_Indicator_of_Threats_to_the_World's_Coral_Reefs"
