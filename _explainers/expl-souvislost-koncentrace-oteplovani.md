@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak moc se oteplí, když se zvýší koncentrace CO₂?"
 slug:        "expl-souvislost-koncentrace-oteplovani"
-redirect_from: "/expl-souvislost-oteplovani-koncentrace"
+redirect_from: "/expl-souvislost-koncentrace-oteplovani"
 published:   2021-04-01
 author:      "Ondráš Přibyla"
 weight:      74
