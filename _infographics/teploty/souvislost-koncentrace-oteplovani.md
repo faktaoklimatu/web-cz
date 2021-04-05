@@ -34,7 +34,7 @@ V pravé části grafu pak zobrazujeme očekávané hodnoty oteplení pro vyšš
 
 Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a graf tedy nezobrazuje náhodnou korelaci, ale kauzalitu (příčinnou souvislost.) Na druhou stranu, oteplování je ovlivněno mnoha dalšími faktory: dalšími skleníkovými plyny, prouděnimi v atnomsféře a oceánu, které rozvádějí teplo po planetě, ale také  aerosoly a formováním oblačnosti, které mají stíníci efekt. Je tedy správné tvrdit, že každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C ? 
 
-* Teoreticky odvozený vztah pro závislost oteplení na koncentraci skleníkového plynu je logaritmický[^55]. V malém rozmezí koncentrací jej ale můžeme dobře aproximovat vztahem lineárním, což ukazují i změřená data.
+* Teoreticky odvozený vztah pro závislost oteplení na koncentraci skleníkového plynu je logaritmický [^55]. V malém rozmezí koncentrací jej ale můžeme dobře aproximovat vztahem lineárním, což ukazují i změřená data.
 
 {% include figure.html
     name="equation.svg"
@@ -44,7 +44,7 @@ Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a graf
 \Delta T(c) = S \ cdot  log_2 (\frac{c_0 + \Delta c}{c_0}) \approx \frac{S}{c_0 ln 2} \cdot \Delta c 
 V tomto vztahu c_0 označuje počáteční koncentraci, \Delta c nárůst koncentrace a S je parametr zvaný *citlivost klimatu* a vyjadřuje, o kolik se zvýší teplota planety, když se zdvojnásobí koncentrace skleníkového plynu v atmosféře. 
 
-* Klimatický systém má setrvačnost - některé procesy dosahují rovnováhy během jednotek let, jiné během desítek či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient climate response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), která zohledňuje procesy v řádu desitek let a **dlouhodobou odezvu klimatu** (*ESS, Earth System sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let.[^66] Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C)[^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C)[^68].       
+* Klimatický systém má setrvačnost - některé procesy dosahují rovnováhy během jednotek let, jiné během desítek či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient climate response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), která zohledňuje procesy v řádu desitek let a **dlouhodobou odezvu klimatu** (*ESS, Earth System sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let [^66]. Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C) [^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C) [^68].       
 
 * Oxid uhličitý zodpovídá přibližně za [70 % oteplení](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index). Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným. Kdybyc
 
@@ -52,7 +52,7 @@ V tomto vztahu c_0 označuje počáteční koncentraci, \Delta c nárůst koncen
 
 * Hodnoty teplotní anomálie pro jednotlivé roky pocházejí z datasetu *NASA Goddard Institute for Space Studies* a více se o konceptu teplotní anomálie můžete dočíst v doprovodném textu k infografice [Vývoj světové teplotní anomálie](/infografiky/vyvoj-teplotni-anomalie).
 
-* Hodnoty koncentrace CO<sub>2</sub> pro jednotlivé roky vycházejí z měření *Scripps Institution of Oceanography* který je součástí NOAA (FIXME: doplnit link na slovníčkové heslo NOAA). Samostatně vývoj koncentrací CO<sub>2</sub> v atmosféře zpracováváme v grafice [Vývoj koncentrace CO₂ v atmosféře](/koncentrace-co2)
+* Hodnoty koncentrace CO<sub>2</sub> pro jednotlivé roky vycházejí z měření *Scripps Institution of Oceanography* který je součástí <glossary id="noaa">NOAA</glossary>. Samostatně vývoj koncentrací CO<sub>2</sub> v atmosféře zpracováváme v grafice [Vývoj koncentrace CO₂ v atmosféře](/koncentrace-co2)
 
 * Trendová křivka odpovídá rovnici \Delta T(c) = S \cdot log_2 (\frac{c}{c_0}), kde c je koncentrace, c_0 počáteční koncentrace a S je parametr průběžné odezvy klimatu. Tento teoretický vztah se používá v idealizovaných podmínkách simulací buď jako vztah pro oteplení po ustanovení rovnováhy, kdy S odpovídá ECS (*Equilibrium Climate Sensitivity*) nebo pro průběžnou hodnotu oteplení při každoročním zvyšování koncentrace  CO<sub>2</sub> o 1 %, kdy S odpovídá TCR (*Transient Climate Response*). Ve zobrazených datech je ovšem oteplení nejen důsledkem zvýšení koncentrací CO<sub>2</sub>, ale také zvyšování koncentrací dalších skleníkových plynů. Proto hodnoty TCR a ECS zjištěné simulacemi bereme pouze jako orientační a hodnotu S pro zobrazení závislosti fitujeme. ( S = 2,37 °C). Pás nejistoty je zobrazen mezi S = 2,0 °C a S = 3,1 °C, což odpovídá profilu nejistoty v TCR i ECS a efektu setrvačnosti klimatu při stabilizaci koncentrací CO<sub>2</sub>.   
 
