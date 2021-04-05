@@ -24,13 +24,29 @@ Souvislost globálního oteplování a koncentrace atmosferického oxidu uhliči
 
 ## Co je zobrazeno v grafu
 
-Body v levé části grafu zobrazují jednotlivé roky v období 1884 - 2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že trend přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO2 o 10 ppm vede zvýšení teploty zhruba o 0,1 °C**. Tuto závislost podrobněji diskutujeme níže v textu a v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/expl-souvislost-koncentrace-oteplovani). 
+Body v levé části grafu zobrazují jednotlivé roky v období 1884 - 2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že trend přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C**. Tuto závislost podrobněji diskutujeme níže v textu a v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/expl-souvislost-koncentrace-oteplovani). 
 
 Body zobrazující jednotlivé roky jsou barevně odlišeny vždy po dvaceti letech a je tak vidět, že se nárůst koncentrací CO<sub>2</sub> v posledních letech zrychluje, což odpovídá zvyčujícícm se emisím CO<sub>2</sub>.
 
 V pravé části grafu pak zobrazujeme očekávané hodnoty oteplení pro vyšší koncentrace CO<sub>2</sub>, pokud budou emise pokračovat dosavadním tempem. 
 
+## V čem je vztah mezi koncentrací CO<sub>2</sub> a oteplováním nepřesný?
 
+Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a graf tedy nezobrazuje náhodnou korelaci, ale kauzalitu (příčinnou souvislost.) Na druhou stranu, oteplování je ovlivněno mnoha dalšími faktory: dalšími skleníkovými plyny, prouděnimi v atnomsféře a oceánu, které rozvádějí teplo po planetě, ale také  aerosoly a formováním oblačnosti, které mají stíníci efekt. Je tedy správné tvrdit, že každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C ? 
+
+* Teoreticky odvozený vztah pro závislost oteplení na koncentraci skleníkového plynu je logaritmický[^55]. V malém rozmezí koncentrací jej ale můžeme dobře aproximovat vztahem lineárním, což ukazují i změřená data.
+
+{% include figure.html
+    name="equation.svg"
+    alt="V roce 2018 se ve světě vyrobily asi 4 miliardy tun cementu."
+%}
+
+\Delta T(c) = S \ cdot  log_2 (\frac{c_0 + \Delta c}{c_0}) \approx \frac{S}{c_0 ln 2} \cdot \Delta c 
+V tomto vztahu c_0 označuje počáteční koncentraci, \Delta c nárůst koncentrace a S je parametr zvaný *citlivost klimatu* a vyjadřuje, o kolik se zvýší teplota planety, když se zdvojnásobí koncentrace skleníkového plynu v atmosféře. 
+
+* Klimatický systém má setrvačnost - některé procesy dosahují rovnováhy během jednotek let, jiné během desítek či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient climate response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), která zohledňuje procesy v řádu desitek let a **dlouhodobou odezvu klimatu** (*ESS, Earth System sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let.[^66] Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C)[^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C)[^68].       
+
+* Oxid uhličitý zodpovídá přibližně za [70 % oteplení](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index). Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným. Kdybyc
 
 ## Odkud pocházejí data v této infografice?
 
@@ -43,7 +59,15 @@ V pravé části grafu pak zobrazujeme očekávané hodnoty oteplení pro vyšš
 
 ## Zdroje a další odkazy
 
-*  S. C. Sherwood, Webb, et. al. An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678
+[^55]: Přesněji řečeno, radiační působení (*radiatative forcing*) je přímo úměrné logaritmu koncentrace a oteplení je přímo úměrné radiačnímu působení, podrobněji viz [en.wikipedia: Radiative Forcing](https://en.wikipedia.org/wiki/Radiative_forcing)
+
+[^66]: Podrobnější diskuse o konceptu citlivosti klimatu včetně různých časových škál [en.wikipedia: Measures of Climate Sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity#Measures_of_climate_sensitivity)
+
+[^67]: G.A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
+
+[^68]: S. C. Sherwood, Webb, et. al. [An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678)
+
+* https://skepticalscience.com/why-global-warming-can-accelerate.html
 
 * https://www.carbonbrief.org/guest-post-why-low-end-climate-sensitivity-can-now-be-ruled-out
 
@@ -53,8 +77,7 @@ V pravé části grafu pak zobrazujeme očekávané hodnoty oteplení pro vyšš
 
 * H. D. Mathews et. al. Opportunities and challenges in using remaining carbon budgets to guide climate policy https://www.nature.com/articles/s41561-020-00663-3
 
-* G.A. Meehl et. al. Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models https://advances.sciencemag.org/content/6/26/eaba1981
-
+*
 * H. D. Mathews et. al. An integrated approach to quantifying uncertainties in the remaining carbon budget https://www.nature.com/articles/s43247-020-00064-9
 
 
