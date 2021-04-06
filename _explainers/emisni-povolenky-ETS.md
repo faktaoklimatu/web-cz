@@ -83,10 +83,10 @@ První fáze (2005–2007) byla především testovací a jejím účelem bylo o
 
 |  | Fáze I (2005–2007)  |  Fáze II (2008–2012) |  Fáze III (2013–2020) |  Fáze IV (2021–2030) |
 |---|---|---|---|---|
-| **Cíle**  | pilotní systém  | 8 % snížení emisí oproti 1990  |  21 % snížení emisí oproti 2005 | 43 % snížení emisí oproti 2005 (redukční faktor snižování počtu povolenek je zvýšen na 2,2 % oproti předchozím 1,74 %)  |
+| **Cíle**  | pilotní systém  | 8% snížení emisí oproti 1990  |  21% snížení emisí oproti 2005 | 43% snížení emisí oproti 2005 (redukční faktor snižování počtu povolenek je zvýšen na 2,2 % oproti předchozím 1,74 %)  |
 | **Zúčastněné země**  | EU 27  |  EU 27, Norsko, Lichtenštejnsko, Island | EU 28, Norsko, Lichtenštejnsko, Island | EU 27, Norsko, Lichtenštejnsko, Island |
-| **Skleníkové plyny**  | CO<sub>2</sub>  |  CO<sub>2</sub> + N<sub>2</sub>O (dobrovolné)| CO<sub>2</sub> + N<sub>2</sub>O + perfluorované uhlovodíky (PFC) vyráběné během procesu redukce primárního hliníku |   |
-|  **Sektory** |  zařízení na výrobu energie, energeticky náročná průmyslová odvětví | zařízení na výrobu energie, energeticky náročná průmyslová odvětví + letectví  | zařízení na výrobu energie, energeticky náročná průmyslová odvětví, letectví + hliník, petrochemické a jiné chemikálie, zachycování a skladování uhlíku  |   |
+| **Skleníkové plyny**  | CO<sub>2</sub>  |  CO<sub>2</sub> + N<sub>2</sub>O (dobrovolné)| CO<sub>2</sub> + N<sub>2</sub>O +  PFCs (perfluorované uhlovodíky) | CO<sub>2</sub> + N<sub>2</sub>O +  PFCs |
+|  **Sektory** |  zařízení na výrobu energie, energeticky náročná průmyslová odvětví | předchozí + letectví  | předchozí + výroba hliníku a chemikálií, zachycování a skladování uhlíku  | předchozí  |
 
 ## V čem EU ETS funguje dobře a v čem ne?
 
