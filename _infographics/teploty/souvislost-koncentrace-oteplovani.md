@@ -8,7 +8,9 @@ weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    ""
-dataset:    ""
+data-our:   "https://docs.google.com/spreadsheets/d/1aVn3Uz1wLUtmATagtZHEpeayiee6uy_BRAivZPwfb2s/edit?usp=sharing"
+data-orig:	[ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
+
 ---
 
 <p class="perex">
@@ -16,7 +18,6 @@ Souvislost globálního oteplování a koncentrace atmosferického oxidu uhliči
 </p>
 
 {% include preview-box.html
-    title="Podrobněji o souvislosti koncentrace CO₂ a oteplování "
     text="V textu explaineru podrobněji vysvětlujeme přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a vlivy dalších skleníkových plynů a aerosolů nebo setrvačnosti klimatu."
     slug="expl-souvislost-koncentrace-oteplovani"
 %}
@@ -24,7 +25,7 @@ Souvislost globálního oteplování a koncentrace atmosferického oxidu uhliči
 
 ## Co je zobrazeno v grafu
 
-Body v levé části grafu zobrazují jednotlivé roky v období 1884 - 2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že trend přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C**. Tuto závislost podrobněji diskutujeme níže v textu a v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/expl-souvislost-koncentrace-oteplovani). 
+Body v levé části grafu zobrazují jednotlivé roky v období 1884 - 2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že závislost přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C**. Tuto závislost podrobněji diskutujeme níže v textu a v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/expl-souvislost-koncentrace-oteplovani). 
 
 Body zobrazující jednotlivé roky jsou barevně odlišeny vždy po dvaceti letech a je tak vidět, že se nárůst koncentrací CO<sub>2</sub> v posledních letech zrychluje, což odpovídá zvyčujícícm se emisím CO<sub>2</sub>.
 
@@ -44,9 +45,10 @@ Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a graf
 \Delta T(c) = S \ cdot  log_2 (\frac{c_0 + \Delta c}{c_0}) \approx \frac{S}{c_0 ln 2} \cdot \Delta c 
 V tomto vztahu c_0 označuje počáteční koncentraci, \Delta c nárůst koncentrace a S je parametr zvaný *citlivost klimatu* a vyjadřuje, o kolik se zvýší teplota planety, když se zdvojnásobí koncentrace skleníkového plynu v atmosféře. 
 
-* Klimatický systém má setrvačnost - některé procesy dosahují rovnováhy během jednotek let, jiné během desítek či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient climate response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), která zohledňuje procesy v řádu desitek let a **dlouhodobou odezvu klimatu** (*ESS, Earth System sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let [^66]. Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C) [^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C) [^68].       
+* Klimatický systém má setrvačnost - některé procesy dosahují rovnováhy během jednotek let, jiné během desítek
+ či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient climate response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), která zohledňuje procesy v řádu desitek let a **dlouhodobou odezvu klimatu** (*ESS, Earth System sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let [^66]. Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C) [^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C) [^68].       
 
-* Oxid uhličitý zodpovídá přibližně za [70 % oteplení](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index). Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným. Kdybyc
+* Oxid uhličitý zodpovídá přibližně za [70 % oteplení](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index). Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným, jejichž koncentrace v atmosféře také rostou.  
 
 ## Odkud pocházejí data v této infografice?
 
