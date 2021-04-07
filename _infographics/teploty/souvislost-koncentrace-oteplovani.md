@@ -67,6 +67,8 @@ V tomto vztahu c_0 označuje počáteční koncentraci, \Delta c nárůst koncen
 
 [^68]: S. C. Sherwood, Webb, et. al. [An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678)
 
+[^80]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy. Nat. Geosci. 13, 769–779 (2020).](https://doi.org/10.1038/s41561-020-00663-3)
+
 * https://skepticalscience.com/why-global-warming-can-accelerate.html
 
 * https://www.carbonbrief.org/guest-post-why-low-end-climate-sensitivity-can-now-be-ruled-out
