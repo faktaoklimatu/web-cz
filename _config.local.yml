@@ -62,4 +62,5 @@ jekyll-archives:
 
 # Enable Czech smart quotes
 kramdown:
-    smart_quotes: sbquo,lsquo,bdquo,ldquo
+  math_engine: katex
+  smart_quotes: sbquo,lsquo,bdquo,ldquo
