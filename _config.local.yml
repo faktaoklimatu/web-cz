@@ -13,6 +13,10 @@ copyright: "&copy; 2021 Otevřená data o klimatu, z. ú."
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
 
+deploy:
+  firebase-project: cz-fakta-o-klimatu
+  cors-report-uri: https://nkas07xe.uriports.com
+
 slugs:
   infographics: infografiky
   studies: studie
