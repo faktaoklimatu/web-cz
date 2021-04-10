@@ -31,7 +31,7 @@ Infografiku jsme přebrali ze [studie](https://openknowledge.worldbank.org/handl
 
 * Iniciativy na zpoplatnění emisí skleníkových plynů pokrývají **20 % celosvětových emisí**.
 * Počet iniciativ rychle roste, 38 z nich bylo implementováno v posledních 10 letech.
-* 51 % z pokrytého množství emisí se pohybuje pod úrovní 10$ za tunu ekvivalentu CO2, přičemž **cena, která by byla vedla k naplnění cílů Pařížské klimatické dohody je 40–80$** za tunu CO<sub>2</sub>eq, v závislosti na lokalitě, což ve výsledku splňuje pouze 5 % ze zahrnutých emisí. Nejvyšší jednotkovou cenu zavedlo Švédsko – 127$ za tunu CO<sub>2</sub>eq.
+* 51 % z pokrytého množství emisí se pohybuje pod úrovní 10 $ za tunu CO<sub>2</sub>eq, přičemž **cena, která by byla vedla k naplnění cílů Pařížské klimatické dohody je 40–80 $** za tunu CO<sub>2</sub>eq, v závislosti na lokalitě, což ve výsledku splňuje pouze 5 % ze zahrnutých emisí. Nejvyšší jednotkovou cenu zavedlo Švédsko – 127 $ za tunu CO<sub>2</sub>eq.
 * Studie se nově věnuje i tzv. implicitnímu zpoplatnění emisí, což zahrnuje například vyšší zdanění fosilních paliv. Celkový podíl emisí pokrytých nějakou legislativou je tedy ještě o něco vyšší než uvedených 20 %.
 
 Shrnutí studie můžete vidět také v krátkém [rozhovoru](https://www.youtube.com/watch?v=jBcpZahjKcE)
@@ -50,7 +50,7 @@ O finančních nástrojích pro mitigaci klimatické změny podrobněji pojedná
 
 ## Komentář: Evropský systém pro obchodování s emisními povolenkami
 
-[Evropský ETS](https://ec.europa.eu/clima/policies/ets_en) byl spuštěn **v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami** a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Po pilotním testování byla v roce 2008 zahájena druhá fáze se snížením množstvím povolenek, do které se připojily také některé země mimo EU (Island, Lichtenštejnsko a Norsko). Množství povolenek ve druhé fázi bylo upraveno dle skutečných emisí, avšak ekonomická krize v roce 2008 způsobila propad výroby, tím také propad emisí skleníkových plynů a následně ceny emisních povolenek.
+[Evropský ETS](https://ec.europa.eu/clima/policies/ets_en) byl spuštěn **v roce 2005 jako první mezinárodní systém pro obchodování s emisními povolenkami** a pokrývá 45 % emisí skleníkových plynů v EU, především v sektorech energetiky, těžkého průmyslu a letectví. Po pilotním testování byla v roce 2008 zahájena druhá fáze se snížením množství povolenek, do které se připojily také některé země mimo EU (Island, Lichtenštejnsko a Norsko). Množství povolenek ve druhé fázi bylo upraveno dle skutečných emisí, avšak ekonomická krize v roce 2008 způsobila propad výroby, tím také propad emisí skleníkových plynů a následně ceny emisních povolenek.
 
 Třetí fáze byla zahájena v roce 2013 a přinesla několik dalších změn – emisní povolenky jsou vydávány v dražbě, maximální množství povolenek je stanoveno na úrovni celé Evropské unie, a došlo k rozšíření zahrnutých sektorů. Množství dražených povolenek je každý rok sníženo a celkové emise klesají v souladu s tímto snížením. Ve čtvrté fázi, která začne v roce 2021, bude množství povolenek snižováno rychleji. **V letošním roce budou emise o 21 % nižší oproti roku 2005 a v roce 2030 bude množství povolenek (a tedy také emisí) o 43 % nižší.** Snížení emisí v sektorech pokrytých evropským ETS probíhá rychleji než v ostatních sektorech. Cenu evropských emisních povolenek lze nalézt pod symbolem EUA, a na počátku roku 2020 byla přibližně 24 € za tunu CO<sub>2</sub>eq.
 
