@@ -48,21 +48,21 @@ UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezen�
 **Zdroje:**
 
 - [Oficiální stránky UNFCCC](https://unfccc.int/)
-- [Archiv zpráv z konference v Rio de Janeiro, 1992](https://www.un.org/esa/dsd/resources/res_docukeyconf_eartsumm.shtml) na stránkách OSN.
-- Text deklarace [Agenda 21](https://web.archive.org/web/20140730190755/http://habitat.igc.org/agenda21/), který byl přijat na konferenci v Riu jako strategický akční plán mezinárodního společenství.
+- [Archiv zpráv z konference v Rio de Janeiro, 1992](https://www.un.org/esa/dsd/resources/res_docukeyconf_eartsumm.shtml) na stránkách OSN
+- Text deklarace [Agenda 21](https://web.archive.org/web/20140730190755/http://habitat.igc.org/agenda21/), který byl přijat na konferenci v Riu jako strategický akční plán mezinárodního společenství
 - Stránky o deklaraci [Agenda 21](https://cs.wikipedia.org/wiki/M%C3%ADstn%C3%AD_Agenda_21) na české Wikipedii
 
 ### 1997 – Kjótský protokol
 
-Kjótský protokol byl přijat na třetí konferenci (COP3) států účastnících se Rámcové úmluvy UNFCCC o změně klimatu. **Rozvinuté průmyslové země se v něm zavázaly do roku 2012 snížit emise skleníkových plynů v průměru o 4,2 % oproti emisím v roce 1990**, konkrétní [cíle jednotlivých zemí](https://en.wikipedia.org/wiki/Kyoto_Protocol#Annex_I_parties_with_targets) se však lišily. Na jednání v Doha (Katar) bylo domluveno návazné snižování emisí v letech 2012–2020 s novými závazky pro jednotlivé země, dohoda z Doha však byla nahrazena tzv. Pařížskou dohodou, přijatou v roce 2015 na konferenci COP 21 Paříži.
+Kjótský protokol byl přijat na třetí konferenci (COP3) států účastnících se Rámcové úmluvy UNFCCC o změně klimatu. **Rozvinuté průmyslové země se v něm zavázaly do roku 2012 snížit emise skleníkových plynů v průměru o 4,2 % oproti emisím v roce 1990**, konkrétní [cíle jednotlivých zemí](https://en.wikipedia.org/wiki/Kyoto_Protocol#Annex_I_parties_with_targets) se však lišily. Na jednání v Doha (Katar) bylo domluveno návazné snižování emisí v letech 2012–2020 s novými závazky pro jednotlivé země, dohoda z Doha však byla nahrazena tzv. Pařížskou dohodou, přijatou v roce 2015 na konferenci COP21 Paříži.
 
-Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a v té době patnáctičlenná Evropská Unie, nicméně nerozvinuté země, jako Čína, nebo Indie neměly v rámci Kjótského protokolu závazky ke snižování emisí. USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, Kanada od protokolu odstoupila v roce 2011. **Závazky ke snížení emisí se tak týkaly jen 36 zemí a téměř všechny tyto země své závazky snižování emisí naplnily.** Přesto světové emise byly v roce 2010 o 32 % vyšší než v roce 1990, především kvůli nárůstu emisí v zemích jako Čína či Indie, které se v Kjótském protokolu k žádným snížením nezavázaly.
+Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a v té době patnáctičlenná Evropská Unie, nicméně nerozvinuté země jako Čína nebo Indie neměly v rámci Kjótského protokolu závazky ke snižování emisí. USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, Kanada od protokolu odstoupila v roce 2011. **Závazky ke snížení emisí se tak týkaly jen 36 zemí a téměř všechny tyto země své závazky snižování emisí naplnily.** Přesto světové emise byly v roce 2010 o 32 % vyšší než v roce 1990, především kvůli nárůstu emisí v zemích jako Čína či Indie, které se v Kjótském protokolu k žádným snížením nezavázaly.
 
 **Zdroje:**
 
 - [Text Kjótského protokolu](https://unfccc.int/resource/docs/convkp/kpeng.html) na webu UNFCCC
-- Stránka o [Kjótském protokolu](https://en.wikipedia.org/wiki/Kyoto_Protocol) na anglické Wikipedii.
-- Text [Kjótského protokolu v češtině](https://www.mzp.cz/cz/kjotsky_protokol) na stránkách Ministerstva Životního Prostředí
+- Stránka o [Kjótském protokolu](https://en.wikipedia.org/wiki/Kyoto_Protocol) na anglické Wikipedii
+- Text [Kjótského protokolu v češtině](https://www.mzp.cz/cz/kjotsky_protokol) na stránkách Ministerstva životního prostředí
 
 {% include preview-box.html
     title="Srovnání typů mitigačních opatření"
@@ -80,7 +80,7 @@ V roce 2020 proběhla reforma, která řeší například přebytek povolenek a 
 
 **Zdroje:**
 
-- Stránky o [EU ETS](https://en.wikipedia.org/wiki/European_Union_Emission_Trading_Scheme) na anglické Wikipedii.
+- Stránky o [EU ETS](https://en.wikipedia.org/wiki/European_Union_Emission_Trading_Scheme) na anglické Wikipedii
 - [Dokumenty o obchodování s emisemi](https://www.mzp.cz/cz/emisni_obchodovani) na stránkách Ministerstva životního prostředí
 
 ### 2010 – Zelený klimatický fond (GCF)
@@ -101,20 +101,20 @@ Pařížská dohoda byla sjednána v prosinci 2015 v Paříži a je to podobně 
 
 Tato dohoda, kterou dosud podepsalo 195 zemí, v roce 2020 nahradila nynější Kjótský protokol z roku 1997. USA od Pařížské dohody odstoupily 4. listopadu 2020 na základě jednání bývalého prezidenta D. Trumpa, nicméně nastupující prezident Joe Biden USA k dohodě znovu připojil [v den svého nástupu do funkce](https://www.whitehouse.gov/briefing-room/statements-releases/2021/01/20/paris-climate-agreement/), 20. ledna 2021.
 
-Evropský parlament dohodu schválil 4. října 2016 a k 5. říjnu se podařilo dosáhnout cíle, aby dohodu ratifikovalo 55 zemí, které se celkově podílejí na více než 55 procentech emisí skleníkových plynů světa. Dohoda z Paříže je takzvanou smíšenou dohodou, některé její prvky jsou v odpovědnosti celé EU, za jiné odpovídají členské státy unie.
+Evropský parlament dohodu schválil 4. října 2016 a k 5. říjnu se podařilo dosáhnout cíle, aby dohodu ratifikovalo 55 zemí, které se celkově podílejí na více než 55 procentech emisí skleníkových plynů světa. Dohoda z Paříže je takzvanou smíšenou dohodou, některé její prvky jsou v odpovědnosti celé EU, za jiné odpovídají členské státy Unie.
 
 Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs, Nationally Determined Contributions) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. V článku 6. dohoda uznává důležitost spolupráce a tržních mechanismů ke snižování emisí, nicméně jejich konkrétní podoba je předmětem [dalších jednání](https://www.carbonbrief.org/in-depth-q-and-a-how-article-6-carbon-markets-could-make-or-break-the-paris-agreement).
 
 **Zdroje:**
 
 - Vysvětlení [základních souvislostí](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) Pařížské dohody, UNFCCC/OSN
-- [Klíčové aspekty](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement/key-aspects-of-the-paris-agreement) Pařížské dohody, UNFCCC/OSN.
+- [Klíčové aspekty](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement/key-aspects-of-the-paris-agreement) Pařížské dohody, UNFCCC/OSN
 - [Originální text dohody, UNFCCC](https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf)
 - [Český překlad textu dohody](https://www.mzp.cz/cz/parizska_dohoda) na stránkách Ministerstva životního prostředí ČR
 
 {% include preview-box.html
     title="Ekosystémové body zlomu"
-    text="Při oteplení vyšším než určitá mez dojde pravděpodobně ke kolapsům ekosystémů. Pro mnoho velkých ekosystémů leží tato hranice okolo oteplení o 2-3 °C, korálové útesy nepřežijí oteplení vyšší než 1,5°C."
+    text="Při oteplení vyšším než určitá mez dojde pravděpodobně ke kolapsům ekosystémů. Pro mnoho velkých ekosystémů leží tato hranice okolo oteplení o 2 až 3 °C, korálové útesy nepřežijí oteplení vyšší než 1,5 °C."
     slug="body-zlomu-1"
 %}
 
@@ -134,17 +134,17 @@ Zpráva uvádí několik významných výsledků:
 
 ### 2020 – Zelená dohoda pro Evropu
 
-Zelená dohoda pro Evropu (European Green Deal) je balíček opatření Evropské komise představený v prosinci 2019 jako cesta k transformaci evropské ekonomiky tak, aby byla dlouhodobě ekologicky udržitelná. Návrh obsahuje **snižování emisí, investice do vědy a inovací a další kroky k přechodu k bezuhlíkové ekonomice** a klade si za cíl začlenit do právních předpisů závazek, aby Evropská Unie byla v roce 2050 byla uhlíkově neutrální.
+Zelená dohoda pro Evropu (European Green Deal) je balíček opatření Evropské komise představený v prosinci 2019 jako cesta k transformaci evropské ekonomiky tak, aby byla dlouhodobě ekologicky udržitelná. Návrh obsahuje **snižování emisí, investice do vědy a inovací a další kroky k přechodu k bezuhlíkové ekonomice** a klade si za cíl začlenit do právních předpisů závazek, aby Evropská Unie byla v roce 2050 uhlíkově neutrální.
 
 V tomto plánu jsou uvedeny potřebné investice a dostupné finanční nástroje. Rovněž je v něm vysvětleno, jak zajistit spravedlivou a inkluzivní transformaci. **EU se chce do roku 2050 stát klimaticky neutrálním územím.** Za tímto účelem Komise předložila návrh evropského právního rámce pro klima, čímž má tento politický závazek získat také právní závaznost.
 
 K dosažení tohoto cíle bude nutné přijmout náležitá opatření ve všech odvětvích hospodářství:
 
-- investovat do technologií šetrných k životnímu prostředí
-- podporovat průmysl ve vývoji inovací
-- zavádět čistší, levnější a zdravější formy soukromé a veřejné dopravy
-- dekarbonizovat odvětví energetiky
-- zajistit vyšší energetickou účinnost budov
+- investovat do technologií šetrných k životnímu prostředí,
+- podporovat průmysl ve vývoji inovací,
+- zavádět čistší, levnější a zdravější formy soukromé a veřejné dopravy,
+- dekarbonizovat odvětví energetiky,
+- zajistit vyšší energetickou účinnost budov,
 - spolupracovat s mezinárodními partnery na zlepšení celosvětových norem v oblasti životního prostředí.
 
 EU bude rovněž poskytovat **finanční podporu a technickou pomoc těm, které přechod na zelenou ekonomiku nejvíce zasáhne.** Jde o tzv. mechanismus pro spravedlivou transformaci. Ten má v období 2021–2027 přispět k mobilizaci nejméně 100 miliard eur v nejvíce postižených regionech.
