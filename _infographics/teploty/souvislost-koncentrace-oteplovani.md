@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Souvislost koncentrace CO₂ a globálního oteplování"
 slug:       "souvislost-koncentrace-oteplovani"
 redirect_from: "/souvislost-koncentrace-oteplovani"
-published:  2021-04-1
+published:  2021-04-16
 weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
@@ -12,10 +12,6 @@ data-our:   "https://docs.google.com/spreadsheets/d/1aVn3Uz1wLUtmATagtZHEpeayiee
 data-orig:	[ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] ]
 
 ---
-
-<p class="perex">
-
-</p>
 
 {% include preview-box.html
     text="V textu explaineru podrobněji vysvětlujeme přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a vlivy dalších skleníkových plynů a aerosolů nebo setrvačnosti klimatu."
@@ -38,7 +34,7 @@ Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a **gr
  * Teoreticky odvozený vztah pro závislost oteplení na koncentraci skleníkového plynu je logaritmický [^55], [^111]. V malém rozmezí koncentrací jej ale můžeme dobře aproximovat vztahem lineárním, což ukazují i změřená data.
 
  $$
- \Delta T(c) = S \cdot  log_2 (\frac{c_0 + \Delta c}{c_0}) \approx \frac{S}{c_0 ln 2} \cdot \Delta c 
+ \Delta T(c) = S \cdot  log_2 \left(\frac{c_0 + \Delta c}{c_0}\right) \approx \frac{S}{c_0 ln 2} \cdot \Delta c 
  $$
 
  V tomto vztahu $$c_0$$ označuje počáteční koncentraci, $$\Delta c$$ nárůst koncentrace a $$S$$ je parametr zvaný *citlivost klimatu* a vyjadřuje, o kolik se zvýší teplota planety, když se zdvojnásobí koncentrace skleníkového plynu v atmosféře. **Přímá úměrnost mezi koncentracemi a oteplením přestane dýt dobrou aproximací, pokud nárůst koncentrací bude příliš velký**.FIXME: tento odstavec je pokračováním toho před rovnicí a má být odsazen odpovídajícím způsobem. prosím opravit při sazbě. ENF-FIXME.
