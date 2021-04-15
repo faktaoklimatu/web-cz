@@ -8,19 +8,17 @@ author:      "Ondráš Přibyla"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
-cover-source-author: "??"
-cover-source-text: "??"
-cover-source-license: "??"
-cover-source-license-url: "??"
-cover-source-url: "??"
+cover-source-author: "Allan Nygren"
+cover-source-text: "Unsplash"
+cover-source-license: "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url: "https://unsplash.com/photos/-OyWCXEczxI"
 perex:     "Čím vyšší koncentrace CO<sub>2</sub> v atmosféře, tím vyšší teplota planety. Zvýšení koncentrace o 10 ppm způsobí oteplení planety asi o 0.1°C. Tento přibližný vztah je užitečný k mnoha úvahám a odhadům budoucího vývoje, nicméně jde pouze o aproximaci. V tomto textu se zaměříme na jasnější pochopení v čem je vztah pouze přibližný a jakou roli hrají další skleníkové plyny nebo setrvačnost klimatu."
 ---
 
-CO ZBYVA: obrazky + odkazy + dopsat jasný závěr.
-
 Přibližné vztahy nám umožňují zhruba odhadnout výsledek, je snazší si je zapamatovat a pochopit a pomáhají orientovat se ve složitém světě. Proto považujeme vyjádření  **každé zvýšení koncentrace o 10 ppm způsobí oteplení planety zhruba o 0.1 °C** za užitečné, i když je pouze přibližné. 
 
-S tímto vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, které jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1.5 - 2 °C globálního oteplení a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500 - 1000 miliard tun CO<sub>2</sub>.
+S tímto vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, které jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1,5 - 2 °C globálního oteplení a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500 - 1000 miliard tun CO<sub>2</sub>.
 
 {% include figure.html
     name="cs-souvislost-koncentrace-oteplovani.svg"
@@ -31,8 +29,8 @@ Z grafu vidíme, že vztah mezi oteplením a nárůstem koncentrace je, alespoň
 
 * Zda jde o korelaci nebo o kauzalitu
 * Jak velký efekt mají další skleníkové plyny a aerosoly, které lidstvo vypouští do atmosféry
-* Že lineární vztah je pouze přibližný a ve skutečnosti jde o logaritmický vztah. 
-* Jak se projeví setrvačnost klimatického systému.
+* Že lineární vztah je pouze přibližný a ve skutečnosti jde o logaritmický vztah 
+* Jak se projeví setrvačnost klimatického systému
 
 ## Jde o korelaci, nebo o kauzalitu?
 
@@ -71,18 +69,18 @@ Naproti tomu, **rovnovážná citlivost klimatu** (ECS) odpovídá na otázku **
     alt="Schématické znázornění různých scénářů snížení emisí."
 %}
 
-Přímá úměrnost mezi koncentrací CO<sub>2</sub> a oteplením, kterou znázorňujeme v grafu tedy bude platit, pokud budeme pokračovat v emisích CO<sub>2</sub> podobně jako dosud. Jakmile ale antropogenní emise klesnou na nízké hodnoty nebo na nulu, nárůst koncentrací se zastaví, ale nárůst teplot bude ještě pár desítek let pokračovat. Zásadní pro tuto dynamiku je proces rozpouštění CO<sub>2</sub> v oceánech. Kdybychom naráz dosáhli nulových emisí, tak CO<sub>2</sub> v atmosféře 
+Přímá úměrnost mezi koncentrací CO<sub>2</sub> a oteplením, kterou znázorňujeme v grafu tedy bude platit, pokud budeme pokračovat v emisích CO<sub>2</sub> podobně jako dosud. Jakmile ale antropogenní emise klesnou na nízké hodnoty nebo na nulu, nárůst koncentrací se zastaví, ale nárůst teplot bude ještě nějakou dobu pokračovat. Jak přesně dlouho a o kolik °C se při tom oteplí je složitá otázka, která záleží na mnoha parametrech. Někdy se v tomto kontextu mluví nejen o setrvačnosti klimatu, ale také o *nevyhnutelném oteplení* (*Commited warming*)[^97], tedy o oteplení, ke kterému dojde nezávisle na tom, jak velké budou emise skleníkových plynů a kdy dojde k dosažení klimatické neutrality. Důležitou roli v této dynamice hraje pohlcování CO<sub>2</sub> v oceánech biosféře. 
 
+Kdybychom naráz dosáhli nulových emisí, tak koncentrace CO<sub>2</sub> v atmosféře začnou klesat, protože oceán bude ještě nějakou dobu pohlecovat více CO<sub>2</sub>, než kolik z něj do atmosféry vychází. V takovém případě by dosahování rovnovážné teploty v klimatickém systému trvalo jen řádově deset let [^97],[^99] a dodatečný nárůst teplot by nebyl vysoký. Při postupném snižování emisí, zejména pokud nedosáhneme úplné uhlíkové neutrality, dojde spíše ke stabilizaci koncentrací CO<sub>2</sub>. V takovém případě bude oteplování pokračovat řádově sto let než se ustanoví rovnováha a dodatečné oteplení po stabilizaci koncentrací může dosáhnout 0,2 - 0,9°C [^97].  
 
-    
-
-Znamená to tedy, že když dosáhneme uhlíkové neutrality tak teploty dále porostou? Ne zcela. Všimněte si ale, že v experimentu zdůrazňujeme zafixování koncentrace na určité hodnotě. Proč je to důležité? Kdybychom dosáhli nulových emisí CO<sub>2</sub>, jeho koncentrace nezůstanou konstantní, ale budou postupně pomalu klesat, než toky CO<sub>2</sub> v uhlíkovém cyklu dostanou do rovnováhy. Na to, aby se koncentrace udržely na konstantní hodnotě by to znamenalo stále malé množství oxidu uhličitého do atmosféry vypouštět. Toto rozlišení mezi stabilní koncentrací CO<sub>2</sub> a nulovými emisemi hraje roli při úvahách o uhlíkovém rozpočtu.
+V kontextu současných ročních emisí okolo 40 miliard tun CO<sub>2</sub> a zatím stále rostou je tato diskuse o *setrvačnosti klimatu* a *nevyhnutelném oteplení* vlastně trochu akademická. Zda v roce 2050 dosáhne lidstvo uhlíkové neutrality, nebo se podaří oxid uhličitý z atmosféry odčerpávat ve významnějších množstvích a mít tak v podstatě záporné emise, nyní nevíme a bude to záležet na dalším technologickém a ekonomickém vývoji.    
+Zásadní efekt na oteplení budou mít celkové kumulativní emise CO<sub>2</sub>. Je proto potřeba najít cesty, jak co nejvíce snížit emise v nejbližší dekádě. 
 
 ## Zdroje a další poznámky
 
-[^11]: Svante Arrhenius
+[^11]: S. Arrhenius, [On the influence of Carbonic acid in the air upon the temperature of the ground](https://www.tandfonline.com/doi/abs/10.1080/14786449608620846), The London, Edinburgh and Dublin Philosophical magazine and journal of science, (1896)
 
-[^60]: Koncentrace co2 v atmoféře před 400 miliony let [zde](https://earth.org/data_visualization/a-brief-history-of-co2/)
+[^60]: O. Mulhern, [A 4.5 Billion-Year History of CO2 in our Atmosphere](https://earth.org/data_visualization/a-brief-history-of-co2/), Earth.org (2020)
 
 [^67]: G.A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
 
@@ -98,5 +96,9 @@ Znamená to tedy, že když dosáhneme uhlíkové neutrality tak teploty dále p
 
 [^66]: Podrobnější diskuse o konceptu citlivosti klimatu včetně různých časových škál [en.wikipedia: Measures of Climate Sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity#Measures_of_climate_sensitivity)
 
+[^99]: Joos et. al: [Carbon dioxide and climate impulse response functions for the computation of greenhouse gas metrics](https://acp.copernicus.org/articles/13/2793/2013/acp-13-2793-2013.pdf)
 
 [^500]: České názvy pro tyto parametry modelů nejsou ustáleny. *Transient climate response* by bylo přesnější překládat jako "průběžná odezva klimatu", ale z didaktických důvodů jsme se rozhodli pro zjednodušení a používáme překlad "krátkodobá citlivost klimatu".
+
+[^97]: Matthews, H., Weaver, A. [Committed climate warming](https://doi.org/10.1038/ngeo813) Nature Geosci 3, 142–143 (2010). 
+
