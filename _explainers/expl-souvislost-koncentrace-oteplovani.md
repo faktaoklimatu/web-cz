@@ -44,10 +44,10 @@ Z grafu vidíme, že vztah mezi oteplením a nárůstem koncentrace je, alespoň
 
 Pozorované oteplení, které je v grafu znázorněno, ve skutečnosti nezávisí jen na koncentracích CO<sub>2</sub>, ale i na koncentracích dalších skleníkových plynů a aerosolů:
 
-* Oxid uhličitý způsobuje okolo 70% zesílení skleníkového efektu, za zbývajících 30% zesílení mohou metan, oxid dusný a další skleníkové plyny. (Přesné hodnoty závisí na uvažovaném časovém horizontu). Část oteplení, které je v grafu znázorněno, tedy není způsobeno CO<sub>2</sub> a kdyby se koncentrace ostatních skleníkových plynů nezvyšovaly, byl by sklon grafu menší. 
-* Aerosoly jsou mikroskopické pevné částice ve vzduchu - například prach, kouř ze spalování nebo pyly z rostlin. Lidská činnost, zejména spalování, zvyšuje koncentrace aerosolů ve vzduchu, které pak stíní přicházející sluneční záření a mají tedy ochlazující efekt. Kdyby lidstvo nevypouštělo aerosoly, byl by sklon grafu vyšší.  
+* Oxid uhličitý způsobuje okolo 70% zesílení skleníkového efektu[^77], za zbývajících 30% zesílení mohou metan, oxid dusný a další skleníkové plyny. (Přesné hodnoty závisí na uvažovaném časovém horizontu). Část oteplení, které je v grafu znázorněno, tedy není způsobeno CO<sub>2</sub> a kdyby se koncentrace ostatních skleníkových plynů nezvyšovaly, byl by sklon grafu menší. 
+* Aerosoly jsou mikroskopické pevné částice ve vzduchu - například prach, kouř ze spalování nebo pyly z rostlin. Lidská činnost, zejména spalování, zvyšuje koncentrace aerosolů ve vzduchu, které pak stíní přicházející sluneční záření a napomáhají vzniku mraků a mají tedy ochlazující efekt[^101]. Kdyby lidstvo nevypouštělo aerosoly, byl by sklon grafu vyšší.  
 
-Ochlazující efekt aerosolů a efekt ostatních skleníkových plynů mimo CO<sub>2</sub> se v současném oteplování vzájemně zhruba vyruší, zda to tak bude i v budoucnu záleží na tom jak se budou emise skleníkových plynů a aerosolů dále vyvíjet. Velká část aerosolů, které lidstvo vypouští, vzniká při spalování uhlí a ropy - lze tedy očekávat, že efekt aerosolů bude snižovat teploty zhruba tak dlouho, dokud se budou spalovat fosilní paliva. 
+Ochlazující efekt aerosolů a efekt ostatních skleníkových plynů mimo CO<sub>2</sub> jde opačným směrem a lze říci, že se zhruba vyruší. Zda to tak bude i v budoucnu záleží na tom jak se budou emise skleníkových plynů a aerosolů dále vyvíjet. Velká část aerosolů, které lidstvo vypouští, vzniká při spalování uhlí a ropy - lze tedy očekávat, že efekt aerosolů bude snižovat teploty zhruba tak dlouho, dokud se budou spalovat fosilní paliva. 
 
 ## Lineární nebo logaritmická závislost?
 
@@ -60,15 +60,25 @@ Teoreticky odvozený vztah mezi koncentrací CO<sub>2</sub> a teplotou není lin
 
 ## Setrvačnost a rovnovážná teplota
 
-Kdybychom zafixovali koncentrace CO<sub>2</sub> na dnešní hodnotě (okolo 420 ppm v roce 2021) bude globální teplota ještě asi 20-30 let narůstat než dosáhne klimatický systém rovnováhy. Je to podobné, jako když v autě sundáte nohu z plynu - také ještě nějakou dobu pojede, než se zastaví. Na základě této analogie se mluví o **setrvačnosti klimatu** a rozlišuje se **průběžná odezva klimatu** (*TCR, Transient Climate Response*) a **rovnovážná citlivost klimatu** (*ECS, Equilibrium climate sensitivity*). 
+Kdybychom zafixovali koncentrace CO<sub>2</sub> na dnešní hodnotě (okolo 420 ppm v roce 2021) bude globální teplota ještě asi 20-30 let narůstat než dosáhne klimatický systém rovnováhy. Je to podobné, jako když v autě sundáte nohu z plynu - také ještě nějakou dobu pojede, než se zastaví. Na základě této analogie se mluví o **setrvačnosti klimatu** a je proto se rozlišuje **krátkodobá citlivost klimatu** (*TCR, Transient Climate Response*) a **rovnovážná citlivost klimatu** (*ECS, Equilibrium climate sensitivity*)[^105],[^107],[^66]  . 
 
-Představme si následující “experiment”: Na planetě každý rok zvýšíme koncentraci CO<sub>2</sub> o 1 %. Průběžně se bude zvyšovat i teplota. Tímto tempem dojde po zhruba 70 letech ke zdvojnásobení koncentrace CO<sub>2</sub> a v té době bude teplota planety o přibližně o 2 °C - tato hodnota průběžného oteplení při zdvojnásobení koncentrace se nazývá **průběžná odezva klimatu** (*TCR, Transient Climate Response*) Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C) [^67].
+Jak je přesně definována krátkodobá citlivost klimatu? Představme si následující “experiment”: Na planetě každý rok zvýšíme koncentraci CO<sub>2</sub> o 1 %. Průběžně se bude zvyšovat i teplota. Tímto tempem dojde po zhruba 70 letech ke zdvojnásobení koncentrace CO<sub>2</sub> a v té době bude teplota planety o přibližně o 2 °C - tato hodnota průběžného oteplení při zdvojnásobení koncentrace je hodnotou, kterou v tomto článku nazýváme **krátkodobá citlivost klimatu**[^500] (*TCR, Transient Climate Response*) Ze současných modelů klimatického systému vychází hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1.3 - 3.0°C) [^67].
 
-Kdybychom pak koncentraci CO<sub>2</sub> zafixovali na dvojnásobné hodnotě, teplota by ještě nějakou dobu rostla, než by se ustálila na hodnotě asi o 3 °C vyšší než na začátku. Tato hodnota oteplení po ustálení klimatického systému při dvojnásobné koncentraci se nazývá **rovnovážná citlivost klimatu** (*ECS, Equilibrium climate sensitivity*. Rozmezí odhadů ECS je 2.6-4.1°C na základě klimatických modelů a paleoklimatických pozorování  a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3 - 4,7 °C) [^68].   
+Naproti tomu, **rovnovážná citlivost klimatu** (ECS) odpovídá na otázku **o kolik teplejší bude planeta při dvojnásobných koncentracích CO<sub>2</sub> poté, co se ustanoví rovnováha v klimatickém systému.** Na základě současných klimatických modelů a paleoklimatíckých dat víme, že hodnota rovnovážné citlivosti je okolo 3°C (v rozmezí 2,3 - 4,7 °C) [^68]. Kdybychom tedy koncentraci CO<sub>2</sub> zafixovali na dvojnásobné hodnotě, teplota by ještě nějakou dobu rostla, než by se ustálila na hodnotě asi o 3 °C vyšší než na začátku.  
+
+{% include figure.html
+    name="vyvoje-emisi.svg"
+    alt="Schématické znázornění různých scénářů snížení emisí."
+%}
+
+Přímá úměrnost mezi koncentrací CO<sub>2</sub> a oteplením, kterou znázorňujeme v grafu tedy bude platit, pokud budeme pokračovat v emisích CO<sub>2</sub> podobně jako dosud. Jakmile ale antropogenní emise klesnou na nízké hodnoty nebo na nulu, nárůst koncentrací se zastaví, ale nárůst teplot bude ještě pár desítek let pokračovat. Zásadní pro tuto dynamiku je proces rozpouštění CO<sub>2</sub> v oceánech. Kdybychom naráz dosáhli nulových emisí, tak CO<sub>2</sub> v atmosféře 
+
 
     
 
 Znamená to tedy, že když dosáhneme uhlíkové neutrality tak teploty dále porostou? Ne zcela. Všimněte si ale, že v experimentu zdůrazňujeme zafixování koncentrace na určité hodnotě. Proč je to důležité? Kdybychom dosáhli nulových emisí CO<sub>2</sub>, jeho koncentrace nezůstanou konstantní, ale budou postupně pomalu klesat, než toky CO<sub>2</sub> v uhlíkovém cyklu dostanou do rovnováhy. Na to, aby se koncentrace udržely na konstantní hodnotě by to znamenalo stále malé množství oxidu uhličitého do atmosféry vypouštět. Toto rozlišení mezi stabilní koncentrací CO<sub>2</sub> a nulovými emisemi hraje roli při úvahách o uhlíkovém rozpočtu.
+
+## Zdroje a další poznámky
 
 [^11]: Svante Arrhenius
 
@@ -77,3 +87,16 @@ Znamená to tedy, že když dosáhneme uhlíkové neutrality tak teploty dále p
 [^67]: G.A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
 
 [^68]: S. C. Sherwood, Webb, et. al. [An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678)
+
+[^77]: [Annual Greengouse Gas index](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index)
+
+[^101]: Myhre, G., Myhre, C. E.L., Samset, B. H. & Storelvmo, T. (2013) [Aerosols and their Relation to Global Climate and Climate Sensitivity, *Nature Education Knowledge*](https://www.nature.com/scitable/knowledge/library/aerosols-and-their-relation-to-global-climate-102215345/)
+
+[^105]: Knutti R. Hegerl. [Beyond Equilibrium Climate Sensitivity](https://www.nature.com/articles/ngeo3017), otevřená verze článku [zde](https://www.research-collection.ethz.ch/handle/20.500.11850/197761)
+
+[^107]: Carbon Brief explainer: [How scientists estimate climate sensitivity](https://www.carbonbrief.org/explainer-how-scientists-estimate-climate-sensitivity)
+
+[^66]: Podrobnější diskuse o konceptu citlivosti klimatu včetně různých časových škál [en.wikipedia: Measures of Climate Sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity#Measures_of_climate_sensitivity)
+
+
+[^500]: České názvy pro tyto parametry modelů nejsou ustáleny. *Transient climate response* by bylo přesnější překládat jako "průběžná odezva klimatu", ale z didaktických důvodů jsme se rozhodli pro zjednodušení a používáme překlad "krátkodobá citlivost klimatu".
