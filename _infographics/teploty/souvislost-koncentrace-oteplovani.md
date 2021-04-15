@@ -29,7 +29,7 @@ V pravé části grafu pak zobrazujeme očekávané hodnoty oteplení pro vyšš
 
 ## V čem je vztah mezi koncentrací CO<sub>2</sub> a oteplováním nepřesný?
 
-Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a **graf** tedy **zobrazuje kauzalitu** (příčinnou souvislost), nikoliv jen náhodnou korelaci. Na druhou stranu, oteplování je ovlivněno mnoha dalšími faktory: dalšími skleníkovými plyny, prouděnimi v atnomsféře a oceánu, které rozvádějí teplo po planetě, ale také  aerosoly a formováním oblačnosti, které mají stíníci efekt. Je tedy správné tvrdit, že každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C ? V následujících odstavcích diskutujeme, v čem je vztah pouze přibližný. 
+Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a **graf** tedy **zobrazuje kauzalitu** (příčinnou souvislost), nikoliv jen náhodnou korelaci. Na druhou stranu, oteplování je ovlivněno mnoha dalšími faktory: dalšími skleníkovými plyny, prouděnimi v atmosféře a oceánu, které rozvádějí teplo po planetě, ale také  aerosoly a formováním oblačnosti, které mají stíníci efekt. Je tedy správné tvrdit, že každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede zvýšení teploty zhruba o 0,1 °C ? V následujících odstavcích diskutujeme, v čem je vztah pouze přibližný. 
 
  * Teoreticky odvozený vztah pro závislost oteplení na koncentraci skleníkového plynu je logaritmický [^55], [^111]. V malém rozmezí koncentrací jej ale můžeme dobře aproximovat vztahem lineárním, což ukazují i změřená data.
 
@@ -54,26 +54,26 @@ Dominantní vliv oxidu uhličitého na oteplování je dobře prokázaný a **gr
 
 ## Historická poznámka
 
-Souvislost globálního oteplování a koncentrace atmosferického oxidu uhličitého je jednou z klíčových a nejdéle zkoumaných souvislostí v rámci studia klimatické změny. První výpočty publikoval Svante Arrhenius již v roce 1886 a jeho odhady citlivosti klimatu jsou potvrzovány a zpřesňovány dalšími studiemi. Podrobněji se o tom můžete dočíst v grafice a textu [Historie výzkumu skleníkového efektu](/infografiky/historie-sklenikoveho-efektu) 
+Souvislost globálního oteplování a koncentrace atmosferického oxidu uhličitého je jednou z klíčových a nejdéle zkoumaných souvislostí v rámci studia klimatické změny. První výpočty publikoval Svante Arrhenius již v roce 1886 a jeho odhady citlivosti klimatu jsou potvrzovány a zpřesňovány dalšími studiemi. Podrobněji se o tom můžete dočíst v grafice a textu [Historie výzkumu skleníkového efektu](/infografiky/historie-sklenikoveho-efektu).
 
 
-## Zdroje a další odkazy
+## Zdroje a poznámky
 
 [^55]: Přesněji řečeno, radiační působení (*radiatative forcing*) je přímo úměrné logaritmu koncentrace a oteplení je přímo úměrné radiačnímu působení, podrobněji viz [en.wikipedia: Radiative Forcing](https://en.wikipedia.org/wiki/Radiative_forcing)
 
 [^66]: Podrobnější diskuse o konceptu citlivosti klimatu včetně různých časových škál [en.wikipedia: Measures of Climate Sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity#Measures_of_climate_sensitivity)
 
-[^67]: G.A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
+[^67]: G.A. Meehl et. al. ["Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models."](https://advances.sciencemag.org/content/6/26/eaba1981), Science Advances 6.26 (2020).
 
-[^68]: S. C. Sherwood, Webb, et. al. [An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678)
+[^68]: S. C. Sherwood, Webb, et. al. ["An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence."](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678), Reviews of Geophysics 58.4 (2020).
 
-[^80]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy. Nat. Geosci. 13, 769–779 (2020).](https://doi.org/10.1038/s41561-020-00663-3)
+[^80]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. ["Opportunities and challenges in using remaining carbon budgets to guide climate policy."](https://doi.org/10.1038/s41561-020-00663-3), Nature Geoscience 13.12, str. 769-779 (2020).
 
 [^77]: [Annual Greengouse Gas index](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index)
 
-[^101]: Myhre, G., Myhre, C. E.L., Samset, B. H. & Storelvmo, T. (2013) [Aerosols and their Relation to Global Climate and Climate Sensitivity, *Nature Education Knowledge*](https://www.nature.com/scitable/knowledge/library/aerosols-and-their-relation-to-global-climate-102215345/)
+[^101]: Myhre, G., Myhre, C. E.L., Samset, B. H. & Storelvmo, T. (2013) ["Aerosols and their Relation to Global Climate and Climate Sensitivity."](https://www.nature.com/scitable/knowledge/library/aerosols-and-their-relation-to-global-climate-102215345/), Nature Education Knowledge 4.5, str. 7 (2013).
 
-[^105]: Knutti R. Hegerl. [Beyond Equilibrium Climate Sensitivity](https://www.nature.com/articles/ngeo3017), otevřená verze článku [zde](https://www.research-collection.ethz.ch/handle/20.500.11850/197761)
+[^105]: Knutti R. Hegerl. ["Beyond Equilibrium Climate Sensitivity."](https://www.nature.com/articles/ngeo3017), Nature Geoscience 10.10, str. 727-736 (2017).
 
 [^107]: Carbon Brief explainer: [How scientists estimate climate sensitivity](https://www.carbonbrief.org/explainer-how-scientists-estimate-climate-sensitivity)
 
