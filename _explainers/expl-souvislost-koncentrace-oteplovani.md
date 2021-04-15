@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak moc se oteplí, když se zvýší koncentrace CO₂?"
 slug:        "expl-souvislost-koncentrace-oteplovani"
 redirect_from: "/expl-souvislost-koncentrace-oteplovani"
-published:   2021-04-01
+published:   2021-04-16
 author:      "Ondráš Přibyla"
 weight:      74
 tags-scopes: [ svet ]
@@ -20,14 +20,14 @@ CO ZBYVA: obrazky + odkazy + dopsat jasný závěr.
 
 Přibližné vztahy nám umožňují zhruba odhadnout výsledek, je snazší si je zapamatovat a pochopit a pomáhají orientovat se ve složitém světě. Proto považujeme vyjádření  **každé zvýšení koncentrace o 10 ppm způsobí oteplení planety zhruba o 0.1 °C** za užitečné, i když je pouze přibližné. 
 
-S tímto vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, které jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1.5 - 2 °C globálního oteplení a abychom je nepřekročili, můžeme vypustit už jen asi 500 - 1000 miliard tun CO<sub>2</sub>.
+S tímto vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, které jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1.5 - 2 °C globálního oteplení a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500 - 1000 miliard tun CO<sub>2</sub>.
 
 {% include figure.html
     name="cs-souvislost-koncentrace-oteplovani.svg"
     alt="Souvislost mezi koncentracemi CO2 a oteplováním"
 %}
 
-Z grafu vidíme, že vztah mezi oteplením a nárůstem koncentrace je, alespoň na první pohled, lineární. Další věci ale z grafu přímo nevyčteme, a je potřeba je objasnit:
+Z grafu vidíme, že vztah mezi oteplením a nárůstem koncentrace je, alespoň na první pohled, lineární a tedy platí **čím vyšší koncetrace, tím vyšší oteplení**.  Další věci ale z grafu přímo nevyčteme, a je potřeba je objasnit:
 
 * Zda jde o korelaci nebo o kauzalitu
 * Jak velký efekt mají další skleníkové plyny a aerosoly, které lidstvo vypouští do atmosféry
@@ -38,9 +38,7 @@ Z grafu vidíme, že vztah mezi oteplením a nárůstem koncentrace je, alespoň
 
 Často se říká, že korelace ještě neznamená kauzalitu (příčinnou souvislost). Například kdybychom do grafu vynášeli na jednu osu množství prodané zmrzliny a na druhou počet utopených, viděli bychom, že v měsících, kdy se prodá více zmrzliny se více lidí utopí - tedy viděli bychom korelaci. Bylo by ale chybou z toho usuzovat na příčinnou souvislost, tedy že konzumace zmrzliny způsobuje utopení. 
 
-Příčinná souvislost mezi rostoucí koncentrací CO<sub>2</sub> a oteplováním je dobře prokázaná. Jak?
-
-Oxid uhličitý zachycuje a odráží infračervené záření určitých vlnových délek - to potvrzují jak laboratorní měření, tak data ze satelitů, které analyzují záření odcházející ze Země. Protože záření od Slunce má široký rozsah vlnových délek, CO<sub>2</sub> v atmosféře ho odrazí jen velmi malé množství. Záření vycházející směrem od Země je ale převážně v infračerveném pásmu a na něj má CO<sub>2</sub> významný vliv. Více CO<sub>2</sub> v atmosféře tedy znamená více zadrženého infračerveného záření. Zesílený skleníkový efekt tak způsobuje oteplování. První výpočet zesíleného skleníkového efektu pochází z roku 1896, tedy z doby, kdy oteplování ještě nebylo pozorovatelné. Svante Arrhenius tehdy na základě známých charakteristik CO<sub>2</sub> a vodní páry došel k odhadu oteplení okolo 0.15°C na 10ppm. Další výpočty a současné fyzikální modely jeho výpočet dále zpřesnily. Měření i přesnost předpovědí ukazuje, že zvyšující se koncentrace způsobuje oteplování - k vyvrácení tohoto tvrzení by bylo potřeba ukázat, že CO<sub>2</sub> infračervené záření nepohlcuje nebo ukázat že výpočty či modely oteplení obsahují chyby - což se nestalo. Proto je v pořádku říci, že **vztah mezi koncentrací CO<sub>2</sub> a oteplováním je skutečně kauzalita, nikoliv pouhá korelace**.  
+**Příčinná souvislost mezi rostoucí koncentrací CO<sub>2</sub> a oteplováním je dobře prokázaná.** Jak? xid uhličitý zachycuje a odráží infračervené záření určitých vlnových délek - to potvrzují jak laboratorní měření, tak data ze satelitů, které analyzují záření odcházející ze Země. Protože záření od Slunce má široký rozsah vlnových délek, CO<sub>2</sub> v atmosféře ho odrazí jen velmi malé množství. Záření vycházející směrem od Země je ale převážně v infračerveném pásmu a to molekuly CO<sub>2</sub> silně pohlcují a tento mechanismus se nazývá *skleníkový efket*. Více CO<sub>2</sub> v atmosféře tedy znamená více zadrženého infračerveného záření a tedy zesílený skleníkový efekt. Ten způsobuje oteplování. První výpočet zesílení skleníkového efektu pochází z roku 1896, tedy z doby, kdy oteplování ještě nebylo pozorovatelné. Svante Arrhenius[^11] tehdy na základě známých charakteristik CO<sub>2</sub> a vodní páry došel k odhadu oteplení okolo 0.15°C na 10ppm. Další výpočty a současné fyzikální modely jeho výpočet dále zpřesnily. Měření i přesnost předpovědí ukazuje, že zvyšující se koncentrace způsobuje oteplování - k vyvrácení tohoto tvrzení by bylo potřeba ukázat, že CO<sub>2</sub> infračervené záření nepohlcuje nebo ukázat že výpočty či modely oteplení obsahují chyby - což se nestalo. Proto je v pořádku říci, že **vztah mezi koncentrací CO<sub>2</sub> a oteplováním je skutečně kauzalita, nikoliv pouhá korelace**.  
 
 ## Efekt dalších skleníkových plynů a aerosolů
 
@@ -71,6 +69,8 @@ Kdybychom pak koncentraci CO<sub>2</sub> zafixovali na dvojnásobné hodnotě, t
     
 
 Znamená to tedy, že když dosáhneme uhlíkové neutrality tak teploty dále porostou? Ne zcela. Všimněte si ale, že v experimentu zdůrazňujeme zafixování koncentrace na určité hodnotě. Proč je to důležité? Kdybychom dosáhli nulových emisí CO<sub>2</sub>, jeho koncentrace nezůstanou konstantní, ale budou postupně pomalu klesat, než toky CO<sub>2</sub> v uhlíkovém cyklu dostanou do rovnováhy. Na to, aby se koncentrace udržely na konstantní hodnotě by to znamenalo stále malé množství oxidu uhličitého do atmosféry vypouštět. Toto rozlišení mezi stabilní koncentrací CO<sub>2</sub> a nulovými emisemi hraje roli při úvahách o uhlíkovém rozpočtu.
+
+[^11]: Svante Arrhenius
 
 [^60]: Koncentrace co2 v atmoféře před 400 miliony let [zde](https://earth.org/data_visualization/a-brief-history-of-co2/)
 
