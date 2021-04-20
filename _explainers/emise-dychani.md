@@ -23,7 +23,7 @@ Aby člověk mohl vydechovat oxid uhličitý, musí ke vdechovanému kyslíku p�
 
 ## Dýchání a fotosyntéza rostlin
 
-Ve dne, kdy svítí slunce, probíhá v listech **fotosyntéza** a rostliny z oxidu uhličitého a vody vyrábí kyslík a sacharidy. Kyslík vypouští do atmosféry a sacharidy si nechávají v buňkách jako zdroj energie nebo jako stavební materiál pro další části rostliny. Naopak v noci probíhá takzvané **buněčné dýchání** – proces se obrátí a rostliny kyslík spotřebovávají a vydechují oxid uhličitý.
+Ve dne, kdy svítí slunce, probíhá v listech **fotosyntéza** a rostliny z oxidu uhličitého a vody vyrábí kyslík a sacharidy. Kyslík vypouští do atmosféry a sacharidy si nechávají v buňkách jako zdroj energie nebo jako stavební materiál pro další části rostliny. Naopak v noci probíhá takzvané **buněčné dýchání** – proces se obrátí a rostliny kyslík spotřebovávají a vydechují oxid uhličitý [^1].
 
 {:.equation}
 CO<sub>2</sub> + H<sub>2</sub>O ⟷ O<sub>2</sub> + sacharidy.
@@ -47,3 +47,8 @@ Při měření na odlehlých místech, jako třeba na Havaji nebo v Antarktidě,
 %}
 
 Další kolísání koncentrací způsobují rostliny během roku. **Na jaře a v létě**, kdy je dostatek slunečního svitu, **převažuje fotosyntéza** a rostliny zabudovávají oxid uhličitý ze vzduchu do svých listů a kmenů. **Na podzim a v zimě** je slunečního svitu méně, **převažuje dýchání** a rostliny oxid uhličitý do atmosféru uvolňují. K tomu přispívá také třeba rozklad listů, které opadavé stromy na podzim shazují. Protože mnohem více lesů je na severní polokouli, celosvětové koncentrace klesají od května do září, tedy v době, kdy je léto na severní polokouli a od října do dubna znovu rostou.  Toto kolísání koncentrací je výrazně větší na severní polokouli (až 20 ppm na severu Aljašky), směrem k rovníku se snižuje (na Havaji okolo 6 ppm) a na jižním pólu je téměř nulové, jak podrobně  ukazuje [analýza NOAA](https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_trend.html), případně [animovaná grafika NOAA](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html).
+
+
+## Poznámky
+
+[^1]: Přesnější by bylo říci, že buněčné dýchání probíhá pořád, zatímco fotosyntéza jen tehdy, když má rostlina dostatek světla. Z hlediska bilance ale platí, že ve dne rostlina CO<sub>2</sub> ze vzduchu spotřebovává a v noci jej vydechuje.
