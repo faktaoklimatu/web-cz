@@ -83,13 +83,13 @@ Vzhledem k současným světovým emisím okolo 40 miliard tun CO<sub>2</sub> ro
 
 [^60]: O. Mulhern, [A 4.5 Billion-Year History of CO2 in our Atmosphere](https://earth.org/data_visualization/a-brief-history-of-co2/), Earth.org (2020)
 
-[^67]: G.A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
+[^67]: G. A. Meehl et. al. [Context for interpreting equilibrium climate sensitivity and transient climate response from the CMIP6 Earth system models](https://advances.sciencemag.org/content/6/26/eaba1981)
 
 [^68]: S. C. Sherwood, Webb, et. al. [An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678)
 
 [^77]: [Annual Greenhouse Gas Index](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index)
 
-[^101]: Myhre, G., Myhre, C. E.L., Samset, B. H. & Storelvmo, T. (2013) [Aerosols and their Relation to Global Climate and Climate Sensitivity, *Nature Education Knowledge*](https://www.nature.com/scitable/knowledge/library/aerosols-and-their-relation-to-global-climate-102215345/)
+[^101]: Myhre, G., Myhre, C. E. L., Samset, B. H. & Storelvmo, T. (2013) [Aerosols and their Relation to Global Climate and Climate Sensitivity, *Nature Education Knowledge*](https://www.nature.com/scitable/knowledge/library/aerosols-and-their-relation-to-global-climate-102215345/)
 
 [^105]: Knutti R. Hegerl. [Beyond Equilibrium Climate Sensitivity](https://www.nature.com/articles/ngeo3017), otevřená verze článku [zde](https://www.research-collection.ethz.ch/handle/20.500.11850/197761)
 
@@ -101,4 +101,4 @@ Vzhledem k současným světovým emisím okolo 40 miliard tun CO<sub>2</sub> ro
 
 [^500]: České názvy pro tyto parametry modelů nejsou ustáleny. *Transient climate response* by bylo přesnější překládat jako "průběžná odezva klimatu", ale z didaktických důvodů jsme se rozhodli pro zjednodušení a používáme překlad "krátkodobá citlivost klimatu".
 
-[^97]: Matthews, H., Weaver, A. [Committed climate warming](https://doi.org/10.1038/ngeo813) Nature Geosci 3, 142–143 (2010).
+[^97]: Matthews, H., Weaver, A. [Committed climate warming](https://doi.org/10.1038/ngeo813) Nature Geosci 3, str. 142–143 (2010).
