@@ -14,8 +14,8 @@ data-orig:	[ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [
 ---
 
 {% include preview-box.html
-    text="Přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a také vliv dalších skleníkových plynů a aerosolů nebo vliv setrvačnosti klimatu podrobněji vysvětlujeme v textu explaineru."
-    slug="expl-souvislost-koncentrace-oteplovani"
+    text="Přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a také vliv dalších skleníkových plynů a aerosolů nebo vliv setrvačnosti klimatu podrobněji vysvětlujeme v textu explaineru"
+    slug="expl-souvislost-koncentrace-oteplovani".
 %}
 
 
@@ -41,13 +41,13 @@ Dominantní vliv oxidu uhličitého na oteplování je dobře prokázán, a **gr
 
 * Klimatický systém má setrvačnost – některé procesy dosahují rovnováhy během jednotek let, jiné během desítek či stovek let. Proto je potřeba rozlišovat **krátkodobou citlivost klimatu** (*TCR, Transient Climate Response*), která zohledňuje procesy v řádu jednotek let, **rovnovážnou citlivost klimatu** (*ECS, Equilibrium Climate Sensitivity*), zohledňující procesy v řádu desítek let, a **dlouhodobou odezvu klimatu** (*ESS, Earth System Sensitivity*), která zohledňuje procesy v řádu stovek a tisíců let.[^105] [^107] [^66] Ze současných modelů klimatického systému vycházejí hodnoty krátkodobé citlivosti klimatu *TCR* okolo 1,7 °C (v rozmezí 1,3–3,0 °C)[^67] a hodnoty rovnovážné citlivosti klimatu *ECS* okolo 3°C (v rozmezí 2,3–4,7 °C).[^109] [^68] Data, která zobrazujeme v grafu, jsou průběžná a odpovídají krátkodobé odezvě klimatu. Kdyby se koncentrace stabilizovaly, teploty by ještě několik desítek let rostly, než by se oteplování zastavilo na hodnotách odpovídajících rovnovážné citlivosti klimatu. Jinak řečeno: **přímá úměrnost mezi koncentracemi a oteplením přestane platit, jestliže se radikálně sníží emise CO<sub>2</sub> na hodnoty blízké nule.** V takovém případě by se koncentrace stabilizovaly nebo začaly snižovat, teplota planety by však ještě nějakou dobu rostla.
 
-* Oxid uhličitý zodpovídá přibližně za 70 % oteplení.[^77] Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným, jejichž koncentrace v atmosféře také rostou. Spolu se skleníkovými plyny ale lidstvo vypouští i aerosoly, které mají na planetu ochlazující efekt, protože odráží sluneční záření a napomáhají vzniku mraků.[^101] Zobrazené oteplení zahrnuje všechny tyto jevy, na vodorovné ose jsou nicméně vynášeny jen koncentrace CO<sub>2</sub>. **Tvrzení o přímé úměrnosti mezi nárůstem koncentrací a oteplením je tedy zkreslující v tom, že ukazuje pouze závislost na dominantním faktoru.** Protože se však ochlazující efekt aerosolů a oteplující efekt dalších skleníkových plynů částečně vyruší, lze tvrdit, že CO<sub>2</sub> je řídicím faktorem, stojícím za výrazně více než 70 % oteplení.
+* Oxid uhličitý zodpovídá přibližně za 70 % oteplení.[^77] Zbývajících 30 % je způsobeno dalšími skleníkovými plyny, zejména metanem a oxidem dusným, jejichž koncentrace v atmosféře také rostou. Spolu se skleníkovými plyny ale lidstvo vypouští i aerosoly, které mají na planetu ochlazující efekt, protože odráží sluneční záření a napomáhají vzniku mraků.[^101] Zobrazené oteplení zahrnuje všechny tyto jevy, na vodorovné ose jsou nicméně vynášeny jen koncentrace CO<sub>2</sub>. **Tvrzení o přímé úměrnosti mezi nárůstem koncentrací a oteplením je tedy zkreslující v tom, že ukazuje pouze závislost na dominantním faktoru.** Protože se však ochlazující efekt aerosolů a oteplující efekt dalších skleníkových plynů navzájem částečně vyruší, lze tvrdit, že CO<sub>2</sub> je řídicím faktorem, stojícím za výrazně více než 70 % oteplení.
 
 ## Odkud pocházejí data v této infografice?
 
 * Hodnoty teplotní anomálie pro jednotlivé roky jsou z datasetu *NASA Goddard Institute for Space Studies*. Více o konceptu teplotní anomálie v doprovodném textu k infografice [Vývoj světové teplotní anomálie](/infografiky/vyvoj-teplotni-anomalie).
 
-* Hodnoty koncentrace CO<sub>2</sub> pro jednotlivé roky vycházejí z měření *Scripps Institution of Oceanography*, který je součástí <glossary id="noaa">NOAA</glossary>. Samostatně vývoj koncentrací CO<sub>2</sub> v atmosféře zpracováváme v grafice [Vývoj koncentrace CO₂ v atmosféře](/koncentrace-co2)
+* Hodnoty koncentrace CO<sub>2</sub> pro jednotlivé roky vycházejí z měření *Scripps Institution of Oceanography*, který je součástí <glossary id="noaa">NOAA</glossary>. Samostatně vývoj koncentrací CO<sub>2</sub> v atmosféře zpracováváme v grafice [Vývoj koncentrace CO₂ v atmosféře](/koncentrace-co2).
 
 * Trendová křivka odpovídá rovnici $$\Delta T(c) = S \cdot \log_2 (\frac{c}{c_0})$$, kde $$c$$ je koncentrace, $$c_0$$ počáteční koncentrace a $$S$$ je parametr průběžné citlivosti klimatu. Tento teoretický vztah se používá v idealizovaných podmínkách simulací – buď jako vztah pro oteplení po ustanovení rovnováhy, kdy S odpovídá ECS (*Equilibrium Climate Sensitivity*), nebo pro průběžnou hodnotu oteplení při každoročním zvyšování koncentrace CO<sub>2</sub> o 1 %, kdy S odpovídá TCR (*Transient Climate Response*). V zobrazených datech je ovšem oteplení nejen důsledkem zvýšení koncentrací CO<sub>2</sub>, ale také důsledkem zvyšování koncentrací dalších skleníkových plynů. Proto hodnoty TCR a ECS zjištěné simulacemi bereme pouze jako orientační a hodnotu S pro zobrazení závislosti fitujeme (S = 2,37 °C). Pás nejistoty je zobrazen mezi S = 2,0 °C a S = 3,1 °C, což odpovídá profilu nejistoty v TCR i ECS a částečně zohledňuje efekt setrvačnosti klimatu při stabilizaci koncentrací CO<sub>2</sub>.
 
@@ -58,7 +58,7 @@ Souvislost globálního oteplování a koncentrace atmosférického oxidu uhlič
 
 ## Zdroje a poznámky
 
-[^55]: Přesněji řečeno: radiační působení (*radiative forcing*) je přímo úměrné logaritmu koncentrace – a oteplení je přímo úměrné radiačnímu působení, více viz [en.wikipedia: Radiative Forcing](https://en.wikipedia.org/wiki/Radiative_forcing)
+[^55]: Přesněji řečeno: radiační působení (*radiative forcing*) je přímo úměrné logaritmu koncentrace – a oteplení je přímo úměrné radiačnímu působení; více viz [en.wikipedia: Radiative Forcing](https://en.wikipedia.org/wiki/Radiative_forcing)
 
 [^66]: Podrobnější diskuse o konceptu citlivosti klimatu včetně různých časových škál [en.wikipedia: Measures of Climate Sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity#Measures_of_climate_sensitivity)
 
