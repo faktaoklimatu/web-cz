@@ -16,12 +16,12 @@ data-orig:	[ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [
 {% include preview-box.html
     title="Podrobnější popis souvislostí"
     text="Přímou úměrnost mezi oteplením a zvýšením koncentrace CO<sub>2</sub> a také vliv dalších skleníkových plynů a aerosolů nebo vliv setrvačnosti klimatu podrobněji vysvětlujeme v textu explaineru."
-    slug="expl-souvislost-koncentrace-oteplovani"
+    slug="souvislost-koncentrace-oteplovani"
 %}
 
 ## Co je zobrazeno v grafu
 
-Body v levé části grafu zobrazují jednotlivé roky v období 1884–2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že závislost přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede k nárůstu teploty zhruba o 0,1 °C**. Tato závislost je podrobněji popsána níže v textu a také v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/expl-souvislost-koncentrace-oteplovani).
+Body v levé části grafu zobrazují jednotlivé roky v období 1884–2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že závislost přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede k nárůstu teploty zhruba o 0,1 °C**. Tato závislost je podrobněji popsána níže v textu a také v souvisejícím explaineru [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/souvislost-koncentrace-oteplovani).
 
 Body ukazující jednotlivé roky jsou barevně odlišeny (vždy po 20 letech), a je tak vidět, že se nárůst koncentrací CO<sub>2</sub> v posledních letech zrychluje, což odpovídá zvyšujícím se každoročním emisím CO<sub>2</sub>.
 
