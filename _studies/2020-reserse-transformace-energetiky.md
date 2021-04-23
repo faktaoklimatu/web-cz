@@ -11,6 +11,20 @@ caption:     "Rešerše klíčových studií věnujících se budoucí transform
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Klimaticko-energetické investice v teplárenství"
+    date:    Únor 2021
+    url:     "https://fel.cvut.cz/cz/aktuality/2021/teplarenstvi"
+    authors:
+      - name: Katedra ekonomiky, manažerství a humanitních věd FEL ČVUT
+        url:  "https://ekonom.feld.cvut.cz/cs/katedra/index"
+    timeframe: 2030
+  - title:   "Rozvoj obnovitelných zdrojů do roku 2030: Aktualizace studie v souvislosti s Modernizačním fondem"
+    date:    Prosinec 2020
+    url:     "https://www.modernienergetika.cz/wp-content/uploads/2020/12/201208_Rozvoje_OZE_2030_Aktualizace_final-1.pdf"
+    authors:
+      - name: Deloitte
+        url:  "https://www2.deloitte.com/cz/cs.html"
+    timeframe: 2030
   - title:   "Klimaticky neutrální Česko: Cesty k dekarbonizaci ekonomiky"
     url:     "https://www.mckinsey.com/cz/~/media/mckinsey/locations/europe%20and%20middle%20east/czech%20republic/our%20work/decarbonization_report_cz_vf.pdf"
     date:    Listopad 2020
