@@ -35,9 +35,52 @@ Například Evropská unie a Velká Británie počítají ve svých plánech kli
 Otázku kterých skleníkových plynů se cíl týká je dobré si pokládat také u firem. 
 
 
+## Rozsah: které emise se do závazku započítávají? 
+
+Když se ke klimatické/uhlíkové neutralitě zaváže stát, je na místě ptát se, zda chtějí započítávat pouze emise, které vznikají na území státu (tzv. teritoriální) nebo všechny emise vyplývající ze spotřeby v daném státu, tedy včetně emisí vzniklých při výrobě dovezených výrobků. V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý - jen asi 4%, ale u některých zemí jsou emise ze spotřeby výrazně větší (Velká Británie asi o 36%, Švýcarsko o 209%) nebo také menší (Jižní Afrika -29%, Čína -13%) než teritoriální emise [^4]. 
+
+V závazcích jednotlivých států jsme zatím jasný cíl dosáhnout neutrality emisí ze spotřeby nenašli, nicméně například EU uvažuje o uhlíkovém clu, tedy dodatečném zpoplatnění dováženého zboží, které zohlední emisní náročnost jeho výroby. Podniky, které vyrábějí mimo EU by nebyly zvýhodněny tím, že neplatí za emise, které vyprodukují. 
+
+Jiná otázka ohledně ohledně závazků zní: **jak jsou v cíli zohledněny emise z letecké a lodní dopravy?** Emise z mezinárodní dopravy totiž není možné jednoznačně přiřadit ke konkrétnímu státu, a proto se vede jejich účetnictví zvlášť. 
+
+V případě Česka je nyní aktuální otázka **jak započítávat emise z lesů** - jde o to, že dříve české lesy pohlcovaly okolo 7 miliónů tun CO<sub>2</sub> ročně, nyní se ale kvůli kůrovcové kalamitě staly zdrojem a emitují přibližně 5 miliónů CO<sub>2</sub>. 
+
+V případě firem je zásadní rozdíl v tom, zda do emisí, na které se zaměřují, započítávají pouze provoz firmy (tedy například elektřinu a vytápění v kancelářích) nebo celý dodavatelský řetězec. Konkrétně například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků, přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry emise vytvořené za celou dobu existence firmy [^6], tedy od roku 1975.  Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, si dala do roku 2050 za cíl pouze dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
+
+Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, kterým půjčují peníze a řeší “klimatické” parametry investičních portfolií. 
+Také vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise spojené s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další dopady, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, nebo sociální dopady na společnost.
 
 
-Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny – ve skutečnosti jsou to však [bezobratlí živočichové](https://cs.wikipedia.org/wiki/Kor%C3%A1l). Na světě bylo zatím pojmenováno šest tisíc různých druhů a ty se navzájem značně liší svými vlastnostmi. Existují koráli s tvrdou schránkou i koráli bez schránky, najdete je v mělkých, prosluněných pobřežních vodách i v hlubinách oceánu, kam světlo téměř nepronikne. V kontextu klimatických změn se mluví zejména o teplovodních korálech s pevnými schránkami, kteří tvoří základ ekosystémů korálových útesů u pobřeží a klimatická změna je ohrožuje nejvíce.
+## Způsob snižování emisí
+
+Těžištěm plánů na dosažení uhlíkové/klimatické neutrality je ve většině případů přímé snížení emisí CO2 a dalších skleníkových plynů, například nahrazením výroby elektřiny z uhlí obnovitelnými zdroji, zateplování budov nebo alternativní pohony aut. Dekarbonizovat některé průmyslové procesy (např. výrobu cementu) nebo třeba leteckou dopravu je zatím technologicky nemožné (resp možné ale nesmyslně drahé)  a tedy některých emisí se daná firma nebo stát nezbaví. Plány na dosažení uhlíkové neutrality proto počítají buď se zachycováním uhlíku z atmosféry, nebo s takzvanými uhlíkovými kompenzacemi (carbon offsets), kterými “vynulují” své zbývající emise. 
+
+Zachycování CO2 z atmosféry lze dosáhnout přírodními nebo průmyslovými postupy. Přírodní postupy využívají rostliny, které vážou oxid uhličitý z atmosféry do svých listů, kmenů a kořenů. Ve většině případů jde o vysazování stromů a obnovu lesa, ale některé ekosystémy prérijních travin dokáží vázat uhlík ještě rychleji. 
+Průmyslové postupy (CCS ,Carbon Capture and Storage) spoléhají na technologie filtrace, které oxid uhličitý ze vzduchu zachycují a jeho dlouhodobé ukládání, většinou skrze vstřikování do hlubokých vrtů do zemské kůry. 
+https://en.wikipedia.org/wiki/Carbon_capture_and_storage
+
+Uhlíkové kompenzace (carbon offsets) jsou v podstatě investice do projektů, které se různými způsoby snaží snížit emise skleníkových plynů. Tyto projekty mohou být různého charakteru - například zachycování a spalování metanu, který uniká ze skládky odpadu přeměňuje silný skleníkový plyn (metan) na slabší skleníkový plyn (CO2), což lze započítat jako snížení emisí. Jiným příkladem mohou být projekty v afrických zemích, které se snaží nahradit tradiční vaření na ohni efektivnějšími plynovými vařiči. Kromě emisních úspor tak podobné projekty chrání místní lesy. (https://eco-act.com/project/darfur-low-smoke-cookstoves-project/). Další projekty se zaměřují třeba přímo na zalesňování. 
+
+Potíž s uhlíkovými kompenzacemi je v tom, že budoucí dopad investice lze  těžko odhadnout a je většinou nejistý. Offsetting tedy vede k přesouvání rizik spojených s investicí. Nesnadné je i počítání těchto kompenzací, aby nebyly započítány dvakrát: jestliže se např. Microsoft rozhodne pro uhlíkovou kompenzaci v podobě zalesnění části území Sierry Leone, komu přičíst toto snížení emisí: africké zemi, nebo IT korporaci? Klima z toho bude mít prospěch pouze jednou, nikoliv dvakrát. Ještě složitější je pak tento výpočet u obchodování se zbožím a energií.    
+  
+https://www.climatepartner.com/en/climatemap/offset-projects
+https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions
+https://www.carbonfootprint.com/carbonoffsetprojects.html
+
+https://www.offsetujemeco2.cz/
+
+## Podrobnost průběžného plánu
+Většina dosavadních závazků se týká data dosažení uhlíkové neutrality, pouze některé země přitom stanovují i průběžné cíle. Například Evropská Unie usiluje o snížení emisí skleníkových plynů do roku 2030 o 55% oproti roku 1990. Zpracování závazku přímo formou uhlíkového rozpočtu má Velká Británie. Co to znamená a proč je to důležité? Podívejme se na to pomocí analogie: 
+
+Představme si situaci, kdy kuřák, který denně vykouří krabičku cigaret, slíbí, že do deseti let přestane s kouřením. Je jasné, že pokud dalších deset let zůstane u jedné krabičky denně, bude to na jeho zdraví mít výrazně vyšší dopad, než když během dvou let sníží spotřebu na tři cigarety denně a těch se pak postupně zbaví také. Dalo by se říct, že dobrým měřítkem dopadu na zdraví bude celkový počet vykouřených cigaret, spíše než datum, kdy byla vykouřena ta poslední. Tedy kuřák by mohl svůj závazek formulovat jako celkový počet cigaret, které si dovolí vykouřit. Tato metafora dobře odpovídá i snahám o snižování emisí - jde koneckonců o ukončení závislosti na fosilních palivech.  
+
+
+Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je uhlíkový rozpočet. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO2 - tolik emisí CO2 mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu. Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterým se budeme zabývat v samostatném explaineru.
+
+## Závěrečný odstavec
+
+něco o tom, že udržet si přehled v tomto tématu je těžký, protože prochází dynamickým obdobím. Před dopsáním článku zveřejnily USA a Británie nový závazek. Obecně lze závazky a policy projections sledovat na Carbon Action Trackeru, ale i tam jsou informace se zpožděním, protože zpracovat projekce nových závazků prostě nějakou dobu trvá.
+
 
 {% include figure.html
     name="mapa_vyskytu_koralu.png"
@@ -46,7 +89,6 @@ Možná byste čekali, že koráli jsou rostliny nebo prostě oživlé kameny �
     source-url="https://www.researchgate.net/publication/259481906_Reefs_at_Risk_A_Map-Based_Indicator_of_Threats_to_the_World's_Coral_Reefs"
 %}
 
-Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (rod *Symbiodinium*), což je druh mořské řasy, která žije přímo v buňkách hostitelských korálů. Koráli jí poskytují ochranu a lepší podmínky pro fotosyntézu, řasa jim to pak vrací formou potravy – až 90 % z toho, co při fotosyntéze vyprodukuje, předává řasa korálům. Tím jim umožňuje rychle růst a vytvářet vápenaté schránky. Tato symbióza je základem ekosystémů korálových útesů v tropických oceánských vodách po celé planetě.
 
 {% include figure.html
     name="korali_zooxanthela.jpg"
@@ -56,18 +98,6 @@ Většina teplovodních korálů má **symbiotický vztah** se zooxanthellou (ro
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
 
-## Proč nám na korálech tak záleží?
-
-Korálové útesy jsou domovem obrovského množství živočichů. Pestrobarevné rybky, mořští ježci, chobotnice, želvy, krevetky a jiní korýši – ti všichni jsou součástí potravní pyramidy, na jejímž vrcholu najdeme mořské ptáky a žraloky. Z hlediska druhové pestrosti překonávají korálové útesy i tropické deštné pralesy – **ačkoli zabírají pouze 0,1 % oceánského dna, vytvářejí podmínky pro život nejméně 25 % všech známých mořských druhů.**[^1] Jejich zánik by znamenal velkou ztrátu mořské biodiverzity. Ale i my lidé je potřebujeme: **na korálových útesech závisí živobytí asi půl miliardy lidí**, dále tvoří přirozenou bariéru, jež chrání hustě zalidněná pobřeží mnoha zemí před bouřemi a přílivovými vlnami z otevřeného oceánu atd.[^2]
-
-## Proč jsou koráli v ohrožení?
-
-Existují dva hlavní faktory, které způsobují umírání teplovodních korálů (využívajících symbiotickou řasu zooxanthellu): zvyšování teploty vody a okyselování oceánu.
-
-### Zvyšování teploty vody
-
-Většina korálů roste nejlépe při teplotách vody 23–29 °C.[^3] Vyšší teplota je pro korály stresující a způsobí, že koráli symbiotickou řasu ze svých buněk vypudí. Tomuto jevu se říká [zbělení korálů](https://oceanservice.noaa.gov/facts/coral_bleach.html). To sice automaticky neznamená, že korál odumře, nicméně vypuzení symbiotické řasy pro něj představuje ztrátu živin, a tedy oslabení. Pokud je teplotní výkyv jen krátkodobý, mohou se koráli uzdravit (tento proces ale může trvat roky, ba i desetiletí). Déletrvající "vlna veder" v moři však způsobí smrt celého korálového útesu. Příčinou vypuzení řasy a zbělení korálů mohou být i další stresové faktory jako například znečištění vody nebo abnormální množství světla. Monitorování teplot oceánů a bělení korálů se věnuje oddělení [Coral Reef Watch](https://coralreefwatch.noaa.gov/) americké <glossary id="noaa">NOAA</glossary>, na jejíchž stránkách lze najít aktuální stav ohrožení korálových útesů.
-
 {% include figure.html
     name="beleni.jpg"
     caption="Fotky korálového útesu na ostrově Samoa. Levý obrázek ukazuje zdravý korálový útes, pravý ukazuje stejný útes poškozený zbělením."
@@ -76,45 +106,7 @@ Většina korálů roste nejlépe při teplotách vody 23–29 °C.[^3] Vyšší
     source-url="https://miro.medium.com/max/8000/1*-PZwwFfl9uxI4IuNQRwS_Q.jpeg"
 %}
 
-### Okyselování oceánů
 
-Běžně má mořská voda pH okolo 8,2 – je tedy slabě zásaditá. Zvyšování koncentrace CO<sub>2</sub> v atmosféře však způsobuje, že je i více CO<sub>2</sub> rozpuštěno v mořské vodě a její pH klesá. Za poslední století se snížilo asi o 0,1 – může se to zdát málo, ale tato nevelká změna v pH znamená, že je dnes v mořské vodě o 30 % více vodíkových iontů H<sup>+</sup> než před sto lety. U člověka by podobná změna v pH krve způsobila bezvědomí.
-
-Jaký vliv to má na korály a další mořské živočichy? Snižování pH mění nejen množství vodíkových iontů H<sup>+</sup>, ale také snižuje množství iontů CO<sub>3</sub><sup>2-</sup>, které jsou stavebním kamenem pro vápenaté schránky korálů (a dalších mořských živočichů stavějících schránku z CaCO<sub>3</sub>). Pro korály je tak tvorba schránky náročnější a jejich růst nebo obnova po zbělení je pomalejší.[^4] Podrobnější informace o okyselování oceánů lze najít na webu [NOAA](https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification) nebo [anglické Wikipedii](https://en.wikipedia.org/wiki/Ocean_acidification).
-
-Vedle okyselování a zvyšování teploty mořské vody hraje v některých místech roli i přímé poškození člověkem. Například při budování a rozšiřování přístavů v Austrálii jsou ničeny části Velkého bariérového útesu.
-
-## Současný stav a vyhlídky do budoucna?
-
-První rozsáhlé zbělení korálů bylo zpozorováno v 80. letech minulého století a v posledních dekádách nabývá tento jev nejen na rozsahu, ale i frekvenci a intenzitě. Většina tropických oblastí přišla od té doby o 50 % svých korálových útesů.[^5] K zatím největšímu zaznamenanému celosvětovému zbělení došlo v letech 2014–17: tehdy zasáhlo 38 % korálových útesů světa.[^6]
-
-Snímky ze sledování prováděného satelity NOAA ukazují současné velmi nepříznivé podmínky trvalého charakteru – zde je situace od konce prosince 2020 do začátku března 2021:
-
-{% include figure.html
-    name="mapa-ohrozeni-animace.gif"
-    caption="Záznam monitorování teploty vody a rizika pro korálové útesy v období prosinec 2020 – březen 2021."
-    alt="mapa aktuálních úrovní ohrožení korálů"
-    source-text="NOAA"
-    source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
-%}
-
-Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad, který má na korály probíhající klimatická změna.
-
-Zpráva <glossary id="sr15">IPCC SR15</glossary> [^7] odhaduje, že i kdyby se podařilo udržet oteplení planety do 1,5 °C, přijdeme o 70–90 % zbývajících korálových útesů a **při oteplení o 2 °C nepřežijí prakticky žádní teplovodní koráli**.
-
-## Jaká rizika se týkají hlubokomořských korálů?
-
-Ne o všech korálech platí, že mají tvrdou schránku, tvoří útesy nebo že využívají fotosyntézu. Koráli žijící v mořských hlubinách (větevníci, laločníci...), kam sluneční světlo téměř nebo vůbec nepronikne, fotosyntézu nevyužívají, a proto také méně trpí bělením. Tyto populace korálů se vyznačují malou rychlostí růstu a vysokou délkou života: mohou žít celá staletí, v případě některých druhů, jako jsou např. trnatci (černí koráli), i tisíce let.
-
-Pomalý růst však také znamená mnohem pomalejší obnovu v případě poškození. Mezi největší hrozby pro hlubokomořské korály (a na ně navázané ekosystémy) patří komerční rybolov do sítí vlečených po dně, hlubinná těžba ropy a jiných minerálů, vedení kabelů a potrubí po mořském dně a průmyslové znečištění.[^8] [^9] [^10]
-
-{% include figure.html
-    name="lidska-cinnost.jpg"
-    caption="Poškození korálů rybářskými sítěmi."
-    alt="poškození korálů rybolovem"
-    source-text="NOAA"
-    source-url="https://coralreef.noaa.gov/media/images_gallery/leaving_scars_600.jpg"
-%}
 
 ## Zdroje a poznámky
 
@@ -125,11 +117,8 @@ Pomalý růst však také znamená mnohem pomalejší obnovu v případě poško
 
 [^3]: Odkaz na CO<sub>2</sub> může za 70 % celkového oteplení
 
+[^4]: Carbon Brief https://www.carbonbrief.org/mapped-worlds-largest-co2-importers-exporters
 
-[^4]: Spalding Ch., Finnegan, S., Fischer W., [Energetic costs of calcification under ocean acidification](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016GB005597), Global Biochemical Cycles (2017)
-[^5]:Hoegh-Guldberg O., Poloczanska E.S., Skirving W. and Dove S., ["Coral Reef Ecosystems under Climate Change and Ocean Acidification"](https://doi.org/10.3389/fmars.2017.00158) Frontiers in Marine Science 4, str. 158 (2017).
-[^6]: Le Nohaïc, M., Ross, C.L., Cornwall, C.E. et al. ["Marine heatwave causes unprecedented regional mass bleaching of thermally resistant corals in northwestern Australia"](https://doi.org/10.1038/s41598-017-14794-y), Scientific Reports 7, čl. 14999 (2017).
-[^7]: IPCC, ["Summary for policymakers: Global warming of 1.5 °C](https://www.ipcc.ch/report/sr15) — An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty", editoři V. Masson-Delmotte et al., IPCC, World Meteorological Organization, United Nations Environment Programme (Geneva, Switzerland, 2018).
-[^8]: Hall-Spencer, J., Allain, V., Fosså, J.H., ["Trawling damage to Northeast Atlantic ancient coral reefs"](https://doi.org/10.1098/rspb.2001.1910) Proceedings of the Royal Society B, Biological Sciences 269, str. 507–511 (2002).
-[^9]: Turley, C.M., Roberts, J.M., Guinotte, J.M., ["Corals in deep-water: will the unseen hand of ocean acidification destroy cold-water ecosystems?"](https://doi.org/10.1007/s00338-007-0247-5). Coral Reefs 26, str. 445–448 (2007).
-[^10]: Roberts J.M., Cairns, S.D. ["Cold-water corals in a changing ocean"](https://doi.org/10.1016/j.cosust.2014.01.004) Current Opinion in Environmental Sustainability 7, str. 118–126 (2014).
+[^5]:
+
+[^6]: Microsoft https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030/
