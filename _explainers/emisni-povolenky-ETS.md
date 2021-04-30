@@ -89,14 +89,7 @@ Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2012–
 
 Fungování EU ETS je rozděleno do několika fází, během nichž je systém průběžně testován a rozšiřován. 
 
-První fáze (2005–2007) byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následující tabulce.
-
-|  | Fáze I (2005–2007)  |  Fáze II (2008–2012) |  Fáze III (2013–2020) |  Fáze IV (2021–2030) |
-|---|---|---|---|---|
-| **Cíle**  | pilotní systém  | 8% snížení emisí oproti 1990  |  21% snížení emisí oproti 2005 | 43% snížení emisí oproti 2005 (redukční faktor snižování počtu povolenek je zvýšen na 2,2 % oproti předchozím 1,74 %)  |
-| **Zúčastněné země**  | EU 27  |  EU 27, Norsko, Lichtenštejnsko, Island | EU 28, Norsko, Lichtenštejnsko, Island | EU 27, Norsko, Lichtenštejnsko, Island |
-| **Skleníkové plyny**  | CO<sub>2</sub>  |  CO<sub>2</sub> + N<sub>2</sub>O (dobrovolné)| CO<sub>2</sub> + N<sub>2</sub>O +  PFCs (perfluorované uhlovodíky) | CO<sub>2</sub> + N<sub>2</sub>O +  PFCs |
-|  **Sektory** |  zařízení na výrobu energie, energeticky náročná průmyslová odvětví | předchozí + letectví  | předchozí + výroba hliníku a chemikálií, zachycování a skladování uhlíku  | předchozí  |
+První fáze od roku 2005 byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následujícím textu.
 
 ### Fáze I (2005–2007)
 - **Cíle**: pilotní systém
