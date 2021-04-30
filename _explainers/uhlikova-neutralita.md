@@ -11,7 +11,7 @@ cover-source-author: ""
 cover-source-license: ""
 cover-source-license-url: ""
 cover-source-text: ""
-cover-source-url: ""
+cover-source-url: "https://pixabay.com/photos/windmills-clouds-fog-wind-power-1048981/"
 perex:       "V poslední době se k cíli dosažení uhlíkové neutrality přihlásila řada zemí - například EU, Čína, Japonsko, Korea a naposledy, 22. dubna 2021 také USA. I mnoho velkých nadnárodních firem, jako třeba Microsoft, IKEA, nebo Mercedes-Benz veřejně deklarovaly záměr dosáhnout “net-zero”, tedy v součtu nulových emisí skleníkových plynů. V tomto textu se podíváme, co tyto sliby a plány znamenají, a ukážeme si tři zásadní dimenze, ve kterých se mohou sliby “net-zero” lišit: 
 1. Rozsah emisí, které slib pokrývá
 2. Způsob snížení emisí 
@@ -28,7 +28,7 @@ Závazek klimatické nebo uhlíkové neutrality má u různých států různý 
 
 ## Rozsah: kterých plynů se slib týká?
 
-Oxid uhličitý je zodpovědný za 70 % současného oteplení [^3] a každý závazek dosažení “net-zero” počítá s dosažením nulových nebo záporných emisí CO<sub>2</sub>. Ale ne všechny závazky počítají s dalšími skleníkovými plyny: metanem, oxidem dusným, a CFC a HFC !!FIXME (vytvořit slovníkové heslo pro CFC a HFC). 
+Oxid uhličitý je zodpovědný za 70 % současného oteplení [^3] a každý závazek dosažení “net-zero” počítá s dosažením nulových nebo záporných emisí CO<sub>2</sub>. Ale ne všechny závazky počítají s dalšími skleníkovými plyny: metanem, oxidem dusným, <glossary id="cfchfc">CFC a HFC</glossary>. 
 
 Například Evropská unie a Velká Británie počítají ve svých plánech klimatické neutrality se všemi skleníkovými plyny. Naproti tomu závazek Nového Zélandu, který si klimatické cíle odhlasoval v roce 2019, takže jsou součástí legislativy, se týká pouze emisí CO<sub>2</sub>. Přitom třetinu emisí skleníkových plynů Nového Zélandu dělá metan z živočišné produkce a zatím není jasné, jak se novozélanďané postaví k jeho produkci.
 
@@ -37,74 +37,51 @@ Otázku kterých skleníkových plynů se cíl týká je dobré si pokládat tak
 
 ## Rozsah: které emise se do závazku započítávají? 
 
-Když se ke klimatické/uhlíkové neutralitě zaváže stát, je na místě ptát se, zda chtějí započítávat pouze emise, které vznikají na území státu (tzv. teritoriální) nebo všechny emise vyplývající ze spotřeby v daném státu, tedy včetně emisí vzniklých při výrobě dovezených výrobků. V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý - jen asi 4%, ale u některých zemí jsou emise ze spotřeby výrazně větší (Velká Británie asi o 36%, Švýcarsko o 209%) nebo také menší (Jižní Afrika -29%, Čína -13%) než teritoriální emise [^4]. 
+Když se ke klimatické/uhlíkové neutralitě zaváže stát, je na místě ptát se, zda chtějí započítávat pouze emise, které vznikají na území státu, tzv. **teritoriální emise** nebo všechny emise vyplývající ze spotřeby v daném státu, tedy včetně emisí vzniklých při výrobě dovezených výrobků, tzv. **emise ze spotřeby**. V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý - jen asi 4%, ale u některých zemí jsou emise ze spotřeby výrazně větší (Velká Británie asi o 36%, Švýcarsko o 209%) nebo také menší (Jižní Afrika -29%, Čína -13%) než teritoriální emise [^4]. 
 
 V závazcích jednotlivých států jsme zatím jasný cíl dosáhnout neutrality emisí ze spotřeby nenašli, nicméně například EU uvažuje o uhlíkovém clu, tedy dodatečném zpoplatnění dováženého zboží, které zohlední emisní náročnost jeho výroby. Podniky, které vyrábějí mimo EU by nebyly zvýhodněny tím, že neplatí za emise, které vyprodukují. 
 
-Jiná otázka ohledně ohledně závazků zní: **jak jsou v cíli zohledněny emise z letecké a lodní dopravy?** Emise z mezinárodní dopravy totiž není možné jednoznačně přiřadit ke konkrétnímu státu, a proto se vede jejich účetnictví zvlášť. 
+Jiná otázka ohledně ohledně závazků zní: **jak jsou v cíli zohledněny emise z letecké a lodní dopravy?** Emise z mezinárodní dopravy totiž není možné jednoznačně přiřadit ke konkrétnímu státu, a proto se vede jejich účetnictví zvlášť. Některé země ve svých závazcích svůj podíl na mezinárodní letecké a lodní dopravě zohledňují. 
 
 V případě Česka je nyní aktuální otázka **jak započítávat emise z lesů** - jde o to, že dříve české lesy pohlcovaly okolo 7 miliónů tun CO<sub>2</sub> ročně, nyní se ale kvůli kůrovcové kalamitě staly zdrojem a emitují přibližně 5 miliónů CO<sub>2</sub>. 
 
 V případě firem je zásadní rozdíl v tom, zda do emisí, na které se zaměřují, započítávají pouze provoz firmy (tedy například elektřinu a vytápění v kancelářích) nebo celý dodavatelský řetězec. Konkrétně například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků, přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry emise vytvořené za celou dobu existence firmy [^6], tedy od roku 1975.  Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, si dala do roku 2050 za cíl pouze dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
 
-Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, kterým půjčují peníze a řeší “klimatické” parametry investičních portfolií. 
-Také vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise spojené s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další dopady, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, nebo sociální dopady na společnost.
-
-
-## Způsob snižování emisí
-
-Těžištěm plánů na dosažení uhlíkové/klimatické neutrality je ve většině případů přímé snížení emisí CO2 a dalších skleníkových plynů, například nahrazením výroby elektřiny z uhlí obnovitelnými zdroji, zateplování budov nebo alternativní pohony aut. Dekarbonizovat některé průmyslové procesy (např. výrobu cementu) nebo třeba leteckou dopravu je zatím technologicky nemožné (resp možné ale nesmyslně drahé)  a tedy některých emisí se daná firma nebo stát nezbaví. Plány na dosažení uhlíkové neutrality proto počítají buď se zachycováním uhlíku z atmosféry, nebo s takzvanými uhlíkovými kompenzacemi (carbon offsets), kterými “vynulují” své zbývající emise. 
-
-Zachycování CO2 z atmosféry lze dosáhnout přírodními nebo průmyslovými postupy. Přírodní postupy využívají rostliny, které vážou oxid uhličitý z atmosféry do svých listů, kmenů a kořenů. Ve většině případů jde o vysazování stromů a obnovu lesa, ale některé ekosystémy prérijních travin dokáží vázat uhlík ještě rychleji. 
-Průmyslové postupy (CCS ,Carbon Capture and Storage) spoléhají na technologie filtrace, které oxid uhličitý ze vzduchu zachycují a jeho dlouhodobé ukládání, většinou skrze vstřikování do hlubokých vrtů do zemské kůry. 
-https://en.wikipedia.org/wiki/Carbon_capture_and_storage
-
-Uhlíkové kompenzace (carbon offsets) jsou v podstatě investice do projektů, které se různými způsoby snaží snížit emise skleníkových plynů. Tyto projekty mohou být různého charakteru - například zachycování a spalování metanu, který uniká ze skládky odpadu přeměňuje silný skleníkový plyn (metan) na slabší skleníkový plyn (CO2), což lze započítat jako snížení emisí. Jiným příkladem mohou být projekty v afrických zemích, které se snaží nahradit tradiční vaření na ohni efektivnějšími plynovými vařiči. Kromě emisních úspor tak podobné projekty chrání místní lesy. (https://eco-act.com/project/darfur-low-smoke-cookstoves-project/). Další projekty se zaměřují třeba přímo na zalesňování. 
-
-Potíž s uhlíkovými kompenzacemi je v tom, že budoucí dopad investice lze  těžko odhadnout a je většinou nejistý. Offsetting tedy vede k přesouvání rizik spojených s investicí. Nesnadné je i počítání těchto kompenzací, aby nebyly započítány dvakrát: jestliže se např. Microsoft rozhodne pro uhlíkovou kompenzaci v podobě zalesnění části území Sierry Leone, komu přičíst toto snížení emisí: africké zemi, nebo IT korporaci? Klima z toho bude mít prospěch pouze jednou, nikoliv dvakrát. Ještě složitější je pak tento výpočet u obchodování se zbožím a energií.    
-  
-https://www.climatepartner.com/en/climatemap/offset-projects
-https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions
-https://www.carbonfootprint.com/carbonoffsetprojects.html
-
-https://www.offsetujemeco2.cz/
-
-## Podrobnost průběžného plánu
-Většina dosavadních závazků se týká data dosažení uhlíkové neutrality, pouze některé země přitom stanovují i průběžné cíle. Například Evropská Unie usiluje o snížení emisí skleníkových plynů do roku 2030 o 55% oproti roku 1990. Zpracování závazku přímo formou uhlíkového rozpočtu má Velká Británie. Co to znamená a proč je to důležité? Podívejme se na to pomocí analogie: 
-
-Představme si situaci, kdy kuřák, který denně vykouří krabičku cigaret, slíbí, že do deseti let přestane s kouřením. Je jasné, že pokud dalších deset let zůstane u jedné krabičky denně, bude to na jeho zdraví mít výrazně vyšší dopad, než když během dvou let sníží spotřebu na tři cigarety denně a těch se pak postupně zbaví také. Dalo by se říct, že dobrým měřítkem dopadu na zdraví bude celkový počet vykouřených cigaret, spíše než datum, kdy byla vykouřena ta poslední. Tedy kuřák by mohl svůj závazek formulovat jako celkový počet cigaret, které si dovolí vykouřit. Tato metafora dobře odpovídá i snahám o snižování emisí - jde koneckonců o ukončení závislosti na fosilních palivech.  
-
-
-Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je uhlíkový rozpočet. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO2 - tolik emisí CO2 mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu. Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterým se budeme zabývat v samostatném explaineru.
-
-## Závěrečný odstavec
-
-něco o tom, že udržet si přehled v tomto tématu je těžký, protože prochází dynamickým obdobím. Před dopsáním článku zveřejnily USA a Británie nový závazek. Obecně lze závazky a policy projections sledovat na Carbon Action Trackeru, ale i tam jsou informace se zpožděním, protože zpracovat projekce nových závazků prostě nějakou dobu trvá.
-
 
 {% include figure.html
-    name="mapa_vyskytu_koralu.png"
-    alt="kde se nachazi korali"
-    source-text="Bryant et al."
-    source-url="https://www.researchgate.net/publication/259481906_Reefs_at_Risk_A_Map-Based_Indicator_of_Threats_to_the_World's_Coral_Reefs"
-%}
-
-
-{% include figure.html
-    name="korali_zooxanthela.jpg"
+    name="Scopes-of-Carbon-Emissions.jpg"
     caption="Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. U všech ale najdeme symbiotickou řasu, která pro ně produkuje živiny."
     alt="Zooxanthella uvnitř buněk korálů"
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
 
-{% include figure.html
-    name="beleni.jpg"
-    caption="Fotky korálového útesu na ostrově Samoa. Levý obrázek ukazuje zdravý korálový útes, pravý ukazuje stejný útes poškozený zbělením."
-    alt="vybělení koráli"
-    source-text="The Ocean Agency"
-    source-url="https://miro.medium.com/max/8000/1*-PZwwFfl9uxI4IuNQRwS_Q.jpeg"
-%}
+Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, kterým půjčují peníze a řeší “klimatické” parametry investičních portfolií. Také vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise spojené s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další dopady, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, nebo sociální dopady na společnost.
+
+
+## Způsob snižování emisí
+
+Těžištěm plánů na dosažení uhlíkové/klimatické neutrality je ve většině případů **přímé snížení emisí CO<sub>2</sub>** a dalších skleníkových plynů, například nahrazením uhelných elektráren obnovitelnými zdroji, zateplování budov nebo alternativní pohony aut. Dekarbonizovat některé průmyslové procesy (např. výrobu cementu) nebo třeba leteckou dopravu je zatím technologicky obtížné a drahé a tedy některých emisí se daná firma nebo stát nezbaví. Plány na dosažení uhlíkové neutrality proto počítají buď se **zachycováním uhlíku**, nebo s takzvanými **uhlíkovými kompenzacemi** (carbon offsets), kterými “vynulují” své zbývající emise. 
+
+**Zachycování CO<sub>2</sub>** z atmosféry lze dosáhnout přírodními nebo průmyslovými postupy. Přírodní postupy využívají rostliny, které vážou oxid uhličitý z atmosféry do svých listů, kmenů a kořenů. Ve většině případů jde o vysazování stromů a obnovu lesa, ale některé ekosystémy prérijních travin dokáží vázat uhlík ještě rychleji. 
+Průmyslové postupy (CCS ,Carbon Capture and Storage ^[7]) spoléhají na technologie filtrace, které oxid uhličitý zachycují a jeho dlouhodobé ukládání, většinou skrze vstřikování do hlubokých vrtů do zemské kůry. 
+
+**Uhlíkové kompenzace** (carbon offsets) jsou v podstatě investice do projektů, které se různými způsoby snaží snížit emise skleníkových plynů. Tyto projekty mohou být různého charakteru - například zachycování a spalování metanu, který uniká ze skládky odpadu přeměňuje silný skleníkový plyn (metan) na slabší skleníkový plyn (CO<sub>2</sub>), což lze započítat jako snížení emisí. Jiným příkladem mohou být projekty v afrických zemích, které se snaží nahradit tradiční vaření na ohni efektivnějšími plynovými vařiči [^8]. Kromě emisních úspor tak podobné projekty chrání místní lesy. . Další projekty se zaměřují třeba přímo na zalesňování. 
+
+Potíž s uhlíkovými kompenzacemi je v tom, že budoucí dopad investice lze  těžko odhadnout a je většinou nejistý. Offsetting tedy vede k přesouvání rizik spojených s investicí. Nesnadné je i počítání těchto kompenzací, aby nebyly započítány dvakrát: jestliže se např. Microsoft rozhodne pro uhlíkovou kompenzaci v podobě zalesnění části území Sierry Leone, komu přičíst toto snížení emisí: africké zemi, nebo IT korporaci? Klima z toho bude mít prospěch pouze jednou, nikoliv dvakrát. Ještě složitější je pak tento výpočet u obchodování se zbožím a energií. Kvalita jednotlivých offsetových projektů se může velmi lišit a protože zatím nejsou jednotné mezinárodní standardy, bývá offsetování často přirovnáváno k obchodování s odpustky nebo označováno jako greenwashing [^9]. Pokud tedy firma o offsetování uvažuje, je potřeba posuzovat konkrétní projekty na stránkách, které offsetování nabízí - například [Climate partner](https://www.climatepartner.com/en/climatemap/offset-projects), [Carbonfootprint](https://www.carbonfootprint.com/carbonoffsetprojects.html) nebo český projekt [Offsetujeme CO<sub>2</sub>](https://www.offsetujemeco2.cz/).        
+  
+
+## Podrobnost průběžného plánu
+Většina dosavadních závazků se týká data dosažení uhlíkové neutrality, pouze některé země přitom stanovují i **průběžné cíle**. Například Evropská Unie usiluje o snížení emisí skleníkových plynů do roku 2030 o 55 % oproti roku 1990. Zpracování závazku přímo formou **uhlíkového rozpočtu** má Velká Británie. Co to znamená a proč je to důležité? Podívejme se na to pomocí analogie: 
+
+Představme si situaci, kdy kuřák, který denně vykouří krabičku cigaret, slíbí, že do deseti let přestane s kouřením. Je jasné, že pokud dalších deset let zůstane u jedné krabičky denně, bude to na jeho zdraví mít výrazně vyšší dopad, než když během dvou let sníží spotřebu na tři cigarety denně a těch se pak postupně zbaví také. Dalo by se říct, že dobrým měřítkem dopadu na zdraví bude celkový počet vykouřených cigaret, spíše než datum, kdy byla vykouřena ta poslední. Tedy kuřák by mohl svůj závazek formulovat jako celkový počet cigaret, které si dovolí vykouřit. Tato metafora dobře odpovídá i snahám o snižování emisí - jde koneckonců o ukončení závislosti na fosilních palivech.  
+
+Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je **uhlíkový rozpočet**. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO<sub>2</sub> - tolik emisí CO<sub>2</sub> mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu. Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterému se budeme zabývat v samostatném explaineru.
+
+## Závěrečný odstavec
+
+něco o tom, že udržet si přehled v tomto tématu je těžký, protože prochází dynamickým obdobím. Před dopsáním článku zveřejnily USA a Británie nový závazek. Obecně lze závazky a policy projections sledovat na Carbon Action Trackeru, ale i tam jsou informace se zpožděním, protože zpracovat projekce nových závazků prostě nějakou dobu trvá.
+
 
 
 
@@ -122,3 +99,9 @@ něco o tom, že udržet si přehled v tomto tématu je těžký, protože proch
 [^5]:
 
 [^6]: Microsoft https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030/
+
+[^7]: https://en.wikipedia.org/wiki/Carbon_capture_and_storage
+
+[^8]: (https://eco-act.com/project/darfur-low-smoke-cookstoves-project/)
+
+[^9]: https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions
