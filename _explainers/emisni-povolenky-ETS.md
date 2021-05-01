@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
 slug:        "emisni-povolenky-ETS"
 published:   2021-04-19
-author:      "Tomáš Protivinský"
+author:      "Tomáš Protivínský"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
@@ -12,20 +12,21 @@ cover-source-license: ""
 cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "CO2 Sign Pixabay"
 cover-source-url: "https://pixabay.com/illustrations/co2-exhaust-gases-road-sign-auto-4767388/"
-perex:       "Emisní povolenky jsou hlavním nástrojem <a href=\"https://ec.europa.eu/clima/policies/ets_en\">Evropského systému pro obchodování s emisemi</a> (European Union Emissions Trading Scheme, EU ETS), jehož cílem je snížit emise skleníkových plynů prostřednictvím jejich zpoplatnění. 
+perex:       "Evropské emisní povolenky jsou účinným prostředkem při snižování emisí a jsou klíčové pro dosažení budoucích emisních cílů EU." 
+
+---
+
+Emisní povolenky jsou hlavním nástrojem <a href=\"https://ec.europa.eu/clima/policies/ets_en\">Evropského systému pro obchodování s emisemi</a> (European Union Emissions Trading Scheme, EU ETS), jehož cílem je snížit emise skleníkových plynů prostřednictvím jejich zpoplatnění. 
 
 EU ETS byl spuštěn Evropskou unií v roce 2005 jako první velký systém pro obchodování s emisemi skleníkových plynů (a do začátku roku 2021, kdy začal fungovat národní ETS v Číně, byl největším systémem svého druhu na světě). Kromě zemí EU zahrnuje také Island, Lichtenštejnsko a Norsko. 
 
-Evropské emisní povolenky jsou účinným prostředkem při snižování emisí a jsou klíčové pro dosažení budoucích emisních cílů EU."
----
-
 ## Jakým způsobem povolenky snižují emise?
 
-Elektrárny a průmyslové závody vypouštějící skleníkové plyny dnes musí prokázat, že mají na tyto emise povolenky v příslušném rozsahu. Jedna povolenka opravňuje k emisi jedné tuny CO<sub>2</sub>, případně ekvivalentního množství N<sub>2</sub>O nebo perfluorovaných uhlovodíků. 
+Elektrárny a průmyslové závody vypouštějící skleníkové plyny dnes musí prokázat, že mají na tyto emise povolenky v příslušném rozsahu. Jedna povolenka opravňuje k vypuštění jedné tuny CO<sub>2</sub>, případně ekvivalentního množství N<sub>2</sub>O nebo perfluorovaných uhlovodíků. 
 
-Každý rok vydává EU určité množství těchto povolenek (angl. European Emission Allowance, EUA), přičemž toto množství (tzv. emisní strop) se během let rovnoměrně snižuje – v souladu s emisními cíli EU. Systém tak umožňuje kontrolovat a průběžně redukovat  množství emisí ze zahrnutých sektorů. 
+Každý rok vydává EU určité množství těchto povolenek (angl. European Emission Allowance, EUA), přičemž toto množství (tzv. **emisní strop**) se během let rovnoměrně snižuje – v souladu s emisními cíli EU. Systém tak umožňuje kontrolovat a průběžně redukovat množství emisí ze zahrnutých sektorů. 
 
-Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. (v anglické literatuře je ETS často označováno cap-and-trade, protože je kombinován strop pro celkové emise s volným obchodováním mezi emitenty skleníkových plynů). Jejich emise jsou monitorovány, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
+Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze (v anglicky psané literatuře je ETS často označováno "cap-and-trade", neboť se zde strop pro celkové emise kombinuje s volným obchodováním mezi jednotlivými emitenty skleníkových plynů). Jejich emise jsou monitorovány, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
 
 {% include figure.html
     name="ets-system.svg"
@@ -34,7 +35,7 @@ Elektrárny a další provozy zapojené do systému si povolenky nakupují v auk
     source-url="https://faktaoklimatu.cz"
 %}
 
-Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, určitě se jim to vyplatí a stojí pak před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky? 
+Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, stojí před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky? 
 
 Množství povolenek nabízených v dalších letech (tj. maximální množství povolených emisí) EU postupně snižuje. Zároveň možnost volného obchodování s povolenkami zaručuje, že ke snižování emisí dochází nejdříve ve firmách, kde je realizace nejlevnější. Proto říkáme, že EU ETS vede k dosažení emisních cílů nákladově efektivním způsobem. 
 
@@ -44,15 +45,15 @@ Množství povolenek nabízených v dalších letech (tj. maximální množství
     slug="mitigacni-opatreni-mmf"
 %}
 
-Systémy pro obchodování s emisemi jsou tržním mechanismem, který je založen na principu, že znečišťovatelé by za poškozování životního prostředí měli platit. Tyto platby narovnávají hospodářské prostředí, neboť odstraňují neférovou výhodu znečišťovatelů. Tím také motivují elektrárny a další provozy ke snižování vlastních emisí a zároveň lze získané prostředky alespoň částečně využít k napravení způsobených škod. Ekonomové tento princip nazývají tzv. internalizací externalit (zde je externalitou vypouštění skleníkových plynů, jimiž znečišťovatelé dosud zatěžovali přírodu a celou společnost, aniž by za to museli zaplatit).
+**Systémy pro obchodování s emisemi** jsou tržním mechanismem, který je **založen na principu, že znečišťovatelé by za poškozování životního prostředí měli platit**. Tyto platby narovnávají hospodářské prostředí, neboť odstraňují neférovou výhodu znečišťovatelů. Tím také motivují elektrárny a další provozy ke snižování vlastních emisí a zároveň lze získané prostředky alespoň částečně využít k napravení způsobených škod. Ekonomové tento princip nazývají tzv. internalizací externalit (zde je externalitou vypouštění skleníkových plynů, jimiž znečišťovatelé dosud zatěžovali přírodu a celou společnost, aniž by za to museli zaplatit).
 
 ## Kolik stojí emisní povolenky?
 
 Cena emisních povolenek je klíčovým parametrem celého systému. 
 
-Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenky levně a princip, že odpovídajícím způsobem zaplatí za způsobené znečištění, zůstává do určité míry nenaplněn. 
+Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenky levně a princip, že odpovídajícím způsobem zaplatí za způsobené znečištění, zůstává nenaplněn. 
 
-K redukování množství emisí však přesto dochází, neboť emisní strop EU postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí je pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.  
+K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí bylo pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.  
 
 {% include figure.html
     name="ets-cena-povolenek.svg"
@@ -68,8 +69,8 @@ Systém pokrývá zejména větší zdroje v energeticky náročných odvětvíc
 - ropné rafinérie,
 - koksovny,
 - železárny, ocelárny,
-- cementárny,
-- a další průmyslovou výrobu.
+- cementárny
+- a některou další průmyslovou výrobu.
 
 Kromě toho zahrnuje přibližně 600 provozovatelů letadel v rámci [Evropského hospodářského prostoru](https://cs.wikipedia.org/wiki/Evropský_hospodářský_prostor)  (EHP). Souhrnně pokrývá přibližně 38 % emisí skleníkových plynů v EU.[^1]
 
@@ -109,7 +110,7 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 **Nevýhody**
 - **EU ETS nepokrývá všechny sektory, jež se podílejí na vypouštění emisí skleníkových plynů**. Kvůli administrativní zátěži nelze efektivně zahrnovat malé emitenty skleníkových plynů (např. sektor dopravy), a proto některé evropské státy doplňují EU ETS o národní uhlíkové daně. 
 - **Přidělování bezplatných povolenek některým provozům**. Během počátečních fází EU ETS nebyla k dispozici přesná data o skutečných emisích jednotlivých provozů, v některých případech tak mohl daný provoz zdarma obdržet vyšší množství povolenek, než kolik potřeboval (a přebytek následně se ziskem prodat). Tomu by mělo zabránit monitorování vypouštěných emisí a postupné omezování bezplatných alokací povolenek.
-- Budoucí ceny povolenek jsou nepředvídatelné,  která komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
+- Budoucí ceny povolenek jsou nepředvídatelné,  což komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
 
 {% include figure.html
     name="ets-overene-emise.svg"
