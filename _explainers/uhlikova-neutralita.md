@@ -96,7 +96,7 @@ Představme si situaci, kdy kuřák, který denně vykouří krabičku cigaret, 
 
 
 
-Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je **uhlíkový rozpočet**. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO<sub>2</sub> - tolik emisí CO<sub>2</sub> mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu (FIXME doplnit slovníkové heslo v souboru glossary.yml). Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterému se budeme zabývat v samostatném explaineru.
+Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je **uhlíkový rozpočet**. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO<sub>2</sub> - tolik emisí CO<sub>2</sub> mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak <glossary id="parizskadohoda">Pařížskou dohodu</glossary>. Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterému se budeme zabývat v samostatném explaineru.
 
 ## Závěrečný odstavec
 
