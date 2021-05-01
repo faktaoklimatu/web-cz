@@ -17,7 +17,7 @@ perex:     "Čím vyšší koncentrace CO<sub>2</sub> v atmosféře, tím vyšš
 
 Přibližné vztahy nám umožňují zhruba odhadnout výsledek. Je snazší si je zapamatovat a pochopit je a pomáhají nám zorientovat se ve složitém světě. Proto považujeme vyjádření  **každé zvýšení koncentrace o 10 ppm způsobí oteplení planety zhruba o 0,1 °C** za užitečné, i když je pouze přibližné.
 
-Se vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, jež jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1,5–2 °C globálního oteplení, a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500–1000 miliard tun CO<sub>2</sub>.
+Se vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, jež jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje globální oteplení mezi 1,5–2 °C, a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500–1000 miliard tun CO<sub>2</sub>.
 
 {% include figure.html
     name="../../../assets/generated/souvislost-koncentrace-oteplovani.svg"
@@ -50,7 +50,7 @@ Ochlazující efekt aerosolů a efekt ostatních skleníkových plynů mimo CO<s
 
 ## Lineární, nebo logaritmická závislost?
 
-Teoreticky odvozený vztah mezi koncentrací CO<sub>2</sub> a teplotou není lineární, ale logaritmický. Co to přesně znamená? Z výpočtů i modelů vyplývá, že každé zdvojnásobení koncentrace by mělo způsobit nárůst teploty o stejnou hodnotu: přibližně o 3 °C. Zvýšení koncentrace z 300 na 600 ppm by tedy způsobilo globální oteplení o 3 °C, zvýšení na 1200 ppm o další 3 °C a zvýšení na 2400 ppm opět o 3 °C – dohromady o 12 °C. Tak vysoké koncentrace CO<sub>2</sub> byly na Zemi naposledy v prvohorách před 400 milióny lety[^2] a pro současný život by byly naprostou katastrofou. Pokud nás zajímá rozsah koncentrací mezi 300 a 600 ppm, můžeme logaritmický vztah aproximovat lineárním.
+Teoreticky odvozený vztah mezi koncentrací CO<sub>2</sub> a teplotou není lineární, ale logaritmický. Co to přesně znamená? Z výpočtů i modelů vyplývá, že každé zdvojnásobení koncentrace by mělo způsobit nárůst teploty o stejnou hodnotu: přibližně o 3 °C. Zvýšení koncentrace z 300 na 600 ppm by tedy způsobilo globální oteplení o 3 °C, zvýšení na 1200 ppm o další 3 °C a zvýšení na 2400 ppm opět o 3 °C – dohromady o 12 °C. Tak vysoké koncentrace CO<sub>2</sub> byly na Zemi naposledy v prvohorách před 400 milióny lety[^2] a pro současný život by byly naprostou katastrofou. Kdybychom chtěli popsat oteplení ve velkém rozsahu koncentrací, je třeba použít logaritmický vztah, ale pokud nás zajímá rozsah koncentrací mezi 300 a 600 ppm, můžeme logaritmický vztah aproximovat lineárním.
 
 {% include figure.html
     name="lin-vs-log.svg"
