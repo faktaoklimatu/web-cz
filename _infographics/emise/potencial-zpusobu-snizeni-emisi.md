@@ -8,7 +8,7 @@ weight:     65
 tags-scopes: [ cr ]
 tags-topics: [ emise, opatreni ]
 caption:    "Srovnání jakou část emisí mohou v tuto chvíli ovlivnit lidé radikální změnou své spotřeby a jakou část emisí může ovlivnit stát systémovými změnami. Nejvyšší potenciál má změna energetického mixu, skrze odstavování hnědouhelných elektráren a nahrazování zdroji energie s nižší emisní intenzitou."
-data-our:   "https://docs.google.com/spreadsheets/d/1RNOUtou04LNlVw8Wkk9-evhcL7TPmim5951N4TkYWxA/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1Mfua6djrufHgLh2MjNLxkJd7NxtaK1vVX2m8xLPGZLg/edit?usp=sharing"
 ---
 
 ## Jak číst tento graf?
