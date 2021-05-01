@@ -1,7 +1,7 @@
 ---
 layout:      explainer
 title:       "Jak moc se oteplí, když se zvýší koncentrace CO₂?"
-slug:        "souvislost-koncentrace-oteplovani"
+slug:        "otepleni-zvysenim-koncentrace-co2"
 published:   2021-05-01
 author:      "Ondráš Přibyla"
 weight:      74
@@ -20,7 +20,7 @@ Přibližné vztahy nám umožňují zhruba odhadnout výsledek. Je snazší si 
 Se vztahem mezi oteplením a nárůstem koncentrací souvisí tzv. **uhlíkový rozpočet**, který říká, že čím více fosilních paliv spálíme, tím vyšší budou koncentrace CO<sub>2</sub> v atmosféře a tím vyšší bude teplota. Lze pak jednoduše odvodit, kolik tun fosilních paliv můžeme spálit, aby nárůst teploty nepřekročil meze, jež jsou pro lidstvo a ekosystémy únosné. Za tyto meze se považuje oteplení mezi 1,5–2 °C globálního oteplení, a abychom měli dostatečnou jistotu, že je nepřekročíme, můžeme vypustit už jen asi 500–1000 miliard tun CO<sub>2</sub>.
 
 {% include figure.html
-    name="cs-souvislost-koncentrace-oteplovani.svg"
+    name="../../../assets/generated/souvislost-koncentrace-oteplovani.svg"
     alt="Souvislost mezi koncentracemi CO2 a oteplováním"
 %}
 
