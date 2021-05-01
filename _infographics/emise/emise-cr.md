@@ -13,9 +13,9 @@ dataset:    "emise-cr"
 
 ## Jak číst tento graf?
 
-* Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
-* Roční objem emisí České republiky je 129,39 mil. tun CO<sub>2</sub>eq (údaj z roku 2018). __V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele.__
-* V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential)
+Všechny hodnoty v grafu jsou <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> skleníkových plynů CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential)
+
+Roční objem emisí České republiky je 129,39 mil. tun CO<sub>2</sub>eq (údaj z roku 2018). __V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele.__
 
 ## Co znamenají jednotlivé sektory?
 
@@ -27,7 +27,7 @@ dataset:    "emise-cr"
 * __Odpadové hospodářství:__ 5,7 mil. tun CO<sub>2</sub>eq ročně (4,4 % celkových emisí, 540 kg CO<sub>2</sub>eq na obyvatele ročně). Emise z odpadového hospodářství produkují především skládky odpadu, ze kterých do atmosféry uniká metan, který vzniká rozkladem biologicky rozložitelného materiálu v tělese skládky. Řešením je zákaz skládkování využitelných odpadů po vzoru většiny zemí EU a využití biologicky rozložitelných odpadů k produkci biometanu pro užití namísto zemního plynu například v dopravě.
 * __Zemědělství:__ 8,61 mil. tun CO<sub>2</sub>eq (6,7 % celkových emisí, 810 kg CO<sub>2</sub>eq na obyvatele ročně). Emise v zemědělství pochází především z chovu hospodářských zvířat (4,1 mil. tun) v podobě emisí metanu a také z obdělávání půdy a s tím spojenými emisemi N<sub>2</sub>O (4,23 mil. tun CO<sub>2</sub>eq). K omezení emisí metanu ze zemědělství by pomohlo snížení počtu chovaného dobytka (a s tím související snížení spotřeby hovězího masa a mléčných výrobků), správné nakládání se statkovými hnojivy (například jejich stabilizací v bioplynových stanicích) a méně intenzivní hnojení průmyslovými hnojivy.
 
-Pro srovnávání emisí [napříč státy EU](/infografiky/emise-vybrane-staty) vynecháváme kategorii lesnictví a využití půdy (která bývá označována _LULUCF_ podle anglického _Land use, land use change, forestry_). Díky ukládání uhlíku v zeleni má totiž tato kategorie ve většině států EU záporné emise, což komplikuje vizualizaci. V Česku jsou ovšem v posledních několika letech kladné kvůli výrazné těžbě dřeva při kůrovcové kalamitě. Za rok 2018 to bylo 5,8 Mt CO2eq navíc k údajům výše.
+Pro snadnější možnost srovnávání emisí [napříč státy EU](/infografiky/emise-vybrane-staty) vynecháváme kategorii lesnictví a využití půdy (která bývá označována _LULUCF_ podle anglického _Land use, land use change, forestry_). Díky ukládání uhlíku v zeleni má totiž tato kategorie ve většině států EU záporné emise, což komplikuje vizualizaci. Sektor LULUCF se také často ze srovnávání [vynechává](https://climateactiontracker.org/methodology/indc-ratings-and-lulucf/), protože obsahuje vysokou nejistotu v datech, protože záporné hodnoty mohou zakrývat _strukturální_ emise z energetiky, průmyslu a zemědělství a protože tento sektor je náchylnější na výkyvy v čase. Právě v Česku jsme v posledních letech svědky výrazného výkyvu kvůli masivní těžbě dřeva při kůrovcové kalamitě. Za rok 2018 byly podle odhadů emise v tomto sektoru _kladné_ ve výši 5,8 Mt CO2eq.
 
 ## Poznámky k datům o emisích
 
