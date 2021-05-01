@@ -2,11 +2,11 @@
 layout:      explainer
 title:       "Jak moc se oteplí, když se zvýší koncentrace CO₂?"
 slug:        "souvislost-koncentrace-oteplovani"
-published:   2021-04-25
+published:   2021-05-01
 author:      "Ondráš Přibyla"
 weight:      74
 tags-scopes: [ svet ]
-tags-topics: [ emise ]
+tags-topics: [ klima ]
 cover-source-author: "Allan Nygren"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
