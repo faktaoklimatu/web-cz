@@ -6,7 +6,7 @@ published:   2021-04-03
 author:      "Ondráš Přibyla, Fakta o klimatu"
 weight:      74
 tags-scopes: [ svet ]
-tags-topics: [ emise ]
+tags-topics: [ opatreni, emise ]
 cover-source-author: ""
 cover-source-license: ""
 cover-source-license-url: ""
@@ -16,9 +16,10 @@ perex:       "V poslední době se k cíli dosažení uhlíkové neutrality při
 1. Rozsah emisí, které slib pokrývá
 2. Způsob snížení emisí 
 3. Podrobnost průběžného plánu
+Chtelo by to zdůraznit, proč se po net zero vlastně uvažuje a že pokud máme udržet nárůst teplot do 1.5°C je potřeba dosáhnout net zero cca do 2050
 "
 ---
-## Co přesně znamenají pojmy uhlíková neutralita a net-zero? 
+## Co přesně znamenají pojmy net-zero a uhlíková neutralita? 
 
 Slovní spojení “**net-zero**” by se do češtiny dalo doslovně přeložit jako “čistá nula”. Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá.
 
@@ -54,7 +55,7 @@ V případě firem je zásadní rozdíl v tom, zda do emisí, na které se zamě
 
 {% include figure.html
     name="Scopes-of-Carbon-Emissions.jpg"
-    caption="Někteří koráli tvoří struktury podobné větvičkám, jiní vypadají jako kulovité houby. U všech ale najdeme symbiotickou řasu, která pro ně produkuje živiny."
+    caption="Scope 1 2 a 3 vysvětlení."
     alt="Zooxanthella uvnitř buněk korálů"
     source-text="Todd LaJeunesse, Pennsylvania State University."
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
@@ -64,6 +65,13 @@ Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé b
 
 
 ## Způsob snižování emisí
+
+
+{% include preview-box.html
+    title="Finanční nástroje pro snižování emisí"
+    text="Vlády jednotlivých států se mohou snažit o snížení emisí přímými regulacemi a zákazy, nebo různými formami zpoplatnění emisí. "
+    slug="mitigacni-opatreni-mmf"
+%}
 
 Těžištěm plánů na dosažení uhlíkové/klimatické neutrality je ve většině případů **přímé snížení emisí CO<sub>2</sub>** a dalších skleníkových plynů, například nahrazením uhelných elektráren obnovitelnými zdroji, zateplování budov nebo alternativní pohony aut. Dekarbonizovat některé průmyslové procesy (např. výrobu cementu) nebo třeba leteckou dopravu je zatím technologicky obtížné a drahé a tedy některých emisí se daná firma nebo stát nezbaví. Plány na dosažení uhlíkové neutrality proto počítají buď se **zachycováním uhlíku**, nebo s takzvanými **uhlíkovými kompenzacemi** (carbon offsets), kterými “vynulují” své zbývající emise. 
 
@@ -80,7 +88,15 @@ Většina dosavadních závazků se týká data dosažení uhlíkové neutrality
 
 Představme si situaci, kdy kuřák, který denně vykouří krabičku cigaret, slíbí, že do deseti let přestane s kouřením. Je jasné, že pokud dalších deset let zůstane u jedné krabičky denně, bude to na jeho zdraví mít výrazně vyšší dopad, než když během dvou let sníží spotřebu na tři cigarety denně a těch se pak postupně zbaví také. Dalo by se říct, že dobrým měřítkem dopadu na zdraví bude celkový počet vykouřených cigaret, spíše než datum, kdy byla vykouřena ta poslední. Tedy kuřák by mohl svůj závazek formulovat jako celkový počet cigaret, které si dovolí vykouřit. Tato metafora dobře odpovídá i snahám o snižování emisí - jde koneckonců o ukončení závislosti na fosilních palivech.  
 
-Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je **uhlíkový rozpočet**. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO<sub>2</sub> - tolik emisí CO<sub>2</sub> mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu. Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterému se budeme zabývat v samostatném explaineru.
+{% include preview-box.html
+    title="Emisní scénáře pro naplnění Pařížské dohody"
+    text="Udržet nárůst teploty v mezích, které nezpůsobí rozsáhlou destrukci životního prostředí, vyžaduje radikální snížení emisí. Scénáře, které vedou k nárůstu globální teploty do 1,5 °C oproti předindustriálnímu období, počítají se snížením emisí CO2 na polovinu do roku 2030 a dosažením uhlíkové neutrality do roku 2050. Kdybychom se spokojili s omezením oteplení na 2 °C, znamená to snížit emise o čtvrtinu do roku 2030 a uhlíkové neutrality dosáhnout kolem roku 2070."
+    slug="emisni-scenare-pariz"
+%}
+
+
+
+Analogií celkového počtu cigaret, které si kuřák dovoluje vykouřit, je **uhlíkový rozpočet**. Pro udržení oteplení pod 2 °C zbýval v roce 2018 uhlíkový rozpočet přibližně 900 miliard tun CO<sub>2</sub> - tolik emisí CO<sub>2</sub> mohlo lidstvo vypustit, aby udrželo oteplování dostatečně pod 2 °C a dodrželo tak Pařížskou dohodu (FIXME doplnit slovníkové heslo v souboru glossary.yml). Z hlediska klimatu přitom není podstatný rozdíl mezi dosažením net-zero v roce 2040 nebo 2060, pokud celkově vyprodukované emise při tom budou stejné. Pokud by země přistoupily k závazkům ve formě uhlíkových rozpočtů pro danou zemi, otevřelo by se další zásadní téma: férovost alokovaných uhlíkových rozpočtů, kterému se budeme zabývat v samostatném explaineru.
 
 ## Závěrečný odstavec
 
