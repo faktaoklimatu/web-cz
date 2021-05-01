@@ -11,11 +11,14 @@ caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<s
 dataset:    "emise-cr"
 ---
 
-## Jak číst tento graf a co znamenají jednotlivé sektory?
+## Jak číst tento graf?
 
 * Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 * Roční objem emisí České republiky je 129,39 mil. tun CO<sub>2</sub>eq (údaj z roku 2018). __V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele.__
 * V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential)
+
+## Co znamenají jednotlivé sektory?
+
 * __Energetika:__ 51,07 milionů tun CO<sub>2</sub> (39,5 % celkových emisí, 4&thinsp;810 kg CO<sub>2</sub>eq na obyvatele ročně). Emise v energetice pochází především ze spalování hnědého uhlí v elektrárnách, z výroby tepla a výroby paliv. Emise skleníkových plynů pocházející z energetiky je možné snížit energetickými úsporami a rozvojem obnovitelných a nízkouhlíkových zdrojů energie.
 * __Doprava:__ 20,3 mil. tun CO<sub>2</sub> (15,7 % celkových emisí, 1&thinsp;910 kg CO<sub>2</sub>eq na obyvatele ročně). Emise pocházejí hlavně z osobní a nákladní automobilové dopravy. Vlaková doprava je v grafu započtena, ale její příspěvek je příliš malý na to, aby se zobrazil. Příspěvek letecké dopravy odpovídá emisím vyprodukovaným z letů z letišť v ČR. Je tedy pravděpodobně podhodnocený (mnoho Čechů létá z Vídně či Bratislavy) a neodpovídá zcela množství emisí, které Češi způsobí (typicky např. let českého člověka do New Yorku s přestupem v Amsterdamu se započítá do zobrazených emisí jen jako Praha–Amsterdam, zatímco emise z letu Amsterdam–New York se započtou Nizozemí). Není také započítáno, že emise vypuštěné vysoko v atmosféře mají přibližně dvojnásobný efekt. Snížit emise z dopravy je možné přechodem na nízkouhlíková paliva (např. na elektřinu, biometan nebo vodík), zvýšením podílu vlakové a autobusové dopravy a snížením nutnosti přepravy jako takové (což může znamenat třeba bydlet blíže práci).
 * __Průmyslové procesy:__ 16,26 mil. tun CO<sub>2</sub> (12,6 % celkových emisí, 1&thinsp;530 kg CO<sub>2</sub>eq na obyvatele ročně). Emise z průmyslových procesů, při kterých dochází k uvolňování skleníkových plynů do atmosféry jinak než spalováním fosilních paliv – patří sem například výroba cementu, výroba železa a oceli apod.
