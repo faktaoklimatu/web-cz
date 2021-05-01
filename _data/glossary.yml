@@ -33,6 +33,12 @@
   name-long: "CO<sub>2</sub> ekvivalent"
   description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) – konkrétně je to množství příslušného plynu × [GWP koeficient](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Např. pro metan je to hodnota cca 28 [[IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf) (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\". Zjednodušeně řečeno, metan je 28krát silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
+
+- id: parizskadohoda
+  name-short: "Pařížská dohoda"
+  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. 
+"
+
 - id: externalita
   name-short: "Externalita"
   description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
