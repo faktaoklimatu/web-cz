@@ -38,26 +38,29 @@
   img: "jirka-lnenicka.jpg"
   linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
 
-- name: "Petr Holík"
-  position: "Producent"
-  summary: "Starám se o produkci podcastu 2050, ve kterém zkoumáme cesty k takové budoucnosti, ve které nám nepoteče do bot."
-  img: "petr-holik.jpg"
-  linkedin: "https://www.linkedin.com/in/petrholik/"
+# - name: "Petr Holík"
+#   position: "Producent"
+# TODO: Obalit 2050 linkem na microsite.
+#   summary: "Starám se o produkci podcastu 2050, ve kterém zkoumáme cesty k takové budoucnosti, ve které nám nepoteče do bot."
+#   img: "petr-holik.jpg"
+#   linkedin: "https://www.linkedin.com/in/petrholik/"
 
 - name: "Jan Krajhanzl"
-  position: "Sociální psycholog FSS MU, externí konzultant"
-  summary: "Ve své vědecké práci zkoumám, jak se mění vztah české veřejnosti k otázkám životního prostředí a klimatu, a jakou mají tyto změny psychologickou dimenzi."
+  position: "Externí konzultant pro komunikaci"
+  summary: "S mým týmem na Katedře environmentálních studií FSS MU se zabýváme tím, jak lidé prožívají změnu klimatu, co ovlivňuje veřejné mínění v této oblasti, a jak komunikovat toto náročné téma s veřejností."
   img: "honza-krajhanzl.jpg"
 
 - name: "Matěj Grabovský"
-  position: "Dobrovolník"
+  position: "Analytik, programátor"
   summary: "Baví mě přehrabovat se v datech a zpracovávat analýzy. Mimo to programuji web a zbavuji naše texty překlepů."
   img: "matej-grabovsky.jpg"
+  email: "matej.grabovsky@faktaoklimatu.cz"
 
 - name: "Kateřina Kolouchová"
-  position: "Dobrovolnice"
+  position: "Vizualizační a datová analytička"
   summary: "Věnuji se vizualizaci dat a tvorbě infografik."
   img: "katka-kolouchova.jpg"
+  email: "katerina.kolouchova@faktaoklimatu.cz"
 
 - name: "Martin Křivánek"
   position: "Dobrovolník"
