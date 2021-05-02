@@ -20,17 +20,17 @@ Podíváme se v něm podrobněji na to:
 - jakými způsoby lze tyto emise snižovat 
 - proč je důležité vypracovat podrobný průběžný plán (tj. nestačí jen obecně formulovaný závazek)
 
-## Co označují pojmy net-zero a uhlíková neutralita? 
+## Co znamenají pojmy net-zero a uhlíková neutralita? 
 
-Slovní spojení “**net-zero**” by se do češtiny dalo doslovně přeložit jako “čistá nula”. Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá.
+Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako "čistá nula". Označuje stav, kdy stát či firma odstraňuje z atmosféry stejné množství skleníkových plynů, jako do ovzduší vypouští. Jinak řečeno: daný stát nebo firma svou činností žádné skleníkové plyny nepřidává ani neubírá, tedy říkáme, že jsou **uhlíkově neutrální** (tak se do češtiny "net-zero carbon" obvykle překládá).
 
 {% include preview-box.html
     class="highlight-text-box"
-    text=" Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého [^1], druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. 
+    text=" Striktně vzato jsou slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označením dvou různých stavů: první se týká pouze oxidu uhličitého [^1], druhý všech skleníkových plynů. V praxi však lidé tyto termíny často zaměňují, a nelze se tedy spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. 
 "
 %}
 
-Závazek klimatické nebo uhlíkové neutrality má u různých států různý charakter. V některých případech, jako například Velká Británie, se stal součástí legislativy [^2] a podrobně se rozpracovávají plány na snižování emisí. Jinde jde zatím o veřejné vyslovení ambice daného státu, které se do zákonů ani do podoby podrobného plánu ještě nedostalo. V takových případech pak nemůžeme odpovědět na otázky, které píšeme níže. O to důležitější pak tyto otázky jsou, aby slib nezůstal jen vágním prohlášením.  
+Závazek klimatické nebo uhlíkové neutrality má u různých států různý charakter. V některých případech, například ve Velké Británii, se stal součástí legislativy [^2] a tato země nyní podrobně rozpracovává své plány na snižování emisí. Jinde jde zatím spíše o veřejné deklarování ambice daného státu, které se do zákonů ani do fáze přípravy podrobného plánu ještě nedostalo. O to důležitější je potom položit si otázky popisované níže – aby nezůstalo jen u slibů a vágních prohlášení.  
 
 ## Rozsah: kterých plynů se slib týká?
 
