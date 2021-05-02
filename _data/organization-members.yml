@@ -6,27 +6,27 @@
   linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
 
 - name: "Jeňa Krčál"
-  position: "Člen správní rady"
+  position: "Analytik, člen správní rady"
   summary: "Zpracovávám analýzy a podkladová data, obzvláště v oblasti energetiky a emisí."
   img: "jena-krcal.jpg"
   email: "jan.krcal@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/jan-krcal/"
 
 - name: "Tom Protivínský"
-  position: "Člen správní rady"
+  position: "Analytik, člen správní rady"
   summary: "Věnuji se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn."
   img: "tomas-protivinsky.jpg"
   email: "tomas.protivinsky@faktaoklimatu.cz"
 
 - name: "Martin Ukrop"
-  position: "Člen správní rady"
+  position: "Programátor, člen správní rady"
   summary: "Starám se o web i všechny ostatní technologie. Snažím se udržet naši komunikaci konzistentní a spolehlivou."
   img: "martin-ukrop.jpg"
   email: "martin.ukrop@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/mukrop/"
 
 - name: "Kristína Zákopčanová"
-  position: "Členka správní rady"
+  position: "Vizualizační guru, členka správní rady"
   summary: "Zabývám se vizuální komunikací dat, zpracováním jednotlivých grafik a grafických výstupů."
   img: "kristi-zakopcanova.jpg"
   email: "kristi.zakopcanova@faktaoklimatu.cz"
@@ -45,7 +45,7 @@
   linkedin: "https://www.linkedin.com/in/petrholik/"
 
 - name: "Jan Krajhanzl"
-  position: "Externí konzultant (Sociolog FSS MU)"
+  position: "Sociální psycholog FSS MU, externí konzultant"
   summary: "Ve své vědecké práci zkoumám, jak se mění vztah české veřejnosti k otázkám životního prostředí a klimatu, a jakou mají tyto změny psychologickou dimenzi."
   img: "honza-krajhanzl.jpg"
 
