@@ -12,14 +12,15 @@ cover-source-license: ""
 cover-source-license-url: ""
 cover-source-text: ""
 cover-source-url: "https://pixabay.com/photos/windmills-clouds-fog-wind-power-1048981/"
-perex:       "V poslední době se k cíli dosažení uhlíkové neutrality přihlásila řada zemí - například EU, Čína, Japonsko, Korea a naposledy, 22. dubna 2021 také USA. I mnoho velkých nadnárodních firem, jako třeba Microsoft, IKEA, nebo Mercedes-Benz veřejně deklarovaly záměr dosáhnout “net-zero”, tedy v součtu nulových emisí skleníkových plynů. V tomto textu se podíváme, co tyto sliby a plány znamenají, a ukážeme si tři zásadní dimenze, ve kterých se mohou sliby “net-zero” lišit: 
-1. Rozsah emisí, které slib pokrývá
-2. Způsob snížení emisí 
-3. Podrobnost průběžného plánu
-Chtelo by to zdůraznit, proč se po net zero vlastně uvažuje a že pokud máme udržet nárůst teplot do 1.5°C je potřeba dosáhnout net zero cca do 2050
-"
+perex:       "O tzv. uhlíkové neutralitě či net-zero lze v poslední době slyšet často – z úst představitelů řady zemí i nadnárodních firem. Obvykle se mluví o roce 2050, do něhož je třeba uhlíkové neutrality dosáhnout, máme-li udržet nárůst globální teploty pod hranicí 1,5 °C. Co přesně tento závazek dosáhnout v součtu nulových emisí skleníkových plynů znamená a v čem může být chápán rozdílně, vysvětluje následující text." 
+
 ---
-## Co přesně znamenají pojmy net-zero a uhlíková neutralita? 
+Podíváme se v něm podrobněji na to:
+- kterých plynů a emisí se slib net-zero týká
+- jakými způsoby lze tyto emise snižovat 
+- proč je důležité vypracovat podrobný průběžný plán (tj. nestačí jen obecně formulovaný závazek)
+
+## Co označují pojmy net-zero a uhlíková neutralita? 
 
 Slovní spojení “**net-zero**” by se do češtiny dalo doslovně přeložit jako “čistá nula”. Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá.
 
