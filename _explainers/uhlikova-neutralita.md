@@ -22,7 +22,7 @@ Podíváme se v něm podrobněji na to:
 
 ## Co znamenají pojmy net-zero a uhlíková neutralita? 
 
-Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako "čistá nula". Označuje stav, kdy stát či firma odstraňuje z atmosféry stejné množství skleníkových plynů, jako do ovzduší vypouští. Jinak řečeno: daný stát nebo firma svou činností žádné skleníkové plyny nepřidává ani neubírá, tedy říkáme, že jsou **uhlíkově neutrální** (tak se do češtiny "net-zero carbon" obvykle překládá).
+Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako "čistá nula". Označuje stav, kdy stát či firma odstraňuje z atmosféry stejné množství skleníkových plynů, jako do ovzduší vypouští. Jinak řečeno: daný stát nebo firma svou činností žádné skleníkové plyny nepřidává ani neubírá, tedy říkáme, že je **uhlíkově neutrální** (tak se do češtiny "net-zero carbon" obvykle překládá).
 
 {% include preview-box.html
     class="highlight-text-box"
@@ -30,28 +30,28 @@ Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako
 "
 %}
 
-Závazek klimatické nebo uhlíkové neutrality má u různých států různý charakter. V některých případech, například ve Velké Británii, se stal součástí legislativy [^2] a tato země nyní podrobně rozpracovává své plány na snižování emisí. Jinde jde zatím spíše o veřejné deklarování ambice daného státu, které se do zákonů ani do fáze přípravy podrobného plánu ještě nedostalo. O to důležitější je potom položit si otázky popisované níže – aby nezůstalo jen u slibů a vágních prohlášení.  
+Závazek klimatické nebo uhlíkové neutrality má u různých států různý charakter. V některých případech, například ve Velké Británii, se stal součástí legislativy [^2] a tato země nyní podrobně rozpracovává své plány na snižování emisí. Jinde jde zatím spíše o veřejné deklarování ambice daného státu, které se do zákonů ani do fáze přípravy podrobného plánu ještě nedostalo. O to důležitější je položit si otázky popisované níže – aby nezůstalo jen u slibů a vágních prohlášení. 
 
-## Rozsah: kterých plynů se slib týká?
+## Kterých skleníkových plynů se slib týká?
 
-Oxid uhličitý je zodpovědný za 70 % současného oteplení [^3] a každý závazek dosažení “net-zero” počítá s dosažením nulových nebo záporných emisí CO<sub>2</sub>. Ale ne všechny závazky počítají s dalšími skleníkovými plyny: metanem, oxidem dusným, <glossary id="cfchfc">CFC a HFC</glossary>. 
+Oxid uhličitý zodpovídá za 70 % současného oteplení [^3] a každý závazek dosažení "net-zero" počítá s dosažením nulových nebo záporných emisí CO<sub>2</sub>. Ne všechny závazky však počítají také s dalšími skleníkovými plyny: metanem, oxidem dusným, <glossary id="cfchfc">CFC a HFC</glossary>. 
 
-Například Evropská unie a Velká Británie počítají ve svých plánech klimatické neutrality se všemi skleníkovými plyny. Naproti tomu závazek Nového Zélandu, který si klimatické cíle odhlasoval v roce 2019, takže jsou součástí legislativy, se týká pouze emisí CO<sub>2</sub>. Přitom třetinu emisí skleníkových plynů Nového Zélandu dělá metan z živočišné produkce a zatím není jasné, jak se novozélanďané postaví k jeho produkci.
+Zatímco například Evropská unie a Velká Británie počítají ve svých plánech klimatické neutrality se všemi skleníkovými plyny, Nový Zéland, mající klimatické cíle od roku 2019 ve své legislativě, se zavázal k net-zero pouze u CO<sub>2</sub>. Celou třetinu emisí skleníkových plynů Nového Zélandu přitom tvoří metan z živočišné produkce a zatím není jasné, jak se Novozélanďané k jeho produkci postaví.
 
-Otázku kterých skleníkových plynů se cíl týká je dobré si pokládat také u firem. 
+Otázku, kterých skleníkových plynů se cíl týká, je dobré si pokládat také u firem. 
 
 
-## Rozsah: které emise se do závazku započítávají? 
+## Které emise se do závazku započítávají? 
 
-Když se ke klimatické/uhlíkové neutralitě zaváže stát, je na místě ptát se, zda chtějí započítávat pouze emise, které vznikají na území státu, tzv. **teritoriální emise** nebo všechny emise vyplývající ze spotřeby v daném státu, tedy včetně emisí vzniklých při výrobě dovezených výrobků, tzv. **emise ze spotřeby**. V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý - jen asi 4%, ale u některých zemí jsou emise ze spotřeby výrazně větší (Velká Británie asi o 36%, Švýcarsko o 209%) nebo také menší (Jižní Afrika -29%, Čína -13%) než teritoriální emise [^4]. 
+Když se ke klimatické/uhlíkové neutralitě zaváže stát, je třeba si položit otázku, zda se slib týká pouze emisí vznikajících na území tohoto státu (tzv. **teritoriálních emisí**), nebo veškerých emisí vyplývajících ze spotřeby v daném státě, tedy také emisí vzniklých při výrobě dovezených výrobků (tzv. **emisí ze spotřeby**). V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý – jen asi 4%. U některých zemí však mohou být emise ze spotřeby výrazně vyšší (Velká Británie asi o 36 %, Švýcarsko o 209 %) nebo také nižší (Jižní Afrika o 29 %, Čína o 13 %) než teritoriální emise [^4]. 
 
-V závazcích jednotlivých států jsme zatím jasný cíl dosáhnout neutrality emisí ze spotřeby nenašli, nicméně například EU uvažuje o uhlíkovém clu, tedy dodatečném zpoplatnění dováženého zboží, které zohlední emisní náročnost jeho výroby. Podniky, které vyrábějí mimo EU by nebyly zvýhodněny tím, že neplatí za emise, které vyprodukují. 
+V závazcích jednotlivých států jsme zatím jasný cíl dosáhnout neutrality emisí ze spotřeby nenašli, nicméně například EU uvažuje o tzv. uhlíkovém clu, tedy dodatečném zpoplatnění dováženého zboží, které zohlední emisní náročnost jeho výroby. Podniky vyrábějící mimo EU by tak nebyly zvýhodněny tím, že neplatí za emise, které vyprodukují. 
 
-Jiná otázka ohledně ohledně závazků zní: **jak jsou v cíli zohledněny emise z letecké a lodní dopravy?** Emise z mezinárodní dopravy totiž není možné jednoznačně přiřadit ke konkrétnímu státu, a proto se vede jejich účetnictví zvlášť. Některé země ve svých závazcích svůj podíl na mezinárodní letecké a lodní dopravě zohledňují. 
+Jiná otázka ohledně závazku net-zero zní: **jak jsou zohledněny emise z letecké a lodní dopravy?** Emise z mezinárodní dopravy totiž není možné jednoznačně přiřadit ke konkrétnímu státu, a proto se vede jejich účetnictví zvlášť. Některé země ve svých závazcích svůj podíl na mezinárodní letecké a lodní dopravě zohledňují, jiné nikoli. 
 
-V případě Česka je nyní aktuální otázka **jak započítávat emise z lesů** - jde o to, že dříve české lesy pohlcovaly okolo 7 miliónů tun CO<sub>2</sub> ročně, nyní se ale kvůli kůrovcové kalamitě staly zdrojem a emitují přibližně 5 miliónů CO<sub>2</sub>. 
+V případě Česka je nyní aktuální také otázka **jak započítávat emise z lesů**: zatímco dříve české lesy pohlcovaly okolo 7 miliónů tun CO<sub>2</sub> ročně, nyní se kvůli kůrovcové kalamitě samy staly zdrojem a emitují přibližně 5 miliónů tun CO<sub>2</sub>. 
 
-V případě firem je zásadní rozdíl v tom, zda do emisí, na které se zaměřují, započítávají pouze provoz firmy (tedy například elektřinu a vytápění v kancelářích) nebo celý dodavatelský řetězec. Konkrétně například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků, přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry emise vytvořené za celou dobu existence firmy [^6], tedy od roku 1975.  Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, si dala do roku 2050 za cíl pouze dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
+I u firem mohou být zásadní rozdíly v tom, na jaké emise se zaměřují – zda započítávají pouze provoz firmy (elektřinu, vytápění v kancelářích apod.), nebo celý dodavatelský řetězec. Například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry emise veškeré vyprodukované za celou dobu existence firmy [^6], tedy od roku 1975. Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, se do roku 2050 zavázala pouze k dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli už z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
 
 
 {% include figure.html
@@ -62,7 +62,7 @@ V případě firem je zásadní rozdíl v tom, zda do emisí, na které se zamě
     source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
 %}
 
-Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, kterým půjčují peníze a řeší “klimatické” parametry investičních portfolií. Také vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise spojené s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další dopady, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, nebo sociální dopady na společnost.
+Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, jimž půjčují peníze, a řeší "klimatické" parametry investičních portfolií. Vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise související s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další dopady, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, a negativní vlivy na lidskou společnost.
 
 
 ## Způsob snižování emisí
