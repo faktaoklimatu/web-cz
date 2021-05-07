@@ -1,9 +1,15 @@
 - name: "Ondráš Přibyla"
-  position: "Ředitel"
+  position: "Zakladatel a ředitel"
   summary: "Řeším hlavně strategii, rád se dostanu k analytické práci a neúspěšně se snažím vyhýbat administrativě."
   img: "ondras-pribyla.jpg"
   email: "ondras.pribyla@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
+
+- name: "Anna Macková"
+  position: "Back-office manager"
+  summary: "Starám se o praktičtější stránky chodu organizace, účetnictví, administrativa, dárcovství. Mám ráda systém a tabulky a ráda vytvářím prostor pro tu důležitou práci ostatním."
+  img: "anna-mackova.jpg"
+  email: "anna.mackova@faktaoklimatu.cz"
 
 - name: "Jeňa Krčál"
   position: "Analytik, člen správní rady"
