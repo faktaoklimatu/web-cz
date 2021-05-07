@@ -57,9 +57,9 @@ I u firem mohou být zásadní rozdíly v tom, na jaké emise se zaměřují –
 {% include figure.html
     name="Scopes-of-Carbon-Emissions.jpg"
     caption="Scope 1 2 a 3 vysvětlení."
-    alt="Zooxanthella uvnitř buněk korálů"
-    source-text="Todd LaJeunesse, Pennsylvania State University."
-    source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
+    alt=""
+    source-text=""
+    source-url="https://www.visualcapitalist.com/decarbonization-101-what-carbon-emissions-are-part-of-your-footprint/"
 %}
 
 Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, jimž půjčují peníze, a řeší "klimatické" parametry investičních portfolií. Vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise související s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další důsledky, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, a negativní dopady na lidskou společnost.
@@ -106,10 +106,11 @@ V průběhu roku 2020 se k cíli dosažení uhlíkové neutrality do roku 2050 p
 {% include figure.html
     name="CAT-NetZeroTargets.png"
     caption="K cíli uhlíkové neutrality se přihlásily státy, které v dnešní době produkují tři čtvrtiny světových emisí."
-    alt="Zooxanthella uvnitř buněk korálů"
-    source-text="Todd LaJeunesse, Pennsylvania State University."
-    source-url="https://www.flickr.com/photos/tags/linkflickrset72157631573740050"
+    alt=""
+    source-text=""
+    source-url="https://climateactiontracker.org/about/privacypolicy_legal/"
 %}
+
 
 ## Zdroje a poznámky
 
