@@ -44,3 +44,4 @@ data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/m
 * Marcott, S., Shakun, J.,  & Clark, P., Mix, A. _A Reconstruction of Regional and Global Temperature for the Past 11,300 Years._ Science 339, 1198-201, (2013) [DOI 10.1126/science.1228026](https://doi.org/10.1126/science.1228026).
 * GISTEMP Team, _2020: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2021-02-20 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
 * Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy a D. Zyss, _2019: Improvements in the GISTEMP uncertainty model._ Journal of Geophysical Research: Atmospheres, 124, č. 12, str. 6307–6326, [DOI 10.1029/2018JD029522](http://dx.doi.org/10.1029/2018JD029522).
+* Kaufman, D., McKay, N., Routson, C. et al. [A global database of Holocene paleotemperature records](https://doi.org/10.1038/s41597-020-0445-3) Sci Data 7, 115 (2020). 
