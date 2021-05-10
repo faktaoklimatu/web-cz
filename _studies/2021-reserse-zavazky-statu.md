@@ -1,15 +1,16 @@
 ---
 layout:      survey
-title:       "Rešerše: Závazky států k omezení emisí skleníkových plynů"
+title:       "Rešerše: Emisní závazky států"
 slug:        2021-reserse-zavazky-statu
 redirect_from: "/2020-reserse-zavazky-statu"
 weight:      300
 published:   2021-05-05
 tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
-caption:     "TODO: Rešerše klíčových studií věnujících se budoucí transformaci české energetiky z posledních let."
+caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích skleníkových plynů a jejich oficiální závazky k omezení emisí."
 intro: |
-  TODO: v závorkách jsou neratifikované, status quo = BAU, celkově 73,4 %, všechny země nad 1%; Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
+  EU a 191 dalších signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Některé země nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovaly i dlouhodobější závazky – nejčastěji tzv. net-zero emise v roce 2050. Indonésie a Austrálie svůj dlouhodobý cíl zatím zvažují.<br/>
+  Rešerše zahrnuje EU a všechny ostatní země s podílem na světových emisích nad 1 % v roce 2016. V odkazech naleznete kromě národních závazků (Nationally Determined Contributions = NDC) i národní profily na webu Climate Action Tracker (CAT) a další zdroje informací.
 items:
   - country:  "Čína"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
@@ -17,42 +18,38 @@ items:
     netzero:  "2060"
     pledge30: "−60 % až −65 % emisí na jednotku HDP oproti r. 2005, zastropovat roční produkci CO<sub>2</sub> na 10,3 Gt"
     scopeC:   1
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CHN"
     links:
-      - title:  Nature
-        url:    "https://www.nature.com/articles/d41586-020-02927-9"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/china"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CHN"
+      - title:  Nature
+        url:    "https://www.nature.com/articles/d41586-020-02927-9"
   - country:  "USA"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
     share:    "11,81 %"
     netzero:  "2050"
     pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=USA"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/usa"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=USA"
   - country:  "Indie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
     share:    "6,56 %"
     netzero:  "—"
     pledge30: "−33 % emisí na jednotku HDP oproti r. 2005"
     other:    "Nikdy nepřekročit průměr emisí na osobu vyspělých zemí"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IND"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/india"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IND"
   - country:  "EU&nbsp;(27&nbsp;členů)"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
     share:    "6,40 %"
     netzero:  "2050"
     pledge30: "−55 % ročních emisí oproti r. 1990 (vrchol produkce)"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=EUU"
     links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=EUU"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/eu"
   - country:  "Ruská&nbsp;federace"
@@ -60,49 +57,45 @@ items:
     share:    "4,84 %"
     netzero:  "—"
     pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/russian-federation"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
   - country:  "Indonésie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
     share:    "4,52 %"
     netzero:  "(2070)"
     pledge30: "−29 % ročních emisí oproti status quo, konec nelegální těžby dřeva"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/indonesia"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
   - country:  "Brazílie"
     flag:     "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
     share:    "2,80 %"
     netzero:  "2060"
     pledge30: "−43 % ročních emisí oproti r. 2005 (vrchol produkce)"
     other:    "podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=BRA"
     links:
-      - title:  Sky News
-        url:    "https://news.sky.com/story/brazil-wants-billions-of-dollars-in-foreign-aid-to-hit-net-zero-emissions-goal-12277893"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=BRA"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/brazil"
+      - title:  Sky News
+        url:    "https://news.sky.com/story/brazil-wants-billions-of-dollars-in-foreign-aid-to-hit-net-zero-emissions-goal-12277893"
   - country:  "Japonsko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
     share:    "2,55 %"
     netzero:  "2050"
     pledge30: "−26 % ročních emisí oproti r. 2013 (vrchol produkce)"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=JPN"
     links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=JPN"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/japan"
   - country:  "Irán"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
     share:    "1,76 %"
     netzero:  "—"
-    pledge30: "(−4 % ročních emisí oproti status quo)"
+    pledge30: "neratifikováno; −4 % ročních emisí oproti status quo"
     links:
       - title:  INDC
         url:    "https://www4.unfccc.int/sites/submissions/INDC/Published Documents/Iran/1/INDC Iran Final Text.pdf"
@@ -113,22 +106,20 @@ items:
     share:    "1,58 %"
     netzero:  "2050"
     pledge30: "−30 % ročních emisí oproti r. 2005"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CAN"
     links:
-      - title:  CICC
-        url:    "https://climatechoices.ca/reports/canadas-net-zero-future"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CAN"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/canada"
+      - title:  CICC
+        url:    "https://climatechoices.ca/reports/canadas-net-zero-future"
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     share:    "1,39 %"
     netzero:  "—"
     pledge30: "−22 % ročních emisí oproti status quo"
     other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
     links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/mexico"
   - country:  "Saudská Arábie"
@@ -136,19 +127,17 @@ items:
     share:    "1,34 %"
     netzero:  "—"
     pledge30: "−130 MtCO<sub>2</sub>eq oproti status quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/saudi-arabia"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
   - country:  "Jižní Korea"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
     share:    "1,33 %"
     netzero:  "2050"
     pledge30: "−24,4 % ročních emisí oproti r. 2017"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=KOR"
     links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=KOR"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/south-korea"
   - country:  "Austrálie"
@@ -156,9 +145,8 @@ items:
     share:    "1,05 %"
     netzero:  "(2050)"
     pledge30: "−26 % až −28 % ročních emisí oproti r. 2005"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=AUS"
     links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=AUS"
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/australia"
   - country:  "Jihoafrická&nbsp;rep."
@@ -167,19 +155,16 @@ items:
     netzero:  "—"
     pledge30: "+18 % až −24 % ročních emisí oproti r. 2014"
     other:    "−18 % až −59 % ročních emisí v r. 2050 oproti r. 2014"
-    links:
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
+    links: 
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/south-africa"
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
   - country:  "Zambie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"
     share:    "1,00 %"
     netzero:  "—"
     pledge30: "−25 % ročních emisí oproti r. 2010 při současné míře mezinárodní podpory"
-    links:
-      - title:  NDC
-        url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZMB"
+    ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZMB"
   - country:  "ostatní&nbsp;země"
     share:    "26,60 %"
 ---
@@ -196,8 +181,9 @@ items:
       {%- if item.pledge30 %}<p class="card-text text-muted">Závazek do roku 2030: {{ item.pledge30 }}</p>{% endif %}
       {%- if item.other %}<p class="card-text text-muted">Ostatní závazky: {{ item.other }}</p>{% endif %}
       <div class="d-flex flex-column flex-sm-row justify-content-end">
+        {%- if item.ndc %}<a href="{{ item.ndc }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
         {% for link in item.links -%}
-        <a href="{{ link.url }}" class="btn btn-sm">{{ link.title }}</a>
+        <a href="{{ link.url }}" class="btn btn-sm btn-secondary">{{ link.title }}</a>
         {% endfor %}
       </div>
     </div>
@@ -238,8 +224,9 @@ items:
 {% endcomment -%}
       <td class="align-middle">{% if item.other %}{{ item.other }}{% else %}—{% endif %}</td>
       <td class="align-middle">
+        {%- if item.ndc %}<a href="{{ item.ndc }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
         {% for link in item.links -%}
-        <a href="{{ link.url }}" class="btn btn-sm">{{ link.title }}</a>
+        <a href="{{ link.url }}" class="btn btn-sm btn-secondary">{{ link.title }}</a>
         {% endfor %}
       </td>
     </tr>
