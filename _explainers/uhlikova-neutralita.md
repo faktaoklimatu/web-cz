@@ -22,28 +22,28 @@ Podíváme se v něm podrobněji na to:
 
 ## Co znamenají pojmy net-zero a uhlíková neutralita? 
 
-Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako "čistá nula". Označuje stav, kdy stát či firma odstraňuje z atmosféry stejné množství skleníkových plynů, jako do ovzduší vypouští. Jinak řečeno: daný stát nebo firma svou činností žádné skleníkové plyny nepřidává ani neubírá, tedy říkáme, že je **uhlíkově neutrální** [^1] (tak se do češtiny "net-zero carbon" obvykle překládá).
+Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako "čistá nula" a znamená, že stát či firma odstraňuje z atmosféry stejné množství skleníkových plynů, jako do ovzduší vypouští. Jinak řečeno: tento stát nebo firma svou činností žádné skleníkové plyny nepřidává ani neubírá, tedy říkáme, že je **uhlíkově neutrální** [^1] (tak se do češtiny "net-zero carbon" obvykle překládá).
 
 {% include preview-box.html
     class="highlight-text-box"
-    text=" Striktně vzato jsou slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označením dvou různých stavů: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi však lidé tyto termíny často zaměňují, a nelze se tedy spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. 
+    text=" Striktně vzato jsou slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označením dvou různých stavů: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi však lidé tyto termíny často zaměňují, a nelze se tedy spolehnout, že když někdo řekne "uhlíková neutralita", myslí tím pouze cíl týkající se oxidu uhličitého. 
 "
 %}
 
-Závazek klimatické nebo uhlíkové neutrality má u různých států různý charakter. V některých případech, například ve Velké Británii, se stal součástí legislativy [^2] a tato země nyní podrobně rozpracovává své plány na snižování emisí. Jinde jde zatím spíše o veřejné deklarování ambice daného státu, které se do zákonů ani do fáze přípravy podrobného plánu ještě nedostalo. O to důležitější je položit si otázky popisované níže – aby nezůstalo jen u slibů a vágních prohlášení. 
+Závazek klimatické nebo uhlíkové neutrality vnímají jednotlivé státy různě. V některých případech, například ve Velké Británii, se stal součástí legislativy [^2] a tato země nyní podrobně rozpracovává své plány na snižování emisí. Jinde jde zatím spíše o veřejné deklarování ambice daného státu, které se do zákonů ani do fáze přípravy podrobného plánu ještě nedostalo. O to důležitější je položit si otázky popisované níže – aby nezůstalo jen u slibů a vágních prohlášení. 
 
 ## Kterých skleníkových plynů se slib týká?
 
 Oxid uhličitý zodpovídá za 70 % současného oteplení [^3] a každý závazek dosažení "net-zero" počítá s dosažením nulových nebo záporných emisí CO<sub>2</sub>. Ne všechny závazky však počítají také s dalšími skleníkovými plyny: metanem, oxidem dusným, <glossary id="cfchfc">CFC a HFC</glossary>. 
 
-Zatímco například Evropská unie a Velká Británie počítají ve svých plánech klimatické neutrality se všemi skleníkovými plyny, Nový Zéland, mající klimatické cíle od roku 2019 ve své legislativě, se zavázal k net-zero pouze u CO<sub>2</sub>. Celou třetinu emisí skleníkových plynů Nového Zélandu přitom tvoří metan z živočišné produkce a zatím není jasné, jak se Novozélanďané k jeho produkci postaví.
+Zatímco například Evropská unie a Velká Británie zahrnují do svých plánů klimatické neutrality všechny skleníkové plyny, Nový Zéland, mající klimatické cíle od roku 2019 ve své legislativě, se zavázal k net-zero pouze u CO<sub>2</sub>. Celou třetinu emisí skleníkových plynů Nového Zélandu přitom tvoří metan z živočišné výroby a zatím není jasné, jak se Novozélanďané k jeho produkci postaví.
 
-Otázku, kterých skleníkových plynů se cíl týká, je dobré si pokládat také u firem. 
+Ptát se, kterých skleníkových plynů se cíl týká, je rozhodně na místě také u firem. 
 
 
 ## Které emise se do závazku započítávají? 
 
-Když se ke klimatické/uhlíkové neutralitě zaváže stát, je třeba si položit otázku, zda se slib týká pouze emisí vznikajících na území tohoto státu (tzv. **teritoriálních emisí**), nebo veškerých emisí vyplývajících ze spotřeby v daném státě, tedy také emisí vzniklých při výrobě dovezených výrobků (tzv. **emisí ze spotřeby**). V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý – jen asi 4%. U některých zemí však mohou být emise ze spotřeby výrazně vyšší (Velká Británie asi o 36 %, Švýcarsko o 209 %) nebo také nižší (Jižní Afrika o 29 %, Čína o 13 %) než teritoriální emise [^4]. 
+Když se ke klimatické/uhlíkové neutralitě zaváže stát, je třeba si položit otázku, zda se slib týká pouze emisí vznikajících na území tohoto státu (tzv. **teritoriálních emisí**), nebo veškerých emisí vyplývajících ze spotřeby v daném státě, tedy také emisí vzniklých při výrobě dovezených výrobků (tzv. **emisí ze spotřeby**). V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý – jen asi 4 %. U některých zemí však mohou být emise ze spotřeby výrazně vyšší (Velká Británie asi o 36 %, Švýcarsko o 209 %) nebo také nižší (Jižní Afrika o 29 %, Čína o 13 %) než teritoriální emise [^4]. 
 
 V závazcích jednotlivých států jsme zatím jasný cíl dosáhnout neutrality emisí ze spotřeby nenašli, nicméně například EU uvažuje o tzv. uhlíkovém clu, tedy dodatečném zpoplatnění dováženého zboží, které zohlední emisní náročnost jeho výroby. Podniky vyrábějící mimo EU by tak nebyly zvýhodněny tím, že neplatí za emise, které vyprodukují. 
 
@@ -51,18 +51,18 @@ Jiná otázka ohledně závazku net-zero zní: **jak jsou zohledněny emise z le
 
 V případě Česka je nyní aktuální také otázka **jak započítávat emise z lesů**: zatímco dříve české lesy pohlcovaly okolo 7 miliónů tun CO<sub>2</sub> ročně, nyní se kvůli kůrovcové kalamitě samy staly zdrojem a emitují přibližně 5 miliónů tun CO<sub>2</sub>. 
 
-I u firem mohou být zásadní rozdíly v tom, na jaké emise se zaměřují – zda započítávají pouze provoz firmy (elektřinu, vytápění v kancelářích apod.), nebo celý dodavatelský řetězec. Například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry emise veškeré vyprodukované za celou dobu existence firmy [^6], tedy od roku 1975. Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, se do roku 2050 zavázala pouze k dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli už z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
+I u firem mohou být zásadní rozdíly v tom, na jaké emise se zaměřují – zda započítávají pouze provoz firmy (elektřinu, vytápění v kancelářích apod.), nebo celý dodavatelský řetězec. Například švédská IKEA si vytkla za cíl dosáhnout nulových emisí v celém svém dodavatelském řetězci, od výroby šroubků přes dopravu materiálu až po provoz jednotlivých prodejen [^5]. Microsoft zašel ještě dál a po dosažení čisté nuly v roce 2030 chce být uhlíkově negativní a do roku 2050 odčerpat z atmosféry veškeré emise vyprodukované za celou dobu existence firmy [^6], tedy od roku 1975. Naproti tomu ACI Europe, což je asociace více než 500 evropských letišť, se do roku 2050 zavázala pouze k dosažení čistých nulových emisí ze svých budov a pozemního provozu, nikoli už z letecké dopravy – jde tedy jen o 2 % emisí spojených s letovým provozem na těchto letištích.
 
 
 {% include figure.html
     name="Scopes-of-Carbon-Emissions.jpg"
-    caption="Scope 1 2 a 3 vysvětlení."
+    caption="Scope 1 2 a 3 vysvětlení"
     alt=""
     source-text=""
     source-url="https://www.visualcapitalist.com/decarbonization-101-what-carbon-emissions-are-part-of-your-footprint/"
 %}
 
-Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, jimž půjčují peníze, a řeší "klimatické" parametry investičních portfolií. Vedle emisí spojených s provozem nebo dodavatelským řetězcem mohou některé firmy řešit také emise související s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další důsledky, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, a negativní dopady na lidskou společnost.
+Jaká další kritéria mohou firmy ve svých závazcích zohlednit? Některé banky se vedle záměru dosáhnout nulových emisí z provozu svých kanceláří zaměřují i na emise firem, jimž půjčují peníze, a řeší "klimatické" parametry investičních portfolií. Vedle emisí spojených s provozem nebo dodavatelským řetězcem se mohou některé firmy zabývat také emisemi souvisejícími s používáním výrobků nebo s likvidací odpadu poté, co jejich výrobky doslouží. A samozřejmě dává smysl brát v potaz i další důsledky, které se netýkají klimatu: materiálovou náročnost a cirkularitu, jiné znečištění, které může při výrobě vznikat, a negativní dopady na lidskou společnost.
 
 
 ## Způsob snižování emisí
@@ -81,7 +81,7 @@ Průmyslové postupy (CCS, Carbon Capture and Storage [^72]) spoléhají na tech
 
 **Uhlíkové kompenzace** (carbon offsets) jsou v podstatě investice do projektů, jež se různými způsoby snaží emise skleníkových plynů snížit. Tyto projekty mohou být různého charakteru – například zachycování a spalování metanu, který uniká ze skládky odpadu, tedy přeměnu tohoto silného skleníkového plynu na plyn slabší (CO<sub>2</sub>), což lze započítat jako snížení emisí. Jiným příkladem mohou být projekty v afrických zemích, které se snaží nahradit tradiční vaření na ohni efektivnějšími plynovými vařiči [^8]. Kromě emisních úspor podobné projekty chrání také místní lesy. Další projekty se mohou zaměřit přímo na zalesňování. 
 
-Potíž s uhlíkovými kompenzacemi spočívá v tom, že budoucí dopad investice lze odhadnout jen stěží a je většinou nejistý. Offsetting tedy vede k tomu, že se rizika spojená s investicí mnohdy přesouvají jinam. Nesnadné je i počítání těchto kompenzací, aby nebyly započítány dvakrát: jestliže se např. Microsoft rozhodne pro uhlíkovou kompenzaci v podobě zalesnění části území Sierry Leone, komu přičíst toto snížení emisí: africké zemi, nebo IT korporaci? Klima z toho bude mít prospěch pouze jednou, nikoli dvakrát. Ještě složitější je pak tento výpočet u obchodování se zbožím a energií. Kvalita jednotlivých offsetových projektů se může velmi lišit, a protože dosud nebyly vytvořeny jednotné mezinárodní standardy, bývá offsetování často přirovnáváno k obchodování s odpustky nebo označováno jako greenwashing [^9]. Pokud tedy firma o uhlíkových kompenzacích uvažuje, je potřeba posuzovat konkrétní projekty na stránkách, které offsetování nabízí – například [Climate partner](https://www.climatepartner.com/en/climatemap/offset-projects), [Carbonfootprint](https://www.carbonfootprint.com/carbonoffsetprojects.html) nebo český projekt [Offsetujeme CO<sub>2</sub>](https://www.offsetujemeco2.cz/).        
+Potíž s uhlíkovými kompenzacemi spočívá v tom, že budoucí dopad investice lze odhadnout jen stěží a je většinou nejistý. Offsetting tedy vede k tomu, že se rizika spojená s investicí mnohdy přesouvají jinam. Nesnadné je i počítání těchto kompenzací, aby nebyly započítány dvakrát: jestliže se např. Microsoft rozhodne pro uhlíkovou kompenzaci v podobě zalesnění části území Sierry Leone, komu přičíst toto snížení emisí – africké zemi, nebo IT korporaci? Klima z toho bude mít prospěch pouze jednou, nikoli dvakrát. Ještě složitější je pak tento výpočet u obchodování se zbožím a energií. Kvalita jednotlivých offsetových projektů se může velmi lišit, a protože dosud nebyly vytvořeny jednotné mezinárodní standardy, bývá offsetování často přirovnáváno k obchodování s odpustky nebo označováno jako greenwashing [^9]. Pokud tedy firma o uhlíkových kompenzacích uvažuje, je vždy potřeba posuzovat konkrétní projekty přímo na stránkách, které offsetování nabízí – například [Climate partner](https://www.climatepartner.com/en/climatemap/offset-projects), [Carbonfootprint](https://www.carbonfootprint.com/carbonoffsetprojects.html) nebo český projekt [Offsetujeme CO<sub>2</sub>](https://www.offsetujemeco2.cz/).        
   
 
 ## Podrobnost průběžného plánu
