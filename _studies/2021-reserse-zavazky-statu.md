@@ -9,13 +9,13 @@ tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
 caption:     "TODO: Rešerše klíčových studií věnujících se budoucí transformaci české energetiky z posledních let."
 intro: |
-  TODO: v závorkách jsou neratifikované, status quo = BAU, celkově 73.4 %, všechny země nad 1%; Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
+  TODO: v závorkách jsou neratifikované, status quo = BAU, celkově 73,4 %, všechny země nad 1%; Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
   - country:  "Čína"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
-    share:    "23.46 %"
-    netzero:  2060
-    pledge30: "-60 % až -65 % emisí na jednotku HDP oproti r. 2005, zastropovat roční produkci CO<sub>2</sub> na 10.3 Gt"
+    share:    "23,46 %"
+    netzero:  "2060"
+    pledge30: "−60 % až −65 % emisí na jednotku HDP oproti r. 2005, zastropovat roční produkci CO<sub>2</sub> na 10,3 Gt"
     scopeC:   1
     links:
       - title:  Nature
@@ -26,9 +26,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CHN"
   - country:  "USA"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-    share:    "11.81 %"
-    netzero:  2050
-    pledge30: "-50 % ročních emisí oproti r. 2005 (vrchol produkce)"
+    share:    "11,81 %"
+    netzero:  "2050"
+    pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/usa"
@@ -36,9 +36,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=USA"
   - country:  "Indie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
-    share:    "6.56 %"
-    netzero:  "-"
-    pledge30: "-33 % emisí na jednotku HDP oproti r. 2005"
+    share:    "6,56 %"
+    netzero:  "—"
+    pledge30: "−33 % emisí na jednotku HDP oproti r. 2005"
     other:    "Nikdy nepřekročit průměr emisí na osobu vyspělých zemí"
     links:
       - title:  CAT
@@ -47,9 +47,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IND"
   - country:  "EU&nbsp;(27&nbsp;členů)"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
-    share:    "6.40 %"
-    netzero:  2050
-    pledge30: "-55 % ročních emisí oproti r. 1990 (vrchol produkce)"
+    share:    "6,40 %"
+    netzero:  "2050"
+    pledge30: "−55 % ročních emisí oproti r. 1990 (vrchol produkce)"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=EUU"
@@ -57,9 +57,9 @@ items:
         url:    "https://climateactiontracker.org/countries/eu"
   - country:  "Ruská&nbsp;federace"
     flag:     "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
-    share:    "4.84 %"
-    netzero:  "-"
-    pledge30: "-30 % ročních emisí oproti r. 1990 (vrchol produkce)"
+    share:    "4,84 %"
+    netzero:  "—"
+    pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/russian-federation"
@@ -67,9 +67,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
   - country:  "Indonésie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
-    share:    "4.52 %"
+    share:    "4,52 %"
     netzero:  "(2070)"
-    pledge30: "-29 % ročních emisí oproti status quo, konec nelegální těžby dřeva"
+    pledge30: "−29 % ročních emisí oproti status quo, konec nelegální těžby dřeva"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/indonesia"
@@ -77,9 +77,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
   - country:  "Brazílie"
     flag:     "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
-    share:    "2.80 %"
+    share:    "2,80 %"
     netzero:  "2060"
-    pledge30: "-43 % ročních emisí oproti r. 2005 (vrchol produkce)"
+    pledge30: "−43 % ročních emisí oproti r. 2005 (vrchol produkce)"
     other:    "podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
     links:
       - title:  Sky News
@@ -90,9 +90,9 @@ items:
         url:    "https://climateactiontracker.org/countries/brazil"
   - country:  "Japonsko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
-    share:    "2.55 %"
+    share:    "2,55 %"
     netzero:  "2050"
-    pledge30: "-26 % ročních emisí oproti r. 2013 (vrchol produkce)"
+    pledge30: "−26 % ročních emisí oproti r. 2013 (vrchol produkce)"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=JPN"
@@ -100,9 +100,9 @@ items:
         url:    "https://climateactiontracker.org/countries/japan"
   - country:  "Irán"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
-    share:    "1.76 %"
-    netzero:  "-"
-    pledge30: "(-4 % ročních emisí oproti status quo)"
+    share:    "1,76 %"
+    netzero:  "—"
+    pledge30: "(−4 % ročních emisí oproti status quo)"
     links:
       - title:  INDC
         url:    "https://www4.unfccc.int/sites/submissions/INDC/Published Documents/Iran/1/INDC Iran Final Text.pdf"
@@ -110,9 +110,9 @@ items:
         url:    "https://www.umweltbundesamt.de/sites/default/files/medien/1410/publikationen/2018-11-30_climate-change_29-2018_country-report-iran.pdf"
   - country:  "Kanada"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
-    share:    "1.58 %"
+    share:    "1,58 %"
     netzero:  "2050"
-    pledge30: "-30 % ročních emisí oproti r. 2005"
+    pledge30: "−30 % ročních emisí oproti r. 2005"
     links:
       - title:  CICC
         url:    "https://climatechoices.ca/reports/canadas-net-zero-future"
@@ -122,10 +122,10 @@ items:
         url:    "https://climateactiontracker.org/countries/canada"
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
-    share:    "1.39 %"
-    netzero:  "-"
-    pledge30: "-22 % ročních emisí oproti status quo"
-    other:    "-50 % ročních emisí v r. 2050 oproti r. 2000"
+    share:    "1,39 %"
+    netzero:  "—"
+    pledge30: "−22 % ročních emisí oproti status quo"
+    other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
@@ -133,9 +133,9 @@ items:
         url:    "https://climateactiontracker.org/countries/mexico"
   - country:  "Saudská Arábie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
-    share:    "1.34 %"
-    netzero:  "-"
-    pledge30: "-130 MtCO<sub>2</sub>eq oproti status quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
+    share:    "1,34 %"
+    netzero:  "—"
+    pledge30: "−130 MtCO<sub>2</sub>eq oproti status quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/saudi-arabia"
@@ -143,9 +143,9 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
   - country:  "Jižní Korea"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
-    share:    "1.33 %"
+    share:    "1,33 %"
     netzero:  "2050"
-    pledge30: "-24.4 % ročních emisí oproti r. 2017"
+    pledge30: "−24,4 % ročních emisí oproti r. 2017"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=KOR"
@@ -153,9 +153,9 @@ items:
         url:    "https://climateactiontracker.org/countries/south-korea"
   - country:  "Austrálie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
-    share:    "1.05 %"
+    share:    "1,05 %"
     netzero:  "(2050)"
-    pledge30: "-26 % až -28 % ročních emisí oproti r. 2005"
+    pledge30: "−26 % až −28 % ročních emisí oproti r. 2005"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=AUS"
@@ -163,10 +163,10 @@ items:
         url:    "https://climateactiontracker.org/countries/australia"
   - country:  "Jihoafrická&nbsp;rep."
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
-    share:    "1.01 %"
-    netzero:  "-"
-    pledge30: "+18 % až -24 % ročních emisí oproti r. 2014"
-    other:    "-18 % až -59 % ročních emisí v r. 2050 oproti r. 2014"
+    share:    "1,01 %"
+    netzero:  "—"
+    pledge30: "+18 % až −24 % ročních emisí oproti r. 2014"
+    other:    "−18 % až −59 % ročních emisí v r. 2050 oproti r. 2014"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/south-africa"
@@ -174,14 +174,14 @@ items:
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
   - country:  "Zambie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"
-    share:    "1.00 %"
-    netzero:  "-"
-    pledge30: "-25 % ročních emisí oproti r. 2010 při současné míře mezinárodní podpory"
+    share:    "1,00 %"
+    netzero:  "—"
+    pledge30: "−25 % ročních emisí oproti r. 2010 při současné míře mezinárodní podpory"
     links:
       - title:  NDC
         url:    "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZMB"
   - country:  "ostatní&nbsp;země"
-    share:    "26.60 %"
+    share:    "26,60 %"
 ---
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
