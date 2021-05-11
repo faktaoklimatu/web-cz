@@ -106,7 +106,7 @@
 
 - id: carbon-neutrality
   name-short: "Uhlíková neutralita"
-  name-long: "Net-zero carbon, klimatická neturalita "
+  name-long: "Net-zero carbon, klimatická neturalita"
   description: "Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá. Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. Pokud máme udržet úroveň globálního oteplení pod 1,5–2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami CO<sub>2</sub> (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
 
 - id: w
