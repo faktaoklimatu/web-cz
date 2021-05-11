@@ -9,8 +9,7 @@ tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
 caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích skleníkových plynů a jejich oficiální závazky k omezení emisí."
 intro: |
-  EU a 191 dalších signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Některé země nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovaly i dlouhodobější závazky – nejčastěji tzv. net-zero emise v roce 2050. Indonésie a Austrálie svůj dlouhodobý cíl zatím zvažují.<br/>
-  Rešerše zahrnuje EU a všechny ostatní země s podílem na světových emisích nad 1 % v roce 2016. V odkazech naleznete kromě národních závazků (Nationally Determined Contributions = NDC) i národní profily na webu Climate Action Tracker (CAT) a další zdroje informací.
+  Evropská unie a 191 dalších signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Některé země nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovaly i dlouhodobější závazky – nejčastěji tzv. <i>net-zero</i> emise v roce 2050. Indonésie a Austrálie svůj dlouhodobý cíl zatím zvažují.
 items:
   - country:  "Čína"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
@@ -36,14 +35,13 @@ items:
   - country:  "Indie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
     share:    "6,56 %"
-    netzero:  "—"
     pledge30: "−33 % emisí na jednotku HDP oproti r. 2005"
     other:    "Nikdy nepřekročit průměr emisí na osobu vyspělých zemí"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IND"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/india"
-  - country:  "EU&nbsp;(27&nbsp;členů)"
+  - country:  "EU 27"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
     share:    "6,40 %"
     netzero:  "2050"
@@ -52,10 +50,9 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/eu"
-  - country:  "Ruská&nbsp;federace"
+  - country:  "Ruská federace"
     flag:     "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
     share:    "4,84 %"
-    netzero:  "—"
     pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
     links:
@@ -75,7 +72,7 @@ items:
     share:    "2,80 %"
     netzero:  "2060"
     pledge30: "−43 % ročních emisí oproti r. 2005 (vrchol produkce)"
-    other:    "podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
+    other:    "Podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=BRA"
     links:
       - title:  CAT
@@ -94,8 +91,7 @@ items:
   - country:  "Irán"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
     share:    "1,76 %"
-    netzero:  "—"
-    pledge30: "neratifikováno; −4 % ročních emisí oproti status quo"
+    pledge30: "Neratifikováno; −4 % ročních emisí oproti status quo"
     links:
       - title:  INDC
         url:    "https://www4.unfccc.int/sites/submissions/INDC/Published Documents/Iran/1/INDC Iran Final Text.pdf"
@@ -115,17 +111,15 @@ items:
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     share:    "1,39 %"
-    netzero:  "—"
     pledge30: "−22 % ročních emisí oproti status quo"
     other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/mexico"
-  - country:  "Saudská Arábie"
+  - country:  "Saúdská Arábie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
     share:    "1,34 %"
-    netzero:  "—"
     pledge30: "−130 MtCO<sub>2</sub>eq oproti status quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
     links:
@@ -149,10 +143,9 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/australia"
-  - country:  "Jihoafrická&nbsp;rep."
+  - country:  "JAR"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
     share:    "1,01 %"
-    netzero:  "—"
     pledge30: "+18 % až −24 % ročních emisí oproti r. 2014"
     other:    "−18 % až −59 % ročních emisí v r. 2050 oproti r. 2014"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
@@ -162,12 +155,13 @@ items:
   - country:  "Zambie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"
     share:    "1,00 %"
-    netzero:  "—"
     pledge30: "−25 % ročních emisí oproti r. 2010 při současné míře mezinárodní podpory"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZMB"
-  - country:  "ostatní&nbsp;země"
+  - country:  "Ostatní země"
     share:    "26,60 %"
 ---
+Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích skleníkových plynů nad 1 % v roce 2016. V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDC) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries/china) (CAT) a další zdroje informací.
+
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
 {% endcomment -%}
@@ -175,7 +169,12 @@ items:
   {% for item in page.items %}
   <div class="card mb-3">
     <div class="card-body">
-      <h3 class="card-title">{% if item.flag %}<img src={{ item.flag }} width="30"/>&nbsp;&nbsp;{% endif %}{{ item.country }}</h3>
+      <h3 class="card-title">
+        {% if item.flag -%}
+        <img src={{ item.flag }} class="mr-2 country-flag" />
+        {%- endif %}
+        {{ item.country }}
+      </h3>
       <p class="card-text text-muted">{{ item.share }} světových emisí SP</p>
       {%- if item.netzero %}<p class="card-text text-muted">Net-zero v roce {{ item.netzero }}</p>{% endif %}
       {%- if item.pledge30 %}<p class="card-text text-muted">Závazek do roku 2030: {{ item.pledge30 }}</p>{% endif %}
@@ -198,36 +197,31 @@ items:
   <thead>
     <tr>
       <th scope="col" class="text-uppercase align-middle">Stát či uskupení</th>
-      <th scope="col" class="text-uppercase align-middle">Podíl na světových emisích SP</th>
+      <th scope="col" class="text-uppercase align-middle">Podíl na světových emisích</th>
       <th scope="col" class="text-uppercase align-middle">Net-zero</th>
       <th scope="col" class="text-uppercase align-middle">Závazek 2030</th>
-{% comment %}
-      <th scope="col" class="text-uppercase align-middle">CO<sub>2</sub></th>
-      <th scope="col" class="text-uppercase align-middle">ost. SP</th>
-      <th scope="col" class="text-uppercase align-middle">LULUCF</th>
-{% endcomment -%}
       <th scope="col" class="text-uppercase align-middle">Ostatní závazky</th>
       <th scope="col" class="text-uppercase align-middle text-center">Odkazy</th>
     </tr>
   </thead>
   <tbody>
-    {% for item in page.items %}
+    {% for item in page.items -%}
     <tr>
-      <td class="align-middle">{% if item.flag %}<img src={{ item.flag }} width="30"/>&nbsp;&nbsp;{% endif %}<strong>{{ item.country }}</strong></td>
+      <td class="align-middle text-nowrap">
+        {% if item.flag -%}
+        <img src={{ item.flag }} class="mr-2 country-flag" />
+        {%- endif %}
+        <strong>{{ item.country }}</strong>
+      </td>
       <td class="align-middle">{{ item.share }}</td>
-      <td class="align-middle">{{ item.netzero }}</td>
+      <td class="align-middle">{{ item.netzero | default: "—" }}</td>
       <td class="align-middle">{% if item.pledge30 %}{{ item.pledge30 }}{% else %}—{% endif %}</td>
-{% comment %}
-      <td class="align-middle">{% if item.scopeC %}&#10004;{% endif %}</td>
-      <td class="align-middle">{% if item.scopeG %}&#10004;{% endif %}</td>
-      <td class="align-middle">{% if item.scopeL %}&#10004;{% endif %}</td>
-{% endcomment -%}
-      <td class="align-middle">{% if item.other %}{{ item.other }}{% else %}—{% endif %}</td>
+      <td class="align-middle">{{ item.other }}</td>
       <td class="align-middle">
         {%- if item.ndc %}<a href="{{ item.ndc }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
         {% for link in item.links -%}
         <a href="{{ link.url }}" class="btn btn-sm btn-secondary">{{ link.title }}</a>
-        {% endfor %}
+        {%- endfor %}
       </td>
     </tr>
     {% endfor %}
