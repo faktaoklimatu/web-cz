@@ -4,7 +4,7 @@ title:       "Rešerše: Emisní závazky států"
 slug:        2021-reserse-zavazky-statu
 redirect_from: "/2020-reserse-zavazky-statu"
 weight:      300
-published:   2021-05-05
+published:   2021-05-12
 tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
 caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích skleníkových plynů a jejich oficiální závazky k omezení emisí."
