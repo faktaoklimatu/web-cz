@@ -51,7 +51,7 @@ items:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/eu"
   - country:  "Ruská federace"
-    flag:     "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+    flag:     "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
     share:    "4,84 %"
     pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
@@ -68,7 +68,7 @@ items:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/indonesia"
   - country:  "Brazílie"
-    flag:     "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+    flag:     "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
     share:    "2,80 %"
     netzero:  "2060"
     pledge30: "−43 % ročních emisí oproti r. 2005 (vrchol produkce)"
@@ -171,7 +171,7 @@ Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světo
     <div class="card-body">
       <h3 class="card-title">
         {% if item.flag -%}
-        <img src={{ item.flag }} class="mr-2 country-flag" />
+        <img src={{ item.flag }} class="mr-2 country-flag" alt="Vlajka země či území: {{ item.country }}" />
         {%- endif %}
         {{ item.country }}
       </h3>
@@ -209,7 +209,7 @@ Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světo
     <tr>
       <td class="align-middle text-nowrap">
         {% if item.flag -%}
-        <img src={{ item.flag }} class="mr-2 country-flag" />
+        <img src={{ item.flag }} class="mr-2 country-flag" alt="Vlajka země či území: {{ item.country }}" />
         {%- endif %}
         <strong>{{ item.country }}</strong>
       </td>
