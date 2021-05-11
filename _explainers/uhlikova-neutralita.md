@@ -26,7 +26,7 @@ Anglický výraz "**net-zero**" by se dal do češtiny doslovně přeložit jako
 
 {% include preview-box.html
     class="highlight-text-box"
-    text=" Striktně vzato jsou slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označením dvou různých stavů: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi však lidé tyto termíny často zaměňují, a nelze se tedy spolehnout, že když někdo řekne "uhlíková neutralita", myslí tím pouze cíl týkající se oxidu uhličitého. 
+    text=" Striktně vzato jsou slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označením dvou různých stavů: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi však lidé tyto termíny často zaměňují, a nelze se tedy spolehnout, že když někdo řekne *uhlíková neutralita*, myslí tím pouze cíl týkající se oxidu uhličitého. 
 "
 %}
 
@@ -56,7 +56,7 @@ I u firem mohou být zásadní rozdíly v tom, na jaké emise se zaměřují –
 
 {% include figure.html
     name="Scopes-of-Carbon-Emissions.jpg"
-    caption="Scope 1 2 a 3 vysvětlení"
+    caption="Závazek klimatické neutrality firmy může zahrnovat přímé emise z výroby (tzv. scope 1), nepřímé emise z energie, která je k výrobě potřeba (tzv. scope 2) nebo také související emise, které vznikají v dodavatelském řetězci a při likvidaci výrobků (tzv. scope 3)"
     alt=""
     source-text=""
     source-url="https://www.visualcapitalist.com/decarbonization-101-what-carbon-emissions-are-part-of-your-footprint/"
