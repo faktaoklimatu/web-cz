@@ -27,7 +27,7 @@ slug: index
 </div>
 
 <div class="tab-content" id="myTabContent">
-  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="public" role="tabpanel" aria-labelledby="public-tab"><div class="container">
+  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="public" role="tabpanel" aria-labelledby="tab-role-public"><div class="container">
     <p class="lead mb-0">Fakta o klimatu neslouží odborníkům, ale všem lidem se zájmem o téma klimatické změny. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2, body-zlomu-1, teplota-22000-let, teplota-cr, potencial-zpusobu-snizeni-emisi, elektrina-cr" | split: ", " %}
     {% assign featured = site.infographics | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
@@ -41,8 +41,8 @@ slug: index
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
     <a href="" class="btn btn-secondary"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
   </div></div>
-  
-  <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="teachers" role="tabpanel" aria-labelledby="teachers-tab"><div class="container">
+
+  <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="teachers" role="tabpanel" aria-labelledby="tab-role-teachers"><div class="container">
     <p class="lead mb-0">Texty a grafiky projektu Fakta o klimatu lze použít jako materiál pro přípravu různých vzdělávacích aktivit. Při práci se snažíme nerezignovat na vědeckou přesnost a komplexnost, použití našich textů a grafik proto doporučujeme ve vyšších ročnících ZŠ nebo na SŠ a VŠ. Pokud jste na našem webu poprvé a nevíte kde začít, můžete si prohlédnout některou z úvodních infografik níže.</p>
     {% assign featured_slugs = "schema-klimaticke-zmeny, emise-cr-detail, koncentrace-co2" | split: ", " %}
     {% assign featured = site.infographics | where_exp: "item", "featured_slugs contains item.slug" | sample: 3 %}
@@ -62,7 +62,7 @@ slug: index
     </div>
   </div></div>
 
-  <div class="section tab-pane fade bg-extralight-red pt-4 pb-4" id="journalists" role="tabpanel" aria-labelledby="journalists-tab"><div class="container">
+  <div class="section tab-pane fade bg-extralight-red pt-4 pb-4" id="journalists" role="tabpanel" aria-labelledby="tab-role-journalists"><div class="container">
     <p class="lead">Pokud připravujete článek či se chystáte na diskusi nebo rozhovor, naše materiály vám pomohou získat přehled a aktuální data. I těžko srozumitelné problémy můžete díky našim grafikám prezentovat přehledně a srozumitelně. Data čerpáme z ověřených a transparentních zdrojů, posouzení jejich faktické správnosti jsme udělali za vás.</p>
     <p class="lead">Naše data a grafiky lze snadno sdílet, upravovat a šířit. Pokud je plánujete využít, nezapomeňte se prosím seznámit s pravidly jak používat naše materiály. Máte-li zájem o bližší informace o projektu nebo o spolupráci, kdykoli nás také můžete <a href="/jak-pouzivat#kontakt">kontaktovat</a>.</p>
     <a href="/jak-pouzivat" class="btn btn-primary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
@@ -95,7 +95,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 <div class="accordion" id="accordionExample">
 {% for index_tag in sorted_index_tags %}
 <div class="accordion-item">
-    <div class="accordion-header collapsed" id="heading_{{ index_tag.id }}" data-toggle="collapse" data-target="#collapse_{{ index_tag.id }}" aria-expanded="false" aria-controls="collapse_{{ index_tag.id }}">
+    <div class="accordion-header collapsed" id="heading_{{ index_tag.id }}" role="button" data-toggle="collapse" data-target="#collapse_{{ index_tag.id }}" aria-expanded="false" aria-controls="collapse_{{ index_tag.id }}">
         <h3 class="display-3">
         <span class="fa fa-fw fa-chevron-up"></span>
         {{ index_tag.name-long | capitalize }}
