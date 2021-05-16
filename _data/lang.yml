@@ -2,7 +2,7 @@
 
 navigation:
   dev-version: "Vývojářská verze webu"
-  dev-differences: "Oproti produkční verzi v ní chybí web analytika."
+  dev-differences: "Oproti produkční verzi v ní chybí web analytika, platnost cache je znížena na 5 minut a SCP violations nejsou odesílány na URIports."
   search-empty: "Nic nenalezeno"
   search-failed: "Hledání nefunguje. Možná je chyba v připojení k internetu?"
 
