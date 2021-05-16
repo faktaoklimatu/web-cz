@@ -25,6 +25,7 @@ slugs:
   glossary: slovnik
   how-to-use: jak-pouzivat
   news: aktuality
+  about: o-nas
 
 # Set permalinks in local language
 collections:
