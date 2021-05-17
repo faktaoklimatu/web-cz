@@ -16,7 +16,7 @@ Jekyll::Hooks.register :site, :post_render do |site|
   site.documents.each do |page|
     if not page.respond_to? :output
       Jekyll.logger.error "Undefined page.output for '#{page.path}'. Consider excluding this file"
-      continue
+      next
     end
     replace!(page.output)
   end
