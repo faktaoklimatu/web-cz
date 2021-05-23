@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.com/faktaoklimatu/web-cz.svg?branch=master)](https://travis-ci.com/faktaoklimatu/web-cz)
 
-Projekt Fakta o klimatu usiluje o zkvalitnění společenské diskuse o klimatické změně. Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpracovávat vědecké informace, aby bylo rozhodování ve věcech týkajících se klimatu založené na aktuálních a ověřených datech.
+Projekt _Fakta o klimatu_ usiluje o zkvalitnění společenské diskuse o klimatické změně. Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpracovávat vědecké informace, aby bylo rozhodování ve věcech týkajících se klimatu založené na aktuálních, kredibilních a ověřených datech.
 
 Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé.
 
-Jsme [tým profesionálů zabývajících se různými obory]](CONTRIBUTORS.md) – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracuje na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.
+Jsme [tým profesionálů zabývajících se různými obory](CONTRIBUTORS.md) – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracujeme na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s odborníky, politiky, energetickými firmami i aktivistickými hnutími. _Fakta o klimatu_ jsou však nezávislý projekt, který [může podpořit každý](https://www.darujme.cz/projekt/1203742).
 
 ## Konvence v repozitáři
 
@@ -34,7 +34,7 @@ Lokální instalace má tyto prerekvizity (nainstalujte do systému):
 * GNU Make (balík `make` nebo součást základních vývojářských balíků jako je `build-essential`).
 * Jekyll a Bundler (balíky `jekyll` a `bundler`)
 * Inkscape ve verzi alespoň 1.0 (balík `inkscape`, zkontrolujte si však verzi!)
-* ImageMagic (balík `imagemagick`)
+* ImageMagick (balík `imagemagick`)
 
 Na Ubuntu 20.10 nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential imagemagick`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
 
