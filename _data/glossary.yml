@@ -18,7 +18,6 @@
   name-short: "Halogenderiváty uhlovodíků"
   description: "Jde o plyny, známé také často jako **freony**. Většina z nich poškozuje ozónovou vrstvu a zároveň jsou silnými skleníkovými plyny. V chemickém názvosloví se označují jako [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) (chloro-fluoro-carbons), HCFCs (hydro-chloro-fluoro-carbons) nebo [HFCs](https://en.wikipedia.org/wiki/Hydrofluorocarbon) (hydro-fluoro-carbons), a používají se jako rozpoštědla, plnidla nebo jako  chladící plyny v ledničkách a klimatizačních jednotkách. "
 
-
 - id: citlivost
   name-short: "Citlivost klimatu"
   description: "_Citlivost klimatu_ (z angl. „climate sensitivity“) udává, o kolik stupňů Celsia se zvýší průměrná globální teplota vzduchu, pokud dojde ke zdvojnásobení koncentrace skleníkových plynů v atmosféře. Klimatologické modely předpovídají hodnoty citlivosti v intervalu 2–4,5 °C s nejpravděpodobnější hodnotou 3 °C. To znamená, že při zvýšení koncentrace na dvojnásobek předindustriální hodnoty (z 280 ppm na 560 ppm) můžeme očekávat nárůst průměrné globální teploty o 3 °C – s tím, že oteplení bude spolehlivě o alespoň 2 °C a nemůžeme vyloučit zvýšení teploty až o 4,5 °C. Koncentrace CO<sub>2</sub> v roce 2019 byly 411 ppm a hodnoty 560 ppm bude v případě scénáře RCP8.5 (bez omezování emisí) dosaženo zhruba v roce 2050. Podrobnější diskusi důvodů, které fundamentálně znemožňují zpřesnit interval odhadu, nabízí přehledové články [Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf) a [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761). V obecné rovině se jedná o odezvu klimatického systému na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), podrobnou diskusi konceptu citlivosti klimatu z pohledu různých časových škál obsahuje [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)."
@@ -33,8 +32,6 @@
   name-long: "CO<sub>2</sub> ekvivalent"
   description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) – konkrétně je to množství příslušného plynu × [GWP koeficient](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Např. pro metan je to hodnota cca 28 [[IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf) (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\". Zjednodušeně řečeno, metan je 28krát silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
-
-
 - id: externalita
   name-short: "Externalita"
   description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
@@ -45,7 +42,7 @@
 
 - id: greenwashing
   name-short: "Greenwashing"
-  description: "Termínem greenwashing se označuje vytváření falešného dojmu nebo podávání zavádějících informací o tom, jak příznivé pro životní prostředí jsou produkty či činnost nějaké firmy.  Může jít o banální přidávání předpony *eko-* před název produktu, nebo o zdůrazňování nepodstatného příspěvku (například když se velká firma zaváže k vysázení 10 000 stromů, může to vypadat jako hodně, ale jde pouze o 3 hektary lesa, tedy 100 x 300 m). Může jít také o odvádění pozornosti od aktivit, které životnímu prostředí přímo škodí (například když s společnost, která těží hnědé uhlí, provozuje uhelné elektrárny a porušuje emisní limity rtuti, poukazuje na své investice to obnovitelných zdrojů elektřiny)."
+  description: "Termínem greenwashing se označuje vytváření falešného dojmu nebo podávání zavádějících informací o tom, jak příznivé pro životní prostředí jsou produkty či činnost nějaké firmy. Může jít o banální přidávání předpony *eko-* před název produktu, nebo o zdůrazňování nepodstatného příspěvku (například když se velká firma zaváže k vysázení 10 000 stromů, může to vypadat jako hodně, ale jde pouze o 3 hektary lesa, tedy 100 x 300 m). Může jít také o odvádění pozornosti od aktivit, které životnímu prostředí přímo škodí (například když s společnost, která těží hnědé uhlí, provozuje uhelné elektrárny a porušuje emisní limity rtuti, poukazuje na své investice to obnovitelných zdrojů elektřiny)."
 
 - id: hackathon
   name-short: "Hackathon"
@@ -77,10 +74,8 @@
 
 - id: NDCs
   name-short: "NDCs"
-  name-long: "Národní závazky, Nationally Determined Contributions"
+  name-long: "Národní závazky (Nationally Determined Contributions)"
   description: "V rámci Pařížské dohody se státy zavázaly vypracovat a aktualizovat národní cíle pro snižování emisí skleníkových plynů, tedy takzvané *Nationally Determined Contributions*. [[UNFCCC.int](https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs)]"
-
-
 
 - id: ppm
   name-short: "ppm"
@@ -109,8 +104,7 @@
 
 - id: parizskadohoda
   name-short: "Pařížská dohoda"
-  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány. 
-"
+  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány."
 
 - id: phase-out
   name-short: "Uhelný phase-out"
@@ -125,4 +119,3 @@
   name-short: "W a Wh (kW, MW… a kWh, MWh…)"
   name-long: "watt, watthodina a jejich násobky"
   description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektřiny [[cs.wikipedia](https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice)]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W – pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok [[Český statistický úřad](https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=)]."
-
