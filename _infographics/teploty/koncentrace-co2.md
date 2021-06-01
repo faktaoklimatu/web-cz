@@ -30,10 +30,9 @@ dataset:    "koncentrace-co2"
 ## Jak se měří historické koncentrace CO<sub>2</sub>?
 
 * Vzorky ledu z hloubkových ledovcových vrtů (až 3 800 m) obsahují velmi starý led (až 800 000 let). Fyzikální vlastnosti tohoto ledu vypovídají o podmínkách v dobách, kdy led zamrzl. Z množství isotopů kyslíku a vodíku lze určit tehdejší průměrnou teplotu planety, z bublinek zachycených v ledu lze určit složení tehdejšího vzduchu.
-* Starší data (0–800 000 let před současností) pocházejí z projektu EPICA (European Project for Ice Coring in Antarctica), konkrétně z vrtů "Dome C", které sahají do hloubky 3 190 m a odpovídající stáří ledu je 798 000 let ([data EPICA](ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls)).
+* Starší data (800 000 let před současností–1957) pocházejí z projektu EPICA (European Project for Ice Coring in Antarctica), konkrétně z vrtů "Dome C", které sahají do hloubky 3 190 m a odpovídající stáří ledu je 798 000 let ([data EPICA](ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls)).
 * V roce 2016 byly v Antarktidě objeveny ledovcové oblasti se stářím ledu okolo 2 miliónů let. Koncentrace CO<sub>2</sub> v bublinkách takto starého ledu se pohybovaly v rozmezí 200–280 ppm. Viz [článek](https://www.nature.com/articles/s41586-019-1692-3) z časopisu _Nature_.
-* Mladší data (0-2 000 let před současností) jsou složením současných měření na Mauna Loa na Havaj a měření z ledovcových vrtů na Jižním pólu ([data Scripps](https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products)).
-* Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa na Havaji, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/).
+* Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa na Havaji, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/). Pro každý rok zobrazujeme maximální měsíční průměrnou koncentraci (což je typicky květnová koncentrace).
 * Časovou hustotu údajů o koncentraci CO<sub>2</sub> v atmosféře za posledních 800 000 let ukazuje [animovaná vizualizace](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html) NOAA.
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
