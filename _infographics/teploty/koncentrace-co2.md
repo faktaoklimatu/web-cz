@@ -34,6 +34,7 @@ dataset:    "koncentrace-co2"
 * V roce 2016 byly v Antarktidě objeveny ledovcové oblasti se stářím ledu okolo 2 miliónů let. Koncentrace CO<sub>2</sub> v bublinkách takto starého ledu se pohybovaly v rozmezí 200–280 ppm. Viz [článek](https://www.nature.com/articles/s41586-019-1692-3) z časopisu _Nature_.
 * Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa na Havaji, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/). Pro každý rok zobrazujeme maximální měsíční průměrnou koncentraci (což je typicky květnová průměrná koncentrace).
 * Časovou hustotu údajů o koncentraci CO<sub>2</sub> v atmosféře za posledních 800 000 let ukazuje [animovaná vizualizace](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html) NOAA.
+* Koncentrace CO<sub>2</sub> přesahující 400 ppm byly na planetě naposledy před asi 4 milióny let, přičemž na začátku třetihor před 50 milióny let přesahovaly koncentrace  CO<sub>2</sub> i hodnoty 1500 ppm. Z této doby už samozřejmě nemáme bublinky zachycené v ledu, ale hodnoty koncentrací lze vypočítat z isotopových stop mořských sedimentů.[^1] 
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 
@@ -48,3 +49,8 @@ Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fos
 * Lidstvo ročně spálí asi 8 miliard tun uhlí, 5 miliard tun ropy a asi 3 miliardy tun zemního plynu. Nárůst koncentrací CO<sub>2</sub> v atmosféře odpovídá těmto množstvím (po započtení pohlcení části CO<sub>2</sub> v oceánech). Kdyby chtěl někdo tvrdit, že koncentrace CO<sub>2</sub> rostou z jiného důvodu, musel by přesvědčivě vysvětlit, kam se "ztratí" emise ze spalování tak velkého množství fosilních paliv.
 * Nárůst koncentrací CO<sub>2</sub> je doprovázen poklesem koncentrací O<sub>2</sub>, který přesně odpovídá směšovacím poměrům při spalování fosilních paliv (po započtení pohlcení části CO<sub>2</sub> v oceánech) – tedy jde o další důkaz, že za zvyšování koncentrací CO<sub>2</sub> může právě spalování.
 * Různé zdroje oxidu uhličitého mají různé [isotopové složení](https://cs.wikipedia.org/wiki/Izotopy_uhl%C3%ADku). Uhlík obsažený v uhlí a ropě neobsahuje žádné isotopy <sup>14</sup>C a sníženou koncentraci <sup>13</sup>C. Oxid uhličitý vydechovaný rostlinami má nižší koncentraci <sup>13</sup>C než oxid uhličitý, který vychází z oceánu. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. Více o isotopech uhlíku v atmosféře najdete na webu [NOAA Earth System Research Laboratory](https://www.esrl.noaa.gov/gmd/outreach/isotopes/mixing.html).
+
+## Zdroje a další odkazy
+
+[^1]: James W.B. Rae, Yi Ge Zhang, et al. [Atmospheric CO2 over the Past 66 Million Years from Marine Archives](https://www.annualreviews.org/doi/full/10.1146/annurev-earth-082420-063026), Annual Review of Earth and Planetary Sciences 2021 49:1, 609-641. Článek obsahuje rekonstrukce koncentrací CO<sub>2</sub> za posledních 66 miliónů let, tedy od konce druhohor. 
+ 
