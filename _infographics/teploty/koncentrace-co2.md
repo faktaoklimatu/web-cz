@@ -34,7 +34,7 @@ dataset:    "koncentrace-co2"
 * V roce 2016 byly v Antarktidě objeveny ledovcové oblasti se stářím ledu okolo 2 miliónů let. Koncentrace CO<sub>2</sub> v bublinkách takto starého ledu se pohybovaly v rozmezí 200–280 ppm. Viz [článek](https://www.nature.com/articles/s41586-019-1692-3) z časopisu _Nature_.
 * Od roku 1958 se měří přímo koncentrace CO<sub>2</sub> ve vzduchu na Mauna Loa na Havaji, jako součást ["Scripps CO<sub>2</sub> program"](https://scripps.ucsd.edu/programs/keelingcurve/). Pro každý rok zobrazujeme maximální měsíční průměrnou koncentraci (což je typicky květnová průměrná koncentrace).
 * Časovou hustotu údajů o koncentraci CO<sub>2</sub> v atmosféře za posledních 800 000 let ukazuje [animovaná vizualizace](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html) NOAA.
-* Koncentrace CO<sub>2</sub> přesahující 400 ppm byly na planetě naposledy před asi 4 milióny let, přičemž na začátku třetihor před 50 milióny let přesahovaly koncentrace  CO<sub>2</sub> i hodnoty 1500 ppm. Z této doby už samozřejmě nemáme bublinky zachycené v ledu, ale hodnoty koncentrací lze vypočítat z isotopových stop mořských sedimentů.[^1] 
+* Koncentrace CO<sub>2</sub> přesahující 400 ppm byly na planetě naposledy před asi 4 milióny let, přičemž na začátku třetihor před 50 milióny let přesahovaly koncentrace  CO<sub>2</sub> i hodnoty 1500 ppm. Z této doby už samozřejmě nemáme bublinky zachycené v ledu, ale hodnoty koncentrací lze vypočítat z isotopových stop mořských sedimentů.[^1] [^2]
 
 ## Jak víme, že nárůst koncentrací CO<sub>2</sub> je důsledkem spalování fosilních paliv?
 
@@ -53,4 +53,4 @@ Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fos
 ## Zdroje a další odkazy
 
 [^1]: James W.B. Rae, Yi Ge Zhang, et al. [Atmospheric CO2 over the Past 66 Million Years from Marine Archives](https://www.annualreviews.org/doi/full/10.1146/annurev-earth-082420-063026), Annual Review of Earth and Planetary Sciences 2021 49:1, 609-641. Článek obsahuje rekonstrukce koncentrací CO<sub>2</sub> za posledních 66 miliónů let, tedy od konce druhohor. 
- 
+[^2]: Pro podrobný pohled na koncentrace CO<sub>2</sub>, včetně různých typů proxy měření a možnosti zoomovat na určitý časový úsek, poslouží stránky [paleo-co2.org](https://www.paleo-co2.org/)
