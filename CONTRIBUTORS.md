@@ -38,6 +38,7 @@ Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracov
 * Petr Novotný
 * Tomáš Obšívač
 * Marcela Pokorná
+* Vojtěch Rujbr
 * Daniel Rychlý
 * Marko Řeháček
 * Lenka Sedlačková
