@@ -7,9 +7,9 @@ published:  2021-06-24
 weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
-caption:    "Ceny výroby energie ze slunce a větru v poslední dekádě výrazně klesly a dnes tyto obnovitelné zdroje energie patří ve světě mezi nejlevnější."
+caption:    "Srovnání vývoje sdružených nákladů na výrobu energie v modelových velkých elektrárnách (tzv. utility-scale) od roku 2009 do roku 2020. Cena zahrnuje emisní povolenky. Do ceny nevstupují dotace. V grafu nejsou zobrazeny vodní elektrárny pro jejich omezený potenciál růstu."
 data-our:   "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I"
-data-orig:  [["Zdrojová data Ember", "https://ember-climate.org/project/data-global-electricity-review/"]]
+data-orig:  [["Zdrojová data Lazard", "https://www.lazard.com/media/451419/lazards-levelized-cost-of-energy-version-140.pdf"]]
 ---
 
 ##TODO
@@ -33,11 +33,8 @@ data-our, data-orig
 - Instalace obnovitelných zdrojů by se mohla stát klíčovým stimulem obnovy ekonomiky po pandemické krizi způsobené nemocí COVID-19.
 
 
-## Zdroj dat (TODO)
+## Zdroj dat
 
-- Infografika je založena na datech od společnosti Lazard a [IRENA?]. Lazard’s LCOE analysis consists of creating a power plant model representing an illustrative project for each relevant technology and solving for the $/MWh value that results in a levered IRR equal to the assumed cost of equity (see subsequent “Key Assumptions” pages for detailed
-assumptions by technology)
-- Modelová elektrárna
-- Idealizovaný srovnání pro celý svět
-- Je to utility scale všechno
+- Infografika čerpá data od společnosti Lazard. Jejich analýza LCOE spočívá ve vytvoření modelové eletrárny pro každý srovnávaný zdroj. 
+- Další relevantní data založené na jiné metodice nabízí [IRENA](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jun/IRENA_Power_Generation_Costs_2019.pdf) a [BNEF](https://assets.bbhub.io/professional/sites/24/BNEF-2021-Executive-Factbook.pdf).
 
