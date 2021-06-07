@@ -34,7 +34,7 @@ K analýze návštěvnosti na našich webových stránkách a k jejich vylepšov
 
 ## Doba zpracování
 
-Osobní údaje subjektů zpracováváme a uchováváme po dobu nezbytně nutnou pro výše uvedené účely. Doba zpracování osobních údajů pro plnění zákonných povinností se řídí příslušnými právními předpisy (zákon o účetnictví). V případě údajů zpracovávaných na základě oprávněného zájmu správce zpracováváme tyto údaje po dobu trvání oprávněného zájmu. Jestliže si již nepřejete být v databázích zpracovávaných údajů na základě uděleného souhlasu nebo oprávněného zájmu správce, máte právo na výmaz osobních údajů. Kontaktujte prosím příslušnou osobu (viz kontakt níže) nebo se odhlaste z odběru newsletterů (odkaz v patičce) apod.
+Osobní údaje subjektů zpracováváme a uchováváme po dobu nezbytně nutnou pro výše uvedené účely. Doba zpracování osobních údajů pro plnění zákonných povinností se řídí příslušnými právními předpisy (zákon o účetnictví). V případě údajů zpracovávaných na základě oprávněného zájmu správce zpracováváme tyto údaje po dobu trvání oprávněného zájmu. Jestliže si již nepřejete být v databázích zpracovávaných údajů na základě uděleného souhlasu nebo oprávněného zájmu správce, máte právo na výmaz osobních údajů. Kontaktujte prosím příslušnou osobu (viz sekce _Správce osobních údajů_) nebo se odhlaste z odběru newsletterů (odkaz v patičce) apod.
 
 ## Způsob zpracování
 
