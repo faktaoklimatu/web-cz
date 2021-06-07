@@ -27,7 +27,7 @@ V této infografice dáváme srovnání více scénářů vývoje [elektroenerge
     title="Jednotlivé scénáře"
     class="double-preview-box"
     card_class="col-6 p-1"
-    text_pre="Ke každému scénáři jsme připravili detailní samostatnou infografiku."
+    text="Ke každému scénáři jsme připravili detailní samostatnou infografiku."
     slug="2020-scenar-ember,2018-scenar-energynautics,2020-scenar-bloombergnef,2019-scenar-necp"
 %}
 
