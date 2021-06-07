@@ -1,11 +1,14 @@
 # Local Jekyll config file (will be appended after master)
 
 # Site settings
+lang: "cs"
 title: "Fakta o klimatu"
 url: https://faktaoklimatu.cz
 email: info@faktaoklimatu.cz
 github: faktaoklimatu/web-cz
 twitter: "faktaoklimatu"
+facebook: "faktaoklimatu"
+linkedin: "68480136"
 newsletter: "https://tinyletter.com/faktaoklimatu/subscribe"
 fundraising: "https://www.darujme.cz/projekt/1203742"
 author: faktaoklimatu.cz
