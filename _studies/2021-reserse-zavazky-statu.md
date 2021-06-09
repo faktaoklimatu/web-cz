@@ -208,7 +208,7 @@ items:
   - country:  "Ostatní země"
     share:    "25,66 %"
 ---
-Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích skleníkových plynů nad 1 % [v roce 2016](https://ourworldindata.org/greenhouse-gas-emissions). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDC) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací.
+Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích skleníkových plynů nad 1 % [v roce 2016](https://ourworldindata.org/greenhouse-gas-emissions). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDC) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Při najetí myší na tlačítko zdroje se zobrazí datum jeho poslední aktualizace.
 
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
