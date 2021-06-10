@@ -38,6 +38,8 @@ Lokální instalace má tyto prerekvizity (nainstalujte do systému):
 
 Na Ubuntu 20.10 nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential imagemagick`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
 
+Máte-li problém spustit Inkscape s chybou `Wrong __data_start/_end pair`, nastavte proměnnou `export _INKSCAPE_GC="disable"` (detaily viz [GitLab issue](https://gitlab.com/inkscape/inkscape/-/issues/1420)).
+
 ### Instalace v kontejneru
 
 Kontejnery umožňují oddělit programy nutné pro sestavení a spuštění webu od zbytku vašeho operačního systému. Zároveň vytvoří konzistentní prostředí, které je téměř totožné s tím, ve kterém se sestavuje živý, publikovaný web.
