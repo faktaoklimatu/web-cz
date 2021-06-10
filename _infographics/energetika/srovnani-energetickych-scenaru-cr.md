@@ -8,7 +8,7 @@ weight:      73
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Srovnání čtyř nedávných scénářů pro transformaci české elektroenergetiky do roku 2030. Scénáře se radikálně liší ve svém dopadu na snížení emisí skleníkových plynů souvisejících s výrobou elektřiny. Stejně tak se scénáře liší zaměřením a použitou metodikou."
-data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
+data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
   - [ "Ember", "https://ember-climate.org/project/coal-free-czechia-2030/" ]
   - [ "Energynautics", "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf" ]

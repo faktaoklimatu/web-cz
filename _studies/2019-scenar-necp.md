@@ -8,7 +8,7 @@ weight:      90
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Vnitrostátní plán České republiky v oblasti energetiky a klimatu (NECP) popisuje český příspěvek k cílům EU na snižování emisí, zvyšování podílu obnovitelných zdrojů energie a zvýšení energetické účinnosti. Tato grafika shrnuje proměnu české elektroenergetiky do roku 2030 podle tohoto plánu. "
-data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
+data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:   	[ [ "Původní studie", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ] ]
 ---
 

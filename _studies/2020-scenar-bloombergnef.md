@@ -8,7 +8,7 @@ weight:      93
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie BloombergNEF zkoumá možnou proměnu české elektroenergetiky do roku 2030. Tato studie modeluje nákladově nejvýhodnější vývoj. Počítá při tom se stávají úpravou emisních povolenek a nepředpokládá žádné další politické zásahy, které by cenu uhlíku zvyšovaly. Studie ukazuje, že vývoj s nejnižšími celkovými náklady také současně výrazně snižuje emise skleníkových plynů."
-data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
+data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ] ]
 ---
 
