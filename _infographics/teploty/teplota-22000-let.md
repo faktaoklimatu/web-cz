@@ -9,7 +9,7 @@ tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Zatímco v průběhu přirozeného přechodu mezi dobou ledovou a meziledovou trvalo planetě Zemi oteplení o 1 °C více než tisíc let, nyní se vlivem člověkem vypouštěných skleníkových plynů ohřála o 1 °C za méně než sto let. Podle předpovědí se od současných teplot do konce tohoto století planeta oteplí ještě o dalších 0,5–3 °C, v závislosti na množství emisí skleníkových plynů."
 data-our:   "https://docs.google.com/spreadsheets/d/1PBBQyBb2hI1R8mTeXqPT5yOt0m2IQ6DBZRCG-ogYkZ8/edit?usp=sharing"
-data-orig:	[ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ], [ "Shakun 2012", "https://doi.org/10.1038/nature10915"], ["Marcott 2013", "https://doi.org/10.1126/science.1228026"]
+data-orig:  [ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ], [ "Shakun 2012", "https://doi.org/10.1038/nature10915"], ["Marcott 2013", "https://doi.org/10.1126/science.1228026"]
  ]
 ---
 
