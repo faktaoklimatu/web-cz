@@ -11,7 +11,7 @@ weight:      92
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie Energynautics zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně analyzuje dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."
-data-our:    "https://docs.google.com/spreadsheets/d/16fITQ_Y51CWL1co734tU5hHQUAf298chxxr3q0-lFWI/edit"
+data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
   - [ "Původní studie", "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf" ]
   - [ "Doplňující analýza citlivosti", "https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf" ]
