@@ -91,41 +91,6 @@ Fungování EU ETS je rozděleno do několika fází, během nichž je systém p
 
 První fáze od roku 2005 byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následujícím textu.
 
-### Fáze I (2005–2007)
-- **Cíle**: pilotní systém
-- **Zúčastněné země**: EU 27
-- **Skleníkové plyny**: CO<sub>2</sub>
-- **Sektory**:  zařízení na výrobu energie, energeticky náročná průmyslová odvětví
-
-### Fáze II (2008–2012)
-- **Cíle**: 8% snížení emisí oproti 1990
-- **Zúčastněné země**: EU 27, Norsko, Lichtenštejnsko, Island
-- **Skleníkové plyny**: CO<sub>2</sub> + N<sub>2</sub>O (dobrovolné)
-- **Sektory**:  zařízení na výrobu energie, energeticky náročná průmyslová odvětví, letectví
-
-### Fáze III (2013–2020)
-- **Cíle**: 21% snížení emisí oproti 2005
-- **Zúčastněné země**: EU 28, Norsko, Lichtenštejnsko, Island
-- **Skleníkové plyny**: CO<sub>2</sub> + N<sub>2</sub>O +  PFCs (perfluorované uhlovodíky)
-- **Sektory**:  zařízení na výrobu energie, energeticky náročná průmyslová odvětví, letectví, výroba hliníku a chemikálií, zachycování a skladování uhlíku
-
-### Fáze IV (2021–2030)
-- **Cíle**: 43% snížení emisí oproti 2005 (redukční faktor snižování počtu povolenek je zvýšen na 2,2 % oproti předchozím 1,74 %)
-- **Zúčastněné země**: EU 27, Norsko, Lichtenštejnsko, Island
-- **Skleníkové plyny**: CO<sub>2</sub> + N<sub>2</sub>O +  PFCs (perfluorované uhlovodíky)
-- **Sektory**:  zařízení na výrobu energie, energeticky náročná průmyslová odvětví, letectví, výroba hliníku a chemikálií, zachycování a skladování uhlíku
-
-Parametry čtvrté fáze mohou být ještě dodatečně upraveny v průběhu roku 2021 v souvislosti s přijetím ambicióznějších emisních cílů Evropské unie.
-
-
-|  | Cíle |  Zúčastněné země |  Skleníkové plyny |  Sektory |
-|---|-----|---|---|---|
-| **Fáze I**  <br/> (2005–2007) | pilotní systém  | EU 27  |  CO<sub>2</sub>  | zařízení na výrobu energie, energeticky náročná průmyslová odvětví |
-| **Fáze II**  <br/> (2008–2012) | 8% snížení emisí oproti 2005  | + Norsko, Lichtenštejnsko, Island | + N<sub>2</sub>O (dobrovolné) | + letectví |
-| **Fáze III**  <br/> (2013–2020) | 21% snížení emisí oproti 2005 | + Chorvatsko | + N<sub>2</sub>O +  PFCs |  + výroba hliníku a chemikálií, zachycování a skladování uhlíku |
-|  **Fáze IV**  <br/> (2021–2030) | 43% snížení emisí oproti 2005 | - Velká Británie | (bez změny) | (v jednání) |
-
-
 {% include figure.html
     name="ets-faze.svg"
     alt="vyvoj ceny povolenky"
@@ -148,14 +113,14 @@ Parametry čtvrté fáze mohou být ještě dodatečně upraveny v průběhu rok
 
 {% include figure.html
     name="ets-overene-emise.svg"
-    alt="rozlozeni EU ETS"
-    source-text="A Guide to European Climate Policy (Carbon Market Watch)"
-    source-url="https://carbonmarketwatch.org/wp-content/uploads/2016/11/European-Climate-Policy-Guide-Part-1-ENGLISH-WEB-SINGLE.pdf"
+    alt="Ověřené emise CO2 alokované povolenky v jednotlivých letech"
+    source-text="EU Transaction Log, European Environment Agency"
+    source-url="https://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-16"
 %}
 
 {% include figure.html
     name="ets-strop.svg"
-    alt="rozlozeni EU ETS"
+    alt="Maximální množství alokovaných povolenek v jednotlivých letech"
     source-text="A Guide to European Climate Policy (Carbon Market Watch)"
     source-url="https://carbonmarketwatch.org/wp-content/uploads/2016/11/European-Climate-Policy-Guide-Part-1-ENGLISH-WEB-SINGLE.pdf"
 %}
