@@ -11,8 +11,7 @@ caption:     "Studie McKinsey hledá nákladově efektivní scénář dosažení
 "
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
-  - [ "Shrnutí (CZ)", "" ]
-  - [ "Podrobná zpráva (EN)", "" ]
+  [[ "Studie", "https://www.mckinsey.com/cz/~/media/mckinsey/locations/europe and middle east/czech republic/our work/decarbonization_report_cz_vf.pdf" ]]
 ---
 
 {% include includes-local/energeticke-scenare/jak-cist.md %}
@@ -23,115 +22,37 @@ data-orig:
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
-Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, aby více odpovídala našemu rozdělení pro rok 2019 a také dalším studiím.
+Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Pro vodní elektrárny předpokládáme stejný koeficient využití jako v současnosti a výrobu tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
 
-* **Plyn:** Studie Ember jako plyn označuje pouze paroplynové elektrárny a nové plynové kogenerační jednotky, protože stávající kogenerační jednotky nejsou předmětem optimalizace v jejich modelu. My je k této kategorii přidáváme, konkrétně kategorii _Other thermal_ z jejich podkladových dat. Kromě stávajících kogeneračních jednotek jsou v kategorii _Other thermal_ další zařízení, jako například spalovny odpadu. Ty jsou ovšem zanedbatelné instalovaným výkonem i výrobou, a tak jejich zařazení do kategorie plyn nemá znatelný vliv na grafiku ani na odhad emisí.
-* **Biomasa a bioplyn:** Studie tuto kategorii neuvádí (protože není předmětem optimalizace v modelu). My do ní z podkladových dat vybíráme kategorii _Other renewable_, což je v naprosté většině právě biomasa a bioplyn (kromě toho také biologicky rozložitelný komunální odpad).
+Studie se také odlišuje v kategorizaci bioplynu, který oproti nám zařazuje do kategorie plyn. Přesné množství bioplynu ve scénáři není známé a dle vyjádření autorů je toto množství velmi malé, a tak jsme hodnoty ve scénáři neupravovali. Kategorie plyn zde tedy zahrnuje i malé množství bioplynu a kategorie biomasa a bioplyn ve skutečnosti zahrnuje pouze biomasu.
 
 {% include includes-local/energeticke-scenare/emise.md %}
 
-Pro studii Ember je ještě třeba zdůraznit, že **ukazujeme úsporu emisí pouze z výroby elektřiny**. Studie zahrnuje také transformaci teplárenství, která by vedla k dalším úsporám emisí z výroby tepla. Tyto úspory infografika nevyčísluje (pro srovnatelnost s dalšími scénáři, které teplárenství neřeší).
+Pro studii McKinsey je ještě třeba zdůraznit, že ukazujeme úsporu emisí pouze z výroby elektřiny. Studie zahrnuje také transformaci dalších odvětví, která vede k celkovému snížení emisí o 55 % do roku 2030. Tyto celkové úspory infografika nevyčísluje (pro srovnatelnost s dalšími scénáři).
 
-## O studii Ember
+## O studii McKinsey
 
-[Ember](https://www.ember-climate.org/) je nezávislý klimatický think tank, zaměřující se na urychlení světové transformace energetiky. Součástí jeho práce je zveřejňování dat o energetice či modelování možností transformace energetiky v různých částech světa.  Studie, ze které vycházíme v této vizualizaci, byla zveřejněna v listopadu 2020 a [shrnutí studie](https://ember-climate.org/wp-content/uploads/2020/11/Cesko_bez_uhli_od_2030_Ember.pdf) je k dispozici v češtině. Pokud vás zajímají bližší detaily ohledně metodiky modelování, předpokladů a dalších parametrů modelu, nahlédněte do [podrobné zprávy v angličtině](http://www.ember-climate.org/research/coal-free-cz-2030).
+McKinsey je mezinárodní konzultační společnost, jejíž aktivity tématicky pokrývají širokou škálu odvětví. V roce 2008 česká pobočka této společnosti vydala zprávu "Náklady a potenciál snižování emisí skleníkových plynů v České republice", na kterou tato současná studie navazuje. Kromě České republiky McKinsey připravuje optimální scénáře dekarbonizace i pro další země, např. Nizozemsko či Polsko.
 
-### Zaměření studie
+### Zaměření scénáře a použitá metodika
 
-Studie Ember nabízí jeden z nejambicióznějších scénářů pro český uhelný phase-out. Tento scénář totiž zkoumá, jak se s co nejnižšími náklady dostat v roce 2030 k energetice zcela bez uhlí, tedy jak bez uhelných elektráren, tak bez uhelných tepláren. Takový razantní phase-out zkoumá pomocí zavedeného modelu, který bere v potaz celoevropský kontext. V rámci tohoto prostoru model zohledňuje:
+Cílem této studie bylo představit nákladově efektivní scénář snížení emisí skleníkových plynů České republiky odpovídající očekávaným cílům Zelené dohody pro Evropu. Studie se věnuje dekarbonizaci ve všech hlavních odvětvích produkujících skleníkové plyny, tedy energetice (včetně teplárenství), průmyslu, zemědělství, odpadovému hospodářství, zemědělství, využívání půdy (LULUCF), dopravě a budovám. 
 
-1. ekonomiku budování a provozování energetických zdrojů pomocí modelu celoevropského trhu s elektřinou během celého roku v hodinovém rozlišení,
-2. velmi zjednodušenou přenosovou soustavu (tento model agreguje každý evropský stát do jednoho uzlu a tyto uzly propojuje podle existující přenosové sítě),
-3. počasí a jeho vliv na výrobu obnovitelných zdrojů.
+Pro každou kategorii studie představuje separátně scénář do roku 2030 a scénář do roku 2050, přičemž scénáře do roku 2030 souhrnně dosahují snížení emisí o 55 % (v souladu se Zelenou dohodou pro Evropu) a scénáře do roku 2050 vedou ke klimatické neutralitě České republiky.
 
-To znamená, že výroba v jednotlivých státech a přeshraniční toky elektřiny jsou v každé hodině určovány (1) tržními mechanismy (bez předpokladů jakýchkoliv dotací), (2) limity přenosové soustavy a (3) momentálním počasím (to je důležité pro větrné a solární elektrárny).
+Pro určení optimálních scénářů v každém odvětví autoři vycházejí z jiných dosud publikovaných studií a používají vlastní nástroj společnosti McKinsey nazvaný _Decarbonization Pathways Optimizer_. Tento nástroj čerpá z více než 500 modelů z různých odvětví a hledá optimální scénář dekarbonizace, přičemž zohledňuje dostupnost zdrojů, dodavatelské řetězce, zaváděné technologie i případná omezení. Důraz je kladen na osvědčené technologie, případně technologie, které se s vysokou mírou pravděpodobnosti začnou využívat v blízké budoucnosti.
 
-V tomto rámci pak model optimalizuje výstavbu vybraných typů nových zdrojů v ČR (konkrétně paroplynových elektráren, plynových tepláren, větrných elektráren a solárních elektráren) tak, aby naplnil po celou dobu životnosti těchto zdrojů poptávku po elektřině za minimální cenu. Ani pro výstavbu obnovitelných zdrojů nejsou předpokládány žádné dotace.
+Modely ve studii vycházejí z předpokládaných cen komodit, nákladů na emisní povolenky v rámci systému EU ETS a nákladů na technologie. V případech, kdy lze vzít v úvahu více cenových scénářů, studie volí konzervativnější odhady. Pro rok 2030 tedy studie předpokládá cenu povolenek v rámci EU ETS ve výši 27 EUR za tunu a cenu zemního plynu 22 EUR/MWh (pro srovnání, novější [studie BloombergNEF](/2020-scenar-bloombergnef) předpokládá pro stejný rok cenu okolo 80 EUR za tunu).
 
-### Co studie neřeší
+### Výsledky scénáře
 
-Studie Ember optimalizuje výstavbu zdrojů jen v rámci ČR. Pro všechny ostatní státy předpokládá fixní rozvoj zdrojů a přenosové soustavy podle plánů TYNDP _Evropské sítě provozovatelů přenosových soustav_ ([ENTSO-E](https://www.entsoe.eu/)). To není zcela realistické, protože v konečném důsledku může být levnější dovážet více elektřiny ze zahraničních zdrojů, např. z off-shore větrných farem v Polsku nebo v Německu, než tuto elektřinu vyrábět lokálně. Tento model však vynucuje, aby se v Česku přibližně pokryla poptávka po elektřině domácí výrobou. Což ovšem z pohledu státu a energetické bezpečnosti může být atraktivní výsledek, a tak může případný rozdíl nákladů (mezi levným dovozem a dražší výrobou) dotovat.
+Ze studie vyplývá, že snížení množství emisí do roku 2030 o 55 % by vyžadovalo dodatečné investice ve výši 500 miliard Kč (18 miliard EUR) během tohoto desetiletí. To v nadcházející dekádě zhruba odpovídá každoroční investici ve výši 1 % HDP. Současně však autoři studie dodávají, že většina těchto investic se nakonec zaplatí (nebo dokonce přinese zisk), protože nově zaváděné technologie umožní snížení provozních nákladů. Pro srovnání, do odsíření uhelných elektráren a odstraňování škod na životním prostředí po pádu komunistického režimu bylo v ČR na začátku 90. let investováno zhruba 1,5 % HDP ročně.
 
-Studie dále nemodeluje národní přenosovou a distribuční soustavu. To znamená, že tato studie vlastně předpokládá, že elektřina vyrobená kdekoliv v ČR se dostane v kteroukoliv hodinu ke kterýmkoliv zákazníkům v ČR (a to stejné pro další státy EU). V důsledku studie není schopná vzít v potaz omezení spojená s připojením nových obnovitelných zdrojů do distribuční soustavy a s tím spojené nutné investice v infrastruktuře.
+Celkově tento scénář ukazuje, že snížení emisí o 55 % do roku 2030 je realistické. Primárními opatřeními, která lze ke splnění cíle do roku využít 2030, jsou snížení závislosti země na uhlí při výrobě elektřiny a tepla a omezení těžby uhlí. Snížení výrobních kapacit uhelných elektráren by bylo zčásti kompenzováno výrazným nárůstem kapacit na výrobu elektřiny z obnovitelných zdrojů a nárůstem kapacit výroby ze zemního plynu. Tato opatření v energetice by sama způsobila naplnění cílů do roku 2030 ze tří čtvrtin; zbylé úspory emisí mohou být dosaženy v průmyslu, dopravě a snižování energetické náročnosti budov.
 
-Tento zjednodušený přístup je použit i pro distribuci tepla. Tedy celá ČR je agregovaná a model nijak neřeší lokality, ve kterých je potřeba budovat nové teplárenské kapacity místo uhelných tepláren.
+Podle nákladově optimálního scénáře bude množství zbytkových emisí v roce 2050 činit 17 Mt CO2e, což bude kompenzováno 9 Mt CO2e záporných emisí z odvětví, která se zabývají využíváním půdy (LULUCF). Zbylých 8 Mt CO2e emisí by muselo být zredukováno prostřednictvím zachycování, využívání a ukládání CO2 (CCS). I kdyby však technologie CCS nebyly do roku 2050 k dispozici v požadovaném měřítku, poklesly by v porovnání s výchozím rokem 1990 emise skleníkových plynů o více než 95 procent.
 
-## Metodika modelování studie Ember
+Podle studie bude dosažení klimatické neutrality v roce 2050 vyžadovat v letech 2031–2050 dodatečné investice ve výši 4 bilionů Kč (tj. 150 miliard EUR), což odpovídá přibližně 4 procentům HDP za uvedené období. Tyto investice budou nutné k rozsáhlé elektrifikaci
+dopravy a systémů vytápění a chlazení, ke změně technologií v průmyslu, ke zvyšování kapacity zařízení na výrobu obnovitelné energie, dokončení výstavby plánovaných nových bloků jaderných elektráren v souladu s Národním investičním plánem ČR, ke snížení energetické náročnosti budov v celé ČR a budování úložišť uhlíku, jichž bude zapotřebí k vyrovnání zbytkových emisí skleníkových plynů.
 
-Ember pro tento model použil zavedený nástroj [Artelys Crystal Supergrid](https://www.artelys.com/crystal/super-grid/), který umožňuje plánovat a optimalizovat investice v elektrizační soustavě. Tento model stojí na řadě předpokladů:
-
-### Kontext
-
-* U energetiky v jiných evropských zemích se předpokládá vývoj podle plánů TYNDP _Evropské sítě provozovatelů přenosových soustav_ [ENTSO-E](https://www.entsoe.eu/), konkrétně scénář _Sustainable Transition_ z [verze plánů z roku 2018](https://tyndp.entsoe.eu/tyndp2018/). Výhled pro uhelné kapacity okolních zemí podle tohoto scénáře je zhruba konzistentní s jejich národními plány NECP.
-* Vzhledem k omezeným datům o dalších státech EU je modelování provedeno pouze pro roky 2020, 2025 a 2030.
-* Přenosová soustava je zjednodušená na vedení vysokého napětí propojující jednotlivé státy.
-* Poptávka po elektřině se vyvíjí podle predikce NECP.
-* Počasí je v modelu zohledněno pomocí průběhu ve třech referenčních obdobích (roky 2002, 2006 a 2010) hodinu po hodině. Tyto roky byly vybrány tak, aby zachytily možnou meziroční variabilitu počasí. Toto je jediný nástroj, který tato studie používá ke zkoumání extrémních vlivů počasí na stabilitu sítě.
-
-### Omezení instalovaného výkonu
-
-U některých zdrojů model předpokládá vývoj instalovaného výkonu podle plánů NECP, konkrétně u jaderných, vodních a přečerpávacích elektráren, stejně jako u elektráren na biomasu a bioplynových stanic. Další instalovaný výkon model nechává optimalizovat v rámci určitých omezení:
-
-* Uhlí musí do roku 2025 omezit instalovaný výkon o 40 %, do roku 2030 pak o 100 %, tedy na 0 GW.
-* Nově instalovaný výkon u solárních a větrných instalací je podle expertních odhadů omezen ve dvou obdobích (mezi lety 2020–2025 a mezi lety 2025–2030). V součtu tak nesmí v roce 2030 instalovaný výkon překročit 10 GW u slunce a 4 GW u větru.
-* Plynové teplárny musí přidat alespoň 250 MW výkonu (podle plánů NECP).
-* Jediné paroplynové elektrárny nejsou jakkoliv omezené.
-
-### Teplárenství
-
-Model se zaměřuje jen na teplo v současnosti vyráběné z uhlí (asi 60 PJ v roce 2019). Vývoje poptávky po teple z uhelných elektráren odhadují následovně:
-
-* Celkovou poptávku po teple odvozují z predikce NECP (9 % snížení oproti 2016) a z dalších studií o zateplování budov. Odhadují tak celkové snížení o 15 % v roce 2030 oproti roku 2019.
-* U neuhelných zdrojů tepla předpokládají postupný rozvoj podle NECP.
-* U uhelných tepláren, které nevyrábějí elektřinu, předpokládají úplnou náhradu za jiný zdroj (vzhledem k současnému ekonomickému tlaku na uhelné teplárny).
-
-Z toho vychází, že **v roce 2030 bude potřeba pokrýt 40 PJ tepla jako náhradu za odstavené uhelné elektrárny**. Optimální výrobu tohoto chybějícího tepla hledají za následujících omezení:
-
-* Na základě studií o využití odpadního tepla (z průmyslu) v ČR odhadují potenciál tohoto zdroje do roku 2030 na 11 PJ. Tato výroba tepla může probíhat nepřetržitě, a proto o tuto hodnotu snižují poptávku.
-* Pro zbývající poptávku umožňují kombinaci velkých tepelných čerpadel (s topným faktorem 3,5), kogeneračních jednotek na plyn nebo biomasu a tepláren na plyn nebo biomasu. Vynucují, aby alespoň 15 PJ bylo pokryto kogeneračními jednotkami nebo teplárnami. Toto množství tepla odpovídá odhadu poptávky po teple v průmyslových podnicích, kde konzervativně očekávají náhradu uhlí za technicky obdobné řešení.
-
-## Výsledky studie Ember
-
-### Náhrada uhlí ve výrobě elektřiny
-
-Studie přináší tyto hlavní výsledky:
-
-* Obnovitelné zdroje v nákladové optimalizaci naplnily limity na nový instalovaný výkon. To znamená, že i v českých klimatických podmínkách bude ekonomicky výhodné bez státních dotací výrazně rozvíjet obnovitelné zdroje. Podíl těchto zdrojů ve výrobě elektřiny podle tohoto modelu v roce 2030 tvoří 38 %.
-* Odstavení uhelných elektráren a rozvoj obnovitelných zdrojů (jejichž dodávky závisí na počasí) vyžaduje výrazné navýšení instalovaného výkonu plynových elektráren. Ty fungují do velké míry jako záloha v době, kdy nesvítí slunce nebo nefouká vítr. Nejde jen o průběh výroby během dne, ale také o sezónní variace – elektřiny z plynu je více potřeba v zimě než v létě. Výhodnost provozu paroplynových elektráren ovšem do velké míry závisí na rozvoji zdrojů v okolních zemích a rozvoji bateriových úložišť (viz níže).
-* Čistý export elektřiny postupně klesá se zavíráním hnědouhelných elektráren až k mírnému deficitu exportu v roce 2030.
-* S odhadovanými investičními náklady okolo 10,5 mld. euro (necelých 300 miliard korun) je to v našem srovnání nejdražší scénář. Z toho by asi polovina investic šla do solárních instalací a asi 30 % do větrných elektráren. Celková suma ovšem neobsahuje investice do přenosové a distribuční soustavy, protože použitý model je neumožňuje odhadnout.
-
-Nakolik je takový rozvoj obnovitelných zdrojů realistický, záleží ve velké míře na aktivitě firem, ochotě státní správy a provozovatelů distribuční soustavy a také ve velké míře na souhlasu obyvatelstva. Pro srovnání, nejaktivnější rok minulého solárního boomu byl rok 2010, kdy se podle dat ERÚ připojilo do sítě asi 1,5 GW instalovaného výkonu solárních elektráren. Scénář Ember předpovídá rozvoj o necelé 3 GW v příštích 5 letech a o dalších cca 5 GW v letech 2025–2030 (tedy asi 1 GW za rok).
-
-### Jak funguje síť s tolika obnovitelnými zdroji
-
-Stabilita dodávek je zajištěna pomocí dostatečné zálohy plynových zdrojů. Maximální spotřeba napříč celým rokem 2030 (a napříč všemi modelovými roky počasí) je 12,6 GW. Instalovaný výkon všech řiditelných zdrojů je 13,95 GW, což dává dostatečnou rezervu i pro odstávku jednoho jaderného bloku.
-
-Na druhou stranu je podle modelu elektřina z obnovitelných zdrojů často importována nebo exportována. Silně propojená evropská soustava tak umožňuje zužitkovat přebytky v elektřině z jednoho státu v okolních státech. Podle modelu tak při této míře obnovitelných zdrojů (i bez baterií) nedochází k vynucenému odstavení obnovitelných zdrojů při nadbytku výroby kvůli stabilizaci sítě.
-
-### Náhrada uhlí v teplárenství
-
-Pro transformaci teplárenství odhadují náklady okolo 2,2 mld. euro. Toto zahrnuje jen výše zmíněných 40 PJ tepla a nezahrnuje tak rozvoj dalších zdrojů tepla očekávaný v NECP.
-
-* Nákladově nejvýhodnější je využití odpadního tepla (investice asi 92 mil. euro), kde skutečným limitem je jen potenciál tohoto zdroje.
-* Pro svůj výhodný provoz naplnila maximální limit instalace také velká tepelná čerpadla. A to přes výrazné vstupní náklady (odhadovaná investice je 1,35 mld. euro i bez nákladů na integraci do stávající infrastruktury). Očekávaná spotřeba elektřiny je asi 1,2 TWh za rok a je přidána k odhadu poptávky pro optimalizaci výroby elektřiny.
-* Zbylou poptávku plní ve velké míře nové plynové kogenerační jednotky a v zanedbatelné míře plynové teplárny.
-* Biomasa pro velké provozní náklady v této optimalizaci není použita vůbec (nad rámec odhadů v NECP).
-
-## Varianty scénáře Ember
-
-Ember ještě kromě hlavního scénáře modeloval dva alternativní.
-
-### Referenční scénář
-
-V tomto scénáři nebyl požadován uhelný phase-out. Rozvoj instalovaného výkonu všech ostatních zdrojů byl pro rok 2030 stanoven podle predikcí [scénáře NECP](2019-scenar-necp). V tomto velmi těsném rámci pak probíhala optimalizace výroby elektřiny podle nejnižších nákladů.
-
-Tento scénář vedl k velmi pomalu klesajícímu instalovanému výkonu uhelných elektráren, k pomalu klesajícímu čistému exportu (5,8 TWh) a k nižšímu poměru výroby z obnovitelných zdrojů (18,6 %).
-
-Pro srovnání, [scénář BloombergNEF](2020-scenar-bloombergnef) také nevyžaduje uhelný phase-out, ale přichází k jiným výsledkům primárně díky větší flexibilitě ve výstavbě plynových, solárních a hlavně větrných elektráren.
-
-### Scénář s bateriemi
-
-Stejný jako hlavní scénář, jen vyžaduje instalaci bateriových systémů pro solární elektrárny. Konkrétně jde o Li-ion baterie s 2 GW instalovaného výkonu (to odpovídá 20 % solárního instalovaného výkonu) a kapacitou na 2 hodiny.
-
-Tento scénář vedl ke snížené výstavbě paroplynových elektráren (v roce 2030 celkem 3 GW, tedy o 1 GW méně než v hlavním scénáři). V důsledku nasazení baterií nejsou přebytky v obnovitelné výrobě exportované, ale později (během večerní špičky) spotřebované v Česku (+0,5 TWh). To nadále oslabuje ekonomiku provozu plynových elektráren (−1,4 TWh) a místo toho upřednostňuje import (+1 TWh).
+I když jsou podle studie náklady na dosažení nulové bilance do roku 2050 značné, příštích třicet let přinese významné příležitosti k modernizaci, neboť velká část stávající infrastruktury a průmyslových zařízení dospěje ke konci své životnosti. Chceme-li mít možnost dosáhnout do roku 2050 čisté nulové bilance, musí být některé změny v plném proudu již ke konci 20. let 21. století. Do roku 2030 je třeba výrazně pokročit zejména v následujících oblastech: přechod od fosilních paliv k elektřině v dopravě, výrazné rozšíření kapacity obnovitelných zdrojů energie, snižování energetické náročnosti budov a nalezení dlouhodobého řešení pro české teplárenství.
