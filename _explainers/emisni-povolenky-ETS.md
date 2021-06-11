@@ -26,14 +26,14 @@ Elektrárny a průmyslové závody vypouštějící skleníkové plyny dnes mus�
 
 Každý rok vydává EU určité množství těchto povolenek (angl. European Emission Allowance, EUA), přičemž toto množství (tzv. **emisní strop**) se během let rovnoměrně snižuje – v souladu s emisními cíli EU. Systém tak umožňuje kontrolovat a průběžně redukovat množství emisí ze zahrnutých sektorů. 
 
-Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze (v anglicky psané literatuře je ETS často označováno "cap-and-trade", neboť se zde strop pro celkové emise kombinuje s volným obchodováním mezi jednotlivými emitenty skleníkových plynů). Jejich emise jsou monitorovány, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
-
 {% include figure.html
     name="ets-system.svg"
     alt="Jak funguje povolenkový systém EU: Kdo více znečišťuje, ten více platí."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
+
+Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze (v anglicky psané literatuře je ETS často označováno "cap-and-trade", neboť se zde strop pro celkové emise kombinuje s volným obchodováním mezi jednotlivými emitenty skleníkových plynů). Jejich emise jsou monitorovány, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
 
 Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, stojí před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky? 
 
@@ -79,9 +79,16 @@ Kromě toho zahrnuje přibližně 600 provozovatelů letadel v rámci [Evropské
 V letech 2013–2020 bylo bezplatně přiděleno cca 43 % povolenek, především pro emisně intenzivní průmyslová odvětví. Zbylých 57 % bylo určeno k vydražení (skutečný počet vydražených povolenek byl však nižší). Bezplatné emisní povolenky jsou určeny takovým odvětvím hospodářství, ve kterých by bylo snadné přesunout výrobu do zemí, kde nejsou emise skleníkových plynů omezovány. Při důsledném uplatnění dražby povolenek by tak mohlo docházet k odlivu výrobních závodů z EU a navýšení emisí v jiných zemích. Množství bezplatně přidělovaných povolenek je postupně snižováno a například výroba elektřiny již není pro přidělování bezplatných povolenek způsobilá od roku 2013 (nicméně některé státy, včetně České republiky, si vyjednaly výjimku z tohoto pravidla až do roku 2019).[^1]
 
 ## Jakým způsobem je stanoveno maximální množství povolenek?
-Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální množství povolenek od roku 2013 rovnoměrně snižováno. V roce 2013 bylo vydáno 2,1 miliardy emisních povolenek a až do roku 2020 to každoročně bylo o 38 milionů méně – aby bylo zajištěno snížení emisí alespoň o 21 % v zahrnutých odvětvích (ve srovnání s rokem 2005). 
+Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální množství povolenek od roku 2013 rovnoměrně snižováno. V roce 2013 bylo vydáno 2,1 miliardy emisních povolenek a až do roku 2020 to každoročně bylo o 38 milionů méně – aby bylo zajištěno snížení emisí alespoň o 21 % v zahrnutých odvětvích (ve srovnání s rokem 2005).[^4]
 
 V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005) – tento cíl je nyní ještě upravován v rámci [Zelené dohody pro Evropu](https://cs.wikipedia.org/wiki/Zelená_dohoda_pro_Evropu).
+
+{% include figure.html
+    name="ets-strop.svg"
+    alt="Maximální množství alokovaných povolenek v jednotlivých letech"
+    source-text="Evropská komise, EU"
+    source-url="https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf"
+%}
 
 ## Jak je nakládáno s financemi získanými v aukcích?
 Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2012–2019 přibližně 50 miliard eur (z toho 14 miliard byly výnosy v roce 2019, kdy byla cena povolenek nejvyšší). Dražba probíhá v rámci každého ze zapojených států – ty také rozhodují o konkrétním využití prostředků, které se aukcí vyberou. Z celkového obnosu bylo vynaloženo na klimatické a energetické účely 78 %, a to především na energii z obnovitelných zdrojů, zvyšování energetické účinnosti a udržitelnou dopravu.[^1]
@@ -119,12 +126,7 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
     source-url="https://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-16"
 %}
 
-{% include figure.html
-    name="ets-strop.svg"
-    alt="Maximální množství alokovaných povolenek v jednotlivých letech"
-    source-text="Evropská komise, EU"
-    source-url="https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf"
-%}
+V letech 2009–2013 alokované povolenky převyšovaly celkové ověřené emise, navíc mnoho zařízení také uplatňovalo mezinárodní kredity podle Kjótského protokolu na pokrytí svých emisí. Nadměrné množství povolenek v systému bylo hlavní příčinou propadu ceny v následujících letech, odstranění části povolenek vedlo k opětovné stabilizaci cen.
 
 ## Jaké systémy ETS se používají mimo Evropu?
 
@@ -142,5 +144,6 @@ Některé státy zpoplatňují emise skleníkových plynů pomocí tzv. uhlíkov
 ## Zdroje
 [^1]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem"](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52020DC0740) Zpráva komise Evropskému parlamentu a Radě, Evropská komise, Brusel (2020).
 [^2]: World Bank. ["State and Trends of Carbon Pricing 2020"](https://openknowledge.worldbank.org/handle/10986/33809) (May), World Bank, Washington, DC (2020).
-[^3]: High-Level Commission on Carbon Prices. ["Report of the High-Level Commission on Carbon Prices."]() World Bank, Washington, DC (2017).
+[^3]: High-Level Commission on Carbon Prices. ["Report of the High-Level Commission on Carbon Prices."](https://openknowledge.worldbank.org/handle/10986/32419) World Bank, Washington, DC (2017).
+[^4]: Evropská komise. ["Commission decision on the Union-wide quantity of allowances to be issued under the EU Emission Trading System for 2021"](https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf) Evropská komise, Brusel (2020).
 
