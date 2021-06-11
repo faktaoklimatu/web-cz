@@ -13,17 +13,7 @@ search_type: "Aktuality"
         <p class="lead">{{ page.intro }}</p>
         <p class="lead">Chcete dostávat pravidelné aktualizace přes email? Přihlaste se k odběru našeho newsletteru: Krátký sumář novinek na našem webu maximálně jednou za měsíc (a spíše méně často).</p>
 
-        <form class="subscription-form" action="{{ site.newsletter }}" target="_blank" method="post">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Vaše emailová adresa:</span>
-                </div>
-                <input type="text" class="form-control" placeholder="email@email.cz" name="email" id="tlemail" aria-label="Emailová adresa" />
-                <div class="input-group-append">
-                    <input type="submit" class="btn btn-primary" value="Přihlásit se k odběru novinek" />
-                </div>
-            </div>
-        </form>
+        <a href="#newsletter-modal" class="btn btn-primary" id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal"><i class="fas fa-fw fa-envelope-open-text"></i> Přihlásit se k newsletteru</a>
          
     </div>
 </div>

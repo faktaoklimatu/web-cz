@@ -31,7 +31,7 @@ sitemap:    false
         <p class="lead">I díky vašemu příspěvku můžeme dál fungovat. V případě dotazů se nám neváhejte ozvat na <a href="mailto:dary@faktaoklimatu.cz" title="Kontaktní adresa pro dárce">dary@faktaoklimatu.cz</a>.</p>
         <hr/>
         <p class="pb-2">Chcete-li být informováni o novinkách, přihlaste se do odběru našeho newslettru nebo sledujte náš Twitter.</p>
-        <a href="{{ site.newsletter }}" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
+        <a href="#newsletter-modal" class="btn btn-primary" id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
         <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
         <figure class="d-md-none w-100 mt-2">
             <img src="/assets-local/team/fakta-tym.jpg" class="rounded w-100" alt="Jádro týmu Fakta o klimatu"/>
