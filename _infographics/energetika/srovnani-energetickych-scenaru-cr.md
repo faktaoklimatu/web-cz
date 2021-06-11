@@ -7,7 +7,7 @@ published:   2020-11-20
 weight:      73
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
-caption:     "Srovnání čtyř nedávných scénářů pro transformaci české elektroenergetiky do roku 2030. Scénáře se radikálně liší ve svém dopadu na snížení emisí skleníkových plynů souvisejících s výrobou elektřiny. Stejně tak se scénáře liší zaměřením a použitou metodikou."
+caption:     "Srovnání pěti nedávných scénářů pro transformaci české elektroenergetiky do roku 2030. Scénáře se radikálně liší ve svém dopadu na snížení emisí skleníkových plynů souvisejících s výrobou elektřiny. Stejně tak se scénáře liší zaměřením a použitou metodikou."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
   - [ "Ember", "https://ember-climate.org/project/coal-free-czechia-2030/" ]
@@ -28,20 +28,22 @@ V této infografice dáváme srovnání více scénářů vývoje [elektroenerge
     class="double-preview-box"
     card_class="col-6 p-1"
     text="Ke každému scénáři jsme připravili detailní samostatnou infografiku."
-    slug="2020-scenar-ember,2018-scenar-energynautics,2020-scenar-bloombergnef,2019-scenar-necp"
+    slug="2020-scenar-bloombergnef,2020-scenar-ember,2020-scenar-mckinsey,2018-scenar-energynautics,2019-scenar-necp"
 %}
 
 Postupný odklon od fosilních zdrojů a nejvíce pak od uhlí znamená snížení **emisí skleníkových plynů**. Každá studie takové snížení počítá pomocí vlastní metodiky (a nebo nepočítá vůbec). Proto pro všechny studie **uvádíme náš výpočet snížení emisí**, založený na rozdílu v mixu výroby mezi lety 2019 a 2030 a na emisních koeficientech od IPCC. Více o metodice výpočtu najdete níže.
 
 **Ve spodní části grafiky** srovnáváme vybrané aspekty jednotlivých scénářů. V této tabulce ukazujeme rozdíl v zaměření jednotlivých scénářů a v metodice použité při jejich vytváření.
 
+Samozřejmě bylo v průběhu let zpracováno více scénářů transformace české energetiky, než jsme schopni srovnat v jedné grafice, více jich najdete v naší [rešerši](/2020-reserse-transformace-energetiky).
+
 ### V čem se scénáře liší
 
-Nejzásadnější rozdíl je v samotném **energetickém mixu** a tím pádem v dopadu scénářů na snížení <glossary id="antropogennisklenikoveplyny">emisí skleníkových plynů</glossary>. Tato metrika nejvíce souvisí s podílem uhlí a zemního plynu na výrobě elektřiny. Scénáře se ovšem také podstatně liší v poměru mezi výrobou ze slunce, větru a z biomasy a bioplynu. Jediný scénář BloombergNEF má biomasu a bioplyn jako součást tržní optimalizace a dochází k překvapivému snížení výroby. Scénář BloombergNEF má také výrazný nepoměr mezi sluncem a větrem -- ve prospěch větrných elektráren, které mají oproti solárním panelům vyrovnanější výrobu během dne i během roku. Díky tomu si tak tento mix dokáže vystačit s menším množstvím instalovaného výkonu plynových elektráren.
+Nejzásadnější rozdíl je v samotném **energetickém mixu** a tím pádem v dopadu scénářů na snížení <glossary id="antropogennisklenikoveplyny">emisí skleníkových plynů</glossary>. Tato metrika nejvíce souvisí s podílem uhlí a zemního plynu na výrobě elektřiny. Scénáře se ovšem také podstatně liší v poměru mezi výrobou ze slunce, větru a z biomasy a bioplynu. Jediné scénáře BloombergNEF a McKinsey mají biomasu a bioplyn jako součást tržní optimalizace a docházejí k překvapivému snížení výroby. Scénář BloombergNEF má také výrazný nepoměr mezi sluncem a větrem -- ve prospěch větrných elektráren, které mají oproti solárním panelům vyrovnanější výrobu během dne i během roku. Díky tomu si tak tento mix dokáže vystačit s menším množstvím instalovaného výkonu plynových elektráren.
 
-Scénáře se liší v **míře předvídaného [uhelného phase-outu](/infografiky/uhelny-phaseout-eu)**. Scénář Energynautics uvažuje odstavení _uhelných elektráren_, přesto zbývá nezanedbatelná výroba elektřiny z uhelných tepláren (kombinovaná výroba elektřiny a tepla). Scénáře NECP a BloombergNEF plánují odstavení jen některých uhelných elektráren, zatímco scénář Ember počítá s odstavením všech uhelných elektráren i tepláren.
+Scénáře se liší v **míře předvídaného [uhelného phase-outu](/infografiky/uhelny-phaseout-eu)**. Scénáře NECP a McKinsey plánují odstavení jen některých uhelných elektráren. Scénář Energynautics uvažuje odstavení všech uhelných _elektráren_, přesto zbývá nezanedbatelná výroba elektřiny z uhelných tepláren (kombinovaná výroba elektřiny a tepla). Scénáře Ember a BloombergNEF zacházejí nejdále a počítají s odstavením všech uhelných _elektráren i tepláren_.
 
-Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Například scénář Energynautics se zaměřuje na stabilitu přenosové soustavy, a proto stanovuje instalovaný výkon jednotlivých zdrojů na základě expertních odhadů. Naopak scénáře Ember a BloombergNEF hledají změny v instalovaném výkonu pomocí tržní optimalizace. Scénář Ember při tom zkoumá, jak by vypadala varianta úplného uhelného phase-outu, zatímco scénář BloombergNEF posuzuje variantu s celkově nejnižšími náklady.
+Scénáře se v poslední řadě liší ve svém **zaměření a metodice**. Například scénář Energynautics se zaměřuje na stabilitu přenosové soustavy, a proto stanovuje instalovaný výkon jednotlivých zdrojů na základě expertních odhadů. Naopak scénáře Ember, BloombergNEF a McKinsey hledají změny v instalovaném výkonu pomocí tržní optimalizace. Scénář Ember při tom v rámci zadání zkoumá, jak by vypadala varianta úplného uhelného phase-outu, zatímco scénáře BloombergNEF a McKinsey posuzují variantu s celkově nejnižšími náklady.
 
 {% include includes-local/energeticke-scenare/v-cem-se-shoduji.md %}
 
@@ -55,12 +57,16 @@ Kromě toho zbývá malá kategorie ostatní výroby, kterou pro přehlednost ne
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
+**[BloombergNEF](/studie/2020-scenar-bloombergnef):** Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Pro vodní elektrárny předpokládáme stejný koeficient využití jako v současnosti a výrobu tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
+
 **[Ember](/studie/2020-scenar-ember):** Oproti číslům udávaným v samotné studii mírně upravujeme kategorizaci, aby více odpovídala našemu rozdělení pro rok 2019 a také dalším studiím.
 
 * **Plyn:** Studie Ember jako plyn označuje pouze paroplynové elektrárny a nové plynové kogenerační jednotky, protože stávající kogenerační jednotky nejsou předmětem optimalizace v jejich modelu. My je k této kategorii přidáváme, konkrétně kategorii _Other thermal_ z jejich podkladových dat. Kromě stávajících kogeneračních jednotek jsou v kategorii _Other thermal_ další zařízení, jako například spalovny odpadu. Ty jsou ovšem zanedbatelné instalovaným výkonem i výrobou, a tak jejich zařazení do kategorie plyn nemá znatelný vliv na grafiku ani na odhad emisí.
 * **Biomasa a bioplyn:** Studie tuto kategorii neuvádí (protože není předmětem optimalizace v modelu), my do ní z podkladových dat vybíráme kategorii _Other renewable_, což je v naprosté většině právě biomasa a bioplyn (kromě toho také biologicky rozložitelný komunální odpad).
 
-**[BloombergNEF](/studie/2020-scenar-bloombergnef):** Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
+**[McKinsey](/studie/2020-scenar-mckinsey):** Stejně jako u studie BloombergNEF, upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Pro vodní elektrárny předpokládáme stejný koeficient využití jako v současnosti a výrobu tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
+
+Studie se také odlišuje v kategorizaci bioplynu, který oproti nám zařazuje do kategorie plyn. Přesné množství bioplynu ve scénáři není známé a dle vyjádření autorů je toto množství velmi malé, a tak jsme hodnoty ve scénáři neupravovali. Kategorie plyn zde tedy zahrnuje i malé množství bioplynu a kategorie biomasa a bioplyn ve skutečnosti zahrnuje pouze biomasu.
 
 **[Energynautics](/studie/2018-scenar-energynautics):** Čísla udávaná přímo ve studii dobře odpovídají naší kategorizaci, takže je přímo přebíráme.
 
