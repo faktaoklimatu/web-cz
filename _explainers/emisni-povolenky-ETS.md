@@ -28,10 +28,10 @@ Každý rok vydává EU určité množství těchto povolenek (angl. European Em
 Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. (v anglické literatuře je ETS často označováno cap-and-trade, protože je kombinován strop pro celkové emise s volným obchodováním mezi emitenty skleníkových plynů). Jejich emise jsou monitorovány, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
 
 {% include figure.html
-    name="eu_ets_schema.JPG"
-    alt="schema systemu EU ETS"
-    source-text="EU Emissions Trading System (ETS) (EEA)"
-    source-url="https://www.eea.europa.eu/data-and-maps/dashboards/emissions-trading-viewer-1"
+    name="ets-system.svg"
+    alt="Jak funguje povolenkový systém EU: Kdo více znečišťuje, ten více platí."
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
 %}
 
 Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, určitě se jim to vyplatí a stojí pak před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky? 
@@ -55,10 +55,10 @@ Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenk
 K redukování množství emisí však přesto dochází, neboť emisní strop EU postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí je pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.  
 
 {% include figure.html
-    name="vyvoj_ceny_povolenky.JPG"
-    alt="vyvoj ceny povolenky"
-    source-text="Daily EU ETS carbon market price (Ember)"
-    source-url="https://ember-climate.org/data/carbon-price-viewer/"
+    name="ets-cena-povolenek.svg"
+    alt="Historické ceny futures kontraktů na emisní povolenky."
+    source-text="Historické ceny futures kontraktů na emisní povolenky, Quandl, ICE"
+    source-url="https://www.quandl.com/data/CHRIS/ICE_C1"
 %}
 
 ## Která odvětví jsou do systému zahrnuta?
@@ -118,6 +118,22 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 Parametry čtvrté fáze mohou být ještě dodatečně upraveny v průběhu roku 2021 v souvislosti s přijetím ambicióznějších emisních cílů Evropské unie.
 
 
+|  | Cíle |  Zúčastněné země |  Skleníkové plyny |  Sektory |
+|---|-----|---|---|---|
+| **Fáze I**  <br/> (2005–2007) | pilotní systém  | EU 27  |  CO<sub>2</sub>  | zařízení na výrobu energie, energeticky náročná průmyslová odvětví |
+| **Fáze II**  <br/> (2008–2012) | 8% snížení emisí oproti 2005  | + Norsko, Lichtenštejnsko, Island | + N<sub>2</sub>O (dobrovolné) | + letectví |
+| **Fáze III**  <br/> (2013–2020) | 21% snížení emisí oproti 2005 | + Chorvatsko | + N<sub>2</sub>O +  PFCs |  + výroba hliníku a chemikálií, zachycování a skladování uhlíku |
+|  **Fáze IV**  <br/> (2021–2030) | 43% snížení emisí oproti 2005 | - Velká Británie | (bez změny) | (v jednání) |
+
+
+{% include figure.html
+    name="ets-faze.svg"
+    alt="vyvoj ceny povolenky"
+    source-text="Daily EU ETS carbon market price (Ember)"
+    source-url="https://ember-climate.org/data/carbon-price-viewer/"
+%}
+
+
 ## V čem EU ETS funguje dobře a v čem ne?
 
 **Výhody** 
@@ -131,7 +147,14 @@ Parametry čtvrté fáze mohou být ještě dodatečně upraveny v průběhu rok
 - Budoucí ceny povolenek jsou nepředvídatelné,  která komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
 
 {% include figure.html
-    name="eu_ets.JPG"
+    name="ets-overene-emise.svg"
+    alt="rozlozeni EU ETS"
+    source-text="A Guide to European Climate Policy (Carbon Market Watch)"
+    source-url="https://carbonmarketwatch.org/wp-content/uploads/2016/11/European-Climate-Policy-Guide-Part-1-ENGLISH-WEB-SINGLE.pdf"
+%}
+
+{% include figure.html
+    name="ets-strop.svg"
     alt="rozlozeni EU ETS"
     source-text="A Guide to European Climate Policy (Carbon Market Watch)"
     source-url="https://carbonmarketwatch.org/wp-content/uploads/2016/11/European-Climate-Policy-Guide-Part-1-ENGLISH-WEB-SINGLE.pdf"
