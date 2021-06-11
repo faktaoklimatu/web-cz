@@ -104,6 +104,13 @@ items:
         url:  https://mpo.cz/
     timeframe: 2030 až 2040
     study:     2019-scenar-necp
+  - title:   "Czech Power Grid without Electricity from Coal by 2030: Sensitivity Analysis"
+    url:     "https://frankbold.org/sites/default/files/publikace/sensitivity_analysis_czech_grid_without_coal_by_2030.pdf"
+    date:    Říjen 2018
+    authors:
+      - name: Energynautics
+        url:  https://energynautics.com/en/
+    timeframe: "2030"
   - title:   "Czech Power Grid without Electricity from Coal by 2030"
     url:     "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf"
     date:    Květen 2018
