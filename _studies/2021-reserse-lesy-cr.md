@@ -34,38 +34,38 @@ categories:
         link: "https://www.kurovcovamapa.cz/"
         note: "Kůrovcová mapa je projekt, který vznikl ze spolupráce Kůrovcového infa a ÚHÚLu a to pomocí analýzy satelitních snímků. Poskytuje přiblížitelnou mapu s vrstvami, kde lze vidět konkrétní postižená místa."
       - name: "OPRL"
-        organiztaion: "ÚHÚL"
+        source: "ÚHÚL"
         link: "http://www.uhul.cz/nase-cinnost/385-oblastni-plany-rozvoje-lesu/textove-casti/997-platne-dokumeny-oprl"
         note: "Oblastní plány rozvoje lesů obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí a jsou metodickým nástrojem státní lesnické politiky. OPRL jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO). Součástí textové části je i dokument klimatické změny a návrhy adaptace na klimatickou změnu v dané PLO. První vlna OPRL doběhla v roce 2000."
         validity: "2000"
       - name: "OPRL2"
-        organization: "ÚHÚL"
+        source: "ÚHÚL"
         link: "http://www.uhul.cz/nase-cinnost/373-oblastni-plany-rozvoje-lesu/oprl2/850-kalendar-zakladnich-a-zaverecnych-setreni"
         note: "OPRL pro rok 2020, momentálně je zpracovaná ne pro všechny PLO"
         validity: "2020"
       - name: "NIL"
-        organization: "ÚHÚL"
+        source: "ÚHÚL"
         link: "http://nil.uhul.cz/"
         note: "Národní inventarizaci lesů (NIL) zpracovává ÚHÚL. Cíle jsou: poskytnout údaje k dlouhodobé kontrole důsledků státní lesnické politiky a dotační politiky státu na stav lesů,  ověření trendu vývoje porostních zásob, přírůstů dřevní hmoty, nárůstu či poklesu těžeb v návaznosti na jejich reálnou únosnou výši, struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů, charakteristika lesních ekosystémů. NIL1 probíhal v období 2001-2004, NIL2 pak 2011-2015."
         validity: "2001-2015"
   - name: "Studie"
     items:
-      - mainSource: "Strategie přizpůsobení se změně klimatu v podmínkách ČR, Národní akční plán adaptace na změnu klimatu"
-        subtitle: "Vliv změny klimatu na lesní hospodářství a možná adaptační opatření"
+      - name: "Vliv změny klimatu na lesní hospodářství a možná adaptační opatření"
+        source: "Strategie přizpůsobení se změně klimatu v podmínkách ČR, Národní akční plán adaptace na změnu klimatu"
         link: "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf"
         note: "Adaptační strategie ČR je dokument shrnující dopady změny klimatu  a předkládá sjednaná adaptační opatření, jejichž cílem je zmírnění dopadů změny klimatu. V rámci strategie je řešeno i lesní hospodářství, a to hlavně v kontextu sucha a možných extrémních projevů počasí. Sucho snižuje přirozenou obranyschopnost lesních porostů vůči různým škůdcům a silnému větru a zároveň zvyšuje riziko lesních požárů. Zpracovalo MŽP. Infografika už je zpracována zde: https://faktaoklimatu.cz/infografiky/adaptacni-strategie-cr"
         validity: "2015–2020, s výhledem na rok 2030"
-      - mainSource: "FAO"
-        subtitle: "FRA pro ČR 2015"
+      - name: "FRA pro ČR 2015"
+        source: "FAO"
         link: "http://www.fao.org/3/az196e/az196e.pdf"
         note: "FAO co pět let zpracovává souhrnou studii o stavu lesů na celé planetě na základě dílčích studií vypracovaných jednotlivýma členskýma zeměma (Forest Resources Assessment, aneb FRA). Za Českou republiku tuto studii zpracovává ÚHÚL."
         validity: "2015"
-      - mainSource: "FAO"
-        subtitle: "FRA pro ČR 2020"
+      - name: "FRA pro ČR 2020"
+        source: "FAO"
         link: "http://www.fao.org/3/ca9984en/ca9984en.pdf"
         validity: "2020"
-      - mainSource: "ÚHÚL"
-        subtitle: "NIL2 výsledky"
+      - name: "NIL2 výsledky"
+        source: "ÚHÚL"
         link: "http://nil.uhul.cz/downloads/kniha_NIL2_web.pdf"
         validity: "2011-2015"
   - name: "(Nejen)Odborné (nejen)články"
@@ -116,119 +116,32 @@ categories:
         note: "Mapa ohrožení lesních půd acidifikací a nutriční degradací vznikla algebraickou kombinací šesti vstupních geoinformačních vrstev – geologická mapa, typologická mapa, průměrné roční teploty, průměrné roční srážky, atmosférická depozice síry (S), atmosférická depozice dusíku (N)."
         validity: "1981-2010"
 ---
-<h2>Organizace</h2>
+{% for category in page.categories %}
+{% if category.name %}<h2>{{category.name}}</h2>{% else %}{% continue %}{% endif %}
 <table class="table table-striped table-hover d-none d-md-table mt-4">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase align-middle">Název</th>
+      {% case category.name %}
+      {% when "Organizace" %}
+      {% when "Projekty" %}<th scope="col" class="text-uppercase align-middle">Organizace</th>
+      {% else %}<th scope="col" class="text-uppercase align-middle">Zdroj</th>
+      {% endcase -%}
       <th scope="col" class="text-uppercase align-middle">Odkazy</th>
       <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
+      {% if category.name <> "Organizace" %}<th scope="col" class="text-uppercase align-middle text-center">Období</th>{% endif -%}
     </tr>
   </thead>
   <tbody>
-    {% assign category = page.categories | find: "name", "Organizace" %}
     {% for item in category.items %}
     <tr>
       <td class="align-middle"><strong>{{item.name}}</strong></td>
+      {% if category.name <> "Organizace" %}<td class="align-middle">{{item.source}}</td>{% endif -%}
       <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
       <td class="align-middle">{{item.note}}</td>
+      {% if category.name <> "Organizace" %}<td class="align-middle">{{item.validity}}</td>{% endif -%}
     </tr>
     {% endfor %}
   </tbody>
 </table>
-<h2>Projekty</h2>
-<table class="table table-striped table-hover d-none d-md-table mt-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase align-middle">Název</th>
-      <th scope="col" class="text-uppercase align-middle">Organizace</th>
-      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Období</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign category = page.categories | find: "name", "Projekty" %}
-    {% for item in category.items %}
-    <tr>
-      <td class="align-middle"><strong>{{item.name}}</strong></td>
-      <td class="align-middle">{{item.organization}}</td>
-      <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
-      <td class="align-middle">{{item.note}}</td>
-      <td class="align-middle">{{item.validity}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-<h2>Studie</h2>
-<table class="table table-striped table-hover d-none d-md-table mt-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase align-middle">Název</th>
-      <th scope="col" class="text-uppercase align-middle">Zdroj</th>
-      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Období</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign category = page.categories | find: "name", "Studie" %}
-    {% for item in category.items %}
-    <tr>
-      <td class="align-middle"><strong>{{item.subtitle}}</strong></td>
-      <td class="align-middle">{{item.mainSource}}</td>
-      <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
-      <td class="align-middle">{{item.note}}</td>
-      <td class="align-middle">{{item.validity}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-<h2>(Nejen)Odborné (nejen)články</h2>
-<table class="table table-striped table-hover d-none d-md-table mt-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase align-middle">Název</th>
-      <th scope="col" class="text-uppercase align-middle">Zdroj</th>
-      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Období</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign category = page.categories | find: "name", "(Nejen)Odborné (nejen)články" %}
-    {% for item in category.items %}
-    <tr>
-      <td class="align-middle"><strong>{{item.name}}</strong></td>
-      <td class="align-middle">{{item.source}}</td>
-      <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
-      <td class="align-middle">{{item.note}}</td>
-      <td class="align-middle">{{item.validity}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-<h2>Mapy/Grafiky</h2>
-<table class="table table-striped table-hover d-none d-md-table mt-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase align-middle">Název</th>
-      <th scope="col" class="text-uppercase align-middle">Zdroj</th>
-      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Období</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign category = page.categories | find: "name", "Mapy/Grafiky" %}
-    {% for item in category.items %}
-    <tr>
-      <td class="align-middle"><strong>{{item.name}}</strong></td>
-      <td class="align-middle">{{item.source}}</td>
-      <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
-      <td class="align-middle">{{item.note}}</td>
-      <td class="align-middle">{{item.validity}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% endfor %}
