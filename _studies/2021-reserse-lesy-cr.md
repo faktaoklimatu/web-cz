@@ -129,7 +129,6 @@ categories:
       {% when "Projekty" %}<th scope="col" class="text-uppercase align-middle">Organizace</th>
       {% else %}<th scope="col" class="text-uppercase align-middle">Zdroj</th>
       {% endcase -%}
-      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
       <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
       {% if category.name <> "Organizace" %}<th scope="col" class="text-uppercase align-middle text-center">Období</th>{% endif -%}
     </tr>
@@ -137,9 +136,8 @@ categories:
   <tbody>
     {% for item in category.items %}
     <tr>
-      <td class="align-middle"><strong>{{item.name}}</strong></td>
+      <td class="align-middle"><strong><a href="{{ item.link }}">{{item.name}}</a></strong></td>
       {% if category.name <> "Organizace" %}<td class="align-middle">{{item.source}}</td>{% endif -%}
-      <td class="align-middle"><a href="{{ item.link }}">{{ item.link }}</a></td>
       <td class="align-middle">{{item.note}}</td>
       {% if category.name <> "Organizace" %}<td class="align-middle">{{item.validity}}</td>{% endif -%}
     </tr>
