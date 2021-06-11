@@ -94,9 +94,9 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 
 {% include figure.html
     name="ets-faze.svg"
-    alt="vyvoj ceny povolenky"
-    source-text="Daily EU ETS carbon market price (Ember)"
-    source-url="https://ember-climate.org/data/carbon-price-viewer/"
+    alt="Fáze Evropského systému emisních povolenek"
+    source-text="Evropská komise, EU"
+    source-url="https://ec.europa.eu/clima/policies/ets_en"
 %}
 
 
@@ -122,8 +122,8 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 {% include figure.html
     name="ets-strop.svg"
     alt="Maximální množství alokovaných povolenek v jednotlivých letech"
-    source-text="A Guide to European Climate Policy (Carbon Market Watch)"
-    source-url="https://carbonmarketwatch.org/wp-content/uploads/2016/11/European-Climate-Policy-Guide-Part-1-ENGLISH-WEB-SINGLE.pdf"
+    source-text="Evropská komise, EU"
+    source-url="https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf"
 %}
 
 ## Jaké systémy ETS se používají mimo Evropu?
