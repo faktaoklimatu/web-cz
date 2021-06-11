@@ -9,7 +9,9 @@ tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie BloombergNEF zkoumá možnou proměnu české elektroenergetiky do roku 2030. Tato studie modeluje nákladově nejvýhodnější vývoj. Počítá při tom se stávají úpravou emisních povolenek a nepředpokládá žádné další politické zásahy, které by cenu uhlíku zvyšovaly. Studie ukazuje, že vývoj s nejnižšími celkovými náklady také současně výrazně snižuje emise skleníkových plynů."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
-data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ] ]
+data-orig:
+  - [ "Původní studie", "https://data.bloomberglp.com/professional/sites/24/BNEF-white-paper-EU-coal-transition-Final-6-July.pdf" ]
+  - [ "Navazující studie pro vyšší emisní cíle EU", "https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/" ]
 ---
 
 {% include includes-local/energeticke-scenare/jak-cist.md %}
@@ -20,14 +22,14 @@ data-orig:   [ [ "Původní studie", "https://data.bloomberglp.com/professional/
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
-Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Protože studie nepočítá se stavbou nových přečerpávacích elektráren, tak od této jejich predikce odpočítáváme skutečnou výrobu v roce 2019.
+Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Pro vodní elektrárny předpokládáme stejný koeficient využití jako v současnosti a výrobu tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
 
 {% include includes-local/energeticke-scenare/emise.md %}
 
 ## O studii BloombergNEF
 
-Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů), která byla zveřejněna v červenci roku 2020.
-V listopadu 2020 pak byla zveřejněna navazující studie [Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals](https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/), která zkoumala stejný model za předpokladu výrazně vyšších cen uhlíkových povolenek, souvisejících s vyššími ambicemi Evropské unie. Tato infografika ovšem tuto navazující studii nepokrývá.
+Scénář od agentury [BloombergNEF](https://about.bnef.com/) vznikl v rámci studie [Decarbonization of Eastern Europe’s Energy Mix Key to Higher EU Climate Goals](https://about.bnef.com/blog/decarbonization-of-eastern-europes-energy-mix-key-to-higher-eu-climate-goals/) (Dekarbonizace energetických mixů východní Evropy klíčem k vyšším klimatickým cílům EU), která byla zveřejněna v listopadu roku 2020. Tato studie navazovala na předchozí obšírnější studii 
+[Investing in the Recovery and Transition of Europe’s Coal Regions](https://about.bnef.com/blog/new-report-reveals-economic-path-to-a-rapid-coal-phase-out-in-europe/) (Investice do obnovy a transformace evropských uhelných regionů) z června roku 2020. Obě studie zkoumají stejný model, novější studie ale bere v potaz vyšší emisní cíle EU a tedy předpokládá v průběhu následující dekády výrazně vyšší ceny emisních povolenek. My z této studie vybíráme scénář pro cíl 55% snížení emisí oproti roku 1990, který je odsouhlasený v rámci EU.
 
 ### Zaměření scénáře a použitá metodika
 
@@ -43,8 +45,10 @@ Ve studii nejsou zmíněny žádné bližší detaily ohledně modelování elek
 
 ### Výsledky scénáře
 
-Výsledný mix počítá s poklesem instalovaného výkonu v uhlí a výrazným zvýšením výkonu větrných elektráren (nejvíce z uvedených scénářů). Na rozdíl od ostatních scénářů nepočítá BloombergNEF se zvýšením instalovaného výkonu plynových elektráren.
+Výsledný mix počítá s úplným odklonem od uhlí už od roku 2027, založený čistě na ekonomických vlivech. Dále počítá s výrazným zvýšením výkonu větrných elektráren (nejvíce z uvedených scénářů).
 
-Pro využití obnovitelných zdrojů jsou klíčové tzv. body zlomu, které určují okamžik, kdy se výroba z těchto zdrojů (včetně počáteční investice) stává levnější, než výroba ze stávajících fosilních elektráren. V případě větrných elektráren tak BloombergNEF počítá s jejich rozvojem především po roce 2025, zatímco u solárních elektráren předpokládá největší nárůst až v samém závěru dekády.
+Pro využití obnovitelných zdrojů jsou klíčové tzv. body zlomu, které určují okamžik, kdy se výroba z těchto zdrojů (včetně počáteční investice) stává levnější, než výroba ze stávajících fosilních elektráren. V případě větrných elektráren tak BloombergNEF počítá s jejich rozvojem hned od začátku dekády, zatímco u solárních elektráren předpokládá největší nárůst až po roce 2025.
 
-Předpokládané náklady na výstavbu nových obnovitelných zdrojů jsou dle scénáře 5,8 mld. eur. Investice do infrastruktury scénář nemodeluje.
+Předpokládané náklady na výstavbu nových zdrojů jsou dle scénáře 16,9 mld €. Investice do infrastruktury a investice do střešní fotovoltaiky scénář nemodeluje.
+
+Je třeba poznamenat, že tento scénář transformace stojí na několika předpokladech, které se vymykají z rámce ostatních srovnávaných scénářů. Jednak předpokládá výrazně nejvyšší cenu emisních povolenek. Pro srovnání, v roce 2030 jde o téměř 80 € za tunu, zatímco scénář Ember uvažuje jen 32 € za tunu a scénář McKinsey jen 27 € za tunu. Stejně tak tento scénář umožňuje velmi rychlý rozvoj obnovitelných zdrojů. Například už v roce 2030 instalovaný výkon větrných elektráren mírně překračuje celkový _optimistický_ potenciál větrné energetiky ČR podle [studie](https://csve.cz/img/wysiwyg/file/Potencial-vetrne-energie-2020.pdf) Ústavu fyziky atmosféry. Tento scénář lze tedy brát jako exploraci ekonomických tlaků v případě vysokých cen emisních povolenek a jejich důsledky v případě společenské vůle pro rychlý rozvoj obnovitelných zdrojů.
