@@ -5,11 +5,11 @@ slug:        2021-reserse-lesy-cr
 redirect_from: "/2021-reserse-lesy-cr"
 weight:      301
 published:   2021-06-10
-tags-scopes: [ cr]
+tags-scopes: [ cr, klima]
 tags-topics: [ lesy, stav ]
 caption:     "Přehled zdrojů zabývajících se stavem českých lesů."
 intro: |
-     Informací o českých lesích a jejich stavu je velké množství roztříštěných mezi privátní i státní organizace, české i zahraniční zdroje. Tato rešerše poskytuje základní vhled do organizací zabývajících se správou českých lesů a poskytováním informací o nich, dále souhrnné studie a grafiky a také odkazy na projekty spracovávající interaktivní mapy a data o lesích.
+     Informace o českých lesích a jejich stavu jsou roztříštěny mezi privátní i státní organizace, české i zahraniční zdroje. Tato rešerše poskytuje základní vhled do organizací zabývajících se správou českých lesů a poskytováním informací o nich, dále souhrnné studie a grafiky a také odkazy na projekty zpracovávající interaktivní mapy a data o lesích.
 categories:
   - name: "Organizace"
     items:
@@ -28,25 +28,27 @@ categories:
   - name: "Projekty"
     items:
       - name: "Kůrovcové info"
+        source: "VÚLHM, Lesnická práce"
         link: "https://www.kurovcoveinfo.cz/"
         note: "Kůrovcové info je projekt, který je zpracováván VÚLHM a Lesnickými pracemi a je zaměřen na monitoring a sdílení informací o průběhu rojení některých druhů lýkožroutů (l. smrkový, l. severský, l. lesklý) a chroustů (ch. obecný, ch. maďalový) v různých nadmořských výškách v různých lokalitách České republiky (Kůrovcové info, 2021). Data jsou sbírána in-situ dobrovolníky, kteří jednotlivé druhy hmyzu chytají do lapačů a pak zaznamenávají do aplikace."
       - name: "Kůrovcová mapa"
+        source: "VÚLHM, Lesnická práce, ÚHÚL"
         link: "https://www.kurovcovamapa.cz/"
         note: "Kůrovcová mapa je projekt, který vznikl ze spolupráce Kůrovcového infa a ÚHÚLu a to pomocí analýzy satelitních snímků. Poskytuje přiblížitelnou mapu s vrstvami, kde lze vidět konkrétní postižená místa."
-      - name: "OPRL"
+      - name: "Oblastní plány rozvoje lesů"
         source: "ÚHÚL"
         link: "http://www.uhul.cz/nase-cinnost/385-oblastni-plany-rozvoje-lesu/textove-casti/997-platne-dokumeny-oprl"
-        note: "Oblastní plány rozvoje lesů obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí a jsou metodickým nástrojem státní lesnické politiky. OPRL jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO). Součástí textové části je i dokument klimatické změny a návrhy adaptace na klimatickou změnu v dané PLO. První vlna OPRL doběhla v roce 2000."
+        note: "OPRL obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí a jsou metodickým nástrojem státní lesnické politiky. OPRL jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO). Součástí textové části je i dokument klimatické změny a návrhy adaptace na klimatickou změnu v dané PLO. První vlna OPRL doběhla v roce 2000."
         validity: "2000"
-      - name: "OPRL2"
+      - name: "Oblastní plány rozvoje lesů 2"
         source: "ÚHÚL"
         link: "http://www.uhul.cz/nase-cinnost/373-oblastni-plany-rozvoje-lesu/oprl2/850-kalendar-zakladnich-a-zaverecnych-setreni"
         note: "OPRL pro rok 2020, momentálně je zpracovaná ne pro všechny PLO"
         validity: "2020"
-      - name: "NIL"
+      - name: "Národní inventarizace lesů"
         source: "ÚHÚL"
         link: "http://nil.uhul.cz/"
-        note: "Národní inventarizaci lesů (NIL) zpracovává ÚHÚL. Cíle jsou: poskytnout údaje k dlouhodobé kontrole důsledků státní lesnické politiky a dotační politiky státu na stav lesů,  ověření trendu vývoje porostních zásob, přírůstů dřevní hmoty, nárůstu či poklesu těžeb v návaznosti na jejich reálnou únosnou výši, struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů, charakteristika lesních ekosystémů. NIL1 probíhal v období 2001-2004, NIL2 pak 2011-2015."
+        note: "Cíle NIL jsou: poskytnout údaje k dlouhodobé kontrole důsledků státní lesnické politiky a dotační politiky státu na stav lesů,  ověření trendu vývoje porostních zásob, přírůstů dřevní hmoty, nárůstu či poklesu těžeb v návaznosti na jejich reálnou únosnou výši, struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů, charakteristika lesních ekosystémů. NIL1 probíhal v období 2001-2004, NIL2 pak 2011-2015."
         validity: "2001-2015"
   - name: "Studie"
     items:
@@ -68,22 +70,6 @@ categories:
         source: "ÚHÚL"
         link: "http://nil.uhul.cz/downloads/kniha_NIL2_web.pdf"
         validity: "2011-2015"
-  - name: "(Nejen)Odborné (nejen)články"
-    items:
-      - name: "Modelování podmínek pro pěstévání smrku, buku a dubu"
-        source: "FrameAdapt"
-        link: "http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf"
-        note: "Práce analyzuje klimatická data pro lesní vegetační stupně a pro hlavní hospodářské dřeviny smrk, buk a dub pro období 1961-2014 s následnou možnou predikcí vývoje blízké budoucnosti 2021-2060 ve vztahu k vhodnosti pěstování."
-        validity: "2021-2040 a 2041-2060"
-      - name: "Koncepce státní lesnické politiky do roku 2035"
-        source: "Eagri"
-        link: "http://eagri.cz/public/web/file/646382/Koncepce_statni_lesnicke_politiky_do_roku_2035.pdf"
-        note: "Vládou přijatá koncepce aktualizuje a upřesňuje dříve uložené úkoly v předchozích obdobných dokumentech na příštích 15 let. Hlavními cíly jsou vyrovnané plnohodnotné plnění všech funkcí lesa, zvýšení biodiverzity a ekologické stabily lesů, zajištění konkurenceschopnosti lesního hospodářství."
-      - name: "Škodliví činitelé v lesích Česka - Ochrana lesa na kalamitních holinách"
-        source: "VÚLHM"
-        link: "https://www.vulhm.cz/files/uploads/2021/05/ZOL_24_2021.pdf"
-        note: "Sborník referátů z celostátního semináře na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". Pořádá VÚLHM"
-        validity: "2020/2021"
   - name: "Mapy/Grafiky"
     items:
       - name: "Vývoj těžeb v jehličnatých porostech podle Kůrovcové mapy: září 2018 - září 2020"
@@ -99,7 +85,7 @@ categories:
         source: "ISSaR (Informační systém statistiky a reportingu v životním prostředí"
         link: "https://issar.cenia.cz/cr/lesy/"
         note: "Interaktivní mapy a grafiky zobrazující informace o stavu životního prostředí v ČR, a to včetně údajů o lesích. Reporty jsou zpracovány z dat ÚHÚL, ČSÚ A VÚLHM. Za kraje i za celou ČR."
-        validity: "něco 2000-2019, něco 1990-2019"
+        validity: "2000-2019, část 1990-2019"
       - name: "Zdravotní stav lesů do 2017"
         source: "ÚHÚL"
         link: "http://geoportal.uhul.cz/mapy/mapyzsl.html"
@@ -115,6 +101,22 @@ categories:
         link: "https://www.klimatickazmena.cz/cs/?l=76"
         note: "Mapa ohrožení lesních půd acidifikací a nutriční degradací vznikla algebraickou kombinací šesti vstupních geoinformačních vrstev – geologická mapa, typologická mapa, průměrné roční teploty, průměrné roční srážky, atmosférická depozice síry (S), atmosférická depozice dusíku (N)."
         validity: "1981-2010"
+  - name: "Články a jiné zdroje"
+    items:
+      - name: "Modelování podmínek pro pěstévání smrku, buku a dubu"
+        source: "FrameAdapt"
+        link: "http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf"
+        note: "Práce analyzuje klimatická data pro lesní vegetační stupně a pro hlavní hospodářské dřeviny smrk, buk a dub pro období 1961-2014 s následnou možnou predikcí vývoje blízké budoucnosti 2021-2060 ve vztahu k vhodnosti pěstování."
+        validity: "2021-2040 a 2041-2060"
+      - name: "Koncepce státní lesnické politiky do roku 2035"
+        source: "Eagri"
+        link: "http://eagri.cz/public/web/file/646382/Koncepce_statni_lesnicke_politiky_do_roku_2035.pdf"
+        note: "Vládou přijatá koncepce aktualizuje a upřesňuje dříve uložené úkoly v předchozích obdobných dokumentech na příštích 15 let. Hlavními cíly jsou vyrovnané plnohodnotné plnění všech funkcí lesa, zvýšení biodiverzity a ekologické stabily lesů, zajištění konkurenceschopnosti lesního hospodářství."
+      - name: "Škodliví činitelé v lesích Česka - Ochrana lesa na kalamitních holinách"
+        source: "VÚLHM"
+        link: "https://www.vulhm.cz/files/uploads/2021/05/ZOL_24_2021.pdf"
+        note: "Sborník referátů z celostátního semináře na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". Pořádá VÚLHM"
+        validity: "2020/2021"
 ---
 {% for category in page.categories %}
 {% if category.name %}<h2>{{category.name}}</h2>{% else %}{% continue %}{% endif %}
