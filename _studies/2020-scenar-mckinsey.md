@@ -22,7 +22,7 @@ data-orig:
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
-Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích. Pro vodní elektrárny předpokládáme stejný koeficient využití jako v současnosti a výrobu tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
+Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích zatímco my uvádíme jen vodní. Pro vodní elektrárny předpokládáme současný koeficient využití a výrobu v současnosti tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
 
 Studie se také odlišuje v kategorizaci bioplynu, který oproti nám zařazuje do kategorie plyn. Přesné množství bioplynu ve scénáři není známé a dle vyjádření autorů je toto množství velmi malé, a tak jsme hodnoty ve scénáři neupravovali. Kategorie plyn zde tedy zahrnuje i malé množství bioplynu a kategorie biomasa a bioplyn ve skutečnosti zahrnuje pouze biomasu.
 
