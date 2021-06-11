@@ -16,7 +16,7 @@ perex:       "Evropské emisní povolenky jsou účinným prostředkem při sni�
 
 ---
 
-Emisní povolenky jsou hlavním nástrojem <a href=\"https://ec.europa.eu/clima/policies/ets_en\">Evropského systému pro obchodování s emisemi</a> (European Union Emissions Trading Scheme, EU ETS), jehož cílem je snížit emise skleníkových plynů prostřednictvím jejich zpoplatnění. 
+Emisní povolenky jsou hlavním nástrojem [Evropského systému pro obchodování s emisemi](https://ec.europa.eu/clima/policies/ets_en) (European Union Emissions Trading Scheme, EU ETS), jehož cílem je snížit emise skleníkových plynů prostřednictvím jejich zpoplatnění.
 
 EU ETS byl spuštěn Evropskou unií v roce 2005 jako první velký systém pro obchodování s emisemi skleníkových plynů (a do začátku roku 2021, kdy začal fungovat národní ETS v Číně, byl největším systémem svého druhu na světě). Kromě zemí EU zahrnuje také Island, Lichtenštejnsko a Norsko. 
 
