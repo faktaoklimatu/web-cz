@@ -32,6 +32,7 @@ items:
       - name: "McKinsey & Company"
         url:  "https://www.mckinsey.com/"
     timeframe: "2030, 2050"
+    study:   2020-scenar-mckinsey
   - title:   "Coal-Free Czechia 2030"
     date:    Listopad 2020
     url:     https://ember-climate.org/project/coal-free-czechia-2030/
@@ -49,6 +50,7 @@ items:
       - name: Bloomberg Philanthropies
         url:  "https://www.bloomberg.org/"
     timeframe: 2030
+    study:     2020-scenar-bloombergnef
   - title:   "Energy Transition Outlook 2020"
     url:     "https://eto.dnvgl.com/2020/index.html"
     date:    Září 2020
@@ -65,7 +67,6 @@ items:
       - name: Bloomberg Philanthropies
         url:  "https://www.bloomberg.org/"
     timeframe: 2030
-    study:     2020-scenar-bloombergnef
   - title:   "Modernizace evropského hnědouhelného trojúhelníku: Směrem k bezpečné, dostupné a udržitelné transformaci energetiky"
     url:     "https://www.agora-energiewende.de/fileadmin2/Partnerpublikationen/2020/Lignite_Triangle/CZ-Modernizace_evropske__ho_hne__douhelne__ho_troju__helni__ku_net.pdf"
     date:    Červen 2020
@@ -111,6 +112,7 @@ items:
       - name: Energynautics
         url:  https://energynautics.com/en/
     timeframe: "2030"
+    study:     2018-scenar-energynautics
   - title:   "Czech Power Grid without Electricity from Coal by 2030"
     url:     "https://en.frankbold.org/sites/default/files/publikace/czech_grid_without_coal_by_2030_fin_0.pdf"
     date:    Květen 2018
@@ -118,7 +120,6 @@ items:
       - name: Energynautics
         url:  https://energynautics.com/en/
     timeframe: 2030
-    study:     2018-scenar-energynautics
   - title:   "Global Energy System based on 100% Renewable Energy – Power Sector"
     url:     "http://energywatchgroup.org/wp-content/uploads/2017/11/Full-Study-100-Renewable-Energy-Worldwide-Power-Sector.pdf"
     date:    Listopad 2017
