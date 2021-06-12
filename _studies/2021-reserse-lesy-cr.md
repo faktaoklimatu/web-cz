@@ -5,118 +5,113 @@ slug:        2021-reserse-lesy-cr
 redirect_from: "/2021-reserse-lesy-cr"
 weight:      301
 published:   2021-06-10
-tags-scopes: [ cr, klima]
+tags-scopes: [ cr, krajina]
 tags-topics: [ lesy, stav ]
 caption:     "Přehled zdrojů zabývajících se stavem českých lesů."
 intro: |
      Informace o českých lesích a jejich stavu jsou roztříštěny mezi privátní i státní organizace, české i zahraniční zdroje. Tato rešerše poskytuje základní vhled do organizací zabývajících se správou českých lesů a poskytováním informací o nich, dále souhrnné studie a grafiky a také odkazy na projekty zpracovávající interaktivní mapy a data o lesích.
 categories:
-  - name: "Organizace"
+  - name: "Instituce"
     items:
-      - name: "ÚHÚL"
+      - name: "Ústav pro hospodářskou úpravu lesů"
         link: "http://www.uhul.cz/"
-        note: "Ústav pro hospodářskou úpravu lesů (ÚHÚL) je odborná organizace pro oblast lesnictví a myslivosti, zřízena Ministerstvem zemědělství. Mezi jeho činnosti patří provádění Národní inventarizace lesů, šetření oblastních plánů rozvoje lesů (OPRL), které následně slouží jako metodický nástroj státní lesnické politiky a mimo jiné následně poskytují odbornou podporu na přípravě Národního akčního plánu adaptace na změnu klimatu (ÚHÚL, 2021)."
-      - name: "FAO"
-        link: "http://www.fao.org/"
-        note: "Organizace pro výživu a zemědělství (Food and agriculture organization, zkráceně FAO) je specializovaná agentura při OSN, jejímž hlavním cílem je zajištění přístupu k jídlu a vodě obyvatelům zejména rozvojových zemí a s tím související péče o krajinu (vč. lesů) a zemědělskou půdu v duchu trvale udržitelného hospodaření."
-      - name: "VÚLHM"
+        note: "Ústav pro hospodářskou úpravu lesů (ÚHÚL) je odborná organizace, zřízena pro oblast lesnictví a myslivosti Ministerstvem zemědělství. Mezi jeho činnosti patří provádění Národní inventarizace lesů (NIL), šetření oblastních plánů rozvoje lesů (OPRL), které následně slouží jako metodický nástroj státní lesnické politiky a mimo jiné odborná podpora při přípravě Národního akčního plánu adaptace na změnu klimatu."
+      - name: "Výzkumný ústav lesního hospodářství a myslivosti"
         link: "http://www.vulhm.cz/"
-        note: "Výzkumný ústav lesního hospodářství a myslivosti (VÚLHM) je zřizován Ministerstvem zemědělství ČR. Hlavní náplní činnosti je řešení vědeckovýzkumných projektů v odvětví lesního hospodářství a myslivosti a účast při zavádění výsledků do praxe."
-      - name: "ČSÚ"
-        link: "https://www.czso.cz/csu/czso/lesnictvi-2019"
-        note: "Český statistický úřad poskytuje na svých stránkách mnoho užitečných dat z oblasti lesnictví - informace o těžbě plánované i nahodilé (členěno dále dle příčiny) podle jednotlivých dřevin, zalesňování, ploše holin i ekonomických výsledcích. (k roku 2019)"
-  - name: "Projekty"
+        note: "Výzkumný ústav lesního hospodářství a myslivosti (VÚLHM) je zřizován Ministerstvem zemědělství ČR. Jeho hlavní činností je řešení vědeckovýzkumných projektů v odvětvích lesního hospodářství a myslivosti a dále expertní činnost a poradenství pro státní správu a vlastníky lesů."
+      - name: "Czech forest"
+        link: "http://www.czechforest.cz"
+        note: "Czech forest think tank je otevřenou nezávislou expertní skupinou podporující rozvoj českého lesnictví a jeho adaptaci na společenské, klimatické a ekonomické změny. Zájmem členů think tanku je hájení dlouhodobých zájmů lesnictví a racionálního přístupu k lesním ekosystémům ve prospěch ekonomických, ekologických a sociálních potřeb občanů České republiky."
+      - name: "Fakulta lesnická a dřevařská České zemědělské univerzity v Praze"
+        link: "https://www.fld.czu.cz"
+        note: "Fakulta lesnická a dřevařská (FLD) se člení na 9 kateder, které pokrývají celou oblast vzdělání, vědy a spolupráce s praxí v oblasti lesnictví a dřevařství a mezi které patří mj. katedra pěstování lesů, katedra hospodářské úpravy lesů, a katedra ekologie lesa. Fakulta se v letošním roce stala spoluřešitelem projektu [CLIMAFORCEE LIFE](https://www.fld.czu.cz/cs/r-6823-o-fakulte/r-6820-pr-a-media/r-9023-tiskove-zpravy), který si klade za cíl vyvinout a uplatnit takové metody obhospodařování lesů, které povedou k jejich vyšší odolnosti i ve změněných podmínkách prostředí."
+      - name: "Lesnická a dřevařská fakulta Mendelovy univerzity v Brně"
+        link: "https://www.ldf.mendelu.cz"
+        note: "Lesnická a dřevařská fakulta Mendelovy univerzity v Brně (LDF MENDELU) patří k hlavním institucím univerzitní výuky, výzkumu, vývoje a expertní činnosti v oblastech lesnictví, krajinářství, arboristiky, lesnické a dřevařské technologie, zpracování a využití dřeva a nábytkářství v České republice."
+      - name: "Český statistický úřad"
+        link: "https://www.czso.cz/csu/czso/lesnictvi_zem"
+        note: "Český statistický úřad (ČSÚ) je hlavní orgán státní statistické služby, který koordinuje sběr a zpracování statistických údajů prováděných jednotlivými ministerstvy. Úřad poskytuje mimo jiné i vybrané ukazatele lesnictví, informace o těžbě dříví, zalesňování a přirozené obnově lesa. "
+      - name: "Organizace pro výživu a zemědělství"
+        link: "http://www.fao.org/"
+        note: "Organizace pro výživu a zemědělství (Food and agriculture organization, FAO) je agentura při OSN, jejímž hlavním cílem je zajištění přístupu k jídlu a vodě obyvatelům zejména rozvojových zemí a s tím související péče o krajinu (včetně lesů) a zemědělskou půdu v duchu trvale udržitelného hospodaření."
+  - name: "Studie"
+    items:
+      - name: "Hodnocení lesních zdrojů pro Českou republiku"
+        source: "FAO, ÚHÚL"
+        link: "http://www.fao.org/3/ca9984en/ca9984en.pdf"
+        note: "Organizace pro výživu a zemědělství (FAO) zpracovává v pětiletých intervalech globální souhrnou hodnotící studii o stavu lesů (Forest Resources Assesment, FRA). Studie je prezentována jak [souhrnně pro celý svět](http://www.fao.org/3/ca9825en/ca9825en.pdf), tak i jednotlivě za každou členskou zemi zvlásť. Za Českou republiku tuto studii zpracovává ÚHÚL."
+        validity: "2020"
+      - name: "Národní inventarizace lesů v České republice"
+        source: "ÚHÚL"
+        link: "http://nil.uhul.cz/downloads/kniha_NIL2_web.pdf"
+        note: "Národní inventarizace lesů (NIL) je souborový dokument poskytující informace o stavu a vývoji lesních ekosystémů na území Česka. Publikace navazuje na obdobný souhrn informací vydaný v roce 2007 po dokončení historicky první statistické inventarizace na území ČR v letech 2001–2004. Cíle NIL jsou: poskytnout údaje k dlouhodobé kontrole důsledků státní lesnické politiky a dotační politiky státu na stav lesů,  ověření trendu vývoje porostních zásob, přírůstů dřevní hmoty, nárůstu či poklesu těžeb v návaznosti na jejich reálnou únosnou výši, struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů, charakteristika lesních ekosystémů. V současnosti probíhá vyhodnocování dalšího cyklu inventarizace z období 2016–2020 s názvem Sledování stavu a vývoje lesních ekosystémů (SSVLE)."
+        validity: "2011-2015"
+      - name: "Oblastní plány rozvoje lesů"
+        source: "ÚHÚL"
+        link: "http://www.uhul.cz/nase-cinnost/385-oblastni-plany-rozvoje-lesu/textove-casti/997-platne-dokumeny-oprl"
+        note: "Oblastní plány rozvoje lesů (OPRL) obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí. Jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO) a fungují jako metodický nástroj státní lesnické politiky. Vzhledem k blížícímu se konci platnosti jednotlivých OPRL probíhá v současné době aktualizace na OPRL2, příčemž plánované dokončení aktualizace poslední přírodní lesní oblasti je stanoveno na rok 2024. Aktualizované OPRL je složeno z všeobecné části popisující základní charakteristiku zájmového území, analytické části, obsahující výsledky získané v rámci šetření údajů o stavu lesa a syntetické části, která překládá získané údaje do kontextu produkčního, ekologického a sociálního pilíře lesního hospodářství."
+        validity: "1996–2001 pro OPRL1; 2018–2024 pro OPRL2"
+      - name: "Strategie přizpůsobení se změně klimatu v podmínkách ČR"
+        source: "Ministerstvo životního prostředí"
+        link: "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf"
+        note: "Strategie přizpůsobení se změně klimatu v podmínkách ČR je dokument, který identifikuje oblasti s největšími předpokládanými dopady klimatické změny a jehož shrnutí můžete nalézt v infografice [Adaptační strategie ČR](https://faktaoklimatu.cz/infografiky/adaptacni-strategie-cr). Jedním v témat strategie je i vliv změny klimatu na lesní hospodářství a možná adaptační opatření, a to hlavně v kontextu sucha a možných extrémních projevů počasí."
+        validity: "2015–2020, s výhledem na rok 2030"
+      - name: "Koncepce státní lesnické politiky do roku 2035"
+        source: "Eagri"
+        link: "http://eagri.cz/public/web/file/646382/Koncepce_statni_lesnicke_politiky_do_roku_2035.pdf"
+        note: "Vládou přijatá koncepce aktualizuje a upřesňuje dříve uložené úkoly v předchozích obdobných dokumentech na příštích 15 let. Hlavními cíly jsou vyrovnané plnohodnotné plnění všech funkcí lesa, zvýšení biodiverzity, ekologické stability lesů a zajištění konkurenceschopnosti lesního hospodářství."
+        validity: "2020 s výhledem na rok 2035"
+  - name: "Interaktivní aplikace"
     items:
       - name: "Kůrovcové info"
         source: "VÚLHM, Lesnická práce"
         link: "https://www.kurovcoveinfo.cz/"
-        note: "Kůrovcové info je projekt, který je zpracováván VÚLHM a Lesnickými pracemi a je zaměřen na monitoring a sdílení informací o průběhu rojení některých druhů lýkožroutů (l. smrkový, l. severský, l. lesklý) a chroustů (ch. obecný, ch. maďalový) v různých nadmořských výškách v různých lokalitách České republiky (Kůrovcové info, 2021). Data jsou sbírána in-situ dobrovolníky, kteří jednotlivé druhy hmyzu chytají do lapačů a pak zaznamenávají do aplikace."
+        note: "Kůrovcové info je projekt zaměřený na monitoring a sdílení informací o průběhu rojení některých druhů lýkožroutů a chroustů, a to za pomoci dobrovolníků, kteří v reálném čase zveřejňují odchyty těchto škůdců do speciálních pastí."
       - name: "Kůrovcová mapa"
         source: "VÚLHM, Lesnická práce, ÚHÚL"
         link: "https://www.kurovcovamapa.cz/"
-        note: "Kůrovcová mapa je projekt, který vznikl ze spolupráce Kůrovcového infa a ÚHÚLu a to pomocí analýzy satelitních snímků. Poskytuje přiblížitelnou mapu s vrstvami, kde lze vidět konkrétní postižená místa."
-      - name: "Oblastní plány rozvoje lesů"
-        source: "ÚHÚL"
-        link: "http://www.uhul.cz/nase-cinnost/385-oblastni-plany-rozvoje-lesu/textove-casti/997-platne-dokumeny-oprl"
-        note: "OPRL obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí a jsou metodickým nástrojem státní lesnické politiky. OPRL jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO). Součástí textové části je i dokument klimatické změny a návrhy adaptace na klimatickou změnu v dané PLO. První vlna OPRL doběhla v roce 2000."
-        validity: "2000"
-      - name: "Oblastní plány rozvoje lesů 2"
-        source: "ÚHÚL"
-        link: "http://www.uhul.cz/nase-cinnost/373-oblastni-plany-rozvoje-lesu/oprl2/850-kalendar-zakladnich-a-zaverecnych-setreni"
-        note: "OPRL pro rok 2020, momentálně je zpracovaná ne pro všechny PLO"
-        validity: "2020"
-      - name: "Národní inventarizace lesů"
-        source: "ÚHÚL"
-        link: "http://nil.uhul.cz/"
-        note: "Cíle NIL jsou: poskytnout údaje k dlouhodobé kontrole důsledků státní lesnické politiky a dotační politiky státu na stav lesů,  ověření trendu vývoje porostních zásob, přírůstů dřevní hmoty, nárůstu či poklesu těžeb v návaznosti na jejich reálnou únosnou výši, struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů, charakteristika lesních ekosystémů. NIL1 probíhal v období 2001-2004, NIL2 pak 2011-2015."
-        validity: "2001-2015"
-  - name: "Studie"
-    items:
-      - name: "Vliv změny klimatu na lesní hospodářství a možná adaptační opatření"
-        source: "Strategie přizpůsobení se změně klimatu v podmínkách ČR, Národní akční plán adaptace na změnu klimatu"
-        link: "https://www.mzp.cz/C1257458002F0DC7/cz/zmena_klimatu_adaptacni_strategie/$FILE/OEOK-Adaptacni_strategie-20151029.pdf"
-        note: "Adaptační strategie ČR je dokument shrnující dopady změny klimatu  a předkládá sjednaná adaptační opatření, jejichž cílem je zmírnění dopadů změny klimatu. V rámci strategie je řešeno i lesní hospodářství, a to hlavně v kontextu sucha a možných extrémních projevů počasí. Sucho snižuje přirozenou obranyschopnost lesních porostů vůči různým škůdcům a silnému větru a zároveň zvyšuje riziko lesních požárů. Zpracovalo MŽP. Infografika už je zpracována zde: https://faktaoklimatu.cz/infografiky/adaptacni-strategie-cr"
-        validity: "2015–2020, s výhledem na rok 2030"
-      - name: "FRA pro ČR 2015"
-        source: "FAO"
-        link: "http://www.fao.org/3/az196e/az196e.pdf"
-        note: "FAO co pět let zpracovává souhrnou studii o stavu lesů na celé planetě na základě dílčích studií vypracovaných jednotlivýma členskýma zeměma (Forest Resources Assessment, aneb FRA). Za Českou republiku tuto studii zpracovává ÚHÚL."
-        validity: "2015"
-      - name: "FRA pro ČR 2020"
-        source: "FAO"
-        link: "http://www.fao.org/3/ca9984en/ca9984en.pdf"
-        validity: "2020"
-      - name: "NIL2 výsledky"
-        source: "ÚHÚL"
-        link: "http://nil.uhul.cz/downloads/kniha_NIL2_web.pdf"
-        validity: "2011-2015"
-  - name: "Mapy/Grafiky"
-    items:
-      - name: "Vývoj těžeb v jehličnatých porostech podle Kůrovcové mapy: září 2018 - září 2020"
-        source: "Kůrovcová mapa"
-        link: "https://www.kurovcovamapa.cz/files/uploads/KM_podzim(3)2020.png"
-        note: "Srovnání těžeb a souší na jehličnatých porostech mezi kraji a jejich vývoj za poslední dva roky"
-        validity: "2018-2020"
-      - name: "Mapa potenciální přirozené vegetace ČR"
-        source: "Pladias"
-        link: "https://www.pladias.cz/download/vegetation"
-        note: "Mapa potenciální přirozené vegetace České republiky zachycuje typy vegetace, která by na určitém místě a přirozeném nebo člověkem pozměněném stanovišti existovala v případě, že by člověk vegetaci neovlivňoval. "
-      - name: "Lesy - těžba dřeva, odpovědné lesní hospodářství, zdravotní stav lesů, druhová a věková skladba lesů "
-        source: "ISSaR (Informační systém statistiky a reportingu v životním prostředí"
+        note: "Kůrovcová mapa je interaktivní webová aplikace zobrazující mapy ploch s rizikem šíření kůrovců. Vzniká analýzou satelitních snímků."
+      - name: "Informační systém statistiky a reportingu v životním prostředí (ISSaR)"
+        source: "česká informační agentura životního prostředí"
         link: "https://issar.cenia.cz/cr/lesy/"
-        note: "Interaktivní mapy a grafiky zobrazující informace o stavu životního prostředí v ČR, a to včetně údajů o lesích. Reporty jsou zpracovány z dat ÚHÚL, ČSÚ A VÚLHM. Za kraje i za celou ČR."
-        validity: "2000-2019, část 1990-2019"
-      - name: "Zdravotní stav lesů do 2017"
+        note: "Interaktivní mapy a grafiky zobrazující informace o stavu životního prostředí v ČR, a to včetně údajů o lesích."
+        validity: "2000–2019, část 1990-2019"
+      - name: "Zdravotní stav lesů"
         source: "ÚHÚL"
         link: "http://geoportal.uhul.cz/mapy/mapyzsl.html"
-        note: "Mapy zdravotního stavu lesů jsou vytvářeny vyhodnocením družicových snímků ve viditelné a infračervené spektrální oblasti slunečního záření odraženého od zemského povrchu (radiance a reflektance)."
-        validity: "2013-2017"
+        note: "Mapy zdravotního stavu lesů, které jsou vytvářeny vyhodnocením satelitních snímků."
+        validity: "2013–2017"
+      - name: "mapová aplikace Fakulty lesnické a dřevařské ČZU"
+        source: "ČZÚ"
+        link: "https://mapy.fld.czu.cz"
+        note: "Interaktivní aplikace zobrazující informace o změnách produkce lesů v důsledku změny klimatu, lesních požárech, kůrovcové kalamitě nebo poškozování lesů větrem. "
+        validity: "2013–2017"
+      - name: "Lesnictví a klimatická změna"
+        source: "CzechGlobe"
+        link: "https://www.klimatickazmena.cz/cs/?l=76"
+        note: "V rámci projektu CzechAdapt byly zpřístupněny interaktivní formou informace o dopadech změny klimatu a jejich vývoji pro různá modelová období. Mezi tématy je zařazeno i lesnictví, které zobrazuje vrstvy změny klimatických podmínek pro růst smrku ztepilého v lesních vegetačních stupních s výhledem do roku 2090 a při různých stupních koncetrací emisí CO₂, ohrožení lesních půd acidifikací a nutriční degradací, výskyt lýkožrouta smrkového a další."
+        validity: "1981–2010, 2030, 2050, 2090"
       - name: "Odlesňování v letech 2001 až 2020"
         source: "Global Forest Watch"
         link: "https://www.globalforestwatch.org/map/"
-        note: "Interaktivní mapová aplikace pro celý svět, vrstvy změn odlesňování a zalesňování v letech 2001–2020. Důvody odlesňování nejsou specifikovány, protože analýzy pocházejí ze satelitních snímků. Zdroj v angličtině"
+        note: "Interaktivní mapová aplikace pro celý svět, zobrazující časovou řadu změn odlesňování a zalesňování v období 2001–2020."
         validity: "2001-2020"
-      - name: "Ohrožení lesních půd acidifikací a degradací"
-        source: "Klimatickazmena.cz"
-        link: "https://www.klimatickazmena.cz/cs/?l=76"
-        note: "Mapa ohrožení lesních půd acidifikací a nutriční degradací vznikla algebraickou kombinací šesti vstupních geoinformačních vrstev – geologická mapa, typologická mapa, průměrné roční teploty, průměrné roční srážky, atmosférická depozice síry (S), atmosférická depozice dusíku (N)."
-        validity: "1981-2010"
-  - name: "Články a jiné zdroje"
+  - name: "Jiné zdroje"
     items:
       - name: "Modelování podmínek pro pěstévání smrku, buku a dubu"
         source: "FrameAdapt"
         link: "http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf"
-        note: "Práce analyzuje klimatická data pro lesní vegetační stupně a pro hlavní hospodářské dřeviny smrk, buk a dub pro období 1961-2014 s následnou možnou predikcí vývoje blízké budoucnosti 2021-2060 ve vztahu k vhodnosti pěstování."
-        validity: "2021-2040 a 2041-2060"
-      - name: "Koncepce státní lesnické politiky do roku 2035"
-        source: "Eagri"
-        link: "http://eagri.cz/public/web/file/646382/Koncepce_statni_lesnicke_politiky_do_roku_2035.pdf"
-        note: "Vládou přijatá koncepce aktualizuje a upřesňuje dříve uložené úkoly v předchozích obdobných dokumentech na příštích 15 let. Hlavními cíly jsou vyrovnané plnohodnotné plnění všech funkcí lesa, zvýšení biodiverzity a ekologické stabily lesů, zajištění konkurenceschopnosti lesního hospodářství."
+        note: "Práce analyzuje klimatická data pro lesní vegetační stupně a pro hlavní hospodářské dřeviny smrk, buk a dub pro období 1961–2014 s následnou možnou predikcí vývoje blízké budoucnosti 2021–2060 ve vztahu k vhodnosti pěstování."
+        validity: "2021–2060"
+      - name: "Mapa potenciální přirozené vegetace ČR"
+        source: "Pladias"
+        link: "https://www.pladias.cz/download/vegetation"
+        note: "Mapa potenciální přirozené vegetace České republiky zachycuje typy vegetace, které by na přirozeném nebo člověkem pozměněném stanovišti existovaly v případě, že by člověk vegetaci neovlivňoval. Na většině území České republiky jsou potenciální přirozenou vegetací lesy. "
       - name: "Škodliví činitelé v lesích Česka - Ochrana lesa na kalamitních holinách"
         source: "VÚLHM"
         link: "https://www.vulhm.cz/files/uploads/2021/05/ZOL_24_2021.pdf"
         note: "Sborník referátů z celostátního semináře na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". Pořádá VÚLHM"
-        validity: "2020/2021"
+        validity: "2020/2021" 
 ---
 {% for category in page.categories %}
 {% if category.name %}<h2>{{category.name}}</h2>{% else %}{% continue %}{% endif %}
@@ -124,22 +119,18 @@ categories:
   <thead>
     <tr>
       <th scope="col" class="text-uppercase align-middle">Název</th>
-      {% case category.name %}
-      {% when "Organizace" %}
-      {% when "Projekty" %}<th scope="col" class="text-uppercase align-middle">Organizace</th>
-      {% else %}<th scope="col" class="text-uppercase align-middle">Zdroj</th>
-      {% endcase -%}
+      {% if category.name <> "Instituce" %}<th scope="col" class="text-uppercase align-middle">Zdroj</th>{% endif -%}
       <th scope="col" class="text-uppercase align-middle text-center">Popis</th>
-      {% if category.name <> "Organizace" %}<th scope="col" class="text-uppercase align-middle text-center">Období</th>{% endif -%}
+      {% if category.name == "Studie" %}<th scope="col" class="text-uppercase align-middle text-center">Období</th>{% endif -%}
     </tr>
   </thead>
   <tbody>
     {% for item in category.items %}
     <tr>
       <td class="align-middle"><strong><a href="{{ item.link }}">{{item.name}}</a></strong></td>
-      {% if category.name <> "Organizace" %}<td class="align-middle">{{item.source}}</td>{% endif -%}
-      <td class="align-middle">{{item.note}}</td>
-      {% if category.name <> "Organizace" %}<td class="align-middle">{{item.validity}}</td>{% endif -%}
+      {% if category.name <> "Instituce" %}<td class="align-middle">{{item.source}}</td>{% endif -%}
+      <td class="align-middle">{{ item.note | markdownify }}</td>
+      {% if category.name == "Studie" %}<td class="align-middle">{{item.validity}}</td>{% endif -%}
     </tr>
     {% endfor %}
   </tbody>
