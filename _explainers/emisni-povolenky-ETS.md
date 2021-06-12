@@ -28,6 +28,7 @@ Každý rok vydává EU určité množství těchto povolenek (angl. European Em
 
 {% include figure.html
     name="ets-system.svg"
+    name-mobile="ets-system-mob.svg"
     alt="Jak funguje povolenkový systém EU: Kdo více znečišťuje, ten více platí."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
