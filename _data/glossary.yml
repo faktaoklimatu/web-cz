@@ -1,5 +1,7 @@
 # uvnitř řetězců můžete použít HTML
 # prosím, udržujte seznam řazený dle abecedy
+# ukázka použití:
+#   `výrazné množství <glossary id="co2eq">CO<sub>2</sub>eq</glossary>`
 
 - id: adaptace
   name-short: "Adaptace"
@@ -14,31 +16,36 @@
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
+- id: carbon-neutrality
+  name-short: "Uhlíková neutralita"
+  name-long: "Net-zero carbon, klimatická neturalita"
+  description: "Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá. Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. Pokud máme udržet úroveň globálního oteplení pod 1,5–2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami CO<sub>2</sub> (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
+
 - id: cfchfc
   name-short: "Halogenderiváty uhlovodíků"
   description: "Jde o plyny, známé také často jako **freony**. Většina z nich poškozuje ozónovou vrstvu a zároveň jsou silnými skleníkovými plyny. V chemickém názvosloví se označují jako [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) (chloro-fluoro-carbons), HCFCs (hydro-chloro-fluoro-carbons) nebo [HFCs](https://en.wikipedia.org/wiki/Hydrofluorocarbon) (hydro-fluoro-carbons), a používají se jako rozpoštědla, plnidla nebo jako  chladící plyny v ledničkách a klimatizačních jednotkách. "
-
-- id: citlivost
-  name-short: "Citlivost klimatu"
-  description: "_Citlivost klimatu_ (z angl. „climate sensitivity“) udává, o kolik stupňů Celsia se zvýší průměrná globální teplota vzduchu, pokud dojde ke zdvojnásobení koncentrace skleníkových plynů v atmosféře. Klimatologické modely předpovídají hodnoty citlivosti v intervalu 2–4,5 °C s nejpravděpodobnější hodnotou 3 °C. To znamená, že při zvýšení koncentrace na dvojnásobek předindustriální hodnoty (z 280 ppm na 560 ppm) můžeme očekávat nárůst průměrné globální teploty o 3 °C – s tím, že oteplení bude spolehlivě o alespoň 2 °C a nemůžeme vyloučit zvýšení teploty až o 4,5 °C. Koncentrace CO<sub>2</sub> v roce 2019 byly 411 ppm a hodnoty 560 ppm bude v případě scénáře RCP8.5 (bez omezování emisí) dosaženo zhruba v roce 2050. Podrobnější diskusi důvodů, které fundamentálně znemožňují zpřesnit interval odhadu, nabízí přehledové články [Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf) a [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761). V obecné rovině se jedná o odezvu klimatického systému na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), podrobnou diskusi konceptu citlivosti klimatu z pohledu různých časových škál obsahuje [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)."
 
 - id: chmu
   name-short: "ČHMÚ"
   name-long: "Český hydrometeorologický ústav"
   description: "Ústřední státní orgán České republiky pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie. Mimo jiné je zodpovědný za provoz výstražné služby včetně Státního varovného a regulačního systému. Kromě provozu staničních sítí a zajišťování odborných služeb se zabývá také vědecko-výzkumnou činností v oblastech zájmu [[cs.wikipedia](https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%BD_hydrometeorologick%C3%BD_%C3%BAstav)]."
 
+- id: citlivost
+  name-short: "Citlivost klimatu"
+  description: "_Citlivost klimatu_ (z angl. „climate sensitivity“) udává, o kolik stupňů Celsia se zvýší průměrná globální teplota vzduchu, pokud dojde ke zdvojnásobení koncentrace skleníkových plynů v atmosféře. Klimatologické modely předpovídají hodnoty citlivosti v intervalu 2–4,5 °C s nejpravděpodobnější hodnotou 3 °C. To znamená, že při zvýšení koncentrace na dvojnásobek předindustriální hodnoty (z 280 ppm na 560 ppm) můžeme očekávat nárůst průměrné globální teploty o 3 °C – s tím, že oteplení bude spolehlivě o alespoň 2 °C a nemůžeme vyloučit zvýšení teploty až o 4,5 °C. Koncentrace CO<sub>2</sub> v roce 2019 byly 411 ppm a hodnoty 560 ppm bude v případě scénáře RCP8.5 (bez omezování emisí) dosaženo zhruba v roce 2050. Podrobnější diskusi důvodů, které fundamentálně znemožňují zpřesnit interval odhadu, nabízí přehledové články [Knutti & Hegerl, 2008](https://ethz.ch/content/dam/ethz/special-interest/usys/iac/iac-dam/documents/group/climphys/knutti/publications/knutti08natgeo.pdf) a [Knutti, Rugenstein & Hegerl, 2017](https://www.research-collection.ethz.ch/handle/20.500.11850/197761). V obecné rovině se jedná o odezvu klimatického systému na změny v radiačním působení (z angl. “[radiative forcing](https://en.wikipedia.org/wiki/Radiative_forcing)”), podrobnou diskusi konceptu citlivosti klimatu z pohledu různých časových škál obsahuje [en.wikipedia](https://en.wikipedia.org/wiki/Climate_sensitivity)."
+
 - id: co2eq
   name-short: "CO<sub>2</sub>eq"
   name-long: "CO<sub>2</sub> ekvivalent"
   description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) – konkrétně je to množství příslušného plynu × [GWP koeficient](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Např. pro metan je to hodnota cca 28 [[IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf) (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\". Zjednodušeně řečeno, metan je 28krát silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
-- id: externalita
-  name-short: "Externalita"
-  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
-
 - id: emisniintenzitaekonomiky
   name-short: "Emisní intenzita ekonomiky"
   description: "Intenzita emisí skleníkových plynů v hospodářství je definovaná jako poměr mezi emisemi CO<sub>2</sub>eq a HDP dané ekonomiky. HDP se zpravidla vyjadřuje pomocí parity kupní síly, kdy jsou zohledněny různé cenové hladiny v jednotlivých zemích. K emisím skleníkových plynů dochází při hospodářské aktivitě, emisní intenzitu lze tedy chápat jako ukazatel efektivity nebo čistoty dané ekonomiky vzhledem k množství vypouštěných skleníkových plynů. Zpravidla se udává v kg CO<sub>2</sub>eq na $ HDP, mezi státy s nejnižší a nejvyšší emisní intenzitou jsou až desetinásobné rozdíly."
+
+- id: externalita
+  name-short: "Externalita"
+  description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
 
 - id: greenwashing
   name-short: "Greenwashing"
@@ -49,14 +56,14 @@
   name-long: "Klimatický hackathon"
   description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
 
-- id: ipccar
-  name-short: "Hodnotící zprávy IPCC"
-  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I, z anglického Working Group) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) (z anglického Assessment Report) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
-
 - id: ipcc
   name-short: "IPCC"
   name-long: "The Intergovernmental Panel on Climate Change"
   description: "_Mezivládní panel pro změny klimatu_ je vědecký orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl [[cs.wikipedia](https://cs.wikipedia.org/wiki/IPCC)]."
+
+- id: ipccar
+  name-short: "Hodnotící zprávy IPCC"
+  description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I, z anglického Working Group) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) (z anglického Assessment Report) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
 
 - id: mitigace
   name-short: "Mitigace"
@@ -67,15 +74,23 @@
   name-long: "National Aeronautics and Space Administration"
   description: "NASA je americká vládní agentura zodpovědná za americký kosmický program, všeobecný výzkum v oblasti letectví a lepší porozumění Zemi [[en.wikipedia](https://en.wikipedia.org/wiki/NASA)]."
 
+- id: NDCs
+  name-short: "NDCs"
+  name-long: "Národní závazky (Nationally Determined Contributions)"
+  description: "V rámci Pařížské dohody se státy zavázaly vypracovat a aktualizovat národní cíle pro snižování emisí skleníkových plynů, tedy takzvané *Nationally Determined Contributions*. [[UNFCCC.int](https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs)]"
+
 - id: noaa
   name-short: "NOAA"
   name-long: "National Oceanic and Atmospheric Administration"
   description: "NOAA, neboli Národní úřad pro oceán a atmosféru, je americká vládní agentura zodpovědná za sledování a výzkum oceánů a atmosféry a obecněji životního prostředí. [[cs.wikipedia](https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_%C3%BA%C5%99ad_pro_oce%C3%A1n_a_atmosf%C3%A9ru)]."
 
-- id: NDCs
-  name-short: "NDCs"
-  name-long: "Národní závazky (Nationally Determined Contributions)"
-  description: "V rámci Pařížské dohody se státy zavázaly vypracovat a aktualizovat národní cíle pro snižování emisí skleníkových plynů, tedy takzvané *Nationally Determined Contributions*. [[UNFCCC.int](https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs)]"
+- id: parizskadohoda
+  name-short: "Pařížská dohoda"
+  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány."
+
+- id: phase-out
+  name-short: "Uhelný phase-out"
+  description: "Na výrobu elektřiny vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
 
 - id: ppm
   name-short: "ppm"
@@ -86,6 +101,10 @@
   name-short: "RCP"
   name-long: "Representative Concentration Pathway"
   description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"
+
+- id: sekvestrace
+  name-short: "sekvestrace"
+  description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. _Sekvestrace uhlíku_ je odstraňování uhlíku z atmosféry, což je jak přirozený proces, tak něco, co můžeme vědomě urychlovat, typicky za účelem zpomalení či zvrácení přílišného globálního oteplování. V takovém případě mluvíme o CDR (Carbon Dioxide Removal) nebo CCS (Carbon Capture and Storage), což jsou formy geoinženýrství – cíleného ovlivňování stavu Země."
 
 - id: sr15
   name-short: "SR15"
@@ -101,19 +120,6 @@
   name-short: "SROCC"
   name-long: "Special Report on the Ocean and Cryosphere in a Changing Climate"
   description: "[Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu](https://www.ipcc.ch/srocc/), vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy."
-
-- id: parizskadohoda
-  name-short: "Pařížská dohoda"
-  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány."
-
-- id: phase-out
-  name-short: "Uhelný phase-out"
-  description: "Na výrobu elektřiny vyprodukují uhelné elektrárny téměř dvakrát více emisí CO<sub>2</sub> než plynové elektrárny a téměř stonásobně více než obnovitelné zdroje nebo jaderné elektrárny. Uhelný phase-out označuje odstavení uhelných elektráren a jejich nahrazení zdroji elektřiny s nižšími emisemi."
-
-- id: carbon-neutrality
-  name-short: "Uhlíková neutralita"
-  name-long: "Net-zero carbon, klimatická neturalita"
-  description: "Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se “net-zero carbon” překládá. Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. Pokud máme udržet úroveň globálního oteplení pod 1,5–2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami CO<sub>2</sub> (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
 
 - id: w
   name-short: "W a Wh (kW, MW… a kWh, MWh…)"
