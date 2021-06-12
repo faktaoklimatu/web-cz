@@ -22,7 +22,7 @@ data-orig:
 
 ### Rozdělení zdrojů do kategorií: rok 2030
 
-Oproti číslům udávaným v samotné studii jen upravujeme výrobu vodních elektráren: studie uvádí součet vodních i přečerpávacích zatímco my uvádíme jen vodní. Pro vodní elektrárny předpokládáme současný koeficient využití a výrobu v současnosti tak zvyšujeme úměrně podle nárůstu instalovaného výkonu.
+Oproti číslům ve studii upravujeme výrobu vodních elektráren tak, aby byla porovnatelná s [dalšími elektroenergetickými studiemi](/infografiky/srovnani-energetickych-scenaru-cr), tj. vynecháváme přečerpávací elektrárny. Pro samotné vodní elektrárny tedy odvozujeme plánovanou výrobu od současného koeficientu využití a plánovaného instalovaného výkonu.
 
 Studie se také odlišuje v kategorizaci bioplynu, který oproti nám zařazuje do kategorie plyn. Přesné množství bioplynu ve scénáři není známé a dle vyjádření autorů je toto množství velmi malé, a tak jsme hodnoty ve scénáři neupravovali. Kategorie plyn zde tedy zahrnuje i malé množství bioplynu a kategorie biomasa a bioplyn ve skutečnosti zahrnuje pouze biomasu.
 
@@ -32,11 +32,11 @@ Pro studii McKinsey je ještě třeba zdůraznit, že ukazujeme úsporu emisí p
 
 ## O studii McKinsey
 
-McKinsey je mezinárodní konzultační společnost, jejíž aktivity tématicky pokrývají širokou škálu odvětví. V roce 2008 česká pobočka této společnosti vydala zprávu "Náklady a potenciál snižování emisí skleníkových plynů v České republice", na kterou tato současná studie navazuje. Kromě České republiky McKinsey připravuje optimální scénáře dekarbonizace i pro další země, např. Nizozemsko či Polsko.
+McKinsey je mezinárodní konzultační společnost, jejíž aktivity tematicky pokrývají širokou škálu odvětví. V roce 2008 česká pobočka této společnosti vydala zprávu "Náklady a potenciál snižování emisí skleníkových plynů v České republice", na kterou tato současná studie navazuje. Kromě České republiky McKinsey připravuje optimální scénáře dekarbonizace i pro další země, např. Nizozemsko či Polsko.
 
 ### Zaměření scénáře a použitá metodika
 
-Cílem této studie bylo představit nákladově efektivní scénář snížení emisí skleníkových plynů České republiky odpovídající očekávaným cílům Zelené dohody pro Evropu. Studie se věnuje dekarbonizaci ve všech hlavních odvětvích produkujících skleníkové plyny, tedy energetice (včetně teplárenství), průmyslu, zemědělství, odpadovému hospodářství, zemědělství, využívání půdy (LULUCF), dopravě a budovám. 
+Cílem této studie bylo představit nákladově efektivní scénář snížení emisí skleníkových plynů České republiky odpovídající očekávaným cílům [Zelené dohody pro Evropu](/svetove-dohody#2020--zelená-dohoda-pro-evropu). Studie se věnuje dekarbonizaci ve všech hlavních odvětvích produkujících skleníkové plyny, tedy energetice (včetně teplárenství), průmyslu, zemědělství, odpadovému hospodářství, zemědělství, využívání půdy (LULUCF), dopravě a budovám. 
 
 Pro každou kategorii studie představuje separátně scénář do roku 2030 a scénář do roku 2050, přičemž scénáře do roku 2030 souhrnně dosahují snížení emisí o 55 % (v souladu se Zelenou dohodou pro Evropu) a scénáře do roku 2050 vedou ke klimatické neutralitě České republiky.
 
