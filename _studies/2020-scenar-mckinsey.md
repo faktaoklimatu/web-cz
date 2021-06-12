@@ -36,7 +36,7 @@ McKinsey je mezinárodní konzultační společnost, jejíž aktivity tematicky 
 
 ### Zaměření scénáře a použitá metodika
 
-Cílem této studie bylo představit nákladově efektivní scénář snížení emisí skleníkových plynů České republiky odpovídající očekávaným cílům [Zelené dohody pro Evropu](/svetove-dohody#2020--zelená-dohoda-pro-evropu). Studie se věnuje dekarbonizaci ve všech hlavních odvětvích produkujících skleníkové plyny, tedy energetice (včetně teplárenství), průmyslu, zemědělství, odpadovému hospodářství, zemědělství, využívání půdy (LULUCF), dopravě a budovám. 
+Cílem této studie bylo představit nákladově efektivní scénář snížení emisí skleníkových plynů České republiky odpovídající očekávaným cílům [Zelené dohody pro Evropu](/infografiky/svetove-dohody#2020--zelená-dohoda-pro-evropu). Studie se věnuje dekarbonizaci ve všech hlavních odvětvích produkujících skleníkové plyny, tedy energetice (včetně teplárenství), průmyslu, zemědělství, odpadovému hospodářství, zemědělství, využívání půdy (LULUCF), dopravě a budovám.
 
 Pro každou kategorii studie představuje separátně scénář do roku 2030 a scénář do roku 2050, přičemž scénáře do roku 2030 souhrnně dosahují snížení emisí o 55 % (v souladu se Zelenou dohodou pro Evropu) a scénáře do roku 2050 vedou ke klimatické neutralitě České republiky.
 
