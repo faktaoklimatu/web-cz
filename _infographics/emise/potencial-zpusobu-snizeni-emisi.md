@@ -107,8 +107,8 @@ Jednou z oblastí, kde emise České republiky od roku 1990 rostou, je odpadové
 Možností, jak snížit množství odpadů na skládkách je mnoho: v duchu hesla nejlepší odpad je ten, který se nevyprodukuje, je možné vytvářet produkty tak, aby z nich nevznikal odpad nebo se řídit principy cirkulární ekonomiky a nevyužité zbytky v jednom výrobním procesu použít jako surovinu pro další výrobu. Další potenciál je ve větším třídění biologického odpadu a jeho cíleném rozkladu na bioplyn nebo jímání metanu z těles skládek, který pak může sloužit jako palivo.
 
 ### Výsadba 10 milionů stromů navíc
-<!-- FIXME doplnit sekvestraci uhlíku do slovníku pojmů a přidat sem hyperlink -->
-Vysazování stromů bývá považováno za důležitý nástroj k sekvestraci uhlíku, což se promítá i do některých politických [prohlášení](https://www.facebook.com/AndrejBabis/posts/1636697499800221/). Deset milionů stromů volíme symbolicky (jeden strom na jednoho občana ČR) a také v návaznosti na stejný cíl projektu Sázíme budoucnost založený Nadací Partnerství a zaštítěný Ministerstvem životního prostředí. Cílem projektu je do roku 2025 vysázet 10 milionů nových stromů mimo území lesa (tedy tvorbu nových alejí, sadů, remízků, větrolamů, atd.)
+
+Vysazování stromů bývá považováno za důležitý nástroj k <glossary id="sekvestrace">sekvestraci</glossary> uhlíku, což se promítá i do některých politických [prohlášení](https://www.facebook.com/AndrejBabis/posts/1636697499800221/). Deset milionů stromů volíme symbolicky (jeden strom na jednoho občana ČR) a také v návaznosti na stejný cíl projektu Sázíme budoucnost založený Nadací Partnerství a zaštítěný Ministerstvem životního prostředí. Cílem projektu je do roku 2025 vysázet 10 milionů nových stromů mimo území lesa (tedy tvorbu nových alejí, sadů, remízků, větrolamů, atd.)
 
 Podle poslední [národní inventarizace lesů](http://nil.uhul.cz/) provedené v letech 2011–2015 je v českých lesích asi 2 mld. stromů (nepočítaje mladé stromy do 7 cm tloušťky). To odpovídá asi 190 stromům na jednoho obyvatele.
 
