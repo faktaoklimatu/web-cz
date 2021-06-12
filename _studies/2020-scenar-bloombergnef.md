@@ -53,6 +53,6 @@ Předpokládané náklady na výstavbu nových zdrojů jsou dle scénáře 16,9 
 
 Je třeba poznamenat, že tento scénář transformace stojí na několika předpokladech, které se vymykají z rámce ostatních srovnávaných scénářů:
 * Předpokládá výrazně nejvyšší cenu emisních povolenek. Pro srovnání, v roce 2030 jde o téměř 80 € za tunu, zatímco scénář Ember uvažuje jen 32 € za tunu a scénář McKinsey jen 27 € za tunu (tyto konzervativní odhady ovšem skutečná cena výrazně překročila už v první polovině roku 2021).
-* Umožňuje velmi rychlý rozvoj obnovitelných zdrojů. Například už v roce 2030 instalovaný výkon větrných elektráren mírně překračuje celkový _optimistický_ potenciál větrné energetiky ČR podle [studie](https://csve.cz/img/wysiwyg/file/Potencial-vetrne-energie-2020.pdf) Ústavu fyziky atmosféry.
+* Umožňuje velmi rychlý rozvoj obnovitelných zdrojů. Například už v roce 2030 instalovaný výkon větrných elektráren mírně překračuje celkový _optimistický_ realizovatelný potenciál větrné energetiky ČR podle [studie](https://csve.cz/img/wysiwyg/file/Potencial-vetrne-energie-2020.pdf) Ústavu fyziky atmosféry.
 
 Tento scénář lze tedy brát jako exploraci ekonomických tlaků při vysokých cenách emisních povolenek a jejich důsledky za předpokladu společenské vůle pro rychlý rozvoj obnovitelných zdrojů.
