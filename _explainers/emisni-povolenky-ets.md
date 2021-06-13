@@ -1,7 +1,7 @@
 ---
 layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
-slug:        "emisni-povolenky-ETS"
+slug:        "emisni-povolenky-ets"
 published:   2021-06-13
 author:      "Tomáš Protivínský"
 weight:      74
