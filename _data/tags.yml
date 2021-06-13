@@ -54,3 +54,12 @@
 - id: ekonomika
   name-short: ekonomika
   name-long: ekonomika
+  index-weight: 6
+  description: Klimatická změna je jedním z nezamýšlených důsledků naší hospodářské produkce, neboť právě spalování fosilních paliv při výrobě a přepravě zboží a dalších komodit uvolňuje skleníkové plyny. Mitigační opatření tedy musí nutně ovlivňovat ekonomiku, vhodně navržená opatření v souladu ekonomickými principy mohou vést k efektivnímu a rychlému snížení emisí.
+
+- id: priroda
+  name-short: příroda
+  name-long: příroda, krajina, ekosystémy, biodiverzita
+  index-weight: 7
+  description: Klimatická změna ovlivňuje celou biosféru a jednotlivé ekosystémy, zároveň v kontextu adaptačních a mitigačních opatření hraje péče o krajinu a ochrana biodiverzity velkou roli. Lužní a nivní lesy pomáhají zadržovat vodu v krajině a podporovat biodiverzitu, výsadba zeleně ve městech pomáhá snižovat teplotu. Zemědělství, lesní hospodářství a další odvětví závisí na zdravých ekosystémech, přírodní procesy také čistí vodu a vzduch, které jsou pro nás klíčovými životodárnými zdroji.
+
