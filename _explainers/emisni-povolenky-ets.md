@@ -27,7 +27,7 @@ Elektrárny a průmyslové závody vypouštějící skleníkové plyny dnes mus�
 Každý rok vydává EU určité množství těchto povolenek (angl. _European Emission Allowance_, EUA), přičemž toto množství (tzv. **emisní strop**) se během let rovnoměrně snižuje – v souladu s emisními cíli EU. Systém tak umožňuje kontrolovat a průběžně redukovat množství emisí ze zahrnutých sektorů.
 
 {% include figure.html
-    name="ets-system.svg"
+    name="ets-system-des.svg"
     name-mobile="ets-system-mob.svg"
     alt="Jak funguje povolenkový systém EU: Kdo více znečišťuje, ten více platí."
     source-text="Fakta o klimatu"
@@ -57,7 +57,8 @@ Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenk
 K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí bylo pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
 
 {% include figure.html
-    name="ets-cena-povolenek.svg"
+    name="ets-cena-povolenek-des.svg"
+    name-mobile="ets-cena-povolenek-mob.svg"
     alt="Historické ceny futures kontraktů na emisní povolenky."
     source-text="Historické ceny futures kontraktů na emisní povolenky, Quandl, ICE"
     source-url="https://www.quandl.com/data/CHRIS/ICE_C1"
@@ -85,7 +86,8 @@ Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální mn
 V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005) – tento cíl je nyní ještě upravován v rámci [Zelené dohody pro Evropu](https://cs.wikipedia.org/wiki/Zelená_dohoda_pro_Evropu).
 
 {% include figure.html
-    name="ets-strop.svg"
+    name="ets-strop-des.svg"
+    name-mobile="ets-strop-mob.svg"
     alt="Maximální množství alokovaných povolenek v jednotlivých letech"
     source-text="Evropská komise, EU"
     source-url="https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf"
@@ -101,7 +103,8 @@ Fungování EU ETS je rozděleno do několika fází, během nichž je systém p
 První fáze od roku 2005 byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následujícím textu.
 
 {% include figure.html
-    name="ets-faze.svg"
+    name="ets-faze-des.svg"
+    name-mobile="ets-faze-mob.svg"
     alt="Fáze Evropského systému emisních povolenek"
     source-text="Evropská komise, EU"
     source-url="https://ec.europa.eu/clima/policies/ets_en"
@@ -123,7 +126,8 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 - Budoucí ceny povolenek jsou nepředvídatelné,  což komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
 
 {% include figure.html
-    name="ets-overene-emise.svg"
+    name="ets-overene-emise-des.svg"
+    name-mobile="ets-overene-emise-mob.svg"
     alt="Ověřené emise CO2 alokované povolenky v jednotlivých letech"
     source-text="EU Transaction Log, European Environment Agency"
     source-url="https://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-16"
