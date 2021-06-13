@@ -6,7 +6,7 @@ redirect_from: "/2021-reserse-lesy-cr"
 weight:      301
 published:   2021-06-10
 tags-scopes: [ cr]
-tags-topics: [ lesy, krajina ]
+tags-topics: [ priroda ]
 caption:     "Přehled zdrojů zabývajících se stavem českých lesů."
 intro: |
      Informace o českých lesích a jejich stavu jsou roztříštěny mezi privátní i státní organizace, české i zahraniční zdroje. Tato rešerše poskytuje základní vhled do organizací zabývajících se správou českých lesů a poskytováním informací o nich, dále souhrnné studie a grafiky a také odkazy na projekty zpracovávající interaktivní mapy a data o lesích.
@@ -75,34 +75,28 @@ categories:
         source: "česká informační agentura životního prostředí"
         link: "https://issar.cenia.cz/cr/lesy/"
         note: "Interaktivní mapy a grafiky zobrazující informace o stavu životního prostředí v ČR, a to včetně údajů o lesích."
-        validity: "2000–2019, část 1990-2019"
       - name: "Zdravotní stav lesů"
         source: "ÚHÚL"
         link: "http://geoportal.uhul.cz/mapy/mapyzsl.html"
-        note: "Mapy zdravotního stavu lesů, které jsou vytvářeny vyhodnocením satelitních snímků."
-        validity: "2013–2017"
+        note: "Mapy zdravotního stavu lesů pro období 2013–2017, které jsou vytvářeny vyhodnocením satelitních snímků."
       - name: "mapová aplikace Fakulty lesnické a dřevařské ČZU"
         source: "ČZÚ"
         link: "https://mapy.fld.czu.cz"
-        note: "Interaktivní aplikace zobrazující informace o změnách produkce lesů v důsledku změny klimatu, lesních požárech, kůrovcové kalamitě nebo poškozování lesů větrem. "
-        validity: "2013–2017"
+        note: "Interaktivní aplikace zobrazující informace o změnách produkce lesů v důsledku změny klimatu, lesních požárech, kůrovcové kalamitě nebo poškozování lesů větrem pro období 2013–2017 "
       - name: "Lesnictví a klimatická změna"
         source: "CzechGlobe"
         link: "https://www.klimatickazmena.cz/cs/?l=76"
         note: "V rámci projektu CzechAdapt byly zpřístupněny interaktivní formou informace o dopadech změny klimatu a jejich vývoji pro různá modelová období. Mezi tématy je zařazeno i lesnictví, které zobrazuje vrstvy změny klimatických podmínek pro růst smrku ztepilého v lesních vegetačních stupních s výhledem do roku 2090 a při různých stupních koncetrací emisí CO₂, ohrožení lesních půd acidifikací a nutriční degradací, výskyt lýkožrouta smrkového a další."
-        validity: "1981–2010, 2030, 2050, 2090"
       - name: "Odlesňování v letech 2001 až 2020"
         source: "Global Forest Watch"
         link: "https://www.globalforestwatch.org/map/"
         note: "Interaktivní mapová aplikace pro celý svět, zobrazující časovou řadu změn odlesňování a zalesňování v období 2001–2020."
-        validity: "2001-2020"
   - name: "Jiné zdroje"
     items:
       - name: "Modelování podmínek pro pěstévání smrku, buku a dubu"
         source: "FrameAdapt"
         link: "http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf"
         note: "Práce analyzuje klimatická data pro lesní vegetační stupně a pro hlavní hospodářské dřeviny smrk, buk a dub pro období 1961–2014 s následnou možnou predikcí vývoje blízké budoucnosti 2021–2060 ve vztahu k vhodnosti pěstování."
-        validity: "2021–2060"
       - name: "Mapa potenciální přirozené vegetace ČR"
         source: "Pladias"
         link: "https://www.pladias.cz/download/vegetation"
@@ -111,7 +105,6 @@ categories:
         source: "VÚLHM"
         link: "https://www.vulhm.cz/files/uploads/2021/05/ZOL_24_2021.pdf"
         note: "Sborník referátů z celostátního semináře na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". Pořádá VÚLHM"
-        validity: "2020/2021" 
 ---
 {% for category in page.categories %}
 {% if category.name %}<h2>{{category.name}}</h2>{% else %}{% continue %}{% endif %}
