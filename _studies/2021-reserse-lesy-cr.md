@@ -5,7 +5,7 @@ slug:        2021-reserse-lesy-cr
 redirect_from: "/2021-reserse-lesy-cr"
 weight:      301
 published:   2021-06-10
-tags-scopes: [ cr]
+tags-scopes: [ cr ]
 tags-topics: [ priroda ]
 caption:     "Přehled zdrojů zabývajících se stavem českých lesů."
 intro: |
@@ -78,8 +78,14 @@ categories:
       - name: "Zdravotní stav lesů"
         source: "ÚHÚL"
         link: "http://geoportal.uhul.cz/mapy/mapyzsl.html"
+<<<<<<< HEAD
         note: "Mapy zdravotního stavu lesů pro období 2013–2017, které jsou vytvářeny vyhodnocením satelitních snímků."
       - name: "mapová aplikace Fakulty lesnické a dřevařské ČZU"
+=======
+        note: "Mapy zdravotního stavu lesů, které jsou vytvářeny vyhodnocením satelitních snímků."
+        validity: "2013–2017"
+      - name: "Mapová aplikace Fakulty lesnické a dřevařské ČZU"
+>>>>>>> 3ad60a0... uprava tagu
         source: "ČZÚ"
         link: "https://mapy.fld.czu.cz"
         note: "Interaktivní aplikace zobrazující informace o změnách produkce lesů v důsledku změny klimatu, lesních požárech, kůrovcové kalamitě nebo poškozování lesů větrem pro období 2013–2017 "
@@ -104,7 +110,11 @@ categories:
       - name: "Škodliví činitelé v lesích Česka - Ochrana lesa na kalamitních holinách"
         source: "VÚLHM"
         link: "https://www.vulhm.cz/files/uploads/2021/05/ZOL_24_2021.pdf"
+<<<<<<< HEAD
         note: "Sborník referátů z celostátního semináře na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". Pořádá VÚLHM"
+=======
+        note: "Sborník referátů z celostátního semináře pořádaného VÚLHM na téma \"Škodliví činitelé v lesích Česka 2020/2021 - Ochrana lesa na kalamitních holinách\". "
+>>>>>>> 3ad60a0... uprava tagu
 ---
 {% for category in page.categories %}
 {% if category.name %}<h2>{{category.name}}</h2>{% else %}{% continue %}{% endif %}
