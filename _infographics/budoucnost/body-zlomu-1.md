@@ -6,7 +6,7 @@ redirect_from: "/body-zlomu-1"
 published:  2019-11-04
 weight:     97
 tags-scopes: [ svet ]
-tags-topics: [ budoucnost ]
+tags-topics: [ budoucnost, priroda ]
 caption:    "Pařížská dohoda deklaruje úsilí o to, aby nárůst globální průměrné teploty výrazně nepřekročil hranici 1,5 °C. Jedním z hlavních důvodů pro stanovení této hranice je riziko překročení tzv. bodů zlomu (tipping points). Při oteplení nad 2 °C se blížíme pravděpodobným bodům zlomu mnoha velkých planetárních systémů."
 data-our:   "https://docs.google.com/spreadsheets/d/1Hr-NNo1_WRSPWyW8YxP14WfqgOjk2xxrFsCh6enMDKI/edit#gid=0"
 data-orig:  [ [ "IPCC SR15 kapitola 3", "https://www.ipcc.ch/sr15/chapter/chapter-3" ] ]
