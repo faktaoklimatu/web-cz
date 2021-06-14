@@ -39,7 +39,7 @@ slug: index
     <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
     <a href="/temata/emise/" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Explainery</a>
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
-    <a href="" class="btn btn-secondary"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
+    <a href="/zdroje" class="btn btn-secondary"><i class="fas fa-fw fa-globe"></i> Další zdroje a odkazy</a>
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-green pt-4 pb-4" id="teachers" role="tabpanel" aria-labelledby="tab-role-teachers"><div class="container">
