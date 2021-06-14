@@ -105,7 +105,7 @@ Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2012–
 
 Fungování EU ETS je rozděleno do několika fází, během nichž je systém průběžně testován a rozšiřován.
 
-První fáze od roku 2005 byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následujícím textu.
+První fáze od roku 2005 byla především testovací a jejím účelem bylo ověření fungování celého systému a získání spolehlivých dat o emisích jednotlivých zařízení. V následujících fázích docházelo k rozšiřování o další sektory (např. letecké dopravy v rámci EHP) a k úpravě stropu emisních povolenek v souladu s emisními cíli EU. Konkrétní parametry EU ETS v jednotlivých fázích jsou shrnuty v následující tabulce.
 
 {% include figure.html
     name="ets-faze-des.svg"
