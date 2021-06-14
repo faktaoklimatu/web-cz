@@ -6,9 +6,9 @@ published:   2021-06-13
 author:      "Tomáš Protivínský"
 weight:      74
 tags-scopes: [ eu ]
-tags-topics: [ emise ]
+tags-topics: [ emise, ekonomika ]
 cover-source-author: "Gerd Altmann / geralt"
-cover-source-license: ""
+cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "CO2 Sign Pixabay"
 cover-source-url: "https://pixabay.com/illustrations/co2-exhaust-gases-road-sign-auto-4767388/"
@@ -39,7 +39,7 @@ Každý rok vydává EU určité množství těchto povolenek (angl. _European E
     text="V anglicky psané literatuře je ETS často označováno **cap-and-trade**, neboť se zde strop pro celkové emise (cap) kombinuje s volným obchodováním (trade) mezi jednotlivými emitenty skleníkových plynů."
 %}
 
-Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je v některých případech mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. Jejich emise jsou měřené a ověřované, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
+Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. Jejich emise jsou měřené a ověřované, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
 
 Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, stojí před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky?
 
