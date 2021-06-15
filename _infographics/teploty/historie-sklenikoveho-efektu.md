@@ -7,7 +7,7 @@ published:  2020-10-03
 weight:     110
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    " Skleníkový efekt je zkoumán více než 100let. První výpočty síly skleníkového efektu se objevily v devatenáctém století, měření a výpočty v průběhu dvacátého století je dále zpřesnily."
+caption:    "Skleníkový efekt je zkoumán více než 100 let. První výpočty síly skleníkového efektu se objevily v devatenáctém století, měření a výpočty v průběhu dvacátého století je dále zpřesnily."
 dataset:
 ---
 

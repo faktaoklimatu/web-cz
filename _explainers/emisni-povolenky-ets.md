@@ -144,7 +144,7 @@ V letech 2009–2013 byly celkové ověřené emise nižší než množství alo
 
 {% include preview-box.html
     title="Zpoplatnění emisí: rozšíření ve světě"
-    text="Zpoplatnění emisí skleníkových plynů není jen doménou Evropské Unie – mnoho zemí světa má zavedenu uhlíkovou daň nebo systém emisních povolenek."
+    text="Zpoplatnění emisí skleníkových plynů není jen doménou Evropské unie – mnoho zemí světa má zavedenu uhlíkovou daň nebo systém emisních povolenek."
     slug="zpoplatneni-emisi-svet"
 %}
 
