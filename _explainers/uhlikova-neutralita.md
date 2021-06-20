@@ -43,9 +43,8 @@ Ptát se, kterých skleníkových plynů se cíl týká, je rozhodně na místě
 ## Které emise se do závazku započítávají?
 
 {% include preview-box.html
-    title=""
-    text=""
-    slug="2021-reserse-zavazky-statu"
+    class="highlight-text-box"
+    text="Přehled klimatických závazků států, které se nejvíce podílejí na světových emisích skleníkových plynů, můžete najít v článku **[Rešerše: Emisní závazky států](/studie/2021-reserse-zavazky-statu)**"
 %}
 
 Když se ke klimatické/uhlíkové neutralitě zaváže stát, je třeba si položit otázku, zda se slib týká pouze emisí vznikajících na území tohoto státu (tzv. **teritoriálních emisí**), nebo veškerých emisí vyplývajících ze spotřeby v daném státě, tedy také emisí vzniklých při výrobě dovezených výrobků (tzv. **emisí ze spotřeby**). V případě České republiky je rozdíl mezi teritoriálními emisemi a emisemi ze spotřeby malý – jen asi 4 %. U některých zemí však mohou být emise ze spotřeby výrazně vyšší (Velká Británie asi o 36 %, Švýcarsko o 209 %) nebo také nižší (Jižní Afrika o 29 %, Čína o 13 %) než teritoriální emise [^4].
