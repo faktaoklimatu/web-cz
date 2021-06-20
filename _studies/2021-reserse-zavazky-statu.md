@@ -9,7 +9,7 @@ tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
 caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích skleníkových plynů a jejich oficiální závazky k omezení emisí."
 intro: |
-  Evropská unie a 191 dalších signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Některé země nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovaly i dlouhodobější závazky – nejčastěji tzv. <i>net-zero</i> emise v roce 2050. Indonésie a Austrálie svůj dlouhodobý cíl zatím zvažují.
+  Evropská unie a 191 dalších signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Některé země nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovaly i dlouhodobější závazky – nejčastěji tzv. <a href="/explainery/uhlikova-neutralita">net-zero emise</a> v roce 2050. Indonésie a Austrálie svůj dlouhodobý cíl zatím zvažují.
 items:
   - country:  "Čína"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
