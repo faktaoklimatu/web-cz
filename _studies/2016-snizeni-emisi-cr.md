@@ -16,7 +16,7 @@ summary:    |
     * **Snížení emisí o 80 % do roku 2050 je dosažitelné s velmi nízkými dodatečnými investičními náklady** v porovnání se scénářem Státní energetické koncepce snižujícím emise o 66,5 % (investiční náklady jsou vyšší o pouhých cca 0,1–0,5 % investičních nákladů scénáře SEK).
     * Pro dosažení emisního cíle v roce 2050 je **klíčové snížit spotřebu hnědého uhlí**. V takovém případě nedojde ani k vyčerpání zásob hnědého uhlí v rámci stávajících limitů, rozhodně nemá smysl další prolamování ekologických limitů těžby.
     * Zatím není nutný kompletní přechod na obnovitelné zdroje energie, také není nezbytný další rozvoj jaderné energetiky. 80% snížení emisí je možné prostřednictvím relativně pozvolných změn v energetickém mixu.
-    * Samotný systém obchodování s emisními povolenkami Evropské unie (EU ETS) není dostatečným nástrojem, neboť je nezbytné také snížení emisí v sektorech nezahrnutých do systému obchodování.
+    * Samotný systém obchodování s <glossary id="euets">emisními povolenkami Evropské unie</glossary> (EU ETS) není dostatečným nástrojem, neboť je nezbytné také snížení emisí v sektorech nezahrnutých do systému obchodování.
     * Alternativní scénáře dosahují kromě většího snížení emisí skleníkových plynů také **snížení emisí zdraví škodlivých polutantů**. Nízkoemisní scénáře tak mají značné dodatečné zdravotní a environmentální celospolečenské přínosy.
 
 study-title:        "80% snížení emisí skleníkových plynů: analýza vývoje energetiky České republiky do roku 2050"

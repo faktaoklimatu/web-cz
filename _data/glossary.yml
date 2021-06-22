@@ -39,9 +39,19 @@
   name-long: "CO<sub>2</sub> ekvivalent"
   description: "Množství CO<sub>2</sub>, které by mělo ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako množství příslušného jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let) – konkrétně je to množství příslušného plynu × [GWP koeficient](https://en.wikipedia.org/wiki/Global_warming_potential#Values). Např. pro metan je to hodnota cca 28 [[IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf) (strana 714)], což se dá číst jako \"1t CH<sub>4</sub> má ekvivalentní příspěvek ke skleníkovému jevu atmosféry jako 28t CO<sub>2</sub>\". Zjednodušeně řečeno, metan je 28krát silnější skleníkový plyn, než CO<sub>2</sub>. Zde na faktaoklimatu.cz, pokud to dostupná data a jejich správné zpracování umožňují, upřednostňujeme CO<sub>2</sub>eq, protože umožňuje dívat se na problematiku globálních změn klimatu komplexněji a přesněji."
 
+- id: cop
+  name-short: "COP"
+  name-long: "Conference of Parties"
+  description: "V návaznosti na rámcové úmluvy OSN se konají navazující konference smluvních stran (COP). Konference smluvních stran je nejvyšším správním orgánem dané ůmluvy OSN. Jejím úkolem je vytvářet shodu na řešeních a naplňovat cíle úmluvy pomocí konkrétní právních úprav. Úmluv OSN existuje celá řada, na našich stránkách se nejčastěji odkazujeme na [Rámcovou úmluvu OSN o změně klimatu](/slovnik#unfccc) a na ni navazující konference smluvních stran. Příkladem mohou být UNFCCC:COP3, kde byl podepsán [Kjótský protokol](/slovnik#kjotskyprotokol), nebo UNFCCC:COP21, kde byla podepsána [Pařížská dohoda](/slovnik#parizskadohoda)."
+
 - id: emisniintenzitaekonomiky
   name-short: "Emisní intenzita ekonomiky"
   description: "Intenzita emisí skleníkových plynů v hospodářství je definovaná jako poměr mezi emisemi CO<sub>2</sub>eq a HDP dané ekonomiky. HDP se zpravidla vyjadřuje pomocí parity kupní síly, kdy jsou zohledněny různé cenové hladiny v jednotlivých zemích. K emisím skleníkových plynů dochází při hospodářské aktivitě, emisní intenzitu lze tedy chápat jako ukazatel efektivity nebo čistoty dané ekonomiky vzhledem k množství vypouštěných skleníkových plynů. Zpravidla se udává v kg CO<sub>2</sub>eq na $ HDP, mezi státy s nejnižší a nejvyšší emisní intenzitou jsou až desetinásobné rozdíly."
+
+- id: euets
+  name-short: "EU ETS"
+  name-long: "EU Emissions Trading System"
+  description: "Evropský systém pro obchodování s emisemi (EU ETS) reguluje a postupně snižuje množství emisí skleníkových plynů vypouštěných vybranými podniky v EU - především velkými elektrárnami, ropnými rafineriemi atd. EU každoročně uvolní určitý počet emisních povolenek, které vybrané podniky následně draží a směňují, aby byly schopné pokrýt svoji produkci skleníkových plynů. Snižování počtu vydaných povolenek, respektive jejich zdražování na volném trhu, má za cíl motivovat velké znečišťovatele k inovacím v oblasti čistých technologií. Pro více informací viz náš [explainer k EU ETS](/explainery/emisni-povolenky-ets)."
 
 - id: externalita
   name-short: "Externalita"
@@ -58,13 +68,17 @@
 
 - id: ipcc
   name-short: "IPCC"
-  name-long: "The Intergovernmental Panel on Climate Change"
+  name-long: "Intergovernmental Panel on Climate Change"
   description: "_Mezivládní panel pro změny klimatu_ je vědecký orgán založen v roce 1988 k vyhodnocování rizik změny klimatu, potvrzen Valným shromážděním OSN rezolucí 43/53. Posláním IPCC je poskytovat komplexní vědecké posouzení současných vědeckých, technických a sociálně-ekonomických informací z celého světa o nebezpečí klimatických změn způsobených lidskou činností, o jejich potenciálních environmentálních a sociálně-ekonomických důsledcích a o možnostech přizpůsobení se těmto důsledkům nebo o možnostech zmírnění jejich účinků. IPCC představuje mezinárodně uznávanou autoritu v oblasti klimatických změn, vytváří zprávy, které jsou dohodou předních klimatologů a konsensu zúčastněných vlád. To poskytuje směrodatné politické poradenství s dalekosáhlými důsledky pro ekonomiku a životní styl [[cs.wikipedia](https://cs.wikipedia.org/wiki/IPCC)]."
 
 - id: ipccar
   name-short: "Hodnotící zprávy IPCC"
   description: "Klíčovými výsledky práce IPCC jsou komplexní tzv. hodnotící zprávy, které shrnují nejnovější poznatky z klimatologie. Hodnotící zprávu, typicky o rozsahu několik tisíc stran, panel publikuje vždy s odstupem několika let a každá zpráva se skládá ze tří částí, které odpovídají jednotlivým pracovním skupinám panelu. První pracovní skupina (WG I, z anglického Working Group) se zabývá porozuměním fyzikální podstatě klimatických změn. Druhá pracovní skupina (WG II) se zabývá dopady změn klimatu, adaptací a zranitelností. Třetí pracovní skupina (WG III) se zabývá mitigací (zmírněním dopadů změny klimatu). Vedle hodnotících zpráv připravuje IPCC také zvláštní zprávy ke konkrétním problémům. Zatím poslední [hodnotící zpráva AR5](https://www.ipcc.ch/assessment-report/ar5/) (z anglického Assessment Report) vyšla v roce 2014, následující zpráva AR6 bude publikována v roce 2021."
 
+- id: kjotskyprotokol
+  name-short: "Kjótský protokol"
+  description: "Jde o mezinárodní dohodu, která byla sjednána 1997 na [UNFCCC:COP3](/slovnik#cop) v japonském Kjótu a je podobně jako Pařížská dohoda právně závazná. Protokol měl původně 83 signatářů, mezi které patřila většina států Evropy, Rusko, Kazachstán, Austrálie, Nový Zéland, USA a Kanada. Spojené státy však dokument nepodepsaly a Kanada později od smlouvy odstoupila. Signatáři se v něm zavázali snížit emise skleníkových plynů v průměru o 5,2 %, cíl každého státu byl nastaven individuálně podle jeho možností. Mezi sledované plyny patřily kromě CO<sub>2</sub> i metan, N<sub>2</sub>O, HFC, PFC a SF<sub>6</sub>."
+  
 - id: mitigace
   name-short: "Mitigace"
   description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu, _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
@@ -82,7 +96,7 @@
 - id: noaa
   name-short: "NOAA"
   name-long: "National Oceanic and Atmospheric Administration"
-  description: "NOAA, neboli Národní úřad pro oceán a atmosféru, je americká vládní agentura zodpovědná za sledování a výzkum oceánů a atmosféry a obecněji životního prostředí. [[cs.wikipedia](https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_%C3%BA%C5%99ad_pro_oce%C3%A1n_a_atmosf%C3%A9ru)]."
+  description: "NOAA, neboli Národní úřad pro oceán a atmosféru, je americká vládní agentura zodpovědná za sledování a výzkum oceánů a atmosféry a obecněji životního prostředí. [[cs.wikipedia](https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_%C3%BA%C5%99ad_pro_oce%C3%A1n_a_atmosf%C3%A9ru)]"
 
 - id: parizskadohoda
   name-short: "Pařížská dohoda"
@@ -96,7 +110,7 @@
   name-short: "ppm"
   name-long: "parts per million"
   description: "Jednotka koncentrace s významem počet částic v milionu, tedy jde o jiný zápis jednotky μmol/mol. Podobně jako procenta (_per cento_) znamená počet ve stovce a promile (_per mīlle_) znamená počet v tisíci, ppm je počet v miliónu, tedy 1ppm = 1 desetitisícina procenta. Příklad: koncentrace 400 ppm CO<sub>2</sub> odpovídá 0,4 ‰ nebo 0,04 % a znamená, že v jednom milionu molekul vzduchu je 400 molekul CO<sub>2</sub>."
-  
+
 - id: rcp
   name-short: "RCP"
   name-long: "Representative Concentration Pathway"
@@ -113,7 +127,7 @@
 
 - id: srccl
   name-short: "SRCCL"
-  name-long: "Special Report on climate change and land"
+  name-long: "Special Report on Climate Change and Land"
   description: "[Zvláštní zpráva o změně klimatu, krajině a půdě](https://www.ipcc.ch/srccl/), publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje."
 
 - id: srocc
@@ -121,7 +135,17 @@
   name-long: "Special Report on the Ocean and Cryosphere in a Changing Climate"
   description: "[Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu](https://www.ipcc.ch/srocc/), vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy."
 
+- id: unfccc
+  name-short: "UNFCCC"
+  name-long: "United Nations Framework Convention on Climate Change"
+  description: "Rámcová úmluva OSN o změně klimatu (UNFCCC) je základním dokumentem pro celosvětovou spolupráci na snižování koncentrací skleníkových plynů v atmosféře a souvisejících změnách klimatu. Úmluva byla podepsána v roce 1992 na Konferenci OSN o životním prostředí v Rio de Janeiru a od té doby je její právní dosah rozšiřován v rámci tzv. [Konferencí smluvních stran](/slovnik#cop) (COP) dokumenty jako [Kjótský Protokol](/slovnik#kjotskyprotokol) nebo [Pařížská dohoda](/slovnik#parizskadohoda). [[cs.wikipedia](https://cs.wikipedia.org/wiki/Rámcová_úmluva_OSN_o_změně_klimatu)]"
+  
+- id: wmo
+  name-short: "WMO"
+  name-long: "World Meteorology Organization"
+  description: "Světová meteorologická organizace (WMO) se v rámci OSN specializuje na koordinaci výzkumu a shromažďování poznatků o zemské atmosféře. Hlavními oblastmi zájmu jsou počasí, klima a voda na Zemi. [[cs.wikipedia](https://cs.wikipedia.org/wiki/Světová_meteorologická_organizace)]"
+  
 - id: w
   name-short: "W a Wh (kW, MW… a kWh, MWh…)"
   name-long: "watt, watthodina a jejich násobky"
-  description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektřiny [[cs.wikipedia](https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice)]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W – pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok [[Český statistický úřad](https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=)]."
+  description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektřiny [[cs.wikipedia](https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice)]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W – pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok. [[Český statistický úřad](https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=)]"

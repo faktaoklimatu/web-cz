@@ -27,7 +27,7 @@ dataset:    "emise-eu"
 
 ## Poznámky k datům o emisích
 
-* Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (common reporting format), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy [UNFCCC](https://cs.wikipedia.org/wiki/R%C3%A1mcov%C3%A1_%C3%BAmluva_OSN_o_zm%C4%9Bn%C4%9B_klimatu).
+* Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF (common reporting format), veškerá metodika k výpočtům a reportingu je na stránkách národního programu inventarizace emisí ([NGGIP - national greenhouse gas inventory programme](https://www.ipcc-nggip.iges.or.jp/)) a je závazná pro všechny státy <glossary id="unfccc">UNFCCC</glossary>.
 * Data o emisích poskytují Eurostatu jednotlivé země EU – tedy data za Českou republiku reportovala přímo Česká republika, konkrétně skrze Evropskou agenturu pro životní prostředí.
 * Data za rok 2016 jsme vybrali proto, že pro daný rok máme i data ze systému emisních povolenek a můžeme tedy kombinovat data za stejný rok.
 * Údaje odpovídají emisím vyprodukovaným v dané zemi, avšak vzhledem k vývozu a dovozu zboží nemusejí odpovídat emisím vzniklých ze spotřeby v dané zemi. ČR například do dalších zemí EU vyváží elektřinu, ocel, automobily apod a dováží zboží z jiných zemí EU nebo z Číny.
