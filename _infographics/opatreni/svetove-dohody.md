@@ -22,17 +22,17 @@ Infografika poskytuje přehled o hlavních mezinárodních klimatických jednán
 
 ### 1979 – První světová klimatická konference, Ženeva
 
-Konference se uskutečnila ve dnech 12.–23. února 1979 v Ženevě, kde sídlí Světová meteorologická organizace (WMO). Lidmi způsobená klimatická změna byla již tehdy ve vědecké komunitě považována za potenciálně závažný problém. Program OSN pro životní prostředí (UNEP) a Mezinárodní rada vědeckých svazů na konferenci domluvily **vytvoření Světového klimatického programu, který souvisí mimo jiné s rozvojem systémů předpovědí, informování a vytváření projekcí vývoje klimatu.** Stejná skupina se setkala znovu v roce 1985 na Vědecké konferenci v rakouském Villachu a v roce 1987 uspořádala dva semináře k dalšímu výzkumu příčin i důsledků klimatických změn. To vedlo až ke vzniku mezivládního vědeckého poradenského orgánu IPCC v roce 1988.
+Konference se uskutečnila ve dnech 12.–23. února 1979 v Ženevě, kde sídlí Světová meteorologická organizace (<glossary id="wmo">WMO</glossary>). Lidmi způsobená klimatická změna byla již tehdy ve vědecké komunitě považována za potenciálně závažný problém. Program OSN pro životní prostředí (UNEP) a Mezinárodní rada vědeckých svazů na konferenci domluvily **vytvoření Světového klimatického programu, který souvisí mimo jiné s rozvojem systémů předpovědí, informování a vytváření projekcí vývoje klimatu.** Stejná skupina se setkala znovu v roce 1985 na Vědecké konferenci v rakouském Villachu a v roce 1987 uspořádala dva semináře k dalšímu výzkumu příčin i důsledků klimatických změn. To vedlo až ke vzniku mezivládního vědeckého poradenského orgánu IPCC v roce 1988.
 
 **Zdroje:**
 
 - Stránky o [Světových klimatických konferencích](https://en.wikipedia.org/wiki/World_Climate_Conference) na anglické Wikipedii
-- [Factsheet o mezinárodních jednáních](https://unfccc.int/cop3/fccc/climate/fact17.htm) z webu UNFCCC
+- [Factsheet o mezinárodních jednáních](https://unfccc.int/cop3/fccc/climate/fact17.htm) z webu <glossary id="unfccc">UNFCCC</glossary>
 - [Zpráva z konference ve Villachu, 1985](https://library.wmo.int/doc_num.php?explnum_id=8512)
 
 ### 1988 – Vznik IPCC
 
-Světová meteorologická organizace (WMO) a Program OSN pro životní prostředí (UNEP) zakládají Mezivládní panel pro změny klimatu (IPCC). Tento **vědecký panel od té doby vydává každých pět let <glossary id='ipccar'>souhrnnou hodnotící zprávu</glossary>**, která obsahuje přehled nových poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích) a jejich potenciálních dopadech, a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (Summary for Policymakers, SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsenzuálně zástupci vlád zapojených zemí (cca 120 zástupců).
+Světová meteorologická organizace (<glossary id="wmo">WMO</glossary>) a Program OSN pro životní prostředí (UNEP) zakládají Mezivládní panel pro změny klimatu (IPCC). Tento **vědecký panel od té doby vydává každých pět let <glossary id='ipccar'>souhrnnou hodnotící zprávu</glossary>**, která obsahuje přehled nových poznatků v problematice změn klimatu (a souvisejících technických i socioekonomických odvětvích) a jejich potenciálních dopadech, a navrhuje možná adaptační a mitigační opatření. S každým reportem vychází shrnutí pro tvůrce politik (Summary for Policymakers, SPM), které shrnuje obsah reportu a má sloužit jako podpora politiků pro tvorbu legislativy řešící problém změn klimatu. Jejich přesná znění se schvalují konsenzuálně zástupci vlád zapojených zemí (cca 120 zástupců).
 
 **Zdroje:**
 
@@ -41,9 +41,9 @@ Světová meteorologická organizace (WMO) a Program OSN pro životní prostřed
 
 ### 1992 – Konference OSN o životním prostředí a rozvoji (Summit Země) a Rámcová úmluva OSN o změně klimatu (UNFCCC)
 
-Setkání zástupců 172 států světa v Rio de Janeiru s cílem dohodnout se na principech udržitelného rozvoje. Jako výstupy setkání vznikly tři důležité dokumenty: **Úmluva o biologické rozmanitosti, Úmluva o boji proti desertifikaci a pro úsilí ochrany klimatu** a dodnes klíčová **Rámcová úmluva o změně klimatu – UNFCCC.**
+Setkání zástupců 172 států světa v Rio de Janeiru s cílem dohodnout se na principech udržitelného rozvoje. Jako výstupy setkání vznikly tři důležité dokumenty: **Úmluva o biologické rozmanitosti, Úmluva o boji proti desertifikaci a pro úsilí ochrany klimatu** a dodnes klíčová **Rámcová úmluva o změně klimatu – <glossary id="unfccc">UNFCCC</glossary>.** (*United Nations Framework Convention on Climate Change*)
 
-UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezení globálního oteplování, která byla přijata v červnu 1992 a vstoupila v platnost v březnu 1994. Dohody se účastní 197 států, které mají shodu na nutnosti řešit klimatické změny a na základě toho přijímají povinnost inventarizovat své emise a účastnit se každoročních konferencí (COP). Úmluva platí doposud.
+UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezení globálního oteplování, která byla přijata v červnu 1992 a vstoupila v platnost v březnu 1994. Dohody se účastní 197 států, které mají shodu na nutnosti řešit klimatické změny a na základě toho přijímají povinnost inventarizovat své emise a účastnit se každoročních konferencí (<glossary id="cop">COP</glossary>). Úmluva platí doposud.
 
 **Zdroje:**
 
@@ -54,7 +54,7 @@ UNFCCC je mnohostranná dohoda o ochraně klimatického systému Země a omezen�
 
 ### 1997 – Kjótský protokol
 
-Kjótský protokol byl přijat na třetí konferenci (COP3) států účastnících se Rámcové úmluvy UNFCCC o změně klimatu. **Rozvinuté průmyslové země se v něm zavázaly do roku 2012 snížit emise skleníkových plynů v průměru o 4,2 % oproti emisím v roce 1990**, konkrétní [cíle jednotlivých zemí](https://en.wikipedia.org/wiki/Kyoto_Protocol#Annex_I_parties_with_targets) se však lišily. Na jednání v Doha (Katar) bylo domluveno návazné snižování emisí v letech 2012–2020 s novými závazky pro jednotlivé země, dohoda z Doha však byla nahrazena tzv. Pařížskou dohodou, přijatou v roce 2015 na konferenci COP21 Paříži.
+Kjótský protokol byl přijat na třetí konferenci (<glossary id="cop">COP3</glossary>) států účastnících se Rámcové úmluvy <glossary id="unfccc">UNFCCC</glossary> o změně klimatu. **Rozvinuté průmyslové země se v něm zavázaly do roku 2012 snížit emise skleníkových plynů v průměru o 4,2 % oproti emisím v roce 1990**, konkrétní [cíle jednotlivých zemí](https://en.wikipedia.org/wiki/Kyoto_Protocol#Annex_I_parties_with_targets) se však lišily. Na jednání v Doha (Katar) bylo domluveno návazné snižování emisí v letech 2012–2020 s novými závazky pro jednotlivé země, dohoda z Doha však byla nahrazena tzv. Pařížskou dohodou, přijatou v roce 2015 na konferenci COP21 Paříži.
 
 Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí a v té době patnáctičlenná Evropská Unie, nicméně nerozvinuté země jako Čína nebo Indie neměly v rámci Kjótského protokolu závazky ke snižování emisí. USA Kjótský protokol podepsaly, ale odmítly jej ratifikovat s tím, že by poškodil jejich hospodářství, Kanada od protokolu odstoupila v roce 2011. **Závazky ke snížení emisí se tak týkaly jen 36 zemí a téměř všechny tyto země své závazky snižování emisí naplnily.** Přesto světové emise byly v roce 2010 o 32 % vyšší než v roce 1990, především kvůli nárůstu emisí v zemích jako Čína či Indie, které se v Kjótském protokolu k žádným snížením nezavázaly.
 
@@ -120,7 +120,7 @@ Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních zá
 
 ### 2018 – IPCC 1.5 – Zvláštní zpráva IPCC ke globálnímu oteplení o 1,5 °C
 
-Na základě výzvy z COP21 v Paříži byla IPCC vypracována zpráva, která se **zaměřuje na dopady oteplení o více než 1,5 °C a na scénáře snižování emisí skleníkových plynů**, které budou směřovat ke splnění cíle 1,5 °C. Tuto zprávu vydal IPCC 8. října 2018. Zpráva byla připravena 91 autory ze 40 zemí a její obsah je podložen více než 6000 vědeckými odkazy.
+Na základě výzvy z <glossary id="cop">COP21</glossary> v Paříži byla IPCC vypracována zpráva, která se **zaměřuje na dopady oteplení o více než 1,5 °C a na scénáře snižování emisí skleníkových plynů**, které budou směřovat ke splnění cíle 1,5 °C. Tuto zprávu vydal IPCC 8. října 2018. Zpráva byla připravena 91 autory ze 40 zemí a její obsah je podložen více než 6000 vědeckými odkazy.
 
 Zpráva uvádí několik významných výsledků:
 

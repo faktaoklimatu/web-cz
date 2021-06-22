@@ -21,6 +21,12 @@ Plocha největšího z kruhů (Čína) odpovídá množství 12,4 Gt <glossary i
 
 * Kanadská opatření zahrnují obě složky federálního systému (ETS i uhlíkovou daň) a také provinční opatření zpoplatňující uhlíkové emise.
 * RGGI (Regional Greenhouse Gas Initiative) bylo prvním opatřením zpoplatňujícím skleníkové plyny ve Spojených státech a dnes je do něj zapojeno deset severovýchodních států.
+
+{% include preview-box.html
+    title=""
+    slug="emisni-povolenky-ets"
+    text=""
+%}
 * Evropský systém pro obchodování s emisními povoleními zahrnuje také Norsko, Island a Lichtenštejnsko. Kromě plošného ETS implementovaly některé ze zemí EU i uhlíkovou daň.
 * Japonský systém zahrnuje ETS prefektury Satiama a Tokijský ETS.
 * V Číně dosud funguje osm pilotních ETS systémů, v roce 2020 bude spuštěn také národní ETS. Rozsah pokrytí udává předběžné neoficiální odhady založené na oznámení Státního výboru pro rozvoj a reformy Čínské lidové republiky. Národní ETS zpočátku pokryje pouze energetický sektor, ostatní odvětví jsou pokryta jednotlivými pilotními ETS.
