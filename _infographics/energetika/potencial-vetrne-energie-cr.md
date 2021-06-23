@@ -17,13 +17,13 @@ data-orig:
 
 V této infografice zobrazujeme potenciál pro výrobu elektřiny z větrné energie na území ČR podle [studie provedené Ústavem fyziky atmosféry Akademie věd České republiky](https://www.ufa.cas.cz/DATA/vetrna-energie/Potencial_vetrne_energie_2020.pdf) (ÚFA AV ČR) v roce 2020.
 
-Potenciálem v této infografice rozumíme maximální množství elektřiny vyrobené na území ČR pomocí větrných elektráren při naplnění určitých technických, zákonných, environmentálních, ekonomických a společenských omezení. Mezi uvažovaná omezení patří mimo jiné klimatické podmínky, technické možnosti zvolených technologií, zákonná omezení výstavby větrných elektráren, veřejný zájem na ochraně přírody a krajiny a postoj obyvatel. Studie pro účely výpočtů předpokládá plnou realizaci potenciálu kolem roku 2040, čemuž odpovídají i úroveň a parametry uvažovaných technologií.
+Potenciálem v této infografice rozumíme maximální množství elektřiny vyrobené na území ČR pomocí větrných elektráren při naplnění určitých technických, zákonných, environmentálních, ekonomických a společenských omezení. Mezi uvažovaná omezení patří mimo jiné klimatické podmínky, technické možnosti zvolených technologií, zákonná omezení výstavby větrných elektráren, veřejný zájem na ochraně přírody a krajiny a postoj obyvatel. Studie pro účely výpočtů předpokládá plnou realizaci potenciálu kolem roku 2040, čemuž odpovídá i úroveň a parametry uvažovaných technologií.
 
-Studie uvažuje legislativní a technická omezení na umístění větrných elektráren. Nesmí se stavět blíže než 500 m od obytných sídel, ve zvláště chráněných územích (národní parky, chráněné krajinné oblasti, přírodní rezervace a přírodní památky), ve vojenských prostorech, v bezprostředním okolí letišť, silnic a železničních tratí.
+Studie bere v potaz legislativní a technická omezení na umístění větrných elektráren – nesmí se stavět blíže než 500 m od obytných sídel, ve zvláště chráněných územích (národní parky, chráněné krajinné oblasti, přírodní rezervace a přírodní památky), ve vojenských prostorech, v bezprostředním okolí letišť, silnic a železničních tratí.
 
 V levé horní části srovnáváme čistou výrobu elektřiny z větru v roce 2019 a dva scénáře potenciálního rozvoje. Optimistický scénář oproti konzervativnímu počítá zejména s vyšší společenskou přijatelností větrných elektráren a s výkonnějšími typy elektráren. Všechny tři hodnoty porovnáváme se spotřebou elektřiny v roce 2019, kterou počítáme jako rozdíl čisté výroby a čistého exportu.
 
-V levé dolním části zobrazujeme potenciální maximální instalovaný výkon podle scénářů v krajích České republiky. Pro srovnání ukazujeme i celkový instalovaný výkon větrných elektráren v roce 2019.
+V levé dolní části zobrazujeme potenciální maximální instalovaný výkon podle scénářů v krajích České republiky. Pro srovnání ukazujeme i celkový instalovaný výkon větrných elektráren v roce 2019.
 
 Největší potenciál pro výstavbu vychází v obou scénářích v Jihomoravském kraji (zhruba 1140 MW instalovaného výkonu v optimistickém scénáři), na Vysočině (1020 MW) a v Moravskoslezském kraji (960 MW).
 
@@ -33,17 +33,17 @@ Pravá horní část infografiky definuje některé použité pojmy a ilustruje 
 
 **Instalovaný výkon** označuje maximální elektrický výkon, kterého může elektrárna v daný okamžik technicky dosáhnout. Výkon se udává ve <glossary id="w">wattech (W)</glossary> a jejich násobcích (kW, MW atd.). Větrné elektrárny mají typicky instalovaný výkon v řádu jednotek megawatt (MW).
 
-**Výroba** vyjadřuje množství elektrické energie, kterou elektrárna vygeneruje v daném časovém úseku za daných vnějších podmínek. Výroba (a potažma spotřeba) se udává ve watthodinách (Wh) a jejích násobcích. Typická roční výroba VTE v ČR je v řádu jednotek gigawatthodin (GWh). Pro srovnání, město Plzeň má spotřebu elektřiny přibližně 900 GWh, celková spotřeba elektřiny v ČR je pak 67 terawatthodin (TWh).
+**Výroba** vyjadřuje množství elekřiny, kterou elektrárna vygeneruje v daném časovém úseku za daných vnějších podmínek. Výroba se typicky udává v násobcích watthodin (Wh). Typická roční výroba VTE v ČR je v řádu jednotek gigawatthodin (GWh). Pro srovnání, město Plzeň má spotřebu elektřiny přibližně 900 GWh, celková spotřeba elektřiny v ČR je pak 67 terawatthodin (TWh). <!-- FIXME vztáhnout čísla k roku -->
 
-**Koeficient využití** vyjadřuje poměr mezi skutečnou výrobou elektřiny a elektřinou, která by byla hypoteticky vyrobena při nepřetržitém plném využití instalovaného výkonu za dané období. Průměrný roční koeficient využití VTE v ČR je 23 %.
+**Koeficient využití** vyjadřuje poměr mezi skutečnou výrobou elektřiny a elektřinou, která by byla hypoteticky vyrobena při nepřetržitém plném využití instalovaného výkonu za dané období. Průměrný roční koeficient využití VTE v ČR je 23 % (pro srovnání, u solárních panelů je to kolem 12 %). <!-- FIXME taky vztáhnout čísla k roku? -->
 
 ## Metodika
 
 Studie ÚFA uvažuje pro plnou realizaci potenciálu rok 2040. Počítá se stožáry o výšce zhruba 90–140 m s rotory o průměru 110–160 m. U instalací se počítá s výkonem 3–5 MW a roční výrobou 7,8–13,5 GWh. Pro srovnání, většina z 210 větrných elektráren instalovaných v Česku do roku 2020 dosahuje výšky 60–110 m (průměr rotoru 50–100 m) a instalovaného výkonu 0,6–2 MW (průměr zhruba 1600 GW). Za rok každá vyrobí v průměru 3,3 GWh.
 
-Studie vypočítává potenciál větrné energie pro jednotlivé kraje ve dvou fázích. Nejprve se pro celou ČR spočítá tzv. *technický potenciál*, který je určen tím, zda je možné v daném místě zákonné a ekonomicky výhodné postavit větrnou elektrárnu s předpokládanými parametry.
+Studie vypočítává potenciál větrné energie pro jednotlivé kraje ve dvou fázích. Nejprve se pro celou ČR spočítá tzv. *technický potenciál*, který je určen tím, zda je v daném místě možné a ekonomicky výhodné postavit větrnou elektrárnu s předpokládanými parametry.
 
-Následně se na základě faktorů, které ovlivňují realizovatelnost projektů, redukuje počet lokalit vhodných pro výstavbu. Tím vzniká odhad tzv. *realizovatelných scénářů*, konzervativního a optimistického. Scénáře se liší právě v předpokládané velikosti redukcí v druhé fázi.
+Následně se na základě faktorů, které ovlivňují realizovatelnost projektů, redukuje počet lokalit vhodných pro výstavbu. Tím vzniká odhad tzv. *realizovatelných scénářů*, konzervativního a optimistického. Scénáře se liší právě v předpokládané míře redukcí.
 
 Výpočet celkového potenciálu tedy probíhá postupně v následujících krocích:
 
@@ -53,6 +53,6 @@ Výpočet celkového potenciálu tedy probíhá postupně v následujících kro
 4. V dalším kroku se na dosud vymezeném území rozmístí hypotetické větrné elektrárny tak, aby se maximalizovalo množství vyrobené elektřiny a zároveň byl dodržen nutný rozestup mezi stožáry (obvykle délka pěti průměrů rotoru mezi sousedními elektrárnami).
 5. Výpočet technického potenciálu je završen vyřazením elektráren, jež by se staly nerentabilními v důsledku stínění jinými elektrárnami a následného poklesu průměrné rychlosti větru.
 6. Pro výpočet realizovatelných scénářů se počet míst, kde lze elektrárny postavit, dále redukuje dle faktorů ovlivňujících jejich praktickou realizovatelnost. Prvním uvažovaným faktorem jsou technická omezení na místní úrovni, např. střet s radary nebo nedostatečná infrastruktura. (U konzervativního scénáře se redukuje pravděpodobnost umístění elektrárny o 55 %, u optimistického o 45 %.)
-7. Dále se bere v potaz možný (ne)souhlas a postoje místních obyvatel a samospráv (redukce 45, resp. 5 %).
-8. K redukci dochází u míst se zvýšeným přírodním, kulturním či estetickým významem, jež leží mimo zvláště chráněná území (redukce 30, resp. 25 %). K další redukci dochází u lesů a přírodních ploch (redukce 50, resp. 0 %), přírodních parků a oblastí systému Natura 2000 (ptačí oblasti a evropsky významné lokality; redukce 75, resp. 50 %).
+7. Dále se bere v potaz možný (ne)souhlas a postoje místních obyvatel a samospráv (redukce 45, resp. 5 %). <!-- FIXME nejednoznačné k čemu to resp. je -->
+8. K redukci dochází i u míst se zvýšeným přírodním, kulturním či estetickým významem, jež leží mimo zvláště chráněná území (redukce 30, resp. 25 %). K další redukci dochází u lesů a přírodních ploch (redukce 50, resp. 0 %), přírodních parků a oblastí systému Natura 2000 (ptačí oblasti a evropsky významné lokality; redukce 75, resp. 50 %).
 9. Poslední faktor omezuje počet větrných elektráren v okruhu 15 km (asi 700 km<sup>2</sup>) na zhruba 30, a to kvůli společenské přijatelnosti, ochraně krajinného rázu a zčásti kvůli kapacitě přenosové soustavy (redukce zhruba 70 %).
