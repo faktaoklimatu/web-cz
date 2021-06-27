@@ -112,4 +112,4 @@ Protože globální oteplování závisí zejména na množství vypouštěných
 
 ## Zdroje a další odkazy
 
-*   Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). Satellite and ocean data reveal marked increase in Earth's heating rate. *Geophysical Research Letters*, 48, e2021GL093047. https://doi.org/10.1029/2021GL093047
+*   Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). Satellite and ocean data reveal marked increase in Earth's heating rate. *Geophysical Research Letters*, 48, e2021GL093047. [DOI 10.1029/2021GL093047](https://doi.org/10.1029/2021GL093047)
