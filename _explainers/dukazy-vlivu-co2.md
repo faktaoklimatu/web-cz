@@ -85,9 +85,9 @@ Jak již bylo zmíněno výše, jednotlivé skleníkové plyny zachytávají rů
     source-url="https://ams.confex.com/ams/pdfpapers/100737.pdf"
 %}
 
-Při diskusi o vlivu jednotlivých skleníkových plynů se musíme pozastavit nad rolí vodní páry. Ta totiž způsobuje největší část skleníkového efektu, ale nepovažuje se za antropogenní skleníkový plyn. Je to proto, že na její množství v atmosféře lidstvo nemá přímý vliv. Množství vodní páry v atmosféře záleží hlavně na teplotě, protože vyšší teplota znamená vyšší výpar a teplejší vzduch dokáže zadržet více vodní páry.[^5] Jinak řečeno, teplejší atmosféra do sebe dostává více vodní páry z evapotranspirace rostlin a povrchu vodních ploch a oceánů. (Zde je na místě připomenout, že 71 % povrchu Země pokrývají oceány. Množství vodní páry ze zavlažování, chlazení, nebo vaření je oproti vypařování z oceánů naprosto zanedbatelné.)
+Při diskusi o vlivu jednotlivých skleníkových plynů se musíme pozastavit nad rolí vodní páry. Ta totiž způsobuje největší část skleníkového efektu, ale nepovažuje se za antropogenní skleníkový plyn. Proč? Je to proto, že na její množství v atmosféře lidstvo nemá přímý vliv. Množství vodní páry v atmosféře záleží hlavně na teplotě, protože vyšší teplota znamená vyšší výpar a teplejší vzduch dokáže zadržet více vodní páry.[^5] Jinak řečeno, teplejší atmosféra do sebe dostává více vodní páry z evapotranspirace rostlin a povrchu vodních ploch a oceánů. (Zde je na místě připomenout, že 71 % povrchu Země pokrývají oceány. Množství vodní páry ze zavlažování, chlazení, nebo vaření je oproti vypařování z oceánů naprosto zanedbatelné.)
 
-Když se vzduch ochladí, přebytečná vodní pára zkondenzuje a vyprší. Vliv člověka na množství vodní páry je nepřímý – zvyšováním skleníkového efektu roste teplota atmosféry, která pak obsahuje více vodní páry, což vede k dalšímu oteplení. **Vodní pára tedy zesiluje oteplovací efekt ostatních skleníkových plynů** a nepovažuje se za antropogenní skleníkový plyn, ale za zesilující zpetnou vazbu.[^6]
+Když se vzduch ochladí, přebytečná vodní pára zkondenzuje a vyprší. Vliv člověka na množství vodní páry je tedy pouze nepřímý – zvyšováním skleníkového efektu roste teplota atmosféry, která pak obsahuje více vodní páry, což vede k dalšímu oteplení. **Vodní pára tedy zesiluje oteplovací efekt ostatních skleníkových plynů** a nepovažuje se za antropogenní skleníkový plyn, ale za zesilující zpetnou vazbu.[^6]
 
 Se znalostí zvýšení koncentrací skleníkových plynů v atmosféře můžeme fyzikálními výpočty zjistit, že přímé lidské emise jsou celkově zodpovědné za zvýšení záření přicházejícího k Zemi zhruba o 3 W/m<sup>2</sup> a že 2 W/m<sup>2</sup> z toho způsobily emise CO<sub>2</sub>. Nedávno se podařilo tyto hodnoty i experimentálně změřit za pomoci satelitů:[^7] mezi lety 2003 a 2018 se toto člověkem způsobené radiační působení zvýšilo zhruba o 0,5 W/m<sup>2</sup>. Kvůli zpětným vazbám v klimatu, zejména pak následnému zvýšení množství vodní páry v atmosféře, je však tento efekt několikanásobně zesílen.
 
@@ -118,7 +118,11 @@ Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy m�
 
 ## Zdroje a další odkazy
 
-* Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.
+### Nejnovější pokroky v měření radiačního působení
+
+- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI,Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (  Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.) 
+
+### Zdroje 
 
 [^1]: Vysvětlení jednotek **vlnočet** a **jasová teplota**: *Vlnočet* označuje počet vln na jeden centimetr a má jednotku cm<sup>−1</sup>. Převrácenou hodnotou vlnočtu je *vlnová délka*, *frekvence* je vlnočtu přímo úměrná. Fyzici někdy pojmy vlnočet, vlnová délka a frekvence zaměňují, protože je lze navzájem snadno převádět.
 
@@ -136,7 +140,7 @@ Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy m�
 
 [^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research letters*, 48.
 
-[^8]: Výpočet je následující. V rovnováze je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
+[^8]: Výpočet je následující: V rovnováze je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
 
     $$
     \Delta F_{2\times CO_2} = \frac{dF}{dT} \Delta T_{2\times CO_2} = 4 \sigma T^3 \Delta T_{2\times CO_2}
