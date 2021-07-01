@@ -4,7 +4,7 @@ title:       "Empirické důkazy vlivu CO₂ na klima"
 slug:        "dukazy-vlivu-co2"
 published:   2021-07-01
 author:      "Jakub Zamouřil"
-weight:      70
+weight:      72
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 cover-source-author: "ActionVance"
@@ -40,18 +40,16 @@ Již více než 50 let jsou na oběžné dráze Země satelity vybavené spektro
     source-text="NASA"
     source-url="https://ceres.larc.nasa.gov/instruments/satellite-missions/"
 %}
-<!-- TODO: NASA Image License, https://www.nasa.gov/multimedia/guidelines/index.html -->
 
 Naměřené snížení množství infračerveného záření unikajícího do vesmíru mezi lety 1970 a 1996 je zobrazeno v grafu níže. Graf ukazuje relativní výsledek měření v roce 1996 oproti roku 1970. Rovná tečkovaná linka na hodnotě 0 tedy odpovídá měření v roce 1970, zatímco tučná červená křivka odpovídá měření v roce 1996. V grafu je tak zřetelně vidět, jak se v tomto časovém období snížilo množství záření v infračerveném pásmu, jež od Země odchází.[^1]
 
 {% include figure.html
     name="zmena-unikajiciho-zareni.png"
-    alt="[TODO]"
-    caption="Změna záření unikajícího do vesmíru mezi lety 1970 a 1996, změřená satelitními přístroji."
+    alt="Liniový graf zobrazující změnu záření unikajícího ze Země do vesmíru, který ukazuje výrazné propady v oblastech odpovídajících oxidu uhličitému a metanu."
+    caption="Změna záření unikajícího do vesmíru mezi lety 1970 a 1996, změřená satelitními přístroji. Překlad grafu: <a href=\"https://skepticalscience.com/Czech-translation-of-Scientific-Guide-to-Skepticism.html\">CzechGlobe</a>."
     source-text="Harries et al. (2001)"
     source-url="http://doi.org/10.1038/35066553"
 %}
-<!-- TODO: Překlad grafu: [Czechglobe](https://skepticalscience.com/Czech-translation-of-Scientific-Guide-to-Skepticism.html) -->
 
 Zajímavým faktem je, že každý skleníkový plyn zachycuje trochu jiné vlnové délky záření. Které přesně, to záleží na tvaru jeho molekul. Díky tomuto poznatku je pak snížení unikajícího záření na jednotlivých vlnových délkách možné připsat na vrub konkrétním skleníkovým plynům (viz popisky v grafu). Oxid uhličitý např. zachycuje záření zejména na vlnových délkách okolo vlnočtu[^1] 670 cm<sup>−1</sup> a 2 300 cm<sup>−1</sup>, metan zase kolem vlnočtu 1 300 cm<sup>−1</sup> a 3 000 cm<sup>−1</sup>.
 
@@ -61,7 +59,7 @@ Zatímco množství odcházejícího záření klesá, **pozemní stanice naopak
 
 {% include figure.html
     name="trend-ir-zareni.jpg"
-    alt="[TODO]"
+    alt="Mapa světa s barevnými body, které značí z většiny pozitivní trend v množství infračerveného záření dopadajícího k Zemi."
     caption="Trend množství infračerveného záření přicházejícího k Zemi mezi lety 1973–2008."
     source-text="Wang & Liang (2009)"
     source-url="https://doi.org/10.1029/2009JD011800"
@@ -79,7 +77,7 @@ Jak již bylo zmíněno výše, jednotlivé skleníkové plyny zachytávají rů
 
 {% include figure.html
     name="spektrum-dlouhovlnneho-zareni.png"
-    alt="[TODO]"
+    alt="Liniový graf zobrazující spektrum záření dopadajícího na Zemi s vyznačenými skleníkovými plyny."
     caption="Spektrum dlouhovlnného záření přicházejícího k Zemi (naměřeno v Kanadě v únoru 2006, nadmořská výška cca 200 m)."
     source-text="Evans & Puckrin (2006)"
     source-url="https://ams.confex.com/ams/pdfpapers/100737.pdf"
@@ -107,12 +105,11 @@ Protože globální oteplování závisí zejména na množství vypouštěných
 
 {% include figure.html
     name="predpovezene-otepleni.jpg"
-    alt="[TODO]"
+    alt="Liniový graf, který ukazuje soulad oteplení předpovězeného klimatickými modely s reálně naměřeným oteplením."
     caption="Pozorované globální oteplení (červeně) a oteplení způsobené skleníkovými plyny předpovězené klimatickými modely (černě)."
     source-text="Gavin Schmidt, NASA"
     source-url="https://climate.nasa.gov/news/2943/study-confirms-climate-models-are-getting-future-warming-projections-right/"
 %}
-<!-- TODO: NASA Image License, https://www.nasa.gov/multimedia/guidelines/index.html -->
 
 Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy máme dnes již na několika úrovních: máme změřeno, že méně záření opouští planetu a více záření dopadá na povrch, a tato měření souhlasí s modely radiačního přenosu v atmosféře a na jejich základě klimatologické modely správně předpovídají vývoj globálních teplot. Nejistoty v našem poznání skleníkového efektu tak souvisí už v podstatě jen s detaily zesilujícího efektu vodní páry a přesnými procesy vzniku oblaků. Naproti tomu nejistota ohledně budoucího vývoje klimatu spočívá hlavně v tom, kolik emisí skleníkových plynů budeme vypouštět v dalších letech. 
 
@@ -122,7 +119,7 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 ### Nejnovější pokroky v měření radiačního působení
 
-- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, str. 48.) 
+- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.) 
 
 ### Zdroje 
 
@@ -130,9 +127,9 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
     *Jasová teplota* je jeden ze způsobů, jak vyjádřit intenzitu záření. Zjednodušeně řečeno: teplejší těleso vyzařuje s vyšší intenzitou než těleso chladnější a vyjádření pomocí teploty je mnohdy praktičtější. Ve zmíněném grafu tedy můžeme vidět například změnu jasové teploty v oblasti 1 300 cm<sup>−1</sup> (CH<sub>4</sub>) o 2 K. To znamená, že kvůli pohlcování záření zvýšeným množstvím metanu je měřená intenzita záření pro tuto frekvenci v roce 1996 nižší, než byla v roce 1970.
 
-[^2]: Wang, K., & Liang, S. (2009). [Global atmospheric downward longwave radiation over land surface under all-sky conditions from 1973 to 2008](https://doi.org/10.1029/2009JD011800). *Journal of Geophysical Research*, str. 114.
+[^2]: Wang, K., & Liang, S. (2009). [Global atmospheric downward longwave radiation over land surface under all-sky conditions from 1973 to 2008](https://doi.org/10.1029/2009JD011800). *Journal of Geophysical Research*, 114.
 
-[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* 5, str. 3.
+[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* 5, 3.
 
 [^4]: Puckrin, E., Evans, W. F. J., Li, J., & Lavoie, H. (2004). [Comparison of clear-sky surface radiative fluxes simulated with radiative transfer models](https://doi.org/10.5589/m04-044). *Canadian Journal of Remote Sensing*, 30:6, str. 903–912.
 
@@ -140,7 +137,7 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 [^6]: Kromě toho se vodní pára vyskytuje prakticky výhradně ve spodních 10 km atmosféry, zatímco ostatní skleníkové plyny působí zejména ve vyšších vrstvách.
 
-[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research Letters*, str. 48.
+[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research Letters*, 48.
 
 [^8]: Výpočet je následující: Ve stavu rovnováhy je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření, a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
 
@@ -150,10 +147,10 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
     Budeme-li předpokládat efektivní teplotu *top-of-atmosphere* 255 K, konstantní gradient teploty, z radiačních modelů vycházející hodnotu $$\Delta F_{2\times CO_2}$$ okolo 4 W/m<sup>2</sup> a Stefanovu–Boltzmannovu konstantu $$\sigma = 5,67 \cdot 10^{-8}\, W m^{-2} K^{−4}$$, dává výpočet hodnotu **citlivosti klimatu bez zpětných vazeb** přibližně 1 K.
 
-[^9]: Hansen, J., Lacis, A., et al. (1984). [Climate sensitivity: Analysis of feedback mechanisms](https://pubs.giss.nasa.gov/abs/ha07600n.html). In *Climate Processes and Climate Sensitivity*. J. E. Hansen and T. Takahashi, Eds., AGU Geophysical Monograph 29, Maurice Ewing Vol. 5. American Geophysical Union, str. 130-163.
+[^9]: Hansen, J., Lacis, A., et al. (1984). [Climate sensitivity: Analysis of feedback mechanisms](https://pubs.giss.nasa.gov/abs/ha07600n.html). In *Climate Processes and Climate Sensitivity*. J. E. Hansen and T. Takahashi, Eds., AGU Geophysical Monograph 29, Maurice Ewing Vol. 5. American Geophysical Union, str. 130–163.
 
 [^10]: Explainer na webu Carbon Brief: [How scientists estimate climate sensitivity](https://www.carbonbrief.org/explainer-how-scientists-estimate-climate-sensitivity).
 
-[^11]: Hausfather, Z., Drake, H. F., Abbott, T., & Schmidt, G. A. (2020). [Evaluating the performance of past climate model projections](https://doi.org/10.1029/2019GL085378). *Geophysical Research Letters*, str. 47.
+[^11]: Hausfather, Z., Drake, H. F., Abbott, T., & Schmidt, G. A. (2020). [Evaluating the performance of past climate model projections](https://doi.org/10.1029/2019GL085378). *Geophysical Research Letters*, 47.
 
 [^12]: Shrnutí zmíněné srovnávací studie na webu NASA: [Study Confirms Climate Models are Getting Future Warming Projections Right](https://climate.nasa.gov/news/2943/study-confirms-climate-models-are-getting-future-warming-projections-right/).
