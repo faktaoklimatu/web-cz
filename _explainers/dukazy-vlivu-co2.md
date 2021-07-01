@@ -19,7 +19,7 @@ perex:     "Ve vědecké komunitě se dnes všeobecně přijímá, že současn�
 
 ## Fyzikální pozadí: Proč se klimatologové zabývají zářením a toky energie?
 
-Země je stejně jako ostatní planety obklopena vesmírným vakuem, kterým se energie může šířit pouze ve formě záření. Planety od Slunce energii ve formě záření přijímají a současně také samy energii vyzařují. A zatímco sluneční záření vidíme, tepelné záření planet je v infračervené oblasti a je pro naše oči neviditelné. Ze zákonů termodynamiky vyplývá, že **má-li planeta ustálenou teplotu, pak množství záření přijatého od Slunce je stejné jako množství záření, které planeta sama vyzáří.**
+Země je stejně jako ostatní planety obklopena vesmírným vakuem, kterým se energie může šířit pouze ve formě záření. Planety od Slunce energii ve formě záření přijímají a současně také samy energii vyzařují. Sluneční záření vidíme, tepelné záření planet je však v infračervené oblasti a je pro naše oči neviditelné. Ze zákonů termodynamiky vyplývá, že **má-li planeta ustálenou teplotu, pak množství záření přijatého od Slunce je stejné jako množství záření, které planeta sama vyzáří.**
 
 Atmosféra může způsobit rozdíl mezi tepelným zářením, které vyzařuje povrch planety, a tepelným zářením vycházejícím z horní vrstvy atmosféry (TOA, *top-of-atmosphere*) tím, že část záření pohltí a odrazí zpět k povrchu. Teplota povrchu planety se pak ustálí na vyšší hodnotě, než jakou by planeta měla bez atmosféry. Tomuto mechanismu se říká *skleníkový efekt*.
 
@@ -42,7 +42,7 @@ Již více než 50 let jsou na oběžné dráze Země satelity vybavené spektro
 %}
 <!-- TODO: NASA Image License, https://www.nasa.gov/multimedia/guidelines/index.html -->
 
-Naměřené snížení množství infračerveného záření unikajícího do vesmíru mezi lety 1970 a 1996 je zobrazeno v grafu níže. Graf ukazuje relativní výsledek měření v roce 1996 oproti roku 1970. Rovná tečkovaná linka na hodnotě 0 tedy odpovídá měření v roce 1970, zatímco tučná červená křivka odpovídá měření v roce 1996. V grafu je tedy zřetelně vidět, jak se v tomto časovém období snížilo množství záření v infračerveném pásmu, jež od Země odchází.[^1]
+Naměřené snížení množství infračerveného záření unikajícího do vesmíru mezi lety 1970 a 1996 je zobrazeno v grafu níže. Graf ukazuje relativní výsledek měření v roce 1996 oproti roku 1970. Rovná tečkovaná linka na hodnotě 0 tedy odpovídá měření v roce 1970, zatímco tučná červená křivka odpovídá měření v roce 1996. V grafu je tak zřetelně vidět, jak se v tomto časovém období snížilo množství záření v infračerveném pásmu, jež od Země odchází.[^1]
 
 {% include figure.html
     name="zmena-unikajiciho-zareni.png"
@@ -57,7 +57,7 @@ Zajímavým faktem je, že každý skleníkový plyn zachycuje trochu jiné vlno
 
 ### Měření infračerveného záření přicházejícího k Zemi
 
-Zatímco množství odcházejícího záření klesá, **pozemní stanice zaznamenávají více infračerveného záření přicházejícího k Zemi** (viz obrázek níže). Na většině světových stanic bylo mezi lety 1973 a 2008 naměřeno zvýšení množství infračerveného záření (oranžově, červeně). Na některých stanicích k výrazné změně nedošlo (zeleně), a na některých se dokonce množství dopadajícího infračerveného záření snížilo (modře). Tyto místní rozdíly lze vysvětlit různým množstvím vodní páry v dané oblasti v důsledku změny klimatu. Tam, kde oblast je nyní v průměru sušší než dříve, se snížilo množství záření odražené k povrchu vodní párou, a tedy lokálně klesl i celkový skleníkový efekt.
+Zatímco množství odcházejícího záření klesá, **pozemní stanice naopak zaznamenávají více infračerveného záření přicházejícího k povrchu** (viz obrázek níže). Na většině světových stanic byl mezi lety 1973 a 2008 naměřen nárůst infračerveného záření (oranžově, červeně). Na některých stanicích k výrazné změně nedošlo (zeleně), a na některých se dokonce množství dopadajícího infračerveného záření snížilo (modře). Tyto místní rozdíly lze vysvětlit různým množstvím vodní páry v dané oblasti v důsledku změny klimatu. Tam, kde oblast je nyní v průměru sušší než dříve, je méně záření odraženo k povrchu vodní párou, a tedy lokálně klesl i celkový skleníkový efekt.
 
 {% include figure.html
     name="trend-ir-zareni.jpg"
@@ -69,9 +69,9 @@ Zatímco množství odcházejícího záření klesá, **pozemní stanice zaznam
 
 **Z těchto měření plyne, že se celosvětově zvyšuje množství infračerveného záření dopadajícího k Zemi.** Konkrétně v letech 1973–2008 se intenzita dlouhovlnného infračerveného záření zvyšovala tempem 2,2 W/m<sup>2</sup> za dekádu.[^2]
 
-Toto zvyšování přitom nelze vysvětlit možným zvýšením záření od Slunce ze tří důvodů: 1. Zvýšené množství záření je pozorováno i v noci. 2. Spektrum záření neodpovídá slunečnímu spektru, ale naopak spektru tepelného záření odraženého skleníkovými plyny a vodní párou. 3. Měření satelitů na oběžné dráze ukazují, že množství záření přicházejícího od Slunce v posledních 50 letech mírně klesá,[^3] takže ani v tomto případě nemůže jít o příčinu naměřeného zvýšení.
+Toto zvyšování přitom nelze vysvětlit vyšší intenzitou záření od Slunce, a to hned ze tří důvodů: 1. Zvýšené množství záření je pozorováno i v noci. 2. Spektrum záření neodpovídá slunečnímu spektru, ale naopak spektru tepelného záření odraženého skleníkovými plyny a vodní párou. 3. Měření satelitů na oběžné dráze ukazují, že intenzita záření přicházejícího od Slunce v posledních 50 letech mírně klesá,[^3] takže ani v tomto případě nemůže jít o příčinu naměřeného zvýšení.
 
-Jediné vysvětlení konzistentní s měřeními je, že jde o zesílení skleníkového efektu vlivem vyšších koncentrací vodní páry a skleníkových plynů v atmosféře.
+S měřeními je konzistentní pouze jediné vysvětlení: jde o zesílení skleníkového efektu vlivem vyšších koncentrací vodní páry a skleníkových plynů v atmosféře.
 
 ## Jaký podíl na změně radiačního působení mají jednotlivé skleníkové plyny?
 
@@ -85,9 +85,9 @@ Jak již bylo zmíněno výše, jednotlivé skleníkové plyny zachytávají rů
     source-url="https://ams.confex.com/ams/pdfpapers/100737.pdf"
 %}
 
-Při popisování vlivu jednotlivých skleníkových plynů je třeba zmínit také roli, kterou hraje vodní pára. Ta totiž způsobuje největší část skleníkového efektu, přestože nejde o antropogenní skleníkový plyn – na její množství v atmosféře nemá lidstvo přímý vliv. Kolik vodní páry v atmosféře je, záleží hlavně na teplotě, protože vyšší teplota znamená vyšší výpar a teplejší vzduch dokáže vodní páry zadržet více.[^5] Jinak řečeno, teplejší atmosféra do sebe dostává více vodní páry z evapotranspirace rostlin a povrchu vodních ploch a oceánů. (Zde je na místě připomenout, že 71 % povrchu Země pokrývají oceány. Množství vodní páry ze zavlažování, chlazení nebo vaření je oproti vypařování z oceánů naprosto zanedbatelné.)
+Při popisování vlivu jednotlivých skleníkových plynů je třeba zmínit také roli, kterou hraje vodní pára. Ta totiž způsobuje největší část skleníkového efektu, přestože nejde o antropogenní skleníkový plyn – na její množství v atmosféře nemá lidstvo přímý vliv. Kolik vodní páry v atmosféře je, záleží hlavně na teplotě, protože vyšší teplota znamená vyšší výpar a teplejší vzduch dokáže vodní páry zadržet více.[^5] Jinak řečeno, teplejší atmosféra do sebe dostává více vodní páry z evapotranspirace rostlin a povrchu vodních ploch a oceánů. (Zde je na místě připomenout, že oceány pokrývají 71 % povrchu Země a množství vodní páry ze zavlažování, chlazení nebo vaření je oproti vypařování z oceánů naprosto zanedbatelné.)
 
-Když se vzduch ochladí, přebytečná vodní pára zkondenzuje a vyprší. Vliv člověka na množství vodní páry je tedy pouze nepřímý – zvyšováním skleníkového efektu roste teplota atmosféry, která pak obsahuje více vodní páry, což vede k dalšímu oteplení. **Vodní pára tedy zesiluje oteplovací efekt ostatních skleníkových plynů**.[^6]
+Když se vzduch ochladí, přebytečná vodní pára zkondenzuje a vyprší. Vliv člověka na množství vodní páry je tedy pouze nepřímý – zvyšováním skleníkového efektu roste teplota atmosféry, která pak obsahuje více vodní páry, což vede k dalšímu oteplení, a **vodní pára tak zesiluje oteplovací efekt ostatních skleníkových plynů**.[^6]
 
 Se znalostí zvýšení koncentrací skleníkových plynů v atmosféře můžeme fyzikálními výpočty zjistit, že přímé lidské emise jsou celkově zodpovědné za zvýšení záření přicházejícího k Zemi zhruba o 3 W/m<sup>2</sup> a že 2 W/m<sup>2</sup> z toho způsobily emise CO<sub>2</sub>. Nedávno se podařilo tyto hodnoty i experimentálně změřit za pomoci satelitů:[^7] mezi lety 2003 a 2018 se toto člověkem způsobené radiační působení zvýšilo zhruba o 0,5 W/m<sup>2</sup>. Kvůli zpětným vazbám v klimatu, zejména pak následnému zvýšení množství vodní páry v atmosféře, je však tento efekt několikanásobně zesílen.
 
@@ -122,7 +122,7 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 ### Nejnovější pokroky v měření radiačního působení
 
-- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.) 
+- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, str. 48.) 
 
 ### Zdroje 
 
@@ -130,17 +130,17 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
     *Jasová teplota* je jeden ze způsobů, jak vyjádřit intenzitu záření. Zjednodušeně řečeno, teplejší těleso vyzařuje s vyšší intenzitou než těleso chladnější a vyjádření pomocí teploty je mnohdy praktičtější. Ve zmíněném grafu tedy můžeme vidět například změnu jasové teploty v oblasti 1 300 cm<sup>−1</sup> (CH<sub>4</sub>) o 2 K. To znamená, že kvůli pohlcování záření zvýšeným množstvím metanu je meřená intenzita záření pro tuto frekvenci v roce 1996 nižší, než byla v roce 1970.
 
-[^2]: Wang, K., & Liang, S. (2009). [Global atmospheric downward longwave radiation over land surface under all-sky conditions from 1973 to 2008](https://doi.org/10.1029/2009JD011800). *Journal of Geophysical Research*, 114.
+[^2]: Wang, K., & Liang, S. (2009). [Global atmospheric downward longwave radiation over land surface under all-sky conditions from 1973 to 2008](https://doi.org/10.1029/2009JD011800). *Journal of Geophysical Research*, str. 114.
 
-[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* **5,** 3.
+[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* **5,** str. 3.
 
-[^4]: Puckrin, E., Evans, W. F. J., Li, J., & Lavoie, H. (2004). [Comparison of clear-sky surface radiative fluxes simulated with radiative transfer models](https://doi.org/10.5589/m04-044). *Canadian Journal of Remote Sensing*, 30:6, s. 903–912.
+[^4]: Puckrin, E., Evans, W. F. J., Li, J., & Lavoie, H. (2004). [Comparison of clear-sky surface radiative fluxes simulated with radiative transfer models](https://doi.org/10.5589/m04-044). *Canadian Journal of Remote Sensing*, 30:6, str. 903–912.
 
 [^5]: Více o parametrech, na kterých závisí koncentrace vodní páry ve vzduchu, je například v článku [Vlhkost vzduchu](https://cs.wikipedia.org/wiki/Vlhkost_vzduchu) na české Wikipedii.
 
 [^6]: Kromě toho se vodní pára vyskytuje prakticky výhradně ve spodních 10 km atmosféry, zatímco ostatní skleníkové plyny působí zejména ve vyšších vrstvách.
 
-[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research letters*, s. 48.
+[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research letters*, str. 48.
 
 [^8]: Výpočet je následující: V rovnováze je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření, a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
 
@@ -150,10 +150,10 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
     Budeme-li předpokládat efektivní teplotu *top-of-atmosphere* 255 K, konstantní gradient teploty, z radiačních modelů vycházející hodnotu $$\Delta F_{2\times CO_2}$$ okolo 4 W/m<sup>2</sup> a Stefanovu–Boltzmannovu konstantu $$\sigma = 5,67 \cdot 10^{-8}\, W m^{-2} K^{−4}$$, dává výpočet hodnotu **citlivosti klimatu bez zpětných vazeb** přibližně 1 K.
 
-[^9]: Hansen, J., Lacis, A., et al. (1984). [Climate sensitivity: Analysis of feedback mechanisms](https://pubs.giss.nasa.gov/abs/ha07600n.html). In *Climate Processes and Climate Sensitivity*. J. E. Hansen and T. Takahashi, Eds., AGU Geophysical Monograph 29, Maurice Ewing Vol. 5. American Geophysical Union, s. 130-163.
+[^9]: Hansen, J., Lacis, A., et al. (1984). [Climate sensitivity: Analysis of feedback mechanisms](https://pubs.giss.nasa.gov/abs/ha07600n.html). In *Climate Processes and Climate Sensitivity*. J. E. Hansen and T. Takahashi, Eds., AGU Geophysical Monograph 29, Maurice Ewing Vol. 5. American Geophysical Union, str. 130-163.
 
 [^10]: Explainer na webu Carbon Brief: [How scientists estimate climate sensitivity](https://www.carbonbrief.org/explainer-how-scientists-estimate-climate-sensitivity).
 
-[^11]: Hausfather, Z., Drake, H. F., Abbott, T., & Schmidt, G. A. (2020). [Evaluating the performance of past climate model projections](https://doi.org/10.1029/2019GL085378). *Geophysical Research Letters*, s. 47.
+[^11]: Hausfather, Z., Drake, H. F., Abbott, T., & Schmidt, G. A. (2020). [Evaluating the performance of past climate model projections](https://doi.org/10.1029/2019GL085378). *Geophysical Research Letters*, str. 47.
 
 [^12]: Shrnutí zmíněné srovnávací studie na webu NASA: [Study Confirms Climate Models are Getting Future Warming Projections Right](https://climate.nasa.gov/news/2943/study-confirms-climate-models-are-getting-future-warming-projections-right/).
