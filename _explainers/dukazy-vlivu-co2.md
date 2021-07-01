@@ -91,9 +91,15 @@ Se znalostí zvýšení koncentrací skleníkových plynů v atmosféře můžem
 
 ## Jak změna radiačního působení mění globální teplotu?
 
+{% include preview-box.html
+    title="Podrobnější popis souvislostí"
+    text="Vztah mezi koncentrací CO<sub>2</sub> v atmosféře a globálním oteplováním podrobněji popisujeme v [naší infografice](/infografiky/souvislost-koncentrace-oteplovani) a v [souvisejícím explaineru](/explainery/otepleni-zvysenim-koncentrace-co2)."
+    slug="souvislost-koncentrace-oteplovani"
+%}
+
 Rostoucí množství přicházejícího záření musí zákonitě způsobit zvýšení teploty. Jak vysoké toto zvýšení bude, lze celkem jednoduše vypočítat – je to stejné, jako když zapnete troubu s určitým výkonem a chcete vypočítat teplotu, na které se ustálí její vnitřek. Výpočty ukazují, že zdvojnásobení množství CO<sub>2</sub> v atmosféře vede ke zvýšení radiačního působení o 3,7 W/m<sup>2</sup>, což by bez dalších zpětných vazeb vedlo k oteplení planety zhruba o 1 °C.[^8] [^9]
 
-Ve skutečnosti však v klimatu fungují ještě zpětné vazby – např. zvýšení teploty vede k většímu množství vodní páry v atmosféře a dalšímu oteplení, jak jsme zmínili výše. Jiná zpětná vazba spočívá v tom, že zvýšení teploty způsobuje roztátí sněhu a ledovců, které dříve odrážely velkou část slunečního záření zpět. Tyto a další podobné zpětné vazby způsobují celkové oteplení při zdvojnásobení koncentrace CO<sub>2</sub> o zhruba 3 °C [^10]. Této veličině, tedy globálnímu oteplení způsobenému zdvojnásobením koncentrací CO<sub>2</sub>, se říká *citlivost klimatu*.
+Ve skutečnosti však v klimatu fungují ještě zpětné vazby – např. zvýšení teploty vede k většímu množství vodní páry v atmosféře a dalšímu oteplení, jak jsme zmínili výše. Jiná zpětná vazba spočívá v tom, že zvýšení teploty způsobuje roztátí sněhu a ledovců, které dříve odrážely velkou část slunečního záření zpět. Tyto a další podobné zpětné vazby způsobují celkové oteplení při zdvojnásobení koncentrace CO<sub>2</sub> o zhruba 3 °C.[^10] Této veličině, tedy globálnímu oteplení způsobenému zdvojnásobením koncentrací CO<sub>2</sub>, se říká *citlivost klimatu*.
 
 ## Souhlasí pozorované oteplení s výpočty oteplení způsobeného skleníkovými plyny?
 
