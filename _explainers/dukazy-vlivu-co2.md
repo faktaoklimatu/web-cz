@@ -89,21 +89,21 @@ Při popisování vlivu jednotlivých skleníkových plynů je třeba zmínit ta
 
 Když se vzduch ochladí, přebytečná vodní pára zkondenzuje a vyprší. Vliv člověka na množství vodní páry je tedy pouze nepřímý – zvyšováním skleníkového efektu roste teplota atmosféry, která pak obsahuje více vodní páry, což vede k dalšímu oteplení, a **vodní pára tak zesiluje oteplovací efekt ostatních skleníkových plynů**.[^6]
 
-Se znalostí zvýšení koncentrací skleníkových plynů v atmosféře můžeme fyzikálními výpočty zjistit, že přímé lidské emise jsou celkově zodpovědné za zvýšení záření přicházejícího k Zemi zhruba o 3 W/m<sup>2</sup> a že 2 W/m<sup>2</sup> z toho způsobily emise CO<sub>2</sub>. Nedávno se podařilo tyto hodnoty i experimentálně změřit za pomoci satelitů:[^7] mezi lety 2003 a 2018 se toto člověkem způsobené radiační působení zvýšilo zhruba o 0,5 W/m<sup>2</sup>. Kvůli zpětným vazbám v klimatu, zejména pak následnému zvýšení množství vodní páry v atmosféře, je však tento efekt několikanásobně zesílen.
+Se znalostí zvýšení koncentrací skleníkových plynů v atmosféře můžeme fyzikálními výpočty zjistit, že přímé lidské emise jsou celkově zodpovědné za zvýšení záření přicházejícího k Zemi zhruba o 3 W/m<sup>2</sup> a že 2 W/m<sup>2</sup> z toho způsobily emise CO<sub>2</sub>. Nedávno se podařilo tyto hodnoty i experimentálně změřit za pomoci satelitů:[^7] mezi lety 2003 a 2018 se toto člověkem vyvolané radiační působení zvýšilo zhruba o 0,5 W/m<sup>2</sup>. Kvůli zpětným vazbám v klimatu, zejména pak následnému zvýšení množství vodní páry v atmosféře, je však tento efekt několikanásobně zesílen.
 
 ## Jak změna radiačního působení mění globální teplotu?
 
 Rostoucí množství přicházejícího záření musí zákonitě způsobit zvýšení teploty. Jak vysoké toto zvýšení bude, lze celkem jednoduše vypočítat – je to stejné, jako když zapnete troubu s určitým výkonem a chcete vypočítat teplotu, na které se ustálí její vnitřek. Výpočty ukazují, že zdvojnásobení množství CO<sub>2</sub> v atmosféře vede ke zvýšení radiačního působení o 3,7 W/m<sup>2</sup>, což by bez dalších zpětných vazeb vedlo k oteplení planety zhruba o 1 °C.[^8] [^9]
 
-Ve skutečnosti však v klimatu fungují ještě zpětné vazby – např. zvýšení teploty vede k většímu množství vodní páry v atmosféře a dalšímu oteplení, jak jsme zmínili výše. Jiná zpětná vazba spočívá v tom, že zvýšení teploty způsobuje roztátí sněhu a ledovců, které odrážely velkou část slunečního záření zpět. Tyto a další podobné zpětné vazby způsobují celkové oteplení při zdvojnásobení koncentrace CO<sub>2</sub> o zhruba 3 °C [^10]. Této veličině, tedy globálnímu oteplení způsobenému zdvojnásobením koncentrací CO<sub>2</sub>, se říká *citlivost klimatu*.
+Ve skutečnosti však v klimatu fungují ještě zpětné vazby – např. zvýšení teploty vede k většímu množství vodní páry v atmosféře a dalšímu oteplení, jak jsme zmínili výše. Jiná zpětná vazba spočívá v tom, že zvýšení teploty způsobuje roztátí sněhu a ledovců, které dříve odrážely velkou část slunečního záření zpět. Tyto a další podobné zpětné vazby způsobují celkové oteplení při zdvojnásobení koncentrace CO<sub>2</sub> o zhruba 3 °C [^10]. Této veličině, tedy globálnímu oteplení způsobenému zdvojnásobením koncentrací CO<sub>2</sub>, se říká *citlivost klimatu*.
 
 ## Souhlasí pozorované oteplení s výpočty oteplení způsobeného skleníkovými plyny?
 
-Klimatické modely se používají k predikci působení skleníkových plynů na globální teploty již od 70. let minulého století. Během této doby se průběžně zlepšovaly s tím, jak se zdokonalovala výpočetní technika a zvyšovalo se množství naměřených dat, které byly k dispozici. Ve 21. století jsou již klimatické modely velmi sofistikované a kromě skleníkových plynů modelují celý vodní cyklus, vzdušné a mořské proudění, vliv změn vlhkosti a teploty na rostliny a další parametry ovlivňující zemské klima.
+Klimatické modely se používají k predikci působení skleníkových plynů na globální teploty již od 70. let minulého století. Během této doby se průběžně zlepšovaly s tím, jak se zdokonalovala výpočetní technika a zvyšovalo se množství naměřených dat, které byly k dispozici. Ve 21. století jsou již klimatické modely velmi sofistikované a kromě skleníkových plynů modelují také celý vodní cyklus, vzdušné a mořské proudění, vliv změn vlhkosti a teploty na rostliny a další parametry ovlivňující zemské klima.
 
-Když v roce 1979 publikovali vědci první souhrnnou zprávu o výsledcích tehdejších klimatologických modelů, nevěděli, zda vývoj klimatu jejich zjištění potvrdí, nebo ne. Dnes máme možnost zpětně vyhodnotit, jak si které klimatologické modely vedly. Ve srovnávací studii NASA srovnávalo předpovědi mnoha modelů klimatu se skutečností a ukázalo se, že většina modelů dokázala vývoj globální teploty předpovědět velmi přesně.[^11] [^12]
+Když v roce 1979 publikovali vědci první souhrnnou zprávu o výsledcích tehdejších klimatologických modelů, nevěděli ještě, zda vývoj klimatu jejich zjištění potvrdí, nebo ne. Dnes už můžeme zpětně vyhodnotit, jak si které klimatologické modely vedly. Ve srovnávací studii NASA porovnávalo předpovědi mnoha modelů klimatu se skutečností a ukázalo se, že většina modelů předpověděla vývoj globální teploty velmi přesně.[^11] [^12]
 
-Protože globální oteplování závisí zejména na množství vypouštěných skleníkových plynů a není možné předpovědět, kolik těchto plynů bude lidstvo v příštích dekádách vypouštět, pracují klimatické modely s určitými scénáři, tedy vždy předpovídají oteplení pro dané množství vypuštěných emisí. V současnosti se ukazuje, že výstupy klimatických modelů se shodují se skutečností, tedy že pozorované oteplení je v rámci odchylky stejně velké jako předpovězené oteplení způsobené skleníkovými plyny. Modelovaná velikost přírodních vlivů, jako je sluneční aktivita, vulkanismus a podobně, se blíží nule.
+Protože globální oteplování závisí zejména na množství vypouštěných skleníkových plynů a není možné předpovědět, kolik těchto plynů bude lidstvo v příštích dekádách vypouštět, pracují klimatické modely s určitými scénáři, tedy vždy předpovídají oteplení pro dané množství vypuštěných emisí. V současnosti se ukazuje, že výstupy klimatických modelů se shodují se skutečností, tedy že pozorované oteplení je v rámci odchylky stejně velké jako předpovězené oteplení, jež je způsobeno skleníkovými plyny. Modelovaná velikost přírodních vlivů, jako je sluneční aktivita, vulkanismus a podobně, se blíží nule.
 
 {% include figure.html
     name="predpovezene-otepleni.jpg"
@@ -114,7 +114,7 @@ Protože globální oteplování závisí zejména na množství vypouštěných
 %}
 <!-- TODO: NASA Image License, https://www.nasa.gov/multimedia/guidelines/index.html -->
 
-Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy máme již na několika úrovních: máme změřeno, že méně záření opouští planetu a více záření dopadá na povrch, a tato měření souhlasí s modely radiačního přenosu v atmosféře a na jejich základě klimatologické modely správně předpovídají vývoj globálních teplot. Nejistoty v našem poznání skleníkového efektu tak souvisí už v podstatě jen s detaily zesilujícího efektu vodní páry a přesnými procesy vzniku oblaků. Nejistoty ohledně budoucího vývoje klimatu ale záleží hlavně na tom, jaké budou budoucí emise skleníkových plynů. 
+Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy máme dnes již na několika úrovních: máme změřeno, že méně záření opouští planetu a více záření dopadá na povrch, a tato měření souhlasí s modely radiačního přenosu v atmosféře a na jejich základě klimatologické modely správně předpovídají vývoj globálních teplot. Nejistoty v našem poznání skleníkového efektu tak souvisí už v podstatě jen s detaily zesilujícího efektu vodní páry a přesnými procesy vzniku oblaků. Naproti tomu nejistota ohledně budoucího vývoje klimatu spočívá hlavně v tom, kolik emisí skleníkových plynů budeme vypouštět v dalších letech. 
 
 Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se zachová lidstvo.
 
@@ -128,11 +128,11 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 [^1]: Vysvětlení jednotek **vlnočet** a **jasová teplota**: *Vlnočet* označuje počet vln na jeden centimetr a má jednotku cm<sup>−1</sup>. Převrácenou hodnotou vlnočtu je *vlnová délka*; *frekvence* je vlnočtu přímo úměrná. Fyzici někdy pojmy vlnočet, vlnová délka a frekvence zaměňují, protože je lze navzájem snadno převádět.
 
-    *Jasová teplota* je jeden ze způsobů, jak vyjádřit intenzitu záření. Zjednodušeně řečeno, teplejší těleso vyzařuje s vyšší intenzitou než těleso chladnější a vyjádření pomocí teploty je mnohdy praktičtější. Ve zmíněném grafu tedy můžeme vidět například změnu jasové teploty v oblasti 1 300 cm<sup>−1</sup> (CH<sub>4</sub>) o 2 K. To znamená, že kvůli pohlcování záření zvýšeným množstvím metanu je meřená intenzita záření pro tuto frekvenci v roce 1996 nižší, než byla v roce 1970.
+    *Jasová teplota* je jeden ze způsobů, jak vyjádřit intenzitu záření. Zjednodušeně řečeno: teplejší těleso vyzařuje s vyšší intenzitou než těleso chladnější a vyjádření pomocí teploty je mnohdy praktičtější. Ve zmíněném grafu tedy můžeme vidět například změnu jasové teploty v oblasti 1 300 cm<sup>−1</sup> (CH<sub>4</sub>) o 2 K. To znamená, že kvůli pohlcování záření zvýšeným množstvím metanu je měřená intenzita záření pro tuto frekvenci v roce 1996 nižší, než byla v roce 1970.
 
 [^2]: Wang, K., & Liang, S. (2009). [Global atmospheric downward longwave radiation over land surface under all-sky conditions from 1973 to 2008](https://doi.org/10.1029/2009JD011800). *Journal of Geophysical Research*, str. 114.
 
-[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* **5,** str. 3.
+[^3]: Usoskin, I. G. (2008). [A History of Solar Activity over Millennia](https://doi.org/10.12942/lrsp-2008-3). *Living Rev. Sol. Phys.* 5, str. 3.
 
 [^4]: Puckrin, E., Evans, W. F. J., Li, J., & Lavoie, H. (2004). [Comparison of clear-sky surface radiative fluxes simulated with radiative transfer models](https://doi.org/10.5589/m04-044). *Canadian Journal of Remote Sensing*, 30:6, str. 903–912.
 
@@ -140,9 +140,9 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 [^6]: Kromě toho se vodní pára vyskytuje prakticky výhradně ve spodních 10 km atmosféry, zatímco ostatní skleníkové plyny působí zejména ve vyšších vrstvách.
 
-[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research letters*, str. 48.
+[^7]: Kramer, R. J., He, H., Soden, B. J., Oreopoulos, L., Myhre, G., Forster, P. M., & Smith, C. J. (2021). [Observational Evidence of Increasing Global Radiative Forcing](https://doi.org/10.1029/2020GL091585). *Geophysical Research Letters*, str. 48.
 
-[^8]: Výpočet je následující: V rovnováze je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření, a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
+[^8]: Výpočet je následující: Ve stavu rovnováhy je energie přicházejícího záření rovna energii odcházejícího záření. Množství odcházejícího záření je dáno Stefanovým–Boltzmannovým zákonem: $$F = -\sigma T^4$$. Když se množství přicházejícího záření zvýší, musí se zvýšit i množství odcházejícího záření, a tedy i teplota povrchu. Při zdvojnásobení koncentrace CO<sub>2</sub> dojde k nárůstu radiačního působení $$\Delta F_{2\times CO_2}$$ a v důsledku toho k nárůstu teploty $$\Delta T_{2 \times CO_2}$$. Taylorovým rozvojem můžeme vypočítat:
 
     $$
     \Delta F_{2\times CO_2} = \frac{dF}{dT} \Delta T_{2\times CO_2} = 4 \sigma T^3 \Delta T_{2\times CO_2}
