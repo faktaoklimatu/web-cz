@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Empirické důkazy vlivu CO₂ na klima"
 slug:        "dukazy-vlivu-co2"
-published:   2021-07-01
+published:   2021-07-02
 author:      "Jakub Zamouřil"
 weight:      72
 tags-scopes: [ svet ]
@@ -14,8 +14,6 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-url: "https://unsplash.com/photos/t7EL2iG3jMc"
 perex:     "Ve vědecké komunitě se dnes všeobecně přijímá, že současná změna klimatu je způsobena zvyšováním koncentrací skleníkových plynů v atmosféře, a to zejména oxidu uhličitého. Toto přijetí je dáno množstvím empirických důkazů, z nichž některé si představíme v následujícím explaineru."
 ---
-
-
 
 ## Fyzikální pozadí: Proč se klimatologové zabývají zářením a toky energie?
 
@@ -117,7 +115,7 @@ Protože globální oteplování závisí zejména na množství vypouštěných
     source-url="https://climate.nasa.gov/news/2943/study-confirms-climate-models-are-getting-future-warming-projections-right/"
 %}
 
-Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy máme dnes již na několika úrovních: máme změřeno, že méně záření opouští planetu a více záření dopadá na povrch, a tato měření souhlasí s modely radiačního přenosu v atmosféře a na jejich základě klimatologické modely správně předpovídají vývoj globálních teplot. Nejistoty v našem poznání skleníkového efektu tak souvisí už v podstatě jen s detaily zesilujícího efektu vodní páry a přesnými procesy vzniku oblaků. Naproti tomu nejistota ohledně budoucího vývoje klimatu spočívá hlavně v tom, kolik emisí skleníkových plynů budeme vypouštět v dalších letech. 
+Experimentální důkazy vlivu CO<sub>2</sub> na globální oteplování tedy máme dnes již na několika úrovních: máme změřeno, že méně záření opouští planetu a více záření dopadá na povrch, a tato měření souhlasí s modely radiačního přenosu v atmosféře a na jejich základě klimatologické modely správně předpovídají vývoj globálních teplot. Nejistoty v našem poznání skleníkového efektu tak souvisí už v podstatě jen s detaily zesilujícího efektu vodní páry a přesnými procesy vzniku oblaků. Naproti tomu nejistota ohledně budoucího vývoje klimatu spočívá hlavně v tom, kolik emisí skleníkových plynů budeme vypouštět v dalších letech.
 
 Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se zachová lidstvo.
 
@@ -125,9 +123,9 @@ Jinak řečeno: největší nejistotou budoucího vývoje klimatu je to, jak se 
 
 ### Nejnovější pokroky v měření radiačního působení
 
-- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.) 
+- Satelitní měření i pozorování in-situ nezávisle ukazují zdvojnásobení energetické nerovnováhy Země (*EEI, Earth's Energy Imbalance*) mezi roky 2005 a 2019. Nárůst energetické nerovnováhy probíhá tempem přibližně 0.5 W m<sup>−2</sup> za dekádu a přispívají k tomu jak antropogenní skleníkové plyny, tak zpětné vazby v klimatickém systému. (Loeb, N. G., Johnson, G. C., Thorsen, T. J., Lyman, J. M., Rose, F. G., & Kato, S. (2021). [Satellite and ocean data reveal marked increase in Earth's heating rate](https://doi.org/10.1029/2021GL093047). *Geophysical Research Letters*, 48.)
 
-### Zdroje 
+### Zdroje
 
 [^1]: Vysvětlení jednotek **vlnočet** a **jasová teplota**: *Vlnočet* označuje počet vln na jeden centimetr a má jednotku cm<sup>−1</sup>. Převrácenou hodnotou vlnočtu je *vlnová délka*; *frekvence* je vlnočtu přímo úměrná. Fyzici někdy pojmy vlnočet, vlnová délka a frekvence zaměňují, protože je lze navzájem snadno převádět.
 
