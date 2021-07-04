@@ -125,15 +125,15 @@ Snažíme se dodávat srozumitelné údaje široké veřejnosti a vizuálně zpr
 
 <div id="carousel_successes" class="carousel slide mb-4 mt-4" data-ride="carousel">
   <ol class="carousel-indicators">
-    {%- assign sorted_success = site.data.carousel | where_exp: "item", "item.display != false" -%}
-    {%- for item in sorted_success %}
+    {%- assign filtered_success = site.data.carousel | where_exp: "item", "item.display != false" -%}
+    {%- for item in filtered_success %}
     <li data-target="#carousel_successes" data-slide-to="{{- forloop.index0 -}}"{%- if forloop.index0 == 0 %} class="active"{%- endif -%}> </li>
     {%- endfor %}
   </ol>
   <div class="carousel-inner">
-    {%- for item in sorted_success -%}
+    {%- for item in filtered_success -%}
     {%- if item.link %}
-    <a href="{{ item.link }}" class="no-ext-link-icon carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
+    <a href="{{ item.link }}" {% if item.newtab %} target="_blank" {% endif %} class="no-ext-link-icon carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- else %}
     <div class="carousel-item {%- if forloop.index0 == 0 %} active{% endif %}" data-interval="6000">
     {%- endif %}

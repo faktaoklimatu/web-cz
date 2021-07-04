@@ -18,7 +18,7 @@ search_image: "/assets-local/img/atlas-mockup.png"
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
         <h2>Ke stažení</h2>
         <p>Líbí se vám náš atlas? Stáhněte si jej nebo si zakupte tištěnou verzi z e-shopu Lipky.</p>
-        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
         <a href="https://www.lipka.cz/lipka?idk=zbozi93|5" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
         <h2>Podpořte naši práci</h2>
