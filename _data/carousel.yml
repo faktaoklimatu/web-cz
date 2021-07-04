@@ -1,3 +1,9 @@
+- title: "Výroční zpráva 2020"
+  link: "/assets-local/files/2020-vyrocni-zprava.pdf"
+  newtab: true
+  img: "2020-vyrocni-zprava.png"
+  summary: "Bilancujeme, co všechno se nám podařilo dosáhnout. Podívejte se na přehled našeho fungování a výstupů za rok 2020."
+
 - title: "Fakta o klimatu v Senátu"
   link: "https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721"
   img: "senat.jpg"
@@ -10,5 +16,5 @@
 
 - title: "Atlas klimatické změny"
   link: "/atlas"
-  img: "media.png"
+  img: "atlas.jpg"
   summary: "Z našich dat a grafik jsme připravili první ucelenou publikaci, Atlas klimatické změny. Brzy začne její distribuce do škol a k zájemcům o téma klimatické změny."
