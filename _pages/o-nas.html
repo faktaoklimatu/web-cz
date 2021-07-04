@@ -29,6 +29,16 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
         {%- endfor %}
     </div>
 </div>
+
+<div class="section">
+    <div class="container">
+        <h2>Dokumenty</h2>
+        <p class="lead">V této sekci naleznete základní dokumenty ústavu Otevřená data o klimatu, z. ú. Máte-li chvíli, přečtěte si naši výroční zprávu za rok 2020, kde se dozvíte, co všechno se nám podařilo dosáhnout.</p>
+        <a class="btn btn-primary" href="/assets-local/files/2020-vyrocni-zprava.pdf" target="_blank"><i class="fas fa-fw fa-calendar-alt"></i> Výroční zpráva 2020</a>
+        <a class="btn btn-secondary" href="/assets-local/files/2020-statut.pdf" target="_blank"><i class="fas fa-fw fa-university"></i> Statut ústavu</a>
+    </div>
+</div>
+
 <div class="section">
     <div class="container">
         <h2 id="members">Naši členové</h2>
@@ -39,7 +49,7 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
             {%- assign members = site.data.organization-members -%}
             {%- for item in members %}
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3">
-                <div class="card bg-grey border-0">
+                <div class="card bg-transparent border-0">
                     <div class="text-center">
                         <img class="card-img-top p-2" style="width: 50%; border-radius: 50%" src="/assets-local/team/{{item.img}}" alt="{{item.name }}">
                     </div>
