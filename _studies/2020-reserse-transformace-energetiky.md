@@ -11,6 +11,13 @@ caption:     "Rešerše klíčových studií věnujících se budoucí transform
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Rozvoj obnovitelných zdrojů v ČR do roku 2030"
+    date:    Duben 2021
+    url:     "https://www.alies.cz/cesko-ma-v-obnovitelnych-zdrojich-na-vic-spocitali-experti-z-univerzity-karlovy-rozvoj-zelene-energetiky-prinese-snizeni-skod-na-lidskem-zdravi-a-krajine-az-o-64-mld-korun-k-roku-2030/"
+    authors:
+      - name: Centrum pro otázky životního prostředí UK
+        url:  "https://www.czp.cuni.cz/czp/index.php/cz/"
+    timeframe: 2030
   - title:   "Klimaticko-energetické investice v teplárenství"
     date:    Únor 2021
     url:     "https://fel.cvut.cz/cz/aktuality/2021/teplarenstvi"
