@@ -18,6 +18,21 @@ data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-imp
     slug="svetove-dohody"
 %}
 
+## Uhlíkový rozpočet pro Českou republiku
+
+Poté, co známe globální uhlíkový rozpočet pro dodržení Pařížské dohody, je pak možné tento rozpočet rozdělit mezi jednotlivé země. Existuje ovšem více způsobů jak přidělit jednotlivým zemím jejich uhlíkové rozpočty. Například je možné uhlíkový rozpočet rozdělit jednoduše podle počtu obyvatel, nebo podle historických emisí, podle HDP, či podle míry současných emisí skleníkových plynů. Každý způsob má své výhody a nevýhody a žádný nebyl zvolen jako oficiální.
+
+Autoři Anderson a Calverley ve svých studiích přistupují k rozdělování uhlíkového rozpočtu iterativní metodou. Nejprve je vypočítáno množství emisí, které v budoucnu realisticky vypustí rozvíjející se země, které v současnosti mají nízkou míru emisí CO2 (v této kategorii je většina asijských, afrických a jihoamerických zemí). U těchto zemí se očekává, že jejich emise budou růst současnou rychlostí do roku 2025, kdy dosáhnou vrcholu, a poté se začnou postupně snižovat každoročně o 10 %. Současně se od těchto rozvíjejících zemí nedá očekávat rychlejší snižování emisí vzhledem k jejich nízké hospodářské úrovni a rozvojovému charakteru. Součet těchto budoucích emisí rozvíjejících se zemí je poté odečten od světového uhlíkového rozpočtu, čímž zůstane celkový rozpočet pro rozvinuté země ve výši 136 GtCO₂. 
+
+
+https://en.wikipedia.org/wiki/List_of_parties_to_the_United_Nations_Framework_Convention_on_Climate_Change#/media/File:UNFCCC_parties.svg
+
+Tento uhlíkový rozpočet poté autoři rozpočítávají na jednotlivé rozvinuté země podle výše jejich současných emisí CO2. Tento způsob očekává, že všechny země budou snižovat své emise se stejným úsilím, ale přitom zohledňuje současnou infrastrukturu jednotlivých zemí. Průmyslové země s velkým množstvím uhelných elektráren jako je třeba ČR totiž v budoucnu vypustí více CO2, než země které mají v současnosti již nízké emise, i když obě země budou snižovat své emise stejnou rychlostí, jen proto, že průmyslové země jsou v horší počáteční situaci. Tímto způsobem je odvozen uhlíkový rozpočet pro skupinu zemí EU-27 ve výši 30 GtCO₂ a konečně uhlíkový rozpočet pro Českou republiku ve výši 800 MtCO₂.
+
+Česká republika by tedy v součtu počínaje rokem 2020 neměla vypustit více než 800 MtCO₂, aby dodržela svůj závazek z Pařížské dohody a usilovala o “udržení globálního oteplení hluboko pod hodnotou 2 °C”. Vzhledem k tomu, že v současnosti ČR vypouští přibližně 100 MtCO₂ ročně, pokud nebude ČR své emise v příštích letech výrazně snižovat, k vyčerpání tohoto uhlíkového rozpočtu dojde již za 8 let, tj. v roce 2028.
+
+
+
 Účelem této grafiky je srovnání dosavadního vývoje emisí CO<sub>2</sub> a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C, resp. více než 2 °C, do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
 
 ## Co jsou emisní scénáře?
