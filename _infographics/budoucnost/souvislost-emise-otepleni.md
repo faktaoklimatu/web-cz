@@ -4,15 +4,31 @@ title:       "Závislost oteplení na budoucích emisích CO<sub>2</sub>"
 slug:        "souvislost-emise-otepleni"
 redirect_from: "/souvislost-emise-otepleni"
 published:   2021-07-19
-weight:      90
+weight:      89
 tags-scopes: [ svet ]
-tags-topics: [ budoucnost, emise, opatreni ]
-caption:     "Udržet nárůst teploty v mezích, které nezpůsobí rozsáhlou destrukci životního prostředí, vyžaduje radikální snížení emisí. Scénáře, které vedou k nárůstu globální teploty do 1,5 °C oproti předindustriálnímu období, počítají se snížením emisí CO<sub>2</sub> na polovinu do roku 2030 a dosažením uhlíkové neutrality do roku 2050. Kdybychom se spokojili s omezením oteplení na 2 °C, znamená to snížit emise o čtvrtinu do roku 2030 a uhlíkové neutrality dosáhnout kolem roku 2070."
+tags-topics: [ budoucnost, emise, klima ]
+caption:     ""
 data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
-Tato grafika se podrobně věnuje závislosti budoucího oteplení na množství emisí a nejistotám... 
+Tato grafika se podrobně věnuje závislosti budoucího oteplení na množství vypuštěných emisí CO<sub>2</sub> a znázorňuje podrobněji pravděpodobnosti udržení oteplení pod danou hranicí. 
+
+- od začátku průmyslové revoluce lidstvo vypustilo 2300 Gt CO2 (to je 2300 000 000 000 tun) což vedlo k nárůstu koncentrací CO2 z 280 ppm na 420 ppm a průměrnému oteplení o přibližně 1,2°C ( i když třeba v česku se průměrná teplota zvýšila o více než 2°C a na Špicberkách o více než 4°C)
+
+- Úvahy o zbývajícím uhlíkovém rozpočtu vychází z dobře prověřeného faktu, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. 
+
+- Modelování budoucího vývoje globálního oteplení vychází veličin, jejichž hodnoty známe pouze s určitou nejistotou. Proto se i uhlíkový rozpočet vztahuje k určité pravděpodobnosti nepřekročení dané hranice oteplení. Pokud například chceme mít alespoň 50% šanci, že nepřekročíme hranici oteplení 2°C, pak můžeme  vypustit pouze 1500 Gt CO<sub>2</sub>. Pokud si chceme být jistí na 66 %, že nepřekročíme hranici 2 °C, pak bychom neměli vypustit více než 1170 Gt CO2. Čím vyšší chceme mít jistotu, tím méně oxidu uhličitého si můžeme dovolit vypustit.
+
+
+Konkrétně pro udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2020 zbývající uhlíkový rozpočet řádově 500 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1500 Gt CO<sub>2</sub>[^56].
+Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení.
+
+{% include preview-box.html
+    title=""
+    text=""
+    slug="koncept-uhlikovy-rozpocet"
+%}
 
 Účelem této grafiky je srovnání dosavadního vývoje emisí CO<sub>2</sub> a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C, resp. více než 2 °C, do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
 
