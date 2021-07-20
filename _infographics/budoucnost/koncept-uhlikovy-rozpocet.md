@@ -8,8 +8,8 @@ weight:      70
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení."
-data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
-data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
+data-our:    "https://docs.google.com/spreadsheets/d/1ZqHRVRX2Q6Phx5JIQskaYyXqikDXbwL9ZqAYaIh1pbk/edit?usp=sharing"
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=122"] ]
 ---
 V souvislosti se snižováním emisí skleníkových plynů se často mluví o dosažení uhlíkové neutrality, tedy dosažení stavu, kdy do atmosféry nebude lidská činnost přidávat další oxid uhličitý. **Z pohledu výsledného globálního oteplení je ale uhlíkový rozpočet důležitější než datum, kdy vypustíme poslední tunu CO<sub>2</sub>**. V této grafice představujeme koncept uhlíkového rozpočtu a jeho vědecké a politické souvislosti. 
 
@@ -21,7 +21,7 @@ V souvislosti se snižováním emisí skleníkových plynů se často mluví o d
     slug="souvislost-koncentrace-oteplovani"
 %} 
 
-Měření i klimatické modely ukazují, **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2020 zbývající uhlíkový rozpočet řádově 350 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1100 Gt CO<sub>2</sub>[^56]. (oba údaje jsou pro 67% pravděpodobnost nepřekročení dané teplotní hranice)
+Měření i klimatické modely ukazují, **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2021 zbývající uhlíkový rozpočet řádově 300 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1050 Gt CO<sub>2</sub>[^56]. (oba údaje jsou pro 67% pravděpodobnost nepřekročení dané teplotní hranice)
 Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení.
 
 ## Jak souvisí uhlíkový rozpočet s cílem dosažení uhlíkové neutrality?

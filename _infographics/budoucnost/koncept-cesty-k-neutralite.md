@@ -8,15 +8,15 @@ weight:      90
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Exponenciální snižování emisí, které dosáhne uhlíkové neutrailty v roce 2075 povede ke stejnému globálnímu oteplení jako lineární snižování emisí, které dosáhne uhlíkové neutrality v roce 2050. Z hlediska diskuze nad opatřeními je celkový uhlíkový rozpočet mnohem důležitější než datum dozažení uhlíkové neutrality."
-data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
-data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
+data-our:    "https://docs.google.com/spreadsheets/d/1J2QcNjXzsRrf8Z8Y3Xh41R_EHlqYKt6CAuN1NUPg2K0/edit?usp=sharing"
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=122"] ]
 ---
 
 V posledních letech se různé státy nebo firmy přihlásily k cíli dosáhnout uhlíkové neutrality[^11]. Výsledné globální oteplení je ale přímo úměrné celkovým vypuštěným emisím skleníkových plynů a datum, kdy vypustíme poslední tunu CO<sub>2</sub> není pro výsledné oteplení určující. Grafika tedy pomáhá objasnit, proč je pro úvahy o snižování emisí a s nimi související politiky vhodnější koncept uhlíkového rozpočtu než koncept uhlíkové neutrality.   
 
 ## Co vidíme v grafice? 
 
-Srovnáváme čtyři cesty snižování emisí: 
+Srovnáváme čtyři cesty snižování emisí a výsledná oteplení, ke kterým by vedly: 
  1. Dosažení uhlíkové neutrality v roce 2050, kdy je současná hodnota emisí 40 Gt CO<sub>2</sub> snížena každý rok o 1,3 Gt (*lineární pokles*). Celkově by v takovém případě bylo do roku 2050 vypuštěno přibližně 600 Gt CO<sub>2</sub> a výsledné oteplení by dosáhlo hodnoty 1,7 °C.
  2. Dosažení uhlíkové neutrality v roce 2050, kdy emise každý rok klesnou o 11,5%, tedy zpočátku klesají výrazně rychleji než u první varianty (*exponenciální pokles*). Celkově by v takovém případě bylo do roku 2050 vypuštěno jen asi 350 Gt CO<sub>2</sub> a výsledné oteplení by nepřesáhlo hodnotu 1,5 °C.
  3. Dosažení uhlíkové neutrality v roce 2075 s lineárním poklesem emisí o 0,7 Gt CO<sub>2</sub> za rok. Celkové emise dosáhnou 1120 Gt CO<sub>2</sub> a globální oteplení okolo 2°C. 
@@ -59,11 +59,6 @@ Představa celkového množství emisí, které můžeme vypustit, abychom nepř
 Měření i klimatické modely ukazují, **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro 66% pravděpodobnost udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2020 zbývající uhlíkový rozpočet řádově 350 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1200 Gt CO<sub>2</sub>[^56].
 
 Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení.
-
-
-
-srovnání dosavadního vývoje emisí CO<sub>2</sub> a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C, resp. více než 2 °C, do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
-
 
 
 ## Další zdroje a poznámky
