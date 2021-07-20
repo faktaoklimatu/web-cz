@@ -74,3 +74,22 @@ Emisní scénáře pro omezení oteplení na 1,5 °C, resp 2 °C, podrobně disk
 Základním způsobem, jak můžeme radikálně snížit emise CO<sub>2</sub>, je přestat používat fosilní paliva (uhlí, ropa, plyn) v dopravě, průmyslu a energetice. Právě výroba elektřiny a tepla se na celkové produkci emisí podílí nejvíce a je v současnosti z velké části závislá na uhlí. Odklon od fosilních paliv vyžaduje přechod na nízkoemisní výrobu energie, tedy využívání obnovitelných zdrojů (slunce, vítr) nebo jaderné energie.
 
 Důležitým mechanismem pro přechod k nízkoemisní ekonomice jsou systémy zpoplatnění produkce skleníkových plynů, které vytváří ekonomicky výhodné podmínky pro nízkoemisní technologie. Příkladem je systém pro obchodování s emisemi (ETS = _emission trading system_), který zavedla Evropská unie v roce 2005. Tento systém ukládá uhelným elektrárnám, železárnám a dalším producentům emisí skleníkových plynů povinnost pokrýt svou produkci povolenkami. Část povolenek získají podniky bezplatně, část se na trh uvádí prostřednictvím dražeb. Množství každoročně vydaných povolenek je limitované a postupně se snižuje. S rostoucí cenou povolenky jsou tak firmy motivované snižovat své emise. Spalování fosilních paliv se díky tomu přestává vyplácet a například některé uhelné elektrárny jsou odstavovány a nahrazovány šetrnějšími zdroji energie jako slunce nebo vítr. Firmy, které se rozhodnou snížit emise nejvíce, mohou také vydělat prodejem svých emisních povolenek. Podobný systém zpoplatnění emisí zavádí i řada dalších zemí včetně Číny, Austrálie nebo některých států USA.
+
+## Další zdroje a poznámky
+
+
+[^55]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3) Nature Geoscience 13, 769–779 (2020). https://doi.org/10.1038/s41561-020-00663-3
+
+[^56]: [IPCC, 2018: Global warming of 1.5°C.](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf), An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty, V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy,T. Maycock, M. Tignor, T. Waterfield
+
+[^57]:  [IPCC, 2013: Climate Change 2013: The Physical Science Basis](https://www.ipcc.ch/report/ar5/wg1/). Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press.
+
+[^58]: Matthews, H., Gillett, N., Stott, P. et al. [The proportionality of global warming to cumulative carbon emissions.](https://www.researchgate.net/publication/26282499_The_proportionality_of_global_warming_to_cumulative_carbon_emissions) Nature 459, 829–832 (2009). https://doi.org/10.1038/nature08047
+
+[^59]: R. Millar, M. Allen, J. Rogelj, P. Friedlingstein,  [The cumulative carbon budget and its implications](https://doi.org/10.1093/oxrep/grw009), Oxford Review of Economic Policy, Volume 32, Issue 2, SUMMER 2016, Pages 323–342, https://doi.org/10.1093/oxrep/grw009
+
+[^88]: [The Sixth Carbon Budget](https://www.theccc.org.uk/publication/sixth-carbon-budget/), required under the Climate Change Act, provides ministers with advice on the volume of greenhouse gasses the UK can emit during the period 2033-2037.  
+
+[^89]: [Klimatický plán Hlavního města Prahy do roku 2030](https://www.praha.eu/jnp/cz/o_meste/magistrat/tiskovy_servis/tiskove_zpravy/praha_nasla_cestu_k_uhlikove_neutralite.html)
+
+[^99]: [Český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf))

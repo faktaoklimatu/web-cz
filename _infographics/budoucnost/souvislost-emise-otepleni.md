@@ -8,72 +8,64 @@ weight:      89
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, klima ]
 caption:     ""
-data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
+data-our:    "https://docs.google.com/spreadsheets/d/1J2QcNjXzsRrf8Z8Y3Xh41R_EHlqYKt6CAuN1NUPg2K0"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
-Tato grafika se podrobně věnuje závislosti budoucího oteplení na množství vypuštěných emisí CO<sub>2</sub> a znázorňuje podrobněji pravděpodobnosti udržení oteplení pod danou hranicí. 
+Tato grafika se věnuje závislosti budoucího oteplení na množství vypuštěných emisí CO<sub>2</sub> a znázorňuje podrobněji pravděpodobnosti udržení oteplení pod danou hranicí. 
 
-- od začátku průmyslové revoluce lidstvo vypustilo 2300 Gt CO2 (to je 2300 000 000 000 tun) což vedlo k nárůstu koncentrací CO2 z 280 ppm na 420 ppm a průměrnému oteplení o přibližně 1,2°C ( i když třeba v česku se průměrná teplota zvýšila o více než 2°C a na Špicberkách o více než 4°C)
-
-- Úvahy o zbývajícím uhlíkovém rozpočtu vychází z dobře prověřeného faktu, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. 
-
-- Modelování budoucího vývoje globálního oteplení vychází veličin, jejichž hodnoty známe pouze s určitou nejistotou. Proto se i uhlíkový rozpočet vztahuje k určité pravděpodobnosti nepřekročení dané hranice oteplení. Pokud například chceme mít alespoň 50% šanci, že nepřekročíme hranici oteplení 2°C, pak můžeme  vypustit pouze 1500 Gt CO<sub>2</sub>. Pokud si chceme být jistí na 66 %, že nepřekročíme hranici 2 °C, pak bychom neměli vypustit více než 1170 Gt CO2. Čím vyšší chceme mít jistotu, tím méně oxidu uhličitého si můžeme dovolit vypustit.
-
-
-Konkrétně pro udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2020 zbývající uhlíkový rozpočet řádově 500 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1500 Gt CO<sub>2</sub>[^56].
-Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení.
+## Co je znázorněno v grafice?
 
 {% include preview-box.html
-    title=""
-    text=""
+    title="Koncept: uhlíkový rozpočet"
+    text="Globální oteplení je přibližně přímo úměrné celkovému množství CO2, které bylo vypuštěno do atmosféry"
     slug="koncept-uhlikovy-rozpocet"
 %}
 
-Účelem této grafiky je srovnání dosavadního vývoje emisí CO<sub>2</sub> a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C, resp. více než 2 °C, do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
+* Celkové oteplení planety závisí na tom, kolik CO<sub>2</sub> vypustíme celkem do atmosféry do doby, než dosáhneme uhlíkové neutrality. Zároveň ale dokážeme předvídat jen s určitou pravděpodobností. Konkrétně pokud bude od roku 2020 celkem vypuštěno 2000 Gt CO<sub>2</sub>, můžeme s pravděpodobností 67 % očekávat, že globální oteplení překročí hodnotu 2 °C. Pokud bude vypuštěno jen 1100 Gt CO<sub>2</sub>, bude pravděpodobnost překročení oteplení 2 °C jen 33 %, a pravděpodobnosti 50 % odpovídají celkové emise přibližně 1400 Gt CO<sub>2</sub>. Čím vyšší chceme mít jistotu, že hranice oteplení nebude překročena, tím méně oxidu uhličitého si můžeme dovolit vypustit.
 
-## Co jsou emisní scénáře?
+* Pravděpodobnosti si můžeme snadno představit jako házení kostkou: 33% pravděpodobnost odpovídá tomu, že při některé ze dvou čísel. (třeba 1 nebo 2). Pravěpodobnost  67 % odpovídá tomu, že  při jednom hodu hodíme některé ze čtyř čísel (třeba 3,4,5 nebo 6). 
 
-Emisní scénáře jsou možné varianty budoucího vývoje emisí lidstva, které často počítají se spoustou proměnných – od vývoje počtu lidí na planetě a poptávky po elektřině, až po možné rozšíření větrných elektráren a dalších technologií. Z vývoje emisí skleníkových plynů lze spočítat budoucí vývoj koncentrací skleníkových plynů v atmosféře (například <glossary id="rcp">RCP</glossary>), které pak slouží jako základní vstup dat pro modely klimatu. Jinými slovy, pro každý scénář budoucího vývoje emisí lze odhadnout oteplení, ke kterému povede.
+* Oteplení je udáváno vzhledem k teplotám v letech 1850 - 1900 (přesněji řečeno jde o průměrnou roční teplotní anomálii) a kumulatvní emise, které jsou znázorněny na horizontální ose, se vztahují k roku 2020.  
 
-Samozřejmě existují i jiné emisní scénáře než ty, které jsme zobrazili v grafu: například scénář "*business as usual*", který počítá s tím, že emise CO<sub>2</sub> nebudeme nijak omezovat a porostou dál dosavadním tempem. Do konce století bychom takto kolem roku 2100 dospěli ke koncentraci CO<sub>2</sub> okolo 1000 ppm a průměrnému oteplení planety o téměř 5 °C oproti předindustriálnímu období.
+## Jaké jsou klíčové souvislosti a koncepty?
 
-## Proč je zobrazen pouze vývoj emisí CO<sub>2</sub> a ne emise dalších skleníkových plynů (metan, N<sub>2</sub>O)?
+* od začátku průmyslové revoluce lidstvo vypustilo 2300 Gt CO<sub>2</sub> (to je 2300 000 000 000 tun) což vedlo k nárůstu koncentrací CO<sub>2</sub> z 280 ppm na 420 ppm a průměrnému oteplení o přibližně 1,2°C (i když třeba v česku se průměrná teplota zvýšila o více než 2°C a na Špicberkách o více než 4°C)
 
-{% include preview-box.html
-    title="Přehled mezinárodních dohod o klimatu"
-    text="Pařížská dohoda navazuje na mnoho předchozích mezinárodních setkání, smluv a opatření. V jedné grafice dáváme jejich přehled."
-    slug="svetove-dohody"
-%}
+* Úvahy o zbývajícím uhlíkovém rozpočtu vychází z dobře prověřeného faktu, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. 
 
-Emise oxidu uhličitého způsobují přibližně tři čtvrtiny výsledného skleníkového efektu. Zbývající čtvrtina je způsobena metanem (CH<sub>4</sub>), oxidem dusným (N<sub>2</sub>O) a dalšími plyny (SF<sub>6</sub>, CFC, HFC). Je běžná praxe přepočítávat emise těchto dalších skleníkových plynů na ekvivalentní množství CO<sub>2</sub>, což se pak označuje jednotkou <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Pro ilustraci: zatímco emise oxidu uhličitého byly v roce 2018 přibližně 42,1 miliard tun CO<sub>2</sub>, emise všech skleníkových plynů včetně metanu, oxidu dusného a dalších byly 55,3 miliard tun CO<sub>2</sub>eq. Většinou v našich materiálech zobrazujeme emise všech antropogenních skleníkových plynů (CO<sub>2</sub>eq) – proč tedy v této grafice děláme výjimku?
+## Co je zahrnuto ve výpočtu uhlíkových rozpočtů a jaké jsou hlavní zdroje nejistot? 
 
-Budoucí emisní scénáře předpokládají různé průběhy emisí různých skleníkových plynů, což bychom sice mohli zobrazit, ale výsledek by byl komplikovaný a pro mnoho lidí matoucí. Zobrazujeme proto pouze zjednodušeně průběh emisí CO<sub>2</sub>, který hraje v globálním oteplování zdaleka nejvýznamnější roli.
+Naše grafika vychází z analýzy ve zprávě [IPCC: Global warming of 1.5°C](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=121) a pro podrobnou diskusi metodiky a zdrojů nejistot odkazujeme čtenáře přímo do textu zprávy. Zde poskytujeme jen základní shrnutí. 
 
-Zobrazené scénáře předpokládají pokles emisí metanu přibližně na polovinu okolo roku 2030 a následnou stabilizaci, a v případě N<sub>2</sub>O pokles přibližně na 80 % a následnou stabilizaci - tedy ani u metanu, ani u N<sub>2</sub>O nepředpokládají dosažení nulových emisí, ale pouze snížení oproti dnešnímu stavu. To je rozumný předpoklad, protože metan i N<sub>2</sub>O jsou z velké části produkovány v zemědělství (chov dobytka, pěstování rýže, hnojiva) a nelze tedy očekávat úplnou eliminaci těchto emisí. Pro podrobnější diskusi vývoje emisí těchto plynů viz [graf v IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=27), případně kompletní diskusi potenciálu mitigačních scénářů ve druhé kapitole [IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107).
+* Hlavní nejistotou při určování uhlíkového rozpočtu je rozsah možných hodnot citlivosti klimatu (resp. hodnoty TCRE), jejíž očekávaná hodnota je v rozmezí 2,6 - 4,1 °C. 
 
-## Co je započítáno v historických emisích CO<sub>2</sub>?
+* Znázorněné zbývající uhlíkové rozpočty pro daná oteplení neobsahují zpětné vazby cyklu uhlíku, jako například tání permafrostu, které se ale typicky projeví v dlouhodobějších časových škálách. Odhad očekávaného efektu tání permafrostu v roce 2100 je okolo +100 Gt CO<sub>2</sub>.
 
-Zdrojem dat historických emisí je [Global Carbon Project](https://www.globalcarbonproject.org/), který se snaží o inventarizaci všech dostupných dat o antropogenních skleníkových plynech a jejich cyklech. Zobrazená data obsahují:
+* Dalším zdrojem nejistoty je velikost tzv. *non-CO<sub>2</sub> forcing*, tedy dalších skleníkových plynů a aerosolů. Obceně platí, že oxid uhličitý je dominantní faktor v oteplování (zodpovídá za 70 % pozorovaného oteplení a narozdíl od CH<sub>4</sub> zůstává v atmosféře velmi dlouhou dobu) a oteplující efekt dalších skleníkových plynů má tendenci se vyrovnávat s ochlazujícím efektem aerosolů. Pro přesnější výsledky je ale nutné zkoumat konkrétní emisní scénář, tedy konkrétní očekávaný časový průběh emisí všech skleníkových plynů a aerosolů. Efekty metanu, N<sub>2</sub>O a aerosolů totiž mnohem více závisí na čase. Také zkoumání konkrétních emisních scénářů ukazují, že započtení *non-CO<sub>2</sub> forcing* nemění zásadně výsledný uhlíkový rozpočet, niceméně zvyšuje nejistotu. 
 
-* emise ze spalování fosilních paliv (uhlí, ropa, plyn),
-* emise z průmyslových procesů (zejména výroba cementu, ale i další oxidační procesy),
-* emise způsobené odlesňováním a změnami využití půdy – do této kategorie spadá nejen kácení tropických či jiných lesů a lesní požáry, ale také změny v množství organického uhlíku vázaného v půdě, zalesňování a další člověkem způsobené změny ve využití půdy. Odhady těchto emisí ze změn využití půdy vyžadují složitější modelování a uváděné hodnoty jsou průměrem z několika modelů.
+* Dalšími zdroji nejistot jsou například hodnota *zero-emission commitment* nebo přesné určení současné hodnoty světové teplotní anomálie. 
 
-Podrobnou metodologickou diskusi najdete v článku [Global Carbon Budget 2019](https://www.researchgate.net/publication/337742746_Global_Carbon_Budget_2019).
+* Znázorněné uhlíkové rozpočty nezohlednují možné využití technologií zachycování uhlíku a ukazují pouze hodnotu *peak warming*.
 
-## Proč se v rámci Pařížské dohody stanovil cíl omezit oteplení o 1,5 °C resp. 2 °C?
+Ve zprávě IPCC: Global warming of 1.5°C autoři píší: *...although robust physical understanding underpins the carbon budget concept, relative uncertainties become larger as a specific temperature limit is approached.* Proto je vhodené interpretovat zbývající uhlíkový rozpočet spíše jako orientační hodnotu. Další diskusi předpokladů a zdrojů nejistot v kontextu použití konceptu uhlíkového rozpočtu pro návrhy opatření se věnuje článek  [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3).
 
-__Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…"_ (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
+## Další zdroje a poznámky
 
-Vzhledem k tomu, že v současnosti dosáhlo oteplení hodnoty přibližně 1,2 °C oproti předindustriálnímu období a emise dále rostou, je cíl udržet nárůst teploty pod 1,5 °C na hranici dosažitelnosti a cíl udržet nárůst teploty pod hranicí 2 °C je velmi ambiciózní. Zároveň ale již oteplení okolo 2 °C může překročit mnoho ekosystémových bodů zlomu a bude mít velké negativní dopady pro lidstvo. Podrobněji se srovnání dopadů oteplení o 1,5 °C, 2 °C a 3 °C věnuje [zpráva IPCC SR15](https://www.ipcc.ch/sr15/) a poznání o bodech zlomu shrnují [naše grafiky](https://faktaoklimatu.cz/infografiky/body-zlomu-1).
+[^11]: více o závazcích států a firem píšeme v explaineru [Co přesně znamená uhlíková neutralita](/explainery/uhlikova-neutralita) a rešerši [Emisní závazky států](/studie/2021-reserse-zavazky-statu). 
 
-## Z čeho vychází odhady budoucích emisí pro naplnění cílů Pařížské dohody?
+[^55]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3) Nature Geoscience 13, 769–779 (2020). https://doi.org/10.1038/s41561-020-00663-3
 
-Emisní scénáře pro omezení oteplení na 1,5 °C, resp 2 °C, podrobně diskutuje druhá kapitola zprávy [IPCC SR15](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107). Autoři zprávy sesbírali výstupy z více než stovky emisních scénářů a skrze globální klimatické modely porovnávali, jaké oteplení způsobily. Oblasti zobrazené v grafice odpovídají rozsahům emisí v takových scénářích, které dosáhly hranice oteplení 1,5 °C, resp. 2 °C, přičemž čára zobrazuje medián z daného souboru.
+[^56]: [IPCC, 2018: Global warming of 1.5°C.](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf), An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty, V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy,T. Maycock, M. Tignor, T. Waterfield
 
-## Jak je možné dosáhnout takového snížení emisí CO<sub>2</sub>?
+[^57]:  [IPCC, 2013: Climate Change 2013: The Physical Science Basis](https://www.ipcc.ch/report/ar5/wg1/). Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press.
 
-Základním způsobem, jak můžeme radikálně snížit emise CO<sub>2</sub>, je přestat používat fosilní paliva (uhlí, ropa, plyn) v dopravě, průmyslu a energetice. Právě výroba elektřiny a tepla se na celkové produkci emisí podílí nejvíce a je v současnosti z velké části závislá na uhlí. Odklon od fosilních paliv vyžaduje přechod na nízkoemisní výrobu energie, tedy využívání obnovitelných zdrojů (slunce, vítr) nebo jaderné energie.
+[^58]: Matthews, H., Gillett, N., Stott, P. et al. [The proportionality of global warming to cumulative carbon emissions.](https://www.researchgate.net/publication/26282499_The_proportionality_of_global_warming_to_cumulative_carbon_emissions) Nature 459, 829–832 (2009). https://doi.org/10.1038/nature08047
 
-Důležitým mechanismem pro přechod k nízkoemisní ekonomice jsou systémy zpoplatnění produkce skleníkových plynů, které vytváří ekonomicky výhodné podmínky pro nízkoemisní technologie. Příkladem je systém pro obchodování s emisemi (ETS = _emission trading system_), který zavedla Evropská unie v roce 2005. Tento systém ukládá uhelným elektrárnám, železárnám a dalším producentům emisí skleníkových plynů povinnost pokrýt svou produkci povolenkami. Část povolenek získají podniky bezplatně, část se na trh uvádí prostřednictvím dražeb. Množství každoročně vydaných povolenek je limitované a postupně se snižuje. S rostoucí cenou povolenky jsou tak firmy motivované snižovat své emise. Spalování fosilních paliv se díky tomu přestává vyplácet a například některé uhelné elektrárny jsou odstavovány a nahrazovány šetrnějšími zdroji energie jako slunce nebo vítr. Firmy, které se rozhodnou snížit emise nejvíce, mohou také vydělat prodejem svých emisních povolenek. Podobný systém zpoplatnění emisí zavádí i řada dalších zemí včetně Číny, Austrálie nebo některých států USA.
+[^59]: R. Millar, M. Allen, J. Rogelj, P. Friedlingstein,  [The cumulative carbon budget and its implications](https://doi.org/10.1093/oxrep/grw009), Oxford Review of Economic Policy, Volume 32, Issue 2, SUMMER 2016, Pages 323–342, https://doi.org/10.1093/oxrep/grw009
+
+[^88]: [The Sixth Carbon Budget](https://www.theccc.org.uk/publication/sixth-carbon-budget/), required under the Climate Change Act, provides ministers with advice on the volume of greenhouse gasses the UK can emit during the period 2033-2037.  
+
+[^89]: [Klimatický plán Hlavního města Prahy do roku 2030](https://www.praha.eu/jnp/cz/o_meste/magistrat/tiskovy_servis/tiskove_zpravy/praha_nasla_cestu_k_uhlikove_neutralite.html)
+
+[^99]: [Český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf))
