@@ -72,3 +72,4 @@ jekyll-archives:
 kramdown:
   math_engine: katex
   smart_quotes: sbquo,lsquo,bdquo,ldquo
+  footnote_backlink: "↩︎"
