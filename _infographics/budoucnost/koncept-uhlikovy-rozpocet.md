@@ -47,7 +47,7 @@ Představa celkového množství emisí, které můžeme vypustit, abychom nepř
 
 * Koncept zbývajícího uhlíkového rozpočtu používá pro formulaci závazků například Velká Británie[^88] nebo Praha[^89]. 
 
-* Možnému využití konceptu zbývajícího uhlíkového rozpočtu jako vodítka pro opatření se vnují autoři článku [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3). Podrobně diskutují předpoklady celého přístupu, zdroje nejistot v určení uhlíkového rozpočtu i problematiku alokace uhlíkových rozpočtů pro jednotlivé státy. 
+* Možnému využití konceptu zbývajícího uhlíkového rozpočtu jako vodítka pro opatření se věnují autoři článku [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3). Podrobně diskutují předpoklady celého přístupu, zdroje nejistot v určení uhlíkového rozpočtu i problematiku alokace uhlíkových rozpočtů pro jednotlivé státy. 
 
 
 ## Nejistoty v určení uhlíkového rozpočtu 
