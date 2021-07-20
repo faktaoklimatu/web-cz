@@ -56,9 +56,10 @@ Představa celkového množství emisí, které můžeme vypustit, abychom nepř
     slug="souvislost-koncentrace-oteplovani"
 %} 
 
-Měření i klimatické modely ukazují, **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro 66% pravděpodobnost udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2020 zbývající uhlíkový rozpočet řádově 350 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1200 Gt CO<sub>2</sub>[^56].
+Měření i klimatické modely ukazují, **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry** [^58],[^55],[^56],[^57]. Jinak řečeno, čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě jako lidstvo můžeme v budoucnu vypustit, abychom se pod danou hranicí udrželi**. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro 66% pravděpodobnost udržení oteplení pod hranicí 1,5°C oproti průměru z let 1850-1900 byl v roce 2021 zbývající uhlíkový rozpočet řádově 300 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2°C je zbývající uhlíkový rozpočet řádově 1050 Gt CO<sub>2</sub>[^56].
 
 Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jak moc CO<sub>2</sub> ještě lidstvo může vypustit, aby nepřesáhlo určitou hodnotu globálního oteplení.
+
 
 
 ## Další zdroje a poznámky
@@ -67,10 +68,7 @@ Označení *rozpočet* je přitom dobré brát metaforicky: podobně jako rodinn
 
 [^55]: Matthews, H.D., Tokarska, K.B., Nicholls, Z.R.J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3) Nature Geoscience 13, 769–779 (2020). https://doi.org/10.1038/s41561-020-00663-3
 
-[^56]: [IPCC, 2018: Global warming of 1.5°C.](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf), An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to
-eradicate poverty, V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W.
-Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy,
-T. Maycock, M. Tignor, T. Waterfield
+[^56]: [IPCC, 2018: Global warming of 1.5°C.](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf), An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty, V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy, T. Maycock, M. Tignor, T. Waterfield
 
 [^57]:  [IPCC, 2013: Climate Change 2013: The Physical Science Basis](https://www.ipcc.ch/report/ar5/wg1/). Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press.
 
