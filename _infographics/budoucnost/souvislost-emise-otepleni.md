@@ -12,11 +12,7 @@ data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxg
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ],["IPCC SR15","https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107"] ]
 ---
 
-{% include preview-box.html
-    title="Přehled mezinárodních dohod o klimatu"
-    text="Pařížská dohoda navazuje na mnoho předchozích mezinárodních setkání, smluv a opatření. V jedné grafice dáváme jejich přehled."
-    slug="svetove-dohody"
-%}
+Tato grafika se podrobně věnuje závislosti budoucího oteplení na množství emisí a nejistotám... 
 
 Účelem této grafiky je srovnání dosavadního vývoje emisí CO<sub>2</sub> a scénářů budoucího vývoje, které by mohly zabránit oteplení planety o více než 1,5 °C, resp. více než 2 °C, do roku 2100 a naplnit tak cíl, který si vytyčily státy v rámci Pařížské dohody. Grafika může sloužit jako základní podklad či rámec pro diskusi, neobsahuje však řadu metodologických detailů či nuancí, které podrobněji diskutujeme níže v textu.
 
@@ -27,6 +23,12 @@ Emisní scénáře jsou možné varianty budoucího vývoje emisí lidstva, kter
 Samozřejmě existují i jiné emisní scénáře než ty, které jsme zobrazili v grafu: například scénář "*business as usual*", který počítá s tím, že emise CO<sub>2</sub> nebudeme nijak omezovat a porostou dál dosavadním tempem. Do konce století bychom takto kolem roku 2100 dospěli ke koncentraci CO<sub>2</sub> okolo 1000 ppm a průměrnému oteplení planety o téměř 5 °C oproti předindustriálnímu období.
 
 ## Proč je zobrazen pouze vývoj emisí CO<sub>2</sub> a ne emise dalších skleníkových plynů (metan, N<sub>2</sub>O)?
+
+{% include preview-box.html
+    title="Přehled mezinárodních dohod o klimatu"
+    text="Pařížská dohoda navazuje na mnoho předchozích mezinárodních setkání, smluv a opatření. V jedné grafice dáváme jejich přehled."
+    slug="svetove-dohody"
+%}
 
 Emise oxidu uhličitého způsobují přibližně tři čtvrtiny výsledného skleníkového efektu. Zbývající čtvrtina je způsobena metanem (CH<sub>4</sub>), oxidem dusným (N<sub>2</sub>O) a dalšími plyny (SF<sub>6</sub>, CFC, HFC). Je běžná praxe přepočítávat emise těchto dalších skleníkových plynů na ekvivalentní množství CO<sub>2</sub>, což se pak označuje jednotkou <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Pro ilustraci: zatímco emise oxidu uhličitého byly v roce 2018 přibližně 42,1 miliard tun CO<sub>2</sub>, emise všech skleníkových plynů včetně metanu, oxidu dusného a dalších byly 55,3 miliard tun CO<sub>2</sub>eq. Většinou v našich materiálech zobrazujeme emise všech antropogenních skleníkových plynů (CO<sub>2</sub>eq) – proč tedy v této grafice děláme výjimku?
 
