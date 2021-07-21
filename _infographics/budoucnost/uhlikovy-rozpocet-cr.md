@@ -1,6 +1,6 @@
 ---
 layout:      infographic
-title:       "Uhlíkový rozpočt ČR"
+title:       "Uhlíkový rozpočet ČR"
 slug:        "uhlikovy-rozpocet-cr"
 redirect_from: "/uhlikovy-rozpocet-cr"
 published:   2021-07-21
