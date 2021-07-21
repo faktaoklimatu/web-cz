@@ -20,7 +20,7 @@ data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-imp
 
 Čěská republika nemá jasný plán snižování emisí a dosud ani nepřijala závazek dosažení uhlíkové neutrality. Je tedy možné uvažovat o tom, jaký by závazek České republiky mohl být vzhledem k možnostem naší společnosti nebo vzhledem k potřebnému tempu snižování emisí pro dosažení cílů Pařížské dohody.
 
-Výzkumy ukazují, že budoucí hodnota oteplení je přímo úměrná celkovému množství vypuštěných emisí, a díky tomu můžeme odhadnout, kolik emisí může lidstvo vypustit pro nepřekročení určité hranice oteplování. Tento světový zbývající uhlíkový rozpočet je pak dál možno rozdělit mezi jednotlivé státy různými způsoby podle různých kritérií. Lze pak uvažovat o férovosti přístupu jednotlivých zemí ke snižování emisí skleníkových plynů. 
+Výzkumy ukazují, že budoucí hodnota oteplení je přímo úměrná celkovému množství vypuštěných emisí[^55],[^58],[^56] a díky tomu můžeme odhadnout, kolik emisí může lidstvo vypustit pro nepřekročení určité hranice oteplování. Tento světový zbývající uhlíkový rozpočet je pak dál možno rozdělit mezi jednotlivé státy různými způsoby podle různých kritérií (viz níže). Lze pak uvažovat o férovosti přístupu jednotlivých zemí ke snižování emisí skleníkových plynů. 
 
 Posudek *Quantifying the implications of Paris Agreement for Czech republic*[^22] ukazuje, že férový uhlíkový rozpočet ČR od začátku roku 2021 je přibližně 800 Mt CO<sub>2</sub>, které mohou být emitovány všemi způsoby výroby energie, tedy elektřiny, tepla, nebo pohonu v dopravě či výroby energie v průmyslu.  y Při současných emisích okolo 100 Mt CO<sub>2</sub> ročně by Česko vyčerpala tento rozpočet za osm let. Při exponenciálním snižování emisí by bylo pro dodržení tohoto rozpočtu potřeba dosáhnout do roku 2030 emisí okolo 25 Mt CO<sub>2</sub>, což je snížení o 75 % oproti současnému stavu. (resp. o 84 % oproti roku 1990, ke kterému se závazky často vztahují v literatuře).  
 
@@ -32,16 +32,30 @@ Posudek *Quantifying the implications of Paris Agreement for Czech republic*[^22
 
 * Výpočet zohledňuje náročnost omezení emisí v zemědělství či při výrobě cementu tak, že s emisemi z těchto sektorů počítá zvlášť. Výsledné hodnoty uhlíkových rozpočtů (650 Mt CO<sub>2</sub> pro svět od roku 2020, resp 800 Mt CO<sub>2</sub> od roku 2021) tedy značí emise, které mohou být emitovány skrze jakékoliv použití energie ze spalování fosilních paliv, tedy výroby elektřiny a tepla, pohonu v dopravě či výroby energie v průmyslu.  (*which may be emitted by all forms of energy consumption, from transport to electricity*). Z hlediska emisního účetnictví tomu odpovídají emise v kategorii CRF1 Energy. (CRF = common reference framework), které tvoří 75 % českých emisí skleníkových plynů. Z uhlíkového rozpočtu jsou vyjmuty emise z průmyslových procesů (CRF2, zejména výroba cementu a oceli) zemědělství, lesnictví a využití půdy (CFR3, CRF4) a odpadového hospodářství (CRF5). 
 
-* Vzhledem k tomu, že ČR nemá stanovený plán snižování emisí byla pro srovnání použita následující cesta snížení emisí: lineární snižování emisí z hodnoty 101 86 Mt CO<sub>2</sub> v roce 2020 na 86 Mt CO<sub>2</sub> a poté lineární snižování zrychleným tempem s dosažením uhlíkové neutrality v roce 2057. Tato cesta je částečně v souladu s deklarovanou politikou ČR, částečně spekulací, protože ČR se k cíli uhlíkové neutrality zatím nepřihlásila. (nicméně je součástí EU, která se k cíli uhlíkové neutrality v roce 2050 jako celek hlásí).  
+* Vzhledem k tomu, že ČR nemá stanovený plán snižování emisí byla pro srovnání použita následující cesta snížení emisí: lineární snižování emisí z hodnoty 101 na 86 Mt CO<sub>2</sub> v roce 2020 na 86 Mt CO<sub>2</sub> a poté lineární snižování zrychleným tempem s dosažením uhlíkové neutrality v roce 2057. Tato cesta je částečně v souladu s deklarovanou politikou ČR, částečně spekulací, protože ČR se k cíli uhlíkové neutrality zatím nepřihlásila. (nicméně je součástí EU, která se k cíli uhlíkové neutrality v roce 2050 jako celek hlásí).  
 
 ### Jaká jsou obecná kritéria férovosti snižování emisí? 
+
+Základní přístup ke snižování emisí by mohl vycházet ze současných emisí jednotlivých zemí a očekávat stejné procentuální snižování emisí. Podle tohoto přístupu by pak například ČR i Indie měly do roku 2030 snížit emise na polovinu. Takovýto přístup je ale neférový z několika důvodů: 
+
+* Různé země mají různé emise na obyvatele, přičemž rozvinuté země mají emise na obyvatele typicky mnohem vyšší. Je tedy rozumné požadovat, aby kritériem pro snižování emisí nebyly celkové emise státu, ale emise na obyvatele. Tento přístup se dále komplikuje potřebou zohlednit fakt, že populace některých zemí výrazně roste.  
+
+* Rozvinuté země dosáhly vysoké životní úrovně především díky rozvoji založenému na fosilní energetice. Je tedy rozumné požadovat, aby se chudé země mohly rozvinout a dosáhnout pro své obyvatele vyšší životní úrovně. Nejde přitom jen o etické kritérium, ale také o to, že vyšší životní úroveň je cestou k zastavení populačního růstu. Rozvoj chudých zemí ssebou ale nutně nese přinejmenším krátkodobé zvýšení jejich emisí. Rozvinuté země by proto měly snižovat emise rychleji, aby vytvořily prostor pro rozvoj chudých zemí. 
+
+* Některé země mají vysoké historické kumulativní emise a tedy nesou větší zodpovědnost za probíhající klimatickou změnu. Je tedy rozumné požadovat, aby země s vysokými historickými emisemi snižovaly emise rychleji. 
+
+* Některé země jsou bohaté a mohou si dovolit investovat do snižování emisí. Kritéria pro snižování by tedy měla zohledňovat HDP na obyvatele.
+
+* Některé možnosti snižování emisí mohou přinést velké úspory za malé investice (například nahrazování neefektivních starých uhelných elektráren novějšími elektrárnami, nebo přímo obnovitelnými zdroji elektřiny), naopak snížení emisí z některých procesů, jako třeba výroba cementu, je velmi nákladné. Snižování emisí by tedy mělo zohledňovat efektivitu vynaložených prostředků. 
+
+Žádný konkrétní přístup ke snižování emisí a posuzování závazků jednotlivých států nebyl zatím žádnou autoritou (např. OSN) odsouhlasen.. Výše uvedená kritéria jsou tedy spíše obecné principy, které je vhodné zohlednit.  
 
 ### Jak byl stanoven zbývající globální uhlíkový rozpočet? 
 
 __Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…"_ (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
 
 Otázka jak interpretovat formulaci Pařížské dohody *...výrazně pod hranicí 2 °C...* má politickou dimenzi, ale je zároveň důležitá z hlediska dopadů oteplení na společnost a rizika překročení bodů zlomu některých velkých ekosystémů. V posudku *Quantifying the implications of Paris Agreement for Czech republic*[^22]
-
+je hranice interpretována jako 50% pravděpodobnost nepřekročení oteplení o 1,7°C. Z toho vyplývá výchozí hodnota globálního uhlíkového rozpočtu 900 Gt CO<sub>2</sub> od roku 2018[^56], která je dále upravena o emise v letech 2018 - 2020, zohlednění zpětných vazeb v klimatickém systému, efektů dalších skleníkových plynů a zohlednění procesů, které bude obtížné dekarbonizovat. Z toho pak vychází zbývající globální uhlíkový rozpočet 656 Gt CO<sub>2</sub> od roku 2020, který je dále rozdělován mezi jednotlivé země.  
 
 
 ### Jak byl vypočten zbývající uhlíkový rozpočtu pro ČR? 
@@ -50,12 +64,9 @@ Autoři Anderson a Calverley ve svých studiích přistupují k rozdělování u
 
 Tento uhlíkový rozpočet poté autoři rozpočítávají na jednotlivé rozvinuté země podle výše jejich současných emisí CO2. Tento způsob očekává, že všechny země budou snižovat své emise se stejným úsilím, ale přitom zohledňuje současnou infrastrukturu jednotlivých zemí. Průmyslové země s velkým množstvím uhelných elektráren jako je třeba ČR totiž v budoucnu vypustí více CO2, než země které mají v současnosti již nízké emise, i když obě země budou snižovat své emise stejnou rychlostí, jen proto, že průmyslové země jsou v horší počáteční situaci. Tímto způsobem je odvozen uhlíkový rozpočet pro skupinu zemí EU-27 ve výši 30 GtCO₂ a konečně uhlíkový rozpočet pro Českou republiku ve výši 800 MtCO₂.
 
-Česká republika by tedy v součtu počínaje rokem 2020 neměla vypustit více než 800 MtCO₂, aby dodržela svůj závazek z Pařížské dohody a usilovala o “udržení globálního oteplení hluboko pod hodnotou 2 °C”. Vzhledem k tomu, že v současnosti ČR vypouští přibližně 100 MtCO₂ ročně, pokud nebude ČR své emise v příštích letech výrazně snižovat, k vyčerpání tohoto uhlíkového rozpočtu dojde již za 8 let, tj. v roce 2028.
-
+Poté, co známe globální uhlíkový rozpočet pro dodržení Pařížské dohody, je pak možné tento rozpočet rozdělit mezi jednotlivé země. Existuje ovšem více způsobů jak přidělit jednotlivým zemím jejich uhlíkové rozpočty. Například je možné uhlíkový rozpočet rozdělit jednoduše podle počtu obyvatel, nebo podle historických emisí, podle HDP, či podle míry současných emisí skleníkových plynů. Každý způsob má své výhody a nevýhody a žádný nebyl zvolen jako oficiální.
 
 ## Uhlíkový rozpočet pro Českou republiku
-
-Poté, co známe globální uhlíkový rozpočet pro dodržení Pařížské dohody, je pak možné tento rozpočet rozdělit mezi jednotlivé země. Existuje ovšem více způsobů jak přidělit jednotlivým zemím jejich uhlíkové rozpočty. Například je možné uhlíkový rozpočet rozdělit jednoduše podle počtu obyvatel, nebo podle historických emisí, podle HDP, či podle míry současných emisí skleníkových plynů. Každý způsob má své výhody a nevýhody a žádný nebyl zvolen jako oficiální.
 
 
 
