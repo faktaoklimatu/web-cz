@@ -11,7 +11,6 @@ caption:    ""
 data-our:   ""
 data-orig:	[ ]
 ---
-## Současný stav a potřeba transformace
 
 Současná společnost potřebuje ke svému fungování ohromná množství fosilních paliv i dalších materiálů a vytváří přitom stejně tak velká množství skleníkových plynů, plasotvých i jiných odpadů. Přitom využívá krajinu způsobem, který ji pro další generace zanechává ve vyčerpaném stavu. Vysokou ekologickou stopu[^1]mají především lidé v bohatých zemích a většina z více než 7 miliard lidí žije v Africe nebo jihovýchodní Asii poměrně chudým životem a jako jednotlivci zatěžují životní prostředí minimálně.  
 
