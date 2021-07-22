@@ -15,6 +15,8 @@ cover-source-url: "https://dam.media.un.org/asset-management/2AM9LO6R6T5P"
 perex:       "Hranice zvýšení globální teploty o 2 °C či 1,5 °C oproti předindustriálnímu období se již dlouho používá jako limit, k němuž se vztahují mitigační opatření mající zmírnit dopad klimatické změny. Bývá však interpretována různě a výsledkem jsou značně odlišná sdělení, jež mohou snadno vyvolat zmatek. Co tedy dlouhodobý cíl Pařížské dohody vlastně znamená a jakou šanci na jeho dosažení máme?" 
 
 ---
+Tohle přepíšeme celý.
+
 *Následuje §doslovný§ přepis externího článku [“Guest post: Interpreting the Paris Agreement’s 1.5C temperature limit”](https://www.carbonbrief.org/guest-post-interpreting-paris-agreements-1-point-5-c-temperature-limit), který nemusí odrážet názory autorů Fakta o Klimatu*
 
 Nedávno si hranice 1,5 °C znovu získala pozornost vědců, médií i veřejnosti, neboť se objevila v <glossary id="parizskadohoda">Pařížské dohodě</glossary> a také <glossary id="ipcc">IPCC</glossary> se rozhodl připravit <glossary id="sr15">Zvláštní zprávu ke globálnímu oteplení o 1,5 °C</glossary>.
