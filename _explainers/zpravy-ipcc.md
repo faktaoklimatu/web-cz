@@ -16,15 +16,28 @@ perex:       "V srpnu vychází první část nové Hodnotící zprávy IPCC, z�
 
 ---
 
-Ve stručnosti lze říct, že Hodnotící zpráva IPCC (Assessment Report) je podrobný **výtah a posouzení přezkoumané a publikované vědecké literatury**, která se zabývá změnami klimatu. Nejedná se tedy o samostatný výzkum a uvozovky u slova „novinky“ jsou použity zcela záměrně, neboť zpráva (vzhledem ke svému rozsahu) zahrnuje pouze výsledky výzkumu zveřejněné do uzávěrky – u letošní zprávy jsou to studie publikované do prosince 2019.  
+Ve stručnosti lze říct, že Hodnotící zpráva IPCC (*Assessment Report, AR*) je podrobný **výtah a posouzení přezkoumané a publikované vědecké literatury**, která se zabývá změnami klimatu. Nejedná se tedy o samostatný výzkum a uvozovky u slova „novinky“ jsou použity zcela záměrně, neboť zpráva (vzhledem ke svému rozsahu) zahrnuje pouze výsledky výzkumu zveřejněné do uzávěrky – u letošní zprávy jsou to studie publikované do prosince 2019.  
 
 **Výjimečnost Hodnotící zprávy IPCC** oproti jiným textům věnovaným klimatické změně spočívá v tom, že je výsledkem spolupráce předních světových klimatologů s vládními experty (zástupci jednotlivých zemí), a **poskytuje tak informace, jež jsou z vědeckého hlediska správné a zároveň jsou srozumitelné politikům**, kteří potom mohou na jejich základě dělat klíčová rozhodnutí.
+
+{% include preview-box.html
+    title="Klíčové události mezinárodního úsilí ochrany klimatu"
+    text=""
+    slug="svetove-dohody"
+%}
 
 Zprávu sestavuje **Mezivládní panel pro změnu klimatu** (*The Intergovernmental Panel on Climate Change*), založený v roce 1988, u jehož kolébky stály dvě významné mezinárodní instituce: Světová meteorologická organizace ([WMO](https://public.wmo.int/en)) a Program OSN pro životní prostředí ([UNEP](https://www.unenvironment.org/)). Celkem bylo zatím publikováno pět zpráv, první v roce 1990, pátá (AR5) je z let 2013 a 2014, nyní vychází část šesté zprávy AR6, zbytek bude následovat příští rok. Všechny jsou v angličtině volně k dispozici na webových stránkách IPCC v sekci [REPORTS](https://www.ipcc.ch/reports/). 
 
 ## Jak probíhá příprava Hodnotící zprávy? 
 
-Jak je už zmíněno výše, Hodnotící zpráva pouze *hodnotí* dosavadní publikovaný výzkum. Metaforicky řečeno je to podobné, jako když se vyrábí destilát: sesbíráme ovoce, z něj vybereme to nejlepší, které splňuje všechna stanovená kritéria, a poté destilujeme. IPCC tedy nepřináší žádné nové ingredience (neplodí ovoce) – pouze vytahuje esenci z toho, co je momentálně k dispozici. Což ovšem není jednoduchý proces a vyžaduje to expertní znalosti a také čas. Představit si jej můžeme zhruba takto:
+Jak je už zmíněno výše, Hodnotící zpráva pouze *vyhodnocuje* dosavadní publikovaný výzkum. Metaforicky řečeno je to podobné, jako když se vyrábí destilát: sesbíráme ovoce, z něj vybereme to nejlepší, které splňuje všechna stanovená kritéria, a poté destilujeme. IPCC tedy nepřináší žádné nové ingredience (neplodí ovoce) – pouze vytahuje esenci z toho, co je momentálně k dispozici. Což ovšem není jednoduchý proces a vyžaduje to expertní znalosti a také čas. Představit si jej můžeme zhruba takto:
+
+{% include figure.html
+    name="klimaticky-vyzkum.svg"
+    alt="Schéma vysvětlující postup v klimatickém výzkumu"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
+%}
 
 0. Přípravě Hodnotící zprávy vždy předchází vědecký výzkum v mnoha zemích, zaměřený na oblast klimatické změny, a probíhá přezkoumávání a ověřování jeho správnosti. Ukázat si to můžeme třeba na příkladu klimatologických modelů: vylepšování modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možných vývojů budoucího klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro:
 
@@ -56,15 +69,14 @@ Každý report má celkem **čtyři oddíly**:
 * Mitigace (*Mitigation of Climate Change*) 
 * Souhrnná zpráva (*Synthesis Report*)
 
-a každý z těchto oddílů má ještě své: 
+Každý z těchto oddílů má přes 1000 stran textu. Takový text je slouží jako podrobné shrnutí vědeckých poznatků, pro čtenáře mimo vědeckou komunitu jsou ale důležitější zkrácená shrnutí: 
 
-* Technické shrnutí (*Technical Summary;* shrnuje klíčové body zprávy – co je nového apod.)
-* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci) 
+* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 30 stran) 
+* Technické shrnutí (*Technical Summary;* shrnuje klíčové body zprávy – co je nového apod., cca 80 stran)
 
 ## Co nového přináší zpráva letošní?
 
 Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy), další tři oddíly budou postupně publikovány v příštím roce. Co se dozvíme? Spíše než zásadní objevy či změny lze očekávat zpřesnění dosavadních poznatků a odhadů budoucího vývoje. Například budeme díky nové zprávě mít mnohem jasnější představu:
-
 
 * o probíhajících změnách klimatu a možných scénářích dalšího vývoje – např. přesnější odhad vzestupu hladiny moří a oceánů do konce tohoto století a ve stoletích následujících
 * o citlivosti klimatu na rostoucí koncentrace skleníkových plynů, extrémních projevech počasí a o tom, jak tyto projevy souvisejí s lidskou činností
@@ -72,12 +84,10 @@ Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy)
 
 Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**, kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací. 
 
-## Je zpráva důležitá pro podzimní klimatickou konferencí v Glasgow?
+## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
 
-Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bude klimatická konference COP26, která proběhne od 31. října do 12. listopadu ve skotském Glasgow. Na ní mají vlády jednotlivých zemí prezentovat své nové či revidované klimatické plány vedoucí ke splnění hranice oteplení 1,5 °C stanovené Pařížskou dohodou. Nakolik přijedou vládní představitelé do Glasgow připraveni, záleží do velké míry také na tom, jak budou komunikovány hlavní body Šesté hodnotící zprávy IPCC a jak s nimi budou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost. 
+Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bude klimatická konference COP26, která proběhne od 31. října do 12. listopadu ve skotském Glasgow. Na ní mají vlády jednotlivých zemí prezentovat své nové či revidované plány na sniřování emísí a budou jednat o mezinárodní spolupráci ohledně investic, podpory, nebo společné legislativy. Nakolik přijedou vládní představitelé do Glasgow připraveni, záleží do velké míry také na tom, jak budou komunikovány hlavní body Šesté hodnotící zprávy IPCC a jak s nimi budou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost. 
 
-[“citát” – ještě nevím, kam přesně dát a jestli použít – možná by šlo místo té metafory destilátu]
-„Hodnotící zpráva IPCC funguje jako mapa, která nám v určitém místě říká, že není možné jet dál rovně a musíme prudce zabočit, abychom se nezřítili ze srázu dolů. Rozhodnutí však je a vždy bude na řidiči, mapa mu nic nediktuje – pouze mu poskytuje klíčové informace v klíčovém momentě. To samé dělá i zpráva IPCC.“ (Radim Tolasz)
 
 ## Zdroje a odkazy
 https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf
