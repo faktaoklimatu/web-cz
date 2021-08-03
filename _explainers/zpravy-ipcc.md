@@ -30,7 +30,7 @@ Jak je už zmíněno výše, Hodnotící zpráva pouze *hodnotí* dosavadní pub
 
 {% include figure.html
     name="tvorba-zpravy-ipcc.svg"
-    alt=""
+    alt="Schéma vysvětlující jednotlivé fáze vzniku hodnotících zpráv IPCC."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
