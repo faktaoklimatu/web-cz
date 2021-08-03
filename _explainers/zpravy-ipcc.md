@@ -90,6 +90,7 @@ Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bud
 
 
 ## Zdroje a odkazy
-https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf
-https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc
+
+* [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf)
+* Text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa Radima Tolasze, který je českým zástupcem v IPCC. 
 
