@@ -1,7 +1,7 @@
 ---
 layout:      explainer
 title:       "Co jsou zprávy IPCC a jak vznikají?"
-slug:        "zpravy-IPCC"
+slug:        "zpravy-ipcc"
 published:   2021-08-01
 author:      "Jiří Lněnička, Fakta o klimatu"
 weight:      74
@@ -9,9 +9,9 @@ tags-scopes: [ svet ]
 tags-topics: [ opatreni ]
 cover-source-author: "Yves Nevens"
 cover-source-license: "Copyright: © Belspo / Nevens"
-cover-source-license-url: "https://pixabay.com/service/license/"
+cover-source-license-url: "https://www.flickr.com/photos/isdr/7515010372"
 cover-source-text: "Belspo / Nevens"
-cover-source-url: "https://pixabay.com/photos/windmills-clouds-fog-wind-power-1048981/"
+cover-source-url: "https://www.flickr.com/photos/isdr/7515010372"
 perex:       "V srpnu vychází první část nové Hodnotící zprávy IPCC, zásadního dokumentu v oblasti dosavadního výzkumu klimatické změny. Co tento report obsahuje, kdo jej sestavuje a jaké „novinky“ se v něm dočteme?"
 
 ---
@@ -29,7 +29,7 @@ Jak je už zmíněno výše, Hodnotící zpráva pouze *hodnotí* dosavadní pub
 0. Přípravě Hodnotící zprávy vždy předchází vědecký výzkum v mnoha zemích, zaměřený na oblast klimatické změny, a probíhá přezkoumávání a ověřování jeho správnosti. Ukázat si to můžeme třeba na příkladu klimatologických modelů: vylepšování modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možných vývojů budoucího klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro:
 
 {% include figure.html
-    name="tvroba-zpravy-IPCC.svg"
+    name="tvorba-zpravy-ipcc.svg"
     alt=""
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
