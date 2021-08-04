@@ -53,7 +53,7 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** v mnoha
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
 5. Vzniká finální znění zprávy a spolu s ním Shrnutí pro politické představitele. Teprve (a pouze) v této části vstupují do připomínkového řízení také úředníci a politici, kteří mají možnost Shrnutí rovněž posoudit a dát k němu zpětnou vazbu. Právě oni totiž budou se zprávou později pracovat a dělat na základě informací z ní politická rozhodnutí.
-6. Konečně znění Shrnutí je poté předloženo panelu ke schválení. 
+6. Konečné znění Shrnutí je poté předloženo panelu ke schválení. 
 
 ## Kdo jsou zástupci jednotlivých zemí a jak jsou nominováni?
 
