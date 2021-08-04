@@ -48,35 +48,35 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** v mnoha
     source-url="https://faktaoklimatu.cz"
 %}
 
-1. Osnovu budoucího reportu IPCC, který připraví experti delegovaní členskými státy. Tato osnova je poté vedením IPCC předložena celému panelu k diskuzi. Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy. 
-2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí navržení naším zástupcem v IPCC, klimatologem Radimem Tolaszem). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
+1. Osnovu připraví experti delegovaní členskými státy (panel IPCC). Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy. 
+2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
-5. Vzniká finální znění zprávy a spolu s ním Shrnutí pro politické představitele. Teprve (a pouze) v této části vstupují do připomínkového řízení také úředníci a politici, kteří mají možnost Shrnutí rovněž posoudit a dát k němu zpětnou vazbu. Právě oni totiž budou se zprávou později pracovat a dělat na základě informací z ní politická rozhodnutí.
+5. Vzniká finální znění zprávy a spolu s ním Shrnutí pro politické představitele. Teprve (a pouze) v této části vstupují do připomínkového řízení také úředníci a politici, kteří mají možnost Shrnutí rovněž posoudit a dát k němu zpětnou vazbu.
 6. Konečné znění Shrnutí je poté předloženo panelu ke schválení. 
 
 ## Kdo jsou zástupci jednotlivých zemí a jak jsou nominováni?
 
-Přestože název panelu může vzbuzovat dojem, že se jedná o politický orgán, jde o panel složený z vědců a expertů ze 195 zemí světa. **Jednotlivé členské země mají v panelu své odborné zástupce** (každá jednoho, bez ohledu na svou velikost), za ČR je to v současné době RNDr. Radim Tolasz, Ph.D. 
+Přestože název může vzbuzovat dojem, že se jedná o politický orgán, jde o panel složený z vědců a expertů ze 195 zemí světa. **Jednotlivé členské země mají v panelu své odborné zástupce** (každá jednoho, bez ohledu na svou velikost), za ČR je to v současné době RNDr. Radim Tolasz, Ph.D. 
 
 Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostředí jako zástupce vlády – IPCC je mezivládní panel), záleží čistě na jejím rozhodnutí. Z jednotlivých zástupců je vždy jednou za čtyři roky **zvoleno vedení**, což jsou jediné volby v rámci fungování IPCC. Volení zástupci navíc musí předložit životopis a prohlášení o střetu zájmů, které podléhá kontrole.  
 
 ## Z čeho se Hodnotící zpráva IPCC skládá?
 
 Každý report má celkem **čtyři oddíly**:
-* Fyzikální základy (*The Physical Science Basis*)
-* Dopady, adaptace a zranitelnost (*Impacts, Adaptation, and Vulnerability*)
-* Mitigace (*Mitigation of Climate Change*) 
-* Souhrnná zpráva (*Synthesis Report*)
+* Fyzikální základy (*The Physical Science Basis*) – připravuje Pracovní skupina I (Working Group I, WG I)
+* Dopady, adaptace a zranitelnost (*Impacts, Adaptation, and Vulnerability*) – připravuje Pracovní skupina II
+* Mitigace (*Mitigation of Climate Change*) – připravuje Pracovní skupina III
+* Souhrnná zpráva (*Synthesis Report*) – publikována jako poslední, vychází z předchozích tří oddílů
 
 Každý z těchto oddílů má přes 1000 stran textu. Takový text slouží jako podrobné shrnutí vědeckých poznatků, pro čtenáře mimo vědeckou komunitu jsou ale důležitější zkrácená shrnutí: 
 
-* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 30 stran) 
-* Technické shrnutí (*Technical Summary;* shrnuje klíčové body zprávy – co je nového apod., cca 80 stran)
+* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 10 stran) 
+* Delší shrnutí (*Longer Summary;* shrnuje klíčové body celé zprávy – co je nového apod., cca 50 stran)
 
 ## Co nového přináší zpráva letošní?
 
-Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy), další tři oddíly budou postupně publikovány v příštím roce. Co se dozvíme? Spíše než zásadní objevy či změny lze očekávat zpřesnění dosavadních poznatků a odhadů budoucího vývoje. Například budeme díky nové zprávě mít mnohem jasnější představu:
+Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy), další tři oddíly budou postupně publikovány v příštím roce. Co se dozvíme? Spíše než zásadní objevy či změny lze očekávat zpřesnění dosavadních poznatků a odhadů budoucího vývoje. Například budeme mít mnohem jasnější představu:
 
 * o probíhajících změnách klimatu a možných scénářích dalšího vývoje – např. přesnější odhad vzestupu hladiny moří a oceánů do konce tohoto století a ve stoletích následujících
 * o citlivosti klimatu na rostoucí koncentrace skleníkových plynů, extrémních projevech počasí a o tom, jak tyto projevy souvisejí s lidskou činností
@@ -86,7 +86,7 @@ Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů*
 
 ## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
 
-Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bude klimatická konference COP26, která proběhne od 31. října do 12. listopadu ve skotském Glasgow. Na ní mají vlády jednotlivých zemí prezentovat své nové či revidované plány na sniřování emísí a budou jednat o mezinárodní spolupráci ohledně investic, podpory, nebo společné legislativy. Nakolik přijedou vládní představitelé do Glasgow připraveni, záleží do velké míry také na tom, jak budou komunikovány hlavní body Šesté hodnotící zprávy IPCC a jak s nimi budou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost. 
+Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bude klimatická konference COP26, která proběhne od 31. října do 12. listopadu ve skotském Glasgow. Na ní mají vlády jednotlivých zemí prezentovat své nové či revidované plány na snižování emisí a budou jednat o mezinárodní spolupráci ohledně investic, podpory nebo společné legislativy. Nakolik přijedou vládní představitelé do Glasgow připraveni, záleží do velké míry také na tom, jak budou komunikovány hlavní body Šesté hodnotící zprávy IPCC a jak s nimi budou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost. 
 
 
 ## Zdroje a odkazy
