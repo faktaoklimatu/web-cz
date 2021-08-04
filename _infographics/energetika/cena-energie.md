@@ -7,7 +7,7 @@ published:  2021-06-24
 weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
-caption:    "Srovnání vývoje sdružených nákladů na výrobu elektřiny v modelových velkých elektrárnách (tzv. utility-scale) od roku 2009 do roku 2020, především z hlediska technologií a trhu. Do ceny nejsou započteny dotace, ceny emisních povolenek ani náklady spojené s vyrovnáním nestálosti zdrojů[^1]. V grafu jsou zobrazeny obnovitelné zdroje, které mají v České republice největší potenciál rozvoje."
+caption:    "Srovnání vývoje sdružených nákladů na výrobu elektřiny v modelových velkých elektrárnách (tzv. utility-scale) od roku 2009 do roku 2020, především z hlediska technologií a trhu. Do ceny nejsou započteny dotace, ceny emisních povolenek ani náklady spojené s vyrovnáním nestálosti zdrojů. V grafu jsou zobrazeny obnovitelné zdroje, které mají v České republice největší potenciál rozvoje."
 data-our:   "https://docs.google.com/spreadsheets/d/1YVCUfpI1WbIiPP8Kc2np3IFYlVQnyNeB3IvJqPdTrns"
 data-orig:  [["Zdrojová data Lazard", "https://www.lazard.com/media/451419/lazards-levelized-cost-of-energy-version-140.pdf"]]
 ---
@@ -18,7 +18,7 @@ Graf znázorňuje **vývoj sdružených nákladů na výrobu energie (LCOE – L
 
 Sdružená cena energie je veličina umožňující srovnat ekonomickou výhodnost různých zdrojů energie. Počítá se jako podíl veškerých nákladů spojených se stavbou, provozem a likvidací elektrárny (včetně případného nákupu paliva) a množství energie, které elektrárna vyrobí za dobu své životnosti. Hodnoty uvádíme v korunách za kilowatthodinu. Ceny nezahrnují dotace ani ceny emisních povolenek. Srovnání cen se započítáním emisních povolenek nabízí studie od společnosti [Lazard](https://www.lazard.com/media/451419/lazards-levelized-cost-of-energy-version-140.pdf).
 
-- Graf nezobrazuje **dodatečné náklady plynoucí z nestálosti** (intermittence) solárních a větrných elektráren. Rozdíl mezi poptávkou a nabídkou je možné vyrovnávat pomocí špičkových elektráren[^2], úložišť elektřiny (bateriové, vodní přečerpávací), dynamického řízení poptávky (tzv. smart grid) nebo propojením elektrické soustavy v rámci větších geografických celků. **České scénáře transformace energetiky** počítají především se stavbou špičkových plynových elektráren. Elektřina z nich  je přitom přibližně třikrát dražší než u běžných plynových elektráren (tzv. base load[^3]), protože tento typ elektrárny nevyrábí stále.
+- Graf nezobrazuje **dodatečné náklady plynoucí z nestálosti**[^1] solárních a větrných elektráren. Rozdíl mezi poptávkou a nabídkou je možné vyrovnávat pomocí špičkových elektráren[^2], úložišť elektřiny (bateriové, vodní přečerpávací), dynamického řízení poptávky (tzv. smart grid) nebo propojením elektrické soustavy v rámci větších geografických celků. **České scénáře transformace energetiky** počítají především se stavbou špičkových plynových elektráren. Elektřina z nich  je přitom přibližně třikrát dražší než u běžných plynových elektráren (tzv. base load[^3]), protože tento typ elektrárny nevyrábí stále.
 - V grafu nezobrazujeme některé druhy obnovitelných zdrojů, buď kvůli omezenému potenciálu jejich růstu (vodní či geotermální elektrárny, spalování biomasy), nebo proto, že nejsou pro Českou republiku relevantní (větrné elektrárny na moři). V datech od společnosti Lazard je nicméně možné najít i tyto zdroje.
 - Veličiny vstupující do výpočtu se většinou **značně liší v závislosti na konkrétním regionu:** různá je jak cena stavby zdroje, tak náklady spojené s jeho provozem, a stejně tak i množství vyrobené energie – což platí zejména pro obnovitelné zdroje. Graf zobrazuje zjednodušený pohled pro celý svět.
 
@@ -40,6 +40,6 @@ Podle studie IRENA by se instalace obnovitelných zdrojů mohla stát klíčový
 
 ## Odkazy
 
-[^1]: Jako nestálé zdroje označujeme ty, které neumíme jednoduše zapnout a vypnout. Jedná se především o větrné a sluneční elektrárny.
+[^1]: Jako **nestálé zdroje** (někdy také intermitentní) označujeme ty, u kterých neumíme ovlivnit zda elektrárna vyrábí nebo ne. Jedná se především o větrné a sluneční elektrárny.
 [^2]: **Špičkové elektrárny** pracují v době největší spotřeby elektrické energie (ve špičce). U nás to jsou vodní nebo plynové elektrárny. 
 [^3]: Jako **base load** se označují elektrárny, které běží stále a zajišťují základní odběr soustavy. U nás to jsou především jaderné a uhelné eletrárny.
