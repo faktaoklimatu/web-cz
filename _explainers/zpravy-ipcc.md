@@ -52,8 +52,8 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** v mnoha
 2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí navržení naším zástupcem v IPCC, klimatologem Radimem Tolaszem). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
-5. Vzniká finální znění zprávy.
-6. Jako poslední přichází na řadu Shrnutí pro politické představitele – teprve (a pouze) v této části vstupují do připomínkového řízení úředníci a politici, kteří mají možnost Shrnutí posoudit a dát k ní zpětnou vazbu. Právě oni pak totiž mohou se zprávou pracovat a dělat na základě informací z ní politická rozhodnutí. 
+5. Vzniká finální znění zprávy a spolu s ním Shrnutí pro politické představitele. Teprve (a pouze) v této části vstupují do připomínkového řízení také úředníci a politici, kteří mají možnost Shrnutí rovněž posoudit a dát k němu zpětnou vazbu. Právě oni totiž budou se zprávou později pracovat a dělat na základě informací z ní politická rozhodnutí.
+6. Konečně znění Shrnutí je poté předloženo panelu ke schválení. 
 
 ## Kdo jsou zástupci jednotlivých zemí a jak jsou nominováni?
 
@@ -69,7 +69,7 @@ Každý report má celkem **čtyři oddíly**:
 * Mitigace (*Mitigation of Climate Change*) 
 * Souhrnná zpráva (*Synthesis Report*)
 
-Každý z těchto oddílů má přes 1000 stran textu. Takový text je slouží jako podrobné shrnutí vědeckých poznatků, pro čtenáře mimo vědeckou komunitu jsou ale důležitější zkrácená shrnutí: 
+Každý z těchto oddílů má přes 1000 stran textu. Takový text slouží jako podrobné shrnutí vědeckých poznatků, pro čtenáře mimo vědeckou komunitu jsou ale důležitější zkrácená shrnutí: 
 
 * Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 30 stran) 
 * Technické shrnutí (*Technical Summary;* shrnuje klíčové body zprávy – co je nového apod., cca 80 stran)
