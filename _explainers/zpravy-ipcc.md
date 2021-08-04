@@ -2,9 +2,9 @@
 layout:      explainer
 title:       "Co jsou zprávy IPCC a jak vznikají?"
 slug:        "zpravy-ipcc"
-published:   2021-08-01
+published:   2021-08-04
 author:      "Jiří Lněnička, Fakta o klimatu"
-weight:      74
+weight:      90
 tags-scopes: [ svet ]
 tags-topics: [ opatreni ]
 cover-source-author: "Yves Nevens"
@@ -30,25 +30,25 @@ Zprávu sestavuje **Mezivládní panel pro změnu klimatu** (*The Intergovernmen
 
 ## Jak probíhá příprava Hodnotící zprávy? 
 
-Jak je už zmíněno výše, Hodnotící zpráva pouze *vyhodnocuje* dosavadní publikovaný výzkum. Metaforicky řečeno je to podobné, jako když se vyrábí destilát: sesbíráme ovoce, z něj vybereme to nejlepší, které splňuje všechna stanovená kritéria, a poté destilujeme. IPCC tedy nepřináší žádné nové ingredience (neplodí ovoce) – pouze vytahuje esenci z toho, co je momentálně k dispozici. Což ovšem není jednoduchý proces a vyžaduje to expertní znalosti a také čas. Představit si jej můžeme zhruba takto:
+Jak je už zmíněno výše, Hodnotící zpráva pouze shrnuje a *vyhodnocuje* dosavadní publikovaný výzkum. Metaforicky řečeno je to podobné, jako když se vyrábí destilát: sesbíráme ovoce, z něj vybereme to nejlepší, které splňuje všechna stanovená kritéria, a poté destilujeme. IPCC tedy nepřináší žádné nové ingredience (neplodí ovoce) – pouze destiluje esenci z toho, co je momentálně k dispozici. Což ovšem není jednoduchý proces a vyžaduje to expertní znalosti a také čas.
 
 {% include figure.html
-    name="klimaticky-vyzkum.svg"
+    name="proces-ipcc-2.svg"
     alt="Schéma vysvětlující postup v klimatickém výzkumu"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
 
-0. Přípravě Hodnotící zprávy vždy předchází vědecký výzkum v mnoha zemích, zaměřený na oblast klimatické změny, a probíhá přezkoumávání a ověřování jeho správnosti. Ukázat si to můžeme třeba na příkladu klimatologických modelů: vylepšování modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možných vývojů budoucího klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro:
+Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** v mnoha zemích, zaměřený na oblast klimatické změny, a probíhá jeho přezkoumávání a ověřování. Ukázat si to můžeme třeba na příkladu klimatických modelů: vylepšování modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možných vývojů budoucího klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro zprávu IPCC: 
 
 {% include figure.html
-    name="tvorba-zpravy-ipcc.svg"
+    name="proces-ipcc-3.svg"
     alt="Schéma vysvětlující jednotlivé fáze vzniku hodnotících zpráv IPCC."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
 
-1. Osnovu budoucího reportu IPCC, který připraví  experti delegovaní členskými státy. Tato osnova je poté vedením IPCC předložena celému panelu k diskuzi. Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy. 
+1. Osnovu budoucího reportu IPCC, který připraví experti delegovaní členskými státy. Tato osnova je poté vedením IPCC předložena celému panelu k diskuzi. Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy. 
 2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí navržení naším zástupcem v IPCC, klimatologem Radimem Tolaszem). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
@@ -57,7 +57,7 @@ Jak je už zmíněno výše, Hodnotící zpráva pouze *vyhodnocuje* dosavadní 
 
 ## Kdo jsou zástupci jednotlivých zemí a jak jsou nominováni?
 
-Přestože název panelu může vzbuzovat dojem, že se jedná o politický orgán, jde o panel složený z vědců a expertů ze 195 zemí světa. **Jednotlivé členské země mají v panelu své odborné zástupce** (každá jednoho, bez ohledu na svou velikost), za ČR je to v současné době Radim Tolasz. 
+Přestože název panelu může vzbuzovat dojem, že se jedná o politický orgán, jde o panel složený z vědců a expertů ze 195 zemí světa. **Jednotlivé členské země mají v panelu své odborné zástupce** (každá jednoho, bez ohledu na svou velikost), za ČR je to v současné době RNDr. Radim Tolasz, Ph.D. 
 
 Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostředí jako zástupce vlády – IPCC je mezivládní panel), záleží čistě na jejím rozhodnutí. Z jednotlivých zástupců je vždy jednou za čtyři roky **zvoleno vedení**, což jsou jediné volby v rámci fungování IPCC. Volení zástupci navíc musí předložit životopis a prohlášení o střetu zájmů, které podléhá kontrole.  
 
