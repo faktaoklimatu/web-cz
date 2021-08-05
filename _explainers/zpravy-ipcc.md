@@ -84,7 +84,7 @@ Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy)
 
 Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**, kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací. 
 
-Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. Ve oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
+Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
 
 ## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
 
