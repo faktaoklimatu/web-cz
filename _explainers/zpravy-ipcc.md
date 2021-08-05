@@ -94,6 +94,7 @@ Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bud
 ## Zdroje a další odkazy
 
 * Jako základní zdroj pro tento explainer posloužil text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D. který je českým zástupcem v IPCC.
+* Podrobné vysvětlení o procesu výběru autorů, posuzované literatuře a schvalovacích procesech viz [Oficiální web IPCC](https://www.ipcc.ch/assessment-report/ar6/)
 * Ǔdaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 
 ### České překlady shrnutí ke zprávám AR5
