@@ -33,7 +33,7 @@ Zprávu sestavuje **Mezivládní panel pro změnu klimatu** (*The Intergovernmen
 Jak už bylo zmíněno výše, Hodnotící zpráva pouze shrnuje a *vyhodnocuje* dosavadní publikovaný výzkum. Metaforicky řečeno je to podobné, jako když se vyrábí destilát: sesbíráme ovoce, z něj vybereme to nejlepší, které splňuje všechna stanovená kritéria, a poté destilujeme. IPCC tedy nepřináší žádné nové ingredience (neplodí ovoce) – pouze destiluje esenci z toho, co je momentálně k dispozici. Což ovšem není jednoduchý proces a vyžaduje to expertní znalosti a také čas.
 
 {% include figure.html
-    name="proces-ipcc-2.svg"
+    name="proces-ipcc-vyzkum.svg"
     alt="Schéma vysvětlující postup v klimatickém výzkumu"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -42,7 +42,7 @@ Jak už bylo zmíněno výše, Hodnotící zpráva pouze shrnuje a *vyhodnocuje*
 Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměřený na oblast klimatické změny, který probíhá v mnoha zemích světa. Zároveň s tím dochází také k jeho přezkoumávání a ověřování. Ukázat si to můžeme třeba na příkladu klimatických modelů: vylepšování těchto modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možností dalšího vývoje klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro Hodnotící zprávu IPCC. Zde je stručný popis jednotlivých fází jejího vzniku:
 
 {% include figure.html
-    name="proces-ipcc-3.svg"
+    name="proces-ipcc-zprava.svg"
     alt="Schéma vysvětlující jednotlivé fáze vzniku hodnotících zpráv IPCC."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -63,17 +63,17 @@ Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostřed�
 
 ## Z čeho se Hodnotící zpráva IPCC skládá?
 
-Každý report má celkem **čtyři oddíly**:
+Každý report má celkem **čtyři oddíly** označené podle pracovních skupin, které je připravují:
 
-* Fyzikální základy (*The Physical Science Basis*) – připravuje Pracovní skupina I (*Working Group I, WG I*)
-* Dopady, adaptace a zranitelnost (*Impacts, Adaptation, and Vulnerability*) – připravuje Pracovní skupina II
-* Mitigace (*Mitigation of Climate Change*) – připravuje Pracovní skupina III
-* Souhrnná zpráva (*Synthesis Report*) – publikována jako poslední, vychází z obsahu předchozích tří oddílů
+* *WG1* - **Fyzikální základy** (*The Physical Science Basis*) – připravuje Pracovní skupina I (*Working Group I*,tedy *WG1*)
+* *WG2* - **Dopady, adaptace a zranitelnost** (*Impacts, Adaptation, and Vulnerability*) – připravuje Pracovní skupina II, plánované zveřejnění AR6 WG2 je v únoru 2022
+* *WG3* - **Mitigace** (*Mitigation of Climate Change*) – připravuje Pracovní skupina III, plánované zveřejnění AR6 WG3 je v březnu 2022
+* **Souhrnná zpráva** (*Synthesis Report*) – publikována jako poslední, vychází z obsahu předchozích tří oddílů
 
 První tři oddíly mají každý přes 1000 stran. Takový text je podrobným shrnutím vědeckých poznatků, pro čtenáře mimo vědeckou komunitu jsou ale důležitější zkrácená shrnutí:
 
-* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 10 stran)
-* Delší shrnutí (*Longer Summary;* shrnuje klíčové body celé zprávy – co je nového apod., cca 50 stran)
+* Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 30 stran)
+* Delší shrnutí (*Technical Summary;* shrnuje klíčové body celé zprávy – co je nového apod., cca 70 stran)
 
 ## Co nového přináší zpráva letošní?
 
@@ -83,7 +83,7 @@ Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy)
 * o citlivosti klimatu na rostoucí koncentrace skleníkových plynů, extrémních projevech počasí a o tom, jak tyto projevy souvisejí s lidskou činností
 * o lokálních důsledcích klimatických změn a o tom, jaká rizika v dané oblasti tyto změny přinášejí (**součástí zprávy bude interaktivní regionální atlas**)
 
-Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**, kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací.
+Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**[^1], kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací.
 
 Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
 
@@ -91,7 +91,23 @@ Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru
 
 Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bude klimatická konference COP26, která proběhne od 31. října do 12. listopadu ve skotském Glasgow. Na ní mají vlády jednotlivých zemí prezentovat své nové či revidované plány na snižování emisí a budou jednat o mezinárodní spolupráci v oblasti investic, podpory a společné legislativy. Nakolik přijedou vládní představitelé do Glasgow připraveni, záleží do velké míry také na tom, jak budou komunikovány hlavní body Šesté hodnotící zprávy IPCC a jak s nimi budou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost.
 
-## Zdroje a odkazy
+## Zdroje a další odkazy
 
-* [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf)
-* Text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa Radima Tolasze, který je českým zástupcem v IPCC.
+* Jako základní zdroj pro tento explainer posloužil text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D. který je českým zástupcem v IPCC.
+* Ǔdaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
+
+### České překlady shrnutí ke zprávám AR5
+* [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě Mezivládního panelu změny klimatu, web MŽP 
+* [IPCC - Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě Mezivládního panelu změny klimatu, web MŽP
+
+* [IPCC - Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf)
+Anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě Mezivládního panelu změny klimatu, web MŽP
+
+* [IPCC - Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf)
+Anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě Mezivládního panelu změny klimatu, web MŽP
+
+### Další odkazy
+* [Climate change assessments - Review of the processes and procedures of the IPCC](https://archive.ipcc.ch/pdf/IAC_report/IAC%20Report.pdf) (2010)
+ 
+----
+[^1]: [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf)
