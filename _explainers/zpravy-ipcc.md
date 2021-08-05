@@ -26,7 +26,7 @@ Ve stručnosti lze říct, že Hodnotící zpráva IPCC (*Assessment Report, AR*
     slug="svetove-dohody"
 %}
 
-Zprávu sestavuje **Mezivládní panel pro změnu klimatu** (*The Intergovernmental Panel on Climate Change*), založený v roce 1988, u jehož kolébky stály dvě významné mezinárodní instituce: Světová meteorologická organizace ([WMO](https://public.wmo.int/en)) a Program OSN pro životní prostředí ([UNEP](https://www.unenvironment.org/)). Celkem bylo zatím publikováno pět zpráv, první v roce 1990, pátá (AR5) je z let 2013 a 2014, nyní vychází první část šesté zprávy AR6, zbytek bude následovat příští rok. Všechny dosud zveřejněné reporty jsou v angličtině volně k dispozici na webových stránkách IPCC v sekci [REPORTS](https://www.ipcc.ch/reports/). 
+Zprávu sestavuje **Mezivládní panel pro změnu klimatu** (*The Intergovernmental Panel on Climate Change, IPCC*), založený v roce 1988, u jehož kolébky stály dvě významné mezinárodní instituce: Světová meteorologická organizace ([WMO](https://public.wmo.int/en)) a Program OSN pro životní prostředí ([UNEP](https://www.unenvironment.org/)). Celkem bylo zatím publikováno pět zpráv, první v roce 1990, pátá (AR5) je z let 2013 a 2014, nyní vychází první část šesté zprávy AR6, zbytek bude následovat příští rok. Všechny dosud zveřejněné reporty jsou v angličtině volně k dispozici na webových stránkách IPCC v sekci [REPORTS](https://www.ipcc.ch/reports/). 
 
 ## Jak probíhá příprava Hodnotící zprávy? 
 
@@ -39,7 +39,7 @@ Jak už bylo zmíněno výše, Hodnotící zpráva pouze shrnuje a *vyhodnocuje*
     source-url="https://faktaoklimatu.cz"
 %}
 
-Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměřený na oblast klimatické změny, který probíhá v mnoha zemích světa. Zároveň s tím dochází také k jeho přezkoumávání a ověřování. Ukázat si to můžeme třeba na příkladu klimatických modelů: vylepšování těchto modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možných vývojů budoucího klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro Hodnotící zprávu IPCC. Zde je stručný popis jednotlivých fází jejího vzniku: 
+Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměřený na oblast klimatické změny, který probíhá v mnoha zemích světa. Zároveň s tím dochází také k jeho přezkoumávání a ověřování. Ukázat si to můžeme třeba na příkladu klimatických modelů: vylepšování těchto modelů nespočívá pouze v jejich pouštění na rychlejších počítačích – nové modely zahrnují také procesy, které ty dřívější neobsahovaly (například podrobnější modelování pohybu ledovců). Aby byl nový klimatický model uznán jako relevantní, musí projít velmi podrobným testováním, kdy se zkouší, zda dokáže replikovat klima v minulosti a současnosti. Pokud by nebyl schopen dostatečně dobře replikovat současné klima, jak bychom mohli brát jeho předpovědi vážně? Teprve když projde tímto testováním, lze jeho předpovědi zařadit do databáze možností dalšího vývoje klimatu a publikovat je ve vědeckých časopisech. Podobný proces recenzí a ověřování správnosti výsledků probíhá ve všech oblastech klimatologie. A teprve takto ověřené výsledky jsou pak základem pro Hodnotící zprávu IPCC. Zde je stručný popis jednotlivých fází jejího vzniku: 
 
 {% include figure.html
     name="proces-ipcc-3.svg"
@@ -84,7 +84,7 @@ Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy)
 
 Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**, kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací. 
 
-Další část zprávy, připravovaná Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. Ve třetí části (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
+Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. Ve oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
 
 ## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
 
