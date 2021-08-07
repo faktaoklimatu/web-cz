@@ -79,6 +79,8 @@ V současnosti dosáhlo průměrné globální oteplení hodnoty 1,2 °C oproti 
 
 ## Další zdroje a poznámky
 
+[^1]: IPCC AR6
+
 [^11]: Více o závazcích států a firem píšeme v explaineru [Co přesně znamená uhlíková neutralita](/explainery/uhlikova-neutralita) a rešerši [Emisní závazky států](/studie/2021-reserse-zavazky-statu).
 
 [^55]: Matthews, H. D., Tokarska, K. B., Nicholls, Z. R. J. et al. [Opportunities and challenges in using remaining carbon budgets to guide climate policy.](https://www.nature.com/articles/s41561-020-00663-3) Nature Geoscience 13, str. 769–779 (2020). https://doi.org/10.1038/s41561-020-00663-3
