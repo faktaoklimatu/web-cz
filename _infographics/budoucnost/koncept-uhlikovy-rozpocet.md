@@ -8,8 +8,8 @@ weight:      70
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení."
-data-our:    "https://docs.google.com/spreadsheets/d/1ZqHRVRX2Q6Phx5JIQskaYyXqikDXbwL9ZqAYaIh1pbk/edit?usp=sharing"
-data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=122" ] ]
+data-our:    "https://docs.google.com/spreadsheets/d/1eRY1uSRaUzWk6F1fO4f_7xSbkuhVzJ_lHyXbqGyF9mo/edit?usp=sharing"
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC AR6", "https://www.ipcc.ch/assessment-report/ar6/" ] ]
 ---
 V souvislosti se snižováním emisí skleníkových plynů se často mluví o dosažení uhlíkové neutrality, tedy stavu, kdy lidstvo svou činností nepřidává do atmosféry další oxid uhličitý. **Z hlediska výsledného globálního oteplení však důležitější než datum, kdy vypustíme poslední tunu CO<sub>2</sub>, je tzv. uhlíkový rozpočet**. V této grafice představujeme koncept uhlíkového rozpočtu a důležité vědecké a politické souvislosti.
 
