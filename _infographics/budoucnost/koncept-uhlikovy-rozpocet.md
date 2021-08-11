@@ -21,7 +21,7 @@ V souvislosti se snižováním emisí skleníkových plynů se často mluví o d
     slug="souvislost-koncentrace-oteplovani"
 %}
 
-Měření i klimatické modely ukazují, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry**.[^58] [^55] [^56] [^57] Jinak řečeno: čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě můžeme jako lidstvo v budoucnu vypustit, abychom se pod danou hranicí udrželi.** Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro udržení oteplení pod hranicí 1,5 °C (oproti průměru z let 1850–1900) byl v roce 2021 zbývající uhlíkový rozpočet řádově 300 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2 °C je zbývající uhlíkový rozpočet řádově 1050 Gt CO<sub>2</sub>[^56] (oba údaje jsou pro 67% pravděpodobnost nepřekročení dané teplotní hranice).
+Měření i klimatické modely ukazují, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry**.[^58] [^55] [^56] [^57] Jinak řečeno: čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, **kolik CO<sub>2</sub> ještě můžeme jako lidstvo v budoucnu vypustit, abychom se pod danou hranicí udrželi.** Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici. Konkrétně pro udržení oteplení pod hranicí 1,5 °C (oproti průměru z let 1850–1900) byl v roce 2020 zbývající uhlíkový rozpočet řádově 400 Gt CO<sub>2</sub> a pro udržení oteplení pod hranicí 2 °C je zbývající uhlíkový rozpočet řádově 1150 Gt CO<sub>2</sub>[^1] (oba údaje jsou pro 67% pravděpodobnost nepřekročení dané teplotní hranice).
 
 Označení *rozpočet* je přitom třeba brát jako metaforu: podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nedošlo k překročení určité hranice globálního oteplení.
 
@@ -79,7 +79,11 @@ V současnosti dosáhlo průměrné globální oteplení hodnoty 1,2 °C oproti 
 
 ## Další zdroje a poznámky
 
-[^1]: [IPCC AR6](https://www.ipcc.ch/assessment-report/ar6/): Šestá hodnotící zpráva Mezivládní panel pro změny klimatu
+[^1]: [IPCC, 2021: Climate Change 2021: The Physical Science Basis.](https://www.ipcc.ch/report/ar6/wg1/) Contribution of Working Group I to the Sixth
+Assessment Report of the Intergovernmental Panel on Climate Change. Masson-Delmotte, V., P. Zhai, A. Pirani, S.
+L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M. I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J. B.
+R. Matthews, T. K. Maycock, T. Waterfield, O. Yelekçi, R. Yu and B. Zhou (eds.)]. Cambridge University Press. In
+Press.
 
 [^11]: Více o závazcích států a firem píšeme v explaineru [Co přesně znamená uhlíková neutralita](/explainery/uhlikova-neutralita) a rešerši [Emisní závazky států](/studie/2021-reserse-zavazky-statu).
 
