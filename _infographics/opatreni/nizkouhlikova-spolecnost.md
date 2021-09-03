@@ -20,6 +20,12 @@ Cílem tohoto textu je prostřednictvím těchto a dalších otázek inspirovat 
 
 ## Dnešní společnost
 
+{% include preview-box.html
+    title="Potenciál vybraných způsobů snížení emisí v ČR"
+    text="Srovnání jakou část emisí mohou v tuto chvíli ovlivnit lidé radikální změnou své spotřeby a jakou část emisí může ovlivnit stát systémovými změnami. Nejvyšší potenciál má změna energetického mixu, skrze odstavování hnědouhelných elektráren a nahrazování zdroji energie s nižší emisní intenzitou."
+    slug="potencial-zpusobu-snizeni-emisi"
+%}
+
 V současnosti lidstvo spotřebovává ohromné množství fosilních paliv i dalších materiálů a vytváří přitom miliony tun skleníkových plynů, plastových i jiných odpadů. Zároveň využívá krajinu způsobem, který ji pro další generace zanechává ve vyčerpaném stavu. Vysokou ekologickou stopu[^1] mají především lidé v bohatých zemích – naproti tomu většina z více než 7 miliard obyvatel světa žije v Africe nebo v jižní a východní Asii poměrně chudým životem a jako jednotlivci zatěžují životní prostředí jen minimálně.
 
 Ukazuje se, že růst životní úrovně snižuje porodnost a je pravděpodobně jediným etickým způsobem, jak zabránit katastrofálnímu přelidnění planety. Stojíme tedy nejen před nelehkou otázkou jak na jedné straně snížit ekologickou stopu v bohatých zemích a na straně druhé umožnit dosud chudým zemím rozvoj, který současně povede ke snižování množství emisí a odpadů.
