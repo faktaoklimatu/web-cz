@@ -17,21 +17,31 @@ perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde jso
 
 ## Které lesy v Česku umírají a co je hlavní příčina jejich umírání? 
 
-Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hrají různé druhy kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) a různé houbové nákazy, ale těm se zdravé stromy jsou schopny ubránit. Musíme se proto ptát co způsobilo, že je imunita stromů oslabená? Ty hlavní oslabující faktory jsou v česku tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2] a v tomto explaineru se podíváme podrobněji na působení jednotlivých oslabujících faktorů i na dynamiku kůrovcových kalamit.
+Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hrají různé druhy kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy jsou schopny ubránit. Musíme se proto ptát co způsobilo, že je imunita stromů oslabená? Ty hlavní oslabující faktory jsou v česku tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2] a v tomto explaineru se podíváme podrobněji na působení jednotlivých oslabujících faktorů i na dynamiku kůrovcových kalamit.
 
 ## Umírají stromy nebo lesy?
 
 Možná se to zdá jako zbytečné slovíčkaření, ale je důležité. S trochou nadsázky by se totiž dalo říct, že **přírodní lesy neumírají**: čas od času umřou jednotlivé stromy, ale jejich místo je brzy obsazeno mladými stromy, které v podrostu čekají, až se pro ně uvolní místo. Jinak řečeno, přírodní nebo přírodě blízký les je v žije v neustálé obnově a zmlazování[^22] a zachovává si svoje mikroklima. Takový přírodě blízký les obsahuje různě staré stromy (říkáme mu různověký) a je pestrý i co se týká druhů stromů a díky tomu může dobře zvládat výkyvy počasí nebo odolávat škůdcům. **Přírodních nebo přírodě blízkých lesů je v Česku asi jen desetina**[^3], najdete je zpravidla ve vyšších polohách na Šumavě a dalších horách.    
 
-Běžný český hospodářský les je často stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná plantáž, která se jednou za sto let vytěží. Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a snadno stane, že stromy umírají ve velkých plochách - říká se tomu *plošný rozpad lesa*. Když pak lesníci stromy vytěží, vznikne holina, která má zcela jiné mikroklima než les a mladým stromkům se na ní roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. 
+Běžný český hospodářský les je většinou stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná plantáž, která se jednou za sto let vytěží. Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a snadno stane, že stromy umírají ve velkých plochách - říká se tomu *plošný rozpad lesa*. Když pak lesníci stromy vytěží, vznikne holina, která má zcela jiné mikroklima než les a mladým stromkům se na ní roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. 
+
+
+% include figure.html
+    name="zdravy-oslabeny-mrtvy.jpg"
+    caption=""
+    alt=""
+    source-text=""
+    source-url=""
+%}
 
 ## Jak les oslabuje nevhodné hospodaření? 
 
 Většina českých lesů sloužila hlavně k produkci dřeva a dlouho se pěstování smrkových či borových monokultur vyplácelo. Důsledkem je ale slabý a náchylný les:
 
- * **Druhová skladba:** Smrkové lesy pokrývají okolo 50 % rozlohy českých lesů, a pěstovaly se i v oblastech, kde bylo pro smrky moc teplo nebo sucho. V přírodě blízkém stavu by se smrky vyskytovaly jen asi na 11 % rozlohy lesů - na horách od 650 mnm jako smíšené porosty a až od 800 jako dominantně smrkový les.
- * **Stejnověká monokultura:** hospodářské lesy obsahují stromy stejného věku. Byly většinou vysázeny ve stejném roce a pokud se mezi nimi třeba později vysemenily stromy jiného druhu, lesníci se jich zbavili. Z hospodářského hlediska to dává smysl:  Stromy, které mezi sebou soutěží o světlo tak rostou do výšky a vznikají dlouhé rovné stromy bez suků. Různověké lesy jsou výrazně odolnější - například mladé smrky se proti kůrovci dokáží ubránit a když přijde suché horké léto, přežívají díky stínu ostatních stromů. Stejnověký les ale nic takového nedokáže a při napadení kůrovcem nebo po několika suchých letech umírají nejen jednotlivé stromy ale celý les, často v rozloze desítek hektarů.       
- * **Pěstování nahusto:**  stromy jsou vyživovány svou korunou s listy nebo jehličím a svými kořeny. V hospodářských lesích jsou stromy pěstované nahusto, protože mají pak dlouhé kmeny bez větví. Důsledek ale je, že mají málo místa na své koruny a kořeny a tedy na svou velikost i méně živin. 
+ * **Druhová skladba:** Smrkové lesy pokrývají okolo 50 % rozlohy českých lesů, a pěstovaly se i v oblastech, kde bylo pro smrky moc teplo nebo sucho, tedy mimo své ekologické optimum. V přírodě blízkém stavu by většinu česka pokrývaly dubové lesy (v nížinách) a bukovo-jedlové (ve vyšších polohách) [^30]. Smrky by vyskytovaly jen asi na 11 % rozlohy lesů - zhruba od 650 m.n.m jako smíšené porosty a jen vysoko v horách by byl dominantně smrkový les. Pěstování smrků mimo jejich ekologické optimum je možné a nemá zásadní vliv na kvalitu dřeva, snižuje ale odolnost lesa. 
+ * **Pěstování monokultur:** smrkové a borové monokultury jsou známé svou nízkou odolností jednak proto, že jsou přímo pastvou pro škůdce, kteří mohou zlikvidovat velkou plochu lesa naráz, a jednok proto, že stromy jednoho druhu vyčerpávají půdu stejným způsobem. Smíšené lesy bývají odolnější, protože se stromy dokáži dobře doplňovat - mají různou potřebu živin z půdy a kořeny v různých hloubkách, takže si méně konkurují.[^23] A i když by kůrovec ve smíšeném lese zabil všechny smrky, zůstávají ostatní stromy stát a les a jeho mikroklima přežívá.  
+ * **Stejnověké lesy:** hospodářské lesy obsahují stromy stejného věku. Byly většinou vysázeny ve stejném roce a pokud se mezi nimi třeba později vysemenily mladší stromy jiného druhu, lesníci se jich zbavili. Různověké lesy jsou výrazně odolnější - například mladé smrky se proti kůrovci dokáží ubránit mnohem lépe než staré, kůrovcové kalamity většinou přežijí a nedochází pak k plošnému rozpadu lesa a úplné ztrátě lesního mikroklimatu. Podobně si stromy různého stáří dokáží lépe poradit se suchem. Stejnověký les ale nic takového nedokáže a při napadení kůrovcem nebo po několika suchých letech umírají nejen jednotlivé stromy ale celý les, často v rozloze desítek hektarů.       
+ * **Pěstování nahusto:**  stromy jsou vyživovány svou korunou s listy nebo jehličím a svými kořeny. Aby byly stromy zdravé potřebují pro své kořeny a korunu prostor, a tedy vhodné rozestupy. V hospodářských lesích jsou stromy pěstované nahusto. Z hospodářského hlediska to dává smysl: Stromy, které mezi sebou soutěží o světlo tak rostou do výšky a vznikají dlouhé rovné stromy bez suků. Důsledek ale je, že mají málo místa na své koruny a kořeny a tedy na svou výšku i méně živin. 
 
 
 ## Jak oslabuje les klimatická změna? 
@@ -81,13 +91,7 @@ Je dobré si uvědomit, že “les” jsou nejen kmeny, větve a listy, které v
 
 V medicíně bývá otázka přičiny smrti složitá. Zatímco zdravý člověk chřipku během několika dní vyleží, pro člověka s oslabenou imunitou může být smrtelná. Je v takovém případě příčina smrti chřipka, nebo oslabená imunita pacienta? Podobně je to i s umíráním stromů. Zdravé smrky se dokáží kůrovci ubránit, ale stromy, které jsou oslabené, snadno vytvoří ohnisko kůrovcové kalamity. Chceme-li tedy dobře odpovědět na otázku umírání smrkových lesů, nestačí vinit kůrovce, ale je potřeba podívat se na faktory, které oslabily imunitu stromů. Napadení kůrovcem je pak ve většině případů onou poslední kapkou, která strom zabije.   
 
-{% include figure.html
-    name="zdravy-oslabeny-mrtvy.jpg"
-    caption=""
-    alt=""
-    source-text=""
-    source-url=""
-%}
+{
 
 ## Zdroje
 
@@ -99,6 +103,10 @@ V medicíně bývá otázka přičiny smrti složitá. Zatímco zdravý člověk
 
 [^22]: V knížce *Les v hodině dvanácté* (Richard Višňák, 2009) popisuje autor podrobněji malý a velký cyklus obnovy lesa a poznamenává, že v určitých podmínkách je plošný rozpad lesa součástí přirozeného cyklu. Jde hlavně o jehličnaté lesy severské tajgy, ve které požáry nebo vichřice způsobují umírání starého lesa ve velkých oblastech. Uvolněné plochy pak nejdříve obsadí tzv. pionýrské dřeviny - třeba břízy nebo jeřáby. České lesy by se ale v přirozeném stavu obnovovaly postupně a plošný rozpad lesa vzniká v českých podmínkách hlavně vlivem hospodaření a vysazování stejnověkých monokultur (většinou smrkových)   
 
+[^23]: Obecně platí, že monokultury bývají méně odolné než smíšené porosty. Vyjímkou jsou ale akátové lesy. Akát je nepůvodní invazní dřevina, jeho kořeny vypouštějí látky, které jsou pro ostatní rostliny toxické, nemá přirozené škůdce a je proto schopen tvrořit velmi odolné monokultury, ze kterých vytlačí všechny ostatní rostliny. 
+
 [^3]: Kučera, M., Adolt, R.: [Národní inventarizace lesů v České republice - výsledky druhého cyklu 2011-2015](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf), tabulka na str. 139.
+
+[^30]: [Mapa potenciální přirozené vegetace České republiky](https://www.pladias.cz/download/vegetation). Tato mapa zachycuje typy vegetace, které by na přirozeném nebo člověkem pozměněném stanovišti existovaly v případě, že by člověk vegetaci neovlivňoval. 
 
 Biotičtí činitelné a kůrovci na borovici: https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf
