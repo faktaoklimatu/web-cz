@@ -46,17 +46,24 @@ Většina českých lesů sloužila hlavně k produkci dřeva a dlouho se pěsto
 
 ## Jak oslabuje les klimatická změna? 
 
-* **Vyšší průměrná teplota** Lesy, které jsou dnes dospělé, byly sázeny před 80-100 lety a během jejich života se klimatická změna začala silně projevovat. Smrkové lesy mají rády místa s průměrnou roční teplotou pod 6°C.   
-Zatímco kolem roku 1960 byly průměrné roční teploty na území Česka okolo 7°C, v posledních letech běžně přesahují 9°C. To znamená, že optimální místa pro pěstování smrků se s postupující klimatickou změnou posouvají výše. Zatímco v 60. letech byly optimální podmínky i v oblastech okolo 600 metrů nad mořem, nyní je najdeme ve výškách nad 900 metrů a s postupující klimatickou změnou budou postupovat ještě výše. 
+* **Vyšší průměrná teplota:** Lesy, které jsou dnes dospělé, byly sázeny před 80-100 lety a během jejich života se klimatická změna začala silně projevovat. V česku se za posledních 60 let zvýšila průměrná roční teplota o 2°C. Smrkové lesy mají rády místa s průměrnou roční teplotou pod 6°C.   
+Zatímco kolem roku 1960 byly průměrné roční teploty na území Česka okolo 7°C, v posledních letech běžně přesahují 9°C. To znamená, že optimální místa pro pěstování smrků se s postupující klimatickou změnou posouvají výše.[^40] Zatímco v 60. letech byly optimální podmínky i v oblastech okolo 600 metrů nad mořem, nyní je najdeme ve výškách nad 900 metrů a s postupující klimatickou změnou budou postupovat ještě výše. 
 
-Nárůst teplot, jakkoliv se může zdát malý, má dalekosáhlé důsledky. Vyšší teploty znamenají, že stromy svými listy a jehličím odpařují víc vody (a protože to souvisí s dýcháním rostlin, říká se tomu evapo-transpirace) Pokud není v půdě dostatek vodních zásob, stromy strádají. 
-
-
-Sucho
-
+* **Častější a delší sucho:** Klimatická změna znamená 4astější sucha ^50
 Výzkumy ukazují, že sucho, které nás postihlo v letech 2015 - 2020 bylo nejhorší za poslední 2000 let. (https://www.nature.com/articles/s41561-021-00698-0)  
 
 Klimatická změna způsobuje také častější a delší období sucha. To poslední, které nás postihlo v letech 2015 - 2019 se někdy označuje jako pětisetleté sucho, tedy nejhorší za posledních 500 let.  
+
+
+
+
+* **Vyšší odpar vody:** Vyšší teploty v letních dnech způsobují, že stromy svými listy a jehličím odpařují víc vody (a protože to souvisí s dýcháním rostlin, říká se tomu *evapo-transpirace*) Pokud není v takových dnech v půdě dostatek vodních zásob, stromy strádají. Zvyšující se průměrná teplota, delší vegetační sezona i častější a intenzivnější vlny veder tedy významně zesilují dopady sucha. 
+ 
+
+
+
+
+
 
 
 
@@ -108,5 +115,9 @@ V medicíně bývá otázka přičiny smrti složitá. Zatímco zdravý člověk
 [^3]: Kučera, M., Adolt, R.: [Národní inventarizace lesů v České republice - výsledky druhého cyklu 2011-2015](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf), tabulka na str. 139.
 
 [^30]: [Mapa potenciální přirozené vegetace České republiky](https://www.pladias.cz/download/vegetation). Tato mapa zachycuje typy vegetace, které by na přirozeném nebo člověkem pozměněném stanovišti existovaly v případě, že by člověk vegetaci neovlivňoval. 
+
+[^40]: Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá přibližně posunu asi o 300 m.   
+
+[^50]: https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf#page=23
 
 Biotičtí činitelné a kůrovci na borovici: https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf
