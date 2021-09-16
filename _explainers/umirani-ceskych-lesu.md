@@ -43,42 +43,20 @@ Většina českých lesů sloužila hlavně k produkci dřeva a dlouho se pěsto
  * **Stejnověké lesy:** hospodářské lesy obsahují stromy stejného věku. Byly většinou vysázeny ve stejném roce a pokud se mezi nimi třeba později vysemenily mladší stromy jiného druhu, lesníci se jich zbavili. Různověké lesy jsou výrazně odolnější - například mladé smrky se proti kůrovci dokáží ubránit mnohem lépe než staré, kůrovcové kalamity většinou přežijí a nedochází pak k plošnému rozpadu lesa a úplné ztrátě lesního mikroklimatu. Podobně si stromy různého stáří dokáží lépe poradit se suchem. Stejnověký les ale nic takového nedokáže a při napadení kůrovcem nebo po několika suchých letech umírají nejen jednotlivé stromy ale celý les, často v rozloze desítek hektarů.       
  * **Pěstování nahusto:**  stromy jsou vyživovány svou korunou s listy nebo jehličím a svými kořeny. Aby byly stromy zdravé potřebují pro své kořeny a korunu prostor, a tedy vhodné rozestupy. V hospodářských lesích jsou stromy pěstované nahusto. Z hospodářského hlediska to dává smysl: Stromy, které mezi sebou soutěží o světlo tak rostou do výšky a vznikají dlouhé rovné stromy bez suků. Důsledek ale je, že mají málo místa na své koruny a kořeny a tedy na svou výšku i méně živin. 
 
-
 ## Jak oslabuje les klimatická změna? 
 
 * **Vyšší průměrná teplota:** Lesy, které jsou dnes dospělé, byly sázeny před 80-100 lety a během jejich života se klimatická změna začala silně projevovat. V česku se za posledních 60 let zvýšila průměrná roční teplota o 2°C. Smrkové lesy mají rády místa s průměrnou roční teplotou pod 6°C.   
 Zatímco kolem roku 1960 byly průměrné roční teploty na území Česka okolo 7°C, v posledních letech běžně přesahují 9°C. To znamená, že optimální místa pro pěstování smrků se s postupující klimatickou změnou posouvají výše.[^40] Zatímco v 60. letech byly optimální podmínky i v oblastech okolo 600 metrů nad mořem, nyní je najdeme ve výškách nad 900 metrů a s postupující klimatickou změnou budou postupovat ještě výše. 
 
-* **Častější a delší sucho:** Klimatická změna znamená 4astější sucha ^50
-Výzkumy ukazují, že sucho, které nás postihlo v letech 2015 - 2020 bylo nejhorší za poslední 2000 let. (https://www.nature.com/articles/s41561-021-00698-0)  
-
-Klimatická změna způsobuje také častější a delší období sucha. To poslední, které nás postihlo v letech 2015 - 2019 se někdy označuje jako pětisetleté sucho, tedy nejhorší za posledních 500 let.  
-
-
-
+* **Častější a delší sucho:** Občasné období sucha je součástí přirozené variability klimatu, ale klimatická změna způsobuje sucha delší a častější[^50]. Sucho, které Česko postihlo v letech 2015-2020, které máme v čersvé paměti a stav českých lesů hodně ovlivnilo, bylo nejhorší za poslední 2000 let.[^51].   
+Menší množství vláhy v půdě ale není jen důsledkem menšího množství srážek. Vyšší teploty v zimě způsobují, že více prší a méně sněží, a případný sníh se udrží kratší dobu. Přitom jarní tání nahromaděného sněhu je zásadní pro doplňování vláhy v půdě. Lze tedy říci, že teplé zimy způsobují sušší jara. A dalším faktorem, který klimatická změna ovlivňuje, je rozložení srážek. Nicméně ubývá dní, kdy prší dlouho a lehce, což je typ dešťů, který půda dokáže dobře vstřebávat. Naopak přibývá silných dešťů kdy většina vody z půdy odteče. Průměrné roční srážky se sice z dlouhodobého pohledu významně nemění, ale mení se množství vody, která v půdě díky srážkám zůstane. 
 
 * **Vyšší odpar vody:** Vyšší teploty v letních dnech způsobují, že stromy svými listy a jehličím odpařují víc vody (a protože to souvisí s dýcháním rostlin, říká se tomu *evapo-transpirace*) Pokud není v takových dnech v půdě dostatek vodních zásob, stromy strádají. Zvyšující se průměrná teplota, delší vegetační sezona i častější a intenzivnější vlny veder tedy významně zesilují dopady sucha. 
  
+* **Lepší podmínky pro kůrovce:** Vyšší teploty v zimě způsobují, že zimu přežívá více kůrovců. Vyšší teploty v létě pak urychlují vývoj kůrovcových larviček a brouků, takže se během sezóny vyrojí více generací. Zatímco dříve se během roku narodily 1-2 generace kůrovců, v posledních letech jsou ve většině níže položených míst Česka běžné 3 generace.[^52] (více o kůrovcích níže) (Modlinger et al: Bark beetle)
 
 
-
-
-
-
-
-
-Vyšší teploty v zimě způsobují, že zimu přežívá více kůrovců. Vyšší teploty v létě pak urychlují vývoj kůrovcových larviček a brouků, takže se během sezóny vyrojí více generací. Zatímco dříve se během roku narodily 1-2 generace kůrovců, v posledních letech jsou ve většině níže položených míst Česka běžné 3 generace. (více o kůrovcích níže) (Modlinger et al: Bark beetle)
-
-
-
-
-## Jak velkou roli hraje který faktor? 
-Jak velkou roli tyto faktory hrají samozřejmě záleží na konkrétní lokalitě, ale obecně se odborníci shodují, že klimatická změna může za zhruba polovinu nárůstu škod a její role se bude dále zvyšovat (život s kůrovcem... str 11.) 
-
-
-
-
-## Jakou roli hraje vyčerpaná a překyselená půda? 
+## Jak oslabuje lesy vyčerpaná a překyselená půda? 
 
 Tak jako je pro člověka zásadní zdravá strava je pro zdraví lesa důležitá půda. Ta musí obsahovat správné množství živin, ale je potřeba aby měla vhodné pH. Různé druhy stromů mají rády různé půdní pH, ale v když je pro ně půda příliš kyselá, nebo příliš zásaditá, přestává se jim dařit: například břízy a borovice zvládají žít v kyselejších půdách, kde jasany a javory nepřežijí. Půda je ale v mnoha oblastech česka vyčerpaná a překyselená. Co k tomu vedlo? 
 
@@ -89,6 +67,11 @@ Kyselé deště a jejich dlouhodobé dopady. V letech 1960-1990 chrlily komíny 
 Další problémy s dusíkem. Součástí kyselých dešťů jsou i reaktivní formy dusíku (NOx, NH3-), které vznikají především při spalování v elektrárnách nebo benzínových motorech. Dusík v těchto sloučeninách působí jako hnojivo a nepřirozeně urychluje růst kmenů, zároveň ale způsobuje chřadnutí symbiotických kořenových hub, které stromy potřebují ke svému zdravému růstu. Funguje tedy podobně jako když by člověk jedl mnoho cukru ale žádné vitamíny.         
 
 Je dobré si uvědomit, že “les” jsou nejen kmeny, větve a listy, které vidíme nad zemí. Minimálně stejně duležité je, co se děje pod zemí: kořeny stromu získávají z půdy vodu i jednotlivé chemické prvky a k tomu jim pomáhají symbiotické houby. Okyselení půdy oslabuje kořenový systém, který pak nedokáže strom zásobit vodou v období sucha.    
+
+
+## Jak velkou roli hraje který faktor? 
+Jak velkou roli tyto faktory hrají samozřejmě záleží na konkrétní lokalitě, ale obecně se odborníci shodují, že klimatická změna může za zhruba polovinu nárůstu škod a její role se bude dále zvyšovat (život s kůrovcem... str 11.) 
+
 
 
 
@@ -105,7 +88,10 @@ V medicíně bývá otázka přičiny smrti složitá. Zatímco zdravý člověk
 [^1]: Rotter, P.: [Proč lesy ztrácí imunitu a co s tím dělat?](https://www.researchgate.net/publication/343059340_Proc_lesy_ztraci_imunitu_a_co_s_tim_delat), (2020)
 [^2]:  Hlásny, T., Krokene, P., Liebhold, et al. (2019) [Život s kůrovcem: Dopady, výhledy a řešení](https://efi.int/sites/default/files/files/publication-bank/2020/efi_fstp8_2019_cz.pdf), Od vědy ke strategii 8. Evropský lesnický institut. 
 
+[^4]: Hlásny, T., Zimová, S., Merganičová, K., Štěpánek, P., Modlinger, R., Turčáni, M.: [Devastating outbreak of bark beetles in the Czech Republic: Drivers, impacts, and management implications](https://pubag.nal.usda.gov/catalog/7314598), Forest ecology and management, 2021
+
 [^15]: [Jaký podkorní hmyz kromě lýkožrouta smrkového hostí jehličnany v Česku?](https://ekolist.cz/cz/publicistika/priroda/jaky-podkorni-hmyz-krome-lykozrouta-smrkoveho-hosti-jehlicnany-v-cesku), Ekolist.cz (2020)
+
 [^16]: [Atlas poškození dřevin: škůdci kmene a větví jehličnanů](http://atlasposkozeni.mendelu.cz/kategorie/137-skudci_kmene_a_vetvi_jehlicnanu.html)
 
 [^22]: V knížce *Les v hodině dvanácté* (Richard Višňák, 2009) popisuje autor podrobněji malý a velký cyklus obnovy lesa a poznamenává, že v určitých podmínkách je plošný rozpad lesa součástí přirozeného cyklu. Jde hlavně o jehličnaté lesy severské tajgy, ve které požáry nebo vichřice způsobují umírání starého lesa ve velkých oblastech. Uvolněné plochy pak nejdříve obsadí tzv. pionýrské dřeviny - třeba břízy nebo jeřáby. České lesy by se ale v přirozeném stavu obnovovaly postupně a plošný rozpad lesa vzniká v českých podmínkách hlavně vlivem hospodaření a vysazování stejnověkých monokultur (většinou smrkových)   
@@ -118,6 +104,11 @@ V medicíně bývá otázka přičiny smrti složitá. Zatímco zdravý člověk
 
 [^40]: Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá přibližně posunu asi o 300 m.   
 
-[^50]: https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf#page=23
+[^50]: Na obecné úrovni lze řici, že sucho, které by se před sto lety vyskytovalo jen asi jednou za 10 let můžeme nyní, když je planeta o 1°C teplejší očekávat zhruba dvakrát za deset let. Lokální riziko sucha závisí na mnoha faktorech, v některých oblastech se riziko sucha zvyšuje mnohem více.  - podrobněji viz obrázek SPM.6 v [IPCC, 2021: Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis.](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf#page=24) Contribution of
+Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change
+
+[^51]: Büntgen, U., Urban, O., Krusic, P.J. et al.[Recent European drought extremes beyond Common Era background variability](https://www.nature.com/articles/s41561-021-00698-0). Nat. Geosci. 14, 190–196 (2021). [https://doi.org/10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0) 
+
+[^52]: [Mapa výskytu lýkožrouta smrkového](https://www.klimatickazmena.cz/cs/?l=64), Czechglobe.
 
 Biotičtí činitelné a kůrovci na borovici: https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf
