@@ -1,3 +1,19 @@
+- date: "??.??.2021" #FIXME
+  title: "Cesta k nízkouhlíkové společnosti"
+  summary: "Hledáme cestu k dosažení stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů. Jakou roli v tom mohou sehrát jednotlivé části společnosti? Klimatická změna je pro naši civilizaci výzvou – _\"budeme určitě žít jinak, ale nemusíme se mít hůř\"_ – jaká je [Cesta k nízkouhlíkové společnosti](/infografiky/nizkouhlikova-spolecnost)?"
+
+- date: "??.??.2021" #FIXME
+  title: "Co jsou zprávy IPCC a jak vznikají?"
+  summary: "Zprávy IPCC jsou podrobnými výtahy a posouzeními přezkoumané a publikované vědecké literatury, která se zabývá změnami klimatu. Jsou výsledkem spolupráce předních světových klimatologů s vládními experty, a poskytují tak informace, jež jsou jak správné z vědeckého hlediska, tak srozumitelné. Na otázky _Jak probíhá příprava zprávy?_, _Jak vznikají zástupci zemí?_, _Co zpráva obsahuje?_, _Jak souvisí s letošní konferencí v Glasgow?_ a další odpovídá nový explainer – [Co jsou zprávy IPCC a jak vznikají?](/explainery/zpravy-ipcc)"
+
+- date: "??.??.2021" #FIXME
+  title: "Závislost oteplení na budoucích emisích"
+  summary: "Jak závisí budoucí oteplení na množství vypuštěných emisí CO<sub>2</sub>? Jaká je pravděpodobnost udržení oteplení pod žádoucí hranicí? Odpovědi můžete najít v infografice [Závislost oteplení na budoucích emisích CO<sub>2</sub>](/infografiky/souvislost-emise-otepleni)"
+
+- date: "??.??.2021" #FIXME
+  title: "Koncept UHLÍKOVÝ ROZPOČET a detaily pro ČR"
+  summary: "Globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení – nejde totiž ani tak o to, KDY vypustíme poslední tunu, jako spíše o to, jak rychlé bude naše postupné snižování – [Koncept: Uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Pokud by ČR měla nést férový podíl na snižování emisí skleníkových plynů, měla by pro naplnění Pařížské dohody do roku 2030 snížit emise o 84 % oproti roku 1990 (resp. o 75 % oproti roku 2018) – [Uhlíkový rozpočet ČR](/infografiky/uhlikovy-rozpocet-cr)."
+
 - date: 2021-06-21
   title: "Potenciál obnovitelných zdrojů energie v ČR"
   summary: "Dvě nové infografiky se věnují [potenciálu větrné energie v ČR](/infografiky/potencial-vetrne-energie-cr) a [potenciálu solární energie v ČR na střechách a fasádách](/infografiky/potencial-solarni-energie-cr-strechy). Shrnují výsledky studií zpracovaných Ústavem fyziky atmosféry AV ČR a společností EGÚ Brno."
@@ -48,7 +64,7 @@
 
 - date: 2021-02-20
   title: "První dva explainery"
-  summary: | 
+  summary: |
     Zavedli jsme nový druh stránek, tzv. _explainery_ – jde o relativně krátký text, který odpovídá na jednu konkrétní otázku spojenou s obsáhlejším tématem (v tomto případě klimatickou změnou) a vysvětluje ji v širších souvislostech. Zde jsou první dva:
     * _"Kdyby byl cementárenský průmysl státem, byly by jeho emise třetí největší na světě..."_ – více vizte explainer [Jakou roli hrají emise CO<sub>2</sub> z výroby cementu v klimatické změně?](/explainery/emise-vyroba-cementu).
     * _"V dlouhodobém měřítku lidské dýchání nepřispívá ke zvyšování koncentrací CO<sub>2</sub> v atmosféře..."_ – více vizte explainer [Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře?](/explainery/emise-dychani).
@@ -125,21 +141,21 @@
 - date: 2020-05-31
   title: "Nová sekce Energetika"
   summary: |
-    Zpracovali jsme několik grafik, které zobrazují data o výrobě a spotřebě elektřiny: 
+    Zpracovali jsme několik grafik, které zobrazují data o výrobě a spotřebě elektřiny:
     * [Uhelný phase-out ve státech EU](/infografiky/uhelny-phaseout-eu)
     * [Výroba elektřiny ve světových regionech](/infografiky/elektrina-svet)
     * [Výroba elektřiny na osobu ve světových regionech](/infografiky/elektrina-na-osobu-svet)
     * [Výroba elektřiny na osobu ve státech EU ](/infografiky/elektrina-na-osobu-eu)
-    
-    a studii [Transformace energetiky do 2050](/studie/2020-transformace-energetiky-do-2050) od Mezinárodní agentury pro obnovitelnou energii. 
+
+    a studii [Transformace energetiky do 2050](/studie/2020-transformace-energetiky-do-2050) od Mezinárodní agentury pro obnovitelnou energii.
 
 - date: 2020-05-30
   summary: "Protože množství grafik, studií a datasetů přesáhlo čtyřicítku, vytvořili jsme na stránkách vyhledávání podle štítků, které dělí grafiky na kategorie _budoucnost, ekonomika, emise, energetika, klima_ a _opatření_."
 
 - date: 2020-05-19
-  title: "Globální zpráva o elektřině a dvě nové grafiky" 
+  title: "Globální zpráva o elektřině a dvě nové grafiky"
   summary: |
-    * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020-globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20 let. 
+    * Doplnili jsme výtah ze studie [Globální zpráva o elektřině 2020](/studie/2020-globalni-zprava-o-elektrine), která obsahuje data a analýzy výroby elektřiny v jednotlivých zemích světa za posledních 20 let.
     * Nové grafiky: [Emisní intenzita](/infografiky/emisni-intenzity) a [Tropické a ledové dny](/infografiky/tropicke-dny-brno)
 
 - date: 2020-04-17
@@ -177,7 +193,7 @@
 - date: 2020-01-19
   title: "Vícedenní klimaton, Twitter, nové infografiky"
   summary: |
-    Proběhl první vícedenní <glossary id="hackathon">hackathon</glossary> jádra týmu - během víkendu jsme udělali spoustu práce, mj. např.:    
+    Proběhl první vícedenní <glossary id="hackathon">hackathon</glossary> jádra týmu - během víkendu jsme udělali spoustu práce, mj. např.:
     * Od teď nás můžete [sledovat i na Twitteru](https://twitter.com/faktaoklimatu).
     * Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele najdete v infografice [Světové emise skleníkových plynů](/infografiky/emise-svet).
     * Srovnání vybraných států a světových regionů podle ročních emisí skleníkových plynů na obyvatele doplněné o velikost populace a celkové emise najdete v infografice [Emise světových regionů přepočtené na osobu](/infografiky/emise-svet-na-osobu).
@@ -195,7 +211,7 @@
 - date: 2019-11-04
   title: "Proč je oteplení o více než 1,5°C problém?"
   summary: "Nová sekce *Scénáře budoucího vývoje, rizika a dopady* a v ní graficky zpracovaná rešerše článků o [bodech zlomu v ekosystémech](infografiky/body-zlomu-1), [bodech zlomu v kryosféře](infografiky/body-zlomu-2), a [bodech zlomu v atmosférických a oceánských prouděních](infografiky/body-zlomu-3)."
-    
+
 - date: 2019-10-26
   title: "Světové emise a další zdroje a odkazy"
   summary: |
@@ -211,7 +227,7 @@
 
 - date: 2019-10-12
   summary: "Dokončeno řešení problémů se započtením emisí letecké dopravy. Ve všech infografikách, kde je to relevantní, zobrazujeme emise včetně letecké dopravy."
-  
+
 - date: 2019-10-02
   summary: "Významně zpřehledněny některé naše datasety (viz např. zde pro [Emise ČR](https://docs.google.com/spreadsheets/d/1y52VXoiW7OmzT1sm1UQeT0XhZTuKge1962A4pjFmqzg/edit#gid=0))."
 
