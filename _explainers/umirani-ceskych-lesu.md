@@ -22,7 +22,11 @@ Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká
 ## Vyjasnění pojmů
 
 ### Co myslíme slovem les?
-s - PUPFL nebo to co vypadá jako les?
+Slovem *Les* můžeme označovat oblast v katastru nemovitostí, která je určená k plnění funkce lesa. (PUPFL - plocha určená k plnění funkce lesa) Plocha v katastru nemovitostí nemůže umřít... 
+
+Les může také znamenat místo, které má mikroklima lesa, tedy kde máte nad hlavou koruny stromů a v létě přijemý chládek. Les podle definice FAO... Biologové se také někdy vymezují proti sousloví umírání lesů s tím, že přece umírají jen smrkové plantáže... 
+
+Někde mezi tím jsou oblasti, kde jsou stromy zatím ještě mladé a nízké - tedy zatím netvoří ono lesní mikroklima - ale až dospějí, tak je tvrořit budeou... 
 
 ### Co znamená umírání
 umírání? Plošný rozpad? 
@@ -84,6 +88,25 @@ Jak velkou roli tyto faktory hrají samozřejmě záleží na konkrétní lokali
 
 ## A co kůrovec?
 
+### Co jsou kůrovci?
+
+Kůrovci představují různorodou skupinu hmyzu vyskytující se po celém světě. Většina druhů žije jen v mrtvých nebo umírajících stromech a nejsou pro zdraví lesa nijak ohrožující. Existuje však několik málo druhů - mezi nimi náš *lýkožrout smrkový* - které sice většinou žijí pod kůrou oslabených či umírájících stromů, ale za příznivých podmínek se dokážou mnohonásobně rozmnožit a ve velkých počtech pak zabíjí i zdravé stromy. Schopnost usmrtit i zdravý strom přitom spočívá v tom, že brouci dokáží koordinovat svůj útok chemickou signalizací, takzvanými agregačními feromony. Přesný mechanismus této koordinace je zatím předmětem zkoumání. 
+
+
+### Jak kůrovci zabíjí strom? 
+
+Kůrovci vyhlodávájí komůrky ve vnitřních vrstvách kůry, kde se rozmnožuje a klade vajíčka. Larvičky pak vyhlodávají do lýka chodbičky, postupně v nich dospívají a po několika týdnech jako nová generace brouků vylétají a hledají místo k přezimování, nebo ke kolonizaci dalších stromů. 
+Stromy se napadení brání například produkcí terpenů a jiných látek, které jsou pro brouky toxické. Proto brouci většinou obsazují jen stromy vyvrácené větrem nebo oslabené suchem či jinými faktory, a které se nedokážou dostatečně bránit. Kolonizace stromu velkým množstvím brouků je pak pro strom smrtící, protože chodbičky v lýku přeruší transport živin ke kořenům stromu. 
+
+Když má kůrovec optimální podmínky, může se během jedné generace zvýšit počet jedinců patnáctkrát [^2]. V případě dvou generací to představuje teoreticky 225-násobný a v případě tří generací 3375-násobný nárůst. Pokud je tedy dost oslabených stromů a dost teplo, může k přemnožení a v takovém příapdě začnou brouci koordinovanými útoky napadat i zdravé stromy. 
+
+### Jaké faktory způsobují kůrovcové kalamity? 
+
+Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou krátké a jsou přerušovány dlouhými obdobími v průběhu kterých jsou počty brouků jen malé. Kalamita, kterou zažívají české lesy od roku 2016, je tedy vyjímečná nejen rozsahem, ale i délkou svého trvání. Co to způsobilo?      
+
+* **Dostupnost oslabených stromů:** Ohniskem kůrovcové kalamity bývaly dříve polomy (tedy stromy polámané po vichřici)
+
+* **Vyšší teploty:**
 
 ## Zdroje
 
