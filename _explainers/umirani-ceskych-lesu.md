@@ -22,14 +22,20 @@ Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká
 ## Vyjasnění pojmů
 
 ### Co myslíme slovem les?
-Slovem *Les* můžeme označovat oblast v katastru nemovitostí, která je určená k plnění funkce lesa. (PUPFL - plocha určená k plnění funkce lesa) Plocha v katastru nemovitostí nemůže umřít... 
 
-Les může také znamenat místo, které má mikroklima lesa, tedy kde máte nad hlavou koruny stromů a v létě přijemý chládek. Les podle definice FAO... Biologové se také někdy vymezují proti sousloví umírání lesů s tím, že přece umírají jen smrkové plantáže... 
+- Lesníci vidi les jako rostoucí zásobu dříví, biologové se zajímají o všechny rostliny a živočichy, kterým les poskytuje domov, turista hledá v lese stín nebo houby a úředník se dívá na plochy plnící funkci lesa v katastru nemovitostí... . ČSÚ považuje za lesy oblast v katastru nemovitostí, která je určená k plnění funkce lesa. (PUPFL - plocha určená k plnění funkce lesa). V NILu (národní inventarizaci lesů) se ale provádí terénní šetření a NIL tedy eviduje jako les všechno, co jako les vypadá (fao) bez ohledu na to, jestli je na pozemku PUPFL KN.  
 
+ - ... Les může také znamenat místo, které má mikroklima lesa, tedy kde máte nad hlavou koruny stromů, v létě přijemý chládek. Takové místo vytváří svůj vlasntí ekosystém...  Les podle definice FAO[^5]... 
 Někde mezi tím jsou oblasti, kde jsou stromy zatím ještě mladé a nízké - tedy zatím netvoří ono lesní mikroklima - ale až dospějí, tak je tvrořit budeou... 
+B
+iologové se také někdy vymezují proti sousloví umírání lesů s tím, že přece umírají jen smrkové plantáže... (bo smrková plantáž nemá podrost a naní to moc ekosystém...)
+
+- **Les pro nás = vysoký vzrostlý vytvářející svoje mikroklima...  nebo takový, který v budoucnu vysoký a vzrostlý bude. podle definice FAO[^5]**
 
 ### Co znamená umírání
-umírání? Plošný rozpad? 
+
+- Les podle PUPFL nemůže "umřít". Lesník musí podle zákona holinu osázet, tedy technicky řečeno, většina míst kde umřel vysoký vzrostlý les je nyní osázena malými stromky... ty ale netvoří mikroklima (a je otázka, zda přežijí třeba okusování srnčí) 
+Tedy když mluvíme o umírání, máme na mysli plošný rozpad lesa... viz níže...
 
 ### Umírají stromy nebo lesy?
 
@@ -38,13 +44,7 @@ Možná se to zdá jako zbytečné slovíčkaření, ale je důležité. S troch
 Běžný český hospodářský les je většinou stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná plantáž, která se jednou za sto let vytěží. Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a snadno stane, že stromy umírají ve velkých plochách - říká se tomu *plošný rozpad lesa*. Když pak lesníci stromy vytěží, vznikne holina, která má zcela jiné mikroklima než les a mladým stromkům se na ní roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. 
 
 
-% include figure.html
-    name="zdravy-oslabeny-mrtvy.jpg"
-    caption=""
-    alt=""
-    source-text=""
-    source-url=""
-%}
+
 
 ## Jak les oslabuje nevhodné hospodaření? 
 
@@ -106,9 +106,12 @@ Když má kůrovec optimální podmínky, může se během jedné generace zvý�
 
 Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou krátké a jsou přerušovány dlouhými obdobími v průběhu kterých jsou počty brouků jen malé. Kalamita, kterou zažívají české lesy od roku 2016, je tedy vyjímečná nejen rozsahem, ale i délkou svého trvání. Co to způsobilo?      
 
-* **Dostupnost oslabených stromů:** Ohniskem kůrovcové kalamity bývaly dříve polomy (tedy stromy polámané po vichřici)
+* **Dostupnost oslabených stromů:** Ohniskem kůrovcové kalamity bývaly dříve polomy (tedy stromy polámané po vichřici)... nyní, zejména po suchu 2016-2019 je v lesích mnoho stromů oslabených ( také z dalších výše uvedených důvodů). Kůrovec má tedy dostatek oslabených stromů, které se mu nedokážou efektivně bránit a může se v nich množit
 
-* **Vyšší teploty:**
+* **Vyšší teploty:** ... vedou k rychlejšímu vývoji brouků... tedy za jednu sezónu vytváří kůrovec více generací... ...vyšší teploty v zimě zase umožňují více kůrovcům přežít...
+
+Co s tím můžeme dělat? (zastavit klimatickou změnu!) ... změnit hospodaření... klimatická změna totiž nevyhnutelně bude zlepšovat podmínky kůrovcům a bude působit jako silný stressor pro zbývající stromy, tedy bude je dále oslabovat... současná kůrovcová kalamita nejspíš behem několika let odezní a mnoho lesů, kam jsme dříve chodili nebude už stát a mnoho dalších lesů přežije... ale z dlouhodobého pohledu se podmínky mění tak, že pěstovat neodolné monokultury prostě nebude možné... 
+
 
 ## Zdroje
 
@@ -118,6 +121,8 @@ Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou kr
 [^3]: Kučera, M., Adolt, R.: [Národní inventarizace lesů v České republice - výsledky druhého cyklu 2011-2015](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf), tabulka na str. 139.
 
 [^4]: Hlásny, T., Zimová, S., Merganičová, K., Štěpánek, P., Modlinger, R., Turčáni, M.: [Devastating outbreak of bark beetles in the Czech Republic: Drivers, impacts, and management implications](https://pubag.nal.usda.gov/catalog/7314598), Forest ecology and management, 2021
+
+[^5]: [FAO](http://www.fao.org/home/en/) (*Food and Agriculture organization of the United Nations*), používá následující definici: **Les** představují pozemky s plochou větší než 0,5 ha s celkovým zápojem stromů o výšce alespoň 5m dosahujícím 10 %. Dále jako les označuje pozemky se stromy schopnými dosáhnout výšky 5 m a zápoje 10 % na daném stanovišt. Do kategorie les se neřadí porosty s šířkou menší než 20 m (liniové porosty) a pozemky s převážně zemědělským nebo městským využitím. Dále do kategorie les nepatří větší vodní plochy a větší zpevněné cesty. Do kategorie les se však řadí pozemky, které jsou dočasně odlesněné (holé seče, kalamitní holiny, požářiště apod.) tedy pozemky, u nichž existuje předpoklad budoucího dosažení požadovaných 10 % zápoje stromů s výškou alespoň 5m.  
 
 [^15]: [Jaký podkorní hmyz kromě lýkožrouta smrkového hostí jehličnany v Česku?](https://ekolist.cz/cz/publicistika/priroda/jaky-podkorni-hmyz-krome-lykozrouta-smrkoveho-hosti-jehlicnany-v-cesku), Ekolist.cz (2020)
 
