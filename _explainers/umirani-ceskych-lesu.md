@@ -17,7 +17,7 @@ perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde jso
 
 ## Které lesy v Česku umírají a co je hlavní příčina jejich umírání? 
 
-Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hrají různé druhy kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy jsou schopny ubránit. Musíme se proto ptát co způsobilo, že je imunita stromů oslabená? Ty hlavní oslabující faktory jsou v česku tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2] a v tomto explaineru se podíváme podrobněji na působení jednotlivých oslabujících faktorů i na dynamiku kůrovcových kalamit.
+Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hrají různé druhy kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy jsou schopny ubránit. Musíme se proto ptát co způsobilo, že je imunita stromů oslabená? Ty hlavní oslabující faktory jsou v česku tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2],[^4] a v tomto explaineru se podíváme podrobněji na působení jednotlivých oslabujících faktorů i na dynamiku kůrovcových kalamit.
 
 ## Vyjasnění pojmů
 
