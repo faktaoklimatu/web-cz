@@ -84,7 +84,7 @@ Je dobré si uvědomit, že “les” jsou nejen kmeny, větve a listy, které v
 ?? mapa okyslení půdy? 
 
 
-## Lze říci, jak velkou roli který z těchto faktorů hraje? 
+## Lze říci, jak velkou roli který faktor hraje? 
 Jak velkou roli tyto faktory hrají samozřejmě záleží na konkrétní lokalitě, ale obecně se odborníci shodují, že klimatická změna může za zhruba polovinu nárůstu škod a její role se bude dále zvyšovat (život s kůrovcem... str 11.) 
 
 ## A co kůrovec?
