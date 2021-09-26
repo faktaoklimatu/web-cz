@@ -77,37 +77,36 @@ Půda je pro zdraví lesa stejně zásadní jako pro člověka zdravá strava. M
 
 * **Kyselé deště a jejich dlouhodobé dopady:** V letech 1960–1990 chrlily komíny elektráren v severních Čechách obrovská množství oxidu siřičitého, který vznikal při spalování hnědého uhlí. Tyto emise pak ve formě kyselých dešťů padaly zpět na zem a způsobily smrt mnoha horských lesů. Zároveň však přinesly i méně viditelnou změnu v podobě dlouhodobého okyselení lesních půd. Okolo roku 1990 prošla většina elektráren odsířením, což lesům určitě pomohlo, nicméně i dnes se do půdy stále dostává poměrně hodně – z lokálních topenišť a jiných zdrojů. Například ve Slavkovském lese klesla roční depozice síry z 35 kg/ha v devadesátých letech na asi 10 kg/ha v roce 2004, což je sice čtyřnásobný pokles, ale stále jde o významné množství[^24]. 
 
-* **Reaktivní dusík:** Součástí kyselých dešťů jsou i reaktivní formy dusíku (NOx, NH3-), které vznikají především při spalování v elektrárnách nebo benzínových motorech. Dusík v těchto sloučeninách působí jako hnojivo a nepřirozeně urychluje růst kmenů, které jsou pak křehké[^25]. Zároveň ale způsobuje chřadnutí symbiotických kořenových hub, jež stromy ke svému zdravému růstu potřebují. Je to tedy podobný efekt, jako kdyby člověk jedl hodně cukru, ale žádné vitamíny.         
+* **Reaktivní dusík:** Součástí kyselých dešťů jsou i reaktivní formy dusíku (NOx, NH3-), které vznikají především při spalování v elektrárnách nebo benzínových motorech. Dusík v těchto sloučeninách působí v půdě jako hnojivo a nepřirozeně urychluje růst kmenů, které jsou pak křehké[^25]. Zároveň ale způsobuje také chřadnutí symbiotických kořenových hub, jež stromy ke svému zdravému růstu potřebují. Je to tedy podobný efekt, jako kdyby člověk jedl hodně cukru, ale žádné vitamíny a minerály.         
 
-Je dobré si uvědomit, že “les” jsou nejen kmeny, větve a listy, které vidíme nad zemí. Minimálně stejně duležité je, co se děje pod zemí: kořeny stromu získávají z půdy vodu i jednotlivé chemické prvky a k tomu jim pomáhají symbiotické houby. Okyselení půdy oslabuje kořenový systém, který pak například nedokáže strom zásobit vodou v období sucha.    
+Když tedy mluvíme o lese, je třeba mít na paměti, že les nejsou jen kmeny, větve a listy, které vidíme nad zemí. Minimálně stejně zásadní jsou neviditelné procesy pod zemí: kořeny stromů získávají z půdy vodu i důležité chemické prvky a k tomu jim pomáhají symbiotické houby, jež jsou na složení půdy a její pH velmi citlivé. Překyselená půda kořenový systém oslabuje a ten pak není schopen v období sucha strom dostatečně zásobit vodou.    
 
-?? mapa okyslení půdy? 
+?? mapa okyselení půdy? 
 
 
 ## Lze říci, jak velkou roli který faktor hraje? 
-Jak velkou roli tyto faktory hrají samozřejmě záleží na konkrétní lokalitě, ale obecně se odborníci shodují, že klimatická změna může za zhruba polovinu nárůstu škod a její role se bude dále zvyšovat (život s kůrovcem... str 11.) 
+Vždy samozřejmě záleží na konkrétní lokalitě. Obecně se však odborníci shodují, že klimatická změna může za zhruba polovinu nárůstu škod v lesích a její podíl se bude dále zvyšovat (život s kůrovcem... str 11.) 
 
 ## A co kůrovec?
 
 ### Co jsou kůrovci?
 
-Kůrovci představují různorodou skupinu hmyzu vyskytující se po celém světě. Většina druhů žije jen v mrtvých nebo umírajících stromech a nejsou pro zdraví lesa nijak ohrožující. Existuje však několik málo druhů - mezi nimi náš *lýkožrout smrkový* - které sice většinou žijí pod kůrou oslabených či umírájících stromů, ale za příznivých podmínek se dokážou mnohonásobně rozmnožit a ve velkých počtech pak zabíjí i zdravé stromy. Schopnost usmrtit i zdravý strom přitom spočívá v tom, že brouci dokáží koordinovat svůj útok chemickou signalizací, takzvanými agregačními feromony. Přesný mechanismus této koordinace je zatím předmětem zkoumání. 
+Kůrovci představují velmi různorodou skupinu hmyzu vyskytující se po celém světě. Většina druhů žije jen v mrtvých nebo umírajících stromech a nejsou pro zdraví lesa nijak ohrožující. Existuje však několik málo druhů (mezi nimi i náš *lýkožrout smrkový*), které sice většinou žijí pod kůrou oslabených či umírajících stromů, nicméně za příznivých podmínek se dokážou mnohonásobně rozmnožit a ve velkých počtech pak zabíjejí i zdravé stromy. Schopnost usmrtit i zdravý strom přitom spočívá v tom, že brouci jsou schopni koordinovat svůj útok chemickou signalizací, takzvanými agregačními feromony. Přesný mechanismus této koordinace je zatím předmětem zkoumání. 
 
 
-### Jak kůrovci zabíjí strom? 
+### Jak kůrovci strom zabíjejí? 
 
-Kůrovci vyhlodávájí komůrky ve vnitřních vrstvách kůry, kde se rozmnožuje a klade vajíčka. Larvičky pak vyhlodávají do lýka chodbičky, postupně v nich dospívají a po několika týdnech jako nová generace brouků vylétají a hledají místo k přezimování, nebo ke kolonizaci dalších stromů. 
-Stromy se napadení brání například produkcí terpenů a jiných látek, které jsou pro brouky toxické. Proto brouci většinou obsazují jen stromy vyvrácené větrem nebo oslabené suchem či jinými faktory, a které se nedokážou dostatečně bránit. Kolonizace stromu velkým množstvím brouků je pak pro strom smrtící, protože chodbičky v lýku přeruší transport živin ke kořenům stromu. 
+Brouci vyhlodávají komůrky ve vnitřních vrstvách kůry, kde se rozmnožují a kladou vajíčka. Z nich vyhlíhnuté larvičky se živí lýkem, které je pro strom klíčové, neboť mu umožňuje transportovat vodu a živiny – bez něj strom postupně chřadne a umírá. Po několika týdnech larvy dospějí a jako nová generace brouků vylétají a hledají místo k přezimování nebo ke kolonizaci dalších stromů. Zdravé stromy se napadení brání, například produkcí terpenů a dalších látek, jež jsou pro brouky toxické. Proto brouci zpravidla obsazují jen stromy vyvrácené větrem nebo oslabené suchem či jinými faktory, neboť ty se nedovedou dostatečně bránit. Kolonizace stromu velkým množstvím brouků je pak pro strom smrtící. 
 
-Když má kůrovec optimální podmínky, může se během jedné generace zvýšit počet jedinců patnáctkrát [^2]. V případě dvou generací to představuje teoreticky 225-násobný a v případě tří generací 3375-násobný nárůst. Pokud je tedy dost oslabených stromů a dost teplo, může k přemnožení a v takovém příapdě začnou brouci koordinovanými útoky napadat i zdravé stromy. 
+Když má kůrovec optimální podmínky, může se během jedné generace zvýšit počet jedinců patnáctkrát [^2]. V případě dvou generací to představuje teoreticky 225násobný nárůst (u tří generací dokonce 3375násobný). Pokud tedy najde dostatek oslabených stromů a je dost teplo, může dojít k přemnožení a v takovém příapdě začnou brouci koordinovanými útoky napadat i zdravé stromy. 
 
-### Jaké faktory způsobují kůrovcové kalamity? 
+### Čím jsou způsobeny kůrovcové kalamity? 
 
-Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou krátké a jsou přerušovány dlouhými obdobími v průběhu kterých jsou počty brouků jen malé. Kalamita, kterou zažívají české lesy od roku 2016, je tedy vyjímečná nejen rozsahem, ale i délkou svého trvání. Co to způsobilo?      
+Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou krátké a jsou přerušovány dlouhými obdobími, během nichž jsou počty brouků jen malé. Ve srovnání s tím je kalamita, kterou zažívají české lesy od roku 2016, výjimečná jak svým rozsahem, tak i délkou trvání. Co to způsobilo?      
 
-* **Dostupnost oslabených stromů:** Ohniskem kůrovcové kalamity bývaly dříve polomy (tedy stromy polámané po vichřici)... nyní, zejména po suchu 2016-2019 je v lesích mnoho stromů oslabených ( také z dalších výše uvedených důvodů). Kůrovec má tedy dostatek oslabených stromů, které se mu nedokážou efektivně bránit a může se v nich množit
+* **Dostupnost oslabených stromů:** Ohniskem kůrovcové kalamity bývaly dříve polomy, tedy stromy polámané po vichřici. V současné době, a zejména pak po suchých letech 2016–2019, je v lesích již mnoho stromů oslabených (také z dalších výše uvedených důvodů), které se nedokážou broukům efektivně bránit a ti se v nich mohou rychle množit.
 
-* **Vyšší teploty:** ... vedou k rychlejšímu vývoji brouků... tedy za jednu sezónu vytváří kůrovec více generací... ...vyšší teploty v zimě zase umožňují více kůrovcům přežít...
+* **Vyšší teploty:** Vyšší letní teploty vedou k rychlejšímu vývoji a častější reprodukci brouků (za jednu sezónu se narodí více generací), vyšší teploty v zimě zase umožňují více jedincům přežít.
 
 Co s tím můžeme dělat? (zastavit klimatickou změnu!) ... změnit hospodaření... klimatická změna totiž nevyhnutelně bude zlepšovat podmínky kůrovcům a bude působit jako silný stressor pro zbývající stromy, tedy bude je dále oslabovat... současná kůrovcová kalamita nejspíš behem několika let odezní a mnoho lesů, kam jsme dříve chodili nebude už stát a mnoho dalších lesů přežije... ale z dlouhodobého pohledu se podmínky mění tak, že pěstovat neodolné monokultury prostě nebude možné... 
 
