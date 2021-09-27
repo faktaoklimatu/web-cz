@@ -12,12 +12,12 @@ cover-source-license: "??"
 cover-source-license-url: ""
 cover-source-text: "Placeholder - not final"
 cover-source-url: "https://pxhere.com/cs/photo/1088576"
-perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde jsou místo vzrostlého lesa rozlehlé holiny, jinde zůstávají kmeny mrtvých smrků či borovic trčet k nebi. Co způsobuje umírání lesů? Jakou roli v tom hraje klimatická změna a jakou kůrovec? A kolik lesů zůstává zdravých?"
+perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde najdeme místo vzrostlého lesa jen rozlehlé holiny, jinde dosud kmeny mrtvých smrků či borovic trčí smutně k nebi. Co se to s našimi lesy děje? Jakou roli v tom hraje kůrovec, jakou klimatická změna a co další faktory? A co je potřeba dělat, pokud chceme tento neblahý trend zastavit?"
 ---
 
-## Které lesy v Česku umírají a co je hlavní příčina jejich umírání? 
+## Které lesy v Česku umírají a co je hlavní příčinou? 
 
-Umírání lesů ve velkých plochách, neboli *plošný rozpad lesa*, se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hrají různé druhy kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy jsou schopny ubránit. Musíme se proto ptát co způsobilo, že je imunita stromů oslabená? Ty hlavní oslabující faktory jsou v česku tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2],[^4] a v tomto explaineru se podíváme podrobněji na působení jednotlivých oslabujících faktorů i na dynamiku kůrovcových kalamit.
+Umírání lesů ve velkých plochách neboli *plošný rozpad lesa* se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hraje několik druhů kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy dokáží ubránit. Musíme se proto ptát, co tak výrazně snížilo imunitu stromů a umožňuje kůrovci páchat tak velké škody. Hlavní oslabující faktory jsou pro lesy v ČR tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2],[^4]. V tomto explaineru se na každý z nich podíváme podrobněji, osvětlíme si dynamiku kůrovcových kalamit a popíšeme nejdůležitější kroky, které je třeba udělat, abychom jednou mohli opět chodit do zdravého lesa, kde je nám dobře.
 
 ## Vyjasnění pojmů
 
@@ -42,7 +42,6 @@ Tedy když mluvíme o umírání, máme na mysli plošný rozpad lesa... viz ní
 Možná se to zdá jako zbytečné slovíčkaření, ale je důležité. S trochou nadsázky by se totiž dalo říct, že **přírodní lesy neumírají**: čas od času umřou jednotlivé stromy, ale jejich místo je brzy obsazeno mladými stromy, které v podrostu čekají, až se pro ně uvolní místo. Jinak řečeno, přírodní nebo přírodě blízký les je v žije v neustálé obnově a zmlazování[^22] a zachovává si svoje mikroklima. Takový přírodě blízký les obsahuje různě staré stromy (říkáme mu různověký) a je pestrý i co se týká druhů stromů a díky tomu může dobře zvládat výkyvy počasí nebo odolávat škůdcům. **Přírodních nebo přírodě blízkých lesů je v Česku asi jen desetina**[^3], najdete je zpravidla ve vyšších polohách na Šumavě a dalších horách.    
 
 Běžný český hospodářský les je většinou stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná plantáž, která se jednou za sto let vytěží. Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a snadno stane, že stromy umírají ve velkých plochách - říká se tomu *plošný rozpad lesa*. Když pak lesníci stromy vytěží, vznikne holina, která má zcela jiné mikroklima než les a mladým stromkům se na ní roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. 
-
 
 
 
@@ -93,7 +92,6 @@ Vždy samozřejmě záleží na konkrétní lokalitě. Obecně se však odborní
 
 Kůrovci představují velmi různorodou skupinu hmyzu vyskytující se po celém světě. Většina druhů žije jen v mrtvých nebo umírajících stromech a nejsou pro zdraví lesa nijak ohrožující. Existuje však několik málo druhů (mezi nimi i náš *lýkožrout smrkový*), které sice většinou žijí pod kůrou oslabených či umírajících stromů, nicméně za příznivých podmínek se dokážou mnohonásobně rozmnožit a ve velkých počtech pak zabíjejí i zdravé stromy. Schopnost usmrtit i zdravý strom přitom spočívá v tom, že brouci jsou schopni koordinovat svůj útok chemickou signalizací, takzvanými agregačními feromony. Přesný mechanismus této koordinace je zatím předmětem zkoumání. 
 
-
 ### Jak kůrovci strom zabíjejí? 
 
 Brouci vyhlodávají komůrky ve vnitřních vrstvách kůry, kde se rozmnožují a kladou vajíčka. Z nich vyhlíhnuté larvičky se živí lýkem, které je pro strom klíčové, neboť mu umožňuje transportovat vodu a živiny – bez něj strom postupně chřadne a umírá. Po několika týdnech larvy dospějí a jako nová generace brouků vylétají a hledají místo k přezimování nebo ke kolonizaci dalších stromů. Zdravé stromy se napadení brání, například produkcí terpenů a dalších látek, jež jsou pro brouky toxické. Proto brouci zpravidla obsazují jen stromy vyvrácené větrem nebo oslabené suchem či jinými faktory, neboť ty se nedovedou dostatečně bránit. Kolonizace stromu velkým množstvím brouků je pak pro strom smrtící. 
@@ -108,7 +106,9 @@ Takzvané kalamity, tedy období přemnožení kůrovců, bývají většinou kr
 
 * **Vyšší teploty:** Vyšší letní teploty vedou k rychlejšímu vývoji a častější reprodukci brouků (za jednu sezónu se narodí více generací), vyšší teploty v zimě zase umožňují více jedincům přežít.
 
-Co s tím můžeme dělat? (zastavit klimatickou změnu!) ... změnit hospodaření... klimatická změna totiž nevyhnutelně bude zlepšovat podmínky kůrovcům a bude působit jako silný stressor pro zbývající stromy, tedy bude je dále oslabovat... současná kůrovcová kalamita nejspíš behem několika let odezní a mnoho lesů, kam jsme dříve chodili nebude už stát a mnoho dalších lesů přežije... ale z dlouhodobého pohledu se podmínky mění tak, že pěstovat neodolné monokultury prostě nebude možné... 
+### Co se s tím dá dělat?
+
+Potřebné kroky vyplývají už z výše uvedeného: je nutné změnit způsob hospodaření v lesích a usilovat o zastavení postupující klimatické změny. Obojí totiž vytváří kůrovcům ideální podmínky, a zejména změna klimatu působí na zbývající stromy jako silný stresor, který je bude dále oslabovat. Lze očekávat, že současná kůrovcová kalamita během několika let odezní a mnoho lesů, kam jsme dříve chodili, zmizí. Na druhé straně: část lesů nejspíš přežije, neboť na celém území ČR nerostou jenom smrky nebo borovice. Z dlouhodobého hlediska se však podmínky mění (viz výše) a pěstování neodolných monokultur už zkrátka nebude možné. Musíme navrátit lesu jeho původní pestrost, která je důležitým předpokladem jeho životaschopnosti a po stovky milionů let mu umožňuje adaptovat se na přicházející změny, ať už jsou jakékoli.
 
 
 ## Zdroje
