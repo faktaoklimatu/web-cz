@@ -17,32 +17,24 @@ perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde naj
 
 ## Které lesy v Česku umírají a co je hlavní příčinou? 
 
-Umírání lesů ve velkých plochách neboli *plošný rozpad lesa* se týká hlavně smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hraje několik druhů kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy dokáží ubránit. Musíme se proto ptát, co tak výrazně snížilo imunitu stromů a umožňuje kůrovci páchat tak velké škody. Hlavní oslabující faktory jsou pro lesy v ČR tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2],[^4]. V tomto explaineru se na každý z nich podíváme podrobněji, osvětlíme si dynamiku kůrovcových kalamit a popíšeme nejdůležitější kroky, které je třeba udělat, abychom jednou mohli opět chodit do zdravého lesa, kde je nám dobře.
+Umírání lesů ve velkých plochách neboli *plošný rozpad lesa* se týká především smrkových a borových lesů v nižších polohách (viz mapka). Roli v tom hraje několik druhů kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy dokáží ubránit. Musíme se proto ptát, co tak výrazně snížilo imunitu stromů a umožňuje kůrovci páchat tak velké škody. Hlavní oslabující faktory jsou pro lesy v ČR tři: **klimatická změna, degradace půdy a nevhodné hospodaření**[^1],[^2],[^4]. V tomto explaineru se na každý z nich podíváme podrobněji, osvětlíme si dynamiku kůrovcových kalamit a popíšeme nejdůležitější kroky, které je třeba udělat, abychom jednou mohli opět chodit do zdravého lesa, kde je nám dobře.
 
 ## Vyjasnění pojmů
 
-### Co myslíme slovem les?
+### Co v tomto textu označujeme slovem "les"?
 
-- Lesníci vidi les jako rostoucí zásobu dříví, biologové se zajímají o všechny rostliny a živočichy, kterým les poskytuje domov, turista hledá v lese stín nebo houby a úředník se dívá na plochy plnící funkci lesa v katastru nemovitostí... . ČSÚ považuje za lesy oblast v katastru nemovitostí, která je určená k plnění funkce lesa. (PUPFL - plocha určená k plnění funkce lesa). V NILu (národní inventarizaci lesů) se ale provádí terénní šetření a NIL tedy eviduje jako les všechno, co jako les vypadá (fao) bez ohledu na to, jestli je na pozemku PUPFL KN.  
+Různí lidé mají různé asociace: zatímco lesníci vnímají les z hospodářského hlediska (jako rostoucí zásobu dříví), biologové se zajímají o všechny rostliny a živočichy, kterým les poskytuje domov. Turisté a skauti hledají v lese pěkná místa k procházce či táboření, sbírají houby nebo lesní plody – a Český statistický úřad (ČSÚ) zase vidí les jako pozemek v katastru nemovitostí, který je určen k plnění funkce lesa (zkráceně PUPFL). Naproti tomu Národní inventarizace lesů (NIL) provádí terénní šetření a jako les eviduje vše, co jako les vypadá – bez ohledu na označení pozemku v katastru.  
 
- - ... Les může také znamenat místo, které má mikroklima lesa, tedy kde máte nad hlavou koruny stromů, v létě přijemý chládek. Takové místo vytváří svůj vlasntí ekosystém...  Les podle definice FAO[^5]... 
-Někde mezi tím jsou oblasti, kde jsou stromy zatím ještě mladé a nízké - tedy zatím netvoří ono lesní mikroklima - ale až dospějí, tak je tvrořit budeou... 
-B
-iologové se také někdy vymezují proti sousloví umírání lesů s tím, že přece umírají jen smrkové plantáže... (bo smrková plantáž nemá podrost a naní to moc ekosystém...)
+I pro mnoho dalších lidí je les víc než jen pozemek – je to místo, jež má své vlastní mikroklima, tedy kde máme nad hlavou koruny stromů, kde je v létě příjemý chládek a kde jsme dobře chráněni před větrem. Je to také místo, které vytváří druhově rozmanitý ekosystém. Naproti tomu řada pozemků sice "plní funkci lesa" (roste na nich jeden druh stromů, které jednou bude možné vykácet a hospodářsky využít), ale pestrý život bychom v nich hledali marně. Biologové se proto někdy vymezují proti sousloví "umírání lesů" s tím, že neumírají lesy, ale smrkové plantáže, kde není podrost ani bohatý ekosystém. 
 
-- **Les pro nás = vysoký vzrostlý vytvářející svoje mikroklima...  nebo takový, který v budoucnu vysoký a vzrostlý bude. podle definice FAO[^5]**
+V tomto textu jako "les" označujeme **plochu s vysokými, vzrostlými stromy, která vytváří své mikroklima a umožňuje život nejrůznější flóře a fauně – nebo takovou, kde vysoké, vzrostlé stromy jednou budou** (podle definice FAO[^5]).
 
-### Co znamená umírání
 
-- Les podle PUPFL nemůže "umřít". Lesník musí podle zákona holinu osázet, tedy technicky řečeno, většina míst kde umřel vysoký vzrostlý les je nyní osázena malými stromky... ty ale netvoří mikroklima (a je otázka, zda přežijí třeba okusování srnčí) 
-Tedy když mluvíme o umírání, máme na mysli plošný rozpad lesa... viz níže...
+### Umírají stromy, nebo lesy?
 
-### Umírají stromy nebo lesy?
+I když to může vypadat jako slovíčkaření, jde o důležitý rozdíl, dobře ukazující odlišnost mezi přírodními a hospodářsky využívanými lesy. S trochou nadsázky lze říci, že **přírodní lesy neumírají** – čas od času odumřou jednotlivé stromy, jsou však zanedlouho nahrazeny mladými jedinci, kteří v podrostu čekají, až se pro ně uvolní místo. Jinak řečeno: přírodní nebo přírodě blízký les žije v neustálé obnově a zmlazování[^22] a zachovává si své mikroklima. V takovém lese najdeme různě staré stromy (říká se mu "různověký") a má pestrou druhovou skladbu stromů, díky čemuž dobře zvládá výkyvy počasí nebo odolává škůdcům. Nicméně **přírodních nebo přírodě blízkých lesů je v Česku asi jen desetina**[^3] – najdeme je zpravidla ve vyšších polohách na Šumavě a v dalších horách.    
 
-Možná se to zdá jako zbytečné slovíčkaření, ale je důležité. S trochou nadsázky by se totiž dalo říct, že **přírodní lesy neumírají**: čas od času umřou jednotlivé stromy, ale jejich místo je brzy obsazeno mladými stromy, které v podrostu čekají, až se pro ně uvolní místo. Jinak řečeno, přírodní nebo přírodě blízký les je v žije v neustálé obnově a zmlazování[^22] a zachovává si svoje mikroklima. Takový přírodě blízký les obsahuje různě staré stromy (říkáme mu různověký) a je pestrý i co se týká druhů stromů a díky tomu může dobře zvládat výkyvy počasí nebo odolávat škůdcům. **Přírodních nebo přírodě blízkých lesů je v Česku asi jen desetina**[^3], najdete je zpravidla ve vyšších polohách na Šumavě a dalších horách.    
-
-Běžný český hospodářský les je většinou stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná plantáž, která se jednou za sto let vytěží. Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a snadno stane, že stromy umírají ve velkých plochách - říká se tomu *plošný rozpad lesa*. Když pak lesníci stromy vytěží, vznikne holina, která má zcela jiné mikroklima než les a mladým stromkům se na ní roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. 
-
+Naproti tomu typický český hospodářský les je stejnověká monokultura s velmi chudým podrostem. V takovém lese nic jako neustálá přirozená obnova neprobíhá, spíše připomíná pole, které se jednou za sto let "sklidí". Takové lesy nebývají odolné, kůrovci se v nich snadno množí a šíří a dochází pak k tomu, že stromy umírají ve velkých plochách (tzv. *plošný rozpad lesa*). Když potom lesníci mrtvé stromy vytěží, vznikne holina, kterou musí podle zákona znovu osázet, aby dál "plnila funkci lesa". Zde se však mladým, nechráněným stromkům roste podstatně hůře než ve stínu a stabilním mikroklimatu vzrostlého lesa. Jsou tu daleko zranitelnější vůči výkyvům počasí nebo okusu spárkatou zvěří v zimním období a pochopitelně také ještě nejsou samy schopny vytvářet mikroklima a poskytovat ochranu nejrůznějším rostlinám a živočichům.  
 
 
 ## Jak les oslabuje nevhodné hospodaření? 
