@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Proč umírají české jehličnaté lesy?"
 slug:        "umirani-ceskych-lesu"
-published:   2021-07-03
+published:   2021-10-03
 author:      "Ondráš Přibyla"
 weight:      74
 tags-scopes: [ svet ]
