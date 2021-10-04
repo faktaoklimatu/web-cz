@@ -17,13 +17,13 @@ perex:       "Na mnoha místech v Česku umírají jehličnaté lesy. Někde naj
 
 ## Které lesy v Česku umírají a co je hlavní příčinou? 
 
-Umírání lesů ve velkých plochách neboli *plošný rozpad lesa* se týká především smrkových lesů v nižších polohách a částečně také lesů borových[^101]. Od roku 2016 bylo v Česku vytěženo přes 146 000 ha mrtvých jehli4nan;, což odpovídá ploše čtverce o straně 38 km. Zřetelně více jsou přitom postiženy oblasti Moravy. V kraji Vysočina bylo od roku 2016 vykáceno přes 20% jehličnatých lesů, v Jihomoravském, Moravskoslezském a Olomouckém okolo 17%. Roli v tom hraje několik druhů kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy dokáží ubránit. Musíme se proto ptát, co tak výrazně snížilo imunitu stromů a umožňuje kůrovci páchat tak velké škody. Hlavní oslabující faktory jsou pro lesy v ČR tři: **klimatická změna, degradace půdy a nevhodné hospodaření** [^1],[^2],[^4],[^26]. V tomto explaineru se na každý z nich podíváme podrobněji, osvětlíme si dynamiku kůrovcových kalamit a popíšeme nejdůležitější kroky, které je třeba udělat, abychom jednou mohli opět chodit do zdravého lesa, kde je nám dobře.
+Umírání lesů ve velkých plochách neboli *plošný rozpad lesa* se týká především smrkových lesů v nižších polohách a částečně také lesů borových[^101]. Od roku 2016 bylo v Česku vytěženo přes 146 000 ha mrtvých jehličnanů, což odpovídá ploše čtverce o straně 38 km. Zřetelně více jsou přitom postiženy oblasti Moravy. V kraji Vysočina bylo od roku 2016 vykáceno přes 20 % jehličnatých lesů, v Jihomoravském, Moravskoslezském a Olomouckém kraji okolo 17 %. Roli v tom hraje několik druhů kůrovců (*lýkožrout smrkový, lýkohub sosnový* [^15],[^16] a další) i různé houbové nákazy, ale těm se zdravé stromy dokáží ubránit. Musíme se proto ptát, co tak výrazně snížilo imunitu stromů a umožňuje kůrovci páchat tak velké škody. Hlavní oslabující faktory jsou pro lesy v ČR tři: **klimatická změna, degradace půdy a nevhodné hospodaření** [^1],[^2],[^4],[^26]. V tomto explaineru se na každý z nich podíváme podrobněji, osvětlíme si dynamiku kůrovcových kalamit a popíšeme nejdůležitější kroky, které je třeba udělat, abychom jednou mohli opět chodit do zdravého lesa, kde je nám dobře.
 
 ## Vyjasnění pojmů
 
 ### Co v tomto textu označujeme slovem "les"?
 
-V tomto textu jako "les" označujeme **plochu s vysokými, vzrostlými stromy, která vytváří své mikroklima** (podle definice FAO[^5], bez ohledu na to, jak je plocha evidovaná v katastru nemovitostí). Mrtvý les je většinou vykácen a na jeho místo jsou vysazeny mladé stromky, tedy plocha *lesní půdy* neubývá. Za několik desítek let, pokud ovšem stromky přežijí, bude na místě vzrostlý les znovu. Umírání lesa ale znamená ztrátu lesního mikroklimatu a dalších ekosystémových funkcí lesa a i na nově osázených holinách chybí prostý lidský pocit bytí "v lese". 
+V tomto textu jako "les" označujeme **plochu s vysokými, vzrostlými stromy, která vytváří své mikroklima** (podle definice FAO[^5], bez ohledu na to, jak je plocha evidovaná v katastru nemovitostí). Mrtvý les je většinou vykácen a na jeho místo jsou vysazeny mladé stromky, tedy plocha *lesní půdy* neubývá. Za několik desítek let, pokud ovšem stromky přežijí, bude na místě vzrostlý les znovu. Umírání lesa ale znamená ztrátu lesního mikroklimatu a dalších ekosystémových funkcí lesa a i na nově osázených holinách chybí prostý lidský pocit "bytí v lese". 
 
 ### Umírají stromy, nebo lesy?
 
@@ -59,7 +59,7 @@ Méně vláhy v půdě ale není jen důsledkem menšího množství srážek. V
 
 * **Vyšší odpar vody:** Vyšší teploty v letních dnech způsobují, že stromy svými listy a jehličím odpařují více vody (odborný název tohoto jevu, který souvisí s dýcháním rostlin, je *evapotranspirace*). Pokud není v takových dnech v půdě dostatečná zásoba vody, stromy strádají. Zvyšující se průměrná teplota, delší vegetační sezona daná kratší zimou i častější a intenzivnější vlny veder tedy dopady sucha významně zesilují. 
  
-* **Lepší podmínky pro kůrovce:** Vyšší teploty v zimě způsobují, že toto roční období přežívá více kůrovců, v létě zase teplo urychluje vývoj kůrovcových larviček a brouků, takže se během sezóny stihne vyrojit více generací. Zatímco dříve se během roku narodila 1 či 2 generace kůrovců, v posledních letech jsou ve většině níže položených míst Česka běžné 3 generace[^52] (více o kůrovcích níže). 
+* **Lepší podmínky pro kůrovce:** Vyšší teploty v zimě způsobují, že toto roční období přežívá více kůrovců, v létě zase teplo urychluje vývoj kůrovcových larviček a brouků, takže se v průběhu sezóny stihne vyrojit více generací. Zatímco dříve se během roku narodila 1 či 2 generace kůrovců, v posledních letech jsou ve většině níže položených míst Česka běžné 3 generace[^52] (více o kůrovcích níže). 
 
 
 ## Jak lesy oslabuje vyčerpaná nebo překyselená půda? 
@@ -72,7 +72,7 @@ Půda je pro zdraví lesa stejně zásadní jako pro člověka zdravá strava. M
 
 * **Reaktivní dusík:** Součástí kyselých dešťů jsou i reaktivní formy dusíku (NO<sub>x</sub>, NH<sub>3</sub><sup>−</sup>), které vznikají především při spalování v elektrárnách nebo benzínových motorech. Dusík v těchto sloučeninách působí v půdě jako hnojivo a nepřirozeně urychluje růst kmenů, které jsou pak křehké[^25]. Zároveň ale způsobuje také chřadnutí symbiotických kořenových hub, jež stromy ke svému zdravému růstu potřebují. Je to tedy podobný efekt, jako kdyby člověk jedl hodně cukru, ale žádné vitamíny a minerály.
 
-Když tedy mluvíme o lese, je třeba mít na paměti, že les nejsou jen kmeny, větve a listy, které vidíme nad zemí. Minimálně stejně zásadní jsou neviditelné procesy pod zemí: kořeny stromů získávají z půdy vodu i důležité chemické prvky a k tomu jim pomáhají symbiotické houby, jež jsou na složení půdy a její pH velmi citlivé. Překyselená půda kořenový systém oslabuje a ten pak není schopen v období sucha strom dostatečně zásobit vodou. 
+Když proto mluvíme o lese, je třeba mít na paměti, že les nejsou jen kmeny, větve a listy, které vidíme nad zemí. Minimálně stejně zásadní jsou neviditelné procesy pod zemí: kořeny stromů získávají z půdy vodu i důležité chemické prvky a k tomu jim pomáhají symbiotické houby, jež jsou na složení půdy a její pH velmi citlivé. Překyselená půda kořenový systém oslabuje a ten pak není schopen v období sucha strom dostatečně zásobit vodou. 
 
 {% include figure.html
     name="ROLP.jpg"
@@ -125,7 +125,7 @@ Potřebné kroky vyplývají už z výše uvedeného: je nutné změnit způsob 
 
 [^1]: Rotter, P.: [Proč lesy ztrácí imunitu a co s tím dělat?](https://www.researchgate.net/publication/343059340_Proc_lesy_ztraci_imunitu_a_co_s_tim_delat), (2020)
 
-[^2]: Hlásny, T., Krokene, P., Liebhold, et al. (2019) [Život s kůrovcem: Dopady, výhledy a řešení](https://efi.int/sites/default/files/files/publication-bank/2020/efi_fstp8_2019_cz.pdf), Od vědy ke strategii 8. Evropský lesnický institut. 
+[^2]: Hlásny, T., Krokene, P., Liebhold, et al. (2019): [Život s kůrovcem: Dopady, výhledy a řešení](https://efi.int/sites/default/files/files/publication-bank/2020/efi_fstp8_2019_cz.pdf), Od vědy ke strategii 8. Evropský lesnický institut. 
 
 [^3]: Kučera, M., Adolt, R.: [Národní inventarizace lesů v České republice – výsledky druhého cyklu 2011-2015](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf), tabulka na str. 139.
 
@@ -151,22 +151,22 @@ Potřebné kroky vyplývají už z výše uvedeného: je nutné změnit způsob 
 
 [^30]: [Mapa potenciální přirozené vegetace České republiky](https://www.pladias.cz/download/vegetation). Tato mapa zachycuje typy vegetace, které by na přirozeném nebo člověkem pozměněném stanovišti existovaly v případě, že by člověk vegetaci neovlivňoval. 
 
-[^40]: Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá přibližně posunu asi o 300 m.   
+[^40]: Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá  posunu přibližně o 300 m.   
 
 [^50]: V obecné rovině lze říci, že sucho, které by se před sto lety vyskytovalo jen asi jednou za deset let, můžeme nyní, kdy je planeta o 1 °C teplejší, očekávat za dekádu zhruba dvakrát. Lokální riziko sucha závisí na mnoha faktorech, v některých oblastech se riziko zvyšuje mnohem více (podrobněji viz obrázek SPM.6 v [IPCC, 2021: Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis.](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf#page=24)) Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change.
 
-[^51]: Büntgen, U., Urban, O., Krusic, P.J. et al.[Recent European drought extremes beyond Common Era background variability](https://www.nature.com/articles/s41561-021-00698-0). Nat. Geosci. 14, 190–196 (2021). [https://doi.org/10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0) 
+[^51]: Büntgen, U., Urban, O., Krusic, P.J. et al.: [Recent European drought extremes beyond Common Era background variability](https://www.nature.com/articles/s41561-021-00698-0). Nat. Geosci. 14, 190–196 (2021). [https://doi.org/10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0) 
 
 [^52]: [Mapa výskytu lýkožrouta smrkového](https://www.klimatickazmena.cz/cs/?l=64), Czechglobe.
 
-[^101]: Situace smrkových a borových lesů je do velké míry podobná. Oba typy dřevin jsou oslabovány klimatickou změnou, pěstováním v monokulturách a degradací půdy a zabíjeny kůrožravým hmyzem. V publikaci [Lesníkův průvodce neklidnými časy](https://www.researchgate.net/publication/354779838_Lesnikuv_pruvodce_neklidnymi_casy) autoři podrobněji diskutují situaci obou dřevin a související výzkum se žávěrem, že *chřadnutí borovice nejlépe vysvětluje kombinované působení depozice reaktivního dusíku a sucha, přičemž depozice má o něco vyšší váhu.* Specifikům borových lesů se věnuje také publikace [Biotičtí škodliví činitelé na borovici a sucho](https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf).
+[^101]: Situace smrkových a borových lesů je do velké míry podobná. Oba typy dřevin jsou oslabovány klimatickou změnou, pěstováním v monokulturách a degradací půdy a zabíjeny kůrožravým hmyzem. V publikaci [Lesníkův průvodce neklidnými časy](https://www.researchgate.net/publication/354779838_Lesnikuv_pruvodce_neklidnymi_casy) autoři podrobněji diskutují situaci obou dřevin a související výzkum se závěrem, že *chřadnutí borovice nejlépe vysvětluje kombinované působení depozice reaktivního dusíku a sucha, přičemž depozice má o něco vyšší váhu.* Specifikům borových lesů se věnuje také publikace [Biotičtí škodliví činitelé na borovici a sucho](https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf).
 
 
-[^102]: Šrámek, V. et al. (2007) [Chřadnutí lesních porostů na LS Jablunkov. Určení komplexu příčin poškození a návrh opatření na revitalizaci lesa](https://lesycr.cz/wp-content/uploads/2016/12/jablunkov-web.pdf) 
+[^102]: Šrámek, V. et al. (2007): [Chřadnutí lesních porostů na LS Jablunkov. Určení komplexu příčin poškození a návrh opatření na revitalizaci lesa](https://lesycr.cz/wp-content/uploads/2016/12/jablunkov-web.pdf) 
 
-[^103]: Šrámek, V., Novotný, R., & Fadrhonsová, V. (2015) [Chřadnutí smrkových porostů a stav lesních půd v oblasti Severní Moravy a Slezska](https://www.vulhm.cz/files/uploads/2019/02/401.pdf). Zprávy lesnického výzkumu, 60(2), 147–153.
+[^103]: Šrámek, V., Novotný, R., & Fadrhonsová, V. (2015): [Chřadnutí smrkových porostů a stav lesních půd v oblasti Severní Moravy a Slezska](https://www.vulhm.cz/files/uploads/2019/02/401.pdf). Zprávy lesnického výzkumu, 60(2), 147–153.
 
-[^104]: De Vries, W., et al. [Impacts of acid deposition, ozone exposure and weather conditions on forest ecosystems in Europe: an overview](https://link.springer.com/content/pdf/10.1007/s11104-014-2056-2.pdf) Plant and Soil (2014), 380(1), 1–45.
+[^104]: De Vries, W., et al.: [Impacts of acid deposition, ozone exposure and weather conditions on forest ecosystems in Europe: an overview](https://link.springer.com/content/pdf/10.1007/s11104-014-2056-2.pdf) Plant and Soil (2014), 380(1), 1–45.
 
 
 
