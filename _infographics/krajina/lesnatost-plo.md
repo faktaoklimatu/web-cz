@@ -8,7 +8,7 @@ weight:     90
 tags-scopes: [ cr ]
 tags-topics: [ priroda ]
 caption:    "Lesy v Česku pokrývají 36,8 % plochy. Nejvyšší lesnatost najdeme v okrajových pohořích, nejnižsí je v Polabí a Jihomoravských úvalech."
-dataset:    ""
+
 ---
 
 <p class="perex">
