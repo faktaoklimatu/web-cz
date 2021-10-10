@@ -11,9 +11,9 @@ caption:    "Lesy v Česku pokrývají 36,8 % plochy. Nejvyšší lesnatost najd
 
 ---
 
-<p class="perex">
+{:.perex}
 V Česku je přibližně 2,9 miliónů hektarů lesů. Kdybychom je dali dohromady na jednu plochu, pokryly by čtverec o hraně 170km. Většina lesů je ale rozdrobena do mnohem menších ploch a opravdu rozsáhlé lesy se nacházejí jen v okrajových pohořích. Pro lepší představu o tom, kde se české lesy nacházejí může sloužit mapa lesnatosti podle Přírodních lesních oblastí a [mapa lesnatosti jednotlivých krajů](/lesnatost-kraje). 
-</p>
+
 
 {% include preview-box.html
     title="Lesy v Česku: lesnatost v krajích"
