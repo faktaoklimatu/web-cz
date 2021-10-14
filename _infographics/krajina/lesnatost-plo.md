@@ -28,7 +28,7 @@ V Česku je přibližně 2,9 miliónů hektarů lesů. Kdybychom je dali dohroma
 
 ### Co je považováno za "les"?
 
-V tomto textu a mapách vycházíme z definice lesa podle FAO[^1], která se používá v rámci Národní Inventarizace Lesů. **Jako „les“ označujeme plochu s vysokými, vzrostlými stromy**, která vytváří své mikroklima a kde se člověk cítí jako "v lese", nebo plochy, které jsou dočasně odlesněné, ale očekává se, že tam les zase vyroste. Tato definice nezohledňuje jak je pozemek veden v katastru nemovitostí (a vzniká tak nesrovnalost oproti datům ČSÚ) ani bohatost ekosystému (takže za les označuje i hustě sázenou smrkovou plantáž bez jakéhokoliv podrostu). 
+V tomto textu a mapách vycházíme z definice lesa podle FAO[^1], která se používá v rámci Národní Inventarizace Lesů (NIL). **Jako „les“ se značí souvislý porost jehličnatých nebo listnatých stromů**, který je charakteristický svým druhovým složením a vlastním ekoklimatem. V rámci NIL je za les také považován dočasně odlesněný pozemek, tzn. holé seče nebo kalamitní holiny. Tato definice nezohledňuje, jak je pozemek veden v katastru nemovitostí (a vzniká tak nesrovnalost oproti datům ČSÚ) ani bohatost ekosystému (takže za les označuje i hustě sázenou smrkovou plantáž bez jakéhokoliv podrostu). 
 
 ## Metodické poznámky
 
@@ -36,7 +36,9 @@ V tomto textu a mapách vycházíme z definice lesa podle FAO[^1], která se pou
 
 V českém prostředí se často vyskytují mírně odlišné údaje o ploše lesů a lesnatosti - např. ve [zprávách o stavu lesa](http://eagri.cz/public/web/mze/lesy/lesnictvi/zprava-o-stavu-lesa-a-lesniho/) se celková plocha lesů se uvádí jako 2,6 miliónů ha , zatímco [Národní inventarizace lesů](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015) uvádí plochu o 300 000 ha vyšší, tedy 2,9 miliónů ha. Co způsobuje tento rozdíl? 
 
-Data ve zprávách o stavu lesa nebo Českého statistického úřadu evidují *pozemky určené k plnění funkce lesa* (tzv. *PUPFL*) v katastru nemovitostí a data o objemu těžeb či druhovém zastoupení získávají od jednotlivých subjektů, které na pozemcích hospodaří. Národní inventarizace lesů vychází ze statisticky zpracovaných terrénních průzkumů v 39 432 pozemcích inventarizační sítě, a jako les klasifikuje i porosty, které nejsou zařazeny v katastru nemovitostí jako *PUPFL*, ale splňují definici lesa podle FAO. 
+Co je NIL?
+
+Data ve zprávách o stavu lesa nebo Českého statistického úřadu evidují *pozemky určené k plnění funkce lesa* (tzv. *PUPFL*) v katastru nemovitostí a data o objemu těžeb či druhovém zastoupení získávají od jednotlivých subjektů, které na pozemcích hospodaří. Národní inventarizace lesů vychází ze statisticky zpracovaných terénních průzkumů v 39 432 pozemcích inventarizační sítě, a jako les klasifikuje i porosty, které nejsou zařazeny v katastru nemovitostí jako *PUPFL*, ale splňují definici lesa podle FAO. 
 
 ## Další souvislosti, poznámky a odkazy
 
