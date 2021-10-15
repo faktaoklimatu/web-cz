@@ -41,7 +41,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 ## EU + UK (2)
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Evropská unie a Spojené království"
     population-total="515 mil."
     population-share="6,7"
@@ -71,7 +71,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 ## USA (3)
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Spojené státy americké"
     flag="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
     population-total="329 mil."
@@ -93,7 +93,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 ## Čína (4)
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Čínská lidová republika"
     flag="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
     population-total="1,4 mld."
@@ -118,7 +118,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 ## Indie (5)
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Indie"
     flag="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
     population-total="1,38 mld."
@@ -142,7 +142,7 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 
 ## Rusko (6)
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Ruská federace"
     flag="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
     population-total="144 mil."
@@ -163,7 +163,7 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 ## Ostrovní státy (7)
 
 <!-- FIXME: Round (square) logo → need to make it smaller and centered. -->
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Ostrovní státy"
     flag="https://upload.wikimedia.org/wikipedia/en/0/06/AOSIS_logo.svg"
     population-total="71 mil."
@@ -189,7 +189,7 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 
 ## Chudé africké státy
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Africká unie"
     flag="https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_the_African_Union.svg"
     population-total="1,1 mld."
@@ -212,7 +212,7 @@ https://climateactiontracker.org/countries/gambia/ ,
 
 ## Ropné státy Perského zálivu
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     population-total="183 mil."
     population-share="2,4"
     gdp-per-cap="23 400"
@@ -230,7 +230,7 @@ https://climateactiontracker.org/countries/gambia/ ,
 
 ## Brazílie
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     name="Brazílie"
     flag="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
     population-total="213 mil."
@@ -250,7 +250,7 @@ https://climateactiontracker.org/countries/gambia/ ,
 
 ## Japonsko a Jižní Korea
 
-{% include includes-local/pozice-hracu-cop/summary-table.html
+{% include includes-local/pozice-hracu-cop/country-table.html
     population-total="178 mil."
     population-share="2,31"
     gdp-per-cap="41 700"
