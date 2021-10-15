@@ -20,7 +20,7 @@ perex:       "[perex o mezinárodních jednáních. message = místo technikalit
 
 ### Mezinárodních jednání v OSN
 
-Mezinárodní jednání o ochraně klimatu nelze oddělit od ostatních jednání, která probíhají v rímci OSN i mimo něj. Témata ochrany klimatu úzce souvisejí s **mezinárodním obchodem** (státům jde např. o zajištění přístupu na trhy nebo společnou strategii států, které produkují ropu), mezinárodní **hospodřskou pomocí** (podpora chudých států) či zajištěním **potravinové bezpečnosti** a přístupu k pitné vodě. Ochrana klimatu také vystupuje jako kontex při jednáních G7, G20 nebo světové obchodní organizace (*WTO*) Jinak řečeno, jednání o ochraně klimatu jsou malá součást všech mezinárodních jednání a každoroční jednání OSN o ochraně klimatu (tzv. *COP*) je proto dobré vnímat jen jako kontrolní bod na cestě.
+Mezinárodní jednání o ochraně klimatu nelze zcela oddělit od ostatních jednání, která probíhají v rímci OSN i mimo něj. Témata ochrany klimatu úzce souvisejí s **mezinárodním obchodem** (státům jde např. o zajištění přístupu na trhy nebo společnou strategii států, které produkují ropu), mezinárodní **hospodřskou pomocí** (podpora chudých států) či zajištěním **potravinové bezpečnosti** a přístupu k pitné vodě. Ochrana klimatu také vystupuje jako kontex při jednáních G7, G20 nebo světové obchodní organizace (*WTO*) Jinak řečeno, jednání o ochraně klimatu jsou malá součást všech mezinárodních jednání a každoroční jednání OSN o ochraně klimatu (tzv. *COP*) je proto dobré vnímat jen jako kontrolní bod na cestě.
 
 ### Jak mohou státy snižovat emise skleníkových plynů?
 
@@ -37,7 +37,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 ### Česko v kontextu světa
 
-Česká republika rozhodně není malá a nevýznamná země. V celosvětovém i v evropském kontextu je ČR středně velkou a podle mnoha měřítek úspěšnou zemí. Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější**[^10] (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index).
+Česká republika rozhodně není malá a nevýznamná země. V celosvětovém i v evropském kontextu je ČR středně velkou a podle mnoha měřítek úspěšnou zemí. Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější**[^10] (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index). (??Česko dává nulové klimatické finance?)
 
 ## EU + UK (2)
 
@@ -97,7 +97,10 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     emissions-share="27,4"
 %}
 
-* **Současné a budoucí dopady klimatické změny:** Čína v souvislosti s klimatickou změnou již nyní čelí výkyvům v zemědělské produkci kvůli nedostatku vody, zejména v severních oblastech země. Jižní části Číny se naopak potýkají s častými povodněmi. Čína má i poměrně bohatou biodiverzitu, která bude změnou klimatu významně zasažena. V následujícím století ovlivní tání himalájských ledovců dostupnost vody v řekách, které jsou ledovci napájeny. Nárůst hladin oceánů je pro Čínu významným rizikem, protože mnoho velkých měst leží na pobřeží. Při očekávaném nárůstu hladin o 1m bude zaplaveno 92 000 km2 a bude nutné přesídlit 67 miliónů obyvatel.[^44]
+* **Současné a budoucí dopady klimatické změny:** 
+Čína v souvislosti s klimatickou změnou již nyní potýká s **výkyvy v zemědělské produkci kvůli nedostatku vody**, zejména v severních oblastech země. Jižní části Číny naopak zasahují **častější povodně**. Čína má i poměrně bohatou biodiverzitu, která bude změnou klimatu významně zasažena. V následujícím století ovlivní tání himalájských ledovců dostupnost vody v řekách, které jsou ledovci napájeny. **Nárůst hladin oceánů** bude významně dopadat na obří města na pobřeží (např. Shanghai, Tianjin, Guangzhou) - očekává se že během 21.století bude kvůli zaplavování nízko položených oblastí na pobřeží nutné přesídlit okolo 60 miliónů obyvatel. 
+
+
 * **Příležitosti a překážky přechodu k udržitelnosti:** Čínská energetika je v současnosti závislá na uhelných elektrárnách a bude náročné se této závislosti zbavit. Na druhou stranu je Čína světový  leader v produkci Fotovoltaických panelů a mnoha dalších technologií. (Data o instalachích OZE v Číně). V souvislosti s životním prostředím a klimatickou změnou se bude Čína potýkat overfishing / kolapsem populací ryb v Jihočínském moři. V obecném kontextu je výzvou pro čínu je zvládnutí populační dynamiky.
 * **Současné úsilí o ochranu klimatu:** V Číně se klimatická změna dostala na státní agendu vcelku nedávno (okolo 2010). V roce 2021 vyhlásila Čína cíl dosáhnout uhlíkové neutrality do 2060. Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními směřuje Čína k dosažení vrcholu před 2028[^41]. Nedávno také Čína spustila vlastní systém pro obchodování s emisními povolenkami[^42] a vyhlásila, že přestane financovat výstavbu uhelných elektráren v zahraničí.[^43] Úsilí Číny je sice CAT hodnotí jako *velmi nedostatečné*, v posledním roce však začíná být Čína velmi aktivní, a zdaleka nelze říkat, že pro snížení emisí nic nedělá.
 * **Ambice Číny v klimatických jednáních**
@@ -123,7 +126,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 * **Ambice USA v klimatických jednáních**
 Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu.
 
-## Rusko
+## Rusko (6)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
     population-total="144 mil."
@@ -139,7 +142,7 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 * **Současné úsilí o ochranu klimatu:**
 * **Ambice USA v klimatických jednáních**
 
-## Ostrovní státy
+## Ostrovní státy (7)
 
 <!-- FIXME: Round (square) logo → need to make it smaller and centered. -->
 {% include includes-local/pozice-hracu-cop/summary-table.html
@@ -152,13 +155,16 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
     emissions-share="0,73"
 %}
 
-* **Kdo patří do této skupiny:** Skupina sdružuje 38 ostrovních států a mnoho dalších "závislých teritorií", z nichž většina jsou malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společncýh aliancí AOSIS nebo SIDS.
-* **Populace:** 71.1 miliónů , 0.92 % světové populace
-* **HDP** HDP na osobu 16 100 $ PPP, 0.99 % světové ekonomiky
-* **Emise skleníkových plynů:** 0.73 % světových emisí, emise na osobu 5.03 t CO2eq
-* **Současné a budoucí dopady klimatické změny:** Pro malé ostrovní státy představuje klimatická změna enormní výzvy. Vedle častějších a silnějších hurikánů jsou ohroženy erozí pobřeží a zasolováním zásob pitné vody. Umírání korálových útesů zasáhne místní turismus i rybolov, který se již nyní musí potýkat s častýmy mořskými vlnami veder (marine heatwaves). Mnoho ostrovů se zvedá jen několik málo metrů nad hladinu a tedy vzestup hladin oceánů předsatvuje hrozbu, na kterou se prakticky nemohou adaptovat. Navíc jde o chudé státy, které nemají prostředky na adaptaci a zvládání současných dopadů je pro ně velmi obtížné.
-* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:** Většina ostrovních států nemá významný průmysl, který by bylo nutné transformovat ani netěží ropu. Nároky energetiky budou moci pokrýt z obnovitelných zdrojů. Tedy z pohledu přijmů do ekonomiky pro ně není transformace k nízkouhlíkové společnosti významné riziko. Hlavní problém pro tyto státy je adaptace, zejména v zemědělství a rybolovu.
-* **Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních:** Ostrovní státy nemají mnoho příležitostí ke snižování svých emisí a zároveň jsou změnou klimatu silně ohroženy. Zásadní je jejich diplomatické úsilí.
+* **Kdo patří do této skupiny:** Skupina sdružuje 38 ostrovních států a mnoho dalších "závislých teritorií", z nichž většina jsou malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společných aliancí [AOSIS](https://www.aosis.org/) nebo [SIDS](https://en.wikipedia.org/wiki/Small_Island_Developing_States).
+
+#### Současné a budoucí dopady klimatické změny: (final)
+ Pro malé ostrovní státy představuje klimatická změna enormní výzvy.[^72] V současnosti jsou hlavními hrozbami **častější a silnější hurikány**[^74] (nebo tajfuny, obecněji tropické cyklóny), **eroze pobřeží** a **zasolování zásob pitné vody**[^71]. Umírání korálových útesů zasáhne významně hlavní zdroje obživy obyvatel ostrovů: turismus i rybolov, který se již nyní musí potýkat s častýmy mořskými vlnami veder (marine heatwaves). Mnoho ostrovů se zvedá jen několik málo metrů nad hladinu a **vzestup hladin oceánů představuje hrozbu, na kterou se malé ostrovy prakticky nemohou adaptovat**[^73]. Navíc jde o chudé státy, které nemají prostředky na adaptaci a zvládání současných dopadů je pro ně velmi obtížné. 
+
+#### Příležitosti a překážky transformace k nízkouhlíkové společnosti:
+ Většina ostrovních států nemá významný průmysl, který by bylo nutné transformovat ani netěží ropu. Nároky energetiky budou moci pokrýt z obnovitelných zdrojů. Tedy z pohledu přijmů do ekonomiky pro ně není transformace k nízkouhlíkové společnosti významné riziko. Hlavní problém pro tyto státy je adaptace, zejména v zemědělství a rybolovu.
+
+#### Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních: 
+ Ostrovní státy nemají mnoho příležitostí ke snižování svých emisí a zároveň jsou změnou klimatu silně ohroženy. Zásadní je jejich diplomatické úsilí.
 
 ## Chudé africké státy
 
@@ -234,6 +240,12 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 [^44]: [En WIKI](https://en.wikipedia.org/wiki/Climate_change_in_China)
 [^51]: [Carbon Brief Country Profile](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
 [^52]: Climate [PIB](https://pib.gov.in/newsite/PrintRelease.aspx?relid=176178)
+
+
+[^71]: [The World's Water](https://pacinst.org/wp-content/uploads/2013/02/worlds_water_2002_chapter53.pdf), kapitola 5: *Pacific Island Developing Country Water Resources and Climate Change*, [Pacific Institute](https://pacinst.org/),(2002)
+[^72]: [Climate change and small islands: more scientific evidence of high risks](https://climateanalytics.org/blog/2020/climate-change-and-small-islands-more-scientific-evidence-of-high-risks/), [ClimateAnalytics.org](https://climateanalytics.org/), (2020)
+[^73]: [Home by the sea: new science shows more sea-level rise impacts on small islands](https://climateanalytics.org/blog/2019/home-by-the-sea-new-science-shows-more-sea-level-rise-impacts-on-small-islands/), [ClimateAnalytics.org](https://climateanalytics.org/), (2019) 
+[^74]: en.wikipedia.org: [Tropical cyclones and climate change](https://en.wikipedia.org/wiki/Tropical_cyclones_and_climate_change)
 
 https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts
 
