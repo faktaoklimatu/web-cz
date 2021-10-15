@@ -1,16 +1,19 @@
 <div class="card float-right" style="width: 60%; margin-right: -30%; margin-left: 1.5em; clear: right;">
-    <img class="card-img-top" src="{{ include.flag | default: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg' }}">
+    <img class="card-img-top" src="{{ include.flag | default: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Flag.svg' }}" alt="Vlajka státu nebo teritoria: {{ include.name | default: 'Otazník' }}">
     <div class="card-body">
         <dl class="mb-0" style="display: grid; grid-template-columns: auto auto; column-gap: 0.5em;">
             <dt style="grid-column: 1 / span 2;">Populace 🙋</dt>
             <dd>{{ include.population-total }} obyvatel</dd>
             <dd><b>{{ include.population-share }} %</b> světové populace</dd>
             <dt style="grid-column: 1 / span 2;">Ekonomika 💰</dt>
-            <dd>{{ include.gdp-per-cap }} $ PPP/obyv.</dd>
+            <dd>{{ include.gdp-per-cap }} $/obyv. PPP</dd>
             <dd><b>{{ include.gdp-share }} %</b> světového HDP</dd>
             <dt style="grid-column: 1 / span 2;">Emise 🏭</dt>
             <dd>{{ include.emissions-per-cap }} t CO<sub>2</sub>eq/obyv.</dd>
             <dd><b>{{ include.emissions-share }} %</b> světových emisí</dd>
+            <dt style="grid-column: 1 / span 2;">Spotřeba elektřiny ⚡</dt>
+            <dd>{{ include.electricity-per-cap }} MWh/obyv.</dd>
+            <dd><b>{{ include.electricity-share }} %</b> světové spotřeby</dd>
         </dl>
     </div>
 </div>
