@@ -141,7 +141,9 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 
 ## Ostrovní státy
 
+<!-- FIXME: Round (square) logo → need to make it smaller and centered. -->
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    flag="https://upload.wikimedia.org/wikipedia/en/0/06/AOSIS_logo.svg"
     population-total="71 mil."
     population-share="0,9"
     gdp-per-cap="16 100"
@@ -161,6 +163,7 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 ## Chudé africké státy
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    flag="https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_the_African_Union.svg"
     population-total="1,1 mld."
     population-share="14,3"
     gdp-per-cap="3 350"

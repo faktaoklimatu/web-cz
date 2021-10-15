@@ -1,5 +1,16 @@
-<dl>
-    <dt>Populace</dt><dd>{{ include.population-total }}, {{ include.population-share }} % světové populace</dd>
-    <dt>Ekonomika</dt><dd>HDP {{ include.gdp-per-cap }} $ PPP/osobu, {{ include.gdp-share }} % světové ekonomiky</dd>
-    <dt>Emise</dt><dd>{{ include.emissions-per-cap }} t CO<sub>2</sub>eq/osobu, {{ include.emissions-share }} % světových emisí</dd>
-</dl>
+<div class="card float-right" style="width: 60%; margin-right: -30%; margin-left: 1.5em; clear: right;">
+    <img class="card-img-top" src="{{ include.flag | default: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg' }}">
+    <div class="card-body">
+        <dl class="mb-0" style="display: grid; grid-template-columns: auto auto; column-gap: 0.5em;">
+            <dt style="grid-column: 1 / span 2;">Populace 🙋</dt>
+            <dd>{{ include.population-total }} obyvatel</dd>
+            <dd><b>{{ include.population-share }} %</b> světové populace</dd>
+            <dt style="grid-column: 1 / span 2;">Ekonomika 💰</dt>
+            <dd>{{ include.gdp-per-cap }} $ PPP/obyv.</dd>
+            <dd><b>{{ include.gdp-share }} %</b> světového HDP</dd>
+            <dt style="grid-column: 1 / span 2;">Emise 🏭</dt>
+            <dd>{{ include.emissions-per-cap }} t CO<sub>2</sub>eq/obyv.</dd>
+            <dd><b>{{ include.emissions-share }} %</b> světových emisí</dd>
+        </dl>
+    </div>
+</div>
