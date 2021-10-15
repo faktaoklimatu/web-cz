@@ -109,11 +109,12 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 #### Současné a budoucí dopady klimatické změny:
  Čína v souvislosti s klimatickou změnou již nyní potýká s **výkyvy v zemědělské produkci kvůli nedostatku vody**, zejména v severních oblastech země[^44]. Jižní části Číny naopak zasahují **častější povodně**. Čína má i poměrně bohatou biodiverzitu, která bude změnou klimatu významně zasažena[^48]. V následujícím století ovlivní tání himalájských ledovců dostupnost vody v řekách, které jsou ledovci napájeny. **Nárůst hladin oceánů** bude významně dopadat na obří města na pobřeží [^45] (např. Shanghai, Tianjin, Guangzhou) - očekává se že během 21.století bude kvůli zaplavování nízko položených oblastí na pobřeží nutné přesídlit více než 60 miliónů obyvatel[^46],[^47]. 
 
-#### Příležitosti a překážky přechodu k udržitelnosti:
- Čínská energetika je v současnosti závislá na uhelných elektrárnách a bude náročné se této závislosti zbavit. Na druhou stranu je Čína světový  leader v produkci Fotovoltaických panelů a mnoha dalších technologií. (Data o instalachích OZE v Číně). V souvislosti s životním prostředím a klimatickou změnou se bude Čína potýkat overfishing / kolapsem populací ryb v Jihočínském moři. V obecném kontextu je výzvou pro čínu je zvládnutí populační dynamiky.
+#### Výzvy a příležitosti:
+ Čínská energetika je v současnosti závislá na uhelných elektrárnách (62 % elektřiny je z uhlí) a bude náročné se této závislosti zbavit. Čína ale masivně investuje do obnovitelných zdrojů[^401] - v roce 2020 instalovala 72 GW větrných a 48 GW solárních elektráren - a je světový leader v produkci fotovoltaických panelů, masivně investuje i do elektromobility[^403]. Z pohledu životního prostředí a potravinové bezpečnosti bude Čína muset řešit kolaps populací ryb v Jihočínském moři[^402]. Stejně jako v jjiných oblastech, i v klimatické politice bude Čína pravděpodobně usilovat o upevnění své pozice globálního leadra. 
 
 #### Současné úsilí o ochranu klimatu:
  V Číně se klimatická změna dostala na státní agendu vcelku nedávno, okolo roku 2008[^44] a v posledních letech začíná být ve své klimatické politice vcelku aktivní. V roce 2021 vyhlásila Čína cíl **dosáhnout uhlíkové neutrality do roku 2060**. Čínské emise skleníkových plynů zatím rostou, ale svými opatřeními směřuje Čína k dosažení vrcholu před 2028[^41]. Nedávno také Čína spustila vlastní systém pro obchodování s emisními povolenkami[^42] a vyhlásila, že přestane financovat výstavbu uhelných elektráren v zahraničí[^43]. Úsilí Číny hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*[^49].
+
 #### Ambice Číny v klimatických jednáních
 
 ## Indie (5)
@@ -131,15 +132,18 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     electricity-share="5,4"
 %}
 
-* **Současné a budoucí dopady klimatické změny:** Indie je vzhledem ke své chudobě a podnebí už nyní velice zranitelná přírodními katastrofami, zároveň patří mezi oblsati, které budou nejvíce postiženy klimatickou změnou. Vlny veder již nyní dosahují v Indii teplot, které jsou pro lidský organismus na hranici přežití, a změna klimatu bude přinášet vlny veder silnější a častější. Severní oblasti Indie zažívají častá sucha a tání himalájských ledovců významně sníží dostupnost vody pro zemědělství (zejm. Ganga.) Ledovce jsou klíčovým zdrojem vody pro asi 250 miliónů Indů a oteplení o 1,5°C povede k roztátí nejméně třetiny ledovců do roku 2100. Klimatická změna také přináší nepravidelnosti a zvýšení intenzity monzunů, což znamená silnější záplavy a delší sucha. Klimatická změna také může přispět k rozšíření některých chorob přenášených komáry, například malárie nebo horečky dengue. Světová banka odhaduje, že klimatická změna povede k nižší životní úrovni v roce 2050 pro polovinu indické populace, a celkové dopady klimatických změn v Indii vyčísluje na 1,2 biliónu dolarů ztraceného celkového HDP.
+#### Současné a budoucí dopady klimatické změny: 
+ Indie je vzhledem ke své chudobě a podnebí již nyní velmi zranitelná přírodními katastrofami. Zároveň patří mezi oblasti, které budou klimatickou změnou nejvíce postiženy. Vlny veder již nyní dosahují v Indii teplot, které jsou pro lidský organismus na hranici přežití [^50], a změna klimatu bude přinášet vlny veder silnější a častější. Severní oblasti Indie zažívají častá sucha a tání himalájských ledovců významně sníží dostupnost vody pro zemědělství (zejm. v oblasti Gangy) Ledovce jsou nyní klíčovým zdrojem vody pro asi 250 miliónů Indů a oteplení o 1,5°C povede k roztátí nejméně třetiny ledovců do roku 2100. Klimatická změna také přináší nepravidelnosti a zvýšení intenzity monzunů, což znamená silnější záplavy i sucha. Klimatická změna také přispívá k rozšíření některých chorob přenášených komáry, například malárie nebo horečky dengue. Světová banka odhaduje, že klimatická změna povede k nižší životní úrovni v roce 2050 pro polovinu indické populace, a celkové dopady klimatických změn v Indii vyčísluje na 1,2 biliónu dolarů ztraceného celkového HDP.
 
-* **Příležitosti a překážky přechodu k udržitelnosti:**  Pro Indii je zásadní otázka zda bude moci se rozvinout tak, aby lidé nežili v energetické chudobě a aby dosáhla dostatečné prosperity k zastavení svého populačního růstu. ?? Čistší výroba elektřiny by přinesla čistší vzduch (??)
+#### Příležitosti a překážky přechodu k udržitelnosti:  
+ Pro Indii je zásadní otázka zda bude moci se rozvinout tak, aby lidé nežili v energetické chudobě a aby dosáhla dostatečné prosperity k zastavení svého populačního růstu. ?? Čistší výroba elektřiny by přinesla čistší vzduch (??)
 
-* **Současné úsilí o ochranu klimatu:** Indie se zatím nepřihlásila k cíli uhlíkové neutrality, pouze se zavázala nepřekročit emise na osobu rozvinutých zemí a do roku 2030 snížit emise na jednotku HDP o třetinu (vzhledem k 2005). Indie je kritizována za snahu navýšit výrobu elektřiny z uhlí (a tedy i lokální těžbu uhlí), nicméně současná spotřeba elektřiny na osobu je v Indii 1000kWh za rok, což je 6krát méně než průměr EU a 12krát méně než v USA. Prostředky získané pomocí uhelné daně (12 miliard dolarů) jsou převážně použité na investice do čisté energie.[^52] (Rozvoj OZE v Indii ??)
+#### Současné úsilí o ochranu klimatu:
+ Indie se zatím nepřihlásila k cíli uhlíkové neutrality, pouze se zavázala nepřekročit emise na osobu rozvinutých zemí a do roku 2030 snížit emise na jednotku HDP o třetinu (vzhledem k 2005). Indie je kritizována za snahu navýšit výrobu elektřiny z uhlí (a tedy i lokální těžbu uhlí), nicméně současná spotřeba elektřiny na osobu je v Indii 1000kWh za rok, což je 6krát méně než průměr EU a 12krát méně než v USA. Prostředky získané pomocí uhelné daně (12 miliard dolarů) jsou převážně použité na investice do čisté energie.[^52] (Rozvoj OZE v Indii ??)
 
-* **Ambice USA v klimatických jednáních**
-Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu.
-
+#### Ambice USA v klimatických jednáních:
+ Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu. Úsilí Indie hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*[^59] 
+ 
 ## Rusko (6)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
@@ -281,7 +285,13 @@ https://climateactiontracker.org/countries/gambia/ ,
 [^47]: Qi Cui, Wei Xie, Yu Liu : [Effects of sea level rise on economic development and regional disparity in China](https://www.sciencedirect.com/science/article/abs/pii/S0959652617328378), Journal of Cleaner Production, Volume 176, 2018
 [^48]: Chih-Yin Lai,E.: [Climate Change Impacts on China's Environment: Biophysical Impacts](https://www.wilsoncenter.org/publication/climate-change-impacts-chinas-environment-biophysical-impacts), The Wilson Center, (2009)
 [^49]: ClimateActionTracker.org: [China](https://climateactiontracker.org/countries/china/)
+[^401]: Bloomberg Green: [China Blows Past Clean Energy Record With Wind Capacity Jump](https://www.bloomberg.com/news/articles/2021-01-20/china-blows-past-clean-energy-record-with-extra-wind-capacity), 2021
+[^402]:  National Geographic: [One of the World's Biggest Fisheries Is on the Verge of Collapse](https://www.nationalgeographic.com/animals/article/wildlife-south-china-sea-overfishing-threatens-collapse), 2016
+[^403]: International Energy Agency: [The Global EV Outlook 2021](https://www.iea.org/reports/global-ev-outlook-2021)
 
+
+<!---India-->
+[^50]: [Will India get too hot to work?](https://www.mckinsey.com/business-functions/sustainability/our-insights/will-india-get-too-hot-to-work), McKinsey Global Institute, 2020.
 [^51]: [Carbon Brief Country Profile](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
 [^52]: Climate [PIB](https://pib.gov.in/newsite/PrintRelease.aspx?relid=176178)
 
