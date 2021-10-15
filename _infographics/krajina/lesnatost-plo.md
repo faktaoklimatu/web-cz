@@ -28,7 +28,7 @@ V Česku je přibližně 2,9 miliónů hektarů lesů. Kdybychom je dali dohroma
 
 ### Co jsou Přírodní lesní oblasti?
 
-[Přírodní lesní oblasti (PLO)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/prirodni-lesni-oblasti-plo) jsou vymezená souvislá území s obdobnými růstovými podmínkami pro les, například podobné klima, půdy a terén. Jednotlivých území je celkem 41 a jsou primárně určeny pro hospodářské a právnické účely. Mezi vystupy, které jsou pro jednotlivá PLO zpracovány patří [Oblastní plány rozvoje lesů (OPRL)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/co-jsou-to-oprl), které fungují jako metodický nástroj lesnické politiky - stát může řidit, co se děje v lesích.  
+[Přírodní lesní oblasti (PLO)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/prirodni-lesni-oblasti-plo) jsou vymezená souvislá území s obdobnými růstovými podmínkami pro les, například podobné klima, půdy a terén. Jednotlivých území je celkem 41 a jsou primárně určeny pro hospodářské a právnické účely. Mezi vystupy, které jsou pro jednotlivá PLO zpracovány patří [Oblastní plány rozvoje lesů (OPRL)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/co-jsou-to-oprl), které fungují jako metodický nástroj lesnické politiky - stát jimi může řidit, co se děje v lesích.  
 
 ### Co je považováno za "les"?
 
@@ -36,7 +36,7 @@ V Česku je přibližně 2,9 miliónů hektarů lesů. Kdybychom je dali dohroma
 
 ## Metodické poznámky
 -  Výpočet lestnatosti v Česku pochází z [Národní Inventarizace Lesů (NIL)](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015), což je nezávazné získávání údajů o lese na celé ploše ČR. Jeho šetřením byl pověřen Ústav pro hospodářskou úpravu lesa (ÚHÚL). Cílem je podání přesných informací o stavu lesa, jako je například struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů a charakteristika lesních ekosystémů.
-- Část inventarizačních údajů je získávána z ortofotomap (výměra lesa) a z jiných zdrojů (katastr nemovitostí), ale převážná část údajů je získávána venkovním šetřením. To probíhá na inventarizační ploše, což je pravoúhá síť složená z inventarizačních čtverců o velikosti 2x2 km. Na této ploše pak probíhá samotné šetření, jako například: popis a měření stromu, ležící odumřelé dřevo, pařezy, inventarizace lesních cest a vodních toků  a další. 
+- Část inventarizačních údajů je získávána z ortofotomap (výměra lesa) a z jiných zdrojů (katastr nemovitostí), nicméně převážná část údajů je získávána venkovním šetřením. To probíhá na inventarizační ploše, což je pravoúhá síť složená z inventarizačních čtverců o velikosti 2x2 km. Na této ploše pak probíhá samotné šetření, jako například: popis a měření stromu, ležícího odumřelého dřeva a pařezů, inventarizace lesních cest a vodních toků a další. 
 
 ### V čem spočívají nesrovnalosti v datech o lesích? 
 
