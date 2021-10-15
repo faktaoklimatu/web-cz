@@ -43,6 +43,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Evropská unie a Spojené království"
+    map="eu+uk.svg"
     population-total="515 mil."
     population-share="6,7"
     gdp-per-cap="41 500"
@@ -73,7 +74,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Spojené státy americké"
-    flag="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+    map="usa.svg"
     population-total="329 mil."
     population-share="4,3"
     gdp-per-cap="60 200"
@@ -95,7 +96,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Čínská lidová republika"
-    flag="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
+    map="cina.svg"
     population-total="1,4 mld."
     population-share="18,2"
     gdp-per-cap="16 400"
@@ -121,7 +122,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Indie"
-    flag="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+    map="indie.svg"
     population-total="1,38 mld."
     population-share="17,9"
     gdp-per-cap="6 120"
@@ -148,7 +149,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ruská federace"
-    flag="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
+    map="rusko.svg"
     population-total="144 mil."
     population-share="1,9"
     gdp-per-cap="26 900"
@@ -169,7 +170,6 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 <!-- FIXME: Round (square) logo → need to make it smaller and centered. -->
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ostrovní státy"
-    flag="https://upload.wikimedia.org/wikipedia/en/0/06/AOSIS_logo.svg"
     population-total="71 mil."
     population-share="0,9"
     gdp-per-cap="16 100"
@@ -195,7 +195,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africká unie"
-    flag="https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_the_African_Union.svg"
+    map="africke-staty.svg"
     population-total="1,1 mld."
     population-share="14,3"
     gdp-per-cap="3 350"
@@ -217,6 +217,8 @@ https://climateactiontracker.org/countries/gambia/ ,
 ## Ropné státy Perského zálivu
 
 {% include includes-local/pozice-hracu-cop/country-table.html
+    name="Perský záliv"
+    map="persky-zaliv.svg"
     population-total="183 mil."
     population-share="2,4"
     gdp-per-cap="23 400"
@@ -236,7 +238,7 @@ https://climateactiontracker.org/countries/gambia/ ,
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Brazílie"
-    flag="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+    map="brazilie.svg"
     population-total="213 mil."
     population-share="2,8"
     gdp-per-cap="14 100"
@@ -255,6 +257,7 @@ https://climateactiontracker.org/countries/gambia/ ,
 ## Japonsko a Jižní Korea
 
 {% include includes-local/pozice-hracu-cop/country-table.html
+    name="Japonsko a Jižní Korea"
     population-total="178 mil."
     population-share="2,31"
     gdp-per-cap="41 700"
