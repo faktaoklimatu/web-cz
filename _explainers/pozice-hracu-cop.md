@@ -97,13 +97,15 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     emissions-share="27,4"
 %}
 
-* **Současné a budoucí dopady klimatické změny:** 
-Čína v souvislosti s klimatickou změnou již nyní potýká s **výkyvy v zemědělské produkci kvůli nedostatku vody**, zejména v severních oblastech země. Jižní části Číny naopak zasahují **častější povodně**. Čína má i poměrně bohatou biodiverzitu, která bude změnou klimatu významně zasažena. V následujícím století ovlivní tání himalájských ledovců dostupnost vody v řekách, které jsou ledovci napájeny. **Nárůst hladin oceánů** bude významně dopadat na obří města na pobřeží (např. Shanghai, Tianjin, Guangzhou) - očekává se že během 21.století bude kvůli zaplavování nízko položených oblastí na pobřeží nutné přesídlit okolo 60 miliónů obyvatel. 
+#### Současné a budoucí dopady klimatické změny:
+ Čína v souvislosti s klimatickou změnou již nyní potýká s **výkyvy v zemědělské produkci kvůli nedostatku vody**, zejména v severních oblastech země[^44]. Jižní části Číny naopak zasahují **častější povodně**. Čína má i poměrně bohatou biodiverzitu, která bude změnou klimatu významně zasažena[^48]. V následujícím století ovlivní tání himalájských ledovců dostupnost vody v řekách, které jsou ledovci napájeny. **Nárůst hladin oceánů** bude významně dopadat na obří města na pobřeží [^45] (např. Shanghai, Tianjin, Guangzhou) - očekává se že během 21.století bude kvůli zaplavování nízko položených oblastí na pobřeží nutné přesídlit více než 60 miliónů obyvatel[^46],[^47]. 
 
+#### Příležitosti a překážky přechodu k udržitelnosti:
+ Čínská energetika je v současnosti závislá na uhelných elektrárnách a bude náročné se této závislosti zbavit. Na druhou stranu je Čína světový  leader v produkci Fotovoltaických panelů a mnoha dalších technologií. (Data o instalachích OZE v Číně). V souvislosti s životním prostředím a klimatickou změnou se bude Čína potýkat overfishing / kolapsem populací ryb v Jihočínském moři. V obecném kontextu je výzvou pro čínu je zvládnutí populační dynamiky.
 
-* **Příležitosti a překážky přechodu k udržitelnosti:** Čínská energetika je v současnosti závislá na uhelných elektrárnách a bude náročné se této závislosti zbavit. Na druhou stranu je Čína světový  leader v produkci Fotovoltaických panelů a mnoha dalších technologií. (Data o instalachích OZE v Číně). V souvislosti s životním prostředím a klimatickou změnou se bude Čína potýkat overfishing / kolapsem populací ryb v Jihočínském moři. V obecném kontextu je výzvou pro čínu je zvládnutí populační dynamiky.
-* **Současné úsilí o ochranu klimatu:** V Číně se klimatická změna dostala na státní agendu vcelku nedávno (okolo 2010). V roce 2021 vyhlásila Čína cíl dosáhnout uhlíkové neutrality do 2060. Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními směřuje Čína k dosažení vrcholu před 2028[^41]. Nedávno také Čína spustila vlastní systém pro obchodování s emisními povolenkami[^42] a vyhlásila, že přestane financovat výstavbu uhelných elektráren v zahraničí.[^43] Úsilí Číny je sice CAT hodnotí jako *velmi nedostatečné*, v posledním roce však začíná být Čína velmi aktivní, a zdaleka nelze říkat, že pro snížení emisí nic nedělá.
-* **Ambice Číny v klimatických jednáních**
+#### Současné úsilí o ochranu klimatu:
+ V Číně se klimatická změna dostala na státní agendu vcelku nedávno, okolo roku 2008[^44] a v posledních letech začíná být ve své klimatické politice vcelku aktivní. V roce 2021 vyhlásila Čína cíl **dosáhnout uhlíkové neutrality do roku 2060**. Čínské emise skleníkových plynů zatím rostou, ale svými opatřeními směřuje Čína k dosažení vrcholu před 2028[^41]. Nedávno také Čína spustila vlastní systém pro obchodování s emisními povolenkami[^42] a vyhlásila, že přestane financovat výstavbu uhelných elektráren v zahraničí[^43]. Úsilí Číny hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*[^49].
+#### Ambice Číny v klimatických jednáních
 
 ## Indie (5)
 
@@ -177,6 +179,9 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
     emissions-per-cap="1,68"
     emissions-share="3,77"
 %}
+https://climateactiontracker.org/countries/gambia/ , 
+
+
 
 * **Současné a budoucí dopady klimatické změny:**
 * **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
@@ -236,12 +241,22 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 
 [^10]: Státy podle počtu obyvatel ve světě ([en.wikipedia.org/wiki/List_of_countries_by_population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population))  a v Evropě ([en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population))
 [^31]: Americký Národní ústav pro oceán a atmosféru (NOAA) v této souvislosti uvádí roční počty událostí, u kterých způsobená škoda překročí miliardu dolarů (tzv. billion dollar distasters). V roce 2020 se vyskytlo 22 takových událostí, což je dosud nejvyšším zaznamenaným počtem (při očištění o inflaci, aby bylo možné porovnávat různé roky).
+
+<!---China-->
 [^41]: [Carbon Brief: China update](https://www.carbonbrief.org/china-briefing-30-september-2021-widespread-power-cuts-new-orders-on-dual-control-emissions-peak-likely-before-2028)
-[^44]: [En WIKI](https://en.wikipedia.org/wiki/Climate_change_in_China)
+[^42]: Carbon Brief: [In-depth Q&A: Will China’s emissions trading scheme help tackle climate change?](https://www.carbonbrief.org/in-depth-qa-will-chinas-emissions-trading-scheme-help-tackle-climate-change), 2021
+[^43]: The Economist: [China pledges to stop financing coal plants abroad](https://www.economist.com/china/china-promises-to-stop-backing-new-coal-power-projects-overseas/21804956), 2021
+[^44]: en.wikipedia.org: [Climate change in China](https://en.wikipedia.org/wiki/Climate_change_in_China)
+[^45]: Kulp, S.A., Strauss, B.H. [New elevation data triple estimates of global vulnerability to sea-level rise and coastal flooding](https://doi.org/10.1038/s41467-019-12808-z). Nat Commun 10, 4844 (2019). [https://doi.org/10.1038/s41467-019-12808-z](https://doi.org/10.1038/s41467-019-12808-z)
+[^46]: [Flooded Future: Global vulnerability to sea level rise worse than previously understood](https://www.climatecentral.org/news/report-flooded-future-global-vulnerability-to-sea-level-rise-worse-than-previously-understood), [ClimateCentral.org](https://www.climatecentral.org/),(2019)
+[^47]: Qi Cui, Wei Xie, Yu Liu : [Effects of sea level rise on economic development and regional disparity in China](https://www.sciencedirect.com/science/article/abs/pii/S0959652617328378), Journal of Cleaner Production, Volume 176, 2018
+[^48]: Chih-Yin Lai,E.: [Climate Change Impacts on China's Environment: Biophysical Impacts](https://www.wilsoncenter.org/publication/climate-change-impacts-chinas-environment-biophysical-impacts), The Wilson Center, (2009)
+[^49]: ClimateActionTracker.org: [China](https://climateactiontracker.org/countries/china/)
+
 [^51]: [Carbon Brief Country Profile](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
 [^52]: Climate [PIB](https://pib.gov.in/newsite/PrintRelease.aspx?relid=176178)
 
-
+<!---Island States-->
 [^71]: [The World's Water](https://pacinst.org/wp-content/uploads/2013/02/worlds_water_2002_chapter53.pdf), kapitola 5: *Pacific Island Developing Country Water Resources and Climate Change*, [Pacific Institute](https://pacinst.org/),(2002)
 [^72]: [Climate change and small islands: more scientific evidence of high risks](https://climateanalytics.org/blog/2020/climate-change-and-small-islands-more-scientific-evidence-of-high-risks/), [ClimateAnalytics.org](https://climateanalytics.org/), (2020)
 [^73]: [Home by the sea: new science shows more sea-level rise impacts on small islands](https://climateanalytics.org/blog/2019/home-by-the-sea-new-science-shows-more-sea-level-rise-impacts-on-small-islands/), [ClimateAnalytics.org](https://climateanalytics.org/), (2019) 
