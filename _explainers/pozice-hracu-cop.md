@@ -42,12 +42,15 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 ## EU + UK (2)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Evropská unie a Spojené království"
     population-total="515 mil."
-    population-share="6,69"
+    population-share="6,7"
     gdp-per-cap="41 500"
-    gdp-share="1,5"
+    gdp-share="21,5"
     emissions-per-cap="8,33"
-    emissions-share="8,78"
+    emissions-share="8,8"
+    electricity-per-cap="6,37"
+    electricity-share="13,1"
 %}
 
 * **Současné a budoucí dopady klimatické změny:**
@@ -69,13 +72,16 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 ## USA (3)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Spojené státy americké"
     flag="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
     population-total="329 mil."
-    population-share="4,28"
+    population-share="4,3"
     gdp-per-cap="60 200"
     gdp-share="25,1"
-    emissions-per-cap="8,7"
+    emissions-per-cap="18,7"
     emissions-share="12,6"
+    electricity-per-cap="12,9"
+    electricity-share="16,9"
 %}
 
 * **Současné a budoucí dopady klimatické změny:** Klimatická změna v USA přispívá k větší četnosti a intenzitě extrémních projevů počasí, které dopadají zejména na jižní státy: Kalifornie zažívá intenzivní sucha a rozsáhlé požáry, Texas, Florida či Louisiana zase častější a silnější hurikány. Další státy jsou častěji zasahovány vlnami veder nebo bouřemi a souvisejícícmi povodněmi. Rostou také náklady na odstraňování škod po těchto událostech - například v roce 2020 bylo zaznamenáno 22 událostí v kategorii *billion dollar disasters*.[^31] Jako bohatý stát mám ale USA k adaptaci a řešení dopadů klimatické změny dostatek prostředků. (?? food security)
@@ -88,6 +94,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 ## Čína (4)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Čínská lidová republika"
     flag="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
     population-total="1,4 mld."
     population-share="18,2"
@@ -95,6 +102,8 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     gdp-share="17,6"
     emissions-per-cap="9,55"
     emissions-share="27,4"
+    electricity-per-cap="4,98"
+    electricity-share="27,8"
 %}
 
 #### Současné a budoucí dopady klimatické změny:
@@ -110,6 +119,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 ## Indie (5)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Indie"
     flag="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
     population-total="1,38 mld."
     population-share="17,9"
@@ -117,6 +127,8 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     gdp-share="7,4"
     emissions-per-cap="2,62"
     emissions-share="7,4"
+    electricity-per-cap="0,99"
+    electricity-share="5,4"
 %}
 
 * **Současné a budoucí dopady klimatické změny:** Indie je vzhledem ke své chudobě a podnebí už nyní velice zranitelná přírodními katastrofami, zároveň patří mezi oblsati, které budou nejvíce postiženy klimatickou změnou. Vlny veder již nyní dosahují v Indii teplot, které jsou pro lidský organismus na hranici přežití, a změna klimatu bude přinášet vlny veder silnější a častější. Severní oblasti Indie zažívají častá sucha a tání himalájských ledovců významně sníží dostupnost vody pro zemědělství (zejm. Ganga.) Ledovce jsou klíčovým zdrojem vody pro asi 250 miliónů Indů a oteplení o 1,5°C povede k roztátí nejméně třetiny ledovců do roku 2100. Klimatická změna také přináší nepravidelnosti a zvýšení intenzity monzunů, což znamená silnější záplavy a delší sucha. Klimatická změna také může přispět k rozšíření některých chorob přenášených komáry, například malárie nebo horečky dengue. Světová banka odhaduje, že klimatická změna povede k nižší životní úrovni v roce 2050 pro polovinu indické populace, a celkové dopady klimatických změn v Indii vyčísluje na 1,2 biliónu dolarů ztraceného celkového HDP.
@@ -131,12 +143,16 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 ## Rusko (6)
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Ruská federace"
+    flag="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
     population-total="144 mil."
     population-share="1,9"
     gdp-per-cap="26 900"
-    gdp-share="1,78"
-    emissions-per-cap="6,1"
-    emissions-share="4,74"
+    gdp-share="1,8"
+    emissions-per-cap="16,1"
+    emissions-share="4,7"
+    electricity-per-cap="7,12"
+    electricity-share="4,1"
 %}
 
 * **Současné a budoucí dopady klimatické změny:**
@@ -148,13 +164,16 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 
 <!-- FIXME: Round (square) logo → need to make it smaller and centered. -->
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Ostrovní státy"
     flag="https://upload.wikimedia.org/wikipedia/en/0/06/AOSIS_logo.svg"
     population-total="71 mil."
     population-share="0,9"
     gdp-per-cap="16 100"
-    gdp-share="0,99"
+    gdp-share="1"
     emissions-per-cap="5,03"
-    emissions-share="0,73"
+    emissions-share="0,7"
+    electricity-per-cap="2,43"
+    electricity-share="0,7"
 %}
 
 * **Kdo patří do této skupiny:** Skupina sdružuje 38 ostrovních států a mnoho dalších "závislých teritorií", z nichž většina jsou malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společných aliancí [AOSIS](https://www.aosis.org/) nebo [SIDS](https://en.wikipedia.org/wiki/Small_Island_Developing_States).
@@ -171,13 +190,16 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
 ## Chudé africké státy
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Africká unie"
     flag="https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_the_African_Union.svg"
     population-total="1,1 mld."
     population-share="14,3"
     gdp-per-cap="3 350"
-    gdp-share="1,78"
+    gdp-share="1,8"
     emissions-per-cap="1,68"
-    emissions-share="3,77"
+    emissions-share="3,8"
+    electricity-per-cap="0,23"
+    electricity-share="1,0"
 %}
 https://climateactiontracker.org/countries/gambia/ , 
 
@@ -192,11 +214,13 @@ https://climateactiontracker.org/countries/gambia/ ,
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
     population-total="183 mil."
-    population-share="2,38"
+    population-share="2,4"
     gdp-per-cap="23 400"
-    gdp-share="2,25"
-    emissions-per-cap="5,2"
+    gdp-share="2,3"
+    emissions-per-cap="15,2"
     emissions-share="5,7"
+    electricity-per-cap="5,74"
+    electricity-share="4,2"
 %}
 
 * **Současné a budoucí dopady klimatické změny:**
@@ -207,13 +231,16 @@ https://climateactiontracker.org/countries/gambia/ ,
 ## Brazílie
 
 {% include includes-local/pozice-hracu-cop/summary-table.html
+    name="Brazílie"
     flag="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
     population-total="213 mil."
-    population-share="2,76"
+    population-share="2,8"
     gdp-per-cap="14 100"
-    gdp-share="1,73"
+    gdp-share="1,7"
     emissions-per-cap="6,08"
-    emissions-share="2,65"
+    emissions-share="2,7"
+    electricity-per-cap="2,95"
+    electricity-share="2,5"
 %}
 
 * **Současné a budoucí dopady klimatické změny:**
@@ -227,9 +254,11 @@ https://climateactiontracker.org/countries/gambia/ ,
     population-total="178 mil."
     population-share="2,31"
     gdp-per-cap="41 700"
-    gdp-share="8,02"
+    gdp-share="8,0"
     emissions-per-cap="11,2"
-    emissions-share="4,08"
+    emissions-share="4,1"
+    electricity-per-cap="8,42"
+    electricity-share="6"
 %}
 
 * **Současné a budoucí dopady klimatické změny:**
