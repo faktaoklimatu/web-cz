@@ -7,7 +7,7 @@ published:  2020-10-05
 weight:     90
 tags-scopes: [ cr ]
 tags-topics: [ priroda ]
-caption:    "Lesy v Česku pokrývají 36,8 % plochy. Nejvyšší lesnatost najdeme v okrajových pohořích, nejnižsí je v Polabí a Jihomoravských úvalech."
+caption:    "Lesy v Česku pokrývají 36,8 % celkové plochy. Nejvyšší lesnatost najdeme v okrajových pohořích, nejnižsí je v Polabí a nížinných úvalech."
 
 ---
 
@@ -22,8 +22,8 @@ V Česku je přibližně 2,9 miliónů hektarů lesů. Kdybychom je dali dohroma
 %}
 ## Co je na mapě zobrazeno? 
 - V mapě je znázorněna lesnatost v Česku, která uvádá podíl lesní porostní půdy na celkové rozloze jednotlivých přírodních lesních oblastí.
-- Mezi území s největší lesnatostí (více, než 75 %) patří Krkonoše, Lužická pískovcová pahorkatina, Moravskoslezské Beskydy, Hrubý Jeseník a Novohradské hory.
-- Do Lužické pískovcové pahorkatiny spadá území CHKO Labské pískovce, CHKO Lužické hory a NP České Švýcarsko, jejichž lesy jsou tvrdě postiženy kůrovcovou kalamitou. Přestože má tedy území jednu z nejvyšších lesnatostí v Česku, v důsledku místní politiky nechat les sám, ať ti s kůrovcem poradí, najdete na tomto území momentálně akorát jehličnaté souše. 
+- Mezi území s největší lesnatostí (75 % a více) patří Krkonoše, Lužická pískovcová pahorkatina, Moravskoslezské Beskydy, Hrubý Jeseník a Novohradské hory.
+- Do Lužické pískovcové pahorkatiny spadá území CHKO Labské pískovce, CHKO Lužické hory a NP České Švýcarsko, jejichž lesy jsou tvrdě postiženy kůrovcovou kalamitou. Přestože má tedy území jednu z nejvyšších lesnatostí v Česku, v důsledku místní politiky nechat les sám, ať ti s kůrovcem poradí, najdete na tomto území momentálně akorát víceméně jehličnaté souše, které se začínají pomalu přirozeně obnovovat. 
 - Mezi lesní oblasti s nejnižší lesnatostí patří území Hornomoravského a Jihomoravského úvalu, což jsou nížinná území v okolí Olomouce a Znojma, dále pak Polabí či Předkrušnohorská pánev. 
 
 ### Co jsou Přírodní lesní oblasti?
