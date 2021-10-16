@@ -39,31 +39,6 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 Česká republika rozhodně není malá a nevýznamná země. V celosvětovém i v evropském kontextu je ČR středně velkou a podle mnoha měřítek úspěšnou zemí. Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější**[^10] (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index). (??Česko dává nulové klimatické finance?)
 
-## EU + UK (2)
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Evropská unie a Spojené království"
-    map="eu+uk.svg"
-    population-total="515 mil."
-    population-share="6,7"
-    gdp-per-cap="41 500"
-    gdp-share="21,5"
-    emissions-per-cap="8,33"
-    emissions-share="8,8"
-    electricity-per-cap="6,26"
-    electricity-share="12,6"
-%}
-
-#### Současné a budoucí dopady klimatické změny:
- Ve srovnání s jinými částmi světa nebude mít klimatická změna v Evropě dramatické důsledky. Obecně v Evropě můžeme očekávat častější **extrémní projevy počasí** (například vlny veder, prudké deště způsobující záplavy a sesuvy půdy nebo delší období sucha a neúrody). Středomoří zasáhne zřetelný **trend poklesu srážek**, sucha a s ním souvisejících požárů, střední a severní Evropa bude řeši adaptaci lesnictví a některé regiony budou také ohroženy stoupající mořskou hladinou (Nizozemsko). Na rozdíl od méně rozvinutých částí světa má Evropa výhodu i v dostatku zdrojů, které jí umožní se na změny postupně adaptovat.
-
-#### Výzvy a příležitosti
- Evropská unie je společně s Velkou Británií světovým lídrem v úsilí o transformaci hospodářství a přechod na nízkoemisní technologie. Životní úroveň Evropanů je přibližně srovnatelná s obyvateli Japonska a Jižní Koreje a zároveň vyšší než například v Rusku, přesto máme v Evropě nižší emise skleníkových plynů na osobu i nižší energetickou spotřebu. Evropský systém pro obchodování s emisními povolenkami byl inspirací pro mnoho dalších zemí, které postupně zavedly podobná opatření (Čína, některé státy USA či Jižní Korea). Transformace hospodářství však přináší i řadu výzev – je například nutné zaváděná opatření dobře vysvětlit veřejnosti a poskytnout dostatečnou podporu nejvíce zasaženým regionům. Klíčové je také udržet konkurenceschopnost evropské ekonomiky.
-
-#### Dosavadní úsilí o ochranu klimatu
- Evropská unie nedávno posílila své klimatické ambice a zavázala se ke **snížení emisí o 55 % do roku 2030** (oproti roku 1990) a k **dosažení uhlíkové neutrality do roku 2050**. Stejný termín si stanovila i Velká Británie, přičemž její emisní závazky jsou 68% snížení do roku 2030 a 78% do roku 2035 (oproti roku 1990). Některé evropské státy usilují o ještě k rychlejší dekarbonizaci (Finsko do roku 2035, Rakousko a Island do roku 2040, Německo a Švédsko do roku 2045) a často také doplňují emisní povolenky o národní uhlíkovou daň, která umožňuje zahrnout další sektory ekonomiky. V přípravě na konferenci COP26 v Glasgow se Británie také zavázala navýšit své klimatické finance určené na podporu rozvojových zemí na 11,6 miliard liber ročně (od roku 2025) a plánuje plánuje bezemisní výrobu elektřiny do 2035.[^21] Je však potřeba zdůraznit, že spolu s dalšími rozvinutými regiony světa je Evropa zodpovědná za převážné množství emisí CO<sub>2</sub> v atmosféře, a na probíhající klimatické změně tak měla mnohem větší podíl než chudé země v jiných částech světa.
-
-
 ## USA (3)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
@@ -88,6 +63,66 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
  USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr dosáhnout uhlíkové neutrality do roku 2050. Některé státy v USA mají vnitřní uhlíkovou daň či systém emisních povolenek, ale na federální úrovni zpoplatnění emisí chybí. Pentagon nedávno zařadil klimatickou změnu mezi bezpečnostní priority.  (?? Investice a zastavování projektů)
 
 [https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts](https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts)
+
+## Rusko (6)
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Ruská federace"
+    map="rusko.svg"
+    population-total="144 mil."
+    population-share="1,9"
+    gdp-per-cap="26 900"
+    gdp-share="1,8"
+    emissions-per-cap="16,1"
+    emissions-share="4,7"
+    electricity-per-cap="7,22"
+    electricity-share="4,1"
+%}
+
+* **Současné a budoucí dopady klimatické změny:**
+* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
+* **Současné úsilí o ochranu klimatu:**
+* **Ambice USA v klimatických jednáních**
+
+## Ropné státy Perského zálivu
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Perský záliv"
+    map="persky-zaliv.svg"
+    population-total="183 mil."
+    population-share="2,4"
+    gdp-per-cap="23 400"
+    gdp-share="2,3"
+    emissions-per-cap="15,2"
+    emissions-share="5,7"
+    electricity-per-cap="5,93"
+    electricity-share="4,3"
+%}
+
+* **Současné a budoucí dopady klimatické změny:**
+* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
+* **Současné úsilí o ochranu klimatu:**
+* **Ambice USA v klimatických jednáních**
+
+## Japonsko a Jižní Korea
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Japonsko a Jižní Korea"
+    map="japonsko+korea.svg"
+    population-total="178 mil."
+    population-share="2,31"
+    gdp-per-cap="41 700"
+    gdp-share="8,0"
+    emissions-per-cap="11,2"
+    emissions-share="4,1"
+    electricity-per-cap="8,44"
+    electricity-share="5,86"
+%}
+
+* **Současné a budoucí dopady klimatické změny:**
+* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
+* **Současné úsilí o ochranu klimatu:**
+* **Ambice USA v klimatických jednáních**
 
 ## Čína (4)
 
@@ -114,6 +149,76 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
  V Číně se klimatická změna dostala na státní agendu vcelku nedávno, okolo roku 2008[^44] a v posledních letech začíná být ve své klimatické politice vcelku aktivní. V roce 2021 vyhlásila Čína cíl **dosáhnout uhlíkové neutrality do roku 2060**. Čínské emise skleníkových plynů zatím rostou, ale svými opatřeními směřuje Čína k dosažení vrcholu před 2028.[^41] Nedávno také Čína spustila vlastní systém pro obchodování s emisními povolenkami[^42] a vyhlásila, že přestane financovat výstavbu uhelných elektráren v zahraničí.[^43] Úsilí Číny hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*.[^49]
 
 #### Ambice Číny v klimatických jednáních
+
+## Evropská unie a Velká Británie (2)
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Evropská unie a Spojené království"
+    map="eu+uk.svg"
+    population-total="515 mil."
+    population-share="6,7"
+    gdp-per-cap="41 500"
+    gdp-share="21,5"
+    emissions-per-cap="8,33"
+    emissions-share="8,8"
+    electricity-per-cap="6,26"
+    electricity-share="12,6"
+%}
+
+#### Současné a budoucí dopady klimatické změny:
+ Ve srovnání s jinými částmi světa nebude mít klimatická změna v Evropě dramatické důsledky. Obecně v Evropě můžeme očekávat častější **extrémní projevy počasí** (například vlny veder, prudké deště způsobující záplavy a sesuvy půdy nebo delší období sucha a neúrody). Středomoří zasáhne zřetelný **trend poklesu srážek**, sucha a s ním souvisejících požárů, střední a severní Evropa bude řeši adaptaci lesnictví a některé regiony budou také ohroženy stoupající mořskou hladinou (Nizozemsko). Na rozdíl od méně rozvinutých částí světa má Evropa výhodu i v dostatku zdrojů, které jí umožní se na změny postupně adaptovat.
+
+#### Výzvy a příležitosti
+ Evropská unie je společně s Velkou Británií světovým lídrem v úsilí o transformaci hospodářství a přechod na nízkoemisní technologie. Životní úroveň Evropanů je přibližně srovnatelná s obyvateli Japonska a Jižní Koreje a zároveň vyšší než například v Rusku, přesto máme v Evropě nižší emise skleníkových plynů na osobu i nižší energetickou spotřebu. Evropský systém pro obchodování s emisními povolenkami byl inspirací pro mnoho dalších zemí, které postupně zavedly podobná opatření (Čína, některé státy USA či Jižní Korea). Transformace hospodářství však přináší i řadu výzev – je například nutné zaváděná opatření dobře vysvětlit veřejnosti a poskytnout dostatečnou podporu nejvíce zasaženým regionům. Klíčové je také udržet konkurenceschopnost evropské ekonomiky.
+
+#### Dosavadní úsilí o ochranu klimatu
+ Evropská unie nedávno posílila své klimatické ambice a zavázala se ke **snížení emisí o 55 % do roku 2030** (oproti roku 1990) a k **dosažení uhlíkové neutrality do roku 2050**. Stejný termín si stanovila i Velká Británie, přičemž její emisní závazky jsou 68% snížení do roku 2030 a 78% do roku 2035 (oproti roku 1990). Některé evropské státy usilují o ještě k rychlejší dekarbonizaci (Finsko do roku 2035, Rakousko a Island do roku 2040, Německo a Švédsko do roku 2045) a často také doplňují emisní povolenky o národní uhlíkovou daň, která umožňuje zahrnout další sektory ekonomiky. V přípravě na konferenci COP26 v Glasgow se Británie také zavázala navýšit své klimatické finance určené na podporu rozvojových zemí na 11,6 miliard liber ročně (od roku 2025) a plánuje plánuje bezemisní výrobu elektřiny do 2035.[^21] Je však potřeba zdůraznit, že spolu s dalšími rozvinutými regiony světa je Evropa zodpovědná za převážné množství emisí CO<sub>2</sub> v atmosféře, a na probíhající klimatické změně tak měla mnohem větší podíl než chudé země v jiných částech světa.
+
+## Brazílie
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Brazílie"
+    map="brazilie.svg"
+    population-total="213 mil."
+    population-share="2,8"
+    gdp-per-cap="14 100"
+    gdp-share="1,7"
+    emissions-per-cap="6,08"
+    emissions-share="2,7"
+    electricity-per-cap="3,01"
+    electricity-share="2,5"
+%}
+
+* **Současné a budoucí dopady klimatické změny:**
+* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
+* **Současné úsilí o ochranu klimatu:**
+* **Ambice USA v klimatických jednáních**
+
+## Ostrovní státy (7)
+
+{% include includes-local/pozice-hracu-cop/country-table.html
+    name="Ostrovní státy"
+    map="ostrovy.svg"
+    population-total="71 mil."
+    population-share="0,9"
+    gdp-per-cap="16 100"
+    gdp-share="1"
+    emissions-per-cap="5,03"
+    emissions-share="0,7"
+    electricity-per-cap="2,52"
+    electricity-share="0,7"
+%}
+
+* **Kdo patří do této skupiny:** Skupina sdružuje 38 ostrovních států a mnoho dalších "závislých teritorií", z nichž většina jsou malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společných aliancí [AOSIS](https://www.aosis.org/) nebo [SIDS](https://en.wikipedia.org/wiki/Small_Island_Developing_States).
+
+#### Současné a budoucí dopady klimatické změny:
+ Pro malé ostrovní státy, u nichž se velká část území často nachází jen metr či dva nad hladinou moře, představuje klimatická změna obrovskou výzvu:[^72] budoucí **vzestup hladin oceánů je pro ně hrozbou, na kterou prakticky nemají možnost se adaptovat**. Navíc jde o chudé státy, které na adaptaci nemají prostředky, a zvládání současných dopadů je pro ně velice obtížné. V současnosti jsou pro ně hlavními hrozbami **častější a silnější hurikány**[^74] (nebo tajfuny, obecněji tropické cyklóny), **eroze pobřeží** a **zasolování zásob pitné vody**.[^71] Již probíhající umírání korálových útesů a častější mořské vlny veder (marine heatwaves) významně zasáhnou také hlavní zdroje obživy místních obyvatel: turismus a rybolov.
+
+#### Příležitosti a překážky transformace k nízkouhlíkové společnosti:
+ Většina ostrovních států nemá významný průmysl, který by bylo nutné transformovat ani netěží ropu. Nároky energetiky budou moci pokrýt z obnovitelných zdrojů. Tedy z pohledu přijmů do ekonomiky pro ně není transformace k nízkouhlíkové společnosti významné riziko. Hlavní problém pro tyto státy je adaptace, zejména v zemědělství a rybolovu.
+
+#### Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních:
+ Ostrovní státy nemají mnoho příležitostí ke snižování svých emisí a zároveň jsou změnou klimatu silně ohroženy. Zásadní je jejich diplomatické úsilí.
 
 ## Indie (5)
 
@@ -142,54 +247,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 #### Ambice USA v klimatických jednáních:
  Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu. Úsilí Indie hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*.[^59]
 
-## Rusko (6)
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Ruská federace"
-    map="rusko.svg"
-    population-total="144 mil."
-    population-share="1,9"
-    gdp-per-cap="26 900"
-    gdp-share="1,8"
-    emissions-per-cap="16,1"
-    emissions-share="4,7"
-    electricity-per-cap="7,22"
-    electricity-share="4,1"
-%}
-
-* **Současné a budoucí dopady klimatické změny:**
-* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
-* **Současné úsilí o ochranu klimatu:**
-* **Ambice USA v klimatických jednáních**
-
-## Ostrovní státy (7)
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Ostrovní státy"
-    map="ostrovy.svg"
-    population-total="71 mil."
-    population-share="0,9"
-    gdp-per-cap="16 100"
-    gdp-share="1"
-    emissions-per-cap="5,03"
-    emissions-share="0,7"
-    electricity-per-cap="2,52"
-    electricity-share="0,7"
-%}
-
-* **Kdo patří do této skupiny:** Skupina sdružuje 38 ostrovních států a mnoho dalších "závislých teritorií", z nichž většina jsou malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společných aliancí [AOSIS](https://www.aosis.org/) nebo [SIDS](https://en.wikipedia.org/wiki/Small_Island_Developing_States).
-
-#### Současné a budoucí dopady klimatické změny:
- Pro malé ostrovní státy, u nichž se velká část území často nachází jen metr či dva nad hladinou moře, představuje klimatická změna obrovskou výzvu:[^72] budoucí **vzestup hladin oceánů je pro ně hrozbou, na kterou prakticky nemají možnost se adaptovat**. Navíc jde o chudé státy, které na adaptaci nemají prostředky, a zvládání současných dopadů je pro ně velice obtížné. V současnosti jsou pro ně hlavními hrozbami **častější a silnější hurikány**[^74] (nebo tajfuny, obecněji tropické cyklóny), **eroze pobřeží** a **zasolování zásob pitné vody**.[^71] Již probíhající umírání korálových útesů a častější mořské vlny veder (marine heatwaves) významně zasáhnou také hlavní zdroje obživy místních obyvatel: turismus a rybolov.
-
-
-#### Příležitosti a překážky transformace k nízkouhlíkové společnosti:
- Většina ostrovních států nemá významný průmysl, který by bylo nutné transformovat ani netěží ropu. Nároky energetiky budou moci pokrýt z obnovitelných zdrojů. Tedy z pohledu přijmů do ekonomiky pro ně není transformace k nízkouhlíkové společnosti významné riziko. Hlavní problém pro tyto státy je adaptace, zejména v zemědělství a rybolovu.
-
-#### Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních:
- Ostrovní státy nemají mnoho příležitostí ke snižování svých emisí a zároveň jsou změnou klimatu silně ohroženy. Zásadní je jejich diplomatické úsilí.
-
-## Africké státy
+## Státy Afriky
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africké státy kromě JAR"
@@ -203,69 +261,8 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
     electricity-per-cap="0,46"
     electricity-share="2,3"
 %}
-https://climateactiontracker.org/countries/gambia/ ,
 
-
-
-* **Současné a budoucí dopady klimatické změny:**
-* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
-* **Současné úsilí o ochranu klimatu:**
-* **Ambice USA v klimatických jednáních**
-
-## Ropné státy Perského zálivu
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Perský záliv"
-    map="persky-zaliv.svg"
-    population-total="183 mil."
-    population-share="2,4"
-    gdp-per-cap="23 400"
-    gdp-share="2,3"
-    emissions-per-cap="15,2"
-    emissions-share="5,7"
-    electricity-per-cap="5,93"
-    electricity-share="4,3"
-%}
-
-* **Současné a budoucí dopady klimatické změny:**
-* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
-* **Současné úsilí o ochranu klimatu:**
-* **Ambice USA v klimatických jednáních**
-
-## Brazílie
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Brazílie"
-    map="brazilie.svg"
-    population-total="213 mil."
-    population-share="2,8"
-    gdp-per-cap="14 100"
-    gdp-share="1,7"
-    emissions-per-cap="6,08"
-    emissions-share="2,7"
-    electricity-per-cap="3,01"
-    electricity-share="2,5"
-%}
-
-* **Současné a budoucí dopady klimatické změny:**
-* **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
-* **Současné úsilí o ochranu klimatu:**
-* **Ambice USA v klimatických jednáních**
-
-## Japonsko a Jižní Korea
-
-{% include includes-local/pozice-hracu-cop/country-table.html
-    name="Japonsko a Jižní Korea"
-    map="japonsko+korea.svg"
-    population-total="178 mil."
-    population-share="2,31"
-    gdp-per-cap="41 700"
-    gdp-share="8,0"
-    emissions-per-cap="11,2"
-    emissions-share="4,1"
-    electricity-per-cap="8,44"
-    electricity-share="5,86"
-%}
+https://climateactiontracker.org/countries/gambia/
 
 * **Současné a budoucí dopady klimatické změny:**
 * **Příležitosti a překážky transformace k nízkouhlíkové společnosti:**
