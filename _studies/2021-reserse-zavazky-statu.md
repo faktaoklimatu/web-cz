@@ -16,7 +16,6 @@ items:
     share:    "23,46 %"
     netzero:  "2060"
     pledge30: "−60 % až −65 % emisí na jednotku HDP oproti r. 2005, zastropovat roční produkci CO<sub>2</sub> na 10,3 Gt"
-    scopeC:   1
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CHN"
     ndc-date: 2016-9-3
     links:
@@ -87,7 +86,7 @@ items:
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
     share:    "4,52 %"
     netzero:  "(2070)"
-    pledge30: "−29 % ročních emisí oproti status quo, konec nelegální těžby dřeva"
+    pledge30: "−29 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
     ndc-date: 2016-11-6
     links:
@@ -123,7 +122,7 @@ items:
   - country:  "Irán"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
     share:    "1,76 %"
-    pledge30: "Neratifikováno; −4 % ročních emisí oproti status quo"
+    pledge30: "Neratifikováno; −4 % ročních emisí oproti statu quo"
     links:
       - title:  INDC
         url:    "https://www4.unfccc.int/sites/submissions/INDC/Published Documents/Iran/1/INDC Iran Final Text.pdf"
@@ -148,7 +147,7 @@ items:
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     share:    "1,39 %"
-    pledge30: "−22 % ročních emisí oproti status quo"
+    pledge30: "−22 % ročních emisí oproti statu quo"
     other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
     ndc-date: 2020-12-30
@@ -159,7 +158,7 @@ items:
   - country:  "Saúdská Arábie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
     share:    "1,34 %"
-    pledge30: "−130 MtCO<sub>2</sub>eq oproti status quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
+    pledge30: "−130 Mt CO<sub>2</sub>eq oproti statu quo; odpovídá 62% až 108% zvýšení emisí oproti r. 2010"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
     ndc-date: 2016-11-3
     links:
