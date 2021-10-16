@@ -170,7 +170,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 <!-- FIXME: Missing map. -->
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ostrovní státy"
-    map="eu+uk.svg"
+    map="ostrovy.svg"
     population-total="71 mil."
     population-share="0,9"
     gdp-per-cap="16 100"
@@ -196,7 +196,7 @@ Pro pochopení komplexnosti mezinárodních jednání je také důležité si uv
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africké státy kromě JAR"
-    map="africke-staty.svg"
+    map="afrika.svg"
     population-total="1,26 mld."
     population-share="16,4"
     gdp-per-cap="4 400"
@@ -261,7 +261,7 @@ https://climateactiontracker.org/countries/gambia/
 <!-- FIXME: Missing map. -->
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Japonsko a Jižní Korea"
-    map="brazilie.svg"
+    map="japonsko+korea.svg"
     population-total="178 mil."
     population-share="2,31"
     gdp-per-cap="41 700"
