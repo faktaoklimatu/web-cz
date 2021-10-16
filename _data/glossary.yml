@@ -41,7 +41,7 @@
 
 - id: cop
   name-short: "COP"
-  name-long: "Conference of Parties"
+  name-long: "Conference of the Parties"
   description: "V návaznosti na rámcové úmluvy OSN se konají navazující konference smluvních stran (COP). Konference smluvních stran je nejvyšším správním orgánem dané ůmluvy OSN. Jejím úkolem je vytvářet shodu na řešeních a naplňovat cíle úmluvy pomocí konkrétní právních úprav. Úmluv OSN existuje celá řada, na našich stránkách se nejčastěji odkazujeme na [Rámcovou úmluvu OSN o změně klimatu](/slovnik#unfccc) a na ni navazující konference smluvních stran. Příkladem mohou být UNFCCC:COP3, kde byl podepsán [Kjótský protokol](/slovnik#kjotskyprotokol), nebo UNFCCC:COP21, kde byla podepsána [Pařížská dohoda](/slovnik#parizskadohoda)."
 
 - id: emisniintenzitaekonomiky
