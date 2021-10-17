@@ -7,27 +7,28 @@ published:     2021-10-18
 weight:        95
 tags-scopes:   [ svet ]
 tags-topics:   [ opatreni, dohody, budoucnost ]
-caption:       "TODO Perex"
+data-our:   "https://docs.google.com/spreadsheets/d/1_mHnCTeOLjhMiZY8_fcrgI4hy3v2iNf9EZ1ScUCQifY/edit?usp=sharing"
+caption:       "Přehled aktérů mezinárodních klimatických jednání na základě dat o emisích CO<sub>2</sub>, HDP, spotřebě elektřiny a velikosti populace ukazuje, že jednotliví aktéři vstupují do těchto jednání s různými výchozími podmínkami. Ty pak ovlivňují jejich vyjednávací pozici."
 ---
 
-Shrnutí TODO
+Tato infografika přináší přehled státních aktérů [mezinárodních klimatických jednání](https://faktaoklimatu.cz/infografiky/svetove-dohody), zejména v souvislosti s <glossary id="cop">COP</glossary>.
 
-Přehled hlavních aktérů v rámci světových klimatických jednání, zejména v souvislosti
-s <glossary id="cop">COP</glossary>
+## Jak číst tuto infografiku?
 
-*   Populace
-*   Emise per capita
-*   HDP PPP per capita
-*   Spotřeba elektřiny per capita
+Tato infografika srovnává státní aktéry mezinárodních klimatických jednání podle emisí v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary> na osobu, HDP na osobu v amerických dolarech podle parity kupní síly a spotřeby elektřiny na osobu v megawatthodinách, přičemž jednotlivý aktéři jsou řazeni podle prvního z ukazatelů, tedy emisí na osobu. Tyto hodnoty jsou zároveň uvedeny v kontextu podílu na světovém celku. Například emise na osobu jsou vyjádřeny jak v kontextu daného státu nebo skupiny států, tak jako podíl na světových emisích.
 
-TODO: Odkazy na `/explainery/pozice-hracu-cop`, `/studie/2021-reserse-zavazky-statu`, `/explainery/uhlikova-neutralita`
+## Hlavní sdělení
+- Zobrazené indikátory poukazují na nerovné charakteristiky jednotlivých aktérů, které znamenají různé vstupní podmínky pro vyjednávání na mezinárodním poli.
+- Státy zastupující velký podíl světové populace, jako je Indie nebo státy Afriky, produkují přibližně devětkrát méně emisí v jednotkách CO<sub>2</sub>eq na osobu (přibližně 2,5 tuny) než nejbohatší ekonomika světa, USA (téměř 19 tun). Podobně to platí pro spotřebu elektřiny na osobu, kdy je rozdíl téměř dvanáctinásobný – 0,5 až 1 megawatthodina (MWh) na osobu versus 12,7.
+- Ačkoliv v absolutních číslech je Čína největším světovým emitentem, v přepočtu emisí na osobu dosahuje nižších hodnot než __Česko__ (9,6 vs 12 tun).
+- U zobrazených aktérů lze pozorovat souvislost mezi výší HDP na osobu a spotřebou elektřiny, tedy čím vyšší HDP, tím vyšší spotřeba elektřiny. Tento vztah pak částečně funguje i s emisemi na osobu, zejména u průmyslově založených ekonomik.
 
-## Více o jednotlivých událostech a dohodách
+## Poznámky a doplnění
 
-TODO
+Pro přehlednost v infografice nezobrazujeme mj. státy střední a jižní Ameriky, státy jihovýchodní Asie, Kanadu a Austrálii.
 
 ## Zdroje
 
-1.  [EDGAR](https://edgar.jrc.ec.europa.eu/)
-1.  Ember: [Global Electricity Review 2021](https://ember-climate.org/project/global-electricity-review-2021/)
-1.  TODO
+1.  Zdrojem dat o emisích je databáze [EDGAR](https://edgar.jrc.ec.europa.eu/)  (Emission Database for Global Atmospheric Research, Emisní databáze pro globální výzkum atmosféry) provozovaná Evropskou agenturou pro životní prostředí.
+2.  Zdrojem ekonomických a populačních dat je [Světová banka](https://www.worldbank.org/en/home). HDP na osobu je přepočteno podle parity kupní síly, aby nedocházelo ke zkreslení způsobenému odlišnými cenami produktů v různých zemích. Hodnoty HDP jsou založené na indikátoru GDP, PPP (constant 2017 international $) Světové banky, který vyjadřuje HDP za rok 2020 přepočtený na ceny roku 2017 (toto o očištění o inflaci umožňuje také srovnávání hodnot HDP v čase).
+3.  Zdrojem dat o spotřebě elektřiny je think tank [Ember](https://ember-climate.org/).
