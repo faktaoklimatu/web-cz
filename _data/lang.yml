@@ -12,6 +12,9 @@ footer:
   last-change: "Poslední změna"
   privacy-policy: "Zásady zpracování osobních údajů"
 
+newsletter:
+  subscribe: "Přihlášení k newsletteru Fakta o klimatu"
+
 licence:
   id: "CC BY 4.0"
   title: "Creative Commons Uveďte původ 4.0 Mezinárodní"
@@ -50,6 +53,7 @@ sidebar:
     title: "Ke stažení"
     caption: "Líbí se vám naše infografika? Stáhněte si ji a používejte dál!"
     which-file-format: "Který formát vybrat?"
+    png-size: "Vyberte si rozměry PNG souboru pro stažení"
   data:
     title: "Podkladová data"
     caption-dataset: "Chcete vidět konkrétní čísla? Tato infografika je postavená na námi zpracovaném datasetu."
