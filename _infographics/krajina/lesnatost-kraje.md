@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Lesnatost Kraje"
+title:      "Kde je v Česku les: kraje"
 slug:       "lesnatost-kraje"
 redirect_from: "/lesnatost-kraje"
 published:  2020-10-05
