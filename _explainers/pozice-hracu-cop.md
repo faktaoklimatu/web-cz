@@ -64,7 +64,9 @@ Evropská unie je společně s Velkou Británií světovým lídrem v úsilí o 
 
 #### Dosavadní úsilí o ochranu klimatu
 
-Evropská unie nedávno posílila své klimatické ambice a zavázala se ke **snížení emisí o 55 % do roku 2030** (oproti roku 1990) a k **dosažení uhlíkové neutrality do roku 2050**. Stejný termín si stanovila i Velká Británie, přičemž její emisní závazky jsou 68% snížení do roku 2030 a 78% do roku 2035 (oproti roku 1990). Některé evropské státy usilují o ještě k rychlejší dekarbonizaci (Finsko do roku 2035, Rakousko a Island do roku 2040, Německo a Švédsko do roku 2045) a často také doplňují emisní povolenky o národní uhlíkovou daň, která umožňuje zahrnout další sektory ekonomiky. V přípravě na konferenci COP26 v Glasgow se Británie také zavázala navýšit své klimatické finance určené na podporu rozvojových zemí na 11,6 miliard liber ročně (od roku 2025) a plánuje plánuje bezemisní výrobu elektřiny do 2035[^21]. Je však potřeba zdůraznit, že spolu s dalšími rozvinutými regiony světa je Evropa zodpovědná za převážné množství emisí CO<sub>2</sub> v atmosféře, a na probíhající klimatické změně tak měla mnohem větší podíl než chudé země v jiných částech světa.
+Evropská unie nedávno posílila své klimatické ambice a zavázala se ke **snížení emisí o 55 % do roku 2030** (oproti roku 1990) a k **dosažení uhlíkové neutrality do roku 2050**. Stejný termín si stanovila i Velká Británie, přičemž její emisní závazky jsou 68% snížení do roku 2030 a 78% do roku 2035 (oproti roku 1990). Některé evropské státy usilují o ještě k rychlejší dekarbonizaci (Finsko do roku 2035, Rakousko a Island do roku 2040, Německo a Švédsko do roku 2045) a často také doplňují emisní povolenky o národní uhlíkovou daň, která umožňuje zahrnout další sektory ekonomiky. V přípravě na konferenci COP26 v Glasgow se Británie také zavázala navýšit své klimatické finance určené na podporu rozvojových zemí na 11,6 miliard liber ročně (od roku 2025) a plánuje plánuje bezemisní výrobu elektřiny do 2035[^21]. Je však potřeba zdůraznit, že spolu s dalšími rozvinutými regiony světa je Evropa zodpovědná za převážné množství emisí CO<sub>2</sub> v atmosféře, a na probíhající klimatické změně tak měla mnohem větší podíl než chudé země v jiných částech světa. 
+Klimatické cíle a dosavadní úsilí Evropy a Velké Británie hodnotí iniciativa Climate Action Tracker jako *téměř dostatečné* k naplnění Pařížské dohody.
+
 
 
 ## USA (3, final text, N)
@@ -92,7 +94,7 @@ USA je největší a nejbohatší světová ekonomika a snaží se být leaderem
 
 #### Dosavadní úsilí o ochranu klimatu
 
-USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr dosáhnout uhlíkové neutrality do roku 2050. Některé státy v USA mají vnitřní uhlíkovou daň či systém emisních povolenek, ale na federální úrovni zpoplatnění emisí chybí. Pentagon nedávno zařadil klimatickou změnu mezi bezpečnostní priority.  (?? Investice a zastavování projektů)
+USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr dosáhnout uhlíkové neutrality do roku 2050. Některé státy v USA mají vnitřní uhlíkovou daň či systém emisních povolenek, ale na federální úrovni zpoplatnění emisí chybí. Pentagon nedávno zařadil klimatickou změnu mezi bezpečnostní priority. Klimatické cíle a dosavadní úsilí USA hodnotí iniciativa Climate Action Tracker jako *nedostatečné*.  (?? Investice)
 
  [https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts](https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts)
 
@@ -121,9 +123,8 @@ USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr
 
 #### Současné úsilí o ochranu klimatu:
 
-V Číně se klimatická změna dostala na vládní agendu relativně nedávno (okolo roku 2008[^44]) a zejména v posledních letech začíná být tato země ve své klimatické politice celkem aktivní: v roce 2021 vyhlásila cíl **dosáhnout uhlíkové neutrality do roku 2060** (to je o 10 let později než u EU či USA, nicméně jde o zemi s téměř pětinou světové populace). Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními země směřuje k **dosažení vrcholu jejich vypouštění před rokem 2028**[^41]. Čína též nedávno spustila vlastní systém pro obchodování s emisními povolenkami[^42]  a ohlásila záměr přestat financovat výstavbu uhelných elektráren v zahraničí[^43]. Úsilí Číny hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*.[^49]
+V Číně se klimatická změna dostala na vládní agendu relativně nedávno (okolo roku 2008[^44]) a zejména v posledních letech začíná být tato země ve své klimatické politice celkem aktivní: v roce 2021 vyhlásila cíl **dosáhnout uhlíkové neutrality do roku 2060** (to je o 10 let později než u EU či USA, nicméně jde o zemi s téměř pětinou světové populace). Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními země směřuje k **dosažení vrcholu jejich vypouštění před rokem 2028**[^41]. Čína též nedávno spustila vlastní systém pro obchodování s emisními povolenkami[^42]  a ohlásila záměr přestat financovat výstavbu uhelných elektráren v zahraničí[^43]. Klimatické cíle a dosavadní úsilí Číny hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*.[^49]
 
-#### Ambice Číny v klimatických jednáních
 
 ## Indie (5, final text, N)
 
@@ -149,13 +150,13 @@ Indie je vzhledem ke své chudobě a podnebí již nyní velmi zranitelná vůč
 Pro Indii je zásadní výzvou **eliminace energetické chudoby** a dosažení dostatečné prosperity, která **zastaví její populační růst**. Zároveň by přechod k čistší ekonomice znamenal i čistší vzduch a životní prostředí, což by se pozitivně odrazilo na zdraví obyvatel země.
 
 #### Současné úsilí o ochranu klimatu:
-Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíkové neutrality – pouze se zavázala **nepřekročit emise odpovídající emisím na osobu rozvinutých zemí a do roku 2030 snížit své emise na jednotku HDP o třetinu** (oproti roku 2005). Je kritizována za snahu dále navýšit výrobu elektřiny z uhlí a jeho lokální těžbu, nicméně současná spotřeba elektřiny na osobu je v Indii 1 MWh za rok, což je 6krát méně než v EU a 12krát méně než v USA. Indie se ovšem snaží i o rozvoj obnovitelných zdrojů (od roku 2010 například vybírá uhelnou daň do státního fondu pro čistou energii[^52]). **Za poslední dekádu vzrostla výroba ze slunce a větru o 550 %**(oproti 75% růstu výroby z uhlí) a pokrývá dnes téměř 10 % domácí spotřeby elektřiny. Úsilí Indie hodnotí [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*.[^59]
+Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíkové neutrality – pouze se zavázala **nepřekročit emise odpovídající emisím na osobu rozvinutých zemí a do roku 2030 snížit své emise na jednotku HDP o třetinu** (oproti roku 2005). Je kritizována za snahu dále navýšit výrobu elektřiny z uhlí a jeho lokální těžbu, nicméně současná spotřeba elektřiny na osobu je v Indii 1 MWh za rok, což je 6krát méně než v EU a 12krát méně než v USA. Indie se ovšem snaží i o rozvoj obnovitelných zdrojů (od roku 2010 například vybírá uhelnou daň do státního fondu pro čistou energii[^52]). **Za poslední dekádu vzrostla výroba ze slunce a větru o 550 %**(oproti 75% růstu výroby z uhlí) a pokrývá dnes téměř 10 % domácí spotřeby elektřiny. Klimatické cíle a dosavadní úsilí Číny hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*[^59].
 
 #### Ambice Indie v klimatických jednáních:
 
 Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu.
 
-## Rusko (6, content issues, N)
+## Rusko (6, final, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ruská federace"
@@ -170,19 +171,17 @@ Klíčovými indickými požadavky jsou klimatické finance a technologický tra
     electricity-share="4,1"
 %}
 
-#### Současné a budoucí dopady klimatické změny
+#### Současné a budoucí dopady klimatické změny 
 
-Oproti celosvětovému průměřu se Rusko otepluje 2,5krát rychleji, a to zejména v arktické oblasti, která je klimatickou změnou ohrožena nejvíce. Na dvou třetinách území Ruska je trvale zmrzlá půda, který již nyní kvůli změně klimatu postupně taje. Toto tání způsobí  nestabilitu podloží a ohrozí pětinu infrastruktury země (železnice, plynovody, zdroje plynu a nerostů) a polovinu rezidenčních budov zbudovaných na permafrostu. Spolu s velmi rozsáhlými lesními požáry na Sibiři také vede k dalšímu vypouštění skleníkových plynů do atmosféry. Změny klimatu mají značný dopad na tradiční způsob života původních obyvatel, jejichž obživa závisí mj. na rybolovu nebo pastevectví.
+Arktické oblasti Ruska a Sibiře se velmi rychle oteplují, až 3 krát rychleji než světový průměr, jde ale většinou o řídce osídlené oblasti. Tyto oblasti budou zásadně postiženy rozsáhlými **lesními požáry** (potenciálně kolapsem sibiřských lesů) a **táním trvale zmrzlé půdy**. Toto tání způsobuje nestabilitu podloží a ohrozí pětinu infrastruktury země (železnice, plynovody, zdroje plynu a nerostů) a polovinu rezidenčních budov zbudovaných na permafrostu.  Projekce budoucí zemědělské produkce se rozcházejí - některé ukazují růst, jiné pokles. Lodní doprava by v budoucnu mohla využívat menšího zalednění Severního ledového oceánu. 
 
-#### Výzvy a příležitosti (final)
-
+#### Výzvy a příležitosti 
 **Rusko je ekonomicky závislé na vývozu fosilních zdrojů** (ropa, zemní plyn, uhlí). Ty tvoří dvě třetiny ruského exportu a třetinu příjmů do státního rozpočtu. Pokles poptávky po komoditách ze strany zemí směřujících ke klimatické neutralitě tak Rusko ekonomicky velmi pocítí. Zároveň se tato země potýká s nedostatkem financí potřebných k transformaci na nízkouhlíkovou ekonomiku (některé regiony jsou navíc zadlužené). Je tu i **potenciál pro obnovitelné zdroje energie, zatím však chybí ambicióznější plán pro jejich zavedení** –⁠ Rusko stále spoléhá na emisně intenzivní zdroje energie.
 
-#### Současné úsilí o ochranu klimatu
+#### Současné úsilí o ochranu klimatu 
+V roce 2019 se Rusko připojilo k Pařížské dohodě. Zavázalo se dosáhnout 30% snížení emisí do roku 2030 oproti roku 1990 - k tomuto poklesu ale již došlo v devadesátých letech v důsledku důsledek deindustrializace po pádu Sovětského svazu. V roce 2021 vzešla v platnost legislativa, podle níž budou muset vybrané podniky od roku 2023 podávat zprávu o emisích, které vypouštějí. V témže roce Rusko oznámilo, že dosáhne uhlíkové neutrality do roku 2060. Klimatické cíle a dosavadní úsilí Ruska hodnotí iniciativa Climate Action Tracker jako *kriticky nedostatečné*. 
 
-V roce 2019 se Rusko připojilo k Pařížské dohodě. Zavázalo se dosáhnout 70% snížení emisí do roku 2030 (oproti roku 1990). Již došlo k poklesu o 30 %, to je však hlavně důsledek deindustrializace po pádu Sovětského svazu – jinak jsou kroky Ruska vedoucí ke snížení emisí hodnoceny jako nedostatečné. V roce 2021 vzešla v platnost legislativa, podle níž budou muset vybrané podniky od roku 2023 podávat zprávu o emisích, které vypouštějí. V témže roce Rusko oznámilo, že dosáhne uhlíkové neutrality do roku 2060.
-
-#### Ambice Ruska v klimatických jednáních:
+https://www.csis.org/analysis/climate-change-will-reshape-russia
 
 ## Ostrovní státy (7, final text, N)
 
@@ -213,7 +212,7 @@ Většina ostrovních států nemá významný průmysl, který by bylo nutné t
 
 Příležitostí ke snižování svých emisí nemají ostrovní státy mnoho – přitom z hlediska změny klimatu patří mezi nejvíce ohrožené země. Naprosto zásadní proto bude, zda o tom dokážou přesvědčit svět, tedy **jak úspěšní budou ve svém diplomatickém úsilí**.
 
-## Státy Afriky (8, content issues, N)
+## Státy Afriky (8, final text, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africké státy kromě JAR"
@@ -228,20 +227,22 @@ Příležitostí ke snižování svých emisí nemají ostrovní státy mnoho �
     electricity-share="2,3"
 %}
 
-https://climateactiontracker.org/countries/gambia/
+#### Současné a budoucí dopady klimatické změny 
 
-#### Současné a budoucí dopady klimatické změny (final)
+Afrika patří k regionům, které jsou vůči klimatické změně **nejzranitelnější**. Klimatická změna bude zesilovat problémy, se kterými se tento kontinent potýká. Již nyní se mnohé země tohoto kontinentu potýkají se suchem a proměnami v charakteru srážek – což má **negativní dopad na přístup k pitné vodě** (až 400 milionů lidí čelí jejímu nedostatku) i na **zemědělskou produkci**, a tedy potravinovou bezpečnost (čtvrtina obyvatelstva subsaharské Afriky trpí podvýživou a třeba Madagaskar se v důsledku sucha aktuálně potýká s velkým hladomorem). Vedle toho však sucho ohrožuje i dodávky elektřiny – celou čtvrtinu v tomto regionu dodávají vodní elektrárny.  **To vše vede ke konfliktům o zdroje a ke klimatické migraci** do méně zasažených či stabilnějších regionů, ať už v rámci afrického kontinentu nebo mimo něj.
 
-Afrika patří k regionům, jež jsou klimatickou změnou zasaženy více než jiné – otepluje se o něco rychleji, než je celosvětový průměr. Hlavně je ale s ohledem na nízkou socioekonomickou životní úroveň jednou z nejzranitelnějších částí světa. Již nyní se mnohé země tohoto kontinentu potýkají se suchem a proměnami v charakteru srážek – a tyto změny ve vodním cyklu mají negativní dopad na přístup k pitné vodě (až 400 milionů lidí čelí jejímu nedostatku) i zemědělskou produkci, a tedy potravinovou bezpečnost (čtvrtina obyvatelstva subsaharské Afriky trpí podvýživou a třeba Madagaskar se v důsledku sucha aktuálně potýká s velkým hladomorem). Vedle toho však sucho ohrožuje i dodávky elektřiny – celou čtvrtinu v tomto regionu dodávají vodní elektrárny. A pak jsou zde rizika spojená s šířením malárie a dalších infekčních chorob, i zde existuje vazba na klimatické změny. To vše vede ke konfliktům o zdroje a ke klimatické migraci do méně zasažených či stabilnějších regionů, ať už v rámci afrického kontinentu nebo mimo něj.
-
-#### Výzvy a příležitosti (final)
+#### Výzvy a příležitosti 
 
 Africké státy se potýkají s nízkou životní úrovní a nedostatečným přístupem k energii, který je pro zvýšení životní úrovně zásadní. Navíc se očekává, že do roku 2040 bude poptávka po energii s ohledem na rychle rostoucí populaci dvojnásobná. **Afrika má příležitost vydat se cestou obnovitelných zdrojů energie** (zejména solárních a větrných), a zajistit tak čistý ekonomický růst i nová pracovní místa. V současnosti plánované elektrárny ovšem ve velké míře spoléhají na uhlí a plyn. **Klíčovým faktorem pro rozvoj obnovitelných zdrojů bude dostatek finančních prostředků**, tedy i to, jak budou bohaté země plnit své závazky vůči zemím rozvojovým. A důležitou roli bude hrát také politická stabilita celého regionu.
 
-#### Současné úsilí o ochranu klimatu (content issues)
+#### Současné úsilí o ochranu klimatu
 
-Všechny země již představily své národní závazky ke snižování emisí (NDCs). Během Pařížské konference spustily africké státy tzv. Africkou adaptační iniciativu, jejímž cílem je podpořit mezinárodní spolupráci a aktivity podporující adaptaci na klimatickou změnu.
-#### Ambice Indie v klimatických jednáních:
+Všechny africké země již představily své národní závazky ke snižování emisí (NDCs), nicméně pro Afriku bude mnohem důležitější **adaptace a zvládání škod**.  Během Pařížské konference spustily africké státy tzv. Africkou adaptační iniciativu. Klimatické cíle a dosavadní úsilí vybraných afrických států hodnotí iniciativa Climate Action Tracker jako *téměř* nebo *zcela dostatečné*. 
+
+
+https://www4.unfccc.int/sites/NDCStaging/Pages/All.aspx
+
+https://climateactiontracker.org/countries/gambia/
 
 ## Ropné státy Perského zálivu (9, final, N)
 
@@ -316,16 +317,19 @@ V roce 2020 se obě země zavázaly dosáhnout **uhlíkové neutrality do roku 2
 
 #### Současné a budoucí dopady klimatické změny:
 
-Zdejší deštné pralesy jsou oblastí s největší biologickou rozmanitostí na světě. Jejich postupné **odlesňování** bude mít spolu s klimatickou změnou za následek **velké změny regionálního klimatu, zesílení extrémních projevů počasí a ztrátu biologické rozmanitosti**. Brazílie patří mezi země s největším vymíráním živočišných druhů. Dalšími ohroženými ekosystémy jsou mangrovy, pobřežní habitaty a korálové útesy. Také v průtoku řeky Amazonky nastanou velké změny, což bude způsobovat sucha či záplavy. Kromě negativního dopadu na zemědělství, které je důležitou součástí brazilské ekonomiky, mohou zejména záplavy vést i k většímu **šíření nemocí** (horečka dengue, virus Zika, cholera). Změny v oceánském proudění a rostoucí teplota mořské vody představují riziko též pro brazilský rybolov.
+Zdejší deštné pralesy jsou oblastí s největší biologickou rozmanitostí na světě. Jejich postupné **odlesňování** spolu klimatickou změnou může vést k rozpadu Amazonského pralesa a jeho nahrazení savanou. Kvůli změnám v rozložení srážek a suchům se očekává **pokles zemědělské produkce** (pšenice, kukuřice, dobytek), změny v oceánském proudění a rostoucí teplota mořské vody představují riziko též pro brazilský rybolov. Očekává se také  větší **šíření nemocí** (horečka dengue, virus Zika, cholera). 
 
+https://www.climatelinks.org/sites/default/files/asset/document/2018-April-30_USAID_CadmusCISF_Climate-Risk-Profile-Brazil.pdf
 
 #### Výzvy a příležitosti
 K hlavním zdrojům emisí patří rozsáhlé (často nelegální) odlesňování a změny ve využívání krajiny. **Snaha o ochranu pralesních ekosystémů by vedla** nejen k zachování biodiverzity, ale **také k významnému snížení emisí skleníkových plynů**. Brazilská energetika stále závisí na uhlí a zemním plynu, ačkoli pokles cen obnovitelných zdrojů přispívá i zde k rozšiřování větrných a solárních elektráren. Důležitý bude pro tuto zemi **přechod na udržitelnější zemědělství**, který jí zajistí dostatečnou produkci i do budoucna.
 
 #### Současné úsilí o ochranu klimatu:
-Brazílie se zavázala ke snížení emisí skleníkových plynů o 37 % do roku 2025 (oproti roku 2005). Tohoto cíle bylo téměř dosaženo již v roce 2012 díky snížení rychlosti odlesňování. V posledních letech však kácení pralesů opět zrychluje a brazilské emise znovu stoupají. Země se sice přihlásila k uhlíkové neutralitě do roku 2050, zatím však neposkytla k tomuto závazku žádné bližší informace. Vypracován byl tzv. národní adaptační plán, který se zaměřuje na hodnocení klimatických rizik a podporu zranitelných oblastí. Celkově jsou však dosavadní klimatické snahy Brazílie nedostačující.
+Brazílie se zavázala ke snížení emisí skleníkových plynů o 43 % do roku 2030 (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu jde ve skutečnosti o významné oslabení cíle. Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit.  Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa Climate Action Tracker jako velmi nedostatečné. 
 
-#### Ambice Brazílie v klimatických jednáních:
+https://climateactiontracker.org/climate-target-update-tracker/brazil/
+
+
 
 ## Zdroje a poznámky
 
