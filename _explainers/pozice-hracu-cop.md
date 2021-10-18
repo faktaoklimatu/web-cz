@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Jaké jsou pozice hlavních hráčů jednání COP?"
+title:       "Kdo jsou hlavní aktéři klimatických jednání a jaké jsou jejich pozice?"
 slug:        "pozice-hracu-cop"
 published:   2021-10-18
 author:      "team"
@@ -12,34 +12,34 @@ cover-source-license: "CC BY-NC-SA 2.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-sa/2.0/"
 cover-source-text: "Flickr Connect4Climate"
 cover-source-url: "https://flickr.com/photos/connect4climate/49242640988/"
-perex:       "[perex o mezinárodních jednáních. message = místo technikalit se zaměříme na často opomíjené základní rozestavení na šachovnici]"
+perex:       "Mezinárodní jednání o ochraně klimatu letos vyvrcholí summitem v Glasgow. Důležitou roli při těchto jednáních hrají nejen velké či bohaté státy,  ale také skupiny afrických států nebo aliance malých ostrovních států. A zatímco jedni hledají, jak emise snižovat co nejpohodlněji, pro jiné jde doslova o přežití jejich obyvatel. V tomto textu se podrobněji podíváme na rozdílné podmínky, se kterými klimatických jednání vstupují jednotliví aktéři."
 ---
-
 
 ## Kontext
 
-### Mezinárodních jednání v OSN
+### O čem se klimatická jednání vedou? 
 
-Mezinárodní jednání o ochraně klimatu nelze zcela oddělit od ostatních jednání, která probíhají v rímci OSN i mimo něj. Témata ochrany klimatu úzce souvisejí s **mezinárodním obchodem** (státům jde např. o zajištění přístupu na trhy nebo společnou strategii států, které produkují ropu), mezinárodní **hospodřskou pomocí** (podpora chudých států) či zajištěním **potravinové bezpečnosti** a přístupu k pitné vodě. Ochrana klimatu také vystupuje jako kontex při jednáních G7, G20 nebo světové obchodní organizace (*WTO*) Jinak řečeno, jednání o ochraně klimatu jsou malá součást všech mezinárodních jednání a každoroční jednání OSN o ochraně klimatu (tzv. *COP*) je proto dobré vnímat jen jako kontrolní bod na cestě.
+Na základě Pařížské dohody státy budou řešit svoje **závazky na snižování emisí** (tzv. *NDC*),**mechanismy pro snižování emisí v mezinárodním obchodu** (trh s emisními povolenkami, uhlíkové clo, apod.), spolupráci při mitigaci a adaptaci (např. možnosti sdílení technologií) a tzv. **klimatické finance**, tedy finanční podporu rozvojovým zemím. Tato témata jsou úzce provázána s otázkami mezinárodního obchodu či potravinové bezpečnosti, které jsou často předmětem jednání G7, G20, nebo světové obchodní organizace (*WTO*). Proto je vhodné jednání o ochraně klimatu chápat spíše jako součást dalších mezinárodních, než jako oddělené téma.  
 
 ### Jak mohou státy snižovat emise skleníkových plynů?
 
-Pro pochopení komplexnosti mezinárodních jednání je také důležité si uvědomit že státy mohou emise skleníkových plynů snižovat v podstatě pouze nepřímými nástroji:
-* **Přímá nařízení, zákazy a regulace:** státy mohou například stanovit limity těžby uhlí, standardy pro emise motorových vozidel nebo účinnost spotřebičů, nebo nařídit bankám evidovat uhlíkovou stopu investic.
-* **Daně a další finanční nástroje:** skrze daně či emisní povolenky mohou státy zpoplatnit vypouštění skleníkových plynů.
-* **Investice a infrastrukturní projekty:** státy mohou financovat nebo finančně zvýhodnit například budování obnovitelných zdrojů energie nebo sítě dobíjecích stanic pro elektromobily.
+Státy nemohou své emise skleníkových plynů snižovat přímo - nemají moc zastavit průmyslovou výrobu nebo zakázat lidem topit. Státy ale mohou ovlivnit emise skleníkových plynů několika nepřímými způsoby, které pro své úspěšné fungování často potřebují mezinárodní spolupráci:  
+* **Přímá nařízení, zákazy a regulace:** Státy mohou například stanovit limity těžby uhlí, standardy pro emise motorových vozidel a účinnost spotřebičů, nebo nařídit bankám evidovat uhlíkovou stopu investic. Státy často snaží nastavení pravidel a regulací koordinovat.    
+* **Daně a další finanční nástroje:** skrze daně či emisní povolenky mohou státy zpoplatnit vypouštění skleníkových plynů. Státy se snaží vytvořit trh s emisními povolenkami nebo zavádějí clo pro výrobky ze zemí, které nemají emise zpoplatněné.
+* **Investice a infrastrukturní projekty:** státy mohou financovat nebo finančně zvýhodnit například budování obnovitelných zdrojů energie nebo sítě dobíjecích stanic pro elektromobily. Rozvojové státy potřebují na takové investice peníze, které pomocí mezinárodních fondů poskytují z velké části rozvinuté státy, z menší části soukromé firmy. 
 * **Přehledné prostředí pro soukromé subjekty:** státy mohou deklarovat jasné cíle, vypracovat plány a zpřístupňovat data, a vytvářet tak prostředí ve kterém firmy mohou prostředí předvídat a svůj byznys rozvíjet příznivým způsobem.
 
-{% include preview-box.html
-    class="highlight-text-box"
-    text="V celosvětovém i v evropském kontextu je ČR středně velkou a podle mnoha měřítek úspěšnou zemí."
-%}
+### Co se změnilo od předchozí konference COP25?
 
-### Česko v kontextu světa
+V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a předchozí konference se konala v roce 2019 v **Madridu**[^5]. A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050 nebo 2060 odpovídají za tři čtvrtiny současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává [ClimateActionTracker](https://climateactiontracker.org/countries/).
 
-Česká republika rozhodně není malá a nevýznamná země. V celosvětovém i v evropském kontextu je ČR středně velkou a podle mnoha měřítek úspěšnou zemí. Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější**[^10] (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index). (??Česko dává nulové klimatické finance?)
+### Česko v kontextu světových jednání
 
-## Evropská unie a Velká Británie (2, final text, N )
+Česká republika rámci světových klimatických konferencí nejedná samostatně, ale jako součást Evropské Unie. Z pohledu emisí skleníkových plynů patří Česko s 12 tunami CO<sub>2</sub>eq na osobu mezi velké emitenty[^2]. A přestože je ČR v evropském i světovém kontextu středně velkou a podle mnoha měřítek úspěšnou zemí[^1], do fondu klimatických financí ale dosud přispívala v přepočtu na osobu i v přepočtu na HDP mnohem méně než jiné rozvinuté země[^3] a nyní své příspěvky zcela odvolala[^4]. 
+
+ 
+
+## Evropská unie a Velká Británie (2, N )
 
  {% include includes-local/pozice-hracu-cop/country-table.html
      name="Evropská unie a Spojené království"
@@ -69,7 +69,7 @@ Klimatické cíle a dosavadní úsilí Evropy a Velké Británie hodnotí inicia
 
 
 
-## USA (3, final text, N)
+## USA (3, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Spojené státy americké"
@@ -98,7 +98,7 @@ USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr
 
  [https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts](https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts)
 
-## Čína (4, final text, N/A)
+## Čína (4, N/A)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Čínská lidová republika"
@@ -126,7 +126,7 @@ USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr
 V Číně se klimatická změna dostala na vládní agendu relativně nedávno (okolo roku 2008[^44]) a zejména v posledních letech začíná být tato země ve své klimatické politice celkem aktivní: v roce 2021 vyhlásila cíl **dosáhnout uhlíkové neutrality do roku 2060** (to je o 10 let později než u EU či USA, nicméně jde o zemi s téměř pětinou světové populace). Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními země směřuje k **dosažení vrcholu jejich vypouštění před rokem 2028**[^41]. Čína též nedávno spustila vlastní systém pro obchodování s emisními povolenkami[^42]  a ohlásila záměr přestat financovat výstavbu uhelných elektráren v zahraničí[^43]. Klimatické cíle a dosavadní úsilí Číny hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*.[^49]
 
 
-## Indie (5, final text, N)
+## Indie (5, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Indie"
@@ -156,7 +156,7 @@ Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíko
 
 Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu.
 
-## Rusko (6, final, N)
+## Rusko (6, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ruská federace"
@@ -183,7 +183,7 @@ V roce 2019 se Rusko připojilo k Pařížské dohodě. Zavázalo se dosáhnout 
 
 https://www.csis.org/analysis/climate-change-will-reshape-russia
 
-## Ostrovní státy (7, final text, N)
+## Ostrovní státy (7, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ostrovní státy"
@@ -212,7 +212,7 @@ Většina ostrovních států nemá významný průmysl, který by bylo nutné t
 
 Příležitostí ke snižování svých emisí nemají ostrovní státy mnoho – přitom z hlediska změny klimatu patří mezi nejvíce ohrožené země. Naprosto zásadní proto bude, zda o tom dokážou přesvědčit svět, tedy **jak úspěšní budou ve svém diplomatickém úsilí**.
 
-## Státy Afriky (8, final text, N)
+## Státy Afriky (8, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africké státy kromě JAR"
@@ -244,7 +244,7 @@ https://www4.unfccc.int/sites/NDCStaging/Pages/All.aspx
 
 https://climateactiontracker.org/countries/gambia/
 
-## Ropné státy Perského zálivu (9, final, N)
+## Ropné státy Perského zálivu (9, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Perský záliv"
@@ -273,7 +273,7 @@ Většina této oblasti spadá do horkého pouštního podnebí, kde srážky ne
 
 #### Ambice Ropných států v klimatických jednáních:
 
-## Japonsko a Jižní Korea (10, final, N)
+## Japonsko a Jižní Korea (10, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Japonsko a Jižní Korea"
@@ -300,7 +300,7 @@ Japonci i Korejci považují klimatickou změnu za významnou hrozbu (v Jižní 
 
 V roce 2020 se obě země zavázaly dosáhnout **uhlíkové neutrality do roku 2050**. Zavedly již také **opatření na zpoplatnění emisí** skleníkových plynů. Japonsko má od roku 2012 i uhlíkovou daň, ta však pro dosažení větších změn zatím zůstává příliš nízká. Tokio má rovněž systém pro obchodování s emisními povolenkami. Ten v roce 2015 odstartovala i Jižní Korea. Obě země se angažují na poli klimatických financí: Japonsko významně přispívá do několika mezinárodních fondů, v Jižní Koreji zase sídlí **Zelený klimatický fond**, jeden z hlavních finančních nástrojů OSN pro splnění závazku bohatých zemí přispívat rozvojovým zemím na adaptační a mitigační opatření.
 
-## Brazílie (11, content issues, N)
+## Brazílie (11, N)
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Brazílie"
@@ -317,23 +317,25 @@ V roce 2020 se obě země zavázaly dosáhnout **uhlíkové neutrality do roku 2
 
 #### Současné a budoucí dopady klimatické změny:
 
-Zdejší deštné pralesy jsou oblastí s největší biologickou rozmanitostí na světě. Jejich postupné **odlesňování** spolu klimatickou změnou může vést k rozpadu Amazonského pralesa a jeho nahrazení savanou. Kvůli změnám v rozložení srážek a suchům se očekává **pokles zemědělské produkce** (pšenice, kukuřice, dobytek), změny v oceánském proudění a rostoucí teplota mořské vody představují riziko též pro brazilský rybolov. Očekává se také  větší **šíření nemocí** (horečka dengue, virus Zika, cholera). 
-
-https://www.climatelinks.org/sites/default/files/asset/document/2018-April-30_USAID_CadmusCISF_Climate-Risk-Profile-Brazil.pdf
+Zdejší deštné pralesy jsou oblastí s největší biologickou rozmanitostí na světě[^116],[^114]. Jejich postupné **odlesňování** spolu klimatickou změnou může vést k rozpadu Amazonského pralesa a jeho nahrazení savanou. Kvůli změnám v rozložení srážek a suchům se očekává **pokles zemědělské produkce**[^111],[^115] (pšenice, kukuřice, dobytek), změny v oceánském proudění a rostoucí teplota mořské vody představují riziko též pro brazilský rybolov. Očekává se také větší **šíření nemocí** (horečka dengue, virus Zika, cholera). 
 
 #### Výzvy a příležitosti
-K hlavním zdrojům emisí patří rozsáhlé (často nelegální) odlesňování a změny ve využívání krajiny. **Snaha o ochranu pralesních ekosystémů by vedla** nejen k zachování biodiverzity, ale **také k významnému snížení emisí skleníkových plynů**. Brazilská energetika stále závisí na uhlí a zemním plynu, ačkoli pokles cen obnovitelných zdrojů přispívá i zde k rozšiřování větrných a solárních elektráren. Důležitý bude pro tuto zemi **přechod na udržitelnější zemědělství**, který jí zajistí dostatečnou produkci i do budoucna.
+K hlavním zdrojům emisí patří rozsáhlé (často nelegální) odlesňování a změny ve využívání krajiny. **Snaha o ochranu pralesních ekosystémů by vedla** nejen k zachování biodiverzity, ale **také k významnému snížení emisí skleníkových plynů**. Brazilská energetika využívá především vodní elektrárny (70% vyroby)[^114], ale částečně závisí také na uhlí a zemním plynu. Pokles cen obnovitelných zdrojů přispívá i zde k rozšiřování větrných a solárních elektráren. Důležitý bude pro tuto zemi **přechod na udržitelnější zemědělství**, který jí zajistí dostatečnou produkci potravin i do budoucna.
 
 #### Současné úsilí o ochranu klimatu:
-Brazílie se zavázala ke snížení emisí skleníkových plynů o 43 % do roku 2030 (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu jde ve skutečnosti o významné oslabení cíle. Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit.  Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa Climate Action Tracker jako velmi nedostatečné. 
+Brazílie se zavázala ke **snížení emisí skleníkových plynů o 43 % do roku 2030** (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu **jde ve skutečnosti o významné oslabení staršího cíle**[^112]. Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit.  Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/brazil/) jako *velmi nedostatečné*[^113]. 
 
-https://climateactiontracker.org/climate-target-update-tracker/brazil/
 
 
 
 ## Zdroje a poznámky
 
-[^10]: Státy podle počtu obyvatel ve světě ([en.wikipedia.org/wiki/List_of_countries_by_population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population))  a v Evropě ([en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population))
+[^1]: Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější** (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index). 
+[^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz faktaoklimatu.cz:  [Emise států přepočené na osobu](https://faktaoklimatu.cz/infografiky/emise-svet-na-osobu)
+[^3]: Mezi lety 2010 - 2018 přispívalo ČR do fondů půměrně 158 miliónů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004% HDP. Rozvojové země běžně přispívají okolo 0,04% HDP. (viz [FORS:Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf))  
+[^4]: [UNFCCC: List of recent climate funding announcements](https://unfccc.int/list-of-recent-climate-funding-announcements)
+[^5]: Carbon Brief: [Key outcomes agreed at the UN climate talks in Madrid](https://www.carbonbrief.org/cop25-key-outcomes-agreed-at-the-un-climate-talks-in-madrid)
+
 
 <!---EU+UK -->
 [^21]: The Times: [All Britain’s electricity to be green by 2035](https://www.thetimes.co.uk/article/all-britains-electricity-to-be-green-by-2035-ns76tl7vm)
@@ -358,8 +360,10 @@ https://climateactiontracker.org/climate-target-update-tracker/brazil/
 
 <!---India-->
 [^50]: [Will India get too hot to work?](https://www.mckinsey.com/business-functions/sustainability/our-insights/will-india-get-too-hot-to-work), McKinsey Global Institute, 2020.
-[^51]: [Carbon Brief Country Profile](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
-[^52]: Climate [PIB](https://pib.gov.in/newsite/PrintRelease.aspx?relid=176178)
+[^51]: [Carbon Brief Country Profile: India](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
+[^52]: Chttps://www.climatelinks.org/resources/climate-risk-profile-brazil
+
+https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts
 
 <!---Island States-->
 [^71]: [The World's Water](https://pacinst.org/wp-content/uploads/2013/02/worlds_water_2002_chapter53.pdf), kapitola 5: *Pacific Island Developing Country Water Resources and Climate Change*, [Pacific Institute](https://pacinst.org/),(2002)
@@ -367,5 +371,10 @@ https://climateactiontracker.org/climate-target-update-tracker/brazil/
 [^73]: [Home by the sea: new science shows more sea-level rise impacts on small islands](https://climateanalytics.org/blog/2019/home-by-the-sea-new-science-shows-more-sea-level-rise-impacts-on-small-islands/), [ClimateAnalytics.org](https://climateanalytics.org/), (2019)
 [^74]: en.wikipedia.org: [Tropical cyclones and climate change](https://en.wikipedia.org/wiki/Tropical_cyclones_and_climate_change)
 
-https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts
-
+<!---Brazil-->
+[^111]: ClimateLinks:[Climate Risk Profile: Brazil](https://www.climatelinks.org/sites/default/files/asset/document/2018-April-30_USAID_CadmusCISF_Climate-Risk-Profile-Brazil.pdf)
+[^112]: Climate Action Tracker: [Summary of Brazil target update](https://climateactiontracker.org/climate-target-update-tracker/brazil/)
+[^113]: ClimateActionTracker.org: [Brazil country profile](https://climateactiontracker.org/countries/brazil/)
+[^114]: [The CarbonBrief Profile: Brazil](https://www.carbonbrief.org/the-carbon-brief-profile-brazil)
+[^115]: en.wikipedia.org: [Climate Change in Brazil](https://en.wikipedia.org/wiki/Climate_change_in_Brazil)
+[^116]: Nobre, Carlos & Marengo, Jose & Soares, Wagner. (2019). [Climate Change Risks in Brazil](https://link.springer.com/book/10.1007%2F978-3-319-92881-4). 10.1007/978-3-319-92881-4. 
