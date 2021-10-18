@@ -27,6 +27,7 @@ Na našem území se nachází přibližně 2,9 milionů hektarů lesů. Kdybych
 
 ## Vymezení pojmů
 **Les** – v tomto textu a mapě vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO)[^2], která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem[^3].
+
 **Přírodní lesní oblasti (PLO)** – vymezená souvislá území s obdobnými růstovými podmínkami pro les, například podobné klima, půdy a terén. [Jednotlivých PLO je celkem 41](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/prirodni-lesni-oblasti-plo) a jsou rozděleny především z hospodářských a administrativních důvodů. Mezi výstupy, které jsou pro jednotlivé PLO zpracovávány, patří [Oblastní plány rozvoje lesů (OPRL)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/co-jsou-to-oprl), které fungují jako metodický nástroj lesnické politiky (stát může jejich prostřednictvím řídit, jak se v lesích hospodaří).  
 
 ## Metodika výpočtu lesnatosti
