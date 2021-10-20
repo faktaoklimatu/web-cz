@@ -4,3 +4,38 @@
     .tagline { width: 15.2rem; }
     p { padding-left: 19rem; }
 }
+
+.cop-entity-summary {
+    font-size: 0.9em;
+
+    .card-img-top {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-body dl {
+        display: grid;
+        margin-bottom: 0;
+        grid-template-columns: auto auto;
+        column-gap: 0.5em;
+
+        dt {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .cop-entity-summary {
+        float: right;
+        clear: right;
+        width: 60%;
+        margin-right: -30% !important;
+        margin-left: 1.5em !important;
+        font-size: 1em;
+
+        .card-img-top {
+            width: 100%;
+        }
+    }
+}
