@@ -39,7 +39,7 @@ V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a př
 
  
 
-## Evropská unie a Velká Británie (2, N )
+## Evropská unie a Velká Británie
 
  {% include includes-local/pozice-hracu-cop/country-table.html
      name="Evropská unie a Spojené království"
@@ -69,7 +69,7 @@ Klimatické cíle a dosavadní úsilí Evropy a Velké Británie hodnotí inicia
 
 
 
-## USA (3, N)
+## USA
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Spojené státy americké"
@@ -96,9 +96,9 @@ USA je největší a nejbohatší světová ekonomika a snaží se být leaderem
 
 USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr dosáhnout uhlíkové neutrality do roku 2050. Některé státy v USA mají vnitřní uhlíkovou daň či systém emisních povolenek, ale na federální úrovni zpoplatnění emisí chybí. Pentagon nedávno zařadil klimatickou změnu mezi bezpečnostní priority. Klimatické cíle a dosavadní úsilí USA hodnotí iniciativa Climate Action Tracker jako *nedostatečné*.  (?? Investice)
 
- [https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts](https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts)
+ 
 
-## Čína (4, N/A)
+## Čína
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Čínská lidová republika"
@@ -126,7 +126,7 @@ USA se v roce 2021 znovu přihlásily k Pařížské dohodě a ohlásily záměr
 V Číně se klimatická změna dostala na vládní agendu relativně nedávno (okolo roku 2008[^44]) a zejména v posledních letech začíná být tato země ve své klimatické politice celkem aktivní: v roce 2021 vyhlásila cíl **dosáhnout uhlíkové neutrality do roku 2060** (to je o 10 let později než u EU či USA, nicméně jde o zemi s téměř pětinou světové populace). Čínské emise skleníkových plynů zatím stále rostou, ale svými opatřeními země směřuje k **dosažení vrcholu jejich vypouštění před rokem 2028**[^41]. Čína též nedávno spustila vlastní systém pro obchodování s emisními povolenkami[^42]  a ohlásila záměr přestat financovat výstavbu uhelných elektráren v zahraničí[^43]. Klimatické cíle a dosavadní úsilí Číny hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/china/) jako *velmi nedostatečné*.[^49]
 
 
-## Indie (5, N)
+## Indie
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Indie"
@@ -156,7 +156,7 @@ Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíko
 
 Klíčovými indickými požadavky jsou klimatické finance a technologický transfer od rozvinutých zemí k rozvojovým. Indie odhaduje, že realizace jejích klimatických cílů bude stát 2,5 biliónů dolarů. V letech 2015 a 2016 Indie podle odhadů OECD obdržela přibližně 2,6 miliardy ročně v rozvojových financích týkajících se klimatu.
 
-## Rusko (6, N)
+## Rusko 
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ruská federace"
@@ -181,9 +181,9 @@ Arktické oblasti Ruska a Sibiře se velmi rychle oteplují, až 3 krát rychlej
 #### Současné úsilí o ochranu klimatu 
 V roce 2019 se Rusko připojilo k Pařížské dohodě. Zavázalo se dosáhnout 30% snížení emisí do roku 2030 oproti roku 1990 - k tomuto poklesu ale již došlo v devadesátých letech v důsledku důsledek deindustrializace po pádu Sovětského svazu. V roce 2021 vzešla v platnost legislativa, podle níž budou muset vybrané podniky od roku 2023 podávat zprávu o emisích, které vypouštějí. V témže roce Rusko oznámilo, že dosáhne uhlíkové neutrality do roku 2060. Klimatické cíle a dosavadní úsilí Ruska hodnotí iniciativa Climate Action Tracker jako *kriticky nedostatečné*. 
 
-https://www.csis.org/analysis/climate-change-will-reshape-russia
 
-## Ostrovní státy (7, N)
+
+## Ostrovní státy
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Ostrovní státy"
@@ -200,19 +200,19 @@ https://www.csis.org/analysis/climate-change-will-reshape-russia
 
 **Kdo patří do této skupiny:** Skupina sdružuje více než 40 ostrovních států a *závislých teritorií. Většinou jde o malé ostrovy v Karibské oblasti a Tichém oceánu. Z větších ostrovních států sem patří Kuba, Haiti, Jamajka nebo Papua Nová Guinea. Na mezinárodních jednáních o ochraně klimatu státy vystupují v rámci společných aliancí [AOSIS](https://www.aosis.org/) nebo [SIDS](https://en.wikipedia.org/wiki/Small_Island_Developing_States).
 
-#### Současné a budoucí dopady klimatické změny:
+#### Současné a budoucí dopady klimatické změny
 
 Pro malé ostrovní státy, u nichž se velká část území často nachází jen metr či dva nad hladinou moře, představuje klimatická změna obrovskou výzvu:[^72] budoucí **vzestup hladin oceánů je pro ně hrozbou, na kterou prakticky nemají možnost se adaptovat**. Navíc jde o chudé státy, které na adaptaci nemají prostředky, a zvládání současných dopadů je pro ně velice obtížné. V současnosti jsou pro ně hlavními hrozbami **častější a silnější hurikány**[^74] (nebo tajfuny, obecněji tropické cyklóny), **eroze pobřeží** a **zasolování zásob pitné vody**.[^71] Již probíhající umírání korálových útesů a častější mořské vlny veder (marine heatwaves) významně zasáhnou také hlavní zdroje obživy místních obyvatel: turismus a rybolov.
 
-#### Příležitosti a překážky transformace k nízkouhlíkové společnosti:
+#### Výzvy a příležitosti
 
 Většina ostrovních států nemá významný průmysl, který by bylo nutné transformovat, ani netěží ropu. Své nároky na energii budou moci pokrýt z obnovitelných zdrojů. V tomto směru pro ně tedy transformace na nízkouhlíkovou společnost nepředstavuje významné riziko. Hlavní problémem pro tyto státy bude adaptace na klimatickou změnu, a to zejména v zemědělství a rybolovu. Budou pravděpodobně potřebovat i pomoc bohatších zemí, díky které se budou moci lépe vyrovnávat s výpadkem příjmů spojených s turismem a získají čas na hledání jiných cest k budoucí prosperitě.
 
-#### Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních:
+#### Současné úsilí o ochranu klimatu a amibice v mezinárodních jednáních
 
 Příležitostí ke snižování svých emisí nemají ostrovní státy mnoho – přitom z hlediska změny klimatu patří mezi nejvíce ohrožené země. Naprosto zásadní proto bude, zda o tom dokážou přesvědčit svět, tedy **jak úspěšní budou ve svém diplomatickém úsilí**.
 
-## Státy Afriky (8, N)
+## Státy Afriky
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Africké státy kromě JAR"
@@ -240,11 +240,7 @@ Africké státy se potýkají s nízkou životní úrovní a nedostatečným př
 Všechny africké země již představily své národní závazky ke snižování emisí (NDCs), nicméně pro Afriku bude mnohem důležitější **adaptace a zvládání škod**.  Během Pařížské konference spustily africké státy tzv. Africkou adaptační iniciativu. Klimatické cíle a dosavadní úsilí vybraných afrických států hodnotí iniciativa Climate Action Tracker jako *téměř* nebo *zcela dostatečné*. 
 
 
-https://www4.unfccc.int/sites/NDCStaging/Pages/All.aspx
-
-https://climateactiontracker.org/countries/gambia/
-
-## Ropné státy Perského zálivu (9, N)
+## Ropné státy Perského zálivu
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Perský záliv"
@@ -259,7 +255,7 @@ https://climateactiontracker.org/countries/gambia/
     electricity-share="4,3"
 %}
 
-#### Současné a budoucí dopady klimatické změny (final)
+#### Současné a budoucí dopady klimatické změny
 
 Většina této oblasti spadá do horkého pouštního podnebí, kde srážky nejsou již dnes pro růst vegetace dostatečné. Proto bude mít další snížení srážek a zvýšení teplot **zásadní negativní dopady: na ekosystémy, zemědělství, lidské zdraví** (extrémní vlny veder) **a dostupnost pitné vody** (již dnes některé z těchto států získávají pitnou vodu energeticky náročným procesem odsolování vody mořské). **Chudší a politicky nestabilní země v tomto regionu jsou vůči těmto změnám výrazně zranitelnější**. Některé země jsou do budoucna také ohroženy stoupající mořskou hladinou (Katar, SAE, Kuvajt, Omán): může docházet k zaplavování přímořských měst i kritické infrastruktury (odsolovací zařízení, elektrárny).
 
@@ -267,13 +263,11 @@ Většina této oblasti spadá do horkého pouštního podnebí, kde srážky ne
 
 **Významný podíl ekonomiky těchto států tvoří vývoz fosilních paliv**. Proto dosud nebyly v řešení klimatické změny příliš aktivní, přestože její dopad na ně bude významný. **Některé země již usilují o transformaci ekonomiky, aby se jejich závislost na fosilních palivech snížila** (např. Omán), a zavádějí adaptační opatření zaměřená především na dopad spojený s vyššími teplotami a nedostatkem srážek. Podnebí v tomto regionu je zároveň příležitostí k využívání solární energie – nejvíce elektráren se staví v Saudské Arábii a SAE. Investice do obnovitelné elektřiny vedou k diverzifikaci hospodářství a ke snížení spotřeby vody. V budoucnu mohou tyto státy **využít levné solární elektřiny také k výrobě zeleného vodíku a tím nahradit příjmy z vývozu ropy**.
 
-#### Současné úsilí o ochranu klimatu:
+#### Současné úsilí o ochranu klimatu
 
 **Klimatické závazky tohoto regionu jsou zcela nedostatečné**. Zdejší země patří mezi státy s nejvyššími emisemi na osobu z celého světa a v budoucnu jejich emise pravděpodobně dále porostou. **Írán a Irák dosud neratifikovaly Pařížskou dohodu**. Současná opatření se zpravidla omezují na adaptaci (např. zajištění dostatku pitné vody) a na podporu obnovitelných zdrojů elektřiny. Přesto některé státy stále finančně podporují i fosilní zdroje. **Spojené arabské emiráty se jako jediný stát z regionu nedávno přihlásily k uhlíkové neutralitě do roku 2050**.
 
-#### Ambice Ropných států v klimatických jednáních:
-
-## Japonsko a Jižní Korea (10, N)
+## Japonsko a Jižní Korea 
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Japonsko a Jižní Korea"
@@ -288,7 +282,7 @@ Většina této oblasti spadá do horkého pouštního podnebí, kde srážky ne
     electricity-share="5,86"
 %}
 
-#### Současné a budoucí dopady klimatické změny:
+#### Současné a budoucí dopady klimatické změny
 
 Dopady klimatické změny na tento region budou méně dramatické než jinde. Obě země mají výhodu také v dostatku prostředků na adaptaci. Přesto i zde se budou muset připravit na **vzestup hladiny moří, pobřežní erozi** a **silnější a častější tajfuny**. Očekávat se dají také **intenzivnější srážky**, které mohou vést k poškození infrastruktury, a **vlny veder**. Pro obyvatele je jednou z dobře viditelných změn **dřívější rozkvět sakur**, které jsou důležitým prvkem japonské kultury.
 
@@ -300,7 +294,7 @@ Japonci i Korejci považují klimatickou změnu za významnou hrozbu (v Jižní 
 
 V roce 2020 se obě země zavázaly dosáhnout **uhlíkové neutrality do roku 2050**. Zavedly již také **opatření na zpoplatnění emisí** skleníkových plynů. Japonsko má od roku 2012 i uhlíkovou daň, ta však pro dosažení větších změn zatím zůstává příliš nízká. Tokio má rovněž systém pro obchodování s emisními povolenkami. Ten v roce 2015 odstartovala i Jižní Korea. Obě země se angažují na poli klimatických financí: Japonsko významně přispívá do několika mezinárodních fondů, v Jižní Koreji zase sídlí **Zelený klimatický fond**, jeden z hlavních finančních nástrojů OSN pro splnění závazku bohatých zemí přispívat rozvojovým zemím na adaptační a mitigační opatření.
 
-## Brazílie (11, N)
+## Brazílie 
 
 {% include includes-local/pozice-hracu-cop/country-table.html
     name="Brazílie"
@@ -325,10 +319,12 @@ K hlavním zdrojům emisí patří rozsáhlé (často nelegální) odlesňován�
 #### Současné úsilí o ochranu klimatu:
 Brazílie se zavázala ke **snížení emisí skleníkových plynů o 43 % do roku 2030** (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu **jde ve skutečnosti o významné oslabení staršího cíle**[^112]. Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit.  Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/brazil/) jako *velmi nedostatečné*[^113]. 
 
-
-
-
 ## Zdroje a poznámky
+
+* [https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts](https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts)
+* https://www.csis.org/analysis/climate-change-will-reshape-russia
+* https://www4.unfccc.int/sites/NDCStaging/Pages/All.aspx
+* https://climateactiontracker.org/countries/gambia/
 
 [^1]: Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější** (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index). 
 [^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz faktaoklimatu.cz:  [Emise států přepočené na osobu](https://faktaoklimatu.cz/infografiky/emise-svet-na-osobu)
