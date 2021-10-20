@@ -159,7 +159,7 @@ Pro Indii je zásadní výzvou **eliminace energetické chudoby** a dosažení d
 
 Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíkové neutrality – pouze se zavázala **nepřekročit emise odpovídající emisím na osobu rozvinutých zemí a do roku 2030 snížit své emise na jednotku HDP o třetinu** (oproti roku 2005). Je kritizována za snahu dále navýšit výrobu elektřiny z uhlí a jeho lokální těžbu, nicméně současná spotřeba elektřiny na osobu je v Indii 1 MWh za rok, což je 6krát méně než v EU a 12krát méně než v USA. Indie se ovšem snaží i o rozvoj obnovitelných zdrojů (od roku 2010 například vybírá uhelnou daň do státního fondu pro čistou energii[^52]). **Za poslední dekádu vzrostla výroba ze slunce a větru o 550 %** (oproti 75% růstu výroby z uhlí) a pokrývá dnes téměř 10 % domácí spotřeby elektřiny.
 
-Klimatické cíle a dosavadní úsilí Indie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*.[^59]
+Klimatické cíle a dosavadní úsilí Indie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*.
 
 #### Ambice Indie v klimatických jednáních
 
@@ -339,6 +339,16 @@ Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa [Climate Ac
 
 ## Zdroje a poznámky
 
+{% comment %}
+Bezprizorné odkazy:
+
+* https://www.carbonbrief.org/the-carbon-brief-profile-united-states#impacts
+* https://www.csis.org/analysis/climate-change-will-reshape-russia
+* https://www4.unfccc.int/sites/NDCStaging/Pages/All.aspx
+* https://climateactiontracker.org/countries/gambia/
+* https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts
+{% endcomment %}
+
 [^1]: Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější** (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index).
 [^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz infografika  [Emise států přepočené na osobu](https://faktaoklimatu.cz/infografiky/emise-svet-na-osobu)
 [^3]: Mezi lety 2010 – 2018 přispívalo ČR do fondů průměrně 158 milionů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004 % HDP. Rozvojové země běžně přispívají okolo 0,04 % HDP. (viz [FORS:Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf))
@@ -371,8 +381,6 @@ Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa [Climate Ac
 [^50]: [Will India get too hot to work?](https://www.mckinsey.com/business-functions/sustainability/our-insights/will-india-get-too-hot-to-work), McKinsey Global Institute, 2020.
 [^51]: [Carbon Brief Country Profile: India](https://www.carbonbrief.org/the-carbon-brief-profile-india#adaptation)
 [^52]: Chttps://www.climatelinks.org/resources/climate-risk-profile-brazil
-
-https://www.worldbank.org/en/news/feature/2013/06/19/india-climate-change-impacts
 
 <!---Island States-->
 [^71]: [The World's Water](https://pacinst.org/wp-content/uploads/2013/02/worlds_water_2002_chapter53.pdf), kapitola 5: *Pacific Island Developing Country Water Resources and Climate Change*, [Pacific Institute](https://pacinst.org/),(2002)

@@ -1,17 +1,17 @@
-<div class="card float-right" style="width: 60%; margin-right: -30%; margin-left: 1.5em; clear: right;">
-    <img class="card-img-top" src="/assets-local/figures/pozice-akteru-cop/{{ include.map }}" alt="Mapa státu nebo regionu: {{ include.name | default: 'Otazník' }}">
+<div class="card cop-entity-summary">
+    <img class="card-img-top" src="/assets-local/figures/pozice-akteru-cop/{{ include.map }}" alt="Mapa státu nebo regionu: {{ include.name }}">
     <div class="card-body">
-        <dl class="mb-0" style="display: grid; grid-template-columns: auto auto; column-gap: 0.5em;">
-            <dt style="grid-column: 1 / span 2;">Populace 🙋</dt>
+        <dl>
+            <dt>Populace 🙋</dt>
             <dd>{{ include.population-total }} obyvatel</dd>
             <dd><b>{{ include.population-share }} %</b> světové populace</dd>
-            <dt style="grid-column: 1 / span 2;">Ekonomika 💰</dt>
+            <dt>Ekonomika 💰</dt>
             <dd>{{ include.gdp-per-cap }} $/obyv. PPP</dd>
             <dd><b>{{ include.gdp-share }} %</b> světového HDP</dd>
-            <dt style="grid-column: 1 / span 2;">Emise 🏭</dt>
+            <dt>Emise 🏭</dt>
             <dd>{{ include.emissions-per-cap }} t CO<sub>2</sub>eq/obyv.</dd>
             <dd><b>{{ include.emissions-share }} %</b> světových emisí</dd>
-            <dt style="grid-column: 1 / span 2;">Spotřeba elektřiny ⚡</dt>
+            <dt>Spotřeba elektřiny ⚡</dt>
             <dd>{{ include.electricity-per-cap }} MWh/obyv.</dd>
             <dd><b>{{ include.electricity-share }} %</b> světové spotřeby</dd>
         </dl>
