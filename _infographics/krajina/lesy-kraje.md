@@ -11,7 +11,7 @@ caption:    "Lesy pokrývají 36,8 % území ČR, ale zastoupení dřevin v jedn
 
 ---
 {:.perex}
-Na našem území se nachází přibližně 2,9 milionů hektarů lesů.  
+Na našem území se nachází přibližně 2,9 milionů hektarů lesa. Z toho 58 % tvoří jehličnaté lesy a 42 % listnaté lesy. Rozložení jednotlivých dřevin se v rámci jednotlivých krajů ovšem značně liší. 
 
 {% include preview-box.html
     title="Zastoupení dřevin v jednotlivých krajích Česka"
