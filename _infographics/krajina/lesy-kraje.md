@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Zastoupení dřevin v jednotlivých krajích Česka"
+title:      "Zastoupení dřevin v jednotlivých krajích ČR"
 slug:       "lesy-kraje-dreviny"
 redirect_from: "/lesy-kraje-dreviny"
 published:  2020-10-21
@@ -12,7 +12,7 @@ caption:    "Na našem území se nachází přibližně 2,9 milionů hektarů l
 ---
 
 {% include preview-box.html
-    title="Zastoupení dřevin v jednotlivých krajích Česka"
+    title="Zastoupení dřevin v jednotlivých krajích ČR"
     text=""
     slug="lesy-kraje-dreviny"
 %}
@@ -24,12 +24,12 @@ caption:    "Na našem území se nachází přibližně 2,9 milionů hektarů l
 
 
 ## Rozložení dřevin
-- Celorepublikově patří mezi nejvíce zastoupené jehličnany smrk ztepilý (43 %) a borovice lesní (10 %). Nejběžnějšími listnatými dřevinami jsou buk lesní (10 %) a duby (8 %). Zbývající skupiny dřevin mají zastoupení do 5 % (modřín evropský, jedle bělokorá, habr obecný, javory a další).
-- Rozdíly v podílech dřevin v jednotlivých krajích jsou dány několika faktory, například různou funkcí lesa. Hospodářské lesy, které jsou v Česku zastoupeny z 68 %, mají především dřevoprodukční funkci – cílem zde tedy je pěstování dřevin, které rychle rostou, mají silný a rovný kmen bez mnoha větví a celý les je ideálně bez podrostu. V minulosti byl v rámci státního lesního hospodářství za tímto účelem ve velkém (jako monokultura) vysazován smrk. Dalších 32 % našich lesů tvoří tzv. lesy ochranné a lesy zvláštního určení, jako jsou například lesy na území národních parků a CHKO, lesy potřebné k zachování biologické rozmanitosti a další. Jde převážně o přírodě blízké, obhospodařované porosty, které zpravidla mívají rozmanitou dřevinnou skladbu, různý věk i výšku. 
+- Celorepublikově patří mezi nejvíce zastoupené jehličnany smrk ztepilý (43 %) a borovice lesní (10 %). Nejběžnějšími listnatými dřevinami jsou buk lesní (10 %) a dub (8 %). Zbývající skupiny dřevin mají zastoupení do 5 % (modřín evropský, jedle bělokorá, habr obecný, javory a další).
+- Rozdíly v procentuálním zastoupení dřevin v jednotlivých krajích jsou dány více faktory, významná je například funkce lesa. Hospodářské lesy, které jsou v Česku zastoupeny z 68 %, mají především dřevoprodukční funkci – cílem zde tedy je pěstovat dřeviny, které rychle rostou, mají silný a rovný kmen bez mnoha větví a celý les je ideálně bez podrostu. V minulosti byl v rámci státního lesního hospodářství za tímto účelem ve velkém (jako monokultura) vysazován smrk. Dalších 32 % našich lesů tvoří tzv. lesy ochranné a lesy zvláštního určení, jako jsou například lesy na území národních parků a CHKO, lesy potřebné k zachování biologické rozmanitosti a další. Jde převážně o obhospodařované porosty, jež jsou přírodě blízké, mívají rozmanitou dřevinnou skladbu a stromy mají různý věk a výšku. 
 - V zákoně je rozložení dřevin zakotveno pomocí lesnicko-typologického mapování. To na základě hodnocení prostředí (složení půdy, světlo, teplo, vodní režim) určuje, jaké dřeviny lze na daném území k zalesnění použít. 
 
 ## Použitá metodika a původ dat
-- Míra zastoupení listnatých a jehličnatých dřevin vychází z [Národní inventarizace lesů (NIL)](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015), což je nezávazné získávání údajů o lese na celém území ČR. Garantem projektu je ministerstvo zemědělství a šetřením byl pověřen Ústav pro hospodářskou úpravu lesa (ÚHÚL). Cílem je podat přesné informace o stavu lesa, jako je například struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů a charakteristika lesních ekosystémů. Část inventarizačních údajů je získávána z ortofotomap (výměra lesa) a z jiných zdrojů (katastr nemovitostí), většina však pochází z terénních šetření. První NIL šetření proběhlo v letech 2001–2004, druhé pak 2011–2015. V roce 2020 byl dokončen sběr z dalšího cyklu, a to sledování stavu a vývoje lesních ekosystémů (SSVLE), jehož výsledky však zatím publikovány nebyly.
+- Uvedený poměr zastoupení listnatých a jehličnatých dřevin vychází z [Národní inventarizace lesů (NIL)](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015), což je nezávazné získávání údajů o lese na celém území ČR. Garantem projektu je ministerstvo zemědělství a šetřením byl pověřen Ústav pro hospodářskou úpravu lesa (ÚHÚL). Cílem je podat přesné informace o stavu lesa, jako je například struktura vlastnických vztahů, rozsah a druh škod v lesích, rozsah obnovy lesa, struktura lesních porostů a charakteristika lesních ekosystémů. Část inventarizačních údajů je získávána z ortofotomap (výměra lesa) a z jiných zdrojů (katastr nemovitostí), většina však pochází z terénních šetření. První NIL šetření proběhlo v letech 2001–2004, druhé pak 2011–2015. V roce 2020 byl dokončen sběr z dalšího cyklu, a to sledování stavu a vývoje lesních ekosystémů (SSVLE), jeho výsledky však zatím publikovány nebyly.
 
 
 ## Poznámky
