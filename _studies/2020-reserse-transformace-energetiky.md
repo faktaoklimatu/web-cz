@@ -11,6 +11,15 @@ caption:     "Rešerše klíčových studií věnujících se budoucí transform
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Energetická revoluce: Jak zajistit elektřinu, teplo a dopravu bez fosilních paliv"
+    date:    Říjen 2021
+    url:     "https://hnutiduha.cz/aktualne/nova-studie-v-roce-2030-se-obejdeme-bez-uhli-cesta-ke-konci-plynu-ropy-vyzaduje-zasadni"
+    authors:
+      - name: University of Sydney # Institute for Sustainable Futures
+        url:  "https://www.uts.edu.au/isf"
+      - name: Aurora Energy Research
+        url:  "https://www.auroraer.com/"
+    timeframe: 2030 až 2050
   - title:   "Rozvoj obnovitelných zdrojů v ČR do roku 2030"
     date:    Duben 2021
     url:     "https://www.alies.cz/cesko-ma-v-obnovitelnych-zdrojich-na-vic-spocitali-experti-z-univerzity-karlovy-rozvoj-zelene-energetiky-prinese-snizeni-skod-na-lidskem-zdravi-a-krajine-az-o-64-mld-korun-k-roku-2030/"
@@ -151,13 +160,6 @@ items:
       - name: Ministerstvo průmyslu a obchodu ČR
         url:  https://mpo.cz/
     timeframe: 2030 až 2045
-  - title:   "Energetická [r]evoluce"
-    url:     "https://storage.googleapis.com/planet4-czech-republic-stateless/2018/10/c6cea469-c6cea469-er-pro-%C4%8Cr-2012.pdf"
-    date:    Červen 2012
-    authors:
-      - name: Německé středisko pro letectví a kosmonautiku
-        url:  https://www.dlr.de/
-    timeframe: 2030 až 2050
 ---
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
