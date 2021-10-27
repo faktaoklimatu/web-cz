@@ -43,6 +43,15 @@ V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a př
 
 ### Česko v kontextu světových jednání
 
+{% include preview-box.html
+    title="Kartičky aktérů klimatických jednání"
+    text="Pozice jednotlivých aktérů v klimatických jednáních jsme zpracovali také ve formě kartiček k tisku. Stáhnout si je můžete ve formátu PDF:
+
+{:.text-center}
+<a class=\"btn btn-primary\" href=\"/assets-local/files/karticky-pozice-akteru.pdf\" target=\"_blank\"><i class=\"fas fa-fw fa-file-pdf\"></i> Stáhnout kartičky aktérů</a>
+"
+%}
+
 Česká republika rámci světových klimatických konferencí nejedná samostatně, ale jako součást Evropské unie. Z pohledu emisí skleníkových plynů patří Česko s 12 tunami CO<sub>2</sub>eq na osobu mezi velké emitenty.[^2] A přestože je ČR v evropském i světovém kontextu středně velkou a podle mnoha měřítek úspěšnou zemí,[^1] do fondu klimatických financí ale dosud přispívala v přepočtu na osobu i v přepočtu na HDP mnohem méně než jiné rozvinuté země[^3] a nyní své příspěvky zcela odvolala.[^4]
 
 ## Evropská unie a Velká Británie
