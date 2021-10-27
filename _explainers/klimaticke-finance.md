@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
-published:   2021-06-13
+published:   2021-10-27
 author:      "Alena Moravová"
 weight:      75
 tags-scopes: [ world ]
@@ -16,7 +16,7 @@ perex:       "Klimatické finance jsou závazek, že rozvinuté země mají fina
 
 ---
 
-Myšlenka klimatických financí byla vytvořena na COP 16 (Kodaň, 2009), kde se 27 rozvinutých zavázalo, že v roce 2020 bude ročně posíláno 100 miliard směrem k rozvíjejícím se státům. Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015), kde je obecně formulované, že rozvinuté státy mají přispívat rozvíjejícím státům v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce a ani způsobu určení kolik který stát má vlastně přispívat, toto rozhodnutí je ponecháno na každém jednotlivém státu. 
+Myšlenka klimatických financí byla vytvořena na COP 16 (Kodaň, 2009), kde se 27 rozvinutých států zavázalo, že v roce 2020 bude ročně posíláno 100 miliard směrem k rozvíjejícím se státům. Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015), kde je obecně formulované, že rozvinuté státy mají přispívat rozvíjejícím státům v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce a ani způsobu určení kolik který stát má vlastně přispívat, toto rozhodnutí je ponecháno na každém jednotlivém státu. 
 
 ## Proč jsou klimatické finance důležité?
 
