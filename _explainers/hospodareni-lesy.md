@@ -13,11 +13,6 @@ cover-source-license-url: "??"
 cover-source-text: "Rýchorský prales, Krkonoše. Fotoarchiv Aleše Erbera."
 perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně vidět. Chceme-li mít v Česku zdravé lesy, je potřeba v nich začít hospodařit jinak, než bylo v posledních dvou stoletích běžné a pěstoval lesy, které se dokáží měnícím se klimatickým podmínkám přizpůsobit. Co všechno je potřeba změnit? Jak zajistit, aby les byl zdravý, odolný a plný života – a zároveň jsme měli možnost jej dál využívat, ať už k produkci dřeva nebo třeba trávení volného času? Funkce lesa a hlavní výzvy, před nimiž stojí lesníci v 21. století, v základních obrysech přibližuje následující explainer."
 ---
-## Proč naše lesy chřadnou?
-
-Většina lesů na území ČR není v nejlepší kondici a zejména u smrků a borovic můžeme pozorovat chřadnutí a odumírání stromů ve velkém měřítku a spolu s tím dochází k tzv. plošnému rozpadu lesa a zániku mikroklimatu, jež je pro lesní ekosystém klíčové. 
-
-Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé teritoriální šíření tohoto brouka a s tím související kalamita spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější – více o tomto tématu se dočtete v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
 
 {% include preview-box.html
     title="Proč umírají české jehličnaté lesy?"
@@ -25,6 +20,12 @@ Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnož
     slug="umirani-ceskych-lesu"
 %}
 <!--- TODO Nadpis explaineru se dubluje  --> 
+
+## Proč naše lesy chřadnou?
+
+Většina lesů na území ČR není v nejlepší kondici a zejména u smrků a borovic můžeme pozorovat chřadnutí a odumírání stromů ve velkém měřítku a spolu s tím dochází k tzv. plošnému rozpadu lesa a zániku mikroklimatu, jež je pro lesní ekosystém klíčové. 
+
+Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé šíření tohoto brouka a s tím související kalamita spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější – více o tomto tématu se dočtete v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).  
 
 ## K čemu lesy potřebujeme?
 
@@ -42,20 +43,18 @@ Dobrý lesní hospodář by měl myslet na všechny tyto funkce a potřeby. Roma
 Laická odpověď by patrně zněla: sázet stromy. Ale jaké druhy, kde a jakým způsobem je sázet? A jak je ochránit, aby z nich skutečně vyrostl les – les, který si zachová svou produkční funkci a zároveň se bude umět adaptovat na měnící se klima? A kdo tuto obnovu lesa zaplatí? Před těmito a dalšími otázkami stojí lesní hospodář.
 
 ### Druhová pestrost a využití „pionýrských dřevin“
-Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^100]. 
+Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^100]. <!--- TODO odkaz na publkaci Rotter -->
 
-<!--- TODO Mapa dřevin / carusel map -->
+<!--- TODO Mapa pro smrk / vyladit velikost legendy a nadpis -->
 
 {% include figure.html
     name="podminky-pro-pestovani-smrk.jpg"
-    caption="Mladé stromky zasázené na holině, Zálesná Zhoř, Jihomoravský kraj."
+    caption="Očekávané podmínky pro pěstování smrku v letech 2041-2060."
     alt="Mladé stromky zasázené na holině."
-    source-text="Fotoarchiv autora"
+    source-text="Mikita et al.: Modelování podmínek pro pěstování smrku, buku a dubu"
 %}
 
-Mnoho stromů ovšem nestačí jen tak vysázet na nechráněnou paseku: zatímco smrk dokáže růst i na plném slunci, třeba jedle je více stínomilná, a potřebuje tedy nad sebou mít vyšší stromy, které ji před prudkými slunečními paprsky ochrání[^2],[^3]. Zavádění jiných druhů tedy předpokládá i využívání jiných postupů při obnově lesa, například zapojení tzv. pionýrských dřevin (bříza, jeřáb, vrba, topol…), jež se dokáží rychle rozšířit do míst, kde les uhynul, a připravit podmínky pro návrat druhů, které mají na půdu a mikroklima větší nároky[^4],[^5], včetně dřevin cílových. 
-
-Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7]. 
+Mnoho stromů ovšem nelze jen tak vysázet na nechráněnou paseku: zatímco smrk většinou dokáže růst i na plném slunci, třeba buky nebo jedle pro růst semenáčků potřebují zastínění vyšších stromů a nelze je proto přímo sázet na holiny. Pro obnovu lesa na pasekách[^3] je proto vhodné použít tzv. pionýrské dřeviny (bříza, jeřáb, vrba, topol…). Tyto dřeviny na pasekách snadno vyrostou[^2], většinou jejich semena přinesou ptáci či zvěř, ale můžeme také pomoci zaséváním semen na na pasekách (např. břízy[^4]). Dřevo pionýrských dřevin není z hospodářského hlediska zvlášť hodnotné, ale vytváří mikroklima, do kterého lze uspěšně sázet hodnotnou cílovou dřevinu[^5] (jedle, buky anebo i smrk). Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7]. 
 
 
 
@@ -120,18 +119,29 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 [^100]: Mikita, T., Čermák, P., Trnka, M., Jurečka, F.: [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), Frameadapt, 2016
 
-
 [^101]: V publikaci [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), str. 7, jsou podrobně ukázány posuny teplot v období 1961-1990 a 1991-2014 pro tzv. [lesní vegetační stupně](http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji). A zatímco v minulém století se dubový a bukodubový vegetační stupeň nacházel pouze na Jižní Moravě a v Polabí, kolem roku 2050 bude pokrývat prakticky celé území ČR, kromě nejvyšších oblastí Šumavy, Krkonoš a Jeseníku. 
 
-[^3]: Z historického hlediska byla druhová skladba ve střední Evropě jiná a převládaly tu buky. Viz například https://ies-ows.jrc.ec.europa.eu/efdac/download/Atlas/pdf/Past_forests_of_Europe.pdf 
+[^102]: O možnostech budoucího pěstování smrků v zástinu se zmiňuje lesník Aleš Erber v [rozhovoru v časopise Ekolist](https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber). 
+
+[^2]: Souček, J.: [Potenciál přirozené obnovy pionýrských druhů dřevin](https://www.vulhm.cz/files/uploads/2021/09/636.pdf), Zprávy lesnického výzkumu, 66, 2021 (3): 188-196
+
+[^3]: [Strategie obnovy lesa na velkých holinách po kůrovcové kalamitě](https://prosilvabohemica.cz/wp-content/uploads/2019/10/sbornik-komplet-doplneny.pdf), sborník příspěvků z odborného semináře, 2019.
 
 [^4]: Martiník, A. 2019. Uplatnění břízy (Betula pendula Roth.) a osiky (Populus tremula L.) při obnově a tvorbě lesa po disturbancích – Příkladová studie z chlumních oblastí Moravy. Mendelova univerzita v Brně, Lesnická práce: 89 s
 
-[^5]: Souček, J., Špulák, O., Leugner, J., Pulkrab, K., Sloup, R., Jurásek, A., Martiník, A. 2016. Dvoufázová obnova lesa na kalamitních holinách s využitím přípravných dřevin – certifikovaná metodika, Lesnický průvodce 10/2019. Strnady, VÚLHM: 35 s.).
+[^5]: Souček, J., Špulák, O., Leugner, J., Pulkrab, K., Sloup, R., Jurásek, A., Martiník, A. 2016. [Dvoufázová obnova lesa na kalamitních holinách s využitím přípravných dřevin](https://www.researchgate.net/publication/322386351_Dvoufazova_obnova_lesa_na_kalamitnich_holinach_s_vyuzitim_pripravnych_drevin_Two-phase_regeneration_of_forest_stand_on_large_calamity_originated_clear-cuts_with_utilisation_of_nurse_stand) – certifikovaná metodika, Lesnický průvodce 10/2019. Strnady, VÚLHM: 35 s.
 
-[^6]: Morin, Xavier, et al. "Temporal stability in forest productivity increases with tree diversity due to asynchrony in species dynamics." Ecology letters 17.12 (2014): 1526-1535
+[^6]: Morin, Xavier, et al. [Temporal stability in forest productivity increases with tree diversity due to asynchrony in species dynamics.](https://www.researchgate.net/publication/265605243_Temporal_stability_in_forest_productivity_increases_with_tree_diversity_due_to_asynchrony_in_species_dynamics) Ecology letters 17.12 (2014): 1526-1535
 
-[^7]: Isbell, Forest, et al. "Biodiversity increases the resistance of ecosystem productivity to climate extremes." Nature 526.7574 (2015): 574-577.
+[^7]: Isbell, Forest, et al. [Biodiversity increases the resistance of ecosystem productivity to climate extremes](https://www.nature.com/articles/nature15374) Nature 526.7574 (2015): 574-577.
+
+
+
+------
+
+
+
+
 
 [^8]: Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 196-197
 
@@ -181,11 +191,9 @@ trvalost zásahů zaměřených na jednotlivé stromy (těžba jednotlivým výb
 <!---
 ----------------------
 
-https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber
+[^3XX]: Z historického hlediska byla druhová skladba ve střední Evropě jiná a převládaly tu buky. Viz například https://ies-ows.jrc.ec.europa.eu/efdac/download/Atlas/pdf/Past_forests_of_Europe.pdf 
 
-http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf
 
-http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji
 
 [^1]: Rotter, P.: [Proč lesy ztrácí imunitu a co s tím dělat?](https://www.researchgate.net/publication/343059340_Proc_lesy_ztraci_imunitu_a_co_s_tim_delat), (2020)
 
