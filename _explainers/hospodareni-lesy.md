@@ -48,7 +48,7 @@ Z hlediska druhové skladby lesa je především potřeba vědět, které druhy 
 <!--- TODO Mapa pro smrk / vyladit velikost legendy a nadpis -->
 
 {% include figure.html
-    name="podminky-pro-pestovani-smrk.jpg"
+    name="budoucnost_pestovani_smrku_mapa.jpg"
     caption="Očekávané podmínky pro pěstování smrku v letech 2041-2060."
     alt="Mladé stromky zasázené na holině."
     source-text="Mikita et al.: Modelování podmínek pro pěstování smrku, buku a dubu"
@@ -76,10 +76,8 @@ Vysázením lesa samozřejmě nic nekončí, ale naopak začíná – a navíc p
 
 ### Druhově a věkově pestrý les
 Každý strom raší a kvete jindy, jinak hospodaří s vodou, velká rozmanitost je i v citlivosti vůči stresovým faktorům – tedy zjednodušeně řečeno: čím více druhů v lese je, tím větší je také pravděpodobnost, že se v případě neobvyklé sezóny (například sucha) najdou i ty, které ji zvládnou lépe, a nebude tak ohrožen celý les, nanejvýš jeho část. Stejně tak na stromy různého věku a vzrůstu mají stresory odlišný dopad: například ve smrku se kůrovec šíří tím snáze, čím více na určité ploše těchto stromů je a čím jsou starší[^11], rovněž u buku byla v některých studiích pozorována větší citlivost vzrostlejších stromů k suchu[^12].
- 
-<!--- až sem se mi podařilo text zkontrolovat včetně odkazů -->
 
-Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odborně říká facilitace[^13],[^14]). Vhodným sousedem je zde myšlen jiný druh stromu, jehož blízkost zranitelnějšímu stromu prospívá – jako příklad lze uvést již zmíněnou stínomilnou jedli[^15].
+Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odborně říká facilitace[^13],[^14]). Vhodným sousedem je zde myšlen jiný druh stromu, jehož blízkost zranitelnějšímu stromu prospívá, například zlepšováním dostupnosti potřebných minerálů v půdě[^15].
 
 ### Podpora mykorhizní symbiózy 
 
@@ -87,14 +85,24 @@ Dalším zásadním stabilizačním mechanismem je „spolupráce“ kořenů ro
 - umožňuje stromu efektivněji čerpat důležité minerální živiny z půdy[^20]
 - umožnuje stromu efektivněji čerpat půdní vodu a podílí se zpomalení vysychání půdního profilu[^21]
 
-významnou měrou se podílí na odolnosti kořenového systému před průnikem patogenních organismů (především škodlivých hub) a účastní se dalších funkcí podporujících přirozenou obranyschopnost stromu[^22]
+Významnou měrou se podílí na odolnosti kořenového systému před průnikem patogenních organismů (především škodlivých hub) a účastní se dalších funkcí podporujících přirozenou obranyschopnost stromu[^22]
 
 Jak konkrétně mohou lesní hospodáři v lese mykorhizu podpořit? Udržováním diverzity půdních podmínek (například nehomogenizovat půdní frézou), zapojováním pionýrských dřevin nebo podporou dřevin, které mají mykorhizu odolnější vůči působení reaktivního dusíku (třešeň, javory, jeřáb břek, částečně lípa)[^23]. 
 
-Využití přirozených stabilizačních mechanismů a dalším způsobům zvyšujícím odolnost lesa, bude věnován samostatný explainer. Na tomto místě je však třeba v souvislosti s lesním hospodařením a obnovou lesa ještě zmínit způsob těžby dřeva. V současné době je na našem území běžným těžebním zásahem tzv. holoseč, kdy se jednorázově smýtí všechny stromy rostoucí na určité ploše[^24]. Něco takového se dá zvládnout rychle a za pomoci těžké techniky, jako jsou harvestory, což je sice efektivní, místo lesa však zůstane místo téměř bez života. 
+### Způsob těžby dřeva
+
+V současné době je na našem území běžným těžebním zásahem tzv. holoseč, kdy se jednorázově smýtí všechny stromy rostoucí na určité ploše[^24]. Něco takového se dá zvládnout rychle a za pomoci těžké techniky, jako jsou harvestory, což je sice efektivní, místo lesa však zůstane místo téměř bez života. 
 Oproti tomu nepasečný, výběrný způsob hospodaření je z hlediska těžby náročnější (využívání koní, označování jednotlivých stromů určených ke smýcení a podobně), je ale také k lesu i lesnímu ekosystému mnohem šetrnější a těžební zásah ve srovnání s holosečí prakticky není vidět[^25]. Různé typy sečí a jejich vliv na podobu lesa ukazuje následující obrázek:  
 
-<!--- TODOPestrost skladby lesa ovlivněná způsobem hospodaření. Zdroj: Les v hodině dvanácté[^8]  -->
+<!--- TODO vyladit obrázek
+{% include figure.html
+    name="zpusob-hospodareni.jpg"
+    caption="Pestrost skladby lesa ovlivněná způsobem hospodaření"
+    alt="Různé druhy sečí ovlivňují druhovou pestrost."
+    source-text="Višňák, R.: Les v hodině dvanácté (2009)."
+%}
+
+  -->
 
 ### Nové modely hospodaření
 Lesníci se dnes již mohou inspirovat také novými modely hospodářského lesa – například trvale tvořivým lesem (v originále Dauerwald), obhospodařovaném tzv. „volným stylem“[^30],[^31]. Tento způsob práce s lesem klade velký důraz na erudici a vlastní zodpovědnost lesního správce, na druhou stranu má výhodu v tom, že není svázán „tabulkovými a šablonovitými“ přístupy, které často pro dnešní dobu postrádají dostatek flexibility, a jsou tedy z hlediska klimatických a dalších změn málo adaptabilní.
@@ -115,7 +123,8 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 ## Zdroje a poznámky
 
-[^1]: Od roku 1961 stoupla [průměrná roční teplota v ČR o 2,1 °C](/infografiky/teplota-cr)
+[^1]: Od roku 1961 stoupla [průměrná roční teplota v ČR o 2,1 °C](/infografiky/teplota-cr). Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá  posunu přibližně o 300 výškových metrů.
+
 
 [^100]: Mikita, T., Čermák, P., Trnka, M., Jurečka, F.: [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), Frameadapt, 2016
 
@@ -135,104 +144,42 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 [^7]: Isbell, Forest, et al. [Biodiversity increases the resistance of ecosystem productivity to climate extremes](https://www.nature.com/articles/nature15374) Nature 526.7574 (2015): 574-577.
 
-[^8]: Rotter et al. [Lesníkův průvodce neklidnými časy](https://www.hnutiduha.cz/sites/default/files/publikace/2021/09/lesnikuv_pruvodce_neklidnymi_casy.pdf) 2021 v tisku, 196-197
+[^8]: Rotter, P. et al.: [Lesníkův průvodce neklidnými časy](https://www.researchgate.net/publication/354779838_Lesnikuv_pruvodce_neklidnymi_casy). VÚKOZ, (2021).
 
 [^11]: Netherer, Sigrid, et al. [Acute drought is an important driver of bark beetle infestation in Austrian Norway spruce stands](https://www.frontiersin.org/articles/10.3389/ffgc.2019.00039/full)" Frontiers in Forests and Global Change 2 (2019): 39
 
 [^12]: van der Maaten, Ernst. [Climate sensitivity of radial growth in European beech (Fagus sylvatica L.) at different aspects in southwestern Germany](https://www.researchgate.net/publication/233783375_Climate_sensitivity_of_radial_growth_in_European_beech_Fagus_sylvatica_L_at_different_aspects_in_southwestern_Germany),  Trees 26.3 (2012): 777-788
 
-----
+[^13]: Callaway RM. 1995. [Positive interactions among plants](https://link.springer.com/article/10.1007/BF02912621). Botanical Review 61: 306–349
 
-[^13]: Callaway RM. 1995. Positive interactions among plants. Botanical Review 61: 306–349
+[^14]: Po roce 2010 bylo na téma vlivu sousedních stromů na odezvu sledovaného jedince vůči suchu publikováno už poměrně velké množství studií, jejichž výsledky byly nedávno shrnuty v textu Grossiord, Charlotte. [Having the right neighbors: how tree species diversity modulates drought impacts on forests](https://nph.onlinelibrary.wiley.com/doi/epdf/10.1111/nph.15667), New Phytologist 228.1 (2020): 42-49.  
 
-[^14]: Po roce 2010 bylo na téma vlivu sousedních stromů na odezvu sledovaného jedince vůči suchu publikováno už poměrně velké množství studií, jejichž výsledky byly nedávno shrnuty v textu Grossiord, Charlotte. "Having the right neighbors: how tree species diversity modulates drought impacts on forests." New Phytologist 228.1 (2020): 42-49.  
+[^15]: Najdeme však i příklady zlepšování stavu půdního prostředí: buky rostoucí v sousedství lip a habru měly výživu (z půdy) bohatší na draslík a fosfor než buky obklopené jinými buky. Viz Schmidt, M., Veldkamp, E., & Corre, M. D. (2015). [Tree species diversity effects on productivity, soil nutrient availability and nutrient response efficiency in a temperate deciduous forest](https://www.researchgate.net/publication/280713997_Tree_species_diversity_effects_on_productivity_soil_nutrient_availability_and_nutrient_response_efficiency_in_a_temperate_deciduous_forest),  Forest Ecology and Management, 338, 114-123
 
-[^15]: Najdeme však i příklady zlepšování stavu půdního prostředí: buky rostoucí v sousedství lip a habru měly výživu (z půdy) bohatší na draslík a fosfor než buky obklopené jinými buky. Viz Schmidt, M., Veldkamp, E., & Corre, M. D. (2015). Tree species diversity effects on productivity, soil nutrient availability and nutrient response efficiency in a temperate deciduous forest. Forest Ecology and Management, 338, 114-123
+[^20]: Tedersoo, Leho, Mohammad Bahram, and Martin Zobel: [How mycorrhizal associations drive plant population and community biology](https://www.researchgate.net/publication/339401880_How_mycorrhizal_associations_drive_plant_population_and_community_biology) Science 367.6480 (2020)
 
+[^21]: Simard, S., et al. [Resource transfer between plants through ectomycorrhizal fungal networks](https://www.researchgate.net/publication/272567309_Resource_Transfer_Between_Plants_Through_Ectomycorrhizal_Fungal_Networks) Mycorrhizal networks. Springer, Dordrecht, 2015. 133-176.
 
+[^22]: Werner, S., Polle, A., Brinkmann, N.: [Belowground communication: impacts of volatile organic compounds (VOCs) from soil fungi on other soil-inhabiting organisms](https://www.researchgate.net/publication/308214410_Belowground_communication_impacts_of_volatile_organic_compounds_VOCs_from_soil_fungi_on_other_soil-inhabiting_organisms) Applied microbiology and biotechnology 100.20 (2016): 8651-8665.
 
-[^20]: Tedersoo, Leho, Mohammad Bahram, and Martin Zobel. "How mycorrhizal associations drive plant population and community biology." Science 367.6480 (2020)
+[^23]: O reaktivním dusíku a jeho podílu na nadměrném okyselování půdy jako jedné z hlavních příčiny nízké odolnosti lesů v ČR se více dozvíte v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).  
 
-[^21]: Simard, Suzanne, et al. "Resource transfer between plants through ectomycorrhizal fungal networks." Mycorrhizal networks. Springer, Dordrecht, 2015. 133-176.
+[^24]: Současná legislativa připouští holoseče do 1 hektaru a v šířce do dvojnásobku výšky těženého porostu, za určitých podmínek je ale přípustná holoseč až 3 hektary, bez omezení šířky. Viz Višňák, Richard. *Les v hodině dvanácté*. Hnutí DUHA (2009), s. 302
 
-[^22]: Werner, Stephanie, Andrea Polle, and Nicole Brinkmann. "Belowground communication: impacts of volatile organic compounds (VOCs) from soil fungi on other soil-inhabiting organisms." Applied microbiology and biotechnology 100.20 (2016): 8651-8665.
+[^25]: Více o tomto typu hospodaření, u nás již tři desítky let využívaném v lokalitě Klokočná, se lze dočíst v knize Vladislava Ferkla *Může být nepasečný – výběrný způsob hospodaření alternativou pro naše lesy?* Pro Silva Bohemica (2020). 
 
-[^23]: O reaktivním dusíku a jeho podílu na nadměrném okyselování půdy jako jedné z hlavních příčiny nízké odolnosti lesů v ČR se více dozvíte v explaineru Proč umírají české jehličnaté lesy.
+[^30]: Obecné principy Dauerwaldu: stálé zakrytí půdy, zpravidla smíšeným lesním porostem, produkce hroubí už na nejmenší ploše, výchova porostu pod porostní clonou, dostatečná zásoba hroubí s největším možným přírůstem, stálá podpora nejhodnotnějších stromů a těžba stromů nejhorších, trvalost zásahů zaměřených na jednotlivé stromy (těžba jednotlivým výběrem nebo jen maloplošná obnovní těžba, žádné holoseče) (*Lesníkův průvodce neklidnými časy*)
 
-[^24]: Současná legislativa připouští holoseče do 1 hektaru a v šířce do dvojnásobku výšky těženého porostu, za určitých podmínek je ale přípustná holoseč až 3 hektary, bez omezení šířky. Viz Višňák, Richard. Les v hodině dvanácté. Hnutí DUHA (2009), s. 302
+[^31]: Dobrovolný, L. v [Nepasečné hospodaření jako součást řešení problému klimatické změny](https://prosilvabohemica.cz/wp-content/uploads/2018/12/Sbornik-Krtiny-14-9-2018-komplet.pdf), sborník příspěvků z odborného semináře. 
 
-[^25]: Více o tomto typu hospodaření, u nás již tři desítky let využívaném v lokalitě Klokočná, se lze dočíst v knize Vladislava Ferkla Může být nepasečný – výběrný způsob hospodaření alternativou pro naše lesy? Pro Silva Bohemica (2020). 
-
-[^30]: Obecné principy Dauerwaldu: 
-stálé zakrytí půdy, zpravidla smíšeným lesním porostem
-produkce hroubí už na nejmenší ploše, výchova porostu pod porostní clonou
-dostatečná zásoba hroubí s největším možným přírůstem
-stálá podpora nejhodnotnějších stromů a těžba stromů nejhorších
-trvalost zásahů zaměřených na jednotlivé stromy (těžba jednotlivým výběrem nebo jen maloplošná obnovní těžba, žádné holoseče)
-(Dobrovolný in Lesníkův průvodce neklidnými časy)
-
-[^31]: Dobrovolný https://prosilvabohemica.cz/wp-content/uploads/2018/12/Sbornik-Krtiny-14-9-2018-komplet.pdf
-
-[^40]: http://www.uhul.cz/images/NLP/NLP_II_final_CZ.pdf 
+[^40]: [Národní Lesnický Program](http://www.uhul.cz/images/NLP/NLP_II_final_CZ.pdf) do roku 2013 
 
 [^41]: „Stávající znění lesního zákona sice výslovně nezakazuje hospodaření výběrným způsobem, udržování nízkých a středních lesů či další formy nepasečného hospodaření, celá logika zákona je však formována především orientací na průmyslové lesnictví založené na stejnověkých monokulturách a plantážích stejnověkých dřevin, mýcených za použití těžké techniky, čímž vznikají rozsáhlejší paseky [...] Novela lesního zákona a souvisejících vyhlášek (vyhlášky č. 83/1996 Sb., 84/1996 Sb., 101/1996 Sb. a 139/2004 Sb.) může mít přímý vliv na zlepšení zdravotního stavu našich lesů tím, že zajistí rozmanitější formy lesa, umožní provádět v nich přírodě bližší hospodaření bez holosečí a podpoří některé historické postupy nebo ponechání malé části lesů pouze divoké přírodě a jejím návštěvníkům.“ Viz Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 194.
 
-[^42]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0572 
+[^42]: [New EU Forest Strategy for 2030](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0572) 
 
-[^43]: https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1590574123338&uri=CELEX:52020DC0380 
+[^43]: [EU Biodiversity Strategy for 2030](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1590574123338&uri=CELEX:52020DC0380)
 
-[^44]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.156.01.0001.01.ENG 
-
-
-<!---
-----------------------
-
-[^3XX]: Z historického hlediska byla druhová skladba ve střední Evropě jiná a převládaly tu buky. Viz například https://ies-ows.jrc.ec.europa.eu/efdac/download/Atlas/pdf/Past_forests_of_Europe.pdf 
+[^44]: [Regulace EU týkající se započítávání LULUCF emisí skleníkových plynů](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.156.01.0001.01.ENG) 
 
 
-
-[^1]: Rotter, P.: [Proč lesy ztrácí imunitu a co s tím dělat?](https://www.researchgate.net/publication/343059340_Proc_lesy_ztraci_imunitu_a_co_s_tim_delat), (2020)
-
-[^2]: Hlásny, T., Krokene, P., Liebhold, et al. (2019): [Život s kůrovcem: Dopady, výhledy a řešení](https://efi.int/sites/default/files/files/publication-bank/2020/efi_fstp8_2019_cz.pdf), Od vědy ke strategii 8. Evropský lesnický institut.
-
-[^3]: Kučera, M., Adolt, R.: [Národní inventarizace lesů v České republice – výsledky druhého cyklu 2011-2015](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf), tabulka na str. 139.
-
-[^4]: Hlásny, T., Zimová, S., Merganičová, K., Štěpánek, P., Modlinger, R., Turčáni, M.: [Devastating outbreak of bark beetles in the Czech Republic: Drivers, impacts, and management implications](https://pubag.nal.usda.gov/catalog/7314598), Forest ecology and management, 2021
-
-[^5]: [FAO](http://www.fao.org/home/en/) (*Food and Agriculture organization of the United Nations*), používá následující definici: Les představují pozemky s plochou větší než 0,5 ha s celkovým zápojem stromů o výšce alespoň 5 m dosahujícím 10 %. Dále jako les označuje pozemky se stromy schopnými dosáhnout výšky 5 m a zápoje 10 % na daném stanovišti. Do kategorie les se neřadí porosty s šířkou menší než 20 m (liniové porosty) a pozemky s převážně zemědělským nebo městským využitím. Dále do kategorie les nepatří větší vodní plochy a větší zpevněné cesty. Do kategorie les se však řadí pozemky, které jsou dočasně odlesněné (holé seče, kalamitní holiny, požářiště apod.), tedy pozemky, u nichž existuje předpoklad budoucího dosažení požadovaných 10 % zápoje stromů s výškou alespoň 5 m.  
-
-[^15]: [Jaký podkorní hmyz kromě lýkožrouta smrkového hostí jehličnany v Česku?](https://ekolist.cz/cz/publicistika/priroda/jaky-podkorni-hmyz-krome-lykozrouta-smrkoveho-hosti-jehlicnany-v-cesku), Ekolist.cz (2020)
-
-[^16]: [Atlas poškození dřevin: škůdci kmene a větví jehličnanů](http://atlasposkozeni.mendelu.cz/kategorie/137-skudci_kmene_a_vetvi_jehlicnanu.html)
-
-[^21]: Višňák, R.: Les v hodině dvanácté (2009), ISBN 978-80-88699-19-4
-
-[^22]: V knížce *Les v hodině dvanácté* (Richard Višňák, 2009) popisuje autor podrobněji malý a velký cyklus obnovy lesa a poznamenává, že v určitých podmínkách je plošný rozpad lesa součástí přirozeného cyklu. Jde hlavně o jehličnaté lesy severské tajgy, ve kterých požáry nebo vichřice způsobují umírání starého lesa ve velkých oblastech. Uvolněné plochy pak nejdříve obsadí tzv. pionýrské dřeviny – třeba břízy nebo jeřáby. České lesy by se ale v přirozeném stavu obnovovaly postupně a plošný rozpad lesa vzniká v českých podmínkách hlavně vlivem hospodaření a vysazování stejnověkých monokultur (většinou smrkových).
-
-[^23]: Obecně platí, že monokultury bývají méně odolné než smíšené porosty. Výjimkou jsou ale akátové lesy. Akát je nepůvodní invazní dřevina, jeho kořeny vypouštějí látky, které jsou pro ostatní rostliny toxické, nemá přirozené škůdce, a je proto schopen tvořit velmi odolné monokultury, ze kterých vytlačí všechny ostatní rostliny.
-
-[^24]: Hruška, J., Kopáček, J.: [Kyselý déšť stále s námi – zdroje, mechanismy, účinky, minulost a budoucnost](https://www.mzp.cz/web/edice.nsf/DC21A4C7F0AFAD0AC1257081001AA6B7/$file/planeta_web.pdf), (2005), Ministerstvo životního prostředí ČR.
-
-[^25]: Chuchman, T., Oulehle, F., Hruška, J.: [Poškozování ekosystémů nadměrnou depozicí dusíku a vyjádření míry kritické zátěže](https://ziva.avcr.cz/files/ziva/pdf/poskozovani-ekosystemu-nadmernou-depozici-dusiku-a.pdf), (2019), Živa, nakladatelství Academia, [přílohy a mapy](https://ziva.avcr.cz/2020-4/poskozovani-ekosystemu-nadmernou-depozici-dusiku-a-vyjadreni-miry-kriticke-zateze.html)
-
-[^26]: Rotter, P. et al.: [Lesníkův průvodce neklidnými časy](https://www.researchgate.net/publication/354779838_Lesnikuv_pruvodce_neklidnymi_casy). VÚKOZ, (2021),
-
-[^30]: [Mapa potenciální přirozené vegetace České republiky](https://www.pladias.cz/download/vegetation). Tato mapa zachycuje typy vegetace, které by na přirozeném nebo člověkem pozměněném stanovišti existovaly v případě, že by člověk vegetaci neovlivňoval.
-
-[^40]: Průměrná [změna teploty s výškou](https://www.pocasicz.cz/aktuality-o-pocasi/aktuality-471/zmena-teploty-s-vyskou-1455) je 0,6 °C na 100 m. Tedy oteplení o 2 °C odpovídá  posunu přibližně o 300 m.
-
-[^50]: V obecné rovině lze říci, že sucho, které by se před sto lety vyskytovalo jen asi jednou za deset let, můžeme nyní, kdy je planeta o 1 °C teplejší, očekávat za dekádu zhruba dvakrát. Lokální riziko sucha závisí na mnoha faktorech, v některých oblastech se riziko zvyšuje mnohem více (podrobněji viz obrázek SPM.6 v [IPCC, 2021: Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis.](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf#page=24)) Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change.
-
-[^51]: Büntgen, U., Urban, O., Krusic, P.J. et al.: [Recent European drought extremes beyond Common Era background variability](https://www.nature.com/articles/s41561-021-00698-0). Nat. Geosci. 14, 190–196 (2021). [https://doi.org/10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0).
-
-[^52]: [Mapa výskytu lýkožrouta smrkového](https://www.klimatickazmena.cz/cs/?l=64), Czechglobe.
-
-[^101]: Situace smrkových a borových lesů je do velké míry podobná. Oba typy dřevin jsou oslabovány klimatickou změnou, pěstováním v monokulturách a degradací půdy a zabíjeny kůrožravým hmyzem. V publikaci [Lesníkův průvodce neklidnými časy](https://www.researchgate.net/publication/354779838_Lesnikuv_pruvodce_neklidnymi_casy) autoři podrobněji diskutují situaci obou dřevin a související výzkum se závěrem, že *chřadnutí borovice nejlépe vysvětluje kombinované působení depozice reaktivního dusíku a sucha, přičemž depozice má o něco vyšší váhu.* Specifikům borových lesů se věnuje také publikace [Biotičtí škodliví činitelé na borovici a sucho](https://www.vulhm.cz/files/uploads/2019/12/2016_LOS-letak_BO-a-sucho.pdf).
-
-[^102]: Šrámek, V. et al. (2007): [Chřadnutí lesních porostů na LS Jablunkov. Určení komplexu příčin poškození a návrh opatření na revitalizaci lesa](https://lesycr.cz/wp-content/uploads/2016/12/jablunkov-web.pdf)
-
-[^103]: Šrámek, V., Novotný, R., & Fadrhonsová, V. (2015): [Chřadnutí smrkových porostů a stav lesních půd v oblasti Severní Moravy a Slezska](https://www.vulhm.cz/files/uploads/2019/02/401.pdf). Zprávy lesnického výzkumu, 60(2), 147–153.
-
-[^104]: De Vries, W., et al.: [Impacts of acid deposition, ozone exposure and weather conditions on forest ecosystems in Europe: an overview](https://link.springer.com/content/pdf/10.1007/s11104-014-2056-2.pdf) Plant and Soil (2014), 380(1), 1–45.
-
--->
