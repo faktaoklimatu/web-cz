@@ -56,29 +56,29 @@ Z hlediska druhové skladby lesa je především potřeba vědět, které druhy 
 
 Mnoho stromů ovšem nelze jen tak vysázet na nechráněnou paseku: zatímco smrk většinou dokáže růst i na plném slunci, třeba buky nebo jedle pro růst semenáčků potřebují zastínění vyšších stromů a nelze je proto přímo sázet na holiny. Pro obnovu lesa na pasekách[^3] je proto vhodné použít tzv. pionýrské dřeviny (bříza, jeřáb, vrba, topol…). Tyto dřeviny na pasekách snadno vyrostou[^2], většinou jejich semena přinesou ptáci či zvěř, ale můžeme také pomoci zaséváním semen na na pasekách (např. břízy[^4]). Dřevo pionýrských dřevin není z hospodářského hlediska zvlášť hodnotné, ale vytváří mikroklima, do kterého lze uspěšně sázet hodnotnou cílovou dřevinu[^5] (jedle, buky anebo i smrk). Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7]. 
 
-
-
 ### Regulování stavů zvěře
 Velice důležitou podmínkou pro obnovu lesa je také přiměřený stav zvěře, zejména spárkaté (srny, jeleni, mufloni, daňci), která je v dnes v ČR značně přemnožená a způsobuje rozsáhlé škody. Současný zákon o myslivosti nicméně neumožňuje množství zvěře potřebám lesa efektivně přizpůsobovat, a je tedy nutná jeho novelizace. 
 
 Další, přírodě bližší možností, jak stavy zvěře snižovat, je vracet postupně do našich lesů šelmy. Ty tu dříve žily, byly však vyhubeny, a zvěř tak dnes u nás nemá přirozené nepřátele. Dynamika ekosystému, kdy šelmy udržují rovnováhu mezi býložravci a vegetací, tím byla narušena, a lesům by pomohlo, kdyby se ji alespoň zčásti podařilo obnovit.    
 
 ### Úpravy legislativy a pravidel pro finančí podporu
-Obnova lesa přirozeně vyžaduje také vynaložení nemalých finančních prostředků. Ty se přitom vrátí mnohem později než třeba v zemědělství: například mýtní věk dubu je u nás 120 let, u smrku či borovice je to 80 let. Lesní hospodář proto musí dlouho čekat, než se mu jeho náklady zaplatí, a klíčová je v tomto směru pomoc dotačních programů státu či Evropské unie. Tyto programy bude nicméně nutné nastavit tak, aby zároveň motivovaly k šetrnějšímu hospodaření (spíše než k opravám asfaltových cest v lesích či plošné výsadbě, jako je tomu často dnes) a podpořily biologickou rozmanitost – získání podpory pro investice do lesního hospodaření by mělo být obecně snadnější, zároveň však podmíněné splněním minima „zásad dobré praxe“[^8].
+Obnova lesa přirozeně vyžaduje také vynaložení nemalých finančních prostředků. Ty se přitom vrátí mnohem později než třeba v zemědělství: například mýtní věk dubu je u nás typicky 120 let, u smrku či borovice je to 80 let. Lesní hospodář proto musí dlouho čekat, než se mu jeho náklady zaplatí, a klíčová je v tomto směru pomoc dotačních programů státu či Evropské unie. Tyto programy bude nicméně nutné nastavit tak, aby zároveň motivovaly k šetrnějšímu hospodaření (spíše než k opravám asfaltových cest v lesích či plošné výsadbě, jako je tomu často dnes) a podpořily druhovou rozmanitost – získání podpory pro investice do lesního hospodaření by mělo být obecně snadnější, zároveň však podmíněné splněním minima „zásad dobré praxe“[^8].
 
 Pomoci ovšem mohou i legislativní změny: například již zmiňovaná novelizace zákona o myslivosti a následné snížení stavu přemnožené zvěře může být účinným prostředkem k redukci škod v obnoveném lese, a tedy znamenat i značné snížení nákladů. 
 
-<!---TODO Ekonomické stránce lesního hospodaření bude věnován samostatný explainer Kolik stojí les? -->
+<!---FutureTODO Ekonomické stránce lesního hospodaření bude věnován samostatný explainer Kolik stojí les? -->
 
 ## Jakým způsobem do budoucna v lese hospodařit?
 
 Vysázením lesa samozřejmě nic nekončí, ale naopak začíná – a navíc potřebujeme správně hospodařit i v lesích, které již stojí. Klimatická změna způsobuje, že na rozdíl od minulosti, kdy lesním hospodářům stačilo pokračovat v postupech prověřených předchozími generacemi, musí dnes počítat se značnou mírou nejistoty. V důsledku globálního oteplování tu máme podmínky, které zde dříve nebyly, přibývá extrémních projevů počasí jako vichřice, delší období sucha a podobně. Na to se nikdy úplně připravit nelze, nicméně zmírnit dopady (i ekonomickou nákladnost) těchto událostí do určité míry možné je, například posílením odolnosti lesa pomocí přirozených stabilizačních mechanismů:
-druhově a věkově pestré skladby lesa (a s tím související facilitace, viz dále)
-mykorhizní symbiózy
+- druhově a věkově pestré skladby lesa (a s tím související facilitace, viz dále)
+- mykorhizní symbiózy
 
 ### Druhově a věkově pestrý les
 Každý strom raší a kvete jindy, jinak hospodaří s vodou, velká rozmanitost je i v citlivosti vůči stresovým faktorům – tedy zjednodušeně řečeno: čím více druhů v lese je, tím větší je také pravděpodobnost, že se v případě neobvyklé sezóny (například sucha) najdou i ty, které ji zvládnou lépe, a nebude tak ohrožen celý les, nanejvýš jeho část. Stejně tak na stromy různého věku a vzrůstu mají stresory odlišný dopad: například ve smrku se kůrovec šíří tím snáze, čím více na určité ploše těchto stromů je a čím jsou starší[^11], rovněž u buku byla v některých studiích pozorována větší citlivost vzrostlejších stromů k suchu[^12].
  
+<!--- až sem se mi podařilo text zkontrolovat včetně odkazů -->
+
 Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odborně říká facilitace[^13],[^14]). Vhodným sousedem je zde myšlen jiný druh stromu, jehož blízkost zranitelnějšímu stromu prospívá – jako příklad lze uvést již zmíněnou stínomilnou jedli[^15].
 
 ### Podpora mykorhizní symbiózy 
@@ -135,25 +135,21 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 [^7]: Isbell, Forest, et al. [Biodiversity increases the resistance of ecosystem productivity to climate extremes](https://www.nature.com/articles/nature15374) Nature 526.7574 (2015): 574-577.
 
+[^8]: Rotter et al. [Lesníkův průvodce neklidnými časy](https://www.hnutiduha.cz/sites/default/files/publikace/2021/09/lesnikuv_pruvodce_neklidnymi_casy.pdf) 2021 v tisku, 196-197
 
+[^11]: Netherer, Sigrid, et al. [Acute drought is an important driver of bark beetle infestation in Austrian Norway spruce stands](https://www.frontiersin.org/articles/10.3389/ffgc.2019.00039/full)" Frontiers in Forests and Global Change 2 (2019): 39
 
-------
+[^12]: van der Maaten, Ernst. [Climate sensitivity of radial growth in European beech (Fagus sylvatica L.) at different aspects in southwestern Germany](https://www.researchgate.net/publication/233783375_Climate_sensitivity_of_radial_growth_in_European_beech_Fagus_sylvatica_L_at_different_aspects_in_southwestern_Germany),  Trees 26.3 (2012): 777-788
 
-
-
-
-
-[^8]: Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 196-197
-
-[^11]: Netherer, Sigrid, et al. "Acute drought is an important driver of bark beetle infestation in Austrian Norway spruce stands." Frontiers in Forests and Global Change 2 (2019): 39
-
-[^12]: van der Maaten, Ernst. "Climate sensitivity of radial growth in European beech (Fagus sylvatica L.) at different aspects in southwestern Germany." Trees 26.3 (2012): 777-788
+----
 
 [^13]: Callaway RM. 1995. Positive interactions among plants. Botanical Review 61: 306–349
 
 [^14]: Po roce 2010 bylo na téma vlivu sousedních stromů na odezvu sledovaného jedince vůči suchu publikováno už poměrně velké množství studií, jejichž výsledky byly nedávno shrnuty v textu Grossiord, Charlotte. "Having the right neighbors: how tree species diversity modulates drought impacts on forests." New Phytologist 228.1 (2020): 42-49.  
 
 [^15]: Najdeme však i příklady zlepšování stavu půdního prostředí: buky rostoucí v sousedství lip a habru měly výživu (z půdy) bohatší na draslík a fosfor než buky obklopené jinými buky. Viz Schmidt, M., Veldkamp, E., & Corre, M. D. (2015). Tree species diversity effects on productivity, soil nutrient availability and nutrient response efficiency in a temperate deciduous forest. Forest Ecology and Management, 338, 114-123
+
+
 
 [^20]: Tedersoo, Leho, Mohammad Bahram, and Martin Zobel. "How mycorrhizal associations drive plant population and community biology." Science 367.6480 (2020)
 
