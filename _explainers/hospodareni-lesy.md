@@ -1,9 +1,9 @@
 ---
 layout:      explainer
-title:       "Jak hospodařit v českých lesích?"
+title:       "Jak v následujícím století hospodařit v českých lesích?"
 slug:        "hospodareni-lesy"
 published:   2021-25-06
-author:      "Jiří Lněnička, Pavel Rotter"
+author:      "Jiří Lněnička, konzultace Pavel Rotter, Matěj Šašek"
 weight:      74
 tags-scopes: [ cr ]
 tags-topics: [ priroda ]
@@ -11,41 +11,181 @@ cover-source-author: "Aleš Erber"
 cover-source-license: "??"
 cover-source-license-url: "??"
 cover-source-text: "Rýchorský prales, Krkonoše. Fotoarchiv Aleše Erbera."
-perex:       "Trvale udržitelný les, který se dokáže přizpůsobovat měnícím se klimatickým podmínkám, je takový, v němž se hospodaří přírodě blízkým způsobem. Jak to ale udělat, abychom dokázali les chránit a zároveň jej mohli také využívat – například k produkci dřeva nebo trávení volného času? Výzvy spojené s postupující klimatickou změnou, před kterými stojí lesníci v 21. století, a možné cesty, jimiž se mohou vydat, přibližuje následující explainer."
+perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně vidět. Chceme-li mít v Česku zdravé lesy, je potřeba v nich začít hospodařit jinak, než bylo v posledních dvou stoletích běžné a pěstoval lesy, které se dokáží měnícím se klimatickým podmínkám přizpůsobit. Co všechno je potřeba změnit? Jak zajistit, aby les byl zdravý, odolný a plný života – a zároveň jsme měli možnost jej dál využívat, ať už k produkci dřeva nebo třeba trávení volného času? Funkce lesa a hlavní výzvy, před nimiž stojí lesníci v 21. století, v základních obrysech přibližuje následující explainer."
 ---
+## Proč naše lesy chřadnou?
 
-Lesy na území ČR nejsou v dobré kondici a jejich stav se rychle zhoršuje. Zejména u smrků a borovic můžeme pozorovat chřadnutí a odumírání stromů ve velkém měřítku a spolu s tím dochází k tzv. plošnému rozpadu lesa a zániku mikroklimatu, jež je pro lesní ekosystém klíčové. 
+Většina lesů na území ČR není v nejlepší kondici a zejména u smrků a borovic můžeme pozorovat chřadnutí a odumírání stromů ve velkém měřítku a spolu s tím dochází k tzv. plošnému rozpadu lesa a zániku mikroklimatu, jež je pro lesní ekosystém klíčové. 
 
-Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé teritoriální šíření tohoto brouka a s tím související kalamita v lesích spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější, ačkoli za normálních okolností by se dokázal poměrně úspěšně bránit – a pokud by ke kůrovcové kalamitě došlo (což se v lesích stává, byť nepříliš často), neměla by tak dlouhé trvání ani tak devastující dopad. 
+Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé teritoriální šíření tohoto brouka a s tím související kalamita spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější – více o tomto tématu se dočtete v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
 
-Podrobněji se o kůrovcích a o vlivu výše uvedených příčin na špatné zdraví našich lesů dočtete v explaineru Proč umírají české jehličnaté lesy. V následujícím textu se podíváme spíše do budoucna a zaměříme se více na to, co z uvedených poznatků plyne pro lesní hospodáře i zbytek společnosti – tedy jaké lesy tu chceme a potřebujeme mít, aby plnily všechny funkce, které lze od zdravého lesa očekávat? V úvahu je přitom nutno vzít i ekonomickou stránku: jak se má lesník starat o les, aby to bylo nejen finančně únosné, ale zároveň mu to přinášelo i nějaký zisk? A na jaké překážky může tato snaha o změnu v přístupu k lesnímu hospodaření narážet?
+{% include preview-box.html
+    title="Proč umírají české jehličnaté lesy?"
+    text=""
+    slug="umirani-ceskych-lesu"
+%}
+<!--- TODO Nadpis explaineru se dubluje  --> 
 
-V dalším textu se na jednotlivé body podíváme podrobněji. 
+## K čemu lesy potřebujeme?
 
-## Adaptace na měnící se podmínky  
+Lesy považujeme za součást přírody, za příjemný prostor, kam chodíme na výlety či na houby (tomu říkáme *estetická a rekreační funkce lesa*). Lesy ale potřebujeme kvůli dalším funkcím, které nemusí být běžnému městskému člověku zřejmé: 
 
-Zásadní obrat v přístupu spočívá v tom, že se musíme naučit žít s vysokou mírou nepředvídatelnosti. Období, kdy bylo díky relativně stabilním podmínkám možné udržovat vysoce produktivní rozsáhlé plochy stejnověkých monokulturních porostů, skončilo. Množství prostředků (např. ve formě dotací) a energie, které by bylo nutné k udržení současného způsobu hospodaření vynaložit, by s postupující klimatickou změnou neustále rostlo. (Můžeme si to představit tak, jako kdybychom sněhuláka, kterého jsme si na Silvestra postavili za domem, chtěli za každou cenu udržet až do léta.) 
+- les má vlastní mikroklima a lokálně zmírňuje dopady globální klimatické změny 
+- přispívá k zadržování vody v krajině a brání erozi půdy
+- napomáhá udržování biologické rozmanitosti (biodiverzity)
+- může být významným úložištěm uhlíku z emisí CO<sub>2</sub>
+- les je **zdroj dřeva, materiálu, který využíváme na stavbách, k výrobě nábytku a papíru, či jako palivo.**
 
-Potřebujeme tedy hospodářský les, který bude schopen adaptace na měnící se podmínky a zároveň nebude vyžadovat velké zásahy ze strany lesníků (jako je nahodilá těžba, přípravky proti škůdcům, umělá obnova lesa apod.), protože ty jsou finančně nákladné a v období s přibývajícím počtem extrémních projevů počasí by se dříve či později staly ekonomicky neúnosné.
+Dobrý lesní hospodář by měl myslet na všechny tyto funkce a potřeby. Romantická představa ochrany lesa, která ingnoruje ekonomické a produkční hledisko není dlouhodobě udržitelná. Stejně tak jsou ale neudržitelné smrkové plantáže optimalizované pro co nejvyšší hospodářskou produkci. Vzhledem k probíhajícím klimatickým a dalším změnám začíná být stále více zřejmé, že máme-li tu do budoucna lesy mít, a mít z nich dlouhodobě i nějaký zisk, musíme hospodařit jinak než dosud. Ale jak? A jak napomoci obnově lesů, o které jsme už přišli?
 
-Jaké funkce by měl takový adaptovaný hospodářský les mít? Měl by:
-napomáhat udržování biologické rozmanitosti (biodiverzity)
-zachovávat si svou produkční funkci, tedy být i nadále zdrojem dřeva
-lokálně zmírňovat dopady klimatické změny
-být významným úložištěm uhlíku
-přispívat k zadržování vody v krajině
-zůstávat příjemným prostorem pro relaxaci obyvatelstva
+## Co je potřeba udělat pro obnovu lesa?
+Laická odpověď by patrně zněla: sázet stromy. Ale jaké druhy, kde a jakým způsobem je sázet? A jak je ochránit, aby z nich skutečně vyrostl les – les, který si zachová svou produkční funkci a zároveň se bude umět adaptovat na měnící se klima? A kdo tuto obnovu lesa zaplatí? Před těmito a dalšími otázkami stojí lesní hospodář.
 
-Co konkrétně je tedy potřeba v lesním hospodaření změnit, aby se naše lesy dokázaly snadněji vyrovnávat s většími teplotními a srážkovými výkyvy, lépe zvládaly extrémní jevy (jako jarní sucha, vichřice, pozdní mrazy apod.), rychleji se dokázaly vzpamatovat po kalamitách – a současně plnily všechny výše uvedené funkce?  
+### Druhová pestrost a využití „pionýrských dřevin“
+Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^100]. 
 
-## Přírodní stabilizační mechanismy
+<!--- TODO Mapa dřevin / carusel map -->
 
-Modelové výpočty ukázaly, že stabilitu produkce u lesních ekosystémů zvyšuje druhová bohatost dřevin[^1]. Z toho vyplývá, že musí skončit pěstování monokultur, ale také že nestačí jednoduše nahradit jehličnany několika málo druhy jiných stromů. Je potřeba, aby byl les druhově i stářím stromů co nejpestřejší. Biodiverzita zvyšuje odolnost ekosystému, a to i specificky vůči projevům klimatické změny[^2]. Každý strom raší a kvete jindy, jinak hospodaří s vodou, velká rozmanitost je i v citlivosti vůči stresovým faktorům – tedy zjednodušeně řečeno: čím více druhů v lese je, tím větší je také pravděpodobnost, že se v případě neobvyklé sezóny (například sucha) najdou i ty, které ji zvládnou lépe, a nebude tak ohrožen celý les, jen jeho část. Stejně tak na stromy různého věku a vzrůstu mají stresory odlišný dopad: například ve smrku se kůrovec šíří tím snáze, čím více na určité ploše těchto stromů je a čím jsou starší[^3], rovněž u buku byla v některých studiích pozorována větší citlivost vzrostlejších stromů k suchu[^4].
+{% include figure.html
+    name="semenacek.jpg"
+    caption="Mladé stromky zasázené na holině, Zálesná Zhoř, Jihomoravský kraj."
+    alt="Mladé stromky zasázené na holině."
+    source-text="Fotoarchiv autora"
+%}
 
-Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odborně říká facilitace[^5],[^6]). Vhodným sousedem je zde myšlen jiný druh stromu, jehož blízkost zranitelnějšímu stromu prospívá – třeba v období delšího sucha, najdeme však i příklady zlepšování stavu půdního prostředí: buky rostoucí v sousedství lip a habru měly výživu (z půdy) bohatší na draslík a fosfor než buky obklopené jinými buky[^7].
+Mnoho stromů ovšem nestačí jen tak vysázet na nechráněnou paseku: zatímco smrk dokáže růst i na plném slunci, třeba jedle je více stínomilná, a potřebuje tedy nad sebou mít vyšší stromy, které ji před prudkými slunečními paprsky ochrání[^2],[^3]. Zavádění jiných druhů tedy předpokládá i využívání jiných postupů při obnově lesa, například zapojení tzv. pionýrských dřevin (bříza, jeřáb, vrba, topol…), jež se dokáží rychle rozšířit do míst, kde les uhynul, a připravit podmínky pro návrat druhů, které mají na půdu a mikroklima větší nároky[^4],[^5], včetně dřevin cílových. 
 
+Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7]. 
+
+
+
+### Regulování stavů zvěře
+Velice důležitou podmínkou pro obnovu lesa je také přiměřený stav zvěře, zejména spárkaté (srny, jeleni, mufloni, daňci), která je v dnes v ČR značně přemnožená a způsobuje rozsáhlé škody. Současný zákon o myslivosti nicméně neumožňuje množství zvěře potřebám lesa efektivně přizpůsobovat, a je tedy nutná jeho novelizace. 
+
+Další, přírodě bližší možností, jak stavy zvěře snižovat, je vracet postupně do našich lesů šelmy. Ty tu dříve žily, byly však vyhubeny, a zvěř tak dnes u nás nemá přirozené nepřátele. Dynamika ekosystému, kdy šelmy udržují rovnováhu mezi býložravci a vegetací, tím byla narušena, a lesům by pomohlo, kdyby se ji alespoň zčásti podařilo obnovit.    
+
+### Úpravy legislativy a pravidel pro finančí podporu
+Obnova lesa přirozeně vyžaduje také vynaložení nemalých finančních prostředků. Ty se přitom vrátí mnohem později než třeba v zemědělství: například mýtní věk dubu je u nás 120 let, u smrku či borovice je to 80 let. Lesní hospodář proto musí dlouho čekat, než se mu jeho náklady zaplatí, a klíčová je v tomto směru pomoc dotačních programů státu či Evropské unie. Tyto programy bude nicméně nutné nastavit tak, aby zároveň motivovaly k šetrnějšímu hospodaření (spíše než k opravám asfaltových cest v lesích či plošné výsadbě, jako je tomu často dnes) a podpořily biologickou rozmanitost – získání podpory pro investice do lesního hospodaření by mělo být obecně snadnější, zároveň však podmíněné splněním minima „zásad dobré praxe“[^8].
+
+Pomoci ovšem mohou i legislativní změny: například již zmiňovaná novelizace zákona o myslivosti a následné snížení stavu přemnožené zvěře může být účinným prostředkem k redukci škod v obnoveném lese, a tedy znamenat i značné snížení nákladů. 
+
+<!---TODO Ekonomické stránce lesního hospodaření bude věnován samostatný explainer Kolik stojí les? -->
+
+## Jakým způsobem do budoucna v lese hospodařit?
+
+Vysázením lesa samozřejmě nic nekončí, ale naopak začíná – a navíc potřebujeme správně hospodařit i v lesích, které již stojí. Klimatická změna způsobuje, že na rozdíl od minulosti, kdy lesním hospodářům stačilo pokračovat v postupech prověřených předchozími generacemi, musí dnes počítat se značnou mírou nejistoty. V důsledku globálního oteplování tu máme podmínky, které zde dříve nebyly, přibývá extrémních projevů počasí jako vichřice, delší období sucha a podobně. Na to se nikdy úplně připravit nelze, nicméně zmírnit dopady (i ekonomickou nákladnost) těchto událostí do určité míry možné je, například posílením odolnosti lesa pomocí přirozených stabilizačních mechanismů:
+druhově a věkově pestré skladby lesa (a s tím související facilitace, viz dále)
+mykorhizní symbiózy
+
+### Druhově a věkově pestrý les
+Každý strom raší a kvete jindy, jinak hospodaří s vodou, velká rozmanitost je i v citlivosti vůči stresovým faktorům – tedy zjednodušeně řečeno: čím více druhů v lese je, tím větší je také pravděpodobnost, že se v případě neobvyklé sezóny (například sucha) najdou i ty, které ji zvládnou lépe, a nebude tak ohrožen celý les, nanejvýš jeho část. Stejně tak na stromy různého věku a vzrůstu mají stresory odlišný dopad: například ve smrku se kůrovec šíří tím snáze, čím více na určité ploše těchto stromů je a čím jsou starší[^11], rovněž u buku byla v některých studiích pozorována větší citlivost vzrostlejších stromů k suchu[^12].
+ 
+Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odborně říká facilitace[^13],[^14]). Vhodným sousedem je zde myšlen jiný druh stromu, jehož blízkost zranitelnějšímu stromu prospívá – jako příklad lze uvést již zmíněnou stínomilnou jedli[^15].
+
+### Podpora mykorhizní symbiózy 
+
+Dalším zásadním stabilizačním mechanismem je „spolupráce“ kořenů rostlin a dřevin s podhoubím (myceliem) mykorhizních hub. Pro zvýšení odolnosti lesa vystaveného stresu je tato symbióza velmi důležitá, protože: 
+- umožňuje stromu efektivněji čerpat důležité minerální živiny z půdy[^20]
+- umožnuje stromu efektivněji čerpat půdní vodu a podílí se zpomalení vysychání půdního profilu[^21]
+
+významnou měrou se podílí na odolnosti kořenového systému před průnikem patogenních organismů (především škodlivých hub) a účastní se dalších funkcí podporujících přirozenou obranyschopnost stromu[^22]
+
+Jak konkrétně mohou lesní hospodáři v lese mykorhizu podpořit? Udržováním diverzity půdních podmínek (například nehomogenizovat půdní frézou), zapojováním pionýrských dřevin nebo podporou dřevin, které mají mykorhizu odolnější vůči působení reaktivního dusíku (třešeň, javory, jeřáb břek, částečně lípa)[^23]. 
+
+Využití přirozených stabilizačních mechanismů a dalším způsobům zvyšujícím odolnost lesa, bude věnován samostatný explainer. Na tomto místě je však třeba v souvislosti s lesním hospodařením a obnovou lesa ještě zmínit způsob těžby dřeva. V současné době je na našem území běžným těžebním zásahem tzv. holoseč, kdy se jednorázově smýtí všechny stromy rostoucí na určité ploše[^24]. Něco takového se dá zvládnout rychle a za pomoci těžké techniky, jako jsou harvestory, což je sice efektivní, místo lesa však zůstane místo téměř bez života. 
+Oproti tomu nepasečný, výběrný způsob hospodaření je z hlediska těžby náročnější (využívání koní, označování jednotlivých stromů určených ke smýcení a podobně), je ale také k lesu i lesnímu ekosystému mnohem šetrnější a těžební zásah ve srovnání s holosečí prakticky není vidět[^25]. Různé typy sečí a jejich vliv na podobu lesa ukazuje následující obrázek:  
+
+<!--- TODOPestrost skladby lesa ovlivněná způsobem hospodaření. Zdroj: Les v hodině dvanácté[^8]  -->
+
+### Nové modely hospodaření
+Lesníci se dnes již mohou inspirovat také novými modely hospodářského lesa – například trvale tvořivým lesem (v originále Dauerwald), obhospodařovaném tzv. „volným stylem“[^30],[^31]. Tento způsob práce s lesem klade velký důraz na erudici a vlastní zodpovědnost lesního správce, na druhou stranu má výhodu v tom, že není svázán „tabulkovými a šablonovitými“ přístupy, které často pro dnešní dobu postrádají dostatek flexibility, a jsou tedy z hlediska klimatických a dalších změn málo adaptabilní.
+
+Dauerwald je však výhodný i z produkčního hlediska – umožňuje totiž stabilizovat výnosy z produkce v dnešní době mnoha změn, což je spojeno právě s rozmanitostí jeho produkce – od sortimentů pro jakostní pilařské a dýhárenské výřezy přes dříví využitelné při chemickém zpracování až po dříví palivové.
+
+Výše uvedené změny v hospodaření s sebou nicméně dozajista přinesou i nápadné proměny v charakteru lesa, který bude pravděpodobně vypadat „méně udržovaně“, a je proto potřeba počítat také s tím, že budou nové přístupy narážet na nesouhlas či nepochopení ze strany širší veřejnosti. Češi mají k lesu blízko a mnozí v něm pravidelně tráví čas, součástí této emocionální vazby je však také to, k jaké podobě lesa jsme si vztah vytvořili, jak jsme zvyklí jej vnímat. Bude proto jednoznačně zapotřebí větší informovanosti – proč jsou tyto změny důležité a nutné, pro přírodu i pro člověka. 
+
+## Jaké změny jsou nutné na legislativní úrovni?
+
+Většina z výše uvedených principů není žádnou převratnou novinkou. Národní lesnický program (NLP) z roku 2013[^40] počítá s řadou progresivních prvků – nebyl však realizován v praxi, což je dáno jednak vlivem různých lobbistických skupin a jednak malou snahou státu o prosazení změn. 
+
+Současná krize nicméně vyžaduje, abychom jednali rychle. Stát by měl proto daleko aktivněji podporovat přechod na odpovědné hospodaření, které povede k větší stabilitě lesů v 21. století, využitím efektivních legislativních a dotačních nástrojů. K tomu je nutné co nejrychleji novelizovat klíčové zákony a vyhlášky, např. stávající lesní zákon[^41] či zákon o myslivosti, vytvořit speciální zákon o státním podniku Lesy České republiky, který povede k jejich transparentnímu fungování a definuje jejich environmentální a společenskou odpovědnost – a provést další související legislativní kroky.
+
+Zákony a vyhlášky bude ovšem zároveň potřeba vytvořit či novelizovat tak, aby zapadaly i do legislativního rámce Evropské unie a byly v souladu s její současnou klimatickou politikou. Zásadní je v tomto ohledu zejména nová Lesnická strategie EU do roku 2030[^42], a Strategie EU v oblasti biologické rozmanitosti[^43], v úvahu je nicméně nutné vzít rovněž širší kontext: balíček Evropské komise Fit for 55 nebo nařízení LULUCF o využívání půdy, změnách ve využívání půdy a lesním hospodaření[^44]. 
+
+Podrobněji se otázce legislativních změn budeme věnovat v samostatném explaineru. 
 
 ## Zdroje a poznámky
+
+[^1]: Od roku 1961 stoupla [průměrná roční teplota v ČR o 2,1 °C](/infografiky/teplota-cr)
+
+[^100]: Mikita, T., Čermák, P., Trnka, M., Jurečka, F.: [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), Frameadapt, 2016
+
+
+[^101]: V publikaci [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), str. 7, jsou podrobně ukázány posuny teplot v období 1961-1990 a 1991-2014 pro tzv. [lesní vegetační stupně](http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji). A zatímco v minulém století se dubový a bukodubový vegetační stupeň nacházel pouze na Jižní Moravě a v Polabí, kolem roku 2050 bude pokrývat prakticky celé území ČR, kromě nejvyšších oblastí Šumavy, Krkonoš a Jeseníku. 
+
+[^3]: Z historického hlediska byla druhová skladba ve střední Evropě jiná a převládaly tu buky. Viz například https://ies-ows.jrc.ec.europa.eu/efdac/download/Atlas/pdf/Past_forests_of_Europe.pdf 
+
+[^4]: Martiník, A. 2019. Uplatnění břízy (Betula pendula Roth.) a osiky (Populus tremula L.) při obnově a tvorbě lesa po disturbancích – Příkladová studie z chlumních oblastí Moravy. Mendelova univerzita v Brně, Lesnická práce: 89 s
+
+[^5]: Souček, J., Špulák, O., Leugner, J., Pulkrab, K., Sloup, R., Jurásek, A., Martiník, A. 2016. Dvoufázová obnova lesa na kalamitních holinách s využitím přípravných dřevin – certifikovaná metodika, Lesnický průvodce 10/2019. Strnady, VÚLHM: 35 s.).
+
+[^6]: Morin, Xavier, et al. "Temporal stability in forest productivity increases with tree diversity due to asynchrony in species dynamics." Ecology letters 17.12 (2014): 1526-1535
+
+[^7]: Isbell, Forest, et al. "Biodiversity increases the resistance of ecosystem productivity to climate extremes." Nature 526.7574 (2015): 574-577.
+
+[^8]: Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 196-197
+
+[^11]: Netherer, Sigrid, et al. "Acute drought is an important driver of bark beetle infestation in Austrian Norway spruce stands." Frontiers in Forests and Global Change 2 (2019): 39
+
+[^12]: van der Maaten, Ernst. "Climate sensitivity of radial growth in European beech (Fagus sylvatica L.) at different aspects in southwestern Germany." Trees 26.3 (2012): 777-788
+
+[^13]: Callaway RM. 1995. Positive interactions among plants. Botanical Review 61: 306–349
+
+[^14]: Po roce 2010 bylo na téma vlivu sousedních stromů na odezvu sledovaného jedince vůči suchu publikováno už poměrně velké množství studií, jejichž výsledky byly nedávno shrnuty v textu Grossiord, Charlotte. "Having the right neighbors: how tree species diversity modulates drought impacts on forests." New Phytologist 228.1 (2020): 42-49.  
+
+[^15]: Najdeme však i příklady zlepšování stavu půdního prostředí: buky rostoucí v sousedství lip a habru měly výživu (z půdy) bohatší na draslík a fosfor než buky obklopené jinými buky. Viz Schmidt, M., Veldkamp, E., & Corre, M. D. (2015). Tree species diversity effects on productivity, soil nutrient availability and nutrient response efficiency in a temperate deciduous forest. Forest Ecology and Management, 338, 114-123
+
+[^20]: Tedersoo, Leho, Mohammad Bahram, and Martin Zobel. "How mycorrhizal associations drive plant population and community biology." Science 367.6480 (2020)
+
+[^21]: Simard, Suzanne, et al. "Resource transfer between plants through ectomycorrhizal fungal networks." Mycorrhizal networks. Springer, Dordrecht, 2015. 133-176.
+
+[^22]: Werner, Stephanie, Andrea Polle, and Nicole Brinkmann. "Belowground communication: impacts of volatile organic compounds (VOCs) from soil fungi on other soil-inhabiting organisms." Applied microbiology and biotechnology 100.20 (2016): 8651-8665.
+
+[^23]: O reaktivním dusíku a jeho podílu na nadměrném okyselování půdy jako jedné z hlavních příčiny nízké odolnosti lesů v ČR se více dozvíte v explaineru Proč umírají české jehličnaté lesy.
+
+[^24]: Současná legislativa připouští holoseče do 1 hektaru a v šířce do dvojnásobku výšky těženého porostu, za určitých podmínek je ale přípustná holoseč až 3 hektary, bez omezení šířky. Viz Višňák, Richard. Les v hodině dvanácté. Hnutí DUHA (2009), s. 302
+
+[^25]: Více o tomto typu hospodaření, u nás již tři desítky let využívaném v lokalitě Klokočná, se lze dočíst v knize Vladislava Ferkla Může být nepasečný – výběrný způsob hospodaření alternativou pro naše lesy? Pro Silva Bohemica (2020). 
+
+[^30]: Obecné principy Dauerwaldu: 
+stálé zakrytí půdy, zpravidla smíšeným lesním porostem
+produkce hroubí už na nejmenší ploše, výchova porostu pod porostní clonou
+dostatečná zásoba hroubí s největším možným přírůstem
+stálá podpora nejhodnotnějších stromů a těžba stromů nejhorších
+trvalost zásahů zaměřených na jednotlivé stromy (těžba jednotlivým výběrem nebo jen maloplošná obnovní těžba, žádné holoseče)
+(Dobrovolný in Lesníkův průvodce neklidnými časy)
+
+[^31]: Dobrovolný https://prosilvabohemica.cz/wp-content/uploads/2018/12/Sbornik-Krtiny-14-9-2018-komplet.pdf
+
+[^40]: http://www.uhul.cz/images/NLP/NLP_II_final_CZ.pdf 
+
+[^41]: „Stávající znění lesního zákona sice výslovně nezakazuje hospodaření výběrným způsobem, udržování nízkých a středních lesů či další formy nepasečného hospodaření, celá logika zákona je však formována především orientací na průmyslové lesnictví založené na stejnověkých monokulturách a plantážích stejnověkých dřevin, mýcených za použití těžké techniky, čímž vznikají rozsáhlejší paseky [...] Novela lesního zákona a souvisejících vyhlášek (vyhlášky č. 83/1996 Sb., 84/1996 Sb., 101/1996 Sb. a 139/2004 Sb.) může mít přímý vliv na zlepšení zdravotního stavu našich lesů tím, že zajistí rozmanitější formy lesa, umožní provádět v nich přírodě bližší hospodaření bez holosečí a podpoří některé historické postupy nebo ponechání malé části lesů pouze divoké přírodě a jejím návštěvníkům.“ Viz Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 194.
+
+[^42]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0572 
+
+[^43]: https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1590574123338&uri=CELEX:52020DC0380 
+
+[^44]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.156.01.0001.01.ENG 
+
+
+<!---
+----------------------
+
+https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber
+
+http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf
+
+http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji
 
 [^1]: Rotter, P.: [Proč lesy ztrácí imunitu a co s tím dělat?](https://www.researchgate.net/publication/343059340_Proc_lesy_ztraci_imunitu_a_co_s_tim_delat), (2020)
 
@@ -90,3 +230,5 @@ Stromu též může pomáhat, má-li vhodného souseda (tomuto mechanismu se odb
 [^103]: Šrámek, V., Novotný, R., & Fadrhonsová, V. (2015): [Chřadnutí smrkových porostů a stav lesních půd v oblasti Severní Moravy a Slezska](https://www.vulhm.cz/files/uploads/2019/02/401.pdf). Zprávy lesnického výzkumu, 60(2), 147–153.
 
 [^104]: De Vries, W., et al.: [Impacts of acid deposition, ozone exposure and weather conditions on forest ecosystems in Europe: an overview](https://link.springer.com/content/pdf/10.1007/s11104-014-2056-2.pdf) Plant and Soil (2014), 380(1), 1–45.
+
+-->
