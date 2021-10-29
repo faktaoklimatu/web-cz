@@ -13,6 +13,10 @@
 
 - title: Více
   dropdown:
+    - title: Podcast 2050
+      link: https://2050podcast.cz/
+      class: no-ext-link-icon
+
     - title: Aktuality
       link: /aktuality
 
