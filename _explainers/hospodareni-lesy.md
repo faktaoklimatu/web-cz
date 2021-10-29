@@ -47,7 +47,7 @@ Z hlediska druhové skladby lesa je především potřeba vědět, které druhy 
 <!--- TODO Mapa dřevin / carusel map -->
 
 {% include figure.html
-    name="semenacek.jpg"
+    name="podminky-pro-pestovani-smrk.jpg"
     caption="Mladé stromky zasázené na holině, Zálesná Zhoř, Jihomoravský kraj."
     alt="Mladé stromky zasázené na holině."
     source-text="Fotoarchiv autora"
