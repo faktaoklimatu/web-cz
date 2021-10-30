@@ -15,11 +15,11 @@ perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně 
 ---
 
 {% include preview-box.html
-    title="Proč umírají české jehličnaté lesy?"
+    title=""
     text=""
     slug="umirani-ceskych-lesu"
 %}
-<!--- TODO Nadpis explaineru se dubluje  --> 
+<!--- CheckTODO Nadpis explaineru se dubluje - proto jsem nechal title prázdný --> 
 
 ## Proč naše lesy chřadnou?
 
@@ -45,7 +45,7 @@ Laická odpověď by patrně zněla: sázet stromy. Ale jaké druhy, kde a jaký
 ### Druhová pestrost a využití „pionýrských dřevin“
 Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^100]. <!--- TODO odkaz na publkaci Rotter -->
 
-<!--- TODO Mapa pro smrk / vyladit velikost legendy a nadpis -->
+<!--- CheckTODO Mapa pro smrk / vyladit velikost legendy a nadpis -->
 
 {% include figure.html
     name="budoucnost_pestovani_smrku_mapa.jpg"
@@ -91,18 +91,18 @@ Jak konkrétně mohou lesní hospodáři v lese mykorhizu podpořit? Udržován�
 
 ### Způsob těžby dřeva
 
-V současné době je na našem území běžným těžebním zásahem tzv. holoseč, kdy se jednorázově smýtí všechny stromy rostoucí na určité ploše[^24]. Něco takového se dá zvládnout rychle a za pomoci těžké techniky, jako jsou harvestory, což je sice efektivní, místo lesa však zůstane místo téměř bez života. 
-Oproti tomu nepasečný, výběrný způsob hospodaření je z hlediska těžby náročnější (využívání koní, označování jednotlivých stromů určených ke smýcení a podobně), je ale také k lesu i lesnímu ekosystému mnohem šetrnější a těžební zásah ve srovnání s holosečí prakticky není vidět[^25]. Různé typy sečí a jejich vliv na podobu lesa ukazuje následující obrázek:  
+V současné době je na našem území běžným těžebním zásahem tzv. *holoseč*, kdy se jednorázově smýtí všechny stromy rostoucí na určité ploše[^24]. Něco takového se dá zvládnout rychle a za pomoci těžké techniky, jako jsou harvestory, což je sice efektivní, místo lesa však zůstane místo téměř bez života. 
+Oproti tomu *nepasečný*, někdy také nazývaný *výběrný způsob hospodaření* je z hlediska těžby náročnější (využívání koní, označování jednotlivých stromů určených ke smýcení a podobně), je ale také k lesu i lesnímu ekosystému mnohem šetrnější a těžební zásah ve srovnání s holosečí prakticky není vidět[^25]. Různé typy sečí a jejich vliv na podobu lesa ukazuje schématicky následující obrázek:  
 
-<!--- TODO vyladit obrázek
+
 {% include figure.html
-    name="zpusob-hospodareni.jpg"
+    name="lesy-typ-sece.jpg"
     caption="Pestrost skladby lesa ovlivněná způsobem hospodaření"
-    alt="Různé druhy sečí ovlivňují druhovou pestrost."
-    source-text="Višňák, R.: Les v hodině dvanácté (2009)."
+    alt="Shora: Holoseč - Clonná seč - Výběrné hospodaření. Různé druhy sečí ovlivňují druhovou pestrost."
+    source-text="Ilustrace by O.P., podle Višňák, R.: Les v hodině dvanácté (2009)."
 %}
 
-  -->
+<!--- TODO vyladit obrázek  -->
 
 ### Nové modely hospodaření
 Lesníci se dnes již mohou inspirovat také novými modely hospodářského lesa – například trvale tvořivým lesem (v originále Dauerwald), obhospodařovaném tzv. „volným stylem“[^30],[^31]. Tento způsob práce s lesem klade velký důraz na erudici a vlastní zodpovědnost lesního správce, na druhou stranu má výhodu v tom, že není svázán „tabulkovými a šablonovitými“ přístupy, které často pro dnešní dobu postrádají dostatek flexibility, a jsou tedy z hlediska klimatických a dalších změn málo adaptabilní.
