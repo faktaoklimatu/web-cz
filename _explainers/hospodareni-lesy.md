@@ -96,7 +96,7 @@ Oproti tomu *nepasečný* neboli *výběrný způsob hospodaření* je z hledisk
 
 
 {% include figure.html
-    name="lesy-typ-sece.jpg"
+    name="les-typ-sece.jpg"
     caption="Pestrost skladby lesa ovlivněná způsobem hospodaření"
     alt="Shora: Holoseč – Clonná seč – Výběrné hospodaření. Různé druhy sečí ovlivňují druhovou pestrost."
     source-text="Ilustrace O. P., podle Višňák, R.: Les v hodině dvanácté (2009)."
