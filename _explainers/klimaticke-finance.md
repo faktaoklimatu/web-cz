@@ -12,31 +12,27 @@ cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "Euro Coins Currency Pixabay"
 cover-source-url: "https://pixabay.com/photos/euro-coins-currency-cent-euro-cent-1353420/"
-perex:       "Klimatické finance jsou závazek, že rozvinuté země mají finančně přispívat rozvíjejícím státům na boj s klimatickou změnou a jejími dopady."
+perex:       "Pojem "klimatické finance" označuje závazek rozvinutých zemí finančně přispívat rozvíjejícím se státům na boj s klimatickou změnou a jejími dopady."
 
 ---
 
-Myšlenka klimatických financí byla vytvořena na COP 16 (Kodaň, 2009), kde se 27 rozvinutých států zavázalo, že v roce 2020 bude ročně posíláno 100 miliard směrem k rozvíjejícím se státům. Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015), kde je obecně formulované, že rozvinuté státy mají přispívat rozvíjejícím státům v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce a ani způsobu určení kolik který stát má vlastně přispívat, toto rozhodnutí je ponecháno na každém jednotlivém státu. 
+Myšlenka klimatických financí vznikla na klimatické konferenci COP 16 (Kodaň, 2009). Zde se 27 rozvinutých států zavázalo, že od roku 2020 bude každoročně posílat 100 miliard rozvíjejícím se státům. Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015) obecnou formulací, že rozvinuté státy mají přispívat rozvíjejícím se zemím v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce a ani způsobu určení, kolik má kdo vlastně přispívat – toto rozhodnutí je ponecháno na každém jednotlivém státu. 
 
 ## Proč jsou klimatické finance důležité?
 
-Je jasné, že rozvíjející státy mají složitější přístup k financím a proto jsou pro ně investice do zabraňování ale i adaptace na klimatickou změnu složité. Často ale tyto státy zároveň patří k těm nejvíce zasaženým těmito změnami a proto je pro ně globální boj s klimatickou změnou důležitou záležitostí.
-
-Klimatické finance mají velký vliv nejen z finančního hlediska, ale zároveň i přinášejí důvěru v rozvíjejících státech směrem k boji s klimatickou změnou a odhodlání rozvinutých států s touto změnou něco dělat.
+Pro rozvíjející se státy jsou investice pomáhající zabránit dopadům klimatické změny či se na ně adaptovat složité. Právě tyto státy však často patří k těm nejvíce zasaženým, a proto je pro ně klíčové, že se toto téma řeší na celosvětové úrovni. Navíc nejde jen o peníze – klimatické finance zároveň rozvíjejí snahu těchto zemí s klimatickou změnou něco dělat a posilují jejich důvěru, že je rozvinuté země v těchto aktivitách reálně podpoří.
 
 ## Jak se daří závazek naplňovat?
 
-Celkové plnění sice postupně stoupá, ale závazek nebyl v roce 2020 dosažený. Přesná čísla pro rok 2020 zatím nejsou známá. V roce 2019 bylo plnění přibližně 80% z původně zamýšlené částky a tedy není pravděpodobné, že by byla částka dosažena.
-
-Nesplnění závazku má velký vliv na důvěru rozvíjejících se států k rozvinutým státům ohledně boje proti klimatickým změnám a bude jedním z hlavních témat nadcházející konference COP 26. Závazek bude pravděpodobně prodloužen do roku 2025, diskuze se povedou ohledně velikosti závazku od roku 2025 dál. Britové jako předsedající země vydali nový plán dosažení závazků, který počítá s tím, že by k jeho splnění mělo dojítv roce 2023.
+Celková částka sice postupně stoupá, nicméně v roce 2020 závazek zřejmě naplněn nebyl. Přesná čísla pro tento rok zatím nejsou k dispozici, ale vzhledem k tomu, že o rok dříve bylo plnění přibližně 80 % z původně zamýšlené částky, není příliš pravděpodobné, že by bylo částky dosaženo. To má velký vliv na důvěru rozvíjejících se států k těm rozvinutým a bude to jedno z hlavních témat klimatické konference COP 26. Závazek bude pravděpodobně prodloužen do roku 2025, přičemž diskuze se povedou ohledně jeho velikosti od roku 2025 dál. Velká Británie jako předsedající země vydala nový plán dosažení závazků, který počítá s tím, že by k jeho splnění mělo dojít v roce 2023.
 
 ## Kdo jsou přispěvatelé a kdo příjemci?
 
-Přispěvateli do klimatických financí jsou rozvinuté země světa (dle kategorizace Společenství národů). V současné době se jedná o 38 států a patří sem například celá Evropská unie, Spojené státy, Kanada, Japonsko, Austrálie a další. Příjemci jsou naopak rozvíjející země světa, kam dle kategorizace UN například spadá Indie, Bangladesh, většina států Afriky či například i Čína. Takzvané transformativní ekonomiky (například Rusko, Ukrajina) nejsou zahrnuty ani do jedné kategorie, podle Pařížské smlouvy jsou ale vyzvány aby přispívaly dle svých možností.
+Přispěvateli jsou rozvinuté země světa (dle kategorizace OSN), což je v současné době 38 států a patří sem například celá Evropská unie, USA, Kanada, Japonsko, Austrálie a další. Příjemci jsou naopak rozvíjející se země světa, kam dle kategorizace OSN spadá Indie, Bangladéš, většina států Afriky, ale třeba i Čína. Takzvané transformativní ekonomiky (například Rusko nebo Ukrajina) nespadají ani do jedné kategorie, podle Pařížské dohody jsou ale vyzvány, aby dle svých možností přispívaly také.
 
-## Co všechno je zahrnuté do klimatických financí?
+## Co všechno spadá do klimatických financí?
 
-Klimatické finance mají velmi širokou definici. Patří sem finance z bilaterálních i multilaterálních zdrojů, půjčky ale například i privátní zdroje (privátní zdroje mohou být započítány do celkového součtu, pokud jejich vznik byl umožněn vládní politikou).
+Definice klimatických financí je velmi široká – patří sem finance z bilaterálních i multilaterálních zdrojů, půjčky ale například i privátní zdroje (privátní zdroje mohou být započítány do celkového součtu, pokud jejich vznik byl umožněn vládní politikou).
 
 Bilaterální zdroje jsou přímé zdroje poskytnuté na základě bilaterálních dohod mezi dvěma státy. Multilaterální zdroje jsou zdroje, od více států, které jsou sdružovány buď do klimatických fondů (Global Climate Fund nebo Global Environmental Fund), či do rozvojových bank. Fondy nabízejí finance formou grantů, zatímco rozvojové banky poskytují státům půjčky.
 
