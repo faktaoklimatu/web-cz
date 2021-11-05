@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
 published:   2021-10-27
-author:      "Alena Moravová"
+author:      "Alena Moravová, Tomáš Protivínský"
 weight:      75
 tags-scopes: [ world ]
 tags-topics: [ opatreni, ekonomika ]
@@ -55,7 +55,7 @@ Celková částka sice postupně stoupá, nicméně **v roce 2020 závazek napln
 
 Definice klimatických financí je velmi široká – patří sem **finance z bilaterálních i multilaterálních zdrojů, ale například i soukromé zdroje** (ty mohou být započítány do celkového součtu, pokud byly mobilizovány díky veřejným financím). Zároveň se zahrnují nejen granty (tvořily 27 % veřejných klimatických zdrojů v roce 2019), ale také půjčky (71 %) a další zdroje[^2]. Rovněž mobilizované soukromé zdroje mohou mít různé formy, v roce 2019 se jednalo o 14 miliard dolarů ze soukromých zdrojů, tedy o 18 % celkových klimatických financí.
 
-Bilaterální zdroje jsou zdroje poskytnuté na základě bilaterálních dohod mezi dvěma státy, buď přímo nebo prostřednictvím neziskových organizací, univerzit či dalších institucí. Multilaterální zdroje jsou od více států a jsou sdružené do klimatických fondů (Global Climate Fund či Global Environmental Fund) nebo rozvojových bank. Fondy nabízejí finance formou grantů, rozvojové banky státům poskytují půjčky.
+Bilaterální zdroje jsou zdroje poskytnuté na základě bilaterálních dohod mezi dvěma státy, buď přímo nebo prostřednictvím neziskových organizací, univerzit či dalších institucí. Multilaterální zdroje jsou od více států a jsou sdružené do klimatických fondů ([Green Climate Fund](https://www.greenclimate.fund) či [Global Environmental Facility](https://www.thegef.org)) nebo rozvojových bank. Fondy nabízejí finance formou grantů, rozvojové banky státům poskytují půjčky.
 
 
 ## Jak se tyto finance skutečně používají?
@@ -80,7 +80,7 @@ Graf ukazuje skutečné příspěvky do klimatických financí v roce 2018 pro v
 
 ## Jak je na tom Česká republika?
 
-Jako rozvinutá země a součást Evropské unie do klimatických financí přispíváme také, a to jak multilaterálními, tak bilaterálními smlouvami. V roce 2018 se jednalo o 185 milionů korun a **ve srovnání s výši našeho HDP jsme na tom ještě výrazně hůře než USA**[^4]. Pro dosažení férového podílu podle HDP bychom v roce 2018 museli přispět 7,8 miliardy korun ročně (přibližně 0,6 % českého státního rozpočtu), navíc také patříme k větším znečišťovatelům při přepočtu emisí na obyvatelu. Příspěvky vycházející z bilaterálních vztahů míří z ČR k některým balkánským státům a dalším zemím (např. Etiopie nebo Kambodža), prostřednictvím multilaterárních fondů jsme v roce 2018 přispěli 26 miliard korun. OECD ve své databázi rozvojové pomoci související s klimatem uvádí vyšší částku 240 milionů korun[^9], ani tato však zdaleka neodpovídá výši závazku rozvinutých zemí.
+Jako rozvinutá země a součást Evropské unie do klimatických financí přispíváme také, a to jak multilaterálními, tak bilaterálními smlouvami. V roce 2018 se jednalo o 185 milionů korun a **ve srovnání s výší našeho HDP jsme na tom ještě výrazně hůře než USA**[^4]. Pro dosažení férového podílu podle HDP bychom v roce 2018 museli přispět 7,8 miliardy korun ročně (přibližně 0,6 % českého státního rozpočtu), navíc také patříme k větším znečišťovatelům při přepočtu emisí na obyvatelu. Příspěvky vycházející z bilaterálních vztahů míří z ČR k některým balkánským státům a dalším zemím (např. Etiopie nebo Kambodža), prostřednictvím multilaterárních fondů jsme v roce 2018 přispěli 26 miliard korun. OECD ve své databázi rozvojové pomoci související s klimatem uvádí vyšší částku 240 milionů korun[^9], ani tato však zdaleka neodpovídá výši závazku rozvinutých zemí.
 
 Mezi členskými státy EU patří český příspěvek k nejnižším, **v přepočtu na obyvatele vychází pouze na cca 18 Kč za rok**[^4]. Na rozdíl od všech okolních států ČR své závazky do Green Climate Fund v roce 2019 nenavýšila[^5]. Ministerstvo životního prostředí plánovalo klimatické finance navýšit na 634 milionů korun v roce 2020 (data zatím nejsou k dispozici, avšak téměř určitě tohoto cíle nebylo dosaženo) a pro rok 2030 stanovilo cílovou částku 1,79 miliard korun. I tato hodnota by však byla výrazně nižší, než kolik odpovídá férovému podílu podle výše HDP.
 
