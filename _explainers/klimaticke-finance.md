@@ -17,7 +17,7 @@ perex:       "Pojem \"klimatické finance\" označuje závazek rozvinutých zem�
 ---
 Myšlenka klimatických financí vznikla v roce 2009 na klimatické konferenci COP 15 v Kodani. **Zde se 27 rozvinutých států zavázalo, že bude od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům**[^1]. Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015) obecnou formulací, že rozvinuté státy mají přispívat rozvojovým zemím v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce ani způsobu určení – rozhodnutí o výši příspěvku je ponecháno na každém jednotlivém státu.
 
-Tento závazek podpory od rozvinutých k rozvojovým státům je nezbytným krokem pro naplnění klimatických cílů a pro posílení důvěry v globální spolupráci, zároveň však dosud naplňován není, přislíbená částka není dostatečná pro realizaci potřebných opatření a pro transformaci hospodářství v rozvíjejících se zemích, zároveň závazek ani nezohledňuje snižující se kupní sílu dolaru v důsledku inflace.
+Tento závazek podpory od rozvinutých k rozvojovým státům je nezbytným krokem pro naplnění klimatických cílů a pro posílení důvěry v globální spolupráci. Zároveň však dosud naplňován není a ani přislíbená částka není dostatečná pro realizaci potřebných opatření a pro transformaci hospodářství v rozvíjejících se zemích, v neposlední řadě závazek ani nezohledňuje snižující se kupní sílu dolaru v důsledku inflace.
 
 ## K čemu klimatické finance slouží?
 
