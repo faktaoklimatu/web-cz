@@ -2,14 +2,14 @@
 layout:      explainer
 title:       "Jak v následujícím století hospodařit v českých lesích?"
 slug:        "hospodareni-lesy"
-published:   2021-11-05
+published:   2021-11-06
 author:      "Jiří Lněnička, konzultace Pavel Rotter, Matěj Šašek"
 weight:      74
 tags-scopes: [ cr ]
 tags-topics: [ priroda ]
 cover-source-author: "Aleš Erber"
-cover-source-license: "??"
-cover-source-license-url: "??"
+cover-source-license: "udělen souhlas s použitím"
+cover-source-license-url: "https://twitter.com/ErberAles/status/1449039914398584837?s=20"
 cover-source-text: "Rýchorský prales, Krkonoše. Fotoarchiv Aleše Erbera."
 perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně vidět. Chceme-li tu mít zdravé lesy, musíme v nich začít hospodařit jinak, než bylo v posledních dvou stoletích běžné: potřebujeme lesy, které se dokáží měnícím se klimatickým podmínkám přizpůsobit. Co všechno je nutné změnit? Jak zajistit, aby byl les zdravý, odolný a plný života – a zároveň jsme měli možnost jej dál využívat, ať už k produkci dřeva nebo třeba trávení volného času? Funkce lesa a hlavní výzvy, před nimiž stojí lesníci v 21. století, v základních obrysech přibližuje následující explainer."
 ---
@@ -44,7 +44,7 @@ Laická odpověď by patrně zněla: sázet stromy. Ale jaké druhy, kde a jaký
 
 ### Druhová pestrost a využití "pionýrských dřevin"
 
-Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^100]. <!--- TODO odkaz na publikaci Rotter -->
+Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^103],[^100]. 
 
 {% include figure.html
     name="budoucnost-pestovani-smrku-mapa.jpg"
@@ -132,6 +132,8 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 [^101]: V publikaci [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf) (str. 7) jsou podrobně ukázány posuny teplot v období 1961–1990 a 1991–2014 pro tzv. [lesní vegetační stupně](http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji). Zatímco v minulém století se dubový a buko-dubový vegetační stupeň nacházel pouze na jižní Moravě a v Polabí, kolem roku 2050 bude pokrývat prakticky celé území ČR, kromě nejvyšších oblastí Šumavy, Krkonoš a Jeseníků.
 
 [^102]: O možnostech budoucího pěstování smrků v zástinu se zmiňuje lesník Aleš Erber v [rozhovoru v časopise Ekolist](https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber).
+
+[^103]: Pavel Rotter et al.: [Smmíšené porosty s dubem, bukem a smrkem pro neklidné 21. století](https://prosilvabohemica.cz/wp-content/uploads/2021/01/Rotter-Smisene-porosty.pdf): Regionální lokalizace s ohledem na minimalizaci rizika rozpadu.  
 
 [^2]: Souček, J.: [Potenciál přirozené obnovy pionýrských druhů dřevin](https://www.vulhm.cz/files/uploads/2021/09/636.pdf), Zprávy lesnického výzkumu, 66, 2021 (3): 188-196.
 
