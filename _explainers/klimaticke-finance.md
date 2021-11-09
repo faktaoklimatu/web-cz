@@ -2,10 +2,10 @@
 layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
-published:   2021-11-05
+published:   2021-11-09
 author:      "Alena Moravová, Tomáš Protivínský"
 weight:      75
-tags-scopes: [ world ]
+tags-scopes: [ svet ]
 tags-topics: [ opatreni, ekonomika ]
 cover-source-author: "Harry Strauss"
 cover-source-license: "Pixabay License"
@@ -13,8 +13,8 @@ cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "Euro Coins Currency Pixabay"
 cover-source-url: "https://pixabay.com/photos/euro-coins-currency-cent-euro-cent-1353420/"
 perex:       "Pojem „klimatické finance“ označuje závazek rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe zvládat klimatickou změnu a její dopady."
-
 ---
+
 Myšlenka klimatických financí vznikla v roce 2009 na klimatické konferenci COP15 v Kodani. **Zde se 27 rozvinutých států zavázalo, že bude od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům.**[^1] Tato myšlenka byla dále stvrzena v Pařížské dohodě (2015) obecnou formulací, že rozvinuté státy mají přispívat rozvojovým zemím v boji s klimatickou změnou. Pařížská dohoda nicméně nemluví o přesné částce ani způsobu určení – rozhodnutí o výši příspěvku je ponecháno na každém jednotlivém státu.
 
 Tento závazek podpory je nicméně pro rozvojové státy nezbytným krokem ke splnění jejich klimatických cílů a posílení jejich důvěry v globální spolupráci. Přesto dosud naplňován není a ani přislíbená částka na realizaci potřebných opatření a transformaci hospodářství v rozvojových zemích není dostačující. V neposlední řadě závazek nezohledňuje ani snižující se kupní sílu dolaru v důsledku inflace.
@@ -32,7 +32,7 @@ Celková částka sice postupně stoupá, nicméně **v roce 2020 závazek napln
     name-mobile="klimaticke-finance-mob.svg"
     alt="Klimatické finance poskytnuté v letech 2013–2019."
     source-text="Climate Finance Provided and Mobilised by Developed Countries, OECD"
-    source-url="https://www.oecd.org/env/climate-finance-provided-and-mobilised-by-developed-countries-aggregate-trends-updated-with-2019-data-03590fb7-en.htm?"
+    source-url="https://www.oecd.org/env/climate-finance-provided-and-mobilised-by-developed-countries-aggregate-trends-updated-with-2019-data-03590fb7-en.htm"
 %}
 
 ## Kdo jsou přispěvatelé a kdo příjemci?
@@ -56,7 +56,6 @@ Klimatické finance nejsou vždy pouze darované peníze, **ve většině příp
 Zároveň se do celkového objemu klimatických financí započítávají i soukromé zdroje, které byly mobilizovány díky veřejným financím (a také mohou nabývat různých forem). **V roce 2019 z celkové částky 79,6 miliard dolarů tvořily 21 % granty z veřejných zdrojů, 56 % půjčky z veřejných zdrojů a 18 % byly soukromé zdroje.** Dále jsou do klimatických financí zahrnuty také exportní kredity a v malé míře sem patří ještě další formy financování.[^2]
 
 Finance mohou být poskytnuty na základě dohody mezi dvěma státy – to jsou tzv. bilaterální zdroje. Ty lze poskytnout přímo, nebo prostřednictvím neziskových organizací, univerzit či dalších institucí. Multilaterální zdroje jsou poskytovány skupinami států a jsou sdružené do klimatických fondů ([Green Climate Fund](https://www.greenclimate.fund) či [Global Environmental Facility](https://www.thegef.org)) nebo rozvojových bank. Fondy nabízejí finance formou grantů, rozvojové banky státům poskytují půjčky.
-
 
 ## Jak se tyto finance skutečně používají?
 
