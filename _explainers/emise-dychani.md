@@ -4,9 +4,9 @@ title:       "Jak ovlivňuje dýchání člověka, živočichů a rostlin koncen
 slug:        "emise-dychani"
 published:   2021-02-13
 author:      "Ondráš Přibyla"
-weight:      74
+weight:      76
 tags-scopes: [ svet ]
-tags-topics: [ emise ]
+tags-topics: [ emise , priroda ]
 cover-source-author: "dan carlson"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
