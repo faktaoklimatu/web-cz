@@ -10,6 +10,13 @@ tags-topics: [ priroda ]
 caption:    "Lesy pokrývají 36,8 % území ČR, ale procentuální zastoupení lesů v jednotlivých krajích se liší. Z krajů (mimo Prahu) je nejméně zalesněný Jihomoravský (29,7 %) a nejvíce Karlovarský kraj (49,4 %)."
 
 ---
+
+{% include preview-box.html
+    title="Kde je v Česku les: mapa"
+    text=""
+    slug="lesy-mapa-cr"
+%}
+
 {:.perex}
 Na našem území se nachází přibližně 2,9 milionů hektarů lesů. Kdybychom je všechny umístili na jednu plochu, pokrývaly by čtverec o hraně 170 km. Většina lesů je ale rozdrobena do mnohem menších celků a opravdu velké lesy najdeme jen v okrajových pohořích. Pro lepší představu o tom, kde se české lesy nacházejí, může posloužit tato mapa ukazující lesnatost v jednotlivých krajích a přesněji pak [mapa přírodních lesních oblastí](/infografiky/lesnatost-plo).
 
