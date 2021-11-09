@@ -39,16 +39,6 @@ Celková částka sice postupně stoupá, nicméně **v roce 2020 závazek napln
 
 **Přispěvateli jsou rozvinuté země světa**, což je v současné době 38 států a patří sem například celá Evropská unie, USA, Kanada, Japonsko, Austrálie a další.[^2] **Příjemci jsou naopak rozvojové země**, kam spadá Indie, Bangladéš, většina států Afriky, ale třeba i Čína. Takzvané transformativní ekonomiky (například Rusko) nepatří ani do jedné kategorie, Pařížská dohoda je ale vyzývá, aby dle svých možností přispívaly také.
 
-<!--
-{% include figure.html
-    name="prijemci-podle-regionu.png"
-    name-mobile="prijemci-podle-regionu.png"
-    alt="Příjemci klimatických financí podle regionů."
-    source-text="Climate Finance Provided and Mobilised by Developed Countries, OECD"
-    source-url="https://www.oecd.org/env/climate-finance-provided-and-mobilised-by-developed-countries-aggregate-trends-updated-with-2019-data-03590fb7-en.htm?"
-%}
--->
-
 ## Co všechno spadá do klimatických financí?
 
 Klimatické finance nejsou vždy pouze darované peníze, **ve většině případů se jedná o půjčky**. A pokud jste příjemce, je pro vás důležité, zdali si prostředky můžete ponechat a potenciální budoucí výnosy použít na další investice, nebo jestli budete muset splácet dluh. Naopak z pohledu dárce (či investora v případě půjček) je zásadní, zda je příjemce spolehlivý a finance skutečně používá na dohodnuté účely.
