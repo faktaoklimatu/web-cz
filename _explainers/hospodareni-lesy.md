@@ -36,7 +36,7 @@ Les považujeme za součást přírody, za příjemný prostor, kam chodíme na 
 - může být významným úložištěm uhlíku z emisí CO<sub>2</sub>
 - les je **zdrojem dřeva, tedy materiálu, který využíváme na stavbách, k výrobě nábytku a papíru či jako palivo.**
 
-Dobrý lesní hospodář by měl myslet na všechny tyto funkce a potřeby. Romantická představa ochrany lesa, která ignoruje ekonomické a produkční hledisko není dlouhodobě udržitelná. Stejně tak jsou ale neudržitelné smrkové plantáže optimalizované na co nejvyšší hospodářskou produkci. Vzhledem k probíhajícím klimatickým a dalším změnám začíná být stále více zřejmé, že máme-li tu do budoucna lesy mít, a mít z nich dlouhodobě i nějaký zisk, musíme hospodařit jinak než dosud. Ale jak? A jak napomoci obnově lesů, o které jsme už přišli?
+Dobrý lesní hospodář by měl myslet na všechny tyto funkce a potřeby. Romantická představa ochrany lesa, která ignoruje ekonomické a produkční hledisko není v hospodářských lesích dlouhodobě udržitelná. Stejně tak jsou ale neudržitelné smrkové plantáže optimalizované na co nejvyšší hospodářskou produkci. Vzhledem k probíhajícím klimatickým a dalším změnám začíná být stále více zřejmé, že máme-li tu do budoucna lesy mít, a mít z nich dlouhodobě i nějaký zisk, musíme hospodařit jinak než dosud. Ale jak? A jak napomoci obnově lesů, o které jsme už přišli?
 
 ## Co je potřeba udělat pro obnovu lesa?
 
@@ -44,7 +44,8 @@ Laická odpověď by patrně zněla: sázet stromy. Ale jaké druhy, kde a jaký
 
 ### Druhová pestrost a využití "pionýrských dřevin"
 
-Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí jedle, buky, duby a další listnaté stromy, které budou teplejší klima snášet lépe[^103] [^100].
+Z hlediska druhové skladby lesa je především potřeba vědět, které druhy jsou u nás perspektivní a které ne: s tím, jak se v Česku otepluje[^1], se například výrazně posunula oblast, kde je optimální pěstovat smrk – zatímco ještě v 60. letech to bylo kolem 650 m n. m. (například na Vysočině), dnes je to již cca 900 m n. m. a tento trend bude pokračovat dál[^101]. Jinými slovy: ať uděláme cokoli, smrkové lesy z našeho území v budoucnu z velké části zmizí[^102]. Jejich místo nahradí ve vyšších polohách směsi jedle s bukem (a dalšími dřevinami) a v nižších polohách směsi dubů s dalšími listnatými dřevinami.  Takové lesy budou teplejší
+klima snášet lépe[^103],[^100].
 
 {% include figure.html
     name="budoucnost-pestovani-smrku-mapa.jpg"
@@ -53,7 +54,7 @@ Z hlediska druhové skladby lesa je především potřeba vědět, které druhy 
     source-text="Mikita et al.: Modelování podmínek pro pěstování smrku, buku a dubu"
 %}
 
-Mnoho stromů ovšem nelze jen tak vysázet na holinu, kde byl les vykácen v důsledku kalamity: zatímco smrk většinou dokáže růst i na plném slunci, třeba buky nebo jedle pro růst semenáčků potřebují zastínění vyšších stromů. Pro obnovu lesa na pasekách[^3] je proto vhodné použít tzv. pionýrské dřeviny (bříza, jeřáb, vrba, topol…). Ty zde snadno vyrostou[^2], většinou jejich semena přinesou ptáci či zvěř, můžeme jim ale také napomoci zaséváním semen (např. břízy[^4]). Dřevo těchto stromů není z hospodářského hlediska zvlášť hodnotné, vytváří však mikroklima, do kterého lze později úspěšně vysázet hodnotné cílové dřeviny[^5] (jedle, buky, anebo i smrky). Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7].
+Mnoho stromů ovšem nelze jen tak vysázet na holinu, kde byl les vykácen v důsledku kalamity: zatímco smrk většinou dokáže růst i na plném slunci, třeba buky nebo jedle pro růst semenáčků potřebují zastínění vyšších stromů. Pro obnovu lesa na pasekách[^3] je proto vhodné použít tzv. pionýrské dřeviny (bříza, jeřáb, vrba, topol…). Ty zde snadno vyrostou[^2], většinou jejich semena přinese vítr, ptáci či zvěř, můžeme jim ale také napomoci zaséváním semen (např. břízy[^4]). Dřevo těchto stromů není z hospodářského hlediska zvlášť hodnotné, vytváří však mikroklima, do kterého lze později úspěšně vysázet hodnotné cílové dřeviny[^5] (jedle, buky, anebo i smrky). Využití více různých dřevin zároveň zvyšuje pestrost druhové skladby lesa, což – jak dnes už víme – prokazatelně zlepšuje stabilitu jejich produkce oproti monokulturám[^6] i odolnost celého ekosystému vůči projevům klimatické změny[^7].
 
 ### Regulování stavů zvěře
 
