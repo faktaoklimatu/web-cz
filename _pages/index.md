@@ -29,7 +29,7 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
     <p class="lead mb-0">V listopadu se v Glasgow koná klimatická konference OSN, známá pod zkratkou COP26 (přeloženo znamená 26. konference smluvních stran rámcové dohody OSN o ochraně klimatu). Bude se vyjednávat napříkad o ambicích jednotlivých států snižovat emise nebo o finanční podpoře na adaptaci a mitigaci klimatické změny. Zde jsou posbírané materiály k jednáním.</p>
-    {% assign featured_slugs = "pozice-akteru-cop, akteri-klimatickych-jednani, zpoplatneni-emisi-svet, svetove-dohody, emisni-povolenky-ets, 2021-reserse-zavazky-statu" | split: ", " %}
+    {% assign featured_slugs = "pozice-akteru-cop, akteri-klimatickych-jednani, zpoplatneni-emisi-svet, svetove-dohody, emisni-povolenky-ets, klimaticke-finance" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
     <p class="lead">Na téma aktuálních klimatických jednání se zaměřuje i druhá série našeho podcastu 2050. K jednáním na COP26 v Glasgow jsou relevantní i naše další materiály.</p>
