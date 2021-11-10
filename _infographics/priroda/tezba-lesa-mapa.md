@@ -29,7 +29,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 
 ## Obnova lesa
 
-Mapa nezahrnuje probíhající obnovu lesa, tedy jeho aktuální stav v daném kraji. Například v roce 2020 se zalesnilo 34 tisíc hektarů, v roce 2019 to bylo 29 tisíc hektarů. Převažovala plocha zalesněná listnatými dřevinami (51,3 %). Vysazovaným dřevinám opět dominoval smrk (30,7 %), následován bukem (23,8 %), dubem (16,4 %) a borovicí (7,4 %). V roce 2020 se nejvíce zalesňovalo v kraji Vysočina (6 tisíc hektarů). 
+Mapa nezahrnuje probíhající obnovu lesa, tedy jeho aktuální stav v daném kraji. Například v roce 2020 se zalesnilo 34 tisíc hektarů, v roce 2019 to bylo 29 tisíc hektarů. Převažovala plocha zalesněná listnatými dřevinami (51,3 %). Vysazovaným dřevinám opět dominoval smrk (30,7 %), následován bukem (23,8 %), dubem (16,4 %) a borovicí (7,4 %). V roce 2020 se nejvíce zalesňovalo v kraji Vysočina (6 tisíc hektarů).
 
 ## Použitá metodika a původ dat
 

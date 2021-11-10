@@ -28,15 +28,15 @@ Na našem území se nachází přibližně 2,9 milionů hektarů lesů. Kdybych
 
 - Současná lesnatost ČR je 36,8 %, v mezinárodním srovnání tedy patříme mezi středně zalesněné země (průměrná lesnatost v EU je 42 %).
 - Zastoupení jiných ploch na našem území: 40,8 % zabírají kultivované zemědělské pozemky, 9,4 % travní porosty, 1,3 % vodní plochy a 8,6 % sídla.
-- Protože krajské hranice jsou uměle vytvořeným administrativním dělením, pro popis krajiny se úplně nehodí. Mnohem přirozenější je dělení podle tzv. [přírodních lesních oblastí (PLO)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/prirodni-lesni-oblasti-plo), což je vymezení souvislých území, kde má les podobné podmínky ke svému růstu.  
+- Protože krajské hranice jsou uměle vytvořeným administrativním dělením, pro popis krajiny se úplně nehodí. Mnohem přirozenější je dělení podle tzv. [přírodních lesních oblastí (PLO)](http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu/prirodni-lesni-oblasti-plo), což je vymezení souvislých území, kde má les podobné podmínky ke svému růstu.
 
 ## Vymezení pojmů a metodické poznámky
 
-- **Les** – v tomto textu a mapě vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO)[^1], která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem[^3].
+- **Les** – v tomto textu a mapě vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO),[^1] která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem.[^3]
 
 - Data pocházejí z [Národní inventarizace lesů (NIL)](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015), což je nezávislé šetření o stavů lesů ČR, prováděné formou terénních šetření na tzv. inventarizačních plochách, a poskytuje detailní data o stavu lesních porostů včetně zastoupení dřevin, škodách a obnově nebo o množství ležícího odumřelého dřeva a pařezů. Data *Národní inventarizace lesů* zpracovává *Ústav pro hospodářskou úpravu lesa* (ÚHÚL).
 
-- Data pocházejí ze šetření, které probíhalo už v letech 2011–2015. K letošnímu roku se data o lesnatosti v Česku příliš nezměnila, protože i dočasně odlesněný pozemek (například kalamitní holina) je stále považován za les[^3]. Data za roky 2016-2020 zatím nebyly publikovány.
+- Data pocházejí ze šetření, které probíhalo už v letech 2011–2015. K letošnímu roku se data o lesnatosti v Česku příliš nezměnila, protože i dočasně odlesněný pozemek (například kalamitní holina) je stále považován za les.[^3] Data za roky 2016–2020 zatím nebyly publikovány.
 
 ### V čem spočívají nesrovnalosti v datech o lesích?
 
