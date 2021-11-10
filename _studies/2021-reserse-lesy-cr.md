@@ -42,7 +42,7 @@ items:
     - name: "Národní inventarizace lesů v České republice"
       authors: "<abbr title=\"Ústav pro hospodářskou úpravu lesů\">ÚHÚL</abbr>"
       link: "https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf"
-      description: "Národní inventarizace lesů (NIL) je dokument poskytující souhrnné informace o stavu a vývoji lesních ekosystémů na území Česka. Obsahuje zpravidla po krajích členěná data o: vývoji porostů a zásob dřeva, struktuře lesních porostů i vlastnických vztahů, přírůstech dřevní hmoty, těžbách dřeva a obnově lesa a rozsahu škod v lesích. Všechna data jsou získávána podrobným terénním šetřením a jsou uváděna včetně rozsahů předpokládaných nejistot. Kniha obsahuje data za období 2011-2015. V současnosti probíhá vyhodnocování dalšího cyklu inventarizace z období 2016–2020 s názvem Sledování stavu a vývoje lesních ekosystémů (SSVLE)."
+      description: "Národní inventarizace lesů (NIL) je dokument poskytující souhrnné informace o stavu a vývoji lesních ekosystémů na území Česka. Obsahuje zpravidla po krajích členěná data o: vývoji porostů a zásob dřeva, struktuře lesních porostů i vlastnických vztahů, přírůstech dřevní hmoty, těžbách dřeva a obnově lesa a rozsahu škod v lesích. Všechna data jsou získávána podrobným terénním šetřením a jsou uváděna včetně rozsahů předpokládaných nejistot. Kniha obsahuje data za období 2011–2015. V současnosti probíhá vyhodnocování dalšího cyklu inventarizace z období 2016–2020 s názvem Sledování stavu a vývoje lesních ekosystémů (SSVLE)."
       timeframe: "2011–2015"
     - name: "Oblastní plány rozvoje lesů"
       authors: "<abbr title=\"Ústav pro hospodářskou úpravu lesů\">ÚHÚL</abbr>"
