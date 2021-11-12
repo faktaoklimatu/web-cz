@@ -45,7 +45,12 @@ V [první kapitole]({{ page.study-pdf }}#page=57) zprávy jsou podrobněji disku
 * **Transformační scénář** (_Transforming Energy Scenario, TES_) popisuje ambiciózní, ale realistickou transformaci energetiky založenou z velké části na obnovitelných zdrojích energie. Tento scénář je v souladu s cíli Pařížské dohody zastavit globální oteplování pod hodnotou +2 °C.
 * **Úplná dekarbonizace** (_Deep Decarbonization Perspective, DDP_) popisuje možnosti dosažení nulových emisí CO<sub>2</sub> do roku 2050.
 
-[![Velikost redukce emisí: obnovitelné zdroje a efektivita](/assets/studies/2020-transformace-energetiky-do-2050-graf.png){:.text-img}]({{ page.study-pdf }}#page=33){:.no-ext-link-icon}
+{% include figure.html
+    name="graf.png"
+    alt="Velikost redukce emisí: obnovitelné zdroje a efektivita"
+    source-text="Global Renewables Outlook: Energy transformation 2050"
+    source-url="https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Apr/IRENA_Global_Renewables_Outlook_2020.pdf#page33"
+%}
 
 ### Socioekonomické ukazatele
 
