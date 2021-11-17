@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Kde je v Česku les: Přírodní lesní oblasti"
+title:      "Lesnatost v přírodních lesních oblastech"
 slug:       "lesnatost-plo"
 redirect_from: "/lesnatost-plo"
 published:  2021-11-04
