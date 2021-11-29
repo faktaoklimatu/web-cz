@@ -9,7 +9,7 @@ tags-scopes: [ cr, eu, svet ]
 tags-topics: [ energetika, ekonomika ]
 cover-source-author: "TODO"
 cover-source-license: "TODO není open, najít jiný obrázek"
-cover-source-license-url: "TODO"
+cover-source-license-url: "https://TODO.org"
 cover-source-text: "TODO"
 cover-source-url: "https://www.flickr.com/photos/45298237@N02/33082818818/"
 perex:       "Jaké jsou příčiny razantního zvýšení cen energií na podzim roku 2021 a jaká jsou možná krátkodobá a střednědobá řešení?"
@@ -22,10 +22,10 @@ V druhé polovině roku 2021 došlo v Evropě a v Asii k desetinásobnému mezir
 {% include figure.html
     name="cena-zemni-plyn.png"
     name-mobile="TODO"
-    alt=""
+    alt="Cena zemního plynu na burze v Holandsku"
     caption="Cena zemního plynu na burze v Holandsku"
     source-text="TODO"
-    source-url="TODO"
+    source-url="https://TODO.org"
 %}
 
 V tomto textu se blíže podíváme na příčiny tohoto prudkého nárůstu. Na pozadí tohoto konkrétního případu také chceme ilustrovat obecnější principy na trhu s energiemi.
@@ -50,7 +50,7 @@ Předchozí dlouhá a studená zima na severní polokouli způsobila **nízké s
     alt="Zásoby fosilního plynu v EU"
     caption="Zásoby fosilního plynu v EU"
     source-text="Reuters Graphics, Gas Infrastructure Europe"
-    source-url="TODO"
+    source-url="https://TODO.org"
 %}
 
 V případě Evropy hrála roli i podprůměrná výroba z větrných elektráren během léta a podzimu 2021. [TODO fact check obdobi, plus kvantifikace] Ta vytvářela další tlak na spotřebu zemního plynu (a černého uhlí), protože výpadky výroby obnovitelných zdrojů energie kryjí fosilní zdroje.
@@ -67,7 +67,7 @@ Teto slabý nárůst je způsoben opět souhrou více faktorů:
     alt="Klíčové údržbové práce a neplánované odstávky v roce 2021"
     caption="Klíčové údržbové práce a neplánované odstávky v roce 2021"
     source-text="IEA"
-    source-url="TODO"
+    source-url="https://TODO.org"
 %}
 
 Ve výsledku nabídka fosilních zdrojů nebyla schopna dorovnat vyšší poptávku a tak došlo k výraznému zvýšení ceny.
@@ -88,7 +88,7 @@ TODO: Vysvětlující text o tom, jak souvisí cena elektřiny s cenou elektřin
     alt="Variabilní náklady na výrobu elektřiny ze zemního plynu a cena elektřiny na trzích."
     caption="Variabilní náklady na výrobu elektřiny ze zemního plynu a cena elektřiny na trzích."
     source-text="TODO"
-    source-url="TODO"
+    source-url="https://TODO.org"
 %}
 
 ## Navrhovaná řešení dle Evropské komise
