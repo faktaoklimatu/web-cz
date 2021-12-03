@@ -17,7 +17,7 @@ perex:       "Společná vize pro evropské lesnictví je v čase klimatických 
 
 V následujícím textu se zaměříme na klíčové návrhy nové Lesnické strategie EU do roku 2030 (NLS), kterou v červenci 2021 vydala Evropská komise.[^1] [^2] Jedná se o právně nezávazný dokument, který si především klade za cíl vytvořit určitý společný rámec či jednotnou politiku, jež:
 
-1. __pomůže překlenout velmi rozdílnou situaci v lesnictví v jednotlivých členských státech__ Unie (ať už jde o stav legislativy, úroveň ochrany lesních ekosystémů, míru zalesnění území, způsoby hospodaření v lese a těžba, lokální dopady klimatických změn nebo třeba výzkumné aktivity) __a umožní lepší koordinaci kroků v této oblasti__, která je pro zlepšení stavu evropských lesů a jejich další prosperitu naprosto zásadní;
+1. __pomůže překlenout velmi rozdílnou situaci v lesnictví v jednotlivých členských státech__ Unie (ať už jde o stav legislativy, úroveň ochrany lesních ekosystémů, míru zalesnění území, způsoby hospodaření v lese a těžbu, lokální dopady klimatických změn nebo třeba výzkumné aktivity) __a umožní lepší koordinaci kroků v této oblasti__, která je pro zlepšení stavu evropských lesů a jejich další prosperitu naprosto zásadní;
 2. bude __v souladu s evropskou klimatickou politikou__, jak ji popisují klíčové dokumenty Evropské komise, například *Fit for 55*[^3] nebo *Zelená dohoda*[^4], ale také s dalšími strategiemi, jako je *Strategie EU v oblasti biologické rozmanitosti do roku 2030*[^5] nebo strategie *"Od zemědělce ke spotřebiteli"*[^6].
 
 ## Co jsou hlavní problémy, které je třeba řešit?
@@ -27,14 +27,14 @@ Pojďme si nejprve krátce shrnout současnou situaci a pojmenovat klíčové ot
 * __Klimatická změna a s ní spojený posun vegetačních pásem__ na sever a do vyšších nadmořských výšek, což ovlivní většinu lesů v Evropě (například smrkům se v důsledku teplejšího a suššího klimatu už nebude dařit tam, kde je u nás běžně vídáme dnes -- nedává už tedy ani ekonomicky smysl je v těchto oblastech dál sázet[^10]).
 * __Zhoršující se zdraví lesů a degradace lesních půd, častější kůrovcové kalamity__ a následná nahodilá těžba, jejímž výsledkem jsou rozsáhlé plochy téměř bez života[^11] a __snižující se schopnost lesů plnit ekosystémové a další funkce__: zadržovat vodu, bránit erozi půdy, udržovat biologickou rozmanitost, zmírňovat dopady klimatické změny, sloužit jako prostor pro rekreaci...
 * __Nedostatek pracovních sil v sektoru lesnictví__ (v kalamitních situacích, ale i na práce spojené s hospodařením a obnovou lesa); těžká fyzická práce, často špatně placená.
-* __Nestabilní příjmy vlastníků lesa__, kteří musí celé desítky let čekat, než se jim vrátí náklady spojené s obnovou lesa, navíc mimo prodané dřevo momentálně jiný zisk ze z lesa v podstatě nemají, protože společnost zatím nedokáže další funkce lesa finančně ocenit.
+* __Nestabilní příjmy vlastníků lesa__, kteří musí celé desítky let čekat, než se jim vrátí náklady spojené s obnovou lesa, navíc mimo prodané dřevo momentálně jiný zisk z lesa v podstatě nemají, protože společnost zatím nedokáže další funkce lesa finančně ocenit.
 * __Nevhodné lesní hospodaření__, které klade ekonomický zájem nad přírodu a preferuje pěstování stejnověkých monokultur ("plantáží") oproti druhově pestrému, různověkému lesu plnému života.
 * __Absence vzdělávacích a motivačních programů pro lesníky__, aby hospodařili udržitelným, přírodě blízkým způsobem (přestože často dělají svou práci srdcem, chybí kvalitní osvěta i motivace začít jinak).
 * __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^12]) a obchodování s nezákonně vytěženým dřívím.
 * __Absence dobře fungujícího systému certifikace dřeva__, který bude skutečně motivující a ekonomicky výhodný jak pro lesní hospodáře, tak pro zpracovatele dřeva.
 * __Nevhodné použití dřevní hmoty__: kvalitní dřevo se mnohdy využívá na výrobu energie (spálí se jako biomasa), naproti tomu málo dřeva se dosud využívá ve stavebnictví[^13] -- přestože v produktech na bázi dřeva s dlouhou životností by byl uhlík uložen minimálně na desítky let, a dřevo jako materiál by tedy mohlo v klimaticky neutrální ekonomice hrát důležitou úlohu.
 * __Socioekonomická situace venkova__, jehož prosperita je se zdravou krajinou, a tedy i lesy, úzce spjata, včetně pracovních příležitostí (zemědělství, lesnictví).
-* __Nedostačující či zastaralá legislativa__: zákony a směrnice o lesích jsou v jednotlivých zemích EU velmi různé a často je též nutná novelizace (v ČR např. novela lesního zákona, zákona o myslivosti a další).
+* __Nedostačující či zastaralá legislativa__: zákony a směrnice o lesích jsou v jednotlivých zemích EU velmi různé a často je též nutná novelizace (v ČR např. novela lesního zákona, zákona o myslivosti a další legislativní změny).
 
 ## S jakými návrhy přichází NLS?
 
@@ -46,9 +46,9 @@ __Posílit kritéria udržitelnosti pro bioenergii__ -- dřevní biomasa již ne
 
 __Stavět na principech oběhového hospodářství__, kde prioritou je lepší využití produktů na bázi dřeva, jejich opakované použití a recyklace.
 
-__Přestat využívat dřevo vysoké ekologické hodnoty__, neboť jeho ekonomický přínos je menší než ten ekologický -- apel na členské státy, aby tomu věnovaly pozornost.
+__Přestat využívat dřevo vysoké ekologické hodnoty__, neboť jeho ekonomický přínos je menší než ten ekologický -- apel Evropské komise na členské státy, aby využívání tohoto dřeva věnovaly pozornost.
 
-__Transformace stavebnictví__ ze zdroje emisí skleníkových plynů v sektor vyznačující se propadem uhlíku, podpora dřevostaveb -- finanční podporu pro inovativní projekty nabízí například evropský [*Inovační fond*](https://ec.europa.eu/clima/policies/innovation-fund_cs). Tyto změny se ovšem neobejdou bez revize předpisů o požární bezpečnosti, které zatím nejsou dřevostavbám nakloněny.
+__Transformovat sektor stavebnictví__ ze zdroje emisí skleníkových plynů v odvětví vyznačující se propadem uhlíku, podporovat dřevostavby -- finanční podporu pro inovativní projekty nabízí například evropský [*Inovační fond*](https://ec.europa.eu/clima/policies/innovation-fund_cs). Tyto změny se ovšem neobejdou bez revize předpisů o požární bezpečnosti, které zatím nejsou dřevostavbám nakloněny.
 
 ### Obnova lesů a hospodaření
 
@@ -66,7 +66,7 @@ __Finančně motivovat vlastníky a správce lesů__, aby hospodařili udržitel
 
 __Podporovat lesní ekoturistiku__, která může být významným zdrojem příjmu pro venkovské oblasti. Odvětví cestovního ruchu spojeného s přírodou a blízkými destinacemi má dle NLS velký potenciál, poptávka stoupla zejména během pandemie COVID-19.
 
-__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^32] navíc zcela ekologicky: bez průmyslových hnojiv, pesticidů či insekticidů. Například v Česku jsou však příjmové možnosti vlastníků v u nedřevěných produktů značně omezeny legislativou.[^33]
+__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^32] navíc zcela ekologicky: bez průmyslových hnojiv, pesticidů či insekticidů. Například v Česku jsou však příjmové možnosti vlastníků u nedřevěných produktů značně omezeny legislativou.[^33]
 
 ### Ochrana lesů a lesních ekosystémů
 
@@ -76,7 +76,7 @@ __Provést revizi legislativy__: posílit *Směrnici o trestněprávní ochraně
 
 __Více chránit pralesy a další obzvláště cenné lesy__: EU bude vyžadovat po členských státech, aby zajistily lepší monitorování nelegální těžby a prosazování právních předpisů, a bude kontrolovat, zda to skutečně dělají.
 
-__Vytvořit právně závazný nástroj pro obnovu ekosystémů__ v rámci provádění *Strategie EU v oblasti biologické rozmanitosti do roku 2030* -- bude se vztahovat především na ekosystémy s největším potenciálem pro ukládání uhlíku a předcházení dopadu přírodních katastrof. Komise počítá také s investicemi v této oblasti.
+__Vytvořit právně závazný nástroj pro obnovu ekosystémů__ v rámci provádění *Strategie EU v oblasti biologické rozmanitosti do roku 2030* -- bude se vztahovat především na ekosystémy s největším potenciálem pro ukládání uhlíku a předcházení dopadu přírodních katastrof. Evropská komise počítá také s investicemi v této oblasti.
 
 ### Monitoring a výzkum lesů, vzdělávání
 
@@ -84,7 +84,7 @@ __Vytvořit celounijní integrovaný rámec pro monitoring__ lesů, který bude 
 
 __Zdokonalit stávající systém informací o lesích v Evropě__ (FISE), který umožní vytváření pravidelných reportů o stavu těchto lesů a bude poskytovat relevantní informace všem zúčastněným subjektům, včetně vlastníků lesů a veřejnosti.
 
-__Podporovat výzkumné aktivity__ o lesích, ekosystémech a jejich vazbě na klima a posílením spolupráce __překlenout dosavadní roztříštěnost výzkumu v EU__ -- jedním z klíčových programů má být *Horizont Evropa*.[^51]
+__Podporovat výzkumné aktivity__ o lesích, ekosystémech a jejich vazbě na klima a posílením spolupráce __překlenout dosavadní roztříštěnost výzkumu v EU__ -- jedním z klíčových programů zde má být *Horizont Evropa*.[^51]
 
 __Vzdělávat lesníky v udržitelnějším hospodaření__ -- členské státy mohou pro tyto účely využívat [*Evropský sociální fond*](https://ec.europa.eu/european-social-fund-plus/cs/co-je-esf) (ESF+).
 
