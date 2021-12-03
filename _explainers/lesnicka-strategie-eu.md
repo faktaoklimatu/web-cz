@@ -15,24 +15,24 @@ cover-source-url: "https://unsplash.com/photos/BSnYmolkj7s"
 perex:       "Společná vize pro evropské lesnictví je v čase klimatických změn velmi důležitá: máme-li mít v budoucnu v Evropě lesy zdravé a odolné, je potřeba, aby státy co nejvíc spojily své síly – kůrovec ani sucho geopolitické hranice určitě respektovat nebudou. A i když lze samozřejmě diskutovat o tom, nakolik takovouto společnou vizi přináší nová Lesnická strategie EU do roku 2030, jisté je, že někde musíme začít a že čím dříve se do toho pustíme, tím lépe pro naše lesy i pro všechny, kdo jsou na jejich existenci závislí."
 ---
 
-V následujícím textu se zaměříme na klíčové návrhy nové Lesnické strategie EU do roku 2030 (NLS), kterou v červenci 2021 vydala Evropská komise.[^1] [^2] Jedná se o právně nezávazný dokument, který si především klade za cíl vytvořit určitý společný rámec či jednotnou politiku, jež:
+V následujícím textu se zaměříme na klíčové návrhy nové Lesnické strategie EU do roku 2030 (NLS), kterou v červenci 2021 vydala Evropská komise.[^lesni-strategie-eu] [^nls] Jedná se o právně nezávazný dokument, který si především klade za cíl vytvořit určitý společný rámec či jednotnou politiku, jež:
 
 1. __pomůže překlenout velmi rozdílnou situaci v lesnictví v jednotlivých členských státech__ Unie (ať už jde o stav legislativy, úroveň ochrany lesních ekosystémů, míru zalesnění území, způsoby hospodaření v lese a těžbu, lokální dopady klimatických změn nebo třeba výzkumné aktivity) __a umožní lepší koordinaci kroků v této oblasti__, která je pro zlepšení stavu evropských lesů a jejich další prosperitu naprosto zásadní;
-2. bude __v souladu s evropskou klimatickou politikou__, jak ji popisují klíčové dokumenty Evropské komise, například *Fit for 55*[^3] nebo *Zelená dohoda*[^4], ale také s dalšími strategiemi, jako je *Strategie EU v oblasti biologické rozmanitosti do roku 2030*[^5] nebo strategie *"Od zemědělce ke spotřebiteli"*[^6].
+2. bude __v souladu s evropskou klimatickou politikou__, jak ji popisují klíčové dokumenty Evropské komise, například [*Fit for 55*](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52021DC0550) nebo [*Zelená dohoda*](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52019DC0640), ale také s dalšími strategiemi, jako je [*Strategie EU v oblasti biologické rozmanitosti do roku 2030*](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52020DC0380) nebo strategie [*"Od zemědělce ke spotřebiteli"*](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52020DC0381).
 
 ## Co jsou hlavní problémy, které je třeba řešit?
 
 Pojďme si nejprve krátce shrnout současnou situaci a pojmenovat klíčové otázky, na které bude nutné v souvislosti s evropskými lesy najít odpověď. Týkají se jak České republiky, tak ostatních zemích EU -- jen se s nimi zatím každý stát vypořádává po svém.
 
-* __Klimatická změna a s ní spojený posun vegetačních pásem__ na sever a do vyšších nadmořských výšek, což ovlivní většinu lesů v Evropě (například smrkům se v důsledku teplejšího a suššího klimatu už nebude dařit tam, kde je u nás běžně vídáme dnes -- nedává už tedy ani ekonomicky smysl je v těchto oblastech dál sázet[^10]).
-* __Zhoršující se zdraví lesů a degradace lesních půd, častější kůrovcové kalamity__ a následná nahodilá těžba, jejímž výsledkem jsou rozsáhlé plochy téměř bez života[^11] a __snižující se schopnost lesů plnit ekosystémové a další funkce__: zadržovat vodu, bránit erozi půdy, udržovat biologickou rozmanitost, zmírňovat dopady klimatické změny, sloužit jako prostor pro rekreaci...
+* __Klimatická změna a s ní spojený posun vegetačních pásem__ na sever a do vyšších nadmořských výšek, což ovlivní většinu lesů v Evropě (například smrkům se v důsledku teplejšího a suššího klimatu už nebude dařit tam, kde je u nás běžně vídáme dnes -- nedává už tedy ani ekonomicky smysl je v těchto oblastech dál sázet[^explainer-hospodareni]).
+* __Zhoršující se zdraví lesů a degradace lesních půd, častější kůrovcové kalamity__ a následná nahodilá těžba, jejímž výsledkem jsou rozsáhlé plochy téměř bez života[^infografika-tezba-lesa] a __snižující se schopnost lesů plnit ekosystémové a další funkce__: zadržovat vodu, bránit erozi půdy, udržovat biologickou rozmanitost, zmírňovat dopady klimatické změny, sloužit jako prostor pro rekreaci...
 * __Nedostatek pracovních sil v sektoru lesnictví__ (v kalamitních situacích, ale i na práce spojené s hospodařením a obnovou lesa); těžká fyzická práce, často špatně placená.
 * __Nestabilní příjmy vlastníků lesa__, kteří musí celé desítky let čekat, než se jim vrátí náklady spojené s obnovou lesa, navíc mimo prodané dřevo momentálně jiný zisk z lesa v podstatě nemají, protože společnost zatím nedokáže další funkce lesa finančně ocenit.
 * __Nevhodné lesní hospodaření__, které klade ekonomický zájem nad přírodu a preferuje pěstování stejnověkých monokultur ("plantáží") oproti druhově pestrému, různověkému lesu plnému života.
 * __Absence vzdělávacích a motivačních programů pro lesníky__, aby hospodařili udržitelným, přírodě blízkým způsobem (přestože často dělají svou práci srdcem, chybí kvalitní osvěta i motivace začít jinak).
-* __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^12]) a obchodování s nezákonně vytěženým dřívím.
+* __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^belovezsky-prales]) a obchodování s nezákonně vytěženým dřívím.
 * __Absence dobře fungujícího systému certifikace dřeva__, který bude skutečně motivující a ekonomicky výhodný jak pro lesní hospodáře, tak pro zpracovatele dřeva.
-* __Nevhodné použití dřevní hmoty__: kvalitní dřevo se mnohdy využívá na výrobu energie (spálí se jako biomasa), naproti tomu málo dřeva se dosud využívá ve stavebnictví[^13] -- přestože v produktech na bázi dřeva s dlouhou životností by byl uhlík uložen minimálně na desítky let, a dřevo jako materiál by tedy mohlo v klimaticky neutrální ekonomice hrát důležitou úlohu.
+* __Nevhodné použití dřevní hmoty__: kvalitní dřevo se mnohdy využívá na výrobu energie (spálí se jako biomasa), naproti tomu málo dřeva se dosud využívá ve stavebnictví[^nls-stavebnictvi] -- přestože v produktech na bázi dřeva s dlouhou životností by byl uhlík uložen minimálně na desítky let, a dřevo jako materiál by tedy mohlo v klimaticky neutrální ekonomice hrát důležitou úlohu.
 * __Socioekonomická situace venkova__, jehož prosperita je se zdravou krajinou, a tedy i lesy, úzce spjata, včetně pracovních příležitostí (zemědělství, lesnictví).
 * __Nedostačující či zastaralá legislativa__: zákony a směrnice o lesích jsou v jednotlivých zemích EU velmi různé a často je též nutná novelizace (v ČR např. novela lesního zákona, zákona o myslivosti a další legislativní změny).
 
@@ -40,7 +40,7 @@ Pojďme si nejprve krátce shrnout současnou situaci a pojmenovat klíčové ot
 
 ### Využívání dřeva
 
-__Důsledně uplatňovat tzv. kaskádový princip__, tedy kvalitní dřevo využívat primárně na výrobky s dlouhou životností, které budou zároveň sloužit jako úložiště uhlíku, nepoužívat jej na výrobu energie (zde spíše méně kvalitní dřevo, zbytky z pilařských závodů či recyklované produkty).[^19]
+__Důsledně uplatňovat tzv. kaskádový princip__, tedy kvalitní dřevo využívat primárně na výrobky s dlouhou životností, které budou zároveň sloužit jako úložiště uhlíku, nepoužívat jej na výrobu energie (zde spíše méně kvalitní dřevo, zbytky z pilařských závodů či recyklované produkty).[^nls-bionergie]
 
 __Posílit kritéria udržitelnosti pro bioenergii__ -- dřevní biomasa již nesmí pocházet z původních lesních porostů a její čerpání z lesů s velkou ekologickou rozmanitostí bude značně omezeno. V oblasti výroby energie z dřevní biomasy budou též zpřísněna pravidla pro dotace.
 
@@ -62,15 +62,15 @@ __Citlivě těžit__, tedy co nejvíce se vyhýbat holosečím, neodstraňovat k
 
 ### Ekonomická podpora pro vlastníky lesů a venkov
 
-__Finančně motivovat vlastníky a správce lesů__, aby hospodařili udržitelně: s ohledem na klima a biologickou rozmanitost. Jako jednu z možností podpory vlastníků uvádí NLS __platby za ekosystémové služby__, jako je ochrana pitné vody a biologické rozmanitosti, ukládání uhlíku apod. Tento model již v některých evropských státech funguje[^30] a Evropská komise poskytne v tomto směru potřebné poradenství a technické pokyny. Dalším zdrojem příjmů může být podobný systém odměňování jako v zemědělství,[^31] a to __certifikace pohlcování uhlíku__ (s uhlíkovými certifikáty bude možné obchodovat na trzích) -- regulační rámec je ve fázi přípravy.
+__Finančně motivovat vlastníky a správce lesů__, aby hospodařili udržitelně: s ohledem na klima a biologickou rozmanitost. Jako jednu z možností podpory vlastníků uvádí NLS __platby za ekosystémové služby__, jako je ochrana pitné vody a biologické rozmanitosti, ukládání uhlíku apod. Tento model již v některých evropských státech funguje[^finance] a Evropská komise poskytne v tomto směru potřebné poradenství a technické pokyny. Dalším zdrojem příjmů může být podobný systém odměňování jako v zemědělství,[^odmenovani-zemedelstvi] a to __certifikace pohlcování uhlíku__ (s uhlíkovými certifikáty bude možné obchodovat na trzích) -- regulační rámec je ve fázi přípravy.
 
 __Podporovat lesní ekoturistiku__, která může být významným zdrojem příjmu pro venkovské oblasti. Odvětví cestovního ruchu spojeného s přírodou a blízkými destinacemi má dle NLS velký potenciál, poptávka stoupla zejména během pandemie COVID-19.
 
-__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^32] navíc zcela ekologicky: bez průmyslových hnojiv, pesticidů či insekticidů. Například v Česku jsou však příjmové možnosti vlastníků u nedřevěných produktů značně omezeny legislativou.[^33]
+__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^nls-trzni-hodnota] navíc zcela ekologicky: bez průmyslových hnojiv, pesticidů či insekticidů. Například v Česku jsou však příjmové možnosti vlastníků u nedřevěných produktů značně omezeny legislativou.[^nedrevene-produkty]
 
 ### Ochrana lesů a lesních ekosystémů
 
-__Najít v rámci EU společnou definici pro původní lesní porosty__,[^40] které jsou nejbohatšími lesními ekosystémy a zároveň významně pohlcují uhlík, a stanovit režim jejich ochrany.
+__Najít v rámci EU společnou definici pro původní lesní porosty__,[^nls-lesni-porosty] které jsou nejbohatšími lesními ekosystémy a zároveň významně pohlcují uhlík, a stanovit režim jejich ochrany.
 
 __Provést revizi legislativy__: posílit *Směrnici o trestněprávní ochraně životního prostředí*, aby nedocházelo k dalšímu poškozování lesů, a revidovat *Nařízení EU o dřevu*, které zakazuje vstup nezákonně vytěženého dřeva do EU a stanoví další povinnosti pro obchod se dřevem.
 
@@ -80,54 +80,46 @@ __Vytvořit právně závazný nástroj pro obnovu ekosystémů__ v rámci prov�
 
 ### Monitoring a výzkum lesů, vzdělávání
 
-__Vytvořit celounijní integrovaný rámec pro monitoring__ lesů, který bude využívat technologie pro dálkový průzkum (např. satelity) a umělou inteligenci.[^50]
+__Vytvořit celounijní integrovaný rámec pro monitoring__ lesů, který bude využívat technologie pro dálkový průzkum (např. satelity) a umělou inteligenci.[^monitoring]
 
 __Zdokonalit stávající systém informací o lesích v Evropě__ (FISE), který umožní vytváření pravidelných reportů o stavu těchto lesů a bude poskytovat relevantní informace všem zúčastněným subjektům, včetně vlastníků lesů a veřejnosti.
 
-__Podporovat výzkumné aktivity__ o lesích, ekosystémech a jejich vazbě na klima a posílením spolupráce __překlenout dosavadní roztříštěnost výzkumu v EU__ -- jedním z klíčových programů zde má být *Horizont Evropa*.[^51]
+__Podporovat výzkumné aktivity__ o lesích, ekosystémech a jejich vazbě na klima a posílením spolupráce __překlenout dosavadní roztříštěnost výzkumu v EU__ -- jedním z klíčových programů zde má být [*Horizont Evropa*](https://www.horizontevropa.cz/cs).[^horizont-evropa]
 
 __Vzdělávat lesníky v udržitelnějším hospodaření__ -- členské státy mohou pro tyto účely využívat [*Evropský sociální fond*](https://ec.europa.eu/european-social-fund-plus/cs/co-je-esf) (ESF+).
 
 ## Další postup a navazující kroky
 
-Evropská komise vyzvala Evropský parlament a Radu ke schválení NLS. V jednotlivých oblastech zmíněných výše **nyní Komise rozpracovává programy a připravuje potřebné technické a finanční nástroje, které umožní strategii realizovat** (dílčí kroky Komise jsou v dokumentu uvedeny v rámečcích). 
+Evropská komise vyzvala Evropský parlament a Radu ke schválení NLS. V jednotlivých oblastech zmíněných výše **nyní Komise rozpracovává programy a připravuje potřebné technické a finanční nástroje, které umožní strategii realizovat** (dílčí kroky Komise jsou v dokumentu uvedeny v rámečcích).
 
-Komise chce dělat další kroky v dialogu s členskými státy a opírat se o jejich zkušenosti – bude vytvořena široká skupina odborníků, v níž budou zástupci jednotlivých zemí z různých ministerstev a která bude disponovat mandátem pro všechny environmentální, sociální a hospodářské cíle NLS. Zároveň **Komise vyzývá členské státy, aby zřídily široké platformy pro dialog zúčastněných stran a vedení diskuzí o dalším směřování lesnictví** na vnitrostátní i evropské úrovni, a nabízí konzultace v oblasti lesnictví obdobné poradenství v zemědělství v rámci [*Společné zemědělské politiky EU*](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/cap-glance_cs).  
+Komise chce dělat další kroky v dialogu s členskými státy a opírat se o jejich zkušenosti – bude vytvořena široká skupina odborníků, v níž budou zástupci jednotlivých zemí z různých ministerstev a která bude disponovat mandátem pro všechny environmentální, sociální a hospodářské cíle NLS. Zároveň **Komise vyzývá členské státy, aby zřídily široké platformy pro dialog zúčastněných stran a vedení diskuzí o dalším směřování lesnictví** na vnitrostátní i evropské úrovni, a nabízí konzultace v oblasti lesnictví obdobné poradenství v zemědělství v rámci [*Společné zemědělské politiky EU*](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/cap-glance_cs).
 
 ## Zdroje a poznámky
 
-[^1]: Celý dokument Lesnické strategie do roku 2030 v češtině: [*https://eur-lex.europa.eu/resource.html?uri=cellar:0d918e07-e610-11eb-a1a5-01aa75ed71a1.0010.02/DOC\_1&format=PDF*](https://eur-lex.europa.eu/resource.html?uri=cellar:0d918e07-e610-11eb-a1a5-01aa75ed71a1.0010.02/DOC_1&format=PDF)
+[^lesni-strategie-eu]: Celý text *Lesní strategie EU do roku 2030* v češtině je k dispozici [na stránkách EUR-Lex](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52021DC0572).
 
-[^2]: NLS navazuje na Lesní strategii EU z roku 2013 a zaměřuje se především na kroky a cíle do roku 2030. V polovině dekády (2025) by měla projít důkladnou revizí a Evropská komise vyhodnotí, jak se daří ji naplňovat.
+[^nls]: NLS navazuje na Lesní strategii EU z roku 2013 a zaměřuje se především na kroky a cíle do roku 2030. V polovině dekády (2025) by měla projít důkladnou revizí a Evropská komise vyhodnotí, jak se daří ji naplňovat.
 
-[^3]: Balíček "Fit for 55": [*https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:52021DC0550&from=EN*](https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:52021DC0550&from=EN)
+[^explainer-hospodareni]: Více v našem exlaineru [*Jak v následujícím století hospodařit v českých lesích?*](/explainery/hospodareni-lesy)
 
-[^4]: Zelená dohoda pro Evropu: [*https://eur-lex.europa.eu/resource.html?uri=cellar:b828d165-1c22-11ea-8c1f-01aa75ed71a1.0010.02/DOC\_1&format=PDF*](https://eur-lex.europa.eu/resource.html?uri=cellar:b828d165-1c22-11ea-8c1f-01aa75ed71a1.0010.02/DOC_1&format=PDF)
+[^infografika-tezba-lesa]: Těžbu v Česku přibližuje například infografika [*Plocha jehličnanů vytěžená v letech 2016--2020*](/infografiky/tezba-lesa-plocha).
 
-[^5]: Strategie EU v oblasti biologické rozmanitosti do roku 2030: [*https://eur-lex.europa.eu/resource.html?uri=cellar:a3c806a6-9ab3-11ea-9d2d-01aa75ed71a1.0013.02/DOC\_1&format=PDF*](https://eur-lex.europa.eu/resource.html?uri=cellar:a3c806a6-9ab3-11ea-9d2d-01aa75ed71a1.0013.02/DOC_1&format=PDF)
+[^belovezsky-prales]: Mediálně známá je například [těžba v Bělověžském pralese](https://ekolist.cz/cz/zpravodajstvi/zpravy/polsko-obnovi-tezbu-v-chranenem-belovezskem-pralese) na hranicích Polska a Běloruska.
 
-[^6]: Strategie "Od zemědělce ke spotřebiteli" (anglicky *Farm to Fork Strategy*): [*https://eur-lex.europa.eu/resource.html?uri=cellar:ea0f9f73-9ab2-11ea-9d2d-01aa75ed71a1.0013.02/DOC\_1&format=PDF*](https://eur-lex.europa.eu/resource.html?uri=cellar:ea0f9f73-9ab2-11ea-9d2d-01aa75ed71a1.0013.02/DOC_1&format=PDF)
+[^nls-stavebnictvi]: NLS uvádí, že stavební výrobky ze dřeva mají průměrný podíl na trhu v EU 2,4 %, zatímco například nekovové nerosty tvoří 93 %. Naprostá většina dnes používaných stavebních materiálů je tedy energeticky náročná a závislá na fosilních palivech.
 
-[^10]: Více v našem exlaineru: [*https://faktaoklimatu.cz/explainery/hospodareni-lesy*](https://faktaoklimatu.cz/explainery/hospodareni-lesy)
+[^nls-bionergie]: Dle NLS je bioenergie na bázi dřeva v současné době v EU založena na zbytcích a odpadu z těžby a zpracování dřeva ze 49 %.
 
-[^11]: Těžbu v Česku přibližuje například infografika "Plocha jehličnanů vytěžená v letech 2016--2020": [*https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha*](https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha)
+[^finance]: Strategie uvádí příklady Chorvatska, Francie, Portugalska či Německa. Jako inspiraci zmiňuje především finský program METSO, který platí soukromým vlastníkům lesů, aby vyňali svou půdu z produkce s cílem zajistit biologickou rozmanitost. Vyplacené částky závisí na hodnotě půdy a na tom, po jak dlouhou dobu bude les z produkce vyňat.
 
-[^12]: Mediálně známá je například těžba v Bělověžském pralese na hranicích Polska a Běloruska: [*https://ekolist.cz/cz/zpravodajstvi/zpravy/polsko-obnovi-tezbu-v-chranenem-belovezskem-pralese*](https://ekolist.cz/cz/zpravodajstvi/zpravy/polsko-obnovi-tezbu-v-chranenem-belovezskem-pralese)
+[^odmenovani-zemedelstvi]: Přijetí iniciativy v oblasti uhlíkového zemědělství bylo oznámeno již ve strategii "Od zemědělce ke spotřebiteli".
 
-[^13]: NLS uvádí, že stavební výrobky ze dřeva mají průměrný podíl na trhu v EU 2,4 %, zatímco například nekovové nerosty tvoří 93 %. Naprostá většina dnes používaných stavebních materiálů je tedy energeticky náročná a závislá na fosilních palivech.
+[^nls-trzni-hodnota]: Dle NLS přispívají nedřevěné produkty k tržní hodnotě lesů zhruba z 20 %.
 
-[^19]: Dle NLS je bioenergie na bázi dřeva v současné době v EU založena na zbytcích a odpadu z těžby a zpracování dřeva ze 49 %.
+[^nedrevene-produkty]: Více v článku SISAK, Ludek, Marcel RIEDL a Roman DUDIK. Non-market non-timber forest products in the Czech Republic—Their socio-economic effects and trends in forest land use. *Land Use Policy* [online]. 2016, __50__, 390-398 [cit. 2021-12-02]. ISSN 02648377. Dostupné z: [doi:10.1016/j.landusepol.2015.10.006](https://www.sciencedirect.com/science/article/pii/S0264837715003038).
 
-[^30]: Strategie uvádí příklady Chorvatska, Francie, Portugalska či Německa. Jako inspiraci zmiňuje především finský program METSO, který platí soukromým vlastníkům lesů, aby vyňali svou půdu z produkce s cílem zajistit biologickou rozmanitost. Vyplacené částky závisí na hodnotě půdy a na tom, po jak dlouhou dobu bude les z produkce vyňat.
+[^nls-lesni-porosty]: Podle odhadu v NLS jsou to cca 3 % zalesněné půdy EU.
 
-[^31]: Přijetí iniciativy v oblasti uhlíkového zemědělství bylo oznámeno již ve strategii "Od zemědělce ke spotřebiteli".
+[^monitoring]: Některé země již využívají (například Portugalsko, Švédsko, Rumunsko) a tyto nástroje jim v minulosti umožnily odhalit nezákonnou těžbu.
 
-[^32]: Dle NLS přispívají nedřevěné produkty k tržní hodnotě lesů zhruba z 20 %.
-
-[^33]: Více v článku SISAK, Ludek, Marcel RIEDL a Roman DUDIK. Non-market non-timber forest products in the Czech Republic—Their socio-economic effects and trends in forest land use. *Land Use Policy* [online]. 2016, __50__, 390-398 [cit. 2021-12-02]. ISSN 02648377. Dostupné z: [doi:10.1016/j.landusepol.2015.10.006](https://www.sciencedirect.com/science/article/pii/S0264837715003038).
-
-[^40]: Podle odhadu v NLS jsou to cca 3 % zalesněné půdy EU.
-
-[^50]: Některé země již využívají (například Portugalsko, Švédsko, Rumunsko) a tyto nástroje jim v minulosti umožnily odhalit nezákonnou těžbu.
-
-[^51]: Počítá se s příspěvkem z tohoto programu ve výši až 1 mld. EUR. [*https://www.horizontevropa.cz/cs*](https://www.horizontevropa.cz/cs)
+[^horizont-evropa]: Počítá se s příspěvkem z tohoto programu ve výši až 1 mld. EUR.
