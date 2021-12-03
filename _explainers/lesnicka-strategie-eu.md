@@ -88,6 +88,12 @@ __Podporovat výzkumné aktivity__ o lesích, ekosystémech a jejich vazbě na k
 
 __Vzdělávat lesníky v udržitelnějším hospodaření__ -- členské státy mohou pro tyto účely využívat [*Evropský sociální fond*](https://ec.europa.eu/european-social-fund-plus/cs/co-je-esf) (ESF+).
 
+## Další postup a navazující kroky
+
+Evropská komise vyzvala Evropský parlament a Radu ke schválení NLS. V jednotlivých oblastech zmíněných výše **nyní Komise rozpracovává programy a připravuje potřebné technické a finanční nástroje, které umožní strategii realizovat** (dílčí kroky Komise jsou v dokumentu uvedeny v rámečcích). 
+
+Komise chce dělat další kroky v dialogu s členskými státy a opírat se o jejich zkušenosti – bude vytvořena široká skupina odborníků, v níž budou zástupci jednotlivých zemí z různých ministerstev a která bude disponovat mandátem pro všechny environmentální, sociální a hospodářské cíle NLS. Zároveň **Komise vyzývá členské státy, aby zřídily široké platformy pro dialog zúčastněných stran a vedení diskuzí o dalším směřování lesnictví** na vnitrostátní i evropské úrovni, a nabízí konzultace v oblasti lesnictví obdobné poradenství v zemědělství v rámci [*Společné zemědělské politiky EU*](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/cap-glance_cs).  
+
 ## Zdroje a poznámky
 
 [^1]: Celý dokument Lesnické strategie do roku 2030 v češtině: [*https://eur-lex.europa.eu/resource.html?uri=cellar:0d918e07-e610-11eb-a1a5-01aa75ed71a1.0010.02/DOC\_1&format=PDF*](https://eur-lex.europa.eu/resource.html?uri=cellar:0d918e07-e610-11eb-a1a5-01aa75ed71a1.0010.02/DOC_1&format=PDF)
