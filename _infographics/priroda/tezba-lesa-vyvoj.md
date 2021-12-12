@@ -7,12 +7,10 @@ published:     2021-10-25
 weight:        100.4
 tags-scopes:   [ cr ]
 tags-topics:   [ priroda ]
-caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postiženy byl kraj Vysočina a také Olomoucký a Moravskoslezský kraj."
+caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a také Olomoucký a Moravskoslezský kraj."
 ---
 
 {% comment %}
-{:.perex}
-České lesy jsou v posledních letech těžce postiženy kůrovcovou kalamitou. Kvůli ní se přešlo z plánovaných těžeb téměř výhradně na těžbu nahodilou, která se týká především jehličnatých dřevin (převážně smrku). V letech 2016–2020 byl největší podíl vytěženého lesa na Vysočině a v Moravskoslezském a Olomouckém kraji.
 
 {% include preview-box.html
     title="Kolik jehličnatých lesů bylo vytěženo v krajích v letech 2016–2020"
@@ -23,24 +21,24 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 ## Co je v grafice zobrazeno?
 
 - Kolik procent z celkové plochy jehličnatého lesa v jednotlivých krajích se vytěžilo v letech 2016–2020. 
-- Zatímco na severovýchodě Česka (severní Morava a Slezsko) byla situace nejhorší před několika lety, nyní je mnohem více zasažen jih a západ našeho území.
-
-## Další data a souvislosti
-- V roce 2020 bylo na našem území vytěženo rekordní množství surového dříví – 35,75 mil. m3. Z tohoto objemu tvořila nahodilá těžba celých 95 %, přičemž 96 % takto vytěženého dříví pocházelo z jehličnanů[^1]. Lesy, kde převládají monokultury jehličnatých dřevin, například na Vysočině, tak v posledních letech doslova mizí před očima – v tomto kraji stoupla těžba od roku 2016 téměř desetinásobně[^2]. Prakticky výhradně je přitom příčinou přemnožený podkorní hmyz, který škodí nejen smrkům, ale i borovicím a jedlím, a lesy v Česku (už tak dost oslabené nevhodným hospodařením, špatným stavem lesní půdy a klimatickými změnami)[^3] se této kalamitě brání jen velmi obtížně. Celkovou rozlohu území, na nichž byly jehličnany v letech 2016–2020 vytěženy, ukazuje infografika [Plocha jehličnanů vytěžená v letech 2016–2020](https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha).
-- Takto masivní těžba nemá pouze velký dopad na lesní ekosystém, ale i další důsledky: akutní nedostatek pracovních sil a především pád ceny dříví na tuzemském a středoevropském trhu, který způsobilo jeho přesycení. Tento propad znamenal pro vlastníky lesů obrovské ztráty[^1], v mnoha případech jim značně zkomplikoval další investice do sazenic a prací spojených s obnovou lesa a zvýšil jejich závislost na dotacích ze státního rozpočtu.
-- S kůrovcem nebojujeme pouze v Česku – vlivem klimatických změn, resp. suchého a teplého počasí, které tomuto hmyzu svědčí nejvíc, jej po roce 2015 přibývá ve většině evropských zemí[^4]. Velké množství kůrovcového dřeva bylo vytěženo například ve Švédsku[^5]. Změny klimatu však ohrožují lesy i jinak: zejména v jižní polovině Evropy roste v jejich důsledku významně též riziko lesních požárů[^6].  
-- Přestože situace jednoznačně ukazuje, že je třeba začít hospodařit jinak a podpořit přirozenou adaptabilitu lesa mj. změnou jeho druhové skladby (viz text [Jak v následujícím století hospodařit v českých lesích?](https://faktaoklimatu.cz/explainery/hospodareni-lesy)), vykazuje české lesnictví značnou setrvačnost a reaguje na tento trend velmi pomalu. Jehličnany, a především smrky, jež se ukazují pro současné a budoucí klimatické podmínky jako nevhodné, stále hrají při obnově lesa významnou roli: v roce 2020 tvořily téměř 31 % vysazených stromů (v roce 2000 to bylo 43 %, ale celková plocha osázeného lesa byla tehdy o třetinu menší, takže i když procentuální zastoupení smrku pozvolna klesá, celkový počet vysazených smrků ještě mírně stoupl)[^1].
+- Zatímco na severní Moravě a ve Slezsku byla situace nejhorší před několika lety, nyní je mnohem více zasažen jih a západ našeho území.
 
 ## Vymezení pojmů a metodické poznámky
 
 - Les – v tomto textu a infografice vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO)[^10], která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem[^11].
 - Data v grafice pocházejí z portálu [Kůrovcová mapa](https://www.kurovcovamapa.cz/), který je výsledkem spolupráce autorů monitorovacího projektu Kůrovcové INFO[^12] a Specializovaného pracoviště dálkového průzkumu země Ústavu pro hospodářskou úpravu lesů (ÚHÚL) ve Frýdku-Místku, které pracuje s družicovými snímky.
 
+## Další data a souvislosti
+- V roce 2020 bylo na našem území **vytěženo rekordní množství surového dříví** – 35,75 mil. m3. Z tohoto objemu tvořila nahodilá těžba celých 95 %, přičemž 96 % takto vytěženého dříví pocházelo z jehličnanů[^1]. Lesy, kde převládají monokultury jehličnatých dřevin (například na Vysočině) tak doslova mizí před očima – v tomto kraji stoupla těžba od roku 2016 téměř desetinásobně[^2]. Prakticky výhradně je přitom příčinou přemnožený podkorní hmyz, který škodí nejen smrkům, ale i borovicím a jedlím, a lesy v Česku (už tak dost oslabené nevhodným hospodařením, špatným stavem lesní půdy a klimatickými změnami)[^3] se této kalamitě brání jen velmi obtížně. Celkovou rozlohu území, na nichž byly jehličnany v letech 2016–2020 vytěženy, ukazuje infografika [Plocha jehličnanů vytěžená v letech 2016–2020](https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha).
+- Takto masivní těžba nemá pouze velký dopad na lesní ekosystém, ale i další důsledky: **akutní nedostatek pracovních sil a techniky** potřebné k vytěžení a asanaci kůrovcového dříví a také **pád ceny dříví na tuzemském a středoevropském trhu**. Tento propad znamenal pro vlastníky lesů obrovské ztráty[^1], v mnoha případech jim značně zkomplikoval další investice do sazenic a prací spojených s obnovou lesa a zvýšil jejich závislost na dotacích ze státního rozpočtu.
+- **S kůrovcem nebojujeme pouze v Česku** – vlivem klimatických změn, resp. suchého a teplého počasí, které tomuto hmyzu svědčí nejvíc, jej po roce 2015 přibývá ve většině evropských zemí[^4]. Velké množství kůrovcového dřeva bylo vytěženo například ve Švédsku[^5]. Změny klimatu však ohrožují lesy i jiným způsobem: zejména v jižní polovině Evropy roste v jejich důsledku významně též riziko lesních požárů[^6].  
+- Přestože situace jednoznačně ukazuje, že je třeba začít hospodařit jinak a podpořit přirozenou adaptabilitu lesa mj. změnou jeho druhové skladby (viz text [Jak v následujícím století hospodařit v českých lesích?](https://faktaoklimatu.cz/explainery/hospodareni-lesy)), vykazuje české lesnictví značnou setrvačnost a **zažité postupy se mění jen velmi pomalu**. Jehličnany, a především smrky, které se ukazují pro současné a budoucí klimatické podmínky jako nevhodné, stále hrají při obnově lesa významnou roli: v roce 2020 tvořily téměř 31 % vysazených stromů (v roce 2000 to bylo 43 %, ale celková plocha osázeného lesa byla tehdy o třetinu menší, takže i když procentuální zastoupení smrku pozvolna klesá, celkový počet vysazených smrků ještě mírně stoupl)[^1].
+
 ## Zdroje a poznámky
 
 [^1]: Zpráva o stavu lesa a lesního hospodářství České republiky v roce 2020. Ministerstvo zemědělství ČR, 2021. https://eagri.cz/public/web/file/688968/Zprava_o_stavu_lesa_2020_web.pdf
 
-[^2]: Pro srovnání: při intenzivním odlesňování v Brazílii zmizelo 12 % lesa za dobu 20 let (www.globalforestwatch.org/dashboards/country/BRA). Na Vysočině to v případě jehličnatého lesa, který zde převládá, bylo téměř 20 % plochy za pouhých 5 let. 
+[^2]: Pro srovnání: během intenzivního odlesňování v Brazílii zmizelo 12 % lesa za dobu 20 let (www.globalforestwatch.org/dashboards/country/BRA). Na Vysočině to v případě jehličnatého lesa, který zde převládá, bylo téměř 20 % plochy za pouhých 5 let. 
 
 [^3]: Viz text Proč umírají české jehličnaté lesy? https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu
 
