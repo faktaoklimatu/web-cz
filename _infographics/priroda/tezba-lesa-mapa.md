@@ -1,39 +1,37 @@
 ---
 layout:        infographic
-title:         "Plocha těžby lesů v krajích v letech 2016–2020"
+title:         "Zastoupení dřevin a jejich těžba v jednotlivých krajích ČR v letech 2016–2020"
 slug:          "tezba-lesa-mapa"
 redirect_from: "/tezba-lesa-mapa"
 published:     2021-10-25
 weight:        100
 tags-scopes:   [ cr ]
 tags-topics:   [ priroda ]
-caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a Olomoucký a Moravskoslezský kraj."
+caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a také Olomoucký a Moravskoslezský kraj."
 ---
 
 {% comment %}
-{:.perex}
-České lesy jsou v posledních letech těžce postiženy kůrovcovou kalamitou. Kvůli ní se přešlo z plánovaných těžeb téměř výhradně na těžbu nahodilou, která se týká především jehličnatých dřevin (převážně smrku). 
 
 {% include preview-box.html
-    title="Zastoupení dřevin a jejich těžba v jednotlivých krajích Česka v letech 2016–2020"
+    title="Zastoupení dřevin a jejich těžba v jednotlivých krajích ČR v letech 2016–2020"
     text=""
     slug="lesy-kraje-tezba"
 %}
 
 ## Co je na mapě zobrazeno?
-- Poměrné zastoupení jehličnatých a listnatých dřevin v jednotlivých krajích a vytěžená plocha lesů v krajích v letech 2016–2020[^1]. 
+- Poměrné zastoupení jehličnatých a listnatých dřevin v jednotlivých krajích ČR a plocha lesů vytěžená v krajích v letech 2016–2020[^1]. 
 - V tomto období se téměř výhradně těžily jehličnaté dřeviny. 
-- Největší plocha lesa byla vytěžena v Kraji Vysočina, následuje kraj Jihočeský, Olomoucký a Moravskoslezský. Velikost této plochy v přepočtu na km2 ukazuje grafika [Plocha jehličnanů vytěžená v letech 2016–2020](https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha), podíl vytěženého jehličnatého lesa v procentech a postup kalamity ze severovýchodní části území na jih a západ je vidět v grafice [Kolik jehličnatého lesa bylo vytěženo v krajích](https://faktaoklimatu.cz/infografiky/tezba-lesa-vyvoj)[^2].
-- Mapa nezahrnuje probíhající obnovu lesa, tedy jeho aktuální stav v daném kraji. Například v roce 2020 se zalesnilo 34 tisíc hektarů, v roce 2019 to bylo 29 tisíc hektarů.  Vysazovaným dřevinám opět dominoval smrk (30,7 %), následován bukem (23,8 %), dubem (16,4 %) a borovicí (7,4 %)[^3].
-
-## Další data a souvislosti
-- Pro lesní hospodáře znamená kůrovcová kalamita pohromu a velké ztráty. Nicméně u zasažených monokultur jehličnanů, které jsou sice z hospodářského hlediska výhodné, ale velkou pestrost rostlin a živočichů v nich nenajdeme, může mít taková kalamita pozitivní přínos z hlediska biologické rozmanitosti. To pochopitelně platí pouze v případě, že je jednodruhový porost, který před invazí kůrovce připomínal spíše plantáž, nahrazen přírodě blízkým lesem – s různými druhy různě starých stromů. Současná praxe lesního hospodaření tomu zatím příliš neodpovídá. Česká legislativa totiž ukládá vlastníkovi lesa povinnost vytěženou holinu do pěti let znovu osázet[^5] (před kalamitou dokonce bylo nutné zalesnit paseku do dvou let), což reálně vede k tomu, že se tu nejspíš opět objeví stejně staré stromky a v mnoha případech opět jednoho druhu, protože to je jednodušší, a často i ekonomicky výhodnější.  
-- S postupující klimatickou změnou se stav lesů zhoršuje také jinde v Evropě a i zde se s kůrovcem potýkají[^6]. Na tuto situaci se snaží reagovat nová Lesnická strategie EU do roku 2030, která počítá s vysazením 3 mld. stromů, při plném respektování ekologických zásad. Evropská komise již vytvořila plán s milníky ke splnění tohoto závazku, úspěšnost celého projektu však bude velké míry záviset na ochotě členských států Unie na tomto společném cíli spolupracovat.
+- Největší plocha lesa byla vytěžena v Kraji Vysočina, následuje kraj Jihočeský, Olomoucký a Moravskoslezský. Velikost této plochy v přepočtu na km2 ukazuje grafika [Plocha jehličnanů vytěžená v letech 2016–2020](https://faktaoklimatu.cz/infografiky/tezba-lesa-plocha), podíl vytěženého jehličnatého lesa a postup kalamity ze severovýchodní části území na jih a západ ukazuje grafika [Kolik jehličnatého lesa bylo vytěženo v krajích](https://faktaoklimatu.cz/infografiky/tezba-lesa-vyvoj)[^2].
+- Mapa nezahrnuje probíhající obnovu, tedy neukazuje aktuální stav lesa v daném kraji. Například v roce 2020 se zalesnilo 34 tisíc hektarů, v roce 2019 to bylo 29 tisíc hektarů.  Vysazovaným dřevinám opět dominoval smrk (30,7 %), následován bukem (23,8 %), dubem (16,4 %) a borovicí (7,4 %)[^3].
 
 ## Vymezení pojmů a metodické poznámky
 - Les – v tomto textu a infografice vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO)[^10], která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem[^11].
-- Data v grafice o poměrném zastoupení jehličnatých a listnatých dřevin pocházejí z NIL, což je nezávislé šetření o stavu lesů ČR, prováděné formou terénních šetření na tzv. inventarizačních plochách, a poskytuje detailní data o stavu lesních porostů včetně zastoupení dřevin, škodách a obnově nebo o množství ležícího odumřelého dřeva a pařezů. Data NIL zpracovává Ústav pro hospodářskou úpravu lesa (ÚHÚL).
+- Data v grafice o poměrném zastoupení jehličnatých a listnatých dřevin pocházejí z Národní inventarizace lesů (NIL), což je nezávislé šetření o stavu lesů ČR, prováděné formou terénních šetření na tzv. inventarizačních plochách, a poskytuje detailní data o stavu lesních porostů včetně zastoupení dřevin, škodách a obnově nebo o množství ležícího odumřelého dřeva a pařezů. Data NIL zpracovává Ústav pro hospodářskou úpravu lesa (ÚHÚL).
 - Data v grafice týkající se těžby pocházejí z portálu [Kůrovcová mapa](https://www.kurovcovamapa.cz/), který je výsledkem spolupráce autorů monitorovacího projektu Kůrovcové INFO[^12] a Specializovaného pracoviště dálkového průzkumu země Ústavu pro hospodářskou úpravu lesů (ÚHÚL) ve Frýdku-Místku, které pracuje s družicovými snímky.
+
+## Další data a souvislosti
+- Pro lesní hospodáře znamená kůrovcová kalamita pohromu a velké ztráty. Pro přírodu může mít i pozitivní přínos – to ovšem platí pouze v případě, že je jednodruhový porost, který před invazí kůrovce připomínal spíše plantáž, postupně nahrazen přírodě blízkým lesem s různými druhy různě starých stromů a větší biologickou rozmanitostí. Současná praxe lesního hospodaření k takovémuto lesu blízkému přírodě zatím většinou nevede. Důvodem jsou kromě jiného i legislativní překážky: vyhláška ukládá vlastníkovi lesa povinnost vytěženou holinu do pěti let znovu osázet[^5] (před kalamitou dokonce bylo nutné zalesnit paseku do dvou let), což reálně vede k tomu, že se na ní obvykle opět objeví stejně staré stromky a v mnoha případech opět jednoho druhu, protože to je jednodušší, a často i ekonomicky výhodnější.  
+- S postupující klimatickou změnou se stav lesů zhoršuje také jinde v Evropě a i zde musí řešit problémy s kůrovcem[^6]. Na tuto situaci se snaží reagovat například nová Lesnická strategie EU do roku 2030, která počítá s vysazením 3 mld. stromů, při plném respektování ekologických zásad, a navrhuje další kroky, které by zdraví lesů měly postupně zlepšit. Evropská komise již vytvořila plán s milníky ke splnění tohoto závazku, úspěšnost celého projektu však bude velké míry záviset na ochotě členských států Unie na tomto  cíli spolupracovat.
 
 ## Zdroje a poznámky
 
@@ -51,5 +49,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 
 [^11]: V rámci Národní inventarizace lesů (NIL) je za les považován také dočasně odlesněný pozemek, tzn. holé seče nebo kalamitní holiny. Tato definice nezohledňuje, jak je pozemek veden v katastru nemovitostí (a vzniká tak nesrovnalost oproti datům z ČSÚ) ani jak pestrý je místní ekosystém (takže jako les označuje i hustě sázenou smrkovou monokulturu bez jakéhokoliv podrostu).
 
-[^12]: https://www.kurovcoveinfo.cz/ 
+[^12]: https://www.kurovcoveinfo.cz/
+
+[^13]: Viz text [Co přináší nová Lesnická strategie EU do roku 2030?](https://faktaoklimatu.cz/explainery/lesnicka-strategie-eu)
 {% endcomment %}
