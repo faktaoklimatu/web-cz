@@ -7,35 +7,31 @@ published:     2021-10-25
 weight:        100.2
 tags-scopes:   [ cr ]
 tags-topics:   [ priroda ]
-caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a Olomoucký a Moravskoslezský kraj."
+caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a také Olomoucký a Moravskoslezský kraj."
 ---
 
 {% comment %}
-{:.perex}
-České lesy jsou v posledních letech těžce zasaženy kůrovcovou kalamitou. Kvůli ní se přešlo z plánovaných těžeb téměř výhradně na těžbu nahodilou, která se týká především jehličnatých dřevin (převážně smrku). V letech 2016–2020 se nejvíce lesa vytěžilo na Vysočině.
 
 {% include preview-box.html
-    title="Plocha lesa vytěžená v letech 2016–2020"
+    title="Plocha jehličnanů vytěžená v letech 2016–2020"
     text=""
     slug="lesy-tezba-plocha"
 %}
 
 ## Co je v grafice zobrazeno?
-- Plocha jehličnatého lesa vytěženého v letech 2016–2020 v jednotlivých krajích ČR, která pro celé Česko odpovídá obdélníku o rozloze cca 56 x 26 km[^1].   
-- Největší část této plochy připadá na Kraj Vysočina, dále následují Jihočeský, Olomoucký a Moravskoslezský kraj. Lesy jsou však v různých krajích různě velké a mají jiné poměrné zastoupení jehličnatých a listnatých dřevin, proto větší vytěžená plocha automaticky neznamená horší situaci v daném kraji. Přesto například Kraj Vysočina přišel v tomto období o celou pětinu svých jehličnanů. Více ukazuje infografika [Kolik jehličnatého lesa bylo vytěženo v krajích](https://faktaoklimatu.cz/infografiky/tezba-lesa-vyvoj), z níž je zároveň dobře patrný současný trend, kdy se kůrovcová kalamita pozvolna přesouvá ze severovýchodní části Česka na západ a jih.
+- Plocha jehličnatého lesa vytěženého v jednotlivých krajích v letech 2016–2020, která pro celé území ČR odpovídá obdélníku o rozloze cca 56 x 26 km[^1].   
+- Největší část této plochy připadá na Kraj Vysočina, dále následují Jihočeský, Olomoucký a Moravskoslezský kraj. Lesy jsou však v různých krajích různě velké a mají jiné poměrné zastoupení jehličnatých a listnatých dřevin, proto větší vytěžená plocha automaticky neznamená horší situaci v daném kraji. Přesto například Kraj Vysočina přišel v tomto období o celou pětinu svých jehličnatých lesů. Další informace o těžbě ukazuje infografika [Kolik jehličnatého lesa bylo vytěženo v krajích](https://faktaoklimatu.cz/infografiky/tezba-lesa-vyvoj), z níž je zároveň dobře patrný současný trend, kdy se kůrovcová kalamita pozvolna přesouvá ze severovýchodní části Česka na západ a jih.
 
-## Další data a souvislosti
-- S kůrovcovou kalamitou se potýká nejen Česko, ale i řada dalších evropských zemí[^2]. Hmyz přitom nezasahuje pouze smrkový porost, jiný druh kůrovce najdeme například na borovici. Napadený les je u nás ve většině případů vytěžen, takže vznikají rozsáhlé holiny, což zásadně mění charakter krajiny a má dopady na celý ekosystém. Obrovské jsou i hospodářské škody a lesníkům výrazně narůstají také náklady spojené s obnovou lesa. Tyto ztráty se zatím snaží co nejvíce kompenzovat stát, který rovněž přispívá na vysazování stromů, vzhledem k rychlosti ubývání našich lesů jsou to však miliardové položky ze státního rozpočtu[^3] a dlouhodobá udržitelnost tohoto postupu je přinejmenším diskutabilní.
-- Kůrovcová kalamita a s ní související ztráty lesního porostu se negativně promítají také do celkového množství emisí České republiky. Zatímco zdravý les napomáhá zachycování uhlíku z atmosféry a ukládá jej na dlouhou dobu ve dřevě, dnes se v našich lesích děje pravý opak: uschlé stromy jsou vytěženy a často spáleny, a i když zůstanou na místě (například v bezzásahových zónách), dochází k uvolňování CO2 do atmosféry při jejich rozkladu. Jinými slovy: lesy v Česku jsou dnes producentem emisí a nemálo přispívají k uhlíkové bilanci země[^2]. To kromě jiného představuje pro ČR problém v souvislosti s nařízením EU známým pod zkratkou LULUCF[^4], které ukládá členským státům povinnost kompenzovat emise skleníkových plynů spojené s využíváním půdy odstraněním stejného množství CO2 z atmosféry.      
-- K rozvoji kalamity v Česku přispěly kromě klimatické změny, dlouhodobě nevhodného způsobu hospodaření v lesích a špatného stavu lesních půd[^5] i další faktory – například nedostatek kvalifikované pracovní síly a techniky potřebné na těžbu a asanaci kůrovcového dříví, značná rozdrobenost vlastnické struktury lesů (na Vysočině je to více než 30 000 vlastníků s lesním majetkem o rozloze do 1 hektaru[^6]), nepružný systém veřejných zakázek a další.
-
-## Použitá metodika a původ dat
-
+## Vysvětlení pojmů a metodické poznámky
 - Les – v tomto textu a infografice vycházíme z definice lesa podle Organizace pro výživu a zemědělství (FAO)[^10], která se používá v rámci Národní inventarizace lesů (NIL). Chápeme zde les jako souvislý porost jehličnatých nebo listnatých stromů, který je charakteristický svým druhovým složením a vlastním mikroklimatem[^11].
 - Data o těžbě pocházejí z portálu [Kůrovcová mapa](https://www.kurovcovamapa.cz/), který je výsledkem spolupráce autorů monitorovacího projektu Kůrovcové INFO[^12] a Specializovaného pracoviště dálkového průzkumu země Ústavu pro hospodářskou úpravu lesů (ÚHÚL) ve Frýdku-Místku, které pracuje s družicovými snímky.
 
-## Zdroje a poznámky
+## Další data a souvislosti
+- **S kůrovcovou kalamitou se potýká nejen Česko, ale i řada dalších evropských zemí**[^2]. Hmyz přitom nezasahuje pouze smrkový porost, jiný druh kůrovce najdeme například na borovici. Napadený les je u nás ve většině případů vytěžen, takže vznikají rozsáhlé holiny, což zásadně mění charakter krajiny a má dopady na celý ekosystém. **Obrovské jsou i hospodářské škody a** lesníkům výrazně narůstají také **náklady spojené s obnovou lesa**. Tyto ztráty se zatím snaží co nejvíce kompenzovat stát, který rovněž přispívá na vysazování stromků, vzhledem k rychlosti ubývání našich lesů jsou to však miliardové položky ze státního rozpočtu[^3] a dlouhodobá udržitelnost tohoto postupu je přinejmenším diskutabilní.
+- Kůrovcová kalamita a s ní související ztráty lesního porostu se negativně promítají také do celkového množství emisí České republiky. Zatímco zdravý les napomáhá zachycování uhlíku z atmosféry a ukládá jej na dlouhou dobu ve dřevě, dnes se v našich lesích děje pravý opak: uschlé stromy jsou vytěženy a často spáleny, a i když zůstanou na místě (například v bezzásahových zónách), dochází k uvolňování CO2 do atmosféry při jejich rozkladu. Jinými slovy: **lesy v Česku jsou dnes producentem emisí a nemálo přispívají k uhlíkové bilanci země**[^2]. To kromě jiného představuje pro ČR problém v souvislosti s nařízením EU známým pod zkratkou LULUCF[^4], které ukládá členským státům povinnost kompenzovat emise skleníkových plynů spojené s využíváním půdy odstraněním stejného množství CO2 z atmosféry.      
+- **K rozvoji kalamity v Česku přispěly** kromě klimatické změny, dlouhodobě nevhodného způsobu hospodaření v lesích a špatného stavu lesních půd[^5] **i další faktory** – například **nedostatek kvalifikované pracovní síly a techniky** potřebné na těžbu a asanaci kůrovcového dříví, značná **rozdrobenost vlastnické struktury lesů** (na Vysočině je to více než 30 000 vlastníků s lesním majetkem o rozloze do 1 hektaru[^6]), **nepružný systém veřejných zakázek** a další.
 
+## Zdroje a poznámky
 [^1]: V českém prostředí se obvykle vyskytují údaje o těžbě měřené na objem (metry krychlové). Například Český statistický úřad (ČSÚ) uvádí, že v roce 2020 bylo vytěženo 35,8 milionu metrů krychlových dřeva bez kůry. Data z ČSÚ ovšem nejsou příliš přesná, protože ČSÚ eviduje dříví, které bylo dodáno, což není stejný objem, jaký ÚHÚL eviduje v lese. Navíc dochází k nepřiznání některých těžeb (kvůli daním) a v posledních letech případně i k hlášení většího objemu těžby, než kolik dříví bylo skutečně vytěženo (kvůli dotacím).
 
 [^2]: Důsledky kůrovcové kalamity na budoucnost lesnictví ve střední Evropě. Výzkumný ústav lesního hospodářství a myslivosti, v. v. i. https://www.vulhm.cz/dusledky-kurovcove-kalamity-na-budoucnost-lesnictvi-ve-stredni-evrope/
