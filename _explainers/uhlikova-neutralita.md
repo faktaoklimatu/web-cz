@@ -103,6 +103,11 @@ Analogií celkového počtu cigaret, které si kuřák dovolí vykouřit, je tzv
 
 V průběhu roku 2020 se k cíli dosažení uhlíkové neutrality do roku 2050 přihlásila Evropská unie, Japonsko, Jižní Korea a další země. Čína jako největší světový emitent se přidala s cílem zastavit nárůst emisí do roku 2030 a dosáhnout uhlíkové neutrality do roku 2060. A nedlouho poté (v dubnu 2021) se připojily i Spojené státy. Celkově se k cíli uhlíkové neutrality přihlásily státy, které dnes produkují tři čtvrtiny všech světových emisí. Vývoj je tedy v této době dynamický a dává i naději, že by se mohlo podařit do konce století klimatickou změnu zastavit. Analytická skupina [Climate Action Tracker](https://climateactiontracker.org/publications/global-update-climate-summit-momentum/) na základě svých výpočtů předvídá, že pokud se podaří sliby a závazky naplnit, mohlo by oteplení v roce 2100 dosáhnout 1,9–3,0 °C.[^13] Je to pozitivní zpráva: cíle Pařížské dohody, jež se dlouho zdály být spíše utopickým snem, přestávají nyní být zcela mimo náš dosah.
 
+{% include warning.html
+    title="Informace jsou platné k říjnu 2021"
+    text="Od té doby se k uhlíkové neutralitě přihlásily další státy (např. Indie)."
+%}
+
 {% include figure.html
     name="CAT_net-zero-targets.png"
     caption="K cíli uhlíkové neutrality se přihlásily státy, které v dnešní době produkují tři čtvrtiny světových emisí."

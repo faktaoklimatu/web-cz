@@ -34,6 +34,11 @@ Státy nemohou své emise skleníkových plynů snižovat přímo – nemají mo
 
 V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050 nebo 2060 odpovídají za tři čtvrtiny současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
 
+{% include warning.html
+    title="Informace jsou platné k říjnu 2021"
+    text="Od té doby se k uhlíkové neutralitě přihlásily další státy (např. Indie)."
+%}
+
 {% include figure.html
     name="podil-statu-na-emisich.svg"
     alt="Koláčový graf světových emisí skleníkových plynů. 72 % emisí je barevně odlišeno, jelikož pochází ze států, které se zavázaly směřovat k uhlíkové neutralitě."
