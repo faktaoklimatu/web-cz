@@ -43,7 +43,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 
 [^1]: [Zpráva o stavu lesa a lesního hospodářství České republiky v roce 2020](https://eagri.cz/public/web/file/688968/Zprava_o_stavu_lesa_2020_web.pdf). Ministerstvo zemědělství ČR, 2021.
 
-[^2]: Pro srovnání: během intenzivního odlesňování v Brazílii zmizelo 12 % lesa za dobu 20 let (zdroj: [Global Forest Watch](www.globalforestwatch.org/dashboards/country/BRA)). Na Vysočině to v případě jehličnatého lesa, který zde převládá, bylo téměř 20 % plochy za pouhých 5 let. 
+[^2]: Pro srovnání: během intenzivního odlesňování v Brazílii zmizelo 12 % lesa za dobu 20 let (zdroj: [Global Forest Watch](https://www.globalforestwatch.org/dashboards/country/BRA)). Na Vysočině to v případě jehličnatého lesa, který zde převládá, bylo téměř 20 % plochy za pouhých 5 let.
 
 [^3]: Viz text [Proč umírají české jehličnaté lesy?](https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu)
 
@@ -57,5 +57,4 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 
 [^11]: V rámci Národní inventarizace lesů (NIL) je za les považován také dočasně odlesněný pozemek, tzn. holé seče nebo kalamitní holiny. Tato definice nezohledňuje, jak je pozemek veden v katastru nemovitostí (a vzniká tak nesrovnalost oproti datům z ČSÚ) ani jak pestrý je místní ekosystém (takže jako les označuje i hustě sázenou smrkovou monokulturu bez jakéhokoliv podrostu).
 
-[^12]: [kurovcoveinfo.cz ](https://www.kurovcoveinfo.cz)
-
+[^12]: [kurovcoveinfo.cz](https://www.kurovcoveinfo.cz)
