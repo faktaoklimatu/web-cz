@@ -61,11 +61,34 @@ Na osmi stranách text postupně například (uvádíme ukázky pro vykreslení 
 
 - žádá země aktualizovat a posílit jejich národní kliamtické cíle do konce roku 2022, volá po odklonu od uhlí
 
-## Témata, která se v Glasgow rozhodovaly
+## Témata, která se v Glasgow rozhodovala
 
-### pravidla pro implementaci článku 6 Pařížské dohody
-### Klimatické finance
-###  
+### Klimatické finance (6)
+
+Rozvinuté státy se v roce 2009 na klimatické konferenci COP15 v Kodani zavázaly, že k roku 2020 budou každoročně posílat 100 miliard amerických dolarů rozvojovým státům, pojem [*klimatické finance*](/explainery/klimaticke-finance) odkazuje k tomuto závazku. Před COP26 vyspělé státy uznaly, že navzdory určitému pokroku (v roce 2019 klimatické finance dosáhly 79,6 miliard dolarů) cíl dosud nebyl naplněn[^61]. Pro rozvojové země jsou klimatické finance stěžejní, neboť jim umožňují adaptaci na probíhající klimatické změny a také investice do čistých technologií. Pokud by hospodářský růst rozvojových zemí probíhal stejně, jako v minulosti probíhal růst dnešních rozvinutých zemí – tedy především díky levným fosilním palivům, pak by dosažení cílů Pařížské dohody nebylo možné.
+
+Právě nesplněný závazek 100 miliard dolarů klimatických financí ročně se projevil atmosférou frustrace a nedůvěry ze strany rozvojových zemí na začátku COP26. Kromě samotné výše klimatických financí je důležitá také jejich kvalita (například zdali se jedná o granty nebo o půjčky), proto rozvojové usilovali o definici toho, co tyto finance skutečně mají zahrnovat. Vyspělé státy však návrh na vytvoření definice odmítly a jednání během COP26 se zaměřovala na dvě oblasti:
+
+- **Diskuze ohledně současného nenaplněného cíle**: UK předsednictví COP26 vydalo již před samotnou konferencí plán k dosažení tohoto cíle, kde odhaduje jeho naplnění do roku 2023[^61] [^62], některé nové závazky (např. od Japonska) však mohou vést ještě k rychlejšímu dosažení.
+- **Cíl pro klimatické finance po roce 2025**: Pařížská dohoda prodloužila stávající závazek o přispívání 100 miliard dolarů ročně do roku 2025, část jednání se proto věnovala dalšímu cíli klimatických financí po roce 2025. Vyjednávání o novém cíli bude pokračovat v následujících třech letech, rozvojové země usilují především o vědecké zhodnocení jejich potřeb (OSN odhaduje, že rozvojové země budou potřebovat 6 bilionů dolarů do roku 2030 ke splnění jen poloviny svých národních závazků[^63]). Rozvojové země také žádají, aby klimatické finance byly předvídatelné, dostupné, založené na grantech a především výrazně navýšeny. Bohaté země navrhují rozšíření, kdo do klimatických financí přispívá (současný závazek se netýká například Jižní Koreji ani bohatých ropných států Perského zálivu).
+
+V roce 2019 byly přibližně dvě třetiny klimatických financí určené na mitigaci a jen malá část na adaptaci, proto finální text Glasgow Climate Pact[^21] vybízí rozvinuté země, aby alespoň zdvojnásobili klimatické finance na adaptaci. Některé země v čele s Evropskou unií rovněž přislíbily nové finance do Adaptačního fondu. Ačkoli tyto nové závazky byly pouze stovky milionů dolarů, Adaptační fond uděluje finance přímo na adaptaci prostřednictvím grantů (jedná se tedy o "kvalitní" finance).
+
+Rozvojové státy také usilovaly, aby se třetím pilířem klimatických financí vedle mitigace a adaptace stala také **oblast ztrát a škod** (loss and damage), tento pojem označuje dopady klimatické změny, na které se již nelze adaptovat (například vesnice zničené při záplavách, zatopené pobřežní oblasti nebo zemědělské škody v důsledku sucha). Zejména ostrovní státy a zranitelné rozvojové žádaly, aby byly dostupné také finance na ztráty a škody, některé národy také chtějí usilovat o náhradu škod u soudů. Kvůli opozici ze strany bohatých států oblast ztrát a škod do klimatických financí zahrnuta nebyla. Přesto však došlo k určitému posunu ve vyjednávání a ze ztrát a škod se stalo plnohodnotné téma, o kterém se bude dále jednat na příštích konferencích.[^64]
+
+
+
+### Článek 6 Pařížské dohody
+
+Pařížská dohoda schválená na COP21 v Paříži je obecným dokumentem, ke kterému měla být konkrétní pravidla rozpracována během následujících klimatických konferencí. Na předchozí COP25 v Madridu se však stále nepodařilo dojednat pravidla pro implementaci Článku 6, který zavádí nové uhlíkové trhy a nastavuje tak rámec pro dobrovolnou spolupráci států při snižování emisí. Tento článek je zásadní částí Pařížské dohody, a proto panovaly obavy, že špatně navržená pravidla pro Článek 6 by mohla oslabit celou dohodu. **Po čtyřech letech však bylo konečně dosaženo dohody** a všechny zúčastněné strany musely učinit ústupky ze svých původních požadavků.
+
+Článek 6 obsahuje tři samostatné mechanismy pro dobrovolnou spolupráci států:
+
+- **Článek 6.2** umožňuje státům bilaterální obchodování prostřednictvím tzv. *mezinárodně obchodovatelných mitigačních výstupů* (ITMO, Internationally traded mitigation outcomes), které mohou představovat například emisní úspory v tunách CO<sub>2</sub> nebo elektřinu z obnovitelných zdrojů v kWh. Země také mohou propojovat svá schémata pro obchodování s emisemi nebo nakupovat kompenzace od jiných států pro dosažení vlastních mitigačních cílů.
+- **Článek 6.4** zavádí nový mezinárodní uhlíkový trh, kde bude moct veřejný i soukromý sektor obchodovat s emisními úsporami vytvořenými kdekoli na světě. 2 % obchodovaných úspor bude vždy automaticky zrušeno pro dosažení vyšší celkové mitigace, hodnota 5 % z dané transakce bude převedena do Adaptačního fondu, který bude získané prostředky rozdělovat formou grantů rozvojovým zemím.
+- **Článek 6.8** vytváří rámec pro klimatickou spolupráci mezi zeměmi, kde se nebude jednat o obchodování – například pro rozvojovou klimatickou pomoc.
+
+Vyjednávání se týkala především technických detailů fungování těchto nově zaváděných trhů: například za jakých podmínek mohou být uznávány kredity z Kjótského protokolu a jak se vyhnout dvojímu započítávání emisních úspor, zejména při obchodování podle článku 6.4. Ačkoli při bilaterálním obchodování podle článku 6.2 není rušení části úspor povinné (narozdíl od obchodování podle článku 6.4), země jsou silně vybízeny, aby tak učinily dobrovolně a aby zároveň věnovaly část prostředků jako klimatické finance na adaptaci[^64].
 
 
 ## Další dohody, které byly v Glasgow dojednány
@@ -90,9 +113,6 @@ Z hlediska odklonu od uhlí je významný i závazek Indie dosáhnout do roku 20
 
 ### Omezení emisí methanu
 
-### Klimatické finance
-
-### Mezinárodní trh s emisemi (článek 6)
 
 ## Zdroje
 
@@ -106,10 +126,9 @@ Z hlediska odklonu od uhlí je významný i závazek Indie dosáhnout do roku 20
 
 [^53]: https://yearbook.enerdata.net/coal-lignite/coal-world-consumption-data.html
 
+[^61]: UK COP26 Presidency. ["Climate Finance Delivery Plan: Meeting the US$100 Billion Goal"](https://ukcop26.org/wp-content/uploads/2021/10/Climate-Finance-Delivery-Plan-1.pdf) (2021).
+[^62]: OECD. ["Forward-looking Scenarios of Climate Finance Provided and Mobilised by Developed Countries in 2021-2025: Technical Note."](https://www.oecd.org/environment/forward-looking-scenarios-of-climate-finance-provided-and-mobilised-by-developed-countries-in-2021-2025-a53aac3b-en.htm) OECD Publishing, Paris (2021).
+[^63]: UNFCCC. ["Executive summary by the Standing Committee on Finance of the First report on the determination of the needs of developing country Parties related to implementing the Convention and the Paris Agreement."](https://unfccc.int/topics/climate-finance/workstreams/needs-report) UNFCCC, Standing Committee on Finance, Bonn (2021).
+[^64]: Carbon Brief. ["COP26: Key outcomes agreed at the UN climate talks in Glasgow."](https://www.carbonbrief.org/cop26-key-outcomes-agreed-at-the-un-climate-talks-in-glasgow)
 
-
-[^1]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem"](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52020DC0740) Zpráva komise Evropskému parlamentu a Radě, Evropská komise, Brusel (2020).
-[^2]: World Bank. ["State and Trends of Carbon Pricing 2020"](https://openknowledge.worldbank.org/handle/10986/33809) (May), World Bank, Washington, DC (2020).
-[^3]: High-Level Commission on Carbon Prices. ["Report of the High-Level Commission on Carbon Prices."](https://openknowledge.worldbank.org/handle/10986/32419) World Bank, Washington, DC (2017).
-[^4]: Evropská komise. ["Commission decision on the Union-wide quantity of allowances to be issued under the EU Emission Trading System for 2021"](https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf) Evropská komise, Brusel (2020).
 
