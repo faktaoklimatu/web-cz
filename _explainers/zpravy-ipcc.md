@@ -97,7 +97,7 @@ Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bud
 * Podrobné vysvětlení o procesu výběru autorů, posuzované literatuře a schvalovacích procesech viz [Oficiální web IPCC](https://www.ipcc.ch/assessment-report/ar6/)
 * Ǔdaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 
-České překlady shrnutí ke zprávám AR6
+### České překlady shrnutí ke zprávám AR6
 * [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_fyzikalni_zaklady/$FILE/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
 
 ### České překlady shrnutí ke zprávám AR5
