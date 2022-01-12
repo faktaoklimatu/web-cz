@@ -7,10 +7,10 @@ published:  2019-07-23
 weight:     104
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
-caption:    "Průměrná roční teplota v České republice narostla za posledních 60 let o 2,1 °C. Trendy v oteplování jednotlivých měsíců jsou však různé. Největší nárůst teplot je v lednu, červenci a srpnu – tyto měsíce se mezi roky 1961 až 2020 oteplily o více než 2,5 °C."
+caption:    "Průměrná roční teplota v České republice narostla za posledních 61 let o 2,04 °C. Trendy v oteplování jednotlivých měsíců jsou však různé. Nejvíce se oteplilo v prosinci, lednu, červenci a srpnu – tyto měsíce se mezi roky 1961 až 2021 oteplily o více než 2,7 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"
-data-our:   "https://docs.google.com/spreadsheets/d/1pNBmfQbz6QKAl9nLc5RnoLrJMFrCSxzk_KOY4Ns7xTY/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1teHfVP8ULNMucrfxx85PtkCT5F_JXgTlF2KOqWOndMA/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 ---
 
@@ -18,7 +18,7 @@ data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/
 
 {% include preview-box.html
     title="Průměrná roční teplota v ČR"
-    text="Průměrná roční teplota v ČR narostla od roku 1961 o 2,1 °C"
+    text="Průměrná roční teplota v ČR narostla od roku 1961 o 2 °C"
     slug="teplota-cr"
 %}
 
