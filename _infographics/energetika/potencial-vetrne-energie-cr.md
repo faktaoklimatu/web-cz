@@ -33,7 +33,7 @@ Pravá horní část infografiky definuje některé použité pojmy a ilustruje 
 
 **Instalovaný výkon** označuje maximální elektrický výkon, kterého může elektrárna v daný okamžik technicky dosáhnout. Výkon se udává ve <glossary id="w">wattech (W)</glossary> a jejich násobcích (kW, MW atd.). Větrné elektrárny mají typicky instalovaný výkon v řádu jednotek megawatt (MW).
 
-**Výroba** vyjadřuje množství elekřiny, kterou elektrárna vygeneruje v daném časovém úseku za daných vnějších podmínek. Výroba se typicky udává v násobcích watthodin (Wh). Typická roční výroba VTE v ČR je v řádu jednotek gigawatthodin (GWh). Pro srovnání, město Plzeň má roční spotřebu elektřiny přibližně 900 GWh, celková spotřeba elektřiny ČR v roce 2019 byla 67 terawatthodin (TWh).
+**Výroba** vyjadřuje množství elektřiny, kterou elektrárna vygeneruje v daném časovém úseku za daných vnějších podmínek. Výroba se typicky udává v násobcích watthodin (Wh). Typická roční výroba VTE v ČR je v řádu jednotek gigawatthodin (GWh). Pro srovnání, město Plzeň má roční spotřebu elektřiny přibližně 900 GWh, celková spotřeba elektřiny ČR v roce 2019 byla 67 terawatthodin (TWh).
 
 **Koeficient využití** vyjadřuje poměr mezi skutečnou výrobou elektřiny a elektřinou, která by byla hypoteticky vyrobena při nepřetržitém plném využití instalovaného výkonu za dané období. Průměrný koeficient ročního využití VTE v ČR je 23 % (v průměru za roky 2015–2020; pro srovnání, u solárních panelů je to kolem 12 %).
 
