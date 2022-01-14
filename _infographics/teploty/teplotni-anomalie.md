@@ -10,17 +10,16 @@ published:  2019-08-03
 weight:     100
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Planeta je nyní o 1,2 °C teplejší než v tzv. předindustriálním období, tedy v letech 1850–1900. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
+caption:    "Planeta je nyní o přibližně 1,2 °C teplejší než v tzv. předindustriálním období, tedy v letech 1850–1900. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "vyvoj-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/1PBBQyBb2hI1R8mTeXqPT5yOt0m2IQ6DBZRCG-ogYkZ8/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/18jMbivbphaj4wVandtF05A3YXf6F07QWXWsT0hKV2AI/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ] ]
 ---
 
 ## Co vidíme v grafu?
 
-Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 140 letech. Teplotní anomálie pro daný rok udává,
-o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě (podrobněji níže).
+Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 142 letech. Teplotní anomálie pro daný rok udává, o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě (podrobněji níže).
 
 Z grafu můžeme také vidět, že roky 2016 a 2020 byly nejteplejšími v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,24 °C. V první dvacítce nejteplejších let je pouze jeden (1998) z minulého století, všechny ostatní rekordní roky jsou ze století jednadvacátého. Nejteplejší měsíc byl únor 2016, s teplotní anomálií 1,60 °C. __Dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu__.
 
