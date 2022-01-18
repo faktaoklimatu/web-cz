@@ -20,7 +20,7 @@ data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.o
 
 ## Komentáře ke grafu
 
-* **Výroba elektřiny na osobu v České republice v roce 2019 byla 8 066 TWh, tedy výrazně více než průměry ve zobrazených regionech s výjimkou USA.** Česká republika je zároveň velký vývozce elektřiny, proto průměrná spotřeba elektřiny na osobu byla nižší, 6 891 TWh. I tato hodnota je více než dvojnásobná oproti světovému průměru.
+* **Výroba elektřiny na osobu v České republice v roce 2019 byla 8 066 kWh, tedy výrazně více než průměry ve zobrazených regionech s výjimkou USA.** Česká republika je zároveň velký vývozce elektřiny, proto průměrná spotřeba elektřiny na osobu byla nižší, 6 891 kWh. I tato hodnota je více než dvojnásobná oproti světovému průměru.
 * Celosvětově došlo mezi lety 2000 a 2019 k navýšení produkce elektřiny o 75 %, zároveň v tomto období došlo k nárůstu populace o 1,6 miliardy obyvatel. V přepočtu na osobu se výroba elektřiny zvýšila o 39 %, v absolutních hodnotách došlo k navýšení kapacit všech zdrojů výroby elektřiny s výjimkou jaderných. Podíl uhlí na výrobě elektřiny mírně klesl (z 37,9 % na 35,2 %), podíl jádra klesl ještě výrazněji (z 16,9 % na 10,5 %), naopak došlo ke zvýšení podílů zemního plynu (z 18,2 % na 23,5 %) a obnovitelných zdrojů (z 19,5 % na 27,3 %, především díky rozvoji větrných a solárních elektráren).
 * Z grafu jsou také patrné **trendy jednotlivých regionů**:
   * V **Evropské unii** se spotřeba elektřiny na osobu prakticky nemění, dochází však k výraznému nahrazování uhlí ve výrobě elektřiny obnovitelnými zdroji.
