@@ -28,5 +28,5 @@
     {%- else -%}{{num_infographics}} datasetů,
 {%- endcase -%}
 {%- endcapture -%}
-{{ stats | split:',' | join:', ' | trim }}
+{{ stats | split:',' | join:', ' | strip }}
 {%- endif -%}
