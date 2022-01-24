@@ -3,7 +3,7 @@ layout:        infographic
 title:         "Vývoj emisí v Evropské unii v letech 1990–2019"
 slug:          "emise-eu-vyvoj"
 redirect_from: "/emise-eu-vyvoj"
-published:     2022-01-20
+published:     2022-01-24
 weight:        76
 tags-scopes:   [ eu ]
 tags-topics:   [ emise, energetika ]
@@ -18,23 +18,28 @@ data-orig:  [
 
 * Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 * V infografice jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a emise N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub> a NF<sub>3</sub> vyjádřené v jednotkách ekvivalentu CO<sub>2</sub> (CO<sub>2</sub>eq). Tato jednotka zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný ohřívací efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
-* V levé části grafu jsou vyobrazeny absolutní emise na území EU v jednotkách CO<sub>2</sub>eq v průběhu posledních tří dekád. Jednotlivé oblasti lidské činnosti jsou barevně odlišeny. V pravé části je pak pro každou z těchto oblastí naznačena relativní změna v objemu emisí oproti roku 1990.
-* V roce 1990 činil objem emisí na území dnešní České republiky 5 miliard tun CO<sub>2</sub>eq. V roce 2019 to bylo 3,7 miliardy tun. To znamená, že během bezmála třiceti let klesly emise EU o 24 %. Celkové emise EU významněji klesají od roku 2007, tedy po globální finanční krizi, a to ve všech sektorech s výjimkou dopravy.
+* V levé části grafu jsou vyobrazeny absolutní emise Evropské unie (jde o emise EU-27, tj. zemí, které byly k roku 2021 členy EU) v jednotkách CO<sub>2</sub>eq v průběhu posledních tří dekád. Jednotlivé oblasti lidské činnosti jsou barevně odlišeny. V pravé části je pak pro každou z těchto oblastí naznačena relativní změna v objemu emisí oproti roku 1990.
+* V roce 1990 činil objem emisí na území dnešní Evropské unie 5 miliard tun CO<sub>2</sub>eq. V roce 2019 to bylo 3,7 miliardy tun. To znamená, že během bezmála třiceti let klesly emise EU o 24 %. Celkové emise EU významněji klesají od roku 2007, tedy po globální finanční krizi, a to ve všech sektorech s výjimkou dopravy.
+
+{% include preview-box.html
+    title="Jak si ve vývoji emisí stojí Česko?"
+    text="Obdobnou [infografiku](/infografiky/emise-cr-vyvoj) jsme vytvořili i pro Českou republiku."
+    slug="emise-cr-vyvoj"
+%}
 
 ## Co vidíme v jednotlivých sektorech
 
-* __Energetika:__ Objem emisí z energetického sektoru klesl oproti roku 1990 o 37 % na 900 milionů tun CO<sub>2</sub>eq ročně. Emise z energetiky začaly výrazněji klesat po roce 2007. V posledních letech pozorujeme jejich rychlejší pokles, který lze vzhledem k závazkům EU dosáhnout <glossary id="co2eq">klimatické neutrality</glossary> do roku 2050 očekávat i v budoucnu.  
+* __Energetika:__ Objem emisí z energetického sektoru klesl oproti roku 1990 o 37 % na 900 milionů tun CO<sub>2</sub>eq ročně. Emise z energetiky začaly výrazněji klesat po roce 2007. V posledních letech pozorujeme jejich rychlejší pokles, který lze vzhledem k závazku EU dosáhnout do roku 2050 <glossary id="co2eq">klimatické neutrality</glossary> očekávat i v budoucnu.  
 Emise v energetice pochází především ze spalování hnědého uhlí v elektrárnách, tudíž je možné je snižovat energetickými úsporami a rozvojem obnovitelných a nízkouhlíkových zdrojů energie.
 * __Doprava:__ Emise z dopravy vzrostly oproti roku 1990 o 33 % na 967 mil. tun CO<sub>2</sub>eq ročně. V detailním grafu napravo je po roce 2007 patrný dočasný pokles emisí v důsledku globální finanční krize a následné ekonomické recese. Od roku 2013 lze opět sledovat růst emisí. Emise skleníkových plynů v dopravě vznikají primárně spalováním fosilních paliv v motorech silničních dopravních prostředků. (V roce 2019 to bylo 82 % všech emisí z dopravního sektoru, 14 % tvořila letecká doprava.)  
 Snížit emise z dopravy je možné přechodem na alternativní druhy pohonu (např. na biometan, CNG, vodík nebo na elektřinu při souběžné transformaci energetiky), zvýšením podílu hromadné (vlakové a autobusové) dopravy a snížením počtu vozidel na silnicích. Objem silniční dopravy lze snížit zvýšením obsazeností vozidel (spolujízdou) či obecně snížením nutnosti dopravy (např. prací na dálku).
 * __Průmyslové procesy:__ Emise z průmyslových procesů klesly od roku 1990 o 26 % na 340 mil. tun CO<sub>2</sub>eq ročně. Jedná se o emise z procesů, při kterých dochází k uvolňování skleníkových plynů do atmosféry jinak než spalováním fosilních paliv – při výrobě chemikálií, cementu, železa a oceli apod.  
-Zatímco útlumem těžkého průmyslu došlo ke snížení emisí ze spalování fosilních paliv (viz níže), emise z (nespalovacích) průmyslových procesů spíše stagnují. Například emise z výroby skla, cementu, vápna nebo amoniaku a z petrochemie se pohybují na podobných úrovních jako na začátku devadesátých let. Dlouhodobě a setrvale rostou pouze emise z užívání chladicích látek, jež nahrazují dříve používané látky poškozující ozonovou vrstvu, které jsou dnes regulované Montrealským protokolem. Tyto emise vzrostly z nuly na 3,7 Mt CO<sub>2</sub>eq v roce 2019.
+Například emise z výroby cementu klesly od devadesátých let o téměř třicet procent. K poklesu dochází i v chemickém odvětví, kdy klesly mj. emise z výroby amoniaku 34 % či emise z výroby kyseliny dusičné o 89 % (ještě v roce 1990 dosahovaly hodnoty 46 Mt CO<sub>2</sub>eq). Naopak mírný nárůst pozorujeme u emisí z petrochemie. K poklesu dochází i u produkce železa a oceli (o 34 %) nebo produkce hliníku (o 86 %). Od devadesátých let výrazně vzrostly emise z užívání chladicích látek, jež nahrazují dříve používané látky poškozující ozonovou vrstvu, které jsou dnes regulované Montrealským protokolem. Tyto emise vzrostly z nuly na 88,6 Mt CO<sub>2</sub>eq v roce 2014. Od té doby dochází k jejich poklesu, přičemž v roce 2019 dosahovaly hodnoty 74,4 Mt CO<sub>2</sub>eq.
 * __Spalování v domácnostech, institucích a zemědělství:__ Emise klesly oproti roku 1990 o 26 % na 523 mil. tun CO<sub>2</sub>eq ročně. Jedná se o emise z topení a ohřevu vody (pokud energie není dodávána z teplárny), vaření apod. Také sem patří spalování pohonných hmot v zemědělství a lesnictví.
 * __Spalování v průmyslu a stavebnictví:__ Emise klesly o 42 % na 435 mil. tun CO<sub>2</sub>eq v roce 2019. Emise pocházejí ze spalování fosilních paliv pro potřeby průmyslu, typicky když je při výrobě potřeba něco zahřívat (při tavení, sušení, destilaci atd.).  
-K největšímu poklesu, o polovinu, došlo v první polovině devadesátých let zejména v důsledku ukončení energeticky náročných průmyslových provozů. Konkrétně emise ze spalování v těžkém průmyslu (výroba železa a oceli) klesly do roku 2000 o dvě třetiny a o deset let později se pohybovaly pod 10 % oproti úrovním z roku 1990. (Emise CO<sub>2</sub> z nespalovacích procesů při výrobě železa a oceli za stejné období klesly pouze o 29 %.)
+Například emise ze spalování v těžkém průmyslu (výroba železa a oceli) klesly do roku 2019 na polovinu.
 * __Zemědělství:__ Emise ze zemědělského sektoru klesly od roku 1990 o 21 % na 386 mil. tun CO<sub>2</sub>eq ročně. Emise pocházejí především z chovu hospodářských zvířat a z obdělávání půdy a s tím spojenými emisemi N<sub>2</sub>O.  
 K omezení emisí metanu ze zemědělství by vedlo snížení počtu chovaného dobytka (a s tím související snížení spotřeby hovězího masa a mléčných výrobků), změna nakládání se statkovými hnojivy (například jejich stabilizací v bioplynových stanicích) a méně intenzivní hnojení průmyslovými hnojivy. Omezení chovu dobytka však může mít i negativní dopad na kvalitu půdy, dostupnost přírodního hnojiva atd.  
-Právě snížení stavu chovaného dobytka se odráží v poklesu emisí, o téměř polovinu, v první polovině devadesátých let.
 * __Odpadové hospodářství:__ Emise z odpadového hospodářství klesají od poloviny 90. let. Do roku 2019 klesly o 34 % na 116 mil. tun CO<sub>2</sub>eq ročně. Produkují je především skládky odpadu, ze kterých do atmosféry uniká metan. Ten vzniká rozkladem biologicky rozložitelného materiálu (papíru, kartonu, textilií a bioodpadu) v tělese skládky.
 * __Jiné:__ Jedná se o emise, které nejsou zahrnuté v předchozích kategoriích. Velkou část tvoří emise z úniků plynů v důsledku těžby nebo jiných průmyslových aktivit. Emise setrvale klesají – od roku 1990 klesly o 58 % na 75 mil. tun CO<sub>2</sub>eq v roce 2019.
 
