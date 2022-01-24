@@ -7,8 +7,8 @@ published:  2020-06-01
 weight:     90
 tags-scopes: [ eu ]
 tags-topics: [ energetika, opatreni ]
-caption:    "Stav uhelného phase-outu v zemích EU ke konci dubna 2021. Hodnoty produkce elektřiny z uhlí jsou uváděné v kWh na osobu za rok."
-data-our:   "https://docs.google.com/spreadsheets/d/1oIeGtP4AFbNi3Dv-8AojfeptYoDYu0LGRaHEB4nPh2U"
+caption:    "Stav uhelného phase-outu v zemích EU ke konci ledna 2022. Hodnoty produkce elektřiny z uhlí jsou uváděné v kWh na osobu za rok."
+data-our:   "https://docs.google.com/spreadsheets/d/1uLijA3LFRBn-6V26g2iLkRupLiln3333uhhNW6A4OLg/edit?usp=sharing"
 data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["Europe Beyond Coal (termíny phase-outů)", "https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 
@@ -20,9 +20,9 @@ data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.o
 
 * **Podíl uhlí na výrobě elektřiny** – nalevo od údajů o výrobě z uhlí na osobu jsou zobrazeny hodnoty určující podíl elektřiny z uhlí na energetickém mixu daného státu. Např. v Polsku je tento podíl 74 %. Uhelný phase-out tak bude pro Polsko mnohem větší výzvou než např. pro Francii, kde v roce 2019 tvořila výroba z uhlí méně než 1 % z celkové produkce elektřiny.
 
-* **Stav uhelného phase-outu** – země jsou v přehledu barevně rozlišeny podle toho, jaký je jejich aktuální stav z hlediska uhelného phase-outu. V Belgii, Rakousku a Švédsku již byl phase-out dokončen a většina dalších evropských zemí má stanovený konkrétní termín, kdy se tak stane. V České republice a Slovinsku momentálně probíhají jednání o termínu a strategii dosažení uhelného phase-outu. V Česku tzv. Uhelná komise doporučila na konci roku 2020 ukončit využívání uhlí do roku 2038, avšak vláda o termínu dosud definitivně nerozhodla. Polsko a balkánské státy jednání na vládní úrovni zatím ani nezahájily. Mapový přehled v pravé části grafiky ukazuje rozdělení Evropy na bloky zemí dle jejich stavu.
+* **Stav uhelného phase-outu** – země jsou v přehledu barevně rozlišeny podle toho, jaký je jejich aktuální stav z hlediska uhelného phase-outu. V Belgii, Rakousku, Švédsku a Portugalsku již byl phase-out dokončen a všechny další země EU kromě Polska mají stanovený konkrétní termín, kdy se tak stane. V Česku tzv. Uhelná komise doporučila na konci roku 2020 ukončit využívání uhlí do roku 2038. Současná vláda se však v programovém prohlášení z ledna 2022 přihlásila k roku 2033. Ač Polsko podepsalo s těžařskými odbory dohodu o podpoře těžby uhlí do roku 2049, oficiální diskuze o termínu na národní úrovni stále chybí. Mapový přehled v pravé části grafiky ukazuje rozdělení Evropy na bloky zemí dle jejich stavu.
 
-* **Plánovaný termín uhelného phase-outu** – udává rok, ke kterému se dané země zavázaly k vyřazení uhlí ze svého energetického mixu, tj. nejzazší datum, kdy má dojít k odstavení poslední uhelné elektrárny. V případě Německa jsou uvedeny termíny dva. Je to dáno tím, že dle dohody zainteresovaných subjektů by Německo mělo opustit uhlí nejpozději do roku 2038, pokud to však okolnosti dovolí, stane se tak již o tři roky dříve.
+* **Plánovaný termín uhelného phase-outu** – udává rok, ke kterému se dané země zavázaly k vyřazení uhlí ze svého energetického mixu, tj. nejzazší datum, kdy má dojít k odstavení poslední uhelné elektrárny.
 
 ## Komentáře ke grafu
 
