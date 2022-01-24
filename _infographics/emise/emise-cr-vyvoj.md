@@ -21,6 +21,12 @@ data-orig:  [
 * V levé části grafu jsou vyobrazeny absolutní emise na území ČR v jednotkách CO<sub>2</sub>eq v průběhu posledních tří dekád. Jednotlivé oblasti lidské činnosti jsou barevně odlišeny. V pravé části je pak pro každou z těchto oblastí naznačena relativní změna v objemu emisí oproti roku 1990.
 * V roce 1990 činil objem emisí na území dnešní České republiky 200 mil. tun CO<sub>2</sub>eq. V roce 2018 to bylo 129 mil. tun. To znamená, že během bezmála třiceti let klesly emise ČR o 35,5 %. Většina tohoto poklesu, zhruba o čtvrtinu, však proběhla během devadesátých let. Od roku 2000 klesly celkové emise pouze o 14,4 %.
 
+{% include preview-box.html
+    title="Jak se emise vyvíjí v rámci celé EU?"
+    text="Obdobnou [infografiku](/infografiky/emise-eu-vyvoj) jsme vytvořili i pro Evropskou unii."
+    slug="emise-eu-vyvoj"
+%}
+
 ## Co vidíme v jednotlivých sektorech
 
 * __Energetika:__ Objem emisí z energetického sektoru klesl oproti roku 1990 o 10 % na 51,07 milionů tun CO<sub>2</sub>eq ročně. Emise z energetiky dlouhodobě spíše stagnují, a to i přesto, že v roce 2002 byla spuštěna Jaderná elektrárna Temelín. Emise v energetice pochází především ze spalování hnědého uhlí v elektrárnách, tudíž je možné je snižovat energetickými úsporami a rozvojem obnovitelných a nízkouhlíkových zdrojů energie.
