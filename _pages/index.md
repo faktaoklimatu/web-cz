@@ -14,7 +14,7 @@ slug: index
         </p>
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: COP26</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně diskutovaná opatření</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-green" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -28,11 +28,11 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">V listopadu se v Glasgow koná klimatická konference OSN, známá pod zkratkou COP26 (přeloženo znamená 26. konference smluvních stran rámcové dohody OSN o ochraně klimatu). Bude se vyjednávat napříkad o ambicích jednotlivých států snižovat emise nebo o finanční podpoře na adaptaci a mitigaci klimatické změny. Zde jsou posbírané materiály k jednáním.</p>
-    {% assign featured_slugs = "pozice-akteru-cop, akteri-klimatickych-jednani, zpoplatneni-emisi-svet, svetove-dohody, emisni-povolenky-ets, klimaticke-finance" | split: ", " %}
+    <p class="lead mb-0">Na úrovni Evropské unie aktuálně probíhá diskuze o balíčku legislativních návrhů nazvaném Fit for 55, jehož cílem je dosáhnout 55% snížení emisí do roku 2030 oproti roku 1990. Obsah balíčku přibližujeme ve dvou infografikách níže. Dále vysvětlujeme, jak fungují emisní povolenky a ukazujeme další způsoby zpoplatnění emisí ve světě. Konkrétní data o vývoji emisí skleníkových plynů v EU od roku 1990 do současnosti pak znázorňujeme v samostatné infografice. Většina zemí již rozhodla o termínu ukončení spalování a těžby uhlí, čtyři už tzv. uhelný phase-out dokončily. Konkrétní termíny zobrazujeme v infografice níže.</p>
+    {% assign featured_slugs = "fit-for-55, fit-for-55-opatreni, emisni-povolenky-ets, zpoplatneni-emisi-svet, emise-eu-vyvoj, uhelny-phaseout-eu" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
-    <p class="lead">Na téma aktuálních klimatických jednání se zaměřuje i druhá série našeho podcastu 2050. K jednáním na COP26 v Glasgow jsou relevantní i naše další materiály.</p>
+    <p class="lead">Na téma aktuálně diskutovaných klimatických opatření se zaměřujeme i v podcastu 2050. K podobám a způsobům dekarbonizace a snižování emisí jsou relevantní i naše další materiály.</p>
     <a href="https://2050podcast.cz/" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
     <a href="/temata/opatreni/" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Téma: Klimatická opatření</a>
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
