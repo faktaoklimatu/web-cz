@@ -14,7 +14,7 @@ slug: index
         </p>
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně diskutovaná opatření</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Fit for 55</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-green" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
