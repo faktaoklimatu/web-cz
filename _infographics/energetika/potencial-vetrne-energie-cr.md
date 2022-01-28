@@ -4,7 +4,7 @@ title:       "Potenciál větrné energie v ČR"
 slug:        "potencial-vetrne-energie-cr"
 redirect_from: "/potencial-vetrne-energie-cr"
 published:   2021-06-16
-weight:      75
+weight:      78
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Studie Ústavu fyziky atmosféry Akademie věd ČR odhaduje, že větrné elektrárny by kolem roku 2040 mohly na území Česka vyrábět až 18,8 TWh elektřiny, což by odpovídalo pokrytí zhruba 28 % spotřeby země v roce 2019."
