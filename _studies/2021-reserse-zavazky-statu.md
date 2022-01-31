@@ -89,7 +89,7 @@ items:
     share:    "4,52 %"
     netzero:  "(2060)"
     pledge30: "−29 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
-    other:    "Podmíněný cíl: −41 % ročních emisí oproti statu quo
+    other:    "Podmíněný cíl: −41 % ročních emisí oproti statu quo"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
     ndc-date: 2021-07-22
     links:
@@ -204,7 +204,7 @@ items:
     pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −23% až −0,1% změně emisí oproti r. 2019"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
     ndc-date: 2021-09-27
-    links: 
+    links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/south-africa"
         date:   2021-10-29
