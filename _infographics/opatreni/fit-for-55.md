@@ -102,4 +102,4 @@ Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zab�
 
 [^emise-co2]: Our World in Data: [CO<sub>2</sub> emissions by region](https://ourworldindata.org/co2-emissions#co2-emissions-by-region)
 
-[^eurobarometr]: [Eurobarometr 2021](https://europa.eu/eurobarometer/api/deliverable/download/file?deliverableId=75845)
+[^eurobarometr]: [Eurobarometr 2021](https://europa.eu/eurobarometer/api/deliverable/download/file?deliverableId=75845). Procento těch, co vnímají změnu klimatu jako závažný problém zahrnuje respondenty, kteří ji vnímají jako *velmi* nebo *dost* závažný problém. Procento souhlasících s výrokem zahrnuje respondenty, kteří s ním *rozhodně* nebos *spíše* souhlasí.
