@@ -111,7 +111,7 @@ items:
     share:    "1,70 %"
     netzero:  "(2060)"
     pledge30: "−29 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
-    other:    "Podmíněný cíl: −41 % ročních emisí oproti statu quo
+    other:    "Podmíněný cíl: −41 % ročních emisí oproti statu quo"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=IDN"
     ndc-date: 2021-07-22
     links:
