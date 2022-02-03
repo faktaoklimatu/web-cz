@@ -222,7 +222,7 @@ items:
   - country:  "Ostatní země"
     share:    "17,20 %"
 ---
-Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích CO<sub>2</sub>eq nad 1 % v roce 2018.[^edgar] Net-zero závazky v některých případech znamenají uhlíkovou neutralitu (zahrnující emise CO<sub>2</sub>eq), v některých pak klimatickou neutralitu (zahrnující emise všech skleníkových plynů). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDCs) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Závazky se průběžně mění, pro přehlednost jsme proto doplnili ke každému zdroji také datum poslední aktualizace, které se zobrazí při najetí myší na tlačítko zdroje.
+Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích CO<sub>2</sub> nad 1 % v roce 2018.[^edgar] Net-zero závazky v některých případech znamenají uhlíkovou neutralitu (zahrnující emise CO<sub>2</sub>), v některých pak klimatickou neutralitu (zahrnující emise všech skleníkových plynů). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDCs) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Závazky se průběžně mění, pro přehlednost jsme proto doplnili ke každému zdroji také datum poslední aktualizace, které se zobrazí při najetí myší na tlačítko zdroje.
 
 ### Poznámky k datům o emisích
 
