@@ -12,27 +12,27 @@ cover-source-license: "CC BY-NC-SA 2.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-sa/2.0/"
 cover-source-text: "Flickr Connect4Climate"
 cover-source-url: "https://flickr.com/photos/connect4climate/49242640988/"
-perex:       "Mezinárodní jednání o ochraně klimatu letos vyvrcholí summitem v Glasgow. Důležitou roli při těchto jednáních hrají nejen velké či bohaté státy,  ale také skupiny afrických států nebo aliance malých ostrovních států. A zatímco jedni hledají, jak emise snižovat co nejpohodlněji, pro jiné jde doslova o přežití jejich obyvatel. V tomto textu se podrobněji podíváme na rozdílné podmínky, se kterými do klimatických jednání vstupují jednotliví aktéři."
+perex:       "Státy světa se pravidelně setkávají v rámci mezinárodních jednání o ochraně klimatu. Zatím poslední velké setkání se konalo v listopadu roku 2021 ve skotském Glasgow. Důležitou roli při těchto jednáních hrají nejen velké či bohaté státy,  ale také skupiny afrických států nebo aliance malých ostrovních států. A zatímco jedni hledají, jak emise snižovat co nejpohodlněji, pro jiné jde doslova o přežití jejich obyvatel. V tomto textu se podrobněji podíváme na rozdílné podmínky, se kterými do klimatických jednání vstupují jednotliví aktéři."
 ---
 
 ## Kontext
 
 ### O čem se klimatická jednání vedou?
 
-Na základě Pařížské dohody státy budou řešit svoje **závazky na snižování emisí** (tzv. *NDC*), **mechanismy pro snižování emisí v mezinárodním obchodu** (trh s emisními povolenkami, uhlíkové clo apod.), spolupráci při mitigaci a adaptaci (např. možnosti sdílení technologií) a tzv. **klimatické finance**, tedy finanční podporu rozvojovým zemím. Tato témata jsou úzce provázána s otázkami mezinárodního obchodu či potravinové bezpečnosti, které jsou často předmětem jednání G7, G20 nebo světové obchodní organizace (*WTO*). Proto je vhodné jednání o ochraně klimatu chápat spíše jako součást dalších mezinárodních než jako oddělené téma.
+Na základě Pařížské dohody státy řeší svoje **závazky na snižování emisí** (tzv. *NDCs*), **mechanismy pro snižování emisí v mezinárodním obchodu** (trh s emisními povolenkami, uhlíkové clo apod.), spolupráci při mitigaci a adaptaci (např. možnosti sdílení technologií) a tzv. **klimatické finance**, tedy finanční podporu rozvojovým zemím. Tato témata jsou úzce provázána s otázkami mezinárodního obchodu či potravinové bezpečnosti, které jsou často předmětem jednání G7, G20 nebo světové obchodní organizace (*WTO*). Proto je vhodné jednání o ochraně klimatu chápat spíše jako součást dalších mezinárodních než jako oddělené téma.
 
 ### Jak mohou státy snižovat emise skleníkových plynů?
 
 Státy nemohou své emise skleníkových plynů snižovat přímo – nemají moc zastavit průmyslovou výrobu nebo zakázat lidem topit. Státy ale mohou ovlivnit emise skleníkových plynů několika nepřímými způsoby, které pro své úspěšné fungování často potřebují mezinárodní spolupráci:
 
-- **Přímá nařízení, zákazy a regulace.** Státy mohou například stanovit limity těžby uhlí, standardy pro emise motorových vozidel a účinnost spotřebičů, nebo nařídit bankám evidovat uhlíkovou stopu investic. Státy často snaží nastavení pravidel a regulací koordinovat.
+- **Přímá nařízení, zákazy a regulace.** Státy mohou například stanovit limity těžby uhlí, standardy pro emise motorových vozidel a účinnost spotřebičů, nebo nařídit bankám evidovat uhlíkovou stopu investic. Státy se často snaží nastavení pravidel a regulací koordinovat.
 - **Daně a další finanční nástroje.** Skrze daně či emisní povolenky mohou státy zpoplatnit vypouštění skleníkových plynů. Státy se snaží vytvořit trh s emisními povolenkami nebo zavádějí clo pro výrobky ze zemí, které nemají emise zpoplatněné.
 - **Investice a infrastrukturní projekty.** Státy mohou financovat nebo finančně zvýhodnit například budování obnovitelných zdrojů energie nebo sítě dobíjecích stanic pro elektromobily. Rozvojové státy potřebují na takové investice peníze, které pomocí mezinárodních fondů poskytují z velké části rozvinuté státy, z menší části soukromé firmy.
 - **Přehledné prostředí pro soukromé subjekty.** Státy mohou deklarovat jasné cíle, vypracovat plány a zpřístupňovat data, a vytvářet tak předvídatelné podnikatelské prostředí, ve kterém firmy mohou svůj byznys rozvíjet příznivým způsobem.
 
-### Co se změnilo od předchozí konference COP25?
+### Co se změnilo od konference COP25 v Madridu?
 
-V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně do roku 2060 či 2070 (u některých méně vyspělých zemí) odpovídají za více než 90 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
+V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně do roku 2060 či 2070 (u některých méně vyspělých zemí) odpovídají za více než 90 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
 
 {% include figure.html
     name="podil-statu-na-emisich.svg"
@@ -45,7 +45,7 @@ V roce 2021 se připravujeme na klimatickou konferenci COP26 v **Glasgow** a př
 
 {% include preview-box.html
     title="Kartičky aktérů klimatických jednání"
-    text="Pozice jednotlivých aktérů v klimatických jednáních jsme zpracovali také ve formě kartiček k tisku. Stáhnout si je můžete ve formátu PDF:
+    text="Pozice jednotlivých aktérů v klimatických jednáních jsme zpracovali také ve formě kartiček k tisku. Uvedená data jsou aktuální k říjnu 2021. Stáhnout si je můžete ve formátu PDF:
 
 {:.text-center}
 <a class=\"btn btn-primary\" href=\"/assets-local/files/karticky-pozice-akteru.pdf\" target=\"_blank\"><i class=\"fas fa-fw fa-file-pdf\"></i> Stáhnout kartičky aktérů</a>
@@ -81,7 +81,7 @@ Evropská unie je společně s Velkou Británií světovým lídrem v úsilí o 
 
 Evropská unie nedávno posílila své klimatické ambice a zavázala se ke **snížení emisí o 55 % do roku 2030** (oproti roku 1990) a k **dosažení uhlíkové neutrality do roku 2050**. Stejný termín si stanovila i Velká Británie, přičemž její emisní závazky jsou 68% snížení do roku 2030 a 78% do roku 2035 (oproti roku 1990). Některé evropské státy usilují o ještě k rychlejší dekarbonizaci (Finsko do roku 2035, Rakousko a Island do roku 2040, Německo a Švédsko do roku 2045) a často také doplňují emisní povolenky o národní uhlíkovou daň, která umožňuje zahrnout další sektory ekonomiky. V přípravě na konferenci COP26 v Glasgow se Británie také zavázala navýšit své klimatické finance určené na podporu rozvojových zemí na 11,6 miliard liber ročně (od roku 2025) a plánuje plánuje bezemisní výrobu elektřiny do 2035.[^21] Je však potřeba zdůraznit, že spolu s dalšími rozvinutými regiony světa je Evropa zodpovědná za převážné množství emisí CO<sub>2</sub> v atmosféře, a na probíhající klimatické změně tak měla mnohem větší podíl než chudé země v jiných částech světa.
 
-Klimatické cíle a dosavadní úsilí Evropy a Velké Británie hodnotí iniciativa Climate Action Tracker jako *téměř dostatečné* k naplnění Pařížské dohody.
+Klimatické cíle a dosavadní úsilí EU a Velké Británie hodnotí iniciativa Climate Action Tracker jako [*nedostatečné*](https://climateactiontracker.org/countries/eu/) v případě EU a [*téměř dostatečné*](https://climateactiontracker.org/countries/uk/) v případě Velké Británie k naplnění Pařížské dohody.
 
 ## USA
 
@@ -166,7 +166,7 @@ Pro Indii je zásadní výzvou **eliminace energetické chudoby** a dosažení d
 
 #### Současné úsilí o ochranu klimatu
 
-Indie je jednou z nemnoha zemí, která se zatím nepřihlásila k cíli uhlíkové neutrality – pouze se zavázala **nepřekročit emise odpovídající emisím na osobu rozvinutých zemí a do roku 2030 snížit své emise na jednotku HDP o třetinu** (oproti roku 2005). Je kritizována za snahu dále navýšit výrobu elektřiny z uhlí a jeho lokální těžbu, nicméně současná spotřeba elektřiny na osobu je v Indii 1 MWh za rok, což je 6krát méně než v EU a 12krát méně než v USA. Indie se ovšem snaží i o rozvoj obnovitelných zdrojů (od roku 2010 například vybírá uhelnou daň do státního fondu pro čistou energii[^52]). **Za poslední dekádu vzrostla výroba ze slunce a větru o 550 %** (oproti 75% růstu výroby z uhlí) a pokrývá dnes téměř 10 % domácí spotřeby elektřiny.
+Indie se přihlásila k závazku dosáhnout uhlíkové neutrality do roku 2070 v rámci COP26 v Glasgow. Dále se zavázala **nepřekročit emise odpovídající emisím na osobu rozvinutých zemí a do roku 2030 snížit své emise na jednotku HDP o třetinu** (oproti roku 2005). Je kritizována za snahu dále navýšit výrobu elektřiny z uhlí a jeho lokální těžbu, nicméně současná spotřeba elektřiny na osobu je v Indii 1 MWh za rok, což je 6krát méně než v EU a 12krát méně než v USA. Indie se ovšem snaží i o rozvoj obnovitelných zdrojů (od roku 2010 například vybírá uhelnou daň do státního fondu pro čistou energii[^52]). **Za poslední dekádu vzrostla výroba ze slunce a větru o 550 %** (oproti 75% růstu výroby z uhlí) a pokrývá dnes téměř 10 % domácí spotřeby elektřiny.
 
 Klimatické cíle a dosavadní úsilí Indie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/india/) jako *velmi nedostatečné*.
 
@@ -282,11 +282,11 @@ Většina této oblasti spadá do horkého pouštního podnebí, kde srážky ne
 
 #### Výzvy a příležitosti
 
-**Významný podíl na ekonomice těchto států tvoří těžba a vývoz fosilních paliv**. Proto dosud nebyly v řešení klimatické změny příliš aktivní, přestože její dopad na ně bude významný. **Některé země již usilují o transformaci ekonomiky, aby se jejich závislost na fosilních palivech snížila** (např. Omán), a zavádějí adaptační opatření zaměřená především na dopad spojený s vyššími teplotami a nedostatkem srážek. Podnebí v tomto regionu je zároveň příležitostí k využívání solární energie – nejvíce elektráren se staví v Saudské Arábii a SAE. Investice do obnovitelné elektřiny vedou k diverzifikaci hospodářství a ke snížení spotřeby vody. V budoucnu mohou tyto státy **využít levné solární elektřiny také k výrobě zeleného vodíku a tím nahradit příjmy z vývozu ropy**.
+**Významný podíl na ekonomice těchto států tvoří těžba a vývoz fosilních paliv**. Proto dosud nebyly v řešení klimatické změny příliš aktivní, přestože její dopad na ně bude významný. **Některé země již usilují o transformaci ekonomiky, aby se jejich závislost na fosilních palivech snížila** (např. Omán), a zavádějí adaptační opatření zaměřená především na dopad spojený s vyššími teplotami a nedostatkem srážek. Podnebí v tomto regionu je zároveň příležitostí k využívání solární energie – nejvíce elektráren se staví v Saudské Arábii a Spojených arabských emirátech. Investice do obnovitelné elektřiny vedou k diverzifikaci hospodářství a ke snížení spotřeby vody. V budoucnu mohou tyto státy **využít levné solární elektřiny také k výrobě zeleného vodíku a tím nahradit příjmy z vývozu ropy**.
 
 #### Současné úsilí o ochranu klimatu
 
-**Klimatické závazky tohoto regionu jsou zcela nedostatečné**. Zdejší země patří mezi státy s nejvyššími emisemi na osobu z celého světa a v budoucnu jejich emise pravděpodobně dále porostou. **Írán a Irák dosud neratifikovaly Pařížskou dohodu**. Současná opatření se zpravidla omezují na adaptaci (např. zajištění dostatku pitné vody) a na podporu obnovitelných zdrojů elektřiny. Přesto některé státy stále finančně podporují i fosilní zdroje. **Spojené arabské emiráty se jako jediný stát z regionu nedávno přihlásily k uhlíkové neutralitě do roku 2050**.
+**Klimatické závazky tohoto regionu jsou zcela nedostatečné**. Zdejší země patří mezi státy s nejvyššími emisemi na osobu z celého světa a v budoucnu jejich emise pravděpodobně dále porostou. **Írán dosud neratifikoval Pařížskou dohodu**. Současná opatření se zpravidla omezují na adaptaci (např. zajištění dostatku pitné vody) a na podporu obnovitelných zdrojů elektřiny. Přesto některé státy stále finančně podporují i fosilní zdroje. **K uhlíkové neutralitě se v regionu přihlásily Spojené arabské emiráty (do roku 2050), Saúdská Arábie a Bahrajn (oba státy do roku 2060).**.
 
 ## Japonsko a Jižní Korea
 
@@ -342,7 +342,7 @@ K hlavním zdrojům emisí patří rozsáhlé (často nelegální) odlesňován�
 
 #### Současné úsilí o ochranu klimatu
 
-Brazílie se zavázala ke **snížení emisí skleníkových plynů o 43 % do roku 2030** (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu **jde ve skutečnosti o významné oslabení staršího cíle**.[^112] Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit.
+Brazílie se zavázala ke **snížení emisí skleníkových plynů o 43 % do roku 2030** (oproti roku 2005). V nejnovějším prohlášení je sice tento závazek formálně potvrzen, ale kvůli změně metodiky výpočtu **jde ve skutečnosti o významné oslabení staršího cíle**.[^112] Také není jasné jak započítávat emise související s nelegálním odlesňováním a nejnovější prohlášení Brazílie také nijak nezmiňují snahu zrychlující odlesňování zastavit. Co se týče uhlíkové neutrality, Brazílie se přihlásila k jejímu dosažení do roku 2050.
 
 Klimatické cíle a dosavadní úsilí Brazílie hodnotí iniciativa [Climate Action Tracker](https://climateactiontracker.org/countries/brazil/) jako *velmi nedostatečné*.
 
@@ -360,7 +360,7 @@ Bezprizorné odkazy:
 
 [^1]: Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější** (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index).
 [^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz infografika  [Emise států přepočené na osobu](https://faktaoklimatu.cz/infografiky/emise-svet-na-osobu)
-[^3]: Mezi lety 2010 – 2018 přispívalo ČR do fondů průměrně 158 milionů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004 % HDP. Rozvojové země běžně přispívají okolo 0,04 % HDP. (viz [FORS:Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf))
+[^3]: Mezi lety 2010–2018 přispívalo ČR do fondů průměrně 158 milionů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004 % HDP. Rozvojové země běžně přispívají okolo 0,04 % HDP. (viz [FORS:Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf))
 [^4]: [UNFCCC: List of recent climate funding announcements](https://unfccc.int/list-of-recent-climate-funding-announcements)
 [^5]: Carbon Brief: [Key outcomes agreed at the UN climate talks in Madrid](https://www.carbonbrief.org/cop25-key-outcomes-agreed-at-the-un-climate-talks-in-madrid)
 
