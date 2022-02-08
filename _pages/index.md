@@ -32,8 +32,8 @@ slug: index
     {% assign featured_slugs = "fit-for-55, fit-for-55-opatreni, emisni-povolenky-ets, zpoplatneni-emisi-svet, emise-eu-vyvoj, uhelny-phaseout-eu" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
-    <p class="lead">Na téma aktuálně diskutovaných klimatických opatření se zaměřujeme i v podcastu 2050. K podobám a způsobům dekarbonizace a snižování emisí jsou relevantní i naše další materiály.</p>
-    <a href="https://2050podcast.cz/" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
+    <p class="lead">Na téma aktuálně diskutovaných klimatických opatření v balíčku Fit for 55 se zaměřujeme i v podcastu 2050. K podobám a způsobům dekarbonizace a snižování emisí jsou relevantní i naše další materiály.</p>
+    <a href="https://2050podcast.cz/epizody/19-fit-for-55" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
     <a href="/temata/opatreni/" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Téma: Klimatická opatření</a>
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
   </div></div>
