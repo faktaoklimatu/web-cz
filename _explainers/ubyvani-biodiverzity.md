@@ -98,9 +98,9 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 
 [^11]: Vnitřní moře je takové, které je téměř zcela obklopeno pevninou (v Evropě například Středozemní či Baltské). Jiné je tzv. okrajové moře na okraji oceánu, které takto obklopeno není (například Severní moře).
 
-[^12]: Viz Rostlinolékařský portál: [https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c56f9c5%7Cpestovani] a [https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c448fc8%7Cpestovani]
+[^12]: Viz Rostlinolékařský portál: [Pěstební opatření – řepka](https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c56f9c5%7Cpestovani) a [Pěstební opatření – kukuřice](https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c448fc8%7Cpestovani)
 
-[^13]: [https://www.hnutiduha.cz/aktualne/pesticidy-zustavaji-ve-vode-i-potravinach-problemem-je-nevhodne-pestovani-repky-nebo]
+[^13]: Viz [Pesticidy zůstávají ve vodě i potravinách, problémem je nevhodné pěstování řepky nebo kukuřice](https://www.hnutiduha.cz/aktualne/pesticidy-zustavaji-ve-vode-i-potravinach-problemem-je-nevhodne-pestovani-repky-nebo).
 
 [^14]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 30.
 
