@@ -92,7 +92,7 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 
 [^8]: Williams, D.R., Clark, M., Buchanan, G.M. *et al.* Proactive conservation to prevent habitat losses to agricultural expansion. *Nat Sustain* __4,__ 314–322 (2021). [doi:10.1038/s41893-020-00656-5](https://doi.org/10.1038/s41893-020-00656-5)
 
-[^9]: V angličtině se pro ohrožené oblasti s největší biologickou rozmanitostí používá pojem "biodiversity hotspot" (horká místa biodiverzity). Celkem je takto označeno 36 oblastí světa, viz [https://en.wikipedia.org/wiki/Biodiversity_hotspot]
+[^9]: V angličtině se pro ohrožené oblasti s největší biologickou rozmanitostí používá pojem "biodiversity hotspot" (horká místa biodiverzity). Celkem je takto označeno 36 oblastí světa, viz [en.wikipedia: Biodiversity hotspot](https://en.wikipedia.org/wiki/Biodiversity_hotspot)
 
 [^10]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 28.
 
