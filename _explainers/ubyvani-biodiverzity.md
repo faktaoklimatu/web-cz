@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Proč příroda v současné době rychle přichází o svou rozmanitost?"
+title:       "Proč dnes příroda tak rychle přichází o svou rozmanitost?"
 slug:        "ubyvani-biodiverzity"
 published:   2022-01-19
 author:      "Jiří Lněnička, konzultace Vojtěch Kotecký"
@@ -12,22 +12,22 @@ cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url: "https://unsplash.com/photos/OWwK_0_EnxY"
-perex:       "Jsme přímými svědky procesu, kdy život na Zemi rychle ztrácí svou pestrost -- navždy mizí různé druhy rostlin, živočichů i hub a mnoha dalších také ubývá. Tempo tohoto vymírání je přitom o jeden až dva řády rychlejší než v posledních deseti milionech let. Co přesně se děje a jaké jsou hlavní příčiny tohoto procesu ve světě i v Česku, vysvětluje následující explainer."
+perex:       "Jsme přímými svědky procesu, kdy život na Zemi s nebývalou rychlostí ztrácí svoji pestrost -- navždy mizí různé druhy rostlin, živočichů i hub a kvapem ubývá mnoha dalších. Tempo tohoto vymírání je přitom o jeden až dva řády rychlejší než v posledních deseti milionech let. Co přesně se děje a jaké jsou hlavní příčiny tohoto procesu ve světě i v Česku, vysvětluje následující explainer."
 ---
 
-## Co je biodiverzita a co znamená, že ubývá?
+## Co je biodiverzita a co znamená, že jí ubývá?
 
 - __Biodiverzita__ (či biologická rozmanitost) zahrnuje všechny druhy života, které najdeme na určitém místě -- tedy živočichy, rostliny, houby a mikroorganismy, kteří tu společně žijí a jsou navzájem propojeni nejrůznějšími vztahy. Každý z nich přitom nějak podporuje rovnováhu celého systému a pokračování života v něm.[^1] V nejširším smyslu slova označuje biodiverzita pestrost živého světa na Zemi, stejně tak je ale možné zkoumat rozmanitost života v určitém regionu (třeba na Šumavě) nebo i v malém měřítku (například v rybníčku u lesa).   
 
-- __Biotop__ označuje prostředí, které k životu potřebuje jeden konkrétní druh (biotopem konipasa horského jsou rychle tekoucí vodní toky). Tento pojem se používá také pro charakteristický typ vegetace: příkladem mohou být třeba říční rákosiny nebo horské trojštětové louky.[^2] Druhy jsou závislé na prostředí, kde žijí, proto když uvažujeme o biodiverzitě, je třeba dívat se na celek spíše než izolovaně na jednotlivé druhy. Žádný druh neexistuje sám o sobě, ale jen díky jemnému předivu vztahů s jinými druhy a díky podmínkám neživé přírody. V případě, že biotop zanikne, velká část druhů přijde o místo, které potřebuje k životu. Ztráta jednoho či několika druhů nemusí být ještě katastrofou pro celý biotop, nicméně často znamená jeho významnou proměnu či ohrožení, zejména pokud jde o druh z hlediska biotopu klíčový – třeba mangrovníky v mangrovových pobřežních lesích, v našich podmínkách může být příkladem buk (biotop bučin).  
+- __Biotop__ označuje prostředí, které k životu potřebuje určitý konkrétní druh (například biotopem konipasa horského jsou rychle plynoucí vodní toky). Tento pojem se rovněž používá pro charakteristický typ vegetace: příkladem mohou být třeba říční rákosiny nebo horské trojštětové louky.[^2] Fauna i flóra je závislá na prostředí, kde žije, proto když uvažujeme o biodiverzitě, je třeba dívat se na celek spíše než izolovaně na jednotlivé druhy. Žádný druh neexistuje sám o sobě – žít může jen díky jemnému předivu vztahů s jinými druhy a díky podmínkám neživé přírody. V případě, že biotop zanikne, velká část druhů přijde o místo, které ke svému životu potřebuje. Ztráta jednoho či několika druhů nemusí být ještě katastrofou pro celý biotop, nicméně často znamená jeho významnou proměnu či ohrožení, zejména pokud jde o druh z hlediska biotopu klíčový – třeba mangrovníky v mangrovových pobřežních lesích. V našich podmínkách může být příkladem buk lesní, zásadní pro biotop bučin (jejich velká část byla u nás v 19. a 20. století nahrazena smrkovými monokulturami).  
 
-Pestrosti života na Zemi v současné době rychle ubývá. Nejde však jen o __vymírání jednotlivých druhů__ (například vymřel pták dronte mauricijský), __snižuje se také celková druhová pestrost v přírodě a dochází ke stírání rozdílů mezi různými místy__. To jsou tři různé aspekty ubývání biodiverzity, které se dějí na mnoha úrovních -- od té globální až po rozměry v řádu čtverečních metrů. Ve všech případech jsou nicméně důsledky stejné: živý svět se postupně stává chudším, monotónnějším a často i zranitelnějším vůči náhlým změnám podmínek.[^3]
+Biodiverzity na Zemi v současné době rychle ubývá. Nejde však jen o __vymírání jednotlivých druhů__ (vyhynul například pták dronte mauricijský, známý též jako dodo), __snižuje se také celková druhová pestrost v přírodě a dochází ke stírání rozdílů mezi různými místy__. To jsou tři různé aspekty ubývání biodiverzity, které se dějí na mnoha úrovních -- od té globální až po rozměry v řádu čtverečních metrů. Ve všech případech jsou nicméně důsledky stejné: živý svět se postupně stává chudším, monotónnějším a často i zranitelnějším vůči náhlým změnám podmínek.[^3]
 
-Probíhající ubývání biodiverzity je dobře pozorovatelné, zejména pak v menším měřítku: například v určitém regionu, v jednom údolí v horách, ve vodách jezera nebo třeba na kousku louky. Nejčastěji vědci prostě druhy spočítají, existují však i sofistikovanější metriky, které sledují například relativní vyrovnanost mezi různými druhy -- les, kde je stejně smrků, buků a jedlí (od každého druhu po třetině), potom nemá stejnou biodiverzitu stromů jako ten, kde je 90 % smrků a po 5 % buků a jedlí.
+Tento proces je dobře pozorovatelný, zejména pak v menším měřítku: například v určitém regionu, v jednom údolí v horách, ve vodách jezera nebo třeba na kousku louky. Nejčastěji vědci prostě druhy spočítají, existují však i sofistikovanější metriky, které sledují například relativní vyrovnanost mezi různými druhy -- les, kde je stejně smrků, buků a jedlí (od každého druhu po třetině), potom nemá stejnou biodiverzitu stromů jako ten, kde je 90 % smrků a po 5 % buků a jedlí.
 
 ## Jaké je současné tempo ubývání biodiverzity?
 
-Zatím bylo na světě objeveno asi 1,5 milionu druhů živočichů, rostlin nebo hub a je pravděpodobné, že několikrát tolik druhů dosud neznáme. Každý rok se také najdou tisíce nových druhů (většinu z toho tvoří hmyz). Různé druhy též odjakživa vznikají a mizí. Odhaduje se však, že __současné tempo vymírání je o jeden nebo dva řády rychlejší, než kolik činil průměr v minulých 10 milionech let__. Jinými slovy: druhy dnes mizí deseti-, ba možná stonásobně rychleji.[^4]
+Zatím bylo na světě objeveno asi 1,5 milionu druhů živočichů, rostlin nebo hub a je pravděpodobné, že několikrát tolik druhů dosud neznáme. Každý rok se také najdou tisíce nových druhů (většinu z toho tvoří hmyz). Různé druhy též odjakživa vznikají a mizí. Vědci však odhadují, že __současné tempo vymírání je o jeden nebo dva řády rychlejší, než kolik činil průměr v minulých 10 milionech let__. Jinými slovy: druhy dnes mizí deseti-, ba možná stonásobně rychleji.[^4]
 
 __Mizí především specializovanější nebo náročnější druhy__. Krajině více a více dominují přizpůsobiví generalisté, kteří dovedou žít ledaskde. Navíc v ní ubývají specifické skupiny, které přírodní svět z velké části utvářely (a přímo či nepřímo tvořily podmínky pro život mnoha dalších druhů): velké staré stromy nebo velcí savci jako bizoni, vlci, sloni a další.
 
@@ -37,10 +37,10 @@ V živočišné říši je dnes vyhubením více či méně ohrožena zhruba sed
 Na ztrátách biodiverzity se podílí těchto pět hlavních faktorů:
 
 1. __Ubývání biotopů__ -- především v důsledku intenzivního zemědělství a s ním spojených změn v krajině (například kácení pralesů kvůli novým polím a plantážím)
-2. __Nadměrná exploatace__, tedy intenzivní lov savců, ryb a dalších živočichů -- mnohé druhy jsou proto dnes ohrožené[^5]
+2. __Nadměrná exploatace__, tedy intenzivní lov savců, ryb a dalších živočichů -- mnohé druhy jsou proto dnes v ohrožení[^5]
 3. __Vysoká míra znečištění__ daná nadměrnými dávkami hnojiv a používáním jedů proti škůdcům a plevelům
 4. __Šíření nepůvodních druhů__ -- ty konkurují původní fauně a flóře a často ji vytlačí či vyhubí
-5. __Klimatická změna__ -- nejvíce ohroženy jsou druhy v neobvyklých klimatických podmínkách
+5. __Klimatická změna__ -- nejvíce ohroženy jsou druhy v neobvyklých klimatických podmínkách (viz níže)
 
 ### Ubývání biotopů
 
@@ -56,25 +56,27 @@ Většinou si ji spojujeme s pytlačením slonů či nosorožců nebo s pašová
 
 __Velké dávky dusíku a fosforu, většinou ze zemědělských hnojiv__, jež stékají z polí, snižují pestrost života v řekách, jezerech a především vnitřních mořích.[^11] Tento proces se označuje jako nepřirozená eutrofizace -- dusíkaté látky a fosfáty vedou k přemnožení planktonu a sinic, po jejichž masovém odumření a následném rozkladu stoupne ve vodě množství toxických látek a začne chybět kyslík, což vede k úhynu ryb a vymírání dalších organismů.
 
-__Toxicitu prostředí zvyšují také různé přípravky používané proti škůdcům a plevelům__, jako jsou insekticidy a herbicidy. Ty se v zemědělství (podobně jako syntetická hnojiva) používají stále ve velkém množství. Problém se týká například řepky a kukuřice, u nichž zejména při opakovaném pěstování na stejném místě počet škůdců významně narůstá a je regulovatelný jen obtížně.[^12] Některé škodlivé látky se v půdě časem rozkládají, jiné v ní však zůstávají navždy. V Česku byly nadlimitní koncentrace pesticidů a jejich residuí nalezeny ve 40 % podzemních vod.[^13] 
+__Toxicitu prostředí zvyšují také různé přípravky používané proti škůdcům a plevelům__, jako jsou insekticidy a herbicidy. Ty se v zemědělství (podobně jako syntetická hnojiva) používají stále ve velkém množství. Problém se týká například řepky a kukuřice, u nichž zejména při opakovaném pěstování na stejném místě počet škůdců významně narůstá a je regulovatelný jen obtížně.[^12] Některé škodlivé látky se v půdě časem rozkládají, jiné v ní však zůstávají navždy. V Česku byly nadlimitní koncentrace pesticidů a jejich reziduí nalezeny ve 40 % podzemních vod.[^13] 
 
 ### Šíření exotických druhů
 
-Vážným problémem se pro biodiverzitu stává také šíření nepůvodních druhů, které v různých částech světa vytlačují domácí faunu a flóru. Populární pták dronte mauricijský vyhynul nejen proto, že jej ve velkém konzumovali námořníci, ale také kvůli potkanům, prasatům a opicím, které jejich lodě přivezly -- vyžírali totiž jeho vejce. Některé druhy se šíří v důsledku měnících se přírodních podmínek (například změn klimatu), nicméně __zásadním faktorem z hlediska šíření druhů je člověk a jeho aktivity__ jako cestování či doprava zboží po celém světě.[^14]
+Vážným problémem se pro biodiverzitu stává také šíření nepůvodních druhů, které v různých částech světa vytlačují domácí faunu a flóru. Populární pták dronte mauricijský vyhynul nejen proto, že jej ve velkém konzumovali námořníci, ale také kvůli potkanům, prasatům a opicím, které jejich lodě přivezly -- vyžírali totiž jeho vejce. Některé druhy se šíří v důsledku měnících se přírodních podmínek (například změn klimatu), nicméně __zásadní z hlediska šíření exotických druhů je člověk a jeho aktivity__ (například cestování či doprava zboží po celém světě).[^14]
 
 ### Klimatická změna
 
-Z globálního hlediska sice změny klimatu zatím hlavní příčinou ubývání biodiverzity nejsou, na lokální úrovni ale může být jejich dopad na konkrétní biotop v mnoha případech významný – například biotopy pramenišť a rašelinišť, které jsou ohrožené vysycháním a nedostatkem srážek. Zásadním faktorem určitě bude, o kolik ještě stoupne koncentrace skleníkových plynů v atmosféře a jakých rozměrů změny klimatu v příštích dekádách dosáhnou. Kromě toho však bude (lokálně) záležet také __na kombinaci tří dalších faktorů: schopnosti konkrétních druhů se na nové klimatické podmínky adaptovat, přesouvat se jinam a také na tom, jestli mají kam (a kudy) se přesunout.__ To je u jednotlivých druhů velmi různé.
+Z globálního hlediska sice změny klimatu zatím hlavní příčinou ubývání biodiverzity nejsou, na lokální úrovni ale může leckdy být jejich dopad na konkrétní biotop významný – uvést lze třeba biotopy pramenišť a rašelinišť, které jsou ohrožené vysycháním a nedostatkem srážek. Důležitou roli v tom bude nepochybně hrát další nárůst koncentrací skleníkových plynů v atmosféře – a jak velkých rozměrů změny klimatu v příštích dekádách dosáhnou. Kromě toho však bude (lokálně) záležet také __na kombinaci tří dalších faktorů: schopnosti konkrétních druhů se na nové klimatické podmínky adaptovat, přesouvat se jinam a také na tom, jestli mají kam (a kudy) se přesunout.__ To je u jednotlivých druhů velmi různé.
 
 Patrně __nejvíce ohrožená je fauna a flóra izolovaných biotopů v neobvyklých klimatických podmínkách__. Dobrým příkladem jsou tropické hory -- relativně chladnomilné druhy zde žijí v izolaci, obklopeny podstatně teplejší krajinou. Migrace jinam pro ně nepřichází v úvahu a při přesunu do vyšších poloh přirozeně dříve či později musí narazit na vrcholky hor (nebo na skálu). Podobná omezení platí pro obyvatele izolovaných menších mokřadů v pouštích či polopouštích.[^15]
 
-K jak velkým ztrátám nakonec dojde, dokážeme zatím odhadnout jen velmi přibližně pomocí teoretických modelů. Reakce organismů na klimatické změny je totiž složitější: __důvodem k migraci často nemusí být přímo nárůst průměrné teploty, nýbrž i další důsledky oteplení__, například vlhkost půdy v určitém ročním období. Druhy navíc nemusí na měnící se poměry reagovat lineárně -- tedy po nějakou dobu mohou změny tolerovat a zareagovat ve velkém měřítku teprve ve chvíli, kdy už toho už nejsou dál schopny.
+K jak velkým ztrátám biodiverzity vlivem klimatických změn nakonec dojde, dokážeme zatím odhadnout jen přibližně pomocí teoretických modelů. Reakce organismů na tyto změny je totiž složitější: __důvodem k migraci často nemusí být přímo nárůst průměrné teploty, nýbrž i další důsledky oteplení__, například vlhkost půdy v určitém ročním období. Druhy navíc nemusí na měnící se poměry reagovat lineárně -- tedy po nějakou dobu mohou změny tolerovat a zareagovat ve velkém měřítku teprve ve chvíli, kdy toho už nejsou dál schopny.
 
 ## Jak a kde ubývá biodiverzita v Česku?
 
-Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které byly útočištěm pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17] __V Česku je tedy pro biodiverzitu naprosto klíčová změna způsobu hospodaření v zemědělství a v lesích__, __která umožní existenci drobných biotopů, podpoří pestřejší skladbu plodin a dřevin a nebude dále zvyšovat koncentraci dusíku a fosforu nadměrným hnojením a zamořovat půdu přípravky proti škůdcům a plevelům.__
+Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které sloužily jako útočiště pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17] 
 
-Oproti jiným částem světa nebudou mít v nejbližších desetiletích na biodiverzitu v Česku zásadní dopad klimatické změny -- patrně nejvíce budou oteplováním zasaženy druhy (a biotopy) extrémně studených podmínek, které nemají kam přesunout: především horská tundra Krkonoš nebo Jeseníků. Jak již bylo uvedeno výše: __největší hrozbou pro přírodu u nás jsme my sami -- respektive způsob, jak zacházíme s krajinou, kde žijeme.__ To je největší riziko a zároveň příležitost ke změně.
+__V Česku je tedy pro biodiverzitu naprosto klíčová změna způsobu hospodaření v zemědělství a v lesích__, __která umožní existenci drobných biotopů, podpoří pestřejší skladbu plodin a dřevin a nebude dále zvyšovat koncentraci dusíku a fosforu nadměrným hnojením a zamořovat půdu a vodu jedovatými přípravky proti škůdcům a plevelům.__
+
+Oproti jiným částem světa nebudou mít v nejbližších desetiletích na biodiverzitu v Česku zásadní dopad klimatické změny -- patrně nejvíce budou oteplováním zasaženy druhy (a biotopy) extrémně studených podmínek, které nemají kam přesunout: především horská tundra Krkonoš nebo Jeseníků. Jak již bylo uvedeno výše: __největší hrozbou pro přírodu u nás jsme my sami -- respektive způsob, jak zacházíme s krajinou, kde žijeme.__ To je v našich podmínkách největší riziko a zároveň příležitost ke změně.
 
 ## Zdroje a poznámky
 
@@ -82,7 +84,7 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 
 [^2]: [Katalog biotopů České republiky](https://www.ochranaprirody.cz/res/archive/299/036740.pdf?seek=1465205752).
 
-[^3]: V českém prostředí jsou ukázkovým příkladem této zranitelnosti smrkové lesy zasažené kůrovcovou kalamitou: zatímco v druhově pestrém lese by byla kůrovcem usmrcena pouze část stromů a les jako celek by žil dál, po vykácené smrkové monokultuře zbyde jen holina, kde jsou podmínky pro život mnoha druhů rostlin, živočichů a hub velmi omezené. Viz text [*Proč umírají české jehličnaté lesy?*](https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu).
+[^3]: V českém prostředí jsou ukázkovým příkladem této zranitelnosti smrkové lesy zasažené kůrovcovou kalamitou: zatímco v druhově pestrém lese by byla kůrovcem usmrcena pouze část stromů a les jako celek by žil dál, po vykácené smrkové monokultuře zbyde jen holina, kde jsou podmínky pro život mnoha druhů rostlin, živočichů a hub jen málo příznivé. Viz text [*Proč umírají české jehličnaté lesy?*](https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu).
 
 [^4]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 24.
 
@@ -96,16 +98,16 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 
 [^11]: Vnitřní moře je takové, které je téměř zcela obklopeno pevninou (v Evropě například Středozemní či Baltské). Jiné je tzv. okrajové moře na okraji oceánu, které takto obklopeno není (například Severní moře).
 
-[^12]: Viz Rostlinolékařský portál: https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c56f9c5%7Cpestovani a https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c448fc8%7Cpestovani
+[^12]: Viz Rostlinolékařský portál: [https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c56f9c5%7Cpestovani] a [https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c448fc8%7Cpestovani]
 
-[^13]: https://www.hnutiduha.cz/aktualne/pesticidy-zustavaji-ve-vode-i-potravinach-problemem-je-nevhodne-pestovani-repky-nebo
+[^13]: [https://www.hnutiduha.cz/aktualne/pesticidy-zustavaji-ve-vode-i-potravinach-problemem-je-nevhodne-pestovani-repky-nebo]
 
 [^14]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 30.
 
-[^15]: Adaptaci na změny však druhům ztěžuje také člověk: krajina s vysokou hustotou osídlení, velké lány polí nebo plantáže, to jsou významné překážky pro druhy, jež migrují do příznivějších podmínek.
+[^15]: Adaptaci na změny však druhům ztěžuje také člověk: krajina s vysokou hustotou osídlení, velké lány polí nebo plantáže, to jsou významné překážky pro druhy, které se potřebují přesunout do příznivějších podmínek.
 
-[^16]: Ze 46 různých typů biotopů klasifikovaných v Česku jako kriticky ohrožené či ohrožené připadá 21 na mokřadní a vodní biotopy nebo rašeliniště. ČS biotopů
+[^16]: Ze 46 různých typů biotopů klasifikovaných v Česku jako kriticky ohrožené či ohrožené připadá 21 na mokřadní a vodní biotopy nebo rašeliniště (Červený seznam biotopů České republiky, 2020, str. 19).
 
 [^17]: Zatímco ve třicátých letech se v českých zemích střílelo 2,5 milionu koroptví ročně, nyní jich u nás žije pouze 20 až 40 tisíc. Ohrožení jsou například také motýli: 11 % druhů v Česku zcela vyhynulo.
 
-[^18]: The global assessment report on biodiversity and ecosystem services (IPBES), 2019, kap. 2.2, str. 239
+[^18]: The global assessment report on biodiversity and ecosystem services (IPBES), 2019, kap. 2.2, str. 239.
