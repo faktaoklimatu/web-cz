@@ -31,7 +31,7 @@ Pojďme si nejprve krátce shrnout současnou situaci a pojmenovat klíčové ot
 * __Nevhodné lesní hospodaření__, které klade ekonomický zájem nad přírodu a preferuje pěstování stejnověkých monokultur ("plantáží") oproti druhově pestrému, různověkému lesu plnému života.
 * __Absence vzdělávacích a motivačních programů pro lesníky__, aby hospodařili udržitelným, přírodě blízkým způsobem (přestože často dělají svou práci srdcem, chybí kvalitní osvěta i motivace začít jinak).
 * __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^rumunsko]) a obchodování s nezákonně vytěženým dřívím.
-* __Absence dobře fungujícího systému certifikace dřeva__, který bude skutečně motivující a ekonomicky výhodný jak pro lesní hospodáře, tak pro zpracovatele dřeva. Existuje sice certifikační systém FSC (Forest Stewardship Council), ten však zatím žádné velké ekonomické výhody nepřináší. 
+* __Absence dobře fungujícího systému certifikace dřeva__, který bude skutečně motivující a ekonomicky výhodný jak pro lesní hospodáře, tak pro zpracovatele dřeva. Existuje sice certifikační systém FSC (Forest Stewardship Council), ten však zatím žádné velké ekonomické výhody nepřináší.
 * __Nevhodné použití dřevní hmoty__: kvalitní dřevo se mnohdy využívá na výrobu energie (spálí se jako biomasa), naproti tomu málo dřeva se dosud využívá ve stavebnictví[^nls-stavebnictvi] -- přestože v produktech na bázi dřeva s dlouhou životností by byl uhlík uložen minimálně na desítky let, a dřevo jako materiál by tedy mohlo v klimaticky neutrální ekonomice hrát důležitou úlohu.
 * __Socioekonomická situace venkova__, jehož prosperita je se zdravou krajinou, a tedy i lesy, úzce spjata, včetně pracovních příležitostí (zemědělství, lesnictví).
 * __Nedostačující či zastaralá legislativa__: zákony a směrnice o lesích jsou v jednotlivých zemích EU velmi různé a často je též nutná novelizace (v ČR např. novela lesního zákona, zákona o myslivosti a další legislativní změny).
@@ -54,7 +54,7 @@ __Transformovat sektor stavebnictví__ ze zdroje emisí skleníkových plynů v 
 
 __Vysadit nejméně 3 miliardy stromů do roku 2030__, při zachování principu "správný strom na správném místě a za správným účelem" -- výsadba bude mít jasně daná kritéria a budou spuštěny webové stránky pro monitorování stromů (*MapMyTree*).
 
-__Posílit adaptabilitu lesů a přirozenou schopnost jejich obnovy__, tedy podpořit druhovou a věkovou pestrost lesa (namísto zranitelných stejnověkých monokultur), nechávat v lese dostatečné množství mrtvého dřeva, regulovat stavy zvěře a šíření planě rostoucích druhů, vytvořit chráněné plochy vyňaté z produkce. (Jednotná definice udržitelného hospodaření v lesích byla schválena již na celoevropské ministerské konferenci [Forest Europe](https://foresteurope.org/), je však značně vágní, aby dokázala zahrnout natolik odlišná prostředí, jako je finský boreální, středoevropský český nebo mediteránní španělský les. Proto je nutné další potřebné kroky zpřesnit a vyjít přitom ze situace v konkrétních regionech).  
+__Posílit adaptabilitu lesů a přirozenou schopnost jejich obnovy__, tedy podpořit druhovou a věkovou pestrost lesa (namísto zranitelných stejnověkých monokultur), nechávat v lese dostatečné množství mrtvého dřeva, regulovat stavy zvěře a šíření planě rostoucích druhů, vytvořit chráněné plochy vyňaté z produkce. (Jednotná definice udržitelného hospodaření v lesích byla schválena již na celoevropské ministerské konferenci [Forest Europe](https://foresteurope.org/), je však značně vágní, aby dokázala zahrnout natolik odlišná prostředí, jako je finský boreální, středoevropský český nebo mediteránní španělský les. Proto je nutné další potřebné kroky zpřesnit a vyjít přitom ze situace v konkrétních regionech).
 
 __Pečovat o lesní půdu__, například vyhýbat se používání těžké techniky, kdy dochází k velkému zhutnění půdy a to pak komplikuje obnovu lesa -- stromům a rostlinám se v takto stlačené půdě nedaří.
 
@@ -66,7 +66,7 @@ __Finančně motivovat vlastníky a správce lesů__, aby hospodařili udržitel
 
 __Podporovat lesní ekoturistiku__, která může být významným zdrojem příjmu pro venkovské oblasti. Odvětví cestovního ruchu spojeného s přírodou a blízkými destinacemi má dle NLS velký potenciál, poptávka stoupla zejména během pandemie COVID-19.
 
-__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^nls-trzni-hodnota] navíc zcela ekologicky: bez průmyslových hnojiv a pesticidů. Například v Česku jsou však příjmové možnosti vlastníků u nedřevěných produktů značně omezeny legislativou.[^nedrevene-produkty] Navíc všude ve střední Evropě i Skandinávii platí právo volného vstupu do lesa a s výjimkou chráněných oblastí je možné houby či lesní plody volně sbírat.   
+__Podporovat bioekonomiku založenou na nedřevěných produktech__, jako jsou houby, lesní ovoce, semena, byliny, korek, pryskyřice, maso volně žijící zvěře a další. Les produkuje mnoho hodnotného,[^nls-trzni-hodnota] navíc zcela ekologicky: bez průmyslových hnojiv a pesticidů. Například v Česku jsou však příjmové možnosti vlastníků u nedřevěných produktů značně omezeny legislativou.[^nedrevene-produkty] Navíc všude ve střední Evropě i Skandinávii platí právo volného vstupu do lesa a s výjimkou chráněných oblastí je možné houby či lesní plody volně sbírat.
 
 ### Ochrana lesů a lesních ekosystémů
 
@@ -104,7 +104,7 @@ Komise chce dělat další kroky v dialogu s členskými státy a opírat se o j
 
 [^infografika-tezba-lesa]: Těžbu v Česku přibližuje například infografika [*Plocha jehličnanů vytěžená v letech 2016--2020*](/infografiky/tezba-lesa-plocha).
 
-[^rumunsko]: Příkladem země, která se potýká s nelegální těžbou, je třeba Rumunsko. 
+[^rumunsko]: Příkladem země, která se potýká s nelegální těžbou, je třeba Rumunsko.
 
 [^nls-stavebnictvi]: NLS uvádí, že stavební výrobky ze dřeva mají průměrný podíl na trhu v EU 2,4 %, zatímco například nerudní nerosty tvoří 93 %. Naprostá většina dnes používaných stavebních materiálů je tedy energeticky náročná a závislá na fosilních palivech.
 
