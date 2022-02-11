@@ -30,7 +30,7 @@ Pojďme si nejprve krátce shrnout současnou situaci a pojmenovat klíčové ot
 * __Nestabilní příjmy vlastníků lesa__, kteří musí celé desítky let čekat, než se jim vrátí náklady spojené s obnovou lesa, navíc mimo prodané dřevo momentálně jiný zisk z lesa v podstatě nemají, protože společnost zatím nedokáže další funkce lesa finančně ocenit.
 * __Nevhodné lesní hospodaření__, které klade ekonomický zájem nad přírodu a preferuje pěstování stejnověkých monokultur ("plantáží") oproti druhově pestrému, různověkému lesu plnému života.
 * __Absence vzdělávacích a motivačních programů pro lesníky__, aby hospodařili udržitelným, přírodě blízkým způsobem (přestože často dělají svou práci srdcem, chybí kvalitní osvěta i motivace začít jinak).
-* __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^belovezsky-prales]) a obchodování s nezákonně vytěženým dřívím.
+* __Nedostatečný monitoring stavu lesů__ a s tím související __nedostatečná ochrana__, problémy s nelegální těžbou (i ve zvláště chráněných původních lesích[^rumunsko]) a obchodování s nezákonně vytěženým dřívím.
 * __Absence dobře fungujícího systému certifikace dřeva__, který bude skutečně motivující a ekonomicky výhodný jak pro lesní hospodáře, tak pro zpracovatele dřeva.
 * __Nevhodné použití dřevní hmoty__: kvalitní dřevo se mnohdy využívá na výrobu energie (spálí se jako biomasa), naproti tomu málo dřeva se dosud využívá ve stavebnictví[^nls-stavebnictvi] -- přestože v produktech na bázi dřeva s dlouhou životností by byl uhlík uložen minimálně na desítky let, a dřevo jako materiál by tedy mohlo v klimaticky neutrální ekonomice hrát důležitou úlohu.
 * __Socioekonomická situace venkova__, jehož prosperita je se zdravou krajinou, a tedy i lesy, úzce spjata, včetně pracovních příležitostí (zemědělství, lesnictví).
@@ -104,7 +104,7 @@ Komise chce dělat další kroky v dialogu s členskými státy a opírat se o j
 
 [^infografika-tezba-lesa]: Těžbu v Česku přibližuje například infografika [*Plocha jehličnanů vytěžená v letech 2016--2020*](/infografiky/tezba-lesa-plocha).
 
-[^belovezsky-prales]: Mediálně známá je například [těžba v Bělověžském pralese](https://ekolist.cz/cz/zpravodajstvi/zpravy/polsko-obnovi-tezbu-v-chranenem-belovezskem-pralese) na hranicích Polska a Běloruska.
+[^rumunsko]: Příkladem země, která se potýká s nelegální těžbou, je třeba Rumunsko. 
 
 [^nls-stavebnictvi]: NLS uvádí, že stavební výrobky ze dřeva mají průměrný podíl na trhu v EU 2,4 %, zatímco například nekovové nerosty tvoří 93 %. Naprostá většina dnes používaných stavebních materiálů je tedy energeticky náročná a závislá na fosilních palivech.
 
