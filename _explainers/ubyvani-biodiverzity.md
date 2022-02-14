@@ -24,6 +24,15 @@ __BIOTOP__ označuje __prostředí__, které k životu potřebuje určitý konkr
 
 Všechny živé organismy jsou závislé na prostředí, kde žijí, a zároveň jej spoluutvářejí – proto když uvažujeme o biodiverzitě, je třeba dívat se na celek, ne pouze izolovaně na jednotlivé druhy. Ty totiž nemohou přežít bez vhodných podmínek neživé přírody a jemného přediva vztahů s jinými druhy. Jestliže zanikne biotop, velká část druhů přijde o místo, které potřebuje ke svému životu. Ztráta jednoho či několika druhů ještě nemusí být pro biotop katastrofou, nicméně často znamená jeho významnou proměnu či ohrožení, a to zejména pokud jde o druh z hlediska biotopu klíčový, jakou jsou třeba mangrovníky v mangrovových pobřežních lesích. V našich podmínkách může být příkladem buk lesní, který je zásadním druhem pro biotop bučin (velká část těchto biotopů byla u nás v 19. a 20. století nahrazena smrkovými monokulturami).  
 
+{% include figure.html
+    name="biodiverzita-aspekty.svg"
+    name-mobile="biodiverzita-aspekty.svg"
+    alt="TODO"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
+%}
+
+
 Biodiverzity na Zemi v současné době rychle ubývá. Nejde však jen o __vymírání jednotlivých druhů__ (vyhynul například pták dronte mauricijský, známý též jako dodo), __snižuje se také celková druhová pestrost__ v přírodě a __dochází ke stírání rozdílů mezi různými místy__. To jsou tři různé aspekty ubývání biodiverzity, které se dějí na mnoha úrovních -- od té globální až po rozměry v řádu čtverečních metrů. Ve všech případech jsou nicméně důsledky stejné: živý svět se postupně stává chudším, monotónnějším a často i zranitelnějším vůči náhlým změnám podmínek. Ukázkovým příkladem malé odolnosti druhově chudého prostředí je probíhající kůrovcová kalamita.[^3]
 
 Proces ubývání biodiverzity je dobře pozorovatelný, zejména pak v menším měřítku: například v určitém regionu, v jednom údolí v horách, ve vodách jezera nebo třeba na kousku louky. Nejčastěji vědci prostě druhy spočítají, existují však i sofistikovanější metriky, které sledují například relativní vyrovnanost mezi různými druhy -- les, kde je stejně smrků, buků a jedlí (od každého druhu po třetině), potom nemá stejnou biodiverzitu stromů jako ten, kde je 90 % smrků a po 5 % buků a jedlí.
@@ -32,9 +41,25 @@ Proces ubývání biodiverzity je dobře pozorovatelný, zejména pak v menším
 
 Zatím bylo na světě objeveno asi 1,5 milionu druhů živočichů, rostlin nebo hub a je pravděpodobné, že několikrát tolik druhů dosud neznáme. Každý rok se také najdou tisíce nových druhů (většinu z toho tvoří hmyz). Různé druhy též odjakživa vznikají a mizí. Vědci však odhadují, že __současné tempo vymírání je o jeden nebo dva řády rychlejší, než kolik činil průměr v minulých 10 milionech let__. Jinými slovy: druhy dnes mizí deseti-, ba možná stonásobně rychleji.[^4] V živočišné říši je v důsledku toho dnes vyhubením více či méně ohrožena zhruba sedmina všech ptáků, čtvrtina savců, pětina plazů, třetina paryb (žraloků a rejnoků) a dvě pětiny obojživelníků.[^18]
 
+{% include figure.html
+    name="biodiverzita-ohrozene-druhy.svg"
+    name-mobile="biodiverzita-ohrozene-druhy.svg"
+    alt="TODO"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
+%}
+
 __Mizí především specializovanější nebo náročnější druhy__. Krajině více a více dominují přizpůsobiví generalisté, kteří dovedou žít ledaskde. Navíc v ní ubývají specifické skupiny, které přírodní svět z velké části utvářely (a přímo či nepřímo tvořily podmínky pro život mnoha dalších druhů): velké staré stromy nebo velcí savci jako bizoni, vlci, sloni a další.
 
 ## Co způsobuje chudnutí přírodního světa?
+
+{% include figure.html
+    name="biodiverzita-faktory.svg"
+    name-mobile="biodiverzita-faktory.svg"
+    alt="TODO"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
+%}
 
 Na ztrátách biodiverzity se podílí těchto pět hlavních faktorů:
 
