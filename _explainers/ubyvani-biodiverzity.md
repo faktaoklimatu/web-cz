@@ -71,7 +71,7 @@ Na ztrátách biodiverzity se podílí těchto pět hlavních faktorů:
 ### 1. Ubývání biotopů
 
 {% include lead-in-figure.html
-    name="faktor-1.svg"
+    name="faktor-ubyvani-biotopu.svg"
     alt="TODO"
 %}
 
@@ -82,7 +82,7 @@ __Nejrapidněji ze všech biotopů přitom mizí často právě ty, které jsou 
 ### 2. Nadměrná exploatace
 
 {% include lead-in-figure.html
-    name="faktor-1.svg"
+    name="faktor-nadmerna-exploatace.svg"
     alt="TODO"
 %}
 
@@ -91,7 +91,7 @@ Většinou si ji spojujeme s pytlačením slonů či nosorožců nebo s pašová
 ### 3. Znečištění a eutrofizace
 
 {% include lead-in-figure.html
-    name="faktor-1.svg"
+    name="faktor-znecisteni.svg"
     alt="TODO"
 %}
 
@@ -102,7 +102,7 @@ __Toxicitu prostředí zvyšují také různé přípravky používané proti š
 ### 4. Šíření exotických druhů
 
 {% include lead-in-figure.html
-    name="faktor-1.svg"
+    name="faktor-nepuvodni-druhy.svg"
     alt="TODO"
 %}
 
@@ -111,7 +111,7 @@ Vážným problémem se pro biodiverzitu stává také šíření nepůvodních 
 ### 5. Klimatická změna
 
 {% include lead-in-figure.html
-    name="faktor-1.svg"
+    name="faktor-klimaticka-zmena.svg"
     alt="TODO"
 %}
 
