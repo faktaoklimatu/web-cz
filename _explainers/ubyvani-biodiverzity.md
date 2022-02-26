@@ -123,7 +123,7 @@ K jak velkým ztrátám biodiverzity vlivem klimatických změn nakonec dojde, d
 
 ## Jak a kde ubývá biodiverzita v Česku?
 
-Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které sloužily jako útočiště pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17] 
+Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které sloužily jako útočiště pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček[^sýček] nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17] 
 
 V Česku je tedy pro biodiverzitu naprosto klíčová změna způsobu hospodaření v zemědělství a v lesích, která: 
 - __umožní existenci drobných biotopů__ 
@@ -152,7 +152,7 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 [^10]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 28.
 
 [^11]: Vnitřní moře je takové, které je téměř zcela obklopeno pevninou (v Evropě například Středozemní či Baltské). Jiné je tzv. okrajové moře na okraji oceánu, které takto obklopeno není (například Severní moře).
-
+ 
 [^12]: Viz Rostlinolékařský portál: [Pěstební opatření – řepka](https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c56f9c5%7Cpestovani) a [Pěstební opatření – kukuřice](https://eagri.cz/public/app/srs_pub/fytoportal/public/#rlp%7Cplodiny%7Cdetail:c18ccd9cbe2ba381e37b810d0c448fc8%7Cpestovani)
 
 [^13]: Viz [Pesticidy zůstávají ve vodě i potravinách, problémem je nevhodné pěstování řepky nebo kukuřice](https://www.hnutiduha.cz/aktualne/pesticidy-zustavaji-ve-vode-i-potravinach-problemem-je-nevhodne-pestovani-repky-nebo).
@@ -160,6 +160,8 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 [^14]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 30.
 
 [^15]: Adaptaci na změny však druhům ztěžuje také člověk: krajina s vysokou hustotou osídlení, velké lány polí nebo plantáže, to jsou významné překážky pro druhy, které se potřebují přesunout do příznivějších podmínek.
+
+[^sýček]: [Blíží se vymření sýčka. Nejohroženější sova v České republice](https://nasregion.cz/blizi-se-vymreni-sycka-nejohrozenejsi-sova-v-ceske-republice-183428/) 
 
 [^16]: Ze 46 různých typů biotopů klasifikovaných v Česku jako kriticky ohrožené či ohrožené připadá 21 na mokřadní a vodní biotopy nebo rašeliniště (Červený seznam biotopů České republiky, 2020, str. 19).
 
