@@ -64,9 +64,9 @@ Na ztrátách biodiverzity se podílí těchto pět hlavních faktorů:
 
 1. __Ubývání biotopů__ -- především v důsledku intenzivního zemědělství a s ním spojených změn v krajině (například kácení pralesů kvůli novým polím a plantážím)
 2. __Nadměrná exploatace__, tedy intenzivní lov savců, ryb a dalších živočichů -- mnohé druhy jsou proto dnes v ohrožení[^5]
-3. __Vysoká míra znečištění__ daná nadměrnými dávkami hnojiv a používáním jedů proti škůdcům a plevelům
+3. __Vysoká míra znečištění__ daná používáním jedů proti škůdcům a plevelům 
 4. __Šíření nepůvodních druhů__ -- ty konkurují původní fauně a flóře a často ji vytlačí či vyhubí
-5. __Klimatická změna__ -- nejvíce ohroženy jsou druhy v neobvyklých klimatických podmínkách (viz níže)
+5. __Klimatická změna__ -- nejvíce ohroženy jsou druhy v neobvyklých klimatických podmínkách
 
 ### 1. Ubývání biotopů
 
@@ -88,16 +88,17 @@ __Nejrapidněji ze všech biotopů přitom mizí často právě ty, které jsou 
 
 Většinou si ji spojujeme s pytlačením slonů či nosorožců nebo s pašováním papoušků a korálů. __Problém se ale týká především ryb__. Třetina populací komerčně využívaných mořských ryb je přelovená a dalších 60 % se loví na hranici udržitelnosti.[^10]
 
-### 3. Znečištění a eutrofizace
+### 3. Vysoká míra znečištění
 
 {% include lead-in-figure.html
     name="faktor-znecisteni.svg"
     alt="TODO"
 %}
 
-__Velké dávky dusíku a fosforu, většinou ze zemědělských hnojiv__, jež stékají z polí, snižují pestrost života v řekách, jezerech a především vnitřních mořích.[^11] Tento proces se označuje jako nepřirozená eutrofizace -- dusíkaté látky a fosfáty vedou k přemnožení planktonu a sinic, po jejichž masovém odumření a následném rozkladu stoupne ve vodě množství toxických látek a začne chybět kyslík, což vede k úhynu ryb a vymírání dalších organismů.
+__Toxicitu prostředí zvyšují především různé přípravky používané proti škůdcům a plevelům__, jako jsou insekticidy a herbicidy. Ty se v zemědělství používají stále ve velkém množství. Problém se týká například řepky a kukuřice, u nichž zejména při opakovaném pěstování na stejném místě počet škůdců významně narůstá a je regulovatelný jen obtížně.[^12] Některé škodlivé látky se v půdě časem rozkládají, jiné v ní však zůstávají navždy. V Česku byly nadlimitní koncentrace pesticidů a jejich reziduí nalezeny ve 40 % podzemních vod.[^13] 
 
-__Toxicitu prostředí zvyšují také různé přípravky používané proti škůdcům a plevelům__, jako jsou insekticidy a herbicidy. Ty se v zemědělství (podobně jako syntetická hnojiva) používají stále ve velkém množství. Problém se týká například řepky a kukuřice, u nichž zejména při opakovaném pěstování na stejném místě počet škůdců významně narůstá a je regulovatelný jen obtížně.[^12] Některé škodlivé látky se v půdě časem rozkládají, jiné v ní však zůstávají navždy. V Česku byly nadlimitní koncentrace pesticidů a jejich reziduí nalezeny ve 40 % podzemních vod.[^13] 
+Další problém představují také __velké dávky dusíku a fosforu, většinou ze zemědělských hnojiv__, jež stékají z polí, snižují pestrost života v řekách, jezerech a především vnitřních mořích.[^11] Tento proces se označuje jako nepřirozená eutrofizace -- dusíkaté látky a fosfáty vedou k přemnožení planktonu a sinic, po jejichž masovém odumření a následném rozkladu stoupne ve vodě množství toxických látek a začne chybět kyslík, což vede k úhynu ryb a vymírání dalších organismů.
+
 
 ### 4. Šíření exotických druhů
 
