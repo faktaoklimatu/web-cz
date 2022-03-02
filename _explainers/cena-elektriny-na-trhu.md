@@ -25,7 +25,7 @@ Spotřeba elektřiny se v průběhu dne liší – zpravidla je přes den vyšš
 
 {% include figure.html
     name="rocni-maximum-spotreby-des.png"
-    alt="Průběh hrubé spotřeby ve dnech ročního maxima."
+    alt="Průběh hrubé spotřeby ve dnech ročního maxima"
     source-text="ERÚ"
     source-url="https://www.eru.cz/documents/10540/6616306/Rocni_zprava_provoz_ES_2020.pdf/edc0cb03-700a-43a7-8c08-a1ccb3f2d173"
 %}
@@ -41,7 +41,7 @@ Spotřeba elektřiny v ČR se v závislosti na dni a hodině pohybuje mezi 4,5 G
 
 {% include figure.html
     name="vyroba-spotreba-des.png"
-    name-mobile="vyroba-spotreba-mob.svg"
+    name-mobile="vyroba-spotreba-des.png"
     alt="Kolik můžeme vyrobit a kolik zvládneme spotřebovat"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -51,8 +51,8 @@ Pro zapínání a vypínání elektráren je zásadních několik parametrů: je
 
 {% include figure.html
     name="zdroje-elektriny.png"
-    name-mobile="zdroje-elektriny-mob.png"
-    alt="Typy elektráren"
+    name-mobile="zdroje-elektriny.png"
+    alt="Hlavní typy zdrojů elektřiny v ČR"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -63,15 +63,15 @@ Jako první pro uspokojení poptávky po elektřině se využívají ty zdroje, 
 
 {% include figure.html
     name="merit-order-des.png"
-    name-mobile="merit-order-mob.png"
-    alt="Merit order"
+    name-mobile="merit-order-des.png"
+    alt="Ilustrace seřazení zdrojů podle ceny (tzv. merit order)"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
 
 Jak ilustruje graf výše, v danou chvíli typicky není k dispozici veškerý instalovaný výkon. Počasí omezuje výkon solárních a větrných elektráren. Uhelné a plynové elektrárny často rezervují část svého výkonu na vyrovnávání výroby a spotřeby (na pokyny společnosti ČEPS) a tak tento výkon nemůžou nabízet na burze. Výkon jaderných elektráren mohou zase omezit plánované odstávky.
 
-Upozorňujeme, že tento ilustrativní graf merit orderu je velmi zjednodušený. Nabídkové ceny jednotlivých elektráren nejsou veřejně k dispozici, každá elektrárna v dané kategorii má v praxi trochu jinou efektivitu a tedy trochu jiné náklady. Skutečná křivka merit orderu tak bude tvořena spoustou maličko odlišných cenových úrovní místo těch několika málo, které ukazujeme zde.
+Upozorňujeme, že tento ilustrativní graf _merit orderu_ je velmi zjednodušený. Nabídkové ceny jednotlivých elektráren nejsou veřejně k dispozici, každá elektrárna v dané kategorii má v praxi trochu jinou efektivitu a tedy trochu jiné náklady. Skutečná křivka _merit orderu_ tak bude tvořena spoustou maličko odlišných cenových úrovní místo těch několika málo, které ukazujeme zde.
 
 
 ## Jak každá elektrárna stanovuje svou minimální cenu, za kterou bude dodávat elektřinu?
@@ -84,8 +84,8 @@ V každém okamžiku se porovnává poptávka po elektřině od zákazníků s m
 
 {% include figure.html
     name="merit-order-animace.gif"
-    name-mobile="merit-order-animace-mob.gif"
-    alt="Merit order (ilustrovaný animací)"
+    name-mobile="merit-order-animace.gif"
+    alt="Merit order (animovaný)"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -103,8 +103,8 @@ Pokud jsou tyto ceny příliš nízké, některé elektrárny nezvládnou pokrý
 
 {% include figure.html
     name="naklady-des.png"
-    name-mobile="naklady-mob.gif"
-    alt="Schéma nákladů podle typu elektrárny"
+    name-mobile="naklady-des.gif"
+    alt="Struktura nákladů podle typu elektrárny"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -131,7 +131,7 @@ Když trochu zjednodušíme situaci, elektřina se obchoduje ve dvou časových 
 Jednak se obchoduje **dlouhodobě** na tzv. _futures trhu_. Takto si zajistí většina dodavatelů elektřiny alespoň část odhadované spotřeby svých zákazníků. Tento trh funguje stejným způsobem jako trh v reálném čase, ale pracuje s odhadovanými budoucími náklady na výrobu elektřiny jednotlivých elektráren. Elektřina nakoupená na tomto trhu je většinou mírně dražší (protože je v ní započítáno riziko), chrání ale dodavatele elektřiny před náhlým kolísáním ceny elektřiny, které při obchodování v reálném čase může nastat. Díky nákupům dopředu můžou dodavatelé nabízet svým zákazníkům fixovanou cenu elektřiny na několik let dopředu. V tomto horizontu se obchoduje hlavně fixní odběr (tzv. _base load_) na zvolený den, měsíc, kvartál nebo kalendářní rok.
 
 ### Proč je cena elektřiny na českém trhu tolik závislá na ceně elektřiny v Německu?
-Obchodníci na burze s elektřinou mají možnost nakoupit elektřinu na burze v Německu a prodat ji v Česku (a naopak). Přitom si ovšem musí nakoupit potřebnou kapacitu na přeshraničních elektrických vedeních od operátora přenosové sítě. Protože je však Německo a Česko relativně dobře propojené, většinu času se daří elektřinu přeprodávat mezi trhy a tím synchronizovat její cenu (tomu se říká _arbitráž_). Některé země jsou přitom tzv. _implicitně propojené_, což znamená, že mají mezi sebou dostatek elektrických spojení a obchodníci si ani nemusí kvůli přeshraničním obchodům nakupovat kapacity na přeshraničních linkách. Takto je ČR propojená se Slovenskem, Maďarskem a Rumunskem. Stejně dobře jsou také propojeny země západní Evropy. To znamená, že v praxi cenu elektřiny v Česku určuje mnohem "větší" merit order, do kterého vstupuje na jedné straně také spousta elektráren z Německa a dalších okolních zemí a na druhé straně poptávka dodavatelů elektřiny z těchto zemí.
+Obchodníci na burze s elektřinou mají možnost nakoupit elektřinu na burze v Německu a prodat ji v Česku (a naopak). Přitom si ovšem musí nakoupit potřebnou kapacitu na přeshraničních elektrických vedeních od operátora přenosové sítě. Protože je však Německo a Česko relativně dobře propojené, většinu času se daří elektřinu přeprodávat mezi trhy a tím synchronizovat její cenu (tomu se říká _arbitráž_). Některé země jsou přitom tzv. _implicitně propojené_, což znamená, že mají mezi sebou dostatek elektrických spojení a obchodníci si ani nemusí kvůli přeshraničním obchodům nakupovat kapacity na přeshraničních linkách. Takto je ČR propojená se Slovenskem, Maďarskem a Rumunskem. Stejně dobře jsou také propojeny země západní Evropy. To znamená, že v praxi cenu elektřiny v Česku určuje mnohem "větší" _merit order_, do kterého vstupuje na jedné straně také spousta elektráren z Německa a dalších okolních zemí a na druhé straně poptávka dodavatelů elektřiny z těchto zemí.
 
 Dlouhodobým cílem EU je pak propojení celé Evropy do jednoho velkého implicitně propojeného trhu. K tomu bude mimo jiné potřeba dále posílit evropskou přenosovou soustavu. To umožní snazší přenos elektřiny mezi zeměmi, pokud tedy například bude větrno v Severním moři, tamní větrné elektrárny budou moci napájet elektřinou velkou část Evropy.
 
