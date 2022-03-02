@@ -32,7 +32,7 @@ Spotřeba elektřiny se v průběhu dne liší – zpravidla je přes den vyšš
 
 Spotřebu elektřiny lze do určité míry dopředu odhadovat a je tedy možné dopředu plánovat i to, kolik bude potřeba v každém okamžiku vyrobit elektřiny. Toto plánování, tedy propojování nabídky elektráren na výrobu elektřiny s předpokládanou poptávkou dodavatelů elektřiny, probíhá na **energetické burze**, jak dopodrobna popíšeme dále.
 
-Protože však spotřebu elektřiny dopředu nikdy nelze odhadnout zcela přesně, v síti se vždy budou vyskytovat malé odchylky, které je potřeba vyrovnat v reálném čase. Tuto regulaci provádí provozovatel přenosové soustavy, kterým je v České republice společnost ČEPS, a.s. Její řídící středisko sleduje v reálném čase spotřebu elektřiny v ČR a zajišťuje vyrovnávání výroby se spotřebou. Zjednodušeně řečeno ČEPS dává pokyny ke zvýšení nebo snížení výkonu vhodných nasmlouvaných elektráren (typicky uhelných nebo plynových). Vyrovnávání výroby a spotřeby je blíže popsáno v dodatcích na konci textu.
+Protože však spotřebu elektřiny dopředu nikdy nelze odhadnout zcela přesně, v síti se vždy budou vyskytovat malé odchylky, které je potřeba vyrovnat v reálném čase. Tuto regulaci provádí provozovatel přenosové soustavy, kterým je v České republice společnost ČEPS, a.s. Její řídící středisko sleduje v reálném čase spotřebu elektřiny v ČR a zajišťuje vyrovnávání výroby se spotřebou. Zjednodušeně řečeno ČEPS dává pokyny ke zvýšení nebo snížení výkonu vhodných nasmlouvaných elektráren (typicky uhelných nebo plynových). Vyrovnávání výroby a spotřeby je [blíže popsáno](#ceps) v dodatcích na konci textu.
 
 Na stránkách ČEPS můžete sledovat živě data o [výrobě elektřiny](https://www.ceps.cz/cs/data#Generation) a [zatížení sítě](https://www.ceps.cz/cs/data#Load) (tedy spotřebě) v ČR.
 
@@ -75,6 +75,11 @@ Upozorňujeme, že tento ilustrativní graf _merit orderu_ je velmi zjednodušen
 
 
 ## Jak každá elektrárna stanovuje svou minimální cenu, za kterou bude dodávat elektřinu?
+
+{% include preview-box.html
+    slug="emisni-povolenky-ets"
+%}
+
 Elektrárny mají obecně dva druhy nákladů – fixní náklady a variabilní náklady. **Fixní náklady** jsou výdaje, které musí majitel elektrárny platit bez ohledu na to, jestli elektrárna běží, nebo stojí. Jsou to například mzdy zaměstnancům, náklady na údržbu, či rozpočítané náklady na stavbu elektrárny. **Variabilní náklady** jsou výdaje, které majitel musí zaplatit za každou jednotku vyrobené elektřiny. Sem patří zejména cena paliva, a případně i cena emisní povolenky, pokud elektrárna při výrobě elektřiny spaluje fosilní paliva a tedy vypouští oxid uhličitý.
 
 Každý majitel elektrárny chce vyrábět elektřinu vždy, kdy se mu to vyplatí, což znamená, kdy cena prodané jednotky elektřiny přesáhne výrobní náklady na tuto jednotku elektřiny. Elektrárny tak nabízejí elektřinu za částku, které je rovná jejich variabilním nákladům – za nižší částku nejsou ochotny elektřinu vyrábět (s výjimkou jaderných elektráren, které je drahé odstavovat). Za vyrobenou elektřinu pak elektrárny zpravidla dostanou vyšší částku, než jaká byla jejich nabídková cena – dostanou peníze podle ceny elektřiny na trhu.
@@ -111,15 +116,21 @@ Pokud jsou tyto ceny příliš nízké, některé elektrárny nezvládnou pokrý
 
 Nejlevnější elektřinu v současnosti produkují obnovitelné zdroje elektřiny. Tyto zdroje nepotřebují žádné palivo a neplatí za emisní povolenky, protože nevypouštějí oxid uhličitý. Jejich variabilní náklady jsou tak téměř nulové. Tyto zdroje tedy vyrábějí elektřinu vždy, kdy mohou, dle aktuálních podmínek.
 
+{% include preview-box.html
+    title="Vývoj cen elektřiny podle zdrojů"
+    text="Jeden ze způsobů, jak vyjádřit fixní i variabilní náklady jedním číslem jsou tzv. _sdružené náklady na výrobu elektřiny_. Tato grafika se dívá na jejich vývoj v čase."
+    slug="cena-energie"
+%}
+
 Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, protože mají velmi nízké variabilní náklady. Když se berou v potaz fixní náklady, tak vycházejí jaderné zdroje poměrně draze, což je jeden z důvodu, proč se v posledních desetiletích v Evropě staví velmi málo nových jaderných elektráren. Na trhu mají jaderné elektrárny zvláštní postavení, jelikož regulovat jejich výkon je obtížné. Pokud v některý moment poptávku pokryjí jen obnovitelné a jaderné zdroje, tak mají přednost jaderné zdroje (zápornou nabídkovou cenou jednoduše na burze vytlačí obnovitelné zdroje). 
 
 V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren nestačí k pokrytí celé poptávky po elektřině, přicházejí na řadu mnohem dražší zdroje, ve kterých je možné vyrábět elektřinu dle potřeby (jsou regulovatelné). Mezi těmito zdroji jsou například elektrárny na uhlí, zemní plyn, či biomasu. Jejich pořadí opět určí to, za jak nízkou cenu jsou tyto elektrárny schopné produkovat elektřinu. Toto pořadí je tedy závislé na cenách paliva pro tyto elektrárny a na jejich emisní náročnosti – čím víc vypustí elektrárna oxidu uhličitého na jednotku vyrobené elektřiny, tím víc musí elektrárna zaplatit na emisních povolenkách, a tím je jednotková cena vyrobené elektřiny dražší. To je mechanismus, kterým emisní povolenky motivují snižování emisní náročnosti celé soustavy[^2].
 
-Mezi cenou nejlevnějších a nejdražších zdrojů jsou obrovské rozdíly. **Během jednoho dne tak cena elektřiny může oscilovat mezi nulou a několika sty euro**, podle momentální spotřeby a podle výroby z obnovitelných zdrojů. Instalovaný výkon obnovitelných zdrojů bude v Evropě nadále růst. Můžeme tedy čekat **častější hodiny s velmi nízkou ceny elektřiny** a tedy i **méně hodin s velmi vysokými cenami elektřiny**. Tímto budeme postupně snižovat závislost na fosilních zdrojích a také emise skleníkových plynů v energetice. Velkých fluktuací ceny elektřiny se ale jen tak nezbavíme.
+Mezi cenou nejlevnějších a nejdražších zdrojů jsou obrovské rozdíly. **Během jednoho dne tak cena elektřiny může oscilovat mezi nulou a několika sty euro**, podle momentální spotřeby a podle výroby z obnovitelných zdrojů. Instalovaný výkon obnovitelných zdrojů bude v Evropě nadále růst. Můžeme tedy čekat **častější hodiny s velmi nízkou ceny elektřiny** a tedy i **méně hodin s velmi vysokými cenami elektřiny**. Tímto budeme postupně snižovat závislost na fosilních zdrojích a také emise skleníkových plynů v energetice. Velkých výkyvů ceny elektřiny na burze se ale jen tak nezbavíme.
 
 ## Dodatky
 
-### Jak konkrétně ČEPS zajišťuje rovnováhu mezi výrobou a spotřebou v každém okamžiku?
+### Jak konkrétně ČEPS zajišťuje rovnováhu mezi výrobou a spotřebou v každém okamžiku? {#ceps}
 Společnost ČEPS pro zajištění výkonové rovnováhy využívá nasmlouvaných dodavatelů podpůrných služeb, v tomto případě konkrétně tzv. _služeb výkonové rovnováhy_. Dodavatelé služeb výkonové rovnováhy jsou dnes v Česku typicky velké elektrárny a teplárny, které mají **flexibilní výrobu**. Jde tedy [hlavně o uhelné nebo plynové zdroje](https://www.ceps.cz/cs/statistiky-svr), které mohou rychle začít vyrábět elektřinu v případě jejího nedostatku, nebo s výrobou rychle přestat v případě přebytku. Kromě běžných elektráren jsou pro pokrytí špiček poptávky po elektřině připraveny ještě další elektrárny v záloze, zpravidla plynové. Protože poptávka dosahuje špiček pouze malou část roku, tyto elektrárny jsou většinu roku nevyužity a na běžném trhu by nemohly pokrýt své fixní náklady. ČEPS tedy za poskytování podpůrných služeb platí kromě variabilních plateb za objem využitých služeb také fixní měsíční platby (za instalovaný výkon), kterými mohou elektrárny pokrývat své fixní náklady.
 
 Od začátku roku 2021 platí volnější [pravidla](https://oenergetice.cz/prenos-elektriny/ceps-upravila-kodex-rizeni-soustavy-se-budou-moci-zapojit-nove-subjekty), podle kterých bude v budoucnu možné otevřít trh s těmito službami pro více obchodních modelů: např. pro bateriová úložiště nebo pro **flexibilitu ve spotřebě**. Tu mohou nabízet např. velké chlazené sklady, kde příliš nezáleží na rozdílu několika stupňů Celsia. Při nedostatku elektřiny tak mohou o něco odložit chlazení nebo naopak při přebytku elektřiny sklady zchladit více a tím stabilizovat síť. Firmy jsou motivovány poskytovat podpůrné služby jednak fixními kapacitními platbami, jednak poplatky za každé skutečné využití těchto služeb.
