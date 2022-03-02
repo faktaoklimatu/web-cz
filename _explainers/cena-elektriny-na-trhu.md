@@ -75,12 +75,11 @@ Upozorňujeme, že tento ilustrativní graf _merit orderu_ je velmi zjednodušen
 
 
 ## Jak každá elektrárna stanovuje svou minimální cenu, za kterou bude dodávat elektřinu?
+Elektrárny mají obecně dva druhy nákladů – fixní náklady a variabilní náklady. **Fixní náklady** jsou výdaje, které musí majitel elektrárny platit bez ohledu na to, jestli elektrárna běží, nebo stojí. Jsou to například mzdy zaměstnancům, náklady na údržbu, či rozpočítané náklady na stavbu elektrárny. **Variabilní náklady** jsou výdaje, které majitel musí zaplatit za každou jednotku vyrobené elektřiny. Sem patří zejména cena paliva, a případně i cena emisní povolenky, pokud elektrárna při výrobě elektřiny spaluje fosilní paliva a tedy vypouští oxid uhličitý.
 
 {% include preview-box.html
     slug="emisni-povolenky-ets"
 %}
-
-Elektrárny mají obecně dva druhy nákladů – fixní náklady a variabilní náklady. **Fixní náklady** jsou výdaje, které musí majitel elektrárny platit bez ohledu na to, jestli elektrárna běží, nebo stojí. Jsou to například mzdy zaměstnancům, náklady na údržbu, či rozpočítané náklady na stavbu elektrárny. **Variabilní náklady** jsou výdaje, které majitel musí zaplatit za každou jednotku vyrobené elektřiny. Sem patří zejména cena paliva, a případně i cena emisní povolenky, pokud elektrárna při výrobě elektřiny spaluje fosilní paliva a tedy vypouští oxid uhličitý.
 
 Každý majitel elektrárny chce vyrábět elektřinu vždy, kdy se mu to vyplatí, což znamená, kdy cena prodané jednotky elektřiny přesáhne výrobní náklady na tuto jednotku elektřiny. Elektrárny tak nabízejí elektřinu za částku, které je rovná jejich variabilním nákladům – za nižší částku nejsou ochotny elektřinu vyrábět (s výjimkou jaderných elektráren, které je drahé odstavovat). Za vyrobenou elektřinu pak elektrárny zpravidla dostanou vyšší částku, než jaká byla jejich nabídková cena – dostanou peníze podle ceny elektřiny na trhu.
 
@@ -108,7 +107,7 @@ Pokud jsou tyto ceny příliš nízké, některé elektrárny nezvládnou pokrý
 
 {% include figure.html
     name="naklady-des.png"
-    name-mobile="naklady-des.gif"
+    name-mobile="naklady-des.png"
     alt="Struktura nákladů podle typu elektrárny"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -155,8 +154,9 @@ Solární a větrné zdroje mají velmi nízké provozní náklady a relativně 
 Kombinace vysokých investičních nákladů a nízkých provozních nákladů se ovšem týká i nových jaderných zdrojů, proto akciová společnost ČEZ při diskuzích o výstavbě nových reaktorů opakovaně požaduje od státu nějakou podporu nebo garanci výkupní ceny.
 
 ## Zdroje
-* ["Úvod do liberalizované energetiky: Trh s elektřinou"](https://www.mpo-efekt.cz/upload/7799f3fd595eeee1fa66875530f33e8a/kniha-trh-s-elektrinou.pdf)
-* ["Open Electricity Economics Handbook"](http://open-electricity-economics.org/index.html)
+* Asociace energetických manažerů. ["Úvod do liberalizované energetiky: Trh s elektřinou"](https://www.mpo-efekt.cz/upload/7799f3fd595eeee1fa66875530f33e8a/kniha-trh-s-elektrinou.pdf)
+* OEE Project. ["Open Electricity Economics Handbook"](http://open-electricity-economics.org/index.html)
+* ERÚ. ["Roční zpráva o provozu elektrizační soustavy České republiky za rok 2020"](https://www.eru.cz/documents/10540/6616306/Rocni_zprava_provoz_ES_2020.pdf/edc0cb03-700a-43a7-8c08-a1ccb3f2d173)
 
 ## Poznámky
 
