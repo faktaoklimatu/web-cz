@@ -47,7 +47,7 @@ Spotřeba elektřiny v ČR se v závislosti na dni a hodině pohybuje mezi 4,5 G
     source-url="https://faktaoklimatu.cz"
 %}
 
-Pro zapínání a vypínání elektráren je zásadních několik parametrů: (1) jejich maximální možná výroba (_instalovaný výkon_), (2) rychlost, s jakou je možné je zapnout (_doba náběhu_), např. k pokrytí denní špičky spotřeby a samozřejmě (3) variabilní náklady na výrobu elektřiny. Elektrárny v ČR můžeme zjednodušeně rozdělit do následujících hlavních kategorií:[^1]
+Pro zapínání a vypínání elektráren je zásadních několik parametrů: (1) jejich maximální možná výroba (_instalovaný výkon_), (2) rychlost, s jakou je možné je zapnout (_doba náběhu_), např. k pokrytí denní špičky spotřeby a samozřejmě (3) náklady na výrobu elektřiny. Elektrárny v ČR můžeme zjednodušeně rozdělit do následujících hlavních kategorií:[^1]
 
 {% include figure.html
     name="zdroje-elektriny.png"
@@ -59,7 +59,7 @@ Pro zapínání a vypínání elektráren je zásadních několik parametrů: (1
 
 Které elektrárny v daný den a hodinu poběží, se přitom **rozhoduje na burze s elektřinou** – poběží ty, kterým se na daný den a hodinu podaří svou elektřinu na trhu prodat (elektrárny samozřejmě musí při prodeji elektřiny respektovat svoji schopnost elektřinu v daný den a hodinu skutečně vyrobit a tedy i svoji dobu náběhu). 
 
-Jako první pro uspokojení poptávky po elektřině se využívají ty zdroje, které produkují nejlevnější elektřinu (tzn. podávají nejlevnější nabídky elektřiny). Když je poptávka vyšší, než kolik mohou uspokojit levné zdroje elektřiny, využívají se dražší a dražší zdroje, dokud není poptávka uspokojena. Tomuto seřazení zdrojů podle ceny se v angličtině říká _merit order_.
+Jako první pro uspokojení poptávky po elektřině se využívají ty zdroje, které produkují nejlevnější elektřinu (tzn. podávají nejlevnější nabídky elektřiny). Když je poptávka vyšší, než kolik mohou uspokojit levné zdroje elektřiny, využívají se dražší a dražší zdroje, dokud není poptávka uspokojena. Naopak při snižování poptávky po elektřině se ty nejdražší zdroje elektřiny přestávají využívat jako první. Tomuto seřazení zdrojů podle ceny se v angličtině říká _merit order_.
 
 {% include figure.html
     name="merit-order-des.png"
@@ -69,17 +69,10 @@ Jako první pro uspokojení poptávky po elektřině se využívají ty zdroje, 
     source-url="https://faktaoklimatu.cz"
 %}
 
-Tento mechanismus funguje i naopak, při snižování poptávky po elektřině se ty nejdražší zdroje elektřiny přestávají využívat jako první.
+Jak ukazuje náš graf, v danou chvíli typicky není k dispozici veškerý instalovaný výkon. Počasí omezuje výkon solárních a větrných elektráren. Uhelné a plynové elektrárny často rezervují část svého výkonu na vyrovnávání sítě (na pokyny společnosti ČEPS) a tak tento výkon nemůžou nabízet na burze. Výkon jaderných elektráren mohou omezit plánované odstávky.
 
-{% include figure.html
-    name="merit-order-01.png"
-    name-mobile="merit-order-animace-mob.gif"
-    alt="Merit order (ilustrovaný animací)"
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz"
-%}
+Graf merit orderu výše je pro ilustraci velmi zjednodušený. Nabídkové ceny jednotlivých elektráren nejsou veřejně k dispozici, každá elektrárna v dané kategorii má v praxi trochu jinou efektivitu a tedy trochu jiné náklady. Skutečná křivka merit orderu tak bude tvořena spoustou maličko odlišných cenových úrovní místo těch několika málo, které ukazujeme zde.
 
-Upozorňujeme, že grafy merit orderu výše jsou pro ilustraci velmi zjednodušené. Skutečné ceny jednotlivých elektráren nejsou veřejně k dispozici, každá elektrárna v dané kategorii má v praxi trochu jinou efektivitu a tedy trochu jiné náklady. Skutečná křivka merit orderu tak bude tvořena spoustou maličko odlišných cenových úrovní místo těch několika málo, které ukazujeme zde.
 
 ## Jak každá elektrárna stanovuje svou minimální cenu, za kterou bude dodávat elektřinu?
 Elektrárny mají obecně dva druhy nákladů – fixní náklady a variabilní náklady. **Fixní náklady** jsou výdaje, které musí majitel elektrárny platit bez ohledu na to, jestli elektrárna běží, nebo stojí. Jsou to například mzdy zaměstnancům, náklady na údržbu, či rozpočítané náklady na stavbu elektrárny. **Variabilní náklady** jsou výdaje, které majitel musí zaplatit za každou jednotku vyrobené elektřiny. Sem patří zejména cena paliva, a případně i cena emisní povolenky, pokud elektrárna při výrobě elektřiny spaluje fosilní paliva a tedy vypouští oxid uhličitý.
@@ -88,6 +81,14 @@ Každý majitel elektrárny chce vyrábět elektřinu vždy, kdy se mu to vyplat
 
 ## Jak se stanovuje cena elektřiny na trhu?
 V každém okamžiku se porovnává poptávka po elektřině od zákazníků s minimálními cenami od jednotlivých elektráren. Pro Českou republiku se to děje na energetické burze PXE v Praze. Ty nejlevnější elektrárny, které jsou dohromady schopné uspokojit poptávku, vyrábějí elektřinu. **Cena elektřiny na trhu je pak ta cena, za kterou elektřinu vyrábí ten poslední (nejdražší) zdroj, který je ještě potřeba k uspokojení poptávky – tuto částku obdrží všechny právě vyrábějící elektrárny**, i ty, které nabídly nižší nabídkovou částku. 
+
+{% include figure.html
+    name="merit-order-animace.gif"
+    name-mobile="merit-order-animace-mob.gif"
+    alt="Merit order (ilustrovaný animací)"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz"
+%}
 
 Tím trh zajišťuje, že elektrárny mají motivaci nabídnout nejnižší možné ceny za výrobu elektřiny (kdyby nabídly vyšší, posunou se v _merit order_ a jejich služby nemusí být vůbec využity), ale přitom většinou dostanou vyšší částku, ze které mohou generovat zisk. Celkově to tedy znamená, že čím je vyšší poptávka po elektřině, tím se musí zapojovat dražší a dražší zdroje elektřiny, což navyšuje cenu elektřiny pro celý trh.
 
