@@ -40,8 +40,8 @@ Na stránkách ČEPS můžete sledovat živě data o [výrobě elektřiny](https
 Spotřeba elektřiny v ČR se v závislosti na dni a hodině pohybuje mezi 4,5 GW a 11,5 GW. Celkový instalovaný výkon všech elektráren (vč. tepláren) v ČR je ale [zhruba 21,3 GW](https://www.eru.cz/documents/10540/6616306/Rocni_zprava_provoz_ES_2020.pdf/edc0cb03-700a-43a7-8c08-a1ccb3f2d173). Protože export do zahraničí má kapacitní omezení, mohou v každém okamžiku běžet jen některé elektrárny a ostatní jsou ponechány vypnuté.
 
 {% include figure.html
-    name="vyroba-spotreba-des.png"
-    name-mobile="vyroba-spotreba-des.png"
+    name="vyroba-spotreba-des.svg"
+    name-mobile="vyroba-spotreba-des.svg"
     alt="Kolik můžeme vyrobit a kolik zvládneme spotřebovat"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -50,8 +50,8 @@ Spotřeba elektřiny v ČR se v závislosti na dni a hodině pohybuje mezi 4,5 G
 Pro zapínání a vypínání elektráren je zásadních několik parametrů: jejich **maximální možná výroba** (_instalovaný výkon_), **rychlost, s jakou je možné je zapnout** (_doba náběhu_), např. k pokrytí denní špičky spotřeby, a také **náklady na výrobu elektřiny**. Elektrárny v ČR můžeme zjednodušeně rozdělit do následujících hlavních kategorií:[^1]
 
 {% include figure.html
-    name="zdroje-elektriny.png"
-    name-mobile="zdroje-elektriny.png"
+    name="zdroje-elektriny-des.svg"
+    name-mobile="zdroje-elektriny-des.svg"
     alt="Hlavní typy zdrojů elektřiny v ČR"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -62,8 +62,8 @@ Které elektrárny v daný den a hodinu poběží, se přitom **rozhoduje na bur
 Jako první pro uspokojení poptávky po elektřině se využívají ty zdroje, které produkují nejlevnější elektřinu (tzn. podávají nejlevnější nabídky elektřiny). Když je poptávka vyšší, než kolik mohou uspokojit levné zdroje elektřiny, využívají se dražší a dražší zdroje, dokud není poptávka uspokojena. Naopak při snižování poptávky po elektřině se ty nejdražší zdroje elektřiny přestávají využívat jako první. Tomuto seřazení zdrojů podle ceny se v angličtině říká _merit order_.
 
 {% include figure.html
-    name="merit-order-des.png"
-    name-mobile="merit-order-des.png"
+    name="merit-order-des.svg"
+    name-mobile="merit-order-des.svg"
     alt="Ilustrace seřazení zdrojů podle ceny (tzv. merit order)"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -106,8 +106,8 @@ Pokud jsou tyto ceny příliš nízké, některé elektrárny nezvládnou pokrý
 ## Které zdroje elektřiny jsou nejlevnější a které nejdražší?
 
 {% include figure.html
-    name="naklady-des.png"
-    name-mobile="naklady-des.png"
+    name="naklady-des.svg"
+    name-mobile="naklady-des.svg"
     alt="Struktura nákladů podle typu elektrárny"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
