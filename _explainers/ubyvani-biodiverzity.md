@@ -124,7 +124,15 @@ K jak velkým ztrátám biodiverzity vlivem klimatických změn nakonec dojde, d
 
 ## Jak a kde ubývá biodiverzita v Česku?
 
-Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které sloužily jako útočiště pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček[^23] nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17] 
+Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkční lesy z velké části změnily už před stovkami let. I v člověkem utvářené krajině nicméně po staletí zůstávalo množství míst, které sloužily jako útočiště pro svéráznou faunu a flóru. Hlavní příčinou, proč biodiverzita dnes klesá také ve středoevropských podmínkách, je právě ubývání těchto drobných biotopů v důsledku regulace řek, rozorávání rozptýlené zeleně a květnatých luk, kácení starých stromů s dutinami, vysazování monokulturních plodin na polích a dřevin v lesích či meliorace mokřadů.[^16] Vysoké dávky dusíkatých hnojiv a herbicidů vytlačují kvetoucí okraje polí včetně hmyzu a ptáků, kteří se zde živí – proto u nás polních ptáků rychle ubývá a druhy jako sýček[^23] nebo chocholouš, které bývaly v naší venkovské krajině dříve zcela běžné, patří dnes mezi kriticky ohrožené.[^17]
+
+{% include figure.html
+    name="sycek-skrivan-des.jpg"
+    name-mobile="sycek-skrivan-mob.jpg"
+    caption="Ohrožený sýček obecný a skřivan polní"
+    alt="Obrázek skřivana polního a sýčka obecného"
+    source-text="Andy Morffew, CC BY 2.0, a Alun Williams333, CC BY-SA 4.0, obojí prostřednictvím Wikimedia Commons. Oba obrázky byly oříznuty a spojeny v jeden."
+%}
 
 V Česku je tedy pro biodiverzitu naprosto klíčová změna způsobu hospodaření v zemědělství a v lesích, která: 
 - __umožní existenci drobných biotopů__ 
