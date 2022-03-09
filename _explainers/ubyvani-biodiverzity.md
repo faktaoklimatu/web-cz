@@ -129,7 +129,7 @@ Ve střední Evropě se přírodní biotopy v zemědělskou půdu či produkčn�
 {% include figure.html
     name="sycek-skrivan-des.jpg"
     name-mobile="sycek-skrivan-mob.jpg"
-    caption="Ohrožený sýček obecný a skřivan polní"
+    caption="Kriticky ohrožený sýček obecný (vlevo) a skřivan polní jako příklad druhu, jehož dnes rychle ubývá"
     alt="Obrázek skřivana polního a sýčka obecného"
     source-text="Andy Morffew, CC BY 2.0, a Alun Williams333, CC BY-SA 4.0, obojí prostřednictvím Wikimedia Commons. Oba obrázky byly oříznuty a spojeny v jeden."
 %}
