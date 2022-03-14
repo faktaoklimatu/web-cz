@@ -10,7 +10,7 @@ tags-topics: [ klima ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 61 let o 2,0 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"
-data-our:   "https://docs.google.com/spreadsheets/d/1teHfVP8ULNMucrfxx85PtkCT5F_JXgTlF2KOqWOndMA/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1uxIsR2OcKT1rF7cvLiT_QrezAXN63ikOIfpef7TZvMc/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 ---
 
