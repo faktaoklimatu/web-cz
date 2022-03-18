@@ -26,7 +26,7 @@ Všechny živé organismy jsou závislé na prostředí, kde žijí, a zároveň
 
 {% include figure.html
     name="biodiverzita-aspekty.svg"
-    name-mobile="biodiverzita-aspekty.svg"
+    name-mobile="biodiverzita-aspekty-mob.svg"
     alt="Diagram tří aspektů biodiverzity"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -42,10 +42,10 @@ Zatím bylo na světě objeveno asi 1,5 milionu druhů živočichů, rostlin neb
 
 {% include figure.html
     name="biodiverzita-ohrozene-druhy.svg"
-    name-mobile="biodiverzita-ohrozene-druhy.svg"
-    alt="TODO"
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz"
+    name-mobile="biodiverzita-ohrozene-druhy-mob.svg"
+    alt="Graf znázorňující podíl druhů ohrožených vyhubením. Ze všech savců na zemi je dnes vyhubením ohrožen každý čtvrtý, u obojživelníků se hrozí vymření téměř polovině."
+    source-text="The global assessment report on biodiversity and ecosystem services (IPBES), 2019"
+    source-url="https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf"
 %}
 
 __Mizí především specializovanější nebo náročnější druhy__. Krajině více a více dominují přizpůsobiví generalisté, kteří dovedou žít ledaskde. Navíc v ní ubývají specifické skupiny, které přírodní svět z velké části utvářely (a přímo či nepřímo tvořily podmínky pro život mnoha dalších druhů): velké staré stromy nebo velcí savci jako bizoni, vlci, sloni a další.
@@ -54,8 +54,8 @@ __Mizí především specializovanější nebo náročnější druhy__. Krajině
 
 {% include figure.html
     name="biodiverzita-faktory.svg"
-    name-mobile="biodiverzita-faktory.svg"
-    alt="TODO"
+    name-mobile="biodiverzita-faktory-mob.svg"
+    alt="Pět piktogramů představující hlavní faktory ztráty biodiverzity"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -72,7 +72,7 @@ Na ztrátách biodiverzity se podílí těchto pět hlavních faktorů:
 
 {% include lead-in-figure.html
     name="faktor-ubyvani-biotopu.svg"
-    alt="TODO"
+    alt="Piktogram ubývání biotopů"
 %}
 
 __Na celosvětové úrovni bývá hlavní příčinou ubývání biotopů zabírání půdy ve prospěch polí a plantáží__ -- typickou ukázkou je mizení tropických pralesů kvůli pěstování palmy olejné v Indonésii. Když vědci zkoumali 8688 druhů (převážně obratlovců), které se ocitly na světovém Červeném seznamu IUCN,[^5] zjistili, že zemědělství je spojeno s vymíráním u 5407 z nich a těžba dříví u 4049 druhů. Kdyby agrární expanze pokračovala současným tempem, během příštích tří dekád přijde přinejmenším o čtvrtinu svého současného biotopu bezmála 1300 druhů obratlovců.[^8]
@@ -83,7 +83,7 @@ __Nejrapidněji ze všech biotopů přitom mizí často právě ty, které jsou 
 
 {% include lead-in-figure.html
     name="faktor-nadmerna-exploatace.svg"
-    alt="TODO"
+    alt="Piktogram nadměrné exploatace"
 %}
 
 Většinou si ji spojujeme s pytlačením slonů či nosorožců nebo s pašováním papoušků a korálů. __Problém se ale týká především ryb__. Třetina populací komerčně využívaných mořských ryb je přelovená a dalších 60 % se loví na hranici udržitelnosti.[^10]
@@ -92,7 +92,7 @@ Většinou si ji spojujeme s pytlačením slonů či nosorožců nebo s pašová
 
 {% include lead-in-figure.html
     name="faktor-znecisteni.svg"
-    alt="TODO"
+    alt="Piktogram vysoké míry znečištění"
 %}
 
 __Toxicitu prostředí zvyšují především různé přípravky používané proti škůdcům a plevelům__, jako jsou insekticidy a herbicidy. Ty se v zemědělství používají stále ve velkém množství. Problém se týká například řepky a kukuřice, u nichž zejména při opakovaném pěstování na stejném místě počet škůdců významně narůstá a je regulovatelný jen obtížně.[^12] Některé škodlivé látky se v půdě časem rozkládají, jiné v ní však zůstávají navždy. V Česku byly nadlimitní koncentrace pesticidů a jejich reziduí nalezeny ve 40 % podzemních vod.[^13] 
@@ -104,7 +104,7 @@ Další ohrožení biologické rozmanitosti představují __velké dávky dusík
 
 {% include lead-in-figure.html
     name="faktor-nepuvodni-druhy.svg"
-    alt="TODO"
+    alt="Piktogram šíření nepůvodních druhů"
 %}
 
 Vážným problémem se pro biodiverzitu stává také šíření nepůvodních druhů, které v různých částech světa vytlačují domácí faunu a flóru. Již zmíněný populární pták dronte mauricijský vyhynul nejen proto, že jej ve velkém konzumovali námořníci, ale také kvůli potkanům, prasatům a opicím, které jejich lodě přivezly -- vyžírali totiž jeho vejce. Některé druhy se šíří v důsledku měnících se přírodních podmínek (například změn klimatu), nicméně __zásadní z hlediska šíření exotických druhů je člověk a jeho aktivity__ (například cestování či doprava zboží po celém světě).[^14]
@@ -113,7 +113,7 @@ Vážným problémem se pro biodiverzitu stává také šíření nepůvodních 
 
 {% include lead-in-figure.html
     name="faktor-klimaticka-zmena.svg"
-    alt="TODO"
+    alt="Piktogram klimatické změny"
 %}
 
 Z globálního hlediska sice změny klimatu zatím hlavní příčinou ubývání biodiverzity nejsou, na lokální úrovni ale může leckdy být jejich dopad na konkrétní biotop významný – uvést lze třeba biotopy pramenišť a rašelinišť, které jsou ohrožené vysycháním a nedostatkem srážek. Důležitou roli bude nepochybně hrát další nárůst koncentrací skleníkových plynů v atmosféře – a jak velkých rozměrů změny klimatu v příštích dekádách dosáhnou. Kromě toho však bude (lokálně) záležet také __na kombinaci tří dalších faktorů: schopnosti konkrétních druhů se na nové klimatické podmínky adaptovat, přesouvat se jinam a také na tom, jestli mají kam (a kudy) se přesunout.__ To je u jednotlivých druhů velmi různé.
