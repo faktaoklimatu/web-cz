@@ -27,7 +27,7 @@ Všechny živé organismy jsou závislé na prostředí, kde žijí, a zároveň
 {% include figure.html
     name="biodiverzita-aspekty.svg"
     name-mobile="biodiverzita-aspekty.svg"
-    alt="TODO"
+    alt="Diagram tří aspektů biodiverzity"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
