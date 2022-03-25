@@ -22,7 +22,7 @@ Infografika obsahuje přehled jednotlivých fondů EU, přičemž u každého je
 Jak bylo zmíněno výše, finance pro jednotlivé fondy pochází zejména z tří zdrojů, kterými jsou:
 *  **Rozpočet EU** (tzv. Víceletý finanční rámec, *Multiannual financial framework*) – skládá se z příspěvků členských zemí (více než 50 % rozpočtu), výnosů z DPH a cel (necelá třetina rozpočtu) a dalších zdrojů, jako jsou daně evropských zaměstnanců aj.
 *   **NextGenerationEU** (*NGEU*) – nástroj, který je tvořen zejména společnou půjčkou zemí EU ve výši 750 mld. €.[^dluhopisy]
-*   **Emisní povolenky** (*EU Emissions Trading System, EU ETS*) – jde o výnosy z tzv. systému pro obchodování s emisními povolenkami, kdy vybrané podniky na základě principu **znečišťovatel platí** platí za vypuštěné emise oxidu uhličitého.
+*   **Emisní povolenky** (*EU Emissions Trading System, EU ETS*) – jde o výnosy z tzv. systému pro obchodování s emisními povolenkami, kdy vybrané podniky na základě principu **znečišťovatel platí** platí za vypuštěné emise skleníkových plynů.
 
 **Klimatická opatření** lze chápat jako opatření, která **zmírňují dopady změny klimatu** (<glossary id="mitigace">mitigace</glossary>), a tedy podporují zejména snižování emisí skleníkových plynů, nebo se jim přizpůsobují (<glossary id="adaptace">adaptace</glossary>). Jde o širokou paletu opatření od zavádění obnovitelných zdrojů energie (OZE) přes snižování emisní náročnosti dopravy a budov po udržitelné zemědělství nebo komunitní energetiku. Do opatření patří i velké projekty na vývoj technologí pro zachycování uhlíku či skladování energie. Klimatická opatření, na která se zaměřují jednotlivé fondy, infografika přibližuje v sekci účel.
 
