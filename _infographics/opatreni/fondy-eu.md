@@ -5,7 +5,7 @@ slug:          "fondy-eu"
 redirect_from: "/fondy-eu"
 published:     2022-03-26
 weight:        98
-tags-scopes:   [ eu ]
+tags-scopes:   [ eu, cr ]
 tags-topics:   [ opatreni, ekonomika ]
 data-our:      "https://docs.google.com/spreadsheets/d/1Gwdx01ZypyEGfi13M1WvgiJCrqfU5ihKm685y3xz4j0/edit?usp=sharing"
 caption:       "Česká republika v následujících letech obdrží z fondů EU bezprecedentní objem financí na klimatická opatření. Tyto prostředky budou podle ceny emisních povolenek odpovídat 450 až 800 miliardám korun a budou směřovat do mnoha oblastí: od obnovitelných zdrojů energie a komunitní energetiky přes zlepšování energetické účinnosti až po udržitelné zemědělství a další."
@@ -54,8 +54,6 @@ Ačkoliv je [FST](https://www.mzp.cz/cz/opst_2021_2027) formálně součástí E
 
 [Inovační fond](https://ec.europa.eu/clima/eu-action/funding-climate-action/innovation-fund_en) slouží k **podpoře velkých inovativních projektů**, přičemž o konkrétních projektech se rozhoduje na úrovni celé EU, nikoliv na národní úrovni, jako tomu je u fondů uvedených výše. Nelze tak dopředu říct, kolik českých projektů a v jakém objemu bude podpořeno. Podobně jako Modernizační fond je i Inovační fond **financován výnosy z prodeje emisních povolenek** (celkem 450 milionů povolenek). Fond směřuje na projekty zaměřené zejména na nízkouhlíkové technologie v energeticky náročných průmyslových odvětvích, skladování energie, zachycování a skladování uhlíku (*Carbon capture and storage, CCS*) či průmyslovém zachycování a využívání uhlíku (*Carbon capture and utilization, CCU*).
 
-## Další možné zdroje financování klimatických opatření
-
 ### Sociální klimatický fond
 
 {% include preview-box.html
@@ -66,17 +64,17 @@ Ačkoliv je [FST](https://www.mzp.cz/cz/opst_2021_2027) formálně součástí E
 
 [Sociální klimatický fond](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0568) je navržen v balíčku Fit for 55 s cílem **podpořit zranitelné skupiny zasažené dekarbonizací**. Jednání o tomto fondu dosud probíhají. Zdrojem financování by měly být (podobně jako v případě Modernizačního a Inovačního fondu) výnosy z prodeje emisních povolenek – s tím rozdílem, že by mělo jít o povolenky z tzv. systému EU ETS 2, který se má vztahovat na budovy a silniční dopravu. Česko by z fondu v letech 2025–2032 mělo obdržet přibližně **45,1 miliard korun**, přičemž tyto finance by měly směřovat na energetickou účinnost, OZE a nízkouhlíkovou dopravu. Podobně jako u Fondu spravedlivé transformace platí, že fond má minimalizovat hlavně negativní dopady dekarbonizace, a všechny finance tak nemusí být využity přímo na klimatická opatření.
 
+## Další možné zdroje financování klimatických opatření z EU a státního rozpočtu
+
 ### Ekoschémata v rámci Společné zemědělské politiky
 
 Společná zemědělská politika (SZP) tvoří přibližně třetinu výdajů z rozpočtu EU. Součástí [reformy](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/new-cap-2023-27_en) SZP pro období 2023–2027 jsou i tzv. [ekoschémata](https://www.carbonbrief.org/qa-will-eu-common-agricultural-policy-reforms-help-tackle-climate-change), v rámci kterých by měli být farmáři odměňováni za aktivity, jež prospívají životnímu prostředí a pomáhají bojovat se změnou klimatu. V prvních letech by mělo jít o 20 % rozpočtu SZP, poté 25 %. Konkrétní objem financí zatím není znám, Česko k březnu 2022 čeká na schválení svého Strategického plánu SZP Evropskou komisí.[^strategicky-plan-szp]
 
-### Státní rozpočet a soukromé investice
+### Státní rozpočet
 
 Česká republika se svým státním rozpočtem různou měrou podílí na **kofinancování** projektů z fondů EU. Míra tohoto kofinancování se liší jak mezi jednotlivými fondy, tak v rámci fondů – v závislosti na typu příjemce, kteří se rovněž ve většině případů na kofinancování podílejí, nebo na hospodářské rozvinutosti regionu.[^kofinancovani]
 
 **Výnosy z emisních povolenek**, které Česko získá jejich dražbou, plynou do státního rozpočtu. Podle současných požadavků Evropské komise by 50 % z výnosů mělo směřovat na klimatická opatření. V rámci návrhů balíčku Fit for 55 by se měl tento podíl zvýšit na 100 %. V současné době ČR informace o tom, na jaké konkrétní projekty výnosy z povolenek směřují, nezveřejňuje.[^frank-bold]
-
-Roli hrají i soukromé investice do klimatických opatření. Účast soukromého sektoru je pro dosažení klimatických cílů nezbytná.
 
 ## Zdroje a poznámky
 
