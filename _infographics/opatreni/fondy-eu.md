@@ -4,7 +4,7 @@ title:         "Finance z fondů EU na klimatická opatření v ČR"
 slug:          "fondy-eu"
 redirect_from: "/fondy-eu"
 published:     2022-03-26
-weight:        98
+weight:        94.5
 tags-scopes:   [ eu, cr ]
 tags-topics:   [ opatreni, ekonomika ]
 data-our:      "https://docs.google.com/spreadsheets/d/1Gwdx01ZypyEGfi13M1WvgiJCrqfU5ihKm685y3xz4j0/edit?usp=sharing"
