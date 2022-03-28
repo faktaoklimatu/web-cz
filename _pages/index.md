@@ -28,8 +28,8 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">Na úrovni Evropské unie aktuálně probíhá diskuze o balíčku legislativních návrhů nazvaném Fit for 55, jehož cílem je dosáhnout 55% snížení emisí do roku 2030 oproti roku 1990. Obsah balíčku přibližujeme ve dvou infografikách níže. Dále vysvětlujeme, jak fungují emisní povolenky a ukazujeme další způsoby zpoplatnění emisí ve světě. Konkrétní data o vývoji emisí skleníkových plynů v EU od roku 1990 do současnosti pak znázorňujeme v samostatné infografice. Většina zemí již rozhodla o termínu ukončení spalování a těžby uhlí, čtyři už tzv. uhelný phase-out dokončily. Konkrétní termíny zobrazujeme v infografice níže.</p>
-    {% assign featured_slugs = "fit-for-55, fit-for-55-opatreni, emisni-povolenky-ets, zpoplatneni-emisi-svet, emise-eu-vyvoj, uhelny-phaseout-eu" | split: ", " %}
+    <p class="lead mb-0">Na úrovni Evropské unie aktuálně probíhá diskuze o balíčku legislativních návrhů nazvaném Fit for 55, jehož cílem je dosáhnout 55% snížení emisí do roku 2030 oproti roku 1990. Obsah balíčku přibližují infografiky níže doprovozené dalšími materiály kontextualizujícími evropskou dekarbonizaci a transformaci hospodářství.</p>
+    {% assign featured_slugs = "fit-for-55, fit-for-55-opatreni, emisni-povolenky-ets, fondy-eu, emise-eu-vyvoj, uhelny-phaseout-eu" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
     <p class="lead">Na téma aktuálně diskutovaných klimatických opatření v balíčku Fit for 55 se zaměřujeme i v podcastu 2050. K podobám a způsobům dekarbonizace a snižování emisí jsou relevantní i naše další materiály.</p>
