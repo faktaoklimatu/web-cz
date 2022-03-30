@@ -22,12 +22,13 @@ data-orig:
 
 Infografika zobrazuje podíl států, které se hlásí k uhlíkové neutralitě, na světových emisích CO<sub>2</sub> v roce 2018. Kromě odvětví využívání půdy, změny ve využívání půdy a lesnictví (*LULUCF, Land use, land use change and forestry*), jde o všechny emise CO<sub>2</sub> včetně mezinárodní námořní a letecké dopravy. **K březnu 2022 pocházelo 87 % světových emisí ze států, které k uhlíkové neutralitě směřují**, přičemž těchto států je celkem 131.
 
-Ač se některé státy hlásí ke klimatické (*climate neutrality, net-zero emissions*) a některé k uhlíkové neutralitě (*carbon neutrality, net-zero carbon*), v infografice je nerozlišujeme a pro všechny závazky používáme termín uhlíková neutralita. Zatímco první se týká všech skleníkových plynů, druhá "pouze" CO<sub>2</sub>. To znamená, že pokud se nějaká země hlásí ke klimatické neutralitě, tento závazek v sobě zahrnuje i neutralitu uhlíkovou. Více informací o uhlíkové neutralitě obecně najdete v našem [explaineru](/explainery/uhlikova-neutralita). Pro udržení oteplení planety pod 1,5 °C je potřeba dosáhnout uhlíkové neutrality kolem roku 2050 celosvětově. Závazky směřující k pozdějším termínům jsou pro naplnění tohoto cíle nedostatečné.
+Za státy směřující k uhlíkové neutralitě považujeme ty, které mají závazky: splněné (např. Bhútán), ustanovené v zákoně, ustanovené ve strategickém dokumentu, ve formě deklarace/závazku, nebo ve fázi návrhu/diskuze. Kdybychom vynechali státy, jejichž závazky jsou zatím ve fázi návrhu nebo diskuze, došlo by ke snížení pokrytých emisí o 3 % na 84 % světových emisí.
 
+Ač se některé státy hlásí ke klimatické (*climate neutrality, net-zero emissions*) a některé k uhlíkové neutralitě (*carbon neutrality, net-zero carbon*), v infografice je nerozlišujeme a pro všechny závazky používáme termín uhlíková neutralita. Zatímco první se týká všech skleníkových plynů, druhá "pouze" CO<sub>2</sub>. To znamená, že pokud se nějaká země hlásí ke klimatické neutralitě, tento závazek v sobě zahrnuje i neutralitu uhlíkovou. Více informací o uhlíkové neutralitě obecně najdete v našem [explaineru](/explainery/uhlikova-neutralita). Pro udržení oteplení planety pod 1,5 °C je potřeba dosáhnout uhlíkové neutrality kolem roku 2050 celosvětově. Závazky směřující k pozdějším termínům jsou pro naplnění tohoto cíle nedostatečné.
 
 ## Podrobněji k jednotlivým státům
 
-Ze států, které tvoří větší než 1% podíl na světových emisích, se k uhlíkové neutralitě nepřihlásily pouze Indonésie, Írán a Mexiko.
+Ze států, které tvoří větší než 1% podíl na světových emisích, se k uhlíkové neutralitě nepřihlásily pouze Írán a Mexiko.
 Pěti největšími emitenty jsou následující státy/uskupení, které se dohromady podílí na 63,2 % světových emisí CO<sub>2</sub>:
 
 1. **Čína**: 29,9% podíl na světových emisích CO<sub>2</sub>, termín uhlíkové neutrality je rok 2060,
