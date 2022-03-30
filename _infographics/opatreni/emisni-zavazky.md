@@ -7,7 +7,7 @@ published:     2022-03-30
 weight:        91
 tags-scopes:   [ svet ]
 tags-topics:   [ opatreni, emise ]
-caption:       "Přes 87 % světových emisí oxidu uhličitého pochází ze států, které směřují k uhlíkové neutralitě. Těchto států je již 131. Státy, které svůj závazek k uhlíkové neutralitě zatím nepředstavily, se naproti tomu podílí na 9 % světových emisí. 3,5 % emisí pak připadá mezinárodní námořní a letecké dopravě."
+caption:       "Přes 87 % světových emisí oxidu uhličitého pochází ze států, které směřují k uhlíkové neutralitě. Těchto států je již 131. Státy, které svůj závazek k uhlíkové neutralitě zatím nepředstavily, se naproti tomu podílí na 9 % světových emisí. 3,5 % emisí pak připadá na mezinárodní námořní a leteckou dopravu."
 data-orig:
   - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/net-zero-pledges.ipynb" ]
   - [ "Net Zero Tracker", "https://zerotracker.net/" ]
@@ -31,6 +31,7 @@ Ač se některé státy hlásí ke klimatické (*climate neutrality, net-zero em
 
 Ze států, které tvoří větší než 1% podíl na světových emisích, se k uhlíkové neutralitě nepřihlásily pouze Indonésie, Írán a Mexiko.
 Pěti největšími emitenty jsou následující státy/uskupení, které se dohromady podílí na 63,2 % světových emisí CO<sub>2</sub>:
+
 1. **Čína**: 29,9% podíl na světových emisích CO<sub>2</sub>, termín uhlíkové neutrality je rok 2060,
 2. **USA**: 13,7% podíl, rok 2050,
 3. **EU-27**, 8,2% podíl, rok 2050
@@ -42,5 +43,4 @@ Závazky ostatních států shrnujeme v rešerši [Emisní závazky států](/st
 ## Zdroje
 
 * Zdrojem termínů uhlíkové neutrality je projekt [Net Zero Tracker](https://zerotracker.net).
-
 * Zdrojem dat o emisích je databáze [EDGAR](https://edgar.jrc.ec.europa.eu/) (*Emission Database for Global Atmospheric Research*, Emisní databáze pro globální výzkum atmosféry) provozovaná Evropskou agenturou pro životní prostředí.
