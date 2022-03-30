@@ -13,7 +13,7 @@ intro: |
 items:
   - country:  "Čína"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
-    share:    "31,56 %"
+    share:    "29,95 %"
     netzero:  "2060"
     pledge30: "−65 % emisí na jednotku HDP oproti r. 2005"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CHN"
@@ -27,7 +27,7 @@ items:
         date:   2020-11-17
   - country:  "USA"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-    share:    "14,42 %"
+    share:    "13,69 %"
     netzero:  "2050"
     pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=USA"
@@ -38,7 +38,7 @@ items:
         date:   2021-11-04
   - country:  "EU 27"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
-    share:    "8,59 %"
+    share:    "8,15 %"
     netzero:  "2050"
     pledge30: "−55 % ročních emisí oproti r. 1990 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=EUU"
@@ -49,7 +49,7 @@ items:
         date:   2021-09-15
   - country:  "Indie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
-    share:    "7,03 %"
+    share:    "6,67 %"
     netzero:  "2070"
     pledge30: "−33 % až −35 % emisí na jednotku HDP oproti r. 2005"
     other:    "Nikdy nepřekročit průměr emisí na osobu vyspělých zemí"
@@ -61,7 +61,7 @@ items:
         date:   2021-09-15
   - country:  "Rusko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
-    share:    "5,00 %"
+    share:    "4,75 %"
     netzero:  "2060"
     pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=RUS"
@@ -72,7 +72,7 @@ items:
         date:   2021-10-29
   - country:  "Japonsko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
-    share:    "3,28 %"
+    share:    "3,12 %"
     netzero:  "2050"
     pledge30: "−46 % ročních emisí oproti r. 2013 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=JPN"
@@ -83,7 +83,7 @@ items:
         date:   2021-09-15
   - country:  "Jižní Korea"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
-    share:    "1,91 %"
+    share:    "1,81 %"
     netzero:  "2050"
     pledge30: "−40 % ročních emisí oproti r. 2018"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=KOR"
@@ -94,7 +94,7 @@ items:
         date:   2021-11-04
   - country:  "Írán"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
-    share:    "1,86 %"
+    share:    "1,76 %"
     pledge30: "Neratifikováno; −4 % ročních emisí oproti statu quo"
     links:
       - title:  CAT
@@ -108,7 +108,7 @@ items:
         date:   2018-11-30
   - country:  "Indonésie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
-    share:    "1,70 %"
+    share:    "1,61 %"
     netzero:  "(2060)"
     pledge30: "−29 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
     other:    "Podmíněný cíl: −41 % ročních emisí oproti statu quo"
@@ -120,7 +120,7 @@ items:
         date:   2021-11-01
   - country:  "Saúdská Arábie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
-    share:    "1,66 %"
+    share:    "1,57 %"
     netzero:  "2060"
     pledge30: "−278 Mt CO<sub>2</sub>eq oproti statu quo; odpovídá −19% až +24% změně emisí oproti r. 2019"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=SAU"
@@ -131,7 +131,7 @@ items:
         date:   2021-11-04
   - country:  "Kanada"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
-    share:    "1,66 %"
+    share:    "1,67 %"
     netzero:  "2050"
     pledge30: "−40 % až −45 % ročních emisí oproti r. 2005"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=CAN"
@@ -145,7 +145,7 @@ items:
         date:   2021-02-25
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
-    share:    "1,40 %"
+    share:    "1,33 %"
     pledge30: "−22 % ročních emisí oproti statu quo"
     other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=MEX"
@@ -156,7 +156,7 @@ items:
         date:   2021-09-15
   - country:  "Brazílie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
-    share:    "1,34 %"
+    share:    "1,27 %"
     netzero:  "2050"
     pledge30: "−43 % ročních emisí oproti r. 2005 (vrchol produkce)"
     other:    "Podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
@@ -171,7 +171,7 @@ items:
         date:   2021-04-22
   - country:  "Jihoafrická republika"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
-    share:    "1,28 %"
+    share:    "1,22 %"
     netzero:  "2050"
     pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −23% až −0,1% změně emisí oproti r. 2019"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=ZAF"
@@ -182,7 +182,7 @@ items:
         date:   2021-10-29
   - country:  "Turecko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
-    share:    "1,18 %"
+    share:    "1,12 %"
     netzero:  "2053"
     pledge30: "−21 % ročních emisí oproti statu quo"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=TUR"
@@ -193,7 +193,7 @@ items:
         date:   2021-10-22
   - country:  "Austrálie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
-    share:    "1,14 %"
+    share:    "1,08 %"
     netzero:  "2050"
     pledge30: "−26 % až −28 % ročních emisí oproti r. 2005"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=AUS"
@@ -207,7 +207,7 @@ items:
         date: 2021-10-26
   - country:  "Velká Británie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"
-    share:    "1,05 %"
+    share:    "1,0 %"
     netzero:  "2050"
     pledge30: "−78 % ročních emisí oproti r. 1990 (vrchol produkce)"
     ndc:      "https://www4.unfccc.int/sites/NDCStaging/Pages/Party.aspx?party=GBR"
@@ -219,8 +219,8 @@ items:
       - title:  Prohlášení
         url:    "https://www.gov.uk/government/news/uk-enshrines-new-target-in-law-to-slash-emissions-by-78-by-2035"
         date:   2021-04-20
-  - country:  "Ostatní země"
-    share:    "17,20 %"
+  - country:  "Ostatní země s emisními závazky"
+    share:    "8,76 %"
 ---
 Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích CO<sub>2</sub> nad 1 % v roce 2018.[^edgar] Net-zero závazky v některých případech znamenají uhlíkovou neutralitu (zahrnující emise CO<sub>2</sub>), v některých pak klimatickou neutralitu (zahrnující emise všech skleníkových plynů). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDCs) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Závazky se průběžně mění, pro přehlednost jsme proto doplnili ke každému zdroji také datum poslední aktualizace, které se zobrazí při najetí myší na tlačítko zdroje.
 

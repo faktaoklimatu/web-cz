@@ -32,11 +32,11 @@ Státy nemohou své emise skleníkových plynů snižovat přímo – nemají mo
 
 ### Co se změnilo od konference COP25 v Madridu?
 
-V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně do roku 2060 či 2070 (u některých méně vyspělých zemí) odpovídají za více než 90 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
+V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně do roku 2060 či 2070 (u některých méně vyspělých zemí) odpovídají za více než 87 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
 
 {% include figure.html
     name="podil-statu-na-emisich.svg"
-    alt="Koláčový graf světových emisí skleníkových plynů. 91 % emisí je barevně odlišeno, jelikož pochází ze států, které se zavázaly směřovat k uhlíkové neutralitě."
+    alt="Koláčový graf světových emisí skleníkových plynů. 87 % emisí je barevně odlišeno, jelikož pochází ze států, které se zavázaly směřovat k uhlíkové neutralitě."
     source-text="Fakta o klimatu: Emisní závazky států"
     source-url="https://faktaoklimatu.cz/studie/2021-reserse-zavazky-statu"
 %}

@@ -101,11 +101,11 @@ Analogií celkového počtu cigaret, které si kuřák dovolí vykouřit, je tzv
 
 ## K jakému oteplení povedou současné závazky?
 
-V průběhu roku 2020 se k cíli dosažení uhlíkové neutrality do roku 2050 přihlásila Evropská unie, Japonsko, Jižní Korea a další země. Čína jako největší světový emitent se přidala s cílem zastavit nárůst emisí do roku 2030 a dosáhnout uhlíkové neutrality do roku 2060. A nedlouho poté (v dubnu 2021) se připojily i Spojené státy. Celkově se k cíli uhlíkové neutrality přihlásily státy, které dnes produkují více než 90 % všech světových emisí. Vývoj je tedy v této době dynamický a dává i naději, že by se mohlo podařit do konce století klimatickou změnu zastavit. Analytická skupina [Climate Action Tracker](https://climateactiontracker.org/publications/global-update-climate-summit-momentum/) na základě svých výpočtů předvídá, že pokud se podaří sliby a závazky naplnit, mohlo by oteplení v roce 2100 dosáhnout 1,9–3,0 °C.[^13] Je to pozitivní zpráva: cíle Pařížské dohody, jež se dlouho zdály být spíše utopickým snem, přestávají nyní být zcela mimo náš dosah.
+V průběhu roku 2020 se k cíli dosažení uhlíkové neutrality do roku 2050 přihlásila Evropská unie, Japonsko, Jižní Korea a další země. Čína jako největší světový emitent se přidala s cílem zastavit nárůst emisí do roku 2030 a dosáhnout uhlíkové neutrality do roku 2060. A nedlouho poté (v dubnu 2021) se připojily i Spojené státy. Celkově se k cíli uhlíkové neutrality přihlásily státy, které dnes produkují více než 87 % všech světových emisí. Vývoj je tedy v této době dynamický a dává i naději, že by se mohlo podařit do konce století klimatickou změnu zastavit. Analytická skupina [Climate Action Tracker](https://climateactiontracker.org/publications/global-update-climate-summit-momentum/) na základě svých výpočtů předvídá, že pokud se podaří sliby a závazky naplnit, mohlo by oteplení v roce 2100 dosáhnout 1,9–3,0 °C.[^13] Je to pozitivní zpráva: cíle Pařížské dohody, jež se dlouho zdály být spíše utopickým snem, přestávají nyní být zcela mimo náš dosah.
 
 {% include figure.html
     name="podil-statu-na-emisich.svg"
-    alt="Koláčový graf světových emisí skleníkových plynů. 91 % emisí je barevně odlišeno, jelikož pochází ze států, které se zavázaly směřovat k uhlíkové neutralitě."
+    alt="Koláčový graf světových emisí skleníkových plynů. 87 % emisí je barevně odlišeno, jelikož pochází ze států, které se zavázaly směřovat k uhlíkové neutralitě."
     source-text="Fakta o klimatu: Emisní závazky států"
     source-url="https://faktaoklimatu.cz/studie/2021-reserse-zavazky-statu"
 %}
