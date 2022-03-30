@@ -8,8 +8,8 @@ weight:        91
 tags-scopes:   [ svet ]
 tags-topics:   [ opatreni, emise ]
 caption:       "Přes 87 % světových emisí oxidu uhličitého pochází ze států, které směřují k uhlíkové neutralitě. Těchto států je již 131. Státy, které svůj závazek k uhlíkové neutralitě zatím nepředstavily, se naproti tomu podílí na 9 % světových emisí. 3,5 % emisí pak připadá mezinárodní námořní a letecké dopravě."
-data-our:      ""
 data-orig:
+  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/net-zero-pledges.ipynb" ]
   - [ "Net Zero Tracker", "https://zerotracker.net/" ]
   - [ "EDGAR", "https://edgar.jrc.ec.europa.eu/" ]
 ---
