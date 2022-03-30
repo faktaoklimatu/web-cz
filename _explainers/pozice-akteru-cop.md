@@ -32,7 +32,7 @@ Státy nemohou své emise skleníkových plynů snižovat přímo – nemají mo
 
 ### Co se změnilo od konference COP25 v Madridu?
 
-V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádné země nesměřovaly k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho zemí. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně do roku 2060 či 2070 (u některých méně vyspělých zemí) odpovídají za více než 87 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak se moc podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030, a v tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
+V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádná země nesměřovala k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho států. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně 2060 či 2070, odpovídají za více než 87 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak moc se podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030. V tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
 
 {% include figure.html
     name="podil-statu-na-emisich.svg"
@@ -359,8 +359,8 @@ Bezprizorné odkazy:
 {% endcomment %}
 
 [^1]: Z hlediska počtu obyvatel je Česko na 86. místě ve světě (tedy podobně jako třeba Kuba) a **v EU je 10. nejlidnatější** (mezi Řeckem a Švédskem). Česko je **16. nejspokojenější** země světa podle [World Happiness Report](https://happiness-report.s3.amazonaws.com/2021/WHR+21_Ch2.pdf) a **27. nejrozvinutější** zemí světa podle HDI, [Human development index](https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index).
-[^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz infografika  [Emise států přepočené na osobu](https://faktaoklimatu.cz/infografiky/emise-svet-na-osobu)
-[^3]: Mezi lety 2010–2018 přispívalo ČR do fondů průměrně 158 milionů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004 % HDP. Rozvojové země běžně přispívají okolo 0,04 % HDP. (viz [FORS:Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf))
+[^2]: Česko má roční emise na osobu 12 t CO<sub>2</sub>eq, což je zhruba dvakrát více než světový průměr a více než čtyřikrát více než emise na osobu Indie či mnoha afrických států. Viz infografika  [Emise států přepočené na osobu](/infografiky/emise-svet-na-osobu)
+[^3]: Mezi lety 2010–2018 přispívalo ČR do fondů průměrně 158 milionů korun ročně, což odpovídá 15 korunám na obyvatele, nebo 0,004 % HDP. Rozvojové země běžně přispívají okolo 0,04 % HDP. (Viz [FORS: Financování ochrany klimatu](http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf).)
 [^4]: [UNFCCC: List of recent climate funding announcements](https://unfccc.int/list-of-recent-climate-funding-announcements)
 [^5]: Carbon Brief: [Key outcomes agreed at the UN climate talks in Madrid](https://www.carbonbrief.org/cop25-key-outcomes-agreed-at-the-un-climate-talks-in-madrid)
 
