@@ -31,9 +31,9 @@ Ač se některé státy hlásí ke klimatické (*climate neutrality, net-zero em
 
 Ze států, které tvoří větší než 1% podíl na světových emisích, se k uhlíkové neutralitě nepřihlásily pouze Indonésie, Írán a Mexiko.
 Pěti největšími emitenty jsou následující státy/uskupení, které se dohromady podílí na 63,2 % světových emisí CO<sub>2</sub>:
-1. **Čína**: 29,9,6% podíl na světových emisích CO<sub>2</sub>, termín uhlíkové neutrality je rok 2060,
+1. **Čína**: 29,9% podíl na světových emisích CO<sub>2</sub>, termín uhlíkové neutrality je rok 2060,
 2. **USA**: 13,7% podíl, rok 2050,
-3. **EU-27**, 8,62% podíl, rok 2050
+3. **EU-27**, 8,2% podíl, rok 2050
 4. **Indie**, 6,7% podíl, rok 2070,
 5. **Rusko**, 4,8% podíl, rok 2060.
 
