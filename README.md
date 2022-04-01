@@ -36,9 +36,17 @@ Lokální instalace má tyto prerekvizity (nainstalujte do systému):
 * Inkscape ve verzi alespoň 1.0 (balík `inkscape`, zkontrolujte si však verzi!)
 * ImageMagick (balík `imagemagick`)
 
-Na Ubuntu 20.10 nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential imagemagick`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
+Na **Ubuntu 20.10** nebo novějším bude tedy instalace prerekvizit vypadat následovně: `sudo apt install jekyll ruby bundler inkscape build-essential imagemagick`. Správnost instalace všech součástí ověříte sestavením stránek pomocí `make local -j4`.
 
 Máte-li problém spustit Inkscape s chybou `Wrong __data_start/_end pair`, nastavte proměnnou `export _INKSCAPE_GC="disable"` (detaily viz [GitLab issue](https://gitlab.com/inkscape/inkscape/-/issues/1420)).
+
+Na **Mac OS** funguje kombinace [postupu dle Jekyllu](https://jekyllrb.com/docs/installation/macos/), zbytek lze nainstalovat pomocí Homebrew (https://brew.sh/), tedy:
+* `brew install imagemagick`
+* `brew install inkscape` (k instalaci standardních aplikací přes Homebrew je potřeba napoprvé ještě `brew tap homebrew/cask`)
+
+Inkscape standardně není v `$PATH`, tak je potřeba přidat pomocí
+* `sudo mkdir /usr/local/bin`,
+* `sudo ln -s /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape`.
 
 ### Instalace v kontejneru
 
