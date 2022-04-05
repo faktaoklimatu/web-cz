@@ -58,42 +58,42 @@ Níže uvádíme přehled navrhovaných opatření včetně odkazů na původní
 
 ### Tržní mechanismy
 
-**Emisní povolenky**
+#### Emisní povolenky
 
 * [Revize obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0551) (*European Emissions Trading System*, EU ETS)
 * Zahrnutí [letecké](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0552) a [námořní dopravy](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0551) do EU ETS
 * [Rozšíření EU ETS o silniční dopravu a budovy](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0551)
 
-**Uhlíkové vyrovnání na hranicích a zdanění energie**
+#### Uhlíkové vyrovnání na hranicích a zdanění energie
 
 * [Uhlíkové vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0564) (*Carbon Border Adjustment Mechanism*, CBAM)
 * [Revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563) (*Energy Taxation Directive*, ETD)
 
 ### Cíle a regulace
 
-**Závazky pro snižování emisí**
+#### Závazky pro snižování emisí
 * [Revize nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0555)
 
-**Energetika**
+#### Energetika
 
 * [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557) (*Renewable Energy Directive*, RED)
 * [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805)
 * [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN)
 * [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN)
 
-**Energetická účinnost**
+#### Energetická účinnost
 
 * [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) (*Energy Efficiency Directive*, EED)
 * [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD)
 
-**Doprava**
+#### Doprava
 
 * [Přísnější emisní předpisy pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0556)
 * [Nová infrastruktura pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0559)
 * [Iniciativa pro udržitelnější letecká paliva ReFuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0561)
 * [Iniciativa pro čistší námořní paliva FuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0562)
 
-**Krajina a ekosystémy**
+#### Krajina a ekosystémy
 
 * [Lesní strategie EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021DC0572)
 * [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0554)
