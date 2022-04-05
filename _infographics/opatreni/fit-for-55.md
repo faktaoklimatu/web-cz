@@ -48,7 +48,7 @@ Navrhovanými opatřeními v balíčku Fit for 55 prostupují následující pri
 
 Jednotlivá navrhovaná opatření lze rozdělit do tří skupin. První skupinu tvoří tzv. **tržní mechanismy**, které zahrnují zejména evropský **systém obchodování s emisními povolenkami** (EU ETS), kde Komise navrhuje zahrnutí dalších odvětví (námořní dopravy, silniční dopravy a budov), rozšíření povolenek v oblasti letecké dopravy a rychlejší snižování množství povolenek v oběhu. Zároveň Komise stanovuje, že všechny výnosy z povolenek budou členské státy povinny použít na opatření související se změnou klimatu (dosud šlo o 50 %). Dále Komise navrhuje zavedení mechanismu **uhlíkového vyrovnání na hranicích** (*Carbon Border Adjustment Mechanism*, CBAM), který by měl zajistit zpoplatnění vysokouhlíkových dovozů. To se má týkat zejména například cementu nebo oceli tak, aby dovozci ze třetích zemí byli zatíženi stejnými poplatky za emise jako výrobci v EU. Tyto dovozy aktuálně tvoří 2 % všech dovozů. Dovozci do EU by si tedy museli zakoupit certifikáty podle emisní náročnosti komodit (pokud je již neuhradili ve třetí zemi). Zmíněná opatření reflektují princip **znečišťovatel platí**.
 
-Další sada opatření spadá pod **cíle a regulace**, které zahrnují revizi stávající **směrnice o obnovitelných zdrojích energie**, kdy by mělo dojít k navýšení jejich požadovaného podílu na výrobě energie na 40 % do roku 2030, a **směrnice o energetické účinnosti**, která upravuje cíl snížit spotřebu primární energie oproti očekávaným hodnotám v roce 2030 na 39 %. Další návrhy zahrnují **přísnější emisní předpisy pro osobní automobily a dodávky**, budování **nové infrastruktury pro alternativní paliva** a **iniciativy pro udržitelnější letecká paliva** a **čistší námořní paliva**. Součástí balíčku je rovněž **revize nařízení o sdílení úsilí**, která navyšuje cíl snížení emisí v sektorech mimo systém EU ETS o 40 % do roku 2030 oproti roku 2005. Další návrhy se týkají **lesní strategie EU** a **revize nařízení o využívání půdy a lesnictví**. Podrobnější vhled do lesní strategie EU nabízí [náš explainer](/explainery/lesnicka-strategie-eu).
+Další sada opatření spadá pod **cíle a regulace**, které zahrnují revizi stávající **směrnice o obnovitelných zdrojích energie**, kdy by mělo dojít k navýšení jejich požadovaného podílu na výrobě energie na 40 % do roku 2030, a **směrnice o energetické účinnosti**, která upravuje cíl snížit spotřebu primární energie oproti očekávaným hodnotám v roce 2030 na 39 %. Další návrhy zahrnují **přísnější emisní předpisy pro osobní automobily a dodávky**, budování **nové infrastruktury pro alternativní paliva** a **iniciativy pro udržitelnější letecká paliva** a **čistší námořní paliva**. Součástí balíčku je rovněž **revize nařízení o sdílení úsilí**, která navyšuje cíl snížení emisí v sektorech mimo systém EU ETS o 40 % do roku 2030 oproti roku 2005. Dále se návrhy týkají **lesní strategie EU** a **revize nařízení o využívání půdy a lesnictví**. Podrobnější vhled do lesní strategie EU nabízí [náš explainer](/explainery/lesnicka-strategie-eu). V prosinci 2021 Komise představila návrhy zaměřující se na **energetickou náročnost budov**, **snižování v metanu v energetice** a **vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem**.
 
 Třetí skupinu návrhů tvoří **podpůrná opatření**. K zajištění sociálně spravedlivé a solidární transformace Komise navrhuje vznik nového **Sociálního klimatického fondu**, jehož prostředky budou namířeny ke skupinám obyvatel, které budou z důsledku transformace hospodářství zranitelnější. Část příjmů fondu bude tvořena výnosy z obchodování s emisními povolenkami, část budou tvořit příspěvky členských zemí. Solidarita je namířena i směrem k zemím s vyšší závislostí na fosilních palivech a nižším HDP, pro které budou k dispozici prostředky z posíleného **Modernizačního a Inovačního fondu**.
 
@@ -75,6 +75,10 @@ Níže uvádíme přehled navrhovaných opatření včetně odkazů na původní
 * [Revize nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0555)
 * [Lesní strategie EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021DC0572)
 * [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0554)
+* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buuldings Directive*, EPBD)
+* [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805)
+* [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN)
+* [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN)
 
 ### Podpůrná opatření
 
@@ -90,6 +94,9 @@ Pro více informací o navrhovaných opatřeních přejděte na naši infografik
 Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zabývají:
 
 [Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku  
+[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku  
+[Michal Hrubý](https://www.europeum.org/user/default/132), Institut pro evropskou politiku EUROPEUM  
+[Tomáš Trubačík](https://sanceprobudovy.cz/o-nas/), Šance pro budovy  
 [Tomáš Jungwirth](https://www.amo.cz/autor/tomas-jungwirth/), Asociace pro mezinárodní otázky
 
 ### Zdroje
