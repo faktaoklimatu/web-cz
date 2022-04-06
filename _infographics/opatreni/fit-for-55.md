@@ -64,14 +64,15 @@ Níže uvádíme přehled navrhovaných opatření včetně odkazů na původní
 * Zahrnutí [letecké](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0552) a [námořní dopravy](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0551) do EU ETS
 * [Rozšíření EU ETS o silniční dopravu a budovy](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0551)
 
-#### Uhlíkové vyrovnání na hranicích a zdanění energie
+#### Další tržní mechanismy
 
 * [Uhlíkové vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0564) (*Carbon Border Adjustment Mechanism*, CBAM)
 * [Revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563) (*Energy Taxation Directive*, ETD)
 
 ### Cíle a regulace
 
-#### Závazky pro snižování emisí
+#### Závazky pro snižování emisí (v sektorech nezatížených tržními mechanismy)
+
 * [Revize nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0555)
 
 #### Energetika
