@@ -37,26 +37,31 @@ collections:
     permalink: /:title
     title: stránky
     weight: 0
+  topics:
+    output: true
+    permalink: /tema/:title
+    title: témata
+    weight: 1
   explainers:
     output: true
     permalink: /explainery/:title
     title: explainery
-    weight: 1
+    weight: 2
   infographics:
     output: true
     permalink: /infografiky/:title
     title: infografiky
-    weight: 2
+    weight: 3
   studies:
     output: true
     permalink: /studie/:title
     title: studie a rešerše
-    weight: 3
+    weight: 4
   datasets:
     output: true
     permalink: /datasety/:title
     title: datasety
-    weight: 4
+    weight: 5
 
 # Set topic permalinks in local language
 jekyll-archives:
