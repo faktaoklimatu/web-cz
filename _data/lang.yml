@@ -23,6 +23,11 @@ licence:
   title: "Creative Commons Uveďte původ 4.0 Mezinárodní"
   link: "https://creativecommons.org/licenses/by/4.0/deed.cs"
 
+topic:
+  gauge-source: "Zdroj"
+  nutshell: "V kostce"
+  map-caption: "Mapa pojmů a konceptů"
+
 text:
   toc: "Obsah"
   study:
