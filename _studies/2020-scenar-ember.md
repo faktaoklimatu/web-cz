@@ -10,7 +10,7 @@ tags-topics: [ energetika, opatreni ]
 caption:     "Studie Ember zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně zkoumá variantu ukončení provozu všech českých uhelných elektráren a uhelných tepláren. V tomto rámci pak hledá nákladově optimální výstavbu a provoz elektráren. Studie ukazuje, že i takto ambiciózní scénář je myslitelný, vyžaduje ale výrazné tempo rozvoje solárních, větrných i záložních plynových elektráren."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
-  - [ "Shrnutí (CZ)", "https://ember-climate.org/wp-content/uploads/2020/11/Cesko_bez_uhli_od_2030_Ember.pdf" ]
+  - [ "Shrnutí (CZ)", "https://ember-climate.org/app/uploads/2022/02/Cesko_bez_uhli_od_2030.pdf" ]
   - [ "Podrobná zpráva (EN)", "https://ember-climate.org/project/coal-free-czechia-2030/" ]
 ---
 
