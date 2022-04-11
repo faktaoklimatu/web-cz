@@ -25,7 +25,8 @@ licence:
 
 topic:
   gauge-source: "Zdroj"
-  nutshell: "V kostce"
+  nutshell-id: "v-kostce"
+  nutshell-title: "V kostce"
   map-caption: "Mapa pojmů a konceptů"
 
 text:
