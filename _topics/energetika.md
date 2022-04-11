@@ -27,9 +27,11 @@ dashboard:
 - 
   title:       "Růst solárních zdrojů (2013-2021)"
   value:       "+ 5 %"
-  subtitle:    "ČR: nárůst o 100 MW za 9 let"
+  subtitle:    "v Česku"
+  comment:     "nárůst o 100 MW za 9 let"
   value-vs:    "+ 800 %"
-  subtitle-vs: "svět: nárůst o 794 000 MW za 9 let"
+  subtitle-vs: "celosvětově"
+  comment-vs:  "nárůst o 794 000 MW za 9 let"
   source:      "IEA"
   source-url:  "https://www.iea.org/articles/renewables-2021-data-explorer?mode=market&region=World&publication=2021&product=PV"
 
