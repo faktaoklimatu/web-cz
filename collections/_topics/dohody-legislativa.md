@@ -58,7 +58,7 @@ subtopics:
 - id:          "svet"
   title:       "Světová klimatická politika"
   lead: |
-    TBD
+    Pro udržení oteplení planety v mezích 1,5 °C nebo 2 °C **je nezbytné, aby se na snižování emisí skleníkových plynů podílel celý svět** a došlo ke globálnímu přechodu na bezemisní nebo alespoň nízkoemisní ekonomiku.
   qa:
   - q: "Co je Pařížská dohoda?"
     a: |
@@ -77,7 +77,7 @@ subtopics:
 - id:          "eu"
   title:       "Klimatická politika EU"
   lead: |
-    TBD
+    Klimatická politika EU je v současnosti reprezentována zejména Zelenou dohodou pro Evropu, v rámci které si EU stanovila cíl **dosáhnout klimatické neutrality do roku 2050**.
   qa:
   - q: "Co je Zelená dohoda pro Evropu (European Green Deal)?"
     a: |
@@ -112,4 +112,4 @@ subtopics:
   - emise-cr-vyvoj
 ---
 
-*TBD*
+Změna klimatu představuje celosvětový problém a ač na jednotlivé části světa dopadá různě, **vyžaduje spolupráci na regionální i globální úrovni**.
