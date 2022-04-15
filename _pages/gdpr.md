@@ -8,7 +8,7 @@ Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamen
 
 ## Správce osobních údajů
 
-Správcem osobních údajů je organizace Otevřená data o klimatu, z. ú., se sídlem Výletní 593/7, 623 00 Brno – Kohoutovice, IČ: 095 55 587, zapsaná v rejstříku ústavů vedeném Krajským soudem v Brně, spisová značka U 300.
+Správcem osobních údajů je organizace Otevřená data o klimatu, z. ú., se sídlem Cyrilská 7, 602 00 Brno, IČ: 095 55 587, zapsaná v rejstříku ústavů vedeném Krajským soudem v Brně, spisová značka U 300.
 
 Kontaktní osoba pro ochranu osobních údajů: Anna Macková. V případě dotazů pište prosím na [gdpr@faktaoklimatu.cz](mailto:gdpr@faktaoklimatu.cz)
 
