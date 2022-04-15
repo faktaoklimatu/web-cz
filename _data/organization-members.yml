@@ -42,12 +42,14 @@
   position: "Editor"
   summary: "S nadšením pronásleduju písmenka a přemýšlím, jak co nejlépe komunikovat o tématu klimatické změny – a co konkrétně to znamená pro naše texty a infografiky."
   img: "jirka-lnenicka.jpg"
+  email: "jirka.lnenicka@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
 
 - name: "Petr Holík"
   position: "Komunikační expert a podcaster"
   summary: "Starám se o produkci podcastu [2050](https://2050podcast.cz/), ve kterém zkoumáme cesty k takové budoucnosti, ve které nám nepoteče do bot."
   img: "petr-holik.jpg"
+  email: "petr.holik@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/petrholik/"
 
 - name: "Jan Krajhanzl"
@@ -71,12 +73,14 @@
   position: "Analytička GIS, kartografka"
   summary: "Zpracovávám prostorová data a tvořím kartografické výstupy. Věnuji se tématům krajiny, biodiverzity a ochrany životního prostředí."
   img: "eliska-vlckova.png"
+  email: "eliska.vlckova@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
 
 - name: "Jakub Zamouřil"
   position: "Analytik"
   summary: "Věnuji se rešerším a analýzám vědeckých studií a energetických scénářů, připravuji datasety, explainery a doprovodné texty. Jsem také redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
   img: "jakub-zamouril.png"
+  email: "jakub.zamouril@faktaoklimatu.cz"
   linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
 
 - name: "Martin Křivánek"
