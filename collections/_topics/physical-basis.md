@@ -28,7 +28,7 @@ dashboard:
 - title:       "Růst hladin oceánů"
   value:       "+3,7 mm / rok "
   comment:     "budoucí vývoj: +0.5-0.8m (v roce 2100),  "
-  comment-vs:  "+1.0 - 4,2m (v r0ce 2300)" 
+  comment-vs:  "+1.0 - 4,2m (v roce 2300)" 
   source:      "IEA"
   source-url:  "https://www.iea.org/articles/renewables-2021-data-explorer?mode=market&region=World&publication=2021&product=PV"
 - title:       "Zalednění severního oceánu"
@@ -44,17 +44,21 @@ dashboard:
 subtopics:
   # Klimatická změna v kostce
 - lead: |
-    Klimatická změna je složitý řetězec příčin a následků: lidstvo mění složení atmosféry spalováním fosilních paliv a dalšími činnostmi, zvýšené množství skleníkových plynů zadržuje teplo v atmosféře a způsobuje globální oteplování a to má za následek tání ledovců, sucha nebo extrémy jako povodně nebo vlny veder. Klimatická změna se neprojevuje všude stejně: různé oblasti světa se oteplují různě rychle
+    Jak se v složité problematice klimatu a jeho změn začít orientovat? Pro zjednodušení nabízíme tři zásadní vhledy:
+    
+    1. Současná klimatická změna je řetězec příčin a následků - lidstvo mění složení atmosféry, což zesiluje skleníkový efekt, který pak způsobuje oteplování, tání ledovců, zvyšování hlavin oceánů a další jevy. 
+    2. Čím více skleníkových plynů lidstvo vypustí do atmosféry, tím víc se planeta oteplí. 
+    3. Klimatická změna se neprojevuje všude stejně: různé oblasti světa se oteplují různě rychle.
  
   content:
   - schema-klimaticke-zmeny
   - souvislost-koncentrace-oteplovani
-  - mapa-zmeny-tepoty
+  - mapa-zmeny-teploty
 
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
-    
+     Měření teploty z meteorologických stanic i z družic, měření koncentrací skleníkových plynů ze současné atmosféry i z ledovcových vrtů, data o každoročních změnách v množství sněhu a ledu i data o vzestupu hladin oceánů - všechny tyto údaje umožňují představit si rychlost a rozhsah probíhající klimatické změny a porovnat ji se změnami, kterými planeta procházela v minulosti.
   content:
   - teplotni-anomalie
   - teplota-cr
@@ -69,42 +73,49 @@ subtopics:
 - id:          "fyzika"
   title:       "Fyzikální základy a principy"
   lead: |
-    Skleníkové plyny zachytávají teplené záření.
+    Skleníkové plyny zachytávají teplené záření. Dynamika. Uhlíkový cyklus
   qa:
   - q: "Co znamená Citlivost klimatu? "
     a: |
-      Čím vyšší koncentrace CO2 v atmosféře, tím vyšší teplota planety. Zvýšení koncentrace o 10 ppm (parts per million) způsobí oteplení planety asi o 0,1 °C. Tento přibližný vztah je užitečný k mnoha úvahám a odhadům budoucího vývoje, 
+      Čím vyšší koncentrace CO2 v atmosféře, tím vyšší teplota planety. Zvýšení koncentrace o 10 ppm (parts per million) způsobí oteplení planety asi o 0,1 °C. Tento přibližný vztah je užitečný k mnoha úvahám a odhadům budoucího vývoje...
   - q: "Co znamená Uhlíkový rozpočet? "
     a: |
-       Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO2 může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení.
+       Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO2 může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení...
 
   content:
-  - souvislost-koncentrace-oteplovani
-  - emise-dychani
   - dukazy-vlivu-co2
+  - souvislost-koncentrace-oteplovani
   - otepleni-zvysenim-koncentrace-co2
-  - cykly-koncentrace-co2
   - souvislost-emise-otepleni
   - koncept-uhlikovy-rozpocet
+  - emise-dychani
+  - cykly-koncentrace-co2
+  
+  
 
 - id:          "dopady-budoucnost"
   title:       "Dopady a budoucí vývoj"
   lead: |
-    Evropskou energetiku zásadně ovlivňují dva koncepty: **liberalizovaný trh s elektřinou** a systém **obchodování s emisními povolenkami**.
+    Vyšší teploty a častější sucha mají dopady na zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli taní horských ledovců chybí voda v povodích, které jsou jimi napájeny. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, které budeme potkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují budoucí vývoj klimatické změny a její očekávané dopady. 
   qa:
   - q: "Co to jsou body zlomu?"
     a: |
-      Momentální cenu silové elektřiny určuje nejdražší zdroj, který je nutný k pokrytí momentální spotřeby elektřiny. Plynové elektrárny jsou (při velmi vysokých cenách zemního plynu) tímto nejdražším zdrojem,  který je ještě často nutné používat (obzvláště v obdobích vyšší spotřeby, tedy v zimě a během dne). Tento zdroj pak táhne nahoru i průměrnou cenu silové elektřiny, která se propisuje do faktur koncových zákazníků.
+      
 
   content:
+  - schema-klimaticke-zmeny
+  - ubyvani-biodiverzity
+  - vymirani-koralovych-utesu
   - body-zlomu-1
   - body-zlomu-2
   - body-zlomu-3
+  - emisni-scenare-pariz
+  - souvislost-emise-otepleni
 
 - id:          "extrémy"
   title:       "Extrémní jevy"
   lead: |
-    Při zvažování budoucího vývoje elektroenergetiky jsou klíčové tyto aspekty jednotlivých technologií: Jaká je **cena**, tedy investiční a provozní náklady, příp. sdružené náklady na výrobu? Jaký je **potenciál rozvoje**, tedy kolik spotřeby dokáže daná technologie pokrýt? Jaká je **flexibilita výroby**, tedy dokážeme výkon podle potřeby regulovat? Důležitou roli hraje i společenská přijatelnost, geopolitika a energetická bezpečnost.
+    Vlny veder na pevnině i tzv. "mořské vlny veder", přívalové deště, dlouhé periody sucha, hurikány (odborně "tropické cyklóny") nebo počasí s rizikem lesních požárů (sucho + vítr) patří mezi extrémní projevy počasí, které se s postupující klimatickou změnou vyskytují častěji než dříve a přicházejí s větší intenzitou.  
 
   content:
   - tropicke-dny-brno
@@ -112,6 +123,6 @@ subtopics:
 
 ---
 
-_Energetika_ zahrnuje těžbu fosilních paliv, elektroenergetiku, plynárenství, teplárenství, pohonné hmoty, atd. V našich materiálech se věnujeme hlavně _elektřině_, protože v budoucí energetice bude zastávat klíčovou roli.
+_Klimatická změna_ která probíhá v posledních dvou stoletích se od dřívějších změn klimatu liší hlavně tím, že je *antropogenní*, neboli způsobena lidskou činností. **Spalování uhlí, ropy a zemního plynu** a některé další lidské činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování, které má další důsledky: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder, hurikány a další extrémní projevy počasí. 
 
-Sektor **elektroenergetiky** je celosvětově největším zdrojem emisí skleníkových plynů (v roce 2017 tvořil cca 40 % emisí CO<sub>2</sub> a cca 25 % emisí všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>). Svým dopadem přesahuje zemědělství stejně jako spalování fosilních paliv v dopravě, spalování fosilních paliv v průmyslu nebo produkci cementu. V rámci elektroenergetiky přes 70 % světových emisí pochází z uhlí, přes 20 % ze zemního plynu, asi 5 % tvoří deriváty ropy. V české elektroenergetice tvoří uhlí dokonce okolo 90 % emisí.
+Dopady změny klimatu, které budeme potkávat v následujících desetiletích, přímo závisí na tom, jak rychle se podaří zastavit spalování fosilních paliv a další činnosti, které přidávají skleníkové plyny do atmosféry. 
