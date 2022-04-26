@@ -103,7 +103,7 @@ subtopics:
 - id:          "krajina"
   title:       "Zdravá krajina"
   lead: |
-
+    Zdravá krajina je zároveň odolná – tedy dokáže dobře zvládat různé změny, včetně těch klimatických. Je to krajina členitá a pestrá, nikoli taková, v níž je 40 % podzemních vod kontaminováno pesticidy jako dnes nebo v níž se rozkládají obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků (ptačí populace na polích se za posledních 40 let zmenšila o třetinu). K takové zdravé a odolné krajině můžeme dospět, změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu a musí být výhodné i ekonomicky, tedy zemědělcům a lesníkům, musejí dávat smysl i ekonomicky. Klíčová je v tom promyšlená pomoc ze strany státu, který stanoví jasná kriteria pro dotace a šetrné hospodaření.      
 
 ---
 
