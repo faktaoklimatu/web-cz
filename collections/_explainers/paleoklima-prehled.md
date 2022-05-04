@@ -16,6 +16,57 @@ perex:       "Cena elektřiny na velkoobchodním trhu je výrazně proměnlivá.
 
 ---
 
+
+## Časová perspektiva
+
+Holocen = posledních 10 000 let... civilizace (egypt) cca před 6000 lety? 
+oproti tomu PETM byl dlouhý cca 200 000 let a jeho start trval cca 10 000 let, poslední doba ledová trvala cca 50 000 let... 
+
+## Jak se o minulých změnách klimatu můžeme dozvědět? 
+
+Tree rings, pylová zrna, Isotopové stopy z ledovců nebo vrtů do mořských sedimentů.
+
+## Hlavní drivery klimatických změn
+
+ 1. Celková energetická bilance - tedy síla slunečního záření , síla skleníkového efektu a albedo, tedy kolik z přicházejícího záření země odrazí do vesmíru aniž by jej pohltila (ledovce a mraky). Cyklické změny v oběžné dráze země se na roční energetické bilanci prakticky neprojeví - resp nepřímo skrze ice albedo feedback.
+
+ 2. Cyklické změny v oběžné dráze země - mění hlavně rozložení záření během roku (https://biocycle.atmos.colostate.edu/shiny/Milankovitch/)
+
+ 3. Vnitřní dynamika systému mořských a atmosférických proudění, která rozvádějí teplo po celé planetě. 
+
+ 4. Sopečné působení a meteority  
+
+## Konec poslední doby ledové a holocén
+
+Poslední doba ledová vrcholila přibližně před 26 000 lety
+
+
+https://www.science.org/doi/10.1126/science.1172873 : Last Glacial Maximum GMST
+
+
+Po celé období Holocénu byly koncentrace CO2 v rozmezí -- v poslední době ledové byly koncentrace CO2 pod 200 ppm až do doby před 17 000 lety, kdy začaly růst. Tento růst se zastavil zhruba před 11 000 lety na hodnotách okolo 270 ppm - a od té doby se až do doby průmyslové revoluce držel v rozmezí 270 - 280 ppm. (Náš dataset od koncentrací CO2). Energetická bilance planety tedy byla stabilní a klima ovlivňoval hlavně cyklus precese a vlastní dynamika systému oceánských a atmosférických proudění.  
+
+Čtvrt precesního cyklu je cca  5500 let... před cca 
+
+### Klimatické optimum a zelená sahara  (před 9000 - 5000 lety)  
+ Oblasti okolo severního pólu cca o 4°C teplejší (https://en.wikipedia.org/wiki/Holocene_climatic_optimum) ale oblasti kolem rovníku a Jižní polokoule měly mírné ochlazení. 
+
+
+
+
+ - Andské ledovce pocházejí z poslední doby ledové. Ledovec na Kilimandžáro v Africe vznikl ve vlhkém africkém období před cca 10 000 lety, Himálájské ledovce jsou ještě mladší... (Pierehumbert)
+
+
+Malá doba ledová
+
+## Změny klimatu v posledních 5 miliónech let ()
+
+## Posledních 65 miliónů let  (Třetihory)
+
+## Země v druhohorách, prvohorách a dříve
+
+
+
 Vysvětlení tvorby ceny elektřiny začneme dvěma důležitými koncepty: jak se v síti zajišťuje vyrovnávání výroby elektřiny s její spotřebou a podle čeho si jednotlivé elektrárny stanovují minimální cenu, za kterou jsou ochotny elektřinu na trhu prodávat.
 
 ## Jak se v elektrické síti vyrovnává výroba a spotřeba?
