@@ -7,12 +7,12 @@ published:  2022-05-11
 weight:     95.5
 tags-scopes: [ eu ]
 tags-topics: [ opatreni, ekonomika ]
-caption:    "K dosažení klimatických cílů bude potřeba velký objem jak veřejného, tak soukromého kapitálu. V rámci Evropské unie by k mobilizaci soukromého kapitálu směrem ke klimaticky přínosným činnostem měla napomoct právě taxonomie, která udržitelné aktivity klasifikuje."
+caption:    "K dosažení klimatických cílů bude potřeba velký objem jak veřejného, tak soukromého kapitálu. V rámci Evropské unie by k mobilizaci soukromého kapitálu  měla napomoct právě taxonomie, přinášející klasifikaci udržitelných a klimatu přínosných aktivit."
 ---
 
 ## Kontext a základní fakta o taxonomii
 
-Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout klimatické neutrality**. Tomuto cíli předchází závazek snížit do roku 2030 emise skleníkových plynů o 55 % v porovnání s rokem 1990.[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. K **mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoct právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
+Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout [klimatické neutrality](https://faktaoklimatu.cz/explainery/uhlikova-neutralita?q=uhl%C3%ADkov%C3%A1)**. Tomuto cíli předchází závazek snížit do roku 2030 emise skleníkových plynů o 55 % (ve srovnání s rokem 1990).[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. K **mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoct právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
 
 {% include preview-box.html
     title="Jakými finančními prostředky EU podporuje klimatická opatření?"
@@ -20,23 +20,23 @@ Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 do
     slug="fondy-eu"
 %}
 
-Taxonomie EU je především **nástrojem pro klasifikaci udržitelných ekonomických aktivit**. Její existence vytváří **společný jazyk** pro jednotlivé aktéry a sjednocuje tak definici toho, jaké aktivity lze považovat za udržitelné. Taxonomie přispěje k **transparentnosti** o charakteru investic, a tím pádem povede k informovanějším investičním rozhodnutím. Očekáváným přínosem taxonomie je tak přesun soukromého kapitálu směrem od znečišťujících k udržitelným projektům. **Nejde o povinný seznam projektů k investování**, taxonomie sama o sobě nezakazuje investici do aktivit, které nesplní její kritéria. V taxonomii je zároveň zakotvena zásada **technologické neutrality**, což prakticky znamená, že nestanovuje konkrétní technologie, kterými je nutné klasifikačních kritérií dosáhnout.
+Taxonomie EU je především **nástrojem pro klasifikaci udržitelných ekonomických aktivit**. Její existence vytváří **společný jazyk** pro jednotlivé aktéry a sjednocuje tak definici toho, jaké aktivity lze považovat za udržitelné. Přispěje k **transparentnosti** charakteru investic, a tím pádem povede k informovanějším investičním rozhodnutím. Očekávaným přínosem taxonomie je tak přesun soukromého kapitálu směrem od znečišťujících projektů k udržitelným. **Nejde o povinný seznam projektů k investování**, taxonomie sama o sobě nezakazuje investici do aktivit, které nesplní její kritéria. Zároveň je v ní zakotvena zásada **technologické neutrality**, což znamená, že nestanovuje konkrétní technologie, kterými je nutné klasifikačních kritérií dosáhnout.
 
-Unijní taxonomie se týká v první řadě **účastníků finančního trhu** pro reportování environmentálních cílů, ke kterým investicemi přispívají, a podílu investic, které jsou v souladu s taxonomií. Dále se týká **podniků**, na které se již nyní vztahuje povinnost nefinančního reportování, a **EU a členských států** pro stanovování standardů pro environmentálně udržitelné finanční produkty.
+Unijní taxonomie se týká v první řadě **účastníků finančního trhu** pro reportování environmentálních cílů, ke kterým investicemi přispívají, a podílu investic, které jsou s taxonomií v souladu. Dále se týká **podniků**, na které se již nyní vztahuje povinnost nefinančního reportování, a **EU a členských států** pro stanovování standardů pro environmentálně udržitelné finanční produkty.
 
-Taxonomie operuje s **6 hlavními cíly**, kterými jsou:
+Taxonomie pracuje s **6 hlavními cíli**, jimiž jsou:
 1. Mitigace změny klimatu
 2. Adaptace na změnu klimatu
-3. Ochrana a obnova bidovierzity a ekosystémů
-4. Ochrana vodních a mořských organismů
-5. Ocharana a kontrola znečištění
+3. Ochrana a obnova biodiverzity a ekosystémů
+4. Ochrana sladkovodních a mořských organismů
+5. Ochrana před znečištěním a jeho kontrola
 6. Přechod k cirkulární ekonomice
 
-Podmínkou pro naplnění taxonomie je příspívat k alespoň jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] ostatní cíle. Investice by měla zároveň splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.
+Podmínkou pro naplnění taxonomie je příspívat k alespoň jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.
 
 Taxonomie se týká **3 typů aktivit**, kterými jsou:
 1. **Nízkouhlíkové** aktivity
-2. **Přechodové** aktivity, tedy aktivity, pro které neexistuje ekonomicky a technologicky realizovatelná udržitelná alternativa, přičemž platí, že: emise skleníkových plnyů odpovídají nejlepšímu výkonu v sektoru, nebrání rozvoji nízkouhlíkových alternativ a nevede k tzv. uzamčení uhlíku (*carbon lock-in*).[^carbon-lock-in]
+2. **Přechodové** aktivity, tedy takové, pro něž neexistuje ekonomicky a technologicky realizovatelná udržitelná alternativa. Přičemž platí, že emise skleníkových plynů odpovídají nejlepšímu výkonu v sektoru, nebrání rozvoji nízkouhlíkových alternativ a nevedou k tzv. uzamčení uhlíku (*carbon lock-in*).[^carbon-lock-in]
 3. **Podpůrné** aktivity, které přímo napomáhají ostatním aktivitám naplňovat cíle taxonomie.
 
 ## Legislativní ukotvení taxonomie
