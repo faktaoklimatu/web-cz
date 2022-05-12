@@ -7,7 +7,7 @@ published:  2022-05-11
 weight:     95.5
 tags-scopes: [ eu ]
 tags-topics: [ opatreni, ekonomika ]
-caption:    "K dosažení klimatických cílů bude potřeba velký objem jak veřejného, tak soukromého kapitálu. V rámci Evropské unie by k mobilizaci soukromého kapitálu  měla napomoct právě taxonomie, přinášející klasifikaci udržitelných a klimatu přínosných aktivit."
+caption:    "K dosažení klimatických cílů bude potřeba velký objem jak veřejného, tak soukromého kapitálu. V rámci Evropské unie by k mobilizaci soukromého kapitálu měla napomoct právě taxonomie, přinášející klasifikaci udržitelných a klimatu přínosných aktivit."
 ---
 
 ## Kontext a základní fakta o taxonomii
@@ -22,22 +22,22 @@ Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 do
 
 Taxonomie EU je především **nástrojem pro klasifikaci udržitelných ekonomických aktivit**. Její existence vytváří **společný jazyk** pro jednotlivé aktéry a sjednocuje tak definici toho, jaké aktivity lze považovat za udržitelné. Přispěje k **transparentnosti** charakteru investic, a tím pádem povede k informovanějším investičním rozhodnutím. Očekávaným přínosem taxonomie je tak přesun soukromého kapitálu směrem od znečišťujících projektů k udržitelným. **Nejde o povinný seznam projektů k investování**, taxonomie sama o sobě nezakazuje investici do aktivit, které nesplní její kritéria. Zároveň je v ní zakotvena zásada **technologické neutrality**, což znamená, že nestanovuje konkrétní technologie, kterými je nutné klasifikačních kritérií dosáhnout.
 
-Unijní taxonomie se týká v první řadě **účastníků finančního trhu** pro reportování environmentálních cílů, ke kterým investicemi přispívají, a podílu investic, které jsou s taxonomií v souladu. Dále se týká **podniků**, na které se již nyní vztahuje povinnost nefinančního reportování, a **EU a členských států** pro stanovování standardů pro environmentálně udržitelné finanční produkty.
+Unijní taxonomie se týká v první řadě **účastníků finančního trhu** pro reportování environmentálních cílů, ke kterým investicemi přispívají, a podílu investic, které jsou s taxonomií v souladu. Dále se týká **podniků**, na které se již nyní vztahuje povinnost nefinančního reportování (týkajícího se výsledků v environmentální nebo sociální oblasti), a **EU a členských států** pro stanovování standardů pro environmentálně udržitelné finanční produkty.
 
 Taxonomie pracuje s **6 hlavními cíli**, jimiž jsou:
 1. Mitigace změny klimatu
 2. Adaptace na změnu klimatu
 3. Ochrana a obnova biodiverzity a ekosystémů
-4. Ochrana sladkovodních a mořských organismů
-5. Ochrana před znečištěním a jeho kontrola
-6. Přechod k cirkulární ekonomice
+4. Udržitelné využívání a ochrana vodních a mořských zdrojů
+5. Prevence a omezování znečištění
+6. Přechod na oběhové hospodářství
 
 Podmínkou pro naplnění taxonomie je příspívat k alespoň jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.
 
 Taxonomie se týká **3 typů aktivit**, kterými jsou:
-1. **Nízkouhlíkové** aktivity
-2. **Přechodové** aktivity, tedy takové, pro něž neexistuje ekonomicky a technologicky realizovatelná udržitelná alternativa. Přičemž platí, že emise skleníkových plynů odpovídají nejlepšímu výkonu v sektoru, nebrání rozvoji nízkouhlíkových alternativ a nevedou k tzv. uzamčení uhlíku (*carbon lock-in*).[^carbon-lock-in]
-3. **Podpůrné** aktivity, které přímo napomáhají ostatním aktivitám naplňovat cíle taxonomie.
+1. **Nízkouhlíkové** aktivity, tedy takové, jež jsou v souladu s cíli klimatické neutrality. Jde například o výrobu elektřiny z obnovitelných zdrojů.
+2. **Přechodové** aktivity, tedy takové, pro něž neexistuje ekonomicky a technologicky realizovatelná udržitelná alternativa. Přičemž platí, že emise skleníkových plynů odpovídají nejlepšímu výkonu v sektoru, nebrání rozvoji nízkouhlíkových alternativ a nevedou k tzv. uzamčení uhlíku (*carbon lock-in*).[^carbon-lock-in] Jako příklad přechodové aktivity si lze představit výrobu cementu za předpokladu, že daný výrobce dosahuje nejnižších emisí v odvětví.
+3. **Podpůrné** aktivity, které přímo napomáhají ostatním aktivitám naplňovat cíle taxonomie. Jako příklady podpůrných aktivit lze uvést výrobu technologií pro obnovitelné zdroje energii nebo výzkum materiálů pro ochranu před povodněmi.
 
 ## Legislativní ukotvení taxonomie
 
