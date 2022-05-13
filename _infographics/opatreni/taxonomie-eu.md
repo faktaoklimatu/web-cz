@@ -3,7 +3,7 @@ layout:     infographic
 title:      "Co je taxonomie EU"
 slug:       "taxonomie-eu"
 redirect_from: "/taxonomie-eu"
-published:  2022-05-11
+published:  2022-05-13
 weight:     95.5
 tags-scopes: [ eu ]
 tags-topics: [ opatreni, ekonomika ]
@@ -25,6 +25,7 @@ Taxonomie EU je především nástrojem umožňujícím klasifikaci udržitelný
 Unijní taxonomie se týká v prvé řadě **aktérů na finančních trzích**, jimž usnadní reportování o environmentálních cílech, ke kterým svými investicemi přispívají, a o podílu investic, které jsou s taxonomií v souladu. Dále se týká **podniků**, na něž se již nyní vztahuje povinnost nefinančního reportování (dosažené výsledky v environmentální nebo sociální oblasti), a **EU a členských států**, pro které může být užitečným vodítkem při stanovování standardů pro environmentálně udržitelné finanční produkty.
 
 Taxonomie pracuje s **6 hlavními cíli**:
+
 1. Mitigace změny klimatu
 2. Adaptace na změnu klimatu
 3. Ochrana a obnova biodiverzity a ekosystémů
@@ -32,9 +33,10 @@ Taxonomie pracuje s **6 hlavními cíli**:
 5. Prevence a omezování znečištění
 6. Přechod na oběhové hospodářství
 
-Podmínkou pro naplnění taxonomie je přispívat alespoň k jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.[^safeguards]
+Podmínkou pro naplnění taxonomie je přispívat alespoň k jednomu ze zmíněných cílů a zároveň **významně nepoškozovat**[^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.[^safeguards]
 
 Taxonomie se týká **3 typů aktivit**:
+
 1. **Nízkouhlíkové** aktivity – tj. takové, jež jsou v souladu s cíli klimatické neutrality. Jde například o výrobu elektřiny z obnovitelných zdrojů.
 2. **Přechodové** aktivity – tedy takové, pro něž neexistuje ekonomicky a technologicky realizovatelná udržitelná alternativa. Přičemž platí, že emise skleníkových plynů spojené s touto aktivitou odpovídají nejlepšímu výkonu v sektoru, nebrání rozvoji nízkouhlíkových alternativ a nevedou k tzv. uzamčení uhlíku (*carbon lock-in*).[^carbon-lock-in] Příkladem může být výroba cementu za předpokladu, že daný výrobce dosahuje nejnižších emisí v tomto odvětví.
 3. **Podpůrné** aktivity, které přímo napomáhají ostatním aktivitám naplňovat cíle taxonomie – třeba výroba technologií na využívání obnovitelných zdrojů energie nebo výzkum materiálů pro ochranu před povodněmi.
