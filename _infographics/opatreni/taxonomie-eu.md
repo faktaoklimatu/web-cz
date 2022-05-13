@@ -32,7 +32,7 @@ Taxonomie pracuje s **6 hlavními cíli**:
 5. Prevence a omezování znečištění
 6. Přechod na oběhové hospodářství
 
-Podmínkou pro naplnění taxonomie je přispívat alespoň k jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.
+Podmínkou pro naplnění taxonomie je přispívat alespoň k jednomu ze zmíněných cílů a zároveň **významně nepoškozovat** [^dnsh] cíle ostatní. Investice by měla také splňovat minimální záruky (*safeguards*) v ostatních oblastech podnikání – nepodléhat korupci, nevyužívat dětskou práci, nediskriminovat apod.[^safeguards]
 
 Taxonomie se týká **3 typů aktivit**:
 1. **Nízkouhlíkové** aktivity – tj. takové, jež jsou v souladu s cíli klimatické neutrality. Jde například o výrobu elektřiny z obnovitelných zdrojů.
@@ -57,6 +57,7 @@ Podle [Climate Bonds Initiative](https://www.climatebonds.net/resources/reports/
 
 [^fit-for-55]: Konkrétní legislativní návrhy, které mají podpořit snížení emisí skleníkových plynů o 55 % do roku 2030, představujeme v infografice [Co je Fit for 55](https://faktaoklimatu.cz/infografiky/fit-for-55).
 [^dnsh]: V angličtině se pro toto pravidlo používá spojení *do no significant harm (DNSH)*.
+[^safeguards]: Dle čl. 18 [nařízení (EU) 2020/852](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX:32020R0852) jde obecně o "postupy uplatňované podnikem, který provádí hospodářskou činnost, jež zajišťují soulad s pokyny OECD pro nadnárodní společnosti a obecnými zásadami OSN v oblasti podnikání a lidských práv, včetně zásad a práv stanovených v osmi základních úmluvách uvedených v Deklaraci Mezinárodní organizace práce o zásadách a základních právech při práci a v Mezinárodní listině lidských práv."
 [^carbon-lock-in]: Uzamčení uhlíku (*carbon lock-in*) hrozí například při investicích do fosilní infrastruktury, které předurčí využívání uhlíkově intenzivních provozů na několik let dopředu, na úkor nízkouhlíkových alternativ.
 [^das]: Akty v přenesené pravomoci jsou právně závazné nástroje, které umožňují měnit nebo doplnit méně podstatné části legislativních aktů v EU. Navrhuje a přijímá je Evropská komise. Rada EU a Evropský parlament mohou proti jejich přijetí vyslovit námitky, nicméně na rozdíl od nařízení či směrnic není formální přijetí aktů nutné. Více o rozdílech mezi jednotlivými typy právních aktů lze najít na [stránkách Evropské komise](https://ec.europa.eu/info/law/law-making-process/types-eu-law_cs).
 [^jadro-plyn]: Ohledně zařazení jaderné energie a zemního plynu do taxonomie proběhla široká diskuze – jednotlivé členské země se k tomu stavěly různě. Ač byl návrh nakonec schválen, kritéria pro označení uvedených zdrojů jako udržitelných jsou poměrně přísná. V případě jaderné energie je podmínkou mít do roku 2050 vybudováno hlubinné úložiště pro jaderný odpad. U zemního plynu jde o infrastrukturu vybudovanou do roku 2030 a nahrazující uhelné elektrárny, přičemž v roce 2035 by měla přejít na obnovitelné nebo nízkouhlíkové plyny.
