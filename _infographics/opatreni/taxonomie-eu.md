@@ -26,8 +26,8 @@ Unijní taxonomie se týká v prvé řadě **aktérů na finančních trzích**,
 
 Taxonomie pracuje s **6 hlavními cíli**:
 
-1. Mitigace změny klimatu
-2. Adaptace na změnu klimatu
+1. Zmírňování změny klimatu (<glossary id="mitigace">mitigace</glossary>)
+2. Přizpůsobování se změně klimatu (<glossary id="adaptace">adaptace</glossary>)
 3. Ochrana a obnova biodiverzity a ekosystémů
 4. Udržitelné využívání a ochrana vodních a mořských zdrojů
 5. Prevence a omezování znečištění
