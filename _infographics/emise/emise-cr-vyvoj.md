@@ -1,6 +1,6 @@
 ---
 layout:        infographic
-title:         "Vývoj emisí v ČR v letech 1990–2018"
+title:         "Emise skleníkových plynů v ČR v letech 1990–2018"
 slug:          "emise-cr-vyvoj"
 redirect_from: "/emise-cr-vyvoj"
 published:     2020-10-09

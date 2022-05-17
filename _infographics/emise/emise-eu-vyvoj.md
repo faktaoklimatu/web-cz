@@ -1,6 +1,6 @@
 ---
 layout:        infographic
-title:         "Vývoj emisí v Evropské unii v letech 1990–2019"
+title:         "Emise skleníkových plynů v EU v letech 1990–2019"
 slug:          "emise-eu-vyvoj"
 redirect_from: "/emise-eu-vyvoj"
 published:     2022-01-24
