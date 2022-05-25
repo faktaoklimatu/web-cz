@@ -52,7 +52,7 @@ Ačkoliv je [FST](https://www.mzp.cz/cz/opst_2021_2027) formálně součástí E
 
 ### Inovační fond
 
-[Inovační fond](https://ec.europa.eu/clima/eu-action/funding-climate-action/innovation-fund_en) slouží k **podpoře velkých inovativních projektů**, přičemž o konkrétních projektech se rozhoduje na úrovni celé EU, nikoliv na národní úrovni, jako tomu je u fondů uvedených výše. Nelze tak dopředu říct, kolik českých projektů a v jakém objemu bude podpořeno. Podobně jako Modernizační fond je i Inovační fond **financován výnosy z prodeje emisních povolenek** (celkem 450 milionů povolenek). Fond směřuje na projekty zaměřené zejména na nízkouhlíkové technologie v energeticky náročných průmyslových odvětvích, skladování energie, zachycování a skladování uhlíku (*Carbon capture and storage, CCS*) či průmyslovém zachycování a využívání uhlíku (*Carbon capture and utilization, CCU*).
+[Inovační fond](https://ec.europa.eu/clima/eu-action/funding-climate-action/innovation-fund_en) slouží k **podpoře inovativních projektů**, přičemž o konkrétních projektech se rozhoduje na úrovni celé EU, nikoliv na národní úrovni, jako tomu je u fondů uvedených výše. Nelze tak dopředu říct, kolik českých projektů a v jakém objemu bude podpořeno. Podobně jako Modernizační fond je i Inovační fond **financován výnosy z prodeje emisních povolenek** (celkem 450 milionů povolenek). Fond směřuje na projekty zaměřené zejména na nízkouhlíkové technologie v energeticky náročných průmyslových odvětvích, skladování energie, zachycování a skladování uhlíku (*Carbon capture and storage, CCS*) či průmyslovém zachycování a využívání uhlíku (*Carbon capture and utilization, CCU*).
 
 ### Sociální klimatický fond
 
