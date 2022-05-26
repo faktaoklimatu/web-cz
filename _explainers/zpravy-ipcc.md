@@ -99,14 +99,14 @@ Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bud
 
 ### České překlady shrnutí ke zprávám AR6
 * [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_fyzikalni_zaklady/$FILE/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
+* [IPCC - Dopady, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_dopady_adaptace_zranitelnost/$FILE/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
+* [IPCC - Mitigace](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_preklad_hodnotici_zpravy/$FILE/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
 
 ### České překlady shrnutí ke zprávám AR5
 * [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
 * [IPCC - Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
-
 * [IPCC - Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf)
 Anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
-
 * [IPCC - Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf)
 Anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
 
