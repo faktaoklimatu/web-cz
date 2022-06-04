@@ -16,7 +16,7 @@ perex:       "V srpnu vychází první část nové Hodnotící zprávy IPCC, z�
 
 ---
 
-Ve stručnosti lze říct, že Hodnotící zpráva IPCC (*Assessment Report, AR*) je podrobný **výtah a posouzení přezkoumané a publikované vědecké literatury**, která se zabývá změnami klimatu. Nejedná se tedy o samostatný výzkum a uvozovky u slova „novinky“ jsou použity zcela záměrně, neboť zpráva (vzhledem ke svému rozsahu) zahrnuje pouze výsledky výzkumu zveřejněné do uzávěrky – u letošní zprávy jsou to studie publikované do prosince 2019.  
+Ve stručnosti lze říct, že Hodnotící zpráva IPCC (*Assessment Report, AR*) je podrobný **výtah a posouzení přezkoumané a publikované vědecké literatury**, která se zabývá změnami klimatu. Nejedná se tedy o samostatný výzkum a uvozovky u slova „novinky“ jsou použity zcela záměrně, neboť zpráva (vzhledem ke svému rozsahu) zahrnuje pouze výsledky výzkumu zveřejněné do uzávěrky – u letošní zprávy jsou to studie publikované do prosince 2019.
 
 **Výjimečnost Hodnotící zprávy IPCC** oproti jiným textům věnovaným klimatické změně spočívá v tom, že je výsledkem spolupráce předních světových klimatologů s vládními experty (zástupci jednotlivých zemí), a **poskytuje tak informace, jež jsou z vědeckého hlediska správné a zároveň jsou srozumitelné politikům**, kteří potom mohou na jejich základě dělat zásadní rozhodnutí.
 
@@ -48,7 +48,7 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměř
     source-url="https://faktaoklimatu.cz"
 %}
 
-1. Osnovu připraví experti delegovaní členskými státy (panel IPCC). Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy. 
+1. Osnovu připraví experti delegovaní členskými státy (panel IPCC). Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy.
 2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
@@ -59,7 +59,7 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměř
 
 Přestože název může vzbuzovat dojem, že se jedná o politický orgán, ve skutečnosti je IPCC panelem složeným z vědců a expertů ze 195 zemí světa. **Jednotlivé členské země mají v panelu své odborné zástupce** (každá jednoho, bez ohledu na svou velikost), za ČR je to v současné době RNDr. Radim Tolasz, Ph.D., klimatolog z Českého hydrometeorologického ústavu.
 
-Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostředí jako zástupce vlády – IPCC je mezivládní panel), záleží čistě na jejím rozhodnutí. Z jednotlivých zástupců je vždy jednou za čtyři roky **zvoleno vedení**, což jsou jediné volby v rámci fungování IPCC. Volení zástupci navíc musí předložit životopis a prohlášení o střetu zájmů, které podléhá kontrole.  
+Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostředí jako zástupce vlády – IPCC je mezivládní panel), záleží čistě na jejím rozhodnutí. Z jednotlivých zástupců je vždy jednou za čtyři roky **zvoleno vedení**, což jsou jediné volby v rámci fungování IPCC. Volení zástupci navíc musí předložit životopis a prohlášení o střetu zájmů, které podléhá kontrole.
 
 ## Z čeho se Hodnotící zpráva IPCC skládá?
 
@@ -85,7 +85,7 @@ Letos vychází první oddíl Šesté hodnotící zprávy (Fyzikální základy)
 
 Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**[^1], kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací.
 
-Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.  
+Další oddíl zprávy, připravovaný Pracovní skupinou II k vydání v únoru 2022, se zaměří na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III, březen 2022) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.
 
 ## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
 
@@ -98,20 +98,18 @@ Nejbližším politickým summitem po vydání letošní Hodnotící zprávy bud
 * Ǔdaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 
 ### České překlady shrnutí ke zprávám AR6
-* [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_fyzikalni_zaklady/$FILE/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
-* [IPCC - Dopady, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_dopady_adaptace_zranitelnost/$FILE/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
-* [IPCC - Mitigace](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_preklad_hodnotici_zpravy/$FILE/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
+* [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_fyzikalni_zaklady/$FILE/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Dopady, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_dopady_adaptace_zranitelnost/$FILE/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Mitigace](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_preklad_hodnotici_zpravy/$FILE/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) – český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
 
 ### České překlady shrnutí ke zprávám AR5
-* [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP 
-* [IPCC - Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
-* [IPCC - Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf)
-Anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
-* [IPCC - Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf)
-Anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf) – anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
+* [IPCC - Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf) – anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě Mezivládního panelu pro změnu klimatu, web MŽP
 
 ### Další odkazy
 * [Climate change assessments - Review of the processes and procedures of the IPCC](https://archive.ipcc.ch/pdf/IAC_report/IAC%20Report.pdf) (2010)
- 
+
 ----
 [^1]: [Sixth Assesment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf)
