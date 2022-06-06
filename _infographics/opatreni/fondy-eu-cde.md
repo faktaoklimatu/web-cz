@@ -3,11 +3,13 @@ layout:        infographic
 title:         "Evropské fondy a financování klimatických opatření v ČR"
 slug:          "fondy-eu-cde"
 redirect_from: "/fondy-eu-cde"
-published:     2022-05-27
+published:     2022-06-06
 weight:        100
 tags-scopes:   [ eu, cr ]
 tags-topics:   [ opatreni, ekonomika ]
-data-orig:  [ [ "Analýza CDE", "https://www.cde-org.cz/media/object/1972/revize_climate_taggingu_evropskych_fondu_v_ceske_republice.pdf" ], ["Dokumentace na GitHubu", "https://cdeorgcz.github.io/esiftagging/index.html"] ]
+data-orig:
+- [ "Analýza CDE", "https://www.cde-org.cz/media/object/1972/revize_climate_taggingu_evropskych_fondu_v_ceske_republice.pdf" ]
+- [ "Dokumentace na GitHubu", "https://cdeorgcz.github.io/esiftagging/index.html" ]
 caption:       "Podle analýzy Centra pro dopravu a energetiku bylo v České republice na prokazatelně prospěšná klimatická opatření alokováno v období let 2014–2020 pouze 13 % finančních prostředků z evropských fondů. A to navzdory tomu, že cíl pro dané období stanovený Evropskou komisí činil 20 %."
 ---
 
@@ -25,11 +27,9 @@ Infografika zobrazuje podíl finančních prostředků z Evropských strukturál
 
 ## Jak probíhá hodnocení klimatického přínosu
 
-Obě metodiky využívají tzv. taggování alokovaných prostředků, pomocí kterého vyhodnocují, jak podpořené aktivity přispívají k ochraně klimatu. Využívají se přitom 100%, 40% a 0% tagy, kdy 100 % označuje významný a dostatečně měřitelný přínos, 40 % významný, ale nedostatečně popsaný nebo měřitelný přínos a 0 % neutrální přínos (tedy daná aktivita nepřispívá k ochraně klimatu, ani klima nepoškozuje). Na rozdíl od Evropské komise pracuje CDE také s označováním negativního klimatického přínosu, a to -40 %. Tento negativní tag slouží k označení vysokoemisních aktivit, případně aktivit, které porušují zásadu významně nepoškozovat (*do no significant harm, DNSH*).
+Obě metodiky využívají tzv. taggování alokovaných prostředků, pomocí kterého vyhodnocují, jak podpořené aktivity přispívají k ochraně klimatu. Využívají se přitom 100%, 40% a 0% tagy, kdy 100 % označuje významný a dostatečně měřitelný přínos, 40 % významný, ale nedostatečně popsaný nebo měřitelný přínos a 0 % neutrální přínos (tedy daná aktivita nepřispívá k ochraně klimatu, ani klima nepoškozuje). Na rozdíl od Evropské komise pracuje CDE také s označováním negativního klimatického přínosu, a to −40 %. Tento negativní tag slouží k označení vysokoemisních aktivit, případně aktivit, které porušují zásadu významně nepoškozovat (*do no significant harm, DNSH*).
 
 Více o metodice a výsledcích analýzy je možné najít v samotné [publikaci](https://www.cde-org.cz/media/object/1972/revize_climate_taggingu_evropskych_fondu_v_ceske_republice.pdf).
-
-
 
 ## Zdroje a poznámky
 
