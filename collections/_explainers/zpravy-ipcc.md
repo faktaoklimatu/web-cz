@@ -21,7 +21,7 @@ Ve stručnosti lze říct, že Hodnotící zpráva IPCC (*Assessment Report, AR*
 **Výjimečnost Hodnotící zprávy IPCC** oproti jiným textům věnovaným klimatické změně spočívá v tom, že je výsledkem spolupráce předních světových klimatologů s vládními experty (zástupci jednotlivých zemí), a **poskytuje tak informace, jež jsou z vědeckého hlediska správné a zároveň jsou srozumitelné politikům**, kteří potom mohou na jejich základě dělat zásadní rozhodnutí.
 
 {% include preview-box.html
-    title="Mezinárodní úsilí ochrany klimatu"
+    title="Mezinárodní úsilí věnované ochraně klimatu"
     text="Podívejte se i na infografiku dalších klíčových událostí."
     slug="svetove-dohody"
 %}
@@ -48,8 +48,8 @@ Přípravě Hodnotící zprávy vždy předchází **vědecký výzkum** zaměř
     source-url="https://faktaoklimatu.cz"
 %}
 
-1. Osnovu připraví experti delegovaní členskými státy (panel IPCC). Panel se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy.
-2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy podílet.
+1. Osnovu připraví experti delegovaní členskými státy (panel IPCC). Panel jako celek se na ní musí shodnout, přičemž má také možnost navrhovat doplnění a úpravy.
+2. Po schválení osnovy následuje proces výběru autorů, kteří budou zprávu psát – jména autorů předkládá oficiální zástupce každé země (při přípravě nejnovější zprávy byli za ČR nominováni tři experti z českých výzkumných institucí). Z celkového počtu navržených pak vedení IPCC vybere podle přísných kritérií přibližně desetinu, která se bude na sestavení Hodnotící zprávy skutečně podílet.
 3. Je připraven návrh textu a následuje první a druhé kolo připomínkového řízení se zapracováním odborných připomínek.
 4. Je vytvořena druhá verze textu a opět proběhne zapracování odborných připomínek.
 5. Vzniká finální znění zprávy a spolu s ním Shrnutí pro politické představitele. Teprve (a pouze) v této části vstupují do připomínkového řízení také úředníci a politici, kteří mají možnost Shrnutí rovněž posoudit a dát k němu zpětnou vazbu.
@@ -65,7 +65,7 @@ Koho která země nominuje (v ČR o tom rozhoduje ministr životního prostřed�
 
 Každý report má celkem **čtyři oddíly** označené podle pracovních skupin, které je připravují:
 
-* *WG1* – **Fyzikální základy** (*The Physical Science Basis*) – připravuje Pracovní skupina I (*Working Group I*,tedy *WG1*); publikováno v srpnu 2021
+* *WG1* – **Fyzikální základy** (*The Physical Science Basis*) – připravuje Pracovní skupina I (*Working Group I*, *WG1*); publikováno v srpnu 2021
 * *WG2* – **Dopady, adaptace a zranitelnost** (*Impacts, Adaptation, and Vulnerability*) – připravuje Pracovní skupina II; publikováno v únoru 2022
 * *WG3* – **Mitigace** (*Mitigation of Climate Change*) – připravuje Pracovní skupina III; publikováno v dubnu 2022
 * **Souhrnná zpráva** (*Synthesis Report*) – zveřejněna jako poslední, vychází z obsahu předchozích tří oddílů; publikace na podzim 2022
@@ -87,14 +87,14 @@ Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů*
 
 Oddíl zprávy připravovaný Pracovní skupinou II se zaměřuje na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.
 
-## Jak zpráva souvisí s podzimní klimatickou konferencí v Glasgow?
+## Jak zpráva souvisí s mezinárodními klimatickými konferencemi COP?
 
 První část AR6 vyšla ještě před klimatickou konferencí COP26, která proběhla od 31. října do 12. listopadu ve skotském Glasgow. Vlády jednotlivých zemí na ní prezentovaly své nové či revidované plány na snižování emisí a jednaly o mezinárodní spolupráci v oblasti investic, podpory a společné legislativy. Nakolik přijedou vládní představitelé na klimatické summity připraveni, záleží vždy do velké míry také na tom, jak jsou komunikovány hlavní body Hodnotících zpráv IPCC a jak s nimi jsou obeznámeni vědci, podnikatelé, novináři, místní politici i široká veřejnost.
 
 ## Zdroje a další odkazy
 
-* Jako základní zdroj pro tento explainer posloužil text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D., který je českým zástupcem v IPCC.
-* Podrobné vysvětlení o procesu výběru autorů, posuzované literatuře a schvalovacích procesech viz [Oficiální web IPCC](https://www.ipcc.ch/assessment-report/ar6/).
+* Jako základní zdroj pro tento explainer posloužil text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D.
+* Podrobněji o výběru autorů, posuzované literatuře a schvalovacích procesech viz [Oficiální web IPCC](https://www.ipcc.ch/assessment-report/ar6/).
 * Údaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assessment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 
 ### České překlady shrnutí ke zprávám AR6
@@ -102,7 +102,7 @@ První část AR6 vyšla ještě před klimatickou konferencí COP26, která pro
 * [IPCC – Dopady, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_dopady_adaptace_zranitelnost/$FILE/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě IPCC, web MŽP
 * [IPCC – Mitigace](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_preklad_hodnotici_zpravy/$FILE/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) – český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě IPCC, web MŽP
 
-### České překlady shrnutí ke zprávám AR5
+### České překlady shrnutí ke starším zprávám AR5
 * [IPCC – Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě IPCC, web MŽP
 * [IPCC – Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě IPCC, web MŽP
 * [IPCC – Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf) – anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě IPCC, web MŽP
