@@ -12,7 +12,7 @@ cover-source-license: "Copyright: © Belspo / Nevens"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-nd/2.0/"
 cover-source-text: "Flickr UN DRR"
 cover-source-url: "https://www.flickr.com/photos/isdr/7515003752"
-perex:       "V srpnu vychází první část nové Hodnotící zprávy IPCC, zásadního dokumentu v oblasti dosavadního výzkumu klimatické změny. Co tento report obsahuje, kdo jej sestavuje a jaké „novinky“ se v něm dočteme?"
+perex:       "Vždy jednou za několik let vychází tzv. Hodnotící zpráva IPCC, zásadní dokument v oblasti dosavadního výzkumu klimatické změny. Skládá se z několika částí, které jsou zveřejňovány postupně. Co tyto reporty obsahují, kdo je sestavuje a jaké „novinky“ v nich najdeme?"
 
 ---
 
