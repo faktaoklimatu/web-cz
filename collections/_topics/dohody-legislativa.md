@@ -3,6 +3,7 @@ layout:        topic
 title:         "Mezinárodní dohody a legislativa"
 slug:          "dohody-legislativa"
 redirect_from: "/dohody-legislativa"
+sitemap:       false
 published:     2022-04-12
 map:           true
 
