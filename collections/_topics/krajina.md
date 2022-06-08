@@ -7,32 +7,6 @@ sitemap:       false
 published:     2022-04-19
 map:           true
 
-dashboard:
-- title:       "Emisní faktor elektřiny (2019)"
-  unit:        "g CO<sub>2</sub>eq / kWh"
-  value:       369
-  subtitle:    "v Česku"
-  value-vs:    212
-  subtitle-vs: "průměr EU"
-  source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
-- title:       "Bezemisní elektřina (2019)"
-  value:       "48 %"
-  subtitle:    "podíl v Česku"
-  value-vs:    "61 %"
-  subtitle-vs: "podíl v EU"
-  source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
-- title:       "Růst solárních zdrojů (2013-2021)"
-  value:       "+ 5 %"
-  subtitle:    "v Česku"
-  comment:     "nárůst o 100 MW za 9 let"
-  value-vs:    "+ 800 %"
-  subtitle-vs: "celosvětově"
-  comment-vs:  "nárůst o 794 000 MW za 9 let"
-  source:      "IEA"
-  source-url:  "https://www.iea.org/articles/renewables-2021-data-explorer?mode=market&region=World&publication=2021&product=PV"
-
 subtopics:
   # 3 materiály, které byste neměli přehlédnout
 - lead: |  
