@@ -4,6 +4,7 @@ title:         "Energetika"
 slug:          "energetika"
 redirect_from: "/energetika"
 published:     2022-04-05
+sitemap:       false
 map:           true
 
 dashboard:
