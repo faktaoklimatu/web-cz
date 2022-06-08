@@ -30,6 +30,7 @@ slugs:
   news: aktuality
   about: o-nas
 
+collections_dir: collections
 # Set permalinks in local language
 collections:
   pages:
