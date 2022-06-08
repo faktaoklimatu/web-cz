@@ -3,6 +3,7 @@ layout:        topic
 title:         "Klimatická změna"
 slug:          "physical-basis"
 redirect_from: "/physical-basis"
+sitemap:       false
 published:     2022-04-05
 map:           true
 
