@@ -39,7 +39,7 @@ Pravá horní část infografiky definuje některé použité pojmy a ilustruje 
 
 ## Metodika
 
-Studie ÚFA uvažuje pro plnou realizaci potenciálu rok 2040. Počítá se stožáry o výšce zhruba 90–140 m s rotory o průměru 110–160 m. U instalací se počítá s výkonem 3–5 MW a roční výrobou 7,8–13,5 GWh. Pro srovnání, většina z 210 větrných elektráren instalovaných v Česku do roku 2020 dosahuje výšky 60–110 m (průměr rotoru 50–100 m) a instalovaného výkonu 0,6–2 MW (průměr zhruba 1600 GW). Za rok každá vyrobí v průměru 3,3 GWh.
+Studie ÚFA uvažuje pro plnou realizaci potenciálu rok 2040. Počítá se stožáry o výšce zhruba 90–170 m s rotory o průměru 110–160 m. U instalací se počítá s výkonem 3–5 MW a roční výrobou 7,8–13,5 GWh. Pro srovnání, většina z 210 větrných elektráren instalovaných v Česku do roku 2020 dosahuje výšky 60–110 m (průměr rotoru 50–100 m) a instalovaného výkonu 0,6–2 MW (průměr zhruba 1600 GW). Za rok každá vyrobí v průměru 3,3 GWh.
 
 Studie vypočítává potenciál větrné energie pro jednotlivé kraje ve dvou fázích. Nejprve se pro celou ČR spočítá tzv. *technický potenciál*, který je určen tím, zda je v daném místě možné a ekonomicky výhodné postavit větrnou elektrárnu s předpokládanými parametry.
 
@@ -48,8 +48,8 @@ Následně se na základě faktorů, které ovlivňují realizovatelnost projekt
 Výpočet celkového potenciálu tedy probíhá postupně v následujících krocích:
 
 1. Nejprve je vytvořena tzv. *větrná mapa* České republiky, která ukazuje průměrnou rychlost větru ve výšce 100 m nad povrchem Země, což odpovídá typické výšce stožáru uvažovaných větrných elektráren.
-2. Na základě větrné mapy se vyberou místa, kde je teoreticky rentabilní elektrárnu postavit. Jako určující faktor se bere právě průměrná rychlost větru ve výšce 100 m nad povrchem, přičemž typicky musí dosahovat alespoň 6 m/s. V závislosti na nadmořské výšce a členitosti terénu se tento limit lehce přizpůsobuje.
-3. Dále se vyřadí lokality podle zákonných omezení pro stavbu větrných elektráren. Nesmí se stavět mj. ve vzdálenosti do 500 m od obytné zástavby, ve zvláště chráněných územích (národní parky, chráněné krajinné oblasti, přírodní rezervace, přírodní parky), v okolí letišť a v blízkosti vedení velmi vysokého napětí, silnic a železničních tratí.
+2. Na základě větrné mapy se vyberou místa, kde je teoreticky rentabilní elektrárnu postavit. Jako určující faktor se bere právě průměrná rychlost větru ve výšce větší než 100 m nad povrchem, přičemž typicky musí dosahovat alespoň 6 m/s. V závislosti na nadmořské výšce a členitosti terénu se tento limit lehce přizpůsobuje.
+3. Dále se vyřadí lokality podle zákonných omezení pro stavbu větrných elektráren. Nesmí se stavět mj. ve vzdálenosti cca 0,5–1 km od obytné zástavby, ve zvláště chráněných územích (národní parky, chráněné krajinné oblasti, přírodní rezervace, přírodní parky), v okolí letišť a v blízkosti vedení velmi vysokého napětí, silnic a železničních tratí.
 4. V dalším kroku se na dosud vymezeném území rozmístí hypotetické větrné elektrárny tak, aby se maximalizovalo množství vyrobené elektřiny a zároveň byl dodržen nutný rozestup mezi stožáry (obvykle délka pěti průměrů rotoru mezi sousedními elektrárnami).
 5. Výpočet technického potenciálu je završen vyřazením elektráren, jež by se staly nerentabilními v důsledku stínění jinými elektrárnami a následného poklesu průměrné rychlosti větru.
 6. Pro výpočet realizovatelných scénářů se počet míst, kde lze elektrárny postavit, dále redukuje dle faktorů ovlivňujících jejich praktickou realizovatelnost. Prvním uvažovaným faktorem jsou technická omezení na místní úrovni, např. střet s radary nebo nedostatečná infrastruktura. (U konzervativního scénáře se redukuje pravděpodobnost umístění elektrárny o 55 %, u optimistického o 45 %.)
