@@ -138,7 +138,6 @@ subtopics:
   - 2020-transformace-energetiky-do-2050
   - 2016-snizeni-emisi-cr
   - 2-transformace-energetiky
-
 ---
 
 _Energetika_ zahrnuje těžbu fosilních paliv, elektroenergetiku, plynárenství, teplárenství, pohonné hmoty, atd. V našich materiálech se věnujeme hlavně _elektřině_, protože v budoucí energetice bude zastávat klíčovou roli.
