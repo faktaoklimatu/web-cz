@@ -44,6 +44,8 @@ text:
     licence: "Licence"
     see: "viz"
     licence-proof: "informace o licenci"
+  episode:
+    episode: "Podcast 2050"
   explainer:
     explainer: "Explainer"
     source: "Zdroj"

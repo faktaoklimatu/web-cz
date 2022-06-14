@@ -63,6 +63,11 @@ collections:
     permalink: /datasety/:title
     title: datasety
     weight: 5
+  episodes:
+    output: false
+    permalink: /epizody/:title
+    title: epizody
+    weight: 6
 
 # Set topic permalinks in local language
 jekyll-archives:

@@ -95,6 +95,7 @@ subtopics:
   - cena-elektriny-na-trhu
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
+  - 21-rust-cen-elektriny
 
 - id:          "technologie"
   title:       "Technologie: potenciál, cena"
@@ -136,7 +137,8 @@ subtopics:
   content:
   - 2020-transformace-energetiky-do-2050
   - 2016-snizeni-emisi-cr
- # TODO: pridat https://2050podcast.cz/epizody/2-transformace-energetiky
+  - 2-transformace-energetiky
+
 ---
 
 _Energetika_ zahrnuje těžbu fosilních paliv, elektroenergetiku, plynárenství, teplárenství, pohonné hmoty, atd. V našich materiálech se věnujeme hlavně _elektřině_, protože v budoucí energetice bude zastávat klíčovou roli.
