@@ -1,18 +1,17 @@
 ---
 layout:      explainer
 title:       "Extrémy počasí a klimatická změna: Jak o nich mluvit a psát – Kompas pro novináře"
-slug:        "extremy-klima-kompas"
+slug:        "vliv-klimatu-na-extremy-prirucka"
 published:   2022-06-08
 author:      "Ben Clarke, Friederike Otto"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-# TODO: aktualizovat cover art, doplnit licenci a autora.
-# cover-source-author: "??"
-# cover-source-license: "CC BY 4.0 ??"
-# cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"
-# cover-source-text: "Evropská komise"
-# cover-source-url: "https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs"
+cover-source-author: "Espen Bierud"
+cover-source-license: "Unsplash License"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-text: "Arendal, Norway"
+cover-source-url: "https://unsplash.com/photos/W43gm6TD118"
 perex:       "Autoři děkují Wolfgangu Blauovi a Rose Andreattě za jejich užitečné komentáře a připomínky."
 ---
 
