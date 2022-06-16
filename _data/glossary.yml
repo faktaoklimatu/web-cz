@@ -100,7 +100,7 @@
 
 - id: parizskadohoda
   name-short: "Pařížská dohoda"
-  description: "Jde o mezinárodní dohodu, která byla sjednána 2015 v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji zatím 195 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány."
+  description: "Jde o mezinárodní dohodu, která byla v roce 2015 sjednána v Paříži a je podobně jako Kjótský protokol právně závazná. Dohoda především deklaruje cíl *Udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.* Pařížská dohoda je součástí Rámcové úmluvy OSN o změně klimatu (UNFCCC) a podepsalo ji 193 zemí. Zavazuje členské státy ke stanovení a dodržení tzv. národních závazků (*Nationally Determined Contributions*, NDCs) ke snižování emisí skleníkových plynů a stanovuje proces, kterým budou národní závazky sledovány a vyhodnocovány."
 
 - id: phase-out
   name-short: "Uhelný phase-out"
