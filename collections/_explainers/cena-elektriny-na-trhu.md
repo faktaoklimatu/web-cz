@@ -125,6 +125,12 @@ Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, pro
 
 V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren k pokrytí celé poptávky po elektřině nestačí, přicházejí na řadu mnohem dražší zdroje, u kterých je možné vyrábět elektřinu dle potřeby (jsou regulovatelné). Mezi ně patří například elektrárny na uhlí, zemní plyn či biomasu. Pořadí jejich využití opět určí to, za jak nízkou cenu jsou tyto elektrárny schopny elektřinu vyrobit. To závisí na cenách paliva pro tyto elektrárny a na jejich emisní náročnosti – čím víc oxidu uhličitého na jednotku vyrobené elektřiny elektrárna vypustí, tím víc musí zaplatit na emisních povolenkách a tím je jednotková cena vyrobené elektřiny dražší. Pomocí tohoto mechanismu motivují emisní povolenky ke snižování emisní náročnosti celé soustavy[^2].
 
+{% include preview-box.html
+    title="Růst cen elektřiny na podzim 2021"
+    text="Jak si vysvětlit dramatický nárůst ceny elektřiny na podzim roku 2021? Poslechněte si díl našeho podcastu."
+    slug="21-rust-cen-elektriny"
+%}
+
 Mezi cenou nejlevnějších a nejdražších zdrojů jsou obrovské rozdíly. **Během jednoho dne tak může cena elektřiny oscilovat mezi nulou a několika stovkami eur**, podle momentální spotřeby a podle výroby z obnovitelných zdrojů. Instalovaný výkon obnovitelných zdrojů bude v Evropě nadále růst. Můžeme tedy čekat **častější hodiny s velmi nízkou ceny elektřiny**, a tedy i **méně hodin s velmi vysokými cenami elektřiny**. Tímto způsobem budeme postupně snižovat závislost na fosilních zdrojích a také emise skleníkových plynů v energetice. Velkých výkyvů ceny elektřiny na burze se ale jen tak nezbavíme.
 
 ## Dodatky
