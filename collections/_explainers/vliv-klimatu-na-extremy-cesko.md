@@ -4,7 +4,7 @@ title:       "Jak souvisí extrémní počasí v Česku s klimatickou změnou?"
 slug:        "vliv-klimatu-na-extremy-cesko"
 published:   2022-06-08
 author:      "Kolektiv autorů"
-weight:      74
+weight:      79
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
 cover-source-author: "Honza Groh"
@@ -15,17 +15,129 @@ cover-source-url: "https://cs.wikipedia.org/wiki/Povode%C5%88_v_%C4%8Cech%C3%A1c
 perex:       "S rostoucí frekvencí a intenzitou extrémních meteorologických jevů se veřejnost stále častěji ptá, jak tyto události souvisejí se změnou klimatu. Čeští odborníci na jednotlivé typy extrémů komentují v následujícím textu příklady z nedávné doby."
 ---
 
-## Tornádo
-*Petr Zacharov*
+{% include preview-box.html
+    title="Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát"
+    text="V článku přinášíme celé znění publikace."
+    slug="vliv-klimatu-na-extremy-prirucka"
+%}
 
-## Sucho
-*Pavel Zahradníček*
+Tyto komentáře českých vědců doplňují důležitý kontext pro ČR k publikaci ["Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát"](/explainery/vliv-klimatu-na-extremy-prirucka). Ta se věnuje hodnocení vlivu globální změny klimatu na extrémní projevy počasí ve světě.
 
 ## Vlny veder
-*Aleš Urban*
+
+*Autor: [Aleš Urban](#ales-urban)*
+
+Dosud nejteplejším létem v historii měření na území ČR bylo léto roku 2019. Průměrná teplota letních měsíců (červen–srpen) byla 19,5 °C[^vlny-veder-cesko], tedy 2,5 °C nad normálem z let 1981–2010. Za rekordní hodnoty mohl zejména extrémně teplý červen, který se s průměrnou teplotou 20,7 °C stal vůbec nejteplejším červnem v historii měření a druhým nejteplejším měsícem po srpnu 2015. Historicky nejvyšší červnová teplota (pozn. do 19. června 2022, kdy bylo v Řeži naměřeno 39.0 °C) byla naměřena v červnu 2019 v Doksanech, během vlny veder na přelomu června a července. Teplotní rekordy padaly v té době i jinde v Evropě – historicky nejvyšší teplota zaznamenaná ve Francii se přiblížila 46 °C[^vlny-veder-francie]. Druhá vlna veder na konci července zasáhla západní Evropu a Skandinávii, historický teplotní rekord byl zaznamenán např. ve Velké Británii[^vlny-veder-uk]. V Česku ovšem nebyla tato vlna veder tak extrémní jako ta první koncem června.
+
+Přestože bylo léto 2019 v průměru nejteplejším v historii měření v Česku, extremita a délka samotných vln veder nedosáhla v tomto roce hodnot z předchozích let 2018 a 2015, kdy bylo zaznamenáno více tropických dnů (dny s maximální teplotou nad 30 °C)[^vlny-veder-cesko] a historické teplotní rekordy[^vlny-veder-twitter] padaly na více stanicích. Podle aktuální studie[^vlny-veder-urban] bylo na stanici Praha-Ruzyně **nejvíce extrémně horkých dnů během jednoho léta zatím zaznamenáno v roce 2015 – celkem 28**. Z tohoto pohledu bylo léto 2019 s dvaceti horkými dny až čtvrté nejextrémnější za roky 2015, 2018 a 1994.
+
+Extrémnosti vln veder v jednotlivých letech odpovídá i jejich dopad na úmrtnost: v rekordním roce 2015 měly v Praze na svědomí více než 250 nadúmrtí oproti přibližně 120 nadúmrtím v roce 2019. Důležitější než dopad jednotlivých událostí je však **rostoucí trend v počtu nadúmrtí v důsledku horka během posledních dvou dekád**. V letech 2010–2019 bylo riziko úmrtí z horka v průměru dvakrát větší než v předchozích třech desetiletích (1982–2009)[^vlny-veder-urban] [^vlny-veder-praha].
+
+Studie vyhodnocující podíl změny klimatu na jednotlivých extrémních vlnách veder a jejich dopadech na českou společnost zatím chybí. Nicméně zahraniční studie[^vlny-veder-francie] udávají, že před sto lety by byla vlna veder o podobné intenzitě jako ta v červnu 2019 ve Francii 10krát méně pravděpodobná. Výsledky českých autorů[^vlny-veder-lhotka] dodávají, že vlny veder, jež jsou svou intenzitou srovnatelné s těmi v letech 2015, 2018 nebo v červnu 2019, mohou ve střední Evropě na konci 21. století nastávat až 4krát častěji než v současnosti. A tři nebo čtyři vlny veder různé intenzity během jednoho léta (podobně jako v roce 2015) mohou být v budoucnu projevem běžného letního počasí. To bude mít bezprostřední dopad i na nárůst rizika úmrtí v souvislosti s horkem. Mezinárodní studie odhaduje, že **přibližně jedna pětina úmrtí ve střední Evropě souvisejících s horkem je již nyní způsobena změnou klimatu** [^vlny-veder-irozhlas].
+
+Bezprecedentní nárůst rizika úmrtí z horka v poslední dekádě mimo jiné ukazuje, jak **nutná je urychlená adaptace našich měst na teplejší podnebí** a zavádění účinných opatření pro ochranu obyvatelstva před horkem.
+
+## Sucho
+
+*Autor: [Pavel Zahradníček](#pavel-zahradnicek)*
+
+{% include preview-box.html
+    title="Změna klimatu a extrémy počasí – hlavní informace"
+    text="V infografice shrnujeme to nejdůležitější o vlivu změny klimatu na jednotlivé extrémy počasí."
+    slug="vliv-klimatu-na-extremy"
+%}
+
+Sucho jako hydrometeorologický extrém ke klimatu střední Evropy neodmyslitelně patří, stejně jako povodně. Na rozdíl od povodní je však většinou zákeřně plíživé. Povodně přijdou náhle, často způsobí velké škody, ale také rychle skončí – naproti tomu sucho má pomalejší nástup, ale může trvat i několik let (v ČR to bylo např. v období 2015–2020). Podle délky trvání a dopadů lze tento jev rozdělit do čtyř kategorií. Jako první přichází **sucho meteorologické** , které je většinou způsobeno nedostatkem srážek. To pozvolna přechází v **sucho zemědělské (půdní)**, které se projevuje sníženou vláhou v půdě a jeho dopady pociťují hlavně zemědělci. Jestliže sucho trvá delší dobu, začne se projevovat jako snížené stavy povrchových a podpovrchových vod – pak mluvíme o **suchu hydrologickém**. A pokud začne dlouhodobé sucho negativně dopadat na společnost, hovoří se o **socioekonomickém suchu**.
+
+**Poslední sucho, výjimečné svou délkou a intenzitou, zasáhlo naše území v letech 2015–2020.** Při srovnání s daty měřenými od roku 1803 vychází jako dosud nejhorší a lze jej statisticky hodnotit jako sucho, které by se v takové intenzitě a délce mělo vyskytovat pouze jednou za 500 let.
+
+{% include figure.html
+    name="sucho.png"
+    alt="Graf ukazující nárůst intenzivního sucha v Česku v posledních letech."
+    caption="Intenzita období sucha v ČR v letech 1803–2020. Čím je sloupeček širší, tím déle sucho trvalo; čím červenější, tím bylo intenzivnější. Přestože zde v minulosti silná a delší sucha byla také, žádné z nich se nevyrovnalo tomu poslednímu."
+    source-text="<a href='https://www.czechglobe.cz/'>Ústav výzkumu globální změny AV ČR</a>"
+%}
+
+Srovnáme-li **toto nedávné sucho** s ještě delšími záznamy, které lze získat z letokruhů stromů (dendrochronologie), zjistíme, že **bylo nejintenzivnější za poslední 2000 let** (i když v době renesance nastalo velice podobné období). Typickou příčinou sucha je nedostatek srážek, na suchu v letech 2015–2020 se ale do velké míry podílela i teplota vzduchu – toto pětiletí bylo nejteplejší za celou dobu měření. Vyšší teploty vzduchu znamenají větší výpar, a tedy i větší intenzitu sucha. Lze konstatovat, že příčinou sucha v tomto období byla z 50 % teplota vzduchu a z 50 % nedostatek srážek, na jižní Moravě dokonce teplota vzduchu hrála převažující roli (70 %). **Změna klimatu se proto výrazně podílela na délce i intenzitě sucha a také na síle jeho dopadů**.
+
+Srážky v ČR se z dlouhodobého hlediska významně nemění a totéž se předpokládá i do budoucna. Očekává se, že se budou nadále střídat vlhčí a sušší roky. Na druhou stranu se se však předpokládá také pokračování růstu průměrné teploty vzduchu v České republice, a to o 2 °C do poloviny tohoto století a až o 4 °C do konce století oproti letům 1981–2010. Tento fakt bude způsobovat větší výpar vody z krajiny, a tedy častější tendenci k suchým obdobím, nebo bude výrazně prohlubovat sucho, které nastalo v důsledku nedostatku srážek. Dá se proto konstatovat, že **v případě nadprůměrně teplého roku by muselo v daném roce také více napršet, aby se během roku neobjevila nějaká epizoda sucha**. Kromě toho už nyní v nižších a středních polohách pozorujeme **výskyt mírnějších zim s malým množstvím sněhové pokrývky**. To **se negativně odráží v zásobách půdní vlhkosti na začátku vegetační sezóny a množství povrchových a podpovrchových vod na začátku jara**.
+
+V případě sucha a jeho dopadů je rovněž důležitá správná informovanost. Proto hlavně pro potřeby zemědělců vznikl **portál [intersucho.cz](http://www.intersucho.cz/) – monitoring sucha s předpovědí na 10 dní (a výhledově až na půl roku)**. Z dlouhodobější perspektivy je pak pro adaptační opatření klíčové znát i nejpravděpodobnější vývoj klimatu do budoucna. K tomu může posloužit například podrobná analýza klimatických modelů zaměřená na podmínky České republiky ([www.klimatickazmena.cz](http://www.klimatickazmena.cz/)).
+
+## Tornádo
+
+*Autor: [Petr Zacharov](#petr-zacharov)*
+
+Dne **24. června 2021** udeřilo ve večerních hodinách **na jižní Moravě tornádo, které nemělo do té doby v ČR obdoby**. Prohnalo se úsekem dlouhým 26 km, způsobilo obrovské škody v sedmi obcích a smrt šesti osob. I když se tornáda v Česku vyskytují pravidelně (jejich počet se odhaduje na 1–3 ročně), tornádo takové síly u nás do té doby evidováno nebylo. Jeho výskyt můžeme připsat statistice – stejně jako máme menší povodně a jednou za čas přijdou i ty "stoleté", můžeme mít slabá tornáda a výjimečně i tornádo velmi silné. Zároveň je třeba dodat, že ničivost tornáda z roku 2021 byla zčásti i dílem náhody: kdyby se pohybovalo jen o několik kilometrů vedle, nemuselo zdaleka dojít k tak rozsáhlým škodám na majetku ani ztrátám na životech.
+
+I když dnes víme, že v budoucnu bude přibývat dní s tzv. konvektivními bouřemi[^tornado-boure], které jsou jednou z nutných podmínek pro vznik tornáda (spolu s tím bude mimochodem přibývat i srážek, které tyto bouře vyprodukují), neznamená to, že se zároveň zvýší také počet tornád. K vývoji tornáda totiž nestačí pouze vertikální teplotní rozdíly v atmosféře, ale jsou nutné též rozdíly v rychlosti větru – tzv. "střih větru". A na tento střih, jak se zdá, klimatická změna vliv nemá (a pokud ano, pak jej spíše oslabuje). **"Moravské" tornádo z roku 2021 tedy klimatické změně přičítat nelze**.
+
+Podíváme-li se na počet tornád zaznamenaných ve světě v posledních desetiletích, zjistíme rostoucí tendenci. Pokud však tato tornáda rozdělíme na slabá (EF0) a silnější (EF1+)[^tornado-klasifikace], je hned zřejmé, že přibývá pouze slabých tornád – silná tornáda, která většinou neuniknou pozornosti, žádný nárůst v počtu nevykazují. Tento fakt souvisí s rozvojem dopplerovských radarů (USA) a také s rozšířením chytrých telefonů a sociálních sítí, díky nimž se pozorované tornádo snadněji dostane do databáze tornád, i když patří mezi ta slabší. Současné studie nicméně naznačují, že i když počet dní s tornády za rok nyní mírně klesá, na druhou stranu přibývá dní, v nichž se vyskytuje velké množství tornád. To by odpovídalo i výše uvedenému faktu, že přibývá konvektivních bouří ve dnech, které jsou pro vznik tornád vhodné díky výskytu silného střihu větru. **V každém případě lze prohlásit, že tornád jako takových nepřibývá**. To by odpovídalo i výše uvedenému faktu, že přibývá konvektivních bouří, které jsou pro vznik tornáda klíčové, ale ne nutně organizovaných díky silnému střihu větru. Je tedy možné prohlásit, že **i když tornád jako takových zatím nepřibývá, častěji se dnes vyskytují podmínky potřebné k jejich vzniku**.
+
+V USA je možné vypozorovat ještě jeden trend: oblasti s více tornády se posouvají směrem na východ. **Pro Evropu a ostatní kontinenty** však lze studii o podobných trendech vytvořit jen stěží – na to zde **tornáda zůstávají i nadále** příliš **výjimečným jevem**.
 
 ## Požáry
-*Miroslav Trnka*
+
+*Autor: [Miroslav Trnka](#miroslav-trnka)*
+
+*Text k tomuto extrému připravujeme.*
 
 ## Povodně
-*Libor Elleder*
+
+*Autor: [Libor Elleder](#libor-elleder)*
+
+*Text k tomuto extrému připravujeme.*
+
+## Kontakty na experty
+
+{:#ales-urban}
+**Mgr. Aleš Urban, Ph.D.** (vlny veder)<br/>
+Ústav fyziky atmosféry AV ČR, Fakulta životního prostředí ČZU v Praze<br/>
+urban@ufa.cas.cz<br/>
++420 272 016 069
+
+{:#pavel-zahradnicek}
+**Mgr. Pavel Zahradníček, Ph.D.** (sucho)<br/>
+Ústav výzkumu globální změny AV ČR, projektový tým www.intersucho.cz, Český hydrometeorologický ústav, Brno<br/>
+zahradnicek.p@czechglobe.cz<br/>
++420 511 192 215
+
+{:#petr-zacharov}
+**RNDr. Petr Zacharov, Ph.D.** (tornádo)<br/>
+Ústav fyziky atmosféry AV ČR, v. v. i.<br/>
+petas@ufa.cas.cz<br/>
++420 272 016 051
+
+{:#miroslav-trnka}
+**Prof. Mgr. Ing. Miroslav Trnka Ph.D.** (požáry)<br/>
+Ústav výzkumu globální změny AV ČR, projektový tým www.intersucho.cz<br/>
+trnka.m@czechglobe.cz<br/>
++420 725 950 927
+
+{:#libor-elleder}
+**Ing. Libor Elleder, Ph.D.** (povodně)<br/>
+Český hydrometeorologický ústav Praha, ČVUT<br/>
+libor.elleder@chmi.cz<br/>
++420 703 121 473, +420 244 032 355
+
+## Zdroje a poznámky
+
+[^tornado-boure]: Více o konveční bouři lze nalézt na [Wikipedii](https://cs.wikipedia.org/wiki/Konvek%C4%8Dn%C3%AD_bou%C5%99e).
+
+[^tornado-klasifikace]: Klasifikace tornád dle [Fujitovy stupnice](https://cs.wikipedia.org/wiki/Torn%C3%A1do#Fujitova_stupnice).
+
+[^vlny-veder-cesko]: Infomet: [Srpen a léto 2019 na území ČR](http://www.infomet.cz/index.php?id=read&idd=1568015141)
+
+[^vlny-veder-francie]: World Weather Attribution: [Human contribution to record-breaking June 2019 heatwave in France](https://www.worldweatherattribution.org/human-contribution-to-record-breaking-june-2019-heatwave-in-france/)
+
+[^vlny-veder-uk]: World Weather Attribution: [Human contribution to the record-breaking July 2019 heatwave in Western Europe](https://www.worldweatherattribution.org/human-contribution-to-the-record-breaking-july-2019-heat-wave-in-western-europe/)
+
+[^vlny-veder-twitter]: [Příspěvěk](https://twitter.com/pavelzahrad/status/1531606002688303104?s=20&amp;t=jhse0ugWMTfUgCJ4kI_b0g) na Twitteru Pavla Zahradníčka
+
+[^vlny-veder-urban]: Urban, A., Fonseca-Rodríguez, O., Di Napoli, C. & Plavcová, E. Temporal changes of heat-attributable mortality in Prague, Czech Republic, over 1982–2019. Urban Climate 44 (2022),[https://doi.org/10.1016/j.uclim.2022.101197](https://doi.org/10.1016/j.uclim.2022.101197)
+
+[^vlny-veder-lhotka]: Lhotka, O., Kyselý, J. & Farda, A. Climate change scenarios of heat waves in Central Europe and their uncertainties. Theor Appl Climatol 131, 1043–1054 (2018). [https://doi.org/10.1007/s00704-016-2031-3](https://doi.org/10.1007/s00704-016-2031-3)
+
+[^vlny-veder-irozhlas]: Štěpán Sedláček: [Výzkum: Změna klimatu může za přibližně pětinu každoročních úmrtí souvisejících s horkem v Česku](https://www.irozhlas.cz/veda-technologie/veda/klima-horko-studie-cesko-umrti_2106060736_ada)
+
+[^vlny-veder-praha]: Akademie věd ČR: [Horko v Praze: zvýšená úmrtnost za posledních 10 let](https://www.avcr.cz/cs/pro-media/tiskove-zpravy/Horko-v-Praze-zvysena-umrtnost-za-poslednich-10-let/)
