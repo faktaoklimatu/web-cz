@@ -1,33 +1,35 @@
 ---
 layout:      explainer
-title:       "Extrémy počasí a klimatická změna: Jak o nich mluvit a psát – Kompas pro novináře"
+title:       "Extrémy počasí a klimatická změna. Jak o nich mluvit a psát"
 slug:        "vliv-klimatu-na-extremy-prirucka"
-published:   2022-06-08
+published:   2022-06-23
 author:      "Ben Clarke, Friederike Otto"
-weight:      74
+weight:      80
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-cover-source-author: "Espen Bierud"
-cover-source-license: "Unsplash License"
-cover-source-license-url: "https://unsplash.com/license"
-cover-source-text: "Arendal, Norway"
-cover-source-url: "https://unsplash.com/photos/W43gm6TD118"
-perex:       "Autoři děkují Wolfgangu Blauovi a Rose Andreattě za jejich užitečné komentáře a připomínky."
+cover-source-author: "Denis Meyer – Greenpeace"
+cover-source-license: "CC BY-NC-ND"
+cover-source-license-url: "https://creativecommons.org/licenses/by-nc-nd/3.0/cz/"
+cover-source-text: "Heatwave and Drought in Burgundy"
+cover-source-url: "https://media.greenpeace.org/archive/Heatwave-and-Drought-in-Burgundy-27MZIFJ8O28DK.html"
+perex:       "Napsat perex"
 ---
-
-## Předmluva
-
-*Bude doplněna!*
 
 ## Úvod
 
-Změna klimatu způsobená člověkem vede k tomu, že extrémní meteorologické události jako vlny veder, silné přívalové deště, bouře či období sucha jsou v mnoha oblastech světa stále častější a intenzivnější. To ovšem neznamená, že pravděpodobnost výskytu stoupá u *všech* extrémních událostí – a navíc se v některých částech světa změny projevují více, jinde méně. V každém případě mají tyto události často významné dopady na společnost: ztráta úrody či zemědělské půdy, zničení majetku, vážné narušení ekonomiky, ztráty na životech apod. Když k něčemu takovému dojde, veřejnost se zpravidla začne ptát po příčinách. A stále častěji se objevuje otázka: „Byla tato událost způsobena změnou klimatu?“.
+{% include preview-box.html
+    title="Jednostránkové shrnutí"
+    text="V infografice shrnujeme to nejdůležitější o vlivu změny klimatu na jednotlivé extrémy počasí."
+    slug="vliv-klimatu-na-extremy"
+%}
+
+Změna klimatu způsobená člověkem vede k tomu, že extrémní meteorologické události jako vlny veder, silné přívalové deště, bouře či období sucha jsou v mnoha oblastech světa stále častější a intenzivnější. To ovšem neznamená, že pravděpodobnost výskytu stoupá u *všech* extrémních událostí – a navíc se v některých částech světa změny projevují více, jinde méně. V každém případě mají tyto události často významné dopady na společnost: ztráta úrody či zemědělské půdy, zničení majetku, vážné narušení ekonomiky, ztráty na životech apod. Když k něčemu takovému dojde, veřejnost se zpravidla začne ptát po příčinách. A stále častěji se objevuje otázka: "Byla tato událost způsobena změnou klimatu?".
  
-Smyslem této příručky je pomoci novinářům se v tomto tématu zorientovat. Text nejprve představuje vědeckou metodu zvanou „atribuce extrémních událostí“, pomocí níž lze určit, do jaké míry můžeme (či nemůžeme) danou meteorologickou událost přisoudit (atribuovat) klimatické změně. Dále v příručce najdete také spolehlivá tvrzení, která je možné použít pro některé typy extrémních projevů počasí, jež veřejnost momentálně zajímají, a to i tehdy, když zrovna neprobíhá na toto téma žádný konkrétní výzkum. Tato tvrzení se opírají o nejnovější zprávy mezivládního panelu IPCC a nejaktuálnější poznatky, které vycházejí ze studií zaměřených na extrémní události v poslední době. Na konci příručky je pak stručný přehled všech extrémních meteorologických jevů a shrnutí toho nejdůležitějšího, co je u každého z nich potřeba komunikovat.
+Smyslem této příručky je pomoci novinářům se v tomto tématu zorientovat. Text nejprve představuje vědeckou metodu zvanou "atribuce extrémních událostí", pomocí níž lze určit, do jaké míry můžeme (či nemůžeme) danou meteorologickou událost přisoudit (atribuovat) klimatické změně. Dále v příručce najdete také spolehlivá tvrzení, která je možné použít pro některé typy extrémních projevů počasí, jež veřejnost momentálně zajímají, a to i tehdy, když zrovna neprobíhá na toto téma žádný konkrétní výzkum. Tato tvrzení se opírají o nejnovější zprávy mezivládního panelu IPCC a nejaktuálnější poznatky, které vycházejí ze studií zaměřených na extrémní události v poslední době. Na konci příručky je pak stručný přehled všech extrémních meteorologických jevů a shrnutí toho nejdůležitějšího, co je u každého z nich potřeba komunikovat.
  
 Média a zpravodajské agentury se při informování o extrémních meteorologických jevech často dopouštějí tří chyb: ignorují změnu klimatu jako příčinu události nebo připisují událost změně klimatu, aniž by toto tvrzení podložily důkazy, a nebo uvádějí klimatickou změnu jako jedinou příčinu extrémní meteorologické události.
  
-Částečně je tomu tak proto, že otázka, zda byla nějaká událost způsobena změnou klimatu, zní logicky, je ale vlastně položená nesprávně. Pokud například silný kuřák onemocní rakovinou plic, také neřekneme, že cigarety mu přivodily rakovinu – můžeme však říci, že v důsledku poškození způsobeného cigaretami je u něj pravděpodobnost vzniku tohoto onemocnění vyšší. Stejně tak změna klimatu nemůže zapříčinit určitou extrémní událost (ve smyslu “příčina” vede k “následku”), protože všechny meteorologické události mají více příčin a svou roli hraje i náhoda – počasí je do určité míry chaotické.
+Částečně je tomu tak proto, že otázka, zda byla nějaká událost způsobena změnou klimatu, zní logicky, je ale vlastně položená nesprávně. Pokud například silný kuřák onemocní rakovinou plic, také neřekneme, že cigarety mu přivodily rakovinu – můžeme však říci, že v důsledku poškození způsobeného cigaretami je u něj pravděpodobnost vzniku tohoto onemocnění vyšší. Stejně tak změna klimatu nemůže zapříčinit určitou extrémní událost (ve smyslu "příčina" vede k "následku"), protože všechny meteorologické události mají více příčin a svou roli hraje i náhoda – počasí je do určité míry chaotické.
 
 Změna klimatu nicméně může mít vliv na to, jak pravděpodobná a jak intenzivní určitá událost je, a tedy i jaký dopad má na lidi, majetek a přírodu. Novináři, jejichž úkolem je po proběhlé katastrofě uspokojit zájem veřejnosti, proto musí vědět, jak se na ní změna klimatu podílela. Pomocí atribuce extrémních událostí jim věda může poskytnout odpověď.
 
@@ -64,64 +66,60 @@ Uvedená metodika umožňuje vědcům popsat trendy spojené s extrémními udá
 
 {% include figure.html
     name="stott-et-al.png"
-    alt="TODO"
-    caption="Atribuce extrémních událostí v praxi (dle [Stott a kol., 2016](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcc.380)). Křivky představují klimatickou proměnnou, například denní teplotu. Průměrné teploty jsou nejpravděpodobnější (vrchol křivky), zatímco extrémní teploty (horko a zima, na okrajích křivky) jsou nejméně pravděpodobné. Zelená křivka ukazuje, jak pravděpodobné byly tyto teploty v předindustriálním světě, kde nedocházelo k oteplování vlivem činnosti člověka, červená představuje svět současný. Prahovou hodnotou je hodnota, kterou zvolíme, když nastane extrémní událost (v tomto případě velmi horký den). Relativní velikost vyšrafovaných oblastí pak ukazuje, o kolik je taková událost v současném světě pravděpodobnější, než byla v tom předindustriálním. Přerušovaná čára ukazuje možný další vývoj počasí v budoucnu – v tomto konkrétním případě naznačuje, že teploty, které v současném klimatu považujeme za velmi horký den, mohou v budoucnu znamenat den relativně chladný (ve srovnání s ostatními)."
+    alt="Čárový graf ukazující pravděpodobnost extrémních klimatických událostí ve třech scénářích, kterými jsou svět bez vlivu člověka, současný svět a predikce do budoucna."
+    caption="Atribuce extrémních událostí v praxi (dle <a href='https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcc.380'>Stott a kol.</a>). Křivky představují klimatickou proměnnou, například denní teplotu. Průměrné teploty jsou nejpravděpodobnější (vrchol křivky), zatímco extrémní teploty (horko a zima, na okrajích křivky) jsou nejméně pravděpodobné. Zelená křivka ukazuje, jak pravděpodobné byly tyto teploty v předindustriálním světě, kde nedocházelo k oteplování vlivem činnosti člověka, červená představuje svět současný. Prahovou hodnotou je hodnota, kterou zvolíme, když nastane extrémní událost (v tomto případě velmi horký den). Relativní velikost vyšrafovaných oblastí pak ukazuje, o kolik je taková událost v současném světě pravděpodobnější, než byla v tom předindustriálním. Přerušovaná čára ukazuje možný další vývoj počasí v budoucnu – v tomto konkrétním případě naznačuje, že teploty, které v současném klimatu považujeme za velmi horký den, mohou v budoucnu znamenat den relativně chladný (ve srovnání s ostatními)."
 %}
 
-Výsledky těchto studií umožňují vědcům vyjádřit se k meteorologickým událostem například takto: „Tato událost byla v důsledku změny klimatu způsobené člověkem nejméně dvakrát pravděpodobnější.“ Nebo „Tato vlna veder byla o 3 stupně teplejší, než by byla ve světě bez globálního oteplování.“ Také možná budeme schopni říci, že k určité událost by bez změny klimatu vůbec nedošlo, protože nemá historický precedens a v modelových simulacích, které se změnou klimatu nepracují, se nevyskytuje.
+Výsledky těchto studií umožňují vědcům vyjádřit se k meteorologickým událostem například takto: "Tato událost byla v důsledku změny klimatu způsobené člověkem nejméně dvakrát pravděpodobnější." Nebo "Tato vlna veder byla o 3 stupně teplejší, než by byla ve světě bez globálního oteplování." Také možná budeme schopni říci, že k určité událost by bez změny klimatu vůbec nedošlo, protože nemá historický precedens a v modelových simulacích, které se změnou klimatu nepracují, se nevyskytuje.
  
 Databáze výsledků výzkumu věnovaného atribuci extrémních událostí – a už to bylo více než 400 studií z celého světa – [je zveřejněna na webu Carbon Brief](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world). Například iniciativa [World Weather Attribution](https://www.worldweatherattribution.org/) provedla od roku 2014 díky celoevropské spolupráci vědců zabývajících se atribucí již řadu rychlých atribučních studií s cílem co nejrychleji zjistit, jakou roli u extrémní události hrála změna klimatu. V některých případech se dokonce podařilo získat výsledky ještě před skončením samotné události. Z časových důvodů jsou výsledky atribučních studií zveřejňovány dříve, než je mají možnost posoudit odborní recenzenti, samotná metodika výpočtů však již odborným posouzením prošla.
 
-S atribučními studiemi pracují v poslední době nejrůznější uživatelé. Jako důkazní materiál byly využity v některých přelomových soudních sporech týkajících se klimatu, např. [Juliana vs. Spojené státy americké](https://www.ourchildrenstrust.org/juliana-v-us), [Pabai Pabai a Guy Paul Kabai vs. Australské společenství](http://climatecasechart.com/climate-change-litigation/non-us-case/pabai-pabai-and-guy-paul-kabai-v-commonwealth-of-australia/?fbclid=IwAR1H864NzkkwxkNjQfRqP7TfxZLFKX5O6J3KFMYOzvzSrmwtQ4rxgn-PQHI) či [Lluiya vs. RWE](http://climatecasechart.com/climate-change-litigation/non-us-case/lliuya-v-rwe-ag/), a také v žalobě proti brazilskému prezidentovi Jairu Bolsonarovi u [Mezinárodního trestního soudu](https://www.theplanetvs.org). Efektivní využívání atribuce v právních případech je dnes rychle se rozvíjející oblastí výzkumu. Kromě toho z [výzkumu](https://journals.ametsoc.org/view/journals/wcas/13/2/WCAS-D-20-0155.1.xml) vypadá atribuce „slibně“ i jako komunikační nástroj změny klimatu „protože dokáže dobře propojovat nové vědecké informace spojené s konkrétní událostí, jež v daný moment přitahuje pozornost veřejnosti, s osobními zkušenostmi a pozorováním extrémní události.“
+S atribučními studiemi pracují v poslední době nejrůznější uživatelé. Jako důkazní materiál byly využity v některých přelomových soudních sporech týkajících se klimatu, např. [Juliana vs. Spojené státy americké](https://www.ourchildrenstrust.org/juliana-v-us), [Pabai Pabai a Guy Paul Kabai vs. Australské společenství](http://climatecasechart.com/climate-change-litigation/non-us-case/pabai-pabai-and-guy-paul-kabai-v-commonwealth-of-australia/?fbclid=IwAR1H864NzkkwxkNjQfRqP7TfxZLFKX5O6J3KFMYOzvzSrmwtQ4rxgn-PQHI) či [Lluiya vs. RWE](http://climatecasechart.com/climate-change-litigation/non-us-case/lliuya-v-rwe-ag/), a také v žalobě proti brazilskému prezidentovi Jairu Bolsonarovi u [Mezinárodního trestního soudu](https://www.theplanetvs.org). Efektivní využívání atribuce v právních případech je dnes rychle se rozvíjející oblastí výzkumu. Kromě toho z [výzkumu](https://journals.ametsoc.org/view/journals/wcas/13/2/WCAS-D-20-0155.1.xml) vypadá atribuce "slibně" i jako komunikační nástroj změny klimatu "protože dokáže dobře propojovat nové vědecké informace spojené s konkrétní událostí, jež v daný moment přitahuje pozornost veřejnosti, s osobními zkušenostmi a pozorováním extrémní události."
 
 ## Výzkum věnovaný atribuci událostí
 
 ### Příklady atribučních studií
 
-**Povodně v Bangladéši**
-*Srpen 2017*
+**Povodně v Bangladéši**, *srpen 2017*
 
 - **Událost**: V srpnu 2017 postihly Bangladéš přívalové deště, které ještě posílila zvýšená hladina řek přitékajících z Indie. Většina této vody skončila v povodí Brahmaputry a břehy této řeky se protrhly – výsledkem byla rekordně vysoká povodeň, která zaplavila rozsáhlé území, zejména na severu země, s dopady na domovy a živobytí téměř sedmi milionů lidí.
 - **Souvislost se změnou klimatu**: Autoři atribuční studie v tomto případě nebyli schopni dojít k závěru, zda byly extrémní srážky intenzivnější v důsledku změny klimatu – částečně proto, že historické záznamy o srážkách v tomto regionu jsou příliš stručné, a částečně proto, že sulfátové aerosoly v oblasti jižní Asie mají lokální ochlazovací efekt, čímž částečně kompenzují globální oteplování. Pokud se však svět oteplí o 2 °C, bude pravděpodobnost takto extrémních srážek asi o 70 % vyšší.
 
-**Extrémní zima v jihovýchodní Evropě**
-*Leden 2017*
+**Extrémní zima v jihovýchodní Evropě**, *leden 2017*
 
 - **Událost**: V lednu 2017 způsobila tlaková výše extrémně nízké teploty a sněžení v Itálii, na Balkáně a v Turecku. Teploty se v těchto oblastech pohybovaly 5–12 °C pod průměrem typickým pro toto roční období a extrémní podmínky vedly k uzavření škol, dopravním nehodám a zrušeným letům.
 - **Souvislost se změnou klimatu**: Nejde o bezprecedentní událost – k něčemu takovému dochází zhruba jednou za 35 let. Teploty v daném regionu jsou velmi proměnlivé, takže vliv globálního oteplování nebylo možné přesně stanovit. Je však nepochybné, že podobná událost by před změnou klimatu způsobenou člověkem byla chladnější.
 
 {% include figure.html
     name="zima-evropa.png"
-    alt="TODO"
+    alt="Mapa Evropy ukazující odchylku až -15 stupňů Celsia od normálu denní teploty v jihovýchodní Evropě a odchylku až +9 stupňů Celsia v severní Evropě."
     caption="Odchylka průměrné denní teploty od normálu v Evropě od 7. do 11. ledna 2017."
-    source-text="Zdroj: [World Weather Attribution](https://www.worldweatherattribution.org/se-europe-cold-january-2017/) (citace z 27. 10. 2021)"
+    source-text="<a href='https://www.worldweatherattribution.org/se-europe-cold-january-2017/'>World Weather Attribution</a> (citace z 27. 10. 2021)"
 %}
 
 
-**Vlna veder v západní Evropě**
-*Červenec 2019*
+**Vlna veder v západní Evropě**, *červenec 2019*
 
 - **Událost**: Na konci července 2019 na 3–4 dny extrémně vystoupaly teploty v západní Evropě a Skandinávii, a překonaly tak dosavadní rekordy z léta 2003. Teploty v Nizozemsku a Belgii poprvé dosáhly 40 °C.
 - **Souvislost se změnou klimatu**: Ve Francii a Nizozemsku se pravděpodobnost výskytu počasí, které bude minimálně tak horké jako tato vlna veder, zvýšila v důsledku změny klimatu přibližně stokrát. V Německu a Velké Británii stoupla asi desetkrát. Ve všech postižených regionech bylo vedro zhruba o 1,5–3 °C větší, než by bylo bez změny klimatu.
 
 {% include figure.html
     name="vlna-veder-evropa.png"
-    alt="TODO"
+    alt="Mapa Evropy ukazující nárůst teploty zejména v západní a severní Evropě v porovnání s lety 1950–2018."
     caption="Maximální roční teploty pozorované v Evropě v roce 2019 ve srovnání s lety 1950–2018."
-    source-text="Zdroj: [World Weather Attribution](https://www.worldweatherattribution.org/human-contribution-to-the-record-breaking-july-2019-heat-wave-in-western-europe/) (citace z 27. 10. 2021)"
+    source-text="<a href='https://www.worldweatherattribution.org/human-contribution-to-the-record-breaking-july-2019-heat-wave-in-western-europe/'>World Weather Attribution</a> (citace z 27. 10. 2021)"
 %}
 
-**Sucho v Kapském Městě**
-*V letech 2015–2017*
+**Sucho v Kapském Městě**, *v letech 2015–2017*
 
-- **Událost**: V letech 2015–2017 byly v Západním Kapsku (provincie JAR) každý rok podprůměrné srážky. Zásoby vody v nádržích se v celém regionu výrazně snížily a Kapské Město, které je na nich závislé, se ocitlo jen pár dní od tzv. „dne nula“ – tedy okamžiku, kdy by v městském vodovodu už nebyla vůbec žádná voda. Místní systém hospodaření s vodou, sestávající ze 14 přehrad a systému potrubí, sice byl navržen tak, aby dokázal zmírnit sucho, ke kterému dojde přibližně jednou za 50 let, ale je zatížený [politikařením](https://www.reuters.com/article/us-saundersonmeyer-drought-commentary/commentary-in-drought-hit-south-africa-the-politics-of-water-idUSKBN1FP226) a obviněními z [korupce](https://cer.org.za/programmes/water/publications-by-partner-organisations/sawc-report). 
+- **Událost**: V letech 2015–2017 byly v Západním Kapsku (provincie JAR) každý rok podprůměrné srážky. Zásoby vody v nádržích se v celém regionu výrazně snížily a Kapské Město, které je na nich závislé, se ocitlo jen pár dní od tzv. "dne nula" – tedy okamžiku, kdy by v městském vodovodu už nebyla vůbec žádná voda. Místní systém hospodaření s vodou, sestávající ze 14 přehrad a systému potrubí, sice byl navržen tak, aby dokázal zmírnit sucho, ke kterému dojde přibližně jednou za 50 let, ale je zatížený [politikařením](https://www.reuters.com/article/us-saundersonmeyer-drought-commentary/commentary-in-drought-hit-south-africa-the-politics-of-water-idUSKBN1FP226) a obviněními z [korupce](https://cer.org.za/programmes/water/publications-by-partner-organisations/sawc-report). 
 - **Souvislost se změnou klimatu**: Ačkoli je tento typ události v současném klimatu stále vzácný (zhruba jednou za sto let), pravděpodobnost jejího výskytu se v důsledku klimatických změn zvýšila trojnásobně.
 
 {% include figure.html
     name="sucho-kapske-mesto.png"
-    alt="TODO"
+    alt="Dva obrázky, z nichž první ukazuje podprůměrné srážky v okolí Kapského města a druhý ve stejné oblasti ukazuje rozmístění asi dvou desítek vodních nádrží."
     caption="(Nahoře) Srážková anomálie z let 2015–2017 v tomto regionu ve srovnání s lety 1998–2014. (Dole) Region zkoumaný v rámci studie (šedý čtverec) a rozmístění nádrží (modrý čtverec)."
-    source-text="Zdroj: [World Weather Attribution](https://www.worldweatherattribution.org/the-role-of-climate-change-in-the-2015-2017-drought-in-the-western-cape-of-south-africa/) (citace z 03. 11. 2021)"
+    source-text="<a href='https://www.worldweatherattribution.org/the-role-of-climate-change-in-the-2015-2017-drought-in-the-western-cape-of-south-africa/'>World Weather Attribution</a> (citace z 03. 11. 2021)"
 %}
 
 ## Jak informovat o extrémních událostech, k nimž není žádná atribuční studie
@@ -150,9 +148,15 @@ Při informování o extrémních meteorologických událostech je také důlež
 
 ## Vlny veder
 
-_**V důsledku změny klimatu způsobené člověkem je dnes intenzita a pravděpodobnost výskytu vyšší u každé vlny veder, k níž ve světě dojde.**_
+_V důsledku změny klimatu způsobené člověkem je dnes intenzita a pravděpodobnost výskytu vyšší u každé vlny veder, k níž ve světě dojde._
 
-Globální oteplování se měří jako průměr pro celý svět, je to tedy něco jiného, než co lidé zažívají. Jak se ale průměrná teplota postupně zvyšuje, mění se i rozsah možných teplot v určitém místě v určitém čase. To znamená, že všude na světě se mírně teplejší dny stávají o něco pravděpodobnějšími a mírně chladnější dny o něco méně pravděpodobnými. Teploty, které dříve představovaly „extrém&quot;, jsou nyní jen neobvyklé. A teploty, které byly dříve téměř nemožné, jsou novou definicí extrému. Co je však klíčové: ke změně pravděpodobnosti dochází nejrychleji u nejextrémnějších teplot. Vidět je to na obrázku 1 (str. 7), kde se pravděpodobnost teplot v blízkosti středu křivek zvyšuje jen mírně, zatímco u těch „na chvostu&quot; je v teplejším světě pravděpodobnost výskytu až několikanásobně větší. Zvýšení globální teploty o 1 °C tedy způsobízpůsobuje, že vlny veder budou v průměrujsou teplejší o více než 1 °C.
+{% include preview-box.html
+    title="Klimatická změna a extrémy počasí v Česku"
+    text="V článku přinášíme příspěvky českých vědců k jednotlivým extrémům a jejich souvislostí se změnou klimatu."
+    slug="vliv-klimatu-na-extremy-cesko"
+%}
+
+Globální oteplování se měří jako průměr pro celý svět, je to tedy něco jiného, než co lidé zažívají. Jak se ale průměrná teplota postupně zvyšuje, mění se i rozsah možných teplot v určitém místě v určitém čase. To znamená, že všude na světě se mírně teplejší dny stávají o něco pravděpodobnějšími a mírně chladnější dny o něco méně pravděpodobnými. Teploty, které dříve představovaly „extrém&quot;, jsou nyní jen neobvyklé. A teploty, které byly dříve téměř nemožné, jsou novou definicí extrému. Co je však klíčové: ke změně pravděpodobnosti dochází nejrychleji u nejextrémnějších teplot. Vidět je to na obrázku 1 (str. 7), kde se pravděpodobnost teplot v blízkosti středu křivek zvyšuje jen mírně, zatímco u těch „na chvostu&quot; je v teplejším světě pravděpodobnost výskytu až několikanásobně větší. Zvýšení globální teploty o 1 °C tedy způsobuje, že vlny veder jsou teplejší o více než 1 °C.
 
 [Zpráva IPCC](https://www.ipcc.ch/report/ar6/wg1/) z roku 2021 jednoznačně uvádí, že průměrné teploty i extrémní vedra dosahují vyšších hodnot na všech kontinentech a že je to dáno změnou klimatu způsobenou člověkem:
 
@@ -172,7 +176,7 @@ Souvislost mezi globálním oteplováním a intenzivnějšími a častějšími 
 
 ## Povodně
 
-_**Extrémní srážky jsou v důsledku změny klimatu způsobené člověkem častější a intenzivnější na většině území světa. Zejména to platí v Evropě, většině Asie, střední a východní části Severní Ameriky a v některých částech Jižní Ameriky, Afriky a Austrálie. Jinde zatím s jistotou nevíme. V uvedených oblastech se v důsledku těchto přívalových dešťů pravděpodobně zvýšila i četnost a intenzita povodní, nicméně je nutné vzít v úvahu, že na povodně mají vliv i další faktory spojené s činností člověka.**_
+_Extrémní srážky jsou v důsledku změny klimatu způsobené člověkem častější a intenzivnější na většině území světa. Zejména to platí v Evropě, většině Asie, střední a východní části Severní Ameriky a v některých částech Jižní Ameriky, Afriky a Austrálie. Jinde zatím s jistotou nevíme. V uvedených oblastech se v důsledku těchto přívalových dešťů pravděpodobně zvýšila i četnost a intenzita povodní, nicméně je nutné vzít v úvahu, že na povodně mají vliv i další faktory spojené s činností člověka._
 
 Změna klimatu může přívalové deště ovlivnit dvojím způsobem. Zaprvé platí, že teplejší atmosféra „zadržuje&quot; více vlhkosti. Molekuly vody se totiž v teplejším prostředí pohybují rychleji, a častěji se v něm tedy vyskytují v plynném skupenství (pára). Vědci tento jev popisují jednoduše pomocí tzv. [Clausiovy-Clapeyronovy rovnice](https://en.wikipedia.org/wiki/Clausius%E2%80%93Clapeyron_relation), která říká, že ve vzduchu teplejším o 1 °C je o 7 % více vlhkosti – což jinými slovy znamená, že v daném lijáku spadne více srážek. Ve většině případů je právě tohle důvod, proč změna klimatu vede po celém světě k nárůstu extrémních dešťů.
 
@@ -197,7 +201,7 @@ Celkově lze na základě kombinace pozorovaných trendů a metody atribuce pře
 
 ## Tropické cyklóny (hurikány, tajfuny a cyklóny)
 
-_**Celkový počet tropických cyklón na světě za rok je zhruba stejný, ty nejintenzivnější a nejničivější bouře však v důsledku změny klimatu přicházejí častěji než dřív. Extrémních srážek způsobených tropickými cyklónami výrazně přibylo, stejně jako srážek z jiných zdrojů. Kvůli zvyšování hladiny moří vlivem změny klimatu jsou vyšší také přívalové vlny způsobené vzedmutím hladiny za bouře.**_
+_Celkový počet tropických cyklón na světě za rok je zhruba stejný, ty nejintenzivnější a nejničivější bouře však v důsledku změny klimatu přicházejí častěji než dřív. Extrémních srážek způsobených tropickými cyklónami výrazně přibylo, stejně jako srážek z jiných zdrojů. Kvůli zvyšování hladiny moří vlivem změny klimatu jsou vyšší také přívalové vlny způsobené vzedmutím hladiny za bouře._
 
 Změna klimatu ovlivňuje tropické cyklóny třemi hlavními způsoby. Zaprvé je to zvýšené množství srážek – tropické cyklóny jsou nejextrémnější srážkové události na planetě a stejně jako u všech ostatních extrémních srážkových událostí i pro ně platí, že v důsledku oteplování atmosféry je ve vzduchu více vlhkosti a ta potom padá na zem ve formě deště. A protože úhrny srážek jsou u tropických cyklón již samy o sobě extrémní, je zde pozorován také největší absolutní nárůst těchto úhrnů.
 
@@ -220,7 +224,7 @@ Kromě toho jsou změně klimatu rovněž připisovány přívalové vlny způso
 
 ## Přívaly sněhu
 
-_**Pravděpodobnost výskytu i intenzita extrémního chladu se na celém světě v důsledku změny klimatu snížila. Na většině míst zatím není jasné, zda došlo k nějakým změnám i náhlých přívalů sněhu, je však možné, že v některých částech východní a severní Asie, Severní Ameriky a Grónska se intenzita těchto přívalů zvýšila.**_
+_Pravděpodobnost výskytu i intenzita extrémního chladu se na celém světě v důsledku změny klimatu snížila. Na většině míst zatím není jasné, zda došlo k nějakým změnám i náhlých přívalů sněhu, je však možné, že v některých částech východní a severní Asie, Severní Ameriky a Grónska se intenzita těchto přívalů zvýšila._
 
 Dramatický nárůst tepla, k němuž všude na pevnině došlo, znamená více srážek – většinou ale spíše dešťových než sněhových. Výjimky z tohoto pravidla možná existují v některých částech Severní Ameriky, severní a východní Asie a Grónska. V oblastech, kde je dostatečně chladno na to, aby tam sněžilo, totiž větší teplo znamená více vlhkosti v atmosféře, která pak může padat na zem ve formě sněhu. V těchto místech je nyní období, kdy sněží, kratší. Sněží zde také méně často, zato však někdy s větší intenzitou.
 
@@ -238,7 +242,7 @@ V oblastech severní polokoule s vysokou zeměpisnou šířkou, jako jsou část
 
 ## Sucha
 
-_**V důsledku klimatických změn jsou sucha častější a intenzivnější pouze v některých částech světa, např. v Evropě, Středomoří, jižní části Afriky, ve střední a východní Asii, v jižní Austrálii a západní části Severní Ameriky. Existují i určité důkazy o nárůstu v četnosti a intenzitě sucha v západní a střední Africe, na severovýchodě Jižní Ameriky a na Novém Zélandu.**_
+_V důsledku klimatických změn jsou sucha častější a intenzivnější pouze v některých částech světa, např. v Evropě, Středomoří, jižní části Afriky, ve střední a východní Asii, v jižní Austrálii a západní části Severní Ameriky. Existují i určité důkazy o nárůstu v četnosti a intenzitě sucha v západní a střední Africe, na severovýchodě Jižní Ameriky a na Novém Zélandu._
 
 Změna klimatu ovlivňuje sucho několika způsoby, přičemž hlavní jsou následující dva: vypařování (s oteplováním atmosféry dochází k většímu odparu vody z půdy) a srážky (na celém světě jsou deště vydatnější, spadnou za kratší dobu a v intenzivnější podobě). Intenzita deště hraje důležitou roli: čím je déšť silnější, tím větší je pravděpodobnost, že se horní vrstvy půdy rychle nasytí a zbytek vody odteče přímo do řek. Naproti tomu u stejného objemu deště, který je mírnější (a tedy rozložený do delšího časového úseku), je větší pravděpodobnost, že udrží v půdě vláhu a doplní zásoby podzemní vody. I když tedy celkový úhrn srážek zůstává konstantní, některé oblasti mohou suchem trpět více než dřív. V některých regionech se naopak celkové množství srážek zvyšuje, což tuto skutečnost kompenzuje, takže sucho je tu obecně méně pravděpodobné. Nicméně v současné době máme dostatečné důkazy o tom, že k tomu dochází, pouze ze severní Austrálie. V dalších regionech jsou sice nejvydatnější srážky stále častější, průměrný celkový úhrn srážek za rok však přesto klesá. A právě zde jsou změny z hlediska sucha nejvíce patrné. Lze konstatovat, že kombinace většího odparu, sporadičtějších a vydatnějších srážek a menšího celkového množství průměrných srážek způsobuje, že v oblastech (a ročních obdobích) náchylných k suchu je dnes sucho častější.
 
@@ -262,7 +266,7 @@ Obecně lze na základě kombinace trendů a tvrzení o atribuci událostí při
 
 ## Požáry
 
-_**Počasí, které vede k požárům, v současnosti přibývá na všech kontinentech. Zřetelně přitom lze pozorovat nárůst pravděpodobnosti i celkové zasažené plochy v jižní Evropě, severní Eurasii, USA a Austrálii a objevily se i důkazy o podobném trendu na jihu Číny.**_
+_Počasí, které vede k požárům, v současnosti přibývá na všech kontinentech. Zřetelně přitom lze pozorovat nárůst pravděpodobnosti i celkové zasažené plochy v jižní Evropě, severní Eurasii, USA a Austrálii a objevily se i důkazy o podobném trendu na jihu Číny._
 
 Ideální podmínky pro vznik požáru představuje kombinace horka, sucha a silného větru. Tehdy je nejvyšší pravděpodobnost, že požár vznikne, najde se pro něj palivo a bude se rychle šířit. Riziko požárů tak rychle roste zejména v těch oblastech, kde se současně zvyšuje i riziko horka a sucha. Roste však zvyšuje také tam, kde riziko sucha zůstává konstantní, protože tepla přibývá na celé planetě.
 
@@ -270,7 +274,7 @@ Celosvětově se velikost vypálené plochy mezi lety 1998 a 2015 zmenšila, co�
 
 Délka období, kdy jsou díky počasí vhodné podmínky pro vznik požáru, se prodlužuje. Zároveň se zvětšují také oblasti, kde se počasí způsobující požáry vyskytuje. Pravděpodobnost výskytu takového počasí se v důsledku změny klimatu zřetelně zvýšila na všech kontinentech.
 
-Tyto trendy jsou zřetelně potvrzovány také atribučními studiemi. V Austrálii byly požáry v Queenslandu i Novém Jižním Walesu změnou klimatu zesíleny – vznik podmínek vedoucích k požárům buše v Novém Jižním Walesu byly v letech 2019–2020 [nejméně](https://www.worldweatherattribution.org/bushfires-in-australia-2019-2020/)[o 30 %](https://www.worldweatherattribution.org/bushfires-in-australia-2019-2020/)[pravděpodobnější](https://www.worldweatherattribution.org/bushfires-in-australia-2019-2020/). Také podél západního pobřeží Severní Ameriky, od Aljašky až po Kalifornii, byla pravděpodobnost nedávných požárů vyšší a jimi spálená plocha se zvětšila. [Více než 4 miliony hektarů z plochy na západě USA](https://www.pnas.org/content/113/42/11770) vypálené 1984–2015 jsou připisovány přímo změně klimatu. Na jihu Číny se pravděpodobnost extrémních požárů z roku 2019 [v důsledku změny klimatu zvýšila více než sedmkrát.](https://journals.ametsoc.org/view/journals/bams/102/1/BAMS-D-20-0165.1.xml)
+Tyto trendy jsou zřetelně potvrzovány také atribučními studiemi. V Austrálii byly požáry v Queenslandu i Novém Jižním Walesu změnou klimatu zesíleny – vznik podmínek vedoucích k požárům buše v Novém Jižním Walesu byly v letech 2019–2020 [nejméně o 30 % pravděpodobnější](https://www.worldweatherattribution.org/bushfires-in-australia-2019-2020/). Také podél západního pobřeží Severní Ameriky, od Aljašky až po Kalifornii, byla pravděpodobnost nedávných požárů vyšší a jimi spálená plocha se zvětšila. [Více než 4 miliony hektarů z plochy na západě USA](https://www.pnas.org/content/113/42/11770) vypálené 1984–2015 jsou připisovány přímo změně klimatu. Na jihu Číny se pravděpodobnost extrémních požárů z roku 2019 [v důsledku změny klimatu zvýšila více než sedmkrát.](https://journals.ametsoc.org/view/journals/bams/102/1/BAMS-D-20-0165.1.xml)
 
 Obecně můžeme změně klimatu s jistotou přisoudit zvýšení pravděpodobnosti výskytu požárů v jižní Evropě, severní Eurasii, USA a Austrálii, přičemž se objevily i důkazy o podobném trendu na jihu Číny. Je také pravděpodobné, že s postupujícím globálním oteplováním bude těchto podmínek vhodných pro vznik požárů přibývat na pevnině všude.
 
@@ -280,31 +284,12 @@ Obecně můžeme změně klimatu s jistotou přisoudit zvýšení pravděpodobno
 - **Řízení rizika** – Řízené vypalování lesů s cílem zabránit hromadění paliva je v některých oblastech běžnou praxí již po tisíciletí, ne vždy se však provádí důsledně. Riziko požárů odpovídá úrovni plánování a provádění řízeného vypalování; pokud se toto vypalování neprovádí důsledně, riziko požárů se výrazně zvyšuje.
 - **Zdroje zapálení** – Lidská činnost, například zakládání ohňů, může být spouštěčem katastrofy v celém lese. Podle US Forest Service je 85 % lesních požárů v USA důsledkem lidské nedbalosti nebo úmyslu. Tím se[ztrojnásobila délka sezóny lesních požárů](https://www.pnas.org/content/114/11/2946) (v absolutních číslech jde o prodloužení přibližně o tři měsíce) ve srovnání se stavem, kdy je zapálení způsobeno bleskem. Při podávání zpráv o příčinách významných lesních požárů je důležité informovat i o těchto faktorech a také zmínit, kolika osob a staveb se to týká a jak velké riziko to pro ně představuje. V každém případě skutečnost, že riziko lesních požárů zvyšují i další faktory, nesnižuje roli, změny klimatu. Ta prodloužila na celém světě sezónu lesních požárů v průměru o cca dva týdny, a to hlavně tím, že zvýšila dostupnost paliva (důsledek horka a vysychání). Srovnání těchto čísel nicméně nevykresluje skutečnost v úplnosti: změna klimatu rovněž zvyšuje intenzitu období požárů způsobem, jakým ji nárůst počtu požárů způsobených člověkem nezvyšuje. Klimatická změna totiž také ovlivňuje, jak se daný požár rozhoří, jaký bude jeho rozsah a délka jeho trvání – působí tak jako faktor souběžně s nárůstem počtu požárů způsobených člověkem, takže sezóna požárů je pak delší a zároveň intenzivnější.
 
-## Extrémní události a změna klimatu
+## Jednostránkové shrnutí
 
-### Jednostránkové shrnutí
+{% include figure.html
+    name="cs-vliv-klimatu-na-extremy.svg"
+    alt="TODO"
+    source-text="Překlad shrnutí a infografické zpracování <a href='https://faktaoklimatu.cz/infografiky/vliv-klimatu-na-extremy'>Fakty o klimatu</a>"
+%}
 
-_**Tato tabulka obsahuje základní přehled jednotlivých typů extrémního počasí (další podrobnosti jsou uvedeny v textu příručky výše). Informace vycházejí z nejlepších současných vědeckých poznatků a zahrnují popis každého typu extrému a důležité poznámky – na co je vždy potřeba při podávání přesných informací o těchto událostech myslet.**_
-
-| **Druh extrémního počasí** | **Klíčová sdělení** | **Poznámky a upozornění** |
-| --- | --- | --- |
-| Vlny veder | V důsledku změny klimatu způsobené člověkem dnes pro všechny vlny veder na světě platí, že jsou intenzivnější a mají vyšší pravděpodobnost výskytu. | Vlny veder jednoznačně souvisejí s globálním oteplováním, proto není při informování o tomto extrému nutná příliš velká opatrnost. |
-| Povodně | Extrémní srážky jsou nyní v důsledku změny klimatu způsobené člověkem na většině území světa častější a intenzivnější. Kvůli tomu jsou na některých místech pravděpodobně častější a intenzivnější také povodně, na ty však mají vliv i další faktory spojené s lidskou činností. | Povodně s přívalovými dešti souvisejí, ale svou roli hrají i jiné faktory, např. úroveň vodního hospodářství v dané oblasti či protipovodňová opatření.Obecně jsou na vzestupu také pobřežní povodně, ty však s povodněmi způsobenými dešťovými srážkami nesouvisejí – je to důsledek zvyšování hladiny moří. |
-| Tropické cyklóny
- | Celkový počet tropických cyklón za rok se nezměnil, ale v důsledku změny klimatu se zvýšil výskyt nejintenzivnějších a nejničivějších bouří. Výrazný je též nárůst u extrémních srážek způsobených tropickými cyklónami (podobně jako přibylo srážek z jiných příčin). Vyšší jsou také přívalové vlny způsobené vzedmutím hladiny během mořských bouří, což je dáno zvyšováním hladiny oceánů, k němuž vlivem klimatické změny dochází. | Celkový počet všech cyklón se nezvýšil.U jednotlivých cyklón zatím globální oteplování intenzitu ani rychlost větru nezvýšilo.
- |
-| Přívaly sněhu | V důsledku změny klimatu se u všech případů extrémního chladu (kdekoli na světě) snížila intenzita i pravděpodobnost jeho výskytu. Není příliš jasné, zda a jak se na většině míst silné sněhové srážky proměnily, jejich intenzita se nicméně mohla zvýšit v některých částech východní a severní Asie, Severní Ameriky a Grónska. | Existuje velmi vysoká pravděpodobnost, že extrémní chlad se bude vyskytovat v budoucnu méně často, stále však může k takové události dojít.Změny sněhových srážek jsou velmi nejisté.Zatím není jasné, jak je to se změnami polárních vírů. |
-| Sucha | Sucha jsou v důsledku změny klimatu častější a závažnější pouze v některých oblastech světa. Patří mezi ně Evropa, Středomoří, jižní Afrika, střední a východní Asie, jižní Austrálie a západní části Severní Ameriky. Existují také určité důkazy o nárůstu sucha v západní a střední Africe, severovýchodní části Jižní Ameriky a na Novém Zélandu. | Sucha jsou velmi komplexní a různorodý jev, proto je obtížné se o nich vyjadřovat s jistotou.
-V případě sucha s velkým dopadem je třeba vzít v úvahu i řadu jiných faktorů než jen změnu klimatu, zejména těch, které souvisejí s vodním hospodářstvím.
- |
-| Požáry
- | Počasí, které vede k požárům, přibývá na všech kontinentech. Zřetelně lze pozorovat nárůst pravděpodobnosti i celkové vypálené plochy v jižní Evropě, severní Eurasii, USA a Austrálii a objevily se i určité důkazy o podobném trendu na jihu Číny. | Záznamy o požárech jsou v některých oblastech velmi omezené, což atribuci požárů komplikuje.Důležité je vzít v úvahu též faktory spojené s činností člověka: jak se hospodaří v lesích, jak požáry vznikají apod. |
-
-
-
-
-
-
-
-
-
+*Překlad "Kompasu pro novináře" vznikl za podpory [České asociace pojišťoven](https://www.cap.cz/).*
