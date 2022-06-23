@@ -1,0 +1,19 @@
+{% assign infographic = site.infographics | find_exp:"item","item.slug == include.slug" %}
+{% assign generated_path = "/assets/generated/" | append: include.slug %}
+<div class="longread-figure">
+  <a class="infographic" href="{{ infographic | get_url }}">
+    <img
+      class="infographic"
+      alt="{{ include.alt }}"
+      src="{{ generated_path }}_1200.png"
+      srcset="{{ generated_path }}_600.png 600w, {{ generated_path }}_1200.png 1200w"
+      sizes="(max-width: 575.98px) 600px, 1200px"
+    />
+  </a>
+  <div class="source">
+    {% if include.caption %}
+      {{ include.caption }}
+    {% endif %}
+    Zdroj: <a href="{{ infographic | get_url }}">Fakta o klimatu</a>
+  </div>
+</div>

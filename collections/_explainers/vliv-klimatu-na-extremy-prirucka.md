@@ -284,10 +284,12 @@ Tyto trendy jsou zřetelně potvrzovány také atribučními studiemi. V Austrá
 
 ## Jednostránkové shrnutí
 
-{% include figure.html
-    name="cs-vliv-klimatu-na-extremy.svg"
+V následující infografice na jedné stránce shrnujeme to nejdůležitější o vlivu změny klimatu na jednotlivé extrémy počasí.
+
+{% include includes-local/figure-plain-infographic.html
+    slug="vliv-klimatu-na-extremy"
     alt="TODO"
-    source-text="Překlad shrnutí a infografické zpracování <a href='https://faktaoklimatu.cz/infografiky/vliv-klimatu-na-extremy'>Fakty o klimatu</a>"
+    caption="Jednostránkové shrnutí doporučení."
 %}
 
 *Překlad "Kompasu pro novináře" vznikl za podpory [České asociace pojišťoven](https://www.cap.cz/).*
