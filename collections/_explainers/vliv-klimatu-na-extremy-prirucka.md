@@ -4,7 +4,7 @@ title:       "Extrémy počasí a klimatická změna. Jak o nich mluvit a psát"
 slug:        "vliv-klimatu-na-extremy-prirucka"
 published:   2022-06-23
 author:      "Ben Clarke, Friederike Otto"
-weight:      80
+weight:      79
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 cover-source-author: "Denis Meyer – Greenpeace"
