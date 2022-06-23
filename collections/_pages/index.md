@@ -14,7 +14,7 @@ slug: index
         </p>
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Fit for 55</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Klima a extrémy</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-green" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -28,13 +28,12 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">Na úrovni Evropské unie aktuálně probíhá diskuze o balíčku legislativních návrhů nazvaném Fit for 55, jehož cílem je dosáhnout 55% snížení emisí do roku 2030 oproti roku 1990. Obsah balíčku přibližují infografiky níže doprovozené dalšími materiály kontextualizujícími evropskou dekarbonizaci a transformaci hospodářství.</p>
-    {% assign featured_slugs = "fit-for-55, fit-for-55-opatreni, emisni-povolenky-ets, fondy-eu, emise-eu-vyvoj, uhelny-phaseout-eu" | split: ", " %}
+    <p class="lead mb-0">S extrémnímy meteorologickými událostmi se stále častěji objevuje otázka: : „Byla tato událost způsobena změnou klimatu?“ V nových materiálech představujeme příspěvky vědců a vědkyň, kteří na ni odpovídají. Pro rychlé zorientování se v tématu doporučujeme infografiku s nejdůležitějšími poznatky, pro hlubší porozumění pak „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a příspěvky českých vědců k situaci v Česku.</p>
+    {% assign featured_slugs = "vliv-klimatu-na-extremy, vliv-klimatu-na-extremy-prirucka, vliv-klimatu-na-extremy-cesko, tropicke-dny-brno, souvislost-koncentrace-oteplovani, teplota-cr" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
-    <p class="lead">Na téma aktuálně diskutovaných klimatických opatření v balíčku Fit for 55 se zaměřujeme i v podcastu 2050. K podobám a způsobům dekarbonizace a snižování emisí jsou relevantní i naše další materiály.</p>
-    <a href="https://2050podcast.cz/epizody/19-fit-for-55" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
-    <a href="/temata/opatreni/" class="btn btn-secondary"><i class="fas fa-fw fa-binoculars"></i> Téma: Klimatická opatření</a>
+    <p class="lead">Tématu vlivu klimatické změny na extrémy počasí se budeme věnovat i v průběhu léta, a to jak na webu, tak v podcastu 2050.</p>
+    <a href="https://2050podcast.cz/" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
   </div></div>
 
