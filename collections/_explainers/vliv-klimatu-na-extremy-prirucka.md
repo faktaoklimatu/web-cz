@@ -24,19 +24,19 @@ perex:       "S každou další událostí spojenou s extrémním počasím se z
 %}
 
 Změna klimatu způsobená člověkem vede k tomu, že extrémní meteorologické události jako vlny veder, silné přívalové deště, bouře či období sucha jsou v mnoha oblastech světa stále častější a intenzivnější. To ovšem neznamená, že pravděpodobnost výskytu stoupá u *všech* extrémních událostí – a navíc se v některých částech světa změny projevují více, jinde méně. V každém případě mají tyto události často významné dopady na společnost: ztráta úrody či zemědělské půdy, zničení majetku, vážné narušení ekonomiky, ztráty na životech apod. Když k něčemu takovému dojde, veřejnost se zpravidla začne ptát po příčinách. A stále častěji se objevuje otázka: "Byla tato událost způsobena změnou klimatu?".
- 
+
 Smyslem této publikace je pomoci novinářům se v tomto tématu zorientovat. Text nejprve představuje vědeckou metodu zvanou "atribuce extrémních událostí", pomocí níž lze určit, do jaké míry můžeme (či nemůžeme) danou meteorologickou událost přisoudit (atribuovat) klimatické změně. Dále v Kompasu najdete také spolehlivá tvrzení, která je možné použít pro některé typy extrémních projevů počasí, jež veřejnost momentálně zajímají, a to i tehdy, když zrovna neprobíhá na toto téma žádný konkrétní výzkum. Tato tvrzení se opírají o nejnovější zprávy mezivládního panelu IPCC a nejaktuálnější poznatky, které vycházejí ze studií zaměřených na extrémní události v poslední době. Poslední kapitolkou je pak stručný přehled všech extrémních meteorologických jevů a shrnutí toho nejdůležitějšího, co je u každého z nich potřeba komunikovat.
- 
+
 Média a zpravodajské agentury se při informování o extrémních meteorologických jevech často dopouštějí tří chyb: ignorují změnu klimatu jako příčinu události nebo připisují událost změně klimatu, aniž by toto tvrzení podložily důkazy, a nebo uvádějí klimatickou změnu jako jedinou příčinu extrémní meteorologické události.
- 
+
 Částečně je tomu tak proto, že otázka, zda byla nějaká událost způsobena změnou klimatu, zní logicky, je ale vlastně položená nesprávně. Pokud například silný kuřák onemocní rakovinou plic, také neřekneme, že cigarety mu přivodily rakovinu – můžeme však říci, že v důsledku poškození způsobeného cigaretami je u něj pravděpodobnost vzniku tohoto onemocnění vyšší. Stejně tak **změna klimatu nemůže zapříčinit určitou extrémní událost** (ve smyslu "příčina" vede k "následku"), protože všechny meteorologické události mají více příčin a svou roli hraje i náhoda – počasí je do určité míry chaotické.
 
 Změna klimatu **nicméně může mít vliv na to, jak pravděpodobná a jak intenzivní určitá událost je, a tedy i jaký dopad má na osoby, majetek a přírodu**. Novináři, jejichž úkolem je po proběhlé katastrofě uspokojit zájem veřejnosti, proto musí vědět, jak se na ní klimatická změna podílela. Pomocí atribuce extrémních událostí jim věda může poskytnout odpověď.
 
 Až donedávna se vědci spojování jednotlivých událostí se změnou klimatu většinou vyhýbali. Místo toho poukazovali na obecný trend a říkali, že daná událost může být něčím, co budeme v budoucnu zažívat ve větší míře. Změna klimatu však zásadně ovlivňuje počasí už po celá desetiletí a vědci o této souvislosti dnes už konečně začínají mluvit více. V posledních letech byly vyvinuty metody, které umožňují zjistit vazbu extrémní události ke klimatické změně a vypočítat, o kolik v důsledku globálního oteplování stoupla či klesla pravděpodobnost výskytu či intenzita této události.
- 
+
 Odpověď je pokaždé jiná: záleží na lokalitě, ročním období, na typu události a také na její intenzitě, délce a rozsahu. Ne všechny extrémní meteorologické jevy jsou v důsledku změny klimatu častější a horší – u některých se může pravděpodobnost výskytu snížit nebo může zůstat víceméně stejná. Určitá novinářská obezřetnost nehledat souvislosti tam, kde nejsou, je proto oprávněná.
- 
+
 **Cílem této příručky je pomoci novinářům, aby mohli o extrémních meteorologických jevech přinášet přesné informace a správně je zasazovat do kontextu globálního oteplování**. Jinými slovy: jak nejlépe informovat své publikum o vlivu změny klimatu na extrémní projevy počasí, které zažíváme stále častěji, aniž bychom tuto vazbu přeceňovali (nebo naopak podceňovali)?
 
 ## Výzkum atribuce extrémních událostí
@@ -44,18 +44,18 @@ Odpověď je pokaždé jiná: záleží na lokalitě, ročním období, na typu 
 ### Obecný přehled
 
 S myšlenkou připisovat jednotlivé meteorologické jevy změně klimatu přišel jeden klimatolog, v jehož domě právě stoupala voda v důsledku povodně. Jak tak pozoroval, co se děje, začal přemýšlet nad otázkou odpovědnosti – [čí je to vlastně vina](https://www.nature.com/articles/421891a), tyhle lokální dopady globální změny klimatu? A je možné tuto souvislost nějak exaktně vědecky popsat?
- 
+
 Do jaké míry je určitá extrémní událost v důsledku změny klimatu více či méně pravděpodobná a/nebo více či méně intenzivní, vypočítávají tzv. atribuční studie.
- 
+
 První taková [studie](https://www.nature.com/articles/nature03089) byla zveřejněna v roce 2004 a zaměřovala se na vlnu veder, která proběhla v západní Evropě o rok dříve. Léto 2003 bylo v tomto regionu mimořádně horké – šlo o bezprecedentně dlouhou vlnu veder, při které [zemřelo přes 70 000 lidí](https://www.sciencedirect.com/science/article/pii/S1631069107003770). Po této katastrofě s dopady pro celý region se vědci rozhodli použít klimatické modely, aby s jejich pomocí zjistili, jakou roli v tom sehrála změna klimatu.
- 
+
 Postupovali takto:
 - Nejprve vytvořili tisíce simulací současného klimatu, které je dnes v důsledku lidské činnosti teplejší než dřív. Zjednodušeně řečeno: znovu a znovu za stejných podmínek opakovali simulace klimatického modelu a díky tomu zjistili, jak by vypadalo počasí v uplynulých tisíciletích, kdyby bylo klima stejné jako dnes. Tento krok byl pro zkoumání extrémních projevů počasí, jež jsou už ze své definice vzácné, velmi užitečný. V rámci těchto simulací pak vědci spočítali, kolikrát by se během tohoto dlouhého období vyskytla tak extrémní vlna veder, jakou v západní Evropě zažili v roce 2003. Ukázalo se, že se jedná o skutečně vzácný jev a že by byl vzácný i ve světě, v němž by průměrná globální roční teplota odpovídala dnešním hodnotám.
 
 - Dalším krokem byla jiná simulace – jak by vypadalo klima bez vlivu člověka, tedy bez jakýchkoli emisí spojených s lidskou činností, včetně skleníkových plynů a aerosolů. Tím byl odstraněn lidský faktor. Kolik skleníkových plynů dnes v atmosféře v důsledku spalování fosilních paliv je, víme přesně, takže tento krok byl poměrně jednoduchý. Poté vědci spočítali, kolikrát by se za takových podmínek vyskytla podobně extrémní vlna veder, a opět zjistili, že by byla mnohem vzácnější. Dokonce tak vzácná, že bez vlivu člověka na klima je výskyt takovéto události prakticky vyloučený.
- 
+
 - Zjištěné hodnoty nakonec vědci porovnali a dospěli k závěru, že v důsledku změny klimatu způsobené lidmi se pravděpodobnost událostí, jako bylo léto v Evropě v roce 2003, zvýšila minimálně dvakrát a zřejmě daleko více.
- 
+
 Výzkum atribuce meteorologických jevů tedy začal v roce 2004 a dnes už probíhá v řadě zemí světa – byť je v tom jistá nevyváženost, protože většina studií i vědců pochází [ze severní polokoule](https://journals.ametsoc.org/view/journals/bams/101/10/bamsD190317.xml). Nicméně díky němu už dnes máme zavedenou vědeckou metodu (která už překročila tři výše popsané kroky a která je zdokumentována [zde](https://link.springer.com/article/10.1007/s10584-021-03071-7)), umožňující atribuci u mnoha typů extrémních meteorologických událostí.
 
 **Definice extrémní události není jednoduchá**. Stejnou událost – například vlnu veder ve Velké Británii – lze totiž popsat několika způsoby: třeba jako tři dny v Londýně s teplotou nad 30 °C nebo jako deset dní v celé Anglii a Walesu s teplotou nad 25 °C. **To, jak událost definujeme, se pak pochopitelně promítá do výsledků atribuční studie**. Moderní přístup proto spočívá ve využití několika různých definic, přičemž výpočet se provede pro každou z nich zvlášť. Díky tomu vědci získají představu, jak se určitá definice extrémní události promítá do výsledků, a mohou tak svou studii lépe zaměřit na ten aspekt dané události, který je nejvíce spojen s dopady. Ve výše uvedeném případě mohla mít vlna veder větší dopad v Londýně, protože byla mnohem intenzivnější – i když se týkala menšího území.
@@ -71,10 +71,10 @@ Uvedená metodika umožňuje vědcům popsat trendy spojené s extrémními udá
 %}
 
 Výsledky těchto studií umožňují vědcům vyjádřit se k meteorologickým událostem například takto: "Tato událost byla v důsledku změny klimatu způsobené člověkem nejméně dvakrát pravděpodobnější." Nebo "Tato vlna veder byla o 3 stupně teplejší, než by byla ve světě bez globálního oteplování." Také možná budeme schopni říci, že k určité události by bez změny klimatu vůbec nedošlo, protože nemá historický precedens a v modelových simulacích, které se změnou klimatu nepracují, se vůbec nevyskytuje.
- 
+
 Databáze výsledků výzkumu věnovaného atribuci extrémních událostí – a už to bylo více než 400 studií z celého světa – [je zveřejněna na webu Carbon Brief](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world). Například iniciativa [World Weather Attribution](https://www.worldweatherattribution.org/) provedla od roku 2014 díky celoevropské spolupráci vědců zabývajících se atribucí již řadu rychlých studií s cílem co nejdříve zjistit, jakou roli u extrémní události hrála změna klimatu. V některých případech se dokonce podařilo získat výsledky ještě před skončením samotné události. Z časových důvodů jsou výsledky atribučních studií zveřejňovány dříve, než je mají možnost posoudit odborní recenzenti, samotná metodika výpočtů však již odborným posouzením prošla.
 
-S atribučními studiemi pracují v poslední době nejrůznější uživatelé. Jako důkazní materiál byly využity v některých přelomových soudních sporech týkajících se klimatu, např. [Juliana vs. Spojené státy americké](https://www.ourchildrenstrust.org/juliana-v-us), [Pabai Pabai a Guy Paul Kabai vs. Australské společenství](http://climatecasechart.com/climate-change-litigation/non-us-case/pabai-pabai-and-guy-paul-kabai-v-commonwealth-of-australia/?fbclid=IwAR1H864NzkkwxkNjQfRqP7TfxZLFKX5O6J3KFMYOzvzSrmwtQ4rxgn-PQHI) či [Lluiya vs. RWE](http://climatecasechart.com/climate-change-litigation/non-us-case/lliuya-v-rwe-ag/), a také v žalobě proti brazilskému prezidentovi Jairu Bolsonarovi u [Mezinárodního trestního soudu](https://www.theplanetvs.org). Efektivní využívání atribuce v právních případech je dnes rychle se rozvíjející oblastí výzkumu. Kromě toho vypadá atribuce ["slibně"](https://journals.ametsoc.org/view/journals/wcas/13/2/WCAS-D-20-0155.1.xml) i jako komunikační nástroj změny klimatu "protože dokáže dobře propojovat nové vědecké informace spojené s konkrétní událostí, jež v daný moment přitahuje pozornost veřejnosti, s osobními zkušenostmi a s pozorováním této extrémní události."
+S atribučními studiemi pracují v poslední době nejrůznější uživatelé. Jako důkazní materiál byly využity v některých přelomových soudních sporech týkajících se klimatu, např. [Juliana vs. Spojené státy americké](https://www.ourchildrenstrust.org/juliana-v-us), [Pabai Pabai a Guy Paul Kabai vs. Australské společenství](http://climatecasechart.com/climate-change-litigation/non-us-case/pabai-pabai-and-guy-paul-kabai-v-commonwealth-of-australia/) či [Lluiya vs. RWE](http://climatecasechart.com/climate-change-litigation/non-us-case/lliuya-v-rwe-ag/), a také v žalobě proti brazilskému prezidentovi Jairu Bolsonarovi u [Mezinárodního trestního soudu](https://www.theplanetvs.org). Efektivní využívání atribuce v právních případech je dnes rychle se rozvíjející oblastí výzkumu. Kromě toho vypadá atribuce ["slibně"](https://journals.ametsoc.org/view/journals/wcas/13/2/WCAS-D-20-0155.1.xml) i jako komunikační nástroj změny klimatu "protože dokáže dobře propojovat nové vědecké informace spojené s konkrétní událostí, jež v daný moment přitahuje pozornost veřejnosti, s osobními zkušenostmi a s pozorováním této extrémní události."
 
 ### Příklady atribučních studií
 
@@ -90,11 +90,10 @@ S atribučními studiemi pracují v poslední době nejrůznější uživatelé.
 
 {% include figure.html
     name="zima-evropa.png"
-    alt="Mapa Evropy ukazující odchylku až -15 stupňů Celsia od normálu denní teploty v jihovýchodní Evropě a odchylku až +9 stupňů Celsia v severní Evropě."
+    alt="Mapa Evropy ukazující odchylku až −15 stupňů Celsia od normálu denní teploty v jihovýchodní Evropě a odchylku až +9 stupňů Celsia v severní Evropě."
     caption="Odchylka průměrné denní teploty od normálu v Evropě od 7. do 11. ledna 2017."
     source-text="<a href='https://www.worldweatherattribution.org/se-europe-cold-january-2017/'>World Weather Attribution</a> (citace z 27. 10. 2021)"
 %}
-
 
 **Vlna veder v západní Evropě**, *červenec 2019*
 
@@ -110,7 +109,7 @@ S atribučními studiemi pracují v poslední době nejrůznější uživatelé.
 
 **Sucho v Kapském Městě**, *2015–2017*
 
-- **Událost**: V letech 2015–2017 byly v Západním Kapsku (provincie JAR) každý rok podprůměrné srážky. Zásoby vody v nádržích se v celém regionu výrazně snížily a Kapské Město, které je na nich závislé, se ocitlo jen pár dní od tzv. "dne nula" – tedy okamžiku, kdy by v městském vodovodu už nebyla vůbec žádná voda. Místní systém hospodaření s vodou, sestávající ze 14 přehrad a systému potrubí, sice byl navržen tak, aby dokázal zmírnit sucho, ke kterému dojde přibližně jednou za 50 let, bohužel je ale zatížený [politikařením](https://www.reuters.com/article/us-saundersonmeyer-drought-commentary/commentary-in-drought-hit-south-africa-the-politics-of-water-idUSKBN1FP226) a obviněními z [korupce](https://cer.org.za/programmes/water/publications-by-partner-organisations/sawc-report). 
+- **Událost**: V letech 2015–2017 byly v Západním Kapsku (provincie JAR) každý rok podprůměrné srážky. Zásoby vody v nádržích se v celém regionu výrazně snížily a Kapské Město, které je na nich závislé, se ocitlo jen pár dní od tzv. "dne nula" – tedy okamžiku, kdy by v městském vodovodu už nebyla vůbec žádná voda. Místní systém hospodaření s vodou, sestávající ze 14 přehrad a systému potrubí, sice byl navržen tak, aby dokázal zmírnit sucho, ke kterému dojde přibližně jednou za 50 let, bohužel je ale zatížený [politikařením](https://www.reuters.com/article/us-saundersonmeyer-drought-commentary/commentary-in-drought-hit-south-africa-the-politics-of-water-idUSKBN1FP226) a obviněními z [korupce](https://cer.org.za/programmes/water/publications-by-partner-organisations/sawc-report).
 - **Souvislost se změnou klimatu**: Ačkoli je tento typ události v současném klimatu stále vzácný (zhruba jednou za sto let), pravděpodobnost jejího výskytu se v důsledku klimatických změn zvýšila trojnásobně.
 
 {% include figure.html
@@ -125,23 +124,23 @@ S atribučními studiemi pracují v poslední době nejrůznější uživatelé.
 ### Proč nemusí existovat atribuční studie
 
 Přestože od zveřejnění první studie v roce 2004 bylo pomocí metody atribuce zkoumáno již více než 400 extrémních meteorologických událostí, ve skutečnosti jde pouze o nepatrný zlomek celkového počtu událostí, k nimž za tu dobu došlo a které měly významné dopady na společnost.
- 
+
 I rychlým atribučním studiím se musí minimálně několik dní intenzivně věnovat několik výzkumných pracovníků – proto není v současné době z kapacitních důvodů možné studovat každou významnou meteorologickou událost. Například iniciativa World Weather Attribution stále funguje na dobrovolnické bázi.
- 
+
 Co bude předmětem konkrétní studie, záleží také na typu události. Některé meteorologické události totiž mají ke globálnímu oteplování komplikovanější vztah než jiné. Nejjednodušším případem jsou vlny veder. Je-li v atmosféře více tepla, je i vyšší pravděpodobnost horkého počasí. U srážek je to rovněž poměrně jednoduché, protože v teplejším vzduchu bývá větší vlhkost. Tyto události proto také bývají zkoumány nejčastěji.
 
 Se sněhovými a tropickými bouřemi, suchem a požáry v přírodě je to však složitější. Sucho například často vzniká jako důsledek několika faktorů, jež se v různé míře kombinují: nízké množství srážek, vysoké teploty a interakce mezi atmosférou a zemským povrchem – navíc trvá delší dobu než jiné extrémy. S tím je spojeno hned několik výzev: aby bylo možné tento jev dobře prozkoumat, musí být například k dispozici kvalitní data z konzistentního pozorování počasí v minulosti a použité klimatické modely musí umět takovéto složitější jevy simulovat.
- 
+
 ### Co se dá říci v každém případě
- 
+
 I bez existující atribuční studie je však možné o souvislostech mezi meteorologickými událostmi a změnou klimatu nějaké informace poskytnout. Čerpat se dají ze dvou zdrojů. Prvním je dřívější výzkum: pro řadu nových událostí už je po téměř 20 letech existence oboru atribuce k dispozici nějaká studie popisující podobné události v minulosti. Tam se lze o možném vlivu změny klimatu na tento typ události dočíst. A pak je tu Šestá hodnotící zpráva IPCC, resp. její část sestavená tzv. Pracovní skupinou 1, která byla zveřejněna v roce 2021. Ta poskytuje podrobný přehled změn, jež v současnosti u počasí pozorujeme. V řadě regionů už dnes máme poměrně hluboké teoretické znalosti o důležitých procesech, které tam probíhají.
- 
+
 V následující části publikace je shrnuto, co nám klimatologie umožňuje říci (a co nám říci neumožňuje) o souvislosti mezi extrémními meteorologickými událostmi a změnou klimatu – jestliže o události neexistuje žádná atribuční studie.
- 
+
 **V některých případech je možné něco prohlásit rychle a s velkou mírou jistoty** (v podstatě pro kterýkoli region na světě), **jindy je pro určitá prohlášení v některých částech světa nebo pro určité aspekty extrémní události míra jistoty nižší. Tuto nuanci je důležité si při poskytování přesných informací veřejnosti uvědomovat.**
 
 ### Katastrofy jsou víc než jen extrémní počasí
- 
+
 Při informování o extrémních meteorologických událostech **je také důležité zdůrazňovat, že bez ohledu na změnu klimatu se povodně, sucha či vlny veder stávají větší či menší katastrofou podle toho, do jaké míry jsou zranitelní lidé, kteří v dané oblasti žijí. Závažnost dopadů na různé skupiny s odlišným sociálním a ekonomickým postavením se může velmi lišit.**
 
 ## Vlny veder
@@ -211,7 +210,7 @@ Záznamy o tropických cyklónách v minulosti jsou poměrně omezené, takže n
 
 Pro události v některých hlavních oblastech výskytu cyklón už jsou v současné době k dispozici závěry atribučních studií, které ukazují, jak se jednotlivé události mění: např. v severním Atlantiku byly celkové srážky spojené s hurikány [Katrina, Irma, Maria](https://www.nature.com/articles/s41586-018-0673-2), [Harvey](https://iopscience.iop.org/article/10.1088/1748-9326/aa9ef2), [Dorian](https://journals.ametsoc.org/view/journals/bams/102/1/BAMS-D-20-0160.1.xml) a [Florence](https://www.science.org/doi/10.1126/sciadv.aaw9253) v důsledku změny klimatu intenzivnější (o 4 %, 6 %, 9 %, 15 %, 7,5 % a 5 %). Dohromady tyto bouře způsobily škody za více než 500 miliard amerických dolarů. V severním Pacifiku se mezitím zvýšil úhrn srážek spojený s tajfunem Morakot o 2,5–3,6 % a v důsledku změny klimatu se zvýšila také pravděpodobnost nedávných období extrémních cyklón v okolí Havaje, ve východním Pacifiku a v Arabském moři.
 
-Kromě toho jsou změně klimatu rovněž připisována vzdutí moře během některých konkrétních bouří. Například [oblast zaplavená hurikánem Sandy](https://www.nature.com/articles/s41467-021-22838-1?fbclid=IwAR269i-mcAGD1cA6sJrQASGgmj8gs3pQ1L7syw8rSPkZLmCT6jaoQVlTN7w) byla vlivem změny klimatu větší, a zaplaveno tak bylo 71 000 domů více, což způsobilo další škody ve výši 8,1 miliardy amerických dolarů. Ničivé [vzdutí způsobené tajfunem Haiyan](https://iopscience.iop.org/article/10.1088/1748-9326/10/6/064011/meta) byla zhruba o 20 % vyšší ve srovnání s tím, jak by podobná událost proběhla bez změny klimatu.
+Kromě toho jsou změně klimatu rovněž připisována vzdutí moře během některých konkrétních bouří. Například [oblast zaplavená hurikánem Sandy](https://www.nature.com/articles/s41467-021-22838-1) byla vlivem změny klimatu větší, a zaplaveno tak bylo 71 000 domů více, což způsobilo další škody ve výši 8,1 miliardy amerických dolarů. Ničivé [vzdutí způsobené tajfunem Haiyan](https://iopscience.iop.org/article/10.1088/1748-9326/10/6/064011/meta) byla zhruba o 20 % vyšší ve srovnání s tím, jak by podobná událost proběhla bez změny klimatu.
 
 **Důležité poznámky a doplnění**
 
