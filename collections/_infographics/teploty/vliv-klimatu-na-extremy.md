@@ -8,20 +8,14 @@ weight:     78
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "V důsledku změny klimatu jsou extrémní meteorologické události v mnoha oblastech světa stále častější a intenzivnější. Pravděpodobnost výskytu však nestoupá u všech extrémů stejně a navíc se v některých částech světa změny projevují více než jinde."
-data-orig:  [ [ "Reporting extreme weather and climate change", "https://www.worldweatherattribution.org/wp-content/uploads/ENG_WWA-Reporting-extreme-weather-and-climate-change.pdf" ]
- ]
+data-orig:
+- [ "Reporting extreme weather and climate change", "https://www.worldweatherattribution.org/wp-content/uploads/ENG_WWA-Reporting-extreme-weather-and-climate-change.pdf" ]
 ---
 
 {% include preview-box.html
-    title="Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát"
-    text="V článku přinášíme celé znění publikace."
-    slug="vliv-klimatu-na-extremy-prirucka"
-%}
-
-{% include preview-box.html
-    title="Jaký vliv má změna klimatu na extrémy počasí v Česku?"
-    text="Pět českých vědců přináší odpovědi."
-    slug="vliv-klimatu-na-extremy-cesko"
+    title="Další materiály o vlivu klimatu na extrémy počasí"
+    text="Pro hlubší porozumění doporučujeme „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a texty českých vědců k situaci v Česku."
+    slug="vliv-klimatu-na-extremy-prirucka,vliv-klimatu-na-extremy-cesko"
 %}
 
 Extrémní meteorologické události, jako jsou vlny veder, silné přívalové deště, tornáda, bouře či období sucha, mají často významné dopady na společnost: znamenají ztrátu úrody či zemědělské půdy, zničení majetku, vážné narušení ekonomiky, ztráty na životech apod. Když k něčemu takovému dojde, veřejnost se zpravidla začne ptát po příčinách. A stále častěji se objevuje otázka: „Byla tato událost způsobena změnou klimatu?“.

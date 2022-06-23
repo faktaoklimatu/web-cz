@@ -28,11 +28,11 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">S extrémnímy meteorologickými událostmi se stále častěji objevuje otázka: : „Byla tato událost způsobena změnou klimatu?“ V nových materiálech představujeme příspěvky vědců a vědkyň, kteří na ni odpovídají. Pro rychlé zorientování se v tématu doporučujeme infografiku s nejdůležitějšími poznatky, pro hlubší porozumění pak „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a příspěvky českých vědců k situaci v Česku.</p>
+    <p class="lead mb-0">S extrémními meteorologickými událostmi se stále častěji objevuje otázka: „Byla tato událost způsobena změnou klimatu?“ Pro rychlé zorientování se v tématu doporučujeme infografiku shrnující to nejdůležitější, pro hlubší porozumění pak „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a texty českých vědců k situaci v Česku.</p>
     {% assign featured_slugs = "vliv-klimatu-na-extremy, vliv-klimatu-na-extremy-prirucka, vliv-klimatu-na-extremy-cesko, tropicke-dny-brno, souvislost-koncentrace-oteplovani, teplota-cr" | split: ", " %}
     {% assign featured = site.documents | where_exp: "item", "'infographics, studies, explainers' contains item.collection" | where_exp: "item", "featured_slugs contains item.slug" %}
     {% include preview-blocks.html blocks=featured limit=6 %}
-    <p class="lead">Tématu vlivu klimatické změny na extrémy počasí se budeme věnovat i v průběhu léta, a to jak na webu, tak v podcastu 2050.</p>
+    <p class="lead">Vlivu klimatické změny na extrémy počasí se budeme věnovat i v průběhu léta, a to jak na webu, tak v podcastu 2050.</p>
     <a href="https://2050podcast.cz/" class="btn btn-primary"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
     <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
   </div></div>

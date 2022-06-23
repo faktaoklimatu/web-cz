@@ -7,12 +7,12 @@ author:      "Ben Clarke, Friederike Otto"
 weight:      80
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-cover-source-author: "Denis Meyer – Greenpeace"
+cover-source-author: "Greenpeace"
 cover-source-license: "CC BY-NC-ND"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-nd/3.0/cz/"
-cover-source-text: "Heatwave and Drought in Burgundy"
-cover-source-url: "https://media.greenpeace.org/archive/Heatwave-and-Drought-in-Burgundy-27MZIFJ8O28DK.html"
-perex:       "S každou další událostí spojenou s extrémním počasím se znovu vynoří podobné otázky: Je dnes takových pohrom víc než dřív? Jsou silnější? A je to kvůli změně klimatu? Někdy ano a někdy ne. Zveřejňujeme český překlad _Kompasu pro novináře_, publikace dvou renomovaných britských klimatologů, jejímž cílem je udělat v těchto otázkách jasno – stručně shrnout nejnovější vědecké poznatky a poskytnout vodítko novinářům, kteří o extrémních událostech a klimatické změně informují veřejnost."
+cover-source-text: "Heavy Rain Disaster in Southwest Germany"
+cover-source-url: "https://media.greenpeace.org/archive/Heavy-Rain-Disaster-in-Southwest-Germany-27MDHUWD5N34.html"
+perex:       "S každou další událostí spojenou s extrémním počasím se znovu vynoří podobné otázky: Je dnes takových pohrom víc než dřív? Jsou silnější? A je to kvůli změně klimatu? Někdy ano a někdy ne. Zveřejňujeme český překlad <i>Kompasu pro novináře</i>, publikace dvou renomovaných britských klimatologů, jejímž cílem je udělat v těchto otázkách jasno – stručně shrnout nejnovější vědecké poznatky a poskytnout vodítko novinářům, kteří o extrémních událostech a klimatické změně informují veřejnost."
 ---
 
 ## Úvod
@@ -209,7 +209,7 @@ Zatřetí: stoupání hladiny oceánů. Velký podíl na škodách způsobených
 
 Záznamy o tropických cyklónách v minulosti jsou poměrně omezené, takže najít trendy je obtížné. Nicméně je už dnes zřejmé, že i když se absolutní počet tropických cyklón nezměnil, ve všech částech světa, kde se tyto jevy vyskytují, jsou stále [častější](https://www.ipcc.ch/report/ar6/wg1/) silné tropické cyklóny (ty, které na Saffirově-Simpsonově stupnici odpovídají kategoriím 3–5). Drtivá většina škod způsobená všemi tropickými bouřemi dohromady připadá právě na tyto silné cyklóny.
 
-Pro události v některých hlavních oblastech výskytu cyklón už jsou v současné době k dispozici závěry atribučních studií, které ukazují, jak se jednotlivé události mění: např. v severním Atlantiku byly celkové srážky spojené s hurikány [Katrina, Irma, Maria](https://www.nature.com/articles/s41586-018-0673-2), [Harvey](https://iopscience.iop.org/article/10.1088/1748-9326/aa9ef2?utm_source=MIT%2BTechnology%2BReview&amp;amp;utm_campaign=7775162c39-The_Download&amp;amp;utm_medium=email&amp;amp;utm_term=0_997ed6f472-7775162c39-154441722&amp;amp; __hstc=12316075.07430159d50a3c91e72c280a7921bf0d.1525132800152.1525132800153.1525132800154.1&amp;amp;__ hssc=12316075.1.1525132800155&amp;amp;__hsfp=1773666937), [Dorian](https://journals.ametsoc.org/view/journals/bams/102/1/BAMS-D-20-0160.1.xml) a [Florence](https://www.science.org/doi/10.1126/sciadv.aaw9253) v důsledku změny klimatu intenzivnější (o 4 %, 6 %, 9 %, 15 %, 7,5 % a 5 %). Dohromady tyto bouře způsobily škody za více než 500 miliard amerických dolarů. V severním Pacifiku se mezitím zvýšil úhrn srážek spojený s tajfunem Morakot o 2,5–3,6 % a v důsledku změny klimatu se zvýšila také pravděpodobnost nedávných období extrémních cyklón v okolí Havaje, ve východním Pacifiku a v Arabském moři.
+Pro události v některých hlavních oblastech výskytu cyklón už jsou v současné době k dispozici závěry atribučních studií, které ukazují, jak se jednotlivé události mění: např. v severním Atlantiku byly celkové srážky spojené s hurikány [Katrina, Irma, Maria](https://www.nature.com/articles/s41586-018-0673-2), [Harvey](https://iopscience.iop.org/article/10.1088/1748-9326/aa9ef2), [Dorian](https://journals.ametsoc.org/view/journals/bams/102/1/BAMS-D-20-0160.1.xml) a [Florence](https://www.science.org/doi/10.1126/sciadv.aaw9253) v důsledku změny klimatu intenzivnější (o 4 %, 6 %, 9 %, 15 %, 7,5 % a 5 %). Dohromady tyto bouře způsobily škody za více než 500 miliard amerických dolarů. V severním Pacifiku se mezitím zvýšil úhrn srážek spojený s tajfunem Morakot o 2,5–3,6 % a v důsledku změny klimatu se zvýšila také pravděpodobnost nedávných období extrémních cyklón v okolí Havaje, ve východním Pacifiku a v Arabském moři.
 
 Kromě toho jsou změně klimatu rovněž připisována vzdutí moře během některých konkrétních bouří. Například [oblast zaplavená hurikánem Sandy](https://www.nature.com/articles/s41467-021-22838-1?fbclid=IwAR269i-mcAGD1cA6sJrQASGgmj8gs3pQ1L7syw8rSPkZLmCT6jaoQVlTN7w) byla vlivem změny klimatu větší, a zaplaveno tak bylo 71 000 domů více, což způsobilo další škody ve výši 8,1 miliardy amerických dolarů. Ničivé [vzdutí způsobené tajfunem Haiyan](https://iopscience.iop.org/article/10.1088/1748-9326/10/6/064011/meta) byla zhruba o 20 % vyšší ve srovnání s tím, jak by podobná událost proběhla bez změny klimatu.
 
