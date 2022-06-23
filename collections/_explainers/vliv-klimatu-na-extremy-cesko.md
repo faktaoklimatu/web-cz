@@ -2,9 +2,9 @@
 layout:      explainer
 title:       "Jak souvisí extrémní počasí v Česku s klimatickou změnou?"
 slug:        "vliv-klimatu-na-extremy-cesko"
-published:   2022-06-08
+published:   2022-06-23
 author:      "Kolektiv autorů"
-weight:      79
+weight:      80
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
 cover-source-author: "Honza Groh"
