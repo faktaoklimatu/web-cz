@@ -4,7 +4,7 @@ title:         "Jaký vliv má klimatická změna na extrémy počasí"
 slug:          "vliv-klimatu-na-extremy"
 redirect_from: "/vliv-klimatu-na-extremy"
 published:     2022-06-23
-weight:        78
+weight:        100.5
 tags-scopes:   [ svet ]
 tags-topics:   [ klima ]
 caption:       "V důsledku změny klimatu jsou extrémní meteorologické události v mnoha oblastech světa stále častější a intenzivnější. Pravděpodobnost výskytu však nestoupá u všech extrémů stejně a navíc se v některých částech světa změny projevují více než jinde."
