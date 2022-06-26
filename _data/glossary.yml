@@ -140,6 +140,11 @@
   name-long: "United Nations Framework Convention on Climate Change"
   description: "Rámcová úmluva OSN o změně klimatu (UNFCCC) je základním dokumentem pro celosvětovou spolupráci na snižování koncentrací skleníkových plynů v atmosféře a souvisejících změnách klimatu. Úmluva byla podepsána v roce 1992 na Konferenci OSN o životním prostředí v Rio de Janeiru a od té doby je její právní dosah rozšiřován v rámci tzv. [Konferencí smluvních stran](/slovnik#cop) (COP) dokumenty jako [Kjótský Protokol](/slovnik#kjotskyprotokol) nebo [Pařížská dohoda](/slovnik#parizskadohoda). [[cs.wikipedia](https://cs.wikipedia.org/wiki/Rámcová_úmluva_OSN_o_změně_klimatu)]"
   
+- id: uzamceni-uhliku
+  name-short: "Uzamčení uhlíku"
+  name-long: "Uzamčení uhlíku"
+  description: "Uzamčení uhlíku (carbon lock-in), nebo přesněji uzamčení uhlíkových emisí označuje situaci, kdy velké investice do znečišťující infrastruktury zabrání přechodu k nízkoemisním technologiím v blízké budoucnosti, aby nedocházelo ke znehodnocení dříve vynaložených prostředků. Typickým příkladem jsou investice do velké fosilní infrastruktury, například do plynovodů, uhelných elektráren nebo těžební a důlní infrastruktury, které kvůli svému dlouhodobému charakteru mohou způsobovat emise ještě po mnoho desetiletí. Tyto investice mohou také napomáhat budoucím investicím do podobné infrastruktury kvůli využití úspor z rozsahu (economy of scale). [[en.wikipedia]](https://en.wikipedia.org/wiki/Carbon_lock-in)"
+
 - id: wmo
   name-short: "WMO"
   name-long: "World Meteorology Organization"
