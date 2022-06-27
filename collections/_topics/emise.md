@@ -1,6 +1,6 @@
 ---
 layout:        topic
-title:         "Emise"
+title:         "Emise skleníkových plynů"
 slug:          "emise"
 redirect_from: "/emise"
 published:     2022-07-01
@@ -8,36 +8,41 @@ sitemap:       false
 map:           true
 
 dashboard:
-- title:       "Emisní faktor elektřiny (2019)"
-  unit:        "g CO<sub>2</sub>eq / kWh"
-  value:       369
-  subtitle:    "v Česku"
-  value-vs:    212
-  subtitle-vs: "průměr EU"
+- title:       "Celkové emise (2018)"
+  unit:        "tun CO<sub>2</sub>eq"
+  value:       "51,2 miliard"   # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
+  subtitle:    "celosvětově"
+  unit-vs:     "tun CO<sub>2</sub>eq"
+  value-vs:    "131,4 milionů"
+  subtitle-vs: "Česká republika"
+  source:      "EDGAR, European Commission"
+  source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
+- title:       "Emise na osobu (2015)"
+  unit:        "tun CO<sub>2</sub>eq"
+  value:       "6,5"
+  subtitle:    "světový průměr"
+  value-vs:    "12,1"
+  subtitle-vs: "Česká republika"
   source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
-- title:       "Bezemisní elektřina (2019)"
-  value:       "48 %"
-  subtitle:    "podíl v Česku"
-  value-vs:    "61 %"
-  subtitle-vs: "podíl v EU"
+  source-url:  "https://docs.google.com/spreadsheets/d/1A1DJVqQEbvs8PfQDrav1i56cfFUIzSL5CAg2jqmXALQ/edit#gid=0"
+- title:       "Emisní závazky (2022)"
+  value:       "87 %"
+  subtitle:    "emisí CO<sub>2</sub>eq pochází ze zemí směřujících k uhlíkové neutralitě"
   source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
-- title:       "Růst solárních zdrojů (2013-2021)"
-  value:       "+ 5 %"
-  subtitle:    "v Česku"
-  comment:     "nárůst o 100 MW za 9 let"
-  value-vs:    "+ 800 %"
-  subtitle-vs: "celosvětově"
-  comment-vs:  "nárůst o 794 000 MW za 9 let"
-  source:      "IEA"
-  source-url:  "https://www.iea.org/articles/renewables-2021-data-explorer?mode=market&region=World&publication=2021&product=PV"
+  source-url:  "https://faktaoklimatu.cz/infografiky/emisni-zavazky"
 
 subtopics:
   # V kostce
 - lead: |
-    **Klimatická změna je způsobena antropogenními, tedy lidmi zaviněnými, emisemi <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>.** Hlavním skleníkovým plynem je CO<sub>2</sub> (oxid uhličitý), který přispívá ke změně klimatu přibližně 70 % a je uvolňován především při spalování fosilních paliv: uhlí, ropy a zemního plynu. Dalšími skleníkovými plyny jsou CH<sub>4</sub> (metan), N<sub>2</sub>O (oxid dusný) a některé další, méně časté plyny. Rozsah klimatické změny a celkové oteplení závisí především na tom, kolik skleníkových plynů vypustíme v budoucnu.  
+    Skleníkové plyny se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika významným producentem <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>: zatímco světový průměr je 6,5 tun <glossary id='co2eq'>CO<sub>2</sub>eq</glossary> na osobu za rok, průměrný Čech vypouští ročně 12,1 tun CO<sub>2</sub>eq (data za rok 2015). Hlavní příčinou je velké množství elektřiny, které vyrábíme v uhelných elektrárnách. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, jaké lidské činnosti způsobují nejvíce emisí.
   qa:
+  - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
+    a: |
+      Blah.
+  - q: "Uvolňují se skleníkové plyny i v důsledku přírodních procesů?"
+    a: |
+      Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
+
   - q: "Jaké jsou celkové světové emise?"
     a: |
       V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, dnes jsou již přes 50 miliard tun CO<sub>2</sub>eq ročně.
@@ -50,9 +55,6 @@ subtopics:
   - q: "Co jsou hlavní zdroje lidských emisí?"
     a: |
       Oxid uhličitý tvoří přibližně 70 % světových emisí a jeho hlavním zdrojem je spalování fosilních paliv, především v energetice, průmyslu a dopravě.
-  - q: "Uvolňují se skleníkové plyny i v důsledku přírodních procesů?"
-    a: |
-      Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
   - q: "Co můžeme udělat pro snížení emisí?"
     a: |
       Klíčové je především snížit emise v energetice a v průmyslu. Účinným opatřením zde je zpoplatnění emisí skleníkových plynů, například formou emisních povolenek. Jako jedinec můžeme přispět především úsporami v domácnostech (vytápění, ohřev teplé vody, spotřeba elektřiny), následně omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků.
@@ -147,7 +149,5 @@ subtopics:
   - emise-svet-na-hdp
   - emisni-intenzity
 ---
-
-Skleníkové plyny se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika významným producentem skleníkových plynů, a to nejen v evropském kontextu.
 
 **Klimatická změna je způsobena antropogenními, tedy lidmi zaviněnými, emisemi <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>.** Hlavním skleníkovým plynem je CO<sub>2</sub> (oxid uhličitý), který přispívá ke změně klimatu přibližně 70 % a je uvolňován především při spalování fosilních paliv: uhlí, ropy a zemního plynu. Dalšími skleníkovými plyny jsou CH<sub>4</sub> (metan), N<sub>2</sub>O (oxid dusný) a některé další, méně časté plyny. Rozsah klimatické změny a celkové oteplení závisí především na tom, kolik skleníkových plynů vypustíme v budoucnu.
