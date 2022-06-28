@@ -43,7 +43,7 @@ subtopics:
   title:       "Ekonomická činnost jako příčina klimatické změny"
   lead: |
     Emise skleníkových plynů z ekonomického pohledu závisí na velikosti světového HDP a emisní intenzitě světového hospodářství. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné cesty k transformaci své ekonomické činnosti.
-  content:
+  content:  # U nového obsahu zvaž přidání také do emise>intenzity.
   - emise-svet-na-hdp
   - emisni-intenzity
   - pozice-akteru-cop
@@ -53,19 +53,20 @@ subtopics:
   title:       "Ekonomické dopady klimatické změny"
   lead: |
     Pokračující změna klimatu povede k obrovským ekonomickým škodám, obzvláště pokud se nám nepodaří dost rychle zastavit. Jaké dopady musíme očekávat a jak se dají vyčíslit?
-  content:
+  content:  # U nového obsahu zvaž přidání také do klimaticka-zmena>dopady.
   - 2006-sternova-zprava
   - 23-dopady-zmen-klimatu
 
-- id:          "zpoplatneni-emisi"
+- id:          "opatreni"
   title:       "Zpoplatnění emisí skleníkových plynů a další opatření"
   lead: |
     Mitigace změny klimatu stojí na efektivních státních opatřeních, které narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu jednotlivých firem. Klíčovým pilířem těchto opatření je zpoplatnění emisí skleníkových plynů.
-  content:
+  content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
   - 26-klimaticka-dividenda
   - mitigacni-opatreni-mmf
+  - 2019-mitigacni-opatreni-mmf
   - fit-for-55
   - fit-for-55-opatreni
 

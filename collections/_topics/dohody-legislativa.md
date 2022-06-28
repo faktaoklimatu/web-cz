@@ -111,7 +111,7 @@ subtopics:
     a: |
       Evropská unie si na cestě ke klimatické neutralitě do roku 2050, což je cílem Zelené dohody, stanovila průběžný cíl, a to **dosáhnout do roku 2030 55% snížení emisí skleníkových plynů** oproti roku 1990. Naplnění tohoto cíle by měla podpořit opatření navržená v balíčku Fit for 55. Jedná se o balíček návrhů založených na tržních mechanismech (např. systém pro obchodování s emisními povolenkami nebo uhlíkové vyrovnání na hranicích), regulacích (týkajících se např. zdrojů energie, paliv nebo lesů a zemědělství) a podpůrných opatřeních (zaměřených na podporu skupin zasažených dekarbonizací). Fit for 55 je tedy jakousi podmnožinou Zelené dohody.
 
-  content:
+  content:  # U nového obsahu zvaž přidání také do ekonomika>opatreni a emise>mitigace.
   - fit-for-55
   - 19-fit-for-55
   - fondy-eu
