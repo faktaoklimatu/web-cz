@@ -6,6 +6,7 @@ redirect_from: "/krajina"
 sitemap:       false
 published:     2022-04-19
 map:           true
+weight:        60
 
 subtopics:
   # 3 materiály, které byste neměli přehlédnout

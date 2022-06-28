@@ -6,7 +6,7 @@ redirect_from: "/fyzika-zmeny-klimatu"
 sitemap:       false
 published:     2022-04-05
 map:           true
-weight:        100
+weight:        10
 
 dashboard:
 - title:       "Koncentrace CO2 v atmosféře"

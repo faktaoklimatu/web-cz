@@ -6,6 +6,7 @@ redirect_from: "/emise"
 published:     2022-07-01
 sitemap:       false
 map:           true
+weight:        20
 
 dashboard:
 - title:       "Celkové emise (2018)"

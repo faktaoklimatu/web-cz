@@ -6,6 +6,7 @@ redirect_from: "/dohody-legislativa"
 sitemap:       false
 published:     2022-04-12
 map:           true
+weight:        50
 
 dashboard:
 - value:       "87 %"
