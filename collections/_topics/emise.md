@@ -133,12 +133,14 @@ subtopics:
   title:       "Opatření ke snižování emisí"
   lead: |
     Podíl jednotlivých sektorů na emisích skleníkových plynů poskytuje užitečné vodítko pro zaměření mitigačních snah. Největších emisních úspor může Česká republika dosáhnout proměnou svého energetického mixu. Jednotlivci však také mohou přispět ke snížení emisí, například snížením energetické náročnosti svých domácností nebo omezením automobilové dopravy, případně také nižší konzumací masa a mléčných výrobků.
-  content:
+  content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a ekonomika>opatreni.
   - potencial-zpusobu-snizeni-emisi
-  - zpoplatneni-emisi-svet
   - emisni-povolenky-ets
+  - zpoplatneni-emisi-svet
   - mitigacni-opatreni-mmf
   - 2019-mitigacni-opatreni-mmf
+  - fit-for-55
+  - fit-for-55-opatreni
   - 2016-snizeni-emisi-cr
 
 - id:     "intenzity"
@@ -147,7 +149,7 @@ subtopics:
     Emisní intenzita ekonomiky označuje množství skleníkových plynů vyprodukovaných na jednotku HDP a zpravidla se uvádí v gramech CO<sub>2</sub>eq na jeden dolar. Emisní intenzity tak uvádí další relativní vyjádření vedle emisí na osobu a často poskytují detailnější vhled do emisí jednotlivých zemí.
 
     Více rozvinuté země mají zpravidla méně emisně náročné ekonomiky, neboť služby tvoří větší podíl jejich hospodářství. Oproti tomu v méně rozvinutých zemích tvoří větší podíl hospodářství emisně náročné sektory: zemědělství, průmysl a stavebnictví. Emisní intenzity ekonomik také vysvětlují, proč některé státy se srovnatelnými emisemi na osobu mohou mít velice odlišnou životní úroveň.
-  content:
+  content:  # U nového obsahu zvaž přidání také do ekonomika>pricina.
   - emise-svet-na-hdp
   - emisni-intenzity
 ---
