@@ -87,6 +87,7 @@ subtopics:
   - dukazy-vlivu-co2
   - souvislost-koncentrace-oteplovani
   - otepleni-zvysenim-koncentrace-co2
+  - 8-ipcc-ar6-cast-1
   - souvislost-emise-otepleni
   - koncept-uhlikovy-rozpocet
   - emise-dychani
@@ -97,7 +98,7 @@ subtopics:
   lead: |
     Vyšší teploty a častější sucha mají dopady na zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli taní horských ledovců chybí voda v povodích, které jsou jimi napájeny. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, které budeme potkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují budoucí vývoj klimatické změny a její očekávané dopady.
   qa:
-  - q: "Co to jsou body zlomu?"
+  - q: "Co to jsou body zlomu? TODO: dopsat"
     a: |
       xxx
 
@@ -110,6 +111,7 @@ subtopics:
   - body-zlomu-3
   - emisni-scenare-pariz
   - souvislost-emise-otepleni
+  - 23-dopady-zmen-klimatu
 
 - id:          "extrémy"
   title:       "Extrémní jevy"
@@ -117,6 +119,9 @@ subtopics:
     Vlny veder na pevnině i tzv. "mořské vlny veder", přívalové deště, dlouhé periody sucha, hurikány (odborně "tropické cyklóny") nebo počasí s rizikem lesních požárů (sucho + vítr) patří mezi extrémní projevy počasí, které se s postupující klimatickou změnou vyskytují častěji než dříve a přicházejí s větší intenzitou.
 
   content:
+  - vliv-klimatu-na-extremy
+  - vliv-klimatu-na-extremy-prirucka
+  - vliv-klimatu-na-extremy-cesko
   - tropicke-dny-brno
   - tropicke-dny-praha
 ---
