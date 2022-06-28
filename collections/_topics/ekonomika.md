@@ -41,25 +41,33 @@ subtopics:
 
 - id:          "pricina"
   title:       "Ekonomická činnost jako příčina klimatické změny"
-  lead: ""
+  lead: |
+    Emise skleníkových plynů z ekonomického pohledu závisí na velikosti světového HDP a emisní intenzitě světového hospodářství. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné cesty k transformaci své ekonomické činnosti.
   content:
   - emise-svet-na-hdp
   - emisni-intenzity
   - pozice-akteru-cop
+  - akteri-klimatickych-jednani
 
 - id:          "ekonomicke-dopady"
   title:       "Ekonomické dopady klimatické změny"
-  lead: ""
+  lead: |
+    Pokračující změna klimatu povede k obrovským ekonomickým škodám, obzvláště pokud se nám nepodaří dost rychle zastavit. Jaké dopady musíme očekávat a jak se dají vyčíslit?
   content:
   - 2006-sternova-zprava
+  - 23-dopady-zmen-klimatu
 
 - id:          "zpoplatneni-emisi"
-  title:       "Zpoplatnění emisí skleníkových plynů"
-  lead: ""
+  title:       "Zpoplatnění emisí skleníkových plynů a další opatření"
+  lead: |
+    Mitigace změny klimatu stojí na efektivních státních opatřeních, které narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu jednotlivých firem. Klíčovým pilířem těchto opatření je zpoplatnění emisí skleníkových plynů.
   content:
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
-  - mitigacni-opatreni-mmf  
+  - 26-klimaticka-dividenda
+  - mitigacni-opatreni-mmf
+  - fit-for-55
+  - fit-for-55-opatreni
 
 - id:          "transformace"
   title:       "Hospodářská a společenská transformace"
@@ -67,16 +75,26 @@ subtopics:
     Lidská společnost neusiluje pouze o snížení emisí skleníkových plynů – v takovém případě bychom mohli jednoduše zanechat veškerých aktivit. Lidé mají širokou škálu potřeb, cílem tedy je nalezení cesty ke stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů. Jak uskutečnit tuto hospodářskou a společenskou transformaci je svým způsobem složitější otázka než samotná fyzika klimatické změny.
   content:
   - nizkouhlikova-spolecnost
-  - fit-for-55
   - adaptacni-strategie-cr
-  - fit-for-55-opatreni
-  - pozice-akteru-cop
+  - 3-stavebnictvi-a-bydleni
+  - 27-rethink-architecture
+  - 5-transformace-dopravy
+  - 6-transformace-prumyslu
 
 - id:          "finance"
-  title:       "Klimatické finance"
+  title:       "Financování klimatických opatření"
   lead: |
-    Pojem "klimatické finance" označuje závazek rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe zvládnout klimatickou změnu a její dopady. V roce 2009 na klimatické konferenci COP15 v Kodani se vyspělé země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
+    Hospodářská transformace a adaptace na změny klimatu vyžaduje významné investice. Jaké změny ve finančním sektoru a v mezinárodních finančních trasferech to vyžaduje?
+  qa:
+  -
+    q: "Co označuje pojem klimatické finance?"
+    a: |
+      Pojem "klimatické finance" označuje závazek rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe zvládnout klimatickou změnu a její dopady. V roce 2009 na klimatické konferenci COP15 v Kodani se vyspělé země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
+
   content:
+  - fondy-eu
+  - taxonomie-eu
+  - 20-financni-sektor
   - klimaticke-finance
 ---
 
