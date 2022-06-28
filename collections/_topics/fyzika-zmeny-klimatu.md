@@ -1,11 +1,12 @@
 ---
 layout:        topic
 title:         "Klimatická změna"
-slug:          "physical-basis"
-redirect_from: "/physical-basis"
+slug:          "fyzika-zmeny-klimatu"
+redirect_from: "/fyzika-zmeny-klimatu"
 sitemap:       false
 published:     2022-04-05
 map:           true
+weight:        100
 
 dashboard:
 - title:       "Koncentrace CO2 v atmosféře"
