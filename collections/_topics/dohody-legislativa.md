@@ -56,23 +56,18 @@ subtopics:
       **Čína** jakožto největší světový emitent se zavázala dosáhnout uhlíkové neutrality do roku **2060**. **EU** stejně jako **USA** si jako cíl stanovila rok **2050**, přičemž do roku 2030 chce dosáhnout 55% snížení emisí ve srovnání s rokem 1990. Signatáři Pařížské dohody jsou zároveň povinni deklarovat národní závazky ke snižování emisí skleníkových plynů (Nationally Determined Contributions, NDCs), jež jsou pravidelně revidovány.
 
   content:
-  - emisni-zavazky
-  - uhelny-phaseout-eu
   - uhlikova-neutralita
+  - emisni-zavazky
+  - 2021-reserse-zavazky-statu
 
 - id:          "svet"
   title:       "Světová klimatická politika"
   lead: |
-    Pro udržení oteplení planety v mezích 1,5 °C nebo 2 °C **je nezbytné, aby se na snižování emisí skleníkových plynů podílel celý svět** a došlo ke globálnímu přechodu na bezemisní nebo alespoň nízkoemisní ekonomiku.
+    Pro udržení oteplení planety v mezích 1,5 °C nebo 2 °C **je nezbytné, aby se na snižování emisí skleníkových plynů podílel celý svět** a došlo ke globálnímu přechodu na bezemisní nebo alespoň nízkoemisní ekonomiku. Velká část světové klimatické politiky se odehrává na konferencích [COP](#cop).
   qa:
   - q: "Co je Pařížská dohoda?"
     a: |
       V rámci Pařížské dohody se státy světa dohodly na cíli **nepřekročit hranici oteplení o 2 °C a snažit se o udržení oteplení pod 1,5 °C** (v porovnání s předindustriálním obdobím). Zároveň se zavázaly formulovat své **národní závazky ke snižování emisí** (Nationally Determined Contributions, NDCs) a každých pět let je revidovat. Součástí dohody je i finančně **podporovat rozvíjející se země** zasažené změnou klimatu. Pařížská dohoda vznikla v roce 2015 v rámci jednání smluvních stran Rámcové úmluvy OSN o změně klimatu (United Nations Framework Convention on Climate Change, UNFCCC).
-
-  - q: "Co je COP?"
-    a: |
-      COP je zkratkou pro Konferenci smluvních stran (Conference of the Parties). V kontextu změny klimatu jde o smluvní strany Rámcové úmluvy OSN o změně klimatu (United Nations Framework Convention on Climate Change). Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v boji se změnou klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 26., se konal ve skotském Glasgow. Příští se bude konat na podzim roku 2022 v Sharm El-Sheikh v Egyptě. Kromě změny klimatu probíhá např. i COP týkající se biodiverzity.
-
   - q: "Co je IPCC?"
     a: |
       IPCC, tedy Mezivládní panel pro změnu klimatu (Intergovermental Panel on Climate Change) je platformou na poli OSN, v rámci které vědci a vědkyně z téměř všech zemí světa **shrnují vědecké poznání v oblasti změny klimatu**. Činí tak v hodnotících zprávách (Assesment Report, AR), které jsou tvořeny třemi pracovními skupinami. První se věnuje **fyzikálním základům** klimatické změny (Working Group 1, WG 1), druhá **dopadům, adaptaci a zranitelnosti** (WG 2) a třetí **mitigaci** (WG 3).
@@ -81,6 +76,23 @@ subtopics:
   - pozice-akteru-cop
   - akteri-klimatickych-jednani
   - zpravy-ipcc
+  - 9-mezinarodni-jednani-historie
+  - 10-mezinarodni-jednani-dopady
+  - 11-mezinarodni-jednani-prubeh
+
+- id:          "cop"
+  title:       "Klimatické konference COP"
+  lead: |
+    Jde o konference smluvních stran _Rámcové úmluvy OSN o změně klimatu_ (v angličtině _UNFCCC Conference of the Parties_, zkráceně _COP_). Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v boji se změnou klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 26., se konal ve skotském Glasgow. Příští se bude konat na podzim roku 2022 v Sharm El-Sheikh v Egyptě.
+    
+    Speciální série našeho podcastu 2050 pokrývá, jak takové jednání probíhá, jaký je jeho význam a co konkrétně přinesla jednání v Glasgow.
+
+  content:
+  - 12-jak-svet-vidi-zmenu-klimatu
+  - 13-cop26-glasgow
+  - 14-rozhovor-barbora-kvasnickova
+  - 15-zive-z-glasgow
+  - 18-cop26
 
 - id:          "eu"
   title:       "Klimatická politika EU"
@@ -101,9 +113,9 @@ subtopics:
 
   content:
   - fit-for-55
-  - emisni-povolenky-ets
+  - 19-fit-for-55
   - fondy-eu
-  # TODO: pridat https://2050podcast.cz/epizody/19-fit-for-55
+  - emisni-povolenky-ets
 
 - id:          "cr"
   title:       "Česká klimatická politika"
