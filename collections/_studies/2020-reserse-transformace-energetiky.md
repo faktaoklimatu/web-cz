@@ -1,13 +1,13 @@
 ---
 layout:      survey
-title:       "Rešerše: Studie transformace energetiky"
+title:       "Studie transformace energetiky"
 slug:        2020-reserse-transformace-energetiky
 redirect_from: "/2020-reserse-transformace-energetiky"
 weight:      300
 published:   2020-11-18
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
-caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky z posledních let."
+caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky."
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:

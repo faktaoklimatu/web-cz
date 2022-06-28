@@ -1,6 +1,6 @@
 ---
 layout:      survey
-title:       "Rešerše: Stav lesů ČR"
+title:       "Stav lesů ČR"
 slug:        2021-reserse-lesy-cr
 redirect_from: "/2021-reserse-lesy-cr"
 weight:      301

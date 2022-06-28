@@ -1,6 +1,6 @@
 ---
 layout:      survey
-title:       "Rešerše: Emisní závazky států"
+title:       "Emisní závazky států"
 slug:        2021-reserse-zavazky-statu
 redirect_from: "/2021-reserse-zavazky-statu"
 weight:      300
