@@ -6,6 +6,7 @@ redirect_from: "/ekonomika"
 published:     2022-07-01
 sitemap:       false
 map:           true
+weight:        40
 
 dashboard:
 - title:       "Klimatické finance (2019)"
