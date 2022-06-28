@@ -36,9 +36,10 @@ subtopics:
 - lead: |
     Skleníkové plyny se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika významným producentem <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>: zatímco světový průměr je 6,5 tun <glossary id='co2eq'>CO<sub>2</sub>eq</glossary> na osobu za rok, průměrný Čech vypouští ročně 12,1 tun CO<sub>2</sub>eq (data za rok 2015). Hlavní příčinou je velké množství elektřiny, které vyrábíme v uhelných elektrárnách. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, jaké lidské činnosti způsobují nejvíce emisí.
   qa:
-  - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
-    a: |
-      Blah.
+  # TODO: Dopsat odpověď a zveřejnit.
+  # - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
+  #   a: |
+  #     Blah.
   - q: "Uvolňují se skleníkové plyny i v důsledku přírodních procesů?"
     a: |
       Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
