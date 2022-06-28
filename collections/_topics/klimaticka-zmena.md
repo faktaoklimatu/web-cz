@@ -1,8 +1,8 @@
 ---
 layout:        topic
 title:         "Klimatická změna"
-slug:          "fyzika-zmeny-klimatu"
-redirect_from: "/fyzika-zmeny-klimatu"
+slug:          "klimaticka-zmena"
+redirect_from: "/klimaticka-zmena"
 sitemap:       false
 published:     2022-04-05
 map:           true
