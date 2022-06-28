@@ -48,8 +48,16 @@ subtopics:
 
   content:
   - umirani-ceskych-lesu
+  - hospodareni-lesy
+  - 4-zemedelstvi-a-lesnictvi
+  - 16-obnova-lesu-po-kurovci
+  - lesy-cr-mapa
   - tezba-lesa-plocha
   - tezba-lesa-vyvoj
+  - tezba-lesa-mapa
+  - lesnatost-kraje
+  - lesnatost-plo
+  - 2021-reserse-lesy-cr
 
 - id:          "biodiverzita"
   title:       "Biodiverzita"
@@ -78,6 +86,8 @@ subtopics:
   content:
   - lesnicka-strategie-eu
   - ubyvani-biodiverzity
+  - 4-zemedelstvi-a-lesnictvi
+  - 22-jmk-adaptace
 
 ---
 
