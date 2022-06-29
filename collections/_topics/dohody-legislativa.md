@@ -123,6 +123,7 @@ subtopics:
   - fit-for-55
   - 19-fit-for-55
   - fondy-eu
+  - fondy-eu-cde
   - emisni-povolenky-ets
 
 - id:          "cr"
