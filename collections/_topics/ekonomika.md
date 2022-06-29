@@ -33,7 +33,7 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Klimatická změna úzce souvisí s lidskou ekonomickou činností a pro její zvládnutí je nutná bezprecendentní hospodářská transformace. Z ekonomického pohledu představuje klimatická změna externalitu, tedy nezamýšlený vedlejší důsledek produkce, který pokřivuje tržní prostředí. Pro narovnání tohoto prostředí pak lze využít zpoplatnění emisí skleníkových plynů (pomocí uhlíkové daně nebo emisních povolenek) podle principu “znečišťovatel platí”.
+    Klimatická změna úzce souvisí s lidskou ekonomickou činností a pro její zvládnutí je nutná bezprecendentní hospodářská transformace. Z ekonomického pohledu představuje klimatická změna externalitu, tedy nezamýšlený vedlejší důsledek produkce, který pokřivuje tržní prostředí. Pro narovnání tohoto prostředí pak lze využít zpoplatnění emisí skleníkových plynů (pomocí uhlíkové daně nebo emisních povolenek) podle principu "znečišťovatel platí".
   content:
   - emisni-povolenky-ets
   - fit-for-55

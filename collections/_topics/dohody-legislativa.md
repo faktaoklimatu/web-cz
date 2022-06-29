@@ -12,7 +12,7 @@ dashboard:
 - value:       "87 %"
   subtitle:    "emisí CO<sub>2</sub>eq pochází ze zemí směřujících k uhlíkové neutralitě"
 - value:       "2050"
-  subtitle:    "rok, do kterého se EU zavázala dosáhnout klimatická neutrality"
+  subtitle:    "rok, do kterého se EU zavázala dosáhnout klimatické neutrality"
 - value:       "Sharm El-Sheikh"
   subtitle:    "místo konání COP27"
 
