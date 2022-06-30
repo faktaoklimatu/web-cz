@@ -35,7 +35,20 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Výroba elektřiny prochází **turbulentním obdobím**: za posledních 10 let prudce **klesly ceny obnovitelných zdrojů**, v Evropě i jinde výrazně **zesílilo zpoplatnění emisí skleníkových plynů** v energetice, které dále urychluje transformaci. To zvyšuje tržní tlak na uhelné a plynové elektrárny, které tvoří asi třetinu evropského mixu?
+    Výroba elektřiny v Evropě prochází **překotnou transformací**. Přispěly k ní tři faktory: (1) za posledních 10 let prudce klesly [ceny obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice, a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech. Jaký je současný stav výroby elektřiny ve světě?
+  commented-content:
+  - slug: elektrina-cr
+    comment_number: "ČR"
+    comment: |
+      V Česku se stále **více než polovina elektřiny vyrábí z fosilních zdrojů**.
+  - slug: elektrina-na-osobu-eu
+    comment_number: "EU"
+    comment: |
+      V mnoha Evropských zemích **obnovitelné zdroje postupně nahrazují stávající fosilní zdroje**.
+  - slug: elektrina-svet
+    comment_number: "<i class='fa-solid fa-earth-europe'></i>"
+    comment: |
+      Celý svět při dekarbonizaci energetiky ještě čeká spousta práce. **Změna ale už probíhá na všech kontinetech.** Např. Indie se zavázala do roku 2030 pokrýt 50 % své spotřeby elektřiny z obnovitelných zdrojů.
   qa:
   -
     q: "Jak může Česko snížit svoje emise v energetice?"
@@ -43,10 +56,6 @@ subtopics:
       České emise lze výrazně a poměrně rychle a levně snížit **rozvojem obnovitelných zdrojů**, obzvláště pak větru a slunce. To způsobí, že uhelné a plynové elektrárny nebudou vyrábět nepřetržitě ale budou pouze pokrývat mezery ve výrobě ze slunce a větru. Při patřičném rozvoji obnovitelných zdrojů nám může stačit méně než třetina dnešní elektřiny z fosilních zdrojů. Bližší detaily ukazují [scénáře transformace české elektroenergetiky do roku 2030](#scenare-2030-cr) (níže).
 
       Výrazný **rozvoj jaderných zdrojů** je další možný způsob snížení emisí v energetice. V Česku ovšem nelze čekat žádný nový reaktor dříve než v roce 2036 (realisticky spíše kolem roku 2040), což je příliš pozdě vzhledem k našim emisním závazkům. Rozvoj jaderné energetiky tedy dává smysl pouze v kombinaci s rozvojem obnovitelných zdrojů.
-  content:
-  - elektrina-cr
-  - cena-energie
-  - cena-elektriny-na-trhu
 
 - id:          "mix"
   title:       "Současný stav: z čeho vyrábíme elektřinu?"

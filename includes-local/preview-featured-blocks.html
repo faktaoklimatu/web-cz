@@ -1,12 +1,9 @@
-{% if include.slugs %}
-<div class="row justify-content-md">
-{% for needle in include.slugs %}
-    {% assign item = site.infographics | concat: site.studies | concat: site.explainers | concat: site.episodes | find_exp:"item","item.slug == needle" %}
-    <div class="col-md-6 col-lg-4">
-        <a href="{{ item | get_url }}" class="preview-card card">
-            {% include preview-block.html item=item %}
-        </a>
+{%- if include.slugs %}
+    <div class="row justify-content-md">
+        {%- for slug in include.slugs %}
+            <div class="col-md-6 col-lg-4">
+                {%- include preview-block.html slug=slug %}
+            </div>
+        {%- endfor %}
     </div>
-{% endfor %}
-</div>
-{% endif %}
+{%- endif %}
