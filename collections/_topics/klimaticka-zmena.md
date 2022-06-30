@@ -14,8 +14,6 @@ dashboard:
   value:       "419"
   subtitle:    "v roce **2022**"
   comment:     "(celých 10 000 let před průmyslovou revolucí byla stabilní koncentrace ~270 ppm)"
-  # value-vs:    "~270"
-  # subtitle-vs: "před rokem **1750** (cca 10 000 let)"
   source:      "Fakta o klimatu"
   source-url:  "/koncentrace-co2"
 - title:       "Oteplování světa"
