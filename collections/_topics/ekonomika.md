@@ -10,7 +10,7 @@ weight:        40
 
 dashboard:
 - title:       "Klimatické finance (2019)"
-  value:       "79,6 mld. USD"
+  value:       "79,6 mld. $"
   subtitle:    "přispěly ročně na klimatická opatření rozvinuté země rozvojovým"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
@@ -22,9 +22,9 @@ dashboard:
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
 - title:       "Výnosy ze zpoplatnění uhlíku (2021)"
-  value:       "84 mld. USD"
+  value:       "84 mld. $"
   subtitle:    "**celosvětově**"
-  value-vs:    "34 mld. USD"
+  value-vs:    "34 mld. $"
   subtitle-vs: "z **evropských** emisních povolenek"
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
