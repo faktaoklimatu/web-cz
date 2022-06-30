@@ -9,12 +9,24 @@ map:           true
 weight:        50
 
 dashboard:
-- value:       "87 %"
-  subtitle:    "emisí CO<sub>2</sub>eq pochází ze zemí směřujících k uhlíkové neutralitě"
-- value:       "2050"
-  subtitle:    "rok, do kterého se EU zavázala dosáhnout klimatické neutrality"
-- value:       "Sharm El-Sheikh"
-  subtitle:    "místo konání COP27"
+- title:       "Svět"
+  value:       "87 % emisí"
+  unit:        "CO<sub>2</sub>eq"
+  subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
+  source:      "Fakta o klimatu"
+  source-url:  "https://faktaoklimatu.cz/infografiky/emisni-zavazky"
+- title:       "EU"
+  # title:       "Klimatická neutralita EU"
+  # value:       "v roce 2050"
+  value:       "2050"
+  # value:       "rok 2050"
+  # subtitle:    "podle Evropského klimatického zákona"
+  subtitle:    "rok, do kterého se **EU** zavázala dosáhnout **klimatické neutrality**"
+  source:      "Evropská komise"
+  source-url:  "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
+- title:       "COP27"
+  value:       "Sharm El-Sheikh"
+  subtitle:    "město v Egyptě, kde se bude konat klimatická konference **COP27**"
 
 subtopics:
   # To nejdůležitější
