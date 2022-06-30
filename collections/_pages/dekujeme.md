@@ -8,7 +8,7 @@ sitemap:    false
 <div class="section">
     <div class="container clearfix">
         <figure class="d-none d-md-block float-right w-50 ml-4">
-            <img src="/assets-local/team/fakta-tym.jpg" class="rounded w-100" alt="Jádro týmu Fakta o klimatu"/>
+            <img src="/assets-local/team/tym-fakta-o-klimatu.jpg" class="rounded w-100" alt="Jádro týmu Fakta o klimatu"/>
         </figure>
         <h1>{{ page.title }}</h1>
         <div class="payment-box">
@@ -34,7 +34,7 @@ sitemap:    false
         <a href="#newsletter-modal" class="btn btn-primary" id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal"><i class="fas fa-fw fa-envelope-open-text"></i> Newsletter</a>
         <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
         <figure class="d-md-none w-100 mt-2">
-            <img src="/assets-local/team/fakta-tym.jpg" class="rounded w-100" alt="Jádro týmu Fakta o klimatu"/>
+            <img src="/assets-local/team/tym-fakta-o-klimatu.jpg" class="rounded w-100" alt="Jádro týmu Fakta o klimatu"/>
         </figure>
     </div>
 </div>
