@@ -36,7 +36,22 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Skleníkové plyny se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika významným producentem <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>: zatímco světový průměr je 6,5 tun <glossary id='co2eq'>CO<sub>2</sub>eq</glossary> na osobu za rok, průměrný Čech vypouští ročně 12,1 tun CO<sub>2</sub>eq (data za rok 2015). Hlavní příčinou je velké množství elektřiny, které vyrábíme v uhelných elektrárnách. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, jaké lidské činnosti způsobují nejvíce emisí.
+    Skleníkové plyny se dostávají do atmosféry **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů**, **produkcí cementu**, **pěstováním rýže** či **chovem dobytka**. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, v jakých státech a jaké lidské činnosti způsobují nejvíce emisí:
+  commented-content:
+  - slug: "emise-svet"
+    comment_number: 1
+    comment: |
+      Polovina světových emisí pochází z Asie. Na tomto kontinentu ale žije asi 60 % světové populace.
+  - slug: "emise-svet-na-osobu"
+    comment_number: 2
+    comment: |
+      **Česká republika je v přepočtu na obyvatele významným producentem skleníkových plynů**, v roce 2015 byl:
+      * **světový průměr 6,5 tun** CO<sub>2</sub>eq na osobu za rok,
+      * **český průměr 12,1 tun** CO<sub>2</sub>eq na osobu za rok.
+  - slug: "emise-cr-detail"
+    comment_number: 3
+    comment: |
+      Hlavní příčinou vysokých emisí v ČR je velké množství elektřiny, které vyrábíme v **uhelných elektrárnách a teplárnách**. Další velké zdroje emisív Česku jsou **silniční doprava**, **výroba oceli a cementu** a **lokální plynové a uhelné kotle** v domácnostech a institucích.
   qa:
   # TODO: Dopsat odpověď a zveřejnit.
   # - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
@@ -61,10 +76,6 @@ subtopics:
   - q: "Co můžeme udělat pro snížení emisí?"
     a: |
       Klíčové je především snížit emise v energetice a v průmyslu. Účinným opatřením zde je zpoplatnění emisí skleníkových plynů, například formou emisních povolenek. Jako jedinec můžeme přispět především úsporami v domácnostech (vytápění, ohřev teplé vody, spotřeba elektřiny), následně omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků.
-  content:
-  - emise-svet
-  - emise-svet-na-osobu
-  - emise-cr-detail
 
 - id:          "mnozstvi"
   title:       "Množství vypouštěných skleníkových plynů"
