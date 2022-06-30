@@ -10,7 +10,7 @@ weight:        30
 
 dashboard:
 - title:       "Emisní faktor elektřiny (2019)"
-  unit:        "CO<sub>2</sub>eq / kWh"
+  unit:        "CO<sub>2</sub>eq"
   value:       "369 g"
   subtitle:    "emise z kWh elektřiny v **Česku**"
   value-vs:    "212 g"
