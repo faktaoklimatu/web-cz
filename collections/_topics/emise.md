@@ -28,7 +28,7 @@ dashboard:
   source-url:  "/emise-svet-na-osobu"
 - title:       "Emisní závazky (2022)"
   value:       "87 % emisí"
-  unit:        "CO<sub>2</sub>eq"
+  unit:        "CO<sub>2</sub>"
   subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "/emisni-zavazky"

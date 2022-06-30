@@ -11,7 +11,7 @@ weight:        50
 dashboard:
 - title:       "Svět"
   value:       "87 % emisí"
-  unit:        "CO<sub>2</sub>eq"
+  unit:        "CO<sub>2</sub>"
   subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/infografiky/emisni-zavazky"
