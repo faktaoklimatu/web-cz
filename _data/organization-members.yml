@@ -85,30 +85,32 @@
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
 
-- title: "Další lidé ve Faktech"
+- title: "Faktům o klimatu dále pomáhají"
   lead: |
-    Další lidé Faktům o klimatu pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu. Je jich mnohem <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'>víc</a>.
-  class: "further-team col-12 col-sm-12 col-md-4 col-lg-3 px-2"
+    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu. Je jich mnohem <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'>víc</a>.
+  class: "further-team col-12 col-sm-12 col-md-4 col-lg-3 px-0"
   members:
   - name: "Jan Krajhanzl"
-    position: "Externí konzultant pro komunikaci"
-    summary: "S mým týmem na Katedře environmentálních studií FSS MU se zabýváme tím, jak lidé prožívají změnu klimatu, co ovlivňuje veřejné mínění v této oblasti, a jak komunikovat toto náročné téma s veřejností."
-    img: "honza-krajhanzl.jpg"
+    summary: "Konzultuju, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumám se svým týmem na univerzitě."
+
+  - name: "Oldřich Sklenář"
+    summary: "V projektu konzultuju ohledně energetiky. Na řadě infografik jsem přímo spolupracoval."
 
   - name: "Jakub Zamouřil"
-    position: "Analytik"
-    summary: "Věnuji se rešerším a analýzám vědeckých studií a energetických scénářů, připravuji datasety, explainery a doprovodné texty. Jsem také redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
-    img: "jakub-zamouril.png"
-    email: "jakub.zamouril@faktaoklimatu.cz"
+    summary: "Přispívám analytickou prací stejně jako psaním textů: v tématech fyziky změny klimatu a energetiky. Jsem také redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
     linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
 
+  - name: "Eliška Vlčková"
+    summary: "Zpracovávám prostorová data a tvořím kartografické výstupy. Přispívám k tématům krajiny, biodiverzity a ochrany životního prostředí."
+    linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
+
+  - name: "Marek Krčál"
+    summary: "Pomáhám s tématem energetiky, zejména otázkami její dlouhodobé transformace."
+
   - name: "Martin Křivánek"
-    position: "Dobrovolník"
-    summary: "Přemýšlím, jak můžeme mít jako Fakta o klimatu co největší dopad – a jak co nejvíce zhodnotit existující infografiky a materiály."
-    img: "martin-krivanek.jpg"
+    summary: "Přemýšlím, jak může mít práce Fakt o klimatu co největší dopad – a jak co nejvíce zhodnotit existující infografiky a materiály."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
     
   - name: "Martin crysman Zahradník"
-    position: "Dobrovolník"
-    summary: "Vytvářím a posílám <a class=\"no-ext-link-icon\" href=\"#newsletter-modal\" id=\"newsletter-embed\" data-toggle=\"modal\" data-target=\"#newsletter-modal\">newslettery</a>. Mimo to jsem prokletý a všude vidím chyby, příležitostně se tedy starám o korektury a opravy, nebo navrhuji vylepšováky."
-    img: "martin-crysman-zahradnik.png"
+    summary: "V projektu od jeho počátku pomáhám s tím, co je potřeba (korektury, opravy, drobné programování)."
+
