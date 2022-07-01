@@ -14,11 +14,9 @@
     border-radius: 50%
 }
 
-@media (max-width: 768px) {
-    .further-team {
-        .team-photo {
-            width: 40%;
-        }
+.further-team {
+    .card {
+        margin: 0;
     }
 }
 
