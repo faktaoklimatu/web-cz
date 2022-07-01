@@ -14,6 +14,14 @@
     border-radius: 50%
 }
 
+@media (max-width: 768px) {
+    .further-team {
+        .team-photo {
+            width: 40%;
+        }
+    }
+}
+
 .cop-entity-summary {
     font-size: 0.9em;
 
