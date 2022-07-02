@@ -38,17 +38,17 @@ subtopics:
     Výroba elektřiny v Evropě prochází **překotnou transformací**. Přispěly k ní tři faktory: (1) za posledních 10 let prudce klesly [ceny obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice, a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech. Jaký je současný stav výroby elektřiny ve světě?
   commented-content:
   - slug: elektrina-cr
-    comment_number: "ČR"
+    comment-key: "ČR"
     comment: |
       V Česku se stále **více než polovina elektřiny vyrábí z fosilních zdrojů**.
   - slug: elektrina-na-osobu-eu
-    comment_number: "EU"
+    comment-key: "EU"
     comment: |
       V mnoha Evropských zemích **obnovitelné zdroje postupně nahrazují stávající fosilní zdroje**.
   - slug: elektrina-svet
-    comment_number: "<i class='fa-solid fa-earth-europe'></i>"
+    comment-key: "<i class='fa-solid fa-earth-europe'></i>"
     comment: |
-      Celý svět při dekarbonizaci energetiky ještě čeká spousta práce. **Změna ale už probíhá na všech kontinetech.** Např. Indie se zavázala do roku 2030 pokrýt 50 % své spotřeby elektřiny z obnovitelných zdrojů.
+      Celosvětově je dekarbonizace velká výzva, **už ale dávno začala**. Např. Indie chce do roku 2030 vyrábět 50 % elektřiny z obnovitelných zdrojů.
   qa:
   -
     q: "Jak může Česko snížit svoje emise v energetice?"

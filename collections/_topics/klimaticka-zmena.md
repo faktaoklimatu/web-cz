@@ -49,18 +49,15 @@ subtopics:
     Jak se v složité problematice klimatu a jeho změn začít orientovat? Pro zjednodušení nabízíme tři zásadní vhledy:
   commented-content:
   - slug: "schema-klimaticke-zmeny"
-    comment_number: 1
+    comment-key: 1
     comment: |
-      Současná klimatická změna je **řetězec příčin a následků**:
-      * lidstvo mění složení atmosféry,
-      * což zesiluje skleníkový efekt,
-      * který pak způsobuje oteplování, tání ledovců, zvyšování hladin oceánů a další jevy.
+      Současná změna klimatu je **série příčin a následků**: lidstvo mění složení atmosféry, což zesiluje skleníkový efekt. Ten pak způsobuje oteplování, tání ledovců a další jevy.
   - slug: "souvislost-koncentrace-oteplovani"
-    comment_number: 2
+    comment-key: 2
     comment: |
       **Čím více skleníkových plynů** lidstvo vypustí do atmosféry, **tím víc se planeta oteplí**.
   - slug: "mapa-zmeny-teploty"
-    comment_number: 3
+    comment-key: 3
     comment: |
       Klimatická změna se neprojevuje všude stejně: **různé oblasti světa se oteplují různě rychle**.
 
