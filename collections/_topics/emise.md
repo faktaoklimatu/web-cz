@@ -39,19 +39,17 @@ subtopics:
     Skleníkové plyny se dostávají do atmosféry **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů**, **produkcí cementu**, **pěstováním rýže** či **chovem dobytka**. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, v jakých státech a jaké lidské činnosti způsobují nejvíce emisí:
   commented-content:
   - slug: "emise-svet"
-    comment_number: 1
+    comment-key: 1
     comment: |
       Polovina světových emisí pochází z Asie. Na tomto kontinentu ale žije asi 60 % světové populace.
   - slug: "emise-svet-na-osobu"
-    comment_number: 2
+    comment-key: 2
     comment: |
-      **Česká republika je v přepočtu na obyvatele významným producentem skleníkových plynů**, v roce 2015 byl:
-      * **světový průměr 6,5 tun** CO<sub>2</sub>eq na osobu za rok,
-      * **český průměr 12,1 tun** CO<sub>2</sub>eq na osobu za rok.
+      **Česká republika je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**. Máme asi dvakrát vyšší emise, než je světový průměr.
   - slug: "emise-cr-detail"
-    comment_number: 3
+    comment-key: 3
     comment: |
-      Hlavní příčinou vysokých emisí v ČR je velké množství elektřiny, které vyrábíme v **uhelných elektrárnách a teplárnách**. Další velké zdroje emisív Česku jsou **silniční doprava**, **výroba oceli a cementu** a **lokální plynové a uhelné kotle** v domácnostech a institucích.
+      Hlavním zdrojem vysokých emisí v ČR jsou **uhelné elektrárny a teplárny**. Dále pak **silniční doprava**, **průmysl** a **lokální plynové a uhelné kotle**.
   qa:
   # TODO: Dopsat odpověď a zveřejnit.
   # - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
