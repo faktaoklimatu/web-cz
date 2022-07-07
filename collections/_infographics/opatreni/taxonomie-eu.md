@@ -12,7 +12,7 @@ caption:    "K dosažení klimatických cílů bude potřeba velký objem jak ve
 
 ## Kontext a základní fakta o taxonomii
 
-Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout [klimatické neutrality](https://faktaoklimatu.cz/explainery/uhlikova-neutralita?q=uhl%C3%ADkov%C3%A1)**. Do roku 2030 si EU také stanovila závazek snížit emise skleníkových plynů o 55 % (ve srovnání s rokem 1990).[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude ovšem potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. **Mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoci právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
+Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout [klimatické neutrality](/explainery/uhlikova-neutralita?q=uhl%C3%ADkov%C3%A1)**. Do roku 2030 si EU také stanovila závazek snížit emise skleníkových plynů o 55 % (ve srovnání s rokem 1990).[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude ovšem potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. **Mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoci právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
 
 {% include preview-box.html
     title="Jakými finančními prostředky EU podporuje klimatická opatření?"
@@ -57,7 +57,7 @@ Podle [Climate Bonds Initiative](https://www.climatebonds.net/resources/reports/
 
 ## Zdroje a poznámky
 
-[^fit-for-55]: Konkrétní legislativní návrhy, které mají podpořit snížení emisí skleníkových plynů o 55 % do roku 2030, představujeme v infografice [Co je Fit for 55](https://faktaoklimatu.cz/infografiky/fit-for-55).
+[^fit-for-55]: Konkrétní legislativní návrhy, které mají podpořit snížení emisí skleníkových plynů o 55 % do roku 2030, představujeme v infografice [Co je Fit for 55](/infografiky/fit-for-55).
 [^dnsh]: V angličtině se pro toto pravidlo používá spojení *do no significant harm (DNSH)*.
 [^safeguards]: Dle čl. 18 [nařízení (EU) 2020/852](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX:32020R0852) jde obecně o "postupy uplatňované podnikem, který provádí hospodářskou činnost, jež zajišťují soulad s pokyny OECD pro nadnárodní společnosti a obecnými zásadami OSN v oblasti podnikání a lidských práv, včetně zásad a práv stanovených v osmi základních úmluvách uvedených v Deklaraci Mezinárodní organizace práce o zásadách a základních právech při práci a v Mezinárodní listině lidských práv."
 [^das]: Akty v přenesené pravomoci jsou právně závazné nástroje, které umožňují měnit nebo doplnit méně podstatné části legislativních aktů v EU. Navrhuje a přijímá je Evropská komise. Rada EU a Evropský parlament mohou proti jejich přijetí vyslovit námitky, nicméně na rozdíl od nařízení či směrnic není formální přijetí aktů nutné. Více o rozdílech mezi jednotlivými typy právních aktů lze najít na [stránkách Evropské komise](https://ec.europa.eu/info/law/law-making-process/types-eu-law_cs).

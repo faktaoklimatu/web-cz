@@ -149,7 +149,7 @@ Oproti jiným částem světa nebudou mít v nejbližších desetiletích na bio
 
 [^2]: [Katalog biotopů České republiky](https://www.ochranaprirody.cz/res/archive/299/036740.pdf?seek=1465205752).
 
-[^3]: Zatímco v druhově pestrém lese by byla kůrovcem usmrcena pouze část stromů a les jako celek by žil dál, po vykácené smrkové monokultuře zbyde jenom holina, kde jsou podmínky pro život mnoha druhů rostlin, živočichů a hub jen málo příznivé. Viz text [*Proč umírají české jehličnaté lesy?*](https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu).
+[^3]: Zatímco v druhově pestrém lese by byla kůrovcem usmrcena pouze část stromů a les jako celek by žil dál, po vykácené smrkové monokultuře zbyde jenom holina, kde jsou podmínky pro život mnoha druhů rostlin, živočichů a hub jen málo příznivé. Viz text [*Proč umírají české jehličnaté lesy?*](/explainery/umirani-ceskych-lesu).
 
 [^4]: [Summary for policymakers of the IPBES global assessment report on biodiversity and ecosystem services](https://ipbes.net/sites/default/files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf) (2019), s. 24.
 
