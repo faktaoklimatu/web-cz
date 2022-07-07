@@ -6,7 +6,7 @@ Projekt _Fakta o klimatu_ usiluje o zkvalitnění společenské diskuse o klimat
 
 Debata o klimatické změně je komplikovaná a na všech stranách plná zbytečných emocí, polopravd a mýtů. Chceme poutat pozornost na důležitá témata a stavět most mezi vědci a lidmi, kterých se změny klimatu týkají. A to jsou všichni lidé.
 
-Jsme [tým profesionálů zabývajících se různými obory](CONTRIBUTORS.md) – přírodovědou, informatikou, pedagogikou nebo komunikací. Pracujeme na dobrovolnické bázi a finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s odborníky, politiky, energetickými firmami i aktivistickými hnutími. _Fakta o klimatu_ jsou však nezávislý projekt, který [může podpořit každý](https://www.darujme.cz/projekt/1203742).
+Jsme [tým profesionálů zabývajících se různými obory](CONTRIBUTORS.md) – přírodovědou, IT, společenskými vědami, pedagogikou nebo komunikací. Finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s odborníky, politiky, energetickými firmami i aktivistickými hnutími. _Fakta o klimatu_ jsou však nezávislý projekt, který [může podpořit každý](https://www.darujme.cz/projekt/1203742).
 
 ## Konvence v repozitáři
 

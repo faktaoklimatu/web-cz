@@ -1,6 +1,6 @@
 - title: "Naši členové"
   lead: |
-    Jsme tým profesionálů zabývajících se různými obory – přírodovědou, IT, pedagogikou nebo komunikací. Chceme kultivovat společenskou diskusi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změny klimatu týkají. Tedy všem.
+    Jsme tým expertů a expertek zabývajících se různými obory – přírodovědou, IT, společenskými vědami, pedagogikou nebo komunikací. Naším cílem je kultivovat společenskou diskuzi o klimatické změně. Chceme zprostředkovat současné vědecké poznání všem, kterých se změny klimatu týkají. Tedy všem.
   class: "core-team col-12 col-sm-12 col-md-6 col-lg-4 px-2"
   members:
   - name: "Ondráš Přibyla"
@@ -29,7 +29,7 @@
 
   - name: "Kateřina Kolouchová"
     position: "Analytička"
-    summary: "Tematicky se zaměřuji na klimatická opatření a politiku. Kromě toho se věnuji analýze a vizualizaci dat."
+    summary: "Věnuje se především klimatické politice a legislativě. Také analyzuje a vizualizuje data, čemuž se pár let věnovala v komerční sféře. Je absolventkou oboru Hospodářská politika a mezinárodní vztahy."
     img: "katka-kolouchova.jpg"
     email: "katerina.kolouchova@faktaoklimatu.cz"
     twitter: "https://twitter.com/katkolouchova"
@@ -51,16 +51,16 @@
     twitter: "https://twitter.com/holik_petr"
 
   - name: "Hanka Vrtalová"
-    position: "TODO"
-    summary: "S Petrem tvořím podcast [2050](https://2050podcast.cz/), bla bla bla."
+    position: "Podcasterka a analytička"
+    summary: "S Petrem tvoří podcast [2050](https://2050podcast.cz/). Kromě toho se zabývá oblastí dekarbonizace dopravy. Vystudovala fyziku, ale dlouhá léta se věnuje především komunikaci."
     img: "hanka-vrtalova.jpg"
     email: "hana.vrtalova@faktaoklimatu.cz "
     linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
     twitter: "https://twitter.com/HVrtalova"
 
   - name: "Milan Vítek"
-    position: "TODO"
-    summary: "Socky."
+    position: "Správce sociálních sítí"
+    summary: "Stará se o sociální sítě Fakt o klimatu: [Twitter](https://twitter.com/faktaoklimatu), [LinkedIn](https://www.linkedin.com/company/68480136) a [Facebook](https://www.facebook.com/faktaoklimatu). Kromě toho se zabývá tématy vlivu změny klimatu na extrémy počasí a uhlíkového cyklu."
     img: "milan-vitek.jpg"
     email: "milan.vitek@faktaoklimatu.cz "
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
@@ -71,6 +71,7 @@
     summary: "Věnuji se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn."
     img: "tomas-protivinsky.jpg"
     email: "tomas.protivinsky@faktaoklimatu.cz"
+    twitter: "https://twitter.com/protivinsky"
 
   - name: "Martin Ukrop"
     position: "Programátor"
@@ -80,37 +81,37 @@
     linkedin: "https://www.linkedin.com/in/mukrop/"
 
   - name: "Matěj Grabovský"
-    position: "Analytik, programátor"
+    position: "Analytik a programátor"
     summary: "Baví mě přehrabovat se v datech a zpracovávat analýzy. Mimo to programuji web a zbavuji naše texty překlepů."
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
 
 - title: "Faktům o klimatu dále pomáhají"
   lead: |
-    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu. Je jich mnohem <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'>víc</a>.
+    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu. Je jich však mnohem <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'>více</a>.
   class: "further-team col-12 col-sm-12 col-md-4 col-lg-3 px-0"
   members:
   - name: "Jan Krajhanzl"
-    summary: "Konzultuju, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumám se svým týmem na univerzitě."
+    summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
 
   - name: "Oldřich Sklenář"
-    summary: "V projektu konzultuju ohledně energetiky. Na řadě infografik jsem přímo spolupracoval."
+    summary: "V projektu konzultuje ohledně energetiky. Na řadě infografik přímo spolupracoval."
 
   - name: "Jakub Zamouřil"
-    summary: "Přispívám analytickou prací stejně jako psaním textů: v tématech fyziky změny klimatu a energetiky. Jsem také redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
+    summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
     linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
 
   - name: "Eliška Vlčková"
-    summary: "Zpracovávám prostorová data a tvořím kartografické výstupy. Přispívám k tématům krajiny, biodiverzity a ochrany životního prostředí."
+    summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
     linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
 
   - name: "Marek Krčál"
-    summary: "Pomáhám s tématem energetiky, zejména otázkami její dlouhodobé transformace."
+    summary: "Přispívá k tématu energetiky, zejména k otázkám její dlouhodobé transformace."
 
   - name: "Martin Křivánek"
-    summary: "Přemýšlím, jak může mít práce Fakt o klimatu co největší dopad – a jak co nejvíce zhodnotit existující infografiky a materiály."
+    summary: "Přemýšlí, jak může mít práce Fakt o klimatu co největší dopad a jak co nejvíce zhodnotit existující infografiky a materiály."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
     
   - name: "Martin crysman Zahradník"
-    summary: "V projektu od jeho počátku pomáhám s tím, co je potřeba (korektury, opravy, drobné programování)."
+    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
 
