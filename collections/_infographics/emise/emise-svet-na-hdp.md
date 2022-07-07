@@ -19,7 +19,7 @@ dataset:    "emise-svet"
 * **Světový průměr emisní intenzity ekonomik je 439 gramů CO<sub>2</sub>eq na dolar vyprodukovaného HDP**, v grafu je tato hodnota vyznačena šedým podkresem. Velikost světové ekonomiky je přibližně 107 biliónů dolarů, součin tak udává celosvětové emise v roce 2015 přibližně 47 miliard tun CO<sub>2</sub>eq.
 * Velké geografické celky (kontinenty a Rusko) jsou seřazeny zleva doprava od nejvyšších celkových emisí po nejnižší. Srovnání emisí skleníkových plynů pro jednotlivé kontinenty přehledně znázorňuje infografika [Světové emise skleníkových plynů](/infografiky/emise-svet).
 * Obdobné relativní vyjádření emisí skleníkových plynů, avšak přepočtené na obyvatele namísto na HDP, zobrazuje infografika [Emise světových regionů přepočtené na osobu](/infografiky/emise-svet-na-osobu).
-* Vybrané státy jsou v infografice zobrazeny samostatně (typicky státy s větší populací nebo s vyššími emisemi skleníkových plynů), zbývající státy daných regionů sdruženy pod označením &quot;ostatní&quot;.
+* Vybrané státy jsou v infografice zobrazeny samostatně (typicky státy s větší populací nebo s vyššími emisemi skleníkových plynů), zbývající státy daných regionů sdruženy pod označením "ostatní".
 
 ## Komentáře ke grafu
 
