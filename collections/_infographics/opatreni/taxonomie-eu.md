@@ -12,7 +12,7 @@ caption:    "K dosažení klimatických cílů bude potřeba velký objem jak ve
 
 ## Kontext a základní fakta o taxonomii
 
-Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout [klimatické neutrality](/explainery/uhlikova-neutralita?q=uhl%C3%ADkov%C3%A1)**. Do roku 2030 si EU také stanovila závazek snížit emise skleníkových plynů o 55 % (ve srovnání s rokem 1990).[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude ovšem potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. **Mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoci právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
+Evropská unie se v rámci Zelené dohody pro Evropu zavázala **do roku 2050 dosáhnout [klimatické neutrality](/explainery/uhlikova-neutralita)**. Do roku 2030 si EU také stanovila závazek snížit emise skleníkových plynů o 55 % (ve srovnání s rokem 1990).[^fit-for-55] Pro transformaci k bezemisnímu hospodářství bude ovšem potřeba velký objem finančních prostředků, a to jak veřejných, tak soukromých. **Mobilizaci soukromého kapitálu směrem k udržitelným a nízkouhlíkovým projektům** má napomoci právě [taxonomie udržitelných aktivit](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/sustainable-finance/eu-taxonomy-sustainable-activities_en) z roku 2020.
 
 {% include preview-box.html
     title="Jakými finančními prostředky EU podporuje klimatická opatření?"
