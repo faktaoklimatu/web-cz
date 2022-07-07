@@ -55,7 +55,7 @@ subtopics:
   - slug: "souvislost-koncentrace-oteplovani"
     comment-key: 2
     comment: |
-      **Čím více skleníkových plynů** lidstvo vypustí do atmosféry, **tím víc se planeta oteplí**.
+      **Čím více skleníkových plynů** lidstvo vypustí do atmosféry, **tím více se planeta oteplí**.
   - slug: "mapa-zmeny-teploty"
     comment-key: 3
     comment: |
