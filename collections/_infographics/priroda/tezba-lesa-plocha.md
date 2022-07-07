@@ -19,7 +19,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 ## Co je v grafice zobrazeno?
 
 - Plocha jehličnatého lesa vytěženého v jednotlivých krajích v letech 2016–2020, která pro celé území ČR odpovídá obdélníku o rozloze cca 56 x 26 km[^1].
-- Největší část této plochy připadá na Kraj Vysočina, dále následují Jihočeský, Olomoucký a Moravskoslezský kraj. Lesy jsou však v různých krajích různě velké a mají jiné poměrné zastoupení jehličnatých a listnatých dřevin, proto větší vytěžená plocha automaticky neznamená horší situaci v daném kraji. Přesto například Kraj Vysočina přišel v tomto období o celou pětinu svých jehličnatých lesů. Další informace o těžbě ukazuje infografika [Kolik jehličnatého lesa bylo vytěženo v krajích](https://faktaoklimatu.cz/infografiky/tezba-lesa-vyvoj), z níž je zároveň dobře patrný současný trend, kdy se kůrovcová kalamita pozvolna přesouvá ze severovýchodní části Česka na západ a jih.
+- Největší část této plochy připadá na Kraj Vysočina, dále následují Jihočeský, Olomoucký a Moravskoslezský kraj. Lesy jsou však v různých krajích různě velké a mají jiné poměrné zastoupení jehličnatých a listnatých dřevin, proto větší vytěžená plocha automaticky neznamená horší situaci v daném kraji. Přesto například Kraj Vysočina přišel v tomto období o celou pětinu svých jehličnatých lesů. Další informace o těžbě ukazuje infografika [Kolik jehličnatého lesa bylo vytěženo v krajích](/infografiky/tezba-lesa-vyvoj), z níž je zároveň dobře patrný současný trend, kdy se kůrovcová kalamita pozvolna přesouvá ze severovýchodní části Česka na západ a jih.
 
 ## Vysvětlení pojmů a metodické poznámky
 
@@ -41,7 +41,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 
 [^3]: [Zpráva o stavu lesa a lesního hospodářství České republiky v roce 2020.](https://eagri.cz/public/web/file/688968/Zprava_o_stavu_lesa_2020_web.pdf) Ministerstvo zemědělství ČR, 2021.
 
-[^5]: Viz text [Proč umírají české jehličnaté lesy?](https://faktaoklimatu.cz/explainery/umirani-ceskych-lesu)
+[^5]: Viz text [Proč umírají české jehličnaté lesy?](/explainery/umirani-ceskych-lesu)
 
 [^6]: Bureš, P.: [Podpora hospodaření v lesích na Vysočině](https://www.lesprace.cz/casopis-lesnicka-prace-archiv/rocnik-88-2009/lesnicka-prace-c-4-09/podpora-hospodareni-v-lesich-na-vysocine)
 
