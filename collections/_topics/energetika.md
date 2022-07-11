@@ -73,6 +73,7 @@ subtopics:
 
 - id:          "mix"
   title:       "Současný stav: Z čeho vyrábíme elektřinu?"
+  title-short: "Z čeho vyrábíme elektřinu?"
   lead: |
     Český mix zdrojů elektřiny má v současnosti dva pilíře: **hnědé uhlí** a **jádro**. Z obnovitelných zdrojů dnes pochází asi desetina elektřiny. Bioplyn a biomasa z toho tvoří asi polovinu, čtvrtinu slunce, o zbytek se starají vodní a větrné elektrárny. **Evropské země mají velmi rozdílné energetické mixy**, v součtu mají zhruba třetinové podíly tyto zdroje: fosilní, jaderné a obnovitelné. **V rozvojovém světě výroba elektřiny prudce stoupá**, převážně díky rozvoji uhelné energetiky. I tam ale v posledních letech znatelně roste role obnovitelných zdrojů.
   content:
@@ -85,6 +86,7 @@ subtopics:
 
 - id:          "emise-v-energetice"
   title:       "Současný stav: Emise z energetiky"
+  title-short: "Emise z energetiky"
   lead: |
     Elektroenergetika a teplárenství stojí přibližně za **40 % emisí skleníkových plynů v ČR**, největší část z toho tvoří uhelné zdroje.
     V širším slova smyslu k energetice patří také doprava (16 % emisí), lokální vytápění a ohřev teplé vody v domácnostech, firmách a institucích (10 % emisí) a spalování v průmyslu (8 % emisí). Dohromady tedy zpracování a spalování fosilních paliv v Česku tvoří skoro tři čtvrtě emisí skleníkových plynů. Podobný podíl mají fosilní paliva i v emisích celé EU.
@@ -121,6 +123,7 @@ subtopics:
 
 - id:          "technologie"
   title:       "Technologie: Potenciál a cena"
+  title-short: "Technologie"
   lead: |
     Při zvažování budoucího vývoje elektroenergetiky jsou klíčové tyto aspekty jednotlivých technologií: Jaká je **cena**, tedy investiční a provozní náklady, příp. sdružené náklady na výrobu? Jaký je **potenciál rozvoje**, tedy kolik spotřeby dokáže daná technologie pokrýt? Jaká je **flexibilita výroby**, tedy dokážeme výkon podle potřeby regulovat? Důležitou roli hraje i společenská přijatelnost, geopolitika a energetická bezpečnost.
   qa:
@@ -136,6 +139,7 @@ subtopics:
 
 - id:          "scenare-2030-cr"
   title:       "Scénáře vývoje: Česká energetika v roce 2030"
+  title-short: "Energetika 2030"
   lead: |
     EU se zavázala **snížit emise skleníkových plynů do roku 2030 o 55 %** (oproti roku 1990). Transformace energetiky je k dosažení tohoto cíle klíčová. **Jaké jsou scénáře pro transformaci tohoto sektoru v Česku?**
   qa:
@@ -154,6 +158,7 @@ subtopics:
 
 - id:          "scenare-2050"
   title:       "Scénáře vývoje: Energetika v roce 2050"
+  title-short: "Energetika 2050"
   lead: |
     V dlouhodobém horizontu potřebujeme **elektřinu vyrábět klimaticky neutrálně**. Scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, a tak budeme potřebovat **řádově dvojnásobek elektřiny oproti dnešku**.
   content:
