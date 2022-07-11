@@ -44,7 +44,7 @@ subtopics:
   - slug: elektrina-na-osobu-eu
     comment-key: "EU"
     comment: |
-      V mnoha evropských zemích **obnovitelné zdroje postupně nahrazují stávající fosilní zdroje**.
+      V mnoha zemích EU **obnovitelné zdroje postupně nahrazují stávající fosilní zdroje**.
   - slug: elektrina-svet
     comment-key: "<i class='fa-solid fa-earth-europe'></i>"
     comment: |
