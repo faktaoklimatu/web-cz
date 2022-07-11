@@ -36,20 +36,20 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Skleníkové plyny se dostávají do atmosféry **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů**, **produkcí cementu**, **pěstováním rýže** či **chovem dobytka**. Pro rychlá a účinná opatření na snižování emisí je nutné nejprve porozumět, v jakých státech a jaké lidské činnosti způsobují nejvíce emisí:
+    Skleníkové plyny se dostávají do atmosféry **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů**, **produkcí cementu**, **pěstováním rýže** či **chovem dobytka**. Pro volbu rychlých a účinných opatření na snižování emisí je nutné nejprve porozumět, v jakých státech a jaké lidské činnosti způsobují nejvíce emisí:
   commented-content:
   - slug: "emise-svet"
     comment-key: 1
     comment: |
-      Polovina světových emisí pochází z Asie. Na tomto kontinentu ale žije asi 60 % světové populace.
+      Polovina světových emisí pochází z Asie. Na tomto kontinentu žije asi 60 % světové populace.
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **Česká republika je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**. Máme asi dvakrát vyšší emise, než je světový průměr.
+      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**. Emise na osobu máme na úrovni 200 % světového průměru a 140 % průměru EU.
   - slug: "emise-cr-detail"
     comment-key: 3
     comment: |
-      Hlavním zdrojem vysokých emisí v ČR jsou **uhelné elektrárny a teplárny**. Dále pak **silniční doprava**, **průmysl** a **lokální plynové a uhelné kotle**.
+      Hlavním zdrojem vysokých emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
   qa:
   # TODO: Dopsat odpověď a zveřejnit.
   # - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
