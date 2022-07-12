@@ -80,7 +80,20 @@ V USA je možné vypozorovat ještě jeden trend: oblasti s více tornády se po
 
 *Autor: [Miroslav Trnka](#miroslav-trnka)*
 
-*Text k tomuto extrému připravujeme.*
+Požáry vegetace, a zvláště lesní požáry, nedosahují v našich podmínkách rozsahu ani intenzity událostí, které se odehrávají na západě USA, v Austrálii, v Kanadě či na Sibiři. Přesto představují riziko, které je v případě výskytu sucha nebo vlny veder (a zvláště pak jejich kombinace) výrazně zesíleno. Míru tohoto rizika vyjadřuje tzv. index požárně rizikového počasí (Fire weather index), který v sobě kombinuje klíčové meteorologické předpoklady umožňující vznik a šíření přírodního požáru: větrné počasí, nízkou vlhkost půdy i vzduchu a především vysokou teplotu. Ačkoliv se požáry v krajině ČR vyskytují běžně, jimi zasažená plocha doposud nebyla nijak zásadní. Nicméně **s probíhající změnou klimatu se téměř jistě situace výrazně mění**.
+
+Tento fakt dokládá mj. narůstající počet zásahů Hasičského záchranného sboru proti tomuto typu požárů od roku 1971. Naše nedávná studie[^mozny-trnka-brazdil] ukázala, že četnost požárů vegetace se nejvíce zvýšila v nejteplejších a nejsušších oblastech venkova České republiky. Nárůst mezi lety 1991 a 2015 byl ve srovnání s obdobím 1971–1990 téměř o 70 %. Současně byla ve všech krajích jasně prokázána statisticky významná souvislost mezi povětrnostními podmínkami a výskytem požárů porostů. **Většina českého území** pak **v posledních 60 letech vykazuje rostoucí počet dnů s počasím příznivým pro vznik a šíření požárů vegetace, přičemž po roce 2000 došlo u tohoto trendu k výraznému zrychlení**.[^trnka-et-al] Počty požárů se v jednotlivých letech značně liší, což je v první řadě dáno právě rozdílem v počtu dnů s požárně příznivým počasím. **Projekce klimatického vývoje jasně ukazují další nárůst v počtu rizikových dní a výrazné zvětšení plochy, která je požáry ohrožena**,[^trnka-et-al] a to zvláště v okolí významných aglomerací (např. Praha a Brno), ale také v oblastech důležitých z hlediska ochrany přírody (viz obrázek níže).
+
+**Zvláště problematické jsou pak změny v sezónnosti výskytu požárů: více než v létě jich teď bývá na jaře**. Například jaro roku 2022 převýšilo v počtech požárů vegetace dosavadní statistiky jarních požárů a situace byla z hlediska počtu výjezdů horší, než bývá v období žní. Příčinou byl suchý podzim roku 2021, teplá zima s minimem sněhu v nížinách a středních polohách a velmi suché jaro (zejm. březen). **Tento scénář bude v příštích dekádách v souvislosti se změnou klimatu stále častější**, a i proto je třeba riziko výskytu požárů brát vážně.
+
+Počasí vhodné pro vznik požárů nicméně samo o sobě požár nezpůsobí, a protože v naprosté většině případů (více než 95 %) stojí za vznikem požáru nedbalost, nebo dokonce úmysl člověka, lze riziko významně snížit přijetím vhodných opatření. Mezi ně patří i povědomí o riziku a panujících požárních podmínkách – proto byl vytvořen **nástroj s předpovědí požárního počasí na území ČR na dalších 10 dní**. Lze jej najít na [https://www.firerisk.cz/](https://www.firerisk.cz/), kde je k dispozici i systém doporučení, jak míru ohrožení požáry snížit v zemědělských, a zejména pak lesních porostech a také v okolí významných zdrojů pitné vody. Od letošního roku je předpovědní systém rovněž propojen se sítí více než 100 pozemních stanic v rizikových lesních porostech po celé ČR, kde je riziko vzniku požáru vyhodnocováno a přenášeno na webový portál 2x denně.
+
+{% include figure.html
+    name="pozary.png"
+    alt="Mapy Česka ukazující nárůst rizika výskytu přírodních požárů mezi lety 2018 až 2050."
+    caption="Mapa stanovištních rizik přírodních požárů v ČR: nedávný stav (data z roku 2018), projekce vývoje k roku 2050 a změna rizika."
+    source-text="<a href='https://www.firerisk.cz/'>FireRisk</a>"
+%}
 
 ## Povodně
 
@@ -134,10 +147,14 @@ libor.elleder@chmi.cz<br/>
 
 [^vlny-veder-twitter]: [Příspěvěk](https://twitter.com/pavelzahrad/status/1531606002688303104?s=20&amp;t=jhse0ugWMTfUgCJ4kI_b0g) na Twitteru Pavla Zahradníčka
 
-[^vlny-veder-urban]: Urban, A., Fonseca-Rodríguez, O., Di Napoli, C. & Plavcová, E. Temporal changes of heat-attributable mortality in Prague, Czech Republic, over 1982–2019. Urban Climate 44 (2022),[https://doi.org/10.1016/j.uclim.2022.101197](https://doi.org/10.1016/j.uclim.2022.101197)
+[^vlny-veder-urban]: Urban, A., Fonseca-Rodríguez, O., Di Napoli, C. & Plavcová, E. Temporal changes of heat-attributable mortality in Prague, Czech Republic, over 1982–2019. Urban Climate 44 (2022). [https://doi.org/10.1016/j.uclim.2022.101197](https://doi.org/10.1016/j.uclim.2022.101197)
 
-[^vlny-veder-lhotka]: Lhotka, O., Kyselý, J. & Farda, A. Climate change scenarios of heat waves in Central Europe and their uncertainties. Theor Appl Climatol 131, 1043–1054 (2018). [https://doi.org/10.1007/s00704-016-2031-3](https://doi.org/10.1007/s00704-016-2031-3)
+[^vlny-veder-lhotka]: Lhotka, O., Kyselý, J. & Farda, A. Climate change scenarios of heat waves in Central Europe and their uncertainties. Theoretical and Applied Climatology 131, 1043–1054 (2018). [https://doi.org/10.1007/s00704-016-2031-3](https://doi.org/10.1007/s00704-016-2031-3)
 
 [^vlny-veder-irozhlas]: Štěpán Sedláček: [Výzkum: Změna klimatu může za přibližně pětinu každoročních úmrtí souvisejících s horkem v Česku](https://www.irozhlas.cz/veda-technologie/veda/klima-horko-studie-cesko-umrti_2106060736_ada)
 
 [^vlny-veder-praha]: Akademie věd ČR: [Horko v Praze: zvýšená úmrtnost za posledních 10 let](https://www.avcr.cz/cs/pro-media/tiskove-zpravy/Horko-v-Praze-zvysena-umrtnost-za-poslednich-10-let/)
+
+[^mozny-trnka-brazdil]: Možný, M., Trnka, M. & Brázdil, R. Climate change driven changes of vegetation fires in the Czech Republic. Theoretical and Applied Climatology 143, 691–699 (2021). [https://doi.org/10.1007/s00704-020-03443-6](https://doi.org/10.1007/s00704-020-03443-6)
+
+[^trnka-et-al]: Trnka, M., Možný, M., Jurečka, F. et al. Observed and estimated consequences of climate change for the fire weather regime in the moist-temperate climate of the Czech Republic. Agricultural and Forest Meteorology 310 (2021). [https://doi.org/10.1016/j.agrformet.2021.108583](https://doi.org/10.1016/j.agrformet.2021.108583)
