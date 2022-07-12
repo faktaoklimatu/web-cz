@@ -45,7 +45,7 @@ subtopics:
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**. Emise na osobu máme na úrovni 200 % světového průměru a 140 % průměru EU.
+      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**: 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2x víc než světový průměr a 1,4x víc než průměr EU.
   - slug: "emise-cr-detail"
     comment-key: 3
     comment: |
