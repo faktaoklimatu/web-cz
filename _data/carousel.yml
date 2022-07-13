@@ -1,18 +1,12 @@
 - title: "Podcast 2050"
   link: "https://2050podcast.cz/"
   img: "podcast.png"
-  summary: "Ve spolupráci s projektem Fakta o klimatu vychází nový klimatický podcast. První série vychází 28. 7. a najdete ji na webu, Sporify, Google podcasts i Apple podcasts."
+  summary: "Více než rok tvoříme klimatický podcast, jehož hlavní linkou jsou cesty transformace k nízkouhlíkové společnosti. Najdete jej na webu i na vaší oblíbené podcastové platformě."
 
-- title: "Výroční zpráva 2020"
-  link: "/assets-local/files/2020-vyrocni-zprava.pdf"
-  newtab: true
-  img: "2020-vyrocni-zprava.png"
-  summary: "Bilancujeme, co všechno se nám podařilo dosáhnout. Podívejte se na přehled našeho fungování a výstupů za rok 2020."
-
-- title: "Fakta o klimatu v Senátu"
-  link: "https://www.senat.cz/informace/galerie/videogalerie/video.php?id=721"
-  img: "senat.jpg"
-  summary: "Oldřich Sklenář prezentoval naše data u expertního kulatého stolu v Senátu Parlamentu ČR, aby podpořil kvalitní debatu o transformaci energetiky."
+- title: "Fakta o klimatu v Událostech, komentářích"
+  link: "https://www.ceskatelevize.cz/porady/1096898594-udalosti-komentare/222411000370518/"
+  img: "udalosti-komentare.png"
+  summary: "Ondráš Přibyla byl hostem v Událostech, komentářích na ČT24, kde mluvil o tom, co se aktuálně v oblasti klimatu děje."
 
 - title: "Naše práce v médiích"
   link: "https://www.irozhlas.cz/veda-technologie/priroda/klima-data-fakta-o-klimatu_2002060600_jab"
@@ -21,5 +15,11 @@
 
 - title: "Atlas klimatické změny"
   link: "/atlas"
-  img: "atlas.jpg"
-  summary: "Z našich dat a grafik jsme připravili první ucelenou publikaci, Atlas klimatické změny. Brzy začne její distribuce do škol a k zájemcům o téma klimatické změny."
+  img: "atlas.png"
+  summary: "Z našich dat a grafik jsme připravili ucelenou publikaci, Atlas klimatické změny. Na podzim chystáme její dotisk a v budoucnu druhý díl, který se bude věnovat transformaci energetiky."
+
+- title: "Výroční zpráva 2020"
+  link: "/assets-local/files/2020-vyrocni-zprava.pdf"
+  newtab: true
+  img: "2020-vyrocni-zprava.png"
+  summary: "Bilancujeme, co všechno se nám podařilo dosáhnout. Podívejte se na přehled našeho fungování a výstupů za rok 2020."
