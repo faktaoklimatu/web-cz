@@ -133,7 +133,7 @@ subtopics:
   - 2019-science-vyjadreni-vedcu
   - 2019-klimaticke-podminky-cr-1
 
-- id:          "extrémy"
+- id:          "extremy"
   title:       "Extrémní jevy"
   lead: |
     Vlny veder na pevnině i tzv. "mořské vlny veder", přívalové deště, dlouhé periody sucha, hurikány (odborně "tropické cyklóny") nebo počasí s rizikem lesních požárů (kombinace sucha a větru) patří mezi **extrémní projevy počasí**, které **se s postupující klimatickou změnou vyskytují častěji než dříve a přicházejí s větší intenzitou**.

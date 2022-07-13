@@ -53,7 +53,8 @@ subtopics:
       Externality přesahující hranice státu pomáhají řešit finanční transfery. **Rozvinuté státy se zavázaly finančně pomáhat těm rozvojovým s transformací jejich hospodářství**.
 
 - id:          "pricina"
-  title:       "Ekonomická činnost jako příčina změny klimatu"
+  title:       "Příčina klimatické změny v ekonomická činnosti"
+  title-short: "Příčina klimatické změny"
   lead: |
     **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
   content:  # U nového obsahu zvaž přidání také do emise>intenzity.
@@ -64,27 +65,16 @@ subtopics:
 
 - id:          "ekonomicke-dopady"
   title:       "Ekonomické dopady"
+  title-short: "Ekonomické dopady"
   lead: |
     **Pokračující změna klimatu povede k obrovským ekonomickým škodám**, zvlášť pokud se nám nepodaří zastavit dostatečně rychle. Jaké dopady na ekonomiku lze očekávat a jak je vyčíslit?
   content:  # U nového obsahu zvaž přidání také do klimaticka-zmena>dopady.
   - 2006-sternova-zprava
   - 23-dopady-zmen-klimatu
 
-- id:          "opatreni"
-  title:       "Zpoplatnění emisí"
-  lead: |
-    Mitigace změny klimatu stojí na efektivních tržních a regulačních opatřeních, které **narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu** jednotlivých firem. Klíčovým pilířem těchto opatření je **zpoplatnění emisí skleníkových plynů**.
-  content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
-  - emisni-povolenky-ets
-  - zpoplatneni-emisi-svet
-  - 26-klimaticka-dividenda
-  - mitigacni-opatreni-mmf
-  - 2019-mitigacni-opatreni-mmf
-  - fit-for-55
-  - fit-for-55-opatreni
-
 - id:          "transformace"
   title:       "Hospodářská a společenská transformace"
+  title-short: "Transformace ekonomiky"
   lead: |
     Lidská společnost neusiluje pouze o snížení emisí skleníkových plynů – v takovém případě bychom mohli jednoduše zanechat veškerých aktivit. Lidé mají širokou škálu potřeb, **cílem je tedy nalezení cesty ke stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů**. Jak uskutečnit tuto hospodářskou a společenskou transformaci je svým způsobem složitější otázka než samotná fyzika klimatické změny.
   content:
@@ -96,10 +86,25 @@ subtopics:
   - 6-transformace-prumyslu
   - 28-trinecke-zelezarny
 
+- id:          "opatreni"
+  title:       "Opatření: zpoplatnění emisí a další"
+  title-short: "Opatření"
+  lead: |
+    Mitigace změny klimatu stojí na efektivních tržních a regulačních opatřeních, které **narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu** jednotlivých firem. Klíčovým pilířem těchto opatření je **zpoplatnění emisí skleníkových plynů**.
+  content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
+  - emisni-povolenky-ets
+  - zpoplatneni-emisi-svet
+  - 26-klimaticka-dividenda
+  - mitigacni-opatreni-mmf
+  - 2019-mitigacni-opatreni-mmf
+  - fit-for-55
+  - fit-for-55-opatreni
+
 - id:          "finance"
   title:       "Financování klimatických opatření"
+  title-short: "Financování opatření"
   lead: |
-    **Hospodářská transformace a adaptace na změny klimatu vyžaduje významné investice**. Jaké změny ve finančním sektoru a v mezinárodních finančních trasferech to vyžaduje?
+    **Hospodářská transformace a adaptace na změny klimatu vyžaduje významné investice**. Jaké změny ve finančním sektoru a v mezinárodních finančních transferech to vyžaduje?
   qa:
   -
     q: "Co označuje pojem klimatické finance?"

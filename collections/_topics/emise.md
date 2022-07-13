@@ -80,7 +80,8 @@ subtopics:
       Klíčové je především **snížit emise skleníkových plynů v energetice a v průmyslu**, tedy transformovat tyto sektory směrem k nízkoemisním alternativám. Účinným opatřením pro snižování emisí je **zpoplatnění emisí skleníkových plynů**, například formou emisních povolenek nebo uhlíkové daně. Na individuální rovině lze přispět především **úsporami v domácnostech** (týkajícíh se vytápění, ohřevu teplé vody nebo spotřeby elektřiny), **omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků**.
 
 - id:          "mnozstvi"
-  title:       "Množství vypouštěných skleníkových plynů"
+  title:       "Množství emisí skleníkových plynů"
+  title-short: "Množství emisí"
   lead: |
     **V roce 2018 celý svět vypustil do atmosféry 48,9 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>eq, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
 
@@ -97,6 +98,7 @@ subtopics:
 
 - id:          "cesko"
   title:       "Emise skleníkových plynů v Česku"
+  title-short: "Emise v ČR"
   lead: |
     V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq – je však užitečné vyjádřit množství skleníkových plynů i na jednoho obyvatele, v takovém přepočtu **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
   content:
@@ -106,7 +108,7 @@ subtopics:
   - nejvetsi-emitenti-cr
 
 - id:          "sektory"
-  title:       "Emise podle sektorů"
+  title:       "Emise dle sektorů"
   lead: |
     Jednotlivá hospodářská odvětví přispívají ke klimatické změně v různé míře. Například **v Česku je energetika** (včetně tepláren) **zodpovědná za téměř 40 % emisí skleníkových plynů**, oproti tomu průmysl přispívá 20 %, doprava 16 % a zemědělství přibližně 7 %. Několik desítek největších zdrojů (především elektráren a průmyslových závodů) je zodpovědných za 45 % českých emisí.
 
@@ -123,6 +125,7 @@ subtopics:
 
 - id:          "budouci-otepleni"
   title:       "Vztah mezi emisemi a budoucím oteplením"
+  title-short: "Emise a oteplování"
   lead: |
     **Globální oteplení je** přibližně **přímo úměrné celkovému množství emisí skleníkových plynů**, které vypouštíme do atmosféry. Pro zastavení klimatické změny **je** tedy **nutné přestat vypouštět skleníkové plyny** a dosáhnout takzvané klimatické neutrality. Roli však nehraje pouze to, kdy skutečně snížíme množství vypouštěných plynů na nulu, ale také trajektorie, podle které toto snížení bude probíhat. Je velký rozdíl, pokud budeme až do roku 2050 vypouštět tolik emisí jako dnes, a pak náhle snížíme emise na nulu, nebo pokud je budeme snižovat rovnoměrně po celou dobu až do roku 2050 – první scénář by vedl přibližně k dvojnásobnému oteplení oproti druhému.
 
@@ -146,6 +149,7 @@ subtopics:
 
 - id:          "mitigace"
   title:       "Opatření ke snižování emisí"
+  title-short: "Opatření"
   lead: |
     Podíl jednotlivých sektorů na emisích skleníkových plynů poskytuje užitečné vodítko pro zaměření mitigačních snah. Největších emisních úspor může Česko dosáhnout **proměnou** svého **energetického mixu**. Jednotlivci však také mohou přispět ke snížení emisí, například **snížením energetické náročnosti** svých domácností nebo **omezením automobilové dopravy**, případně také **nižší konzumací masa a mléčných výrobků**.
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a ekonomika>opatreni.
@@ -158,8 +162,9 @@ subtopics:
   - fit-for-55-opatreni
   - 2016-snizeni-emisi-cr
 
-- id:     "intenzity"
-  title:  "Emisní intenzity ekonomik"
+- id:          "intenzity"
+  title:       "Emise vs. HDP: emisní intenzity ekonomik"
+  title-short: "Emise vs. HDP"
   lead: |
     **Emisní intenzita ekonomiky označuje množství skleníkových plynů vyprodukovaných na jednotku HDP** a zpravidla se uvádí v gramech CO<sub>2</sub>eq na jeden dolar. Emisní intenzity tak vedle emisí na osobu slouží jako další relativní vyjádření a často poskytují detailnější vhled do emisí jednotlivých zemí.
 
