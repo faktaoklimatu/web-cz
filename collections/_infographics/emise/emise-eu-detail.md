@@ -3,7 +3,7 @@ layout:         infographic
 title:          "Emise skleníkových plynů v EU podle sektorů detailně"
 slug:           "emise-eu-detail"
 redirect_from:  "/emise-eu-detail"
-published:      2022-07-13
+published:      2022-07-14
 weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
@@ -16,9 +16,9 @@ data-orig:  [
 
 ## Jak číst tento graf?
 
-Všechny hodnoty v grafu jsou <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> skleníkových plynů CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential)
+Všechny hodnoty v grafu jsou <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> skleníkových plynů CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
 
-Roční objem emisí Evropské unie je 3&thinsp;734,54 mil. tun CO<sub>2</sub>eq (údaj z roku 2019). __V přepočtu na obyvatele to je 8,36 tun CO<sub>2</sub>eq/obyvatele.__
+Roční objem emisí Evropské unie je 3&thinsp;734,54 mil. tun CO<sub>2</sub>eq (údaj z roku 2019). __V přepočtu na obyvatele to je 8,36 tun CO<sub>2</sub>eq/obyvatele.__ Zobrazujeme emise EU-27, tedy zemí, které byly k roku 2021 členy EU (data tak nezahrnují Velkou Británii).
 
 ## Co znamenají jednotlivé sektory?
 
