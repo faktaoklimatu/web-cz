@@ -7,7 +7,7 @@ published:      2022-07-13
 weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
-caption:        "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v EU za rok 2019 v jednotlivých sektorech lidské činnosti. Roční objem emisí České republiky je 3&thinsp;734,54 mil. tun (údaj z roku 2019). V přepočtu na obyvatele to je 8,36 tun CO<sub>2</sub>eq/obyvatele."
+caption:        "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v EU za rok 2019 v jednotlivých sektorech lidské činnosti. Roční objem emisí Evropské unie je 3&thinsp;734,54 mil. tun (údaj z roku 2019). V přepočtu na obyvatele to je 8,36 tun CO<sub>2</sub>eq/obyvatele."
 data-our:       "https://docs.google.com/spreadsheets/d/1SUaWGbKA3TVcXd-ZXH0zNXVZGikcX8iTPJTzGihubHQ/edit?usp=sharing"
 data-orig:  [   
     ["Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE"]
