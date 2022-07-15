@@ -3,9 +3,8 @@ layout:        topic
 title:         "Emise skleníkových plynů"
 slug:          "emise"
 redirect_from: "/emise"
-published:     2022-07-01
 sitemap:       false
-map:           true
+published:     2022-07-01
 weight:        20
 
 dashboard:
@@ -165,4 +164,6 @@ subtopics:
   - emisni-intenzity
 ---
 
-**Klimatická změna je způsobena antropogenními, tedy lidmi zaviněnými, emisemi <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>.** Hlavním skleníkovým plynem je CO<sub>2</sub> (oxid uhličitý), který přispívá ke změně klimatu přibližně 70 % a je uvolňován především při spalování fosilních paliv: uhlí, ropy a zemního plynu. Dalšími skleníkovými plyny jsou CH<sub>4</sub> (metan), N<sub>2</sub>O (oxid dusný) a některé další, méně časté plyny. Rozsah klimatické změny a celkové oteplení závisí především na tom, kolik skleníkových plynů vypustíme v budoucnu.
+Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování asi ze 70 %. Oxid uhličitý uvolňujeme nejvíce spalováním fosilních paliv a dále kácením pralesů nebo výrobou oceli a cementu. Další významný skleníkový plyn **metan** (CH<sub>4</sub>) uniká hlavně při těžbě fosilních paliv a při chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – nejvíce z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
+
+K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality** – nepřidávat další skleníkové plyny do atmosféry.

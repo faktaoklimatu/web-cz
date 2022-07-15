@@ -14,7 +14,7 @@
 
 - id: antropogennisklenikoveplyny
   name-short: "Antropogenní skleníkové plyny"
-  description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise 7 skleníkových plynů [[ghgprotocol.org](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf)]: _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
+  description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise [7 skleníkových plynů](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf): _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
 - id: carbon-neutrality
   name-short: "Uhlíková neutralita"

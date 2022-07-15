@@ -3,9 +3,8 @@ layout:        topic
 title:         "Energetika"
 slug:          "energetika"
 redirect_from: "/energetika"
-published:     2022-04-05
 sitemap:       false
-map:           true
+published:     2022-04-05
 weight:        30
 
 dashboard:
@@ -35,7 +34,9 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Výroba elektřiny v Evropě prochází **rychlou transformací**. Přispěly k ní tři faktory: (1) za posledních 10 let prudce klesly [ceny obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice, a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech. Jaký je současný stav výroby elektřiny ve světě?
+    Výroba elektřiny v Evropě v současnosti prochází **rychlou transformací**. Vedou k ní tři tlaky: (1) za posledních 10 let prudce klesly [ceny obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice, a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech.
+
+    Jak daleko jsme dnes v této transformaci? Tedy jaký je současný stav výroby elektřiny ve světě?
   commented-content:
   - slug: elektrina-cr
     comment-key: "ČR"
@@ -48,7 +49,7 @@ subtopics:
   - slug: elektrina-svet
     comment-key: "<i class='fa-solid fa-earth-europe'></i>"
     comment: |
-      Celosvětově je dekarbonizace velká výzva, **už ale dávno začala**. Např. Indie chce do roku 2030 vyrábět 50 % elektřiny z obnovitelných zdrojů.
+      **Celosvětově je dekarbonizace velká výzva, už ale dávno začala**. Např. Indie chce do roku 2030 vyrábět 50 % elektřiny z obnovitelných zdrojů.
   qa:
   -
     q: "Jak může Česko snížit svoje emise v energetice?"
@@ -149,6 +150,6 @@ subtopics:
   - 2-transformace-energetiky
 ---
 
-_Energetika_ zahrnuje těžbu fosilních paliv, elektroenergetiku, plynárenství, teplárenství, pohonné hmoty, atd. V našich materiálech se věnujeme hlavně _elektřině_, protože v budoucí energetice bude zastávat klíčovou roli.
+**Energetika se zabývá získáváním, přeměnou a distribucí všech forem energie.** V první řadě jde o **těžbu** a distribuci uhlí, ropy, zemního plynu a dalších paliv. Na to navazuje jejich zpracování, tedy výroba a distribuce **elektřiny a tepla** stejně jako **pohonných hmot**. V poslední řadě pak **přímé spalování** fosilních paliv v průmyslu, v domácnostech a ve službách.
 
-Sektor **elektroenergetiky** je celosvětově největším zdrojem emisí skleníkových plynů (v roce 2017 tvořil cca 40 % emisí CO<sub>2</sub> a cca 25 % emisí všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary>). Svým dopadem přesahuje zemědělství stejně jako spalování fosilních paliv v dopravě, spalování fosilních paliv v průmyslu nebo produkci cementu. V rámci elektroenergetiky přes 70 % světových emisí pochází z uhlí, přes 20 % ze zemního plynu, asi 5 % tvoří deriváty ropy. V české elektroenergetice tvoří uhlí dokonce okolo 90 % emisí.
+Energetika je stěžejní oblast dekarbonizace: **těžba a spalování fosilních paliv stojí za ¾ celosvětových emisí** <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>. Nahrazení fosilních paliv stojí hlavně na bezemisní elektřině a na elektrifikaci dopravy, vytápění i průmyslu. **Nejvíce pozornosti zde proto věnujeme výrobě elektřiny.**
