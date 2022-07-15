@@ -5,7 +5,6 @@ slug:          "dohody-legislativa"
 redirect_from: "/dohody-legislativa"
 sitemap:       false
 published:     2022-04-12
-map:           true
 weight:        50
 
 dashboard:
@@ -27,15 +26,29 @@ dashboard:
 subtopics:
   # To nejdůležitější
 - lead: |
-    **K zabránění oteplení planety a přechod k bezemisní ekonomice je potřeba úsilí celého světa**. Mezinárodní jednání představují **platformu pro spolupráci**, sdílení perspektiv a know-how. Dohody společně s legislativou pak **utváří prostředí**, na základě kterého nejen státy, ale i podniky jednají.
+    **K zabránění oteplení planety a přechod k bezemisní ekonomice je potřeba úsilí celého světa**. Jak se toto úsilí na mezinárodní úrovni vyjednává a koordinuje?
+  commented-content:
+  - slug: "svetove-dohody"
+    comment-key: "1"
+    comment: |
+      **Mezinárodní klimatická jednání už běží více než 30 let.** S postupující změnou klimatu ovšem roste jejich urgence. Velkým průlomem byla **Pažížská dohoda** z roku 2015.
+  - slug: "emisni-zavazky"
+    comment-key: "2"
+    comment: |
+      Klíčovým důsledkem Pařížské dohody jsou závazky států dosáhnout **uhlíkové neutrality**.
+  - slug: "fit-for-55"
+    comment-key: "3"
+    comment: |
+      **Závazky je ovšem potřeba proměnit v realitu.** V EU k tomu má pomoct balíček opatření Fit For 55.
   qa:
+  - q: "Jaké klimatické dohody existují?"
+    a: |
+      Na evropské úrovni jde zejména o **Zelenou dohodu pro Evropu** (European Green Deal) a s ní související Evropský klimatický zákon (Evropský právní rámec pro klima) a balíček opatření Fit for 55. Na světové úrovni je to Rámcová úmluva o změně klimatu (UNFCCC), jejíž smluvní strany se každoročně schází v rámci Konference smluvních stran (COP). Významným předělem bylo dosažení **Pařížské dohody** v roce 2015, ve které se státy zavázaly **udržet oteplení planety pod 2 °C a zároveň se snažit nepřekročit hranici 1,5 °C** oproti předindustriálnímu období.
+
   - q: "Jak je naplňování klimatických dohod vymahatelné?"
     a: |
       Záleží na tom, zda je obsah dohody ukotven i legislativně. Např. **klimatické cíle Evropské unie obsažené v Zelené dohodě pro Evropu jsou právně ukotveny** v Evropském právním rámci pro klima, a jsou tedy právně vymahatelné. Stejně tak je právně závazná Pařížská dohoda. V Nizozemsku nebo Francii již uspěly **klimatické žaloby** žalující tamní vlády za nedostatečnou aktivitu v naplňování klimatických závazků. V roce 2021 byla spolkem občanů podána klimatická žaloba **i na českou vládu**.
 
-  - q: "Jaké klimatické dohody existují?"
-    a: |
-      Na evropské úrovni jde zejména o **Zelenou dohodu pro Evropu** (European Green Deal) a s ní související Evropský klimatický zákon (Evropský právní rámec pro klima) a balíček opatření Fit for 55. Na světové úrovni je to Rámcová úmluva o změně klimatu (UNFCCC), jejíž smluvní strany se každoročně schází v rámci Konference smluvních stran (COP). Významným předělem bylo dosažení **Pařížské dohody** v roce 2015, ve které se státy zavázaly **udržet oteplení planety pod 2 °C a zároveň se snažit nepřekročit hranici 1,5 °C** oproti předindustriálnímu období.
   - q: "Kdo se mezinárodních klimatických jednání účastní?"
     a: |
       Aktéry mezinárodních klimatických jednání jsou zejména **státy** světa, které pro silnější vyjednávací pozice mohou vytvářit koalice. Koalice tzv. podobně smýšlejících států (like-minded countries) tvoří např. malé ostrovní státy nebo státy Afriky. Do klimatických vyjednávání mohou více či méně zasahovat, např. lobbyingem, **businessoví hráči** či **neziskový sektor**.
@@ -44,11 +57,26 @@ subtopics:
     a: |
       V kontextu mezinárodních jednání je potřeba rozlišit evropskou a světovou úroveň. Na úrovni EU jsou zájmy a pozice Česka reprezentovány vládou, jejíž ministři a ministryně se pravidelně účastní jednání v rámci Rady Evropské unie, zatímco premiér se účastní setkání hlav členských států v Evropské radě. Na světové úrovni, například při příležitosti Konference smluvních stran (COP) Rámcové úmluvy o změně klimatu (UNFCCC), je Česko součástí společné pozice Evropské unie.
 
+- id:          "svet"
+  title:       "Světová klimatická politika"
+  lead: |
+    Pro udržení oteplení planety v mezích 1,5 °C nebo 2 °C **je nezbytné, aby se na snižování emisí skleníkových plynů podílel celý svět** a došlo ke globálnímu přechodu na bezemisní nebo alespoň nízkoemisní ekonomiku. Velká část světové klimatické politiky se odehrává na konferencích [COP](#cop).
+  qa:
+  - q: "Co je Pařížská dohoda?"
+    a: |
+      V rámci Pařížské dohody se státy světa dohodly na cíli **nepřekročit hranici oteplení o 2 °C a snažit se o udržení oteplení pod 1,5 °C** (v porovnání s předindustriálním obdobím). Zároveň se zavázaly formulovat své **národní závazky ke snižování emisí** (Nationally Determined Contributions, NDCs) a každých pět let je revidovat. Součástí dohody je i finančně **podporovat rozvíjející se země** zasažené změnou klimatu. Pařížská dohoda vznikla v roce 2015 v rámci jednání smluvních stran Rámcové úmluvy OSN o změně klimatu (United Nations Framework Convention on Climate Change, UNFCCC).
+  - q: "Co je IPCC?"
+    a: |
+      IPCC, tedy Mezivládní panel pro změnu klimatu (Intergovermental Panel on Climate Change) je platformou na poli OSN, v rámci které vědci a vědkyně z téměř všech zemí světa **shrnují vědecké poznání v oblasti změny klimatu**. Činí tak v hodnotících zprávách (Assesment Report, AR), které jsou tvořeny třemi pracovními skupinami. První se věnuje **fyzikálním základům** klimatické změny (Working Group 1, WG 1), druhá **dopadům, adaptaci a zranitelnosti** (WG 2) a třetí **mitigaci** (WG 3).
+
   content:
   - svetove-dohody
+  - pozice-akteru-cop
   - akteri-klimatickych-jednani
-  - fit-for-55
-  # TODO: pridat https://2050podcast.cz/epizody/11-mezinarodni-jednani-prubeh
+  - zpravy-ipcc
+  - 9-mezinarodni-jednani-historie
+  - 10-mezinarodni-jednani-dopady
+  - 11-mezinarodni-jednani-prubeh
 
 - id:          "emisni-zavazky"
   title:       "Emisní závazky"
@@ -67,26 +95,6 @@ subtopics:
   - uhlikova-neutralita
   - emisni-zavazky
   - 2021-reserse-zavazky-statu
-
-- id:          "svet"
-  title:       "Světová klimatická politika"
-  lead: |
-    Pro udržení oteplení planety v mezích 1,5 °C nebo 2 °C **je nezbytné, aby se na snižování emisí skleníkových plynů podílel celý svět** a došlo ke globálnímu přechodu na bezemisní nebo alespoň nízkoemisní ekonomiku. Velká část světové klimatické politiky se odehrává na konferencích [COP](#cop).
-  qa:
-  - q: "Co je Pařížská dohoda?"
-    a: |
-      V rámci Pařížské dohody se státy světa dohodly na cíli **nepřekročit hranici oteplení o 2 °C a snažit se o udržení oteplení pod 1,5 °C** (v porovnání s předindustriálním obdobím). Zároveň se zavázaly formulovat své **národní závazky ke snižování emisí** (Nationally Determined Contributions, NDCs) a každých pět let je revidovat. Součástí dohody je i finančně **podporovat rozvíjející se země** zasažené změnou klimatu. Pařížská dohoda vznikla v roce 2015 v rámci jednání smluvních stran Rámcové úmluvy OSN o změně klimatu (United Nations Framework Convention on Climate Change, UNFCCC).
-  - q: "Co je IPCC?"
-    a: |
-      IPCC, tedy Mezivládní panel pro změnu klimatu (Intergovermental Panel on Climate Change) je platformou na poli OSN, v rámci které vědci a vědkyně z téměř všech zemí světa **shrnují vědecké poznání v oblasti změny klimatu**. Činí tak v hodnotících zprávách (Assesment Report, AR), které jsou tvořeny třemi pracovními skupinami. První se věnuje **fyzikálním základům** klimatické změny (Working Group 1, WG 1), druhá **dopadům, adaptaci a zranitelnosti** (WG 2) a třetí **mitigaci** (WG 3).
-
-  content:
-  - pozice-akteru-cop
-  - akteri-klimatickych-jednani
-  - zpravy-ipcc
-  - 9-mezinarodni-jednani-historie
-  - 10-mezinarodni-jednani-dopady
-  - 11-mezinarodni-jednani-prubeh
 
 - id:          "cop"
   title:       "Klimatické konference COP"
@@ -146,3 +154,7 @@ subtopics:
 ---
 
 Změna klimatu představuje celosvětový problém, a ač na jednotlivé části světa dopadá různě, **vyžaduje spolupráci na regionální i globální úrovni**.
+
+Mezinárodní jednání představují **platformu pro spolupráci**, sdílení perspektiv a know-how. **Mezinárodní dohody** mají velkou symbolickou hodnotu a současně utváří důležitý rámec pro politiku a legislativu na národní úrovni. Národní legislativa pak **stanovuje prostředí** pro státní orgány, podniky i občany.
+
+<!-- TODO: ještě něco doplnit? -->

@@ -5,38 +5,44 @@ slug:          "krajina"
 redirect_from: "/krajina"
 sitemap:       false
 published:     2022-04-19
-map:           true
 weight:        60
 
 subtopics:
   # 3 materiály, které byste neměli přehlédnout
-- lead:
+- lead: |
+    Zdravou krajinu ohrožuje jak přímý vliv lidské činnosti, tak dopady změny klimatu. Co se s krajinou děje a co s tím můžeme dělat?
+  commented-content:
+  - slug: "ubyvani-biodiverzity"
+    comment-key: "1"
+    comment: |
+      Celosvětově je zcela zásadním tématem **ubývání přírodní rozmanitosti**.
+  - slug: "umirani-ceskych-lesu"
+    comment-key: "2"
+    comment: |
+      V České krajině také ubývá přírodní rozmanitost. Mnohem více je ale vidět **odumírání jehličnatých lesů**.
+  - slug: "hospodareni-lesy"
+    comment-key: "3"
+    comment: |
+      Pokud chceme mít v Česku za 50 let zdravé lesy, **potřebujeme výrazně upravit lesní hospodaření**.
   qa:
-  - q: "Co se děje s lesy v Česku a jak se na tom podílí klimatická změna?"
-    a: |
-      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56x26 km.
-
   - q: "Může změna klimatu za vymírání druhů zvířat a rostlin?"
     a: |
       Klimatická změna je jednou z pěti příčin ubývání biodiverzity. Dále se na něm podílí nadměrná exploatace (tedy lov ptáků, savců a intenzivní rybolov), šíření nepůvodních druhů do míst, kde dříve nebyly, ubývání biotopů za účelem rozšiřování polí a plantáží a také znečištění prostředí způsobené používáním velkého množství pesticidů a umělých hnojiv.
 
-  - q: "Jak globální oteplování ohrožuje přírodu?"
+  - q: "Jak globální oteplování ohrožuje velké ekosystémy?"
     a: |
       Každý ekosystém má svůj "bod zlomu", tedy moment, kdy začne být změna přírodních podmínek natolik významná, že už ji tento ekosystém není schopen dále zvládat a "zlomí se" – podobně jako větev stromu při příliš velkém zatížení. Zatímco oteplení o 1,5 °C bude fatální "jen" pro většinu korálových útesů v oceánech, hranicí 2 °C se již blížíme pravděpodobným bodům zlomu u mnoha velkých ekosystémů na naší planetě, jako jsou například severské jehličnaté lesy.
 
-  - q: "Vážně přijdeme o všechny korálové útesy?"
+  - q: "Co se děje s lesy v Česku a jak se na tom podílí klimatická změna?"
     a: |
-      Pokud průměrná globální teplota stoupne o 1,5 °C, zmizí 70–90 % korálových útesů, při oteplení o 2 °C pak nepřežijí již téměř žádní teplovodní koráli. Ti přitom vytvářejí podmínky pro život nejméně čtvrtiny všech známých mořských druhů (z hlediska druhové pestrosti překonávají i tropické deštné pralesy) a na jejich existenci závisí obživa přinejmenším půl miliardy lidí.
-
-  content:
-  - hospodareni-lesy
-  - vymirani-koralovych-utesu
-  - ubyvani-biodiverzity
+      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56x26 km.
 
 - id:          "lesy"
   title:       "Lesy"
   lead: |
-    Lesy v ČR pokrývají 36,8 % celkové plochy. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes lesy u nás jednak zranitelné vůči škůdcům (například kůrovci) a jednak mají nízkou schopnost adaptace na měnící se podmínky, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně. Situaci je možné zlepšit změnami ve způsobu hospodaření – například pestřejší skladbou dřevin a vysazováním druhů, které budou méně citlivé na sucho a vyšší teploty než smrky, či šetrnější těžbou. Důležité však budou i legislativní kroky, jež například umožní efektivně regulovat stavy zvěře, a také finanční podpora lesnictví ze strany státu.
+    Lesy v ČR pokrývají 36,8 % celkové plochy. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes lesy u nás jednak zranitelné vůči škůdcům (například kůrovci) a jednak mají nízkou schopnost adaptace na měnící se podmínky, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně.
+
+    Situaci je možné zlepšit změnami ve způsobu hospodaření – například pestřejší skladbou dřevin a vysazováním druhů, které budou méně citlivé na sucho a vyšší teploty než smrky, či šetrnější těžbou. Důležité však budou i legislativní kroky, jež například umožní efektivně regulovat stavy zvěře, a také finanční podpora lesnictví ze strany státu.
   qa:
   - q: "Je pravda, že smrkové lesy, jak jsme je znali, se už nevrátí?"
     a: |
@@ -73,6 +79,10 @@ subtopics:
     a: |
       Snad nejohroženější skupinou jsou polní ptáci, jejichž populace se rychle zmenšují: mizí skřivani a luční konipasové, sýčci či chocholouši patří mezi kriticky ohrožené. Ubývá také různých druhů motýlů a hmyzu.
 
+  - q: "Vážně přijdeme o všechny korálové útesy?"
+    a: |
+      Pokud průměrná globální teplota stoupne o 1,5 °C, zmizí 70–90 % korálových útesů, při oteplení o 2 °C pak nepřežijí již téměř žádní teplovodní koráli. Ti přitom vytvářejí podmínky pro život nejméně čtvrtiny všech známých mořských druhů (z hlediska druhové pestrosti překonávají i tropické deštné pralesy) a na jejich existenci závisí obživa přinejmenším půl miliardy lidí.
+
   content:
   - ubyvani-biodiverzity
   - body-zlomu-1
@@ -81,7 +91,9 @@ subtopics:
 - id:          "krajina"
   title:       "Zdravá krajina"
   lead: |
-    Zdravá krajina je zároveň odolná – tedy dokáže dobře zvládat různé změny, včetně těch klimatických. Je to krajina členitá a pestrá, nikoli taková, v níž je 40 % podzemních vod kontaminováno pesticidy jako dnes nebo v níž se rozkládají obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků (ptačí populace na polích se za posledních 40 let zmenšila o třetinu). K takové zdravé a odolné krajině můžeme dospět, změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu a zemědělcům a lesníkům musejí dávat smysl i ekonomicky. Klíčová je v tom promyšlená pomoc ze strany státu, který stanoví jasná kriteria pro dotace a šetrné hospodaření.
+    Zdravá krajina je členitá a pestrá, nikoli taková, v níž je 40 % podzemních vod kontaminováno pesticidy jako dnes nebo v níž se rozkládají obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků. Zdravá krajina je odolná – tedy dokáže dobře zvládat různé změny, včetně těch klimatických.
+
+    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu, zemědělcům a lesníkům musejí dávat smysl i ekonomicky. Klíčová je v tom promyšlená pomoc ze strany státu, který stanoví jasná kriteria pro dotace a šetrné hospodaření.
 
   content:
   - lesnicka-strategie-eu
@@ -91,4 +103,8 @@ subtopics:
 
 ---
 
-Podle Šesté hodnotící zprávy panelu IPCC bude zvýšení globální teploty o 1,5 °C znamenat, že z naší planety zmizí až 14 % všech suchozemských druhů rostlin a živočichů. Při nárůstu o dalšího půl stupně to může být až 20 % druhů a v případě oteplení o 3 °C může vymřít až každý třetí druh. **Hranice 2 °C** bude pravděpodobně také představovat **bod zlomu pro některé velké ekosystémy** na Zemi, což znamená, že v nich dojde k nevratným změnám a mohou i zcela zaniknout. Aktuálně se již tomuto bodu zlomu blíží korálové útesy, na něž je navázáno 25 % všech druhů žijících v mořích. Ale i ve střední Evropě je možné pozorovat ekosystémové dopady změn klimatu, například v jehličnatých lesích. Naše civilizace je navzdory své technické vyspělosti na přírodě závislá a nemůže bez ní přežít – proto je snaha o dosažení nulové uhlíkové bilance a zastavení klimatické změny klíčová nejen pro přírodu, ale i pro lidstvo.
+**Lidstvo je existenčně závislé na zdravé krajině.** Krajina ovšem nemůže být zdravá a odolná bez přírodní pestrosti a členitosti.
+
+Pokračující **změna klimatu výrazně dopadne na zdraví krajiny a přírodní pestrost**. Podle IPCC může v tomto století podle míry oteplení vymřít 14 - 33 % všech suchozemských druhů rostlin a zvířat. Oteplení může navíc překročit **body zlomu některých velkých ekosystémů** jako jsou korálové útesy nebo deštné pralesy. To by u nich způsobilo nevratné změny nebo i zánik.
+
+Kromě toho je rozmanitost přírody nesporně hodnotná _sama o sobě_. **Zastavení změny klimatu a lepší péče o krajinu jsou tak klíčové pro lidstvo i pro samotnou přírodu.**

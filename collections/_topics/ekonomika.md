@@ -3,9 +3,8 @@ layout:        topic
 title:         "Ekonomika"
 slug:          "ekonomika"
 redirect_from: "/ekonomika"
-published:     2022-07-01
 sitemap:       false
-map:           true
+published:     2022-07-01
 weight:        40
 
 dashboard:
@@ -32,11 +31,20 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Klimatická změna úzce souvisí s lidskou ekonomickou činností a pro její zvládnutí je nutná bezprecendentní hospodářská transformace. Z ekonomického pohledu představuje klimatická změna externalitu, tedy nezamýšlený vedlejší důsledek produkce, který pokřivuje tržní prostředí. Pro narovnání tohoto prostředí pak lze využít zpoplatnění emisí skleníkových plynů (pomocí uhlíkové daně nebo emisních povolenek) podle principu "znečišťovatel platí".
-  content:
-  - emisni-povolenky-ets
-  - fit-for-55
-  - klimaticke-finance
+    **Z ekonomického pohledu představuje klimatická změna negativní externalitu**, tedy nechtěný vedlejší důsledek produkce. Jakým způsobem je možné tržní prostředí narovnat aby změnu klimatu zohlednilo?
+  commented-content:
+  - slug: "fit-for-55"
+    comment-key: "1"
+    comment: |
+      Nastavování tržního prostředí je role států. **EU postupně zavádí klimatická opatření**, jejich posílení přináší balíček opatření **Fit for 55**.
+  - slug: "emisni-povolenky-ets"
+    comment-key: "2"
+    comment: |
+      Stěžejním mitigačním opatřením je **zpoplatnění emisí skleníkových plynů** podle principu "znečišťovatel platí".
+  - slug: "klimaticke-finance"
+    comment-key: "3"
+    comment: |
+      Externality mimo hranice států mohou narovnat finanční transfery. **Bohaté státy se zavázaly finančně pomáhat těm chudším s transformací jejich hospodářství**.
 
 - id:          "pricina"
   title:       "Ekonomická činnost jako příčina klimatické změny"
@@ -99,6 +107,6 @@ subtopics:
   - klimaticke-finance
 ---
 
-Klimatická změna úzce souvisí s lidskou ekonomickou činností a pro její zvládnutí je nutná bezprecendentní hospodářská transformace. Z ekonomického pohledu představuje klimatická změna externalitu, tedy nezamýšlený vedlejší důsledek produkce, který pokřivuje tržní prostředí. Pro narovnání tohoto prostředí pak lze využít zpoplatnění emisí skleníkových plynů (pomocí uhlíkové daně nebo emisních povolenek) podle principu “znečišťovatel platí”.
+Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná bezprecendentní hospodářská transformace.
 
-Bohatší státy dokážou společenskou a hospodářskou transformaci uskutečnit samy, avšak chudší rozvojové státy často nemají vlastní prostředky na potřebné investice. Jejich transformaci potřebujeme i my, kteří žijeme v bohatších zemích: klimatická změna státní hranice nerozlišuje, navíc máme výrazně větší podíl na historických emisích. Proto se vyspělé státy zavázaly finančně přispívat rozvojovým zemím na podporu jejich transformace, tento závazek se označuje jako klimatické finance.
+Do finanční rozvahy vstupují dvě neznámé: **náklady mitigace změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisnímu fungování společnosti, a **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dost rychle. Obě neznámé je těžké odhadovat, obě budou nejspíš značné. Proto je klíčové volit efektivní **mitigační opatření**, která snižují náklady transformace a efektivní **adaptační opatření**, která omezují klimatické škody.

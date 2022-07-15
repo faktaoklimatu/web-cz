@@ -5,7 +5,6 @@ slug:          "klimaticka-zmena"
 redirect_from: "/klimaticka-zmena"
 sitemap:       false
 published:     2022-04-05
-map:           true
 weight:        10
 
 dashboard:
@@ -134,6 +133,6 @@ subtopics:
   - tropicke-dny-praha
 ---
 
-_Klimatická změna_, která probíhá v posledních dvou stoletích, se od dřívějších změn klimatu liší hlavně tím, že je *antropogenní*, neboli způsobena lidskou činností. **Spalování uhlí, ropy a zemního plynu** a některé další lidské činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování, které má další důsledky: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder, hurikány a další extrémní projevy počasí.
+**Současná klimatická změna je způsobena lidskou činností**. Tím se výrazně liší od dřívějších změn klimatu. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s dalšími důsledky: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a další extrémní projevy počasí.
 
-Dopady změny klimatu, které budeme potkávat v následujících desetiletích, přímo závisí na tom, jak rychle se podaří zastavit spalování fosilních paliv a další činnosti, které přidávají skleníkové plyny do atmosféry.
+**Dopady změny klimatu**, které budeme potkávat v následujících desetiletích, **přímo závisí na množství dalších emisí skleníkových plynů**. Tedy na tom, jak rychle zastavíme spalování fosilních paliv a další emisní činnosti.
