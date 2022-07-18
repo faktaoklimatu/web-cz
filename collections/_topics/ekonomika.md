@@ -8,21 +8,26 @@ published:     2022-07-01
 weight:        40
 
 dashboard:
-- title:       "Klimatické finance"
-  value:       "79,6 mld. $"
-  subtitle:    "přispěly v roce 2019 na klimatická opatření rozvinuté země rozvojovým"
+- type:        "single"
+  col-size:    3
+  value:       "**79,6** mld. $"
+  subtitle:    "přispěly rozvinuté země na klimatická opatření v roce 2019 **rozvojovým zemím**"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
-- title:       "Zpoplatnění uhlíku ve světě"
-  value:       "23 %"
-  subtitle:    "světových emisí k roku 2022 je zpoplatněno daní nebo povolenkami"
+- type:       "single"
+  col-size:    3
+  value:       "**23** %"
+  subtitle:    "**světových emisí je zpoplatněno** daní nebo povolenkami (v roce 2022)"
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
-- title:       "Výnosy ze zpoplatnění uhlíku za rok 2021"
-  value:       "84 mld. $"
-  subtitle:    "**celosvětově**"
-  value-vs:    "34 mld. $"
-  subtitle-vs: "z **evropských** emisních povolenek"
+- type:        "compare"
+  col-size:    5
+  title:       "**Výnosy ze zpoplatnění uhlíku** za rok 2021"
+  data:
+  - region:    "world"
+    value:     "**84** mld. $"
+  - region:    "eu"
+    value:     "**34** mld. $"
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
 
