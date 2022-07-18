@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Ekonomika"
+tag-name:      "ekonomika"
 slug:          "ekonomika"
 redirect_from: "/ekonomika"
 sitemap:       false

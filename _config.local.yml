@@ -70,16 +70,6 @@ collections:
     title: epizody
     weight: 6
 
-# Set topic permalinks in local language
-jekyll-archives:
-  enabled: [ "tags" ]
-  layouts:
-    tag: tag
-  permalinks:
-    tag: '/temata/:name/'
-  collections:
-    merge_tags: true
-
 # Enable Czech smart quotes
 kramdown:
   math_engine: katex

@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Emise skleníkových plynů"
+tag-name:      "emise"
 slug:          "emise"
 redirect_from: "/emise"
 sitemap:       false
