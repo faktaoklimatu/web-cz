@@ -80,6 +80,7 @@ subtopics:
   - 27-rethink-architecture
   - 5-transformace-dopravy
   - 6-transformace-prumyslu
+  - 28-trinecke-zelezarny
 
 - id:          "finance"
   title:       "Financování klimatických opatření"
