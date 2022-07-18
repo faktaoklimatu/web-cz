@@ -25,6 +25,7 @@ slugs:
   studies: studie
   datasets: datasety
   topics: temata
+  new-topics: tema
   glossary: slovnik
   how-to-use: jak-pouzivat
   news: aktuality
