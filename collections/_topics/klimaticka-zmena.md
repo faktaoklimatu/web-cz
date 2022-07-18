@@ -4,7 +4,6 @@ title:         "Klimatická změna"
 tag-name:      "klima"
 slug:          "klimaticka-zmena"
 redirect_from: "/klimaticka-zmena"
-sitemap:       false
 published:     2022-04-05
 weight:        10
 

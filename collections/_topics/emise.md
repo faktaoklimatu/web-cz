@@ -4,7 +4,6 @@ title:         "Emise skleníkových plynů"
 tag-name:      "emise"
 slug:          "emise"
 redirect_from: "/emise"
-sitemap:       false
 published:     2022-07-01
 weight:        20
 
