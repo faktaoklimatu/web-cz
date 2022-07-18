@@ -8,27 +8,31 @@ published:     2022-07-01
 weight:        20
 
 dashboard:
-- title:       "Celkové emise (2018)"
-  unit:        "CO<sub>2</sub>eq"
-  value:       "51,2 mld. tun"   # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
-  subtitle:    "emise celého světa"
-  unit-vs:     "CO<sub>2</sub>eq"
-  value-vs:    "131,4 mil. tun"
-  subtitle-vs: "emise Česka"
+- type:        "compare"
+  title:       "**Celkové emise** za rok 2018"
+  data:
+  - region:    "world"
+    value:     "**51,2**"   # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
+    subtitle:  "mld. tun CO<sub>2</sub>eq"
+  - region:    "cz"
+    value:     "**131,4**"
+    subtitle:  "mil. tun CO<sub>2</sub>eq"
   source:      "EDGAR, European Commission"
   source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
-- title:       "Emise na osobu (2015)"
-  unit:        "CO<sub>2</sub>eq"
-  value:       "6,5 tun"
-  subtitle:    "světový průměr"
-  value-vs:    "12,1 tun"
-  subtitle-vs: "Česko"
+- type:        "compare"
+  title:       "**Emise na osobu** za rok 2015"
+  data:
+  - region:    "world"
+    value:     "**6,5**"
+    subtitle:  "tun CO<sub>2</sub>eq"
+  - region:    "cz"
+    value:     "**12,1**"
+    subtitle:  "tun CO<sub>2</sub>eq"
   source:      "Fakta o klimatu"
   source-url:  "/emise-svet-na-osobu"
-- title:       "Emisní závazky (2022)"
-  value:       "87 % emisí"
-  unit:        "CO<sub>2</sub>"
-  subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
+- type:        "single"
+  value:       "**87 %** emisí CO<sub>2</sub>"
+  subtitle:    "pochází ze **zemí směřujících k uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "/emisni-zavazky"
 
