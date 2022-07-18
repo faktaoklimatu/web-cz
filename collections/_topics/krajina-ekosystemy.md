@@ -4,7 +4,6 @@ title:         "Krajina a ekosystémy"
 tag-name:	"krajina-ekosystémy"
 slug:          "krajina-ekosystemy"
 redirect_from: "/krajina-ekosystemy"
-sitemap:       false
 published:     2022-04-19
 weight:        60
 

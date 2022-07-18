@@ -4,7 +4,6 @@ title:         "Mezinárodní dohody a legislativa"
 tag-name:      "dohody"
 slug:          "dohody-legislativa"
 redirect_from: "/dohody-legislativa"
-sitemap:       false
 published:     2022-04-12
 weight:        50
 

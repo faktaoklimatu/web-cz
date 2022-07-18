@@ -4,7 +4,6 @@ title:         "Energetika"
 tag-name:      "energetika"
 slug:          "energetika"
 redirect_from: "/energetika"
-sitemap:       false
 published:     2022-04-05
 weight:        30
 

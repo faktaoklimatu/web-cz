@@ -4,7 +4,6 @@ title:         "Ekonomika"
 tag-name:      "ekonomika"
 slug:          "ekonomika"
 redirect_from: "/ekonomika"
-sitemap:       false
 published:     2022-07-01
 weight:        40
 
