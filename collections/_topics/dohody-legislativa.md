@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Mezinárodní dohody a legislativa"
+tag-name:      "dohody"
 slug:          "dohody-legislativa"
 redirect_from: "/dohody-legislativa"
 sitemap:       false

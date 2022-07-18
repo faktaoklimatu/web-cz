@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Energetika"
+tag-name:      "energetika"
 slug:          "energetika"
 redirect_from: "/energetika"
 sitemap:       false

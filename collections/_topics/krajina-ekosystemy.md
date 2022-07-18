@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Krajina a ekosystémy"
+tag-name:	"krajina-ekosystémy"
 slug:          "krajina-ekosystemy"
 redirect_from: "/krajina-ekosystemy"
 sitemap:       false

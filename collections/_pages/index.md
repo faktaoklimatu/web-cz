@@ -58,7 +58,7 @@ slug: index
   </div></div>
 </div>
 
-{% assign sorted_index_tags = site.data.tags | where_exp: "item", "item.index-weight > 0" | sort: "index-weight" %}
+{% assign sorted_topics = site.topics | where_exp: "item", "item.weight > 0" | sort: "weight" %}
 <div class="section"><div class="container" markdown="1">
 {: .display-2}
 ## Oblasti, kterým se věnujeme
@@ -66,27 +66,16 @@ slug: index
 {:.lead}
 Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku. Pro usnadnění orientace na webu třídíme naše materiály do níže uvedených kategorií.
 
-<div class="accordion" id="accordionExample">
-{% for index_tag in sorted_index_tags %}
-<div class="accordion-item">
-    <div class="accordion-header collapsed" id="heading_{{ index_tag.id }}" role="button" data-toggle="collapse" data-target="#collapse_{{ index_tag.id }}" aria-expanded="false" aria-controls="collapse_{{ index_tag.id }}">
-        <h3 class="display-3">
-        <span class="fa fa-fw fa-chevron-up"></span>
-        {{ index_tag.name-long | capitalize }}
-        <small class="text-secondary d-none d-md-inline">({% include includes-local/object-stats.html tag=index_tag.id %})</small>
-        </h3>
-    </div>
-    <div class="collapse" id="collapse_{{ index_tag.id }}"  aria-labelledby="heading_{{ index_tag.id }}" data-parent="#accordionExample" markdown="1">
-{:.lead}
-{{ index_tag.description | markdownify }}
-
-{% assign objects = site.infographics | concat: site.studies | concat: site.explainers | where_exp: "item", "item.tags contains index_tag.id" | sort: "weight" %}
-{% include preview-blocks.html blocks=objects link=index_tag limit=6 %}
-
+<div class="row">
+{%- for topic in sorted_topics %}
+<div class="col-12 col-sm-4 my-3">
+<a class="topic-tile" href="{{ topic.url }}">
+  <img loading="eager" src="/assets/topics/{{ topic.slug }}.svg" alt="{{ topic.title }}">
+  <h3>{{ topic.title | capitalize }}</h3>
+</a>
 </div>
+{%- endfor %}
 </div>
-{% endfor %}
-</div> <!-- accordion end -->
 
 </div></div>
 <div class="section"><div class="container clearfix" markdown="1">

@@ -1,6 +1,7 @@
 ---
 layout:        topic
 title:         "Klimatická změna"
+tag-name:      "klima"
 slug:          "klimaticka-zmena"
 redirect_from: "/klimaticka-zmena"
 sitemap:       false
