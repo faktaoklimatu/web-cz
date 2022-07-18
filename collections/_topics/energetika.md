@@ -86,6 +86,7 @@ subtopics:
   - emise-cr
   - emise-cr-vyvoj
   - emise-eu-vyvoj
+  - uhelny-phaseout-eu
 
 - id:          "legislativa"
   title:       "Legislativní kontext"

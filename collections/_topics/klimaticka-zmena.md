@@ -89,6 +89,7 @@ subtopics:
        Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení...
 
   content:
+  - historie-sklenikoveho-efektu
   - dukazy-vlivu-co2
   - souvislost-koncentrace-oteplovani
   - otepleni-zvysenim-koncentrace-co2
@@ -117,6 +118,8 @@ subtopics:
   - emisni-scenare-pariz
   - souvislost-emise-otepleni
   - 23-dopady-zmen-klimatu
+  - 2019-science-vyjadreni-vedcu
+  - 2019-klimaticke-podminky-cr-1
 
 - id:          "extrémy"
   title:       "Extrémní jevy"
