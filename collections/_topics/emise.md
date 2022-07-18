@@ -87,6 +87,7 @@ subtopics:
   - emise-eu
   - emise-eu-poradi
   - emise-vybrane-staty
+  - emise-eu-detail
   - emise-eu-vyvoj
   - emise-eu-na-osobu
 
