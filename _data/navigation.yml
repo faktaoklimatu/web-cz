@@ -2,8 +2,8 @@
   link: /
 
 - title: Témata
-  dropdown: temata
-  list-topics: true
+  dropdown: tema
+  list-topic-pages: true
 
 # - title: Explainery
 #  link: /explainery
