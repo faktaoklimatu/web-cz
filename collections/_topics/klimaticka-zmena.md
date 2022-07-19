@@ -63,7 +63,7 @@ subtopics:
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
-     Měření teploty z meteorologických stanic i z družic, měření koncentrací skleníkových plynů ze současné atmosféry i z ledovcových vrtů, data o každoročních změnách v množství sněhu a ledu i data o vzestupu hladin oceánů - všechny tyto údaje umožňují představit si rychlost a rozhsah probíhající klimatické změny a porovnat ji se změnami, kterými planeta procházela v minulosti.
+     Měření teploty z meteorologických stanic i družic, měření koncentrací skleníkových plynů ze současné atmosféry i z ledovcových vrtů, data o každoročních změnách v množství sněhu a ledu i data o vzestupu hladin oceánů - všechny tyto údaje umožňují představit si rychlost a rozsah probíhající klimatické změny a porovnat ji se změnami, kterými planeta procházela v minulosti.
   content:
   - teplotni-anomalie
   - teplota-cr
@@ -82,10 +82,10 @@ subtopics:
   qa:
   - q: "Co znamená citlivost klimatu?"
     a: |
-      Čím vyšší koncentrace CO<sub>2</sub> v atmosféře, tím vyšší teplota planety. Zvýšení koncentrace o 10 ppm (parts per million) způsobí oteplení planety asi o 0,1 °C. Tento přibližný vztah je užitečný k mnoha úvahám a odhadům budoucího vývoje...
+      Čím vyšší jsou koncentrace CO<sub>2</sub> v atmosféře, tím vyšší je teplota planety. Zvýšení koncentrace oxidu uhličitého o 10 ppm (*parts per million*) způsobí oteplení planety asi o 0,1 °C. Tento přibližný vztah je užitečný k odhadům budoucího vývoje.
   - q: "Co znamená uhlíkový rozpočet?"
     a: |
-       Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení...
+      Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení.
 
   content:
   - historie-sklenikoveho-efektu
@@ -101,11 +101,11 @@ subtopics:
 - id:          "dopady-budoucnost"
   title:       "Dopady a budoucí vývoj"
   lead: |
-    Vyšší teploty a častější sucha mají dopady na zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli taní horských ledovců chybí voda v povodích, které jsou jimi napájeny. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, které budeme potkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují budoucí vývoj klimatické změny a její očekávané dopady.
+    Vyšší teploty a častější sucha mají dopady na zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli taní horských ledovců chybí voda v povodích, která jsou jimi napájena. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, které budeme potkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují budoucí vývoj klimatické změny a její očekávané dopady.
   qa:
-  - q: "Co to jsou body zlomu? TODO: dopsat"
+  - q: "Co to jsou body zlomu?"
     a: |
-      xxx
+      Každý ekosystém má svůj "bod zlomu", tedy moment, kdy začne být změna přírodních podmínek natolik významná, že už ji tento ekosystém není schopen dále zvládat a "zlomí se" – podobně jako větev stromu při příliš velkém zatížení. Zatímco oteplení o 1,5 °C bude fatální "jen" pro většinu korálových útesů v oceánech, hranicí 2 °C se již blížíme pravděpodobným bodům zlomu u mnoha velkých ekosystémů na naší planetě, jako jsou například severské jehličnaté lesy.
 
   content:  # U nového obsahu zvaž přidání také do ekonomika>ekonomicke-dopady.
   - schema-klimaticke-zmeny
@@ -123,7 +123,7 @@ subtopics:
 - id:          "extrémy"
   title:       "Extrémní jevy"
   lead: |
-    Vlny veder na pevnině i tzv. "mořské vlny veder", přívalové deště, dlouhé periody sucha, hurikány (odborně "tropické cyklóny") nebo počasí s rizikem lesních požárů (sucho + vítr) patří mezi extrémní projevy počasí, které se s postupující klimatickou změnou vyskytují častěji než dříve a přicházejí s větší intenzitou.
+    Vlny veder na pevnině i tzv. "mořské vlny veder", přívalové deště, dlouhé periody sucha, hurikány (odborně "tropické cyklóny") nebo počasí s rizikem lesních požárů (kombinace sucha a větru) patří mezi **extrémní projevy počasí**, které **se s postupující klimatickou změnou vyskytují častěji než dříve a přicházejí s větší intenzitou**.
 
   content:
   - vliv-klimatu-na-extremy
@@ -133,6 +133,6 @@ subtopics:
   - tropicke-dny-praha
 ---
 
-**Současná klimatická změna je způsobena lidskou činností**. Tím se výrazně liší od dřívějších změn klimatu. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s dalšími důsledky: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a další extrémní projevy počasí.
+**Současná klimatická změna je způsobena lidskou činností**. Tím se výrazně liší od dřívějších změn klimatu. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s dalšími důsledky, kterými jsou: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a další extrémní projevy počasí.
 
 **Dopady změny klimatu**, které budeme potkávat v následujících desetiletích, **přímo závisí na množství dalších emisí skleníkových plynů**. Tedy na tom, jak rychle zastavíme spalování fosilních paliv a další emisní činnosti.
