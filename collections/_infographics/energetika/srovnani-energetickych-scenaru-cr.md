@@ -17,7 +17,7 @@ data-orig:
   - [ "NECP", "https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/" ]
 ---
 
-V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/temata/energetika) v ČR.
+V této infografice dáváme srovnání více scénářů vývoje [elektroenergetiky](/tema/energetika#scenare-2030-cr) v ČR.
 
 ## Jak číst tento graf
 
