@@ -10,7 +10,7 @@ weight:        60
 subtopics:
   # 3 materiály, které byste neměli přehlédnout
 - lead: |
-    Zdravou krajinu ohrožuje jak přímý vliv lidské činnosti, tak dopady změny klimatu. Co se s krajinou děje a co s tím můžeme dělat?
+    Zdravou **krajinu ohrožuje jak přímý vliv lidské činnosti, tak dopady změny klimatu**. Co se s krajinou děje a co s tím můžeme dělat?
   commented-content:
   - slug: "ubyvani-biodiverzity"
     comment-key: "1"
@@ -19,7 +19,7 @@ subtopics:
   - slug: "umirani-ceskych-lesu"
     comment-key: "2"
     comment: |
-      V České krajině také ubývá přírodní rozmanitost. Mnohem více je ale vidět **odumírání jehličnatých lesů**.
+      V české krajině také ubývá přírodní rozmanitost. Mnohem více je ale vidět **odumírání jehličnatých lesů**.
   - slug: "hospodareni-lesy"
     comment-key: "3"
     comment: |
@@ -35,12 +35,12 @@ subtopics:
 
   - q: "Co se děje s lesy v Česku a jak se na tom podílí klimatická změna?"
     a: |
-      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56x26 km.
+      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56×26 km.
 
 - id:          "lesy"
   title:       "Lesy"
   lead: |
-    Lesy v ČR pokrývají 36,8 % celkové plochy. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes lesy u nás jednak zranitelné vůči škůdcům (například kůrovci) a jednak mají nízkou schopnost adaptace na měnící se podmínky, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně.
+    Lesy v ČR pokrývají 36,8 % celkové plochy. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes české lesy jednak zranitelné vůči škůdcům (například kůrovci) a jednak mají nízkou schopnost adaptace na měnící se podmínky, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně.
 
     Situaci je možné zlepšit změnami ve způsobu hospodaření – například pestřejší skladbou dřevin a vysazováním druhů, které budou méně citlivé na sucho a vyšší teploty než smrky, či šetrnější těžbou. Důležité však budou i legislativní kroky, jež například umožní efektivně regulovat stavy zvěře, a také finanční podpora lesnictví ze strany státu.
   qa:
@@ -68,7 +68,7 @@ subtopics:
 - id:          "biodiverzita"
   title:       "Biodiverzita"
   lead: |
-    Příroda dnes rychle přichází o svou pestrost a mnoho druhů navždy mizí. Jen v živočišné říši je nyní vyhubením více či méně ohrožena zhruba 1/7 všech ptáků, 1/4 savců, 1/5 plazů, 1/3 paryb (žraloků a rejnoků) a 2/5 obojživelníků. K tomu, abychom tomuto chudnutí živého světa zabránili, bude ovšem nutné udělat víc než jen chránit malé kousky přírody v rezervacích – musíme vrátit život a pestrost i na pole, louky, do lesů, řek nebo rybníků. Uvědomovat si krajinné návaznosti, vnímat všechny důležité funkce krajiny (včetně té produkční, na níž jsme závislí) a umět přemýšlet v delších časových úsecích, než je několik nejbližších let.
+    Příroda dnes rychle přichází o svou pestrost a mnoho druhů navždy mizí. Jen v živočišné říši je nyní vyhubením více či méně ohrožena zhruba 1/7 všech ptáků, 1/4 savců, 1/3 plazů, 1/3 paryb (žraloků a rejnoků) a 2/3 obojživelníků. K tomu, abychom tomuto chudnutí živého světa zabránili, bude ovšem nutné udělat víc než jen chránit malé kousky přírody v rezervacích – musíme vrátit život a pestrost i na pole, louky, do lesů, řek nebo rybníků. Uvědomovat si krajinné návaznosti, vnímat všechny důležité funkce krajiny (včetně té produkční, na níž jsme závislí) a umět přemýšlet v delších časových úsecích, než je několik nejbližších let.
 
   qa:
   - q: "Může za vymírání druhů člověk?"
@@ -105,6 +105,6 @@ subtopics:
 
 **Lidstvo je existenčně závislé na zdravé krajině.** Krajina ovšem nemůže být zdravá a odolná bez přírodní pestrosti a členitosti.
 
-Pokračující **změna klimatu výrazně dopadne na zdraví krajiny a přírodní pestrost**. Podle IPCC může v tomto století podle míry oteplení vymřít 14 - 33 % všech suchozemských druhů rostlin a zvířat. Oteplení může navíc překročit **body zlomu některých velkých ekosystémů** jako jsou korálové útesy nebo deštné pralesy. To by u nich způsobilo nevratné změny nebo i zánik.
+Pokračující **změna klimatu výrazně dopadne na zdraví krajiny a přírodní pestrost**. Podle IPCC může v tomto století podle míry oteplení vymřít 14-33 % všech suchozemských druhů rostlin a zvířat. Oteplení může navíc překročit **body zlomu některých velkých ekosystémů**, jako jsou korálové útesy nebo deštné pralesy. To by u nich způsobilo nevratné změny nebo i zánik.
 
-Kromě toho je rozmanitost přírody nesporně hodnotná _sama o sobě_. **Zastavení změny klimatu a lepší péče o krajinu jsou tak klíčové pro lidstvo i pro samotnou přírodu.**
+Kromě toho je rozmanitost přírody nesporně hodnotná _sama o sobě_. **Zastavení změny klimatu a lepší péče o krajinu jsou tak klíčové pro lidstvo i samotnou přírodu.**

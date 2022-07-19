@@ -35,7 +35,7 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Skleníkové plyny se dostávají do atmosféry **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů**, **produkcí cementu**, **pěstováním rýže** či **chovem dobytka**. Pro volbu rychlých a účinných opatření na snižování emisí je nutné nejprve porozumět, v jakých státech a jaké lidské činnosti způsobují nejvíce emisí:
+    Skleníkové plyny se do atmosféry dostávají **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů, produkcí cementu, pěstováním rýže či chovem dobytka**. Pro volbu rychlých a účinných opatření ke snižování emisí je potřeba uvažovat, jaké lidské činnosti a jaké státy způsobují nejvíce emisí:
   commented-content:
   - slug: "emise-svet"
     comment-key: 1
@@ -44,42 +44,42 @@ subtopics:
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**: 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2x víc než světový průměr a 1,4x víc než průměr EU.
+      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**: vyprodukuje 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
   - slug: "emise-cr-detail"
     comment-key: 3
     comment: |
-      Hlavním zdrojem vysokých emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
+      Hlavním zdrojem emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
   qa:
   # TODO: Dopsat odpověď a zveřejnit.
   # - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
   #   a: |
   #     Blah.
-  - q: "Uvolňují se skleníkové plyny i v důsledku přírodních procesů?"
+  - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |
       Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
 
   - q: "Jaké jsou celkové světové emise?"
     a: |
-      V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, dnes jsou již přes 50 miliard tun CO<sub>2</sub>eq ročně.
+      V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, **dnes** již **dosahují hodnoty přes 50 miliard tun CO<sub>2</sub>eq ročně**.
+  - q: "Jak velké jsou emise Česka?"
+    a: |
+      **V roce 2018 Česko vypustilo 129 milionů tun CO<sub>2</sub>eq**, přepočteno na obyvatele jde o 12,2 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2015 byl 6,5 tun CO<sub>2</sub>eq na osobu. **Emise Česka na osobu jsou tedy dvakrát vyšší, než je celosvětový průměr**.
   - q: "Jak se emise různých skleníkových plynů sčítají dohromady?"
     a: |
-      Jednotlivé skleníkové plyny se přepočítávají na tzv. CO<sub>2</sub>eq, tedy na množství oxidu uhličitého, které by mělo stejný příspěvek ke skleníkovému jevu atmosféry jako množství vypuštěných jiných plynů. Vzhledem k různému poločasu života jednotlivých plynů v atmosféře se tento příspěvek uvažuje za určitou standardizovanou dobu, zpravidla uvažujeme horizont 100 a používáme tzv. GWP100 koeficienty (například pro metan se jedná o hodnotu 28, tedy je 28krát silnější skleníkový plyn než CO<sub>2</sub>).
-  - q: "Jak velké jsou emise České republiky?"
-    a: |
-      V roce 2018 vypustila Česká republika 129 milionů tun CO2eq, přepočteno na obyvatele to je 12,2 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2015 byl 6,5 tun CO<sub>2</sub>eq na osobu, průměrný Čech tak ke klimatické změně přispívá téměř dvojnásobně oproti celosvětovému průměru.
+      **Jednotlivé skleníkové plyny se přepočítávají na tzv. CO<sub>2</sub>eq** (CO<sub>2</sub> ekvivalent), tedy na množství oxidu uhličitého, které by mělo stejný příspěvek ke skleníkovému jevu atmosféry jako množství jiných vypuštěných plynů. Vzhledem k různému poločasu života jednotlivých plynů v atmosféře se tento příspěvek uvažuje za určitou standardizovanou dobu, zpravidla uvažujeme horizont 100 let a používáme tzv. GWP (*Global Warming Potentital*) koeficienty. Zatímco CO<sub>2</sub> jakožto referenčními plynu náleží koeficient 1, pro metan se jedná o hodnotu 28 pro horizont 100 let, jinými slovy jde 28× silnější skleníkový plyn než CO<sub>2</sub>.
   - q: "Co jsou hlavní zdroje lidských emisí?"
     a: |
-      Oxid uhličitý tvoří přibližně 70 % světových emisí a jeho hlavním zdrojem je spalování fosilních paliv, především v energetice, průmyslu a dopravě.
-  - q: "Co můžeme udělat pro snížení emisí?"
+      Na přibližně 70 % světových emisí skleníkových plynů se podílí oxid uhličitý. Jeho hlavním zdrojem je **spalování fosilních paliv**, především v energetice, průmyslu a dopravě.
+  - q: "Co můžeme pro snížení emisí udělat?"
     a: |
-      Klíčové je především snížit emise v energetice a v průmyslu. Účinným opatřením zde je zpoplatnění emisí skleníkových plynů, například formou emisních povolenek. Jako jedinec můžeme přispět především úsporami v domácnostech (vytápění, ohřev teplé vody, spotřeba elektřiny), následně omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků.
+      Klíčové je především **snížit emise skleníkových plynů v energetice a v průmyslu**, tedy transformovat tyto sektory směrem k nízkoemisním alternativám. Účinným opatřením pro snižování emisí je **zpoplatnění emisí skleníkových plynů**, například formou emisních povolenek nebo uhlíkové daně. Na individuální rovině lze přispět především **úsporami v domácnostech** (týkajícíh se vytápění, ohřevu teplé vody nebo spotřeby elektřiny), **omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků**.
 
 - id:          "mnozstvi"
   title:       "Množství vypouštěných skleníkových plynů"
   lead: |
-    V roce 2012 celý svět vypustil do atmosféry 46 miliard tun CO2eq. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO2, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28krát silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO2eq.
+    **V roce 2018 celý svět vypustil do atmosféry 48,9 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>eq, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
 
-    Klimatická změna závisí na celkovém množství skleníkových plynů v atmosféře, při srovnávání jednotlivých zemí je také vhodné vyjádření na jednoho obyvatele. Tím je možné porovnat, jak ke klimatické změně přispívá průměrný obyvatel dané země.
+    Klimatická změna závisí na celkovém množství skleníkových plynů v atmosféře, při srovnávání jednotlivých zemí je však také vhodné vyjádření na obyvatele. Tím je možné porovnat, jak ke klimatické změně přispívají vzhledem k počtu obyvatel různě veliké státy.
   content:
   - emise-svet
   - emise-svet-na-osobu
@@ -91,9 +91,9 @@ subtopics:
   - emise-eu-na-osobu
 
 - id:          "cesko"
-  title:       "Emise skleníkových plynů v České republice"
+  title:       "Emise skleníkových plynů v Česku"
   lead: |
-    V porovnání s celosvětovou hodnotou se mohou zdát emise České republiky zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq – je však užitečné vyjádřit množství skleníkových plynů i na jednoho obyvatele, v takovém přepočtu průměrný Čech emituje dvakrát větší množství skleníkových plynů, než je celosvětový průměr.
+    V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq – je však užitečné vyjádřit množství skleníkových plynů i na jednoho obyvatele, v takovém přepočtu **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
   content:
   - emise-cr
   - emise-cr-detail
@@ -103,9 +103,9 @@ subtopics:
 - id:          "sektory"
   title:       "Emise podle sektorů"
   lead: |
-    Jednotlivá hospodářská odvětví přispívají ke klimatické změně v různé míře. Například v České republice je energetika (včetně tepláren) zodpovědná za téměř 40 % emisí skleníkových plynů, oproti tomu průmysl přispívá 20 %, doprava 16 % a zemědělství přibližně 7 %. Několik desítek největších zdrojů (především elektráren a průmyslových závodů) je tak zodpovědných za 45 % českých emisí.
+    Jednotlivá hospodářská odvětví přispívají ke klimatické změně v různé míře. Například **v Česku je energetika** (včetně tepláren) **zodpovědná za téměř 40 % emisí skleníkových plynů**, oproti tomu průmysl přispívá 20 %, doprava 16 % a zemědělství přibližně 7 %. Několik desítek největších zdrojů (především elektráren a průmyslových závodů) je zodpovědných za 45 % českých emisí.
 
-    Podíl jednotlivých sektorů na emisích se liší jak v čase, tak napříč zeměmi. V České republice jsou relativně vyšší emise z energetiky oproti ostatním zemím kvůli vyššímu podílu uhelných elektráren a skutečnosti, že Česká republika je vývozcem elektřiny. Naopak emise ze zemědělství jsou v České republice relativně nižší, neboť některé potraviny dovážíme.
+    Podíl jednotlivých sektorů na emisích se liší jak v čase, tak napříč zeměmi. V Česku jsou relativně vyšší emise z energetiky oproti ostatním zemím kvůli vyššímu podílu uhelných elektráren a skutečnosti, že Česko je vývozcem elektřiny. Naopak emise ze zemědělství jsou v Česku relativně nižší, neboť některé potraviny dovážíme.
   content:
   - emise-fosilni-paliva
   - nejvetsi-emitenti-cr
@@ -119,9 +119,9 @@ subtopics:
 - id:          "budouci-otepleni"
   title:       "Vztah mezi emisemi a budoucím oteplením"
   lead: |
-    Globální oteplení je přibližně přímo úměrné celkovému množství emisí skleníkových plynů, které vypouštíme do atmosféry. Abychom zastavili klimatickou změnu, je tedy nutné přestat vypouštět skleníkové plyny a dosáhnout takzvané uhlíkové neutrality. Roli však nehraje pouze kdy skutečně snížíme množství vypouštěných plynů na nulu, ale také trajektorie, po které toto snížení bude probíhat. Je velký rozdíl, pokud budeme až do roku 2050 vypouštět tolik emisí jako dnes, a pak náhle snížíme emise na nulu, nebo pokud je budeme snižovat rovnoměrně po celou dobu až do roku 2050 – první scénář by vedl přibližně k dvojnásobnému oteplení oproti druhému.
+    **Globální oteplení je** přibližně **přímo úměrné celkovému množství emisí skleníkových plynů**, které vypouštíme do atmosféry. Pro zastavení klimatické změny **je** tedy **nutné přestat vypouštět skleníkové plyny** a dosáhnout takzvané klimatické neutrality. Roli však nehraje pouze to, kdy skutečně snížíme množství vypouštěných plynů na nulu, ale také trajektorie, podle které toto snížení bude probíhat. Je velký rozdíl, pokud budeme až do roku 2050 vypouštět tolik emisí jako dnes, a pak náhle snížíme emise na nulu, nebo pokud je budeme snižovat rovnoměrně po celou dobu až do roku 2050 – první scénář by vedl přibližně k dvojnásobnému oteplení oproti druhému.
 
-    Množství emisí, které lze ještě vypustit, abychom nepřekročili určitou teplotní hranici, se označuje jako uhlíkový rozpočet. Cíl Pařížské dohody o udržení nárůstu teploty výrazně pod 2 °C lze tedy pomocí uhlíkového rozpočtu přeformulovat jako určité množství skleníkových plynů, které lidstvo ještě může vypustit, aby tohoto cíle dosáhlo.
+    **Množství emisí, které lze ještě vypustit, abychom nepřekročili určitou teplotní hranici, se označuje jako uhlíkový rozpočet**. Cíl Pařížské dohody o udržení nárůstu teploty výrazně pod 2 °C lze tedy pomocí uhlíkového rozpočtu přeformulovat jako určité množství skleníkových plynů, které lidstvo ještě může vypustit, aby tohoto cíle dosáhlo.
   content:
   - souvislost-emise-otepleni
   - emisni-scenare-pariz
@@ -131,9 +131,9 @@ subtopics:
   - koncept-cesty-k-neutralite
 
 - id:          "neutralita"
-  title:       "Uhlíková neutralita"
+  title:       "Klimatická neutralita"
   lead: |
-    Pro zastavení klimatické změny je nutné přestat vypouštět skleníkové plyny, neboli dosáhnout tzv. net-zero či klimatické neutrality. Výraz "net-zero" můžeme přeložit jako "čistá nula" a je tím myšleno, že daný stát či firma je uhlíkově neutrální, tedy odstraňuje z atmosféry stejné množství skleníkových plynů jako do atmosféry vypouští. Tato situace je také označována jako klimatická neutralita nebo uhlíková neutralita, ačkoli tento poslední pojem se někdy může týkat pouze oxidu uhličitého, nikoli všech skleníkových plynů. K dosažení uhlíkové neutrality se již přihlásily státy zodpovědné za téměř 90 % světových emisí oxidu uhličitého (aktuální k únoru 2022).
+    **Pro zastavení klimatické změny je nutné přestat vypouštět skleníkové plyny**, neboli dosáhnout tzv. net-zero či klimatické neutrality. Výraz "net-zero" můžeme přeložit jako "čistá nula" a je tím myšleno, že daný stát či firma je klimaticky neutrální, tedy odstraňuje z atmosféry stejné množství skleníkových plynů jako do atmosféry vypouští. Tato situace je také označována jako klimatická neutralita nebo uhlíková neutralita s tím, že druhý z pojmů se většinou týká pouze oxidu uhličitého, nikoli všech skleníkových plynů. **K dosažení uhlíkové neutrality se již přihlásily státy zodpovědné za téměř 90 % světových emisí oxidu uhličitého** (k únoru 2022).
   content:
   - emisni-zavazky
   - 2021-reserse-zavazky-statu
@@ -142,7 +142,7 @@ subtopics:
 - id:          "mitigace"
   title:       "Opatření ke snižování emisí"
   lead: |
-    Podíl jednotlivých sektorů na emisích skleníkových plynů poskytuje užitečné vodítko pro zaměření mitigačních snah. Největších emisních úspor může Česká republika dosáhnout proměnou svého energetického mixu. Jednotlivci však také mohou přispět ke snížení emisí, například snížením energetické náročnosti svých domácností nebo omezením automobilové dopravy, případně také nižší konzumací masa a mléčných výrobků.
+    Podíl jednotlivých sektorů na emisích skleníkových plynů poskytuje užitečné vodítko pro zaměření mitigačních snah. Největších emisních úspor může Česko dosáhnout **proměnou** svého **energetického mixu**. Jednotlivci však také mohou přispět ke snížení emisí, například **snížením energetické náročnosti** svých domácností nebo **omezením automobilové dopravy**, případně také **nižší konzumací masa a mléčných výrobků**.
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a ekonomika>opatreni.
   - potencial-zpusobu-snizeni-emisi
   - emisni-povolenky-ets
@@ -156,14 +156,14 @@ subtopics:
 - id:     "intenzity"
   title:  "Emisní intenzity ekonomik"
   lead: |
-    Emisní intenzita ekonomiky označuje množství skleníkových plynů vyprodukovaných na jednotku HDP a zpravidla se uvádí v gramech CO<sub>2</sub>eq na jeden dolar. Emisní intenzity tak uvádí další relativní vyjádření vedle emisí na osobu a často poskytují detailnější vhled do emisí jednotlivých zemí.
+    **Emisní intenzita ekonomiky označuje množství skleníkových plynů vyprodukovaných na jednotku HDP** a zpravidla se uvádí v gramech CO<sub>2</sub>eq na jeden dolar. Emisní intenzity tak vedle emisí na osobu slouží jako další relativní vyjádření a často poskytují detailnější vhled do emisí jednotlivých zemí.
 
-    Více rozvinuté země mají zpravidla méně emisně náročné ekonomiky, neboť služby tvoří větší podíl jejich hospodářství. Oproti tomu v méně rozvinutých zemích tvoří větší podíl hospodářství emisně náročné sektory: zemědělství, průmysl a stavebnictví. Emisní intenzity ekonomik také vysvětlují, proč některé státy se srovnatelnými emisemi na osobu mohou mít velice odlišnou životní úroveň.
+    Hospodářsky rozvinutější země mají zpravidla méně emisně náročné ekonomiky, neboť služby tvoří větší podíl jejich hospodářství. Oproti tomu v rozvíjejích se zemích tvoří větší podíl hospodářství emisně náročné sektory: zemědělství, průmysl a stavebnictví. Emisní intenzity ekonomik také vysvětlují, proč některé státy se srovnatelnými emisemi na osobu mohou mít velice odlišnou životní úroveň.
   content:  # U nového obsahu zvaž přidání také do ekonomika>pricina.
   - emise-svet-na-hdp
   - emisni-intenzity
 ---
 
-Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování asi ze 70 %. Oxid uhličitý uvolňujeme nejvíce spalováním fosilních paliv a dále kácením pralesů nebo výrobou oceli a cementu. Další významný skleníkový plyn **metan** (CH<sub>4</sub>) uniká hlavně při těžbě fosilních paliv a při chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – nejvíce z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
+Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování přibližně ze 70 %. Oxid uhličitý uvolňujeme především spalováním fosilních paliv, dále pak kácením pralesů nebo výrobou oceli a cementu. Dalším významný skleníkovým plynem je **metan** (CH<sub>4</sub>), který uniká hlavně při těžbě fosilních paliv a chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – pocházející zejména z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
 
-K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality** – nepřidávat další skleníkové plyny do atmosféry.
+K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality**, tedy nepřidávat do atmosféry více skleníkových plynů, než dokážeme zachytit.

@@ -8,19 +8,17 @@ published:     2022-07-01
 weight:        40
 
 dashboard:
-- title:       "Klimatické finance (2019)"
+- title:       "Klimatické finance"
   value:       "79,6 mld. $"
-  subtitle:    "přispěly ročně na klimatická opatření rozvinuté země rozvojovým"
+  subtitle:    "přispěly v roce 2019 na klimatická opatření rozvinuté země rozvojovým"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
-- title:       "Zpoplatnění uhlíku ve světě (2022)"
+- title:       "Zpoplatnění uhlíku ve světě"
   value:       "23 %"
-  subtitle:    "světových emisí je zpoplatněno daní nebo povolenkami"
-  value-vs:    "68"
-  subtitle-vs: "různých opatření"
+  subtitle:    "světových emisí k roku 2022 je zpoplatněno daní nebo povolenkami"
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
-- title:       "Výnosy ze zpoplatnění uhlíku (2021)"
+- title:       "Výnosy ze zpoplatnění uhlíku za rok 2021"
   value:       "84 mld. $"
   subtitle:    "**celosvětově**"
   value-vs:    "34 mld. $"
@@ -31,25 +29,25 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    **Z ekonomického pohledu představuje klimatická změna negativní externalitu**, tedy nechtěný vedlejší důsledek produkce. Jakým způsobem je možné tržní prostředí narovnat aby změnu klimatu zohlednilo?
+    **Z ekonomického pohledu představuje klimatická změna negativní externalitu**, tedy nechtěný vedlejší důsledek produkce zboží a služeb. Jakým způsobem je možné tržní prostředí narovnat, aby dopady na změnu klimatu zohlednňovalo?
   commented-content:
   - slug: "fit-for-55"
     comment-key: "1"
     comment: |
-      Nastavování tržního prostředí je role států. **EU postupně zavádí klimatická opatření**, jejich posílení přináší balíček opatření **Fit for 55**.
+      Podobu tržního prostředí ovlivňují jednotlivé státy, případně legislativa EU. Posílení legislativy v oblasti klimatu přináší unijní balíček opatření **Fit for 55**.
   - slug: "emisni-povolenky-ets"
     comment-key: "2"
     comment: |
-      Stěžejním mitigačním opatřením je **zpoplatnění emisí skleníkových plynů** podle principu "znečišťovatel platí".
+      Stěžejním mitigačním opatřením je **zpoplatnění emisí skleníkových plynů** na základě principu "znečišťovatel platí".
   - slug: "klimaticke-finance"
     comment-key: "3"
     comment: |
-      Externality mimo hranice států mohou narovnat finanční transfery. **Bohaté státy se zavázaly finančně pomáhat těm chudším s transformací jejich hospodářství**.
+      Externality přesahující hranice státu pomáhají narovnat finanční transfery. **Hospodářsky rozvinuté státy se zavázaly finančně pomáhat rozvíjejícím se s transformací jejich hospodářství**.
 
 - id:          "pricina"
-  title:       "Ekonomická činnost jako příčina klimatické změny"
+  title:       "Ekonomická činnost jako příčina změny klimatu"
   lead: |
-    Emise skleníkových plynů z ekonomického pohledu závisí na velikosti světového HDP a emisní intenzitě světového hospodářství. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné cesty k transformaci své ekonomické činnosti.
+    **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinemisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
   content:  # U nového obsahu zvaž přidání také do emise>intenzity.
   - emise-svet-na-hdp
   - emisni-intenzity
@@ -57,17 +55,17 @@ subtopics:
   - akteri-klimatickych-jednani
 
 - id:          "ekonomicke-dopady"
-  title:       "Ekonomické dopady klimatické změny"
+  title:       "Ekonomické dopady"
   lead: |
-    Pokračující změna klimatu povede k obrovským ekonomickým škodám, obzvláště pokud se nám nepodaří dost rychle zastavit. Jaké dopady musíme očekávat a jak se dají vyčíslit?
+    **Pokračující změna klimatu povede k obrovským ekonomickým škodám**, zvlášť pokud se nám nepodaří zastavit dostatečně rychle. Jaké dopady na ekonomiku lze očekávat a jak je vyčíslit?
   content:  # U nového obsahu zvaž přidání také do klimaticka-zmena>dopady.
   - 2006-sternova-zprava
   - 23-dopady-zmen-klimatu
 
 - id:          "opatreni"
-  title:       "Zpoplatnění emisí skleníkových plynů a další opatření"
+  title:       "Zpoplatnění emisí"
   lead: |
-    Mitigace změny klimatu stojí na efektivních státních opatřeních, které narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu jednotlivých firem. Klíčovým pilířem těchto opatření je zpoplatnění emisí skleníkových plynů.
+    Mitigace změny klimatu stojí na efektivních tržních a regulačních opatřeních, které **narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu** jednotlivých firem. Klíčovým pilířem těchto opatření je **zpoplatnění emisí skleníkových plynů**.
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
@@ -80,7 +78,7 @@ subtopics:
 - id:          "transformace"
   title:       "Hospodářská a společenská transformace"
   lead: |
-    Lidská společnost neusiluje pouze o snížení emisí skleníkových plynů – v takovém případě bychom mohli jednoduše zanechat veškerých aktivit. Lidé mají širokou škálu potřeb, cílem tedy je nalezení cesty ke stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů. Jak uskutečnit tuto hospodářskou a společenskou transformaci je svým způsobem složitější otázka než samotná fyzika klimatické změny.
+    Lidská společnost neusiluje pouze o snížení emisí skleníkových plynů – v takovém případě bychom mohli jednoduše zanechat veškerých aktivit. Lidé mají širokou škálu potřeb, **cílem je tedy nalezení cesty ke stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů**. Jak uskutečnit tuto hospodářskou a společenskou transformaci je svým způsobem složitější otázka než samotná fyzika klimatické změny.
   content:
   - nizkouhlikova-spolecnost
   - adaptacni-strategie-cr
@@ -93,12 +91,12 @@ subtopics:
 - id:          "finance"
   title:       "Financování klimatických opatření"
   lead: |
-    Hospodářská transformace a adaptace na změny klimatu vyžaduje významné investice. Jaké změny ve finančním sektoru a v mezinárodních finančních trasferech to vyžaduje?
+    **Hospodářská transformace a adaptace na změny klimatu vyžaduje významné investice**. Jaké změny ve finančním sektoru a v mezinárodních finančních trasferech to vyžaduje?
   qa:
   -
     q: "Co označuje pojem klimatické finance?"
     a: |
-      Pojem "klimatické finance" označuje závazek rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe zvládnout klimatickou změnu a její dopady. V roce 2009 na klimatické konferenci COP15 v Kodani se vyspělé země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
+      Pojem "klimatické finance" označuje závazek hospodářsky rozvinutých států finančně přispívat rozvíjecícím se zemím, aby dokázaly lépe čelit klimatické změně a jejím dopadům. V roce 2009 na klimatické konferenci COP 15 v Kodani se rozvinuté země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvíjejícm se státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
 
   content:
   - fondy-eu
@@ -107,6 +105,6 @@ subtopics:
   - klimaticke-finance
 ---
 
-Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná bezprecendentní hospodářská transformace.
+Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná **bezprecendentní hospodářská transformace**.
 
-Do finanční rozvahy vstupují dvě neznámé: **náklady mitigace změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisnímu fungování společnosti, a **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dost rychle. Obě neznámé je těžké odhadovat, obě budou nejspíš značné. Proto je klíčové volit efektivní **mitigační opatření**, která snižují náklady transformace a efektivní **adaptační opatření**, která omezují klimatické škody.
+Do finanční rozvahy vstupují dvě neznámé: **náklady mitigace změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisní společnosti, a **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dostatečně rychle. Obě neznámé je těžké odhadovat, obě budou pravděpodobně značné. Proto je klíčové volit efektivní **mitigační opatření**, která snižují náklady transformace a efektivní **adaptační opatření**, která omezují klimatické škody.
