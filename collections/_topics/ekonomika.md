@@ -42,12 +42,12 @@ subtopics:
   - slug: "klimaticke-finance"
     comment-key: "3"
     comment: |
-      Externality přesahující hranice státu pomáhají narovnat finanční transfery. **Hospodářsky rozvinuté státy se zavázaly finančně pomáhat rozvíjejícím se s transformací jejich hospodářství**.
+      Externality přesahující hranice státu pomáhají řešit finanční transfery. **Rozvinuté státy se zavázaly finančně pomáhat těm rozvojovým s transformací jejich hospodářství**.
 
 - id:          "pricina"
   title:       "Ekonomická činnost jako příčina změny klimatu"
   lead: |
-    **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinemisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
+    **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
   content:  # U nového obsahu zvaž přidání také do emise>intenzity.
   - emise-svet-na-hdp
   - emisni-intenzity

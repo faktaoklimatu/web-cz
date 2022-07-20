@@ -156,5 +156,3 @@ subtopics:
 Změna klimatu představuje globální problém: vypouštění emisí skleníkových plynů v jedné části světa ovlivňuje klima i v jeho dalších částech. Její řešení proto **vyžaduje spolupráci na regionální i globální úrovni**.
 
 Mezinárodní jednání slouží jako **platforma pro spolupráci, sdílení perspektiv a know-how**. Mezinárodní dohody mají velkou symbolickou hodnotu a současně představují důležitý **rámec pro politiku a legislativu** na národní úrovni. Národní legislativa pak utváří prostředí pro státní orgány, podniky i občany.
-
-<!-- TODO: ještě něco doplnit? -->
