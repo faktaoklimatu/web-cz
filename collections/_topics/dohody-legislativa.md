@@ -50,9 +50,6 @@ subtopics:
     a: |
       Velkou roli hraje to, zda je obsah dohody ukotven i legislativně. **Klimatické cíle EU obsažené v Zelené dohodě pro Evropu jsou ukotveny** v Evropském klimatickém zákonu, a jsou tedy právně vymahatelné. Stejně tak je právně závazná Pařížská dohoda. V mnoha státech světa, např. v Nizozemsku nebo Francii, již uspěly **klimatické žaloby** žalující tamní vlády za nedostatečnou aktivitu v naplňování klimatických závazků. Klimatická žaloba uspěla v červnu 2022 i v Česku, kdy spolek občanů žaloval vládu a příslušná ministerstva.
 
-  - q: "Jaké klimatické dohody existují?"
-    a: |
-      Na evropské úrovni jde zejména o **Zelenou dohodu pro Evropu** (European Green Deal) a s ní související Evropský klimatický zákon (Evropský právní rámec pro klima) a balíček opatření Fit for 55. Na světové úrovni je to Rámcová úmluva o změně klimatu (UNFCCC), jejíž smluvní strany se každoročně schází v rámci Konference smluvních stran (COP). Významným předělem bylo dosažení **Pařížské dohody** v roce 2015, ve které se státy zavázaly **udržet oteplení planety pod 2 °C a zároveň se snažit nepřekročit hranici 1,5 °C** oproti předindustriálnímu období.
   - q: "Kdo se mezinárodních klimatických jednání účastní?"
     a: |
       Aktéry mezinárodních klimatických jednání jsou zejména **státy**, které pro silnější vyjednávací pozice mohou vytvářet koalice. Koalice tzv. podobně smýšlejících států (*like-minded countries*) tvoří např. malé ostrovní státy nebo státy Afriky. Do klimatických vyjednávání mohou více či méně zasahovat, např. lobbyingem, **businessoví hráči** či **neziskový sektor**. Důležitá je také přítomnost **médií**, která dění na summitech zprostředkovávají veřejnosti.
