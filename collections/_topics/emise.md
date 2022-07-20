@@ -44,7 +44,7 @@ subtopics:
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **ČR je** v přepočtu na obyvatele **velkým producentem skleníkových plynů**: vyprodukuje 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
+      **ČR je** v přepočtu na osobu **velkým producentem skleníkových plynů**: vyprodukuje 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
   - slug: "emise-cr-detail"
     comment-key: 3
     comment: |
@@ -164,6 +164,6 @@ subtopics:
   - emisni-intenzity
 ---
 
-Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování přibližně ze 70 %. Oxid uhličitý uvolňujeme především spalováním fosilních paliv, dále pak kácením pralesů nebo výrobou oceli a cementu. Dalším významný skleníkovým plynem je **metan** (CH<sub>4</sub>), který uniká hlavně při těžbě fosilních paliv a chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – pocházející zejména z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
+Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování přibližně ze 70 %. Oxid uhličitý uvolňujeme především spalováním fosilních paliv, dále pak kácením pralesů nebo výrobou oceli a cementu. Dalším významným skleníkovým plynem je **metan** (CH<sub>4</sub>), který uniká hlavně při těžbě fosilních paliv a chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – pocházející zejména z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
 
-K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality**, tedy nepřidávat do atmosféry více skleníkových plynů, než dokážeme zachytit.
+K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality**, tedy nepřidávat další skleníkové plyny do atmosféry
