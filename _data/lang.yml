@@ -8,6 +8,7 @@ navigation:
     failed: "Hledání nefunguje. Možná je chyba v připojení k internetu?"
     hide: "Zrušit"
     label: "Hledat"
+  first-id: "uvod"
 
 footer:
   get-newsletter: "Odebírejte newsletter"
