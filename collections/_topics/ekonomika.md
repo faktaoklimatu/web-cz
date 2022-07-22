@@ -53,8 +53,8 @@ subtopics:
       Externality přesahující hranice státu pomáhají řešit finanční transfery. **Rozvinuté státy se zavázaly finančně pomáhat těm rozvojovým s transformací jejich hospodářství**.
 
 - id:          "pricina"
-  title:       "Příčina klimatické změny v ekonomické činnosti"
-  title-short: "Příčina klimatické změny"
+  title:       "Ekonomická činnost jako příčina změny klimatu"
+  title-short: "Ekonomická činnost jako příčina"
   lead: |
     **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
   content:  # U nového obsahu zvaž přidání také do emise>intenzity.
