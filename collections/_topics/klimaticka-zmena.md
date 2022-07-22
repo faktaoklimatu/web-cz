@@ -9,27 +9,32 @@ weight:        10
 
 dashboard:
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: 3
   value:       "**419** ppm"
   subtitle:    "**koncentrace CO<sub>2</sub>** v atmosféře v roce 2022"
   # comment:     "(celých 10 000 let před průmyslovou revolucí byla stabilní koncentrace ~270 ppm)"
   source:      "Fakta o klimatu"
   source-url:  "/koncentrace-co2"
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: 3
   value:       "**+ 1,2 °C**"
   subtitle:    "**oteplení světa** oproti druhé půlce 19. století"
   # comment:     "(to je asi asi +0,2 °C za dekádu)"
   source:      "Fakta o klimatu"
   source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: 3
   value:       "**+ 2,1 °C**"
   subtitle:    "**oteplení Česka** od roku 1960"
   # comment:     "(to je asi asi +0,35 °C za dekádu)"
   source:      "Fakta o klimatu"
   source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
 - type:        "compare"
+  col-lg-size: "4-5"
+  col-xl-size: 4
   title:       "**Zalednění severního oceánu**"
   data:
   - value:     "**7,5** mil. km²"
@@ -39,6 +44,8 @@ dashboard:
   source:      "NSIDC"
   source-url:  "http://nsidc.org/arcticseaicenews/2021/09/"
 - type:        "compare"
+  col-lg-size: 5
+  col-xl-size: "4-5"
   title:       "**Očekávaný nárůst hladin oceánů o**"
   data:
   - value:     "**50–80** cm"

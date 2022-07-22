@@ -9,6 +9,7 @@ weight:        20
 
 dashboard:
 - type:        "compare"
+  col-xl-size: "3-5"
   title:       "**Celkové emise** za rok 2018"
   data:
   - region:    "world"
@@ -20,6 +21,7 @@ dashboard:
   source:      "EDGAR, European Commission"
   source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
 - type:        "compare"
+  col-xl-size: "3-5"
   title:       "**Emise na osobu** za rok 2015"
   data:
   - region:    "world"
@@ -31,6 +33,7 @@ dashboard:
   source:      "Fakta o klimatu"
   source-url:  "/emise-svet-na-osobu"
 - type:        "single"
+  col-xl-size: "3-5"
   value:       "**87 %** emisí CO<sub>2</sub>"
   subtitle:    "pochází ze **zemí směřujících k uhlíkové neutralitě**"
   source:      "Fakta o klimatu"

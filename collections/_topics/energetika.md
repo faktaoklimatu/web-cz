@@ -9,7 +9,9 @@ weight:        30
 
 dashboard:
 - type:        "compare"
-  title:       "**Emisní faktor elektřiny** za rok 2019"
+  col-lg-size: "5"
+  col-xl-size: "4-5"
+  title:       "**Emisní faktor elektřiny** <span class='nobr'>za rok 2019</span>"
   data:
   - region:    "cz"
     value:     "**369** g CO<sub>2</sub>eq"
@@ -20,6 +22,7 @@ dashboard:
   source:      "Fakta o klimatu"
   source-url:  "/elektrina-na-osobu-eu"
 - type:        "compare"
+  col-lg-size: "3-5"
   title:       "**Podíl bezemisní elektřiny** (2019)"
   data:
   - region:    "cz"
@@ -29,7 +32,8 @@ dashboard:
   source:      "Fakta o klimatu"
   source-url:  "/elektrina-na-osobu-eu"
 - type:        "compare"
-  title:       "**Růst solárních zdrojů** (2013–2021)"
+  col-lg-size: "3-5"
+  title:       "**Růst solárních zdrojů** <span class='nobr'>(2013–2021)</span>"
   data:
   - region:    "cz"
     value:     "**+5** %"
