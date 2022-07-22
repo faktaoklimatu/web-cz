@@ -75,17 +75,16 @@ První tři oddíly mají každý přes 1000 stran. Takový text je podrobným s
 * Shrnutí pro politické představitele (*Summary for Policy Makers;* velmi stručný rozcestník k dalším informacím, který má posloužit především základní orientaci, cca 30 stran)
 * Delší shrnutí (*Technical Summary;* shrnuje klíčové body celé zprávy – co je nového apod., cca 70–100 stran)
 
+Na přípravě každého oddílu hodnotící zprávy se podílí velké množství autorů a probíhá velice důkladné připomínové řízení. Například **Fyzikální základy** jsou dílem celkem **234 autorů**[^1], kteří se museli vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací.
+
 ## Co nového přináší Šestá hodnotící zpráva?
 
-V srpnu 2021 vyšel první oddíl AR6 (Fyzikální základy), další dva oddíly byly publikovány na jaře 2022. Vydání Souhrnné zprávy: podzim 2022. Spíše než zásadní objevy či změny přinesla AR6 zpřesnění dosavadních poznatků a odhadů budoucího vývoje. Díky tomu máme teď například mnohem jasnější představu:
+V srpnu 2021 vyšel **první oddíl AR6** (Fyzikální základy), další dva oddíly byly publikovány na jaře 2022, Souhrnná zpráva pak na podzim 2022. Spíše než zásadní objevy či změny přinesla první část AR6 **zpřesnění dosavadních poznatků a odhadů budoucího vývoje**. Díky tomu máme teď například mnohem jasnější představu:
 
 * o probíhajících změnách klimatu a možných scénářích dalšího vývoje – např. přesnější odhad vzestupu hladiny moří a oceánů do konce tohoto století a ve stoletích následujících
 * o citlivosti klimatu na rostoucí koncentrace skleníkových plynů, extrémních projevech počasí a o tom, jak tyto projevy souvisejí s lidskou činností
-* o lokálních důsledcích klimatických změn a o tom, jaká rizika v dané oblasti tyto změny přinášejí (**součástí zprávy bude interaktivní regionální atlas**)
 
-Na první části Šesté hodnotící zprávy se podílelo celkem **234 autorů**[^1], kteří se museli v připomínkovém řízení vypořádat s téměř **80 000** komentáři. Text obsahuje více než **14 000 citací** vědeckých prací.
-
-Oddíl zprávy připravovaný Pracovní skupinou II se zaměřuje na zranitelnost systémů (přírodních, socio-ekonomických), pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V oddíle třetím (Pracovní skupina III) se pak dočteme o zmírnění dopadů (mitigaci) klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.
+**Druhý oddíl AR6** (Dopady, adaptace a zranitelnost) se zaměřuje na zranitelnost přírodních i socio-ekonomických systémů, pozitivní a negativní důsledky klimatických změn a možnosti adaptace na tyto změny. V **oddíle třetím** (Mitigace) se pak dočteme o možnostech zmírnění dopadů klimatických změn a najdeme zde zhodnocení účinnosti různých metod využívaných ke snižování emisí skleníkových plynů a odstraňování těchto plynů z atmosféry.
 
 ## Jak zpráva souvisí s mezinárodními klimatickými konferencemi COP?
 
