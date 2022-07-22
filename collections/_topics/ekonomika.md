@@ -9,20 +9,23 @@ weight:        40
 
 dashboard:
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: "3"
   value:       "**79,6** mld. $"
   subtitle:    "přispěly rozvinuté země na klimatická opatření v roce 2019 **rozvojovým zemím**"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
 - type:       "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: "3"
   value:       "**23** %"
   subtitle:    "**světových emisí je zpoplatněno** daní nebo povolenkami (v roce 2022)"
   source:      "World Bank"
   source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
 - type:        "compare"
-  col-size:    5
-  title:       "**Výnosy ze zpoplatnění uhlíku** za rok 2021"
+  col-lg-size: "5"
+  col-xl-size: "4-5"
+  title:       "**Výnosy ze zpoplatnění uhlíku** <span class='nobr'>za rok 2021</span>"
   data:
   - region:    "world"
     value:     "**84** mld. $"

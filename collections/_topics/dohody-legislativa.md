@@ -9,13 +9,15 @@ weight:        50
 
 dashboard:
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: 3
   value:       "**87 %** emisí CO<sub>2</sub>"
   subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/infografiky/emisni-zavazky"
 - type:        "single"
-  col-size:    3
+  col-lg-size: "3-5"
+  col-xl-size: 3
   value:       "do roku **2050**"
   subtitle:    "se **EU** zavázala dosáhnout **klimatické neutrality**"
   source:      "Evropská komise"
