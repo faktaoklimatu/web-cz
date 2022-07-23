@@ -7,12 +7,14 @@ slug: index
     <div class="container">
         <h1 class="display-1" id="home">Fakta o změně<br>klimatu</h1>
         <span class="tagline">Veřejně dostupné<br>infografiky a datasety</span>
-        <p class="mb-5">Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro <a href="/jak-pouzivat" title="Jak používat naše materiály">další použití</a>.<br/>
-            <a href="{{ site.fundraising }}" class="btn btn-primary mt-3"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
-            <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary mt-3"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
-            <a href="#o-projektu" class="btn btn-secondary mt-3"><i class="fas fa-fw fa-info"></i> O projektu</a>
+        <p>Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce (ČHMÚ, NASA, Eurostat a jiné) a zpracováváme z nich grafy a infografiky pro <a href="/jak-pouzivat" title="Jak používat naše materiály">další použití</a>.<br/>
         </p>
-        <ul class="nav nav-tabs" role="tablist">
+        <p class="intro-buttons">
+            <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
+            <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
+            <a href="#o-projektu" class="btn btn-secondary"><i class="fas fa-fw fa-info"></i> O projektu</a>
+        </p>
+        <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-end overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Klima a extrémy</h2>
             </li>
@@ -138,12 +140,12 @@ Debata o klimatické změně je komplikovaná a na všech stranách plná zbyte�
 Jsme tým expertů a expertek zabývajících se různými obory – přírodovědou, IT, společenskými vědami, pedagogikou nebo komunikací. Finance na provoz získáváme od dárců, nepracujeme na ničí objednávku. Při naší činnosti komunikujeme s politiky, energetickými firmami i aktivistickými hnutími. Fakta o klimatu jsou však nezávislý projekt, který může podpořit každý.
 
 <div class="row">
-  <a href="/o-nas" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-info"></i> Více o projektu</a>
-  <a href="{{ site.fundraising }}" class="btn btn-primary btn-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
+  <a href="/o-nas" class="btn btn-primary btn-md-lg col"><i class="fas fa-fw fa-info"></i> Více o projektu</a>
+  <a href="{{ site.fundraising }}" class="btn btn-primary btn-md-lg col"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
 </div>
 
-<a href="https://www.climate-kic.org/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets-local/img/logo-climate-kic.png" alt="Climate-KIC logo"/></a>
-<a href="https://climatechallenge.impacthub.cz/" class="no-ext-link-icon"><img class="index-logos float-right" src="/assets-local/img/logo-climate-challenge.png" alt="Climate Challenge logo"/></a>
+<a href="https://www.climate-kic.org/" class="no-ext-link-icon"><img class="index-logos float-md-right" src="/assets-local/img/logo-climate-kic.png" alt="Climate-KIC logo"/></a>
+<a href="https://climatechallenge.impacthub.cz/" class="no-ext-link-icon"><img class="index-logos float-md-right" src="/assets-local/img/logo-climate-challenge.png" alt="Climate Challenge logo"/></a>
 
 {:.lead}
 V roce 2020 jsme zvítězili v akceleračním programu [Climate Challenge](https://climatechallenge.impacthub.cz/) pořádaným sítí podnikatelských inkubátorů [Impact Hub](https://impacthub.cz). V rámci toho náš projekt podpořila evropská iniciativa [Climate-KIC](https://www.climate-kic.org/), která hledá inovativní řešení na klimatickou krizi.
