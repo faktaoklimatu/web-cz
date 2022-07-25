@@ -9,6 +9,7 @@ navigation:
     hide: "Zrušit"
     label: "Hledat"
   first-id: "uvod"
+  preview-boxes-expand: "Více"
 
 footer:
   get-newsletter: "Odebírejte newsletter"
