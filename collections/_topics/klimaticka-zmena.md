@@ -146,6 +146,6 @@ subtopics:
   - tropicke-dny-praha
 ---
 
-**Současná klimatická změna je způsobena lidskou činností**. Tím se výrazně liší od dřívějších změn klimatu. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s dalšími důsledky, kterými jsou: tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a další extrémní projevy počasí.
+**Současná klimatická změna je způsobena činností člověka**. Tím se výrazně liší od změn klimatu v minulosti. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s důsledky jako tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a jiné extrémní projevy počasí.
 
-**Dopady změny klimatu**, které budeme potkávat v následujících desetiletích, **přímo závisí na množství dalších emisí skleníkových plynů**. Tedy na tom, jak rychle zastavíme spalování fosilních paliv a další emisní činnosti.
+**Dopady změny klimatu** na společnost i přírodu, s nimiž se budeme setkávat v následujících desetiletích, **budou přímo závislé na množství skleníkových plynů, které ještě do atmosféry vypustíme**, ať už spalováním fosilních paliv nebo jinými aktivitami, při nichž vzniká velké množství emisí.
