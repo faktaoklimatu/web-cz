@@ -174,6 +174,6 @@ subtopics:
   - emisni-intenzity
 ---
 
-Lidmi způsobené emise skleníkových plynů posilují skleníkový efekt atmosféry a vedou tak k oteplení Země. Hlavní skleníkový plyn je **oxid uhličitý** (CO<sub>2</sub>), který přispívá k oteplování přibližně ze 70 %. Oxid uhličitý uvolňujeme především spalováním fosilních paliv, dále pak kácením pralesů nebo výrobou oceli a cementu. Dalším významným skleníkovým plynem je **metan** (CH<sub>4</sub>), který uniká hlavně při těžbě fosilních paliv a chovu dobytka. Skleníkovými plyny jsou i **oxid dusný** – pocházející zejména z používání umělých dusíkatých hnojiv – ⁠a řada synteticky vyráběných **fluorovaných plynů**.
+Lidmi způsobené emise skleníkových plynů zesilují v atmosféře skleníkový efekt, což vede k oteplování planety. Hlavním skleníkovým plynem je **oxid uhličitý** (CO<sub>2</sub>), který k oteplování přispívá přibližně ze 70 %. Uvolňuje se především při spalování fosilních paliv, ale například i při kácení pralesů nebo výrobě oceli a cementu. Dalším významným skleníkovým plynem je **metan** (CH<sub>4</sub>), který do atmosféry uniká hlavně při těžbě fosilních paliv a chovu dobytka. Ke skleníkovým plynům patří i **oxid dusný** (vznikající zejména při používání umělých dusíkatých hnojiv) ⁠a řada synteticky vyráběných **fluorovaných plynů**.
 
-K zastavení klimatické změny je klíčové dosáhnout **klimatické neutrality**, tedy nepřidávat další skleníkové plyny do atmosféry.
+K zastavení klimatické změny je klíčové dosáhnout celosvětově tzv. **klimatické neutrality** – tedy stavu, kdy lidstvo už svou činností nebude přidávat do atmosféry žádné skleníkové plyny.
