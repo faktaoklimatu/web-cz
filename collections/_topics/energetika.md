@@ -167,6 +167,6 @@ subtopics:
   - 2-transformace-energetiky
 ---
 
-**Energetika se zabývá získáváním, přeměnou a distribucí všech forem energie.** V první řadě jde o **těžbu** a distribuci uhlí, ropy, zemního plynu a dalších paliv. Na to navazuje jejich zpracování, tedy **výroba a distribuce elektřiny a tepla** stejně jako **pohonných hmot**. V poslední řadě pak **přímé spalování** fosilních paliv v průmyslu, v domácnostech a ve službách.
+Energetika se zabývá **získáváním, přeměnou a distribucí všech forem energie.** V první řadě jde o **těžbu** a distribuci uhlí, ropy, zemního plynu a dalších paliv. Na to navazuje jejich zpracování, tedy **výroba a distribuce elektřiny, tepla a pohonných hmot**. Kromě toho se fosilní paliva také **spalují přímo**: v průmyslu, v domácnostech a ve službách.
 
-Energetika je stěžejní oblastí dekarbonizace: **těžba a spalování fosilních paliv stojí za ¾ celosvětových emisí** <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>. Nahrazení fosilních paliv závisí především na bezemisní elektřině a na elektrifikaci dopravy, vytápění i průmyslu. **Nejvíce pozornosti zde proto věnujeme výrobě elektřiny.**
+Právě energetika je z hlediska dekarbonizace stěžejní oblastí: **těžba a spalování fosilních paliv stojí za ¾ celosvětových emisí** <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>. Nahrazení fosilních paliv nicméně vyžaduje přechod na bezemisní elektřinu (například z obnovitelných zdrojů) a elektrifikaci dopravy, vytápění i průmyslu. Nejvíce pozornosti je proto v této sekci věnováno **výrobě elektřiny.**
