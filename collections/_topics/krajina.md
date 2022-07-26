@@ -103,8 +103,6 @@ subtopics:
 
 ---
 
-**Lidstvo je existenčně závislé na zdravé krajině.** Krajina ovšem nemůže být zdravá a odolná bez přírodní pestrosti a členitosti.
+**Existence lidstva závisí na zdravé krajině.** Tedy takové, kde je dostatek vody, kde nechybí bujná a pestrá vegetace a kde je doma bezpočet druhů živočichů. Zdravá a rozmanitá krajina nás živí a zároveň pro nás vytváří prostředí, kde je možné se cítit doma a kde se dá příjemně žít. 
 
-Pokračující **změna klimatu výrazně dopadne na zdraví krajiny a přírodní pestrost**. Podle IPCC může v tomto století podle míry oteplení vymřít 14-33 % všech suchozemských druhů rostlin a zvířat. Oteplení může navíc překročit **body zlomu některých velkých ekosystémů**, jako jsou korálové útesy nebo deštné pralesy. To by u nich způsobilo nevratné změny nebo i zánik.
-
-Kromě toho je rozmanitost přírody nesporně hodnotná _sama o sobě_. **Zastavení změny klimatu a lepší péče o krajinu jsou tak klíčové pro lidstvo i samotnou přírodu.**
+Pokračující **změna klimatu bude mít na přírodu významný dopad** a ovlivní také pestrost živého světa. Bude-li oteplování pokračovat, pravděpodobně dojde k překročení **bodů zlomu u některých velkých ekosystémů**, jako jsou například korálové útesy, severská tajga nebo deštné pralesy, což v těchto ekosystémech způsobí nevratné změny a může vést až k jejich zániku, s významnými důsledky také pro člověka. Zastavení změny klimatu a lepší péče o krajinu, která zvýší její odolnost a schopnost adaptace, jsou proto klíčové nejen pro přírodu, ale i pro lidstvo.
