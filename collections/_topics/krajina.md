@@ -103,6 +103,5 @@ subtopics:
 
 ---
 
-**Existence lidstva závisí na zdravé krajině.** Tedy takové, kde je dostatek vody, kde nechybí bujná a pestrá vegetace a kde je doma bezpočet druhů živočichů. Zdravá a rozmanitá krajina nás živí a zároveň pro nás vytváří prostředí, kde je možné se cítit doma a kde se dá příjemně žít. 
-
-Pokračující **změna klimatu bude mít na přírodu významný dopad** a ovlivní také pestrost živého světa. Bude-li oteplování pokračovat, pravděpodobně dojde k překročení **bodů zlomu u některých velkých ekosystémů**, jako jsou například korálové útesy, severská tajga nebo deštné pralesy, což v těchto ekosystémech způsobí nevratné změny a může vést až k jejich zániku, s významnými důsledky také pro člověka. Zastavení změny klimatu a lepší péče o krajinu, která zvýší její odolnost a schopnost adaptace, jsou proto klíčové nejen pro přírodu, ale i pro lidstvo.
+**Existence lidstva závisí na zdravé krajině.** Tedy takové, kde je dostatek vody, kde nechybí pestrá vegetace a kde je doma bezpočet druhů živočichů. Zdravá a rozmanitá krajina nás všechny živí a zároveň vytváří prostředí, kde se dá příjemně žít. 
+**Změna klimatu má a bude mít na přírodu významný dopad**. Bude-li oteplování pokračovat, pravděpodobně dojde k překročení **bodů zlomu u některých velkých ekosystémů**, jako jsou korálové útesy, severská tajga nebo deštné pralesy, což v těchto ekosystémech způsobí nevratné změny a může to vést až k jejich zániku, s významnými důsledky také pro člověka. Zastavení klimatické změny a lepší péče o krajinu, která zvýší její schopnost adaptace na měnící se podmínky, je proto zásadní nejen pro přírodu, ale i pro lidstvo.
