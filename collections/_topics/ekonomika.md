@@ -12,7 +12,7 @@ dashboard:
   col-lg-size: "3-5"
   col-xl-size: "3"
   value:       "**79,6** mld. $"
-  subtitle:    "přispěly rozvinuté země na klimatická opatření v roce 2019 **rozvojovým zemím**"
+  subtitle:    "přispěly rozvinuté státy **rozvojovým zemím na klimatická opatření** (v roce 2019)"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
 - type:       "single"
