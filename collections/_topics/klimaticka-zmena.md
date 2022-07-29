@@ -20,7 +20,7 @@ dashboard:
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "**+ 1,2 °C**"
-  subtitle:    "**oteplení světa** oproti druhé půlce 19. století"
+  subtitle:    "**oteplení světa** od druhé poloviny 19. století"
   # comment:     "(to je asi asi +0,2 °C za dekádu)"
   source:      "Fakta o klimatu"
   source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
@@ -35,7 +35,7 @@ dashboard:
 - type:        "compare"
   col-lg-size: "4-5"
   col-xl-size: 4
-  title:       "**Zalednění severního oceánu**"
+  title:       "**Zalednění Severního ledového oceánu**"
   data:
   - value:     "**7,5** mil. km²"
     subtitle:  "v září 1980"
@@ -46,7 +46,7 @@ dashboard:
 - type:        "compare"
   col-lg-size: 5
   col-xl-size: "4-5"
-  title:       "**Očekávaný nárůst hladin oceánů o**"
+  title:       "**Očekávané zvýšení hladin oceánů**"
   data:
   - value:     "**50–80** cm"
     subtitle:  "do roku **2100**"
