@@ -29,7 +29,7 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 ## Další data a souvislosti
 
 - **S kůrovcovou kalamitou se potýká nejen Česko, ale i řada dalších evropských zemí**[^2]. Hmyz přitom nezasahuje pouze smrkový porost, jiný druh kůrovce najdeme například na borovici. Napadený les je u nás ve většině případů vytěžen, takže vznikají rozsáhlé holiny, což zásadně mění charakter krajiny a má dopady na celý ekosystém. **Obrovské jsou i hospodářské škody** a lesníkům výrazně narůstají také **náklady spojené s obnovou lesa**. Tyto ztráty se zatím snaží co nejvíce kompenzovat stát, který přispívá na vysazování stromků. Vzhledem k rychlosti ubývání našich lesů jsou to však miliardové položky ze státního rozpočtu[^3] a dlouhodobá udržitelnost tohoto postupu je přinejmenším diskutabilní.
-- Kůrovcová kalamita a s ní související ztráty lesního porostu se negativně promítají také do celkového množství emisí České republiky. Zatímco zdravý les napomáhá zachycování uhlíku z atmosféry a ukládá jej na dlouhou dobu ve dřevě, dnes se v našich lesích děje pravý opak: uschlé stromy jsou vytěženy a často spáleny, a i když zůstanou na místě (například v bezzásahových zónách), dochází k uvolňování CO<sub>2</sub> do atmosféry při jejich rozkladu. Jinými slovy: **lesy v Česku jsou dnes producentem emisí a nemálo přispívají k uhlíkové bilanci země**[^2].
+- Kůrovcová kalamita a s ní související ztráty lesního porostu se negativně promítají také do celkového množství emisí České republiky. Zatímco zdravý les napomáhá zachycování uhlíku z atmosféry a ukládá jej na dlouhou dobu ve dřevě, dnes se v našich lesích děje pravý opak: uschlé stromy jsou vytěženy a často spáleny, a i když zůstanou na místě (například v bezzásahových zónách), dochází k uvolňování CO<sub>2</sub> do atmosféry při jejich rozkladu. Jinými slovy: **lesy v Česku jsou dnes producentem emisí a nemálo přispívají k uhlíkové bilanci země**[^2],[^4].
 
 - **K rozvoji kalamity v Česku přispěly** kromě klimatické změny, dlouhodobě nevhodného způsobu hospodaření v lesích a špatného stavu lesních půd[^5] **i další faktory** – například **nedostatek kvalifikované pracovní síly a techniky** potřebné na těžbu a asanaci kůrovcového dříví, značná **rozdrobenost vlastnické struktury lesů** (na Vysočině je to více než 30 000 vlastníků s lesním majetkem o rozloze do 1 hektaru[^6]), **nepružný systém veřejných zakázek** a další.
 
@@ -40,6 +40,8 @@ caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodi
 [^2]: [Důsledky kůrovcové kalamity na budoucnost lesnictví ve střední Evropě.](https://www.vulhm.cz/dusledky-kurovcove-kalamity-na-budoucnost-lesnictvi-ve-stredni-evrope/) Výzkumný ústav lesního hospodářství a myslivosti, v. v. i. 
 
 [^3]: [Zpráva o stavu lesa a lesního hospodářství České republiky v roce 2020.](https://eagri.cz/public/web/file/688968/Zprava_o_stavu_lesa_2020_web.pdf) Ministerstvo zemědělství ČR, 2021.
+
+[^4]: [České lesy se staly významným emitentem skleníkových plynů](https://ekolist.cz/cz/publicistika/nazory-a-komentare/jakubn-hruska-ceske-lesy-se-staly-vyznamnym-emitentem-sklenikovych-plynu)
 
 [^5]: Viz text [Proč umírají české jehličnaté lesy?](/explainery/umirani-ceskych-lesu)
 
