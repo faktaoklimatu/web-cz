@@ -9,8 +9,8 @@ navigation:
     hide: "Zrušit"
     label: "Hledat"
   first-id: "uvod"
-  preview-boxes-expand: "Více"
-  preview-boxes-collapse: "Méně"
+  preview-boxes-expand: "Více materiálů"
+  preview-boxes-collapse: "Méně materiálů"
 
 footer:
   get-newsletter: "Odebírejte newsletter"
