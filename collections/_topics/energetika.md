@@ -47,14 +47,14 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Výroba elektřiny v Evropě v současnosti prochází **rychlou transformací**. Vedou k ní tři tlaky: (1) za posledních 10 let prudce klesly [ceny obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice, a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech.
+    Výroba elektřiny v Evropě prochází v současnosti **rychlou transformací**. Vedou k ní tři tlaky: (1) za posledních 10 let prudce klesly [ceny elektřiny z obnovitelných zdrojů](/cena-energie), (2) výrazně zesílilo [zpoplatnění emisí skleníkových plynů](/zpoplatneni-emisi-svet) v energetice a (3) válka na Ukrajině připomněla nebezpečí velké závislosti na fosilních palivech.
 
-    Jak daleko jsme dnes v této transformaci? Jinými slovy, z jakých zdrojů se v současnosti vyrábí elektřina?
+    Jak daleko jsme v této transformaci dnes? Jinými slovy: z jakých zdrojů se v současné době elektřina vyrábí?
   commented-content:
   - slug: elektrina-cr
     comment-key: "ČR"
     comment: |
-      V Česku se stále **více než polovina elektřiny vyrábí z fosilních zdrojů**.
+      **Více než polovina elektřiny** se u nás stále vyrábí **z fosilních zdrojů**.
   - slug: elektrina-na-osobu-eu
     comment-key: "EU"
     comment: |
@@ -62,7 +62,7 @@ subtopics:
   - slug: elektrina-svet
     comment-key: "<i class='fa-solid fa-earth-europe'></i>"
     comment: |
-      **Celosvětově je dekarbonizace velká výzva, už ale dávno začala**. Např. Indie chce do roku 2030 vyrábět 50 % elektřiny z obnovitelných zdrojů.
+      **Celosvětově je dekarbonizace velká výzva. Dávno už ale začala**. Např. Indie chce do roku 2030 vyrábět 50 % elektřiny z obnovitelných zdrojů.
   qa:
   -
     q: "Jak může Česko snížit svoje emise v energetice?"
