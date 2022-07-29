@@ -42,7 +42,7 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Skleníkové plyny se do atmosféry dostávají **spalováním fosilních paliv** a dalšími procesy, jako například **kácením lesů, produkcí cementu, pěstováním rýže či chovem dobytka**. Pro volbu rychlých a účinných opatření ke snižování emisí je potřeba uvažovat, jaké lidské činnosti a jaké státy způsobují nejvíce emisí:
+    Skleníkové plyny se do atmosféry dostávají **spalováním fosilních paliv** a dalšími aktivitami spojenými s člověkem, jako je například **kácení lesů, produkce cementu, pěstování rýže či chov dobytka**. Při hledání rychlých a účinných opatření ke snižování emisí je třeba vzít v potaz, při jakých lidských činnostech a ve kterých státech vzniká emisí nejvíce:
   commented-content:
   - slug: "emise-svet"
     comment-key: 1
@@ -51,7 +51,7 @@ subtopics:
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **ČR je** v přepočtu na osobu **velkým producentem skleníkových plynů**: vyprodukuje 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
+      **ČR** je v přepočtu na osobu **velkým producentem skleníkových plynů**: 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
   - slug: "emise-cr-detail"
     comment-key: 3
     comment: |
