@@ -37,12 +37,12 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    **Z ekonomického pohledu představuje klimatická změna negativní externalitu**, tedy nechtěný vedlejší důsledek produkce zboží a služeb. Jakým způsobem je možné tržní prostředí narovnat, aby dopady na změnu klimatu zohlednňovalo?
+    **Z ekonomického hlediska představuje klimatická změna negativní externalitu**, tedy nechtěný vedlejší důsledek produkce zboží a služeb. Jakým způsobem je možné narovnat tržní prostředí, aby dopady na změnu klimatu zohledňovalo?
   commented-content:
   - slug: "fit-for-55"
     comment-key: "1"
     comment: |
-      Podobu tržního prostředí ovlivňují jednotlivé státy, případně legislativa EU. Posílení legislativy v oblasti klimatu přináší unijní balíček opatření **Fit for 55**.
+      Podobu tržního prostředí ovlivňuje národní a evropská legislativa. Posílení legislativy v oblasti klimatu přináší unijní balíček opatření **Fit for 55**.
   - slug: "emisni-povolenky-ets"
     comment-key: "2"
     comment: |
@@ -50,7 +50,7 @@ subtopics:
   - slug: "klimaticke-finance"
     comment-key: "3"
     comment: |
-      Externality přesahující hranice státu pomáhají řešit finanční transfery. **Rozvinuté státy se zavázaly finančně pomáhat těm rozvojovým s transformací jejich hospodářství**.
+      Externality přesahující hranice státu pomáhají řešit finanční transfery. **Rozvinuté státy se zavázaly, že finančně pomohou těm rozvojovým s transformací jejich hospodářství**.
 
 - id:          "pricina"
   title:       "Ekonomická činnost jako příčina změny klimatu"
