@@ -58,7 +58,7 @@ dashboard:
 subtopics:
   # Klimatická změna v kostce
 - lead: |
-    Jak se v složité problematice klimatu a jeho změn začít orientovat? Pro zjednodušení nabízíme tři zásadní vhledy:
+    Jak se vyznat ve složité problematice klimatu a jeho změn? Pro začátek je určitě dobré vědět, že:
   commented-content:
   - slug: "schema-klimaticke-zmeny"
     comment-key: 1
