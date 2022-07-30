@@ -14,7 +14,7 @@ slug: index
             <a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="btn btn-secondary"><i class="fab fa-fw fa-twitter"></i> Twitter</a>
             <a href="#o-projektu" class="btn btn-secondary"><i class="fas fa-fw fa-info"></i> O projektu</a>
         </p>
-        <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-end overflow-hidden" role="tablist">
+        <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Klima a extrémy</h2>
             </li>
