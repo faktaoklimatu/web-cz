@@ -7,6 +7,25 @@ sitemap:       false
 published:     2022-04-19
 weight:        60
 
+# TODO: doplnit zdroje
+dashboard:
+- type:        "single"
+  col-lg-size: "3"
+  value:       "**25** %"
+  subtitle:    "**savců** na Zemi ohroženo **vyhubením**"
+- type:        "single"
+  col-lg-size: "3"
+  value:       "**1,5 °C**"
+  subtitle:    "oteplení, které **nepřežije** naprostá většina **korálů**"
+- type:        "single"
+  col-lg-size: "3"
+  value:       "**53** %"
+  subtitle:    "**půdy** v ČR je kriticky ohroženo **erozí**"
+- type:        "single"
+  col-lg-size: "3"
+  value:       "**40** %"
+  subtitle:    "českých **podzemních vod** má nadlimitní množství **pesticidů**"
+
 subtopics:
   # 3 materiály, které byste neměli přehlédnout
 - lead: |
