@@ -76,7 +76,7 @@ subtopics:
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
-     Měření teploty z meteorologických stanic i družic, měření koncentrací skleníkových plynů ze současné atmosféry i z ledovcových vrtů, data o každoročních změnách v množství sněhu a ledu i data o vzestupu hladin oceánů - všechny tyto údaje umožňují představit si rychlost a rozsah probíhající klimatické změny a porovnat ji se změnami, kterými planeta procházela v minulosti.
+     Měření teploty z meteorologických stanic i družic, měření koncentrací skleníkových plynů ze současné atmosféry i z ledovcových vrtů, data o každoročních změnách v množství sněhu a ledu i data o vzestupu hladin oceánů – všechny tyto údaje umožňují představit si rychlost a rozsah probíhající klimatické změny a porovnat ji se změnami, kterými planeta procházela v minulosti.
   content:
   - teplotni-anomalie
   - teplota-cr
@@ -91,7 +91,7 @@ subtopics:
 - id:          "fyzika"
   title:       "Fyzikální základy a principy"
   lead: |
-    Skleníkové plyny zachytávají teplené záření. Dynamika. Uhlíkový cyklus
+    Skleníkové plyny zachytávají tepelné záření. Dynamika. Uhlíkový cyklus.
   qa:
   - q: "Co znamená citlivost klimatu?"
     a: |
@@ -114,7 +114,7 @@ subtopics:
 - id:          "dopady-budoucnost"
   title:       "Dopady a budoucí vývoj"
   lead: |
-    Vyšší teploty a častější sucha mají dopady na zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli taní horských ledovců chybí voda v povodích, která jsou jimi napájena. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, které budeme potkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují budoucí vývoj klimatické změny a její očekávané dopady.
+    Vyšší teploty a častější sucha nepříznivě ovlivňují zdraví lesů a pěstování potravin, vzestup hladin oceánů ohrožuje města na pobřeží a kvůli tání horských ledovců chybí voda v povodích, která jsou jimi napájena. To jsou příklady dopadů klimatické změny. **Velikost dopadů**, s nimiž se budeme setkávat v následujících desetiletích, přímo **závisí na tom, kolik skleníkových plynů do atmosféry ještě vypustíme**. Pro jednotlivé emisní scénáře pak vědci modelují další budoucí vývoj klimatické změny a její očekávané dopady.
   qa:
   - q: "Co to jsou body zlomu?"
     a: |
