@@ -1,8 +1,8 @@
 ---
 layout:        topic
-title:         "Krajina"
-slug:          "krajina"
-redirect_from: "/krajina"
+title:         "Krajina a ekosystémy"
+slug:          "krajina-ekosystemy"
+redirect_from: "/krajina-ekosystemy"
 sitemap:       false
 published:     2022-04-19
 weight:        60
