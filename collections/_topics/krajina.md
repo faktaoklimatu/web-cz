@@ -10,20 +10,20 @@ weight:        60
 subtopics:
   # 3 materiály, které byste neměli přehlédnout
 - lead: |
-    Zdravou **krajinu ohrožuje jak přímý vliv lidské činnosti, tak dopady změny klimatu**. Co se s krajinou děje a co s tím můžeme dělat?
+    **Zdraví krajiny ohrožuje jak přímý vliv lidské činnosti, tak dopady změny klimatu**. Co se s přírodou kolem nás děje a co s tím můžeme dělat?
   commented-content:
   - slug: "ubyvani-biodiverzity"
     comment-key: "1"
     comment: |
-      Celosvětově je zcela zásadním tématem **ubývání přírodní rozmanitosti**.
+      Celosvětově je zcela zásadním tématem **rychlé ubývání biodiverzity**. Všechny hlavní příčiny této změny jsou spojeny s člověkem. 
   - slug: "umirani-ceskych-lesu"
     comment-key: "2"
     comment: |
-      V české krajině také ubývá přírodní rozmanitost. Mnohem více je ale vidět **odumírání jehličnatých lesů**.
+      V české krajině ubývá pestrost také. Kromě toho jsou zde zřetelně vidět i dopady změn klimatu, např. **odumírání jehličnatých lesů**.
   - slug: "hospodareni-lesy"
     comment-key: "3"
     comment: |
-      Pokud chceme mít v Česku za 50 let zdravé lesy, **potřebujeme výrazně upravit lesní hospodaření**.
+      Zdravé lesy v budoucnu v Česku být mohou, ale **potřebujeme řadu změn v lesním hospodaření**.
   qa:
   - q: "Může změna klimatu za vymírání druhů zvířat a rostlin?"
     a: |
