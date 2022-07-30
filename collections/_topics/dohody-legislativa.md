@@ -34,11 +34,11 @@ subtopics:
   - slug: "svetove-dohody"
     comment-key: "1"
     comment: |
-      **Mezinárodní klimatická jednání probíhají více než 30 let.** S postupující změnou klimatu ovšem roste jejich urgence. Velkým průlomem byla **Pažížská dohoda** z roku 2015.
+      **Mezinárodní klimatická jednání probíhají již více než 30 let.** Důležitým milníkem byla v roce 2015 **Pařížská dohoda**.
   - slug: "emisni-zavazky"
     comment-key: "2"
     comment: |
-      Klíčovým důsledkem Pařížské dohody jsou závazky států dosáhnout **uhlíkové neutrality**. Aktuálně je jimi pokryto 87 % světových emisí CO<sub>2</sub>.
+      Klíčovým důsledkem Pařížské dohody jsou závazky států dosáhnout **uhlíkové neutrality**. Aktuálně pokrývají 87 % světových emisí CO<sub>2</sub>.
   - slug: "fit-for-55"
     comment-key: "3"
     comment: |
