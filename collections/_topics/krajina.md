@@ -40,9 +40,9 @@ subtopics:
 - id:          "lesy"
   title:       "Lesy"
   lead: |
-    Lesy v ČR pokrývají 36,8 % celkové plochy. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes české lesy jednak zranitelné vůči škůdcům (například kůrovci) a jednak mají nízkou schopnost adaptace na měnící se podmínky, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně.
+    Lesy pokrývají 36,8 % území ČR. V důsledku klimatické změny, preferování monokultur jehličnanů v minulosti a špatného stavu lesní půdy jsou dnes české lesy jednak **zranitelné vůči škůdcům** (například kůrovci) a jednak mají **nízkou schopnost adaptace na měnící se podmínky**, jako je rostoucí průměrná roční teplota, změny v rozložení srážek a podobně.
 
-    Situaci je možné zlepšit změnami ve způsobu hospodaření – například pestřejší skladbou dřevin a vysazováním druhů, které budou méně citlivé na sucho a vyšší teploty než smrky, či šetrnější těžbou. Důležité však budou i legislativní kroky, jež například umožní efektivně regulovat stavy zvěře, a také finanční podpora lesnictví ze strany státu.
+    Situaci je možné **zlepšit změnami ve způsobu hospodaření** – například pestřejší skladbou dřevin a vysazováním druhů, které budou méně citlivé na sucho a vyšší teploty než smrky, či šetrnější těžbou. **Důležité však budou i legislativní kroky**, jež například umožní efektivně regulovat stavy zvěře, **a také finanční podpora** lesnictví **ze strany státu**.
   qa:
   - q: "Je pravda, že smrkové lesy, jak jsme je znali, se už nevrátí?"
     a: |
@@ -68,7 +68,7 @@ subtopics:
 - id:          "biodiverzita"
   title:       "Biodiverzita"
   lead: |
-    Příroda dnes rychle přichází o svou pestrost a mnoho druhů navždy mizí. Jen v živočišné říši je nyní vyhubením více či méně ohrožena zhruba 1/7 všech ptáků, 1/4 savců, 1/3 plazů, 1/3 paryb (žraloků a rejnoků) a 2/3 obojživelníků. K tomu, abychom tomuto chudnutí živého světa zabránili, bude ovšem nutné udělat víc než jen chránit malé kousky přírody v rezervacích – musíme vrátit život a pestrost i na pole, louky, do lesů, řek nebo rybníků. Uvědomovat si krajinné návaznosti, vnímat všechny důležité funkce krajiny (včetně té produkční, na níž jsme závislí) a umět přemýšlet v delších časových úsecích, než je několik nejbližších let.
+    Příroda dnes rychle přichází o svou pestrost a mnoho druhů navždy mizí. Jen v živočišné říši je nyní vyhubením více či méně ohrožena zhruba 1/7 všech ptáků, 1/4 savců, 1/3 plazů, 1/3 paryb (žraloků a rejnoků) a 2/3 obojživelníků. K tomu, abychom tomuto chudnutí živého světa zabránili, bude ovšem **nutné udělat víc než jen chránit malé kousky přírody** v rezervacích – **musíme vrátit život a pestrost i na pole, louky, do lesů, řek nebo rybníků** v krajině, kde žijeme a často intenzivně hospodaříme. Velmi důležité přitom bude vnímat krajinné návaznosti (dívat se na krajinu jako na celek) a umět přemýšlet v delších časových úsecích, než je několik nejbližších let.
 
   qa:
   - q: "Může za vymírání druhů člověk?"
@@ -91,9 +91,9 @@ subtopics:
 - id:          "krajina"
   title:       "Zdravá krajina"
   lead: |
-    Zdravá krajina je členitá a pestrá, nikoli taková, v níž je 40 % podzemních vod kontaminováno pesticidy jako dnes nebo v níž se rozkládají obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků. Zdravá krajina je odolná – tedy dokáže dobře zvládat různé změny, včetně těch klimatických.
+    **Zdravá krajina vypadá jako pestrá mozaika**. Nenajdeme v ní obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků. Díky této pestrosti **je to i krajina odolná** – dokáže se dobře vyrovnávat s různými změnami, včetně těch klimatických. A zároveň je to pro nás **dlouhodobě jediná záruka obživy**: kde je vyschlá či degradovaná půda nebo kde chybí opylovači, nemůže být kvalitní a hojná úroda.
 
-    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu, zemědělcům a lesníkům musejí dávat smysl i ekonomicky. Klíčová je v tom promyšlená pomoc ze strany státu, který stanoví jasná kriteria pro dotace a šetrné hospodaření.
+    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu a současně musejí zemědělcům a lesníkům dávat smysl i ekonomicky. **Klíčová je** v tom **promyšlená pomoc ze strany státu**, který stanoví jasná kriteria pro dotace a šetrné hospodaření.
 
   content:
   - lesnicka-strategie-eu
