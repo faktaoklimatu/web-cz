@@ -33,7 +33,7 @@ dashboard:
   source-url:  "/elektrina-na-osobu-eu"
 - type:        "compare"
   col-lg-size: "3-5"
-  title:       "**Růst solárních zdrojů** <span class='nobr'>(2013–2021)</span>"
+  title:       "**Růst výkonu solárních zdrojů** <span class='nobr'>(2013–2021)</span>"
   data:
   - region:    "cz"
     value:     "**+5** %"
