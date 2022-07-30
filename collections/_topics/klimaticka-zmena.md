@@ -33,8 +33,8 @@ dashboard:
   source:      "Fakta o klimatu"
   source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
 - type:        "compare"
-  col-lg-size: "4-5"
-  col-xl-size: 4
+  col-lg-size: 5
+  col-xl-size: "4-5"
   title:       "**Zalednění Severního ledového oceánu**"
   data:
   - value:     "**7,5** mil. km²"
