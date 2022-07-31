@@ -1,0 +1,66 @@
+# TODO: Promazat (včetně všech výskytů) a znovu využít ve vyhledávání.
+#
+# id: používá se v metadatech objektu (tags-scopes, tags-topics)
+# name-short: používá se v zobrazovaných tématech
+# name-long: používá se v nadpisech
+# index-weight: je-li větší než nula, zobrazuje téma na titulní stránce
+# description: používá jako popis tématu
+
+- id: cr
+  name-short: ČR
+  name-long: Česká republika
+  is-scope: true
+
+- id: eu
+  name-short: EU
+  name-long: Evropská unie
+  is-scope: true
+
+- id: svet
+  name-short: svět
+  name-long: celý svět
+  is-scope: true
+
+- id: klima
+  name-short: klima
+  name-long: klimatické ukazatele
+  index-weight: 1
+  description: "Průměrná globální teplota vzduchu od začátku průmyslové revoluce, tedy za posledních 200 let, stoupla o zhruba 1 °C. V České republice za posledních 60 let vzrostla už o 2 °C. Koncentrace <glossary id='co2eq'>CO<sub>2</sub></glossary> dosahují hodnot vyšších než kdykoliv během existence rodu *Homo sapiens*."
+
+- id: emise
+  name-short: emise
+  name-long: emise skleníkových plynů
+  index-weight: 2
+  # Extra span řeší problém se slovníkovým odkazem na začátku odstavce.
+  description: <span><glossary id='antropogennisklenikoveplyny'>Skleníkové plyny</glossary></span> se dostávají do atmosféry spalováním fosilních paliv a dalšími procesy, jako například produkcí cementu, pěstováním rýže či chovem dobytka. V přepočtu na obyvatele je Česká republika jejich významným producentem, a to nejen v Evropském kontextu.
+
+- id: energetika
+  name-short: energetika
+  name-long: energetika
+  index-weight: 3
+  description: Sektor elektroenergetiky je celosvětově největším zdrojem emisí skleníkových plynů (v roce 2017 tvořil cca 40 % emisí CO<sub>2</sub> a cca 25 % emisí všech <glossary id='antropogennisklenikoveplyny'>skleníkových plynů</glossary> měřeno v <glossary id='co2eq'>CO<sub>2</sub>eq</glossary>). Svým dopadem výrazně přesahuje zemědělství stejně jako spalování fosilních paliv v dopravě, spalování fosilních paliv v průmyslu nebo produkci cementu. V rámci elektroenergetiky přes 70 % emisí pochází z uhlí, přes 20 % ze zemního plynu, asi 5 % tvoří deriváty ropy.
+
+- id: budoucnost
+  name-short: budoucnost
+  name-long: Budoucnost, scénáře vývoje
+  index-weight: 4
+  description: Budoucí vývoj klimatu závisí do velké míry na tom, jak se budou dále vyvíjet emise skleníkových plynů nebo odlesňování. Pro porovnání možných budoucností slouží <glossary id='rcp'>emisní scénáře RCP</glossary>. Zároveň větší změna klimatu přináší větší rizika a při překročení bodů zlomu i možnost kolapsu některých ekosystémů a klimatických systémů.
+
+- id: opatreni
+  name-short: opatření
+  name-long: opatření, dokumenty, dohody
+  index-weight: 5
+  # Extra span řeší problém se slovníkovým odkazem na začátku odstavce.
+  description: Snahy řešit klimatickou změnu a její dopady vedou k mezinárodním jednáním a dohodám a k vzniku strategických dokumentů, které vytyčují národní plány a cíle. Také jsou přijímána právně závazná opatření nebo vytvářeny finanční nástroje, jako uhlíková daň nebo systémy pro obchodování s emisními povolenkami, které mají snížit emise skleníkových plynů a zabránit dalšímu zesilování globálního oteplování (tzv. <glossary id='mitigace'>mitigační opatření</glossary>). Na úrovni regionů nebo měst pak vznikají <glossary id='adaptace'>adaptační opatření</glossary>, jejichž cílem je region na probíhající klimatickou změnu adaptovat. Typicky může jít o zelené střechy ve městech, zakládání tůní pro udržení vody v krajině nebo zavádění odolnějších plodin v zemědělství. 
+
+- id: ekonomika
+  name-short: ekonomika
+  name-long: ekonomika
+  index-weight: 6
+  description: Klimatická změna je jedním z nezamýšlených důsledků naší hospodářské produkce, neboť právě spalování fosilních paliv při výrobě a přepravě zboží a dalších komodit uvolňuje skleníkové plyny. Mitigační opatření tedy musí nutně ovlivňovat ekonomiku, vhodně navržená opatření v souladu ekonomickými principy mohou vést k efektivnímu a rychlému snížení emisí.
+
+- id: priroda
+  name-short: příroda
+  name-long: příroda, krajina, ekosystémy
+  index-weight: 7
+  description: Klimatická změna ovlivňuje celou biosféru a jednotlivé ekosystémy, zároveň v kontextu adaptačních a mitigačních opatření hraje péče o krajinu a ochrana biodiverzity velkou roli. Lužní a nivní lesy pomáhají zadržovat vodu v krajině a podporovat biodiverzitu, výsadba zeleně ve městech pomáhá snižovat teplotu. Zemědělství, lesní hospodářství a další odvětví závisí na zdravých ekosystémech. Přírodní procesy také čistí vodu a vzduch, které jsou pro nás klíčovými životodárnými zdroji.
