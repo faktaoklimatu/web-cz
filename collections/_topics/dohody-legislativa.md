@@ -65,7 +65,7 @@ subtopics:
   lead: |
     Klimatická politika EU je zaštítěna především Zelenou dohodou pro Evropu, v rámci které si EU stanovila cíl **dosáhnout klimatické neutrality do roku 2050**.
   qa:
-  - q: "Co je Zelená dohoda pro Evropu (*European Green Deal*)?"
+  - q: "Co je Zelená dohoda pro Evropu (European Green Deal)?"
     a: |
       Zelená dohoda pro Evropu představuje strategii EU pro dosažení **klimatické neutrality do roku 2050**. Součástí dohody však nejsou pouze klimatické cíle, ale také opatření pro zdravější životní prostředí, zemedělství nebo odpadové hospodářství, jinými slovy, jde o komplexní plán pro dekarbonizaci celého hospodářství, včetně zdrojů pro jeho financování. Zelená dohoda byla Evropskou komisí představena v roce 2019, v roce 2020 pak byla schválena členskými zeměmi. V roce 2021 vstoupil v platnost **Evropský klimatický zákon** (Evropský právní rámec pro klima), který činí dosažení klimatické neutrality do roku 2050 právně závazným.
 
@@ -108,7 +108,7 @@ subtopics:
 - id:          "emisni-zavazky"
   title:       "Emisní závazky"
   lead: |
-    Emisní závazky lze chápat jako **závazky** nejčastěji států, ale ve stále větší míře i podniků a institucí, **ke snižování emisí skleníkových plynů**. K březnu 2022 **87 % světových emisí CO<sub>2</eq> pocházelo ze států se závazkem k uhlíkové neutralitě**.
+    Emisní závazky lze chápat jako **závazky** nejčastěji států, ale ve stále větší míře i podniků a institucí, **ke snižování emisí skleníkových plynů**. K březnu 2022 **87 % světových emisí CO<sub>2</sub> pocházelo ze států se závazkem k uhlíkové neutralitě**.
   qa:
   - q: "Jak můžeme emisní závazky kategorizovat?"
     a: |
