@@ -57,24 +57,6 @@ subtopics:
     comment: |
       Hlavním zdrojem emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
   qa:
-  - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
-    a: |
-      Skleníkových plynů je celá řada, **nejvýznamnější z nich je oxid uhličitý, tedy CO<sub>2</sub>**. Jednotka tuna CO<sub>2</sub> udává tedy výhradně množství oxidu uhličitého. Jednotka tuna **CO<sub>2</sub>eq** pak vyjadřuje **úhrnné množství** více <glossary id="antropogennisklenikoveplyny">skleníkových plynů</glossary> přepočtených na ekvivalentní množství CO<sub>2</sub>.
-  - q: "Jak se emise různých skleníkových plynů sčítají dohromady na CO<sub>2</sub>eq?"
-    a: |
-      **Jednotlivé skleníkové plyny se přepočítávají na tzv. CO<sub>2</sub>eq** (CO<sub>2</sub> ekvivalent), tedy na množství oxidu uhličitého, které by mělo stejný příspěvek ke skleníkovému jevu atmosféry jako množství těchto ostatních vypuštěných plynů. Vzhledem k různému poločasu života jednotlivých plynů v atmosféře se tento příspěvek uvažuje za určitou standardizovanou dobu, zpravidla uvažujeme horizont 100 let a používáme tzv. GWP (*Global Warming Potentital*) koeficienty. Zatímco CO<sub>2</sub> jakožto referenčními plynu náleží koeficient 1, pro metan se jedná o hodnotu 28 pro horizont 100 let, jinými slovy, jde 28× silnější skleníkový plyn než CO<sub>2</sub>.
-  - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
-    a: |
-      Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
-  - q: "Jaké jsou celkové světové emise?"
-    a: |
-      V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, **dnes** již **dosahují hodnoty přes 50 miliard tun CO<sub>2</sub>eq ročně**.
-  - q: "Jak velké jsou emise Česka?"
-    a: |
-      **V roce 2018 Česko vypustilo 129 milionů tun CO<sub>2</sub>eq**, přepočteno na obyvatele jde o 12,2 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2015 byl 6,5 tun CO<sub>2</sub>eq na osobu. **Emise Česka na osobu jsou tedy dvakrát vyšší, než je celosvětový průměr**.
-  - q: "Co jsou hlavní zdroje lidských emisí?"
-    a: |
-      Na přibližně 70 % světových emisí skleníkových plynů se podílí oxid uhličitý. Jeho hlavním zdrojem je **spalování fosilních paliv**, především v energetice, průmyslu a dopravě.
   - q: "Co můžeme pro snížení emisí udělat?"
     a: |
       Klíčové je především **snížit emise skleníkových plynů v energetice a v průmyslu**, tedy transformovat tyto sektory směrem k nízkoemisním alternativám. Účinným opatřením pro snižování emisí je **zpoplatnění emisí skleníkových plynů**, například formou emisních povolenek nebo uhlíkové daně. Na individuální rovině lze přispět především **úsporami v domácnostech** (týkajícíh se vytápění, ohřevu teplé vody nebo spotřeby elektřiny), **omezením automobilové dopravy a snížením konzumace masa a mléčných výrobků**.
@@ -95,6 +77,16 @@ subtopics:
   - emise-eu-detail
   - emise-eu-vyvoj
   - emise-eu-na-osobu
+  qa:
+  - q: "Jaké jsou celkové světové emise?"
+    a: |
+      V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, **dnes** již **dosahují hodnoty přes 50 miliard tun CO<sub>2</sub>eq ročně**.
+  - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
+    a: |
+      Skleníkových plynů je celá řada, **nejvýznamnější z nich je oxid uhličitý, tedy CO<sub>2</sub>**. Jednotka tuna CO<sub>2</sub> udává tedy výhradně množství oxidu uhličitého. Jednotka tuna **CO<sub>2</sub>eq** pak vyjadřuje **úhrnné množství** více <glossary id="antropogennisklenikoveplyny">skleníkových plynů</glossary> přepočtených na ekvivalentní množství CO<sub>2</sub>.
+  - q: "Jak se emise různých skleníkových plynů sčítají dohromady na CO<sub>2</sub>eq?"
+    a: |
+      **Jednotlivé skleníkové plyny se přepočítávají na tzv. CO<sub>2</sub>eq** (CO<sub>2</sub> ekvivalent), tedy na množství oxidu uhličitého, které by mělo stejný příspěvek ke skleníkovému jevu atmosféry jako množství těchto ostatních vypuštěných plynů. Vzhledem k různému poločasu života jednotlivých plynů v atmosféře se tento příspěvek uvažuje za určitou standardizovanou dobu, zpravidla uvažujeme horizont 100 let a používáme tzv. GWP (*Global Warming Potentital*) koeficienty. Zatímco CO<sub>2</sub> jakožto referenčními plynu náleží koeficient 1, pro metan se jedná o hodnotu 28 pro horizont 100 let, jinými slovy, jde 28× silnější skleníkový plyn než CO<sub>2</sub>.
 
 - id:          "cesko"
   title:       "Emise skleníkových plynů v Česku"
@@ -106,6 +98,10 @@ subtopics:
   - emise-cr-detail
   - emise-eu-vyvoj
   - nejvetsi-emitenti-cr
+  qa:
+  - q: "Jak velké jsou emise Česka?"
+    a: |
+      **V roce 2018 Česko vypustilo 129 milionů tun CO<sub>2</sub>eq**, přepočteno na obyvatele jde o 12,2 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2015 byl 6,5 tun CO<sub>2</sub>eq na osobu. **Emise Česka na osobu jsou tedy dvakrát vyšší, než je celosvětový průměr**.
 
 - id:          "sektory"
   title:       "Emise dle sektorů"
@@ -121,6 +117,14 @@ subtopics:
   - emise-dychani
   - emise-sr
   - 2020-globalni-zprava-o-elektrine
+  qa:
+  - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
+    a: |
+      Mnohé přírodní jevy také uvolňují skleníkové plyny. Například dýcháním člověk vyprodukuje přibližně 300 kg CO<sub>2</sub> za rok, podobně oxid uhličitý vydechují také jiné organismy. Dýchání však nepřispívá ke klimatické změně, neboť se jedná o uzavřený cyklus uhlíku: veškerý vydechovaný uhlík byl dříve pohlcen z atmosféry při fotosyntéze rostlin. Silným skleníkovým plynem je vodní pára, avšak její cyklus v atmosféře je také uzavřený a množství vypařené vody je dáno teplotou. Ke skleníkovému jevu přispívá také sopečná činnost, avšak v mnohem menší míře než lidská činnost.
+  - q: "Co jsou hlavní zdroje lidských emisí?"
+    a: |
+      Na přibližně 70 % světových emisí skleníkových plynů se podílí oxid uhličitý. Jeho hlavním zdrojem je **spalování fosilních paliv**, především v energetice, průmyslu a dopravě.
+
 
 
 - id:          "budouci-otepleni"
