@@ -75,7 +75,8 @@ subtopics:
   qa:
   - q: "Jak víme, že za rostoucí koncentrace CO<sub>2</sub> v atmosféře může spalování fosilních paliv?"
     a: |
-      Běžně se jako argument uvádí fakt že pozorovaný nárůst začal okolo roku 1800, tedy v době rozmachu parních strojů. Máme ale mnohem pádnější důkazy: 1. V dnešní době spaloje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
+      Běžně se jako argument uvádí fakt že pozorovaný nárůst začal okolo roku 1800, tedy v době rozmachu parních strojů. Máme ale mnohem pádnější důkazy:
+      1. V dnešní době spaloje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
       2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním. 
       3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. 
 - id:          "data"
