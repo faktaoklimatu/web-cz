@@ -25,7 +25,6 @@ slugs:
   studies: studie
   datasets: datasety
   topics: temata
-  new-topics: tema
   glossary: slovnik
   how-to-use: jak-pouzivat
   news: aktuality
@@ -41,7 +40,7 @@ collections:
     weight: 0
   topics:
     output: true
-    permalink: /tema/:title
+    permalink: /temata/:title
     title: témata
     weight: 1
   explainers:
