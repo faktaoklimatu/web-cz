@@ -46,12 +46,12 @@ dashboard:
 - type:        "compare"
   col-lg-size: 5
   col-xl-size: "4-5"
-  title:       "**Očekávané zvýšení hladin oceánů**"
+  title:       "**Zvýšení hladin oceánů** od roku 1880"
   data:
-  - value:     "**50–80** cm"
-    subtitle:  "do roku **2100**"
+  - value:     "**21–24** cm"
+    subtitle:  "do roku **2022**"
   - value:     "**100–420** cm"
-    subtitle:  "do roku **2300**"
+    subtitle:  "očekávané do roku **2300**"
   source:      "IPCC"
   source-url:  "https://www.ipcc.ch/report/ar6/wg1/"
 
