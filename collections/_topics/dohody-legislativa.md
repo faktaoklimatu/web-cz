@@ -19,7 +19,7 @@ dashboard:
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "do roku **2050**"
-  subtitle:    "se **EU** zavázala dosáhnout **klimatické neutrality**"
+  subtitle:    "se **EU** zavázala dosáhnout **uhlíkové neutrality**"
   source:      "Evropská komise"
   source-url:  "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
 - type:        "single"
