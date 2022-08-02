@@ -11,27 +11,27 @@ dashboard:
 - type:        "single"
   col-lg-size: "3-5"
   col-xl-size: 3
-  value:       "**419** ppm"
+  value:       "**420** ppm"
   subtitle:    "**koncentrace CO<sub>2</sub>** v atmosféře v roce 2022"
   # comment:     "(celých 10 000 let před průmyslovou revolucí byla stabilní koncentrace ~270 ppm)"
-  source:      "Fakta o klimatu"
-  source-url:  "/koncentrace-co2"
+  source:      "Scripps Institution of Oceanography, University of California"
+  source-url:  "https://keelingcurve.ucsd.edu/"
 - type:        "single"
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "**+ 1,2 °C**"
   subtitle:    "**oteplení světa** od druhé poloviny 19. století"
   # comment:     "(to je asi asi +0,2 °C za dekádu)"
-  source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
+  source:      "NASA, Goddard Institute for Space Studies"
+  source-url:  "/teplotni-anomalie"
 - type:        "single"
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "**+ 2,1 °C**"
   subtitle:    "**oteplení Česka** od roku 1960"
   # comment:     "(to je asi asi +0,35 °C za dekádu)"
-  source:      "Fakta o klimatu"
-  source-url:  "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I/edit#gid=979818322"
+  source:      "ČHMÚ"
+  source-url:  "/teplota-cr"
 - type:        "compare"
   col-lg-size: 5
   col-xl-size: "4-5"
@@ -39,21 +39,21 @@ dashboard:
   data:
   - value:     "**7,5** mil. km²"
     subtitle:  "v září 1980"
-  - value:     "**4** mil. km²"
-    subtitle:  "v září 2020"
-  source:      "NSIDC"
-  source-url:  "http://nsidc.org/arcticseaicenews/2021/09/"
+  - value:     "**4,7** mil. km²"
+    subtitle:  "v září 2021"
+  source:      "NASA, satelitní měření"
+  source-url:  "https://climate.nasa.gov/vital-signs/arctic-sea-ice/"
 - type:        "compare"
   col-lg-size: 5
   col-xl-size: "4-5"
-  title:       "**Zvýšení hladin oceánů** od roku 1880"
+  title:       "**Zvýšení hladin oceánů** od roku 1900"
   data:
-  - value:     "**21–24** cm"
-    subtitle:  "do roku **2022**"
-  - value:     "**100–420** cm"
-    subtitle:  "očekávané do roku **2300**"
-  source:      "IPCC"
-  source-url:  "https://www.ipcc.ch/report/ar6/wg1/"
+  - value:     "**20** cm"
+    subtitle:  "dnes"
+  - value:     "**80–150** cm"
+    subtitle:  "očekávané do roku **2150**"
+  source:      "Souhrnná zpráva IPCC WG1, Technical Summary"
+  source-url:  "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_TS.pdf#page=45"
 
 subtopics:
   # Klimatická změna v kostce
@@ -73,12 +73,14 @@ subtopics:
     comment: |
       Klimatická změna se neprojevuje všude stejně: **různé oblasti světa se oteplují různě rychle**.
   qa:
-  - q: "Jak víme, že za rostoucí koncentrace CO<sub>2</sub> v atmosféře může spalování fosilních paliv?"
+  - q: "Může za rostoucí koncentrace CO<sub>2</sub> v atmosféře skutečně spalování fosilních paliv?"
     a: |
       Běžně se jako argument uvádí fakt že pozorovaný nárůst začal okolo roku 1800, tedy v době rozmachu parních strojů. Máme ale mnohem pádnější důkazy:
       1. V dnešní době spaloje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
       2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním. 
       3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. 
+  - q: "Mohou za oteplování pouze skleníkové plyny, nebo jsou ve hře ještě jiné faktory?"
+    a:   
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
