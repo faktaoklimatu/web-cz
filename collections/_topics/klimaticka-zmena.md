@@ -76,16 +76,17 @@ subtopics:
   - q: "Může za rostoucí koncentrace CO<sub>2</sub> v atmosféře skutečně spalování fosilních paliv?"
     a: |
       Běžně se jako argument uvádí fakt že pozorovaný nárůst začal okolo roku 1800, tedy v době rozmachu parních strojů. Máme ale mnohem pádnější důkazy:
-      1. V dnešní době spaloje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
+      1. V dnešní době spaluje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
       2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním. 
-      3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv. 
+      3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv.
+      Měření ukazují, že přírodní zdroje, jako výbuchy sopek nebo lesní požáry k nárůstu koncentrací CO<sub>2</sub> dlouhodobě nepřispívají. 
   - q: "Jaké další faktory vedle skleníkových plynů způsobují oteplování?"
     a: | 
       Faktorů ovlivňujících globální oteplování je více, mezi hlavní patří:
-      1. Skleníkové plyny: kromě CO<sub>2</sub>, který je pro skleníkový efekt dominatní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny. 
-      2. Změny v odrazivosti zemského povrchu (tzv. albedo) částečně vlivem lidské činnosti (např. odlesňování) a částečně jako zpětné vazby systému (např. méně sněhu a ledu, který záření odráží)
-      3. Aerosoly odráží sluneční záření buď přímo, nebo tím, že pomáhají vytvářet více mraků. Některé aerosoly jsou přirozené (např. prach z pouští), nekteré jsou důsledkem lidské činnosti (např. oxidy síry, které vznikají při spalování uhlí). Aerosoly mají významný ochlazující efekt. 
-      Tyto tři mají dominantní efekt, přírodní faktory jsou významně menší... FIXME     
+      - **Skleníkové plyny:** kromě CO<sub>2</sub>, který je pro skleníkový efekt dominatní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny. 
+      - **Změny albeda**, neboli odrazivosti zemského povrchu. Ty jsou způsobeny částečně lidskou činností (např. odlesňováním) a částečně zpětnými vazbami klimatického systému (např. méně sněhu a ledu, který záření odráží)
+      - **Aerosoly**, neboli pevné a kapalné částice v atmosféře, zesilují odrážení slunečního záření atmosférou a mají tak významný ochalzující efekt.   Některé aerosoly jsou přirozené (např. prach z pouští), nekteré jsou důsledkem lidské činnosti (např. oxidy síry, které vznikají při spalování uhlí). 
+           
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
