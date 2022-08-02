@@ -49,9 +49,9 @@ dashboard:
   title:       "**Zvýšení hladin oceánů** od roku 1900"
   data:
   - value:     "**20** cm"
-    subtitle:  "dnes"
+    subtitle:  "do roku 2018"
   - value:     "**80–150** cm"
-    subtitle:  "očekávané do roku **2150**"
+    subtitle:  "očekávané do roku 2150"
   source:      "Souhrnná zpráva IPCC WG1, Technical Summary"
   source-url:  "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_TS.pdf#page=45"
 
@@ -80,12 +80,17 @@ subtopics:
       2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním. 
       3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv.
       Měření ukazují, že přírodní zdroje, jako výbuchy sopek nebo lesní požáry k nárůstu koncentrací CO<sub>2</sub> dlouhodobě nepřispívají. 
-  - q: "Jaké další faktory vedle skleníkových plynů způsobují oteplování?"
+  - q: "Které plyny zadržují nejvíce tepleného záření a přispívají skleníkovému efektu? "
     a: | 
-      Faktorů ovlivňujících globální oteplování je více, mezi hlavní patří:
-      - **Skleníkové plyny:** kromě CO<sub>2</sub>, který je pro skleníkový efekt dominatní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny. 
+      Kromě CO<sub>2</sub>, který je ve skleníkovém efektu dominatní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou planety a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny. 
+  - q: "Ovlivňují globální oteplování vedle skleníkových plynů i nějaké další faktory?"
+    a: |   
+      Skleníkové plyny hrají v energetické rovnováze planety největší roli, ale faktorů ovlivňujících oteplování je samozřejmě více. Z hlediska velikosti jsou významné pouze další dva: 
       - **Změny albeda**, neboli odrazivosti zemského povrchu. Ty jsou způsobeny částečně lidskou činností (např. odlesňováním) a částečně zpětnými vazbami klimatického systému (např. méně sněhu a ledu, který záření odráží)
       - **Aerosoly**, neboli pevné a kapalné částice v atmosféře, zesilují odrážení slunečního záření atmosférou a mají tak významný ochalzující efekt.   Některé aerosoly jsou přirozené (např. prach z pouští), nekteré jsou důsledkem lidské činnosti (např. oxidy síry, které vznikají při spalování uhlí). 
+      
+      Další faktory, jako například výbuchy sopek, sluneční cykly mají na současné oteplování oproti skleníkovým plynům, změnám albeda a aerosolům jen nepatrný vliv. 
+   
            
 - id:          "data"
   title:       "Data a pozorované změny"
@@ -105,25 +110,25 @@ subtopics:
 - id:          "fyzika"
   title:       "Fyzikální základy a principy"
   lead: |
-    Skleníkové plyny zachytávají tepelné záření. Dynamika. Uhlíkový cyklus.
+    Planetární klima vzniká souhrou velkého množství fyzikálních procesů: **sluneční záření** je hlavním zdrojem energie, **skleníkové plyny** mění prostup tepelného záření atmosférou a ovlivňují tak celkovou energetickou rovnováhu planety, **oceánské a atmosférické proudy** distribuují teplo do různých oblasí planety. V této dynamice také hrají důležitou roli **zpětné vazby** a koloběhy vody a uhlíku.  
   qa:
-  - q: "Co znamená citlivost klimatu?"
+  - q: "Jak je klima citlivé na zvýšení koncentrací CO<sub>2</sub>?"
     a: |
-      Čím vyšší jsou koncentrace CO<sub>2</sub> v atmosféře, tím vyšší je teplota planety. Zvýšení koncentrace oxidu uhličitého o 10 ppm (*parts per million*) způsobí oteplení planety asi o 0,1 °C. Tento přibližný vztah je užitečný k odhadům budoucího vývoje.
-  - q: "Co znamená uhlíkový rozpočet?"
+      **Čím vyšší jsou koncentrace CO<sub>2</sub> v atmosféře, tím vyšší je teplota planety.** Zvýšení koncentrace oxidu uhličitého o 10 ppm způsobí oteplení planety asi o 0,1 °C - tento vztah přibližný, ale dostatečně přesný, aby byl užitečný k odhadům budoucího vývoje. Často se jako **Citlivost klimatu** nazývá oteplení, ke kterému by došlo při zdvojnásobení koncentrací CO<sub>2</sub> a z měření i modelování této veličiny vychází hodnota okolo 3 °C.  
+  - q: "Co to je uhlíkový rozpočet?"
     a: |
-      Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení.
+      Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení. Pro 50% pravděpodobnost udržení oteplování pod hranicí 1,5°C může lidstvo od roku 2020 vypustit jen asi 500 GtCO<sub>2</sub>. 
 
   content:
-  - historie-sklenikoveho-efektu
   - dukazy-vlivu-co2
   - souvislost-koncentrace-oteplovani
   - otepleni-zvysenim-koncentrace-co2
-  - 8-ipcc-ar6-cast-1
+  - historie-sklenikoveho-efektu
   - souvislost-emise-otepleni
   - koncept-uhlikovy-rozpocet
   - emise-dychani
   - cykly-koncentrace-co2
+  - 8-ipcc-ar6-cast-1
 
 - id:          "dopady-budoucnost"
   title:       "Dopady a budoucí vývoj"
