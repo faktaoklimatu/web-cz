@@ -76,22 +76,22 @@ subtopics:
   - q: "Může za rostoucí koncentrace CO<sub>2</sub> v atmosféře skutečně spalování fosilních paliv?"
     a: |
       Běžně se jako argument uvádí fakt že pozorovaný nárůst začal okolo roku 1800, tedy v době rozmachu parních strojů. Máme ale mnohem pádnější důkazy:
-      1. V dnešní době spaluje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spálování takového množství fosilních paliv. 
-      2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním. 
-      3. Nejpřesvědšivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv.
-      Měření ukazují, že přírodní zdroje, jako výbuchy sopek nebo lesní požáry k nárůstu koncentrací CO<sub>2</sub> dlouhodobě nepřispívají. 
-  - q: "Které plyny zadržují nejvíce tepleného záření a přispívají skleníkovému efektu? "
-    a: | 
-      Kromě CO<sub>2</sub>, který je ve skleníkovém efektu dominatní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou planety a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny. 
+      1. V dnešní době spaluje lidstvo ročně 8 miliard tun uhlí a podobná množství ropy a zemního plynu. Nárůst koncentrací CO<sub>2</sub> odpovídá spalování takového množství fosilních paliv.
+      2. Od roku 1988 měří vědci koncentrace O<sub>2</sub> a pozorují pokles, který odpovídá směšovacím poměrům v reakci hoření. To potvrzuje, že nárůst koncentrací  CO<sub>2</sub> je skutečně způsoben spalováním.
+      3. Nejpřesvědčivější důkazy vychází z měření izotopových stop uhlíku. Různé zdroje uhlíku obsahují různá množství isotopů <sup>13</sup>C a <sup>14</sup>C. Oxid uhličitý v atmosféře je smíchaný z těchto zdrojů a jeho podrobnou analýzou lze zjistit, že současné narůstající koncentrace CO<sub>2</sub> přesně odpovídají množství spalovaných fosilních paliv.
+      Měření ukazují, že přírodní zdroje, jako výbuchy sopek nebo lesní požáry k nárůstu koncentrací CO<sub>2</sub> dlouhodobě nepřispívají.
+  - q: "Které plyny zadržují nejvíce tepelného záření a přispívají skleníkovému efektu? "
+    a: |
+      Kromě CO<sub>2</sub>, který je ve skleníkovém efektu dominantní, hrají roli i další antropogenní skleníkové plyny (CH<sub>4</sub>, N<sub>2</sub>O a další). Vodní pára také silně zadržuje tepelné záření, ale její množství v atmosféře je řízeno teplotou planety a výparem z oceánů a proto se řadí mezi zpětné vazby systému a ne mezi antropogenní skleníkové plyny.
   - q: "Ovlivňují globální oteplování vedle skleníkových plynů i nějaké další faktory?"
-    a: |   
-      Skleníkové plyny hrají v energetické rovnováze planety největší roli, ale faktorů ovlivňujících oteplování je samozřejmě více. Z hlediska velikosti jsou významné pouze další dva: 
+    a: |
+      Skleníkové plyny hrají v energetické rovnováze planety největší roli, ale faktorů ovlivňujících oteplování je samozřejmě více. Z hlediska velikosti jsou významné pouze další dva:
       - **Změny albeda**, neboli odrazivosti zemského povrchu. Ty jsou způsobeny částečně lidskou činností (např. odlesňováním) a částečně zpětnými vazbami klimatického systému (např. méně sněhu a ledu, který záření odráží)
-      - **Aerosoly**, neboli pevné a kapalné částice v atmosféře, zesilují odrážení slunečního záření atmosférou a mají tak významný ochalzující efekt.   Některé aerosoly jsou přirozené (např. prach z pouští), nekteré jsou důsledkem lidské činnosti (např. oxidy síry, které vznikají při spalování uhlí). 
-      
-      Další faktory, jako například výbuchy sopek, sluneční cykly mají na současné oteplování oproti skleníkovým plynům, změnám albeda a aerosolům jen nepatrný vliv. 
-   
-           
+      - **Aerosoly**, neboli pevné a kapalné částice v atmosféře, zesilují odrážení slunečního záření atmosférou a mají tak významný ochlazující efekt.   Některé aerosoly jsou přirozené (např. prach z pouští), některé jsou důsledkem lidské činnosti (např. oxidy síry, které vznikají při spalování uhlí).
+
+      Další faktory, jako například výbuchy sopek, sluneční cykly mají na současné oteplování oproti skleníkovým plynům, změnám albeda a aerosolům jen nepatrný vliv.
+
+
 - id:          "data"
   title:       "Data a pozorované změny"
   lead: |
@@ -110,14 +110,14 @@ subtopics:
 - id:          "fyzika"
   title:       "Fyzikální základy a principy"
   lead: |
-    Planetární klima vzniká souhrou velkého množství fyzikálních procesů: **sluneční záření** je hlavním zdrojem energie, **skleníkové plyny** mění prostup tepelného záření atmosférou a ovlivňují tak celkovou energetickou rovnováhu planety, **oceánské a atmosférické proudy** distribuují teplo do různých oblasí planety. V této dynamice také hrají důležitou roli **zpětné vazby** a koloběhy vody a uhlíku.  
+    Planetární klima vzniká souhrou velkého množství fyzikálních procesů: **sluneční záření** je hlavním zdrojem energie, **skleníkové plyny** mění prostup tepelného záření atmosférou a ovlivňují tak celkovou energetickou rovnováhu planety, **oceánské a atmosférické proudy** distribuují teplo do různých oblastí planety. V této dynamice také hrají důležitou roli **zpětné vazby** a koloběhy vody a uhlíku.
   qa:
   - q: "Jak je klima citlivé na zvýšení koncentrací CO<sub>2</sub>?"
     a: |
-      **Čím vyšší jsou koncentrace CO<sub>2</sub> v atmosféře, tím vyšší je teplota planety.** Zvýšení koncentrace oxidu uhličitého o 10 ppm způsobí oteplení planety asi o 0,1 °C - tento vztah přibližný, ale dostatečně přesný, aby byl užitečný k odhadům budoucího vývoje. Často se jako **Citlivost klimatu** nazývá oteplení, ke kterému by došlo při zdvojnásobení koncentrací CO<sub>2</sub> a z měření i modelování této veličiny vychází hodnota okolo 3 °C.  
+      **Čím vyšší jsou koncentrace CO<sub>2</sub> v atmosféře, tím vyšší je teplota planety.** Zvýšení koncentrace oxidu uhličitého o 10 ppm způsobí oteplení planety asi o 0,1 °C - tento vztah přibližný, ale dostatečně přesný, aby byl užitečný k odhadům budoucího vývoje. Často se jako **Citlivost klimatu** nazývá oteplení, ke kterému by došlo při zdvojnásobení koncentrací CO<sub>2</sub> a z měření i modelování této veličiny vychází hodnota okolo 3 °C.
   - q: "Co to je uhlíkový rozpočet?"
     a: |
-      Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení. Pro 50% pravděpodobnost udržení oteplování pod hranicí 1,5°C může lidstvo od roku 2020 vypustit jen asi 500 GtCO<sub>2</sub>. 
+      Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení. Pro 50% pravděpodobnost udržení oteplování pod hranicí 1,5°C může lidstvo od roku 2020 vypustit jen asi 500 GtCO<sub>2</sub>.
 
   content:
   - dukazy-vlivu-co2
