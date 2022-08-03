@@ -70,7 +70,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 {%- for topic in sorted_topics %}
 <div class="col-12 col-sm-4 my-3">
 <a class="topic-tile" href="{{ topic.url }}">
-  <img loading="eager" src="/assets/topics/{{ topic.slug }}.svg" alt="{{ topic.title }}">
+  <img loading="eager" src="/assets/topics/{{ topic.slug }}_mini.svg" alt="{{ topic.title }}">
   <h3>{{ topic.title | capitalize }}</h3>
 </a>
 </div>
