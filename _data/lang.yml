@@ -7,15 +7,12 @@ navigation:
     empty: "Nic nenalezeno"
     failed: "Hledání nefunguje. Možná je chyba v připojení k internetu?"
     hide: "Zrušit"
-    label: "Hledat"
+    label: "Téma, klíčové slovo, …"
   first-id: "uvod"
   preview-boxes-expand: "Více materiálů"
   preview-boxes-collapse: "Méně materiálů"
 
 footer:
-  get-newsletter: "Odebírejte newsletter"
-  support-us: "Podpořte nás"
-  last-change: "Poslední změna"
   privacy-policy: "Zásady zpracování osobních údajů"
 
 newsletter:
