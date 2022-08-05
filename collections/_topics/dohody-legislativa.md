@@ -127,7 +127,7 @@ subtopics:
   title:       "Klimatické konference COP"
   lead: |
     Jde o konference smluvních stran (*Conference of Parties, COP*) Rámcové úmluvy OSN o změně klimatu. Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v úsilí zastavit změnu klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 26., se konal ve skotském Glasgow. Příští se bude konat na podzim roku 2022 v Sharm El-Sheikh v Egyptě.
-    
+
     Speciální série našeho podcastu 2050 pokrývá, jak takové jednání probíhá, jaký je jeho význam a co konkrétně přinesla jednání v Glasgow.
 
   content:

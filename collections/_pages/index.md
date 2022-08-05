@@ -63,15 +63,15 @@ slug: index
 {: .display-2}
 ## Oblasti, kterým se věnujeme
 
-{:.lead}
-Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku. Pro usnadnění orientace na webu třídíme naše materiály do níže uvedených kategorií.
+{:.lead .narrow-text}
+Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku.
 
-<div class="row">
+<div class="row topic-tiles">
 {%- for topic in sorted_topics %}
-<div class="col-6 col-md-4 my-3">
-<a class="topic-tile" href="{{ topic.url }}">
-  <img loading="eager" src="/assets/topics/{{ topic.slug }}_mini.svg" alt="{{ topic.title }}">
-  <h3>{{ topic.title | capitalize }}</h3>
+<div class="topic-tile col-6 col-md-4 p-0 my-3">
+<a href="{{ topic.url }}">
+  <img class="mx-3" loading="eager" src="/assets/topics/{{ topic.slug }}_mini.svg" alt="{{ topic.title }}">
+  <h3 class="mx-3">{{ topic.title | capitalize }}</h3>
 </a>
 </div>
 {%- endfor %}
