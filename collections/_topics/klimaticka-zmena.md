@@ -17,6 +17,7 @@ dashboard:
   source:      "Scripps Institution of Oceanography, University of California"
   source-url:  "https://keelingcurve.ucsd.edu/"
 - type:        "single"
+  col-size:    6
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "**+ 1,2 °C**"
@@ -25,6 +26,7 @@ dashboard:
   source:      "NASA, Goddard Institute for Space Studies"
   source-url:  "/teplotni-anomalie"
 - type:        "single"
+  col-size:    6
   col-lg-size: "3-5"
   col-xl-size: 3
   value:       "**+ 2,1 °C**"

@@ -10,19 +10,23 @@ weight:        60
 # TODO: doplnit zdroje
 dashboard:
 - type:        "single"
-  col-lg-size: "3"
+  col-size:    6
+  col-lg-size: 3
   value:       "**25** %"
   subtitle:    "**savců** na Zemi ohroženo **vyhubením**"
 - type:        "single"
-  col-lg-size: "3"
+  col-size:    6
+  col-lg-size: 3
   value:       "**1,5 °C**"
   subtitle:    "oteplení, které **nepřežije** naprostá většina **korálů**"
 - type:        "single"
-  col-lg-size: "3"
+  col-size:    6
+  col-lg-size: 3
   value:       "**53** %"
   subtitle:    "**půdy** v ČR je kriticky ohroženo **erozí**"
 - type:        "single"
-  col-lg-size: "3"
+  col-size:    6
+  col-lg-size: 3
   value:       "**40** %"
   subtitle:    "českých **podzemních vod** má nadlimitní množství **pesticidů**"
 
@@ -34,7 +38,7 @@ subtopics:
   - slug: "ubyvani-biodiverzity"
     comment-key: "1"
     comment: |
-      Celosvětově je zcela zásadním tématem **rychlé ubývání biodiverzity**. Všechny hlavní příčiny této změny jsou spojeny s člověkem. 
+      Celosvětově je zcela zásadním tématem **rychlé ubývání biodiverzity**. Všechny hlavní příčiny této změny jsou spojeny s člověkem.
   - slug: "umirani-ceskych-lesu"
     comment-key: "2"
     comment: |
