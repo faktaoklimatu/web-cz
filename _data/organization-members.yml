@@ -75,11 +75,12 @@
     twitter: "https://twitter.com/vitekmilan"
 
   - name: "Martin Ukrop"
-    position: "Programátor"
-    summary: "Stará se o web i všechny ostatní technologie. Snaží se udržet naši komunikaci konzistentní a spolehlivou."
+    position: "Administrátor a programátor"
+    summary: "Expert počítačové bezpečnosti a lektor zážitkové pedagogiky, který se profesionálně věnuje propojování akademiků a lidí z průmyslu. Spravuje IT systémy Fakt o klimatu a podílí se na tvorbě webu."
     img: "martin-ukrop.jpg"
     email: "martin.ukrop@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/mukrop/"
+    www: "https://research.redhat.com/blog/project_member/martin-ukrop/"
 
   - name: "Matěj Grabovský"
     position: "Analytik a programátor"
