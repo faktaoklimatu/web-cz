@@ -18,13 +18,6 @@ copyright: "Otevřená data o klimatu, z. ú."
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
 
-how-to-use:
-  title: "Jak používat naše materiály"
-  slug: "jak-pouzivat"
-further-sources:
-  title: "Další zdroje a odkazy"
-  slug: "zdroje"
-
 deploy:
   firebase-project: cz-fakta-o-klimatu
   cors-report-uri: https://nkas07xe.uriports.com
@@ -36,6 +29,7 @@ slugs:
   topics: temata
   glossary: slovnik
   how-to-use: jak-pouzivat
+  further-sources: zdroje
   news: aktuality
   about: o-nas
 
