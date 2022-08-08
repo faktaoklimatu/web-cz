@@ -6,6 +6,8 @@ slug:          "dohody-legislativa"
 redirect_from: "/dohody-legislativa"
 published:     2022-04-12
 weight:        50
+intro: |
+  Změna klimatu je celosvětový problém: vypouštění emisí skleníkových plynů v jedné části světa ovlivňuje klima i v jeho dalších částech. Její řešení proto **vyžaduje dlouhodobou spolupráci na regionální i globální úrovni**. Mezinárodní klimatické summity a další jednání slouží jako klíčová **platforma pro sdílení perspektiv a know-how a také formulaci závazků jednotlivých zemí**. Dohody, které na těchto jednáních vzniknou, mají velkou symbolickou hodnotu a současně představují důležitý **rámec pro politické a legislativní kroky**, k nimž následně dochází na unijní, potažmo národní úrovni. Přijatá legislativa pak utváří prostředí pro činnost státních orgánů, podniky i občany.
 
 dashboard:
 - type:        "single"
@@ -156,5 +158,3 @@ subtopics:
   - 2019-scenar-necp
   - emise-cr-vyvoj
 ---
-
-Změna klimatu je celosvětový problém: vypouštění emisí skleníkových plynů v jedné části světa ovlivňuje klima i v jeho dalších částech. Její řešení proto **vyžaduje dlouhodobou spolupráci na regionální i globální úrovni**. Mezinárodní klimatické summity a další jednání slouží jako klíčová **platforma pro sdílení perspektiv a know-how a také formulaci závazků jednotlivých zemí**. Dohody, které na těchto jednáních vzniknou, mají velkou symbolickou hodnotu a současně představují důležitý **rámec pro politické a legislativní kroky**, k nimž následně dochází na unijní, potažmo národní úrovni. Přijatá legislativa pak utváří prostředí pro činnost státních orgánů, podniky i občany.

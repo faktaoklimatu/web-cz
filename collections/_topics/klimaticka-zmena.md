@@ -6,6 +6,10 @@ slug:          "klimaticka-zmena"
 redirect_from: "/klimaticka-zmena"
 published:     2022-04-05
 weight:        10
+intro: |
+  **Současná klimatická změna je způsobena činností člověka**. Tím se výrazně liší od změn klimatu v minulosti. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s důsledky jako tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a jiné extrémní projevy počasí.
+
+  **Dopady změny klimatu** na společnost i přírodu, s nimiž se budeme setkávat v následujících desetiletích, **budou přímo závislé na množství skleníkových plynů, které ještě do atmosféry vypustíme**, ať už spalováním fosilních paliv nebo jinými aktivitami, při nichž vzniká velké množství emisí.
 
 dashboard:
 - type:        "single"
@@ -165,7 +169,3 @@ subtopics:
   - tropicke-dny-brno
   - tropicke-dny-praha
 ---
-
-**Současná klimatická změna je způsobena činností člověka**. Tím se výrazně liší od změn klimatu v minulosti. **Spalování uhlí, ropy a zemního plynu** a některé další činnosti **mění složení atmosféry** a přidávají do ní skleníkové plyny. Zesílený skleníkový efekt pak způsobuje oteplování s důsledky jako tání ledovců, vzestup hladin oceánů, dlouhodobá sucha nebo častější vlny veder a jiné extrémní projevy počasí.
-
-**Dopady změny klimatu** na společnost i přírodu, s nimiž se budeme setkávat v následujících desetiletích, **budou přímo závislé na množství skleníkových plynů, které ještě do atmosféry vypustíme**, ať už spalováním fosilních paliv nebo jinými aktivitami, při nichž vzniká velké množství emisí.
