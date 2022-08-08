@@ -6,6 +6,10 @@ slug:          "energetika"
 redirect_from: "/energetika"
 published:     2022-04-05
 weight:        30
+intro: |
+  Energetika se zabývá **získáváním, přeměnou a distribucí všech forem energie.** V první řadě jde o **těžbu** a distribuci uhlí, ropy, zemního plynu a dalších paliv. Na to navazuje jejich zpracování, tedy **výroba a distribuce elektřiny, tepla a pohonných hmot**. Kromě toho se fosilní paliva také **spalují přímo**: v průmyslu, v domácnostech a ve službách.
+
+  Právě energetika je z hlediska dekarbonizace stěžejní oblastí: **těžba a spalování fosilních paliv stojí za ¾ celosvětových emisí** skleníkových plynů. Nahrazení fosilních paliv nicméně vyžaduje přechod na bezemisní elektřinu (například z obnovitelných zdrojů) a elektrifikaci dopravy, vytápění i průmyslu. Nejvíce pozornosti je proto v této sekci věnováno **výrobě elektřiny.**
 
 dashboard:
 - type:        "compare"
@@ -166,7 +170,3 @@ subtopics:
   - 2016-snizeni-emisi-cr
   - 2-transformace-energetiky
 ---
-
-Energetika se zabývá **získáváním, přeměnou a distribucí všech forem energie.** V první řadě jde o **těžbu** a distribuci uhlí, ropy, zemního plynu a dalších paliv. Na to navazuje jejich zpracování, tedy **výroba a distribuce elektřiny, tepla a pohonných hmot**. Kromě toho se fosilní paliva také **spalují přímo**: v průmyslu, v domácnostech a ve službách.
-
-Právě energetika je z hlediska dekarbonizace stěžejní oblastí: **těžba a spalování fosilních paliv stojí za ¾ celosvětových emisí** skleníkových plynů. Nahrazení fosilních paliv nicméně vyžaduje přechod na bezemisní elektřinu (například z obnovitelných zdrojů) a elektrifikaci dopravy, vytápění i průmyslu. Nejvíce pozornosti je proto v této sekci věnováno **výrobě elektřiny.**

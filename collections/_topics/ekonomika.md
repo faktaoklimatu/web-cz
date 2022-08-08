@@ -6,6 +6,10 @@ slug:          "ekonomika"
 redirect_from: "/ekonomika"
 published:     2022-07-01
 weight:        40
+intro: |
+  Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná **bezprecendentní hospodářská transformace**.
+
+  Do úvah o financování a investicích vstupují hned dvě neznámé: **náklady na zastavení změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisní společnosti, a dále **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dostatečně rychle. Obě neznámé je dnes těžké odhadovat, obojí náklady však budou pravděpodobně značné. Proto je klíčové, abychom zvolili jak efektivní **mitigační opatření** snižující náklady transformace, tak efektivní **adaptační opatření**, která omezí klimatické škody. A abychom s tím příliš neotáleli, protože oddalování či protahování celou transformaci významně prodraží.
 
 dashboard:
 - type:        "single"
@@ -117,7 +121,3 @@ subtopics:
   - 20-financni-sektor
   - klimaticke-finance
 ---
-
-Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná **bezprecendentní hospodářská transformace**.
-
-Do úvah o financování a investicích vstupují hned dvě neznámé: **náklady na zastavení změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisní společnosti, a dále **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dostatečně rychle. Obě neznámé je dnes těžké odhadovat, obojí náklady však budou pravděpodobně značné. Proto je klíčové, abychom zvolili jak efektivní **mitigační opatření** snižující náklady transformace, tak efektivní **adaptační opatření**, která omezí klimatické škody. A abychom s tím příliš neotáleli, protože oddalování či protahování celou transformaci významně prodraží. 

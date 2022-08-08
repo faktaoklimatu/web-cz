@@ -6,6 +6,10 @@ slug:          "krajina-ekosystemy"
 redirect_from: "/krajina-ekosystemy"
 published:     2022-04-19
 weight:        60
+intro: |
+  **Existence lidstva závisí na zdravé krajině.** Tedy takové, kde je dostatek vody, kde nechybí pestrá vegetace a kde je doma bezpočet druhů živočichů. Zdravá a rozmanitá krajina nás všechny živí a zároveň vytváří prostředí, kde se dá příjemně žít.
+
+  **Změna klimatu má na přírodu významný dopad**. Bude-li oteplování pokračovat, pravděpodobně dojde k překročení **bodů zlomu u některých velkých ekosystémů**, jako jsou korálové útesy nebo deštné pralesy, což v těchto ekosystémech způsobí nevratné změny a může to vést až k jejich zániku, s významnými důsledky také pro člověka. Zastavení změny klimatu a lepší péče o krajinu, která zvýší její schopnost adaptace na měnící se podmínky, je proto zásadní nejen pro přírodu, ale i pro lidstvo.
 
 # TODO: doplnit zdroje
 dashboard:
@@ -125,7 +129,3 @@ subtopics:
   - 22-jmk-adaptace
 
 ---
-
-**Existence lidstva závisí na zdravé krajině.** Tedy takové, kde je dostatek vody, kde nechybí pestrá vegetace a kde je doma bezpočet druhů živočichů. Zdravá a rozmanitá krajina nás všechny živí a zároveň vytváří prostředí, kde se dá příjemně žít.
-
-**Změna klimatu má na přírodu významný dopad**. Bude-li oteplování pokračovat, pravděpodobně dojde k překročení **bodů zlomu u některých velkých ekosystémů**, jako jsou korálové útesy nebo deštné pralesy, což v těchto ekosystémech způsobí nevratné změny a může to vést až k jejich zániku, s významnými důsledky také pro člověka. Zastavení změny klimatu a lepší péče o krajinu, která zvýší její schopnost adaptace na měnící se podmínky, je proto zásadní nejen pro přírodu, ale i pro lidstvo.
