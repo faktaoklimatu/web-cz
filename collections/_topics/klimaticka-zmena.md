@@ -146,11 +146,11 @@ subtopics:
 
   content:  # U nového obsahu zvaž přidání také do ekonomika>ekonomicke-dopady.
   - schema-klimaticke-zmeny
-  - ubyvani-biodiverzity
-  - vymirani-koralovych-utesu
   - body-zlomu-1
   - body-zlomu-2
   - body-zlomu-3
+  - ubyvani-biodiverzity
+  - vymirani-koralovych-utesu
   - emisni-scenare-pariz
   - souvislost-emise-otepleni
   - 23-dopady-zmen-klimatu
