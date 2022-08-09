@@ -37,7 +37,7 @@ slug: index
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
     <p class="lead mb-0">S extrémními meteorologickými událostmi se stále častěji objevuje otázka: „Byla tato událost způsobena změnou klimatu?“ Pro rychlé zorientování se v tématu doporučujeme infografiku shrnující to nejdůležitější, pro hlubší porozumění pak „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a texty českých vědců k situaci v Česku.</p>
 
-    {%- assign featured_slugs = "vliv-klimatu-na-extremy, vliv-klimatu-na-extremy-prirucka, vliv-klimatu-na-extremy-cesko, tropicke-dny-brno, souvislost-koncentrace-oteplovani, teplota-cr" | split: ", " %}
+    {% assign featured_slugs = "vliv-klimatu-na-extremy, vliv-klimatu-na-extremy-prirucka, vliv-klimatu-na-extremy-cesko, tropicke-dny-brno, souvislost-koncentrace-oteplovani, teplota-cr" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
@@ -70,7 +70,7 @@ slug: index
 {:.lead .narrow-text}
 Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku.
 
-<div id="temata" class="row topic-tiles">
+<div class="row topic-tiles">
 {%- for topic in sorted_topics %}
 <div class="topic-tile col-6 col-md-4 p-0">
 <a class="my-3" href="{{ topic.url }}">
@@ -83,17 +83,15 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 
 </div></div>
 <div class="section"><div class="container clearfix" markdown="1">
-
 {:#o-projektu .display-2}
 ## O naší práci
 
 <div class="row about-us mt-3 mb-5 justify-content-between">
-
 <div class="col-12 col-md-6 pt-4" markdown="1">
 
 **Děláme rešeršní a analytickou práci**. Hledáme v datech to relevantní pro hlubší pochopení klimatické změny, jejích dopadů a možnostech řešení. Zaměřujeme se na to podstatné pro český kontext a českou společnost.
 
-**Komunikujeme ke klíčovým skupinám**, tedy tvoříme datové vizualizace, články, podcasty nebo přednášky pro veřejnost i klienty z firemní a veřejné sféry.
+**Komunikujeme ke klíčovým skupinám**. Tvoříme datové vizualizace, články, podcasty nebo přednášky pro veřejnost i klienty z firemní a veřejné sféry.
 
 </div>
 <div class="col-12 col-md-6 col-lg-5 pt-4" markdown="1">
@@ -108,9 +106,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 <div class="col-12 mt-3">
 <a href="/o-nas" class="btn btn-primary btn-md-lg"><i class="fas fa-fw fa-info"></i> Více o projektu</a>
 </div>
-
 </div>
-
 
 {:.display-3}
 ### Ocenění
@@ -154,7 +150,6 @@ Naše infografiky a texty využívají  české i zahraniční instituce, zpravo
 <img loading="eager" class="small" src="/assets-local/o-nas/logo-irozhlas.png" alt="iRozhlas">
 <img loading="eager" class="small" src="/assets-local/o-nas/logo-respekt.png" alt="Respekt">
 <img loading="eager" class="small" src="/assets-local/o-nas/logo-deloitte.png" alt="Deloitte">
-
 </div>
 
 </div></div>
