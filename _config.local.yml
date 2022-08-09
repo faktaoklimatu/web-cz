@@ -23,14 +23,10 @@ deploy:
   cors-report-uri: https://nkas07xe.uriports.com
 
 slugs:
-  infographics: infografiky
-  studies: studie
   datasets: datasety
-  topics: temata
   glossary: slovnik
   how-to-use: jak-pouzivat
   further-sources: zdroje
-  news: aktuality
   about: o-nas
 
 collections_dir: collections
