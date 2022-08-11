@@ -6,7 +6,6 @@
   dropdown:
     - title: <i class="fas fa-fw fa-headphones mr-1"></i> Podcast 2050
       link: https://2050podcast.cz/
-      class: no-ext-link-icon
 
     - title: <i class="fas fa-fw fa-book-atlas mr-1"></i> Atlas klimatické změny
       link: /atlas
