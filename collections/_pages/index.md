@@ -136,7 +136,7 @@ První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
 <div class="section"><div class="container clearfix" markdown="1">
 
 {:.display-2 .mb-3}
-## Naše materiály využívají
+## Kdo využívá naše materiály
 
 {:.lead}
 Naše infografiky a texty využívají  české i zahraniční instituce, zpravodajské portály, konzultační společnosti, školy a další aktéři.
