@@ -69,7 +69,7 @@ subtopics:
   qa:
   - q: "Co je Zelená dohoda pro Evropu (European Green Deal)?"
     a: |
-      Zelená dohoda pro Evropu představuje strategii EU pro dosažení **klimatické neutrality do roku 2050**. Součástí dohody však nejsou pouze klimatické cíle, ale také opatření pro zdravější životní prostředí, zemedělství nebo odpadové hospodářství, jinými slovy, jde o komplexní plán pro dekarbonizaci celého hospodářství, včetně zdrojů pro jeho financování. Zelená dohoda byla Evropskou komisí představena v roce 2019, v roce 2020 pak byla schválena členskými zeměmi. V roce 2021 vstoupil v platnost **Evropský klimatický zákon** (Evropský právní rámec pro klima), který činí dosažení klimatické neutrality do roku 2050 právně závazným.
+      Zelená dohoda pro Evropu představuje strategii EU pro dosažení **klimatické neutrality do roku 2050**. Součástí dohody však nejsou pouze klimatické cíle, ale také opatření pro zdravější životní prostředí, zemědělství nebo odpadové hospodářství, jinými slovy, jde o komplexní plán pro dekarbonizaci celého hospodářství, včetně zdrojů pro jeho financování. Zelená dohoda byla Evropskou komisí představena v roce 2019, v roce 2020 pak byla schválena členskými zeměmi. V roce 2021 vstoupil v platnost **Evropský klimatický zákon** (Evropský právní rámec pro klima), který činí dosažení klimatické neutrality do roku 2050 právně závazným.
 
   - q: "Jak je naplňování cílů Zelené dohody financováno?"
     a: |
@@ -151,7 +151,7 @@ subtopics:
 
   - q: "Jak se Česko zavázalo snižovat emise skleníkových plynů?"
     a: |
-      Česko se stejně jako EU zavázalo dosáhnout klimatické neutrality do roku 2050. V rámci Politiky ochrany klimatu si Česko stanovilo cíl dosáhnout snížení emisí skleníkových plynů o 32 Mt do roku 2020 (a o 44 Mt do roku 2030) v porovnání s rokem 2005. V roce 2019 avšak Česko ve srovnání s rokem 2005 dosahovalo snížení pouze o přibližně 25 Mt. V porovnání s rokem 1990 klesly české emise skleníkových plynů do roku 2019 přibližně o 1/3, avšak z velké části se tak událo zejména díky opouštění těžkého průmyslu v 90. letech.
+      Česko se stejně jako EU zavázalo dosáhnout klimatické neutrality do roku 2050. V rámci Politiky ochrany klimatu si Česko stanovilo cíl dosáhnout snížení emisí skleníkových plynů o 32 Mt do roku 2020 (a o 44 Mt do roku 2030) v porovnání s rokem 2005. V roce 2019 avšak Česko ve srovnání s rokem 2005 dosahovalo snížení pouze o přibližně 25 Mt. V porovnání s rokem 1990 klesly české emise skleníkových plynů do roku 2019 přibližně o 1/3, nicméně z velké části se tak událo zejména díky opouštění těžkého průmyslu v 90. letech.
 
   content:
   - adaptacni-strategie-cr
