@@ -7,7 +7,7 @@ redirect_from: "/ekonomika"
 published:     2022-07-01
 weight:        40
 intro: |
-  Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná **bezprecendentní hospodářská transformace**.
+  Klimatická změna úzce souvisí s ekonomickou činností a pro její zastavení je nutná **bezprecedentní hospodářská transformace**.
 
   Do úvah o financování a investicích vstupují hned dvě neznámé: **náklady na zastavení změny klimatu**, tedy kolik bude stát celosvětová transformace k nízkoemisní společnosti, a dále **ekonomické dopady změny klimatu**, tedy kolik nás bude stát, pokud změnu klimatu nezastavíme dostatečně rychle. Obě neznámé je dnes těžké odhadovat, obojí náklady však budou pravděpodobně značné. Proto je klíčové, abychom zvolili jak efektivní **mitigační opatření** snižující náklady transformace, tak efektivní **adaptační opatření**, která omezí klimatické škody. A abychom s tím příliš neotáleli, protože oddalování či protahování celou transformaci významně prodraží.
 
@@ -60,7 +60,7 @@ subtopics:
   title:       "Ekonomická činnost jako příčina změny klimatu"
   title-short: "Ekonomická činnost jako příčina"
   lead: |
-    **Z ekonomického pohledu jsou emise skleníkových plynů úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
+    **Z ekonomického pohledu jsou emise skleníkových plynů přímo úměrné velikosti HDP a emisní intenzitě hospodářství**. Každá oblast světa má v současnosti jinou startovní pozici, jinou emisní intenzitu a jiné možnosti pro transformaci své ekonomické činnosti směrem k nízkouhlíkovým alternativám.
   content:  # U nového obsahu zvaž přidání také do emise>intenzity.
   - emise-svet-na-hdp
   - emisni-intenzity
@@ -71,7 +71,7 @@ subtopics:
   title:       "Ekonomické dopady"
   title-short: "Ekonomické dopady"
   lead: |
-    **Pokračující změna klimatu povede k obrovským ekonomickým škodám**, zvlášť pokud se nám nepodaří zastavit dostatečně rychle. Jaké dopady na ekonomiku lze očekávat a jak je vyčíslit?
+    **Pokračující změna klimatu povede k obrovským ekonomickým škodám**, zvlášť pokud se nám ji nepodaří zastavit dostatečně rychle. Jaké dopady na ekonomiku lze očekávat a jak je vyčíslit?
   content:  # U nového obsahu zvaž přidání také do klimaticka-zmena>dopady.
   - 2006-sternova-zprava
   - 23-dopady-zmen-klimatu
@@ -113,7 +113,7 @@ subtopics:
   -
     q: "Co označuje pojem klimatické finance?"
     a: |
-      Pojem "klimatické finance" označuje závazek hospodářsky rozvinutých států finančně přispívat rozvíjecícím se zemím, aby dokázaly lépe čelit klimatické změně a jejím dopadům. V roce 2009 na klimatické konferenci COP 15 v Kodani se rozvinuté země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvíjejícm se státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
+      Pojem "klimatické finance" označuje závazek hospodářsky rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe čelit klimatické změně a jejím dopadům. V roce 2009 na klimatické konferenci COP 15 v Kodani se rozvinuté země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
 
   content:
   - fondy-eu
