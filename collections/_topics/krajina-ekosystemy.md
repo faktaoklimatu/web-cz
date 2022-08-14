@@ -62,7 +62,7 @@ subtopics:
 
   - q: "Co se děje s lesy v Česku a jak se na tom podílí klimatická změna?"
     a: |
-      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56×26 km.
+      Naše lesy chřadnou v důsledku špatného stavu lesní půdy, ale také kvůli nevhodnému lesnímu hospodaření, jež po dlouhou dobu kladlo ekonomický zájem nad přírodu. Klimatická změna je třetí faktor, který situaci dále zhoršuje – otepluje se, voda se více odpařuje, mění se charakter srážek, a les je tak ještě zranitelnější, mimo jiné i vůči škůdcům, s nimiž si dříve uměl poradit lépe. Kůrovcové kalamity nejsou ničím novým, lesy však nikdy nebyly tak málo odolné, jako jsou v důsledku uvedených faktorů dnes, a proto kalamity neprobíhaly v takovém rozsahu – jen v letech 2016–2020 byla v ČR vytěžena plocha jehličnatého lesa odpovídající obdélníku o rozměrech 56×26 km.
 
 - id:          "lesy"
   title:       "Lesy"
@@ -120,7 +120,7 @@ subtopics:
   lead: |
     **Zdravá krajina vypadá jako pestrá mozaika**. Nenajdeme v ní obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků. Díky této pestrosti **je to i krajina odolná** – dokáže se dobře vyrovnávat s různými změnami, včetně těch klimatických. A zároveň je to pro nás **dlouhodobě jediná záruka obživy**: kde je vyschlá či degradovaná půda nebo kde chybí opylovači, nemůže být kvalitní a hojná úroda.
 
-    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu a současně musejí zemědělcům a lesníkům dávat smysl i ekonomicky. **Klíčová je** v tom **promyšlená pomoc ze strany státu**, který stanoví jasná kriteria pro dotace a šetrné hospodaření.
+    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují vůli dobře hospodařit s ohledem na přírodu a současně musejí zemědělcům a lesníkům dávat smysl i ekonomicky. **Klíčová je** v tom **promyšlená pomoc ze strany státu**, který stanoví jasná kritéria pro dotace a šetrné hospodaření.
 
   content:
   - lesnicka-strategie-eu
