@@ -46,7 +46,7 @@ dashboard:
 subtopics:
   # V kostce
 - lead: |
-    Skleníkové plyny se do atmosféry dostávají **spalováním fosilních paliv** a dalšími aktivitami spojenými s činností člověka, jako je například **kácení lesů, produkce cementu, pěstování rýže či chov dobytka**. Při hledání rychlých a účinných opatření ke snižování emisí je třeba vzít v potaz při jakých lidských činnostech a ve kterých státech vzniká emisí nejvíce:
+    Skleníkové plyny se do atmosféry dostávají **spalováním fosilních paliv** a dalšími aktivitami spojenými s člověkem, jako je například **kácení lesů, produkce cementu, pěstování rýže či chov dobytka**. Při hledání rychlých a účinných opatření ke snižování emisí je třeba vzít v potaz při jakých lidských činnostech a ve kterých státech vzniká emisí nejvíce:
   commented-content:
   - slug: "emise-svet"
     comment-key: 1
@@ -96,7 +96,7 @@ subtopics:
   title:       "Emise skleníkových plynů v Česku"
   title-short: "Emise v ČR"
   lead: |
-    V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq – pro relativní srovnávání s jinými státy je ale užitečné vyjádřit množství skleníkových plynů i v přepočtu na jednoho obyvatele – v takovém případě **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
+    V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq. Pro relativní srovnávání s jinými státy je ale užitečné vyjádřit množství skleníkových plynů i v přepočtu na jednoho obyvatele – v takovém případě **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
   content:
   - emise-cr
   - emise-cr-detail

@@ -120,7 +120,7 @@ subtopics:
   lead: |
     **Zdravá krajina vypadá jako pestrá mozaika**. Nenajdeme v ní obrovské lány s jedinou plodinou, které jsou jinak téměř bez života. Není to krajina s holými kopci, jež zbyly po jehličnatých lesích, s řekami v betonových korytech, krajina bez obojživelníků, ryb, hmyzu či ptáků. Díky této pestrosti **je to i krajina odolná** – dokáže se dobře vyrovnávat s různými změnami, včetně těch klimatických. A zároveň je to pro nás **dlouhodobě jediná záruka obživy**: kde je vyschlá či degradovaná půda nebo kde chybí opylovači, nemůže být kvalitní a hojná úroda.
 
-    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují vůli dobře hospodařit s ohledem na přírodu a současně musejí zemědělcům a lesníkům dávat smysl i ekonomicky. **Klíčová je** v tom **promyšlená pomoc ze strany státu**, který stanoví jasná kritéria pro dotace a šetrné hospodaření.
+    K takové zdravé a odolné krajině můžeme dospět. Změny však vyžadují dobrou vůli hospodařit s ohledem na přírodu a současně musejí zemědělcům a lesníkům dávat smysl i ekonomicky. **Klíčová je** v tom **promyšlená pomoc ze strany státu**, který stanoví jasná kritéria pro dotace a šetrné hospodaření.
 
   content:
   - lesnicka-strategie-eu
