@@ -100,7 +100,7 @@ subtopics:
   content:
   - emise-cr
   - emise-cr-detail
-  - emise-eu-vyvoj
+  - emise-cr-vyvoj
   - nejvetsi-emitenti-cr
   qa:
   - q: "Jak velké jsou emise Česka?"
