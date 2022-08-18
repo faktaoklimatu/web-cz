@@ -91,6 +91,7 @@ subtopics:
   - lesnatost-kraje
   - lesnatost-plo
   - 2021-reserse-lesy-cr
+  - 2022-reserse-pozary
 
 - id:          "biodiverzita"
   title:       "Biodiverzita"
