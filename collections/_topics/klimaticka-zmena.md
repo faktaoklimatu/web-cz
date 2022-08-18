@@ -168,4 +168,5 @@ subtopics:
   - vliv-klimatu-na-extremy-cesko
   - tropicke-dny-brno
   - tropicke-dny-praha
+  - 2022-reserse-pozary
 ---
