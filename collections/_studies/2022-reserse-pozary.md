@@ -4,16 +4,16 @@ title:       "Požáry vegetace a jejich souvislosti s klimatickou změnou"
 slug:        2022-reserse-pozary
 redirect_from: "/2022-reserse-pozary"
 weight:      301
-published:   2021-06-10
+published:   2022-08-19
 tags-scopes: [ cr, svet ]
 tags-topics: [ priroda ]
 caption:     "Přehled článků a zdrojů zabývajících se požáry vegetace či lesními požáry v souvislosti s klimatickou změnou."
 intro: |
- Jako požáry vegetace, nebo také přírodní požáry (*wildfires/bushfires*), se označují nekontrolované požáry lesů, křovin nebo suché trávy, které vzplály ve volné přírodě (např. zapálení bleskem) nebo byly úmyslně či něúmyslně založeny lidmi. Na světě je ročně postiženo požáry okolo 4 miliónů km <sup>2</sup>, ale charakter požárů je v velmi různý v různých oblastech. V Africkcýh savanách a stepích Asie a Jižní Ameriky jde především o rozsáhlé požáry suché trávy, v lesích severní Ameriky a Sibiře o požáry hustých jehličnatých lesů, v tropických oblastech vypalování deštného pralesa. 
+ Jako požáry vegetace, nebo také přírodní požáry (*wildfires/bushfires*), se označují nekontrolované požáry lesů, křovin nebo suché trávy, které vzplály ve volné přírodě (např. zapálení bleskem) nebo byly úmyslně či něúmyslně založeny lidmi. Na světě je ročně postiženo požáry okolo 4 miliónů km <sup>2</sup>, ale charakter požárů je v velmi různý v různých oblastech. V Africkcýh savanách a stepích Asie a Jižní Ameriky jde především o rozsáhlé požáry suché trávy, v lesích severní Ameriky a Sibiře o požáry hustých jehličnatých lesů, v tropických oblastech vypalování deštného pralesa.
 
- V České republice, zejména vzhledem k hustotě osídlení a charakteru krajiny, nedosahují požáry vegetace tak velkých rozsahů jako v jiných evropských zemích. V ČR ročně postiženy typicky desítky hektarů, ve Francii nebo Švédsku se ročně postižená plocha pohybuje v řádu desítek tisích hektarů. 
+ V České republice, zejména vzhledem k hustotě osídlení a charakteru krajiny, nedosahují požáry vegetace tak velkých rozsahů jako v jiných evropských zemích. V ČR ročně postiženy typicky desítky hektarů, ve Francii nebo Švédsku se ročně postižená plocha pohybuje v řádu desítek tisích hektarů.
 
- Ukazuje se, že v souvislosti s klimatickou změnou roste riziko vzniku požárů prakticky ve všech částech světa. 
+ Ukazuje se, že v souvislosti s klimatickou změnou roste riziko vzniku požárů prakticky ve všech částech světa.
 
 items:
   interactives:
@@ -23,7 +23,7 @@ items:
       description: "Aktuální předpověď rizika výskytu přírodních požárů v ČR. Aktualizováno denně"
       note: ""
     - name: "Aktuální data o požárech v EU"
-      authors: "COPERNICUS" 
+      authors: "COPERNICUS"
       link: "https://effis.jrc.ec.europa.eu/apps/effis.statistics/seasonaltrend"
       description: "Aktuální data o spálené ploše pro jednotlivé země EU, srovnání se předchozími roky. Data pocházejí z družicových sledování. Aktualizováno týdně"
       note: ""
@@ -63,11 +63,7 @@ items:
       link: "https://link.springer.com/article/10.1007/s00704-020-03443-6"
       description: "Analýza faktorů stojících za pozorovaným růstem frekvence požárů vegetace v ČR. Jako hlavní příčina vychází růst hodnot FWI (Fire Weather Index), nedostatek vlhkosti v půdě a zvýšený výskyt vln veder, tedy projevy klimatické změny."
       timeframe: "2021"
-      
-  
-    
 ---
-
 
 ## Aktuální data
 
@@ -93,8 +89,6 @@ items:
     {% endfor %}
   </tbody>
 </table>
- 
-
 
 ## Studie
 
