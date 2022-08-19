@@ -141,7 +141,7 @@ První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
 {:.lead}
 Naše infografiky a texty využívají  české i zahraniční instituce, zpravodajské portály, konzultační společnosti, školy a další aktéři.
 
-<div class="our-users mt-5 mb-4">
+<div class="logos mt-5 mb-4">
 <img loading="eager" src="/assets-local/o-nas/logo-cnb.png" alt="Česká národní banka">
 <img loading="eager" src="/assets-local/o-nas/logo-mzp.png" alt="Ministerstvo životního prostředí">
 <img loading="eager" src="/assets-local/o-nas/logo-pwc.png" alt="PwC">
