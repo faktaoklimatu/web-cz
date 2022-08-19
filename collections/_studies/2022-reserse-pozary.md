@@ -73,7 +73,6 @@ items:
       <th scope="col" class="text-uppercase">Název zdroje</th>
       <th scope="col" class="text-uppercase">Instituce</th>
       <th scope="col" class="text-uppercase">Popis</th>
-      <th scope="col" class="text-uppercase">Aktualizace</th>
     </tr>
   </thead>
   <tbody>
@@ -84,7 +83,6 @@ items:
       </td>
       <td class="align-middle">{{ item.authors }}</td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
-      <td class="align-middle">{{ item.timeframe }}</td>
     </tr>
     {% endfor %}
   </tbody>
