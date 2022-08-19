@@ -1,6 +1,6 @@
 - title: "Náš tým"
   lead: |
-    Jsme tým expertů a expertek zabývajících se různými obory – přírodovědou, IT, společenskými vědami, pedagogikou či komunikací. Naším cílem je kultivovat diskuzi v ČR o klimatické změně a s ní související transformaci na nízkouhlíkovou ekonomiku. Chceme zprostředkovat současné vědecké poznání všem, kterých se tyto změny týkají. Tedy všem.
+    Jsme tým expertů a expertek zabývajících se různými obory – přírodovědou, společenskými vědami, datovou analýzou, pedagogikou či komunikací. Naším cílem je kultivovat diskuzi v ČR o klimatické změně a s ní související transformací na nízkouhlíkovou ekonomiku. Chceme zprostředkovat současné vědecké poznání všem, kterých se tyto změny týkají. Tedy všem.
   class: "core-team col-12 col-sm-12 col-md-6 col-lg-4 px-2"
   members:
   - name: "Ondráš Přibyla"
@@ -114,7 +114,7 @@
   - name: "Martin Křivánek"
     summary: "Přemýšlí, jak může mít práce Fakt o klimatu co největší dopad a jak co nejvíce zhodnotit existující infografiky a materiály."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
-    
+
   - name: "Martin crysman Zahradník"
     summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
 

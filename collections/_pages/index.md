@@ -68,7 +68,7 @@ slug: index
 ## Oblasti, kterým se věnujeme
 
 {:.lead .narrow-text}
-Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku.
+Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, která sbíráme, třídíme a zpracováváme, se&nbsp;proto dotýkají různých oborů lidské činnosti – od ekonomiky přes politiku až po energetiku.
 
 <div class="row topic-tiles">
 {%- for topic in sorted_topics %}
