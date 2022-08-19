@@ -96,7 +96,7 @@ items:
       <th scope="col" class="text-uppercase">Název </th>
       <th scope="col" class="text-uppercase">Zdroj</th>
       <th scope="col" class="text-uppercase">Popis</th>
-      <th scope="col" class="text-uppercase">Rok vydání / Aktualizace</th>
+      <th scope="col" class="text-uppercase">Rok vydání</th>
     </tr>
   </thead>
   <tbody>
