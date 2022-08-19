@@ -9,9 +9,9 @@ tags-scopes: [ cr, svet ]
 tags-topics: [ priroda ]
 caption:     "Přehled článků a zdrojů zabývajících se požáry vegetace či lesními požáry v souvislosti s klimatickou změnou."
 intro: |
- Jako požáry vegetace, nebo také přírodní požáry (*wildfires/bushfires*), se označují nekontrolované požáry lesů, křovin nebo suché trávy, které vzplály ve volné přírodě (např. zapálení bleskem) nebo byly úmyslně či něúmyslně založeny lidmi. Na světě je ročně postiženo požáry okolo 4 miliónů km <sup>2</sup>, ale charakter požárů je v velmi různý v různých oblastech. V Africkcýh savanách a stepích Asie a Jižní Ameriky jde především o rozsáhlé požáry suché trávy, v lesích severní Ameriky a Sibiře o požáry hustých jehličnatých lesů, v tropických oblastech vypalování deštného pralesa.
+ Jako požáry vegetace, nebo také přírodní požáry (*wildfires/bushfires*), se označují nekontrolované požáry lesů, křovin nebo suché trávy, které vzplály ve volné přírodě (např. zapálení bleskem) nebo byly úmyslně či neúmyslně založeny lidmi. Na světě je ročně postiženo požáry okolo 4 miliónů km <sup>2</sup>, ale charakter požárů je v velmi různý v různých oblastech. V Afrických savanách a stepích Asie a Jižní Ameriky jde především o rozsáhlé požáry suché trávy, v lesích severní Ameriky a Sibiře o požáry hustých jehličnatých lesů, v tropických oblastech vypalování deštného pralesa.
 
- V České republice, zejména vzhledem k hustotě osídlení a charakteru krajiny, nedosahují požáry vegetace tak velkých rozsahů jako v jiných evropských zemích. V ČR ročně postiženy typicky desítky hektarů, ve Francii nebo Švédsku se ročně postižená plocha pohybuje v řádu desítek tisích hektarů.
+ V České republice, zejména vzhledem k hustotě osídlení a charakteru krajiny, nedosahují požáry vegetace tak velkých rozsahů jako v jiných evropských zemích. V ČR ročně postiženy typicky desítky hektarů, ve Francii nebo Švédsku se ročně postižená plocha pohybuje v řádu desítek tisíc hektarů.
 
  Ukazuje se, že v souvislosti s klimatickou změnou roste riziko vzniku požárů prakticky ve všech částech světa.
 
@@ -31,12 +31,12 @@ items:
     - name: "Global and Regional Trends and Drivers of Fire Under Climate Change"
       authors: "Reviews of Geophysics"
       link: "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020RG000726"
-      description: "Článek analyzuje data o požárech v jednotlivých regionech i globálně. Klíčová zjištění: Frekvence počasí vhodného k šíření požárů roste (v pozorovaných trendech délky požární sezóny) a v důsledku klimatické změny se očekává další růst. Spálená plocha v některých roste (Východní Sibiř, Sev. Amerika), jinde klesá (africké savany, stepi jižní Ameriky a Asie), přičemž globálně spálená plocha klesá. Článek rozebírá faktory, které ovlivňují množství spálené plochy v jednotlivých oblasetech."
+      description: "Článek analyzuje data o požárech v jednotlivých regionech i globálně. Klíčová zjištění: Frekvence počasí vhodného k šíření požárů roste (v pozorovaných trendech délky požární sezóny) a v důsledku klimatické změny se očekává další růst. Spálená plocha v některých roste (Východní Sibiř, Sev. Amerika), jinde klesá (africké savany, stepi jižní Ameriky a Asie), přičemž globálně spálená plocha klesá. Článek rozebírá faktory, které ovlivňují množství spálené plochy v jednotlivých oblastech."
       timeframe: "2022"
     - name: "A human-driven decline in global burned area"
       authors: "Science"
       link: "https://www.science.org/doi/10.1126/science.aal4108"
-      description: "Článek analyzuje dlouhodobé trendy v parametrech požárů vegetace. Klíčová zjištění: Mezi 1998 a 2015 se plocha ročně spálená požáry vegetace zmenšila téměř o čtvrtinu. Pokles je koncentrován v savanách a oblastech s nižším zápojem korun stromů, naopak v oblastech s vyšším zápojen korun je pozorován růst spálené plochy. Hlavní faktory v redukci spálené plochy jsou rozšiřování obdělávané plochy a intensifikace zemědělství."
+      description: "Článek analyzuje dlouhodobé trendy v parametrech požárů vegetace. Klíčová zjištění: Mezi 1998 a 2015 se plocha ročně spálená požáry vegetace zmenšila téměř o čtvrtinu. Pokles je koncentrován v savanách a oblastech s nižším zápojem korun stromů, naopak v oblastech s vyšším zápojem korun je pozorován růst spálené plochy. Hlavní faktory v redukci spálené plochy jsou rozšiřování obdělávané plochy a intensifikace zemědělství."
       timeframe: "2017"
     - name: "Wildfires in EU, 2020"
       authors: "Copernicus"
