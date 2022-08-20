@@ -6,14 +6,15 @@ slug: index
 <div class="section intro">
     <div class="container clearfix">
         <h1 class="display-1" id="home">Fakta o změně<br>klimatu</h1>
-        <span class="tagline">Veřejně dostupné<br>infografiky, data a články</span>
+        <span class="tagline">Veřejně dostupné <span class='nobr'>infografiky, data a články</span></span>
         <p>
         Jsme tým nezávislých analytiků a expertů, který usiluje o to, aby diskuze v naší zemi o klimatických změnách byla věcná, kultivovaná a založená na vědeckých poznatcích a ověřených datech.
         <br/>
         </p>
         <p class="intro-buttons">
+            <a href="{{ site.fundraising }}" class="btn btn-primary d-md-none"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
             <a href="#temata" class="btn btn-secondary no-ext-link-icon">Naše grafy a články</a>
-            <a href="https://2050podcast.cz/" class="btn btn-secondary no-ext-link-icon">Náš podcast 2050 <i class="fas fa-fw fa-headphones"></i></a>
+            <a href="https://2050podcast.cz/" class="btn btn-secondary no-ext-link-icon">Podcast 2050 <i class="fas fa-fw fa-headphones"></i></a>
             <a class="btn btn-secondary no-ext-link-icon" href="#newsletter-modal" id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal">
             <span class="fas fa-fw fa-envelope-open-text"></span> Odebírejte newsletter</a><br/>
         </p>
@@ -21,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Aktuálně: Klima a extrémy</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Klima a extrémy</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -73,7 +74,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 <div class="row topic-tiles">
 {%- for topic in sorted_topics %}
 <div class="topic-tile col-6 col-md-4 p-0">
-<a class="my-3" href="{{ topic.url }}">
+<a class="mb-3 my-md-3" href="{{ topic.url }}">
   <img class="mx-3" loading="eager" src="/assets/topics/{{ topic.slug }}_mini.svg" alt="{{ topic.title }}">
   <h3 class="mx-3">{{ topic.title | capitalize }}</h3>
 </a>
