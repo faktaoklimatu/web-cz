@@ -87,8 +87,8 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 {:#o-projektu .display-2}
 ## O naší práci
 
-<div class="row about-us mt-3 mb-5 justify-content-between">
-<div class="col-12 col-md-6 pt-4" markdown="1">
+<div class="row about-us lead mb-5 justify-content-between">
+<div class="col-12 col-md-6 pt-2 pt-md-4" markdown="1">
 
 **Děláme rešeršní a analytickou práci**. Hledáme v datech to relevantní pro hlubší pochopení klimatické změny, jejích dopadů a možnostech řešení. Zaměřujeme se na to podstatné pro český kontext a českou společnost.
 
@@ -112,20 +112,20 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 {:.display-3}
 ### Ocenění
 
-<div class="row about-us">
-<div class="col-12 col-md-6 col-lg-4 price">
+<div class="row about-us lead">
+<div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-1"></div>
 <div>
 <strong>Cena za komunikaci klimatické změny</strong> (2020) od České učené společnosti a OSN
 </div>
 </div>
-<div class="col-12 col-md-6 col-lg-4 price">
+<div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-2"></div>
 <div>
 První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
 </div>
 </div>
-<div class="col-12 col-md-6 col-lg-4 price">
+<div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-3"></div>
 <div>
 <strong>Cena AFO Olomouc</strong> za významný přínos popularizaci vědy (2022)
@@ -142,7 +142,7 @@ První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
 {:.lead}
 Naše infografiky a texty využívají  české i zahraniční instituce, zpravodajské portály, konzultační společnosti, školy a další aktéři.
 
-<div class="logos mt-5 mb-4">
+<div class="logos mt-md-5 mb-md-4">
 <img loading="eager" src="/assets-local/o-nas/logo-cnb.png" alt="Česká národní banka">
 <img loading="eager" src="/assets-local/o-nas/logo-mzp.png" alt="Ministerstvo životního prostředí">
 <img loading="eager" src="/assets-local/o-nas/logo-pwc.png" alt="PwC">
