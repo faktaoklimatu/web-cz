@@ -21,7 +21,7 @@ Vysvětlení tvorby ceny elektřiny začneme dvěma důležitými koncepty: jak 
 ## Jak se v elektrické síti vyrovnává výroba a spotřeba?
 Základní princip elektrické sítě spočívá v tom, že výroba elektřiny musí být vždy (zhruba) stejná jako její spotřeba. Jestliže spotřeba výrazně přesáhne výrobu, dochází k většímu namáhání generátorů elektřiny. Pokud naopak výroba výrazně přesáhne spotřebu, může docházet k poškozování elektrické rozvodné sítě. Obojí pak v extrémním případě může vést k tzv. _blackoutu_, tedy k přerušení dodávky elektřiny. **Výrobu a spotřebu je proto nutné neustále balancovat v reálném čase.**
 
-Spotřeba elektřiny se v průběhu dne liší – přes den je zpravidla vyšší než v noci. V zimě bývá poptávka po elektřině vyšší z důvodu vytápění (nicméně kvůli oteplování klimatu a rostoucí potřebě využívat klimatizace může v dalších dekádách letní spotřeba převýšit zimní). 
+Spotřeba elektřiny se v průběhu dne liší – přes den je zpravidla vyšší než v noci. V zimě bývá poptávka po elektřině vyšší z důvodu vytápění (nicméně kvůli oteplování klimatu a rostoucí potřebě využívat klimatizace může v dalších dekádách letní spotřeba převýšit zimní).
 
 {% include figure.html
     name="rocni-maximum-spotreby-des.png"
@@ -57,7 +57,7 @@ Pro zapínání a vypínání elektráren jsou zásadní tyto parametry: jejich 
     source-url="https://faktaoklimatu.cz"
 %}
 
-Které elektrárny v daný den a hodinu poběží, o tom se **rozhoduje na burze s elektřinou** – poběží ty, kterým se na daný den a hodinu podaří svou elektřinu na trhu prodat (elektrárny samozřejmě musí při prodeji elektřiny respektovat svou schopnost elektřinu v daný den a hodinu skutečně vyrobit, tedy brát v potaz i svou dobu náběhu). 
+Které elektrárny v daný den a hodinu poběží, o tom se **rozhoduje na burze s elektřinou** – poběží ty, kterým se na daný den a hodinu podaří svou elektřinu na trhu prodat (elektrárny samozřejmě musí při prodeji elektřiny respektovat svou schopnost elektřinu v daný den a hodinu skutečně vyrobit, tedy brát v potaz i svou dobu náběhu).
 
 Jako první se k uspokojení poptávky využívají ty zdroje, které produkují elektřinu nejlevněji (tzn. podávají nejnižší cenové nabídky). Když je poptávka vyšší, než kolik mohou tyto levné zdroje pokrýt, využívají se dražší a dražší zdroje – dokud není poptávka uspokojena. Naopak při snižování poptávky po elektřině se nejdražší zdroje přestávají využívat jako první. Tomuto seřazení zdrojů podle ceny se v angličtině říká _merit order_.
 
@@ -99,7 +99,7 @@ V každém okamžiku se porovnává poptávka po elektřině od zákazníků s m
 Praktickou ukázku toho, jak vypadá [graf poptávky a nabídky elektřiny](https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/krivky-sesouhlaseni), můžete nalézt například na stránkách českého operátora trhu s elektřinou.
 
 ## Z čeho pokryje elektrárna své fixní náklady?
-Když elektrárna vyrábí, generuje provozní zisk, protože cena elektřiny na trhu je většinou o něco vyšší než nabídková cena. Fixní náklady pak elektrárna pokrývá z tohoto provozního zisku. Protože však výši jejích příjmů z jednotky vyrobené elektřiny určuje trh, závisí provozní zisk elektrárny na průměrné ceně elektřiny na trhu. 
+Když elektrárna vyrábí, generuje provozní zisk, protože cena elektřiny na trhu je většinou o něco vyšší než nabídková cena. Fixní náklady pak elektrárna pokrývá z tohoto provozního zisku. Protože však výši jejích příjmů z jednotky vyrobené elektřiny určuje trh, závisí provozní zisk elektrárny na průměrné ceně elektřiny na trhu.
 
 Pokud budou tyto ceny příliš nízké, některé elektrárny nezvládnou pokrýt své fixní náklady a budou uzavřeny. Tím se ovšem sníží nabídka kapacit pro výrobu elektřiny a zvýší se průměrná cena elektřiny. Je-li průměrná cena elektřiny naopak vysoká, přiláká to investice do nových, levnějších elektráren, které pak rozšířením nabídky pro výrobu levnější elektřiny způsobí snížení průměrné ceny elektřiny. Takto se trh s elektřinou sám reguluje.
 
@@ -121,7 +121,7 @@ Nejlevnější elektřinu v současnosti produkují obnovitelné zdroje. Ty nepo
     slug="cena-energie"
 %}
 
-Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, protože mají velmi nízké variabilní náklady. Pokud však připočteme fixní náklady, vycházejí jaderné zdroje poměrně draze, což je jeden z důvodů, proč se v posledních desetiletích v Evropě staví velmi málo nových jaderných elektráren. Na trhu mají jaderné elektrárny zvláštní postavení, neboť je obtížné regulovat jejich výkon. Pokud jsou v daný moment poptávku schopny pokrýt jen obnovitelné a jaderné zdroje, mají přednost jaderné (zápornou nabídkovou cenou jednoduše na burze vytlačí obnovitelné zdroje). 
+Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, protože mají velmi nízké variabilní náklady. Pokud však připočteme fixní náklady, vycházejí jaderné zdroje poměrně draze, což je jeden z důvodů, proč se v posledních desetiletích v Evropě staví velmi málo nových jaderných elektráren. Na trhu mají jaderné elektrárny zvláštní postavení, neboť je obtížné regulovat jejich výkon. Pokud jsou v daný moment poptávku schopny pokrýt jen obnovitelné a jaderné zdroje, mají přednost jaderné (zápornou nabídkovou cenou jednoduše na burze vytlačí obnovitelné zdroje).
 
 V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren k pokrytí celé poptávky po elektřině nestačí, přicházejí na řadu mnohem dražší zdroje, u kterých je možné vyrábět elektřinu dle potřeby (jsou regulovatelné). Mezi ně patří například elektrárny na uhlí, zemní plyn či biomasu. Pořadí jejich využití opět určí to, za jak nízkou cenu jsou tyto elektrárny schopny elektřinu vyrobit. To závisí na cenách paliva pro tyto elektrárny a na jejich emisní náročnosti – čím víc oxidu uhličitého na jednotku vyrobené elektřiny elektrárna vypustí, tím víc musí zaplatit na emisních povolenkách a tím je jednotková cena vyrobené elektřiny dražší. Pomocí tohoto mechanismu motivují emisní povolenky ke snižování emisní náročnosti celé soustavy[^2].
 
@@ -151,7 +151,7 @@ Obchodníci na burze s elektřinou mají možnost nakoupit elektřinu na burze v
 
 Dlouhodobým cílem EU je pak propojení celé Evropy do jednoho velkého, implicitně propojeného trhu. To umožní snazší přenos elektřiny mezi zeměmi – pokud tedy například bude větrno v Severním moři, tamní větrné elektrárny budou moci napájet elektřinou velkou část Evropy. K tomu ovšem bude mimo jiné potřeba posílit evropskou přenosovou soustavu.
 
-### Musí elektrárny prodávat svou elektřinu na burze? 
+### Musí elektrárny prodávat svou elektřinu na burze?
 Nemusí, elektrárny se mohou dohodnout i s jinými subjekty (firmami či institucemi) na přímém odběru elektřiny formou dlouhodobé bilaterální dohody či _power purchase agreement (PPA)_. Tato elektřina pak vůbec neprochází přes burzu a cena prodané elektřiny se řídí tím, co si dané subjekty mezi sebou dohodly. Ceny takto prodané elektřiny ale v principu kopírují ceny na _futures trhu_. Při výrazně nižších cenách PPA by prodejce raději prodával na burze, při výrazně vyšších cenách PPA by na burze raději nakoupil nakupující. Výhodou PPA pro obě strany je flexibilita podmínek, jež si subjekty mohou mezi sebou domluvit.
 
 ### Jak funguje podpora obnovitelných zdrojů elektřiny?
