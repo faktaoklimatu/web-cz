@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Klima a extrémy</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Týden pro klima</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -36,9 +36,10 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">S extrémními meteorologickými událostmi se stále častěji objevuje otázka: „Byla tato událost způsobena změnou klimatu?“ Pro rychlé zorientování se v tématu doporučujeme infografiku shrnující to nejdůležitější, pro hlubší porozumění pak „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a texty českých vědců k situaci v Česku.</p>
+    <p class="lead mb-0">
+    Jsme součástí <a href="https://tydenproklima.cz/">Týdne pro klima</a>, během kterého se po celém Česku konají akce pořádané mnoha různými subjekty. Smyslem těchto přednášek, debat, koncertů, cyklojízd a dalších eventů je zviditelnit téma klimatické změny a poukázat tak na jeho důležitost. Fakta o klimatu se podílejí například na <a href="https://tydenproklima.cz/program-2022/warming-stripes-banner">instalaci</a> na pražské Náplavce, vycházející z projektu "Warming stripes". Také jsme pro vás připravili základní shrnutí fakt o změně klimatu v ČR:</p>
 
-    {% assign featured_slugs = "vliv-klimatu-na-extremy, vliv-klimatu-na-extremy-prirucka, vliv-klimatu-na-extremy-cesko, tropicke-dny-brno, souvislost-koncentrace-oteplovani, teplota-cr" | split: ", " %}
+    {% assign featured_slugs = "mapa-zmeny-teploty, schema-klimaticke-zmeny, teplota-cr, umirani-ceskych-lesu, emise-cr-detail, nejvetsi-emitenti-cr" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
