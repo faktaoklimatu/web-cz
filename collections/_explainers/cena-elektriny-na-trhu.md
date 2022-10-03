@@ -131,7 +131,7 @@ V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren k pokryt�
     slug="21-rust-cen-elektriny"
 %}
 
-Mezi cenou nejlevnějších a nejdražších zdrojů jsou obrovské rozdíly. **Během jednoho dne tak může cena elektřiny oscilovat mezi nulou a několika stovkami eur**, podle momentální spotřeby a podle výroby z obnovitelných zdrojů. Instalovaný výkon obnovitelných zdrojů bude v Evropě nadále růst. Můžeme tedy čekat **častější hodiny s velmi nízkou ceny elektřiny**, a tedy i **méně hodin s velmi vysokými cenami elektřiny**. Tímto způsobem budeme postupně snižovat závislost na fosilních zdrojích a také emise skleníkových plynů v energetice. Velkých výkyvů ceny elektřiny na burze se ale jen tak nezbavíme.
+Mezi cenou nejlevnějších a nejdražších zdrojů jsou obrovské rozdíly. **Během jednoho dne tak může cena elektřiny oscilovat mezi nulou a několika stovkami eur**, podle momentální spotřeby a podle výroby z obnovitelných zdrojů. Instalovaný výkon obnovitelných zdrojů bude v Evropě nadále růst. Můžeme tedy čekat **častější hodiny s velmi nízkou cenou elektřiny**, a tedy i **méně hodin s velmi vysokými cenami elektřiny**. Tímto způsobem budeme postupně snižovat závislost na fosilních zdrojích a také emise skleníkových plynů v energetice. Velkých výkyvů ceny elektřiny na burze se ale jen tak nezbavíme.
 
 ## Dodatky
 
