@@ -166,6 +166,7 @@ subtopics:
   lead: |
     Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Zároveň scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
   content:
+  - bezemisni-elektrina-cr-2050
   - 2020-transformace-energetiky-do-2050
   - 2016-snizeni-emisi-cr
   - 2-transformace-energetiky
