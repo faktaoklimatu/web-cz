@@ -13,9 +13,9 @@ Za projektem Fakta o klimatu stojí mnoho lidí. Někteří zpracovávají data,
 * Ondřej „Ondráš“ Přibyla
 * Martin Ukrop
 * Milan Vítek
-* Hana Vrtalová
+* Hana Tesák Vrtala
 * Martin „crysman“ Zahradník
-* Kristi Zákopčanová
+* Kristi Pšorn Zákopčanová
 * Jakub Zamouřil
 
 Kromě jádra týmu jsme vděční mnohým dalším lidem za oponenturu, zpracování dat, jazykové korektury, grafické připomínky, programování webu či jinou pomoc. Jejich jména uvádíme níže (v abecedním pořadí). Děkujeme.
