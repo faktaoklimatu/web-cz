@@ -21,6 +21,12 @@
   name-long: "Net-zero carbon, klimatická neutralita"
   description: "Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se \"net-zero carbon\" překládá. Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. Pokud máme udržet úroveň globálního oteplení pod 1,5–2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami CO<sub>2</sub> (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
 
+- id: ccs
+  name-short: "CCS"
+  name-long: "Carbon capture and storage"
+  description: |
+    Sada technologií a infrastruktury, jejichž cílem je zachycení CO<sub>2</sub> a jeho trvalé uložení v geologicky stabilním úložišti. Tyto technologie jsou zatím celosvětově ve fázi (velkých) pilotních provozů. Nejčastěji se o CCS mluví v souvislosti s velkými bodovými zdroji emisí, jako jsou elektrárny na fosilní zdroje nebo biomasu, cementárny nebo ocelárny. Alternativou k ukládání uhlíku je jeho využití v průmyslu, např. pro výrobu syntetických paliv. Takový postup se pak označuje jako CCU (Carbon capture and utilization).
+
 - id: cfchfc
   name-short: "Halogenderiváty uhlovodíků"
   description: "Jde o plyny, známé také často jako **freony**. Většina z nich poškozuje ozónovou vrstvu a zároveň jsou silnými skleníkovými plyny. V chemickém názvosloví se označují jako [CFCs](https://en.wikipedia.org/wiki/Chlorofluorocarbon) (chloro-fluoro-carbons), HCFCs (hydro-chloro-fluoro-carbons) nebo [HFCs](https://en.wikipedia.org/wiki/Hydrofluorocarbon) (hydro-fluoro-carbons), a používají se jako rozpouštědla, plnidla nebo jako chladicí plyny v ledničkách a klimatizačních jednotkách. "
@@ -78,7 +84,7 @@
 - id: kjotskyprotokol
   name-short: "Kjótský protokol"
   description: "Jde o mezinárodní dohodu, která byla sjednána 1997 na [UNFCCC:COP3](/slovnik#cop) v japonském Kjótu a je podobně jako Pařížská dohoda právně závazná. Protokol měl původně 83 signatářů, mezi které patřila většina států Evropy, Rusko, Kazachstán, Austrálie, Nový Zéland, USA a Kanada. Spojené státy však dokument nepodepsaly a Kanada později od smlouvy odstoupila. Signatáři se v něm zavázali snížit emise skleníkových plynů v průměru o 5,2 %, cíl každého státu byl nastaven individuálně podle jeho možností. Mezi sledované plyny patřily kromě CO<sub>2</sub> i metan, N<sub>2</sub>O, HFC, PFC a SF<sub>6</sub>."
-  
+
 - id: mitigace
   name-short: "Mitigace"
   description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu, _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
@@ -139,7 +145,7 @@
   name-short: "UNFCCC"
   name-long: "United Nations Framework Convention on Climate Change"
   description: "Rámcová úmluva OSN o změně klimatu (UNFCCC) je základním dokumentem pro celosvětovou spolupráci na snižování koncentrací skleníkových plynů v atmosféře a souvisejících změnách klimatu. Úmluva byla podepsána v roce 1992 na Konferenci OSN o životním prostředí v Rio de Janeiru a od té doby je její právní dosah rozšiřován v rámci tzv. [Konferencí smluvních stran](/slovnik#cop) (COP) dokumenty jako [Kjótský Protokol](/slovnik#kjotskyprotokol) nebo [Pařížská dohoda](/slovnik#parizskadohoda). [[cs.wikipedia](https://cs.wikipedia.org/wiki/Rámcová_úmluva_OSN_o_změně_klimatu)]"
-  
+
 - id: uzamceni-uhliku
   name-short: "Uzamčení uhlíku"
   description: "Uzamčení uhlíku (_carbon lock-in_), nebo přesněji uzamčení uhlíkových emisí, označuje situaci, kdy velké investice do znečišťující infrastruktury zabrání přechodu k nízkoemisním technologiím v blízké budoucnosti, aby nedocházelo ke znehodnocení dříve vynaložených prostředků. Typickým příkladem jsou investice do velké fosilní infrastruktury, například do plynovodů, uhelných elektráren nebo těžební a důlní infrastruktury, které kvůli svému dlouhodobému charakteru mohou způsobovat emise ještě po mnoho desetiletí. Tyto investice mohou také napomáhat budoucím investicím do podobné infrastruktury kvůli využití úspor z rozsahu (_economy of scale_). [[en.wikipedia]](https://en.wikipedia.org/wiki/Carbon_lock-in)"
@@ -148,7 +154,7 @@
   name-short: "WMO"
   name-long: "World Meteorology Organization"
   description: "Světová meteorologická organizace (WMO) se v rámci OSN specializuje na koordinaci výzkumu a shromažďování poznatků o zemské atmosféře. Hlavními oblastmi zájmu jsou počasí, klima a voda na Zemi. [[cs.wikipedia](https://cs.wikipedia.org/wiki/Světová_meteorologická_organizace)]"
-  
+
 - id: w
   name-short: "W a Wh (kW, MW… a kWh, MWh…)"
   name-long: "watt, watthodina a jejich násobky"
