@@ -160,13 +160,21 @@ subtopics:
   - 2019-scenar-necp
   - 2020-reserse-transformace-energetiky
 
+- id:          "serial-elektrina-2050-cr"
+  title:       "Seriál: Jak přemýšlet nad bezemisní energetikou ČR v roce 2050?"
+  title-short: "Seriál: Energetika 2050 ČR"
+  lead: |
+    Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Navíc jí kvůli elektrifikaci jiných sektorů budeme potřebovat výrazně více. Jaké jsou technologické možnosti takové transformace? Jaká jsou kritéria, podle kterých můžeme vyhodnocovat různé scénáře takové transformace?
+  content:
+  - bezemisni-elektrina-cr-2050
+  - technologie-vyroby-elektriny-cr-2050
+
 - id:          "scenare-2050"
   title:       "Scénáře vývoje: Energetika v roce 2050"
   title-short: "Energetika 2050"
   lead: |
-    Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Zároveň scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
+    Okolo roku 2050 budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Celosvětové scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
   content:
-  - bezemisni-elektrina-cr-2050
   - 2020-transformace-energetiky-do-2050
   - 2016-snizeni-emisi-cr
   - 2-transformace-energetiky
