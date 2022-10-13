@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Technologie bezemisní výroby elektřiny v Česku"
 series-order: "II"
-slug:        "technologie-vyroby-elektriny-cr-2050"
+slug:        "bezemisni-energetika-2-technologie"
 published:   2022-09-15
 author:      "Jan Krčál"
 weight:      50
