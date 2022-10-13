@@ -8,11 +8,11 @@ author:      "Jan Krčál"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]
-cover-source-author: "Nicholas Doherty"
+cover-source-author: "Andreas Gücklhorn"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
-cover-source-url: "https://unsplash.com/photos/pONBhDyOFoM"
+cover-source-url: "https://unsplash.com/photos/7razCd-RUGs"
 perex: |
   Dekarbonizace energetiky je klíčový a nutný krok k dosažení uhlíkové neutrality. Tento krok není možné udělat snadno a hned, i pro bohaté evropské státy je to významná technická a ekonomická výzva na dalších 20 až 30 let. Pokud chceme jít smysluplnou cestou, musíme alespoň v obrysech porozumět nástrahám, které nás na ní čekají, a možným cílům, ke kterým bychom chtěli dojít. Tento text provádí právě takový průzkum terénu, z pohledu české a evropské elektroenergetiky.
 

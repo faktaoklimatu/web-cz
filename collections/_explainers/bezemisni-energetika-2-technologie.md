@@ -213,9 +213,7 @@ Při velkém zastoupení slunce a větru budeme krátkodobého vyrovnávání po
 
 ## Závěr
 
-Každá z hlavních technologií pro nízkoemisní výrobu elektřiny má nějaké podstatné omezení: většina výroby ze slunce je koncentrovaná do malé části hodin během teplejší půlky roku, větrná energetika má v Česku omezený potenciál, jaderné zdroje naráží na velmi dlouhou výstavbu a vysoké investiční náklady a tedy vysoké investiční riziko.
-
-
+Každá z hlavních technologií pro nízkoemisní výrobu elektřiny má nějaké podstatné omezení: většina výroby ze slunce je koncentrovaná do malé části hodin během teplejší půlky roku, větrná energetika má v Česku omezený potenciál, aby dokázala pokrýt chladnější část roku, jaderné zdroje naráží na velmi dlouhou výstavbu a vysoké investiční náklady a tedy vysoké investiční riziko.
 
 ## Poznámky a zdroje
 
