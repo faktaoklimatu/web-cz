@@ -1,8 +1,8 @@
 ---
 layout:      explainer
-title:       "Jaké má Česko cesty k bezemisní elektřině?"
-series-order: "I"
-slug:        "bezemisni-elektrina-cr-2050"
+title:       "Kvantitativní obrysy transformace a nejbližší kroky?"
+series-order: "III"
+slug:        "bezemisni-energetika-3-kratkodobe-cile"
 published:   2022-09-15
 author:      "Jan Krčál"
 weight:      50
@@ -21,11 +21,34 @@ perex: |
 {% include includes-local/serial-bezemisni-elektrina.html selected=page.slug %}
 
 {:.tldr}
-- Během dalších 30 let budeme potřebovat **znatelně více elektřiny** než dnes.
-- Zásadní jsou **solární a větrné zdroje**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém zjednodušit.
-- Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, potřebujeme to nahradit importem větrné výroby ze zahraničí, výraznějším rozvojem jaderné energetiky, nebo spoléhat na dlouhodobé ukládání elektřiny, příp. technologii _CCS_.
-- Do rozhodování o budoucí energetice vstupuje řada aspektů: stabilita sítě, finanční náklady, energetická bezpečnost nebo i provázanost s centrálním zásobováním teplem.
-- Plány na dalších 30 let nutně obsahují velké množství neznámých parametrů: potřebujeme pojmenovávat různé druhy rizik a zvažovat jejich přijatelnost.
+
+## Naivní pohled na transformaci elektroenergetiky
+
+Základní postup dekarbonizace energetiky spočívá v nahrazování výroby elektřiny z uhlí a plynu výrobou elektřiny ze slunce a větru. Nabízí se jednoduchá otázka: kolik solárních a/nebo větrných elektráren bude potřeba k takovému nahrazení? Naivní odhad by mohl vypadat následovně. V roce 2020 jsme měli přibližně 2,1 GW instalovaného výkonu v solárech, které během roku vyrobily 2,2 TWh energie. Instalovaný výkon větrných elektráren byl v té době 0,34 GW, a během roku vyrobily 0,7 TWh energie. Když si pro zjednodušení odmyslíme vývoz elektřiny, je k uspokojení domácí spotřeby nutné ročně vyrobit okolo 25 TWh elektřiny z uhlí a plynu. Jednoduchá trojčlenka by pak říkala, že k nahrazení výroby z fosilních paliv bude potřeba buď 12krát více solárních elektráren, nebo 35 krát více větrných elektráren, než kolik bylo v Česku v roce 2020.
+
+Takovýto naivní odhad je ale špatný, protože nezohledňuje několik zásadních věcí:  
+1. **sezonní variabilita**: 12krát více solárních elektráren by vytvářelo velké přebytky v letní sezóně, kdy je navíc nižší spotřeba elektřině, ale výroba ze slunce by zdaleka nestačila k pokrytí zimní sezóny, kdy je vyšší spotřeba a zároveň méně slunečního svitu. Jakýkoliv scénář dekarbonizace musí rozdíly ve spotřebě a výrobě v letní a zimní sezóně kvantifikovat a zohlednit pečlivěji.   
+2. **týdenní variabilita**: výroba ze slunce a větru je závislá na konkréntím počasí a je potřeba, aby spotřebu pokrývala i v slabších obdobích. 
+3. **denní variabilita**: solární elektrárny vyrábí energii pouze přes den  
+4.  **nárůst spotřeby** v důsledku elektrifikace teplárenství, dopravy a průmyslových výrob.  
+
+Nahrazování výroby elektřiny z uhlí a plynu obnovitelnými zdroji samozřejmě ssebou nese více problémů - mezi jinými bude potřeba připravit přenosovou soustavu mezi jednotlivými zeměmi v evropě a distribuční síť mezi jednotlivými městy, bude potřeba nastavit podmínky pro nákup a prodej elektřiny a podobně. V tomto textu se ale soustředíme na základní kvantitativní obrysy transformace energetiky a tedy otázky přenosové soustavy nebo právního a tržního prostředí zde pomíjíme.   
+
+## Tři dějství/fáze transformace energetiky
+
+Jak bude transformace energetiky postupovat, budeme postupně potkávat odlišné jiné problémy. Transformaci by se dalo přirovnat k šachové partii, která má tři fáze (ale vzhledem k elektrikářské konotaci slova fáze budeme používat slovo dějství): zahájení, střední hra a koncovka. Tyto fáze hry vyžadují odlišné strategie - v zahájení maá hráč všechny figurky a snaží se vybudovat si pozici, střední hra je velmi komplexní a vede k mnoha výměnám a při koncovce má hráči jen málo figur a hledá jak je správně použít, aby dokázal dát mat. 
+
+Za **zahájení** můžeme u energetické transformace považovat období postupného zvyšování kapacity nízkoemisních zdrojů (tedy slunce, větru a jádra) zhruba do momentu, kdy pokryjí spotřebu  
+
+**Střední hra**
+
+**Koncovka**
+
+## Na jakých předpokladech stojí výpočty v následujícím textu?
+Technická diskuse 
+- biomasu a hydro řadíme mimo "variabilní OZE"
+- všechny výpočty jsou pro počasí z roku 2021, nicméně nijak zvlášť se jejich charakter nezmění, když použijeme jiné počasí
+- ... 
 
 ## Jaké jsou klíčové parametry budoucí energetiky?
 
