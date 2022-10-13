@@ -166,8 +166,9 @@ subtopics:
   lead: |
     Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Navíc jí kvůli elektrifikaci jiných sektorů budeme potřebovat výrazně více. Jaké jsou technologické možnosti takové transformace? Jaká jsou kritéria, podle kterých můžeme vyhodnocovat různé scénáře takové transformace?
   content:
-  - bezemisni-elektrina-cr-2050
-  - technologie-vyroby-elektriny-cr-2050
+  - bezemisni-energetika-1-scenare
+  - bezemisni-energetika-2-technologie
+  - bezemisni-energetika-3-kratkodobe-cile
 
 - id:          "scenare-2050"
   title:       "Scénáře vývoje: Energetika v roce 2050"
