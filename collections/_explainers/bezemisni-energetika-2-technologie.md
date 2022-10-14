@@ -17,15 +17,15 @@ perex: |
   Abychom mohli dostatečně rychle dekarbonizovat energetiku, potřebujeme významné instalace bezemisních zdrojů elektřiny. V tomto textu probíráme dnes technologicky dostupné a pro Česko relevantní možnosti výroby.
 ---
 
-{% include includes-local/serial-bezemisni-elektrina.html selected=page.slug %}
+{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
 
 {:.tldr}
 - Zásadní zdroji bezemisní elektřiny pro Česko mohou být **slunce a vítr**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku.
 - Rozvojem **jaderné energetiky** nemůžeme dostatečně rychle pokrýt celou spotřebu Česka. Udržení nebo mírné navýšení současné výroby z jádra nicméně může dekarbonizaci energetiky ulehčit.
-- Když nesvítí a nefouká, máme na výběr celou škálu **nízkoemisních flexibilních zdrojů**. Výroba z nich je typicky dražší než výroba ze slunce, větru i jádra. Je tedy důležité [vybudovat náš mix](/explainery/bezemisni-elektrina-cr-2050) tak, abychom flexibilní zdroje potřebovali v co nejmenší míře.
+- Když nesvítí a nefouká, máme na výběr celou škálu **nízkoemisních flexibilních zdrojů**. Výroba z nich je typicky dražší než výroba ze slunce, větru i jádra. Je tedy důležité [vybudovat náš mix](/explainery/bezemisni-energetika-1-scenare) tak, abychom flexibilní zdroje potřebovali v co nejmenší míře.
 
 
-_V tomto textu dáváme přehled základních technologií pro nízkoemisní výrobu elektřiny. V předchozím textu více rozebíráme možnosti jejich kombinace do [nízkoemisního mixu](/explainery/bezemisni-elektrina-cr-2050)._
+_V tomto textu dáváme přehled základních technologií pro nízkoemisní výrobu elektřiny. V předchozím textu více rozebíráme možnosti jejich kombinace do [nízkoemisního mixu](/explainery/bezemisni-energetika-1-scenare)._
 
 ## Slunce a vítr
 
