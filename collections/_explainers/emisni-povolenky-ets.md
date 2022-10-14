@@ -18,8 +18,8 @@ cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "CO2 Sign Pixabay"
 cover-source-url: "https://pixabay.com/illustrations/co2-exhaust-gases-road-sign-auto-4767388/"
+has-audio:   true
 perex:       "Evropské emisní povolenky jsou účinným prostředkem při snižování emisí a jsou klíčové pro dosažení budoucích emisních cílů EU."
-
 ---
 
 Emisní povolenky jsou hlavním nástrojem [Evropského systému pro obchodování s emisemi](https://ec.europa.eu/clima/policies/ets_en) (_European Union Emissions Trading Scheme_, EU ETS), jehož cílem je snížit emise skleníkových plynů prostřednictvím jejich zpoplatnění.
