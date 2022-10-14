@@ -1,6 +1,7 @@
 ---
 layout:      explainer
 title:       "Jaké má Česko cesty k bezemisní elektřině?"
+series-id:   "serie-elektrina-2050-cr"
 series-order: "I"
 slug:        "bezemisni-energetika-1-scenare"
 published:   2022-09-15
@@ -18,7 +19,7 @@ perex: |
 
 ---
 
-{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {:.tldr}
 - Během dalších 30 let budeme potřebovat **znatelně více elektřiny** než dnes.
