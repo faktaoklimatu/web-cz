@@ -160,9 +160,11 @@ subtopics:
   - 2019-scenar-necp
   - 2020-reserse-transformace-energetiky
 
-- id:          "serial-elektrina-2050-cr"
-  title:       "Seriál: Jak přemýšlet nad bezemisní energetikou ČR v roce 2050?"
-  title-short: "Seriál: Energetika 2050 ČR"
+- id:          "serie-elektrina-2050-cr"
+  series:      True
+  title:       "Bezemisní energetika v ČR"
+  series-short-lead: |
+    Tento text je součástí série textů o základních kamenech bezemisní energetiky.
   lead: |
     Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Navíc jí kvůli elektrifikaci jiných sektorů budeme potřebovat výrazně více. Jaké jsou technologické možnosti takové transformace? Jaká jsou kritéria, podle kterých můžeme vyhodnocovat různé scénáře takové transformace?
   content:

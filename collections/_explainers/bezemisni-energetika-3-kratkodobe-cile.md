@@ -1,6 +1,7 @@
 ---
 layout:      explainer
 title:       "Kvantitativní obrysy transformace a nejbližší kroky?"
+series-id:   "serie-elektrina-2050-cr"
 series-order: "III"
 slug:        "bezemisni-energetika-3-kratkodobe-cile"
 published:   2022-09-15
@@ -18,7 +19,7 @@ perex: |
 
 ---
 
-{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {:.tldr}
 

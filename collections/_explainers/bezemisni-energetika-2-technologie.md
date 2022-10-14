@@ -1,6 +1,7 @@
 ---
 layout:      explainer
 title:       "Technologie bezemisní výroby elektřiny v Česku"
+series-id:   "serie-elektrina-2050-cr"
 series-order: "II"
 slug:        "bezemisni-energetika-2-technologie"
 published:   2022-09-15
@@ -17,7 +18,7 @@ perex: |
   Abychom mohli dostatečně rychle dekarbonizovat energetiku, potřebujeme významné instalace bezemisních zdrojů elektřiny. V tomto textu probíráme dnes technologicky dostupné a pro Česko relevantní možnosti výroby.
 ---
 
-{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {:.tldr}
 - Zásadní zdroji bezemisní elektřiny pro Česko mohou být **slunce a vítr**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku.
