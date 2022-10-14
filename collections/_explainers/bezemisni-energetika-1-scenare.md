@@ -18,7 +18,7 @@ perex: |
 
 ---
 
-{% include includes-local/serial-bezemisni-elektrina.html selected=page.slug %}
+{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
 
 {:.tldr}
 - Během dalších 30 let budeme potřebovat **znatelně více elektřiny** než dnes.
@@ -52,7 +52,7 @@ Dalším přitěžujícím parametrem tohoto problému je potřebná rychlost zm
 {% include preview-box.html
     title="Detaily k jednotlivým technologiím"
     text="Více informací k jednotlivým zdrojům elektřiny nabízí další díl této série."
-    slug="technologie-vyroby-elektriny-cr-2050"
+    slug="bezemisni-energetika-2-technologie"
 %}
 
 Ve světle těchto východisek v tomto textu budeme pracovat s následujícími pilíři pro výrobu bezemisní elektřiny v Česku:

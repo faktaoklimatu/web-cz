@@ -18,7 +18,7 @@ perex: |
 
 ---
 
-{% include includes-local/serial-bezemisni-elektrina.html selected=page.slug %}
+{% include includes-local/serial-bezemisni-energetika.html selected=page.slug %}
 
 {:.tldr}
 
@@ -26,60 +26,60 @@ perex: |
 
 Základní postup dekarbonizace energetiky spočívá v nahrazování výroby elektřiny z uhlí a plynu výrobou elektřiny ze slunce a větru. Nabízí se jednoduchá otázka: kolik solárních a/nebo větrných elektráren bude potřeba k takovému nahrazení? Naivní odhad by mohl vypadat následovně. V roce 2020 jsme měli přibližně 2,1 GW instalovaného výkonu v solárech, které během roku vyrobily 2,2 TWh energie. Instalovaný výkon větrných elektráren byl v té době 0,34 GW, a během roku vyrobily 0,7 TWh energie. Když si pro zjednodušení odmyslíme vývoz elektřiny, je k uspokojení domácí spotřeby nutné ročně vyrobit okolo 25 TWh elektřiny z uhlí a plynu. Jednoduchá trojčlenka by pak říkala, že k nahrazení výroby z fosilních paliv bude potřeba buď 12krát více solárních elektráren, nebo 35 krát více větrných elektráren, než kolik bylo v Česku v roce 2020.
 
-Takovýto naivní odhad je ale špatný, protože nezohledňuje několik zásadních věcí:  
-1. **sezonní variabilita**: 12krát více solárních elektráren by vytvářelo velké přebytky v letní sezóně, kdy je navíc nižší spotřeba elektřině, ale výroba ze slunce by zdaleka nestačila k pokrytí zimní sezóny, kdy je vyšší spotřeba a zároveň méně slunečního svitu. Jakýkoliv scénář dekarbonizace musí rozdíly ve spotřebě a výrobě v letní a zimní sezóně kvantifikovat a zohlednit pečlivěji.   
-2. **týdenní variabilita**: výroba ze slunce a větru je závislá na konkréntím počasí a je potřeba, aby spotřebu pokrývala i v slabších obdobích. 
-3. **denní variabilita**: solární elektrárny vyrábí energii pouze přes den  
-4.  **nárůst spotřeby** v důsledku elektrifikace teplárenství, dopravy a průmyslových výrob.  
+Takovýto naivní odhad je ale špatný, protože nezohledňuje několik zásadních věcí:
+1. **sezonní variabilita**: 12krát více solárních elektráren by vytvářelo velké přebytky v letní sezóně, kdy je navíc nižší spotřeba elektřině, ale výroba ze slunce by zdaleka nestačila k pokrytí zimní sezóny, kdy je vyšší spotřeba a zároveň méně slunečního svitu. Jakýkoliv scénář dekarbonizace musí rozdíly ve spotřebě a výrobě v letní a zimní sezóně kvantifikovat a zohlednit pečlivěji.
+2. **týdenní variabilita**: výroba ze slunce a větru je závislá na konkréntím počasí a je potřeba, aby spotřebu pokrývala i v slabších obdobích.
+3. **denní variabilita**: solární elektrárny vyrábí energii pouze přes den
+4.  **nárůst spotřeby** v důsledku elektrifikace teplárenství, dopravy a průmyslových výrob.
 
-Nahrazování výroby elektřiny z uhlí a plynu obnovitelnými zdroji samozřejmě ssebou nese více problémů - mezi jinými bude potřeba připravit přenosovou soustavu mezi jednotlivými zeměmi v evropě a distribuční síť mezi jednotlivými městy, bude potřeba nastavit podmínky pro nákup a prodej elektřiny a podobně. V tomto textu se ale soustředíme na základní kvantitativní obrysy transformace energetiky a tedy otázky přenosové soustavy nebo právního a tržního prostředí zde pomíjíme.   
+Nahrazování výroby elektřiny z uhlí a plynu obnovitelnými zdroji samozřejmě ssebou nese více problémů - mezi jinými bude potřeba připravit přenosovou soustavu mezi jednotlivými zeměmi v evropě a distribuční síť mezi jednotlivými městy, bude potřeba nastavit podmínky pro nákup a prodej elektřiny a podobně. V tomto textu se ale soustředíme na základní kvantitativní obrysy transformace energetiky a tedy otázky přenosové soustavy nebo právního a tržního prostředí zde pomíjíme.
 
 ## Tři dějství/fáze transformace energetiky
 
-Jak bude transformace energetiky postupovat, budeme postupně potkávat odlišné jiné problémy. Transformaci by se dalo přirovnat k šachové partii, která má tři fáze (ale vzhledem k elektrikářské konotaci slova fáze budeme používat slovo dějství): zahájení, střední hra a koncovka. Tyto fáze hry vyžadují odlišné strategie - v zahájení maá hráč všechny figurky a snaží se vybudovat si pozici, střední hra je velmi komplexní a vede k mnoha výměnám a při koncovce má hráči jen málo figur a hledá jak je správně použít, aby dokázal dát mat. 
+Jak bude transformace energetiky postupovat, budeme postupně potkávat odlišné jiné problémy. Transformaci by se dalo přirovnat k šachové partii, která má tři fáze (ale vzhledem k elektrikářské konotaci slova fáze budeme používat slovo dějství): zahájení, střední hra a koncovka. Tyto fáze hry vyžadují odlišné strategie - v zahájení maá hráč všechny figurky a snaží se vybudovat si pozici, střední hra je velmi komplexní a vede k mnoha výměnám a při koncovce má hráči jen málo figur a hledá jak je správně použít, aby dokázal dát mat.
 
-Za **zahájení** můžeme u energetické transformace považovat období postupného zvyšování kapacity nízkoemisních zdrojů (tedy slunce, větru a jádra) zhruba do momentu, kdy tyto nízkoemisní zdroje zcela pokryjí spotřebu na alespoň pár hodin v roce. V této fázi poskytují fosilné zdroje podstatnou část energie a doplňují výrobu těch bezemisních tak, aby byla pokryta spotřeba. Nicméně platí, že každá kWh vyrobená navíc z nízkoemisních zdrojů nemusela být vyrobena z fosilních zdrojů, a tedy nárůst obnovitelných zdrojů přímo šetří emise CO2. V průběhu "zahájení" také není potřeba zohledňovat ukládání elektřiny nebo zásadně řešit flexibilitu spotřeby, protože nízkoemisní zdroje nevyrábí dostatek přebytků, které by bylo užitečné ukládat. V Evropském kontextu mají některé zěmě zahájení za sebou a přešly do střední hry, v česku bychom mohli očekávat přechod ze zahájení do střední hry někdy mezi 2028-2032.     
+Za **zahájení** můžeme u energetické transformace považovat období postupného zvyšování kapacity nízkoemisních zdrojů (tedy slunce, větru a jádra) zhruba do momentu, kdy tyto nízkoemisní zdroje zcela pokryjí spotřebu na alespoň pár hodin v roce. V této fázi poskytují fosilné zdroje podstatnou část energie a doplňují výrobu těch bezemisních tak, aby byla pokryta spotřeba. Nicméně platí, že každá kWh vyrobená navíc z nízkoemisních zdrojů nemusela být vyrobena z fosilních zdrojů, a tedy nárůst obnovitelných zdrojů přímo šetří emise CO2. V průběhu "zahájení" také není potřeba zohledňovat ukládání elektřiny nebo zásadně řešit flexibilitu spotřeby, protože nízkoemisní zdroje nevyrábí dostatek přebytků, které by bylo užitečné ukládat. V Evropském kontextu mají některé zěmě zahájení za sebou a přešly do střední hry, v česku bychom mohli očekávat přechod ze zahájení do střední hry někdy mezi 2028-2032.
 
 Ve střední fázi přichází další faktor: přebytky. V průběhu druhé fáze - **střední hry** - bude sice dále přibývat solárních a větrných instalací, ale zásadní roli v transformaci přebere ukládání energie (baterie, vodík, apod.) a hledání cest k zvyšování flexibility spotřeby. Klíčovým problémem střední hry bude jak využít energii ze slunce a větru v době, kdy je jí přebytek. Další problémy střední hry budou spočívat v optimalizaci využití vodních elektráren a biomasy, které mohou výrobu ze slunce a větru částečně vykrývat, ale jejich použití může přinášet vedlejší důsledky. Z evropského pohledu je také důležitá otázka jak se bude dařit posilování přenosové soustavy mezi zeměmi. Fosilní zdroje se postupně z pokrývání baseloadu (vysvětlit v poznámce) přesunou do role zálohových elektráren, které se spouští jen v době, kdy počasí neumožňuje dostatečnou výrobu ze slunce a větru. Střední hra bude velmi náročná v nastavování pravidel pro trhy...
 
-Za přechod ze střední hry do **Koncovky** lze považovat moment, kdy utilizace  
+Za přechod ze střední hry do **Koncovky** lze považovat moment, kdy utilizace
 
 Přechody jsou takt trochu arbitrární...
 
 ## Na jakých předpokladech stojí výpočty v následujícím textu?
-Technická diskuse 
+Technická diskuse
 - biomasu a hydro řadíme mimo "variabilní OZE"
 - všechny výpočty jsou pro počasí z roku 2021, nicméně nijak zvlášť se jejich charakter nezmění, když použijeme jiné počasí
-- neřešíme přetoky z něměcka... 
+- neřešíme přetoky z něměcka...
 
 ## První dějství - zvyšování výroby ze solárů
 100 hod přebytků?
-Kdybychom se dívali na výrobu z bezemisních zdrojů, brali spotřebu i počasí z roku 2021, nastal by okamžik, kdy by výroba z bezemisních zdrojů plně pokryla spotřebu alespoň na několik hodin při instalovaném výkonu okolo 8GW , tedy přibližně 4 krát více solárů. 
+Kdybychom se dívali na výrobu z bezemisních zdrojů, brali spotřebu i počasí z roku 2021, nastal by okamžik, kdy by výroba z bezemisních zdrojů plně pokryla spotřebu alespoň na několik hodin při instalovaném výkonu okolo 8GW , tedy přibližně 4 krát více solárů.
 
 Obrázek týdne, kdy by to nastalo
 
 Obrázek zimního týdne
 
-Za takovýchto podmínek by fosilní zdroje musely v průběhu roku dodat přibližně 26TWh (oproti 33TWh v roce 2021) 
+Za takovýchto podmínek by fosilní zdroje musely v průběhu roku dodat přibližně 26TWh (oproti 33TWh v roce 2021)
 
 Snímek celého roku k rozkliknutí
 
 ## Hypotetický scénář - zvyšování výroby z větru
 
-Stavět větrné elektrárny v Česku je mnohem náročnější, než stavět solární... nicméně: kdybychom ponechali solární instalace z roku 2021, vzali počasí z roku 2021 a zvyšovali pouze množství instalovaného výkonu větrných elektráren, 
-100 hod přebytků by nastalo přibližně při instalovaném výkonu 7GW, tedy přibližně 20krát více větrníků, než kolik bylo v roce 2021. 
+Stavět větrné elektrárny v Česku je mnohem náročnější, než stavět solární... nicméně: kdybychom ponechali solární instalace z roku 2021, vzali počasí z roku 2021 a zvyšovali pouze množství instalovaného výkonu větrných elektráren,
+100 hod přebytků by nastalo přibližně při instalovaném výkonu 7GW, tedy přibližně 20krát více větrníků, než kolik bylo v roce 2021.
 
 Obrázek týdne, kdy by to nastalo
 
 Obrázek zimního týdne
 
-Za takovýchto podmínek by fosilní zdroje musely v průběhu roku dodat přibližně 21TWh (oproti 33TWh v roce 2021) 
+Za takovýchto podmínek by fosilní zdroje musely v průběhu roku dodat přibližně 21TWh (oproti 33TWh v roce 2021)
 
 Snímek celého roku k rozkliknutí
 
 ## Jak by vypadal scénář 4xsol a 20x vítr
 
-Přebytky by nastaly jen v cca 1000 hodinách, 
+Přebytky by nastaly jen v cca 1000 hodinách,
 
 Snímek celého roku k rozkliknutí
 
