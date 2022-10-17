@@ -19,6 +19,7 @@ cover-source-license-url: "https://pixabay.com/service/license/"
 cover-source-text: "CO2 Sign Pixabay"
 cover-source-url: "https://pixabay.com/illustrations/co2-exhaust-gases-road-sign-auto-4767388/"
 has-audio:   true
+audio-bookmarks: [ 48, 209, 304, 347, 402, 457, 497, 629, 831 ]
 perex:       "Evropské emisní povolenky jsou účinným prostředkem při snižování emisí a jsou klíčové pro dosažení budoucích emisních cílů EU."
 ---
 
