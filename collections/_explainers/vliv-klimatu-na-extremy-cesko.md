@@ -99,7 +99,19 @@ Počasí vhodné pro vznik požárů nicméně samo o sobě požár nezpůsobí,
 
 *Autor: [Libor Elleder](#libor-elleder)*
 
-*Text k tomuto extrému připravujeme.*
+**Až na několik výjimek** (např. po technickém selhání - protržení hráze apod.) **jsou povodně v ČR spojeny s atmosférickými srážkami** v různé podobě. Intenzivní či dlouhotrvající déšť, případně rychlé tání sněhu se ale vztahují k rozdílným meteorologickým situacím – a podle toho se pak značně liší i následné povodně. Navíc je u povodní vždy třeba vzít v potaz i časové a prostorové měřítko.
+
+Nedávno zveřejněná evropská studie[^povodne-bloeschl] hledá souvislosti u řady evropských povodní v přibližně 100 lokalitách za posledních 500 let. V tomto období se vyskytlo celkem devět period s vysokou četností intenzivních povodní, přičemž poslední perioda (1993–2016) patří mezi tři nejsilnější. Právě během ní postihly střední Evropu extrémní letní povodně, včetně povodně na našem území v srpnu 2002[^povodne-mef] – o ní víme jistě, že srovnatelná povodeň se vyskytla v povodí Vltavy naposledy v roce 1432.[^povodne-mef] [^povodne-elleder-proxy] Tato událost byla sice extrémní, ale zároveň i typická v tom, že přišla po období bez významnějších povodní.[^povodne-cyklony]
+
+Skončila už tato silná povodňová perioda, nebo ještě pokračuje a jaký je vliv klimatické změny? Zatímco zřetelnější projevy klimatické změny pozorujeme řádově desítky let, u extrémních povodňových událostí s pravděpodobnosti opakování průměrně za 100, 500 či 1000 let (stoletá povodeň apod.) nemáme k dispozici mnoho dat. Navíc ve 20. století (tedy v době klimatické změny) byla četnost významných povodní v povodí Labe ve srovnání s 19. stoletím nízká a dramaticky vzrostla až ve zmíněné poslední periodě povodní na přelomu tisíciletí. **Jednoduchý důkaz o souvislosti mezi klimatickou změnou a četností extrémních povodní tedy podat nelze.**
+
+Vše ještě komplikuje fakt, že člověk svou činností neovlivňuje pouze klima, ale také proměňuje krajinu kolem sebe, což má pak různý dopad na průběh, výskyt a rozložení povodní. **Výstavba přehrad, změny v rybničním hospodářství, regulace vodních toků, zemědělská a lesnická činnost i ochrana před povodněmi, to všechno ovlivňuje, jak velký dopad bude povodeň mít.** Například nevhodný osevní postup dramaticky zhorší průběh lokální přívalové povodně (regionálně se ale neprojeví). Mobilní bariéry zase mohou významně zlepšit průběh regionální povodně v daném místě, pokud se je podaří instalovat včas.
+
+Přinese tedy klimatická změna v ČR každoroční nárůst povodní? **Spíše než více povodní můžeme obecně očekávat větší počet extrémních projevů počasí**, k nimž patří také povodně. Ty se pak lokálně mohou někdy vymykat místním podmínkám či aktuálním zkušenostem. I v minulosti určitě najdeme příklady extrémních povodní s mimořádnými škodami a vysokým počtem obětí, například v letech 1714[^povodne-elleder-1714] a 1872.[^povodne-elleder-1872] Podobně mimořádné byly také povodně v červnu 2021 v Porýní. Stejně jako dnes i v dřívějších dobách přicházely a odcházely povodňové periody náhle, bez jakékoli patrné pravidelnosti a plynulého nástupu.[^povodne-bloeschl] **Vliv klimatické změny se však může projevit jako zesílení této nepravidelnosti a nepředvídatelnosti.** Pro ilustraci připomeňme poslední povodňovou periodu: v povodí Dunaje byly v roce 2013 nejvýznamnější povodně od roku 1501,[^povodne-bloeschl] tedy za posledních 500 let. Po nich nastalo ve střední Evropě velké sucho (2014–2020), které bylo rovněž vyhodnoceno jako extrémní (viz výše v kapitole [*Sucho*](#sucho)).[^povodne-buentgen-sucho]
+
+Samostatnou kapitolou jsou pak lokální bleskové povodně. Existují různé studie poukazující například na nárůst v počtu dnů s úhrnem srážek nad 20 mm.[^povodne-ocekavane-podminky] To by mohlo potvrzovat, že **můžeme v budoucnu čekat více srážek v podobě intenzivních nebo přívalových dešťů.** Ani z toho však ještě automaticky neplyne, že přívalové povodně budou častější. V roce 2009 se u nás po dobu 14 dnů (mezi 24. červnem a 5. červencem) vyskytovaly přívalové povodně denně. Podobná situace byla zaznamenána naposledy v létě roku 1875, shodou okolností ve stejném období. V posledních třech dekádách byly ve střední Evropě zaznamenány všechny možné typy extrémních povodní, stejně tak jsme ale měli i období, kdy se u nás téměř žádné nevyskytly.
+
+Také již zmíněný katastrofální případ rozvodnění přítoků Rýna v západní části Německa v roce 2021 přišel po období několika suchých let. Způsobil obrovské škody a velký počet obětí[^povodne-danhelka] [^povodne-copernicus-2021] a mimo jiné ukázal, že ani moderní technika a komunikace v takových případech není všespásná. Ani zdokonalování předpovědních modelů a protipovodňové ochrany nemůže vést k úspěchu bez porozumění a důvěry veřejnosti,[^povodne-assmann] jejíž "povodňová paměť" od každé povodňové periody rychle "vyhasíná".[^povodne-garde-hansen] [^povodne-fanta] Abychom v této věci udělali malý krůček vpřed, snažíme se v ČHMÚ prohloubit obecnou znalost minulých povodňových extrémů, k nimž na našem území došlo v minulosti. Připravili jsme proto mapovou aplikaci [MEF (Map of Extreme Floods)](https://chmi.maps.arcgis.com/apps/MapSeries/index.html?appid=dc50b65b4483465cb98c50d4b55df75d), v níž se lze o vybraných historických případech něco dozvědět.
 
 ## Kontakty na experty
 
@@ -147,14 +159,40 @@ libor.elleder@chmi.cz<br/>
 
 [^vlny-veder-twitter]: [Příspěvěk](https://twitter.com/pavelzahrad/status/1531606002688303104?s=20&amp;t=jhse0ugWMTfUgCJ4kI_b0g) na Twitteru Pavla Zahradníčka
 
-[^vlny-veder-urban]: Urban, A., Fonseca-Rodríguez, O., Di Napoli, C. & Plavcová, E. Temporal changes of heat-attributable mortality in Prague, Czech Republic, over 1982–2019. Urban Climate 44 (2022). [https://doi.org/10.1016/j.uclim.2022.101197](https://doi.org/10.1016/j.uclim.2022.101197)
+[^vlny-veder-urban]: Urban, A., Fonseca-Rodríguez, O., Di Napoli, C. & Plavcová, E. Temporal changes of heat-attributable mortality in Prague, Czech Republic, over 1982–2019. *Urban Climate* **44** (2022). [doi:10.1016/j.uclim.2022.101197](https://doi.org/10.1016/j.uclim.2022.101197)
 
-[^vlny-veder-lhotka]: Lhotka, O., Kyselý, J. & Farda, A. Climate change scenarios of heat waves in Central Europe and their uncertainties. Theoretical and Applied Climatology 131, 1043–1054 (2018). [https://doi.org/10.1007/s00704-016-2031-3](https://doi.org/10.1007/s00704-016-2031-3)
+[^vlny-veder-lhotka]: Lhotka, O., Kyselý, J. & Farda, A. Climate change scenarios of heat waves in Central Europe and their uncertainties. *Theoretical and Applied Climatology* **131**, 1043–1054 (2018). [doi:10.1007/s00704-016-2031-3](https://doi.org/10.1007/s00704-016-2031-3)
 
 [^vlny-veder-irozhlas]: Štěpán Sedláček: [Výzkum: Změna klimatu může za přibližně pětinu každoročních úmrtí souvisejících s horkem v Česku](https://www.irozhlas.cz/veda-technologie/veda/klima-horko-studie-cesko-umrti_2106060736_ada)
 
 [^vlny-veder-praha]: Akademie věd ČR: [Horko v Praze: zvýšená úmrtnost za posledních 10 let](https://www.avcr.cz/cs/pro-media/tiskove-zpravy/Horko-v-Praze-zvysena-umrtnost-za-poslednich-10-let/)
 
-[^mozny-trnka-brazdil]: Možný, M., Trnka, M. & Brázdil, R. Climate change driven changes of vegetation fires in the Czech Republic. Theoretical and Applied Climatology 143, 691–699 (2021). [https://doi.org/10.1007/s00704-020-03443-6](https://doi.org/10.1007/s00704-020-03443-6)
+[^mozny-trnka-brazdil]: Možný, M., Trnka, M. & Brázdil, R. Climate change driven changes of vegetation fires in the Czech Republic. *Theoretical and Applied Climatology* **143**, 691–699 (2021). [doi:10.1007/s00704-020-03443-6](https://doi.org/10.1007/s00704-020-03443-6)
 
-[^trnka-et-al]: Trnka, M., Možný, M., Jurečka, F. et al. Observed and estimated consequences of climate change for the fire weather regime in the moist-temperate climate of the Czech Republic. Agricultural and Forest Meteorology 310 (2021). [https://doi.org/10.1016/j.agrformet.2021.108583](https://doi.org/10.1016/j.agrformet.2021.108583)
+[^trnka-et-al]: Trnka, M., Možný, M., Jurečka, F. et al. Observed and estimated consequences of climate change for the fire weather regime in the moist-temperate climate of the Czech Republic. *Agricultural and Forest Meteorology* **310** (2021). [doi:10.1016/j.agrformet.2021.108583](https://doi.org/10.1016/j.agrformet.2021.108583)
+
+[^povodne-bloeschl]: Blöschl, G., Kiss, A., Viglione, A. et al. Current European flood-rich period exceptional compared with past 500 years. *Nature* **583**, 560–566 (2020). [doi:10.1038/s41586-020-2478-3](https://doi.org/10.1038/s41586-020-2478-3)
+
+[^povodne-mef]: MEF, Elleder, Šírová. [Map of Extreme Floods](https://chmi.maps.arcgis.com/apps/MapSeries/index.html?appid=dc50b65b4483465cb98c50d4b55df75d), webová aplikace
+
+[^povodne-elleder-proxy]: Elleder, L., 2016. Proxydata v hydrologii – Řada pražských průtokových kulminací 1118–1825, ČHMÚ Praha, 103 s. ISBN 978-80-87577-44-8
+
+[^povodne-elleder-1714]: Elleder L., Krejčí, J. and Šírová, J. The 1714 flash flood in the Bohemian-Moravian Highlands–Reconstructing a Catastrophe. *Quaternary International* **538**, 14–28 (2020). [doi:10.1016/j.quaint.2019.02.002](https://doi.org/10.1016/j.quaint.2019.02.002)
+
+[^povodne-elleder-1872]: Elleder L., Krejčí J, Racko S., Daňhelka J., Šírová J., Kašpárek, L.. Reliability check of flash-flood in Central Bohemia on May 25, 1872. *Global Planetary Change* **187** (2020). [doi:10.1016/j.gloplacha.2019.103094](https://doi.org/10.1016/j.gloplacha.2019.103094)
+
+[^povodne-danhelka]: Daňhelka, J. 2022. Německé povodně zpovzdálí, Meteorologické zprávy č. 2/2022 s. 51–59.
+
+[^povodne-cyklony]: Její příčinou byla dráha srážkotvorné [cyklony typu Vb](https://www.chmi.cz/files/portal/docs/meteo/om/mk/syntypiz/sitweb/B.html) a několikadenní trvalé silné srážky (k těm dochází právě i s ohledem na tvar trajektorie cyklony). Velmi podobné periody přinesly například extrémní přívalové povodně na přelomu června a července 2009 či katastrofální povodně v Jizerských horách v roce 2010.
+
+[^povodne-buentgen-sucho]: Büntgen, U., Urban, O., Krusic, P.J. et al. Recent European drought extremes beyond Common Era background variability. *Nat. Geosci.* **14**, 190–196 (2021). [doi:10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0)
+
+[^povodne-assmann]: Assmann. J., Czaplicka, J. Collective Memory and Cultural Identity. **New Ger Crit** *65*, 125–133 (1995). [doi:10.2307/488538](https://www.jstor.org/stable/488538)
+
+[^povodne-garde-hansen]: Garde-Hansen, J., McEwen, L., Holmes, A., Jones, O.. Sustainable flood memory: Remembering as resilience. *Mem. Stud.* **10**, 4, 384–405 (2017).
+
+[^povodne-fanta]: Fanta, V., Šálek, M., Sklenička, P. How long do floods throughout the millennium remain in the collective memory?. *Nat. Commun.* **10**, 1105 (2019). [doi:10.1038/s41467-019-09102-3](https://doi.org/10.1038/s41467-019-09102-3)
+
+[^povodne-ocekavane-podminky]: Viz studie [Očekávané klimatické podmínky v ČR](/studie/2019-klimaticke-podminky-cr-1).
+
+[^povodne-copernicus-2021]: [Flooding in Europe](https://climate.copernicus.eu/esotc/2021/flooding-july), Copernicus. *European State of the Climate 2021*
