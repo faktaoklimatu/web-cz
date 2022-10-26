@@ -106,6 +106,8 @@ subtopics:
   - 9-mezinarodni-jednani-historie
   - 10-mezinarodni-jednani-dopady
   - 11-mezinarodni-jednani-prubeh
+  - 31-cop27
+  - 32-david-moran
 
 - id:          "emisni-zavazky"
   title:       "Emisní závazky"
