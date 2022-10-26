@@ -39,7 +39,7 @@ slug: index
     <p class="lead mb-0">
     Od 6. do 18. listopadu 2022 se koná každoroční mezinárodní konference OSN o ochraně klimatu, tzv. COP. Letošní 27. ročník proběhne v egyptském Šarm aš-Šajchu. Setkají se zde zástupci států světa, aby posoudili, jak se jednotlivým zemím v praxi daří naplňovat své klimatické závazky. Velkým tématem bude také finanční i nefinanční podpora určená rozvojovým zemím, a to v oblastech, jako jsou klimatické finance, ztráty a škody nebo adaptace na změny klimatu. Níže naleznete naše infografiky, texty i epizody podcastu, které se těmto tématům věnují:</p>
 
-    {% assign featured_slugs = "emisni-zavazky, pozice-akteru-cop, teplota-cr, umirani-ceskych-lesu, 11-mezinarodni-jednani-prubeh, akteri-klimatickych-jednani" | split: ", " %}
+    {% assign featured_slugs = "emisni-zavazky, 31-cop27, 32-david-moran, pozice-akteru-cop, akteri-klimatickych-jednani, 11-mezinarodni-jednani-prubeh" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
