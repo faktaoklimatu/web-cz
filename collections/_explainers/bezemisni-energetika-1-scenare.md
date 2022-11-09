@@ -72,8 +72,8 @@ Dalším přitěžujícím parametrem tohoto problému je potřebná rychlost zm
 Ve světle těchto východisek v tomto textu budeme pracovat s následujícími pilíři pro výrobu bezemisní elektřiny v Česku:
 
 1. **Slunce a vítr** mají velmi rychlé nasazení, nízké investiční náklady a stále obrovský nevyužitý potenciál v ČR. Tyto zdroje mají ale výrazně proměnlivou výrobu.
-2. **Jádro** dokáže vyrábět stabilně, má ale dlouhou dobu výstavby, vysoké investiční náklady a vysoké investiční riziko. Tyto problémy by mohla překonat technologie _malých modulárních reaktorů_, která zatím ale není zralá ke komerčnímu nasazení.
-3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být biomasa, vodní elektrárny, fosilní zdroje s <glossary id='ccs'>CCS</glossary>. Podobnou funkci také plní flexibilita spotřeby a technologie pro ukládání elektřiny (přečerpávací elektrárny, baterie, zelený vodík, apod.).
+2. **Jádro** dokáže vyrábět stabilně, má ale dlouhou dobu výstavby, vysoké investiční náklady a vysoké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, která zatím ale není zralá ke komerčnímu nasazení.
+3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být biomasa, vodní elektrárny, fosilní zdroje s <glossary id='ccs'>CCS</glossary>. Podobnou funkci také plní technologie pro ukládání elektřiny (přečerpávací elektrárny, baterie, zelený vodík, apod.) a flexibilita spotřeby.
 
 Naši současnou spotřebu pokrývají tyto tři pilíře jen z části, zbytek pokrývá vysokoemisní fosilní pilíř:
 {% include figure.html
@@ -104,11 +104,11 @@ Pro fungování elektrické sítě je nutné, aby výroba elektřiny vždy odpov
 
 Důležitá podmínka pro stabilitu sítě je soulad výroby a spotřeby na sezónní škále. Pro jednoduchost v tomto textu budeme rozlišovat _letní půlku roku_ (duben–září) od _zimní_ (říjen–březen).
 
-Sezóna ovlivňuje výrobu, v letní půlce roku se například vyrobí 3x více elektřiny ze slunce než v zimní půlce. Sezóna také ovlivňuje spotřebu, kvůli vytápění je dnes v zimní půlce asi o 20 % vyšší spotřeba než v letní. Při výrazné elektrifikaci vytápění může být v roce 2050 zimní spotřeba dokonce o 40—50 % vyšší než v letní půlce roku.
+Sezóna ovlivňuje výrobu, v letní půlce roku se například vyrobí 3x více elektřiny ze slunce než v zimní půlce. Sezóna také ovlivňuje spotřebu, v zimní půlce je dnes asi o 20 % vyšší spotřeba než v letní. Při výrazné elektrifikaci vytápění může být v roce 2050 zimní spotřeba dokonce o 40–50 % vyšší než v letní půlce roku.
 
 #### Soulad s potřebami teplárenství
 
-V Česku máme rozsáhlé systémy centrálního zásobování teplem. Teplárny kromě tepla vyrábí i elektřinu a tak řešení pro dekarbonizaci elektroenergetiky je nutně provázané s řešením pro dekarbonizaci tepláren. Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, která využívají např. odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (na biomasu nebo bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů pro vyrovnávání výkyvů ve výrobě ze slunce a větru. V teplárenství se také může využít odpadní teplo z malých modulárních reaktorů.
+V Česku máme rozsáhlé systémy centrálního zásobování teplem. Teplárny kromě tepla vyrábí i elektřinu a tak řešení pro dekarbonizaci elektroenergetiky je nutně provázané s řešením pro dekarbonizaci tepláren. Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, např. využívající odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (na biomasu nebo bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů pro vyrovnávání výkyvů ve výrobě ze slunce a větru. V teplárenství se také může využít odpadní teplo z malých modulárních reaktorů.
 "
     col2="
 #### Přiměřené náklady
@@ -213,17 +213,17 @@ V dalším textu přidáváme k těmto ilustrativním scénářům několik vhle
 
 **Klíčový problém českého bezemisního mixu je pokrytí zimní spotřeby.** Pro jednoduchost rozdělujeme rok na dvě poloviny, _zimní půlkou_ myslíme období _říjen–březen_. V zimní polovině roku dodají solární panely výrazně méně než v letní polovině. Naopak, větrné elektrárny vyrábí více v zimě.
 
-**V Česku máme pro pokrytí zimní poloviny roku nedostatečný potenciál větru**. Ukážeme to na ambiciózní výrobě z větru ve výši 30 TWh za rok (to je asi 50x více než dnes, pořád ale bezpečně pod technickým potenciálem větrné energetiky v Česku). Když k tomu přidáme tolik slunce, abychom neměli v létě zásadní přebytky, bude vždy v zimě zásadně chybět elektřina. V následujícím ilustrativním mixu to dorovnávají neupřesněné další flexibilní zdroje.
+**V Česku máme pro pokrytí zimní poloviny roku nedostatečný potenciál větru**. Ukážeme to na ambiciózní výrobě z větru ve výši 30 TWh za rok (to je asi 50x více než dnes, pořád ale bezpečně pod technickým potenciálem větrné energetiky v Česku). Když k tomu přidáme tolik slunce, abychom neměli v létě zásadní přebytky, bude vždy v zimě podstatně chybět elektřina. V následujícím ilustrativním mixu to dorovnává biomasa a další (neupřesněné) flexibilní zdroje.
 
 {% include figure.html
-    class="narrow-figure"
+    class="seminarrow-figure"
     name="seasonal-baseline.png"
     alt="Sezónní vyváženost ilustrativního mixu"
     caption="Scénář bezemisní výroby elektřiny s ambiciózním rozvojem větrné energetiky (bez nového jádra). Tento scénář vyžaduje velké množství flexibilních zdrojů, obzvláště v zimě."
     source-text="Fakta o klimatu"
 %}
 
-Vhodným flexibilním výrobním zdrojem na pokrytí části zimní spotřeby je **biomasa**. Jednak se dobře skladuje, jednak je vhodná pro menší teplárenské bloky, tedy kromě v zimě potřebné elektřiny může poskytnout i v zimě potřebné teplo. Pokrýt z tohoto zdroje jen na výrobu elektřiny více než 30 TWh ročně je ovšem na hraně potenciálu biomasy a dost jistě by tak přinášelo konflikty s dalšími hodnotami jako je biodiverzita nebo estetika krajiny.
+Jak naznačujeme, vhodným flexibilním výrobním zdrojem na pokrytí části zimní spotřeby je **biomasa**. Jednak se dobře skladuje, jednak je vhodná pro menší teplárenské bloky, tedy kromě v zimě potřebné elektřiny může poskytnout i v zimě potřebné teplo. Pokrýt z tohoto zdroje více než 30 TWh elektřiny ročně (a další desítky TWh tepla) je ovšem na hraně potenciálu biomasy a dost jistě by tak přinášelo konflikty s dalšími hodnotami jako je biodiverzita nebo estetika krajiny.[^aktualni-skala-biomasy]
 
 Dalším možným flexibilním výrobním zdrojem jsou **fosilní zdroje s CCS**. Ty ovšem ve velkém použití také přináší sadu problémů, obzvláště se pojí s nenulovými emisemi.
 
@@ -253,11 +253,13 @@ Tento scénář vyžaduje kromě výrazného rozvoje výroby ze slunce a větru 
     name="seasonal-alternatives.png"
     alt="Sezónní vyváženost ilustrativního mixu"
     caption-above=caption_comments_seasonality
-    caption="Různé přístupy doplňují chybějící výrobu v zimě jiným způsobem, buď akumulací přebytků z léta nebo zdrojem, který je schopen více vyrábět v zimě (ať už je to zahraniční větrná výroba na moři nebo jaderné bloky, u kterých lze v létě vyměňovat palivo, příp. flexibilně snižovat výroba)"
+    caption="Různé přístupy doplňují chybějící výrobu v zimě jiným způsobem, buď akumulací přebytků z léta nebo zdrojem, který je schopen více vyrábět v zimě (ať už je to zahraniční větrná výroba na moři nebo jaderné bloky, u kterých lze na léto plánovat výměny palivových souborů, příp. flexibilně snižovat výrobu)"
     source-text="Fakta o klimatu"
 %}
 
 Spoléhat se v Česku **čistě** na slunce a vítr není možné. Vždy potřebujeme alespoň jeden nesnadný nástroj pro vyrovnání zimní spotřeby: zelený vodík, import, jádro, případně velké množství biomasy nebo fosilní zdroje s CCS.
+
+Je potřeba pamatovat na to, že zde ukazujeme optimistický scénář rozvoje větrné energetiky. V základním scénáři výše se **mezera v pokrytí zimní spotřeby elektřiny může z 25 TWh zvětšit až na 40 TWh**, pokud se nám nepodaří větrnou energetiku patřičně rozvinout.
 
 ## Kolik to celé bude stát?
 
@@ -339,6 +341,7 @@ Pro připomenutí: těmto strategickým volbám je nadřazeno několik imperativ
 
 [^consumption-metric]: Technicky vzato jde o čistou spotřebu a ztráty při přenosu a distribuci elektřiny. Tedy z hrubé spotřeby vynecháváme složky závislé na energetickém mixu: vlastní spotřebu elektráren a spotřebu přečerpávacích vodních elektráren.
 [^pokryti-spotreby]: Při výrazném nasazení slunce a větru dochází snadno v určitých momentech k nadvýrobě elektřiny. Proto v grafech nezobrazujeme, kolik elektřiny celkově zdroj vyrobí, ale kolik je z ní přímo použitelné, tedy jakou měrou zdroj přispěje k pokrytí momentální poptávky. Část nadbytků je ovšem možné uložit a využít později, tato elektřina se objeví v kategorii flexibilních zdrojů.
+[^aktualni-skala-biomasy]: Pro srovnání, v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy, dalších asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (při [40% účinnosti](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) konverze). Celkově je tedy dnešní primární produkce biomasy na energetické účely v Česku okolo 60 TWh ročně. Pro výrobu 30 TWh elektřiny a (řekněme) 30 TWh tepla bychom potřebovali minimálně 100 TWh biomasy, další biomasa se jistě spotřebuje v domácnostech a průmyslu. Takové využití biomasy tedy znamená minimálně dvojnásobnou zátěž oproti dnešku.
 [^cena-silove-elektriny]: Při spotřebě okolo 60 TWh, tedy 60 miliard kWh, a průměrným nákladům na výrobu silové elektřiny v rozmezí 1 - 3 Kč na kWh se dostáváme k rozmezí 60 - 180 mld. korun za rok. Toto jsou velmi hrubé odhady, protože náklady výrobců nejsou veřejné.
 [^cena-regulovane-elektriny]: Obsahuje to náklady na distribuční a přenosové soustavy (provoz, investice, ztráty v síti; řádově 50 mld. korun ročně), náklady na udržování stability v síti (řádově do 10 mld. ročně), náklady na podporované zdroje energie (řádově 15 mld. korun ročně).
 [^cena-ilustrativniho-mixu]: Zde počítáme konzervativněji na 1 kWh elektřiny náklady 1,20 Kč pro slunce, 1,30 Kč pro vítr, 3,50 Kč pro jádro, 4 Kč pro biomasu, 5 Kč pro krátkodobé ukládání stejně jako pro plyn s CCS. Ceny pro slunce a vítr jsou oproti celosvětovému indexu upraveny úměrně nižším výnosům v ČR. Cena pro biomasu zhruba odpovídá dřívějším výkupním cenám pro bioplyn a čistou biomasu v rámci podpory OZE. Cena pro krátkodobé ukládání počítá s odhadem [LCOS](https://www.lazard.com/media/451882/lazards-levelized-cost-of-storage-version-70-vf.pdf) 200 EUR / MWh, cena plynu s CCS vychází z [odhadu IEA](https://www.iea.org/reports/projected-costs-of-generating-electricity-2020) ale odhad zvyšujeme pro velké nejistoty v ceně technologie i v ceně paliva.
