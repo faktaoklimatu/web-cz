@@ -156,7 +156,6 @@ items:
     share:    "1,27 %"
     netzero:  "2050"
     pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
-    other:    "Podmíněný cíl: net-zero 2050 a konec nelegální těžby dřeva 2030"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/Updated%20-%20First%20NDC%20-%20%20FINAL%20-%20PDF.pdf"
     ndc-date: 2022-04-07
     links:
@@ -215,9 +214,10 @@ items:
 ---
 Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích CO<sub>2</sub> nad 1 % v roce 2018.[^edgar] Net-zero závazky v některých případech znamenají uhlíkovou neutralitu (zahrnující emise CO<sub>2</sub>), v některých pak klimatickou neutralitu (zahrnující emise všech skleníkových plynů). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDCs) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Závazky se průběžně mění, pro přehlednost jsme proto doplnili ke každému zdroji také datum poslední aktualizace, které se zobrazí při najetí myší na tlačítko zdroje.
 
-### Poznámky k datům o emisích
+### Poznámky
 
 [^edgar]: Zdrojem dat o emisích je databáze EDGAR (Emission Database for Global Atmospheric Research, Emisní databáze pro globální výzkum atmosféry) provozovaná Evropskou agenturou pro životní prostředí.
+[^podmineny-ndc]: Podmíněný závazek udává, o kolik by země byla schopná emise skleníkových plynů snížit, kdyby byly splněny další podmínky. Například Indonésie jako podmínky uvádí výši mezinárodní finanční podpory, transfer technologií a budování kapacit.
 
 {% comment %}
   Verze rešerše pro menší displeje: seznam kartiček pod sebou.
