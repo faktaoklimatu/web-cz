@@ -108,7 +108,9 @@ items:
     share:    "1,61 %"
     netzero:  "2060"
     pledge30: "−31,89 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
-    other:    "Podmíněný cíl: −43,20 % ročních emisí oproti statu quo"
+    conditional: |
+      Podmíněný závazek udává, o kolik by země byla schopná emise skleníkových plynů snížit, kdyby byly splněny další podmínky. Například Indonésie jako podmínky uvádí výši mezinárodní finanční podpory, transfer technologií a budování kapacit.
+    other: −43,20 % ročních emisí oproti statu quo
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-09/ENDC%20Indonesia.pdf"
     ndc-date: 2022-09-23
     links:
@@ -172,7 +174,7 @@ items:
     pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −23% až −0,1% změně emisí oproti r. 2019"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/South%20Africa%20updated%20first%20NDC%20September%202021.pdf"
     ndc-date: 2021-09-27
-    links: 
+    links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/south-africa"
         date:   2022-10-28
@@ -235,7 +237,19 @@ Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světo
       <p class="card-text text-muted">{{ item.share }} světových emisí SP</p>
       {%- if item.netzero %}<p class="card-text text-muted">Net-zero v roce {{ item.netzero }}</p>{% endif %}
       {%- if item.pledge30 %}<p class="card-text text-muted">Závazek do roku 2030: {{ item.pledge30 }}</p>{% endif %}
-      {%- if item.other %}<p class="card-text text-muted">Ostatní závazky: {{ item.other }}</p>{% endif %}
+      {%- if item.other %}
+        <p class="card-text text-muted">
+          {%- if item.conditional %}
+            {% include popover-text.html
+               text="Podmíněný cíl"
+               popover=item.conditional
+            %}:
+          {%- else %}
+              Ostatní závazky:
+          {%- endif %}
+          {{ item.other }}
+        </p>
+      {% endif %}
       <div class="d-flex flex-column flex-sm-row justify-content-end">
         {%- if item.ndc %}<a href="{{ item.ndc }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
         {% for link in item.links -%}
@@ -273,7 +287,15 @@ Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světo
       <td class="align-middle">{{ item.share }}</td>
       <td class="align-middle">{{ item.netzero | default: "—" }}</td>
       <td class="align-middle">{% if item.pledge30 %}{{ item.pledge30 }}{% else %}—{% endif %}</td>
-      <td class="align-middle">{{ item.other }}</td>
+      <td class="align-middle">
+        {%- if item.conditional %}
+          {% include popover-text.html
+             text="Podmíněný cíl"
+             popover=item.conditional
+          %}:
+        {%- endif %}
+        {{ item.other}}
+      </td>
       <td class="align-middle">
         {%- if item.ndc %}<a href="{{ item.ndc }}" title="Aktualizováno {{ item.ndc-date }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
         {% for link in item.links -%}
