@@ -24,5 +24,5 @@
   link: https://twitter.com/faktaoklimatu
   class: no-ext-link-icon
 
-- title: <i class="d-md-none d-lg-inline fas fa-fw fa-heart"></i> Podpořte nás
-  fundraising: true
+# - title: <i class="d-md-none d-lg-inline fas fa-fw fa-heart"></i> Podpořte nás
+#   fundraising: true
