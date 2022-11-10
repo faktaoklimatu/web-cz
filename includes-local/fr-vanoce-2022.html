@@ -1,0 +1,34 @@
+<script>
+  function updateTime() {
+    now = Date.now();
+    deadline = new Date('2022-12-05 23:55');
+    diff = deadline - now;
+    text = "";
+    if (diff > 0) {
+      days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+      if (days >= 5) {
+        days_string = "dnů"
+      } else if (days > 1) {
+        days_string = "dny"
+      } else {
+        days_string = "den"
+      }
+      text = "Chcete náš Atlas nebo designový plakát pod stromeček? Zbývá " + days + " " + days_string + "...";
+    }
+    $('#time-promo').text(text);
+  }
+  window.addEventListener("load", function () {
+    $(document).ready(function() {
+      updateTime();
+    });
+  }, false);
+</script>
+
+<span class="text">
+  <strong>Nastartujte Fakta o klimatu do roku 2023!</strong>
+  <span id="time-promo" class="d-none d-md-inline">
+  </span>
+</span>
+<a id="cta" class="no-ext-link-icon btn btn-dark" href="https://www.donio.cz/nastartujtefakta">
+      <i class="d-none d-md-inline fas fa-fw fa-heart"></i> Podpořte nás
+</a>

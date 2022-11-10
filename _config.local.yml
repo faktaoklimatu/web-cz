@@ -17,6 +17,7 @@ author: faktaoklimatu.cz
 copyright: "Otevřená data o klimatu, z. ú."
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
+banner: "includes-local/fr-vanoce-2022.html"
 
 deploy:
   firebase-project: cz-fakta-o-klimatu
