@@ -1,34 +1,41 @@
 <script>
+  function getDiffDays(diff_ms) {
+    diff_days = Math.ceil(diff_ms / (1000 * 60 * 60 * 24))
+    if (diff_days >= 5) {
+      return diff_days + " dnů"
+    } else if (days > 1) {
+      return diff_days + " dny"
+    } else {
+      return "1 den"
+    }
+  }
+
   function updateTime() {
     now = Date.now();
-    deadline = new Date('2022-12-05 23:55');
-    diff = deadline - now;
-    text = "";
-    if (diff > 0) {
-      days = Math.ceil(diff / (1000 * 60 * 60 * 24))
-      if (days >= 5) {
-        days_string = "dnů"
-      } else if (days > 1) {
-        days_string = "dny"
-      } else {
-        days_string = "den"
-      }
-      text = "Chcete náš Atlas nebo designový plakát pod stromeček? Zbývá " + days + " " + days_string + "...";
+    deadline = new Date('2022-12-06');  // Deadline is 12/05 midnight, i.e. 12/06 0:00
+    xmas = new Date('2022-12-25');
+    diff_ms = deadline - now;
+    if (diff_ms > 0) {
+      text = "Chcete některý z našich designových plakátů pod stromeček? Máte na to ještě " + getDiffDays(diff_ms) + ".";
+      $('#time-promo').text(text);
+    } else if (xmas - now > 0) {
+      $('#time-promo').text("Chcete náš designový plakát nebo aktualizovaný Atlas klimatické změny?");
     }
-    $('#time-promo').text(text);
   }
+
   window.addEventListener("load", function () {
-    $(document).ready(function() {
+    $(document).ready(function () {
       updateTime();
     });
   }, false);
 </script>
 
-<span class="text">
+<div class="text">
   <strong>Nastartujte Fakta o klimatu do roku 2023!</strong>
-  <span id="time-promo" class="d-none d-md-inline">
-  </span>
-</span>
-<a id="cta" class="no-ext-link-icon btn btn-dark" href="https://www.donio.cz/nastartujtefakta">
-      <i class="d-none d-md-inline fas fa-fw fa-heart"></i> Podpořte nás
-</a>
+  <span id="time-promo" class="d-none d-md-inline"></span>
+</div>
+<div class="cta">
+  <a class="no-ext-link-icon btn btn-dark" href="https://www.donio.cz/nastartujtefakta">
+    <i class="d-none d-md-inline fas fa-fw fa-heart"></i> Podpořte nás
+  </a>
+</div>
