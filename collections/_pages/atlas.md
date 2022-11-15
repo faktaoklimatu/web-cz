@@ -39,11 +39,9 @@ Klimatická změna je důležitým problémem současnosti, a je proto pevně sp
 
 Grafiky a texty projektu Fakta o klimatu chceme do budoucna provázet metodickými materiály, které učitelům, lektorům a dalším poslouží jako zdroj otázek a aktivit pro práci se žáky či studenty.
 
-<details markdown="1">
-<summary markdown=1>
-## Jak učit o klimatu a klimatické změně?
-</summary>
 
+{%- include expandable.html id-prefix="collapse-atlas" counter=1 title="## Jak učit o klimatu a klimatické změně?"
+content="
 Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek o klimatické změně. Lze začít u zvyšování teplot, u emisí skleníkových plynů anebo třeba u dopadů změny na obyvatele různých oblastí. My jsme v Atlase uspořádali grafiky a texty tak, že ilustrují následující linku argumentů.
 
 1. **Lidská činnost mění složení atmosféry** – zejména kvůli spalování uhlí, ropy a plynu se v atmosféře hromadí oxid uhličitý.
@@ -52,14 +50,10 @@ Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek 
 4. **Česká republika se otepluje přibližně dvakrát rychleji než světový průměr** – za posledních 60 let se oteplila o 2 °C,  je to dáno její vnitrozemskou polohou na severní polokouli. Jedním z důsledků je masivní úhyn smrkových lesů.
 5. **Kdyby se planeta oteplila o více než 1.5 °C, došlo by ke kolapsu mnoha světových ekosystémů a velkým změnám v kryosféře a atmosférických a oceánských prouděních** – proto se státy v Pařížské dohodě zavázaly k úsilí udržet globální oteplování pod hranicí 1,5 °C.
 6. **Aby se oteplení podařilo udržet pod hranicí 1,5 °C, je potřeba dosáhnout uhlíkové neutrality do roku 2050.**
+" %}
 
-</details>
-
-<details markdown="1">
-<summary markdown=1>
-## Recenzenti a poděkování
-</summary>
-
+{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="## Recenzenti a poděkování"
+content="
 Atlas recenzovali:
 
 * Mgr. Michal Žák, Ph. D., Katedra fyziky atmosféry Matematicko-fyzikální fakulty Univerzity Karlovy
@@ -71,14 +65,11 @@ Atlas recenzovali:
 Ke vzniku tohoto Atlasu přispěli významně svou dobrovolnickou prací v týmu faktaoklimatu.cz: Martin Ukrop, Jan Krčál, Kateřina Kolouchová, Tomáš Protivínský, Oldřich Sklenář, Martin Křivánek, Martin Zahradník, Jakub Zamouřil a další členové týmu.
 
 Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
-</details>
+" %}
 
-<details markdown="1">
-<summary markdown=1>
-## Další díly a aktualizace atlasu
-</summary>
-
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="## Další díly a aktualizace atlasu"
+content="
 V budoucnosti bychom rádi připravili další díly atlasu pokrývající například energetiku a scénáře jejích transformací, emise, a další témata. Zároveň budeme první díl atlasu aktualizovat o nově vydávaná data.
-</details>
+" %}
 
 </div></div>
