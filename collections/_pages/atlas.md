@@ -40,7 +40,7 @@ Klimatická změna je důležitým problémem současnosti, a je proto pevně sp
 Grafiky a texty projektu Fakta o klimatu chceme do budoucna provázet metodickými materiály, které učitelům, lektorům a dalším poslouží jako zdroj otázek a aktivit pro práci se žáky či studenty.
 
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=1 title="## Jak učit o klimatu a klimatické změně?"
+{%- include expandable.html id-prefix="collapse-atlas" counter=1 title="### Jak učit o klimatu a klimatické změně?"
 content="
 Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek o klimatické změně. Lze začít u zvyšování teplot, u emisí skleníkových plynů anebo třeba u dopadů změny na obyvatele různých oblastí. My jsme v Atlase uspořádali grafiky a texty tak, že ilustrují následující linku argumentů.
 
@@ -52,7 +52,7 @@ Je mnoho způsobů jak uspořádat sérii vyučovacích hodin nebo přednášek 
 6. **Aby se oteplení podařilo udržet pod hranicí 1,5 °C, je potřeba dosáhnout uhlíkové neutrality do roku 2050.**
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="## Recenzenti a poděkování"
+{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Recenzenti a poděkování"
 content="
 Atlas recenzovali:
 
@@ -67,7 +67,7 @@ Ke vzniku tohoto Atlasu přispěli významně svou dobrovolnickou prací v týmu
 Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="## Další díly a aktualizace atlasu"
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Další díly a aktualizace atlasu"
 content="
 V budoucnosti bychom rádi připravili další díly atlasu pokrývající například energetiku a scénáře jejích transformací, emise, a další témata. Zároveň budeme první díl atlasu aktualizovat o nově vydávaná data.
 " %}
