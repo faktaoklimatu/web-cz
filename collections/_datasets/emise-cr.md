@@ -9,7 +9,7 @@ tags-topics: [ emise ]
 caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2018 a data ze systému emisních povolenek za rok 2018."
 data-our:    "https://docs.google.com/spreadsheets/d/1cHuB4p4Z_vchLbPnnr38rkjDJnlmvjGrvR8A7rrFPTE/edit?usp=sharing"
 data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ]
-            , ["European Commission", "https://ec.europa.eu/clima/document/download/9e3ed91e-5820-47d1-8b6f-f99b9a67172e_en" ] ]
+            , ["European Commission", "https://climate.ec.europa.eu/document/download/9e3ed91e-5820-47d1-8b6f-f99b9a67172e_en?filename=verified_emissions_2018_en.xlsx" ] ]
 ---
 
 ## Emise skleníkových plynů za rok 2018
@@ -38,10 +38,10 @@ Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je ome
 {% include data-header.html
     name="Evropská komise"
     description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2018."
-    url="https://ec.europa.eu/clima/sites/clima/files/ets/registry/docs/verified_emissions_2018_en.xlsx"
+    url="https://climate.ec.europa.eu/document/download/9e3ed91e-5820-47d1-8b6f-f99b9a67172e_en?filename=verified_emissions_2018_en.xlsx"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
     licence-proof="https://ec.europa.eu/info/legal-notice_en"
 %}
 
-Data pocházejí z databází EU o obchodování s emisními povolenkami ([EU Transaction Log](https://ec.europa.eu/clima/ets/oha.do?languageCode=en)). Konkrétně jsou založena na tabulce kompilované Evropskou komisí, která obsahuje všechny evropské podniky, které v databázi vystupují od roku 2013. Systém obchodování s emisními povolenkami EU (EU ETS, _Emission Trading System_) funguje na principu _cap and trade_, tedy Evropská komise stanoví celkový limit povolenek, tedy vyprodukovaných emisí, jednotlivé podniky mohou povolenky dražit a pak s nimi následně mezi sebou obchodovat. Limit povolenek v systému tak přirozeně stanoví jejich cenu. Hlavní myšlenka tohoto systému je, že motivuje trh k cenově optimálnímu snižování emisí. Více obecných informací najdete na webu systému [ETS](https://ec.europa.eu/clima/policies/ets_en) a na webu [registru EUTL](https://ec.europa.eu/clima/policies/ets/registry_en).
+Data pocházejí z [databáze EU](https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets/union-registry_en) o obchodování s emisními povolenkami ([EU Transaction Log](https://ec.europa.eu/clima/ets/oha.do?languageCode=en)). Konkrétně jsou založena na tabulce kompilované Evropskou komisí, která obsahuje všechny evropské podniky, které v databázi vystupují od roku 2013. Systém obchodování s emisními povolenkami EU (EU ETS, _Emission Trading System_) funguje na principu _cap and trade_, tedy Evropská komise stanoví celkový limit povolenek, tedy vyprodukovaných emisí, jednotlivé podniky mohou povolenky dražit a pak s nimi následně mezi sebou obchodovat. Limit povolenek v systému tak přirozeně stanoví jejich cenu. Hlavní myšlenka tohoto systému je, že motivuje trh k cenově optimálnímu snižování emisí. Více obecných informací najdete na webu systému [ETS](https://ec.europa.eu/clima/policies/ets_en) a na webu [registru EUTL](https://ec.europa.eu/clima/policies/ets/registry_en).
