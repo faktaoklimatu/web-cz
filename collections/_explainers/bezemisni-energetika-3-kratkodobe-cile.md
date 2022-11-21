@@ -21,7 +21,7 @@ perex: |
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
-{:.tldr}
+{% include tldr.html content="TODO" %}
 
 ## Naivní pohled na transformaci elektroenergetiky
 
