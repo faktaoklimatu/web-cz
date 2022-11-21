@@ -21,12 +21,13 @@ perex: |
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
-{:.tldr}
+{% include tldr.html content="
 - Během dalších 30 let budeme potřebovat **znatelně více elektřiny** než dnes.
 - Zásadní jsou **solární a větrné zdroje**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém zjednodušit.
 - Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, potřebujeme to nahradit importem větrné výroby ze zahraničí, výraznějším rozvojem jaderné energetiky, nebo spoléhat na dlouhodobé ukládání elektřiny, příp. technologii _CCS_.
 - Do rozhodování o budoucí energetice vstupuje řada aspektů: stabilita sítě, finanční náklady, energetická bezpečnost nebo i provázanost s centrálním zásobováním teplem.
 - Plány na dalších 30 let nutně obsahují velké množství neznámých parametrů: potřebujeme pojmenovávat různé druhy rizik a zvažovat jejich přijatelnost.
+" %}
 
 ## Jaké jsou klíčové parametry budoucí energetiky?
 

@@ -20,11 +20,11 @@ perex: |
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
-{:.tldr}
+{% include tldr.html content="
 - Zásadní zdroji bezemisní elektřiny pro Česko mohou být **slunce a vítr**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku.
 - Rozvojem **jaderné energetiky** nemůžeme dostatečně rychle pokrýt celou spotřebu Česka. Udržení nebo mírné navýšení současné výroby z jádra nicméně může dekarbonizaci energetiky ulehčit.
 - Když nesvítí a nefouká, máme na výběr celou škálu **nízkoemisních flexibilních zdrojů**. Výroba z nich je typicky dražší než výroba ze slunce, větru i jádra. Je tedy důležité [vybudovat náš mix](/explainery/bezemisni-energetika-1-scenare) tak, abychom flexibilní zdroje potřebovali v co nejmenší míře.
-
+" %}
 
 _V tomto textu dáváme přehled základních technologií pro nízkoemisní výrobu elektřiny. V předchozím textu více rozebíráme možnosti jejich kombinace do [nízkoemisního mixu](/explainery/bezemisni-energetika-1-scenare)._
 
