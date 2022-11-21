@@ -35,7 +35,7 @@ _Toto je komplexní otázka a tak začneme rámováním celého problému. Pozd�
 
 ### Kolik budeme potřebovat elektřiny?
 
-Úplně na začátku si musíme uvědomit základní kontext dekarbonizace: **výroba elektřiny bude hrát v budoucím světě klíčovou roli**. Při dekarbonizaci totiž potřebujeme zásadně omezit emise skleníkových plynů v dalších sektorech, kde spalujeme fosilní paliva: v dopravě, ve vytápění, v průmyslu. Pro mnohé případy je elektrifikace nejvýhodnější nebo dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina není vhodná (např. letecká a lodní doprava nebo průmyslové procesy s vysokými teplotami) se navíc ve velké míře počítá s využitím vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
+Úplně na začátku si musíme uvědomit základní kontext dekarbonizace: **výroba elektřiny bude hrát v budoucím světě klíčovou roli**. Při dekarbonizaci totiž potřebujeme zásadně omezit emise skleníkových plynů v dalších sektorech, kde spalujeme fosilní paliva: v dopravě, ve vytápění, v průmyslu. Pro mnohé případy je elektrifikace nejvýhodnější nebo dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina není vhodná (např. letecká a lodní doprava nebo průmyslové procesy s vysokými teplotami) se navíc ve velké míře počítá s využitím vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. Znamená to, že v budoucnu budeme potřebovat elektřinu i v oblastech, kde jsme ji (díky používání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
 
 <!-- Více detailů k proměně celkové energetiky nabízíme v samostatném explaineru. -->
 
@@ -48,11 +48,13 @@ _Toto je komplexní otázka a tak začneme rámováním celého problému. Pozd�
 
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst čisté spotřeby až ke **100 TWh ročně**[^consumption-metric], jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
 
+_TODO: Anotovat v grafu, že v roce 2020 byla čistá spotřeba 59 TWh._{:.todo}
+
 {% include figure.html
     class="narrow-figure"
     name="consumption.png"
     alt="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
-    caption="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
+    caption="Ilustrativní vývoj čisté spotřeby v ČR v dalších dekádách."
     source-text="Fakta o klimatu"
 %}
 
@@ -60,7 +62,7 @@ Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst 
 
 Dalším přitěžujícím parametrem tohoto problému je potřebná rychlost změny. **Závažnost důsledků klimatické změny ve velké míře závisí na rychlosti dekarbonizace.** Množství emisí uhlíku, které ještě můžeme vypustit do atmosféry, abychom v souladu s Pařížskou dohodou udrželi průměrné oteplení do 1,5 °C, označuje tzv. [uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Při současných emisích bychom náš zbývající uhlíkový rozpočet vyčerpali asi za 10 let. Snížení celosvětových emisí už v této dekádě je tedy klíčové.
 
-**Je důležité dodat, že takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám rychle a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice na 10—20 % současných hodnot, získáme výrazně více času na odstranění zbytkových emisí (a pak můžeme např. čekat na technologie, které zatím nejsou komerčně dostupné).
+**Je důležité dodat, že takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám do konce této dekády a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Během třicátých let ovšem také nesmíme polevit. Až se nám podaří snížit emise v elektroenergetice třeba na 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji a můžeme si tak pro zbylou dekarbonizaci dopřát větší rozvážnost.
 
 ### Na jakých pilířích můžeme budoucí energetiku postavit?
 
@@ -109,14 +111,16 @@ Sezóna ovlivňuje výrobu, v letní půlce roku se například vyrobí 3x více
 
 #### Soulad s potřebami teplárenství
 
-V Česku máme rozsáhlé systémy centrálního zásobování teplem. Teplárny kromě tepla vyrábí i elektřinu a tak řešení pro dekarbonizaci elektroenergetiky je nutně provázané s řešením pro dekarbonizaci tepláren. Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, např. využívající odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (na biomasu nebo bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů pro vyrovnávání výkyvů ve výrobě ze slunce a větru. V teplárenství se také může využít odpadní teplo z malých modulárních reaktorů.
+V Česku máme rozsáhlé systémy centrálního zásobování teplem. Teplárny kromě tepla vyrábí i elektřinu a tak řešení pro dekarbonizaci elektroenergetiky je nutně provázané s řešením pro dekarbonizaci tepláren. Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, např. využívající odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (na biomasu nebo bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů pro vyrovnávání výkyvů ve výrobě ze slunce a větru. V teplárenství se také v budoucnu může využívat odpadní teplo z malých modulárních reaktorů.
 "
     col2="
 #### Přiměřené náklady
 
 Důležitý aspekt jsou budoucí celkové náklady na výrobu elektřiny, tedy součet investičních i provozních nákladů ze strany státu, energetických firem a dalších aktérů.
 
-Čím nižší budou, tím snazší bude celá transformace politicky i ekonomicky. Srovnání s náklady před začátkem transformace může být zavádějící, protože typicky nezapočítáváme všechny negativní externality jako znečištění ovzduší a dopady na klima. Přesto nutně potřebujeme, aby i v budoucnu byla elektřina dostupná a umožnila tak dostatečný životní standard pro všechny vrstvy společnosti.
+Pravděpodobně budou o něco vyšší než dnes (srovnání s dnešními náklady ovšem může být zavádějící, protože typicky do nákladů nezapočítáváme všechny negativní externality jako znečištění ovzduší a dopady na klima).
+
+Přesto nutně potřebujeme, aby i v budoucnu byla elektřina dostupná a umožnila tak dostatečný životní standard pro všechny vrstvy společnosti. Celkově, čím nižší budou náklady na výrobu bezemisní elektřiny, tím snazší bude celá transformace politicky i ekonomicky.
 
 #### Energetická bezpečnost
 
@@ -136,15 +140,15 @@ Jak tedy může budoucí mix výroby elektřiny vypadat? Pomocí tří _ilustrat
 {% assign comment_vre="
 Tento scénář vyžaduje nejvýraznější rozvoj domácí **solární a větrné energetiky**, ale také výraznou výrobu z flexibilních zdrojů.
 
-To v rámci flexibilních zdrojů vyžaduje široké nasazení dlouhodobého ukládání elektřiny - pomocí **zeleného vodíku**. Tato technologie není zatím zcela komerčně zralá." %}
+To v rámci flexibilních zdrojů vyžaduje široké nasazení dlouhodobého ukládání elektřiny - pomocí **zeleného vodíku**. Tato technologie zatím ovšem není dost levná, aby se v Česku tržně prosadila (oproti spalování uhlí)." %}
 {% assign comment_import="
 **Import elektřiny z větru, převážně v zimní polovině roku** snižuje nároky na výrobu z flexibilních zdrojů a v menší míře i na domácí výrobu ze slunce a větru.
 
 Tento scénář ovšem závisí na výrobě v jiných zemích a vyžaduje stavbu dalších interkonektorů, což jsou nákladné liniové stavby s obtížným schvalováním." %}
 {% assign comment_nuclear="
-**Výrazný rozvoj výroby z jádra** má smysl jedině v kombinaci s rozvojem solární a větrné energetiky. Nejsme totiž schopni postavit tolik nových bloků, abychom tím pokryli celý nárůst spotřeby. Nové bloky začnou vyrábět nejdříve na konci 30. let.
+**Výrazný rozvoj výroby z jádra** má smysl jedině v kombinaci s rozvojem solární a větrné energetiky. Nejsme totiž schopni postavit tolik nových bloků, abychom tím pokryli celý nárůst spotřeby.
 
-Stavba jaderných bloků snižuje tlak na ostatní pilíře, omezuje ale také rozvoj slunce a větru během 20. a 30. let. To zvyšuje celkovou výrobu z fosilních zdrojů (a tak i emise CO<sub>2</sub>)." %}
+Rozvoj jádra snižuje tlak na ostatní pilíře. Může ale také během 20. a 30. let omezit rozvoj slunce a větru (sníží jejich návratnost, příp. i ochotu státu je dotovat). To zvyšuje celkovou výrobu z fosilních zdrojů a tak i emise CO<sub>2</sub>." %}
 {% capture caption_comments %}
 {% include columns.html
     class="longread-small"
@@ -214,6 +218,13 @@ V dalším textu přidáváme k těmto ilustrativním scénářům několik vhle
 
 **Klíčový problém českého bezemisního mixu je pokrytí zimní spotřeby.** Pro jednoduchost rozdělujeme rok na dvě poloviny, _zimní půlkou_ myslíme období _říjen–březen_. V zimní polovině roku dodají solární panely výrazně méně než v letní polovině. Naopak, větrné elektrárny vyrábí více v zimě.
 
+{% include figure.html
+    name="factors-solar-wind.png"
+    alt="Průměrné koeficienty využití solárních a větrných zdrojů během roku"
+    caption="Průměrné koeficienty využití solárních a větrných zdrojů během roku. Více v přehledech potenciálu [slunce](/infografiky/potencial-solarni-energie-cr-strechy) a [větru](/infografiky/potencial-vetrne-energie-cr) v ČR."
+    source-text="Fakta o klimatu"
+%}
+
 **V Česku máme pro pokrytí zimní poloviny roku nedostatečný potenciál větru**. Ukážeme to na ambiciózní výrobě z větru ve výši 30 TWh za rok (to je asi 50x více než dnes, pořád ale bezpečně pod technickým potenciálem větrné energetiky v Česku). Když k tomu přidáme tolik slunce, abychom neměli v létě zásadní přebytky, bude vždy v zimě podstatně chybět elektřina. V následujícím ilustrativním mixu to dorovnává biomasa a další (neupřesněné) flexibilní zdroje.
 
 {% include figure.html
@@ -224,7 +235,7 @@ V dalším textu přidáváme k těmto ilustrativním scénářům několik vhle
     source-text="Fakta o klimatu"
 %}
 
-Jak naznačujeme, vhodným flexibilním výrobním zdrojem na pokrytí části zimní spotřeby je **biomasa**. Jednak se dobře skladuje, jednak je vhodná pro menší teplárenské bloky, tedy kromě v zimě potřebné elektřiny může poskytnout i v zimě potřebné teplo. Pokrýt z tohoto zdroje více než 30 TWh elektřiny ročně (a další desítky TWh tepla) je ovšem na hraně potenciálu biomasy a dost jistě by tak přinášelo konflikty s dalšími hodnotami jako je biodiverzita nebo estetika krajiny.[^aktualni-skala-biomasy]
+Jak naznačujeme, vhodným flexibilním výrobním zdrojem na pokrytí části zimní spotřeby je **biomasa**. Jednak se dobře skladuje, jednak je vhodná pro menší teplárenské bloky, tedy kromě v zimě potřebné elektřiny může poskytnout i v zimě potřebné teplo. Pokrýt z tohoto zdroje více než 30 TWh elektřiny ročně (a další desítky TWh tepla) je ovšem na hraně potenciálu biomasy. Oproti dnešku by to znamenalo alespoň zdvojnásobit energetické využití biomasy[^aktualni-skala-biomasy], což by přinášelo by konflikty s dalšími hodnotami jako je biodiverzita nebo estetika krajiny.
 
 Dalším možným flexibilním výrobním zdrojem jsou **fosilní zdroje s CCS**. Ty ovšem ve velkém použití také přináší sadu problémů, obzvláště se pojí s nenulovými emisemi.
 
@@ -328,7 +339,7 @@ Budoucí systémové náklady u každého ze scénářů vycházejí o něco vy�
 
 ## Jaká rizika souvisí s transformací elektroenergetiky?
 
-Výroba a distribuce elektřiny je naprosto klíčová infrastruktura. **Výrazná transformace s sebou nutně přináší širokou škálu rizik**. Širokou škálu rizik **dopadů změny klimatu** ovšem přináší i _business as usual_ příp. příliš pomalá a opatrná transformace. Níže ukazujeme základní naznačení obou druhů rizik, pro transformační rizika ovšem zacházíme do většího detailu.
+Výroba a distribuce elektřiny je naprosto klíčová infrastruktura. **Výrazná transformace s sebou nutně přináší širokou škálu rizik**. Širokou škálu rizik **dopadů změny klimatu** ovšem přináší i zachování současného stavu příp. příliš pomalá a opatrná transformace. Níže ukazujeme základní naznačení obou druhů rizik, pro transformační rizika ovšem zacházíme do většího detailu.
 
 {% include figure.html
     name="risk-map.png"
@@ -342,17 +353,17 @@ V jednoduchosti se může stát, že budeme transformovat podle scénáře, kter
 Je několik základních nástrojů ke snížení rizika transformace:
 - **Diverzifikovaný** rozvoj nízkoemisních výrobních kapacit (a diverzifikace investic do výzkumu a vývoje).
 - **Široká škála možných pokračování** transformace. Potřebujeme zajistit, že na probíhající transformaci ve dvacátých letech může navázat celá škála technicky smysluplných strategií ve třicátých a čtyřicátých letech. Transformační riziko bude nižší, když nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory).
-- **Dostatečná redundance** ve výrobní kapacitě i v primárních energetických zdrojích. Taková redundance sice zvyšuje celkové systémové náklady, snižuje ale riziko podobných turbulencí, jakou je ta okolo ruského plynu. Příkladem takového opatření může být třeba udržovat část uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
+- **Dostatečná rezerva** ve výrobní kapacitě i v primárních energetických zdrojích. Taková rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko podobných turbulencí, jakou je ta okolo ruského plynu. Příkladem takového opatření může být třeba udržovat část uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
-Všechny tyto aspekty volají po vhodné kombinaci všech tří ukázkových scénářů, tedy po urychleném rozvoji obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně po rozvoji jaderných zdrojů stejně jako přenosových kapacit pro import obnovitelné elektřiny ze zahraničí.
+**Všechny tyto aspekty volají po vhodné kombinaci všech tří ukázkových scénářů, tedy po urychleném rozvoji obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně po rozvoji jaderných zdrojů stejně jako přenosových kapacit pro import obnovitelné elektřiny ze zahraničí.**
 
 ## Shrnutí
 
-**Krátkodobá strategie pro Česko a Evropu je poměrně jasná: potřebujeme maximalizovat instalaci solárních a větrných elektráren a současně podporovat rozvoj široké škály řešení pro vyrovnávání jejich podstatně proměnlivé výroby**, abychom mohli postupně snižovat výrobu elektřiny z fosilních zdrojů. Pro zimní půlku roku je **obzvláště důležité rozvíjet větrnou energetiku** Český potenciál pro tyto technologie je omezený (v případě větru), ale [velmi podstatný](/infografiky/potencial-vetrne-energie-cr): jeho využití ve velké míře závisí na jasné strategické podpoře ze strany státu. Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mnoha návazných scénářů transformace. Navíc není žádná jiná cesta, která by mohla tak rychle přispět ke snížení emisí.
+**Krátkodobá strategie pro Česko a Evropu je poměrně jasná: potřebujeme maximalizovat instalaci solárních a větrných elektráren a současně podporovat rozvoj široké škály řešení pro vyrovnávání jejich podstatně proměnlivé výroby**, abychom mohli postupně snižovat výrobu elektřiny z fosilních zdrojů. Pro zimní půlku roku je **obzvláště důležité rozvíjet větrnou energetiku**. Český potenciál pro tyto technologie je omezený (v případě větru), ale [velmi podstatný](/infografiky/potencial-vetrne-energie-cr): jeho využití ve velké míře závisí na jasné strategické podpoře ze strany státu. Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mnoha návazných scénářů transformace. Navíc není žádná jiná cesta, která by mohla tak rychle přispět ke snížení emisí.
 
-**Jádro je další legitimní pilíř bezemisní energetiky pro Evropu**, který ale nepomůže v rychlé dekarbonizaci. Současným mixem může zahýbat až za 15—20 let, vzhledem ke stárnoucím zdrojům ovšem bude pro Česko pro další desetiletí velká výzva i jen stávající výrobu z jádra udržet. Nový jaderný blok je navíc podle současných zkušeností znatelně dražším zdrojem než slunce a vítr. Pokud je tedy chceme stavět, musíme se smířit s tím, že budou (stejně jako slunce a vítr) vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
+**Jádro je další legitimní pilíř bezemisní energetiky pro Evropu**, který ale nepomůže v rychlé dekarbonizaci. Současným mixem může zahýbat až za 15—20 let, vzhledem ke stárnoucím zdrojům ovšem bude pro Česko pro další desetiletí velká výzva i jen stávající výrobu z jádra udržet. Stavba konvenčních jaderných bloků navíc nese obrovské investiční riziko, které energetické firmy nejsou schopné nést samy. Pokud je tedy chceme stavět, musíme se smířit s tím, že budou (stejně jako slunce a vítr) vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
 
-**Porovnání celkových nákladů těchto dvou pilířů je zatíženo velkou mírou nejistoty.** Dosavadní zkušenosti nás vedou k opatrnému optimismu ohledně budoucích celkových nákladů energetiky založené na slunci a větru. Přesto je možné že tyto náklady budou vyšší než celkové náklady na řešení založené na jádru a nebo prostě nebudeme schopni výrobu ze slunce a větru dostatečně zvýšit. V rámci diverzifikace rizika tedy může být racionální strategií pro Česko **současně urychleně rozvíjet OZE a také budovat jeden či více nových jaderných bloků, příp. malých modulárních reaktorů**.
+**Porovnání celkových nákladů těchto dvou pilířů je zatíženo velkou mírou nejistoty.** Zkušenosti z poslední dekády nás vedou k opatrnému optimismu ohledně budoucích celkových nákladů energetiky založené na slunci a větru. Přesto je možné, že tyto náklady budou vyšší než celkové náklady na řešení založené na jádru a nebo že prostě nebudeme schopni výrobu ze slunce a větru dostatečně zvýšit. V rámci diverzifikace rizika tedy může být racionální strategií pro Česko **současně urychleně rozvíjet OZE a také budovat jeden či více nových jaderných bloků, příp. malých modulárních reaktorů**.
 
 Vedle rozvoje obou hlavních pilířů bloků je dalším klíčovým nástrojem pro snížení rizik **užší energetická spolupráce napříč Evropou**. To znamená více sladit národní energetické koncepce a urychleně pokračovat v dalším strategickém propojování přenosových soustav. **Česko touto cestou může získat přístup k výrobě z obnovitelných zdrojů nad limity toho, co jsme schopni postavit na našem území.** Konkrétně k větrným farmám na moři, k jižnímu slunci v zimě, příp. k elektřině ze zeleného vodíku.
 
@@ -379,7 +390,7 @@ Pro připomenutí: těmto strategickým volbám je nadřazeno několik imperativ
 
 [^consumption-metric]: Technicky vzato jde o čistou spotřebu a ztráty při přenosu a distribuci elektřiny. Tedy z hrubé spotřeby vynecháváme složky závislé na energetickém mixu: vlastní spotřebu elektráren a spotřebu přečerpávacích vodních elektráren.
 [^pokryti-spotreby]: Při výrazném nasazení slunce a větru dochází snadno v určitých momentech k nadvýrobě elektřiny. Proto v grafech nezobrazujeme, kolik elektřiny celkově zdroj vyrobí, ale kolik je z ní přímo použitelné, tedy jakou měrou zdroj přispěje k pokrytí momentální poptávky. Část nadbytků je ovšem možné uložit a využít později, tato elektřina se objeví v kategorii flexibilních zdrojů.
-[^aktualni-skala-biomasy]: Pro srovnání, v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy, dalších asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (při [40% účinnosti](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) konverze). Celkově je tedy dnešní primární produkce biomasy na energetické účely v Česku okolo 60 TWh ročně. Pro výrobu 30 TWh elektřiny a (řekněme) 30 TWh tepla bychom potřebovali minimálně 100 TWh biomasy, další biomasa se jistě spotřebuje v domácnostech a průmyslu. Takové využití biomasy tedy znamená minimálně dvojnásobnou zátěž oproti dnešku.
+[^aktualni-skala-biomasy]: Pro srovnání, v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy, dalších asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (při [40% účinnosti](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) konverze). Celkově je tedy dnešní primární produkce biomasy na energetické účely v Česku okolo 60 TWh ročně. Pro výrobu 30 TWh elektřiny a (řekněme) 30 TWh tepla bychom potřebovali minimálně 100 TWh biomasy, další biomasa se jistě spotřebuje v domácnostech a průmyslu. V součtu by to tedy bylo alespoň 2x více energetické biomasy než dnes.
 [^cena-technologii]: Pracujeme nejvíce s [odhady od IEA](https://iea.blob.core.windows.net/assets/ae17da3d-e8a5-4163-a3ec-2e6fb0b5677d/Projected-Costs-of-Generating-Electricity-2020.pdf) z roku 2020 a s odhady od poradenské agentury [Lazard](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/). Na základě těchto zdrojů sestavujeme koeficienty pro náš [vlastní výpočet](https://docs.google.com/spreadsheets/d/16UJHRk10fZ9UC6-z8G8HyiUdiJOtRYdD-nsO_KIwTIY/edit?pli=1#gid=1790381195) systémových nákladů.
 [^cena-fixni-naklady]: Toto číslo nejlépe vyjadřuje _jaké by byly investiční náklady, kdybychom naši momentální výrobní základnu stavěli dnes_ a tudíž nevyjadřuje skutečnou výši splácených úvěrů jednotlivých firem. Výjimku ve výpočtu děláme u solárních a větrných elektráren, u nichž bereme odhad investičních nákladů okolo roku 2010 (kdy byla většina z nich postavena) a u jaderné elektrárny Dukovany, u které odhadujeme pouze investiční náklady na její prodloužení provozu do poloviny 40. let.
 [^cena-regulovane-elektriny]: Obsahuje to náklady na distribuční a přenosové soustavy (provoz, investice, ztráty v síti; řádově 50 mld. korun ročně), náklady na udržování stability v síti (řádově do 10 mld. ročně).
