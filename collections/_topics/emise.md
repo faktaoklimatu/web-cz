@@ -26,13 +26,13 @@ dashboard:
   source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
 - type:        "compare"
   col-xl-size: "3-5"
-  title:       "**Emise na osobu** za rok 2015"
+  title:       "**Emise na osobu** za rok 2018"
   data:
   - region:    "world"
-    value:     "**6,5**"
+    value:     "**6,8**"
     subtitle:  "tun CO<sub>2</sub>eq"
   - region:    "cz"
-    value:     "**12,1**"
+    value:     "**12,3**"     # vychádza to 12,25; počet obyvateľov World bank viď dataset Emise svět
     subtitle:  "tun CO<sub>2</sub>eq"
   source:      "Fakta o klimatu"
   source-url:  "/emise-svet-na-osobu"
