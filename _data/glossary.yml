@@ -124,7 +124,7 @@
 
 - id: sekvestrace
   name-short: "Sekvestrace"
-  description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. Sekvestrace uhlíku znamená dlouhodobé odstraňování CO<sub>2</sub> z atmosféry přirozenými nebo průmyslovými procesy. Příkladem přirozených procesů mohou být fotosyntéza a následné ukládání uhlíku do kmenů stromů, nebo zvětrávání hornin, při kterém se uhlík chemicky váže. Průmyslové metody mohou zachycovat CO<sub>2</sub> v místě spalování (pak jde o _Carbon Capture and Storage_ ,_CCS_), nebo ho mohou zachycovat přímo z atmosféry (_Direct atmospheric capture_, _DAC_). Snaha zvýšit sekvestraci uhlíku posílením přírodních procesů nebo stavbou průmyslových zařízení hraje důležitou roli v úsilí zvrátit růst koncentrací CO<sub>2</sub> v atmosféře a zastavit tak globální oteplování."
+  description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. Sekvestrace uhlíku znamená dlouhodobé odstraňování CO<sub>2</sub> z atmosféry přirozenými nebo průmyslovými procesy. Příkladem přirozených procesů mohou být fotosyntéza a následné ukládání uhlíku do kmenů stromů, nebo zvětrávání hornin, při kterém se uhlík chemicky váže. Průmyslové metody mohou zachycovat CO<sub>2</sub> v místě spalování (pak jde o _Carbon Capture and Storage_, _CCS_), nebo ho mohou zachycovat přímo z atmosféry (_Direct atmospheric capture_, _DAC_). Snaha zvýšit sekvestraci uhlíku posílením přírodních procesů nebo stavbou průmyslových zařízení hraje důležitou roli v úsilí zvrátit růst koncentrací CO<sub>2</sub> v atmosféře a zastavit tak globální oteplování."
 
 - id: sr15
   name-short: "SR15"
