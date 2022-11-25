@@ -17,12 +17,12 @@ dashboard:
   title:       "**Celkové emise** za rok 2018"
   data:
   - region:    "world"
-    value:     "**51,2**"   # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
+    value:     "**51,2**"  # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
     subtitle:  "mld. tun CO<sub>2</sub>eq"
   - region:    "cz"
-    value:     "**131,4**"
+    value:     "**129**"  # Pro EU / Česko všude používáme Eurostat data (metriku TOTX4_MEMONIA). Sice to není zcela konzistentní s daty z Edgaru, ale je lepší používat všude stejné číslo.
     subtitle:  "mil. tun CO<sub>2</sub>eq"
-  source:      "EDGAR, European Commission"
+  source:      "EDGAR, European Commission (světové emise) a Eurostat (emise ČR)"
   source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
 - type:        "compare"
   col-xl-size: "3-5"
@@ -69,7 +69,7 @@ subtopics:
   title:       "Množství emisí skleníkových plynů"
   title-short: "Množství emisí"
   lead: |
-    **V roce 2018 celý svět vypustil do atmosféry 48,9 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
+    **V roce 2018 celý svět vypustil do atmosféry 51,2 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
 
     Klimatická změna závisí na celkovém množství skleníkových plynů v atmosféře, při srovnávání jednotlivých zemí je však také vhodné vyjádření na obyvatele. Tím je možné porovnat, jak ke klimatické změně přispívají vzhledem k počtu obyvatel různě veliké státy.
   content:
