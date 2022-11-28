@@ -32,7 +32,7 @@ dashboard:
     value:     "**6,8**"
     subtitle:  "tun CO<sub>2</sub>eq"
   - region:    "cz"
-    value:     "**12,3**"     # vychádza to 12,25; počet obyvateľov World bank viď dataset Emise svět
+    value:     "**12,2**"  # Opět založeno na Eurostat datech, aby bylo konzistentní s dalšími grafikami.
     subtitle:  "tun CO<sub>2</sub>eq"
   source:      "Fakta o klimatu"
   source-url:  "/emise-svet-na-osobu"
