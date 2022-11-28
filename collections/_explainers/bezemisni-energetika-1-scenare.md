@@ -46,15 +46,14 @@ _Toto je komplexní otázka a tak začneme rámováním celého problému. Pozd�
     text="**TWh**, tedy **terawatthodina** je jednotka energie. Tolik elektřiny v současnosti za rok vyrobí menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
 %}
 
-Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst čisté spotřeby až ke **100 TWh ročně**[^consumption-metric], jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
+Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby až ke **100 TWh ročně**[^consumption-metric], jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
 
-_TODO: Anotovat v grafu, že v roce 2020 byla čistá spotřeba 59 TWh._{:.todo}
+_TODO: Opravit data, hodnota teď by měla být asi 63._{:.todo}
 
 {% include figure.html
-    class="narrow-figure"
-    name="consumption.png"
+    name="consumption.svg"
     alt="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
-    caption="Ilustrativní vývoj čisté spotřeby v ČR v dalších dekádách."
+    caption="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách. Ukazujeme součet čisté spotřeby a ztrát v sítích."
     source-text="Fakta o klimatu"
 %}
 
@@ -80,9 +79,9 @@ Ve světle těchto východisek v tomto textu budeme pracovat s následujícími 
 
 Naši současnou spotřebu pokrývají tyto tři pilíře jen z části, zbytek pokrývá vysokoemisní fosilní pilíř:
 {% include figure.html
-    name="mix-current.png"
+    name="mix-current.svg"
     alt="Současné pokrytí spotřeby v ČR"
-    caption="Současnou (čistou) spotřebu pokrývají bezemisní pilíře jen z části."
+    caption="Současnou spotřebu pokrývají bezemisní pilíře jen z části."
     source-text="Fakta o klimatu"
 %}
 
@@ -216,7 +215,7 @@ V dalším textu přidáváme k těmto ilustrativním scénářům několik vhle
 
 ## Jak dosáhnout sezónní vyváženosti?
 
-**Klíčový problém českého bezemisního mixu je pokrytí zimní spotřeby.** Pro jednoduchost rozdělujeme rok na dvě poloviny, _zimní půlkou_ myslíme období _říjen–březen_. V zimní polovině roku dodají solární panely výrazně méně než v letní polovině. Naopak, větrné elektrárny vyrábí více v zimě.
+**Klíčový problém českého bezemisního mixu je pokrytí zimní spotřeby, která je vyšší než v létě.** Pro jednoduchost rozdělujeme rok na dvě poloviny, _zimní půlkou_ myslíme období _říjen–březen_. V zimní polovině roku dodají solární panely výrazně méně než v letní polovině. Naopak, větrné elektrárny vyrábí více v zimě.
 
 {% include figure.html
     name="factors-solar-wind.png"
