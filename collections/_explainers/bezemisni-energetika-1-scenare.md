@@ -15,7 +15,7 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/7razCd-RUGs"
 perex: |
-  Dekarbonizace energetiky je klíčový a nutný krok k dosažení uhlíkové neutrality. Tento krok není možné udělat snadno a hned, i pro bohaté evropské státy je to významná technická a ekonomická výzva na dalších 20 až 30 let. Pokud chceme jít smysluplnou cestou, musíme alespoň v obrysech porozumět nástrahám, které nás na ní čekají, a možným cílům, ke kterým bychom chtěli dojít. Tento text provádí právě takový průzkum terénu, z pohledu české a evropské elektroenergetiky.
+  K dosažení uhlíkové neutrality je jedním z klíčových kroků dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnou představu, kam vlastně chceme dojít. Jak se má proměnit česká a evropská elektroenergetika? Základní průzkum tohoto složitého terénu nabízí následující text.
 
 ---
 
