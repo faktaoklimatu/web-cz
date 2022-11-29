@@ -34,8 +34,7 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
 
 Slunce a vítr jsou už dnes zdrojem elektřiny s nejnižšími celkovými náklady (a to i v českých podmínkách, kde např. 1 m<sup>2</sup> solárního panelu vyrobí za rok jen okolo 1,3 MWh elektřiny oproti 2 MWh na jihu Španělska[^OZE-potencial]). Celkové náklady na výrobu z nové větrné nebo solární elektrárny jsou dnes dokonce asi 2x nižší než jen provozní náklady na výrobu z hnědého uhlí.[^OZE-cena]
 
-_TODO: Možné přídavky do tabulek: současná výrobu (2020), technologická zralost._{:.todo}
-
+### Slunce
 {% include figure.html
     name="solar.png"
     alt="Přehled vlastností solárních zdrojů"
@@ -44,6 +43,7 @@ _TODO: Možné přídavky do tabulek: současná výrobu (2020), technologická 
 
 **I v českém prostředí je možné ze slunce vyrobit několikanásobek celkové roční spotřeby elektřiny.** Potenciál pro výrobu ze slunce na nejvhodnějších plochách (střechy, fasády, bývalé povrchové doly, brownfieldy, atd.) je [podstatný](/infografiky/potencial-solarni-energie-cr-strechy), ale omezený. Prakticky neomezený potenciál slibuje zemědělská krajina. **Solární panely na polích sice vzbuzují odpor obyvatel, hektar solárních panelů dokáže ale vyrobit zhruba 30x více energie než hektar řepky pěstované na bionaftu.** Řepku na bionaftu přitom pěstujeme asi na [1 300 km2](https://eagri.cz/public/web/file/682857/SVZ_Olejniny_12_2020.pdf), což je plocha, která by stačila na pokrytí současné spotřeby Česka. Společensky přijatelným kompromisem může být agrivoltaika, tedy dvojí využití půdy: např. současné pěstování zemědělských plodin (které ocení trochu stínu) pod vysoce a řídce osazenými solárními panely. Tento slibný přístup[^OZE-agrivoltaika-zdroje] je ovšem v Česku zatím [v počátcích](https://www.agromanual.cz/cz/clanky/management-a-legislativa/management/agrivoltaika-v-podminkach-ceske-republiky).
 
+### Vítr
 {% include figure.html
     name="wind.png"
     alt="Přehled vlastností větrných zdrojů"
@@ -68,6 +68,8 @@ V tomto textu se primárně zabýváme sezónní proměnlivostí: solární zdro
 **Pro sezónní vyváženost výroby ze slunce a větru tedy v Česku potřebujeme zásadně pohnout s instalací větrných zdrojů.**
 
 ## Jádro
+
+### Konvenční jádro
 {% include figure.html
     name="nuclear-conventional.png"
     alt="Přehled vlastností konvenčních jaderných zdrojů"
@@ -84,6 +86,7 @@ V tomto textu se primárně zabýváme sezónní proměnlivostí: solární zdro
 
 Vzhledem k těmto vlastnostem jaderných elektráren a rychlosti rozvoji OZE je realistické uvažovat buď o odklonu od jaderné energetiky, nebo jen o jejím omezeném rozvoji.[^jadro-know-how]
 
+### Malé modulární reaktory (SMRs)
 {% include figure.html
     name="nuclear-smr.png"
     alt="Přehled vlastností SMR jaderných zdrojů"
@@ -100,6 +103,7 @@ V této sekci postupně probereme další technologie, které těžko mohou plni
 
 _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:.todo}
 
+### Hydro
 {% include figure.html
     name="hydro.png"
     alt="Přehled vlastností vodních zdrojů"
@@ -110,6 +114,7 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 
 **Vodní elektrárny mají určitou flexibilitu**, např. vyšší výrobou ráno a večer doplňují výrobu ze slunce. Množství vody za rok je ale omezené a přehrady musí vždy alespoň nějakou vodu pouštět. Zhruba 40 % výroby je tak neflexibilní (v posledních letech je v Česku minimální výkon hydra mezi 70–100 MW, průměrný výkon za celý rok pak mezi 200 a 300 MW).
 
+### Biomasa
 {% include figure.html
     name="biomass.png"
     alt="Přehled vlastností zdrojů na biomasu"
@@ -144,6 +149,7 @@ Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a tak
 
 Přes všechny tyto výhrady **biomasa může hrát důležitou roli ve vyrovnávání výkyvů ve výrobě ze slunce a větru** díky jejímu snadnému skladování.
 
+### Uhlí nebo zemní plyn s CCS
 {% include figure.html
     name="ccs.png"
     alt="Přehled vlastností zdrojů s CCS"
@@ -172,6 +178,7 @@ Přes všechny tyto výhrady **biomasa může hrát důležitou roli ve vyrovná
 
 **Přes všechny tyto problémy mohou fosilní elektrárny s CCS hrát důležitou roli ve vyrovnávání výkyvů v produkci ze slunce a větru.** Úspěšný rozvoj CCS v Česku ovšem stojí na podpoře vlády, protože příprava úložiště CO<sub>2</sub> zatím s sebou nese příliš mnoho nejistot a rizika pro soukromé investory. Další zdroje informací o CCS nabízí [naše rešerše](/studie/2022-reserse-ccs).
 
+### Plynové turbíny na zelený nebo modrý vodík
 {% include figure.html
     name="hydrogen.png"
     alt="Přehled vlastností vodíkových zdrojů"
@@ -201,10 +208,7 @@ Přes všechny tyto výhrady **biomasa může hrát důležitou roli ve vyrovná
 
 **Ani 20 Mt ročně nenasytí poptávku EU, protože větší část vodíku nejspíš bude potřeba mimo energetiku.** Pro řádovou orientaci: ze zmíněných 20 Mt vodíku ročně by se dalo zpětně vyrobit jen asi 350 TWh elektřiny (asi 12 % současné roční spotřeby EU, tedy jen třetina elektřiny, která se spotřebuje na výrobu tohoto vodíku). Pro vyrovnávání výkyvů ve výrobě ze slunce a větru je to ale i tak velké číslo, např. podle [progresivního scénáře](https://ember-climate.org/data/data-tools/european-clean-power-pathways-explorer/) think-tanku Ember bude v roce 2050 potřeba pro vyrovnání výkyvů v celé Evropě jen asi 110 TWh elektřiny z vodíku.
 
-{% include figure.html
-    name="flexibility.png"
-    alt="Nadpis k sekci krátkodobého vyrovnávání"
-%}
+### Technologie na krátkodobé vyrovnávání
 
 **Tyto technologie nejsou primárním zdrojem elektřiny.** Pouze umožňují na daném místě o malý čas posunout výrobu elektřiny (pomocí ukládání elektřiny) nebo spotřebu elektřiny (pomocí flexibility spotřeby). Proto se jim v tomto textu podrobně nevěnujeme.
 
