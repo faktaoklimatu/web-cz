@@ -15,18 +15,18 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/7razCd-RUGs"
 perex: |
-  K dosažení uhlíkové neutrality je jedním z klíčových kroků dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnou představu, kam vlastně chceme dojít. Jak se má proměnit česká a evropská elektroenergetika? Základní průzkum tohoto složitého terénu nabízí následující text.
+  K dosažení uhlíkové neutrality je jedním z klíčových kroků dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnější představu, kam vlastně chceme dojít. Jak se má česká a evropská elektroenergetika změnit? Základní průzkum tohoto složitého terénu nabízí následující text.
 
 ---
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {% include tldr.html content="
-- Během dalších 30 let budeme potřebovat **znatelně více elektřiny** než dnes.
-- Zásadní jsou **solární a větrné zdroje**. V rámci těchto zdrojů **klíčovou roli hraje větrná energetika**, pro vyrovnanost výroby během roku. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém zjednodušit.
-- Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, potřebujeme to nahradit importem větrné výroby ze zahraničí, výraznějším rozvojem jaderné energetiky, nebo spoléhat na dlouhodobé ukládání elektřiny, příp. technologii _CCS_.
-- Do rozhodování o budoucí energetice vstupuje řada aspektů: stabilita sítě, finanční náklady, energetická bezpečnost nebo i provázanost s centrálním zásobováním teplem.
-- Plány na dalších 30 let nutně obsahují velké množství neznámých parametrů: potřebujeme pojmenovávat různé druhy rizik a zvažovat jejich přijatelnost.
+- V dalších 30 letech naše **spotřeba elektřiny znatelně naroste** (oproti dnešku).
+- Zásadní budou **solární a větrné zdroje**. Kvůli vyrovnanosti výroby během roku bude **klíčový rozvoj větrné energetiky**. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém s nedostatkem elektřiny zjednodušit.
+- Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, budeme to muset kompenzovat importováním větrné energie ze zahraničí, výraznějším rozvojem jaderné energetiky a nebo spoléhat na dlouhodobé ukládání elektřiny, případně vyšší emise řešit pomocí technologie _CCS_.
+- S rozhodováním o budoucí energetice je spojena řada otázek: stabilita sítě, finanční náklady, energetická bezpečnost, ale třeba i provázanost s centrálním zásobováním teplem.
+- Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
 ## Jaké jsou klíčové parametry budoucí energetiky?
