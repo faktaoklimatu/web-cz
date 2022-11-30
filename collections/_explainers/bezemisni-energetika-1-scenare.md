@@ -15,7 +15,7 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/7razCd-RUGs"
 perex: |
-  K dosažení uhlíkové neutrality je jedním z klíčových kroků dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnější představu, kam vlastně chceme dojít. Jak se má česká a evropská elektroenergetika změnit? Základní průzkum tohoto složitého terénu nabízí následující text.
+  Jedním z klíčových kroků k dosažení uhlíkové neutrality je dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnější představu, kam vlastně chceme dojít. Jak se má česká a evropská elektroenergetika změnit? Základní průzkum tohoto složitého terénu nabízí následující text.
 
 ---
 
@@ -24,26 +24,26 @@ perex: |
 {% include tldr.html content="
 - V dalších 30 letech naše **spotřeba elektřiny znatelně naroste** (oproti dnešku).
 - Zásadní budou **solární a větrné zdroje**. Kvůli vyrovnanosti výroby během roku bude **klíčový rozvoj větrné energetiky**. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém s nedostatkem elektřiny zjednodušit.
-- Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, budeme to muset kompenzovat importováním větrné energie ze zahraničí, výraznějším rozvojem jaderné energetiky a nebo spoléhat na dlouhodobé ukládání elektřiny, případně vyšší emise řešit pomocí technologie _CCS_.
+- Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, budeme to muset kompenzovat importováním větrné energie ze zahraničí, výraznějším rozvojem jaderné energetiky a nebo spoléhat na dlouhodobé ukládání elektřiny, případně vyšší emise řešit pomocí technologie CCS.
 - S rozhodováním o budoucí energetice je spojena řada otázek: stabilita sítě, finanční náklady, energetická bezpečnost, ale třeba i provázanost s centrálním zásobováním teplem.
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
 ## Jaké jsou klíčové parametry budoucí energetiky?
 
-_Toto je komplexní otázka a tak začneme rámováním celého problému. Později pak na základě technologicky dostupných možností ukazujeme několik ilustrativních scénářů. Cílem tohoto textu není poskytnout odbornou studii transformace elektroenergetiky. Chceme srozumitelně ukazovat obrysy možných cest a rozhodnutí, která nás čekají. Pro lepší pochopitelnost celý problém zjednodušujeme, konkrétní omezení zmíníme na patřičných místech v textu._
+_Tento text není odbornou studií o transformaci elektroenergetiky. Nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
 
-### Kolik budeme potřebovat elektřiny?
+### Kolik elektřiny budeme potřebovat?
 
-Úplně na začátku si musíme uvědomit základní kontext dekarbonizace: **výroba elektřiny bude hrát v budoucím světě klíčovou roli**. Při dekarbonizaci totiž potřebujeme zásadně omezit emise skleníkových plynů v dalších sektorech, kde spalujeme fosilní paliva: v dopravě, ve vytápění, v průmyslu. Pro mnohé případy je elektrifikace nejvýhodnější nebo dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina není vhodná (např. letecká a lodní doprava nebo průmyslové procesy s vysokými teplotami) se navíc ve velké míře počítá s využitím vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. Znamená to, že v budoucnu budeme potřebovat elektřinu i v oblastech, kde jsme ji (díky používání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
+Na začátku je třeba zmínit základní kontext dekarbonizace: **výroba elektřiny bude hrát v budoucím světě klíčovou roli**. Při dekarbonizaci potřebujeme zásadně omezit emise skleníkových plynů v sektorech, kde spalujeme fosilní paliva: v energetice, v dopravě, ve vytápění, v průmyslu. V mnoha případech je elektrifikace nejvýhodnější, či dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina není vhodná (např. letecká a lodní doprava nebo průmyslové procesy s vysokými teplotami), se navíc ve velké míře počítá s využitím vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. To jinými slovy znamená, že budeme potřebovat elektřinu i tam, kde jsme ji (díky využívání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
 
-<!-- Více detailů k proměně celkové energetiky nabízíme v samostatném explaineru. -->
+<!-- Více detailů k celkové proměně energetiky nabízíme v samostatném explaineru. -->
 
-**Problém, který řešíme je tedy mnohem těžší, než jen nahradit stávající zdroje elektřiny nízkoemisními. Potřebujeme zásadně snížit emise a současně zásadně zvýšit výrobu elektřiny.**
+Problém, který řešíme, je tedy mnohem těžší než jen nahradit stávající zdroje elektřiny nízkoemisními. **Potřebujeme zásadně snížit emise a současně výrazně zvýšit výrobu elektřiny.**
 
 {% include preview-box.html
     class="highlight-text-box"
-    text="**TWh**, tedy **terawatthodina** je jednotka energie. Tolik elektřiny v současnosti za rok vyrobí menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
+    text="**TWh**, tedy **terawatthodina** je jednotka energie. Jednu TWh elektřiny v současnosti za rok vyrobí menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
 %}
 
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby až ke **100 TWh ročně**[^consumption-metric], jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
@@ -53,17 +53,17 @@ _TODO: Opravit data, hodnota teď by měla být asi 63._{:.todo}
 {% include figure.html
     name="consumption.svg"
     alt="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
-    caption="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách. Ukazujeme součet čisté spotřeby a ztrát v sítích."
+    caption="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách – součet čisté spotřeby a ztrát v sítích."
     source-text="Fakta o klimatu"
 %}
 
-### Jak rychle potřebujeme dekarbonizovat výrobu elektřiny?
+### Jak rychle potřebujeme výrobu elektřiny dekarbonizovat?
 
-Dalším přitěžujícím parametrem tohoto problému je potřebná rychlost změny. **Závažnost důsledků klimatické změny ve velké míře závisí na rychlosti dekarbonizace.** Množství emisí uhlíku, které ještě můžeme vypustit do atmosféry, abychom v souladu s Pařížskou dohodou udrželi průměrné oteplení do 1,5 °C, označuje tzv. [uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Při současných emisích bychom náš zbývající uhlíkový rozpočet vyčerpali asi za 10 let. Snížení celosvětových emisí už v této dekádě je tedy klíčové.
+Dalším parametrem, který to celé komplikuje, je rychlost, s níž potřebujeme transformaci provést. **Závažnost důsledků klimatické změny do velké míry závisí na rychlosti dekarbonizace.** Množství emisí uhlíku, které ještě můžeme jako lidstvo vypustit do atmosféry, pokud chceme v souladu s Pařížskou dohodou udržet průměrné oteplení do 1,5 °C, označuje tzv. [uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Při současných emisích bychom náš zbývající uhlíkový rozpočet pro oteplení do 1,5 °C vyčerpali asi za 10 let. Proto je klíčové snížit celosvětové emise už v této dekádě.
 
-**Je důležité dodat, že takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám do konce této dekády a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Během třicátých let ovšem také nesmíme polevit. Až se nám podaří snížit emise v elektroenergetice třeba na 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji a můžeme si tak pro zbylou dekarbonizaci dopřát větší rozvážnost.
+Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám do konce této dekády a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Polevit ovšem nesmíme ani potom. Až se nám podaří snížit emise v elektroenergetice na cca 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji, a můžeme si tak pro zbylou dekarbonizaci dopřát větší rozvážnost.
 
-### Na jakých pilířích můžeme budoucí energetiku postavit?
+### Na jakých pilířích se dá budoucí energetika postavit?
 
 {% include preview-box.html
     title="Detaily k jednotlivým technologiím"
