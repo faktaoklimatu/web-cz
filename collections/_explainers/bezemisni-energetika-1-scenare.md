@@ -33,6 +33,12 @@ perex: |
 
 _Tento text není odbornou studií o transformaci elektroenergetiky. Nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
 
+Zaměříme se zejména na následující 4 otázky:
+- Kolik elektřiny budeme v dalších desetiletích potřebovat?
+- Jak rychle potřebujeme její výrobu dekarbonizovat?
+- Na jakých pilířích se dá budoucí energetika postavit? 
+- Co musí budoucí energetický mix splňovat?
+
 ### Kolik elektřiny budeme potřebovat?
 
 Na začátku je třeba zmínit základní kontext dekarbonizace: **výroba elektřiny bude hrát v budoucím světě klíčovou roli**. Při dekarbonizaci potřebujeme zásadně omezit emise skleníkových plynů v sektorech, kde spalujeme fosilní paliva: v energetice, v dopravě, ve vytápění, v průmyslu. V mnoha případech je elektrifikace nejvýhodnější, či dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina není vhodná (např. letecká a lodní doprava nebo průmyslové procesy s vysokými teplotami), se navíc ve velké míře počítá s využitím vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. To jinými slovy znamená, že budeme potřebovat elektřinu i tam, kde jsme ji (díky využívání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
@@ -71,23 +77,23 @@ Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat
     slug="bezemisni-energetika-2-technologie"
 %}
 
-Ve světle těchto východisek v tomto textu budeme pracovat s následujícími pilíři pro výrobu bezemisní elektřiny v Česku:
+Modelování budoucí energetiky musí brát výše uvedená východiska v potaz. V tomto textu budeme pracovat s následujícími pilíři pro výrobu bezemisní elektřiny v Česku:
 
-1. **Slunce a vítr** mají velmi rychlé nasazení, nízké investiční náklady a stále obrovský nevyužitý potenciál v ČR. Tyto zdroje mají ale výrazně proměnlivou výrobu.
-2. **Jádro** dokáže vyrábět stabilně, má ale dlouhou dobu výstavby, vysoké investiční náklady a vysoké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, která zatím ale není zralá ke komerčnímu nasazení.
-3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být biomasa, vodní elektrárny, fosilní zdroje s <glossary id='ccs'>CCS</glossary>. Podobnou funkci také plní technologie pro ukládání elektřiny (přečerpávací elektrárny, baterie, zelený vodík, apod.) a flexibilita spotřeby.
+1. **Slunce a vítr** lze začít využívat velmi rychle, přičemž oba tyto zdroje mají nízké investiční náklady a v ČR stále obrovský nevyužitý potenciál. Jejich nevýhodou je výrazně proměnlivá výroba.
+2. **Jádro** dokáže vyrábět stabilně, postavit jadernou elektrárnu však trvá mnoho let, navíc jsou zde vysoké investiční náklady a vysoké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, která zatím ale není zralá ke komerčnímu nasazení.
+3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (přečerpávací elektrárny, baterie, zelený vodík apod.) a flexibilita spotřeby.
 
-Naši současnou spotřebu pokrývají tyto tři pilíře jen z části, zbytek pokrývá vysokoemisní fosilní pilíř:
+Současnou spotřebu v ČR pokrývají tyto tři pilíře jen zčásti, zbytek stále stojí na vysokoemisním pilíři – využívání fosilních paliv:
 {% include figure.html
     name="mix-current.svg"
     alt="Současné pokrytí spotřeby v ČR"
-    caption="Současnou spotřebu pokrývají bezemisní pilíře jen z části."
+    caption="Současnou spotřebu pokrývají bezemisní pilíře jen zčásti."
     source-text="Fakta o klimatu"
 %}
 
-V budoucnu potřebujeme tyto tři pilíře uváženě kombinovat. Např. nějakou míru bezemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využití elektřiny ze slunce a větru.
+V budoucnu potřebujeme tyto tři pilíře uváženě kombinovat. Například nějakou míru bezemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
 
-Další strategické rozhodnutí je, jak výraznou chceme **soběstačnost ve výrobě elektřiny**, tedy jakou část spotřeby chceme nutně pokrýt z českých zdrojů. Zbytek bychom mohli **importovat ze zahraničí**, pokud to dovolí výrobní kapacity okolních států a možnosti přeshraniční přenosové soustavy.
+Další strategické rozhodnutí spočívá v tom, jak moc chceme **být ve výrobě elektřiny soběstační**, tedy jakou část spotřeby chceme určitě pokrýt z českých zdrojů. Zbytek bychom mohli **importovat ze zahraničí** – pokud to dovolí výrobní kapacity okolních států a možnosti přeshraniční přenosové soustavy.
 
 
 ### Co musí budoucí mix splňovat?
