@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Které technologie k výrobě bezemisní elektřiny můžeme v Česku využít?"
+title:       "Z čeho můžeme v Česku vyrábět bezemisní elektřinu?"
 series-id:   "serie-elektrina-2050-cr"
 series-order: "II"
 slug:        "bezemisni-energetika-2-technologie"
