@@ -319,16 +319,16 @@ Podobným postupem jsme odhadli systémové náklady pro naše tři ilustrativn�
     col1="
 #### 1. Zelený vodík
 
-Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení těchto nákladů se ovšem může snadno dostat na srovnatelnou úroveň s ostatními."
+Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení těchto nákladů se ovšem může snadno dostat na úroveň srovnatelnou s ostatními."
     col2="
 #### 2. Import (větrné výroby)
 
-Tento scénář nepřekvapivě vychází o něco levnější, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí ale poskytuje tak o něco nižší energetickou nezávislost Česka. Pro přesnější odhady by byla potřeba robustní studie nákladů na posílení přenosových soustav.
+Tento scénář vychází o něco levnější, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí. Zároveň ale znamená o něco nižší energetickou nezávislost Česka. Přesnější odhady by vyžadovaly robustní studii nákladů spojených s posílením přenosových soustav.
 "
     col3="
 {:start='3'}
 #### 3. Posílení jádra
-Posílení jádra přináší významné investiční riziko. Pokud se podaří udržet investice na úrovni referenčních projektů z minulých dekád, má tento scénář také poměrně nízké náklady. Při významném prodražení těchto staveb by ovšem náklady mohly vyjít jako nejvyšší.
+Posílení jádra s sebou nese významné investiční riziko. Pokud by se podařilo udržet investice na podobné úrovni jako u referenčních projektů v minulosti, měl by tento scénář také poměrně nízké náklady. Při významném prodražení stavby nových jaderných bloků by ovšem tento scénář mohl vyjít jako nejdražší.
 "
 %}
 {% endcapture %}
@@ -341,11 +341,11 @@ Posílení jádra přináší významné investiční riziko. Pokud se podaří 
     source-text="Fakta o klimatu"
 %}
 
-Budoucí systémové náklady u každého ze scénářů vycházejí o něco vyšší než jsou současné náklady. Rozdíl je to ale poměrně malý. Tady je potřeba zopakovat, že tyto odhady nepočítají s dalším zlevňování technologií pro nízkoemisní výrobu elektřiny a jsou tedy pravděpodobně nadsazené.
+Budoucí systémové náklady vycházejí u každého ze scénářů o něco vyšší než ty současné. Rozdíl ale není velký a je potřeba zopakovat, že tyto odhady nepočítají s dalším zlevňováním technologií pro nízkoemisní výrobu elektřiny, a jsou tedy pravděpodobně nadsazené.
 
-## Jaká rizika souvisí s transformací elektroenergetiky?
+## Jaká rizika jsou s transformací elektroenergetiky spojena?
 
-Výroba a distribuce elektřiny je naprosto klíčová infrastruktura. **Výrazná transformace s sebou nutně přináší širokou škálu rizik**. Širokou škálu rizik **dopadů změny klimatu** ovšem přináší i zachování současného stavu příp. příliš pomalá a opatrná transformace. Níže ukazujeme základní naznačení obou druhů rizik, pro transformační rizika ovšem zacházíme do většího detailu.
+Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu státu. Její **zásadní transformace je nutně spojena s řadou rizik**. Širokou škálu rizik spojených s **dopady změny klimatu** však přináší i zachování současného stavu, případně příliš pomalá a opatrná transformace. Základní přehled obou skupin rizik přinášíme níže, u transformačních rizik zacházíme do většího detailu.
 
 {% include figure.html
     name="risk-map.png"
@@ -354,14 +354,14 @@ Výroba a distribuce elektřiny je naprosto klíčová infrastruktura. **Výrazn
     source-text="Fakta o klimatu"
 %}
 
-V jednoduchosti se může stát, že budeme transformovat podle scénáře, který se ukáže jako chybný, že k prosazení transformace nasadíme špatné regulace nebo že se nám prostě dobrý plán podpořený dobrými regulacemi nepodaří dost rychle a levně zrealizovat.
+Zjednodušeně řečeno se může stát, že budeme transformovat podle scénáře, který se ukáže jako chybný, nebo k prosazení transformace zvolíme špatné regulace nebo se nám prostě dobrý plán podpořený dobrými regulacemi nepodaří dost rychle a levně zrealizovat.
 
-Je několik základních nástrojů ke snížení rizika transformace:
+Ke snížení rizik spojených s transformací můžeme využít několik základních nástrojů:
 - **Diverzifikovaný** rozvoj nízkoemisních výrobních kapacit (a diverzifikace investic do výzkumu a vývoje).
-- **Široká škála možných pokračování** transformace. Potřebujeme zajistit, že na probíhající transformaci ve dvacátých letech může navázat celá škála technicky smysluplných strategií ve třicátých a čtyřicátých letech. Transformační riziko bude nižší, když nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory).
-- **Dostatečná rezerva** ve výrobní kapacitě i v primárních energetických zdrojích. Taková rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko podobných turbulencí, jakou je ta okolo ruského plynu. Příkladem takového opatření může být třeba udržovat část uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
+- **Široká škála možných pokračování** transformace. Potřebujeme zajistit, že na probíhající transformaci ve 20. letech bude moci navázat celá škála technicky smysluplných strategií ve 30. a 40. letech. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory).
+- **Dostatečná rezerva** ve výrobní kapacitě i v primárních energetických zdrojích. Taková rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
-**Všechny tyto aspekty volají po vhodné kombinaci všech tří ukázkových scénářů, tedy po urychleném rozvoji obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně po rozvoji jaderných zdrojů stejně jako přenosových kapacit pro import obnovitelné elektřiny ze zahraničí.**
+**Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
 
 ## Shrnutí
 
