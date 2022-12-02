@@ -29,7 +29,7 @@ perex: |
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
-## Jaké jsou klíčové parametry budoucí energetiky?
+## Jaké jsou klíčové otázky budoucí energetiky?
 
 _Tento text není odbornou studií o transformaci elektroenergetiky. Nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
 
@@ -139,7 +139,7 @@ Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky
 '
 %}
 
-## Jak mohou vypadat úspěšné scénáře?
+## Jak mohou vypadat úspěšné (a neúspěšné) scénáře?
 
 Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně zvolíme nějakou kompromisní cestu mezi těmito extrémy.
 
@@ -363,7 +363,9 @@ Ke snížení rizik spojených s transformací můžeme využít několik zákla
 
 **Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
 
-## Shrnutí
+## Co z toho plyne?
+
+_TODO: Přepsat víc do bodů, neříkat nic moc nového_{:.todo}
 
 **Krátkodobá strategie pro Česko a Evropu je poměrně jasná: potřebujeme maximalizovat instalaci solárních a větrných elektráren a současně podporovat rozvoj široké škály řešení pro vyrovnávání jejich podstatně proměnlivé výroby**, abychom mohli postupně snižovat výrobu elektřiny z fosilních zdrojů. Pro zimní půlku roku je **obzvláště důležité rozvíjet větrnou energetiku**. Český potenciál pro tyto technologie je omezený (v případě větru), ale [velmi podstatný](/infografiky/potencial-vetrne-energie-cr): jeho využití ve velké míře závisí na jasné strategické podpoře ze strany státu. Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mnoha návazných scénářů transformace. Navíc není žádná jiná cesta, která by mohla tak rychle přispět ke snížení emisí.
 
