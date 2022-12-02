@@ -36,7 +36,7 @@ _Tento text není odbornou studií o transformaci elektroenergetiky. Nabízí ú
 Zaměříme se zejména na následující 4 otázky:
 - Kolik elektřiny budeme v dalších desetiletích potřebovat?
 - Jak rychle potřebujeme její výrobu dekarbonizovat?
-- Na jakých pilířích se dá budoucí energetika postavit? 
+- Na jakých pilířích se dá budoucí energetika postavit?
 - Co musí budoucí energetický mix splňovat?
 
 ### Kolik elektřiny budeme potřebovat?
@@ -81,7 +81,7 @@ Modelování budoucí energetiky musí brát výše uvedená východiska v potaz
 
 1. **Slunce a vítr** lze začít využívat velmi rychle, přičemž oba tyto zdroje mají nízké investiční náklady a v ČR stále obrovský nevyužitý potenciál. Jejich nevýhodou je výrazně proměnlivá výroba.
 2. **Jádro** dokáže vyrábět stabilně, postavit jadernou elektrárnu však trvá mnoho let, navíc jsou zde vysoké investiční náklady a vysoké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, ta ale zatím není zralá ke komerčnímu nasazení.
-3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (přečerpávací elektrárny, baterie, zelený vodík apod.) a flexibilita spotřeby.
+3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (např. přečerpávací elektrárny, baterie nebo _zelený vodík_, tedy vodík vyrobený pomocí nadbytků obnovitelné elektřiny). K vyrovnávání výroby a spotřeby lze také přispět _flexibilitou spotřeby_, tedy přizpůsobením spotřeby možnostem výroby, např. jejím odložením na vhodnější čas.
 
 Současnou spotřebu v ČR pokrývají tyto tři pilíře jen zčásti, zbytek stále stojí na vysokoemisním pilíři – využívání fosilních paliv:
 {% include figure.html
@@ -123,7 +123,7 @@ V Česku máme rozsáhlé systémy centrálního zásobování teplem. A protož
 
 Důležitým aspektem jsou i celkové budoucí náklady na výrobu elektřiny – tedy součet nákladů investičních a provozních. Na těch se podílí stát, energetické firmy a další aktéři.
 
-Tyto náklady budou pravděpodobně o něco vyšší než dnes (nicméně toto srovnání může být zavádějící, protože do nákladů obvykle nezapočítáváme veškeré negativní externality, jako je třeba znečištění ovzduší nebo dopady na klima). Přesto nutně potřebujeme, aby i v budoucnu byla elektřina cenově dostupná a zajistila dostatečný životní standard všem vrstvám společnosti. 
+Tyto náklady budou pravděpodobně o něco vyšší než dnes (nicméně toto srovnání může být zavádějící, protože do nákladů obvykle nezapočítáváme veškeré negativní externality, jako je třeba znečištění ovzduší nebo dopady na klima). Přesto nutně potřebujeme, aby i v budoucnu byla elektřina cenově dostupná a zajistila dostatečný životní standard všem vrstvám společnosti.
 
 Obecně pak lze říct, že čím nižší budou náklady na výrobu bezemisní elektřiny, tím snazší bude celá transformace politicky i ekonomicky.
 
