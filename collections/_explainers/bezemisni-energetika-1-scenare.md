@@ -103,7 +103,7 @@ Pro budoucí mix české energetiky je důležitá řada vlastností. Zde chceme
 {% include columns.html
     class="wide-figure-desktop longread-small mb-2"
     column-class="col-12 col-md-6 mb-2"
-    col1="
+    col1='
 #### Stabilita
 
 Pro fungování elektrické sítě je nutné, aby výroba elektřiny vždy odpovídala spotřebě. Pokud nebudeme mít _zdrojovou přiměřenost_, tedy dostatečné technické nástroje, abychom tuto stabilitu sítě zajistili, hrozí nám _blackouty_, jež mají ničivé dopady na společnost i ekonomiku.
@@ -117,8 +117,8 @@ Sezóna významně ovlivňuje výrobu: v letní polovině roku se například vy
 #### Soulad s potřebami teplárenství
 
 V Česku máme rozsáhlé systémy centrálního zásobování teplem. A protože teplárny kromě tepla vyrábí i elektřinu, je řešení pro dekarbonizaci elektroenergetiky nutně provázané s řešením pro dekarbonizaci tepláren. Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, které například využívají odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (využívající biomasu, bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů pro vyrovnávání výkyvů ve výrobě elektřiny ze slunce a větru. V teplárenství se také v budoucnu může využívat odpadní teplo z malých modulárních reaktorů.
-"
-    col2="
+'
+    col2='
 #### Přiměřené náklady
 
 Důležitým aspektem jsou i celkové budoucí náklady na výrobu elektřiny – tedy součet nákladů investičních a provozních. Na těch se podílí stát, energetické firmy a další aktéři.
@@ -136,7 +136,8 @@ V současnosti více než polovina konečné spotřeby energie v ČR pochází z
 S energetickou bezpečností a s transformací souvisejí i další rizika: rizika investic do obřích staveb, skončení ve slepé uličce (když například vsadíme příliš mnoho na konkrétní budoucí technologii), riziko společenské nestability, když se transformace nebude dařit. Ani zdaleka tedy nejde "jen" o riziko dopadů klimatické změny.
 
 Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky nelze předvídat dostatečně jasně. Všichni aktéři (a stát především) musí s všemi těmito riziky počítat a vhodnou strategií snižovat jejich pravděpodobnost a možné dopady.
-"%}
+'
+%}
 
 ## Jak mohou vypadat úspěšné scénáře?
 
