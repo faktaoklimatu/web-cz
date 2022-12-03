@@ -15,18 +15,18 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/0w-uTa0Xz7w"
 perex: |
-  Abychom mohli energetiku dekarbonizovat dostatečně rychle, potřebujeme významně posílit bezemisní zdroje elektřiny. Tento text se zaměřuje na možnosti výroby, které jsou dnes technologicky dostupné a zároveň v Česku použitelné.
+  Abychom mohli energetiku dekarbonizovat dostatečně rychle, potřebujeme významně posílit bezemisní zdroje elektřiny. Tento text se zaměřuje na možnosti výroby, které jsou dnes technologicky dostupné a dají se v ČR využít.
 ---
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
 {% include tldr.html content="
 - Zásadními zdroji bezemisní elektřiny v Česku mohou být **slunce a vítr**. Kvůli vyrovnanosti výroby během roku bude **klíčový rozvoj větrné energetiky**.
-- Pomocí **jaderné energetiky** nemůžeme dostatečně rychle pokrýt celou spotřebu Česka. Udržení nebo mírné navýšení současné výroby z jádra nicméně může dekarbonizaci energetiky ulehčit.
-- Když nesvítí a nefouká, máme na výběr z řady **nízkoemisních flexibilních zdrojů**. Nicméně výroba z nich je zpravidla dražší než výroba ze slunce, větru i jádra. Je tedy důležité [vybudovat v ČR energetický mix](/explainery/bezemisni-energetika-1-scenare) tak, abychom tyto flexibilní zdroje potřebovali co nejméně.
+- Pomocí **jaderné energetiky** nemůžeme pokrýt celou spotřebu země dostatečně rychle. Udržení nebo mírné navýšení současné výroby z jádra nicméně může dekarbonizaci energetiky ulehčit.
+- Když nesvítí a nefouká, máme na výběr z řady **nízkoemisních flexibilních zdrojů**. Nicméně vyrábět elektřinu z nich je zpravidla dražší než vyrábět ze slunce, větru či jádra. Je tedy důležité [vybudovat v ČR energetický mix](/explainery/bezemisni-energetika-1-scenare) tak, abychom tyto flexibilní zdroje potřebovali co nejméně.
 " %}
 
-_Tento text nabízí přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím textu](/explainery/bezemisni-energetika-1-scenare)._
+_V tomto textu najdete přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím dílu](/explainery/bezemisni-energetika-1-scenare) série._
 
 _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na cca 100 TWh za rok._{:.todo}
 
@@ -41,7 +41,7 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
     source-text="Fakta o klimatu"
 %}
 
-**I v českém prostředí je možné vyrobit ze slunce několikanásobek celkové roční spotřeby elektřiny.** Potenciál pro tuto výrobu na nejvhodnějších plochách (střechy, fasády, bývalé povrchové doly, brownfieldy apod.) je [významný](/infografiky/potencial-solarni-energie-cr-strechy), ale omezený. Prakticky neomezený potenciál má zemědělská krajina. Solární panely na polích sice vzbuzují odpor obyvatel, nicméně **hektar solárních panelů dokáže vyrobit zhruba 30x více energie než hektar řepky pěstované na bionaftu.** Za tímto účelem přitom u nás řepku pěstujeme asi na [1 300 km2](https://eagri.cz/public/web/file/682857/SVZ_Olejniny_12_2020.pdf), což je plocha, která by na pokrytí současné spotřeby Česka stačila. Navíc dnes již existují i kompromisní řešení, například tzv. agrovoltaika, kdy se půda využívá dvojím způsobem – k pěstování zemědělských plodin, jež lépe rostou ve stínu než na přímém slunci a daří se jim pod vysoko umístěnými, řídce osazenými solárními panely. V Česku je ale tento slibný přístup[^OZE-agrivoltaika-zdroje] zatím [v počátcích](https://www.agromanual.cz/cz/clanky/management-a-legislativa/management/agrivoltaika-v-podminkach-ceske-republiky).
+**I v českém prostředí je možné vyrobit ze slunce několikanásobek celkové roční spotřeby elektřiny.** Potenciál pro tuto výrobu na nejvhodnějších plochách (střechy, fasády, bývalé povrchové doly, brownfieldy apod.) je [významný](/infografiky/potencial-solarni-energie-cr-strechy), ale omezený. Prakticky neomezený potenciál má zemědělská krajina. Solární panely na polích sice vzbuzují odpor obyvatel, je ale třeba si uvědomit, že **hektar solárních panelů dokáže vyrobit zhruba 30x více energie než hektar řepky pěstované na bionaftu.** Za tímto účelem přitom u nás řepku pěstujeme asi na [1 300 km2](https://eagri.cz/public/web/file/682857/SVZ_Olejniny_12_2020.pdf), což je plocha, která by na pokrytí naší současné spotřeby elektřiny stačila. Navíc dnes již existují i kompromisní řešení, například tzv. agrovoltaika, kdy se půda využívá dvojím způsobem – k pěstování zemědělských plodin, které lépe rostou ve stínu než na přímém slunci a daří se jim pod vysoko umístěnými, řídce osazenými solárními panely. V Česku je ale tento slibný přístup[^OZE-agrivoltaika-zdroje] zatím [v počátcích](https://www.agromanual.cz/cz/clanky/management-a-legislativa/management/agrivoltaika-v-podminkach-ceske-republiky).
 
 ### Vítr
 {% include figure.html
@@ -50,13 +50,13 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
     source-text="Fakta o klimatu"
 %}
 
-I když hodně fouká především u moře a to u nás nemáme, i tak můžeme pokrýt znatelnou část své spotřeby z větru. [Studie](https://www.ufa.cas.cz/DATA/vetrna-energie/Potencial_vetrne_energie_2020.pdf) Ústavu fyziky atmosféry odhaduje technický potenciál výroby z větru v ČR na cca 70 TWh / rok. [Realizovatelný potenciál](/infografiky/potencial-vetrne-energie-cr) do velké míry závisí na podpoře obyvatel a politiků – řádově ho můžeme odhadnout na 10—30 TWh / rok.
+I když vítr hodně fouká především u moře a to u nás nemáme, i tak můžeme s pomocí větru pokrýt znatelnou část své spotřeby. [Studie](https://www.ufa.cas.cz/DATA/vetrna-energie/Potencial_vetrne_energie_2020.pdf) Ústavu fyziky atmosféry AV ČR odhaduje technický potenciál výroby z tohoto zdroje v Česku na cca 70 TWh / rok. [Realizovatelný potenciál](/infografiky/potencial-vetrne-energie-cr) do velké míry závisí na podpoře obyvatel a politiků – řádově se dá odhadnout na 10—30 TWh / rok.
 
-**Slunce a vítr k sobě nutně potřebují flexibilní zdroje**, které rozebíráme níže. Zásadním problémem u solárních a větrných elektráren je totiž proměnlivost jejich výroby.
-<!--Krátkodobému bezemisnímu vyrovnávání výroby ze slunce a větru a možnostem různých technologií se podrobněji věnujeme v dalším textu. -->
-V tomto textu se zabýváme především sezónní proměnlivostí – solární zdroje vyrábějí nejvíc na jaře a v létě, větrné naopak na podzim a v zimě.
+**Slunce a vítr k sobě potřebují flexibilní zdroje**, které rozebíráme níže. Zásadním problémem u solárních a větrných elektráren je totiž proměnlivost jejich výroby.
+<!--Krátkodobému bezemisnímu vyrovnávání výroby ze slunce a větru a možnostem různých technologií se podrobněji věnujeme v dalším dílu série. -->
+V tomto textu se zabýváme především sezónní proměnlivostí – solární zdroje nejvíc vyrábějí na jaře a v létě, větrné naopak na podzim a v zimě.
 
-**Pro sezónně vyrovnanou výrobu z větru a slunce je potřeba, aby výrazně převažovala výroba z větru** (alespoň v poměru 3:1 ve prospěch větru[^OZE-vyvazeny-mix]). V Česku ale zatím máme výraznou převahu výroby ze slunce (cca 3:1 ve prospěch slunce). To rozhodně neodpovídá rozložení spotřeby a vyžadovalo by výraznou sezónní akumulaci:
+**Pro sezónně vyrovnanou výrobu v ČR z větru a slunce je potřeba, aby výrazně převažovala výroba z větru** (alespoň v poměru 3:1 ve prospěch větru[^OZE-vyvazeny-mix]). V Česku ale zatím máme značnou převahu výroby ze slunce (cca 3:1 ve prospěch slunce). To rozhodně neodpovídá rozložení spotřeby a vyžadovalo by to velké akumulační kapacity, tedy mít do čeho ukládat elektřinu, abychom ji mohli využít, když slunce tolik nesvítí:
 
 {% include figure.html
     name="solar-wind-seasonality.png"
