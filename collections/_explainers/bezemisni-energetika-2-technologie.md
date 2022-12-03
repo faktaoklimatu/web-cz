@@ -131,7 +131,7 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 2. **Výroba bioplynu** anaerobní fermentací (bez přístupu vzduchu). V plynovém spalovacím motoru se dá z bioplynu vyrábět elektřina a teplo.
 3. **Výroba biometanu** pročištěním bioplynu. Biometan lze vtlačit do plynárenské sítě a dále spalovat např. v paroplynových elektrárnách.
 
-Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábí **kapalná biopaliva** (u nás typicky bionafta z řepky<sup>*</sup>).
+Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábějí **kapalná biopaliva** (u nás typicky bionafta z řepky<sup>*</sup>).
 
 {:.longread-small}
 <sup>*</sup> Dnes se biopaliva používají velmi neefektivně – přimíchávají se plošně do nafty. Není ovšem možné vyrobit dost biopaliv na to, abychom tím zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou tato paliva sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
@@ -163,7 +163,7 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
     content="
 **CCS je souhrnný název pro různé postupy na zachytávání odpadního oxidu uhličitého a jeho trvalé uložení do podzemního úložiště.**<sup>*</sup> K ukládání se využívají jednak geologické útvary jako _solné vodonosné vrstvy_ a jednak vytěžená naleziště ropy a zemního plynu (kde CO<sub>2</sub> v rámci techniky [_enhanced oil recovery_](https://en.wikipedia.org/wiki/Enhanced_oil_recovery) umožňuje další těžbu).
 
-**CCS může mít v budoucnu významná využití i mimo elektroenergetiku**:
+**CCS se může v budoucnu významně využívat i mimo elektroenergetiku**:
 - Při **dekarbonizaci průmyslových procesů jako výroba cementu, železa, oceli** atd. (při této výrobě se totiž CO<sub>2</sub> uvolňuje jinou reakcí než hořením fosilních paliv).
 - Jako **technický nástroj k dosažení záporných emisí <glossary id='sekvestrace'>sekvestrací uhlíku</glossary>**, nasazený na elektrárnu či teplárnu na biomasu (_bioenergy with CCS_, _BECCS_) nebo jako zařízení na zachytávání uhlíku přímo z atmosféry (_direct air capture_, _DAC_).
 
@@ -172,7 +172,7 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
 "
 %}
 
-**Technologie CCS je zatím do velké míry nerozvinutá**: na celém světě je dnes v provozu pouze [jedna elektrárna](https://en.wikipedia.org/wiki/Boundary_Dam_Power_Station) v Kanadě (a potom [další zařízení](https://www.sciencedirect.com/science/article/pii/S2590332221005418) mimo elektroenergetiku, obvykle využívaná při zpracování zemního plynu). Většina CCS projektů ohlášených ve světě v minulé dekádě byla zrušena, kolem úspěšného rozvoje této technologie a realizace nových projektů tedy panuje značná nejistota. Kromě toho **CCS závisí na infrastruktuře pro trvalé ukládání**, která zatím není ve střední Evropě k dispozici a vyžaduje nový systém potrubí transportující CO<sub>2</sub> do úložiště. V současnosti takovou infrastrukturu rozvíjí [např. Norsko](https://www.iea.org/policies/12675-ccs-project-longship).
+**Technologie CCS je zatím do velké míry nerozvinutá**: na celém světě je dnes v provozu pouze [jedna elektrárna](https://en.wikipedia.org/wiki/Boundary_Dam_Power_Station) v Kanadě (a potom [další zařízení](https://www.sciencedirect.com/science/article/pii/S2590332221005418) mimo elektroenergetiku, obvykle využívaná při zpracování zemního plynu). Většina CCS projektů ohlášených ve světě v minulé dekádě byla zrušena, kolem úspěšného rozvoje této technologie a realizace nových projektů tedy panuje značná nejistota. Kromě toho **CCS závisí na infrastruktuře pro trvalé ukládání**, která zatím není ve střední Evropě k dispozici a vyžaduje nový systém potrubí transportující CO<sub>2</sub> do úložiště. V současnosti takovou infrastrukturu rozvíjí např. [Norsko](https://www.iea.org/policies/12675-ccs-project-longship).
 
 **CCS neznamená nulové emise.** Dokáže zachytit pouze cca 85–95 % přímých emisí a nezachytí nepřímé emise při těžbě a přepravě fosilních paliv, takže např. plynové turbíny s CCS nejsou zdaleka klimaticky neutrální. Kromě toho vyžaduje CCS další rozvoj fosilní těžby a je těžké zaručit, že se významná část paliv z takových projektů skutečně spálí s použitím CCS. **CCS navíc prodlužuje naši závislost na státech, které produkují fosilní paliva.**
 
@@ -202,7 +202,7 @@ Přes všechny tyto problémy **mohou fosilní elektrárny s CCS hrát důležit
 "
 %}
 
-**Vodík lze využít jako velkokapacitní energetické úložiště pro elektřinu ze slunce a větru**, když je jí v síti nadbytek. Vodík se dá ekonomicky skladovat ve velkém objemu a na delší dobu v podzemních zásobnících. Potom se z něj dá vyrábět elektřina v paroplynových blocích, které se podobají těm na zemní plyn.[^vodik-turbiny] Díky relativně snadnému skladování na zimu je vodík také potenciálním kandidátem pro dekarbonizaci tepláren.
+**Vodík lze využít jako velkokapacitní energetické úložiště pro elektřinu ze slunce a větru**, když je jí v síti nadbytek. Vodík je možné ekonomicky skladovat ve velkém objemu a na delší dobu v podzemních zásobnících. Potom se z něj dá vyrábět elektřina v paroplynových blocích, které se podobají těm na zemní plyn.[^vodik-turbiny] Díky relativně snadnému skladování na zimu je vodík také potenciálním kandidátem pro dekarbonizaci tepláren.
 
 **Podíl zeleného vodíku má stoupat.** V rámci plánu [REPowerEU](https://ec.europa.eu/commission/presscorner/detail/en/IP_22_3131) chce EU **do roku 2030 dosáhnout roční spotřeby 20 Mt vodíku**. Polovina se má vyrábět uvnitř EU a polovina dovážet z dalších států (např. ze severu Afriky). To není málo – na výrobu těchto 20 Mt zeleného vodíku je potřeba asi 1 000 TWh bezemisní elektřiny navíc (tedy asi 35 % současné [roční spotřeby EU](https://ember-climate.org/data/data-explorer/)), a není proto jasné, zda se tento plán podaří realizovat.
 
@@ -214,19 +214,19 @@ Přes všechny tyto problémy **mohou fosilní elektrárny s CCS hrát důležit
 
 <!-- Více detailů najdete v navazujícím textu o vyrovnávání sítě. -->
 
-**Krátkodobé vyrovnávání se už dnes do značné míry využívá.** V Česku dnes mezi nejvýznamnější technologie patří:
+**Krátkodobé vyrovnávání se už dnes do značné míry využívá.** V Česku jsou nejvýznamnější:
 - **přečerpávací vodní elektrárny** na straně výroby (za rok vyrobí [zhruba 1 TWh](https://www.eru.cz/sites/default/files/import_files/Rocni_zprava_provoz_ES_2020.pdf)) a
 - **nízký tarif** na straně spotřeby (za rok se v něm spotřebuje [přes 10 TWh](https://www.eru.cz/sites/default/files/import_files/Rocni_zprava_provoz_ES_2020.pdf)).
 
-Je třeba dodat, že 1 TWh spotřebovaná v nízkém tarifu neposkytuje zdaleka takovou flexibilitu jako 1 TWh dodaná z přečerpávací elektrárny, pomáhá ale snižovat rozdíl mezi spotřebou ve dne a v noci.
+Je třeba dodat, že 1 TWh spotřebovaná v nízkém tarifu neposkytuje zdaleka takovou flexibilitu jako 1 TWh dodaná z přečerpávací elektrárny. Pomáhá ale snižovat rozdíl mezi spotřebou ve dne a v noci.
 
-Při velkém zastoupení slunce a větru v energetickém mixu budeme krátkodobé vyrovnávání potřebovat výrazně víc, řádově 5–20 TWh za rok. Přečerpávací elektrárny nicméně není možné příliš rozšiřovat, tedy **pro krátkodobé vyrovnávání bude potřeba rozšíření nových technologií** (např. lithiové baterie apod.[^flexibilita-nastroje]).
+Při velkém zastoupení slunce a větru v energetickém mixu budeme krátkodobé vyrovnávání potřebovat výrazně víc, řádově 5–20 TWh za rok. Přečerpávací elektrárny nicméně není v ČR možné příliš rozšiřovat, takže **pro krátkodobé vyrovnávání bude nutné rozšíření nových technologií** (např. lithiové baterie apod.[^flexibilita-nastroje]).
 
 ## Závěr
 
-**V České republice můžeme pro nízkoemisní výrobu elektřiny rozvíjet řadu technologií.** Některé jsou dostupné a cenově výhodné už teď, třeba solární a větrné elektrárny (a z určitého pohledu i konvenční jaderné zdroje). Další, jako například vodíkové technologie, malé modulární reaktory, příp. i CCS mohou k větší komerční zralosti dospět už v průběhu této dekády.
+**V České republice můžeme pro nízkoemisní výrobu elektřiny rozvíjet řadu technologií.** Některé jsou dostupné a cenově výhodné už teď, třeba solární a větrné elektrárny (a z určitého pohledu i konvenční jaderné zdroje). Další, například vodíkové technologie, malé modulární reaktory, příp. i CCS, mohou k větší komerční zralosti dospět už v průběhu této dekády.
 
-Nicméně je třeba dodat, že s každou z těchto hlavních technologií je spojeno nějaké podstatné omezení. Většina výroby ze slunce je koncentrována do relativně málo hodin během teplejší poloviny roku. Větrná energetika zase má v Česku omezený potenciál na to, aby dokázala spolehlivě pokrýt chladnější část roku. Jaderné zdroje narážejí na velmi dlouhou dobu výstavby a vysoké investiční náklady, tedy i velké investiční riziko. Proto není úplně samozřejmé, že Česko skutečně dojde k levnému a stabilnímu energetickému mixu. Z toho důvodu potřebujeme možné scénáře posuzovat komplexně a na další rozvoj elektroenergetiky v ČR mít vypracovaný dlouhodobý plán.
+Nicméně je třeba dodat, že s každou z těchto hlavních technologií je spojeno nějaké podstatné omezení. Většina výroby ze slunce je koncentrována do relativně málo hodin během teplejší poloviny roku. Větrná energetika zase má v Česku omezený potenciál na to, aby dokázala spolehlivě pokrýt spotřebu v chladnější části roku. Jaderné zdroje narážejí na velmi dlouhou dobu výstavby a vysoké investiční náklady, tedy i velké investiční riziko. Proto není úplně samozřejmé, že Česko skutečně dojde k levnému a stabilnímu energetickému mixu. O to víc potřebujeme možné scénáře posuzovat komplexně a **na další rozvoj elektroenergetiky v ČR mít vypracovaný dlouhodobý plán**.
 
 ## Poznámky a zdroje
 
