@@ -41,7 +41,7 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
     source-text="Fakta o klimatu"
 %}
 
-**I v českém prostředí je možné vyrobit ze slunce několikanásobek celkové roční spotřeby elektřiny.** Potenciál pro tuto výrobu na nejvhodnějších plochách (střechy, fasády, bývalé povrchové doly, brownfieldy apod.) je [významný](/infografiky/potencial-solarni-energie-cr-strechy), ale omezený. Prakticky neomezený potenciál má zemědělská krajina. Solární panely na polích sice vzbuzují odpor obyvatel, je ale třeba si uvědomit, že **hektar solárních panelů dokáže vyrobit zhruba 30x více energie než hektar řepky pěstované na bionaftu.** Za tímto účelem přitom u nás řepku pěstujeme asi na [1 300 km2](https://eagri.cz/public/web/file/682857/SVZ_Olejniny_12_2020.pdf), což je plocha, která by na pokrytí naší současné spotřeby elektřiny stačila. Navíc dnes již existují i kompromisní řešení, například tzv. agrovoltaika, kdy se půda využívá dvojím způsobem – k pěstování zemědělských plodin, které lépe rostou ve stínu než na přímém slunci a daří se jim pod vysoko umístěnými, řídce osazenými solárními panely. V Česku je ale tento slibný přístup[^OZE-agrivoltaika-zdroje] zatím [v počátcích](https://www.agromanual.cz/cz/clanky/management-a-legislativa/management/agrivoltaika-v-podminkach-ceske-republiky).
+**I v českém prostředí je možné vyrobit ze slunce několikanásobek celkové roční spotřeby elektřiny.** Potenciál pro tuto výrobu na nejvhodnějších plochách (střechy, fasády, bývalé povrchové doly, brownfieldy apod.) je [významný](/infografiky/potencial-solarni-energie-cr-strechy), ale omezený. Prakticky neomezený potenciál má zemědělská krajina. Solární panely na polích sice vzbuzují odpor obyvatel, je ale třeba si uvědomit, že **hektar solárních panelů dokáže vyrobit zhruba 30x více energie než hektar řepky pěstované na bionaftu.** Za tímto účelem přitom u nás řepku pěstujeme asi na [1 300 km2](https://eagri.cz/public/web/file/682857/SVZ_Olejniny_12_2020.pdf), což je plocha, která by na pokrytí naší současné spotřeby elektřiny stačila. Navíc dnes již existují i kompromisní řešení, například tzv. agrivoltaika, kdy se půda využívá dvojím způsobem – k pěstování zemědělských plodin, které lépe rostou ve stínu než na přímém slunci a daří se jim pod vysoko umístěnými, řídce osazenými solárními panely. V Česku je ale tento slibný přístup[^OZE-agrivoltaika-zdroje] zatím [v počátcích](https://www.agromanual.cz/cz/clanky/management-a-legislativa/management/agrivoltaika-v-podminkach-ceske-republiky).
 
 ### Vítr
 {% include figure.html
@@ -99,7 +99,7 @@ Vzhledem k těmto vlastnostem jaderných elektráren a rychlosti rozvoji obnovit
 
 ## Doplňkové flexibilní zdroje
 
-V této sekci postupně probereme další technologie, které těžko mohou plnit stěžejní roli v budoucím mixu, ale mohou plnit roli doplňkových zdrojů, jejichž výkon můžeme podle potřeby ovládat. Takové flexibilní zdroje jsou pro fungování celé soustavy naprosto klíčové, protože mohou dodávat elektřinu, když nesvítí nebo nefouká (a nebo když je některý jaderný blok v nečekané odstávce). Zaměřujeme se na dnešní hlavní technologie, je samozřejmě možné, že se v praxi prosadí nějaká úplně jiná technologie.
+Kromě již zmíněných zdrojů lze k výrobě elektřiny využít i další technologie. Ty mohou v budoucím nízkoemisním mixu jen těžko hrát stěžejní úlohu, mohou nám ale posloužit jako zdroje doplňkové, jejichž výkon můžeme regulovat dle potřeby. Pro fungování celé soustavy jsou tyto flexibilní zdroje naprosto klíčové, protože mohou dodávat elektřinu, když právě nesvítí či nefouká (a nebo je některý z jaderných bloků v nečekané odstávce). V dalším textu se zaměřujeme na dnešní hlavní technologie, i když je samozřejmě možné, že se později v praxi prosadí něco úplně jiného.
 
 _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:.todo}
 
@@ -110,14 +110,14 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
     source-text="Fakta o klimatu"
 %}
 
-**Potenciál vodních elektráren v Česku je malý a prakticky vyčerpaný.**[^pocencial-hydro] V dnešní Evropě je navíc s ohledem na ochranu krajiny velmi těžké prosadit stavbu nové velké přehrady. Můžeme sice dále rozvíjet síť malých vodních elektráren, ty ale vyrobí malé množství elektřiny, navíc s nízkou flexibilitou.
+**Potenciál vodních elektráren v Česku je malý a využíváme jej téměř naplno.**[^pocencial-hydro] S ohledem na ochranu krajiny je navíc v dnešní Evropě velmi těžké prosadit stavbu nové velké přehrady. Můžeme tedy v ČR dál rozvíjet síť malých vodních elektráren, ty ale elektřiny vyrobí jen málo a z hlediska budoucí spotřeby nejsou příliš významné.
 
-**Vodní elektrárny mají určitou flexibilitu**, např. vyšší výrobou ráno a večer doplňují výrobu ze slunce. Množství vody za rok je ale omezené a přehrady musí vždy alespoň nějakou vodu pouštět. Zhruba 40 % výroby je tak neflexibilní (v posledních letech je v Česku minimální výkon hydra mezi 70–100 MW, průměrný výkon za celý rok pak mezi 200 a 300 MW).
+**Vodní elektrárny mají určitou flexibilitu**, např. vyšší výrobou ráno a večer doplňují výrobu ze slunce. Množství vody za rok je však omezené a přehrady musí vždy alespoň nějakou vodu pouštět. Zhruba 40 % výroby je tak neflexibilní (v posledních letech se v ČR minimální výkon hydra pohybuje mezi 70–100 MW, průměrný výkon za celý rok pak mezi 200 a 300 MW).
 
 ### Biomasa
 {% include figure.html
     name="biomass.png"
-    alt="Přehled vlastností zdrojů na biomasu"
+    alt="Přehled vlastností biomasy jako zdroje"
     source-text="Fakta o klimatu"
 %}
 
@@ -127,32 +127,32 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
     label="Kontext: Jak se vyrábí energie z biomasy?"
     content="
 **Biomasa se dá využívat různými způsoby.** Ve výrobě elektřiny to je hlavně:
-1. **Přímé spalováním rostlinné hmoty** v elektrárnách a teplárnách podobných uhelným.
-2. **Výroba bioplynu** anaerobní fermentací. Z bioplynu lze v plynovém spalovacím motoru vyrábět elektřinu a teplo.
+1. **Přímé spalování rostlinné hmoty** v elektrárnách a teplárnách, které se podobají těm uhelným.
+2. **Výroba bioplynu** anaerobní fermentací (bez přístupu vzduchu). V plynovém spalovacím motoru se dá z bioplynu vyrábět elektřina a teplo.
 3. **Výroba biometanu** pročištěním bioplynu. Biometan lze vtlačit do plynárenské sítě a dále spalovat např. v paroplynových elektrárnách.
 
 Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábí **kapalná biopaliva** (u nás typicky bionafta z řepky<sup>*</sup>).
 
 {:.longread-small}
-<sup>*</sup> Dnes se biopaliva používají docela hloupě – přimíchávají se plošně do nafty. Nejde ovšem vyrobit dost biopaliv, abychom takto zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
+<sup>*</sup> Dnes se biopaliva používají velmi neefektivně – přimíchávají se plošně do nafty. Není ovšem možné vyrobit dost biopaliv na to, abychom tím zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou tato paliva sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
 "
 %}
 
-**Pouhé využití odpadů a zbytků je podstatný zdroj biomasy**: odpadní vody, organická složka komunálního odpadu, hnůj, zbytky ze sklizně, nebo odřezky ze zpracování dřeva. **Potenciál odpadních a zbytkových surovin je ale omezený.** Navíc mnohé z nich mají i další uplatnění: jako krmivo pro dobytek, pro výrobu tepla, jako organické hnojivo, jako masa uhlíku, který se může přirozeně <glossary id='sekvestrace'>uložit v půdě</glossary>.
+**Využití odpadů a zbytků** je podstatným zdrojem biomasy – využít se dají odpadní vody, organická složka komunálního odpadu, hnůj, zbytky ze sklizně nebo odřezky ze zpracování dřeva (štěpka). **Potenciál odpadních a zbytkových surovin k výrobě elektřiny je ale omezený.** Mnohé z nich totiž mají i další uplatnění: využívají se jako krmivo pro dobytek, k výrobě tepla, jako organické hnojivo či jako masa uhlíku, který je možné přirozeně <glossary id='sekvestrace'>uložit v půdě</glossary>.
 
-**Cílené pěstování energetických plodin je další zdroj biomasy**: od kukuřice přes řepku až po ozdobnici obrovskou (miscanthus) a stromy. **Potenciál cíleně pěstované biomasy je ale také omezený.** Má to dvě příčiny:
-- **Energetické plodiny jsou oproti jiným zdrojů energie velmi málo efektivní.** Na jednom hektaru zemědělské půdy můžeme za rok vypěstovat biomasu na výrobu 20–30 MWh elektřiny[^vynos-biomasa], tedy veškerá zemědělská půda ČR (přes 4 mil. hektarů) by dodala 85–125 TWh ročně.
+**Cílené pěstování energetických plodin** je dalším zdrojem biomasy – mezi ně patří například kukuřice, řepka, ozdobnice obrovská (miscanthus) nebo stromy. **Potenciál cíleně pěstované biomasy je ale také omezený.** Má to dvě příčiny:
+- **Energetické plodiny jsou oproti jiným zdrojů energie velmi málo efektivní.** Na jednom hektaru zemědělské půdy je možné za rok vypěstovat biomasu na výrobu 20–30 MWh elektřiny[^vynos-biomasa], tedy veškerá zemědělská půda ČR (přes 4 mil. hektarů) by dodala 85–125 TWh ročně.
 
-- **Energetické plodiny soutěží o prostor s produkcí potravin a s divokou přírodou**, využití veškeré zemědělské půdy v ČR na biomasu je nemyslitelné. I celosvětově musíme být obezřetní, na nízkých cenách potravin závisí živobytí lidí v chudých zemích.
+- **Energetické plodiny soutěží o prostor s plodinami zemědělskými a také s přírodou**, využití veškeré zemědělské půdy v ČR na biomasu je samozřejmě nemyslitelné. I celosvětově musíme být obezřetní, na nízkých cenách potravin závisí živobytí lidí v chudých zemích.
 
-**Biomasa v energetice může mít vysoké nepřímé emise.** Energetické využití biomasy má z hlediska klimatu smysl jen v uměřeném okolí jejího původu nebo při použití nízkoemisní dopravy. Tak jako tak potřebujeme, aby energie získaná z biomasy výrazně převýšila energii vloženou do jejího pěstování, sklizně a transportu.
+**Biomasa v energetice může mít vysoké nepřímé emise.** Z hlediska klimatu dává tento zdroj smysl pouze při lokálním využití nebo při transportu nízkoemisní dopravou. Potřebujeme, aby energie získaná z biomasy výrazně převýšila energii vloženou do pěstování, sklizně a přepravy.
 
-Přes všechny tyto výhrady **biomasa může hrát důležitou roli ve vyrovnávání výkyvů ve výrobě ze slunce a větru** díky jejímu snadnému skladování.
+Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát **důležitou roli ve vyrovnávání výkyvů ve výrobě ze slunce a větru**.
 
 ### Uhlí nebo zemní plyn s CCS
 {% include figure.html
     name="ccs.png"
-    alt="Přehled vlastností zdrojů s CCS"
+    alt="Přehled vlastností zdrojů v kombinaci s CCS"
     source-text="Fakta o klimatu"
 %}
 
@@ -161,18 +161,18 @@ Přes všechny tyto výhrady **biomasa může hrát důležitou roli ve vyrovná
     class="contrast-figure"
     label="Kontext: Jak funguje CCS?"
     content="
-**CCS označuje škálu postupů na zachytávání odpadního oxidu uhličitého a jeho trvalé uložení do podzemního úložiště.**<sup>*</sup> K ukládání se používají geologické útvary jako _solné vodonosné vrstvy_ nebo vytěžená naleziště ropy nebo zemního plynu (kde CO<sub>2</sub> v rámci techniky [_enhanced oil recovery_](https://en.wikipedia.org/wiki/Enhanced_oil_recovery) umožňuje další těžbu).
+**CCS je souhrnný název pro různé postupy na zachytávání odpadního oxidu uhličitého a jeho trvalé uložení do podzemního úložiště.**<sup>*</sup> K ukládání se využívají jednak geologické útvary jako _solné vodonosné vrstvy_ a jednak vytěžená naleziště ropy a zemního plynu (kde CO<sub>2</sub> v rámci techniky [_enhanced oil recovery_](https://en.wikipedia.org/wiki/Enhanced_oil_recovery) umožňuje další těžbu).
 
-**CCS může mít v budoucnu významná využití mimo elektroenergetiku**:
-- Pro **dekarbonizaci průmyslových procesů jako výroba cementu, železa, oceli** atd. (u nich se totiž oxid uhličitý uvolňuje jinou reakcí než hořením fosilních paliv)
-- Jako **technický nástroj k dosažení záporných emisí <glossary id='sekvestrace'>sekvestrací uhlíku</glossary>**, buď nasazený na elektrárnu či teplárnu na biomasu (_bioenergy with CCS_, _BECCS_) nebo ve formě zařízení na zachytávání uhlíku přímo z atmosféry (_direct air capture_, _DAC_).
+**CCS může mít v budoucnu významná využití i mimo elektroenergetiku**:
+- Při **dekarbonizaci průmyslových procesů jako výroba cementu, železa, oceli** atd. (při této výrobě se totiž CO<sub>2</sub> uvolňuje jinou reakcí než hořením fosilních paliv).
+- Jako **technický nástroj k dosažení záporných emisí <glossary id='sekvestrace'>sekvestrací uhlíku</glossary>**, nasazený na elektrárnu či teplárnu na biomasu (_bioenergy with CCS_, _BECCS_) nebo jako zařízení na zachytávání uhlíku přímo z atmosféry (_direct air capture_, _DAC_).
 
 {:.longread-small}
-<sup>*</sup> Místo trvalého ukládání uhlíku se také uvažuje o jeho využití v průmyslu (_carbon capture and utilization_, _CCU_). Nevýhodou tohoto postupu je, že se takový uhlík typicky časem znovu vypustí do atmosféry. To platí obzvlášť při využití uhlíku pro výrobu syntetických paliv.
+<sup>*</sup> Místo trvalého ukládání uhlíku se uvažuje i o jeho využití v průmyslu (_carbon capture and utilization_, _CCU_). Nevýhodou tohoto postupu je, že je takový uhlík obvykle časem znovu vypuštěn do atmosféry. To platí zejména při využití uhlíku k výrobě syntetických paliv.
 "
 %}
 
-**CCS je do velké míry nerozvinutá technologie**: na celém světě momentálně provozuje CCS jen [jedna elektrárna](https://en.wikipedia.org/wiki/Boundary_Dam_Power_Station) v Kanadě (a [řada dalších zařízení](https://www.sciencedirect.com/science/article/pii/S2590332221005418) mimo elektroenergetiku, po většinou ve zpracování zemního plynu). Většina CCS projektů celosvětově ohlášených v minulé dekádě byla zrušena, tedy kolem úspěšného rozvoje této technologie a realizace nově ohlášených projektů panuje značná nejistota. **CCS závisí na infrastruktuře pro trvalé ukládání**, která zatím není ve střední Evropě k dispozici a vyžaduje nový systém potrubí transportující CO<sub>2</sub> na místa ukládání. Taková infrastruktura se v současnosti [rozvíjí např. v Norsku](https://www.iea.org/policies/12675-ccs-project-longship).
+**CCS je zatím do velké míry nerozvinutá technologie**: na celém světě je dnes v provozu pouze [jedna elektrárna](https://en.wikipedia.org/wiki/Boundary_Dam_Power_Station) v Kanadě (a potom [další zařízení](https://www.sciencedirect.com/science/article/pii/S2590332221005418) mimo elektroenergetiku, obvykle využívaných při zpracování zemního plynu). Většina CCS projektů ohlášených ve světě v minulé dekádě byla zrušena, kolem úspěšného rozvoje této technologie a realizace nových projektů tedy panuje značná nejistota. Kromě toho **CCS závisí na infrastruktuře pro trvalé ukládání**, která zatím není ve střední Evropě k dispozici a vyžaduje nový systém potrubí transportující CO<sub>2</sub> do úložiště. V současnosti takovouto infrastrukturu rozvíjí [např. Norsko](https://www.iea.org/policies/12675-ccs-project-longship).
 
 **CCS není zcela bezemisní.** CCS zachytává pouze zhruba 85–95 % přímých emisí. Navíc nezachytí nepřímé emise při těžbě a přepravě fosilních paliv, takže např. plynové turbíny s CCS nejsou zdaleka klimaticky neutrální. CCS navíc vyžaduje další rozvoj fosilní těžby: je těžké zaručit, že se významná část paliv z takových projektů skutečně spálí s použitím CCS. **CCS navíc prodlužuje naši závislost na státech, které produkují fosilní paliva.**
 
@@ -230,8 +230,8 @@ Je potřeba dodat, že každá z těchto hlavních technologií má nějaké pod
 
 ## Poznámky a zdroje
 
-[^OZE-potencial]: Solární potenciál mapuje [globalsolaratlas.info](https://globalsolaratlas.info), větrný pak [globalwindatlas.info](https://globalwindatlas.info).
-[^OZE-cena]: Celkové náklady pro slunce a vítr v ČR jsou dnes okolo 50 EUR / MWh. Většina z toho jsou investiční náklady, protože tyto elektrárny nepotřebují žádné palivo ani emisní povolenky. Jen samotné provozní náklady pro hnědé uhlí jsou okolo 100 EUR / MWh, pro zemní plyn klidně přes 300 EUR / MWh. Cenu výroby z uhlí tlačí nahoru emisní povolenky, cenu výroby ze zemního plynu pak (hodně proměnlivá) cena této suroviny.
+[^OZE-potencial]: Světový solární potenciál mapuje [globalsolaratlas.info](https://globalsolaratlas.info), větrný pak [globalwindatlas.info](https://globalwindatlas.info).
+[^OZE-cena]: Celkové náklady spojené s výrobou ze slunce a větru jsou dnes v ČR okolo 50 EUR / MWh. Většinu z toho tvoří náklady investiční, protože tyto elektrárny nepotřebují žádné palivo ani emisní povolenky. U hnědého uhlí jsou jen samotné provozní náklady elektrárny přibližně 100 EUR / MWh, u zemního plynu i přes 300 EUR / MWh. Cenu výroby z uhlí zvyšuje rostoucí cena emisních povolenek, cenu výroby ze zemního plynu pak (hodně proměnlivá) cena této suroviny.
 [^OZE-agrivoltaika-zdroje]: Pro Česko zatím není k agrivoltaice zpracovaná žádná relevantní studie, další vhledy by měl poskytnout probíhající [výzkumný projekt](https://www.isvavai.cz/cep?ss=detail&h=SS05010243). V angličtině je zdrojů mnoho: základní přehled nabízí např. [popularizační video](https://www.youtube.com/watch?v=lgZBlD-TCFE) ze série _Undecided_, pro geograficky podobné Německo zpracoval [studii](https://www.ise.fraunhofer.de/en/publications/studies/agrivoltaics-opportunities-for-agriculture-and-the-energy-transition.html) _Frauenhofer Institut_.
 [^OZE-vyvazeny-mix]: Pro budoucí spotřebu ovšem bude český optimální mix odlišný. Optimální mix totiž závisí na podnebí dané země: povětrnost se často kryje se spotřebou tepla zatímco oslunění s provozem klimatizací. V českých podmínkách by tedy při větší elektrifikaci vytápění bylo vhodné ještě vyšší zastoupení elektřiny z větru, cca v poměru 4:1 nebo 5:1.
 [^jadro-zpozdeni]: Příprava jaderného projektu trvá alespoň 5–10 let, např. u reaktoru Dukovany 5 [plány](https://www.idnes.cz/ekonomika/domaci/cez-dukovany-jaderne-bloky-dostavba-ekologie-jadro-energetika.A191113_174721_ekonomika_rts) v roce 2019 počítaly se zahájením výstavby až v roce 2029. Délka výstavby pak v poslední době často vysoce překračuje 10 let. Např. výstavba finského bloku Olkiluoto 3 [trvala](https://oenergetice.cz/rychle-zpravy/finska-jaderna-elektrarna-olkiluoto-dosahla-kritikality-standardni-provoz-bude-zahajen-nejdrive-cervnu) 17 let (místo odhadovaných 4), u francouzského bloku Flamanville 3 se dnes [odhaduje](https://oenergetice.cz/jaderne-elektrarny/novy-jaderny-blok-flamanville-3-se-kvuli-pandemii-prodrazi-opet-zpozdi) na 16 let (místo původních 6), u britských bloků Hinkley Point C se dnes [odhaduje](https://oenergetice.cz/jaderne-elektrarny/jaderna-elektrarna-hinkley-point-c-hlasi-zpozdeni-1-blok-by-mel-zahajit-vyrobu-pul-roku-pozdeji) na 10 let (místo původních 8, elektrárna je ale zatím v rané fázi výstavby).
