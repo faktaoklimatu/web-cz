@@ -176,18 +176,19 @@ Rozvoj jádra sice snižuje tlak na ostatní pilíře, může ale také během 2
 Pro srovnání může být užitečné ukázat i neúspěšné scénáře, tedy co by znamenal malý rozvoj výroby ze slunce a větru a zpoždění případných jaderných staveb*:
 
 {% assign comment_fail_wind="
-Pokud **nebudeme schopni postavit dost větrných elektráren**, budeme mít méně možností jak pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jaderné elektrárny. To může vést k rostoucí výrobě z fosilních zdrojů.
+Pokud vsadíme na slunce a vítr a **nebudeme schopni postavit dost větrných elektráren**, bude těžké pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jádro.
 
-Využít by se v tomto případě daly jiné nástroje, ty ale vyžadují dlouhodobé plánování a rozvoj: posílení interkonektorů a import větrné energie ze zahraničí, dostatečně levná sezónní akumulace, která umožní větší rozvoj solární energie, další variantou je využívání zemního plynu a zároveň technologie CCS."%}
+To může v nejhorším případě vést i k růstu výroby z fosilních zdrojů.
+"%}
 {% assign comment_fail_nuclear="
-Může dojít k **selhání či zrušení rozpracovaných jaderných projektů** (i to se ve světě v minulosti už stalo). Při úspěšném paralelním rozvoji obnovitelných zdrojů energie (OZE) ani to nemusí vést ke katastrofickým akumulovaným emisím CO<sub>2</sub>. Přesto je v takovém scénáři nutné připravovat půdu pro další výrobní pilíře, abychom na takovou situaci byli schopni v 50. a 60. letech adekvátně reagovat.
+Může dojít k **selhání či zrušení rozpracovaných jaderných projektů** (i to se ve světě v minulosti už stalo).
+
+Ani to nemusí vést ke katastrofickým akumulovaným emisím CO<sub>2</sub>, pokud budeme **paralelně úspěšně rozvíjet výrobu ze slunce a větru**.
 "%}
 {% assign comment_fail_nuclear_vre="
-Kdybychom vsadili pouze na jádro, pravděpodobně nebude mezi politiky ani v byznysu dostatek vůle výrazně v mezičase rozvíjet slunce a vítr.
+**Kdybychom vsadili pouze na jádro**, pravděpodobně nebude mezi politiky ani v byznysu dostatek vůle výrazně v mezičase rozvíjet slunce a vítr.
 
 V případě **výrazného zpoždění jaderných staveb** tak hrozí velké akumulované emise CO<sub>2</sub>.
-
-V praxi by nejspíš do určité míry pomohly přetoky z OZE ze zahraničí.
 "%}
 {% capture caption_comments_fail %}
 {% include columns.html
@@ -205,6 +206,8 @@ V praxi by nejspíš do určité míry pomohly přetoky z OZE ze zahraničí.
     source-text="Fakta o klimatu"
 %}
 
+V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výroby ze slunce a větru ze zahraničí. Bez strategického rozvoje přenosových soustav jsou ale možnosti importu omezené. Stejně tak je důležitá strategická příprava na rozvoj dalších technologií, ať už pro sezónní akumulaci, nebo na snížení dopadů fosilní výroby. To nám umožní na případné problémy a selhání ve vybraném scénáři rychleji reagovat.
+
 {:.longread-small}
 \* Pro jednodušší porovnání ponecháváme i v těchto neúspěšných scénářích stejný vývoj spotřeby. Ve skutečnosti by neúspěchy v dekarbonizaci výroby elektřiny pravděpodobně vedly i k pomalejší elektrifikaci, a tedy i pomalejšímu nárůstu spotřeby elektřiny.
 
@@ -212,6 +215,7 @@ V praxi by nejspíš do určité míry pomohly přetoky z OZE ze zahraničí.
 
 {% include expander-figure.html
     name="failure-scenarios"
+    expanded=true
     class="wide-figure-desktop contrast-figure "
     label-class="large-expander-title"
     label="Kontext: Jak mohou vypadat neúspěšné scénáře?"
