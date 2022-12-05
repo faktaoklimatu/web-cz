@@ -256,16 +256,16 @@ Dalším možným flexibilním výrobním zdrojem jsou **fosilní zdroje s CCS**
     class="longread-small"
     column-class="col-4"
     col1="
-#### 1. Zelený vodík
+#### A. Zelený vodík
 
 Můžeme **posílit roli slunce** a zásadně využívat **sezónní akumulaci do zeleného vodíku**, která je zatím poměrně drahá. To závisí na zlevnění technologií pro výrobu zeleného vodíku, aby se vyplatila provozovat třeba jen 15 % hodin z roku, kdy budou přebytky výroby ze slunce."
     col2="
-#### 2. Import (větrné výroby)
+#### B. Import (větrné výroby)
 **Elektřinu z větru můžeme importovat ze zahraničí, což hlavně dorovnává zimní bilanci.** V tak velké míře to není možné bez posílení přenosové soustavy ze sousedních států. To vyžaduje složité povolování a realizaci liniových staveb.
 "
     col3="
 {:start='3'}
-#### 3. Posílení jádra
+#### C. Posílení jádra
 Tento scénář vyžaduje kromě výrazného rozvoje výroby ze slunce a větru také **velmi ambiciózní** rozvoj jaderné energetiky – 3 nové velké jaderné bloky a několik dalších malých modulárních reaktorů.
 "
 %}
@@ -285,26 +285,24 @@ Je potřeba pamatovat na to, že zde ukazujeme optimistický scénář rozvoje v
 
 ## Kolik to celé bude stát?
 
-Pro jednoduchost se zde zaměříme na **systémové náklady na výrobu elektřiny**. Tedy jaké budou celkové investiční a provozní náklady všech aktérů, kteří dohromady tvoří elektrizační soustavu? Toto číslo lze pouze odhadovat, a to na základě nákladů dostupných referenčních projektů. V tomto textu budeme používat dnešní ceny jednotlivých technologií[^cena-technologii] a nepočítáme s jejich předpokládaným zlevňováním v budoucnu. Jinak řečeno – nabízíme konzervativní odhady budoucích nákladů: _Kolik by to celé stálo, kdyby žádná z rozvíjených technologií zásadně nezlevnila?_
+Pro jednoduchost se zde zaměříme na **systémové náklady na výrobu elektřiny**. Tedy jaké budou celkové investiční a provozní náklady všech aktérů, kteří dohromady tvoří elektrizační soustavu? Toto číslo lze pouze odhadovat, a to na základě nákladů dostupných referenčních projektů.
+
+V tomto textu budeme používat dnešní ceny jednotlivých technologií[^cena-technologii] a nepočítáme s jejich předpokládaným zlevňováním v budoucnu. Jinak řečeno – nabízíme konzervativní odhady budoucích nákladů: _Kolik by to celé stálo, kdyby žádná z rozvíjených technologií zásadně nezlevnila?_
+
+**Z tohoto pohledu by dekarbonizace v Česku přinesla mírné zvýšení systémových nákladů** na výrobu elektřiny. V textu představujeme tři ilustrativní scénáře: záleží na tom, který z nich zvolíme? Malé rozdíly v jejich nákladech vidíme, ale nejistota v odhadech je mnohem významnější než tyto rozdíly.
 
 ### Kolik to stojí dnes?
 
-Podle hrubých odhadů Fakt o klimatu byly **v roce 2018 české systémové náklady na výrobu elektřiny cca 220 miliard korun ročně.** Z toho palivo tvořilo asi 30 miliard, investiční náklady na elektrárny zhruba 90 miliard[^cena-fixni-naklady], fixní provozní náklady elektráren přibližně 40 miliard a zbylých 60 miliard směřovalo na provoz celé sítě, placené pomocí regulované složky ceny elektřiny[^cena-regulovane-elektriny]. Tedy v přepočtu **na 1 kWh čisté spotřeby jsme měli systémové náklady okolo 3,60 Kč/kWh.**
+Aby odhady budoucích nákladů dávaly smyl, musíme je srovnat se současnými náklady. Podle hrubých odhadů Fakt o klimatu byly **v roce 2018 české systémové náklady na výrobu elektřiny cca 180 – 220 miliard korun ročně.** Z toho palivo tvořilo asi 30 miliard, investiční náklady na elektrárny zhruba 50 – 90 miliard[^cena-fixni-naklady], fixní provozní náklady elektráren přibližně 40 miliard a zbylých 60 miliard směřovalo na provoz celé sítě, placené pomocí regulované složky ceny elektřiny[^cena-regulovane-elektriny]. V tomto odhadu nejsou započítány emisní povolenky[^cena-povolenky] ani další daně. Celkově v přepočtu **na 1 kWh čisté spotřeby jsme měli systémové náklady okolo 3,00 – 3,60 Kč/kWh.**
 
-**V současné energetické krizi** se ovšem systémové náklady v letech 2021/2022 zvyšují až ke 285 miliardám ročně (4,40 Kč/kWh). Převážná většina nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu[^cena-zemni-plyn].
+**V současné energetické krizi** se ovšem systémové náklady v letech 2021/2022 zvyšují až ke 285 miliardám ročně (4,40 Kč/kWh). Převážná většina nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu[^cena-zemni-plyn]. Je potřeba dodat, že nárůst průměrné [ceny elektřiny na trhu](/explainery/cena-elektriny-na-trhu) je v těchto letech mnohem výraznější než nárůst _systémových nákladů_. Rozdíl mezi těmito dvěma hodnotami pak tvoří neočekávané zisky (_windfall profits_) výrobců elektřiny a dalších aktérů.
 
 {% include figure.html
-    name="costs-2018.png"
+    name="costs-2018.svg"
     alt="Hrubý odhad současných systémových nákladů na výrobu elektřiny"
     caption="Hrubý odhad současných systémových nákladů na výrobu elektřiny v ČR (2018–2021), bez daní a emisních povolenek."
     source-text="Fakta o klimatu"
 %}
-
-V tomto odhadu **nejsou započítány emisní povolenky** ani další daně. V roce 2018 by k tomu povolenky přidaly dalších zhruba 20 miliard (s cenou okolo 25 EUR za tunu emisí), v roce 2021 asi 65 miliard (okolo 80 EUR za tunu). To dělá 0,30–1,00 Kč/kWh čisté spotřeby. Tyto peníze nicméně do systémových nákladů nezahrnujeme, protože jsou státním příjmem, který jde převážně zpět na investice do dekarbonizace. Na druhou stranu jsou to náklady, které platí zákazníci za elektřinu a které při nízkoemisním mixu v budoucnu odpadnou.
-
-Odhad naopak zřejmě **přeceňuje investiční náklady**, protože většina elektráren byla postavena za minulého režimu za státní peníze a dnes splácejí nanejvýš úvěry za investice do odsíření a další ekologizaci provozů. Kdybychom pro uhelné a jaderné elektrárny uvažovali jen třetinové investiční náklady, klesnou investiční náklady asi o 40 miliard, což je asi 0,60 Kč/kWh čisté spotřeby.
-
-<!-- Tento odhad je založen na současném výrobním mixu a referenčních nákladech jednotlivých technologií. Tedy na potřebných investicích a nákladech na provoz a údržbu (pro daný koeficient využití elektrárny) a na nákladech na palivo a emisní povolenky. Výsledná čísla je proto nutné brát jen jako řádové odhady. Přes svou zjevnou nepřesnost nicméně poskytují užitečné srovnání s budoucími náklady: ukazují, o kolik je budoucí nízkoemisní mix v principu nákladnější než ten dnešní, který je převážně fosilní. -->
 
 ### Kolik může stát nízkoemisní mix v roce 2050?
 
@@ -314,38 +312,48 @@ Podobným postupem jsme odhadli systémové náklady pro naše tři ilustrativn�
 - **Náklady na výraznější posilování přenosové a distribuční soustavy** by byly významné pro scénář založený na velkém podílu slunce a větru, zvlášť pokud bychom importovali hodně elektřiny ze zahraničí. Nad rámec dnes běžných investic to pro Česko mohou být opět desítky miliard korun každý rok.[^cena-rozvoj-site]
 - **Riziko dalších nákladů spojených se stavbou a likvidací jednotlivých zdrojů.** Může jít o prodražení jaderných staveb, nečekaně vysoké náklady na stavbu trvalého úložiště jaderného odpadu nebo nečekaně vysoké náklady na recyklaci komponent obnovitelných zdrojů. Prodražení stavby dvou nových velkých jaderných bloků na dvojnásobek odhadovaných investic (což je v Evropě v posledních dekádách poměrně běžné) by například znamenalo dodatečné každoroční náklady asi 30 miliard ročně.[^cena-prodrazeni-jadra]
 
-**U všech tří scénářů vychází poměrné systémové náklady podobně.** Rozdíly v odhadované ceně zde pochopitelně jsou, ale mnohem významnější než tyto rozdíly je nejistota v každém z odhadů.
+**U všech tří scénářů nám vychází rozumné systémové náklady, v rozsahu 3,50 – 4,20 Kč / KWh.** Tyto náklady jsou sice potenciálně o něco vyšší než v roce 2018, ale neznamená to žádné výrazné zvýšení, které by ohrozilo domácnosti a průmysl. Stejně tak tyto výsledné náklady mohou být nižší, pokud se potřebné technologie podaří v dalších dekádách zlevnit. _TODO: Doladit výpočet a udělat poslední aktualizaci grafů a čísel výše_{:.todo}
 
+Pochopitelně nám také vychází mírné rozdíly nákladů mezi jednotlivými scénáři. Protože každý z těchto odhadů je zatížen určitou nejistotou, je potřeba tyto rozdíly interpretovat opatrně: z hlediska systémových nákladů jsou všechny naše ilustrativní scénáře srovnatelné.
+
+{% capture cost_2050_details %}
 {% capture caption_comments_costs %}
 {% include columns.html
     class="longread-small"
     column-class="col-4"
     col1="
-#### 1. Zelený vodík
+#### A. Zelený vodík
 
 Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení těchto nákladů se ovšem může snadno dostat na úroveň srovnatelnou s ostatními."
     col2="
-#### 2. Import (větrné výroby)
+#### B. Import (větrné výroby)
 
 Tento scénář vychází o něco levnější, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí. Zároveň ale znamená o něco nižší energetickou nezávislost Česka. Přesnější odhady by vyžadovaly robustní studii nákladů spojených s posílením přenosových soustav.
 "
     col3="
 {:start='3'}
-#### 3. Posílení jádra
+#### C. Posílení jádra
 Posílení jádra s sebou nese významné investiční riziko. Pokud by se podařilo udržet investice na podobné úrovni jako u referenčních projektů v minulosti, měl by tento scénář také poměrně nízké náklady. Při významném prodražení stavby nových jaderných bloků by ovšem tento scénář mohl vyjít jako nejdražší.
 "
 %}
 {% endcapture %}
 {% include figure.html
-    class="wide-figure-desktop wide-figure-mobile wide-figure-mobile-caption-above mt-0"
-    name="costs-2050.png"
+    class="wide-figure-mobile-caption-above mt-0"
+    name="costs-2050.svg"
     alt="Současné systémové náklady"
     caption-above=caption_comments_costs
     caption="Hrubý odhad systémových nákladů na výrobu bezemisní elektřiny v Česku v roce 2050, bez daní."
     source-text="Fakta o klimatu"
 %}
+{% endcapture %}
 
-Budoucí systémové náklady vycházejí u každého ze scénářů o něco vyšší než ty současné. Rozdíl ale není velký a je potřeba zopakovat, že tyto odhady nepočítají s dalším zlevňováním technologií pro nízkoemisní výrobu elektřiny, a jsou tedy pravděpodobně nadsazené.
+{% include expander-figure.html
+    name="cost-2050-details"
+    class="wide-figure-desktop wide-figure-mobile contrast-figure "
+    label-class="large-expander-title"
+    label="Podrobnosti: Jaké jsou náklady jednotlivých scénářů?"
+    content=cost_2050_details
+%}
 
 ## Jaká rizika jsou s transformací elektroenergetiky spojena?
 
@@ -404,8 +412,9 @@ Pro připomenutí: těmto strategickým volbám je nadřazeno několik imperativ
 [^pokryti-spotreby]: V případě velkého využívání slunce a větru snadno dochází v určitých momentech k nadvýrobě elektřiny. Proto v grafech nezobrazujeme, kolik zdroj vyrobí elektřiny celkem, ale kolik z ní je přímo použitelné, tedy do jaké míry zdroj přispěje k pokrytí momentální poptávky. Část nadbytků je ovšem možné uložit a využít později, tato elektřina se pak objeví v kategorii flexibilních zdrojů.
 [^aktualni-skala-biomasy]: Pro srovnání: v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy, dalších asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (při [40% účinnosti](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) konverze). Celkově se tedy dnes v Česku primární produkce biomasy na energetické účely pohybuje okolo 60 TWh ročně. K výrobě 30 TWh elektřiny a (řekněme) 30 TWh tepla bychom potřebovali minimálně 100 TWh biomasy, přičemž další biomasa se jistě spotřebuje v domácnostech a průmyslu. V součtu by to tedy bylo alespoň 2x více energetické biomasy než dnes.
 [^cena-technologii]: Pracujeme nejvíce s [odhady od IEA](https://iea.blob.core.windows.net/assets/ae17da3d-e8a5-4163-a3ec-2e6fb0b5677d/Projected-Costs-of-Generating-Electricity-2020.pdf) z roku 2020 a s odhady od poradenské agentury [Lazard](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/). Na základě těchto zdrojů sestavujeme koeficienty pro náš [vlastní výpočet](https://docs.google.com/spreadsheets/d/16UJHRk10fZ9UC6-z8G8HyiUdiJOtRYdD-nsO_KIwTIY/edit?pli=1#gid=1790381195) systémových nákladů.
-[^cena-fixni-naklady]: Toto číslo nejlépe vyjadřuje, _jaké by byly investiční náklady, kdybychom naši momentální výrobní základnu stavěli dnes_, tedy nikoli skutečnou výši splácených úvěrů jednotlivých firem. Výjimku ve výpočtu děláme u solárních a větrných elektráren, u nichž bereme odhad investičních nákladů okolo roku 2010 (kdy byla většina z nich postavena), a u jaderné elektrárny Dukovany, u které odhadujeme pouze investiční náklady spojené prodloužením jejího provozu do poloviny 40. let.
+[^cena-fixni-naklady]: Číslo 90 miliard korun nejlépe vyjadřuje, _jaké by byly investiční náklady, kdybychom naši momentální výrobní základnu stavěli dnes_, tedy nikoli skutečnou výši splácených úvěrů jednotlivých firem. Výjimku ve výpočtu děláme u solárních a větrných elektráren, u nichž bereme odhad investičních nákladů okolo roku 2010 (kdy byla většina z nich postavena), a u jaderné elektrárny Dukovany, u které odhadujeme pouze investiční náklady spojené prodloužením jejího provozu do poloviny 40. let. Kdybychom pro uhelné elektrárny a elektrárnu Temelín uvažovali jen třetinové investiční náklady, klesnou celkové investiční náklady asi o 40 miliard.
 [^cena-regulovane-elektriny]: Obsahuje náklady na distribuční a přenosové soustavy (provoz, investice, ztráty v síti; řádově 50 mld. korun ročně) a náklady na udržování stability v síti (řádově do 10 mld. ročně).
+[^cena-povolenky]: V roce 2018 by k tomu povolenky přidaly dalších zhruba 20 miliard (s cenou okolo 25 EUR za tunu emisí), v roce 2021 asi 65 miliard (okolo 80 EUR za tunu). To dělá 0,30–1,00 Kč/kWh čisté spotřeby. Tyto peníze nicméně do systémových nákladů nezahrnujeme, protože jsou státním příjmem, který jde převážně zpět na investice do dekarbonizace. Na druhou stranu jsou to náklady, které platí zákazníci za elektřinu a které při nízkoemisním mixu v budoucnu odpadnou.
 [^cena-zemni-plyn]: V tomto výpočtu bereme výrobní mix z roku 2021 a předpokládáme průměrnou cenu zemního plynu na úrovni 150 EUR/MWh.
 [^cena-ilustrativniho-mixu]: Zde počítáme náklady na 1 kWh elektřiny konzervativněji: 1,20 Kč slunce, 1,30 Kč vítr, 3,50 Kč jádro, 4 Kč biomasa, 5 Kč krátkodobé ukládání a stejně tak plyn s CCS. Ceny pro slunce a vítr jsou oproti celosvětovému indexu upraveny – úměrně nižším výnosům v ČR. Cena pro biomasu zhruba odpovídá dřívějším výkupním cenám pro bioplyn a čistou biomasu v rámci podpory OZE. Cena pro krátkodobé ukládání počítá s odhadem [LCOS](https://www.lazard.com/media/451882/lazards-levelized-cost-of-storage-version-70-vf.pdf) 200 EUR / MWh, cena plynu s CCS vychází z [odhadu IEA](https://www.iea.org/reports/projected-costs-of-generating-electricity-2020), odhad ale zvyšujeme kvůli velké nejistotě v ceně technologie i paliva.
 [^cena-paroplynova-zaloha]: Pro přibližnou představu: 5 GW paroplynových záloh s CCS by vyžadovalo _overnight costs_ řádově 300 mld. korun, při úrokové míře 8 % a 30 letech provozu to vytváří náklady asi 25 mld. korun ročně.
