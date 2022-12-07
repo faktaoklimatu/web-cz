@@ -417,18 +417,21 @@ Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu 
     name="risk-map.svg"
     name-mobile="risk-map-mob.svg"
     alt="Přehled různých rizik transformace a netransformace energetiky"
-    caption="Přehled různých rizik transformace a netransformace energetiky"
+    caption="Přehled různých rizik transformace a netransformace energetiky (a jejich konkrétních příkladů)"
     source-text="Fakta o klimatu"
 %}
 
-Zjednodušeně řečeno se může stát, že budeme transformovat podle scénáře, který se ukáže jako chybný, nebo k prosazení transformace zvolíme špatné regulace nebo se nám prostě dobrý plán podpořený dobrými regulacemi nepodaří dost rychle a levně zrealizovat.
+Zjednodušeně řečeno se může stát, že
+* budeme **transformovat podle scénáře, který se ukáže jako chybný** (např. Evropa příliš spoléhala na zemní plyn, což se ukázalo jako bezpečnostní riziko), nebo
+* **k prosazení transformace zvolíme špatné regulace** (např. český nepovedený solární boom okolo roku 2010) nebo
+* se nám prostě solidní plán podpořený funkčními regulacemi **nepodaří dost rychle a levně zrealizovat** (např. když rozvoj větru nebo rozvoj přenosové soustavy výrazně zbrzdí povolovací procesy).
 
 Ke snížení rizik spojených s transformací můžeme využít několik základních nástrojů:
 - **Diverzifikovaný** rozvoj nízkoemisních výrobních kapacit (a diverzifikace investic do výzkumu a vývoje).
 - **Široká škála možných pokračování** transformace. Potřebujeme zajistit, že na probíhající transformaci ve 20. letech bude moci navázat celá škála technicky smysluplných strategií ve 30. a 40. letech. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory).
 - **Dostatečná rezerva** ve výrobní kapacitě i v primárních energetických zdrojích. Taková rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
-**Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
+**Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně mírně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
 
 ## Co z toho plyne?
 
