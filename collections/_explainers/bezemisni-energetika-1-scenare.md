@@ -29,7 +29,7 @@ perex: |
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
-_Tento text nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
+_Tento text nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, obzvláště pak zjednodušujeme provázanost elektroenergetiky s dalšími sektory (jako teplárenství, doprava, průmysl)._
 {: .longread-small}
 
 ## Jaké jsou klíčové otázky budoucí energetiky?
