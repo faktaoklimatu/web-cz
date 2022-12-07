@@ -27,6 +27,7 @@ perex: |
 " %}
 
 _V tomto textu najdete přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím dílu](/explainery/bezemisni-energetika-1-scenare) série._
+{: .longread-small}
 
 _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na cca 100 TWh za rok._{:.todo}
 
@@ -61,7 +62,7 @@ V tomto textu se zabýváme především sezónní proměnlivostí – solární
 {% include figure.html
     name="solar-wind-seasonality.png"
     alt="Slunce a vítr se mohou vhodně doplňovat."
-    caption="Převaha větru by odpovídala spotřebě, převaha slunce bude vyžadovat sezónní akumulaci. Grafy ukazují hypotetickou výrobu ze slunce a větru na úrovni 60 TWh za rok, v poměru 3:1 a 1:3. Ukazujeme průměrnou čistou spotřebu (za roky 2015–2020) a extrapolaci výroby založenou na průměrných koeficientech využití slunce a větru v ČR (opět za roky 2015–2020)."
+    caption="Převaha větru by odpovídala spotřebě, převaha slunce bude vyžadovat sezónní akumulaci. Grafy ukazují hypotetickou výrobu ze slunce a větru na úrovni 60 TWh za rok, v poměru 3:1 a 1:3. Ukazujeme průměrnou čistou spotřebu (za roky 2015–2020) a rozložení výroby ze slunce a větru v ČR do jednotlivých měsíců (opět podle průměrů za roky 2015–2020)."
     source-text="Fakta o klimatu"
 %}
 
