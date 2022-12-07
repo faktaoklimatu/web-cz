@@ -248,7 +248,7 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
 
 {% capture seasonal_factors %}
 {% include figure.html
-    name="factors-solar-wind.png"
+    name="factors-solar-wind.svg"
     alt="Průměrné koeficienty využití solárních a větrných zdrojů během roku"
     caption="Průměrné koeficienty využití solárních a větrných zdrojů během roku. Více v přehledech potenciálu [slunce](/infografiky/potencial-solarni-energie-cr-strechy) a [větru](/infografiky/potencial-vetrne-energie-cr) v ČR."
     source-text="Fakta o klimatu"
