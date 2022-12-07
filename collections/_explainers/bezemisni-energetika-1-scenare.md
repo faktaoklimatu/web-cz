@@ -432,19 +432,41 @@ Ke snížení rizik spojených s transformací můžeme využít několik zákla
 
 ## Co z toho plyne?
 
-_TODO: Přepsat víc do bodů, neříkat nic moc nového_{:.todo}
+Pro přechod Česka na bezemisní energetiku z toho plyne několik základních závěrů:
 
-**Krátkodobá strategie pro Česko a Evropu je poměrně jasná: potřebujeme maximalizovat instalaci solárních a větrných elektráren a současně podporovat rozvoj široké škály řešení pro vyrovnávání jejich podstatně proměnlivé výroby**, abychom mohli postupně snižovat výrobu elektřiny z fosilních zdrojů. Pro zimní půlku roku je **obzvláště důležité rozvíjet větrnou energetiku**. Český potenciál pro tyto technologie je omezený (v případě větru), ale [velmi podstatný](/infografiky/potencial-vetrne-energie-cr): jeho využití ve velké míře závisí na jasné strategické podpoře ze strany státu. Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mnoha návazných scénářů transformace. Navíc není žádná jiná cesta, která by mohla tak rychle přispět ke snížení emisí.
+Potřebujeme maximalizovat instalaci solárních a obzvláště pak větrných elektráren
+{: .callout .contrast-figure}
 
-**Jádro je další legitimní pilíř bezemisní energetiky pro Evropu**, který ale nepomůže v rychlé dekarbonizaci. Současným mixem může zahýbat až za 15—20 let, vzhledem ke stárnoucím zdrojům ovšem bude pro Česko pro další desetiletí velká výzva i jen stávající výrobu z jádra udržet. Stavba konvenčních jaderných bloků navíc nese obrovské investiční riziko, které energetické firmy nejsou schopné nést samy. Pokud je tedy chceme stavět, musíme se smířit s tím, že budou (stejně jako slunce a vítr) vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
+Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mnoha návazných scénářů transformace. Navíc není žádná jiná cesta, která by mohla tak rychle přispět ke snížení emisí. **Rozvoj větrné energetiky je obzvláště důležitý pro zimní půlku roku.** Potenciál větru je v Česku omezený, ale pořád [velmi podstatný](/infografiky/potencial-vetrne-energie-cr): jeho využití ve velké míře závisí na jasné strategické podpoře ze strany státu.
 
-**Porovnání celkových nákladů těchto dvou pilířů je zatíženo velkou mírou nejistoty.** Zkušenosti z poslední dekády nás vedou k opatrnému optimismu ohledně budoucích celkových nákladů energetiky založené na slunci a větru. Přesto je možné, že tyto náklady budou vyšší než celkové náklady na řešení založené na jádru a nebo že prostě nebudeme schopni výrobu ze slunce a větru dostatečně zvýšit. V rámci diverzifikace rizika tedy může být racionální strategií pro Česko **současně urychleně rozvíjet OZE a také budovat jeden či více nových jaderných bloků, příp. malých modulárních reaktorů**.
+Potřebujeme posilovat energetickou spolupráci napříč Evropou a urychlit další propojování a posilování přenosových soustav
+{: .callout .contrast-figure}
 
-Vedle rozvoje obou hlavních pilířů bloků je dalším klíčovým nástrojem pro snížení rizik **užší energetická spolupráce napříč Evropou**. To znamená více sladit národní energetické koncepce a urychleně pokračovat v dalším strategickém propojování přenosových soustav. **Česko touto cestou může získat přístup k výrobě z obnovitelných zdrojů nad limity toho, co jsme schopni postavit na našem území.** Konkrétně k větrným farmám na moři, k jižnímu slunci v zimě, příp. k elektřině ze zeleného vodíku.
+To znamená více sladit národní energetické koncepce, aby dohromady tvořily funkční evropský mix. Podle toho můžeme pokračovat ve strategickém propojování přenosových soustav. **Česko touto cestou může získat přístup k výrobě z obnovitelných zdrojů nad limity toho, co jsme schopni postavit na našem území.** Konkrétně k větrným farmám na moři, k jižnímu slunci v zimě, příp. k elektřině ze zeleného vodíku. Stejně tak **lépe propojená síť umožní lépe vstřebávat výkyvy ve výrobě ze slunce a větru**. Užší energetická spolupráce v Evropě je klíčový nástroj pro snížení nákladů i rizik transformace energetiky v Česku.
 
-**Kromě toho potřebujeme další významné flexibilní zdroje bezemisní elektřiny**, obzvláště pro zimní půlku roku. Role flexibilních zdrojů bude ještě významnější, pokud nebudeme rozvíjet jadernou energetiku a nebo neposílíme přístup k přebytkům obnovitelné elektřiny ze zahraničí. Mnohé z flexibilních zdrojů vyžadují dlouhodobé plánování, podporu a přípravu: výroba nebo import **zeleného vodíku** vyžaduje rozvoj infrastruktury, **fosilní zdroje s CCS** vyžadují přípravu a vybudování úložišť uhlíku, **velké množství biomasy** vyžaduje proměnu nakládání s odpady i proměnu hospodaření v krajině. Dostatečný rozvoj těchto nástrojů tak závisí na dlouhodobé strategické podpoře státu.
+Potřebujeme podporovat rozvoj široké škály řešení pro vyrovnávání podstatně proměnlivé výroby ze slunce a větru
+{: .callout .contrast-figure}
 
-Pro připomenutí: těmto strategickým volbám je nadřazeno několik imperativů mimo rámec tohoto textu: podporovat pokračující **energetické úspory** a lépe využívat domácí **druhotné zdroje energie** (jako odpadní teplo). Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme a energetické úspory pomáhají krotit nárůst spotřeby.
+To nám umožní dále snižovat výrobu elektřiny z fosilních zdrojů a dokonce postupně snižovat jejich instalovaný výkon. Mnohé z flexibilních zdrojů vyžadují dlouhodobé plánování, podporu a přípravu: výroba nebo import **zeleného vodíku** vyžaduje rozvoj infrastruktury, **fosilní zdroje s CCS** vyžadují přípravu a vybudování úložišť uhlíku, **velké množství biomasy** vyžaduje proměnu nakládání s odpady i proměnu hospodaření v krajině. Dostatečný rozvoj těchto nástrojů tak závisí na dlouhodobé strategické podpoře státu.
+
+Potřebujeme rozumnou strategii ohledně budoucnosti jaderné energetiky
+{: .callout .contrast-figure}
+
+Jinými slovy, potřebujeme politické rozhodnutí, jak výraznou roli má hrát jádro v naší energetice za 30 let. Rozvoj jádra může odchod od fosilních paliv v Česku o něco zjednodušit. Možnosti rozvoje jádra jsou ale omezené: nepomůže nám v rychlé dekarbonizaci a do roku 2050 nemůže zdaleka pokrýt celou naši spotřebu. Vzhledem ke stárnoucím zdrojům bude pro Česko velká výzva i jen stávající výrobu z jádra udržet. **Jediná realistická cesta rozvoje jaderné energetiky je souběžně s výrazným rozvojem energetiky založené na slunci a větru.** Také samozřejmě můžeme od rozvoje jaderné energetiky upustit a spolehnout se na ostatní zdroje elektřiny a import, příp. čekat na vývoj ohledně malých modulárních reaktorů.
+
+Stavba konvenčních jaderných bloků nese obrovské investiční riziko, které energetické firmy nejsou schopné nést samy. Pokud je tedy chceme stavět, bude to vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
+
+Porovnání nákladů a rizik jednotlivých scénářů je zatížené nejistotou. Je rozumné bezemisní energetiku rozvíjet na více frontách
+{: .callout .contrast-figure}
+
+Jak se ukazujeme našimi ilustrativními scénáři: k bezemisní energetice vede více cest. Protože každá z nich je spojená s nemalými riziky, je rozumné (alespoň v následující dekádě) usilovat o ambiciózní rozvoj více druhů bezemisních zdrojů elektřiny a tím diverzifikovat rizika. Pokud budoucí vývoj ukáže, že některá z nabízených cest je výrazně jistější a výhodnější, můžeme další rozvoj více zaměřit tímto směrem.
+
+Pro připomenutí: těmto strategickým volbám je nadřazený imperativ mimo rámec tohoto textu:
+
+Potřebujeme podporovat pokračující **energetické úspory** a lépe využívat domácí **druhotné zdroje energie** (jako odpadní teplo)
+{: .callout .contrast-figure}
+
+Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme a energetické úspory pomáhají krotit nárůst spotřeby. Nejde jen o úsporu nákladů, více zdrojů bezemisní elektřiny má v Česku omezený potenciál rozvoje, pokrýt nižší spotřebu tedy je principiálně snazší.
 
 ## Poznámky a zdroje
 
