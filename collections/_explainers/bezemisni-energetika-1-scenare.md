@@ -29,14 +29,15 @@ perex: |
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
-## Jaké jsou klíčové otázky budoucí energetiky?
+_Tento text nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
+{: .longread-small}
 
-_Tento text není odbornou studií o transformaci elektroenergetiky. Nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, o konkrétních omezeních se píše na patřičných místech v textu._
+## Jaké jsou klíčové otázky budoucí energetiky?
 
 Zaměříme se zejména na následující 4 otázky:
 - Kolik elektřiny budeme v dalších desetiletích potřebovat?
 - Jak rychle potřebujeme její výrobu dekarbonizovat?
-- Na jakých pilířích se dá budoucí energetika postavit?
+- Na jakých zdrojích se dá budoucí energetika postavit?
 - Co musí budoucí energetický mix splňovat?
 
 ### Kolik elektřiny budeme potřebovat?
@@ -52,9 +53,7 @@ Problém, který řešíme, je tedy mnohem těžší než jen nahradit stávají
     text="**TWh**, tedy **terawatthodina** je jednotka energie. Jednu TWh elektřiny v současnosti za rok vyrobí menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
 %}
 
-Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby až ke **100 TWh ročně**[^consumption-metric], jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
-
-_TODO: Opravit data, hodnota teď by měla být asi 63._{:.todo}
+Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby[^consumption-metric] až ke **100 TWh ročně**, jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
 
 {% include figure.html
     name="consumption.svg"
@@ -70,7 +69,7 @@ Dalším parametrem, který to celé komplikuje, je rychlost, s níž potřebuje
 
 Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám do konce této dekády a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Polevit ovšem nesmíme ani potom. Až se nám podaří snížit emise v elektroenergetice na cca 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji, a můžeme si tak pro zbylou dekarbonizaci dopřát větší rozvážnost.
 
-### Na jakých pilířích se dá budoucí energetika postavit?
+### Na jakých zdrojích se dá budoucí energetika postavit?
 
 {% include preview-box.html
     title="Detaily k jednotlivým technologiím"
@@ -78,21 +77,21 @@ Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat
     slug="bezemisni-energetika-2-technologie"
 %}
 
-Modelování budoucí energetiky musí brát výše uvedená východiska v potaz. V tomto textu budeme pracovat s následujícími pilíři pro výrobu bezemisní elektřiny v Česku:
+Modelování budoucí energetiky musí brát výše uvedená východiska v potaz. V tomto textu budeme pracovat s následujícími kategoriemi zdrojů pro výrobu bezemisní elektřiny v Česku:
 
 1. **Slunce a vítr** lze začít využívat velmi rychle, přičemž oba tyto zdroje mají nízké investiční náklady a v ČR stále obrovský nevyužitý potenciál. Jejich nevýhodou je výrazně proměnlivá výroba.
 2. **Jádro** dokáže vyrábět stabilně, postavit jadernou elektrárnu však trvá mnoho let, navíc jsou zde vysoké investiční náklady a vysoké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, ta ale zatím není zralá ke komerčnímu nasazení.
 3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (např. přečerpávací elektrárny, baterie nebo _zelený vodík_, tedy vodík vyrobený pomocí nadbytků obnovitelné elektřiny). K vyrovnávání výroby a spotřeby lze také přispět _flexibilitou spotřeby_, tedy přizpůsobením spotřeby možnostem výroby, např. jejím odložením na vhodnější čas.
 
-Současnou spotřebu v ČR pokrývají tyto tři pilíře jen zčásti, zbytek stále stojí na vysokoemisním pilíři – využívání fosilních paliv:
+Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti, zbytek stále stojí na vysokoemisních zdrojích – využívání fosilních paliv:
 {% include figure.html
     name="mix-current.svg"
     alt="Současné pokrytí spotřeby v ČR"
-    caption="Současnou spotřebu pokrývají bezemisní pilíře jen zčásti."
+    caption="Současnou spotřebu pokrývají bezemisní zdroje jen zčásti."
     source-text="Fakta o klimatu"
 %}
 
-V budoucnu potřebujeme tyto tři pilíře uváženě kombinovat. Například nějakou míru využití bezemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
+V budoucnu potřebujeme tyto tři kategorie zdrojů uváženě kombinovat. Například nějakou míru využití bezemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
 
 Další strategické rozhodnutí spočívá v tom, jak moc chceme **být ve výrobě elektřiny soběstační**, tedy jakou část spotřeby chceme určitě pokrýt z českých zdrojů. Zbytek bychom mohli **importovat ze zahraničí** – pokud to dovolí výrobní kapacity okolních států a možnosti přeshraniční přenosové soustavy.
 
@@ -155,7 +154,7 @@ Tento scénář ovšem závisí tom, kolik elektřiny se bude vyrábět v jinýc
 {% assign comment_nuclear="
 **Výrazný rozvoj výroby z jádra** má smysl jedině v kombinaci s rozvojem solární a větrné energetiky. Nejsme totiž schopni postavit tolik nových bloků, abychom tím pokryli celý nárůst spotřeby.
 
-Rozvoj jádra sice snižuje tlak na ostatní pilíře, může ale také během 20. a 30. let omezit rozvoj solárních a větrných elektráren (sníží jejich návratnost, případně i ochotu státu je dotovat). To by zvýšilo celkovou výrobu z fosilních zdrojů a tím i emise CO<sub>2</sub>." %}
+Rozvoj jádra sice snižuje tlak na ostatní kategorie zdrojů, může ale také během 20. a 30. let omezit rozvoj solárních a větrných elektráren (sníží jejich návratnost, případně i ochotu státu je dotovat). To by zvýšilo celkovou výrobu z fosilních zdrojů a tím i emise CO<sub>2</sub>." %}
 {% capture caption_comments %}
 {% include columns.html
     class="longread-small"
