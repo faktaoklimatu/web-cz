@@ -478,6 +478,7 @@ Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme a energetické
 * C. Breyer et al. [On the History and Future of 100% Renewable Energy Systems Research](https://ieeexplore.ieee.org/document/9837910), IEEE Access, 2022.
 * [Net Zero by 2050](https://www.iea.org/reports/net-zero-by-2050), IEA, 2021.
 * [Nuclear Power and Secure Energy Transitions](https://www.iea.org/reports/nuclear-power-and-secure-energy-transitions), IEA, 2022.
+{: .footnotes}
 
 {:#studie}
 ### Scénáře transformace české energetiky do roku 2050
@@ -485,6 +486,7 @@ Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme a energetické
 * [New Generation: Building a clean European electricity system by 2035](https://ember-climate.org/insights/research/new-generation/), EMBER Climate, 2022 (obsahuje [scénáře](https://ember-climate.org/data/data-tools/european-clean-power-pathways-explorer/) až do roku 2050).
 * [Energetická revoluce](https://www.greenpeace.org/static/planet4-czech-republic-stateless/2021/10/93cc9533-energeticka_revoluce.pdf), Greenpeace a Hnutí Duha, 2021.
 * [Klimaticky neutrální Česko](https://www.mckinsey.com/cz/~/media/mckinsey/locations/europe%20and%20middle%20east/czech%20republic/our%20work/decarbonization_report_cz_vf.pdf), McKinsey & Company, 2020.
+{: .footnotes}
 
 ### Poznámky
 
