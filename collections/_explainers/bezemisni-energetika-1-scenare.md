@@ -58,6 +58,7 @@ _TODO: Opravit data, hodnota teď by měla být asi 63._{:.todo}
 
 {% include figure.html
     name="consumption.svg"
+    class="seminarrow-figure"
     alt="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
     caption="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách – součet čisté spotřeby a ztrát v sítích."
     source-text="Fakta o klimatu"
@@ -349,7 +350,9 @@ Aby odhady budoucích nákladů dávaly smyl, musíme je srovnat se současnými
 **V současné energetické krizi** se ovšem systémové náklady v letech 2021/2022 zvyšují až ke 285 miliardám ročně (4,40 Kč/kWh). Převážná většina nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu[^cena-zemni-plyn]. Je potřeba dodat, že nárůst průměrné [ceny elektřiny na trhu](/explainery/cena-elektriny-na-trhu) je v těchto letech mnohem výraznější než nárůst _systémových nákladů_. Rozdíl mezi těmito dvěma hodnotami pak tvoří neočekávané zisky (_windfall profits_) výrobců elektřiny a dalších aktérů.
 
 {% include figure.html
+    class="seminarrow-figure"
     name="costs-2018.svg"
+    name-mobile="costs-2018-mob.svg"
     alt="Hrubý odhad současných systémových nákladů na výrobu elektřiny"
     caption="Hrubý odhad současných systémových nákladů na výrobu elektřiny v ČR (2018–2021), bez daní a emisních povolenek."
     source-text="Fakta o klimatu"
@@ -411,7 +414,8 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu státu. Její **zásadní transformace je nutně spojena s řadou rizik**. Širokou škálu rizik spojených s **dopady změny klimatu** však přináší i zachování současného stavu, případně příliš pomalá a opatrná transformace. Základní přehled obou skupin rizik přinášíme níže, u transformačních rizik zacházíme do většího detailu.
 
 {% include figure.html
-    name="risk-map.png"
+    name="risk-map.svg"
+    name-mobile="risk-map-mob.svg"
     alt="Přehled různých rizik transformace a netransformace energetiky"
     caption="Přehled různých rizik transformace a netransformace energetiky"
     source-text="Fakta o klimatu"
