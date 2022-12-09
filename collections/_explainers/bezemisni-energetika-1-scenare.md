@@ -144,7 +144,7 @@ Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky
 Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně zvolíme nějakou kompromisní cestu mezi těmito extrémy.
 
 {% assign comment_vre="
-Tento scénář vyžaduje nejvýraznější rozvoj domácí **solární a větrné energetiky**, ale také nemalou část výroby z flexibilních zdrojů.
+Tento scénář vyžaduje nejvýraznější rozvoj obnovitelných zdrojů (OZE), tedy hlavně zdejší **solární a větrné energetiky**, ale předpokládá také nemalou část výroby z flexibilních zdrojů.
 
 V rámci flexibilních zdrojů to vyžaduje především nasazení **zeleného vodíku** k dlouhodobému ukládání elektřiny. Tato technologie nicméně zatím není dostatečně levná, aby se v Česku tržně prosadila (oproti spalování uhlí)." %}
 {% assign comment_import="
@@ -262,7 +262,7 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
     content=seasonal_factors
 %}
 
-**K pokrytí zimní poloviny roku[^seasons-definition] ale v ČR nemáme dostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali bychom k tomu výrobu z Temelína a tolik výroby ze slunce, abychom měli v létě elektřiny dost a zároveň neměli zásadní přebytky, v zimě by nám stále podstatné množství elektřiny chybělo. Jak ukazuje následující ilustrace, v tomto období by nám **chybělo pokrýt téměř 50 % spotřeby**, na což bychom museli využít další zdroje.
+**K pokrytí zimní poloviny roku[^seasons-definition] ale v ČR nemáme dostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali bychom k tomu výrobu ze stávajícího jádra a tolik výroby ze slunce, abychom měli v létě elektřiny dost a zároveň neměli zásadní přebytky, v zimě by nám stále podstatné množství elektřiny chybělo. Jak ukazuje následující ilustrace, v tomto období by nám **chybělo pokrýt téměř 50 % spotřeby**, na což bychom museli využít další zdroje.
 
 <!-- Pořád bychom totiž v zimní polovině roku **potřebovali pokrýt téměř 50 % spotřeby** flexibilními zdroji, jak ukazuje následující ilustrace. -->
 
@@ -274,16 +274,16 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
     source-text="Fakta o klimatu"
 %}
 
-**Z čeho tedy můžeme v zimě vyrobit další elektřinu?** Naše ilustrativní scénáře obsahují tři možné způsoby:
+**Z čeho tedy můžeme v zimě vyrobit další elektřinu?** Naše ilustrativní scénáře obsahují tři způsoby. Můžeme:
 
-1. Můžeme **posílit roli slunce** a zásadně využívat **sezónní akumulaci do zeleného vodíku**.
-2. Můžeme importovat **elektřinu z větru ze zahraničí**, což dorovnává hlavně zimní bilanci.
-3. Můžeme kromě výroby ze slunce a větru také **výrazně posílit jadernou energetiku**.
+1. **Posílit roli slunce** a ve velké míře využívat **sezónní akumulaci do zeleného vodíku**.
+2. **Importovat elektřinu z větru ze zahraničí**, což nám umožní dorovnávat hlavně zimní bilanci.
+3. **Výrazně posílit jadernou energetiku** (kromě výroby ze slunce a větru).
 {: .upper-alpha}
 
-Těmito způsoby rozhodně nemusíme pokrýt všechnu v zimě chybějící elektřinu. Dalšími **doplňkovými flexibilními zdroji** jsou:
-* **biomasa**, která se dobře skladuje a je vhodná pro menší teplárenské bloky, tedy kromě v zimě potřebné elektřiny může poskytnout i v zimě potřebné teplo. Biomasa ale nemůže pokrýt veškerou v zimě chybějící elektřinu. To by oproti dnešku znamenalo výrazně navýšit energetické využití biomasy[^aktualni-skala-biomasy], což by přinášelo by konflikty s dalšími hodnotami jako je biodiverzita nebo estetika krajiny.
-* **fosilní paliva s CCS**, která můžou být vhodným zdrojem na pokrývání špiček. Opět nejsou úplně vhodná na pokrytí veškeré v zimě chybějící elektřiny, protože ve velkém využití také přináší sadu problémů, obzvláště pak zbytkové emise skleníkových plynů.
+Těmito způsoby však není nutné pokrýt celý rozdíl mezi zimní výrobou a spotřebou. Využít lze i další, **doplňkové flexibilní zdroje**:
+* **Biomasa**, která se dobře skladuje a je vhodná pro menší teplárenské bloky (tj. kromě elektřiny, která je v zimě potřeba, může poskytnout i potřebné teplo). Veškerou zbývající spotřebu elektřiny v zimní sezóně s ní ale pokrýt nemůžeme. To by totiž oproti dnešku znamenalo výrazný nárůst spotřeby biomasy (např. stromů) pro energetické účely[^aktualni-skala-biomasy], což by bylo v konfliktu s dalšími hodnotami, jako je pestrost přírody nebo estetika krajiny.
+* **Fosilní paliva s využitím CCS**, která můžou být vhodným zdrojem k pokrývání spotřebních špiček. Ani pomocí nich se ale nehodí vyrábět veškerou elektřinu, která nám v zimě chybí, protože i s jejich velkým využitím souvisí řada problémů, zejména pak zbytkové emise skleníkových plynů.
 
 {% capture seasonality %}
 {% capture caption_comments_seasonality %}
@@ -293,22 +293,22 @@ Těmito způsoby rozhodně nemusíme pokrýt všechnu v zimě chybějící elekt
     col1="
 #### A. slunce + vítr + zelený vodík
 
-**Když posílíme výrobu ze slunce**, zimní výrobu doplní zčásti přímo slunce, zčásti **zelený vodík vyrobený v létě z přebytků ze slunce** a z části biomasa a další flexibilní zdroje.
+**Když posílíme výrobu ze slunce**, zimní výrobu doplní zčásti přímo slunce, zčásti **zelený vodík vyrobený v létě z přebytků elektřiny ze slunce** a zčásti biomasa a další flexibilní zdroje.
 
 Výroba zeleného vodíku je ovšem zatím stále poměrně drahá."
     col2="
 #### B. slunce + vítr + import
 
-**Import obzvláště větrné výroby** ze zahraničí může uvolnit tlak na biomasu a další flexibilní zdroje.
+**Import (hlavně větrné výroby) ze zahraničí** může zmírnit tlak na využívání biomasy a dalších flexibilních zdrojů.
 
-Tolik importu ovšem není možné bez posílení evropské přenosové soustavy. To vyžaduje složité povolování a realizaci liniových staveb.
+Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a ta vyžaduje složité povolování a realizaci liniových staveb).
 "
     col3="
 {:start='3'}
 #### C. slunce + vítr + jádro
-**Ambiciózní rozvoj jaderné energetiky** (současně s rozvojem výroby ze slunce a větru) může také uvolnit tlak na biomasu a další flexibilní zdroje.
+**Ambiciózní rozvoj jaderné energetiky** (souběžně s rozvojem výroby ze slunce a větru) může rovněž zmírnit tlak na biomasu a další flexibilní zdroje.
 
-K takovému nárůstu výroby z jádra bychom ale potřebovali 3 nové velké jaderné bloky a několik dalších malých modulárních reaktorů.
+K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké jaderné bloky a několik malých modulárních reaktorů.
 "
 %}
 {% endcapture %}
@@ -317,7 +317,7 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali 3 nové velké ja
     name="seasonal-alternatives.png"
     alt="Sezónní vyváženost ilustrativního mixu"
     caption-above=caption_comments_seasonality
-    caption="Každý přístup doplňuje chybějící výrobu v zimě jiným způsobem. Všechny ale pořád počítají s určitou mírou biomasy (příp. dalších flexibilních zdrojů)."
+    caption="Každý přístup doplňuje chybějící výrobu v zimě jiným způsobem. Všechny ale stále počítají s určitou mírou využití biomasy (příp. dalších flexibilních zdrojů)."
     source-text="Fakta o klimatu"
 %}
 {% endcapture %}
@@ -326,13 +326,13 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali 3 nové velké ja
     name="seasonality"
     class="wide-figure-desktop wide-figure-mobile contrast-figure"
     label-class="large-expander-title"
-    label="Podrobnosti: Jak dosahují sezónní vyváženosti naše ilustrativní scénáře?"
+    label="Podrobnosti: Jak sezónní vyváženosti dosahují naše ilustrativní scénáře?"
     content=seasonality
 %}
 
-**Spoléhat se v Česku čistě na slunce a vítr není možné.** **Vždy budeme potřebovat další nesnadné nástroje pro pokrytí zimní spotřeby: zelený vodík, import, jádro**, případně velké množství biomasy nebo fosilní zdroje s CCS.
+**Pouze na slunce a vítr v Česku spoléhat nemůžeme.** **K pokrytí zimní spotřeby budeme vždy potřebovat další nástroje, které pro nás dnes nejsou snadno dostupné: zelený vodík, import, jádro**, případně velké množství biomasy nebo fosilní zdroje s využitím CCS.
 
-Je potřeba pamatovat na to, že zde počítáme s ambiciózním rozvojem větrné energetiky. Pokud se nám větrnou energetiku nepodaří patřičně rozvinout, mezera v pokrytí zimní spotřeby se ještě dál podstatně prohloubí, což celý problém ještě ztíží.
+Zároveň je třeba pamatovat na to, že výše uvedené počítá s ambiciózním rozvojem větrné energetiky. Pokud se nám větrnou energetiku dostatečně rozvinout nepodaří, mezera v pokrytí zimní spotřeby se dál podstatně prohloubí, což celý problém ještě ztíží.
 
 ## Kolik to celé bude stát?
 
