@@ -23,7 +23,7 @@ perex: |
 
 {% include tldr.html content="
 - V dalších 30 letech naše **spotřeba elektřiny znatelně naroste** (oproti dnešku).
-- Zásadní budou **solární a větrné zdroje**. Kvůli vyrovnanosti výroby během roku bude **klíčový rozvoj větrné energetiky**. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém s nedostatkem elektřiny zjednodušit.
+- Zásadní budou **solární a větrné zdroje**. Kvůli vyrovnanosti výroby během roku bude především **klíčový rozvoj větrné energetiky**. Udržení nebo mírné navýšení současné **výroby z jádra** nám může problém s nedostatkem elektřiny zjednodušit.
 - Pokud nedokážeme postavit dostatek lokálních větrných zdrojů, budeme to muset kompenzovat importováním větrné energie ze zahraničí, výraznějším rozvojem jaderné energetiky a nebo spoléhat na dlouhodobé ukládání elektřiny, případně vyšší emise řešit pomocí technologie CCS.
 - S rozhodováním o budoucí energetice je spojena řada otázek: stabilita sítě, finanční náklady, energetická bezpečnost, ale třeba i provázanost s centrálním zásobováním teplem.
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
@@ -32,9 +32,9 @@ perex: |
 _Tento text nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, obzvláště pak zjednodušujeme provázanost elektroenergetiky s dalšími sektory (jako teplárenství, doprava, průmysl)._
 {: .longread-small}
 
-## Jaké jsou klíčové otázky budoucí energetiky?
+## Co jsou klíčové otázky budoucí energetiky?
 
-Zaměříme se zejména na následující 4 otázky:
+V této části se zaměříme především na následující otázky:
 - Kolik elektřiny budeme v dalších desetiletích potřebovat?
 - Jak rychle potřebujeme její výrobu dekarbonizovat?
 - Na jakých zdrojích se dá budoucí energetika postavit?
@@ -91,7 +91,7 @@ Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti,
     source-text="Fakta o klimatu"
 %}
 
-V budoucnu potřebujeme tyto tři kategorie zdrojů uváženě kombinovat. Například nějakou míru využití bezemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
+V budoucnu potřebujeme tyto tři kategorie zdrojů uváženě kombinovat. Například nějakou míru využití nízkoemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
 
 Další strategické rozhodnutí spočívá v tom, jak moc chceme **být ve výrobě elektřiny soběstační**, tedy jakou část spotřeby chceme určitě pokrýt z českých zdrojů. Zbytek bychom mohli **importovat ze zahraničí** – pokud to dovolí výrobní kapacity okolních států a možnosti přeshraniční přenosové soustavy.
 
@@ -226,25 +226,25 @@ Výše uvedené ilustrativní scénáře rozvádíme podrobněji v dalším text
 
 ## Jak dosáhnout stabilní výroby?
 
-Základní princip elektrické sítě spočívá v tom, že výroba elektřiny musí být vždy (zhruba) stejná jako její spotřeba. Pokud to neplatí, může to vést k výpadkům elektřiny nebo v extrémním případě k tzv. _blackoutu_, tedy k plošnému přerušení dodávky elektřiny. **Výrobu a spotřebu je proto nutné neustále balancovat v reálném čase.**
+V elektrické síti musí být výroba elektřiny vždy (zhruba) stejná jako její spotřeba. Pokud tomu tak není, může docházet k výpadkům elektřiny, nebo v extrémním případě i k tzv. _blackoutu_, tedy k plošnému přerušení dodávky elektřiny. **Výrobu a spotřebu je proto nutné neustále balancovat v reálném čase.**
 
-Toto je obzvláště náročné, pokud velkou část výroby tvoří solární a větrné zdroje s výrazně proměnlivou výrobou. Základním nástrojem je _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které jsou schopné pokrýt spotřebu, když zrovna nesvítí a nefouká.
+To je obzvlášť náročné v případě, že podstatná část elektřiny v síti pochází ze solárních a větrných zdrojů, jejichž výroba je značně proměnlivá. Základním nástrojem je tzv. _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které dokáží pokrýt spotřebu, když právě nesvítí a nefouká.
 
-Z hlediska budoucí bezemisní energetiky nás zajímají dva časové horizonty:
-* **Krátkodobé vyrovnávání**, tedy jak dokážeme vyrovnávat výpadky ve výrobě (nebo zužitkovat nadbytky ve výrobě) v horizontu několika hodin, celého dne nebo jednoho týdne.
-* **Sezónní vyváženost**, tedy jak zajistíme, že výroba odpovídá spotřebě v každém z ročních období.
+Z hlediska budoucí výroby elektřiny bez emisí nás zajímají dva různé časové horizonty:
+* **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (příp. zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne či týdne.
+* **Sezónní vyváženost** – jak v každém ročním období zajistíme, že výroba odpovídá spotřebě.
 
 ### Krátkodobé vyrovnávání
 
-Krátkodobé vyrovnávání je o něco snazší, protože můžete použít zdroje, které v takové míře nedokážete provozovat trvale. Ať jsou to zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasa) nebo investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriové úložiště, apod.) nebo zdroje s vysokými provozními náklady (např. plynové zdroje s CCS).
+Krátkodobé vyrovnávání je o něco snazší, protože můžeme využít zdroje, které nedokážeme v takové míře provozovat trvale. Ať už jde o zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasa) nebo investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriová úložiště apod.) a nebo zdroje s vysokými provozními náklady (např. plynové zdroje s využitím CCS).
 
-To neznamená, že to je snadné. Když je špatný den, za celý den nevyrobí solární ani větrné elektrárny v Česku v podstatě nic. I když započítáme určitou stabilní výrobu z jádra, potřebujeme v průběhu takového dne pokrýt dalších 200 – 250 GWh spotřeby. Největší česká přečerpávací elektrárna Dlouhé stráně má přitom kapacitu zhruba 3 GWh.
+Ani to však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární ani větrné elektrárny v Česku téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
 
-Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich ilustrativních scénářů, proto toto téma necháváme na samostatný explainer.
+Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném explaineru.
 
 ### Sezónní vyváženost
 
-**Klíčový problém českého bezemisního mixu je pokrytí zimní spotřeby**, která je vyšší než v létě. **Na zimní výrobu jsou vhodné větrné elektrárny**, na rozdíl od solárních elektráren.
+**Klíčovým problémem českého bezemisního mixu je pokrytí zimní spotřeby**, neboť ta je vyšší než v létě, a **na zimní výrobu jsou vhodné větrné elektrárny**. Solární zdroje nám v zimě příliš nepomohou.
 
 {% capture seasonal_factors %}
 {% include figure.html
@@ -258,11 +258,11 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
 {% include expander-figure.html
     name="seasonal-factors"
     class="contrast-figure"
-    label="Kontext: Jak vyrábí během roku solární a větrné zdroje?"
+    label="Kontext: Jak vypadá výroba ze solárních a větrných zdrojů v průběhu roku?"
     content=seasonal_factors
 %}
 
-**V Česku máme ale pro pokrytí zimní poloviny roku[^seasons-definition] nedostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali jsme k tomu výrobu z Temelína a tolik výroby ze slunce, abychom neměli v létě zásadní přebytky, v zimě by stále podstatně chyběla elektřina. Konkrétně by v zimní polovině roku **chybělo pokrýt téměř 50 % spotřeby** dalšími zdroji, jak ukazuje následující ilustrace.
+**K pokrytí zimní poloviny roku[^seasons-definition] ale v ČR nemáme dostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali bychom k tomu výrobu z Temelína a tolik výroby ze slunce, abychom měli v létě elektřiny dost a zároveň neměli zásadní přebytky, v zimě by nám stále podstatné množství elektřiny chybělo. Jak ukazuje následující ilustrace, v tomto období by nám **chybělo pokrýt téměř 50 % spotřeby**, na což bychom museli využít další zdroje.
 
 <!-- Pořád bychom totiž v zimní polovině roku **potřebovali pokrýt téměř 50 % spotřeby** flexibilními zdroji, jak ukazuje následující ilustrace. -->
 
@@ -270,11 +270,11 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
     class="seminarrow-figure"
     name="seasonal-baseline.png"
     alt="Sezónní vyváženost ilustrativního mixu"
-    caption="Rozdělení výroby elektřiny do letní a zimní sezóny pro scénář s ambiciózním rozvojem větrné energetiky (bez nového jádra). Tento scénář vyžaduje velké množství flexibilních zdrojů, obzvláště v zimě."
+    caption="Rozdělení výroby elektřiny do letní a zimní sezóny pro scénář s ambiciózním rozvojem větrné energetiky (bez nového jádra). Tento scénář vyžaduje velké množství flexibilních zdrojů, především v zimě."
     source-text="Fakta o klimatu"
 %}
 
-**Z čeho můžeme tedy v zimě vyrobit další elektřinu?** Tři podstatné nástroje jsou obsaženy v našich ilustrativních scénářích:
+**Z čeho tedy můžeme v zimě vyrobit další elektřinu?** Naše ilustrativní scénáře obsahují tři možné způsoby:
 
 1. Můžeme **posílit roli slunce** a zásadně využívat **sezónní akumulaci do zeleného vodíku**.
 2. Můžeme importovat **elektřinu z větru ze zahraničí**, což dorovnává hlavně zimní bilanci.
@@ -434,7 +434,7 @@ Ke snížení rizik spojených s transformací můžeme využít několik zákla
 
 ## Co z toho plyne?
 
-Pro přechod Česka na bezemisní energetiku z toho plyne několik základních závěrů:
+Pro přechod Česka na bezemisní elektroenergetiku z toho plyne několik základních závěrů:
 
 Potřebujeme maximalizovat instalaci solárních a obzvláště pak větrných elektráren
 {: .callout .contrast-figure}
