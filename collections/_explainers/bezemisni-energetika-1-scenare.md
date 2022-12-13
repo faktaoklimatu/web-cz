@@ -173,22 +173,22 @@ Rozvoj jádra sice snižuje tlak na ostatní kategorie zdrojů, může ale také
 %}
 
 {% capture failure_scenarios %}
-Pro srovnání může být užitečné ukázat i neúspěšné scénáře, tedy co by znamenal malý rozvoj výroby ze slunce a větru a zpoždění případných jaderných staveb*:
+Pro srovnání se podívejme i na možné neúspěšné scénáře, tedy co by například znamenal malý rozvoj výroby ze slunce a větru a zpoždění případných jaderných staveb*:
 
 {% assign comment_fail_wind="
-Pokud vsadíme na slunce a vítr a **nebudeme schopni postavit dost větrných elektráren**, bude těžké pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jádro.
+Pokud vsadíme na slunce a vítr a zároveň **nebudeme schopni postavit dost větrných elektráren**, bude těžké pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jádro.
 
-To může v nejhorším případě vést i k růstu výroby z fosilních zdrojů.
+To může v nejhorším případě vést i k nárůstu výroby z fosilních zdrojů.
 "%}
 {% assign comment_fail_nuclear="
-Může dojít k **selhání či zrušení rozpracovaných jaderných projektů** (i to se ve světě v minulosti už stalo).
+Může dojít k **selhání či zrušení rozpracovaných jaderných projektů** (což se i ve světě v minulosti už stalo).
 
 Ani to nemusí vést ke katastrofickým akumulovaným emisím CO<sub>2</sub>, pokud budeme **paralelně úspěšně rozvíjet výrobu ze slunce a větru**.
 "%}
 {% assign comment_fail_nuclear_vre="
 **Kdybychom vsadili pouze na jádro**, pravděpodobně nebude mezi politiky ani v byznysu dostatek vůle výrazně v mezičase rozvíjet slunce a vítr.
 
-V případě **výrazného zpoždění jaderných staveb** tak hrozí velké akumulované emise CO<sub>2</sub>.
+V případě **velkého zpoždění jaderných staveb** tak hrozí vysoké akumulované emise CO<sub>2</sub>.
 "%}
 {% capture caption_comments_fail %}
 {% include columns.html
@@ -206,7 +206,7 @@ V případě **výrazného zpoždění jaderných staveb** tak hrozí velké aku
     source-text="Fakta o klimatu"
 %}
 
-V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výroby ze slunce a větru ze zahraničí. Bez strategického rozvoje přenosových soustav jsou ale možnosti importu omezené. Stejně tak je důležitá strategická příprava na rozvoj dalších technologií, ať už pro sezónní akumulaci, nebo na snížení dopadů fosilní výroby. To nám umožní na případné problémy a selhání ve vybraném scénáři rychleji reagovat.
+V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výroby ze slunce a větru ze zahraničí. Bez strategického rozvoje přenosových soustav jsou ale možnosti importu omezené. Stejně tak je důležitá strategická příprava na rozvoj dalších technologií, ať už těch na sezónní akumulaci nebo na snížení dopadů fosilní výroby. To nám umožní na případné problémy a selhání ve vybraném scénáři reagovat rychleji.
 
 {:.longread-small}
 \* Pro jednodušší porovnání ponecháváme i v těchto neúspěšných scénářích stejný vývoj spotřeby. Ve skutečnosti by neúspěchy v dekarbonizaci výroby elektřiny pravděpodobně vedly i k pomalejší elektrifikaci, a tedy i pomalejšímu nárůstu spotřeby elektřiny.
@@ -228,7 +228,7 @@ Výše uvedené ilustrativní scénáře rozvádíme podrobněji v dalším text
 
 V elektrické síti musí být výroba elektřiny vždy (zhruba) stejná jako její spotřeba. Pokud tomu tak není, může docházet k výpadkům elektřiny, nebo v extrémním případě i k tzv. _blackoutu_, tedy k plošnému přerušení dodávky elektřiny. **Výrobu a spotřebu je proto nutné neustále balancovat v reálném čase.**
 
-To je obzvlášť náročné v případě, že podstatná část elektřiny v síti pochází ze solárních a větrných zdrojů, jejichž výroba je značně proměnlivá. Základním nástrojem je tzv. _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které dokáží pokrýt spotřebu, když právě nesvítí a nefouká.
+To je obzvlášť náročné v případě, kdy podstatná část elektřiny v síti pochází ze solárních a větrných zdrojů, jejichž výroba je značně proměnlivá. Základním nástrojem je tzv. _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které dokáží pokrýt spotřebu, i když právě nesvítí a nefouká.
 
 Z hlediska budoucí výroby elektřiny bez emisí nás zajímají dva různé časové horizonty:
 * **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (příp. zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne či týdne.
@@ -236,21 +236,21 @@ Z hlediska budoucí výroby elektřiny bez emisí nás zajímají dva různé č
 
 ### Krátkodobé vyrovnávání
 
-Krátkodobé vyrovnávání je o něco snazší, protože můžeme využít zdroje, které nedokážeme v takové míře provozovat trvale. Ať už jde o zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasa) nebo investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriová úložiště apod.) a nebo zdroje s vysokými provozními náklady (např. plynové zdroje s využitím CCS).
+Krátkodobé vyrovnávání je o něco snazší, protože máme k dispozici zdroje, které nedokážeme v takové míře provozovat trvale. Ať už jde o zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasa) či investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriová úložiště apod.) a nebo zdroje s vysokými provozními náklady (např. plynové zdroje s využitím CCS).
 
-Ani to však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární ani větrné elektrárny v Česku téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
+Ani toto krátkodobé balancování však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární ani větrné elektrárny v Česku téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
 
-Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném explaineru.
+Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich tří ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném explaineru.
 
 ### Sezónní vyváženost
 
-**Klíčovým problémem českého bezemisního mixu je pokrytí zimní spotřeby**, neboť ta je vyšší než v létě, a **na zimní výrobu jsou vhodné větrné elektrárny**. Solární zdroje nám v zimě příliš nepomohou.
+**Klíčovým problémem českého bezemisního mixu je pokrytí zimní spotřeby**, která je vyšší než letní, a **na zimní výrobu jsou vhodné větrné elektrárny**. Solární zdroje nám v zimě příliš nepomohou.
 
 {% capture seasonal_factors %}
 {% include figure.html
     name="factors-solar-wind.svg"
     alt="Průměrné koeficienty využití solárních a větrných zdrojů během roku"
-    caption="Průměrné koeficienty využití solárních a větrných zdrojů během roku. Více v přehledech potenciálu [slunce](/infografiky/potencial-solarni-energie-cr-strechy) a [větru](/infografiky/potencial-vetrne-energie-cr) v ČR."
+    caption="Průměrná míra využití solárních a větrných zdrojů během roku. Více v přehledech potenciálu [slunce](/infografiky/potencial-solarni-energie-cr-strechy) a [větru](/infografiky/potencial-vetrne-energie-cr) v ČR."
     source-text="Fakta o klimatu"
 %}
 {% endcapture %}
@@ -262,7 +262,7 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
     content=seasonal_factors
 %}
 
-**K pokrytí zimní poloviny roku[^seasons-definition] ale v ČR nemáme dostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali bychom k tomu výrobu ze stávajícího jádra a tolik výroby ze slunce, abychom měli v létě elektřiny dost a zároveň neměli zásadní přebytky, v zimě by nám stále podstatné množství elektřiny chybělo. Jak ukazuje následující ilustrace, v tomto období by nám **chybělo pokrýt téměř 50 % spotřeby**, na což bychom museli využít další zdroje.
+**K pokrytí zimní poloviny roku[^seasons-definition] ale v ČR nemáme dostatečný potenciál větru**. I kdyby se nám podařil ambiciózní rozvoj větrné energetiky[^seasons-wind] a přidali bychom k tomu výrobu ze stávajícího jádra a tolik výroby ze slunce, abychom měli v létě elektřiny dost a zároveň neměli zásadní přebytky (u nichž bychom pak museli řešit, kam s nimi), v zimě by nám stále podstatné množství elektřiny chybělo. Jak ukazuje následující ilustrace, v tomto období by nám **chybělo pokrýt téměř 50 % spotřeby**, na což bychom museli využít další zdroje.
 
 <!-- Pořád bychom totiž v zimní polovině roku **potřebovali pokrýt téměř 50 % spotřeby** flexibilními zdroji, jak ukazuje následující ilustrace. -->
 
@@ -276,13 +276,13 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
 
 **Z čeho tedy můžeme v zimě vyrobit další elektřinu?** Naše ilustrativní scénáře obsahují tři způsoby. Můžeme:
 
-1. **Posílit roli slunce** a ve velké míře využívat **sezónní akumulaci do zeleného vodíku**.
+1. **Posílit výrobu ze slunce** a ve velké míře využívat **sezónní akumulaci do zeleného vodíku**.
 2. **Importovat elektřinu z větru ze zahraničí**, což nám umožní dorovnávat hlavně zimní bilanci.
 3. **Výrazně posílit jadernou energetiku** (kromě výroby ze slunce a větru).
 {: .upper-alpha}
 
 Těmito způsoby však není nutné pokrýt celý rozdíl mezi zimní výrobou a spotřebou. Využít lze i další, **doplňkové flexibilní zdroje**:
-* **Biomasa**, která se dobře skladuje a je vhodná pro menší teplárenské bloky (tj. kromě elektřiny, která je v zimě potřeba, může poskytnout i potřebné teplo). Veškerou zbývající spotřebu elektřiny v zimní sezóně s ní ale pokrýt nemůžeme. To by totiž oproti dnešku znamenalo výrazný nárůst spotřeby biomasy (např. stromů) pro energetické účely[^aktualni-skala-biomasy], což by bylo v konfliktu s dalšími hodnotami, jako je pestrost přírody nebo estetika krajiny.
+* **Biomasu**, která se dobře skladuje a je vhodná pro menší teplárenské bloky (tj. kromě elektřiny, která je v zimě potřeba, může poskytnout i potřebné teplo). Veškerou zbývající spotřebu elektřiny v zimní sezóně s ní ale pokrýt nemůžeme. To by totiž oproti dnešku znamenalo výrazný nárůst spotřeby biomasy (např. stromů) pro energetické účely[^aktualni-skala-biomasy], což by bylo v konfliktu s dalšími hodnotami, jako je například biodiverzita nebo estetika krajiny.
 * **Fosilní paliva s využitím CCS**, která můžou být vhodným zdrojem k pokrývání spotřebních špiček. Ani pomocí nich se ale nehodí vyrábět veškerou elektřinu, která nám v zimě chybí, protože i s jejich velkým využitím souvisí řada problémů, zejména pak zbytkové emise skleníkových plynů.
 
 {% capture seasonality %}
@@ -295,13 +295,13 @@ Těmito způsoby však není nutné pokrýt celý rozdíl mezi zimní výrobou a
 
 **Když posílíme výrobu ze slunce**, zimní výrobu doplní zčásti přímo slunce, zčásti **zelený vodík vyrobený v létě z přebytků elektřiny ze slunce** a zčásti biomasa a další flexibilní zdroje.
 
-Výroba zeleného vodíku je ovšem zatím stále poměrně drahá."
+Výroba zeleného vodíku ovšem zatím zůstává poměrně drahá."
     col2="
 #### B. slunce + vítr + import
 
 **Import (hlavně větrné výroby) ze zahraničí** může zmírnit tlak na využívání biomasy a dalších flexibilních zdrojů.
 
-Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a ta vyžaduje složité povolování a realizaci liniových staveb).
+Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a ta vyžaduje složité povolování a realizaci liniových staveb, např. elektrického vedení).
 "
     col3="
 {:start='3'}
@@ -326,11 +326,11 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
     name="seasonality"
     class="wide-figure-desktop wide-figure-mobile contrast-figure"
     label-class="large-expander-title"
-    label="Podrobnosti: Jak sezónní vyváženosti dosahují naše ilustrativní scénáře?"
+    label="Podrobnosti: Jak sezónní vyváženosti dosahují naše tři ilustrativní scénáře?"
     content=seasonality
 %}
 
-**Pouze na slunce a vítr v Česku spoléhat nemůžeme.** **K pokrytí zimní spotřeby budeme vždy potřebovat další nástroje, které pro nás dnes nejsou snadno dostupné: zelený vodík, import, jádro**, případně velké množství biomasy nebo fosilní zdroje s využitím CCS.
+Z toho všeho plyne, že **pouze na slunce a vítr v Česku spoléhat nemůžeme.** **K pokrytí zimní spotřeby budeme vždy potřebovat další nástroje, které pro nás dnes nejsou snadno dostupné: zelený vodík, import, jádro**, případně velké množství biomasy nebo fosilní zdroje s využitím CCS.
 
 Zároveň je třeba pamatovat na to, že výše uvedené počítá s ambiciózním rozvojem větrné energetiky. Pokud se nám větrnou energetiku dostatečně rozvinout nepodaří, mezera v pokrytí zimní spotřeby se dál podstatně prohloubí, což celý problém ještě ztíží.
 
