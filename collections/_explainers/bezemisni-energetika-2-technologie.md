@@ -132,10 +132,10 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 2. **Výroba bioplynu** anaerobní fermentací (bez přístupu vzduchu). V plynovém spalovacím motoru se dá z bioplynu vyrábět elektřina a teplo.
 3. **Výroba biometanu** pročištěním bioplynu. Biometan lze vtlačit do plynárenské sítě a dále spalovat např. v paroplynových elektrárnách.
 
-Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábějí **kapalná biopaliva** (u nás typicky bionafta z řepky<sup>*</sup>).
+Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábějí **kapalná biopaliva** (u nás typicky bionafta z řepky\*).
 
-{:.longread-small}
-<sup>*</sup> Dnes se biopaliva používají velmi neefektivně – přimíchávají se plošně do nafty. Není ovšem možné vyrobit dost biopaliv na to, abychom tím zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou tato paliva sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
+{:.footnotes}
+\* Dnes se biopaliva používají velmi neefektivně – přimíchávají se plošně do nafty. Není ovšem možné vyrobit dost biopaliv na to, abychom tím zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou tato paliva sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
 "
 %}
 
@@ -162,14 +162,14 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
     class="contrast-figure"
     label="Kontext: Jak funguje CCS?"
     content="
-**CCS je souhrnný název pro různé postupy na zachytávání odpadního oxidu uhličitého a jeho trvalé uložení do podzemního úložiště.**<sup>*</sup> K ukládání se využívají jednak geologické útvary jako _solné vodonosné vrstvy_ a jednak vytěžená naleziště ropy a zemního plynu (kde CO<sub>2</sub> v rámci techniky [_enhanced oil recovery_](https://en.wikipedia.org/wiki/Enhanced_oil_recovery) umožňuje další těžbu).
+**CCS je souhrnný název pro různé postupy na zachytávání odpadního oxidu uhličitého a jeho trvalé uložení do podzemního úložiště.**\* K ukládání se využívají jednak geologické útvary jako _solné vodonosné vrstvy_ a jednak vytěžená naleziště ropy a zemního plynu (kde CO<sub>2</sub> v rámci techniky [_enhanced oil recovery_](https://en.wikipedia.org/wiki/Enhanced_oil_recovery) umožňuje další těžbu).
 
 **CCS se může v budoucnu významně využívat i mimo elektroenergetiku**:
 - Při **dekarbonizaci průmyslových procesů jako výroba cementu, železa, oceli** atd. (při této výrobě se totiž CO<sub>2</sub> uvolňuje jinou reakcí než hořením fosilních paliv).
 - Jako **technický nástroj k dosažení záporných emisí <glossary id='sekvestrace'>sekvestrací uhlíku</glossary>**, nasazený na elektrárnu či teplárnu na biomasu (_bioenergy with CCS_, _BECCS_) nebo jako zařízení na zachytávání uhlíku přímo z atmosféry (_direct air capture_, _DAC_).
 
-{:.longread-small}
-<sup>*</sup> Místo trvalého ukládání uhlíku se uvažuje i o jeho využití v průmyslu (_carbon capture and utilization_, _CCU_). Nevýhodou tohoto postupu je, že je takový uhlík obvykle časem znovu vypuštěn do atmosféry. To platí zejména při využití uhlíku k výrobě syntetických paliv.
+{:.footnotes}
+\* Místo trvalého ukládání uhlíku se uvažuje i o jeho využití v průmyslu (_carbon capture and utilization_, _CCU_). Nevýhodou tohoto postupu je, že je takový uhlík obvykle časem znovu vypuštěn do atmosféry. To platí zejména při využití uhlíku k výrobě syntetických paliv.
 "
 %}
 
