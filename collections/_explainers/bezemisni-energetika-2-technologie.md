@@ -140,7 +140,7 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 
 Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a také se z ní vyrábějí **kapalná biopaliva** (u nás typicky bionafta z řepky\*).
 
-{:.footnotes}
+{:.longread-tiny}
 \* Dnes se biopaliva používají velmi neefektivně – přimíchávají se plošně do nafty. Není ovšem možné vyrobit dost biopaliv na to, abychom tím zásadně pohnuli emisemi v silniční dopravě. V budoucnu mohou tato paliva sloužit k dekarbonizaci vybraných oblastí, kde jiné technologie nebudou k dispozici (uvažuje se o části letecké, námořní nebo dálkové kamionové dopravy).
 "
 %}
@@ -175,7 +175,7 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
 - Při **dekarbonizaci průmyslových procesů jako výroba cementu, železa, oceli** atd. (při této výrobě se totiž CO<sub>2</sub> uvolňuje jinou reakcí než hořením fosilních paliv).
 - Jako **technický nástroj k dosažení záporných emisí <glossary id='sekvestrace'>sekvestrací uhlíku</glossary>**, nasazený na elektrárnu či teplárnu na biomasu (_bioenergy with CCS_, _BECCS_) nebo jako zařízení na zachytávání uhlíku přímo z atmosféry (_direct air capture_, _DAC_).
 
-{:.footnotes}
+{:.longread-tiny}
 \* Místo trvalého ukládání uhlíku se uvažuje i o jeho využití v průmyslu (_carbon capture and utilization_, _CCU_). Nevýhodou tohoto postupu je, že je takový uhlík obvykle časem znovu vypuštěn do atmosféry. To platí zejména při využití uhlíku k výrobě syntetických paliv.
 "
 %}
