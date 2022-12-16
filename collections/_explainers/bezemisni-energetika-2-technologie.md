@@ -37,6 +37,7 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
 
 ### Slunce
 {% include figure.html
+    class="wide-figure-desktop"
     name="solar.png"
     alt="Přehled vlastností solárních zdrojů"
     source-text="Fakta o klimatu"
@@ -46,6 +47,7 @@ _TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na
 
 ### Vítr
 {% include figure.html
+    class="wide-figure-desktop"
     name="wind.png"
     alt="Přehled vlastností větrných zdrojů"
     source-text="Fakta o klimatu"
@@ -72,6 +74,7 @@ V tomto textu se zabýváme především sezónní proměnlivostí – solární
 
 ### Konvenční jádro
 {% include figure.html
+    class="wide-figure-desktop"
     name="nuclear-conventional.png"
     alt="Přehled vlastností konvenčních jaderných zdrojů"
     source-text="Fakta o klimatu"
@@ -89,6 +92,7 @@ Vzhledem k těmto vlastnostem jaderných elektráren a rychlosti rozvoji obnovit
 
 ### Malé modulární reaktory (SMR)
 {% include figure.html
+    class="wide-figure-desktop"
     name="nuclear-smr.png"
     alt="Přehled vlastností SMR"
     source-text="Fakta o klimatu"
@@ -106,6 +110,7 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 
 ### Hydro
 {% include figure.html
+    class="wide-figure-desktop"
     name="hydro.png"
     alt="Přehled vlastností vodních zdrojů"
     source-text="Fakta o klimatu"
@@ -117,6 +122,7 @@ _TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:
 
 ### Biomasa
 {% include figure.html
+    class="wide-figure-desktop"
     name="biomass.png"
     alt="Přehled vlastností biomasy jako zdroje"
     source-text="Fakta o klimatu"
@@ -152,6 +158,7 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
 
 ### Uhlí nebo zemní plyn s CCS
 {% include figure.html
+    class="wide-figure-desktop"
     name="ccs.png"
     alt="Přehled vlastností zdrojů v kombinaci s CCS"
     source-text="Fakta o klimatu"
@@ -181,6 +188,7 @@ Přes všechny tyto problémy **mohou fosilní elektrárny s CCS hrát důležit
 
 ### Plynové turbíny na zelený nebo modrý vodík
 {% include figure.html
+    class="wide-figure-desktop"
     name="hydrogen.png"
     alt="Přehled vlastností vodíkových zdrojů"
     source-text="Fakta o klimatu"
