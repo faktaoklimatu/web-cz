@@ -2,16 +2,16 @@
 layout:      explainer
 title:       "Co je Zelená dohoda pro Evropu?"
 slug:        "zelena-dohoda-pro-evropu"
-published:   2022-12-05
+published:   2022-12-20
 author:      "Kateřina Kolouchová a tým Fakt o klimatu"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
-cover-source-author:        "Johannes Plenio"
+cover-source-author:        "Agent J"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
-cover-source-url:           "https://unsplash.com/photos/UO4KcQL7vbE"
+cover-source-url:           "https://unsplash.com/photos/PtDNIlRSKRg"
 perex:       "Snad žádný evropský dokument nepřitáhl v posledních letech v Česku tolik mediální pozornosti jako Zelená dohoda pro Evropu. A nesklidil tolik kritiky. Výzkumy přitom odhalily zajímavý paradox, že European Green Deal sice nemalé části české veřejnosti vadí, ale jen málokdo tuší, co se v něm vlastně píše. V tomto textu proto přinášíme přehled toho nejdůležitějšího a přidáváme k němu užitečné souvislosti."
 ---
 
@@ -22,21 +22,19 @@ perex:       "Snad žádný evropský dokument nepřitáhl v posledních letech 
 - **Finance jsou.** Výzvou zůstává, jak je efektivně rozdělit a zajistit, aby se dostaly také ke skupinám obyvatel, které budou podporu potřebovat nejvíce.
 - U jednotlivých členských států se cíle pro snižování emisí skleníkových plynů mohou lišit – různé země mají různé výchozí podmínky.
 - Dokument se dotýká **všech sektorů hospodářství** a kromě snižování emisí se zaměřuje i na obnovu biodiverzity či ochranu životního prostředí obecně.
-- Není to detailní plán cesty na další dekády. Je to obecný, strategický text – kotva pro další plánování a vyjednávání. Vytyčuje směr, na němž se evropské země dohodly a kterým se společně chtějí vydat.    
+- Není to detailní plán cesty na další dekády. Je to obecný, strategický text – kotva pro další plánování a vyjednávání. Vytyčuje směr, na němž se evropské země dohodly a kterým se společně chtějí vydat.
 " %}
 
 Projevy oteplování planety jsou na mnoha místech světa viditelné už dnes – v Česku jsou jeho důsledkem například větší sucha nebo kůrovcová kalamita, jiné země se potýkají s vlnami veder, obrovskými požáry či povodněmi. K zastavení tohoto celosvětového oteplování je proto klíčové, aby se zapojili a vzájemně spolupracovali všichni: od podniků a institucí až po státy a mezinárodní organizace. V roce 2015 se 193 států světa v <glossary id="parizskadohoda">Pařížské dohodě</glossary> zavázalo udržet oteplení planety pod 2 °C a zároveň usilovat o to, aby nebyla překročena hranice 1,5 °C (ve srovnání s teplotami před průmyslovou revolucí).[^cesko-otepleni] Evropská komise pak v roce 2019 představila [Zelenou dohodu pro Evropu](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs) (*European Green Deal*, EGD), která v hlavních obrysech nastiňuje, jak chce cílů Pařížské dohody dosáhnout Evropská unie.  
 
 Zelená dohoda je právně nezávazným [dokumentem o 25 stranách](https://eur-lex.europa.eu/resource.html?uri=cellar:b828d165-1c22-11ea-8c1f-01aa75ed71a1.0010.02/DOC_1&format=PDF), který je rozdělen do tří hlavních sekcí:
 
-**1. Transformace hospodářství**
+1. **Transformace hospodářství**
    1. Ambicióznější klimatické cíle pro roky 2030 a 2050
    2. Rámcový návrh opatření pro transformaci v sedmi oblastech (energetika, doprava, budovy, průmysl a oběhové hospodářství, zemědělství, obnova biodiverzity a ekosystémů, nulové znečištění)
    3. Začleňování udržitelnosti do všech politik EU (financování, investice a spravedlivá transformace)
-
-**2. EU jako globální lídr** – jakou roli chce Unie hrát v mezinárodním úsilí zaměřeném na ochranu klimatu
-
-**3. Evropský klimatický pakt** – představení platformy pro participaci veřejnosti a sdílení a budování znalostí v otázkách ochrany klimatu
+2. **EU jako globální lídr** – jakou roli chce Unie hrát v mezinárodním úsilí zaměřeném na ochranu klimatu
+3. **Evropský klimatický pakt** – představení platformy pro participaci veřejnosti a sdílení a budování znalostí v otázkách ochrany klimatu
 
 Jako konkrétní příklady politik, které se Zelenou dohodou úzce souvisí, lze uvést třeba Novou zelenou úsporám, 40 miliard korun pro uhelné regiony nebo bezemisní automobily od roku 2035.
 
@@ -44,6 +42,7 @@ Cíle Zelené dohody vzápětí [podpořila](https://www.consilium.europa.eu/en/
 
 {% include figure.html
     name="cs-schema-politik-des.svg"
+    name-mobile="cs-schema-politik-mob.svg"
     alt="Schéma ukazuje provázanost Zelené dohody, Evropského klimatického zákona a balíčku Fit for 55. Zelená dohoda pro Evropu je strategickým dokumentem pro naplnění klimatických cílů. Na ni navazuje jak Evropský klimatický zákon, který EU právně zavazuje klimatických cílů dosáhnout, tak Fit for 55, tedy balíček opatření k dosažení cíle pro rok 2030."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/"
@@ -77,6 +76,7 @@ Mezikrokem k dosažení klimatické neutrality EU je snížit unijní emise skle
 
 {% include figure.html
     name="cs-vyvoj-emisi-trajektorie-des.svg"
+    name-mobile="cs-vyvoj-emisi-trajektorie-mob.svg"
     alt="Emise skleníkových plynů v EU začaly významněji klesat po finanční krizi v roce 2008, přičemž od roku 1990 (4901 Mt CO2eq) do roku 2020 (3354 Mt CO2eq) poklesly o 32 %. Větší pokles v roce 2020 byl způsoben především útlumem ekonomiky kvůli pandemii koronaviru a podle všeho se emise vrátí na svou původní trajektorii. Graf naznačuje, jak by mohl vypadat vývoj emisí, pokud by bylo dosaženo klimatických cílů – poklesu o 55 % do roku 2030 oproti roku 1990 a dosažení klimatické neutrality v roce 2050."
     source-text="Infografika Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/infografiky/emise-eu-vyvoj"
@@ -87,17 +87,17 @@ Mezikrokem k dosažení klimatické neutrality EU je snížit unijní emise skle
 Zelená dohoda není dokumentem, který nebere v potaz společenský a ekonomický kontext členských států nebo EU jako celku. Naopak se opírá o několik základních východisek, která jednotlivými návrhy prostupují.
 
 1. **Ekonomický růst ano, ale oddělený od využívání zdrojů**<br>
-   Zelená dohoda neusiluje o snižování prosperity. Zaměřuje na ekonomicky prosperující společnost, omezení emisí skleníkových plynů a ukončení extraktivního využívání zdrojů.[^rustova-strategie]
+   Zelená dohoda neusiluje o snižování prosperity. Zaměřuje na ekonomicky prosperující společnost, omezení emisí skleníkových plynů a ukončení nadměrného využívání zdrojů.[^rustova-strategie]
 2. **Spravedlivá transformace**<br>
    Transformace ekonomiky může negativně dopadat na regiony a domácnosti (vysoké ceny energií, ztráta zaměstnání apod.), proto se Zelená dohoda zaměřuje na jejich podporu (například finančními prostředky z Fondu pro spravedlivou transformaci). Zároveň vytváří platformu, která umožňuje zapojení veřejnosti prostřednictvím [Evropského klimatického paktu](https://climate.ec.europa.eu/eu-action/european-green-deal/european-climate-pact_cs).
 3. **Respekt k rozdílné výchozí pozici jednotlivých států**<br>
    Klimatické cíle obsažené v Zelené dohodě se zpravidla týkají EU jako celku, přičemž pro jednotlivé členské státy se mohou lišit. Například dosažení klimatické neutrality na úrovni EU teoreticky znamená, že v některých státech mohou být i v roce 2050 emise skleníkových plynů kladné, pokud budou v jiných záporné.[^klimaticka-neutralita-staty] Jako další příklad může posloužit návrh [nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0555). To ukládá, o kolik mají poklesnout emise v sektorech nepokrytých emisními povolenkami. Zatímco Česku toto nařízení ukládá snížit emise o 26 % do roku 2030 ve srovnání s rokem 2005, pro Dánsko, Německo, Lucembursko, Finsko nebo Švédsko je to 50 %. Rozdílné podmínky mají státy i z hlediska dostupných financí – pro průmyslovější země více závislé na fosilních palivech je na modernizaci a dekarbonizaci ekonomiky vyhrazeno více prostředků.
-4. **Ochrana klimatu jako součást všech politik** (*climate mainstreaming,[^klimaticky-mainstreaming] do no harm*)<br>
+4. **Ochrana klimatu jako součást všech politik** (*climate mainstreaming, do no harm*[^klimaticky-mainstreaming])<br>
    Abychom dosáhli klimatických cílů, je třeba ochranu klimatu promítnout do všech unijních politik. A to i v oblastech, které skleníkové plyny přímo neprodukují: financování a rozpočtování, inovace či vzdělávání. V praxi to znamená přesun [soukromého kapitálu](#soukromý-kapitál) k udržitelným aktivitám nebo konec dotací na fosilní paliva.
 5. **Znečišťovatel platí**<br>
-   Jde o základní princip unijní klimatické politiky. Znečišťovatel musí platit za emise skleníkových plynů, které vypouští, což jej motivuje k jejich snižování.
+   Jde o základní princip unijní klimatické politiky. Znečišťovatel musí platit za emise skleníkových plynů, které vypouští, což jej motivuje k jejich snižování. Výnosy ze zpoplatnění emisí je navíc možné využít na modernizaci a dekarbonizaci ekonomiky.
 6. **EU jako globální lídr**<br>
-   EU chce svým úsilí v ochraně klimatu inspirovat ostatní země. Iniciuje proto spolupráci na multilaterální úrovni (na půdě mezinárodních organizací) i spolupráci bilaterální (s konkrétní partnerskou zemí). Dále se angažuje v rozvoji mezinárodních trhů s uhlíkem nebo norem pro globální hodnotové řetězce, aby bylo zajištěno, že je udržitelný celý proces výroby určitého produktu, ne pouze jeho část.
+   EU chce svým úsilí v ochraně klimatu inspirovat ostatní země. Iniciuje proto spolupráci na multilaterální úrovni (na půdě mezinárodních organizací) i spolupráci bilaterální (s konkrétní partnerskou zemí). Dále se angažuje v rozvoji mezinárodních trhů s uhlíkem nebo norem pro [globální hodnotové řetězce](https://cs.wikipedia.org/wiki/Hodnotov%C3%BD_%C5%99et%C4%9Bzec), aby byla zajištěna udržitelnost v rámci celého životního cyklu produktu.
 
 ## Jaká opatření navrhuje v jednotlivých oblastech?
 
@@ -105,11 +105,16 @@ Následující kapitola blíže představuje **vybrané návrhy[^vycet] Zelené 
 
 ### Čistá energetika
 
+{% include lead-in-figure.html
+    name="cs-energetika.svg"
+    alt="Piktogram větrné elektrárny a solárního panelu na budově"
+%}
+
 Energetika se na celkových emisích skleníkových plynů v EU podílí nejvíce – v roce 2019 to bylo 26 %.[^eurostat] Emise zde vznikají především spalováním fosilních paliv (zejm. uhlí a zemní plyn) při výrobě elektřiny a tepla.
 
 Aby došlo k jejich poklesu, je potřeba tato fosilní paliva postupně nahradit **obnovitelnými zdroji energie** (OZE) – především větrnými elektrárnami na pevnině i moři a solárními panely – a investovat do **energetické účinnosti a úspor**. Budoucnost evropské energetiky je důležité vnímat jako společný podnik: zásadní bude posílení přeshraniční infrastruktury a spolupráce (aby například větrné elektrárny v Baltském moři mohly dodávat elektřinu i do vnitrozemních států jako ČR). Transformace energetiky však nemá jen technologický rozměr, má i rozměr spotřebitelský, potažmo sociální. Proto Zelená dohoda vyzdvihuje význam zapojení spotřebitelů do energetické transformace, tedy **komunitní energetiku** a **podporu obyvatel ohrožených energetickou chudobou**.
 
-Jak už bylo zmíněno v úvodu, do praxe budou cíle Zelené dohody uváděny především prostřednictvím balíčku legislativních návrhů [Fit for 55](/infografiky/fit-for-55). V oblasti energetiky jde o navýšení podílu OZE na unijním energetickém mixu 40–45 %[^trialog] v roce 2030 (viz [Revize směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557)) nebo o snížení spotřeby energie do roku 2030 o 9–13 % ve srovnání s rokem 2020 (viz [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558)).
+Jak už bylo zmíněno v úvodu, do praxe budou cíle Zelené dohody uváděny především prostřednictvím balíčku legislativních návrhů [Fit for 55](/infografiky/fit-for-55). V oblasti energetiky jde o navýšení podílu OZE na unijním energetickém mixu na 40–45 %[^trialog] v roce 2030 (viz revize [Směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557)) nebo o snížení spotřeby energie do roku 2030 o 9–13 % ve srovnání s rokem 2020 (viz revize [Směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558)).
 
 V reakci na ruskou invazi na Ukrajinu a **nutnost zbavit se závislosti na fosilních palivech z Ruska** představila Komise na jaře 2022 balíček nazvaný [**RePowerEU**](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/repowereu-affordable-secure-and-sustainable-energy-europe_cs), jenž ambice Zelené dohody v oblasti energetiky dále zvyšuje. V praxi to například znamená, že byly úpraveny cíle v návrzích Fit for 55 – přímým důsledkem jsou horní hranice cílů v oblasti OZE a energetických úspor (45 a 13 %), které jsou zmíněny výše.
 
@@ -131,13 +136,23 @@ Co se týče současného NECP v Česku z roku 2019, je v [porovnání](/infogra
 
 ### Udržitelná mobilita
 
+{% include lead-in-figure.html
+    name="cs-doprava.svg"
+    alt="Piktogram tramvaje, kola a nabíjecí stanice"
+%}
+
 Doprava následuje v objemu emisí skleníkových plynů EU těsně za energetikou, v roce 2019 se rovněž podílela na 26 % z nich.[^eurostat] Na rozdíl od všech ostatních sektorů hospodářství emise z dopravy [stále rostou](/infografiky/emise-eu-vyvoj) – v roce 2019 byly o 33 % vyšší než v roce 1990. Vznikají spalováním fosilních paliv, především ropy, v motorech silničních dopravních prostředků (v roce 2019 to bylo 81 %, zatímco letecká doprava tvořila 15 %).
 
 Podle Zelené dohody je důležité, aby cena dopravy odrážela nejen cenu nákladů, ale i **její dopady na životní prostředí a zdraví**. Jak tyto dopady snížit? Většinou se v této souvislosti mluví hlavně o nahrazení spalovacích motorů elektrickými a o rozvoji syntetických paliv tam, kde elektrifikace zatím není variantou (např. u leteckých paliv). Významnou roli bude hrát i snížení celkové dopravní zátěže, rozvoj hromadné dopravy a cyklistiky.
 
-Součástí Zelené dohody je proto **rozšíření a úprava systému obchodování s** [**emisními povolenkami**](/explainery/emisni-povolenky-ets). Konkrétně jde o a) rozšíření emisních povolenek na sektory silniční a námořní dopravy a b) snížení množství povolenek přidělovaných zdarma leteckým společnostem.[^rozsireni-eu-ets] K poklesu emisí má přispět i **ukončení poskytování dotací na fosilní paliva** a úpravy směrnice osvobozující letecká a námořní paliva od daně (viz [revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563)). Dále Zelená dohoda navrhuje **dosažení nulových emisí CO<sub>2</sub> u osobních automobilů a dodávek**, na čemž už se shodly i členské státy.[^co2-emise-auta]
+Součástí Zelené dohody je proto **rozšíření a úprava systému obchodování s** [**emisními povolenkami**](/explainery/emisni-povolenky-ets). Konkrétně jde o a) rozšíření emisních povolenek na sektory silniční a námořní dopravy a b) snížení množství povolenek přidělovaných zdarma leteckým společnostem.[^rozsireni-eu-ets] K poklesu emisí má přispět i **ukončení poskytování dotací na fosilní paliva** a úpravy směrnice osvobozující letecká a námořní paliva od daně (viz revize [Směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563)). Dále Zelená dohoda navrhuje **dosažení nulových emisí CO<sub>2</sub> u osobních automobilů a dodávek**, na čemž už se shodly i členské státy.[^co2-emise-auta]
 
 ### Renovace budov
+
+{% include lead-in-figure.html
+    name="cs-budovy.svg"
+    alt="Piktogram solárního panelu na budově"
+%}
 
 Sektor budov spotřebuje až 40 % energie vyrobené v EU a podílí se na 36 % emisí skleníkových plynů.[^emise-budovy] Ty vznikají jednak spalováním fosilních paliv v samotných budovách (vytápěním, ohřevem vody nebo vařením) a jednak ve stavebnictví (při výrobě stavebního materiálu, stavbě či renovaci).
 
@@ -148,6 +163,11 @@ V této oblasti vznikla strategie s názvem [Renovační vlna pro Evropu](https:
 Podobně jako silniční doprava by i sektor budov měl být zahrnut do **systému obchodování s emisními povolenkami** (tzv. EU ETS 2). Současně s tímto opatřením má vzniknout [Sociální klimatický fond](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0568), jenž má být financován právě výnosy z prodeje emisních povolenek v silniční dopravě a sektoru budov. Fond by sloužil jako **finanční podpora pro domácnosti**, pro které bude nejtěžší zvládat případné zdražování v těchto sektorech. Česko by v rámci tohoto fondu, pokud bude schválen, mělo obdržet přibližně [45 miliard Kč](/infografiky/fondy-eu). Tyto prostředky by měly směřovat k podpoře energetické účinnosti budov, instalaci OZE či bezemisní dopravy.
 
 ### Dekarbonizace průmyslu a oběhové hospodářství
+
+{% include lead-in-figure.html
+    name="cs-prumysl.svg"
+    alt="Piktogram ozubených kol a šipek v kruhu"
+%}
 
 Průmysl se v roce 2019 podílel na unijních emisích skleníkových plynů přibližně 21 %. Emise zde vznikají jednak spalováním fosilních paliv při procesech zahřívání, jednak v chemických reakcích při výrobě cementu, železa a oceli. Průmysl navíc nezatěžuje životní prostředí pouze skleníkovými plyny, ale i těžbou a zpracováním přírodních materiálů. To představuje další zátěž pro ekosystémy a je jednou z příčin ztráty biodiverzity. Místa s intenzivní těžbou se také často potýkají s nedostatkem vody.
 
@@ -173,6 +193,11 @@ S dekarbonizací průmyslu úzce souvisí i otázky spojené se surovinami či v
 
 ### Udržitelné zemědělství
 
+{% include lead-in-figure.html
+    name="cs-zemedelstvi.svg"
+    alt="Piktogram zeleniny"
+%}
+
 Zemědělství se v roce 2019 podílelo na celkových emisích skleníkových plynů v EU z 10 %.[^eurostat] Emise zde vznikají především při chovu dobytka (emise metanu) a při obdělávání zemědělské půdy (uvolňování oxidu dusného).
 
 Řešením je rozvoj udržitelného zemedělství, které podpoří **zachytávání uhlíku v půdě** a bude využívat **více přírodě blízkých postupů** (precizní zemědělství oproti plošnému, agrolesnictví, omezení chemických hnojiv a pesticidů a další). Přírodě bližší zemědělství je současně zásadní i pro **produkci zdravých, výživných a finančně dostupných potravin**.
@@ -187,6 +212,11 @@ Cíle a plány Zelené dohody vedoucí k rozvoji udržitelného zemědělství s
     slug="ubyvani-biodiverzity"
 %}
 
+{% include lead-in-figure.html
+    name="cs-biodiverzita.svg"
+    alt="Piktogram fauny a flóry"
+%}
+
 Ochrana a obnova biodiverzity a ekosystémů je stejně velkým tématem jako změna klimatu, i když se jí zatím dostává méně pozornosti. Přitom klimatická a biodiverzitní krize spolu úzce souvisejí – změna klimatu je jednou z příčin ubývání biodiverzity. Mezi další příčiny patří mizení biotopů, nadměrná exploatace, vysoká míra znečištění a šíření nepůvodních druhů.
 
 I obnova biodiverzity by proto měla prostupovat unijními politikami a financovanými programy ([*biodiversity mainstreaming*](https://ec.europa.eu/info/strategy/eu-budget/performance-and-reporting/mainstreaming/biodiversity-mainstreaming_en)) a významná část prostředků z unijního rozpočtu na klima (30 %) by měla směřovat k podpoře biodiverzity. Obnova biodiverzity povede mimo jiné ke zvýšení odolnosti – přírody i lidské společnosti – vůči dopadům změny klimatu, lesním požárům či nedostatku potravin. 
@@ -194,6 +224,11 @@ I obnova biodiverzity by proto měla prostupovat unijními politikami a financov
 Jak toho dosáhnout, nastiňuje evropská [Strategie v oblasti biologické rozmanitosti do roku 2030](https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_cs). V návaznosti na ni pak představila Komise v červnu 2022 návrh přelomové legislativy – [zákon o obnově přírody](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-law_cs) (*Nature Restoration Law*). V oblasti lesů představila Komise novou [Lesní strategii do roku 2030](https://environment.ec.europa.eu/strategy/forest-strategy_cs). Ta by měla zajistit, že evropské lesy budou zdravější a zároveň odolnější vůči novým klimatickým podmínkám. Její obsah přibližujeme v [explaineru](/explainery/lesnicka-strategie-eu). Obě zmíněné strategie pak úzce souvisejí s výše zmíněnou strategií v oblasti udržitelného zemědělství *Od zemědělce ke spotřebiteli* a všechny tři se pak propisují do legislativního návrhu [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0554) v balíčku Fit for 55.
 
 ### Nulové znečištění
+
+{% include lead-in-figure.html
+    name="cs-znecisteni.svg"
+    alt="Piktogram továrny, ze které jde dým"
+%}
 
 Poslední kapitola Zelené dohody se týká znečištění ovzduší, půd a vod. Významným nástrojem by mělo být zlepšení monitoringu tohoto znečištění. Ambicí EU není nic menšího než **do roku 2050 dosáhnout nulového znečištění**. Jinými slovy: mělo by dojít ke snížení znečištění na takovou úroveň, která již nebude pro zdraví a přírodní ekosystémy škodlivá a se kterou se příroda zvládne vypořádat sama. Konkrétní cesty k tomuto cíli představuje [akční plán pro nulové znečištění](https://environment.ec.europa.eu/strategy/zero-pollution-action-plan_cs).
 
@@ -205,7 +240,7 @@ Otázka, z čeho celou transformaci k bezemisní ekonomice zaplatit, zaznívá �
 
 Finance na klimatická a dekarbonizační opatření pocházejí v EU především:
 - **z rozpočtu Unie**,
-- **z příjmů z dluhopisů** (*NextGenerationEU*), kterými si státy EU společně půjčily na obnovu po koronavirové pandemii,
+- **z prodeje z dluhopisů** (*NextGenerationEU*), kterými si státy EU společně půjčily na obnovu po koronavirové pandemii,
 - **z výnosů z prodeje emisních povolenek**.
 
 Tyto prostředky jsou rozdělovány mezi několik fondů, v rámci kterých pak plynou členským státům. Alespoň [30 % unijního rozpočtu a příjmů z dluhopisů](https://ec.europa.eu/info/strategy/eu-budget/performance-and-reporting/mainstreaming_cs#climate) pro období 2021–2027 by mělo být využito na klimaticky prospěšná opatření.
@@ -244,7 +279,7 @@ Zelená dohoda jako taková představuje rámec pro celou EU. Z hlediska jejího
 
 - Transformace představuje pro Česko výzvu v technologické i sociální rovině.
 - V technologické rovině jde zejména o výrobu elektřiny a **změnu energetického mixu** ve prospěch většího zastoupení obnovitelných zdrojů energie (OZE) a o otázky spojené s budováním infrastruktury pro přeshraniční přenos elektřiny. (V současnosti vyrábíme v ČR 50 % elektřiny z uhlí a plynu, 37 % z jádra a 13 % z OZE.[^ember])
-- V sociální rovině jde hlavně o zvládnutí výzev spojených s **nezaměstnaností** a **energetickou chudobou**. Bude nutné rekvalifikovat a podporovat obyvatele, kteří kvůli dekarbonizaci přijdou o zaměstnání, například v důsledku zavírání uhelných dolů nebo proměny automobilového průmyslu. Stejně tak bude nezbytná podpora ekonomicky zranitelných domácností, aby si mohly dovolit pořídit například solární panely nebo tepelná čerpadla.
+- V sociální rovině jde hlavně o zvládnutí výzev spojených se **změnami na trhu práce** a **energetickou chudobou**. Bude nutné rekvalifikovat a podporovat obyvatele, kteří kvůli dekarbonizaci přijdou o zaměstnání, například v důsledku zavírání uhelných dolů nebo proměny automobilového průmyslu. Stejně tak bude nezbytná podpora ekonomicky zranitelných domácností, aby si mohly dovolit pořídit například solární panely nebo tepelná čerpadla.
 - Je nezbytné **najít způsob, jak dekarbonizovat české firmy**. Stát by jim měl k tomu poskytnout potřebnou podporu.
 - Do Česka proudí a bude proudit **bezprecedentní objem peněz**. Otázka tak není, kde získat finance, ale jak navrhnout a vybrat projekty, které budou mít kýžený dopad.
 - V kontextu výše zmíněného **je proto potřeba, aby si Česko definovalo a přijalo roli**, kterou chce v probíhající transformaci k bezemisnímu hospodářství hrát.
@@ -252,7 +287,7 @@ Zelená dohoda jako taková představuje rámec pro celou EU. Z hlediska jejího
 ## Poznámky a zdroje
 
 [^rustova-strategie]: Zelená dohoda pro Evropu je založena na myšlence *zeleného růstu*, jinými slovy: HDP roste a emise skleníkových plynů klesají. Oddělení růstu HDP od růstu emisí skleníkových plynů se označuje anglickým slovem *decoupling*. Součástí společenské diskuze jsou však i kritické teorie, podle kterých není možné dosáhnout klimatických cílů a zároveň ekonomicky růst – v tomto ohledu lze odkázat např. na [školu nerůstu (*degrowth*)](https://cs.wikipedia.org/wiki/Nerůst).
-[^klimaticky-mainstreaming]: Pro implementaci a prosazování klimatických cílů do ostatních politik se využívá termín *klimatický mainstreaming*. O klimatickém mainstreamingu na úrovni Evropské unie se lze dočíst více [na stránkách Evropské komise](https://ec.europa.eu/info/strategy/eu-budget/performance-and-reporting/mainstreaming_cs#climate).
+[^klimaticky-mainstreaming]: Pro implementaci a prosazování klimatických cílů do ostatních politik se využívá termín *klimatický mainstreaming*. O klimatickém mainstreamingu na úrovni Evropské unie se lze dočíst více [na stránkách Evropské komise](https://ec.europa.eu/info/strategy/eu-budget/performance-and-reporting/mainstreaming_cs#climate). Zásada *do no harm*, česky nepoškozovat, požaduje, aby legislativní akty v jedné oblasti, například klimatu, nepoškozovaly jinou z oblastí, například biodiverzitu. Je důležitou součástí environmentálního práva Unie.
 [^cesko-otepleni]: Česká republika se přitom otepluje přibližně 2× rychleji, než je světový průměr. Tzn. že globální oteplení o 2 °C představuje pro Česko oteplení o 4 °C. Více o rychlosti oteplování na různých místech planety se dočtete v [naší infografice](/infografiky/mapa-zmeny-teploty).
 [^babis]: Česko v té době na jednání Evropské rady zastupoval premiér Andrej Babiš.
 [^pravni-zavaznost]: Právní závaznost klimatických cílů znamená, že EU (potažmo členské státy) odpovídají za jejich naplnění, a Komisi zavazuje k pravidelnému přezkoumávání, zda k tomuto naplňování skutečně dochází. Nedochází-li, je Komise povinna přijmout nezbytná opatření k nápravě.
@@ -263,8 +298,7 @@ Zelená dohoda jako taková představuje rámec pro celou EU. Z hlediska jejího
 [^co2-emise-auta]: Členské státy EU se už [v rámci balíčku Fit for 55](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0556) shodly na tom, že od roku 2035 nebude možné vyrábět nové vozy se spalovacími motory vypouštějícími emise CO<sub>2</sub>.
 [^eurostat]: Aktuální data o emisích skleníkových plynů v EU poskytuje databáze [Eurostat](https://ec.europa.eu/eurostat/databrowser/view/ENV_AIR_GGE/default/table?lang=en).
 [^emise-budovy]: Hodnoty o spotřebě energie a emisích skleníkových plynů v sektoru budov pochází z roku 2020. Na svých stránkách je uvádí [Evropská komise](https://ec.europa.eu/info/news/focus-energy-efficiency-buildings-2020-lut-17_en).
-[^renovacni-vlna]: Zmíněné priority v sektoru budov se odráží v legislativním [návrhu směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD), jenž je součástí balíčku Fit for 55.
-[^ochrana-prumyslu]: V zemích mimo EU mnohdy neplatí tak přísné standardy pro emise skleníkových plynů. To je v případě dovozu do EU zvýhodňuje před domácími výrobci, kteří musí nakupovat emisní povolenky a investovat do dekarbonizačních procesů. Z toho důvodu dostávají domácí kritická a energeticky náročná odvětví povolenky zdarma.
+[^renovacni-vlna]: Zmíněné priority v sektoru budov se odráží v legislativním návrhu [Směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD), jenž je součástí balíčku Fit for 55.
 [^vodik-vysvetleni]: Zelený vodík se vyrábí elektrolýzou vody za využití energie z obnovitelných zdrojů.
 [^akcni-plan]: Na zmíněné návrhy Zelené dohody navázala Komise [akčním plánem pro oběhové hospodářství](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52020DC0098).
 [^ember]: Data o energetických mixech států přehledně zpřístupňuje think tank [Ember](https://ember-climate.org/data/data-explorer/).
