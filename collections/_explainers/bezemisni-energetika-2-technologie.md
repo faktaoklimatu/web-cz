@@ -62,13 +62,12 @@ V tomto textu se zabýváme především sezónní proměnlivostí – solární
 **Pro sezónně vyrovnanou výrobu v ČR z větru a slunce je potřeba, aby výrazně převažovala výroba z větru** (alespoň v poměru 3:1 ve prospěch větru[^OZE-vyvazeny-mix]). V Česku ale zatím máme značnou převahu výroby ze slunce (cca 3:1 ve prospěch slunce). To rozhodně neodpovídá rozložení spotřeby a vyžadovalo by to velké akumulační kapacity, tedy mít do čeho elektřinu ukládat, abychom ji mohli využít, když slunce tolik nesvítí:
 
 {% include figure.html
-    name="solar-wind-seasonality.png"
+    name="solar-wind-seasonality-des.svg"
+    name-mobile="solar-wind-seasonality-mob.svg"
     alt="Slunce a vítr se mohou vhodně doplňovat."
-    caption="Převaha větru by odpovídala spotřebě, převaha slunce bude vyžadovat sezónní akumulaci. Grafy ukazují hypotetickou výrobu ze slunce a větru na úrovni 60 TWh za rok, v poměru 3:1 a 1:3. Ukazujeme průměrnou čistou spotřebu (za roky 2015–2020) a rozložení výroby ze slunce a větru v ČR do jednotlivých měsíců (opět podle průměrů za roky 2015–2020)."
+    caption="Grafy ukazují hypotetickou výrobu ze slunce a větru v Česku na úrovni 60 TWh za rok, v poměru 3:1 a 1:3. Výroba je rozložená do jednotlivých měsíců podle průměrů za roky 2015–2020. Srovnáváme to s čistou spotřebou v jednotlivých měsících, opět průměrnou za roky 2015–2020."
     source-text="Fakta o klimatu"
 %}
-
-**Pro sezónní vyváženost výroby ze slunce a větru tedy v Česku potřebujeme zásadně podpořit využívání větrných zdrojů.**
 
 ## Jádro
 
