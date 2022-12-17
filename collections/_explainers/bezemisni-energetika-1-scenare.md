@@ -56,10 +56,9 @@ Problém, který řešíme, je tedy mnohem těžší než jen nahradit stávají
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby[^consumption-metric] až ke **100 TWh ročně**, jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
 
 {% include figure.html
-    name="consumption.svg"
-    class="seminarrow-figure"
-    alt="Ilustrativní vývoj spotřeby v ČR v dalších dekádách."
-    caption="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách – součet čisté spotřeby a ztrát v sítích."
+    name="consumption-des.svg"
+    class="narrow-figure"
+    alt="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách – součet čisté spotřeby a ztrát v sítích."
     source-text="Fakta o klimatu"
 %}
 
@@ -85,10 +84,10 @@ Modelování budoucí energetiky musí brát výše uvedená východiska v potaz
 
 Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti, zbytek stále stojí na vysokoemisních zdrojích – na využívání fosilních paliv:
 {% include figure.html
-    name="mix-current.svg"
-    alt="Současné pokrytí spotřeby v ČR"
-    caption="Současnou spotřebu pokrývají bezemisní zdroje jen zčásti."
-    source-text="Fakta o klimatu"
+    name="mix-current-des.svg"
+    name-mobile="mix-current-mob.svg"
+    alt="Současnou spotřebu pokrývají bezemisní zdroje jen zčásti."
+    source-text="Fakta o klimatu, data ERÚ"
 %}
 
 **V budoucnu potřebujeme tyto tři kategorie zdrojů uváženě kombinovat.** Například nějakou míru využití nízkoemisních flexibilních zdrojů potřebujeme v každém scénáři, více jich ale budeme potřebovat při velkém využívání elektřiny ze slunce a větru.
@@ -166,7 +165,7 @@ Rozvoj jádra sice snižuje tlak na ostatní kategorie zdrojů, může ale také
 {% endcapture %}
 {% include figure.html
     class="wide-figure-desktop wide-figure-mobile wide-figure-mobile-caption-below"
-    name="mix-success.png"
+    name="mix-success.svg"
     alt="Ilustrativní scénáře úspěšné dekarbonizace energetiky v ČR"
     caption=caption_comments
     source-text="Fakta o klimatu"
@@ -199,7 +198,7 @@ V případě **velkého zpoždění jaderných staveb** tak hrozí vysoké akumu
     col3=comment_fail_nuclear_vre%}
 {% endcapture %}
 {% include figure.html
-    name="mix-failure.png"
+    name="mix-failure.svg"
     class="wide-figure-mobile wide-figure-mobile-caption-below"
     alt="Ilustrativní scénáře neúspěšné dekarbonizace energetiky v Česku"
     caption=caption_comments_fail
@@ -248,11 +247,13 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
 
 {% capture seasonal_factors %}
 {% include figure.html
-    name="factors-solar-wind.svg"
-    alt="Průměrné koeficienty využití solárních a větrných zdrojů během roku"
-    caption="Průměrná míra využití solárních a větrných zdrojů během roku. Více v přehledech potenciálu [slunce](/infografiky/potencial-solarni-energie-cr-strechy) a [větru](/infografiky/potencial-vetrne-energie-cr) v ČR."
+    name="factors-solar-wind-des.svg"
+    name-mobile="factors-solar-wind-mob.svg"
+    alt="Průměrné výroba ze solárních a větrných zdrojů po měsících"
     source-text="Fakta o klimatu"
 %}
+Zatímco výroba z větru v létě je asi o polovinu nižší než v zimě, ze slunce vyrobíme v zimě jen zlomek toho co v létě. Více v přehledech potenciálu [solární](/infografiky/potencial-solarni-energie-cr-strechy) a [větrné](/infografiky/potencial-vetrne-energie-cr) energetiky v ČR.
+
 {% endcapture %}
 
 {% include expander-figure.html
@@ -267,10 +268,8 @@ Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat ka
 <!-- Pořád bychom totiž v zimní polovině roku **potřebovali pokrýt téměř 50 % spotřeby** flexibilními zdroji, jak ukazuje následující ilustrace. -->
 
 {% include figure.html
-    class="seminarrow-figure"
-    name="seasonal-baseline.png"
-    alt="Sezónní vyváženost ilustrativního mixu"
-    caption="Rozdělení výroby elektřiny do letní a zimní sezóny pro scénář s ambiciózním rozvojem větrné energetiky (bez nového jádra). Tento scénář vyžaduje velké množství flexibilních zdrojů, především v zimě."
+    name="seasonal-baseline.svg"
+    alt="Rozdělení výroby elektřiny do letní a zimní sezóny pro scénář s ambiciózním rozvojem větrné energetiky (bez nového jádra). Tento scénář vyžaduje velké množství flexibilních zdrojů, především v zimě."
     source-text="Fakta o klimatu"
 %}
 
@@ -286,26 +285,40 @@ Těmito způsoby však není nutné pokrýt celý rozdíl mezi zimní výrobou a
 * **Fosilní paliva s využitím CCS**, která můžou být vhodným zdrojem k pokrývání spotřebních špiček. Ani pomocí nich se ale nehodí vyrábět veškerou elektřinu, která nám v zimě chybí, protože i s jejich velkým využitím souvisí řada problémů, zejména pak zbytkové emise skleníkových plynů.
 
 {% capture seasonality %}
+Každý přístup doplňuje chybějící výrobu v zimě jiným způsobem. Všechny ale stále počítají s určitou mírou využití biomasy (příp. dalších flexibilních zdrojů).
+
 {% capture caption_comments_seasonality %}
 {% include columns.html
     class="longread-small"
     column-class="col-4"
     col1="
-#### A. slunce + vítr + zelený vodík
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ zelený vodík
 
 **Když posílíme výrobu ze slunce**, zimní výrobu doplní zčásti přímo slunce, zčásti **zelený vodík vyrobený v létě z přebytků elektřiny ze slunce** a zčásti biomasa a další flexibilní zdroje.
 
 Výroba zeleného vodíku ovšem zatím zůstává poměrně drahá."
     col2="
-#### B. slunce + vítr + import
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ import
 
 **Import (hlavně větrné výroby) ze zahraničí** může zmírnit tlak na využívání biomasy a dalších flexibilních zdrojů.
 
 Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a ta vyžaduje složité povolování a realizaci liniových staveb, např. elektrického vedení).
 "
     col3="
-{:start='3'}
-#### C. slunce + vítr + jádro
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ jádro
+
 **Ambiciózní rozvoj jaderné energetiky** (souběžně s rozvojem výroby ze slunce a větru) může rovněž zmírnit tlak na biomasu a další flexibilní zdroje.
 
 K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké jaderné bloky a několik malých modulárních reaktorů.
@@ -314,10 +327,9 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
 {% endcapture %}
 {% include figure.html
     class="wide-figure-mobile-caption-above mt-0"
-    name="seasonal-alternatives.png"
+    name="seasonal-alternatives.svg"
     alt="Sezónní vyváženost ilustrativního mixu"
     caption-above=caption_comments_seasonality
-    caption="Každý přístup doplňuje chybějící výrobu v zimě jiným způsobem. Všechny ale stále počítají s určitou mírou využití biomasy (příp. dalších flexibilních zdrojů)."
     source-text="Fakta o klimatu"
 %}
 {% endcapture %}
@@ -375,17 +387,29 @@ Mírné rozdíly v nákladech pochopitelně vychází také mezi jednotlivými s
     class="longread-small"
     column-class="col-4"
     col1="
-#### A. slunce + vítr + zelený vodík
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ zelený vodík
 
 Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení se ovšem mohou náklady snadno dostat na úroveň srovnatelnou s ostatními."
     col2="
-#### B. slunce + vítr + import
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ import
 
 Tento scénář vychází o něco levnější než scénář A, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí. Zároveň ale znamená o něco nižší energetickou nezávislost Česka. Přesnější odhady by vyžadovaly robustní studii nákladů spojených s posílením přenosových soustav.
 "
     col3="
-{:start='3'}
-#### C. slunce + vítr + jádro
+{:.scenar-spolecne}
+slunce a vítr
+
+{:.scenar-jedinecne}
+\+ zelený jádro
+
 Posílení jádra s sebou nese významné investiční riziko. Pokud by se podařilo udržet investice na podobné úrovni jako u referenčních projektů v minulosti, měl by tento scénář také poměrně nízké náklady. Při významném prodražení stavby nových jaderných bloků by ovšem tento scénář mohl vyjít jako nejdražší.
 "
 %}
