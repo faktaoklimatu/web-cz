@@ -215,7 +215,7 @@ V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výr
 {% include expander-figure.html
     name="failure-scenarios"
     expanded=true
-    class="wide-figure-desktop contrast-figure "
+    class="wide-figure-desktop contrast-figure"
     label-class="large-expander-title"
     label="Kontext: Jak mohou vypadat neúspěšné scénáře?"
     content=failure_scenarios
@@ -326,7 +326,7 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
 %}
 {% endcapture %}
 {% include figure.html
-    class="wide-figure-mobile-caption-above mt-0"
+    class="wide-figure-mobile wide-figure-mobile-caption-above mt-0"
     name="seasonal-alternatives.svg"
     alt="Sezónní vyváženost ilustrativního mixu"
     caption-above=caption_comments_seasonality
@@ -336,7 +336,7 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
 
 {% include expander-figure.html
     name="seasonality"
-    class="wide-figure-desktop wide-figure-mobile contrast-figure"
+    class="wide-figure-desktop contrast-figure"
     label-class="large-expander-title"
     label="Podrobnosti: Jak sezónní vyváženosti dosahují naše tři ilustrativní scénáře?"
     content=seasonality
@@ -415,7 +415,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 %}
 {% endcapture %}
 {% include figure.html
-    class="wide-figure-mobile-caption-above mt-0"
+    class="wide-figure-mobile wide-figure-mobile-caption-above mt-0"
     name="costs-2050.svg"
     alt="Současné systémové náklady"
     caption-above=caption_comments_costs
@@ -426,7 +426,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 
 {% include expander-figure.html
     name="cost-2050-details"
-    class="wide-figure-desktop wide-figure-mobile contrast-figure "
+    class="wide-figure-desktop contrast-figure"
     label-class="large-expander-title"
     label="Podrobnosti: Jaké jsou náklady jednotlivých scénářů?"
     content=cost_2050_details
