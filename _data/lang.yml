@@ -32,9 +32,11 @@ topic:
   intro-title: "Úvod"
   nutshell-id: "v-kostce"
   nutshell-title: "V kostce"
+  series-prefix: "Série: "
 
 text:
   toc: "Obsah"
+  tldr: "Shrnutí"
   study:
     study: "Studie"
     summary: "Hlavní závěry"
@@ -52,6 +54,7 @@ text:
     episode: "Podcast 2050"
   explainer:
     explainer: "Explainer"
+    series: "Díl série"
     source: "Zdroj"
     author: "Autor"
     licence: "Licence"
@@ -65,6 +68,9 @@ text:
   rss:
     more-online: "Více informací naleznete v plné verzi na našem webu."
   section-link: "Odkaz na sekci"
+  series:
+    previous: "<< Předchozí díl"
+    next: "Další díl >>"
 
 sidebar:
   download:
