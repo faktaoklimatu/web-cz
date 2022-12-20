@@ -170,7 +170,6 @@ subtopics:
   content:
   - bezemisni-energetika-1-scenare
   - bezemisni-energetika-2-technologie
-  - bezemisni-energetika-3-kratkodobe-cile
 
 - id:          "scenare-2050"
   title:       "Scénáře vývoje: Energetika v roce 2050"
