@@ -433,25 +433,25 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 
 ## Jaká rizika jsou s transformací elektroenergetiky spojena?
 
-Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu státu. Její **zásadní transformace je nutně spojena s řadou rizik**. Širokou škálu rizik spojených s **dopady změny klimatu** však přináší i zachování současného stavu, případně příliš pomalá a opatrná transformace. Základní přehled obou skupin rizik přinášíme níže, u transformačních rizik zacházíme do většího detailu.
+Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu státu. Její **zásadní transformace s sebou proto nutně nese řadu rizik**. Zároveň však širokou škálu rizik spojených s **dopady změny klimatu** přináší i zachování současného stavu, případně příliš pomalá a opatrná transformace. Základní přehled obou skupin rizik přinášíme níže, u transformačních rizik zacházíme do většího detailu.
 
 {% include figure.html
     name="risk-map.svg"
     name-mobile="risk-map-mob.svg"
-    alt="Přehled různých rizik transformace a netransformace energetiky"
-    caption="Přehled různých rizik transformace a netransformace energetiky (a jejich konkrétních příkladů)"
+    alt="Přehled různých rizik spojených s transformací a netransformací elektroenergetiky"
+    caption="Přehled různých rizik spojených s transformací a netransformací elektroenergetiky (a konkrétní příklady)"
     source-text="Fakta o klimatu"
 %}
 
-Zjednodušeně řečeno se může stát, že
-* budeme **transformovat podle scénáře, který se ukáže jako chybný** (např. Evropa příliš spoléhala na zemní plyn, což se ukázalo jako bezpečnostní riziko), nebo
+Zjednodušeně řečeno se může stát, že:
+* budeme **transformovat podle scénáře, který se ukáže jako chybný** (např. Evropa příliš spoléhala na zemní plyn, což se ukázalo jako bezpečnostní riziko) nebo
 * **k prosazení transformace zvolíme špatné regulace** (např. český nepovedený solární boom okolo roku 2010) nebo
-* se nám prostě solidní plán podpořený funkčními regulacemi **nepodaří dost rychle a levně zrealizovat** (např. když rozvoj větru nebo rozvoj přenosové soustavy výrazně zbrzdí povolovací procesy).
+* se nám zkrátka solidní plán podpořený funkčními regulacemi **nepodaří realizovat dost rychle a levně** (např. když schvalovací procesy způsobí výrazné zpoždění rozvoje větrných elektráren nebo přenosové soustavy).
 
 Ke snížení rizik spojených s transformací můžeme využít několik základních nástrojů:
-- **Diverzifikovaný** rozvoj nízkoemisních výrobních kapacit (a diverzifikace investic do výzkumu a vývoje).
-- **Široká škála možných pokračování** transformace. Potřebujeme zajistit, že na probíhající transformaci ve 20. letech bude moci navázat celá škála technicky smysluplných strategií ve 30. a 40. letech. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory).
-- **Dostatečná rezerva** ve výrobní kapacitě i v primárních energetických zdrojích. Taková rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
+- **Souběžně rozvíjet více druhů nízkoemisní výroby** (a diverzifikovat investice do různých oblastí výzkumu a vývoje).
+- **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech bude moci ve 30. a 40. letech navázat řada různých strategií, které jsou technologicky smysluplné. 
+- **Mít dostatečnou rezervu** ve výrobní kapacitě i v primárních zdrojích energie. Tato rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
 **Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně mírně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
 
