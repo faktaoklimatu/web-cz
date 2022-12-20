@@ -140,7 +140,7 @@ Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky
 
 ## Jak mohou vypadat úspěšné (a neúspěšné) scénáře?
 
-Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně nakonec zvolíme nějakou kompromisní cestu mezi těmito extrémy.
+Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně nakonec zvolíme nějakou kompromisní cestu mezi těmito extrémy. Všechny tři scénáře staví na velkém množství slunce a větru – bez jejich využití to během několika dalších dekád prostě nejde.
 
 {% assign comment_vre="
 Tento scénář vyžaduje nejvýraznější rozvoj obnovitelných zdrojů (OZE), tedy hlavně zdejší **solární a větrné energetiky**, ale předpokládá také nemalou část výroby z flexibilních zdrojů.
