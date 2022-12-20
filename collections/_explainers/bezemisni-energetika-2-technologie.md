@@ -105,7 +105,7 @@ Vzhledem k těmto vlastnostem jaderných elektráren a rychlosti rozvoji obnovit
 
 Kromě již zmíněných zdrojů lze k výrobě elektřiny využít i další technologie. Ty mohou v budoucím nízkoemisním mixu jen těžko hrát stěžejní úlohu, mohou nám ale posloužit jako zdroje doplňkové, jejichž výkon můžeme regulovat dle potřeby. Pro fungování celé soustavy jsou tyto flexibilní zdroje naprosto klíčové, protože mohou dodávat elektřinu, když právě nesvítí či nefouká (a nebo je některý z jaderných bloků v nečekané odstávce). V dalším textu se zaměřujeme na dnešní hlavní technologie, i když je samozřejmě možné, že se později v praxi prosadí něco úplně jiného.
 
-_TODO: Zahrnout i geotermál? Mluví se o něm, tak by to bylo dobrý vymezit_{:.todo}
+Protože se v tomto textu soustředíme na výrobu elektřiny, nebudeme podrobně rozvádět **geotermální zdroje**. Ty jsou v Česku [velmi důležitým bezemisním zdrojem **tepla**](https://www.ekonews.cz/nova-mapa-ukazuje-kde-se-daji-v-cesku-hloubit-geotermalni-vrty-energie-ze-zeme-ma-potencial/), příp. chladu. Z těchto zdrojů je možné (ve vybraných lokalitách v Česku) vyrábět spolu s teplem i elektřinu. Z pohledu dnešních nákladů je ale potenciál na výrobu elektřiny z geotermálních zdrojů v Česku nízký (v porovnání s ostatními technologiemi, které zde představujeme).
 
 ### Hydro
 {% include figure.html
