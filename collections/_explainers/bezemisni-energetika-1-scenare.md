@@ -361,7 +361,6 @@ Aby odhady budoucích nákladů dávaly smysl, musíme je porovnat se současný
 **V současné energetické krizi** nicméně systémové náklady v letech 2021/2022 stoupají až ke 285 miliardám ročně (4,40 Kč/kWh).[^cena-zemni-plyn] Převážná většina tohoto nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu. Je třeba dodat, že kvůli pravidlům na [trhu s elektřinou](/explainery/cena-elektriny-na-trhu) vzrostly ceny elektřiny na trhu a a pro koncové zákazníky ještě výrazněji.[^windfall-profits]
 
 {% include figure.html
-    class="seminarrow-figure"
     name="costs-2018.svg"
     name-mobile="costs-2018-mob.svg"
     alt="Hrubý odhad současných systémových nákladů na výrobu elektřiny"
@@ -408,7 +407,7 @@ Tento scénář vychází o něco levnější než scénář A, protože počít
 slunce a vítr
 
 {:.scenar-jedinecne}
-\+ zelený jádro
+\+ jádro
 
 Posílení jádra s sebou nese významné investiční riziko. Pokud by se podařilo udržet investice na podobné úrovni jako u referenčních projektů v minulosti, měl by tento scénář také poměrně nízké náklady. Při významném prodražení stavby nových jaderných bloků by ovšem tento scénář mohl vyjít jako nejdražší.
 "
@@ -419,7 +418,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
     name="costs-2050.svg"
     alt="Současné systémové náklady"
     caption-above=caption_comments_costs
-    caption="Hrubý odhad systémových nákladů na výrobu bezemisní elektřiny v Česku v roce 2050, bez daní."
+    caption="Hrubý odhad systémových nákladů na výrobu bezemisní elektřiny v Česku v roce 2050. Cena za 1kWh čisté spotřeby, bez daní (počítáno v dnešních cenách, tedy bez započítání inflace)."
     source-text="Fakta o klimatu"
 %}
 {% endcapture %}
@@ -428,7 +427,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
     name="cost-2050-details"
     class="wide-figure-desktop contrast-figure"
     label-class="large-expander-title"
-    label="Podrobnosti: Jaké jsou náklady jednotlivých scénářů?"
+    label="Podrobnosti: Jaké jsou systémové náklady jednotlivých scénářů v roce 2050?"
     content=cost_2050_details
 %}
 
