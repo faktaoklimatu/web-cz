@@ -71,6 +71,8 @@ text:
   series:
     previous: "<< Předchozí díl"
     next: "Další díl >>"
+  figure:
+    source: "Zdroj:"
 
 sidebar:
   download:
