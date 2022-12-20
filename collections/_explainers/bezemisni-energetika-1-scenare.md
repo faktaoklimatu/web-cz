@@ -230,14 +230,14 @@ V elektrické síti musí být výroba elektřiny vždy (zhruba) stejná jako je
 To je obzvlášť náročné v případě, kdy podstatná část elektřiny v síti pochází ze solárních a větrných zdrojů, jejichž výroba je značně proměnlivá. Základním nástrojem je tzv. _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které dokáží pokrýt spotřebu, i když právě nesvítí a nefouká.
 
 Z hlediska budoucí výroby elektřiny bez emisí nás zajímají dva různé časové horizonty:
-* **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (příp. zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne či týdne.
+* **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (případně zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne či týdne.
 * **Sezónní vyváženost** – jak v každém ročním období zajistíme, že výroba odpovídá spotřebě.
 
 ### Krátkodobé vyrovnávání
 
-Krátkodobé vyrovnávání je o něco snazší, protože máme k dispozici zdroje, které nedokážeme v takové míře provozovat trvale. Ať už jde o zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasa) či investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriová úložiště apod.) a nebo zdroje s vysokými provozními náklady (např. plynové zdroje s využitím CCS).
+Krátkodobé vyrovnávání je o něco snazší, protože máme k dispozici zdroje, které nedokážeme v takové míře provozovat trvale. Ať už jde o zdroje s omezeným objemem roční výroby (např. vodní elektrárny nebo bioplyn a biomasu) či investičně nákladná úložiště s omezenou kapacitou (přečerpávací elektrárny, bateriová úložiště apod.) a nebo zdroje s vysokými provozními náklady (např. plynové zdroje s využitím CCS).
 
-Ani toto krátkodobé balancování však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární ani větrné elektrárny v Česku téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
+Ani toto krátkodobé balancování však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární či větrné elektrárny téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
 
 Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich tří ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném explaineru.
 
@@ -281,8 +281,8 @@ Zatímco výroba z větru v létě je asi o polovinu nižší než v zimě, ze s
 {: .upper-alpha}
 
 Těmito způsoby však není nutné pokrýt celý rozdíl mezi zimní výrobou a spotřebou. Využít lze i další, **doplňkové flexibilní zdroje**:
-* **Biomasu**, která se dobře skladuje a je vhodná pro menší teplárenské bloky (tj. kromě elektřiny, která je v zimě potřeba, může poskytnout i potřebné teplo). Veškerou zbývající spotřebu elektřiny v zimní sezóně s ní ale pokrýt nemůžeme. To by totiž oproti dnešku znamenalo výrazný nárůst spotřeby biomasy (např. stromů) pro energetické účely[^aktualni-skala-biomasy], což by bylo v konfliktu s dalšími hodnotami, jako je například [biodiverzita](/explainery/ubyvani-biodiverzity) nebo estetika krajiny.
-* **Fosilní paliva s využitím CCS**, která můžou být vhodným zdrojem k pokrývání spotřebních špiček. Ani pomocí nich se ale nehodí vyrábět veškerou elektřinu, která nám v zimě chybí, protože i s jejich velkým využitím souvisí řada problémů, zejména pak zbytkové emise skleníkových plynů.
+* **Biomasu**, která se dobře skladuje a je vhodná pro menší teplárenské bloky (tj. kromě části elektřiny, která v zimě chybí, může poskytnout i potřebné teplo). Veškerou zbývající spotřebu elektřiny v zimní sezóně s ní ale pokrýt nemůžeme. To by totiž oproti dnešku znamenalo výrazný nárůst spotřeby biomasy (např. stromů) pro energetické účely[^aktualni-skala-biomasy], což by bylo v konfliktu s dalšími hodnotami, jako je například [biodiverzita](/explainery/ubyvani-biodiverzity) nebo estetika krajiny.
+* **Fosilní paliva s využitím CCS**, která mohou být vhodným zdrojem k pokrývání spotřebních špiček. Ani pomocí nich se ale nehodí vyrábět veškerou elektřinu, která nám v zimě chybí, protože i s jejich velkým využitím souvisí řada problémů, zejména pak zbytkové emise skleníkových plynů.
 
 {% capture seasonality %}
 Každý přístup doplňuje chybějící výrobu v zimě jiným způsobem. Všechny ale stále počítají s určitou mírou využití biomasy (příp. dalších flexibilních zdrojů).
@@ -310,7 +310,7 @@ slunce a vítr
 
 **Import (hlavně větrné výroby) ze zahraničí** může zmírnit tlak na využívání biomasy a dalších flexibilních zdrojů.
 
-Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a ta vyžaduje složité povolování a realizaci liniových staveb, např. elektrického vedení).
+Import v takové míře ovšem není možný, aniž by došlo k posílení evropské přenosové soustavy (a to vyžaduje složité povolování a realizaci liniových staveb, např. elektrického vedení).
 "
     col3="
 {:.scenar-spolecne}
@@ -358,7 +358,7 @@ V tomto textu budeme používat dnešní ceny jednotlivých technologií[^cena-t
 
 Aby odhady budoucích nákladů dávaly smysl, musíme je porovnat se současnými náklady. Podle hrubých odhadů Fakt o klimatu byly **v roce 2018 české systémové náklady na výrobu elektřiny cca 180–220 miliard korun ročně.** Z toho palivo tvořilo asi 30 miliard, investiční náklady na elektrárny zhruba 50–90 miliard[^cena-fixni-naklady], fixní provozní náklady elektráren přibližně 40 miliard a zbylých 60 miliard směřovalo na provoz celé sítě, placené pomocí regulované složky ceny elektřiny[^cena-regulovane-elektriny]. V tomto odhadu nejsou započítány emisní povolenky[^cena-povolenky] ani další daně. Celkově v přepočtu **na 1 kWh čisté spotřeby jsme měli v roce 2018 systémové náklady okolo 3,00–3,60 Kč/kWh.**
 
-**V současné energetické krizi** nicméně systémové náklady v letech 2021/2022 stoupají až ke 285 miliardám ročně (4,40 Kč/kWh).[^cena-zemni-plyn] Převážná většina tohoto nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu. Je třeba dodat, že kvůli pravidlům na [trhu s elektřinou](/explainery/cena-elektriny-na-trhu) vzrostly ceny elektřiny na trhu a a pro koncové zákazníky ještě výrazněji.[^windfall-profits]
+**V současné energetické krizi** nicméně systémové náklady v letech 2021/2022 stoupají až ke 285 miliardám ročně (4,40 Kč/kWh).[^cena-zemni-plyn] Převážná většina tohoto nárůstu jde na vrub mnohonásobně vyšší ceně zemního plynu. Je třeba dodat, že kvůli pravidlům na [trhu s elektřinou](/explainery/cena-elektriny-na-trhu) tržní cena elektřiny vzrostla, pro koncové zákazníky pak ceny stouply ještě výrazněji.[^windfall-profits]
 
 {% include figure.html
     name="costs-2018.svg"
@@ -374,7 +374,7 @@ Podobným postupem jsme odhadli systémové náklady pro naše tři ilustrativn�
 - **Neefektivita nadvýroby.** Výrazné využívání slunce a větru s sebou přináší po mnoho hodin v roce znatelnou nadvýrobu, kterou musíme započítat do systémových nákladů.[^cena-nadvyroba] Kdyby například tato nadvýroba byla 10 TWh za rok, bude nás to ročně stát okolo 15 miliard navíc.
 - **Náklady na záložní zdroje.** Záložní zdroje nejsou potřeba jen kvůli slunci a větru, ale i na (nečekané) odstávky jaderných bloků. Například při využití záložní elektrárny jen 15 % času v roce je potřeba její investiční náklady rozpočítat na mnohem menší množství vyrobené elektřiny. Běžně uváděné hodnoty LCOE často předpokládají maximální využití elektráren, a jsou tedy pro záložní elektrárny zavádějící. Udržování záložních elektráren může Česko stát několik desítek miliard korun ročně.[^cena-paroplynova-zaloha]
 - **Náklady na výraznější posilování přenosové a distribuční soustavy** by byly významné pro scénář založený na velkém podílu slunce a větru, zvlášť pokud bychom importovali hodně elektřiny ze zahraničí. Nad rámec dnes běžných investic to pro Česko mohou být opět desítky miliard korun každý rok.[^cena-rozvoj-site]
-- **Riziko dalších nákladů spojených se stavbou a likvidací jednotlivých zdrojů.** Může jít o prodražení jaderných staveb, nečekaně vysoké náklady na stavbu trvalého úložiště jaderného odpadu nebo nečekaně vysoké náklady na recyklaci komponent obnovitelných zdrojů. Prodražení stavby dvou nových velkých jaderných bloků na dvojnásobek odhadovaných investic (což je v Evropě v posledních dekádách poměrně běžné) by například znamenalo dodatečné každoroční náklady asi 30 miliard ročně.[^cena-prodrazeni-jadra]
+- **Riziko dalších nákladů spojených se stavbou a likvidací jednotlivých zdrojů.** Může jít o prodražení jaderných staveb, nečekaně vysoké náklady na stavbu trvalého úložiště jaderného odpadu nebo nečekaně vysoké náklady na recyklaci komponent obnovitelných zdrojů. Prodražení stavby dvou nových velkých jaderných bloků na dvojnásobek odhadovaných investic (což je zdražení, které je v Evropě v posledních dekádách poměrně běžné) by například znamenalo dodatečné každoroční náklady asi 30 miliard.[^cena-prodrazeni-jadra]
 
 **U všech tří scénářů vychází pro rok 2050 rozumné systémové náklady, v rozsahu 3,50–4,20 Kč / KWh** (počítáno v dnešních cenách, tedy bez započítání inflace). Tyto náklady jsou sice potenciálně o něco vyšší než v roce 2018, ale neznamená to žádné výrazné zvýšení, které by ohrozilo domácnosti a průmysl. Stejně tak tyto výsledné náklady mohou být nižší, pokud se potřebné technologie podaří v dalších dekádách zlevnit. _TODO: Doladit výpočet a udělat poslední aktualizaci grafů a čísel výše_{:.todo}
 
@@ -392,7 +392,7 @@ slunce a vítr
 {:.scenar-jedinecne}
 \+ zelený vodík
 
-Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení se ovšem mohou náklady snadno dostat na úroveň srovnatelnou s ostatními."
+Ve scénaři se zeleným vodíkem hraje podstatnou roli cena solárních panelů a cena hydrolyzérů. Při konzervativním odhadu těchto cen vychází tento scénář jako nejdražší, při mírném snížení cen se ovšem mohou náklady snadno dostat na úroveň srovnatelnou s ostatními."
     col2="
 {:.scenar-spolecne}
 slunce a vítr
@@ -400,7 +400,7 @@ slunce a vítr
 {:.scenar-jedinecne}
 \+ import
 
-Tento scénář vychází o něco levnější než scénář A, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí. Zároveň ale znamená o něco nižší energetickou nezávislost Česka. Přesnější odhady by vyžadovaly robustní studii nákladů spojených s posílením přenosových soustav.
+Tento scénář vychází o něco levněji než scénář vlevo, protože počítá s výrobou části elektřiny ve výhodnějších podmínkách v zahraničí. Zároveň ale znamená o něco nižší energetickou nezávislost Česka. Přesnější odhady by vyžadovaly robustní studii nákladů spojených s posílením přenosových soustav.
 "
     col3="
 {:.scenar-spolecne}
@@ -418,7 +418,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
     name="costs-2050.svg"
     alt="Současné systémové náklady"
     caption-above=caption_comments_costs
-    caption="Hrubý odhad systémových nákladů na výrobu bezemisní elektřiny v Česku v roce 2050. Cena za 1kWh čisté spotřeby, bez daní (počítáno v dnešních cenách, tedy bez započítání inflace)."
+    caption="Hrubý odhad systémových nákladů na výrobu bezemisní elektřiny v Česku v roce 2050. Cena za 1 kWh čisté spotřeby, bez daní (počítáno v dnešních cenách, tedy bez započítání inflace)."
     source-text="Fakta o klimatu"
 %}
 {% endcapture %}
@@ -450,7 +450,7 @@ Zjednodušeně řečeno se může stát, že:
 
 Ke snížení rizik spojených s transformací můžeme využít několik základních nástrojů:
 - **Souběžně rozvíjet více druhů nízkoemisní výroby** (a diverzifikovat investice do různých oblastí výzkumu a vývoje).
-- **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech bude moci ve 30. a 40. letech navázat řada různých strategií, které jsou technologicky smysluplné. 
+- **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech budou moci ve 30. a 40. letech navázat různé strategie, které budou technologicky smysluplné. 
 - **Mít dostatečnou rezervu** ve výrobní kapacitě i v primárních zdrojích energie. Tato rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
 **Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně mírně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
@@ -469,7 +469,7 @@ Výrazně vyšší podíl solárních a větrných zdrojů dobře zapadá do mno
 Potřebujeme posilovat energetickou spolupráci napříč Evropou a urychlit další propojování a posilování přenosových soustav
 {: .callout}
 
-To znamená více sladit národní energetické koncepce, aby dohromady tvořily funkční evropský mix. Pak bude možné pokračovat ve strategickém propojování přenosových soustav. **Česko může touto cestou získat přístup k výrobě z obnovitelných zdrojů nad limity toho, co jsme schopni postavit na našem území.** Konkrétně k větrným farmám na moři, k jižnímu slunci v zimě, případně k elektřině ze zeleného vodíku. Stejně tak **lépe propojená síť umožní lépe vstřebávat výkyvy ve výrobě ze slunce a větru**. Užší evropská spolupráce v této oblasti je klíčovým nástrojem ke snížení nákladů i rizik transformace elektroenergetiky v Česku.
+To znamená více sladit národní energetické koncepce, aby dohromady tvořily funkční evropský mix. Pak bude možné pokračovat ve strategickém propojování přenosových soustav. **Česko může touto cestou získat přístup k výrobě z obnovitelných zdrojů nad limity toho, co jsme schopni postavit na našem území.** Konkrétně k větrným farmám na moři, k jižnímu slunci v zimě, případně k elektřině ze zeleného vodíku. Stejně tak **lépe propojená síť umožní lépe vstřebávat výkyvy ve výrobě ze slunce a větru**. Užší evropská spolupráce v této oblasti bude klíčovým nástrojem ke snížení nákladů i rizik transformace elektroenergetiky v Česku.
 
 Potřebujeme podporovat rozvoj široké škály řešení pro vyrovnávání značně proměnlivé výroby ze slunce a větru
 {: .callout}
@@ -479,21 +479,21 @@ To nám umožní dále snižovat výrobu elektřiny z fosilních zdrojů, a doko
 Potřebujeme realistickou strategii o budoucnosti jaderné energetiky
 {: .callout}
 
-Jinými slovy: potřebujeme politické rozhodnutí, jak výraznou roli má hrát jádro v naší elektroenergetice za 30 let. Rozvoj jádra může odchod od fosilních paliv v Česku o něco zjednodušit. Možnosti tohoto rozvoje jsou ale omezené: nepomůže nám v rychlé dekarbonizaci a do roku 2050 nemůže ani zdaleka pokrýt celou naši spotřebu. Navíc jaderné elektrárny už nějakou dobu stojí a stárnou, takže i udržet stávající výrobu z jádra bude pro Česko velká výzva. **Jediná realistická cesta rozvoje jaderné energetiky v ČR je souběžně s výrazným rozvojem energetiky založené na slunci a větru.** Také samozřejmě můžeme od rozvoje jaderné energetiky upustit a spolehnout se na ostatní zdroje elektřiny a import, případně čekat na vývoj ohledně malých modulárních reaktorů.
+Jinými slovy: potřebujeme politické rozhodnutí, jak výraznou roli má hrát jádro v naší elektroenergetice za 30 let. Rozvoj jádra může odchod od fosilních paliv v Česku trochu zjednodušit. Nicméně možnosti tohoto rozvoje jsou omezené: nepomůže nám v rychlé dekarbonizaci a do roku 2050 nemůže ani zdaleka pokrýt celou naši spotřebu. Navíc jaderné elektrárny už nějakou dobu stojí a stárnou, takže i udržet stávající výrobu z jádra bude pro Česko velká výzva. **Jediná realistická cesta rozvoje jaderné energetiky v ČR je ta, která počítá se současným výrazným rozvojem energetiky založené na slunci a větru.** Také se samozřejmě můžeme rozhodnout od rozvoje jaderné energetiky upustit a spolehnout se na ostatní zdroje elektřiny a import, případně čekat na další vývoj situace s malými modulárními reaktory.
 
-Stavba konvenčních jaderných bloků nese obrovské investiční riziko, které energetické firmy nejsou schopné nést samy. Pokud je tedy chceme stavět, bude to vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
+Stavba konvenčních jaderných bloků představuje obrovské investiční riziko, které energetické firmy nejsou schopné nést samy. Pokud je tedy chceme stavět, bude to vyžadovat státní podporu nebo státem garantovanou výkupní cenu.
 
 Porovnání nákladů a rizik jednotlivých scénářů je zatížené nejistotou, proto je rozumné bezemisní energetiku rozvíjet vícero směry
 {: .callout}
 
-Jak ukazujeme našimi ilustrativními scénáři: k bezemisní energetice vede více cest. Protože každá z nich je spojena s nemalými riziky, je rozumné (alespoň v následující dekádě) usilovat o ambiciózní rozvoj více druhů bezemisních zdrojů elektřiny a tím snížit celkové riziko. Pokud budoucí vývoj ukáže, že některá z nabízených cest je výrazně jistější a výhodnější, můžeme další rozvoj více zaměřit tímto směrem.
+Jak ukazujeme našimi ilustrativními scénáři: k bezemisní energetice vede více cest. Protože každá z nich je spojena s nemalými riziky, je rozumné (alespoň v následující dekádě) usilovat o ambiciózní rozvoj více druhů bezemisních zdrojů elektřiny a tím snížit celkové riziko. Pokud budoucí vývoj ukáže, že některá z nabízených cest je výrazně jistější a výhodnější, může jít další rozvoj více tímto směrem.
 
 A pro připomenutí: všem těmto strategickým volbám je nadřazen bod, o němž tento text nepojednává:
 
 Potřebujeme pokračovat v energetických úsporách a lépe využívat domácí druhotné zdroje energie (jako např. odpadní teplo)
 {: .callout}
 
-Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spotřeba narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže pokrýt nižší spotřebu je v principu snazší.
+Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spotřeba narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže čím nižší její celková spotřeba bude, tím snazší bude ji pokrýt.
 
 </div>
 
