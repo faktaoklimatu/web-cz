@@ -29,7 +29,7 @@ perex: |
 _V tomto textu najdete přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím dílu](/explainery/bezemisni-energetika-1-scenare) série._
 {: .longread-small}
 
-_TODO: Nějak připomenout základní východisko, že spotřeba naroste z 60 na cca 100 TWh za rok._{:.todo}
+Než se pustíme do zkoumání možností jednotlivých technologií, připomeňme základní škálu problému, který řešíme. Dnes v Česku spotřebujeme okolo 60 TWh elektřiny ročně. Do roku 2050 očekáváme výrazný nárůst spotřeby, hlavně kvůli elektrifikaci části dopravy, vytápění a průmyslu. Odhady tohoto nárůstu se mírně liší, pro účely tohoto textu nám bude stačit dobře zapamatovatelný hrubý odhad: **v roce 2050 budeme potřebovat pokrýt zhruba 100 TWh spotřeby za rok**.
 
 ## Slunce a vítr
 
