@@ -15,8 +15,9 @@ cover-source-url:           "https://unsplash.com/photos/PtDNIlRSKRg"
 perex:       "Snad žádný evropský dokument nepřitáhl v posledních letech v Česku tolik mediální pozornosti jako Zelená dohoda pro Evropu. A nesklidil tolik kritiky. Výzkumy přitom odhalily zajímavý paradox, že European Green Deal sice nemalé části české veřejnosti vadí, ale jen málokdo tuší, co se v něm vlastně píše. V tomto textu proto přinášíme přehled toho nejdůležitějšího a přidáváme k němu užitečné souvislosti."
 ---
 
-{% include tldr.html content="
-**Co byste měli o Zelené dohodě vědět**
+{% include tldr.html
+    title="Co byste měli o Zelené dohodě vědět"
+    content="
 - Hlavním cílem je dosáhnout na úrovni EU **klimatické neutrality do roku 2050**.
 - Jde o **právně nezávazný dokument**. Opatření, která navrhuje, nabývají legislativní podoby v balíčku Fit for 55. Na schvalování legislativy se podílí i Česko.
 - **Finance jsou.** Výzvou zůstává, jak je efektivně rozdělit a zajistit, aby se dostaly také ke skupinám obyvatel, které budou podporu potřebovat nejvíce.
