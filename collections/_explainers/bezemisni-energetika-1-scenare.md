@@ -15,7 +15,7 @@ cover-source-license-url: "https://unsplash.com/license"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/7razCd-RUGs"
 perex: |
-  Jedním z klíčových kroků k dosažení uhlíkové neutrality je dekarbonizace energetiky. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnější představu, kam vlastně chceme dojít. Jak se má česká a evropská elektroenergetika změnit? Základní průzkum tohoto složitého terénu nabízí následující text.
+  Jedním z klíčových kroků k dosažení uhlíkové neutrality je dekarbonizace výroby elektřiny. Nebude snadná ani rychlá – i pro bohaté evropské státy představuje významnou technologickou a ekonomickou výzvu na dalších 20 až 30 let. Proto potřebujeme porozumět nástrahám, které nás na této cestě čekají, a mít jasnější představu, kam vlastně chceme dojít. Jak se má česká a evropská elektroenergetika změnit? Základní průzkum tohoto složitého terénu nabízí následující text.
 
 ---
 
@@ -29,12 +29,12 @@ perex: |
 - Plány na následujících 30 let tedy obsahují **mnoho neznámých parametrů** a my potřebujeme co nejpřesněji pojmenovávat rizika s tím spojená a zvažovat jejich přijatelnost.
 " %}
 
-_Tento text nabízí úvod do tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, obzvláště pak zjednodušujeme provázanost elektroenergetiky s dalšími sektory (jako teplárenství, doprava, průmysl)._
+_Tento text nabízí úvod do celého tématu a několik ilustrativních scénářů dalšího vývoje – ukazuje možné cesty a rozhodnutí, která nás čekají. Nemá ambice dát na všechny otázky přesné odpovědi. Pro lepší pochopitelnost celý problém poněkud zjednodušujeme, obzvláště pak zjednodušujeme provázanost elektroenergetiky s dalšími sektory (jako teplárenství, doprava, průmysl)._
 {: .longread-small}
 
 ## Co jsou klíčové otázky budoucí elektroenergetiky?
 
-V této části se zaměříme především na následující otázky:
+V první části se zaměříme především na následující otázky:
 - Kolik elektřiny budeme v dalších desetiletích potřebovat?
 - Jak rychle potřebujeme její výrobu dekarbonizovat?
 - Na jakých zdrojích se dá budoucí energetický mix postavit?
@@ -42,15 +42,15 @@ V této části se zaměříme především na následující otázky:
 
 ### Kolik elektřiny budeme potřebovat?
 
-Na začátku je třeba zmínit základní kontext dekarbonizace: **v budoucím světě bude výroba elektřiny hrát klíčovou roli**. Potřebujeme zásadně omezit emise skleníkových plynů v sektorech, kde spalujeme fosilní paliva: v energetice, v dopravě, ve vytápění, v průmyslu. V mnoha případech je elektrifikace nejvýhodnější, či dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina vhodná není (např. v letecké a lodní dopravě nebo v průmyslových procesech s vysokými teplotami), se navíc počítá s velkou mírou využití vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. To jinými slovy znamená, že budeme potřebovat elektřinu i tam, kde jsme ji (díky využívání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
+Na začátku je třeba zmínit základní kontext pro všechny úvahy o dekarbonizaci elektroenergetiky: **v budoucím světě bude výroba elektřiny jednoznačně hrát klíčovou roli**. Potřebujeme zásadně omezit emise skleníkových plynů v sektorech, kde spalujeme fosilní paliva: v energetice, v dopravě, ve vytápění, v průmyslu. V mnoha případech je elektrifikace nejvýhodnější, či dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina vhodná není (např. v letecké a lodní dopravě nebo v průmyslových procesech s vysokými teplotami), se navíc počítá s velkou mírou využití vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. To jinými slovy znamená, že budeme potřebovat elektřinu i tam, kde jsme ji (díky využívání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
 
 <!-- Více detailů k celkové proměně energetiky nabízíme v samostatném explaineru. -->
 
-Problém, který řešíme, je tedy mnohem těžší než jen nahradit stávající zdroje elektřiny nízkoemisními. **Potřebujeme zásadně snížit emise a současně výrazně zvýšit výrobu elektřiny.**
+Problém, který řešíme, je tedy mnohem těžší než jen jak nahradit stávající zdroje elektřiny nízkoemisními. **Potřebujeme zásadně snížit emise a současně výrazně zvýšit výrobu elektřiny.**
 
 {% include preview-box.html
     class="highlight-text-box"
-    text="**TWh**, tedy **terawatthodina** je jednotka energie. V současnosti jednu TWh elektřiny vyrobí za rok menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
+    text="**TWh**, tedy **terawatthodina**, je jednotka energie. V současnosti jednu TWh elektřiny vyrobí za rok menší uhelná elektrárna nebo v domácnostech spotřebuje asi 700 000 obyvatel ČR."
 %}
 
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby[^consumption-metric] až ke **100 TWh ročně**, jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
@@ -64,9 +64,9 @@ Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst 
 
 ### Jak rychle potřebujeme výrobu elektřiny dekarbonizovat?
 
-Dalším parametrem, který to celé komplikuje, je rychlost, s níž potřebujeme transformaci provést. **Závažnost důsledků klimatické změny do velké míry závisí na tom, jak rychle se nám podaří dekarbonizovat.** Množství emisí uhlíku, které ještě můžeme jako lidstvo vypustit do atmosféry, pokud chceme v souladu s Pařížskou dohodou udržet průměrné oteplení do 1,5 °C, označuje tzv. [uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Při současných emisích bychom náš zbývající uhlíkový rozpočet pro oteplení do 1,5 °C vyčerpali asi za 10 let. Proto je klíčové snížit celosvětové emise už v této dekádě.
+Dalším parametrem, který to celé komplikuje, je rychlost, s níž potřebujeme transformaci provést. **Závažnost důsledků klimatické změny do velké míry závisí na tom, jak rychle se nám podaří dekarbonizovat** všechny sektory ekonomiky, které produkují emise skleníkových plynů. Množství emisí, které ještě můžeme jako lidstvo vypustit do atmosféry, pokud chceme v souladu s Pařížskou dohodou udržet průměrné oteplení do 1,5 °C, označuje tzv. [uhlíkový rozpočet](/infografiky/koncept-uhlikovy-rozpocet). Při současných emisích bychom náš zbývající uhlíkový rozpočet pro oteplení do 1,5 °C vyčerpali asi za 10 let. Proto je klíčové snížit celosvětové emise už v této dekádě.
 
-Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat kompletně.** Pokud se nám do konce tohoto desetiletí a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Polevit ovšem nesmíme ani potom. Až se nám podaří snížit emise v elektroenergetice na cca 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji, a můžeme si tak pro zbylou dekarbonizaci dopřát větší rozvážnost.
+Je ale také důležité dodat, že **takto rychle nemusíme výrobu elektřiny dekarbonizovat kompletně.** Pokud se nám do konce tohoto desetiletí a s pomocí dnes dostupných technologií podaří snížit emise v elektroenergetice třeba na 50 % současných hodnot, získáme tím více času na odstranění dalších emisí a více času na vývoj technologií, které zatím nejsou komerčně dostupné. Polevit ovšem nesmíme ani potom. Až se nám podaří snížit emise v elektroenergetice na cca 10 % současných hodnot, budeme čerpat zbývající uhlíkový rozpočet 10x pomaleji, a můžeme si tak pro zbývající dekarbonizaci dopřát větší rozvážnost.
 
 ### Na jakých zdrojích se dá budoucí energetický mix postavit?
 
@@ -76,11 +76,11 @@ Je ale důležité dodat, že **takto rychle nemusíme energetiku dekarbonizovat
     slug="bezemisni-energetika-2-technologie"
 %}
 
-Modelování budoucí energetiky musí brát výše uvedená východiska v potaz. V tomto textu budeme pracovat s následujícími kategoriemi zdrojů pro výrobu bezemisní elektřiny v Česku:
+Modelování budoucí elektroenergetiky musí brát výše uvedená východiska v potaz. V tomto textu budeme pracovat s následujícími kategoriemi zdrojů pro výrobu bezemisní elektřiny v Česku:
 
 1. **Slunce a vítr** lze začít využívat velmi rychle, přičemž oba tyto zdroje mají nízké investiční náklady a v ČR stále obrovský nevyužitý potenciál. Jejich nevýhodou je výrazně proměnlivá výroba.
 2. **Jádro** dokáže vyrábět stabilně, postavit jadernou elektrárnu však trvá mnoho let, navíc jsou zde vysoké investiční náklady a velké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, ta ale zatím není zralá ke komerčnímu nasazení.
-3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (např. přečerpávací elektrárny, baterie nebo _zelený vodík_, tedy vodík vyrobený pomocí nadbytků obnovitelné elektřiny). Z druhé strany lze k vyrovnávání výroby a spotřeby přispět také _flexibilitou spotřeby_, tedy přizpůsobením spotřeby možnostem výroby, např. odložením spotřeby na vhodnější čas.
+3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (např. přečerpávací elektrárny, baterie nebo _zelený vodík_, tedy vodík vyrobený pomocí nadbytků obnovitelné elektřiny). Z druhé strany lze k vyrovnávání výroby a spotřeby přispět také _flexibilitou spotřeby_, tedy přizpůsobením spotřeby možnostem výroby (např. odložením spotřeby na vhodnější čas).
 
 Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti, zbytek stále stojí na vysokoemisních zdrojích – na využívání fosilních paliv:
 {% include figure.html
@@ -95,7 +95,7 @@ Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti,
 Další strategické rozhodnutí spočívá v tom, jak moc chceme **být ve výrobě elektřiny soběstační**, tedy jakou část spotřeby chceme určitě pokrýt z českých zdrojů. Zbytek bychom mohli **importovat ze zahraničí** – pokud to dovolí výrobní kapacity okolních států a možnosti přeshraniční přenosové soustavy.
 
 
-### Co musí tento budoucí mix splňovat?
+### Co musí budoucí mix splňovat?
 
 Pro budoucí mix české elektroenergetiky je důležitá řada vlastností. Zde chceme zdůraznit 5 z nich:
 
@@ -130,22 +130,22 @@ V Česku máme rozsáhlé systémy centrálního zásobování teplem. A protož
 
 V současnosti více než polovina konečné spotřeby energie v ČR pochází z dovezené ropy a zemního plynu. Klíčovou otázkou tedy je: jak snížit naši závislost na každém jednotlivém státu, ze kterého tyto suroviny pocházejí? A jak a o kolik můžeme snížit naši energetickou závislost obecně?
 
-#### Vyvážení rizik
+#### Vyvážení možných rizik
 
 S energetickou bezpečností a s transformací souvisejí i další rizika: rizika investic do obřích staveb, riziko "slepé uličky" (když například vsadíme příliš mnoho na konkrétní budoucí technologii), riziko společenské nestability, pokud se transformace nebude dařit. Ani zdaleka tedy nejde "jen" o riziko dopadů klimatické změny.
 
-Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky nelze předvídat dostatečně jasně. Všichni aktéři (a stát především) musí se všemi těmito riziky počítat a vhodnou strategií snižovat jejich pravděpodobnost a možné dopady.
+Vlády i soukromé firmy čeká spousta velkých rozhodnutí, jejichž důsledky nelze vždy předvídat dostatečně jasně. Všichni aktéři (a stát především) musí se všemi těmito riziky počítat a vhodnou strategií snižovat jejich pravděpodobnost a možné dopady.
 '
 %}
 
 ## Jak mohou vypadat úspěšné (a neúspěšné) scénáře?
 
-Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně nakonec zvolíme nějakou kompromisní cestu mezi těmito extrémy. Všechny tři scénáře staví na velkém množství slunce a větru – bez jejich využití to během několika dalších dekád prostě nejde.
+Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat základní možnosti, jak by se dala v dalších dekádách rostoucí spotřeba pokrývat[^pokryti-spotreby]. Každý z těchto scénářů je přitom určitou krajní variantou – v praxi nepochybně nakonec zvolíme nějakou kompromisní cestu mezi těmito extrémy. Všechny tři scénáře staví na velkém množství slunce a větru – bez jejich využití to během několika dalších dekád zkrátka nepůjde.
 
 {% assign comment_vre="
 Tento scénář vyžaduje nejvýraznější rozvoj obnovitelných zdrojů (OZE), tedy hlavně zdejší **solární a větrné energetiky**, ale předpokládá také nemalou část výroby z flexibilních zdrojů.
 
-V rámci flexibilních zdrojů to vyžaduje především nasazení **zeleného vodíku** k dlouhodobému ukládání elektřiny. Tato technologie nicméně zatím není dostatečně levná, aby se v Česku tržně prosadila (oproti spalování uhlí)." %}
+V rámci flexibilních zdrojů jde především o nasazení **zeleného vodíku** k dlouhodobému ukládání elektřiny. Tato technologie nicméně zatím není dostatečně levná (ve srovnání se spalováním uhlí), aby se v Česku tržně prosadila." %}
 {% assign comment_import="
 **Import elektřiny z větru, převážně v zimní polovině roku**, snižuje nároky na výrobu z flexibilních zdrojů a v menší míře i na domácí výrobu ze slunce a větru.
 
@@ -175,7 +175,7 @@ Rozvoj jádra sice snižuje tlak na ostatní kategorie zdrojů, může ale také
 Pro srovnání se podívejme i na možné neúspěšné scénáře, tedy co by například znamenal malý rozvoj výroby ze slunce a větru a zpoždění případných jaderných staveb\*:
 
 {% assign comment_fail_wind="
-Pokud vsadíme na slunce a vítr a zároveň **nebudeme schopni postavit dost větrných elektráren**, bude těžké pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jádro.
+Pokud vsadíme na slunce a vítr a zároveň **nebudeme schopni postavit dost větrných elektráren**, bude těžké pokrýt rostoucí spotřebu elektřiny a nahradit stárnoucí jaderné zdroje.
 
 To může v nejhorším případě vést i k nárůstu výroby z fosilních zdrojů.
 "%}
@@ -185,7 +185,7 @@ Může dojít k **selhání či zrušení rozpracovaných jaderných projektů**
 Ani to nemusí vést ke katastrofickým akumulovaným emisím CO<sub>2</sub>, pokud budeme **paralelně úspěšně rozvíjet výrobu ze slunce a větru**.
 "%}
 {% assign comment_fail_nuclear_vre="
-**Kdybychom vsadili pouze na jádro**, pravděpodobně nebude mezi politiky ani v byznysu dostatek vůle výrazně v mezičase rozvíjet slunce a vítr.
+**Kdybychom vsadili pouze na jádro**, pravděpodobně nebude mezi politiky ani v byznysu dostatek vůle rozvíjet v mezičase výrazně slunce a vítr.
 
 V případě **velkého zpoždění jaderných staveb** tak hrozí vysoké akumulované emise CO<sub>2</sub>.
 "%}
@@ -493,7 +493,7 @@ A pro připomenutí: všem těmto strategickým volbám je nadřazen bod, o něm
 Potřebujeme pokračovat v energetických úsporách a lépe využívat domácí druhotné zdroje energie (jako např. odpadní teplo)
 {: .callout}
 
-Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a spotřeba narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže pokrýt nižší spotřebu je v principu snazší.
+Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spotřeba narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže pokrýt nižší spotřebu je v principu snazší.
 
 </div>
 
