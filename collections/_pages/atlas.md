@@ -4,7 +4,7 @@ title:      "Atlas klimatické změny"
 slug:       atlas
 intro:      "Pro kultivovanou veřejnou debatu o klimatické změně a také o transformaci, která s ní souvisí, jsou nezbytná dobrá a především srozumitelně vysvětlená data. Proto v této publikaci nabízíme jednoduché grafy a mapy, které je snadné si zapamatovat. A současně je doplňujeme komentářem, aby je čtenáři dokázali vidět v širších souvislostech."
 search_type: "Atlas"
-search_image: "/assets-local/img/atlas-mockup.png"
+search_image: "/assets-local/img/atlas-mockup.jpg"
 ---
 
 <div class="section"><div class="container">
@@ -17,9 +17,9 @@ search_image: "/assets-local/img/atlas-mockup.png"
     </div>
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
         <h2>Ke stažení</h2>
-        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej stáhnout zdarma nebo si v e-shopu Lipky koupit tištěnou verzi.</p>
+        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej stáhnout zdarma (první vydání) nebo si v e-shopu Lipky koupit tištěnou verzi.</p>
         <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-        <a href="https://www.lipka.cz/e-shop" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+        <a href="https://www.lipka.cz/atlas-klima-zmeny" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
         <h2>Podpořte naši práci</h2>
         <p>Líbí se vám naše práce a rádi byste Fakta o klimatu podpořili finančně?</p>
