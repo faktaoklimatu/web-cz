@@ -38,8 +38,8 @@ Než se pustíme do zkoumání možností jednotlivých technologií, připomeň
 ### Slunce
 {% include figure.html
     class="wide-figure-desktop"
-    name="solar-des.png"
-    name-mobile="solar-mob.png"
+    name="solar-des.svg"
+    name-mobile="solar-mob.svg"
     alt="Přehled vlastností solárních zdrojů"
     source-text="Fakta o klimatu"
 %}
@@ -49,7 +49,8 @@ Než se pustíme do zkoumání možností jednotlivých technologií, připomeň
 ### Vítr
 {% include figure.html
     class="wide-figure-desktop"
-    name="wind.png"
+    name="wind-des.svg"
+    name-mobile="wind-mob.svg"
     alt="Přehled vlastností větrných zdrojů"
     source-text="Fakta o klimatu"
 %}
@@ -60,7 +61,7 @@ I když vítr hodně fouká především u moře a to u nás nemáme, i tak mů�
 <!--Krátkodobému bezemisnímu vyrovnávání výroby ze slunce a větru a možnostem různých technologií se podrobněji věnujeme v dalším dílu série. -->
 V tomto textu se zabýváme především sezónní proměnlivostí – solární zdroje nejvíc vyrábějí na jaře a v létě, větrné naopak na podzim a v zimě.
 
-**Pro sezónně vyrovnanou výrobu v ČR z větru a slunce je potřeba, aby výrazně převažovala výroba z větru** (alespoň v poměru 3:1 ve prospěch větru[^OZE-vyvazeny-mix]). V Česku ale zatím máme značnou převahu výroby ze slunce (cca 3:1 ve prospěch slunce). To rozhodně neodpovídá rozložení spotřeby a vyžadovalo by to velké akumulační kapacity, tedy mít do čeho elektřinu ukládat, abychom ji mohli využít, když slunce tolik nesvítí:
+**Pro sezónně vyrovnanou výrobu v ČR z větru a slunce je potřeba, aby výrazně převažovala výroba z větru** (alespoň v poměru 3:1 ve prospěch větru[^OZE-vyvazeny-mix]). V Česku ale zatím máme značnou převahu výroby ze slunce (cca 3:1 ve prospěch slunce). To rozhodně neodpovídá rozložení spotřeby. Kdybychom rozvíjeli obnovitelnou výrobu v tomto poměru, vyžadovalo by to velké akumulační kapacity, tedy mít do čeho elektřinu ukládat, abychom ji mohli využít, když slunce tolik nesvítí:
 
 {% include figure.html
     name="solar-wind-seasonality-des.svg"
@@ -75,7 +76,8 @@ V tomto textu se zabýváme především sezónní proměnlivostí – solární
 ### Konvenční jádro
 {% include figure.html
     class="wide-figure-desktop"
-    name="nuclear-conventional.png"
+    name="nuclear-conventional-des.svg"
+    name-mobile="nuclear-conventional-mob.svg"
     alt="Přehled vlastností konvenčních jaderných zdrojů"
     source-text="Fakta o klimatu"
 %}
@@ -93,7 +95,8 @@ Vzhledem k těmto vlastnostem jaderných elektráren a rychlosti rozvoji obnovit
 ### Malé modulární reaktory (SMR)
 {% include figure.html
     class="wide-figure-desktop"
-    name="nuclear-smr.png"
+    name="nuclear-smr-des.svg"
+    name-mobile="nuclear-smr-mob.svg"
     alt="Přehled vlastností SMR"
     source-text="Fakta o klimatu"
 %}
@@ -111,7 +114,8 @@ Protože se v tomto textu soustředíme na výrobu elektřiny, nebudeme podrobn�
 ### Hydro
 {% include figure.html
     class="wide-figure-desktop"
-    name="hydro.png"
+    name="hydro-des.svg"
+    name-mobile="hydro-mob.svg"
     alt="Přehled vlastností vodních zdrojů"
     source-text="Fakta o klimatu"
 %}
@@ -123,7 +127,8 @@ Protože se v tomto textu soustředíme na výrobu elektřiny, nebudeme podrobn�
 ### Biomasa
 {% include figure.html
     class="wide-figure-desktop"
-    name="biomass.png"
+    name="biomass-des.svg"
+    name-mobile="biomass-mob.svg"
     alt="Přehled vlastností biomasy jako zdroje"
     source-text="Fakta o klimatu"
 %}
@@ -159,7 +164,8 @@ Přes všechny tyto výhrady může biomasa díky snadnému skladování hrát *
 ### Uhlí nebo zemní plyn s CCS
 {% include figure.html
     class="wide-figure-desktop"
-    name="ccs.png"
+    name="ccs-des.svg"
+    name-mobile="ccs-mob.svg"
     alt="Přehled vlastností zdrojů v kombinaci s CCS"
     source-text="Fakta o klimatu"
 %}
@@ -189,7 +195,8 @@ Přes všechny tyto problémy **mohou fosilní elektrárny s CCS hrát důležit
 ### Plynové turbíny na zelený nebo modrý vodík
 {% include figure.html
     class="wide-figure-desktop"
-    name="hydrogen.png"
+    name="hydrogen-des.svg"
+    name-mobile="hydrogen-mob.svg"
     alt="Přehled vlastností vodíkových zdrojů"
     source-text="Fakta o klimatu"
 %}
