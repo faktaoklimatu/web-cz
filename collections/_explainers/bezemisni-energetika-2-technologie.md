@@ -38,7 +38,8 @@ Než se pustíme do zkoumání možností jednotlivých technologií, připomeň
 ### Slunce
 {% include figure.html
     class="wide-figure-desktop"
-    name="solar.png"
+    name="solar-des.png"
+    name-mobile="solar-mob.png"
     alt="Přehled vlastností solárních zdrojů"
     source-text="Fakta o klimatu"
 %}
