@@ -10,6 +10,9 @@
     - title: <i class="fas fa-fw fa-book-atlas mr-1"></i> Atlas klimatické změny
       link: /atlas
 
+    - title: <i class="fas fa-fw fa-chart-area mr-1"></i> Modelování energetiky
+      link: /modelovani-energeticke-transformace
+
     - title: <i class="fas fa-fw fa-envelope-open-text mr-1"></i> Odebírejte newsletter
       link: "#newsletter-modal"
       params: 'id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal"'
