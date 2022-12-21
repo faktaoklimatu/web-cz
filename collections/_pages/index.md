@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: COP27 v Egyptě</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Klimatická politika EU</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,9 +37,9 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
     <p class="lead mb-0">
-    Od 6. do 18. listopadu 2022 se koná každoroční mezinárodní konference OSN o ochraně klimatu, tzv. COP. Letošní 27. ročník proběhne v egyptském Šarm aš-Šajchu. Setkají se zde zástupci států světa, aby posoudili, jak se jednotlivým zemím v praxi daří naplňovat své klimatické závazky. Velkým tématem bude také finanční i nefinanční podpora určená rozvojovým zemím, a to v oblastech, jako jsou klimatické finance, ztráty a škody nebo adaptace na změny klimatu. Níže naleznete naše infografiky, texty i epizody podcastu, které se těmto tématům věnují:</p>
+    S rokem 2022 končí předsednictví Česka Radě Evropské unie, v rámci kterého se povedlo dojednat konečnou podobu velké části legislativního balíčku Fit for 55. Ten má přispět k tomu, že v roce 2030 budou unijní emise skleníkových plynů o 55 % nižší než v roce 1990. Jak balíček Fit for 55 souvisí se Zelenou dohodou pro Evropu? Jak k financování zelené transformace přispívají evropské fondy? Nejen na tyto otázky odpovídáme v novém explaineru o Zelené dohodě a v dalších souvisejících materiálech:</p>
 
-    {% assign featured_slugs = "emisni-zavazky, 31-cop27, 32-david-moran, pozice-akteru-cop, akteri-klimatickych-jednani, 11-mezinarodni-jednani-prubeh" | split: ", " %}
+    {% assign featured_slugs = "zelena-dohoda-pro-evropu, fit-for-55, fondy-eu, emisni-povolenky-ets, taxonomie-eu, 19-fit-for-55" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
