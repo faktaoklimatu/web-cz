@@ -2,7 +2,7 @@
 layout:     empty
 title:      "Modelování energetické transformace"
 slug:       modelovani-energeticke-transformace
-intro:      "Pro úspěšnou transformaci české energetiky nutně potřebujeme dobrý veřejný energetický model. To nám umožní společně vidět možnosti dalšího vývoje, vést o nich kultivovanou diskusi a argumentovat nad čísly a daty."
+intro:      "Česko i Evropu čeká v následujících desetiletích proměna energetiky směrem k menšímu využívání fosilních paliv a větší roli obnovitelných zdrojů elektřiny. A do této proměny budou nejpíše zasahovat i nové technologie (baterie, vodík, CCS, nebo třeba modulární jaderné reaktory). Pro plánování a pro informované rozhodování o transformaci energetiky potřebujeme chápat možnosti a limity jednotlivých zdrojů a technologií a také schopnost vidět, jak budou zdroje a technologie fungovat dohromady, jak pokryjí spotřebu energie a za jakou cenu. Pro zodpovězení těchto a dalších otázek vytváříme otevřený, tedy veřejně dostupný model energetiky."
 search_type: "Model"
 search_image: "/assets-local/img/modelovani-energeticke-transformace-mob.png"
 ---
@@ -27,7 +27,7 @@ search_image: "/assets-local/img/modelovani-energeticke-transformace-mob.png"
 
 <div class="alert alert-info data-staleness" role="alert">
 <h5 class="alert-heading"><i class="fas fa-lightbulb"></i> Pracujeme na tom</h5>
-<p>Naše práce na energetickém modelu pro ČR a okolí rozhodně není u konce. Až bude model dostatečně zralý, plánujeme ho zveřejnit pod licencí <i>Creative Commons</i>, stejně jako všechny naše ostatní materiály.</p>
+<p>Naše práce na energetickém modelu pro ČR a okolí rozhodně není u konce. Průběžně budeme zveřejňovat výstupy modelování, vhledy o transformaci, které z nich získáváme, i samotný kód modelu v licencí <i>Creative Commons</i> (stejně jako všechny naše ostatní materiály).</p>
 </div>
 
 ## Cíle modelování
@@ -48,9 +48,9 @@ Máme dvě úrovně modelu: jednoduchý didaktický model pro širokou veřejnos
 
 Tento model je obzvláště vhodný pro **pochopení možností rozvoje solární a větrné energetiky v Česku**.
 
-* Pracujeme s veřejnými **historickými daty** z [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) o výrobě elektřiny, nejčastěji v hodinovém rozlišení.
+* Pracujeme s veřejnými **historickými daty** z [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) o výrobě a spotřebě elektřiny, nejčastěji v hodinovém rozlišení.
 * Model uvažuje pouze **výrobu z nízkoemisních zdrojů, které mají nízké provozní náklady (jádro, hydro, slunce, vítr)**. Tímto ukazujeme jakou část spotřeby mohou tyto zdroje pokrýt v jednotlivých hodinách, dnech, týdnech, ročních obdobích.
-* **Výrobu z těchto zdrojů i spotřebu umožňujeme zvyšovat podle fixních faktorů**: tím můžeme zkoumat budoucnost, ve které budeme mít 10x instalaci větrných zdrojů nebo 5x instalaci solárních elektráren.
+* **Výrobu z těchto zdrojů i spotřebu lze zvyšovat podle fixních faktorů**: tím můžeme zkoumat budoucnost, ve které budeme mít 10x instalaci větrných zdrojů nebo 5x instalaci solárních elektráren.
 * **Zbývající poptávka po elektřině se dnes pokrývá zejména fosilními palivy**, v budoucnosti ji bude potřeba pokrýt nízkoemisími flexibilními zdroji. Model umožňuje vidět, kolik poptávky zbývá nepokryto a **které zdroje potřebujeme rozvíjet, aby zbývající poptávky bylo během celého roku co nejméně**.
 * **Přenosová soustava** je modelována velmi zjednodušeně: každý stát je jeden uzel, modelujeme pouze kapacity interkonektorů, které tyto státy propojují a ztráty při přenosu do jiného státu. Distribuční soustava není modelována vůbec.
 * Kromě týdenních průběhů ukazujeme i **sumární statistiky pro jednotlivé týdny v roce a pro celý rok**.
@@ -78,7 +78,7 @@ Tento model je obzvláště vhodný pro **pochopení možností rozvoje solárn�
 Tento model rozšiřuje základní didaktický model a umožňuje navíc:
 * **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny.** Model při tom **minimalizuje provozní náklady** celého systému.
 * Přibližně **predikovat spotové ceny** elektřiny na trhu v průběhu celého roku.
-* V rámci sumární statistiku počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
+* V rámci sumární statistiky počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
 
 
 {% capture optimization %}
