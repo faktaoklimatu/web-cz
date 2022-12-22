@@ -450,7 +450,7 @@ Zjednodušeně řečeno se může stát, že:
 
 Ke snížení rizik spojených s transformací můžeme využít několik základních nástrojů:
 - **Souběžně rozvíjet více druhů nízkoemisní výroby** (a diverzifikovat investice do různých oblastí výzkumu a vývoje).
-- **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech budou moci ve 30. a 40. letech navázat různé strategie, které budou technologicky smysluplné. 
+- **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech budou moci ve 30. a 40. letech navázat různé strategie, které budou technologicky smysluplné.
 - **Mít dostatečnou rezervu** ve výrobní kapacitě i v primárních zdrojích energie. Tato rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
 **Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně mírně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
@@ -504,6 +504,11 @@ Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spot�
 * C. Breyer et al. [On the History and Future of 100% Renewable Energy Systems Research](https://ieeexplore.ieee.org/document/9837910), IEEE Access, 2022.
 * [Net Zero by 2050](https://www.iea.org/reports/net-zero-by-2050), IEA, 2021.
 * [Nuclear Power and Secure Energy Transitions](https://www.iea.org/reports/nuclear-power-and-secure-energy-transitions), IEA, 2022.
+{: .footnotes}
+
+### Metodika
+
+Scénáře v tomto textu jsou sestavené pro ilustraci základních možností vývoje. Tedy nejde ani o výsledek optimalizace systémových nákladů, ani o výsledek optimalizace emisí skleníkových plynů. Realističnost těchto scénářů je ověřena v hodinovém rozlišení pomocí [našich modelů energetiky](/modelovani-energeticke-transformace). Další vstupy a výpočty jsou v doprovodné [tabulce](https://docs.google.com/spreadsheets/d/1seO3NmCpteNXYDZVefTTC8bPf1Wksi5tjh3BvfHpkd8/edit#gid=0).
 {: .footnotes}
 
 {:#studie}
