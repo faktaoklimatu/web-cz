@@ -37,7 +37,7 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
     <p class="lead mb-0">
-    S rokem 2022 končí předsednictví Česka Radě Evropské unie, v rámci kterého se povedlo dojednat konečnou podobu velké části legislativního balíčku Fit for 55. Ten má přispět k tomu, že v roce 2030 budou unijní emise skleníkových plynů o 55 % nižší než v roce 1990. Jak balíček Fit for 55 souvisí se Zelenou dohodou pro Evropu? Jak k financování zelené transformace přispívají evropské fondy? Nejen na tyto otázky odpovídáme v novém explaineru o Zelené dohodě a v dalších souvisejících materiálech:</p>
+    S rokem 2022 končí naše předsednictví Radě Evropské unie. Během českého předsednictví se povedlo dojednat konečnou podobu velké části legislativního balíčku Fit for 55, který má přispět k tomu, že v roce 2030 budou unijní emise skleníkových plynů o 55 % nižší než v roce 1990. Jak balíček Fit for 55 souvisí se Zelenou dohodou pro Evropu? Jak k financování zelené transformace přispívají evropské fondy? Nejen na tyto otázky odpovídáme v novém explaineru o Zelené dohodě a v dalších souvisejících materiálech:</p>
 
     {% assign featured_slugs = "zelena-dohoda-pro-evropu, fit-for-55, fondy-eu, emisni-povolenky-ets, taxonomie-eu, 19-fit-for-55" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
