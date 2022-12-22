@@ -48,7 +48,7 @@ Máme dvě úrovně modelu: jednoduchý didaktický model pro širokou veřejnos
 
 Tento model je obzvláště vhodný pro **pochopení možností rozvoje solární a větrné energetiky v Česku**.
 
-* Pracujeme s veřejnými **historickými daty** z [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) o výrobě elektřiny.
+* Pracujeme s veřejnými **historickými daty** z [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) o výrobě elektřiny, nejčastěji v hodinovém rozlišení.
 * Model uvažuje pouze **výrobu z nízkoemisních zdrojů, které mají nízké provozní náklady (jádro, hydro, slunce, vítr)**. Tímto ukazujeme jakou část spotřeby mohou tyto zdroje pokrýt v jednotlivých hodinách, dnech, týdnech, ročních obdobích.
 * **Výrobu z těchto zdrojů i spotřebu umožňujeme zvyšovat podle fixních faktorů**: tím můžeme zkoumat budoucnost, ve které budeme mít 10x instalaci větrných zdrojů nebo 5x instalaci solárních elektráren.
 * **Zbývající poptávka po elektřině se dnes pokrývá zejména fosilními palivy**, v budoucnosti ji bude potřeba pokrýt nízkoemisími flexibilními zdroji. Model umožňuje vidět, kolik poptávky zbývá nepokryto a **které zdroje potřebujeme rozvíjet, aby zbývající poptávky bylo během celého roku co nejméně**.
