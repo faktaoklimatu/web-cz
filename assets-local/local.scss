@@ -80,6 +80,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50%;
+    border-top: 3px solid rgba($c-lighter-grey, 0.15);
+    border-bottom: 3px solid rgba($c-grey, 0.15);
 }
 
 @media (min-width: 576px) {
