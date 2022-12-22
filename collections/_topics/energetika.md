@@ -76,8 +76,8 @@ subtopics:
       Dalším možným způsobem snížení emisí v energetice je **rozvoj jaderných zdrojů**. V Česku ovšem nelze čekat žádný nový reaktor dříve než v roce 2036 (realisticky spíše kolem roku 2040), což je příliš pozdě vzhledem k našim emisním závazkům. Rozvoj jaderné energetiky tedy dává smysl pouze v kombinaci s rozvojem obnovitelných zdrojů.
 
 - id:          "mix"
-  title:       "Současný stav: Z čeho vyrábíme elektřinu?"
-  title-short: "Z čeho vyrábíme elektřinu?"
+  title:       "Současný stav: Jak vyrábíme elektřinu?"
+  title-short: "Jak vyrábíme elektřinu?"
   lead: |
     Český mix zdrojů elektřiny má v současnosti dva pilíře: **hnědé uhlí** a **jádro**. Z obnovitelných zdrojů dnes pochází asi desetina elektřiny. Z toho zhruba polovinu tvoří bioplyn a biomasa, čtvrtinu slunce, o zbytek se starají vodní a větrné elektrárny. **Evropské země mají velmi rozdílné energetické mixy**, celkově pak mají fosilní, jaderné a obnovitelné zdroje v EU přibližně třetinové podíly. **V rozvojovém světě výroba elektřiny prudce stoupá**, převážně díky rozvoji uhelné energetiky. I tam ale v posledních letech znatelně roste role obnovitelných zdrojů.
   content:
@@ -90,7 +90,7 @@ subtopics:
 
 - id:          "emise-v-energetice"
   title:       "Současný stav: Emise z energetiky"
-  title-short: "Emise z energetiky"
+  title-short: "Emise"
   lead: |
     Z elektroenergetiky a teplárenství pochází přibližně **40 % emisí skleníkových plynů v ČR**, z toho největší část tvoří uhelné zdroje.
     V širším slova smyslu k energetice patří také doprava (16 % emisí), lokální vytápění a ohřev teplé vody v domácnostech, firmách a institucích (10 % emisí) a spalování v průmyslu (8 % emisí). Dohromady tedy zpracování a spalování fosilních paliv v Česku tvoří skoro tři čtvrtiny emisí skleníkových plynů. Podobný podíl mají fosilní paliva i v emisích celé EU.
@@ -110,6 +110,7 @@ subtopics:
 
 - id:          "legislativa"
   title:       "Legislativní kontext"
+  title-short: "Legislativa"
   lead: |
     Evropskou energetiku zásadně ovlivňují dva koncepty: **liberalizovaný trh s elektřinou** a systém **obchodování s emisními povolenkami**.
   qa:
@@ -143,7 +144,7 @@ subtopics:
 
 - id:          "scenare-2030-cr"
   title:       "Scénáře vývoje: Česká energetika v roce 2030"
-  title-short: "Energetika 2030"
+  title-short: "Scénáře Česko 2030"
   lead: |
     EU se zavázala **snížit emise skleníkových plynů do roku 2030 o 55 %** (oproti roku 1990). K dosažení tohoto cíle je klíčová právě transformace energetiky. **Jaké jsou scénáře pro transformaci tohoto sektoru v Česku?**
   qa:
@@ -160,9 +161,20 @@ subtopics:
   - 2019-scenar-necp
   - 2020-reserse-transformace-energetiky
 
+- id:          "scenare-2050"
+  title:       "Scénáře vývoje: Energetika v roce 2050"
+  title-short: "Scénáře 2050"
+  lead: |
+    Okolo roku 2050 budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Celosvětové scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
+  content:
+  - 2020-transformace-energetiky-do-2050
+  - 2016-snizeni-emisi-cr
+  - 2-transformace-energetiky
+
 - id:          "serie-elektrina-2050-cr"
   series:      True
-  title:       "Bezemisní energetika v ČR"
+  title:       "Bezemisní energetika v Česku v roce 2050"
+  title-short: "Bezemisní energetika v Česku"
   series-short-lead: |
     Tento text je součástí série textů o základních kamenech bezemisní energetiky.
   lead: |
@@ -170,14 +182,4 @@ subtopics:
   content:
   - bezemisni-energetika-1-scenare
   - bezemisni-energetika-2-technologie
-
-- id:          "scenare-2050"
-  title:       "Scénáře vývoje: Energetika v roce 2050"
-  title-short: "Energetika 2050"
-  lead: |
-    Okolo roku 2050 budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Celosvětové scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
-  content:
-  - 2020-transformace-energetiky-do-2050
-  - 2016-snizeni-emisi-cr
-  - 2-transformace-energetiky
 ---
