@@ -493,7 +493,7 @@ A pro připomenutí: všem těmto strategickým volbám je nadřazen bod, o něm
 Potřebujeme pokračovat v energetických úsporách a lépe využívat domácí druhotné zdroje energie (jako např. odpadní teplo)
 {: .callout}
 
-Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spotřeba narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže čím nižší její celková spotřeba bude, tím snazší bude ji pokrýt.
+Nejlevnější elektřina je často ta, kterou vůbec nevyrobíme, a také spotřeba elektřiny narůstá díky energetickým úsporám pomaleji. Nejde přitom jen o úsporu nákladů – omezený potenciál rozvoje má v Česku více zdrojů bezemisní elektřiny, takže čím nižší její celková spotřeba bude, tím snazší bude ji pokrýt.
 
 </div>
 
