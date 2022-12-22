@@ -2,14 +2,17 @@
 layout:     empty
 title:      "Modelování energetické transformace"
 slug:       modelovani-energeticke-transformace
-intro:      "Česko i Evropu čeká v následujících desetiletích proměna energetiky směrem k menšímu využívání fosilních paliv a větší roli obnovitelných zdrojů elektřiny. A do této proměny budou nejpíše zasahovat i nové technologie (baterie, vodík, CCS, nebo třeba modulární jaderné reaktory). Pro plánování a pro informované rozhodování o transformaci energetiky potřebujeme chápat možnosti a limity jednotlivých zdrojů a technologií a také schopnost vidět, jak budou zdroje a technologie fungovat dohromady, jak pokryjí spotřebu energie a za jakou cenu. Pro zodpovězení těchto a dalších otázek vytváříme otevřený, tedy veřejně dostupný model energetiky."
+intro: |
+    Česko i Evropu čeká v následujících desetiletích proměna energetiky směrem k menšímu využívání fosilních paliv a větší roli obnovitelných zdrojů elektřiny. A do této proměny budou nejspíše zasahovat i nové technologie (baterie, vodík, CCS, nebo třeba modulární jaderné reaktory).
+
+    Pro plánování a pro informované rozhodování o transformaci energetiky potřebujeme chápat možnosti a limity jednotlivých zdrojů a technologií a také porozumět, jak budou zdroje a technologie fungovat dohromady, jak pokryjí spotřebu energie a za jakou cenu. Pro zodpovězení těchto a dalších otázek vytváříme otevřený, tedy veřejně dostupný model energetiky.
 search_type: "Model"
 search_image: "/assets-local/img/modelovani-energeticke-transformace-mob.png"
 ---
 
 <div class="section"><div class="container">
     <h1>{{ page.title }}</h1>
-    <p class="lead narrow-text">{{ page.intro }}</p>
+    <div class="lead narrow-text">{{ page.intro | markdownify }}</div>
 </div></div>
 
 <div class="full-screen-cover" style="--path-desktop: url('/assets-local/img/modelovani-energeticke-transformace-des.png'); --path-mobile: url('{{ page.search_image }}');"></div>
@@ -27,7 +30,8 @@ search_image: "/assets-local/img/modelovani-energeticke-transformace-mob.png"
 
 <div class="alert alert-info data-staleness" role="alert">
 <h5 class="alert-heading"><i class="fas fa-lightbulb"></i> Pracujeme na tom</h5>
-<p>Naše práce na energetickém modelu pro ČR a okolí rozhodně není u konce. Průběžně budeme zveřejňovat výstupy modelování, vhledy o transformaci, které z nich získáváme, i samotný kód modelu v licencí <i>Creative Commons</i> (stejně jako všechny naše ostatní materiály).</p>
+<p>Naše práce na energetickém modelu pro ČR a okolí rozhodně není u konce. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.</p>
+<p>Vše zveřejníme pod licencí <i>Creative Commons</i> (stejně jako všechny naše ostatní materiály).</p>
 </div>
 
 ## Cíle modelování
