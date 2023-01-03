@@ -13,12 +13,11 @@
   function updateTime() {
     now = Date.now();
     deadline = new Date('2022-12-06');  // Deadline is 12/05 midnight, i.e. 12/06 0:00
-    xmas = new Date('2022-12-25');
     diff_ms = deadline - now;
     if (diff_ms > 0) {
       text = "Chcete některý z našich designových plakátů pod stromeček? Máte na to už jen " + getDiffDays(diff_ms) + "!";
       $('#time-promo').text(text);
-    } else if (xmas - now > 0) {
+    } else {
       $('#time-promo').text("Chcete náš designový plakát nebo aktualizovaný Atlas klimatické změny?");
     }
   }
