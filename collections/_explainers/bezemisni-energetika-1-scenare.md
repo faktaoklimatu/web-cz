@@ -82,7 +82,7 @@ Modelování budoucí elektroenergetiky musí brát výše uvedená východiska 
 2. **Jádro** dokáže vyrábět stabilně, postavit jadernou elektrárnu však trvá mnoho let, navíc jsou zde vysoké investiční náklady a velké investiční riziko. Část těchto problémů by mohla překonat technologie _malých modulárních reaktorů_, ta ale zatím není zralá ke komerčnímu nasazení.
 3. **Nízkoemisní flexibilní zdroje** jsou potřeba pro neustálé vyrovnávání výroby a spotřeby. Může to být třeba biomasa, vodní elektrárny (nebo fosilní zdroje při použití technologie <glossary id='ccs'>CCS</glossary>). Podobnou funkci plní také technologie pro ukládání elektřiny (např. přečerpávací elektrárny, baterie nebo _zelený vodík_, tedy vodík vyrobený pomocí nadbytků obnovitelné elektřiny). Z druhé strany lze k vyrovnávání výroby a spotřeby přispět také _flexibilitou spotřeby_, tedy přizpůsobením spotřeby možnostem výroby (např. odložením spotřeby na vhodnější čas).
 
-Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti, zbytek stále stojí na vysokoemisních zdrojích – na využívání fosilních paliv:
+Současnou spotřebu v ČR pokrývají tyto tři kategorie zdrojů jen zčásti, zbytek stále stojí na vysokoemisních zdrojích – na využívání fosilních paliv: _TODO: Opravit výrobu z fosilních zdrojů na 23,7 a opravit procenta._{:.todo}
 {% include figure.html
     name="mix-current-des.svg"
     name-mobile="mix-current-mob.svg"
