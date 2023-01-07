@@ -12,30 +12,30 @@ cover-source-license: "CC BY 3.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-sa/3.0"
 cover-source-text: "Rozvodněná Vltava při plavebních komorách u Dětského ostrova, Wikimedia Commons"
 cover-source-url: "https://commons.wikimedia.org/wiki/File:Povodn%C4%9B_v_Praze,_05.jpg"
-perex:       "Na Silvestra roku 2022 vystoupila teplota v Brně na hodnotu 12,0°C. Předchozí silvestr byl v Brně ještě teplejší, teplota dosáhla 13,0°C.
-Prosincové teploty bývají v Brně okolo 1°C, takže poslední dva prosince se řadí mezi vyjímečně teplé. Také v létě příchází vlny veder a čas od času padají teplotní rekordy. Nabízí se tedy otázka: **mění se počet podobných vyjímečně teplých dní, nebo je jich víceméně stejně, jako jich bývalo dříve?**"
+perex:       "Na Silvestra roku 2022 vystoupila teplota v Praze-Ruzyni na hodnotu 15,8°C. Předchozí silvestr, tedy roku 2021, to bylo o něco méně 12,6°C.
+Nicméně Silvestrovské teploty bývaly v Ruzyni okolo 1,4°C, takže poslední dva silvestry byly opravdu vyjímečně teplé. Také v létě příchází vlny veder a čas od času padají teplotní rekordy. Nabízí se tedy otázka: **mění se počet podobných vyjímečně teplých dní, nebo je jich víceméně stejně, jako jich bývalo dříve?**"
 ---
 
 Abychom mohli na tuto otázku poskytnout daty podloženou odpověď, musíme si vymezit pár pojmů:
 
    - **Co myslíme slovem "dříve"?** Pro účely tohoto článku bude dříve znamenat "v letech 1961-1990". Takovému vymezení říkají meteorologové "referenční období"[^referencni-obdobi]. Proč zrovna takto? Protože od roku 1961 máme dostatečné množství pravidelně měřících meteostanic na celém území ČR, takže máme dostatek dat, abychom mohli podrobně porovnávat s posledními dekádami. 
 
-   - **Co považujeme za bežné denní teploty a co už je "vyjímečně teplý" nebo "vyjímečně studený" den?** Docela rozumná hranice pro běžné denní teploty je plus mínus pět stupňů od teplotního normálu pro daný den. Takových dní je v roce zhruba 80%. Je-li den o více než 5°C teplejší než teplotní normál pro daný den, budeme ho považovat za vyjímečně teplý, je-li o více než 5°C chladnější, považujeme ho za vyjímečně chladný. Podrobněji tyto výpočty vysvětlíme v následujících odstavcích. 
+   - **Co považujeme za bežné denní teploty a co už je "vyjímečně teplý" nebo "vyjímečně studený" den?** Ukazuje se, že rozumné vymezení pro běžné denní teploty je plus mínus pět stupňů od teplotního normálu pro daný den. Takových dní je v roce zhruba 80%. Je-li den o více než 5°C teplejší než teplotní normál pro daný den, budeme ho považovat za výrazněji teplejší, je-li o více než 5°C chladnější, považujeme ho za vyrazněji chladnější. Podrobněji nastavení těchto hranic vysvětlíme v následujících odstavcích. 
 
-   - Máme-li posuzovat, zda je denní teplota běžná nebo extrémní, musíme si říct **kdy - pro který den** a **kde - na jakém místě**. Například 25°C je v létě docela běžná teplota, ale na konci řijna už jde o extrém. Podobně teploty pod 10°C nejsou v zimě na horách velké překvapení, ale v nížině může jít o vyjímečně chladný den.     
+   - Máme-li posuzovat, zda je denní teplota běžná nebo extrémní, musíme si říct **kdy - pro který den** a **kde - na jakém místě**. Například 25°C je v létě docela běžná teplota, ale na konci řijna už jde o extrém. Podobně teploty pod -10°C nejsou v zimě na horách velké překvapení, ale v nížině může jít o vyjímečně chladný den.     
 
 
-Ukažme si úvahy nejprve na konkrétních příkladech. Kdybychom porovnali všechny silvestry v Brně od roku 1961 až do roku 2022, zjistíme, že ten v roce 2021 byl zdaleka nejteplejší. Jen čtyřikrát se od roku 1961 stalo, že silvestrovské teploty přesáhly hodnotu 9°C[^silvestry-v-brne]. Nechladnější silvestr v Brně byl v roce 1996, kdy teplota nevystoupila nad -10,8°C. V průměru bývala *dříve*, tedy v letech 1961-1990, nejvyšší denní teplota 1,0°C[^prumery-v-brne]. **Silvestr v roce 2021 byl o celých 12°C teplejší než průměrný silvestr.** Tomuto rozdílu teploty pro konkrétní den v daném roce od průměrné teploty pro ten stejný den říkáme teplotní odchylka.       
+Ukažme si úvahy nejprve na konkrétních příkladech. Kdybychom porovnali všechny silvestry v Praze - Ruzyni od roku 1961 až do roku 2022, zjistíme, že ten v roce 2022 byl zdaleka nejteplejší. Jen pětkrát se od roku 1961 stalo, že silvestrovské teploty přesáhly hodnotu 10°C[^silvestry-v-praze]. A nechladnější silvestr v Ruzyni byl v roce 1996, kdy teplota nevystoupila nad -13,6°C. V průměru bývala *dříve*, tedy v letech 1961-1990, nejvyšší denní teplota 1,4°C[^prumery-v-praze]. **Silvestr v roce 2022 byl o celých 14,4°C teplejší než jaký býval průměrný silvestr dříve.** Tomuto rozdílu teploty pro konkrétní den v daném roce od průměrné teploty pro ten stejný den říkáme teplotní odchylka.       
 
-Podobný výpočet můžeme provést pro jiný den, nebo jiné místo v Česku. Třeba o letním slunovratu v červnu 2021 bylo v Pražském Klementinu naměřena teplota 33,2°C. V průměru tam o letních slunovratech bývaly *dříve* teploty 22,8°C[^max-teploty] a tedy letní slunovrat z roku 2021 byl o 10,4°C teplejší než "dříve".
+Podobný výpočet můžeme provést pro jiný den, nebo jiné místo v Česku. Třeba o letním slunovratu v červnu 2021 byla v Brně naměřena nejvyšší denní teplota 32,1°C[^slunovrat-brno]. V průměru tam o letních slunovratech bývaly *dříve* teploty 22,7°C[^max-teploty] a tedy letní slunovrat z roku 2021 byl o 9,4°C teplejší než "dříve".
 
 Teploty pro konkrétní dny a konkrétní stanice si můžete porovnat na webu {envidata.cz/jakbylo}[https://envidata.cz/dataAnalysis/jakbylo/stationSelect.php?parameter=T].
 
 ## Co můžeme považovat za běžné denní teploty a jaké teploty jsou již vyjímečné? 
 
-Když si podobné výpočty teplotní odchylky provedeme pro různé dny v roce a různé meteostanice, zjistíme, že **teplotní odchylka deset a více °C od průměrné teploty pro daný den je velmi vzácná**. Dříve takový den nastával v průměru jen jednou za dva roky. V posledních desetiletích takové dny nastávají o něco častěji, ale stále poměrně velmi vyjímečně - teplotní odchylka nyní[^upresneni-nyni] přesáhne 10°C jen asi třikrát za rok. 
+Když si podobné výpočty teplotní odchylky provedeme pro různé dny v roce a různé meteostanice, zjistíme, že **teplotní odchylka deset a více °C od průměrné teploty pro daný den je vzácná**. Dříve takový den nastával *dříve* v průměru jen asi osmkrát za celý rok, z toho čtyři dny v roce bývaly o více než 10°C chladnější než normál pro daný den a čtyři o více než 10°C teplejší. Menší odchylky od normálu pro daný den by nás ale neměly překvapovat. Ukazuje se, že **zhruba 80% dní v roce má teploty v rozmezí plus mínus 5°C od průměrné teploty pro daný den**[^diskuse-bezne].
 
-**Za běžné můžeme považovat teploty v rozmezí plus mínus 5°C od průměrné teploty pro daný den** - takových dní je zhruba 80%. Tedy pro silvestry v Brně bývaly běžné nejvyšší denní teploty někde mezi -4°C a +6°C, pro letní slunovraty v Praze jsou běžné nejvyšší denní teploty mezi 17,8°C a 27,8°C. Letní dny na horách jsou samozřejmě o kus chladnější než v nížinách, například slunovraty na Lysé hoře bývaly běžné nejvyšší denní teploty mezi 9,5°C a 19,5°C. 
+Tedy pro silvestry v Praze-Ruzyni bývaly běžné nejvyšší denní teploty někde mezi -4,4°C a +6,4°C, pro letní slunovraty v Brně bývaly běžné nejvyšší denní teploty mezi 17,7°C a 27,7°C. Letní dny na horách jsou samozřejmě o kus chladnější než v nížinách, například slunovraty na Lysé hoře bývaly běžné nejvyšší denní teploty mezi 9,5°C a 19,5°C[^lysa-hora]. 
 
 (Vložit tabulku s průměry.)
 
@@ -54,29 +54,22 @@ Technická diskuse: fixace referen4n9ho obdob9; srovnání různých míst ;  ne
 
 Tyto komentáře českých vědců doplňují důležitý kontext pro ČR k publikaci ["Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát"](/explainery/vliv-klimatu-na-extremy-prirucka). Ta se věnuje hodnocení vlivu globální změny klimatu na extrémní projevy počasí ve světě.
 
-## Vlny veder
-
-*Autor: [Aleš Urban](#ales-urban)*
-
-Dosud nejteplejším létem v historii měření na území ČR bylo léto roku 2019. Průměrná teplota letních měsíců (červen–srpen) byla 19,5 °C,[^vlny-veder-cesko] tedy 2,5 °C nad normálem z let 1981–2010. Za rekordní hodnoty mohl zejména extrémně teplý červen, který se s průměrnou teplotou 20,7 °C stal vůbec nejteplejším červnem v historii měření a druhým nejteplejším měsícem po srpnu 2015. Během vlny veder na přelomu června a července 2019 byla v Doksanech také naměřena do té doby nejvyšší červnová teplota v ČR (tento rekord byl překonán 19. června 2022, kdy bylo v Řeži naměřeno 39,0 °C). Teplotní rekordy ale padaly v té době i jinde v Evropě – historicky nejvyšší teplota zaznamenaná ve Francii se přiblížila 46 °C.[^vlny-veder-francie] Druhá vlna veder na konci července zasáhla západní Evropu a Skandinávii, historický teplotní rekord byl zaznamenán např. ve Velké Británii.[^vlny-veder-uk] V Česku ovšem nebyla tato vlna veder tak extrémní jako ta první koncem června.
-
-Přestože bylo léto 2019 v průměru nejteplejším v historii měření v Česku, extremita a délka samotných vln veder nedosáhla v tomto roce hodnot z předchozích let 2018 a 2015, kdy bylo zaznamenáno více tropických dnů (dny s maximální teplotou nad 30 °C)[^vlny-veder-cesko] a historické teplotní rekordy[^vlny-veder-twitter] padaly na více stanicích. Podle aktuální studie[^vlny-veder-urban] bylo na stanici Praha-Ruzyně **nejvíce extrémně horkých dnů během jednoho léta zatím zaznamenáno v roce 2015 – celkem 28**. Z tohoto pohledu bylo léto 2019 s dvaceti horkými dny až čtvrté nejextrémnější za roky 2015, 2018 a 1994.
-
-Extrémnosti vln veder v jednotlivých letech odpovídá i jejich dopad na úmrtnost: v rekordním roce 2015 měly v Praze na svědomí více než 250 nadúmrtí oproti přibližně 120 nadúmrtím v roce 2019. Důležitější než dopad jednotlivých událostí je však **rostoucí trend v počtu nadúmrtí v důsledku horka během posledních dvou dekád**. V letech 2010–2019 bylo riziko úmrtí z horka v průměru dvakrát větší než v předchozích třech desetiletích (1982–2009).[^vlny-veder-urban] [^vlny-veder-praha]
-
-Studie vyhodnocující podíl změny klimatu na jednotlivých extrémních vlnách veder a jejich dopadech na českou společnost zatím chybí. Nicméně zahraniční studie[^vlny-veder-francie] udávají, že před sto lety by byla vlna veder o podobné intenzitě jako ta v červnu 2019 ve Francii 10krát méně pravděpodobná. Výsledky českých autorů[^vlny-veder-lhotka] dodávají, že vlny veder, jež jsou svou intenzitou srovnatelné s těmi v letech 2015, 2018 nebo v červnu 2019, mohou ve střední Evropě na konci 21. století nastávat až 4krát častěji než v současnosti. A tři nebo čtyři vlny veder různé intenzity během jednoho léta (podobně jako v roce 2015) mohou být v budoucnu projevem běžného letního počasí. To bude mít bezprostřední dopad i na nárůst rizika úmrtí v souvislosti s horkem. Mezinárodní studie odhaduje, že **přibližně jedna pětina úmrtí ve střední Evropě souvisejících s horkem je již nyní způsobena změnou klimatu**.[^vlny-veder-irozhlas]
-
-Bezprecedentní nárůst rizika úmrtí z horka v poslední dekádě mimo jiné ukazuje, jak **nutná je urychlená adaptace našich měst na teplejší podnebí** a zavádění účinných opatření pro ochranu obyvatelstva před horkem.
-
 ## Zdroje a poznámky
 
 [^referencni-obdobi]: V meteorologii se používají třicetiletá referenční období. 
 
-[^silvestry-v-brne]: Bylo to v letech 1978, 1986, 2021 a 2022. 
+[^silvestry-v-praze]: Bylo to v letech 1978, 1993, 2017, 2021 a 2022. 
 
-[^prumery-v-brne] pozn. to se ale s oteplováním prakticky nezměnilo, v následujícím třicetiletém období, tedy 1991-2020 byla průměrná nejvyšší denní teplota v Brně o silvestru 0.8°C.
+[^prumery-v-praze] pozn. to se s postupných globálním oteplotváním mírně mění: v letech 1961-1990 byla průměrná nejvyšší tepltota v Praze Ruzyni o silvestru 1,4°C, v letech 1991-2020 už to bylo 1,9°C.
+
+[^slunovrat-brno] Teploty pro jednotlivé dny v Brně - Tuřanech: https://www.envidata.cz/dataAnalysis/jakbylo/T.php?ID=B2BTUR01 
 
 [^max-teploty]: V těchto příkladech srovnáváme tzv. denní maxima, neboli nejvyšší denní teploty. Jak ukazujeme v technické diskusi, statistiky se významně nezmění ani když bychom uvažovali o průmerných denních teplotách nebo o denních minimech.  
+
+
+[^diskuse-bezne]: Tento údaj se mírně liší pro průměrné denní a nejvyšší denní teploty. Podrobněji to můžeme vidět skrze percentily. Pro **průměrné** denní teploty vychází 1. a 9. percentil teplotní odchylky na -4,84°C a +4,85°C. (pro období 1961-1990). Pro nejvyšší denní teploty je rozptyl o něco větší, 1. a 9. percentil teplotní odchylky nejvyšší denní teploty vychází na -5,89°C a +6,33°C. Je ale praktičtější říct si, že za běžné budeme považovat teplotní odchylky do plus mínus 5°C od denního normálu. V případě srovnávání průměrných denních teplot pak do tohoto rozmezí spadne XX% dní, v případě nejvyšších denních teplot pak YY% dní.   
+
+[^lysa-hora]: https://envidata.cz/dataAnalysis/jakbylo/T.php?ID=O1LYSA01
 
 [^upresneni-nyni]: v letech 2000 - 2020.
 
