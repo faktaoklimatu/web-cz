@@ -240,7 +240,15 @@ Při velkém zastoupení slunce a větru v energetickém mixu budeme krátkodob�
 
 ## Závěr
 
-**V České republice můžeme pro nízkoemisní výrobu elektřiny rozvíjet řadu technologií.** Některé jsou dostupné a cenově výhodné už teď, třeba solární a větrné elektrárny (a z určitého pohledu i konvenční jaderné zdroje). Další, například vodíkové technologie, malé modulární reaktory, příp. i CCS, mohou k větší komerční zralosti dospět už v průběhu této dekády.
+**V České republice můžeme pro nízkoemisní výrobu elektřiny rozvíjet řadu technologií.** Některé jsou dostupné a cenově výhodné už teď, třeba solární a větrné elektrárny (a z určitého pohledu i konvenční jaderné zdroje). Další, například vodíkové technologie, malé modulární reaktory, příp. i CCS, mohou k větší komerční zralosti dospět už v průběhu této dekády. Shrnutí všech diskutovaných zdrojů nabízí následující tabulka.
+
+{% include figure.html
+    class="wide-figure-desktop wide-figure-mobile contrast-figure"
+    name="summary-table-des.svg"
+    alt="Shrnující tabulka základních zdrojů bezemisní elektřiny"
+    caption="Shrnutí základních zdrojů bezemisní elektřiny v Česku"
+    source-text="Fakta o klimatu"
+%}
 
 Nicméně je třeba dodat, že s každou z těchto hlavních technologií je spojeno nějaké podstatné omezení. Většina výroby ze slunce je koncentrována do relativně málo hodin během teplejší poloviny roku. Větrná energetika zase má v Česku omezený potenciál na to, aby dokázala spolehlivě pokrýt spotřebu v chladnější části roku. Jaderné zdroje narážejí na velmi dlouhou dobu výstavby a vysoké investiční náklady, tedy i velké investiční riziko. Proto není úplně samozřejmé, že Česko skutečně dojde k levnému a stabilnímu energetickému mixu. O to víc potřebujeme možné scénáře posuzovat komplexně a **na další rozvoj elektroenergetiky v ČR mít vypracovaný dlouhodobý plán**.
 
