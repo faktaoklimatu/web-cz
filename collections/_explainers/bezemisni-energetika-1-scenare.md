@@ -4,6 +4,8 @@ title:       "Jaké cesty mohou dovést Česko k bezemisní elektřině?"
 series-id:   "serie-elektrina-2050-cr"
 series-order: "I"
 slug:        "bezemisni-energetika-1-scenare"
+# TODO: před zveřejněním přidat "-cr" i do slugů obou dílů seriálu.
+redirect_from: "/bezemisni-energetika-cr"
 published:   2022-09-15
 author:      "Jan Krčál"
 weight:      50
