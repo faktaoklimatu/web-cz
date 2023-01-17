@@ -6,7 +6,7 @@ series-order: "I"
 slug:        "bezemisni-energetika-1-scenare"
 # TODO: před zveřejněním přidat "-cr" i do slugů obou dílů seriálu.
 redirect_from: "/bezemisni-energetika-cr"
-published:   2022-09-15
+published:   2022-01-30
 author:      "Jan Krčál"
 weight:      50
 tags-scopes: [ eu, cr ]
@@ -61,6 +61,7 @@ Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst 
     name="consumption-des.svg"
     class="narrow-figure"
     alt="Ilustrativní vývoj spotřeby elektřiny v ČR v dalších dekádách – součet čisté spotřeby a ztrát v sítích."
+    caption="Tempo růstu spotřeby v příštích dekádách a výsledná spotřeba v roce 2050 velmi záleží na průběhu elektrifikace v teplárenství, průmyslu a dopravě. Ve srovnání s naší křivkou předpovídají některé ze studií pomalejší růst spotřeby do roku 2035 a naopak rychlejší tempo růstu mezi lety 2035–2050."
     source-text="Fakta o klimatu"
 %}
 
@@ -99,7 +100,7 @@ Další strategické rozhodnutí spočívá v tom, jak moc chceme **být ve výr
 
 ### Co musí budoucí mix splňovat?
 
-Pro budoucí mix české elektroenergetiky je důležitá řada vlastností. Zde chceme zdůraznit 5 z nich:
+Pro budoucí mix české elektroenergetiky je důležitá řada vlastností. Kromě **nízkých emisí skleníkových plynů** zde chceme zdůraznit 5 dalších vlastností:
 
 {% include columns.html
     class="wide-figure-desktop longread-small mb-2"
@@ -126,7 +127,7 @@ Obecně pak lze říct, že čím nižší budou náklady na výrobu bezemisní 
 
 V Česku máme rozsáhlé systémy centrálního zásobování teplem. A protože teplárny kromě tepla vyrábějí i elektřinu, je řešení pro dekarbonizaci elektroenergetiky nutně provázané s řešením pro dekarbonizaci tepláren.
 
-Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, které například využívají odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (využívající biomasu, bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů k vyrovnávání výkyvů ve výrobě elektřiny ze slunce a větru. V teplárenství by se také v budoucnu mohlo využívat odpadní teplo z malých modulárních reaktorů.
+Část těchto soustav lze elektrifikovat (velkými tepelnými čerpadly, které například využívají odpadní teplo z čističek odpadních vod), takové řešení ale není použitelné všude. Další teplárny (využívající biomasu, bioplyn nebo zelený vodík) mohou plnit roli záložních zdrojů k vyrovnávání výkyvů ve výrobě elektřiny ze slunce a větru. V teplárenství by se také v budoucnu mohlo využívat teplo z malých modulárních reaktorů.
 
 #### Energetická bezpečnost
 
@@ -147,7 +148,7 @@ Pomocí následujících tří _ilustrativních_ scénářů chceme ukázat zák
 {% assign comment_vre="
 Tento scénář vyžaduje nejvýraznější rozvoj obnovitelných zdrojů (OZE), tedy hlavně zdejší **solární a větrné energetiky**, ale předpokládá také nemalou část výroby z flexibilních zdrojů.
 
-V rámci flexibilních zdrojů jde především o nasazení **zeleného vodíku** k dlouhodobému ukládání elektřiny. Tato technologie nicméně zatím není dostatečně levná (ve srovnání se spalováním uhlí), aby se v Česku tržně prosadila." %}
+V rámci flexibilních zdrojů jde především o nasazení domácího **zeleného vodíku** k dlouhodobému ukládání elektřiny. Tato technologie nicméně zatím není dostatečně levná (ve srovnání se spalováním uhlí), aby se v Česku tržně prosadila." %}
 {% assign comment_import="
 **Import elektřiny z větru, převážně v zimní polovině roku**, snižuje nároky na výrobu z flexibilních zdrojů a v menší míře i na domácí výrobu ze slunce a větru.
 
@@ -232,7 +233,7 @@ V elektrické síti musí být výroba elektřiny vždy (zhruba) stejná jako je
 To je obzvlášť náročné v případě, kdy podstatná část elektřiny v síti pochází ze solárních a větrných zdrojů, jejichž výroba je značně proměnlivá. Základním nástrojem je tzv. _zdrojová přiměřenost_, tedy dostatečný výkon řiditelných zdrojů elektřiny, které dokáží pokrýt spotřebu, i když právě nesvítí a nefouká.
 
 Z hlediska budoucí výroby elektřiny bez emisí nás zajímají dva různé časové horizonty:
-* **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (případně zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne či týdne.
+* **Krátkodobé vyrovnávání** – jak dokážeme vyrovnávat výpadky ve výrobě (případně zužitkovat, co se vyrobí navíc) během několika hodin nebo v rámci jednoho dne.
 * **Sezónní vyváženost** – jak v každém ročním období zajistíme, že výroba odpovídá spotřebě.
 
 ### Krátkodobé vyrovnávání
@@ -323,7 +324,7 @@ slunce a vítr
 
 **Ambiciózní rozvoj jaderné energetiky** (souběžně s rozvojem výroby ze slunce a větru) může rovněž zmírnit tlak na biomasu a další flexibilní zdroje.
 
-K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké jaderné bloky a několik malých modulárních reaktorů.
+K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké jaderné bloky a několik malých modulárních reaktorů (zhruba takové [představy](https://www.irozhlas.cz/veda-technologie/technologie/jaderna-elektrarna-reaktor-dukovany-temelin-cez_2211150616_afo) má i ČEZ).
 "
 %}
 {% endcapture %}
@@ -369,6 +370,8 @@ Aby odhady budoucích nákladů dávaly smysl, musíme je porovnat se současný
     caption="Hrubý odhad současných systémových nákladů na výrobu elektřiny v ČR (2018–2021), bez daní."
     source-text="Fakta o klimatu"
 %}
+
+**Dnešní mix s výrazným podílem uhlí má ale ještě další skryté náklady v podobě dopadů na lidské zdraví.** V roce 2011 tuto <glossary id="externalita">externalitu</glossary> odhadoval [výzkum](https://docplayer.cz/106448634-Merne-externi-naklady-vyroby-elektricke-energie-v-uhelnych-parnich-elektrarnach-v-ceske-republice.html) Centra pro otázky životního prostředí na necelých 40 miliard ročně, což by k celkovému číslu přidalo dalších asi 60 haléřů na kWh.
 
 ### Kolik může stát nízkoemisní mix v roce 2050?
 
@@ -433,6 +436,8 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
     content=cost_2050_details
 %}
 
+Je třeba dodat, že **podstatnou část investičních nákladů nových bezemisních zdrojů mohou krýt [evropské fondy na klimatická opatření](/infografiky/fondy-eu)**. Investiční náklady tvoří u všech tří scénářů zhruba polovinu celkových systémových nákladů, takže evropské fondy mohou v důsledku citelně ulehčit spotřebitelům na budoucích fakturách za elektřinu.
+
 ## Jaká rizika jsou s transformací elektroenergetiky spojena?
 
 Výroba a distribuce elektřiny představuje naprosto klíčovou infrastrukturu státu. Její **zásadní transformace s sebou proto nutně nese řadu rizik**. Zároveň však širokou škálu rizik spojených s **dopady změny klimatu** přináší i zachování současného stavu, případně příliš pomalá a opatrná transformace. Základní přehled obou skupin rizik přinášíme níže, u transformačních rizik zacházíme do většího detailu.
@@ -455,7 +460,7 @@ Ke snížení rizik spojených s transformací můžeme využít několik zákla
 - **Mít k dispozici širokou škálu možných pokračování** transformace. Transformační riziko bude nižší, pokud nebudeme závislí na úspěšném rozvoji a škálování jedné konkrétní technologie (např. zelený vodík nebo malé modulární reaktory). Potřebujeme zajistit, že na transformaci probíhající ve 20. letech budou moci ve 30. a 40. letech navázat různé strategie, které budou technologicky smysluplné.
 - **Mít dostatečnou rezervu** ve výrobní kapacitě i v primárních zdrojích energie. Tato rezerva sice zvyšuje celkové systémové náklady, snižuje ale riziko turbulencí, jako je například ta spojená s ruským plynem. Takovým opatřením může být třeba udržování části uhelné energetiky po jejím odstavení nějakou dobu v záloze (za státní peníze).
 
-**Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů. Tedy výrazně urychlit rozvoj obnovitelných zdrojů a technologií pro dlouhodobou akumulaci a současně mírně posílit jaderné zdroje a také přenosové kapacity pro import obnovitelné elektřiny ze zahraničí.**
+**Ideálním řešením se zdá být vhodná kombinace všech tří ukázkových scénářů.** Tedy výrazně **urychlit rozvoj obnovitelných zdrojů** a technologií pro dlouhodobou akumulaci, **posilovat přenosové kapacity** pro import obnovitelné elektřiny ze zahraničí a také **zbudovat alespoň jeden nový jaderný blok** jako částečnou náhradu za stárnoucí Dukovany. Taková šíře záběru má ovšem smysl, jen pokud na všech těchto frontách dokážeme dosahovat skutečného pokroku.
 
 ## Co z toho plyne?
 
@@ -527,7 +532,7 @@ Scénáře v tomto textu jsou sestavené pro ilustraci základních možností v
 [^pokryti-spotreby]: V případě velkého využívání slunce a větru snadno dochází v určitých momentech k nadvýrobě elektřiny. Proto v grafech nezobrazujeme, kolik zdroj vyrobí elektřiny celkem, ale kolik z ní je přímo použitelné, tedy do jaké míry zdroj přispěje k pokrytí momentální poptávky. Část nadbytků je ovšem možné uložit a využít později, tato elektřina se pak objeví v kategorii flexibilních zdrojů.
 [^seasons-definition]: Pro jednoduchost rozdělujeme rok na dvě části – _zimní polovinou_ myslíme období _říjen–březen_, _letní polovinou_ pak období _duben–září_.
 [^seasons-wind]: Tím je myšleno, že budeme schopni z větru vyrobit 30 TWh elektřiny za rok. To je sice asi 50x více než dnes, pořád je to ale výrazně méně, než je technický potenciál větrné energetiky v Česku (a blízko tomu, jak svůj potenciál využívá jižní část Německa už dnes).
-[^aktualni-skala-biomasy]: Pro srovnání: v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy. Dále asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (ovšem při [60% energetických ztrátách](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) během výroby, což jsou velké ztráty). Celkově se tedy dnes v Česku primární produkce biomasy na energetické účely pohybuje okolo 60 TWh ročně. K výrobě veškeré chybějící elektřiny (tedy 30 TWh) a dalšího velkého množství tepla (řekněme opět 30 TWh) bychom potřebovali minimálně 100 TWh biomasy, přičemž další biomasa se určitě spotřebuje ještě v domácnostech a průmyslu. V součtu bychom tedy spotřebovávali alespoň 2x více energetické biomasy než dnes.
+[^aktualni-skala-biomasy]: Pro srovnání: v roce 2020 se z biomasy a bioplynu vyrobilo 4,7 TWh [elektřiny](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2020) a 6,4 TWh [tepla](https://www.eru.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2020) netto. K tomu bylo podle [statistik energetické bilance](https://ec.europa.eu/eurostat/web/energy/energy-flow-diagrams) Eurostatu potřeba asi 20 TWh biomasy. Dále asi 30 TWh pevné biomasy se spaluje přímo v domácnostech a v průmyslu a z dalších cca 8 TWh řepky se vyrobí 3,2 TWh bionafty (při [60% energetických ztrátách](https://journals.sagepub.com/doi/pdf/10.1260/0144-5987.32.6.1005) během výroby, což jsou velké ztráty). Celkově se tedy dnes v Česku primární produkce biomasy na energetické účely pohybuje okolo 60 TWh ročně. K výrobě veškeré chybějící elektřiny (tedy 30 TWh) a dalšího velkého množství tepla (řekněme opět 30 TWh) bychom potřebovali minimálně 100 TWh biomasy, přičemž další biomasa se určitě spotřebuje ještě v domácnostech a průmyslu. V součtu bychom tedy spotřebovávali alespoň 2x více energetické biomasy než dnes.
 [^cena-technologii]: Pracujeme nejvíce s [odhady od IEA](https://iea.blob.core.windows.net/assets/ae17da3d-e8a5-4163-a3ec-2e6fb0b5677d/Projected-Costs-of-Generating-Electricity-2020.pdf) z roku 2020 a s odhady od poradenské agentury [Lazard](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/). Na základě těchto zdrojů sestavujeme koeficienty pro náš [vlastní výpočet](https://docs.google.com/spreadsheets/d/16UJHRk10fZ9UC6-z8G8HyiUdiJOtRYdD-nsO_KIwTIY/edit?pli=1#gid=1790381195) systémových nákladů.
 [^cena-fixni-naklady]: Číslo 90 miliard korun nejlépe vyjadřuje, _jaké by byly investiční náklady, kdybychom naši momentální výrobní základnu stavěli dnes_, tedy nikoli skutečnou výši splácených úvěrů jednotlivých firem. Výjimku ve výpočtu děláme u solárních a větrných elektráren, u nichž bereme odhad investičních nákladů okolo roku 2010 (kdy byla většina z nich postavena), a u jaderné elektrárny Dukovany, u které odhadujeme pouze investiční náklady spojené prodloužením jejího provozu do poloviny 40. let. Kdybychom pro uhelné elektrárny a elektrárnu Temelín uvažovali jen třetinové investiční náklady, klesnou celkové investiční náklady asi o 40 miliard.
 [^cena-regulovane-elektriny]: Obsahuje náklady na distribuční a přenosové soustavy (provoz, investice, ztráty v síti; řádově 50 mld. korun ročně) a náklady na udržování stability v síti (do 10 mld. ročně).
