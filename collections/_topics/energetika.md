@@ -83,6 +83,7 @@ subtopics:
   content:
   - elektrina-cr
   - elektrina-sr
+  - elektrina-mix-eu
   - elektrina-na-osobu-eu
   - elektrina-na-osobu-svet
   - elektrina-svet
