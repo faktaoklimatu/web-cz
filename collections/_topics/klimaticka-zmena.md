@@ -166,7 +166,7 @@ subtopics:
   - vliv-klimatu-na-extremy
   - vliv-klimatu-na-extremy-prirucka
   - vliv-klimatu-na-extremy-cesko
-  - teplotni-extremy-cesko
+  - teplotni-extremy-cr
   - tropicke-dny-brno
   - tropicke-dny-praha
   - 2022-reserse-pozary
