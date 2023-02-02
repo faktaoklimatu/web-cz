@@ -35,8 +35,8 @@
     twitter: "https://twitter.com/katkolouchova"
 
   - name: "Jirka Lněnička"
-    position: "Analytik a editor"
-    summary: "Zaměřuje se především na témata jako biodiverzita a zdravá krajina. Opírá se také o 20 let zkušeností z pedagogické, překladatelské a editorské činnosti pro firmy, akademická pracoviště a další organizace."
+    position: "Editor"
+    summary: "Pomáhá týmu přemýšlet nad texty a ladit jejich finální podobu. Opírá se o 20 let zkušeností z pedagogické, překladatelské a editorské činnosti pro firmy, akademická pracoviště a další organizace."
     img: "jirka-lnenicka.jpg"
     email: "jirka.lnenicka@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
@@ -44,7 +44,7 @@
 
   - name: "Petr Holík"
     position: "Komunikační expert a podcaster"
-    summary: "Přírodovědec, který si tvořil svůj vztah k vědě spoluprací na výzkumech v Arktidě i na jižní Moravě, se začal komunikaci vědy věnovat už během svého studia. Tvoří podcast [2050](https://2050podcast.cz/) a přednáší o klimatické změně a transformaci."
+    summary: "Svůj vztah k vědě si tvořil spoluprací na výzkumech v Arktidě i na jižní Moravě a už během studia se začal věnovat její komunikaci. Tvoří podcast [2050](https://2050podcast.cz/) a přednáší o klimatické změně a transformaci."
     img: "petr-holik.jpg"
     email: "petr.holik@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/petrholik/"
@@ -52,23 +52,15 @@
 
   - name: "Hana Tesák Vrtala"
     position: "Podcasterka a analytička"
-    summary: "Věnuje se produkci vědecko-popularizačních akcí, zejména v projektu Science slam. Ve Faktech o klimatu se specializuje na téma transformace dopravy a spoluvytváří podcast [2050](https://2050podcast.cz/)."
+    summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích učitelů přírodních věd. Ve Faktech o klimatu se specializuje na téma transformace dopravy a spoluvytváří podcast [2050](https://2050podcast.cz/)."
     img: "hana-vrtalova.jpg"
     email: "hana.vrtalova@faktaoklimatu.cz "
     linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
     twitter: "https://twitter.com/HVrtalova"
 
-  - name: "Tom Protivínský"
-    position: "Analytik"
-    summary: "Věnuje se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn. Kromě toho pracuje pro ekonomický think-tank [IDEA](https://idea.cerge-ei.cz/)."
-    img: "tomas-protivinsky.jpg"
-    email: "tomas.protivinsky@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/tomas-protivinsky-49599040"
-    twitter: "https://twitter.com/protivinsky"
-
   - name: "Milan Vítek"
     position: "Správce sociálních sítí"
-    summary: "Stará se o sociální sítě Fakt o klimatu. Kromě toho se zabývá tématy vlivu změny klimatu na extrémy počasí a uhlíkového cyklu."
+    summary: "Stará se o sociální sítě Fakt o klimatu. Kromě toho se zabývá tématem vlivu změny klimatu na extrémy počasí."
     img: "milan-vitek.jpg"
     email: "milan.vitek@faktaoklimatu.cz "
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
@@ -88,6 +80,21 @@
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
+
+  - name: "Adam Bílek"
+    position: "Analytik"
+    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
+    img: "adam-bilek.jpg"
+    email: "adam.bilek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+  
+  - name: "Tom Protivínský"
+    position: "Analytik"
+    summary: "Věnuje se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn. Kromě toho pracuje pro ekonomický think-tank [IDEA](https://idea.cerge-ei.cz/)."
+    img: "tomas-protivinsky.jpg"
+    email: "tomas.protivinsky@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/tomas-protivinsky-49599040"
+    twitter: "https://twitter.com/protivinsky"
 
 - title: "Faktům o klimatu dále pomáhají"
   lead: |
@@ -121,6 +128,6 @@
   - name: "Jan Růžička"
     summary: "Muzikant a sounddesigner, který dává podcastu [2050](https://2050podcast.cz/) jeho charakteristický zvuk."
 
-  - name: "Adam Bílek"
-    summary: "Stážista ve Faktech o klimatu, který pomáhá zejména s marketingem a produkční prací na podcastu [2050](https://2050podcast.cz/)."
+  - name: "Andy Snováková"
+    summary: "Přispívá k tématu uhlíku v půdě a jeho vztahu ke klimatické změně a seznamuje se s vizualizací dat."
 
