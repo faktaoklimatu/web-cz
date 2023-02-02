@@ -15,7 +15,6 @@ newsletter: "9-54057be166928eb6fcc57504dc847797"
 fundraising: "https://www.darujme.cz/projekt/1203742"
 author: faktaoklimatu.cz
 copyright: "Otevřená data o klimatu, z. ú."
-copyright-link: /o-nas#fakturacni-udaje
 description: Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.
 keywords: klima, změna klimatu, infografiky
 banner: "includes-local/fr-vanoce-2022.html"
@@ -25,6 +24,7 @@ deploy:
   cors-report-uri: https://nkas07xe.uriports.com
 
 slugs:
+  contact: o-nas#kontakt
   datasets: datasety
   glossary: slovnik
   how-to-use: jak-pouzivat
