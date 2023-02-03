@@ -26,6 +26,8 @@ Chcete-li vyvíjet lokálně (tj. mít možnost sestavit si stránky u sebe), bu
 * pomocí lokální instalace (aktuálně stabilnější), nebo
 * pomocí kontejnerů (do budoucna možná jednodušší, ale aktuálně méně stabilní).
 
+WSL si dobře rozumí s VSCode, nejlépe postupovat podle [tohoto postupu](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+
 ### Lokální instalace
 
 Lokální instalace má tyto prerekvizity (nainstalujte do systému):
