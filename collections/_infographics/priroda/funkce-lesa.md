@@ -1,0 +1,35 @@
+---
+layout:        infographic
+title:         "Jaké jsou hlavní funkce lesa"
+slug:          "funkce-lesa"
+redirect_from: "/funkce-lesa"
+published:     2023-02-20
+weight:        105
+tags-scopes:   [ svet ]
+tags-topics:   [ priroda ]
+caption:       "TODO: Caption"
+---
+
+## Co vidíme v grafice?
+
+- Z grafiky je na první pohled zřejmé, že potenciál [přírodního kapitálu](/explainery/ekonomicka-hodnota-prirody) lesů dnes využíváme jen velmi omezeně: z **deseti hlavních funkcí lesa umíme ekonomicky ocenit v podstatě pouze produkci dřeva**. Zbývajících devět funkcí je však neméně klíčových pro přírodu i pro člověka a zcela zásadně ovlivňuje kvalitu života na Zemi.
+- Hned několik z nich bezprostředně souvisí s klimatem. Díky své sekvestrační funkci les **pomáhá s <glossary id="mitigace">mitigací</glossary> klimatické změny** – stromy i lesní půda zadržují velké množství uhlíku, který by se jinak formou skleníkových plynů uvolnil do atmosféry. Zároveň les **pomáhá i s <glossary id="adaptace">adaptací</glossary> na klimatickou změnu** – zmírňuje například letní vedra díky svému mikroklimatu, zadržuje vodu, takže krajina s lesy často méně trpí suchem než krajina bez lesů. Lesy fungují i jako částečná ochrana během povodní. Významné jsou rovněž jejich funkce **zlepšování kvality vzduchu a ochrany půdy před erozí a degradací**.
+
+## Čím jsou lesy ohroženy v ČR?
+
+- [V ČR stoupla za posledních 60 let průměrná teplota o 2 °C](/infografiky/teplota-cr), což odpovídá přibližně 300 m nadmořské výšky – pro smrky ve středních polohách byla tato změna příliš náhlá a výsledky dnes můžeme snadno pozorovat například [na Vysočině](/infografiky/tezba-lesa-vyvoj). Oteplování přitom bude určitě ještě minimálně několik dekád pokračovat, a protože ČR se vzhledem ke své vnitrozemské poloze otepluje přibližně [dvakrát rychleji](/infografiky/teplota-cr) než světový průměr, lze **v Česku očekávat oteplení nejméně o čtyři stupně oproti předindustriálnímu období**. tedy za předpokladu, že se lidstvu podaří udržet celosvětový nárůst teploty okolo hranice 2 °C (a neoteplí se více). To mimo jiné znamená, že smrkům se u nás bude v druhé polovině století dařit už jen v horských polohách, kde pro ně bude stále ještě dost chladno a vlhko. Kvůli častějším a intenzivnějším suchům ale budou postupně víc a víc strádat i jiné druhy dřevin – s výjimkou těch, jež jsou na teplé a suché klima dobře uzpůsobeny, jako třeba dub. (Roční úhrn srážek na našem území sice zůstává dlouhodobě víceméně stejný,[^uhrn-srazek-cr] mění se však jejich rozložení v průběhu roku, například prší intenzivněji, ale méně často, což lépe zvládají právě suchomilnější dřeviny.)
+- Kromě změny klimatu má na kondici lesů v Česku významný dopad také **vyčerpaná a překyselená půda** v řadě oblastí **a důsledky pěstebních postupů používaných v minulosti** (velké plochy jednodruhových lesů se stejně starými stromy, navíc rostoucími příliš blízko u sebe). Podrobnější informace o všech těchto faktorech lze najít v textu [_Proč umírají české jehličnaté lesy?_](/explainery/umirani-ceskych-lesu). Dalším souvislostem a dopadům na vlastníky lesů se věnuje [tato epizoda podcastu 2050](https://2050podcast.cz/epizody/16-obnova-lesu-po-kurovci).
+
+## Čím jsou lesy ohroženy jinde ve světě?
+
+- Kromě klimatické změny představuje z globálního hlediska největší problém probíhající **intenzivní odlesňování**: za posledních 30 let zmizelo 420 milionů hektarů porostů, tedy více než jedna desetina světových lesů.[^fao-worlds-forests] Za téměř 90 % veškerého odlesnění v posledních dvou desetiletích přitom stojí zemědělství, hlavně pěstování palmy olejné, sóji a dalších monokultur (v Asii a Africe) a chov hospodářských zvířat (v Jižní Americe).[^fao-worlds-forests] Původní druhy fauny a flóry tím přicházejí o svůj domov a zdroje potravy a mnohé navždy mizí, což celý ekosystém víc a víc destabilizuje. Také místní lidé ztrácejí svůj zdroj obživy, tradiční způsob života i práci – plantáže i velké farmy často patří velkým nadnárodním společnostem, které k jejich obhospodařování do značné míry využívají stroje a produkty pak exportují pryč. Odlesněná krajina rovněž bývá zranitelnější vůči extrémním meteorologickým jevům, jako jsou například sucha či povodně, a místo aby fungovala jako dlouhodobé úložiště uhlíku, stává se sama zdrojem emisí skleníkových plynů – v současnosti to platí například pro amazonský prales.[^economist-amazon]
+- **Evropské lesy** stále více **sužují požáry**. Týká se to zejména oblasti Středomoří. V roce 2021 shořelo jen v EU více než 550 000 hektarů lesů,[^jrc-forest-fires] během léta s vlnami veder v roce 2022 to bylo 700 000 hektarů[^euronews-forest-fires] (pro srovnání: to je více než čtvrtina všech lesů v ČR – za jediný rok). Rozsáhlé lesní požáry představují kromě jiného nemalé riziko pro bezpečnost a zdraví obyvatel (nejen samotný požár, ale i obrovské množství kouře z něj), škody na lidských obydlích a infrastruktuře a v neposlední řadě také velké ztráty kvalitního dříví. Ani s **kůrovcem** nebojujeme pouze v ČR, resp. středoevropském regionu – suché a teplé počasí v posledních letech vytváří vhodné podmínky pro jeho šíření na různých místech kontinentu a velké množství kůrovcového dříví bylo vytěženo například i ve Švédsku[^vulhm-dusledky] a dalších zemích.
+
+## Zdroje a poznámky
+
+[^uhrn-srazek-cr]: [Průměrný roční úhrn srážek 1961–2022, Česká republika](https://www.infoviz.cz/graphic.php?ID=231). Infoviz.cz.
+[^fao-worlds-forests]: FAO, 2022. [The State of the World’s Forests 2022. Forest pathways for green recovery and building inclusive, resilient and sustainable economies](https://www.fao.org/documents/card/en/c/cb9360en). 166 stran. ISBN 978-92-5-135984-6.
+[^economist-amazon]: The Economist, 2022. [The Brazilian Amazon has been a net carbon emitter since 2016](https://www.economist.com/interactive/graphic-detail/2022/05/21/the-brazilian-amazon-has-been-a-net-carbon-emitter-since-2016).
+[^jrc-forest-fires]: San-Miguel-Ayanz, J., _et al._, 2021. [_Forest Fires in Europe, Middle East and North Africa_](https://effis-gwis-cms.s3.eu-west-1.amazonaws.com/effis/reports-and-publications/annual-fire-reports/Annual_Report_2021_final_topdf1.pdf), Publications Office of the European Union, Luxembourg, 2022, doi:10.2760/34094, JRC130846.
+[^euronews-forest-fires]: Euronews, 2022. [Forest fires have burned a record 700,000 hectares in the EU this year](https://www.euronews.com/my-europe/2022/08/18/forest-fires-have-burned-a-record-700000-hectares-in-the-eu-this-year).
+[^vulhm-dusledky]: Výzkumný ústav lesního hospodářství a myslivosti, v. v. i., 2021. [Důsledky kůrovcové kalamity na budoucnost lesnictví ve střední Evropě](https://www.vulhm.cz/dusledky-kurovcove-kalamity-na-budoucnost-lesnictvi-ve-stredni-evrope/).
