@@ -84,6 +84,8 @@ subtopics:
   - hospodareni-lesy
   - 4-zemedelstvi-a-lesnictvi
   - 16-obnova-lesu-po-kurovci
+  - funkce-lesa
+  - lesni-certifikace
   - lesy-cr-mapa
   - tezba-lesa-plocha
   - tezba-lesa-vyvoj
@@ -128,5 +130,6 @@ subtopics:
   - ubyvani-biodiverzity
   - 4-zemedelstvi-a-lesnictvi
   - 22-jmk-adaptace
+  - ekonomicka-hodnota-prirody
 
 ---
