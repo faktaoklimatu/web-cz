@@ -80,7 +80,7 @@ Tento model je obzvláště vhodný pro **pochopení možností rozvoje solárn�
 ### Optimalizační model
 
 Tento model rozšiřuje základní didaktický model a umožňuje navíc:
-* **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny.** Model při tom **minimalizuje provozní náklady** celého systému.
+* **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny.** Model při tom **minimalizuje** buď **provozní náklady** nebo **provozní i investiční náklady** celého systému.
 * Přibližně **predikovat spotové ceny** elektřiny na trhu v průběhu celého roku.
 * V rámci sumární statistiky počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
 
@@ -106,7 +106,6 @@ Tento model rozšiřuje základní didaktický model a umožňuje navíc:
 ## Plány na další rozvoj
 
 Tímto rozhodně nekončíme. V budoucnu bychom chtěli především přidat:
-* optimalizaci investičních nákladů,
 * základní provázanost s teplárenstvím,
 * přesnější modelování spotřeby včetně její flexibility,
 * modelování systémových služeb.
