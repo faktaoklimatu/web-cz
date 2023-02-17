@@ -6,7 +6,7 @@ series-order: "I"
 slug:        "bezemisni-energetika-1-scenare"
 # TODO: před zveřejněním přidat "-cr" i do slugů obou dílů seriálu.
 redirect_from: "/bezemisni-energetika-cr"
-published:   2022-01-30
+published:   2023-01-30 01:00
 author:      "Jan Krčál"
 weight:      50
 tags-scopes: [ eu, cr ]
