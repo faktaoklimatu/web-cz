@@ -55,7 +55,7 @@ Tento model je vhodný především pro **porozumění možnostem rozvoje solár
 * Pracujeme s veřejnými **historickými daty** z [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) o výrobě a spotřebě elektřiny, nejčastěji v hodinovém rozlišení.
 * Model uvažuje pouze **výrobu z nízkoemisních zdrojů, které mají nízké provozní náklady (jádro, vodu, slunce a vítr)**. Ukazujeme, jakou část spotřeby mohou tyto zdroje pokrýt v jednotlivých hodinách, dnech, týdnech a ročních obdobích.
 * **Výrobu i spotřebu z těchto zdrojů lze navyšovat podle fixních faktorů**: můžeme tak zkoumat budoucnost, ve které nainstalujeme například 10× více větrných a 5× více solárních elektráren.
-* **Zbývající poptávku po elektřině dnes pokrývají zejména fosilní paliva**, v budoucnosti ji bude potřeba pokrýt nízkoemisími flexibilními zdroji. Model umožňuje vidět, kolik poptávky zůstává nepokryto a **které zdroje potřebujeme rozvíjet, aby zbývající poptávky bylo během celého roku co nejméně**.
+* **Poptávku po elektřině, kterou nepokryjí nízkoemisní zdroje, dnes pokrývají zejména fosilní paliva**. V budoucnosti ji bude potřeba pokrýt nízkoemisími flexibilními zdroji. Model umožňuje vidět, kolik poptávky zůstává nepokryto a **které zdroje potřebujeme rozvíjet, aby zbývající poptávky bylo během celého roku co nejméně**.
 * **Přenosová soustava** je modelována velmi zjednodušeně: každý stát je jeden uzel. Modelujeme pouze kapacity interkonektorů, které tyto státy propojují a ztráty při přenosu elektřiny do jiného státu. Distribuční soustava není modelována vůbec.
 * Kromě týdenních průběhů ukazujeme i **souhrnné statistiky pro jednotlivé týdny v roce a pro celý rok**.
 
