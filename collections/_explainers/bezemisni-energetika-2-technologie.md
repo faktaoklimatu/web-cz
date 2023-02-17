@@ -76,7 +76,6 @@ V tomto textu se zabýváme především sezónní proměnlivostí – solární
 ## Jádro
 
 ### Konvenční jádro
-_TODO:Náklady upravit na: Platí při rozpočítání investice na prvních 60 let provozu. Dalších případných 20 let provozu je pak cena nižší._{:.todo}
 {% include figure.html
     class="wide-figure-desktop"
     name="nuclear-conventional-des.svg"
@@ -95,7 +94,6 @@ _TODO:Náklady upravit na: Platí při rozpočítání investice na prvních 60 
 
 Vzhledem k těmto vlastnostem jaderných elektráren je realistické uvažovat buď o odklonu od jaderné energetiky, nebo jen o jejím omezeném rozvoji.[^jadro-know-how] V horizontu roku 2050 jaderná energetika zdaleka nemůže pokrýt celou naši předpokládanou spotřebu elektřiny.
 ### Malé modulární reaktory (SMR)
-_TODO:Náklady posunout na 100–200_{:.todo}
 {% include figure.html
     class="wide-figure-desktop"
     name="nuclear-smr-des.svg"
@@ -115,7 +113,6 @@ Kromě již zmíněných zdrojů lze k výrobě elektřiny využít i další te
 Protože se v tomto textu soustředíme na výrobu elektřiny, nebudeme podrobně rozvádět **geotermální zdroje**. Ty jsou v Česku [velmi důležitým bezemisním zdrojem **tepla**](https://www.ekonews.cz/nova-mapa-ukazuje-kde-se-daji-v-cesku-hloubit-geotermalni-vrty-energie-ze-zeme-ma-potencial/), příp. chladu. Z těchto zdrojů je možné (ve vybraných lokalitách v Česku) vyrábět spolu s teplem i elektřinu. Z pohledu dnešních nákladů je ale potenciál na výrobu elektřiny z geotermálních zdrojů v Česku nízký (v porovnání s ostatními technologiemi, které zde představujeme).
 
 ### Hydro
-_TODO:Potenciál snížit na 2.3 TWh_{:.todo}
 {% include figure.html
     class="wide-figure-desktop"
     name="hydro-des.svg"
