@@ -34,12 +34,6 @@ alt="Ilustrace výstupu modelování"
 <div class="longread-xl-space-middle"></div>
 <div class="col-lg-8 longread" markdown="1">
 
-<div class="alert alert-info data-staleness" role="alert">
-<h5 class="alert-heading"><i class="fas fa-lightbulb"></i> Pracujeme na tom</h5>
-<p>Model postupně vylepšujeme, přidáváme nové funkcionality a sbíráme zpětnou vazbu. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.</p>
-<p>Stejně jako naše ostatní materiály i model zveřejníme pod licencí <i>Creative Commons</i>.</p>
-</div>
-
 ## Cíle modelování
 
 Fakta o klimatu dlouhodobě usilují o kultivaci veřejné diskuse o klimatické změně a související dekarbonizaci hospodářství. Nejvíce emisí skleníkových plynů v Česku vzniká v sektoru elektroenergetiky, proto je jeho dekarbonizace zásadním úkolem pro naši společnost.
@@ -111,7 +105,11 @@ Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 
 ## Plány na další rozvoj
 
-Tímto rozhodně nekončíme. V budoucnu plánujeme přidat:
+Model postupně vylepšujeme, přidáváme nové funkcionality a sbíráme zpětnou vazbu. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.
+
+Stejně jako naše ostatní materiály i model zveřejníme pod licencí _Creative Commons_.
+
+V budoucnu plánujeme do modelu přidat:
 * základní provázanost s teplárenstvím,
 * přesnější modelování spotřeby včetně její flexibility,
 * modelování systémových služeb.
