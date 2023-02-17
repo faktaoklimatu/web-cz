@@ -36,7 +36,7 @@ alt="Ilustrace výstupu modelování"
 
 <div class="alert alert-info data-staleness" role="alert">
 <h5 class="alert-heading"><i class="fas fa-lightbulb"></i> Pracujeme na tom</h5>
-<p>Naše práce na energetickém modelu pro ČR a okolí rozhodně není u konce. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.</p>
+<p>Model postupně vylepšujeme, přidáváme nové funkcionality a sbíráme zpětnou vazbu. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.</p>
 <p>Stejně jako naše ostatní materiály i model zveřejníme pod licencí <i>Creative Commons</i>.</p>
 </div>
 
@@ -62,9 +62,7 @@ Tento model je vhodný především pro **porozumění možnostem rozvoje solár
 * Model uvažuje pouze **výrobu z nízkoemisních zdrojů, které mají nízké provozní náklady (jádro, vodu, slunce a vítr)**. Ukazujeme, jakou část spotřeby mohou tyto zdroje pokrýt v jednotlivých hodinách, dnech, týdnech a ročních obdobích.
 * **Výrobu i spotřebu z těchto zdrojů lze navyšovat podle fixních faktorů**: můžeme tak zkoumat budoucnost, ve které nainstalujeme například 10× více větrných a 5× více solárních elektráren.
 * **Zbývající poptávku po elektřině dnes pokrývají zejména fosilní paliva**, v budoucnosti ji bude potřeba pokrýt nízkoemisími flexibilními zdroji. Model umožňuje vidět, kolik poptávky zůstává nepokryto a **které zdroje potřebujeme rozvíjet, aby zbývající poptávky bylo během celého roku co nejméně**.
-
-Co myslíš zbývající poptávkou? Tu, kterou nepokryjí ty stále běžící zdroje? Upřesnila bych.
-* **Přenosová soustava** je modelována velmi zjednodušeně: každý stát je jeden uzel, modelujeme pouze kapacity interkonektorů, které tyto státy propojují a ztráty při přenosu elektřiny do jiného státu. Distribuční soustava není modelována vůbec.
+* **Přenosová soustava** je modelována velmi zjednodušeně: každý stát je jeden uzel. Modelujeme pouze kapacity interkonektorů, které tyto státy propojují a ztráty při přenosu elektřiny do jiného státu. Distribuční soustava není modelována vůbec.
 * Kromě týdenních průběhů ukazujeme i **souhrnné statistiky pro jednotlivé týdny v roce a pro celý rok**.
 
 {% capture didactic %}
@@ -78,8 +76,7 @@ Co myslíš zbývající poptávkou? Tu, kterou nepokryjí ty stále běžící 
 {% endcapture %}
 {% include expander-figure.html
     name="didactic"
-    class="wide-figure-desktop contrast-figure"
-    label-class="large-expander-title"
+    class="contrast-figure"
     label="Ukázka výstupu: ČR dnes a při instalaci 6× vyššího počtu solárních a větrných elektráren"
     content=didactic
 %}
@@ -89,9 +86,9 @@ Co myslíš zbývající poptávkou? Tu, kterou nepokryjí ty stále běžící 
 ### Optimalizační model
 
 Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
-* **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny.** Model při tom **minimalizuje** buď **provozní náklady** nebo **provozní i investiční náklady** celého systému.
-* Přibližně **predikovat spotové ceny** elektřiny na trhu v průběhu celého roku.
-* V rámci sumární statistiky počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
+* **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny**. Model při tom **minimalizuje** buď **provozní náklady**, nebo **provozní i investiční náklady** celého systému.
+* Přibližně **předpovídat spotové ceny** elektřiny na trhu v průběhu celého roku.
+* V rámci souhrnné statistiky počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
 
 
 {% capture optimization %}
@@ -105,8 +102,7 @@ Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 {% endcapture %}
 {% include expander-figure.html
     name="optimization"
-    class="wide-figure-desktop contrast-figure"
-    label-class="large-expander-title"
+    class="contrast-figure"
     label="Ukázka výstupu: ČR dnes a v roce 2050 při výrazném rozvoji slunce, větru a zeleného vodíku"
     content=optimization
 %}
@@ -115,7 +111,7 @@ Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 
 ## Plány na další rozvoj
 
-Tímto rozhodně nekončíme. V budoucnu bychom chtěli především přidat:
+Tímto rozhodně nekončíme. V budoucnu plánujeme přidat:
 * základní provázanost s teplárenstvím,
 * přesnější modelování spotřeby včetně její flexibility,
 * modelování systémových služeb.
