@@ -7,15 +7,21 @@ intro: |
 
     Pro plánování a informované rozhodování o transformaci energetiky potřebujeme chápat možnosti a limity jednotlivých zdrojů a technologií a také porozumět tomu, jak budou zdroje a technologie fungovat dohromady, jak pokryjí spotřebu energie a jaká bude jejich cena. Pro zodpovězení těchto a dalších otázek vytváříme otevřený a veřejně dostupný model energetiky.
 search_type: "Model"
-search_image: "/assets-local/img/modelovani-energeticke-transformace-mob.png"
+search_image: "/assets-local/figures/modelovani-energeticke-transformace/ilustrace-mob.png"
 ---
 
 <div class="section"><div class="container">
     <h1>{{ page.title }}</h1>
     <div class="lead narrow-text">{{ page.intro | markdownify }}</div>
-</div></div>
 
-<div class="full-screen-cover" style="--path-desktop: url('/assets-local/img/modelovani-energeticke-transformace-des.png'); --path-mobile: url('{{ page.search_image }}');"></div>
+{% include figure.html
+name="ilustrace-des.png"
+name-mobile="ilustrace-mob.png"
+class="narrow-text"
+alt="Ilustrace výstupu modelování"
+%}
+
+</div></div>
 
 <div class="section"><div class="container container-xl-fluid"><div class="row justify-content-center">
 <div class="longread-xl-space-left"></div>
@@ -65,6 +71,7 @@ Co myslíš zbývající poptávkou? Tu, kterou nepokryjí ty stále běžící 
 {% include figure.html
     name="ukazka-didakticky.png"
     class="wide-figure-mobile"
+    image-class="card my-0"
     alt="Ukázka výstupu: ČR dnes a při instalaci 6× vyššího počtu solárních a větrných elektráren"
     source-text="Fakta o klimatu"
 %}
@@ -91,6 +98,7 @@ Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 {% include figure.html
     name="ukazka-optimalizacni.png"
     class="wide-figure-mobile"
+    image-class="card my-0"
     alt="Ukázka výstupu: ČR dnes a v roce 2050 při výrazném rozvoji slunce, větru a zeleného vodíku"
     source-text="Fakta o klimatu"
 %}
