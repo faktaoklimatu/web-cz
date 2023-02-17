@@ -71,27 +71,3 @@
     margin-top: -0.25rem;
     font-weight: bold;
 }
-
-// Simple full screen page cover (with no text overlay).
-
-.full-screen-cover {
-    background-image: var(--path-mobile);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50%;
-    border-top: 3px solid rgba($c-lighter-grey, 0.15);
-    border-bottom: 3px solid rgba($c-grey, 0.15);
-}
-
-@media (min-width: 576px) {
-    .full-screen-cover {
-        background-image: var(--path-desktop);
-        padding-top: 30%;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .full-screen-cover { padding-top: 20%; }
-}
