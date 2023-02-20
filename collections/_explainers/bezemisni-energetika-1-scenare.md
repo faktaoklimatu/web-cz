@@ -52,7 +52,7 @@ Problém, který řešíme, je tedy mnohem těžší než jen jak nahradit stáv
 
 {% include preview-box.html
     class="highlight-text-box"
-    text="**TWh**, tedy **terawatthodina**, je jednotka energie. Jednu TWh elektřiny ročně v současnosti vyrobí menší uhelná elektrárna, jednu TWh pak spotřebuje asi 700 000 obyvatel ČR v domácnostech."
+    text="**TWh**, tedy **terawatthodina**, je jednotka energie. Jednu TWh elektřiny ročně v současnosti vyrobí menší uhelná elektrárna, jednu TWh pak spotřebuje asi 700&thinsp;000 obyvatel ČR v domácnostech."
 %}
 
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby[^consumption-metric] až ke **100 TWh ročně**, jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
