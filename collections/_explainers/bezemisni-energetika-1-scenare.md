@@ -52,7 +52,7 @@ Problém, který řešíme, je tedy mnohem těžší než jen jak nahradit stáv
 
 {% include preview-box.html
     class="highlight-text-box"
-    text="**TWh**, tedy **terawatthodina**, je jednotka energie. Jednu TWh elektřiny ročně v současnosti vyrobí menší uhelná elektrárna, jednu TWh pak spotřebuje asi 700&thinsp;000 obyvatel ČR v domácnostech."
+    text="**TWh**, tedy **terawatthodina**, je jednotka energie. Jednu TWh elektřiny ročně v současnosti vyrobí menší uhelná elektrárna, jednu TWh pak spotřebuje asi 700 000 obyvatel ČR v domácnostech."
 %}
 
 Pro jednoduchost budeme v této sérii textů předpokládat postupný nárůst spotřeby[^consumption-metric] až ke **100 TWh ročně**, jak ukazuje následující graf. Tento nárůst zhruba odpovídá odhadům [dostupných studií](#studie).
@@ -217,7 +217,7 @@ V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výr
 
 {% include expander-figure.html
     name="failure-scenarios"
-    class="wide-figure-desktop contrast-figure"
+    class="contrast-figure"
     label="Kontext: Jak mohou vypadat neúspěšné scénáře?"
     content=failure_scenarios
 %}
@@ -337,7 +337,7 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
 
 {% include expander-figure.html
     name="seasonality"
-    class="wide-figure-desktop contrast-figure"
+    class="contrast-figure"
     label="Podrobnosti: Jak sezónní vyváženosti dosahují naše tři ilustrativní scénáře?"
     content=seasonality
 %}
@@ -427,7 +427,7 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 
 {% include expander-figure.html
     name="cost-2050-details"
-    class="wide-figure-desktop contrast-figure"
+    class="contrast-figure"
     label="Podrobnosti: Jaké jsou systémové náklady jednotlivých scénářů v roce 2050?"
     content=cost_2050_details
 %}
