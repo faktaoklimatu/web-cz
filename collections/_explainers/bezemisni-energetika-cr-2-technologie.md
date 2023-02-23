@@ -4,7 +4,7 @@ title:       "Z čeho můžeme v Česku vyrábět bezemisní elektřinu?"
 series-id:   "serie-elektrina-2050-cr"
 series-order: "II"
 slug:        "bezemisni-energetika-cr-2-technologie"
-published:   2023-01-30
+published:   2023-02-24
 author:      "Jan Krčál"
 weight:      50
 tags-scopes: [ eu, cr ]
