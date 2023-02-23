@@ -4,7 +4,7 @@ title:         "Zachytávání, ukládání a využití uhlíku"
 slug:          2023-reserse-doprava
 redirect_from: "/2023-reserse-doprava"
 weight:        305
-published:     2022-09-29
+published:     2023-03-25
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
 caption:       "Přehled institucí a článků věnujících se zachytávání a ukládání uhlíku z atmosféry."
