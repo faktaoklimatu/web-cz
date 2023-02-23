@@ -23,10 +23,10 @@ perex: |
 {% include tldr.html content="
 - Zásadními zdroji bezemisní elektřiny v Česku mohou být **slunce a vítr**. Kvůli vyrovnanosti výroby během roku bude **klíčový rozvoj větrné energetiky**.
 - Pomocí **jaderné energetiky** nemůžeme pokrýt celou spotřebu země dostatečně rychle. Udržení nebo mírné navýšení současné výroby z jádra nicméně může dekarbonizaci energetiky ulehčit.
-- Když nesvítí a nefouká, máme na výběr z řady **nízkoemisních flexibilních zdrojů**. Nicméně vyrábět elektřinu z nich je zpravidla dražší než vyrábět ze slunce, větru či jádra. Je tedy důležité [vybudovat v ČR energetický mix](/explainery/bezemisni-energetika-1-scenare) tak, abychom tyto flexibilní zdroje potřebovali co nejméně.
+- Když nesvítí a nefouká, máme na výběr z řady **nízkoemisních flexibilních zdrojů**. Nicméně vyrábět elektřinu z nich je zpravidla dražší než vyrábět ze slunce, větru či jádra. Je tedy důležité [vybudovat v ČR energetický mix](/explainery/bezemisni-energetika-cr-1-scenare) tak, abychom tyto flexibilní zdroje potřebovali co nejméně.
 " %}
 
-_V tomto textu najdete přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím dílu](/explainery/bezemisni-energetika-1-scenare) série._
+_V tomto textu najdete přehled základních technologií pro bezemisní či nízkoemisní výrobu elektřiny. Více o možnostech jejich kombinace do nízkoemisního mixu se dočtete [v předchozím dílu](/explainery/bezemisni-energetika-cr-1-scenare) série._
 {: .longread-small}
 
 Než se pustíme do zkoumání možností jednotlivých technologií, připomeňme základní škálu problému, který řešíme. Dnes v Česku spotřebujeme okolo 60 TWh elektřiny ročně. Do roku 2050 očekáváme výrazný nárůst spotřeby, hlavně kvůli elektrifikaci části dopravy, vytápění a průmyslu. Odhady tohoto nárůstu se mírně liší, pro účely tohoto textu nám bude stačit dobře zapamatovatelný hrubý odhad: **v roce 2050 budeme potřebovat pokrýt zhruba 100 TWh spotřeby za rok**. Tuto spotřebu nemusíme nutně celou pokrýt domácí výrobou, část spotřeby můžeme pokrýt importem elektřiny ze zahraničí.
