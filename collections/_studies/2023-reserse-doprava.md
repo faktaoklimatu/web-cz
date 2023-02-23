@@ -1,9 +1,9 @@
 ---
 layout:        survey
-title:         "Zachytávání, ukládání a využití uhlíku"
+title:         "Rešerše strategií v dopravě"
 slug:          2023-reserse-doprava
 redirect_from: "/2023-reserse-doprava"
-weight:        305
+weight:        307
 published:     2023-03-25
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
