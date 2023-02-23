@@ -158,7 +158,7 @@ Mimo výrobu elektřiny se biomasa ve velkém používá k **vytápění** a tak
 **Cílené pěstování energetických plodin** je dalším zdrojem biomasy – mezi ně patří například kukuřice, řepka, ozdobnice obrovská (miscanthus) nebo stromy. **Potenciál cíleně pěstované biomasy je ale také omezený.** Má to dvě příčiny:
 - **Energetické plodiny jsou oproti jiným zdrojů energie velmi málo efektivní.** Na jednom hektaru zemědělské půdy je možné za rok vypěstovat biomasu na výrobu 20–30 MWh elektřiny[^vynos-biomasa], tedy veškerá zemědělská půda ČR (přes 4 mil. hektarů) by dodala 85–125 TWh ročně.
 
-- **Energetické plodiny soutěží o prostor s plodinami zemědělskými a také s přírodou**, využití veškeré zemědělské půdy v ČR na biomasu je samozřejmě nemyslitelné. I celosvětově musíme být obezřetní, na nízkých cenách potravin závisí živobytí lidí v chudých zemích.
+- **Energetické plodiny soutěží o prostor s plodinami zemědělskými a také s přírodou**, využití veškeré zemědělské půdy v ČR na biomasu je samozřejmě nemyslitelné. I celosvětově musíme být obezřetní, velké využití energetických plodin by zvedalo ceny zemědělských komodit, což by lidem v chudých zemích zhoršovalo přístup k potravinám a mohlo tak mít velmi neblahé sociální důsledky.
 
 **Biomasa v energetice může mít vysoké nepřímé emise.** Z hlediska klimatu dává tento zdroj smysl pouze při lokálním využití nebo při transportu nízkoemisní dopravou. Potřebujeme, aby energie získaná z biomasy výrazně převýšila energii vloženou do pěstování, sklizně a přepravy.
 

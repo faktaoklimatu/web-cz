@@ -116,7 +116,7 @@ Sezóna významně ovlivňuje výrobu: v letní polovině roku se například vy
 
 #### Přiměřené náklady
 
-Při rozhodování o energetickém mixu hrají důležitou roli i celkové budoucí náklady na výrobu elektřiny – tedy součet nákladů investičních a provozních. Na těch se podílí stát, energetické firmy a další aktéři.
+Při rozhodování o energetickém mixu hrají důležitou roli i celkové budoucí náklady na výrobu elektřiny – tedy součet nákladů investičních a provozních. Na těch se podílí primárně výrobci elektřiny, provozovatelé přenosové a distribuční soustavy a stát.
 
 Tyto náklady budou pravděpodobně o něco vyšší než dnes (nicméně toto srovnání může být poněkud zavádějící v tom smyslu, že do nákladů obvykle nezapočítáváme veškeré negativní <glossary id="externalita">externality</glossary>, jako je třeba znečištění ovzduší nebo dopady na klima). Přesto nutně potřebujeme, aby i v budoucnu byla elektřina cenově dostupná a zajistila dostatečný životní standard všem vrstvám společnosti.
 
