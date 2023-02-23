@@ -217,7 +217,9 @@ V praxi by ve všech těchto neúspěšných scénářích pomohly přetoky výr
 
 {% include expander-figure.html
     name="failure-scenarios"
-    class="contrast-figure"
+    expanded=true
+    class="wide-figure-desktop contrast-figure"
+    label-class="large-expander-title"
     label="Kontext: Jak mohou vypadat neúspěšné scénáře?"
     content=failure_scenarios
 %}
@@ -337,7 +339,8 @@ K takovému nárůstu výroby z jádra bychom ale potřebovali tři nové velké
 
 {% include expander-figure.html
     name="seasonality"
-    class="contrast-figure"
+    class="wide-figure-desktop contrast-figure"
+    label-class="large-expander-title"
     label="Podrobnosti: Jak sezónní vyváženosti dosahují naše tři ilustrativní scénáře?"
     content=seasonality
 %}
@@ -427,7 +430,8 @@ Posílení jádra s sebou nese významné investiční riziko. Pokud by se poda�
 
 {% include expander-figure.html
     name="cost-2050-details"
-    class="contrast-figure"
+    class="wide-figure-desktop contrast-figure"
+    label-class="large-expander-title"
     label="Podrobnosti: Jaké jsou systémové náklady jednotlivých scénářů v roce 2050?"
     content=cost_2050_details
 %}
