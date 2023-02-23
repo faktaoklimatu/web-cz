@@ -180,6 +180,6 @@ subtopics:
   lead: |
     Ve vzdálenější budoucnosti budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Navíc jí kvůli elektrifikaci jiných sektorů budeme potřebovat výrazně více. Jaké jsou technologické možnosti takové transformace? Jaká jsou kritéria, podle kterých můžeme vyhodnocovat různé scénáře takové transformace?
   content:
-  - bezemisni-energetika-1-scenare
-  - bezemisni-energetika-2-technologie
+  - bezemisni-energetika-cr-1-scenare
+  - bezemisni-energetika-cr-2-technologie
 ---

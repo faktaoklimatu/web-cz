@@ -75,7 +75,7 @@ Je ale také důležité dodat, že **takto rychle nemusíme výrobu elektřiny 
 {% include preview-box.html
     title="Detaily k jednotlivým technologiím"
     text="Více informací k jednotlivým zdrojům elektřiny nabízí další díl této série."
-    slug="bezemisni-energetika-2-technologie"
+    slug="bezemisni-energetika-cr-2-technologie"
 %}
 
 Modelování budoucí elektroenergetiky musí brát v potaz výše uvedená východiska. V tomto textu budeme pracovat s následujícími kategoriemi zdrojů pro výrobu bezemisní elektřiny v Česku:
