@@ -40,19 +40,6 @@
     }
 }
 
-.electricity-country-summary {
-    font-size: 0.9em;
-
-    .card-body dl {
-        display: grid;
-        margin-bottom: 0;
-        grid-template-columns: auto auto;
-        column-gap: 0.5em;
-
-        dd { text-align: right; }
-    }
-}
-
 .longread-figure img.infographic {
     width: 107%;
 }
@@ -69,14 +56,6 @@
         .card-img-top {
             width: 100%;
         }
-    }
-
-    .electricity-country-summary {
-        float: right;
-        clear: right;
-        margin-right: -15% !important;
-        margin-left: 1.5em !important;
-        font-size: 1em;
     }
 }
 
