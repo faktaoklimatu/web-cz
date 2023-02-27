@@ -23,7 +23,7 @@ Abychom mohli na tuto otázku poskytnout odpověď podloženou daty, musíme si 
 - **Počty výjimečně teplých a chladných dní budeme srovnávat s obdobím 1961–1980**[^referencni-obdobi] a kdykoliv v následujícím textu použijeme slovo *dříve*, myslíme tím právě roky 1961–1980. Proč zrovna takto? Od roku 1961 máme dostatečné množství pravidelně měřících meteostanic na celém území ČR, takže máme dostatek dat, abychom mohli podrobně porovnávat s dalšími dekádami. Zároveň budeme moci srovnat tři dvacetiletky: 1961–1980, 1981–2000 a 2001–2020, které zhruba odpovídají dobám, kdy se vyrůstaly generace X, mileniálové a generace Z. Můžeme se pak lépe vztáhnout ke vzpomínkám, které jsou uvozeny větou "…v době mého mládí".
 
 {% include figure.html
-    name="pojmy-zaramovani-des.png"
+    name="pojmy-zaramovani-des.svg"
     alt="TODO ALT TEXT"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -103,7 +103,7 @@ Podrobně lze posun rozložení teplotních odchylek zobrazit v tzv. histogramu.
 - Extrémně teplých dní postupně zřetelně přibývá, úbytek extrémně chladných dní je méně zřetelný.
 
 {% include figure.html
-    name="histogram-anomalii-des.png"
+    name="histogram-anomalii-des.svg"
     alt="TODO ALT TEXT"
     source-text="Fakta o klimatu, ČHMÚ"
     source-url="https://faktaoklimatu.cz"
