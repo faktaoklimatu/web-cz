@@ -78,15 +78,13 @@ Grafika shrnuje důležité principy v lesním hospodaření, které podporují 
 
 Samostatným tématem, kterým bude nutné se v Česku co nejdříve začít zabývat, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, mohou přispět jen omezeně a **řešení vyžaduje aktivní přístup ze strany státu**.
 
-{:.todo}
 {% include figure.html
     name="ochrana-pred-zveri.jpg"
     alt="TODO: ALT text"
+    caption="Ochránit stromky před okusem spárkatou zvěří není jednoduché ani levné."
     source-text="Larry Lamsa, Wikimedia Commons"
     source-url="https://commons.wikimedia.org/wiki/File:Bandelier_(5503074138).jpg"
 %}
-Obrázek: _Ochránit stromky před okusem spárkatou zvěří není jednoduché ani levné. Zdroj: Wikimedia Commons
-
 
 ## Jaké problémy spojené s certifikacemi bude potřeba řešit?
 
