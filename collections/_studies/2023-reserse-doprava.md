@@ -7,7 +7,7 @@ weight:        307
 published:     2023-03-25
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
-caption:       "Přehled institucí a článků věnujících se zachytávání a ukládání uhlíku z atmosféry."
+caption:       "Přehled strategiií, institucí a článků věnujících strategiím v dekarbonizaci dopravy."
 intro: |
   <i>Carbon capture and storage</i> (CCS) je proces, při kterém je zachytáván CO<sub>2</sub>, který je následně uložen, aby neunikl zpět do atmosféry. Jedná se o potenciálně klíčový nástroj pro mitigaci změn klimatu a je součástí většiny scénářů k dosažení klimatické neutrality.
 items:
