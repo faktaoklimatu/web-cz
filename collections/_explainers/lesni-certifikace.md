@@ -96,8 +96,13 @@ Dalším problémem spojeným s certifikacemi je míra dodržování definovaný
 
 Aby mohly být certifikační standardy pro les skutečným přínosem, je proto nutné se kromě snahy co nejvíce zvýšit plochu certifikovaných lesů také **zaměřit na reálné dodržování pravidel v lesích, které už certifikované jsou**, a jednoznačně se distancovat od jakýchkoliv praktik, které vedou k porušování závazků. I kdyby to mělo znamenat odebrání certifikační značky. Dosavadní fokus na plochu ("chceme mít více certifikovaných lesů") je pochopitelný a v principu správný, ale skrývá v sobě také potenciální riziko kompromisů či nedostatečné kontroly plnění požadavků. Součástí standardu proto musí být mechanismy, které toto riziko minimalizují.
 
-{:.todo}
-Obrázek: _Celosvětově bylo od roku 1990 odlesněno přibližně 420 milionu hektarů porostů. To je celá jedna desetina světových lesů a cca 160krát více, než je všech lesů v Česku._[^fao-worlds-forests]
+{% include figure.html
+    name="deforestation.jpg"
+    alt="TODO: ALT text"
+    caption="Celosvětově bylo od roku 1990 odlesněno přibližně 420 milionu hektarů porostů. To je celá jedna desetina světových lesů a cca 160krát více, než je všech lesů v Česku.[^fao-worlds-forests]"
+    source-text="bones64, Pixabay"
+    source-url="https://pixabay.com/cs/photos/odles%c5%88ov%c3%a1n%c3%ad-stroj-n%c3%a1kladn%c3%ad-v%c5%afz-2833687/"
+%}
 
 Protože dřevo je také exportovanou a importovanou surovinou, efektivitu standardu a transparentnost postupů spojených s lesním hospodařením, těžbou a přepravou dříví značně ovlivňuje i vzájemná spolupráce mezi dovážející a vyvážející zemí – **bez aktivní role státu se žádný certifikační systém neobejde**. Pokud v exportující zemi dobře nefunguje vymahatelnost práva, případně nejsou k dispozici kvalitní monitorovací nástroje (a stát tedy nemá jasnou představu, co se v jeho lesích děje) nebo pokud dovážející země striktně nereguluje, jaké dřevo se smí na jejím trhu objevit a prodat, certifikace samy o sobě příliš mnoho nezmění. Jsou to dobrovolné závazky, které cílí primárně na tržní prostředí – nikdy v principu nemohou mít stejnou účinnost jako zákony a nařízení. Ani v České republice by proto zaměření na jejich větší podporu (jakkoli je žádoucí) nemělo být příčinou k oddalování **důkladné revize stávající legislativy**.
 
