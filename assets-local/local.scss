@@ -1,4 +1,6 @@
 /* Local CSS for Czech web version */
+$c-callout-background: #f7efde;
+$c-callout-text: #373633;
 
 .intro {
     .tagline { width: 15.2rem; }
@@ -44,6 +46,58 @@
     width: 107%;
 }
 
+.scenar-spolecne {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.scenar-jedinecne {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: -0.25rem;
+    font-weight: bold;
+}
+
+.callout-box {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background: $c-callout-background;
+    color: $c-callout-text;
+}
+
+.extremy-kulicka {
+    font-size: 0.9em;
+    vertical-align: 0.125em;
+}
+
+.extremy-histogramy {
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+
+    .longread-figure {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .callout-box {
+        padding: 1.5rem 2rem;
+    }
+
+    .extremy-histogramy {
+        grid-template-columns: 7fr 5fr;
+        row-gap: 2rem;
+
+        p {
+            align-self: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .cop-entity-summary {
         float: right;
@@ -57,17 +111,4 @@
             width: 100%;
         }
     }
-}
-
-.scenar-spolecne {
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    margin-bottom: 0;
-}
-
-.scenar-jedinecne {
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    margin-top: -0.25rem;
-    font-weight: bold;
 }
