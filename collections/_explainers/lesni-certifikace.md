@@ -43,9 +43,37 @@ Společným jmenovatelem obou certifikačních systémů je důraz na udržiteln
     source-url="https://faktaoklimatu.cz"
 %}
 
-Grafika shrnuje důležité principy v lesním hospodaření, které podporují zdraví a odolnost lesa – jeho schopnost přizpůsobovat se měnícím se podmínkám (například adaptovat se na růst průměrné roční teploty či změny v rozložení srážek v průběhu roku) a tedy přežít. Zaměřuje se hlavně na **Česko**, kde **především potřebujeme změnit dosud běžně používané pěstební a těžební postupy**. Tedy například ustoupit od "plantáží", na kterých se pěstuje pouze jeden typ dřeviny a všechny stromy jsou stejného stáří (všechny jsou vysazeny ve stejnou dobu), nebo omezit holosečné kácení a odstraňování pařezů a veškerých těžebních zbytků z lesa. V Česku nutně nepotřebujeme mít mnohem více lesů (a snažit se zalesňovat nelesní plochy, v tom ostatně narážíme i na územní limity), potřebujeme hlavně jiné lesy – rozmanitější druhově, věkově i prostorově. Jinými slovy: **místo "lánu" smrků** (či jakýchkoli jiných dřevin vysazených bez ohledu na stanovištní podmínky jako monokultura) **potřebujeme mít spíše pestrou lesní mozaiku.**
+Grafika shrnuje důležité principy v lesním hospodaření, které podporují zdraví a odolnost lesa – jeho schopnost přizpůsobovat se měnícím se podmínkám (například adaptovat se na růst průměrné roční teploty či změny v rozložení srážek v průběhu roku) a tedy přežít. Zaměřuje se hlavně na **Česko**, kde **především potřebujeme změnit dosud běžně používané pěstební a těžební postupy**. Tedy například ustoupit od "plantáží", na kterých se pěstuje pouze jeden typ dřeviny a všechny stromy jsou stejného stáří (všechny jsou vysazovány ve stejnou dobu), nebo omezit holosečné kácení a odstraňování pařezů a veškerých těžebních zbytků z lesa. V Česku nutně nepotřebujeme mít mnohem více lesů (a snažit se zalesňovat nelesní plochy, v tom ostatně narážíme i na územní limity), potřebujeme hlavně jiné lesy – rozmanitější druhově, věkově i prostorově. Jinými slovy: **místo "lánu" smrků** (či jakýchkoli jiných dřevin vysazených bez ohledu na stanovištní podmínky jako monokultura) **potřebujeme mít spíše pestrou lesní mozaiku.**
 
 **Certifikační standard FSC se věnuje všem bodům** uvedeným v grafice a jasně specifikuje požadavky, které s nimi souvisejí. Výjimkou je regulace stavů zvěře, ta však vyžaduje spíše legislativní změny a možnosti závazků vlastníka jsou v tomto ohledu spíše omezené. **Systém PEFC zůstává vágnější** – jako příklad lze uvést třeba vápnění a hnojení, které tímto standardem není příliš omezeno, nebo použití pesticidů v lese, u nějž také není stanoven přesný limit. Nespecifické jsou rovněž mnohé požadavky z hlediska péče o půdu, odtokových poměrů, ponechání mrtvého dřeva v lese apod. Všechny tyto věci přitom hrají v dlouhodobé udržitelnosti lesního hospodaření důležitou roli.
+
+{% include expander-figure.html
+    name="rozdily-formulaci"
+    expanded=false
+    class="contrast-figure"
+    label="Příklady rozdílné rozpracovanosti a konkrétnosti opatření PEFC a FSC"
+    content="
+### Ponechání mrtvého dřeva v lese
+- **PEFC** (kritérium 4.3, plné znění) – Za účelem zachování a posílení populací organismů vázaných na stárnoucí a mrtvé dřevo ponechávat dle konkrétních podmínek část stromů přirozené druhové skladby v porostu na dožití a do samovolného rozpadu dřevní hmoty se zvážením dopadu na bezpečnost návštěvníků lesa. Opatření nutno aplikovat pouze v souladu s potřebami ochrany lesa zejména proti druhům hrozícím kalamitním přemnožením. Odběr těžebních zbytků omezit na lokality, kde to stanovištní podmínky dovolují.
+- **FSC** (výběr z více kritérií, pojmy označené* jsou přesně definovány v kap. 9 standardu)
+6.3.4 Pálení klestu a těžebních zbytků není přípustné. Výjimka je možná při kalamitním výskytu podkorních škůdců.
+6.3.5 Klest a těžební zbytky jsou ponechány na místě nebo se ukládají na hromady. Mechanické zpracování klestu a těžebních zbytků je přípustné pouze v odůvodněných případech, zejména při kalamitním výskytu podkorních škůdců.
+6.3.7 Využití pařezů se nepřipouští.
+10.11.4 (zjednodušené opatření pro malé lesy do 1000 hektarů)
+Vlastník* lesa ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a trvale vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně pět stromů z dospívající a dospělé etáže na hektar v dílci. 
+Poznámka: Stromy k dožití a zetlení jsou stromy ekonomicky špatně zhodnotitelné, tj. například napadené hnilobou, špatně dostupné, zlomy, pahýly apod., vzrostlé stromy v referenčních plochách*, dále listnáče, jedle, stromy břehových porostů* vodních toků* a stromy esteticky významné. Z evidence se vyřazují kmeny v závěrečné fázi rozkladných procesů, tj. když ztrácí strukturu dřeva.
+10.11.5 V případech, kdy ponechání stromů odporuje bezpečnosti a ochraně zdraví nebo ochraně lesa, je vlastník* povinen neprodleně vybrat náhradní stromy, které plní ekologické funkce odstraněných stromů obdobným způsobem.
+
+### Hnojení a vápnění
+- **PEFC** (kritérium 2.2, plné znění) – Hnojiva by měla být používaná v omezené míře a jen v odůvodněných případech, s přihlédnutím dopadu na jednotlivé složky životního prostředí. Doporučuje se využívat především metod biologického přihnojování.
+- **FSC** (kritérium 10.6, plné znění) – Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaruje. Používá-li vlastník* hnojiva, pak prokáže, že používání je stejně nebo více ekologické a ekonomicky přínosné než používání pěstebních postupů, které hnojiva nevyžadují, a zamezí, zmírní či odstraní škody na environmentálních hodnotách*, včetně škod na půdě.
+10.6.1 Pokud se používají hnojiva*, jsou ekologické a ekonomické výhody jejich používání stejné nebo vyšší než výhody pěstebních metod, jež hnojiva* nevyžadují.
+10.6.2 Na porostní lesní půdě se neprovádí hnojení za účelem zvyšování výnosů.
+10.6.3 Plošné a letecké vápnění není povoleno.
+10.6.4 Používají-li se hnojiva*, jsou zadokumentovány jejich typy, místo, frekvence a množství jejich aplikace.
+10.6.5 Používají-li se hnojiva*, jsou chráněny environmentální hodnoty*, mj. prostřednictvím zavedení opatření zamezujících škodám.
+10.6.6 Škody na environmentálních hodnotách*, způsobené používáním hnojiva*, jsou zmírňovány nebo napraveny."
+%}
 
 **Následující text přináší krátké shrnutí jednotlivých postupů a příklady souvisejících požadavků FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
 
