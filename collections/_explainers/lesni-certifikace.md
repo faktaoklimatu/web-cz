@@ -94,7 +94,7 @@ Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaru
 10.6.6 Škody na environmentálních hodnotách*, způsobené používáním hnojiva*, jsou zmírňovány nebo napraveny."
 %}
 
-**Následující text přináší krátké shrnutí jednotlivých postupů a příklady souvisejících požadavků FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
+**Následující text přináší krátké shrnutí jednotlivých postupů a některé s nimi související požadavky FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
 
 ### Pěstební postupy
 
