@@ -160,7 +160,7 @@
   name-long: "watt, watthodina a jejich násobky"
   description: "V našem kontextu se s watty (a jejich násobky) setkáváme nejčastěji v rámci energetiky, typicky výkonu elektráren. Příklad: výkon hnědouhelné elektrárny Chvaletice je 820 MW (1 MW = milión W) a za rok vyrobí zhruba 3500 GWh elektřiny [[cs.wikipedia](https://cs.wikipedia.org/wiki/Elektrárna_Chvaletice)]. Jedna standardní LED \"žárovka\" má příkon kolem 9 W, její klasický starý ekvivalent s žhaveným vláknem cca 60 W – pokud ji necháte svítit hodinu, spotřebujete cca 9 (resp. 60) Wh (watthodin) energie. Čistá spotřeba elektřiny v domácnostech ČR je cca 1,4 MWh/os./rok. [[Český statistický úřad](https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=vystup-objekt-vyhledavani&vyhltext=spot%C5%99eba+elekt%C5%99iny&bkvt=c3BvdMWZZWJhIGVsZWt0xZlpbnk.&katalog=all&pvo=ENE04#w=)]"
 
-id: test1
+- id: test1
   name-short: "test1"
   name-long: "test1"
-  description: neco
+  description: "neco"
