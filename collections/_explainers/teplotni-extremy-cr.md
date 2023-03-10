@@ -41,7 +41,7 @@ Je-li den o více než 5 °C teplejší než teplotní normál pro daný den, bu
 
 ## Příklady výjimečně teplých dní
 
-Ukažme si úvahy nejprve na konkrétních příkladech. Kdybychom porovnali všechny silvestry v Klementinu od roku 1961 až do roku 2022, zjistíme, že ten v roce 2022 byl zdaleka nejteplejší. Od roku 1961 silvestrovské teploty přesáhly hodnotu 10 °C pouze šestkrát.[^silvestry-v-praze] A nejchladnější silvestr v Klementinu byl v roce 1996, kdy teplota nevystoupila nad −9,7 °C. V průměru bývala *dříve*, tedy v letech 1961–1980, nejvyšší denní teplota 2,3 °C.[^prumery-v-praze] **Silvestr v roce 2022 byl tak o celých 15,4 °C teplejší, než jaký býval průměrný silvestr dříve**.
+Kdybychom porovnali všechny silvestry v Klementinu od roku 1961 až do roku 2022, zjistíme, že ten v roce 2022 byl zdaleka nejteplejší. Od roku 1961 silvestrovské teploty přesáhly hodnotu 10 °C pouze šestkrát.[^silvestry-v-praze] A nejchladnější silvestr v Klementinu byl v roce 1996, kdy teplota nevystoupila nad −9,7 °C. V průměru bývala *dříve*, tedy v letech 1961–1980, nejvyšší denní teplota 2,3 °C.[^prumery-v-praze] **Silvestr v roce 2022 byl tak o celých 15,4 °C teplejší, než jaký býval průměrný silvestr dříve**.
 
 {% include figure.html
     name="silvestry-klementinum-des.svg"
@@ -63,7 +63,7 @@ Teploty pro konkrétní dny a další stanice v Česku si můžete porovnat na w
 
 ## Jak vypadá běžná proměnlivost počasí?
 
-Když stejné výpočty provedeme pro různé dny v roce a různé stanice, zjistíme, že odchylky spadají **mezi <span class="extremy-kulicka" style="color: #dfe1ee">⬤</span><span class="extremy-kulicka" style="color: #fae0df">⬤</span> −5 °C až +5 °C pro 70–78 % dní v roce**. Takové teplotní odchylky můžeme tedy považovat za běžné.[^diskuse-bezne]
+Když stejné výpočty provedeme pro různé dny v roce a různé stanice, zjistíme, že odchylky spadají **mezi <span class="extremy-kulicka" style="color: #dfe1ee">⬤</span> −5 °C až <span class="extremy-kulicka" style="color: #fae0df">⬤</span> +5 °C pro 70–78 % dní v roce**. Takové teplotní odchylky můžeme tedy považovat za běžné.[^diskuse-bezne]
 
 Kdybychom to opět chtěli ilustrovat na příkladech, můžeme říct, že *dříve* bývaly *běžně* nejvyšší denní teploty mezi
 - −2,7 °C a +7,3 °C na Silvestry v Klementinu,
@@ -135,7 +135,7 @@ Jen málo dní má teplotní odchylku vetší než 10 °C a odchylky větší ne
 demonstrující růst průměrné teploty – odchylky v letech 2001–2020 byly průměrně o 1,3
 stupně vyšší než v letech 1961–1980." %}
 
-Střed histogramu se mezi obdobími 1961–1980 a 2001–2020 posunul o 1,3 °C, což odpovídá faktu, že Česko se za posledních 60 let [oteplilo o 2 °C](/infografiky/teplota-cr).[^diskuse-otepleni]
+Střed histogramu se mezi obdobími 1961–1980 a 2001–2020 posunul o 1,3 °C, což odpovídá faktu, že Česko se za posledních 60 let [oteplilo, konkrétně o 2 °C](/infografiky/teplota-cr).[^diskuse-otepleni]
 
 {% include figure.html name="histogram-4.svg" alt="Okrajové oblasti histogramů pro poslední tři dvacetiletky ve třech řadách pod sebou. V období 1961–1980 bylo průměrně 43 dní za rok o více než pět stupňů chladnějších než normál a 41 dní o více než pět stupňů teplejších. V období 2001–2020 to bylo 31 chladnějších a 79 teplejších dní." %}
 
