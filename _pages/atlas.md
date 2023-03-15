@@ -35,7 +35,7 @@ search_image: "/assets-local/img/atlas-mockup.png"
 
 Atlas klimatické změny vznikl v létě roku 2020 jako pokus o vytvoření materiálu pro pochopení základních souvislostí a prezentaci nejdůležitějších dat týkajících se změny klimatu. Jako grafický podklad posloužily naše existující inforgrafiky doplněné texty, které celou problematikou provázejí. Rádi bychom, aby náš atlas sloužil těm, kterých se klimatická změna týká, tedy všem.
 
-Klimatická změna je důležitým problémem současnosti, a je proto pevně spojena s průřezovým tématem “environmentální výchova”. Prostor pro vzdělávání o změně klimatu se díky tomuto průřezovému tématu nabízí takřka ve všech předmětech – nejen přírodopisu nebo zeměpisu. Učení o změně klimatu může probíhat i mimo standardní hodiny, například v rámci projektů či aktivit spojených se Dnem Země.
+Klimatická změna je důležitým problémem současnosti, a je proto pevně spojena s průřezovým tématem "environmentální výchova". Prostor pro vzdělávání o změně klimatu se díky tomuto průřezovému tématu nabízí takřka ve všech předmětech – nejen přírodopisu nebo zeměpisu. Učení o změně klimatu může probíhat i mimo standardní hodiny, například v rámci projektů či aktivit spojených se Dnem Země.
 
 Grafiky a texty projektu Fakta o klimatu chceme do budoucna provázet metodickými materiály, které učitelům, lektorům a dalším poslouží jako zdroj otázek a aktivit pro práci se žáky či studenty.
 
