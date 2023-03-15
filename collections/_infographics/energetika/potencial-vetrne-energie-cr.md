@@ -39,7 +39,7 @@ Pravá horní část infografiky definuje některé použité pojmy a ilustruje 
 
 ## Metodika
 
-Studie ÚFA uvažuje pro plnou realizaci potenciálu rok 2040. Počítá se stožáry o výšce zhruba 90–170 m s rotory o průměru 110–160 m. U instalací se počítá s výkonem 3–5 MW a roční výrobou 7,8–13,5 GWh. Pro srovnání, většina z 210 větrných elektráren instalovaných v Česku do roku 2020 dosahuje výšky 60–110 m (průměr rotoru 50–100 m) a instalovaného výkonu 0,6–2 MW (průměr zhruba 1600 GW). Za rok každá vyrobí v průměru 3,3 GWh.
+Studie ÚFA uvažuje pro plnou realizaci potenciálu rok 2040. Počítá se stožáry o výšce zhruba 90–170 m s rotory o průměru 110–160 m. U instalací se počítá s výkonem 3–5 MW a roční výrobou 7,8–13,5 GWh. Pro srovnání, většina z 210 větrných elektráren instalovaných v Česku do roku 2020 dosahuje výšky 60–110 m (průměr rotoru 50–100 m) a instalovaného výkonu 0,6–2 MW (průměr zhruba 1,6 MW). Za rok každá vyrobí v průměru 3,3 GWh.
 
 Studie vypočítává potenciál větrné energie pro jednotlivé kraje ve dvou fázích. Nejprve se pro celou ČR spočítá tzv. *technický potenciál*, který je určen tím, zda je v daném místě možné a ekonomicky výhodné postavit větrnou elektrárnu s předpokládanými parametry.
 
