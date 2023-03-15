@@ -37,7 +37,7 @@ První Atlas klimatické změny vznikl v létě roku 2020 jako pokus o vytvořen
     
 Protože první vydání bylo brzy rozebrané, rozhodli jsme se pro dotisk, aktualizaci dat ve stávajících infografikách a zároveň rozšíření atlasu o několik nových stran. Na podzim 2022 tak vyšlo druhé, rozšířené vydání, které se dá snadno poznat podle nové obálky.  
 
-Klimatická změna je důležitým problémem současnosti, a je proto pevně spojena s průřezovým tématem “environmentální výchova”. Prostor pro vzdělávání o změně klimatu se tak nabízí takřka ve všech předmětech – nejen v přírodopise nebo zeměpise, ale třeba i v cizích jazycích, fyzice či biologii. Výuka o změně klimatu může probíhat také mimo standardní hodiny, například v rámci projektů či aktivit spojených se Dnem Země.
+Klimatická změna je důležitým problémem současnosti, a je proto pevně spojena s průřezovým tématem "environmentální výchova". Prostor pro vzdělávání o změně klimatu se tak nabízí takřka ve všech předmětech – nejen v přírodopise nebo zeměpise, ale třeba i v cizích jazycích, fyzice či biologii. Výuka o změně klimatu může probíhat také mimo standardní hodiny, například v rámci projektů či aktivit spojených se Dnem Země.
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=1 title="### Jak učit o klimatu a klimatické změně?"
 content="
