@@ -30,6 +30,18 @@ V ČR jsou nejvíce zastoupeny tyto certifikační systémy pro udržitelné les
 {:.todo}
 přidat loga PEFC a FSC (a základní čísla)
 
+{% include figure.html
+    name="logo-fsc.jpg"
+    alt="TODO: ALT text"
+    caption="_Forest Stewardship Council_, certifikováno cca 5 % lesů v ČR"
+%}
+
+{% include figure.html
+    name="logo-pefc.jpg"
+    alt="TODO: ALT text"
+    caption="_Programme for the Endorsement of Forest Certification_, certifikováno cca 60 % lesů v ČR (zahrnuje státní podnik Lesy ČR, který spravuje 44 % lesů v zemi[^loga]"
+%}
+
 Oba standardy se používají i v mnoha dalších zemích světa[^dalsi-standardy]. Hlavní rozdíl mezi nimi spočívá v náročnosti a konkrétnosti: **zatímco FSC striktně vymezuje, jak se smí v lese hospodařit a jak ne, formulace PEFC jsou většinou více obecné** (což sice zvyšuje jejich aplikovatelnost, ale také nabízí větší prostor pro interpretaci) a zpravidla nevyžadují od lesního hospodáře více než aktuální platná legislativa v dané zemi (viz příklady v další kapitole).[^sousedni-zeme]
 
 Společným jmenovatelem obou certifikačních systémů je důraz na udržitelnost a podporu [přírodě blízkého hospodaření](/explainery/hospodareni-lesy). Otázkou nicméně zůstává, nakolik je něčeho takového možné dosáhnout pomocí standardu, jehož požadavky významně nepřekračují rámec stávajících zákonů a navazujících předpisů. Například v Česku vznikla velká část této legislativy před mnoha desetiletími a za jiných (relativně stabilních) klimatických podmínek. Od té doby neprošla zásadními proměnami a z hlediska udržitelnosti tak dnes postrádá velmi potřebnou flexibilitu. Proto je vzhledem k rychlému šíření kůrovce v posledních letech, pokračujícímu globálnímu oteplování a [celkově špatné kondici našich lesů](/explainery/umirani-ceskych-lesu) **alarmující, jak málo jsou náročné certifikační standardy v Česku zastoupeny**.[^rakousko-fsc]
@@ -166,6 +178,7 @@ Protože dřevo je také exportovanou a importovanou surovinou, efektivitu stand
  
 ## Zdroje a poznámky
 
+[^loga]: Ministerstvo zemědělství ČR, Zpráva o stavu lesa a lesního hospodářství 2021, s. 11. https://eagri.cz/public/web/file/715438/Zprava_o_stavu_lesa_2021_web.pdf
 [^dalsi-standardy]: PEFC a FSC nejsou jediné systémy certifikací lesů, které se ve světě využívají. Například Spojené státy a Kanada mají i své vlastní standardy [SFI (Sustainable Forest Initiative)](https://forests.org/sfi-2022-standards/), které v jiných zemích nenajdeme. 
 [^sousedni-zeme]: V sousedních zemích se zastoupení obou certifikací značně liší, ve všech čtyřech je však certifikováno buď stejně, nebo více lesů než v ČR. Sousední Slovensko má 4× více lesů certifikovaných FSC (22 %), zastoupení PEFC je podobné jako u nás (62 %). Výrazně více FSC oproti Česku má Polsko (70 %), také PEFC se vztahuje na velkou část lesů (76 %). Rakousko naopak v podstatě žádné lesy v rámci FSC certifikované nemá, zato PEFC se zde vztahuje na 86 % lesů. V Německu získalo certifikaci FSC 13 % lesů, 77 % je certifikováno PEFC.
 [^rakousko-fsc]: V Rakousku, kde přísný certifikační systém FSC zastoupen není, často postupy přírodě blízkého hospodaření vyžaduje legislativa.
