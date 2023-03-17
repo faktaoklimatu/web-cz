@@ -65,7 +65,10 @@ Grafika shrnuje důležité principy v lesním hospodaření, které podporují 
     class="contrast-figure"
     label="Příklady rozdílné konkrétnosti opatření PEFC a FSC"
     content="
-### Ponechání mrtvého dřeva v lese
+
+Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek stojí za povšimnutí například i rozdílné používání sloves, které má velký vliv na vynutitelnost jednotlivých opatření: "není přípustné", "je povinen neprodleně", "není povoleno" (FSC) versus "by měla být", "doporučuje se", "se zvážením" (PEFC).     
+
+#### Ponechání mrtvého dřeva v lese
 **PEFC** (kritérium 4.3, plné znění) 
 
 Za účelem zachování a posílení populací organismů vázaných na stárnoucí a mrtvé dřevo ponechávat dle konkrétních podmínek část stromů přirozené druhové skladby v porostu na dožití a do samovolného rozpadu dřevní hmoty se zvážením dopadu na bezpečnost návštěvníků lesa. Opatření nutno aplikovat pouze v souladu s potřebami ochrany lesa zejména proti druhům hrozícím kalamitním přemnožením. Odběr těžebních zbytků omezit na lokality, kde to stanovištní podmínky dovolují.
@@ -85,7 +88,7 @@ Poznámka: Stromy k dožití a zetlení jsou stromy ekonomicky špatně zhodnoti
 
 10.11.5 V případech, kdy ponechání stromů odporuje bezpečnosti a ochraně zdraví nebo ochraně lesa, je vlastník* povinen neprodleně vybrat náhradní stromy, které plní ekologické funkce odstraněných stromů obdobným způsobem.
 
-### Hnojení a vápnění
+#### Hnojení a vápnění
 **PEFC** (kritérium 2.2, plné znění) 
 
 Hnojiva by měla být používaná v omezené míře a jen v odůvodněných případech, s přihlédnutím dopadu na jednotlivé složky životního prostředí. Doporučuje se využívat především metod biologického přihnojování.
