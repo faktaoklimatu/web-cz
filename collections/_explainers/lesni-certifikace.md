@@ -27,22 +27,32 @@ Udržitelnost je dnes velmi často skloňovaným pojmem i v byznysu: banky stál
 
 V ČR jsou nejvíce zastoupeny tyto certifikační systémy pro udržitelné lesní hospodaření a následné zpracování dřeva:
 
-{:.todo}
-přidat loga PEFC a FSC (a základní čísla)
-
-{% include figure.html
-    name="logo-fsc.jpg"
-    alt="TODO: ALT text"
-    caption="_Forest Stewardship Council_, certifikováno cca 5 % lesů v ČR"
-%}
-
+<div class="container">
+<div class="row">
+<div class="col-sm">
 {% include figure.html
     name="logo-pefc.jpg"
-    alt="TODO: ALT text"
-    caption="_Programme for the Endorsement of Forest Certification_, certifikováno cca 60 % lesů v ČR (zahrnuje státní podnik Lesy ČR, který spravuje 44 % lesů v zemi[^loga]"
+    alt="Logo certifikace PEFC"
+    class="certifikace-loga"
+    caption="_Programme for the Endorsement of Forest Certification_, certifikováno cca 60 % lesů v ČR (zahrnuje státní podnik Lesy ČR, který spravuje 44 % lesů v zemi."
+    source-text="PECF"
+    source-url="https://pefc.org/"
 %}
+</div>
+<div class="col-sm">
+{% include figure.html
+    name="logo-fsc.jpg"
+    alt="Logo certifikace FSC"
+    class="certifikace-loga"
+    caption="_Forest Stewardship Council_, certifikováno cca 5 % lesů v ČR."
+    source-text="FSC"
+    source-url="https://fsc.org/"
+%}
+</div>
+</div>
+</div>
 
-Oba standardy se používají i v mnoha dalších zemích světa[^dalsi-standardy]. Hlavní rozdíl mezi nimi spočívá v náročnosti a konkrétnosti: **zatímco FSC striktně vymezuje, jak se smí v lese hospodařit a jak ne, formulace PEFC jsou většinou více obecné** (což sice zvyšuje jejich aplikovatelnost, ale také nabízí větší prostor pro interpretaci) a zpravidla nevyžadují od lesního hospodáře více než aktuální platná legislativa v dané zemi (viz příklady v další kapitole).[^sousedni-zeme]
+Oba standardy se používají i v mnoha dalších zemích světa.[^dalsi-standardy] Hlavní rozdíl mezi nimi spočívá v náročnosti a konkrétnosti: **zatímco FSC striktně vymezuje, jak se smí v lese hospodařit a jak ne, formulace PEFC jsou většinou více obecné** (což sice zvyšuje jejich aplikovatelnost, ale také nabízí větší prostor pro interpretaci) a zpravidla nevyžadují od lesního hospodáře více než aktuální platná legislativa v dané zemi (viz příklady v další kapitole).[^sousedni-zeme]
 
 Společným jmenovatelem obou certifikačních systémů je důraz na udržitelnost a podporu [přírodě blízkého hospodaření](/explainery/hospodareni-lesy). Otázkou nicméně zůstává, nakolik je něčeho takového možné dosáhnout pomocí standardu, jehož požadavky významně nepřekračují rámec stávajících zákonů a navazujících předpisů. Například v Česku vznikla velká část této legislativy před mnoha desetiletími a za jiných (relativně stabilních) klimatických podmínek. Od té doby neprošla zásadními proměnami a z hlediska udržitelnosti tak dnes postrádá velmi potřebnou flexibilitu. Proto je vzhledem k rychlému šíření kůrovce v posledních letech, pokračujícímu globálnímu oteplování a [celkově špatné kondici našich lesů](/explainery/umirani-ceskych-lesu) **alarmující, jak málo jsou náročné certifikační standardy v Česku zastoupeny**.[^rakousko-fsc]
 
@@ -64,12 +74,11 @@ Grafika shrnuje důležité principy v lesním hospodaření, které podporují 
     expanded=false
     class="contrast-figure"
     label="Příklady rozdílné konkrétnosti opatření PEFC a FSC"
-    content="
-
-Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek stojí za povšimnutí například i rozdílné používání sloves, které má velký vliv na vynutitelnost jednotlivých opatření: "není přípustné", "je povinen neprodleně", "není povoleno" (FSC) versus "by měla být", "doporučuje se", "se zvážením" (PEFC).     
+    content='
+Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek stojí za povšimnutí například i rozdílné používání sloves, které má velký vliv na vynutitelnost jednotlivých opatření: "není přípustné", "je povinen neprodleně", "není povoleno" (FSC) versus "by měla být", "doporučuje se", "se zvážením" (PEFC).
 
 #### Ponechání mrtvého dřeva v lese
-**PEFC** (kritérium 4.3, plné znění) 
+**PEFC** (kritérium 4.3, plné znění)
 
 Za účelem zachování a posílení populací organismů vázaných na stárnoucí a mrtvé dřevo ponechávat dle konkrétních podmínek část stromů přirozené druhové skladby v porostu na dožití a do samovolného rozpadu dřevní hmoty se zvážením dopadu na bezpečnost návštěvníků lesa. Opatření nutno aplikovat pouze v souladu s potřebami ochrany lesa zejména proti druhům hrozícím kalamitním přemnožením. Odběr těžebních zbytků omezit na lokality, kde to stanovištní podmínky dovolují.
 
@@ -82,18 +91,18 @@ Za účelem zachování a posílení populací organismů vázaných na stárnou
 6.3.7 Využití pařezů se nepřipouští.
 
 10.11.4 (zjednodušené opatření pro malé lesy do 1000 hektarů)
-Vlastník* lesa ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a trvale vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně pět stromů z dospívající a dospělé etáže na hektar v dílci. 
+Vlastník* lesa ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a trvale vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně pět stromů z dospívající a dospělé etáže na hektar v dílci.
 
 Poznámka: Stromy k dožití a zetlení jsou stromy ekonomicky špatně zhodnotitelné, tj. například napadené hnilobou, špatně dostupné, zlomy, pahýly apod., vzrostlé stromy v referenčních plochách*, dále listnáče, jedle, stromy břehových porostů* vodních toků* a stromy esteticky významné. Z evidence se vyřazují kmeny v závěrečné fázi rozkladných procesů, tj. když ztrácí strukturu dřeva.
 
 10.11.5 V případech, kdy ponechání stromů odporuje bezpečnosti a ochraně zdraví nebo ochraně lesa, je vlastník* povinen neprodleně vybrat náhradní stromy, které plní ekologické funkce odstraněných stromů obdobným způsobem.
 
 #### Hnojení a vápnění
-**PEFC** (kritérium 2.2, plné znění) 
+**PEFC** (kritérium 2.2, plné znění)
 
 Hnojiva by měla být používaná v omezené míře a jen v odůvodněných případech, s přihlédnutím dopadu na jednotlivé složky životního prostředí. Doporučuje se využívat především metod biologického přihnojování.
 
-**FSC** (kritérium 10.6, plné znění) 
+**FSC** (kritérium 10.6, plné znění)
 
 Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaruje. Používá-li vlastník* hnojiva, pak prokáže, že používání je stejně nebo více ekologické a ekonomicky přínosné než používání pěstebních postupů, které hnojiva nevyžadují, a zamezí, zmírní či odstraní škody na environmentálních hodnotách*, včetně škod na půdě.
 
@@ -107,7 +116,7 @@ Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaru
 
 10.6.5 Používají-li se hnojiva*, jsou chráněny environmentální hodnoty*, mj. prostřednictvím zavedení opatření zamezujících škodám.
 
-10.6.6 Škody na environmentálních hodnotách*, způsobené používáním hnojiva*, jsou zmírňovány nebo napraveny."
+10.6.6 Škody na environmentálních hodnotách*, způsobené používáním hnojiva*, jsou zmírňovány nebo napraveny.'
 %}
 
 **Následující text přináší krátké shrnutí jednotlivých postupů a některé s nimi související požadavky FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
@@ -143,9 +152,9 @@ Samostatným tématem, kterým bude nutné se v Česku co nejdříve začít zab
 
 {% include figure.html
     name="ochrana-pred-zveri.jpg"
-    alt="TODO: ALT text"
+    alt="Fotografie jelence ušatého skákajícího přes drátěnou ohradu"
     caption="Ochránit stromky před okusem spárkatou zvěří není jednoduché ani levné."
-    source-text="Larry Lamsa, Wikimedia Commons"
+    source-text="Larry Lamsa, CC BY 2.0"
     source-url="https://commons.wikimedia.org/wiki/File:Bandelier_(5503074138).jpg"
 %}
 
@@ -153,7 +162,7 @@ Samostatným tématem, kterým bude nutné se v Česku co nejdříve začít zab
 
 Příklady opatření uvedené v předchozí kapitole naznačují, že **komplexní a dostatečně náročný certifikační standard může významně přispět k větší pestrosti a zdraví lesa a tím podpořit jeho schopnost přizpůsobovat se rychle měnícím podmínkám, tedy i změnám klimatu**. Právě tato dynamika a neustálá proměnlivost lesa je základem jeho dlouhodobé stability.[^petrik-fanta] Zároveň takový les dokáže plnit [všechny své funkce](/infografiky/funkce-lesa), **tlumit dopady klimatické změny a podstatnou měrou přispívat i k její [mitigaci](https://faktaoklimatu.cz/slovnik#mitigace)** – díky své sekvestrační schopnosti totiž funguje jako důležité úložiště uhlíku. Více než polovina veškerých zásob uhlíku v půdě a vegetaci na Zemi (přes 650 miliard tun) se nachází právě v lesích.[^fao-worlds-forests]
 
-Rozšíření certifikačních standardů typu FSC nicméně zatím brání různé překážky. Jednou z nich je **metodická komplikovanost** – ne všechny požadavky a s nimi spojené nástroje jsou vždy navzájem dobře provázány a standard bude nutné dále precizovat. Dodržování požadavků stanovených certifikací znamená také vedení podrobné dokumentace a důsledkem je značná **administrativní náročnost**. To může odrazovat zejména menší vlastníky – a těch je v ČR hodně,[^mensi-vlatnici] především v krajích jako Vysočina, který v důsledku přemnožení kůrovce přišel o [velkou část](/infografiky/tezba-lesa-vyvoj) svých lesů. Je proto pozitivní, že poslední verze standardu z roku 2013 částečně tento problém řeší pomocí rozdělení lesů na velké a malé (do 500 hektarů)[^male-lesy]: na malé lesy se některá pravidla nevztahují, což jejich vlastníkům část administrativní zátěže ubírá. Menší vlastníci – včetně měst a obcí – si mohou administrativu zjednodušit i díky tzv. skupinové certifikaci. Na skupinu se pak pohlíží jako na jeden subjekt, což přináší i další výhody, například nižší náklady na certifikační audit. 
+Rozšíření certifikačních standardů typu FSC nicméně zatím brání různé překážky. Jednou z nich je **metodická komplikovanost** – ne všechny požadavky a s nimi spojené nástroje jsou vždy navzájem dobře provázány a standard bude nutné dále precizovat. Dodržování požadavků stanovených certifikací znamená také vedení podrobné dokumentace a důsledkem je značná **administrativní náročnost**. To může odrazovat zejména menší vlastníky – a těch je v ČR hodně,[^mensi-vlatnici] především v krajích jako Vysočina, který v důsledku přemnožení kůrovce přišel o [velkou část](/infografiky/tezba-lesa-vyvoj) svých lesů. Je proto pozitivní, že poslední verze standardu z roku 2013 částečně tento problém řeší pomocí rozdělení lesů na velké a malé (do 500 hektarů)[^male-lesy]: na malé lesy se některá pravidla nevztahují, což jejich vlastníkům část administrativní zátěže ubírá. Menší vlastníci – včetně měst a obcí – si mohou administrativu zjednodušit i díky tzv. skupinové certifikaci. Na skupinu se pak pohlíží jako na jeden subjekt, což přináší i další výhody, například nižší náklady na certifikační audit.
 
 Dalším problémem spojeným s certifikacemi je míra dodržování definovaných pravidel přímo v lese. Ani sebelepší standard nedává sám o sobě záruku, že bude skutečně aplikován a dodržován přesně tak, jak byl napsán. V tomto ohledu je **klíčová pravidelnost a nezávislost auditů** posuzujících splnění požadavků. Nedílnou součástí standardu proto musí být i jasně definovaná pravidla pro auditorskou roli a rigorózní proces vyžadující odebrání certifikační značky v případě, že byly zjištěny závažné neshody a ve stanovené době nedošlo k jejich nápravě. Bez takovéto nezávislé kontroly ztrácí standard svou sílu a vlastně i smysl. Podrobnou analýzu tohoto problému u devíti certifikačních systémů (včetně FSC a PEFC) nabízí studie Greenpeace z roku 2021, zaměřená na různé kauzy spojené s deforestací v Evropě, Asii a dalších částech světa.[^gp-destruction]
 
@@ -161,7 +170,7 @@ Aby mohly být certifikační standardy pro les skutečným přínosem, je proto
 
 {% include figure.html
     name="deforestation.jpg"
-    alt="TODO: ALT text"
+    alt="Fotografie lesnického stroje při těžbě lesa"
     caption="Celosvětově bylo od roku 1990 odlesněno přibližně 420 milionu hektarů porostů. To je celá jedna desetina světových lesů a cca 160krát více, než je všech lesů v Česku.[^fao-worlds-forests]"
     source-text="bones64, Pixabay"
     source-url="https://pixabay.com/cs/photos/odles%c5%88ov%c3%a1n%c3%ad-stroj-n%c3%a1kladn%c3%ad-v%c5%afz-2833687/"
@@ -171,18 +180,17 @@ Protože dřevo je také exportovanou a importovanou surovinou, efektivitu stand
 
 ## Závěr
 
-**Lesy v Česku (a v širším smyslu celá krajina) ze všeho nejvíc potřebují citlivý management**. Někdy dát prostor přirozené sukcesi, jindy více zasáhnout a "vychovávat". V každém případě však usilovat o co největší variabilitu a také věnovat lesům každodenní, dlouhodobou péči podporující [všechny jejich funkce](/infografiky/funkce-lesa) a beroucí v potaz specifika v dané lokalitě a charakter probíhajících změn. Vše tu pouze na přírodě ponechat nemůžeme, lesy potřebujeme využívat – dřevo nepochybně zůstane perspektivní surovinou i do budoucna a své využití bude nadále nacházet v nábytkářství, stavebnictví a mnoha dalších oblastech. Produkční funkci lesů tedy určitě dává smysl zachovat. Zároveň však s ohledem na jejich zhoršující se kondici a očekávané další oteplování planety stále naléhavěji do popředí vystupují i jiné otázky: Jak čistý vzduch tu v budoucnu chceme dýchat, jak čistou vodu pít? Jak zabráníme degradaci a erozi půdy v krajině bez lesů? Jak posílíme sekvestrační potenciál lesů, aby ukládaly více uhlíku do dřeva a půdy? Kam se půjdeme zchladit v horkém dni, kam vyrazíme s dětmi na houby? Budeme se v krajině bez lesů vůbec cítit "doma"? 
+**Lesy v Česku (a v širším smyslu celá krajina) ze všeho nejvíc potřebují citlivý management**. Někdy dát prostor přirozené sukcesi, jindy více zasáhnout a "vychovávat". V každém případě však usilovat o co největší variabilitu a také věnovat lesům každodenní, dlouhodobou péči podporující [všechny jejich funkce](/infografiky/funkce-lesa) a beroucí v potaz specifika v dané lokalitě a charakter probíhajících změn. Vše tu pouze na přírodě ponechat nemůžeme, lesy potřebujeme využívat – dřevo nepochybně zůstane perspektivní surovinou i do budoucna a své využití bude nadále nacházet v nábytkářství, stavebnictví a mnoha dalších oblastech. Produkční funkci lesů tedy určitě dává smysl zachovat. Zároveň však s ohledem na jejich zhoršující se kondici a očekávané další oteplování planety stále naléhavěji do popředí vystupují i jiné otázky: Jak čistý vzduch tu v budoucnu chceme dýchat, jak čistou vodu pít? Jak zabráníme degradaci a erozi půdy v krajině bez lesů? Jak posílíme sekvestrační potenciál lesů, aby ukládaly více uhlíku do dřeva a půdy? Kam se půjdeme zchladit v horkém dni, kam vyrazíme s dětmi na houby? Budeme se v krajině bez lesů vůbec cítit "doma"?
 
-**Komplexní certifikační standardy typu FSC takovýto management lesů (s ohledem na mimoprodukční funkce a s přesahy do okolní krajiny) podporují**. Mezi hlavní výhody FSC patří právě důraz na krajinné návaznosti a akcent na pestrost – ta je totiž klíčovým předpokladem zdraví lesa a jeho odolnosti vůči škůdcům i nepřízni podmínek a zároveň něčím, co dnes v našich intenzivně obhosposdařovaných lesích velice chybí. 
+**Komplexní certifikační standardy typu FSC takovýto management lesů (s ohledem na mimoprodukční funkce a s přesahy do okolní krajiny) podporují**. Mezi hlavní výhody FSC patří právě důraz na krajinné návaznosti a akcent na pestrost – ta je totiž klíčovým předpokladem zdraví lesa a jeho odolnosti vůči škůdcům i nepřízni podmínek a zároveň něčím, co dnes v našich intenzivně obhosposdařovaných lesích velice chybí.
 
-**Úkolem státu je převzít iniciativu**, a to hned ve dvou oblastech: na jedné straně **aktivně tvořit legislativní prostředí**, které bude klást výrazně vyšší nároky na lesní hospodaření, na straně druhé **motivovat vlastníky lesů k dobrovolným závazkům**, jako jsou lesní certifikace, a vysvětlovat výhody, jež mohou tyto závazky přinést – lesům i vlastníkům samotným. 
+**Úkolem státu je převzít iniciativu**, a to hned ve dvou oblastech: na jedné straně **aktivně tvořit legislativní prostředí**, které bude klást výrazně vyšší nároky na lesní hospodaření, na straně druhé **motivovat vlastníky lesů k dobrovolným závazkům**, jako jsou lesní certifikace, a vysvětlovat výhody, jež mohou tyto závazky přinést – lesům i vlastníkům samotným.
 
-**Část práce ovšem zůstává i na organizacích**, které za těmito užitečnými nástroji stojí: standardy bude nutné dále zjednodušovat, vylepšovat a také usilovat o co nejdůslednější kontrolu dodržování všech stanovených pravidel. Jak stát, tak tyto organizace by rovněž měly mnohem více úsilí napřít směrem k **informování a vzdělávání veřejnosti**, protože v konečném důsledku jsou to zákazníci, kdo kupuje nejrůznější výrobky ze dřeva a kdo zásadně ovlivňuje chování trhu – a volba certifikovaného produktu se neobejde bez alespoň základní zákaznické gramotnosti či orientace v této oblasti. Podobný problém se ostatně týká i jiných typů certifikací, kde úplně stejně chybí strategický a dlouhodobý přístup státu, například kampaně efektivně vysvětlující výhody a důležitost podpory ekologického zemědělství.      
- 
+**Část práce ovšem zůstává i na organizacích**, které za těmito užitečnými nástroji stojí: standardy bude nutné dále zjednodušovat, vylepšovat a také usilovat o co nejdůslednější kontrolu dodržování všech stanovených pravidel. Jak stát, tak tyto organizace by rovněž měly mnohem více úsilí napřít směrem k **informování a vzdělávání veřejnosti**, protože v konečném důsledku jsou to zákazníci, kdo kupuje nejrůznější výrobky ze dřeva a kdo zásadně ovlivňuje chování trhu – a volba certifikovaného produktu se neobejde bez alespoň základní zákaznické gramotnosti či orientace v této oblasti. Podobný problém se ostatně týká i jiných typů certifikací, kde úplně stejně chybí strategický a dlouhodobý přístup státu, například kampaně efektivně vysvětlující výhody a důležitost podpory ekologického zemědělst
+
 ## Zdroje a poznámky
 
-[^loga]: Ministerstvo zemědělství ČR, Zpráva o stavu lesa a lesního hospodářství 2021, s. 11. https://eagri.cz/public/web/file/715438/Zprava_o_stavu_lesa_2021_web.pdf
-[^dalsi-standardy]: PEFC a FSC nejsou jediné systémy certifikací lesů, které se ve světě využívají. Například Spojené státy a Kanada mají i své vlastní standardy [SFI (Sustainable Forest Initiative)](https://forests.org/sfi-2022-standards/), které v jiných zemích nenajdeme. 
+[^dalsi-standardy]: PEFC a FSC nejsou jediné systémy certifikací lesů, které se ve světě využívají. Například Spojené státy a Kanada mají i své vlastní standardy [SFI (Sustainable Forest Initiative)](https://forests.org/sfi-2022-standards/), které v jiných zemích nenajdeme.
 [^sousedni-zeme]: V sousedních zemích se zastoupení obou certifikací značně liší, ve všech čtyřech je však certifikováno buď stejně, nebo více lesů než v ČR. Sousední Slovensko má více než 4× vyšší procentuální zastoupení lesů certifikovaných FSC (23 %), zastoupení PEFC je podobné jako u nás (62 %). Výrazně více FSC oproti Česku má Polsko (62 %), také PEFC se vztahuje na velkou část tamějších lesů (73 %). Rakousko naopak v podstatě žádné lesy v rámci FSC certifikované nemá, zato PEFC se zde vztahuje na 86 % lesů. V Německu získalo certifikaci FSC 13 % lesů, 75 % je certifikováno PEFC.
 [^rakousko-fsc]: V Rakousku, kde přísný certifikační systém FSC zastoupen není, často postupy přírodě blízkého hospodaření vyžaduje legislativa.
 [^zprava-o-stavu-lesa]: Ministerstvo zemědělství ČR, 2022. [_Zpráva o stavu lesa a lesního hospodářství 2021_](https://eagri.cz/public/web/file/715438/Zprava_o_stavu_lesa_2021_web.pdf).

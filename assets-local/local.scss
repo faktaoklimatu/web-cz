@@ -94,6 +94,12 @@ $c-callout-text: #373633;
     }
 }
 
+.certifikace-loga > a {
+    display: block;
+    max-width: 10em;
+    margin: 0 auto;
+}
+
 @media (min-width: 768px) {
     .callout-box {
         padding: 1.5rem 2rem;
