@@ -25,7 +25,7 @@ Udržitelnost je dnes velmi často skloňovaným pojmem i v byznysu: banky stál
 
 ## Jak je to s certifikacemi lesů v Česku?
 
-V ČR jsou nejvíce zastoupeny tyto certifikační systémy pro udržitelné lesní hospodaření a následné zpracování dřeva:
+V ČR jsou zastoupeny tyto certifikační systémy pro udržitelné lesní hospodaření a následné zpracování dřeva:
 
 <div class="container">
 <div class="row">
@@ -148,7 +148,7 @@ Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaru
 
 ### Regulace stavů zvěře
 
-Samostatným tématem, kterým bude nutné se v Česku co nejdříve začít zabývat, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, mohou přispět jen omezeně a **řešení vyžaduje aktivní přístup ze strany státu**.
+Samostatným tématem, kterým bude nutné se v Česku co nejdříve začít zabývat, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, přispět nemohou a **řešení vyžaduje aktivní přístup ze strany státu**.
 
 {% include figure.html
     name="ochrana-pred-zveri.jpg"
