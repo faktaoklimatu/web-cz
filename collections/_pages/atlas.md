@@ -58,15 +58,15 @@ V zásadě komukoliv, koho zajímá **úvod do klimatické změny** a souvisejí
 Atlas se vám bude hodit ve **školní výuce** v rámci různých předmětů, na **firemním workshopu** či při jiných obdobných příležitostech.
 
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=1 title="## Jak si atlas pořídit"
-content="
+## Jak si atlas pořídit
+
 Nabízíme dvě možnosti:
 
 ### Stažení elektronické verze ve formátu PDF
 
 Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
 
-[Stahujte zde](https://faktaoklimatu.cz/assets-local/files/atlas-klimaticke-zmeny.pdf) **tady bych si představoval tlačítko jako na boku, ale křičí to, že špatná syntaxe...**
+<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a>
 
 ### Nákup již hotových výtisků přímo od nás
 
@@ -88,16 +88,14 @@ Atlas klimatické změny si můžete objednat pomocí prodejního formuláře na
 
 Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401.
 
-[Objednávejte zde](https://form.simpleshop.cz/order/Wr8PD5QdR60n1e2MaTQrRLqTY29qaK3LGzglwyXY/) **tady bych si představoval tlačítko jako na boku, ale křičí to, že špatná syntaxe...**
+<a href="https://form.simpleshop.cz/order/Wr8PD5QdR60n1e2MaTQrRLqTY29qaK3LGzglwyXY/" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
 
-" %}
-
-{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="## Jak můžete s atlasem pracovat ve výuce"
+{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
 budiž doplněno
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="## Procvičování datové gramotnosti a dalších užitečných dovedností "
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
 content="
 S atlasem se nemusíte omezovat pouze na téma klimatické změny – naše grafiky a texty poslouží též jako praktický materiál pro budování mnoha přírodovědných i společenskovědních kompetencí.
 Při různých příležitostech můžete se studenty procvičovat dovednosti jako jsou čtení grafů, práce s daty, interpretace textů apod.
@@ -111,7 +109,7 @@ Nástin možného využití v různých oblastech:
 
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="## Recenzenti a poděkování"
+{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Poděkování"
 content="
 První vydání Atlasu klimatické změny recenzovali:
 
@@ -126,7 +124,7 @@ Na vzniku tohoto atlasu se svou prací významně podíleli členové týmu Fakt
 Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="## Další díly a aktualizace atlasu"
+{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="### Další díly a aktualizace atlasu"
 content="
 V tuto chvíli nabízíme druhé, rozšířené vydání z podzimu 2022, kde kromě aktualizace dat ve stávajících infografikách najdete též několik zcela nových stran. V případě, že byste se někde setkali se starší (ale stále dobře použitelnou) verzí atlasu, poznáte ji snadno podle jiné obálky.
 V budoucnosti bychom rádi připravili také další díly atlasu pokrývající například energetiku či jiná zajímavá témata.
