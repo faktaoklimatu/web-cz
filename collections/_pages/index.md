@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Klimatická politika EU</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Transformace české energetiky</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,9 +37,9 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
     <p class="lead mb-0">
-    S rokem 2022 končí naše předsednictví Radě Evropské unie. Během českého předsednictví se povedlo dojednat konečnou podobu velké části legislativního balíčku Fit for 55, který má přispět k tomu, že v roce 2030 budou unijní emise skleníkových plynů o 55 % nižší než v roce 1990. Jak balíček Fit for 55 souvisí se Zelenou dohodou pro Evropu? Jak k financování zelené transformace přispívají evropské fondy? Nejen na tyto otázky odpovídáme v novém explaineru o Zelené dohodě a v dalších souvisejících materiálech:</p>
+     Transformace energetiky je klíčová jednak z pohledu ochrany klimatu, jelikož téměř 40 % emisí skleníkových plynů Česka pochází z energetiky, jednak z pohledu zajištění energetické bezpečnosti a dostupnosti energetických surovin – faktorů, které vystoupily do popředí po ruské invazi na Ukrajinu. V tomto kontextu letos v Česku probíhá aktualizace klíčových strategických dokumentů. Konkrétně jde o vnitrostátní plán v oblasti energetiky a klimatu (*National Energy and Climate Plan*, NECP), v rámci kterého si každý členský stát EU stanovuje cíle, které mj. určí, jak bude vypadat jeho energetický mix v roce 2030. V návaznosti na něj má vzniknout aktualizovaná státní energetická koncepce (ASEK), která bude směřovat i za horizont roku 2030. V našich nových materiálech přibližujeme, jakými cestami energetické transformace se může Česko vydat.</p>
 
-    {% assign featured_slugs = "zelena-dohoda-pro-evropu, fit-for-55, fondy-eu, emisni-povolenky-ets, taxonomie-eu, 19-fit-for-55" | split: ", " %}
+    {% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, bezemisni-energetika-cr-2-technologie, elektrina-mix-eu, elektrina-cr, cena-elektriny-na-trhu, cena-energie" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
