@@ -35,12 +35,13 @@ slug: index
 </div>
 
 <div class="tab-content" id="myTabContent">
-  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container">
-    <p class="lead mb-0">
-     Transformace energetiky je klíčová jednak z pohledu ochrany klimatu, jelikož téměř 40 % emisí skleníkových plynů Česka pochází z energetiky, jednak z pohledu zajištění energetické bezpečnosti a dostupnosti energetických surovin – faktorů, které vystoupily do popředí po ruské invazi na Ukrajinu. V tomto kontextu letos v Česku probíhá aktualizace klíčových strategických dokumentů. Konkrétně jde o vnitrostátní plán v oblasti energetiky a klimatu (*National Energy and Climate Plan*, NECP), v rámci kterého si každý členský stát EU stanovuje cíle, které mj. určí, jak bude vypadat jeho energetický mix v roce 2030. V návaznosti na něj má vzniknout aktualizovaná státní energetická koncepce (ASEK), která bude směřovat i za horizont roku 2030. V našich nových materiálech přibližujeme, jakými cestami energetické transformace se může Česko vydat.</p>
+  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead" markdown="1">
+Letos v Česku probíhá aktualizace strategických dokumentů klíčových pro energetiku: V rámci **Vnitrostátního plánu v oblasti energetiky a klimatu** (*NECP*) si Česko stanovuje klimatické cíle, které mj. určí, jak má vypadat jeho energetický mix v roce 2030 a jak rychle bude snižována jeho uhlíková intenzita. V návaznosti na něj má vzniknout aktualizovaná **Státní energetická koncepce** (SEK), která bude směřovat i za horizont roku 2030. V našich nových materiálech přibližujeme, jakými cestami energetické transformace se může Česko vydat.
 
-    {% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, bezemisni-energetika-cr-2-technologie, elektrina-mix-eu, elektrina-cr, cena-elektriny-na-trhu, cena-energie" | split: ", " %}
-    {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
+Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (téměř 40 % emisí skleníkových plynů Česka dnes pochází z elektráren a tepláren), jednak pro **zajištění energetické bezpečnosti a dostupnosti energetických surovin** (což zdůraznila ruská invaze na Ukrajinu).
+
+{% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, bezemisni-energetika-cr-2-technologie, elektrina-mix-eu, elektrina-cr, cena-elektriny-na-trhu, cena-energie" | split: ", " %}
+{%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
