@@ -27,33 +27,28 @@ Pro nákup na našem eshopu. Platné od 1. dubna 2023.
 
 2.2.	Své zákonné povinnosti související s případným ukládáním cookies na zařízení kupujícího plní prodávající prostřednictvím zvláštního dokumentu.
 
-### Zpracování osobních údajů při poskytnutí nebo přislíbení daru
+### 3. Objednávka a uzavření smlouvy
 
-Osobní údaje zpracováváme na základě plnění smlouvy a oprávněného zájmu správce. Při poskytnutí nebo přislíbení daru budete zařazeni do databáze dárců. V této databázi archivujeme informace o výši a četnosti poskytnutého daru a dále osobní údaje dárce (jméno, příjmení, bydliště, e-mailová adresa). Darování probíhá přes darovací portál Darujme.cz, který je provozován naším smluvním partnerem. Ten se zavazuje využívat vámi vyplněné informace pouze v rozsahu nutném pro zpracování daru a uzavření darovací smlouvy. Tyto údaje pak poskytuje naší organizaci Otevřená data o klimatu. Bankovní údaje o platbě, číslo účtu nebo údaje z platební karty předáváte pouze bance, která transakci zprostředkovává.
+3.1.	Veškerá prezentace zboží umístěná ve webovém rozhraní obchodu je informativního charakteru a prodávající není povinen uzavřít kupní smlouvu ohledně tohoto zboží. Ustanovení § 1732 odst. 2 občanského zákoníku se nepoužije.
 
-Osobní údaje zpracováváme za účelem plnění právní povinnosti (vedení účetnictví, vydávání potvrzení o darech, zveřejnění celkové výše přijatých darů ve výroční zprávě a dalších materiálech) a za účelem oprávněného zájmu správce (poděkování spolu s informací pro vás o využití vašeho daru, informace o dění v organizaci, zasílání žádostí o podporu).
+3.2.	Webové rozhraní obchodu obsahuje informace o zboží, a to včetně uvedení cen jednotlivého zboží a nákladů za navrácení zboží, jestliže toto zboží ze své podstaty nemůže být navráceno obvyklou poštovní cestou. Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků. Ceny zboží zůstávají v platnosti po dobu, kdy jsou zobrazovány ve webovém rozhraní obchodu. Tímto ustanovením není omezena možnost prodávajícího uzavřít kupní smlouvu za individuálně sjednaných podmínek.
 
-### Zpracování osobních údajů při přihlášení na seminář či k odběru newsletteru
+3.3.	Webové rozhraní obchodu obsahuje také informace o nákladech spojených s balením a dodáním zboží, a o způsobu a času dodání zboží. Informace o nákladech spojených s balením a dodáním zboží uvedené ve webovém rozhraní obchodu platí pouze v případech, kdy je zboží doručováno v rámci území České republiky. V případě, kdy prodávající nabízí dopravu zboží zdarma, je předpokladem vzniku práva na bezplatnou dopravu zboží na straně kupujícího zaplacení minimální celkové kupní ceny dopravovaného zboží ve výši stanovené ve webovém rozhraní obchodu. V případě, kdy dojde k částečnému odstoupení od kupní smlouvy kupujícím a celková kupní cena zboží, u kterého nedošlo k odstoupení od smlouvy kupujícím, nedosahuje minimální výše, jež je potřebná pro vznik práva na dopravu zboží zdarma podle předchozí věty, právo kupujícího na dopravu zboží zdarma zaniká a kupující je povinen dopravu zboží prodávajícímu uhradit.
 
-Osobní údaje zpracováváme na základě uděleného souhlasu. Při registraci na semináře či k odběru newsletteru budete zařazeni do příslušné databáze. V této databázi zpracováváme vaše osobní údaje, které jste uvedli (jméno, příjmení, telefonní číslo, e-mailová adresa).
+3.4.	Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní obchodu. Objednávkový formulář obsahuje zejména informace o:
 
-Osobní údaje zpracováváme na základě uděleného souhlasu, a to za účelem uvedeným při udělení souhlasu (informování o dění v organizaci, o termínech seminářů apod.) a za účelem oprávněného zájmu správce (zasílání žádostí o podporu).
+3.4.1.	objednávaném zboží (objednávané zboží „vloží“ kupující do elektronického nákupního košíku webového rozhraní obchodu),
 
-### Analytika na webových stránkách
+3.4.2.	způsobu úhrady kupní ceny zboží, údaje o požadovaném způsobu doručení objednávaného zboží a
 
-K analýze návštěvnosti na našich webových stránkách a k jejich vylepšování používáme Google Analytics. Služba ukládá v prohlížeči návštěvníka tzv. soubory _cookie_, které se používají k identifikaci opakovaných návštěv. Ukládané _cookies_ jsou anonymní a jejich prostřednictvím nezískáváme žádné osobní údaje. Cookies si můžete sami zablokovat ve svém webovém prohlížeči.
+3.4.3.	informace o nákladech spojených s dodáním zboží (dále společně jen jako „objednávka“).
 
-## Doba zpracování
+3.5.	Před zasláním objednávky prodávajícímu je kupujícímu umožněno zkontrolovat a měnit vstupní údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího zjišťovat a opravovat chyby vzniklé při zadávání dat do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko „Potvrďte nákup” Údaje uvedené v objednávce jsou prodávajícím považovány za správné. Prodávající neprodleně po obdržení objednávky toto obdržení kupujícímu potvrdí elektronickou poštou, a to na adresu elektronické pošty kupujícího uvedenou v objednávce (dále jen „elektronická adresa kupujícího“).
 
-Osobní údaje subjektů zpracováváme a uchováváme po dobu nezbytně nutnou pro výše uvedené účely. Doba zpracování osobních údajů pro plnění zákonných povinností se řídí příslušnými právními předpisy (zákon o účetnictví). V případě údajů zpracovávaných na základě oprávněného zájmu správce zpracováváme tyto údaje po dobu trvání oprávněného zájmu. Jestliže si již nepřejete být v databázích zpracovávaných údajů na základě uděleného souhlasu nebo oprávněného zájmu správce, máte právo na výmaz osobních údajů. Kontaktujte prosím příslušnou osobu (viz sekce _Správce osobních údajů_) nebo se odhlaste z odběru newsletterů (odkaz v patičce) apod.
+3.6.	Prodávající je vždy oprávněn v závislosti na charakteru objednávky (množství zboží, výše kupní ceny, předpokládané náklady na dopravu) požádat kupujícího o dodatečné potvrzení objednávky (například písemně či telefonicky).
 
-## Způsob zpracování
+3.7.	Smluvní vztah mezi prodávajícím a kupujícím vzniká doručením přijetí objednávky (akceptací), jež je prodávajícím zasláno kupujícímu elektronickou poštou, a to na adresu elektronické pošty kupujícího. 
 
-Osobní údaje subjektů zpracováváme v rámci ústavu, případně pomocí třetích stran, jejichž seznam naleznete níže. Typicky se jedná o službu pro zasílání newsletterů či o externí účetní firmu. Tyto subjekty jsou obchodními partnery správce a fungují buď jako samostatní správci (mají stanoveny vlastní účely a prostředky zpracování osobních údajů), nebo jako zpracovatelé (zpracovávají osobní údaje pro správce na základě jeho pokynů). Osobní údaje jsou zpracovávány pouze v rámci EU.
+3.8.	Kupující souhlasí s použitím komunikačních prostředků na dálku při uzavírání kupní smlouvy. Náklady vzniklé kupujícímu při použití komunikačních prostředků na dálku v souvislosti s uzavřením kupní smlouvy (náklady na internetové připojení, náklady na telefonní hovory) si hradí kupující sám, přičemž tyto náklady se neliší od základní sazby.
 
-### Zpracovatelé a obchodní partneři
-
-* [Nadace VIA](https://www.nadacevia.cz/), funguje jako samostatný správce pro finanční dary přes portál [Darujme.cz](https://www.darujme.cz/)
-* [ECOMAIL.CZ, s.r.o.](https://ecomail.cz/), funguje jako zpracovatel pro data k newsletterům a rozesílaným sdělením
-* [Jaspar s.r.o.](https://www.ucetnictvijaspar.cz/), funguje jako zpracovatel účetních dat
-* [Google Ireland Limited](https://en.wikipedia.org/wiki/Google), funguje jako zpracovatel pro analýzu návštěvnosti našich webů prostřednictvím služby [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+DÁLE BUDE DOPLNĚNO PO SCHVÁLENÍ MARTINEM
