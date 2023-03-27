@@ -26,7 +26,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
         <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
         <hr />
         <h2>Licence</h2>
-        <p>Atlas je k dispozici pro <em>nekomerční</em> použití v rámci licence <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
+        <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
     </div>
 </div>
 </div></div>
@@ -82,13 +82,11 @@ Zároveň nám svou objednávkou přispějete na tvorbu atlasu a dalších mater
 
 Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu. Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.
 
-Atlas klimatické změny si můžete objednat pomocí prodejního formuláře na konci stránky (nebo na samostatné stránce - podle toho jakou variantu zvolíme).
-
 **Rychlost doručení:**
 
 Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401.
 
-<a href="https://form.simpleshop.cz/order/Wr8PD5QdR60n1e2MaTQrRLqTY29qaK3LGzglwyXY/" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
+<a href="/obchod" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
