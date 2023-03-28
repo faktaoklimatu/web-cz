@@ -169,9 +169,9 @@ Aby mohly být certifikační standardy pro les skutečným přínosem, je proto
     name="srovnani-pefc-fsc"
     expanded=false
     class="contrast-figure"
-    label="Co PEFC a FSC řeší a co ne"
+    label="Co certifikace PEFC a FSC řeší a co ne"
     content='
-Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, má-li být efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či využíváním standardu v praxi. Srovnání ukazuje, které z těchto vlastností standardy PEFC a FSC již řeší ✅, částečně řeší ≈ zatím neřeší ❌nebo to nelze posoudit pro nedostatek informací ❔'
+Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, má-li být efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či využíváním standardu v praxi. Srovnání ukazuje, co z toho standardy PEFC a FSC již řeší ✅, částečně řeší ≈ zatím neřeší ❌nebo to nelze posoudit pro nedostatek informací ❔'
 %}
 
 {% include figure.html
