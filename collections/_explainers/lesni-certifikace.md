@@ -175,6 +175,10 @@ Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, m
 %}
 
 {% include figure.html
+    name="srovnani.jpg"
+%}
+
+{% include figure.html
     name="deforestation.jpg"
     alt="Fotografie lesnického stroje při těžbě lesa"
     caption="Celosvětově bylo od roku 1990 odlesněno přibližně 420 milionu hektarů porostů. To je celá jedna desetina světových lesů a cca 160krát více, než je všech lesů v Česku.[^fao-worlds-forests]"
