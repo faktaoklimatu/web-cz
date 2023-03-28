@@ -12,7 +12,7 @@ cover-source-url: "https://unsplash.com/photos/H8vhhepiiaU"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodnou schopnost vyrovnat se s nejrůznějšími událostmi i dlouhodobými změnami – požáry, suchem, vichřicí, ochlazením i oteplením, zvládne i přemnožené škůdce. Většina lesů v Česku se však hospodářsky využívá a určitě bychom v tom rádi pokračovali i dál. Aby to bylo v době měnících se klimatických podmínek možné, nutně potřebujeme nástroje, jež podpoří přirozenou adaptabilitu lesů a pomohou jim tyto změny zvládnout. Jedním z těchto nástrojů může být lesní certifikace."
+perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodnou schopnost vyrovnat se s nejrůznějšími událostmi i dlouhodobými změnami – požáry, suchem, vichřicí, ochlazením i oteplením, zvládne i přemnožené škůdce. Většina lesů v Česku se však hospodářsky využívá a určitě bychom v tom rádi pokračovali i dál. Aby to bylo v době měnících se klimatických podmínek možné, nutně potřebujeme nástroje, jež podpoří přirozenou adaptabilitu lesů a pomohou jim tyto změny zvládnout. Jedním z těchto nástrojů může být lesní certifikace podporující hospodaření blízké přírodě."
 ---
 
 ## Co je certifikace a k čemu slouží?
