@@ -75,27 +75,26 @@ Grafika shrnuje důležité principy v lesním hospodaření, které podporují 
     class="contrast-figure"
     label="Příklady rozdílné konkrétnosti opatření PEFC a FSC"
     content='
-Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek stojí za povšimnutí například i rozdílné používání sloves, které má velký vliv na vynutitelnost jednotlivých opatření: "není přípustné", "je povinen neprodleně", "není povoleno" (FSC) versus "by měla být", "doporučuje se", "se zvážením" (PEFC).
+Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek (uvádíme jejich plné znění) stojí za povšimnutí například i rozdílné používání sloves, které má velký vliv na vynutitelnost jednotlivých opatření: „se nepřipouští“, „nesmí“, „je povinen neprodleně“ (FSC) versus „by měla být“, „doporučuje se“, „se zvážením“ (PEFC).
 
 #### Ponechání mrtvého dřeva v lese
-**PEFC** (kritérium 4.3, plné znění)
+**PEFC** (kritérium 4.3)
 
 Za účelem zachování a posílení populací organismů vázaných na stárnoucí a mrtvé dřevo ponechávat dle konkrétních podmínek část stromů přirozené druhové skladby v porostu na dožití a do samovolného rozpadu dřevní hmoty se zvážením dopadu na bezpečnost návštěvníků lesa. Opatření nutno aplikovat pouze v souladu s potřebami ochrany lesa zejména proti druhům hrozícím kalamitním přemnožením. Odběr těžebních zbytků omezit na lokality, kde to stanovištní podmínky dovolují.
 
-**FSC** (výběr z více kritérií, pojmy označené* jsou přesně definovány v kap. 9 standardu)
+**FSC** (kritéria 6.3.19–24; pojmy označené hvězdičkou jsou definovány v samostatné kapitole standardu)
 
-6.3.4 Pálení klestu a těžebních zbytků není přípustné. Výjimka je možná při kalamitním výskytu podkorních škůdců.
+6.3.19 Vlastník* lesa do 500 ha ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně 5 stromů z dospívající a dospělé etáže na hektar v dílci.
 
-6.3.5 Klest a těžební zbytky jsou ponechány na místě nebo se ukládají na hromady. Mechanické zpracování klestu a těžebních zbytků je přípustné pouze v odůvodněných případech, zejména při kalamitním výskytu podkorních škůdců.
+6.3.20 V případech, kdy ponechání stromů odporuje bezpečnosti a ochraně zdraví a ochraně lesa, je lesní hospodář* povinen neprodleně vybrat náhradní stromy, které plní ekologické funkce odstraněných stromů obdobným způsobem.
 
-6.3.7 Využití pařezů se nepřipouští.
+6.3.21 Pálení klestu a těžebních zbytků není přípustné. Výjimka je možná při kalamitním výskytu podkorních škůdců.
 
-10.11.4 (zjednodušené opatření pro malé lesy do 1000 hektarů)
-Vlastník* lesa ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a trvale vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně pět stromů z dospívající a dospělé etáže na hektar v dílci.
+6.3.22 Klest a těžební zbytky jsou ponechány na místě, nebo se ukládají na hromady. Mechanické zpracování klestu a těžebních zbytků je přípustné pouze v odůvodněných případech.
 
-Poznámka: Stromy k dožití a zetlení jsou stromy ekonomicky špatně zhodnotitelné, tj. například napadené hnilobou, špatně dostupné, zlomy, pahýly apod., vzrostlé stromy v referenčních plochách*, dále listnáče, jedle, stromy břehových porostů* vodních toků* a stromy esteticky významné. Z evidence se vyřazují kmeny v závěrečné fázi rozkladných procesů, tj. když ztrácí strukturu dřeva.
+6.3.23 Odvoz klestu a těžebních zbytků se připouští pouze na SLT uvedených v příloze H. Platnost smluv na odvoz klestu uzavřených před podpisem smlouvy o certifikaci s akreditovanou certifikační firmou není tímto ustanovením dotčena.
 
-10.11.5 V případech, kdy ponechání stromů odporuje bezpečnosti a ochraně zdraví nebo ochraně lesa, je vlastník* povinen neprodleně vybrat náhradní stromy, které plní ekologické funkce odstraněných stromů obdobným způsobem.
+6.3.24 Využití pařezů se nepřipouští.
 
 #### Hnojení a vápnění
 **PEFC** (kritérium 2.2, plné znění)
