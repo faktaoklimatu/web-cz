@@ -96,26 +96,24 @@ Za účelem zachování a posílení populací organismů vázaných na stárnou
 
 6.3.24 Využití pařezů se nepřipouští.
 
-#### Hnojení a vápnění
-**PEFC** (kritérium 2.2, plné znění)
+#### Použití introdukovaných dřevin
+**PEFC** (kritérium 4.2)
 
-Hnojiva by měla být používaná v omezené míře a jen v odůvodněných případech, s přihlédnutím dopadu na jednotlivé složky životního prostředí. Doporučuje se využívat především metod biologického přihnojování.
+Introdukované druhy, provenience nebo variety jsou používány jako zdůvodněná alternativa upřednostňovaných původních druhů na základě místních zkušeností z jejich pěstování, odborného posouzení jejich dopadů na ekosystém, a na genetickou integritu domácích druhů a místních proveniencí, uvedeného v oblastních plánech rozvoje lesů včetně opatření k minimalizaci negativních vlivů na původní druhy dřevin.
 
-**FSC** (kritérium 10.6, plné znění)
+**FSC** (kritéria 6.9.1–6.9.6)
 
-Vlastník* minimalizuje používání hnojiv nebo se jejich používání vyvaruje. Používá-li vlastník* hnojiva, pak prokáže, že používání je stejně nebo více ekologické a ekonomicky přínosné než používání pěstebních postupů, které hnojiva nevyžadují, a zamezí, zmírní či odstraní škody na environmentálních hodnotách*, včetně škod na půdě.
+6.9.1 Výskyt introdukovaných* druhů rostlin i živočichů vlastník* kontroluje a monitoruje tak, aby předešel nepříznivým ekologickým dopadům.
 
-10.6.1 Pokud se používají hnojiva*, jsou ekologické a ekonomické výhody jejich používání stejné nebo vyšší než výhody pěstebních metod, jež hnojiva* nevyžadují.
+6.9.2 Druhy, které se v daném území chovají invazně, jsou z porostů postupně eliminovány.
 
-10.6.2 Na porostní lesní půdě se neprovádí hnojení za účelem zvyšování výnosů.
+6.9.3 V nově obnovovaných porostech lze vysazovat introdukované* dřeviny maximálně do 5% zastoupení. Posuzuje se za celý majetek a zároveň za dobu platnosti LHP (lesního hospodářského plánu).
 
-10.6.3 Plošné a letecké vápnění není povoleno.
+6.9.4 Souvislá plocha nesmí pro jednu introdukovanou* dřevinu překročit 0,05 ha.
 
-10.6.4 Používají-li se hnojiva*, jsou zadokumentovány jejich typy, místo, frekvence a množství jejich aplikace.
+6.9.5 Lze tolerovat přirozenou obnovu introdukovaných* dřevin, pokud nepřesahuje 10 % zastoupení v obnově. Posuzuje se za celý majetek a zároveň za dobu platnosti LHP.
 
-10.6.5 Používají-li se hnojiva*, jsou chráněny environmentální hodnoty*, mj. prostřednictvím zavedení opatření zamezujících škodám.
-
-10.6.6 Škody na environmentálních hodnotách*, způsobené používáním hnojiva*, jsou zmírňovány nebo napraveny.'
+6.9.6 Vlastník* nesmí používat dřeviny, které se mohou v daném prostředí chovat invazivně.'
 %}
 
 **Následující text přináší krátké shrnutí jednotlivých postupů a některé s nimi související požadavky FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
