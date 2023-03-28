@@ -166,10 +166,10 @@ Dalším problémem spojeným s certifikacemi obecně je míra dodržování def
 Aby mohly být certifikační standardy pro les skutečným přínosem, je proto nutné se kromě snahy co nejvíce zvýšit plochu certifikovaných lesů také **zaměřit na reálné dodržování pravidel v lesích, které už certifikované jsou**, a jednoznačně se distancovat od jakýchkoliv praktik, které vedou k porušování závazků. Dosavadní fokus na plochu ("chceme mít více certifikovaných lesů") je pochopitelný a v principu správný, ale skrývá v sobě také potenciální riziko kompromisů či nedostatečné kontroly plnění požadavků. Součástí standardu proto musí být mechanismy, které toto riziko minimalizují.
 
 {% include expander-figure.html
-    name="rozdily-formulaci"
+    name="srovnani-pefc-fsc"
     expanded=false
     class="contrast-figure"
-    label="Příklady rozdílné konkrétnosti opatření PEFC a FSC"
+    label="Co PEFC a FSC řeší a co ne"
     content='
 Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, má-li být efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či využíváním standardu v praxi. Srovnání ukazuje, které z těchto vlastností standardy PEFC a FSC již řeší ✅, částečně řeší ≈ zatím neřeší ❌nebo to nelze posoudit pro nedostatek informací ❔'
 %}
