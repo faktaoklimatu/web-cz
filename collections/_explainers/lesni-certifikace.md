@@ -59,7 +59,7 @@ Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz 
 ## Jak může certifikace FSC podpořit zdraví a odolnost lesa?
 
 {% include figure.html
-    name="schema-zdravi-a-odolnosti-lesa.jpg"
+    name="ikea-explainer-zdravy-odolny-les-1.jpg"
     alt="TODO: ALT text"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
