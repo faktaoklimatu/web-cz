@@ -43,13 +43,12 @@ Třetím příkladem obrovské ztráty přírodního kapitálu jsou dopady spoje
 
 
 {:.todo}
-vyrobit velmi zjednodušené schémátko podle této grafiky
 
 {% include figure.html
-    name="kapital.jpg"
+    name="ikea-explainer-prirodny-kapital.jpg"
     alt="TODO: Alt text"
     source-text="TODO: Zdroj"
-    source-url="https://www.schroders.com/en/insights/economics/qa-what-is-natural-capital-and-why-should-investors-care/"
+    source-url="https://faktaoklimatu.cz"
 %}
 
 Na rozdíl od jiných typů kapitálu je ten přírodní něčím, co využíváme, ale neprodukujeme. Část z něj je **obnovitelná** (např. populace ryb v mořích, jež se mohou při snížení intenzity rybolovu znovu rozrůst, nebo vykácené plochy lesa, které lze znovu osázet), část je **neobnovitelná** (např. rudné suroviny – těch je na planetě pouze omezené množství).
