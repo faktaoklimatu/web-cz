@@ -18,8 +18,8 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
         <h2>Pro vás</h2>
         <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
-        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-        <a href="https://form.simpleshop.cz/order/Wr8PD5QdR60n1e2MaTQrRLqTY29qaK3LGzglwyXY/" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+        <a href="/obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
         <h2>Podpořte naši práci</h2>
         <p>Líbí se vám naše práce a rádi byste Fakta o klimatu podpořili finančně?</p>
@@ -32,6 +32,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
 </div></div>
 
 <div class="section"><div class="container" markdown="1">
+
 ## K čemu publikace slouží
 
 Atlas klimatické změny vychází z naší dlouhodobé snahy kultivovat veřejnou debatu o klimatu a související transformaci, kterou společnost zažívá. Za tímto účelem v něm nabízíme srozumitelně podaná data ve formě jednoduchých a přehledných grafů, map či infografik. 
@@ -60,37 +61,35 @@ Atlas se vám bude hodit ve **školní výuce** v rámci různých předmětů, 
 
 ## Jak si atlas pořídit
 
-Nabízíme dvě možnosti:
-
-### Stažení elektronické verze ve formátu PDF
+### 1) Stažení elektronické verze ve formátu PDF
 
 Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
 
-<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a>
-
-### Nákup již hotových výtisků přímo od nás
+### 2) Nákup již hotových výtisků přímo od nás
 
 Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk. 
 
 Zároveň nám svou objednávkou přispějete na tvorbu atlasu a dalších materiálů pod hlavičkou Fakt o klimatu.
 
-**Cena:**
-* 1-9 výtisků - 80 Kč/ks
-* Při odběru alespoň 10 výtisků - 60 Kč/ks
-
-**Doprava:**
-
-Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu. Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.
-
-**Rychlost doručení:**
-
-Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401.
-
-<a href="/obchod" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
+<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a> <a href="/obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
-budiž doplněno
+Jednotlivé části atlasu fungují samostatně a nemusíte jej procházet postupně od začátku do konce. Můžete si vybrat konkrétní problematiky a stejně dobře začít zvyšováním teplot, body zlomu v ekosystémech nebo třeba dopady změn na obyvatele různých oblastí. Obsažené materiály nabízejí spoustu námětů ke společné diskuzi i individuální práci.
+
+Několik příkladů, jak je možné zadat práci nad atlasem:
+
+
+* Prohledněte si strany 8 a 9 o bodech zlomu v ekosystémech a pobavte se ve dvojicích, co se vám při tom honí hlavou.
+* V grafice a textu na stranách 12 a 13 se pokuste vyhledat odpovědi na následující otázky:
+   * Jak zjišťujeme koncentrace CO2 v minulosti?
+   * Kdy přibližně začala koncentrace CO2 růst nad dosavadní maxima dosažená za posledních 800 000 let?
+   * Díky čemu víme, že  klimatická změna nesouvisí se střídáním dob ledových a meziledových?
+* Během deseti minut si rychle prolistujte atlas a klidně se zastavte u něčeho, co vás zaujme. Ve trojicích sdílejte, co vás překvapilo nebo co jste netušili.
+* Projděte si stránky 28 a 29 s emisními scénáři pro naplnění Pařížské dohody. Jaká konkrétní řešení, která povedou k dostatečnému snížení emisí vás napadají a dala by se použít?
+
+Pokud byste chtěli načerpat rozsáhlejší didaktickou inspiraci, najdete ji kupříkladu na stránce [ucimoklimatu.cz](https://ucimoklimatu.cz)
+
 " %}
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
