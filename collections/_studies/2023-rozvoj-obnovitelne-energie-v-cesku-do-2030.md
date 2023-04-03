@@ -7,12 +7,20 @@ slug:       2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
 redirect_from:
   - /rozvoj-obnovitelne-energie-v-cesku-do-2030
 published:  2023-04-06
-weight:     120
 background_color: "#001f71"
+authors:
+  - name: "Fakta o klimatu"
+    logo: "fakta.svg"
+  - name: "Frank Bold"
+    logo: "frank-bold.svg"
+type:       "Analýza"
 sponsor:    "TOPAZ, z.s."
 sponsor_link: "https://top-az.eu/"
 sponsor_disclaimer: "Odborný obsah zpracoval autorský tým, zadavatel pro tuto analýzu
 pouze stanovil klíčové otázky."
+perex: |
+  Tato analýza zkoumá možnosti rozvoje obnovitelné energie v Česku. Podle strategie REPowerEU
+  a podle návazné unijní legislativy máme před sebou výzvu: zdvojnásobit do roku 2030 využití obnovitelné energie v Česku. Rozvoj obnovitelné energie snižuje naši závislost na fosilních palivech. Obnovitelná energie nám tedy jednak pomáhá posilovat energetickou bezpečnost a chrání nás tak před budoucími výkyvy v cenách energie, jednak je klíčová pro dekarbonizaci naší společnosti.
 
 ---
 

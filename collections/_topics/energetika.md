@@ -155,6 +155,7 @@ subtopics:
   content:
   - srovnani-energetickych-scenaru-cr
   - scenar-transformace-elektroenergetiky
+  - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2020-scenar-bloombergnef
   - 2020-scenar-mckinsey
   - 2020-scenar-ember
