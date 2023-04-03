@@ -74,6 +74,10 @@ text:
     next: "Další díl >>"
   figure:
     source: "Zdroj:"
+  publication:
+    publication: "Publikace Fakta o klimatu"
+    download: "Celý text publikace v PDF"
+    sponsor: "Zadavatel"
 
 sidebar:
   download:
