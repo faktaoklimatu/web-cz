@@ -59,8 +59,8 @@ Z podrobné analýzy možností solární a větrné energetiky plynou dva hlavn
 
 V Česku dnes potřebujeme odstranit řadu bariér a připravit regulatorní prostředí a infrastrukturu, především v následujících oblastech:
 
-<div class="container wide-figure-desktop"><div class="row align-items-stretch">
-<div class="col-md-6"><div class="publication-card" markdown="1">
+<div class="container-fluid wide-figure-desktop"><div class="row align-items-stretch">
+<div class="col-md-6 my-3 px-0"><div class="publication-card" markdown="1">
 
 ### 1. Promyšlená strategie
 
@@ -69,7 +69,7 @@ Bez strategie vše včetně legislativy stagnuje. Energetická politika ČR pot�
 * Česko má možnost ovlivnit podobu projednávaných směrnic RED III a RED IV (Renewable Energy Directives) o podpoře využívání energie z obnovitelných zdrojů.
 
 </div></div>
-<div class="col-md-6"><div class="publication-card" markdown="1">
+<div class="col-md-6 my-3 px-0"><div class="publication-card" markdown="1">
 
 ### 2. Svižné povolovací procesy
 
@@ -78,7 +78,7 @@ Povolovací procesy pro stavbu větrných elektráren v ČR dnes mohou trvat i v
 * Snadnější alternativou „go‐to zón“ je promítnout cíle pro větrnou energetiku do národní úrovně územního plánování.
 
 </div></div>
-<div class="col-md-6"><div class="publication-card" markdown="1">
+<div class="col-md-6 my-3 px-0"><div class="publication-card" markdown="1">
 
 ### 3. Distribuční síť, která jde s dobou
 
@@ -86,7 +86,7 @@ Současná infrastruktura v ČR není na potřebný nárůst podílu obnoviteln�
 * Česko potřebuje dostupné informace o ak- tuálních možnostech sítě a také investice do jejího posilování.
 * Energetický trh se musí otevřít novým hráčům, kteří budou zajišťovat lokální spotřebu a poskytovat služby flexibility.
 </div></div>
-<div class="col-md-6"><div class="publication-card" markdown="1">
+<div class="col-md-6 my-3 px-0"><div class="publication-card" markdown="1">
 
 ### 4. Chytrá energetika
 
