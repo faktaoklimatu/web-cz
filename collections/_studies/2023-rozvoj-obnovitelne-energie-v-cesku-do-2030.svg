@@ -5,6 +5,87 @@
       <rect x="-88.48" y="-374.47" width="619.84" height="883.47" fill="none"/>
     </clipPath>
   </defs>
+  <style>
+      #turbine{
+        animation: turbine-rotation infinite 10s;
+        transform-origin: 221.46px 77.44px;
+      }
+
+
+      #sunrays{
+        animation: sunrays infinite 10s;
+        animation-delay: -3s;
+        transform-origin: 120.59px 50.85px;
+      }
+
+      .heating{
+        animation: heating infinite 10s;
+        animation-timing-function: linear;
+        animation-delay: -7s;
+        stroke-dasharray: 100 10;
+        stroke-dashoffset: 0;
+      }
+
+      .wind {
+        animation: heating infinite 20s;
+        animation-timing-function: linear;
+        animation-delay: -4s;
+        stroke-dasharray: 50 10;
+        stroke-dashoffset: 0;
+      }
+
+      #list1{
+        animation: list1 infinite 5s;
+        animation-delay: -8s;
+        transform-origin: 153px 297px
+      }
+
+
+      @keyframes turbine-rotation {
+        0%   {
+          rotate: 0deg;
+        }
+        100% {
+          rotate: 360deg;
+        }
+      }
+
+      @keyframes sunrays{
+        0%   {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100%{
+          transform: scale(1);
+        }
+      }
+
+      @keyframes heating{
+        0%   {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: -100%;
+          }
+      }
+
+      @keyframes list1{
+        0%   {
+          rotate: 0deg;
+        }
+        50% {
+          rotate: -10deg;
+          }
+        100%   {
+          rotate: 0deg;
+        }
+      }
+
+
+
+  </style>
   <g id="Layer_1" data-name="Layer 1">
     <g clip-path="url(#clippath)">
       <rect x="-88.48" y="-374.46" width="619.84" height="883.47" rx="8.5" ry="8.5" fill="#001f71"/>
@@ -16,7 +97,7 @@
       <circle cx="175.62" cy="315.35" r="40.43" fill="#fca14d"/>
       <g>
         <path d="m155.42,280.11c-6.74-6.74,3.88-21.24,20.14-20.14,1.1,16.27-13.4,26.89-20.14,20.14Z" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
-        <g>
+        <g  id="list1" >
           <path d="m146.7,269.44c-11.34,5.26-24.38-14.35-15.7-33.86,20.51,5.99,27.04,28.61,15.7,33.86Z" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
           <path d="m150.39,297.84c1.15-35.08-19.06-61.55-19.06-61.55" fill="none" stroke="#fff" stroke-miterlimit="10"/>
         </g>
@@ -61,19 +142,19 @@
         </g>
         <polyline points="266.41 266.09 294.17 266.09 294.17 266.08 294.17 222.41 280.03 222.41 332.68 159.82 362.55 192.76" fill="none" stroke="#fff" stroke-miterlimit="10"/>
         <g>
-          <polyline points="332.3 257.48 310.27 257.4 322.23 248.75" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
+          <polyline class="heating" points="332.3 257.48 310.27 257.4 322.23 248.75" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
           <polygon points="322.58 249.73 323.39 247.91 321.41 248.11 322.58 249.73" fill="#fff"/>
         </g>
         <g>
-          <polyline points="344.97 226.89 339.25 195.31 351.16 205.39" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
+          <polyline class="heating" points="344.97 226.89 339.25 195.31 351.16 205.39" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
           <polygon points="350.29 205.96 352.25 206.32 351.58 204.44 350.29 205.96" fill="#fff"/>
         </g>
         <g>
-          <polyline points="332.39 241.94 310.85 237.34 323.16 230.85" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
+          <polyline class="heating" points="332.39 241.94 310.85 237.34 323.16 230.85" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
           <polygon points="323.37 231.87 324.43 230.18 322.44 230.1 323.37 231.87" fill="#fff"/>
         </g>
         <g>
-          <polyline points="338.02 229.85 310.85 210.6 323.09 205.97" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
+          <polyline class="heating" points="338.02 229.85 310.85 210.6 323.09 205.97" fill="none" stroke="#fff" stroke-linejoin="bevel"/>
           <polygon points="323.17 207 324.43 205.46 322.46 205.14 323.17 207" fill="#fff"/>
         </g>
         <g>
@@ -99,8 +180,8 @@
           <line x1="168.81" y1="142.69" x2="112.46" y2="142.69" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
           <line x1="160.68" y1="156.77" x2="104.32" y2="156.77" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
         </g>
-        <circle cx="120.59" cy="50.85" r="13.39" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
-        <g>
+        <circle id="sun" cx="120.59" cy="50.85" r="13.39" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
+        <g id="sunrays">
           <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
             <line x1="120.59" y1="80.09" x2="120.59" y2="72.41" fill="none" stroke="#fff" stroke-miterlimit="10"/>
           </g>
@@ -157,18 +238,18 @@
         <line x1="160.68" y1="166.62" x2="179.12" y2="166.62" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
         <line x1="174.5" y1="184.68" x2="203.1" y2="184.68" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
         <polyline points="188.55 160.68 185.48 167.76 191.08 167.76 187.7 175.9" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-        <g id="vrtula">
+        <g>
           <line x1="207.7" y1="184.68" x2="236.3" y2="184.68" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
-          <path d="m172.84,56.91c15.8,8.25,27.56-7.05,40.94,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-          <path d="m196.72,49.35c.51-.17.98-.3,1.49-.47,6.09-1.75,11.92-3.28,18.1,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-          <path d="m178.16,39.74c15.8,8.25,27.56-7.05,40.94,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+          <path class="wind" d="m172.84,56.91c15.8,8.25,27.56-7.05,40.94,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+          <path class="wind" d="m196.72,49.35c.51-.17.98-.3,1.49-.47,6.09-1.75,11.92-3.28,18.1,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+          <path class="wind" d="m178.16,39.74c15.8,8.25,27.56-7.05,40.94,0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
           <g>
             <polygon points="227.69 155.24 223.65 77.74 219.79 77.74 216.17 155.24 212.84 155.24 212.84 179.88 231.16 179.88 231.16 155.24 227.69 155.24" fill="#001f71"/>
             <polygon points="227.69 155.24 223.65 77.74 219.79 77.74 216.17 155.24 212.84 155.24 212.84 179.88 231.16 179.88 231.16 155.24 227.69 155.24" fill="none" stroke="#fff" stroke-miterlimit="10"/>
           </g>
           <polyline points="222.41 160.08 219.34 167.16 224.94 167.16 221.56 175.3" fill="none" stroke="#fff" stroke-miterlimit="10"/>
           <g>
-            <g>
+            <g id="turbine">
               <g id="_Radial_Repeat_-17" data-name="&amp;lt;Radial Repeat&amp;gt;">
                 <path d="m249.21,126.06s-1.55-31.39-19.09-42.45c-.6.52-1.12.96-1.58,1.35l-4.35-6.34-2.73,1.47,3.12,5.78.91,1.69,1.45,2.69,19.97,37.05,2.3-1.24Z" fill="#001f71" stroke="#fff" stroke-miterlimit="10"/>
               </g>
