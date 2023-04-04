@@ -19,8 +19,8 @@ sponsor_link: "https://top-az.eu/"
 sponsor_disclaimer: "Odborný obsah zpracoval autorský tým, zadavatel pro tuto analýzu
 pouze stanovil klíčové otázky."
 perex: |
-  Tato analýza zkoumá možnosti rozvoje obnovitelné energie v Česku. Podle strategie REPowerEU
-  a podle návazné unijní legislativy máme před sebou výzvu: zdvojnásobit do roku 2030 využití obnovitelné energie v Česku. Rozvoj obnovitelné energie snižuje naši závislost na fosilních palivech. Obnovitelná energie nám tedy jednak pomáhá posilovat energetickou bezpečnost a chrání nás tak před budoucími výkyvy v cenách energie, jednak je klíčová pro dekarbonizaci naší společnosti.
+  Tato analýza zkoumá možnosti rozvoje obnovitelné energie v Česku. Ten je jednak klíčový pro dekarbonizaci naší společnosti a jednak snižuje naši závislost na fosilních palivech a tím posiluje naši energetickou bezpečnost a chrání nás před budoucími výkyvy v cenách energií. Podle strategie REPowerEU a návazné unijní legislativy stojí Česko před výzvou – do roku 2030 využití obnovitelné energie zdvojnásobit.
+
 
 ---
 
