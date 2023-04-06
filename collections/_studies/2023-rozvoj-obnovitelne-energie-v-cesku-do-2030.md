@@ -13,6 +13,7 @@ authors:
     logo: "fakta.svg"
   - name: "Frank Bold"
     logo: "frank-bold.svg"
+class:      "executive-summary"
 type:       "Analýza"
 sponsor:    "TOPAZ, z.s."
 sponsor_link: "https://top-az.eu/"
