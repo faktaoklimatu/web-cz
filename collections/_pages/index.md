@@ -40,7 +40,7 @@ Letos v Česku probíhá aktualizace strategických dokumentů klíčových pro 
 
 Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (téměř 40 % emisí skleníkových plynů Česka dnes pochází z elektráren a tepláren), jednak pro **zajištění energetické bezpečnosti a dostupnosti energetických surovin** (což zdůraznila ruská invaze na Ukrajinu).
 
-{% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, bezemisni-energetika-cr-2-technologie, elektrina-mix-eu, elektrina-cr, cena-elektriny-na-trhu, cena-energie" | split: ", " %}
+{% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030, elektrina-mix-eu, elektrina-cr, bezemisni-energetika-cr-2-technologie, cena-energie" | split: ", " %}
 {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
   </div></div>
 
