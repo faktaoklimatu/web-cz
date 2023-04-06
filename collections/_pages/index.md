@@ -28,7 +28,7 @@ slug: index
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
             </li>
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-gray" id="tab-role-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Pro novináře</h2>
+                <h2 class="nav-link bg-extralight-gray" id="tab-role-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Naše publikace</h2>
             </li>
         </ul>
     </div>
@@ -57,11 +57,12 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
-    <p class="lead">Pokud připravujete článek či se chystáte na diskusi nebo rozhovor, naše materiály vám pomohou získat přehled a aktuální data. I těžko srozumitelné problémy můžete díky našim grafikám prezentovat přehledně a srozumitelně. Data čerpáme z ověřených a transparentních zdrojů, posouzení jejich faktické správnosti jsme udělali za vás.</p>
-    <p class="lead">Naše data a grafiky lze snadno sdílet, upravovat a šířit. Pokud je plánujete využít, nezapomeňte se prosím seznámit s pravidly jak používat naše materiály. Máte-li zájem o bližší informace o projektu nebo o spolupráci, kdykoli nás také můžete <a href="/jak-pouzivat#kontakt">kontaktovat</a>.</p>
-    <a href="/jak-pouzivat" class="btn btn-primary"><i class="fas fa-fw fa-book-reader"></i> Jak používat naše materiály</a>
-    <a href="/o-nas" class="btn btn-secondary"><i class="fas fa-fw fa-info"></i> O projektu</a>
-    <a href="/slovnik" class="btn btn-secondary"><i class="fas fa-fw fa-book"></i> Slovník pojmů</a>
+    <p class="lead mb-0">TODO kecy kecy</p>
+
+    {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
+    {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
+
+    <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
   </div></div>
 </div>
 
