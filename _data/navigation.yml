@@ -7,8 +7,8 @@
     - title: <i class="fas fa-fw fa-headphones mr-1"></i> Podcast 2050
       link: https://2050podcast.cz/
 
-    - title: <i class="fas fa-fw fa-book-atlas mr-1"></i> Atlas klimatické změny
-      link: /atlas
+    - title: <i class="fas fa-fw fa-book mr-1"></i> Naše publikace
+      link: /publikace
 
     - title: <i class="fas fa-fw fa-chart-area mr-1"></i> Modelování energetiky
       link: /modelovani-energeticke-transformace
@@ -17,7 +17,7 @@
       link: "#newsletter-modal"
       params: 'id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal"'
 
-    - title: <i class="fas fa-fw fa-book mr-1"></i> Slovník pojmů
+    - title: <i class="fas fa-fw fa-rectangle-list mr-1"></i> Slovník pojmů
       link: /slovnik
 
 - title: O nás
