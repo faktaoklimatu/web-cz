@@ -1,24 +1,24 @@
 ---
-layout:     publication
-title:      "Rozvoj obnovitelné energie v Česku do roku 2030"
-title_br:   "Rozvoj obnovitelné <br> energie v Česku <br> do roku 2030"
-subtitle:   "pro posílení bezpečnosti <br> a plnění klimatických cílů EU"
-slug:       2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
+layout:           publication
+title:            "Rozvoj obnovitelné energie v Česku do roku 2030"
+title_formatted:  "Rozvoj obnovitelné <br> energie v Česku <br> do roku 2030"
+subtitle:         "pro posílení bezpečnosti <br> a plnění klimatických cílů EU"
+slug:             2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
 redirect_from:
   - /rozvoj-obnovitelne-energie-v-cesku-do-2030
-published:  2023-04-06
+published:        2023-04-06
 background_color: "#001f71"
 authors:
   - name: "Fakta o klimatu"
     logo: "fakta.svg"
   - name: "Frank Bold"
     logo: "frank-bold.svg"
-class:      "executive-summary"
-type:       "Analýza"
-sponsor:    "TOPAZ, z.s."
-sponsor_link: "https://top-az.eu/"
-sponsor_disclaimer: "Odborný obsah zpracoval autorský tým, zadavatel pro tuto analýzu
-pouze stanovil klíčové otázky."
+class:            "executive-summary"
+type:             "Analýza"
+sponsor:          "TOPAZ, z.s."
+sponsor_link:     "https://top-az.eu/"
+sponsor_disclaimer: |
+  Odborný obsah zpracoval autorský tým, zadavatel pro tuto analýzu pouze stanovil klíčové otázky.
 perex: |
   Tato analýza zkoumá možnosti rozvoje obnovitelné energie v Česku. Ten je jednak klíčový pro dekarbonizaci naší společnosti a jednak snižuje naši závislost na fosilních palivech a tím posiluje naši energetickou bezpečnost a chrání nás před budoucími výkyvy v cenách energií. Podle strategie REPowerEU a návazné unijní legislativy stojí Česko před výzvou – do roku 2030 využití obnovitelné energie zdvojnásobit.
 
