@@ -25,7 +25,7 @@ Udržitelnost je dnes velmi často skloňovaným pojmem i v byznysu: banky stál
 
 ## Jak je to s certifikacemi lesů v Česku?
 
-V Česku jsou zastoupeny tyto certifikační systémy pro lesní hospodaření a následné zpracování dřeva:
+V Česku jsou dnes zastoupeny dva různě náročné certifikační systémy pro lesní hospodaření a následné zpracování dřeva:
 
 <div class="container">
 <div class="row">
@@ -52,7 +52,7 @@ V Česku jsou zastoupeny tyto certifikační systémy pro lesní hospodaření a
 </div>
 </div>
 
-Oba standardy se používají i v mnoha dalších zemích světa.[^dalsi-standardy] Hlavní rozdíl mezi nimi spočívá v náročnosti a konkrétnosti: **zatímco FSC striktně vymezuje, jak se smí v lese hospodařit a jak ne, formulace PEFC jsou většinou více obecné** (což sice teoreticky může zvýšit jejich aplikovatelnost, ale také nabízí větší prostor pro různé interpretace) a zpravidla nevyžadují od lesního hospodáře více než aktuální platná legislativa v dané zemi (viz příklady v další kapitole).[^sousedni-zeme]
+Oba standardy se používají i v mnoha dalších zemích světa.[^dalsi-standardy] Hlavní rozdíl mezi nimi spočívá v tom, co všechno pokrývají a jak konkrétní jsou jejich požadavky: **zatímco FSC striktně vymezuje, jak se smí v lese hospodařit a jak ne, formulace PEFC jsou většinou více obecné** (což sice teoreticky může zvýšit jejich aplikovatelnost, ale také nabízí větší prostor pro různé interpretace) a zpravidla nevyžadují od lesního hospodáře více než aktuální platná legislativa v dané zemi (viz příklady v další kapitole).[^sousedni-zeme]
 
 Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz na udržitelnost a podporu [přírodě blízkého hospodaření](/explainery/hospodareni-lesy). Otázkou nicméně zůstává, nakolik je něčeho takového možné dosáhnout pomocí standardu, jehož požadavky významně nepřekračují rámec stávajících zákonů a navazujících předpisů. V Česku vznikla velká část této legislativy před mnoha desetiletími a za jiných (relativně stabilních) klimatických podmínek. Od té doby neprošla zásadními proměnami, a z hlediska udržitelnosti tak dnes postrádá velmi potřebnou flexibilitu. Proto je vzhledem k rychlému šíření kůrovce v posledních letech, pokračujícímu globálnímu oteplování a [celkově špatné kondici našich lesů](/explainery/umirani-ceskych-lesu) **alarmující, jak málo je náročný certifikační standard v Česku zastoupen**.
 
@@ -163,7 +163,7 @@ Rozšíření certifikačních standardů typu FSC nicméně zatím brání růz
 
 Dalším problémem spojeným s certifikacemi obecně je míra dodržování definovaných pravidel přímo v lese. Ani sebelepší standard nedává sám o sobě záruku, že bude skutečně aplikován a dodržován přesně tak, jak byl napsán. V tomto ohledu je **klíčová pravidelnost a nezávislost auditů** posuzujících splnění požadavků. Nedílnou součástí standardu proto musí být i jasně definovaná pravidla pro auditorskou roli a rigorózní proces vyžadující odebrání certifikační značky v případě, že byly zjištěny závažné neshody a ve stanovené době nedošlo k jejich nápravě. Bez takovéto nezávislé kontroly ztrácí standard svou sílu a vlastně i smysl.[^gp-destruction]
 
-Aby mohly být certifikační standardy pro les skutečným přínosem, je proto nutné se kromě snahy co nejvíce zvýšit plochu certifikovaných lesů také **zaměřit na reálné dodržování pravidel v lesích, které už certifikované jsou**, a jednoznačně se distancovat od jakýchkoliv praktik, které vedou k porušování závazků. Dosavadní fokus na plochu ("chceme mít více certifikovaných lesů") je pochopitelný a v principu správný, ale skrývá v sobě také potenciální riziko kompromisů či nedostatečné kontroly plnění požadavků. Součástí standardu proto musí být mechanismy, které toto riziko minimalizují.
+Aby mohly být certifikační standardy pro les skutečným přínosem, je proto nutné se kromě snahy co nejvíce zvýšit plochu certifikovaných lesů také **zaměřit na reálné dodržování pravidel v lesích, které už certifikované jsou**, a jednoznačně se distancovat od jakýchkoliv praktik, které vedou k porušování závazků. Dosavadní fokus na plochu ("chceme mít více certifikovaných lesů") je pochopitelný a v principu správný, ale skrývá v sobě také potenciální riziko kompromisů či nedostatečné kontroly plnění požadavků. Součástí standardu proto musí být mechanismy, které toto riziko efektivně minimalizují. Ani v případě FSC tomu tak zatím není.
 
 {% capture tabulka-srovnani %}
 Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, má-li být efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či využíváním standardu v praxi. Srovnání ukazuje, co z toho standardy PEFC a FSC již řeší ✅, částečně řeší ≈ zatím neřeší ❌ nebo to nelze posoudit pro nedostatek informací ❔
@@ -190,7 +190,7 @@ Níže uvádíme některé další vlastnosti, jež by měla certifikace mít, m
     source-url="https://pixabay.com/cs/photos/odles%c5%88ov%c3%a1n%c3%ad-stroj-n%c3%a1kladn%c3%ad-v%c5%afz-2833687/"
 %}
 
-Protože dřevo je také exportovanou a importovanou surovinou, efektivitu standardu a transparentnost postupů spojených s lesním hospodařením, těžbou a přepravou dříví značně ovlivňuje i vzájemná spolupráce mezi dovážející a vyvážející zemí – **bez aktivní role státu se žádný certifikační systém neobejde**. Pokud v exportující zemi dobře nefunguje vymahatelnost práva, případně nejsou k dispozici kvalitní monitorovací nástroje (a stát tedy nemá jasnou představu, co se v jeho lesích děje) nebo pokud dovážející země striktně nereguluje, jaké dřevo se smí na jejím trhu objevit a prodat, certifikace samy o sobě příliš mnoho nezmění. Jsou to dobrovolné závazky, které cílí primárně na tržní prostředí – nikdy v principu nemohou mít stejnou účinnost jako zákony a nařízení. Ani v České republice by proto zaměření na jejich větší podporu (jakkoli je žádoucí) nemělo být příčinou k oddalování **důkladné revize stávající legislativy**.
+Protože dřevo je také exportovanou a importovanou surovinou, udržitelnost a transparentnost postupů spojených s lesním hospodařením, těžbou a přepravou dříví ovlivňuje i vzájemná spolupráce mezi dovážející a vyvážející zemí. Pokud v exportující zemi dobře nefunguje vymahatelnost práva, případně nejsou k dispozici kvalitní monitorovací nástroje (a stát tedy nemá jasnou představu, co se v lesích děje) nebo pokud dovážející země nereguluje, jaké dřevo se smí na jejím trhu objevit a prodat, **může kvalitní certifikace typu FSC roli státu alespoň částečně nahradit**. Ani v České republice by nicméně zaměření na větší podporu těchto dobrovolných závazků (jakkoli je žádoucí) nemělo být příčinou k oddalování **důkladné revize stávající legislativy**.
 
 ## Závěr
 
