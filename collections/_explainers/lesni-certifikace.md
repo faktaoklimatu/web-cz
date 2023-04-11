@@ -12,14 +12,14 @@ cover-source-url: "https://unsplash.com/photos/H8vhhepiiaU"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodnou schopnost vyrovnat se s nejrůznějšími událostmi i dlouhodobými změnami – požáry, suchem, vichřicí, ochlazením i oteplením, zvládne i přemnožené škůdce. Většina lesů v Česku se však hospodářsky využívá a určitě bychom v tom rádi pokračovali i dál. Aby to bylo v době měnících se klimatických podmínek možné, nutně potřebujeme nástroje, jež podpoří přirozenou adaptabilitu lesů a pomohou jim tyto změny zvládnout. Jedním z těchto nástrojů může být lesní certifikace podporující hospodaření blízké přírodě."
+perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodnou schopnost vyrovnat se s nejrůznějšími událostmi i dlouhodobými změnami – požáry, suchem, vichřicí, ochlazením i oteplením, zvládne i přemnožené škůdce. Většina lesů v Česku se však hospodářsky využívá a určitě bychom v tom rádi pokračovali i dál. Aby to bylo v době měnících se klimatických podmínek a ubývání biodiverzity možné, nutně potřebujeme mít k dispozici různé nástroje, jež podpoří přirozenou adaptabilitu lesů a pomohou jim tyto změny zvládnout. Kromě kvalitní legislativy, v níž se budou probíhající změny odrážet, může být dalším užitečným nástrojem lesní certifikace podporující hospodaření blízké přírodě."
 ---
 
 ## Co je certifikace a k čemu slouží?
 
 Certifikační systémy fungují v mnoha oblastech hospodářství. Dávají záruku, že konkrétní výrobek (či služba) splňuje určitý standard, a často také definují pravidla pro životní cyklus tohoto produktu: od jeho výroby přes distribuci a prodej až po recyklaci.
 
-Pokud je například určitý produkt (řekněme polička na stěnu nebo toaletní papír) vyroben ze dřeva, které splňuje podmínky jednoho ze systémů certifikace lesů, je označen příslušným logem. Zákazník se pak prostřednictvím tohoto loga dozvídá, jak a z čeho byl produkt vyroben – třeba, že dřevo nepochází z chráněného pralesa, že s ním není spojena žádná dětská práce či drancování krajiny – a může mu na základě této informace dát přednost před jiným, protože danou věc považuje za udržitelnější, je více v souladu s jeho životními hodnotami a podobně. Na výrobce či prodejce tak **certifikační značka na jedné straně často klade vyšší nároky, zároveň však** pro něj **může znamenat i zákaznickou preferenci a konkurenční výhodu na trhu.** Nutným předpokladem ovšem je, že se zákazníci ve zkratkách a symbolech alespoň trochu orientují a dokáží rozlišit, které logo je skutečně puncem kvality či podporuje udržitelnost a které slouží spíše marketingovým účelům, případně jde přímo o [greenwashing](https://faktaoklimatu.cz/slovnik#greenwashing).
+Pokud je například určitý produkt (řekněme polička na stěnu nebo toaletní papír) vyroben ze dřeva, které splňuje podmínky jednoho ze systémů certifikace lesů, je označen příslušným logem. Zákazník se pak prostřednictvím tohoto loga dozvídá, jak a z čeho byl produkt vyroben – třeba, že dřevo nepochází z chráněného pralesa, že s ním není spojena žádná dětská práce či drancování krajiny – a může mu na základě této informace dát přednost před jiným, protože danou věc považuje za udržitelnější, je více v souladu s jeho životními hodnotami a podobně. Na výrobce či prodejce tak **certifikační značka na jedné straně často klade vyšší nároky, zároveň však** pro něj **může znamenat i zákaznickou preferenci a konkurenční výhodu na trhu.** Nutným předpokladem ovšem je, že se zákazníci ve zkratkách a symbolech alespoň trochu orientují a dokáží rozlišit, které logo je skutečně puncem kvality či podporuje udržitelnost a které slouží spíše marketingovým účelům, případně jde přímo o  (<glossary id="greenwashing">greenwashing</glossary>).
 
 Udržitelnost je dnes velmi často skloňovaným pojmem i v byznysu: banky stále více zvažují udržitelnost investic (tedy i úvěrů, které firmám či fyzickým osobám poskytují), pojišťovny zase řeší, co pojistit a za jakých podmínek. Platí to také o lesích – i ty jsou majetkem, do něhož se dá investovat, který může přinést zisk či naopak významně ztratit na hodnotě, také zde existuje řada rizik, o jejichž zmírnění má smysl usilovat. **Kvalitní certifikační značka tak může být důležitým vodítkem při rozhodování v byznysu**, ať už jde o velké odběratele dřeva či papíru nebo třeba už zmíněné pojišťovny či banky: u lesa, kde díky certifikátu víme, že se v něm hospodaří přírodě blízkým způsobem, jsou obvykle ekonomická rizika nižší, protože je odolnější a lépe zvládá různé kalamity a živelní události, a zároveň se snáze adaptuje i na pomalé, dlouhodobě probíhající změny (k nimž patří i změna klimatu).
 
@@ -120,9 +120,6 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Pěstební postupy
 
-{:.todo}
-(možná přidat ikonky?⏬)
-
 -   **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
 -   **Různověkost porostů** – preference nepasečného, výběrného hospodaření, díky němuž se v lese vyskytují stromy různého stáří a obnova lesa probíhá kontinuálně
 -   **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
@@ -178,7 +175,7 @@ Níže uvádíme některá další kritéria, jež by měla certifikace splňova
     name="srovnani-pefc-fsc"
     expanded=false
     class="contrast-figure"
-    label="V čem jsou PEFC a FSC ještě nedostačující"
+    label="Příklady silných a slabých stránek standardů PEFC a FSC"
     content=tabulka-srovnani
 %}
 
@@ -199,7 +196,7 @@ Protože dřevo je také exportovanou a importovanou surovinou, na udržitelnost
 
 **Komplexní certifikační standardy typu FSC takovýto management lesů (s ohledem na mimoprodukční funkce a s přesahy do okolní krajiny) podporují**. Mezi hlavní výhody FSC patří právě důraz na krajinné návaznosti a akcent na pestrost – ta je totiž klíčovým předpokladem zdraví lesa a jeho odolnosti vůči škůdcům i nepřízni podmínek a zároveň něčím, co dnes v našich intenzivně obhosposdařovaných lesích velice chybí.
 
-**Úkolem státu je převzít iniciativu**, a to hned ve dvou oblastech: na jedné straně **aktivně tvořit legislativní prostředí**, které bude klást výrazně vyšší nároky na lesní hospodaření, na straně druhé **motivovat vlastníky lesů k dobrovolným závazkům**, jako jsou právě lesní certifikace, a vysvětlovat výhody, jež mohou tyto závazky přinést (včetně ekonomických, z dlouhodobého pohledu) – lesům i vlastníkům samotným.
+**Úkolem státu je převzít iniciativu**, a to hned ve dvou oblastech: na jedné straně **aktivně tvořit legislativní prostředí**, které bude klást výrazně vyšší nároky na lesní hospodaření, na straně druhé co nejvíce **motivovat vlastníky lesů k dobrovolným závazkům**, jako jsou právě lesní certifikace, a vysvětlovat výhody, jež mohou tyto závazky přinést (včetně ekonomických, z dlouhodobého pohledu) – lesům i vlastníkům samotným.
 
 Část práce ovšem zůstává i na organizacích, které za těmito užitečnými nástroji stojí: standardy bude nutné dále zjednodušovat, vylepšovat a také usilovat o co nejdůslednější kontrolu dodržování všech stanovených pravidel. Především by pak stát, ale i firmy usilující o udržitelnost měly mnohem více úsilí napřít směrem k **informování a vzdělávání veřejnosti**, protože jsou to zákazníci, kdo kupuje nejrůznější výrobky ze dřeva a kdo zásadně ovlivňuje chování trhu – a volba certifikovaného produktu se neobejde bez alespoň základní zákaznické gramotnosti či orientace v této oblasti. Ke škodě všech zůstává tato gramotnost v Česku zatím nízká – podobný problém se ostatně týká i jiných typů certifikací, například v ekologickém zemědělství.
 
