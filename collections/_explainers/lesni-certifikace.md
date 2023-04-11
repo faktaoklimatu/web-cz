@@ -152,7 +152,7 @@ Samostatným tématem, kterým bude nutné v Česku co nejdříve řešit, je po
     source-url="https://commons.wikimedia.org/wiki/File:Bandelier_(5503074138).jpg"
 %}
 
-## Jaké problémy spojené s certifikacemi bude potřeba řešit?
+## Jaké problémy spojené s certifikacemi je ještě třeba řešit?
 
 Příklady opatření uvedené v předchozí kapitole naznačují, že **komplexní a dostatečně náročný certifikační standard může významně přispět k větší pestrosti a zdraví lesa a tím podpořit jeho schopnost přizpůsobovat se rychle měnícím podmínkám, tedy i změnám klimatu**. Právě tato dynamika a neustálá proměnlivost lesa je základem jeho dlouhodobé stability.[^petrik-fanta] Zároveň takový les dokáže plnit [všechny své funkce](/infografiky/funkce-lesa), **tlumit dopady klimatické změny a podstatnou měrou přispívat i k její [mitigaci](https://faktaoklimatu.cz/slovnik#mitigace)** – díky své sekvestrační schopnosti totiž funguje jako důležité úložiště uhlíku. Více než polovina veškerých zásob uhlíku v půdě a vegetaci na Zemi (přes 650 miliard tun) se nachází právě v lesích.[^fao-worlds-forests]
 
