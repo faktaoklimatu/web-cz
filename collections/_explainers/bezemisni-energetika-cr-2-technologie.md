@@ -35,7 +35,7 @@ Ke každému zdroji elektřiny dáváme odhad _současných_ [sdružených nákl
 
 ## Slunce a vítr
 
-**Slunce a vítr jsou už dnes zdrojem elektřiny s nejnižšími celkovými náklady** (a to i v českých podmínkách, kde např. 1 m<sup>2</sup> solárního panelu vyrobí za rok jen okolo 1,3 MWh elektřiny oproti 2 MWh na jihu Španělska[^OZE-potencial]). Celkové náklady na výrobu elektřiny z nové větrné nebo solární elektrárny jsou dnes dokonce asi 2× nižší než pouhé provozní náklady na výrobu z hnědého uhlí.[^OZE-cena]
+**Slunce a vítr jsou už dnes zdrojem elektřiny s nejnižšími celkovými náklady** (a to i v českých podmínkách, kde např. na 1 m<sup>2</sup> solárního panelu dopadne za rok jen okolo 1,3 MWh slunečního záření oproti 2 MWh na jihu Španělska[^OZE-potencial]). Celkové náklady na výrobu elektřiny z nové větrné nebo solární elektrárny jsou dnes dokonce asi 2× nižší než pouhé provozní náklady na výrobu z hnědého uhlí.[^OZE-cena]
 
 ### Slunce
 {% include figure.html
