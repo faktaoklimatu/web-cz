@@ -23,7 +23,7 @@ dataset:    "koncentrace-co2"
     slug="cykly-koncentrace-co2"
 %}
 
-* __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 11,8 ppm za dekádu a v letech 2000–2020 koncentrace CO<sub>2</sub> rostla tempem 21,6 ppm za dekádu. __V květnu 2020 dosáhly koncentrace CO<sub>2</sub> na Mauna Loa dosud nejvyšší hodnoty 417 ppm__.
+* __Od průmyslové revoluce, tedy přibližně od roku 1750, koncentrace CO<sub>2</sub> rychle rostou a dosahují vyšších hodnot než kdykoliv za poledních 800 000 let.__ Průměrné tempo růstu se navíc také zrychluje: v letech 1750–1949 koncentrace CO<sub>2</sub> rostla o 2,1 ppm za dekádu, v letech 1950–1999 bylo tempo růstu 11,8 ppm za dekádu a v letech 2000–2020 koncentrace CO<sub>2</sub> rostla tempem 21,8 ppm za dekádu. __V květnu 2022 dosáhly koncentrace CO<sub>2</sub> na Mauna Loa dosud nejvyšší hodnoty 421 ppm__.
 * Koncentrace CO<sub>2</sub> v průběhu roku kolísá o přibližně 5 ppm, maximum nastává na jaře, minimum na podzim. Toto kolísání podrobně zobrazuje graf [Cykly koncentrací CO₂ a O₂ v atmosféře](/infografiky/cykly-koncentrace-co2) (tzv. _Keelingova křivka_).
 * Jednotka *ppm* znamená *parts per million*, tedy označuje počet částic v jednom milionu, podobně jako procento \[%], tedy *per cent* znamená počet ve stovce a promile \[‰] označuje počet v tisíci. Koncentrace 400 ppm znamená, že v jednom milionu molekul vzduchu je 400 molekul oxidu uhličitého, co odpovídá 0,4 ‰ nebo 0,04 %.
 

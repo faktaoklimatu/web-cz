@@ -17,7 +17,7 @@ Dlouhodobý nárůst koncentrace oxidu uhličitého a pokles koncentrace kyslík
 
 ## Co vidíme v grafu?
 
-**Koncentrace CO<sub>2</sub>** se vlivem fotosyntézy a dýchání mění během roku, od května do října klesá a během zbytku roku zase roste. Dlouhodobě vlivem spalování fosilních paliv **roste tempem okolo 20 ppm za desetiletí**. V roce 1960 byly hodnoty okolo 315 ppm, v roce 2021 okolo 419 ppm – to je nárůst přibližně o 30 %.
+**Koncentrace CO<sub>2</sub>** se vlivem fotosyntézy a dýchání mění během roku, od května do října klesá a během zbytku roku zase roste. Dlouhodobě vlivem spalování fosilních paliv **roste tempem okolo 20 ppm za desetiletí**. V roce 1960 byly hodnoty okolo 315 ppm, v roce 2022 okolo 421 ppm – to je nárůst přibližně o 30 %.
 
 {% include preview-box.html
     title="Delší řada koncentrace CO<sub>2</sub>"
