@@ -6,17 +6,17 @@ published:  2020-04-19
 weight:     70
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
-caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2018 a data ze systému emisních povolenek za rok 2018."
-data-our:    "https://docs.google.com/spreadsheets/d/1cHuB4p4Z_vchLbPnnr38rkjDJnlmvjGrvR8A7rrFPTE/edit?usp=sharing"
+caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2020 a data ze systému emisních povolenek za rok 2020."
+data-our:    "https://docs.google.com/spreadsheets/d/1chcOoQAFxvmYG-VBv9f28vefL5lFWn6L9S1sJI3SIRY/edit?usp=sharing"
 data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ]
-            , ["European Commission", "https://climate.ec.europa.eu/document/download/9e3ed91e-5820-47d1-8b6f-f99b9a67172e_en?filename=verified_emissions_2018_en.xlsx" ] ]
+            , ["European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ] ]
 ---
 
 ## Emise skleníkových plynů za rok 2018
 
 {% include data-header.html
     name="Eurostat"
-    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2018 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
+    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2020 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
     url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
@@ -33,11 +33,11 @@ data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?da
 
 Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je omezen na Českou republiku. Více informací o této datové sadě je na [stránce datasetu Emise EU](emise-eu).
 
-## Data ze systému emisních povolenek za rok 2018
+## Data ze systému emisních povolenek za rok 2020
 
 {% include data-header.html
     name="Evropská komise"
-    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2018."
+    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2021."
     url="https://climate.ec.europa.eu/document/download/9e3ed91e-5820-47d1-8b6f-f99b9a67172e_en?filename=verified_emissions_2018_en.xlsx"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
