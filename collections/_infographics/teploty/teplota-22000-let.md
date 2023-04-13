@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Světová teplotní anomálie za 22 000 let"
+title:      "Změna průměrné teploty planety za 22 000 let"
 slug:       "teplota-22000-let"
 redirect_from: "/teplota-22000-let"
 published:  2020-07-30
