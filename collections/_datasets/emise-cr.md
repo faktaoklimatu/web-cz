@@ -12,7 +12,7 @@ data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?da
             , ["European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ] ]
 ---
 
-## Emise skleníkových plynů za rok 2018
+## Emise skleníkových plynů za rok 2020
 
 {% include data-header.html
     name="Eurostat"
