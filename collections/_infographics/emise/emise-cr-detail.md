@@ -17,7 +17,7 @@ dataset:    "emise-cr"
 
 Všechny hodnoty v grafu jsou <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> skleníkových plynů CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
 
-Roční objem emisí České republiky je 129,39 mil. tun CO<sub>2</sub>eq (údaj z roku 2018). __V přepočtu na obyvatele to je 12,19 t CO<sub>2</sub>eq/obyvatele.__
+Roční objem emisí České republiky je 113,69 mil. tun CO<sub>2</sub>eq (údaj z roku 2020). __V přepočtu na obyvatele to je 10,63 t CO<sub>2</sub>eq/obyvatele.__
 
 ## Co znamenají jednotlivé sektory?
 
