@@ -57,7 +57,7 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
-    <p class="lead mb-0">TODO kecy kecy</p>
+    <p class="lead mb-0">Kromě infografik, explainerů a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
     {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
@@ -96,6 +96,8 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 **Děláme rešeršní a analytickou práci**. Hledáme v datech to relevantní pro hlubší pochopení klimatické změny, jejích dopadů a možnostech řešení. Zaměřujeme se na to podstatné pro český kontext a českou společnost.
 
 **Komunikujeme ke klíčovým skupinám**. Tvoříme datové vizualizace, články, podcasty nebo přednášky pro veřejnost i klienty z firemní a veřejné sféry.
+
+**Konzultujeme**. S novináři, politiky nebo firmami konzultujeme témata týkající se změny klimatu a transformace k bezemisní společnosti.
 
 </div>
 <div class="col-12 col-md-6 col-lg-5 pt-4" markdown="1">
