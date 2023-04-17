@@ -17,7 +17,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
     </div>
     <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
         <h2>Ke stažení</h2>
-        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej stáhnout zdarma (první vydání) nebo si v e-shopu Lipky koupit tištěnou verzi.</p>
+        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej stáhnout zdarma nebo si v e-shopu Lipky koupit tištěnou verzi.</p>
         <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
         <a href="https://www.lipka.cz/atlas-klima-zmeny" class="btn btn-secondary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
