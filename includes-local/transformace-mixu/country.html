@@ -1,0 +1,30 @@
+<div class="card">
+    <h5 class="card-header" id="{{ include.id }}">
+        {% if include.flag-url %}
+            <img src="{{ include.flag-url }}" class="mr-2 country-flag" alt="Vlajka země či území: {{ include.name }}" />
+        {% endif -%}
+        {{ include.name }}
+    </h5>
+    <div style="display: grid; grid-template-columns: 2fr auto 3fr;">
+        <div class="card-body">
+            <img class="w-100" src="/assets-local/figures/2023-transformace-mixu/trojuhelnik.svg" alt="Ternární graf zobrazující mix výroby elektřiny v Česku" />
+        </div>
+        <div class="card-body">
+            <dl>
+                <dt style="color: #8c2c79">Fosilní zdroje</dt>
+                <dd style="color: #8c2c79">{{ include.fossil | replace_first: ".", "," }} %</dd>
+                <dt style="color: #024b7a">Jaderná energie</dt>
+                <dd style="color: #024b7a">{{ include.nuclear | replace_first: ".", "," }} %</dd>
+                <dt style="color: #f58800">Obnovitelné zdroje</dt>
+                <dd style="color: #f58800">{{ include.renewables | replace_first: ".", "," }} %</dd>
+                <dt>Hrubá roční výroba</dt>
+                <dd>{{ include.production }} TWh</dd>
+                <dt>Emisní intenzita</dt>
+                <dd>{{ include.co2-intensity }} t CO<sub>2</sub>eq/MWh</dd>
+            </dl>
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ include.story }}</p>
+        </div>
+    </div>
+</div>
