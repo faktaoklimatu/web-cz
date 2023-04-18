@@ -5,6 +5,7 @@ title_formatted:  "Jaký přínos pro les <br> v časech klimatické <br> změny
 slug:             2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny
 redirect_from:
   - /2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny
+skip_topic:       True
 published:        2023-04-20
 background_color: "#0a4535"
 authors:
