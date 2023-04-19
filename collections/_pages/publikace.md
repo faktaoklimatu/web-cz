@@ -29,5 +29,5 @@ subtopics:
   lead: |
     V této sekci naleznete zahraniční studie, které jsme přeložili do češtiny a doplnilli o český kontext.
   content:
-  - vliv-klimatu-na-extremy-prirucka
+  - 2022-extremy-pocasi-a-klimaticka-zmena
 ---
