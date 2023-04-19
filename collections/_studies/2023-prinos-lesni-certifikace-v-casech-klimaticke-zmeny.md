@@ -8,9 +8,16 @@ redirect_from:
 skip_topic:       True
 published:        2023-04-20
 background_color: "#0a4535"
-authors:
+organizations:
   - name: "Fakta o klimatu"
     logo: "fakta.svg"
+authors:
+  - id: "jirka-lnenicka"
+  - id: "ondras-pribyla"
+  - name: "Marcel Otruba"
+    minor-role: "sazba a grafická úprava"
+  - name: "Vojtěch Kotecký"
+    minor-role: "odborné konzultace"
 type:             "Studie"
 sponsor:          "IKEA"
 sponsor_link:     "https://www.ikea.com/cz/cs/"

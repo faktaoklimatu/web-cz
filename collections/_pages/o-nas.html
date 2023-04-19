@@ -41,7 +41,7 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
             <div class="row mt-2">
                 {%- assign members = group.members -%}
                 {%- for item in members %}
-                <div class="{{ group.class }}">
+                <div class="{{ group.class }}"{% if item.id %} id="{{ item.id }}"{% endif %}>
                     <div class="card bg-transparent border-0">
                         {%- if item.img %}
                             <div class="text-center">

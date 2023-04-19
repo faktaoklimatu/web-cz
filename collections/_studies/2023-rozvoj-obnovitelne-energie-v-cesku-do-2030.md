@@ -8,11 +8,18 @@ redirect_from:
   - /rozvoj-obnovitelne-energie-v-cesku-do-2030
 published:        2023-04-06
 background_color: "#001f71"
-authors:
+organizations:
   - name: "Fakta o klimatu"
     logo: "fakta.svg"
   - name: "Frank Bold"
     logo: "frank-bold.svg"
+authors:
+  - id: "jan-krcal"
+    show_internal_affiliation: True
+  - name: "Laura Otýpková"
+    affiliation: "Frank Bold"
+  - id: "katerina-kolouchova"
+    show_internal_affiliation: True
 class:            "executive-summary"
 type:             "Analýza"
 sponsor:          "TOPAZ, z.s."
