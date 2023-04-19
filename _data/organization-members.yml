@@ -3,7 +3,8 @@
     Jsme tým expertů a expertek zabývajících se různými obory – přírodovědou, společenskými vědami, datovou analýzou, pedagogikou či komunikací. Naším cílem je kultivovat diskuzi v ČR o klimatické změně a s ní související transformací na nízkouhlíkovou ekonomiku. Chceme zprostředkovat současné vědecké poznání všem, kterých se tyto změny týkají. Tedy všem.
   class: "core-team col-12 col-sm-12 col-md-6 col-lg-4 px-2"
   members:
-  - name: "Ondráš Přibyla"
+  - id: "ondras-pribyla"
+    name: "Ondráš Přibyla"
     position: "Zakladatel a ředitel"
     summary: "Teoretický fyzik, který se léta zabýval komunikací a navigací v komplexních systémech. Vede náš tým a přednáší o tématu klimatických změn na univerzitách i ve firmách. Věnuje se zejména fyzikální podstatě problému a strategii transformace v kontextu ČR i Evropy."
     img: "ondras-pribyla.jpg"
@@ -12,7 +13,8 @@
     linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
     twitter: "https://twitter.com/OPribyla"
 
-  - name: "Kristi Pšorn Zákopčanová"
+  - id: "kristi-psorn-zakopcanova"
+    name: "Kristi Pšorn Zákopčanová"
     position: "Vizualizační guru"
     summary: "Její práci vidíte na většině našich infografik – zabývá se analýzou a vizuální komunikací dat a informací. Pracuje také v datovém týmu iRozhlasu a konzultuje pro PAQ Research. Za svou práci [dostala](https://www.irozhlas.cz/zivotni-styl/novinarska-cena-2021-irozhlas-inovativni-zurnalistika-seznam_2206241001_sam) _Cenu za inovativní online žurnalistiku_."
     img: "kristi-zakopcanova.jpg"
@@ -20,7 +22,8 @@
     linkedin: "https://www.linkedin.com/in/kristina-zakopcanova/"
     twitter: "https://twitter.com/kris_zak"
 
-  - name: "Jan Krčál"
+  - id: "jan-krcal"
+    name: "Jan Krčál"
     position: "Analytik"
     summary: "Věnuje se energetice a modelování scénářů její transformace. Mimo to zpracoval řadu výstupů k emisím skleníkových plynů. Dříve pracoval v základním výzkumu okolo stochastických modelů, a také jako inženýr v Googlu."
     img: "jan-krcal.jpg"
@@ -28,14 +31,16 @@
     linkedin: "https://www.linkedin.com/in/jan-krcal/"
     twitter: "https://twitter.com/krcal_jan"
 
-  - name: "Kateřina Kolouchová"
+  - id: "katerina-kolouchova"
+    name: "Kateřina Kolouchová"
     position: "Analytička"
     summary: "Zabývá se klimatickou politikou a legislativou na úrovni ČR a EU. Mimo to se věnuje analýze a vizualizaci dat, s praxí i z komerční sféry. Vystudovala hospodářskou politiku a mezinárodní vztahy."
     img: "katka-kolouchova.jpg"
     email: "katerina.kolouchova@faktaoklimatu.cz"
     twitter: "https://twitter.com/katkolouchova"
 
-  - name: "Jirka Lněnička"
+  - id: "jirka-lnenicka"
+    name: "Jirka Lněnička"
     position: "Editor"
     summary: "Pomáhá týmu přemýšlet nad texty a ladit jejich finální podobu. Opírá se o 20 let zkušeností z pedagogické, překladatelské a editorské činnosti pro firmy, akademická pracoviště a další organizace."
     img: "jirka-lnenicka.jpg"
@@ -43,7 +48,8 @@
     linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
     twitter: "https://twitter.com/JirkaLnenicka"
 
-  - name: "Petr Holík"
+  - id: "petr-holik"
+    name: "Petr Holík"
     position: "Komunikační expert a podcaster"
     summary: "Svůj vztah k vědě si tvořil spoluprací na výzkumech v Arktidě i na jižní Moravě a už během studia se začal věnovat její komunikaci. Tvoří podcast [2050](https://2050podcast.cz/) a přednáší o klimatické změně a transformaci."
     img: "petr-holik.jpg"
@@ -59,7 +65,8 @@
     linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
     www: "https://otruba.sk/"
 
-  - name: "Hana Tesák Vrtala"
+  - id: "hana-tesak-vrtala"
+    name: "Hana Tesák Vrtala"
     position: "Podcasterka a analytička"
     summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích učitelů přírodních věd. Ve Faktech o klimatu se specializuje na téma transformace dopravy a spoluvytváří podcast [2050](https://2050podcast.cz/)."
     img: "hana-vrtalova.jpg"
@@ -67,7 +74,8 @@
     linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
     twitter: "https://twitter.com/HVrtalova"
 
-  - name: "Milan Vítek"
+  - id: "milan-vitek"
+    name: "Milan Vítek"
     position: "Správce sociálních sítí"
     summary: "Stará se o sociální sítě Fakt o klimatu. Kromě toho se zabývá tématem vlivu změny klimatu na extrémy počasí."
     img: "milan-vitek.jpg"
@@ -75,14 +83,8 @@
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
 
-  - name: "Adam Bílek"
-    position: "Analytik"
-    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
-    img: "adam-bilek.jpg"
-    email: "adam.bilek@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
-
-  - name: "Martin Ukrop"
+  - id: "martin-ukrop"
+    name: "Martin Ukrop"
     position: "Administrátor a programátor"
     summary: "Expert počítačové bezpečnosti a lektor zážitkové pedagogiky, který se profesionálně věnuje propojování akademiků a lidí z průmyslu. Spravuje IT systémy Fakt o klimatu a podílí se na tvorbě webu."
     img: "martin-ukrop.jpg"
@@ -90,14 +92,24 @@
     linkedin: "https://www.linkedin.com/in/mukrop/"
     www: "https://research.redhat.com/blog/project_member/martin-ukrop/"
 
-  - name: "Matěj Grabovský"
+  - id: "matej-grabovsky"
+    name: "Matěj Grabovský"
     position: "Analytik a programátor"
     summary: "Tvoří statistické modely a simulace procesů spjatých se změnami klimatu a transformací. Zpracovává a analyzuje data v širokém spektru oblastí. Jako softwarový inženýr pracuje na webových aplikacích a distribuovaných systémech."
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
 
-  - name: "Tom Protivínský"
+  - id: "adam-bilek"
+    name: "Adam Bílek"
+    position: "Analytik"
+    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
+    img: "adam-bilek.jpg"
+    email: "adam.bilek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+
+  - id: "tom-protivinsky"
+    name: "Tom Protivínský"
     position: "Analytik"
     summary: "Věnuje se datovým analýzám a ekonomickým aspektům, například tématům zpoplatnění uhlíku a nákladům mitigace klimatických změn. Kromě toho pracuje pro ekonomický think-tank [IDEA](https://idea.cerge-ei.cz/)."
     img: "tomas-protivinsky.jpg"
@@ -113,10 +125,12 @@
   - name: "Jan Krajhanzl"
     summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
 
-  - name: "Oldřich Sklenář"
+  - id: "oldrich-sklenar"
+    name: "Oldřich Sklenář"
     summary: "V projektu konzultuje ohledně energetiky. Na řadě infografik přímo spolupracoval."
 
-  - name: "Jakub Zamouřil"
+  - id: "jakub-zamouril"
+    name: "Jakub Zamouřil"
     summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
     linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
 
@@ -124,7 +138,8 @@
     summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
     linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
 
-  - name: "Marek Krčál"
+  - id: "marek-krcal"
+    name: "Marek Krčál"
     summary: "Přispívá k tématu energetiky, zejména k otázkám její dlouhodobé transformace."
 
   - name: "Martin Křivánek"
