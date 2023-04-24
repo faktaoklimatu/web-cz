@@ -86,6 +86,7 @@ subtopics:
   - fondy-eu
   - fondy-eu-cde
   - emisni-povolenky-ets
+  - repowereu
 
 - id:          "svet"
   title:       "Světová klimatická politika"
