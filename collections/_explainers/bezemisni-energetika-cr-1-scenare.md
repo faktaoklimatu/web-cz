@@ -1,6 +1,7 @@
 ---
 layout:      explainer
 title:       "Jaké cesty mohou dovést Česko k bezemisní elektřině?"
+type:        "Analýza"
 series-id:   "serie-elektrina-2050-cr"
 series-order: "I"
 slug:        "bezemisni-energetika-cr-1-scenare"

@@ -2,6 +2,7 @@
 layout:      explainer
 title:       "Jak se mění počet extrémně teplých a extrémně studených dní v Česku?"
 slug:        "teplotni-extremy-cr"
+type:        "Analýza"
 published:   2023-03-09
 author:      "Ondráš Přibyla, Matěj Grabovský, Kristína Pšorn Zákopčanová"
 weight:      80
