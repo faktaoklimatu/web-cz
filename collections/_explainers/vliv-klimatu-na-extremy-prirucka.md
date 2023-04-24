@@ -15,7 +15,7 @@ cover-source-url: "https://media.greenpeace.org/archive/Heavy-Rain-Disaster-in-S
 perex:       "S každou další událostí spojenou s extrémním počasím se znovu vynoří podobné otázky: Je dnes takových pohrom víc než dřív? Jsou silnější? A je to kvůli změně klimatu? Někdy ano a někdy ne. Zveřejňujeme český překlad <i>Kompasu pro novináře</i>, publikace dvou renomovaných britských klimatologů, jejímž cílem je udělat v těchto otázkách jasno – stručně shrnout nejnovější vědecké poznatky a poskytnout vodítko novinářům, kteří o extrémních událostech a klimatické změně informují veřejnost."
 ---
 
-_Tento text je webová verze příručky [Kompas pro novináře](https://www.worldweatherattribution.org/wp-content/uploads/CZE-Reporting-extreme-weather-climate-change.pdf), kterou jsme s laskavým souhlasem jejích autorů přeložili do češtiny. Za anglickou verzí této příručky stojí iniciativa [World Weather Attribution](https://www.worldweatherattribution.org/reporting-extreme-weather-and-climate-change-a-guide-for-journalists/)._
+_Tento text je webová verze příručky [Kompas pro novináře](/studie/2022-extremy-pocasi-a-klimaticka-zmena), kterou jsme s laskavým souhlasem jejích autorů přeložili do češtiny. Za anglickou verzí této příručky stojí iniciativa [World Weather Attribution](https://www.worldweatherattribution.org/reporting-extreme-weather-and-climate-change-a-guide-for-journalists/)._
 {: .longread-small}
 
 ## Úvod
