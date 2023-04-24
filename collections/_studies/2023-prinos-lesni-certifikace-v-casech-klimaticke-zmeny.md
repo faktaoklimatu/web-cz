@@ -52,10 +52,10 @@ Jedná se o důkladně propracovaný standard, což ještě více vynikne, když
 
 ## Co je třeba u FSC dále vylepšovat a řešit
 
-* administrativní zátěž (v současné verzi alespoň částečně snížená zjednodušenou verzí standardu pro lesy malé rozlohy)
-* transparentnost – chvályhodná ambice standardu, ne vždy ale beze zbytku naplňovaná
-* plná nezávislost auditů – není dostatečně definováno, jak postupovat v případě, že dojde k porušení pravidel standardu ze strany auditorské společnosti
-* míra naplňování standardu v praxi – absence jasných pravidel a postihů pro případ, že dojde porušení podmínek certifikace; chybějící efektivní mechanismy vedoucí k nápravě situace
+* **administrativní zátěž** (v současné verzi alespoň částečně snížená zjednodušenou verzí standardu pro lesy malé rozlohy)
+* **transparentnost** – chvályhodná ambice standardu, ne vždy ale beze zbytku naplňovaná
+* **plná nezávislost auditů** – není dostatečně definováno, jak postupovat v případě, že dojde k porušení pravidel standardu ze strany auditorské společnosti
+* **míra naplňování standardu v praxi** – absence jasných pravidel a postihů pro případ, že dojde porušení podmínek certifikace; chybějící efektivní mechanismy vedoucí k nápravě situace
 
 I přes zmíněné nedostatky představuje certifikace FSC rozhodně dobrý směr. Lesy v Česku by byly v mnohem lepší kondici, kdyby zde tato certifikace vyžadující udržitelné postupy lesního hospodaření a zpracování dřeva byla zastoupena významně více. Byly by pestřejší, zdravější a méně zranitelné vůči různým výkyvům a změnám – a daleko více by nám také mohly pomáhat se zmírňováním klimatické změny a ubýváním biodiverzity. V neposlední řadě pak dává větší odolnost lesů smysl i ekonomicky, především z dlouhodobého hlediska.
 
