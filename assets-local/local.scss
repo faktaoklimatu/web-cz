@@ -22,6 +22,15 @@ $c-callout-text: #373633;
     }
 }
 
+.member-small {
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-gap: 1rem;
+    .team-photo { width: 100%; }
+    .team-photo.smaller { width: 80%; }
+    div { align-self: center; }
+}
+
 .cop-entity-summary {
     font-size: 0.9em;
 

@@ -76,16 +76,48 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
     </div>
 {%- endfor %}
 
-<div class="section">
+<div class="section" id="kontaktni-udaje">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-6 col-xl-5 pr-5 my-4">
                 <h2>Ozvěte se nám</h2>
-                <p class="lead">Chcete-li si u nás objednat přednášku, domluvit konzultaci, nechat zpracovat analýzu v oblasti změny klimatu a transformace k bezemisní společnosti nebo konzultovat <a href="https://faktaoklimatu.cz/jak-pouzivat">použití našich infografik či dat</a>, ozvěte se nám na e-mailu info@faktaoklimatu.cz.</p>
-                <p class="lead">Případně můžete kontaktovat přímo Ondráše Přibylu na ondras.pribyla@faktaoklimatu.cz nebo na tel. +420 775 988 882.</p>
+                <p class="lead">Chcete-li si u nás objednat přednášku, domluvit konzultaci, nechat zpracovat analýzu nebo konzultovat <a href="/jak-pouzivat">použití našich infografik či dat</a>, ozvěte se nám:
+                <div class="m-3 member-small">
+                    <img class="p-3 team-photo" src="/assets-local/logo-no-text.svg" alt="{{site.title}}">
+                    <div>
+                        <h5 class="card-title">Fakta o klimatu</h5>
+                        <div class="mt-auto">
+                            <a class="align-self-end" href="mailto:{{ site.email }}">{{ site.email }}</a>
+                        </div>
+                    </div>
+                </div>
+                {%- for group in groups %}
+                    {%- assign item = group.members | find: "img","ondras-pribyla.jpg" -%}
+                    {%- if item %}
+                        <div class="m-3 member-small">
+                            <img class="p-2 team-photo" src="/assets-local/team/{{item.img}}" alt="{{item.name}}">
+                            <div>
+                                <h5 class="card-title">{{ item.name }}</h5>
+                                <h6 class="card-subtitle mb-3 text-muted">{{ item.position }}</h6>
+                                <div class="mt-auto">
+                                    <a class="align-self-end" href="mailto:{{ item.email }}">{{ item.email }}</a>
+                                </div>
+                                <div class="mt-auto">
+                                    <i class="fa-solid fa-square-phone pr-1"></i> {{ item.phone }}
+                                </div>
+                            </div>
+                        </div>
+                    {%- endif %}
+                {%- endfor %}
             </div>
-            <div class="col-12 col-md-5">
-                <h2 id="kontaktni-udaje">Kontaktní a fakturační údaje</h2>
+            <div class="col-12 col-lg-6 col-xl-7 my-4">
+                <h2>Dokumenty</h2>
+                <p class="lead narrow-text">Zde naleznete základní oficiální dokumenty ústavu Otevřená data o klimatu, z. ú.</p>
+                <a class="btn btn-primary" href="/assets-local/files/2020-vyrocni-zprava.pdf" target="_blank"><i class="fas fa-fw fa-calendar-alt"></i> Výroční zpráva 2020</a>
+                <a class="btn btn-secondary" href="/assets-local/files/2020-statut.pdf" target="_blank"><i class="fas fa-fw fa-university"></i> Statut ústavu</a>
+                <a class="btn btn-secondary" href="https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1097710">Všechny listiny v rejstříku</a>
+
+                <h2 class="mt-5">Fakturační údaje</h2>
                 <ul class="list-unstyled lead">
                     <li class="mt-3"><strong>Adresa sídla</strong>:<br/>
                         Otevřená data o klimatu, z. ú.<br/>
@@ -94,7 +126,6 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
                     </li>
                     <li class="mt-3"><strong>IČ</strong>: 09555587</li>
                     <li><strong>DIČ</strong>: CZ09555587</li>
-                    <li class="mt-3"><strong>Email</strong>: info@faktaoklimatu.cz</li>
                     <li><strong>Datová schránka</strong>: pknm5js</li>
                 </ul>
             </div>
@@ -124,12 +155,3 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
     </div>
 </div>
 
-<div class="section">
-    <div class="container">
-                <h2>Dokumenty</h2>
-                <p class="lead narrow-text">Zde naleznete základní dokumenty ústavu Otevřená data o klimatu, z. ú. Máte-li chvíli, přečtěte si naši výroční zprávu za rok 2020, kde se dozvíte, co všechno se nám podařilo dosáhnout.</p>
-                <a class="btn btn-primary" href="/assets-local/files/2020-vyrocni-zprava.pdf" target="_blank"><i class="fas fa-fw fa-calendar-alt"></i> Výroční zpráva 2020</a>
-                <a class="btn btn-secondary" href="/assets-local/files/2020-statut.pdf" target="_blank"><i class="fas fa-fw fa-university"></i> Statut ústavu</a>
-                <a class="btn btn-secondary" href="https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1097710">Všechny listiny v rejstříku</a>
-    </div>
-</div>
