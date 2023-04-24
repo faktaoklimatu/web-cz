@@ -61,3 +61,5 @@ Až donedávna se vědci spojování jednotlivých událostí se změnou klimatu
 Odpověď je pokaždé jiná: záleží na lokalitě, ročním období, na typu události a také na její intenzitě, délce a rozsahu. Ne všechny extrémní meteorologické jevy jsou v důsledku změny klimatu častější a horší — u některých se může pravděpodobnost výskytu snížit nebo může zůstat víceméně stejná. Určitá novinářská obezřetnost nehledat souvislosti tam, kde nejsou, je proto oprávněná.
 
 **Cílem této publikace je pomoci novinářům, aby mohli o extrémních meteorologických jevech přinášet přesné informace a správně je zasazovat do kontextu globálního oteplování.** Jinými slovy: jak nejlépe informovat své publikum o vlivu změny klimatu na extrémní projevy počasí, které zažíváme stále častěji, aniž bychom tuto vazbu přeceňovali (nebo naopak podceňovali)?
+
+_Za touto publikací stojí organizace [World Weather Attribution](https://www.worldweatherattribution.org/reporting-extreme-weather-and-climate-change-a-guide-for-journalists/). S laskavým souhlasem autorů tohoto textu a s finanční podporou České asociace pojišťoven jsme ji přeložili do češtiny a doplnili českým kontextem._
