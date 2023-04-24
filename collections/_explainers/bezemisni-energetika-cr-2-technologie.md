@@ -1,6 +1,7 @@
 ---
 layout:      explainer
 title:       "Z čeho můžeme v Česku vyrábět bezemisní elektřinu?"
+type:        "Analýza"
 series-id:   "serie-elektrina-2050-cr"
 series-order: "II"
 slug:        "bezemisni-energetika-cr-2-technologie"
