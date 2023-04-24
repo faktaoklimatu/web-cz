@@ -10,11 +10,12 @@ intro: |
 
 subtopics:
 - id:          "vzdelavani"
-  title:       "Materiály pro vzdělávání"
+  title:       "Vzdělávací a metodické materiály"
   lead: |
-    Níže naleznete materiály a publikace, které jsme vytvořili především (ale nejen) pro vyučující a studenty. Naši klíčovou publikaci představuje Atlas klimatické změny, který je průvodcem základy klimatické změny – popisuje změny v atmosféře a rizika oteplování.
+    Níže naleznete materiály a publikace, které jsme vytvořili především (ale nejen) pro vyučující a studenty. Naši klíčovou publikaci představuje Atlas klimatické změny, který je základním průvodcem změnami v atmosféře a riziky oteplování. Dále zde naleznete i zahraniční materiály, které jsme přeložili a doplnili o český kontext.
   content:
   - atlas
+  - 2022-extremy-pocasi-a-klimaticka-zmena
 
 - id:          "odborne-studie"
   title:       "Odborné studie"
@@ -23,11 +24,4 @@ subtopics:
   content:
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny
-
-- id:          "zahranicni-studie"
-  title:       "Zahraniční studie"
-  lead: |
-    V této sekci naleznete zahraniční studie, které jsme přeložili do češtiny a doplnilli o český kontext.
-  content:
-  - 2022-extremy-pocasi-a-klimaticka-zmena
 ---
