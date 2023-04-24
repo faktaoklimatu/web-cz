@@ -4,7 +4,11 @@ title:       "Jak se mění počet extrémně teplých a extrémně studených d
 slug:        "teplotni-extremy-cr"
 type:        "Analýza"
 published:   2023-03-09
-author:      "Ondráš Přibyla, Matěj Grabovský, Kristína Pšorn Zákopčanová"
+authors:
+  - id: "ondras-pribyla"
+  - id: "matej-grabovsky"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
 weight:      80
 tags-scopes: [ cr ]
 tags-topics: [ klima ]

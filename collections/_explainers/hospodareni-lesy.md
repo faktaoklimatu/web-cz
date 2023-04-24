@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Jak v následujícím století hospodařit v českých lesích?"
 slug:        "hospodareni-lesy"
 published:   2021-11-07
-author:      "Jiří Lněnička, konzultace Pavel Rotter, Matěj Šašek"
+authors:
+  - id: "jirka-lnenicka"
+  - name: "Pavel Rotter, Matěj Šašek"
+    minor-role: "konzultace"
 weight:      74
 tags-scopes: [ cr ]
 tags-topics: [ priroda ]
@@ -134,7 +137,7 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 [^102]: O možnostech budoucího pěstování smrků v zástinu se zmiňuje lesník Aleš Erber v [rozhovoru v časopise Ekolist](https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber).
 
-[^103]: Pavel Rotter et al.: [Smmíšené porosty s dubem, bukem a smrkem pro neklidné 21. století:](https://prosilvabohemica.cz/wp-content/uploads/2021/01/Rotter-Smisene-porosty.pdf) Regionální lokalizace s ohledem na minimalizaci rizika rozpadu.  
+[^103]: Pavel Rotter et al.: [Smmíšené porosty s dubem, bukem a smrkem pro neklidné 21. století:](https://prosilvabohemica.cz/wp-content/uploads/2021/01/Rotter-Smisene-porosty.pdf) Regionální lokalizace s ohledem na minimalizaci rizika rozpadu.
 
 [^2]: Souček, J.: [Potenciál přirozené obnovy pionýrských druhů dřevin](https://www.vulhm.cz/files/uploads/2021/09/636.pdf), Zprávy lesnického výzkumu, 66, 2021 (3): 188-196.
 

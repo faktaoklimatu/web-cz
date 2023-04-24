@@ -7,7 +7,10 @@ series-order: "I"
 slug:        "bezemisni-energetika-cr-1-scenare"
 redirect_from: "/bezemisni-energetika-cr"
 published:   2023-02-24 01:00
-author:      "Jan Krčál"
+authors:
+  - id: "jan-krcal"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]

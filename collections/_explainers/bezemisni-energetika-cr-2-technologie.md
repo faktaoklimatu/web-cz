@@ -6,7 +6,10 @@ series-id:   "serie-elektrina-2050-cr"
 series-order: "II"
 slug:        "bezemisni-energetika-cr-2-technologie"
 published:   2023-02-24
-author:      "Jan Krčál"
+authors:
+  - id: "jan-krcal"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]
