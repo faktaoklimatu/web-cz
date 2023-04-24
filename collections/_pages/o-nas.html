@@ -58,9 +58,14 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
                             <h6 class="card-subtitle mb-3 text-muted text-center">{{ item.position }}</h6>
                             <div class="card-text mb-3 text-center">{{ item.summary | markdownify }}</div>
                             {%- if item.email %}
-                            <div class="mt-auto text-center">
-                                <a class="align-self-end" href="mailto:{{ item.email }}">{{ item.email }}</a>
-                            </div>
+                                <div class="mt-auto text-center">
+                                    <a class="align-self-end" href="mailto:{{ item.email }}">{{ item.email }}</a>
+                                </div>
+                            {% endif -%}
+                            {%- if item.phone %}
+                                <div class="mt-auto text-center">
+                                    <i class="fa-solid fa-square-phone pr-1"></i> {{ item.phone }}
+                                </div>
                             {% endif -%}
                         </div>
                     </div>
