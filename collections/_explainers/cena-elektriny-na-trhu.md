@@ -3,7 +3,14 @@ layout:      explainer
 title:       "Jak se na trhu stanovuje cena elektřiny?"
 slug:        "cena-elektriny-na-trhu"
 published:   2022-03-02
-author:      "Jakub Zamouřil, Jan Krčál, konzultace Prokop Čech (Nano Energies)"
+authors:
+  - id: "jakub-zamouril"
+  - id: "jan-krcal"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
+  - name: "Prokop Čech"
+    affiliation: Nano Energies
+    minor-role: "konzultace"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]
