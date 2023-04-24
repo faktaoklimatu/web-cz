@@ -20,6 +20,13 @@ authors:
     affiliation: "Frank Bold"
   - id: "katerina-kolouchova"
     show_internal_affiliation: True
+  - name: "Marcel Otruba"
+    minor-role: "sazba a grafická úprava"
+  - minor-role: "vizualizace"
+    ids:
+    - kristi-psorn-zakopcanova
+    - katerina-kolouchova
+
 class:            "executive-summary"
 type:             "Analýza"
 sponsor:          "TOPAZ, z.s."
