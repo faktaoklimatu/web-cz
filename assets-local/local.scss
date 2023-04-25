@@ -24,11 +24,14 @@ $c-callout-text: #373633;
 
 .member-small {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 90px auto;
     grid-gap: 1rem;
     .team-photo { width: 100%; }
-    .team-photo.smaller { width: 80%; }
     div { align-self: center; }
+}
+
+@media (min-width: 768px) {
+    .member-small { grid-template-columns: 120px auto; }
 }
 
 .cop-entity-summary {
