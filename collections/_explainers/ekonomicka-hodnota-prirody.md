@@ -43,9 +43,9 @@ Třetím příkladem obrovské ztráty přírodního kapitálu jsou dopady spoje
 {:.todo}
 
 {% include figure.html
-    name="ikea-explainer-prirodny-kapital.jpg"
-    alt="TODO: Alt text"
-    source-text="TODO: Zdroj"
+    name="kapital-novy.jpg"
+    alt="Schéma tří druhů kapitálu: lidského, vyrobeného a přírodního"
+    source-text="Přírodní kapitál je cenným zdrojem pro jiné druhy kapitálu. Ty jej zároveň ovlivňují (většinou negativně)."
     source-url="https://faktaoklimatu.cz"
 %}
 
