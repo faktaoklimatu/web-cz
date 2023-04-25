@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jakou ekonomickou hodnotu má příroda?"
 slug:        "ekonomicka-hodnota-prirody"
-published:   2023-02-20
+published:   2023-04-26
 author:      "Jiří Lněnička"
 weight:      79
 tags-scopes: [ svet ]

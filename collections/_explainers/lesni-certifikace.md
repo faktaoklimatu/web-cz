@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaký přínos pro les v časech klimatické změny může mít lesní certifikace?"
 slug:        "lesni-certifikace"
-published:   2023-02-20
+published:   2023-04-26
 author:      "Jiří Lněnička"
 weight:      89
 tags-scopes: [ svet ]
