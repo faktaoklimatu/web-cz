@@ -145,11 +145,10 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 Samostatným tématem, kterým bude nutné v Česku co nejdříve řešit, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, přispět nemohou a **řešení vyžaduje aktivní přístup ze strany státu**.
 
 {% include figure.html
-    name="ochrana-pred-zveri.jpg"
-    alt="Fotografie jelence ušatého skákajícího přes drátěnou ohradu"
-    caption="Ochránit stromky před okusem spárkatou zvěří není jednoduché ani levné."
-    source-text="Larry Lamsa, CC BY 2.0"
-    source-url="https://commons.wikimedia.org/wiki/File:Bandelier_(5503074138).jpg"
+    name="pletivo.jpg"
+    alt="Fotografie vytěženého dřeva s rolemi pletiva na stavbu oplocenek"
+    caption="Ochránit stromky před okusem zvěří není jednoduché ani levné. Příprava na zřízení lesních oplocenek po holosečném kácení poblíž PP Bohdalov-Hartinkov, 2023"
+    source-text="fotoarchiv autora"
 %}
 
 ## Jaké problémy spojené s certifikacemi je ještě třeba řešit?
