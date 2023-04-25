@@ -138,24 +138,38 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 ### Pěstební postupy
 
 <div class="grid-figures lesni-certifikace-opatreni" markdown="1">
-{% include figure.html name="postup-pestrost.svg" alt="TODO" no-lightbox=true %}
 
+{% include figure.html name="postup-pestrost.svg" alt="TODO" no-lightbox=true %}
 **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
 
 {% include figure.html name="postup-ruznovekost.svg" alt="TODO" no-lightbox=true %}
-
 **Různověkost porostů** – preference nepasečného, výběrného hospodaření, díky němuž se v lese vyskytují stromy různého stáří a obnova lesa probíhá kontinuálně
-</div>
 
--   **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
--   **Dostatek místa pro cílové dřeviny** – výrazné omezení plantáží a stanovení maximálního podílu vysoce intenzivních kultur na ploše majetku
--   **Péče o půdu** – velký důraz na dlouhodobou sekvestraci uhlíku v lesní půdě (požadavek na druhovou a věkovou pestrost a vyšší podíl listnatých dřevin a také požadavek na zajištění podmínek pro přirozený pohyb vody); přísná regulace mechanické přípravy půdy
+{% include figure.html name="postup-pripravne-dreviny.svg" alt="TODO" no-lightbox=true %}
+ **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
+ 
+{% include figure.html name="postup-dostatek-mista.svg" alt="TODO" no-lightbox=true %}
+**Dostatek místa pro cílové dřeviny** – výrazné omezení plantáží a stanovení maximálního podílu vysoce intenzivních kultur na ploše majetku
+
+{% include figure.html name="postup-puda.svg" alt="TODO" no-lightbox=true %}
+**Péče o půdu** – velký důraz na dlouhodobou sekvestraci uhlíku v lesní půdě (požadavek na druhovou a věkovou pestrost a vyšší podíl listnatých dřevin a také požadavek na zajištění podmínek pro přirozený pohyb vody); přísná regulace mechanické přípravy půdy
+
+</div>
 
 ### Těžební postupy
 
--   **Citlivá těžba místo holosečí** – upřednostňován nepasečný způsob, u holosečí jasně limitována velikost seče a podíl holosečí na celkové obnovované ploše
--   **Ponechání mrtvého dřeva a části těžebních zbytků v lese** (důležité i pro [biodiverzitu](https://faktaoklimatu.cz/explainery/ubyvani-biodiverzity?q=biodi)) – vyloučeno využití pařezů a pálení klestu; definováno, kde je vyloučen sběr těžebních zbytků, pro ostatní typy lesa stanovena pravidla, jak s těžebními zbytky nakládat a kolik stromů na hektar je nutno v lese ponechat k zestárnutí a rozpadu
--   **Péče o půdu** – jasně stanovená pravidla těžby i s ohledem na stanoviště (zvyšuje rovněž ochranu půdy před erozí)
+<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+
+{% include figure.html name="postup-citliva-tezba.svg" alt="TODO" no-lightbox=true %}
+**Citlivá těžba místo holosečí** – upřednostňován nepasečný způsob, u holosečí jasně limitována velikost seče a podíl holosečí na celkové obnovované ploše
+
+{% include figure.html name="postup-mrtve-drevo.svg" alt="TODO" no-lightbox=true %}
+**Ponechání mrtvého dřeva a části těžebních zbytků v lese** (důležité i pro [biodiverzitu](https://faktaoklimatu.cz/explainery/ubyvani-biodiverzity?q=biodi)) – vyloučeno využití pařezů a pálení klestu; definováno, kde je vyloučen sběr těžebních zbytků, pro ostatní typy lesa stanovena pravidla, jak s těžebními zbytky nakládat a kolik stromů na hektar je nutno v lese ponechat k zestárnutí a rozpadu
+
+{% include figure.html name="postup-puda.svg" alt="TODO" no-lightbox=true %}
+**Péče o půdu** – jasně stanovená pravidla těžby i s ohledem na stanoviště (zvyšuje rovněž ochranu půdy před erozí)
+ 
+</div>
 
 ### Další faktory
 
@@ -166,6 +180,11 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 -   **Prevence nelegální těžby** – v ČR spíše okrajové téma, mezinárodní verze FSC se jím však zabývá, protože v řadě zemí světa představuje nelegální těžba problém
 
 ### Regulace stavů zvěře
+
+{% include lead-in-figure.html
+    name="postup-regulace-zvere.svg"
+    alt="Piktogram jelena"
+%}
 
 Samostatným tématem, kterým bude nutné v Česku co nejdříve řešit, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, přispět nemohou a **řešení vyžaduje aktivní přístup ze strany státu**.
 
