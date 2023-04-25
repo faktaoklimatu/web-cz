@@ -1,9 +1,9 @@
 ---
 layout:        infographic
 title:         "Hodnota lesa pro přírodu a společnost"
-slug:          "funkce-lesa"
-redirect_from: "/funkce-lesa"
-published:     2023-02-20
+slug:          "hodnota-lesa"
+redirect_from: "/hodnota-lesa"
+published:     2023-04-26
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
