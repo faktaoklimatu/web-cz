@@ -120,7 +120,7 @@ Jak se posouvá rozložení denních teplotních odchylek, můžeme nahlédnout 
 
 V tomto zobrazení zřetelně vidíme několik zajímavých vlastností počasí:
 
-<div class="extremy-histogramy" markdown="1">
+<div class="grid-figures extremy-histogramy" markdown="1">
 {% include figure.html name="histogram-1.svg" alt="Histogram teplotních odchylek, ve kterém je zvýrazněná prostřední část mezi −5 a +5 stupňů. V této oblasti se nachází tři čtvrtiny dní v roce." %}
 
 Většina teplotních odchylek je v blízkosti 0 °C. To znamená, že většina dní má teplotu docela blízkou teplotnímu normálu pro daný den.

@@ -84,7 +84,7 @@ $c-callout-text: #373633;
     vertical-align: 0.125em;
 }
 
-.extremy-histogramy {
+.grid-figures {
     display: grid;
     column-gap: 1.5rem;
     row-gap: 1rem;
@@ -105,14 +105,15 @@ $c-callout-text: #373633;
         padding: 1.5rem 2rem;
     }
 
-    .extremy-histogramy {
-        grid-template-columns: 7fr 5fr;
-        row-gap: 2rem;
-
+    .grid-figures {
         p {
             align-self: center;
             margin-bottom: 0;
-        }
+        }    }
+
+    .extremy-histogramy {
+        grid-template-columns: 7fr 5fr;
+        row-gap: 2rem;
     }
 }
 
