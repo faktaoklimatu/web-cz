@@ -1,5 +1,5 @@
 {%- for group in site.data.organization-members %}
-    {%- assign item = group.members | find: "img",include.id -%}
+    {%- assign item = group.members | find: "id",include.id -%}
     {%- if item %}
     <div class="member-small">
         <img class="p-2 team-photo" src="/assets-local/team/{{item.img}}" alt="{{item.name}}">
