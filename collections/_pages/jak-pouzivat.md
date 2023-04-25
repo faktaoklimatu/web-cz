@@ -69,7 +69,7 @@ U každé naší infografiky jsou také k dispozici podkladová data.
 
 Chcete-li s námi konzultovat použití našich infografik či dat (například do médií), ozvěte se nám:
 
-<div class="row">
+<div class="row mb-3">
 <div class="col-12 col-md-6 col-lg-4 my-3">
 {%- include includes-local/card-fakta.html %}
 </div>
