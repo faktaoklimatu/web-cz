@@ -82,33 +82,12 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
             <div class="col-12 col-lg-6 pr-5 my-4">
                 <h2>Ozvěte se nám</h2>
                 <p class="lead">Chcete-li si u nás objednat přednášku, domluvit konzultaci, nechat zpracovat analýzu nebo konzultovat <a href="/jak-pouzivat">použití našich infografik či dat</a>, ozvěte se nám:
-                <div class="my-3 member-small">
-                    <img class="p-2 team-photo" src="/assets-local/logo-no-text.svg" alt="{{site.title}}">
-                    <div>
-                        <h5 class="card-title my-1">Fakta o klimatu</h5>
-                        <div class="mt-auto">
-                            <a class="align-self-end" href="mailto:{{ site.email }}">{{ site.email }}</a>
-                        </div>
-                    </div>
+                <div class="my-3">
+                    {%- include includes-local/card-fakta.html %}
                 </div>
-                {%- for group in groups %}
-                    {%- assign item = group.members | find: "img","ondras-pribyla.jpg" -%}
-                    {%- if item %}
-                        <div class="my-3 member-small">
-                            <img class="p-2 team-photo" src="/assets-local/team/{{item.img}}" alt="{{item.name}}">
-                            <div>
-                                <h5 class="card-title my-1">{{ item.name }}</h5>
-                                <h6 class="card-subtitle my-1 text-muted">{{ item.position }}</h6>
-                                <div class="mt-auto">
-                                    <a class="align-self-end" href="mailto:{{ item.email }}">{{ item.email }}</a>
-                                </div>
-                                <div class="mt-auto">
-                                    <i class="fa-solid fa-square-phone pr-1"></i> {{ item.phone }}
-                                </div>
-                            </div>
-                        </div>
-                    {%- endif %}
-                {%- endfor %}
+                <div class="my-3">
+                    {%- include includes-local/card-member.html id="ondras-pribyla.jpg" %}
+                </div>
             </div>
             <div class="col-12 col-lg-6 my-4">
                 <h2>Fakturační údaje</h2>
