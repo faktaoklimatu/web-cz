@@ -74,7 +74,7 @@ Chcete-li s námi konzultovat použití našich infografik či dat (například 
 {%- include includes-local/card-fakta.html %}
 </div>
 <div class="col-12 col-md-6 col-lg-4 my-3">
-{%- include includes-local/card-member.html id="ondras-pribyla.jpg" %}
+{%- include includes-local/card-member.html id="ondras-pribyla" %}
 </div>
 </div>
 
