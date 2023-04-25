@@ -1,6 +1,6 @@
 ---
 layout:        infographic
-title:         "Jaké jsou hlavní funkce lesa?"
+title:         "Hodnota lesa pro přírodu a společnost"
 slug:          "funkce-lesa"
 redirect_from: "/funkce-lesa"
 published:     2023-02-20
