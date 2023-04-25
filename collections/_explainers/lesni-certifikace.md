@@ -138,7 +138,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 ### Pěstební postupy
 
 <div class="grid-figures lesni-certifikace-opatreni" markdown="1">
-{% include figure.html name="postup-ruznovekost.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-pestrost.svg" alt="TODO" no-lightbox=true %}
 
 **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
 
