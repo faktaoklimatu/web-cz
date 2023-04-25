@@ -59,7 +59,8 @@ Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz 
 ## Jak může certifikace FSC podpořit zdraví a odolnost lesa?
 
 {% include figure.html
-    name="ikea-explainer-zdravy-odolny-les-1.jpg"
+    name="postupy-wide-des.png"
+    class="contrast-figure wide-figure-desktop"
     alt="TODO: ALT text"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -209,7 +210,7 @@ Aby mohly být certifikační standardy pro les skutečným přínosem, je proto
 Níže uvádíme některá další kritéria, jež by měla certifikace splňovat, má-li být opravdu efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či aplikací standardu v praxi.
 
 {% include figure.html
-    name="srovnani.jpg"
+    name="silne-slabe-stranky-normal-des.png"
     alt="TODO: ALT text"
 %}
 {% endcapture %}
