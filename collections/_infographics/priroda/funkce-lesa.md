@@ -7,7 +7,7 @@ published:     2023-02-20
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "Přestože les je pro člověka a život na Zemi důležitý z mnoha důvodů, ekonomicky jej zatím umíme ocenit pouze jako zdroj dřeva. Důsledkem je, že právě na tuto produkční funkci se lesní hospodaření zaměřuje především – neboť pro majitele představuje jediný zdroj příjmu z lesa – a vše ostatní pak často ustupuje do pozadí."
+caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho majitele je dřevo zpravidla jediným zdrojem příjmu, je jednostranné zaměření lesního hospodaření na produkční funkci. Ostatní důležité funkce lesa pak ustupují do pozadí – ke škodě člověka i přírody."
 ---
 
 ## Co vidíme v grafice?
