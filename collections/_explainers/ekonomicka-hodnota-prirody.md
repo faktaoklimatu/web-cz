@@ -26,11 +26,11 @@ V posledních letech, zvláště po mezinárodním summitu o biodiverzitě v roc
 Příkladem může být třeba **zhoršování kvality půdy**. Její úrodnost klesá – v důsledku eroze, nepoužívání statkových hnojiv a nadměrného odstraňování biomasy totiž významně ubývá organické hmoty v půdě[^situacni-zprava-puda]. A spolu s tím se snižuje i její schopnost půdy zadržovat vodu: z degradované půdy se voda ztrácí rychleji než z půdy zdravé – a v české a moravské krajině je to čím dál více vidět. Kvůli klesající kvalitě půdy se zemědělcům a na ně navázanému potravinářskému průmyslu a prodejcům potravin výrazně zvyšují náklady a zároveň snižuje zisk. Negativně se to pochopitelně promítá i do cen pro spotřebitele. Jde o problém, který je velmi aktuální i v Česku[^situacni-zprava-puda] a v dalších dekádách bude s velkou pravděpodobností nabývat na závažnosti.
 
 {% include figure.html
-    name="drevo-rumenice.jpg"
-    alt="TODO: ALT text"
-    caption="Zdravá půda je plná života. V jedné kávové lžičce je zhruba tolik organismů, kolik je lidí na Zemi.[^sarapatka-puda]"
-    source-text="koala0815, Pixabay"
-    source-url="https://pixabay.com/photos/fire-bugs-branch-floor-wood-5385022/"
+    name="zizala.jpg"
+    alt="Fotografie žížaly v půdě"
+    caption="Zdravá půda je plná života. V jedné kávové lžičce je zhruba tolik organismů, kolik je lidí na Zemi[^sarapatka-puda]. Významný přínos pro kvalitu půdy mají například žížaly."
+    source-text="PortalJardin, Pixabay"
+    source-url="https://pixabay.com/cs/photos/%c4%8derv-vermiculture-humus-zem%c4%9b-p%c5%afda-1140767/"
 %}
 
 Jinou ukázkou narušení dynamické přírodní rovnováhy v důsledku aktivity člověka, která měla velké ekonomické a sociální dopady, byl **dramatický pokles v populaci indických supů a následné rozšíření vztekliny** v zemi. Supi se v tamější krajině dříve starali o rychlou likvidaci uhynulých kusů skotu. Když však začali indičtí farmáři pro své chovy používat určitý typ léků proti zánětům, ukázalo se, že látky obsažené v lécích jsou pro supy smrtelné. Úbytek těchto velkých ptáků vedl k tomu, že rozkládající se těla dobytka zůstávala dlouhé dny na místě, což způsobilo rychlé přemnožení divokých psů a ti pak rozšířili vzteklinu, jež přivodila smrt tisícům Indů. Odhadovaná škoda: okolo 30 miliard dolarů.[^juniper-what-has-nature]
@@ -67,7 +67,7 @@ Zaostřeno na Česko: ačkoli si čím dál víc lidí uvědomuje, že se s naš
 
 {% include figure.html
     name="lesy-kunstat.jpg"
-    alt="TODO: ALT text"
+    alt="Fotografie lesa po holosečném kácení"
     caption="Lesy po přemnožení kůrovce v okolí Kunštátu na Moravě, 2022."
     source-text="fotoarchiv autora"
 %}
