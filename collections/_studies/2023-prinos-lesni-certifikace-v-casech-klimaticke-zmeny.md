@@ -24,7 +24,7 @@ sponsor_link:     "https://www.ikea.com/cz/cs/"
 sponsor_disclaimer: |
   Odborný obsah zpracoval autorský tým, zadavatel pro tuto analýzu pouze stanovil klíčové otázky.
 perex: |
-  V této studii zkoumáme smysl lesních certifikací v časech klimatické změny a srovnáváme dvě nejvíce rozšířené certifikace: PEFC a FSC. Na více oblastech lesní péče ukazujeme, že certifikace FSC je pro Česko silnějším nástrojem k udržení zdravých lesů.
+  Velká část lesů v Česku není v dobré kondici a snad nejvíc je to vidět tam, kde převažují (nebo ještě před pár lety převažovaly) smrky. S ohledem na probíhající změny klimatu a dosud převažující způsob hospodaření v našich lesích se bude situace dále zhoršovat. V této studii se proto zaměřujeme na certifikační standardy spojené s lesy (především FSC) a klademe si otázku, zda má tento nástroj potenciál přinést významnější zlepšení.
 
 ---
 
