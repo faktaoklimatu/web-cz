@@ -65,23 +65,23 @@ Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz 
     source-url="https://faktaoklimatu.cz"
 %}
 
-Grafika ukazuje některé důležité principy v lesním hospodaření, které podporují zdraví a odolnost lesa – jeho schopnost přizpůsobovat se měnícím se podmínkám (například adaptovat se na růst průměrné roční teploty či změny v rozložení srážek v průběhu roku) a tedy jeho schopnost přežít. Zaměřuje se hlavně na **Česko**, kde **především potřebujeme změnit dosud převažující pěstební a těžební postupy**. Tedy například omezit holosečné kácení a odstraňování veškerých těžebních zbytků z lesa a ustoupit od "plantáží", na kterých se pěstuje pouze jeden typ dřeviny a všechny stromy jsou stejného stáří (všechny jsou vysazovány ve stejnou dobu). V Česku nepotřebujeme mít mnohem více lesů (a snažit se zalesňovat nelesní plochy, v tom ostatně narážíme i na územní limity), potřebujeme hlavně jiné lesy – rozmanitější druhově, věkově i prostorově. Zjednodušeně řečeno: **místo "lánu" smrků** (či jakýchkoli jiných dřevin vysazených bez ohledu na stanovištní podmínky jako monokultura) **potřebujeme mít spíše pestrou lesní mozaiku.** Nebo ještě jinak: spíše než změnu kvantity (sázíme nové a nové stromy) potřebujeme změnu kvality (postupnou, citlivou "přestavbu" stávajících lesů, v kontextu krajiny jako celku).  
+Grafika ukazuje některé důležité principy v lesním hospodaření, které podporují zdraví a odolnost lesa – jeho schopnost přizpůsobovat se měnícím se podmínkám (například adaptovat se na růst průměrné roční teploty či změny v rozložení srážek v průběhu roku) a tedy jeho schopnost přežít. Zaměřuje se hlavně na **Česko**, kde **především potřebujeme změnit dosud převažující pěstební a těžební postupy**. Tedy například omezit holosečné kácení a odstraňování veškerých těžebních zbytků z lesa a ustoupit od "plantáží", na kterých se pěstuje pouze jeden typ dřeviny a všechny stromy jsou stejného stáří (všechny jsou vysazovány ve stejnou dobu). V Česku nepotřebujeme mít mnohem více lesů (a snažit se zalesňovat nelesní plochy, v tom ostatně narážíme i na územní limity), potřebujeme hlavně jiné lesy – rozmanitější druhově, věkově i prostorově. Zjednodušeně řečeno: **místo "lánu" smrků** (či jakýchkoli jiných dřevin vysazených bez ohledu na stanovištní podmínky jako monokultura) **potřebujeme mít spíše pestrou lesní mozaiku.** Nebo ještě jinak: spíše než změnu kvantity (sázíme nové a nové stromy) potřebujeme změnu kvality (postupnou, citlivou "přestavbu" stávajících lesů, v kontextu krajiny jako celku).
 
 **Certifikační standard FSC se věnuje všem bodům** uvedeným v grafice a jasně specifikuje požadavky, které s nimi souvisejí. Výjimkou je regulace stavů zvěře, ta však vyžaduje legislativní změny a možnosti závazků vlastníka jsou v tomto ohledu spíše omezené. **Systém PEFC zůstává vágnější** – nespecifické jsou například mnohé požadavky na péči o půdu, odtokové poměry, ponechání mrtvého dřeva v lese, podporu biodiverzity, použití pesticidů, vápnění a hnojení a řada dalších. Často přitom jde o činnosti, jež hrají v dlouhodobé udržitelnosti lesního hospodaření důležitou roli.
 
-{% include expander-figure.html
-    name="rozdily-formulaci"
-    expanded=false
-    class="contrast-figure"
-    label="Příklady rozdílů ve formulacích opatření PEFC a FSC"
-    content='
+{% capture rozdily_formulaci %}
 Kromě rozdílů v délce či přesné kvantifikaci pravidel a výjimek (zde uvádíme jejich plné znění z obou standardů) stojí za povšimnutí například i rozdílné používání slovesných vazeb, které má velký vliv na vynutitelnost jednotlivých opatření: „se nepřipouští“, „nesmí“, „je povinen neprodleně“ (FSC) je jiné než „se zvážením“, „kde to podmínky dovolují“ (PEFC) apod.
 
 #### Ponechání mrtvého dřeva v lese
+
+{% include columns.html
+    column-class="col-12 col-md-6 my-4"
+    col1='
 **PEFC** (kritérium 4.3)
 
 Za účelem zachování a posílení populací organismů vázaných na stárnoucí a mrtvé dřevo ponechávat dle konkrétních podmínek část stromů přirozené druhové skladby v porostu na dožití a do samovolného rozpadu dřevní hmoty se zvážením dopadu na bezpečnost návštěvníků lesa. Opatření nutno aplikovat pouze v souladu s potřebami ochrany lesa zejména proti druhům hrozícím kalamitním přemnožením. Odběr těžebních zbytků omezit na lokality, kde to stanovištní podmínky dovolují.
-
+'
+    col2='
 **FSC** (kritéria 6.3.19–24; pojmy označené hvězdičkou jsou definovány v samostatné kapitole standardu)
 
 6.3.19 Vlastník* lesa do 500 ha ponechává zlomy, pahýly, vývraty, ležící kmeny, stromy s dutinami a vybrané vzrostlé stromy k dožití a zetlení v dospívajících a dospělých porostech*. Množství dřeva ponechaného tímto způsobem v budoucnu k zetlení je nejméně 5 stromů z dospívající a dospělé etáže na hektar v dílci.
@@ -95,12 +95,19 @@ Za účelem zachování a posílení populací organismů vázaných na stárnou
 6.3.23 Odvoz klestu a těžebních zbytků se připouští pouze na SLT uvedených v příloze H. Platnost smluv na odvoz klestu uzavřených před podpisem smlouvy o certifikaci s akreditovanou certifikační firmou není tímto ustanovením dotčena.
 
 6.3.24 Využití pařezů se nepřipouští.
+'
+%}
 
 #### Použití introdukovaných dřevin
+
+{% include columns.html
+    column-class="col-12 col-md-6 my-4"
+    col1='
 **PEFC** (kritérium 4.2)
 
 Introdukované druhy, provenience nebo variety jsou používány jako zdůvodněná alternativa upřednostňovaných původních druhů na základě místních zkušeností z jejich pěstování, odborného posouzení jejich dopadů na ekosystém, a na genetickou integritu domácích druhů a místních proveniencí, uvedeného v oblastních plánech rozvoje lesů včetně opatření k minimalizaci negativních vlivů na původní druhy dřevin.
-
+'
+   col2='
 **FSC** (kritéria 6.9.1–6.9.6)
 
 6.9.1 Výskyt introdukovaných* druhů rostlin i živočichů vlastník* kontroluje a monitoruje tak, aby předešel nepříznivým ekologickým dopadům.
@@ -113,7 +120,17 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 6.9.5 Lze tolerovat přirozenou obnovu introdukovaných* dřevin, pokud nepřesahuje 10% zastoupení v obnově. Posuzuje se za celý majetek a zároveň za dobu platnosti LHP.
 
-6.9.6 Vlastník* nesmí používat dřeviny, které se mohou v daném prostředí chovat invazivně.'
+6.9.6 Vlastník* nesmí používat dřeviny, které se mohou v daném prostředí chovat invazivně.
+' %}
+
+{% endcapture %}
+
+{% include expander-figure.html
+    name="rozdily-formulaci"
+    expanded=false
+    class="contrast-figure wide-figure-desktop"
+    label="Příklady rozdílů ve formulacích opatření PEFC a FSC"
+    content=rozdily_formulaci
 %}
 
 **Následující text přináší krátké shrnutí jednotlivých postupů a některé s nimi související požadavky FSC**. Více podrobností, stejně jako detailní srovnání certifikačních systémů PEFC a FSC, lze najít v odborné studii publikované v rámci Platformy pro krajinu.[^nasekrajina]
