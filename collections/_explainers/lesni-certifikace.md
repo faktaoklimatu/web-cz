@@ -138,7 +138,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 -   **Regulace vápnění a hnojení** – zákaz vápnění, výrazně omezeno hnojení (vlastník nesmí hnojit kvůli většímu výnosu)
 -   **Řízení odtokových poměrů** – vyžadováno zajištění podmínek pro návrat vodních toků k přírodní podobě a snižování nepříznivých efektů odvodňovacích staveb
 -   **Ochrana před invazními a nepůvodními druhy** – stanovena jasná pravidla pro použití introdukovaných dřevin a jejich maximální procentuální zastoupení v lese
--   **Prevence nelegální těžby** – _v ČR spíše okrajové téma, mezinárodní verze FSC se jím však zabývá, protože v řadě zemí světa představuje nelegální těžba problém_
+-   **Prevence nelegální těžby** – v ČR spíše okrajové téma, mezinárodní verze FSC se jím však zabývá, protože v řadě zemí světa představuje nelegální těžba problém
 
 ### Regulace stavů zvěře
 
@@ -147,7 +147,7 @@ Samostatným tématem, kterým bude nutné v Česku co nejdříve řešit, je po
 {% include figure.html
     name="pletivo.jpg"
     alt="Fotografie vytěženého dřeva s rolemi pletiva na stavbu oplocenek"
-    caption="Ochránit stromky před okusem zvěří není jednoduché ani levné. Příprava na zřízení lesních oplocenek po holosečném kácení poblíž PP Bohdalov-Hartinkov, 2023"
+    caption="Ochránit stromky před okusem zvěří není jednoduché ani levné. Příprava na zřízení lesních oplocenek po holosečném kácení poblíž přírodního parku Bohdalov-Hartinkov, 2023"
     source-text="fotoarchiv autora"
 %}
 
@@ -157,7 +157,7 @@ Příklady opatření uvedené v předchozí kapitole naznačují, že **komplex
 
 Některé otázky bude nicméně ještě třeba dále řešit. Například dodržování všech požadavků FSC vyžaduje vedení podrobné dokumentace a důsledkem je značná **administrativní náročnost**. To může být zátěží zejména pro menší vlastníky – a těch je v ČR hodně,[^mensi-vlatnici] především v krajích jako Vysočina, který v důsledku přemnožení kůrovce přišel o [velkou část](/infografiky/tezba-lesa-vyvoj) svých lesů. Je proto pozitivní, že současná verze standardu z roku 2013 částečně tento problém řeší pomocí rozdělení lesů na velké a malé (do 500 hektarů)[^male-lesy]: na malé lesy se některá pravidla nevztahují, což jejich vlastníkům část administrativní zátěže ubírá. Další zjednodušení pro menší vlastníky – včetně měst a obcí – představuje tzv. skupinová certifikace: na skupinu se pak pohlíží jako na jeden subjekt, což přináší i další výhody, například nižší náklady na certifikační audit.
 
-Dalším otázkou spojenou s certifikacemi je míra dodržování definovaných pravidel přímo v lese. Ani sebelepší standard nedává sám o sobě záruku, že bude skutečně aplikován a dodržován přesně tak, jak byl napsán. V tomto ohledu je **klíčová pravidelnost a nezávislost auditů** posuzujících splnění požadavků. S tím souvisí také nutnost jasně definovat pravidla pro auditorskou roli a rigorózní proces vyžadující odebrání či pozastavení certifikační značky v případě, že byly zjištěny závažné neshody a ve stanovené době nedošlo k jejich nápravě. Bez takovéto nezávislé kontroly ztrácí standard svou sílu.[^gp-destruction] Ani jinak přísná certifikace FSC jasná pravidla pro auditorskou roli zatím stanovena nemá a v ČR jsou dnes pouze dvě firmy, které tyto audity provádějí.[^certif-firmy]
+Další otázkou spojenou s certifikacemi je míra dodržování definovaných pravidel přímo v lese. Ani sebelepší standard nedává sám o sobě záruku, že bude skutečně aplikován a dodržován přesně tak, jak byl napsán. V tomto ohledu je **klíčová pravidelnost a nezávislost auditů** posuzujících splnění požadavků. S tím souvisí také nutnost jasně definovat pravidla pro auditorskou roli a rigorózní proces vyžadující odebrání či pozastavení certifikační značky v případě, že byly zjištěny závažné neshody a ve stanovené době nedošlo k jejich nápravě. Bez takovéto nezávislé kontroly ztrácí standard svou sílu.[^gp-destruction] Ani jinak přísná certifikace FSC jasná pravidla pro auditorskou roli zatím stanovena nemá a v ČR jsou dnes pouze dvě firmy, které tyto audity provádějí.[^certif-firmy]
 
 Aby mohly být certifikační standardy pro les skutečným přínosem, je proto nutné se kromě snahy co nejvíce zvýšit plochu certifikovaných lesů také **zaměřit na reálné dodržování pravidel v lesích, které už certifikované jsou**, a jednoznačně se distancovat od jakýchkoliv praktik, které vedou k porušování závazků. Dosavadní fokus na plochu ("chceme mít více certifikovaných lesů") je pochopitelný a v principu správný, ale skrývá v sobě také potenciální riziko kompromisů či nedostatečné kontroly plnění požadavků. Součástí standardu proto musí být mechanismy, které toto riziko efektivně minimalizují. Ani v případě FSC (verze 2013)[^verze-2023] tomu tak zatím není a standard zůstává někde napůl cesty: nedostatky sice dělí na velké a malé a konstatuje, že při velkém nedostatku nemůže být certifikát vydán (pokud se nedostatek objeví po vydání certifikátu, má být do 3 měsíců napraven, jinak je platnost certifikátu pozastavena), formulace v této části jsou však dost nekonkrétní: "trvá delší dobu", "je prostorově rozšířený" apod.
 
