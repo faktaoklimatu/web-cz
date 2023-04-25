@@ -137,8 +137,16 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Pěstební postupy
 
--   **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
--   **Různověkost porostů** – preference nepasečného, výběrného hospodaření, díky němuž se v lese vyskytují stromy různého stáří a obnova lesa probíhá kontinuálně
+<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+{% include figure.html name="postup-ruznovekost.svg" alt="TODO" no-lightbox=true %}
+
+**Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
+
+{% include figure.html name="postup-ruznovekost.svg" alt="TODO" no-lightbox=true %}
+
+**Různověkost porostů** – preference nepasečného, výběrného hospodaření, díky němuž se v lese vyskytují stromy různého stáří a obnova lesa probíhá kontinuálně
+</div>
+
 -   **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
 -   **Dostatek místa pro cílové dřeviny** – výrazné omezení plantáží a stanovení maximálního podílu vysoce intenzivních kultur na ploše majetku
 -   **Péče o půdu** – velký důraz na dlouhodobou sekvestraci uhlíku v lesní půdě (požadavek na druhovou a věkovou pestrost a vyšší podíl listnatých dřevin a také požadavek na zajištění podmínek pro přirozený pohyb vody); přísná regulace mechanické přípravy půdy

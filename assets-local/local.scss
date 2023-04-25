@@ -101,6 +101,10 @@ $c-callout-text: #373633;
 }
 
 @media (min-width: 768px) {
+    .lesni-certifikace-opatreni {
+        grid-template-columns: 120px 1fr;
+    }
+
     .callout-box {
         padding: 1.5rem 2rem;
     }
