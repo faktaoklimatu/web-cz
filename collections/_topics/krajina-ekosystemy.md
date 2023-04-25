@@ -84,7 +84,7 @@ subtopics:
   - hospodareni-lesy
   - 4-zemedelstvi-a-lesnictvi
   - 16-obnova-lesu-po-kurovci
-  - funkce-lesa
+  - hodnota-lesa
   - lesni-certifikace
   - lesy-cr-mapa
   - tezba-lesa-plocha
