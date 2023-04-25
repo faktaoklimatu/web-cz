@@ -12,7 +12,7 @@ subtopics:
 - id:          "vzdelavani"
   title:       "Vzdělávací a metodické materiály"
   lead: |
-    Níže naleznete materiály a publikace, které jsme vytvořili především (ale nejen) pro vyučující a studenty. Naši klíčovou publikaci představuje Atlas klimatické změny, který je základním průvodcem změnami v atmosféře a riziky oteplování. Dále zde naleznete i zahraniční materiály, které jsme přeložili a doplnili o český kontext.
+    Naši klíčovou vzdělávací publikaci představuje Atlas klimatické změny, který je základním průvodcem změnami v atmosféře a riziky oteplování. Dále v této sekci naleznete i zahraniční materiály, které jsme přeložili a doplnili o český kontext.
   content:
   - atlas
   - 2022-extremy-pocasi-a-klimaticka-zmena
