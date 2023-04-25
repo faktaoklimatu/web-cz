@@ -20,7 +20,7 @@ subtopics:
 - id:          "odborne-studie"
   title:       "Odborné studie"
   lead: |
-    Zpracováváme odborné studie, ve kterých využíváme vlastní analýzy a modelování. Pokud byste chtěli využít naši expertízu a nechat si námi nějakou studii nebo její část vypracovat, [ozvěte se nám](https://faktaoklimatu.cz/jak-pouzivat#kontakt).
+    Zpracováváme odborné studie, ve kterých využíváme vlastní analýzy a modelování. Pokud byste chtěli využít naši expertízu a nechat si námi nějakou studii nebo její část vypracovat, [ozvěte se nám](/o-nas#kontaktni-udaje).
   content:
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny
