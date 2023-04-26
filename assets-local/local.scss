@@ -86,12 +86,16 @@ $c-callout-text: #373633;
 
 .grid-figures {
     display: grid;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
     row-gap: 1rem;
 
     .longread-figure {
         margin: 0;
     }
+}
+
+.lesni-certifikace-opatreni {
+    grid-template-columns: 80px 1fr;
 }
 
 .certifikace-loga > a {
@@ -110,10 +114,12 @@ $c-callout-text: #373633;
     }
 
     .grid-figures {
+        column-gap: 1.5rem;
         p {
             align-self: center;
             margin-bottom: 0;
-        }    }
+        }
+    }
 
     .extremy-histogramy {
         grid-template-columns: 7fr 5fr;

@@ -148,7 +148,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 {% include figure.html name="postup-pripravne-dreviny.svg" alt="TODO" no-lightbox=true %}
  **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
- 
+
 {% include figure.html name="postup-dostatek-mista.svg" alt="TODO" no-lightbox=true %}
 **Dostatek místa pro cílové dřeviny** – výrazné omezení plantáží a stanovení maximálního podílu vysoce intenzivních kultur na ploše majetku
 
@@ -169,7 +169,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 {% include figure.html name="postup-puda.svg" alt="TODO" no-lightbox=true %}
 **Péče o půdu** – jasně stanovená pravidla těžby i s ohledem na stanoviště (zvyšuje rovněž ochranu půdy před erozí)
- 
+
 </div>
 
 ### Další faktory
@@ -182,12 +182,17 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Regulace stavů zvěře
 
-{% include lead-in-figure.html
+<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+
+{% include figure.html
     name="postup-regulace-zvere.svg"
     alt="Piktogram jelena"
+    no-lightbox=true
 %}
 
 Samostatným tématem, kterým bude nutné v Česku co nejdříve řešit, je potřeba **výrazně snížit stavy spárkaté zvěře** – do té míry, aby byla možná obnova lesa (velké množství vysazených stromků je dnes přemnoženou zvěří poškozeno).[^zprava-o-stavu-lesa] K odstranění tohoto problému však certifikace, které jsou ve své podstatě dobrovolným závazkem, přispět nemohou a **řešení vyžaduje aktivní přístup ze strany státu**.
+
+</div>
 
 {% include figure.html
     name="pletivo.jpg"
