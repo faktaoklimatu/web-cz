@@ -37,6 +37,7 @@ V Česku jsou dnes zastoupeny dva různě náročné certifikační systémy pro
     caption="_Programme for the Endorsement of Forest Certification_, certifikováno cca 60 % lesů v ČR (prakticky veškeré státní lesy)."
     source-text="PECF"
     source-url="https://pefc.org/"
+    no-lightbox=true
 %}
 </div>
 <div class="col-sm">
@@ -47,6 +48,7 @@ V Česku jsou dnes zastoupeny dva různě náročné certifikační systémy pro
     caption="_Forest Stewardship Council_, certifikováno cca 5 % lesů v ČR."
     source-text="FSC"
     source-url="https://fsc.org/"
+    no-lightbox=true
 %}
 </div>
 </div>
@@ -61,7 +63,7 @@ Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz 
 {% include figure.html
     name="postupy-wide-des.png"
     class="wide-figure-desktop"
-    alt="TODO: ALT text"
+    alt="Schéma principů v lesním hospodaření, které podporují zdraví a odolnost lesa"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -128,7 +130,6 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 {% include expander-figure.html
     name="rozdily-formulaci"
-    expanded=false
     class="contrast-figure wide-figure-desktop"
     label="Příklady rozdílů ve formulacích opatření PEFC a FSC"
     content=rozdily_formulaci
@@ -140,19 +141,19 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 <div class="grid-figures lesni-certifikace-opatreni" markdown="1">
 
-{% include figure.html name="postup-pestrost.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-pestrost.svg" alt="Piktogram druhové pestrosti dřevin" no-lightbox=true %}
 **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
 
-{% include figure.html name="postup-ruznovekost.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-ruznovekost.svg" alt="Piktogram různověkosti porostů" no-lightbox=true %}
 **Různověkost porostů** – preference nepasečného, výběrného hospodaření, díky němuž se v lese vyskytují stromy různého stáří a obnova lesa probíhá kontinuálně
 
-{% include figure.html name="postup-pripravne-dreviny.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-pripravne-dreviny.svg" alt="Piktogram využití přípravných dřevin" no-lightbox=true %}
  **Využití přípravných dřevin** – přesně definovaný podíl těchto dřevin (např. bříza, jeřáb, topol, javor, vrba) jak při obnově, tak i podíl cílový – tedy kolik jich v lese bude, až vyroste
 
-{% include figure.html name="postup-dostatek-mista.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-dostatek-mista.svg" alt="Piktogram dostatku místa pro cílové dřeviny" no-lightbox=true %}
 **Dostatek místa pro cílové dřeviny** – výrazné omezení plantáží a stanovení maximálního podílu vysoce intenzivních kultur na ploše majetku
 
-{% include figure.html name="postup-puda.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-puda.svg" alt="Piktogram péče o půdu" no-lightbox=true %}
 **Péče o půdu** – velký důraz na dlouhodobou sekvestraci uhlíku v lesní půdě (požadavek na druhovou a věkovou pestrost a vyšší podíl listnatých dřevin a také požadavek na zajištění podmínek pro přirozený pohyb vody); přísná regulace mechanické přípravy půdy
 
 </div>
@@ -161,13 +162,13 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 <div class="grid-figures lesni-certifikace-opatreni" markdown="1">
 
-{% include figure.html name="postup-citliva-tezba.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-citliva-tezba.svg" alt="Piktogram citlivé těžby" no-lightbox=true %}
 **Citlivá těžba místo holosečí** – upřednostňován nepasečný způsob, u holosečí jasně limitována velikost seče a podíl holosečí na celkové obnovované ploše
 
-{% include figure.html name="postup-mrtve-drevo.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-mrtve-drevo.svg" alt="Piktogram ponechání mrtvého dřeva v lese" no-lightbox=true %}
 **Ponechání mrtvého dřeva a části těžebních zbytků v lese** (důležité i pro [biodiverzitu](https://faktaoklimatu.cz/explainery/ubyvani-biodiverzity?q=biodi)) – vyloučeno využití pařezů a pálení klestu; definováno, kde je vyloučen sběr těžebních zbytků, pro ostatní typy lesa stanovena pravidla, jak s těžebními zbytky nakládat a kolik stromů na hektar je nutno v lese ponechat k zestárnutí a rozpadu
 
-{% include figure.html name="postup-puda.svg" alt="TODO" no-lightbox=true %}
+{% include figure.html name="postup-puda.svg" alt="Piktogram péče o půdu" no-lightbox=true %}
 **Péče o půdu** – jasně stanovená pravidla těžby i s ohledem na stanoviště (zvyšuje rovněž ochranu půdy před erozí)
 
 </div>
@@ -216,13 +217,12 @@ Níže uvádíme některá další kritéria, jež by měla certifikace splňova
 
 {% include figure.html
     name="srovnani-normal-des.png"
-    alt="TODO: ALT text"
+    alt="Tabulka srovnávající kritéria, která by měla certifikace splňovat"
 %}
 {% endcapture %}
 
 {% include expander-figure.html
     name="srovnani-pefc-fsc"
-    expanded=false
     class="contrast-figure"
     label="Příklady silných a slabých stránek standardů PEFC a FSC"
     content=tabulka-srovnani
