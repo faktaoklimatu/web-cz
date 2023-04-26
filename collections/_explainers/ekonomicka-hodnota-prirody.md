@@ -39,9 +39,6 @@ Třetím příkladem obrovské ztráty přírodního kapitálu jsou dopady spoje
 
 **Přírodní kapitál** tedy má i významnou ekonomickou hodnotu, a přestože může být někdy obtížné ji jednoduše vyčíslit penězi, v hospodářské prosperitě hraje tento kapitál jednoznačně klíčovou roli. Kromě zhoršení kvality života (a často obrovských dopadů na celý ekosystém) jsou **s jeho ztrátou spojena i vysoká finanční a investiční rizika**.
 
-
-{:.todo}
-
 {% include figure.html
     name="kapital-novy.png"
     alt="Schéma tří druhů kapitálu: lidského, vyrobeného a přírodního"
