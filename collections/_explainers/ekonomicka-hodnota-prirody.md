@@ -7,8 +7,8 @@ author:      "Jiří Lněnička, konzultace Vojtěch Kotecký, Tomáš Protivín
 weight:      79
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
-cover-source-author: "Siska Vrijburg"
-cover-source-url: "https://unsplash.com/photos/AjyF1e_AGmc"
+cover-source-author: "Matthew Smith"
+cover-source-url: "https://unsplash.com/photos/Rfflri94rs8"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
@@ -40,9 +40,10 @@ Třetím příkladem obrovské ztráty přírodního kapitálu jsou dopady spoje
 **Přírodní kapitál** tedy má i významnou ekonomickou hodnotu, a přestože může být někdy obtížné ji jednoduše vyčíslit penězi, v hospodářské prosperitě hraje tento kapitál jednoznačně klíčovou roli. Kromě zhoršení kvality života (a často obrovských dopadů na celý ekosystém) jsou **s jeho ztrátou spojena i vysoká finanční a investiční rizika**.
 
 {% include figure.html
-    name="kapital-novy.png"
+    name="prirodni-kapital-normal-des.png"
     alt="Schéma tří druhů kapitálu: lidského, vyrobeného a přírodního"
-    source-text="Fakta o klimatu"
+    source-text="The Economics of Biodiversity: The Dasgupta Review"
+    source-url="https://www.gov.uk/government/publications/final-report-the-economics-of-biodiversity-the-dasgupta-review"
 %}
 
 Přírodní kapitál je něčím, co využíváme, ale neprodukujeme. Část z něj je **obnovitelná** (např. populace ryb v mořích, jež se mohou při snížení intenzity rybolovu znovu rozrůst, nebo vykácené plochy lesa, které lze znovu osázet), část je **neobnovitelná** (např. rudné suroviny – těch je na planetě pouze omezené množství).
