@@ -71,7 +71,7 @@ Zaostřeno na Česko: ačkoli si čím dál víc lidí uvědomuje, že se s naš
 
 Ke zdravým a odolným lesům ovšem nedospějeme jednoduše tím, že na jedné straně tu budeme mít více chráněných území či národních parků než dosud a na straně druhé budeme pokračovat ve smrkových či jiných monokulturních plantážích, ze kterých vytěžíme maximum. Potřebujeme spíše skloubit podporu všech [funkcí lesa](/infografiky/hodnota-lesa), produkčních i neprodukčních – **hospodařit tak, aby v lese vůbec nějaké dřevo vyrostlo (a tedy se i později dalo těžit a následně dále zpracovávat)**. Tento cíl není nedosažitelný a i v Česku už máme dlouhou řadu příkladů, kde to v praxi funguje, někde dokonce už mnoho let.[^dobre-priklady] I v dalších lesích u nás bude ovšem nutné začít hospodařit jinak – **podporovat v lese druhovou, věkovou i prostorovou pestrost a využívat co nejšetrnější pěstební i těžební postupy**. Tedy: hospodařit takzvaně [přírodě blízkým způsobem](/explainery/hospodareni-lesy).
 
-Toto přírodě blízké hospodaření v lese **mohou významně podpořit oba výše uvedené nástroje**: legislativa, konkrétně zákon o lesích (revidovat jej tak, aby stál na dlouhodobé strategii a zohledňoval klima, úbytek biodiverzity a další probíhající změny) a dobře nastavené certifikační či jiné tržní mechanismy – udržitelnější hospodaření v lesích totiž mohou vyžadovat například i firmy, odběratelé a spotřebitelé. A pochopitelně o něj mohou stát také samotní vlastníci, a to nejen jednotlivci, ale i města a obce, které nějaké lesy vlastní a pečují o ně (jednou z možností pro ně může být třeba rozhodnutí certifikovat les podle [standardu FSC](https://cz-fakta-o-klimatu--preview-explainer-hodnota-prirody-viyt9tz7.web.app/explainery/lesni-certifikace)).
+Toto přírodě blízké hospodaření v lese **mohou významně podpořit oba výše uvedené nástroje**: legislativa, konkrétně zákon o lesích (revidovat jej tak, aby stál na dlouhodobé strategii a zohledňoval klima, úbytek biodiverzity a další probíhající změny) a dobře nastavené certifikační či jiné tržní mechanismy – udržitelnější hospodaření v lesích totiž mohou vyžadovat například i firmy, odběratelé a spotřebitelé. A pochopitelně o něj mohou stát také samotní vlastníci, a to nejen jednotlivci, ale i města a obce, které nějaké lesy vlastní a pečují o ně (jednou z možností pro ně může být třeba rozhodnutí certifikovat les podle [standardu FSC](/explainery/lesni-certifikace)).
 
 Co se týče legislativy, **v Česku je dnes důkladná novelizace zákonů spojených s lesy** (včetně navazujících předpisů), které budou klást vyšší nároky na přírodě blízké hospodaření a flexibilní přístup a které budou brát v úvahu změny klimatických podmínek a předpokládaný vývoj v dalších dekádách, **velice potřebná**. Týká se to například už zmíněného lesního zákona, ale i zákona o myslivosti či vytvoření legislativy, která vymezí pravidla a způsob kontroly státního hospodaření a stanoví jeho cíl a priority – téměř polovinu lesů u nás spravuje státní podnik Lesy České republiky a na jeho práci je třeba dohlížet, s důrazem na veřejné služby.
 
@@ -81,7 +81,7 @@ Revize zákonů a vyhlášek jsou zároveň důležité i v tom, že je **lze do
 
 {% include figure.html
     name="houby.jpg"
-    alt="TODO: ALT text"
+    alt="Fotografie hub rostoucích na mrtvém dřevě"
     caption="Mrtvé dřevo a jeho nezastupitelná role pro pokračování pestrého lesního života."
     source-text="adege, Pixabay"
     source-url="https://pixabay.com/photos/mushrooms-moss-wild-mushrooms-2798150/"
@@ -89,7 +89,6 @@ Revize zákonů a vyhlášek jsou zároveň důležité i v tom, že je **lze do
 
 {% include expander-figure.html
     name="program-metso"
-    expanded=false
     class="contrast-figure "
     label="Příklad dobré praxe: finský program METSO"
     content="[METSO](https://metsonpolku.fi/en/metso-programme) je program na podporu lesní biodiverzity využívaný ve Finsku – lesy v majetku vlastníka jsou buď ponechány přírodě trvale (lze je i výhodně odprodat státu), nebo na dobu 10 či 20 let, kdy jsou vlastníkům vypláceny ekosystémové kompenzace (v roce 2021 byla průměrná kompenzace za hektar lesa pod trvalou ochranou cca 7 tisíc eur). Cílem do roku 2025 je mít pod trvalou ochranou asi 100 000 ha finských lesů a pod dočasnou dalších 80 000 ha. O program je mezi vlastníky zájem, velká část uvedeného cíle již byla splněna a uvažuje se o rozšíření. Program společně koordinuje finské ministerstvo zemědělství a ministerstvo životního prostředí.
