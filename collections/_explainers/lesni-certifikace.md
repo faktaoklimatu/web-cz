@@ -60,7 +60,7 @@ Společným jmenovatelem obou certifikačních systémů je deklarovaný důraz 
 
 {% include figure.html
     name="postupy-wide-des.png"
-    class="contrast-figure wide-figure-desktop"
+    class="wide-figure-desktop"
     alt="TODO: ALT text"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -215,7 +215,7 @@ Aby mohly být certifikační standardy pro les skutečným přínosem, je proto
 Níže uvádíme některá další kritéria, jež by měla certifikace splňovat, má-li být opravdu efektivní a pro les prospěšná. Týkají se nejen lesního hospodaření, ale také například otázek spojených s transparentností či aplikací standardu v praxi.
 
 {% include figure.html
-    name="silne-slabe-stranky-normal-des.png"
+    name="srovnani-normal-des.png"
     alt="TODO: ALT text"
 %}
 {% endcapture %}
