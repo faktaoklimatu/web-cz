@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Co navrhuje plán REPowerEU a jak se dotýká Česka"
 slug:        "repowereu"
 published:   2023-04-23
-author:      "Kateřina Kolouchová"
+authors:
+  - id: "katerina-kolouchova"
+  - name: "Marcel Otruba"
+    minor-role: "vizualizace"
 weight:      100
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
