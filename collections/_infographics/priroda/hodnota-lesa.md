@@ -12,6 +12,12 @@ caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho maj
 
 ## Co vidíme v grafice?
 
+{% include preview-box.html
+    class="smaller-preview-box"
+    title="Další souvislostí v delším textu:"
+    slug="ekonomicka-hodnota-prirody"
+%}
+
 - Z grafiky je na první pohled zřejmé, že potenciál [přírodního kapitálu](/explainery/ekonomicka-hodnota-prirody) lesů dnes využíváme jen velmi omezeně: z **deseti hlavních funkcí lesa přinese jeho vlastníkovi nějaké finance pouze produkce dřeva**. Logicky pak v takovém lese najdeme především dřeviny, které rostou rychle a jejichž dřevo se dobře prodává – například smrk. Přitom všechny zbývající funkce lesa uvedené v grafice jsou neméně klíčové jak pro přírodu, tak pro člověka a zásadním způsobem přispívají ke kvalitě a rozmanitosti života na naší planetě.
 - Hned několik z nich bezprostředně souvisí s klimatem. Díky své sekvestrační funkci les **pomáhá s <glossary id="mitigace">mitigací</glossary> klimatické změny** – stromy i lesní půda zadržují velké množství uhlíku, který by se jinak formou skleníkových plynů uvolnil do atmosféry. Zároveň les **pomáhá i s <glossary id="adaptace">adaptací</glossary> na klimatickou změnu** – zmírňuje například letní vedra díky svému mikroklimatu a zvlhčuje vzduch, lesy mohou fungovat i jako částečná ochrana během povodní (v důsledku změny klimatu roste častost a intenzita [extrémních srážek](/explainery/vliv-klimatu-na-extremy-prirucka#povodn%C4%9B)). Významná je rovněž funkce **ochrany půdy před erozí a degradací**.
 
