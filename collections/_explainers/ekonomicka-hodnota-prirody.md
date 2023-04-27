@@ -7,8 +7,8 @@ author:      "Jiří Lněnička, konzultace Vojtěch Kotecký, Tomáš Protivín
 weight:      79
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
-cover-source-author: "Matthew Smith"
-cover-source-url: "https://unsplash.com/photos/Rfflri94rs8"
+cover-source-author: "Zdeněk Macháček"
+cover-source-url: "https://unsplash.com/photos/lTebCR71_7A"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
