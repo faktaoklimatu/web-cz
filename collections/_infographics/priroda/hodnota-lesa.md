@@ -27,9 +27,9 @@ caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho maj
 
 ## Zdroje a poznámky
 
-[^uhrn-srazek-cr]: [Průměrný roční úhrn srážek 1961–2022, Česká republika](https://www.infoviz.cz/graphic.php?ID=231). Infoviz.cz.
+[^uhrn-srazek-cr]: Infoviz.cz. [Průměrný roční úhrn srážek 1961–2022, Česká republika](https://www.infoviz.cz/graphic.php?ID=231).
 [^fao-worlds-forests]: FAO, 2022. [The State of the World’s Forests 2022. Forest pathways for green recovery and building inclusive, resilient and sustainable economies](https://www.fao.org/documents/card/en/c/cb9360en). 166 stran. ISBN 978-92-5-135984-6.
 [^economist-amazon]: The Economist, 2022. [The Brazilian Amazon has been a net carbon emitter since 2016](https://www.economist.com/interactive/graphic-detail/2022/05/21/the-brazilian-amazon-has-been-a-net-carbon-emitter-since-2016).
-[^jrc-forest-fires]: San-Miguel-Ayanz, J., _et al._, 2021. [_Forest Fires in Europe, Middle East and North Africa_](https://effis-gwis-cms.s3.eu-west-1.amazonaws.com/effis/reports-and-publications/annual-fire-reports/Annual_Report_2021_final_topdf1.pdf), Publications Office of the European Union, Luxembourg, 2022, doi:10.2760/34094, JRC130846.
+[^jrc-forest-fires]: San-Miguel-Ayanz, J., _et al._, 2021. [Forest Fires in Europe, Middle East and North Africa](https://effis-gwis-cms.s3.eu-west-1.amazonaws.com/effis/reports-and-publications/annual-fire-reports/Annual_Report_2021_final_topdf1.pdf), Publications Office of the European Union, Luxembourg, 2022, [doi:10.2760/34094](https://publications.jrc.ec.europa.eu/repository/handle/JRC130846).
 [^euronews-forest-fires]: Euronews, 2022. [Forest fires have burned a record 700,000 hectares in the EU this year](https://www.euronews.com/my-europe/2022/08/18/forest-fires-have-burned-a-record-700000-hectares-in-the-eu-this-year).
 [^vulhm-dusledky]: Výzkumný ústav lesního hospodářství a myslivosti, v. v. i., 2021. [Důsledky kůrovcové kalamity na budoucnost lesnictví ve střední Evropě](https://www.vulhm.cz/dusledky-kurovcove-kalamity-na-budoucnost-lesnictvi-ve-stredni-evrope/).
