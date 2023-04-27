@@ -17,8 +17,14 @@ caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho maj
 
 ## Čím jsou lesy ohroženy v ČR?
 
+{% include preview-box.html
+    class="smaller-preview-box"
+    title="Podrobněji o ohrožení českých lesů a o dopadech na jejich vlastníky"
+    slug="umirani-ceskych-lesu,16-obnova-lesu-po-kurovci"
+%}
+
 - [V ČR stoupla za posledních 60 let průměrná teplota o 2 °C](/infografiky/teplota-cr), což odpovídá přibližně 300 m nadmořské výšky – pro smrky ve středních polohách byla tato změna příliš náhlá a výsledky dnes můžeme snadno pozorovat například [na Vysočině](/infografiky/tezba-lesa-vyvoj). Oteplování přitom bude ještě minimálně několik dekád [pokračovat](/infografiky/koncept-uhlikovy-rozpocet), a protože ČR se vzhledem ke své vnitrozemské poloze otepluje přibližně [dvakrát rychleji](/infografiky/teplota-cr) než světový průměr, lze **v Česku očekávat oteplení nejméně o čtyři stupně oproti předindustriálnímu období**. Tedy za předpokladu, že se lidstvu podaří udržet celosvětový nárůst teploty okolo hranice 2 °C ([a neoteplí se více](/infografiky/emisni-scenare-pariz)). To mimo jiné znamená, že smrkům se u nás bude v druhé polovině století dařit už jen v horských polohách, kde pro ně bude stále ještě dost chladno a vlhko. Kvůli častějším a intenzivnějším suchům ale budou postupně víc a víc strádat i jiné druhy dřevin – s výjimkou těch, jež jsou na teplé a suché klima dobře uzpůsobeny, jako třeba dub. (Roční úhrn srážek na našem území sice zůstává dlouhodobě víceméně stejný,[^uhrn-srazek-cr] mění se však jejich rozložení v průběhu roku, například prší intenzivněji, ale méně často, což lépe zvládají právě suchomilnější dřeviny.)
-- Kromě změny klimatu má na kondici lesů v Česku významný dopad také **vyčerpaná a překyselená půda** v řadě oblastí **a důsledky pěstebních postupů používaných v minulosti** (velké plochy jednodruhových lesů se stejně starými stromy, navíc rostoucími příliš blízko u sebe). Podrobnější informace o všech těchto faktorech lze najít v textu [_Proč umírají české jehličnaté lesy?_](/explainery/umirani-ceskych-lesu). Dalším souvislostem a dopadům na vlastníky lesů se věnuje [tato epizoda podcastu 2050](https://2050podcast.cz/epizody/16-obnova-lesu-po-kurovci).
+- Kromě změny klimatu má na kondici lesů v Česku významný dopad také **vyčerpaná a překyselená půda** v řadě oblastí **a důsledky pěstebních postupů používaných v minulosti** (velké plochy jednodruhových lesů se stejně starými stromy, navíc rostoucími příliš blízko u sebe).
 
 ## Čím jsou lesy ohroženy jinde ve světě?
 
