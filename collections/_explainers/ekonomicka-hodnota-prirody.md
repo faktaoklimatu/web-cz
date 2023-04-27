@@ -55,10 +55,17 @@ Přírodní kapitál je něčím, co využíváme, ale neprodukujeme. Část z n
 Nejdůležitější změnou, kterou dnes nutně potřebujeme, je **změnit způsob, jak o přírodě přemýšlíme**. Do jaké míry jsme schopni dohlédnout její provázanost s ekonomickým růstem a kvalitou našeho života? Umíme rozlišovat mezi hodnotou a cenou? Jsme si vědomi, jaká rizika jsou s ohrožením přírodního kapitálu spojena, a víme, jak jim předcházet? Jak moc dokážeme vnímat, že tento kapitál je tím větší (bohatší), čím je pestřejší, a že míra pestrosti je zároveň určující pro to, zda bude příroda schopna se přizpůsobit nejrůznějším změnám (nejen těm klimatickým) – a tedy dokáže přežít?[^pestrost-kurovec]
 
 Samotná změna myšlení ale pochopitelně nestačí – potřebujeme také najít způsoby, jak ji postupně převést do praxe. K dispozici jsou hlavně tyto **dva typy nástrojů**:
+
+{% include preview-box.html
+    class="smaller-preview-box"
+    title="Hodnota lesa ≠ cena dříví"
+    slug="hodnota-lesa"
+%}
+
 - **regulační** (zákony, vyhlášky apod.) – vymezující, co se smí a co ne
 - **tržní** (např. daňové nebo certifikační systémy) – finančně či jinak motivující různé subjekty k tomu brát na přírodu větší ohled
 
-Konkrétně se to dá ukázat třeba na **příkladu lesů**, jež tvoří významnou část přírodního kapitálu na naší planetě (a současně, jak už bylo zmíněno v předchozí kapitole, je to příklad velmi relevantní i pro Českou republiku). Lesy jsou dnes ve světě s osmi miliardami lidí, rychle mizející biodiverzitou a pokračující klimatickou změnou pod značným tlakem a **nemají dostatek času se na tyto rychlé změny podmínek adaptovat**. Přitom jsou pro člověka i přírodu důležité z mnoha důvodů a jejich hodnota se ani zdaleka nerovná tržní ceně dříví – jak ukazuje například tato [infografika](/infografiky/hodnota-lesa).
+Konkrétně se to dá ukázat třeba na **příkladu lesů**, jež tvoří významnou část přírodního kapitálu na naší planetě (a současně, jak už bylo zmíněno v předchozí kapitole, je to příklad velmi relevantní i pro Českou republiku). Lesy jsou dnes ve světě s osmi miliardami lidí, rychle mizející biodiverzitou a pokračující klimatickou změnou pod značným tlakem a **nemají dostatek času se na tyto rychlé změny podmínek adaptovat**. Přitom jsou pro člověka i přírodu důležité z mnoha důvodů a jejich [hodnota](/infografiky/hodnota-lesa) se ani zdaleka nerovná tržní ceně dříví.
 
 Zaostřeno na Česko: ačkoli si čím dál víc lidí uvědomuje, že se s našimi lesy něco děje (ostatně jde o patrně nejviditelnější projev klimatické změny v našem regionu), k velké proměně přístupu k lesnímu hospodaření u nás zatím nedošlo. **Lesy v Česku nejsou významné společenské ani politické téma a mají málo pozornosti médií. Je klíčové, aby se to brzy změnilo a abychom** kromě obecných úvah (či nářků) **hlavně začali řešit praktické kroky, které stav našich lesů zlepší**. To se ovšem zdaleka netýká pouze lesních hospodářů a vlastníků – důležitost tohoto tématu můžeme každý podtrhnout už svým rozhodováním: jako občané, zákazníci nebo jako voliči. Nejspíš budeme dál chtít kupovat dřevo a výrobky z něj, nadále budeme chtít lesy využívat k rekreaci, po politicích ve své obci či regionu můžeme žádat, aby péči o lesy zařadili mezi své priority, na celostátní úrovni se dá apelovat například na reformu lesního zákona. Významně mohou tématu pomoci také novináři – je třeba o něm mnohem víc mluvit a psát. A dělat to dlouhodobě: ne až ve chvíli, kdy hoří les v národním parku. Vícegenerační projekty celospolečenského významu (a jedním z nich lesy rozhodně jsou) vyžadují dlouhodobou celospolečenskou pozornost. Nestačí pouze vysadit stromy v rámci nějaké akce či iniciativy (která navíc mnohdy cílí primárně na dobrý pocit pro účastníky) – **les, a v širším smyslu krajina jako celek, potřebuje spíše citlivou, zato však kontinuální, každodenní péči**.
 
@@ -99,7 +106,12 @@ Určitou slabinou podobně koncipovaných programů je omezenost prostředků, k
 
 Jiným možným nástrojem, s nímž se do budoucna počítá a který propojuje regulace a trh, jsou tzv. **uhlíkové certifikáty**. S těmi budou vlastníci lesů (ale například i zemědělci) moci obchodovat, v principu podobně jako se dnes obchoduje na trzích s [emisními povolenkami](/explainery/emisni-povolenky-ets) – rozdíl je v tom, že v případě uhlíkových certifikátů nepůjde o princip "znečišťovatel platí", ale o **zvýhodňování šetrného hospodaření**. Ve zdravé, kvalitní půdě na poli či v lese je totiž uloženo více uhlíku než v půdě degradované, a citlivé nakládání s půdou tak kromě jiného přispívá i ke zmírňování klimatické změny. Dobrému hospodáři, který bude splňovat podmínky pro získání uhlíkového certifikátu, může tento nástroj přinést další potřebné finanční prostředky. Regulační rámec pro uhlíkové certifikáty je nicméně teprve ve fázi přípravy a jeho nastavení nebude snadné – podobně jako u jiných typů [karbonových offsetů](https://cs.wikipedia.org/wiki/Uhl%C3%ADkov%C3%A1_kompenzace) bude nutné řešit řadu otázek jako značnou nejistotu výsledků (jsou skutečně kompenzovány nějaké emise?), dvojí započítávání[^dvoji-zapocitavani] a další.
 
-Dalším významným nástrojem na podporu přírodě blízkého hospodaření mohou být **mezinárodní certifikační systémy** jako FSC a další, které definují, co všechno musí být splněno, aby mohl vlastník své dřevo označit certifikačním logem jako důkaz kvality a šetrného přístupu k přírodě. Těmto certifikacím a jejich hlavním přínosům se podrobněji věnujeme v [samostatném explaineru](/explainery/lesni-certifikace).
+{% include preview-box.html
+    class="smaller-preview-box"
+    slug="lesni-certifikace"
+%}
+
+Dalším významným nástrojem na podporu přírodě blízkého hospodaření mohou být **mezinárodní certifikační systémy** jako FSC a další, které definují, co všechno musí být splněno, aby mohl vlastník své dřevo označit certifikačním logem jako důkaz kvality a šetrného přístupu k přírodě.
 
 ## Zdroje a poznámky
 
