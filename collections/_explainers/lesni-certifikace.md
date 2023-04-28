@@ -17,6 +17,14 @@ perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodn
 
 ## Co je certifikace a k čemu slouží?
 
+{% include preview-box.html
+    class="smaller-preview-box"
+    title="Více o hodnotě lesa a přírodním kapitálu"
+    text="Dobře spravovaný les (např. i díky nárokům lesní certifikace) poskytuje širokou škálu hodnotných funkcích, nejen produkci dřeva. Podobně to platí i pro další typy krajiny."
+    slug="hodnota-lesa,ekonomicka-hodnota-prirody"
+%}
+
+
 Certifikační systémy fungují v mnoha oblastech hospodářství. Dávají záruku, že **konkrétní výrobek (či služba) splňuje určitý standard**, a často také definují pravidla pro životní cyklus tohoto produktu – od jeho výroby přes distribuci a prodej až po recyklaci.
 
 Pokud je například určitý produkt (řekněme polička na stěnu nebo toaletní papír) vyroben ze dřeva, které splňuje podmínky jednoho ze systémů certifikace lesů, je označen příslušným logem. Zákazník se pak prostřednictvím tohoto loga dozvídá, jak a z čeho byl produkt vyroben – třeba, že dřevo nepochází z chráněného pralesa, že s ním není spojena žádná dětská práce či drancování krajiny – a může mu na základě této informace dát přednost před jiným, protože danou věc považuje za udržitelnější, je více v souladu s jeho životními hodnotami a podobně. Na výrobce či prodejce tak **certifikační značka na jedné straně často klade vyšší nároky, zároveň však** pro něj **může znamenat i zákaznickou preferenci a konkurenční výhodu na trhu.** Nutným předpokladem ovšem je, že se zákazníci ve zkratkách a symbolech alespoň trochu orientují a dokáží rozlišit, které logo je skutečně puncem kvality či podporuje udržitelnost a které slouží spíše marketingovým účelům, případně jde přímo o <glossary id="greenwashing">greenwashing</glossary>.
