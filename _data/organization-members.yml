@@ -69,10 +69,11 @@
 
   - name: "Marcel Otruba"
     position: "Designer"
-    summary: "TODO"
+    summary: "Stojí za vizuálními výstupy Fakt o klimatu – od designového přemýšlení přes vizualizace dat až po doprovodné ilustrace. Vystudoval informatiku a grafický design."
     img: "marcel-otruba.jpg"
     email: "marcel.otruba@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
+    www: "https://otruba.sk/"
 
   - name: "Martin Ukrop"
     position: "Administrátor a programátor"
