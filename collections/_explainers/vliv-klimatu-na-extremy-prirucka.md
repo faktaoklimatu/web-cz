@@ -3,7 +3,15 @@ layout:      explainer
 title:       "Extrémy počasí a klimatická změna. Jak o nich mluvit a psát"
 slug:        "vliv-klimatu-na-extremy-prirucka"
 published:   2022-06-23
-author:      "Ben Clarke, Friederike Otto"
+authors:
+  - name: "Ben Clarke"
+    affiliation: "University of Oxford"
+    link: "https://twitter.com/BennethClarke"
+  - name: "Friederike Otto"
+    affiliation: "Imperial College London"
+    link: "https://twitter.com/FrediOtto"
+  - id: "jirka-lnenicka"
+    minor-role: "překlad"
 weight:      80
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
