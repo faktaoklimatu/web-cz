@@ -17,8 +17,10 @@ organizations:
 authors:
   - name: "Ben Clarke"
     affiliation: "University of Oxford"
+    link: "https://twitter.com/BennethClarke"
   - name: "Friederike Otto"
     affiliation: "Imperial College London"
+    link: "https://twitter.com/FrediOtto"
   - id: "jirka-lnenicka"
     show_internal_affiliation: True
     minor-role: "překlad"
