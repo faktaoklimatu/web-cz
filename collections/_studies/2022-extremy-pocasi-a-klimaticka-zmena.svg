@@ -1,4 +1,523 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="210mm" height="119.25mm" viewBox="0 0 595.28 338.03">
-  <rect xmlns="http://www.w3.org/2000/svg" class="st0" width="595.3" height="338" fill="#da2f6f"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.28 420.94">
+    <style>
+
+      #sunrays, #sunrays-2, #sunrays-3{
+        animation: sunrays infinite 4s;
+        stroke-dasharray: 40 20;
+      }
+
+      #sunrays{
+        animation-delay: 1s;
+      }
+      #sunrays-2{
+        animation-delay: 1.5s;
+      }
+      #sunrays-3{
+        animation-delay: -1s;
+      }
+
+      @keyframes sunrays {
+        0%{
+          stroke-dashoffset:0;
+        }
+        100% {
+          stroke-dashoffset: 60;
+        }
+
+      }
+
+      #rain, #rain-2{
+        animation: rain infinite 4s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes rain {
+        0%{
+          stroke-dashoffset:0;
+        }
+        100% {
+          stroke-dashoffset: -50;
+        }
+
+      }
+
+      #flash{
+        animation: flash infinite 6s;
+      }
+
+      @keyframes flash {
+        0%, 50%, 60%, 70%, 100%{
+          opacity: 0;
+        }
+        55%, 65%{
+          opacity: 100;
+        }
+      }
+
+      #mercury, #mercury-2{
+        animation: mercury-rise infinite 6s
+      }
+
+      #mercury-2{
+        transform-origin: 78px 88px;
+        animation-delay: -2s
+      }
+
+      #mercury{
+        transform-origin: 518px 370px
+      }
+
+      @keyframes mercury-rise {
+        0%, 100%{
+          transform: scaleY(1);
+        }
+        30%{
+          transform: scaleY(1.3);
+        }
+      }
+
+      #flood-top{
+        animation: flood-top infinite 20s;
+      }
+
+      @keyframes flood-top {
+        0%, 20%, 100%{
+          transform: translateY(0);
+        }
+        40%{
+          transform: translateY(-45px);
+        }
+      }
+
+      #flood-fill{
+        animation: flood-fill infinite 20s;
+        transform-origin: 10px 400px;
+      }
+
+      @keyframes flood-fill {
+        0%, 20%, 100%{
+          transform: scaleY(1);
+        }
+        40%{
+          transform: scaleY(2.2);
+        }
+      }
+
+      #cracks {
+        animation: cracks infinite 20s;
+        stroke-dasharray: 100;
+
+      }
+
+      @keyframes cracks {
+        0%{
+          stroke-dashoffset: 100;
+        }
+        100%{
+          stroke-dashoffset: 0;
+        }
+      }
+
+      #flame{
+        animation: flame infinite 2s;
+        transform-origin: 391px 145px;
+
+      }
+
+      @keyframes flame {
+        0%, 100%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(1.05);
+        }
+      }
+
+      #smoke{
+        animation: smoke infinite 5s;
+        stroke-dasharray: 50;
+        animation-delay: -5s;
+      }
+
+      @keyframes smoke {
+        0%{
+          stroke-dashoffset: 100;
+        }
+        100%{
+          stroke-dashoffset: 0;
+        }
+      }
+
+      #tornado{
+        animation: tornado infinite 4s;
+
+      }
+
+      @keyframes tornado {
+        0%, 100%{
+          transform: translateX(-5px);
+        }
+        50%{
+          transform: translateX(10px);
+        }
+      }
+
+      #wind{
+        animation: wind infinite 2s;
+        stroke-dasharray: 50;
+        animation-delay: -5s;
+      }
+
+      @keyframes wind {
+        0%{
+          stroke-dashoffset: 100;
+        }
+        100%{
+          stroke-dashoffset: 0;
+        }
+      }
+
+
+  </style>
+  <g id="bg">
+    <rect width="595.28" height="420.94" fill="#db2f70"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="drought">
+      <rect x="466.13" y="144.57" width="122.24" height="120.09" transform="translate(1054.49 409.23) rotate(180)" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="588.37" y1="216.79" x2="466.13" y2="216.79" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <polyline points="507.93 216.79 531.22 238.74 552.73 241.98 550.66 251.44 575.18 264.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <polyline points="526.68 234.74 509.47 236.66 514.33 247.07 501.95 254.82" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle cx="562.36" cy="170.61" r="16" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="cracks">
+        <line pathLength="100" x1="550.66" y1="251.44" x2="543.73" y2="264.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <polyline pathLength="100" points="545.56 239.74 549.8 231.88 575.18 230.74" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <polyline pathLength="100" points="466.13 237.16 480.35 234.74 496.47 246.54" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <line x1="535.83" y1="226.26" x2="541.25" y2="216.58" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <polyline points="498.11 217.21 494.8 190.14 502.04 170.31" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <polyline points="496.46 198.93 506.89 190.66 519.19 196.65" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <polyline points="494.8 190.14 487.36 180.12 476.95 180.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="494.8" y1="198.18" x2="484.24" y2="196.86" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="477.99" y1="215.14" x2="480.16" y2="201.91" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="sunrays">
+        <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="562.36" y1="210.08" x2="562.36" y2="186.95" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="578.42" y1="206.67" x2="569.01" y2="185.53" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="588.37" y1="194.02" x2="574.5" y2="181.54" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="588.6" y1="179.14" x2="577.9" y2="175.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="588.37" y1="167.69" x2="578.61" y2="168.9" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="588.6" y1="155.46" x2="576.51" y2="162.44" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="582.56" y1="144.1" x2="571.96" y2="157.39" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-8" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="568" y1="144.1" x2="565.76" y2="154.63" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-9" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="556.56" y1="144.1" x2="558.97" y2="154.63" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-10" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="542.57" y1="144.1" x2="552.76" y2="157.39" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-11" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="528.18" y1="150.87" x2="548.21" y2="162.44" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-12" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="523.11" y1="166.48" x2="546.11" y2="168.9" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-13" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="524.83" y1="182.81" x2="546.83" y2="175.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-14" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="533.03" y1="197.02" x2="550.22" y2="181.54" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-15" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="546.31" y1="206.67" x2="555.72" y2="185.53" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+    <g id="flood">
+      <rect x="33.02" y="252.62" width="140.78" height="140.78" fill="#fbdbe9"/>
+      <polygon points="81.05 353.21 109.2 353.21 109.2 332.8 95.13 315.67 81.05 332.8 81.05 353.21" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <rect x="42.43" y="296.31" width="25.57" height="57.25" transform="translate(110.44 649.87) rotate(-180)" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="m173.79,381.82c-28.68,0-33.76-28.19-61.74-28.19H33.45" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="rain">
+        <line x1="42.43" y1="254.83" x2="42.43" y2="289.07" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="51.14" y1="254.83" x2="51.14" y2="289.07" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="59.85" y1="254.83" x2="59.85" y2="289.07" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="68.56" y1="254.83" x2="68.56" y2="289.07" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="77.27" y1="254.83" x2="77.27" y2="323.01" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="85.98" y1="254.83" x2="85.98" y2="314.49" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="94.69" y1="254.83" x2="94.69" y2="301.91" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="103.4" y1="254.83" x2="103.4" y2="307.8" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="112.12" y1="254.83" x2="112.12" y2="317.65" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="120.83" y1="254.83" x2="120.83" y2="331.03" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="129.54" y1="254.83" x2="129.54" y2="338.42" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="138.25" y1="254.83" x2="138.25" y2="344.93" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="146.96" y1="254.83" x2="146.96" y2="353.63" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="155.67" y1="254.83" x2="155.67" y2="362.35" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="164.38" y1="254.83" x2="164.38" y2="362.35" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 3 2" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <rect id="flood-fill" x="33.02" y="375.43" width="140.78" height="17.97" fill="#fbdbe9"/>
+      <path id="flood-top" d="m173.79,393.4v-20.73c-1.78.95-3.81,1.49-5.97,1.49-3.06,0-5.87-1.08-8.06-2.88-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88s-5.87-1.08-8.06-2.88c-2.2,1.8-5,2.88-8.06,2.88-2.08,0-4.04-.51-5.77-1.39v20.64" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <rect x="33.02" y="252.62" width="140.78" height="140.78" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="heatwave">
+      <rect x="442.23" y="280.04" width="115.39" height="113.36" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle cx="467" cy="305.04" r="15.11" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="sunrays-2" data-name="sunrays">
+        <g id="_Radial_Repeat_-16" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="467" y1="342.3" x2="467" y2="320.47" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-17" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="451.84" y1="339.08" x2="460.73" y2="319.13" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-18" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="442.45" y1="327.15" x2="455.54" y2="315.36" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-19" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="442.23" y1="313.09" x2="452.33" y2="309.81" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-20" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="442.45" y1="302.29" x2="451.66" y2="303.43" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-21" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="442.23" y1="290.74" x2="453.64" y2="297.33" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-22" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="447.94" y1="280.02" x2="457.93" y2="292.57" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-23" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="461.68" y1="280.02" x2="463.79" y2="289.96" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-24" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="472.47" y1="280.02" x2="470.2" y2="289.96" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-25" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="485.68" y1="280.02" x2="476.06" y2="292.57" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-26" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="499.27" y1="286.41" x2="480.35" y2="297.33" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-27" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="504.05" y1="301.15" x2="482.33" y2="303.43" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-28" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="502.43" y1="316.56" x2="481.66" y2="309.81" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-29" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="494.69" y1="329.98" x2="478.46" y2="315.36" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-30" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="482.15" y1="339.08" x2="473.27" y2="319.13" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <line x1="531.41" y1="306.97" x2="540.91" y2="306.97" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="311.54" x2="537.56" y2="311.54" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="316.1" x2="537.56" y2="316.1" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="320.66" x2="540.91" y2="320.66" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="325.23" x2="537.56" y2="325.23" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="329.79" x2="537.56" y2="329.79" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="334.36" x2="540.91" y2="334.36" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="338.92" x2="537.56" y2="338.92" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="343.49" x2="537.56" y2="343.49" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="348.05" x2="540.91" y2="348.05" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="352.61" x2="537.56" y2="352.61" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="531.41" y1="357.18" x2="537.56" y2="357.18" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g>
+        <path d="m525.98,362.72v-67.83c0-2.55-2.07-4.61-4.61-4.61h-4.81c-2.55,0-4.61,2.07-4.61,4.61v67.83c-2.68,2.09-4.42,5.35-4.42,9.01,0,6.32,5.12,11.43,11.43,11.43s11.43-5.12,11.43-11.43c0-3.67-1.73-6.92-4.42-9.01Z" fill="#fbdbe9"/>
+        <path d="m525.98,362.72v-67.83c0-2.55-2.07-4.61-4.61-4.61h-4.81c-2.55,0-4.61,2.07-4.61,4.61v67.83c-2.68,2.09-4.42,5.35-4.42,9.01,0,6.32,5.12,11.43,11.43,11.43s11.43-5.12,11.43-11.43c0-3.67-1.73-6.92-4.42-9.01Z" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <line x1="442.45" y1="369.75" x2="507.53" y2="369.75" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="530.4" y1="369.75" x2="557.62" y2="369.75" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="mercury" x1="518.96" y1="366.61" x2="518.96" y2="313.09" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle cx="518.96" cy="371.73" r="5.12" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="heatwave-2" data-name="heatwave">
+      <rect x="31.41" y="33.46" width="70.62" height="69.37" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle cx="46.57" cy="48.76" r="9.25" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="sunrays-3" data-name="sunrays">
+        <g id="_Radial_Repeat_-31" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="46.57" y1="71.57" x2="46.57" y2="58.2" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-32" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="37.29" y1="69.59" x2="42.73" y2="57.38" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-33" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="31.54" y1="62.29" x2="39.55" y2="55.08" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-34" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="31.41" y1="53.69" x2="37.59" y2="51.68" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-35" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="31.54" y1="47.08" x2="37.18" y2="47.78" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-36" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="31.41" y1="40.01" x2="38.39" y2="44.04" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-37" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="34.9" y1="33.45" x2="41.02" y2="41.13" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-38" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="43.31" y1="33.45" x2="44.6" y2="39.53" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-39" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="49.92" y1="33.45" x2="48.53" y2="39.53" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-40" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="58" y1="33.45" x2="52.11" y2="41.13" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-41" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="66.31" y1="37.36" x2="54.74" y2="44.04" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-42" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="69.24" y1="46.38" x2="55.95" y2="47.78" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-43" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="68.25" y1="55.81" x2="55.54" y2="51.68" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-44" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="63.51" y1="64.02" x2="53.58" y2="55.08" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="_Radial_Repeat_-45" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <line x1="55.84" y1="69.59" x2="50.41" y2="57.39" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <line x1="85.99" y1="49.94" x2="91.8" y2="49.94" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="52.74" x2="89.75" y2="52.74" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="55.53" x2="89.75" y2="55.53" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="58.32" x2="91.8" y2="58.32" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="61.12" x2="89.75" y2="61.12" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="63.91" x2="89.75" y2="63.91" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="66.7" x2="91.8" y2="66.7" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="69.5" x2="89.75" y2="69.5" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="72.29" x2="89.75" y2="72.29" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="75.08" x2="91.8" y2="75.08" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="77.88" x2="89.75" y2="77.88" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.99" y1="80.67" x2="89.75" y2="80.67" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g>
+        <path d="m82.66,84.06v-40.86c0-1.92-1.56-3.48-3.48-3.48h-1.64c-1.92,0-3.48,1.56-3.48,3.48v40.86c-1.64,1.28-2.7,3.27-2.7,5.52,0,3.86,3.13,7,7,7s7-3.13,7-7c0-2.24-1.06-4.24-2.7-5.52Z" fill="#fbdbe9"/>
+        <path d="m82.66,84.06v-40.86c0-1.92-1.56-3.48-3.48-3.48h-1.64c-1.92,0-3.48,1.56-3.48,3.48v40.86c-1.64,1.28-2.7,3.27-2.7,5.52,0,3.86,3.13,7,7,7s7-3.13,7-7c0-2.24-1.06-4.24-2.7-5.52Z" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <line x1="31.54" y1="88.37" x2="71.37" y2="88.37" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="85.37" y1="88.37" x2="102.03" y2="88.37" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="mercury-2" data-name="mercury" x1="78.37" y1="86.44" x2="78.37" y2="53.69" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <circle cx="78.37" cy="89.57" r="3.14" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="wildfires">
+      <line x1="421.77" y1="140.43" x2="429.02" y2="140.43" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <rect x="292.01" y="12.65" width="157.22" height="157.22" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="smoke">
+        <path d="m341.71,105.62c-17.85-17.85,4.61-23.4-6.86-43.95" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <path d="m363.89,86.67c-16.71-22.27,15.66-28.87-1.75-54.73" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <path d="m422.02,86.67c16.71-22.27-15.66-28.87,1.75-54.73" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <path d="m392.64,68.93c-15.33-21.8,10.27-25.14-2.61-43.6" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <path id="flame" d="m342.5,144.93c-3.47-10.66,1.59-17.28,5.85-22.45,2.2,6.08,4.64,9.88,7.62,11.69-3.9-19.5,12.23-18.79,2.3-32.61,10.29-5.98,15.95,4.61,17.1,12.13,0-12.15-2.92-31.09,18.48-38.91-5.17,10.21-6.98,24.04-2.71,31.15,3.23-17.84,14.28-11.29,10.6-27.15,8.66,5.95,14.74,15.51,13.57,22.36,5.95-8.79,12.15-9.82,17.19-9.57-7.37,7.89-8.79,17.45-2.71,26.11,3.32-4.13,4.07-6.83,4.14-10.73,0,0,11.28,21.67,3.16,37.96" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="376.12" y1="124.17" x2="376.12" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="391.61" y1="118.57" x2="391.61" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="406.28" y1="125.32" x2="406.28" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="420.95" y1="134.55" x2="420.95" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="292.45" y1="144.93" x2="449.23" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="307.48" y1="122.52" x2="307.48" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="302.89 126.26 307.45 121.7 312.06 126.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="302.89 132.26 307.45 127.7 312.06 132.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="302.89 139.11 307.45 134.55 312.06 139.17" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="321.87" y1="122.52" x2="321.87" y2="144.93" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="317.28 126.26 321.84 121.7 326.46 126.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="317.28 132.26 321.84 127.7 326.46 132.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <polyline points="317.28 139.11 321.84 134.55 326.46 139.17" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="372.76" y1="135.13" x2="376.12" y2="131.04" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="387.27" y1="128.07" x2="391.61" y2="124.17" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="391.61" y1="133.73" x2="395.18" y2="136.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+      <line x1="406.28" y1="129.47" x2="409.84" y2="132.31" fill="none" stroke="#202b5c" stroke-miterlimit="5" stroke-width="2"/>
+    </g>
+    <g id="snowfall">
+      <rect x="17.54" y="132.78" width="103.29" height="103.29" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="snowflake">
+        <line x1="36.48" y1="174.74" x2="36.48" y2="190.47" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="43.29" y1="178.67" x2="29.66" y2="186.54" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="43.29" y1="186.54" x2="29.66" y2="178.67" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="snowflake-2" data-name="snowflake">
+        <line x1="46.28" y1="204.15" x2="46.28" y2="219.88" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="53.09" y1="208.08" x2="39.47" y2="215.94" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="53.09" y1="215.94" x2="39.47" y2="208.08" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="snowflake-3" data-name="snowflake">
+        <line x1="87.92" y1="212.01" x2="87.92" y2="227.74" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="94.73" y1="215.94" x2="81.11" y2="223.81" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="94.73" y1="223.81" x2="81.11" y2="215.94" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="snowflake-4" data-name="snowflake">
+        <line x1="69.01" y1="184.66" x2="69.01" y2="200.39" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="75.82" y1="188.59" x2="62.2" y2="196.46" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="75.82" y1="196.46" x2="62.2" y2="188.59" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="snowflake-5" data-name="snowflake">
+        <line x1="101.55" y1="176.56" x2="101.55" y2="192.29" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="108.36" y1="180.49" x2="94.73" y2="188.35" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="108.36" y1="188.35" x2="94.73" y2="180.49" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <path d="m17.53,145.33c2.22,2.38,5.16,4.13,8.58,4.88,2.25.49,4.49.5,6.62.1,1.9,8.94,8.83,16.4,18.34,18.48,7.02,1.54,13.97-.19,19.34-4.13,2.88,2.42,6.36,4.21,10.29,5.07,9.22,2.02,18.34-1.57,23.87-8.47,1.95,1.58,4.27,2.76,6.89,3.33,3.25.71,6.48.42,9.37-.67" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g>
+      <rect x="482.97" y="36.91" width="68.81" height="68.81" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="m499.2,36.91c.14,1.67.53,3.27,1.13,4.77-5.57.45-9.95,5.1-9.95,10.78,0,5.98,4.84,10.82,10.82,10.82,3.39,0,6.42-1.56,8.4-4.01,1.72,2.81,4.81,4.69,8.35,4.69s6.37-1.72,8.13-4.33c2.34,2.26,5.52,3.65,9.03,3.65,7.19,0,13.02-5.83,13.02-13.02,0-3.71-1.56-7.04-4.04-9.41.16-.7.25-1.42.25-2.17,0-.6-.05-1.18-.16-1.75" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="rain-2" data-name="rain">
+        <line x1="502.39" y1="68.55" x2="490.39" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="505.57" y1="68.55" x2="493.57" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="508.75" y1="68.55" x2="496.75" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="511.93" y1="68.55" x2="499.93" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="515.11" y1="68.55" x2="503.11" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="518.29" y1="68.55" x2="506.29" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="521.47" y1="68.55" x2="509.47" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="524.65" y1="68.55" x2="512.65" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="527.83" y1="68.55" x2="515.83" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="531.01" y1="68.55" x2="519.01" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="534.19" y1="68.55" x2="522.19" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="537.37" y1="68.55" x2="525.37" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="540.55" y1="68.55" x2="528.55" y2="99.04" fill="#fbdbe9" stroke="#202b5c" stroke-dasharray="0 0 5 4" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="flash">
+        <polyline points="539.13 50.86 517.57 78.07 533.35 78.43 516.25 104.02" fill="none" stroke="#fbdbe9" stroke-miterlimit="10" stroke-width="2"/>
+        <polyline points="535.67 51.18 513.05 79.93 529.32 80.59 512.75 104.02" fill="none" stroke="#fbdbe9" stroke-miterlimit="10" stroke-width="2"/>
+        <polyline points="537.74 50.43 515.11 79.17 531.01 79.55 513.52 105.72" fill="none" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="135.31" y="71.24" width="145.33" height="145.33" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="tornado" d="m262.26,71.24c-.57,35.55-45.66,54.25-53.03,74.24-10.75,29.18,29.72,38.37-6.02,71.09,12.61-40.32-27.65-33.02-31.53-63.06-5.06-39.12,24.78-49.26-17.99-82.27h108.57Z" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <g id="wind">
+        <line pathLength="100" x1="135.31" y1="100.67" x2="231.63" y2="100.67" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+        <line pathLength="100" x1="190.02" y1="134.52" x2="280.65" y2="134.52" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+        <path pathLength="100" d="m144.53,159.67h50.84" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+        <line pathLength="100" x1="215.09" y1="178.58" x2="253.96" y2="178.58" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="papers">
+      <rect x="262.91" y="272.1" width="96.77" height="127.09" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <rect x="255.27" y="264.46" width="96.77" height="127.09" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <line x1="269.32" y1="280.79" x2="342.11" y2="280.79" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <line x1="269.32" y1="287.2" x2="342.11" y2="287.2" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <line x1="269.32" y1="293.6" x2="342.11" y2="293.6" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <line x1="269.32" y1="300.65" x2="342.11" y2="300.65" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      <g id="questionmark">
+        <path d="m297.33,357.98c0-3.98.48-7.15,1.45-9.5.97-2.36,2.73-4.68,5.3-6.97,2.57-2.29,4.28-4.15,5.13-5.59.85-1.43,1.28-2.95,1.28-4.54,0-4.81-2.21-7.21-6.64-7.21-2.1,0-3.78.65-5.05,1.94-1.26,1.29-1.92,3.08-1.98,5.35h-12.35c.06-5.42,1.81-9.68,5.26-12.74,3.45-3.07,8.16-4.61,14.12-4.61s10.69,1.46,14.01,4.37c3.32,2.91,4.98,7.03,4.98,12.34,0,2.42-.54,4.7-1.62,6.84-1.08,2.15-2.97,4.53-5.66,7.14l-3.45,3.29c-2.16,2.07-3.39,4.5-3.71,7.29l-.17,2.6h-10.9Zm-1.24,13.05c0-1.9.65-3.46,1.94-4.69,1.29-1.23,2.95-1.85,4.96-1.85s3.67.62,4.96,1.85c1.29,1.24,1.94,2.8,1.94,4.69s-.63,3.41-1.9,4.63c-1.26,1.21-2.93,1.82-5,1.82s-3.74-.61-5-1.82c-1.26-1.22-1.9-2.76-1.9-4.63Z" fill="#fbdbe9" stroke="#202b5c" stroke-miterlimit="2" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
 </svg>
