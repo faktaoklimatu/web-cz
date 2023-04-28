@@ -51,6 +51,14 @@
     linkedin: "https://www.linkedin.com/in/petrholik/"
     twitter: "https://twitter.com/holik_petr"
 
+  - name: "Marcel Otruba"
+    position: "Designer"
+    summary: "Stojí za vizuálními výstupy Fakt o klimatu – od designového přemýšlení přes vizualizace dat až po doprovodné ilustrace. Vystudoval informatiku a grafický design."
+    img: "marcel-otruba.jpg"
+    email: "marcel.otruba@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
+    www: "https://otruba.sk/"
+
   - name: "Hana Tesák Vrtala"
     position: "Podcasterka a analytička"
     summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích učitelů přírodních věd. Ve Faktech o klimatu se specializuje na téma transformace dopravy a spoluvytváří podcast [2050](https://2050podcast.cz/)."
@@ -67,13 +75,12 @@
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
 
-  - name: "Marcel Otruba"
-    position: "Designer"
-    summary: "Stojí za vizuálními výstupy Fakt o klimatu – od designového přemýšlení přes vizualizace dat až po doprovodné ilustrace. Vystudoval informatiku a grafický design."
-    img: "marcel-otruba.jpg"
-    email: "marcel.otruba@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
-    www: "https://otruba.sk/"
+  - name: "Adam Bílek"
+    position: "Analytik"
+    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
+    img: "adam-bilek.jpg"
+    email: "adam.bilek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
 
   - name: "Martin Ukrop"
     position: "Administrátor a programátor"
@@ -89,13 +96,6 @@
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
-
-  - name: "Adam Bílek"
-    position: "Analytik"
-    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
-    img: "adam-bilek.jpg"
-    email: "adam.bilek@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
 
   - name: "Tom Protivínský"
     position: "Analytik"
