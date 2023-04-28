@@ -3,7 +3,17 @@ layout:      explainer
 title:       "Jak souvisí extrémní počasí v Česku s klimatickou změnou?"
 slug:        "vliv-klimatu-na-extremy-cesko"
 published:   2022-06-23
-author:      "Kolektiv autorů"
+authors:
+  - name: "Aleš Urban"
+    affiliation: "Ústav fyziky atmosféry AV ČR"
+  - name: "Pavel Zahradníček"
+    affiliation: "Ústav výzkumu globální změny AV ČR"
+  - name: "Petr Zacharov"
+    affiliation: "Ústav fyziky atmosféry AV ČR"
+  - name: "Miroslav Trnka"
+    affiliation: "Ústav výzkumu globální změny AV ČR"
+  - name: "Libor Elleder"
+    affiliation: "Český hydrometeorologický ústav"
 weight:      80
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
