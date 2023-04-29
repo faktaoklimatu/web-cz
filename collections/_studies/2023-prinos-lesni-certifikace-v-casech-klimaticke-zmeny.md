@@ -14,7 +14,7 @@ organizations:
 authors:
   - id: "jirka-lnenicka"
   - id: "ondras-pribyla"
-  - name: "Marcel Otruba"
+  - id: "marcel-otruba"
     minor-role: "sazba a grafická úprava"
   - name: "Vojtěch Kotecký"
     minor-role: "odborné konzultace"

@@ -20,7 +20,7 @@ authors:
     affiliation: "Frank Bold"
   - id: "katerina-kolouchova"
     show_internal_affiliation: True
-  - name: "Marcel Otruba"
+  - id: "marcel-otruba"
     minor-role: "sazba a grafická úprava"
   - minor-role: "vizualizace"
     ids:

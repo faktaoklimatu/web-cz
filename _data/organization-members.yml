@@ -59,7 +59,8 @@
     linkedin: "https://www.linkedin.com/in/petrholik/"
     twitter: "https://twitter.com/holik_petr"
 
-  - name: "Marcel Otruba"
+  - id: "marcel-otruba"
+    name: "Marcel Otruba"
     position: "Designer"
     summary: "Stojí za vizuálními výstupy Fakt o klimatu – od designového přemýšlení přes vizualizace dat až po doprovodné ilustrace. Vystudoval informatiku a grafický design."
     img: "marcel-otruba.jpg"
@@ -85,6 +86,14 @@
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
 
+  - id: "adam-bilek"
+    name: "Adam Bílek"
+    position: "Analytik"
+    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
+    img: "adam-bilek.jpg"
+    email: "adam.bilek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+
   - id: "martin-ukrop"
     name: "Martin Ukrop"
     position: "Administrátor a programátor"
@@ -101,14 +110,6 @@
     img: "matej-grabovsky.jpg"
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
-
-  - id: "adam-bilek"
-    name: "Adam Bílek"
-    position: "Analytik"
-    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
-    img: "adam-bilek.jpg"
-    email: "adam.bilek@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
 
   - id: "tom-protivinsky"
     name: "Tom Protivínský"
