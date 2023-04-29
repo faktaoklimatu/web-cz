@@ -59,7 +59,7 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, explainerů a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
+    {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030, 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
