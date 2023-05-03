@@ -14,12 +14,12 @@ cover-source-author: "Aleš Erber"
 cover-source-license: "Použito se svolením autora"
 cover-source-text: "Fotoarchiv autora (Rýchorský prales, Krkonoše)"
 cover-source-url: "https://twitter.com/ErberAles/status/1449039914398584837"
-perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně vidět. Chceme-li tu mít zdravé lesy, musíme v nich začít hospodařit jinak, než bylo v posledních dvou stoletích běžné: potřebujeme lesy, které se dokáží měnícím se klimatickým podmínkám přizpůsobit. Co všechno je nutné změnit? Jak zajistit, aby byl les zdravý, odolný a plný života – a zároveň jsme měli možnost jej dál využívat, ať už k produkci dřeva nebo třeba trávení volného času? Funkce lesa a hlavní výzvy, před nimiž stojí lesníci v 21. století, v základních obrysech přibližuje následující explainer."
+perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně vidět. Chceme-li tu mít zdravé lesy, musíme v nich začít hospodařit jinak, než bylo v posledních dvou stoletích běžné: potřebujeme lesy, které se dokáží měnícím se klimatickým podmínkám přizpůsobit. Co všechno je nutné změnit? Jak zajistit, aby byl les zdravý, odolný a plný života – a zároveň jsme měli možnost jej dál využívat, ať už k produkci dřeva nebo třeba trávení volného času? Funkce lesa a hlavní výzvy, před nimiž stojí lesníci v 21. století, v základních obrysech přibližuje následující text."
 ---
 
 {% include preview-box.html
     title="Proč umírají české jehličnaté lesy?"
-    text="Přečtěte si i náš explainer dívající se na důvody umírání našich lesů."
+    text="Přečtěte si i náš text vysvětlující důvody umírání našich lesů."
     slug="umirani-ceskych-lesu"
 %}
 
@@ -27,7 +27,7 @@ perex:       "Klimatické podmínky se v Česku mění a dopady jsou zřetelně 
 
 Většina lesů na území ČR není v nejlepší kondici a zejména u smrků a borovic můžeme pozorovat chřadnutí a odumírání stromů ve velkém měřítku a spolu s tím dochází k tzv. plošnému rozpadu lesa a zániku mikroklimatu, jež je pro lesní ekosystém klíčové.
 
-Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé šíření tohoto brouka a s tím související kalamita spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější – více o tomto tématu se dočtete v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
+Za hlavního viníka obvykle považujeme kůrovce, který se v lesích přemnožil, ve skutečnosti je však rychlé šíření tohoto brouka a s tím související kalamita spíše důsledkem tří jiných faktorů: postupující klimatické změny, degradace lesní půdy a nevhodného způsobu hospodaření. Tyto tři faktory oslabují zdravé stromy, a les se tak stává vůči kůrovci mnohem zranitelnější – více o tomto tématu se dočtete v textu [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
 
 ## K čemu lesy potřebujeme?
 
@@ -71,7 +71,7 @@ Obnova lesa přirozeně vyžaduje také vynaložení nemalých finančních pros
 
 Pomoci ovšem mohou i legislativní změny: například již zmiňovaná novelizace zákona o myslivosti a následné snížení stavu přemnožené zvěře může být účinným prostředkem k redukci škod v obnoveném lese, a tedy znamenat i značné snížení nákladů.
 
-<!-- Future TODO Ekonomické stránce lesního hospodaření bude věnován samostatný explainer Kolik stojí les? -->
+<!-- Future TODO Ekonomické stránce lesního hospodaření bude věnován samostatný text Kolik stojí les? -->
 
 ## Jakým způsobem do budoucna v lese hospodařit?
 
@@ -125,7 +125,7 @@ Současná krize nicméně vyžaduje, abychom jednali rychle. Stát by měl prot
 
 Zákony a vyhlášky bude ovšem zároveň potřeba vytvořit či novelizovat tak, aby zapadaly i do legislativního rámce Evropské unie a byly v souladu s její současnou klimatickou politikou. Zásadní je v tomto ohledu zejména nová Lesnická strategie EU do roku 2030[^42], a Strategie EU v oblasti biologické rozmanitosti[^43], v úvahu je nicméně nutné vzít rovněž širší kontext: balíček Evropské komise Fit for 55 nebo nařízení LULUCF o využívání půdy, změnách ve využívání půdy a lesním hospodaření[^44].
 
-Podrobněji se otázce legislativních změn budeme věnovat v samostatném explaineru.
+Podrobněji se otázce legislativních změn budeme věnovat v samostatném textu.
 
 ## Zdroje a poznámky
 
@@ -169,7 +169,7 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném expl
 
 [^22]: Werner, S., Polle, A., Brinkmann, N.: [Belowground communication: impacts of volatile organic compounds (VOCs) from soil fungi on other soil-inhabiting organisms](https://www.researchgate.net/publication/308214410_Belowground_communication_impacts_of_volatile_organic_compounds_VOCs_from_soil_fungi_on_other_soil-inhabiting_organisms) Applied microbiology and biotechnology 100.20 (2016): 8651-8665.
 
-[^23]: O reaktivním dusíku a jeho podílu na nadměrném okyselování půdy jako jedné z hlavních příčiny nízké odolnosti lesů v ČR se více dozvíte v explaineru [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
+[^23]: O reaktivním dusíku a jeho podílu na nadměrném okyselování půdy jako jedné z hlavních příčiny nízké odolnosti lesů v ČR se více dozvíte v textu [Proč umírají české jehličnaté lesy](/explainery/umirani-ceskych-lesu).
 
 [^24]: Současná legislativa připouští holoseče do 1 hektaru a v šířce do dvojnásobku výšky těženého porostu, za určitých podmínek je ale přípustná holoseč až 3 hektary, bez omezení šířky. Viz Višňák, Richard. *Les v hodině dvanácté*. Hnutí DUHA (2009), s. 302.
 

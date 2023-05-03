@@ -76,17 +76,17 @@ Pro více informací o obecném kontextu a přehledu k Fit for 55 přejděte na 
 
 Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zabývají:
 
-[Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku  
-[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku  
-[Michal Hrubý](https://www.europeum.org/user/default/132), Institut pro evropskou politiku EUROPEUM  
-[Tomáš Trubačík](https://sanceprobudovy.cz/o-nas/), Šance pro budovy   
+[Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku
+[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku
+[Michal Hrubý](https://www.europeum.org/user/default/132), Institut pro evropskou politiku EUROPEUM
+[Tomáš Trubačík](https://sanceprobudovy.cz/o-nas/), Šance pro budovy
 [Tomáš Jungwirth](https://www.amo.cz/autor/tomas-jungwirth/), Asociace pro mezinárodní otázky
 
 ### Zdroje
 
 [^fit-for-55]: [„Fit for 55": plnění klimatického cíle EU pro rok 2030 na cestě ke klimatické neutralitě](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021DC0550)
 
-[^explainer-emisni-povolenky]: Více v našem explaineru [Jak fungují evropské emisní povolenky?](/explainery/emisni-povolenky-ets)
+[^explainer-emisni-povolenky]: Více v našem textu [Jak fungují evropské emisní povolenky?](/explainery/emisni-povolenky-ets)
 
-[^explainer-lesni-strategie-eu]: Více v našem explaineru [Co přináší nová Lesnická strategie EU do roku 2030?](/explainery/lesnicka-strategie-eu)
+[^explainer-lesni-strategie-eu]: Více v našem textu [Co přináší nová Lesnická strategie EU do roku 2030?](/explainery/lesnicka-strategie-eu)
 

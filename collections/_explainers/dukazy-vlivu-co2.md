@@ -13,7 +13,7 @@ cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url: "https://unsplash.com/photos/t7EL2iG3jMc"
-perex:     "Ve vědecké komunitě se dnes všeobecně přijímá, že současná změna klimatu je způsobena zvyšováním koncentrací skleníkových plynů v atmosféře, a to zejména oxidu uhličitého. Toto přijetí je dáno množstvím empirických důkazů, z nichž některé si představíme v následujícím explaineru."
+perex:     "Ve vědecké komunitě se dnes všeobecně přijímá, že současná změna klimatu je způsobena zvyšováním koncentrací skleníkových plynů v atmosféře, a to zejména oxidu uhličitého. Toto přijetí je dáno množstvím empirických důkazů, z nichž některé si představíme v následujícím textu."
 ---
 
 ## Fyzikální pozadí: Proč se klimatologové zabývají zářením a toky energie?

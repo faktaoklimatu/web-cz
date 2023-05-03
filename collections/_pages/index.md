@@ -45,7 +45,7 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
-    <p class="lead mb-0">Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky, explainery, výtahy studií a datasety.</p>
+    <p class="lead mb-0">Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky a články.</p>
 
     {% assign slugs = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers | sort: "published" | reverse | map: "slug" | slice: 0, 6 %}
     {% include preview-blocks-expandable.html slugs=slugs rows=1 %}
@@ -57,7 +57,7 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
-    <p class="lead mb-0">Kromě infografik, explainerů a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
+    <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
     {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030, 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}

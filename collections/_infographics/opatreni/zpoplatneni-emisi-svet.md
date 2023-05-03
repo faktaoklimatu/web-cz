@@ -22,7 +22,7 @@ Plocha největšího z kruhů (Čína) odpovídá množství 12,4 Gt <glossary i
 {% include preview-box.html
     title="Evropské emisní povolenky"
     slug="emisni-povolenky-ets"
-    text="Podrobnější vysvětlení, jak funguje systém emisních povolenek v Evropské unii, najdete v našem explaineru."
+    text="Podrobnější vysvětlení, jak funguje systém emisních povolenek v Evropské unii, najdete v tomto textu."
 %}
 
 * Kanadská opatření zahrnují obě složky federálního systému (ETS i uhlíkovou daň) a také provinční opatření zpoplatňující uhlíkové emise.

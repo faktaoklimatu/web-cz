@@ -57,7 +57,7 @@
 - id: euets
   name-short: "EU ETS"
   name-long: "EU Emissions Trading System"
-  description: "Evropský systém pro obchodování s emisemi (EU ETS) reguluje a postupně snižuje množství emisí skleníkových plynů vypouštěných vybranými podniky v EU - především velkými elektrárnami, ropnými rafineriemi atd. EU každoročně uvolní určitý počet emisních povolenek, které vybrané podniky následně draží a směňují, aby byly schopné pokrýt svoji produkci skleníkových plynů. Snižování počtu vydaných povolenek, respektive jejich zdražování na volném trhu, má za cíl motivovat velké znečišťovatele k inovacím v oblasti čistých technologií. Pro více informací viz náš [explainer k EU ETS](/explainery/emisni-povolenky-ets)."
+  description: "Evropský systém pro obchodování s emisemi (EU ETS) reguluje a postupně snižuje množství emisí skleníkových plynů vypouštěných vybranými podniky v EU - především velkými elektrárnami, ropnými rafineriemi atd. EU každoročně uvolní určitý počet emisních povolenek, které vybrané podniky následně draží a směňují, aby byly schopné pokrýt svoji produkci skleníkových plynů. Snižování počtu vydaných povolenek, respektive jejich zdražování na volném trhu, má za cíl motivovat velké znečišťovatele k inovacím v oblasti čistých technologií. Pro více informací viz náš [text k EU ETS](/explainery/emisni-povolenky-ets)."
 
 - id: externalita
   name-short: "Externalita"
