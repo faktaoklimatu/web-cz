@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Proč dnes příroda tak rychle přichází o svou rozmanitost?"
 slug:        "ubyvani-biodiverzity"
 published:   2022-04-01
-author:      "Jiří Lněnička, konzultace Vojtěch Kotecký"
+authors:
+  - id: "jirka-lnenicka"
+  - name: "Vojtěch Kotecký"
+    minor-role: "konzultace"
 weight:      76
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
@@ -20,7 +23,7 @@ perex:       "Jsme přímými svědky procesu, kdy život na Zemi s nebývalou r
 
 __Biodiverzita__ (neboli biologická rozmanitost) označuje __pestrost živého světa__ – tedy všechny živočichy, rostliny, houby a mikroorganismy, kteří společně žijí na nějakém místě a jsou navzájem propojeni nejrůznějšími vztahy – každý z nich přitom podporuje rovnováhu celého systému a pokračování života v něm.[^1] V nejširším smyslu slova označuje biodiverzita pestrost živého světa na Zemi, stejně tak je ale možné ji zkoumat v určitém regionu (třeba na Šumavě) nebo v ještě menším měřítku (například v rybníčku u lesa).
 
-__Biotop__ označuje __prostředí__, které k životu potřebuje určitý konkrétní druh (například biotopem konipasa horského jsou rychle plynoucí vodní toky). Tento pojem se rovněž používá pro charakteristický typ vegetace: příkladem mohou být třeba říční rákosiny nebo horské trojštětové louky.[^2] 
+__Biotop__ označuje __prostředí__, které k životu potřebuje určitý konkrétní druh (například biotopem konipasa horského jsou rychle plynoucí vodní toky). Tento pojem se rovněž používá pro charakteristický typ vegetace: příkladem mohou být třeba říční rákosiny nebo horské trojštětové louky.[^2]
 
 Všechny živé organismy jsou závislé na prostředí, kde žijí, a zároveň jej spoluutvářejí – proto když uvažujeme o biodiverzitě, je třeba dívat se na celek, ne pouze izolovaně na jednotlivé druhy. Ty totiž nemohou přežít bez vhodných podmínek neživé přírody a jemného přediva vztahů s jinými druhy. Jestliže zanikne biotop, velká část druhů přijde o místo, které potřebuje ke svému životu. Ztráta jednoho či několika druhů ještě nemusí být pro biotop katastrofou, nicméně často znamená jeho významnou proměnu či ohrožení, a to zejména pokud jde o druh z hlediska biotopu klíčový, jakou jsou třeba mangrovníky v mangrovových pobřežních lesích. V našich podmínkách může být příkladem buk lesní, který je zásadním druhem pro biotop bučin (velká část těchto biotopů byla u nás v 19. a 20. století nahrazena smrkovými monokulturami).
 

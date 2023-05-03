@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
 slug:        "emisni-povolenky-ets"
 published:   2021-06-13
-author:      "Tomáš Protivínský"
+authors:
+  - id: "tom-protivinsky"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ emise, opatreni, ekonomika ]
@@ -67,7 +68,7 @@ Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenk
     source-url="https://www.quandl.com/data/CHRIS/ICE_C1"
 %}
 
-K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí bylo pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.  
+K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí bylo pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
 
 ## Která odvětví jsou do systému zahrnuta?
 
