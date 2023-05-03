@@ -93,7 +93,7 @@ První část AR6 vyšla ještě před klimatickou konferencí COP26, která pro
 
 ## Zdroje a další odkazy
 
-* Jako základní zdroj pro tento explainer posloužil text [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D.
+* Jako základní zdroj pro tento text posloužil článek [Jak funguje IPCC?](https://ekolist.cz/cz/publicistika/nazory-a-komentare/radimn-tolasz-jak-funguje-ipcc) od klimatologa RNDr. Radima Tolasze, Ph.D.
 * Podrobněji o výběru autorů, posuzované literatuře a schvalovacích procesech viz [Oficiální web IPCC](https://www.ipcc.ch/assessment-report/ar6/).
 * Údaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assessment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 

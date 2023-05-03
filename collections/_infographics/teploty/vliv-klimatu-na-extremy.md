@@ -22,7 +22,7 @@ Extrémní meteorologické události, jako jsou vlny veder, silné přívalové 
 
 Tato infografika je stručným shrnutím publikace ["Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát"](/explainery/vliv-klimatu-na-extremy-prirucka), jejímiž autory jsou Ben Clarke a Friederike Otto.[^zdroj] Kompas se věnuje jednotlivým typům extrémního počasí, vysvětluje jejich souvislost s klimatickou změnou a popisuje míru jistoty, s níž je možné se o této souvislosti vyjadřovat. Přibližuje také metodu atribuce, kterou vědci pro tyto účely používají, a přináší důležité poznámky a souvislosti – na co je důležité při komunikaci o vlivu klimatické změny na extrémní počasí nezapomínat.
 
-Český kontext ke Kompasu pro novináře dodává [explainer](/explainery/vliv-klimatu-na-extremy-cesko), jehož autory jsou čeští odborníci na jednotlivé extrémní jevy.
+Český kontext ke Kompasu pro novináře dodává [samostatný text](/explainery/vliv-klimatu-na-extremy-cesko), jehož autory jsou čeští odborníci na jednotlivé extrémní jevy.
 
 ## Poznámky
 

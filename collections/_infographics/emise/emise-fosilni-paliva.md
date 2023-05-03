@@ -16,7 +16,7 @@ data-orig:  [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impa
 ## Jak číst tento graf?
 
 * Graf ukazuje **světové emise ze spalování uhlí, ropy a zemního plynu** a pro srovnání také **emise z výroby cementu**. Celkové emise z těchto zdrojů za rok 2019 byly 35 897 milionů tun CO<sub>2</sub>.
-* V grafu jsou jako emise z výroby cementu znázorněny pouze emise pocházející z chemické reakce CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>. Emise vzniklé spalováním uhlí či plynu na ohřev jsou započteny jako emise příslušného paliva.  
+* V grafu jsou jako emise z výroby cementu znázorněny pouze emise pocházející z chemické reakce CaCO<sub>3</sub> + teplo ⟶ CaO + CO<sub>2</sub>. Emise vzniklé spalováním uhlí či plynu na ohřev jsou započteny jako emise příslušného paliva.
 
 ## Více o jednotlivých palivech a cementu
 
@@ -49,7 +49,7 @@ data-orig:  [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impa
 
 {% include preview-box.html
     title="Podrobněji o emisích z výroby cementu"
-    text="Výroba jedné tuny cementu vytvoří přibližně 1 až 1,2 tuny CO₂. Náš explainer tento proces přibližuje podrobněji."
+    text="Výroba jedné tuny cementu vytvoří přibližně 1 až 1,2 tuny CO₂. Náš text tento proces přibližuje podrobněji."
     slug="emise-vyroba-cementu"
 %}
 

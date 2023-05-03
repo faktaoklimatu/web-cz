@@ -51,7 +51,7 @@ V první části se zaměříme především na následující otázky:
 
 Na začátku je třeba zmínit základní kontext pro všechny úvahy o dekarbonizaci elektroenergetiky: **v budoucím světě bude výroba elektřiny jednoznačně hrát klíčovou roli**. Potřebujeme zásadně omezit emise skleníkových plynů v sektorech, kde spalujeme fosilní paliva: v energetice, v dopravě, ve vytápění, v průmyslu. V mnoha případech je elektrifikace nejvýhodnější, či dokonce jediná realistická možnost náhrady tohoto spalování fosilních paliv. Pro zbylé oblasti, kde elektřina vhodná není (např. v letecké a lodní dopravě nebo v průmyslových procesech s vysokými teplotami), se navíc počítá s velkou mírou využití vodíku nebo syntetických paliv vyráběných z nadbytečné elektřiny. To jinými slovy znamená, že budeme potřebovat elektřinu i tam, kde jsme ji (díky využívání fosilních paliv) doposud nepotřebovali. **I přes zásadní energetické úspory tak spotřeba elektřiny v dalších 30 letech vzroste řádově o polovinu.**
 
-<!-- Více detailů k celkové proměně energetiky nabízíme v samostatném explaineru. -->
+<!-- Více detailů k celkové proměně energetiky nabízíme v samostatném textu. -->
 
 Problém, který řešíme, je tedy mnohem těžší než jen jak nahradit stávající zdroje elektřiny nízkoemisními. **Potřebujeme zásadně snížit emise a současně výrazně zvýšit výrobu elektřiny.**
 
@@ -247,7 +247,7 @@ Krátkodobé vyrovnávání je o něco snazší, protože máme k dispozici zdro
 
 Ani toto krátkodobé balancování však není vždy lehké. Jestliže v daný den nejsou dobré podmínky (nesvítí či nefouká), nevyrobí solární či větrné elektrárny téměř nic. A i když započítáme stabilní výrobu z jádra, stejně potřebujeme v průběhu takového dne pokrýt dalších 200–250 GWh spotřeby. Přitom kapacita Dlouhých strání, největší přečerpávací elektrárny v ČR, je zhruba 3 GWh.
 
-Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich tří ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném explaineru.
+Nástroje pro krátkodobé vyrovnávání bude v podstatné míře vyžadovat každý z našich tří ilustrativních scénářů, proto se tomuto tématu budeme věnovat v samostatném textu.
 
 ### Sezónní vyváženost
 
