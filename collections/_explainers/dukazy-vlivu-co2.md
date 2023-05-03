@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Empirické důkazy vlivu CO₂ na klima"
 slug:        "dukazy-vlivu-co2"
 published:   2021-07-02
-author:      "Jakub Zamouřil"
+authors:
+  - id: "jakub-zamouril"
 weight:      72
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

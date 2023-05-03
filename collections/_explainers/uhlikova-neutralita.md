@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Co přesně znamená uhlíková neutralita?"
 slug:        "uhlikova-neutralita"
 published:   2021-05-11
-author:      "Ondráš Přibyla, Fakta o klimatu"
+authors:
+  - id: "ondras-pribyla"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, emise ]

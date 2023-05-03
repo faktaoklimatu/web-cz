@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Co je Zelená dohoda pro Evropu?"
 slug:        "zelena-dohoda-pro-evropu"
 published:   2022-12-20
-author:      "Kateřina Kolouchová a tým Fakt o klimatu"
+authors:
+  - id: "katerina-kolouchova"
+  - ids: ["jirka-lnenicka", "kristi-psorn-zakopcanova"]
+    minor-role: "editace"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]

@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Co přináší nová Lesnická strategie EU do roku 2030?"
 slug:        "lesnicka-strategie-eu"
 published:   2021-12-06
-author:      "Jiří Lněnička"
+authors:
+  - id: "jirka-lnenicka"
 weight:      76
 tags-scopes: [ evropa ]
 tags-topics: [ opatreni, priroda ]

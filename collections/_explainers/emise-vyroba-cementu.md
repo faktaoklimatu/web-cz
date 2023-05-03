@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
 slug:        "emise-vyroba-cementu"
 published:   2021-02-13
-author:      "Ondráš Přibyla"
+authors:
+  - id: "ondras-pribyla"
 weight:      73
 tags-scopes: [ svet ]
 tags-topics: [ emise ]

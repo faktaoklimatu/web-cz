@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Jak ovlivňuje dýchání člověka, živočichů a rostlin koncentrace CO<sub>2</sub> v atmosféře?"
 slug:        "emise-dychani"
 published:   2021-02-13
-author:      "Ondráš Přibyla"
+authors:
+  - id: "ondras-pribyla"
 weight:      76
 tags-scopes: [ svet ]
 tags-topics: [ emise , priroda ]
@@ -17,7 +18,7 @@ perex:     "O oxidu uhličitém jsme většinou slyšeli poprvé na základní �
 
 ## Vliv lidského dýchání
 
-Při klidném dýchání projde plícemi průměrného člověka  asi [5–8 litrů vzduchu za minutu](https://en.wikipedia.org/wiki/Minute_ventilation). Zatímco koncentrace CO<sub>2</sub> ve vdechovaném vzduchu je 0,04 %, ve vydechovaném je to stokrát více, tedy [asi 4–5 %](https://en.wikipedia.org/wiki/Breathing). Hrubými výpočty tak [můžeme odhadnout](https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/2008/08/11/release-of-carbon-dioxide-by-individual-humans/comment-page-1/index.html), že **člověk dýcháním vyprodukuje okolo 900 g oxidu uhličitého za den**, tedy asi 300 kg za rok. V uzavřené místnosti dokáže člověk dýcháním zvýšit koncentraci CO<sub>2</sub> až na 2000 ppm, tedy na 0,2 %.  Nicméně, možná překvapivě, v dlouhodobém měřítku **lidské dýchání nepřispívá ke zvyšování koncentrací CO<sub>2</sub> v atmosféře**, protože cyklus uhlíku je při dýchání uzavřený. Co to znamená?  
+Při klidném dýchání projde plícemi průměrného člověka  asi [5–8 litrů vzduchu za minutu](https://en.wikipedia.org/wiki/Minute_ventilation). Zatímco koncentrace CO<sub>2</sub> ve vdechovaném vzduchu je 0,04 %, ve vydechovaném je to stokrát více, tedy [asi 4–5 %](https://en.wikipedia.org/wiki/Breathing). Hrubými výpočty tak [můžeme odhadnout](https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/2008/08/11/release-of-carbon-dioxide-by-individual-humans/comment-page-1/index.html), že **člověk dýcháním vyprodukuje okolo 900 g oxidu uhličitého za den**, tedy asi 300 kg za rok. V uzavřené místnosti dokáže člověk dýcháním zvýšit koncentraci CO<sub>2</sub> až na 2000 ppm, tedy na 0,2 %.  Nicméně, možná překvapivě, v dlouhodobém měřítku **lidské dýchání nepřispívá ke zvyšování koncentrací CO<sub>2</sub> v atmosféře**, protože cyklus uhlíku je při dýchání uzavřený. Co to znamená?
 
 Aby člověk mohl vydechovat oxid uhličitý, musí ke vdechovanému kyslíku přidávat uhlík a tak se uhlík "ztrácí" z lidského těla. To samozřejmě nejde dlouho, po nějaké době by v lidském těle žádný uhlík nezbyl. Člověk a ostatní živočichové dostávají do svého těla uhlík skrze potravu ve formě sacharidů, tuků a bílkovin – ty všechny obsahují uhlíkové řetězce. Veškerý uhlík, který pak živočichové vydechují ve formě CO<sub>2</sub>, se do jejich těl dostal z rostlin. Jak? Ze vzduchu, fotosyntézou (viz níže). CO<sub>2</sub>, který živočichové vydechují, předtím ze vzduchu odčerpaly rostliny, které tito živočichové snědli. **Člověk ani žádní další živočichové svým dýcháním nedokáže do atmosféry přidat oxid uhličitý, který předtím z atmosféry neodčerpaly rostliny**. Naopak rostliny koncentrace CO<sub>2</sub> ovlivňují docela významně, jak během dne, tak během roku.
 

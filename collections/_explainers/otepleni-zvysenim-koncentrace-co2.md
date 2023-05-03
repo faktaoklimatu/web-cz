@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Jak moc se oteplí, když se zvýší koncentrace CO₂?"
 slug:        "otepleni-zvysenim-koncentrace-co2"
 published:   2021-05-01
-author:      "Ondráš Přibyla"
+authors:
+  - id: "ondras-pribyla"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ klima ]

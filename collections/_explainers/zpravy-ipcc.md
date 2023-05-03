@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Co jsou zprávy IPCC a jak vznikají?"
 slug:        "zpravy-ipcc"
 published:   2021-08-06
-author:      "Jiří Lněnička, Fakta o klimatu"
+authors:
+  - id: "jirka-lnenicka"
 weight:      90
 tags-scopes: [ svet ]
 tags-topics: [ opatreni ]

@@ -3,7 +3,9 @@ layout:      explainer
 title:       "Proč umírají korálové útesy?"
 slug:        "vymirani-koralovych-utesu"
 published:   2021-04-03
-author:      "Tereza Jarníková, University of British Columbia"
+authors:
+  - name: "Tereza Jarníková"
+    affiliation: "University of British Columbia"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
@@ -101,7 +103,7 @@ Pomalý růst však také znamená mnohem pomalejší obnovu v případě poško
 [^2]: Ferrario, F., Beck, M., Storlazzi, C. et al., ["The effectiveness of coral reefs for coastal hazard risk reduction and adaptation"](https://doi.org/10.1038/ncomms4794),  Nature Communication 5, čl. 3794 (2014).
 [^3]: NOAA, ["In what types of water do corals live?"](https://oceanservice.noaa.gov/facts/coralwaters.html)
 [^4]: Spalding Ch., Finnegan, S., Fischer W., [Energetic costs of calcification under ocean acidification](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016GB005597), Global Biochemical Cycles (2017)
-[^41]: Davis, K.L., Colefax, A.P., Tucker, J.P. et al. [Global coral reef ecosystems exhibit declining calcification and increasing primary productivity](https://doi.org/10.1038/s43247-021-00168-w). Commun Earth Environ 2, 105 (2021). 
+[^41]: Davis, K.L., Colefax, A.P., Tucker, J.P. et al. [Global coral reef ecosystems exhibit declining calcification and increasing primary productivity](https://doi.org/10.1038/s43247-021-00168-w). Commun Earth Environ 2, 105 (2021).
 [^5]:Hoegh-Guldberg O., Poloczanska E.S., Skirving W. and Dove S., ["Coral Reef Ecosystems under Climate Change and Ocean Acidification"](https://doi.org/10.3389/fmars.2017.00158) Frontiers in Marine Science 4, str. 158 (2017).
 [^6]: Le Nohaïc, M., Ross, C.L., Cornwall, C.E. et al. ["Marine heatwave causes unprecedented regional mass bleaching of thermally resistant corals in northwestern Australia"](https://doi.org/10.1038/s41598-017-14794-y), Scientific Reports 7, čl. 14999 (2017).
 [^7]: IPCC, ["Summary for policymakers: Global warming of 1.5 °C](https://www.ipcc.ch/report/sr15) — An IPCC Special Report on the impacts of global warming of 1.5 °C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty", editoři V. Masson-Delmotte et al., IPCC, World Meteorological Organization, United Nations Environment Programme (Geneva, Switzerland, 2018).

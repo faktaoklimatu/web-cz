@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
 published:   2021-11-09
-author:      "Alena Moravová, Tomáš Protivínský"
+authors:
+  - names-or-ids: ["Alena Moravová", "tom-protivinsky"]
 weight:      75
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, ekonomika ]

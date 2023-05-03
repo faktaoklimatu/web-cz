@@ -3,7 +3,8 @@ layout:      explainer
 title:       "Jaký přínos pro les v časech klimatické změny může mít lesní certifikace?"
 slug:        "lesni-certifikace"
 published:   2023-04-26
-author:      "Jiří Lněnička, Ondráš Přibyla"
+authors:
+  - ids: ["jirka-lnenicka", "ondras-pribyla"]
 weight:      89
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]

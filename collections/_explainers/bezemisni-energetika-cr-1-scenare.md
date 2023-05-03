@@ -11,6 +11,8 @@ authors:
   - id: "jan-krcal"
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]
