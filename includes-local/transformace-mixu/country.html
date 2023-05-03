@@ -7,7 +7,7 @@
     </h5>
     <div style="display: grid; grid-template-columns: 2fr auto 3fr;">
         <div class="card-body">
-            <img class="w-100" src="/assets-local/figures/2023-transformace-mixu/trojuhelnik.svg" alt="Ternární graf zobrazující mix výroby elektřiny v Česku" />
+            <img class="w-100" src="/assets-local/figures/2023-reserse-transformace-mixu/{{ include.id }}.svg" alt="Ternární graf zobrazující proměnu mixu výroby elektřiny v čase" />
         </div>
         <div class="card-body">
             <dl>
@@ -24,7 +24,7 @@
             </dl>
         </div>
         <div class="card-body">
-            <p class="card-text">{{ include.story }}</p>
+            {{ include.story | markdownify }}
         </div>
     </div>
 </div>
