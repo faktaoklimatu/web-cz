@@ -1,26 +1,43 @@
-<div class="card">
+<div
+    class="card"
+    data-name="{{ include.name }}"
+    data-fossil="{{ include.fossil }}"
+    data-nuclear="{{ include.nuclear }}"
+    data-renewables="{{ include.renewables }}"
+    data-production="{{ include.production }}"
+    data-net-imports="{{ include.net-imports }}"
+    data-co2-intensity="{{ include.co2-intensity }}"
+>
     <h5 class="card-header" id="{{ include.id }}">
         {% if include.flag-url %}
             <img src="{{ include.flag-url }}" class="mr-2 country-flag" alt="Vlajka země či území: {{ include.name }}" />
         {% endif -%}
         {{ include.name }}
     </h5>
-    <div style="display: grid; grid-template-columns: 2fr auto 3fr;">
+    <div style="display: grid; grid-template-columns: 3fr auto 3fr;">
         <div class="card-body">
             <img class="w-100" src="/assets-local/figures/2023-reserse-transformace-mixu/{{ include.id }}.svg" alt="Ternární graf zobrazující proměnu mixu výroby elektřiny v čase" />
         </div>
         <div class="card-body">
             <dl>
-                <dt style="color: #8c2c79">Fosilní zdroje</dt>
+                <dt style="color: #8c2c79">Fosilní paliva</dt>
                 <dd style="color: #8c2c79">{{ include.fossil | replace_first: ".", "," }} %</dd>
-                <dt style="color: #024b7a">Jaderná energie</dt>
+                <dt style="color: #024b7a">Jádro</dt>
                 <dd style="color: #024b7a">{{ include.nuclear | replace_first: ".", "," }} %</dd>
                 <dt style="color: #f58800">Obnovitelné zdroje</dt>
                 <dd style="color: #f58800">{{ include.renewables | replace_first: ".", "," }} %</dd>
                 <dt>Hrubá roční výroba</dt>
-                <dd>{{ include.production }} TWh</dd>
+                <dd>{{ include.production | replace_first: ".", "," }} TWh</dd>
+                <dt>{% if include.net-imports >= 0 %}Čistý import{% else %}Čistý export{% endif %}</dt>
+                <dd>
+                {% if include.net-imports -%}
+                    {{ include.net-imports | abs | replace_first: ".", "," }} TWh
+                {%- else -%}
+                    —
+                {%- endif %}
+                </dd>
                 <dt>Emisní intenzita</dt>
-                <dd>{{ include.co2-intensity }} t CO<sub>2</sub>eq/MWh</dd>
+                <dd>{{ include.co2-intensity | replace_first: ".", "," }} t CO<sub>2</sub>eq/MWh</dd>
             </dl>
         </div>
         <div class="card-body">
