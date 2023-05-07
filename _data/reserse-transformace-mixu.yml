@@ -6,17 +6,9 @@ items:
   nuclear: 0.0
   renewables: 29.1
   production: 247.1
+  net-imports: 0.0
   intensity: 531.0
-  text: Nejdůležitějším zdrojem elektřiny je uhlí, které dodává více než polovinu
-    potřebné elektřiny. Podíl uhlí v mixu elektřiny postupně klesá, ovšem stále tvoří
-    klíčový zdroj. Austrálie je zároveň [druhým největším exportérem uhlí na světě](https://www.statista.com/statistics/270952/global-hard-coal-exports-2009/).
-    Dalším klíčovým zdrojem je zemní plyn, jehož je Austrálie [výrazným exportérem](https://www.ga.gov.au/digital-publication/aecr2021/gas).
-    V posledních letech dochází k výraznému růstu produkce solární a větrné elektřiny,
-    kdy Austrálie může využít své velmi vhodné přírodní podmínky. Vzhledem k těmto
-    přírodním podmínkám se ovšem dá říct i to, že dosavadní rozvoj solární a větrné
-    elektřiny nebyl dostatečný a nenaplňuje potenciál země. V současné době se plánuje
-    propojení se Singapurem, kam by Austrálie do budoucna vyvážela elektřinu, ovšem
-    [projekt se potýká s problémy](https://www.channelnewsasia.com/singapore/sun-cable-collapse-solar-energy-project-3200906).
+  text: Nejdůležitějším zdrojem je uhlí, které dodává více než polovinu potřebné elektřiny. Podíl uhlí v celkovém mixu postupně klesá, stále však jde o klíčový zdroj. Austrálie je zároveň [druhým největším exportérem uhlí na světě](https://www.statista.com/statistics/270952/global-hard-coal-exports-2009/). Dalším důležitým zdrojem je zemní plyn, jehož je Austrálie [výrazným exportérem](https://www.ga.gov.au/digital-publication/aecr2021/gas). V posledních letech dochází ke značnému nárůstu produkce solární a větrné elektřiny, pro niž má Austrálie velmi vhodné přírodní podmínky (nicméně dosavadní rozvoj výroby ze slunce a větru potenciál země zatím nenaplňuje – z daných přírodních podmínek by se dalo vytěžit více). V současné době se plánuje propojení se Singapurem, kam by Austrálie do budoucna elektřinu vyvážela, ovšem [projekt se potýká s problémy](https://www.channelnewsasia.com/singapore/sun-cable-collapse-solar-energy-project-3200906).
 - code: BEL
   name: Belgie
   flag-url: https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
@@ -24,6 +16,7 @@ items:
   nuclear: 50.8
   renewables: 23.0
   production: 99.0
+  net-imports: -7.9
   intensity: 157.0
   text: Belgie dodnes vyrábí zhruba polovinu své elektřiny v jaderných elektrárnách
     – v současnosti má [6 aktivních reaktorů](https://world-nuclear.org/information-library/country-profiles/countries-a-f/belgium.aspx).
@@ -39,18 +32,9 @@ items:
   nuclear: 2.2
   renewables: 76.8
   production: 662.6
+  net-imports: 23.1
   intensity: 159.0
-  text: Nejdůležitějším zdrojem elektřiny pro Brazíli jsou vodní elektrárny. V zemi
-    funguje [druhá největší přehrada](https://www.weforum.org/agenda/2022/12/worlds-largest-hydroelectric-dams-renewable-energy/)
-    na světě Itaipu, která se nachází na hranicích Brazílie a Paraguaye na řece Paraná.
-    V brazilském mixu výroby elektřiny figuruje i [zemní plyn](https://fsr.eui.eu/natural-gas-in-brazils-energy-mix/),
-    který z větší části pochází z domácí produkce. Důležitým zdrojem je též biomasa
-    [pocházející převážně z vedlejších produktů](https://www.sciencedirect.com/science/article/abs/pii/S0959652622010873)
-    ze zpracování cukrové třtiny. Brazílie momentálně staví svůj třetí [jaderný reaktor](https://www.world-nuclear.org/information-library/country-profiles/countries-a-f/brazil.aspx).
-    V posledních letech dochází k výraznému nárůstu obnovitelných zdrojů pocházejících
-    převážně z větrných elektráren. Vzhledem k přírodním podmínkám a emisně relativně
-    nenáročnému mixu může být Brazílie do budoucna jedno z nejlepších míst na výrobu
-    [zeleného vodíku](https://www.mckinsey.com/br/en/our-insights/all-insights/the-green-hidden-gem-brazils-opportunity-to-become-a-sustainability-powerhouse).
+  text: Nejdůležitějším zdrojem elektřiny jsou pro Brazílii vodní elektrárny. V zemi funguje [druhá největší přehrada](https://www.weforum.org/agenda/2022/12/worlds-largest-hydroelectric-dams-renewable-energy/) na světě (Itaipu), která se nachází na hranicích Brazílie a Paraguaye na řece Paraná. V brazilském mixu výroby elektřiny figuruje i [zemní plyn](https://fsr.eui.eu/natural-gas-in-brazils-energy-mix/), který z větší části pochází přímo z Brazílie. Důležitým zdrojem je též biomasa [převážně z vedlejších produktů](https://www.sciencedirect.com/science/article/abs/pii/S0959652622010873) ze zpracování cukrové třtiny. Brazílie momentálně staví svůj třetí [jaderný reaktor](https://www.world-nuclear.org/information-library/country-profiles/countries-a-f/brazil.aspx). V posledních letech dochází k výraznému nárůstu výroby z obnovitelných zdrojů, především větru. Vzhledem k přírodním podmínkám a emisně relativně nenáročnému mixu může být Brazílie do budoucna jedno z nejlepších míst na výrobu [zeleného vodíku](https://www.mckinsey.com/br/en/our-insights/all-insights/the-green-hidden-gem-brazils-opportunity-to-become-a-sustainability-powerhouse).
 - code: BGR
   name: Bulharsko
   flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg
@@ -58,6 +42,7 @@ items:
   nuclear: 34.9
   renewables: 21.8
   production: 47.3
+  net-imports: -8.8
   intensity: 354.0
   text: Bulharsko je stále do velké míry závislé na elektřině z uhlí (phase-out je
     plánován na rok [2038](https://www.euronews.com/green/2023/01/13/bulgaria-rolls-back-plans-to-phase-out-coal-amid-fears-over-energy-and-job-security)).
@@ -72,6 +57,7 @@ items:
   nuclear: 36.7
   renewables: 12.8
   production: 83.7
+  net-imports: -11.1
   intensity: 406.0
   text: Hlavním zdrojem elektřiny pro Česko je stále uhlí, které se má přestat používat
     v roce [2033](https://ct24.ceskatelevize.cz/ekonomika/3478815-vlada-stale-pocita-s-koncem-uhli-do-roku-2033-plan-ale-ohrozuje-valka-na-ukrajine).
@@ -92,24 +78,9 @@ items:
   nuclear: 4.8
   renewables: 28.9
   production: 8484.0
+  net-imports: -17.7
   intensity: 544.0
-  text: Čína se v rámci svého ekonomického vzestupu stala výrazným průmyslovým výrobcem
-    a [plná elektrifikace země](https://chinadialogue.net/en/energy/9934-three-lessons-from-china-s-effort-to-bring-electricity-to-1-4-billion-people/)
-    proběhla v roce 2015. Hlavním zdrojem, na který se Čína spolehá, je jednoznačně
-    uhlí, jehož podíl sice postupně mírně klesá, ale stále dodává přes 60 % elektřiny.
-    Produkce elektřiny z uhlí by měla podle plánů začít klesat v roce [2026](https://www.reuters.com/world/china/china-no-closer-peak-coal-despite-record-renewable-capacity-additions-2022-08-22/).
-    Zároveň stále dochází k intenzivní výstavbě [nových uhelných elektráren](https://www.bloomberg.com/news/articles/2023-01-20/china-to-speed-up-construction-of-coal-power-plants-this-year),
-    přestože více nové kapacity přidávají nové solární elektrárny. Významným zdrojem
-    elektřiny jsou vodní elektrárny a v Číně se nachází Tři soutěsky, které jsou největší
-    vodní elektrárnou na světě. Čína zároveň disponuje [84 % výrobních kapacit](https://www.visualcapitalist.com/visualizing-chinas-dominance-in-the-solar-panel-supply-chain/)
-    pro produkci solárních panelů a je světovým lídrem v této oblasti.  Podobnou dynamika
-    lze vidět i u [jaderných elektráren,](https://www.world-nuclear.org/information-library/country-profiles/countries-a-f/china-nuclear-power.aspx)
-    k jejichž rozvoji v Číně dochází a o jaderných technologiích se zároveň přemýšlí
-    jako o produktu pro export. Přechod na obnovitelné zdroje v Číně [vyžaduje výrazné
-    investice do přenosové sítě](https://e360.yale.edu/features/why-chinas-renewable-energy-transition-is-losing-momentum),
-    jelikož nejvhodnější lokality pro solární i větrné elektrárny jsou často tisíce
-    kilometrů od populačních center. V Číně se také nachází [největší větrná farma](https://discovercleantech.com/ten-gigantic-wind-farms/)
-    na světě s aktuální kapacitou 10 GW.
+  text: Čína se v rámci svého ekonomického vzestupu stala výrazným průmyslovým výrobcem a [plná elektrifikace země](https://chinadialogue.net/en/energy/9934-three-lessons-from-china-s-effort-to-bring-electricity-to-1-4-billion-people/) proběhla v roce 2015. Hlavním zdrojem, na který se Čína spoléhá, je jednoznačně uhlí. Jeho podíl sice postupně mírně klesá, ale stále dodává přes 60 % elektřiny. Produkce elektřiny z uhlí by měla podle plánů začít klesat v roce [2026](https://www.reuters.com/world/china/china-no-closer-peak-coal-despite-record-renewable-capacity-additions-2022-08-22/). Zároveň stále dochází k intenzivní výstavbě [nových uhelných elektráren](https://www.bloomberg.com/news/articles/2023-01-20/china-to-speed-up-construction-of-coal-power-plants-this-year), přestože více nové kapacity přidávají nové solární elektrárny. Významným zdrojem elektřiny jsou vodní elektrárny – v Číně se nacházejí Tři soutěsky, které jsou největší vodní elektrárnou na světě. Čína zároveň disponuje [84 % světových výrobních kapacit](https://www.visualcapitalist.com/visualizing-chinas-dominance-in-the-solar-panel-supply-chain/) k produkci solárních panelů a je v této oblasti jednoznačným lídrem. Podobnou dynamiku lze vidět i u [jaderných elektráren](https://www.world-nuclear.org/information-library/country-profiles/countries-a-f/china-nuclear-power.aspx), k jejichž rozvoji v Číně dochází, a o jaderných technologiích se zároveň přemýšlí jako o produktu pro export. Přechod na obnovitelné zdroje v Číně [vyžaduje výrazné investice do přenosové sítě](https://e360.yale.edu/features/why-chinas-renewable-energy-transition-is-losing-momentum), jelikož nejvhodnější lokality pro solární i větrné elektrárny jsou často tisíce kilometrů od populačních center. V Číně se také nachází [největší větrná farma](https://discovercleantech.com/ten-gigantic-wind-farms/) na světě s aktuální kapacitou 10 GW.
 - code: DNK
   name: Dánsko
   flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
@@ -117,6 +88,7 @@ items:
   nuclear: 0.0
   renewables: 78.9
   production: 33.1
+  net-imports: 4.9
   intensity: 221.0
   text: Dánsko má nejvyšší podíl větrné energie ze všech zemí na světě – [větrné elektrárny](https://stateofgreen.com/en/news/denmark-the-most-wind-energy-producing-country-per-capita/)
     dodávají téměř polovinu elektřiny. Dánsko je zároveň dobře [propojeno se Švédskem
@@ -131,6 +103,7 @@ items:
   nuclear: 0.0
   renewables: 39.9
   production: 7.2
+  net-imports: 2.6
   intensity: 481.0
   text: Estonsko má jednu z největších uhlíkových intenzit výroby elektřiny ze zemí
     EU. Většina elektřiny totiž pochází z [ropných břidlic](https://bankwatch.org/blog/estonia-s-dirty-secret-oil-shale),
@@ -158,6 +131,7 @@ items:
   nuclear: 33.0
   renewables: 52.9
   production: 71.5
+  net-imports: 17.8
   intensity: 146.0
   text: Největší část finské elektřiny produkuje pět [jaderných reaktorů](https://world-nuclear.org/information-library/country-profiles/countries-a-f/finland.aspx)
     a poslední reaktor v elektrárně Olkiluoto byl spuštěn teprve v roce 2022 (s téměř
@@ -172,6 +146,7 @@ items:
   nuclear: 68.9
   renewables: 22.2
   production: 550.4
+  net-imports: -45.0
   intensity: 67.4
   text: Francie má ze všech zemí největší podíl [jaderné energie](https://www.statista.com/statistics/270367/share-of-nuclear-power-in-the-power-supply-of-selected-countries/)
     – téměř 70 % elektřiny pochází z tohoto zdroje. Země začala budovat reaktory ve
@@ -188,6 +163,7 @@ items:
   nuclear: 0.0
   renewables: 69.6
   production: 15.1
+  net-imports: 4.0
   intensity: 211.0
   text: Nejdůležitějším zdrojem elektřiny jsou pro Chorvatsko vodní elektrárny, které
     tvoří téměř polovinu produkce. Země dále spoluvlastní jadernou elektrárnu [Krško](https://bankwatch.org/beyond-fossil-fuels/the-energy-sector-in-croatia)
@@ -202,26 +178,9 @@ items:
   nuclear: 2.6
   renewables: 19.4
   production: 1713.8
+  net-imports: -1.9
   intensity: 637.0
-  text: Indie prochází v posledních desetiletích značným ekonomickým vývojem, který
-    sebou nese výrazný růst poptávky po elektřině. Vzhledem ke stavu rozvoji Indie
-    je tento proces v mnohém komplikovaný a existují [problémy se stabilitou dodávek](https://time.com/6173769/india-heatwave-climate-change-coal/)
-    například v důsledku vln veder. Dochází ovšem i k úspěchům v [rozšiřování dostupnosti
-    elektřiny](https://www.iea.org/reports/india-energy-outlook-2021/energy-in-india-today)
-    – za posledních dvacet let bylo k síti připojeno 900 milionů lidí. Téměř tři čtvrtiny
-    produkce elektřiny pochází z uhlí a očekává se, že závislost na uhlí bude trvat
-    i do budoucna. [Uhlí](https://www.brookings.edu/blog/planetpolicy/2019/03/08/coal-is-king-in-india-and-will-likely-remain-so/)
-    má v indické společnosti významnou roli a indická státní firma Coal India Limited
-    je klíčovým zdrojem příjmů a zaměstnanosti pro mnoho chudších indických států.
-    Poplatky za převoz uhlí po železnici zároveň slouží jako křížová dotace pro snižování
-    cen běžným cestujícím. Indie má ambiciozní plány pro instalaci obnovitelných zdrojů
-    a plánuje ztrojnásobit kapacitu [jaderných elektráren](https://world-nuclear.org/information-library/country-profiles/countries-g-n/india.aspx).
-    V Indii se nachází [největší solární park](https://ornatesolar.com/blog/the-5-largest-solar-power-plants-in-the-world)
-    na světě s instalovanou kapacitou 2245 MW a deseti miliony solárních panelů. Prioritou
-    je ovšem stále ekonomický rozvoj a potlačování chudoby, omezování uhelných elektráren
-    může do budoucna být spojeno spíše s bojem proti znečištění ovzduší [(74)](https://www.brookings.edu/blog/planetpolicy/2019/03/08/coal-is-king-in-india-and-will-likely-remain-so/).
-    Produkce elektřiny v Indii roku 2050 může podle některých scénářů být čtyř až
-    pětinásobná oproti současnému stavu [(75)](https://www.bp.com/en/global/corporate/energy-economics/energy-outlook/country-and-regional-insights/india-insights.html).
+  text: Indie prochází v posledních desetiletích značným ekonomickým vývojem, který s sebou nese výrazný růst poptávky po elektřině. Vzhledem ke stavu rozvoji země je tento proces v mnohém komplikovaný a vyskytují se [problémy se stabilitou dodávek](https://time.com/6173769/india-heatwave-climate-change-coal/), například v důsledku vln veder. Dochází ovšem i k úspěchům v [rozšiřování dostupnosti elektřiny](https://www.iea.org/reports/india-energy-outlook-2021/energy-in-india-today) – za posledních dvacet let bylo k síti připojeno 900 milionů lidí. Téměř tři čtvrtiny produkce elektřiny pocházejí z uhlí a očekává se, že závislost na uhlí bude pokračovat i do budoucna. [Uhlí](https://www.brookings.edu/blog/planetpolicy/2019/03/08/coal-is-king-in-india-and-will-likely-remain-so/) hraje v Indii významnou roli – pro mnoho chudších indických států je státní firma Coal India Limited klíčovým zdrojem příjmů a důležitým zaměstnavatelem. Poplatky za převoz uhlí po železnici zároveň slouží jako křížová dotace v tom smyslu, že snižují ceny běžným cestujícím. Indie má ambiciózní plány na instalaci obnovitelných zdrojů a plánuje ztrojnásobit kapacitu [jaderných elektráren](https://world-nuclear.org/information-library/country-profiles/countries-g-n/india.aspx). V zemi se nachází [největší solární park](https://ornatesolar.com/blog/the-5-largest-solar-power-plants-in-the-world) na světě s instalovanou kapacitou 2245 MW a deseti miliony solárních panelů. Prioritou je ovšem stále ekonomický rozvoj a potlačování chudoby, proto omezování uhelných elektráren může být do budoucna spojeno spíše s bojem proti znečištění ovzduší [(74)](https://www.brookings.edu/blog/planetpolicy/2019/03/08/coal-is-king-in-india-and-will-likely-remain-so/). Oproti současnému stavu může být podle některých scénářů produkce elektřiny v Indii v roce 2050 čtyř- až pětinásobná [(75)](https://www.bp.com/en/global/corporate/energy-economics/energy-outlook/country-and-regional-insights/india-insights.html).
 - code: IRL
   name: Irsko
   flag-url: https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
@@ -229,6 +188,7 @@ items:
   nuclear: 0.0
   renewables: 36.8
   production: 31.6
+  net-imports: 1.6
   intensity: 364.0
   text: 'Irsko vyvíjelo v minulosti značnou aktivitu v oblasti větrné energie, proto
     je dnes téměř třetina spotřeby země pokryta tímto zdrojem. Pro energetické účely
@@ -242,6 +202,7 @@ items:
   nuclear: 0.0
   renewables: 40.6
   production: 286.4
+  net-imports: 42.8
   intensity: 341.0
   text: Itálie je výrazně závislá na [výrobě elektřiny z plynu](https://www.statista.com/statistics/787720/natural-gas-imports-by-country-of-origin-in-italy/),
     který dováží převážně z Ruska a Alžírska. V roce 1987 proběhlo referendum, v němž
@@ -258,23 +219,9 @@ items:
   nuclear: 6.4
   renewables: 22.6
   production: 958.5
+  net-imports: 0.0
   intensity: 479.0
-  text: Více než dvě třetiny elektrřiny pochází ze zemního plynu a uhlí, které mají
-    podobný podíl v mixu elektřiny. Japonsko je [největším dovozcem zkapalněného zemního
-    plynu](https://www.naturalgasworld.com/japan-again-become-worlds-biggest-lng-importer-103243)
-    na světě. [Jaderný sektor](https://world-nuclear.org/information-library/country-profiles/countries-g-n/japan-nuclear-power.aspx)
-    v Japonsku prochází turbulentními změnami v důsledku jaderné havárie v elektrárně
-    Fukušima v roce 2011, která byla druhou největší jadernou havárií v historii po
-    Černobylu. Před havárií dodávaly jaderné elektrárny téměř třetinu elektřiny, ovšem
-    v důsledku havárie docházelo k odstavování reaktorů. Tento trend se v posledních
-    letech mění a některé jaderné elektrárny se znovu spouští a dodávají kolem šesti
-    procent elektřiny. Plány na opětovné spouštění jaderných reaktorů se zrychlily
-    po útoku Ruska na Ukrajinu, ovšem otázka jaderných elektráren je v Japonsku stále
-    velmi citlivé politické téma. Růst obnovitelných zdrojů probíhá převážně v oblasti
-    solární energie. Japonsko má ovšem potenciál stát se jedním z největších světových
-    producentů elektřiny z větru, nicméně doposud byl její rozvoj tlumen neadekvátní
-    politickou podporou, nedostatečnou infrastrukturou a [velmi hlubokými pobřežními
-    vodami](https://www.nature.com/articles/d42473-022-00217-8).
+  text: Více než dvě třetiny elektřiny pocházejí ze zemního plynu a uhlí (podíl obou v celkovém mixu je podobný). Japonsko je [největším dovozcem zkapalněného zemního plynu](https://www.naturalgasworld.com/japan-again-become-worlds-biggest-lng-importer-103243) na světě. [Jaderný sektor](https://world-nuclear.org/information-library/country-profiles/countries-g-n/japan-nuclear-power.aspx) v zemi prochází od havárie v elektrárně Fukušima v roce 2011 turbulentními změnami – šlo o druhou největší jadernou havárii v historii (po Černobylu). Před havárií dodávaly jaderné elektrárny téměř třetinu elektřiny, po ní docházelo k odstavování reaktorů. Tento trend se nicméně v posledních letech mění a některé jaderné elektrárny jsou spouštěny znovu (celkem dnes dodávají cca 6 % elektřiny). Plány na opětovné spouštění jaderných reaktorů se zrychlily po útoku Ruska na Ukrajinu, ovšem otázka jaderných elektráren je v Japonsku stále velmi citlivé politické téma. Růst obnovitelných zdrojů probíhá převážně v oblasti solární energie. Zároveň má Japonsko potenciál stát se jedním z největších světových producentů elektřiny z větru – doposud byl však její rozvoj tlumen neadekvátní politickou podporou, nedostatečnou infrastrukturou a [velkou hloubkou pobřežních vod](https://www.nature.com/articles/d42473-022-00217-8).
 - code: KEN
   name: Keňa
   flag-url: https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg
@@ -282,20 +229,9 @@ items:
   nuclear: 0.0
   renewables: 91.7
   production: 11.8
+  net-imports: 0.1
   intensity: 87.1
-  text: V mixu výroby elektřiny Keni jsou významně zastoupeny nízkouhlíkové zdroje.
-    Největším zdrojem elektřiny, s více než 40 % podílem, je pro Keňu [geotermální
-    energie](https://www.rapidtransition.org/stories/doing-development-differently-how-kenya-is-rapidly-emerging-as-africas-renewable-energy-superpower/).
-    Země také historicky spoléhala na vodní elektrárny a v posledních letech výrazně
-    narůstá kapacita především větrných elektráren. V zemi se nachází [nějvětší větrná
-    farma v Africe](https://en.wikipedia.org/wiki/Lake_Turkana_Wind_Power_Station).
-    Keňa rychle postupuje v elektrifikaci země a připojování svých občanů k síti,
-    ovšem přístup k elektřině stále není univerzální. Mnoho instalovaných solárních
-    panelů také [není připojeno k síti](https://centurionlg.com/2022/02/01/renewable-energy-growth-in-kenya/),
-    zejména v odlehlých oblastech země. Plány na výstavbu první keňské uhelné elektrárny
-    byly nakonec v roce 2019 [zrušeny](https://chinadialogue.net/en/energy/lamu-kenyan-coal-project-chinese-investors-take-environmental-risks-seriously/)
-    v důsledku soudního sporu ohledně špatně provedené studii o environmentálních
-    a sociálních dopadech projektu.
+  text: V této zemi jsou v mixu výroby elektřiny významně zastoupeny nízkouhlíkové zdroje. Největším zdrojem, s více než 40% podílem, je pro Keňu [geotermální energie](https://www.rapidtransition.org/stories/doing-development-differently-how-kenya-is-rapidly-emerging-as-africas-renewable-energy-superpower/). Země dříve spoléhala i na vodní elektrárny a v posledních letech zde především výrazně narůstá kapacita elektráren větrných – v zemi se nachází [největší větrná farma v Africe](https://en.wikipedia.org/wiki/Lake_Turkana_Wind_Power_Station). Keňa rychle postupuje v elektrifikaci země a připojování svých občanů k síti, přesto přístup k elektřině stále nemají všichni. [K síti také zatím není připojeno](https://centurionlg.com/2022/02/01/renewable-energy-growth-in-kenya/), mnoho instalovaných solárních panelů, zejména v odlehlých oblastech. Plány na výstavbu první keňské uhelné elektrárny byly nakonec v roce 2019 [zrušeny](https://chinadialogue.net/en/energy/lamu-kenyan-coal-project-chinese-investors-take-environmental-risks-seriously/) v důsledku soudního sporu, který se týkal špatně provedené studie o environmentálních a sociálních dopadech projektu.
 - code: CYP
   name: Kypr
   flag-url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg
@@ -303,6 +239,7 @@ items:
   nuclear: 0.0
   renewables: 15.2
   production: 5.1
+  net-imports: 0.0
   intensity: 600.0
   text: Kypr spoléhá při produkci elektřiny převážně na [spalování těžkých topných
     olejů](https://www.trade.gov/country-commercial-guides/cyprus-energy). V posledních
@@ -317,6 +254,7 @@ items:
   nuclear: 0.0
   renewables: 62.8
   production: 4.2
+  net-imports: 9.0
   intensity: 245.0
   text: Dříve Litva získávala až 83 % elektřiny ze dvou jaderných reaktorů v elektrárně
     Ignalina, v letech 2004 a 2009 však byly reaktory uzavřeny, čímž došlo k velmi
@@ -332,6 +270,7 @@ items:
   nuclear: 0.0
   renewables: 63.6
   production: 5.8
+  net-imports: 1.8
   intensity: 224.0
   text: Nejvíce lotyšské elektřiny pochází z vodních elektráren, zejména tří největších
     na řece Daugava. Dalším významným zdrojem je zemní plyn. Rozvoj obnovitelných
@@ -344,6 +283,7 @@ items:
   nuclear: 0.0
   renewables: 80.5
   production: 1.2
+  net-imports: 5.7
   intensity: 187.0
   text: Lucembursko bylo ještě okolo roku 2012 z téměř 90 % závislé na zemním plynu.
     Od jeho využívání však v průběhu let do velké míry [odstoupilo](https://iea.blob.core.windows.net/assets/8875d562-756c-414c-bc7e-5fc115b1a38c/Luxembourg_2020_Energy_Policy_Review.pdf).
@@ -356,6 +296,7 @@ items:
   nuclear: 44.5
   renewables: 19.2
   production: 36.0
+  net-imports: 12.8
   intensity: 233.0
   text: Klíčovým zdrojem elektřiny pro Maďarsko je [jaderná elektrárna](https://world-nuclear.org/information-library/country-profiles/countries-g-n/hungary.aspx)
     Paks se svými čtyřmi reaktory, která je v současné době rozšiřovaná o další dva
@@ -370,6 +311,7 @@ items:
   nuclear: 0.0
   renewables: 10.1
   production: 2.2
+  net-imports: 0.5
   intensity: 452.0
   text: Malta je převážně závislá na [zemním plynu](https://www.enemalta.com.mt/about-us/history-of-electricity/),
     který začala ve velkém využívat v roce 2016 namísto produkce elektřiny z ropy.
@@ -384,6 +326,7 @@ items:
   nuclear: 0.0
   renewables: 19.8
   production: 41.3
+  net-imports: 1.0
   intensity: 610.0
   text: Hlavním zdrojem elektřiny v Maroku je uhlí, jehož spotřeba v posledních letech
     stoupá. Dalšími zdroji elektřiny jsou zemní plyn a topné oleje. Maroko se zároveň
@@ -405,6 +348,7 @@ items:
   nuclear: 11.9
   renewables: 39.6
   production: 582.2
+  net-imports: -18.6
   intensity: 366.0
   text: Německo se se svou politikou [Energiewende](https://www.cleanenergywire.org/easyguide)
     staví do pozice jednoho z hlavních lídrů přechodu na obnovitelné zdroje energie
@@ -427,6 +371,7 @@ items:
   nuclear: 3.1
   renewables: 33.3
   production: 121.6
+  net-imports: 0.2
   intensity: 389.0
   text: Nizozemsko je [největším producentem](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/10590.pdf)
     zemního plynu v EU. Historicky byl zemní plyn důležitou součástí nizozemské energetiky
@@ -445,6 +390,7 @@ items:
   nuclear: 0.0
   renewables: 99.5
   production: 151.2
+  net-imports: -17.6
   intensity: 26.1
   text: Norsko má elektřinu převážně z vodních elektráren, které pokrývají přes 90
     % spotřeby země. V posledních letech dochází i k většímu využívání větrné energie.
@@ -457,6 +403,7 @@ items:
   nuclear: 0.0
   renewables: 17.1
   production: 178.8
+  net-imports: 0.9
   intensity: 660.0
   text: Polsko je nadále silně závislé na uhlí a najdeme zde i [největší uhelnou elektrárnu](https://www.statista.com/statistics/1264199/largest-operational-coal-power-plants-by-capacity-in-the-eu-27/)
     v EU (poblíž města Bełchatów). Uhlí má dosud velkou podporu mezi politiky a odbory.
@@ -475,6 +422,7 @@ items:
   nuclear: 0.0
   renewables: 63.8
   production: 49.4
+  net-imports: 4.8
   intensity: 219.0
   text: Téměř třetina domácí produkce elektřiny je ze zemního plynu. V Portualsku
     ale zároveň výrazně přibývá obnovitelných zdrojů, zejména vítr má již více než
@@ -491,6 +439,7 @@ items:
   nuclear: 0.0
   renewables: 78.8
   production: 67.0
+  net-imports: 7.5
   intensity: 148.0
   text: Rakousko ve velkém využívá vodní elektrárny, které díky geografickým podmínkám
     Alp pokryjí téměř 60 % potřebné elektřiny. V Rakousku v roce 1978 proběhlo referendum,
@@ -505,6 +454,7 @@ items:
   nuclear: 19.1
   renewables: 44.5
   production: 59.1
+  net-imports: 2.2
   intensity: 256.0
   text: Rumunsko je [druhým největším producentem zemního plynu](https://www.blue-europe.eu/analysis-en/country-analysis/romanian-energy-sector-how-current-events-might-foster-its-development/)
     v EU. Historicky to byl i jeden z hlavních evropských producentů ropy, v průběhu
@@ -520,6 +470,7 @@ items:
   nuclear: 0.0
   renewables: 40.5
   production: 54.7
+  net-imports: 3.7
   intensity: 353.0
   text: Nejvíce řecké elektřiny dnes pochází ze zemního plynu, který postupně nahrazoval
     uhlí. V současné době je [uhelný phase-out](/infografiky/uhelny-phaseout-eu) plánován
@@ -534,6 +485,7 @@ items:
   nuclear: 52.5
   renewables: 23.6
   production: 30.0
+  net-imports: 0.8
   intensity: 168.0
   text: Nejvíce elektřiny se na Slovensku vyrábí v [jaderných elektrárnách](https://world-nuclear.org/information-library/country-profiles/countries-o-s/slovakia.aspx)
     Jaslovské Bohunice a Mochovce. Slovensko momentálně rozšiřuje jadernou elektrárnu
@@ -549,6 +501,7 @@ items:
   nuclear: 36.6
   renewables: 34.9
   production: 15.6
+  net-imports: -0.3
   intensity: 239.0
   text: Slovinsko s Chorvatskem spoluvlastní jadernou elektárnu [Krško](https://balkangreenenergynews.com/slovenia-croatia-mull-building-second-unit-at-nuclear-power-plant-krsko/),
     která se nachází na slovinském území a zároveň se uvažuje o jejím rozšíření. Jaderná
@@ -563,6 +516,7 @@ items:
   nuclear: 20.9
   renewables: 46.4
   production: 270.8
+  net-imports: 0.9
   intensity: 194.0
   text: Hlavním zdrojem elektřiny je zde stále ještě zemní plyn, v dalších letech
     však již bude na prvním místě vítr. Země má také sedm aktivních [jaderných reaktorů](https://www.foronuclear.org/en/nuclear-power/nuclear-power-in-spain/).
@@ -582,6 +536,7 @@ items:
   nuclear: 30.8
   renewables: 67.4
   production: 171.8
+  net-imports: -25.6
   intensity: 45.8
   text: Co se týče výroby elektřiny, Švédsko má [nejnižší uhlíkovou intenzitu](https://ourworldindata.org/grapher/carbon-intensity-electricity?tab=table)
     ze všech zemí na světě. Převážně za to vděčí vodním elektrárnám. Dalším významným
@@ -598,6 +553,7 @@ items:
   nuclear: 55.4
   renewables: 14.0
   production: 155.7
+  net-imports: -2.0
   intensity: 240.0
   text: Hlavním zdrojem elektřiny na Ukrajině jsou čtyři jaderné elektrárny s patnácti
     jadernými reaktory, mezi které patří i Zaporožská jaderná elektárna, která je
@@ -615,16 +571,9 @@ items:
   nuclear: 0.0
   renewables: 78.1
   production: 15.8
+  net-imports: -1.1
   intensity: 147.0
-  text: Nejvíce elektřiny dodávají větrné elektrány s téměř třetinovým podílem. Od
-    roku 2013 došlo k výraznému růstu a téměř ztřicetinásobení instalovaného výkonu
-    větrných elektráren. Obnovitelné zdroje doplňují vodní elektrárny, které v minulosti
-    dodávaly téměř [100 % produkce elektřiny](https://www.iea.org/countries/uruguay),
-    ovšem se značnými meziročními výkyvy. Zejména díky větrným elektrárnám se země
-    stala [exportérem elektřiny](https://www.trade.gov/country-commercial-guides/uruguay-renewable-energy-equipment),
-    zatímco před rozvojem větrných elektráren musela často dovážet elektřinu ze sousedních
-    států. V posledních letech je ovšem vidět i nárůst produkce elektřiny ze zemního
-    plynu.
+  text: Nejvíce elektřiny dodávají větrné elektrárny se skoro třetinovým podílem – od roku 2013 došlo k výraznému nárůstu a téměř ztřicetinásobení jejich instalovaného výkonu. Dalším obnovitelným zdrojem jsou vodní elektrárny, které v minulosti zajišťovaly téměř [100 % produkce](https://www.iea.org/countries/uruguay), ovšem se značnými meziročními výkyvy. Zejména díky větrným elektrárnám se země stala [exportérem elektřiny](https://www.trade.gov/country-commercial-guides/uruguay-renewable-energy-equipment) – předtím musela často elektřinu ze sousedních států dovážet. V posledních letech ovšem v Uruguayi narůstá i produkce elektřiny ze zemního plynu.
 - code: USA
   name: USA
   flag-url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg
@@ -632,24 +581,9 @@ items:
   nuclear: 18.7
   renewables: 20.7
   production: 4152.2
+  net-imports: 39.3
   intensity: 379.0
-  text: Hlavním zdrojem elektřiny v USA je zemní plyn, který je téměř kompletně [domácího
-    původu](https://www.eia.gov/energyexplained/natural-gas/where-our-natural-gas-comes-from.php)
-    a stává se zároveň i produktem pro export. Druhým nejdůležitějším zdrojem je uhlí,
-    které ovšem postupně tvoří menší část mixu výroby elektřiny, převážně z ekonomických
-    důvodů, a je [nahrazován](https://siepr.stanford.edu/publications/policy-brief/what-killing-us-coal-industry)
-    levným plynem a do menší míry obnovitelnými zdroji. Důležitým zdrojem elektřiny
-    jsou také [jaderné elektrárny](https://world-nuclear.org/information-library/country-profiles/countries-t-z/usa-nuclear-power.aspx)
-    – USA má nejvíce instalované jaderné kapacity na světě s 92 reaktory. Zároveň
-    jde spíše o stagnující sektor a instalovaná kapacita postupem času mírně klesá,
-    s tím jak se starší reaktory postupem času uzavírají a nejsou nahrazovány novými.
-    V posledních letech dochází k výraznému nárůstu kapacity obnovitelných zdrojů,
-    převážně z větru. V budoucích letech tento růst může ještě více [zrychlit](https://www.scientificamerican.com/article/u-s-renewable-energy-will-surge-past-coal-and-nuclear-by-years-end/)
-    v důsledku podpory plynoucí z Inflation Reduction Act, který obsahuje ambiciozní
-    cíle ohledně energetické tranzice. Tradičním zdrojem elektřiny jsou pro některé
-    státy USA vodní elektrárny, mnoho z nich ovšem v posledních letech začíná mít
-    [problémy](https://www.preventionweb.net/news/hydropowers-future-clouded-droughts-floods-and-climate-change-its-also-essential-us-electric)
-    v důsledku měnícího se klimatu.
+  text: Hlavním zdrojem elektřiny v USA je zemní plyn, který je téměř výhradně [domácího původu](https://www.eia.gov/energyexplained/natural-gas/where-our-natural-gas-comes-from.php) a země jej i vyváží. Druhým nejdůležitějším zdrojem je uhlí, jeho podíl v celkovém mixu výroby elektřiny nicméně postupně klesá (převážně z ekonomických důvodů) a [nahrazuje](https://siepr.stanford.edu/publications/policy-brief/what-killing-us-coal-industry) jej levný plyn a v menší míře obnovitelné zdroje. Důležitým zdrojem elektřiny jsou také [jaderné elektrárny](https://world-nuclear.org/information-library/country-profiles/countries-t-z/usa-nuclear-power.aspx) – USA má nejvíce instalované jaderné kapacity na světě (92 reaktorů). Zároveň tento sektor spíše stagnuje a instalovaná kapacita pozvolna klesá s tím, jak se starší reaktory postupně uzavírají a nejsou nahrazovány novými. V posledních letech rovněž dochází k výraznému nárůstu kapacity obnovitelných zdrojů, převážně výroby z větru. V budoucnu může tento růst ještě více [zrychlit](https://www.scientificamerican.com/article/u-s-renewable-energy-will-surge-past-coal-and-nuclear-by-years-end/) díky podpoře plynoucí z Inflation Reduction Act, který obsahuje ambiciózní cíle v oblasti energetické transformace. Tradičním zdrojem elektřiny jsou pro některé státy USA vodní elektrárny, mnohé z nich však v důsledku měnícího se klimatu začínají mít v poslední době [problémy](https://www.preventionweb.net/news/hydropowers-future-clouded-droughts-floods-and-climate-change-its-also-essential-us-electric).
 - code: GBR
   name: Velká Británie
   flag-url: https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_(3-5).svg
@@ -657,6 +591,7 @@ items:
   nuclear: 15.3
   renewables: 39.8
   production: 307.2
+  net-imports: 24.1
   intensity: 268.0
   text: V současné době je zde hlavním zdrojem elektřiny zemní plyn. Téměř polovina
     pochází z domácí těžby a zbytek se [dováží](https://heatable.co.uk/boiler-advice/where-does-the-UK-get-its-gas-from)
