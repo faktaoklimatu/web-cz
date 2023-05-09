@@ -161,7 +161,7 @@ EU bude rovněž poskytovat **finanční podporu a technickou pomoc těm, které
 
 ### 2021 – Evropský klimatický zákon a Fit for 55
 
-V roce 2021 byl přijat **Evropský klimatický zákon** (Evropský právní ráměc pro klima), který **činí klimatické cíle vytyčené Zelenou dohodou pro Evropu právně závaznými**. EU tak má do roku 2050 dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary>, tedy toho že jako celek nebude do atmosféry vypouštět více emisí skleníkových plynů, než kolik z ní dokáže odstranit. Klimatický zákon EU zároveň obsahuje střednědobý cíl, a to snížit unijní emise skleníkových plynů do roku 2030 o 55 % oproti roku 1990.
+**Přijetím Evropského klimatického zákona** (Evropského právního rámce pro klima) v roce 2021 **se klimatické cíle vytyčené Zelenou dohodou pro Evropu stávají právně závaznými**. EU tak má do roku 2050 dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary>, což znamená, že jako celek nebude do atmosféry vypouštět více emisí skleníkových plynů, než kolik z ní dokáže odstranit. Klimatický zákon EU zároveň obsahuje střednědobý cíl do roku 2030 – snížit do této doby unijní emise skleníkových plynů o 55 % (oproti roku 1990).
 
 {% include preview-box.html
     title="Co je balíček Fit for 55"
@@ -169,9 +169,9 @@ V roce 2021 byl přijat **Evropský klimatický zákon** (Evropský právní rá
     slug="fit-for-55"
 %}
 
-V návaznosti na střednědobý cíl (snížit emise skleníkových plynů o 55 % do roku 2030) představila Evropská komise v témže roce balíček legislativních návrhů pod názvem **Fit for 55**, které mají k dosažení tohoto cíle přispět. Balíček obsahuje jak návrhy upravující stávající směrnice či nařízení, tak úplně nové legislativní návrhy. Zaměřuje se například na oblasti vyššího podílu obnovitelných zdrojů na spotřebě energie, energetickou účinnost, obchodování s emisními povolenkami či upravuje pravidla pro využívání půdy a lesnictví. Mimo to navrhuje i vznik Sociálního klimatického fondu, jehož cílem je učinit transformaci sociálně spravedlivější.
+V návaznosti na tento střednědobý cíl představila Evropská komise v témže roce balíček legislativních návrhů pod názvem **Fit for 55**, které mají k dosažení tohoto cíle přispět. Balíček obsahuje jak návrhy upravující současné směrnice či nařízení, tak úplně nové legislativní návrhy. Zaměřuje se například na oblasti jako vyšší podíl obnovitelných zdrojů na spotřebě energie, energetická účinnost, obchodování s emisními povolenkami či upravuje pravidla pro využívání půdy a lesnictví. Mimoto navrhuje i vznik Sociálního klimatického fondu, který by měl pomoci zajistit sociálně spravedlivější transformaci.
 
 **Zdroje:**
 
-- [Úplné znění Evropského klimatické zákona](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119&from=EN)
+- [Úplné znění Evropského klimatického zákona](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119&from=EN)
 - Informace o balíčku Fit for 55 na [stránkách Rady EU](https://www.consilium.europa.eu/cs/policies/green-deal/fit-for-55-the-eu-plan-for-a-green-transition/)
