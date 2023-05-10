@@ -11,21 +11,21 @@
     <h5 class="card-header" id="{{ include.id }}">
         {% if include.flag-url %}
             <img src="{{ include.flag-url }}" class="mr-2 country-flag" alt="Vlajka země či území: {{ include.name }}" />
-        {% endif -%}
+        {% endif %}
         {{ include.name }}
     </h5>
-    <div style="display: grid; grid-template-columns: 3fr auto 3fr;">
-        <div class="card-body">
-            <img class="w-100" src="/assets-local/figures/2023-reserse-transformace-mixu/{{ include.id }}.svg" alt="Ternární graf zobrazující proměnu mixu výroby elektřiny v čase" />
+    <div class="card-content-container">
+        <div class="card-body mix-triangle">
+            <img src="/assets-local/figures/2023-reserse-transformace-mixu/{{ include.id }}.svg" alt="Ternární graf zobrazující proměnu mixu výroby elektřiny v čase" />
         </div>
-        <div class="card-body">
+        <div class="card-body mix-figures">
             <dl>
-                <dt style="color: #8c2c79">Fosilní paliva</dt>
-                <dd style="color: #8c2c79">{{ include.fossil | replace_first: ".", "," }} %</dd>
-                <dt style="color: #024b7a">Jádro</dt>
-                <dd style="color: #024b7a">{{ include.nuclear | replace_first: ".", "," }} %</dd>
-                <dt style="color: #f58800">Obnovitelné zdroje</dt>
-                <dd style="color: #f58800">{{ include.renewables | replace_first: ".", "," }} %</dd>
+                <dt class="mix-fossil">Fosilní paliva</dt>
+                <dd class="mix-fossil">{{ include.fossil | replace_first: ".", "," }} %</dd>
+                <dt class="mix-nuclear">Jádro</dt>
+                <dd class="mix-nuclear">{{ include.nuclear | replace_first: ".", "," }} %</dd>
+                <dt class="mix-renewables">Obnovitelné zdroje</dt>
+                <dd class="mix-renewables">{{ include.renewables | replace_first: ".", "," }} %</dd>
                 <dt>Hrubá roční výroba</dt>
                 <dd>{{ include.production | replace_first: ".", "," }} TWh</dd>
                 <dt>{% if include.net-imports >= 0 %}Čistý import{% else %}Čistý export{% endif %}</dt>
