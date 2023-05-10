@@ -54,10 +54,8 @@ Obecně řečeno: největší rozvoj jaderných elektráren ve světě probíhal
 
 ## Počátky elektrifikace
 
-*Období: přibližně konec 19. století až konec 2. světové války*
-
-*Převažující přístup: dominantní role trhu*
-
+*Období: přibližně konec 19. století až konec 2. světové války*<br>
+*Převažující přístup: dominantní role trhu*<br>
 *Klíčová slova: počátky elektrifikace, decentralizované systémy, soukromí aktéři, města*
 
 Rozvoj prvních elektráren a energetických závodů v Evropě a USA byl v tomto období **veden především soukromým sektorem, bez větších státních zásahů**. Ke konci 19. století začaly vznikat i elektrárny vlastněné městy. V počátcích elektrifikace nic jako národní elektrická síť neexistovalo, spíše šlo o jakousi směsici vzájemně nekompatibilních systémů, jež byly často zasazeny do největších měst či průmyslových podniků.[^nekompatibilita] Jejich **sjednocování začalo systematicky probíhat až v meziválečném období**,[^sjednocovani] kdy si státy uvědomily, jaký význam má elektřina pro jejich rozvoj a hospodářství, a zároveň začaly usilovat o to, aby elektřina byla dostupná co největšímu počtu domácností. Postupně tak začal převažovat přístup s **větším vlivem veřejného sektoru a státu**.
@@ -66,10 +64,8 @@ Konkrétně v Československu se decentralizované elektrické systémy začaly 
 
 ## Období po 2. světové válce
 
-*Období: po 2. světové válce do 90. let*
-
-*Převažující přístup: dominantní role státu*
-
+*Období: po 2. světové válce do 90. let* <br>
+*Převažující přístup: dominantní role státu*<br>
 *Klíčová slova: vertikální monopol, znárodnění, bezpečnost, strategické plánování*
 
 Toto období se vyznačuje **silnou rolí státu** – výrobu a distribuci elektřiny mívá zpravidla na starost státem vlastněná energetická firma (často se jedná o monopol). Jaké zdroje elektřiny budou při výrobě dominantní, je především otázkou národní strategie, jejíž prioritou je zajistit **energetickou bezpečnost země**. Jako klíčové jsou vnímány dodávky elektřiny pro nejdůležitější průmyslová odvětví, ale do popředí vstupuje i otázka **co nejvyšší dostupnosti elektřiny** pro všechny skupiny obyvatel. Elektřina se tak zároveň stává otázkou sociální politiky a její cena nemusí nutně odpovídat reálným nákladům.
@@ -82,10 +78,8 @@ Geopolitické směřování naší země v tomto období vede ke snahám o vět�
 
 ## Nástup trhu
 
-*Období: od 90. let do současnosti*
-
-*Převažující přístup: dominantní role trhu*
-
+*Období: od 90. let do současnosti*<br>
+*Převažující přístup: dominantní role trhu*<br>
 *Klíčová slova: unbundling, privatizace, budování evropského trhu s elektřinou, EU ETS*
 
 V tomto období **získává trh znovu větší vliv než stát**. Dochází k částečným či úplným privatizacím národních energetických firem a otevírání trhu jiným subjektům. Spotřebitel tak může volit mezi více dodavateli. Klíčovým konceptem v rámci tržního přístupu je tzv. unbundling, který označuje oddělení výroby elektřiny od její distribuce – jedna firma tak nesmí přímo vlastnit a spravovat například elektrárnu a zároveň přenosovou či distribuční soustavu.[^unbundling] **Elektřina se stává obchodovatelnou komoditou** a její prodej se přesouvá na burzy, které bývají i mezinárodně propojené. V liberalizovaném prostředí už cena elektřiny více odpovídá reálným systémovým nákladům. Zejména v posledních letech vystupuje do popředí také potřeba **mitigace změny klimatu a snížení emisní náročnosti elektřiny**. Postupně se zavádí zpoplatnění uhlíku, které má umožnit zakomponovat do ceny elektřiny rovněž <glossary id="externalita">externalitu</glossary> produkce CO<sub>2</sub>.[^externalita] Další možností jsou různé formy finanční podpory pro obnovitelné zdroje,[^oze] které v minulosti sehrály důležitou roli například u solární energie.
