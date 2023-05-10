@@ -39,7 +39,7 @@ TODO: Napsat intro
     </a>
 </div>
 
-<div id="country-cards-container" class="d-flex flex-column">
+<div id="mix-transformation-survey-countries">
     {% for item in countries %}
     {% include includes-local/transformace-mixu/country.html
         id=item.code
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const alphabeticProperties = ['name'];
     const $propertySelector = $('#mixes-sort-property-selector');
     const $sortOrderButton = $propertySelector.siblings('.sort-order-selector').first();
-    const $countryCards = $('#country-cards-container > .card');
+    const $countryCards = $('#mix-transformation-survey-countries > .card');
     let sortProperty = $propertySelector[0].value;
     // 1 = ascending (A→Z, 0→9), -1 = descending (Z→A, 9→0)
     let sortOrder = 1;
