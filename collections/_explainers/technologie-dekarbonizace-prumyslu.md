@@ -146,13 +146,13 @@ Protože nelze čekat výrazný pokles poptávky po základních typech průmysl
 
 [^ulozeni]: [Očekává se](https://iea.blob.core.windows.net/assets/deebef5d-0c34-4539-9d0c-10b13d840027/NetZeroby2050-ARoadmapfortheGlobalEnergySector_CORR.pdf), že 95 % zachyceného CO<sub>2</sub> bude uloženo pod zem a zbylých 5 % by bylo využito na výrobu syntetických paliv.
 [^zachyceni] Je jednodušší zachytávat CO2<sub>2</sub> při vyšších koncentracích a tudíž po odstranění většiny molekul [se proces stává více obtížným](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage)
-[^1500] [1500 °C dosahuje tekuté železo poté co opustí pec](https://www.eurofer.eu/about-steel/learn-about-steel/what-is-steel-and-how-is-steel-made/)
-[^plyn] Jedná se o proces kdy [metan reaguje s molekulami vody, která je ](https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics)
-[^253] Tento proces je [výrazně energeticky a finančně náročný](https://www.energy.gov/eere/fuelcells/liquid-hydrogen-delivery)
-[^161] Objem zkapalněného zemního plynu zaujímá přibližně [1/600](https://portal.ct.gov/PURA/Gas-Pipeline-Safety/What-is-LNG) objemu zemního plynu v klasické plynné formě.
-[^250] [75 % potřebné energie](https://www.researchgate.net/figure/Processes-with-corresponding-temperatures-and-media-required-in-a-paper-industry_tbl2_285782158) je využito právě na spalování aby bylo dosaženo potřebných teplot.
-[^1450] Takto vysoké teploty jsou nutné pro [tvorbu slínku](https://www.ametek-land.com/-/media/ameteklandinstruments/documentation/industries/cementlime/ametek_land_application_note_temperature_measurement_in_cement_manufacturing_rev1.pdf)
-[^hybrid] Nejnovější pece ve vývoji [používají 80 % elektřiny a 20 % zemního plynu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf)
-[^76] Jedná se například o [recyklaci plechovek, ale i průmyslově využitého hliníku](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector)
-[^biomasa] Jedním z problémů při rozsáhlém získávání biomasy může být [vyčerpávání půdních zásob uhlíku či organického humusu](https://www.mdpi.com/1996-1073/15/24/9619)
-[^poptavka] Největší růst se může týkat [Číny, Indie, Jihovýchodní Ásie a Afriky](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+[^1500]: [1500 °C dosahuje tekuté železo poté co opustí pec](https://www.eurofer.eu/about-steel/learn-about-steel/what-is-steel-and-how-is-steel-made/)
+[^plyn]: Jedná se o proces kdy [metan reaguje s molekulami vody, která je ](https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics)
+[^253]: Tento proces je [výrazně energeticky a finančně náročný](https://www.energy.gov/eere/fuelcells/liquid-hydrogen-delivery)
+[^161]: Objem zkapalněného zemního plynu zaujímá přibližně [1/600](https://portal.ct.gov/PURA/Gas-Pipeline-Safety/What-is-LNG) objemu zemního plynu v klasické plynné formě.
+[^250]: [75 % potřebné energie](https://www.researchgate.net/figure/Processes-with-corresponding-temperatures-and-media-required-in-a-paper-industry_tbl2_285782158) je využito právě na spalování aby bylo dosaženo potřebných teplot.
+[^1450]: Takto vysoké teploty jsou nutné pro [tvorbu slínku](https://www.ametek-land.com/-/media/ameteklandinstruments/documentation/industries/cementlime/ametek_land_application_note_temperature_measurement_in_cement_manufacturing_rev1.pdf)
+[^hybrid]: Nejnovější pece ve vývoji [používají 80 % elektřiny a 20 % zemního plynu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf)
+[^76]: Jedná se například o [recyklaci plechovek, ale i průmyslově využitého hliníku](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector)
+[^biomasa]: Jedním z problémů při rozsáhlém získávání biomasy může být [vyčerpávání půdních zásob uhlíku či organického humusu](https://www.mdpi.com/1996-1073/15/24/9619)
+[^poptavka]: Největší růst se může týkat [Číny, Indie, Jihovýchodní Ásie a Afriky](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
