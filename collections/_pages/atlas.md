@@ -50,7 +50,7 @@ Obsah jsme uspořádali do následujících tematických oddílů:
 
 Grafiky a texty jsou vytvořeny s  ohledem na laickou veřejnost a snaží se vždy dát návod, jak zobrazená data číst a co znamenají. Díky nim zjistíte, co jsou to body zlomu v různých ekosystémech, spatříte, jak se změny klimatu projevují v různých částech světa, nebo se zorientujete v tom, jak skleníkové plyny ovlivňují teplotu a řadu souvisejících jevů. V kapitole o emisních scénářích se dozvíte, co můžeme udělat pro lepší budoucnost a minimalizaci oteplování planety.
 
-V závěru najdete také seznam dalších zdrojů vědecky podložených o klimatické změně.
+V závěru najdete také seznam dalších zdrojů vědecky podložených informací o klimatické změně.
 
 ## Komu může být atlas užitečný
 
