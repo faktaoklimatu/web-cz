@@ -21,7 +21,13 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 ## Cesty transformace v Česku, Německu a Polsku
 
-Pro bližší představu přinášíme základní informace o elektroenergetice v Česku, Německu a Polsku. Obdobné informace plánujeme v budoucnu vydat pro všechny státy EU a Velkou Británii.
+{% include preview-box.html
+    title="Proměny elektroenergetiky v Evropě a dalších státech"
+    text="Další příběhy transformace, včetně grafického provedení, přinášíme v samostatné rešerši."
+    slug="2023-reserse-transformace-mixu"
+%}
+
+Pro bližší představu přinášíme základní informace o elektroenergetice v Česku, Německu a Polsku.
 
 ### Česko
 
