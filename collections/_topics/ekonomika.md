@@ -89,6 +89,7 @@ subtopics:
   - 5-transformace-dopravy
   - 6-transformace-prumyslu
   - 28-trinecke-zelezarny
+  - technologie-dekarbonizace-prumyslu
 
 - id:          "opatreni"
   title:       "Opatření: zpoplatnění emisí a další"
