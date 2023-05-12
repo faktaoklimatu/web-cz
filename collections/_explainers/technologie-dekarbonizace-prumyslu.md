@@ -55,8 +55,6 @@ Lze proto očekávat, že zelený vodík bude při dekarbonizaci průmyslu hrát
 
 Momentálně se celosvětově **95 % vodíku pro průmyslové využití vyrábí ze zemního plynu**,[^plyn] takže o jeho nízké emisní intenzitě nemůže zatím být řeč. Tato situace se ovšem může změnit – jestliže se vodík začne ve velkém vyrábět pomocí obnovitelné elektřiny. V tom případě mluvíme o **zeleném vodíku, který je považován za jednu z hlavních metod dekarbonizace průmyslu**.
 
-Dále bude nutné vybudovat infrastrukturu potřebnou k přepravě – ta je kvůli fyzikálním vlastnostem vodíku výrazně složitější než například u zemního plynu. Kvůli nízké objemové hustotě energie zabírá vodík poměrně velký objem, což komplikuje proces stlačení. Dále je nezbytné vybudovat také speciální infrastrukturu, která minimalizuje riziko úniku plynu. Pokud bychom chtěli vodík zkapalnit, museli bychom jej zchladit na -253 °C[^253] (teplota potřebná pro zkapalnění zemního plynu je -161,5 °C[^161]).
-
 {% capture vodik %}
 
 Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými “barvami”. Z hlediska možného využití jsou nejdůležitější tyto čtyři:
@@ -75,6 +73,8 @@ Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti pro
     label="Kontext: Barvy a původ vodíku"
     content=vodik
 %}
+
+Dále bude nutné vybudovat infrastrukturu potřebnou k přepravě – ta je kvůli fyzikálním vlastnostem vodíku výrazně složitější než například u zemního plynu. Kvůli nízké objemové hustotě energie zabírá vodík poměrně velký objem, což komplikuje proces stlačení. Dále je nezbytné vybudovat také speciální infrastrukturu, která minimalizuje riziko úniku plynu. Pokud bychom chtěli vodík zkapalnit, museli bychom jej zchladit na -253 °C[^253] (teplota potřebná pro zkapalnění zemního plynu je -161,5 °C[^161]).
 
 #### Můžeme očekávat, že se CCS a vodík v budoucnu významně rozšíří?
 
