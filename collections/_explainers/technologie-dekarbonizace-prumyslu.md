@@ -39,7 +39,7 @@ V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkov
 
 ### Zachytávání CO<sub>2</sub> (CCS)
 
-Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (Carbon Capture and Storage). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
+Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (Carbon Capture and Storage). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i průmyslově využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
 
 Tato technologie se pro využití v dekarbonizaci průmyslu hodí zejména v případech, kdy **chemické reakce**, při nichž vzniká CO<sub>2</sub>, **neumíme přímo nahradit** či **nedokážeme výrazně snížit** jejich emisní náročnost. Příkladem může být proces kalcinace při výrobě cementu, kdy se uhličitan vápenatý (CaCO<sub>3</sub>) mění na oxid vápenatý (CaO) a uvolňuje se oxid uhličitý (CO<sub>2</sub>). Bez tohoto chemického procesu se zatím výroba cementu neobejde, nezbývá tedy než uvolněný oxid uhličitý zachytit.
 
@@ -47,11 +47,13 @@ Projekty zachytávání CO<sub>2</sub> často cílí na **zachycení 90 % emisí
 
 Přesto se CCS u mnoha výrobních procesů v průmyslu do budoucna jeví jako **možné a efektivní řešení**, které má **potenciál využití ve velkém měřítku**.
 
-### Vodík
+### Zelený vodík
 
 **Může nahradit fosilní paliva**, která se v průmyslu spalují kvůli dodání tepla. Vhodný je zejména v situacích, kdy je nutné dosáhnout velmi vysokých teplot (např. při výrobě oceli je to okolo 1500 °C[^1500]). Zároveň může v některých případech sloužit jako **náhrada vstupních surovin**, které se používají při chemických reakcích během průmyslových procesů – tak je tomu například při výrobě amoniaku.
 
-Lze proto očekávat, že vodík bude při dekarbonizaci průmyslu hrát klíčovou roli. Míra jeho využití bude nicméně značně závislá na vývoji jeho ceny – a to zejména ve srovnání s cenou fosilních paliv. Cena vodíku je dnes příliš vysoká. Kromě toho bude též nutné zajistit dostatek vodíku získaného z nízkouhlíkových zdrojů. Momentálně se totiž **95 % vodíku na světě vyrábí ze zemního plynu**,[^plyn] takže jeho o nízké emisní intenzitě nemůže zatím být řeč. Tato situace se ovšem může změnit – jestliže se vodík začne ve velkém vyrábět z nízkoemisních (např. obnovitelných) zdrojů. V tom případě mluvíme o **zeleném vodíku, který je považován za jednu z hlavních metod dekarbonizace průmyslu**.
+Lze proto očekávat, že zelený vodík bude při dekarbonizaci průmyslu hrát klíčovou roli. Míra jeho využití bude nicméně značně závislá na vývoji jeho ceny, dnes je cena zeleného vodíku příliš vysoká. Důležité je obzvláště srovnání s cenou fosilních paliv, které může nahrazovat.
+
+Momentálně se celosvětově **95 % vodíku pro průmyslové využití vyrábí ze zemního plynu**,[^plyn] takže o jeho nízké emisní intenzitě nemůže zatím být řeč. Tato situace se ovšem může změnit – jestliže se vodík začne ve velkém vyrábět pomocí obnovitelné elektřiny. V tom případě mluvíme o **zeleném vodíku, který je považován za jednu z hlavních metod dekarbonizace průmyslu**.
 
 Dále bude nutné vybudovat infrastrukturu potřebnou k přepravě – ta je kvůli fyzikálním vlastnostem vodíku výrazně složitější než například u zemního plynu. Kvůli nízké objemové hustotě energie zabírá vodík poměrně velký objem, což komplikuje proces stlačení. Dále je nezbytné vybudovat také speciální infrastrukturu, která minimalizuje riziko úniku plynu. Pokud bychom chtěli vodík zkapalnit, museli bychom jej zchladit na -253 °C[^253] (teplota potřebná pro zkapalnění zemního plynu je -161,5 °C[^161]).
 
@@ -59,10 +61,10 @@ Dále bude nutné vybudovat infrastrukturu potřebnou k přepravě – ta je kv�
 
 Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými “barvami”. Z hlediska možného využití jsou nejdůležitější tyto čtyři:
 
-- Zelený – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
-- Růžový – získáván elektrolýzou za pomoci energie z jaderných elektráren
-- Modrý – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
-- Šedý – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
+- **Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
+- **Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
+- **Modrý** – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
+- **Šedý** – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
 
 {% endcapture %}
 
@@ -92,7 +94,7 @@ V některých odvětvích jsou ovšem při výrobě nutné tak vysoké teploty, 
 
 Mezi ně patří: recyklace, využívání biomasy a odpadů k vytápění, různé náhrady surovin či využívání alternativních produktů a také úspory díky zvyšující se efektivitě.
 
-Vědecký a technologický pokrok může do určité míry v rámci dekarbonizace průmyslu rovněž pomoci – je například možné, že budou objeveny nové, efektivnější technologie či postupy. Nicméně spoléhat na to příliš nemůžeme. Průmyslová odvětví, kde je dekarbonizace největším oříškem, existují už dlouho a výzkum a vývoj zde probíhá už mnoho let. Nové technologie a postupy tak budou mít spíše podobu **drobných zlepšení**, pravděpodobnost radikálních změn není velká.
+Vědecký a technologický pokrok může do určité míry v rámci dekarbonizace průmyslu rovněž pomoci – je například možné, že budou objeveny nové, efektivnější technologie či postupy. Nicméně spoléhat na to příliš nemůžeme. U průmyslových odvětví, kde je dekarbonizace největším oříškem, probíhá takový výzkum a vývoj už mnoho let. Nové technologie a postupy tak budou mít spíše podobu **drobných zlepšení**, pravděpodobnost radikálních změn není velká.
 
 ### Recyklace
 
@@ -102,7 +104,7 @@ Kromě toho recyklovaný materiál může být náročnější na zpracování n
 
 ### Využití odpadů a biomasy jako paliv
 
-**Dnes už funguje mnoho podniků, které odpady nebo biomasu zčásti využívají**, ani zde tedy často nebývá prostoru ke zlepšení mnoho. V konkrétních případech některých provozů (např. u cementáren) může být takový postup výhodný ekonomicky i pro přírodu, ale zdaleka jej nelze uplatnit všude. Jednak to není technicky možné a jednak by při opravdu velkém přechodu brzy došlo k problému s **nedostatkem vhodného odpadu i environmentálně udržitelné biomasy**. Navíc spalování biomasy nemusí mít tak nízkou uhlíkovou stopu, jak se často prezentuje.[^biomasa]
+**Dnes už funguje mnoho podniků, které odpady nebo biomasu zčásti využívají**, ani zde tedy často nebývá prostoru ke zlepšení mnoho. V konkrétních případech některých provozů (např. u cementáren) může být takový postup výhodný ekonomicky i pro přírodu, ale zdaleka jej nelze uplatnit všude. Jednak to není technicky možné a jednak by při opravdu velkém přechodu brzy došlo k problému s **nedostatkem vhodného odpadu i environmentálně udržitelné biomasy**. Ve spalovaném odpadu (v podobě tzv. _tuhých alternativních paliv_) je navíc velká část uhlíku fosilního původu, takže jeho využití nepřináší významné snížení emisí.[^tap] Ani spalování biomasy nemusí mít tak nízkou uhlíkovou stopu, jak se často prezentuje.[^biomasa]
 
 ### Náhrada surovin či produktu šetrnější alternativou
 
@@ -123,7 +125,7 @@ Z hlediska zvyšování efektivity a maximálních provozních úspor už mnoho 
 
 V souvislosti s dekarbonizací a transformaci průmyslu se často objevují také otázky ohledně celkového snižování spotřeby. Vzhledem ke stále rostoucí a urbanizující se populaci a fungování ekonomického systému, který je založen na ekonomickém růstu[^nerust], jsou **rozsáhlejší úspory ve spotřebě v nejbližších dekádách nepravděpodobné**. Naopak **v klíčových průmyslových odvětvích očekáváme zvýšení globální poptávky** až o desítky procent (platí například pro ocel, cement, hliník či amoniak).[^poptavka]
 
-Dále lze v souvislosti s dekarbonizací průmyslu uvažovat o **zavedení principů cirkulární ekonomiky**. Zatímco v tradičním lineárním modelu se produkt vyrobí, použije a nakonec vyhodí jako odpad, v cirkulární ekonomice jde o to pracovat se zdroji a materiály co nejefektivněji a co nejvíce je recyklovat a znovu využívat. Je zde snaha navrhnout produkt tak, aby bylo možné jej používat opakovaně, zároveň zlepšit samotný proces recyklace a také zavést systémy umožňující sdílené využívání produktů, například sdílením aut či kol, které přispívají k tomu, že se vyrábí méně. Jinými slovy: **cílem cirkulární ekonomiky je minimalizovat odpad, snížit tlak na omezené zdroje a vytvořit udržitelnější a odolnější ekonomiku**. Tento přístup postupně získává na popularitě, mimo jiné díky tomu, že umožňuje snížit náklady na zdroje a energii, redukovat emise skleníkových plynů a má řadu ekonomických i sociálních přínosů. Jeho hlavní uplatnění je ovšem spíše v segmentu konzumního zboží (například u oblečení) – daleko těžší je zavést tyto principy například při výrobě oceli, který je emisně mnohem náročnější. Ani na cirkulární ekonomiku proto nelze u dekarbonizace průmyslu příliš spoléhat.
+Dále lze v souvislosti s dekarbonizací průmyslu uvažovat o **zavedení principů [cirkulární ekonomiky](https://incien.org/wp-content/uploads/2022/10/incien_study_CZ_DIGI.pdf)**. Zatímco v tradičním lineárním modelu se produkt vyrobí, použije a nakonec vyhodí jako odpad, v cirkulární ekonomice jde o to pracovat se zdroji a materiály co nejefektivněji a co nejvíce je recyklovat a znovu využívat. Nejde tedy jen o zlepšení procesu recyklace, které rozebíráme výše. Je zde také snaha navrhnout produkt tak, aby bylo možné jej používat opakovaně, případně zavést systémy umožňující sdílené využívání produktů, například sdílením aut či kol, které přispívají k tomu, že se vyrábí méně. Jinými slovy: **cílem cirkulární ekonomiky je minimalizovat odpad, snížit tlak na omezené zdroje a vytvořit udržitelnější a odolnější ekonomiku**. Tento přístup postupně získává na popularitě, mimo jiné díky tomu, že umožňuje snížit náklady na zdroje a energii, redukovat emise skleníkových plynů a má řadu ekonomických i sociálních přínosů. Jeho hlavní uplatnění je ovšem spíše v segmentu koncových produktů (například u oblečení, osobních automobilů nebo ve stavebnictví) – daleko těžší je zavést tyto principy přímo u výroby základních průmyslových surovin, například při výrobě oceli (která je navíc emisně mnohem náročnější). Koncept cirkulární ekonomiky tedy může pomoct snižovat poptávku po základních průmyslových surovinách, ale nelze na něj u dekarbonizace průmyslu zásadně spoléhat.
 
 ## Jaké tržní a regulační nástroje mohou dekarbonizaci podpořit?
 
@@ -144,16 +146,17 @@ Protože nelze čekat výrazný pokles poptávky po základních typech průmysl
 
 ## Zdroje a poznámky
 
-[^ulozeni]: [Očekává se](https://iea.blob.core.windows.net/assets/deebef5d-0c34-4539-9d0c-10b13d840027/NetZeroby2050-ARoadmapfortheGlobalEnergySector_CORR.pdf), že 95 % zachyceného CO<sub>2</sub> bude uloženo pod zem a zbylých 5 % by bylo využito na výrobu syntetických paliv.
-[^zachyceni]: Je jednodušší zachytávat CO<sub>2</sub> při vyšších koncentracích a tudíž po odstranění většiny molekul [se proces stává více obtížným](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage).
+[^ulozeni]: [Očekává se](https://iea.blob.core.windows.net/assets/deebef5d-0c34-4539-9d0c-10b13d840027/NetZeroby2050-ARoadmapfortheGlobalEnergySector_CORR.pdf), že 95 % zachyceného CO<sub>2</sub> bude uloženo pod zem a zbylých 5 % by bylo využito na výrobu syntetických paliv. U využití zachyceného uhlíku je drobný háček: pokud vyrobíme syntetická paliva ze zachyceného uhlíku původem z fosilních paliv, tento uhlík se zase brzy uvolní do atmosféry při spálení těchto syntetických paliv. Proto je důležité zachycovat uhlík také z biomasy, abychom mohli dosáhnout neutrální emisní bilance.
+[^zachyceni]: Je jednodušší zachytávat CO<sub>2</sub> při vyšších koncentracích a tudíž po odstranění většiny molekul [se proces stává obtížnějším](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage).
 [^1500]: [1500 °C dosahuje tekuté železo poté co opustí pec](https://www.eurofer.eu/about-steel/learn-about-steel/what-is-steel-and-how-is-steel-made/).
-[^plyn]:  [Jedná se o proces kdy metan reaguje s vodní párou](https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics).
+[^plyn]:  [Jedná se o proces kdy metan reaguje s vodní párou](https://www.energy.gov/eere/fuelcells/hydrogen-fuel-basics). Při této reakci se uvolňuje CO<sub>2</sub> podobně jako při spalování metanu.
 [^253]: Tento proces je [výrazně energeticky a finančně náročný](https://www.energy.gov/eere/fuelcells/liquid-hydrogen-delivery).
 [^161]: Objem zkapalněného zemního plynu zaujímá přibližně [1/600](https://portal.ct.gov/PURA/Gas-Pipeline-Safety/What-is-LNG) objemu zemního plynu v klasické plynné formě.
 [^250]: [75 % potřebné energie](https://www.researchgate.net/figure/Processes-with-corresponding-temperatures-and-media-required-in-a-paper-industry_tbl2_285782158) je využito právě na spalování aby bylo dosaženo potřebných teplot.
 [^1450]: Takto vysoké teploty jsou nutné pro [tvorbu slínku](https://www.ametek-land.com/-/media/ameteklandinstruments/documentation/industries/cementlime/ametek_land_application_note_temperature_measurement_in_cement_manufacturing_rev1.pdf).
 [^hybrid]: Nejnovější pece ve vývoji [používají 80 % elektřiny a 20 % zemního plynu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf)
 [^76]: Jedná se například o [recyklaci plechovek, ale i průmyslově využitého hliníku](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector).
+[^tap]: Kromě cementářství je o tuhá alternativní paliva [dnes v Česku zájem](https://www.ekonews.cz/z-odpadu-je-zadane-palivo-pere-se-o-nej-kdekdo-zajem-maji-i-teplarny-a-elektrarny/) i ze strany tepláren a elektráren.
 [^biomasa]: Jedním z problémů při rozsáhlém získávání biomasy může být [vyčerpávání půdních zásob uhlíku či organického humusu](https://www.mdpi.com/1996-1073/15/24/9619).
 [^nerust]: Lze tak zaznamenat kritické hlasy [nerůstového hnutí](https://cs.wikipedia.org/wiki/Ner%C5%AFst) poukazující na obtížnost či rovnou nemožnost zkombinovat ekonomický růst s výrazným poklesem spotřeby, což vyvolává potřebu hledat nový ekonomický model. Oproti tomu Zelená dohoda pro Evropu (Green Deal) je založena na myšlence environmentálního a ekonomického [*decouplingu*](https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/651916/EPRS_ATA(2020)651916_EN.pdf), tedy zanechání ekonomického růstu jako cíle s vidinou jeho oddělení od růstu spotřeby prostřednictvím zvyšování efektivity či zavádění nových technologií.
 [^poptavka]: Největší růst se může týkat [Číny, Indie, Jihovýchodní Asie a Afriky](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
