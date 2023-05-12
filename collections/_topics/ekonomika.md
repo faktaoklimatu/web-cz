@@ -84,12 +84,12 @@ subtopics:
   content:
   - nizkouhlikova-spolecnost
   - adaptacni-strategie-cr
+  - technologie-dekarbonizace-prumyslu
   - 3-stavebnictvi-a-bydleni
   - 27-rethink-architecture
   - 5-transformace-dopravy
   - 6-transformace-prumyslu
   - 28-trinecke-zelezarny
-  - technologie-dekarbonizace-prumyslu
 
 - id:          "opatreni"
   title:       "Opatření: zpoplatnění emisí a další"
