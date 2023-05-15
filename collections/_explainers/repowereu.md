@@ -42,7 +42,8 @@ V květnu 2022, tři měsíce po začátku ruské invaze na Ukrajinu, představi
 V lednu 2023 byl pak představen [**Průmyslový plán Zelené dohody**](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52023DC0062&from=CS) (*Green Deal Industrial Plan*), který s  REPowerEU souvisí sice nepřímo, ale vzhledem k aktuální situaci stojí za to jej zmínit také. Jeho cílem je **podpořit inovace v evropském průmyslu směrem ke klimaticky neutrálním technologiím** a posílit konkurenceschopnost evropských firem na globálním trhu.[^gdip] Předvídatelné investiční prostředí, které bude produkovat čisté technologie, významně urychlí rozvoj čisté energetiky.
 
 {% include figure.html
-    name="kontext-repowereu.svg"
+    name="kontext-repowereu-des.svg"
+    name-mobile="kontext-repowereu-mob.svg"
     alt="Schéma ukazuje základní informace k jednotlivým klimaticko-energetickým dokumentům: Zelené dohodě pro Evropu, Evropskému klimatickému zákonu, balíčku Fit for 55, plánu REPowerEU a Průmyslovému plánu Zelené dohody."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/"
@@ -53,7 +54,8 @@ V lednu 2023 byl pak představen [**Průmyslový plán Zelené dohody**](https:/
 Pro ukončení závislosti EU na fosilních palivech z Ruska, vytyčil plán REPowerEU tři hlavní cíle.
 
 {% include figure.html
-    name="cile-repowereu.svg"
+    name="cile-repowereu-des.svg"
+    name-mobile="cile-repowereu-mob.svg"
     alt="Schéma ukazuje základní informace k jednotlivým klimaticko-energetickým dokumentům: Zelené dohodě pro Evropu, Evropskému klimatickému zákonu, balíčku Fit for 55, plánu REPowerEU a Průmyslovému plánu Zelené dohody."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/"
@@ -75,7 +77,8 @@ Plán REPowerEU jako takový je právně nezávazný, avšak navrhuje vznik nov�
 **V oblasti energetických úspor** (energetické účinnosti) navrhuje REPowerEU snížení spotřeby energie o dalších **13 %** v roce 2030 (oproti [původnímu návrhu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) balíčku Fit for 55 ve výši 9 %) v porovnání s poklesem, který pro rok 2030 modeluje [referenční scénář](https://energy.ec.europa.eu/data-and-analysis/energy-modelling/eu-reference-scenario-2020_en) Evropské komise z roku 2020. V březnu 2023 se členské státy společně s Komisí a Parlamentem dohodly na [kompromisu](https://ec.europa.eu/commission/presscorner/detail/en/IP_23_1581) ve výši **11,7 %**.
 
 {% include figure.html
-    name="cile-repowereu-oze-uspory-eu.svg"
+    name="cile-repowereu-oze-uspory-eu-des.svg"
+    name-mobile="cile-repowereu-oze-uspory-eu-mob.svg"
     alt="Tabulkový přehled výše zmíněných cílů pro podíl OZE na konečné spotřebě energie v roce 2030 a pro snížení spotřeby energie do roku 2030 podle toho, jak je navrhuje Fit for 55, REPowerEU a finální dohoda."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/"
