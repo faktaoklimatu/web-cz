@@ -42,7 +42,7 @@ V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkov
 
 ### Zachytávání CO<sub>2</sub> (CCS)
 
-Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (Carbon Capture and Storage). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i průmyslově využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
+Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (_Carbon Capture and Storage_). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i průmyslově využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
 
 Tato technologie se pro využití v dekarbonizaci průmyslu hodí zejména v případech, kdy **chemické reakce**, při nichž vzniká CO<sub>2</sub>, **neumíme přímo nahradit** či **nedokážeme výrazně snížit** jejich emisní náročnost. Příkladem může být proces kalcinace při výrobě cementu, kdy se uhličitan vápenatý (CaCO<sub>3</sub>) mění na oxid vápenatý (CaO) a uvolňuje se oxid uhličitý (CO<sub>2</sub>). Bez tohoto chemického procesu se zatím výroba cementu neobejde, nezbývá tedy než uvolněný oxid uhličitý zachytit.
 
@@ -60,7 +60,7 @@ Momentálně se celosvětově **95 % vodíku pro průmyslové využití vyrábí
 
 {% capture vodik %}
 
-Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými “barvami”. Z hlediska možného využití jsou nejdůležitější tyto čtyři:
+Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými "barvami". Z hlediska možného využití jsou nejdůležitější tyto čtyři:
 
 - **Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
 - **Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
@@ -136,7 +136,7 @@ Dekarbonizaci průmyslu by pomohly také **ekonomické pobídky, systematická p
 
 V EU je rovněž v plánu používat **mechanismus uhlíkového vyrovnání na hranicích (CBAM)**, tedy v podstatě uhlíkové clo. Proč bude potřeba jej zavést? Dekarbonizace průmyslu je nákladný proces, který mnohdy povede ke zdražení výsledného produktu. Hrozí tak, že evropské firmy, které se transformovaly dřív než firmy jinde ve světě, by najednou nebyly konkurenceschopné. Navíc musí ještě pokrýt své emise povolenkami v rámci systému EU ETS. V rámci uhlíkového vyrovnání je proto vypočítána uhlíková intenzita daného produktu a dovozce zboží vyrobeného mimo EU si bude muset zakoupit certifikát, aby dorovnal cenu a ta tak byla srovnatelná s cenou produktu vyrobeného v Unii.
 
-Dále existuje koncept takzvaných **advance market commitments** (předběžné tržní závazky), tedy závazek určité firmy, že do budoucna koupí konkrétní produkty spojené s dekarbonizací. Například do nějakého roku zaplatí za kredity spojené s odstraněním CO<sub>2</sub> z atmosféry nebo se zaváže k zakoupení nízkoemisního průmyslového produktu (třeba “zelené” oceli). Protože vývoj těchto technologií je velmi drahý a zpočátku nekonkurenceschopný, dává systém předběžných tržních závazků firmám, které tyto nové technologie vyvíjejí, větší záruku – vědí už, že mají do budoucna zajištěné nějaké odběratele.
+Dále existuje koncept takzvaných **advance market commitments** (předběžné tržní závazky), tedy závazek určité firmy, že do budoucna koupí konkrétní produkty spojené s dekarbonizací. Například do nějakého roku zaplatí za kredity spojené s odstraněním CO<sub>2</sub> z atmosféry nebo se zaváže k zakoupení nízkoemisního průmyslového produktu (třeba "zelené" oceli). Protože vývoj těchto technologií je velmi drahý a zpočátku nekonkurenceschopný, dává systém předběžných tržních závazků firmám, které tyto nové technologie vyvíjejí, větší záruku – vědí už, že mají do budoucna zajištěné nějaké odběratele.
 
 ## Závěr
 
