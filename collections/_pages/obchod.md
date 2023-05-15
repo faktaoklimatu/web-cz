@@ -19,6 +19,8 @@ Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doruč
 
 Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401.
 
+[Zpět na stránku o Atlasu](/atlas)
+
 <!-- www.SimpleShop.cz form#65438 start -->
 <script>
  (function(i, s, o, g, r, a, m){
