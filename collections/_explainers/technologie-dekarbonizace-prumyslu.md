@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Jaké jsou technologie dekarbonizace průmyslu?"
 slug:        "technologie-dekarbonizace-prumyslu"
 published:   2023-5-10
-author:      "Adam Bílek a tým Fakt o klimatu"
+authors:
+  - id: "adam-bilek"
+  - ids: ["jirka-lnenicka", "katerina-kolouchova"]
+    minor-role: "editace"
 weight:      74
 tags-scopes: [  ]
 tags-topics: [  ]
