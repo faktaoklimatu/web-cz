@@ -18,20 +18,14 @@ extra-scripts: [ /assets-local/js/reserse-transformace-mixu.js ]
 {% include figure.html
 name="mix-legenda.png"
 name-mobile="mix-legenda.png"
-class="narrow-text mb-2"
+class="narrow-text mb-2 mx-auto"
 alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběhy transformace mixů výroby elektřiny jednotlivých států ve třech různých perspektivách – v grafickém znázornění proměny zastoupení fosilních, obnovitelných a jaderných zdrojů v letech 2000 až 2021, z pohledu základních energetických ukazatelů (podíl jednotlivých zdrojů, celková roční výroba, import/export a emisní intenzita) vycházejících z databáze Ember a formou krátkého textu, který nastiňuje klíčové události z hlediska tamního vývoje elektroenergetiky. Státy je přitom možné řadit podle hodnoty jednotlivých ukazatelů, a to vzestupně i sestupně."
 %}
 
-{:.narrow-text  }
+{:.narrow-text.mb-5.mx-auto}
 **Jak číst grafické znázornění?** Čím blíže je bod vrcholu trojúhelníku (<span style="color:#af69a6">⬤</span> fialová část), tím více jsou v daném roce v mixu výroby elektřiny zastoupena fosilní paliva (uhlí a zemní plyn). Čím blíže je bod levému rohu trojúhelníku (<span style="color:#5988bf">⬤</span> modrá část), tím více je v mixu zastoupena jaderná energie. Čím blíže je bod pravému rohu trojúhelníku (<span style="color:#fcc679">⬤</span> žlutá část), tím více jsou v mixu zastoupeny obnovitelné zdroje energie (vítr, slunce, voda a biomasa).
 
-<ul class="inline-bullet-list">
-    {%- for country in countries %}
-    <li><a href="#{{ country.code }}">{{ country.name }}</a></li>
-    {%- endfor %}
-</ul>
-
-<div class="d-none justify-content-end align-items-center">
+<div class="d-none mb-3 align-items-center">
     <label class="mb-0 mr-2" for="mixes-sort-property-selector">Seřadit podle:</label>
     <select id="mixes-sort-property-selector" class="custom-select w-auto" value="name">
         <option value="name">Názvu</option>
@@ -46,6 +40,12 @@ alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběh
         <i class="fas fa-arrow-down-a-z"></i>
     </a>
 </div>
+
+<ul class="inline-bullet-list">
+    {%- for country in countries %}
+    <li><a href="#{{ country.code }}">{{ country.name }}</a></li>
+    {%- endfor %}
+</ul>
 
 <div id="mix-transformation-survey-countries">
     {% for country in countries %}
