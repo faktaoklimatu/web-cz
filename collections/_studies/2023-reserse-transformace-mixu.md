@@ -9,14 +9,20 @@ tags-scopes:   [ eu ]
 tags-topics:   [ energetika ]
 caption:       "Přehled cest, kterými se ubírají vybrané státy Evropy a světa v transformaci mixu výroby elektřiny."
 intro: |
-  Nejen v Evropě, ale i v jiných státech světa dochází od začátku tisíciletí k proměně mixů výroby elektřiny a rolí jednotlivých zdrojů. V souvislosti s klimatickými cíly pro snižování emisí skleníkových plynů dochází k útlumu elektřiny z fosilních paliv, především z uhlí, a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, avšak přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
+  Ve všech státech světa dochází od začátku tisíciletí k proměně mixů výroby elektřiny – v Česku se na výrobě elektřiny stále z více než poloviny podílí fosilní paliva, naopak na Slovensku je to jaderná energie. V souvislosti s klimatickými cíly pro snižování emisí skleníkových plynů však obecně dochází k útlumu elektřiny z fosilních paliv, především z uhlí, a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, avšak přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
 extra-scripts: [ /assets-local/js/reserse-transformace-mixu.js ]
 ---
 
 {% assign countries = site.data.reserse-transformace-mixu.items %}
 
-Rešerše obsahuje příběhy transformace mixů výroby elektřiny jednotlivých států ve třech různých perspektivách – v **grafickém znázornění** proměny zastoupení fosilních, obnovitelných a jaderných zdrojů v letech 2000 až 2021, z pohledu **základních energetických ukazatelů** (podíl jednotlivých zdrojů, celková roční výroba, import/export a emisní intenzita) vycházejících z databáze Ember a formou **krátkého textu**, který nastiňuje klíčové události z hlediska tamního vývoje elektroenergetiky. Státy je přitom možné řadit podle hodnoty jednotlivých ukazatelů, a to vzestupně i sestupně.
+{% include figure.html
+name="mix-legenda.png"
+name-mobile="mix-legenda.png"
+class="narrow-text mb-2"
+alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběhy transformace mixů výroby elektřiny jednotlivých států ve třech různých perspektivách – v grafickém znázornění proměny zastoupení fosilních, obnovitelných a jaderných zdrojů v letech 2000 až 2021, z pohledu základních energetických ukazatelů (podíl jednotlivých zdrojů, celková roční výroba, import/export a emisní intenzita) vycházejících z databáze Ember a formou krátkého textu, který nastiňuje klíčové události z hlediska tamního vývoje elektroenergetiky. Státy je přitom možné řadit podle hodnoty jednotlivých ukazatelů, a to vzestupně i sestupně."
+%}
 
+{:.narrow-text  }
 **Jak číst grafické znázornění?** Čím blíže je bod vrcholu trojúhelníku (<span style="color:#af69a6">⬤</span> fialová část), tím více jsou v daném roce v mixu výroby elektřiny zastoupena fosilní paliva (uhlí a zemní plyn). Čím blíže je bod levému rohu trojúhelníku (<span style="color:#5988bf">⬤</span> modrá část), tím více je v mixu zastoupena jaderná energie. Čím blíže je bod pravému rohu trojúhelníku (<span style="color:#fcc679">⬤</span> žlutá část), tím více jsou v mixu zastoupeny obnovitelné zdroje energie (vítr, slunce, voda a biomasa).
 
 <ul class="inline-bullet-list">
