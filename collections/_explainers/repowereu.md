@@ -5,7 +5,7 @@ slug:        "repowereu"
 published:   2023-05-18
 authors:
   - id: "katerina-kolouchova"
-  - name: "Marcel Otruba"
+  - id: "marcel-otruba"
     minor-role: "vizualizace"
 weight:      100
 tags-scopes: [ eu ]
