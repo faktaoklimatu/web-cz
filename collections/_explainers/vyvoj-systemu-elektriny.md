@@ -3,7 +3,10 @@ layout:      explainer
 title:       "Jak se v čase proměňovala role trhu a státu při výrobě a distribuci elektřiny?"
 slug:        "vyvoj-systemu-elektriny"
 published:   2023-5-9
-author:      "Adam Bílek a tým Fakt o klimatu"
+authors:
+ - id: "adam-bilek"
+ - ids: ["jiri-lnenicka", "katerina-kolouchova"]
+   minor-role: "editace"
 weight:      74
 tags-scopes: [ ]
 tags-topics: [ ]
