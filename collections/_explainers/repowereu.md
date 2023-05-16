@@ -61,11 +61,11 @@ Pro ukončení závislosti EU na fosilních palivech z Ruska, vytyčil plán REP
     source-url="https://faktaoklimatu.cz/"
 %}
 
-1. **Diverzifikace zdrojů energie**
+1. **Diverzifikace zdrojů energie**\\
     Cílem plánu je zajistit dodávky zemního plynu, ropy a uhlí z jiných zemí než Rusko. V krátkodobém horizontu jde především o posílení infrastruktury pro přepravu a skladování zkapalněného zemního plynu (*liquefied natural gas*, LNG), v dlouhodobém pak o rozvoj vodíkové infrastruktury.
-2. **Úspory energie a energetická účinnost**
+2. **Úspory energie a energetická účinnost**\\
     Plán se zaměřuje především na systémová řešení a legislativní ukotvení vyšších cílů pro energetické úspory[^opatreni-systemova], zmiňuje však i individuální možnosti pro snižování spotřeby energie.[^opatreni-individualni]
-3. **Rozvoj obnovitelných zdrojů energie**
+3. **Rozvoj obnovitelných zdrojů energie**\\
     Klíčovou součástí plánu je navýšit podíl OZE ve všech sektorech energetiky, tedy ve výrobě elektřiny, vytápění i dopravy. Kromě rozvoje solární a větrné energie (a to jak v kontextu velké energetiky, tak energetiky komunitní[^solarni-strategie]), tepelných čerpadel a ukládání energie jde též o snahu posílit roli vodíku a biometanu.[^vodik]
 
 V letech 2023 a 2024 **probíhá v celé EU aktualizace vnitrostátních plánů v oblasti energetiky a klimatu** (*National Energy and Climate Plans*, NECPs). Jde o klíčové strategické dokumenty, ve kterých jednotlivé členské státy představují, jak bude vypadat jejich energeticko-klimatická politika v následující dekádě. Potřebu jejich revize přitom vyvolala právě nová geopolitická a energetická realita ovlivněná především konfliktem na Ukrajině. Členské státy by tak měly svoje NECPs upravit tak, aby její novou podobu reflektovaly a byly v souladu s ambicemi REPowerEU.[^revize-necp]
