@@ -5,7 +5,7 @@ slug:        "vyvoj-systemu-elektriny"
 published:   2023-5-9
 authors:
  - id: "adam-bilek"
- - ids: ["jiri-lnenicka", "katerina-kolouchova"]
+ - ids: ["jirka-lnenicka", "katerina-kolouchova"]
    minor-role: "editace"
 weight:      74
 tags-scopes: [ ]
