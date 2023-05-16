@@ -54,7 +54,7 @@ Spotřeba elektřiny v ČR se v závislosti na dni a hodině pohybuje mezi 4,5 G
     source-url="https://faktaoklimatu.cz"
 %}
 
-Pro zapínání a vypínání elektráren jsou zásadní tyto parametry: jejich **maximální možná výroba** (_instalovaný výkon_), **rychlost, s jakou je možné je zapnout** (_doba náběhu_), např. k pokrytí denní špičky spotřeby, a také **náklady na výrobu elektřiny**. Elektrárny v ČR lze zjednodušeně rozdělit do následujících hlavních kategorií:[^1]
+Pro zapínání a vypínání elektráren jsou zásadní tyto parametry: jejich **maximální možná výroba** (_instalovaný výkon_), **rychlost, s jakou je možné je zapnout** (_doba náběhu_), např. k pokrytí denní špičky spotřeby, a také **náklady na výrobu elektřiny**. Elektrárny v ČR lze zjednodušeně rozdělit do následujících hlavních kategorií:[^precerpavacky]
 
 {% include figure.html
     name="zdroje-elektriny-des.svg"
@@ -88,7 +88,7 @@ Obecně vzato mají elektrárny dva druhy nákladů – fixní a variabilní. **
     slug="emisni-povolenky-ets"
 %}
 
-Každý majitel elektrárny chce vyrábět elektřinu vždy, když se mu to vyplatí, tedy když cena prodané jednotky elektřiny přesáhne její výrobní náklady. Elektrárny tak nabízejí elektřinu za částku, které se rovná jejich variabilním nákladům – za nižší částku nejsou ochotny elektřinu vyrábět (s výjimkou jaderných elektráren, které je drahé odstavovat). Za vyrobenou elektřinu pak elektrárny zpravidla dostanou vyšší částku, než jaká byla jejich nabídková cena – dostanou peníze podle ceny elektřiny na trhu.
+Každý majitel elektrárny chce vyrábět elektřinu vždy, když se mu to vyplatí, tedy když cena prodané jednotky elektřiny přesáhne její výrobní náklady. Elektrárny tak nabízejí elektřinu za částku, které se rovná jejich variabilním nákladům – za nižší částku nejsou ochotny elektřinu vyrábět. Za vyrobenou elektřinu pak elektrárny zpravidla dostanou vyšší částku, než jaká byla jejich nabídková cena – dostanou peníze podle ceny elektřiny na trhu.
 
 ## Jak se stanovuje cena elektřiny na trhu?
 V každém okamžiku se porovnává poptávka po elektřině od zákazníků s minimálními cenami od jednotlivých elektráren. V případě České republiky se to děje na energetické burze PXE v Praze. Elektřinu vždy vyrábějí ty nejlevnější elektrárny, které jsou dohromady schopny uspokojit poptávku. **Cena elektřiny na trhu je pak ta, za kterou elektřinu vyrábí ten poslední (nejdražší) zdroj, který je ještě potřeba k uspokojení poptávky.** Jak se cena elektřiny mění při rostoucí poptávce, ukazuje následující animace.
@@ -128,9 +128,9 @@ Nejlevnější elektřinu v současnosti produkují obnovitelné zdroje. Ty nepo
     slug="cena-energie"
 %}
 
-Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, protože mají velmi nízké variabilní náklady. Pokud však připočteme fixní náklady, vycházejí jaderné zdroje poměrně draze, což je jeden z důvodů, proč se v posledních desetiletích v Evropě staví velmi málo nových jaderných elektráren. Na trhu mají jaderné elektrárny zvláštní postavení, neboť je obtížné regulovat jejich výkon. Pokud jsou v daný moment poptávku schopny pokrýt jen obnovitelné a jaderné zdroje, mají přednost jaderné (zápornou nabídkovou cenou jednoduše na burze vytlačí obnovitelné zdroje).
+Druhým nejlevnějším zdrojem jsou (již postavené) jaderné elektrárny, protože mají velmi nízké variabilní náklady. Pokud však připočteme fixní náklady, vycházejí jaderné zdroje poměrně draze, což je jeden z důvodů, proč se v posledních desetiletích v Evropě staví velmi málo nových jaderných elektráren. Na trhu mají jaderné elektrárny zvláštní postavení, neboť je obtížné regulovat jejich výkon. Pokud jsou v daný moment poptávku schopny pokrýt jen obnovitelné a jaderné zdroje, mají přednost jaderné (protože svoji elektřinu na daný moment prodaly už dávno na _futures_ trhu[^flexibilita-jadra]).
 
-V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren k pokrytí celé poptávky po elektřině nestačí, přicházejí na řadu mnohem dražší zdroje, u kterých je možné vyrábět elektřinu dle potřeby (jsou regulovatelné). Mezi ně patří například elektrárny na uhlí, zemní plyn či biomasu. Pořadí jejich využití opět určí to, za jak nízkou cenu jsou tyto elektrárny schopny elektřinu vyrobit. To závisí na cenách paliva pro tyto elektrárny a na jejich emisní náročnosti – čím víc oxidu uhličitého na jednotku vyrobené elektřiny elektrárna vypustí, tím víc musí zaplatit na emisních povolenkách a tím je jednotková cena vyrobené elektřiny dražší. Pomocí tohoto mechanismu motivují emisní povolenky ke snižování emisní náročnosti celé soustavy[^2].
+V době, kdy výroba z obnovitelných zdrojů a jaderných elektráren k pokrytí celé poptávky po elektřině nestačí, přicházejí na řadu mnohem dražší zdroje, u kterých je možné vyrábět elektřinu dle potřeby (jsou regulovatelné). Mezi ně patří například elektrárny na uhlí, zemní plyn či biomasu. Pořadí jejich využití opět určí to, za jak nízkou cenu jsou tyto elektrárny schopny elektřinu vyrobit. To závisí na cenách paliva pro tyto elektrárny a na jejich emisní náročnosti – čím víc oxidu uhličitého na jednotku vyrobené elektřiny elektrárna vypustí, tím víc musí zaplatit na emisních povolenkách a tím je jednotková cena vyrobené elektřiny dražší. Pomocí tohoto mechanismu motivují emisní povolenky ke snižování emisní náročnosti celé soustavy[^povolenky-uhli].
 
 {% include preview-box.html
     title="Růst cen elektřiny na podzim 2021"
@@ -173,5 +173,6 @@ Kombinace vysokých investičních nákladů a nízkých provozních nákladů s
 
 ## Poznámky
 
-[^1]: Pro zjednodušení jsou v tabulce vynechány přečerpávací elektrárny (asi 1,2 GW), které jenom umožňují elektřinu v omezené míře ukládat.
-[^2]: Emisní povolenky dopadají tvrdě například na hnědé uhlí – oproti zemnímu plynu má hnědé uhlí skoro 3x vyšší emisní náročnost. Pro hnědouhelné elektrárny tvoří emisní povolenky převážnou část variabilních nákladů.
+[^precerpavacky]: Pro zjednodušení jsou v tabulce vynechány přečerpávací elektrárny (asi 1,2 GW), které jenom umožňují elektřinu v omezené míře ukládat.
+[^flexibilita-jadra]: Futures trh více rozebíráme v [dodatcích](#kdy-na-burze-probíhá-obchod-s-elektřinou-na-daný-den-a-danou-hodinu). Pokud je na trhu v daný moment nadbytek elektřiny z obnovitelných a jaderných zdrojů, cena elektřiny na trhu může klesnout až k nule nebo dokonce do záporných čísel. To znamená, že výrobci jsou ochotní vyrábět zadarmo nebo dokonce platit někomu, kdo spotřebuje jejich elektřinu. Mírně zápornou cenu jim pak kompenzuje separátní prodej tzv. [_záruk původu_ zelené elektřiny](https://www.dsadvokati.cz/cz/blog/dsa-clanky/69-zaruky-puvodu-doklad-o-tom-ze-nakupuji-zelenou-energii) a v některých zemích i dotace pro obnovitelnou elektřinu. Jaderné zdroje, které na danou chvíli svoji elektřinu dávno prodaly na _futures_ trhu, si mohou vybrat tuto prodanou elektřinu nevyrobit a místo ní jako náhradu zadarmo nebo dokonce s dalším ziskem nakoupit stejné množství obnovitelné elektřiny na _krátkodobém_ trhu. Tím by v souladu s tržními principy uvolnily prostor pro obnovitelné zdroje (kterém mají nižší provozní náklady). Stávající české jaderné elektrárny nicméně nejsou schopné svůj výkon tak rychle měnit, u budoucích jaderných zdrojů by ale k tomuto jevu mohlo docházet.
+[^povolenky-uhli]: Emisní povolenky dopadají tvrdě například na hnědé uhlí – oproti zemnímu plynu má hnědé uhlí skoro 3x vyšší emisní náročnost. Pro hnědouhelné elektrárny tvoří emisní povolenky převážnou část variabilních nákladů.
