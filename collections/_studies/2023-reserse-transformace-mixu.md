@@ -10,7 +10,7 @@ tags-topics:   [ energetika ]
 use-preview-image: true
 caption:       "Přehled cest, kterými se ubírají vybrané státy Evropy a světa v transformaci mixu výroby elektřiny."
 intro: |
-  V Evropě i dalších státech světa dochází od začátku tisíciletí k proměně mixů výroby elektřiny – v Česku se na výrobě elektřiny stále z více než poloviny podílí fosilní paliva, naopak na Slovensku je to jaderná energie. V souvislosti s klimatickými cíly pro snižování emisí skleníkových plynů však obecně dochází k útlumu elektřiny z fosilních paliv, především z uhlí, a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, avšak přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
+  V Evropě i dalších státech světa se na začátku 21. století začíná měnit poměr mezi jednotlivými zdroji, které slouží k výrobě elektřiny (tzv. energetický mix). Česko má stále více než polovinu elektřiny z fosilních paliv, Slovensko z jaderné energie. V souvislosti s klimatickými cíli pro snižování emisí skleníkových plynů však obecně dochází k útlumu výroby z fosilních paliv (především z uhlí) a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, ale přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
 extra-scripts: [ /assets-local/js/reserse-transformace-mixu.js ]
 ---
 
@@ -24,7 +24,7 @@ alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběh
 %}
 
 {:.narrow-text.mb-5.mx-auto}
-**Jak číst grafické znázornění?** Čím blíže je bod vrcholu trojúhelníku (<span style="color:#af69a6">⬤</span> fialová část), tím více jsou v daném roce v mixu výroby elektřiny zastoupena fosilní paliva (uhlí a zemní plyn). Čím blíže je bod levému rohu trojúhelníku (<span style="color:#5988bf">⬤</span> modrá část), tím více je v mixu zastoupena jaderná energie. Čím blíže je bod pravému rohu trojúhelníku (<span style="color:#fcc679">⬤</span> žlutá část), tím více jsou v mixu zastoupeny obnovitelné zdroje energie (vítr, slunce, voda a biomasa).
+**Jak číst grafické znázornění?** Čím blíže je bod vrcholu trojúhelníku (<span style="color:#af69a6">⬤</span> fialová část), tím více jsou v daném roce v mixu výroby elektřiny zastoupena fosilní paliva (uhlí a zemní plyn). Čím blíže je bod levému rohu trojúhelníku (<span style="color:#5988bf">⬤</span> modrá část), tím větší podíl má v mixu jaderná energie. Čím blíže je bod pravému rohu trojúhelníku (<span style="color:#fcc679">⬤</span> žlutá část), tím více jsou v mixu zastoupeny obnovitelné zdroje energie (vítr, slunce, voda a biomasa).
 
 <div class="d-none mb-3 align-items-center">
     <label class="mb-0 mr-2" for="mixes-sort-property-selector">Seřadit podle:</label>
