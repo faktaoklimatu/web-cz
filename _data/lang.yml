@@ -59,6 +59,7 @@ text:
     source: "Zdroj"
     author: "Autor"
     licence: "Licence"
+    updated: "aktualizováno"
   related:
     title: "Související infografiky a studie"
     caption: "Zaujala vás naše práce? Prozkoumejte další související infografiky a studie:"
