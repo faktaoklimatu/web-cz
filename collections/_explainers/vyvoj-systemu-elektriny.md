@@ -17,7 +17,7 @@ cover-source-license-url:   "https://pixabay.com/cs/service/license-summary/"
 cover-source-url:           "https://pixabay.com/cs/photos/elektr%c3%a1rny-veden%c3%ad-elektronick%c3%bd-344231/"
 perex:       "Ačkoli rámec pravidel umožňující produkci a dodávky elektřiny může někdo vnímat jako daný a neměnný, ve skutečnosti prošel do dnešních dnů dlouhým vývojem. Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou může být užitečné si tento vývoj trochu přiblížit. Následující text ukazuje, jak se dva základní přístupy v energetice měnily v průběhu let. Hraje hlavní roli stát, nebo trh? Kdo elektřinu dodává, s jakým cílem a za jakých podmínek? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný. Platí to i o našem území, kde se i přes specifikum komunistického režimu v letech 1948–1989 z větší části podobal vývoji jinde v Evropě."
 ---
-Text ukazuje vývoj systému pro výrobu a dodávky elektřiny na pozadí politicko-ekonomických změn v Evropě a České republice. Zaměřuje se pouze na elektřinu, nikoliv energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na další samostatné texty. 
+Text ukazuje vývoj systému pro výrobu a dodávky elektřiny na pozadí politicko-ekonomických změn v Evropě a České republice. Zaměřuje se pouze na elektřinu, nikoliv energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na další samostatné texty.
 
 ## Dva základní přístupy v energetice
 
@@ -37,11 +37,11 @@ Podoba energetického systému v určité zemi do značné míry záleží na to
 
 {% capture jadro %}
 
-Dobře je rozdíl mezi tržním a státním přístupem vidět na příkladu jaderných elektráren. S jejich výstavbou jsou spojeny obrovské kapitálové náklady, které mají navíc velmi dlouhou návratnost. 
+Dobře je rozdíl mezi tržním a státním přístupem vidět na příkladu jaderných elektráren. S jejich výstavbou jsou spojeny obrovské kapitálové náklady, které mají navíc velmi dlouhou návratnost.
 
-Protože výstavba jaderných elektráren je přísně regulována a má tendenci se značně prodlužovat oproti původním plánům, jedná se o velmi rizikovou investici. Vzhledem k obřím kapitálovým nákladům bude takový projekt rovněž v naprosté většině případů vyžadovat, aby si soukromý investor půjčil finanční zdroje – a průtahy s výstavbou, dlouhodobá návratnost i rizikovost investice pro něj pak mohou znamenat problém z hlediska vysokých úrokových sazeb.  
+Protože výstavba jaderných elektráren je přísně regulována a má tendenci se značně prodlužovat oproti původním plánům, jedná se o velmi rizikovou investici. Vzhledem k obřím kapitálovým nákladům bude takový projekt rovněž v naprosté většině případů vyžadovat, aby si soukromý investor půjčil finanční zdroje – a průtahy s výstavbou, dlouhodobá návratnost i rizikovost investice pro něj pak mohou znamenat problém z hlediska vysokých úrokových sazeb.
 
-Naproti tomu stát, který nemá výrazné problémy s rozpočtem a má relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje. (Vidět to můžeme i v Česku: v případě tendru na dostavbu JE Dukovany má stát lepší podmínky půjček z hlediska nizších úrokových sazeb než akciová společnost ČEZ). Pro soukromého investora tak může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost. Kromě toho může soukromé investory odrazovat také negativní postoj společnosti k jaderné energii. 
+Naproti tomu stát, který nemá výrazné problémy s rozpočtem a má relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje. (Vidět to můžeme i v Česku: v případě tendru na dostavbu JE Dukovany má stát lepší podmínky půjček z hlediska nizších úrokových sazeb než akciová společnost ČEZ). Pro soukromého investora tak může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost. Kromě toho může soukromé investory odrazovat také negativní postoj společnosti k jaderné energii.
 
 Obecně řečeno: největší rozvoj jaderných elektráren ve světě probíhal a probíhá v situacích, kdy si velkou míru kontroly nad daným projektem ponechává stát.
 
@@ -73,7 +73,7 @@ Konkrétně v Československu se decentralizované elektrické systémy začaly 
 
 Toto období se vyznačuje **silnou rolí státu** – výrobu a distribuci elektřiny mívá zpravidla na starost státem vlastněná energetická firma (často se jedná o monopol). Jaké zdroje elektřiny budou při výrobě dominantní, je především otázkou národní strategie, jejíž prioritou je zajistit **energetickou bezpečnost země**. Jako klíčové jsou vnímány dodávky elektřiny pro nejdůležitější průmyslová odvětví, ale do popředí vstupuje i otázka **co nejvyšší dostupnosti elektřiny** pro všechny skupiny obyvatel. Elektřina se tak zároveň stává otázkou sociální politiky a její cena nemusí nutně odpovídat reálným nákladům.
 
-Na území Československa v roce 1945 dochází ke znárodnění[^znarodneni] velké části energetické infrastruktury (elektrárny, doly apod.). V dalším roce jsou **založeny Československé energetické závody (ČEZ)**, jež mají zastřešovat jednotlivé energetické podniky a pomoci překonat dosavadní roztříštěnost. Postupem času se z ČEZu stává vertikálně integrovaný národní monopol. 
+Na území Československa v roce 1945 dochází ke znárodnění[^znarodneni] velké části energetické infrastruktury (elektrárny, doly apod.). V dalším roce jsou **založeny Československé energetické závody (ČEZ)**, jež mají zastřešovat jednotlivé energetické podniky a pomoci překonat dosavadní roztříštěnost. Postupem času se z ČEZu stává vertikálně integrovaný národní monopol.
 
 V roce 1950 dochází ke sjednocení přenosových soustav do jednoho celku.[^sjednoceni] Zároveň se v 50. letech projevuje strategická priorita státu podporovat průmysl – aby měla průmyslová výroba elektřiny dost, dochází k občasnému zastavení dodávek pro domácnosti.[^odstavky] V 60. letech probíhá výstavba velkých uhelných elektráren, na konci této dekády se pak ČEZ dělí na českou a na slovenskou část.
 
@@ -99,7 +99,7 @@ Na současnou (a budoucí) energetiku je možné se dívat jako na tzv. **energe
 2. **Zajištění sociální dostupnosti energie** – aby byla energie dostupná všem lidem, bez ohledu na jejich finanční situaci
 3. **Zajištění  environmentální udržitelnosti** – aby byla energie vyráběna a spotřebovávána způsobem, který minimalizuje negativní dopady na životní prostředí a zajistí udržitelnost pro budoucí generace
 
-Trilema se zpravidla používá k popisu celkové energetické situace na daném území, zahrnuje tedy například i dodávky ropy pro dopravu či dodávky plynu v teplárenství. Lze jej však také využít pouze pro elektroenergetiku. Význam tohoto konceptu nicméně stoupá až v poslední době, neboť šetrný přístup k životnímu prostředí vystupuje jako cíl více do popředí až na konci 20. století. 
+Trilema se zpravidla používá k popisu celkové energetické situace na daném území, zahrnuje tedy například i dodávky ropy pro dopravu či dodávky plynu v teplárenství. Lze jej však také využít pouze pro elektroenergetiku. Význam tohoto konceptu nicméně stoupá až v poslední době, neboť šetrný přístup k životnímu prostředí vystupuje jako cíl více do popředí až na konci 20. století.
 
 {% endcapture %}
 
@@ -120,33 +120,33 @@ Pozadím současných úvah nad trhy s elektřinou je hlavně souběh aktuální
 
 ### Do jaké míry má zasahovat stát?
 
-V mnoha zemích včetně České republiky došlo v návaznosti na zdražení například k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy. 
+V mnoha zemích včetně České republiky došlo v návaznosti na zdražení například k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy.
 
-Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu. 
+Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu.
 
-Jako protiargument bývá zmiňována specifičnost situace v roce 2022, kdy došlo k souběhu více neobvyklých událostí v krátkém období: ekonomické oživení po opatřeních proti pandemii Covid-19 se zkombinovalo s ruskou invazí na Ukrajinu. 
+Jako protiargument bývá zmiňována specifičnost situace v roce 2022, kdy došlo k souběhu více neobvyklých událostí v krátkém období: ekonomické oživení po opatřeních proti pandemii Covid-19 se zkombinovalo s ruskou invazí na Ukrajinu.
 
 ### Co pomůže zvýšit podíl obnovitelných zdrojů?
 
 Dále vyvstává otázka: Chceme-li zvýšit podíl obnovitelných zdrojů, je lepší spoléhat na trh nebo dává větší smysl, když hlavní iniciativu převezme stát?
 
-Objevují se obavy, že s rostoucím podílem obnovitelných zdrojů může být v určitých obdobích k dispozici velké množství (či dokonce přebytky) elektřiny, což povede k velmi nízké prodejní ceně pro producenty. Týká se to především solární elektřiny, jejíž výroba je koncentrovaná do relativně krátké doby, kdy svítí slunce. V určitém momentě tak může nastat situace, že solárních zdrojů už bude tolik, že se investorovi nevyplatí budovat další. A dojít k tomu může i o několik let dříve, než se obecně rozšíří bateriová úložiště či začne být ekonomicky dostupný zelený vodík – obojí by totiž tento problém částečně řešilo.[^utilizationgap] 
+Objevují se obavy, že s rostoucím podílem obnovitelných zdrojů může být v určitých obdobích k dispozici velké množství (či dokonce přebytky) elektřiny, což povede k velmi nízké prodejní ceně pro producenty. Týká se to především solární elektřiny, jejíž výroba je koncentrovaná do relativně krátké doby, kdy svítí slunce. V určitém momentě tak může nastat situace, že solárních zdrojů už bude tolik, že se investorovi nevyplatí budovat další. A dojít k tomu může i o několik let dříve, než se obecně rozšíří bateriová úložiště či začne být ekonomicky dostupný zelený vodík – obojí by totiž tento problém částečně řešilo.[^utilizationgap]
 
-Paradoxně tak ke zvyšování podílu elektřiny ze slunce a větru může být zapotřebí silná podpora z veřejných financí i v situaci, kdy budou tyto zdroje v průměrné ceně nejlevnější. 
+Paradoxně tak ke zvyšování podílu elektřiny ze slunce a větru může být zapotřebí silná podpora z veřejných financí i v situaci, kdy budou tyto zdroje v průměrné ceně nejlevnější.
 
 Rozpor mezi dekarbonizačními cíli a fungováním trhu by mohly pomoci řešit dlouhodobé kontrakty na odebírání elektřiny, které dají investorovi záruku větší stability.[^kontrakty] Ty mohou zároveň znamenat větší cenovou stabilitu i pro odběratele, a zmírňovat tak dopady větších výkyvů v cenách. Evropská komise 14. března 2023 představila návrh reformy vnitřního trhu s elektřinou.[^reforma] Ten v mnohém počítá právě se zaváděním dlouhodobých kontraktů, jež mají napomoci větší cenové stabilitě.
 
 ### Jak řešit otázky spojené s vlastnictvím?
 
-Firmy, které fungují na trhu a jsou veřejně obchodovatelné, mají určité povinnosti ke svým akcionářům. Pokud je však jedním z akcionářů stát, vzniká složitá situace. V Česku je to dobře vidět v případě ČEZu – stát je zde největším akcionářem, což znamená, že má velkou sílu při rozhodování. Zároveň není akcionářem jediným, tedy musí brát ohled i na menšinové akcionáře, kteří mohou mít jiné zájmy. Nejvíce se tento konflikt projevil u dlouhotrvajících sporů ohledně výstavby nových jaderných bloků: zatímco stát je vnímá jako klíčovou součást své energetické strategie, z pohledu minoritních akcionářů jde spíše o výrazně rizikovou investici. V důsledku energetické krize a změny pohledu na prioritnost energetiky můžeme v současné době vidět snahu vlády zajistit větší kontrolu ČEZu právě na úkor menšinových akcionářů.[^akcionari] 
+Firmy, které fungují na trhu a jsou veřejně obchodovatelné, mají určité povinnosti ke svým akcionářům. Pokud je však jedním z akcionářů stát, vzniká složitá situace. V Česku je to dobře vidět v případě ČEZu – stát je zde největším akcionářem, což znamená, že má velkou sílu při rozhodování. Zároveň není akcionářem jediným, tedy musí brát ohled i na menšinové akcionáře, kteří mohou mít jiné zájmy. Nejvíce se tento konflikt projevil u dlouhotrvajících sporů ohledně výstavby nových jaderných bloků: zatímco stát je vnímá jako klíčovou součást své energetické strategie, z pohledu minoritních akcionářů jde spíše o výrazně rizikovou investici. V důsledku energetické krize a změny pohledu na prioritnost energetiky můžeme v současné době vidět snahu vlády zajistit větší kontrolu ČEZu právě na úkor menšinových akcionářů.[^akcionari]
 
 Veřejnost navíc nemusí být reprezentována pouze státem: do energetiky zároveň mohou vstupovat i další aktéři, například díky rozšíření komunitní či městské energetiky. V Česku legislativa na podporu komunitní energetiky teprve vzniká, v zemích jako Německo či Rakousko jsou tyto subjekty aktivní už delší dobu. Kromě toho s rozvojem dostupných obnovitelných zdrojů výrazně stoupá také počet domácností, které si elektřinu vyrábějí samy.
 
 ## Závěr
 
-Systém pro výrobu a dodávky elektřiny tedy v průběhu let procházel výraznými změnami. Zatímco počátky elektrifikace v 19. století probíhaly de facto bez státních zásahů a větší vliv státu se objevuje až po první světové válce, po druhé světové válce se situace mění a stát se stává hlavním hráčem. To se opět mění na konci století, kdy se znovu ke slovu dostává trh a pozice státu slábne. 
+Systém pro výrobu a dodávky elektřiny tedy v průběhu let procházel výraznými změnami. Zatímco počátky elektrifikace v 19. století probíhaly de facto bez státních zásahů a větší vliv státu se objevuje až po první světové válce, po druhé světové válce se situace mění a stát se stává hlavním hráčem. To se opět mění na konci století, kdy se znovu ke slovu dostává trh a pozice státu slábne.
 
-**Dnes se nacházíme na určitém rozcestí** a situace se může opět změnit: řada zemí se znovu snaží o větší státní kontrolu nad klíčovými energetickými podniky. Velký odklon od spoléhání na tržní síly sice není momentálně příliš pravděpodobný, nicméně je důležité dál hledat, **jak systém s elektřinou nastavit co nejlépe – s ohledem na výše uvedené energetické trilema**. 
+**Dnes se nacházíme na určitém rozcestí** a situace se může opět změnit: řada zemí se znovu snaží o větší státní kontrolu nad klíčovými energetickými podniky. Velký odklon od spoléhání na tržní síly sice není momentálně příliš pravděpodobný, nicméně je důležité dál hledat, **jak systém s elektřinou nastavit co nejlépe – s ohledem na výše uvedené energetické trilema**.
 
 Abychom dokázali plnit své dekarbonizační cíle a mohli se postupně odklánět od fosilních zdrojů výroby elektřiny (např. uhlí), potřebujeme **výrazně navýšit nízkoemisní zdroje elektřiny**. Dále je nutné **zajistit cenovou dostupnost elektřiny pro širokou veřejnost a průmysl**. Pokud se nám to nepodaří, bude to mít negativní sociální dopady a povede to ke zhoršení chudoby. Může také dojít k přesunu průmyslové výroby do jiných zemí. Dále bude nutné **zajistit stabilitu dodávek elektřiny** – jednak maximálně snížit závislost na dovážených energetických komoditách, ze kterých se následně elektřina vyrábí (např. zemní plyn), jednak zajistit stabilitu sítě a zvládání obnovitelných zdrojů u kterých je výroba elektřiny závislá na počasí. **Pokud se nám bude dařit těchto cílů dosáhnout, může dekarbonizace výroby elektřiny proběhnout úspěšně.**
 
