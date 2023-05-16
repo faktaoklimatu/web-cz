@@ -7,6 +7,7 @@ weight:        311
 published:     2023-05-14
 tags-scopes:   [ eu ]
 tags-topics:   [ energetika ]
+use-preview-image: true
 caption:       "Přehled cest, kterými se ubírají vybrané státy Evropy a světa v transformaci mixu výroby elektřiny."
 intro: |
   Ve všech státech světa dochází od začátku tisíciletí k proměně mixů výroby elektřiny – v Česku se na výrobě elektřiny stále z více než poloviny podílí fosilní paliva, naopak na Slovensku je to jaderná energie. V souvislosti s klimatickými cíly pro snižování emisí skleníkových plynů však obecně dochází k útlumu elektřiny z fosilních paliv, především z uhlí, a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, avšak přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
