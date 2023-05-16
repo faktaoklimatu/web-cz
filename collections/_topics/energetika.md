@@ -128,6 +128,7 @@ subtopics:
   - zpoplatneni-emisi-svet
   - 21-rust-cen-elektriny
   - repowereu
+  - vyvoj-systemu-elektriny
 
 - id:          "technologie"
   title:       "Technologie: Potenciál a cena"
