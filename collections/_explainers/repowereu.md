@@ -98,6 +98,9 @@ Jelikož jsou výše zmíněné dokumenty v procesu aktualizace, **oficiální c
 
 ## Poznámky a zdroje
 
+_Tento text vychází z námi zpracované [studie](/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030), jejímž zadavatelem byl TOPAZ, z.s., reflektuje ale další vývoj v dojednávání balíčku REPowerEU._
+{: .longread-small}
+
 [^energeticka-krize]: Energetická krize začala už v roce 2021, a to v důsledku následujících faktorů: nečekaně rychlá obnova ekonomiky po pandemii; počasí (především sucho); údržba – a tedy dočasné odstavení – jaderných elektráren; a cílené omezování dodávek plynu ze strany Ruska. Více k tématu např. na [stránkách IEA](https://www.iea.org/topics/global-energy-crisis).
 [^gdip]: Unijní Průmyslový plán Zelené dohody vznikl i jako reakce na čínskou a americkou podporu (Inflation Reduction Act v USA) domácích výrobců zelených technologií.
 [^opatreni-systemova]: Jde především o legislativní ukotvení vyšších cílů v oblasti energetické účinnosti (směrnice o energetické účinnosti) a snížení energetické náročnosti budov (směrnice o energetické účinnosti budov).
