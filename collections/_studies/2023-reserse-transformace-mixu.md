@@ -10,7 +10,7 @@ tags-topics:   [ energetika ]
 use-preview-image: true
 caption:       "Přehled cest, kterými se ubírají vybrané státy Evropy a světa v transformaci mixu výroby elektřiny."
 intro: |
-  V Evropě i dalších státech světa se na začátku 21. století začíná měnit poměr mezi jednotlivými zdroji, které slouží k výrobě elektřiny (tzv. energetický mix). Česko má stále více než polovinu elektřiny z fosilních paliv, Slovensko z jaderné energie. V souvislosti s klimatickými cíli pro snižování emisí skleníkových plynů však obecně dochází k útlumu výroby z fosilních paliv (především z uhlí) a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, ale přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
+  V Evropě i dalších státech světa se na začátku 21. století začíná měnit poměr mezi jednotlivými zdroji, které slouží k výrobě elektřiny (tzv. mix výroby elektřiny). Česko má stále více než polovinu elektřiny z fosilních paliv, Slovensko z jaderné energie. V souvislosti s klimatickými cíli pro snižování emisí skleníkových plynů však obecně dochází k útlumu výroby z fosilních paliv (především z uhlí) a více či méně se zvyšuje zastoupení obnovitelných zdrojů – hlavně větrných a solárních. V několika státech hraje nadále důležitou roli jaderná energetika, ale přístup k ní se napříč státy liší – zatímco některé v ní vidí cestu k dekarbonizaci (Česko nebo Francie), jiné se rozhodly pro její úplné opuštění (Německo či Itálie).
 extra-scripts: [ /assets-local/js/reserse-transformace-mixu.js ]
 ---
 
