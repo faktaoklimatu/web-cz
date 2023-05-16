@@ -10,11 +10,11 @@ authors:
 weight:      100
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
-cover-source-author:        "Agent J"
+cover-source-author:        "Appolinary Kalashnikova"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
-cover-source-url:           "https://unsplash.com/photos/PtDNIlRSKRg"
+cover-source-url:           "https://unsplash.com/photos/WYGhTLym344"
 perex:       "Invaze Ruska na Ukrajinu z února 2022 významně ovlivňuje energeticko-klimatickou politiku EU. Zesiluje již probíhající energetickou krizi, ohrožuje evropskou energetickou bezpečnost a boří převládající paradigma fosilního plynu jako přechodného paliva na cestě ke klimatické neutralitě. Naplno se ukázalo, že energetická i klimatická krize mají společného jmenovatele – fosilní paliva. A tedy i společné řešení, kterým je nahrazení fosilních paliv čistými zdroji energie a investice do energetické účinnosti a úspor. Současnou krizi tak lze vnímat jako příležitost k větší evropské a národní energetické soběstačnosti a bezpečnosti a současně ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
 ---
 
