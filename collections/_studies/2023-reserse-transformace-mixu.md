@@ -4,7 +4,7 @@ title:         "Proměny mixů výroby elektřiny"
 slug:          2023-reserse-transformace-mixu
 redirect_from: /2023-reserse-transformace-mixu
 weight:        311
-published:     2023-05-14
+published:     2023-05-16
 tags-scopes:   [ eu ]
 tags-topics:   [ energetika ]
 use-preview-image: true
@@ -33,7 +33,7 @@ alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběh
         <option value="fossil">Podílu fosilních paliv</option>
         <option value="nuclear">Podílu jádra</option>
         <option value="renewables">Podílu obnovitelných zdrojů</option>
-        <option value="production">Celkové roční výroby</option>
+        <option value="production">Hrubé roční výroby</option>
         <option value="netImports">Čistého importu/exportu</option>
         <option value="co2Intensity">Emisní intenzity</option>
     </select>
