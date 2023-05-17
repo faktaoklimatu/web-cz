@@ -5,7 +5,7 @@ slug:        "technologie-dekarbonizace-prumyslu"
 published:   2023-5-10
 authors:
   - id: "adam-bilek"
-  - ids: ["jirka-lnenicka", "katerina-kolouchova"]
+  - ids: ["jirka-lnenicka"]
     minor-role: "editace"
 weight:      74
 tags-scopes: [  ]
