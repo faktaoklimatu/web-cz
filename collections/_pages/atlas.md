@@ -19,7 +19,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
         <h2>Pro vás</h2>
         <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
         <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-        <a href="/obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+        <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <hr />
         <h2>Podpořte naši práci</h2>
         <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
@@ -71,7 +71,7 @@ Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího 
 
 Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
 
-<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a> <a href="/obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
+<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a> <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
