@@ -22,11 +22,13 @@ Osobní údaje zpracováváme na základě plnění smlouvy a oprávněného zá
 
 Osobní údaje zpracováváme za účelem plnění právní povinnosti (vedení účetnictví, vydávání potvrzení o darech, zveřejnění celkové výše přijatých darů ve výroční zprávě a dalších materiálech) a za účelem oprávněného zájmu správce (poděkování spolu s informací pro vás o využití vašeho daru, informace o dění v organizaci, zasílání žádostí o podporu).
 
-### Zpracování osobních údajů při přihlášení na seminář či k odběru newsletteru
+### Zpracování osobních údajů při přihlášení k odběru newsletteru
 
-Osobní údaje zpracováváme na základě uděleného souhlasu. Při registraci na semináře či k odběru newsletteru budete zařazeni do příslušné databáze. V této databázi zpracováváme vaše osobní údaje, které jste uvedli (jméno, příjmení, telefonní číslo, e-mailová adresa).
+Osobní údaje zpracováváme na základě uděleného souhlasu. Při registraci k odběru newsletteru budete zařazeni do příslušné databáze. V této databázi zpracováváme vaše osobní údaje, které jste uvedli (jméno, příjmení, telefonní číslo, e-mailová adresa).
 
-Osobní údaje zpracováváme na základě uděleného souhlasu, a to za účelem uvedeným při udělení souhlasu (informování o dění v organizaci, o termínech seminářů apod.) a za účelem oprávněného zájmu správce (zasílání žádostí o podporu).
+### Zpracování osobních údajů při nákupu v eshopu nebo přihlášení na seminář
+
+Osobní údaje zpracováváme na základě vaší objednávky nebo přihlášky na seminář. Při těchto úkonech budete zařazeni do příslušné databáze. V této databázi zpracováváme vaše osobní údaje, které jste uvedli (jméno, příjmení, telefonní číslo, e-mailová adresa, případně adresa) a to za účelem vyřízení objednávky, vaší informovanosti a plnění právní povinnosti (vedení účetnictví).
 
 ### Analytika na webových stránkách
 
