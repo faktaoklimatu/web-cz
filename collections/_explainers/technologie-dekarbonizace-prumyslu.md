@@ -25,6 +25,7 @@ K celkové obtížnosti transformace tohoto sektoru přispívají také **ekonom
 
 ## Jak můžeme průmysl dekarbonizovat?
 
+<!---
 Pro celý sektor existují tři **hlavní metody**:
 
 - zachytávání CO<sub>2</sub>
@@ -37,10 +38,23 @@ V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkov
 - využití odpadů a biomasy jako paliv
 - náhrada používaných surovin či výsledného produktu šetrnější alternativou
 - zvyšování efektivity a různé úspory
+-->
+
+{% include figure.html
+    name="hlavni-a-doplnkove-metody.png"
+    caption="Hlavní a doplňkové metody dekarbonizace průmyslu."
+    alt="Zachytávání CO2, využití vodíku s nízkou uhlíkovou stopou a elektrifikace."
+    source-text="Fakta o klimatu."
+%}
 
 ## Hlavní metody
 
 ### Zachytávání CO<sub>2</sub> (CCS)
+
+{% include lead-in-figure.html
+    name="zachytavani-co2-animated.svg"
+    alt="TODO"
+%}
 
 Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (_Carbon Capture and Storage_). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i průmyslově využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
 
@@ -51,6 +65,11 @@ Projekty zachytávání CO<sub>2</sub> často cílí na **zachycení 90 % emisí
 Přesto se CCS u mnoha výrobních procesů v průmyslu do budoucna jeví jako **možné a efektivní řešení**, které má **potenciál využití ve velkém měřítku**.
 
 ### Zelený vodík
+
+{% include lead-in-figure.html
+    name="vyuziti-vodiku-animated.svg"
+    alt="TODO"
+%}
 
 **Může nahradit fosilní paliva**, která se v průmyslu spalují kvůli dodání tepla. Vhodný je zejména v situacích, kdy je nutné dosáhnout velmi vysokých teplot (např. při výrobě oceli je to okolo 1500 °C[^1500]). Zároveň může v některých případech sloužit jako **náhrada vstupních surovin**, které se používají při chemických reakcích během průmyslových procesů – tak je tomu například při výrobě amoniaku.
 
@@ -87,6 +106,11 @@ Pokud dojde ke zlevnění a vybudování související infrastruktury, **půjde 
 
 ### Elektrifikace
 
+{% include lead-in-figure.html
+    name="elektrifikace-animated.svg"
+    alt="TODO"
+%}
+
 Spalování v průmyslu lze částečně nahradit i využitím elektřiny – k **dodání potřebného tepla**. Toto řešení je nicméně vhodné spíše u nižších teplot, například v papírenském průmyslu, kde se potřebné teploty pohybují v rozmezí 50–250 °C.[^250]
 
 V některých odvětvích jsou ovšem při výrobě nutné tak vysoké teploty, že je zde elektrifikace technicky velmi složitá a zároveň značně neekonomická. Typickým příkladem je cement, při jehož produkci je zapotřebí dosáhnout teplot v rozmezí 1300–1450 °C.[^1450] V takových případech je ke zvážení varianta v podobě hybridního zařízení, které pro dosažení potřebné teploty využívá elektřinu a (například) zemní plyn. Takovéto hybridní pece najdou uplatnění třeba ve sklářském průmyslu.[^hybrid]
@@ -101,15 +125,30 @@ Vědecký a technologický pokrok může do určité míry v rámci dekarbonizac
 
 ### Recyklace
 
+{% include lead-in-figure.html
+    name="recyklace.svg"
+    alt="TODO"
+%}
+
 V mnoha průmyslových odvětvích v současnosti už využíváme relativně vysokou míru recyklace, alespoň v rozvinutých zemích. Například u hliníku dosahuje v EU recyklace 76,3 %.[^76] Takže i když v některých odvětvích ještě určité snížení emisí díky recyklaci možné je, prostor pro další výrazný posun v tomto směru je často už omezený. Navíc recyklaci mnohdy paradoxně limituje také dlouhá životnost některých produktů (platí třeba u výrobků z oceli).
 
 Kromě toho recyklovaný materiál může být náročnější na zpracování nebo má omezenou využitelnost, někde se tedy jeho sběr a znovupoužití zatím ekonomicky nevyplácí.
 
 ### Využití odpadů a biomasy jako paliv
 
+{% include lead-in-figure.html
+    name="spalovani-odpadu.svg"
+    alt="TODO"
+%}
+
 **Dnes už funguje mnoho podniků, které odpady nebo biomasu zčásti využívají**, ani zde tedy často nebývá prostoru ke zlepšení mnoho. V konkrétních případech některých provozů (např. u cementáren) může být takový postup výhodný ekonomicky i pro přírodu, ale zdaleka jej nelze uplatnit všude. Jednak to není technicky možné a jednak by při opravdu velkém přechodu brzy došlo k problému s **nedostatkem vhodného odpadu i environmentálně udržitelné biomasy**. Ve spalovaném odpadu (v podobě tzv. _tuhých alternativních paliv_) je navíc velká část uhlíku fosilního původu, takže jeho využití nepřináší významné snížení emisí.[^tap] Ani spalování biomasy nemusí mít tak nízkou uhlíkovou stopu, jak se často prezentuje.[^biomasa]
 
 ### Náhrada surovin či produktu šetrnější alternativou
+
+{% include lead-in-figure.html
+    name="nahrada-surovin.svg"
+    alt="TODO"
+%}
 
 O nahrazování jednotlivých částí výrobního řetězce můžeme uvažovat zejména ve dvou rovinách:
 
@@ -121,6 +160,11 @@ Nahrazování primárních zdrojů je považováno za součást potenciálních 
 **Pokud uvažujeme o alternativě výsledného produktu** (typicky za plasty), tak případnou **náhražkou často bývá pouze produkt z jiného průmyslového sektoru, který je také  potřeba dekarbonizovat**. U nahrazování přírodními alternativami (ať už jde o surovinu nebo produkt) je opět nutné vzít v úvahu, že kvalitního dřeva, biomasy apod. nemáme a nebudeme mít k dispozici neomezené množství.
 
 ### Zvyšování efektivity a provozní úspory
+
+{% include lead-in-figure.html
+    name="zvysovani-efektivity.svg"
+    alt="TODO"
+%}
 
 Z hlediska zvyšování efektivity a maximálních provozních úspor už mnoho průmyslových odvětví došlo daleko. Každý další krok ke zvýšení efektivity tak znamená mnohem menší zlepšení než dříve. V minulosti nebyla snaha o optimalizaci postupů v průmyslu motivovaná snahou dekarbonizovat, často šlo spíše o úspory z ekonomických důvodů. Přesto stále určitý prostor pro další optimalizaci v průmyslu existuje, zejména v globálním měřítku, kde často narážíme na rozdíly například mezi průmyslem v západní Evropě a Číně.
 
