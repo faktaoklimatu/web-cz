@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <path d="m208.76,139.57v-.23c0-8.01,6.5-14.51,14.51-14.51h0c8.01,0,14.51,6.5,14.51,14.51v.23" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m97.47,72.3v-.25c0-8.89,7.21-16.1,16.1-16.1h0c8.89,0,16.1,7.21,16.1,16.1v.25" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m176.19,138.51h87.83c4.26,0,7.72,3.46,7.72,7.72v133.28h-103.27v-133.28c0-4.26,3.46-7.72,7.72-7.72Z" fill="#e6e6e6"/>
+  <path d="m129.52,139.5h90.48c4.26,0,7.72,3.46,7.72,7.72v133.28h-105.92v-133.28c0-4.26,3.46-7.72,7.72-7.72Z" fill="#fff"/>
+  <circle cx="113.85" cy="155.39" r="83.41" fill="#81ebb3"/>
+  <polyline points="24.08 279.18 49.31 206.03 81.25 278.51 114.84 206.03 142.65 276.55 178.39 206.03 196.49 275.88" fill="none" stroke="#333" stroke-linejoin="bevel" stroke-width="3"/>
+  <path d="m196.49,139.73h63.59c6.65,0,12.05,8.31,12.05,13.65v124.57s-75.86-.16-75.86-.16l-17.87-71.76h-15.89" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m197.95,139.73h40.29c6.65,0,12.05,8.31,12.05,13.65v124.57s-45.52-.1-45.52-.1" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m196.25,139.73h20.15c6.65,0,12.05,8.31,12.05,13.65v124.57" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <circle cx="114.27" cy="155.14" r="83.43" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="white-lines">
+    <path d="m136.75,92.47c17.96,6.55,32.94,20.82,39.73,40.27,6.76,19.36,3.97,39.74-5.9,56" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="m92.58,216.87c-18.4-6.38-33.82-20.81-40.74-40.63-6.79-19.46-3.94-39.94,6.04-56.25" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <text transform="translate(87.27 171.19)" fill="#333" font-family="Roboto-Bold, Roboto" font-size="50.08" font-weight="700"><tspan x="0" y="0">H2</tspan></text>
+  <line x1="201.23" y1="206.26" x2="28.46" y2="206.26" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="10.58" y1="278.51" x2="288.61" y2="278.51" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m112.59,55.96v-9.68c0-8.72,7.07-15.78,15.78-15.78h79.92c8.72,0,15.78,7.07,15.78,15.78v77.33" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="28.46" y1="103.98" x2="201.23" y2="103.98" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+</svg>

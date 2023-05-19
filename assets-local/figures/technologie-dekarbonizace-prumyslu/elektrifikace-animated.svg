@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <path d="m168.08,136.72V48.79c0-9.55,7.76-17.29,17.33-17.29h24.34c9.57,0,17.33,7.74,17.33,17.29v43.41" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <style>
+
+    #cables > path{
+      stroke-dasharray: 10;
+      stroke-dashoffset: 0;
+      animation: cables 2s infinite linear;
+    }
+
+    #cables-2 > path{
+      stroke-dasharray: 50 10;
+      stroke-dashoffset: 0;
+      animation: cables-2 5s infinite linear;
+    }
+
+    @keyframes cables{
+      0%{
+        stroke-dashoffset: 0;
+      }
+      100%{
+        stroke-dashoffset: 100;
+      }
+    }
+
+    @keyframes cables-2{
+      0%{
+        stroke-dashoffset: 0;
+      }
+      100%{
+        stroke-dashoffset: 100;
+      }
+
+    }
+
+  </style>
+  <rect x="107.27" y="161" width="62.84" height="84.98" fill="#81ebb3"/>
+  <rect x="76.86" y="69.94" width="42.57" height="208.41" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="137.67" y="136.72" width="131.77" height="141.64" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="cables">
+    <path d="m105.24,201.15c-26.35,19.94-65.9,19.94-94.28,0" fill="none" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3" pathLength="100"/>
+    <path d="m105.24,221.39c-30.41,19.94-65.9,15.9-94.28,0" fill="none" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3" pathLength="100"/>
+    <path d="m105.24,183.52c-24.5,20.38-67.06,19.02-94.28,0" fill="none" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3" pathLength="100"/>
+  </g>
+  <line x1="8.93" y1="278.35" x2="291.74" y2="278.35" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="192.33" y1="161" x2="291.74" y2="161" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="192.33" y1="177.99" x2="291.74" y2="177.99" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="192.33" y1="194.99" x2="291.74" y2="194.99" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="cables-2">
+    <path d="m149.84,134.69v-69.71c0-9.55,7.76-17.29,17.33-17.29h24.34c9.57,0,17.33,7.74,17.33,17.29v26.21" fill="none" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="60.64" y1="88.15" x2="105.24" y2="88.15" fill="#fff" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="60.64" y1="105.15" x2="105.24" y2="105.15" fill="#fff" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="60.64" y1="122.15" x2="105.24" y2="122.15" fill="#fff" stroke="#81ebb3" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <line x1="192.33" y1="211.99" x2="291.74" y2="211.99" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="192.33" y1="228.98" x2="291.74" y2="228.98" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="192.33" y1="245.98" x2="291.74" y2="245.98" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="192.99" y="92.2" width="48.07" height="186.15" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="194.44" y1="113.96" x2="217.75" y2="113.96" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="194.44" y1="136.22" x2="217.75" y2="136.22" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="194.44" y1="160.5" x2="217.75" y2="160.5" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m105.24,197.71c-26.35,19.94-65.9,19.94-94.28,0" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m105.24,217.94c-30.41,19.94-65.9,15.9-94.28,0" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="m105.24,180.08c-24.5,20.38-67.06,19.02-94.28,0" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="105.24" y="161" width="64.87" height="84.98" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="105.24" y="161.14" width="64.87" height="84.84" fill="#81ebb3"/>
+  <rect x="105.24" y="161" width="64.87" height="84.98" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <polyline points="137.44 173.14 126.82 203.49 145.78 203.49 135.76 233.84" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+</svg>

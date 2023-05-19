@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <rect id="green" x="20.2" y="71.1" width="19.76" height="28.24" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect id="green-2" data-name="green" x="50.59" y="57.66" width="19.76" height="32.27" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect id="green-3" data-name="green" x="80.99" y="45.55" width="19.76" height="53.79" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect id="green-4" data-name="green" x="111.38" y="17.31" width="19.76" height="82.03" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="50.59" y="83.21" width="19.76" height="55.13" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="80.99" y="93.96" width="19.76" height="44.38" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="111.38" y="93.96" width="19.76" height="44.38" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <rect x="20.2" y="96.65" width="19.76" height="41.69" fill="#fff" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+</svg>
