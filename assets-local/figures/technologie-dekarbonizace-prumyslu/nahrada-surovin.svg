@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <circle cx="46.52" cy="44" r="10.68" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <circle cx="77.24" cy="44" r="10.68" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <circle cx="107.95" cy="44" r="10.68" fill="#81ebb3" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <g>
+    <rect x="104.62" y="109.44" width="17.36" height="17.36" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="31.17" y="109.44" width="17.36" height="17.36" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="67.89" y="109.44" width="17.36" height="17.36" fill="#e6e6e6" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <polyline points="95.27 98.75 133.33 98.75 133.33 138.81 19.81 138.81 19.81 98.75 58.54 98.75" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="arrow">
+    <g>
+      <line x1="76.57" y1="63.36" x2="76.57" y2="93.48" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="3"/>
+      <polygon points="70.59 91.73 76.57 102.09 82.55 91.73 70.59 91.73" fill="#333"/>
+    </g>
+  </g>
+</svg>
