@@ -79,6 +79,12 @@ $c-callout-text: #373633;
     color: $c-callout-text;
 }
 
+.gray-callout-box {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: $c-extralight-gray;
+}
+
 .extremy-kulicka {
     font-size: 0.9em;
     vertical-align: 0.125em;
