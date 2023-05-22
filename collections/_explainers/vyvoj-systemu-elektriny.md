@@ -17,7 +17,7 @@ cover-source-license-url:   "https://pixabay.com/cs/service/license-summary/"
 cover-source-url:           "https://pixabay.com/cs/photos/elektr%c3%a1rny-veden%c3%ad-elektronick%c3%bd-344231/"
 perex:       "Ačkoli rámec pravidel umožňující produkci a dodávky elektřiny může někdo vnímat jako daný a neměnný, ve skutečnosti prošel do dnešních dnů dlouhým vývojem. Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou může být užitečné si tento vývoj trochu přiblížit. Následující text ukazuje, jak se dva základní přístupy v energetice měnily v průběhu let. Hraje hlavní roli stát, nebo trh? Kdo elektřinu dodává, s jakým cílem a za jakých podmínek? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný. Platí to i o našem území, kde se i přes specifikum komunistického režimu v letech 1948–1989 z větší části podobal vývoji jinde v Evropě."
 ---
-Text ukazuje vývoj systému pro výrobu a dodávky elektřiny na pozadí politicko-ekonomických změn v Evropě a České republice. Zaměřuje se pouze na elektřinu, nikoliv energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na další samostatné texty.
+Text ukazuje vývoj systému pro výrobu a dodávky elektřiny na pozadí politicko-ekonomických změn. Zaměřuje se pouze na elektřinu, nikoliv energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na další samostatné texty.
 
 ## Dva základní přístupy v energetice
 
@@ -27,7 +27,7 @@ S určitou mírou zjednodušení lze říct, že se ve vývoji elektroenergetiky
 
 ### Přístup s dominantní rolí trhu
 
-O rozvoj a dodávky elektřiny se v tomto případě stará hlavně trh (stát ovšem určuje jeho pravidla). Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více dodavatelů. Hlavní prioritou bývá efektivní stanovení ceny elektřiny – aby se v ní odrážely reálné náklady na výrobu, i kdyby to mělo znamenat vyšší cenu pro zákazníky. Na trh s elektřinou mohou vstupovat nejen firmy, ale případně i jednotlivci či energetická společenství.[^spolecenstvi] Motivací firem je především zisk, u jednotlivců a energetických společenství to bývá často snaha snížit své náklady tím, že si určité množství elektřiny vyrábějí sami (a případně i ukládají do zásoby). Možnost volby dodavatele a vzájemná konkurence může zvýšit efektivitu firem a také snížit cenu elektřiny.
+O rozvoj a dodávky elektřiny se v tomto případě stará trh. V pozdějších fázích tohoto přístupu ovšem pro trh stát určuje pravidla. Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více dodavatelů. Hlavní prioritou bývá efektivní stanovení ceny elektřiny – aby se v ní odrážely reálné náklady na výrobu, i kdyby to mělo znamenat vyšší cenu pro zákazníky. Na trh s elektřinou mohou vstupovat nejen firmy, ale případně i jednotlivci či energetická společenství.[^spolecenstvi] Motivací firem je především zisk, u jednotlivců a energetických společenství to bývá často snaha snížit své náklady tím, že si určité množství elektřiny vyrábějí sami (a případně i ukládají do zásoby). Možnost volby dodavatele a vzájemná konkurence může zvýšit efektivitu firem a také snížit cenu elektřiny.
 
 ### Přístup s dominantní rolí veřejného sektoru a státu
 
