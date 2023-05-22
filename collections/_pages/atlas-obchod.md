@@ -19,7 +19,7 @@ slug: atlas-obchod
 <div class="section pt-0">
     <div class="container">
         <div class="row" markdown="on">
-            <div class="col-md-12 col-lg-9">
+            <div class="col-12 col-lg-9">
                 <p class="lead pt-3">
                     Pomocí formuláře níže si můžete objednat Atlas klimatické změny přímo od nás.
                 </p>
@@ -40,16 +40,15 @@ slug: atlas-obchod
 <div data-SimpleShopForm="L5Aa"><div>Prodejní formulář je vytvořen v systému <a href="https://www.simpleshop.cz/" target="_blank">SimpleShop.cz</a>.</div></div>
 <!-- www.SimpleShop.cz form#65438 end -->
             </div>
-            <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
-                <h2>Cena</h2>
-                <ul>
-                    <li>1-9 výtisků: 80 Kč/ks</li>
-                    <li>Při odběru alespoň 10 výtisků: 60 Kč/ks</li>
-                </ul>
-                <hr />
+            <div class="col-12 col-lg-3">
+                <h2>Cena Atlasu</h2>
+                <p>
+                <strong>80 Kč/ks</strong> do 10 výtisků<br>
+                <strong>60 Kč/ks</strong> nad 10 výtisků
+                </p>
                 <h2>Doprava</h2>
-                <p>Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu. Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.</p>
-                <hr />
+                <p>Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu.</p>
+                <p>Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.</p>
                 <h2>Rychlost doručení</h2>
                 <p>Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401 (vyřizuje Kuba Venglář).</p>
             </div>
