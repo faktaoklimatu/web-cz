@@ -7,35 +7,48 @@ search_type: "Publikace"
 search_image: "/assets-local/img/atlas-mockup.jpg"
 ---
 
-<div class="section"><div class="container">
-<div class="row" markdown="on">
-    <div class="col-md-12 col-lg-9">
+<div id="{{ site.data.lang.navigation.first-id }}" class="section pb-0">
+    <div class="container between-navbars">
         <h1>{{ page.title }}</h1>
-        <p class="lead">{{ page.intro }}</p>
-        <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
-        <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
-    </div>
-    <div class="col-md-12 col-lg-3" style="margin-top: 3rem;">
-        <h2>Pro vás</h2>
-        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
-        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-        <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
-        <hr />
-        <h2>Podpořte naši práci</h2>
-        <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
-        <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
-        <hr />
-        <h2>Licence</h2>
-        <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
     </div>
 </div>
-</div></div>
+<div id="secondary-navbar" class="section">
+    <div class="container page-title">{{ page.title }}</div>
+    <ul class="container">
+        <li><a class="home" href="#{{ site.data.lang.navigation.first-id }}">Úvod</a></li>
+        <li><a href="/atlas-obchod">Koupit</a></li>
+    </ul>
+  </div>
+<div class="section pt-0">
+    <div class="container">
+        <div class="row" markdown="on">
+            <div class="col-md-12 col-lg-9">
+                <p class="lead py-4">{{ page.intro }}</p>
+                <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
+                <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <h2>Pro vás</h2>
+                <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
+                <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+                <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+                <hr />
+                <h2>Podpořte naši práci</h2>
+                <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
+                <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
+                <hr />
+                <h2>Licence</h2>
+                <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="section"><div class="container" markdown="1">
 
 ## K čemu publikace slouží
 
-Atlas klimatické změny vychází z naší dlouhodobé snahy kultivovat veřejnou debatu o klimatu a související transformaci, kterou společnost zažívá. Za tímto účelem v něm nabízíme srozumitelně podaná data ve formě jednoduchých a přehledných grafů, map či infografik. 
+Atlas klimatické změny vychází z naší dlouhodobé snahy kultivovat veřejnou debatu o klimatu a související transformaci, kterou společnost zažívá. Za tímto účelem v něm nabízíme srozumitelně podaná data ve formě jednoduchých a přehledných grafů, map či infografik.
 Naše práce si zakládá na tom, aby čtenáři z těchto zdrojů dokázali snadno vyčíst informace, které je zajímají, a odnesli si uchopitelné sdělení. Vše doplňujeme komentářem o širších souvislostech probíraných jevů.
 
 ## Co najdete uvnitř
@@ -67,7 +80,7 @@ Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creati
 
 ### 2) Nákup již hotových výtisků přímo od nás
 
-Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk. 
+Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk.
 
 Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
 
@@ -98,7 +111,7 @@ S atlasem se nemusíte omezovat pouze na téma klimatické změny – naše graf
 Při různých příležitostech můžete se studenty procvičovat dovednosti jako čtení grafů, práce s daty, interpretace textů apod.
 Několik příkladů možného využití atlasu:
 * V matematice a informatice k učení práce s procenty, grafy, tabulkami…
-* V dějepise při probírání historie vědy a techniky nebo vlivu přírodních podmínek na život člověka. 
+* V dějepise při probírání historie vědy a techniky nebo vlivu přírodních podmínek na život člověka.
 * V chemii, fyzice a zeměpisu při výuce planetárních systémů, vlivu chemických a fyzikálních procesů na člověka a naopak.
 * V českém jazyce nebo mediální výchově k procvičování práce s informacemi a interpretování textů.
 * V občanské výchově při výuce témat, jako je globalizace, mezinárodní spolupráce, společenská diskuze.
@@ -110,7 +123,7 @@ Několik příkladů možného využití atlasu:
 content="
 
 Děkujeme dalším členům Fakt o klimatu, kteří se na vzniku atlasu svou prací významně podíleli.
-    
+
 První vydání této publikace recenzovali:
 
 * Mgr. Michal Žák, Ph. D., Katedra fyziky atmosféry Matematicko-fyzikální fakulty Univerzity Karlovy
