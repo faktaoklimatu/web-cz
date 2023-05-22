@@ -27,7 +27,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
                 <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
                 <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
             </div>
-            <div class="col-md-12 col-lg-3">
+            <div class="col-md-12 col-lg-3 mt-5">
                 <h2>Pro vás</h2>
                 <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
                 <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
