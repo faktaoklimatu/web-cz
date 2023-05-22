@@ -27,23 +27,25 @@ S určitou mírou zjednodušení lze říct, že se ve vývoji elektroenergetiky
 
 ### Přístup s dominantní rolí trhu
 
-O rozvoj a dodávky elektřiny se v tomto případě stará trh. V pozdějších fázích tohoto přístupu ovšem pro trh stát určuje pravidla. Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více dodavatelů. Hlavní prioritou bývá efektivní stanovení ceny elektřiny – aby se v ní odrážely reálné náklady na výrobu, i kdyby to mělo znamenat vyšší cenu pro zákazníky. Na trh s elektřinou mohou vstupovat nejen firmy, ale případně i jednotlivci či energetická společenství.[^spolecenstvi] Motivací firem je především zisk, u jednotlivců a energetických společenství to bývá často snaha snížit své náklady tím, že si určité množství elektřiny vyrábějí sami (a případně i ukládají do zásoby). Možnost volby dodavatele a vzájemná konkurence může zvýšit efektivitu firem a také snížit cenu elektřiny.
+O rozvoj a dodávky elektřiny se v tomto případě stará trh. Stát ovšem pro trh v průběhu času zavádí pravidla.[^regulace] Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny.
 
 ### Přístup s dominantní rolí veřejného sektoru a státu
 
-O rozvoj a dodávky elektřiny se stará především stát, v menší míře to mohou být i města. Elektřina je v tomto případě často vnímána jako komodita se strategickou důležitostí, a je tedy nutné zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí byl dostatek pro průmyslovou základnu dané země a zároveň byla dostupná pro všechny skupiny obyvatel. Stát hraje klíčovou roli ve stanovení pravidel a tvorbě regulací.[^regulace] Kromě toho může na tuto komoditu vyčlenit určité prostředky z rozpočtu, proto její cena nemusí nutně odpovídat reálným systémovým nákladům (na rozdíl od přístupu s dominantní rolí trhu). Pro situaci, kdy je dominantní stát, je typická vertikální propojenost: jedna firma vlastní nejen to, co je potřeba k výrobě elektřiny (např. uhelné doly), ale i elektrárny a také přenosovou a distribuční soustavu. Tato firma pak má v daném státě monopol na zajišťování dodávek.
+O rozvoj a dodávky elektřiny se stará především stát, případně města. Elektřina je v tomto přístupu vnímána jako komodita se strategickou důležitostí, a je tedy nutné zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí byl dostatek pro průmyslovou základnu dané země a zároveň byla dostupná pro všechny skupiny obyvatel. Stát tak může na tuto komoditu vyčlenit určité prostředky z rozpočtu, proto její cena nemusí nutně odpovídat reálným systémovým nákladům. Pro tento přístup je typická vertikální propojenost: jedna firma vlastní elektrárny, uhelné doly ale také přenosovou a distribuční soustavu. Tato firma pak má v daném státě monopol na zajišťování dodávek.
 
 Podoba energetického systému v určité zemi do značné míry záleží na tom, který z těchto dvou přístupů převládne. V následujícím textu popisujeme, jakou roli hrály oba přístupy v různých obdobích – od počátků elektrifikace až do současnosti.
 
 {% capture jadro %}
 
-Dobře je rozdíl mezi tržním a státním přístupem vidět na příkladu jaderných elektráren. S jejich výstavbou jsou spojeny obrovské kapitálové náklady, které mají navíc velmi dlouhou návratnost.
+Jaderné elektrárny dobře ilustrují rozdíl mezi tržním a státním přístupem. **Největší část jejich rozvoje po celém světě probíhala a probíhá v obdobích, kdy má stát velkou míru kontroly nad energetikou i nad daným jaderným projektem.**
 
-Protože výstavba jaderných elektráren je přísně regulována a má tendenci se značně prodlužovat oproti původním plánům, jedná se o velmi rizikovou investici. Vzhledem k obřím kapitálovým nákladům bude takový projekt rovněž v naprosté většině případů vyžadovat, aby si soukromý investor půjčil finanční zdroje – a průtahy s výstavbou, dlouhodobá návratnost i rizikovost investice pro něj pak mohou znamenat problém z hlediska vysokých úrokových sazeb.
+Málo jaderných staveb na základně tržního přístupu má více příčin:
+- S výstavbou jaderných elektráren jsou spojeny obrovské kapitálové náklady, které mají navíc velmi dlouhou návratnost. Z hlediska trhu a tržních úrokových sazeb to v součtu není úplně výhodná investice.
+- Výstavba jaderných elektráren má navíc tendenci se oproti původním plánům značně prodlužovat a prodražovat, což významně zvyšuje rizikovost takové investice pro soukromé aktéry. Vysoká míra rizika u tak obrovské investice už může existenčně ohrožovat i velké firmy jako je EDF nebo ČEZ.
 
-Naproti tomu stát, který nemá výrazné problémy s rozpočtem a má relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje. (Vidět to můžeme i v Česku: v případě tendru na dostavbu JE Dukovany má stát lepší podmínky půjček z hlediska nižších úrokových sazeb než akciová společnost ČEZ). Pro soukromého investora tak může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost. Kromě toho může soukromé investory odrazovat také negativní postoj společnosti k jaderné energii.
+Naproti tomu pro stát je běžné plánovat a realizovat projekty na další desítky let (jako např. dálniční a železniční síť). Když má stát navíc relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje (a tedy nemusí nutně hledět na krátkodobou ziskovost takového projektu).
 
-Obecně řečeno: největší rozvoj jaderných elektráren ve světě probíhal a probíhá v situacích, kdy si velkou míru kontroly nad daným projektem ponechává stát.
+Pro soukromého investora může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost.
 
 {% endcapture %}
 
@@ -153,7 +155,6 @@ Abychom dokázali plnit své dekarbonizační cíle a mohli se postupně odklán
 ## Poznámky a zdroje
 
 [^Francie]: Lze to ilustrovat na příkladu Francie, kde podnik Électricité de France byl založený jako státní roku 1946 a k částečné privatizaci došlo teprve roku 2004. ČEZ byl založený roku 1946 a k částečné privatizaci ČEZu došlo u nás v 90. letech
-[^spolecenstvi]: Díky energetickým společenstvím (tzv. komunitní energetice) mohou domácnosti či obce mezi sebou sdílet elektřiny. Například bytový dům může mít na střeše solární panely, a elektřinu z nich by dodával přímo do místní školy bez potřeby klasické licence ohledně vstupu na trh s elektřinou.
 [^regulace]: [Koncept přirozeného monopolu](https://www.investopedia.com/terms/n/natural_monopoly.asp) označuje situaci, kdy se na trh obtížně dostávají noví hráči. U sítě s elektřinou (ale třeba i u železnic) dává smysl, aby postavenou infrastrukturu sdílely všechny subjekty a nebudovaly paralelní síť, která by vyžadovala vysoké náklady. Stát ovšem musí stanovit jasné podmínky, za kterých budou mít k vybudované infrastruktuře přístup všichni, tedy žádný subjekt nemůže blokovat svou konkurenci.
 [^nekompatibilita]: Ke konci 19. století probíhala také takzvaná “válka proudů”: komerční boj o to, zda se dominantní technologií stane stejnosměrný proud (podporovaný Thomasem Edisonem), nebo proud střídavý (podporovaný Westinghouse a Nikolou Teslou).
 [^sjednocovani]: Zde je myšleno výraznější systematické sjednocování sítě jako takové. Už dříve existovaly snahy o sjednocení názvosloví či standardů, lze zmínit např. Mezinárodní elektrotechnický kongres či Mezinárodní elektrotechnickou komisi.
