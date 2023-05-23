@@ -57,21 +57,25 @@ Pro soukromého investora může být mnohem atraktivnější například výsta
     content=jadro
 %}
 
-## Počátky elektrifikace
+## Vývoj těchto dvou přístupů v historii
 
-*Období: přibližně konec 19. století až konec 2. světové války*<br>
-*Převažující přístup: dominantní role trhu*<br>
-*Klíčová slova: počátky elektrifikace, decentralizované systémy, soukromí aktéři, města*
+### Počátky elektrifikace
+
+{:.contrast-figure}
+**Období:** _přibližně konec 19. století až konec 2. světové války_\\
+**Převažuje:** _dominantní role trhu_\\
+**Klíčová slova:** _elektrifikace, soukromí aktéři, města, decentralizované systémy_
 
 Rozvoj prvních elektráren a energetických závodů v Evropě a USA byl v tomto období **veden především soukromým sektorem, bez větších státních zásahů**. Ke konci 19. století začaly vznikat i elektrárny vlastněné městy. V počátcích elektrifikace nic jako národní elektrická síť neexistovalo, spíše šlo o jakousi směsici vzájemně nekompatibilních systémů, jež byly často zasazeny do největších měst či průmyslových podniků.[^nekompatibilita] Jejich **sjednocování začalo systematicky probíhat až v meziválečném období**,[^sjednocovani] kdy si státy uvědomily, jaký význam má elektřina pro jejich rozvoj a hospodářství, a zároveň začaly usilovat o to, aby elektřina byla dostupná co největšímu počtu domácností. Postupně tak začal převažovat přístup s **větším vlivem veřejného sektoru a státu**.
 
 Konkrétně v Československu se decentralizované elektrické systémy začaly systematičtěji sjednocovat po první světové válce – v roce 1919 byl přijat zákon o elektrifikaci.[^elektrifikace] Postupem času vyvíjel stát tlak na větší standardizaci a sjednocování, například u napětí a frekvence v síti. Dále byly založeny takzvané všeužitečné elektrárenské společnosti,[^vseuzitecnost] které měly povinnost dodávat elektřinu všem zájemcům (za předpokladu, že to bylo ekonomicky a technicky možné).
 
-## Období po 2. světové válce
+### Období po 2. světové válce
 
-*Období: po 2. světové válce do 90. let* <br>
-*Převažující přístup: dominantní role státu*<br>
-*Klíčová slova: vertikální monopol, znárodnění, bezpečnost, strategické plánování*
+{:.contrast-figure}
+**Období:** _po 2. světové válce do 90. let_\\
+**Převažuje:** _dominantní role státu_\\
+**Klíčová slova:** _vertikální monopol, znárodnění, bezpečnost, strategické plánování_
 
 Toto období se vyznačuje **silnou rolí státu** – výrobu a distribuci elektřiny mívá zpravidla na starost státem vlastněná energetická firma (často se jedná o monopol). Jaké zdroje elektřiny budou při výrobě dominantní, je především otázkou národní strategie, jejíž prioritou je zajistit **energetickou bezpečnost země**. Jako klíčové jsou vnímány dodávky elektřiny pro nejdůležitější průmyslová odvětví, ale do popředí vstupuje i otázka **co nejvyšší dostupnosti elektřiny** pro všechny skupiny obyvatel. Elektřina se tak zároveň stává otázkou sociální politiky a její cena nemusí nutně odpovídat reálným nákladům.
 
@@ -81,17 +85,18 @@ V roce 1950 dochází ke sjednocení přenosových soustav do jednoho celku.[^sj
 
 Geopolitické směřování naší země v tomto období vede ke snahám o větší propojení elektrizačních soustav se státy východního bloku. Kromě toho vláda podporuje sociální cíl levné elektřiny: například v letech 1968–1976 se cena pro odběratele nezměnila, což způsobilo nesoulad mezi náklady a cenou.[^nesoulad] V roce **1978 se začíná stavět jaderná elektrárna Dukovany** (spuštěna 1985). Pro státní politiku v socialistickém Československu není ochrana životního prostředí příliš velkou prioritou a energetický systém tomu do velké míry odpovídá. Ke konci 80. let nicméně dochází k veřejným protestům proti výraznému překračování emisních limitů u uhelných elektráren.[^protesty]
 
-## Nástup trhu
+### Nástup trhu
 
-*Období: od 90. let do současnosti*<br>
-*Převažující přístup: dominantní role trhu*<br>
-*Klíčová slova: unbundling, privatizace, budování evropského trhu s elektřinou, EU ETS*
+{:.contrast-figure}
+**Období:** _od 90. let do současnosti_\\
+**Převažuje:** _dominantní role trhu_\\
+**Klíčová slova:** _unbundling, privatizace, liberalizace trhu s elektřinou, EU ETS_
 
-V tomto období **získává trh znovu větší vliv než stát**. Dochází k částečným či úplným privatizacím národních energetických firem a otevírání trhu jiným subjektům. Spotřebitel tak může volit mezi více dodavateli. Klíčovým konceptem v rámci tržního přístupu je tzv. unbundling, který označuje oddělení výroby elektřiny od její distribuce – jedna firma tak nesmí přímo vlastnit a spravovat například elektrárnu a zároveň přenosovou či distribuční soustavu.[^unbundling] **Elektřina se stává obchodovatelnou komoditou** a její prodej se přesouvá na burzy, které bývají i mezinárodně propojené. V liberalizovaném prostředí už cena elektřiny více odpovídá reálným systémovým nákladům. Zejména v posledních letech vystupuje do popředí také potřeba **mitigace změny klimatu a snížení emisní náročnosti elektřiny**. Postupně se zavádí zpoplatnění uhlíku, které má umožnit zakomponovat do ceny elektřiny rovněž <glossary id="externalita">externalitu</glossary> produkce CO<sub>2</sub>.[^externalita] Další možností jsou různé formy finanční podpory pro obnovitelné zdroje,[^oze] které v minulosti sehrály důležitou roli například u solární energie.
+V tomto období **získává trh znovu větší vliv než stát**. Dochází k liberalizaci evropského trhu, k částečným či úplným privatizacím národních energetických firem a otevírání trhu jiným subjektům. Pro spotřebitele to přináší možnost volby mezi více dodavateli, stejně tak se ale trh otevírá pro více výrobců elektřiny. Klíčovým konceptem v rámci tržního přístupu je tzv. unbundling, který označuje oddělení výroby elektřiny od její distribuce – jedna firma tak nesmí přímo vlastnit a spravovat například elektrárnu a zároveň přenosovou či distribuční soustavu.[^unbundling] **Elektřina se stává obchodovatelnou komoditou** a její prodej se přesouvá na burzy. V jednotlivých zemích EU dochází k integraci národní energetiky s evropským trhem a zavádění energetických balíčků EU, které liberalizaci trhů dále prohlubují a tím posilují konkurenčnost prostředí a přeshraniční obchodování na burzách.
 
-Také v Česku se porevoluční období vyznačuje sílícím tlakem na deregulaci a liberalizaci a dochází k úplné nebo částečné privatizaci energetických podniků. Částečně byl privatizován ČEZ (v současnosti český stát vlastní 69,78 % akcií firmy[^akcie]), od ČEZu se také postupně oddělují distribuční společnosti a jiné podniky. Přenosovou soustavu spravuje ČEPS, který postupně z vlastnictví ČEZu přechází pod kontrolu státu.[^ceps] Trh se rovněž otevírá jiným hráčům,[^hraci] a ČEZ tak postupně ztrácí svou roli monopolu (přestože si zatím udržuje silnou pozici).
+Zejména v posledních letech vystupuje do popředí také potřeba **mitigace změny klimatu a snížení emisní náročnosti elektřiny**. Tento trend v energetice do určité míry znovu posiluje roli veřejného sektoru. V EU se formou [emisních povolenek](/explainery/emisni-povolenky-ets) postupně zpoplatňuje uhlík, což vytváří tlak na dekarbonizaci výroby elektřiny.[^externalita] Jednotlivé státy postupně využívají různé formy finanční podpory pro obnovitelné zdroje[^oze], které v minulosti sehrály důležitou roli například u rozvoje solární energetiky. Veřejný sektor hraje také důležitou roli u [uhelného phase-outu](/infografiky/uhelny-phaseout-eu).
 
-V jednotlivých zemích dochází k integraci národní energetiky s evropským trhem a zavádění energetických balíčků EU, které liberalizaci trhů dále prohlubují a tím posilují konkurenčnost prostředí a přeshraniční obchodování na burzách. Národní monopoly po celé Evropě tak postupně ztrácejí svou sílu. V Unii se zároveň zavádí systém emisních povolenek <glossary id="euets">EU ETS</glossary>, který má pomoci výrobu elektřiny dekarbonizovat. Do popředí se také dostává otázka, jak při této výrobě přestat být závislý na fosilních zdrojích – státy například stanovují, do kdy mají uhelné elektrárny ukončit svůj provoz.
+Také v Česku se porevoluční období vyznačuje sílícím tlakem na deregulaci a liberalizaci a dochází k úplné nebo částečné privatizaci energetických podniků. Částečně byl privatizován ČEZ (v současnosti český stát vlastní asi 70 % akcií firmy[^akcie]), od ČEZu se také postupně oddělují distribuční společnosti a jiné podniky. Přenosovou soustavu spravuje ČEPS, který postupně z vlastnictví ČEZu přechází pod kontrolu státu.[^ceps] Trh se rovněž otevírá jiným hráčům, a ČEZ tak postupně ztrácí svou roli monopolního dodavatele (přestože si zatím udržuje silnou pozici).[^hraci]
 
 {% capture trilema %}
 
@@ -156,7 +161,7 @@ Abychom dokázali plnit své dekarbonizační cíle a mohli se postupně odklán
 
 [^Francie]: Lze to ilustrovat na příkladu Francie, kde podnik Électricité de France byl založený jako státní roku 1946 a k částečné privatizaci došlo teprve roku 2004. ČEZ byl založený roku 1946 a k částečné privatizaci ČEZu došlo u nás v 90. letech
 [^regulace]: [Koncept přirozeného monopolu](https://www.investopedia.com/terms/n/natural_monopoly.asp) označuje situaci, kdy se na trh obtížně dostávají noví hráči. U sítě s elektřinou (ale třeba i u železnic) dává smysl, aby postavenou infrastrukturu sdílely všechny subjekty a nebudovaly paralelní síť, která by vyžadovala vysoké náklady. Stát ovšem musí stanovit jasné podmínky, za kterých budou mít k vybudované infrastruktuře přístup všichni, tedy žádný subjekt nemůže blokovat svou konkurenci.
-[^nekompatibilita]: Ke konci 19. století probíhala také takzvaná “válka proudů”: komerční boj o to, zda se dominantní technologií stane stejnosměrný proud (podporovaný Thomasem Edisonem), nebo proud střídavý (podporovaný Westinghouse a Nikolou Teslou).
+[^nekompatibilita]: Ke konci 19. století probíhala také takzvaná ["válka proudů"](https://cs.wikipedia.org/wiki/V%C3%A1lka_proud%C5%AF): komerční boj o to, zda se dominantní technologií stane stejnosměrný proud (podporovaný Thomasem Edisonem), nebo proud střídavý (podporovaný Georgem Westinghousem a Nikolou Teslou).
 [^sjednocovani]: Zde je myšleno výraznější systematické sjednocování sítě jako takové. Už dříve existovaly snahy o sjednocení názvosloví či standardů, lze zmínit např. Mezinárodní elektrotechnický kongres či Mezinárodní elektrotechnickou komisi.
 [^elektrifikace]: [438/1919 Sb.](https://www.aspi.cz/products/lawText/1/1339/1/2) Zákon ze dne 22. července 1919 o státní podpoře při zahájení soustavné elektrisace.
 [^vseuzitecnost]: Těchto [všeužitečných elektrárenských společností](https://oenergetice.cz/elektrina/ceska-prenosova-a-distribucni-soustava-1-dil-elektrifikace-a-princip-funkce) bylo založeno 25.
@@ -166,9 +171,9 @@ Abychom dokázali plnit své dekarbonizační cíle a mohli se postupně odklán
 [^nesoulad]: [Nesoulad mezi náklady na výroby elektřiny a její cenou byl řešený státními dotacemi](https://www.cez.cz/cs/o-cez/vzdelavani-a-vyzkum/vzdelavani-a-energetika-zabavne/energeti-ahistorie-a-soucasnost/vyznamna-data-ceske-energetiky), ovšem později došlo k razantnímu zvýšení ceny elektřiny pro spotřebitele.
 [^protesty]: [Demonstrace v Teplicích](https://ct24.ceskatelevize.cz/domaci/2975009-komunisticky-rezim-se-zacal-drolit-v-teplicich-ekologicke-demonstrace-ukazaly-ze-se) 13. listopadu proti znečištění ovzduší byla jednou z prvních protestních akcí na podzim roku 1989.
 [^unbundling]: Unbundling lze nicméně provést různě – konkrétní forma byla v minulosti předmětem politických sporů. Jedna z variant funguje tak, že firma vlastnící elektrárny i distribuční či přenosovou soustavu nemusí nutně daný majetek prodat, rozhodovací práva spojená s distribuční soustavou lze totiž přesunout na nezávislého operátora, jehož úkolem je zaručit neutralitu a umožnit přístup jiných firem.
-[^externalita]: Zdůvodněním byla [víra, že trh dovede tuto externalitu zakomponovat](https://newforum.org/en/studie/modern-climate-policy-moving-beyond-the-market-liberal-paradigm/) nejlépe právě prostřednictvím zavedení ceny za emise CO<sub>2</sub>.
-[^oze]: Zmínit lze například tzv. feed-in tarif, který spočívá v tom, že producent elektřiny z obnovitelných zdrojů má právo tuto elektřinu prodat za výkupní cenu garantovanou státem. Ta bývá vyšší než cena elektřiny na trhu – producentům se díky tomu vrací jejich investice do obnovitelných zdrojů a výroba elektřiny jim přináší zisk.
-[^akcie]: [Zbytek akcionářů](https://www.cez.cz/cs/o-cez/cez/akcionari) jsou právnické a fyzické osoby.
+[^externalita]: Zpoplatnění uhlíku do ceny výroby elektřiny zahrnuje <glossary id="externalita">externality</glossary> spojené s produkcí CO<sub>2</sub>. Takové zpoplatnění stojí ekonomicky na [široce sdíleném přesvědčení](https://academiccommons.columbia.edu/doi/10.7916/d8-w2nc-4103), že povede k nákladově efektivní redukci emisí uhlíku. Objevují se ovšem i kritičtější hlasy, že tento nástroj k dosažení dekarbonizačních cílů [nestačí](https://www.pnas.org/doi/10.1073/pnas.2004093117) nebo [vůbec nepovede](https://newforum.org/en/studie/modern-climate-policy-moving-beyond-the-market-liberal-paradigm/).
+[^oze]: Zmínit lze například tzv. Výkupní ceny (_feed-in tariff_), které spočívají v tom, že producent elektřiny z obnovitelných zdrojů má právo tuto elektřinu prodat za výkupní cenu garantovanou státem. Ta bývá vyšší než cena elektřiny na trhu – producentům se díky tomu vrací jejich investice do obnovitelných zdrojů a výroba elektřiny jim přináší zisk.
+[^akcie]: [Zbytek akcionářů](https://www.cez.cz/cs/o-cez/cez/akcionari) jsou fyzické osoby (13,6 %) stejně jako různé investiční fondy a další právnické osoby (16,4 %).
 [^ceps]: [Vyčlenění ČEPS](https://zpravy.aktualne.cz/denik-insider/zrozeni-imperia-skutecny-pribeh-spolecnosti-cez/r~i:insider:article:17913/) jakožto samostatné entity namísto pouhé divize v rámci ČEZu se odehrálo v roce 1998 v návaznosti na směrnici EU.
 [^hraci]: V ČR se jedná o firmy jako E.ON, Centropol či Innogy. V minulosti byla významným hráčem také firma Bohemia Energy, ta ale zanikla kvůli finančním problémům v době energetické krize v roce 2021.
 [^utilizationgap]: Tento časový nesoulad, kdy budeme mít více zdrojů, než kolik dokážeme využít a zároveň nebude dostatek akumulace například prostřednictvím baterií, se anglicky nazývá *utilization gap*.
