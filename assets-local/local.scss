@@ -112,6 +112,26 @@ $c-callout-text: #373633;
     margin: 0 auto;
 }
 
+.technologie-dekarbonizace {
+    line-height: 1.2;
+}
+
+.technologie-dekarbonizace > .longread-figure{
+    margin: 1rem 0 0.5rem 0;
+}
+
+.pictogram-large > .longread-figure {
+    max-width: 10em;;
+}
+
+.pictogram-small > .longread-figure {
+    max-width: 6em;
+}
+
+.barvy-vodiku > .longread-figure {
+    max-width: 30rem;
+}
+
 #mix-transformation-survey-countries {
     display: flex;
     flex-direction: column;
