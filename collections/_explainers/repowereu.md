@@ -7,6 +7,8 @@ authors:
   - id: "katerina-kolouchova"
   - id: "marcel-otruba"
     minor-role: "vizualizace"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
 weight:      100
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
@@ -17,18 +19,6 @@ cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/WYGhTLym344"
 perex:       "Invaze Ruska na Ukrajinu v roce 2022 naplno ukázala, že energetická i klimatická krize mají společného jmenovatele: fosilní paliva. Zároveň už dnes víme, že na cestě ke klimatické neutralitě nemůžeme dále spoléhat na fosilní plyn coby přechodné řešení. Současnou krizi je však možné vnímat i jako příležitost k přechodu na čisté zdroje energie, k investicím do energetické účinnosti a úspor a také k zajištění větší evropské a národní energetické soběstačnosti a bezpečnosti. Tyto změny současně povedou ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
 ---
-
-{% include tldr.html
-    title="Shrnutí"
-    content="
-- **Pro snížení závislosti na fosilních palivech z Ruska** a zvýšení energetické bezpečnosti představila Evropská komise v květnu 2022 plán **REPowerEU**.
-- Samotný plán není právně závazný, ale navrhuje úpravy stávající nebo vznik nové legislativy, mj. navrhl zesílit energetické cíle balíčku [Fit for 55](/infografiky/fit-for-55):
-  - **navýšit podíl OZE na spotřebě energie v EU v roce 2030 na 45 %**\\
-  _(finální kompromis byl ale dojednán na úrovni **42,5 %**)_{: .longread-small},
-  - **snížit do roku 2030 spotřebu energie v EU** (= zvýšit energetickou účinnost) **o dalších 13 %** ve srovnání se spotřebou referenčního scénáře Evropské komise pro rok 2030\\
-  _(finální kompromis byl ale dojednán na úrovni **11,7 %**)_{: .longread-small}.
-- **Národní cíle si Česko stanovuje samo** v rámci Vnitrostátního plánu v oblasti energetiky a klimatu, jehož aktualizace se právě připravuje a který by měl ambice REPowerEU reflektovat.
-" %}
 
 ## Jak změnil konflikt na Ukrajině energeticko-klimatickou politiku EU?
 
@@ -93,7 +83,7 @@ Pokud jde o **podíl OZE na konečné spotřebě energie**, navrhuje REPowerEU d
     slug="2023-rozvoj-obnovitelne-energie-v-cesku-do-2030"
 %}
 
-Stejně jako ostatní členské státy EU by i Česko mělo záměry REPowerEU promítnout do své národní strategie a přijímaných opatření. Konkrétní **vnitrostátní cíle** (např. podíl OZE na konečné spotřebě energie nebo energetické úspory) **si každý členský stát stanovuje sám podle svých možností**. Zároveň však musí přispívat k plnění celounijních cílů. Vnitrostátní cíle by měly být explicitně uvedeny ve strategických dokumentech. Kromě již zmíněné revize NECP, jehož [současná verze](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/) je z roku 2019, probíhá v Česku také revize Státní energetické koncepce (SEK) a Politiky ochrany klimatu (POK).[^sek-pok] Aktualizace všech tří dokumentů vychází ze společných [východisek](https://www.mpo.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2023/4/Vychodiska-aktualizace-Statni-energeticke-koncepce-CR-a-souvisejicich-strategickych-dokumentu.docx) schválených vládou ČR – ta mj. zmiňují záměr ukončit před rokem 2030 využívání fosilních paliv z Ruska a přispět tak k plnění cílů REPowerEU. Součástí REPowerEU jsou i **nové finanční prostředky**, které mají realizaci modernizačních opatření v energetice podpořit – Česko díky tomu získá dalších [16,7 mld. Kč](https://www.mfcr.cz/cs/zahranicni-sektor/rada-eu-ecofin/zasedani-rady-ecofin/2022/ecofin-ministri-maji-dohodu-na-rozdeleni-48934/) prostřednictvím Národního plánu obnovy.
+Stejně jako ostatní členské státy EU by i Česko mělo záměry REPowerEU promítnout do své národní strategie a přijímaných opatření. Konkrétní **vnitrostátní cíle** (např. podíl OZE na konečné spotřebě energie nebo energetické úspory) **si každý členský stát stanovuje sám podle svých možností**. Zároveň však musí přispívat k plnění celounijních cílů. Vnitrostátní cíle by měly být explicitně uvedeny ve strategických dokumentech. Kromě již zmíněné revize NECP, jehož [současná verze](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/) je z roku 2019, probíhá v Česku také revize Státní energetické koncepce (SEK) a Politiky ochrany klimatu (POK).[^sek-pok] Aktualizace všech tří dokumentů vychází ze společných [východisek](https://www.mpo.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2023/4/Vychodiska-aktualizace-Statni-energeticke-koncepce-CR-a-souvisejicich-strategickych-dokumentu.docx) schválených vládou ČR – ta mj. zmiňují záměr ukončit před rokem 2030 využívání fosilních paliv z Ruska a přispět tak k plnění cílů REPowerEU. Součástí REPowerEU jsou i **nové finanční prostředky**, které mají realizaci modernizačních opatření v energetice podpořit – Česko díky tomu získá dalších [16,7 mld. Kč](https://www.mfcr.cz/cs/zahranicni-sektor/rada-eu-ecofin/zasedani-rady-ecofin/2022/ecofin-ministri-maji-dohodu-na-rozdeleni-48934/) prostřednictvím Národního plánu obnovy.[^npo]
 
 Protože jsou výše zmíněné dokumenty v procesu aktualizace, **oficiální cíle stanovené vládou ČR** (resp. ministerstvem průmyslu a obchodu a ministerstvem životního prostředí) **zatím nejsou známé**. Kdyby však ambice například pro **podíl OZE na konečné spotřebě energie** byly stejné jako ve stávajícím NECP, kde je český cíl 22 % (oproti dosavadnímu celounijnímu cíli 32 %)[^red], **znamenalo by to pro ČR cíl ve výši 29 %** (nový celounijní cíl je 42,5 %).
 
@@ -110,4 +100,5 @@ _Tento text vychází ze [studie](/studie/2023-rozvoj-obnovitelne-energie-v-cesk
 [^vodik]: Podpora je zaměřena především na vodík vyrobený z obnovitelných zdrojů (tzv. zelený vodík) a biometan. Ambicí Evropské komise je do roku 2030 v EU vyrábět 10 mil. tun zeleného vodíku (a stejné množství vodíku dovážet ze třetích zemí) a dále pak v EU vyrábět 35 miliard m<sup>3</sup> biometanu ročně.
 [^revize-necp]: Instrukce pro revizi NECPs obsahuje [sdělení Komise](https://energy.ec.europa.eu/document/download/844d6896-2fe8-4e2b-b052-bf7169d9be3a_cs). To explicitně říká: "Zvláštní pozornost by měla být věnována obnovitelným zdrojům energie, energetické účinnosti, energetické bezpečnosti a omezování emisí skleníkových plynů."
 [^sek-pok]: Na rozdíl od NECP vyhlíží SEK i POK dál do budoucna, za horizont roku 2030. [Současná SEK](https://www.mpo.cz/dokument158059.html) je z roku 2015, [POK](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017.
+[^npo]: Jde o [plán](https://www.planobnovycr.cz/) reforem a investic, který je financován v rámci tzv. [Nástroje pro oživení a odolnost](https://commission.europa.eu/business-economy-euro/economic-recovery/recovery-and-resilience-facility_cs) (*Recovery and Resilience Facility*), kdy si EU ke svému rozpočtu půjčila další prostředky k oživení ekonomiky po pandemii koronaviru.
 [^red]: V současnosti platná [směrnice](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX:32018L2001) z roku 2018 obsahuje cíl ve výši 32 %.
