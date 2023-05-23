@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Co navrhuje plán REPowerEU a jak se dotýká Česka"
+title:       "Co navrhuje plán REPowerEU a jak se dotýká Česka?"
 slug:        "repowereu"
 published:   2023-05-18
 authors:
@@ -15,14 +15,13 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/WYGhTLym344"
-perex:       "Invaze Ruska na Ukrajinu z února 2022 významně ovlivňuje energeticko-klimatickou politiku EU. Zesiluje již probíhající energetickou krizi, ohrožuje evropskou energetickou bezpečnost a boří převládající paradigma fosilního plynu jako přechodného paliva na cestě ke klimatické neutralitě. Naplno se ukázalo, že energetická i klimatická krize mají společného jmenovatele – fosilní paliva. A tedy i společné řešení, kterým je nahrazení fosilních paliv čistými zdroji energie a investice do energetické účinnosti a úspor. Současnou krizi tak lze vnímat jako příležitost k větší evropské a národní energetické soběstačnosti a bezpečnosti a současně ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
+perex:       "Invaze Ruska na Ukrajinu v roce 2022 naplno ukázala, že energetická i klimatická krize mají společného jmenovatele: fosilní paliva. Zároveň už dnes víme, že na cestě ke klimatické neutralitě nemůžeme dále spoléhat na fosilní plyn coby přechodné řešení. Současnou krizi je však možné vnímat i jako příležitost k přechodu na čisté zdroje energie, k investicím do energetické účinnosti a úspor a také k zajištění větší evropské a národní energetické soběstačnosti a bezpečnosti. Tyto změny současně povedou ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
 ---
 
 {% include tldr.html
     title="Shrnutí"
     content="
-- Unijní klimaticko-energetická legislativa získala v reakci na invazi Ruska na Ukrajinu další rozměr – dimenzi energetické bezpečnosti.
-- **Pro snížení závislosti na fosilních palivech z Ruska** představila Evropská komise v květnu 2022 plán **REPowerEU**.
+- **Pro snížení závislosti na fosilních palivech z Ruska** a zvýšení energetické bezpečnosti představila Evropská komise v květnu 2022 plán **REPowerEU**.
 - Samotný plán není právně závazný, ale navrhuje úpravy stávající nebo vznik nové legislativy, mj. navrhl zesílit energetické cíle balíčku [Fit for 55](/infografiky/fit-for-55):
   - **navýšit podíl OZE na spotřebě energie v EU v roce 2030 na 45 %**\\
   _(finální kompromis byl ale dojednán na úrovni **42,5 %**)_{: .longread-small},
@@ -51,7 +50,7 @@ V lednu 2023 byl pak představen [**Průmyslový plán Zelené dohody**](https:/
     source-url="https://faktaoklimatu.cz/"
 %}
 
-## Jaké jsou cíle REPowerEU
+## Jaké jsou cíle REPowerEU?
 
 Pro ukončení závislosti EU na fosilních palivech z Ruska, vytyčil plán REPowerEU tři hlavní cíle.
 
@@ -86,7 +85,7 @@ Plán REPowerEU jako takový je právně nezávazný, avšak navrhuje vznik nov�
     source-url="https://faktaoklimatu.cz/"
 %}
 
-## Co znamená REPowerEU pro Česko
+## Co znamená REPowerEU pro Česko?
 
 {% include preview-box.html
     title="Rozvoj obnovitelné energie v Česku do roku 2030"
