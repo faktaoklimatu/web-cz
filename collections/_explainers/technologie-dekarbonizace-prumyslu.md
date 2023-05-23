@@ -25,27 +25,45 @@ K celkové obtížnosti transformace tohoto sektoru přispívají také **ekonom
 
 ## Jak můžeme průmysl dekarbonizovat?
 
-<!---
 Pro celý sektor existují tři **hlavní metody**:
 
-- zachytávání CO<sub>2</sub>
-- využití vodíku s nízkou uhlíkovou stopou
-- elektrifikace
+<div class="row">
+    <div class="col-sm technologie-dekarbonizace pictogram-large">
+        {% include figure.html name="zachytavani-co2-animated.svg" alt="Piktogram zachytávání CO" no-lightbox=true %}
+        <b>Zachytávání CO<sub>2</sub></b> (CCS)
+    </div>
+    <div class="col-sm technologie-dekarbonizace pictogram-large">
+        {% include figure.html name="vyuziti-vodiku-animated.svg" alt="Piktogram využití vodíku" no-lightbox=true %}
+        <b>Využití vodíku</b> s&nbsp;nízkou uhlíkovou stopou
+    </div>
+    <div class="col-sm technologie-dekarbonizace pictogram-large">
+        {% include figure.html name="elektrifikace-animated.svg" alt="Piktogram elektrifikace" no-lightbox=true %}
+        <b>Elektrifikace</b>
+    </div>
+</div> 
+
+</br>
 
 V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkové metody**:
 
-- recyklace
-- využití odpadů a biomasy jako paliv
-- náhrada používaných surovin či výsledného produktu šetrnější alternativou
-- zvyšování efektivity a různé úspory
--->
-
-{% include figure.html
-    name="hlavni-a-doplnkove-metody.png"
-    caption="Hlavní a doplňkové metody dekarbonizace průmyslu."
-    alt="Zachytávání CO2, využití vodíku s nízkou uhlíkovou stopou a elektrifikace."
-    source-text="Fakta o klimatu."
-%}
+<div class="row">
+    <div class="col-sm technologie-dekarbonizace pictogram-small">
+        {% include figure.html name="recyklace.svg" alt="Piktogram recyklace" no-lightbox=true %}
+        <b>Recyklace</b>
+    </div>
+    <div class="col-sm technologie-dekarbonizace pictogram-small">
+        {% include figure.html name="spalovani-odpadu.svg" alt="Piktogram využití vodíku" no-lightbox=true %}
+        <b>Využití odpadů a biomasy jako paliv</b>
+    </div>
+    <div class="col-sm technologie-dekarbonizace pictogram-small">
+        {% include figure.html name="nahrada-surovin.svg" alt="Piktogram elektrifikace" no-lightbox=true %}
+        <b>Náhrada používaných surovin</b> či výsledného produktu šetrnější alternativou
+    </div>
+    <div class="col-sm technologie-dekarbonizace pictogram-small">
+        {% include figure.html name="zvysovani-efektivity.svg" alt="Piktogram zvyšování efektivity" no-lightbox=true %}
+        <b>Zvyšování efektivity</b> a různé úspory
+    </div>
+</div> 
 
 ## Hlavní metody
 
@@ -81,10 +99,16 @@ Momentálně se celosvětově **95 % vodíku pro průmyslové využití vyrábí
 
 Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými "barvami". Z hlediska možného využití jsou nejdůležitější tyto čtyři:
 
-- **Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
-- **Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
-- **Modrý** – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
-- **Šedý** – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
+<div class="barvy-vodiku" markdown="1">
+{% include figure.html name="vodik-zeleny.svg" alt="Piktogram TODO" no-lightbox=true %}
+**Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
+{% include figure.html name="vodik-ruzovy.svg" alt="Piktogram TODO" no-lightbox=true %}
+**Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
+{% include figure.html name="vodik-modry.svg" alt="Piktogram TODO" no-lightbox=true %}
+**Modrý** – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
+{% include figure.html name="vodik-sedy.svg" alt="Piktogram TODO" no-lightbox=true %}
+**Šedý** – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
+</div>
 
 {% endcapture %}
 
