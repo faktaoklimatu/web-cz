@@ -151,11 +151,9 @@ Veřejnost navíc nemusí být reprezentována pouze státem: do energetiky zár
 
 ## Závěr
 
-Systém pro výrobu a dodávky elektřiny tedy v průběhu let procházel výraznými změnami. Zatímco počátky elektrifikace v 19. století probíhaly de facto bez státních zásahů a větší vliv státu se objevuje až po první světové válce, po druhé světové válce se situace mění a stát se stává hlavním hráčem. To se opět mění na konci století, kdy se znovu ke slovu dostává trh a pozice státu slábne.
+Rámec pravidel pro výrobu a dodávky elektřiny tedy v průběhu let procházel výraznými změnami. Zatímco počátky elektrifikace v 19. století probíhaly de facto bez státních zásahů a větší vliv státu se objevuje až po první světové válce, po druhé světové válce se situace mění a stát se stává hlavním hráčem. To se opět mění na konci století, kdy se znovu ke slovu dostává trh a pozice státu slábne.
 
-**Dnes se nacházíme na určitém rozcestí** a situace se může opět změnit: řada zemí se znovu snaží o větší státní kontrolu nad klíčovými energetickými podniky. Velký odklon od spoléhání na tržní síly sice není momentálně příliš pravděpodobný, nicméně je důležité dál hledat, **jak systém s elektřinou nastavit co nejlépe – s ohledem na výše uvedené energetické trilema**.
-
-Abychom dokázali plnit své dekarbonizační cíle a mohli se postupně odklánět od fosilních zdrojů výroby elektřiny (např. uhlí), potřebujeme **výrazně navýšit nízkoemisní zdroje elektřiny**. Dále je nutné **zajistit cenovou dostupnost elektřiny pro širokou veřejnost a průmysl**. Pokud se nám to nepodaří, bude to mít negativní sociální dopady a povede to ke zhoršení chudoby. Může také dojít k přesunu průmyslové výroby do jiných zemí. Dále bude nutné **zajistit stabilitu dodávek elektřiny** – jednak maximálně snížit závislost na dovážených energetických komoditách, ze kterých se následně elektřina vyrábí (např. zemní plyn), jednak zajistit stabilitu sítě a zvládání obnovitelných zdrojů u kterých je výroba elektřiny závislá na počasí. **Pokud se nám bude dařit těchto cílů dosáhnout, může dekarbonizace výroby elektřiny proběhnout úspěšně.**
+**Dnes se nacházíme na určitém rozcestí** a situace se může opět změnit: řada zemí se znovu snaží o větší státní kontrolu nad klíčovými energetickými podniky. Velký odklon od spoléhání na tržní síly sice není momentálně příliš pravděpodobný, nicméně je důležité dál hledat, **jak pravidla pro výrobu a dodávky elektřiny nastavit co nejlépe – s ohledem na výše uvedené energetické trilema: dekarbonizace výroby elektřiny** v EU proběhne úspěšně, jen pokud se podaří současně **udržet cenovou dostupnost elektřiny** pro širokou veřejnost a průmysl stejně jako **zajistit stabilitu dodávek elektřiny**.
 
 ## Poznámky a zdroje
 
