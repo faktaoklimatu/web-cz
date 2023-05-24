@@ -170,4 +170,5 @@ subtopics:
   - tropicke-dny-brno
   - tropicke-dny-praha
   - 2022-reserse-pozary
+  - 2023-reserse-extremy
 ---
