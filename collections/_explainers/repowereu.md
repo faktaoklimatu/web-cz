@@ -17,7 +17,7 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/WYGhTLym344"
-perex:       "Invaze Ruska na Ukrajinu v roce 2022 naplno ukázala, že energetická i klimatická krize mají společného jmenovatele: fosilní paliva. Zároveň už dnes víme, že na cestě ke klimatické neutralitě nemůžeme dále spoléhat na fosilní plyn coby přechodné řešení. Současnou krizi je však možné vnímat i jako příležitost k přechodu na čisté zdroje energie, k investicím do energetické účinnosti a úspor a také k zajištění větší evropské a národní energetické soběstačnosti a bezpečnosti. Tyto změny současně povedou ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
+perex:       "Invaze Ruska na Ukrajinu v roce 2022 naplno ukázala, že energetická i klimatická krize mají společného jmenovatele: fosilní paliva. Zároveň je zřejmé, že na cestě ke klimatické neutralitě nemůže Evropa dále v tak velké míře spoléhat na fosilní plyn coby přechodné řešení. Současnou krizi je však možné vnímat i jako příležitost k přechodu na čisté zdroje energie, k investicím do energetické účinnosti a úspor a také k zajištění větší evropské a národní energetické soběstačnosti a bezpečnosti. Tyto změny současně povedou ke snížení emisí skleníkových plynů a naplnění závazků Pařížské dohody."
 ---
 
 ## Jak změnil konflikt na Ukrajině energeticko-klimatickou politiku EU?
@@ -89,7 +89,7 @@ Protože jsou výše zmíněné dokumenty v procesu aktualizace, **oficiální c
 
 ## Poznámky a zdroje
 
-_Tento text vychází ze [studie](/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030) zpracované Fakty o klimatu, zahrnuje už ale i další vývoj jednání o balíčku REPowerEU._
+_Tento text vychází ze [studie](/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030) zpracované Fakty o klimatu, jejímž zadavatelem byl TOPAZ, z.s. Zahrnuje už ale i další vývoj jednání o balíčku REPowerEU._
 {: .longread-small}
 
 [^energeticka-krize]: Energetická krize začala už v roce 2021, a to v důsledku následujících faktorů: nečekaně rychlá obnova ekonomiky po pandemii; počasí (především sucho); údržba – a tedy dočasné odstavení – jaderných elektráren; a cílené omezování dodávek plynu ze strany Ruska. Více k tématu např. na [stránkách IEA](https://www.iea.org/topics/global-energy-crisis).
