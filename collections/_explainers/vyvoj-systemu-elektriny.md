@@ -118,36 +118,56 @@ Trilema se zpravidla používá k popisu celkové energetické situace na daném
     content=trilema
 %}
 
-## Aktuální snahy o reformu trhu s elektřinou v EU
+## Další možnosti vývoje trhu s elektřinou v EU
 
-Pozadím současných úvah nad trhy s elektřinou je hlavně souběh aktuální energetické a klimatické krize. **Energetická krize**, způsobená nečekaně rychlou obnovou po pandemii Covidu-19 a zejména pak ruskou invazí na Ukrajinu v únoru 2022, přinesla jak vysoké ceny energií, tak narušení stability a bezpečnosti dodávek. Postupující **klimatická krize** zase vyžaduje úsilí o dekarbonizaci elektřiny, tedy výrazné navýšení výroby z nízkoemisních zdrojů (slunce, vítr). V důsledku obou těchto faktorů – nárůstu cen energií a potřeby dekarbonizace – dnes stojíme před naléhavou **otázkou, zda by současné nastavení trhu s elektřinou v EU nemělo být reformováno, a pokud ano, jakým způsobem**. Níže představujeme tři témata, která se v diskuzi o této reformě objevují:
-- Do jaké míry má zasahovat stát?
+Pozadím současných úvah nad trhy s elektřinou je hlavně souběh aktuální energetické a klimatické krize. **Energetická krize**, způsobená nečekaně rychlou obnovou po pandemii Covidu-19 a zejména pak ruskou invazí na Ukrajinu v únoru 2022, přinesla jak vysoké ceny energií, tak narušení stability a bezpečnosti dodávek. Postupující **klimatická krize** zase vyžaduje úsilí o dekarbonizaci elektřiny, tedy výrazné navýšení výroby z nízkoemisních zdrojů (hlavně ze slunce a větru). V důsledku obou těchto faktorů dnes stojíme před naléhavou **otázkou, jak současné nastavení trhu s elektřinou v EU reformovat**, aby vedl k rychlejší dekarbonizaci a současně do budoucna lépe odolával podobným cenovým šokům.
+
+Jako reakci na tento vývoj Evropská komise představila 14. března 2023 [návrh reformy](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1591) vnitřního trhu s elektřinou.[^reforma] Tato reforma nepřináší žádné revoluční změny současného fungování trhu[^dalsi-revize], podstatným způsobem ale reaguje na obě výše zmíněné výzvy. Je třeba zmínit, že v rámci Evropy se objevovaly i hlasy volající po výraznější reformě, např. [řecký](https://data.consilium.europa.eu/doc/document/ST-11398-2022-INIT/en/pdf) nebo [španělský](https://table.media/europe/wp-content/uploads/sites/9/2023/01/230110_Strommarktreform_Non-Paper_ES.pdf) návrh.
+
+Níže představujeme tři témata, která se v diskuzi o vývoji trhu s elektřinou objevují:
 - Co pomůže zvýšit podíl obnovitelných zdrojů?
-- Jak řešit otázky spojené s vlastnictvím?
+- Co pomůže zajistit cenovou stabilitu elektřiny?
+- Co může pomoct rozvoji jaderné energetiky?
 
-### Do jaké míry má zasahovat stát?
+### Co pomůže zvýšit podíl větrných a solárních zdrojů?
 
-V mnoha zemích včetně České republiky došlo v návaznosti na zdražení například k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy.
+Chceme-li zvýšit podíl obnovitelných zdrojů, je lepší spoléhat na trh nebo dává větší smysl, když hlavní iniciativu převezme stát?
 
-Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu.
+S rostoucím podílem obnovitelných zdrojů může **pravidelně docházet k obdobím s přebytky obnovitelné elektřiny, kdy bude na trhu velmi nízká prodejní cena pro producenty**. Tento jev, někdy nazývaný _sebe-kanibalizace_[^self-cannibalization] obnovitelných zdrojů, se týká především solární elektřiny, jejíž výroba je koncentrovaná do relativně krátké doby silného osvitu. Může tak nastat situace, že solárních zdrojů už bude tolik, že investorům nebudou kvůli nízkým cenám elektřiny přinášet dostatečné příjmy. K tomuto jevu může dojít dříve, než se dostatečně rozšíří flexibilita spotřeby, bateriová úložiště či výroba zeleného vodíku – což jsou nástroje, které posilují poptávku po levné elektřině a tím tento problém zmírňují.
 
-Jako protiargument bývá zmiňována specifičnost situace v roce 2022, kdy došlo k souběhu více neobvyklých událostí v krátkém období: ekonomické oživení po opatřeních proti pandemii Covid-19 se zkombinovalo s ruskou invazí na Ukrajinu.
+Tyto výhledy (spolu s obecnou nejistotou panující v rychle se transformujícím sektoru) zvyšují investiční riziko a postupně můžou snižovat chuť investorů budovat další obnovitelné zdroje. **Pro další rozvoj větrných a solárních zdrojů je tedy klíčové snížit investiční riziko a zaručit dlouhodobou návratnost nových projektů**. Kromě menšího rizika pro samotné investory to přináší nižší úrokové sazby pro financování projektů a tedy výrazně nižší celkové náklady.
 
-### Co pomůže zvýšit podíl obnovitelných zdrojů?
+Reforma evropského trhu s elektřinou[^reforma] navrhuje posílení dvou mechanismů pro dlouhodobé kontrakty:
+- **Soukromé kontrakty na odebírání elektřiny** (*power purchase agreements*) dávají záruku větší stability jak pro investora, tak pro dodavatele nebo pro odběratele elektřiny, např. pro velký průmyslový podnik.
+- **Státní garance ceny elektřiny** (*two-way contracts for difference*) také dodávají stabilitu pro investora a současně umožňují státu zajistit dostatečnou výrobu elektřiny z obnovitelných zdrojů za rozumné náklady.
 
-Dále vyvstává otázka: Chceme-li zvýšit podíl obnovitelných zdrojů, je lepší spoléhat na trh nebo dává větší smysl, když hlavní iniciativu převezme stát?
+Proti _sebe-kanibalizaci_ ovšem efektivně působí jen druhý z těchto nástrojů. Paradoxně tak **ke zvyšování podílu elektřiny ze slunce a větru může být zapotřebí silná podpora z veřejných financí** i v situaci, kdy budou tyto zdroje v průměrné ceně nejlevnější.
 
-Objevují se obavy, že s rostoucím podílem obnovitelných zdrojů může být v určitých obdobích k dispozici velké množství (či dokonce přebytky) elektřiny, což povede k velmi nízké prodejní ceně pro producenty. Týká se to především solární elektřiny, jejíž výroba je koncentrovaná do relativně krátké doby, kdy svítí slunce. V určitém momentě tak může nastat situace, že solárních zdrojů už bude tolik, že se investorovi nevyplatí budovat další. A dojít k tomu může i o několik let dříve, než se obecně rozšíří bateriová úložiště či začne být ekonomicky dostupný zelený vodík – obojí by totiž tento problém částečně řešilo.[^utilizationgap]
+Kromě posílení dlouhodobých kontraktů reforma navrhuje spoustu dílčích opatření, které mohou usnadnit další rozvoj větrné a solární energetiky (např. podpora rozvoje flexibility spotřeby a ukládání elektřiny, větší transparentnost ohledně připojování obnovitelných zdrojů k síti, další rozvoj chytrého měření).
 
-Paradoxně tak ke zvyšování podílu elektřiny ze slunce a větru může být zapotřebí silná podpora z veřejných financí i v situaci, kdy budou tyto zdroje v průměrné ceně nejlevnější.
+### Co pomůže zajistit cenovou stabilitu elektřiny?
 
-Rozpor mezi dekarbonizačními cíli a fungováním trhu by mohly pomoci řešit dlouhodobé kontrakty na odebírání elektřiny, které dají investorovi záruku větší stability.[^kontrakty] Ty mohou zároveň znamenat větší cenovou stabilitu i pro odběratele, a zmírňovat tak dopady větších výkyvů v cenách. Evropská komise 14. března 2023 představila návrh reformy vnitřního trhu s elektřinou.[^reforma] Ten v mnohém počítá právě se zaváděním dlouhodobých kontraktů, jež mají napomoci větší cenové stabilitě.
+V mnoha zemích včetně České republiky došlo v návaznosti na zdražení k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy. Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu.
 
-### Jak řešit otázky spojené s vlastnictvím?
+Reforma evropského trhu s elektřinou[^reforma] reaguje na tyto hlasy, ceny elektřiny pro spotřebitele navrhuje dlouhodobě stabilizovat omezením vlivů těchto tržních výkyvů:
+1. vliv **cen fosilních paliv** omezit dalším urychleným rozvojem obnovitelných zdrojů,
+2. obecně vliv **spotového trhu** omezit posílením dlouhodobých kontraktů (viz výše) a posílením fungování dlouhodobého trhu.
 
-Firmy, které fungují na trhu a jsou veřejně obchodovatelné, mají určité povinnosti ke svým akcionářům. Pokud je však jedním z akcionářů stát, vzniká složitá situace. V Česku je to dobře vidět v případě ČEZu – stát je zde největším akcionářem, což znamená, že má velkou sílu při rozhodování. Zároveň není akcionářem jediným, tedy musí brát ohled i na menšinové akcionáře, kteří mohou mít jiné zájmy. Nejvíce se tento konflikt projevil u dlouhotrvajících sporů ohledně výstavby nových jaderných bloků: zatímco stát je vnímá jako klíčovou součást své energetické strategie, z pohledu minoritních akcionářů jde spíše o výrazně rizikovou investici. V důsledku energetické krize a změny pohledu na prioritu energetiky můžeme v současné době vidět snahu vlády zajistit větší kontrolu ČEZu právě na úkor menšinových akcionářů.[^akcionari]
+Pro případnou budoucí krizi vysokých cen elektřiny dále navrhuje:
+- **výnosy ze státem garantovaných cen plně přerozdělit zákazníkům** (stát z těchto smluv totiž získá výnosy od výrobců, když je cena na burze vyšší než domluvená garantovaná cena),
+- **posílit ochranu spotřebitelů** (např. garancí práva na smlouvu s fixní cenou a současně povinností pro dodavatele nakupovat pro takové smlouvy dostatek elektřiny na dlouhodobých trzích; absence této povinnosti stála za pádem dodavatele _Bohemia Energy_),
+- zavést **jasný rámec pro případné budoucí zastropování cen elektřiny** (s omezením, že cenový strop musí motivovat k úsporám, např. se tedy může aplikovat jen do výše 80 % průměrné spotřeby domácností),
+- vytvořit **lepší tržní rámec pro úspory elektřiny** ve špičce spotřeby (_peak shaving_).
 
-Veřejnost navíc nemusí být reprezentována pouze státem: do energetiky zároveň mohou vstupovat i další aktéři, například díky rozšíření komunitní či městské energetiky. V Česku legislativa na podporu komunitní energetiky teprve vzniká, v zemích jako Německo či Rakousko jsou tyto subjekty aktivní už delší dobu. Kromě toho s rozvojem dostupných obnovitelných zdrojů výrazně stoupá také počet domácností, které si elektřinu vyrábějí samy.
+### Co může pomoct rozvoji jaderné energetiky?
+
+Rozvoj jaderné energetiky je prosazovaný jen některými členskými státy EU a při přípravě návrhu reformy se o něj vedly politické spory.
+
+Jak zmiňujeme výše, rozvoj jaderné energetiky v minulosti probíhal téměř výlučně se silnou rolí státu. Protože investice do jaderných projektů mají dnes nejisté ekonomické vyhlídky, pro veřejně obchodovatelné společnosti (jako EDF nebo ČEZ) není snadné se do nich pouštět. Jedním z důvodů je legitimní odpor minoritních akcionářů, protože taková investice může být v rozporu se zákonnou povinností péče řádného hospodáře.
+
+Diskutují se dva možné přístupy:
+- **Stát získá zpět 100% vlastnictví energetické firmy**, např. Francie chce znovu [získat 100% podíl v EDF](https://www.reuters.com/business/energy/france-keeps-edf-buyout-offer-12-euros-per-share-filing-2022-10-04/), o podobném kroku se [spekuluje i v Česku](https://www.seznamzpravy.cz/clanek/ekonomika-firmy-prehledne-vyparilo-se-100-miliard-proc-je-kolem-cez-takovy-povyk-231252).
+- **Stát poskytne jadernému projektu garantovanou cenu** podobně jako obnovitelným zdrojům, což současný návrh reformy trhu s elektřinou připouští. Tímto způsobem třeba Velká Británie garantuje cenu pro budovanou jadernou elektrárnu [Hinkley Point C](https://en.wikipedia.org/wiki/Hinkley_Point_C_nuclear_power_station).
 
 ## Závěr
 
@@ -174,9 +194,6 @@ Rámec pravidel pro výrobu a dodávky elektřiny tedy v průběhu let procháze
 [^akcie]: [Zbytek akcionářů](https://www.cez.cz/cs/o-cez/cez/akcionari) jsou fyzické osoby (13,6 %) stejně jako různé investiční fondy a další právnické osoby (16,4 %).
 [^ceps]: [Vyčlenění ČEPS](https://zpravy.aktualne.cz/denik-insider/zrozeni-imperia-skutecny-pribeh-spolecnosti-cez/r~i:insider:article:17913/) jakožto samostatné entity namísto pouhé divize v rámci ČEZu se odehrálo v roce 1998 v návaznosti na směrnici EU.
 [^hraci]: V ČR se jedná o firmy jako E.ON, Centropol či Innogy. V minulosti byla významným hráčem také firma Bohemia Energy, ta ale zanikla kvůli finančním problémům v době energetické krize v roce 2021.
-[^utilizationgap]: Tento časový nesoulad, kdy budeme mít více zdrojů, než kolik dokážeme využít a zároveň nebude dostatek akumulace například prostřednictvím baterií, se anglicky nazývá *utilization gap*.
-[^kontrakty]: V angličtině se těmto smlouvám říká *power purchasing agreements* a *contracts for difference*.
+[^self-cannibalization]: V angličtině _self-cannibalization effect_, více je vysvětlen např. v učebnici [Open Electricity Economics](http://open-electricity-economics.org/book/text/07.html).
 [^reforma]: [Návrh reformy trhu](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1591) je součástí Průmyslového plánu Zelené dohody.
-[^akcionari]: Podobná otázka se řeší například také ve Francii: zde byla energetická firma EdF v minulosti částečně privatizována, dnes [se znovu objevuje snaha](https://www.reuters.com/business/energy/france-keeps-edf-buyout-offer-12-euros-per-share-filing-2022-10-04/) získat plnou státní kontrolu.
-
-
+[^dalsi-revize]: Revize trhu s elektřinou představená v březnu 2023 se připravovala poměrně rychle, proto nebyl čas dojednat komplikovanější změny, u kterých nebyl možný rychlý konsensus. Jeden směr dalších možných úprav pro příští reformní balíčky je posílení lokálních cenových signálů. Například dnes bývá cena elektřiny stejná na severu jako na jihu Německa i v momentech, kdy na severu je nadbytek elektřiny a na jihu nedostatek. Cílem lokálních cenových signálů je v ceně elektřiny lépe reflektovat místní možnosti výroby a přenosu elektřiny ze sousedních oblastí. Trh s elektřinou v USA je založen na _nodal pricing_, tedy na velmi lokálních cenových signálech.
