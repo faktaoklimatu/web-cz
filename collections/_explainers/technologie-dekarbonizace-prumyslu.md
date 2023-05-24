@@ -175,8 +175,10 @@ Kromě toho recyklovaný materiál může být náročnější na zpracování n
     alt="Piktogram náhrady používaných surovin"
 %}
 
+{: .mt-md-5}
 O nahrazování jednotlivých částí výrobního řetězce můžeme uvažovat zejména ve dvou rovinách:
 
+{: .mt-md-4}
 - **Substituce vstupních surovin, z nichž vyrábíme.** Plasty nemusí být z ropných produktů, ale z biomasy; slínek (důležitý meziprodukt při výrobě cementu) lze zčásti nahradit odpadními materiály z jiných odvětví a podobně.
 - **Použití alternativy za výsledný produkt.** Místo betonu a oceli lze ve stavebnictví více využívat dřevo, plastové obaly můžeme leckde nahradit skleněnými nebo papírovými.
 
