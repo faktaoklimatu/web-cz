@@ -71,7 +71,7 @@ items:
     - type: Sucho v Evropě, Severní Americe a Číně 2022
       note: Západní a střední Evropy, Severní Amerika, Čína a další části severní polokoule čelily během léta 2022 suchu a extrémním vedrům. Tyto podmínky vedly k nedostatku vody, požárům a významným ztrátám na úrodě.
       description: V západní a střední Evropě změna klimatu zvýšila pravděpodobnost sucha v kořenové zóně půdy v roce 2022 asi 3-4 krát a pravděpodobnost sucha v povrchové vrstvě půdy asi 5-6 krát. Tato událost by byla mnohem méně pravděpodobná ve chladnějším klimatu.
-      url: "https://www.worldweatherattribution.org/analysis/drought/"
+      url: "https://www.worldweatherattribution.org/high-temperatures-exacerbated-by-climate-change-made-2022-northern-hemisphere-droughts-more-likely/"
     
 ---
 ## Studie
