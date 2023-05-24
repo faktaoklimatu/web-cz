@@ -66,7 +66,8 @@ V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkov
 
 {% include lead-in-figure.html
     name="zachytavani-co2-animated.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram zachytávání CO2"
 %}
 
 Proces zachytávání CO<sub>2</sub> se označuje zkratkou CCS (_Carbon Capture and Storage_). Zachycené CO<sub>2</sub> je následně přepraveno a uloženo v geologických strukturách, například do vytěžených ložisek zemního plynu a ropy či do hluboce uložených geologických vrstev obsahujících slanou vodu. Teoreticky je možné zachycené CO<sub>2</sub> i průmyslově využít, do budoucna se však očekává, že většina bude uložena.[^ulozeni]
@@ -81,7 +82,8 @@ Přesto se CCS u mnoha výrobních procesů v průmyslu do budoucna jeví jako *
 
 {% include lead-in-figure.html
     name="vyuziti-vodiku-animated.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram využití vodíku"
 %}
 
 **Může nahradit fosilní paliva**, která se v průmyslu spalují kvůli dodání tepla. Vhodný je zejména v situacích, kdy je nutné dosáhnout velmi vysokých teplot (např. při výrobě oceli je to okolo 1500 °C[^1500]). Zároveň může v některých případech sloužit jako **náhrada vstupních surovin**, které se používají při chemických reakcích během průmyslových procesů – tak je tomu například při výrobě amoniaku.
@@ -95,13 +97,13 @@ Momentálně se celosvětově **95 % vodíku pro průmyslové využití vyrábí
 Vyrobený vodík rozlišujeme podle jeho původu, resp. emisní náročnosti produkce, a označujeme jej různými "barvami". Z hlediska možného využití jsou nejdůležitější tyto čtyři:
 
 <div class="barvy-vodiku" markdown="1">
-{% include figure.html name="vodik-zeleny.svg" alt="Piktogram TODO" no-lightbox=true %}
+{% include figure.html name="vodik-zeleny.svg" alt="Piktogram zeleného vodíku" no-lightbox=true %}
 **Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
-{% include figure.html name="vodik-ruzovy.svg" alt="Piktogram TODO" no-lightbox=true %}
+{% include figure.html name="vodik-ruzovy.svg" alt="Piktogram růžového vodíku" no-lightbox=true %}
 **Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
-{% include figure.html name="vodik-modry.svg" alt="Piktogram TODO" no-lightbox=true %}
+{% include figure.html name="vodik-modry.svg" alt="Piktogram modrého vodíku" no-lightbox=true %}
 **Modrý** – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
-{% include figure.html name="vodik-sedy.svg" alt="Piktogram TODO" no-lightbox=true %}
+{% include figure.html name="vodik-sedy.svg" alt="Piktogram šedého vodíku" no-lightbox=true %}
 **Šedý** – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
 </div>
 
@@ -127,7 +129,8 @@ Pokud dojde ke zlevnění a vybudování související infrastruktury, **půjde 
 
 {% include lead-in-figure.html
     name="elektrifikace-animated.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram elektrifikace"
 %}
 
 Spalování v průmyslu lze částečně nahradit i využitím elektřiny – k **dodání potřebného tepla**. Toto řešení je nicméně vhodné spíše u nižších teplot, například v papírenském průmyslu, kde se potřebné teploty pohybují v rozmezí 50–250 °C.[^250]
@@ -146,7 +149,8 @@ Vědecký a technologický pokrok může do určité míry v rámci dekarbonizac
 
 {% include lead-in-figure.html
     name="recyklace.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram recyklace"
 %}
 
 V mnoha průmyslových odvětvích v současnosti už využíváme relativně vysokou míru recyklace, alespoň v rozvinutých zemích. Například u hliníku dosahuje v EU recyklace 76,3 %.[^76] Takže i když v některých odvětvích ještě určité snížení emisí díky recyklaci možné je, prostor pro další výrazný posun v tomto směru je často už omezený. Navíc recyklaci mnohdy paradoxně limituje také dlouhá životnost některých produktů (platí třeba u výrobků z oceli).
@@ -157,7 +161,8 @@ Kromě toho recyklovaný materiál může být náročnější na zpracování n
 
 {% include lead-in-figure.html
     name="spalovani-odpadu.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram využití odpadu a biomasy jako paliv"
 %}
 
 **Dnes už funguje mnoho podniků, které odpady nebo biomasu zčásti využívají**, ani zde tedy často nebývá prostoru ke zlepšení mnoho. V konkrétních případech některých provozů (např. u cementáren) může být takový postup výhodný ekonomicky i pro přírodu, ale zdaleka jej nelze uplatnit všude. Jednak to není technicky možné a jednak by při opravdu velkém přechodu brzy došlo k problému s **nedostatkem vhodného odpadu i environmentálně udržitelné biomasy**. Ve spalovaném odpadu (v podobě tzv. _tuhých alternativních paliv_) je navíc velká část uhlíku fosilního původu, takže jeho využití nepřináší významné snížení emisí.[^tap] Ani spalování biomasy nemusí mít tak nízkou uhlíkovou stopu, jak se často prezentuje.[^biomasa]
@@ -166,7 +171,8 @@ Kromě toho recyklovaný materiál může být náročnější na zpracování n
 
 {% include lead-in-figure.html
     name="nahrada-surovin.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram náhrady používaných surovin"
 %}
 
 O nahrazování jednotlivých částí výrobního řetězce můžeme uvažovat zejména ve dvou rovinách:
@@ -182,7 +188,8 @@ Nahrazování primárních zdrojů je považováno za součást potenciálních 
 
 {% include lead-in-figure.html
     name="zvysovani-efektivity.svg"
-    alt="TODO"
+    class="leadin-figure-small"
+    alt="Piktogram zvyšování efektivity"
 %}
 
 Z hlediska zvyšování efektivity a maximálních provozních úspor už mnoho průmyslových odvětví došlo daleko. Každý další krok ke zvýšení efektivity tak znamená mnohem menší zlepšení než dříve. V minulosti nebyla snaha o optimalizaci postupů v průmyslu motivovaná snahou dekarbonizovat, často šlo spíše o úspory z ekonomických důvodů. Přesto stále určitý prostor pro další optimalizaci v průmyslu existuje, zejména v globálním měřítku, kde často narážíme na rozdíly například mezi průmyslem v západní Evropě a Číně.
