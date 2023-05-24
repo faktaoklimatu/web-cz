@@ -27,43 +27,36 @@ K celkové obtížnosti transformace tohoto sektoru přispívají také **ekonom
 
 Pro celý sektor existují tři **hlavní metody**:
 
-<div class="row">
-    <div class="col-sm technologie-dekarbonizace pictogram-large">
-        {% include figure.html name="zachytavani-co2-animated.svg" alt="Piktogram zachytávání CO" no-lightbox=true %}
-        <b>Zachytávání CO<sub>2</sub></b> (CCS)
-    </div>
-    <div class="col-sm technologie-dekarbonizace pictogram-large">
-        {% include figure.html name="vyuziti-vodiku-animated.svg" alt="Piktogram využití vodíku" no-lightbox=true %}
-        <b>Využití vodíku</b> s&nbsp;nízkou uhlíkovou stopou
-    </div>
-    <div class="col-sm technologie-dekarbonizace pictogram-large">
-        {% include figure.html name="elektrifikace-animated.svg" alt="Piktogram elektrifikace" no-lightbox=true %}
-        <b>Elektrifikace</b>
-    </div>
-</div> 
+<div class="grid-figures technologie-dekarbonizace-prumyslu my-4" style="--items: 3" markdown="1">
 
-</br>
+{% include figure.html name="zachytavani-co2-animated.svg" alt="Piktogram zachytávání CO2" no-lightbox=true %}
+**Zachytávání CO<sub>2</sub>** (CCS)
+
+{% include figure.html name="vyuziti-vodiku-animated.svg" alt="Piktogram využití vodíku" no-lightbox=true %}
+**Využití vodíku** s&nbsp;nízkou uhlíkovou stopou
+
+{% include figure.html name="elektrifikace-animated.svg" alt="Piktogram elektrifikace" no-lightbox=true %}
+**Elektrifikace**
+
+</div>
 
 V omezené míře nám se snížením emisí mohou pomoci také tyto **doplňkové metody**:
 
-<div class="row">
-    <div class="col-sm technologie-dekarbonizace pictogram-small">
-        {% include figure.html name="recyklace.svg" alt="Piktogram recyklace" no-lightbox=true %}
-        <b>Recyklace</b>
-    </div>
-    <div class="col-sm technologie-dekarbonizace pictogram-small">
-        {% include figure.html name="spalovani-odpadu.svg" alt="Piktogram využití vodíku" no-lightbox=true %}
-        <b>Využití odpadů a biomasy jako paliv</b>
-    </div>
-    <div class="col-sm technologie-dekarbonizace pictogram-small">
-        {% include figure.html name="nahrada-surovin.svg" alt="Piktogram elektrifikace" no-lightbox=true %}
-        <b>Náhrada používaných surovin</b> či výsledného produktu šetrnější alternativou
-    </div>
-    <div class="col-sm technologie-dekarbonizace pictogram-small">
-        {% include figure.html name="zvysovani-efektivity.svg" alt="Piktogram zvyšování efektivity" no-lightbox=true %}
-        <b>Zvyšování efektivity</b> a různé úspory
-    </div>
-</div> 
+<div class="grid-figures technologie-dekarbonizace-prumyslu my-4" style="--items: 4" markdown="1">
+
+{% include figure.html name="recyklace.svg" alt="Piktogram recyklace" no-lightbox=true %}
+**Recyklace**
+
+{% include figure.html name="spalovani-odpadu.svg" alt="Piktogram využití odpadu a biomasy jako paliv" no-lightbox=true %}
+**Využití odpadů a biomasy jako paliv**
+
+{% include figure.html name="nahrada-surovin.svg" alt="Piktogram náhrady používaných surovin" no-lightbox=true %}
+**Náhrada používaných surovin** či výsledného produktu šetrnější alternativou
+
+{% include figure.html name="zvysovani-efektivity.svg" alt="Piktogram zvyšování efektivity" no-lightbox=true %}
+**Zvyšování efektivity** a různé úspory
+
+</div>
 
 ## Hlavní metody
 

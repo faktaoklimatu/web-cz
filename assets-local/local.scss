@@ -104,24 +104,15 @@ $c-callout-text: #373633;
     margin: 0 auto;
 }
 
-.technologie-dekarbonizace {
+.technologie-dekarbonizace-prumyslu {
     line-height: 1.2;
+    grid-template-columns: 6em 1fr;
+    align-items: center;
 }
 
-.technologie-dekarbonizace > .longread-figure{
-    margin: 1rem 0 0.5rem 0;
-}
-
-.pictogram-large > .longread-figure {
-    max-width: 10em;;
-}
-
-.pictogram-small > .longread-figure {
-    max-width: 6em;
-}
-
-.barvy-vodiku > .longread-figure {
+.barvy-vodiku .longread-figure {
     max-width: 30rem;
+    margin-top: 2rem !important;
 }
 
 #mix-transformation-survey-countries {
@@ -164,6 +155,14 @@ $c-callout-text: #373633;
             align-self: center;
             margin-bottom: 0;
         }
+    }
+
+    .technologie-dekarbonizace-prumyslu {
+        grid-template-columns: repeat(var(--items), 1fr);
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        p { align-self: start; }
+        .longread-figure { margin-right: 1em; }
     }
 
     .extremy-histogramy {
