@@ -30,7 +30,7 @@ slug: atlas-obchod
                 <p>Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu.</p>
                 <p>Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.</p>
                 <h3>Rychlost doručení</h3>
-                <p>Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste opravdu nutně potřebovali atlas rychleji, ozvěte se prosím na telefonní číslo 732254401 (vyřizuje Kuba Venglář).</p>
+                <p>Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste opravdu nutně potřebovali atlas rychleji, ozvěte se prosím na telefonní číslo 732 254 401 (vyřizuje Kuba Venglář).</p>
             </div>
             <div class="col-12 col-lg-9 order-lg-1 mt-5 mt-lg-4">
                 <p class="lead pt-3">
