@@ -2,6 +2,9 @@
 layout: empty
 title: Atlas klimatické změny
 slug: atlas-obchod
+preview_image: "/assets-local/img/atlas-mockup.jpg"
+preview_type: "Koupit atlas"
+include_in_search: false
 ---
 
 <div id="{{ site.data.lang.navigation.first-id }}" class="section pb-0">

@@ -6,8 +6,9 @@ intro: |
     Česko i Evropu čeká v následujících desetiletích zásadní proměna energetiky směrem k menšímu využívání fosilních paliv a větší roli obnovitelných zdrojů elektřiny. A do této proměny budou nejspíše zasahovat i nové technologie (baterie, vodík, CCS, nebo třeba modulární jaderné reaktory).
 
     Pro plánování a informované rozhodování o transformaci energetiky potřebujeme chápat možnosti a limity jednotlivých zdrojů a technologií a také porozumět tomu, jak budou zdroje a technologie fungovat dohromady, jak pokryjí spotřebu energie a jaká bude jejich cena. Pro zodpovězení těchto a dalších otázek vytváříme otevřený a veřejně dostupný model energetiky.
-search_type: "Model"
-search_image: "/assets-local/figures/modelovani-energeticke-transformace/ilustrace-mob.png"
+preview_type: "Model"
+preview_image: "/assets-local/figures/modelovani-energeticke-transformace/ilustrace-mob.png"
+include_in_search: true
 ---
 
 <div class="section"><div class="container">
