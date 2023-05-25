@@ -67,7 +67,6 @@ V závěru najdete také seznam dalších zdrojů vědecky podložených informa
 
 ## Komu může být atlas užitečný
 
-
 V zásadě komukoliv, koho zajímá **úvod do klimatické změny** a souvisejících jevů.  Naše publikace je vhodný zdroj, jak začít s jejich studiem, ať už se do něj chcete ponořit vy sami nebo potřebujete didaktickou pomůcku, o niž se můžete opřít.
 Atlas se může hodit ve **školní výuce** v rámci různých předmětů, na **firemním workshopu** či při jiných obdobných příležitostech.
 
@@ -92,11 +91,10 @@ Jednotlivé části atlasu fungují samostatně a nemusíte jej procházet postu
 
 Několik příkladů, jak je možné zadat práci nad atlasem:
 
-
 * Prohlédněte si strany 8 a 9 o bodech zlomu v ekosystémech a pobavte se ve dvojicích, co se vám přitom honí hlavou.
 * V grafice a textu na stranách 12 a 13 se pokuste vyhledat odpovědi na následující otázky:
-   * Jak zjišťujeme koncentrace CO<sub>2/<sub> v minulosti?
-   * Kdy přibližně začala koncentrace CO<sub>2/<sub> růst nad dosavadní maxima dosažená za posledních 800 000 let?
+   * Jak zjišťujeme koncentrace CO<sub>2</sub> v minulosti?
+   * Kdy přibližně začala koncentrace CO<sub>2</sub> růst nad dosavadní maxima dosažená za posledních 800 000 let?
    * Díky čemu víme, že  klimatická změna nesouvisí se střídáním dob ledových a meziledových?
 * Během deseti minut si rychle prolistujte atlas a klidně se zastavte u něčeho, co vás zaujme. Ve trojicích sdílejte, co vás překvapilo nebo co jste netušili.
 * Projděte si stránky 28 a 29 s emisními scénáři pro naplnění Pařížské dohody. Jaká konkrétní řešení, která povedou k dostatečnému snížení emisí, vás napadají a dala by se použít?
