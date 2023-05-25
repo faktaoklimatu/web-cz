@@ -2,7 +2,8 @@
 layout:     empty
 title:      "Jak používat naše materiály"
 slug:       jak-pouzivat
-search_type: "Jak používat"
+preview_type: "Jak používat"
+include_in_search: true
 ---
 <div class="section">
 <div class="container" markdown="1">

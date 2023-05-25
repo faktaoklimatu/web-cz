@@ -3,8 +3,9 @@ layout:     empty
 title:      "Atlas klimatické změny"
 slug:       atlas
 intro:      "Stručné a názorné shrnutí nejdůležitějších dat spojených s klimatickou změnou, které laikům umožní pochopit základní souvislosti. Funguje jako samostatná publikace pro zájemce z řad veřejnosti i coby didaktická pomůcka pro lektory a učitele. Jako podklad posloužily naše infografiky, které jsme doplnili vysvětlujícími texty."
-search_type: "Publikace"
-search_image: "/assets-local/img/atlas-mockup.jpg"
+preview_type: "Publikace"
+preview_image: "/assets-local/img/atlas-mockup.jpg"
+include_in_search: true
 ---
 
 <div id="{{ site.data.lang.navigation.first-id }}" class="section pb-0">
