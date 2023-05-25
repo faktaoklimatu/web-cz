@@ -30,6 +30,10 @@ $c-callout-text: #373633;
     div { align-self: center; }
 }
 
+.logos {
+    mix-blend-mode: multiply;
+}
+
 @media (min-width: 768px) {
     .member-small { grid-template-columns: 120px auto; }
 }
