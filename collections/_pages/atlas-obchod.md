@@ -20,7 +20,7 @@ slug: atlas-obchod
     <div class="container">
         <div class="row" markdown="on">
             <div class="col-12 col-lg-3 order-lg-2 mt-5">
-                <h2 class="d-lg-none">Obecné informace</h2>
+                <h2 class="d-lg-none">Obecné informace o nákupu</h2>
                 <h3>Cena atlasu</h3>
                 <p>
                 <strong>80 Kč/ks</strong> do 10 výtisků<br>
