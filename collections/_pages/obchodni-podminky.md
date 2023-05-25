@@ -10,9 +10,9 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 ## 1. Úvodní ustanovení
 
-1.1.  Tyto obchodní podmínky (dále jen “obchodní podmínky”) provozovatele Otevřená data o klimatu, z. ú., se sídlem Cyrilská 508/7, 602 00 Brno, IČ: 09555587, DIČ: CZ09555587 (dále jen „Prodávající“) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen „občanský zákoník“) vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen „ kupní smlouva“) uzavírané mezi Prodávajícím a Kupujícím prostřednictvím internetového obchodu prodávajícího.
+1.1.  Tyto obchodní podmínky (dále jen "obchodní podmínky") provozovatele Otevřená data o klimatu, z. ú., se sídlem Cyrilská 508/7, 602 00 Brno, IČ: 09555587, DIČ: CZ09555587 (dále jen "Prodávající") upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen "občanský zákoník") vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen "kupní smlouva") uzavírané mezi Prodávajícím a Kupujícím prostřednictvím internetového obchodu prodávajícího.
 
-1.2.  Internetový obchod je prodávajícím provozován na webové stránce umístěné na internetové adrese www.faktaoklimatu.cz (dále jen „webová stránka“), a to prostřednictvím rozhraní webové stránky (dále jen „webové rozhraní obchodu“).
+1.2.  Internetový obchod je prodávajícím provozován na webové stránce umístěné na internetové adrese www.faktaoklimatu.cz (dále jen "webová stránka"), a to prostřednictvím rozhraní webové stránky (dále jen "webové rozhraní obchodu").
 
 1.3.  Ustanovení odchylná od obchodních podmínek je možné sjednat v kupní smlouvě. Odchylná ujednání v kupní smlouvě mají přednost před ustanoveními obchodních podmínek.
 
@@ -22,7 +22,7 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 ## 2. Ochrana osobních údajů a ukládání cookies
 
-2.1.	Svou informační povinnost vůči kupujícímu ve smyslu čl. 13 Nařízení Evropského parlamentu a Rady 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen „nařízení GDPR“) související se zpracováním osobních údajů kupujícího pro účely plnění kupní smlouvy, pro účely jednání o kupní smlouvě a pro účely plnění veřejnoprávních povinností prodávajícího plní prodávající prostřednictvím zvláštního dokumentu.
+2.1.	Svou informační povinnost vůči kupujícímu ve smyslu čl. 13 Nařízení Evropského parlamentu a Rady 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen "nařízení GDPR") související se zpracováním osobních údajů kupujícího pro účely plnění kupní smlouvy, pro účely jednání o kupní smlouvě a pro účely plnění veřejnoprávních povinností prodávajícího plní prodávající prostřednictvím zvláštního dokumentu.
 
 2.2.	Své zákonné povinnosti související s případným ukládáním cookies na zařízení kupujícího plní prodávající prostřednictvím zvláštního dokumentu.
 
@@ -36,13 +36,13 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 3.4.  Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní obchodu. Objednávkový formulář obsahuje zejména informace o:
 
-3.4.1. objednávaném zboží (objednávané zboží „vloží“ kupující do elektronického nákupního košíku webového rozhraní obchodu),
+3.4.1. objednávaném zboží (objednávané zboží "vloží" kupující do elektronického nákupního košíku webového rozhraní obchodu),
 
 3.4.2. způsobu úhrady kupní ceny zboží, údaje o požadovaném způsobu doručení objednávaného zboží a
 
-3.4.3. informace o nákladech spojených s dodáním zboží (dále společně jen jako „objednávka“).
+3.4.3. informace o nákladech spojených s dodáním zboží (dále společně jen jako "objednávka").
 
-3.5.	Před zasláním objednávky prodávajícímu je kupujícímu umožněno zkontrolovat a měnit vstupní údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího zjišťovat a opravovat chyby vzniklé při zadávání dat do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko „Potvrďte nákup” Údaje uvedené v objednávce jsou prodávajícím považovány za správné. Prodávající neprodleně po obdržení objednávky toto obdržení kupujícímu potvrdí elektronickou poštou, a to na adresu elektronické pošty kupujícího uvedenou v objednávce (dále jen „elektronická adresa kupujícího“).
+3.5.	Před zasláním objednávky prodávajícímu je kupujícímu umožněno zkontrolovat a měnit vstupní údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího zjišťovat a opravovat chyby vzniklé při zadávání dat do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko "Potvrďte nákup" Údaje uvedené v objednávce jsou prodávajícím považovány za správné. Prodávající neprodleně po obdržení objednávky toto obdržení kupujícímu potvrdí elektronickou poštou, a to na adresu elektronické pošty kupujícího uvedenou v objednávce (dále jen "elektronická adresa kupujícího").
 
 3.6.	Prodávající je vždy oprávněn v závislosti na charakteru objednávky (množství zboží, výše kupní ceny, předpokládané náklady na dopravu) požádat kupujícího o dodatečné potvrzení objednávky (například písemně či telefonicky).
 
