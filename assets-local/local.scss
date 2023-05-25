@@ -24,10 +24,10 @@ $c-callout-text: #373633;
 
 .principy-prace {
     grid-template-columns: 6rem 1fr;
-}
 
-.principy-prace > img {
-    align-self: center;
+    > img {
+        align-self: center;
+    }
 }
 
 .member-small {
