@@ -51,7 +51,6 @@ Pro soukromého investora může být mnohem atraktivnější například výsta
 
 {% include expander-figure.html
     name="jadro"
-    expanded=false
     class="contrast-figure "
     label="Rozdíl mezi dvěma hlavními přístupy na příkladu jaderných elektráren"
     content=jadro
@@ -112,7 +111,6 @@ Trilema se zpravidla používá k popisu celkové energetické situace na daném
 
 {% include expander-figure.html
     name="trilema"
-    expanded=false
     class="contrast-figure "
     label="Energetické trilema"
     content=trilema
@@ -126,8 +124,8 @@ Jako reakci na tento vývoj Evropská komise představila 14. března 2023 [náv
 
 Níže představujeme tři témata, která se v diskuzi o vývoji trhu s elektřinou objevují:
 - Co pomůže zvýšit podíl obnovitelných zdrojů?
-- Co pomůže zajistit cenovou stabilitu elektřiny?
 - Co může pomoct rozvoji jaderné energetiky?
+- Co pomůže zajistit cenovou stabilitu elektřiny?
 
 ### Co pomůže zvýšit podíl větrných a solárních zdrojů?
 
@@ -135,29 +133,24 @@ Chceme-li zvýšit podíl obnovitelných zdrojů, je lepší spoléhat na trh ne
 
 S rostoucím podílem obnovitelných zdrojů může **pravidelně docházet k obdobím s přebytky obnovitelné elektřiny, kdy bude na trhu velmi nízká prodejní cena pro producenty**. Tento jev, někdy nazývaný _sebe-kanibalizace_[^self-cannibalization] obnovitelných zdrojů, se týká především solární elektřiny, jejíž výroba je koncentrovaná do relativně krátké doby silného osvitu. Může tak nastat situace, že solárních zdrojů už bude tolik, že investorům nebudou kvůli nízkým cenám elektřiny přinášet dostatečné příjmy. K tomuto jevu může dojít dříve, než se dostatečně rozšíří flexibilita spotřeby, bateriová úložiště či výroba zeleného vodíku – což jsou nástroje, které posilují poptávku po levné elektřině a tím tento problém zmírňují.
 
-Tyto výhledy (spolu s obecnou nejistotou panující v rychle se transformujícím sektoru) zvyšují investiční riziko a postupně můžou snižovat chuť investorů budovat další obnovitelné zdroje. **Pro další rozvoj větrných a solárních zdrojů je tedy klíčové snížit investiční riziko a zaručit dlouhodobou návratnost nových projektů**. Kromě menšího rizika pro samotné investory to přináší nižší úrokové sazby pro financování projektů a tedy výrazně nižší celkové náklady.
+Tyto výhledy (spolu s obecnou nejistotou panující v rychle se transformujícím sektoru) zvyšují investiční riziko a postupně můžou snižovat chuť investorů budovat další obnovitelné zdroje. **Pro další rozvoj větrných a solárních zdrojů je tedy klíčové snížit investiční riziko a zaručit dlouhodobou návratnost nových projektů**. Kromě menšího rizika pro samotné investory to přináší nižší úrokové sazby pro financování projektů a tedy výrazně nižší celkové náklady. Snížení rizika a lepší návratnost mohou podpořit jak tržní mechanismy, tak státní intervence – evropský reformní balíček[^reforma] navrhuje kombinaci obou mechanismů.
 
-Reforma evropského trhu s elektřinou[^reforma] navrhuje posílení dvou mechanismů pro dlouhodobé kontrakty:
+{% capture reforma_oze %}
+Reforma evropského trhu s elektřinou navrhuje posílení dvou mechanismů pro dlouhodobé kontrakty:
 - **Soukromé kontrakty na odebírání elektřiny** (*power purchase agreements*) dávají záruku větší stability jak pro investora, tak pro dodavatele nebo pro odběratele elektřiny, např. pro velký průmyslový podnik.
 - **Státní garance ceny elektřiny** (*two-way contracts for difference*) také dodávají stabilitu pro investora a současně umožňují státu zajistit dostatečnou výrobu elektřiny z obnovitelných zdrojů za rozumné náklady.
 
 Proti _sebe-kanibalizaci_ ovšem efektivně působí jen druhý z těchto nástrojů. Paradoxně tak **ke zvyšování podílu elektřiny ze slunce a větru může být zapotřebí silná podpora z veřejných financí** i v situaci, kdy budou tyto zdroje v průměrné ceně nejlevnější.
 
 Kromě posílení dlouhodobých kontraktů reforma navrhuje spoustu dílčích opatření, které mohou usnadnit další rozvoj větrné a solární energetiky (např. podpora rozvoje flexibility spotřeby a ukládání elektřiny, větší transparentnost ohledně připojování obnovitelných zdrojů k síti, další rozvoj chytrého měření).
+{% endcapture %}
 
-### Co pomůže zajistit cenovou stabilitu elektřiny?
-
-V mnoha zemích včetně České republiky došlo v návaznosti na zdražení k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy. Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu.
-
-Reforma evropského trhu s elektřinou[^reforma] reaguje na tyto hlasy, ceny elektřiny pro spotřebitele navrhuje dlouhodobě stabilizovat omezením vlivů těchto tržních výkyvů:
-1. vliv **cen fosilních paliv** omezit dalším urychleným rozvojem obnovitelných zdrojů,
-2. obecně vliv **spotového trhu** omezit posílením dlouhodobých kontraktů (viz výše) a posílením fungování dlouhodobého trhu.
-
-Pro případnou budoucí krizi vysokých cen elektřiny dále navrhuje:
-- **výnosy ze státem garantovaných cen plně přerozdělit zákazníkům** (stát z těchto smluv totiž získá výnosy od výrobců, když je cena na burze vyšší než domluvená garantovaná cena),
-- **posílit ochranu spotřebitelů** (např. garancí práva na smlouvu s fixní cenou a současně povinností pro dodavatele nakupovat pro takové smlouvy dostatek elektřiny na dlouhodobých trzích; absence této povinnosti stála za pádem dodavatele _Bohemia Energy_),
-- zavést **jasný rámec pro případné budoucí zastropování cen elektřiny** (s omezením, že cenový strop musí motivovat k úsporám, např. se tedy může aplikovat jen do výše 80 % průměrné spotřeby domácností),
-- vytvořit **lepší tržní rámec pro úspory elektřiny** ve špičce spotřeby (_peak shaving_).
+{% include expander-figure.html
+    name="reforma_oze"
+    class="contrast-figure"
+    label="Jak konkrétně rozvoj větru a slunce podporuje návrh reformy evropského trhu?"
+    content=reforma_oze
+%}
 
 ### Co může pomoct rozvoji jaderné energetiky?
 
@@ -167,7 +160,32 @@ Jak zmiňujeme výše, rozvoj jaderné energetiky v minulosti probíhal téměř
 
 Diskutují se dva možné přístupy:
 - **Stát získá zpět 100% vlastnictví energetické firmy**, např. Francie chce znovu [získat 100% podíl v EDF](https://www.reuters.com/business/energy/france-keeps-edf-buyout-offer-12-euros-per-share-filing-2022-10-04/), o podobném kroku se [spekuluje i v Česku](https://www.seznamzpravy.cz/clanek/ekonomika-firmy-prehledne-vyparilo-se-100-miliard-proc-je-kolem-cez-takovy-povyk-231252).
-- **Stát poskytne jadernému projektu garantovanou cenu** podobně jako obnovitelným zdrojům, což současný návrh reformy trhu s elektřinou připouští. Tímto způsobem třeba Velká Británie garantuje cenu pro budovanou jadernou elektrárnu [Hinkley Point C](https://en.wikipedia.org/wiki/Hinkley_Point_C_nuclear_power_station).
+- **Stát poskytne jadernému projektu garantovanou cenu** podobně jako obnovitelným zdrojům, což současný návrh reformy trhu s elektřinou[^reforma] připouští. Tímto způsobem třeba Velká Británie garantuje cenu pro budovanou jadernou elektrárnu [Hinkley Point C](https://en.wikipedia.org/wiki/Hinkley_Point_C_nuclear_power_station).
+
+### Co pomůže zajistit cenovou stabilitu elektřiny?
+
+V mnoha zemích včetně České republiky došlo v návaznosti na zdražení k zastropování cen energií či zavedení daní z neočekávaného příjmu pro energetické firmy. Podle zastánců větší státní intervence by cena elektřiny neměla být tak závislá na tržních výkyvech nebo by výnosy z energetických trhů měly více plynout do státního rozpočtu.
+
+V tomto směru může být pro stát **100% vlastnictví velké energetické firmy** atraktivní, protože skrz ni může snadněji nabízet regulované ceny elektřiny, obzvláště v průběhu případných dalších cenových krizí. Není to ale zdaleka jediná cesta, evropská reforma trhu s elektřinou[^reforma] navrhuje sadu opatření převážně tržního charakteru.
+
+{% capture reforma_stabilita %}
+Reforma evropského trhu s elektřinou reaguje na kritické hlasy, ceny elektřiny pro spotřebitele navrhuje dlouhodobě stabilizovat omezením vlivů těchto tržních výkyvů:
+1. vliv **cen fosilních paliv** omezit dalším urychleným rozvojem obnovitelných zdrojů,
+2. obecně vliv **spotového trhu** omezit posílením dlouhodobých kontraktů (viz výše) a posílením fungování dlouhodobého trhu.
+
+Pro případnou budoucí krizi vysokých cen elektřiny dále navrhuje:
+- **výnosy ze státem garantovaných cen plně přerozdělit zákazníkům** (stát z těchto smluv totiž získá výnosy od výrobců, když je cena na burze vyšší než domluvená garantovaná cena),
+- **posílit ochranu spotřebitelů** (např. garancí práva na smlouvu s fixní cenou a současně povinností pro dodavatele nakupovat pro takové smlouvy dostatek elektřiny na dlouhodobých trzích; absence této povinnosti stála za pádem dodavatele _Bohemia Energy_),
+- zavést **jasný rámec pro případné budoucí zastropování cen elektřiny** (s omezením, že cenový strop musí motivovat k úsporám, např. se tedy může aplikovat jen do výše 80 % průměrné spotřeby domácností),
+- vytvořit **lepší tržní rámec pro úspory elektřiny** ve špičce spotřeby (_peak shaving_).
+{% endcapture %}
+
+{% include expander-figure.html
+    name="reforma_stabilita"
+    class="contrast-figure"
+    label="Jak cenovou stabilitu pro zákazníky řeší návrh reformy evropského trhu?"
+    content=reforma_stabilita
+%}
 
 ## Závěr
 
