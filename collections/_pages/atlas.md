@@ -19,30 +19,28 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
         <li><a href="/atlas-obchod">Koupit</a></li>
     </ul>
   </div>
-<div class="section pt-0">
-    <div class="container">
-        <div class="row" markdown="on">
-            <div class="col-md-12 col-lg-9">
-                <p class="lead py-4">{{ page.intro }}</p>
-                <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
-                <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
-            </div>
-            <div class="col-md-12 col-lg-3 mt-5">
-                <h2>Pro vás</h2>
-                <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
-                <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-                <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
-                <hr />
-                <h2>Podpořte naši práci</h2>
-                <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
-                <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
-                <hr />
-                <h2>Licence</h2>
-                <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
-            </div>
-        </div>
+<div class="section pt-0"><div class="container">
+<div class="row" markdown="on">
+    <div class="col-md-12 col-lg-9">
+        <p class="lead py-4">{{ page.intro }}</p>
+        <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
+        <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
+    </div>
+    <div class="col-md-12 col-lg-3 mt-5">
+        <h2>Pro vás</h2>
+        <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
+        <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+        <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+        <hr />
+        <h2>Podpořte naši práci</h2>
+        <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
+        <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
+        <hr />
+        <h2>Licence</h2>
+        <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
     </div>
 </div>
+</div></div>
 
 <div class="section"><div class="container" markdown="1">
 
@@ -71,7 +69,7 @@ V zásadě komukoliv, koho zajímá **úvod do klimatické změny** a souvisejí
 Atlas se může hodit ve **školní výuce** v rámci různých předmětů, na **firemním workshopu** či při jiných obdobných příležitostech.
 {: .mb-5}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Poděkování"
+{%- include expandable.html id-prefix="collapse-atlas" counter=1 title="### Poděkování"
 content="
 
 Děkujeme dalším členům Fakt o klimatu, kteří se na vzniku atlasu svou prací významně podíleli.
@@ -87,7 +85,7 @@ První vydání této publikace recenzovali:
 Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="### Další díly a aktualizace atlasu"
+{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Další díly a aktualizace atlasu"
 content="
 V tuto chvíli nabízíme druhé, rozšířené vydání z podzimu 2022, kde kromě aktualizace dat ve stávajících infografikách najdete též několik zcela nových stran. V případě, že byste se někde setkali se starší (ale stále dobře použitelnou) verzí atlasu, poznáte ji snadno podle jiné obálky.
 V budoucnosti bychom rádi připravili také další díly atlasu pokrývající například energetiku či jiná zajímavá témata.
@@ -121,7 +119,7 @@ Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creati
 
 ## Metodické materiály
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
 Jednotlivé části atlasu fungují samostatně a nemusíte jej procházet postupně od začátku do konce. Můžete si vybrat konkrétní problematiku a stejně dobře začít zvyšováním teplot, body zlomu v ekosystémech nebo třeba dopady změn na obyvatele různých oblastí. Obsažené materiály nabízejí plno námětů ke společné diskuzi i individuální práci.
 
@@ -139,7 +137,7 @@ Pokud byste chtěli načerpat rozsáhlejší didaktickou inspiraci, najdete ji k
 
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
+{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
 content="
 S atlasem se nemusíte omezovat pouze na téma klimatické změny – naše grafiky a texty poslouží též jako praktický materiál při budování mnoha přírodovědných i společenskovědních kompetencí.
 Při různých příležitostech můžete se studenty procvičovat dovednosti jako čtení grafů, práce s daty, interpretace textů apod.
