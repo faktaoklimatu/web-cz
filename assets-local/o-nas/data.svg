@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect x="40.56" y="17.87" width="46.12" height="62.54" transform="translate(11.24 -11.84) rotate(11.66)" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  <g>
+    <rect x="26.51" y="13.25" width="46.12" height="62.54" transform="translate(-4.67 5.82) rotate(-6.42)" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="28.9" y1="21.67" x2="48.32" y2="19.48" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="29.69" y1="28.66" x2="64.65" y2="24.73" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="30.48" y1="35.65" x2="65.43" y2="31.72" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="31.26" y1="42.64" x2="66.22" y2="38.71" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="32.05" y1="49.63" x2="67.01" y2="45.7" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="32.84" y1="56.62" x2="67.79" y2="52.69" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="33.62" y1="63.62" x2="68.58" y2="59.68" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="34.41" y1="70.61" x2="69.37" y2="66.67" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+  <g>
+    <polygon points="68.99 81.52 24.74 94.5 7.14 34.49 35.98 26.03 55.46 35.38 68.99 81.52" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="36.08 26.29 41.22 41.27 55.08 36.08" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+  <line x1="16.21" y1="49.63" x2="34.41" y2="44.52" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  <g>
+    <rect x="22.68" y="49.41" width="33.68" height="34.64" transform="translate(-17.45 14.1) rotate(-16.63)" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="25.88 59.76 32.06 80.45 52.17 74.44" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="27.54 65.29 31.87 62.99 36.01 66.77 37.82 63.07 44.76 69.18 47.26 67.43 49.65 68.73" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

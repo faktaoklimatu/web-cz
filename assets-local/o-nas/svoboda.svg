@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <path d="m44.49,89.19l7.3-13.84s5.14,1.03,8.8-3.62,15.75-16.21,14.23-21.93l-21.4-16.82-28.9,36.35" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+  <g>
+    <polygon points="19.09 16.5 27.34 30.54 82.55 73.94 86.04 71.89 88.76 68.43 89.86 64.63 34.53 21.14 19.09 16.5" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="29.97" y1="27.89" x2="86.01" y2="71.93" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="32.72" y1="24.38" x2="88.76" y2="68.43" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m27.68,30.81s.67-3.25,2.88-2.46c-.83-2.54,1.71-3.38,2.75-3.5-.71-1.5,1.22-3.7,1.22-3.7" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m24.31,18.27c.28,1.36-.98,2.72-2.26,2.88l-1.79-3.73,4.05.85Z" fill="navy" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+  <path d="m52.18,26.89c-3.46,4.4-6.93,8.81-10.39,13.21-3.46,4.4,1.94,11.03,6.56,5.16l11.65-14.82c2.2-2.8-3.21-9.42-7.82-3.55Z" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+  <path d="m66.4,35.71c-3.33,4.23-11.49,14.62-14.82,18.86s-10.74.69-6.31-4.96c4.44-5.64,13.92-17.71,16.04-20.4s9.53.86,5.09,6.5Z" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+  <path d="m73.04,41.23c-3.28,4.17-10.52,13.39-13.8,17.56-3.28,4.17-10.58.68-6.21-4.88s11.72-14.91,13.8-17.56c4.02-5.12,10.58-.68,6.21,4.88Z" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+  <path d="m76.55,48.9c-3.02,3.84-6.04,7.68-9.05,11.52-3.02,3.84-9.74.62-5.72-4.5s8.24-10.48,10.15-12.92,8.64.78,4.62,5.9Z" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+  <path d="m15.79,76.02l14.25-16.39s-.57-5.05,2.15-10.43c2.73-5.38,9.14-15.03,9.14-15.03,0,0,22.71,10.17,25.5,12.37-1.06,5.18-8.44,6.91-19.41-.2,3.39,7.18.33,16.81-4.26,20.73" fill="#fff" stroke="navy" stroke-miterlimit="2" stroke-width="1.5"/>
+</svg>
