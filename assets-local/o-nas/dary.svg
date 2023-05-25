@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g>
+    <rect x="24.12" y="37.38" width="51.33" height="24.32" transform="translate(33.55 -18.79) rotate(31.78)" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="33.64 33.7 35.53 30.64 38.59 32.54" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="29.58 47.09 26.52 45.19 28.42 42.13" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <polyline points="65.17 64.89 63.27 67.95 60.21 66.06" fill="#fff" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m42.25,58.94s5.96-3.58,15.49-2.38c12.56,1.57,13.65-7.36,13.65-7.36l6.61,3.52-12.81,20.67-22.95-14.45Z" fill="navy" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <circle cx="49.13" cy="49.82" r="8.57" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="71" y1="62.98" x2="71" y2="76.37" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="65.93" y1="68.06" x2="65.93" y2="81.45" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="60.85" y1="71.44" x2="60.85" y2="84.83" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="55.78" y1="61.29" x2="55.78" y2="74.68" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+  <g>
+    <circle cx="50" cy="50" r="43.5" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="20.72" y1="79.28" x2="79.12" y2="20.88" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+    <line x1="19.24" y1="80.76" x2="80.76" y2="19.24" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

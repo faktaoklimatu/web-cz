@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g>
+    <ellipse cx="49.8" cy="38.9" rx="19.26" ry="5.38" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m36.31,42.23c2.64-1.32,7.7-2.21,13.49-2.21s10.85.89,13.49,2.21c-5.3,2.25-20.74,3.66-26.98,0Z" fill="navy" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m69.12,38.9l.08,32.74v-.1c0,2.97-8.76,6.47-19.4,6.47s-19.33-3.5-19.33-6.47v.1l.07-32.74" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path d="m30.63,38.9c0-10.65,8.63-19.29,19.29-19.29s19.29,8.63,19.29,19.29" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="63.51" y1="43.45" x2="63.51" y2="52.64" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="55.33" y1="44.54" x2="55.33" y2="49.61" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line x1="59.58" y1="44.22" x2="59.58" y2="56.9" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g>
+      <path d="m55.91,66.76c5.78-9.79-8.05-13.5-14.28-14.28.78,6.23,4.49,20.06,14.28,14.28Z" fill="none" stroke="navy" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line x1="41.93" y1="52.68" x2="59.07" y2="69.93" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+  <g>
+    <line x1="19.24" y1="80.76" x2="80.76" y2="19.24" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+    <line x1="19.24" y1="80.76" x2="80.76" y2="19.24" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+    <circle cx="50" cy="50" r="43.5" fill="none" stroke="navy" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>
