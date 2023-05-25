@@ -69,21 +69,57 @@ V závěru najdete také seznam dalších zdrojů vědecky podložených informa
 
 V zásadě komukoliv, koho zajímá **úvod do klimatické změny** a souvisejících jevů.  Naše publikace je vhodný zdroj, jak začít s jejich studiem, ať už se do něj chcete ponořit vy sami nebo potřebujete didaktickou pomůcku, o niž se můžete opřít.
 Atlas se může hodit ve **školní výuce** v rámci různých předmětů, na **firemním workshopu** či při jiných obdobných příležitostech.
+{: .mb-5}
 
+{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Poděkování"
+content="
+
+Děkujeme dalším členům Fakt o klimatu, kteří se na vzniku atlasu svou prací významně podíleli.
+
+První vydání této publikace recenzovali:
+
+* Mgr. Michal Žák, Ph. D., Katedra fyziky atmosféry Matematicko-fyzikální fakulty Univerzity Karlovy
+* RNDr. Radim Tolasz, Ph. D., klimatolog, Český hydrometeorologický ústav
+* Ing. Jiří Dlouhý, Centrum pro otázky životního prostředí Univerzity Karlovy
+* Jan Labohý, CEO World from Space, odborný konzultant ASITIS s. r. o.
+* Mgr. Romana Březovská, M. A., ministerský rada, Ministerstvo životního prostředí ČR
+
+Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
+" %}
+
+{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="### Další díly a aktualizace atlasu"
+content="
+V tuto chvíli nabízíme druhé, rozšířené vydání z podzimu 2022, kde kromě aktualizace dat ve stávajících infografikách najdete též několik zcela nových stran. V případě, že byste se někde setkali se starší (ale stále dobře použitelnou) verzí atlasu, poznáte ji snadno podle jiné obálky.
+V budoucnosti bychom rádi připravili také další díly atlasu pokrývající například energetiku či jiná zajímavá témata.
+" %}
+
+</div></div>
+<div class="section"><div class="container" markdown="1">
 
 ## Jak si atlas pořídit
 
-### 1) Stažení elektronické verze ve formátu PDF
+<div class="row"><div class="col-md-6 my-3" markdown="1">
 
-Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
-
-### 2) Nákup již hotových výtisků přímo od nás
+### Nákup již hotových výtisků přímo od nás
 
 Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk.
 
 Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
 
-<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stahujte zde</a> <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Kupte si tištěný atlas</a>
+<a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+
+</div><div class="col-md-6 my-3" markdown="1">
+
+### Stažení elektronické verze ve formátu PDF
+
+Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
+
+<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+
+</div></div></div></div>
+<div class="section"><div class="container" markdown="1">
+
+## Metodické materiály
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=2 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
@@ -117,25 +153,4 @@ Několik příkladů možného využití atlasu:
 
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Poděkování"
-content="
-
-Děkujeme dalším členům Fakt o klimatu, kteří se na vzniku atlasu svou prací významně podíleli.
-
-První vydání této publikace recenzovali:
-
-* Mgr. Michal Žák, Ph. D., Katedra fyziky atmosféry Matematicko-fyzikální fakulty Univerzity Karlovy
-* RNDr. Radim Tolasz, Ph. D., klimatolog, Český hydrometeorologický ústav
-* Ing. Jiří Dlouhý, Centrum pro otázky životního prostředí Univerzity Karlovy
-* Jan Labohý, CEO World from Space, odborný konzultant ASITIS s. r. o.
-* Mgr. Romana Březovská, M. A., ministerský rada, Ministerstvo životního prostředí ČR
-
-Za odbornou či lidskou inspiraci chceme dále poděkovat: Jirkovi Vorlíčkovi, Lence Kopáčové, Petru Danišovi, Janu Krajhanzlovi, Mycu Riggulsfordovi, Lucii Smolkové, Veronice Ambrozyové, Haně Mikulicové a Tadeáši Žďárskému.
-" %}
-
-{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="### Další díly a aktualizace atlasu"
-content="
-V tuto chvíli nabízíme druhé, rozšířené vydání z podzimu 2022, kde kromě aktualizace dat ve stávajících infografikách najdete též několik zcela nových stran. V případě, že byste se někde setkali se starší (ale stále dobře použitelnou) verzí atlasu, poznáte ji snadno podle jiné obálky.
-V budoucnosti bychom rádi připravili také další díly atlasu pokrývající například energetiku či jiná zajímavá témata.
-" %}
 </div></div>
