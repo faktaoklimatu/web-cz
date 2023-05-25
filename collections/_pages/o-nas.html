@@ -46,11 +46,11 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
 </div>
 {%- endcomment %}
 
-{%- assign groups = site.data.organization-members -%}
-{%- for group in groups %}
-    <div class="section">
-        <div class="container">
-            <h2 id="members">{{ group.title }}</h2>
+<div class="section" id="members">
+    {%- assign groups = site.data.organization-members -%}
+    {%- for group in groups %}
+        <div class="container mb-5">
+            <h2>{{ group.title }}</h2>
             <p class="lead">{{ group.lead }}</p>
             <div class="row mt-2">
                 {%- assign members = group.members -%}
@@ -87,8 +87,8 @@ intro: "Debata o klimatické změně je komplikovaná a na všech stranách pln�
                 {%- endfor %}
             </div>
         </div>
-    </div>
-{%- endfor %}
+    {%- endfor %}
+</div>
 
 <div class="section" id="kontaktni-udaje">
     <div class="container">
