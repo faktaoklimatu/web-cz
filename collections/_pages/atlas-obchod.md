@@ -21,7 +21,7 @@ slug: atlas-obchod
         <div class="row" markdown="on">
             <div class="col-12 col-lg-3 order-lg-2 mt-5">
                 <h2>Obecné informace</h2>
-                <h3>Cena Atlasu</h3>
+                <h3>Cena atlasu</h3>
                 <p>
                 <strong>80 Kč/ks</strong> do 10 výtisků<br>
                 <strong>60 Kč/ks</strong> nad 10 výtisků
@@ -30,7 +30,7 @@ slug: atlas-obchod
                 <p>Balíček vám pošleme Zásilkovnou. Cena dopravy je 90 Kč v případě doručení na výdejní místo a 110 Kč za dovoz na konkrétní adresu.</p>
                 <p>Pokud si u nás objednáte 50 kusů a více, budete mít dopravu zdarma.</p>
                 <h3>Rychlost doručení</h3>
-                <p>Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste Atlas potřebovali opravdu nutně rychleji, ozvěte se na telefonní číslo 732254401 (vyřizuje Kuba Venglář).</p>
+                <p>Objednávky z kapacitních důvodů balíme a rozesíláme přibližně jednou za dva týdny, proto vás prosíme o jistou míru strpení. Pokud byste opravdu nutně potřebovali atlas rychleji, ozvěte se prosím na telefonní číslo 732254401 (vyřizuje Kuba Venglář).</p>
             </div>
             <div class="col-12 col-lg-9 order-lg-1 mt-5 mt-lg-4">
                 <p class="lead pt-3">
