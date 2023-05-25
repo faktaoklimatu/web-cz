@@ -10,15 +10,15 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 ## 1. Úvodní ustanovení
 
-1.1 Tyto obchodní podmínky (dále jen “obchodní podmínky”) provozovatele Otevřená data o klimatu, z. ú., se sídlem Cyrilská 508/7, 602 00 Brno, IČ: 09555587, DIČ: CZ09555587 (dále jen „Prodávající“) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen „občanský zákoník“) vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen „ kupní smlouva“) uzavírané mezi Prodávajícím a Kupujícím prostřednictvím internetového obchodu prodávajícího. 
+1.1.  Tyto obchodní podmínky (dále jen “obchodní podmínky”) provozovatele Otevřená data o klimatu, z. ú., se sídlem Cyrilská 508/7, 602 00 Brno, IČ: 09555587, DIČ: CZ09555587 (dále jen „Prodávající“) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník (dále jen „občanský zákoník“) vzájemná práva a povinnosti smluvních stran vzniklé v souvislosti nebo na základě kupní smlouvy (dále jen „ kupní smlouva“) uzavírané mezi Prodávajícím a Kupujícím prostřednictvím internetového obchodu prodávajícího.
 
-1.2 Internetový obchod je prodávajícím provozován na webové stránce umístěné na internetové adrese www.faktaoklimatu.cz (dále jen „webová stránka“), a to prostřednictvím rozhraní webové stránky (dále jen „webové rozhraní obchodu“).
+1.2.  Internetový obchod je prodávajícím provozován na webové stránce umístěné na internetové adrese www.faktaoklimatu.cz (dále jen „webová stránka“), a to prostřednictvím rozhraní webové stránky (dále jen „webové rozhraní obchodu“).
 
-1.3 Ustanovení odchylná od obchodních podmínek je možné sjednat v kupní smlouvě. Odchylná ujednání v kupní smlouvě mají přednost před ustanoveními obchodních podmínek.
+1.3.  Ustanovení odchylná od obchodních podmínek je možné sjednat v kupní smlouvě. Odchylná ujednání v kupní smlouvě mají přednost před ustanoveními obchodních podmínek.
 
-1.4 Ustanovení obchodních podmínek jsou nedílnou součástí kupní smlouvy. Kupní smlouva a obchodní podmínky jsou vyhotoveny v českém jazyce. Kupní smlouvu lze uzavřít v českém jazyce.
+1.4.  Ustanovení obchodních podmínek jsou nedílnou součástí kupní smlouvy. Kupní smlouva a obchodní podmínky jsou vyhotoveny v českém jazyce. Kupní smlouvu lze uzavřít v českém jazyce.
 
-1.5 Znění obchodních podmínek může prodávající měnit či doplňovat. Tímto ustanovením nejsou dotčena práva a povinnosti vzniklá po dobu účinnosti předchozího znění obchodních podmínek.
+1.5.  Znění obchodních podmínek může prodávající měnit či doplňovat. Tímto ustanovením nejsou dotčena práva a povinnosti vzniklá po dobu účinnosti předchozího znění obchodních podmínek.
 
 ## 2. Ochrana osobních údajů a ukládání cookies
 
@@ -32,21 +32,21 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 3.2.	Webové rozhraní obchodu obsahuje informace o zboží, a to včetně uvedení cen jednotlivého zboží a nákladů za navrácení zboží, jestliže toto zboží ze své podstaty nemůže být navráceno obvyklou poštovní cestou. Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků. Ceny zboží zůstávají v platnosti po dobu, kdy jsou zobrazovány ve webovém rozhraní obchodu. Tímto ustanovením není omezena možnost prodávajícího uzavřít kupní smlouvu za individuálně sjednaných podmínek.
 
-3.3.	Webové rozhraní obchodu obsahuje také informace o nákladech spojených s balením a dodáním zboží, a o způsobu a času dodání zboží. Informace o nákladech spojených s balením a dodáním zboží uvedené ve webovém rozhraní obchodu platí pouze v případech, kdy je zboží doručováno v rámci území České republiky. V případě, kdy prodávající nabízí dopravu zboží zdarma, je předpokladem vzniku práva na bezplatnou dopravu zboží na straně kupujícího zaplacení minimální celkové kupní ceny dopravovaného zboží ve výši stanovené ve webovém rozhraní obchodu. V případě, kdy dojde k částečnému odstoupení od kupní smlouvy kupujícím a celková kupní cena zboží, u kterého nedošlo k odstoupení od smlouvy kupujícím, nedosahuje minimální výše, jež je potřebná pro vznik práva na dopravu zboží zdarma podle předchozí věty, právo kupujícího na dopravu zboží zdarma zaniká a kupující je povinen dopravu zboží prodávajícímu uhradit.
+3.3.  Webové rozhraní obchodu obsahuje také informace o nákladech spojených s balením a dodáním zboží, a o způsobu a času dodání zboží. Informace o nákladech spojených s balením a dodáním zboží uvedené ve webovém rozhraní obchodu platí pouze v případech, kdy je zboží doručováno v rámci území České republiky. V případě, kdy prodávající nabízí dopravu zboží zdarma, je předpokladem vzniku práva na bezplatnou dopravu zboží na straně kupujícího zaplacení minimální celkové kupní ceny dopravovaného zboží ve výši stanovené ve webovém rozhraní obchodu. V případě, kdy dojde k částečnému odstoupení od kupní smlouvy kupujícím a celková kupní cena zboží, u kterého nedošlo k odstoupení od smlouvy kupujícím, nedosahuje minimální výše, jež je potřebná pro vznik práva na dopravu zboží zdarma podle předchozí věty, právo kupujícího na dopravu zboží zdarma zaniká a kupující je povinen dopravu zboží prodávajícímu uhradit.
 
-3.4.	Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní obchodu. Objednávkový formulář obsahuje zejména informace o:
+3.4.  Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní obchodu. Objednávkový formulář obsahuje zejména informace o:
 
-3.4.1.	objednávaném zboží (objednávané zboží „vloží“ kupující do elektronického nákupního košíku webového rozhraní obchodu),
+3.4.1. objednávaném zboží (objednávané zboží „vloží“ kupující do elektronického nákupního košíku webového rozhraní obchodu),
 
-3.4.2.	způsobu úhrady kupní ceny zboží, údaje o požadovaném způsobu doručení objednávaného zboží a
+3.4.2. způsobu úhrady kupní ceny zboží, údaje o požadovaném způsobu doručení objednávaného zboží a
 
-3.4.3.	informace o nákladech spojených s dodáním zboží (dále společně jen jako „objednávka“).
+3.4.3. informace o nákladech spojených s dodáním zboží (dále společně jen jako „objednávka“).
 
 3.5.	Před zasláním objednávky prodávajícímu je kupujícímu umožněno zkontrolovat a měnit vstupní údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího zjišťovat a opravovat chyby vzniklé při zadávání dat do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko „Potvrďte nákup” Údaje uvedené v objednávce jsou prodávajícím považovány za správné. Prodávající neprodleně po obdržení objednávky toto obdržení kupujícímu potvrdí elektronickou poštou, a to na adresu elektronické pošty kupujícího uvedenou v objednávce (dále jen „elektronická adresa kupujícího“).
 
 3.6.	Prodávající je vždy oprávněn v závislosti na charakteru objednávky (množství zboží, výše kupní ceny, předpokládané náklady na dopravu) požádat kupujícího o dodatečné potvrzení objednávky (například písemně či telefonicky).
 
-3.7.	Smluvní vztah mezi prodávajícím a kupujícím vzniká doručením přijetí objednávky (akceptací), jež je prodávajícím zasláno kupujícímu elektronickou poštou, a to na adresu elektronické pošty kupujícího. 
+3.7.	Smluvní vztah mezi prodávajícím a kupujícím vzniká doručením přijetí objednávky (akceptací), jež je prodávajícím zasláno kupujícímu elektronickou poštou, a to na adresu elektronické pošty kupujícího.
 
 3.8.	Kupující souhlasí s použitím komunikačních prostředků na dálku při uzavírání kupní smlouvy. Náklady vzniklé kupujícímu při použití komunikačních prostředků na dálku v souvislosti s uzavřením kupní smlouvy (náklady na internetové připojení, náklady na telefonní hovory) si hradí kupující sám, přičemž tyto náklady se neliší od základní sazby.
 
@@ -70,28 +70,28 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 ## 5. Odstoupení od kupní smlouvy
 
-5.1.   Kupující bere na vědomí, že dle ustanovení § 1837 občanského zákoníku, nelze mimo jiné odstoupit od kupní smlouvy o dodávce zboží, které bylo upraveno podle přání kupujícího nebo pro jeho osobu, od kupní smlouvy o dodávce zboží, které podléhá rychlé zkáze, jakož i zboží, které bylo po dodání nenávratně smíseno s jiným zbožím, od kupní smlouvy o dodávce zboží v uzavřeném obalu, které spotřebitel z obalu vyňal a z hygienických důvodů jej není možné vrátit a od kupní smlouvy o dodávce zvukové nebo obrazové nahrávky nebo počítačového programu, pokud porušil jejich původní obal.
+5.1.  Kupující bere na vědomí, že dle ustanovení § 1837 občanského zákoníku, nelze mimo jiné odstoupit od kupní smlouvy o dodávce zboží, které bylo upraveno podle přání kupujícího nebo pro jeho osobu, od kupní smlouvy o dodávce zboží, které podléhá rychlé zkáze, jakož i zboží, které bylo po dodání nenávratně smíseno s jiným zbožím, od kupní smlouvy o dodávce zboží v uzavřeném obalu, které spotřebitel z obalu vyňal a z hygienických důvodů jej není možné vrátit a od kupní smlouvy o dodávce zvukové nebo obrazové nahrávky nebo počítačového programu, pokud porušil jejich původní obal.
 
-5.2 Nejedná-li se o případ uvedený v čl. 5.1 obchodních podmínek či o jiný případ, kdy nelze od kupní smlouvy odstoupit, má kupující v souladu s ustanovením § 1829 odst. 1 a odst. 2 občanského zákoníku právo od kupní smlouvy odstoupit, a to do čtrnácti (14) dnů ode dne, kdy kupující nebo jím určená třetí osoba odlišná od dopravce převezeme zboží, nebo:
-5.2.1 poslední kus zboží, objedná-li kupující v rámci jedné objednávky více kusů zboží, které jsou dodávány samostatně,
-5.2.2 poslední položku nebo část dodávky zboží sestávajícího z několika položek nebo částí, nebo
-5.2.3 první dodávku zboží, je-li ve smlouvě ujednána pravidelná dodávka zboží po ujednanou dobu.
+5.2.  Nejedná-li se o případ uvedený v čl. 5.1 obchodních podmínek či o jiný případ, kdy nelze od kupní smlouvy odstoupit, má kupující v souladu s ustanovením § 1829 odst. 1 a odst. 2 občanského zákoníku právo od kupní smlouvy odstoupit, a to do čtrnácti (14) dnů ode dne, kdy kupující nebo jím určená třetí osoba odlišná od dopravce převezeme zboží, nebo:
+5.2.1. poslední kus zboží, objedná-li kupující v rámci jedné objednávky více kusů zboží, které jsou dodávány samostatně,
+5.2.2. poslední položku nebo část dodávky zboží sestávajícího z několika položek nebo částí, nebo
+5.2.3. první dodávku zboží, je-li ve smlouvě ujednána pravidelná dodávka zboží po ujednanou dobu.
 5.3.	Odstoupení od kupní smlouvy musí být prodávajícímu odesláno ve lhůtě uvedené v čl. 5.2 obchodních podmínek. Odstoupení od kupní smlouvy může kupující zaslat mimo jiné na adresu provozovny prodávajícího nebo na emailovou adresu obchod@faktaoklimatu.cz.
-5.4.   V případě odstoupení od kupní smlouvy dle čl. 5.2 obchodních podmínek se kupní smlouva od počátku ruší. Zboží musí být prodávajícímu vráceno do čtrnácti (14) dnů od odstoupení od smlouvy prodávajícímu. Odstoupí-li kupující od kupní smlouvy, nese kupující náklady spojené s navrácením zboží prodávajícímu, a to i v tom případě, kdy zboží nemůže být vráceno pro svou povahu obvyklou poštovní cestou.
+5.4.  V případě odstoupení od kupní smlouvy dle čl. 5.2 obchodních podmínek se kupní smlouva od počátku ruší. Zboží musí být prodávajícímu vráceno do čtrnácti (14) dnů od odstoupení od smlouvy prodávajícímu. Odstoupí-li kupující od kupní smlouvy, nese kupující náklady spojené s navrácením zboží prodávajícímu, a to i v tom případě, kdy zboží nemůže být vráceno pro svou povahu obvyklou poštovní cestou.
 
-5.5.   V případě odstoupení od smlouvy dle čl. 5.2 obchodních podmínek vrátí prodávající peněžní prostředky přijaté od kupujícího do čtrnácti (14) dnů od odstoupení od kupní smlouvy kupujícím, a to stejným způsobem, jakým je prodávající od kupujícího přijal. Prodávající je taktéž oprávněn vrátit plnění poskytnuté kupujícím již při vrácení zboží kupujícím či jiným způsobem, pokud s tím kupující bude souhlasit a nevzniknou tím kupujícímu další náklady. Odstoupí-li kupující od kupní smlouvy, prodávající není povinen vrátit přijaté peněžní prostředky kupujícímu dříve, než mu kupující zboží vrátí nebo prokáže, že zboží prodávajícímu odeslal.
+5.5.  V případě odstoupení od smlouvy dle čl. 5.2 obchodních podmínek vrátí prodávající peněžní prostředky přijaté od kupujícího do čtrnácti (14) dnů od odstoupení od kupní smlouvy kupujícím, a to stejným způsobem, jakým je prodávající od kupujícího přijal. Prodávající je taktéž oprávněn vrátit plnění poskytnuté kupujícím již při vrácení zboží kupujícím či jiným způsobem, pokud s tím kupující bude souhlasit a nevzniknou tím kupujícímu další náklady. Odstoupí-li kupující od kupní smlouvy, prodávající není povinen vrátit přijaté peněžní prostředky kupujícímu dříve, než mu kupující zboží vrátí nebo prokáže, že zboží prodávajícímu odeslal.
 
-5.6.   Nárok na úhradu škody vzniklé na zboží je prodávající oprávněn jednostranně započíst proti nároku kupujícího na vrácení kupní ceny.
+5.6.  Nárok na úhradu škody vzniklé na zboží je prodávající oprávněn jednostranně započíst proti nároku kupujícího na vrácení kupní ceny.
 
-5.6.   V případech, kdy má kupující v souladu s ustanovením § 1829 odst. 1 občanského zákoníku právo od kupní smlouvy odstoupit, je prodávající také oprávněn kdykoliv od kupní smlouvy odstoupit, a to až do doby převzetí zboží kupujícím. V takovém případě vrátí prodávající kupujícímu kupní cenu bez zbytečného odkladu, a to bezhotovostně na účet určený kupujícím.
+5.6.  V případech, kdy má kupující v souladu s ustanovením § 1829 odst. 1 občanského zákoníku právo od kupní smlouvy odstoupit, je prodávající také oprávněn kdykoliv od kupní smlouvy odstoupit, a to až do doby převzetí zboží kupujícím. V takovém případě vrátí prodávající kupujícímu kupní cenu bez zbytečného odkladu, a to bezhotovostně na účet určený kupujícím.
 
-5.7.   Je-li společně se zbožím poskytnut kupujícímu dárek, je darovací smlouva mezi prodávajícím a kupujícím uzavřena s rozvazovací podmínkou, že dojde-li k odstoupení od kupní smlouvy kupujícím, pozbývá darovací smlouva ohledně takového dárku účinnosti a kupující je povinen spolu se zbožím prodávajícímu vrátit i poskytnutý dárek.
+5.7.  Je-li společně se zbožím poskytnut kupujícímu dárek, je darovací smlouva mezi prodávajícím a kupujícím uzavřena s rozvazovací podmínkou, že dojde-li k odstoupení od kupní smlouvy kupujícím, pozbývá darovací smlouva ohledně takového dárku účinnosti a kupující je povinen spolu se zbožím prodávajícímu vrátit i poskytnutý dárek.
 
 ## 6. Přeprava a dodání zboží
 
 6.1.	V případě, že je způsob dopravy smluven na základě zvláštního požadavku kupujícího, nese kupující riziko a případné dodatečné náklady spojené s tímto způsobem dopravy.
 
-6.2.	Je-li prodávající podle kupní smlouvy povinen dodat zboží na místo určené kupujícím v objednávce, je kupující povinen převzít zboží při dodání. 
+6.2.	Je-li prodávající podle kupní smlouvy povinen dodat zboží na místo určené kupujícím v objednávce, je kupující povinen převzít zboží při dodání.
 
 6.3.	V případě, že je z důvodů na straně kupujícího nutno zboží doručovat opakovaně nebo jiným způsobem, než bylo uvedeno v objednávce, je kupující povinen uhradit náklady spojené s opakovaným doručováním zboží, resp. náklady spojené s jiným způsobem doručení.
 
@@ -105,9 +105,9 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 7.2.	Prodávající odpovídá kupujícímu, že věc při převzetí nemá vady. Zejména prodávající odpovídá kupujícímu, že věc odpovídá ujednanému popisu, druhu a množství, jakož i jakosti a jiným ujednaným vlastnostem.
 
-7.3 Ustanovení uvedená v čl. 7.2 obchodních podmínek se nepoužijí u zboží prodávaného za nižší cenu na vadu, pro kterou byla nižší cena ujednána, na opotřebení zboží způsobené jeho obvyklým užíváním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.
+7.3.  Ustanovení uvedená v čl. 7.2 obchodních podmínek se nepoužijí u zboží prodávaného za nižší cenu na vadu, pro kterou byla nižší cena ujednána, na opotřebení zboží způsobené jeho obvyklým užíváním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.
 
-7.4	Další práva a povinnosti stran související s odpovědností prodávajícího za vady může upravit reklamační řád prodávajícího.
+7.4.	 Další práva a povinnosti stran související s odpovědností prodávajícího za vady může upravit reklamační řád prodávajícího.
 
 ## 8. Další práva a povinnosti smluvních stran
 
@@ -127,7 +127,7 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 ## 9. Doručování
 
-9.1.       Kupujícímu může být doručováno na elektronickou adresu kupujícího.
+9.1.  Kupujícímu může být doručováno na elektronickou adresu kupujícího.
 
 ## 10. Závěrečná ustanovení
 
@@ -139,14 +139,11 @@ Máte-li jakýkoliv dotaz nebo připomínku, napište nám na [obchod@faktaoklim
 
 12.4.	Kontaktní údaje prodávajícího:
 
-Otevřená data o klimatu, z. ú.
-Cyrilská 508/7
-602 00 Brno
+Otevřená data o klimatu, z. ú.\\
+Cyrilská 508/7\\
+602 00 Brno\\
 Email: obchod@faktaoklimatu.cz
 
 Prodávající neposkytuje jiný prostředek on-line komunikace.
 
-Tyto obchodní podmínky jsou účinné od 1.4. 2023 
-
-
-
+Tyto obchodní podmínky jsou účinné od 1. 4. 2023.
