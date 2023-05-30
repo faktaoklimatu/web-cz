@@ -17,10 +17,10 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/SQEo2zSXB04"
-perex:       "Průmysl výrazně přispívá ke změně klimatu tím, že vypouští velké množství skleníkových plynů. Zároveň jde o oblast lidské činnosti, jejíž dekarbonizace je velmi obtížná. Tento text přináší přehled hlavních možností, jak lze snížit emise v důležitých výrobních sektorech, a popisuje očekávaný vývoj potřebných technologií a problémy, které se mohou vyskytnout a bude nutné je řešit."
+perex:       "Průmysl výrazně přispívá ke změně klimatu tím, že vypouští velké množství skleníkových plynů. Zároveň jde o oblast lidské činnosti, jejíž dekarbonizace je velmi obtížná. Tento text popisuje hlavní možnosti, jak lze snížit emise v důležitých výrobních sektorech, jaký je očekávaný vývoj potřebných technologií a které výzvy bude nutné řešit."
 ---
 
-Při dekarbonizaci průmyslu bude potřeba **jednak nahradit zdroje tepelné energie** využívané při výrobě, **jednak snížit emisní náročnost výrobních procesů**, což jsou často chemické reakce. Důležité bude také **zachytávat emise CO<sub>2</sub>, jejichž snížení zatím není možné** (obvykle proto, že jiná technologie výroby není k dispozici).
+Při dekarbonizaci průmyslu bude potřeba **jednak nahradit zdroje tepelné energie** využívané při výrobě, **jednak snížit emisní náročnost výrobních procesů**, což jsou často chemické reakce. Důležité bude také **zachytávat emise CO<sub>2</sub>, jejichž snížení zatím není možné** (obvykle proto, že nízkoemisní technologie výroby neexistuje nebo je teprve ve vývoji).
 
 K celkové obtížnosti transformace průmyslu přispívají i **ekonomické aspekty a nutnost vybudovat či upravit rozsáhlou infrastrukturu**, bez které se zavádění nových paliv a technologií neobejde.
 
