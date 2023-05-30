@@ -9,7 +9,7 @@ tags-scopes:   [ ]
 tags-topics:   [ ]
 caption:       "Přehled extrémních událostí a jejich spojitost se změnou klimatu"
 intro: |
-  Atribuce extrémních událostí se na základě simulací a modelování klimatu snaží určit zda klimatická změna vedla k vyšší či nizší pravděpodobnosti daného extrému a jak ovlnila intenzitu daného meteorologického jevu. Tato metoda popisuje jednotlivé události a jejich vztah ke změně klimatu a napomáhá v rychlé orientaci u daného extrému. Více podrobný popis metody od organizace World Weather Attribution lze najít na [našem webu](https://faktaoklimatu.cz/explainery/vliv-klimatu-na-extremy-prirucka?q=extr0my)
+  K některým extrémním projevům počasí klimatická změna přispívá, k jiným nikoli. Vědci tuto vzájemnou souvislost dlouhodobě zkoumají a v tzv. atribučních studiích popisují, jak klimatická změna ovlivnila pravděpodobnost výskytu konkrétní extrémní události, případně jak ovlivnila její intenzitu. Více o této metodě používané organizací World Weather Attribution lze najít na [našem webu](https://faktaoklimatu.cz/explainery/vliv-klimatu-na-extremy-prirucka?q=extr0my).
 
 items:
   events:
