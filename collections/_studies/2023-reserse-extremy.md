@@ -17,49 +17,49 @@ items:
       type: vlna veder
       icon: "/assets-local/figures/2023-reserse-extremy/heatwaves.svg"
       note: Na konci dubna roku 2023 byly v Portugalsku, Španělsku, Maroku a Alžírsku zaznamenány rekodní teploty okolo 40 °C (téměř o 20 °C více, než je běžný průměr).
-      description: Změna klimatu byla výrazným faktorem při této vlně veder. V situaci, kdy by průměrná teplota planety byla na hodnotách před průmyslovou revolucí, byla by tato vlna veder nejspíše o 2°C chladnější. Zároveň pravděpodobnost takové události se zvýšila stokrát a to se jedná o konzervativní výpočet.
+      description: U této vlny veder byla změna klimatu významným faktorem. Kdyby byla průměrná teplota planety stejná jako před průmyslovou revolucí, byla by tato vlna veder nejspíše o 2 °C chladnější. Zároveň se pravděpodobnost takovéto události zvýšila 100× (konzervativní odhad).
       url: "https://www.worldweatherattribution.org/extreme-april-heat-in-spain-portugal-morocco-algeria-almost-impossible-without-climate-change/"
     
     - name: Vlna veder ve Velké Británii (2022)
       type: vlna veder
       icon: "/assets-local/figures/2023-reserse-extremy/heatwaves.svg"
       note: Během vlny veder v červnu 2022 vystoupala ve Velké Británii teplota až na 40,3 °C, přičemž lokální teplotní rekordy padaly na mnoha místech po celé zemi.
-      description: Změna klimatu minimálně zdesetinásobila pravděpodobnost výskytu této konkrétní vlny veder. V situaci kdy by průměrná teplota planety byla na úrovni před průmyslovou revolucí (o 1,2 °C chladnější), bylo by během této vlny veder nejspíše o 2 °C chladněji. Tyto výsledky jsou ovšem nejspíše příliš konzervativní a vliv změny klimatu mohl být ještě větší.
+      description: Tato vlna veder byla v důsledku změny klimatu minimálně 10× pravděpodobnější, a kdyby byla průměrná teplota planety stejná jako před průmyslovou revolucí (o 1,2 °C chladnější), bylo by během této vlny veder nejspíše o 2 °C chladněji. Tento odhad je nicméně konzervativní, tedy vliv změny klimatu mohl být ještě větší.
       url: "https://www.worldweatherattribution.org/without-human-caused-climate-change-temperatures-of-40c-in-the-uk-would-have-been-extremely-unlikely/"
     
     - name: Vlna veder v západní části Kanady a USA (2021)
       type: vlna veder
       icon: "/assets-local/figures/2023-reserse-extremy/heatwaves.svg"
       note: Ke konci června 2021 bylo na mnoha místech Kanady a USA naměřeno více než 40 °C a byl stanoven nový kanadský rekord: 49,6 °C.
-      description: Přestože extrémnost této události znamená, že i v situaci změny klimatu jde o málo pravděpodobnou událost, výzkumy poukazují na to, že v situaci kdy by teploty byly na úrovni před průmyslovou revolucí by takto intenzivní vedra byla takřka nemožná a byla by o 2 °C chladnější.
+      description: I v době klimatických změn je takováto událost málo pravděpodobná. Kdyby však teploty byly stejné jako před průmyslovou revolucí, byla by takto intenzivní vedra téměř nemožná a teploty by byly o 2 °C nižší.
       url: "https://www.worldweatherattribution.org/western-north-american-extreme-heat-virtually-impossible-without-human-caused-climate-change/"
    
     - name: Sucho v Evropě, Severní Americe a Číně (2022)
       type: sucho
       icon: "/assets-local/figures/2023-reserse-extremy/droughts.svg"
       note: Západní a střední Evropa, Severní Amerika, Čína a další části severní polokoule čelily během léta 2022 suchu a extrémním vedrům. Tyto podmínky vedly k nedostatku vody, požárům a významným ztrátám na úrodě.
-      description: V západní a střední Evropě změna klimatu zvýšila pravděpodobnost sucha v kořenové zóně půdy v roce 2022 asi 3-4 krát a pravděpodobnost sucha v povrchové vrstvě půdy asi 5-6 krát. Tato událost by byla mnohem méně pravděpodobná ve chladnějším klimatu.
+      description: V uvedené části Evropy zvýšila změna klimatu pravděpodobnost sucha v kořenové zóně půdy v roce 2022 asi 3–4×, v povrchové vrstvě půdy dokonce 5–6×. V chladnějším klimatu by takováto událost byla mnohem méně pravděpodobná.
       url: "https://www.worldweatherattribution.org/high-temperatures-exacerbated-by-climate-change-made-2022-northern-hemisphere-droughts-more-likely/"
 
     - name: Sucho ve východní Africe (od roku 2020)
       type: sucho
       icon: "/assets-local/figures/2023-reserse-extremy/droughts.svg"
       note: Od konce roku 2020 zažívá Keňa, Etiopie a Somálsko dlouhodobé sucho v kombinaci s intenzivními přívalovými dešti, které způsobují povodně. Kombinace těchto jevů znamená ohrožení potravinové bezpečnosti pro 4 miliony lidí.
-      description: Bez změny klimatu by v tomto případě nejspíše k tak výraznému suchu nedošlo. Změna klimatu vede k vyšším teplotám a k vyšší evapotranspiraci neboli vypařování vody. Konzervativní odhad poukazuje až na stonásobné zvýšení pravděpodobnosti výskytu sucha v důsledku měnícího se klima.
+      description: Změna klimatu vede k vyšším teplotám a ty zase k vyššímu vypařování vody. Bez změny klimatu by v tomto případě nejspíše k tak velkému suchu nedošlo (dle konzervativního odhadu je pravděpodobnost výskytu až 100× vyšší).
       url: "https://www.worldweatherattribution.org/human-induced-climate-change-increased-drought-severity-in-southern-horn-of-africa/"
     
     - name: Sucho na Madagaskaru (2019–2021)
       type: sucho
       icon: "/assets-local/figures/2023-reserse-extremy/droughts.svg"
       note: V období dešťů v letech 2019–2021 spadlo na jihu Madagaskaru téměř o polovinu méně srážek, než je běžné. V důsledku toho desítky tisíc lidí zažívaly podmínky blízké hladomoru.
-      description: Změna klimatu nebyla faktorem, který by výrazně zvýšil intenzitu či pravděpodobnost tohoto extrému počasí. Aby změna klimatu v tomto případě byla výrazným faktorem, musela by globální teplota stoupnout o 2 °C v porovnání s dobou před průmyslovou revolucí.
+      description: Ke zvýšení intenzity či pravděpodobnosti tohoto extrému počasí klimatická změna výrazně nepřispěla. Významným faktorem by se stala teprve v případě, že by globální teplota stoupla o 2 °C v porovnání s dobou před průmyslovou revolucí.
       url: "https://www.worldweatherattribution.org/factors-other-than-climate-change-are-the-main-drivers-of-recent-food-insecurity-in-southern-madagascar/"
     
     - name: Přívalové deště a povodně v Německu (2022)
       type: povodně
       icon: "/assets-local/figures/2023-reserse-extremy/floods.svg"
       note: Silné přívalové deště v červenci roku 2021 způsobily povodně v Německu (ale také v Belgii, Lucembursku a Nizozemsku), měly více než 200 obětí a způsobily rozsáhlé škody.
-      description: V důsledku změny klimatu se zvýšila intenzita maximálních jednodenních srážek přibližně o 3 - 19 % ve srovnání s globálním klimatem, které by bylo o 1,2 °C chladnější než dnešní. Podobný nárůst je i u dvoudenních srážek. Výskyt tohoto druhu události se v porovnáním s předindustriálním klimatem zvýšil v rozmezí 1,2 až 9 krát větší pravděpodobnosti. Míra nejistoty je vyšší mimo jiné kvůli rozsahu území.
+      description: V důsledku změny klimatu se zvýšila intenzita maximálních jednodenních srážek o cca 3–19 % (ve srovnání s globálním klimatem, které by bylo o 1,2 °C chladnější než dnešní). Podobný nárůst je i u dvoudenních srážek. Pravděpodobnost výskytu tohoto druhu události se v porovnáním s předindustriálním klimatem zvýšila až 9×. Míra nejistoty je vyšší mimo jiné proto, že se událost týká rozsáhlejšího území.
       url: "https://www.worldweatherattribution.org/heavy-rainfall-which-led-to-severe-flooding-in-western-europe-made-more-likely-by-climate-change/"
 
     - name: Přívalové deště a povodně v Pákistánu (2022)
@@ -73,14 +73,14 @@ items:
       type: extrémní zima
       icon: "/assets-local/figures/2023-reserse-extremy/snowfalls.svg"
       note: Na začátku dubna 2021 zaznamenala Francie velmi chladné teploty, které následovaly po nadprůměrně teplém březnu. Tyto mrazy významně poškodily zejména vinnou révu a ovocné stromy.
-      description: Jelikož předešlé vysoké teploty v březnu vedly k brzkému začátku růstové sezony mnoha plodin, následné mrazy je významně poškodily. Přestože bez změny klimatu by teploty byly v tomto případě ještě nižší, nezpůsobilo by to takové škody na plodinách, jelikož růstová sezona by též začínala později. Změna klimatu zvýšila pravděpodobnost této události o 20 % až 120 %
+      description: Přestože bez změny klimatu by dubnové teploty byly v tomto případě ještě nižší, zřejmě by to nezpůsobilo tak velké škody na plodinách – vegetační období by totiž začínalo později. Změna klimatu zvýšila pravděpodobnost výskytu této události o 20–120 %.
       url: "https://www.worldweatherattribution.org/human-caused-climate-change-increased-the-likelihood-of-early-growing-period-frost-in-france/"
 
     - name: Extrémní zima v jihovýchodní Evropě (2017)
       type: extrémní zima
       icon: "/assets-local/figures/2023-reserse-extremy/snowfalls.svg"
       note: Některé balkánské státy zaznamenaly v lednu 2017 teploty až o 12 °C nižší, než je v daném období běžné.
-      description: Takto nízké teploty se v regionu vyskytují v průměru jednou za 35 let. Od 50. Let 20. století se ovšem teplota při těchto událostech zvyšuje a bez klimatické změny by bylo v této situaci chladněji.
+      description: Takto nízké teploty se v tomto regionu vyskytují v průměru jednou za 35 let. Od poloviny 20. století se ovšem extrémnost těchto teplot snižuje (není taková zima), bez klimatické změny by bylo při podobných událostech chladněji.
       url: "https://www.worldweatherattribution.org/se-europe-cold-january-2017/"
 
     - name: Tropická bouře v Texasu (2019)
@@ -93,8 +93,8 @@ items:
     - name: Bouřky v západní a střední Evropě (2018)
       type: tropická bouřka
       icon: "/assets-local/figures/2023-reserse-extremy/tropical-cyclones.svg"
-      note: V lednu 2018 zasáhlo západní a střední Evropu několik bouřek, které vedly k úmrtím i ke značným škodám na majetku. Nejvýznamnější z nich byly bouře Eleanor a Frederike.
-      description: Změna klimatu nejspíše nebyla faktorem v tomto případu extrémního počasí. Do budoucna může intenzivnější změna klimatu vést k 0-20 % větší pravděpodobnosti extrémních větrů.
+      note: V lednu 2018 zasáhlo západní a střední Evropu několik bouřek, které vedly k úmrtím i značným škodám na majetku. Nejvýznamnější z nich byly bouře Eleanor a Frederike.
+      description: V tomto případě změna klimatu nejspíše nehrála roli. Její pokračování však může do budoucna vést k až o 20 % vyšší pravděpodobnosti extrémně silných větrů.
       url: "https://www.worldweatherattribution.org/the-stormy-month-of-january-2018-over-western-europe/"
 
 ---
