@@ -19,21 +19,21 @@ items:
       note: Na konci dubna roku 2023 byly v Portugalsku, Španělsku, Maroku a Alžírsku zaznamenány rekodní teploty okolo 40 °C (téměř o 20 °C více, než je běžný průměr).
       description: U této vlny veder byla změna klimatu významným faktorem. Kdyby byla průměrná teplota planety stejná jako před průmyslovou revolucí, byla by tato vlna veder nejspíše o 2 °C chladnější. Zároveň se pravděpodobnost takovéto události zvýšila 100× (konzervativní odhad).
       url: "https://www.worldweatherattribution.org/extreme-april-heat-in-spain-portugal-morocco-algeria-almost-impossible-without-climate-change/"
-    
+
     - name: Vlna veder ve Velké Británii (2022)
       type: vlna veder
       icon: "/assets-local/figures/2023-reserse-extremy/heatwaves.svg"
       note: Během vlny veder v červnu 2022 vystoupala ve Velké Británii teplota až na 40,3 °C, přičemž lokální teplotní rekordy padaly na mnoha místech po celé zemi.
       description: Tato vlna veder byla v důsledku změny klimatu minimálně 10× pravděpodobnější, a kdyby byla průměrná teplota planety stejná jako před průmyslovou revolucí (o 1,2 °C chladnější), bylo by během této vlny veder nejspíše o 2 °C chladněji. Tento odhad je nicméně konzervativní, tedy vliv změny klimatu mohl být ještě větší.
       url: "https://www.worldweatherattribution.org/without-human-caused-climate-change-temperatures-of-40c-in-the-uk-would-have-been-extremely-unlikely/"
-    
+
     - name: Vlna veder v západní části Kanady a USA (2021)
       type: vlna veder
       icon: "/assets-local/figures/2023-reserse-extremy/heatwaves.svg"
-      note: Ke konci června 2021 bylo na mnoha místech Kanady a USA naměřeno více než 40 °C a byl stanoven nový kanadský rekord: 49,6 °C.
+      note: "Ke konci června 2021 bylo na mnoha místech Kanady a USA naměřeno více než 40 °C a byl stanoven nový kanadský rekord: 49,6 °C."
       description: I v době klimatických změn je takováto událost málo pravděpodobná. Kdyby však teploty byly stejné jako před průmyslovou revolucí, byla by takto intenzivní vedra téměř nemožná a teploty by byly o 2 °C nižší.
       url: "https://www.worldweatherattribution.org/western-north-american-extreme-heat-virtually-impossible-without-human-caused-climate-change/"
-   
+
     - name: Sucho v Evropě, Severní Americe a Číně (2022)
       type: sucho
       icon: "/assets-local/figures/2023-reserse-extremy/droughts.svg"
@@ -47,14 +47,14 @@ items:
       note: Od konce roku 2020 zažívá Keňa, Etiopie a Somálsko dlouhodobé sucho v kombinaci s intenzivními přívalovými dešti, které způsobují povodně. Kombinace těchto jevů znamená ohrožení potravinové bezpečnosti pro 4 miliony lidí.
       description: Změna klimatu vede k vyšším teplotám a ty zase k vyššímu vypařování vody. Bez změny klimatu by v tomto případě nejspíše k tak velkému suchu nedošlo (dle konzervativního odhadu je pravděpodobnost výskytu až 100× vyšší).
       url: "https://www.worldweatherattribution.org/human-induced-climate-change-increased-drought-severity-in-southern-horn-of-africa/"
-    
+
     - name: Sucho na Madagaskaru (2019–2021)
       type: sucho
       icon: "/assets-local/figures/2023-reserse-extremy/droughts.svg"
       note: V období dešťů v letech 2019–2021 spadlo na jihu Madagaskaru téměř o polovinu méně srážek, než je běžné. V důsledku toho desítky tisíc lidí zažívaly podmínky blízké hladomoru.
       description: Ke zvýšení intenzity či pravděpodobnosti tohoto extrému počasí klimatická změna výrazně nepřispěla. Významným faktorem by se stala teprve v případě, že by globální teplota stoupla o 2 °C v porovnání s dobou před průmyslovou revolucí.
       url: "https://www.worldweatherattribution.org/factors-other-than-climate-change-are-the-main-drivers-of-recent-food-insecurity-in-southern-madagascar/"
-    
+
     - name: Přívalové deště a povodně v Německu (2022)
       type: povodně
       icon: "/assets-local/figures/2023-reserse-extremy/floods.svg"
@@ -89,7 +89,7 @@ items:
       note: V září 2019 způsobila tropická bouře Imelda rozsáhlé záplavy v Texasu, majetkové škody se pohybovaly v řádu miliard dolarů. Někde spadlo i více než 500 mm srážek za den.
       description: Dvoudenní extrémní srážky v důsledku tropické bouřky Imelda v této oblasti se staly dle klimatických modelů 1,6 až 2,6krát pravděpodobnější a o 9 až 17 % intenzivnější oproti situaci kdy by průměrná teplota byla na úrovni před průmyslovou revolucí.
       url: "https://www.worldweatherattribution.org/rapid-attribution-of-the-extreme-rainfall-in-texas-from-tropical-storm-imelda/"
-    
+
     - name: Bouřky v západní a střední Evropě (2018)
       type: tropická bouřka
       icon: "/assets-local/figures/2023-reserse-extremy/tropical-cyclones.svg"
