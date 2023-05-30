@@ -201,7 +201,7 @@ items:
         url:    "https://climateactiontracker.org/countries/australia"
         date:   2022-08-02
   - country:  "Velká Británie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+    flag:     "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_(3-5).svg"
     share:    "1,0 %"
     netzero:  "2050"
     pledge30: "−68 % ročních emisí oproti r. 1990 (vrchol produkce)"
