@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaké jsou technologie dekarbonizace průmyslu?"
 slug:        "technologie-dekarbonizace-prumyslu"
-published:   2023-5-10
+published:   2023-5-31
 authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
