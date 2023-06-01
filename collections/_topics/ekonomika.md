@@ -66,6 +66,7 @@ subtopics:
   - emisni-intenzity
   - pozice-akteru-cop
   - akteri-klimatickych-jednani
+  - emise-prumysl
 
 - id:          "ekonomicke-dopady"
   title:       "Ekonomické dopady"
