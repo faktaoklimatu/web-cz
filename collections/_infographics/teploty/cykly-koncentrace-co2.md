@@ -11,9 +11,8 @@ caption:    "Graf ukazuje takzvanou Keelingovu křivku, tedy nejdelší souvisl�
 dataset:    "koncentrace-co2"
 ---
 
-<p class="perex">
+{:.perex}
 Dlouhodobý nárůst koncentrace oxidu uhličitého a pokles koncentrace kyslíku ukazují, že složení atmosféry se mění v důsledku lidské činnosti – především spalováním fosilních paliv.
-</p>
 
 ## Co vidíme v grafu?
 
@@ -55,7 +54,7 @@ Kromě tohoto kolísání mezi létem a zimou viděl Keeling také dlouhodobý n
 {:.equation}
 C + O<sub>2</sub> ⟶ CO<sub>2</sub>.
 
-Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára: 
+Spalování zemního plynu spotřebovává ještě více kyslíku, protože při něm vzniká vodní pára:
 
 {:.equation}
 CH<sub>4</sub> + 2 O<sub>2</sub> ⟶ CO<sub>2</sub> + 2 H<sub>2</sub>O."
@@ -81,6 +80,6 @@ Důkazů, že nárůst koncentrací CO<sub>2</sub> je způsoben spalováním fos
 
 * Metoda pro velmi přesné měření koncentrací O<sub>2</sub> je podrobně popsána v [disertační práci](http://bluemoon.ucsd.edu/publications/ralph/34_PhDthesis.pdf) Ralpha Keelinga (PDF). Tato metoda spočívá v interferometrickém měření indexu lomu vzduchu, který je závislý na poměru koncentrací kyslíku a dusíku. Podrobnější diskuse metodiky měření O<sub>2</sub> (včetně převodu jednotek *per meg* na *ppm*) je na stránkách [Scrippsova O<sub>2</sub> programu](https://scrippso2.ucsd.edu/faq.html).
 
-* Koncentrace CO<sub>2</sub> jsou částečně ovlivněny pohlcováním části CO<sub>2</sub> v oceánu, což má za následek [zvyšování kyselosti](https://en.wikipedia.org/wiki/Ocean_acidification) mořské vody. Podrobnosti lze najít například v článku [Ocean-Atmosphere CO<sub>2</sub> exchange](https://sos.noaa.gov/datasets/ocean-atmosphere-co2-exchange/) od NOAA. 
+* Koncentrace CO<sub>2</sub> jsou částečně ovlivněny pohlcováním části CO<sub>2</sub> v oceánu, což má za následek [zvyšování kyselosti](https://en.wikipedia.org/wiki/Ocean_acidification) mořské vody. Podrobnosti lze najít například v článku [Ocean-Atmosphere CO<sub>2</sub> exchange](https://sos.noaa.gov/datasets/ocean-atmosphere-co2-exchange/) od NOAA.
 
 * Velikost kolísání je v různých místech různá. Obecně na severní polokouli je větší a na jižní polokouli menší – záleží na vzdálenosti od velkých lesů, které svým dýcháním tyto koncentrace ovlivňují. Závislost amplitudy kolísání koncentrací CO<sub>2</sub> zobrazuje [animovaná vizualizace](https://www.esrl.noaa.gov/gmd/ccgg/trends/history.html) NOAA.

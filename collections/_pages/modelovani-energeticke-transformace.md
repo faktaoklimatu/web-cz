@@ -12,7 +12,7 @@ search_image: "/assets-local/figures/modelovani-energeticke-transformace/ilustra
 
 <div class="section"><div class="container">
     <h1>{{ page.title }}</h1>
-    <div class="lead narrow-text">{{ page.intro | markdownify }}</div>
+    <div class="perex narrow-text">{{ page.intro | markdownify }}</div>
 
 {% include figure.html
 name="ilustrace-des.png"
