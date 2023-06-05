@@ -3,6 +3,8 @@ layout: single-section-page
 title: Obchodní podmínky
 slug: obchodni-podminky
 ---
+<div class="row"><div class="col-12 col-lg-10" markdown="1">
+
 {:.lead}
 Pro nákup na našem eshopu. Platné od 1. dubna 2023.
 
@@ -147,3 +149,5 @@ Email: obchod@faktaoklimatu.cz
 Prodávající neposkytuje jiný prostředek on-line komunikace.
 
 Tyto obchodní podmínky jsou účinné od 1. 4. 2023.
+
+</div></div>

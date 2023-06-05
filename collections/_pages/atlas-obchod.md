@@ -18,7 +18,7 @@ slug: atlas-obchod
   </div>
 <div class="section pt-0">
     <div class="container">
-        <div class="row" markdown="on">
+        <div class="row">
             <div class="col-12 col-lg-3 order-lg-2 mt-5">
                 <h2 class="d-lg-none">Obecné informace o nákupu</h2>
                 <h3>Cena atlasu</h3>
