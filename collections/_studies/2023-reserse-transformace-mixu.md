@@ -19,11 +19,11 @@ extra-scripts: [ /assets-local/js/reserse-transformace-mixu.js ]
 {% include figure.html
 name="mix-legenda-des.png"
 name-mobile="mix-legenda-mob.png"
-class="narrow-text mb-2 mx-auto"
+class="narrow-text mb-2"
 alt="Legenda k rešerši s následujícím obsahem: Rešerše obsahuje příběhy transformace mixů výroby elektřiny jednotlivých států ve třech různých perspektivách – v grafickém znázornění proměny zastoupení fosilních, obnovitelných a jaderných zdrojů v letech 2000 až 2021, z pohledu základních energetických ukazatelů (podíl jednotlivých zdrojů, celková roční výroba, import/export a emisní intenzita) vycházejících z databáze Ember a formou krátkého textu, který nastiňuje klíčové události z hlediska tamního vývoje elektroenergetiky. Státy je přitom možné řadit podle hodnoty jednotlivých ukazatelů, a to vzestupně i sestupně."
 %}
 
-{:.narrow-text.mb-5.mx-auto}
+{:.narrow-text.mb-5}
 **Jak číst grafické znázornění?** Čím blíže je bod vrcholu trojúhelníku (<span style="color:#af69a6">⬤</span> fialová část), tím více jsou v daném roce v mixu výroby elektřiny zastoupena fosilní paliva (uhlí a zemní plyn). Čím blíže je bod levému rohu trojúhelníku (<span style="color:#5988bf">⬤</span> modrá část), tím větší podíl má v mixu jaderná energie. Čím blíže je bod pravému rohu trojúhelníku (<span style="color:#fcc679">⬤</span> žlutá část), tím více jsou v mixu zastoupeny obnovitelné zdroje energie (vítr, slunce, voda a biomasa).
 
 <div class="d-none mb-3 align-items-center">
