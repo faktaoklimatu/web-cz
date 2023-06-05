@@ -8,7 +8,7 @@ search_type: "Jak používat"
 <div class="container" markdown="1">
 # {{ page.title }}
 
-{:.lead}
+{:.perex}
 Věříme, že volné šíření informací a kultivace veřejné debaty pomáhají politikům, institucím, firmám i jednotlivcům dělat správná rozhodnutí. Proto poskytujeme všechny naše materiály ke stažení, dalšímu zpracování a šíření.
 </div>
 </div>

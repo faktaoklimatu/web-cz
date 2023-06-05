@@ -3,7 +3,7 @@ layout: single-section-page
 title: Zásady zpracování osobních údajů
 slug: gdpr
 ---
-{:.lead}
+{:.perex}
 Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů. Platné od 6. října 2020.
 
 ## Správce osobních údajů
