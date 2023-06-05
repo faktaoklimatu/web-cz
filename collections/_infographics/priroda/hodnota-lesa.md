@@ -13,7 +13,6 @@ caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho maj
 ## Co vidíme v grafice?
 
 {% include preview-box.html
-    class="smaller-preview-box"
     title="Další souvislostí v delším textu:"
     slug="ekonomicka-hodnota-prirody"
 %}
@@ -24,7 +23,6 @@ caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho maj
 ## Čím jsou lesy ohroženy v ČR?
 
 {% include preview-box.html
-    class="smaller-preview-box"
     title="Podrobněji o ohrožení českých lesů a o dopadech na jejich vlastníky"
     slug="umirani-ceskych-lesu,16-obnova-lesu-po-kurovci"
 %}

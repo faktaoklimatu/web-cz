@@ -60,7 +60,6 @@ Nejdůležitější změnou, kterou dnes nutně potřebujeme, je **změnit způs
 Samotná změna myšlení ale pochopitelně nestačí – potřebujeme také najít způsoby, jak ji postupně převést do praxe. K dispozici jsou hlavně tyto **dva typy nástrojů**:
 
 {% include preview-box.html
-    class="smaller-preview-box"
     title="Hodnota lesa ≠ cena dříví"
     slug="hodnota-lesa"
 %}
@@ -110,7 +109,6 @@ Určitou slabinou podobně koncipovaných programů je omezenost prostředků, k
 Jiným možným nástrojem, s nímž se do budoucna počítá a který propojuje regulace a trh, jsou tzv. **uhlíkové certifikáty**. S těmi budou vlastníci lesů (ale například i zemědělci) moci obchodovat, v principu podobně jako se dnes obchoduje na trzích s [emisními povolenkami](/explainery/emisni-povolenky-ets) – rozdíl je v tom, že v případě uhlíkových certifikátů nepůjde o princip "znečišťovatel platí", ale o **zvýhodňování šetrného hospodaření**. Ve zdravé, kvalitní půdě na poli či v lese je totiž uloženo více uhlíku než v půdě degradované, a citlivé nakládání s půdou tak kromě jiného přispívá i ke zmírňování klimatické změny. Dobrému hospodáři, který bude splňovat podmínky pro získání uhlíkového certifikátu, může tento nástroj přinést další potřebné finanční prostředky. Regulační rámec pro uhlíkové certifikáty je nicméně teprve ve fázi přípravy a jeho nastavení nebude snadné – podobně jako u jiných typů [karbonových offsetů](https://cs.wikipedia.org/wiki/Uhl%C3%ADkov%C3%A1_kompenzace) bude nutné řešit řadu otázek jako značnou nejistotu výsledků (jsou skutečně kompenzovány nějaké emise?), dvojí započítávání[^dvoji-zapocitavani] a další.
 
 {% include preview-box.html
-    class="smaller-preview-box"
     slug="lesni-certifikace"
 %}
 
