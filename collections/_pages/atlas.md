@@ -20,8 +20,8 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
     </ul>
   </div>
 <div class="section pt-0"><div class="container">
-<div class="row" markdown="on">
-    <div class="col-md-12 col-lg-9">
+<div class="row">
+    <div class="col-md-12 col-lg-10">
         <p class="lead py-4">{{ page.intro }}</p>
         <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
         <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
@@ -40,7 +40,8 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
 </div>
 </div></div>
 
-<div class="section"><div class="container" markdown="1">
+<div class="section"><div class="container">
+<div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 ## K čemu publikace slouží
 
@@ -90,6 +91,7 @@ V budoucnosti bychom rádi připravili také další díly atlasu pokrývající
 " %}
 
 </div></div>
+</div></div>
 <div class="section"><div class="container" markdown="1">
 
 ## Jak si atlas pořídit
@@ -113,7 +115,8 @@ Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creati
 <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
 
 </div></div></div></div>
-<div class="section"><div class="container" markdown="1">
+<div class="section"><div class="container">
+<div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 ## Metodické materiály
 
@@ -149,4 +152,5 @@ Několik příkladů možného využití atlasu:
 
 " %}
 
+</div></div>
 </div></div>
