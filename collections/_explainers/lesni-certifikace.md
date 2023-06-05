@@ -19,7 +19,6 @@ perex:       "Les, kde člověk přírodě do ničeho nezasahuje, má obdivuhodn
 ## Co je certifikace a k čemu slouží?
 
 {% include preview-box.html
-    class="smaller-preview-box"
     title="Více o hodnotě lesa a přírodním kapitálu"
     text="Na dobrém zdraví lesa (a celé krajiny) je naše civilizace závislá v mnoha směrech, ačkoli si tuto závislost často plně neuvědomujeme. **Certifikační systémy** mohou být užitečným nástrojem, jak toto zdraví podpořit."
     slug="hodnota-lesa,ekonomicka-hodnota-prirody"
