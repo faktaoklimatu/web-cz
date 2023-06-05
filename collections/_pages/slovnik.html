@@ -10,6 +10,8 @@ search_type: "Slovník"
 
 <!-- FIXME dodělat markdownify filtr a upravit glossary.yml --#McZ_2019-10-02 -->
 
+<div class="row"><div class="col-12 col-lg-10">
+
 <p class="perex">{{ page.intro }}</p>
 
 <ul class="inline-bullet-list">
@@ -22,3 +24,5 @@ search_type: "Slovník"
 <h3 id="{{ item.id }}">{{ item.name-short }}{% if item.name-long %}<span class="lead"> ({{ item.name-long }})</span>{% endif %}</h3>
 {{ item.description | markdownify }}
 {% endfor %}
+
+</div></div>

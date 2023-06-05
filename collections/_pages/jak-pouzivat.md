@@ -8,7 +8,7 @@ search_type: "Jak používat"
 <div class="container" markdown="1">
 # {{ page.title }}
 
-{:.perex}
+{:.perex.narrow-text}
 Věříme, že volné šíření informací a kultivace veřejné debaty pomáhají politikům, institucím, firmám i jednotlivcům dělat správná rozhodnutí. Proto poskytujeme všechny naše materiály ke stažení, dalšímu zpracování a šíření.
 </div>
 </div>
@@ -17,10 +17,8 @@ Věříme, že volné šíření informací a kultivace veřejné debaty pomáha
 <div class="container clearfix" markdown="1">
 ## Jak mohu použít infografiky a data z Fakta o klimatu?
 
-<figure class="d-none d-md-block float-right w-50 ml-4">
-<a href="/infografiky/emise-cr-detail"><img src="/assets/generated/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
-<figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
-</figure>
+
+<div class="row"><div class="col-12 col-lg-7 my-4" markdown="1">
 
 Veškerá naše práce je zveřejněna pod licencí [Creative Commons Uveďte původ 4.0 Mezinárodní (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.cs). V krátkosti, tato licence vám umožňuje naše dílo
 
@@ -33,16 +31,22 @@ U každého použití naší infografiky či našich dat odkazujte na stránku k
 
 Citaci si také můžete nechat vygenerovat přímo na stránce každé infografiky nebo datasetu kliknutím na tlačítko sdílení (se symbolem <tt>&lt;/&gt;</tt>) v sekci "Sdílení a licence".
 
-<figure class="d-md-none w-100 mt-2">
+</div><div class="col-12 col-lg-5 my-4" markdown="1">
+
+<figure class="pl-4">
 <a href="/infografiky/emise-cr-detail"><img src="/assets/generated/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
 <figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
+
+</div></div>
 
 </div>
 </div>
 
 <div class="section">
-<div class="container" markdown="1">
+<div class="container">
+<div class="row"><div class="col-12 col-lg-10" markdown="1">
+
 {:#file-formats}
 ## V jakém formátu stáhnout naše infografiky
 
@@ -59,6 +63,8 @@ U každé naší infografiky jsou také k dispozici podkladová data.
 * Tlačítko "Náš dataset" u infografik odkazuje na naši stránku se zpracovanými daty, jejich popisem a dalšími odkazy na zdrojová data.
 * Tlačítko "Naše tabulka s daty" u infografik a datasetů odkazuje na námi vytvořenou tabulku. Námi vytvořená a zpracovaná data jsou zveřejněna pod licencí [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs), tedy je možné si je stáhnout, upravit a zveřejnit při uvedení původu a odkazu na licenci. Vstupní data však často mají svoji vlastní licenci, která je u každého zdroje v tabulce uvedena.
 * Tlačítko "Zdrojová data" u infografik a datasetů odkazuje na původní data sesbíraná, vytvořená nebo zpracovaná jinými institucemi. Tato data mají často vlastní licenci, která je u každého zdroje uvedena.
+
+</div></div>
 </div>
 </div>
 
@@ -67,6 +73,7 @@ U každé naší infografiky jsou také k dispozici podkladová data.
 {:#kontakt}
 ## Jak nás kontaktovat?
 
+{:.narrow-text}
 Chcete-li s námi konzultovat použití našich infografik či dat (například do médií), ozvěte se nám:
 
 <div class="row mb-3">
@@ -78,8 +85,10 @@ Chcete-li s námi konzultovat použití našich infografik či dat (například 
 </div>
 </div>
 
+{:.narrow-text}
 Hledáte-li stručné shrnutí projektu, podívejte se do sekce [O projektu](/#o-projektu).
 
+{:.narrow-text}
 Budeme také rádi, pokud nám o použití našich materiálů dáte vědět. Přehled o jejich používání nám pomáhá je dále zlepšovat.
 </div>
 </div>
