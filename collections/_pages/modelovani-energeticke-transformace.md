@@ -114,7 +114,7 @@ V budoucnu plánujeme do modelu přidat:
 * přesnější modelování spotřeby včetně její flexibility,
 * modelování systémových služeb.
 
-<a href="{{ site.fundraising }}" target="_blank" class="btn btn-primary"><i class="d-md-none d-lg-inline fas fa-fw fa-heart"></i> Podpořte vývoj modelů energetiky</a>
+<a href="{{ site.fundraising }}" target="_blank" class="btn btn-primary no-ext-link-icon"><i class="d-md-none d-lg-inline fas fa-fw fa-heart"></i> Podpořte vývoj modelů energetiky</a>
 
 </div>
 <div class="longread-xl-space-right"></div>
