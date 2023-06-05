@@ -19,7 +19,6 @@ search_type: "Slovník"
 </ul>
 
 {% for item in sorted_glossary %}
-<hr/>
 <h3 id="{{ item.id }}">{{ item.name-short }}{% if item.name-long %}<span class="lead"> ({{ item.name-long }})</span>{% endif %}</h3>
 {{ item.description | markdownify }}
 {% endfor %}
