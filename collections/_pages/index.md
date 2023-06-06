@@ -5,7 +5,7 @@ slug: index
 ---
 <div class="section intro">
     <div class="container clearfix">
-        <h1 class="display-1" id="home">Fakta o změně<br>klimatu</h1>
+        <h1 class="display" id="home">Fakta o změně<br>klimatu</h1>
         <span class="tagline">Veřejně dostupné <span class='nobr'>infografiky, data a články</span></span>
         <p>
         Jsme tým nezávislých analytiků a expertů, který usiluje o to, aby diskuze v naší zemi o klimatických změnách byla věcná, kultivovaná a založená na vědeckých poznatcích a ověřených datech.
@@ -68,7 +68,7 @@ Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (témě
 
 {% assign sorted_topics = site.topics | where_exp: "item", "item.weight > 0" | sort: "weight" %}
 <div class="section"><div class="container" markdown="1">
-{:#temata .display-2}
+{:#temata .display}
 ## Oblasti, kterým se věnujeme
 
 {:.lead .narrow-text}
@@ -87,7 +87,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 
 </div></div>
 <div class="section"><div class="container clearfix" markdown="1">
-{:#o-projektu .display-2}
+{:#o-projektu .display}
 ## O naší práci
 
 <div class="row about-us lead mb-5 justify-content-between">
@@ -114,7 +114,7 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 </div>
 </div>
 
-{:.display-3}
+{:.display}
 ### Ocenění
 
 <div class="row about-us lead">
@@ -141,7 +141,7 @@ První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
 </div></div>
 <div class="section"><div class="container clearfix" markdown="1">
 
-{:.display-2 .mb-3 #vyuzivaji}
+{:.display .mb-3 #vyuzivaji}
 ## Kdo využívá naše materiály
 
 {:.lead .narrow-text}
