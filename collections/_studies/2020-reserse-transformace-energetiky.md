@@ -152,7 +152,7 @@ items:
       - name: Institut pro demokracii a ekonomickou analýzu
         url:  https://idea.cerge-ei.cz/
     timeframe: 2030 až 2050
-    study:     2016-snizeni-emisi-cr
+    url:     "https://idea.cerge-ei.cz/studies/2016-12-80-procentni-snizeni-emisi-sklenikovych-plynu"
   - title:   "Aktualizovaná státní energetická koncepce"
     url:     "https://www.mpo.cz/dokument158059.html"
     date:    Srpen 2015

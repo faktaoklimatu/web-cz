@@ -101,7 +101,6 @@ subtopics:
   - zpoplatneni-emisi-svet
   - 26-klimaticka-dividenda
   - mitigacni-opatreni-mmf
-  - 2019-mitigacni-opatreni-mmf
   - fit-for-55
   - fit-for-55-opatreni
 

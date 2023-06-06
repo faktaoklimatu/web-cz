@@ -154,8 +154,6 @@ subtopics:
   - emisni-scenare-pariz
   - souvislost-emise-otepleni
   - 23-dopady-zmen-klimatu
-  - 2019-science-vyjadreni-vedcu
-  - 2019-klimaticke-podminky-cr-1
 
 - id:          "extremy"
   title:       "Extrémní jevy"

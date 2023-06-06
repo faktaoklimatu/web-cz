@@ -164,20 +164,10 @@ subtopics:
   - 2019-scenar-necp
   - 2020-reserse-transformace-energetiky
 
-- id:          "scenare-2050"
-  title:       "Scénáře vývoje: Energetika v roce 2050"
-  title-short: "Scénáře 2050"
-  lead: |
-    Okolo roku 2050 budeme potřebovat **elektřinu vyrábět klimaticky neutrálně**. Celosvětové scénáře dekarbonizace stojí na výrazné elektrifikaci dalších oblastí našeho fungování, budeme tedy muset umět vyrobit **řádově dvojnásobek elektřiny oproti dnešku**.
-  content:
-  - 2020-transformace-energetiky-do-2050
-  - 2016-snizeni-emisi-cr
-  - 2-transformace-energetiky
-
 - id:          "serie-elektrina-2050-cr"
   series:      True
   title:       "Bezemisní energetika v Česku v roce 2050"
-  title-short: "Bezemisní energetika v Česku"
+  title-short: "Bezemisní energetika v Česku 2050"
   series-short-lead: |
     Tento text je součástí série textů o základních kamenech bezemisní energetiky.
   lead: |
