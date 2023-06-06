@@ -53,8 +53,8 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 
 ## Zdroj dat
 
-* Infografika je založená na datech od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
+* Infografika je založená na [datech](https://ember-climate.org/insights/research/global-electricity-review-2020/#supporting-material) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
 * Pro státy EU Ember vychází především z dat Eurostatu. Data za roky 2018 a 2019 (pro které zatím nejsou oficiální statistiky Eurostatu zpracované) vychází z vlastní analytické práce této organizace, založené na datech Evropské sítě provozovatelů přenosových soustav elektřiny (ENTSO-E) a na dalších zdrojích. Tyto údaje jsou tedy jejich nejlepší možné odhady skutečného stavu, jak ho později zachytí Eurostat. Z minulých let se ukazuje, že tyto odhady zachycují realitu velmi přesně, s odchylkami v řádu desetin procenta celkové produkce elektřiny.
-* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020-globalni-zprava-o-elektrine). Tato infografika vychází z datasetu, který byl přílohou této zprávy.
+* Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2023/) a [na celém světě](https://ember-climate.org/insights/research/global-electricity-review-2023/).
 * Přehled o termínech phase-outu je založen na rešerši organizace Europe Beyond Coal nazvané [Coal Exit Tracker](https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4). Některé údaje jsme zpřesnili na základě naší vlastní rešerše.
 * Data o populaci jsou převzata od Organizace spojených národů.

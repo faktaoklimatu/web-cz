@@ -35,6 +35,6 @@ data-orig:  [["Zdrojová data Ember", "https://ember-climate.org/project/data-gl
 
 ## Zdroj dat
 
-* Infografika je založená na datech od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
+* Infografika je založená na [datech](https://ember-climate.org/insights/research/global-electricity-review-2020/#supporting-material) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
 * Ember vychází především z dat Eurostatu pro Evropskou unii, z národních databází pro USA, Čínu, Indii a další větší státy a z mezinárodní datové sekce amerického ministerstva energetiky pro ostatní státy světa.
-* Jednou z hlavních činností think-tanku Ember je publikování zpráv o výrobě elektřiny v Evropské unii, v roce 2020 publikoval také zprávu o globální výrobě elektřiny, jejíž shrnutí naleznete [ve studiích](/studie/2020-globalni-zprava-o-elektrine). Tato infografika vychází především z datasetu, který byl přílohou této zprávy.
+* Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2023/) a [na celém světě](https://ember-climate.org/insights/research/global-electricity-review-2023/).
