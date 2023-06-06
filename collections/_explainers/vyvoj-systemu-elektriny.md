@@ -122,6 +122,7 @@ Trilema se zpravidla používá k popisu celkové energetické situace na daném
 
 Současné úvahy nad trhy s elektřinou ovlivňuje zejména souběh aktuální energetické a klimatické krize. **Energetická krize**, způsobená nečekaně rychlou obnovou po pandemii Covidu-19 a zejména pak ruskou invazí na Ukrajinu v únoru 2022, přinesla jak vysoké ceny energií, tak narušení stability a bezpečnosti dodávek. Postupující **klimatická krize** zase vyžaduje úsilí o dekarbonizaci elektřiny, tedy výrazné navýšení výroby z nízkoemisních zdrojů (hlavně ze slunce a větru). V důsledku obou těchto faktorů dnes EU stojí před naléhavou **otázkou, jak současné nastavení trhu s elektřinou reformovat**, aby byla dekarbonizace rychlejší a současně trh v budoucnu lépe odolával podobným cenovým šokům.
 
+
 Jako reakci na tento vývoj představila Evropská komise 14. března 2023 [návrh reformy](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1591) vnitřního trhu s elektřinou.[^reforma] Tato reforma nepřináší žádné revoluční změny současného fungování trhu[^dalsi-revize], podstatným způsobem ale reaguje na obě výše zmíněné výzvy. Zároveň je třeba zmínit, že v rámci Evropy se objevovaly i hlasy volající po výraznější reformě, např. [řecký](https://data.consilium.europa.eu/doc/document/ST-11398-2022-INIT/en/pdf) nebo [španělský](https://table.media/europe/wp-content/uploads/sites/9/2023/01/230110_Strommarktreform_Non-Paper_ES.pdf) návrh.
 
 Níže představujeme tři témata, která se v současné diskuzi o vývoji trhu s elektřinou objevují:
