@@ -121,6 +121,7 @@ subtopics:
   - emise-dychani
   - emise-sr
   - 2020-globalni-zprava-o-elektrine
+  - emise-prumysl
   qa:
   - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |
