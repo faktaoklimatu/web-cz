@@ -30,43 +30,42 @@ To, jestli se o výrobu a distribuci elektřiny stará hlavně stát, nebo ji ř
 
 Přestože stát může zavést nějaká pravidla[^regulace], elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny.
 
-### Dominantní je stát a veřejný sektor
+### Dominantní je stát
 
-O rozvoj a dodávky elektřiny se stará především stát, případně města. Elektřina je v tomto přístupu vnímána jako komodita se strategickou důležitostí, a je tedy nutné zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí byl dostatek pro průmyslovou základnu dané země a zároveň byla dostupná pro všechny skupiny obyvatel. Stát tak může na tuto komoditu vyčlenit určité prostředky z rozpočtu, proto její cena nemusí nutně odpovídat reálným systémovým nákladům. Pro tento přístup je typická vertikální propojenost: jedna firma vlastní elektrárny, uhelné doly ale také přenosovou a distribuční soustavu. Tato firma pak má v daném státě monopol na zajišťování dodávek.
+O rozvoj a dodávky elektřiny se stará hlavně stát, případně města. U elektřiny je vnímána především její strategická důležitost, tedy nutnost zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí měl dostatek průmysl a zároveň jí mohly využívat všechny skupiny obyvatel. Stát může na její výrobu a distribuci vyčlenit určité prostředky z rozpočtu (například zavést cenový strop), proto její cena nemusí nutně odpovídat reálným systémovým nákladům. Pro tento přístup je typická vertikální propojenost: jedné firmě (kde bývá stát majoritním vlastníkem) patří elektrárny, uhelné doly, ale také přenosová a distribuční soustava. Tato firma pak má monopol na zajišťování dodávek.
 
-Podoba energetického systému v určité zemi do značné míry záleží na tom, který z těchto dvou přístupů převládne. V následujícím textu popisujeme, jakou roli hrály oba přístupy v různých obdobích – od počátků elektrifikace až do současnosti.
+Další kapitoly popisují roli státu a trhu v různých obdobích – od počátků elektrifikace až do současnosti.
 
 {% capture jadro %}
 
-Jaderné elektrárny dobře ilustrují rozdíl mezi tržním a státním přístupem. **Největší část jejich rozvoje po celém světě probíhala a probíhá v obdobích, kdy má stát velkou míru kontroly nad energetikou i nad daným jaderným projektem.**
+**Největší rozvoj jaderných elektráren po celém světě probíhal a probíhá v obdobích, kdy má nad energetikou i nad daným jaderným projektem velkou míru kontroly stát.**
+Proč se trh podílí jen málo? Důvodů je více:
+- S výstavbou jsou spojeny obrovské kapitálové náklady. Ty mají navíc velmi dlouhou návratnost, takže i z hlediska úrokových sazeb to pro trh není příliš výhodná investice.
+- Výstavba se také často značně prodlužuje a prodražuje oproti původním plánům, což významně zvyšuje riziko pro soukromé investory. Vysoká míra rizika u tak obrovské investice už může existenčně ohrožovat i velké firmy, jako je EDF nebo ČEZ.
 
-Málo jaderných staveb na základně tržního přístupu má více příčin:
-- S výstavbou jaderných elektráren jsou spojeny obrovské kapitálové náklady, které mají navíc velmi dlouhou návratnost. Z hlediska trhu a tržních úrokových sazeb to v součtu není úplně výhodná investice.
-- Výstavba jaderných elektráren má navíc tendenci se oproti původním plánům značně prodlužovat a prodražovat, což významně zvyšuje rizikovost takové investice pro soukromé aktéry. Vysoká míra rizika u tak obrovské investice už může existenčně ohrožovat i velké firmy jako je EDF nebo ČEZ.
+Pro stát je naopak běžné plánovat a realizovat projekty na další desítky let (např. dálniční a železniční síť). Když má stát navíc relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje (a tedy nemusí nutně hledět na krátkodobou ziskovost takového projektu).
 
-Naproti tomu pro stát je běžné plánovat a realizovat projekty na další desítky let (jako např. dálniční a železniční síť). Když má stát navíc relativně dobré úvěrové hodnocení, může získat nižší úrok a projekt jednoduše začlenit mezi další státní výdaje (a tedy nemusí nutně hledět na krátkodobou ziskovost takového projektu).
-
-Pro soukromého investora může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost.
+Pro soukromého investora tak může být mnohem atraktivnější například výstavba plynové elektrárny, která vyžaduje menší kapitálové náklady a má rychlejší ekonomickou návratnost.
 
 {% endcapture %}
 
 {% include expander-figure.html
     name="jadro"
     class="contrast-figure "
-    label="Rozdíl mezi dvěma hlavními přístupy na příkladu jaderných elektráren"
+    label="Rozdíl mezi přístupem státu a trhu na příkladu jaderných elektráren"
     content=jadro
 %}
 
-## Vývoj těchto dvou přístupů v historii
+## Pohled do historie
 
 ### Počátky elektrifikace
 
 {:.contrast-figure}
 **Období:** _přibližně konec 19. století až konec 2. světové války_\\
-**Převažuje:** _dominantní role trhu_\\
+**Převažuje:** _trh_\\
 **Klíčová slova:** _elektrifikace, soukromí aktéři, města, decentralizované systémy_
 
-Rozvoj prvních elektráren a energetických závodů v Evropě a USA byl v tomto období **veden především soukromým sektorem, bez větších státních zásahů**. Ke konci 19. století začaly vznikat i elektrárny vlastněné městy. V počátcích elektrifikace nic jako národní elektrická síť neexistovalo, spíše šlo o jakousi směsici vzájemně nekompatibilních systémů, jež byly často zasazeny do největších měst či průmyslových podniků.[^nekompatibilita] Jejich **sjednocování začalo systematicky probíhat až v meziválečném období**,[^sjednocovani] kdy si státy uvědomily, jaký význam má elektřina pro jejich rozvoj a hospodářství, a zároveň začaly usilovat o to, aby elektřina byla dostupná co největšímu počtu domácností. Postupně tak začal převažovat přístup s **větším vlivem veřejného sektoru a státu**.
+Rozvoj prvních elektráren a energetických závodů v Evropě a USA byl v tomto období **veden především soukromým sektorem, bez větších státních zásahů**. Ke konci 19. století začaly vznikat i elektrárny vlastněné městy. V počátcích elektrifikace nic jako národní elektrická síť neexistovalo, spíše šlo o jakousi směsici vzájemně nekompatibilních systémů, jež byly často zasazeny do největších měst či průmyslových podniků.[^nekompatibilita] Jejich **sjednocování začalo systematicky probíhat až v meziválečném období**,[^sjednocovani] kdy si státy uvědomily, jaký význam má elektřina pro jejich rozvoj a hospodářství, a zároveň začaly usilovat o to, aby elektřina byla dostupná co největšímu počtu domácností. V této době **vliv státu začíná postupně sílit**.
 
 Konkrétně v Československu se decentralizované elektrické systémy začaly systematičtěji sjednocovat po první světové válce – v roce 1919 byl přijat zákon o elektrifikaci.[^elektrifikace] Postupem času vyvíjel stát tlak na větší standardizaci a sjednocování, například u napětí a frekvence v síti. Dále byly založeny takzvané všeužitečné elektrárenské společnosti,[^vseuzitecnost] které měly povinnost dodávat elektřinu všem zájemcům (za předpokladu, že to bylo ekonomicky a technicky možné).
 
@@ -74,7 +73,7 @@ Konkrétně v Československu se decentralizované elektrické systémy začaly 
 
 {:.contrast-figure}
 **Období:** _po 2. světové válce do 90. let_\\
-**Převažuje:** _dominantní role státu_\\
+**Převažuje:** _stát_\\
 **Klíčová slova:** _vertikální monopol, znárodnění, bezpečnost, strategické plánování_
 
 Toto období se vyznačuje **silnou rolí státu** – výrobu a distribuci elektřiny mívá zpravidla na starost státem vlastněná energetická firma (často se jedná o monopol). Jaké zdroje elektřiny budou při výrobě dominantní, je především otázkou národní strategie, jejíž prioritou je zajistit **energetickou bezpečnost země**. Jako klíčové jsou vnímány dodávky elektřiny pro nejdůležitější průmyslová odvětví, ale do popředí vstupuje i otázka **co nejvyšší dostupnosti elektřiny** pro všechny skupiny obyvatel. Elektřina se tak zároveň stává otázkou sociální politiky a její cena nemusí nutně odpovídat reálným nákladům.
