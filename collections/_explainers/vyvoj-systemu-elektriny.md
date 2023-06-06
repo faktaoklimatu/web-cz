@@ -34,7 +34,7 @@ Přestože stát může zavést nějaká pravidla[^regulace], elektřina je obch
 
 O rozvoj a dodávky elektřiny se stará hlavně stát, případně města. U elektřiny je vnímána především její strategická důležitost, tedy nutnost zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí měl dostatek průmysl a zároveň jí mohly využívat všechny skupiny obyvatel. Stát může na její výrobu a distribuci vyčlenit určité prostředky z rozpočtu (například zavést cenový strop), proto její cena nemusí nutně odpovídat reálným systémovým nákladům. Pro tento přístup je typická vertikální propojenost: jedné firmě (kde bývá stát majoritním vlastníkem) patří elektrárny, uhelné doly, ale také přenosová a distribuční soustava. Tato firma pak má monopol na zajišťování dodávek.
 
-Další kapitoly popisují roli státu a trhu v různých obdobích – od počátků elektrifikace až do současnosti.
+Další kapitoly popisují roli státu a trhu v různých obdobích – od počátků elektrifikace po současnost.
 
 {% capture jadro %}
 
