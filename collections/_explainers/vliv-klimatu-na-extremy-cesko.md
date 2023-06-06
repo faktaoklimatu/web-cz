@@ -203,6 +203,6 @@ libor.elleder@chmi.cz<br/>
 
 [^povodne-fanta]: Fanta, V., Šálek, M., Sklenička, P. How long do floods throughout the millennium remain in the collective memory?. *Nat. Commun.* **10**, 1105 (2019). [doi:10.1038/s41467-019-09102-3](https://doi.org/10.1038/s41467-019-09102-3)
 
-[^povodne-ocekavane-podminky]: Viz studie [Očekávané klimatické podmínky v ČR](/studie/2019-klimaticke-podminky-cr-1).
+[^povodne-ocekavane-podminky]: Viz studie [Očekávané klimatické podmínky v ČR](https://www.klimatickazmena.cz/cs/o-nas/aktuality/ocekavane-klimaticke-podminky-v-ceske-republice-cast-i-zmena-zakladnich-parametru/).
 
 [^povodne-copernicus-2021]: [Flooding in Europe](https://climate.copernicus.eu/esotc/2021/flooding-july), Copernicus. *European State of the Climate 2021*

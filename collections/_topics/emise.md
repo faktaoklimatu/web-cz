@@ -164,10 +164,8 @@ subtopics:
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
   - mitigacni-opatreni-mmf
-  - 2019-mitigacni-opatreni-mmf
   - fit-for-55
   - fit-for-55-opatreni
-  - 2016-snizeni-emisi-cr
   - 2022-reserse-ccs
 
 - id:          "intenzity"
