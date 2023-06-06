@@ -32,6 +32,10 @@ Rovnováha mezi přijatým a vyzářeným zářením, spolu se skleníkovým efe
  * V průběhu teplého období třetihor koncentrace CO2 přesahovaly 1000 ppm a silnější skleníkový efekt více bránil unikání infračerveného záření do vesmírného prostoru. Navíc severní i jižní pól byly zcela bez ledu a planeta odrážela méně slunečního záření do vesmíru. Průměrná teplota planety se ustálila na hodnotách okolo 24°C. 
 
 
+Ice albedo feedback
+Dissolved CO2 feedback
+Water vapour feedback
+
 ### Radiative forcing a měnící se klima
 
 Efekt planetárního albeda a skleníkových plynů na toky záření se popisuje veličinou zvanou **Radiative forcing**. (to se do češtiny někdy překládá jako radiační působení, nicméně necháváme v angličtině). Má jednotku W/m2 a vyjadřuje velikost rozdílu zářivých toků od jejich hodnot v referenčním období (v souvislosti s klimatickou změnou zpravidla se jako referenční období používá zpavidla "pre-industriál" tedy 1850-1900 nebo 1750)
