@@ -16,7 +16,6 @@ perex:       "Cena elektřiny na velkoobchodním trhu je výrazně proměnlivá.
 
 ---
 
-
 ## Časová perspektiva
 
 Holocen = posledních 10 000 let... civilizace (egypt) cca před 6000 lety? 
