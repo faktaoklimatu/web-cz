@@ -87,7 +87,6 @@ subtopics:
   - elektrina-na-osobu-eu
   - elektrina-na-osobu-svet
   - elektrina-svet
-  - 2020-globalni-zprava-o-elektrine
   - 2023-reserse-transformace-mixu
 
 - id:          "emise-v-energetice"
