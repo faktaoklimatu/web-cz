@@ -18,21 +18,19 @@ cover-source-url:           "https://pixabay.com/cs/photos/elektr%c3%a1rny-veden
 perex:       "Je elektřina základní právo, nebo obchodovatelná komodita? Tedy je lepší nechat její výrobu a distribuci spíše na státu, nebo se o to má postarat trh? To jsou základní otázky, které v minulosti formovaly úvahy o elektroenergetice a jsou stejně aktuální i dnes. Každá varianta má své výhody a nevýhody, stát umí lépe něco jiného než trh (a naopak). Tento text přináší krátký přehled, jak se systém pravidel spojených s produkcí a dodávkami elektřiny proměňoval v minulosti, a přidává současný kontext, důležitý pro naše rozhodování do budoucna."
 ---
 
-Ačkoli rámec pravidel umožňující produkci a dodávky elektřiny může někdo vnímat jako daný a neměnný, ve skutečnosti prošel do dnešních dnů dlouhým vývojem. Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou může být užitečné si tento vývoj trochu přiblížit. Následující text ukazuje, jak se dva základní přístupy v energetice měnily v průběhu let. Hraje hlavní roli stát, nebo trh? Kdo elektřinu dodává, s jakým cílem a za jakých podmínek? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný. Platí to i o našem území, kde se i přes specifikum komunistického režimu v letech 1948–1989 z větší části podobal vývoji jinde v Evropě.
+Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou je užitečné si trochu přiblížit dlouhý vývoj, kterým systém výroby a distribuce elektřiny prošel. Kdo má elektřinu dodávat, komu, s jakým cílem a za jakých podmínek? Má hrát hlavní roli stát? Nebo trh? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný a platí to také o Česku a Československu, kde se ani v období komunistického režimu (1948–1989) vývoj významně nelišil od jiných částí Evropy.
 
-Text ukazuje vývoj systému pro výrobu a dodávky elektřiny na pozadí politicko-ekonomických změn. Zaměřuje se pouze na elektřinu, nikoliv energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na další samostatné texty.
+Tento text se zaměřuje pouze na elektřinu, nikoliv na energetiku jako celek – sektory dopravy a vytápění, v nichž se využívají energetické komodity jako ropa a zemní plyn, mají svá vlastní specifika, jejichž popis by vydal na samostatné texty.
 
-## Dva základní přístupy v energetice
+## Stát anebo trh?
 
-S určitou mírou zjednodušení lze říct, že se ve vývoji elektroenergetiky střídaly dva základní přístupy:
-- Přístup s dominantní rolí trhu
-- Přístup s dominantní rolí veřejného sektoru a státu
+To, jestli se o výrobu a distribuci elektřiny stará hlavně stát, nebo ji řeší trh, jsou dvě různé situace, z nichž každá má své důsledky. V čem spočívají hlavní rozdíly?  
 
-### Přístup s dominantní rolí trhu
+### Dominantní je trh
 
-O rozvoj a dodávky elektřiny se v tomto případě stará trh. Stát ovšem pro trh v průběhu času zavádí pravidla.[^regulace] Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny.
+Přestože stát může zavést nějaká pravidla[^regulace], elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny.
 
-### Přístup s dominantní rolí veřejného sektoru a státu
+### Dominantní je stát a veřejný sektor
 
 O rozvoj a dodávky elektřiny se stará především stát, případně města. Elektřina je v tomto přístupu vnímána jako komodita se strategickou důležitostí, a je tedy nutné zajistit její dodávky, s důrazem na bezpečnost, stabilitu a cenovou dostupnost – aby jí byl dostatek pro průmyslovou základnu dané země a zároveň byla dostupná pro všechny skupiny obyvatel. Stát tak může na tuto komoditu vyčlenit určité prostředky z rozpočtu, proto její cena nemusí nutně odpovídat reálným systémovým nákladům. Pro tento přístup je typická vertikální propojenost: jedna firma vlastní elektrárny, uhelné doly ale také přenosovou a distribuční soustavu. Tato firma pak má v daném státě monopol na zajišťování dodávek.
 
