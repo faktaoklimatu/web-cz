@@ -4,7 +4,7 @@ title:         "Atribuce extrémních událostí"
 slug:          2023-reserse-extremy
 redirect_from: "/2023-reserse-extremy"
 weight:        305
-published:     2023-05-29
+published:     2023-06-08
 tags-scopes:   [ ]
 tags-topics:   [ ]
 caption:       "Přehled extrémních událostí a jejich spojitost se změnou klimatu"
