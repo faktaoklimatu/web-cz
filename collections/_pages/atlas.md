@@ -26,15 +26,15 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
         <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
         <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
     </div>
-    <div class="col-md-12 col-lg-3 mt-5">
-        <h2>Pro vás</h2>
+    <div class="col-md-12 col-lg-3 mt-5 mt-lg-0">
+        <h3>Pro vás</h3>
         <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
         <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
         <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
-        <h2>Podpořte naši práci</h2>
+        <h3>Podpořte naši práci</h3>
         <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
         <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
-        <h2>Licence</h2>
+        <h3>Licence</h3>
         <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
     </div>
 </div>
