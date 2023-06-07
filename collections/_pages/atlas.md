@@ -21,7 +21,7 @@ search_image: "/assets-local/img/atlas-mockup.jpg"
   </div>
 <div class="section pt-0"><div class="container">
 <div class="row">
-    <div class="col-md-12 col-lg-10">
+    <div class="col-md-12 col-lg-9">
         <p class="lead py-4">{{ page.intro }}</p>
         <img src="/assets-local/img/atlas-preview.jpg" class="img-fluid mb-1" alt="Alas klimatické změny">
         <p>O. Přibyla, J. Lněnička, O. Pechník, K. Pšorn Zákopčanová, K. Kolouchová <em>Atlas klimatické změny. Změny v atmosféře a rizika oteplování</em>. Brno: Lipka – školské zařízení pro environmentální vzdělávání Brno, příspěvková organizace, 2022. ISBN 978-80-88212-52-2</p>
