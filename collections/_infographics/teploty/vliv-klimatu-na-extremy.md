@@ -15,7 +15,7 @@ data-orig:
 {% include preview-box.html
     title="Další materiály o vlivu klimatu na extrémy počasí"
     text="Pro hlubší porozumění doporučujeme „Kompas pro novináře – extrémy počasí a klimatická změna. Jak o nich mluvit a psát“ a texty českých vědců k situaci v Česku."
-    slug="vliv-klimatu-na-extremy-prirucka,vliv-klimatu-na-extremy-cesko"
+    slug="vliv-klimatu-na-extremy-prirucka,vliv-klimatu-na-extremy-cesko,2023-reserse-extremy"
 %}
 
 Extrémní meteorologické události, jako jsou vlny veder, silné přívalové deště, tornáda, bouře či období sucha, mají často významné dopady na společnost: znamenají ztrátu úrody či zemědělské půdy, zničení majetku, vážné narušení ekonomiky, ztráty na životech apod. Když k něčemu takovému dojde, veřejnost se zpravidla začne ptát po příčinách. A stále častěji se objevuje otázka: „Byla tato událost způsobena změnou klimatu?“.

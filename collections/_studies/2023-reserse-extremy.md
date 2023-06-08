@@ -1,6 +1,6 @@
 ---
 layout:        survey
-title:         "Atribuce extrémních událostí"
+title:         "Atribuce nedávných extrémních událostí"
 slug:          2023-reserse-extremy
 redirect_from: "/2023-reserse-extremy"
 weight:        305
