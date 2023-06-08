@@ -89,6 +89,11 @@ S atribučními studiemi pracují v poslední době nejrůznější uživatelé.
 
 ### Příklady atribučních studií
 
+{% include preview-box.html
+    title="Další příklady atribučních studií"
+    slug="2023-reserse-extremy"
+%}
+
 **Povodně v Bangladéši**, *srpen 2017*
 
 - **Událost**: V srpnu 2017 postihly Bangladéš přívalové deště, které ještě posílila zvýšená hladina řek přitékajících z Indie. Většina této vody skončila v povodí Brahmaputry a břehy této řeky se protrhly – výsledkem byla rekordně vysoká povodeň, která zaplavila rozsáhlé území, zejména na severu země, s dopady na domovy a živobytí téměř sedmi milionů lidí.
