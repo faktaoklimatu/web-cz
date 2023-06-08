@@ -7,6 +7,7 @@ weight:        305
 published:     2023-06-08
 tags-scopes:   [ ]
 tags-topics:   [ ]
+use-preview-image: true
 caption:       "Přehled extrémních událostí a jejich spojitost se změnou klimatu"
 intro: |
   K extrémním projevům počasí klimatická změna někdy přispívá, jindy tomu tak není. Vědci vzájemnou souvislost mezi těmito jevy dlouhodobě zkoumají a v tzv. atribučních studiích popisují, jak změna klimatu ovlivnila pravděpodobnost výskytu konkrétní extrémní události, případně jaký vliv měla na její intenzitu. Více o této metodě používané organizací World Weather Attribution lze najít na [našem webu](/explainery/vliv-klimatu-na-extremy-prirucka).
