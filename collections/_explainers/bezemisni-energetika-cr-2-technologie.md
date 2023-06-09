@@ -37,7 +37,7 @@ _V tomto textu najdete přehled základních technologií pro bezemisní či ní
 
 Než se pustíme do zkoumání možností jednotlivých technologií, připomeňme základní škálu problému, který řešíme. Dnes v Česku spotřebujeme okolo 60 TWh elektřiny ročně. Do roku 2050 očekáváme výrazný nárůst spotřeby, hlavně kvůli elektrifikaci části dopravy, vytápění a průmyslu. Odhady tohoto nárůstu se mírně liší, pro účely tohoto textu nám bude stačit dobře zapamatovatelný hrubý odhad: **v roce 2050 budeme potřebovat pokrýt zhruba 100 TWh spotřeby za rok**. Tuto spotřebu nemusíme nutně celou pokrýt domácí výrobou, část spotřeby můžeme pokrýt importem elektřiny ze zahraničí.
 
-Ke každému zdroji elektřiny dáváme odhad _současných_ [sdružených nákladů na výrobu elektřiny](/cena-energie), na základě odhadů [IEA](https://iea.blob.core.windows.net/assets/ae17da3d-e8a5-4163-a3ec-2e6fb0b5677d/Projected-Costs-of-Generating-Electricity-2020.pdf) a [Lazardu](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/). Tyto hodnoty rozhodně nejsou vytesané do kamene, v dalších letech a dekádách můžeme očekávat další výrazný vývoj nákladů jednotlivých zdrojů.
+Ke každému zdroji elektřiny dáváme odhad _současných_ [sdružených nákladů na výrobu elektřiny](/cena-energie), na základě odhadů [IEA](https://iea.blob.core.windows.net/assets/ae17da3d-e8a5-4163-a3ec-2e6fb0b5677d/Projected-Costs-of-Generating-Electricity-2020.pdf) a [Lazardu](https://www.lazard.com/research-insights/levelized-cost-of-energyplus/). Tyto hodnoty rozhodně nejsou vytesané do kamene, v dalších letech a dekádách můžeme očekávat další výrazný vývoj nákladů jednotlivých zdrojů.
 
 ## Slunce a vítr
 
