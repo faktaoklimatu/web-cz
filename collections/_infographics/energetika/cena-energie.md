@@ -9,14 +9,14 @@ tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Srovnání vývoje sdružených nákladů na výrobu elektřiny v modelových velkých elektrárnách (tzv. utility-scale) od roku 2009 do roku 2020, především z hlediska technologií a trhu. Do ceny nejsou započteny dotace, ceny emisních povolenek ani náklady spojené s vyrovnáním nestálosti zdrojů. V grafu jsou zobrazeny obnovitelné zdroje, které mají v České republice největší potenciál rozvoje."
 data-our:   "https://docs.google.com/spreadsheets/d/1YVCUfpI1WbIiPP8Kc2np3IFYlVQnyNeB3IvJqPdTrns"
-data-orig:  [["Zdrojová data Lazard", "https://www.lazard.com/media/451419/lazards-levelized-cost-of-energy-version-140.pdf"]]
+data-orig:  [["Zdrojová data Lazard", "https://www.lazard.com/research-insights/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen-2020/"]]
 ---
 
 ## Jak číst tento graf
 
 Graf znázorňuje **vývoj sdružených nákladů na výrobu energie (LCOE – Levelized Cost of Energy) podle jednotlivých zdrojů v letech  2009 až 2020**.
 
-Sdružená cena energie je veličina umožňující srovnat ekonomickou výhodnost různých zdrojů energie. Počítá se jako podíl veškerých nákladů spojených se stavbou, provozem a likvidací elektrárny (včetně případného nákupu paliva) a množství energie, které elektrárna vyrobí za dobu své životnosti. Hodnoty uvádíme v korunách za kilowatthodinu. Ceny nezahrnují dotace ani ceny emisních povolenek. Srovnání cen se započítáním emisních povolenek nabízí studie od společnosti [Lazard](https://www.lazard.com/media/451419/lazards-levelized-cost-of-energy-version-140.pdf).
+Sdružená cena energie je veličina umožňující srovnat ekonomickou výhodnost různých zdrojů energie. Počítá se jako podíl veškerých nákladů spojených se stavbou, provozem a likvidací elektrárny (včetně případného nákupu paliva) a množství energie, které elektrárna vyrobí za dobu své životnosti. Hodnoty uvádíme v korunách za kilowatthodinu. Ceny nezahrnují dotace ani ceny emisních povolenek. Srovnání cen se započítáním emisních povolenek nabízí studie od společnosti [Lazard](https://www.lazard.com/research-insights/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen-2020/).
 
 - Graf nezobrazuje **dodatečné náklady plynoucí z nestálosti**[^1] solárních a větrných elektráren. Rozdíl mezi poptávkou a nabídkou je možné vyrovnávat pomocí špičkových elektráren[^2], úložišť elektřiny (bateriové, vodní přečerpávací), dynamického řízení poptávky (tzv. smart grid) nebo propojením elektrické soustavy v rámci větších geografických celků. **České scénáře transformace energetiky** počítají především se stavbou špičkových plynových elektráren. Elektřina z nich  je přitom přibližně třikrát dražší než u běžných plynových elektráren (tzv. base load[^3]), protože tento typ elektrárny nevyrábí stále.
 - V grafu nezobrazujeme některé druhy obnovitelných zdrojů, buď kvůli omezenému potenciálu jejich růstu (vodní či geotermální elektrárny, spalování biomasy), nebo proto, že nejsou pro Českou republiku relevantní (větrné elektrárny na moři). V datech od společnosti Lazard je nicméně možné najít i tyto zdroje.
