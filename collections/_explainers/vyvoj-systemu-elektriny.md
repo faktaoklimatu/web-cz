@@ -21,13 +21,13 @@ Text se zaměřuje pouze na elektřinu, nikoliv na energetiku jako celek – sek
 
 ## Stát, anebo trh?
 
-Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou je užitečné si trochu přiblížit dlouhý vývoj, kterým systém výroby a distribuce elektřiny prošel. Kdo má elektřinu dodávat, komu, s jakým cílem a za jakých podmínek? Má hrát hlavní roli stát? Nebo trh? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný a platí to také o Česku a Československu, kde se ani v období komunistického režimu (1948–1989) vývoj významně nelišil od jiných částí Evropy. 
+Pro pochopení aktuálních českých i evropských debat o možných změnách na trhu s elektřinou je užitečné si trochu přiblížit dlouhý vývoj, kterým systém výroby a distribuce elektřiny prošel. Kdo má elektřinu dodávat, komu, s jakým cílem a za jakých podmínek? Má hrát hlavní roli stát? Nebo trh? Odpovědi na tyto otázky se v průběhu let mění, nicméně v mnoha zemích byl vývoj podobný a platí to také o Česku a Československu, kde se ani v období komunistického režimu (1948–1989) vývoj významně nelišil od jiných částí Evropy.
 
-To, zda je dominantní stát, anebo trh, jsou dvě různé situace, z nichž každá má své důsledky. V čem spočívají hlavní rozdíly?  
+To, zda je dominantní stát, anebo trh, jsou dvě různé situace, z nichž každá má své důsledky. V čem spočívají hlavní rozdíly?
 
 ### Elektřinu zajišťuje trh
 
-Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny. I v situaci, kdy hlavní roli hraje trh, se nicméně může projevit snaha státu zavést určitá pravidla[^regulace].
+Elektřina je obchodovatelným zbožím a trh vytváří konkurenční prostředí, do kterého může vstupovat více výrobců či dodavatelů. Možnost volby dodavatele a vzájemná konkurence tlačí na efektivitu firem a také snižuje cenu elektřiny. I v situaci, kdy hlavní roli hraje trh, má nicméně stát důležitou roli v nastavování pravidel[^regulace].
 
 ### Elektřinu zajišťuje stát
 
@@ -80,7 +80,7 @@ Na území Československa v roce 1945 dochází ke znárodnění[^znarodneni] v
 
 V roce 1950 dochází ke sjednocení přenosových soustav do jednoho celku.[^sjednoceni] Zároveň se v 50. letech projevuje strategická priorita státu podporovat průmysl – aby měla průmyslová výroba elektřiny dost, dochází k občasnému zastavení dodávek pro domácnosti.[^odstavky] V 60. letech probíhá výstavba velkých uhelných elektráren, na konci této dekády se pak ČEZ dělí na českou a slovenskou část.
 
-Geopolitické směřování naší země v tomto období také vede ke snahám o větší propojení elektrizačních soustav se státy východního bloku. Kromě toho vláda podporuje sociální cíl levné elektřiny: například v letech 1968–1976 se její cena pro odběratele nezměnila, což způsobilo nesoulad mezi cenou a náklady.[^nesoulad] V roce **1978 se začíná stavět jaderná elektrárna Dukovany** (spuštěna 1985). 
+Geopolitické směřování naší země v tomto období také vede ke snahám o větší propojení elektrizačních soustav se státy východního bloku. Kromě toho vláda podporuje sociální cíl levné elektřiny: například v letech 1968–1976 se její cena pro odběratele nezměnila, což způsobilo nesoulad mezi cenou a náklady.[^nesoulad] V roce **1978 se začíná stavět jaderná elektrárna Dukovany** (spuštěna 1985).
 
 Pro státní politiku v socialistickém Československu není ochrana životního prostředí příliš velkou prioritou a energetický systém tomu do velké míry odpovídá. Ke konci 80. let dochází k veřejným protestům proti výraznému překračování emisních limitů u uhelných elektráren.[^protesty]
 
@@ -118,7 +118,7 @@ Trilema se zpravidla používá k popisu celkové energetické situace na daném
 
 ## Možnosti dalšího vývoje trhu s elektřinou v EU
 
-Současné úvahy o trzích s elektřinou (a o tom, do čeho a jak má zasahovat stát), ovlivňuje především souběh aktuální energetické a klimatické krize. **Energetická krize**, způsobená nečekaně rychlou obnovou po pandemii Covidu-19 a zejména pak ruskou invazí na Ukrajinu v únoru 2022, přinesla jak vysoké ceny energií, tak narušení stability a bezpečnosti dodávek. Pokračující **klimatická krize** zase vyžaduje úsilí o dekarbonizaci elektřiny, tedy výrazné navýšení výroby z nízkoemisních zdrojů (hlavně ze slunce a větru). V důsledku obou těchto faktorů dnes EU stojí před naléhavou **otázkou, jak současné nastavení trhu s elektřinou reformovat**, aby dekarbonizace probíhala rychleji a zároveň trh v budoucnu lépe odolával podobným cenovým šokům. 
+Současné úvahy o trzích s elektřinou (a o tom, do čeho a jak má zasahovat stát), ovlivňuje především souběh aktuální energetické a klimatické krize. **Energetická krize**, způsobená nečekaně rychlou obnovou po pandemii Covidu-19 a zejména pak ruskou invazí na Ukrajinu v únoru 2022, přinesla jak vysoké ceny energií, tak narušení stability a bezpečnosti dodávek. Pokračující **klimatická krize** zase vyžaduje úsilí o dekarbonizaci elektřiny, tedy výrazné navýšení výroby z nízkoemisních zdrojů (hlavně ze slunce a větru). V důsledku obou těchto faktorů dnes EU stojí před naléhavou **otázkou, jak současné nastavení trhu s elektřinou reformovat**, aby dekarbonizace probíhala rychleji a zároveň trh v budoucnu lépe odolával podobným cenovým šokům.
 
 Jako reakci na tento vývoj představila Evropská komise 14. března 2023 [návrh reformy](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1591) vnitřního trhu s elektřinou.[^reforma] Tato reforma nepřináší žádné revoluční změny současného fungování trhu v EU[^dalsi-revize], podstatným způsobem ale reaguje na obě výše uvedené výzvy. Zároveň je třeba zmínit, že v rámci Evropy se objevovaly i hlasy volající po výraznější reformě, např. [řecký](https://data.consilium.europa.eu/doc/document/ST-11398-2022-INIT/en/pdf) nebo [španělský](https://table.media/europe/wp-content/uploads/sites/9/2023/01/230110_Strommarktreform_Non-Paper_ES.pdf) návrh.
 
