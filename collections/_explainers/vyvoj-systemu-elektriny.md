@@ -4,7 +4,7 @@ title:       "Jak se v čase proměňovala role trhu a státu při výrobě a di
 slug:        "vyvoj-systemu-elektriny"
 published:   2023-5-9
 authors:
- - id: "adam-bilek"
+ - ids: ["adam-bilek", "jan-krcal"]
  - ids: ["jirka-lnenicka", "katerina-kolouchova"]
    minor-role: "editace"
 weight:      74
