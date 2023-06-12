@@ -125,9 +125,9 @@ subtopics:
   - cena-elektriny-na-trhu
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
-  - 21-rust-cen-elektriny
   - repowereu
   - vyvoj-systemu-elektriny
+  - 21-rust-cen-elektriny
 
 - id:          "technologie"
   title:       "Technologie: Potenciál a cena"
