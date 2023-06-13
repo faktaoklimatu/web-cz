@@ -24,15 +24,15 @@ Průmyslové emise dělíme na dvě hlavní kategorie:
 - emise ze spalování (zahřívání)
 - emise z chemických reakcí
 
-**Spalování** fosilních paliv v průmyslu probíhá kvůli potřebě **dodání tepla tam**, kde si to produkční postupy žádají. Mnohdy jde o velmi vysoké teploty, které se momentálně zpravidla dosahují spalováním uhlí či zemního plynu. Například při výrobě oceli se tak můžeme setkat s teplotami kolem 1500 stupňů celsia.[^ocel]
+**Spalování** fosilních paliv v průmyslu probíhá kvůli potřebě **dodání tepla tam**, kde si to produkční postupy žádají. Mnohdy jde o velmi vysoké teploty, které se momentálně zpravidla dosahují spalováním uhlí či zemního plynu. Například při výrobě cementu se pec zahřívá na více než 1400 °C.[^1400]
 
-Jako **průmyslové procesy** se pak označují **chemické reakce**, které při výrobě probíhají. Produkce CO2 (či jiných skleníkových plynů)[^ekvivalent] je často přímým důsledkem těchto dějů, na nichž vznik potřebného produktu stojí. Příklad lze najít při výrobě cementu, kdy se uhličitan vápenatý mění na oxid vápenatý a při tomto procesu zároveň vzniká oxid uhličitý.
+Jako **průmyslové procesy** se pak označují **chemické reakce**, které při výrobě probíhají. Produkce CO<sub>2</sub> (či jiných skleníkových plynů)[^ekvivalent] je často přímým důsledkem těchto dějů, na nichž vznik potřebného produktu stojí. Příklad lze najít při výrobě cementu, kdy se uhličitan vápenatý mění na oxid vápenatý a při tomto procesu zároveň vzniká oxid uhličitý.
 
 ## Kolik vzniká v průmyslu emisí?
 
-Země Evropské unie vyprodukují přibližně 3700 MtCO2eq ročně ze všech sektorů, tedy včetně energetiky, průmyslu, dopravy, zemědělství a spalování v domácnostech.
+Země Evropské unie vyprodukují přibližně 3700 MtCO<sub>2</sub>eq ročně ze všech sektorů, tedy včetně energetiky, průmyslu, dopravy, zemědělství a spalování v domácnostech.
 
-430 MtCO2 přijde na vrub spalování fosilních paliv a dalších 340 MtCO2eq vzniká při samotných průmyslových procesech. Zvláštní kategorií, která lze zařadit do průmyslu je rafinace ropy, která přispívá ročně 140 MtCO2eq. **Průmysl tak má zhruba čtvrtinový podíl na celkových emisích EU.**[^emiseeu]
+430 MtCO<sub>2</sub> přijde na vrub spalování fosilních paliv a dalších 340 MtCO<sub>2</sub>eq vzniká při samotných průmyslových procesech. Zvláštní kategorií, která lze zařadit do průmyslu je rafinace ropy, která přispívá ročně 140 MtCO<sub>2</sub>eq. **Průmysl tak má zhruba čtvrtinový podíl na celkových emisích EU.**[^emiseeu]
 
 V tomto přehledu používáme **přímé emise, které vznikají v rámci chemických reakcí a spalování v daném průmyslovém podniku**. Je ovšem důležité dodat, že toto nejsou všechny emise, které jsou s daným produktem spojené. Dalším zdrojem emisí je například koupě elektřiny ze sítě, která se již kategorizuje jako nepřímá emise, jelikož nevznikla přímo v rámci průmyslového provozu. Pro některé průmysly jako například u výroby vápna jsou tyto nepřímé emise velmi malé, ovšem u některých průmyslů jako například u výroby hliníku tvoří tyto nepřímé emise většinu, jelikož v rámci výroby hliníku je klíčový proces elektrolýzy, tedy chemické reakce vyžadující přísun proudu. Dále lze zmínit emise spojené s těžbou surovin či dopravou, které v tomto přehledu nezapočítáváme.
 
@@ -42,9 +42,9 @@ V tomto přehledu používáme **přímé emise, které vznikají v rámci chemi
 
 Cement je klíčovou příměsí betonu, který je druhou nejvíce spotřebovávanou látkou na světě po vodě.[^spotreba] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina cementu na světě se používá na výstavbu obytných a nebytových budov, zatímco zbytek připadá na budování různých typů infrastruktury, např. silnic, železnic a energetických zařízení.[^infrastruktura]
 
-Při produkci cementu **vzniká 60 % emisí CO2 při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na výrobu potřebného tepla.**[^emisecement]
+Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na výrobu potřebného tepla.**[^emisecement]
 
-Na tunu cementu vzniká průměrně 0.5-0.6 tun CO2, ovšem záleží mimo jiné i na druhu cementu.[^cementintenzita]
+Na tunu cementu vzniká průměrně 0.5-0.6 tun CO<sub>2</sub>, ovšem záleží mimo jiné i na druhu cementu.[^cementintenzita]
 
 ### Vápno
 
@@ -52,15 +52,15 @@ Vápno nachází uplatnění ve stavebnictví, zemědělství, papírnictví, po
 
 **Dvě třetiny emisí vznikají při chemické reakci přeměny vápence na hašené vápno.** Tento proces přeměny v současnosti neumíme přímo nahradit jiným, který by byl emisně méně náročný. **Zbývající třetina emisí připadá na spalování.**[^emisevapno]
 
-Na tunu vápna při procesu jeho výroby připadá 0,75 tun emisí CO2.[^vapnointenzita]
+Na tunu vápna při procesu jeho výroby připadá 0,75 tun emisí CO<sub>2</sub>.[^vapnointenzita]
 
 ### Sklo
 
 Se sklem se setkáváme každý den a nejčastěji ve formě obalů či oken. Sklo se ovšem dá využít i v rámce dekarbonizace. Dvojitě či trojitě zasklená okna a izolující skelnou vatu potřebujeme pro snížení tepelných ztrát budov. Sklo je součástí solárních panelů a najdeme ho i ve větrných turbínách v podobě skleněných vláken. Ta se používají rovněž v automobilovém průmyslu coby náhrada za těžší materiály.
 
-U skla je hlavní zdroj emisí **spalování, které produkuje 75-85 % emisí CO2. Zbylých 15-25 % připadá na chemické reakce.**[^emisesklo] Zde se jedná o chemické procesy spojené se sklářskými surovinami jakým je například vápenec.
+U skla je hlavní zdroj emisí **spalování, které produkuje 75-85 % emisí CO<sub>2</sub>. Zbylých 15-25 % připadá na chemické reakce.**[^emisesklo] Zde se jedná o chemické procesy spojené se sklářskými surovinami jakým je například vápenec.
 
-Při výrobě skla vzniká přibližně 0,5 tun CO2 na tunu skla.[^sklointenzita]
+Při výrobě skla vzniká přibližně 0,5 tun CO<sub>2</sub> na tunu skla.[^sklointenzita]
 
 ## Ocel a další kovy
 
@@ -68,9 +68,9 @@ Při výrobě skla vzniká přibližně 0,5 tun CO2 na tunu skla.[^sklointenzita
 
 Ocel představuje jednu z nejdůležitějších surovin, kterou lidstvo využívá ve stavebnictví, výrobě aut a mnoha dalších nejen průmyslových odvětvích.
 
-Tři čtvrtiny dnes vyrobené oceli pochází z vysokých pecí[^vysokepece], které se neobejdou bez přidání koksu. Koks se vyrábí z černého uhlí a v metalurgii se používá kvůli vysokému podílu uhlíku a málo nečistotám. Při výrobě oceli slouží jednak k udržení vysoké teploty a jednak jako redukční činidlo, které umožňuje žádoucí chemické reakce (jejichž výsledkem je mimo jiné i CO2). **55 % procent emisí pochází z procesu spalování a zbylých 45% emisí pochází z chemických procesů.**[^emiseocel]
+Tři čtvrtiny dnes vyrobené oceli pochází z vysokých pecí[^vysokepece], které se neobejdou bez přidání koksu. Koks se vyrábí z černého uhlí a v metalurgii se používá kvůli vysokému podílu uhlíku a málo nečistotám. Při výrobě oceli slouží jednak k udržení vysoké teploty a jednak jako redukční činidlo, které umožňuje žádoucí chemické reakce (jejichž výsledkem je mimo jiné i CO<sub>2</sub>). **55 % procent emisí pochází z procesu spalování a zbylých 45% emisí pochází z chemických procesů.**[^emiseocel]
 
-Produkce jedné tuny oceli má na svědomí v průměru 1.85 tun CO2.[^ocelintenzita]
+Produkce jedné tuny oceli má na svědomí v průměru 1.85 tun CO<sub>2</sub>.[^ocelintenzita]
 
 ### Hliník
 
@@ -86,7 +86,7 @@ Hliník je velmi lehký kov s dobrými vodivými vlastnosti, který se hojně vy
 
 Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem.[^haberbosch] Vzhledem k tomu, že při výrobě amoniaku je zapotřebí vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO2. Přesnější rozdělení poměru je těžké zobecnit z dostupných dat.
 
-V současné době využíváme především šedý vodík ze zemního plynu, což má za následek, že za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO2.[^amoniakintenzita]
+V současné době využíváme především šedý vodík ze zemního plynu, což má za následek, že za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO<sub>2</sub>.[^amoniakintenzita]
 
 ### Petrochemikálie
 
@@ -116,13 +116,13 @@ Emise v papírenském průmyslu pochází ze **spalování**, které je nutné p
 
 ## Zdroje a poznámky
 
-[^ocel]: [Jedná se o teplotu při které se taví železo](https://www.eurofer.eu/about-steel/learn-about-steel/what-is-steel-and-how-is-steel-made/)
+[^1400]: [Jedná se o teplotu nutnou pro to aby probíhal proces kalcinace](https://www.carbonbrief.org/qa-why-cement-emissions-matter-for-climate-change/)
 [^ekvivalent]: Mnohá průmyslová odvětví vypouštějí primárně CO2, avšak třeba u chemického průmyslu se v podstatné míře setkáváme též s dalšími skleníkovými plyny - například s metanem či s takzvanými F-plyny. V tomto textu proto pracujeme také s jednotkou CO2 ekvivalent (CO2eq) na níž se produkce těchto dalších emisí přepočítává. Zda píšeme CO2 nebo CO2eq záleží především na metodologii studií, z nichž v případě jednotlivých průmyslových odvětví vycházíme.
 [^emiseeu]: Tyto data shromažduje pro EU i jednotlivé členské státy [Eurostat a EEA](https://docs.google.com/spreadsheets/d/1K5dbcngapuIdgrCRG0V8uV-c0ppirfYTwvvp8t54V3w/edit#gid=283480625).
 [^spotreba]: [Spotřeba cementu může do roku 2050 vzrůst o 45 %](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
 [^pultuna]: [Jedná se o globální průměr](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) Spotřeba cementu na osobu se ovšem výrazně liší napříč světěm.
 [^infrastruktura]: [Rostoucí spotřebu ovlivňuje právě přítomnost cementu v naprosto základních stavbách](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf).
-[^emisecement]: [Při výrobě cementu je nutné dosáhnout teplot v rozmezí 1300-1450°C a proces kalcinace je nutný mezikrok pro tvorbu slínku](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+[^emisecement]: [Proces kalcinace je nutný mezikrok pro tvorbu slínku](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
 [^cementintenzita]: Zde se jedná o [globální průměr](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf).
 [^emisevapno]: [Tento poměr je poměrně obecně platný](https://www.hycapgroup.com/this-global-first-sees-industrial-lime-produced-with-clean-hydrogen-in-uk/).
 [^vapnointenzita]: [Intenzitu způsobuje chemický proces kalcinace](https://www.eula.eu/wp-content/uploads/2019/02/A-Competitive-and-Efficient-Lime-Industry-Summary_0.pdf).
