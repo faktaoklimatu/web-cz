@@ -21,7 +21,7 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/china"
-        date:   2022-11-03
+        date:   2023-06-06
   - country:  "USA"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
     share:    "13,69 %"
@@ -43,7 +43,7 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/eu"
-        date:   2022-11-05
+        date:   2023-06-08
   - country:  "Indie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
     share:    "6,67 %"
@@ -55,7 +55,7 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/india"
-        date:   2022-11-03
+        date:   2022-11-15
   - country:  "Rusko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
     share:    "4,75 %"
@@ -66,7 +66,7 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/russian-federation"
-        date:   2022-02-07
+        date:   2022-11-09
   - country:  "Japonsko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
     share:    "3,12 %"
@@ -77,7 +77,7 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/japan"
-        date:   2022-10-31
+        date:   2023-05-17
   - country:  "Jižní Korea"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
     share:    "1,81 %"
@@ -138,21 +138,23 @@ items:
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/canada"
-        date:   2021-09-15
+        date:   2022-12-20
       - title:  Prohlášení
         url:    "https://www.canada.ca/en/services/environment/weather/climatechange/climate-plan/net-zero-emissions-2050/canadian-net-zero-emissions-accountability-act.html"
-        date:   2021-02-25
+        date:   2022-03-29
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     share:    "1,33 %"
-    pledge30: "−22 % ročních emisí oproti statu quo"
-    other:    "−50 % ročních emisí v r. 2050 oproti r. 2000"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/NDC-Esp-30Dic.pdf"
-    ndc-date: 2020-12-30
+    pledge30: "−35 % ročních emisí skleníkových plynů a −51 % emisí černého uhlíku oproti statu quo"
+    conditional: |
+      Podmíněný závazek udává, o kolik by země byla schopná snížit emise, kdyby byly splněny další podmínky. Mexiko jako podmínky udává výši mezinárodní finanční podpory, inovace a transfer technologií a vyšší úsilí najvětších emitentů dodržovat cíle Pařížské dohody.
+    other: −40 % ročních emisí skleníkových plymů a −70 % emisí černého uhlíku
+    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-11/Mexico_NDC_UNFCCC_update2022_FINAL.pdf"
+    ndc-date: 2022-11-17
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/mexico"
-        date:   2022-07-05
+        date:   2022-12-12
   - country:  "Brazílie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
     share:    "1,27 %"
