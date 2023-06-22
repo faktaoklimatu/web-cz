@@ -184,13 +184,13 @@ items:
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
     share:    "1,12 %"
     netzero:  "2053"
-    pledge30: "−21 % ročních emisí oproti statu quo"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/The_INDC_of_TURKEY_v.15.19.30.pdf"
-    ndc-date: 2021-10-11
+    pledge30: "−41 % ročních emisí oproti 2012"
+    ndc:      "https://unfccc.int/sites/default/files/NDC/2023-04/T%C3%9CRK%C4%B0YE_UPDATED%201st%20NDC_EN.pdf"
+    ndc-date: 2023-04-13
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/turkey/"
-        date:   2022-09-20
+        date:   2023-05-12
   - country:  "Austrálie"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
     share:    "1,08 %"
