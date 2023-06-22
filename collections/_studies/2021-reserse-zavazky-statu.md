@@ -134,7 +134,7 @@ items:
     netzero:  "2050"
     pledge30: "−40 % až −45 % ročních emisí oproti r. 2005"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/Canada%27s%20Enhanced%20NDC%20Submission1_FINAL%20EN.pdf"
-    ndc-date: 2021-07-21
+    ndc-date: 2021-07-12
     links:
       - title:  CAT
         url:    "https://climateactiontracker.org/countries/canada"
@@ -173,7 +173,7 @@ items:
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
     share:    "1,22 %"
     netzero:  "2050"
-    pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −23% až −0,1% změně emisí oproti r. 2019"
+    pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −12% až −32% změně emisí oproti r. 2015"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/South%20Africa%20updated%20first%20NDC%20September%202021.pdf"
     ndc-date: 2021-09-27
     links:
