@@ -11,22 +11,22 @@ authors:
 weight:      74
 tags-scopes: [  ]
 tags-topics: [  ]
-cover-source-author:        ""
-cover-source-text:          "Unsplash"
-cover-source-license:       "Unsplash License"
-cover-source-license-url:   "https://unsplash.com/license"
-cover-source-url:           ""
-perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu. V následujícím textu přibližujeme některé konkrétní scénáře, v nichž se zpravidla opíráme o studie průmyslových asociací či konzultačních firem."
+cover-source-author:        "Bjonsson"
+cover-source-text:          "Pixabay"
+cover-source-license:       "Pixabay License"
+cover-source-license-url:   "https://pixabay.com/service/license-summary/"
+cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
+perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu. Jedná se o studie průmyslových asociací či konzultačních firem."
 ---
 ## Cement
 
-Cement je klíčovou příměsí betonu, který je druhou nejvíce spotřebovávanou látkou na světě po vodě.[^spotreba] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina cementu na světě se používá na výstavbu obytných a nebytových budov, zatímco zbytek připadá na budování různých typů infrastruktury, např. silnic, železnic a energetických zařízení.[^infrastruktura]
+Cement je klíčovou příměsí betonu. Beton je dokonce druhou nejvíce spotřebovávanou látkou na světě po vodě.[^spotreba] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina cementu na světě se používá na výstavbu obytných a nebytových budov, zatímco zbytek připadá na budování různých typů infrastruktury, např. silnic, železnic a energetických zařízení.[^infrastruktura]
 
 Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na výrobu potřebného tepla.**[^emisecement]
 
 Na tunu cementu vzniká průměrně 0.5-0.6 tun CO<sub>2</sub>, ovšem záleží mimo jiné i na druhu cementu.[^cementintenzita]
 
-Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 % a náklady na dekarbonizaci sektoru v příštích 30 letech odhaduje na 1,8 bilionu dolarů, což může zdražit cement až téměř o polovinu.[^cementzdrazeni]
+Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 % a zároveň dekarbonizace může zdražit cement až téměř o polovinu.[^cementzdrazeni]
 
 ### Zachytávání CO<sub>2</sub>
 
