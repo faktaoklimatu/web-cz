@@ -145,10 +145,8 @@ items:
   - country:  "Mexiko"
     flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
     share:    "1,33 %"
-    pledge30: "−35 % ročních emisí skleníkových plynů a −51 % emisí černého uhlíku oproti statu quo"
-    conditional: |
-      Podmíněný závazek udává, o kolik by země byla schopná snížit emise, kdyby byly splněny další podmínky. Mexiko jako podmínky udává výši mezinárodní finanční podpory, inovace a transfer technologií a vyšší úsilí najvětších emitentů dodržovat cíle Pařížské dohody.
-    other: −40 % ročních emisí skleníkových plymů a −70 % emisí černého uhlíku
+    pledge30: "−35 % ročních emisí skleníkových plynů oproti statu quo"
+    other:    "−51 % emisí černého uhlíku oproti statu quo"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-11/Mexico_NDC_UNFCCC_update2022_FINAL.pdf"
     ndc-date: 2022-11-17
     links:
@@ -173,7 +171,7 @@ items:
     flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
     share:    "1,22 %"
     netzero:  "2050"
-    pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −12% až −32% změně emisí oproti r. 2015"
+    pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −18% až −31% změně emisí oproti r. 2010"
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/South%20Africa%20updated%20first%20NDC%20September%202021.pdf"
     ndc-date: 2021-09-27
     links:
