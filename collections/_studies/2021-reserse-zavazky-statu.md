@@ -269,7 +269,7 @@ Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světo
       <th scope="col" class="text-uppercase align-middle">Net-zero</th>
       <th scope="col" class="text-uppercase align-middle">Závazek 2030</th>
       <th scope="col" class="text-uppercase align-middle">Ostatní závazky</th>
-      <th scope="col" class="text-uppercase align-middle text-center">Odkazy</th>
+      <th scope="col" class="text-uppercase align-middle">Odkazy</th>
     </tr>
   </thead>
   <tbody>
