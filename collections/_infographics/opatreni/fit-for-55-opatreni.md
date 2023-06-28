@@ -24,48 +24,48 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 
 #### Emisní povolenky
 
-* [Revize obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) (*European Emissions Trading System*, EU ETS), včetně zahrnutí námořní dopravy do stávajícího systému a vznik nového systému pro silniční dopravu a budovy (tzv. EU ETS 2)[^reforma-eu-ets] <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
-* [Revize obchodování s emisními povolenkami v letecké dopravě](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0958) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
+* [Revize obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) (*European Emissions Trading System*, EU ETS), včetně zahrnutí námořní dopravy do stávajícího systému a vznik nového systému pro silniční dopravu a budovy (tzv. EU ETS 2)[^reforma-eu-ets] {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Revize obchodování s emisními povolenkami v letecké dopravě](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0958) {% include includes-local/fit-for-55-icon.html status="done" %}
 
 #### Další tržní mechanismy
 
-* [Uhlíkové vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
-* [Revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563) (*Energy Taxation Directive*, ETD) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
+* [Uhlíkové vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563) (*Energy Taxation Directive*, ETD) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 ### Cíle a regulace
 
 #### Závazky pro snižování emisí (v sektorech nezatížených tržními mechanismy)
 
-* [Revize nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
+* [Revize nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857) {% include includes-local/fit-for-55-icon.html status="done" %}
 
 #### Energetika
 
-* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557) (*Renewable Energy Directive*, RED) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na s" data-toggle="tooltip"></i>
-* [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
-* [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
-* [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
+* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557) (*Renewable Energy Directive*, RED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Energetická účinnost
 
-* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) (*Energy Efficiency Directive*, EED) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
-* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
+* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) (*Energy Efficiency Directive*, EED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Doprava
 
-* [Přísnější emisní předpisy pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
-* [Nová infrastruktura pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0559) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
-* [Iniciativa pro udržitelnější letecká paliva ReFuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0561) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
-* [Iniciativa pro čistší námořní paliva FuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0562) <i class="fas fa-clock" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
+* [Přísnější emisní předpisy pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Nová infrastruktura pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0559) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Iniciativa pro udržitelnější letecká paliva ReFuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0561) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Iniciativa pro čistší námořní paliva FuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0562) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Krajina a ekosystémy
 
-* [Lesní strategie EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021DC0572) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
-* [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
+* [Lesní strategie EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021DC0572) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839) {% include includes-local/fit-for-55-icon.html status="done" %}
 
 ### Podpůrná opatření
 
-* Vznik [Sociálního klimatického fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0955) <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
-* Posílení [Modernizačního a Inovačního fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959)[^reforma-eu-ets] <i class="fas fa-circle-check" style="margin-left:0.5em;color:#9ba5ad" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
+* Vznik [Sociálního klimatického fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0955) {% include includes-local/fit-for-55-icon.html status="done" %}
+* Posílení [Modernizačního a Inovačního fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959)[^reforma-eu-ets] {% include includes-local/fit-for-55-icon.html status="done" %}
 
 Pro více informací o obecném kontextu a přehledu k Fit for 55 přejděte na naši infografiku [Co je Fit for 55](/infografiky/fit-for-55).
 

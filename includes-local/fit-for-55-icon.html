@@ -1,0 +1,5 @@
+{% if include.status == "done" %}
+<i class="fas fa-circle-check ff55-done" title="Aktuální stav: schváleno" data-toggle="tooltip"></i>
+{% elsif include.status == "inprogress" %}
+<i class="fas fa-clock ff55-inprogress" title="Aktuální stav: čeká na schválení" data-toggle="tooltip"></i>
+{% endif %}
