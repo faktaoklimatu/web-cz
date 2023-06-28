@@ -147,7 +147,7 @@ items:
     share:    "1,33 %"
     pledge30: "−35 % ročních emisí oproti statu quo"
     conditional: |
-      Podmíněný závazek udává, o kolik by země byla schopná snížit emise, kdyby byly splněny další podmínky. Mexiko jako podmínky udává výši mezinárodní finanční podpory, inovace a transfer technologií a vyšší úsilí najvětších emitentů dodržovat cíle Pařížské dohody.
+      Podmíněný závazek udává, o kolik by země byla schopná snížit emise, kdyby byly splněny další podmínky. Mexiko jako podmínky udává výši mezinárodní finanční podpory, inovace a transfer technologií a vyšší úsilí největších emitentů dodržovat cíle Pařížské dohody.
     other: −40 % ročních emisí oproti statu quo
     ndc:      "https://unfccc.int/sites/default/files/NDC/2022-11/Mexico_NDC_UNFCCC_update2022_FINAL.pdf"
     ndc-date: 2022-11-17
