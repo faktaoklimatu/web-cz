@@ -1,6 +1,6 @@
 ---
 layout:        infographic
-title:         "Fit for 55: přehled navrhovaných opatření"
+title:         "Fit for 55: přehled opatření"
 slug:          "fit-for-55-opatreni"
 redirect_from: "/fit-for-55-opatreni"
 published:     2022-01-20
