@@ -75,9 +75,9 @@ Pro více informací o obecném kontextu a přehledu k Fit for 55 přejděte na 
 
 Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zabývají:
 
-[Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku
-[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku
-[Michal Hrubý](https://www.isfc.org/en/team), International Sustainable Finance Centre
+[Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku<br>
+[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku<br>
+[Michal Hrubý](https://www.isfc.org/en/team), International Sustainable Finance Centre<br>
 [Tomáš Jungwirth](https://www.amo.cz/autor/tomas-jungwirth/), Asociace pro mezinárodní otázky
 
 ### Zdroje
