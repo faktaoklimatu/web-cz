@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Co je Zelená dohoda pro Evropu?"
 slug:        "zelena-dohoda-pro-evropu"
 published:   2022-12-20
+updated:     2023-06-28
 authors:
   - id: "katerina-kolouchova"
   - ids: ["jirka-lnenicka", "kristi-psorn-zakopcanova"]
