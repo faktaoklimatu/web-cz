@@ -3,8 +3,11 @@ layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
 slug:        "emisni-povolenky-ets"
 published:   2021-06-13
+updated:     2023-06-29
 authors:
   - id: "tom-protivinsky"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ emise, opatreni, ekonomika ]
@@ -63,33 +66,34 @@ Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenk
 {% include figure.html
     name="ets-cena-povolenek-des.svg"
     name-mobile="ets-cena-povolenek-mob.svg"
-    alt="Historické ceny futures kontraktů na emisní povolenky."
-    source-text="Historické ceny futures kontraktů na emisní povolenky, Quandl, ICE"
-    source-url="https://www.quandl.com/data/CHRIS/ICE_C1"
+    alt="Liniový graf zobrazující vývoj cen emisní povolenky od roku 2005 do první poloviny roku 2023."
+    source-text="Historické ceny emisních povolenek, Trading Economics"
+    source-url="https://tradingeconomics.com/commodity/carbon"
 %}
 
-K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, a začátkem roku 2021 dokonce více než 30 €. Podle odhadů některých institucí bylo pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> v roce 2020 pohybovala v rozmezí 33–66 €.[^2] [^3] Spodní hranice 33 € dosáhla cena evropské emisní povolenky v prosinci 2020. Jedná se o dobrý signál, avšak sám o sobě není dostatečný: kromě dalšího růstu budoucích cen by bylo především potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
+K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, na začátku roku 2023 pak cena evropské povolenky v důsledku vysoké poptávky překonala hodnotu 100 €. Podle odhadů některých institucí je přitom pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> do roku 2030 pohybovala právě kolem 100 €.[^2]  Jedná se tak o dobrý signál, avšak sám o sobě není dostatečný: kromě vysokých cen evropských povolenek by bylo potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
 
 ## Která odvětví jsou do systému zahrnuta?
 
-Systém pokrývá zejména větší zdroje v energeticky náročných odvětvích (celkem téměř 11 000 zařízení), a to:
-- elektrárny s tepelným příkonem nad 20 MW,
-- ropné rafinérie,
-- koksovny,
-- železárny, ocelárny,
-- cementárny
-- a některou další průmyslovou výrobu.
+Systém pokrývá zejména větší zdroje v energeticky náročných odvětvích (celkem téměř 15 000 zařízení), a to:
+* elektrárny s tepelným příkonem nad 20 MW,
+* ropné rafinérie,
+* koksovny,
+* železárny, ocelárny,
+* cementárny
+* a některou další průmyslovou výrobu.
 
-Kromě toho zahrnuje přibližně 600 provozovatelů letadel v rámci [Evropského hospodářského prostoru](https://cs.wikipedia.org/wiki/Evropský_hospodářský_prostor)  (EHP). Souhrnně pokrývá přibližně 38 % emisí skleníkových plynů v EU[^1], kromě emisí CO<sub>2</sub> jsou zahrnuté také emise oxidu dusného N<sub>2</sub>O a emise zcela fluorovaných uhlovodíku PFCs.
+Kromě toho zahrnuje přibližně 1500 provozovatelů letadel v rámci [Evropského hospodářského prostoru](https://cs.wikipedia.org/wiki/Evropský_hospodářský_prostor) (EHP). Souhrnně pokrývá přibližně 38 % emisí skleníkových plynů v EU[^1], kromě emisí CO<sub>2</sub> jsou zahrnuté také emise oxidu dusného N<sub>2</sub>O a emise zcela fluorovaných uhlovodíku PFCs.
 
 ## Kdo dostává emisní povolenky bezplatně?
 
 V letech 2013–2020 bylo bezplatně přiděleno cca 43 % povolenek, především pro emisně intenzivní průmyslová odvětví. Zbylých 57 % bylo určeno k vydražení (skutečný počet vydražených povolenek byl však nižší). Bezplatné emisní povolenky jsou určeny takovým odvětvím hospodářství, ve kterých by bylo snadné přesunout výrobu do zemí, kde nejsou emise skleníkových plynů omezovány. Při důsledném uplatnění dražby povolenek by tak mohlo docházet k odlivu výrobních závodů z EU a navýšení emisí v jiných zemích. Množství bezplatně přidělovaných povolenek je postupně snižováno a například výroba elektřiny již není pro přidělování bezplatných povolenek způsobilá od roku 2013 (nicméně některé státy, včetně České republiky, si vyjednaly výjimku z tohoto pravidla až do roku 2019).[^1]
 
 ## Jakým způsobem je stanoveno maximální množství povolenek?
+
 Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální množství povolenek od roku 2013 rovnoměrně snižováno. V roce 2013 bylo vydáno 2,1 miliardy emisních povolenek a až do roku 2020 to každoročně bylo o 38 milionů méně – aby bylo zajištěno snížení emisí alespoň o 21 % v zahrnutých odvětvích (ve srovnání s rokem 2005).[^4]
 
-V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005) – tento cíl je nyní ještě upravován v rámci [Zelené dohody pro Evropu](https://cs.wikipedia.org/wiki/Zelená_dohoda_pro_Evropu).
+V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005), v roce 2023 byl tento cíl navýšen na 62 %.
 
 {% include figure.html
     name="ets-strop-des.svg"
@@ -100,7 +104,8 @@ V následující dekádě bude snižování ještě rychlejší: původním cíl
 %}
 
 ## Jak je nakládáno s financemi získanými v aukcích?
-Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2012–2019 přibližně 50 miliard eur (z toho 14 miliard byly výnosy v roce 2019, kdy byla cena povolenek nejvyšší). Dražba probíhá v rámci každého ze zapojených států – ty také rozhodují o konkrétním využití prostředků, které se aukcí vyberou. Z celkového obnosu bylo vynaloženo na klimatické a energetické účely 78 %, a to především na energii z obnovitelných zdrojů, zvyšování energetické účinnosti a udržitelnou dopravu.[^1]
+
+Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2013–2021 přibližně 100 miliard eur (z toho 31 miliard byly výnosy v roce 2021, kdy byla cena povolenek nejvyšší). Výnosy z dražby většiny povolenek plynou jednak do **rozpočtů členských států**, kde by měly být všechny počínaje rokem 2024 využity pro účely spojené s ochranou klimatu (dosud šlo o 50 %).[^smernice-eu-ets] V průměrů členské státy v roce 2021 vynaložily na klimatické a energetické účely 76 %, a to především na energii z obnovitelných zdrojů a udržitelnou dopravu.[^1] Od roku 2021 je pak část povolenek dražena pro **Modernizační a Inovační fond**, kdy první slouží především pro modernizaci energetiky ve státech nejvíce nejvíce zasažených dekarbonizací (mezi něž patří i Česko), druhý pak pro podporu velkých inovativních projektů (např. pro nízkouhlíkové technologie v průmyslu).
 
 ## Jak je EU ETS průběžně upravován?
 
@@ -116,20 +121,29 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
     source-url="https://ec.europa.eu/clima/policies/ets_en"
 %}
 
+## Co přináší reforma EU ETS z roku 2023?
+
+V návaznosti na vyšší klimatické ambice EU došlo v roce 2023 v rámci balíčku [Fit for 55](/infographics/fit-for-55-opatreni) k dalším úprávám stávajícího systému. [Reforma](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) přináší následující změny:
+* Emise skleníkových plynů spadající pod stávající systém EU ETS by měly do roku 2030 v porovnání s rokem 2005 klesnout o 62 % (oproti původním 43 %).
+* Veškeré **výnosy** z prodeje povolenek, kterými disponují členské státy **musí být využity na klimaticky prospěšná opatření** (oproti dosavadním 50 %).
+* Rozšíření stávajícího systému o námořní dopravu (s náběhem mezi lety 2024–2026).
+* Rychlejší phase-out povolenek alokovaných zdarma s jejich úplným ukončením v roce 2034. Alternativou pro ochranu unijních podniků před konkurencí z mimounijních států bude zavedení tzv. [**uhlíkového vyrovnání na hranicích**](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0564) (*Carbon Border Adjustment Mechanism*, CBAM), které zpoplatní dovoz emisně náročných produktů do EU ve stejné míře jako při nákupu povolenek.
+* Vznik **nového systému** obchodování s emisními povolenkami **pro sektory silniční dopravy a budov** (tzv. EU ETS 2) od roku 2027. Emise skleníkových plynů v tomto sektoru mají do roku 2030 klesnout o alespoň 43 % (ve srovnání s rokem 2005).
+* Vznik **Sociálního klimatického fondu**, jehož prostřednictvím budou podporovány zasažené skupiny obyvatel a podniky negativně zasažené zavedením EU ETS 2. Fond bude financován výnosy z prodeje povolenek v tomto systému. Česku z fondu připadne přibližně 50 miliard korun.
 
 ## V čem EU ETS funguje dobře a v čem ne?
 
 **Výhody**
 
-- EU ETS je tržní mechanismus, tj. rozhodování o emisích skleníkových plynů je z velké části ponecháno na samotných producentech. Elektrárny a další zařízení se podle aktuální ceny rozhodují, zda nakoupí emisní povolenky, nebo investují do snížení vlastních emisí. V kombinaci s omezováním celkového množství povolenek tak **lze dosáhnout emisních cílů s nízkými dodatečnými náklady** – a právě to je hlavní výhodou celého systému.
-- **Finanční prostředky získané z dražeb** povolenek je **možné použít k podpoře inovací** a ke klimatickým a energetickým účelům.
-- Dobře nastavené ETS systémy umožňují propojování s dalšími zeměmi (např. EU ETS je dnes propojen s obdobným systémem ve Švýcarsku a v budoucnu by měl být napojen i na nově vznikající britský systém). Tím dochází k **vyrovnávání cen emisí z různých zemí a ke zvyšování efektivity systému**.
+* EU ETS je tržní mechanismus, tj. rozhodování o emisích skleníkových plynů je z velké části ponecháno na samotných producentech. Elektrárny a další zařízení se podle aktuální ceny rozhodují, zda nakoupí emisní povolenky, nebo investují do snížení vlastních emisí. V kombinaci s omezováním celkového množství povolenek tak **lze dosáhnout emisních cílů s nízkými dodatečnými náklady** – a právě to je hlavní výhodou celého systému.
+* **Finanční prostředky získané z dražeb** povolenek je **možné použít k podpoře inovací** a ke klimatickým a energetickým účelům. Mimo rozpočty jednotlivých států plynou tyto výnosy do Modernizačního nebo Inovačního fondu.
+* Dobře nastavené ETS systémy umožňují propojování s dalšími zeměmi (např. EU ETS je dnes propojen s obdobným systémem ve Švýcarsku a v budoucnu by měl být napojen i na nově vznikající britský systém). Tím dochází k **vyrovnávání cen emisí z různých zemí a ke zvyšování efektivity systému**.
 
 **Nevýhody**
 
-- **EU ETS nepokrývá všechny sektory, jež se podílejí na vypouštění emisí skleníkových plynů**. Kvůli administrativní zátěži nelze efektivně zahrnovat malé emitenty skleníkových plynů (např. sektor dopravy), a proto některé evropské státy doplňují EU ETS o národní uhlíkové daně.
-- **Přidělování bezplatných povolenek některým provozům**. Během počátečních fází EU ETS nebyla k dispozici přesná data o skutečných emisích jednotlivých provozů, v některých případech tak mohl daný provoz zdarma obdržet vyšší množství povolenek, než kolik potřeboval (a přebytek následně se ziskem prodat). Tomu by mělo zabránit monitorování vypouštěných emisí a postupné omezování bezplatných alokací povolenek.
-- Budoucí ceny povolenek jsou nepředvídatelné,  což komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
+* **EU ETS nepokrývá všechny sektory, jež se podílejí na vypouštění emisí skleníkových plynů**, proto některé evropské státy doplňují EU ETS o národní uhlíkové daně.
+* **Přidělování bezplatných povolenek některým provozům**. Během počátečních fází EU ETS nebyla k dispozici přesná data o skutečných emisích jednotlivých provozů, v některých případech tak mohl daný provoz zdarma obdržet vyšší množství povolenek, než kolik potřeboval (a přebytek následně se ziskem prodat). Tomu by mělo zabránit monitorování vypouštěných emisí a postupné omezování bezplatných alokací povolenek.
+* Budoucí ceny povolenek jsou nepředvídatelné, což komplikuje dlouhodobé plánování pro zahrnuté elektrárny a průmyslové závody. V reakci na nízkou cenu povolenek v roce 2013, která byla způsobena přebytkem povolenek v systému, zavedla EU tzv. Rezervu tržní stability (Market Stability Reserve), která dokáže výkyvy ceny částečně vyrovnávat. Přebytečné nevydražené povolenky byly postupně přesunuty do rezervy, ze které již nebudou draženy, avšak v případě nedostatku povolenek v systému mohou být později uvolněny. (Jinou možností, jak bránit přílišným výkyvům ceny, je stanovit minimální a maximální cenu povolenek. EU ETS tento přístup nevyužívá, některé jiné ETS systémy ve světě však ano.)
 
 {% include figure.html
     name="ets-overene-emise-des.svg"
@@ -151,12 +165,12 @@ V letech 2009–2013 byly celkové ověřené emise nižší než množství alo
 
 Od svého spuštění se EU ETS stal inspirací pro mnoho dalších států a regionů ve světě. Obdobné systémy se dnes používají například v Číně (v některých městech ETS funguje od roku 2013, celonárodní systém byl spuštěn v roce 2021 a dnes je největším ETS na světě zahrnujícím zhruba 30 % čínských emisí). Obdobu EU ETS najdeme také v Austrálii, na Novém Zélandu, ve většině kanadských provincií, v některých státech USA a v dalších regionech.
 
-Některé státy zpoplatňují emise skleníkových plynů pomocí tzv. uhlíkové daně (carbon tax), která je dalším efektivním tržním mechanismem pro snížení emisí a může vhodně doplňovat ETS zahrnutím jiných sektorů (např. dopravy). Na celém světě dnes funguje přibližně 60 různých systémů zpoplatňujících emise skleníkových plynů, přičemž dvě třetiny z nich byly spuštěny v uplynulé dekádě.
+Některé státy zpoplatňují emise skleníkových plynů pomocí tzv. uhlíkové daně (*carbon tax*), která je dalším efektivním tržním mechanismem pro snížení emisí a může vhodně doplňovat ETS zahrnutím jiných sektorů (např. dopravy). Na celém světě dnes funguje přibližně 60 různých systémů zpoplatňujících emise skleníkových plynů, přičemž dvě třetiny z nich byly spuštěny v uplynulé dekádě.
 
 
 ## Zdroje
-[^1]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem"](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:52020DC0740) Zpráva komise Evropskému parlamentu a Radě, Evropská komise, Brusel (2020).
-[^2]: World Bank. ["State and Trends of Carbon Pricing 2020"](https://openknowledge.worldbank.org/handle/10986/33809) (May), World Bank, Washington, DC (2020).
-[^3]: High-Level Commission on Carbon Prices. ["Report of the High-Level Commission on Carbon Prices."](https://openknowledge.worldbank.org/handle/10986/32419) World Bank, Washington, DC (2017).
-[^4]: Evropská komise. ["Commission decision on the Union-wide quantity of allowances to be issued under the EU Emission Trading System for 2021"](https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf) Evropská komise, Brusel (2020).
+[^1]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem v roce 2021"](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52022DC0516).
+[^2]: World Bank. ["State and Trends of Carbon Pricing 2023"](https://openknowledge.worldbank.org/handle/10986/39796). Autoři zde uvádí cenu 115 amerických dolarů za tunu CO<sub>2</sub> v cenách roku 2023, což je při kurzu 0,89 € za 1 dolar přibližně 100 €.
+[^4]: Evropská komise. ["Commission decision on the Union-wide quantity of allowances to be issued under the EU Emission Trading System for 2021"](https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf).
+[^smernice-eu-ets]: Evropská unie. ["Směrnice Evropského parlamentu a Rady (EU) 2023/959 ze dne 10. května 2023, kterou se mění směrnice 2003/87/ES o vytvoření systému pro obchodování s povolenkami na emise skleníkových plynů v Unii"](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
 
