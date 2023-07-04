@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak dekarbonizovat minerální průmysl?"
 slug:        "mineralni-prumysl"
-published:   2023-06-26
+published:   2023-07-04
 authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
@@ -49,6 +49,14 @@ Co se týče alternativních úsporných řešení, mluví se například o 3D t
 
 Výše popsaný scénář zároveň nepočítá s kompletní dekarbonizací do roku 2050 a očekává se, že emise se podaří snížit o téměř 75 procent.[^netzero]
 
+{% include figure.html
+    name="chris-linnett-EeqxbxILScA-unsplash.jpg"
+    alt="Cementárna v USA."
+    caption="Cementárna."
+    source-text="Unsplash"
+    source-url="https://unsplash.com/photos/EeqxbxILScA"
+%}
+
 ## Vápno
 
 Vápno nachází uplatnění ve stavebnictví, zemědělství, papírnictví, potravinářství či při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) pak využíváme v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel.
@@ -66,6 +74,14 @@ Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob sníž
 ### Vedlejší metody
 
 Významnou alternativou (či doplněním) může být využití nízkoemisního vodíku jako paliva, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v tom případě bude nižší.
+
+{% include figure.html
+    name="Lime_plant,_Wyoming.jpg"
+    alt="Vápenka v USA."
+    caption="Vápenka."
+    source-text="Wikimedia"
+    source-url="https://commons.wikimedia.org/wiki/File:Lime_plant,_Wyoming.jpg"
+%}
 
 ## Sklo
 
@@ -90,6 +106,14 @@ Určitý omezený přínos může mít zvýšení recyklace, nicméně v EU se v
 Spíše doplňkovou možností je pak použití kalcinovaných a alternativních surovin (ušetřilo by 2 % emisí CO<sub>2</sub>).[^sklosuroviny]
 
 Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Jeho zavedení by znamenalo o 7 % méně emisí oproti současnému stavu.[^skloccs]
+
+{% include figure.html
+    name="mael-balland-Tjo91_O8yMo-unsplash.jpg"
+    alt="Sklárna."
+    caption="Sklárna."
+    source-text="Unsplash"
+    source-url="https://unsplash.com/photos/Tjo91_O8yMo"
+%}
 
 ## Poznámky a zdroje
 
