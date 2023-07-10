@@ -120,20 +120,20 @@ Klimatická změna je složitý komplex vzájemně provázaných jevů. Data, kt
 <div class="row about-us lead">
 <div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-1"></div>
-<div>
-<strong>Cena za komunikaci klimatické změny</strong> (2020) od České učené společnosti a OSN
+<div markdown="1">
+**[Cena Josefa Vavrouška](https://www.cenajosefavavrouska.cz/Laureati)** za výjimečný počin (za rok 2022)
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-2"></div>
-<div>
-První cena v akcelerátoru <strong>Climate Challenge</strong> (2020)
+<div markdown="1">
+**Cena AFO Olomouc** za významný přínos popularizaci vědy (2022)
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-4 p-3 p-md-4 price">
 <div class="price-3"></div>
-<div>
-<strong>Cena AFO Olomouc</strong> za významný přínos popularizaci vědy (2022)
+<div markdown="1">
+**[Cena za komunikaci klimatické změny](https://www.cenazaklima.cz/laureati/)** (2020) od České učené společnosti a OSN
 </div>
 </div>
 </div>
