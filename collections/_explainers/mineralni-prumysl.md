@@ -19,8 +19,15 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu při kterých se opíráme o studie průmyslových asociací či konzultačních firem."
+perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu při kterých se opíráme o studie průmyslových asociací či konzultačních firem. Přestože dekarbonizace tohoto průmyslového sektoru je výzva, již dnes máme představu jak mohou různé scénáře dekarbonizace vypadat a víme, které technologie jsou zapotřebí. V krátkodobém horizontu můžeme dosáhnout snížení emisí již dnes dostupnými metodami jako například zvyšováním efektivity prostřednictvím energetických úspor. Ke kompletní dekarbonizaci budeme potřebovat technologie jako zachytávání CO<sub>2</sub> či dostupný zelenéý vodík, tedy technologie, které je nutné ještě dále rozvíjet a vybudovat pro ně potřebnou infrastrukturu."
 ---
+
+{% include preview-box.html
+    title="Detaily k jednotlivým technologiím"
+    text="Více informací k jednotlivým technologiím dekarbonizace průmyslu nabízí první díl této série."
+    slug="technologie-dekarbonizace-prumyslu"
+%}
+
 ## Cement
 
 Cement je klíčovou příměsí betonu. Beton je dokonce druhou nejvíce spotřebovávanou látkou na světě po vodě.[^spotreba] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina cementu na světě se používá na výstavbu obytných a nebytových budov, zatímco zbytek připadá na budování různých typů infrastruktury, např. silnic, železnic a energetických zařízení.[^infrastruktura]
@@ -29,7 +36,7 @@ Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci
 
 Na tunu cementu vzniká průměrně 0,59 tun CO<sub>2</sub>.[^cementintenzita] Emisní intenzita cementu závisí také na jeho druhu.
 
-Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 % a zároveň dekarbonizace může zdražit cement až téměř o polovinu.[^cementzdrazeni] V posledních letech lze zároveň vidět stoupající emisní intenzitu cementu, z 0,54 tun CO<sub>2</sub> roku 2015 na 0,59 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2021.[^cementstoupajiciintenzita] Vzhledem k důležitosti cementu a jeho emisní náročnosti se řadí mezi nejvíce emisně náročné průmysly a cementárny patří mezi [největší emitenty i v České republice](/infografiky/nejvetsi-emitenti-cr).
+Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 %.[^cementpoptavka] V posledních letech lze zároveň vidět stoupající emisní intenzitu cementu, z 0,54 tun CO<sub>2</sub> roku 2015 na 0,59 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2021.[^cementstoupajiciintenzita] Vzhledem k důležitosti cementu a jeho emisní náročnosti se řadí mezi nejvíce emisně náročné průmysly a cementárny patří mezi [největší emitenty i v České republice](/infografiky/nejvetsi-emitenti-cr).
 
 ### Zachytávání CO<sub>2</sub>
 
@@ -69,7 +76,7 @@ Podobně jako u cementu nemůžeme ani u vápna do budoucna očekávat pokles sp
 
 ### Zachytávání CO<sub>2</sub>
 
-Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob snížení emisí. Pilotní projekty ukazují potenciál zadržet až 95 % celkových emisí CO<sub>2</sub> dané vápenky (tedy včetně emisí ze spalování).[^vapnozachyceni] Zároveň však může nasazení CCS výrobní cenu vápna až zdvojnásobit.[^vapnozdrazeni]
+Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob snížení emisí. Pilotní projekty ukazují potenciál zadržet až 95 % celkových emisí CO<sub>2</sub> dané vápenky (tedy včetně emisí ze spalování).[^vapnozachyceni]
 
 ### Vedlejší metody
 
@@ -124,9 +131,8 @@ Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technol
 [^cementsubstituce]: Ve scénáři dekarbonizace od [McKinsey](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement) je nahrazování slínku efektivní cestou dekarbonizace, ovšem také může narážet na nedostatek materiálu v budoucnu. Například u uhelného popílku může dojít ke snížení dostupnosti v rámci dekarbonizace energetiky a výroby oceli, které dnes tvoří zdroje tohoto materiálu.
 [^cementuspora]: [Digitalizace stavebnictví](https://www.process-worldwide.com/bim-technology-delivers-a-green-and-smart-cement-factory-a-1103563/) má zároveň potenciál i vést k finančím úsporám a celkově větší efektivitě stavby.
 [^cementrecyklace]: Ve scénáři dekarbonizace od [McKinsey](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement) mohou tyto alternativní přístupy hrát velkou roli při dekarbonizaci výroby cementu. Panuje ovšem větší míra nejistoty ohledně výsledného vlivu na snížení emisí.
-[^cementzdrazeni]: Ve výši ceny za zelený cement se očekávají ovšem regionální rozdíly dle [McKinsey](https://www.mckinsey.com/capabilities/sustainability/our-insights/Spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/cement).
+[^cementpoptavka]: Míra odhadovaného růstu poptávky po cementu se ovšem liší, 6 procent předvídá [McKinsey](https://www.mckinsey.com/capabilities/sustainability/our-insights/Spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/cement), ovšem například [Světové ekonomické fórum](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf) vidí potenciál až 45 procentního růstu poptávky po cementu.
 [^vapnozachyceni]: CCS projekty v sektoru vápna jsou aktuálně v pilotní fázi například ve vápence firmy [Lhoist](https://www.cemnet.com/News/story/172677/decarbonisation-in-the-lime-sector.html).
-[^vapnozdrazeni]: Dle [European Lime Association](https://www.worldcement.com/special-reports/06012015/a-competitive-and-efficient-lime-industry-part-three-86/) je tak CCS závislé na ceně elektřiny.
 [^vapnopaliva]: [Vápenářské asociace a podniky](https://www.cemnet.com/News/story/172677/decarbonisation-in-the-lime-sector.html) tak zkoumají možnost přimíchání nízkoemisního vodíku s aktuálně používaným zemním plynem v rámci spalování a možnost používání pouze vodíku.
 [^britishglass]: Následující čísla vycházejí z podmínek britského sklářského průmyslu. Návrhy na dekarbonizaci skla ze scénáře od společnosti [British Glass](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) se ale dají aplikovat obecněji.
 [^skloelektrifikace]: Podle [British Glass](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) se tak jedná o hlavní nástroj dekarbonizace sklářského průmyslu.
