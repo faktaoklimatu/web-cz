@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak dekarbonizovat minerální průmysl?"
 slug:        "mineralni-prumysl"
-published:   2023-07-04
+published:   2023-07-10
 authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
@@ -19,12 +19,12 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu při kterých se opíráme o studie průmyslových asociací či konzultačních firem. Přestože dekarbonizace tohoto průmyslového sektoru je výzva, již dnes máme představu jak mohou různé scénáře dekarbonizace vypadat a víme, které technologie jsou zapotřebí. V krátkodobém horizontu můžeme dosáhnout snížení emisí již dnes dostupnými metodami jako například zvyšováním efektivity prostřednictvím energetických úspor. Ke kompletní dekarbonizaci budeme potřebovat technologie jako zachytávání CO<sub>2</sub> či dostupný zelenéý vodík, tedy technologie, které je nutné ještě dále rozvíjet a vybudovat pro ně potřebnou infrastrukturu."
+perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu při kterých se opíráme o studie průmyslových asociací či konzultačních firem. Přestože dekarbonizace tohoto průmyslového sektoru je výzva, již dnes máme představu jak mohou různé scénáře dekarbonizace vypadat a víme, které technologie jsou zapotřebí. V krátkodobém horizontu můžeme dosáhnout snížení emisí již dnes dostupnými metodami jako například zvyšováním efektivity prostřednictvím energetických úspor. Ke kompletní dekarbonizaci budeme potřebovat technologie jako zachytávání CO<sub>2</sub> či dostupný zelený vodík, tedy technologie, které je nutné ještě dále rozvíjet a vybudovat pro ně potřebnou infrastrukturu." 
 ---
 
 {% include preview-box.html
-    title="Detaily k jednotlivým technologiím"
-    text="Více informací k jednotlivým technologiím dekarbonizace průmyslu nabízí první díl této série."
+    title="Jaké jsou technologie dekarbonizace průmyslu?"
+    text="Detailnější pohled na technologie dekarbonizace průmyslu výrobu můžete najít v našem explaineru."
     slug="technologie-dekarbonizace-prumyslu"
 %}
 
@@ -49,6 +49,12 @@ V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat p
 Každá z dalších možností už je jednotlivě méně efektivní, v součtu však přesto mohou emise redukovat významně. Pro dekarbonizaci výroby cementu lze využít alternativní paliva s nižší uhlíkovou stopou – zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva] Dále je v cementářském průmyslu stále prostor pro zvyšování energetické efektivity výroby (až o 7 % méně skleníkových plynů).[^cementefektivita] Slibné je rovněž nahrazování slínku, který je při výrobě důležitým meziproduktem. Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
 
 Recyklace cementu není v současnosti příliš běžná. K jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na širší využití recyklovaného betonu nicméně v současnosti už vznikají studie.
+
+{% include preview-box.html
+    title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
+    text="Pokud chcete ještě detailnější pohled na dekarbonizaci cementu a dnešní výrobu můžete ho najít v našem samostatném explaineru."
+    slug="emise-vyroba-cementu"
+%}
 
 Další možností by byla částečná náhrada betonu jinou surovinou, například dřevem. Velké rozšíření podobných trendů by však do budoucna naráželo na problémy s environmentálně udržitelnými dodávkami materiálu. I tak je potenciál úspory emisí stále značný[^drevostavby].
 
