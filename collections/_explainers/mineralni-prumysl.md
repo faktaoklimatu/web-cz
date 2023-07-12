@@ -19,7 +19,7 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu při kterých se opíráme o studie průmyslových asociací či konzultačních firem. Přestože dekarbonizace tohoto průmyslového sektoru je výzva, již dnes máme představu jak mohou různé scénáře dekarbonizace vypadat a víme, které technologie jsou zapotřebí. V krátkodobém horizontu můžeme dosáhnout snížení emisí již dnes dostupnými metodami jako například zvyšováním efektivity prostřednictvím energetických úspor. Ke kompletní dekarbonizaci budeme potřebovat technologie jako zachytávání CO<sub>2</sub> či dostupný zelený vodík, tedy technologie, které je nutné ještě dále rozvíjet a vybudovat pro ně potřebnou infrastrukturu." 
+perex:       "Jedním z emisně náročných průmyslových sektorů je takzvaný minerální průmysl. Jedná se o nekovové minerální výrobky, mezi které patří například cement, vápno či sklo. V tomto textu představíme základní scénáře dekarbonizace tohoto průmyslového segmentu." 
 ---
 
 {% include preview-box.html
@@ -27,6 +27,11 @@ perex:       "Jedním z emisně náročných průmyslových sektorů je takzvan�
     text="Detailnější pohled na technologie dekarbonizace průmyslu výrobu můžete najít v našem explaineru."
     slug="technologie-dekarbonizace-prumyslu"
 %}
+
+Přestože dekarbonizace tohoto průmyslového sektoru je výzva, již dnes máme představu jak mohou různé scénáře dekarbonizace vypadat a víme, které technologie jsou zapotřebí. V krátkodobém horizontu můžeme dosáhnout snížení emisí již dnes dostupnými metodami jako například zvyšováním efektivity prostřednictvím energetických úspor. Ke kompletní dekarbonizaci budeme potřebovat technologie jako zachytávání CO<sub>2</sub> či dostupný zelený vodík, tedy technologie, které je nutné ještě dále rozvíjet a vybudovat pro ně potřebnou infrastrukturu.  
+
+*V tomto textu se opíráme o studie průmyslových asociací či konzultačních firem. Cílem není ukázání přesné cesty dekarbonizace, jelikož přesné poměry použitých technologií jsou závislé na budoucím vědeckém vývoji, ekonomické situaci a regionálním rozdílům. Text ukazuje které technologie a cesty již dnes víme, že mohou hrát klíčovou roli při dekarbonizaci průmyslu a které budou spíše vedlejší.*
+{: .longread-small}
 
 ## Cement
 
