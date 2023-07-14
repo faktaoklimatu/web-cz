@@ -20,7 +20,7 @@ caption:       "Fit for 55 je balíček legislativních návrhů Evropské komis
 
 Níže uvádíme přehled opatření včetně odkazů na poslední verzi legislativního aktu (někde jde o již schválenou podobu, někde o návrh, který se stále projednáváná nebo na projednání čeká):
 
-### Tržní mechanismy
+## Tržní mechanismy
 
 #### Emisní povolenky
 
@@ -32,7 +32,7 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 * [Uhlíkové vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM) {% include includes-local/fit-for-55-icon.html status="done" %}
 * [Revize směrnice o zdanění energie](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0563) (*Energy Taxation Directive*, ETD) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
-### Cíle a regulace
+## Cíle a regulace
 
 #### Závazky pro snižování emisí (v sektorech nezatížených tržními mechanismy)
 
@@ -62,7 +62,7 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 * [Lesní strategie EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021DC0572) {% include includes-local/fit-for-55-icon.html status="done" %}
 * [Revize nařízení o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839) {% include includes-local/fit-for-55-icon.html status="done" %}
 
-### Podpůrná opatření
+## Podpůrná opatření
 
 * Vznik [Sociálního klimatického fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0955) {% include includes-local/fit-for-55-icon.html status="done" %}
 * Posílení [Modernizačního a Inovačního fondu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959)[^reforma-eu-ets] {% include includes-local/fit-for-55-icon.html status="done" %}
