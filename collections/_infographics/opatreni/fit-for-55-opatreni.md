@@ -40,14 +40,14 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 
 #### Energetika
 
-* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557) (*Renewable Energy Directive*, RED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557)[^red] (*Renewable Energy Directive*, RED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 * [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 * [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 * [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Energetická účinnost
 
-* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) (*Energy Efficiency Directive*, EED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558)[^eed] (*Energy Efficiency Directive*, EED) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 * [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Doprava
@@ -89,4 +89,8 @@ Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zab�
 [^explainer-lesni-strategie-eu]: Více v našem textu [Co přináší nová Lesnická strategie EU do roku 2030?](/explainery/lesnicka-strategie-eu)
 
 [^reforma-eu-ets]: Následující opatření jsou součástí jedné směrnice: revize stávajícího systému EU ETS, jeho rozšíření na námořní dopravu, vznik nového systému EU ETS 2 pro silniční dopravu a budovy a posílení Modernizačního a Inovačního fondu.
+
+[^red]: V březnu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/30/council-and-parliament-reach-provisional-deal-on-renewable-energy-directive/) o podobě směrnice, přičemž se očekává, že by měla brzy vstoupit v platnost.
+
+[^eed]: V březnu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/10/council-and-parliament-strike-deal-on-energy-efficiency-directive/) o podobě směrnice, přičemž se očekává, že by měla brzy vstoupit v platnost.
 
