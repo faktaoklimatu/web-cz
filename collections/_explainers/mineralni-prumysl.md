@@ -70,7 +70,7 @@ Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do r
 {% include figure.html
     name="chris-linnett-EeqxbxILScA-unsplash.jpg"
     alt="Cementárna v USA."
-    caption="1 tuna cementu = cca 0,59 tun CO<sub>2</sub>"
+    caption="1 tuna cementu = cca 0,59 tuny CO<sub>2</sub>"
     source-text="Unsplash"
     source-url="https://unsplash.com/photos/EeqxbxILScA"
 %}
@@ -96,7 +96,7 @@ Významnou alternativou (či doplněním) může být využití nízkoemisního 
 {% include figure.html
     name="Lime_plant,_Wyoming.jpg"
     alt="Vápenka v USA."
-    caption="1 tuna vápna = 0,75 tun CO<sub>2</sub>."
+    caption="1 tuna vápna = 0,75 tuny CO<sub>2</sub>."
     source-text="Wikimedia"
     source-url="https://commons.wikimedia.org/wiki/File:Lime_plant,_Wyoming.jpg"
 %}
