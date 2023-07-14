@@ -131,5 +131,6 @@ subtopics:
   - 4-zemedelstvi-a-lesnictvi
   - 22-jmk-adaptace
   - ekonomicka-hodnota-prirody
+  - 2023-reserse-soil-carbon
 
 ---
