@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Jak dekarbonizovat minerální průmysl?"
+title:       "Jak dekarbonizovat výrobu cementu, vápna a skla?"
 slug:        "mineralni-prumysl"
 published:   2023-07-10
 authors:
@@ -19,7 +19,7 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby. Potřebné technologie jako zachytávání CO<sub>2</sub> či zelený vodík už k dispozici jsou, bude ale nutné je dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu." 
+perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby, zejména u cementu a vápna. Známe potřebné technologie jako zachytávání CO<sub>2</sub> či zelený vodík, bude ale nutné je dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu." 
 ---
 
 {% include preview-box.html
@@ -28,7 +28,7 @@ perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného 
     slug="technologie-dekarbonizace-prumyslu"
 %}
 
-Důležitost dekarbonizace minerálního průmyslu navíc ještě podtrhuje skutečnost, že poptávka po jeho produktech bude s rozvojem ekonomiky pravděpodobně v dalších dekádách růst. Bez skla, vápna a cementu se zatím společnost úplně neobejde. V krátkodobém horizontu sice lze v tomto odvětví dosáhnout částečného snížení emisí metodami, které jsou dostupné už dnes (například zvyšováním efektivity pomocí energetických úspor), ale k dosažení net-zero bude nutné vyřešit také již zmíněné emise z chemických reakcí.
+Bez cementu, vápna a skla se společnost neobejde a světová poptávka po těchto produktech bude v následujících letech nejspíše růst. V krátkodobém horizontu sice lze v tomto odvětví dosáhnout částečného snížení emisí metodami, které jsou dostupné už dnes (například zvyšováním efektivity pomocí energetických úspor), ale k dosažení uhlíkové neutrality bude nutné vyřešit také již zmíněné emise z chemických reakcí.
 
 *Následující text představuje různé scénáře dekarbonizace minerálního průmyslu a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
@@ -39,21 +39,26 @@ Cement je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce s
 
 Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na teplo potřebné při výrobě.**[^emisecement]
 
-Na tunu cementu vzniká průměrně 0,59 tun CO<sub>2</sub>.[^cementintenzita] Emisní intenzita cementu závisí také na jeho druhu.
+{% include figure.html
+    name="vzorec.svg"
+    alt="CaCO3 + teplo ⟶ CaO + CO2"
+%}
 
-Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu do budoucna pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 %.[^cementpoptavka] V posledních letech lze zároveň pozorovat stoupající emisní intenzitu cementu: z 0,54 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2015 na 0,59 tun CO<sub>2</sub> v roce 2021.[^cementstoupajiciintenzita] Vzhledem k důležitosti cementu a jeho emisní náročnosti se tento sektor řadí mezi nejvíce emisně náročné průmysly a cementárny patří mezi [největší emitenty i v České republice](/infografiky/nejvetsi-emitenti-cr).
+Na tunu cementu vzniká průměrně 0,6 tun CO<sub>2</sub>.[^cementintenzita] Emisní intenzita cementu závisí také na jeho druhu.
+
+Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu do budoucna pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 % a Světové ekonomické fórum až o 45 %.[^cementpoptavka] Vzhledem k důležitosti cementu a jeho emisní náročnosti se tento sektor řadí mezi nejvíce emisně náročné průmysly a cementárny patří mezi [největší emitenty i v České republice](/infografiky/nejvetsi-emitenti-cr).
 
 ### Zachytávání CO<sub>2</sub>
 
-U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
+U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Zařízení na CCS dovede zachytit 90-95[^ccsintenzita] procent emisí dané cementáry a jedná se tak o hlavní technologii dekarbonizace cementu, bez které se uhlíkové neutralitě nelze přiblížit. Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
 
-V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat přibližně 45% snížení emisí ve srovnání s emisemi z cementu, který se vyrábí dnes.[^cementsnizeni]
+V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat přibližně polovinu snížení emisí ve srovnání s emisemi z cementu, který se vyrábí dnes.[^cementsnizeni] Z ekonomických důvodů CCS nebude tvořit jediné řešení a ke snížení emisí dojde i jinými způsoby.
 
 ### Vedlejší metody
 
-Přestože každá z dalších možností už je jednotlivě méně efektivní, v součtu mohou všechny ještě redukovat emise významně. Lze využít například alternativní paliva s nižší uhlíkovou stopou – zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva] Dále je v cementářském průmyslu ještě prostor pro zvyšování energetické efektivity výroby (až o 7 % méně skleníkových plynů).[^cementefektivita] Slibné je rovněž nahrazování slínku, který je při výrobě důležitým meziproduktem. Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
+Přestože každá z dalších možností už je jednotlivě méně efektivní, v součtu mohou všechny redukovat emise významně. Lze využít například alternativní paliva s nižší uhlíkovou stopou – zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva] Dále je v cementářském průmyslu prostor pro zvyšování energetické efektivity výroby (až o 7 % méně skleníkových plynů).[^cementefektivita] Slibné je rovněž nahrazování slínku, který je při výrobě důležitým meziproduktem. Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
 
-Recyklace cementu není v současnosti příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
+Recyklace betonu není v současnosti příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
 
 {% include preview-box.html
     title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
@@ -61,7 +66,7 @@ Recyklace cementu není v současnosti příliš běžná. Jejímu širšímu vy
     slug="emise-vyroba-cementu"
 %}
 
-Další možností je částečná náhrada betonu jinou surovinou, například dřevem. Velké rozšíření podobných trendů by do budoucna mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný[^drevostavby].
+Také lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný[^drevostavby].
 
 Co se týče alternativních úsporných řešení, mluví se například o 3D tisku budov, ten ale zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu.[^cementuspora] Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody a recyklace celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^cementrecyklace]
 
@@ -70,16 +75,16 @@ Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do r
 {% include figure.html
     name="chris-linnett-EeqxbxILScA-unsplash.jpg"
     alt="Cementárna v USA."
-    caption="1 tuna cementu = cca 0,59 tuny CO<sub>2</sub>"
+    caption="1 tuna cementu = cca 0,6 tuny CO<sub>2</sub>"
     source-text="Unsplash"
     source-url="https://unsplash.com/photos/EeqxbxILScA"
 %}
 
 ## Vápno
 
-Vápno nachází uplatnění ve stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel.
+Vápno nachází uplatnění v řadě průmyslů, stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel.
 
-**Dvě třetiny emisí vznikají při chemické reakci přeměny vápence na hašené vápno.** Tento proces přeměny v současnosti není možné přímo nahradit jiným, emisně méně náročným. **Zbývající třetina emisí připadá na spalování.**[^emisevapno]
+**Dvě třetiny emisí vznikají u výroby vápna procesem kalcinace stejně jako u cementu** Tento proces přeměny v současnosti není možné přímo nahradit jiným, emisně méně náročným. **Zbývající třetina emisí připadá na spalování.**[^emisevapno]
 
 Při výrobě tuny vápna vzniká 0,75 tun emisí CO<sub>2</sub>.[^vapnointenzita]
 
@@ -103,13 +108,13 @@ Významnou alternativou (či doplněním) může být využití nízkoemisního 
 
 ## Sklo
 
-Se sklem se lze nejčastěji setkat ve formě obalů či oken, své důležité využití však má i v rámci dekarbonizace. Izolační dvojskla a trojskla v oknech, stejně jako izolující skelná vata pomáhají se snížením tepelných ztrát budov. Sklo je také součástí solárních panelů, kde tvoří významnou část hmotnosti panelu, ale i spotřeby energie, která je k jeho výrobě potřeba. Sklo lze rovněž najít ve větrných turbínách v podobě skleněných vláken (ta se ostatně používají i v automobilovém průmyslu coby náhrada za těžší materiály).
+Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let.
 
 U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^emisesklo] Především jde o reakce spojené se sklářskými surovinami (např. vápencem).
 
 Při výrobě skla vzniká přibližně 0,5 tun emisí CO<sub>2</sub> na tunu skla.[^sklointenzita]
 
-U skla nelze do budoucna očekávat úspory ve využití či jeho větší substituci. Zároveň představuje důležitý materiál v rámci transformace a dekarbonizace jiných oblastí.
+U skla nelze do budoucna očekávat úspory ve využití či jeho větší substituci. Zároveň představuje důležitý materiál v rámci transformace a dekarbonizace jiných oblastí. Izolační dvojskla a trojskla v oknech, stejně jako izolující skelná vata pomáhají se snížením tepelných ztrát budov. Sklo je také součástí solárních panelů, kde tvoří významnou část hmotnosti panelu, ale i spotřeby energie, která je k jeho výrobě potřeba. Sklo lze rovněž najít ve větrných turbínách v podobě skleněných vláken (ta se ostatně používají i v automobilovém průmyslu coby náhrada za těžší materiály).
 
 ### Elektrifikace
 
@@ -161,8 +166,7 @@ Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technol
 [^pultuna]: [Jedná se o globální průměr.](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) Spotřeba cementu na osobu se ovšem v různých částech světa značně liší.
 [^infrastruktura]: Rostoucí spotřebu ovlivňuje dle [Mezinárodní energetické agentury](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) právě přítomnost cementu v naprosto základních stavbách. I v rámci energetické transformace může být poptávka po materiálech vyšší, například budou potřeba pro železobetonové základy větrných turbín. 
 [^emisecement]: [Proces kalcinace je nutný mezikrok pro produkci slínku.](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
-[^cementintenzita]: Aby byl naplněn scénář Net Zero Scenario [Mezinárodní energetické agentury](https://www.iea.org/reports/cement), musela by emisní intenzita cementu být v roce 2030 na úrovni 0,43 tun CO<sub>2</sub> na tunu vyrobeného cementu.
-[^cementstoupajiciintenzita]: Hlavním důvodem nárůstu emisní intenzity bylo dle [Mezinárodní energetické agentury](https://www.iea.org/reports/cement) zvýšení poměru slínku k cementu na 0,72.
+[^cementintenzita]: Aby byl naplněn scénář Net Zero Scenario [Mezinárodní energetické agentury](https://www.iea.org/reports/cement), musela by emisní intenzita cementu být v roce 2030 na úrovni 0,43 tun CO<sub>2</sub> na tunu vyrobeného cementu. V posledních letech ovšem lze pozorovat stoupající emisní intenzitu cementu: z 0,54 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2015 na 0,59 tun CO<sub>2</sub> v roce 2021. Hlavním důvodem nárůstu emisní intenzity bylo dle [Mezinárodní energetické agentury](https://www.iea.org/reports/cement) zvýšení poměru slínku k cementu na 0,72.
 [^emisevapno]: Tento poměr platí v rámci [sektoru výroby vápna](https://www.hycapgroup.com/this-global-first-sees-industrial-lime-produced-with-clean-hydrogen-in-uk/) obecně.
 [^vapnointenzita]: [Intenzitu způsobuje chemický proces kalcinace](https://www.eula.eu/wp-content/uploads/2019/02/A-Competitive-and-Efficient-Lime-Industry-Summary_0.pdf).
 [^emisesklo]: Zde se jedná o data z [Velké Británie](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
@@ -171,3 +175,4 @@ Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technol
 [^drevostavby]: [Dřevostavby jsou méně emisně náročné](https://www.tandfonline.com/doi/pdf/10.1080/10549811.2013.839386) než stavby z oceli a betonu. 
 [^sklarnycr]: Částečná elektrifikace se prosadila i v některých [českých sklárnách](https://www.efotovoltaika.cz/tradicni-ceska-sklarna-zachranila-svou-existenci-a-vyrobu-diky-fotovoltaice-brutalni-zvyseni-ceny-za-plyn-vyresily-solary/), které tak díky vlastní instalaci solárních panelů dokázaly ušetřit, zejména během výrazného navýšení cen zemního plynu v roce 2022.
 [^netzero]: 75% pokles je součástí scénáře [McKinsey](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement), který by měl být vést (ve shodě s cílem Pařížské dohody) k udržení hranice oteplení na 1,5 °C (ve srovnání s globální teplotou před průmyslovou revolucí).
+[^ccsintenzita]: Podle MIT je možné teoreticky zachytit 99 % emisí, ale ekonomická a energetická náročnost 
