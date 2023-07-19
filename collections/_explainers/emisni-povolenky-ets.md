@@ -3,11 +3,13 @@ layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
 slug:        "emisni-povolenky-ets"
 published:   2021-06-13
-updated:     2023-06-29
+updated:     2023-07-19
 authors:
   - id: "tom-protivinsky"
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
 weight:      74
 tags-scopes: [ eu ]
 tags-topics: [ emise, opatreni, ekonomika ]
@@ -43,7 +45,7 @@ Každý rok vydává EU určité množství těchto povolenek (angl. _European E
     text="V anglicky psané literatuře je ETS často označováno **cap-and-trade**, neboť se zde strop pro celkové emise (cap) kombinuje s volným obchodováním (trade) mezi jednotlivými emitenty skleníkových plynů."
 %}
 
-Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. Jejich emise jsou měřené a ověřované, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^1]
+Elektrárny a další provozy zapojené do systému si povolenky nakupují v aukci (nebo je mohou obdržet zdarma, viz dále) a následně s nimi volně obchodují na burze. Jejich emise jsou měřené a ověřované, a pokud je skleníkových plynů více, než ke kolika daný subjekt opravňují jeho povolenky, obdrží pokutu (100 € za tunu emisí) a zároveň si musí potřebné povolenky doplnit.[^zprava-2021]
 
 Mají-li některé elektrárny či průmyslové závody možnost snížit své emise levněji, než je cena emisních povolenek, stojí před rozhodnutím: je výhodnější inovovat a investovat do čistších technologií, nebo raději při dané ceně nakoupit emisní povolenky?
 
@@ -71,11 +73,11 @@ Je-li příliš nízká, může si znečišťovatel nakoupit potřebné povolenk
     source-url="https://tradingeconomics.com/commodity/carbon"
 %}
 
-K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, na začátku roku 2023 pak cena evropské povolenky v důsledku vysoké poptávky překonala hodnotu 100 €. Podle odhadů některých institucí je přitom pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> do roku 2030 pohybovala právě kolem 100 €.[^2]  Jedná se tak o dobrý signál, avšak sám o sobě není dostatečný: kromě vysokých cen evropských povolenek by bylo potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
+K redukování množství emisí však přesto dochází, neboť emisní strop Evropská unie postupně snižuje. Méně povolenek v oběhu rovněž znamená rostoucí cenu. Od doby zavedení systému byla v některých letech cena povolenek velice nízká, často jako důsledek oslabení ekonomiky (např. při propadu ekonomické produkce během finanční krize v letech 2008–2009 nebo na počátku koronavirové pandemie v roce 2020, ale i v období 2013–2017 kvůli přebytku povolenek). V roce 2020 se za tunu CO<sub>2</sub> průměrně platilo 25 €, na začátku roku 2023 pak cena evropské povolenky v důsledku vysoké poptávky překonala hodnotu 100 €. Podle odhadů některých institucí je přitom pro dosažení cílů Pařížské dohody nutné, aby se cena za tunu CO<sub>2</sub> do roku 2030 pohybovala právě kolem 100 €.[^world-bank] Jedná se tak o dobrý signál, avšak sám o sobě není dostatečný: kromě vysokých cen evropských povolenek by bylo potřeba, aby byla srovnatelně zpoplatněna většina světových emisí skleníkových plynů.
 
 ## Která odvětví jsou do systému zahrnuta?
 
-Systém pokrývá zejména větší zdroje v energeticky náročných odvětvích (celkem téměř 15 000 zařízení), a to:
+Systém pokrývá zejména větší zdroje v energeticky náročných odvětvích (celkem 8 757 zařízení), a to:
 * elektrárny s tepelným příkonem nad 20 MW,
 * ropné rafinérie,
 * koksovny,
@@ -83,29 +85,29 @@ Systém pokrývá zejména větší zdroje v energeticky náročných odvětvíc
 * cementárny
 * a některou další průmyslovou výrobu.
 
-Kromě toho zahrnuje přibližně 1500 provozovatelů letadel v rámci [Evropského hospodářského prostoru](https://cs.wikipedia.org/wiki/Evropský_hospodářský_prostor) (EHP). Souhrnně pokrývá přibližně 38 % emisí skleníkových plynů v EU[^1], kromě emisí CO<sub>2</sub> jsou zahrnuté také emise oxidu dusného N<sub>2</sub>O a emise zcela fluorovaných uhlovodíku PFCs.
+Kromě toho zahrnuje 371 provozovatelů letadel v rámci [Evropského hospodářského prostoru](https://cs.wikipedia.org/wiki/Evropský_hospodářský_prostor) (EHP). Souhrnně pokrývá přibližně 36 % emisí skleníkových plynů v EU[^zprava-2021], kromě emisí CO<sub>2</sub> jsou zahrnuté také emise oxidu dusného N<sub>2</sub>O a emise zcela fluorovaných uhlovodíku PFCs.
 
 ## Kdo dostává emisní povolenky bezplatně?
 
-V letech 2013–2020 bylo bezplatně přiděleno cca 43 % povolenek, především pro emisně intenzivní průmyslová odvětví. Zbylých 57 % bylo určeno k vydražení (skutečný počet vydražených povolenek byl však nižší). Bezplatné emisní povolenky jsou určeny takovým odvětvím hospodářství, ve kterých by bylo snadné přesunout výrobu do zemí, kde nejsou emise skleníkových plynů omezovány. Při důsledném uplatnění dražby povolenek by tak mohlo docházet k odlivu výrobních závodů z EU a navýšení emisí v jiných zemích. Množství bezplatně přidělovaných povolenek je postupně snižováno a například výroba elektřiny již není pro přidělování bezplatných povolenek způsobilá od roku 2013 (nicméně některé státy, včetně České republiky, si vyjednaly výjimku z tohoto pravidla až do roku 2019).[^1]
+V letech 2013–2020 bylo bezplatně přiděleno cca 43 % povolenek, především pro emisně intenzivní průmyslová odvětví. Zbylých 57 % bylo určeno k vydražení (skutečný počet vydražených povolenek byl však nižší). Bezplatné emisní povolenky jsou určeny takovým odvětvím hospodářství, ve kterých by bylo snadné přesunout výrobu do zemí, kde nejsou emise skleníkových plynů omezovány. Při důsledném uplatnění dražby povolenek by tak mohlo docházet k odlivu výrobních závodů z EU a navýšení emisí v jiných zemích. Množství bezplatně přidělovaných povolenek je postupně snižováno a například výroba elektřiny již není pro přidělování bezplatných povolenek způsobilá od roku 2013 (nicméně některé státy, včetně České republiky, si vyjednaly výjimku z tohoto pravidla až do roku 2019).[^zprava-2019]
 
 ## Jakým způsobem je stanoveno maximální množství povolenek?
 
-Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální množství povolenek od roku 2013 rovnoměrně snižováno. V roce 2013 bylo vydáno 2,1 miliardy emisních povolenek a až do roku 2020 to každoročně bylo o 38 milionů méně – aby bylo zajištěno snížení emisí alespoň o 21 % v zahrnutých odvětvích (ve srovnání s rokem 2005).[^4]
+Aby bylo dosaženo emisních cílů EU v letech 2020 a 2030, bylo maximální množství povolenek od roku 2013 rovnoměrně snižováno. V roce 2013 bylo vydáno 2,1 miliardy emisních povolenek a až do roku 2020 to každoročně bylo o 38 milionů méně – aby bylo zajištěno snížení emisí alespoň o 21 % v zahrnutých odvětvích (ve srovnání s rokem 2005).[^komise-rozhodnuti]
 
-V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005), v roce 2023 byl tento cíl navýšen na 62 %.
+V následující dekádě bude snižování ještě rychlejší: původním cílem bylo snížit emise v rámci EU ETS do roku 2030 o 43 % (oproti roku 2005), v roce 2023 byl tento cíl navýšen na 62 %.[^emisni-strop]
 
 {% include figure.html
     name="ets-strop-des.svg"
     name-mobile="ets-strop-mob.svg"
-    alt="Maximální množství alokovaných povolenek v jednotlivých letech"
-    source-text="Evropská komise, EU"
-    source-url="https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf"
+    alt="Graf zobrazující vývoj maximální množství alokovaných povolenek v jednotlivých letech, které postupně klesá"
+    source-text="Vlastní výpočet dle rozhodnutí Evropské komise a směrnice o obchodování s emisními povolenkami"
+    source-url="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32020D1722"
 %}
 
 ## Jak je nakládáno s financemi získanými v aukcích?
 
-Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2013–2021 přibližně 100 miliard eur (z toho 31 miliard byly výnosy v roce 2021, kdy byla cena povolenek nejvyšší). Výnosy z dražby většiny povolenek plynou jednak do **rozpočtů členských států**, kde by měly být všechny počínaje rokem 2024 využity pro účely spojené s ochranou klimatu (dosud šlo o 50 %).[^smernice-eu-ets] V průměrů členské státy v roce 2021 vynaložily na klimatické a energetické účely 76 %, a to především na energii z obnovitelných zdrojů a udržitelnou dopravu.[^1] Od roku 2021 je pak část povolenek dražena pro **Modernizační a Inovační fond**, kdy první slouží především pro modernizaci energetiky ve státech nejvíce nejvíce zasažených dekarbonizací (mezi něž patří i Česko), druhý pak pro podporu velkých inovativních projektů (např. pro nízkouhlíkové technologie v průmyslu).
+Celkové výnosy z aukcí z prodeje emisních povolenek činily v letech 2013–2021 přibližně 100 miliard eur (z toho 31 miliard byly výnosy v roce 2021, kdy byla cena povolenek nejvyšší). Výnosy z dražby většiny povolenek plynou jednak do **rozpočtů členských států**, kde by měly být všechny počínaje rokem 2024 využity pro účely spojené s ochranou klimatu (dosud šlo o 50 %).[^smernice-eu-ets] V průměrů členské státy v roce 2021 vynaložily na klimatické a energetické účely 76 %, a to především na energii z obnovitelných zdrojů a udržitelnou dopravu.[^zprava-2021] Od roku 2021 je pak část povolenek dražena pro **Modernizační a Inovační fond**, kdy první slouží především pro modernizaci energetiky ve státech nejvíce nejvíce zasažených dekarbonizací (mezi něž patří i Česko), druhý pak pro podporu velkých inovativních projektů (např. pro nízkouhlíkové technologie v průmyslu).
 
 ## Jak je EU ETS průběžně upravován?
 
@@ -116,7 +118,7 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 {% include figure.html
     name="ets-faze-des.svg"
     name-mobile="ets-faze-mob.svg"
-    alt="Fáze Evropského systému emisních povolenek"
+    alt="Tabulka s fázemi evropského systému emisních povolenek"
     source-text="Evropská komise, EU"
     source-url="https://ec.europa.eu/clima/policies/ets_en"
 %}
@@ -148,7 +150,7 @@ V návaznosti na vyšší klimatické ambice EU došlo v roce 2023 v rámci bal�
 {% include figure.html
     name="ets-overene-emise-des.svg"
     name-mobile="ets-overene-emise-mob.svg"
-    alt="Ověřené emise CO2 alokované povolenky v jednotlivých letech"
+    alt="Sloupcový graf zobrazující vývoj ověřených emisí CO2 a alokovaných povolenek v letech 2005 až 2022"
     source-text="EU Transaction Log, European Environment Agency"
     source-url="https://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-16"
 %}
@@ -167,10 +169,12 @@ Od svého spuštění se EU ETS stal inspirací pro mnoho dalších států a re
 
 Některé státy zpoplatňují emise skleníkových plynů pomocí tzv. uhlíkové daně (*carbon tax*), která je dalším efektivním tržním mechanismem pro snížení emisí a může vhodně doplňovat ETS zahrnutím jiných sektorů (např. dopravy). Na celém světě dnes funguje přibližně 60 různých systémů zpoplatňujících emise skleníkových plynů, přičemž dvě třetiny z nich byly spuštěny v uplynulé dekádě.
 
-
 ## Zdroje
-[^1]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem v roce 2021"](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52022DC0516).
-[^2]: World Bank. ["State and Trends of Carbon Pricing 2023"](https://openknowledge.worldbank.org/handle/10986/39796). Autoři zde uvádí cenu 115 amerických dolarů za tunu CO<sub>2</sub> v cenách roku 2023, což je při kurzu 0,89 € za 1 dolar přibližně 100 €.
-[^4]: Evropská komise. ["Commission decision on the Union-wide quantity of allowances to be issued under the EU Emission Trading System for 2021"](https://ec.europa.eu/clima/sites/clima/files/news/docs/c_2020_7704_en.pdf).
+
+[^zprava-2021]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem v roce 2021"](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52022DC0516).
+[^zprava-2019]: Evropská komise. ["Zpráva o fungování evropského trhu s uhlíkem v roce 2019"](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52022DC0516).
+[^world-bank]: World Bank. ["State and Trends of Carbon Pricing 2023"](https://openknowledge.worldbank.org/handle/10986/39796). Autoři zde uvádí cenu 115 amerických dolarů za tunu CO<sub>2</sub> v cenách roku 2023, což je při kurzu 0,89 € za 1 dolar přibližně 100 €.
+[^komise-rozhodnuti]: Evropská komise. ["Rozhodnutí Komise o množství povolenek pro celou Unii, které mají být vydány v rámci systému EU pro obchodování s emisemi na rok 2021"](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32020D1722).
 [^smernice-eu-ets]: Evropská unie. ["Směrnice Evropského parlamentu a Rady (EU) 2023/959 ze dne 10. května 2023, kterou se mění směrnice 2003/87/ES o vytvoření systému pro obchodování s povolenkami na emise skleníkových plynů v Unii"](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
+[^emisni-strop]: Pro rok 2021 byl objem povolenek v oběhu [rozhodnutím Komise](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32020D1722) stanoven na 1,57 miliard. Počínaje tímto rokem má množství povolenek v oběhu klesat o 43 milionů ročně až do roku 2023 (odpovídá lineárnímu redukčnímu faktoru ve výši 2,2 %). V letech 2024–2027 už má přitom podle [revidované směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) jít o 84 milionů povolenek ročně (odpovídá lineárnímu redukčnímu faktoru ve výši 4,3 %). V roce 2024 má navíc dojít k jednorázovému snížení ve výši 90 milionů povolenek, v roce 2026 o 27 milionů. Během let 2028–2030 má být objem povolenek snižován o 86 milionů ročně (odpovídá lineárnímu redukčnímu faktoru ve výši 4,4 %).
 
