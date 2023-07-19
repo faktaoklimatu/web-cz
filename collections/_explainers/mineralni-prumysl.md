@@ -56,9 +56,15 @@ V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat p
 
 ### Vedlejší metody
 
-Přestože každá z dalších možností už je jednotlivě méně efektivní, v součtu mohou všechny redukovat emise významně. Lze využít například alternativní paliva s nižší uhlíkovou stopou – zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva] Dále je v cementářském průmyslu prostor pro zvyšování energetické efektivity výroby (až o 7 % méně skleníkových plynů).[^cementefektivita] Slibné je rovněž nahrazování slínku, který je při výrobě důležitým meziproduktem. Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
+Přestože každá z dalších možností už je jednotlivě méně efektivní, v součtu mohou všechny redukovat emise významně. 
 
-Recyklace betonu není v současnosti příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
+* Alternativní paliva s nižší uhlíkovou stopou – Zde se jedná zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva] 
+
+* Zvyšování energetické efektivity výroby - V minulosti již probíhala, ale stále existuje potenciál dalších úspor(až o 7 % méně skleníkových plynů).[^cementefektivita] 
+
+* Nahrazování slínku - Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
+
+* Recyklace betonu - V současné době není v recyklace betonu příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
 
 {% include preview-box.html
     title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
@@ -66,9 +72,9 @@ Recyklace betonu není v současnosti příliš běžná. Jejímu širšímu vyu
     slug="emise-vyroba-cementu"
 %}
 
-Také lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný[^drevostavby].
+* Nahrazení betonu - Lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný.[^drevostavby]
 
-Co se týče alternativních úsporných řešení, mluví se například o 3D tisku budov, ten ale zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu.[^cementuspora] Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody a recyklace celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^cementrecyklace]
+* Alternativní úsporná řešení - Hovoří se například o 3D tisku budov, které zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu.[^cementuspora] Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody v kombinaci s recyklací a náhrazením betonu celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^cementrecyklace]
 
 Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do roku 2050 a očekává se, že emise se podaří snížit o téměř 75 %.[^netzero]
 
@@ -96,7 +102,7 @@ Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob sníž
 
 ### Vedlejší metody
 
-Významnou alternativou (či doplněním) může být využití nízkoemisního vodíku jako paliva, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v takovém případě bude nižší.
+* Vodík - Lze využít jako palivo, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v takovém případě bude nižší.
 
 {% include figure.html
     name="Lime_plant,_Wyoming.jpg"
@@ -110,7 +116,7 @@ Významnou alternativou (či doplněním) může být využití nízkoemisního 
 
 Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let.
 
-U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^emisesklo] Především jde o reakce spojené se sklářskými surovinami (např. vápencem).
+U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^emisesklo] Především jde o reakce spojené se sklářskými surovinami. Jde například o rozklad uhličitanu sodného, který se používání ke snížení potřebné teploty tavení skla.
 
 Při výrobě skla vzniká přibližně 0,5 tun emisí CO<sub>2</sub> na tunu skla.[^sklointenzita]
 
@@ -118,17 +124,17 @@ U skla nelze do budoucna očekávat úspory ve využití či jeho větší subst
 
 ### Elektrifikace
 
-Podle scénáře od společnosti British Glass[^britishglass] by celkové emise snížila nejvíce (zhruba o polovinu)[^skloelektrifikace] částečná elektrifikace výroby, která by zmenšila podíl jiných paliv.[^mixelektriny] Částečná proto, že menší pece je sice už dnes možné stavět jako plně elektrifikované, ale kromě omezené produkce má jejich konstrukce další výrazné limity (např. v maximální dosažené teplotě). Nezanedbatelnou roli hrají i náklady na elektřinu, které by u větších provozů byly neúnosné.[^nakladyelektriny] V současných vysokokapacitních sklářských pecích se elektřina využívá jen v omezené míře. Teprve v budoucnu – díky novým designům hybridních pecí, které kombinují elektrifikaci a jiné palivo – by se mohl podíl elektřiny na celkové energii potřebné k tavení zvýšit na 20–80 %. [^hybridnipece] (Vyšší míra elektrifikace je teoreticky možná například u obalového skla[^obalovesklo], u energeticky náročnějšího plochého skla předpokládá British Glass, že bude technologicky velmi obtížné dosáhnout podílu elektřiny vyššího než 40 %).[^skloobtiznost] Nicméně pokud by firmy využívaly vlastní solární energii, je tu i možnost finančních úspor.[^sklarnycr]
+Podle scénáře od společnosti British Glass[^britishglass] by celkové emise snížila nejvíce (zhruba o polovinu)[^skloelektrifikace] částečná elektrifikace výroby, která by zmenšila podíl jiných paliv.[^mixelektriny] Částečná proto, že menší pece je sice už dnes možné stavět jako plně elektrifikované, ale kromě omezené produkce má jejich konstrukce další výrazné limity (např. v maximální dosažené teplotě). Nezanedbatelnou roli hrají i náklady na elektřinu, které by u větších provozů byly neúnosné.[^nakladyelektriny] V současných vysokokapacitních sklářských pecích se elektřina využívá jen v omezené míře. Teprve v budoucnu – díky novým designům hybridních pecí, které kombinují elektrifikaci a jiné palivo – by se mohl podíl elektřiny na celkové energii potřebné k tavení zvýšit na 20–80 %. [^hybridnipece] (Vyšší míra elektrifikace je teoreticky možná například u obalového skla[^obalovesklo], u energeticky náročnějšího plochého skla předpokládá British Glass, že bude technologicky velmi obtížné dosáhnout podílu elektřiny vyššího než 40 %).[^skloobtiznost] Nicméně pokud by firmy využívaly vlastní solární energii, je tu i možnost finančních úspor.[^sklarnycr] Scénář zároveň počítá s dekarbonizací výroby elektřiny, která by dále snížila emise.
 
 ### Vedlejší metody
 
-U skla tedy bude důležitý také přechod na vodík, který nahradí zemní plyn jako palivo tam, kde elektrifikace nebude možná. Nahrazení zemního plynu vodíkem by mělo vést k 9% snížení emisí skleníkových plynů.[^sklovodik]
+* Vodík - U skla bude důležitý také přechod na vodík, který nahradí zemní plyn jako palivo tam, kde elektrifikace nebude možná. Nahrazení zemního plynu vodíkem by mělo vést k 9% snížení emisí skleníkových plynů.[^sklovodik]
 
-Určitý omezený přínos může mít i zvýšení recyklace, nicméně v EU se už v současnosti recykluje 76 % obalového skla.[^sklorecyklace] Stejně tak se už dnes při výrobě přidávají střepy ze sběrného skla, což podstatně redukuje současnou energetickou i emisní náročnost produkce. S výrazně vyšší cirkularitou se proto ve sklářství počítat nedá. Opatření podporující vyšší sběr a recyklaci mohou tomuto sektoru ubrat cca 3 % emisí skleníkových plynů.[^sklosber]
+* Recyklace - V EU se už v současnosti recykluje 76 % obalového skla.[^sklorecyklace] Stejně tak se už dnes při výrobě přidávají střepy ze sběrného skla, což podstatně redukuje současnou energetickou i emisní náročnost produkce. S výrazně vyšší cirkularitou se proto ve sklářství počítat nedá. Opatření podporující vyšší sběr a recyklaci mohou tomuto sektoru ubrat cca 3 % emisí skleníkových plynů.[^sklosber]
 
-Spíše doplňkovou možností je pak použití kalcinovaných a alternativních surovin (ušetřilo by 2 % emisí CO<sub>2</sub>).[^sklosuroviny]
+* Použití kalcinovaných a alternativních surovin - (ušetřilo by 2 % emisí CO<sub>2</sub>).[^sklosuroviny]
 
-Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Zavedení CCS by znamenalo o 7 % méně emisí oproti současnému stavu.[^skloccs]
+* Zachytávání oxidu uhličitého - CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Zavedení CCS by znamenalo o 7 % méně emisí oproti současnému stavu.[^skloccs]
 
 {% include figure.html
     name="mael-balland-Tjo91_O8yMo-unsplash.jpg"
@@ -160,13 +166,13 @@ Co se týče zachytávání oxidu uhličitého, CCS se z ekonomických a technol
 [^sklovodik]: Ve [sklářském průmyslu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) probíhá také vývoj hybridních pecí, které by dokázaly využívat vodík i zemní plyn. Probíhá však i výzkum řešení umožňujících úplné nahrazení zemního plynu vodíkem.
 [^sklorecyklace]: Míra recyklace skla [dle dostupných dat](https://www.statista.com/statistics/1258851/glass-recycling-rate-in-europe/) v posledních letech stagnuje.
 [^sklosber]: Možností je větší podpora programů recyklace, které popisuje [British Glass](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
-[^sklosuroviny]: I zde může docházet k nedostatku materiálu či možným změnám vlastností vyrobeného skla podle [výrobců](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
+[^sklosuroviny]: British Glass,2019:[*Glass Sector Net Zero Strategy 2050*](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
 [^skloccs]: [Ve sklářském průmyslu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) je využití CCS stále relativně neprozkoumáno.
 [^spotreba]: Dle [Světového ekonomického fóra](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf) existuje v současnosti nedostatek alternativ k využívání betonu a cementu.
 [^pultuna]: [Jedná se o globální průměr.](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) Spotřeba cementu na osobu se ovšem v různých částech světa značně liší.
-[^infrastruktura]: Rostoucí spotřebu ovlivňuje dle [Mezinárodní energetické agentury](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) právě přítomnost cementu v naprosto základních stavbách. I v rámci energetické transformace může být poptávka po materiálech vyšší, například budou potřeba pro železobetonové základy větrných turbín. 
+[^infrastruktura]: Rostoucí spotřebu ovlivňuje dle [Mezinárodní energetické agentury](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) právě role cementu jako základního stavebního materiálu. I v rámci energetické transformace může být poptávka po cementu vyšší, například ve formě železobetonových základů větrných turbín. 
 [^emisecement]: [Proces kalcinace je nutný mezikrok pro produkci slínku.](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
-[^cementintenzita]: Aby byl naplněn scénář Net Zero Scenario [Mezinárodní energetické agentury](https://www.iea.org/reports/cement), musela by emisní intenzita cementu být v roce 2030 na úrovni 0,43 tun CO<sub>2</sub> na tunu vyrobeného cementu. V posledních letech ovšem lze pozorovat stoupající emisní intenzitu cementu: z 0,54 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2015 na 0,59 tun CO<sub>2</sub> v roce 2021. Hlavním důvodem nárůstu emisní intenzity bylo dle [Mezinárodní energetické agentury](https://www.iea.org/reports/cement) zvýšení poměru slínku k cementu na 0,72.
+[^cementintenzita]: Aby byl naplněn scénář Net Zero Scenario [Mezinárodní energetické agentury](https://www.iea.org/reports/cement), musela by emisní intenzita cementu být v roce 2030 na úrovni 0,43 tun CO<sub>2</sub> na tunu vyrobeného cementu. V posledních letech ovšem lze pozorovat stoupající emisní intenzitu cementu: z 0,54 tun CO<sub>2</sub> na tunu vyrobeného cementu v roce 2015 na 0,59 tun CO<sub>2</sub> v roce 2021. Hlavním důvodem nárůstu emisní intenzity bylo dle [Mezinárodní energetické agentury](https://www.iea.org/reports/cement) zvýšení poměru slínku k cementu na 0,72:1.
 [^emisevapno]: Tento poměr platí v rámci [sektoru výroby vápna](https://www.hycapgroup.com/this-global-first-sees-industrial-lime-produced-with-clean-hydrogen-in-uk/) obecně.
 [^vapnointenzita]: [Intenzitu způsobuje chemický proces kalcinace](https://www.eula.eu/wp-content/uploads/2019/02/A-Competitive-and-Efficient-Lime-Industry-Summary_0.pdf).
 [^emisesklo]: Zde se jedná o data z [Velké Británie](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
