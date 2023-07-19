@@ -90,6 +90,7 @@ subtopics:
   - 5-transformace-dopravy
   - 6-transformace-prumyslu
   - 28-trinecke-zelezarny
+  - cement-vapno-sklo
 
 - id:          "opatreni"
   title:       "Opatření: zpoplatnění emisí a další"
