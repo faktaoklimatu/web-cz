@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak dekarbonizovat ocel a hliník?"
 slug:        "kovovy-prumysl"
-published:   2023-07-07
+published:   2023-07-19
 authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
