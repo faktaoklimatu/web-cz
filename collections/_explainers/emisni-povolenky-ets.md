@@ -125,7 +125,7 @@ První fáze od roku 2005 byla především testovací a jejím účelem bylo ov
 
 ## Co přináší reforma EU ETS z roku 2023?
 
-V návaznosti na vyšší klimatické ambice EU došlo v roce 2023 v rámci balíčku [Fit for 55](/infographics/fit-for-55-opatreni) k dalším úprávám stávajícího systému. [Reforma](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) přináší následující změny:
+V návaznosti na vyšší klimatické ambice EU došlo v roce 2023 v rámci balíčku [Fit for 55](/infografiky/fit-for-55-opatreni) k dalším úprávám stávajícího systému. [Reforma](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) přináší následující změny:
 * Emise skleníkových plynů spadající pod stávající systém EU ETS by měly do roku 2030 v porovnání s rokem 2005 klesnout o 62 % (oproti původním 43 %).
 * Veškeré **výnosy** z prodeje povolenek, kterými disponují členské státy **musí být využity na klimaticky prospěšná opatření** (oproti dosavadním 50 %).
 * Rozšíření stávajícího systému o námořní dopravu (s náběhem mezi lety 2024–2026).
