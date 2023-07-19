@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak dekarbonizovat výrobu cementu, vápna a skla?"
 slug:        "mineralni-prumysl"
-published:   2023-07-10
+published:   2023-07-20
 authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
@@ -166,7 +166,7 @@ Podle scénáře od společnosti British Glass[^britishglass] by celkové emise 
 [^sklovodik]: Ve [sklářském průmyslu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) probíhá také vývoj hybridních pecí, které by dokázaly využívat vodík i zemní plyn. Probíhá však i výzkum řešení umožňujících úplné nahrazení zemního plynu vodíkem.
 [^sklorecyklace]: Míra recyklace skla [dle dostupných dat](https://www.statista.com/statistics/1258851/glass-recycling-rate-in-europe/) v posledních letech stagnuje.
 [^sklosber]: Možností je větší podpora programů recyklace, které popisuje [British Glass](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
-[^sklosuroviny]: British Glass,2019:[*Glass Sector Net Zero Strategy 2050*](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
+[^sklosuroviny]: British Glass, 2019: [*Glass Sector Net Zero Strategy 2050*](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf).
 [^skloccs]: [Ve sklářském průmyslu](https://www.britglass.org.uk/sites/default/files/British%20Glass%20-%20Net%20Zero%20Strategy.pdf) je využití CCS stále relativně neprozkoumáno.
 [^spotreba]: Dle [Světového ekonomického fóra](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf) existuje v současnosti nedostatek alternativ k využívání betonu a cementu.
 [^pultuna]: [Jedná se o globální průměr.](https://iea.blob.core.windows.net/assets/7f8aed40-89af-4348-be19-c8a67df0b9ea/Energy_Technology_Perspectives_2020_PDF.pdf) Spotřeba cementu na osobu se ovšem v různých částech světa značně liší.
