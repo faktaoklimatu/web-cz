@@ -19,7 +19,7 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby, zejména u cementu a vápna. Potřebné technologie jakými je například zachytávání CO<sub>2</sub> či zelený vodík, bude ale nutné dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu."
+perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby, zejména u cementu a vápna. Potřebné technologie, jakými je například zachytávání CO<sub>2</sub> či zelený vodík, bude ale nutné dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu."
 ---
 
 {% include preview-box.html
