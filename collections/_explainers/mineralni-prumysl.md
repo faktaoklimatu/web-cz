@@ -19,7 +19,7 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/kalkgrav-quarry-nature-sky-5163047/"
-perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby, zejména u cementu a vápna. Potřebné technologie jakými je například zachytávání CO<sub>2</sub> či zelený vodík, bude ale nutné dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu."
+perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného sektoru – tzv. minerálního průmyslu. Jeho dekarbonizace nebude snadná, protože nestačí pouze nahradit fosilní paliva při spalování, velká část emisí vzniká také při chemických reakcích během výroby, zejména u cementu a vápna. Potřebné technologie, jakými je například zachytávání CO<sub>2</sub> či zelený vodík, bude ale nutné dál rozvíjet a vybudovat pro ně veškerou nutnou infrastrukturu."
 ---
 
 {% include preview-box.html
@@ -62,7 +62,7 @@ Vzhledem k postupující urbanizaci a s ní související výstavbě není výra
 
 U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Zařízení na CCS dovede zachytit 90-95[^ccsintenzita] procent emisí dané cementáry a jedná se tak o hlavní technologii dekarbonizace cementu, bez které se uhlíkové neutralitě nelze přiblížit. Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
 
-V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat přibližně polovinu snížení emisí ve srovnání s emisemi z cementu, který se vyrábí dnes.[^mckinsey] Z ekonomických důvodů CCS nebude tvořit jediné řešení a ke snížení emisí dojde i jinými způsoby. Míra využívání CCS bude závislá zejména na ceně oproti jiným dekarbonizačním technologiím a rozvoji infrastruktury, kde se můžou vyskytovat regionální rozdíly.
+V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat přibližně polovinu snížení emisí ve srovnání s emisemi z cementu, který se vyrábí dnes.[^mckinsey] Z ekonomických důvodů CCS nebude tvořit jediné řešení a ke snížení emisí dojde i jinými způsoby. Míra využívání CCS bude závislá zejména na ceně oproti jiným dekarbonizačním technologiím a rozvoji infrastruktury.
 
 ### Vedlejší metody
 
@@ -98,7 +98,7 @@ Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do r
 
 ## Vápno
 
-Vápno nachází uplatnění v řadě průmyslů, stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel. Na každého obyvatele planety připadá v průměru 50 kilogramů vyrobeného vápna ročně[^vapnopocet]. Výroba vápna tvoří přibližně 1 % světových emisí.[^emisvapno]
+Výroba vápna tvoří přibližně 1 % světových emisí.[^emisvapno] Vápno nachází uplatnění v řadě průmyslů, stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel. Na každého obyvatele planety připadá v průměru 50 kilogramů vyrobeného vápna ročně[^vapnopocet].
 
 **Dvě třetiny emisí vznikají u výroby vápna procesem kalcinace stejně jako u cementu** Tento proces přeměny v současnosti není možné přímo nahradit jiným, emisně méně náročným. **Zbývající třetina emisí připadá na spalování.**[^emisevapno]
 
@@ -108,7 +108,7 @@ Podobně jako u cementu nelze ani u vápna do budoucna očekávat pokles spotře
 
 ### Zachytávání CO<sub>2</sub>
 
-Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob snížení emisí. Pilotní projekty ukazují potenciál zadržet až 95 % celkových emisí CO<sub>2</sub> dané vápenky (tedy včetně emisí ze spalování).[^vapnozachyceni]
+Stejně jako u cementu představuje i zde CCS nejvýznamnější způsob snížení emisí. Pilotní projekty ukazují potenciál zadržet až 95 % celkových emisí CO<sub>2</sub> dané vápenky (tedy včetně emisí ze spalování).[^vapnozachyceni]
 
 ### Vedlejší metody
 
@@ -124,7 +124,7 @@ Podobně jako u cementu představuje i zde CCS nejvýznamnější způsob sníž
 
 ## Sklo
 
-Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo] Výroba skla tvoří přibližně 0,3 % světových emisí.[^emisesklo]
+Výroba skla tvoří přibližně 0,3 % světových emisí.[^emisesklo] Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo] 
 
 U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^britishglass] Především jde o reakce spojené se sklářskými surovinami. Jde například o rozklad uhličitanu sodného, který se používání ke snížení potřebné teploty tavení skla.
 
@@ -183,6 +183,6 @@ Podle scénáře od společnosti British Glass[^britishglass] by celkové emise 
 [^ccsintenzita]: Podle [MIT](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage) je možné teoreticky zachytit 99 % emisí, ale ekonomická a energetická náročnost procesu výrazně roste s každým dalším procentem zachyceného CO<sub>2</sub>.
 [^spotrebasklo]: [International Commission on Glass, 2022: International Year of Glass](https://www.iyog2022.org/images/files/77-economicsiyog-200925.pdf).
 [^vapnopocet]: [Statista, 2023: Lime production worldwide from 2010 to 2022](https://www.statista.com/statistics/1006040/production-of-lime-worldwide/)
-[^emisecement]: [McKinsey&Company, 2020: Laying the foundation for zero-carbon cement](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement), [Nature, 2021: Concrete needs to lose its colossal carbon footprint](https://www.nature.com/articles/d41586-021-02612-5). Ohledně přesného počtu emisí z průmyslu panuje určitá míra nejistoty vzhledem kvůli nejednotné metodologii hlášení. Existují porovnatelná data z [UNFCCC](https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review-under-the-convention/national-inventory-submissions-2022) v rámci Common Reporting Format pro takzvané Annex I země (tj. státy v rámci Kjótského protokolu, které v roce 1992 byly členy OECD společně s vybranými východoevropskými státy), které hlásí emise podle jednotné metodologie. Do této kategorie spadá Česká republika i Evropská unie. Zbylé státy světa tuto povinnost zatím nemají a své emise měří a uvádějí různoroději. Ne všechny emise jsou dokonale hlášeny, ovšem více konkrétní představu i tak lze dosáhnout z aktuálně dostupných dat. Situace by se mohla zlepšit v roce 2024, kdy dojde ke sjednocení metodologie napříč světem, což bude znamenant lépe dostupná a poměřitelná data.
+[^emisecement]: [McKinsey&Company, 2020: Laying the foundation for zero-carbon cement](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement), [Nature, 2021: Concrete needs to lose its colossal carbon footprint](https://www.nature.com/articles/d41586-021-02612-5). Ohledně přesného počtu emisí z průmyslu panuje určitá míra nejistoty kvůli nejednotné metodologii hlášení. Existují porovnatelná data z [UNFCCC](https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review-under-the-convention/national-inventory-submissions-2022) v rámci Common Reporting Format pro takzvané Annex I země (tj. státy v rámci Kjótského protokolu, které v roce 1992 byly členy OECD společně s vybranými východoevropskými státy), které hlásí emise podle jednotné metodologie. Do této kategorie spadá Česká republika i Evropská unie. Zbylé státy světa tuto povinnost zatím nemají a své emise měří a uvádějí různoroději. Ne všechny emise jsou dokonale hlášeny, ovšem více konkrétní představu i tak lze dosáhnout z aktuálně dostupných dat. Situace by se mohla zlepšit v roce 2024, kdy dojde ke sjednocení metodologie napříč světem, což bude znamenant lépe dostupná a poměřitelná data.
 [^emisvapno]: Hrubý odhad kombinující data z  [Statista, 2023: Lime production worldwide from 2010 to 2022](https://www.statista.com/statistics/1006040/production-of-lime-worldwide/), [European Lime Association: A Competetive and Efficient Lime Industry](https://www.eula.eu/wp-content/uploads/2019/02/A-Competitive-and-Efficient-Lime-Industry-Summary_0.pdf) a [Liu et al., 2023: Monitoring global carbon emissions in 2022](https://www.nature.com/articles/s43017-023-00406-z).
 [^emisesklo]: [Westbroek et al., 2021: Global material flow analysis of glass: From raw materials to end of life](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13112#jiec13112-bib-0021).
