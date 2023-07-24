@@ -33,16 +33,6 @@ Bez cementu, vápna a skla se společnost neobejde a světová poptávka po těc
 *Následující text představuje různé scénáře dekarbonizace minerálního průmyslu a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
 
-{% include figure.html
-    name="mineralni-prumysl-normal-des.svg"
-    alt="TODO"
-%}
-
-{% include figure.html
-    name="mineralni-prumysl-pomer-normal-des.svg"
-    alt="TODO"
-%}
-
 ## Cement
 
 Cement tvoří 7-8 % globálních emisí.[^emisecement] Je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce spotřebovávaná látka na světě.[^wef] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina veškerého cementu se používá na výstavbu budov, zbytek je potřeba na různé druhy infrastruktury, např. silnice, železnice či energetická zařízení jako třeba elektrárny.[^infrastruktura]
