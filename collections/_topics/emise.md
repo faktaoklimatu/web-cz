@@ -121,7 +121,6 @@ subtopics:
   - emise-dychani
   - emise-sr
   - mineralni-prumysl
-  - emise-prumysl-eu
   qa:
   - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |
