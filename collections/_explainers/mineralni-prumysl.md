@@ -33,19 +33,9 @@ Bez cementu, vápna a skla se společnost neobejde a světová poptávka po těc
 *Následující text představuje různé scénáře dekarbonizace minerálního průmyslu a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
 
-{% include figure.html
-    name="mineralni-prumysl-normal-des.svg"
-    alt="Emisní rozdělení"
-%}
-
-{% include figure.html
-    name="mineralni-prumysl-pomer-normal-des.svg"
-    alt="Emisní intenzita"
-%}
-
 ## Cement
 
-Cement tvoří 7-8 % globálních emisí.[^emisecement] Je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce spotřebovávaná látka na světě.[^wef] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina veškerého cementu se používá na výstavbu budov, zbytek je potřeba na různé druhy infrastruktury, např. silnice, železnice či energetická zařízení jako třeba elektrárny.[^infrastruktura]
+Výroba cementu tvoří 7-8 % globálních emisí CO<sub>2</sub>.[^emisecement] Cement je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce spotřebovávaná látka na světě.[^wef] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina veškerého cementu se používá na výstavbu budov, zbytek je potřeba na různé druhy infrastruktury, např. silnice, železnice či energetická zařízení jako třeba elektrárny.[^infrastruktura]
 
 Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na teplo potřebné při výrobě.**[^wef]
 
@@ -68,7 +58,7 @@ V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat p
 
 Přestože každá z dalších možností už je jednotlivě méně efektivní, v součtu mohou všechny redukovat emise významně.
 
-* Alternativní paliva s nižší uhlíkovou stopou – Zde se jedná zejména odpad a biomasu (zhruba 10% snížení emisí). [^cementpaliva]
+* Alternativní paliva s nižší uhlíkovou stopou – Zde se jedná zejména odpad a biomasu (zhruba 10% snížení emisí).[^cementpaliva]
 
 * Zvyšování energetické efektivity výroby - V minulosti již probíhala, ale stále existuje potenciál dalších úspor(až o 7 % méně skleníkových plynů).[^mckinsey]
 
@@ -98,7 +88,7 @@ Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do r
 
 ## Vápno
 
-Výroba vápna tvoří přibližně 1 % světových emisí.[^emisvapno] Vápno nachází uplatnění v řadě průmyslů, stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel. Na každého obyvatele planety připadá v průměru 50 kilogramů vyrobeného vápna ročně[^vapnopocet].
+Výroba vápna tvoří přibližně 1 % světových emisí CO<sub>2</sub>.[^emisvapno] Vápno nachází uplatnění v řadě průmyslů, stavebnictví, zemědělství, papírnictví, potravinářství nebo při čištění pitné vody. Největší množství (co se týče jednotlivého účelu) se pak využívá v ocelářském průmyslu, kde slouží při zpracování surového železa na ocel. Na každého obyvatele planety připadá v průměru 50 kilogramů vyrobeného vápna ročně.[^vapnopocet]
 
 **Dvě třetiny emisí vznikají u výroby vápna procesem kalcinace stejně jako u cementu** Tento proces přeměny v současnosti není možné přímo nahradit jiným, emisně méně náročným. **Zbývající třetina emisí připadá na spalování.**[^emisevapno]
 
@@ -124,7 +114,7 @@ Stejně jako u cementu představuje i zde CCS nejvýznamnější způsob sníže
 
 ## Sklo
 
-Výroba skla tvoří přibližně 0,3 % světových emisí.[^emisesklo] Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo] 
+Výroba skla tvoří přibližně 0,3 % světových emisí CO<sub>2</sub>.[^emisesklo] Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo] 
 
 U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^britishglass] Především jde o reakce spojené se sklářskými surovinami. Jde například o rozklad uhličitanu sodného, který se používání ke snížení potřebné teploty tavení skla.
 
@@ -182,7 +172,7 @@ Podle scénáře od společnosti British Glass[^britishglass] by celkové emise 
 [^netzero]: 75% pokles emisí je součástí scénáře [McKinsey](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement), který by měl být vést (ve shodě s cílem Pařížské dohody) k udržení hranice oteplení na 1,5 °C (ve srovnání s globální teplotou před průmyslovou revolucí).
 [^ccsintenzita]: Podle [MIT](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage) je možné teoreticky zachytit 99 % emisí, ale ekonomická a energetická náročnost procesu výrazně roste s každým dalším procentem zachyceného CO<sub>2</sub>.
 [^spotrebasklo]: [International Commission on Glass, 2022: International Year of Glass](https://www.iyog2022.org/images/files/77-economicsiyog-200925.pdf).
-[^vapnopocet]: [Statista, 2023: Lime production worldwide from 2010 to 2022](https://www.statista.com/statistics/1006040/production-of-lime-worldwide/)
+[^vapnopocet]: [Statista, 2023: Lime production worldwide from 2010 to 2022](https://www.statista.com/statistics/1006040/production-of-lime-worldwide/).
 [^emisecement]: [McKinsey&Company, 2020: Laying the foundation for zero-carbon cement](https://www.mckinsey.com/industries/chemicals/our-insights/laying-the-foundation-for-zero-carbon-cement), [Nature, 2021: Concrete needs to lose its colossal carbon footprint](https://www.nature.com/articles/d41586-021-02612-5). Ohledně přesného počtu emisí z průmyslu panuje určitá míra nejistoty kvůli nejednotné metodologii hlášení. Existují porovnatelná data z [UNFCCC](https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review-under-the-convention/national-inventory-submissions-2022) v rámci Common Reporting Format pro takzvané Annex I země (tj. státy v rámci Kjótského protokolu, které v roce 1992 byly členy OECD společně s vybranými východoevropskými státy), které hlásí emise podle jednotné metodologie. Do této kategorie spadá Česká republika i Evropská unie. Zbylé státy světa tuto povinnost zatím nemají a své emise měří a uvádějí různoroději. Ne všechny emise jsou dokonale hlášeny, ovšem více konkrétní představu i tak lze dosáhnout z aktuálně dostupných dat. Situace by se mohla zlepšit v roce 2024, kdy dojde ke sjednocení metodologie napříč světem, což bude znamenant lépe dostupná a poměřitelná data.
 [^emisvapno]: Hrubý odhad kombinující data z  [Statista, 2023: Lime production worldwide from 2010 to 2022](https://www.statista.com/statistics/1006040/production-of-lime-worldwide/), [European Lime Association: A Competetive and Efficient Lime Industry](https://www.eula.eu/wp-content/uploads/2019/02/A-Competitive-and-Efficient-Lime-Industry-Summary_0.pdf) a [Liu et al., 2023: Monitoring global carbon emissions in 2022](https://www.nature.com/articles/s43017-023-00406-z).
 [^emisesklo]: [Westbroek et al., 2021: Global material flow analysis of glass: From raw materials to end of life](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13112#jiec13112-bib-0021).
