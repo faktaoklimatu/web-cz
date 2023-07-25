@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jak se v čase proměňovala role trhu a státu při výrobě a distribuci elektřiny?"
 slug:        "vyvoj-systemu-elektriny"
-published:   2023-5-9
+published:   2023-05-09
 authors:
  - ids: ["adam-bilek", "jan-krcal"]
  - ids: ["jirka-lnenicka", "katerina-kolouchova"]
