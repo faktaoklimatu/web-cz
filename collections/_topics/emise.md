@@ -120,7 +120,6 @@ subtopics:
   - emise-vyroba-cementu
   - emise-dychani
   - emise-sr
-  - kovovy-prumysl
   qa:
   - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |
