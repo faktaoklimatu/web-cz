@@ -10,33 +10,35 @@ tags-topics:   [ emise, opatreni ]
 caption:       "Přehled studií o půdním uhlíku."
 intro: |
   V organické půdní hmotě se nachází třikrát více uhlíku než v zemské atmosféře. To představuje velké riziko i příležitost – na jedné straně se v důsledku nevhodného zacházení s půdou může velké množství uhlíku do atmosféry uvolnit, na straně druhé má půda při využití vhodných postupů velký potenciál sloužit jako jeho dlouhodobé úložiště. Roli půdy v mitigaci klimatických změn je proto v posledních letech věnována stále větší pozornost, což dokládá například i rozrůstající se trh s uhlíkovými kredity (offsety). 
+  Rešerše je rozdelená do tematických sekcií.  
 items:
   sekvestrace:
+  sekvestracepopis:
     - name: Carbon sequestration in soil. Lal et al., 2015
       link: https://www.sciencedirect.com/science/article/pii/S1877343515001013?casa_token=DGH0lBAEIgQAAAAA:AmLfGDdiXo_NBe-HZtA7krXOMrOxCVXsYIAkuaR99Batnyj3WSIJpqL3G8Hg156bxLprBzzmPw
       source: Current Opinion in Environmental sustainability
-      description: | 
-        * Základní přehled informací o sekvestraci uhlíku do půdy (stručný popis procesu, stabilizační mechanismy, představení některých opatření a praktik atd.) 
-        * Stručný popis dalších ekosystémových a ekonomických benefitech souvisejících se sekvestrací uhlíku do půdy
+      description: |
+        * Základní přehled informací o sekvestraci uhlíku do půdy (stručný popis procesu, stabilizační mechanismy, představení některých opatření a praktik atd.)
+        * Stručný popis dalších ekosystémových a ekonomických benefitů souvisejících se sekvestrací uhlíku do půdy
     - name: Role of soil carbon in natural climate solutions. Bossio et al., 2020
       link: https://www.nature.com/articles/s41893-020-0491-z
       source: Nature Sustainability
       description: |
-        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření vyčíslen mitigační potenciál (v GtCO2e ročně) v roce 2030 ve třech úrovních finanční náročnosti.
+        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření vyčíslen mitigační potenciál (v GtCO2e ročně) v roce 2030 ve třech úrovních finanční náročnosti 
         * Návaznost na [Griscom et al., 2017](https://www.researchgate.net/publication/320536154_Natural_climate_solutions)
     - name: Grassland management impacts on soil carbon stocks. A new synthesis. Conant et al., 2017
       link: https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.1473
       source: Ecological Applications
       description: |
-        * V půdě na pastvinách se celosvětově nachází o cca 50 % víc SOC víc než v lesní půdě.
-        * Meta-analýza vlivu různých praktik managementu pastvin (přeměna orné půdy na pastvinu; přeměna přirozeného ekosystému na pastvinu; využití žížal; hnojení; oheň(vypalování?); pastva; (trvalé) travní porosty - trávnaté porasty; rekultivace) na SOC.
+        * Kontext: v půdě na pastvinách se celosvětově nachází o cca 50 % víc SOC víc než v lesní půdě
+        * Meta-analýza vlivu různých praktik managementu pastvin (přeměna orné půdy na pastvinu; přeměna přirozeného ekosystému na pastvinu; využití žížal; hnojení; oheň(vypalování?); pastva; (trvalé) travní porosty - trávnaté porasty; rekultivace) na SOC
         * Přeměnou orné půdy na pastvinu je možné zvýšit množství SOC o 40 %.
     - name: Farming with crops and rocks to address global climate, food and soil security. Beerling et al., 2018
       link: https://www.nature.com/articles/s41477-018-0108-y
       source: Nature Plants
       description: |
-        * Základní představení metody _enhanced weathering_ (vylepšené zvětrávání), při které se do půdy zabudovávají křemičité horniny (studie se věnuje hlavně bazaltu), jež reagují s CO2 za vzniku stabilnějších forem uhlíku a dalších produktů.
-        * Zkoumání pozitivních účinků této metody na půdu a zemědělskou produkci; potřeba dalšího výzkumu.
+        * Základní představení metody enhanced weathering (vylepšené zvětrávání), při které se do půdy zabudovávají křemičité horniny (studie se věnuje hlavně bazaltu), jež reagují s CO2 za vzniku stabilnějších forem uhlíku a dalších produktů
+        * Zkoumání pozitivních účinků této metody na půdu a zemědělskou produkci; potřeba dalšího výzkumu
     - name: Biochar in climate change mitigation. Lehmann et al., 2021
       link: https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/7329/files/2021/12/NatureGeoscience-14-883-892-2021-Lehmann.pdf
       source: Nature Geoscience
@@ -54,6 +56,7 @@ items:
       description: |
         * Zkoumání pozitivního vlivu praktik regenerativního zemědělství (zejména využívání krycích plodin) na celkové zdraví půdy a zvyšování množství půdního organického uhlíku
   faktory:
+  faktorypopis:
     - name: Global Soil Organic Carbon Map 
       link: http://54.229.242.119/GSOCmap/
       source: FAO
@@ -64,7 +67,8 @@ items:
       source: European Journal of Soil Science
       description: |
         * Přehled obsahu organického uhlíku v 26 hlavních typech půdy (rozdělených do 106 podtypů) ve čtyřech různých hloubkách půdního profilu (0–30 cm, 0–50 cm, 0–100 cm, 0–200 cm) 
-        * Přehled obsahu N a C:N v hlavních typech půdy ve třech různých hloubkách profilu; data vhodné kombinovat s mapou [FAO Soil map of the world](https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/)
+        * Přehled obsahu N a C:N v hlavních typech půdy ve třech různých hloubkách profilu 
+        * Data vhodné kombinovat s mapou [FAO Soil map of the world](https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/)
         * Odhadovaný celkový podíl organického i anorganického uhlíku v půdě: 2157–2293 Pg v horních 100 cm půdy
     - name: A global meta-analysis of soil organic carbon in the Anthropocene. Beillouin et al., 2023
       link: https://www.nature.com/articles/s41467-023-39338-z
@@ -78,6 +82,7 @@ items:
         * LUC jako nejsilnější faktor jak s pozitivním tak s negativním vlivem
         * [Interaktivní graf](https://rpubs.com/dbeillouin/Figure1)
   mereni:
+  merenipopis:
     - name: Comparisons of Three Methods for Organic and Inorganic Carbon in Calcareous Soils of Northwestern China. Wang et al., 2012
       link: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044334
       source: Plos One
@@ -101,6 +106,7 @@ items:
             * d) existuje potenciál výroby malého přenosného zařízení na měření in situ
         * Podle autorů tato metoda vzbuzuje největší zájem mezi novými způsoby měření půdního uhlíku
   kapacita:
+  kapacitapopis:
     - name: Global stocks and capacity of mineral-associated soil organic carbon. Georgiou et al., 2022
       link: https://www.nature.com/articles/s41467-022-31540-9
       source: Nature Communications
@@ -122,16 +128,18 @@ items:
       source: Nature Geoscience
       description: |
         * Výzkum stavu půdy na evropských pastvinách a v lesích
-        * Závěr:
-            * pastviny: v půdní organické hmotě (SOM) dominuje typ uhlíku MAOM-C (dělení podle [Lavallee et al, 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY)), který se v půdě uchovává na dlouhé období, ale jeho sekvestrace je náročná na množství dusíku a půda může dosáhnout své sekvestrační kapacity
-            * lesy: schopné sekvestrovat více uhlíku, ten však v méně trvalé formě (POM)
+        * Pastviny: v půdní organické hmotě (SOM) dominuje typ uhlíku MAOM-C (dělení podle [Lavallee et al, 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY)), který se v půdě uchovává na dlouhé období, ale jeho sekvestrace je náročná na množství dusíku a půda může dosáhnout své sekvestrační kapacity
+        * Lesy: schopné sekvestrovat více uhlíku, ten však v méně trvalé formě (POM)
   typy:
+  typypopis:
     - name: Conceptualizing soil organic matter into particulate and mineral-associated forms to address global change in the 21st century. Lavallee et al., 2019
       link: https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY
       source: Global Change Biology
       description: |
-        * Dělení půdní organické hmoty (jejíž je uhlík podstatnou složkou) na organickou hmotu ve formě pevných organických částic (Particulate Organic Matter – POM) a na na minerály vázané organické částice (Mineral-Associated Organic Matter – MAOM)
+        * Dělení půdní organické hmoty (jejíž je uhlík podstatnou složkou) na *organickou hmotu ve formě pevných organických částic* (Particulate Organic Matter – POM) a na *na minerály vázané organické částice* (Mineral-Associated Organic Matter – MAOM)
+        * Přehledné shrnutí rozdílných vlastností POM a MAOM (např. poločas rozpadu, možnost nasycení)
   sic:
+  sicpopis:
     - name: A review on the possible factors influencing soil inorganic carbon under elevated CO2. Ferdush at al., 2021
       link: https://www.sciencedirect.com/science/article/pii/S0341816221002927?casa_token=ndxgptRRX90AAAAA:v8GyJGiqjxcEiPwkMUBirp6Wxp-dgd2jVBI79H3joj7igEF3uxqboZDxllAsE-_hMEZYGEHzKQ
       source: CATENA
@@ -157,6 +165,7 @@ items:
         * Přehledová studie zaměřující se na problematiku acidifikace zemědělských půd a jejího nezanedbatelného negativního vlivu na množství SIC
         * Obecné informace o acidifikaci půd, ale také konkrétní čísla (ztráty SIC), přehled dalších procesů souvisejících s poklesem SIC (zhoršování kvality půdy, zhoršená dostupnost minerálů pro rostliny, zvyšování dostupnosti těžkých kovů atd.) a navrhované zemědělské postupy, které by pomohly acidifikaci snížit
   vliv:
+  vlivpopis:
     - name: Five years of whole-soil warming led to loss of subsoil carbon stocks and increased CO2 efflux. Soong et al., 2021
       link: https://www.science.org/doi/10.1126/sciadv.abd1343
       source: Science Advances
@@ -172,6 +181,7 @@ items:
             * zejména původní zásoba uhlíku, míra oteplení a množství srážek
             * typ biomu – největší podíl ztrát lze očekávat v oblasti boreálních lesů, v případě tundry naopak očekávatelný nárůst sekvestračního potenciálu (díky většímu množství vegetace, jemuž oteplování poskytne vhodné podmínky)
   iniciativa:
+  iniciativapopis:
     - name: The 4p1000 initiative. Opportunities, limitations and challenges for implementing soil organic carbon sequestration as a sustainable development strategy. Rumpel, 2020
       link: https://link.springer.com/article/10.1007/s13280-019-01165-2#citeas
       source: Ambio
@@ -184,20 +194,14 @@ items:
       link: https://reader.elsevier.com/reader/sd/pii/S0016706117300095?token=6445F2DE6F6871616FF05A7C679DED3FFADACCC43117E55917FFC924B73F4F854B2643A3727F955980BD17F6849C7C89&originRegion=eu-west-1&originCreation=20230119143309
       source: Geoderma
       description: |
-        * Analýza situace ve 20 regionech světa a otázka, zda je pro daný region reálné naplnit cíle iniciativy 4p1000 
+        * Analýza situace ve 20 regionech světa a otázka, zda je pro daný region reálné naplnit cíle iniciativy 
         * Závěr: při implementaci nejlepších možných praktik lze tohoto cíle dosáhnout celosvětově
+
 ---
 
 ## Sekvestrace uhlíku do půdy a její vliv na mitigaci klimatické změny
 
 <table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Studie/článek</th>
-      <th scope="col" class="text-uppercase">Zdroj</th>
-      <th scope="col" class="text-uppercase">Shrnutí</th>
-    </tr>
-  </thead>
   <tbody>
     {% for item in page.items.sekvestrace %}
     <tr>
@@ -211,7 +215,7 @@ items:
   </tbody>
 </table>
 
-## Faktory ovlivňující množství uhlíku v půdě (např. typ půdy, množství srážek, klimatické podmínky, způsob hospodaření)
+###### Nasledujúce štúdie poskytujú základné informácie o sekvestrácií uhlíku do pôdy a predstavujú prehľad niekoľkých praktík, ktoré je možné k sekvestrácií využívať.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -222,7 +226,46 @@ items:
     </tr>
   </thead>
   <tbody>
+    {% for item in page.items.sekvestracepopis %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Faktory ovlivňující množství uhlíku v půdě
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <tbody>
     {% for item in page.items.faktory %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+###### Štúdie v tejto sekcií sa venujú množstvu uhlíka v pôde a tiež faktom, ktoré môžu toto množstvo ovplyvňovať (např. typ půdy, množství srážek, klimatické podmínky, způsob hospodaření).
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Studie/článek</th>
+      <th scope="col" class="text-uppercase">Zdroj</th>
+      <th scope="col" class="text-uppercase">Shrnutí</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.faktorypopis %}
     <tr>
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
@@ -237,6 +280,22 @@ items:
 ## Měření množství půdního uhlíku (důležité pro určení efektivity offsetových projektů)
 
 <table class="table table-striped table-hover mt-4 mb-4">
+  <tbody>
+    {% for item in page.items.mereni %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+###### Štúdie poskytujú prehľad rôznych metód merania pôdneho uhlíku. Presnosť a opakovateľnosť merania je důležitá napr. pro určení efektivity offsetových projektů.
+
+<table class="table table-striped table-hover mt-4 mb-4">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Studie/článek</th>
@@ -245,7 +304,7 @@ items:
     </tr>
   </thead>
   <tbody>
-    {% for item in page.items.mereni %}
+    {% for item in page.items.merenipopis %}
     <tr>
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
@@ -260,13 +319,6 @@ items:
 ## Kapacita půdy vázat uhlík a vhodné postupy sekvestrace
 
 <table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Studie/článek</th>
-      <th scope="col" class="text-uppercase">Zdroj</th>
-      <th scope="col" class="text-uppercase">Shrnutí</th>
-    </tr>
-  </thead>
   <tbody>
     {% for item in page.items.kapacita %}
     <tr>
@@ -280,7 +332,7 @@ items:
   </tbody>
 </table>
 
-## Typy půdního organického uhlíku (rozdělení důležité pro pochopení jeho dynamiky procesů v půde a aplikaci vhodných metod sekvestrace)
+###### Nasledujúce štúdie sa venujú kapacite pôd uchovávať uhlík. Táto kapacita nie je neobmedzená a rozdielna v závislosti na rôznych faktoroch.  
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -290,6 +342,22 @@ items:
       <th scope="col" class="text-uppercase">Shrnutí</th>
     </tr>
   </thead>
+  <tbody>
+    {% for item in page.items.kapacitapopis %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Typy půdního organického uhlíku
+
+<table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
     {% for item in page.items.typy %}
     <tr>
@@ -303,7 +371,7 @@ items:
   </tbody>
 </table>
 
-## Půdní anorganický uhlík (Soil Inorganic Carbon – SIC). Mnohem méně pozornosti než výzkum půdního organického uhlíku (Soil Organic Carbon – SOC). Světové zásoby SIC menší než u SOC, jsou však považovány za stabilnější a studie ukazují jeho významný vliv na globální uhlíkový cyklus.
+###### Studie představuje dělení půdního organického uhlíku důležité pro pochopení dynamiky jeho procesů v půdě a aplikaci vhodných metod sekvestrace.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -313,6 +381,22 @@ items:
       <th scope="col" class="text-uppercase">Shrnutí</th>
     </tr>
   </thead>
+  <tbody>
+    {% for item in page.items.typypopis %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Půdní anorganický uhlík
+
+<table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
     {% for item in page.items.sic %}
     <tr>
@@ -326,7 +410,7 @@ items:
   </tbody>
 </table>
 
-## Vliv globálního oteplování na stav uhlíku v půdě. Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy. Např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku.
+###### Táto sekcia predstavuje základný úvod do problematiky pôdneho anorganického uhlíku (Soil Inorganic Carbon – SIC), ktorému je venovaná omnoho menšia pozornosť než výzkumu půdního organického uhlíku (Soil Organic Carbon – SOC). Světové zásoby SIC jsou menší než u SOC, jsou však považovány za stabilnější a studie ukazují jeho významný vliv na globální uhlíkový cyklus.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -337,7 +421,46 @@ items:
     </tr>
   </thead>
   <tbody>
+    {% for item in page.items.sicpopis %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Vliv globálního oteplování na stav uhlíku v půdě
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <tbody>
     {% for item in page.items.vliv %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+###### Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy, např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku. Nasledujúce štúdie sa venujú výskumu tejto dynamiky. 
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Studie/článek</th>
+      <th scope="col" class="text-uppercase">Zdroj</th>
+      <th scope="col" class="text-uppercase">Shrnutí</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.vlivpopis %}
     <tr>
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
@@ -352,6 +475,22 @@ items:
 ## Iniciativa 4 per mille Soils for Food Security and Climate 
 
 <table class="table table-striped table-hover mt-4 mb-4">
+  <tbody>
+    {% for item in page.items.iniciativa %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+###### Štúdie uvedené v tejto sekcií poskytujú základné informácie o iniciatíve 4 per mille a skúmajú reálne využitie jej návrhov v praxi. 
+
+<table class="table table-striped table-hover mt-4 mb-4">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Studie/článek</th>
@@ -360,7 +499,7 @@ items:
     </tr>
   </thead>
   <tbody>
-    {% for item in page.items.vliv %}
+    {% for item in page.items.iniciativapopis %}
     <tr>
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
