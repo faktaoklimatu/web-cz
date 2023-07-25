@@ -24,7 +24,7 @@ perex:       "Cement, vápno a sklo. Tři hlavní produkty emisně náročného 
 
 {% include preview-box.html
     title="Jaké jsou technologie dekarbonizace průmyslu?"
-    text="Detailnější pohled na technologie dekarbonizace průmyslu výrobu můžete najít v našem explaineru."
+    text="Detailnější pohled na technologie dekarbonizace průmyslu nabízí náš přehledový text."
     slug="technologie-dekarbonizace-prumyslu"
 %}
 
@@ -67,8 +67,8 @@ Přestože každá z dalších možností už je jednotlivě méně efektivní, 
 * Recyklace betonu – V současné době není v recyklace betonu příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
 
 {% include preview-box.html
-    title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
-    text="Detailnější pohled na dekarbonizaci cementu a dnešní výrobu najdete v samostatném explaineru."
+    title="Jakou roli hrají emise CO<sub>2</sub> z výroby cementu v klimatické změně?"
+    text="Dekarbonizaci cementu a jeho dnešní výrobu blíže popisuje samostatný text."
     slug="emise-vyroba-cementu"
 %}
 
