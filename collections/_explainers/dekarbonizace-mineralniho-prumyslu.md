@@ -35,7 +35,7 @@ Bez cementu, vápna a skla se společnost neobejde a světová poptávka po těc
 
 ## Cement
 
-Výroba cementu tvoří 7-8 % globálních emisí CO<sub>2</sub>.[^emisecement] Cement je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce spotřebovávaná látka na světě.[^wef] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina veškerého cementu se používá na výstavbu budov, zbytek je potřeba na různé druhy infrastruktury, např. silnice, železnice či energetická zařízení jako třeba elektrárny.[^infrastruktura]
+Výroba cementu tvoří 7–8 % globálních emisí CO<sub>2</sub>.[^emisecement] Cement je klíčovou příměsí betonu, což je hned po vodě druhá nejvíce spotřebovávaná látka na světě.[^wef] Na každého obyvatele planety připadá spotřeba zhruba půl tuny cementu ročně.[^pultuna] Přibližně polovina veškerého cementu se používá na výstavbu budov, zbytek je potřeba na různé druhy infrastruktury, např. silnice, železnice či energetická zařízení jako třeba elektrárny.[^infrastruktura]
 
 Při produkci cementu **vzniká 60 % emisí CO<sub>2</sub> při chemické reakci**, která se nazývá kalcinace. Působením tepla se vápenec rozkládá na oxid vápenatý a oxid uhličitý. **Zbylých 40 % emisí připadá na teplo potřebné při výrobě.**[^wef]
 
@@ -50,7 +50,7 @@ Vzhledem k postupující urbanizaci a s ní související výstavbě není výra
 
 ### Zachytávání CO<sub>2</sub>
 
-U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Zařízení na CCS dovede zachytit 90-95[^ccsintenzita] procent emisí dané cementáry a jedná se tak o hlavní technologii dekarbonizace cementu, bez které se uhlíkové neutralitě nelze přiblížit. Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
+U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Zařízení na CCS dovede zachytit 90–95[^ccsintenzita] procent emisí dané cementáry a jedná se tak o hlavní technologii dekarbonizace cementu, bez které se uhlíkové neutralitě nelze přiblížit. Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
 
 V roce 2050 může technologie CCS či beton vytvrzený uhlíkem představovat přibližně polovinu snížení emisí ve srovnání s emisemi z cementu, který se vyrábí dnes.[^mckinsey] Z ekonomických důvodů CCS nebude tvořit jediné řešení a ke snížení emisí dojde i jinými způsoby. Míra využívání CCS bude závislá zejména na ceně oproti jiným dekarbonizačním technologiím a rozvoji infrastruktury.
 
@@ -60,11 +60,11 @@ Přestože každá z dalších možností už je jednotlivě méně efektivní, 
 
 * Alternativní paliva s nižší uhlíkovou stopou – Zde se jedná zejména odpad a biomasu (zhruba 10% snížení emisí).[^cementpaliva]
 
-* Zvyšování energetické efektivity výroby - V minulosti již probíhala, ale stále existuje potenciál dalších úspor(až o 7 % méně skleníkových plynů).[^mckinsey]
+* Zvyšování energetické efektivity výroby – V minulosti již probíhala, ale stále existuje potenciál dalších úspor (až o 7 % méně skleníkových plynů).[^mckinsey]
 
-* Nahrazování slínku - Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
+* Nahrazování slínku – Jeho částečná substituce struskou, uhelným popílkem, dřevěným popelem či pucolánem[^pucolan] může kromě snížení emisí CO<sub>2</sub> o dalších 7 % přinést také finanční úspory.[^cementsubstituce]
 
-* Recyklace betonu - V současné době není v recyklace betonu příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
+* Recyklace betonu – V současné době není v recyklace betonu příliš běžná. Jejímu širšímu využití by napomohly změny některých principů při stavbě i navrhování staveb, které by zároveň vedly k nižší spotřebě zdrojů. Kromě toho lze recyklovat i hotový beton, zatím tomu ale často bránila nejistota v kvalitě a vlastnostech recyklovaného materiálu. I na využívání recyklovaného betonu nicméně v současnosti už vznikají studie.
 
 {% include preview-box.html
     title="Jakou roli hrají emise CO₂ z výroby cementu v klimatické změně?"
@@ -72,9 +72,9 @@ Přestože každá z dalších možností už je jednotlivě méně efektivní, 
     slug="emise-vyroba-cementu"
 %}
 
-* Nahrazení betonu - Lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný.[^drevostavby]
+* Nahrazení betonu – Lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný.[^drevostavby]
 
-* Alternativní úsporná řešení - Hovoří se například o 3D tisku budov, které zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu. Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody v kombinaci s recyklací a náhrazením betonu celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^mckinsey]
+* Alternativní úsporná řešení – Hovoří se například o 3D tisku budov, které zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu. Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody v kombinaci s recyklací a náhrazením betonu celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^mckinsey]
 
 Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do roku 2050 a očekává se, že emise se podaří snížit o téměř 75 %.[^netzero]
 
@@ -102,7 +102,7 @@ Stejně jako u cementu představuje i zde CCS nejvýznamnější způsob sníže
 
 ### Vedlejší metody
 
-* Vodík - Lze využít jako palivo, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v takovém případě bude nižší.
+* Vodík – Lze využít jako palivo, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v takovém případě bude nižší.
 
 {% include figure.html
     name="vapenka.jpg"
@@ -128,13 +128,13 @@ Podle scénáře od společnosti British Glass[^britishglass] by celkové emise 
 
 ### Vedlejší metody
 
-* Vodík - U skla bude důležitý také přechod na vodík, který nahradí zemní plyn jako palivo tam, kde elektrifikace nebude možná. Nahrazení zemního plynu vodíkem by mělo vést k 9% snížení emisí skleníkových plynů.[^britishglass]
+* Vodík – U skla bude důležitý také přechod na vodík, který nahradí zemní plyn jako palivo tam, kde elektrifikace nebude možná. Nahrazení zemního plynu vodíkem by mělo vést k 9% snížení emisí skleníkových plynů.[^britishglass]
 
-* Recyklace - V EU se už v současnosti recykluje 76 % obalového skla.[^sklorecyklace] Stejně tak se už dnes při výrobě přidávají střepy ze sběrného skla, což podstatně redukuje současnou energetickou i emisní náročnost produkce. S výrazně vyšší cirkularitou se proto ve sklářství počítat nedá. Opatření podporující vyšší sběr a recyklaci mohou tomuto sektoru ubrat cca 3 % emisí skleníkových plynů.[^britishglass]
+* Recyklace – V EU se už v současnosti recykluje 76 % obalového skla.[^sklorecyklace] Stejně tak se už dnes při výrobě přidávají střepy ze sběrného skla, což podstatně redukuje současnou energetickou i emisní náročnost produkce. S výrazně vyšší cirkularitou se proto ve sklářství počítat nedá. Opatření podporující vyšší sběr a recyklaci mohou tomuto sektoru ubrat cca 3 % emisí skleníkových plynů.[^britishglass]
 
-* Použití kalcinovaných a alternativních surovin - (ušetřilo by 2 % emisí CO<sub>2</sub>).[^britishglass]
+* Použití kalcinovaných a alternativních surovin – (ušetřilo by 2 % emisí CO<sub>2</sub>).[^britishglass]
 
-* Zachytávání oxidu uhličitého - CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Zavedení CCS by znamenalo o 7 % méně emisí oproti současnému stavu.[^britishglass]
+* Zachytávání oxidu uhličitého – CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Zavedení CCS by znamenalo o 7 % méně emisí oproti současnému stavu.[^britishglass]
 
 {% include figure.html
     name="sklarna.jpg"
