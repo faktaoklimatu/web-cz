@@ -10,27 +10,27 @@ tags-topics:   [ emise, opatreni ]
 caption:       "Přehled studií o půdním uhlíku."
 intro: |
   V organické půdní hmotě se nachází třikrát více uhlíku než v zemské atmosféře. To představuje velké riziko i příležitost – na jedné straně se v důsledku nevhodného zacházení s půdou může velké množství uhlíku do atmosféry uvolnit, na straně druhé má půda při využití vhodných postupů velký potenciál sloužit jako jeho dlouhodobé úložiště. Roli půdy v mitigaci klimatických změn je proto v posledních letech věnována stále větší pozornost, což dokládá například i rozrůstající se trh s uhlíkovými kredity (offsety). 
-  Rešerše je rozdelená do tematických sekcií.  
+  Rešerše je rozdělená do tematických sekcí.  
 items:
   sekvestrace:
   sekvestracepopis:
     - name: Carbon sequestration in soil. Lal et al., 2015
       link: https://www.sciencedirect.com/science/article/pii/S1877343515001013?casa_token=DGH0lBAEIgQAAAAA:AmLfGDdiXo_NBe-HZtA7krXOMrOxCVXsYIAkuaR99Batnyj3WSIJpqL3G8Hg156bxLprBzzmPw
-      source: Current Opinion in Environmental sustainability
+      source: Current Opinion in Environmental Sustainability
       description: |
-        * Základní přehled informací o sekvestraci uhlíku do půdy (stručný popis procesu, stabilizační mechanismy, představení některých opatření a praktik atd.)
+        * Základní přehled informací o sekvestraci uhlíku do půdy (stručný popis procesu, stabilizační mechanismy, představení některých opatření a praktických metod atd.)
         * Stručný popis dalších ekosystémových a ekonomických benefitů souvisejících se sekvestrací uhlíku do půdy
     - name: Role of soil carbon in natural climate solutions. Bossio et al., 2020
       link: https://www.nature.com/articles/s41893-020-0491-z
       source: Nature Sustainability
       description: |
-        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření vyčíslen mitigační potenciál (v GtCO2e ročně) v roce 2030 ve třech úrovních finanční náročnosti 
+        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření vyčíslen mitigační potenciál (v GtCO<sub>2</sub>eq ročně) v roce 2030, ve třech úrovních finanční náročnosti 
         * Návaznost na [Griscom et al., 2017](https://www.researchgate.net/publication/320536154_Natural_climate_solutions)
     - name: Grassland management impacts on soil carbon stocks. A new synthesis. Conant et al., 2017
       link: https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.1473
       source: Ecological Applications
       description: |
-        * Kontext: v půdě na pastvinách se celosvětově nachází o cca 50 % víc SOC víc než v lesní půdě
+        * Kontext: v půdě na pastvinách se celosvětově nachází o cca 50 % víc organického uhlíku než v lesní půdě
         * Meta-analýza vlivu různých praktik managementu pastvin (přeměna orné půdy na pastvinu; přeměna přirozeného ekosystému na pastvinu; využití žížal; hnojení; oheň(vypalování?); pastva; (trvalé) travní porosty - trávnaté porasty; rekultivace) na SOC
         * Přeměnou orné půdy na pastvinu je možné zvýšit množství SOC o 40 %.
     - name: Farming with crops and rocks to address global climate, food and soil security. Beerling et al., 2018
@@ -199,7 +199,7 @@ items:
 
 ---
 
-## Sekvestrace uhlíku do půdy a její vliv na mitigaci klimatické změny
+## Ukládání (sekvestrace) uhlíku do půdy a její vliv na mitigaci klimatické změny
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -215,7 +215,7 @@ items:
   </tbody>
 </table>
 
-###### Nasledujúce štúdie poskytujú základné informácie o sekvestrácií uhlíku do pôdy a predstavujú prehľad niekoľkých praktík, ktoré je možné k sekvestrácií využívať.
+###### V následujících studiích je možné najít základní informace o sekvestraci uhlíku do půdy a přehled několika metod, které je možné k sekvestraci využívat.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -254,7 +254,7 @@ items:
   </tbody>
 </table>
 
-###### Štúdie v tejto sekcií sa venujú množstvu uhlíka v pôde a tiež faktom, ktoré môžu toto množstvo ovplyvňovať (např. typ půdy, množství srážek, klimatické podmínky, způsob hospodaření).
+###### Studie věnované množství uhlíku v půdě a tomu, co může toto množství ovlivňovat (např. typ půdy, množství srážek, klimatické podmínky či způsob hospodaření).
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -293,7 +293,7 @@ items:
   </tbody>
 </table>
 
-###### Štúdie poskytujú prehľad rôznych metód merania pôdneho uhlíku. Presnosť a opakovateľnosť merania je důležitá napr. pro určení efektivity offsetových projektů.
+###### Studie poskytují přehled různých metod měření půdního uhlíku. Přesnost a opakovatelnost měření je důležitá např. pro určení efektivity offsetových projektů.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -332,7 +332,7 @@ items:
   </tbody>
 </table>
 
-###### Nasledujúce štúdie sa venujú kapacite pôd uchovávať uhlík. Táto kapacita nie je neobmedzená a rozdielna v závislosti na rôznych faktoroch.  
+###### Studie věnované kapacitě půd uchovávat uhlík. Tato kapacita není neomezená a závisí na různých faktorech.  
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -355,7 +355,7 @@ items:
   </tbody>
 </table>
 
-## Typy půdního organického uhlíku
+## Organický uhlík v půdě (typy)
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -371,7 +371,7 @@ items:
   </tbody>
 </table>
 
-###### Studie představuje dělení půdního organického uhlíku důležité pro pochopení dynamiky jeho procesů v půdě a aplikaci vhodných metod sekvestrace.
+###### Studie představuje dělení půdního organického uhlíku, které je důležité pro pochopení dynamiky jeho procesů v půdě a aplikaci vhodných metod sekvestrace.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -394,7 +394,7 @@ items:
   </tbody>
 </table>
 
-## Půdní anorganický uhlík
+## Anorganický uhlík v půdě
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -410,7 +410,7 @@ items:
   </tbody>
 </table>
 
-###### Táto sekcia predstavuje základný úvod do problematiky pôdneho anorganického uhlíku (Soil Inorganic Carbon – SIC), ktorému je venovaná omnoho menšia pozornosť než výzkumu půdního organického uhlíku (Soil Organic Carbon – SOC). Světové zásoby SIC jsou menší než u SOC, jsou však považovány za stabilnější a studie ukazují jeho významný vliv na globální uhlíkový cyklus.
+###### Tato sekce představuje základní úvod do problematiky půdního anorganického uhlíku (Soil Inorganic Carbon – SIC), kterému je věnována mnohem menší pozornost než výzkumu půdního organického uhlíku (Soil Organic Carbon – SOC). Světové zásoby SIC jsou menší než u SOC, jsou však považovány za stabilnější a studie ukazují jeho významný vliv na globální uhlíkový cyklus.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -433,7 +433,7 @@ items:
   </tbody>
 </table>
 
-## Vliv globálního oteplování na stav uhlíku v půdě
+## Vliv globálního oteplování na množství uhlíku v půdě
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -449,7 +449,7 @@ items:
   </tbody>
 </table>
 
-###### Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy, např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku. Nasledujúce štúdie sa venujú výskumu tejto dynamiky. 
+###### Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy, např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku. Nasledující studie se věnují výzkumu této dynamiky. 
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -488,7 +488,7 @@ items:
   </tbody>
 </table>
 
-###### Štúdie uvedené v tejto sekcií poskytujú základné informácie o iniciatíve 4 per mille a skúmajú reálne využitie jej návrhov v praxi. 
+###### Studie poskytující základní informace o iniciativě 4 per mille a zkoumající reálné využití jejích návrhů v praxi 
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
