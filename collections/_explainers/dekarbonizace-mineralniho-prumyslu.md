@@ -79,8 +79,8 @@ Přestože každá z dalších možností už je jednotlivě méně efektivní, 
 Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do roku 2050 a očekává se, že emise se podaří snížit o téměř 75 %.[^netzero]
 
 {% include figure.html
-    name="chris-linnett-EeqxbxILScA-unsplash.jpg"
-    alt="Cementárna v USA."
+    name="cementarna.jpg"
+    alt="Cementárna v USA"
     caption="1 tuna cementu = cca 0,6 tuny CO<sub>2</sub>"
     source-text="Unsplash"
     source-url="https://unsplash.com/photos/EeqxbxILScA"
@@ -105,8 +105,8 @@ Stejně jako u cementu představuje i zde CCS nejvýznamnější způsob sníže
 * Vodík - Lze využít jako palivo, které by znamenalo snížení emisí CO<sub>2</sub> až o třetinu.[^vapnopaliva] Dosažení minimálního znečištění ze spalování je ale podmíněno fungováním pecí výhradně na vodík a také dostupností nízkoemisního vodíku. Technologicky jednodušší variantou je spalování směsi vodíku a zemního plynu, snížení emisí však v takovém případě bude nižší.
 
 {% include figure.html
-    name="Lime_plant,_Wyoming.jpg"
-    alt="Vápenka v USA."
+    name="vapenka.jpg"
+    alt="Vápenka v USA"
     caption="1 tuna vápna = 0,75 tuny CO<sub>2</sub>."
     source-text="Wikimedia"
     source-url="https://commons.wikimedia.org/wiki/File:Lime_plant,_Wyoming.jpg"
@@ -137,8 +137,8 @@ Podle scénáře od společnosti British Glass[^britishglass] by celkové emise 
 * Zachytávání oxidu uhličitého - CCS se z ekonomických a technologických důvodů považuje za vhodné řešení pouze pro relativně velké pece, které navíc pracují s nižšími podíly střepů. Zavedení CCS by znamenalo o 7 % méně emisí oproti současnému stavu.[^britishglass]
 
 {% include figure.html
-    name="mael-balland-Tjo91_O8yMo-unsplash.jpg"
-    alt="Sklárna."
+    name="sklarna.jpg"
+    alt="Sklárna"
     caption="1 tuna skla = cca 0,5 tuny CO<sub>2</sub>"
     source-text="Unsplash"
     source-url="https://unsplash.com/photos/Tjo91_O8yMo"
