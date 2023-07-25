@@ -72,9 +72,9 @@ Přestože každá z dalších možností už je jednotlivě méně efektivní, 
     slug="emise-vyroba-cementu"
 %}
 
-* Nahrazení betonu – Lze méně stavět z betonu a místo toho používat napířklad dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný.[^drevostavby]
+* Nahrazení betonu – Lze méně stavět z betonu a místo toho používat například dřevo. Velké rozšíření podobných trendů by do budoucna ovšem mohlo narážet na problémy s environmentálně udržitelnými dodávkami materiálu, přesto je potenciál úspory emisí spojený s novými směry ve stavebnictví (např. dřevostavby) stále značný.[^drevostavby]
 
-* Alternativní úsporná řešení – Hovoří se například o 3D tisku budov, které zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu. Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody v kombinaci s recyklací a náhrazením betonu celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^mckinsey]
+* Alternativní úsporná řešení – Hovoří se například o 3D tisku budov, které zatím nelze aplikovat ve velkém měřítku. Jako schůdnější cesta se jeví využití menších modulárních jednotek, které byly předvyrobeny v továrnách. Ty by do stavebnictví přinesly větší efektivitu, a tedy opět ušetřily emise i finance. Ke snížení emisí může přispět i probíhající digitalizace stavebnictví (BIM) – díky lepšímu přehledu o celé stavbě bude vznikat méně odpadu a pravděpodobně bude potřeba i méně betonu. Podle odhadů společnosti McKinsey mohou zmíněné alternativní metody v kombinaci s recyklací a nahrazením betonu celkově snížit emise z cementářství o dalších 7 % či více (v závislosti na jejich rozvoji).[^mckinsey]
 
 Výše popsaný scénář nicméně nepočítá s kompletní dekarbonizací do roku 2050 a očekává se, že emise se podaří snížit o téměř 75 %.[^netzero]
 
