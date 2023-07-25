@@ -48,6 +48,12 @@ Na tunu cementu vzniká průměrně 0,6 tun CO<sub>2</sub>.[^cementintenzita] Em
 
 Vzhledem k postupující urbanizaci a s ní související výstavbě není výrazné snížení poptávky po cementu do budoucna pravděpodobné. Naopak – McKinsey předpokládá do roku 2050 navýšení výroby cementu o 6 % a Světové ekonomické fórum až o 45 %.[^cementpoptavka] Vzhledem k důležitosti cementu a jeho emisní náročnosti se tento sektor řadí mezi nejvíce emisně náročné průmysly a cementárny patří mezi [největší emitenty i v České republice](/infografiky/nejvetsi-emitenti-cr).
 
+{% include preview-box.html
+    title="Dekarbonizace z perspektivy konkrétní cementárny v Česku"
+    text="Povídání o výrobě a dekarbonizaci cementu v českých podmínkách nabízí epizoda podcastu 2050."
+    slug="42-lafarge-cement"
+%}
+
 ### Zachytávání CO<sub>2</sub>
 
 U dekarbonizace výroby cementu hraje zachytávání CO<sub>2</sub> pomocí technologie [CCS](/studie/2022-reserse-ccs) a jeho následné uložení či využití hlavní roli.[^cementcenazachyceni] Zařízení na CCS dovede zachytit 90–95[^ccsintenzita] procent emisí dané cementáry a jedná se tak o hlavní technologii dekarbonizace cementu, bez které se uhlíkové neutralitě nelze přiblížit. Většina zachyceného CO<sub>2</sub> by byla uložena v podzemních geologických formacích, ale část lze uložit i v samotném betonu, např. formou přimíchání nebo v rámci procesu vytvrzování. Takto přidaný oxid uhličitý mineralizuje do podoby stabilních uhličitanů a je díky tomu zadržen na dlouhou dobu. Podobné postupy však ovlivňují výsledné vlastnosti betonu, a zdaleka je tak není možné uplatnit vždy a všude.
