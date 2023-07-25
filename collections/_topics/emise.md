@@ -120,7 +120,7 @@ subtopics:
   - emise-vyroba-cementu
   - emise-dychani
   - emise-sr
-  - mineralni-prumysl
+  - dekarbonizace-mineralniho-prumyslu
   qa:
   - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |

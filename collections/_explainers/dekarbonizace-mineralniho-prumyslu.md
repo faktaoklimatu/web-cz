@@ -1,7 +1,7 @@
 ---
 layout:      explainer
 title:       "Jak dekarbonizovat výrobu cementu, vápna a skla?"
-slug:        "mineralni-prumysl"
+slug:        "dekarbonizace-mineralniho-prumyslu"
 published:   2023-07-20
 authors:
   - id: "adam-bilek"
@@ -114,7 +114,7 @@ Stejně jako u cementu představuje i zde CCS nejvýznamnější způsob sníže
 
 ## Sklo
 
-Výroba skla tvoří přibližně 0,3 % světových emisí CO<sub>2</sub>.[^emisesklo] Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo] 
+Výroba skla tvoří přibližně 0,3 % světových emisí CO<sub>2</sub>.[^emisesklo] Se sklem se lze nejčastěji setkat ve formě obalů či oken a jedná se o materiál, který lidstvo vyrábí již tisíce let. Na každého obyvatele planety připadá v průměru 25 kilogramů vyrobeného skla ročně.[^spotrebasklo]
 
 U skla je hlavním zdrojem emisí **spalování, které produkuje 75–85 % emisí CO<sub>2</sub>. Zbylých 15–25 % připadá na chemické reakce.**[^britishglass] Především jde o reakce spojené se sklářskými surovinami. Jde například o rozklad uhličitanu sodného, který se používání ke snížení potřebné teploty tavení skla.
 
