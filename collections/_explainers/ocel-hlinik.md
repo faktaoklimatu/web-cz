@@ -25,7 +25,7 @@ perex:       "Ocel a hliník. Výroba a zpracování těchto kovů je emisně ve
     slug="technologie-dekarbonizace-prumyslu"
 %}
 
-Světová poptávka po oceli a hliníku bude v následujících letech růst a tyto kovy nelze plně nahradit. Existuje vícero způsobů jak výrobu těchto kovů dekarbonizovat. U oceli existuje mnoho metod, které můžeme nakombinovat abychom dovedli výrobu dekarbonizovat. Výroba hliníku je silně závislá na dodání elektřiny a tak dekarbonizace tohoto sektoru je přímo spojena s dekarbonizací výroby elektřiny.
+Světová poptávka po oceli a hliníku bude v následujících letech růst a tyto kovy nelze plně nahradit. Možností jak dekarbonizovat ocel je vícero a i s dnešními technologiemi dovedeme významnou část emisí snížit. Pro plnou dekarbonizaci výroby oceli ovšem budeme potřebovat zelený vodík a dekarbonizace je tak závislá na rozvoji infrastruktury a budoucí ekonomické situaci. Výroba hliníku je silně závislá na dodání elektřiny a tak dekarbonizace tohoto sektoru je přímo spojena s dekarbonizací výroby elektřiny.
 
 *Následující text představuje různé scénáře dekarbonizace výroby oceli a hliníku a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
