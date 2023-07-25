@@ -85,6 +85,7 @@ subtopics:
   - nizkouhlikova-spolecnost
   - adaptacni-strategie-cr
   - technologie-dekarbonizace-prumyslu
+  - dekarbonizace-mineralniho-prumyslu
   - 3-stavebnictvi-a-bydleni
   - 27-rethink-architecture
   - 5-transformace-dopravy
