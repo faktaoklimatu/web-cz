@@ -1,16 +1,15 @@
 ---
 layout:        survey
-title:         "Půdní uhlík"
+title:         "Uhlík v půdě"
 slug:          2023-reserse-soil-carbon
 redirect_from: "/2023-reserse-soil-carbon"
 weight:        305
 published:     2023-07-14
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
-caption:       "Přehled studií o půdním uhlíku."
+caption:       "Přehled studií o uhlíku v půdě."
 intro: |
-  V organické půdní hmotě se nachází třikrát více uhlíku než v zemské atmosféře. To představuje velké riziko i příležitost – na jedné straně se v důsledku nevhodného zacházení s půdou může velké množství uhlíku do atmosféry uvolnit, na straně druhé má půda při využití vhodných postupů velký potenciál sloužit jako jeho dlouhodobé úložiště. Roli půdy v mitigaci klimatických změn je proto v posledních letech věnována stále větší pozornost, což dokládá například i rozrůstající se trh s uhlíkovými kredity (offsety). 
-  Rešerše je rozdělená do tematických sekcí.  
+  V organické půdní hmotě se nachází třikrát více uhlíku než v zemské atmosféře. To představuje velké riziko i příležitost – na jedné straně se v důsledku nevhodného zacházení s půdou může velké množství uhlíku do atmosféry uvolnit, na druhé straně má půda při využití vhodných postupů značný potenciál sloužit jako jeho dlouhodobé úložiště. Roli půdy v mitigaci (zmírňování) klimatických změn je proto v posledních letech věnována stále větší pozornost, což dokládá například i rozrůstající se trh s uhlíkovými kredity (offsety). Studie v této rešerši jsou rozděleny do tematických sekcí.  
 items:
   sekvestrace:
   sekvestracepopis:
@@ -24,62 +23,62 @@ items:
       link: https://www.nature.com/articles/s41893-020-0491-z
       source: Nature Sustainability
       description: |
-        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření vyčíslen mitigační potenciál (v GtCO<sub>2</sub>eq ročně) v roce 2030, ve třech úrovních finanční náročnosti 
+        * Analýza tzv. dvanácti opatření blízkých přírodě (Natural Climate Solutions – NCS), podporujících ukládání a uchovávání uhlíku v půdě – pro každé opatření je vyčíslen jeho mitigační potenciál (v GtCO<sub>2</sub>eq ročně) v roce 2030, ve třech různých úrovních finanční náročnosti 
         * Návaznost na [Griscom et al., 2017](https://www.researchgate.net/publication/320536154_Natural_climate_solutions)
     - name: Grassland management impacts on soil carbon stocks. A new synthesis. Conant et al., 2017
       link: https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.1473
       source: Ecological Applications
       description: |
         * Kontext: v půdě na pastvinách se celosvětově nachází o cca 50 % víc organického uhlíku než v lesní půdě
-        * Meta-analýza vlivu různých praktik managementu pastvin (přeměna orné půdy na pastvinu; přeměna přirozeného ekosystému na pastvinu; využití žížal; hnojení; oheň(vypalování?); pastva; (trvalé) travní porosty - trávnaté porasty; rekultivace) na SOC
+        * Metaanalýza vlivu různých způsobů obhospodařování pastvin na množství organického uhlíku (SOC) v půdě: přeměna orné půdy na pastvinu, přeměna přirozeného ekosystému na pastvinu, využití žížal, hnojení, vypalování, pastva, (trvalý) travní porost, rekultivace
         * Přeměnou orné půdy na pastvinu je možné zvýšit množství SOC o 40 %.
     - name: Farming with crops and rocks to address global climate, food and soil security. Beerling et al., 2018
       link: https://www.nature.com/articles/s41477-018-0108-y
       source: Nature Plants
       description: |
-        * Základní představení metody enhanced weathering (vylepšené zvětrávání), při které se do půdy zabudovávají křemičité horniny (studie se věnuje hlavně bazaltu), jež reagují s CO2 za vzniku stabilnějších forem uhlíku a dalších produktů
+        * Základní představení metody enhanced weathering (urychlené zvětrávání), při které se do půdy přidávají křemičité horniny (studie se věnuje hlavně bazaltu), jež reagují s CO<sub>2</sub> a vznikají stabilnější formy uhlíku a další produkty
         * Zkoumání pozitivních účinků této metody na půdu a zemědělskou produkci; potřeba dalšího výzkumu
     - name: Biochar in climate change mitigation. Lehmann et al., 2021
       link: https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/7329/files/2021/12/NatureGeoscience-14-883-892-2021-Lehmann.pdf
       source: Nature Geoscience
       description: |
-        * Podrobný přehled možností využití biouhlí v mitigaci klimatické změny
-        * Vysvětlení půdních chemických mechanismů účinků biouhlí
-        * Výhody využití biouhlí:
-            * Pyrolyzovaná biomasa (biouhlí) je oproti surové biomase odolnější vůči rozkladu a uvolňování skleníkových plynů
+        * Podrobný přehled možností využití biouhlu v mitigaci klimatické změny
+        * Vysvětlení, jak biouhel v půdě funguje (chemické mechanismy) 
+        * Výhody využití biouhlu (pyrolyzované biomasy):
+            * Oproti surové biomase odolnější vůči rozkladu a uvolňování skleníkových plynů
             * Podpora růstu rostlin
-            * Snížení míry mineralizace existujícího půdního organického uhlíku
+            * Snížení mineralizace organického uhlíku nacházejícího se v půdě
             * Možnost zachytávání a ukládání (<glossary id="ccs">_carbon capture and storage_</glossary>) látek vznikajících při pyrolýze
     - name: The Carbon Sequestration Potential of Regenerative Farming Practices in South Carolina, USA. Kanne & Kloot, 2019
       link: https://www.scirp.org/pdf/AJCC_2019040415241499.pdf
       source: American Journal of Climate Change
       description: |
-        * Zkoumání pozitivního vlivu praktik regenerativního zemědělství (zejména využívání krycích plodin) na celkové zdraví půdy a zvyšování množství půdního organického uhlíku
+        * Zkoumání pozitivního vlivu metod využívaných v regenerativním zemědělství (zejména přínos krycích plodin) na celkové zdraví půdy a zvyšování množství organického uhlíku v půdě
   faktory:
   faktorypopis:
     - name: Global Soil Organic Carbon Map 
       link: http://54.229.242.119/GSOCmap/
       source: FAO
       description: |
-        * Interaktivní mapa poskytující informace o množství SOC v různých světových oblastech
+        * Interaktivní mapa poskytující informace o množství organického uhlíku (SOC) v půdě v různých částech světa
     - name: Total carbon and nitrogen in the soils of the world. Batjes, 2014
       link: https://bsssjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/ejss.12114_2?saml_referrer
       source: European Journal of Soil Science
       description: |
-        * Přehled obsahu organického uhlíku v 26 hlavních typech půdy (rozdělených do 106 podtypů) ve čtyřech různých hloubkách půdního profilu (0–30 cm, 0–50 cm, 0–100 cm, 0–200 cm) 
-        * Přehled obsahu N a C:N v hlavních typech půdy ve třech různých hloubkách profilu 
+        * Přehled o množství organického uhlíku v 26 hlavních typech půdy (rozdělených do 106 podtypů) ve čtyřech různých hloubkách půdního profilu (0–30 cm, 0–50 cm, 0–100 cm, 0–200 cm) 
+        * Přehled o množství dusíku a poměru uhlík a dusíku v hlavních typech půdy (ve třech různých hloubkách půdního profilu) 
         * Data vhodné kombinovat s mapou [FAO Soil map of the world](https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/)
-        * Odhadovaný celkový podíl organického i anorganického uhlíku v půdě: 2157–2293 Pg v horních 100 cm půdy
+        * Odhadovaný celkový podíl organického i anorganického uhlíku v půdě celého světa: 2157–2293 Pg (petagramů) v horních 100 cm půdy
     - name: A global meta-analysis of soil organic carbon in the Anthropocene. Beillouin et al., 2023
       link: https://www.nature.com/articles/s41467-023-39338-z
       source: Nature Communications
       description: |
-        * Meta-analýza faktorů ovlivňujících množství půdního organického uhlíku
+        * Metaanalýza faktorů ovlivňujících množství organického uhlíku v půdě
         * Zkoumané faktory:
-            * Změna využití půdy (Land-Use Change – LUC; např. přeměna lesa na pastvinu, přeměna močálu na ornou půdu)
-            * Management půdy (např.: orba, hnojení, obnova močálů)
+            * Změna ve využití půdy (LUC, Land-Use Change, např. přeměna lesa na pastvinu či přeměna močálu na ornou půdu)
+            * Způsob zacházení s půdou (např. orba, hnojení, obnova močálů)
             * Klimatická změna (přímé vlivy jako např. oteplování, nepřímé vlivy jako např. požáry)
-        * LUC jako nejsilnější faktor jak s pozitivním tak s negativním vlivem
+        * LUC jako nejsilnější faktor, mající pozitivní i negativní vliv
         * [Interaktivní graf](https://rpubs.com/dbeillouin/Figure1)
   mereni:
   merenipopis:
@@ -92,51 +91,51 @@ items:
       link: https://www.tandfonline.com/doi/epdf/10.1080/17583004.2022.2106310?needAccess=true&role=button
       source: Carbon Management
       description: |
-        * Přehled několika metod měření půdního uhlíku a) v laboratorních podmínkách, b) in situ a c) na základě dálkového pozorování (drony, satelity), včetně jejich výhod a nevýhod 
-        * Možnosti využití umělé inteligence (AI) v předpovídání množství půdního uhlíku na základě některých vlastností půdy (např. barva, vlhkost, hustota) – metoda s potenciál velkoplošného využití
+        * Přehled několika metod měření půdního uhlíku a) v laboratorních podmínkách, b) in situ a c) na základě dálkového pozorování (drony, satelity), včetně výhod a nevýhod každé metody
+        * Možnosti využití umělé inteligence (AI) v předpovídání množství uhlíku v půdě na základě některých vlastností půdy (např. barva, vlhkost, hustota) – metoda s potenciálem velkoplošného využití
     - name: Laser-induced breakdown spectroscopy (LIBS) to measure quantitatively soil carbon with emphasis on soil organic carbon. A review. Senesi & Senesi, 2016
       link: https://www.sciencedirect.com/science/article/pii/S0003267016308753
       source: Analytica Chimica Acta
       description: |
-        * Základní přehled metody LIBS a jejího využití při měření uhlíku v půdě: základní principy, historický přehled a vývoj této metody, výhody a nevýhody 
-        * Výhody LIBS oproti nejčastěji používaným metodám měření půdního uhlíku (*dry combustion a wet combustion*): 
-            * a) LIBS nevyžaduje žádnou předchozí přípravu vzorku
+        * Základní popis metody LIBS a jejího využití při měření uhlíku v půdě: hlavní principy, historický vývoj metody, výhody a nevýhody 
+        * Výhody LIBS oproti dvěma nejčastěji používaným metodám měření uhlíku v půdě (*dry combustion* a *wet combustion*): 
+            * a) nevyžaduje žádnou předchozí přípravu vzorku
             * b) nenarušuje půdu
-            * c) měření je jednoduché a rychlé, což umožňuje udělat mnoho měření za krátký čas
-            * d) existuje potenciál výroby malého přenosného zařízení na měření in situ
-        * Podle autorů tato metoda vzbuzuje největší zájem mezi novými způsoby měření půdního uhlíku
+            * c) měření je jednoduché a rychlé, což umožňuje provést velké množství měření v krátké době
+            * d) využívá malé přenosné zařízení, které lze snadno využít k měření in situ
+        * Podle autorů vzbuzuje tato metoda ze všech nových způsobů měření největší zájem
   kapacita:
   kapacitapopis:
     - name: Global stocks and capacity of mineral-associated soil organic carbon. Georgiou et al., 2022
       link: https://www.nature.com/articles/s41467-022-31540-9
       source: Nature Communications
       description: |
-        * Studie mapuje
+        * Studie mapuje:
             * a) světové zásoby organického uhlíku vázaného na minerály
-            * b) kapacitu půd pro dlouhodobé uchování uhlíku
+            * b) kapacitu půd pro dlouhodobé uložení uhlíku
             * c) nasycení půd uhlíkem vázaným na minerály
-        * Celosvětová kapacita půd pro vázání uhlíku na minerály 4 596 Pg C (± 453 Pg C) do hloubky 1 m, celkové nasycení půd – 38–42 %. Vliv klimatických podmínek a způsobu hospodaření na změnu v množství takto vázaného uhlíku
+        * Celosvětová kapacita půd pro vázání uhlíku na minerály: 4 596 Pg C (± 453 Pg C) do hloubky 1 m, celkové nasycení půd: 38–42 %. Na změnu v množství takto vázaného uhlíku mají vliv klimatické podmínky a způsob hospodaření 
     - name: Soil carbon debt of 12,000 years of human land use. Sanderman et al., 2017
       link: https://www.pnas.org/doi/full/10.1073/pnas.1706103114
       source: PNAS
       description: |
-        * Rekonstrukce historického množství organického uhlíku v půdě – výrazné změny jeho zásob vlivem zemědělských postupů (pěstování plodin a pastvy); světové lokality s největšími ztrátami půdního uhlíku
-        * Upozornění – ani při zavedení nejlepších postupů půdního hospodaření nelze obnovit jeho zásoby na původní úroveň
+        * Rekonstrukce historického množství organického uhlíku v půdě – výrazné změny jeho zásob vlivem zemědělských postupů (pěstování plodin a pastvy); přehled světových lokalit s největšími ztrátami půdního uhlíku
+        * Upozornění – ani při zavedení nejlepších postupů hospodaření s půdou nelze obnovit zásoby organického uhlíku na původní úroveň
         * Možný základ pro výběr lokalit vhodných pro obnovu půdního uhlíku
     - name: Soil carbon storage informed by particulate and mineral-associated organic matter. Cotrufo at al., 2019
       link: https://www.nature.com/articles/s41561-019-0484-6
       source: Nature Geoscience
       description: |
-        * Výzkum stavu půdy na evropských pastvinách a v lesích
-        * Pastviny: v půdní organické hmotě (SOM) dominuje typ uhlíku MAOM-C (dělení podle [Lavallee et al, 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY)), který se v půdě uchovává na dlouhé období, ale jeho sekvestrace je náročná na množství dusíku a půda může dosáhnout své sekvestrační kapacity
-        * Lesy: schopné sekvestrovat více uhlíku, ten však v méně trvalé formě (POM)
+        * Výzkum zaměřený na stav půdy na evropských pastvinách a v lesích
+        * Pastviny: v půdní organické hmotě (SOM) dominuje typ uhlíku MAOM-C (dělení podle [Lavallee et al, 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY)), který v půdě zůstává dlouho, jeho sekvestrace je ale náročná na množství dusíku a půda může dosáhnout své maximální sekvestrační kapacity
+        * Lesy: schopné sekvestrovat více uhlíku, ten je zde však uložen v méně trvalé formě (POM)
   typy:
   typypopis:
     - name: Conceptualizing soil organic matter into particulate and mineral-associated forms to address global change in the 21st century. Lavallee et al., 2019
       link: https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14859?casa_token=Gv_aZvNojLsAAAAA%3Ahow5n_aE0pdON2xUSHCoCIGAqjhr2D5d3TgBbmTZF5dQMjD24A55Yvg0xA1GXGBuuKx1uHhy9jwS_SY
       source: Global Change Biology
       description: |
-        * Dělení půdní organické hmoty (jejíž je uhlík podstatnou složkou) na *organickou hmotu ve formě pevných organických částic* (Particulate Organic Matter – POM) a na *na minerály vázané organické částice* (Mineral-Associated Organic Matter – MAOM)
+        * Dělení půdní organické hmoty (jejíž podstatnou složkou je právě uhlík) na *organickou hmotu ve formě pevných organických částic* (Particulate Organic Matter – POM) a na *organické částice vázané na minerály* (Mineral-Associated Organic Matter – MAOM)
         * Přehledné shrnutí rozdílných vlastností POM a MAOM (např. poločas rozpadu, možnost nasycení)
   sic:
   sicpopis:
@@ -144,62 +143,62 @@ items:
       link: https://www.sciencedirect.com/science/article/pii/S0341816221002927?casa_token=ndxgptRRX90AAAAA:v8GyJGiqjxcEiPwkMUBirp6Wxp-dgd2jVBI79H3joj7igEF3uxqboZDxllAsE-_hMEZYGEHzKQ
       source: CATENA
       description: |
-        * Informace umožňující pochopení dynamiky půdního anorganického uhlíku (SIC) – další výzkum ale nutný
+        * Informace umožňující pochopení dynamiky anorganického uhlíku v půdě (SIC) – další výzkum ale nutný
         * Přehled dalších prací zabývajících se SIC
-        * Přírodní a antropogenní faktory ovlivňující množství SIC při zvýšeném množství atmosférického CO<sub>2</sub>
+        * Přírodní a antropogenní faktory ovlivňující množství SIC při zvýšené koncentraci oxidu uhličitého v atmosféře
     - name: Effects of land-use change on soil inorganic carbon. A meta-analysis. An et al., 2019
       link: https://www.sciencedirect.com/science/article/pii/S001670611930151X
       source: Geoderma
       description: |
-        * Představení metaanalýzy vlivu změny využívání půdy (Land Use Change – LUC) na SIC v suchých a polosuchých oblastech světa
+        * Metaanalýza zaměřená na vliv změny ve využívání půdy (Land Use Change – LUC) na SIC v suchých a polosuchých oblastech světa
         * Hlavní zjištění z hlediska vlivu na množství SIC:
-            * přeměna travnatých ploch na zemědělskou půdu – pozitivní
-            * přeměna zemědělské půdy na travnaté plochy – negativní
-            * zalesňování písčitých oblastí – silně pozitivní
-            * zalesňování travnatých ploch a zemědělské půdy – slabě negativní
-        * Diskuze o možných faktorech ovlivňujících SIC
+            * přeměna travnatých ploch na zemědělskou půdu – pozitivní vliv
+            * přeměna zemědělské půdy na travnaté plochy – negativní vliv
+            * zalesňování písčitých oblastí – silně pozitivní vliv
+            * zalesňování travnatých ploch a zemědělské půdy – slabě negativní vliv
+        * Diskuze o možných faktorech ovlivňujících množství SIC
     - name: Inorganic carbon losses by soil acidification jeopardize global efforts on carbon sequestration and climate change mitigation. Raza, 2021 
       link: https://www.sciencedirect.com/science/article/pii/S095965262102254X
       source: Journal of Cleaner Production
       description: |
-        * Přehledová studie zaměřující se na problematiku acidifikace zemědělských půd a jejího nezanedbatelného negativního vlivu na množství SIC
-        * Obecné informace o acidifikaci půd, ale také konkrétní čísla (ztráty SIC), přehled dalších procesů souvisejících s poklesem SIC (zhoršování kvality půdy, zhoršená dostupnost minerálů pro rostliny, zvyšování dostupnosti těžkých kovů atd.) a navrhované zemědělské postupy, které by pomohly acidifikaci snížit
+        * Přehledová studie zaměřující se na okyselování (acidifikaci) zemědělských půd a jeho nezanedbatelný dopad na množství SIC v půdě
+        * Obecné informace k okyselování půd, ale také konkrétní čísla (ztráty SIC), přehled dalších procesů souvisejících s poklesem SIC (snižování kvality půdy, zhoršená dostupnost minerálů pro rostliny, zvyšování dostupnosti těžkých kovů atd.) a navrhované zemědělské postupy, které by pomohly acidifikaci snížit
   vliv:
   vlivpopis:
     - name: Five years of whole-soil warming led to loss of subsoil carbon stocks and increased CO2 efflux. Soong et al., 2021
       link: https://www.science.org/doi/10.1126/sciadv.abd1343
       source: Science Advances
       description: |
-        * Terénní experiment v jehličnatém lese mírného pásma – potvrzení pozitivní zpětné vazby mezi klimatickou změnou a dynamikou půdního uhlíku (a dusíku) v dolních vrstvách půdy (>20 cm hluboko) 
-        * Několik možných vysvětlení úbytku půdního uhlíku (a dusíku) vlivem oteplování
+        * Terénní experiment v jehličnatém lese mírného pásma – potvrzení pozitivní zpětné vazby mezi klimatickou změnou a dynamikou uhlíku (a dusíku) v hlubších vrstvách půdy (>20 cm hluboko) 
+        * Několik možných vysvětlení úbytku uhlíku (a dusíku) v půdě vlivem oteplování
     - name: Global soil profiles indicate depth-dependent soil carbon losses under a warmer climate. Wang et al. 2022
       link: https://www.nature.com/articles/s41467-022-33278-w
       source: Nature Communications
       description: |
-        * Pozitivní zpětná vazba mezi oteplováním a uvolňováním půdního uhlíku, přičemž vrchní vrstvy půdy (0–0,3 m) reagují citlivěji než spodní – oteplení o 1 °C = ztráta přibližně 6 % z původních zásob uhlíku v horních vrstvách půdy
-        * Množství uvolněného uhlíku – vlivy: 
+        * Pozitivní zpětná vazba mezi oteplováním a uvolňováním půdního uhlíku, přičemž vrchní vrstvy půdy (0–0,3 m) reagují citlivěji než vrstvy hlubší – oteplení o 1 °C = ztráta přibližně 6 % z původních zásob uhlíku v horních vrstvách půdy
+        * Vliv na množství uvolněného uhlíku mají tyto faktory: 
             * zejména původní zásoba uhlíku, míra oteplení a množství srážek
-            * typ biomu – největší podíl ztrát lze očekávat v oblasti boreálních lesů, v případě tundry naopak očekávatelný nárůst sekvestračního potenciálu (díky většímu množství vegetace, jemuž oteplování poskytne vhodné podmínky)
+            * typ biomu – největší ztráty lze očekávat v oblasti severské tajgy, v případě tundry se naopak očekává nárůst sekvestračního potenciálu (díky většímu množství vegetace, jemuž oteplování poskytne vhodné podmínky)
   iniciativa:
   iniciativapopis:
     - name: The 4p1000 initiative. Opportunities, limitations and challenges for implementing soil organic carbon sequestration as a sustainable development strategy. Rumpel, 2020
       link: https://link.springer.com/article/10.1007/s13280-019-01165-2#citeas
       source: Ambio
       description: |
-        * Základní informace o iniciativě 4p1000 představené na summitu COP21
+        * Základní informace o iniciativě 4p1000 představené na summitu COP21 v Paříži (2015)
         * Cíl iniciativy: každoročně zvyšovat podíl půdní organické hmoty o 0,4 %
-        * Kritika iniciativy, biofyzikální a socioekonomické bariéry sekvestrace SOC
-        * Potenciál iniciativy budovat spolupráci mezi různými disciplínami a sektory na lokální i globální úrovni
+        * Kritika iniciativy, biofyzikální a socioekonomické bariéry sekvestrace organického uhlíku
+        * Potenciál iniciativy budovat spolupráci napříč různými obory a sektory (na lokální i globální úrovni)
     - name: Soil Carbon 4 per Mille. Minasny et al., 2017
       link: https://reader.elsevier.com/reader/sd/pii/S0016706117300095?token=6445F2DE6F6871616FF05A7C679DED3FFADACCC43117E55917FFC924B73F4F854B2643A3727F955980BD17F6849C7C89&originRegion=eu-west-1&originCreation=20230119143309
       source: Geoderma
       description: |
-        * Analýza situace ve 20 regionech světa a otázka, zda je pro daný region reálné naplnit cíle iniciativy 
-        * Závěr: při implementaci nejlepších možných praktik lze tohoto cíle dosáhnout celosvětově
+        * Analýza situace ve 20 regionech světa a otázka, zda je pro daný region reálné cíle iniciativy naplnit
+        * Závěr: při využívání nejlepších možných postupů lze tohoto cíle dosáhnout celosvětově
 
 ---
 
-## Ukládání (sekvestrace) uhlíku do půdy a její vliv na mitigaci klimatické změny
+## Ukládání (sekvestrace) uhlíku do půdy a jeho vliv na mitigaci klimatické změny
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -215,7 +214,7 @@ items:
   </tbody>
 </table>
 
-###### V následujících studiích je možné najít základní informace o sekvestraci uhlíku do půdy a přehled několika metod, které je možné k sekvestraci využívat.
+###### V následujících studiích lze najít základní informace o sekvestraci uhlíku do půdy a přehled metod, které je možné k sekvestraci využívat.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -254,7 +253,7 @@ items:
   </tbody>
 </table>
 
-###### Studie věnované množství uhlíku v půdě a tomu, co může toto množství ovlivňovat (např. typ půdy, množství srážek, klimatické podmínky či způsob hospodaření).
+###### Tyto studie se zabývají množstvím uhlíku v půdě a faktory, které mohou toto množství ovlivňovat (např. typ půdy, množství srážek, klimatické podmínky či způsob hospodaření).
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -277,7 +276,7 @@ items:
   </tbody>
 </table>
 
-## Měření množství půdního uhlíku (důležité pro určení efektivity offsetových projektů)
+## Měření množství uhlíku v půdě (důležité pro posouzení efektivity offsetových projektů)
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -293,7 +292,7 @@ items:
   </tbody>
 </table>
 
-###### Studie poskytují přehled různých metod měření půdního uhlíku. Přesnost a opakovatelnost měření je důležitá např. pro určení efektivity offsetových projektů.
+###### Tyto studie poskytují přehled různých metod, které se využívají k měření množství uhlíku v půdě. Přesnost a opakovatelnost měření je klíčová například při posuzování efektivity offsetových projektů.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -316,7 +315,7 @@ items:
   </tbody>
 </table>
 
-## Kapacita půdy vázat uhlík a vhodné postupy sekvestrace
+## Schopnost půdy vázat uhlík a vhodné postupy sekvestrace
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -332,7 +331,7 @@ items:
   </tbody>
 </table>
 
-###### Studie věnované kapacitě půd uchovávat uhlík. Tato kapacita není neomezená a závisí na různých faktorech.  
+###### Tyto studie se zaměřují na kapacitu různých typů půd uchovávat uhlík. Tato kapacita není neomezená a ovlivňuje ji řada faktorů.  
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -355,7 +354,7 @@ items:
   </tbody>
 </table>
 
-## Organický uhlík v půdě (typy)
+## Organický uhlík v půdě
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <tbody>
@@ -371,7 +370,7 @@ items:
   </tbody>
 </table>
 
-###### Studie představuje dělení půdního organického uhlíku, které je důležité pro pochopení dynamiky jeho procesů v půdě a aplikaci vhodných metod sekvestrace.
+###### Studie představuje dělení organického uhlíku v půdě, které je důležité pro pochopení dynamiky půdních procesů a aplikaci vhodných metod sekvestrace.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -410,7 +409,7 @@ items:
   </tbody>
 </table>
 
-###### Tato sekce představuje základní úvod do problematiky půdního anorganického uhlíku (Soil Inorganic Carbon – SIC), kterému je věnována mnohem menší pozornost než výzkumu půdního organického uhlíku (Soil Organic Carbon – SOC). Světové zásoby SIC jsou menší než u SOC, jsou však považovány za stabilnější a studie ukazují jeho významný vliv na globální uhlíkový cyklus.
+###### Tyto studie představují základní úvod do tématu anorganického uhlíku v půdě (Soil Inorganic Carbon – SIC), kterému je věnována mnohem menší pozornost než výzkumu organického uhlíku v půdě (Soil Organic Carbon – SOC). Světové zásoby SIC jsou menší než zásoby SOC, jsou však považovány za stabilnější a studie ukazují významný vliv anorganického půdního uhlíku na globální uhlíkový cyklus.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -449,7 +448,7 @@ items:
   </tbody>
 </table>
 
-###### Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy, např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku. Nasledující studie se věnují výzkumu této dynamiky. 
+###### Při modelování scénářů nebo výpočtu sekvestračního potenciálu ekosystémů je důležité brát v úvahu různé související procesy, např. pozitivní zpětnou vazbu mezi globálním oteplováním a dynamikou půdního uhlíku. Tomuto výzkumu se věnují následující studie. 
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -488,7 +487,7 @@ items:
   </tbody>
 </table>
 
-###### Studie poskytující základní informace o iniciativě 4 per mille a zkoumající reálné využití jejích návrhů v praxi 
+###### Tyto studie poskytují základní informace o iniciativě 4 per mille a zkoumají reálné využití jejích návrhů v praxi. 
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
