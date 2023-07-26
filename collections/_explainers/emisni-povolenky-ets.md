@@ -3,12 +3,12 @@ layout:      explainer
 title:       "Jak fungují evropské emisní povolenky?"
 slug:        "emisni-povolenky-ets"
 published:   2021-06-13
-updated:     2023-07-19
+updated:     2023-07-26
 authors:
-  - id: "tom-protivinsky"
+  - ids: ["tom-protivinsky", "katerina-kolouchova"]
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace"
-  - id: "jirka-lnenicka"
+  - ids: ["jirka-lnenicka", "jan-krcal"]
     minor-role: "editace"
 weight:      74
 tags-scopes: [ eu ]
