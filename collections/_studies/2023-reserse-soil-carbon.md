@@ -7,6 +7,7 @@ weight:        305
 published:     2023-08-04
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
+use-preview-image: true
 caption:       "Přehled studií o uhlíku v půdě."
 intro: |
   V organické půdní hmotě se nachází třikrát více uhlíku než v zemské atmosféře. To představuje velké riziko i příležitost – na jedné straně se v důsledku nevhodného zacházení s půdou může velké množství uhlíku do atmosféry uvolnit, na druhé straně má půda při využití vhodných postupů značný potenciál sloužit jako jeho dlouhodobé úložiště. Roli půdy v mitigaci (zmírňování) klimatických změn je proto v posledních letech věnována stále větší pozornost, což dokládá například i rozrůstající se trh s uhlíkovými kredity (offsety). Studie v této rešerši jsou rozděleny do tematických sekcí.
