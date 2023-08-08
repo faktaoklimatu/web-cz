@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Podíl zdojů na výrobě elektřiny v EU a Británii"
+title:      "Podíl zdrojů na výrobě elektřiny v EU a Británii"
 slug:       "elektrina-mix-eu"
 redirect_from: "/elektrina-mix-eu"
 published:  2023-02-24
