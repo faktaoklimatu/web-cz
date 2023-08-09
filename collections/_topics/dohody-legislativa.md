@@ -104,6 +104,7 @@ subtopics:
 
   content:
   - svetove-dohody
+  - svetove-dohody-biodiverzita
   - pozice-akteru-cop
   - akteri-klimatickych-jednani
   - zpravy-ipcc
