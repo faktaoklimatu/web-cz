@@ -160,6 +160,7 @@ subtopics:
       Česko se stejně jako EU zavázalo dosáhnout klimatické neutrality do roku 2050. V rámci Politiky ochrany klimatu si Česko stanovilo cíl dosáhnout snížení emisí skleníkových plynů o 32 Mt do roku 2020 (a o 44 Mt do roku 2030) v porovnání s rokem 2005. V roce 2019 avšak Česko ve srovnání s rokem 2005 dosahovalo snížení pouze o přibližně 25 Mt. V porovnání s rokem 1990 klesly české emise skleníkových plynů do roku 2019 přibližně o 1/3, nicméně z velké části se tak událo zejména díky opouštění těžkého průmyslu v 90. letech.
 
   content:
+  - klimaticke-zavazky-cr
   - adaptacni-strategie-cr
   - 2019-scenar-necp
   - emise-cr-vyvoj
