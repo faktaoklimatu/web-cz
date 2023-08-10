@@ -102,6 +102,18 @@ $c-callout-text: #373633;
     }
 }
 
+.klimazavazky-grafy {
+    row-gap: 0;
+
+    h3 { margin-top: 1rem; }
+
+    .longread-figure {
+        width: 100%;
+        max-width: 21rem;
+        margin: 0 auto;
+    }
+}
+
 .lesni-certifikace-opatreni {
     grid-template-columns: 80px 1fr;
 }
@@ -145,6 +157,15 @@ $c-callout-text: #373633;
         .mix-fossil { color: #8c2c79; }
         .mix-nuclear { color: #024b7a; }
         .mix-renewables { color: #f58800; }
+    }
+}
+
+@media (min-width: 576px) {
+    .klimazavazky-grafy {
+        grid-template-columns: 1fr 1fr;
+
+        h3 { grid-column: 1 / 3; }
+        .longread-figure { max-width: initial; }
     }
 }
 

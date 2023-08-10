@@ -49,7 +49,10 @@ Konkrétní podoba závazků ČR do velké míry utvářena směrnicemi a naří
 
 Níže shrnujeme závazky Česka v jednotlivých oblastech, a to v kontextu celounijních závazků, téměř všechny přitom směřují k horizontu roku 2030. Kromě samotného závazku a jeho významu, ukazujeme i dosavadní vývoj v plnění daného závazku.
 
-<div class="grid-figures extremy-histogramy" markdown="1">
+<div class="grid-figures klimazavazky-grafy" markdown="1">
+
+### Snížení celkových emisí
+
 {% include figure.html
     name="graf-nadpis-celkove-emise.svg"
     alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR mezi lety 1990–2021. V roce 2021 byly emise skleníkových plynů o 41 % nižší než v roce 1990."
@@ -57,6 +60,8 @@ Níže shrnujeme závazky Česka v jednotlivých oblastech, a to v kontextu celo
 %}
 
 Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 % v porovnání s rokem 1990, **Česko** v rámci [Politiky ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit emise o 44 Mt CO<sub>2</sub>eq[^emisni-zavazek-cr] do roku 2030 oproti roku 1990. Přepočteme-li jej relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %**. **Do roku 2021 snížilo Česko své emise o 41 %**, avšak k největšímu snížení došlo vlivem ukončení provozu těžkého průmyslu v 90. letech.
+
+### Snížení emisí v EU ETS
 
 {% include figure.html
     name="graf-nadpis-EU-ETS.svg"
@@ -66,6 +71,8 @@ Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleník
 
 Pro emise skleníkových plynů, které spadají pod systém obchodování s emisními povolenkami (*Emission Trading System*, EU ETS) je **stanoven závazek pouze na úrovni celé EU**, a na úrovni poklesu o 62 % v porovnání s rokem 2005, kdy systém začal fungovat[^ets-smernice]. Součástí EU ETS jsou nejvíce znečišťující odvětví ekonomiky – především výroba energie, průmysl, letecká a námořní doprava.[^namorni-doprava] Pokud jde o příspěvek Česka ke společnému unijnímu cíli, k roku 2021 dosahoval hodnoty –29 %.
 
+### Snížení emisí budov a silniční dopravy
+
 {% include figure.html
     name="graf-nadpis-EU-ETS-2.svg"
     alt="TODO"
@@ -73,6 +80,8 @@ Pro emise skleníkových plynů, které spadají pod systém obchodování s emi
 %}
 
 Od roku 2027 vznikne systém obchodování s emisními povolenkami pro sektory budov a silniční dopravy, tzv. EU ETS 2. Stejně jako u stávajícího EU ETS (1) zmíněného výše, zde existuje pouze společný unijní cíl, a to snížit emise skleníkových plynů v těchto sektorech o 43 % do roku 2030 v porovnání s rokem 2005. Pokud jde o vývoj českých emisí ze silniční dopravy a budov, v roce 2021 činil rozdíl v porovnání s rokem 2005 –17 %.
+
+### Effort sharing regulation
 
 {% include figure.html
     name="graf-nadpis-effort-sharing-regulation.svg"
@@ -82,6 +91,8 @@ Od roku 2027 vznikne systém obchodování s emisními povolenkami pro sektory b
 
 Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v EU ETS (1), upravuje [Nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857). Nařízení stanovuje konkrétní závazky pro EU i jednotlivé členské státy v sektorech budov, dopravy (mimo letectví), zemědělství, menších průmyslů a odpadového hospodářství. Zatímco unijní závazkem je pokles o 40 %, Česko by mělo své emise v těchto sektorech snížit o 26 % do roku 2030 v porovnání s rokem 2005. K roku 2021 byl stav –10 %.
 
+### Zvýšení podílu OZE na konečné spotřebě
+
 {% include figure.html
     name="graf-nadpis-podil-OZE.svg"
     alt="TODO"
@@ -89,6 +100,8 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 %}
 
 Ambici pro podíl obnovitelných zdrojů na konečné spotřebě energie si stanovuje Česko samo v rámci NECP. Avšak musí přispívat ke společnému unijnímu cíli ve výši 42,5% podílu v roce 2030. Jak bylo zmíněno výše, NECP aktuálně probíhá revizí, stávající cíl ve výši 22 % tak lze považovat ze spíše nerelevantní, nicméně nový cíl zatím není znám.
+
+### Energetická účinnost
 
 {% include figure.html
     name="graf-nadpis-energeticka-ucinnost.svg"
@@ -98,6 +111,8 @@ Ambici pro podíl obnovitelných zdrojů na konečné spotřebě energie si stan
 
 Stejně jako v případě podílu obnovitelných zdrojů, tak i v případě energetické účinnosti (tedy snížení spotřeby energie) si stanovuje Česko stanovuje závazek v NECP. Stávající NECP obsahuje závazek snížit konečnou spotřebu energie na 990 petajoulů v roce 2030. V roce 2021 dosahovala spotřeba v Česku hodnoty 1 064 petajoulů.
 
+### LULUCF
+
 {% include figure.html
     name="graf-nadpis-LULUCF.svg"
     alt="TODO"
@@ -105,6 +120,8 @@ Stejně jako v případě podílu obnovitelných zdrojů, tak i v případě ene
 %}
 
 Závazek v sektoru využití půdy, změn využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by měly jednotlivé členské státy a celá EU pohlcovat v roce 2030. Pro Česko je stanoven ve výši –1,228 megatun CO<sub>2</sub>eq. Je však otázkou, zda je tento závazek dosažitelný, neboť v roce 2021 byl sektor čistým emitentem skleníkových plynů – vypustil jich 8,5 megatun (především z důvodů kůrovcové kalamity). Pro celou EU činí – 310 megatun CO<sub>2</sub>eq.
+
+### Snižení emisí nových automobilů a dodávek
 
 {% include figure.html
     name="graf-nadpis-LULUCF.svg"
@@ -118,7 +135,13 @@ Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek
 
 ## Jednostránkové shrnutí
 
-[TADY BUDE ONE-PAGER KE STAŽENÍ]
+Na odkazu níže si můžete stáhnout přehled klmatických závazků Česka jako jednostránkové shrnutí ve formátu PDF:
+
+<div class="download">
+  <a href="/assets-local/publications/2022-extremy-pocasi-a-klimaticka-zmena.pdf" class="btn btn-primary"><i class="fas fa-fw fa-download"></i>
+   Stáhnout PDF one-pageru
+  </a>
+</div>
 
 ## Poznámky
 
