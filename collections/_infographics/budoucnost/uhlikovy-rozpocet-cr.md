@@ -8,7 +8,7 @@ weight:      90
 tags-scopes: [ cr ]
 tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Pokud by ČR měla nést férový podíl na snižování emisí skleníkových plynů, měla by pro naplnění Pařížské dohody do roku 2030 snížit emise o 84 % oproti roku 1990 (resp. o 75 % oproti roku 2018)."
-data-our:    "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
+data-our:    "https://docs.google.com/spreadsheets/d/15aAAJ8WE95vbYgAXGaJDHiSm1hO9Cq48ycinker4Rvk/edit?usp=sharing"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107" ] ]
 ---
 
