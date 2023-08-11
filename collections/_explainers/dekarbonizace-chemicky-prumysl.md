@@ -1,0 +1,94 @@
+---
+layout:      explainer
+title:       "Jak dekarbonizovat výrobu cementu, vápna a skla?"
+slug:        "dekarbonizace-mineralniho-prumyslu"
+published:   2023-08-29
+authors:
+  - id: "adam-bilek"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
+
+weight:      74
+tags-scopes: [  ]
+tags-topics: [  ]
+cover-source-author:        ""
+cover-source-text:          "Pixabay"
+cover-source-license:       "Pixabay License"
+cover-source-license-url:   "https://pixabay.com/service/license-summary/"
+cover-source-url:           ""
+perex:       ""
+---
+
+## Chemikálie, hnojiva a rafinace ropy
+
+### Amoniak
+
+70 % veškerého amoniaku (jemuž se lidově říká také „čpavek“) používáme při výrobě hnojiv, zbylých 30 % připadá na jiné průmyslové využití.[^amoniak]
+
+Očekávaný růst poptávky po amoniaku je o 40 % do roku 2050.[^poptavkamoniak] Určité snížení spotřeby by přinesl odstup od intenzivního zemědělství, což ovšem vzhledem k populačnímu růstu není pro většinu světa pravděpodobné řešení. Pomoci by v tomto směru mohl technologický vývoj v oblasti precizního zemědělství, který potenciálně umožní používat méně hnojiv pro dosažení potřebné produkce.
+
+Další cestou ke snížení emisní stopy amoniaku jsou nové katalyzátory v rámci výrobního procesu. V této oblasti probíhají slibné výzkumy jak redukovat potřebnou teplotu a tlak.[^tlak]
+
+Největší efekt však pravděpodobně bude mít přechod na výrobu amoniaku z nízkoemisního vodíku. 
+
+V současné době využíváme především šedý vodík ze zemního plynu, což má za následek, že za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO2.[^amoniakintenzita]
+
+Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem.[^haberbosch] Vzhledem k tomu, že při výrobě amoniaku je zapotřebí vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO2. Přesnější rozdělení poměru je těžké zobecnit z dostupných dat.
+
+
+
+### Petrochemikálie
+
+Petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Výslednými produkty jsou mimo jiné metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky.
+
+Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Snižování jejich spotřeby tedy bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55%, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
+
+Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. Zbylých **15 % můžeme řadit mezi procesní emise**[^emisepetrochemikalie], kde je primárně o proces krakování. Při tomto procesu dochází k tepelnému rozkladu uhlovodíků, který umožňuje jejich další zpracování.
+
+Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů. Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] 
+
+### Rafinace ropy
+
+Rafinace ropy je proces, při kterém se surová ropa, která byla vytěžena z podzemních ložisek, upravuje na různé druhy paliv a dalších produktů. Tento proces se provádí v rafinériích. Během rafinace se surová ropa rozděluje na různé složky, jako jsou benzín, nafta, topné oleje a maziva.
+
+**60 % emisí pochází ze spalování a zbylých 40 % mají na starost chemické procesy** kdy se jedná převážně o proces krakování a dále výrobu vodíku.[^emiserafinace]
+
+Rafinací ropy získáváme například benzín, topné oleje, naftu nebo asfalt. 63 % CO2eq vypuštěného při jejich výrobě pochází z generování potřebného tepla, 22 % z procesu krakování a dalších 9 procent má na svědomí přidružená výroba vodíku z metanu (který je jinak také hlavní složkou zemního plynu).
+
+Transformačním řešením pro rafinérie jsou CCS, elektrifikace procesu tam, kde stačí relativně nižší teploty, a přechod na nízkoemisní vodík ve zbytku případů. Ovšem musíme dodat, že zde hovoříme pouze o zpracování ropy - nezanedbatelná porce skleníkových plynů se dostává do atmosféry až při následném využití získaných paliv (benzín, nafta, atd.). Ke kompletní dekarbonizaci celého řetězce tedy povede ještě dlouhá cesta.
+
+https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining
+
+
+## Náhrady za látky poškozující ozonovou vrstvu
+
+### Halogenderiváty uhlovodíků
+
+Nezanedbatelnou porci skleníkových plynů představují náhražky za freony a další látky, které mají na svědomí ozonovou díru. Freony a jím podobné sloučeniny se dříve používaly převážně v chladících zařízeních (ledničkách, klimatizacích atp.), ale po prokázání jejich negativního účinku na ozonovou vrstvu[^ozon] se v 80. letech podařilo v rámci tzv. Montrealského protokolu dosáhnout celosvětové dohody o jejich zákazu. Postupně byly nahrazovány zejména takzvanými F-plyny, které sice nepoškozují ozonovou vrstvu, ale jsou skleníkovými plyny.
+
+Jedná se o velmi silné skleníkové plyny. Účinek úplně nejsilnějších z nich je na jednu molekulu až 23000 krát silnější v porovnání s CO2.[^23000] Už řádově menší koncentrace tak stačí, aby představovaly problém. Tyto emise klasifikujeme jako procesní emise.
+
+Ve snaze minimalizovat škody existují plány na nahrazování nejsilnějších F-plynů těmi slabšími. Konkrétně můžeme zmínit záměr na opouštení od použití SF6 (fluorid sírový), což je jeden z nejúčinnějších skleníkových plynů vůbec (22800 krát silnější než CO2)[^sf6] a používá se například v elektrotechnickém průmyslu jako elektrický izolant.
+
+Pro srovnání uveďme, že za nejlepší náhradu silnějších F-plynů se považuje HFC-32 (difluormethan), jehož vliv na skleníkový efekt je “jenom” 675 krát silnější než v případě CO2.[^hfc32] Podle projekcí by se HFC-32 měl stát dominantním F-plynem do roku 2040.[^dominantplyn] 
+
+V určitých případech se nabízí i substituce jinými látkami. Jako vhodní kandidáti se jeví amoniak, uhlovodíky či CO2. 
+
+Důležité i v případě těchto náhrad je, aby po skončení životnosti daného produktu nedocházelo vlivem nevhodného zacházení k následnému úniku plynů do atmosféry. Větší tlak na odpovídající recyklaci a uplatňování cirkularity nám tak může pomoci s dekarbonizací tohoto sektoru, kde je celkový prostor pro emisní úspory jinak poměrně omezený.
+
+## Zdroje a poznámky
+
+[^amoniak]:
+[^poptavkamoniak]: [hmmmm] (https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
+[^haberbosch]:
+[^amoniakintenzita]:
+[^emisepetrochemikalie]: 
+[^emiserafinace]:
+[^ozon]: 
+[^23000]:
+[^tlak]: https://www.energy.gov/science/bes/articles/novel-catalyst-means-ammonia-synthesis-less-heat-and-pressure
+[^dekarbonizacepetro]: https://about.bnef.com/blog/759-billion-required-for-a-net-zero-petrochemicals-sector-by-2050/
+[^iea]: https://www.iea.org/reports/the-future-of-petrochemicals
+[^sf6]: https://www.eea.europa.eu/publications/fluorinated-greenhouse-gases-2021
+[^hfc32]: https://www.gov.uk/guidance/calculate-the-carbon-dioxide-equivalent-quantity-of-an-f-gas
+[^dominantplyn]: https://www.theccc.org.uk/wp-content/uploads/2020/12/Sector-summary-F-gases.pdf
