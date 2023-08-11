@@ -54,7 +54,7 @@ Jelikož výroba amoniaku je přímo vazaná na využití vodíku, jednoznačně
 
 ### Petrochemikálie
 
-Petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Výslednými produkty jsou mimo jiné metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky.
+Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Výslednými produkty jsou mimo jiné metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky.
 
 Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Snižování jejich spotřeby tedy bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55%, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
 
