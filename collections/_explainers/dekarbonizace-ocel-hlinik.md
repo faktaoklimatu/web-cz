@@ -7,6 +7,9 @@ authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
     minor-role: "editace"
+  - name: "Jiří Mravec"
+    affiliation: Třinecké železárny
+    minor-role: "konzultace"
 
 weight:      74
 tags-scopes: [  ]
@@ -46,9 +49,9 @@ Produkce jedné tuny oceli má na svědomí v průměru 2 tuny CO<sub>2</sub>.[^
 
 Nahradit ocel jiným materiálem je často těžké a s ohledem na rozvoj urbanizace lze do roku 2050 očekávat nárůst poptávky po oceli o 10–30 %.[^ocelpoptavka]
 
-Při výrobě oceli jsou klíčové dvě fáze, redukce a rafinace. Nejprve dojde pomocí redukce k proměně železné rudy na železo, které je pak ve fázi rafinace přeměněno na ocel tím, že se odstraní nečistoty a sníží podíl uhlíku. 
+Při výrobě oceli jsou klíčové dvě fáze, redukce a zkujňování surového železa. Nejprve dojde pomocí redukce k proměně železné rudy na železo, které je pak ve fázi zkujňování přeměněno na ocel tím, že se odstraní nečistoty a sníží podíl uhlíku. 
 
-Železné rudy jsou oxidy železa a k výrobě oceli je nutná jejich redukce. Pro tu se používá uhlík (koks), který redukuje kyslík na CO<sub>2</sub> a vzniká surové železo, které lze dále zpracovat. Výroba železa má ovšem podstatné procesní emise - navíc vzniká CO2 při výrobě koksu a jeho spálování. Pro účely redukce lze nahradit uhlík za vodík.
+Železné rudy jsou oxidy železa a k výrobě oceli je nutná jejich redukce. Koks slouží ve vysoké peci jako redukční činidlo a rovněž jako palivo. Uhlík v koksu redukuje oxidy železa na čisté surové železo a jako vedlejším produktem redukčních a spalovacích reakcí vzniká CO<sub>2</sub>. Je možné nahradit uhlík vodíkem a provést přímou redukci železa. Tento proces ovšem nelze provést ve stávajích vysokých pecích jelikož vzniká železo s jinými vlastnostmi. Pro takto přímo redukované železo je nutné použít elektrické obloukové pece.
 
 Při popisu dekarbonizace oceli vycházíme ze scénáře Carbon Cost z Making Net Zero Steel Possible. Tento scénář vznikl v rámci spolupráce největších ocelářských firem. Pokud bychom nadále používaly aktuální technologie a nezaváděli dekarbonizační opatření, tak by roku 2050 emise z výroby oceli stouply na 4,3 GtCO<sub>2</sub> z dnešních 3,1 GtCO<sub>2</sub>. V případě úspěšné dekarbonizace je předvídán pokles na 0,3 GtCO<sub>2</sub>.[^missionpossible]
 
@@ -56,9 +59,9 @@ Při popisu dekarbonizace oceli vycházíme ze scénáře Carbon Cost z Making N
 
 Nejdůležitějším řešením scénáře je **přímá redukce železa zeleným vodíkem**, které by následně bylo zpracováno v elektrických obloukových pecích. Tímto bychom nahradily emisně náročné vysoké pece a koks. Oproti potenciálním emisím roku 2050 může přímá redukce zeleným vodíkem redukovat emise o 28 %.[^missionpossible]
 
-U přímé redukce zeleným vodíkem je ovšem nutné říct, že by znamenalo výrazné navýšení poptávky po elektřině jelikož zelený vodík se vyrábí elektrolýzou. Do budoucna bude nutné přestavět mnoho oceláren a vybudovat potřebnou infrastrukturu. Ta v současné době v rámci pilotních projektů již vzniká viděno na příkladu projektů, které mají za cíl vyrábět bezemisní ocel přímou redukcí vodíkem.[^h2greensteel] 
+U přímé redukce zeleným vodíkem je ovšem nutné říct, že by znamenalo výrazné navýšení poptávky po elektřině jelikož zelený vodík se vyrábí elektrolýzou.[^vodiknarocnost] Do budoucna bude nutné přestavět mnoho oceláren a vybudovat potřebnou infrastrukturu ve formě nových pecí. Ta v současné době v rámci pilotních projektů již vzniká viděno na příkladu projektů, které mají za cíl vyrábět bezemisní ocel přímou redukcí vodíkem.[^h2greensteel] 
 
-Další klíčovou metodou je **zachytávání CO<sub>2</sub> (CCS)**. Na aktuálně fungující vysoké pece můžeme nainstalovat zařízení na zachytávání CO<sub>2</sub>. Potenciál zachycení se pohybuje na 90-95 % emisí CO<sub>2</sub> dané ocelárny, zároveň se ovšem jedná o finančně a energeticky náročný proces.[^ocelccscena] I proto se čeká, že CCS bude pouze jedno z mnoha řešení, které ovšem může představovat něco kolem 21 % snížení emisí.[^missionpossible]
+Další klíčovou metodou bude **zachytávání CO<sub>2</sub> (CCS)**. Na aktuálně fungující vysoké pece můžeme nainstalovat zařízení na zachytávání CO<sub>2</sub>. Potenciál zachycení se pohybuje na 90-95 % emisí CO<sub>2</sub> dané ocelárny, zároveň se ovšem jedná o finančně a energeticky náročný proces, který je momentálně ve fázi drobných pilotních projektů.[^ocelccscena] I proto se čeká, že CCS bude pouze jedno z mnoha řešení, které ovšem může představovat něco kolem 21 % snížení emisí.[^missionpossible]
 
 Důležitá je i **recyklace**. Ocel již dnes dovedeme vyrobit relativně nízkoemisně v elektrických obloukových pecích, které využívají starou ocel ve formě šrotu. Recyklace, která ve srovnání s výrobou oceli z železné rudy produkuje jen zlomek CO<sub>2</sub> a vyžaduje podstatně méně energie, se v ocelářství dávno hojně využívá a její míra se dnes pohybuje okolo 85 %, proto je její další potenciál omezený.[^ocelrecyklace] Zároveň má ocel dlouhou životnost, a můžeme se tak snadno dostat do situace, kdy nebudeme mít dostatek šrotu ke znovuzpracování. Dalším limitem pro ještě větší cirkularitu je skutečnost, že recyklací může vznikat ocel s určitou příměsí nežádoucích látek, která pak není vhodná pro všechny účely. I přes tato omezení může vyšší míra využití ocelového šrotu snížit emise o méně než 19 %.[^missionpossible]
 
