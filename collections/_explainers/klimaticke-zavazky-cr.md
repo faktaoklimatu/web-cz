@@ -26,7 +26,8 @@ perex: |
 ## Jak vznikají klimatické závazky ČR?
 
 {% include figure.html
-    name="klimaticke-zavazky-schema-1.png"
+    class="wide-figure-desktop"
+    name="schema.svg"
     alt="Schéma procesu vzniku klimatických závazků ČR, které začíná na mezinárodní úrovni a pokračuje legislativou přijímanou v rámci EU."
 %}
 
@@ -54,7 +55,8 @@ Níže shrnujeme závazky Česka v jednotlivých oblastech, a to v kontextu celo
 ### Snížení celkových emisí skleníkových plynů
 
 {% include figure.html
-    name="graf-nadpis-celkove-emise.svg"
+    name="graf-celkove-emise.svg"
+    class="wide-figure-desktop"
     alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR mezi lety 1990–2021. V roce 2021 byly emise skleníkových plynů o 41 % nižší než v roce 1990."
     source="Fakta o klimatu"
 %}
@@ -64,7 +66,7 @@ Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleník
 ### Snížení emisí v nejvíce znečišťujících sektorech (EU ETS)
 
 {% include figure.html
-    name="graf-nadpis-EU-ETS.svg"
+    name="graf-EU-ETS.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
@@ -74,7 +76,7 @@ Pro emise skleníkových plynů, které spadají pod systém obchodování s emi
 ### Snížení emisí v budovách a silniční dopravě (EU ETS 2)
 
 {% include figure.html
-    name="graf-nadpis-EU-ETS-2.svg"
+    name="graf-EU-ETS-2.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
@@ -84,7 +86,7 @@ Od roku 2027 vznikne systém obchodování s emisními povolenkami pro sektory b
 ### Snížení emisí mimo EU ETS (Nařízení o sdílení úsilí)
 
 {% include figure.html
-    name="graf-nadpis-effort-sharing-regulation.svg"
+    name="graf-effort-sharing.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
@@ -94,7 +96,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 ### Zvýšení podílu obnovitelných zdrojů na konečné spotřebě energie
 
 {% include figure.html
-    name="graf-nadpis-podil-OZE.svg"
+    name="graf-podil-OZE.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
@@ -104,7 +106,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 ### Zvýšení energetické účinnosti
 
 {% include figure.html
-    name="graf-nadpis-energeticka-ucinnost.svg"
+    name="graf-energeticka-ucinnost.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
@@ -114,24 +116,18 @@ Stejně jako v případě podílu obnovitelných zdrojů, tak i v případě ene
 ### Zvýšení pohlcení skleníkových plynů v sektoru využití půdy a lesnictví (LULUCF)
 
 {% include figure.html
-    name="graf-nadpis-LULUCF.svg"
+    name="graf-LULUCF.svg"
     alt="TODO"
     source="Fakta o klimatu"
 %}
 
 Závazek v sektoru využití půdy, změn využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by měly jednotlivé členské státy a celá EU pohlcovat v roce 2030. **Pro Česko je stanoven ve výši –1,228 megatun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, zda je tento závazek dosažitelný, neboť v roce 2021 byl sektor LULUCF čistým emitentem skleníkových plynů – vypustil jich 8,5 megatun (především z důvodů kůrovcové kalamity). Pro celou EU pak závazek činí –310 megatun CO<sub>2</sub>eq.
 
+</div>
+
 ### Snižení emisí u nových osobních automobilů a dodávek
 
-{% include figure.html
-    name="graf-nadpis-LULUCF.svg"
-    alt="TODO"
-    source="Fakta o klimatu"
-%}
-
 Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek emitujících CO<sub>2</sub> – od roku 2035 nebudou moct být na úrovni EU vyráběna žádné osobní automobily a dodávky, které CO<sub>2</sub> emitují.[^co2-vozidla]
-
-</div>
 
 ## Jednostránkové shrnutí
 
