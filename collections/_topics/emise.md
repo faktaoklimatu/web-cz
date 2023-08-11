@@ -81,7 +81,7 @@ subtopics:
   - emise-eu-detail
   - emise-eu-vyvoj
   - emise-eu-na-osobu
-  - emise-svet-vyvoj-co2
+  - emise-co2-svet-vyvoj
   qa:
   - q: "Jaké jsou celkové světové emise?"
     a: |

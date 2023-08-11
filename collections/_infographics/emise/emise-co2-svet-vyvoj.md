@@ -1,15 +1,17 @@
 ---
 layout:        infographic
 title:         "Vývoj světových emisí CO₂"
-slug:          "emise-svet-vyvoj-co2"
-redirect_from: "/emise-svet-vyvoj-co2"
+slug:          "emise-co2-svet-vyvoj"
+redirect_from: "/emise-co2-svet-vyvoj"
 published:     2023-08-07
 weight:        75
 tags-scopes:   [ svet ]
 tags-topics:   [ emise ]
-caption:       "Emise oxidu uhličitého dlouhodobě rostou. V poslední dekádě však jejich růst výrazně zpomalil."
-data-our:   
-data-orig:  
+caption:       "Emise oxidu uhličitého vzrostly z 16 gigatun roku 1959 na 41,1 gigatun v roce 2021. Z naprosté většiny nyní pochází ze spalování fosilních paliv a z průmyslových procesů."
+data-our:   "https://docs.google.com/spreadsheets/d/1ewmHabDWIdqkBTWiZ9AAioxpz9D2jUZe_JjJy4QxfxE/edit#gid=1619786287"
+data-orig:  [
+    ["Global Carbon Budget", "https://essd.copernicus.org/articles/14/1917/2022/"]
+]
 ---
 
 ## Co vidíme v grafu?
@@ -46,4 +48,4 @@ data-orig:
 Podrobnější vysvětlení metodiky viz: [Global Carbon Budget 2022](https://essd.copernicus.org/articles/14/4811/2022/)
 
 [^radiacnipusobeni]: [Annual Greenhouse Gas Index](https://www.globalchange.gov/browse/indicators/annual-greenhouse-gas-index)
-[^indicators]: [Indicators of Global Climate Change 2022: annual update of large-scale indicators of the state of the climate system and human influence](https://essd.copernicus.org/articles/15/2295/2023/essd-15-2295-2023.pdf)
+[^indicators]: [Forster et al., 2022: Indicators of Global Climate Change 2022: annual update of large-scale indicators of the state of the climate system and human influence](https://essd.copernicus.org/articles/15/2295/2023/essd-15-2295-2023.pdf)
