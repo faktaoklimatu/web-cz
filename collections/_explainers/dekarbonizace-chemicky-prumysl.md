@@ -44,15 +44,15 @@ V současné době využíváme především šedý vodík ze zemního plynu, co
 
 ## Dekarbonizace výroby vodíku
 
-Jelikož výroba amoniaku je přímo vazaná na využití vodíku, jednoznačně hlavním způsobem jak snížit emisní náročnost výroby amoniaku je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů.
+Jelikož výroba amoniaku je přímo vazaná na využití vodíku, jednoznačně hlavním způsobem jak snížit emisní náročnost výroby amoniaku je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. 
 
 ### Vedlejší metody
 
-**Nové katalyzátory** - Další cestou ke snížení emisní stopy amoniaku jsou nové katalyzátory v rámci výrobního procesu. V této oblasti probíhají slibné výzkumy jak redukovat potřebnou teplotu a tlak.[^tlak]
+Je vysoce pravděpodobné, že amoniak budeme nadále vyrábět Haber-Boschovým procesem. Probíhají výzkumy například na přímou produkci amoniaku z vody a dusíku za použití elektřiny, ale jde primárně o výroby ve velmi malém objemu v laboratorním prostředí.[^ammoniakdekarbonizace] Realističtější cesta je spíše zefektivňování existujícího procesu.
 
-**Elektrochemická produkce** - Je možné vyrábět amoniak z vody a dusíku za použití elektřiny. Doposud ovšem byl amoniak vyrobený tímto způsobem pouze ve velmi malém objemu v laboratorním prostředí.[^ammoniakdekarbonizace]
+**Nové katalyzátory** - Cestou ke snížení emisní stopy amoniaku jsou nové katalyzátory v rámci aktuálně používaného výrobního procesu. V této oblasti probíhají slibné výzkumy jak redukovat potřebnou teplotu a tlak.[^tlak]
 
-### Petrochemikálie
+## Petrochemikálie
 
 Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Výslednými produkty jsou mimo jiné metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky.
 
@@ -62,7 +62,7 @@ Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. 
 
 Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů. Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] 
 
-### Rafinace ropy
+## Rafinace ropy
 
 Rafinace ropy je proces, při kterém se surová ropa, která byla vytěžena z podzemních ložisek, upravuje na různé druhy paliv a dalších produktů. Tento proces se provádí v rafinériích. Během rafinace se surová ropa rozděluje na různé složky, jako jsou benzín, nafta, topné oleje a maziva.
 
