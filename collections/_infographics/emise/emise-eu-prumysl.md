@@ -8,10 +8,9 @@ weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
 caption:        "Z průmyslu pochází čtvrtina celkových emisí skleníkových plynů v Evropské unii. Průmysl je tak po výrobě elektřiny a tepla a po dopravě třetím největším producentem těchto emisí."
-data-our:       "https://docs.google.com/spreadsheets/d/1sMNSXXuDzOKdLCsZQ8UDgzVqvq9m0-80cfZseI35Ui0/edit#gid=0"
-data-orig:  [  
-    ["Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE"]
-]
+data-our:       "https://docs.google.com/spreadsheets/d/1sMNSXXuDzOKdLCsZQ8UDgzVqvq9m0-80cfZseI35Ui0/edit?usp=sharing"
+data-orig:
+  - [ "Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE" ]
 ---
 
 ## Jak číst tento graf?
@@ -33,7 +32,7 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
 
 * **Chemikálie a hnojiva** – 14,1 % z celkových emisí z průmyslu. Největší podíl má produkce amoniaku (na výrobu hnojiv). Další významnou kategorií jsou petrochemikálie, které se používají například při výrobě plastů.
 
-* **F-plyny** – 8 % z celkových průmyslových emisí (tedy cca 2 % celkových emisí EU). Jde o významnou kategorii, která zahrnuje velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23500 krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. Hledají se za ně náhrady, ty ale bývají méně efektivní.
+* **F-plyny** – 8 % z celkových průmyslových emisí (tedy cca 2 % celkových emisí EU). Jde o významnou kategorii, která zahrnuje velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23 500krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. Hledají se za ně náhrady, ty ale bývají méně efektivní.
 
 * **Potraviny a alkohol** – 4,2 % z celkových průmyslových emisí EU (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
 
@@ -51,14 +50,11 @@ Při počítání uhlíkové stopy je důležité rozlišovat tzv. přímé a ne
 
 Tyto kategorie se používají ke klasifikaci emisí skleníkových plynů a jsou důležité pro všechny firmy, které počítají své emise.
 
-<div class="barvy-vodiku" markdown="1">
-
 **Scope 1** označuje **přímé emise** vznikající při využívání zdrojů, které firma vlastní. Takové emise jsou spojeny například s výrobou cementu, kde se kvůli dosažení vysokých teplot spalují fosilní paliva. Také chemické reakce, k nimž při výrobě cementu dochází a při nichž se uvolňuje CO<sub>2</sub>, spadají do scope 1, protože vznikají přímo v rámci daného provozu.
 
 **Scope 2** označuje **nepřímé emise z nákupu elektřiny či tepla**. Například většina emisí CO<sub>2</sub> spojená s produkcí hliníku jsou emise vznikající při výrobě elektřiny, která je nutná pro proces elektrolýzy. Jestliže si daný podnik nevyrábí elektřinu sám a nakupuje ji ze sítě, počítají se tyto emise do scope 2.
 
-**Scope 3** označuje **nepřímé emise, které vznikají v rámci celého hodnotového řetězce**. Například pro výrobu oceli je nutné nejprve těžit železnou rudu (už při této těžbě vznikají emise skleníkových plynů), poté ji dopravit do ocelárny (to zase vyžaduje přepravu dopravními prostředky). Tyto emise uvolněné ještě před samotnou výrobou oceli se označují jako *upstream* emise. Emise vznikající po výrobě daného produktu klasifikujeme jako *downstream* emise – u oceli by například šlo o dopravu vyrobeného produktu k zákazníkům. V případě oceli podle [Deloitte](https://www2.deloitte.com/nl/nl/pages/sustainability/articles/decarbonizing-the-steel-value-chain.html) 95 % emisí skleníkových plynů pochází přímo z výroby zatímco těžba se na emisích ocelářského průmyslu podílí 4 % a doprava pouze 1 %. U některých produktů je ale emisně náročné i jejich využívání. V této infografice to platí například pro F-plyny. Platí to například i pro auta se spalovacím motorem. Většina skleníkových plynů vzniká během ježdění a emise z výroby tvoří pouze menšinu.
-</div>
+**Scope 3** označuje **nepřímé emise, které vznikají v rámci celého hodnotového řetězce**. Například pro výrobu oceli je nutné nejprve těžit železnou rudu (už při této těžbě vznikají emise skleníkových plynů), poté ji dopravit do ocelárny (to zase vyžaduje přepravu dopravními prostředky). Tyto emise uvolněné ještě před samotnou výrobou oceli se označují jako *upstream* emise. Emise vznikající po výrobě daného produktu klasifikujeme jako *downstream* emise – u oceli by například šlo o dopravu vyrobeného produktu k zákazníkům. V případě oceli [podle Deloitte](https://www2.deloitte.com/nl/nl/pages/sustainability/articles/decarbonizing-the-steel-value-chain.html) 95 % emisí skleníkových plynů pochází přímo z výroby zatímco těžba se na emisích ocelářského průmyslu podílí 4 % a doprava pouze 1 %. U některých produktů je ale emisně náročné i jejich využívání. V této infografice to platí například pro F-plyny. Platí to například i pro auta se spalovacím motorem. Většina skleníkových plynů vzniká během ježdění a emise z výroby tvoří pouze menšinu.
 
 {% endcapture %}
 
