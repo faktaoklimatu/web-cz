@@ -54,7 +54,7 @@ Je vysoce pravděpodobné, že amoniak budeme nadále vyrábět Haber-Boschovým
 
 ## Petrochemikálie
 
-Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Produkty petrochemického průmyslu jsou tak metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. 
+Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie öznačují chemikálie vyráběné z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Produkty petrochemického průmyslu jsou tak metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. 
 
 Snižování spotřeby petrochemického průmyslu bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55 %, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
 
@@ -66,15 +66,23 @@ Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat 
 
 ## Rafinace ropy
 
-Rafinace ropy je proces, při kterém se surová ropa, která byla vytěžena z podzemních ložisek, upravuje na různé druhy paliv a dalších produktů. Tento proces se provádí v rafinériích. Během rafinace se surová ropa rozděluje na různé složky, jako jsou benzín, nafta, topné oleje a maziva.
+Rafinace ropy je proces, při kterém se surová ropa, která byla vytěžena z podzemních ložisek, upravuje na různé druhy paliv a dalších produktů. Tento proces se provádí v rafinériích. Během rafinace se surová ropa rozděluje na různé složky, jako jsou benzín, nafta, topné oleje a maziva. V EU 65 % ropy je spotřebováno v dopravě. 25 % je použito například na topné oleje, lubrikanty, asfalt apod. Zbylých 10 % je využito v rámci chemického průmyslu.[^ropapouziti] Do budoucna bude klesat spotřeba ropy v dopravě, ovšem chemický průmysl může do budoucna poptávku zvyšovat.
 
-**60 % emisí pochází ze spalování a zbylých 40 % mají na starost chemické procesy** kdy se jedná převážně o proces krakování a dále výrobu vodíku.[^emiserafinace]
+**Přibližně dvě třetiny emisí pochází ze spalování a zbylou třetinu mají na starost chemické procesy** kdy se jedná převážně o proces krakování a dále výrobu vodíku.[^emiserafinace]
 
-Rafinací ropy získáváme například benzín, topné oleje, naftu nebo asfalt. 63 % CO2eq vypuštěného při jejich výrobě pochází z generování potřebného tepla, 22 % z procesu krakování a dalších 9 procent má na svědomí přidružená výroba vodíku z metanu (který je jinak také hlavní složkou zemního plynu).
+Jak by mohla dekarbonizace rafinérií vypadat ukazuje scénář od Concawe, což je Evropská asociace firem, které provozují rafinérie. 
+
+CCS - 22,5 %
+
+Process efficiency - 19,6 %
+
+Dekarbonizace elektřiny - 5,7 %
+
+Internal fuel measures - 7,5 %
+
+Zbytek - low grade heat, elektrifikace, chp substitution
 
 Transformačním řešením pro rafinérie jsou CCS, elektrifikace procesu tam, kde stačí relativně nižší teploty, a přechod na nízkoemisní vodík ve zbytku případů. Ovšem musíme dodat, že zde hovoříme pouze o zpracování ropy - nezanedbatelná porce skleníkových plynů se dostává do atmosféry až při následném využití získaných paliv (benzín, nafta, atd.). Ke kompletní dekarbonizaci celého řetězce tedy povede ještě dlouhá cesta.
-
-https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining
 
 ## F-plyny
 
@@ -98,7 +106,7 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 [^poptavkamoniak]: [hmmmm] (https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
 [^amoniakintenzita]: https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize
 [^emisepetrochemikalie]: 
-[^emiserafinace]: 
+[^emiserafinace]: https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining
 [^tlak]: https://www.energy.gov/science/bes/articles/novel-catalyst-means-ammonia-synthesis-less-heat-and-pressure
 [^dekarbonizacepetro]: https://about.bnef.com/blog/759-billion-required-for-a-net-zero-petrochemicals-sector-by-2050/
 [^iea]: https://www.iea.org/reports/the-future-of-petrochemicals
@@ -109,3 +117,4 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 [^amoniaksplit]: https://iea.blob.core.windows.net/assets/bee4ef3a-8876-4566-98cf-7a130c013805/The_Future_of_Petrochemicals.pdf
 [^ammoniakdekarbonizace]: https://royalsociety.org/-/media/policy/projects/green-ammonia/green-ammonia-policy-briefing.pdf
 [^amoniakiea]: https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/AmmoniaTechnologyRoadmap.pdf
+[^ropapouziti]: [Fuels Europe: Vision 2050](https://www.fuelseurope.eu/publications/publications/vision-2050-a-pathway-for-the-evolution-of-the-refining-industry-and-liquid-fuels)
