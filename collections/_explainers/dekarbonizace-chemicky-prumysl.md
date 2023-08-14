@@ -38,7 +38,7 @@ Očekávaný růst poptávky po amoniaku je o 40 % do roku 2050.[^amoniak] Růst
 
 Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kvůli potřebám vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO<sub>2</sub>. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^amoniaksplit]
 
-Emisní náročnost amoniaku tedy závisí na původu vodíku. Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1.8 tun CO2 na tunu amoniaku. Zbytek amoniaku primárně vyrábíme z vodíku produkovaného z uhlí, který má emisní intenzitu 3.2 tun CO2 na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku zanedbatelné.[^amoniakiea] 
+Emisní náročnost amoniaku tedy závisí na původu vodíku. Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO2 na tunu amoniaku. Zbytek amoniaku primárně vyrábíme z vodíku produkovaného z uhlí, který má emisní intenzitu 3.2 tun CO2 na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku zanedbatelné.[^amoniakiea] 
 
 V současné době využíváme především šedý vodík ze zemního plynu, což má za následek, že za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO<sub>2</sub>.[^amoniakintenzita]
 
@@ -54,11 +54,13 @@ Je vysoce pravděpodobné, že amoniak budeme nadále vyrábět Haber-Boschovým
 
 ## Petrochemikálie
 
-Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Výslednými produkty jsou mimo jiné metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky.
+Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie se získávají z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Produkty petrochemického průmyslu jsou tak metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. 
 
-Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Snižování jejich spotřeby tedy bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55%, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
+Snižování spotřeby petrochemického průmyslu bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55 %, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
 
 Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. Zbylých **15 % můžeme řadit mezi procesní emise**[^emisepetrochemikalie], kde je primárně o proces krakování. Při tomto procesu dochází k tepelnému rozkladu uhlovodíků, který umožňuje jejich další zpracování.
+
+### Zachytávání CO<sub>2</sub> a elektrifikace
 
 Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů. Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] 
 
@@ -73,9 +75,6 @@ Rafinací ropy získáváme například benzín, topné oleje, naftu nebo asfalt
 Transformačním řešením pro rafinérie jsou CCS, elektrifikace procesu tam, kde stačí relativně nižší teploty, a přechod na nízkoemisní vodík ve zbytku případů. Ovšem musíme dodat, že zde hovoříme pouze o zpracování ropy - nezanedbatelná porce skleníkových plynů se dostává do atmosféry až při následném využití získaných paliv (benzín, nafta, atd.). Ke kompletní dekarbonizaci celého řetězce tedy povede ještě dlouhá cesta.
 
 https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining
-
-
-## Náhrady za látky poškozující ozonovou vrstvu
 
 ## F-plyny
 
