@@ -34,9 +34,9 @@ perex:       "Chemický průmysl."
 
 Výroba amoniaku představuje 1,8 % světových emisí CO<sub>2</sub>.[^amoniakemise] 70 % veškerého amoniaku (jemuž se lidově říká také „čpavek“) používáme při výrobě hnojiv, zbylých 30 % připadá na jiné průmyslové využití například při produkci výbušnin či v rámci chemického průmyslu.[^amoniak]
 
-Očekávaný růst poptávky po amoniaku je o 40 % do roku 2050.[^poptavkamoniak] Růst poptávky je spojen jednak v důsledku růstu spotřeby hnojiv na produkci potravin, ale i s možným využitím amoniaku jako formou přepravy a skladování vodíku.
+Očekávaný růst poptávky po amoniaku je o 40 % do roku 2050.[^amoniak] Růst poptávky je spojen jednak v důsledku růstu spotřeby hnojiv na produkci potravin, ale i s možným využitím amoniaku jako formou přepravy a skladování vodíku.
 
-Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem.[^haberbosch] Kvůli potřebám vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO<sub>2</sub>. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^amoniaksplit]
+Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kvůli potřebám vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO<sub>2</sub>. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^amoniaksplit]
 
 Emisní náročnost amoniaku tedy závisí na původu vodíku. Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1.8 tun CO2 na tunu amoniaku. Zbytek amoniaku primárně vyrábíme z vodíku produkovaného z uhlí, který má emisní intenzitu 3.2 tun CO2 na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku zanedbatelné.[^amoniakiea] 
 
@@ -95,9 +95,8 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 
 ## Zdroje a poznámky
 
-[^amoniak]:
+[^amoniak]: https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf
 [^poptavkamoniak]: [hmmmm] (https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
-[^haberbosch]:
 [^amoniakintenzita]: https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize
 [^emisepetrochemikalie]: 
 [^emiserafinace]: 
