@@ -141,8 +141,9 @@ Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek
 Na odkazu níže si můžete stáhnout přehled klimatických závazků Česka jako jednostránkové shrnutí:
 
 <div class="download">
-  <a href="/assets-local/publications/2022-extremy-pocasi-a-klimaticka-zmena.pdf" class="btn btn-primary"><i class="fas fa-fw fa-download"></i>
-   Stáhnout PDF
+  <a href="/assets-local/files/klimaticke-zavazky-cr-one-pager.pdf" class="btn btn-primary" download>
+    <i class="fas fa-fw fa-download"></i>
+    Stáhnout PDF
   </a>
 </div>
 
