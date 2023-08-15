@@ -26,6 +26,12 @@ Roční objem průmyslových emisí Evropské unie je 881 mil. tun CO<sub>2</sub
 
 U každého průmyslového sektoru je vidět jeho celkový podíl na emisích skleníkových plynů z průmyslu v EU – ten je vyjádřen v procentech i v milionech tun (megatunách).
 
+{% include preview-box.html
+    title="Jaké jsou emise skleníkových plynů z průmyslu v ČR?"
+    text="Obdobnou [infografiku](/infografiky/emise-eu-prumysl) jsme vytvořili i pro Českou republiku."
+    slug="emise-cr-prumysl"
+%}
+
 * **Minerály a cement** – emisně nejnáročnější sektor (21,4 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (13,7 % z celkových průmyslových emisí EU), následuje výroba vápna, skla a dalších produktů.
 
 * **Ocel a další kovy** – druhý nejvíce emisně náročný sektor – 18,6 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (16,7 %). Při výrobě hliníku se spotřebovává velké množství elektřiny, jde však o nepřímé emise, které nejsou v grafu zahrnuty (více o nepřímých emisích níže).
