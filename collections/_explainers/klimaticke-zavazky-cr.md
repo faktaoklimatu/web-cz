@@ -14,11 +14,11 @@ authors:
 weight:      80
 tags-scopes: [ cr ]
 tags-topics: [ opatreni ]
-cover-source-author: "Fakta o klimatu"
-cover-source-text: "Histogram teplotních odchylek"
-cover-source-url: "https://faktaoklimatu.cz/explainery/teplotni-extremy-cr"
-cover-source-license: "CC BY 4.0"
-cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/deed.cs"
+cover-source-author: "Antoine Schibler"
+cover-source-text: "Unsplash"
+cover-source-url: "https://unsplash.com/photos/KF3Ty-K6NVA"
+cover-source-license: "Unsplash License"
+cover-source-license-url: "https://unsplash.com/license"
 perex: |
     V Česku aktuálně probíhá revize tří klíčových dokumentů v oblasti klimatu a energetiky: Politiky ochrany klimatu, Vnitrostátního plánu v oblasti energetiky a klimatu a Státní energetické koncepce. Ty určí, jak bude vypadat česká cesta k bezemisní ekonomice a společnosti v dalších letech. Všechny tři dokumenty přitom musí zahrnovat závazky vyplývající z mezinárodních úmluv a unijní legislativy. Následující text přibližuje, o jaké závazky jde a jak vznikají.
 onepager-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
