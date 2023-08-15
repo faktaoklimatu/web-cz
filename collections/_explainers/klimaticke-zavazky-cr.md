@@ -155,6 +155,10 @@ Na odkazu níže si můžete stáhnout přehled klimatických závazků Česka j
     </a>
 </div>
 
+## Dataset
+
+Všechna data použitá pro znázornění vývoje indikátorů jednotlivých závazků obsahuje náš [dataset](https://docs.google.com/spreadsheets/d/1Nkq-Td5-U-KKbbM--JcP7nHpx9E-2OJUAXIiMy0vZXo/edit?usp=sharing).
+
 ## Poznámky
 
 [^kjotsky-protokol]: V roce 1997 byl přijat, v platnost vstoupil až v roce 2005.
