@@ -22,25 +22,31 @@ data-orig:
 
 Hodnoty v grafu se vztahují k <glossary id="antropogennisklenikoveplyny">antropogenním emisím</glossary> skleníkových plynů. Ve většině kategorií jde o emise CO<sub>2</sub>. F-plyny (HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub>) jsou uvedeny samostatně a emisí N<sub>2</sub>O vzniká v průmyslu jen velmi málo – v grafu jsou emise těchto skleníkových plynů vyjádřeny v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 
-Roční objem průmyslových emisí České republiky je 31,8 mil. tun CO<sub>2</sub>eq (údaj z roku 2021), což je 25,8 % z celkových emisí skleníkových plynů v ČR. To je v přepočtu 2,88 tun CO<sub>2</sub>eq na obyvatele.
+Roční objem průmyslových emisí České republiky je 31 mil. tun CO<sub>2</sub>eq (údaj z roku 2021), což je 26 % z celkových emisí skleníkových plynů v ČR. To je v přepočtu 2,88 tun CO<sub>2</sub>eq na obyvatele.
 
 U každého průmyslového sektoru je vidět jeho celkový podíl na emisích skleníkových plynů z průmyslu v ČR – ten je vyjádřen v procentech i v milionech tun (megatunách).
 
-* **Ocel a další kovy** –  emisně nejnáročnější sektor – 28,7 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (27,8 %).
+{% include preview-box.html
+    title="Jaké jsou emise skleníkových plynů z průmyslu v EU?"
+    text="Obdobnou [infografiku](/infografiky/emise-eu-prumysl) jsme vytvořili i pro Evropskou unii."
+    slug="emise-eu-prumysl"
+%}
 
-* **Minerály a cement** – druhý nejvíce emisně náročný sektor (19,9 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (10,6 % z celkových průmyslových emisí ČR), následuje výroba vápna, skla a dalších produktů.
+* **Ocel a další kovy** –  emisně nejnáročnější sektor – 28,7 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (27,8 %). Mezi největší české emitenty v tomto sektoru patří Třinecké železárny a Liberty Ostrava.
+
+* **Minerály a cement** – druhý nejvíce emisně náročný sektor (19,9 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (10,6 % z celkových průmyslových emisí ČR), následuje výroba vápna, skla a dalších produktů. Mezi největší emitenty patři Českomoravský cement, CEMEX, Cement Hranice a Lafarge Cement. Dále se jedná o vápenky Vitošov a Čertovy schody.
 
 * **Chemikálie a hnojiva** – 17,5 % z celkových emisí z průmyslu. Největší podíl má produkce amoniaku (na výrobu hnojiv). Další významnou kategorií jsou petrochemikálie, které se používají například při výrobě plastů.
 
 * **F-plyny** – 12 % z celkových průmyslových emisí (tedy cca 3 % celkových emisí ČR). Jde o významnou kategorii, která zahrnuje velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23 500krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. Hledají se za ně náhrady, ty ale bývají méně efektivní.
 
-* **Potraviny a alkohol** – 3,6 % z celkových průmyslových emisí ČR (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
+* **Potraviny a alkohol** – 3,9 % z celkových průmyslových emisí ČR (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
 
 * **Papírenský průmysl** a výroba obalů – 2,7 % celkových průmyslových emisí ČR (spalování, zejména během sušení papíru).
 
 * **Ostatní průmyslová odvětví** – v součtu 9,6 % celkových průmyslových emisí ČR. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
 
-* **Rafinace ropy a jiných paliv** – 5,7 % celkových emisí z průmyslu ČR. Surovou ropu je nutné pro další použití zpracovat, což je energeticky náročný proces, při kterém se zároveň během chemických reakcí uvolňuje značné množství CO<sub>2</sub>. Ropa se využívá na výrobu paliv pro dopravní prostředky, ale také v průmyslu, například při produkci plastů či hnojiv. V dopravě bude poptávka po ní postupně klesat, v průmyslu ale může do budoucna i růst.
+* **Rafinace ropy a jiných paliv** – 5,7 % celkových emisí z průmyslu ČR. Surovou ropu je nutné pro další použití zpracovat, což je energeticky náročný proces, při kterém se zároveň během chemických reakcí uvolňuje značné množství CO<sub>2</sub>. Ropa se využívá na výrobu paliv pro dopravní prostředky, ale také v průmyslu, například při produkci plastů či hnojiv. V dopravě bude poptávka po ní postupně klesat, v průmyslu ale může do budoucna i růst. Největšími emitenty v této oblasti jsou Rafinérie Litvínov a Rafinérie Kralupy.
 
 ## Přímé a nepřímé emise v průmyslu
 
@@ -72,4 +78,4 @@ Emisní inventura poskytovaná Eurostatem využívá formát a strukturu dat CRF
 
 ## Zdroje
 
-[^gwp]: [Environmental Protection Agency: Sulfur Hexafluoride SF<sub>6</sub> Basics](https://www.epa.gov/eps-partnership/sulfur-hexafluoride-sf6-basics)
+[^gwp]: [Environmental Protection Agency, 2023: Sulfur Hexafluoride SF<sub>6</sub> Basics](https://www.epa.gov/eps-partnership/sulfur-hexafluoride-sf6-basics)
