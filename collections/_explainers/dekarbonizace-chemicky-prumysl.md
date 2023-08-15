@@ -36,7 +36,7 @@ Výroba amoniaku představuje 1,8 % světových emisí CO<sub>2</sub>.[^amoniake
 
 Očekávaný růst poptávky po amoniaku je o 40 % do roku 2050.[^amoniak] Růst poptávky je spojen jednak v důsledku růstu spotřeby hnojiv na produkci potravin, ale i s možným využitím amoniaku jako formou přepravy a skladování vodíku.
 
-Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kvůli potřebám vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO<sub>2</sub>. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^amoniaksplit]
+Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kvůli potřebám vysokých teplot dochází k emisím ze spalování, ovšem přítomné jsou i chemické procesy uvolňující CO<sub>2</sub>. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^iea]
 
 Emisní náročnost amoniaku tedy závisí na původu vodíku. Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO2 na tunu amoniaku. Zbytek amoniaku primárně vyrábíme z vodíku produkovaného z uhlí, který má emisní intenzitu 3.2 tun CO2 na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku zanedbatelné.[^amoniakiea] 
 
@@ -58,17 +58,17 @@ Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petroche
 
 Snižování spotřeby petrochemického průmyslu bude obzvláště složité. Například u některých klíčových plastů lze očekávat zvýšení poptávky o 55 %, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
 
-Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. Zbylých **15 % můžeme řadit mezi procesní emise**[^emisepetrochemikalie], kde je primárně o proces krakování. Při tomto procesu dochází k tepelnému rozkladu uhlovodíků, který umožňuje jejich další zpracování.
+Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. Zbylých **15 % můžeme řadit mezi procesní emise**[^iea], kde jde primárně o proces krakování, kde dochází k tepelnému rozkladu uhlovodíků, který umožňuje jejich další zpracování.
 
 ### Zachytávání CO<sub>2</sub> a elektrifikace
 
 Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů.[^dekarbonizacepetro] 
 
-Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro]
+Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] 
 
 ### Vedlejší metody
 
-* Recyklace - Se snížením poptávky po nově vyráběných plastech může pomoct recyklace již vyrobených plastů. Zde je velký prostor na zlepšení jelikož globálně pouze 6 % plastů, které dnes výrábíme pochází z recyklovaného materiálu. V EU je toto číslo 10 %. Většina plastů stále skončí na skládkách či je zpracováno ve spalovnách. Do budoucna je nutné jednak zlepšit třídící linky na plasty, ale zároveň i navrhovat plastové produkty tak aby byly jednodušeji recyklovatelné. Bariérou je v současné době i fakt, že produkce nových plastů je levnější než recyklace.
+* Recyklace - Se snížením produkce plastů může pomoct recyklace již vyrobených plastů. Aktuálně pouze 6 % plastů, které dnes výrábíme, pochází z recyklovaného materiálu. V EU je toto číslo 10 %.[^recyklaceplasty] Většina plastů stále skončí na skládkách či je zpracováno ve spalovnách. Do budoucna je nutné jednak zlepšit třídící linky na plasty, ale zároveň i navrhovat plastové produkty tak aby byly jednodušeji recyklovatelné. Bariérou je v současné době i fakt, že produkce nových plastů je levnější než recyklace.
 
 * Bioplasty - Plasty je možné vyrábět i z biomasy, například z rostlinných olejů, škrobu či dřevní štěpky. Bioplasty jsou méně emisně náročné, ovšem mohou se potýkat s problémy s dodávkami udržitelné biomasy a vysokou cenou oproti konvenčním plastům. 
 
@@ -111,18 +111,16 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 ## Zdroje a poznámky
 
 [^amoniak]: https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf
-[^poptavkamoniak]: [hmmmm] (https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
 [^amoniakintenzita]: https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize
-[^emisepetrochemikalie]: 
 [^emiserafinace]: https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining
 [^tlak]: https://www.energy.gov/science/bes/articles/novel-catalyst-means-ammonia-synthesis-less-heat-and-pressure
 [^dekarbonizacepetro]: https://about.bnef.com/blog/759-billion-required-for-a-net-zero-petrochemicals-sector-by-2050/
-[^iea]: https://www.iea.org/reports/the-future-of-petrochemicals
+[^iea]: https://iea.blob.core.windows.net/assets/bee4ef3a-8876-4566-98cf-7a130c013805/The_Future_of_Petrochemicals.pdf
 [^sf6]: https://www.eea.europa.eu/publications/fluorinated-greenhouse-gases-2021
 [^hfc32]: https://www.gov.uk/guidance/calculate-the-carbon-dioxide-equivalent-quantity-of-an-f-gas
 [^dominantplyn]: https://www.theccc.org.uk/wp-content/uploads/2020/12/Sector-summary-F-gases.pdf
 [^amoniakemise]: https://royalsociety.org/-/media/policy/projects/green-ammonia/green-ammonia-policy-briefing.pdf
-[^amoniaksplit]: https://iea.blob.core.windows.net/assets/bee4ef3a-8876-4566-98cf-7a130c013805/The_Future_of_Petrochemicals.pdf
 [^ammoniakdekarbonizace]: https://royalsociety.org/-/media/policy/projects/green-ammonia/green-ammonia-policy-briefing.pdf
 [^amoniakiea]: https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/AmmoniaTechnologyRoadmap.pdf
 [^ropapouziti]: [Fuels Europe: Vision 2050](https://www.fuelseurope.eu/publications/publications/vision-2050-a-pathway-for-the-evolution-of-the-refining-industry-and-liquid-fuels)
+[^recyklaceplasty]: [Investigate Europe, 2023: In numbers: Europe’s mounting plastic waste problem unpacked](https://www.investigate-europe.eu/en/posts/in-numbers-europes-mounting-plastic-waste-problem-unpacked)
