@@ -44,7 +44,7 @@ V současné době využíváme především šedý vodík ze zemního plynu, co
 
 ## Dekarbonizace výroby vodíku
 
-Jelikož výroba amoniaku je přímo vazaná na využití vodíku, jednoznačně hlavním způsobem jak snížit emisní náročnost výroby amoniaku je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. 
+Jelikož výroba amoniaku je přímo vazaná na využití vodíku, jednoznačně hlavním způsobem jak snížit emisní náročnost výroby amoniaku je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. Vzhledem k již existujícímu napojení výroben amoniaku na infrastrukturu se zemním plynem se jako možnost také jeví produkce modrého vodíku, tedy vodíku produkovaného ze zemního plynu kde se emise CO<sub>2</sub> zachytí a uloží. 
 
 ### Vedlejší metody
 
@@ -54,15 +54,23 @@ Je vysoce pravděpodobné, že amoniak budeme nadále vyrábět Haber-Boschovým
 
 ## Petrochemikálie
 
-Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie öznačují chemikálie vyráběné z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Produkty petrochemického průmyslu jsou tak metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. 
+Fosilní paliva nepoužíváme pouze v dopravě a energetice. Takzvané petrochemikálie označují chemikálie vyráběné z fosilních zdrojů - tedy ropy, zemního plynu a uhlí. Z petrochemikálií se vyrábí všechno možné od plastů, přes pneumatiky až po čisticí prostředky. Produkty petrochemického průmyslu jsou také metanol nebo takzvané high value chemicals (HVC), k nimž se řadí ethylen, propylen, toluen, benzen a xyleny. 
 
-Snižování spotřeby petrochemického průmyslu bude obzvláště složité. Například u klíčových termoplastů lze očekávat zvýšení poptávky o 55 %, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
+Snižování spotřeby petrochemického průmyslu bude obzvláště složité. Například u některých klíčových plastů lze očekávat zvýšení poptávky o 55 %, a to i přes úspory v rozvinutém světě, které budou daleko menší než pravděpodobný nárůst v rozvíjejících se zemích.[^iea] 
 
 Převládajícím zdrojem emisí je tomto sektoru z **85 % spalování tepla**. Zbylých **15 % můžeme řadit mezi procesní emise**[^emisepetrochemikalie], kde je primárně o proces krakování. Při tomto procesu dochází k tepelnému rozkladu uhlovodíků, který umožňuje jejich další zpracování.
 
 ### Zachytávání CO<sub>2</sub> a elektrifikace
 
-Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů. Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] 
+Hlavní metodou dekarbonizace petrochemického průmyslu by mělo představovat CCS s 40 procentní úsporou vypouštěných skleníkových plynů.[^dekarbonizacepetro] 
+
+Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro]
+
+### Vedlejší metody
+
+* Recyklace - Se snížením poptávky po nově vyráběných plastech může pomoct recyklace již vyrobených plastů. Zde je velký prostor na zlepšení jelikož globálně pouze 6 % plastů, které dnes výrábíme pochází z recyklovaného materiálu. V EU je toto číslo 10 %. Většina plastů stále skončí na skládkách či je zpracováno ve spalovnách. Do budoucna je nutné jednak zlepšit třídící linky na plasty, ale zároveň i navrhovat plastové produkty tak aby byly jednodušeji recyklovatelné. Bariérou je v současné době i fakt, že produkce nových plastů je levnější než recyklace.
+
+* Bioplasty - Plasty je možné vyrábět i z biomasy, například z rostlinných olejů, škrobu či dřevní štěpky. Bioplasty jsou méně emisně náročné, ovšem mohou se potýkat s problémy s dodávkami udržitelné biomasy a vysokou cenou oproti konvenčním plastům. 
 
 ## Rafinace ropy
 
