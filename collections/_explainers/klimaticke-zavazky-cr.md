@@ -21,6 +21,7 @@ cover-source-license: "CC BY 4.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/deed.cs"
 perex: |
     V Česku aktuálně probíhá revize tří klíčových dokumentů v oblasti klimatu a energetiky: Politiky ochrany klimatu, Vnitrostátního plánu v oblasti energetiky a klimatu a Státní energetické koncepce. Ty určí, jak bude vypadat česká cesta k bezemisní ekonomice a společnosti v dalších letech. Všechny tři dokumenty přitom musí zahrnovat závazky vyplývající z mezinárodních úmluv a unijní legislativy. Následující text přibližuje, o jaké závazky jde a jak vznikají.
+onepager-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
 ---
 
 ## Jak vznikají klimatické závazky ČR?
@@ -63,7 +64,6 @@ Níže jsou shrnuty závazky Česka v jednotlivých oblastech, a to v kontextu c
 
 {% include figure.html
     name="graf-celkove-emise.svg"
-    class="wide-figure-desktop"
     alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR mezi lety 1990–2021. V roce 2021 byly emise skleníkových plynů o 41 % nižší než v roce 1990."
     source="Fakta o klimatu"
 %}
@@ -140,11 +140,18 @@ Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek
 
 Na odkazu níže si můžete stáhnout přehled klimatických závazků Česka jako jednostránkové shrnutí:
 
+{% include includes-local/figure-plain-download-preview.html
+    link=page.onepager-url
+    preview="onepager.png"
+    alt="Náhled jednostránkového shrnutí klimatických závazků ČR"
+    caption="Jednostránkové shrnutí klimatických závazků ČR ke stažení ve formátu PDF."
+%}
+
 <div class="download">
-  <a href="/assets-local/files/klimaticke-zavazky-cr-one-pager.pdf" class="btn btn-primary" download>
-    <i class="fas fa-fw fa-download"></i>
-    Stáhnout PDF
-  </a>
+    <a href="{{ page.onepager-url }}" class="btn btn-primary" download>
+        <i class="fas fa-fw fa-download"></i>
+        Stáhnout PDF
+    </a>
 </div>
 
 ## Poznámky
