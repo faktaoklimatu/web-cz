@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaké jsou závazky Česka v oblasti klimatu?"
 slug:        "klimaticke-zavazky-cr"
-published:   2023-08-11
+published:   2023-08-17
 authors:
   - id: "katerina-kolouchova"
   - id: "jirka-lnenicka"
@@ -32,23 +32,24 @@ onepager-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
     alt="Schéma procesu vzniku klimatických závazků ČR, které začíná na mezinárodní úrovni a pokračuje legislativou přijímanou v rámci EU."
 %}
 
-**Globální rámec** tvoří především **Rámcová úmluva OSN o změně klimatu** (*United Nations Convention on Climate Change*, UNFCCC), která byla přijata v roce 1992 a do dnešního dne ji podepsaly téměř všechny státy světa (celkem 198). 
+**Globální rámec** tvoří především **Rámcová úmluva OSN o změně klimatu** (*United Nations Convention on Climate Change*, UNFCCC), která byla přijata v roce 1992 a do dnešního dne ji podepsaly téměř všechny státy světa (celkem 198).
 
-Tuto úmluvu v roce 1997[^kjotsky-protokol] doplnil **Kjótský protokol**, ve kterém se 37 ekonomicky nejrozvinutějších zemí zavázalo snížit své emise skleníkových plynů. Protokol byl v roce 2015 nahrazen **Pařížskou dohodou**, v níž se smluvní strany (aktuálně jich je 196, včetně EU) zavázaly k *„...udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí.“*
+Tuto úmluvu v roce 1997[^kjotsky-protokol] doplnil **Kjótský protokol**, ve kterém se 37 ekonomicky nejrozvinutějších zemí zavázalo snížit své emise skleníkových plynů. Protokol byl v roce 2015 nahrazen **Pařížskou dohodou**, v níž se smluvní strany (aktuálně jich je 196, včetně EU) zavázaly k *"...udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí."*
 
 Ke sledování pokroku a naplňování stanovených cílů využívá Pařížská dohoda především dva nástroje:
 
 * **Národně stanovené příspěvky** (*Nationally Determined Contributions*, NDCs) k <glossary id="mitigace">mitigaci</glossary> a <glossary id="adaptace">adaptaci</glossary> na změnu klimatu, které všechny smluvní strany reportují každých pět let, přičemž EU uvádí společný příspěvek pro všechny unijní státy.
-* **Dlouhodobé nízkoemisní strategie** – v případě Česka jde o Politiku ochrany klimatu.
+* **Dlouhodobé nízkoemisní strategie** – v případě Česka jde o *Politiku ochrany klimatu*.
 
-**Evropská unie**, jakožto smluvní strana Pařížské dohody, následně přijímá prostřednictvím legislativního procesu (mezi Evropskou komisí, Parlamentem a členskými státy reprezentovanými Radou EU) konkrétní závazky pro snižování emisí skleníkových plynů v jednotlivých sektorech ekonomiky. Těmito závazky a klimatickou politikou (reprezentovanou mj. Zelenou dohodou pro Evropu) se EU podílí na celosvětovém úsilí zastavit probíhající změnu klimatu.
+**Evropská unie**, jakožto smluvní strana Pařížské dohody, následně přijímá prostřednictvím legislativního procesu (mezi Evropskou komisí, Parlamentem a členskými státy reprezentovanými Radou EU) konkrétní závazky pro snižování emisí skleníkových plynů v jednotlivých sektorech ekonomiky. Těmito závazky a klimatickou politikou (reprezentovanou mj. [Zelenou dohodou pro Evropu](/explainery/zelena-dohoda-pro-evropu)) se EU podílí na celosvětovém úsilí zastavit probíhající změnu klimatu.
 
 Na plnění společných unijních cílů se musejí podílet také jednotlivé členské státy, tedy i **Česko**. Každý stát může zároveň přijmout závazky, které jsou ambicióznější než ty, jež navrhuje Unie. Některé země to skutečně dělají – zatímco EU si např. vytyčila cíl snížit emise skleníkových plynů o 55 % do roku 2030 (v porovnání s rokem 1990), Dánsko si stanovilo závazek dosáhnout snížení o [70 %](https://www.retsinformation.dk/eli/lta/2021/2580), který si navíc ukotvilo ve vlastním klimatickém zákoně.[^klimaticke-zakony] Kromě toho je též důležité zdůraznit, že členské státy mají odpovědnost nejen vůči unijním závazkům, ale i vůči závazku stanovenému v Pařížské dohodě (udržení průměrného oteplení planety výrazně pod 2 °C, ideálně pod 1,5 °C), protože jsou jejími smluvními stranami i samostatně, tedy ne pouze jako součást EU.
 
-České ambice v oblasti snižování emisí skleníkových plynů musí reflektovat závazky vyplývající z mezinárodních úmluv a unijní legislativy. Shrnuty jsou ve třech strategických dokumentech: 
-* **Politika ochrany klimatu** 
-* **Vnitrostátní plán v oblasti energetiky a klimatu** (*National Energy and Climate Plan*, NECP) 
-* **Státní energetická koncepce**. 
+České ambice v oblasti snižování emisí skleníkových plynů musí reflektovat závazky vyplývající z mezinárodních úmluv a unijní legislativy. Shrnuty jsou ve třech strategických dokumentech:
+
+* **Politika ochrany klimatu**,
+* **Vnitrostátní plán v oblasti energetiky a klimatu** (*National Energy and Climate Plan*, NECP) a
+* **Státní energetická koncepce**.
 
 Všechny tři dokumenty procházejí v letech 2023–2024 revizí. Právě ony určí, jak bude vypadat cesta Česka k bezemisnímu hospodářství v následující dekádě.
 
@@ -68,7 +69,7 @@ Níže jsou shrnuty závazky Česka v jednotlivých oblastech, a to v kontextu c
     source="Fakta o klimatu"
 %}
 
-Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 %[^zavazek-2030] v porovnání s rokem 1990, **Česko** v [Politice ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit do roku 2030 své emise o 44 mil. tun CO<sub>2</sub>eq[^emisni-zavazek-cr]. Přepočteme-li toto číslo relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %** (tedy nikoli 55 % jako v EU). **Do roku 2021 snížilo Česko své emise o 41 %**, k největšímu snížení však došlo vlivem ukončení provozu těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají.
+Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 %[^zavazek-2030] v porovnání s rokem 1990, **Česko** v [Politice ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit do roku 2030 své emise o 44 mil. tun CO<sub>2</sub>eq.[^emisni-zavazek-cr] Přepočteme-li toto číslo relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %** (tedy nikoli 55 % jako v EU). **Do roku 2021 snížilo Česko své emise o 41 %**, k největšímu snížení však došlo vlivem ukončení provozu těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají.
 
 ### Snížení emisí v nejvíce znečišťujících sektorech (EU ETS)
 
@@ -78,7 +79,7 @@ Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleník
     source="Fakta o klimatu"
 %}
 
-Pro emise skleníkových plynů, které spadají pod systém obchodování s emisními povolenkami (*Emission Trading System*, EU ETS) je **stanoven závazek pouze na úrovni celé EU: pokles o 62 % v roce 2030** v porovnání s rokem 2005, kdy systém začal fungovat.[^ets-smernice] Součástí <glossary id="euets">EU ETS</glossary> jsou nejvíce znečišťující odvětví ekonomiky – především výroba energie, průmysl, letecká a námořní doprava.[^namorni-doprava] Příspěvek ČR ke společnému cíli EU dosahoval k roku 2021 hodnoty –30 %.
+Pro emise skleníkových plynů, které spadají pod systém obchodování s emisními povolenkami (*Emission Trading System*, EU ETS) je **stanoven závazek pouze na úrovni celé EU: pokles o 62 % v roce 2030** v porovnání s rokem 2005, kdy systém začal fungovat.[^ets-smernice] Součástí <glossary id="euets">EU ETS</glossary> jsou nejvíce znečišťující odvětví ekonomiky – především výroba energie, průmysl, letecká a námořní doprava.[^namorni-doprava] Příspěvek ČR ke společnému cíli EU dosahoval k roku 2021 hodnoty −30 %.
 
 ### Snížení emisí v budovách a silniční dopravě (EU ETS 2)
 
@@ -88,7 +89,7 @@ Pro emise skleníkových plynů, které spadají pod systém obchodování s emi
     source="Fakta o klimatu"
 %}
 
-Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sektory budov a silniční dopravy (tzv. EU ETS 2). Stejně jako u stávajícího EU ETS zmíněného výše zde existuje **pouze společný unijní cíl**, a to **snížit emise skleníkových plynů v těchto sektorech o 43 %** do roku 2030 (v porovnání s rokem 2005). Pokud jde o české emise ze silniční dopravy a budov, rozdíl v roce 2021 (v porovnání s rokem 2005) činil –17 %[^eu-ets-2-vypocet], což není ani polovina z unijního cíle.
+Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sektory budov a silniční dopravy (tzv. EU ETS 2). Stejně jako u stávajícího EU ETS zmíněného výše zde existuje **pouze společný unijní cíl**, a to **snížit emise skleníkových plynů v těchto sektorech o 43 %** do roku 2030 (v porovnání s rokem 2005). Pokud jde o české emise ze silniční dopravy a budov, rozdíl v roce 2021 (v porovnání s rokem 2005) činil −17 %,[^eu-ets-2-vypocet] což není ani polovina z unijního cíle.
 
 ### Snížení emisí mimo EU ETS
 
@@ -98,7 +99,7 @@ Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sek
     source="Fakta o klimatu"
 %}
 
-Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v EU ETS (1), upravuje [Nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857). To stanovuje konkrétní závazky pro EU i jednotlivé členské státy **v sektorech budov, dopravy (mimo letectví), zemědělství, menších průmyslů a odpadového hospodářství**. Zatímco unijním závazkem je pokles o 40 %, **Česko by mělo své emise v těchto sektorech snížit o 26 %** do roku 2030 (v porovnání s rokem 2005). K roku 2021 klesly tyto emise pouze o –10 %.
+Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v EU ETS (1), upravuje [Nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857). To stanovuje konkrétní závazky pro EU i jednotlivé členské státy **v sektorech budov, dopravy (mimo letectví), zemědělství, menších průmyslů a odpadového hospodářství**. Zatímco unijním závazkem je pokles o 40 %, **Česko by mělo své emise v těchto sektorech snížit o 26 %** do roku 2030 (v porovnání s rokem 2005). K roku 2021 klesly tyto emise pouze o −10 %.
 
 ### Zvýšení podílu obnovitelných zdrojů na konečné spotřebě energie
 
@@ -128,7 +129,7 @@ Stejně jako u podílu obnovitelných zdrojů si i v případě energetické ú�
     source="Fakta o klimatu"
 %}
 
-Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši –1,228 mil. tun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek snížit emise v tomto sektoru o –310 mil. tun CO<sub>2</sub>eq.
+Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši −1,228 mil. tun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek snížit emise v tomto sektoru o −310 mil. tun CO<sub>2</sub>eq.
 
 </div>
 
