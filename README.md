@@ -45,9 +45,10 @@ Máte-li problém spustit Inkscape s chybou `Wrong __data_start/_end pair`, nast
 Na **Mac OS** funguje kombinace [postupu dle Jekyllu](https://jekyllrb.com/docs/installation/macos/), zbytek lze nainstalovat pomocí Homebrew (https://brew.sh/), tedy:
 * `brew install imagemagick`
 * `brew install inkscape` (k instalaci standardních aplikací přes Homebrew je potřeba napoprvé ještě `brew tap homebrew/cask`)
-Také je třeba nastavit PATH: 
-* `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc` případně 
-* `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.bash_profile`
+* Také je třeba nastavit PATH: 
+  * `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc`
+  * případně `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.bash_profile`
+  * pravděpodobně bude třeba restartovat okno příkazového řádku, aby se aktualizovala hodnota PATH
 
 Inkscape standardně není v `$PATH`, tak je potřeba přidat pomocí
 * `sudo mkdir /usr/local/bin`,
