@@ -45,6 +45,9 @@ Máte-li problém spustit Inkscape s chybou `Wrong __data_start/_end pair`, nast
 Na **Mac OS** funguje kombinace [postupu dle Jekyllu](https://jekyllrb.com/docs/installation/macos/), zbytek lze nainstalovat pomocí Homebrew (https://brew.sh/), tedy:
 * `brew install imagemagick`
 * `brew install inkscape` (k instalaci standardních aplikací přes Homebrew je potřeba napoprvé ještě `brew tap homebrew/cask`)
+Také je třeba nastavit PATH: 
+* `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc` případně 
+* `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.bash_profile`
 
 Inkscape standardně není v `$PATH`, tak je potřeba přidat pomocí
 * `sudo mkdir /usr/local/bin`,
@@ -64,7 +67,9 @@ Kontejnery umožňují oddělit programy nutné pro sestavení a spuštění web
 ### Tipy a triky v případě technických problémů
 
 * Jekyll padá s nedostatečnými právy zápisu: Pravděpodobně mícháte-li build přes kontejner a lokální instalaci. Smažte všechny artefakty vzniklé při sestavování pomocí `make clean-build`.
+* Sestavení padá na instalaci http_parser.rb, `An error occurred while installing http_parser.rb (0.6.0), and Bundler cannot continue.`: Je možné že adresa složky, ve které spouštíte instalaci obsahuje mezery. Odstraněním mezer z názvu složek lze problém vyřešit.
 * Sestavení padá s tím, že Inkscape nezná použité argumenty: Pravděpodobně máte verzi Inkscape nižší než 1.0.
+* Konvertování SVG, PNG a PDF trvá příliš dlouho (System has run out of application memory): Zkuste nainstalovat Inkscape ve verzi 1.0.2.
 * Změny v souborech se nepromítají do lokálně zobrazeného webu na `localhost:4000`: Pravděpodobně jste změnili obsah, který je předzpracováván před spuštěním Jekyllu (například PDF infografik). Zastavte lokálně sestavený web a dejte ho sestavit znova.
 * V `git status` vidím změny v souboru `web-core`, i když jsem v něm nic nedělal: Nejste-li vývojář [web-core](https://github.com/faktaoklimatu/web-core), netrapte se tím. Dost možná to znova zmizí, až příště sestavíte web.
 
