@@ -157,7 +157,7 @@ Na odkazu níže si můžete stáhnout přehled klimatických závazků Česka j
 
 ## Dataset
 
-Všechna data použitá pro znázornění vývoje indikátorů jednotlivých závazků obsahuje náš [dataset](https://docs.google.com/spreadsheets/d/1Nkq-Td5-U-KKbbM--JcP7nHpx9E-2OJUAXIiMy0vZXo/edit?usp=sharing).
+Všechna data použitá pro znázornění vývoje indikátorů jednotlivých závazků obsahuje náš [dataset](https://docs.google.com/spreadsheets/d/1Nkq-Td5-U-KKbbM--JcP7nHpx9E-2OJUAXIiMy0vZXo/edit?usp=sharing). Pro některé indikátory (např. pro EU ETS 2 nebo pro emise mimo EU ETS – Nařízení o sdílení úsilí) nejsou k dispozici oficiální data, a tak jsme tyto grafy založili na vlastních výpočtech na základě dostupných dat a znění příslušných směrnic a nařízení.
 
 ## Poznámky
 
