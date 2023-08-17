@@ -3,7 +3,7 @@ layout:         infographic
 title:          "Emise skleníkových plynů z průmyslu v ČR"
 slug:           "emise-cr-prumysl"
 redirect_from:  "/emise-cr-prumysl"
-published:      2023-08-21
+published:      2023-08-17
 weight:         51
 tags-scopes:    [ cr ]
 tags-topics:    [ emise ]
@@ -46,7 +46,7 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
 
 * **Ostatní průmyslová odvětví** – v součtu 9,6 % celkových průmyslových emisí ČR. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
 
-* **Rafinace ropy a jiných paliv** – 5,7 % celkových emisí z průmyslu ČR. Surovou ropu je nutné pro další použití zpracovat, což je energeticky náročný proces, při kterém se zároveň během chemických reakcí uvolňuje značné množství CO<sub>2</sub>. Ropa se využívá na výrobu paliv pro dopravní prostředky, ale také v průmyslu, například při produkci plastů či hnojiv. V dopravě bude poptávka po ní postupně klesat, v průmyslu ale může do budoucna i růst. Největšími emitenty v této oblasti jsou Rafinérie Litvínov a Rafinérie Kralupy.
+* **Rafinace ropy a jiných paliv** – 5,7 % celkových emisí z průmyslu ČR. Surovou ropu je nutné pro další použití zpracovat, což je energeticky náročný proces, při kterém se zároveň během chemických reakcí uvolňuje značné množství CO<sub>2</sub>. Ropa se využívá na výrobu paliv pro dopravní prostředky, ale také v průmyslu, například při produkci plastů či hnojiv. V dopravě bude poptávka po ní postupně klesat, v průmyslu ale může do budoucna i růst. Největšími emitenty v této oblasti jsou rafinérie v Litvínově a v Kralupech nad Vltavou.
 
 ## Přímé a nepřímé emise v průmyslu
 
