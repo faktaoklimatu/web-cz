@@ -135,7 +135,7 @@ Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUC
 
 ### Snížení emisí u nových osobních automobilů a dodávek
 
-Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek emitujících CO<sub>2</sub> – od roku 2035 nebude možné na úrovni EU vyrábět žádné osobní automobily ani dodávky, které vypouštějí emise CO<sub>2</sub>.[^co2-vozidla]
+Pro kontext lze uvést i cíl v oblasti nových osobních automobilů a dodávek emitujících CO<sub>2</sub> – od roku 2035 nebude možné na úrovni EU registrovat žádné osobní automobily ani dodávky, které vypouštějí emise CO<sub>2</sub>.[^co2-vozidla] V Česku přitom v roce 2021 produkovaly nově registrované automobily 139 g CO<sub>2</sub>/km, dodávky pak 217.[^vozidla-emise-data]
 
 ## Jednostránkové shrnutí
 
@@ -173,3 +173,4 @@ Všechna data použitá pro znázornění vývoje indikátorů jednotlivých zá
 [^eed]: Společný závazek EU je založen na jiné metrice, než je stávající závazek ČR, proto jej v textu pro porovnání neuvádíme. Podle prozatímní [dohody na podobě směrnice o energetické účinnosti](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/10/council-and-parliament-strike-deal-on-energy-efficiency-directive/) má v EU dosáhnout konečná spotřeba energie v roce 2030 o 11,7 % nižší hodnoty, než ji modeluje [referenční scénář Evropské komise z roku 2020](https://energy.ec.europa.eu/data-and-analysis/energy-modelling/eu-reference-scenario-2020_en).
 [^lulucf-zavazek]: Závazky v sektoru LULUCF pro jednotlivé členské státy stanovuje [nařízení EU o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839).
 [^co2-vozidla]: Závazek upravuje [nařízení EU o přísnějších emisních předpisech pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851).
+[^vozidla-emise-data]: Data o emisích nově registrovaných [osobních automobilů](https://www.eea.europa.eu/en/datahub/datahubitem-view/fa8b1229-3db6-495d-b18e-9c9b3267c02b) a [dodávek](https://www.eea.europa.eu/en/datahub/datahubitem-view/9636827c-bd0c-40f5-814e-c4065c11c9a0) sbírá Evropská agentura pro životní prostředí (*European Environmental Agency*, EEA).
