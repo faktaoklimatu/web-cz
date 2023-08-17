@@ -129,7 +129,7 @@ Stejně jako u podílu obnovitelných zdrojů si i v případě energetické ú�
     source="Fakta o klimatu"
 %}
 
-Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši −1,228 mil. tun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek pohlcovat v tomto sektoru emise ve výši 310 mil. tun CO<sub>2</sub>eq.
+Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši −1,228 mil. tun CO<sub>2</sub>eq ročně**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek pohlcovat v tomto sektoru emise ve výši 310 mil. tun CO<sub>2</sub>eq ročně.
 
 </div>
 
