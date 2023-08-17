@@ -51,7 +51,7 @@ Na plnění společných unijních cílů se musejí podílet také jednotlivé 
 * **Vnitrostátní plán v oblasti energetiky a klimatu** (*National Energy and Climate Plan*, NECP) a
 * **Státní energetická koncepce**.
 
-Všechny tři dokumenty procházejí v letech 2023–2024 revizí. Právě ony určí, jak bude vypadat cesta Česka k bezemisnímu hospodářství v následující dekádě.
+Všechny tři dokumenty procházejí v letech 2023–2024 revizí. Právě ony určí, jak bude vypadat cesta Česka k bezemisnímu hospodářství po zbytek této dekády.
 
 ## Přehled jednotlivých závazků Česka vyplývajících z unijní legislativy
 
@@ -69,13 +69,13 @@ Níže jsou shrnuty závazky Česka v jednotlivých oblastech, a to v kontextu c
     source="Fakta o klimatu"
 %}
 
-Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 %[^zavazek-2030] v porovnání s rokem 1990, **Česko** v [Politice ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit do roku 2030 své emise o 44 mil. tun CO<sub>2</sub>eq.[^emisni-zavazek-cr] Přepočteme-li toto číslo relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %** (tedy nikoli 55 % jako v EU). **Do roku 2021 snížilo Česko své emise o 41 %**, k největšímu snížení však došlo vlivem ukončení provozu těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají.
+Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 %[^zavazek-2030] v porovnání s rokem 1990, **Česko** v [Politice ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit do roku 2030 své emise o 44 mil. tun CO<sub>2</sub>eq.[^emisni-zavazek-cr] Přepočteme-li toto číslo relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %** (tedy nikoli 55 % jako v EU). **Do roku 2021 snížilo Česko své emise o 41 %**, k největšímu snížení však došlo vlivem ukončení provozu části těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají.
 
 ### Snížení emisí v nejvíce znečišťujících sektorech (EU ETS)
 
 {% include figure.html
     name="graf-EU-ETS.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR v sektoru EU ETS mezi lety 2005–2021. V roce 2021 byly emise skleníkových plynů v tomto sektoru o 30 % nižší než v roce 2005."
     source="Fakta o klimatu"
 %}
 
@@ -85,7 +85,7 @@ Pro emise skleníkových plynů, které spadají pod systém obchodování s emi
 
 {% include figure.html
     name="graf-EU-ETS-2.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR v sektoru EU ETS 2 mezi lety 2005–2021. V roce 2021 byly emise skleníkových plynů v tomto sektoru o 17 % nižší než v roce 2005."
     source="Fakta o klimatu"
 %}
 
@@ -95,7 +95,7 @@ Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sek
 
 {% include figure.html
     name="graf-effort-sharing.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR v sektorech mimo EU ETS, tedy sektorech, které spadají pod Nařízení o sdílení úsilí, mezi lety 2005–2021. V roce 2021 byly emise skleníkových plynů v tomto sektoru o 10 % nižší než v roce 2005."
     source="Fakta o klimatu"
 %}
 
@@ -105,7 +105,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 
 {% include figure.html
     name="graf-podil-OZE.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj podílu obnovitelných zdrojů na konečné spotřebě energie v ČR mezi lety 2004–2021. V roce 2021 dosahoval 17,7 %."
     source="Fakta o klimatu"
 %}
 
@@ -115,7 +115,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 
 {% include figure.html
     name="graf-energeticka-ucinnost.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj konečné spotřeby energie v ČR mezi lety 1990–2021. V roce 2021 dosahovala 990 petajoulů."
     source="Fakta o klimatu"
 %}
 
@@ -125,11 +125,11 @@ Stejně jako u podílu obnovitelných zdrojů si i v případě energetické ú�
 
 {% include figure.html
     name="graf-LULUCF.svg"
-    alt="TODO"
+    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR v sektoru využití půdy a lesnictví, LULUCF, v ČR mezi lety 1990–2021. V roce 2021 dosahovaly emise skleníkových plynů hodnoty 8,5 milionů megatun."
     source="Fakta o klimatu"
 %}
 
-Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši −1,228 mil. tun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek snížit emise v tomto sektoru o −310 mil. tun CO<sub>2</sub>eq.
+Závazek v sektoru využití půdy, změn ve využití půdy a lesnictví (LULUCF) upravuje, kolik emisí skleníkových plynů by mělo být v jednotlivých členských státech a celé EU v roce 2030 pohlcováno. **Pro Česko je stanoven ve výši −1,228 mil. tun CO<sub>2</sub>eq**.[^lulucf-zavazek] Je však otázkou, nakolik je tento závazek dosažitelný – v roce 2021 byl sektor LULUCF v ČR čistým emitentem skleníkových plynů, především kvůli kůrovcové kalamitě (vypuštěno bylo 8,5 mil. tun CO<sub>2</sub>eq). Pro celou EU pak platí závazek pohlcovat v tomto sektoru emise ve výši 310 mil. tun CO<sub>2</sub>eq.
 
 </div>
 
