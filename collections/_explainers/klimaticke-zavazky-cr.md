@@ -24,6 +24,9 @@ perex: |
 onepager-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
 ---
 
+{:.longread-small}
+*Shrnutí následujícího textu na jednu stránku ve formátu PDF si můžete [stáhnout níže](#jednostránkové-shrnutí).*
+
 ## Jak vznikají klimatické závazky ČR?
 
 {% include figure.html
