@@ -33,7 +33,7 @@ Světová poptávka po oceli a hliníku bude v následujících letech růst a t
 *Následující text představuje možnosti dekarbonizace výroby oceli a hliníku a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
 
-## Ocel
+## Výroba oceli a emise skleníkových plynů
 
 {% include preview-box.html
     title="Dekarbonizace z perspektivy konkrétní ocelárny v Česku"
@@ -41,21 +41,39 @@ Světová poptávka po oceli a hliníku bude v následujících letech růst a t
     slug="28-trinecke-zelezarny"
 %}
 
-Výroba oceli představuje 7 % světových emisí.[^missionpossible] Ocel je jedna z nejdůležitějších surovin, kterou lidstvo využívá ve stavebnictví, výrobě aut a mnoha dalších nejen průmyslových odvětvích.
+Ocel je jedna z nejdůležitějších surovin, kterou lidstvo využívá ve stavebnictví, automobilovém průmyslu i mnoha dalších odvětvích. V technické praxi se rozlišují různé druhy ocelí a litin a také se někdy proces  výroby rozděluje na výrobu surového železa a jeho další zpracování. Pro základní představu o možnostech dekarbonizace ale nejsou tyto detaily příliš podstatné a proto do nich v tomto textu nezabíháme. 
 
-**55 % procent emisí pochází z procesu spalování a zbylých 45% emisí pochází z chemických procesů.**[^emiseocel]
+Celkově se na světě ročně vyrobí 1,9 Gt oceli[^vyroba-oceli-data]. Většina této výroby - okolo 75% - probíhá ve vysokých pecích pomocí spalování uhlí či koksu, zbývajících 25% připadá na elektrické obloukové pece případně tzv. přímou redukci železa. Tyto technologie se velmi liší svou emisní intenzitou[^emisniintenzitaoceli-WEF]. Zatímco na výrobu surového železa ve vysokých pecích připadá na každou vyrobenou tunu oceli cca 2,3 tCO<sub>2</sub>, při recyklaci železa v obloukových pecích vzniká pouze 0,6 tCO<sub>2</sub> na 1 tunu oceli. Světová průměrná emisní intenzita výroby je 1,9 tCO<sub>2</sub>[^emisni-intenzita-srovnani] na tunu oceli, v jednotlivých zemích se ale může velmi lišit podle poměru výrobních technologií[^emisniintenzitaoceli-zeme].       
 
-Produkce jedné tuny oceli má na svědomí v průměru 2 tuny CO<sub>2</sub>.[^missionpossible]
 
-Nahradit ocel jiným materiálem je často těžké a s ohledem na rozvoj urbanizace lze do roku 2050 očekávat nárůst poptávky po oceli o 10–30 %.[^ocelpoptavka]
+Celkově představuje výroba oceli 7 % světových emisí skleníkových plynů a 11% světoých emisí CO<sub>2</sub>. Zhruba polovina emisí z výroby oceli je způsobena přímo spalováním uhlí (koksu), druhá polovina pochází z chemické reakce[^emiseocel]. Konkrétně jde o to, že železné rudy jsou sloučeniny železa s kyslíkem (například Fe<sub>3</sub>O<sub>4</sub>, Fe<sub>2</sub>O<sub>3</sub>)[^zelezne-rudy] a při výrobě surového železa je nutné kyslík z rudy vyvázat (tzv. redukční reakce). K tomu se ve vysokých pecích používá koks, který slouží nejen jako palivo, ale i jako redukční činidlo a uhlík z koksu na sebe naváže kyslík z rudy. 
 
-Při výrobě oceli jsou klíčové dvě fáze, redukce a zkujňování surového železa. Nejprve dojde pomocí redukce k proměně železné rudy na železo, které je pak ve fázi zkujňování přeměněno na ocel tím, že se odstraní nečistoty a sníží podíl uhlíku. 
+- Doplnit Obrázek / zápis reakce "oxid železa + C -> Fe + CO2" jako samostatný řádek??
 
-Železné rudy jsou oxidy železa a k výrobě oceli je nutná jejich redukce. Koks slouží ve vysoké peci jako redukční činidlo a rovněž jako palivo. Uhlík v koksu redukuje oxidy železa na čisté surové železo a jako vedlejším produktem redukčních a spalovacích reakcí vzniká CO<sub>2</sub>. Je možné nahradit uhlík vodíkem a provést přímou redukci železa. Tento proces ovšem nelze provést ve stávajích vysokých pecích jelikož vzniká železo s jinými vlastnostmi. Pro takto přímo redukované železo je nutné použít elektrické obloukové pece.
+Jednou z klíčových cest pro dekarbonizaci výroby surového železa je proto namísto uhlíku (koksu) použít vodík a při redukční reakci pak nevzniká CO<sub>2</sub>, ale voda. Technologicky však jde o jiný proces a vodík není možné používat v současných vysokých pecích. 
+
+### Dekarbonizace výroby oceli
+
+Různé scénáře dekarbonizace výroby oceli počítají mírným nárůstem výroby oceli a s domimnantní roli tří technologií: zeleného vodíku, CCS a recyklace. 
+Konkrétní mix technologií závisí na regionech, regionální dostupnosti a regionálních cenách technologií a 
+
+
+Příklady studií a scénářů dekarbonizace oceli:
+- McKinsey: [Transition to net zero: steel](https://www.mckinsey.com/capabilities/sustainability/our-insights/spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/steel)
+- Wordl economic forum: [Net zero industry tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+- Dále posoudit: [Carbon Performace assesment of Steel makers](https://www.transitionpathwayinitiative.org/publications/2021-carbon-performance-assessment-of-steel-note-on-methodology-2021.pdf?type=Publication)
+- [Making net zero steel possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf)
+
+
+Green premium cca 30% (McKinsey: )
+Green premium cca 25 - 50% (WEF: https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+Green premium  - cost of carbon for level competitive landscape 180 - 360 USD /tCO2 (WEF)
+
+Tři dominantní technologie:  Zelený vodík, CCS a recyklace
+
+Nahradit ocel jiným materiálem je často těžké a s ohledem na rozvoj urbanizace lze do roku 2050 očekávat nárůst poptávky po oceli o 10–30 %.[^ocelpoptavka] 
 
 Při popisu dekarbonizace oceli vycházíme ze scénáře Carbon Cost z Making Net Zero Steel Possible. Tento scénář vznikl v rámci spolupráce největších ocelářských firem. Pokud bychom nadále používaly aktuální technologie a nezaváděli dekarbonizační opatření, tak by roku 2050 emise z výroby oceli stouply na 4,3 GtCO<sub>2</sub> z dnešních 3,1 GtCO<sub>2</sub>. V případě úspěšné dekarbonizace je předvídán pokles na 0,3 GtCO<sub>2</sub>.[^missionpossible]
-
-### Zelený vodík, CCS a recyklace
 
 Nejdůležitějším řešením scénáře je **přímá redukce železa zeleným vodíkem**, které by následně bylo zpracováno v elektrických obloukových pecích. Tímto bychom nahradily emisně náročné vysoké pece a koks. Oproti potenciálním emisím roku 2050 může přímá redukce zeleným vodíkem redukovat emise o 28 %.[^missionpossible]
 
@@ -112,6 +130,17 @@ Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z 
 %}
 
 ## Poznámky a zdroje
+
+[^vyroba-oceli-data]: [World steel association: crude steel production](https://worldsteel.org/steel-topics/statistics/world-steel-in-figures-2022/)  
+
+[^emisniintenzitaoceli-zeme]: Studie [Steel climate impact](https://www.globalefficiencyintel.com/steel-climate-impact-international-benchmarking-energy-co2-intensities) uvádí emisní intenzity pro řadu zemí. Zatímco například v USA je průměrná emisní intenzita výroby oceli přibližně 1 tCO<sub>2</sub> na 1t oceli, v Německu je to  1,5 tCO<sub>2</sub> a v Číně okolo 2 tCO<sub>2</sub> na vyrobenou tunu oceli. Hlavní rozdíl mezi zeměmi spočívá v poměru mezi výrobou ve vysokých pecích (tedy výrobou surového železa) a výrobou v obloukových pecích (tedy recyklací oceli). 
+
+[^emisniintenzitaoceli-WEF]: [World Economic Forum: Net Zero Industry Tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+
+[^emisni-intenzita-srovnani]: Zatímco světové ekonomické fórum [WEF: Net Zero Industry Tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf) uvádí průměrnou světovou emisní intenzitu výroby oceli 1,9tCO<sub>2</sub>,  [Mezinárodní agentura pro energii (IEA)](https://www.iea.org/energy-system/industry/steel) uvádí průměrnou světovou emisní intenzitu výroby oceli 1,4 tCO<sub>2</sub> na 1t oceli. Rozdíl mezi těmito údaji o emisní intenzitě je pravděpodobně způsoben různým započítáním nepřímých emisí (scope 2), případně může souviset s odlišnými definicemi které procesy se do výroby oceli započítají. 
+
+[^zelezne-rudy]: [CS Wikipedia: železná ruda](https://cs.wikipedia.org/wiki/%C5%BDelezn%C3%A1_ruda)
+
 [^ocelrecyklace]: [Yale Environment 360, 2021: Can the World’s Most Polluting Heavy Industries Decarbonize?](https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize).
 [^ocelpoptavka]: [World Economic Forum, 2022: Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
 [^hlinikelektrina]: [International Aluminium, 2021: Aluminium Sector Greenhouse Gas Pathways to 2050](https://international-aluminium.org/resource/aluminium-sector-greenhouse-gas-pathways-to-2050-2021/).
