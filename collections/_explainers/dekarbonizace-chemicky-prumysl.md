@@ -37,11 +37,11 @@ Ropa, zemní plyn a uhlí se rozhodně nepoužívají jen v energetice a doprav�
 
 Výroba amoniaku představuje něco kolem 2 % světových emisí CO<sub>2</sub>.[^amoniakpetrosplit] 70 % veškerého amoniaku používáme při výrobě hnojiv, zbylých 30 % připadá na jiné průmyslové využití například při produkci výbušnin či v rámci chemického průmyslu.[^amoniak]
 
-Očekávaný růst poptávky po amoniaku je až o 150 % do roku 2050.[^poptavkamoniak] Růst poptávky je spojen jednak s růstem spotřeby hnojiv na produkci potravin v důsledku rostoucí populace a změny stravovacích návyků (například rostoucí spotřeba konzumace masa), ale zejména s využitím amoniaku v dopravě a při skladování vodíku.
+Očekávaný růst poptávky po amoniaku je až o 150 % do roku 2050.[^poptavkamoniak] Růst poptávky je spojen jednak s růstem spotřeby hnojiv na produkci potravin v důsledku rostoucí populace a změny stravovacích návyků (například rostoucí spotřeba masa), ale zejména s využitím amoniaku v dopravě a při skladování vodíku.
 
 Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^iea]
 
-Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO<sub>2</sub> na tunu amoniaku. Zbytek amoniaku primárně vyrábíme převážně z vodíku produkovaného z uhlí, který má emisní intenzitu 3,2 tun CO<sub>2</sub> na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictvím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku nízké.[^amoniakiea] 
+Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO<sub>2</sub> na tunu amoniaku. Zbytek amoniaku primárně vyrábíme převážně z vodíku produkovaného z uhlí, který má emisní intenzitu 3,2 tun CO<sub>2</sub> na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictvím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku nízké či zanedbatelné v závislosti na druhu vodíku.[^amoniakiea] 
 
 V současné době za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO<sub>2</sub>.[^amoniakintenzita]
 
@@ -61,7 +61,7 @@ Rafinace ropy vypouští 5 % globálních skleníkových plynů.[^emiseropa] Jed
 
 V EU je 65 % ropy spotřebováno v dopravě. 25 % je použito například na topné oleje, lubrikanty, asfalt apod. Zbylých 10 % je využito v rámci chemického průmyslu, například při výrobě petrochemikálií.[^ropapouziti] 
 
-Do budoucna bude klesat spotřeba ropy v dopravě, ovšem poptávka po ropě v chemickém průmyslu bude růst. Odhady poklesu spotřeby ropy do roku 2050 se pohybují v rozmezí 25-80 %. [^ropademand]
+Do budoucna bude klesat spotřeba ropy v dopravě, ovšem poptávka po ropě v petrochemickém průmyslu bude růst. Odhady poklesu spotřeby ropy do roku 2050 se pohybují v rozmezí 25-80 %. [^ropademand]
 
 Přibližně dvě třetiny emisí pochází ze spalování a zbylou třetinu mají na starost chemické procesy kdy se jedná převážně o proces krakování a výrobu vodíku.[^emiserafinace]
 
@@ -71,7 +71,7 @@ Ropa je jedním z mála základních průmyslových produktů, u kterého lze č
 
 ### Vedlejší metody
 
-Jelikož ropy budeme rafinovat i nadále, byť v menších objemech, je nutné dekarbonizovat zbylou výrobu.
+Jelikož ropu budeme využívat i nadále, byť v menším objemu, je nutné dekarbonizovat zbylou výrobu.
 
 * **Zachytávání CO<sub>2</sub>** - CCS bylo historicky rozvíjeno nejvíce právě ropným průmyslem. Výhodou využití CCS v rafinériích tak může být využití expertízy ropných firem v této oblasti. Zařízení na zachytávání CO<sub>2</sub> může odstranit 90-95 % emisí skleníkových plynů daného provozu.[^mit]
 
@@ -125,7 +125,7 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 [^tlak]: [Department of Energy, 2021: Novel Catalyst Means Ammonia Synthesis with Less Heat and Pressure](https://www.energy.gov/science/bes/articles/novel-catalyst-means-ammonia-synthesis-less-heat-and-pressure)
 [^dekarbonizacepetro]: [BloombergNEF, 2022: $759 Billion Required for a Net-Zero Petrochemicals Sector by 2050](https://about.bnef.com/blog/759-billion-required-for-a-net-zero-petrochemicals-sector-by-2050/)
 [^iea]: [International Energy Agency, 2018: The Future of Petrochemicals](https://iea.blob.core.windows.net/assets/bee4ef3a-8876-4566-98cf-7a130c013805/The_Future_of_Petrochemicals.pdf)
-[^hfc32]: [Government of the United Kingdom: Calculate the carbon dioxide equivalent quantity of an F gas](https://www.gov.uk/guidance/calculate-the-carbon-dioxide-equivalent-quantity-of-an-f-gas). U výpočtů [potenciálu globálního oteplování](https://en.wikipedia.org/wiki/Greenhouse_gas#Global_warming_potential) záleží i na zvoleném časovém horizontu.
+[^hfc32]: [Government of the United Kingdom: Calculate the carbon dioxide equivalent quantity of an F gas](https://www.gov.uk/guidance/calculate-the-carbon-dioxide-equivalent-quantity-of-an-f-gas). U výpočtů [potenciálu globálního oteplování](https://en.wikipedia.org/wiki/Greenhouse_gas#Global_warming_potential) záleží i na zvoleném časovém horizontu. Některé F-plyny jako například SF<sub>6</sub> mají velmi dlouhou životnost trvající tisíce let, zatímco například HFC-32 má životnost pět let. 
 [^dominantplyn]: [Climate Change Committee: F-gases](https://www.theccc.org.uk/wp-content/uploads/2020/12/Sector-summary-F-gases.pdf)
 [^amoniakpetrosplit]: [Royal Society, 2020: Ammonia: zero-carbon fertiliser, fuel and energy store](https://royalsociety.org/-/media/policy/projects/green-ammonia/green-ammonia-policy-briefing.pdf) a [Lund University, 2022: Petrochemicals and Climate Change](https://lucris.lub.lu.se/ws/portalfiles/portal/117494791/Petrochemicals_climate_change_review_web.pdf). Amoniak je často řazen do kategorie petrochemikálií, jelikož se vyrábí nejčastěji ze zemního plynu a uhlí. V tomto explaineru zkoumáme amoniak samostatně a výrobu amoniaku nepočítáme do emisí skleníkových plynů z výroby petrochemikálií.
 [^amoniakiea]: [International Energy Agency, 2021: Ammonia Technology Roadmap](https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/AmmoniaTechnologyRoadmap.pdf)
