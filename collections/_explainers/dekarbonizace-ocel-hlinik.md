@@ -14,11 +14,11 @@ authors:
 weight:      74
 tags-scopes: [  ]
 tags-topics: [  ]
-cover-source-author:        "652234"
-cover-source-text:          "Pixabay"
-cover-source-license:       "Pixabay License"
-cover-source-license-url:   "https://pixabay.com/service/license-summary/"
-cover-source-url:           "https://pixabay.com/photos/architecture-steel-mill-2544563/"
+cover-source-author:        "Ant Rozetsky"
+cover-source-text:          "Unsplash"
+cover-source-license:       "Unsplash License"
+cover-source-license-url:   "https://unsplash.com/license"
+cover-source-url:           "https://unsplash.com/photos/io7dX_1EFCg"
 perex:       "Ocel a hliník. Výroba a zpracování těchto kovů je emisně velmi náročná. Zároveň patří mezi nejdůležitější pro fungování moderní společnosti. Je tak nutné jejich výrobu dekarbonizovat. Víme, které technologie a strategie mohou hrát hlavní roli a je tak nutné je dále rozvíjet."
 ---
 
@@ -60,7 +60,7 @@ Konkrétní mix technologií závisí na regionech, regionální dostupnosti a r
 
 Příklady studií a scénářů dekarbonizace oceli:
 - McKinsey: [Transition to net zero: steel](https://www.mckinsey.com/capabilities/sustainability/our-insights/spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/steel)
-- Wordl economic forum: [Net zero industry tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+- World Economic Forum: [Net zero industry tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
 - Dále posoudit: [Carbon Performace assesment of Steel makers](https://www.transitionpathwayinitiative.org/publications/2021-carbon-performance-assessment-of-steel-note-on-methodology-2021.pdf?type=Publication)
 - [Making net zero steel possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf)
 
@@ -99,9 +99,9 @@ Důležitá je i **recyklace**. Ocel již dnes dovedeme vyrobit relativně nízk
     source-url="https://unsplash.com/photos/zHK__gTTTds"
 %}
 
-## Hliník
+## Výroba hliníku a emise skleníkových plynů
 
-Výroba hliníku tvoří 2 % světových emisí.[^dveprocenta] Hliník je velmi lehký kov s dobrými vodivými vlastnosti, který se hojně využívá v elektrotechnice a letectví.
+Výroba hliníku tvoří 2 % světových emisí skleníkových plynů.[^dveprocenta] Hliník je velmi lehký kov s dobrými vodivými vlastnosti, který se hojně využívá v elektrotechnice a letectví.
 
 **Více než 60 % emisí při výrobě hliníku je spojeno s využitím elektřiny s vysokou uhlíkovou stopou.**[^hlinikelektrina] Zde se ovšem jedná o nepřímé emise, jelikož elektřina je zpravidla vyrobena mimo daný provoz. Z této provázanosti s elektřinou také plyne, že konkrétní emisní intenzita hliníku se v různých zemích liší v závislosti na jejich energetickém mixu. V Evropě vypouštíme na tunu hliníku v průměru okolo 7 tun CO<sub>2</sub>eq, celosvětový průměr je kolem 16 tun CO<sub>2</sub>eq.[^hlinieuasvet] Pro představu, jak velký by byl rozdíl při využití výhradně bezemisní elektřiny: u tuny hliníku vyrobené pouze pomocí elektřiny dodávané vodní elektrárnou by vznikly cca 4 tuny CO<sub>2</sub>eq, v případě uhelné elektrárny to může být až 20 tun CO<sub>2</sub>eq.[^hliniklokace]
 
@@ -112,6 +112,12 @@ Tak jako v případě jiných důležitých materiálů ani u hliníku nemůžem
 ### Dekarbonizace výroby elektřiny
 
 Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z hlediska dekarbonizace tohoto sektoru klíčová především transformace elektroenergetiky, tedy dekarbonizace elektřiny. 
+
+Příklady studií a scénářů dekarbonizace oceli:
+
+- World Economic Forum: [Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
+- International Aluminium: [Aluminium Sector Greenhouse Gas Pathways to 2050](https://international-aluminium.org/resource/aluminium-sector-greenhouse-gas-pathways-to-2050-2021/).
+- Center for Strategic & International Studies: [Decarbonizing Aluminum: Rolling Out a More Sustainable Sector](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector).
 
 ### Vedlejší metody
 
