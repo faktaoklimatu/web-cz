@@ -111,6 +111,7 @@ subtopics:
   - souvislost-koncentrace-oteplovani
   - teplota-cr-mesice
   - trend-teplot-cr
+  - teplota-zeme
 
 - id:          "fyzika"
   title:       "Fyzikální základy a principy"
