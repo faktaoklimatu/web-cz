@@ -17,7 +17,7 @@ items:
     - name: Požáry na východě Kanady (2023)
       type: požáry
       icon: "fires.svg"
-      note: Extrémní počasí v Kanadě v průběhu května a června 2023 (kombinace vysokých teplot, sucha a nepřetržitého větru) vedlo k rozsáhlým požárům, při nichž shořelo více než 13 milionů hektarů. K následkům je nutné připočíst silné znečištění ovzduší, které ohrozilo zdraví, mobilitu a ekonomiku v celé Severní Americe.
+      note: Extrémní počasí v Kanadě v průběhu května a června 2023 (kombinace vysokých teplot, sucha a nepřetržitého větru) vedlo k rozsáhlým požárům, při nichž shořelo více než 15,3 milionů hektarů (k 22. 8. 2023). K následkům je nutné připočíst silné znečištění ovzduší, které ohrozilo zdraví, mobilitu a ekonomiku v celé Severní Americe.
       description: |
         __Klimatická změna způsobila, že sezóna požárů s takto závažnými následky je minimálně 7× pravděpodobnější.__
 
