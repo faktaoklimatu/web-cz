@@ -46,7 +46,7 @@ items:
       type: sucho
       icon: "droughts.svg"
       note: Od konce roku 2020 zažívají Keňa, Etiopie a Somálsko dlouhodobé sucho, které střídají občasné intenzivní přívalové deště způsobující povodně. Kombinace těchto jevů znamená ohrožení potravinové bezpečnosti pro 4 miliony lidí.
-      description: Zatímco v tzv. dlouhém období dešťů spadlo ve zkoumané periodě méně srážek, krátké období dešťů vykazuje opačný trend a má srážek více. Pokud je uvažujeme dohromady, celkové množství srážek zůstává stejné. <br><br>Extrémní sucho je tedy  <b>způsobené především vyššími teplotami, které vedou k vyššímu výparu z půdy.Klimatická změna stojí za tím, že podobná sucha jsou nyní v důsledku vyšších teplot 100x pravděpodobnější.</b>
+      description: Zatímco v tzv. dlouhém období dešťů spadlo ve zkoumané periodě méně srážek, krátké období dešťů vykazuje opačný trend a má srážek více. Pokud je uvažujeme dohromady, celkové množství srážek zůstává stejné. <br><br>Extrémní sucho je tedy  <b>způsobené především vyššími teplotami, které vedou k vyššímu výparu z půdy. Klimatická změna stojí za tím, že podobná sucha jsou nyní v důsledku vyšších teplot 100x pravděpodobnější.</b>
       url: "https://www.worldweatherattribution.org/human-induced-climate-change-increased-drought-severity-in-southern-horn-of-africa/"
 
     - name: Sucho na Madagaskaru (2019–2021)
@@ -89,7 +89,7 @@ items:
       type: tropická bouřka
       icon: "tropical-cyclones.svg"
       note: V září 2019 způsobila tropická bouře Imelda rozsáhlé záplavy v Texasu a škody na majetku v řádu miliard dolarů. Někde spadlo i více než 500 mm srážek za den.
-      description: <b>Klimatická změna jednoznačně vedla k nárůstu srážek během povodní.</b> Extrémní dvoudenní úhrn srážek z bouře Imelda je nyní 1,6× až 2,6× pravděpodobnější než bez změny. <br><br>S častějšími a silnějšími záplavami, zejména v pobřežních oblastech, souvisí také zvýšená hladina moří.
+      description: <b>Klimatická změna jednoznačně vedla k nárůstu srážek během povodní.</b> Extrémní dvoudenní úhrn srážek z bouře Imelda je nyní 1,6× až 2,6× pravděpodobnější než beze změny. <br><br>S častějšími a silnějšími záplavami, zejména v pobřežních oblastech, souvisí také zvýšená hladina moří.
       url: "https://www.worldweatherattribution.org/rapid-attribution-of-the-extreme-rainfall-in-texas-from-tropical-storm-imelda/"
 
     - name: Bouře v západní a střední Evropě (2018)
@@ -103,7 +103,7 @@ items:
       type: požáry
       icon: "fires.svg"
       note: Extrémní počasí v Kanadě v průběhu května a června 2023 (kombinace vysokých teplot, sucha a nepřetržitého větru) vedlo k rozsáhlým požárům, při nichž shořelo více než 13 milionů hektarů. K následkům je nutné připočíst silné znečištění ovzduší, které ohrozilo zdraví, mobilitu a ekonomiku v celé Severní Americe.
-      description: <b>Klimatická změna způsobila, že sezóna požárů s takto závažnými následky je minimálně 7x pravděpodobnější.</b> <br><br>Extrémnější projevy počasí umožňujícího vznik a šíření požárů (tzv. "fire weather") jsou <b>spojené především se zvýšením teploty a snížením vlhkosti.</b> V roce 2023 byl jeho účinek navíc umocněn neobvykle nízkými srážkámi.
+      description: <b>Klimatická změna způsobila, že sezóna požárů s takto závažnými následky je minimálně 7x pravděpodobnější.</b> <br><br>Extrémnější projevy počasí umožňujícího vznik a šíření požárů (tzv. "fire weather") jsou <b>spojené především se zvýšením teploty a snížením vlhkosti.</b> V roce 2023 byl jeho účinek navíc umocněn neobvykle nízkými srážkami.
       url: "https://www.worldweatherattribution.org/climate-change-more-than-doubled-the-likelihood-of-extreme-fire-weather-conditions-in-eastern-canada/"
 
 ---
