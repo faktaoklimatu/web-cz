@@ -35,19 +35,19 @@ Ropa, zemní plyn a uhlí se rozhodně nepoužívají jen v energetice a doprav�
 
 ## Amoniak
 
-Výroba amoniaku představuje něco kolem 2 % světových emisí CO<sub>2</sub>.[^amoniakpetrosplit] 70 % veškerého amoniaku používáme při výrobě hnojiv, zbylých 30 % připadá na jiné průmyslové využití například při produkci výbušnin či v rámci chemického průmyslu.[^amoniak]
+Výroba amoniaku představuje něco kolem 2 % světových emisí CO<sub>2</sub>.[^amoniakpetrosplit] 70 % veškerého amoniaku používáme při výrobě hnojiv, zbylých 30 % připadá na jiné průmyslové využití například při produkci výbušnin či v rámci chemického průmyslu.[^amoniak] Amoniak v hnojivech je naprosto klíčový a podle některých odhadů bychom dovedli bez amoniaku nasytit pouze polovinu lidstva.[^ammoniareport]
 
-Očekávaný růst poptávky po amoniaku je až o 150 % do roku 2050.[^poptavkamoniak] Růst poptávky je spojen jednak s růstem spotřeby hnojiv na produkci potravin v důsledku rostoucí populace a změny stravovacích návyků (například rostoucí spotřeba masa), ale zejména s využitím amoniaku v dopravě a při skladování vodíku.
+Očekávaný růst poptávky po amoniaku je až o 150 % do roku 2050.[^poptavkamoniak] Růst poptávky je spojen jednak s růstem spotřeby hnojiv na produkci potravin v důsledku rostoucí populace a změny stravovacích návyků (například rostoucí spotřeba masa), ale zejména s využitím amoniaku v lodní dopravě a při skladování vodíku.
 
-Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^iea]
+Dnes je většina amoniaku produkována tzv. Haber-Boschovým procesem, při kterém se atmosférický dusík přeměňuje na výslednou surovinu prostřednictvím reakcí s vodíkem. Kolem 60 % emisí pochází ze spalování a 40 % z chemických reakcí.[^iea] 
 
-Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO<sub>2</sub> na tunu amoniaku. Zbytek amoniaku primárně vyrábíme převážně z vodíku produkovaného z uhlí, který má emisní intenzitu 3,2 tun CO<sub>2</sub> na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictvím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku nízké či zanedbatelné v závislosti na druhu vodíku.[^amoniakiea] 
+Přes 70 % amoniaku dnes vyrábíme z takzvaného šedého vodíku ze zemního plynu. Takto vyrobený amoniak má emisní intenzitu okolo 1,8 tun CO<sub>2</sub> na tunu amoniaku. Zbytek amoniaku primárně vyrábíme převážně z vodíku produkovaného z uhlí, který má emisní intenzitu 3,2 tun CO<sub>2</sub> na tunu amoniaku. Pokud bychom tyto emise zachytávali prostřednictvím CCS či amoniak vyráběli ze zelého vodíku z obnovitelných zdrojů, byly by přímé emise výroby amoniaku nízké či zanedbatelné v závislosti na druhu vodíku.[^amoniakiea] 90 % dnešních emisí z výroby amoniaku je v důsledku výroby potřebného vodíku.[^ammoniareport] 
 
 V současné době za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO<sub>2</sub>.[^amoniakintenzita]
 
 ### Dekarbonizace výroby vodíku
 
-Hlavním cestou dekarbonizace je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. Vzhledem k již existujícímu napojení výroben amoniaku na infrastrukturu se zemním plynem se jako možnost také jeví využití modrého vodíku, tedy vodíku produkovaného ze zemního plynu kde se emise CO<sub>2</sub> zachytí a uloží. 
+Hlavním cestou dekarbonizace je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. Vzhledem k již existujícímu napojení výroben amoniaku na infrastrukturu se zemním plynem se jako možnost také jeví využití modrého vodíku, tedy vodíku produkovaného ze zemního plynu kde se emise CO<sub>2</sub> zachytí a uloží. Zachycení až dvou třetin emisí tímto způsobem se jeví jako relativně levné a jednoduché řešení, ovšem navýšení míry zachyceného CO2 se po této úrovni začíná výrazně prodražovat.[^ammoniareport]
 
 ### Vedlejší metody
 
@@ -138,3 +138,4 @@ Důležité i v případě těchto náhrad je, aby po skončení životnosti dan
 [^ropademand]: [BP, 2023: Energy Outlook 2023 Edition](https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/energy-economics/energy-outlook/bp-energy-outlook-2023.pdf)
 [^rafinerieefektivita]: [Sunny et al., 2022: A Pathway Towards Net-Zero Emissions in Oil Refineries](https://www.frontiersin.org/articles/10.3389/fceng.2022.804163/full)
 [^poptavkamoniak]: [Statista, 2022: Forecast demand for ammonia worldwide from 2021 to 2050, by application](https://www.statista.com/statistics/1345797/forecast-global-ammonia-demand-by-application/)
+[^ammoniareport]: [Innovation for Cool Earth Forum, 2022: Low-Carbon Ammonia Roadmap](https://www.icef.go.jp/pdf/summary/roadmap/icef2022_roadmap_Low-Carbon_Ammonia.pdf).
