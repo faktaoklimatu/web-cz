@@ -49,6 +49,11 @@ V současné době za každou tunu amoniaku vypustíme do atmosféry 2 tuny CO<s
 
 Hlavním cestou dekarbonizace je využití nízkoemisního vodíku, zejména zeleného vodíku vyráběného z elektřiny pocházející z obnovitelných zdrojů. Vzhledem k již existujícímu napojení výroben amoniaku na infrastrukturu se zemním plynem se jako možnost také jeví využití modrého vodíku, tedy vodíku produkovaného ze zemního plynu kde se emise CO<sub>2</sub> zachytí a uloží. Zachycení až dvou třetin emisí tímto způsobem se jeví jako relativně levné a jednoduché řešení, ovšem navýšení míry zachyceného CO2 se po této úrovni začíná výrazně prodražovat.[^ammoniareport]
 
+Příklady studií a scénářů dekarbonizace amoniaku:
+- Innovation for Cool Earth Forum: [Low-Carbon Ammonia Roadmap](https://www.icef.go.jp/pdf/summary/roadmap/icef2022_roadmap_Low-Carbon_Ammonia.pdf)
+- World Economic Forum: [Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+- International Energy Agency: [Ammonia Technology Roadmap](https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/AmmoniaTechnologyRoadmap.pdf)
+
 ### Vedlejší metody
 
 Je vysoce pravděpodobné, že amoniak budeme nadále vyrábět Haber-Boschovým procesem. Probíhají výzkumy například na přímou produkci amoniaku z vody a dusíku za použití elektřiny, ale jde primárně o výrobu ve velmi malém objemu v laboratorním prostředí. Realističtější cesta je spíše zefektivňování existujícího procesu.
@@ -67,7 +72,13 @@ Přibližně dvě třetiny emisí pochází ze spalování a zbylou třetinu maj
 
 ### Pokles spotřeby
 
-Ropa je jedním z mála základních průmyslových produktů, u kterého lze čekat větší pokles spotřeby. V závislosti na reálném poklesu spotřeby se tak může jednat o hlavní způsob snížení emisí skleníkových plynů.
+Ropa je jedním z mála základních průmyslových produktů, u kterého lze čekat větší pokles spotřeby. V závislosti na reálném poklesu spotřeby se tak může jednat o hlavní způsob snížení emisí skleníkových plynů v dlouhodobém horizontu. Spotřeba ropy ovšem bude klesat spíše postupně a proto do té doby musíme využít i jiná technologická řešení.
+
+Příklady studií a scénářů dekarbonizace rafinace ropy:
+- Sunny et al.: [A Pathway Towards Net-Zero Emissions in Oil Refineries](https://www.frontiersin.org/articles/10.3389/fceng.2022.804163/full)
+- World Economic Forum: [Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+- World Resources Insitute: [Technological Pathways for Decarbonizing Petroleum Refining](https://www.wri.org/research/technological-pathways-decarbonizing-petroleum-refining)
+
 
 ### Vedlejší metody
 
@@ -93,6 +104,11 @@ Podle BloombergNEF hlavní metodou dekarbonizace petrochemického průmyslu by m
 
 Dalším důležitým krokem je elektrifikace (především krakovacího procesu), která by měla pomoci 35 % snížením emisí.[^dekarbonizacepetro] V současné době jde spíše o prototypy jelikož elektrifikace je obtížná zejména při vyšších teplotách nutných pro výrobu. V případě úspěchu by elektrifikace procesu krakování mohla odstranit až 95 % emisí CO<sub>2</sub> výrobního provozu a potenciál úspor je tak velký.[^elektrifikacekrakovani]
 
+Příklady studií a scénářů dekarbonizace petrochemikálií:
+- BloombergNEF: [$759 Billion Required for a Net-Zero Petrochemicals Sector by 2050](https://about.bnef.com/blog/759-billion-required-for-a-net-zero-petrochemicals-sector-by-2050/)
+- International Energy Agency: [The Future of Petrochemicals](https://iea.blob.core.windows.net/assets/bee4ef3a-8876-4566-98cf-7a130c013805/The_Future_of_Petrochemicals.pdf)
+- Lund University: [Petrochemicals and Climate Change](https://lucris.lub.lu.se/ws/portalfiles/portal/117494791/Petrochemicals_climate_change_review_web.pdf)
+
 ### Vedlejší metody
 
 * **Recyklace** - Se snížením produkce plastů může pomoct recyklace již vyrobených plastů. Aktuálně pouze 6 % plastů, které dnes výrábíme, pochází z recyklovaného materiálu. V EU je toto číslo 10 %.[^recyklaceplasty] Většina plastů stále skončí na skládkách či skončí ve spalovnách. Do budoucna je nutné jednak zlepšit třídící linky na plasty, ale zároveň i navrhovat plastové produkty tak aby byly jednodušeji recyklovatelné. Bariérou je v současné době i fakt, že produkce nových plastů je levnější než recyklace.
@@ -108,6 +124,10 @@ Nejsilnější F-plyn je SF<sub>6</sub> (fluorid sírový), který je na jednu m
 Spotřeba F-plynů může do budoucna výrazně růst i v důsledků adaptace i mitigace změny klimatu. Používají se totiž v klimatizacích, tepelných čerpadlech, transformátorech, rozvaděčích, ale i v elektromobilech.
 
 ### Substituce
+
+Příklady studií a scénářů dekarbonizace F-plynů:
+- Climate Change Committee: [F-gases](https://www.theccc.org.uk/wp-content/uploads/2020/12/Sector-summary-F-gases.pdf)
+- Sovacool et al. [Climate change and industrial F-gases: A critical and systematic review of developments, sociotechnical systems and policy options for reducing synthetic greenhouse gas emissions](https://www.sciencedirect.com/science/article/abs/pii/S136403212100054X)
 
 Ve snaze minimalizovat škody existují plány na nahrazování nejsilnějších F-plynů těmi slabšími. Cílem je například nahradit SF<sub>6</sub>, který se v elektrotechnickém průmyslu používá jako izolant, slabšími F-plyny.
 
