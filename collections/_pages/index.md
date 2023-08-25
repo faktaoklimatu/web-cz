@@ -151,13 +151,13 @@ Naše infografiky a texty využívají  české i zahraniční instituce, zpravo
 <img loading="eager" src="/assets-local/o-nas/logo-cnb.png" alt="Česká národní banka">
 <img loading="eager" src="/assets-local/o-nas/logo-mzp.png" alt="Ministerstvo životního prostředí">
 <img loading="eager" src="/assets-local/o-nas/logo-pwc.png" alt="PwC">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-omg.png" alt="OMG Media Group">
+<img loading="eager" src="/assets-local/o-nas/logo-omg.png" alt="OMG Media Group">
 <img loading="eager" src="/assets-local/o-nas/logo-mckinsey.png" alt="McKinsey">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-deloitte.png" alt="Deloitte">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-ct.png" alt="Česká televize">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-seznam-zpravy.png" alt="Seznam Zprávy">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-irozhlas.png" alt="iRozhlas">
-<img loading="eager" class="small" src="/assets-local/o-nas/logo-respekt.png" alt="Respekt">
+<img loading="eager" src="/assets-local/o-nas/logo-deloitte.png" alt="Deloitte">
+<img loading="eager" src="/assets-local/o-nas/logo-ct.png" alt="Česká televize">
+<img loading="eager" src="/assets-local/o-nas/logo-seznam-zpravy.png" alt="Seznam Zprávy">
+<img loading="eager" src="/assets-local/o-nas/logo-irozhlas.png" alt="iRozhlas">
+<img loading="eager" src="/assets-local/o-nas/logo-respekt.png" alt="Respekt">
 </div>
 
 </div></div>
