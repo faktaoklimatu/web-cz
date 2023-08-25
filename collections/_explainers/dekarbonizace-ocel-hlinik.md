@@ -48,7 +48,10 @@ Celkově se na světě ročně vyrobí 1,9 Gt oceli[^vyroba-oceli-data]. Větši
 
 Celkově představuje výroba oceli 7 % světových emisí skleníkových plynů a 11% světoých emisí CO<sub>2</sub>. Zhruba polovina emisí z výroby oceli je způsobena přímo spalováním uhlí (koksu), druhá polovina pochází z chemické reakce[^emiseocel]. Konkrétně jde o to, že železné rudy jsou sloučeniny železa s kyslíkem (například Fe<sub>3</sub>O<sub>4</sub>, Fe<sub>2</sub>O<sub>3</sub>)[^zelezne-rudy] a při výrobě surového železa je nutné kyslík z rudy vyvázat (tzv. redukční reakce). K tomu se ve vysokých pecích používá koks, který slouží nejen jako palivo, ale i jako redukční činidlo a uhlík z koksu na sebe naváže kyslík z rudy. 
 
-- Doplnit Obrázek / zápis reakce "oxid železa + C -> Fe + CO2" jako samostatný řádek??
+{% include figure.html
+    name="vzorec.svg"
+    alt="FeCO3 + C ⟶ Fe + CO2"
+%}
 
 Jednou z klíčových cest pro dekarbonizaci výroby surového železa je proto namísto uhlíku (koksu) použít vodík a při redukční reakci pak nevzniká CO<sub>2</sub>, ale voda. Technologicky však jde o jiný proces a vodík není možné používat v současných vysokých pecích. 
 
