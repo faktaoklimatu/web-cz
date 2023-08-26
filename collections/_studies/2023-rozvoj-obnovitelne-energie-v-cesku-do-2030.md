@@ -98,7 +98,7 @@ Povolovací procesy pro stavbu větrných elektráren v ČR dnes mohou trvat i v
 ### 3. Distribuční síť, která jde s dobou
 
 Současná infrastruktura v ČR není na potřebný nárůst podílu obnovitelných zdrojů připravena. Žadatelé o připojení často narážejí na nedostatečnou kapacitu sítě.
-* Česko potřebuje dostupné informace o ak- tuálních možnostech sítě a také investice do jejího posilování.
+* Česko potřebuje dostupné informace o aktuálních možnostech sítě a také investice do jejího posilování.
 * Energetický trh se musí otevřít novým hráčům, kteří budou zajišťovat lokální spotřebu a poskytovat služby flexibility.
 </div></div>
 <div class="col-md-6 my-3 px-0"><div class="publication-card" markdown="1">
