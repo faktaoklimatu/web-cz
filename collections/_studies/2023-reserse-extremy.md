@@ -11,15 +11,6 @@ use-preview-image: true
 caption:       "Přehled extrémních událostí a jejich spojitost se změnou klimatu"
 intro: |
   K extrémním projevům počasí klimatická změna někdy přispívá, jindy tomu tak není. Vědci vzájemnou souvislost mezi těmito jevy dlouhodobě zkoumají a v tzv. atribučních studiích popisují, jak změna klimatu ovlivnila pravděpodobnost výskytu konkrétní extrémní události, případně jaký vliv měla na její intenzitu. Více o této metodě používané organizací World Weather Attribution lze najít na [našem webu](/explainery/vliv-klimatu-na-extremy-prirucka).
-
-  **Poznámky k údajům v tabulce:**
-
-  * Ve studiích lze často najít srovnání současného klimatu s dobou "před průmyslovou revolucí" či "předindustriální" – jde o období mezi lety 1850–1900, kdy byla průměrná teplota planety přibližně o 1,2 °C chladnější. Vizte naši [infografiku k teplotní anomálii](https://faktaoklimatu.cz/infografiky/teplotni-anomalie).
-
-  * Atribuce extrémních událostí pracují s časovými intervaly, které říkají, jak často srovnatelná událost v průměru může (nebo v minulosti mohla) nastat. Pokud vychází méně než jednou za 10 000 let, považuje se za téměř nemožnou. 
-  
-  * Mnohé ze zde uváděných studií zdůrazňují, že uvedená čísla jsou považována spíše za spodní hranici a změny v četnosti či intenzitě popisovaných jevů oproti předindustriálnímu období jsou pravděpodobně ještě větší. Jejich autoři totiž kombinují pozorování a simulace klimatických modelů, přičemž výsledky modelů vycházejí často s méně výrazným efektem změny klimatu než analýzy založené čistě na pozorování. Tato skutečnost se dá také interpretovat tak, že autoři studie jsou si jisti kvalitativním výsledkem (tedy, že událost skutečně souvisí s globálním oteplováním), ale přesné kvantitativní vyjádření je obtížné.
-
 items:
   events:
     - name: Požáry na východě Kanady (2023)
@@ -138,6 +129,14 @@ items:
       description: __V tomto případě změna klimatu nejspíše nehrála roli__ a obdobné bouře nejsou v jejím důsledku častější.
       url: "https://www.worldweatherattribution.org/the-stormy-month-of-january-2018-over-western-europe/"
 ---
+Poznámky k údajům v tabulce:
+
+* Ve studiích lze často najít srovnání současného klimatu s dobou "před průmyslovou revolucí" či "předindustriální". Jedná se o období mezi lety 1850–1900, kdy byla průměrná teplota planety přibližně o 1,2 °C nižší. Vizte naši [infografiku k teplotní anomálii](/infografiky/teplotni-anomalie).
+
+* Atribuce extrémních událostí pracují s časovými intervaly, které říkají, jak často může (nebo v minulosti mohla) srovnatelná událost v průměru teoreticky nastat. Pokud vychází frekvence menší než jednou za 10 000 let, považuje se událost za téměř nemožnou.
+
+* Mnohé ze zde uváděných studií zdůrazňují, že uvedená čísla jsou považována spíše za spodní hranici a změny v četnosti či intenzitě popisovaných jevů jsou oproti předindustriálnímu období pravděpodobně ještě větší. Jejich autoři totiž kombinují pozorování a simulace klimatických modelů, přičemž výsledky modelů vycházejí často s méně výrazným efektem změny klimatu než analýzy založené čistě na pozorování. Tato skutečnost se dá také interpretovat tak, že autoři studie jsou si jisti kvalitativním výsledkem (tedy, že událost skutečně souvisí s globálním oteplováním), ale přesné kvantitativní vyjádření je obtížné.
+
 ## Studie
 
 <table class="table table-striped table-hover mt-4 mb-4">
