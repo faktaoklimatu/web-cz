@@ -114,7 +114,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
 
 **Podíl obnovitelných zdrojů na konečné spotřebě energie si stanovuje Česko samo** v rámci NECP. Zároveň by však mělo přispívat ke společnému unijnímu cíli ve výši 42,5% podílu v roce 2030.[^red] Jak už bylo zmíněno výše, [NECP](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/) aktuálně prochází revizí, proto lze dosavadní cíl ve výši 22 % považovat za spíše zastaralý. Nový cíl nicméně zatím není znám.[^necp-revize]
 
-### Zvýšení energetické účinnosti
+### Zvýšení energetické účinnosti (= snížení spotřeby energie)
 
 {% include figure.html
     name="graf-energeticka-ucinnost.svg"
