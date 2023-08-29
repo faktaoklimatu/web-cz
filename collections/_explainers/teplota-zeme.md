@@ -37,24 +37,21 @@ Ukazuje se, že různé *reanalýzy*[^reanalysis_def] (tedy modely, které takto
 Teplota planety v průběhu roku kolísá. Minimum nastává v lednu a bývá okolo 12,3°C, maximum nastává koncem července a bývá okolo 16,5°C. Takto to alespoň bývalo dříve[^ref_max], ale klimatická změna teplotní průběhy postupně zvedá směrem k vyšším teplotám, což podrobněji diskutujeme níže. 
 
 {% include figure.html
-    name="2mtemp.jpg"
-    alt="2mtemp"
-    caption="2mtemp"
-    source-text="Climate Reanalyzer"
-    source-url="https://climatereanalyzer.org/clim/t2_daily/"
+    name="prumerna-teplota-planety-1.svg"
+    alt="Průměrná teplota planety v průběhu roku"
 %}
 
 Proč se teplota planety v průběhu roku takto mění? Hlavní důvod je rozložení kontinentů. Většina jich je na severní polokouli a protože se teplota nad kontinenty mění v průběhu roku více než nad oceány, převažuje vliv ročních období na severní polokouli.
 
 {% include figure.html
-    name="polokoule.png"
+    name="polokoule.svg"
     alt="Průměrná denní teplota v průběhu roku"
 %}
 
  Podívejme se podrobněji na průběhy teplot na severní a na jižní polokouli: **Průměrná teplota severní polokoule je nejnižší v lednu**, okolo 8,2°C,  a nejvyšší v červenci, okolo 21,5°C. **Na jižní polokouli nastáva zima v červenci** a průměrná teplota jižní polokoule je v té době okolo 11,2°C. Léto na jižní polokouli vrcholí v lednu, kdy je její průměrná teplota okolo 16,5°C. Rozdíl průměrných teplot  mezi létem a zimou je 13,3°C pro severní polokouli, zatímco pro jižní polokouli jen 5,3°C. Proto v celoplanetárním pohledu převažuje vliv severní polokoule a nevyšší teplota planety nastává když je na severní polokouli léto.  
 
 {% include figure.html
-    name="prumerna-denni-teplota2.png"
+    name="prumerna-teplota-planety-2.svg"
     alt="Průměrná denní teplota v průběhu roku 2"
 %}
 
