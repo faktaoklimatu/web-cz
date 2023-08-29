@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Jak dekarbonizovat výrobu oceli a hliníku?"
+title:       "Jak dekarbonizovat výrobu oceli?"
 slug:        "dekarbonizace-ocel-hlinik"
 published:   2023-08-14
 authors:
@@ -19,7 +19,7 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/io7dX_1EFCg"
-perex:       "PEREX se předělá: Ocel a hliník. Výroba a zpracování těchto kovů je emisně velmi náročná. Zároveň patří mezi nejdůležitější pro fungování moderní společnosti. Je tak nutné jejich výrobu dekarbonizovat. Víme, které technologie a strategie mohou hrát hlavní roli a je tak nutné je dále rozvíjet."
+perex:       "PEREX se předělá: Ocel. Výroba tohoto kovu je emisně velmi náročná. Zároveň patří mezi nejdůležitější pro fungování moderní společnosti. Je tak nutné její výrobu dekarbonizovat. Víme, které technologie a strategie mohou hrát hlavní roli a je tak nutné je dále rozvíjet."
 ---
 
 {% include preview-box.html
@@ -30,9 +30,9 @@ perex:       "PEREX se předělá: Ocel a hliník. Výroba a zpracování těcht
 
 ### Zbytek starého textu 
 
-Světová poptávka po oceli a hliníku bude v následujících letech růst a tyto kovy nelze plně nahradit. Možností jak dekarbonizovat ocel je vícero a i s dnešními technologiemi dovedeme významnou část emisí snížit. Pro plnou dekarbonizaci výroby oceli ovšem budeme potřebovat zelený vodík a zachytávat CO<sub>2</sub>. Dekarbonizace je tak závislá na rozvoji infrastruktury a budoucí ekonomické situaci. Výroba hliníku je silně závislá na dodání elektřiny a tak dekarbonizace tohoto sektoru je přímo spojena s dekarbonizací výroby elektřiny.
+Světová poptávka po oceli bude v následujících letech růst a tento kov nelze plně nahradit. Možností jak dekarbonizovat ocel je vícero a i s dnešními technologiemi dovedeme významnou část emisí snížit. Pro plnou dekarbonizaci výroby oceli ovšem budeme potřebovat zelený vodík a zachytávat CO<sub>2</sub>. Dekarbonizace je tak závislá na rozvoji infrastruktury a budoucí ekonomické situaci.
 
-*Následující text představuje možnosti dekarbonizace výroby oceli a hliníku a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
+*Následující text představuje možnosti dekarbonizace výroby oceli a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
 {: .longread-small}
 
 ## Výroba oceli a emise skleníkových plynů
@@ -125,42 +125,6 @@ Důležitá je i **recyklace**. Ocel již dnes dovedeme vyrobit relativně nízk
     source-url="https://unsplash.com/photos/zHK__gTTTds"
 %}
 
-## Výroba hliníku a emise skleníkových plynů
-
-Výroba hliníku tvoří 2 % světových emisí skleníkových plynů.[^dveprocenta] Hliník je velmi lehký kov s dobrými vodivými vlastnosti, který se hojně využívá v elektrotechnice a letectví.
-
-**Více než 60 % emisí při výrobě hliníku je spojeno s využitím elektřiny s vysokou uhlíkovou stopou.**[^hlinikelektrina] Zde se ovšem jedná o nepřímé emise, jelikož elektřina je zpravidla vyrobena mimo daný provoz. Z této provázanosti s elektřinou také plyne, že konkrétní emisní intenzita hliníku se v různých zemích liší v závislosti na jejich energetickém mixu. V Evropě vypouštíme na tunu hliníku v průměru okolo 7 tun CO<sub>2</sub>eq, celosvětový průměr je kolem 16 tun CO<sub>2</sub>eq.[^hlinieuasvet] Pro představu, jak velký by byl rozdíl při využití výhradně bezemisní elektřiny: u tuny hliníku vyrobené pouze pomocí elektřiny dodávané vodní elektrárnou by vznikly cca 4 tuny CO<sub>2</sub>eq, v případě uhelné elektrárny to může být až 20 tun CO<sub>2</sub>eq.[^hliniklokace]
-
-**Přímé emise výroby hliníku jsou spojeny se spalováním fosilních paliv pro dosažení potřebných teplot a s chemickými reakcemi** v rámci procesu elektrolýzy. Procesní emise z chemických reakcí představují 15 % emisí skleníkových plynů a 15 % platí i pro emise ze spalování.[^hlinikelektrina] Zbylé emise jsou spojeny například s dopravou.
-
-Tak jako v případě jiných důležitých materiálů ani u hliníku nemůžeme očekávat menší využití. Právě naopak, poptávka po něm se do roku 2050 může zvýšit o 50–80 %.[^hlinikrecyklace] Substituce se nejeví jako reálná také proto, že se v některých oblastech o hliníku uvažuje jako o možné náhradě za ocel, plasty apod.
-
-### Dekarbonizace výroby elektřiny
-
-Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z hlediska dekarbonizace tohoto sektoru klíčová především transformace elektroenergetiky, tedy dekarbonizace elektřiny. 
-
-Příklady studií a scénářů dekarbonizace oceli:
-
-- World Economic Forum: [Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
-- International Aluminium: [Aluminium Sector Greenhouse Gas Pathways to 2050](https://international-aluminium.org/resource/aluminium-sector-greenhouse-gas-pathways-to-2050-2021/).
-- Center for Strategic & International Studies: [Decarbonizing Aluminum: Rolling Out a More Sustainable Sector](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector).
-
-### Vedlejší metody
-
-* **Vodík** - Jelikož i při výrobě hliníku je nutné používat fosilní paliva jakými jsou například uhlí či zemní plyn, skýtá se možnost tyto emise ze spalování snížit tím, že bychom používali nízkoemisní zelený vodík.
-
-* **Zachytávání CO<sub>2</sub> (CCS)** - Na nahrazení procesních emisí vznikajících během procesu elektrolýzy je teoreticky možné využít zařízení na zachytávání CO<sub>2</sub>.[^ccshlinik]
-
-* **Recyklace** - Hliník představuje jednoduše recyklovatelný kov a jeho opětovné použití je až o 90 % méně emisně náročné a energeticky daleko úspornější než nová produkce.[^hlinikrecyklace] Je to technicky snadné a ekonomicky výhodné a v EU už v současnosti recyklujeme zhruba tři čtvrtiny hliníku.[^hlinikrecyklace] To ale znamená, že i když můžeme uvažovat o dalších opatřeních podporujících cirkularitu (např. systém vratných záloh na plechovky), z hlediska nutné dekarbonizace sektoru nebude jejich přínos velký protože už recyklace relativně dobře funguje.
-
-{% include figure.html
-    name="hlinik.jpg"
-    alt="Výroba hliníku"
-    caption="1 tuna hliníku = cca 16 tun CO<sub>2</sub>"
-    source-text="Unsplash"
-    source-url="https://pixabay.com/photos/factory-aluminum-production-russia-2639751/"
-%}
-
 ## Poznámky a zdroje
 
 [^vyroba-oceli-data]: [World steel association: crude steel production](https://worldsteel.org/steel-topics/statistics/world-steel-in-figures-2022/)  
@@ -175,15 +139,13 @@ Příklady studií a scénářů dekarbonizace oceli:
 
 [^ocelrecyklace]: [Yale Environment 360, 2021: Can the World’s Most Polluting Heavy Industries Decarbonize?](https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize).
 [^ocelpoptavka]: [World Economic Forum, 2022: Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
-[^hlinikelektrina]: [International Aluminium, 2021: Aluminium Sector Greenhouse Gas Pathways to 2050](https://international-aluminium.org/resource/aluminium-sector-greenhouse-gas-pathways-to-2050-2021/).
-[^hliniklokace]: [Climate Action, 2021: Carbon Footprint of Recycled Aluminium](https://www.climateaction.org/news/carbon-footprint-of-recycled-aluminium).
-[^hlinikrecyklace]: [Center for Strategic & International Studies, 2022: Decarbonizing Aluminum: Rolling Out a More Sustainable Sector](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector).
+
 [^vysokepece]: [McKinsey&Company, 2022: Steel Transition to Net-Zero](https://www.mckinsey.com/capabilities/sustainability/our-insights/spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/steel).
 [^emiseocel]: [Eurostat/EEA](https://docs.google.com/spreadsheets/d/1K5dbcngapuIdgrCRG0V8uV-c0ppirfYTwvvp8t54V3w/edit#gid=283480625).
 [^mckinsey]: [McKinsey&Company, 2020: Decarbonization challenge for steel](https://www.mckinsey.com/industries/metals-and-mining/our-insights/decarbonization-challenge-for-steel).
 [^h2greensteel]: [Mining Technology, 2023: Europe’s first commercial green steel plant to open in Sweden](https://www.mining-technology.com/news/green-steel-hydrogen/).
-[^dveprocenta]: [RICS, 2021: The 75 per cent problem: aluminium’s carbon footprint](https://ww3.rics.org/uk/en/modus/natural-environment/climate-change/the-75-per-cent-problem--aluminium-s-carbon-footprint-.html).
+
 [^ocelteplota]: [Carbon Chain, 2022: Understand your steel emissions](https://www.carbonchain.com/blog/understand-your-steel-emissions)
-[^ccshlinik]: [Light Metal Age, 2023: Decarbonizing the Primary Aluminum Industry](https://www.lightmetalage.com/news/industry-news/smelting/decarbonizing-the-primary-aluminum-industry/).
+
 [^missionpossible]: [Mission Possible Partnership, 2022: Making Net-Zero Steel Possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf).
 [^ocelccscena]: [MIT, 2021: How efficient is carbon capture and storage?](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage). Očekávaná cena zachytávání CO<sub>2</sub> se podle [IEA](https://www.iea.org/commentaries/is-carbon-capture-too-expensive) pohybuje kolem 35-95 eur (900-2250 českých korun) za tunu CO<sub>2</sub>. Cena oceli je závsislá na druhu požadovaného produktu a výrobní lokaci, v Západní evropě se průměrná cena podle [Steel Benchmarker](http://steelbenchmarker.com/history.pdf) pohybuje kolem 700-800 eur (16700-19100 českých korun).
