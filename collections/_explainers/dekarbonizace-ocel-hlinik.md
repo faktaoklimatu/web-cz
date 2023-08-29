@@ -28,12 +28,7 @@ perex:       "PEREX se předělá: Ocel. Výroba tohoto kovu je emisně velmi n�
     slug="technologie-dekarbonizace-prumyslu"
 %}
 
-### Zbytek starého textu 
-
-Světová poptávka po oceli bude v následujících letech růst a tento kov nelze plně nahradit. Možností jak dekarbonizovat ocel je vícero a i s dnešními technologiemi dovedeme významnou část emisí snížit. Pro plnou dekarbonizaci výroby oceli ovšem budeme potřebovat zelený vodík a zachytávat CO<sub>2</sub>. Dekarbonizace je tak závislá na rozvoji infrastruktury a budoucí ekonomické situaci.
-
-*Následující text představuje možnosti dekarbonizace výroby oceli a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
-{: .longread-small}
+Ocel je jedna z nejdůležitějších surovin, kterou lidstvo využívá ve stavebnictví, automobilovém průmyslu i mnoha dalších odvětvích. V technické praxi se rozlišují různé druhy ocelí a litin a také se někdy proces  výroby rozděluje na výrobu surového železa a jeho další zpracování. Pro základní představu o možnostech dekarbonizace ale nejsou tyto detaily příliš podstatné a proto do nich v tomto textu nezabíháme.
 
 ## Výroba oceli a emise skleníkových plynů
 
@@ -42,8 +37,6 @@ Světová poptávka po oceli bude v následujících letech růst a tento kov ne
     text="Povídání o výrobě a dekarbonizaci oceli v českých podmínkách nabízí epizoda podcastu 2050."
     slug="28-trinecke-zelezarny"
 %}
-
-Ocel je jedna z nejdůležitějších surovin, kterou lidstvo využívá ve stavebnictví, automobilovém průmyslu i mnoha dalších odvětvích. V technické praxi se rozlišují různé druhy ocelí a litin a také se někdy proces  výroby rozděluje na výrobu surového železa a jeho další zpracování. Pro základní představu o možnostech dekarbonizace ale nejsou tyto detaily příliš podstatné a proto do nich v tomto textu nezabíháme. 
 
 Celkově se na světě ročně vyrobí 1,9 Gt oceli[^vyroba-oceli-data]. Většina této výroby - okolo 75% - probíhá ve vysokých pecích pomocí spalování uhlí či koksu, zbývajících 25% připadá na elektrické obloukové pece případně tzv. přímou redukci železa. Tyto technologie se velmi liší svou emisní intenzitou[^emisniintenzitaoceli-WEF]. Zatímco na výrobu surového železa ve vysokých pecích připadá na každou vyrobenou tunu oceli cca 2,3 tCO<sub>2</sub>, při recyklaci železa v obloukových pecích vzniká pouze 0,6 tCO<sub>2</sub> na 1 tunu oceli. Světová průměrná emisní intenzita výroby je 1,9 tCO<sub>2</sub>[^emisni-intenzita-srovnani] na tunu oceli, v jednotlivých zemích se ale může velmi lišit podle poměru výrobních technologií[^emisniintenzitaoceli-zeme].       
 
@@ -61,7 +54,11 @@ Jednou z klíčových cest pro dekarbonizaci výroby surového železa je proto 
 
 ## Dekarbonizace výroby oceli - návrh
 
-Výroba oceli patří mezi sektory, které bude obtížné dekarbonizovat (tzv. hard-to-abate sectors), nicméně již existují demonstrační projekty, které ukazují, že lze vyrábět a prodávat nízkoemisní ocel (např. ... - asi footnote). Je tedy na místě zkoumat, jak lze tyto projekty škálovat, kolik to bude stát a jak se to projeví na celkových emisích sektoru výroby oceli. Na tyto a další otázky se snaží odpovědět tzv. sektorové dekabonizační scénáře, což jsou studie možného vývoje sektoru výroby oceli, který by vedl k nízkým nebo nulovým emisím skleníkových plynů. 
+Výroba oceli patří mezi sektory, které bude obtížné dekarbonizovat (tzv. hard-to-abate sectors), nicméně již existují demonstrační projekty, které ukazují, že lze vyrábět a prodávat nízkoemisní ocel 
+
+!!rozbalovátko:  příklady projektů na low carbon steel. 
+
+Je tedy na místě zkoumat, jak lze tyto projekty škálovat, kolik to bude stát a jak se to projeví na celkových emisích sektoru výroby oceli. Na tyto a další otázky se snaží odpovědět tzv. sektorové dekabonizační scénáře, což jsou studie možného vývoje sektoru výroby oceli, který by vedl k nízkým nebo nulovým emisím skleníkových plynů. 
 
 Dále vycházíme z dekarbonizačních scénářů těchto institucí (zřetelně popsat/pojemnovat): 
 - IPCC
@@ -72,36 +69,48 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí (zřeteln�
 - [Making net zero steel possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf)
 
 Všechny tyto scénáře se shodují v několika obecných rysech:
-- Výroba oceli v budoucnu mírně poroste a lze očekávat, že v roce 2050 bude o 10–30 % vyšší než dnes. Kdyby se přitom stále používaly současné technologie, emise z výroby oceli by vzdostly z dnešních cca 3 GtCO<sub>2</sub> na 4 - 5 GtCO<sub>2</sub>. 
-- Scénáře zpravidla nepočítají s úplnou dekarbonizací sektoru. Např. XXX směřuje k emisím okolo 0,3 GtCO<sub>2</sub> v roce 2050. 
-- Dominantní roli v dekarbonizaci hrají tři technologie: využití zeleného vodíku, CCS a recyklace, přičemž každá z těchto technologii by se mohla na snížení emisí podílet 20-30%. Ne všechny regiony však mohou využít všechny tři technologie...
-- Dekarbonizovaná ocel bude dražší, green premium se očekává 25-50% ceny. Na cenách koncových výrobků (dům, automobil) se ale toto zvýšení ceny oceli projeví jen málo. Auto či dům vyrobené z dekarbonizované oceli budou stát cca o 1% více než ty vyrobené současnými technologiemi (příp. vysvětlení, že je toho potřeba málo)
-- Zpoplatňování emisí skleníkových plynů (např. EU ETS povolenky) budou srovnávat competitive landscape a lze čekat, že při cenách mezi 180 - 360 USD /tCO2 by byla bezemisní ocel stejně drahá nebo levnější než ocel vyráběná současnými metodami. (WEF)
+- Výroba oceli v budoucnu mírně poroste a lze očekávat, že v roce 2050 bude o 10–30 % vyšší než dnes. Kdyby se přitom stále používaly současné technologie, emise z výroby oceli by vzrostly z dnešních cca 3 GtCO<sub>2</sub> na 4 - 5 GtCO<sub>2</sub>. 
+- Scénáře zpravidla nepočítají s úplnou dekarbonizací sektoru. Např. XXX směřuje k emisím okolo 0,3 GtCO<sub>2</sub> v roce 2050, což je nicméně zlomek současných emisí sektoru. 
+- Dominantní roli v dekarbonizaci hrají tři technologie: využití zeleného vodíku, CCS a recyklace, přičemž každá z těchto technologii by se mohla na snížení emisí podílet 20-30%. Ne všechny regiony však mohou využít všechny tři technologie...?? podrobněji tyto technologie a možnosti jejich nasazení diskutujeme níže. 
+- Dekarbonizovaná ocel bude dražší, green premium se očekává 25-50% ceny. Na cenách koncových výrobků se ale toto zvýšení ceny oceli projeví jen málo. Auto či dům vyrobené z dekarbonizované oceli budou stát cca o 1% více než ty vyrobené současnými technologiemi (příp. vysvětlení, že je toho potřeba málo)
+- Zpoplatňování emisí skleníkových plynů (např. systém EU ETS) bude konkurenceschopnost nízkoemisní oceli zvyšovat. Lze čekat, že při cenách mezi 180 - 360 USD /tCO2 by byla nízkoemisní ocel stejně drahá nebo levnější než ocel vyráběná současnými metodami. (WEF). Podobně v důsledku Inlfation Reduction Act (IRA), který pro podniky vyrábějící zelený vodík a CCS dává významné slevy na daních, se ceny nízkoemisní oceli přiblíží nebo zcela srovnají s cenami oceli vyráběné současnými postupy.   
 
-### přímá redukce železa zeleným vodíkem
+### Technologie pro dekarbonizaci výroby oceli
+? poznámky o technoogiíích a jejich omezení
+
+* **přímá redukce železa zeleným vodíkem**
 může nahradit výrobu surového železa ve vysokých pecích. Z pohledu technologie je dále potřeba...
-Musí se řešit dostupnost a cena zeleného vodíku  
+Musí se řešit dostupnost a cena zeleného vodíku  ... zásadní je cena vodíku - tzn tato technologie bude dobře prosperovat tam, kde půjde vyrábět levný zelený vodík. 
 
-### zachytávání CO<sub>2</sub> (CCS)
+* **zachytávání CO<sub>2</sub> (CCS)**
 Na vysoké pece je možné ninstalovat zařízení na zachytávání CO<sub>2</sub> (možná poznámka o geologickém uložení??). Tato zařízení dokáží zachytit 90-95 % emisí CO<sub>2</sub> dané ocelárny. Jde však o finančně a energeticky náročnou technologii, která je zatím ve fázi drobných pilotních projektů.[^ocelccscena] 
 I proto se čeká, že CCS bude pouze jedno z mnoha řešení, které ovšem může představovat něco kolem 21 % snížení emisí.[^missionpossible]
 
-### recyklace a čistá elektřina
+* **recyklace a čistá elektřina**
 Současná recyklace oceli v elektrických obloukových pecích produkuje ve srovnání s výrobou ve vysokých pecích jen zlomek emisí (při běžném mixu 0,6 oproti 2,3). Napajení obloukových pecí z bezemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro) tak může vytvářet prakticky bezemisní ocel. Příklad... 
 Diskuse možností a limitů recyklace 
 
-### Doplňkové způsoby 
+* **Doplňkové technologie** ...přepsat... Přímá redukce železa pomocí zemního plynu** - Vodík a oxid uhelnatý je možné získat ze zemního plynu. Oproti využití uhlí se jedná o méně emisně náročný proces, ovšem stále se jedná o fosilní zdroj, který má emisní náročnost. Může se tak jednat o něco méně než 12 % snížení.[^missionpossible]
+**Využívání biomasy** - Biomasu je možné částečně používat jako palivo či redukční činidlo. Vzhledem k nutnosti velkých dodávek biomasy se ovšem jedná o řešení, které bude spíše uplatnitelné v regionech s vysokou dostupností biomasy jako například v Brazílii či Rusku.[^mckinsey] Může tímto způsobem proběhnout snížení o 7 %. [^missionpossible] Další drobné snížení emisí lze dosáhnout například zvyšováním efektivity existujích pecí či využíváním železných rud s vyšším procentem železa. 
 
-Bude potřeba jasněji vysvětlit a odkazovat konkrétní čísla ze scénářů... 
+### Co jsou hlavní opatření pro transformaci sektoru výroby oceli? 
+(Q: Jak se to celé stane? )
 
-* **Přímá redukce železa pomocí zemního plynu** - Vodík a oxid uhelnatý je možné získat ze zemního plynu. Oproti využití uhlí se jedná o méně emisně náročný proces, ovšem stále se jedná o fosilní zdroj, který má emisní náročnost. Může se tak jednat o něco méně než 12 % snížení.[^missionpossible]
+?? Co se stane s konkrétní ocelárnou záleží na řadě faktorů - míra státní podpory, blízkost geologického úložiště...  konkrétní ocelárna může zaniknout, protože se výroba přesune někam, kde bude levný vodík či CCS
+(ocelárny byly tradičně někde, kde to bylo blízko uhlí??)... není jasné jakou technologí použije
 
-* **Využívání biomasy** - Biomasu je možné částečně používat jako palivo či redukční činidlo. Vzhledem k nutnosti velkých dodávek biomasy se ovšem jedná o řešení, které bude spíše uplatnitelné v regionech s vysokou dostupností biomasy jako například v Brazílii či Rusku.[^mckinsey] Může tímto způsobem proběhnout snížení o 7 %. [^missionpossible]
+?? Výroba oceli se pokládá za strategické průmyslové odvětví, je tedy pravděpodobné že státy budou výrobu nebo její dekarbonizaci subvencovat... a tedy transformace nebude řízena čistě trhem
 
-* **Jiná řešení** - Drobné snížení emisí lze dosáhnout i pestrou sadou řešení, jakými je například zvyšování efektivity existujích pecí či využíváním železných rud s vyšším procentem železa. Může se jednat o způsob jak snížit emise o 9 %. [^missionpossible]
+?? Hlavní opatření, které budou transformaci drajvovat budou ceny povolenek/uhlíkové daně, investiční podpora (v EU je to Modfond a Inovační fond?) a/nebo daňové úlevy na aplikaci potřebných technologií.
+
+... bude to záležet na tom jak rychle se bude škálovat výroba vodíku a CCS. 
 
 ## Zbytky starého textu a poznámky
+Světová poptávka po oceli bude v následujících letech růst a tento kov nelze plně nahradit. Možností jak dekarbonizovat ocel je vícero a i s dnešními technologiemi dovedeme významnou část emisí snížit. Pro plnou dekarbonizaci výroby oceli ovšem budeme potřebovat zelený vodík a zachytávat CO<sub>2</sub>. Dekarbonizace je tak závislá na rozvoji infrastruktury a budoucí ekonomické situaci.
 
+*Následující text představuje možnosti dekarbonizace výroby oceli a opírá se o studie průmyslových asociací či konzultačních firem. Nepopisuje jedinou možnou cestu, neboť přesné poměry použitých technologií budou záviset na budoucím vědeckém vývoji, ekonomické situaci i regionálních rozdílech. Spíše ukazuje, u kterých technologií je už dnes zjevné, že budou hrát při dekarbonizaci hlavní úlohu, a které naopak budou spíše vedlejší.*
+
+Bude potřeba jasněji vysvětlit a odkazovat konkrétní čísla ze scénářů... 
 Green premium cca 30% (McKinsey: )
 Green premium cca 25 - 50% (WEF: https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
 
