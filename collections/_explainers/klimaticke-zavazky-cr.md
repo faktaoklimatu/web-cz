@@ -9,7 +9,7 @@ authors:
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "vizualizace"
-  - name: "Eliška Soperová, Kristýna Šimonová"
+  - ids: ["eliska-soperova", "kristyna-simonova"]
     minor-role: "rešerše"
 weight:      80
 tags-scopes: [ cr ]
