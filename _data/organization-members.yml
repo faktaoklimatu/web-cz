@@ -129,19 +129,6 @@
   - name: "Jan Krajhanzl"
     summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
 
-  - id: "oldrich-sklenar"
-    name: "Oldřich Sklenář"
-    summary: "V projektu konzultuje ohledně energetiky. Na řadě infografik přímo spolupracoval."
-
-  - id: "jakub-zamouril"
-    name: "Jakub Zamouřil"
-    summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
-    linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
-
-  - name: "Eliška Vlčková"
-    summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
-    linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
-
   - id: "marek-krcal"
     name: "Marek Krčál"
     summary: "Přispívá k tématu energetiky, zejména k otázkám její dlouhodobé transformace."
@@ -150,12 +137,33 @@
     summary: "Přemýšlí, jak může mít práce Fakt o klimatu co největší dopad a jak co nejvíce zhodnotit existující infografiky a materiály."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
 
-  - name: "Martin crysman Zahradník"
-    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
-
   - name: "Jan Růžička"
     summary: "Muzikant a sounddesigner, který dává podcastu [2050](https://2050podcast.cz/) jeho charakteristický zvuk."
 
-  - name: "Andy Snováková"
+  - id: "oldrich-sklenar"
+    name: "Oldřich Sklenář"
+    summary: "V projektu konzultuje ohledně energetiky. Na řadě infografik přímo spolupracoval."
+
+  - id: "andy-snovakova"
+    name: "Andy Snováková"
     summary: "Přispívá k tématu uhlíku v půdě a jeho vztahu ke klimatické změně a pomáhá s vizualizací dat."
 
+  - id: "eliska-soperova"
+    name: "Eliška Soperová"
+    summary: "Přispívá především k otázkám spojeným s klimatickou legislativou EU a jednotlivých členských států."
+  
+  - id: "kristyna-simonova"
+    name: "Kristýna Šimonová"
+    summary: "Spolupracuje na materiálech týkajících se globálních úmluv v oblasti biodiverzity a zabývá se klimatickými ambicemi států jihovýchodní Asie."
+
+  - name: "Eliška Vlčková"
+    summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
+    linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
+
+  - id: "jakub-zamouril"
+    name: "Jakub Zamouřil"
+    summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
+    linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
+
+  - name: "Martin crysman Zahradník"
+    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
