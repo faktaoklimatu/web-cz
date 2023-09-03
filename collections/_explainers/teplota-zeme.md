@@ -37,22 +37,28 @@ Ukazuje se, že různé *reanalýzy*[^reanalysis_def] (tedy modely, které takto
 Teplota planety v průběhu roku kolísá. Minimum nastává v lednu a bývá okolo 12,3°C, maximum nastává koncem července a bývá okolo 16,5°C. Takto to alespoň bývalo dříve[^ref_max], ale klimatická změna teplotní průběhy postupně zvedá směrem k vyšším teplotám, což podrobněji diskutujeme níže. 
 
 {% include figure.html
-    name="prumerna-teplota-planety-1.svg"
+    name="prumerna-teplota-planety-des.svg"
+    name-mobile="prumerna-teplota-planety-mob.svg"
     alt="Průměrná teplota planety v průběhu roku"
+    source-text="Fakta o klimatu, data ???"
 %}
 
 Proč se teplota planety v průběhu roku takto mění? Hlavní důvod je rozložení kontinentů. Většina jich je na severní polokouli a protože se teplota nad kontinenty mění v průběhu roku více než nad oceány, převažuje vliv ročních období na severní polokouli.
 
 {% include figure.html
-    name="polokoule.svg"
-    alt="Průměrná denní teplota v průběhu roku"
+    name="polokoule-pevnina-des.svg"
+    name-mobile="polokoule-pevnina-mob.svg"
+    alt="Obrázek znázorňující podíl pevniny a oceánů na polokoulích. Severní polokoule má 40 % pevniny, zatímco jižní pouze 20 %."
+    source-text="Fakta o klimatu, data ???"
 %}
 
  Podívejme se podrobněji na průběhy teplot na severní a na jižní polokouli: **Průměrná teplota severní polokoule je nejnižší v lednu**, okolo 8,2°C,  a nejvyšší v červenci, okolo 21,5°C. **Na jižní polokouli nastáva zima v červenci** a průměrná teplota jižní polokoule je v té době okolo 11,2°C. Léto na jižní polokouli vrcholí v lednu, kdy je její průměrná teplota okolo 16,5°C. Rozdíl průměrných teplot  mezi létem a zimou je 13,3°C pro severní polokouli, zatímco pro jižní polokouli jen 5,3°C. Proto v celoplanetárním pohledu převažuje vliv severní polokoule a nevyšší teplota planety nastává když je na severní polokouli léto.  
 
 {% include figure.html
-    name="prumerna-teplota-planety-2.svg"
-    alt="Průměrná denní teplota v průběhu roku 2"
+    name="prumerna-teplota-polokoule-des.svg"
+    name-mobile="prumerna-teplota-polokoule-mob.svg"
+    alt="Čárový graf zobrazující průměrnou teplotu planety a severní a jižní polokoule."
+    source-text="Fakta o klimatu, data Climate Reanalyzer"
 %}
 
 ## Jak se mění teplota planety v souvislosti se změnou klimatu?
@@ -73,7 +79,12 @@ Pohledem na obrázek můžeme také snadno pochopit, proč se místo teploty pla
 
 Kromě dlouhodobého trendu oteplování můžeme sledovat i krátkodobé výkyvy v teplotě planety. K tomu je potřeba se podívat na teplotu planety v denním rozlišení a aktuální data můžete vidět například na stránce [Climate Reanalyzer](https://climatereanalyzer.org/clim/t2_daily/)).
 
-- vložit obrázek nebo interaktivní data? https://climatereanalyzer.org/clim/t2_daily/
+{% include figure.html
+    name="prumerna-denni-teplota-des.svg"
+    name-mobile="prumerna-denni-teplota-mob.svg"
+    alt="Čárový graf zobrazující průměrnou teplotu planety a denní teplotu planety v letech 2022 a 2023."
+    source-text="Fakta o klimatu, data Climate Reanalyzer"
+%}
 
 Tyto výkyvy souvisí s aktuálním regionálním počasím - tedy s tím jak jsou zrovna rozloženy teplých a studených vzduchové hmoty a jaký je stav teplých a studených mořských proudů. Dalším důležitým faktorem je  fáze El Nino (přesněji řečeno fáze tzv. [Jižní oscilace](https://cs.wikipedia.org/wiki/El_Ni%C3%B1o).
 
