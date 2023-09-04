@@ -130,6 +130,7 @@ subtopics:
   - uhlikova-neutralita
   - emisni-zavazky
   - 2021-reserse-zavazky-statu
+  - 2023-reserse-klimaticke-zakony
 
 - id:          "cop"
   title:       "Klimatické konference COP"

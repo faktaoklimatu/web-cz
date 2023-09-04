@@ -164,6 +164,40 @@ $c-callout-text: #373633;
     }
 }
 
+.climate-laws-survey-countries {
+    display: flex;
+    flex-direction: column;
+
+    .country-flag { margin-right: 0.5rem; }
+
+    .checklist {
+        padding-left: 0;
+        column-count: 2;
+        column-gap: 1em;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    .checklist .fas { margin-right: 0.5em; }
+    .yes .fas { color: #5db16f; }
+    .no { color: #bdc3c8; }
+
+    .footer {
+        font-size: 0.9em;
+
+        p { padding-left: 1.6em; }
+        p:not(:last-child) { margin-bottom: 0.5em; }
+
+        .fas {
+            width: 1.6em;
+            margin-left: -1.6em;
+            color: #a4a7aa;
+        }
+
+        .fa-lightbulb { padding-left: 0.2em; }
+    }
+}
+
 @media (min-width: 576px) {
     .klimazavazky-grafy {
         grid-template-columns: 1fr 1fr;
@@ -209,6 +243,15 @@ $c-callout-text: #373633;
         width: 100%;
         height: 800px;
     }
+
+    .climate-laws-survey-countries {
+        .summary {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+
+        .popover-text { text-decoration: none; }
+    }
 }
 
 @media (min-width: 992px) {
@@ -219,6 +262,13 @@ $c-callout-text: #373633;
         }
 
         .mix-figures dl { column-count: 1; }
+    }
+
+    .climate-laws-survey-countries {
+        /* 10 of 12 columns. */
+        width: 83.33%;
+
+        .summary { grid-template-columns: 50% auto; }
     }
 }
 

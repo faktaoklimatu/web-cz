@@ -2,315 +2,314 @@
 layout:      survey
 title:       "Klimatické zákony států EU"
 slug:        2023-reserse-klimaticke-zakony
-redirect_from: "/2023-reserse-klimaticke-zakony"
-weight:      302
-published:   2023-09-04
+weight:      303
+published:   2023-09-12
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
-caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích oxidu uhličitého a jejich oficiální závazky k omezení emisí."
+caption:     "TODO: Caption"
 intro: |
-  Evropská unie a dalších 194 signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Většina zemí nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovala i dlouhodobější závazky – nejčastěji tzv. <a href="/explainery/uhlikova-neutralita">net-zero emise</a> v roce 2050. Mezi státy, které termín klimatické neutrality (net-zero emise) zatím neohlásily, patří Írán a Mexiko.
+  TODO: Perex
 items:
-  - country:  "Čína"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People's_Republic_of_China.svg"
-    share:    "29,95 %"
-    netzero:  "2060"
-    pledge30: "−65 % emisí na jednotku HDP oproti r. 2005"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/China%E2%80%99s%20Achievements%2C%20New%20Goals%20and%20New%20Measures%20for%20Nationally%20Determined%20Contributions.pdf"
-    ndc-date: 2021-10-28
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/china"
-        date:   2023-06-06
-  - country:  "USA"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-    share:    "13,69 %"
-    netzero:  "2050"
-    pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/United%20States%20NDC%20April%2021%202021%20Final.pdf"
-    ndc-date: 2021-04-22
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/usa"
-        date:   2022-08-16
-  - country:  "EU 27"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
-    share:    "8,15 %"
-    netzero:  "2050"
-    pledge30: "−55 % ročních emisí oproti r. 1990 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/EU_NDC_Submission_December%202020.pdf"
-    ndc-date: 2020-12-18
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/eu"
-        date:   2023-06-08
-  - country:  "Indie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
-    share:    "6,67 %"
-    netzero:  "2070"
-    pledge30: "−45 % emisí na jednotku HDP oproti r. 2005"
-    other:    "50 % elektřiny z nefosilních zdrojů do roku 2030"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-08/India%20Updated%20First%20Nationally%20Determined%20Contrib.pdf"
-    ndc-date: 2022-08-26
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/india"
-        date:   2022-11-15
-  - country:  "Rusko"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
-    share:    "4,75 %"
-    netzero:  "2060"
-    pledge30: "−30 % ročních emisí oproti r. 1990 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/NDC_RF_ru.pdf"
-    ndc-date: 2020-11-25
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/russian-federation"
-        date:   2022-11-09
-  - country:  "Japonsko"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"
-    share:    "3,12 %"
-    netzero:  "2050"
-    pledge30: "−46 % ročních emisí oproti r. 2013 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/JAPAN_FIRST%20NDC%20%28UPDATED%20SUBMISSION%29.pdf"
-    ndc-date: 2021-10-22
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/japan"
-        date:   2023-05-17
-  - country:  "Jižní Korea"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
-    share:    "1,81 %"
-    netzero:  "2050"
-    pledge30: "−40 % ročních emisí oproti r. 2018"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/211223_The%20Republic%20of%20Korea%27s%20Enhanced%20Update%20of%20its%20First%20Nationally%20Determined%20Contribution_211227_editorial%20change.pdf"
-    ndc-date: 2021-12-23
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/south-korea"
-        date:   2022-03-08
-  - country:  "Írán"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
-    share:    "1,76 %"
-    pledge30: "Neratifikováno; −4 % ročních emisí oproti statu quo"
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/iran/"
-        date:   2021-09-15
-      - title:  INDC
-        url:    "https://www4.unfccc.int/sites/submissions/INDC/Published Documents/Iran/1/INDC Iran Final Text.pdf"
-        date:   2015-11-19
-      - title:  GEA
-        url:    "https://www.umweltbundesamt.de/sites/default/files/medien/1410/publikationen/2018-11-30_climate-change_29-2018_country-report-iran.pdf"
-        date:   2018-11-30
-  - country:  "Indonésie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
-    share:    "1,61 %"
-    netzero:  "2060"
-    pledge30: "−31,89 % ročních emisí oproti statu quo, konec nelegální těžby dřeva"
-    conditional: |
-      Podmíněný závazek udává, o kolik by země byla schopná emise skleníkových plynů snížit, kdyby byly splněny další podmínky. Například Indonésie jako podmínky uvádí výši mezinárodní finanční podpory, transfer technologií a budování kapacit.
-    other: −43,20 % ročních emisí oproti statu quo
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-09/ENDC%20Indonesia.pdf"
-    ndc-date: 2022-09-23
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/indonesia"
-        date:   2022-10-26
-  - country:  "Saúdská Arábie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
-    share:    "1,57 %"
-    netzero:  "2060"
-    pledge30: "−278 Mt CO<sub>2</sub>eq oproti statu quo; odpovídá −19% až +24% změně emisí oproti r. 2019"
-    ndc:      "https://unfccc.int/sites/default/files/resource/202203111154---KSA%20NDC%202021.pdf"
-    ndc-date: 2021-10-23
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/saudi-arabia"
-        date:   2021-11-04
-  - country:  "Kanada"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
-    share:    "1,67 %"
-    netzero:  "2050"
-    pledge30: "−40 % až −45 % ročních emisí oproti r. 2005"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/Canada%27s%20Enhanced%20NDC%20Submission1_FINAL%20EN.pdf"
-    ndc-date: 2021-07-12
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/canada"
-        date:   2022-12-20
-      - title:  Prohlášení
-        url:    "https://www.canada.ca/en/services/environment/weather/climatechange/climate-plan/net-zero-emissions-2050/canadian-net-zero-emissions-accountability-act.html"
-        date:   2022-03-29
-  - country:  "Mexiko"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
-    share:    "1,33 %"
-    pledge30: "−35 % ročních emisí oproti statu quo"
-    conditional: |
-      Podmíněný závazek udává, o kolik by země byla schopná snížit emise, kdyby byly splněny další podmínky. Mexiko jako podmínky udává výši mezinárodní finanční podpory, inovace a transfer technologií a vyšší úsilí největších emitentů dodržovat cíle Pařížské dohody.
-    other: −40 % ročních emisí oproti statu quo
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-11/Mexico_NDC_UNFCCC_update2022_FINAL.pdf"
-    ndc-date: 2022-11-17
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/mexico"
-        date:   2022-12-12
-  - country:  "Brazílie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
-    share:    "1,27 %"
-    netzero:  "2050"
-    pledge30: "−50 % ročních emisí oproti r. 2005 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/Updated%20-%20First%20NDC%20-%20%20FINAL%20-%20PDF.pdf"
-    ndc-date: 2022-04-07
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/brazil"
-        date:   2022-09-05
-      - title:  Reuters
-        url:    "https://www.reuters.com/business/environment/bolsonaro-says-brazil-will-reach-climate-neutrality-by-2050-2021-04-22/"
-        date:   2021-04-22
-  - country:  "Jihoafrická republika"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
-    share:    "1,22 %"
-    netzero:  "2050"
-    pledge30: "350 až 420 Mt CO<sub>2</sub>eq ročně v r. 2030; odpovídá přibližně −18% až −31% změně emisí oproti r. 2010"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/South%20Africa%20updated%20first%20NDC%20September%202021.pdf"
-    ndc-date: 2021-09-27
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/south-africa"
-        date:   2022-10-28
-  - country:  "Turecko"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
-    share:    "1,12 %"
-    netzero:  "2053"
-    pledge30: "−41 % ročních emisí oproti 2012"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2023-04/T%C3%9CRK%C4%B0YE_UPDATED%201st%20NDC_EN.pdf"
-    ndc-date: 2023-04-13
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/turkey/"
-        date:   2023-05-12
-  - country:  "Austrálie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
-    share:    "1,08 %"
-    netzero:  "2050"
-    pledge30: "−43 % ročních emisí oproti r. 2005"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-06/Australias%20NDC%20June%202022%20Update%20%283%29.pdf"
-    ndc-date: 2022-06-16
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/australia"
-        date:   2022-08-02
-  - country:  "Velká Británie"
-    flag:     "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_(3-5).svg"
-    share:    "1,0 %"
-    netzero:  "2050"
-    pledge30: "−68 % ročních emisí oproti r. 1990 (vrchol produkce)"
-    ndc:      "https://unfccc.int/sites/default/files/NDC/2022-09/UK%20NDC%20ICTU%202022.pdf"
-    ndc-date: 2022-09-22
-    links:
-      - title:  CAT
-        url:    "https://climateactiontracker.org/countries/uk"
-        date:   2022-10-17
-  - country:  "Ostatní země s emisními závazky"
-    share:    "8,76 %"
+  - code: BGR
+    name: Bulharsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg
+    law-name: Climate Change Mitigation Act
+    law-year: 2022
+    law-pages: 39 stran
+    url: https://cdn.climatepolicyradar.org/navigator/BGR/2017/climate-change-mitigation-act_63e36dbec6dbbd014e10b42676c3dc46.pdf
+    targets: Žádné
+    budgets: false
+    plans: false
+    reporting: false
+    advisory: false
+    public: false
+    sanctions: false
+    notes: Hlavně implementace EU legislativy a plnění poviností v rámci EU.
+  - code: DNK
+    name: Dánsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
+    law-name: Climate Act
+    law-year: 2021
+    law-pages: 4 strany
+    url: https://www.retsinformation.dk/eli/lta/2021/2580
+    targets: |
+      2025: <b>−50–54 %</b><br>
+      2030: <b>−70 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: true
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Ambice stát se globálním lídrem v boji proti změně klimatu.
+  - code: FIN
+    name: Finsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
+    law-name: Climate Act
+    law-year: 2022
+    law-pages: 13 stran
+    url: https://www.finlex.fi/en/laki/kaannokset/2015/en20150609_20220423.pdf
+    targets: |
+      2030: <b>−60 %</b><br>
+      <b>2035: klimatická neutralita</b><br>
+      2040: <b>−80 %</b><br>
+      2050: <b>−95 %</b>
+    budgets: false
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Cílem zákona je propojit mitigační politiku s adaptační, více zapojit do klimatické politiky celý parlament a veřejnost.
+  - code: FRA
+    name: Francie
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
+    law-name: Loi climat et résilience
+    law-year: 2021
+    law-pages: 34 stran
+    url: https://climate-laws.org/documents/law-no-2021-1104-on-the-fight-against-climate-change-and-the-reinforcement-of-resilience-in-the-face-of-its-effects_5af0
+    targets: |
+      2030: <b>−40 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: true
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Obsahuje seznam opatření zavedených v různých odvětvích (školství, doprava, zemědělství atd.).
+  - code: HRV
+    name: Chorvatsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
+    law-name: Law on Climate Change and the Protection of the Ozone Layer
+    law-year: 2019
+    law-pages: 48 stran
+    url: https://www.zakon.hr/z/2435/Zakon-o-klimatskim-promjenama-i-za%C5%A1titi-ozonskog-sloja
+    targets: Žádné
+    budgets: false
+    plans: true
+    reporting: false
+    advisory: false
+    public: false
+    sanctions: true
+    notes: Hlavně implementace EU legislativy a plnění poviností v rámci EU.
+  - code: IRL
+    name: Irsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
+    law-name: The Climate Action and Low Carbon Development Act
+    law-year: 2021
+    law-pages: 35 stran
+    url: https://assets.gov.ie/127957/ab70a65d-68c1-4947-983b-babf920cc4dc.pdf
+    targets: |
+      2030: <b>−51 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: true
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Každý ministr zodpovědný za plnění cílů ve svém sektoru.
+  - code: LTU
+    name: Litva
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
+    law-name: Law on Climate Change Management
+    law-year: 2021
+    law-pages: 12 stran
+    url: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.349514
+    targets: Žádné
+    budgets: false
+    plans: true
+    reporting: false
+    advisory: true
+    public: false
+    sanctions: true
+    notes: Klimatický zákon vytváří propracovaný systém emisních povolenek a financování klimatických projektů, spíše než právní rámec pro přijímání opatření a pro dosažení klimatických cílů.
+  - code: LUX
+    name: Lucembursko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg
+    law-name: Law of December 15, 2020 relating to the climate
+    law-year: 2020
+    law-pages: 26 stran
+    url: https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2020/12/15/a994/jo/fr/html/eli-etat-leg-loi-2020-12-15-a994-jo-fr-html.html
+    targets: |
+      2030: <b>−55 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: false
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: true
+    notes: Vytváří platformu pro klima, která zprostředkovává dialog mezi představitely komun, organizacemi občanské společnosti, vedoucími firem, investory a širokou veřejností.
+  - code: HUN
+    name: Maďarsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg
+    law-name: Law on Climate Protection
+    law-year: 2020
+    law-pages: 3 strany
+    url: https://njt.hu/jogszabaly/2020-44-00-00
+    targets: |
+      2030: <b>−40 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: false
+    plans: false
+    reporting: false
+    advisory: false
+    public: false
+    sanctions: false
+    notes: Udává pouze cíle pro snižování GHG emisí a základní principy.
+  - code: MLT
+    name: Malta
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
+    law-name: Climate Action Act
+    law-pages: 12 stran
+    url: https://legislation.mt/eli/cap/543/eng/pdf
+    law-year: 2015
+    targets: Žádné
+    budgets: false
+    plans: true
+    reporting: false
+    advisory: false
+    public: true
+    sanctions: false
+    notes: Dává vzniknout _Climate Action Board_, který sdružuje premi0ra a všechny ministry (pro implementaci  klimazákona).
+  - code: DEU
+    name: Německo
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg
+    law-name: Federal Climate Change Act
+    law-year: 2021
+    law-pages: 11 stran
+    url: https://climate-laws.org/documents/federal-climate-change-act_8713?id=federal-climate-protection-act-and-to-change-further-regulations-bundesklimaschutzgesetz-or-ksg_c1c2
+    targets: |
+      2030: <b>−65 %</b><br>
+      2040: <b>−88 %</b><br>
+      <b>2045: klimatická neutralita</b>
+    budgets: true
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: true
+    notes: Neuvádí nutnost vytvářet krátkodobé akční plány a dlouhdobé strategie.
+  - code: NLD
+    name: Nizozemsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+    law-name: Climate Action Act
+    law-year: 2019
+    law-pages: 4 strany
+    url: http://www.ilo.org/dyn/natlex/docs/ELECTRONIC/108819/134700/F-73875454/NLD108819.pdf
+    targets: |
+      2030: <b>−49 %</b><br>
+      2050: <b>−95 %</b>
+    budgets: false
+    plans: true
+    reporting: true
+    advisory: false
+    public: false
+    sanctions: false
+    notes: Roli odborného porádního orgánu přebírá již existující vládní agentura.
+  - code: PRT
+    name: Portugalsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
+    law-name: Lei de Bases do Clima
+    law-year: 2021
+    law-pages: 28 stran
+    url: https://files.dre.pt/1s/2021/12/25300/0000500032.pdf
+    targets: |
+      2030: <b>−55 %</b><br>
+      2040: <b>−65 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: true
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: V klimatickém zákoně zmíněn vznik odborného nezávislého orgánu, není však zmíněna jeho nezávislost ani jeho zapojení do klimatické politiky.
+  - code: ESP
+    name: Španělsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg
+    law-name: The Climate Change and Energy Transition Bill
+    law-year: 2021
+    law-pages: 44 stran
+    url: https://www.boe.es/boe/dias/2021/05/21/pdfs/BOE-A-2021-8447.pdf
+    targets: |
+      2030: <b>−23 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: false
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Vyžaduje, aby firmy připravily vlastní klimatické plány.
+  - code: SWE
+    name: Švédsko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg
+    law-name: The Climate Act and Climate Policy Framework
+    law-year: 2017
+    law-pages: ??
+    url: https://climate-laws.org/documents/the-swedish-climate-policy-framework_1f39?id=the-swedish-climate-policy-framework_747b
+    targets: |
+      2030: sektorové cíle<br>
+      2040: sektorové cíle<br>
+      <b>2045: klimatická neutralita</b>
+    budgets: false
+    plans: true
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: |
+      Klimatická politika (_Climate Policy Framework_) je tvořena 3 oddělenými částmi: _The Climate Act_, _The Swedish Climate Targets_ a _Climate Policy Council_. Udává právní rámec pro vládní činnosti v oblasti klimatu,
+  - code: GRC
+    name: Řecko
+    flag-url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+    law-name: National Climate Law on the transition to climate neutrality and adaptation to climate change
+    law-year: 2022
+    law-pages: 32 stran
+    url: https://www.elinyae.gr/sites/default/files/2022-05/105a_2022.pdf
+    targets: |
+      2030: <b>−55 %</b><br>
+      2040: <b>−80 %</b><br>
+      <b>2050: klimatická neutralita</b>
+    budgets: true
+    plans: false
+    reporting: true
+    advisory: true
+    public: true
+    sanctions: false
+    notes: Široké zapojení veřejnosti, ve velké míře i mladých lidí (speciální orgán pro názor). Uhlíkové rozpočty pro sektory.
 ---
 {:.narrow-text}
-Rešerše zahrnuje Evropskou unii a všechny ostatní země s podílem na světových emisích CO<sub>2</sub> nad 1 % v roce 2018.[^edgar] Net-zero závazky v některých případech znamenají uhlíkovou neutralitu (zahrnující emise CO<sub>2</sub>), v některých pak klimatickou neutralitu (zahrnující emise všech skleníkových plynů). V odkazech naleznete kromě národních závazků (_Nationally Determined Contributions_, NDCs) i národní profily na webu [Climate Action Tracker](https://climateactiontracker.org/countries) (CAT) a další zdroje informací. Závazky se průběžně mění, pro přehlednost jsme proto doplnili ke každému zdroji také datum poslední aktualizace, které se zobrazí při najetí myší na tlačítko zdroje.
+TODO: Intro text.
 
+<ul class="inline-bullet-list">
+    {%- for country in page.items %}
+    <li><a href="#{{ country.code }}">{{ country.name }}</a></li>
+    {%- endfor %}
+</ul>
 
-{% comment %}
-  Verze rešerše pro menší displeje: seznam kartiček pod sebou.
-{% endcomment -%}
-<div class="d-md-none mt-4">
-  {% for item in page.items %}
-  <div class="card mb-3">
-    <div class="card-body">
-      <h3 class="card-title">
-        {% if item.flag -%}
-        <img src={{ item.flag }} class="mr-2 country-flag" alt="Vlajka země či území: {{ item.country }}" />
-        {%- endif %}
-        {{ item.country }}
-      </h3>
-      <p class="card-text text-muted">{{ item.share }} světových emisí SP</p>
-      {%- if item.netzero %}<p class="card-text text-muted">Net-zero v roce {{ item.netzero }}</p>{% endif %}
-      {%- if item.pledge30 %}<p class="card-text text-muted">Závazek do roku 2030: {{ item.pledge30 }}</p>{% endif %}
-      {%- if item.other %}
-        <p class="card-text text-muted">
-          {%- if item.conditional %}
-            {% include popover-text.html
-               text="Podmíněný cíl"
-               popover=item.conditional
-            %}:
-          {%- else %}
-              Ostatní závazky:
-          {%- endif %}
-          {{ item.other }}
-        </p>
-      {% endif %}
-      <div class="d-flex flex-column flex-sm-row justify-content-end">
-        {%- if item.ndc %}<a href="{{ item.ndc }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
-        {% for link in item.links -%}
-        <a href="{{ link.url }}" class="btn btn-sm btn-secondary">{{ link.title }}</a>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-{% comment %}
-  Plná verze rešerše: tabulka s jednotlivými studiemi.
-{% endcomment -%}
-<table class="table table-striped table-hover d-none d-md-table mt-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase align-middle">Stát</th>
-      <th scope="col" class="text-uppercase align-middle">Název (rok vydání)</th>
-      <th scope="col" class="text-uppercase align-middle">Forma</th>
-      <th scope="col" class="text-uppercase align-middle">Emisní cíle</th>
-      <th scope="col" class="text-uppercase align-middle">Uhlíkový rozpočet</th>
-      <th scope="col" class="text-uppercase align-middle">Plánování</th>
-      <th scope="col" class="text-uppercase align-middle">Reportování progresu</th>
-      <th scope="col" class="text-uppercase align-middle">Nezávislý poradní orgán</th>
-      <th scope="col" class="text-uppercase align-middle">Účast veřejnosti</th>
-      <th scope="col" class="text-uppercase align-middle">Sankce při porušení</th>
-      <th scope="col" class="text-uppercase align-middle">Zajímavosti</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items -%}
-    <tr>
-      <td class="align-middle text-nowrap">
-        {% if item.flag -%}
-        <img src={{ item.flag }} class="mr-2 country-flag" alt="Vlajka země či území: {{ item.country }}" />
-        {%- endif %}
-        <strong>{{ item.country }}</strong>
-      </td>
-      <td class="align-middle">{{ item.share }}</td>
-      <td class="align-middle">{{ item.netzero | default: "—" }}</td>
-      <td class="align-middle">{% if item.pledge30 %}{{ item.pledge30 }}{% else %}—{% endif %}</td>
-      <td class="align-middle">
-        {%- if item.conditional %}
-          {% include popover-text.html
-             text="Podmíněný cíl"
-             popover=item.conditional
-          %}:
-        {%- endif %}
-        {{ item.other}}
-      </td>
-      <td class="align-middle">
-        {%- if item.ndc %}<a href="{{ item.ndc }}" title="Aktualizováno {{ item.ndc-date }}" class="btn btn-sm btn-primary">NDC</a>{% endif %}
-        {% for link in item.links -%}
-        <a href="{{ link.url }}" title="Aktualizováno {{ link.date }}" class="btn btn-sm btn-secondary">{{ link.title }}</a>
-        {%- endfor %}
-      </td>
-    </tr>
+<div class="climate-laws-survey-countries narrow-text">
+    {% for country in page.items %}
+    {% include includes-local/klimaticke-zakony/country.html
+        code=country.code
+        name=country.name
+        flag-url=country.flag-url
+        law-name=country.law-name
+        law-year=country.law-year
+        law-pages=country.law-pages
+        url=country.url
+        targets=country.targets
+        budgets=country.budgets
+        plans=country.plans
+        reporting=country.reporting
+        advisory=country.advisory
+        public=country.public
+        sanctions=country.sanctions
+        notes=country.notes
+    %}
     {% endfor %}
-  </tbody>
-</table>
-
-### Poznámky
-
-[^edgar]: Zdrojem dat o emisích je databáze EDGAR (Emission Database for Global Atmospheric Research, Emisní databáze pro globální výzkum atmosféry) provozovaná Evropskou agenturou pro životní prostředí.
+</div>
