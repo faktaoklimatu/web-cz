@@ -1,0 +1,16 @@
+{% if include.yes %}
+    {% assign class_name = "yes" %}
+{% else %}
+    {% assign class_name = "no" %}
+{% endif %}
+<li class="{{ class_name }}">
+    {% if include.yes %}
+        <i class="fas fa-circle-check"></i>
+    {% else %}
+        <i class="fas fa-circle-xmark"></i>
+    {% endif %}
+    {% include popover-text.html
+        text=include.label
+        popover=include.helper
+    %}
+</li>

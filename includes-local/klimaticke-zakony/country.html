@@ -1,0 +1,66 @@
+<div
+    class="card"
+    data-name="{{ include.name }}"
+>
+    <h5 class="card-header" id="{{ include.code }}">
+        {% if include.flag-url %}
+        <img
+            src="{{ include.flag-url }}"
+            class="country-flag"
+            alt="Vlajka země: {{ include.name }}"
+            title="{{ include.name }}"
+        />
+        {% endif %}
+        {{ include.name }}
+    </h5>
+    <section class="summary">
+        <div class="card-body">
+            <p><b>Cíle v redukci emisí skleníkových plynů:</b><br>(oproti roku 1990)</p>
+            <p>{{ include.targets }}</p>
+        </div>
+        <div class="card-body">
+            <p class="font-weight-bold">Obsah:</p>
+            <ul class="checklist">
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Uhlíkové rozpočty"
+                    yes=include.budgets
+                    helper="Povolené množství vypuštěných emisí pro určité období."
+                %}
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Plánování"
+                    yes=include.plans
+                    helper="Zda klimatický zákon nařizuje vládě nebo odpovědnému ministrovi vytvářet průběžné plány pro dosažení stanovených cílů."
+                %}
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Reporting"
+                    yes=include.reporting
+                    helper="Buď ministr vládě nebo vláda parlamentu musí průběžně podávat zprávy o dosaženém pokroku na cestě k dosažení stanovených cílů."
+                %}
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Poradní orgán"
+                    yes=include.advisory
+                    helper="Skupina expertů z různých odvětví, které nezávisle na vládě sledují a hodnotí postup vlády a vydávají doporučení."
+                %}
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Účast veřejnosti"
+                    yes=include.public
+                    helper="Jestli klimatický zákon specifikuje zapojení veřejnosti do klimatické politiky – konzultace přijímaných opatření, akčních plánů, uhlíkových rozpočtů, podávání vlastních návrhů atd."
+                %}
+                {% include includes-local/klimaticke-zakony/checklist-item.html
+                    label="Sankce"
+                    yes=include.sanctions
+                    helper="Jestli klimatický zákon určuje konkrétní sankce při nedodržení povinností stanovených zákonem (pokuty, trest vězení)."
+                %}
+            </ul>
+        </div>
+    </section>
+    <section class="card-body footer">
+        <p markdown="1">
+            <i class="fas fa-lightbulb" title="Zajímavost"></i>{{ include.notes }}
+        </p>
+        <p>
+            <i class="fas fa-scroll" title="Původní zákon"></i><a href="{{ include.url }}"><cite>{{ include.law-name }}</cite></a>
+            ({{ include.law-year }}; {{ include.law-pages }})
+        </p>
+    </section>
+</div>
