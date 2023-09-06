@@ -6,6 +6,7 @@ weight:      303
 published:   2023-09-12
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
+use-preview-image: true
 caption:     "TODO: Caption"
 intro: |
   TODO: Perex
