@@ -70,17 +70,17 @@ Graf ročního průběhu průměrných teplot planety za posledních 140 let uka
 
 {% include figure.html
     name="gistemp.png"
-    alt="Sezónní cyklus teplot planety"
-    caption="Sezónní cyklus teplot planety"
+    alt="Sezónní průběh teplot planety"
+    caption="Sezónní průběh teplot planety"
     source-text="NASA GISSTEMP"
     source-url="https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/GISTEMP_Seasonal_Cycle_since_1880/graph.html"
 %}
 
-Pohledem na obrázek můžeme také snadno pochopit, proč se místo teploty planety používá koncept **teplotní odchylky**(někdy také teplotní anomálie): V souvislosti s globálním oteplováním není zajímavé jaká byla teplota planety v konkrétním měsíci - třeba březnu, ale jak moc je tento březen teplejší než průměrný březen v nějakém referenčním období[^referencni_obdobi]. 
+Pohledem na obrázek můžeme také snadno pochopit, proč se místo teploty planety používá koncept **teplotní odchylky**(někdy také *teplotní anomálie*): V souvislosti s globálním oteplováním není zajímavé jaká byla teplota planety v konkrétním měsíci - třeba únoru, ale jak moc je tento únor teplejší než průměrný únor v nějakém referenčním období[^referencni_obdobi]. V tomto článku se vztahujeme k referenčnímu období 1979-2000. 
 
-Ukažme si to na konkrétním příkladu: V únoru roku 1999 byla průměrná teplota planety 13,0°C, a v červenci téhož roku 16,2°C. Červenec byl o několik stupňů teplejší než únor - to ale vzhledem k běžnému ročnímu průběhu teploty není nijak překvapivé.  Když ale srovnáme teplty těchto dvou měsíců s průměrnými hodnotami teplot za období 1979 - 2000, získáme jiný obrázek.  Červencová teplota planety v roce 1999 odpovídala průměrným hodnotám za dané období, kdežto únorová teplota byla o 0,3°C vyšší než průměrné hodnoty březnových teplot v tomto období. Zjednodušeně: v únoru 1999 byla sice planeta v únoru chladnější než v červenci, ale únor byl znatelně teplejší než bychom čekali, zatímco červenec byl průměrný.  
+Ukažme si to na konkrétním příkladu: V únoru roku 1999 byla průměrná teplota planety 13,0°C, a v červenci téhož roku 16,2°C. Červenec byl o několik stupňů teplejší než únor - to ale vzhledem k běžnému ročnímu průběhu teploty není nijak překvapivé.  Když však srovnáme teplty těchto dvou měsíců s průměrnými hodnotami teplot za období 1979 - 2000, získáme jiný obrázek.  Červencová teplota planety v roce 1999 odpovídala průměrným hodnotám za dané období, kdežto únorová teplota byla o 0,3°C vyšší než průměrné hodnoty březnových teplot v tomto období. Zjednodušeně: v únoru 1999 byla sice planeta v únoru chladnější než v červenci, ale únor byl znatelně teplejší než bychom čekali, zatímco červenec byl průměrný.  
 
-Tento rozdíl mezi teplotou konkrétního mměsíce a průměrnou hodnotou teplot pro daný měsíc za referenční období se nazývá *teplotní odchylka* (někdy také *teplotní anomálie*)[^T_anomaly]. Podrobně se výpočtům a vlastnostem teplotní odchylky budeme věnovat v samostatném textu. 
+Tento *rozdíl* mezi teplotou konkrétního mměsíce a průměrnou hodnotou teplot pro daný měsíc za referenční období se nazývá *teplotní odchylka* (někdy také *teplotní anomálie*)[^T_anomaly]. Podrobně se výpočtům a vlastnostem teplotní odchylky budeme věnovat v samostatném textu. 
 
 ## Čím jsou způsobeny krátkodobé výkyvy v teplotě planety?
 
@@ -105,7 +105,7 @@ Můžeme nicméně očekávat, že tato hodnota bude v dalších letech překon�
 ## Poznámky a zdroje
 
 
-[^referencni_obdobi]: V kontextu klimatické změny se jako referenční období používá tzv. pre-industriál (který je definován jako 1850-1900). K němu se například vztahuje i hranice oteplení 1,5°C zmíněná v Pařížské dohodě. Jiná referenční období používají meteorologové - zpravidla poslední tři dekády - takže v ČHMÚ zpravidla uvádí teplotní anomálie vztažené k referenčnímu období 1990-2019.
+[^referencni_obdobi]: V kontextu klimatické změny se jako referenční období používá nejčastěji tzv. pre-industriál (který je definován jako 1850-1900). K němu se například vztahuje i hranice oteplení 1,5°C zmíněná v Pařížské dohodě. Jiná referenční období používají meteorologové - zpravidla poslední tři dekády - takže v ČHMÚ zpravidla uvádí teplotní anomálie vztažené k referenčnímu období 1990-2019. V tomto článku je referenční období 1979-2000. Jestli vám to, že různé skupiny vědců vybírají různá refrenční období připadá jako podivné komplikování něčeho, co by mohlo být jednodušší, máte pravdu. 
 
 [^T_anomaly]: Z praktického hlediska je možná ještě důležitější, že narozdíl od průměrné teploty planety je teplotní anomálie je narozdíl od průměrné teploty planety robustní koncept - nezávisí na hustotě nebo konkrétním rozmístění sítě měřicích stanic, není k němu nutná vzájemná kalibrace stanic a není podstatným způsobem ovlivněn případnými výpadky měření. 
 
