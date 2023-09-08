@@ -24,17 +24,17 @@
                 {% include includes-local/klimaticke-zakony/checklist-item.html
                     label="Uhlíkové rozpočty"
                     yes=include.budgets
-                    helper="Povolené množství vypuštěných emisí pro určité období."
+                    helper="Je stanoveno povolené množství vypuštěných emisí pro určité období."
                 %}
                 {% include includes-local/klimaticke-zakony/checklist-item.html
                     label="Plánování"
                     yes=include.plans
-                    helper="Zda klimatický zákon nařizuje vládě nebo odpovědnému ministrovi vytvářet průběžné plány pro dosažení stanovených cílů."
+                    helper="Vláda nebo odpovědný ministr má povinnost vytvářet průběžné plány pro dosažení stanovených cílů."
                 %}
                 {% include includes-local/klimaticke-zakony/checklist-item.html
                     label="Reporting"
                     yes=include.reporting
-                    helper="Buď ministr vládě nebo vláda parlamentu musí průběžně podávat zprávy o dosaženém pokroku na cestě k dosažení stanovených cílů."
+                    helper="Odpovědný ministr vládě nebo vláda parlamentu musí průběžně podávat zprávy o dosaženém pokroku."
                 %}
                 {% include includes-local/klimaticke-zakony/checklist-item.html
                     label="Poradní orgán"
@@ -44,12 +44,7 @@
                 {% include includes-local/klimaticke-zakony/checklist-item.html
                     label="Účast veřejnosti"
                     yes=include.public
-                    helper="Jestli klimatický zákon specifikuje zapojení veřejnosti do klimatické politiky – konzultace přijímaných opatření, akčních plánů, uhlíkových rozpočtů, podávání vlastních návrhů atd."
-                %}
-                {% include includes-local/klimaticke-zakony/checklist-item.html
-                    label="Sankce"
-                    yes=include.sanctions
-                    helper="Jestli klimatický zákon určuje konkrétní sankce při nedodržení povinností stanovených zákonem (pokuty, trest vězení)."
+                    helper="Veřejnost je zapojena do tvorby klimatické politiky. Formou konzultace přijímaných opatření, akčních plánů, uhlíkových rozpočtů, podávání vlastních návrhů atd."
                 %}
             </ul>
         </div>
@@ -59,8 +54,8 @@
             <i class="fas fa-lightbulb" title="Zajímavost"></i>{{ include.notes }}
         </p>
         <p>
-            <i class="fas fa-scroll" title="Původní zákon"></i><a href="{{ include.url }}"><cite>{{ include.law-name }}</cite></a>
-            ({{ include.law-year }}; {{ include.law-pages }})
+            <i class="fas fa-scroll" title="Poslední verze legislativního aktu"></i><a href="{{ include.url }}"><cite>{{ include.law-name }}</cite></a>
+            ({{ include.law-year }})
         </p>
     </section>
 </div>
