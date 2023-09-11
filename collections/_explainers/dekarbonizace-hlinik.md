@@ -41,6 +41,20 @@ Aby se vyrobil hliník, je nutné vytěžit bauxit, který je následně zpracov
 
 Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z hlediska dekarbonizace tohoto sektoru klíčová především transformace elektroenergetiky, tedy dekarbonizace elektřiny. Nezanedbatelné množství emisí skleníkových plynů ovšem pochází i ze spalování a procesních reakcí, které lze také snížit. Již dnes lze najít projekty, které vyrábí hliník s nizší emisní stopou.
 
+{% capture greenalu %}
+
+
+
+{% endcapture %}
+
+{% include expander-figure.html
+    name="greenalu"
+    expanded=false
+    class="contrast-figure "
+    label="Příklady projektů využívajících dekarbonizační technologie"
+    content=greenalu
+%}
+
 Tyto projekty bude potřebné nadále škálovat aby došlo ke snížení emisní stopy sektoru výroby hliníku. Jak může toto škálování a dosažení nízkých nebo nulových emisí výrobu hliníku vypadat se snaží ukázat sektorové dekarbonizační strategie.
 
 Dále vycházíme z dekarbonizačních scénářů těchto institucí:
@@ -48,21 +62,24 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 - World Economic Forum: [Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
 - International Aluminium: [Aluminium Sector Greenhouse Gas Pathways to 2050](https://international-aluminium.org/resource/aluminium-sector-greenhouse-gas-pathways-to-2050-2021/).
 - Center for Strategic & International Studies: [Decarbonizing Aluminum: Rolling Out a More Sustainable Sector](https://www.csis.org/analysis/decarbonizing-aluminum-rolling-out-more-sustainable-sector).
+- IPCC: [Sixth Assessment Report - Working Group III: Kapitola 11](https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf)
 
 #### Z těchto scénářů vyplývá:
 
 * U hliníku nemůžeme očekávat snížení poptávky. Poptávka po něm se naopak do roku 2050 může zvýšit o 50–80 %.[^hlinikrecyklace] Substituce či snížení poptávky se nejeví jako reálná také proto, že se v některých oblastech o hliníku uvažuje jako o možné náhradě za ocel, plasty apod. Jedná se i o důležitý materiál v rámci dekarbonizace.
 * Hlavním způsobem snížení emisí skleníkových plynů je dekarbonizace výroby elektřiny. Budou se tak vysktytovat nadále výrazné regionální rozdíly v emisní intenzitě hliníku v závislosti na tom jak se v dané oblasti elektřina vyrábí. S postupující globální dekarbonizací výroby elektřiny budou emise z výroby hliníku klesat.
-* Doplňující technologie jsou převážně nízkoemisní vodík a zachytávání CO<sub>2</sub>
-* Dekarbonizovaný hliník může být až o 40 % drazší.
+* Doplňující technologie jsou převážně nízkoemisní vodík a do menší míry zachytávání CO<sub>2</sub>.
+* Dekarbonizovaný hliník může být až o 40 % drazší, ovšem pro koncové spotřebitele by šlo o navýšení ceny o 1-2 % jelikož použitý hliník tvoří pouze zlomek celkové ceny i dnes.[^wef]
+* Zpoplatňování emisí skleníkových plynů (např. systém EU ETS) bude pro konkurenceschopnost nízkoemisního hliníku klíčové. Zpoplatnění tCO2 na úrovni 210 USD by znamenalo konkurenceschopnost dekarbonizovaného hliníku.[^wef] 
+* Kvůli závislosti emisní intenzity hliníku na emisní náročnosti elektřiny můžou být zvýhodněny regiony s čistou elektřinou. Příkladem může být Island, kde mix elektřiny pocházející ze z 70 % vodních elektráren a 30 % z geotermální energie vede k tomu, že hliník vyrobený na Islandu má pouhou šestinu emisní intenzity ve srovnání s globálním průměrem.[^island]
 
 ## Technologie pro dekarbonizaci výroby hliníku
 
-* **Recyklace** - Hliník představuje jednoduše recyklovatelný kov a jeho opětovné použití je až o 90 % méně emisně náročné a energeticky daleko úspornější než nová produkce.[^hlinikrecyklace] Je to technicky snadné a ekonomicky výhodné a v EU už v současnosti recyklujeme zhruba tři čtvrtiny hliníku.[^hlinikrecyklace] To ale znamená, že i když můžeme uvažovat o dalších opatřeních podporujících cirkularitu (např. systém vratných záloh na plechovky), z hlediska nutné dekarbonizace sektoru nebude jejich přínos velký protože už recyklace relativně dobře funguje.
+* **Recyklace** - Hliník představuje jednoduše recyklovatelný kov a jeho opětovné použití je až o 90 % méně emisně náročné a energeticky daleko úspornější než nová produkce.[^hlinikrecyklace] Je to technicky snadné a ekonomicky výhodné a v EU už v současnosti recyklujeme zhruba tři čtvrtiny hliníku.[^hlinikrecyklace] Můžeme dále uvažovat o opatřeních podporujících cirkularitu (např. systém vratných záloh na plechovky). Možnosti recyklace tak spíše budou omezeny dostupností materiálu k recyklaci vzhledem k rostoucí poptávce. I proto se očekává, že recyklovaný hliník bude naplňovat třetinu poptávky po hliníku roku 2060.[^ipcc]
 
-* **Vodík** - Jelikož i při výrobě hliníku je nutné používat fosilní paliva jakými jsou například uhlí či zemní plyn, skýtá se možnost tyto emise ze spalování snížit tím, že bychom používali nízkoemisní zelený vodík.
+* **Vodík** - Jelikož i při výrobě hliníku je nutné používat fosilní paliva jakými jsou například uhlí či zemní plyn, skýtá se možnost tyto emise ze spalování snížit tím, že bychom používali nízkoemisní zelený vodík. Jeho využití při výrobě hliníku bude záviset na rozvoji infrastruktury a cenou ve srovnání s aktuálně využívanými fosilními palivy, jakým je třeba zemní plyn. Vzhledem k potřebě značného množství nízkoemisní elektřiny jednak pro elektrolýzu při výrobě hliníku i pro výrobu zeleného vodíku, regiony s dostupnou nízkoemisní elektřinou mohou mít značnou výhodu.
 
-* **Zachytávání CO<sub>2</sub> (CCS)** - Na nahrazení procesních emisí vznikajících během procesu elektrolýzy je teoreticky možné využít zařízení na zachytávání CO<sub>2</sub>.[^ccshlinik]
+* **Zachytávání CO<sub>2</sub> (CCS)** - Na nahrazení procesních emisí vznikajících během procesu elektrolýzy je teoreticky možné využít zařízení na zachytávání CO<sub>2</sub>.[^ccshlinik] U hliníku je ovšem problém relativně nízká koncentrace CO<sub>2</sub> u odpadního plynu. Je totiž podstatně nizší než například u spalování fosilních paliv, pro které byly technologie CCS často vyvíjeny. Zároveň přítomnost jiných znečisťujích látek dále komplikuje situaci. V současné době tak probíhá výzkum jak umožnit využití CCS při výrobě hliníku.[^ccs]
 
 {% include figure.html
     name="hlinik.jpg"
@@ -81,3 +98,6 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 [^hlinikvyroba]: [Natural Resources Canada: Aluminium Facts](https://natural-resources.canada.ca/our-natural-resources/minerals-mining/minerals-metals-facts/aluminum-facts/20510#details-panel3)
 [^hlinikproces]: [Carbon Chain: Understand your aluminium Emissions](https://www.carbonchain.com/blog/understand-your-aluminum-emissions)
 [^wef]: [World Economic Forum: Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
+[^island]: [Green By Iceland: Metal Production in Iceland](https://www.greenbyiceland.com/metal-production/)
+[^ipcc]: [IPCC: Sixth Assessment Report - Working Group III: Kapitola 11](https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf)
+[^ccs]: [Hydro: Developing carbon capture and storage technology for aluminium smelters](https://www.hydro.com/en/media/on-the-agenda/hydros-roadmap-to-zero-emission-aluminium-production/developing-carbon-capture-and-storage-technology-for-aluminium-smelters/)
