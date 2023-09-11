@@ -1,7 +1,7 @@
 ---
 layout:      explainer
 title:       "Jak dekarbonizovat výrobu oceli?"
-slug:        "dekarbonizace-ocel"
+slug:        "dekarbonizace-oceli"
 published:   2023-09-11
 authors:
   - id: "adam-bilek"
