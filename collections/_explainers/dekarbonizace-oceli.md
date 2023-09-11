@@ -7,6 +7,8 @@ authors:
   - id: "adam-bilek"
   - id: "jirka-lnenicka"
     minor-role: "editace"
+  - id: "marcel-otruba"
+    minor-role: "ilustrace"
   - name: "Jiří Mravec"
     affiliation: Třinecké železárny
     minor-role: "konzultace"
