@@ -7,16 +7,16 @@ published:   2023-09-12
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
 use-preview-image: true
-caption:     "Přehled základních informací o klimatických zákonec ve státech EU."
+caption:     "Přehled základních informací o klimatických zákonech ve státech EU."
 intro: |
-  Již šestnáct států EU přijalo klimatický zákon, ve kterém v různé míře detailu předkládají své ambice v oblasti snižovování emisí skleníkových plynů a cesty, které k tomu povedou. Zasazení klimatických závazků do zákona ukládá aktérům ve veřejné i soukromé sféře větší odpovědnost k jejich plnění a zároveň činí klimatické ambice odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
+  Již šestnáct států Evropské unie přijalo klimatický zákon, ve kterém v různé míře detailu předkládají své ambice v oblasti snižovování emisí skleníkových plynů a cesty, které k tomu povedou. Zasazení klimatických závazků do zákona ukládá aktérům ve veřejné i soukromé sféře větší odpovědnost k jejich plnění a zároveň činí klimatické ambice odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
 items:
   - code: BGR
     name: Bulharsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg
     law-year: 2022
     url: https://lex.bg/laws/ldoc/2136124027
-    targets: Žádné
+    targets:
     budgets: false
     plans: false
     reporting: false
@@ -62,6 +62,7 @@ items:
     targets: |
       2030: <b>−40 %</b><br>
       <b>2050: klimatická neutralita</b>
+    lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -73,7 +74,7 @@ items:
     flag-url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
     law-year: 2019
     url: https://www.zakon.hr/z/2435/Zakon-o-klimatskim-promjenama-i-za%C5%A1titi-ozonskog-sloja
-    targets: Žádné
+    targets:
     budgets: false
     plans: true
     reporting: false
@@ -88,6 +89,8 @@ items:
     targets: |
       2030: <b>−51 %</b><br>
       <b>2050: klimatická neutralita</b>
+    lulucf: true
+    reference-year: 2018
     budgets: true
     plans: true
     reporting: true
@@ -99,7 +102,7 @@ items:
     flag-url: https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
     law-year: 2021
     url: https://www.e-tar.lt/portal/legalAct.html?documentId=96e945d04df111ec862fdcbc8b3e3e05
-    targets: Žádné
+    targets:
     budgets: false
     plans: true
     reporting: false
@@ -114,6 +117,7 @@ items:
     targets: |
       2030: <b>−55 %</b><br>
       <b>2050: klimatická neutralita</b>
+    reference-year: 2005
     budgets: false
     plans: true
     reporting: true
@@ -128,6 +132,7 @@ items:
     targets: |
       2030: <b>−40 %</b><br>
       <b>2050: klimatická neutralita</b>
+    lulucf: true
     budgets: false
     plans: false
     reporting: false
@@ -139,7 +144,7 @@ items:
     flag-url: https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
     url: https://legislation.mt/eli/cap/543/eng/pdf
     law-year: 2015
-    targets: Žádné
+    targets:
     budgets: false
     plans: true
     reporting: false
@@ -184,6 +189,8 @@ items:
       2030: <b>−55 %</b><br>
       2040: <b>−65 %</b><br>
       <b>2050: klimatická neutralita</b>
+    lulucf: true
+    reference-year: 2005
     budgets: true
     plans: true
     reporting: true
@@ -197,6 +204,7 @@ items:
     targets: |
       2030: <b>−23 %</b><br>
       <b>2050: klimatická neutralita</b>
+    lulucf: true
     budgets: false
     plans: true
     reporting: true
@@ -235,8 +243,9 @@ items:
     public: true
 ---
 {:.narrow-text}
-Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují. Hodnotí, zda součástí zákona jsou: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné plánování kroků k transformaci a reportování o pokroku, existence na vládě nezávislých poradních orgánů a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
+Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují. Hodnotí, zda zákon obsahuje: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné plánování kroků k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
 
+{:.narrow-text}
 K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Dále probíhá diskuze o klimatickém zákoně na Slovensku nebo ve Slovinsku.
 
 <ul class="inline-bullet-list">
@@ -247,15 +256,16 @@ K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Dále probíhá 
 
 <div class="climate-laws-survey-countries narrow-text">
     {% for country in page.items %}
+    {% assign reference-year = country.reference-year | default: 1990 %}
     {% include includes-local/klimaticke-zakony/country.html
         code=country.code
         name=country.name
         flag-url=country.flag-url
-        law-name="Původní legislativní akt"
         law-year=country.law-year
-        law-pages=country.law-pages
         url=country.url
         targets=country.targets
+        reference-year=reference-year
+        lulucf=country.lulucf
         budgets=country.budgets
         plans=country.plans
         reporting=country.reporting
