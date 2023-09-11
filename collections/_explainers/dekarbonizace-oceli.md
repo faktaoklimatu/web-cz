@@ -4,7 +4,7 @@ title:       "Jak dekarbonizovat výrobu oceli?"
 slug:        "dekarbonizace-oceli"
 published:   2023-09-11
 authors:
-  - id: "adam-bilek"
+  - ids: ["adam-bilek", "ondras-pribyla"]
   - id: "jirka-lnenicka"
     minor-role: "editace"
   - id: "marcel-otruba"
