@@ -1,3 +1,8 @@
+{% if include.lulucf %}
+{% assign targets-lulucf-text = ", včetně LULUCF" %}
+{% else %}
+{% assign targets-lulucf-text = ", bez LULUCF" %}
+{% endif %}
 <div
     class="card"
     data-name="{{ include.name }}"
@@ -15,8 +20,13 @@
     </h5>
     <section class="summary">
         <div class="card-body">
-            <p><b>Cíle v redukci emisí skleníkových plynů:</b><br>(oproti roku 1990)</p>
-            <p>{{ include.targets }}</p>
+            <p>
+                <b>Cíle v redukci emisí skleníkových plynů:</b>
+                {%- if include.targets -%}
+                <br>(oproti roku {{ include.reference-year }}{{ targets-lulucf-text }})
+                {% endif -%}
+            </p>
+            <p>{{ include.targets | default: "Žádné" }}</p>
         </div>
         <div class="card-body">
             <p class="font-weight-bold">Obsah:</p>
@@ -50,11 +60,13 @@
         </div>
     </section>
     <section class="card-body footer">
+        {% if include.notes %}
         <p markdown="1">
             <i class="fas fa-lightbulb" title="Zajímavost"></i>{{ include.notes }}
         </p>
+        {% endif %}
         <p>
-            <i class="fas fa-scroll" title="Poslední verze legislativního aktu"></i><a href="{{ include.url }}"><cite>{{ include.law-name }}</cite></a>
+            <i class="fas fa-scroll" title="Poslední verze legislativního aktu"></i><a href="{{ include.url }}"><cite>Původní legislativní akt</cite></a>
             ({{ include.law-year }})
         </p>
     </section>
