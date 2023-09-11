@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000080;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#000080;}
+	.st2{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#E6E6E6;}
+	.st5{fill:#333333;}
+	.st6{fill:#FBBE5F;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#81EBB3;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st9{fill:#E6E6E6;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st10{fill:#81EBB3;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#333333;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st13{fill:#FBBE5F;}
+	.st14{fill:none;stroke:#81EBB3;stroke-width:3;stroke-miterlimit:10;}
+	
+	#recycled-lines{
+      transform-origin: 102.06px 104.7px;
+      animation: recycled-lines 6s infinite linear;
+    }
+
+    @keyframes recycled-lines{
+      0%{
+        rotate: 0deg
+      }
+      100%{
+        rotate: 360deg
+      }
+    }
+
+</style>
+<g id="vzorec">
+</g>
+<g id="ikonky">
+	<rect x="110.5" y="238.3" class="st9" width="28.4" height="28.4"/>
+	<g id="recycled-lines">
+		<g>
+			<g>
+				<path class="st2" d="M133.7,27.5c23.2,9.5,41.9,29.3,48.9,55.4c7.1,26.4,0.8,53.3-14.9,73.3"/>
+				<g>
+					<polygon class="st5" points="164.3,150.9 162.1,162.7 173.4,158.7 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st2" d="M19,112.4c-3.7-39.7,21.5-77.5,61.3-88.2c11.8-3.2,23.8-3.7,35.2-1.8"/>
+				<g>
+					<polygon class="st5" points="112.5,27.9 123.8,24.1 114.9,16.2 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st2" d="M152,171.6c-8.2,6.1-17.7,10.8-28.2,13.7c-41.7,11.3-84.5-11.1-99.7-50.6"/>
+				<g>
+					<polygon class="st5" points="30.5,134.4 21.5,126.5 19.2,138.2 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g>
+		<polygon class="st8" points="67.8,156.3 91.7,152.9 137.8,106.8 119,88.1 95.1,91.5 49,137.6 		"/>
+		<polyline class="st2" points="118,88.6 73.3,133.8 91.4,152 92,152.6 		"/>
+		<line class="st2" x1="50.7" y1="139.3" x2="73.3" y2="133.8"/>
+	</g>
+	<line class="st2" x1="86" y1="135.3" x2="120.4" y2="99.6"/>
+	<line class="st2" x1="91.5" y1="140.8" x2="125.9" y2="105.2"/>
+	<g>
+		<polygon class="st8" points="75.4,78.4 93.4,94.4 158.4,99.7 160.6,82.5 142.5,66.5 77.5,61.2 		"/>
+		<polyline class="st2" points="159.5,82 96.1,77.2 94,93.6 93.9,94.5 		"/>
+		<line class="st2" x1="77.3" y1="63.6" x2="96.1" y2="77.2"/>
+	</g>
+	<line class="st2" x1="102.5" y1="86.4" x2="152" y2="89.6"/>
+	<path class="st9" d="M250.5,281.4h-96.2c-16.4,0-29.6-13.3-29.6-29.6v-29.6h155.4v29.6C280.1,268.1,266.8,281.4,250.5,281.4z"/>
+	<rect x="202.4" y="197.6" class="st8" width="44.1" height="57.6"/>
+	<polyline class="st2" points="224.3,205.8 217.1,226.4 230,226.4 223.1,247 	"/>
+	<path class="st14" d="M58.8,74.7c-6.9,15.2-14.1,54.6,50.1,37.9c61.6-16,27,42.2,27,42.2"/>
+	<path class="st2" d="M56.4,73.2c-6.9,15.2-11.8,59.1,52.4,42.5c61.6-16,23.5,40,23.5,40"/>
+	<rect x="253.7" y="197.6" class="st8" width="9.6" height="57.6"/>
+	<rect x="185.6" y="197.6" class="st8" width="9.6" height="57.6"/>
+	<g>
+		<g>
+			<polyline class="st2" points="70.3,169.3 70.3,252.5 85.8,252.5 			"/>
+			<g>
+				<polygon class="st5" points="84.1,258.5 94.4,252.5 84.1,246.5 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
