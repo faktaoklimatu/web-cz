@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000080;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#000080;}
+	.st2{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#E6E6E6;}
+	.st5{fill:#333333;}
+	.st6{fill:#FBBE5F;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#81EBB3;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st9{fill:#E6E6E6;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st10{fill:#81EBB3;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#333333;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st13{fill:#FBBE5F;}
+	.st14{fill:none;stroke:#81EBB3;stroke-width:3;stroke-miterlimit:10;}
+	
+	#white-lines{
+      transform-origin: 92.9px 177.4px;
+      animation: white-lines 6s infinite linear;
+    }
+
+    @keyframes white-lines{
+      0%{
+        rotate: 0deg
+      }
+      100%{
+        rotate: 360deg
+      }
+    }
+</style>
+<g id="vzorec">
+</g>
+<g id="ikonky">
+	<path class="st9" d="M76.4,106.9v-0.3c0-8.9,7.2-16.1,16.1-16.1h0c8.9,0,16.1,7.2,16.1,16.1v0.3"/>
+	<circle class="st10" cx="92.5" cy="177.6" r="72.9"/>
+	<circle class="st2" cx="92.9" cy="177.4" r="73"/>
+	<g id="white-lines">
+		<path class="st11" d="M112.6,122.6c15.7,5.7,28.8,18.2,34.7,35.2c5.9,16.9,3.5,34.8-5.2,49"/>
+		<path class="st11" d="M73.9,231.4c-16.1-5.6-29.6-18.2-35.6-35.5c-5.9-17-3.4-34.9,5.3-49.2"/>
+	</g>
+	<line class="st2" x1="29.8" y1="128.7" x2="156.9" y2="128.7"/>
+	<line class="st2" x1="29.8" y1="228.5" x2="156.9" y2="228.5"/>
+	<path class="st2" d="M92.5,90.5V43.3c0-8.6,6.9-15.5,15.5-15.5h59c8.6,0,15.5,6.9,15.5,15.5v101.6c0,8.6,6.9,15.5,15.5,15.5h10.1"
+		/>
+	<line class="st12" x1="168.9" y1="280.5" x2="144.9" y2="228.5"/>
+	<line class="st12" x1="18.2" y1="280.5" x2="39.6" y2="228.5"/>
+	<polyline class="st12" points="93.4,228.5 65.8,280.5 39.6,228.5 	"/>
+	<polyline class="st12" points="93.4,228.5 122.1,280.5 144.9,228.5 	"/>
+	<line class="st12" x1="12" y1="280.5" x2="221.2" y2="280.5"/>
+	<path class="st9" d="M207.3,145L207.3,145c-5.9,0-10.7,4.8-10.7,10.7v11c0,5.9,4.8,10.7,10.7,10.7h0.7"/>
+	<path class="st9" d="M281.3,63.1c0-14.8-14.8-35.3-33-35.3h-7.2c-18.2,0-33,20.5-33,35.3v124.2c0,18.3,30.3,93.3,30.3,93.3h6.3h7.5
+		c0,0,29.1-75,29.1-93.3V63.1z"/>
+	<circle class="st3" cx="244.7" cy="158.9" r="23.5"/>
+	<g>
+		<path class="st13" d="M250.3,181.8c0,0,7.1-2.1,7.1-11.9c0-9.8-11.2-9.8-11.2-24.9c-9.4,8.5,4.5,20.4-3.7,23.1
+			c-3.8,1.2-5.7-1.9-5.9-8.8c-6.1,7.5-8.5,17.6,0,21.7C236.7,180.8,245,183.6,250.3,181.8z"/>
+		<path class="st5" d="M251.3,179.8c4.9-3.1,6.2-10.7,2.9-15.4c-2.1-2.8-5.1-5.2-6.8-8.4c-2-3.4-2.7-7.3-2.7-11c0,0,2.5,1.1,2.5,1.1
+			c-1.1,0.9-1.9,2.1-2.4,3.3c-1.6,4.4,0.7,8.7,1.7,13.2c0.9,3.5-0.6,6.4-4.3,7.1c-3.6,0.8-5.9-2.3-6.5-5.4c-0.4-1.7-0.5-3.4-0.6-5.1
+			l2.7,0.9c-5.7,6.8-8.8,18.4,2.5,20.1C244,181,247.9,181.3,251.3,179.8L251.3,179.8z M248.7,183.7c-3,0.5-6,0.1-9-0.5
+			c-1.2-0.3-2.4-0.6-3.6-0.9c-2.2-1-4.2-2.7-5.3-4.9c-3.6-8.1,2.2-16.3,7.3-22.2c0.3,3.2-0.7,14.6,5.1,11c3-3.3-7-14.1,2.1-22.2
+			c0,0,2.5-2.2,2.5-2.2s0,3.4,0,3.4c-0.1,5.2,1.7,9.9,5.3,13.6c2.5,2.7,5.4,5.9,5.7,9.8C259.3,175.6,256.1,181.8,248.7,183.7
+			L248.7,183.7z"/>
+	</g>
+	<g>
+		<path class="st5" d="M104.1,191.7h-7.4v-15.5H82.1v15.5h-7.4v-36.1h7.4v14.6h14.5v-14.6h7.4V191.7z"/>
+		<path class="st5" d="M123.3,200.2h-14.7V197l6.8-7.1c1.7-1.9,2.5-3.4,2.5-4.5c0-0.9-0.2-1.6-0.6-2.1c-0.4-0.5-1-0.7-1.7-0.7
+			c-0.7,0-1.3,0.3-1.8,0.9c-0.5,0.6-0.7,1.4-0.7,2.4h-4.9c0-1.3,0.3-2.5,1-3.6c0.6-1.1,1.5-1.9,2.7-2.6c1.2-0.6,2.4-0.9,3.9-0.9
+			c2.3,0,4,0.5,5.3,1.6c1.2,1.1,1.8,2.6,1.8,4.5c0,0.8-0.2,1.6-0.5,2.4c-0.3,0.8-0.8,1.6-1.4,2.5c-0.6,0.9-1.7,2-3.1,3.5l-2.7,3.1
+			h8.3V200.2z"/>
+	</g>
+</g>
+</svg>

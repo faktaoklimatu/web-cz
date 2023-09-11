@@ -93,13 +93,39 @@ V dalším textu vycházíme z dekarbonizačních scénářů těchto institucí
 
 ### Jaké technologie je možné využít?
 
-* **Přímá redukce železa zeleným vodíkem**: Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení.
+#### Přímá redukce železa zeleným vodíkem
 
-* **Zachytávání CO<sub>2</sub> (CCS)**: Na vysoké pece je možné nainstalovat zařízení na zachytávání CO<sub>2</sub>. Tato zařízení dokáží zachytit 90–95 % emisí CO<sub>2</sub> dané ocelárny. Čím je ovšem míra zachytávání vyšší, tím je proces také energeticky a finančně náročnější. Technologie zachytávání CO<sub>2</sub> je zatím ve fázi drobných pilotních projektů.[^ocelccscena] Nutnou podmínkou pro větší využití CCS je dostupnost geologických úložišť pro zachycené CO<sub>2</sub>.
+{% include lead-in-figure.html
+    name="prima-redukce-vodikem.svg"
+    class="leadin-figure-small"
+    alt="Piktogram přímé redukce železa zeleným vodíkem"
+%}
 
-* **Recyklace a čistá elektřina**: Při současné recyklaci oceli v elektrických obloukových pecích vzniká ve srovnání s výrobou ze surového železa ve vysokých pecích jen zlomek emisí (při běžném mixu elektřiny je to 0,6 tun CO<sub>2</sub> na tunu oceli oproti 2,3 tun CO<sub>2</sub> při výrobě ve vysoké peci). Pokud by byly obloukové pece napájeny z nízkoemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro), vyráběly by prakticky bezemisní ocel. Již dnes jde o používanou technologii, například v USA se takto vyrábí 70 % oceli.[^iravodik] Celkově se na světě recykluje okolo 85 % oceli[^ocelrecyklace], klíčovým limitem pro využití této technologie bude dostupnost železného šrotu (ocel je materiál s dlouhou životností, objem využitelného šrotu je tedy relativně omezený).
+Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení.
 
-* **Doplňkové technologie**: Mezi doplňkové metody patří například přímá redukce železa pomocí zemního plynu, která je vhodná v regionech, kde je plyn levný a dostupný (například v USA či Rusku). Emisní intenzita v tomto případě dosahuje 1 tuny CO<sub>2</sub> na tunu vyrobené oceli, oproti výrobě ve vysokých pecích je tedy emisní stopa více než o polovinu nižší.[^iravodik] Dále je částečně možné jako palivo či redukční činidlo využívat biomasu. Vzhledem k potřebě velkého množství biomasy bude nicméně tato metoda nejspíš využívána jen omezeně, v regionech s vysokou dostupností biomasy, jako je Brazílie či Rusko.[^mckinsey] Využití biomasy ovšem sebou nese i environmentální rizika a šetrnost řešení je často sporná. Dalšího drobného snížení emisí lze dosáhnout například zvyšováním efektivity existujících pecí či využíváním železných rud s vyšším procentem železa.
+#### Zachytávání CO<sub>2</sub> (CCS) 
+
+{% include lead-in-figure.html
+    name="zachytavani-co2.svg"
+    class="leadin-figure-small"
+    alt="Piktogram zachytávání CO2"
+%}
+
+Na vysoké pece je možné nainstalovat zařízení na zachytávání CO<sub>2</sub>. Tato zařízení dokáží zachytit 90–95 % emisí CO<sub>2</sub> dané ocelárny. Čím je ovšem míra zachytávání vyšší, tím je proces také energeticky a finančně náročnější. Technologie zachytávání CO<sub>2</sub> je zatím ve fázi drobných pilotních projektů.[^ocelccscena] Nutnou podmínkou pro větší využití CCS je dostupnost geologických úložišť pro zachycené CO<sub>2</sub>.
+
+#### Recyklace a čistá elektřina
+
+{% include lead-in-figure.html
+    name="recyklace.svg"
+    class="leadin-figure-small"
+    alt="Piktogram recyklace a čistá elektřiny"
+%}
+
+Při současné recyklaci oceli v elektrických obloukových pecích vzniká ve srovnání s výrobou ze surového železa ve vysokých pecích jen zlomek emisí (při běžném mixu elektřiny je to 0,6 tun CO<sub>2</sub> na tunu oceli oproti 2,3 tun CO<sub>2</sub> při výrobě ve vysoké peci). Pokud by byly obloukové pece napájeny z nízkoemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro), vyráběly by prakticky bezemisní ocel. Již dnes jde o používanou technologii, například v USA se takto vyrábí 70 % oceli.[^iravodik] Celkově se na světě recykluje okolo 85 % oceli[^ocelrecyklace], klíčovým limitem pro využití této technologie bude dostupnost železného šrotu (ocel je materiál s dlouhou životností, objem využitelného šrotu je tedy relativně omezený).
+
+#### Doplňkové technologie 
+
+Mezi doplňkové metody patří například přímá redukce železa pomocí zemního plynu, která je vhodná v regionech, kde je plyn levný a dostupný (například v USA či Rusku). Emisní intenzita v tomto případě dosahuje 1 tuny CO<sub>2</sub> na tunu vyrobené oceli, oproti výrobě ve vysokých pecích je tedy emisní stopa více než o polovinu nižší.[^iravodik] Dále je částečně možné jako palivo či redukční činidlo využívat biomasu. Vzhledem k potřebě velkého množství biomasy bude nicméně tato metoda nejspíš využívána jen omezeně, v regionech s vysokou dostupností biomasy, jako je Brazílie či Rusko.[^mckinsey] Využití biomasy ovšem sebou nese i environmentální rizika a šetrnost řešení je často sporná. Dalšího drobného snížení emisí lze dosáhnout například zvyšováním efektivity existujících pecí či využíváním železných rud s vyšším procentem železa.
 
 ### Co ovlivní průběh dekarbonizace?
 
