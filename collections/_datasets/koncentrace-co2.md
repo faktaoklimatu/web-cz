@@ -8,10 +8,11 @@ tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Dataset obsahuje tři různé datové řady pro CO₂ lišící se časovým rozsahem, zdrojem dat i metodikou a jednu datovou řadu pro koncentrace O₂. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
 data-our:   "https://docs.google.com/spreadsheets/d/1hhIgo2eSQJit1-_wgw4lrbm2wNVJZyDvyXJYfkynMO8/edit?usp=sharing"
-data-orig:  [ [ "EPICA", "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.xls" ]
-            , [ "Scripps", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products" ]
-            , [ "Keelingova křivka", "https://scripps.ucsd.edu/programs/keelingcurve/" ] 
-            , [ "Koncentrace O₂", "http://scrippso2.ucsd.edu/osub2sub-data.html"]]
+data-orig:
+  - [ "Keelingova křivka", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html" ] 
+  - [ "Koncentrace CO₂", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products.html" ]
+  - [ "EPICA", "https://www.ncei.noaa.gov/access/paleo-search/study/17975" ]
+  - [ "Koncentrace O₂", "https://scrippso2.ucsd.edu/data/mlo.html" ]
 ---
 
 ## Keelingova křivka, rok 1958–současnost
@@ -37,7 +38,8 @@ Datová sada obsahuje jen měsíční průměry měření, detailní denní a t�
     description="MacFarling Meure, C. et al., 2006: Law Dome CO2, CH4 and N2O ice core records extended to 2000 years BP. Geophysical Research Letters, 33."
     url="https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products.html"
     doi="https://doi.org/10.1029/2006GL026152"
-    licence="zdarma k použití, vyžaduje odkázání zdroje"
+    licence="CC BY 4.0"
+    licence-url="http://creativecommons.org/licenses/by/4.0/"
     licence-proof="https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products.html"
 %}
 
@@ -55,7 +57,7 @@ Jsou současná měření a historická data srovnatelná? Měřené hodnoty z b
 {% include data-header.html
     name="NOAA (National Oceanic and Atmospheric Administration)"
     description="Bereiter, B., Eggleston, S., Schmitt, J., Nehrbass‐Ahles, C., Stocker, T. F., Fischer, H., Kipfstuhl, S., and Chappellaz, J. ( 2015), Revision of the EPICA Dome C CO2 record from 800 to 600 kyr before present, Geophys. Res. Lett., 42, 542– 549."
-    url="http://ncdc.noaa.gov/paleo/study/17975"
+    url="https://www.ncei.noaa.gov/access/paleo-search/study/17975"
     doi="https://doi.org/10.1002/2014GL061957"
     licence="zdarma k použití, vyžaduje odkázání zdroje"
     licence-proof="https://www1.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt"
@@ -93,8 +95,10 @@ Přestože mnohé z vrtů obsahují záznamy z širšího časového období, te
 {% include data-header.html
     name="Scripps Institution of Oceanography"
     description="Scripps O<sub>2</sub> Program, Atmospheric Oxygen Research."
-    url="https://scrippso2.ucsd.edu/index.html"
-    licence="otevřená vědecká data (licence není specifikovaná)"
+    url="https://scrippso2.ucsd.edu/data/mlo.html"
+    licence="CC BY 4.0"
+    licence-url="http://creativecommons.org/licenses/by/4.0/"
+    licence-proof="https://scrippso2.ucsd.edu/data/mlo.html#data-policy"
 %}
 
 Tento dataset pochází z instrumentálního měření na sopce Mauna Loa na Havaji. Metodu pro velmi přesné měření koncentrací O<sub>2</sub> objevil v roce 1988 Ralph Keeling, syn Charlese Keelinga, a podrobně ji popsal ve své [disertační práci](http://bluemoon.ucsd.edu/publications/ralph/34_PhDthesis.pdf). Tato metoda spočívá v interferometrickém měření indexu lomu vzduchu, který je závislý na poměru koncentrací kyslíku a dusíku. Tento dataset tedy technicky obsahuje měření poměru koncentrace O<sub>2</sub>/N<sub>2</sub> a je udáván ve formě relativního rozdílu vůči referenčnímu vzorku přibližně z poloviny osmdesátých let (vynásobené milionem, proto je označována "per meg"). Přesnou definici této jednotky včetně převodu na ppm najdete na stránkách [Scrippsova O2 programu](http://scrippso2.ucsd.edu/units-and-terms.html). Podle těchto instrukcí jsme také převedli tato naměřená data na jednotky ppm, abychom je mohli srovnat s růstem koncentrace CO<sub>2</sub>.
