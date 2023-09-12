@@ -62,7 +62,6 @@ items:
     targets: |
       2030: <b>−40 %</b><br>
       <b>2050: klimatická neutralita</b>
-    lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -89,7 +88,6 @@ items:
     targets: |
       2030: <b>−51 %</b><br>
       <b>2050: klimatická neutralita</b>
-    lulucf: true
     reference-year: 2018
     budgets: true
     plans: true
@@ -132,7 +130,6 @@ items:
     targets: |
       2030: <b>−40 %</b><br>
       <b>2050: klimatická neutralita</b>
-    lulucf: true
     budgets: false
     plans: false
     reporting: false
@@ -189,7 +186,6 @@ items:
       2030: <b>−55 %</b><br>
       2040: <b>−65 %</b><br>
       <b>2050: klimatická neutralita</b>
-    lulucf: true
     reference-year: 2005
     budgets: true
     plans: true
@@ -204,7 +200,6 @@ items:
     targets: |
       2030: <b>−23 %</b><br>
       <b>2050: klimatická neutralita</b>
-    lulucf: true
     budgets: false
     plans: true
     reporting: true
