@@ -18,7 +18,7 @@
             <p>
                 <b>Cíle v redukci emisí skleníkových plynů:</b>
                 {%- if include.targets -%}
-                <br>(oproti roku {{ include.reference-year }}{{ targets-lulucf-text }})
+                <br>(oproti roku {{ include.reference-year }})
                 {% endif -%}
             </p>
             <p>{{ include.targets | default: "Žádné" }}</p>
@@ -61,7 +61,7 @@
         </p>
         {% endif %}
         <p>
-            <i class="fas fa-scroll" title="Poslední verze legislativního aktu"></i><a href="{{ include.url }}"><cite>Původní legislativní akt</cite></a>
+            <i class="fas fa-scroll" title="Poslední verze legislativního aktu"></i><a href="{{ include.url }}">Původní legislativní akt</a>
             ({{ include.law-year }})
         </p>
     </section>
