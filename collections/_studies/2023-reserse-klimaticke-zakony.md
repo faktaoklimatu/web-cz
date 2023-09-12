@@ -260,7 +260,6 @@ K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Dále probíhá 
         url=country.url
         targets=country.targets
         reference-year=reference-year
-        lulucf=country.lulucf
         budgets=country.budgets
         plans=country.plans
         reporting=country.reporting
