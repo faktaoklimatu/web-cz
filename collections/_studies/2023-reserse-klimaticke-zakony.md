@@ -9,7 +9,7 @@ tags-topics: [ opatreni ]
 use-preview-image: true
 caption:     "Přehled základních informací o klimatických zákonech ve státech EU."
 intro: |
-  Již šestnáct států Evropské unie přijalo klimatický zákon, ve kterém v různé míře detailu předkládají své ambice v oblasti snižovování emisí skleníkových plynů a cesty, které k tomu povedou. Zasazení klimatických závazků do zákona ukládá aktérům ve veřejné i soukromé sféře větší odpovědnost k jejich plnění a zároveň činí klimatické ambice odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
+  Již šestnáct států Evropské unie přijalo klimatický zákon, ve kterém v různé míře detailu představují své ambice v oblasti snižovování emisí skleníkových plynů a cesty k nízkoemisní budoucnosti. Zasazení závazků do zákona ukládá aktérům ve veřejné i soukromé sféře větší odpovědnost k jejich plnění a zároveň je činí odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
 items:
   - code: BGR
     name: Bulharsko
@@ -53,7 +53,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Ačkoliv Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování emisí lesy), emise, které vypouští do atmosféry se zavázalo snižovat i poté a stát se tak klimaticky negativním státem.
+    notes: Ačkoliv Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování emisí lesy), emise, které vypouští do atmosféry se zavázalo snižovat i poté, což by znamenalo, že bude docházek k pohlcení více emisí než jich vyupustí. Stalo by se tak klimaticky negativním.
   - code: FRA
     name: Francie
     flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
@@ -106,7 +106,7 @@ items:
     reporting: false
     advisory: true
     public: false
-    notes: Spíše než o rámec pro klimatickou politiku, jde o zákon, který se věnuje především obchodování s emisními povolenkami a dalším finančním nástrojům. 
+    notes: Spíše než o rámec pro klimatickou politiku jde o zákon, který se věnuje především obchodování s emisními povolenkami a dalším finančním nástrojům. 
   - code: LUX
     name: Lucembursko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg
@@ -238,10 +238,10 @@ items:
     public: true
 ---
 {:.narrow-text}
-Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují. Hodnotí, zda zákon obsahuje: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné plánování kroků k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
+Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují, konkrétně hodnotí cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné vytváření plánů k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
 
 {:.narrow-text}
-K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Dále probíhá diskuze o klimatickém zákoně na Slovensku nebo ve Slovinsku.
+K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku nebo ve Slovinsku.
 
 <ul class="inline-bullet-list">
     {%- for country in page.items %}
