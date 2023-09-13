@@ -57,8 +57,8 @@ Výpočet územní stopy závisí na použité metodice a odhadovaných parametr
 
 **Metodické poznámky**. Výpočet využívá didaktický model vycházející ze [studie](https://www.ufa.cas.cz/DATA/vetrna-energie/Potencial_vetrne_energie_2020.pdf) Ústavu fyziky atmosféry AV ČR. Pro větší přehlednost pracuje s jediným typem větrné elektrárny[^vte-typ] o maximálním výkonu 5 MW, průměru rotoru 160 m a koeficientu využití 29 %. Předpokládá rozmístění věží do čtvercové sítě s rozestupy, které odpovídají 4,5-násobku průměru rotoru[^vte-rozestupy] (tedy 720 m). Na každou elektrárnu proto vychází územní stopa v podobě čtvercové parcely o přibližné ploše 0,5 km2.
 {% include figure.html
-    name="schema-vitr.svg"
-    name-mobile="schema-vitr.svg"
+    name="wind-scheme-des.svg"
+    name-mobile="wind-scheme-mob.svg"
     alt="Didaktický model pro výpočet územní stopy větrných parků."
     source-text="Fakta o klimatu"
 %}
@@ -88,8 +88,8 @@ Výpočet územní stopy závisí na použité metodice a odhadovaných parametr
 **Metodické poznámky**. Při výpočtu byly uvažovány fotovoltaické panely instalované v rovnoběžných řadách, v energeticky optimálním sklonu a s energeticky optimálními mezerami (v poledne zimního slunovratu se zastíní celá mezera, ale ne panely samotné).[^fve-rozestupy] V půdorysu tak pod šikmými panely leží necelá třetina parcely. Územní plocha fotovoltaické elektrárny byla ještě  navýšena o třetinu kvůli potřebě přístupových cest, okrajů a dalšího technického vybavení. Jde o odhad situace za 10–20 let, přičemž se předpokládá efektivita nejlepších dostupných FVE panelů dneška – [23 %](https://www.cleanenergyreviews.info/blog/most-efficient-solar-panels). V tomto ohledu se tedy jedná o spíše konzervativní odhad, neboť do budoucna lze očekávat mírné zvýšení konverzní efektivity panelů.[^fve-technologicky-rozvoj]
 
 {% include figure.html
-    name="schema-slunce.svg"
-    name-mobile="schema-slunce.svg"
+    name="solar-scheme-des.svg"
+    name-mobile="solar-scheme-mob.svg"
     alt="Ilustrace optimálních rozestupů mezi řadami fotovoltaických panelů."
     source-text="Fakta o klimatu"
 %}
