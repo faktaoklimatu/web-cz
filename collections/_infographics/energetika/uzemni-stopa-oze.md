@@ -34,6 +34,7 @@ Fotovoltaika má podle zvolené metodiky nejmenší územní stopu. To ovšem ne
 
 - **Pro stabilitu sítě** je nutné, aby v každém okamžiku během celého roku existovala rovnováha mezi spotřebou a výrobou elektřiny. Pro vyváženou produkci elektřiny je proto potřeba využívat slunce i vítr současně (ideálně s převahou elektřiny z větru), protože větrnost je v Česku vyšší zejména během topné sezóny, kdy slunce svítí méně a kdy je spotřeba elektřiny nejvyšší.
 {% include figure.html
+    class="figure-in-list"
     name="solar-wind-seasonality-des.svg"
     name-mobile="solar-wind-seasonality-mob.svg"
     alt="Převaha větru by vedla k sezónně vyrovnané výrobě."
