@@ -32,7 +32,6 @@ items:
       2025: <b>−50–54 %</b><br>
       2030: <b>−70 %</b><br>
       <b>2050: klimatická neutralita</b>
-    no-lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -55,7 +54,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Ačkoliv Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování emisí lesy), emise, které vypouští do atmosféry se zavázalo snižovat i poté, což by znamenalo, že bude docházek k pohlcení více emisí než jich vyupustí. Stalo by se tak klimaticky negativním.
+    notes: Ačkoliv Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování emisí lesy), emise, které vypouští do atmosféry se zavázalo snižovat i poté, což by znamenalo, že bude docházek k pohlcení více emisí než jich vypustí. Stalo by se tak klimaticky negativním.
   - code: FRA
     name: Francie
     flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
@@ -143,7 +142,7 @@ items:
     name: Malta
     flag-url: https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
     url: https://legislation.mt/eli/cap/543/eng/pdf
-    law-year: 2015
+    law-year: 2020
     targets:
     budgets: false
     plans: true
@@ -175,7 +174,6 @@ items:
     targets: |
       2030: <b>−49 %</b><br>
       2050: <b>−95 %</b>
-    no-lulucf: true
     budgets: false
     plans: true
     reporting: true
@@ -192,6 +190,7 @@ items:
       2040: <b>−65 %</b><br>
       <b>2050: klimatická neutralita</b>
     reference-year: 2005
+    no-lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -233,11 +232,10 @@ items:
     flag-url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
     law-year: 2022
     url: https://www.elinyae.gr/sites/default/files/2022-05/105a_2022.pdf
-    targets: |
+    targets: | # Note: Zahrnuje ciste antropogenni emise
       2030: <b>−55 %</b><br>
       2040: <b>−80 %</b><br>
-      <b>2050: klimatická neutralita</b>
-    no-lulucf: true
+      <b>2050: klimatická neutralita</b>  
     budgets: true
     plans: false
     reporting: true
@@ -245,10 +243,13 @@ items:
     public: true
 ---
 {:.narrow-text}
-Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují, konkrétně hodnotí cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné vytváření plánů k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
+Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119), ve kterém se zavázala dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary> v roce 2050 a do roku 2030 snížit své emise skleníkových plynů o 55 % oproti roku 1990. Zákon je však závazný pouze pro Unii jako celek, nestanovuje klimatické cíle ani neupravuje trajektorii k jejich dosažení v jednotlivých členských státech. K roku 2023 přijalo vlastní klimatických zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku nebo ve Slovinsku.
 
 {:.narrow-text}
-K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku nebo ve Slovinsku.
+Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují. Zatímco některé vytyčují vlastní cíle pro snižování emisí, jiné pouze do národní legislativy převádí závazky vyplývající z Pařížské dohody nebo existující unijní legislativy. Konkrétně pak rešerše hodnotí, zda zákon obsahuje následující prvky: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné vytváření plánů k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
+
+{:.narrow-text}
+*Hvězdičkou (\*) jsou označeny cíle, které zahrnují i emise ze sektoru využití půdy a lesů (Land Use, Land Use Change and Forestry, LULUCF). Tyto emise bývají díky pohlcování půdou a lesy často záporné, ve skutečnosti tak země dosáhne ještě vyššího cíle redukce emisí.*
 
 <ul class="inline-bullet-list">
     {%- for country in page.items %}
