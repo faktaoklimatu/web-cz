@@ -32,6 +32,7 @@ items:
       2025: <b>−50–54 %</b><br>
       2030: <b>−70 %</b><br>
       <b>2050: klimatická neutralita</b>
+    no-lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -48,6 +49,7 @@ items:
       <b>2035: klimatická neutralita</b><br>
       2040: <b>−80 %</b><br>
       2050: <b>−95 %</b>
+    no-lulucf: true
     budgets: false
     plans: true
     reporting: true
@@ -115,6 +117,7 @@ items:
     targets: |
       2030: <b>−55 %</b><br>
       <b>2050: klimatická neutralita</b>
+    no-lulucf: true
     reference-year: 2005
     budgets: false
     plans: true
@@ -157,6 +160,7 @@ items:
       2030: <b>−65 %</b><br>
       2040: <b>−88 %</b><br>
       <b>2045: klimatická neutralita</b>
+    no-lulucf: true
     budgets: true
     plans: true
     reporting: true
@@ -171,6 +175,7 @@ items:
     targets: |
       2030: <b>−49 %</b><br>
       2050: <b>−95 %</b>
+    no-lulucf: true
     budgets: false
     plans: true
     reporting: true
@@ -215,6 +220,7 @@ items:
       2030: sektorové cíle<br>
       2040: sektorové cíle<br>
       <b>2045: klimatická neutralita</b>
+    no-lulucf: true
     budgets: false
     plans: true
     reporting: true
@@ -231,6 +237,7 @@ items:
       2030: <b>−55 %</b><br>
       2040: <b>−80 %</b><br>
       <b>2050: klimatická neutralita</b>
+    no-lulucf: true
     budgets: true
     plans: false
     reporting: true
@@ -259,6 +266,7 @@ K roku 2023 přijalo klimatických zákon 16 z 27 států Unie. Diskuze o klimat
         law-year=country.law-year
         url=country.url
         targets=country.targets
+        no-lulucf=country.no-lulucf
         reference-year=reference-year
         budgets=country.budgets
         plans=country.plans

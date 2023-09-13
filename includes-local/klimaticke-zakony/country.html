@@ -1,3 +1,7 @@
+{% assign targets-html = include.targets | default: "Žádné" %}
+{% if include.targets and include.no-lulucf %}
+    {% assign targets-html = targets-html | replace: "%", "% <span title='Cíl nezahrnuje emise z využívání půdy a lesů (tzv. LULUCF)' data-toggle='tooltip'>*</span>" %}
+{% endif %}
 <div
     class="card"
     data-name="{{ include.name }}"
@@ -21,7 +25,7 @@
                 <br>(oproti roku {{ include.reference-year }})
                 {% endif -%}
             </p>
-            <p>{{ include.targets | default: "Žádné" }}</p>
+            <p>{{ targets-html }}</p>
         </div>
         <div class="card-body">
             <p class="font-weight-bold">Obsah:</p>

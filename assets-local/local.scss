@@ -173,11 +173,16 @@ $c-callout-text: #373633;
     .checklist {
         padding-left: 0;
         list-style: none;
-    }
 
-    .checklist .fas { margin-right: 0.5em; }
-    .yes .fas { color: #5db16f; }
-    .no { color: #bdc3c8; }
+        li[title] {
+            cursor: pointer;
+            text-decoration: underline dotted;
+        }
+
+        .fas { margin-right: 0.7em; }
+        .yes .fas { color: #5db16f; }
+        .no { color: #bdc3c8; }
+    }
 
     .footer {
         font-size: 0.9em;
@@ -254,7 +259,9 @@ $c-callout-text: #373633;
             grid-template-columns: 40% auto;
         }
 
-        .popover-text { text-decoration: none; }
+        .checklist li[title] {
+            text-decoration: none;
+        }
     }
 }
 
