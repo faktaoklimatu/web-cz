@@ -15,7 +15,7 @@ data-our:   "https://docs.google.com/spreadsheets/d/1SIiWX_pCvMLBQKPB25q6xLOZxWA
 
 Grafika porovnává územní stopu (územní náročnost) obnovitelných zdrojů elektřiny, tedy jak velká plocha území ČR by byla nutná k výrobě 25 TWh elektřiny za rok – zhruba 40 % současné spotřeby. Přibližně stejné množství elektřiny by do sítě ročně dodaly tři velké jaderné bloky (například dva bloky v Temelíně a jeden nový v Dukovanech).
 
-## Kolik obnovitelných zdrojů může Česko na svém území vybudovat?
+## Jakou roli v rozvoji obnovitelných zdrojů elektřiny hrají územní limity?
 <!-- ## Kolik území na rozvoj obnovitelných zdrojů Česko má? -->
 
 {% include preview-box.html
