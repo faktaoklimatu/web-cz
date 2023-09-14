@@ -16,7 +16,6 @@ data-our:   "https://docs.google.com/spreadsheets/d/1SIiWX_pCvMLBQKPB25q6xLOZxWA
 Grafika porovnává územní stopu (územní náročnost) obnovitelných zdrojů elektřiny, tedy jak velká plocha území ČR by byla nutná k výrobě 25 TWh elektřiny za rok – zhruba 40 % současné spotřeby. Přibližně stejné množství elektřiny by do sítě ročně dodaly tři velké jaderné bloky (například dva bloky v Temelíně a jeden nový v Dukovanech).
 
 ## Jakou roli v rozvoji obnovitelných zdrojů elektřiny hrají územní limity?
-<!-- ## Kolik území na rozvoj obnovitelných zdrojů Česko má? -->
 
 {% include preview-box.html
     title="Kolik elektřiny z obnovitelných zdrojů Česko potřebuje?"
@@ -72,17 +71,6 @@ Výpočet územní stopy závisí na použité metodice a odhadovaných parametr
 **"Hluková stopa"**. Kromě námitek spojených s přítomností větrných elektráren v krajině a narušením jejího rázu zaznívají také obavy z hlukového zatížení. V tomto směru je nicméně optimalizace dnes už velmi pokročilá a stavby jsou povolovány jen v dostatečné vzdálenosti (minimálně 500 m) od rezidenční zástavby. To znamená, že bezpečně splňují hlukové normy a ve většině případů se hluk při provozu turbíny příliš neliší od hluku pozadí (hluk způsobený větrem je silnější než hluk elektrárny).[^vte-hluk]
 
 **Ekologická stopa**. V některých oblastech mohou být větrné parky rizikem pro netopýry a větší ptačí druhy, což může znamenat omezení výstavby v těchto lokalitách. Na mnoha dalších místech se však o velký problém nejedná nebo lze negativní dopady zásadně omezit selektivním vypínáním turbín v kritických obdobích, aniž by docházelo ke znatelným ztrátám na celkové produkci elektřiny.[^vte-vypinani] Vypínání provozu je například vhodné při aktivitě netopýrů během teplých letních nocí, v období tahu ptáků, po sklizni plodin či při sečení trávy. Z hlediska rizik je také dobré zmínit, že větším nebezpečím pro ptáky jsou průhledné a lesklé plochy staveb, doprava, elektrické vedení v krajině, znečištění ovzduší, jedy používané například k hubení škůdců v zemědělství nebo klimatická změna.[^vte-riziko-ptaci]
-
-<!-- TODO: smazat, pokud bez boxu je to ok. S boxem by se musely vyřešit nefunkční footnotes.
-{% capture detaily_vte %}
-{% endcapture %}
-{% include expander-figure.html
-    name="detaily_vte"
-    class="contrast-figure"
-    label='Hluková a ekologická "stopa" větrné energetiky'
-    content=detaily_vte
-%}
--->
 
 ### Slunce
 
