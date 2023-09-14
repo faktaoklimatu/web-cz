@@ -18,7 +18,7 @@ cover-source-url:           "https://www.flickr.com/photos/noaaphotolib/50333678
 perex: |
     Průměrná teplota planety se pohybuje okolo 15 °C a s postupující klimatickou změnou se pomalu zvyšuje – zhruba o 0,2 °C za dekádu. Otázka průměrné teploty planety je ale trochu komplikovanější, záleží totiž například na ročních obdobích. Více vysvětluje následující text.
 ---
-**Průměrná teplota planety** je dobře definovaný koncept. V textech o Zemi či v odborných článcích na něj však člověk narazí jen zřídka. Částečně i proto, že jde o údaj, který není příliš reprezentativní. Teploty na Zemi mají obrovský rozptyl (zatímco v Antarktidě běžně dosahují −60 °C a v tropických oblastech okolo +40 °C) a průměrnou teplotu planety si zkrátka nelze jednoduše představovat jako něco mezi Antarktidou a tropy.
+**Průměrná teplota planety** je dobře definovaný koncept. V textech o Zemi či v odborných článcích na něj však člověk narazí jen zřídka. Částečně i proto, že jde o údaj, který není příliš reprezentativní. Teploty na Zemi mají obrovský rozptyl (v Antarktidě běžně dosahují −60 °C, na pouštích více než +40 °C) a průměrnou teplotu planety si zkrátka nelze jednoduše představovat jako něco mezi mrazivou Antarktidou a rozpálenou pouští.
 
 Přesto je užitečné vědět, jak se průměrná teplota planety mění, zejména pro pochopení dynamiky planetárního klimatu. Proto vznikl tento text. (Koncept teplotní anomálie, který se v praxi používá mnohem častěji, je zde jen zběžně nastíněn a podrobněji bude vysvětlen jinde.)
 
