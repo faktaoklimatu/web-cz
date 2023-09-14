@@ -3,13 +3,13 @@ layout:      survey
 title:       "Klimatické zákony států EU"
 slug:        2023-reserse-klimaticke-zakony
 weight:      303
-published:   2023-09-12
+published:   2023-09-15
 tags-scopes: [ eu ]
 tags-topics: [ opatreni ]
 use-preview-image: true
 caption:     "Přehled základních informací o klimatických zákonech ve státech EU."
 intro: |
-  Již šestnáct států Evropské unie přijalo klimatický zákon, ve kterém v různé míře detailu představují své ambice v oblasti snižovování emisí skleníkových plynů a cesty k nízkoemisní budoucnosti. Zasazení závazků do zákona ukládá aktérům ve veřejné i soukromé sféře větší odpovědnost k jejich plnění a zároveň je činí odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
+  Už šestnáct států Evropské unie přijalo svůj vlastní klimatický zákon. Každý z nich v něm představuje své ambice na snižování emisí skleníkových plynů a cesty k nízkoemisní budoucnosti – míra detailu se ovšem v různých zemích dost liší. Zasazení klimatických závazků do zákona je důležité v tom, že aktéři ve veřejné i soukromé sféře mají větší zodpovědnost za jejich plnění a zároveň se tyto závazky stávají odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
 items:
   - code: BGR
     name: Bulharsko
@@ -22,14 +22,14 @@ items:
     reporting: false
     advisory: false
     public: false
-    notes: Zákon se zaměřuje především na implementaci unijní legislativy a plnění závazků Bulharska v rámci EU.
+    notes: Zákon se zaměřuje především na zavádění (implementaci) unijní legislativy a plnění závazků Bulharska v rámci EU.
   - code: DNK
     name: Dánsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
     law-year: 2021
     url: https://www.retsinformation.dk/eli/lta/2021/2580
     targets: |
-      2025: <b>−50–54 %</b><br>
+      2025: <b>−50 až –54 %</b><br>
       2030: <b>−70 %</b><br>
       <b>2050: klimatická neutralita</b>
     budgets: true
@@ -37,7 +37,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Dánsko v zákonu vyjadřuje ambici stát se globálním lídrem v úsilí o ochranu klimatu.
+    notes: Dánsko v zákoně vyjadřuje svou ambici stát se v úsilí zaměřeném na ochranu klimatu globálním lídrem.
   - code: FIN
     name: Finsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
@@ -54,7 +54,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Ačkoliv Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování emisí lesy), emise, které vypouští do atmosféry se zavázalo snižovat i poté, což by znamenalo, že bude docházek k pohlcení více emisí než jich vypustí. Stalo by se tak klimaticky negativním.
+    notes: Ačkoli Finsko zamýšlí dosáhnout klimatické neutrality již v roce 2035 (díky pohlcování a ukládání uhlíku tamními rozlehlými lesy), má ambici stát se klimaticky negativní, tedy pokračovat ve snižování emisí skleníkových plynů i dál a pohltit jich z atmosféry více, než kolik jich vypustí.
   - code: FRA
     name: Francie
     flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
@@ -68,7 +68,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Zákon obsahuje i konkrétní opatření pro ochranu klimatu v různých odvětvích (školství, dopravě, zemědělství atd.).
+    notes: Zákon obsahuje i konkrétní opatření na ochranu klimatu v různých odvětvích (školství, dopravě, zemědělství atd.).
   - code: HRV
     name: Chorvatsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
@@ -95,7 +95,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Ministři a ministryně jsou odpovědní za plnění cílů a přijímání opatření v resortu, který vedou. O pokroku pak každoročně reportují.
+    notes: Ministři a ministryně zodpovídají za plnění cílů a přijímání opatření v resortu, který vedou. O pokroku pak každoročně sestavují report.
   - code: LTU
     name: Litva
     flag-url: https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
@@ -123,7 +123,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Vytváří platformu pro klima, která zprostředkovává dialog mezi představitely komun, organizacemi občanské společnosti, vedoucími firem, investory a širokou veřejností.
+    notes: Zákon vytváří platformu pro klima, která zprostředkovává dialog mezi představiteli místní samosprávy, organizacemi občanské společnosti, vedoucími firem, investory a širokou veřejností.
   - code: HUN
     name: Maďarsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg
@@ -137,7 +137,7 @@ items:
     reporting: false
     advisory: false
     public: false
-    notes: Udává pouze cíle pro snižování emisí skleníkových plynů a základní principy.
+    notes: Zákon pouze udává cíle pro snižování emisí skleníkových plynů a základní principy národní klimatické politiky.
   - code: MLT
     name: Malta
     flag-url: https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
@@ -149,7 +149,7 @@ items:
     reporting: false
     advisory: false
     public: true
-    notes: Implementaci zákona by měl dohlížet _Climate Action Board_, který sdružuje premiéra, ministry a další aktéry z řad odborníků a odbornic.
+    notes: Na implementaci zákona by měl dohlížet _Climate Action Board_ (premiér, ministři a další aktéři z expertních řad).
   - code: DEU
     name: Německo
     flag-url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg
@@ -165,7 +165,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Neuvádí nutnost vytvářet krátkodobé akční plány a dlouhodobé strategie.
+    notes: Zákon neuvádí nutnost vytvářet krátkodobé akční plány a dlouhodobé strategie.
   - code: NLD
     name: Nizozemsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
@@ -179,7 +179,7 @@ items:
     reporting: true
     advisory: false
     public: false
-    notes: Roli odborného porádního orgánu přebírá již existující vládní agentura.
+    notes: Roli odborného poradního orgánu přebírá již existující vládní agentura.
   - code: PRT
     name: Portugalsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
@@ -209,7 +209,7 @@ items:
     reporting: true
     advisory: true
     public: true
-    notes: Vyžaduje, aby firmy připravily vlastní klimatické plány.
+    notes: Vyžaduje po firmách, aby připravily své vlastní klimatické plány.
   - code: SWE
     name: Švédsko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg
@@ -226,7 +226,7 @@ items:
     advisory: true
     public: true
     notes: |
-      Klimatická politika Švédska je tvořena třemi pilířy: klimatickým zákonem, cíli pro snižování emisí skleníkových plynů a radou pro klimatickou politiku.
+      Klimatická politika Švédska je tvořena třemi pilíři: klimatickým zákonem, cíli pro snižování emisí skleníkových plynů a Radou pro klimatickou politiku.
   - code: GRC
     name: Řecko
     flag-url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
@@ -243,13 +243,13 @@ items:
     public: true
 ---
 {:.narrow-text}
-Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119), ve kterém se zavázala dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary> v roce 2050 a do roku 2030 snížit své emise skleníkových plynů o 55 % oproti roku 1990. Zákon je však závazný pouze pro Unii jako celek, nestanovuje klimatické cíle ani neupravuje trajektorii k jejich dosažení v jednotlivých členských státech. K roku 2023 přijalo vlastní klimatických zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku nebo ve Slovinsku.
+Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119) v roce 2021. Zavázala se v něm dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary> v roce 2050 a do roku 2030 snížit své emise skleníkových plynů o 55 % oproti roku 1990. Tento zákon je však závazný pouze pro Unii jako celek – pro jednotlivé členské státy nestanovuje klimatické cíle ani neupravuje trajektorii k jejich dosažení. K roku 2023 přijalo vlastní klimatický zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku a ve Slovinsku.
 
 {:.narrow-text}
-Rešerše ukazuje, jaké aspekty jednotlivé klimatické zákony (ne)obsahují. Zatímco některé vytyčují vlastní cíle pro snižování emisí, jiné pouze do národní legislativy převádí závazky vyplývající z Pařížské dohody nebo existující unijní legislativy. Konkrétně pak rešerše hodnotí, zda zákon obsahuje následující prvky: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné vytváření plánů k transformaci a reportování o pokroku, zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
+Rešerše ukazuje, které aspekty (ne)obsahují klimatické zákony v jednotlivých státech. Zatímco některé zákony vytyčují své vlastní cíle pro snižování emisí, jiné pouze do národní legislativy převádějí závazky vyplývající z Pařížské dohody nebo existující unijní legislativy. Konkrétně pak rešerše hodnotí, zda zákon obsahuje následující prvky: cíle pro snižování emisí skleníkových plynů, uhlíkové rozpočty, průběžné vytváření plánů pro transformaci na nízkouhlíkovou ekonomiku a reportování o pokroku (plnění těchto plánů), dále zřízení poradních orgánů nezávislých na vládě a účast veřejnosti při rozhodování o podobě klimatické politiky státu.
 
 {:.narrow-text}
-*Hvězdičkou (\*) jsou označeny cíle, které zahrnují i emise ze sektoru využití půdy a lesů (Land Use, Land Use Change and Forestry, LULUCF). Tyto emise bývají díky pohlcování půdou a lesy často záporné, ve skutečnosti tak země dosáhne ještě vyššího cíle redukce emisí.*
+*Hvězdičkou (\*) jsou označeny cíle, které nezahrnují emise skleníkových plynů ze sektoru využití půdy a lesnictví (Land Use, Land Use Change and Forestry – LULUCF). Tyto emise bývají díky pohlcování a ukládání uhlíku v půdě a lesích často záporné. Jinými slovy: dojde-li k redukci 100 % emisí i bez započtení LULUCF je v daném státě více emisí z atmosféry pohlceno, než kolik jich tento stát do ovzduší vypustí. Příkladem země, která má ambici stát se nejen uhlíkově neutrální, ale dokonce uhlíkově negativní, je Finsko.*
 
 <ul class="inline-bullet-list">
     {%- for country in page.items %}
