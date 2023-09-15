@@ -249,3 +249,17 @@ $c-callout-text: #373633;
 .ff55-done {
     color: #8ab59b;
 }
+
+.tabulka-uzemni-stopa-oze {
+    td.important {
+        font-weight: bold;
+    }
+    th:not(.important) {
+        font-weight: normal;
+    }
+    td:not(.important), .unit {
+        font-weight: normal;
+        color: $c-grey;
+        font-size: 0.9rem;
+    }
+}
