@@ -51,7 +51,42 @@ Fotovoltaika má podle zvolené metodiky nejmenší územní stopu. To ovšem ne
 
 ## Metodika výpočtu a další souvislosti
 
-Výpočet územní stopy závisí na použité metodice a odhadovaných parametrech, a v literatuře se proto liší. Zde jsou předpoklady a metodika výpočtu uvedeny pro každý zdroj zvlášť.
+Výpočet územní stopy závisí na použité metodice a odhadovaných parametrech, a v literatuře se proto liší. Níže jsou předpoklady a metodika výpočtu uvedeny pro každý zdroj zvlášť, samotné výpočty jsou k dispozici v přiložené [tabulce](https://docs.google.com/spreadsheets/d/1SIiWX_pCvMLBQKPB25q6xLOZxWAxHYIBSQpmHPhlKsQ/edit).
+
+Výpočet územní stopy shrnuje následující tabulka, vyjadřující **roční výrobu elektřiny z jednoho km<sup>2</sup> území**:
+
+<table class="table mt-4 tabulka-uzemni-stopa-oze">
+  <thead>
+    <tr>
+      <th scope="col" class="align-middle important">Zdroj</th>
+      <th scope="col" class="align-middle">Instalovaný výkon na km<sup>2</sup></th>
+      <th scope="col" class="align-middle">Průměrný koeficient ročního využití</th>
+      <th scope="col" class="align-middle important">Průměrná roční výroba elektřiny na km<sup>2</sup></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="important">Vítr</td>
+      <td>9,6 <span class="unit">MWp/km<sup>2</sup></span></td>
+      <td>28,9 <span class="unit">%</span></td>
+      <td class="important">24,4 <span class="unit">GWh/km<sup>2</sup></span></td>
+    </tr>
+    <tr>
+      <td class="important">Slunce</td>
+      <td>59,1 <span class="unit">MWp/km<sup>2</sup></span></td>
+      <td>12,5 <span class="unit">%</span></td>
+      <td class="important">64,8 <span class="unit">GWh/km<sup>2</sup></span></td>
+    </tr>
+    <tr>
+      <td class="important">Biomasa</td>
+      <td class="">–</td>
+      <td class="">–</td>
+      <td class="important">2,1 <span class="unit">GWh/km<sup>2</sup></span></td>
+    </tr>
+  </tbody>
+</table>
+
+Na příklad pro fotovoltaiku je na roční výrobu 25 TWh potřeba 25 000 ÷ 65,8 = 386 km<sup>2</sup>. Proto jsou také na mapce v grafice k fotovoltaice vyznačené 4 čtverečky (každý s plochou 100 km<sup>2</sup>).
 
 ### Vítr
 
@@ -127,7 +162,7 @@ Pro přesnější výpočet územní stopy by bylo nutné započítat i energeti
 [^vte-riziko-ptaci]: David Hanslian: [Aktualizace potenciálu větrné energie v České republice z perspektivy roku 2020](https://www.ufa.cas.cz/DATA/vetrna-energie/Potencial_vetrne_energie_2020.pdf), strana 36.
 [^fve-rozestupy]: Územní stopu by šlo dále snižovat menšími mezerami mezi řadami fotovoltaických panelů a jejich menším sklonem. Například panely instalované "na plocho", které  by zakrývaly 60 % plochy parcely, by pro stejnou výrobu potřebovaly poloviční prostor. Toto uspořádání by mírně snížilo výrobu elektřiny na jeden panel (nižší koeficient využití) a mírně navýšilo sezónní nevyváženost výroby.
 [^fve-technologicky-rozvoj]: Nicméně i zde jsou určitá fyzikální omezení: efektivita běžných "single junction" panelů nemůže překročit 31 % (tzv. [Shockley–Queisser limit](https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit)). ["Multi-junction" panely](https://en.wikipedia.org/wiki/Multi-junction_solar_cell) jsou zatím doménou výzkumných laboratoří a speciálních aplikací, například v letectví a kosmonautice.
-[^fve-agrivoltaika]: Možnosti agrivoltaiky popisuje [článek](https://www.nrel.gov/news/program/2022/growing-plants-power-and-partnerships.html) americké výzkumné organizace NREL. V češtině se také někdy používá označení "agrovoltaika". 
+[^fve-agrivoltaika]: Možnosti agrivoltaiky popisuje [článek](https://www.nrel.gov/news/program/2022/growing-plants-power-and-partnerships.html) americké výzkumné organizace NREL. V češtině se také někdy používá označení "agrovoltaika".
 [^fve-strechy]: Menší instalace na střechách jsou ovšem v přepočtu výrazně dražší než velké solární parky. Např. společnost Lazard ve svých [analýzách](https://www.lazard.com/research-insights/2023-levelized-cost-of-energyplus/) odhaduje, že malé instalace jsou 2–5× dražší.
 [^fve-versus-uhli]: Územní stopu odhaduje Calla ve svém sborníku [Ekologická obnova území narušených těžbou nerostných surovin a průmyslovými deponiemi](http://www.calla.cz/piskovny/wordpress/wp-content/uploads/sbornik_internet.pdf) (strana 15). Většina této plochy připadá na těžbu hnědého uhlí. Téměř veškeré toto uhlí směřovalo do elektráren a tepláren, kde se z něj ročně vyrobilo asi 28 TWh elektřiny.
 [^biomasa-miscanthus]: Ozdobnice obrovská (_miscanthus giganteus_) má vyšší energetické výnosy na hektar mimo jiné díky fotosyntéze typu C4. Její pěstování není zatím u nás rozšířeno a podle [Lewandowského a spol.](https://dspace.library.uu.nl/bitstream/handle/1874/21677/NWS-E-2006-41.pdf?sequence=1) se kvůli prvotním nákladům vyplatí méně než pěstování rychle rostoucí dřevin. Nicméně například v Anglii se podle [statistik](https://www.gov.uk/government/statistics/area-of-crops-grown-for-bioenergy-in-england-and-the-uk-2008-2020/section-2-plant-biomass-miscanthus-short-rotation-coppice-and-straw) ozdobnice pěstuje na výrazně větších plochách než rychle rostoucí dřeviny.
