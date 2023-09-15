@@ -5,6 +5,8 @@ slug:        "teplota-zeme"
 published:   2023-09-15
 authors:
   - id: "ondras-pribyla"
+  - id: "kristi-psorn-zakopcanova"
+    minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
 weight:      74
