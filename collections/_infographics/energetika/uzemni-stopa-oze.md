@@ -86,7 +86,7 @@ Výpočet územní stopy shrnuje následující tabulka, vyjadřující **ročn�
   </tbody>
 </table>
 
-Na příklad pro fotovoltaiku je na roční výrobu 25 TWh potřeba 25 000 ÷ 65,8 = 386 km<sup>2</sup>. Proto jsou také na mapce v grafice k fotovoltaice vyznačené 4 čtverečky (každý s plochou 100 km<sup>2</sup>).
+Na příklad pro fotovoltaiku je na roční výrobu 25 TWh potřeba 25 000 GWh ÷ 64,8 GWh/km<sup>2</sup> = 386 km<sup>2</sup>. Proto jsou také na mapce v grafice k fotovoltaice vyznačené 4 čtverečky (každý s plochou 100 km<sup>2</sup>).
 
 ### Vítr
 
