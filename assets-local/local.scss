@@ -251,15 +251,25 @@ $c-callout-text: #373633;
 }
 
 .tabulka-uzemni-stopa-oze {
-    td.important {
+    td {
         font-weight: bold;
     }
-    th:not(.important) {
+    th:not(.important), .unit {
         font-weight: normal;
     }
     td:not(.important), .unit {
-        font-weight: normal;
         color: $c-grey;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .tabulka-uzemni-stopa-oze {
+        th:not(.important), td:not(.important) {
+            font-size: 0.8rem;
+        }
+        td, th {
+            padding: 0.5rem;
+        }
     }
 }
