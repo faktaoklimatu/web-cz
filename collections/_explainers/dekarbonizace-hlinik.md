@@ -55,7 +55,7 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 #### Z těchto scénářů vyplývá:
 
 * U hliníku nemůžeme očekávat snížení poptávky. Poptávka po něm se naopak do roku 2050 může zvýšit o 50–80 %.[^hlinikrecyklace] Substituce či snížení poptávky se nejeví jako reálná také proto, že se v některých oblastech o hliníku uvažuje jako o možné náhradě za ocel, plasty apod. Jedná se i o důležitý materiál v rámci dekarbonizace.
-* Hlavním způsobem snížení emisí skleníkových plynů je dekarbonizace výroby elektřiny. Budou se tak vysktytovat nadále výrazné regionální rozdíly v emisní intenzitě hliníku v závislosti na tom jak se v dané oblasti elektřina vyrábí. S postupující globální dekarbonizací výroby elektřiny budou emise z výroby hliníku klesat.
+* Jednoznačně hlavním způsobem snížení emisí skleníkových plynů je dekarbonizace výroby elektřiny. **Plně dekarbonizovaná síť by mohla snížit průměrnou emisní intenzitu výroby hliníku o 75 %.** Budou se tak vysktytovat nadále výrazné regionální rozdíly v emisní intenzitě hliníku v závislosti na tom jak se v dané oblasti elektřina vyrábí. S postupující globální dekarbonizací výroby elektřiny budou emise z výroby hliníku klesat.
 * Doplňující technologie jsou převážně nízkoemisní vodík a do menší míry zachytávání CO<sub>2</sub>.
 * Dekarbonizovaný hliník může být až o 40 % drazší, ovšem pro koncové spotřebitele by šlo o navýšení ceny o 1-2 % jelikož použitý hliník tvoří pouze zlomek celkové ceny i dnes.[^wef]
 * Zpoplatňování emisí skleníkových plynů (např. systém EU ETS) bude pro konkurenceschopnost nízkoemisního hliníku klíčové. Zpoplatnění tCO2 na úrovni 210 USD by znamenalo konkurenceschopnost dekarbonizovaného hliníku.[^wef] 
@@ -70,6 +70,23 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 * **Zachytávání CO<sub>2</sub> (CCS)** - Na nahrazení procesních emisí vznikajících během procesu elektrolýzy je teoreticky možné využít zařízení na zachytávání CO<sub>2</sub>.[^ccshlinik] U hliníku je ovšem problém relativně nízká koncentrace CO<sub>2</sub> u odpadního plynu. Je totiž podstatně nizší než například u spalování fosilních paliv, pro které byly technologie CCS často vyvíjeny. Zároveň přítomnost jiných znečisťujích látek dále komplikuje situaci. V současné době tak probíhá výzkum jak umožnit využití CCS při výrobě hliníku.[^ccs]
 
 * **Inertní anody** - Lze zabránit tomu aby uhlík z anod reagoval s kyslíkem z oxidu hlinitého. Lze využít tzv. inertní anody, které neuvolňují uhlík a tudíž dojde pouze k tvorbě kyslíku jako vedlejšího produktu při tavení hliníku. V současné době inertní anody pro výroby hliníku nejsou komerčně dostupné, ale probíhají pilotní projekty a výzkum.[^inert]
+
+### Co ovlivní průběh dekarbonizace?
+
+Kvůli náročnosti výroby hliníku z hlediska dodávek elektřiny mají velkou výhodu v dekarbonizujícím se světě konkrétní továrny na hliník, které se nachází v zemích s dostatkem levné a nízkoemisní elektřiny. Odběratelé hliníku, kteří touží po co nejnizší možné uhlíkové stopě dnes mohou využívat co nejvíce recyklovaného hliníku, ale ten je kvůli vysokým mírám recyklace vyčerpatelný a tak emisní stopa primárního hliníku může do budoucna být čím dál větším faktorem v rámci konkurence. 
+
+Výroba hliníku je zároveň považována za strategickou a tudíž míra podpory státu při zachování výroby hliníku může být vyšší. 
+
+Hlavní opatření, které budou průběh dekarbonizace sektoru ovlivňovat:
+
+* Dekarbonizace výroby elektřiny: je nutné nadále rozvíjet nízkoemisní zdroje elektřiny jako solární, větrné či jaderné elektrárny či výrobu hliníku soustředit do oblastí kde již dekarbonizovaná elektřina je dostupná jako například v Norsku či Švédsku.
+
+* Mechanismy srovnávající ceny hliníku odlišných emísních intenzit: investiční podpora (v EU například Modernizační či Inovační fond, v USA IRA), systém uhlíkového vyrovnávání na hranicích (CBAM) a systém emisních povolenek či uhlíkové daně
+    
+* Poptávka po nízkoemisním hliníku: odběratelé hliníku mohou chtít snižovat svou uhlíkovou stopu či odpovídat na poptávku zákazníků i v případech kdy by nízkoemisní hliník byl drazší.
+
+* Rozvoj výroby zeleného vodíku a technologií pro zachytávání CO<sub>2</sub> společně s technologickým pokrokem v oblasti inertních anod.
+
 
 {% include figure.html
     name="hlinik.jpg"
