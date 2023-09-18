@@ -29,31 +29,19 @@ Hliník je velmi lehký kov s dobrými vodivými vlastnosti, který se hojně vy
 
 ## Výroba hliníku a emise skleníkových plynů
 
-Globálně se ročně vyrábí okolo 68 Mt primárního hliníku.[^hlinikvyroba] **Více než 60 % emisí při výrobě hliníku je spojeno s využitím elektřiny s vysokou uhlíkovou stopou.**[^hlinikelektrina] Zde se ovšem jedná o nepřímé emise, jelikož elektřina je zpravidla vyrobena mimo daný provoz. Z této provázanosti s elektřinou také plyne, že konkrétní emisní intenzita hliníku se v různých zemích liší v závislosti na jejich energetickém mixu. V Evropě vypouštíme na tunu hliníku v průměru okolo 7 tun CO<sub>2</sub>eq, celosvětový průměr je kolem 16 tun CO<sub>2</sub>eq.[^hlinieuasvet] Pro představu, jak velký by byl rozdíl při využití výhradně bezemisní elektřiny: u tuny hliníku vyrobené pouze pomocí elektřiny dodávané vodní elektrárnou by vznikly cca 4 tuny CO<sub>2</sub>eq, v případě uhelné elektrárny to může být až 20 tun CO<sub>2</sub>eq.[^hliniklokace]
+Globálně se ročně vyrábí okolo 68 Mt primárního hliníku a kolem 30 Mt hliníku je recyklováno.[^hlinikvyroba] **Více než 60 % emisí při výrobě hliníku je spojeno s využitím elektřiny s vysokou uhlíkovou stopou.**[^hlinikelektrina] Zde se ovšem jedná o nepřímé emise, jelikož elektřina je zpravidla vyrobena mimo daný provoz. Z této provázanosti s elektřinou také plyne, že konkrétní emisní intenzita hliníku se v různých zemích liší v závislosti na jejich energetickém mixu. V Evropě vypouštíme na tunu hliníku v průměru okolo 7 tun CO<sub>2</sub>eq, celosvětový průměr je kolem 16 tun CO<sub>2</sub>eq.[^hlinikeuasvet] Pro představu, jak velký by byl rozdíl při využití výhradně bezemisní elektřiny: u tuny hliníku vyrobené pouze pomocí elektřiny dodávané vodní elektrárnou by vznikly cca 4 tuny CO<sub>2</sub>eq, v případě uhelné elektrárny to může být až 20 tun CO<sub>2</sub>eq.[^hliniklokace] Recyklovaný hliník může mít uhlíkovou intenzitu 0,5 CO2eq na tunu produktu.[^recyklaceintenzita]
 
 Výroba hliníku tvoří 2 % světových emisí skleníkových plynů.[^dveprocenta] **Přímé emise výroby hliníku jsou spojeny se spalováním fosilních paliv pro dosažení potřebných teplot a s chemickými reakcemi** v rámci procesu elektrolýzy. Procesní emise z chemických reakcí představují 15 % emisí skleníkových plynů a 15 % platí i pro emise ze spalování.[^hlinikelektrina] Zbylé emise jsou spojeny například s dopravou.
 
-Aby se vyrobil hliník, je nutné vytěžit bauxit, který je následně zpracován rafinací do oxidu hlinitého (Al<sub>2</sub>O<sub>3</sub> neboli alumina). Tento proces má na svědomí kolem pětiny emisí skleníkových plynů, převážně ze spalování fosilních paliv během rafinace. Zbylé emise pochází z procesu tavení, při kterém je oxid hlinitý skrz elektrolýzu. Většina emisí pochází z potřeby dodání elektřiny a emisní náročnost tak závisí na zdroji dané elektřiny, ovšem jsou přítomné i procesní emise, kdy dochází k uvolňování CO<sub>2</sub>.[^hlinikproces]
+Aby se vyrobil hliník, je nutné vytěžit bauxit, který je následně zpracován rafinací do oxidu hlinitého (Al<sub>2</sub>O<sub>3</sub> neboli alumina). Tento proces má na svědomí kolem pětiny emisí skleníkových plynů, převážně ze spalování fosilních paliv během rafinace. Zbylé emise pochází z procesu tavení, při kterém je oxid hlinitý zpracován skrz elektrolýzu zpravidla skrz tzv. Hall-Heroultův proces. Většina emisí pochází z potřeby dodání elektřiny a emisní náročnost tak závisí na zdroji dané elektřiny, ovšem jsou přítomné i procesní emise, kdy dochází k uvolňování CO<sub>2</sub>.[^hlinikproces] Ten vzniká tím, že při použití uhlíkových anod se reakcí uvolní kyslík přítomný v oxidu hlinitém, který reaguje s uhlíkem z anody a vzniká CO<sub>2</sub>.
 
 - rovnice? oxid hlinitý + uhlík -> hliník + CO<sub>2</sub>
 
 ### Dekarbonizace výroby hliníku
 
-Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z hlediska dekarbonizace tohoto sektoru klíčová především transformace elektroenergetiky, tedy dekarbonizace elektřiny. Nezanedbatelné množství emisí skleníkových plynů ovšem pochází i ze spalování a procesních reakcí, které lze také snížit. Již dnes lze najít projekty, které vyrábí hliník s nizší emisní stopou.
+Kvůli závislosti výroby hliníku na dodávkách elektřiny ze sítě, bude z hlediska dekarbonizace tohoto sektoru klíčová především transformace elektroenergetiky, tedy dekarbonizace elektřiny. Nezanedbatelné množství emisí skleníkových plynů ovšem pochází i ze spalování a procesních reakcí, které lze také snížit. 
 
-{% capture greenalu %}
-
-
-
-{% endcapture %}
-
-{% include expander-figure.html
-    name="greenalu"
-    expanded=false
-    class="contrast-figure "
-    label="Příklady projektů využívajících dekarbonizační technologie"
-    content=greenalu
-%}
+Již dnes lze najít projekty, které vyrábí hliník s nizší emisní stopou. Zpravidla jde o primární hliník, který je vyrobený pomocí elektřiny z vodních elektráren a jehož emisní intenzita se pohybuje kolem 4 tun CO2eq na tunu hliníku. Pokud se jedná o recyklovaný hliník, lze dosáhnout ještě nizších emisních intenzit v závislosti na procentu recyklovaného hliníku v produktu.
 
 Tyto projekty bude potřebné nadále škálovat aby došlo ke snížení emisní stopy sektoru výroby hliníku. Jak může toto škálování a dosažení nízkých nebo nulových emisí výrobu hliníku vypadat se snaží ukázat sektorové dekarbonizační strategie.
 
@@ -81,6 +69,8 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 
 * **Zachytávání CO<sub>2</sub> (CCS)** - Na nahrazení procesních emisí vznikajících během procesu elektrolýzy je teoreticky možné využít zařízení na zachytávání CO<sub>2</sub>.[^ccshlinik] U hliníku je ovšem problém relativně nízká koncentrace CO<sub>2</sub> u odpadního plynu. Je totiž podstatně nizší než například u spalování fosilních paliv, pro které byly technologie CCS často vyvíjeny. Zároveň přítomnost jiných znečisťujích látek dále komplikuje situaci. V současné době tak probíhá výzkum jak umožnit využití CCS při výrobě hliníku.[^ccs]
 
+* **Inertní anody** - Lze zabránit tomu aby uhlík z anod reagoval s kyslíkem z oxidu hlinitého. Lze využít tzv. inertní anody, které neuvolňují uhlík a tudíž dojde pouze k tvorbě kyslíku jako vedlejšího produktu při tavení hliníku. V současné době inertní anody pro výroby hliníku nejsou komerčně dostupné, ale probíhají pilotní projekty a výzkum.[^inert]
+
 {% include figure.html
     name="hlinik.jpg"
     alt="Výroba hliníku"
@@ -95,9 +85,11 @@ Dále vycházíme z dekarbonizačních scénářů těchto institucí:
 [^dveprocenta]: [RICS, 2021: The 75 per cent problem: aluminium’s carbon footprint](https://ww3.rics.org/uk/en/modus/natural-environment/climate-change/the-75-per-cent-problem--aluminium-s-carbon-footprint-.html).
 [^ccshlinik]: [Light Metal Age, 2023: Decarbonizing the Primary Aluminum Industry](https://www.lightmetalage.com/news/industry-news/smelting/decarbonizing-the-primary-aluminum-industry/).
 [^hlinikeuasvet]: [European Aluminium: A low carbon footprint](https://european-aluminium.eu/projets/a-low-carbon-footprint/)
-[^hlinikvyroba]: [Natural Resources Canada: Aluminium Facts](https://natural-resources.canada.ca/our-natural-resources/minerals-mining/minerals-metals-facts/aluminum-facts/20510#details-panel3)
+[^hlinikvyroba]: [Natural Resources Canada: Aluminium Facts](https://natural-resources.canada.ca/our-natural-resources/minerals-mining/minerals-metals-facts/aluminum-facts/20510#details-panel3) a [International Aluminium: International Aluminium Institute publishes global recycling data](https://international-aluminium.org/international-aluminium-institute-publishes-global-recycling-data/)
 [^hlinikproces]: [Carbon Chain: Understand your aluminium Emissions](https://www.carbonchain.com/blog/understand-your-aluminum-emissions)
 [^wef]: [World Economic Forum: Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
 [^island]: [Green By Iceland: Metal Production in Iceland](https://www.greenbyiceland.com/metal-production/)
 [^ipcc]: [IPCC: Sixth Assessment Report - Working Group III: Kapitola 11](https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf)
 [^ccs]: [Hydro: Developing carbon capture and storage technology for aluminium smelters](https://www.hydro.com/en/media/on-the-agenda/hydros-roadmap-to-zero-emission-aluminium-production/developing-carbon-capture-and-storage-technology-for-aluminium-smelters/)
+[^recyklaceintenzita]: [Climate Action: Carbon Footprint of Recycled Aluminium](https://www.climateaction.org/news/carbon-footprint-of-recycled-aluminium)
+[^inert]: [NRDC: The Role of Inert Anodes in Aluminum Decarbonization](https://www.nrdc.org/bio/ian-wells/role-inert-anodes-aluminum-decarbonization)
