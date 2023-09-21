@@ -101,7 +101,7 @@ Dá se nicméně očekávat, že tato hodnota bude v dalších letech znovu pře
 
 ## Poznámky a zdroje
 
-[^referencni-obdobi]: V kontextu klimatické změny se jako referenční období používá nejčastěji tzv. pre-industriál (léta 1850–1900). K němu se například vztahuje i hranice oteplení 1,5 °C zmíněná v Pařížské dohodě. Jiná referenční období používají meteorologové – zpravidla jsou to poslední tři dekády. ČHMÚ proto obvykle uvádí teplotní anomálie vztažené k referenčnímu období 1990–2019. V tomto článku jsou referenčním obdobím roky 1979–2000 (se stejným obdobím pracuje i Climate Reanalyzer). Používání různých referenčních období je někdy trochu matoucí, zejména pro laickou veřejnost, a věci zbytečně komplikuje.
+[^referencni-obdobi]: V kontextu klimatické změny se jako referenční období používá nejčastěji tzv. pre-industriál (léta 1850–1900). K němu se například vztahuje i hranice oteplení 1,5 °C zmíněná v Pařížské dohodě. Jiná referenční období používají meteorologové – zpravidla jsou to poslední tři dekády. ČHMÚ proto obvykle uvádí teplotní anomálie vztažené k referenčnímu období 1991–2020. V tomto článku jsou referenčním obdobím roky 1979–2000 (se stejným obdobím pracuje i Climate Reanalyzer). Používání různých referenčních období je někdy trochu matoucí, zejména pro laickou veřejnost, a věci zbytečně komplikuje.
 
 [^anomalie]: Z praktického hlediska je možná ještě důležitější, že na rozdíl od průměrné teploty planety je teplotní anomálie robustní koncept. Nezávisí totiž na hustotě nebo konkrétním rozmístění sítě měřicích stanic, není k němu nutná vzájemná kalibrace stanic a není podstatným způsobem ovlivněn případnými výpadky měření.
 
