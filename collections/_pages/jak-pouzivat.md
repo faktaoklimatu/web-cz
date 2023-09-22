@@ -28,15 +28,15 @@ Veškerá naše práce je zveřejněna pod licencí [Creative Commons Uveďte p�
 
 za podmínky **uvedení původu**, tzn. uvést nás jako autory díla, uvést odkaz na naše stránky, název licence a odkaz na její znění a vyznačit případné změny v infografice nebo datasetu. Tyto informace mohou mít různou vizuální podobu v závislosti na médiu (např. webová stránka, novinový článek), musí však být za každých okolností zřetelně uvedeny.
 
-U každého použití naší infografiky či našich dat odkazujte na stránku konkrétní infografiky nebo datasetu, nikoliv přímo na obrázek. Správně je tedy např. _"Infografika [Emise skleníkových plynů v ČR podle sektorů detailně](/infografiky/emise-cr-detail) od autora [Fakta o klimatu](/), licencováno pod [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs)."_ Viz též ilustrační obrázek s ukázkou citace infografiky.
+U každého použití naší infografiky či našich dat odkazujte na stránku konkrétní infografiky nebo datasetu, nikoliv přímo na obrázek. Správně je tedy např. _"Infografika [Emise skleníkových plynů v ČR podle sektorů](/infografiky/emise-cr) od autora [Fakta o klimatu](/), licencováno pod [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs)."_ Viz též ilustrační obrázek s ukázkou citace infografiky.
 
 Citaci si také můžete nechat vygenerovat přímo na stránce každé infografiky nebo datasetu kliknutím na tlačítko sdílení (se symbolem <tt>&lt;/&gt;</tt>) v sekci "Sdílení a licence".
 
 </div><div class="col-12 col-lg-5 my-4">
 
 <figure class="pl-lg-4">
-<a href="/infografiky/emise-cr-detail"><img src="/assets/generated/emise-cr-detail_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů detailně" /></a>
-<figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr-detail">Emise skleníkových plynů v ČR podle sektorů detailně</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
+<a href="/infografiky/emise-cr"><img src="/assets/generated/emise-cr_600.png" class="rounded w-100" alt="Emise skleníkových plynů v ČR podle sektorů" /></a>
+<figcaption class="pt-2">Ukázka použití infografiky z webu Fakta o klimatu. Infografika <em><a href="/infografiky/emise-cr">Emise skleníkových plynů v ČR podle sektorů</a></em> od autora <a href="/">Fakta o klimatu</a>, licencováno pod <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.</figcaption>
 </figure>
 
 </div></div>

@@ -16,7 +16,7 @@ dataset:    "emise-cr"
 {% include preview-box.html
     title="Emise skleníkových plynů ČR podle sektorů"
     text="ČR v roce 2020 vypustila 113,69 mil. tun CO<sub>2</sub>eq, což odpovídá 10,63 tun CO<sub>2</sub>eq na obyvatele."
-    slug="emise-cr-detail"
+    slug="emise-cr"
 %}
 
 ## Co vidíme v mapě?

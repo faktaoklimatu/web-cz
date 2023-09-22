@@ -56,7 +56,7 @@ subtopics:
     comment-key: 2
     comment: |
       **ČR** je v přepočtu na osobu **velkým producentem skleníkových plynů**: 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
-  - slug: "emise-cr-detail"
+  - slug: "emise-cr"
     comment-key: 3
     comment: |
       Hlavním zdrojem emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
@@ -100,7 +100,6 @@ subtopics:
     V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq. Pro relativní srovnávání s jinými státy je ale užitečné vyjádřit množství skleníkových plynů i v přepočtu na jednoho obyvatele – v takovém případě **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
   content:
   - emise-cr
-  - emise-cr-detail
   - emise-cr-vyvoj
   - nejvetsi-emitenti-cr
   qa:
