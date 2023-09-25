@@ -8,10 +8,9 @@ weight:        76
 tags-scopes:   [ eu ]
 tags-topics:   [ emise, energetika ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v Evropské unii v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 5 miliard tun CO<sub>2</sub>eq, klesly celkové emise EU o jednu čtvrtinu na 3,7 miliardy tun CO<sub>2</sub>eq v roce 2019."
-data-our:   "https://docs.google.com/spreadsheets/d/1SUaWGbKA3TVcXd-ZXH0zNXVZGikcX8iTPJTzGihubHQ/edit?usp=sharing"
-data-orig:  [
-    ["Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE"]
-]
+data-orig:
+  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-over-time-eu.ipynb" ]
+  - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
 ---
 
 ## Jak číst tento graf

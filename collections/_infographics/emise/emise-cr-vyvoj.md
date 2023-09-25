@@ -8,10 +8,9 @@ weight:        75
 tags-scopes:   [ cr ]
 tags-topics:   [ emise, energetika ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 200 mil. tun CO<sub>2</sub>eq, klesly celkové emise ČR na 113,69 mil. tun CO<sub>2</sub>eq v roce 2020."
-data-our:   "https://docs.google.com/spreadsheets/d/1lAaT6VEKZr_jxL5CasiYksqB27PicN339aXZXUDUVKU/edit?usp=sharing"
-data-orig:  [
-    ["Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE"]
-]
+data-orig:
+  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-over-time-eu.ipynb" ]
+  - [ "Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE" ]
 ---
 
 ## Jak číst tento graf
