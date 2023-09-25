@@ -6,17 +6,17 @@ published:  2020-04-19
 weight:     70
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
-caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2020 a data ze systému emisních povolenek za rok 2020."
-data-our:    "https://docs.google.com/spreadsheets/d/1chcOoQAFxvmYG-VBv9f28vefL5lFWn6L9S1sJI3SIRY/edit?usp=sharing"
-data-orig:  [ [ "Eurostat", "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en" ]
+caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2021 a data ze systému emisních povolenek za rok 2021."
+data-our:    "https://docs.google.com/spreadsheets/d/1Kb-etm4-WzWjTrB06j_36weB7u6kdgQEYgSGMjTuJdQ/edit?usp=sharing"
+data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
             , ["European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ] ]
 ---
 
-## Emise skleníkových plynů za rok 2020
+## Emise skleníkových plynů za rok 2021
 
 {% include data-header.html
     name="Eurostat"
-    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2020 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
+    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2021 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
     url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
