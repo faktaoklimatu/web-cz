@@ -1,6 +1,6 @@
 ---
 layout:         infographic
-title:          "Emise skleníkových plynů v EU podle sektorů detailně"
+title:          "Emise skleníkových plynů v EU podle sektorů"
 slug:           "emise-eu-detail"
 redirect_from:  "/emise-eu-detail"
 published:      2022-07-14
