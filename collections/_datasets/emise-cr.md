@@ -8,8 +8,9 @@ tags-scopes: [ cr ]
 tags-topics: [ emise ]
 caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2021 a data ze systému emisních povolenek za rok 2021."
 data-our:    "https://docs.google.com/spreadsheets/d/1Kb-etm4-WzWjTrB06j_36weB7u6kdgQEYgSGMjTuJdQ/edit?usp=sharing"
-data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
-            , ["European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ] ]
+data-orig:
+  - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
+  - [ "European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ]
 ---
 
 ## Emise skleníkových plynů za rok 2021
@@ -33,7 +34,7 @@ data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/v
 
 Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je omezen na Českou republiku. Více informací o této datové sadě je na [stránce datasetu Emise EU](emise-eu).
 
-## Data ze systému emisních povolenek za rok 2020
+## Data ze systému emisních povolenek za rok 2021
 
 {% include data-header.html
     name="Evropská komise"
