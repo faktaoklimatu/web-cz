@@ -18,7 +18,7 @@ data-orig:
 {% include data-header.html
     name="Eurostat"
     description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2021 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
-    url="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=env_air_gge&lang=en"
+    url="https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
     licence-proof="https://ec.europa.eu/info/legal-notice_en"
