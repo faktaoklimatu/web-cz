@@ -80,7 +80,7 @@ Přesné odvození jednotlivých čísel opět najdete v naší tabulce s daty.
     slug="uhelny-phaseout-eu"
 %}
 
-Při pohledu na [emise skleníkových plynů](/infografiky/emise-cr) v ČR dle sektorů je na první pohled patrné, že největší podíl emisí připadá na výrobu elektřiny. V roce 2018 to bylo 39,5 % celkových emisí ČR. Je to dáno tím, že většina elektřiny se v ČR stále získává spalováním hnědého uhlí. Uhelné elektrárny se tak v roce 2018 podílely na výrobě elektřiny ze 47 %, přitom ale vyprodukovaly 88 % všech emisí v daném sektoru.
+Při pohledu na [emise skleníkových plynů](/infografiky/emise-cr) v ČR dle sektorů je na první pohled patrné, že největší podíl emisí připadá na výrobu elektřiny a tepla. Je to dáno tím, že většina elektřiny se v ČR stále získává spalováním hnědého uhlí. Uhelné elektrárny se tak v roce 2018 podílely na výrobě elektřiny ze 47 %, přitom ale vyprodukovaly 88 % všech emisí v daném sektoru.
 
 Pro změnu energetického mixu uvažujeme 5 scénářů, pro které jsme vypracovali [srovnávací grafiky](/infografiky/srovnani-energetickych-scenaru-cr). Odhad emisí skleníkových plynů v elektroenergetice pro rok 2018 i pro jednotlivé scénáře v roce 2030 je založený na emisních koeficientech celého cyklu provozu elektráren dle IPCC. To znamená, že obsahuje i emise z výroby solárních panelů, emise z těžby fosilních paliv, atd. Přestože část z těchto emisí bude vypuštěna jinde ve světě (třeba v Číně při výrobě solárních panelů), vyjadřuje to poměrně přesně dlouhodobý dopad českého energetického mixu na každoroční světové emise skleníkových plynů.
 
