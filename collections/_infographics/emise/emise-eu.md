@@ -8,7 +8,8 @@ weight:     95
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí 28 členských států EU a přepočet na obyvatele."
-dataset:    "emise-eu"
+data-our:    "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit?usp=sharing"
+data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ] ]
 ---
 
 ## Jak číst tento graf?
