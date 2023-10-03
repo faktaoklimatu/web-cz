@@ -8,7 +8,8 @@ weight:     60
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Vztah mezi celkovými ročními emisemi jednotlivých států EU a jejich přepočtem na obyvatele."
-dataset:    "emise-eu"
+data-our:    "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit?usp=sharing"
+data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ] ]
 ---
 
 ## Jak číst tento graf?
