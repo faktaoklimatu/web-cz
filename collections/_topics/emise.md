@@ -59,7 +59,7 @@ subtopics:
   - slug: "emise-cr"
     comment-key: 3
     comment: |
-      Hlavním zdrojem emisí v ČR jsou **elektrárny a teplárny** (40 %). Dále pak **průmysl** (20 %), **silniční doprava** (15 %) a **lokální plynové a uhelné kotle** (10 %).
+      Hlavním zdrojem emisí v ČR jsou **elektrárny a teplárny** (33 %). Dále pak **průmysl** (28 %), **silniční doprava** (16 %) a **lokální plynové a uhelné kotle** (10 %).
   qa:
   - q: "Co můžeme pro snížení emisí udělat?"
     a: |
