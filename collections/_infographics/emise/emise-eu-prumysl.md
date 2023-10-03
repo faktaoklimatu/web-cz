@@ -8,9 +8,7 @@ weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
 caption:        "Z průmyslu pochází čtvrtina celkových emisí skleníkových plynů v Evropské unii. Průmysl je tak po výrobě elektřiny a tepla a po dopravě třetím největším producentem těchto emisí."
-data-our:       "https://docs.google.com/spreadsheets/d/1KNL5d1CwLsLc8INquN7z5ABdr52APEsDjEsUcYGh_Mk/edit?usp=sharing"
-data-orig:
-  - [ "Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE" ]
+dataset:        "emise-eu"
 ---
 
 ## Jak číst tento graf?
