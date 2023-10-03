@@ -12,8 +12,8 @@ dataset:    "emise-cr"
 ---
 
 {% include preview-box.html
-    title="Emise skleníkových plynů ČR podle sektorů"
-    text="ČR v roce 2021 vypustila 119,4 mil. tun CO<sub>2</sub>eq, což odpovídá 11,2 tunám CO<sub>2</sub>eq na obyvatele."
+    title="Emise skleníkových plynů v ČR podle sektorů"
+    text="Velké podniky v Česku vypouštějí jen asi polovinu emisí skleníkových plynů. Celkový přehled o emisích v Česku nabízí jejich rozdělení podle sektorů."
     slug="emise-cr"
 %}
 
