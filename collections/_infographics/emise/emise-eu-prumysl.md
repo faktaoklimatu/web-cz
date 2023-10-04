@@ -7,7 +7,7 @@ published:      2023-08-14
 weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
-caption:        "Z průmyslu pochází čtvrtina celkových emisí skleníkových plynů v Evropské unii. Průmysl je tak po výrobě elektřiny a tepla a po dopravě třetím největším producentem těchto emisí."
+caption:        "Z průmyslu pochází více než čtvrtina celkových emisí skleníkových plynů v Evropské unii. Průmysl je tak největším producentem těchto emisí před dopravou a výrobou elektřiny a tepla."
 dataset:        "emise-eu"
 ---
 
@@ -15,12 +15,12 @@ dataset:        "emise-eu"
 
 {% include preview-box.html
     class="highlight-text-box"
-    text="Přímé emise skleníkových plynů v průmyslu vznikají jednak spalováním fosilních paliv (při výrobě je často nutné dosáhnout vysokých teplot) a jednak během chemických reakcí."
+    text="Přímé emise skleníkových plynů v průmyslu vznikají jednak spalováním fosilních paliv (při výrobě je často nutné dosáhnout vysokých teplot), jednak během chemických reakcí a jednak při používání průmyslových produktů (zejména chladících F-plynů)."
 %}
 
 Hodnoty v grafu se vztahují k <glossary id="antropogennisklenikoveplyny">antropogenním emisím</glossary> skleníkových plynů. Ve většině kategorií jde o emise CO<sub>2</sub>. F-plyny (HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub>) jsou uvedeny samostatně a emisí N<sub>2</sub>O vzniká v průmyslu jen velmi málo – v grafu jsou emise těchto skleníkových plynů vyjádřeny v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 
-Roční objem průmyslových emisí Evropské unie je 881 mil. tun CO<sub>2</sub>eq (údaj z roku 2021), což je 24 % z celkových emisí skleníkových plynů v EU. To je v přepočtu 1,97 tun CO<sub>2</sub>eq na obyvatele. Graf zobrazuje emise EU-27, tedy zemí, které byly k roku 2021 členy Unie. Zobrazení dat pro celou EU poskytuje užitečný kontext pro úvahy nad emisemi z průmyslu v ČR.
+Roční objem průmyslových emisí Evropské unie je 947 mil. tun CO<sub>2</sub>eq (údaj z roku 2021), což je 27 % z celkových emisí skleníkových plynů v EU. To je v přepočtu 2,12 tun CO<sub>2</sub>eq na obyvatele. Graf zobrazuje emise EU-27, tedy zemí, které byly k roku 2021 členy Unie. Zobrazení dat pro celou EU poskytuje užitečný kontext pro úvahy nad emisemi z průmyslu v ČR.
 
 U každého průmyslového sektoru je vidět jeho celkový podíl na emisích skleníkových plynů z průmyslu v EU – ten je vyjádřen v procentech i v milionech tun (megatunách).
 
@@ -30,25 +30,26 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
     slug="emise-cr-prumysl"
 %}
 
-* **Minerály a cement** – emisně nejnáročnější sektor (21,4 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (13,7 % z celkových průmyslových emisí EU), následuje výroba vápna, skla a dalších produktů.
+* **Minerály a cement** – podobně náročný sektor (19,9 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (12,7 % z celkových průmyslových emisí EU), následuje výroba vápna, skla a dalších produktů.
 
-* **Ocel a další kovy** – druhý nejvíce emisně náročný sektor – 18,6 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (16,7 %). Při výrobě hliníku se spotřebovává velké množství elektřiny, jde však o nepřímé emise, které nejsou v grafu zahrnuty (více o nepřímých emisích níže).
+* **Ocel a další kovy** – třetí nejvíce emisně náročný sektor – 17,3 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (15,5 %). Při výrobě hliníku se spotřebovává velké množství elektřiny, jde však o nepřímé emise, které nejsou v grafu zahrnuty (více o nepřímých emisích níže).
 
-* **Chemikálie a hnojiva** – 14,1 % z celkových emisí z průmyslu. Největší podíl má produkce amoniaku (na výrobu hnojiv). Další významnou kategorií jsou petrochemikálie, které se používají například při výrobě plastů.
+* **Chemikálie a hnojiva** – 13,1 % z celkových emisí z průmyslu. Největší podíl má produkce amoniaku (na výrobu hnojiv). Další významnou kategorií jsou petrochemikálie, které se používají například při výrobě plastů.
 
-* **F-plyny** – 8 % z celkových průmyslových emisí (tedy cca 2 % celkových emisí EU). Jde o významnou kategorii, která zahrnuje velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23 500krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. Hledají se za ně náhrady, ty ale bývají méně efektivní.
+* **F-plyny** – 7,5 % z celkových průmyslových emisí. F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. V této kategorii emisí jde o úniky těchto plynů při používání produktů, ve kterých jsou zabudovány. F-plyny jsou velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23 500krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] Hledají se za ně náhrady, ty ale bývají méně efektivní.
 
-* **Potraviny a alkohol** – 4,2 % z celkových průmyslových emisí EU (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
+* **Potraviny a alkohol** – 3,9 % z celkových průmyslových emisí EU (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
 
-* **Papírenský průmysl** a výroba obalů – 2,7 % celkových průmyslových emisí Unie (spalování, zejména během sušení papíru).
+* **Papírenský průmysl** a výroba obalů – 2,5 % celkových průmyslových emisí Unie (spalování, zejména během sušení papíru).
 
-* **Ostatní průmyslová odvětví** – v součtu 17 % celkových průmyslových emisí EU. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
+* **Ostatní průmyslová odvětví** – v součtu 15,8 % celkových průmyslových emisí EU. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
 
-* **Rafinace ropy a jiných paliv** – 14 % celkových emisí z průmyslu EU. Surovou ropu je nutné pro další použití zpracovat, což je energeticky náročný proces, při kterém se zároveň během chemických reakcí uvolňuje značné množství CO<sub>2</sub>. Ropa se využívá na výrobu paliv pro dopravní prostředky, ale také v průmyslu, například při produkci plastů či hnojiv. V dopravě bude poptávka po ní postupně klesat, v průmyslu ale může do budoucna i růst.
+* **Těžba a zpracování fosilních paliv** – 20 % celkových emisí z průmyslu EU. Největší část tvoří emise při zpracování paliv (např. při výrobě koksu) a při rafinaci ropy. Další podstatná část jsou úniky metanu při těžbě uhlí a při transportu zemního plynu.
+
 
 ## Přímé a nepřímé emise v průmyslu
 
-Při počítání uhlíkové stopy je důležité rozlišovat tzv. přímé a nepřímé emise – v emisním účetnictví firem se označují kategoriemi Scope 1, 2 a 3. Přes 90 % průmyslových emisí v tomto přehledu spadá pod Scope 1, kategorie Scope 2 není zahrnuta. Emise spadající pod Scope 3 se týkají zejména F-plynů, u těch je však situace složitější, protože nejde pouze o výrobu, ale také o jejich používání a úniky.
+Při počítání uhlíkové stopy je důležité rozlišovat tzv. přímé a nepřímé emise – v emisním účetnictví firem se označují kategoriemi Scope 1, 2 a 3. Přes 90 % průmyslových emisí v tomto přehledu spadá pod Scope 1, kategorie Scope 2 není zahrnuta. Kategorie Scope 3 také není zahrnuta, s výjimkou emisí souvisejících s používáním specifických průmyslových materiálů (zejména tzv. F-plynů), u kterých tyto emise během jejich životního cyklu není možné měřit a tak se odhadují v momentu jejich výroby.
 
 {% capture scope %}
 
@@ -58,7 +59,7 @@ Tyto kategorie se používají ke klasifikaci emisí skleníkových plynů a jso
 
 **Scope 2** označuje **nepřímé emise z nákupu elektřiny či tepla**. Například většina emisí CO<sub>2</sub> spojená s produkcí hliníku jsou emise vznikající při výrobě elektřiny, která je nutná pro proces elektrolýzy. Jestliže si daný podnik nevyrábí elektřinu sám a nakupuje ji ze sítě, počítají se tyto emise do scope 2.
 
-**Scope 3** označuje **nepřímé emise, které vznikají v rámci celého hodnotového řetězce**. Například pro výrobu oceli je nutné nejprve těžit železnou rudu (už při této těžbě vznikají emise skleníkových plynů), poté ji dopravit do ocelárny (to zase vyžaduje přepravu dopravními prostředky). Tyto emise uvolněné ještě před samotnou výrobou oceli se označují jako *upstream* emise. Emise vznikající po výrobě daného produktu klasifikujeme jako *downstream* emise – u oceli by například šlo o dopravu vyrobeného produktu k zákazníkům. V případě oceli [podle Deloitte](https://www2.deloitte.com/nl/nl/pages/sustainability/articles/decarbonizing-the-steel-value-chain.html) 95 % emisí skleníkových plynů pochází přímo z výroby zatímco těžba se na emisích ocelářského průmyslu podílí 4 % a doprava pouze 1 %. U některých produktů je ale emisně náročné i jejich využívání. V této infografice to platí například pro F-plyny. Platí to například i pro auta se spalovacím motorem. Většina skleníkových plynů vzniká během jejich používání a emise z výroby tvoří pouze menšinu.
+**Scope 3** označuje **nepřímé emise, které vznikají v rámci celého hodnotového řetězce**. Například pro výrobu oceli je nutné nejprve těžit železnou rudu (už při této těžbě vznikají emise skleníkových plynů), poté ji dopravit do ocelárny (to zase vyžaduje přepravu dopravními prostředky). Tyto emise uvolněné ještě před samotnou výrobou oceli se označují jako *upstream* emise. Emise vznikající po výrobě daného produktu klasifikujeme jako *downstream* emise – u oceli by například šlo o dopravu vyrobeného produktu k zákazníkům. V případě oceli [podle Deloitte](https://www2.deloitte.com/nl/nl/pages/sustainability/articles/decarbonizing-the-steel-value-chain.html) 95 % emisí skleníkových plynů pochází přímo z výroby zatímco těžba se na emisích ocelářského průmyslu podílí 4 % a doprava pouze 1 %. U některých produktů je ale emisně náročné i jejich využívání. V této infografice to platí například pro F-plyny, které jsou extrémně silné skleníkové plyny a při používání v chladících systémech dochází k jejich únikům. Platí to například i pro auta se spalovacím motorem. Většina skleníkových plynů u nich vzniká během používání a emise z výroby tvoří pouze menšinu.
 
 {% endcapture %}
 
