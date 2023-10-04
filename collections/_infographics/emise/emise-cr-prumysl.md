@@ -36,6 +36,8 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
 
 * **Chemikálie a hnojiva** – 16,1 % z celkových emisí z průmyslu. Největší podíl má produkce amoniaku (na výrobu hnojiv). Další významnou kategorií jsou petrochemikálie, které se používají například při výrobě plastů.
 
+* **Těžba a zpracování fosilních paliv** – 13,2 % celkových emisí z průmyslu ČR. Největší část tvoří úniky metanu při těžbě uhlí a při transportu zemního plynu. Další podstatná část jsou emise při zpracování paliv (např. při výrobě koksu) a při rafinaci ropy.
+
 * **F-plyny** – 11,1 % z celkových průmyslových emisí. F-plyny se využívají jako technické plyny, například v ledničkách a klimatizacích. V této kategorii emisí jde o úniky těchto plynů při používání produktů, ve kterých jsou zabudovány. F-plyny jsou velmi silné skleníkové plyny, jež mají na změny klimatu vliv i v relativně malém množství. Například plyn SF<sub>6</sub> má 23 500krát větší potenciál globálního oteplování než CO<sub>2</sub>.[^gwp] Hledají se za ně náhrady, ty ale bývají méně efektivní.
 
 * **Potraviny a alkohol** – 3,5 % z celkových průmyslových emisí ČR (jde například o výrobu tepla potřebného k destilaci, sušení či pražení).
@@ -43,8 +45,6 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
 * **Papírenský průmysl** a výroba obalů – 2,5 % celkových průmyslových emisí ČR (spalování, zejména během sušení papíru).
 
 * **Ostatní průmyslová odvětví** – v součtu 8,8 % celkových průmyslových emisí ČR. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
-
-* **Těžba a zpracování fosilních paliv** – 13,2 % celkových emisí z průmyslu ČR. Největší část tvoří úniky metanu při těžbě uhlí a při transportu zemního plynu. Další podstatná část jsou emise při zpracování paliv (např. při výrobě koksu) a při rafinaci ropy.
 
 ## Přímé a nepřímé emise v průmyslu
 
