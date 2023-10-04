@@ -30,6 +30,8 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
     slug="emise-cr-prumysl"
 %}
 
+* **Těžba a zpracování fosilních paliv** – 20 % celkových emisí z průmyslu EU. Největší část tvoří emise při zpracování paliv (např. při výrobě koksu) a při rafinaci ropy. Další podstatná část jsou úniky metanu při těžbě uhlí a při transportu zemního plynu.
+
 * **Minerály a cement** – podobně náročný sektor (19,9 % celkových emisí z průmyslu). Nejvíce připadá na výrobu cementu (12,7 % z celkových průmyslových emisí EU), následuje výroba vápna, skla a dalších produktů.
 
 * **Ocel a další kovy** – třetí nejvíce emisně náročný sektor – 17,3 % celkových průmyslových emisí, přičemž naprostá většina z toho připadá na výrobu železa a oceli (15,5 %). Při výrobě hliníku se spotřebovává velké množství elektřiny, jde však o nepřímé emise, které nejsou v grafu zahrnuty (více o nepřímých emisích níže).
@@ -43,9 +45,6 @@ U každého průmyslového sektoru je vidět jeho celkový podíl na emisích sk
 * **Papírenský průmysl** a výroba obalů – 2,5 % celkových průmyslových emisí Unie (spalování, zejména během sušení papíru).
 
 * **Ostatní průmyslová odvětví** – v součtu 15,8 % celkových průmyslových emisí EU. V těchto sektorech často nejde o výrobu suroviny, ale spíše o montování výrobků. Spadá sem částečně výroba například v rámci automobilového průmyslu. Zároveň do této kategorie spadají i emise ze stavebnictví, kde se jedná například o pálení cihel.
-
-* **Těžba a zpracování fosilních paliv** – 20 % celkových emisí z průmyslu EU. Největší část tvoří emise při zpracování paliv (např. při výrobě koksu) a při rafinaci ropy. Další podstatná část jsou úniky metanu při těžbě uhlí a při transportu zemního plynu.
-
 
 ## Přímé a nepřímé emise v průmyslu
 
