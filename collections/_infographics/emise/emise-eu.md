@@ -17,18 +17,22 @@ data-orig:
 
 Všechny hodnoty v grafu jsou <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> skleníkových plynů CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>. Jednotka CO<sub>2</sub> ekvivalent zohledňuje dlouhodobý efekt skleníkových plynů v atmosféře a převádí je na množství CO<sub>2</sub>, které by mělo stejný efekt. Více viz článek [Global warming potential](https://en.wikipedia.org/wiki/Global_warming_potential).
 
+{% include preview-box.html
+    title="Jak jsou emise rozdělené mezi světové regiony?"
+    text="Obdobnou infografiku jsme vytvořili i pro celosvětové emise skleníkových plynů."
+    slug="emise-svet"
+%}
+
 V levé části jsou celkové roční emise členských států EU za rok 2021 v mil. tun CO<sub>2</sub>eq, vč. procentuálního zastoupení. Plocha zabraná konkrétním státem odpovídá poměru vůči celku.
 
 Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org/wiki/List_of_European_Union_member_states_by_population), tak [z hlediska HDP](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))) mají v absolutních číslech nejvyšší emise:
 
-* Německo se svými cca 83 mil. obyvateli 778,7 mil. t CO<sub>2</sub>eq
-* Francie se svými cca 68 mil. obyvateli 423,2 mil. t CO<sub>2</sub>eq
-* Itálie se svými cca 59 mil. obyvateli 422,6 mil. t CO<sub>2</sub>eq
-* Polsko se svými cca 38 mil. obyvateli 402,4 mil. t CO<sub>2</sub>eq
+* Německo se svými cca 83 mil. obyvateli: 778,7 mil. t CO<sub>2</sub>eq
+* Francie se svými cca 68 mil. obyvateli: 423,2 mil. t CO<sub>2</sub>eq
+* Itálie se svými cca 59 mil. obyvateli: 422,6 mil. t CO<sub>2</sub>eq
+* Polsko se svými cca 38 mil. obyvateli: 402,4 mil. t CO<sub>2</sub>eq
 
-Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 119,4 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 3. největším emitentem EU__ a má více než 2× vyšší emise na obyvatele než stejně velké Švédsko (cca 10,4 mil. obyvatel)
-
-Infografika [Emise skleníkových plynů světa](/infografiky/emise-svet) ukazuje stejné údaje pro jednotlivé světové regiony.
+Česká republika jako stát s cca 10,5 mil. obyvateli a emisemi 119,4 mil. t CO<sub>2</sub>eq __je v přepočtu na obyvatele 3. největším emitentem EU__ a má více než 2× vyšší emise než stejně velké Švédsko (cca 10,4 mil. obyvatel).
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
