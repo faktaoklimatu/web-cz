@@ -9,38 +9,40 @@ tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
 caption:       "Vodík v energetice"
 intro: |
-  Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvých zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95Mt, v roce 2050 se odhaduje až na 600 Mt. 
+  Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvých zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95Mt, v roce 2050 se odhaduje až na 600 Mt.
 
-  V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést. 
-
-  V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin “vyrábět”. Podle původu, resp. emisní náročnosti, se vodík označuje různými „barvami“.
+  V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést.
 
 items:
   colors:
     - name: Zelený
       description: Produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů.
+      icon: vodik-zeleny.svg
     - name: Růžový
       description: Získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren.
+      icon: vodik-ruzovy.svg
     - name: Modrý
       description: Vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny (CCS) a následně uloženy či využity.
+      icon: vodik-modry.svg
     - name: Šedý
       description: Produkován ze zemního plynu bez zachytávání CO2 (v současnosti zatím zdaleka nejběžnější způsob výroby).
+      icon: vodik-sedy.svg
     - name: Bílý
       description: Vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
   institutions:
     - name: Česká vodíková technologická platforma
       link: https://www.hytep.cz/
       description: Projekt vzniklý z Ministerstva průmyslu a obchodu, spolufinancovaný z EU. Jeho cílem je podpora rozvoje vodíku v ČR pomocí propojování zainteresovaných subjektů a publikování informací veřejnosti.
-    - name: Clean Hydrogen Partnership 
+    - name: Clean Hydrogen Partnership
       link: https://www.clean-hydrogen.europa.eu/index_en
       description: "Jedná se o partnerství 3 institucí: Evropské komise, Hydrogen Europe a Hydrogen Europe Research.
       Hlavním cílem je přispět financováním výzkumu a inovací k plnění cílů Green Dealu a Vodíkové strategie. Dále pak urychlit rozvoj čistého vodíku a posílit jeho konkurenceschopnost."
     - name: Hydrogen Europe
       link: https://hydrogeneurope.eu/
       description: Sdružení více než 400 firem a institucí z 25 evropských zemí. Součást Clean Hydrogen Partnership, ve kterém reprezentuje zájmy komerčního sektoru.
-    - name: Hydrogen Europe Research 
+    - name: Hydrogen Europe Research
       link: https://hydrogeneuroperesearch.eu/
-      description: Sdružení 140 univerzit a výzkumných organizací z 29 zemí. Součást Clean Hydrogen Partnership, ve kterém reprezentuje zájmy akademické sféry. 
+      description: Sdružení 140 univerzit a výzkumných organizací z 29 zemí. Součást Clean Hydrogen Partnership, ve kterém reprezentuje zájmy akademické sféry.
     - name: Fuel Cell and Hydrogen Energy Association (FCHEA)
       link: https://www.fchea.org
       description: Průmyslová asociace působící v USA. Sdružuje přes 90 firem v oblasti výroby, distribuce a inovací vodíkové energetiky. Cílem je podpora komercializace a propagace vodíkových palivových článků.
@@ -86,7 +88,7 @@ items:
       capitalizaion: $63 mld.
       category: Energetika
       link: https://www.airproducts.com/industries/hydrogen-fueling-for-mobility
-      description: Podobný business case jako Linde - průmyslová firma vyrábějící mimo jiné i vodík, v současnosti silně investující do zeleného vodíku. 
+      description: Podobný business case jako Linde - průmyslová firma vyrábějící mimo jiné i vodík, v současnosti silně investující do zeleného vodíku.
     - name: ČEZ
       capitalizaion: $23 mld.
       category: Energetika
@@ -120,25 +122,23 @@ items:
 
 ## Barvy vodíku
 
-<table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Barva</th>
-      <th scope="col" class="text-uppercase">Popis</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items.colors %}
-    <tr>
-      <td class="align-middle font-weight-bold">
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{:.narrow-text}
+V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin “vyrábět”. Podle původu, resp. emisní náročnosti, se vodík označuje různými „barvami“.
 
+<div class="barvy-vodiku">
+    {% for item in page.items.colors %}
+        {% if item.icon %}
+          {%- assign alt = "Piktogram: " | append:item.name %}
+          {%- assign class = "" %}
+          {% include figure.html name=item.icon alt=alt no-lightbox=true %}
+        {% else %}
+          {%- assign class = "mt-4" %}
+        {% endif %}
+<div markdown="1" class="narrow-text {{ class }}">
+**{{ item.name }}** – {{ item.description }}
+</div>
+    {% endfor %}
+</div>
 
 ## Instituce
 
