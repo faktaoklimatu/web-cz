@@ -167,8 +167,8 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Popis</th>
       <th scope="col" class="text-uppercase">Rok</th>
+      <th scope="col" class="text-uppercase">Popis</th>
     </tr>
   </thead>
   <tbody>
@@ -177,8 +177,8 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
       <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -191,8 +191,8 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
       <th scope="col" class="text-uppercase">Zdroj</th>
-      <th scope="col" class="text-uppercase">Popis</th>
       <th scope="col" class="text-uppercase">Rok</th>
+      <th scope="col" class="text-uppercase">Popis</th>
     </tr>
   </thead>
   <tbody>
@@ -202,8 +202,8 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
       <td class="align-middle">{{ item.source }}</td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
       <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
   </tbody>
