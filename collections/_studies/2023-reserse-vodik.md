@@ -14,21 +14,6 @@ intro: |
   V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést.
 
 items:
-  colors:
-    - name: Zelený
-      description: Produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů.
-      icon: vodik-zeleny.svg
-    - name: Růžový
-      description: Získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren.
-      icon: vodik-ruzovy.svg
-    - name: Modrý
-      description: Vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny (CCS) a následně uloženy či využity.
-      icon: vodik-modry.svg
-    - name: Šedý
-      description: Produkován ze zemního plynu bez zachytávání CO2 (v současnosti zatím zdaleka nejběžnější způsob výroby).
-      icon: vodik-sedy.svg
-    - name: Bílý
-      description: Vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
   institutions:
     - name: Česká vodíková technologická platforma
       link: https://www.hytep.cz/
@@ -125,19 +110,8 @@ items:
 {:.narrow-text}
 V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin “vyrábět”. Podle původu, resp. emisní náročnosti, se vodík označuje různými „barvami“.
 
-<div class="barvy-vodiku">
-    {% for item in page.items.colors %}
-        {% if item.icon %}
-          {%- assign alt = "Piktogram: " | append:item.name %}
-          {%- assign class = "" %}
-          {% include figure.html name=item.icon alt=alt no-lightbox=true %}
-        {% else %}
-          {%- assign class = "mt-4" %}
-        {% endif %}
-<div markdown="1" class="narrow-text {{ class }}">
-**{{ item.name }}** – {{ item.description }}
-</div>
-    {% endfor %}
+<div class="narrow-text">
+{% include includes-local/barvy-vodiku.html white=true %}
 </div>
 
 ## Instituce
