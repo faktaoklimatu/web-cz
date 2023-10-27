@@ -95,16 +95,7 @@ V současnosti se celosvětově **95 % vodíku pro průmyslové využití vyráb
 
 Vyrobený vodík se rozlišuje podle původu, resp. emisní náročnosti produkce, a označuje se různými "barvami". Z hlediska možného využití jsou nejdůležitější tyto čtyři:
 
-<div class="barvy-vodiku" markdown="1">
-{% include figure.html name="vodik-zeleny.svg" alt="Piktogram zeleného vodíku" no-lightbox=true %}
-**Zelený** – produkován štěpením vody pomocí elektrolýzy, veškerá potřebná energie pochází z obnovitelných zdrojů
-{% include figure.html name="vodik-ruzovy.svg" alt="Piktogram růžového vodíku" no-lightbox=true %}
-**Růžový** – získáván elektrolýzou za pomoci elektřiny a tepla z jaderných elektráren
-{% include figure.html name="vodik-modry.svg" alt="Piktogram modrého vodíku" no-lightbox=true %}
-**Modrý** – vyráběn ze zemního plynu, ale emise z tohoto procesu jsou zachyceny a následně uloženy či využity
-{% include figure.html name="vodik-sedy.svg" alt="Piktogram šedého vodíku" no-lightbox=true %}
-**Šedý** – produkován ze zemního plynu bez zachytávání CO<sub>2</sub> (v současnosti zatím zdaleka nejběžnější způsob výroby)
-</div>
+{% include includes-local/barvy-vodiku.html %}
 
 {% endcapture %}
 
