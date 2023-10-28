@@ -108,7 +108,7 @@ items:
 ## Barvy vodíku
 
 {:.narrow-text}
-V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin “vyrábět”. Podle původu, resp. emisní náročnosti, se vodík označuje různými „barvami“.
+V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin "vyrábět". Podle původu, resp. emisní náročnosti, se vodík označuje různými "barvami".
 
 <div class="narrow-text" markdown="1">
 {% include includes-local/barvy-vodiku.html %}
