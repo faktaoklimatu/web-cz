@@ -210,22 +210,33 @@ Přes všechny tyto problémy **mohou fosilní elektrárny s CCS hrát důležit
     source-text="Fakta o klimatu"
 %}
 
-{% include expander-figure.html
-    name="about-hydrogen"
-    class="contrast-figure"
-    label="Kontext: Jaké typy vodíku existují a k čemu je vodík potřeba?"
-    content="
+{% capture about_hydrogen %}
 **Vodík je už dnes důležitá surovina v chemickém průmyslu** a celosvětově se jej spotřebuje okolo [90 Mt za rok](https://www.iea.org/fuels-and-technologies/hydrogen). Existuje několik hlavních způsobů jeho výroby (ty se označují barvami podle emisní náročnosti):
-- **šedý** (naprostá většina dnešní produkce): vyrábí se primárně ze zemního plynu pomocí štěpení vodní parou ([_methane steam reforming_](https://en.wikipedia.org/wiki/Steam_reforming)), přičemž jako vedlejší produkt vzniká CO<sub>2</sub>.
-- **modrý** (malá část dnešní produkce): na celý proces lze aplikovat CCS, čímž vzniká relativně nízkoemisní vodík. Na světě je zatím několik zařízení vyrábějících modrý vodík (to největší v rafinérii [Port Arthur v USA](https://www.airproducts.com/company/innovation/carbon-capture#/) zachytí každý rok asi 1 Mt CO<sub>2</sub> a vyrobí řádově několik set tisíc tun vodíku za rok).
-- **zelený** (zanedbatelná část dnešní produkce): vyrábí se z nadbytků bezemisní elektřiny pomocí elektrolýzy vody. V případě nadbytků _jaderné_ elektřiny se vodík označuje jako **růžový**, aby se odlišilo, že se v tomto procesu zvyšuje účinnost využitím jaderného tepla.
+
+<div class="barvy-vodiku mb-4" markdown="1">
+
+{% include figure.html folder="i-barvy-vodiku" name="vodik-sedy.svg" alt="Piktogram šedého vodíku" no-lightbox=true %}
+**Šedý** (naprostá většina dnešní produkce): vyrábí se primárně ze zemního plynu pomocí štěpení vodní parou ([_methane steam reforming_](https://en.wikipedia.org/wiki/Steam_reforming)), přičemž jako vedlejší produkt vzniká CO<sub>2</sub>.
+
+{% include figure.html folder="i-barvy-vodiku" name="vodik-modry.svg" alt="Piktogram modrého vodíku" no-lightbox=true %}
+**Modrý** (malá část dnešní produkce): na celý proces lze aplikovat CCS, čímž vzniká relativně nízkoemisní vodík. Na světě je zatím několik zařízení vyrábějících modrý vodík (to největší v rafinérii [Port Arthur v USA](https://www.airproducts.com/company/innovation/carbon-capture#/) zachytí každý rok asi 1 Mt CO<sub>2</sub> a vyrobí řádově několik set tisíc tun vodíku za rok).
+
+{% include figure.html folder="i-barvy-vodiku" name="vodik-zeleny.svg" alt="Piktogram zeleného vodíku" no-lightbox=true %}
+**Zelený** (zanedbatelná část dnešní produkce): vyrábí se z nadbytků bezemisní elektřiny pomocí elektrolýzy vody. V případě nadbytků _jaderné_ elektřiny se vodík označuje jako **růžový**, aby se odlišilo, že se v tomto procesu zvyšuje účinnost využitím jaderného tepla.
+
+</div>
 
 **Kromě využití v energetice je vodík klíčový i pro dekarbonizaci dalších odvětví, která je náročné elektrifikovat:**
 - jako palivo při výrobě oceli a cementu, kde je elektrifikace komplikovaná kvůli příliš vysokým teplotám výrobních procesů;
 - jako palivo pro námořní dopravu a část kamionové dopravy;
 - jako palivo pro leteckou dopravu (vodík je možné převést do formy syntetických paliv velmi podobných palivům fosilním a využít je v běžném leteckém motoru).
-"
-%}
+{% endcapture %}
+
+{% include expander-figure.html
+    name="about-hydrogen"
+    class="contrast-figure"
+    label="Kontext: Jaké typy vodíku existují a k čemu je vodík potřeba?"
+    content=about_hydrogen %}
 
 **Vodík lze využít jako velkokapacitní energetické úložiště pro elektřinu ze slunce a větru**, když je jí v síti nadbytek. Vodík je možné ekonomicky skladovat ve velkém objemu a na delší dobu v podzemních zásobnících. Potom se z něj dá vyrábět elektřina v paroplynových blocích, které se podobají těm na zemní plyn.[^vodik-turbiny] Díky relativně snadnému skladování na zimu je vodík také potenciálním kandidátem pro dekarbonizaci tepláren.
 
