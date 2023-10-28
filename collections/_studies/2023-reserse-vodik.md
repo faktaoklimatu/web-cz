@@ -110,8 +110,11 @@ items:
 {:.narrow-text}
 V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin “vyrábět”. Podle původu, resp. emisní náročnosti, se vodík označuje různými „barvami“.
 
-<div class="narrow-text">
-{% include includes-local/barvy-vodiku.html white=true %}
+<div class="narrow-text" markdown="1">
+{% include includes-local/barvy-vodiku.html %}
+
+{:.mt-4}
+Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
 </div>
 
 ## Instituce
