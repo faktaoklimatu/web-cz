@@ -14,7 +14,7 @@ authors:
     minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni ]
+tags-topics: [ priroda ]
 cover-source-author:      "Ant Rozetsky"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash License"
@@ -44,10 +44,12 @@ Celkově se na světě ročně vyrobí 1,9 miliard tun oceli.[^vyroba-oceli-data
 
 Celkově představuje výroba oceli **7 % světových emisí skleníkových plynů a 11 % světových emisí CO<sub>2</sub>**. Zhruba polovina těchto emisí vzniká při spalování uhlí (koksu), druhá polovina při chemické reakci.[^emiseocel] Železné rudy jsou totiž sloučeniny železa s kyslíkem (například Fe<sub>3</sub>O<sub>4</sub>, Fe<sub>2</sub>O<sub>3</sub>)[^zelezne-rudy] a při výrobě surového železa je nutné tento kyslík z rudy vyvázat (tzv. redukční reakce). K tomu se ve vysokých pecích používá koks, který slouží nejen jako palivo, ale i jako redukční činidlo (uhlík z koksu na sebe naváže kyslík z rudy).
 
+{%comment %}
 {% include figure.html
     name="vzorec.svg"
     alt="FeCO3 + C ⟶ Fe + CO2"
 %}
+{%endcomment %}
 
 Protože uhlí (koks) je fosilní palivo, jedna z klíčových cest pro dekarbonizaci výroby surového železa spočívá v tom použít namísto uhlíku vodík – při redukční reakci pak nevzniká CO<sub>2</sub>, ale voda. Technologicky však jde o jiný proces a vodík není možné používat v současných vysokých pecích.
 
@@ -95,31 +97,37 @@ V dalším textu vycházíme z dekarbonizačních scénářů těchto institucí
 
 #### Přímá redukce železa zeleným vodíkem
 
+{%comment %}
 {% include lead-in-figure.html
     name="prima-redukce-vodikem.svg"
     class="leadin-figure-small"
     alt="Piktogram přímé redukce železa zeleným vodíkem"
 %}
+{%endcomment %}
 
 Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení.
 
 #### Zachytávání CO<sub>2</sub> (CCS)
 
+{%comment %}
 {% include lead-in-figure.html
     name="zachytavani-co2.svg"
     class="leadin-figure-small"
     alt="Piktogram zachytávání CO2"
 %}
+{%endcomment %}
 
 Na vysoké pece je možné nainstalovat zařízení na zachytávání oxidu uhličitého (tzv. <glossary id="ccs">CCS</glossary>). Tato zařízení dokáží zachytit 90–95 % emisí CO<sub>2</sub> dané ocelárny. Čím je ovšem míra zachytávání vyšší, tím je proces také energeticky a finančně náročnější. Technologie zachytávání CO<sub>2</sub> je zatím ve fázi drobných pilotních projektů.[^ocelccscena] Nutnou podmínkou pro větší využití CCS je dostupnost geologických úložišť pro zachycené CO<sub>2</sub>.
 
 #### Recyklace a čistá elektřina
 
+{%comment %}
 {% include lead-in-figure.html
     name="recyklace.svg"
     class="leadin-figure-small"
     alt="Piktogram recyklace a čistá elektřiny"
 %}
+{%endcomment %}
 
 Při současné recyklaci oceli v elektrických obloukových pecích vzniká ve srovnání s výrobou ze surového železa ve vysokých pecích jen zlomek emisí (při běžném mixu elektřiny je to 0,6 tuny CO<sub>2</sub> na tunu oceli oproti 2,3 tuny CO<sub>2</sub> při výrobě ve vysoké peci). Pokud by byly obloukové pece napájeny z nízkoemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro), vyráběly by prakticky bezemisní ocel. Již dnes jde o používanou technologii, například v USA se takto vyrábí 70 % oceli.[^iravodik] Celkově se na světě recykluje okolo 85 % oceli,[^ocelrecyklace] klíčovým limitem pro využití této technologie bude dostupnost železného šrotu (ocel je materiál s dlouhou životností, objem využitelného šrotu je tedy relativně omezený).
 
@@ -141,6 +149,7 @@ Hlavní opatření, které budou průběh dekarbonizace sektoru ovlivňovat:
 
 V následujících letech bude stát mnoho oceláren před rozhodnutím, kterou cestou dekarbonizace se vydat. Tato rozhodnutí zásadně ovlivní jejich dlouhodobé fungování, na druhou stranu se musejí rozhodovat v prostředí plném nejistot – například plán na využití zeleného vodíku se může ukázat jako nevhodný, jestliže bude rozvoj jeho výroby pomalý nebo cena vysoká. Tato nepřehlednost prostředí vede k tomu, že mnoho výrobců oceli s potřebnými investicemi zatím vyčkává.
 
+{%comment %}
 {% include figure.html
     name="ocel.jpg"
     alt="Výroba oceli"
@@ -148,6 +157,7 @@ V následujících letech bude stát mnoho oceláren před rozhodnutím, kterou 
     source-text="Unsplash"
     source-url="https://unsplash.com/photos/zHK__gTTTds"
 %}
+{%endcomment %}
 
 ## Poznámky a zdroje
 
