@@ -14,6 +14,32 @@ intro: |
   V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést.
 
 items:
+  projects:
+    - name: Solar Global
+      link: https://www.solarglobal.cz/vodik
+      description: První český projekt komerčního elektrolyzéru na výrobu zeleného vodíku pomocí elektřiny z vlastní střešní solární elektrárny.
+      production: 30 tun
+      year: 2023
+    - name: For H2 Energy
+      link: https://www.forh2e.com/cs/projekty-a-reference/vodikovy-strategicky-projekt-h.html
+      description: Projekt zahrnuje výstavbu lokálního vodíkového hospodářství, rozvoj vědecko-výzkumné činnosti v oblasti vodíku a vybudování výrobních a montážních hal, které poskytnou zázemí pro dodavatele vodíkových technologií. Výstavba bude realizována v areálu Strategické průmyslové zóny Triangle u Žatce.
+      production: 630 tun
+      year: 2025
+    - name: Veolia
+      link: https://www.vecr.cz/nase-sluzby/co-nabizime/vodikove-projekty-veolia/
+      description: Projekt na výrobu zeleného vodíku v teplárně ve Frýdku-Místku. Jako zdroj energie bude sloužit kombinace elektrické energie z FVE a odpadní biomasy. V budoucnu je plánovaná také větrná elektrárna.
+      production: 270 tun
+      year: 2026
+    - name: SevEn
+      link: https://www.greenmine.cz/body-zmeny/#vodik
+      description: Elektrolyzér má vzniknout v rámci projektu Green Mine, který představuje celkovou revitalizaci mosteckého lomu ČSA, v němž skončí těžba v roce 2025.
+      production: 360 tun
+      year: 2027
+    - name: Orlen Unipetrol
+      link: https://www.e15.cz/byznys/prumysl-a-energetika/unipetrol-ziskal-dotaci-na-miliardovy-vodikovy-projekt-obri-elektrolyzer-spusti-do-ctyr-let-1399502
+      description: Největší český výrobce šedého vodíku plánuje pro chod elektrolyzéru kombinovat vlastní energii ze slunce s dodávkami zelené energie od jiných subjektů.
+      production: 4500 tun
+      year: 2027
   institutions:
     - name: Česká vodíková technologická platforma
       link: https://www.hytep.cz/
@@ -116,6 +142,31 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
 {:.mt-4}
 Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
 </div>
+
+## Projekty zeleného vodíku v ČR
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Investor</th>
+      <th scope="col" class="text-uppercase">Rok uvedení do provozu</th>
+      <th scope="col" class="text-uppercase">Plánovaná roční produkce</th>
+      <th scope="col" class="text-uppercase">Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.projects %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.production }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 ## Instituce
 
