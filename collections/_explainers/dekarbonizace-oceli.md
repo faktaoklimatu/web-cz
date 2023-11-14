@@ -63,6 +63,8 @@ Tento průmyslový sektor bude obtížné dekarbonizovat (patří k tzv. *hard-t
 
 [Emirates Steel Arkhan](https://www.emiratessteelarkan.com/emirates-steel-arkan-demonstrates-industrialsustainability-leadership-during-the-make-it-in-the-emirates-forum2023/) – první ocelárna, která ve větším měřítku využívá technologii zachytávání uhlíku (CCS). Emisní náročnost zde produkované oceli je však pouze o 45 % nižší než v případě konvenčně vyráběné oceli, pro další snížení emisí tak existuje ještě velký prostor.
 
+[Boston Metal](https://www.bostonmetal.com/) - firma stojící za inovativní, ale zároveň experimentální metodou výroby oceli skrz proces tzv. elektrolýzy roztavených oxidů železa (MOE - Molten Oxide Electrolysis).
+
 Seznam projektů v EU, které mají za cíl snížit emisní náročnost výroby oceli, lze najít na webu [EUROFER](https://www.eurofer.eu/issues/climate-and-energy/maps-of-key-low-carbon-steel-projects/).
 
 {% endcapture %}
@@ -87,7 +89,7 @@ V dalším textu vycházíme z dekarbonizačních scénářů těchto institucí
 **Všechny tyto scénáře se shodují v několika obecných rysech:**
 - **Výroba oceli v budoucnu mírně poroste** a lze očekávat, že v roce 2050 bude o 10–40 % vyšší než dnes. Při využívání současných technologií by to znamenalo nárůst emisí z dnešních cca 3 Gt CO<sub>2</sub> na 4–4,5 Gt CO<sub>2</sub>.
 - Scénáře zpravidla nepočítají s úplnou dekarbonizací sektoru. Například scénář Making Net Zero Possible směřuje k emisím okolo 0,3 Gt CO<sub>2</sub> v roce 2050. To je nicméně už jen malá část současných emisí v tomto odvětví.
-- Dominantní roli v dekarbonizaci hrají **tři technologie: využití zeleného vodíku, CCS a recyklace**, přičemž každá z těchto technologii by se mohla na snížení emisí podílet 20–30 %. Podrobnosti o těchto technologiích a možnostech jejich nasazení jsou uvedeny níže. Míra jejich využití totiž bude záviset na situaci v daném regionu.
+- Dominantní roli v dekarbonizaci hrají **tři technologie: využití zeleného či nízkoemisního vodíku, CCS a recyklace**, přičemž každá z těchto technologii by se mohla na snížení emisí podílet 20–30 %. Podrobnosti o těchto technologiích a možnostech jejich nasazení jsou uvedeny níže. Míra jejich využití totiž bude záviset na situaci v daném regionu.
 - **Dekarbonizovaná ocel bude dražší**, u zelené oceli se očekává zvýšení ceny o 25–50 %. **Na cenách koncových výrobků se ale toto zvýšení ceny oceli projeví jen málo**. Automobil či dům, v nichž je použita nízkoemisní ocel, bude stát cca o 1 % více než ten, který využívá ocel vyrobenou současnými technologiemi[^wef] – cena oceli tvoří zpravidla pouze zlomek celkové ceny produktu.
 - **Zpoplatňování emisí skleníkových plynů** (např. systém EU ETS) **bude zvyšovat konkurenceschopnost nízkoemisní oceli**. Lze očekávat, že při cenách 180–360 dolarů za tunu CO<sub>2</sub> by byla nízkoemisní ocel stejně drahá jako ocel vyráběná současnými metodami (nebo i levnější). Podobně se například ceny přiblíží nebo zcela srovnají v důsledku *Inflation Reduction Act* (IRA) v USA, který poskytuje významné slevy na daních podnikům, které vyrábějí zelený vodík a zachytávají CO<sub>2</sub>.[^iravodik]
 
@@ -101,7 +103,7 @@ V dalším textu vycházíme z dekarbonizačních scénářů těchto institucí
     alt="Piktogram přímé redukce železa zeleným vodíkem"
 %}
 
-Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení.
+Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení. 
 
 #### Zachytávání CO<sub>2</sub> (CCS)
 
@@ -123,9 +125,11 @@ Na vysoké pece je možné nainstalovat zařízení na zachytávání oxidu uhli
 
 Při současné recyklaci oceli v elektrických obloukových pecích vzniká ve srovnání s výrobou ze surového železa ve vysokých pecích jen zlomek emisí (při běžném mixu elektřiny je to 0,6 tuny CO<sub>2</sub> na tunu oceli oproti 2,3 tuny CO<sub>2</sub> při výrobě ve vysoké peci). Pokud by byly obloukové pece napájeny z nízkoemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro), vyráběly by prakticky bezemisní ocel. Již dnes jde o používanou technologii, například v USA se takto vyrábí 70 % oceli.[^iravodik] Celkově se na světě recykluje okolo 85 % oceli,[^ocelrecyklace] klíčovým limitem pro využití této technologie bude dostupnost železného šrotu (ocel je materiál s dlouhou životností, objem využitelného šrotu je tedy relativně omezený).
 
-#### Doplňkové technologie
+#### Doplňkové a nové technologie
 
 Mezi doplňkové metody patří například přímá redukce železa pomocí zemního plynu, která je vhodná v regionech, kde je plyn levný a dostupný (například v USA či Rusku). Emisní intenzita v tomto případě dosahuje 1 tuny CO<sub>2</sub> na tunu vyrobené oceli, oproti výrobě ve vysokých pecích je tedy emisní stopa více než o polovinu nižší.[^iravodik] Dále je částečně možné jako palivo či redukční činidlo využívat biomasu. Vzhledem k potřebě velkého množství biomasy bude nicméně tato metoda nejspíš využívána jen omezeně, v regionech s vysokou dostupností biomasy, jako je Brazílie či Rusko.[^mckinsey] Využití biomasy ovšem s sebou nese i environmentální rizika a šetrnost řešení je často sporná. Dalšího drobného snížení emisí lze dosáhnout například zvyšováním efektivity existujících pecí či využíváním železných rud s vyšším obsahem železa.
+
+Nově zkoumanou technologií je elektrolýza železné rudy v roztaveném příp. rozpuštěném stavu (MOE - Molten Oxide Electrolysis). Výhodou je přímá výroba oceli z železné rudy, aniž by byla potřeba vytvářet mezistupeň surového železa. Technologii lze použít pro výrobu vysoce čistého železa, příp. jiných kovů. Technologie rovněž nezávisí na výrobě a ukládání vodíku. Technologie má dva podtypy: vysokoteplotní MOE (1500-1600 °C) a nízkoteplotní MOE (pod 150 °C), každý z procesu využívá stejnosměrný proud (pozn. PV panely a většina chemických baterií produkuje stejnosměrný proud). Vysokoteplotní MOE musí navíc udržovat vysokou teplotu po dobu mnoha hodin, což může být náročné zajistit z nízkoemisních zdrojů. Tato technologie se nachází ve vývojové fázi a je málo pravděpodobně, že bude mít komerční využití v nejbližším desetiletí. V případě, že by se podařilo dosáhnout škálování a výrazného zlevnění, může se MOE stát jednou z hlavních metod dekarbonizace výroby oceli, dnes se ovšem jedná o více experimentální metodu.
 
 ### Co ovlivní průběh dekarbonizace?
 
@@ -139,7 +143,7 @@ Hlavní opatření, které budou průběh dekarbonizace sektoru ovlivňovat:
 - **Poptávka po nízkoemisní oceli**: zpracovatelé mohou o nízkoemisní oceli uvažovat i v případě, že bude dražší – protože se například zavázali snižovat svou uhlíkovou stopu nebo po nich výrobky s nižší emisní stopou budou chtít koncoví zákazníci.
 - **Rozvoj výroby zeleného vodíku a technologií pro zachytávání CO<sub>2</sub>**.
 
-V následujících letech bude stát mnoho oceláren před rozhodnutím, kterou cestou dekarbonizace se vydat. Tato rozhodnutí zásadně ovlivní jejich dlouhodobé fungování, na druhou stranu se musejí rozhodovat v prostředí plném nejistot – například plán na využití zeleného vodíku se může ukázat jako nevhodný, jestliže bude rozvoj jeho výroby pomalý nebo cena vysoká. Tato nepřehlednost prostředí vede k tomu, že mnoho výrobců oceli s potřebnými investicemi zatím vyčkává.
+V následujících letech bude stát mnoho oceláren před rozhodnutím, kterou cestou dekarbonizace se vydat. Tato rozhodnutí zásadně ovlivní jejich dlouhodobé fungování, na druhou stranu se musí rozhodovat v prostředí plném nejistot – například plán na využití zeleného vodíku se může ukázat jako nevhodný, jestliže bude rozvoj jeho výroby pomalý nebo cena vysoká. Tato nepřehlednost prostředí vede k tomu, že mnoho výrobců oceli s potřebnými investicemi zatím vyčkává.
 
 {% include figure.html
     name="ocel.jpg"
