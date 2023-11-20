@@ -145,6 +145,7 @@ subtopics:
   - potencial-vetrne-energie-cr
   - potencial-solarni-energie-cr-strechy
   - uzemni-stopa-oze
+  - elektrifikace-dopravy
 
 - id:          "scenare-2030-cr"
   title:       "Scénáře vývoje: Česká energetika v roce 2030"
