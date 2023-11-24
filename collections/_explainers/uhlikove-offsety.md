@@ -17,8 +17,8 @@ cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash License"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://unsplash.com/photos/io7dX_1EFCg"
-perex: |
-uvidíme. 
+perex: "Uvidíme"|
+
 
 ---
 Nákup uhlíkových offsetů je v podstatě dohoda mezi investorem (stát, firma či jednotlivec), který chce kompenzovat své emise skleníkových plynů, a někým, kdo offsety prodává a realizuje aktivitu s nimi spojenou (například vysazuje stromy). Investor zaplatí určitou částku a realizátor slíbí, že danou aktivitou kompenzuje odpovídající množství investorových emisí. Může se ale stát, že tento slib není z nějakého důvodu dodržen, případně daná aktivita nemusí mít slibovaný efekt, či dokonce je její dopad negativní. A právě kvůli tomu bývá trh s uhlíkovými offsety často kritizován – že **namísto řešení klimatické krize ji sám podporuje a ještě vytváří problémy další**
@@ -50,10 +50,8 @@ GUIZAR-COUTIÑO, Alejandro et al., 2022. A global evaluation of the effectivenes
 \*\*[Návrh celounijního rámce certifikace](https://climate.ec.europa.eu/system/files/2022-11/Proposal_for_a_Regulation_establishing_a_Union_certification_framework_for_carbon_removals.pdf).
 "
 %}
-"
-%}
 
-***Offsetování přispívá ke zvyšování množství CO2 v atmosféře**
+**Offsetování přispívá ke zvyšování množství CO2 v atmosféře**
 K tomu dochází v případě, že projekt **nemá slibovaný efekt, resp. je tento efekt nadhodnocený** (viz výše). Ten, kdo si offsety koupil, se však o této skutečnosti zpravidla nedozví. Předpokládá, že jsou jeho emise kompenzovány, jak bylo slíbeno při nákupu offsetů, a pokračuje ve vytváření dalších emisí.  
 
 **Offsetování ke snižování emisí rozhodně nestačí** 
