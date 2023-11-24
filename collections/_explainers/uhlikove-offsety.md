@@ -1,17 +1,14 @@
 ---
 layout:      explainer
-title:       "Co jsou uhlíkove offsety?"
+title:       "Jaké problémy jsou spojeny s uhlíkovými offsety?"
 slug:        "uhlikove-offsety"
-published:   2023-09-11
+published:   2023-11-21
 authors:
-  - ids: ["adam-bilek", "ondras-pribyla"]
+  - ids: ["Andy Snováková", "ondras-pribyla"]
   - id: "jirka-lnenicka"
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-  - name: "Jiří Mravec"
-    affiliation: Třinecké železárny
-    minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
@@ -21,159 +18,99 @@ cover-source-license:     "Unsplash License"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://unsplash.com/photos/io7dX_1EFCg"
 perex: |
-    Výroba oceli je emisně velmi náročná. Zároveň se jedná o materiál, který je pro fungování moderní společnosti naprosto zásadní. Proto je dekarbonizace tohoto průmyslového sektoru velice důležitá. Cest k ní vede několik a každá má své výhody i nevýhody.
+uvidíme. 
+
 ---
+Nákup uhlíkových offsetů je v podstatě dohoda mezi investorem (stát, firma či jednotlivec), který chce kompenzovat své emise skleníkových plynů, a někým, kdo offsety prodává a realizuje aktivitu s nimi spojenou (například vysazuje stromy). Investor zaplatí určitou částku a realizátor slíbí, že danou aktivitou kompenzuje odpovídající množství investorových emisí. Může se ale stát, že tento slib není z nějakého důvodu dodržen, případně daná aktivita nemusí mít slibovaný efekt, či dokonce je její dopad negativní. A právě kvůli tomu bývá trh s uhlíkovými offsety často kritizován – že **namísto řešení klimatické krize ji sám podporuje a ještě vytváří problémy další**
 
-{% include preview-box.html
-    title="Technologie dekarbonizace průmyslu"
-    text="Více informací najdete v tomto textu."
-    slug="technologie-dekarbonizace-prumyslu"
-%}
+Jaké hlavní problémy jsou s obchodováním s offsety spojeny? 
 
-Ocel je jednou z nejdůležitějších surovin a lidstvo ji využívá ve stavebnictví, dopravě, průmyslu i mnoha dalších odvětvích. V technické praxi se rozlišují různé druhy ocelí a litin, někdy se také odděluje výroba surového železa a jeho další zpracování. Pro základní představu o možnostech dekarbonizace ale nejsou tyto detaily příliš podstatné, a proto se jimi tento text nezabývá.
+## Obecné problémy
 
-## Výroba oceli a emise skleníkových plynů
+**Chybí kvalitní metodologický standard**
+V první řadě stále neexistuje jednotný, standardizovaný a kvalitní způsob měření efektu uhlíkových offsetů. To má za následek řadu dalších, níže uvedených problémů. 
 
-{% include preview-box.html
-    title="Jak se na dekarbonizaci dívají v jedné z oceláren v Česku"
-    text="Rozhovor s oceláři přináší tato epizoda podcastu 2050."
-    slug="28-trinecke-zelezarny"
-%}
-
-Celkově se na světě ročně vyrobí 1,9 miliard tun oceli.[^vyroba-oceli-data] Většina této produkce (okolo 75 %) probíhá ve vysokých pecích, kde se spaluje uhlí či koks. Zbývajících 25 % připadá na elektrické obloukové pece, případně na tzv. přímou redukci železa. Tyto dva výrobní postupy se velmi liší svou emisní intenzitou.[^emisniintenzitaoceli-WEF] Zatímco v případě surového železa vyráběného ve vysokých pecích připadá na každou vyrobenou tunu oceli cca 2,3 tuny oxidu uhličitého (t CO<sub>2</sub>), při recyklaci železa v pecích obloukových vzniká na 1 tunu oceli pouze 0,6 t CO<sub>2</sub>. Celosvětově je průměrná emisní intenzita výroby oceli 1,9 t CO<sub>2</sub> na tunu oceli,[^emisni-intenzita-srovnani] v jednotlivých zemích však může být toto číslo velmi různé – vždy záleží na konkrétním poměru výrobních technologií.[^emisniintenzitaoceli-zeme]
-
-Celkově představuje výroba oceli **7 % světových emisí skleníkových plynů a 11 % světových emisí CO<sub>2</sub>**. Zhruba polovina těchto emisí vzniká při spalování uhlí (koksu), druhá polovina při chemické reakci.[^emiseocel] Železné rudy jsou totiž sloučeniny železa s kyslíkem (například Fe<sub>3</sub>O<sub>4</sub>, Fe<sub>2</sub>O<sub>3</sub>)[^zelezne-rudy] a při výrobě surového železa je nutné tento kyslík z rudy vyvázat (tzv. redukční reakce). K tomu se ve vysokých pecích používá koks, který slouží nejen jako palivo, ale i jako redukční činidlo (uhlík z koksu na sebe naváže kyslík z rudy).
-
-{%comment %}
-{% include figure.html
-    name="vzorec.svg"
-    alt="FeCO3 + C ⟶ Fe + CO2"
-%}
-{%endcomment %}
-
-Protože uhlí (koks) je fosilní palivo, jedna z klíčových cest pro dekarbonizaci výroby surového železa spočívá v tom použít namísto uhlíku vodík – při redukční reakci pak nevzniká CO<sub>2</sub>, ale voda. Technologicky však jde o jiný proces a vodík není možné používat v současných vysokých pecích.
-
-## Dekarbonizace výroby oceli
-
-Tento průmyslový sektor bude obtížné dekarbonizovat (patří k tzv. *hard-to-abate sectors*). Existují už ale první projekty, které ukazují, že nízkoemisní ocel vyrábět lze.
-
-{% capture greensteel %}
-
-[SSAB](https://www.smithsonianmag.com/smart-news/green-steel-produced-first-time-180978550/) – pomocí zeleného vodíku byla ocel poprvé vyrobena (a následně využita na výrobu kamionů) v roce 2021 v rámci pilotního projektu ve Švédsku. Ve velkém měřítku by měla být zelená ocel vyráběna od roku 2026.
-
-[H2 Green Steel](https://www.mining-technology.com/news/green-steel-hydrogen/) – na rok 2025 se ve Švédsku plánuje spuštění první větší ocelárny, která bude vyrábět uhlíkově neutrální ocel s využitím zeleného vodíku. Bude se jednat o první větší ocelárnu tohoto druhu.
-
-[Emirates Steel Arkhan](https://www.emiratessteelarkan.com/emirates-steel-arkan-demonstrates-industrialsustainability-leadership-during-the-make-it-in-the-emirates-forum2023/) – první ocelárna, která ve větším měřítku využívá technologii zachytávání uhlíku (CCS). Emisní náročnost zde produkované oceli je však pouze o 45 % nižší než v případě konvenčně vyráběné oceli, pro další snížení emisí tak existuje ještě velký prostor.
-
-Seznam projektů v EU, které mají za cíl snížit emisní náročnost výroby oceli, lze najít na webu [EUROFER](https://www.eurofer.eu/issues/climate-and-energy/maps-of-key-low-carbon-steel-projects/).
-
-{% endcapture %}
+**Efekt offsetových projektů či aktivit může být nadhodnocený**
+Výsledný počet kreditů z daného projektu / aktivity vždy závisí na metodologii výpočtu. Při použití nevhodné či nesprávné metodologie může být výsledek nadhodnocený a prodávají se pak tzv. fantómové kredity, které ve skutečnosti k žádné redukci emisí nevedou. Některé studie[^guizar-2022] uvádějí i případy 400% **nadhodnocení reálného efektu**.[^guardian-nadhodnocovani]
 
 {% include expander-figure.html
-    name="greensteel"
-    expanded=false
-    class="contrast-figure "
-    label="Příklady projektů využívajících dekarbonizační technologie"
-    content=greensteel
+    name="about-biomass"
+    class="contrast-figure"
+    label="Kontext: Ověřování offsetových projektů"
+    content="
+Účinnost a důvěryhodnost offsetových projektů posuzují ověřovací (zpravidla mezinárodní) instituce. Jedním z nejznámějších ověřovacích standardů je *verified carbon standard* (VCS) od společnosti Verra. I jeho důvěryhodnost však byla zpochybněna nedávnými studiemi\*, podle nichž některé projekty ověřené tímto standardem měly zabraňovat odlesňování, jejich skutečný účinek byl ale mnohem menší, než autoři projektu uváděli (jinými slovy: původní modelovaný výpočet se výrazně neshodoval s hodnotami z výpočtů založených na pozdějších měřeních a reálných datech). 
+
+
+Na evropské úrovni jednotná standardizace offsetů zatím neexistuje. Evropská komise nicméně v listopadu 2022 přijala návrh prvního celounijního rámce certifikace projektů\*\* a opatření pohlcujících uhlík, aby bylo možné v rámci EU lépe kvantifikovat, sledovat a zaručit kvalitu uhlíkových offsetů. 
+
+{:.longread-tiny}
+\* WEST, Thales A. P. et al., 2023. Action needed to make carbon offsets from forest conservation work for climate change mitigation. Science. Vol. 381, číslo 6660, s. 873–877. DOI [10.1126/science.ade3535](https://www.science.org/doi/10.1126/science.ade3535),.
+GUIZAR-COUTIÑO, Alejandro et al., 2022. A global evaluation of the effectiveness of voluntary REDD+ projects at reducing deforestation and degradation in the moist tropics. Conservation Biology. Vol. 36, číslo 6, s. e13970. DOI [10.1111/cobi.13970](https://worldsteel.org/steel-topics/statistics/world-steel-in-figures-2022/).
+
+\*\*[Návrh celounijního rámce certifikace](https://climate.ec.europa.eu/system/files/2022-11/Proposal_for_a_Regulation_establishing_a_Union_certification_framework_for_carbon_removals.pdf).
+"
+%}
+"
 %}
 
-Je tedy na místě zvažovat, jak lze tyto projekty škálovat, kolik to bude stát a jak se to projeví na celkových emisích z výroby oceli. Na tyto a další otázky se snaží odpovědět tzv. **sektorové dekarbonizační scénáře**, což jsou studie možného vývoje sektoru výroby oceli, který by vedl k nízkým nebo nulovým emisím skleníkových plynů.
+***Offsetování přispívá ke zvyšování množství CO2 v atmosféře**
+K tomu dochází v případě, že projekt **nemá slibovaný efekt, resp. je tento efekt nadhodnocený** (viz výše). Ten, kdo si offsety koupil, se však o této skutečnosti zpravidla nedozví. Předpokládá, že jsou jeho emise kompenzovány, jak bylo slíbeno při nákupu offsetů, a pokračuje ve vytváření dalších emisí.  
 
-V dalším textu vycházíme z dekarbonizačních scénářů těchto institucí:
-- IPCC: [Sixth Assessment Report – Working Group III: Kapitola 11](https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf)
-- Mission Possible Partnership: [Making Net Zero Steel Possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf)
-- Mezinárodní agentura pro energii: [Iron and Steel Technology Roadmap](https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf)
-- McKinsey: [Transition to Net Zero: Steel](https://www.mckinsey.com/capabilities/sustainability/our-insights/spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/steel)
-- World Economic Forum: [Net Zero Industry Tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
+**Offsetování ke snižování emisí rozhodně nestačí** 
+Z hlediska celkového snižování uhlíkové stopy by offsetování mělo sloužit **pouze jako doplňkový nástroj**. Nemělo by vytvářet dojem, že emise není třeba redukovat jinými způsoby, protože jsou dostatečně kompenzovány nákupem offsetů.[^shell] 
 
-**Všechny tyto scénáře se shodují v několika obecných rysech:**
-- **Výroba oceli v budoucnu mírně poroste** a lze očekávat, že v roce 2050 bude o 10–40 % vyšší než dnes. Při využívání současných technologií by to znamenalo nárůst emisí z dnešních cca 3 Gt CO<sub>2</sub> na 4–4,5 Gt CO<sub>2</sub>.
-- Scénáře zpravidla nepočítají s úplnou dekarbonizací sektoru. Například scénář Making Net Zero Possible směřuje k emisím okolo 0,3 Gt CO<sub>2</sub> v roce 2050. To je nicméně už jen malá část současných emisí v tomto odvětví.
-- Dominantní roli v dekarbonizaci hrají **tři technologie: využití zeleného vodíku, CCS a recyklace**, přičemž každá z těchto technologii by se mohla na snížení emisí podílet 20–30 %. Podrobnosti o těchto technologiích a možnostech jejich nasazení jsou uvedeny níže. Míra jejich využití totiž bude záviset na situaci v daném regionu.
-- **Dekarbonizovaná ocel bude dražší**, u zelené oceli se očekává zvýšení ceny o 25–50 %. **Na cenách koncových výrobků se ale toto zvýšení ceny oceli projeví jen málo**. Automobil či dům, v nichž je použita nízkoemisní ocel, bude stát cca o 1 % více než ten, který využívá ocel vyrobenou současnými technologiemi[^wef] – cena oceli tvoří zpravidla pouze zlomek celkové ceny produktu.
-- **Zpoplatňování emisí skleníkových plynů** (např. systém EU ETS) **bude zvyšovat konkurenceschopnost nízkoemisní oceli**. Lze očekávat, že při cenách 180–360 dolarů za tunu CO<sub>2</sub> by byla nízkoemisní ocel stejně drahá jako ocel vyráběná současnými metodami (nebo i levnější). Podobně se například ceny přiblíží nebo zcela srovnají v důsledku *Inflation Reduction Act* (IRA) v USA, který poskytuje významné slevy na daních podnikům, které vyrábějí zelený vodík a zachytávají CO<sub>2</sub>.[^iravodik]
+**Offsetování může vést ke greenwashingu** 
+Firmy, které kompenzují svou uhlíkovou stopu pomocí offsetů, se často před zákazníky prezentují jako uhlíkově neutrální. V důsledku výše uvedených problémů však **může být tato neutrálnost značně problematická** a produkované emise mohou být kompenzovány jen částečně nebo téměř vůbec.[^ASA] 
 
-### Jaké technologie je možné využít?
+**Trh s uhlíkovými offsety se podílí na environmentální nespravedlnosti**
+Environmentální nespravedlnost označuje situaci, kdy negativní důsledky poškozování životního prostředí nesou ti, kteří jej nezpůsobili. Často jde o lidi chudé či jinak znevýhodněné, kteří se těmto důsledkům nedokážou bránit. Může jít například o situace, kdy **offsetové projekty vytvářejí environmentální či sociální problémy v rozvojových zemích**, jež se na emisích podílejí v menší míře než země rozvinuté, nebo bohaté společnosti, které offsetové projekty financují.[^Alto-Mayo]
 
-#### Přímá redukce železa zeleným vodíkem
+## Další problémy spojené s konkrétními projekty 
 
-{%comment %}
-{% include lead-in-figure.html
-    name="prima-redukce-vodikem.svg"
-    class="leadin-figure-small"
-    alt="Piktogram přímé redukce železa zeleným vodíkem"
-%}
-{%endcomment %}
+Níže je uvedeno několik známých typů offsetových aktivit a konkrétní problémy, které mohou nastat při jejich realizaci.
 
-Umožňuje nahradit emisně nejnáročnější část výroby oceli – vysoké pece, ve kterých se jako palivo i jako redukční činidlo používá koks. Takto vyrobené surové železo je pak nutné dále zpracovávat v elektrických obloukových pecích. Nutnou podmínkou je dostupnost vodíkové infrastruktury (elektrolyzéry, skladovací kapacity nebo produktovody). Cena zeleného vodíku, a tedy i cena oceli vyráběné s jeho využitím, pak bude závislá na ceně elektřiny – a lze proto očekávat, že tento způsob bude využíván zejména v oblastech s dostatkem obnovitelných zdrojů. Kromě toho by přechod na výrobu oceli pomocí zeleného vodíku vyžadoval velké investice do nových typů vysokých pecí. V důsledku zmíněných faktorů se tak redukce zeleným vodíkem uplatní jen asi u třetiny očekávané výroby oceli, přestože vypadá jako nejvíce přímočaré řešení.
+### Výsadba stromů
 
-#### Zachytávání CO<sub>2</sub> (CCS)
+**Nová výsadba nemusí být realizována vhodným způsobem**
+Vysazené stromy musí být vhodné pro dané stanoviště (druhy, které v této lokalitě přirozeně rostou, hodí se do místní půdy, nebudou trpět nadbytkem či nedostatkem vláhy, hodí se do dané nadmořské výšky apod.), aby se jim na daném místě dařilo. Stejně tak je zpravidla třeba zajistit jim povýsadbovou péči (například dostatečnou ochranu před okusem zvěří). Tedy výsadbou to rozhodně nekončí, tento fakt ale offsetové programy obvykle nezohledňují. 
+**Projekt výsadby ve skutečnosti nemusí mít žádnou přidanou hodnotu**
+Jako příklad lze uvést projekt Sázíme Česko. Ten je kritizován za to, že realizuje výsadbu stromů na pozemcích určených k plnění funkce lesa[^sazime-cesko], na nichž obnovu lesa stanovuje zákon a finančně ji podporuje stát. Další financování tedy není třeba, protože stromy by na těchto pozemcích byly vysazeny v každém případě.[^nadace-partnerstvi-vysadba-stromu] 
 
-{%comment %}
-{% include lead-in-figure.html
-    name="zachytavani-co2.svg"
-    class="leadin-figure-small"
-    alt="Piktogram zachytávání CO2"
-%}
-{%endcomment %}
+### Péče o les
+**Stromy jsou vykáceny nebo zničeny v důsledku živelné (či jiné) katastrofy**
+Pokud například les zachvátí požár, pokácí jej orkán, uschne v důsledku dlouhotrvajícího sucha, podlehne přemnoženému kůrovci nebo jej někdo vykácí, svou funkci snižování emisí přestává plnit. 
+**Ochrana přírodních území může vést k sociálním problémům**
+Ochrana některých území může být v konfliktu s právy a potřebami původních obyvatel. Příkladem je ochrana lesů Alto Mayo v Peru[^guardian-alto-mayo], kde podle kritiků dochází k násilnému vystěhovávání a ničení domů místních lidí. 
 
-Na vysoké pece je možné nainstalovat zařízení na zachytávání oxidu uhličitého (tzv. <glossary id="ccs">CCS</glossary>). Tato zařízení dokáží zachytit 90–95 % emisí CO<sub>2</sub> dané ocelárny. Čím je ovšem míra zachytávání vyšší, tím je proces také energeticky a finančně náročnější. Technologie zachytávání CO<sub>2</sub> je zatím ve fázi drobných pilotních projektů.[^ocelccscena] Nutnou podmínkou pro větší využití CCS je dostupnost geologických úložišť pro zachycené CO<sub>2</sub>.
+### Zvyšování množství uhlíku v půdě
+**Naměřené množství půdního (=sekvestrovaného) uhlíku nemusí odpovídat skutečnosti** 
+Měření množství uhlíku v půdě může zkreslovat řada faktorů:
+- způsob odběru půdních vzorků – např. vzdálenost mezi jednotlivými odběry a jejich počet[^muukkonen-2009] 
+- místo odběru vzorku – pokud se například ve vzorku nachází hmota z kompostu nebo biouhel, může to přinést výrazné zkreslení výsledku
+- čas odběru – sezónní změny množství uhlíku v půdě mohou být způsobeny měnící se teplotou, vlhkostí, růstem rostlin nebo tím, jak se na dané půdě právě hospodaří[^wuest-2014]
+- měření v laboratoři – různé laboratoře používají ke zjištění množství uhlíku různé postupy a k výpočtu různé koeficienty[^sedma-generace] (výsledek měření se tak může lišit v závislosti na laboratoři)
 
-#### Recyklace a čistá elektřina
+### Efektivnější vařiče v domácnostech 
+**Nové vařiče mohou mít krátkou životnost**
+Příkladem může být distribuce energeticky efektivních vařičů firmou Enking chudým obyvatelům Indie[^cooking-stoves-india]. Ty by měly nahradit vařiče původní, které mají velkou spotřebu dřeva. Nové vařiče jsou však často nekvalitní, rezavějí a stávají se brzy nepoužitelné. Program je financován z prodeje offsetů, nefunkční vařiče nicméně původní slib snížení emisí již nenaplňují. 
+**Není záruka, že obyvatelé vařiče skutečně používají**
+Aby mohlo být dosaženo slibovaného efektu, musí být vařiče používány vhodným způsobem a nesmí být kombinovány se starými, energeticky neefektivními vařiči.[^cooking-stoves-nadhodnoceni]:
 
-{%comment %}
-{% include lead-in-figure.html
-    name="recyklace.svg"
-    class="leadin-figure-small"
-    alt="Piktogram recyklace a čistá elektřiny"
-%}
-{%endcomment %}
-
-Při současné recyklaci oceli v elektrických obloukových pecích vzniká ve srovnání s výrobou ze surového železa ve vysokých pecích jen zlomek emisí (při běžném mixu elektřiny je to 0,6 tuny CO<sub>2</sub> na tunu oceli oproti 2,3 tuny CO<sub>2</sub> při výrobě ve vysoké peci). Pokud by byly obloukové pece napájeny z nízkoemisních zdrojů elektřiny (obnovitelné zdroje nebo jádro), vyráběly by prakticky bezemisní ocel. Již dnes jde o používanou technologii, například v USA se takto vyrábí 70 % oceli.[^iravodik] Celkově se na světě recykluje okolo 85 % oceli,[^ocelrecyklace] klíčovým limitem pro využití této technologie bude dostupnost železného šrotu (ocel je materiál s dlouhou životností, objem využitelného šrotu je tedy relativně omezený).
-
-#### Doplňkové technologie
-
-Mezi doplňkové metody patří například přímá redukce železa pomocí zemního plynu, která je vhodná v regionech, kde je plyn levný a dostupný (například v USA či Rusku). Emisní intenzita v tomto případě dosahuje 1 tuny CO<sub>2</sub> na tunu vyrobené oceli, oproti výrobě ve vysokých pecích je tedy emisní stopa více než o polovinu nižší.[^iravodik] Dále je částečně možné jako palivo či redukční činidlo využívat biomasu. Vzhledem k potřebě velkého množství biomasy bude nicméně tato metoda nejspíš využívána jen omezeně, v regionech s vysokou dostupností biomasy, jako je Brazílie či Rusko.[^mckinsey] Využití biomasy ovšem s sebou nese i environmentální rizika a šetrnost řešení je často sporná. Dalšího drobného snížení emisí lze dosáhnout například zvyšováním efektivity existujících pecí či využíváním železných rud s vyšším obsahem železa.
-
-### Co ovlivní průběh dekarbonizace?
-
-Budoucnost konkrétní ocelárny bude záležet na řadě faktorů: na výši státní podpory pro tyto podniky, vzdálenosti od geologického úložiště pro zachycené CO<sub>2</sub> či na ceně zeleného vodíku a navazující infrastruktuře. V případě neúspěšné transformace se může stát, že některé ocelárny zaniknou, protože se výroba přesune někam, kde bude levný vodík či CCS. Zdroje často ovlivňovaly umístění ocelárny i v minulosti (například blízkost uhelných dolů).
-
-Zároveň státy pokládají výrobu oceli za strategické průmyslové odvětví. Proto i když transformace probíhá v tržním prostředí, kde spolu různé ocelárny soutěží cenou, budou vlády výrobu nebo její dekarbonizaci významně podporovat. Do určité míry se to děje už dnes a přímé i nepřímé formy státní podpory může do budoucna ještě přibývat.
-
-Hlavní opatření, které budou průběh dekarbonizace sektoru ovlivňovat:
-
-- **Mechanismy snižující rozdíly v cenách nízkoemisní a vysokoemisní oceli**: ceny emisních povolenek či uhlíkové daně, investiční podpora (v EU například prostřednictvím Inovačního fondu), daňové úlevy na zavádění potřebných technologií (v USA například daňové úlevy na výrobu zeleného vodíku) nebo tzv. systém uhlíkového vyrovnávání na hranicích (CBAM).[^cbam]
-- **Poptávka po nízkoemisní oceli**: zpracovatelé mohou o nízkoemisní oceli uvažovat i v případě, že bude dražší – protože se například zavázali snižovat svou uhlíkovou stopu nebo po nich výrobky s nižší emisní stopou budou chtít koncoví zákazníci.
-- **Rozvoj výroby zeleného vodíku a technologií pro zachytávání CO<sub>2</sub>**.
-
-V následujících letech bude stát mnoho oceláren před rozhodnutím, kterou cestou dekarbonizace se vydat. Tato rozhodnutí zásadně ovlivní jejich dlouhodobé fungování, na druhou stranu se musejí rozhodovat v prostředí plném nejistot – například plán na využití zeleného vodíku se může ukázat jako nevhodný, jestliže bude rozvoj jeho výroby pomalý nebo cena vysoká. Tato nepřehlednost prostředí vede k tomu, že mnoho výrobců oceli s potřebnými investicemi zatím vyčkává.
-
-{%comment %}
-{% include figure.html
-    name="ocel.jpg"
-    alt="Výroba oceli"
-    caption="1 tuna oceli = cca 1,9 tun CO<sub>2</sub>"
-    source-text="Unsplash"
-    source-url="https://unsplash.com/photos/zHK__gTTTds"
-%}
-{%endcomment %}
+## Závěr
+Trh s uhlíkovými offsety může být pro dosažení uhlíkové neutrality **užitečným doplňkovým nástrojem**. Kromě toho může mít offsetování emisí, které je zpravidla spojené s výsadbou stromů, lepší péčí o půdu apod., i další environmentální benefity. Problémy se objeví ve chvíli, když se začneme zabývat detaily – původní slib například nemusí být z nějakého důvodu dodržen nebo aktivita nemá slibovaný efekt, dokonce může být její přínos i negativní (jak pro ekosystém, tak pro místní obyvatele). Při investování do uhlíkových offsetů je proto důležité vzít v potaz řadu faktorů, které mohou výsledný efekt offsetového projektu značně ovlivnit. Těmto faktorům se více věnuje explainer o uhlíkových offsetech. 
 
 ## Poznámky a zdroje
 
-[^vyroba-oceli-data]: [World Steel Association: Crude steel production](https://worldsteel.org/steel-topics/statistics/world-steel-in-figures-2022/)
-[^emisniintenzitaoceli-zeme]: Studie [Steel Climate Impact](https://www.globalefficiencyintel.com/steel-climate-impact-international-benchmarking-energy-co2-intensities) uvádí emisní intenzity pro řadu zemí. Zatímco například v USA je průměrná emisní intenzita přibližně 1 t CO<sub>2</sub> na tunu vyrobené oceli, v Německu je to  1,5 t CO<sub>2</sub> a v Číně okolo 2 t CO<sub>2</sub>. Hlavní rozdíl spočívá v rozdílném poměru mezi výrobou ve vysokých pecích (tedy výrobou surového železa) a výrobou v obloukových pecích (tedy recyklací oceli) v jednotlivých zemích.
-[^emisniintenzitaoceli-WEF]: [World Economic Forum: Net Zero Industry Tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf)
-[^emisni-intenzita-srovnani]: Zatímco Světové ekonomické fórum [WEF: Net Zero Industry Tracker (2022)](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf) uvádí průměrnou světovou emisní intenzitu výroby oceli 1,9 t CO<sub>2</sub>,  [Mezinárodní agentura pro energii (IEA)](https://www.iea.org/energy-system/industry/steel) uvádí průměrnou světovou emisní intenzitu 1,4 t CO<sub>2</sub> na tunu vyrobené oceli. Rozdíl mezi těmito údaji o emisní intenzitě je pravděpodobně způsoben různým započítáváním nepřímých emisí (scope 2), případně může souviset s tím, které procesy jsou do výroby oceli započítávány.
-[^zelezne-rudy]: [Wikipedie: Železná ruda](https://cs.wikipedia.org/wiki/%C5%BDelezn%C3%A1_ruda)
-[^ocelrecyklace]: [Yale Environment 360, 2021: Can the World’s Most Polluting Heavy Industries Decarbonize?](https://e360.yale.edu/features/can-the-worlds-most-polluting-heavy-industries-decarbonize)
-[^wef]: [World Economic Forum, 2022: Net Zero Industry Tracker 2022 Edition](https://www3.weforum.org/docs/WEF_NetZero_Industry_Tracker_2022_Edition.pdf).
-[^vysokepece]: [McKinsey&Company, 2022: Steel Transition to Net-Zero](https://www.mckinsey.com/capabilities/sustainability/our-insights/spotting-green-business-opportunities-in-a-surging-net-zero-world/transition-to-net-zero/steel)
-[^emiseocel]: [Eurostat/EEA](https://docs.google.com/spreadsheets/d/1K5dbcngapuIdgrCRG0V8uV-c0ppirfYTwvvp8t54V3w/edit#gid=283480625).
-[^mckinsey]: [McKinsey&Company, 2020: Decarbonization challenge for steel](https://www.mckinsey.com/industries/metals-and-mining/our-insights/decarbonization-challenge-for-steel)
-[^h2greensteel]: [Mining Technology, 2023: Europe’s first commercial green steel plant to open in Sweden](https://www.mining-technology.com/news/green-steel-hydrogen/)
-[^ocelteplota]: [Carbon Chain, 2022: Understand your steel emissions](https://www.carbonchain.com/blog/understand-your-steel-emissions)
-[^missionpossible]: [Mission Possible Partnership, 2022: Making Net-Zero Steel Possible](https://missionpossiblepartnership.org/wp-content/uploads/2022/09/Making-Net-Zero-Steel-possible.pdf)
-[^ocelccscena]: [MIT, 2021: How efficient is carbon capture and storage?](https://climate.mit.edu/ask-mit/how-efficient-carbon-capture-and-storage). Očekávaná cena zachytávání CO<sub>2</sub> se podle [IEA](https://www.iea.org/commentaries/is-carbon-capture-too-expensive) pohybuje kolem 35–95 eur (900–2 250 Kč) za tunu CO<sub>2</sub>. Cena oceli závisí na druhu požadovaného produktu a místě výroby, v západní Evropě se průměrná cena podle [Steel Benchmarker](http://steelbenchmarker.com/history.pdf) pohybuje kolem 700–800 eur (16 700–19 100 Kč).
-[^iravodik]: [Boston Consulting Group: Impact of IRA, IIJA, CHIPS, and Energy Act of 2020 on Clean Technologies](https://breakthroughenergy.org/wp-content/uploads/2023/04/Steel-Cleantech-Policy-Impact-Assessment.pdf). V USA stojí tuna oceli vyrobená konvenční cestou ve vysoké peci 360 dolarů. Díky podpoře zeleného vodíku v rámci IRA může tuna surové oceli vyrobené pomocí zeleného vodíku stát 370 dolarů.
-[^cbam]: [Evropská komise: Mechanismus uhlíkového vyrovnání na hranicích: Otázky a odpovědi](https://ec.europa.eu/commission/presscorner/detail/cs/qanda_21_3661)
+[^guizar-2022]: GUIZAR-COUTIÑO, Alejandro et al., 2022. A global evaluation of the effectiveness of voluntary REDD+ projects at reducing deforestation and degradation in the moist tropics. Conservation Biology. Vol. 36, číslo 6, s. e13970. DOI [10.1111/cobi.13970](https://worldsteel.org/steel-topics/statistics/world-steel-in-figures-2022/).
+[^guardian-nadhodnocovani]: Více o tomto nadhodnocování a závěrech odborných studií v [článku od Guardian](https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe).
+[^shell]:Právě nákup uhlíkových offsetů je významným bodem klimatické strategie [ropné společnosti Shell](https://www.theguardian.com/environment/2023/jan/19/shell-to-spend-450m-on-carbon-offsetting-fears-grow-credits-worthless-aoe), která je už z podstaty svého zaměření [obrovským emitentem](https://www.reuters.com/business/energy/shell-emissions-dip-about-10-123-bln-tonnes-co2-equivalent-2023-03-09/). 
+[^ASA]:[Advertising Standards Authority’s (ASA)](https://www.asa.org.uk/news/updated-environment-guidance-carbon-neutral-and-net-zero-claims-in-advertising.html) ve Velké Británii přistoupila k zákazu reklam, které tvrdí, že produkty či služby určité firmy jsou uhlíkově neutrální, dokud tato firma neprokáže, že zakoupené offsety jsou skutečně efektivní. 
+[^Alto-Mayo]:Jako příklad lze uvést [projekt zachování pralesa Alto Mayo v Peru](https://www.theguardian.com/environment/2023/jan/18/forest-communities-alto-mayo-peru-carbon-offsetting-aoe), který je spojen s vážnými sociálními problémy a je z velké části financován nákupem offsetů americké společnosti Disney.
+[^sazime-cesko]:Více o tomto projektu a jeho kritice lze najít v [článku magazínu Reportér](https://reportermagazin.cz/17259/vy-sazite-my-uctujeme-zeleny-figl-se-stromky/).
+[^nadace-partnerstvi-vysadba-stromu]:[Článek Nadace Partnerství](https://www.nadacepartnerstvi.cz/Co-delame/Projekty/Nadace-Partnerstvi/Aktuality/10-veci,-na-ktere-si-dat-pozor-pri-podpore-stromu) upozorňuje na další problémy, na které si dát při podpoře výsadby stromů pozor. 
+[^guardian-alto-mayo]: Více v [článku od Guardian](https://www.theguardian.com/environment/2023/jan/18/forest-communities-alto-mayo-peru-carbon-offsetting-aoe).
+[^muukkonen-2009]: MUUKKONEN, Petteri, HÄKKINEN, Margareeta a MÄKIPÄÄ, Raisa, 2009. Spatial variation in soil carbon in the organic layer of managed boreal forest soil—implications for sampling design. Environmental Monitoring and Assessment. Listopad 2009. Vol. 158, č. 1–4, s. 67–76. DOI [10.1007/s10661-008-0565-2](https://link.springer.com/article/10.1007/s10661-008-0565-2). 
+[^wuest-2014]:WUEST, Stewart, 2014. Seasonal Variation in Soil Organic Carbon. Soil Science Society of America Journal. Vol. 78, číslo 4, s. 1442–1447. DOI [10.2136/sssaj2013.10.0447](https://www.ars.usda.gov/ARSUserFiles/6233/seasonalVariationInSoilOrganic.pdf). 
+[^sedma-generace]:Nejistotě spojené s měřením množství půdního uhlíku se krátce věnuje rakouský odborník na půdu Matthias Strahlhofer v [článku časopisu Sedmá generace](https://sedmagenerace.cz/je-treba-mobilizovat-ziviny-v-pude/). 
+[^cooking-stoves-india]: [Cookstove offsets produce millions of junk carbon credits. Climate Home News](https://www.climatechangenews.com/2023/08/25/cookstove-offsets-carbon-emissions-credits-india-enking/)
+[^cooking-stoves-nadhodnoceni]:Nadhodnocení používání nových vařičů objevila např. analýza [Gill-Wiehl et al., 2023](https://www.researchsquare.com/article/rs-2606020/v1).
