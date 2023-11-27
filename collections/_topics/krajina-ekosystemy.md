@@ -134,6 +134,6 @@ subtopics:
   - ekonomicka-hodnota-prirody
   - 2023-reserse-soil-carbon
   - uhlikove-offsety-1
-  - uhlikove-offsety-2
+
 
 ---

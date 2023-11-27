@@ -15,7 +15,7 @@ authors:
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
-cover-source-author: "Ondráš Přibyla"
+cover-source-author: ""
 cover-source-license: "CC BY 4.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"
 cover-source-text: "Mrtvý smrkový les, Zálesná Zhoř, Jihomoravský kraj. Fotoarchiv autora."
