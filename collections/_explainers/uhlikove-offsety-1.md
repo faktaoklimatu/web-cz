@@ -4,7 +4,8 @@ title:       "Co jsou uhlíkové offsety?"
 slug:        "uhlikove-offsety-1"
 published:   2023-11-27
 authors:
-  - id: "andy-snovakova", "ondras-pribyla"
+  - id: "andy-snovakova"
+  - id: "ondras-pribyla"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
@@ -27,19 +28,34 @@ Jde o dohodu mezi dvěma či více stranami: investorem/donorem, realizátorem a
 - organizace slíbí, že zakoupí určitou plochu lesa a zabrání tak možnému vykácení (a tím i uvolnění CO2, k němuž dochází při těžbě a zpracování dřeva) 
 - firma slíbí, že vybaví obyvatele subsaharské Afriky efektivními plynovými vařiči, které sníží emise vznikající během vaření při pálení dřeva, odpadů apod.
 
+{% include figure.html
+    name=""
+    caption=""
+    alt=""
+    source-text="Fakta o klimatu"
+%}
+
 Z hlediska snižování uhlíkové stopy představují offsety spíš **doplňkový nástroj**, přesto hrají svou důležitou úlohu, například v kompenzování emisí z odvětví, které je těžké dekarbonizovat, jako je třeba výroba cementu. Může to být rovněž způsob, jak emise ”odložit” na později a získat čas na vývoj potřebných technologií nebo jak v přírodě pomoci nastartovat ozdravné procesy. Trh a obchodování navíc pomáhají zajistit, že budou dostupné prostředky využity efektivně. 
 
 ## S jakými typy offsetů se lze v praxi setkat?
 Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity jsou rozděleny podle toho, zda uhlík z atmosféry odstraňují nebo zabraňují jeho vypouštění a dále jakým způsobem je redukovaný/odstraněný uhlík uložen. Může totiž jít o **uložení krátkodobé** (většinou **přírodními procesy**), kdy existuje větší riziko zpětného uvolnění uhlíku do atmosféry (například když les zničí požár), nebo o **dlouhodobé uložení** s využitím **technologií**, které jsou na zpětné uvolnění uhlíku méně náchylné. 
 
+{% include figure.html
+    name="uhlikove-offset-schema-02.svg"
+    caption="Kategorie uhlíkových offsetů"
+    alt="Kategorie uhlíkových offsetů"
+    source-text="Fakta o klimatu"
+%} 
+
 ## Cesta uhlíkového offsetu
 Jak složitá tato cesta v praxi bude, záleží vždy na konkrétní zemi, resp. trhu, kde se s offsety obchoduje[^schema-carbon-brief] . Následující schéma ukazuje základní rámec pro uhlíkové offsety v Česku[^schema-konzultace]. Problémům, které se mohou v rámci jednotlivých kroků objevit, se více věnuje další explainer. 
 
+
 {% include figure.html
-    name="uhlikove-offsety-schema-02.svg"
-    caption="jii"
-    alt="jjj"
-    source-text="jjj"
+    name=""
+    caption=""
+    alt=""
+    source-text="Fakta o klimatu"
 %}
 
 [^schema-carbon-brief]:[Schéma](https://interactive.carbonbrief.org/carbon-offsets-2023/infographic.html) popisující cestu fiktivního uhlíkového offsetu na mezinárodním trhu vytvořila organizace Carbon Brief. 
