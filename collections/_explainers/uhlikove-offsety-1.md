@@ -4,8 +4,14 @@ title:       "Co jsou uhlíkové offsety?"
 slug:        "uhlikove-offsety-1"
 published:   2023-11-27
 authors:
-  - id: "andy-snovakova"
-  - id: "ondras-pribyla"
+  - ids: ["andy-snovakova", "ondras-pribyla"]
+  - id: "jirka-lnenicka"   
+    minor-role: "editace"
+  - id: "marcel-otruba"
+    minor-role: "ilustrace"
+  - name: "Jana Smolíková"
+    affiliation: CI2
+    minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
@@ -13,7 +19,9 @@ cover-source-author: "Ondráš Přibyla"
 cover-source-license: "CC BY 4.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"
 cover-source-text: "Mrtvý smrkový les, Zálesná Zhoř, Jihomoravský kraj. Fotoarchiv autora."
-perex:       "Doplníme"
+perex: |
+  Perex
+
 ---
 
 Představme si situaci, kdy se firma či organizace chce z nějakého důvodu prezentovat jako klimaticky či uhlíkově neutrální. Zároveň už vyčerpala všechny možnosti, jak snížit svou uhlíkovou stopu. Může ještě něco dělat? Ano – kompenzovat své emise nákupem uhlíkových offsetů. Co tyto offsety jsou a jak fungují?
