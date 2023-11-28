@@ -37,12 +37,14 @@ Jde o dohodu mezi dvěma či více stranami: investorem/donorem, realizátorem a
 - organizace slíbí, že zakoupí určitou plochu lesa a zabrání tak možnému vykácení (a tím i uvolnění CO2, k němuž dochází při těžbě a zpracování dřeva) 
 - firma slíbí, že vybaví obyvatele subsaharské Afriky efektivními plynovými vařiči, které sníží emise vznikající během vaření při pálení dřeva, odpadů apod.
 
+{%comment%}
 {% include figure.html
     name=""
     caption=""
     alt=""
     source-text="Fakta o klimatu"
 %}
+{%endcomment%}
 
 Z hlediska snižování uhlíkové stopy představují offsety spíš **doplňkový nástroj**, přesto hrají svou důležitou úlohu, například v kompenzování emisí z odvětví, které je těžké dekarbonizovat, jako je třeba výroba cementu. Může to být rovněž způsob, jak emise ”odložit” na později a získat čas na vývoj potřebných technologií nebo jak v přírodě pomoci nastartovat ozdravné procesy. Trh a obchodování navíc pomáhají zajistit, že budou dostupné prostředky využity efektivně. 
 
@@ -59,13 +61,14 @@ Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity 
 ## Cesta uhlíkového offsetu
 Jak složitá tato cesta v praxi bude, záleží vždy na konkrétní zemi, resp. trhu, kde se s offsety obchoduje[^schema-carbon-brief] . Následující schéma ukazuje základní rámec pro uhlíkové offsety v Česku[^schema-konzultace]. Problémům, které se mohou v rámci jednotlivých kroků objevit, se více věnuje další explainer. 
 
-
+{%comment%}
 {% include figure.html
     name=""
     caption=""
     alt=""
     source-text="Fakta o klimatu"
 %}
+{%endcomment%}
 
 [^schema-carbon-brief]:[Schéma](https://interactive.carbonbrief.org/carbon-offsets-2023/infographic.html) popisující cestu fiktivního uhlíkového offsetu na mezinárodním trhu vytvořila organizace Carbon Brief. 
 [^schema-konzultace]:Schéma vzniklo na základě odborné konzultace s garantem offsetových projektů v ČR. 
