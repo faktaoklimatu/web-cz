@@ -15,10 +15,11 @@ authors:
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
-cover-source-author: ""
-cover-source-license: "CC BY 4.0"
-cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"
-cover-source-text: "Mrtvý smrkový les, Zálesná Zhoř, Jihomoravský kraj. Fotoarchiv autora."
+cover-source-author: "Marcel Smits"
+cover-source-license: "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-text: "Dohoda"
+cover-source-url: "https://unsplash.com/photos/a-man-holding-a-baby-GJwgw_XqooQ"
 perex: |
   Perex
 
