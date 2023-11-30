@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
 published:   2021-11-09
+updated:     2023-11-30
 authors:
   - names-or-ids: ["Alena Moravová", "tom-protivinsky"]
 weight:      75
@@ -70,7 +71,7 @@ Graf ukazuje skutečné příspěvky vybraných zemí do klimatických financí 
 
 ## Jak je na tom Česká republika?
 
-Jako rozvinutá země a součást Evropské unie do klimatických financí přispíváme i my, a to jak multilaterálními, tak bilaterálními smlouvami. V roce 2018 se jednalo o 185 milionů korun a **ve srovnání s výší našeho HDP jsme na tom ještě výrazně hůře než USA**[^4] (některé odhady českého příspěvku jsou mírně vyšší, například OECD uvádí 240 milionů korun[^9]). Pro dosažení férového podílu podle HDP bychom v roce 2018 museli přispět 7,8 miliardy korun ročně (přibližně 0,6 % českého státního rozpočtu), navíc patříme k větším znečišťovatelům při přepočtu emisí na obyvatele, takže částka by měla být ještě vyšší. Příspěvky vycházející z bilaterálních vztahů míří z ČR k některým balkánským státům, ale i dalším zemím světa (např. Etiopie nebo Kambodža), prostřednictvím multilaterárních fondů jsme v roce 2018 přispěli částkou 26 milionů korun.
+Jako rozvinutá země a součást Evropské unie do klimatických financí přispíváme i my, a to jak multilaterálními, tak bilaterálními smlouvami. V roce 2018 se jednalo o 185 milionů korun a **ve srovnání s výší našeho HDP jsme na tom ještě výrazně hůře než USA**[^4] (některé odhady českého příspěvku jsou mírně vyšší, například OECD uvádí 240 milionů korun[^9]). Pro dosažení férového podílu podle HDP bychom v roce 2018 museli přispět 7,8 miliardy korun ročně (přibližně 0,6 % českého státního rozpočtu), navíc patříme k větším znečišťovatelům při přepočtu emisí na obyvatele, takže částka by měla být ještě vyšší. Příspěvky vycházející z bilaterálních vztahů míří z ČR k některým balkánským státům, ale i dalším zemím světa (např. Etiopie nebo Kambodža), prostřednictvím multilaterárních fondů jsme v roce 2018 přispěli částkou 26 milionů korun. Mezi členskými státy EU patřil český příspěvek v roce 2018 k nejnižším, v přepočtu na obyvatele vycházel pouze na cca 18 Kč za rok.[^4]
 
 {% include figure.html
     name="klimaticke-finance-hdp-cr-des.svg"
@@ -80,7 +81,7 @@ Jako rozvinutá země a součást Evropské unie do klimatických financí přis
     source-url="http://www.fors.cz/wp-content/uploads/2019/11/Brief-klimafinance_final-u.pdf"
 %}
 
-Mezi členskými státy EU patří český příspěvek k nejnižším, **v přepočtu na obyvatele vychází pouze na cca 18 Kč za rok**.[^4] Na rozdíl od všech okolních států ČR své závazky do Green Climate Fund v roce 2019 nenavýšila.[^5] Ministerstvo životního prostředí plánovalo klimatické finance navýšit na 634 milionů korun v roce 2020 (data zatím nejsou k dispozici, avšak téměř určitě tohoto cíle dosaženo nebylo) a na rok 2030 stanovilo MŽP cílovou částku 1,79 miliard korun. I tato hodnota by však byla výrazně nižší, než kolik odpovídá férovému podílu naší země podle výše HDP.
+Během let 2020–2023 ČR na rozdíl od všech okolních států do Green Climate Fund nepřispívala vůbec.[^5] **Pro období let 2024–2027** rozhodla vláda o obnovení příspěvků, kdy se zavázala přispívat přibližně 20 miliony korun ročně, tedy **2 Kč na obyvatele**.[^10]
 
 ## Zdroje
 
@@ -93,3 +94,4 @@ Mezi členskými státy EU patří český příspěvek k nejnižším, **v pře
 [^7]: UN Climate Summit. ["Most Rich Countries Falling Short Of Their Fair Share Of Pledge Climate Finance"](https://unclimatesummit.org/most-rich-countries-falling-short-of-their-fair-share-of-pledge-climate-finance/).
 [^8]: Vláda Velké Británie. ["UK COP26 Presidency publishes Climate Finance Delivery Plan led by German State Secretary Flasbarth and Canada’s Minister Wilkinson ahead of COP26"](https://www.gov.uk/government/news/uk-cop26-presidency-publishes-climate-finance-delivery-plan-led-by-german-state-secretary-flasbarth-and-canadas-minister-wilkinson-ahead-of-cop26).
 [^9]: OECD. ["Climate Change: OECD DAC External Development Finance Statistics"](https://www.oecd.org/dac/financing-sustainable-development/development-finance-topics/climate-change.htm).
+[^10]: Green Climate Fund ["GCF Second Replenishment (GCF-2)"](https://www.greenclimate.fund/about/resource-mobilisation/gcf-2)
