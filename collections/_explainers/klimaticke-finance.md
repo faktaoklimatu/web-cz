@@ -3,9 +3,9 @@ layout:      explainer
 title:       "Co jsou to klimatické finance?"
 slug:        "klimaticke-finance"
 published:   2021-11-09
-updated:     2023-11-30
+updated:     2023-12-01
 authors:
-  - names-or-ids: ["Alena Moravová", "tom-protivinsky"]
+  - names-or-ids: ["Alena Moravová", "tom-protivinsky", "katerina-kolouchova"]
 weight:      75
 tags-scopes: [ svet ]
 tags-topics: [ opatreni, ekonomika ]
