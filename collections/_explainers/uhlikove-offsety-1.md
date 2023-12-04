@@ -15,13 +15,13 @@ authors:
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ priroda ]
-cover-source-author: "Marcel Smits"
+cover-source-author: "Niels Weiss"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-cover-source-text: "Dohoda"
-cover-source-url: "https://unsplash.com/photos/a-man-holding-a-baby-GJwgw_XqooQ"
+cover-source-text: "Stromová alej"
+cover-source-url: "https://unsplash.com/photos/silhouette-photo-of-trees-and-field-during-dawn-rDVP7whoibw"
 perex: |
-  Perex
+  Velký boom v posledních letech zažívá trh s tzv. uhlíkovými offsety, pomocí nichž chtějí firmy v Česku i ve světě kompenzovat své emise skleníkových plynů. Objem vynaložených prostředků se pohybuje v miliardách amerických dolarů, kompenzované emise se uvádějí ve stovkách megatun CO2. Co tedy uhlíkové offsety jsou a nakolik je tento nástroj klíčový při řešení vlastní uhlíkové stopy?
 
 ---
 
@@ -67,6 +67,8 @@ Jak složitá tato cesta v praxi bude, záleží vždy na konkrétní zemi, resp
     alt="Cesta uhlíkového offsetu"
     source-text="Fakta o klimatu"
 %}
+
+## Zdroje a poznámky
 
 [^schema-carbon-brief]:[Schéma](https://interactive.carbonbrief.org/carbon-offsets-2023/infographic.html) popisující cestu fiktivního uhlíkového offsetu na mezinárodním trhu vytvořila organizace Carbon Brief. 
 [^schema-konzultace]:Schéma vzniklo na základě odborné konzultace s garantem offsetových projektů v ČR. 
