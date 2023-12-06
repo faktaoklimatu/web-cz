@@ -31,28 +31,26 @@ Uhlíkové offsety (nebo také kredity) jsou **obchodovatelné jednotky**, díky
 
 Jde o dohodu mezi dvěma či více stranami: kupujícím, realizátorem aktivity a případně nezávislým auditorem/garantem. Kupující zaplatí za offset, aby snížil svou uhlíkovou stopu, realizátor slibuje, že tyto prostředky využije na offsetové aktivity, které povedou k odstranění emisí z atmosféry nebo zabrání jejich vypouštění. Nezávislý auditor poté posuzuje, nakolik jsou realizátorovy sliby skutečně naplňovány.
 
+{% include figure.html
+    name="schema-vztahu.png"
+    caption="Cesta uhlíkového offsetu"
+    alt="Cesta uhlíkového offsetu"
+    source-text="Fakta o klimatu"
+%}
+
 Konkrétní podoba offsetových aktivit může být různá. Například:
 
 - farmář slíbí, že změní způsob hospodaření na své půdě tak, aby v sobě hromadila více organické hmoty, a tedy více uhlíku
 - organizace slíbí, že zakoupí určitou plochu lesa a zabrání tak možnému vykácení (a tím i uvolnění CO<sub>2</sub>, k němuž dochází při těžbě a zpracování dřeva) 
 - firma slíbí, že vybaví obyvatele subsaharské Afriky efektivními plynovými vařiči, které sníží emise vznikající během vaření při pálení dřeva, odpadů apod.
 
-{%comment%}
-{% include figure.html
-    name=""
-    caption=""
-    alt=""
-    source-text="Fakta o klimatu"
-%}
-{%endcomment%}
-
 Z hlediska snižování uhlíkové stopy představují offsety spíše **doplňkový nástroj**, přesto hrají svou důležitou úlohu, například v kompenzování emisí z odvětví, která je těžké dekarbonizovat, jako je třeba výroba cementu. Může to být rovněž způsob, jak emise ”odložit” na později (a získat tak čas na vývoj potřebných technologií) nebo jak přírodě pomoci nastartovat ozdravné procesy. Tržní prostředí navíc pomáhá zajistit, že budou dostupné prostředky využity efektivně. 
 
 ## S jakými typy offsetů se lze setkat?
-Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity jsou rozděleny podle toho, zda uhlík z atmosféry odstraňují nebo zabraňují jeho vypouštění, a dále jakým způsobem je odstraněný uhlík uložen. Může totiž jít o **uložení krátkodobé** (obvykle **díky přírodním procesům**), kde existuje větší riziko zpětného uvolnění uhlíku do atmosféry (například když les zničí požár), nebo o **dlouhodobé uložení** s využitím **technologií**, které jsou na zpětné uvolnění uhlíku méně náchylné (například ukládání hluboko do geologických vrstev). 
+Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity jsou rozděleny podle toho, zda uhlík z atmosféry <span style="color:#00658c">**odstraňují**</span> nebo <span style="color:#e8811c">**zabraňují jeho vypouštění**</span>, a dále jakým způsobem je odstraněný uhlík uložen. Může totiž jít o **uložení krátkodobé** (obvykle **díky přírodním procesům**), kde existuje větší riziko zpětného uvolnění uhlíku do atmosféry (například když les zničí požár), nebo o **dlouhodobé uložení** s využitím **technologií**, které jsou na zpětné uvolnění uhlíku méně náchylné (například ukládání hluboko do geologických vrstev). 
 
 {% include figure.html
-    name="uhlikove-offset-schema-02.svg"
+    name="typy-offsetu.png"
     caption="Dvě základní kategorie uhlíkových offsetů"
     alt="Dvě základní kategorie uhlíkových offsetů"
     source-text="Fakta o klimatu"
@@ -60,13 +58,6 @@ Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity 
 
 ## Jak to funguje v praxi?
 Jak složitá bude cesta uhlíkového offsetu v praxi, záleží vždy na konkrétní zemi, resp. trhu, kde se s offsety obchoduje[^schema-carbon-brief]. Následující schéma ukazuje základní rámec pro uhlíkové offsety v Česku[^schema-konzultace]. Problémům, které se mohou v rámci jednotlivých kroků objevit, se podrobněji věnuje další explainer. 
-
-{% include figure.html
-    name="schema-cesta-offsetu.svg"
-    caption="Cesta uhlíkového offsetu"
-    alt="Cesta uhlíkového offsetu"
-    source-text="Fakta o klimatu"
-%}
 
 ## Zdroje a poznámky
 
