@@ -33,8 +33,8 @@ Jde o dohodu mezi dvěma či více stranami: kupujícím, realizátorem aktivity
 
 {% include figure.html
     name="schema-vztahu.png"
-    caption="Cesta uhlíkového offsetu"
-    alt="Cesta uhlíkového offsetu"
+    caption="Základní rámec pro uhlíkové offsety v Česku"
+    alt="Základní rámec pro uhlíkové offsety v Česku"
     source-text="Fakta o klimatu"
 %}
 
@@ -56,6 +56,7 @@ Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity 
     source-text="Fakta o klimatu"
 %} 
 
+{% comment %}
 ## Jak to funguje v praxi?
 Jak složitá bude cesta uhlíkového offsetu v praxi, záleží vždy na konkrétní zemi, resp. trhu, kde se s offsety obchoduje[^schema-carbon-brief]. Následující schéma ukazuje základní rámec pro uhlíkové offsety v Česku[^schema-konzultace]. Problémům, které se mohou v rámci jednotlivých kroků objevit, se podrobněji věnuje další explainer. 
 
@@ -63,3 +64,4 @@ Jak složitá bude cesta uhlíkového offsetu v praxi, záleží vždy na konkr�
 
 [^schema-carbon-brief]:[Schéma](https://interactive.carbonbrief.org/carbon-offsets-2023/infographic.html) popisující cestu fiktivního uhlíkového offsetu na mezinárodním trhu vytvořila organizace Carbon Brief. 
 [^schema-konzultace]:Schéma vzniklo na základě odborné konzultace s jedním z garantů offsetových projektů v ČR. 
+{% endcomment %}
