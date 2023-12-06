@@ -2,6 +2,8 @@
 layout:      explainer
 title:       "Co jsou uhlíkové offsety?"
 slug:        "uhlikove-offsety-1"
+series-id:   "serie-uhlikove-offsety"
+series-order: "I"
 published:   2023-11-27
 authors:
   - ids: ["andy-snovakova", "ondras-pribyla"]
@@ -25,17 +27,18 @@ perex: |
 
 ---
 
-Představme si situaci, kdy se firma či organizace chce z nějakého důvodu prezentovat jako klimaticky či uhlíkově neutrální. Zároveň už vyčerpala všechny možnosti, jak snížit svou uhlíkovou stopu. Může ještě něco dělat? Ano – kompenzovat své emise nákupem uhlíkových offsetů. Jak to funguje?
+Představme si situaci, kdy se firma či organizace chce z nějakého důvodu prezentovat jako klimaticky či uhlíkově neutrální. Zároveň už vyčerpala všechny možnosti, jak snížit svou uhlíkovou stopu. Může ještě něco dělat? Ano – kompenzovat své emise nákupem uhlíkových offsetů (1 offset odpovídá 1 tuně oxidu uhličitého). Jak to funguje?
 
 Uhlíkové offsety (nebo také kredity) jsou **obchodovatelné jednotky**, díky nimž mohou jednotlivci, firmy nebo státy částečně kompenzovat svou uhlíkovou stopu, kterou už nedokáží snížit jiným způsobem. Každý offset je vždy vázán na projekt či aktivitu, která uhlík (resp. oxid uhličitý) buď z atmosféry **odstraňuje** (tzv. *removal offsets*, např. výsadba stromů) nebo **zabraňuje jeho vypouštění** (tzv. *avoidance offsets*, např. výstavba nových elektráren využívajících obnovitelné zdroje). 
 
-Jde o dohodu mezi dvěma či více stranami: kupujícím, realizátorem aktivity a případně nezávislým auditorem/garantem. Kupující zaplatí za offset, aby snížil svou uhlíkovou stopu, realizátor slibuje, že tyto prostředky využije na offsetové aktivity, které povedou k odstranění emisí z atmosféry nebo zabrání jejich vypouštění. Nezávislý auditor poté posuzuje, nakolik jsou realizátorovy sliby skutečně naplňovány.
+Jde o dohodu mezi dvěma či více stranami: kupujícím, realizátorem aktivity a případně nezávislým auditorem/garantem. Kupující zaplatí za offset[^offsety-cena], aby snížil svou uhlíkovou stopu, realizátor slibuje, že tyto prostředky využije na offsetové aktivity, které povedou k odstranění emisí z atmosféry nebo zabrání jejich vypouštění. Nezávislý auditor poté posuzuje, nakolik jsou realizátorovy sliby skutečně naplňovány.
 
 {% include figure.html
     name="schema-vztahu.png"
-    caption="Cesta uhlíkového offsetu"
-    alt="Cesta uhlíkového offsetu"
+    caption="Základní rámec pro uhlíkové offsety"
+    alt="Základní rámec pro uhlíkové offsety"
     source-text="Fakta o klimatu"
+    source-url="https://www.http://faktaoklimatu/explainery/uhlikove-offsety-1"
 %}
 
 Konkrétní podoba offsetových aktivit může být různá. Například:
@@ -51,15 +54,12 @@ Příklady různých offsetových aktivit přibližuje schéma níže. Aktivity 
 
 {% include figure.html
     name="typy-offsetu.png"
-    caption="Dvě základní kategorie uhlíkových offsetů"
-    alt="Dvě základní kategorie uhlíkových offsetů"
-    source-text="Fakta o klimatu"
+    caption="Dvě základní kategorie uhlíkových offsetů a několik konkrétních příkladů offsetových aktivit"
+    alt="Dvě základní kategorie uhlíkových offsetů a několik konkrétních příkladů offsetových aktivit"
+    source-text="The Oxford Principles for Net Zero Aligned Carbon Offsetting"
+    source-url="https://www.smithschool.ox.ac.uk/sites/default/files/2022-01/Oxford-Offsetting-Principles-2020.pdf"
 %} 
-
-## Jak to funguje v praxi?
-Jak složitá bude cesta uhlíkového offsetu v praxi, záleží vždy na konkrétní zemi, resp. trhu, kde se s offsety obchoduje[^schema-carbon-brief]. Následující schéma ukazuje základní rámec pro uhlíkové offsety v Česku[^schema-konzultace]. Problémům, které se mohou v rámci jednotlivých kroků objevit, se podrobněji věnuje další explainer. 
 
 ## Zdroje a poznámky
 
-[^schema-carbon-brief]:[Schéma](https://interactive.carbonbrief.org/carbon-offsets-2023/infographic.html) popisující cestu fiktivního uhlíkového offsetu na mezinárodním trhu vytvořila organizace Carbon Brief. 
-[^schema-konzultace]:Schéma vzniklo na základě odborné konzultace s jedním z garantů offsetových projektů v ČR. 
+[^offsety-cena]: Cena za 1 offset se může lišit podle konkrétního projektu – v Česku to může být 700 Kč, ale i 4000 Kč.
