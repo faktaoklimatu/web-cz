@@ -133,7 +133,7 @@ subtopics:
   - 22-jmk-adaptace
   - ekonomicka-hodnota-prirody
   - 2023-reserse-soil-carbon
-  - uhlikove-offsety-1
-  - uhlikove-offsety-2
+  - uhlikove-offsety
+  - uhlikove-offsety-problemy
 
 ---
