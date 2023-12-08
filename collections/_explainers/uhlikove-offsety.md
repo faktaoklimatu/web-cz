@@ -25,6 +25,9 @@ cover-source-url:         "https://unsplash.com/photos/silhouette-photo-of-trees
 perex: |
   Velký boom zažívá v posledních letech trh s tzv. uhlíkovými offsety, pomocí nichž chtějí firmy (v Česku i ve světě) kompenzovat své emise skleníkových plynů. Objem vynaložených prostředků se dnes pohybuje v miliardách amerických dolarů, kompenzované emise se uvádějí ve stovkách megatun CO<sub>2</sub>. Co tedy uhlíkové offsety jsou a nakolik je tento nástroj klíčový při řešení vlastní uhlíkové stopy?
 ---
+
+{% include series-box.html series-id=page.series-id selected=page.slug %}
+
 Představme si situaci, kdy se firma či organizace chce z nějakého důvodu prezentovat jako klimaticky či uhlíkově neutrální. Zároveň už vyčerpala všechny možnosti, jak snížit svou uhlíkovou stopu. Může ještě něco dělat? Ano – kompenzovat své emise nákupem uhlíkových offsetů (1 offset odpovídá 1 tuně oxidu uhličitého). Jak to funguje?
 
 Uhlíkové offsety (nebo také kredity) jsou **obchodovatelné jednotky**, díky nimž mohou jednotlivci, firmy nebo státy částečně kompenzovat svou uhlíkovou stopu, kterou už nedokáží snížit jiným způsobem. Každý offset je vždy vázán na projekt či aktivitu, která uhlík (resp. oxid uhličitý) buď z atmosféry **odstraňuje** (tzv. *removal offsets*, např. výsadba stromů) nebo **zabraňuje jeho vypouštění** (tzv. *avoidance offsets*, např. výstavba nových elektráren využívajících obnovitelné zdroje).

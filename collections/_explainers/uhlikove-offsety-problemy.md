@@ -25,6 +25,9 @@ cover-source-url:         "https://upload.wikimedia.org/wikipedia/commons/f/f1/S
 perex: |
   Přestože offsetování bývá často prezentováno jako relativně jednoduchá a efektivní cesta ke snižování emisí skleníkových plynů, skutečnost je složitější. Namísto slibovaného řešení jednoho problému mohou snadno vzniknout problémy další. V čem spočívají a jaké jsou jejich příčiny? A proč nákup offsetů automaticky nedělá firmu „zelenější“?
 ---
+
+{% include series-box.html series-id=page.series-id selected=page.slug %}
+
 Nákup uhlíkových offsetů je v podstatě dohoda mezi kupujícím (stát, firma či jednotlivec), který chce kompenzovat své emise skleníkových plynů, a někým, kdo offsety prodává a realizuje aktivitu s nimi spojenou (například vysazuje stromy). Kupující zaplatí určitou částku a realizátor slíbí, že danou aktivitou kompenzuje odpovídající množství emisí kupujícího. Může se ale stát, že tento slib není z nějakého důvodu dodržen, případně daná aktivita nemusí mít slibovaný efekt, nebo je dokonce její dopad negativní. A právě kvůli tomu bývá trh s uhlíkovými offsety (někdy označovanými také jako kredity) často kritizován – že namísto řešení klimatické krize ji ještě podporuje a navíc vytváří problémy další.
 
 Jaké hlavní problémy jsou tedy s obchodováním s offsety spojeny?
