@@ -35,7 +35,7 @@ Jde o dohodu mezi dvěma či více stranami: kupujícím, realizátorem aktivity
 
 {% include figure.html
     name="schema-vztahu.png"
-    caption="Základní rámec pro uhlíkové offsety v Česku"
+    caption="Základní rámec pro uhlíkové offsety"
     alt="Základní rámec pro uhlíkové offsety"
     source-text="Fakta o klimatu"
     source-url="https://www.http://faktaoklimatu/explainery/uhlikove-offsety-1"
