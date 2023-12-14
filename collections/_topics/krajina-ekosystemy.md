@@ -133,7 +133,16 @@ subtopics:
   - 22-jmk-adaptace
   - ekonomicka-hodnota-prirody
   - 2023-reserse-soil-carbon
+
+- id:          "serie-uhlikove-offsety"
+  series:      True
+  title:       "Uhlíkové offsety"
+  title-short: "Uhlíkové offsety"
+  series-short-lead: |
+    Tento text je součástí série o uhlíkových offsetech.
+  lead: |
+    Díky uhlíkovým offsetům mohou jednotlivci, firmy nebo státy částečně kompenzovat svou uhlíkovou stopu, kterou už nedokáží snížit jiným způsobem. Jaké typy offsetů existují, jak fungují a jaké jsou s nimi spojené problémy?
+  content:
   - uhlikove-offsety
   - uhlikove-offsety-problemy
-
 ---
