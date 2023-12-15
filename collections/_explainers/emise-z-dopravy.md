@@ -17,7 +17,7 @@ cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"
 cover-source-license-url:   "https://pixabay.com/service/license-summary/"
 cover-source-url:           "https://pixabay.com/photos/traffic-road-vehicles-cars-urban-4522805/"
-perex:       
+perex:
 ---
 
 ## Úvod
@@ -32,16 +32,11 @@ Cílem následujícího textu je nejen ukázat jaký je současný stav, ale pre
 
 V sektoru dopravy se emise téměř rovným dílem rozkládají mezi osobní (54%) a nákladní dopravu (46%).[^split] Tato analýza se soustředí na osobní dopravu a její emise. Je zásadní přistupovat k osobní dopravě s ohledem na regionální specifika - co platí pro jednu zemi, nemusí nutně platit pro jinou. S ohledem na to se text soustředí na Evropu, přičemž bere v úvahu i specifika českého dopravního sektoru.
 
-V roce 2020 dosáhly emise z evropské dopravy hmotnosti 670 milionů tun CO2, což je srovnatelné s celkovými emisím průmyslového sektoru EU.  Celkový výkon osobní dopravy byl v tomto roce 8 750 miliard osobokilometrů. Tyto čísla však příliš neukazují jak emise v dopravním sektoru fakticky vypadají. Pro lepší představu je mnohem užitečnější operovat s výkony a emisemi jednotlivých druhů dopravních prostředků a různými vzdálenostmi, na které se lidé přepravují.
+V roce 2020 dosáhly emise z evropské dopravy hmotnosti 670 milionů tun CO<sub>2</sub>, což je srovnatelné s celkovými emisím průmyslového sektoru EU.  Celkový výkon osobní dopravy byl v tomto roce 8 750 miliard osobokilometrů. Tyto čísla však příliš neukazují jak emise v dopravním sektoru fakticky vypadají. Pro lepší představu je mnohem užitečnější operovat s výkony a emisemi jednotlivých druhů dopravních prostředků a různými vzdálenostmi, na které se lidé přepravují.
 
-VYKONY EMISE OBRAZEK 1
 {% include figure.html
     name="vykony-emise-evropa-des.svg"
-<<<<<<< HEAD
-    alt=""
-=======
     alt="Graf prezentující data o podílu dopravních módů na přepravním výkonu a emisích v osobní dopravě v Evropě. Zatímco automobily a letadla zajišťují 72 % přepravního výkonu, produkují až 88 % emisí skleníkových plynů."
->>>>>>> 281b1ae4 (Finální verze grafik)
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -73,10 +68,9 @@ V kontextu emisí z dopravy hraje významnou roli i vzdálenost, na kterou se pa
 2. Regionální, pro vnitrostátní cesty mimo města - cesta z Dukovan do Třebíče nebo z České lípy do Mladé Boleslavi.
 
 3. Městskou a příměstskou, pro aktivitu v městských oblastech - cesta z Pohořelic do Brna, nebo z Podolí do Libně.
-	
+
 Následující graf ukazuje, jaké druhy dopravy využíváme pro různé vzdálenosti - a dál v textu jsou jednotlivé vzdálenosti prozkoumány podrobněji.
 
-OBRAZEK VZDALENOSTI DOPRAVNI PROSTREDKY
 {% include figure.html
     name="sankey-vzdalenost-dopravni-prostredky-des.svg"
     name-mobile="sankey-vzdalenost-dopravni-prostredky-mob.svg"
@@ -87,7 +81,6 @@ OBRAZEK VZDALENOSTI DOPRAVNI PROSTREDKY
 
 ## Mezinárodní a meziměstská doprava
 
-OBRAZEK VYKONY EMISE 3
 {% include figure.html
     name="vykony-emise-mezinarodni-des.svg"
     alt="Sloupcový graf zobrazující přepravní výkony a emise v mezinárodní a meziměstské dopravě. Nejvíce výkonu, 51 %, zajišťují letadla, zatímco produkují 63 % emisí skleníkových plynů"
@@ -135,13 +128,13 @@ Současné trendy, jako je rostoucí popularita práce na dálku a online nakupo
 
 Potřeba městské a příměstské dopravy v příštích letech jenom poroste - protože více lidí bude bydlet ve městech. S touto potřebou roste riziko urban sprawl a tím pádem větší závislosti na automobilové dopravě.
 
-Proto je potřeba dobrým strategickým plánováním nabízet jiné udržitelné způsoby dopravy. Zejména budováním infrastruktury pro nemotorizované způsoby přepravy, protože je pro cesty do 10 km (v městském prostředí) nejvýhodnější. Pro delší cesty je potřeba nabídnout atraktivní alternativu oproti osobním autům - dostupnou a spolehlivou hromadnou dopravu. 
+Proto je potřeba dobrým strategickým plánováním nabízet jiné udržitelné způsoby dopravy. Zejména budováním infrastruktury pro nemotorizované způsoby přepravy, protože je pro cesty do 10 km (v městském prostředí) nejvýhodnější. Pro delší cesty je potřeba nabídnout atraktivní alternativu oproti osobním autům - dostupnou a spolehlivou hromadnou dopravu.
 
 Pouhá elektrifikace automobilové dopravy není ideálním řešením, protože emise nejsou jediným problémem, který automobili do měst přináší. Zabírají také hodně místa a snižují míru bezpečnosti dopravního provozu pro ostatní způsoby dopravy - zejména pro chodce a cyklisty. Snižování množství aut ve městech povede nejen k možnosti lépe využít veřejný prostor například pro zvýšení obslužnosti hromadnou dopravou, ale i samotné snížení emisí povede k zvýšení kvality života, zejména zlepšení veřejného zdraví.
 
 ## Závěr
 
-V dopravě se lidé spoléhají primárně na auta. To je také důvod proč emise z osobní dopravy každoročně rostou - ačkoliv nová auta produkují méně a méně CO2 na kilometr, jsou využívány více a více. Stárnoucí vozový park spolu s tím, že jsou SUV, které mají vyšší spotřebu a tedy i produkují více emisí čím dál tím ve větší oblibě jsou dalšími důvody, proč emise z osobních aut každoročně rostou. 
+V dopravě se lidé spoléhají primárně na auta. To je také důvod proč emise z osobní dopravy každoročně rostou - ačkoliv nová auta produkují méně a méně CO<sub>2</sub> na kilometr, jsou využívány více a více. Stárnoucí vozový park spolu s tím, že jsou SUV, které mají vyšší spotřebu a tedy i produkují více emisí čím dál tím ve větší oblibě jsou dalšími důvody, proč emise z osobních aut každoročně rostou.
 
 Snížení celkových emisí v dopravě není jen technologický problém, ale hlavně jde o odstoupení od současných vzorců chování v dopravě. Způsoby snižování emisí jsou tedy následující:
 
