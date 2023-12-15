@@ -45,28 +45,20 @@ Různé druhy dopravy přispívají k celkovým emisím v různé míře. Jak uk
 
 Poměr mezi množstvím emisí a dopravním výkonem se nazývá emisní intenzita. V osobní dopravě se emisní intenzita počítá v emisích na osobokilometr a umožňuje lepší srovnání různých druhů dopravy a jejich vlivu na životní prostředí. Následující tabulka poskytuje přehled emisní intenzity pro rozličné dopravní prostředky.
 
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| **Dopravní prostředek** | **Výkon (mld. oskm)** | **Emise(Mt CO₂)** | Intenzita(gCO₂/oskm) |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Osobní automobily       | 4 502,6               | 430,5             | 95,6                 |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Letadla                 | 1760,1                | 159,7             | 90,7                 |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Autobusy                | 1187,4                | 67,4              | 56,8                 |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Osobní vlaky            | 796,8                 | 10,4              | 13,1                 |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Nemotorizovaná vozidla  | 364,4                 | 0,0               | 0,0                  |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
-| Jednostopá vozilda      | 135,0                 | 6,0               | 44,5                 |
-| ----------------------- | --------------------- | ----------------- | -------------------- |
+{:.table}
+Dopravní prostředek    | Výkon (mld. oskm) | Emise (Mt CO₂) | Intenzita (gCO₂/oskm)
+---------------------- | ----------------: | -------------: | ---------------------:
+Osobní automobily      | 4 502,6           | 430,5          | 95,6
+Letadla                | 1760,1            | 159,7          | 90,7
+Autobusy               | 1187,4            | 67,4           | 56,8
+Osobní vlaky           | 796,8             | 10,4           | 13,1
+Nemotorizovaná vozidla | 364,4             | 0,0            | 0,0
+Jednostopá vozilda     | 135,0             | 6,0            | 44,5
 
 V kontextu emisí z dopravy hraje významnou roli i vzdálenost, na kterou se pasažéři přepravují. Ne všechna vozidla jsou stejně vhodná pro každou cestu, proto je důležité analyzovat různé typy dopravy s ohledem na délku trasy. Tento aspekt lze přehledně ilustrovat takto:
 
 1. Mezinárodní a meziměstskou, což zahrnuje cestování přes mezinárodní hranice nebo mezi většími městy uvnitř státu - typicky cesta z Brna do Prahy, nebo z Prahy do Paříže.
-
 2. Regionální, pro vnitrostátní cesty mimo města - cesta z Dukovan do Třebíče nebo z České lípy do Mladé Boleslavi.
-
 3. Městskou a příměstskou, pro aktivitu v městských oblastech - cesta z Pohořelic do Brna, nebo z Podolí do Libně.
 
 Následující graf ukazuje, jaké druhy dopravy využíváme pro různé vzdálenosti - a dál v textu jsou jednotlivé vzdálenosti prozkoumány podrobněji.
