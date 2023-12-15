@@ -37,7 +37,11 @@ V roce 2020 dosáhly emise z evropské dopravy hmotnosti 670 milionů tun CO2, c
 VYKONY EMISE OBRAZEK 1
 {% include figure.html
     name="vykony-emise-evropa-des.svg"
+<<<<<<< HEAD
     alt=""
+=======
+    alt="Graf prezentující data o podílu dopravních módů na přepravním výkonu a emisích v osobní dopravě v Evropě. Zatímco automobily a letadla zajišťují 72 % přepravního výkonu, produkují až 88 % emisí skleníkových plynů."
+>>>>>>> 281b1ae4 (Finální verze grafik)
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -75,7 +79,8 @@ Následující graf ukazuje, jaké druhy dopravy využíváme pro různé vzdál
 OBRAZEK VZDALENOSTI DOPRAVNI PROSTREDKY
 {% include figure.html
     name="sankey-vzdalenost-dopravni-prostredky-des.svg"
-    alt=""
+    name-mobile="sankey-vzdalenost-dopravni-prostredky-mob.svg"
+    alt="Graf zobrazující, jakými prostředky cestují evropané na různé vzdálenosti"
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -85,7 +90,7 @@ OBRAZEK VZDALENOSTI DOPRAVNI PROSTREDKY
 OBRAZEK VYKONY EMISE 3
 {% include figure.html
     name="vykony-emise-mezinarodni-des.svg"
-    alt=""
+    alt="Sloupcový graf zobrazující přepravní výkony a emise v mezinárodní a meziměstské dopravě. Nejvíce výkonu, 51 %, zajišťují letadla, zatímco produkují 63 % emisí skleníkových plynů"
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -100,7 +105,7 @@ Změna cestovních zvyklostí, jako je výměna delších cest za kratší (tře
 
 {% include figure.html
     name="vykony-emise-regionalni-des.svg"
-    alt=""
+    alt="Sloupcový graf zobrazující přepravní výkony a emise v regionální dopravě"
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -117,7 +122,7 @@ Jelikož poptávka po dopravě v regionech bude časem opadat (více lidí bude 
 
 {% include figure.html
     name="vykony-emise-mestska-des.svg"
-    alt=""
+    alt="Sloupcový graf zobrazující přepravní výkony a emise v městské a příměstské dopravě"
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -154,5 +159,6 @@ Snížení celkových emisí v dopravě není jen technologický problém, ale h
 [^ctvrtina]: [International Energy Agency: Global energy-related CO2 emissions by sector](https://www.iea.org/data-and-statistics/charts/global-energy-related-co2-emissions-by-sector)
 [^split]: [OECD: ITF Transport Outlook 2023](https://www.oecd-ilibrary.org/sites/b6cc9ad5-en/1/3/2/index.html?itemId=/content/publication/b6cc9ad5-en&_csp_=973044770350cae58fdc7934e9ee151a&itemIGO=oecd&itemContentType=book#section-d1e7667-adea820d82)
 [^letadla]: [ICAO: Sustainable Aviation Fuel](https://www.icao.int/environmental-protection/pages/SAF.aspx)
-[^hromadka]: ČR má dobrou hromadnou dopravu. rozepsat asi
-[^kultura]: [Evropská komise: Mobility & Transport - Road Safety](https://road-safety.transport.ec.europa.eu/eu-road-safety-policy/priorities/safe-road-use/elderly-drivers/older-drivers/safety-versus-mobility-and-quality-life/importance-private-car_en)
+[^kultura]: [Evropská komise: Mobility & Transport – Road Safety](https://road-safety.transport.ec.europa.eu/eu-road-safety-policy/priorities/safe-road-use/elderly-drivers/older-drivers/safety-versus-mobility-and-quality-life/importance-private-car_en)
+[^pokles]: [OECD: ITF Transport Outlook 2023](https://www.oecd-ilibrary.org/sites/b6cc9ad5-en/1/3/3/index.html?itemId=/content/publication/b6cc9ad5-en&_csp_=973044770350cae58fdc7934e9ee151a&itemIGO=oecd&itemContentType=book#section-d1e1491-8f83291030)
+[^huby]: Mobility hub je místo, kde se sdružují různé druhy dopravy: autobusy, vlaky, sdílená auta či kola. Tyto huby jsou navrženy tak, aby lidem usnadňovaly přestupování mezi různými druhy dopravy a tím podporovaly efektivní cestování.
