@@ -148,6 +148,98 @@ V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan,
 Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
 </div>
 
+## Studie shrnující současný stav a možnosti dalšího rozvoje
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Zdroj</th>
+      <th scope="col" class="text-uppercase">Rok</th>
+      <th scope="col" class="text-uppercase">Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.studies %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## České a evropské strategie a plány
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Rok</th>
+      <th scope="col" class="text-uppercase">Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.strategies %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Vodíkové platformy a asociace
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.institutions %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Interaktivní aplikace
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Autoři</th>
+      <th scope="col" class="text-uppercase">Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.interactives %}
+    <tr>
+      <td class="align-middle font-weight-bold">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </td>
+      <td class="align-middle">{{ item.authors }}</td>
+      <td class="align-middle">{{ item.description | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
 ## Vybrané projekty na výrobu zeleného vodíku v ČR
 
 {:.narrow-text}
@@ -178,76 +270,7 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
   </tbody>
 </table>
 
-## Instituce
-
-<table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Popis</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items.institutions %}
-    <tr>
-      <td class="align-middle font-weight-bold">
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-## Národní strategie a plány
-
-<table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Rok</th>
-      <th scope="col" class="text-uppercase">Popis</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items.strategies %}
-    <tr>
-      <td class="align-middle font-weight-bold">
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </td>
-      <td class="align-middle">{{ item.year }}</td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-## Studie
-
-<table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Zdroj</th>
-      <th scope="col" class="text-uppercase">Rok</th>
-      <th scope="col" class="text-uppercase">Popis</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items.studies %}
-    <tr>
-      <td class="align-middle font-weight-bold">
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </td>
-      <td class="align-middle">{{ item.source }}</td>
-      <td class="align-middle">{{ item.year }}</td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-## Významné firmy
+## Vybrané významné firmy v sektoru nízkoemisního vodíku
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
@@ -266,29 +289,6 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
       </td>
       <td class="align-middle">{{ item.category }}</td>
       <td class="align-middle">{{ item.capitalizaion }}</td>
-      <td class="align-middle">{{ item.description | markdownify }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-## Interaktivní aplikace
-
-<table class="table table-striped table-hover mt-4 mb-4">
-  <thead>
-    <tr>
-      <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Autoři</th>
-      <th scope="col" class="text-uppercase">Popis</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in page.items.interactives %}
-    <tr>
-      <td class="align-middle font-weight-bold">
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </td>
-      <td class="align-middle">{{ item.authors }}</td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
