@@ -67,10 +67,10 @@ items:
       description: Iniciativa leaderů firem napříč různými sektory (energetika, doprava, zpracovatelský průmysl) s cílem podpořit transformaci čisté energetiky. Nyní sdružuje přes 150 firem z celého světa.
   studies:
     - name: Global Hydrogen Review
-      link: https://www.iea.org/reports/global-hydrogen-review-2022
+      link: https://www.iea.org/reports/global-hydrogen-review-2023
       source: IEA
       description: Každoroční publikace Mezinárodní agentury pro energii shrnující veškerou aktuální situaci ohledně využití vodíku v energetice. Obsah je strukturován do hlavních oblastí problematiky jako jsou výroba, spotřeba, infrastruktura, obchod, politika, inovace, apod. U příkladů očekávaného budoucího vývoje jsou vždy uvedeny dva scénáře - jeden více pesimistický, reflektující současný stav politiky a druhý optimistický, který bere v potaz politické sliby. Cílem dokumentu je informovat stakeholdery sektoru energetiky o současném vývoji a očekávaných budoucích možnostech využití vodíku. Jedná se o ideální zdroj technických informací pro potřeby citace.
-      year: 2022
+      year: 2023
     - name: "Hydrogen energy, economy and storage: review and recommendation"
       link: https://www.globalccsinstitute.com/wp-content/uploads/2021/11/Global-Status-of-CCS-2021-Global-CCS-Institute-1121.pdf
       source: Tshwane University of Technology
