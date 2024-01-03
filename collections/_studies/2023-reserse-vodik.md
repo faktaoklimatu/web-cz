@@ -9,7 +9,7 @@ tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
 caption:       "Vodík v energetice"
 intro: |
-  Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvých zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95Mt, v roce 2050 se odhaduje až na 600 Mt.
+  Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvích zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95 Mt, v roce 2050 se odhaduje až na 600 Mt.
 
   V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést.
 
@@ -114,12 +114,12 @@ items:
       capitalizaion: $7 mld.
       category: Energetika
       link: https://www.orlenunipetrol.cz/
-      description: Největší výrobce (šedého) vodíku v ČR. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 do roku 2030. V březnu 2023 je jedna v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
+      description: Největší výrobce (šedého) vodíku v ČR. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 do roku 2030. Na začátku roku 2024 má dvě v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
     - name: Plug Power
       capitalizaion: $5 mld.
       category: Technologie
       link: https://www.plugpower.com/
-      description: Americká firma specializující se na výrobu palivových článků, které se používají pro konverzi vodíku na elektrickou energii. Mimo to sama vyrábí zelený vodík. Narozdíl od např. Linde se zabývá pouze ekologickými řešeními (žádný šedý vodík, atp.)
+      description: Americká firma specializující se na výrobu palivových článků, které se používají pro konverzi vodíku na elektrickou energii. Mimo to sama vyrábí zelený vodík. Na rozdíl od např. Linde se zabývá pouze ekologickými řešeními (žádný šedý vodík, atp.)
     - name: Fuel Cell Energy
       capitalizaion: $0,76 mld.
       category: Technologie
