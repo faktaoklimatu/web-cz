@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Transformace české energetiky</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Rekordní rok 2023</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -36,12 +36,10 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead" markdown="1">
-Letos v Česku probíhá aktualizace strategických dokumentů klíčových pro energetiku: V rámci **Vnitrostátního plánu v oblasti energetiky a klimatu** (*NECP*) si Česko stanovuje klimatické cíle, které mj. určí, jak má vypadat jeho energetický mix v roce 2030 a jak rychle bude snižována jeho uhlíková intenzita. V návaznosti na něj má vzniknout aktualizovaná **Státní energetická koncepce** (SEK), která bude směřovat i za horizont roku 2030. V našich nových materiálech přibližujeme, jakými cestami energetické transformace se může Česko vydat.
+  **Rok 2023** překonal dosavadní teplotní rekordy a **je nejteplejším rokem, který kdy byl na Zemi naměřen**. Ve srovnání s průměrem let 1850–1900 byla v roce 2023 teplota o +1,46 °C vyšší, přibližujeme se tak hranici 1,5 °C, kterou Pařížská dohoda definuje jako kritickou (data pochází z měření Copernicus za leden–listopad 2023). **Rekord** podle předběžných dat **padl i v Česku**, průměrná roční teplota 9,7 °C byla o 1,4 °C stupně vyšší, než je průměr let 1991–2020. Od roku 1960 – tedy za dobu života současných seniorů – **stoupla průměrná teplota v Česku o 2,2 °C.** Hlavní příčinou růstu průměrných globálních teplot a dosahování nových teplotních rekordů je spalování fosilních paliv, respektive růst koncentrace skleníkových plynů v atmosféře.  
 
-Transformace energetiky je klíčová jednak kvůli **ochraně klimatu** (téměř 40 % emisí skleníkových plynů Česka dnes pochází z elektráren a tepláren), jednak pro **zajištění energetické bezpečnosti a dostupnosti energetických surovin** (což zdůraznila ruská invaze na Ukrajinu).
-
-{% assign featured_slugs = "bezemisni-energetika-cr-1-scenare, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030, klimaticke-zavazky-cr, elektrina-mix-eu, elektrina-cr, bezemisni-energetika-cr-2-technologie" | split: ", " %}
-{%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
+{% assign featured_slugs = "teplota-cr, teplotni-anomalie, teplota-zeme, umirani-ceskych-lesu, body-zlomu-1, klimaticke-zavazky-cr" | split: ", " %}
+{%- include preview-blocks-expandable.html slugs=featured_slugs rows=2 %}
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
