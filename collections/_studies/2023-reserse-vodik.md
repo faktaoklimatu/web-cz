@@ -88,17 +88,17 @@ items:
       description: Další příklad jedné z mnoha akademických studií pojednávajících o základních energetických vlastnostech vodíků. Článek mimo jiné zmiňuje možnosti využití v energetice, jako například smíchání vodíku se zemním plynem a použití existujících plynovodů. Dále udává náklady na výrobu jednotky elektřiny pro různé vodíkové technologie.
       year: 2020
   strategies:
+    - name: Vodíková strategie EU
+      link: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0301
+      description: Dokument z roku 2020 od Evropské komise. Rozděluje budoucí vývoj vodíku do roku 2050 na 3 etapy zaměřující se na instalaci elektrolyzérů, výrobu zeleného vodíku, import vodíku a jeho využití při vyrovnávání elektrizační soustavy.
+      year: 2020
     - name: Vodíková strategie ČR
       link: https://www.mpo.cz/assets/cz/prumysl/strategicke-projekty/2021/8/Vodikova-strategie_CZ_G_2021-26-07.pdf
-      description: Hlavní vodíková strategie České republiky vytvořená společně Ministerstvem průmyslu a obchodu, Ministerstvem dopravy a Ministerstvem životního prostředí. Vychází z Vodíkové strategie EU a bohužel neobsahuje moc konkrétních cílů. Mezi konkrétnější informace patří scénář spotřeby vodíku po odvětvích a očekávaný časový vývoj zavádění vodíku do dopravy, průmyslu apod, rozdělený na 3 etapy do roku 2050.
+      description: Hlavní vodíková strategie České republiky vytvořená společně Ministerstvem průmyslu a obchodu, Ministerstvem dopravy a Ministerstvem životního prostředí. Vychází z Vodíkové strategie EU a bohužel neobsahuje mnoho konkrétních cílů. Udává prognózu spotřeby vodíku po odvětvích a očekávaný časový vývoj zavádění vodíku do dopravy, průmyslu apod., stejně jako u evropské strategie je období do roku 2050 rozdělené na 3 etapy.
       year: 2021
     - name: Národní akční plán čisté mobility ČR
       link: https://www.mpo.cz/cz/prumysl/zpracovatelsky-prumysl/automobilovy-prumysl/aktualizace-narodniho-akcniho-planu-ciste-mobility--254445/
-      description: "Dokument z roku 2020 od Ministerstva průmyslu a obchodu. Na rozdíl od Vodíkové strategie obsahuje velmi konkrétní a měřitelné cíle již pro rok 2030. Jde například o následující: 95 vodíkových autobusů k roku 2025 a 870 vodíkových autobusů k roku 2030. 40–50 tisíc osobních vodíkových vozidel do roku 2030. Po celé ČR by v té době mělo být 80 stanic pro optimální pokrytí republiky a dostupnost plnění pro zákazníky 15 vodíkových plnicích stanic fungujících v roce 2025 napříč ČR."
-      year: 2020
-    - name: Vodíková strategie EU
-      link: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0301
-      description: Dokument z roku 2020 od Evropské komise. Podobně jako Vodíková strategie ČR rozděluje budoucí vývoj vodíku na 3 etapy do roku 2050, zaměřující se na instalaci elektrolyzérů, výrobu zeleného vodíku, import vodíku a jeho využití při vyrovnávání elektrizační soustavy.
+      description: "Tento dokument od Ministerstva průmyslu a obchodu obsahuje na rozdíl od Vodíkové strategie velmi konkrétní a měřitelné cíle: pro rok 2030 například 870 vodíkových autobusů, 40–50 tisíc osobních vodíkových vozidel a 80 plnicích stanic."
       year: 2020
   companies:
     - name: Linde PLC
