@@ -47,22 +47,28 @@ items:
       year: 2027
   institutions:
     - name: Česká vodíková technologická platforma
+      region: ČR
       link: https://www.hytep.cz/
-      description: Projekt vzniklý z Ministerstva průmyslu a obchodu, spolufinancovaný z EU. Jeho cílem je podpora rozvoje vodíku v ČR pomocí propojování zainteresovaných subjektů a publikování informací veřejnosti.
+      description: Projekt vzniklý z Ministerstva průmyslu a obchodu, spolufinancovaný z EU. Jeho cílem je podpora rozvoje vodíku v ČR pomocí propojování zainteresovaných subjektů, vzájemného informování, prosazování zájmů rozvoje vodíku v kontaktu se státní správou apod.
     - name: Clean Hydrogen Partnership
+      region: EU
       link: https://www.clean-hydrogen.europa.eu/index_en
       description: "Jedná se o partnerství 3 institucí: Evropské komise, Hydrogen Europe a Hydrogen Europe Research.
       Hlavním cílem je přispět financováním výzkumu a inovací k plnění cílů Green Dealu a Vodíkové strategie. Dále pak urychlit rozvoj čistého vodíku a posílit jeho konkurenceschopnost."
     - name: Hydrogen Europe
+      region: EU
       link: https://hydrogeneurope.eu/
       description: Sdružení více než 400 firem a institucí z 25 evropských zemí. Součást Clean Hydrogen Partnership, ve kterém reprezentuje zájmy komerčního sektoru.
     - name: Hydrogen Europe Research
+      region: EU
       link: https://hydrogeneuroperesearch.eu/
       description: Sdružení 140 univerzit a výzkumných organizací z 29 zemí. Součást Clean Hydrogen Partnership, ve kterém reprezentuje zájmy akademické sféry.
     - name: Fuel Cell and Hydrogen Energy Association (FCHEA)
+      region: USA
       link: https://www.fchea.org
       description: Průmyslová asociace působící v USA. Sdružuje přes 90 firem v oblasti výroby, distribuce a inovací vodíkové energetiky. Cílem je podpora komercializace a propagace vodíkových palivových článků.
     - name: Hydrogen Council
+      region: globální
       link: https://hydrogencouncil.com/en/
       description: Iniciativa leaderů firem napříč různými sektory (energetika, doprava, zpracovatelský průmysl) s cílem podpořit transformaci čisté energetiky. Nyní sdružuje přes 150 firem z celého světa.
   studies:
@@ -202,6 +208,7 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Oblast</th>
       <th scope="col" class="text-uppercase">Popis</th>
     </tr>
   </thead>
@@ -211,6 +218,7 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
+      <td class="align-middle">{{ item.region }}</td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
