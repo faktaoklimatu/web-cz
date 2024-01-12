@@ -174,7 +174,7 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
 %}
 </div>
 
-## Současný stav a vyhlídky rozvoje
+## Přehled současného stavu a vyhlídky rozvoje
 
 {:.narrow-text}
 Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizovaná a shrnuje veškerou aktuální situaci ohledně využití vodíku v energetice, zahrnující výrobu, spotřebu, infrastrukturu, obchod, politiku, inovace, apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
@@ -206,7 +206,9 @@ Základní orientaci v tématu vodíku dodává **přehledová publikace [Global
   </tbody>
 </table>
 
-## České a evropské strategie a plány
+## Politika kolem nízkoemisního vodíku
+
+### České a evropské strategie a plány
 
 {:.narrow-text}
 Technologický a ekonomický vývoj vodíkových technologií úzce souvisí s politickým rámcem. Za poslední roky vznikla sada strategií, které se snaží přispět k rozvoji role nízkoemisního vodíku.
@@ -232,7 +234,7 @@ Technologický a ekonomický vývoj vodíkových technologií úzce souvisí s p
   </tbody>
 </table>
 
-## Vodíkové platformy a asociace
+### Vodíkové platformy a asociace
 
 {:.narrow-text}
 Kromě vodíkových strategií hrají velkou roli platformy, které propojují jednotlivé aktéry a firmy aktivní v rozvoji vodíku.
@@ -258,7 +260,9 @@ Kromě vodíkových strategií hrají velkou roli platformy, které propojují j
   </tbody>
 </table>
 
-## Interaktivní aplikace
+## Příklady projektů a aktivních firem
+
+### Interaktivní aplikace
 
 {:.narrow-text}
 Vodíkové mapy a interaktivní přehledy dávájí představu o aktuálním stavu této technologie v ČR i ve světě.
@@ -284,7 +288,7 @@ Vodíkové mapy a interaktivní přehledy dávájí představu o aktuálním sta
   </tbody>
 </table>
 
-## Vybrané projekty na výrobu zeleného vodíku v ČR
+### Vybrané projekty na výrobu zeleného vodíku v ČR
 
 {:.narrow-text}
 Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/rozcestnik/pro-media/tiskove-zpravy/2021/7/VODIK-A4-BOOK-final.pdf) by se v ČR v roce 2030 mohlo spotřebovat okolo 100 tisíc tun nízkoemisního vodíku (v roce 2050 dokonce více než 1,5 mil. tun). Zde zmíněné plánované projekty tedy pokryjí jen malý zlomek této spotřeby.
@@ -314,7 +318,7 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
   </tbody>
 </table>
 
-## Vybrané významné firmy v sektoru nízkoemisního vodíku
+### Vybrané významné firmy v sektoru nízkoemisního vodíku
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
