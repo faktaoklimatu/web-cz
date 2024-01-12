@@ -72,21 +72,30 @@ items:
       link: https://hydrogencouncil.com/en/
       description: Iniciativa leaderů firem napříč různými sektory (energetika, doprava, zpracovatelský průmysl) s cílem podpořit transformaci čisté energetiky. Nyní sdružuje přes 150 firem z celého světa.
   studies:
-    - name: Global Hydrogen Review
-      link: https://www.iea.org/reports/global-hydrogen-review-2023
-      source: IEA
-      description: Každoroční publikace Mezinárodní agentury pro energii shrnující veškerou aktuální situaci ohledně využití vodíku v energetice. Obsah je strukturován do hlavních oblastí problematiky jako jsou výroba, spotřeba, infrastruktura, obchod, politika, inovace, apod. U příkladů očekávaného budoucího vývoje jsou vždy uvedeny dva scénáře - jeden více pesimistický, reflektující současný stav politiky a druhý optimistický, který bere v potaz politické sliby. Cílem dokumentu je informovat stakeholdery sektoru energetiky o současném vývoji a očekávaných budoucích možnostech využití vodíku. Jedná se o ideální zdroj technických informací pro potřeby citace.
-      year: 2023
     - name: "Hydrogen energy, economy and storage: review and recommendation"
-      link: https://www.globalccsinstitute.com/wp-content/uploads/2021/11/Global-Status-of-CCS-2021-Global-CCS-Institute-1121.pdf
-      source: Tshwane University of Technology
-      description: Příklad jedné z mnoha akademických studií pojednávajících o základních energetických vlastnostech vodíků. Článek mimo jiné porovnává různé metody skladování vodíku z technického i ekonomického pohledu. Také obsahuje porovnání energetické hodnoty vodíku na kg hmotnosti oproti ostatním konvenčním zdrojům energie.
+      link: https://www.sciencedirect.com/science/article/abs/pii/S036031991931465X
+      source: J. O. Abe et&nbsp;al.
+      description: Článek identifikuje dostupnost technologií pro skladování vodíku jako základní překážku pro široký rozvoj vodíkové ekonomiky. **Dává přehled technologií pro skladování vodíku z technického i ekonomického pohledu**, se zaměřením na pevné skupenství ve formě hydridů kovů (včetně porovnání energetické hodnoty vodíku na kg hmotnosti oproti ostatním konvenčním zdrojům energie).
+      journal: International Journal of Hydrogen Energy
       year: 2019
+    - name: "Hydrogen production for energy: An overview"
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0360319919345926"
+      source: Furat Dawood et&nbsp;al.
+      description: Zkoumá **využití vodíku v energetice**, od výroby a čištění, přes ukládání (včetně bezpečnostních aspektů), až po využití vodíku. V závislosti na cestách výroby vodíku porovnává emisní náročnost celého životního cyklu.
+      journal: International Journal of Hydrogen Energy
+      year: 2020
     - name: "Hydrogen energy systems: A critical review of technologies, applications, trends and challenges"
       link: https://www.sciencedirect.com/science/article/pii/S1364032121004688
-      source: Meiling Yue et al
-      description: Další příklad jedné z mnoha akademických studií pojednávajících o základních energetických vlastnostech vodíků. Článek mimo jiné zmiňuje možnosti využití v energetice, jako například smíchání vodíku se zemním plynem a použití existujících plynovodů. Dále udává náklady na výrobu jednotky elektřiny pro různé vodíkové technologie.
-      year: 2020
+      source: Meiling Yue et&nbsp;al.
+      description: Zaměřuje se na možnosti **využití vodíku v energetice**, od výroby vodíku přes ukládání a distribuci až po konverzi zpět na elektřinu nebo využití v dopravě. Statisticky analyzuje data z dostupné literatury a zkoumá příklady projektů ve světě. Zkoumá náklady, efektivitu a životnost jednotlivých technologií.
+      journal: Energy Reviews
+      year: 2021
+    - name: "Blue and green hydrogen energy to meet European Union decarbonisation objectives. An overview of perspectives and the current state of affairs"
+      link: https://www.sciencedirect.com/science/article/abs/pii/S0360319922046675
+      source: Giovanni Lagioia et&nbsp;al.
+      description: Článek dává narativní přehled literatury o **současném stavu technologií pro výrobu zeleného a modrého vodíku** a možnostech jejich příspěvku k plnění dekarbonizačních cílů EU.
+      journal: International Journal of Hydrogen Energy
+      year: 2022
   strategies:
     - name: Vodíková strategie EU
       link: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0301
@@ -142,26 +151,42 @@ items:
       description: Interaktivní mapa prezentující aktuální stav vodíkových projektů po celém světě, pravděpodobně však není pro některé státy příliš detailní (jako např. pro ČR). Pro každý bod uvádí provozovatele, stupeň realizace a způsob výroby vodíku.
 ---
 
-## Barvy vodíku
+<div class="narrow-text" markdown="1">
 
-{:.narrow-text}
+{% capture vodik %}
+
 V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin "vyrábět". Podle původu, resp. emisní náročnosti, se vodík označuje různými "barvami".
 
-<div class="narrow-text" markdown="1">
 {% include includes-local/barvy-vodiku.html %}
 
 {:.mt-4}
 Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
+
+{% endcapture %}
+
+{% include expander-figure.html
+    name="vodik"
+    expanded=false
+    class="contrast-figure "
+    label="Kontext: Jaké jsou barvy a původ vodíku"
+    content=vodik
+%}
 </div>
 
-## Studie shrnující současný stav a možnosti dalšího rozvoje
+## Současný stav a vyhlídky rozvoje
+
+{:.narrow-text}
+Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizovaná a shrnuje veškerou aktuální situaci ohledně využití vodíku v energetice, zahrnující výrobu, spotřebu, infrastrukturu, obchod, politiku, inovace, apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
+
+### Vybrané akademické přehledové články
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
-      <th scope="col" class="text-uppercase">Zdroj</th>
       <th scope="col" class="text-uppercase">Rok</th>
+      <th scope="col" class="text-uppercase">Autor</th>
+      <th scope="col" class="text-uppercase">Žurnál</th>
       <th scope="col" class="text-uppercase">Popis</th>
     </tr>
   </thead>
@@ -171,8 +196,9 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
       <td class="align-middle font-weight-bold">
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
-      <td class="align-middle">{{ item.source }}</td>
       <td class="align-middle">{{ item.year }}</td>
+      <td class="align-middle">{{ item.source }}</td>
+      <td class="align-middle">{{ item.journal }}</td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
