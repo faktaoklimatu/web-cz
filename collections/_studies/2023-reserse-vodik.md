@@ -103,14 +103,14 @@ items:
   companies:
     - name: Linde PLC
       capitalizaion: $185 mld.
-      category: Energetika
+      category: Chemický průmysl
       link: https://www.linde-engineering.com/en/hydrogen/index.html
-      description: Největší světová firma na výrobu průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby po distribuci a ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík, podle různých dostupných informací v současné době silně investuje do rozvoje zeleného vodíku.
+      description: Největší světová firma na výrobu průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby po distribuci a ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík, podle různých dostupných informací v současné době silně investuje do rozvoje modrého a zeleného vodíku.
     - name: Air Products & Chemicals
       capitalizaion: $63 mld.
       category: Energetika
       link: https://www.airproducts.com/industries/hydrogen-fueling-for-mobility
-      description: Podobný business case jako Linde - průmyslová firma vyrábějící mimo jiné i vodík, v současnosti silně investující do zeleného vodíku.
+      description: Air Products vyrábí škálu průmyslových plynů, mimo jiné i vodík. V současnosti silně investuje do modrého a zeleného vodíku.
     - name: ČEZ
       capitalizaion: $23 mld.
       category: Energetika
@@ -120,17 +120,17 @@ items:
       capitalizaion: $7 mld.
       category: Energetika
       link: https://www.orlenunipetrol.cz/
-      description: Největší výrobce (šedého) vodíku v ČR. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 do roku 2030. Na začátku roku 2024 má dvě v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
+      description: Největší výrobce (šedého) vodíku v ČR, dceřiná společnost polského PKN Orlen. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 stanic do roku 2030. Na začátku roku 2024 má dvě v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
     - name: Plug Power
       capitalizaion: $5 mld.
       category: Technologie
       link: https://www.plugpower.com/
-      description: Americká firma specializující se na výrobu palivových článků, které se používají pro konverzi vodíku na elektrickou energii. Mimo to sama vyrábí zelený vodík. Na rozdíl od např. Linde se zabývá pouze ekologickými řešeními (žádný šedý vodík, atp.)
+      description: Americká firma specializující se na výrobu palivových článků, které se používají pro konverzi vodíku na elektřinu, hlavně pro sektor dopravy. Kromě toho také vyrábí elektrolyzéry a sadu technologií na přepravu, skladování a čerpání vodíku do aut.
     - name: Fuel Cell Energy
       capitalizaion: $0,76 mld.
       category: Technologie
       link: https://www.fuelcellenergy.com/
-      description: Firma zaměřující se na vodíkové elektrárny. Vyrábí zelený vodík a palivové články s cílem dekarbonizace energetického průmyslu.
+      description: Firma zaměřující se na výrobu vodíkových palivových článků a také technologie na výrobu bezemisního vodíku z bioplynu. Jejím cílem je přispět k dekarbonizaci energetického průmyslu.
   interactives:
     - name: Vodíková mapa ČR
       link: https://www.cistadoprava.cz/mapy/h2/
