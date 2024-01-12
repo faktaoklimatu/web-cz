@@ -7,6 +7,7 @@ weight:        305
 published:     2024-01-03
 tags-scopes:   [ svet ]
 tags-topics:   [ emise, opatreni ]
+use-preview-image: true
 caption:       "Vodík v energetice"
 intro: |
   Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvích zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95 Mt, v roce 2050 se odhaduje až na 600 Mt.
