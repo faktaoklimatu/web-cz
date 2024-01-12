@@ -207,6 +207,9 @@ Základní orientaci v tématu vodíku dodává **přehledová publikace [Global
 
 ## České a evropské strategie a plány
 
+{:.narrow-text}
+Technologický a ekonomický vývoj vodíkových technologií úzce souvisí s politickým rámcem. Za poslední roky vznikla sada strategií, které se snaží přispět k rozvoji role nízkoemisního vodíku.
+
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
     <tr>
@@ -230,6 +233,9 @@ Základní orientaci v tématu vodíku dodává **přehledová publikace [Global
 
 ## Vodíkové platformy a asociace
 
+{:.narrow-text}
+Kromě vodíkových strategií hrají velkou roli platformy, které propojují jednotlivé aktéry a firmy aktivní v rozvoji vodíku.
+
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
     <tr>
@@ -252,6 +258,9 @@ Základní orientaci v tématu vodíku dodává **přehledová publikace [Global
 </table>
 
 ## Interaktivní aplikace
+
+{:.narrow-text}
+Vodíkové mapy a interaktivní přehledy dávájí představu o aktuálním stavu této technologie v ČR i ve světě.
 
 <table class="table table-striped table-hover mt-4 mb-4">
   <thead>
