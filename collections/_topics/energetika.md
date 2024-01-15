@@ -145,7 +145,22 @@ subtopics:
   - potencial-vetrne-energie-cr
   - potencial-solarni-energie-cr-strechy
   - uzemni-stopa-oze
+
+- id:          "doprava"
+  title:       "Doprava"
+  title-short: "Doprava"
+  lead: |
+    Emise z dopravy tvoří globálně téměř pětinu všech emisí skleníkových plynů. V Česku je přeprava osob a zboží zodpovědná zhruba za 16 % emisí a objem emisí stále roste. Hlavními nástroji dekarbonizace v sektoru dopravy jsou **změna způsobu dopravy**, **snižování potřeby cestovat** a **elektrifikace** dopravních prostředků.
+
+    Jak tyto nástroje můžeme aplikovat v praxi? Kolik elektřiny by bylo v Česku potřeba pro nahrazení stávajících vozů se spalovacími motory elektroauty? Jak může v dekarbonizaci pomoci železniční doprava?
+  content:
   - elektrifikace-dopravy
+  - 52-dekarbonizace-dopravy
+  - 53-nikola-horejs
+  - 54-doprava-bez-fosilnich-paliv
+  - 55-jiri-pavel-zeleznice
+  - 57-skoda-auto
+  - 58-doprava-ve-meste
 
 - id:          "scenare-2030-cr"
   title:       "Scénáře vývoje: Česká energetika v roce 2030"
