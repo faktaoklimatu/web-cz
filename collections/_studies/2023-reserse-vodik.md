@@ -12,9 +12,35 @@ caption:       "Vodík v energetice"
 intro: |
   Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvích zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95 Mt, v roce 2050 se odhaduje až na 600 Mt.
 
-  V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Zelený vodík pro komerční použití se v ČR doposud nevyrábí, existuje však několik výzkumných projektů, které komerční výrobu plánují zavést.
+  V současnosti (2023) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však téměr výhradně o šedý (emisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Výroba zeleného vodíku se u nás postupně zavádí v rámci několika výzkumných projektů.
 
 items:
+  metrics:
+    - name: Energetický obsah
+      value: 33.3 MWh/t
+      comment:
+      link: 
+      source:
+    - name: Účinnost elektrolyzérů
+      value: 65-70% (PEM)
+      comment: V současnosti komerčně dostupné PEM (Proton Exchange Membrane) elektrolyzéry dosahují účinnosti až 70%, ve vývoji jsou však i výkonější elektrolyzéry. Firma Hysata plánuje svůj model s účinností až 95% komerčně uvést do roku 2025.
+      link: https://www.iea.org/reports/global-hydrogen-review-2023
+      source: IEA, p140
+    - name: Účinnost palivových článků
+      value: 60%
+      comment: Slouží pro konverzi vodíku na elektřinu, například u vodíkových aut.
+      link: https://www.energy.gov/eere/fuelcells/articles/fuel-cells-fact-sheet
+      source: energy.gov
+    - name: Současná výroba
+      value: 95 Mt (low-emmision <1%)
+      comment: Celosvětová produkce vodíku vzrostla v roce 2022 o 3% na 95 milionů tun. Z toho však nízkoemisní vodík tvořil méně než 1%.
+      link: https://www.iea.org/reports/global-hydrogen-review-2023
+      source: IEA, p64
+    - name: Očekávaná výroba v roce 2030
+      value: ">150 Mt (low-emmision 20-38Mt)"
+      comment: Spotřeba vodíku v roce 2030 se odhaduje na minimálně 150 milionů tun. Nízkoemisní vodík pokryje minimálně 20 tun, případně až 38 tun při započtení projektů v rané fázi.
+      link: https://www.iea.org/reports/global-hydrogen-review-2023
+      source: IEA, p66
   projects:
     - name: SG Hydrogen Napajedla
       company: Solar Global
@@ -178,6 +204,31 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
 
 {:.narrow-text}
 Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizovaná a shrnuje veškerou aktuální situaci ohledně využití vodíku v energetice, zahrnující výrobu, spotřebu, infrastrukturu, obchod, politiku, inovace, apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
+
+### Klíčové metriky výroby vodíku
+
+<table class="table table-striped table-hover mt-4 mb-4">
+  <thead>
+    <tr>
+      <th scope="col" class="text-uppercase">Název</th>
+      <th scope="col" class="text-uppercase">Hodnota</th>
+      <th scope="col" class="text-uppercase">Komentář</th>
+      <th scope="col" class="text-uppercase">Zdroj</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.items.metrics %}
+    <tr>
+      <td class="align-middle font-weight-bold">{{ item.name }}</td>
+      <td class="align-middle">{{ item.value }}</td>
+      <td class="align-middle">{{ item.comment }}</td>
+      <td class="align-middle">
+        <a href="{{ item.link }}">{{ item.source }}</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 ### Vybrané akademické přehledové články
 
