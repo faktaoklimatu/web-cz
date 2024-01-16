@@ -28,7 +28,7 @@ perex: |
 
 {% include series-box.html series-id=page.series-id selected=page.slug %}
 
-Offsetové projekty, pomocí kterých státy, firmy nebo jednotlivci chtějí snížit svou uhlíkovou stopu, se mohou významně lišit svou kvalitou, a tedy i výsledným efektem. Jeden zakoupený uhlíkový offset (kredit) by měl odpovídat jedné tuně emisí CO2eq – ale je skutečně danou aktivitou či projektem kompenzována celá tuna? Podle čeho a jak posoudit, že jde o kvalitní uhlíkový offset? Zde je **několik otázek, které by si měl kupující vždy položit**:
+Offsetové projekty, pomocí kterých státy, firmy nebo jednotlivci chtějí snížit svou uhlíkovou stopu, se mohou významně lišit svou kvalitou, a tedy i výsledným efektem. Jeden zakoupený uhlíkový offset (kredit) by měl odpovídat jedné tuně emisí CO<sub>2</sub> – ale je skutečně danou aktivitou či projektem kompenzována celá tuna? Podle čeho a jak posoudit, že jde o kvalitní uhlíkový offset? Zde je **několik otázek, které by si měl kupující vždy položit**:
 
 - Má offsetový projekt skutečně slíbený efekt?
 - Je jeho efekt dlouhodobý?
@@ -38,21 +38,17 @@ Offsetové projekty, pomocí kterých státy, firmy nebo jednotlivci chtějí sn
 - Nemá negativní dopad?
 
 
-V následujícím textu se každé z těchto otázek věnujeme podrobněji.
+Následující text se každé z těchto otázek věnuje podrobněji.
 
 ## Má uhlíkový offset slíbený efekt?
 
-To je metodologická otázka: jak tento efekt vlastně odhadovat a měřit? Meranie efektu offsetových projektov môže byť založené buď na presných **dátach získaných z meraní** po uskutočnení opatrenia  alebo na **odhade budúcich účinkov opatrenia**. 
+To je metodologická otázka: jak tento efekt vlastně odhadovat a měřit? Posouzení efektu offsetových projektů může být založeno na přesných **datech získaných z měření** po uskutečnění opatření nebo na **odhadu budoucích účinků opatření**. V obou případech může docházet ke zkreslení. 
 
-V oboch prípadoch môže dochádzať ku skresleniu výsledného výpočtu. 
+- Příkladem offsetového opatření, u něhož je měření založeno na získaných datech, je ukládání uhlíku do půdy (např. pomocí postupů regenerativního zemědělství). Zde může být výsledek měření zkreslený např. konkrétním místem odběru vzorku – jestliže je ve vzorku kousek odumřelého kořene rostliny, bude v něm naměřené množství organické hmoty, tedy i uhlíku, přirozeně vyšší. Vliv ale mohou mít i další faktory: roční období a s tím související proměnlivost teplot nebo množství srážek. 
 
-Konkrétnym príkladom opatrenia, kedy je meranie založené na získaných dátach, je ukladanie uhlíku do pôdy (napr. pomocou praktík regeneratívneho poľnohospodárstva). Tu môže byť výsledok merania skreslený napr. konkrétnym miestom odberu vzorky (ak do vzorky odoberiem kus odumretého koreňa rastliny, namerané množstvo organickej hmoty a teda aj uhlíku bude prirodzene vyššie ako v iných častiach pôdy) alebo ročným obdobím a s tým súvisiacou teplotou alebo množstvom zrážok. 
+- Příkladem opatření, kdy je množství sekvestrovaného uhlíku odhadováno dopředu, je ochrana před odlesňováním (deforestací). Kolik uhlíku bude sekvestrováno (a tedy i kolik kreditů je možné prodat), se odhaduje na základě otázky: Co by se stalo, kdyby k zavedení opatření nedošlo? Kolik hektarů lesa by bylo vykáceno? A o jaké druhy stromů by šlo? V tomto případě je problémem časté nadhodnocení efektu takové ochrany, například nadhodnocení velikosti území, kterému hrozí vykácení. Výsledkem je pak vznik offsetů, které byly prodány, ale neměly žádný efekt. 
 
-Príkladom opatrenia, kedy je množstvo sekvestrovaného uhlíku len odhadované, je ochrana existujúcich lesov pred vyrúbaním. Množstvo sekvestrovaného uhlíku (a teda aj počet kreditov určených k predaju) je vypočítané na základe otázky: **Čo by sa stalo, keby opatrenie nebolo zavedené?** Koľko hektárov lesa by bolo vyrúbaných? Aké druhy stromov by boli vyrúbané?
-Problémom je v tomto prípade časté nadhodnotenie efektu takejto ochrany, čo vo výsledku vyprodukuje offsety, ktoré nemajú žiadny efekt. Celkové nadhodnotenie môže byť zapríčinené napríklad nadhodnotením veľkosti územia, ktorému hrozí vyrúbanie. 
-
-Väčšina svetového trhu s uhlíkovými offsetmi (90 % v roku 2023[^carbon-direct-2023]) je zložená práve z offsetových projektov, ktoré množstvo sekvetrovaného uhlíku odhadujú. Je preto dôležité dbať na použitie vhodnej a presnej metodológie.
-Je třeba se ptát: byla zvolena vhodná metoda? Lze tuto metodu ověřit a opakovat? Sekvestruje projekt naozaj toľko uhlíku, koľko sľubuje? Nie je jeho efekt nadhodnotený?
+Ve světě dnes **většinu projektů s uhlíkovými offsety tvoří ty, které množství uloženého uhlíku pouze odhadují** (v roce 2023 to bylo 90 %[^carbon-direct-2023]). Použití vhodné a přesné metodologie je proto klíčové. Je třeba se ptát: je tato metoda vhodná? Lze ji ověřit a opakovat? Je sekvestrováno skutečně tolik uhlíku, kolik projekt slibuje? Není jeho efekt nadhodnocený?
 
 ## Je efekt offsetového projektu dlouhodobý?
 Je účinek dané aktivity či projektu jistý a trvalý, nebo existuje riziko, že časem zeslábne, případně se zcela vytratí? Může se například stát, že farmář využívající postupy regenerativního zemědělství[^rodale-institure] se rozhodne pole prodat a někdo na něm začne hospodařit konvenčně nebo že les zachvátí požár[^pozary-USA]. Co potom? Uhlíkové kredity ztratí svou účinnost a uložený uhlík se uvolní zpět do atmosféry. U krátkodobých projektů (byť kvalitních) proto není kompenzace uhlíkové stopy jednorázová záležitost – emise jsou tímto způsobem kompenzovány jen na určitou dobu a poté je nutné je kompenzovat znovu. 
@@ -62,19 +58,18 @@ Je účinek dané aktivity či projektu jistý a trvalý, nebo existuje riziko, 
     class="contrast-figure"
     label="Kontext: Přiklady krátkodobých a dlouhodobých projektů"
     content="
-**Krátkodobé proejkty**
+**Krátkodobé projekty**
 Například zemědělské projekty, které zvyšují množství uhlíku v půdě díky změně způsobu hospodaření (např. využívání principů regenerativního zemědělství). Zemědělec se však může časem rozhodnout pro návrat k předchozímu způsobu hospodaření, při němž se uhlík z půdy uvolňuje, nebo třeba prodat půdu někomu, kdo zde bude hospodařit jinak. Uhlíkové kredity tím ztratí svou účinnost. Podobné je to u offsetových projektů zaměřených na výsadbu stromů: les může být významně poškozen požárem, větrem či jinými faktory, včetně aktivity člověka. Uložený uhlík se pak uvolní zpět do atmosféry.
 
 **Dlouhodobé projekty**
-Sem se řadí offsetové projekty, jež ukládají uhlík na velmi dlouhé období (např. 1000 let) a riziko neočekávaného uvolnění uhlíku je u nich nízké. Na rozdiel od krátkodobých projektov, ktoré sa orientujú skôr na prírodné riešenia, pri dlhodobých projektoch ide o technologické riešenia, ktoré sa však môžu prírodnými procesmi inšpirovať. Napríklad metoda zesíleného zvětrávání (angl. enhanced weathering) a mineralizácie vychádza z bežne prebiehajúcich prírodných procesov, ktoré viažu uhlík v stabilných chemických väzbách na dlhé obdobia.  
-Ďalším príkladom dlhodobých, technologických riešení sú zariadenia na zachytávanie a ukladanie uhlíku (CCS) inštalované na fabrikách alebo elektrárňach spaľujúcich fosílne palivá alebo technológia direct air capture (DAC). 
+Sem se řadí offsetové projekty, jež ukládají uhlík na velmi dlouhé období (např. 1000 let) a riziko neočekávaného uvolnění uhlíku je u nich nízké. Na rozdíl od krátkodobých projektů, kde jde spíše o přírodní řešení, dlouhodobé projekty využívají technologická řešení, která se ale mohou přírodními procesy inspirovat. Příkladem je třeba metoda zesíleného zvětrávání (angl. enhanced weathering) a mineralizace, která vychází z běžně probíhajících přírodních procesů, při nichž se uhlík na dlouhou dobu stává součástí stabilních chemických vazeb. K dalším technologickým řešením patří například zařízení na zachytávaní a ukládání uhlíku instalovaná na továrnách či elektrárnách spalujících fosilní paliva (CCS) nebo technologie Direct Air Capture (DAC). 
 "
 %}
 
 ## Za jak dlouho tento efekt nastane?
 Slibovaného efektu offsetového projektu je často dosaženo až za dlouhou dobu. Jako příklad se dají zmínit projekty zaměřené na výsadbu stromů: ty svou biomasu nabírají teprve s léty, a jejich schopnost ukládat v biomase uhlík se tedy zvyšuje postupně. Malé sazeničky stromků mnoho uhlíku nepojmou. Aby tedy takový projekt skutečně naplnil slíbený efekt, musí stromy žít a růst **alespoň několik desítek let**[^moomaw2019]. 
 
-Podobné je to v případě zabudovávání uhlíku do půdy pomocí fotosyntézy a aktivity pôdnych mikroorganizmov. Množstvo uhlíku v pôde nestúpne hneď po zavedení vhodných praktík (na poľnohospodárskej pôde napr. výsev medziplodín alebo obmedzenie orby). Na vybudovanie (eko)systému pohlcujúceho uhlík potrebuje pôda **niekoľko sezón**. Súčasťou tohto komplikovaného systému je vhodná pôdna štruktúra, ktorá sa buduje postupne a tiež pôdne mikroorganizmy ako huby, baktérie, ale aj rôzne roztoče alebo žížaly[^miko2019], ktoré rovnako potrebujú čas na to, aby sa rozmnožili a pôdny ekosystém dostatočne obsadili. 
+Podobné je to v případě zabudovávání uhlíku do půdy pomocí fotosyntézy a aktivity půdních mikroorganismů. Množství uhlíku v půdě nestoupne hned po zavedení vhodných postupů (jako je například výsev meziplodin či omezení orby v případě půdy využívané k pěstování plodin). Na vybudování (eko)systému pohlcujícího uhlík potřebuje půda **několik let**: vhodná půdní struktura se vytváří postupně a také bakterie, houby, roztoči, žížaly a další organismy žijících v půdě potřebují k dostatečnému rozmnožení čas[^miko2019]. 
 
 ## Co je přidanou hodnotou projektu?
 Je opravdu nutné financovat takovýto projekt, nebo by stejný či podobný efekt nastal i bez této finanční podpory? Co projekt přináší navíc oproti situaci, kdy se projekt neuskuteční?
@@ -118,11 +113,11 @@ Kromě ukládání uhlíku mohou mít kvalitní offsetové projekty i další p�
 Na každý projekt je zároveň důležité se dívat i v širším kontextu, tedy další environmentální a sociální dopady. Neochudí například intenzivní výsadba jednoho druhu stromů lokalitu s cennou biodiverzitou? (Offsetové projekty se obvykle zaměřují hlavně na počet vysazených stromů, další parametry jako druhovou pestrost či vhodnost stanoviště už nezohledňují.) Neovlivní rozsáhlé zalesňování negativně charakter srážek v dané oblasti?[^nature] Nezasáhne realizace projektu do života původních obyvatel a komunit (týká se např. Afriky, Střední a Jižní Ameriky)? . 
 
 ## Zdroje a poznámky
-[^carbon-direct-2023]: Data vycházejí z dokumentu [The State of the Voluntary Carbon Market](https://www.carbon-direct.com/research-and-reports/state-of-the-voluntary-carbon-market) od Carbon Direct
-[^rodale-institure]:Principy regenerativního zemědělství představuje například [publikace od Rodale Institute](https://rodaleinstitute.org/wp-content/uploads/rodale-white-paper.pdf)
-[^pozary-USA]:[Požáry v USA v létě 2021](https://www.independent.co.uk/climate-change/news/carbon-offsets-microsoft-bp-forests-wildfires-b1897012.html) zničily části offsetových lesních projektů, jejichž prostřednictvím v té době kompenzovaly své emise firmy jako Microsoft alebo BP (British Petroleum).
+[^carbon-direct-2023]: Data vycházejí z dokumentu [The State of the Voluntary Carbon Market](https://www.carbon-direct.com/research-and-reports/state-of-the-voluntary-carbon-market) od Carbon Direct.
+[^rodale-institure]:Principy regenerativního zemědělství představuje například [publikace od Rodale Institute](https://rodaleinstitute.org/wp-content/uploads/rodale-white-paper.pdf).
+[^pozary-USA]:[Požáry v USA v létě 2021](https://www.independent.co.uk/climate-change/news/carbon-offsets-microsoft-bp-forests-wildfires-b1897012.html) zničily části offsetových lesních projektů, jejichž prostřednictvím v té době kompenzovaly své emise firmy jako Microsoft či BP (British Petroleum).
 [^beerling2018]:BEERLING, David J., LEAKE, Jonathan R., LONG, Stephen P., SCHOLES, Julie D., TON, Jurriaan, NELSON, Paul N., BIRD, Michael, KANTZAS, Euripides, TAYLOR, Lyla L., SARKAR, Binoy, KELLAND, Mike, DELUCIA, Evan, KANTOLA, Ilsa, MÜLLER, Christoph, RAU, Greg a HANSEN, James, 2018. Farming with crops and rocks to address global climate, food and soil security. Nature Plants. 19. únor 2018. Vol. 4, no. 3, str. 138–147. DOI [10.1038/s41477-018-0108-y](https://www.nature.com/articles/s41477-018-0108-y). 
-[^moomaw2019]: V tomto případě je mnohdy lepším řešením ochrana stávajících, vzrostlých lesů než další zalesňování. MOOMAW, William, MASINO, Susan a FAISON, Edward, 2019. Intact Forests in the United States: Proforestation Mitigates Climate Change and Serves the Greatest Good. Frontiers in Forests and Global Change. Vol. 2, s. 27. DOI [10.3389/ffgc.2019.00027](https://www.researchgate.net/publication/334749575_Intact_Forests_in_the_United_States_Proforestation_Mitigates_Climate_Change_and_Serves_the_Greatest_Good). 
-[^miko2019]: Více o životě v půdě v MIKO A KOL., Ladislav, 2019. Život v půdě - Příručka pro začínající půdní biology. Brno: Lipka. ISBN 978-80-88212-17-1. 
+[^moomaw2019]: V tomto případě je mnohdy lepším řešením ochrana stávajících, vzrostlých lesů než další zalesňování. Viz MOOMAW, William, MASINO, Susan a FAISON, Edward, 2019. Intact Forests in the United States: Proforestation Mitigates Climate Change and Serves the Greatest Good. Frontiers in Forests and Global Change. Vol. 2, s. 27. DOI [10.3389/ffgc.2019.00027](https://www.researchgate.net/publication/334749575_Intact_Forests_in_the_United_States_Proforestation_Mitigates_Climate_Change_and_Serves_the_Greatest_Good). 
+[^miko2019]: Více o životě v půdě v MIKO A KOL., Ladislav, 2019. Život v půdě – Příručka pro začínající půdní biology. Brno: Lipka. ISBN 978-80-88212-17-1. 
 [^nature]:[Studie v časopise Nature](https://www.nature.com/articles/s41561-022-00935-0) ukazuje, jak nepromyšlené sázení stromů ve velkém může proměnit dostupnost vody v regionech, včetně těch, které mají problémy s dostatkem vody již dnes. 
 
