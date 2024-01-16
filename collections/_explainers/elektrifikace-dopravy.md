@@ -25,7 +25,7 @@ Zatímco v roce 2020 tvořily elektromobily celosvětově méně než 5 % všech
 
 **Co to znamená pro spotřebu elektřiny v Česku?** Bude kvůli elektroautům potřeba postavit nové elektrárny, nebo budou stačit ty stávající?
 
-Tento text ukazuje, jakým způsobem lze budoucí nárůst spotřeby vypočítat z dostupných dat. Z výpočtu vychází, že nahrazení všech osobních aut elektromobily by vedlo **k nárůstu spotřeby o 8–12 TWh ročně** a elektrifikací veškeré silniční dopravy (tedy i nákladní) by se celková spotřeba zvýšila o 16–26 TWh.
+Tento text ukazuje, jakým způsobem lze budoucí nárůst spotřeby vypočítat z dostupných dat. Z výpočtu vychází, že nahrazení všech osobních aut elektromobily by vedlo **k nárůstu spotřeby o 8–12 TWh ročně** a elektrifikací veškeré silniční dopravy (tedy i nákladní) by se celková spotřeba zvýšila o 19–28 TWh.
 
 {% include figure.html
     name="zacpa.jpg"
@@ -89,12 +89,12 @@ Celková spotřeba silniční dopravy je prostým součtem spotřeb pro jednotli
 
 {% include figure.html
     name="vyroba-spotreba-elektrifikace.svg"
-    alt="TODO spotřeba navýšená o elektrifikovanou dopravu"
+    alt="Sloupcový graf výroby a spotřeby elektřiny v ČR. První sloupec ukazuje 81 TWh elektřiny vyrobené za rok. Druhý sloupec ukazuje 60 TWh spotřebované elektřiny a 19 až 27,5 TWh potenciální další spotřeby v elektrifikované dopravě."
 %}
 
 Kdyby byl trend nákupu elektroaut v Česku stejný jako dnes, v roce 2030 by jich zde jezdilo 100 tisíc a na svůj roční provoz by potřebovala 0,1 TWh elektrické energie. Kdyby byl trend stejný jako v EU, jezdilo bych jich v roce 2030 po českých silnicích necelých 400 tisíc a potřebovala by 0,6 TWh elektrické energie.[^vypocet2030] Obecně je možné konstatovat, že **změna bude velmi pozvolná**, a to nejen v sektoru osobních automobilů, ale i u ostatních druhů aut, **a nebude proto znamenat prudký nárůst celkové spotřeby elektřiny v Česku**.
 
-Vzhledem k tomu, že se v ČR každoročně vyrobí přibližně 82 TWh elektřiny a spotřebuje se jí cca 60 TWh,[^bilance] vypadá postupná elektrifikace silniční dopravy jako uskutečnitelná i bez energetických kompromisů. Přináší s sebou samozřejmě různé výzvy, zároveň je ale zřejmé, že sladit modernizaci tohoto sektoru s cíli energetické udržitelnosti možné je.
+Vzhledem k tomu, že se v ČR každoročně spotřebuje [cca 60 TWh](/infografiky/elektrina-cr), vypadá postupná elektrifikace silniční dopravy jako uskutečnitelná i bez energetických kompromisů. Přináší s sebou samozřejmě různé výzvy, zároveň je ale zřejmé, že sladit modernizaci tohoto sektoru s cíli energetické udržitelnosti možné je.
 
 ## Metodologické poznámky a diskuze citlivosti na parametry
 
@@ -114,7 +114,6 @@ Vzhledem k tomu, že se v ČR každoročně vyrobí přibližně 82 TWh elektři
 [^spotreba-kamionu]: [Shoman et al., 2023: Battery electric long-haul trucks in Europe: Public charging, energy, and power requirements](https://www.sciencedirect.com/science/article/pii/S1361920923002225)
 [^nakladakyspotreba]: Muncrief, Rachel. [“Shell Game? Debating Real-World Fuel Consumption Trends for Heavy-Duty Vehicles in Europe.”](https://theicct.org/shell-game-debating-real-world-fuel-consumption-trends-for-heavy-duty-vehicles-in-europe/) ICCT Staff Blog (blog), April 24, 2017.
 [^bezautobusu]: Přibližně 5 %, viz [Ročenka dopravy 2020](https://www.sydos.cz/cs/rocenka-2020/rocenka/htm_cz/cz20_721000.html).
-[^bilance]: Tento údaj uvádí Energetický regulační úřad v [Roční zprávě o provozu elektrizační soustavy ČR pro rok 2022](https://www.eru.cz/rocni-zprava-o-provozu-elektrizacni-soustavy-cr-pro-rok-2022).
 [^vypocet2030]: V ČR je ročně registrováno přibližně 200 tisíc nových automobilů [(Svaz dovozců automobilů: Registrace nových OA v ČR)](https://portal.sda-cia.cz/stat.php?n#str=nova), přičemž bateriová elektrická vozidla (BEV) tvořila v roce 2023 přibližně 3 % registrací [(CDV: Registrace všech čistých automobilů v ČR)](https://www.cistadoprava.cz/registrace-vsech-cistych-vozidel-v-cr-dle-nap-cm/). Pokud zůstane meziroční růst stejný (+0,5 %), bude v roce 2030 v ČR registrováno 100 tisíc elektroaut. Stejná logika je uplatněna při odhadu vývoje na evropském trhu [EEA: New registrations of electric vehicles in Europe](https://www.eea.europa.eu/en/analysis/indicators/new-registrations-of-electric-vehicles), kde bylo v roce 2022 mezi novými auty registrováno 12 % elektroaut, přičemž meziroční růst je přibližně +5 % *viz tabulka.
 [^hdt]: Kódové označení 1.A.3.b.iii (*Heavy duty trucks and buses*) je definováno v [2006 IPCC Guidelines for National Greenhouse Gas Inventories](https://www.ipcc-nggip.iges.or.jp/public/2006gl/index.html).
 [^bezautobusu]: Přibližně 5 %, viz [Ročenka dopravy 2020](https://www.sydos.cz/cs/rocenka-2020/rocenka/htm_cz/cz20_721000.html).
