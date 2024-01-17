@@ -36,7 +36,9 @@ slug: index
 
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead" markdown="1">
-  **Rok 2023** překonal dosavadní teplotní rekordy a **je nejteplejším rokem, který kdy byl na Zemi naměřen**. Ve srovnání s průměrem let 1850–1900 byla v roce 2023 teplota o +1,46 °C vyšší, přibližujeme se tak hranici 1,5 °C, kterou Pařížská dohoda definuje jako kritickou (data pochází z měření Copernicus za leden–listopad 2023). **Rekord** podle předběžných dat **padl i v Česku**, průměrná roční teplota 9,7 °C byla o 1,4 °C stupně vyšší, než je průměr let 1991–2020. Od roku 1960 – tedy za dobu života současných seniorů – **stoupla průměrná teplota v Česku o 2,2 °C.** Hlavní příčinou růstu průměrných globálních teplot a dosahování nových teplotních rekordů je spalování fosilních paliv, respektive růst koncentrace skleníkových plynů v atmosféře.  
+  **Rok 2023** překonal dosavadní teplotní rekordy a stal se [**nejteplejším rokem v historii měření**](/infografiky/teplotni-anomalie). Ve srovnání s obdobím 1850–1900 byla globální teplota průměrně o 1,46 °C vyšší. Přibližujeme se tak hranici 1,5 °C, kterou Pařížská dohoda definuje jako kritickou. (Údaje pochází z analýzy Copernicus za leden–listopad 2023.)
+
+  Podle předběžných dat **padl rekord i v Česku**. Průměrná roční teplota 9,7 °C byla o 1,4 °C stupně vyšší než průměr let 1991–2020. Od roku 1960 – tedy za dobu života současných seniorů – **stoupla průměrná teplota v Česku o 2,2 °C.** Hlavní příčinou růstu průměrných globálních teplot a dosahování nových teplotních rekordů je [růst koncentrací skleníkových plynů](/explainery/otepleni-zvysenim-koncentrace-co2) v atmosféře způsobený spalováním fosilních paliv.
 
 {% assign featured_slugs = "teplota-cr, teplotni-anomalie, teplota-zeme, umirani-ceskych-lesu, body-zlomu-1, klimaticke-zavazky-cr" | split: ", " %}
 {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
