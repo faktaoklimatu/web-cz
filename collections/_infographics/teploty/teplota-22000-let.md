@@ -8,9 +8,11 @@ weight:     97
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Zatímco v průběhu přirozeného přechodu mezi dobou ledovou a meziledovou trvalo planetě Zemi oteplení o 1 °C více než tisíc let, nyní se vlivem člověkem vypouštěných skleníkových plynů ohřála o 1 °C za méně než sto let. Podle předpovědí se od současných teplot do konce tohoto století planeta oteplí ještě o dalších 0,5–3 °C, v závislosti na množství emisí skleníkových plynů."
-data-our:   "https://docs.google.com/spreadsheets/d/1PBBQyBb2hI1R8mTeXqPT5yOt0m2IQ6DBZRCG-ogYkZ8/edit?usp=sharing"
-data-orig:  [ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ], [ "Shakun 2012", "https://doi.org/10.1038/nature10915"], ["Marcott 2013", "https://doi.org/10.1126/science.1228026"]
- ]
+data-our:   "https://docs.google.com/spreadsheets/d/1525431G2uivOpC5tHTTx3e3xOBup-4SapmYhTAqsxPs/edit?usp=sharing"
+data-orig:
+  - [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ]
+  - [ "Shakun 2012", "https://doi.org/10.1038/nature10915" ]
+  - [ "Marcott 2013", "https://doi.org/10.1126/science.1228026" ]
 ---
 
 ## Co je zobrazeno v grafu
@@ -44,4 +46,4 @@ data-orig:  [ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/
 * Marcott, S., Shakun, J.,  & Clark, P., Mix, A. _A Reconstruction of Regional and Global Temperature for the Past 11,300 Years._ Science 339, 1198-201, (2013) [DOI 10.1126/science.1228026](https://doi.org/10.1126/science.1228026).
 * GISTEMP Team, _2020: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2021-02-20 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
 * Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy a D. Zyss, _2019: Improvements in the GISTEMP uncertainty model._ Journal of Geophysical Research: Atmospheres, 124, č. 12, str. 6307–6326, [DOI 10.1029/2018JD029522](http://dx.doi.org/10.1029/2018JD029522).
-* Kaufman, D., McKay, N., Routson, C. et al. [A global database of Holocene paleotemperature records](https://doi.org/10.1038/s41597-020-0445-3) Sci Data 7, 115 (2020). 
+* Kaufman, D., McKay, N., Routson, C. et al. [A global database of Holocene paleotemperature records](https://doi.org/10.1038/s41597-020-0445-3) Sci Data 7, 115 (2020).
