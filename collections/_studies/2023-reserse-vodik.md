@@ -142,7 +142,7 @@ items:
       description: Největší světová firma na výrobu průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby po distribuci a ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík, podle různých dostupných informací v současné době silně investuje do rozvoje modrého a zeleného vodíku.
     - name: Air Products & Chemicals
       capitalizaion: $63 mld.
-      category: Energetika
+      category: Chemický průmysl
       link: https://www.airproducts.com/industries/hydrogen-fueling-for-mobility
       description: Air Products vyrábí škálu průmyslových plynů, mimo jiné i vodík. V současnosti silně investuje do modrého a zeleného vodíku.
     - name: ČEZ
@@ -152,7 +152,7 @@ items:
       description: Největší výrobce elektřiny v ČR plánuje vyrábět zelený vodík z vlastních zdrojů. Například má již v plánu konkrétní projekt na plnící stanici se 100% zeleným vodíkem v Mníšku pod Brdy.
     - name: Orlen Unipetrol
       capitalizaion: $7 mld.
-      category: Energetika
+      category: Petrochemický průmysl
       link: https://www.orlenunipetrol.cz/
       description: Největší výrobce (šedého) vodíku v ČR, dceřiná společnost polského PKN Orlen. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 stanic do roku 2030. Na začátku roku 2024 má dvě v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
     - name: Plug Power
