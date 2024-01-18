@@ -229,10 +229,21 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.metrics %}
+  <dt class="mt-3">{{ item.name }}: {{ item.value }}</dt>
+  <dd class="small">
+    {% if item.subname %}
+      <p class="my-1">→ {{ item.subname }}: {{ item.subvalue }}</p>
+    {% endif %}
+    {{ item.comment | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ### Vybrané akademické přehledové články
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -256,6 +267,15 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.studies %}
+  <dt class="mt-3">{{ item.source }}: <a href="{{ item.link }}">{{ item.name }}</a></dt>
+  <dd class="small mt-1">
+    <p class="my-1">{{ item.journal }}, {{ item.year }}</p>
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ## Politika kolem nízkoemisního vodíku
 
@@ -264,7 +284,7 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
 {:.narrow-text}
 Technologický a ekonomický vývoj vodíkových technologií úzce souvisí s politickým rámcem. Za poslední roky vznikla sada strategií, které se snaží přispět k rozvoji role nízkoemisního vodíku.
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -284,13 +304,24 @@ Technologický a ekonomický vývoj vodíkových technologií úzce souvisí s p
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.strategies %}
+  <dt class="mt-3">
+    <a href="{{ item.link }}">{{ item.name }}</a>
+    <span class="font-weight-normal">, {{ item.year }}</span>
+  </dt>
+  <dd class="small mt-1">
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ### Vodíkové platformy a asociace
 
 {:.narrow-text}
 Kromě vodíkových strategií hrají velkou roli platformy, které propojují jednotlivé aktéry a firmy aktivní v rozvoji vodíku.
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -310,6 +341,17 @@ Kromě vodíkových strategií hrají velkou roli platformy, které propojují j
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.institutions %}
+  <dt class="mt-3">
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  </dt>
+  <dd class="small mt-1">
+    <p class="my-1">{{ item.region }}</p>
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ## Příklady projektů a aktivních firem
 
@@ -318,7 +360,7 @@ Kromě vodíkových strategií hrají velkou roli platformy, které propojují j
 {:.narrow-text}
 Vodíkové mapy a interaktivní přehledy dávájí představu o aktuálním stavu této technologie v ČR i ve světě.
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -338,13 +380,24 @@ Vodíkové mapy a interaktivní přehledy dávájí představu o aktuálním sta
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.interactives %}
+  <dt class="mt-3">
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  </dt>
+  <dd class="small mt-1">
+    <p class="my-1"><i>{{ item.authors }}</i></p>
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ### Vybrané projekty na výrobu zeleného vodíku v ČR
 
 {:.narrow-text}
 Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/rozcestnik/pro-media/tiskove-zpravy/2021/7/VODIK-A4-BOOK-final.pdf) by se v ČR v roce 2030 mohlo spotřebovat okolo 100 tisíc tun nízkoemisního vodíku (v roce 2050 dokonce více než 1,5 mil. tun). Zde zmíněné plánované projekty tedy pokryjí jen malý zlomek této spotřeby.
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -368,10 +421,22 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.projects %}
+  <dt class="mt-3">
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  </dt>
+  <dd class="small mt-1">
+    <p class="my-1"><i>{{ item.company }}</i>, {{ item.year }}</p>
+    <p class="my-1 font-weight-bold">Plán roční produkce: {{ item.production }}</p>
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
 
 ### Vybrané významné firmy v sektoru nízkoemisního vodíku
 
-<table class="table table-striped table-hover mt-4 mb-4">
+<table class="table table-striped table-hover mt-4 mb-4 d-none d-md-table">
   <thead>
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
@@ -393,3 +458,14 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
     {% endfor %}
   </tbody>
 </table>
+<dl class="d-md-none">
+  {% for item in page.items.companies %}
+  <dt class="mt-3">
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  </dt>
+  <dd class="small mt-1">
+    <p class="my-1"><i>{{ item.category }}</i>, tržní kapitalizace: {{ item.capitalizaion }}</p>
+    {{ item.description | markdownify }}
+  </dd>
+  {% endfor %}
+</dl>
