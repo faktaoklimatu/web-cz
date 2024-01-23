@@ -1,8 +1,8 @@
 ---
 layout:      explainer
 title:       "Jak se na emisích skleníkových plynů podílí osobní doprava?"
-slug:        "emise-z-dopravy"
-published:   2023-12-13
+slug:        "emise-doprava"
+published:   2024-01-23
 authors:
   - name: "Zbyněk Štajer"
   - id: "jirka-lnenicka"
@@ -10,13 +10,13 @@ authors:
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace dat"
 weight:      74
-tags-scopes: [  ]
-tags-topics: [  ]
-cover-source-author:        "aled7"
-cover-source-text:          "Pixabay"
-cover-source-license:       "Pixabay License"
-cover-source-license-url:   "https://pixabay.com/service/license-summary/"
-cover-source-url:           "https://pixabay.com/photos/traffic-road-vehicles-cars-urban-4522805/"
+tags-scopes: [ cr, eu ]
+tags-topics: [ emise, energetika ]
+cover-source-author:      "aled7"
+cover-source-text:        "Pixabay"
+cover-source-license:     "Pixabay License"
+cover-source-license-url: "https://pixabay.com/service/license-summary/"
+cover-source-url:         "https://pixabay.com/photos/traffic-road-vehicles-cars-urban-4522805/"
 perex:      "Bez kvalitní a spolehlivé dopravy se moderní společnost neobejde: umožňuje dostupnost služeb, rozvoj podnikání a obchodu, podporuje sociální aspekty života a mnoho dalšího. Zároveň z dopravy pochází přibližně čtvrtina světových emisí skleníkových plynů. Kde tyto emise vznikají a jak je minimalizovat, aniž bychom přišli o výhody, které nám doprava přináší?"
 ---
 
@@ -24,47 +24,46 @@ Pro téměř polovinu států světa platí, že největší podíl na emisích 
 
 ## Kontext: doprava v Evropě a ve světě
 
-V globálním měřítku je necelá polovina (46 %) všech emisí z dopravy spojena s přepravou nákladu, zbytek (54 %) vzniká při přepravování osob.[^split] Tento text se zaměřuje především na **osobní dopravu a její emise**[^osobni], a to zejména v evropském kontextu a s ohledem na specifika osobní dopravy v Česku. U osobní dopravy je vždy potřeba brát tyto regionální rozdíly v potaz – co platí pro jednu zemi, nemusí platit pro jinou.
+V globálním měřítku je necelá polovina (46 %) všech emisí z dopravy spojena s přepravou nákladu, zbytek (54 %) vzniká při přepravování osob.[^split] Tento text se zaměřuje především na **osobní dopravu a její emise**,[^osobni] a to zejména v evropském kontextu a s ohledem na specifika osobní dopravy v Česku. U osobní dopravy je vždy potřeba brát tyto regionální rozdíly v potaz – co platí pro jednu zemi, nemusí platit pro jinou.
 
-Celkové emise z dopravy v EU v roce 2020 dosáhly 670 milionů tun CO<sub>2</sub>, což je srovnatelné s celkovými emisemi evropského průmyslu. Celkový výkon osobní dopravy byl v témže roce 8 750 miliard osobokilometrů[^osobokilometr]. Co se nicméně z těchto čísel vyčíst nedá, ale co je pro úvahy o transformaci osobní dopravy důležité: u kterých dopravních prostředků vzniká nejvíce emisí v poměru k výkonu nebo jakou roli hraje vzdálenost. Spíše než o celkových emisích z dopravy je totiž užitečnější uvažovat o výkonech a emisích jednotlivých druhů dopravy a také o různých vzdálenostech, na které se lidé dopravují.
+Celkové emise z dopravy v EU v roce 2020 dosáhly 670 milionů tun CO<sub>2</sub>, což je srovnatelné s celkovými emisemi evropského průmyslu. Celkový výkon osobní dopravy byl v témže roce 8 750 miliard osobokilometrů.[^osobokilometr] Co se nicméně z těchto čísel vyčíst nedá, ale co je pro úvahy o transformaci osobní dopravy důležité: u kterých dopravních prostředků vzniká nejvíce emisí v poměru k výkonu nebo jakou roli hraje vzdálenost. Spíše než o celkových emisích z dopravy je totiž užitečnější uvažovat o výkonech a emisích jednotlivých druhů dopravy a také o různých vzdálenostech, na které se lidé dopravují.
 
 {% include figure.html
     name="vykony-emise-evropa-des.svg"
-    alt="Graf prezentující data o podílu dopravních módů na přepravním výkonu a emisích v osobní dopravě v Evropě. Zatímco automobily a letadla zajišťují 72 % přepravního výkonu, produkují až 88 % emisí skleníkových plynů."
+    alt="Graf srovnávající podíl dopravních módů na přepravním výkonu a emisích v osobní dopravě v Evropě. Zatímco automobily a letadla zajišťují 72 % přepravního výkonu, produkují až 88 % emisí skleníkových plynů."
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
 
 Jak ukazuje graf výše, různé druhy osobní dopravy přispívají k celkovým emisím skleníkových plynů v různé míře. Nejvíce emisí (téměř 85 %) produkují automobily a letadla, přestože zajišťují pouze 72 % celkového přepravního výkonu – auta s 52 % výkonu mají 64% podíl na emisích, letadla s 20 % výkonu se na emisích podílejí z 24 %. Naproti tomu vlaky zajišťují 10 % výkonu, ale jsou s nimi spojena pouhá 2 % emisí v dopravě.
 
-Poměr mezi množstvím emisí a přepravním výkonem se nazývá **emisní intenzita**. V osobní dopravě se emisní intenzita počítá v emisích na osobokilometr (oskm)[^osobokilometr]. Znalost emisní intenzity umožňuje srovnat různé druhy dopravy a jejich vliv na životní prostředí. Následující tabulka obsahuje přehled emisní intenzity pro jednotlivé typy dopravních prostředků.
+Poměr mezi množstvím emisí a přepravním výkonem se nazývá **emisní intenzita**. V osobní dopravě se emisní intenzita počítá v emisích na osobokilometr (oskm).[^osobokilometr] Znalost emisní intenzity umožňuje srovnat různé druhy dopravy a jejich vliv na životní prostředí. Následující tabulka obsahuje přehled emisní intenzity pro jednotlivé typy dopravních prostředků.
 
 {:.table}
-Dopravní prostředek    | Výkon (mld. oskm) | Emise (Mt CO₂) | Intenzita (gCO₂/oskm)
----------------------- | ----------------: | -------------: | ---------------------:
-Osobní automobily      | 4502,6            | 430,5          | 95,6
-Letadla                | 1760,1            | 159,7          | 90,7
-Autobusy               | 1187,4            | 67,4           | 56,8
-Osobní vlaky           | 796,8             | 10,4           | 13,1
-Nemotorizovaná vozidla | 364,4             | 0,0            | 0,0
-Jednostopá vozidla     | 135,0             | 6,0            | 44,5
+Dopravní prostředek    | Výkon<br>(mld. oskm) | Emise<br>(Mt CO<sub>2</sub>) | Intenzita<br>(g CO<sub>2</sub>/oskm)
+---------------------- | -----: | ----: | ---:
+Osobní automobily      | 4502,6 | 430,5 | 95,6
+Letadla                | 1760,1 | 159,7 | 90,7
+Autobusy               | 1187,4 | 67,4  | 56,8
+Osobní vlaky           | 796,8  | 10,4  | 13,1
+Nemotorizovaná vozidla | 364,4  | 0,0   | 0,0
+Jednostopá vozidla     | 135,0  | 6,0   | 44,5
 
 Kromě emisní intenzity hraje u emisí z osobní dopravy významnou roli i **vzdálenost, na kterou se cestující dopravují**. Ne všechny dopravní prostředky jsou pro každou cestu stejně vhodné, proto je důležité v úvahách o různých typech dopravy délku trasy zohlednit. Osobní doprava může být:
 
 1. **Mezinárodní a meziměstská** (cestování přes mezinárodní hranice nebo mezi většími městy uvnitř jednoho státu) – např. cesta z Ostravy do Prahy nebo z Berlína do Paříže
 2. **Regionální** (vnitrostátní cesty mimo města) – např. cesta z Dukovan do Třebíče nebo z České Lípy do Mladé Boleslavi
-3. **Městská a příměstská** (aktivita v městských oblastech) – např. cesta z Podolí do Libně nebo z Pohořelic do Brna 
+3. **Městská a příměstská** (aktivita v městských oblastech) – např. cesta z Podolí do Libně nebo z Pohořelic do Brna
 
 {% include figure.html
     name="sankey-vzdalenost-dopravni-prostredky-des.svg"
     name-mobile="sankey-vzdalenost-dopravni-prostredky-mob.svg"
-    alt="Graf zobrazující, jakými prostředky cestují evropané na různé vzdálenosti"
+    alt="Graf zobrazující, jakými prostředky lidé v Eropě cestují na různé vzdálenosti"
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
 
 Tento graf přehledně ukazuje, které druhy osobní dopravy se v Evropě využívají při cestování na různé vzdálenosti. Následující část textu přináší další podrobnosti a popisuje faktory, které ovlivňují volbu dopravního prostředku. Nastiňuje také změny, které by mohly pomoci snížit emise v dalších letech.
-
 
 ## Mezinárodní a meziměstská doprava
 
@@ -75,7 +74,7 @@ Tento graf přehledně ukazuje, které druhy osobní dopravy se v Evropě využ�
     source-url="https://faktaoklimatu.cz"
 %}
 
-Mezinárodní a meziměstská osobní doprava se využívá hlavně **při pracovních cestách a pro turistické účely**. Na kratší trasy do vzdálenosti 500 kilometrů, jako je například cesta z Prahy do Brna, volí lidé nejčastěji osobní auto nebo vlak. Na středně dlouhých trasách mezi 500 a 3000 kilometry (např. cesta z Prahy do Bruselu) převažuje využití automobilů. U vzdáleností nad 3000 kilometrů (cesta z Prahy do New Yorku) se obvykle upřednostňuje letecká doprava, která je také často jedinou možnou volbou, zejména při překonávání oceánu.
+Mezinárodní a meziměstská osobní doprava se využívá hlavně **při pracovních cestách a pro turistické účely**. Na kratší trasy do vzdálenosti 500 kilometrů, jako je například cesta z Prahy do Brna, volí lidé nejčastěji osobní auto nebo vlak. Na středně dlouhých trasách mezi 500 a 3 000 kilometry (např. cesta z Prahy do Bruselu) převažuje využití automobilů. U vzdáleností nad 3 000 kilometrů (cesta z Prahy do New Yorku) se obvykle upřednostňuje letecká doprava, která je také často jedinou možnou volbou, zejména při překonávání oceánu.
 
 ### Jak by mohla vypadat budoucnost?
 
@@ -85,7 +84,7 @@ Emise z osobní dopravy na velké vzdálenosti je možné snížit například *
 
 {% include figure.html
     name="vykony-emise-regionalni-des.svg"
-    alt="Sloupcový graf zobrazující přepravní výkony a emise v regionální dopravě"
+    alt="Sloupcový graf zobrazující přepravní výkony a emise v regionální dopravě. Osobní automobily zajišťují 70 % přepravního výkonu a produkují 84 % emisí."
     source-text="OECD, ITF Transport Outlook 2023"
     source-url="https://faktaoklimatu.cz"
 %}
@@ -96,7 +95,7 @@ Hromadná doprava na regionální úrovni mnohdy není snadno dostupná a nejezd
 
 ### Jak by mohla vypadat budoucnost?
 
-Protože v následujících dekádách bude pravděpodobně dál přibývat lidí žijících ve městech, poptávka po dopravě v regionech bude zřejmě časem opadat (v Evropě se očekává pokles až o 22 % [^pokles]), a i nadále se zde tedy bude hodně jezdit auty. Úbytek poptávky po regionální hromadné dopravě přinese otázku její finanční udržitelnosti. Rychlé nahrazení aut se spalovacími motory elektrickými vozy je ovšem v regionální osobní dopravě jen částečným řešením – výrazně sice pomůže její dekarbonizaci, nezvýší však dostupnost dopravy pro ty, kteří si takový vůz nebudou moci dovolit. Proto je nutné **přehodnotit koncepci regionální osobní dopravy jako celku** – například více podporovat sdílenou dopravu, přepravu "na objednávku" či tzv. *mobility huby*.[^huby]
+Protože v následujících dekádách bude pravděpodobně dál přibývat lidí žijících ve městech, poptávka po dopravě v regionech bude zřejmě časem opadat (v Evropě se očekává pokles až o 22 %[^pokles]), a i nadále se zde tedy bude hodně jezdit auty. Úbytek poptávky po regionální hromadné dopravě přinese otázku její finanční udržitelnosti. Rychlé nahrazení aut se spalovacími motory elektrickými vozy je ovšem v regionální osobní dopravě jen částečným řešením – výrazně sice pomůže její dekarbonizaci, nezvýší však dostupnost dopravy pro ty, kteří si takový vůz nebudou moci dovolit. Proto je nutné **přehodnotit koncepci regionální osobní dopravy jako celku** – například více podporovat sdílenou dopravu, přepravu "na objednávku" či tzv. *mobility huby*.[^huby]
 
 ## Městská a příměstská doprava
 
@@ -121,7 +120,7 @@ Pouhá elektrifikace automobilové dopravy stačit nebude, protože emise sklen�
 
 ## Závěr
 
-V osobní dopravě v Evropě i v Česku dnes lidé spoléhají především na auta. To je také důvod, proč emise skleníkových plynů z osobní dopravy každoročně rostou – nová auta jsou sice efektivnější a produkují méně CO<sub>2</sub> na kilometr, zároveň ale aut stále přibývá a míra jejich využití stoupá. Větší je i obliba aut typu SUV, která mají vyšší spotřebu, a tedy vytvářejí i více emisí. 
+V osobní dopravě v Evropě i v Česku dnes lidé spoléhají především na auta. To je také důvod, proč emise skleníkových plynů z osobní dopravy každoročně rostou – nová auta jsou sice efektivnější a produkují méně CO<sub>2</sub> na kilometr, zároveň ale aut stále přibývá a míra jejich využití stoupá. Větší je i obliba aut typu SUV, která mají vyšší spotřebu, a tedy vytvářejí i více emisí.
 
 Snížení celkových emisí v dopravě proto není jen technologický problém, jde také změnu některých vzorců chování, jež jsou dnes s osobní dopravou spojeny. Co jsou tedy hlavní změny, jež povedou ke snížení emisí skleníkových plynů z dopravy?
 
