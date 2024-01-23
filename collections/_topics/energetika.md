@@ -154,6 +154,7 @@ subtopics:
 
     Jak tyto nástroje můžeme aplikovat v praxi? Kolik elektřiny by bylo v Česku potřeba pro nahrazení stávajících vozů se spalovacími motory elektroauty? Jak může v dekarbonizaci pomoci železniční doprava?
   content:
+  - emise-doprava
   - elektrifikace-dopravy
   - 52-dekarbonizace-dopravy
   - 53-nikola-horejs

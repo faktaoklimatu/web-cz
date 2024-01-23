@@ -124,7 +124,7 @@ subtopics:
   - emise-cr-prumysl
   - dekarbonizace-mineralniho-prumyslu
   - dekarbonizace-oceli
-  - emise-z-dopravy
+  - emise-doprava
   qa:
   - q: "Uvolňují se skleníkové plyny nejen v důsledku lidské činnosti, ale také přírodních procesů?"
     a: |
