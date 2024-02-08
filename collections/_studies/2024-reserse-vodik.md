@@ -18,17 +18,17 @@ items:
   metrics:
     - name: Energetický obsah
       value: 33,3 MWh/t
-      comment: Jde o [výhřevnost vodíku](https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html) (v angličtině _lower heating value_ nebo také _net calorific value_), tedy množství tepla, které se uvolní při spálení vodíku (do této hodnoty není započteno skupenské teplo vodní páry obsažené ve spalinách). Vůči této hodnotě se běžně udávají účinnosti elektrolyzérů, palivových článků, turbín, apod.
+      comment: Jde o [výhřevnost vodíku](https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html) (v angličtině _lower heating value_ nebo také _net calorific value_), tedy množství tepla, které se uvolní při spálení vodíku. (Do této hodnoty není započteno skupenské teplo vodní páry obsažené ve spalinách.) Vůči této hodnotě se běžně udávají účinnosti elektrolyzérů, palivových článků, turbín apod.
     - name: Účinnost elektrolyzérů
       value: 65–70 %
       comment: |
-        **Elektrolyzéry slouží pro výrobu vodíku pomocí elektřiny a vody.** V současnosti komerčně dostupné PEM (_Proton Exchange Membrane_) elektrolyzéry dosahují účinnosti až 70 %. Tento údaj znamená, že z 1 MWh elektřiny se vyrobí množství vodíku s energetickým obsahem 0,65–0,7 MWh, což je asi 20 kg vodíku.
+        **Elektrolyzéry slouží pro výrobu vodíku pomocí elektřiny a vody.** V současnosti komerčně dostupné PEM (_proton exchange membrane_) elektrolyzéry dosahují účinnosti až 70 %. Tento údaj znamená, že z 1 MWh elektřiny se vyrobí množství vodíku s energetickým obsahem 0,65–0,7 MWh, což je asi 20 kg vodíku.
 
         Další vývoj ale probíhá v mnoha směrech, vyšší účinnost by mohly v komerční škále poskytnout např. technologie SOEC (_solid oxide electrolyzer cells_), AEM (_anion exchange membrane electrolysers_) nebo pokročilé alkalické elektrolyzéry (např. firma Hysata plánuje do roku 2025 uvést na trh model s udávanou účinností až 95%). Více detailů je ve zprávě [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023), str. 140.
     - name: Účinnost palivových článků
       value: 60 %
       comment: |
-        **Slouží pro konverzi vodíku na elektřinu**, například ve vodíkových autech. Účinnost se liší podle technologie, 60 % dosahují technologie PEM, AFC a SOFC. Tento údaj znamená, že z vodíku s energetickým obsahem 1 MWh se vyrobí 0,6 MWh elektřiny. Větší přehled o dostupných technologiích palivových článků poskytuje např. fact sheet od [energy.gov](https://www.energy.gov/eere/fuelcells/articles/fuel-cells-fact-sheet).
+        **Slouží pro konverzi vodíku na elektřinu**, například ve vodíkových autech. Účinnost se liší podle technologie, 60 % dosahují technologie PEM, AFC a SOFC. Tento údaj znamená, že z vodíku s energetickým obsahem 1 MWh se vyrobí 0,6 MWh elektřiny. Větší přehled o dostupných technologiích palivových článků poskytuje např. [fact sheet](https://www.energy.gov/eere/fuelcells/articles/fuel-cells-fact-sheet) ministerstva energetiky USA.
     - name: Současná výroba (2022)
       subname: z toho nízkoemisní
       value: 95 Mt
@@ -59,7 +59,7 @@ items:
       production: 270 tun
       year: 2026
     - name: Green Mine
-      company: SevEn
+      company: Sev.en
       link: https://www.greenmine.cz/body-zmeny/#vodik
       description: Elektrolyzér má vzniknout v rámci projektu Green Mine, který představuje celkovou revitalizaci mosteckého lomu ČSA, v němž skončí těžba v roce 2025.
       production: 360 tun
@@ -68,7 +68,7 @@ items:
       company: Orlen Unipetrol
       link: https://www.e15.cz/byznys/prumysl-a-energetika/unipetrol-ziskal-dotaci-na-miliardovy-vodikovy-projekt-obri-elektrolyzer-spusti-do-ctyr-let-1399502
       description: Největší český výrobce šedého vodíku plánuje pro chod elektrolyzéru kombinovat vlastní energii ze slunce s dodávkami zelené energie od jiných subjektů.
-      production: 4500 tun
+      production: 4 500 tun
       year: 2027
   institutions:
     - name: Česká vodíková technologická platforma
@@ -136,32 +136,32 @@ items:
       year: 2020
   companies:
     - name: Linde PLC
-      capitalizaion: $185 mld.
+      market-cap: $185 mld.
       category: Chemický průmysl
       link: https://www.linde-engineering.com/en/hydrogen/index.html
       description: Největší světová firma na výrobu průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby po distribuci a ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík, podle různých dostupných informací v současné době silně investuje do rozvoje modrého a zeleného vodíku.
     - name: Air Products & Chemicals
-      capitalizaion: $63 mld.
+      market-cap: $63 mld.
       category: Chemický průmysl
       link: https://www.airproducts.com/industries/hydrogen-fueling-for-mobility
       description: Air Products vyrábí škálu průmyslových plynů, mimo jiné i vodík. V současnosti silně investuje do modrého a zeleného vodíku.
     - name: ČEZ
-      capitalizaion: $23 mld.
+      market-cap: $23 mld.
       category: Energetika
       link: https://www.cez.cz/
       description: Největší výrobce elektřiny v ČR plánuje vyrábět zelený vodík z vlastních zdrojů. Například má již v plánu konkrétní projekt na plnící stanici se 100% zeleným vodíkem v Mníšku pod Brdy.
     - name: Orlen Unipetrol
-      capitalizaion: $7 mld.
+      market-cap: $7 mld.
       category: Petrochemický průmysl
       link: https://www.orlenunipetrol.cz/
       description: Největší výrobce (šedého) vodíku v ČR, dceřiná společnost polského PKN Orlen. V současnosti se zaměřuje na výstavbu plnících stanic pro vodíková auta - plánuje 28 stanic do roku 2030. Na začátku roku 2024 má dvě v provozu, další ve výstavbě. V budoucnu plánuje investovat i do zeleného vodíku.
     - name: Plug Power
-      capitalizaion: $5 mld.
+      market-cap: $5 mld.
       category: Technologie
       link: https://www.plugpower.com/
       description: Americká firma specializující se na výrobu palivových článků, které se používají pro konverzi vodíku na elektřinu, hlavně pro sektor dopravy. Kromě toho také vyrábí elektrolyzéry a sadu technologií na přepravu, skladování a čerpání vodíku do aut.
     - name: Fuel Cell Energy
-      capitalizaion: $0,76 mld.
+      market-cap: $0,76 mld.
       category: Technologie
       link: https://www.fuelcellenergy.com/
       description: Firma zaměřující se na výrobu vodíkových palivových článků a také technologie na výrobu bezemisního vodíku z bioplynu. Jejím cílem je přispět k dekarbonizaci energetického průmyslu.
@@ -179,25 +179,23 @@ items:
 ## Přehled současného stavu a odhady dalšího rozvoje
 
 {:.narrow-text}
-Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizována a shrnuje aktuální situaci ohledně využití vodíku v energetice, včetně výroby, spotřeby, infrastruktury, obchodu, politiky, inovací apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
+Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizována a shrnuje aktuální situaci ohledně využití vodíku v energetice, včetně výroby, spotřeby, infrastruktury, obchodu, politiky, inovací apod. Publikace porovnává realitu současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
 
 <div class="narrow-text" markdown="1">
-
 {% capture vodik %}
 
-V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan, atd.), je tedy možné jej z těchto sloučenin "vyrábět". Podle původu, resp. emisní náročnosti, se vodík označuje různými "barvami".
+V přírodě se vodík vyskytuje nejčastěji ve formě sloučenin (voda, metan atd.), z nichž je možné jej vyrábět v čisté formě. Podle původu, resp. emisní náročnosti zdroje, se vodík označuje různými barvami.
 
 {% include includes-local/barvy-vodiku.html %}
 
 {:.mt-4}
-Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod zemí již v čisté formě a je tedy možné jej těžit. Doposud je však reálně využívané pouze jediné naleziště v africkém Mali, další jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době celkem rychle změnit.
-
+Kromě toho se někdy mluví o **bílém** vodíku, který se vyskytuje pod zemí již v čisté formě a je tedy možné jej přímo těžit. Doposud se však těží pouze jediné naleziště v africkém Mali. Další projekty jsou ve fázi explorace či přípravy na těžbu. Jde o poměrně neprobádanou oblast, situace se tedy může v blízké době rychle měnit.
 {% endcapture %}
 
 {% include expander-figure.html
     name="vodik"
     expanded=false
-    class="contrast-figure "
+    class="contrast-figure"
     label="Kontext: Jaké jsou barvy a původ vodíku"
     content=vodik
 %}
@@ -229,6 +227,7 @@ Kromě toho se ještě někdy mluví o **bílém** vodíku - vyskytuje se pod ze
     {% endfor %}
   </tbody>
 </table>
+
 <dl class="d-md-none">
   {% for item in page.items.metrics %}
   <dt class="mt-3">{{ item.name }}: {{ item.value }}</dt>
@@ -452,7 +451,7 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
       <td class="align-middle">{{ item.category }}</td>
-      <td class="align-middle">{{ item.capitalizaion }}</td>
+      <td class="align-middle">{{ item.market-cap }}</td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
@@ -464,7 +463,7 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
     <a href="{{ item.link }}">{{ item.name }}</a>
   </dt>
   <dd class="small mt-1">
-    <p class="my-1"><i>{{ item.category }}</i>, tržní kapitalizace: {{ item.capitalizaion }}</p>
+    <p class="my-1"><i>{{ item.category }}</i>, tržní kapitalizace: {{ item.market-cap }}</p>
     {{ item.description | markdownify }}
   </dd>
   {% endfor %}
