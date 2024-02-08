@@ -40,9 +40,21 @@ perex: |
 
 Následující text se každé z těchto otázek věnuje podrobněji.
 
+{% include figure.html
+    name="vhodne-reseni.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky vhodného řešení"
+%}
+
 ## Je nákup uhlíkových offsetů v daném případě vhodným řešením?
 
 Jak již bylo zmíněno v předcházejících dílech této série, **offsety jsou** z hlediska snižování uhlíkové stopy užitečný, nicméně spíše **doplňkový nástroj**. K jejich nákupu by měl kupující přistoupit až poté, co vyčerpá ostatní dostupné možnosti, jak svou uhlíkovou stopu snížit. Před nákupem je proto vždy potřeba položit si otázku, zda není možné další snížení uhlíkové stopy jinou cestou: nešlo by například zavést úspornější technologii či nahradit materiál ve výrobě za jiný? Nebylo by účinnější odebírat elektřinu vyrobenou z obnovitelných zdrojů nebo se pokusit významněji snížit svou spotřebu energie?
+
+{% include figure.html
+    name="slibeny-efekt.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky slíbenýho efektu"
+%}
 
 ## Má uhlíkový offset slíbený efekt?
 
@@ -53,6 +65,12 @@ To je důležitá metodologická otázka: jak tento efekt vlastně odhadovat a m
 - Příkladem opatření, kdy je **množství sekvestrovaného uhlíku odhadováno dopředu**, je ochrana před odlesňováním (deforestací). Kolik uhlíku bude v rámci takového projektu sekvestrováno (a tedy i kolik kreditů je možné prodat), se zpravidla odhaduje na základě otázky: Co by se stalo, kdyby k zavedení opatření nedošlo? Kolik hektarů lesa by bylo vykáceno? A o jaké druhy stromů by šlo? U takových projektů bývá problémem časté nadhodnocení efektu ochrany lesa, například nadhodnocení velikosti území, kterému hrozí vykácení. Výsledkem je pak vznik offsetů, které byly prodány, ale neměly žádný efekt.
 
 Druhý z uvedených příkladů je zásadní – ve světě totiž dnes **většinu projektů s uhlíkovými offsety tvoří ty, které množství uloženého uhlíku pouze odhadují** (v roce 2023 to bylo 90 %[^carbon-direct-2023]). Použití vhodné a přesné metodologie při vypočítávání budoucího efektu projektu je tedy naprosto klíčové. A je třeba se ptát: je použitá metoda vhodná? Lze ji ověřit a opakovat? Je sekvestrováno skutečně tolik uhlíku, kolik projekt slibuje? Není jeho účinek nadhodnocený?
+
+{% include figure.html
+    name="dlouhodoby-efekt.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky dlouhodobosti offsetu"
+%}
 
 ## Je efekt offsetového projektu dlouhodobý?
 Je účinek dané aktivity či projektu jistý a trvalý, nebo existuje riziko, že časem zeslábne, případně se zcela vytratí? Může se například stát, že farmář využívající postupy regenerativního zemědělství se rozhodne pole prodat a někdo na něm začne hospodařit konvenčně – nebo může dojít k tomu, že les zachvátí požár.[^pozary-USA] Co potom? Uhlíkové kredity ztratí svou účinnost a uložený uhlík se uvolní zpět do atmosféry. U krátkodobých projektů (byť kvalitních) proto není kompenzace uhlíkové stopy jednorázová záležitost – emise jsou tímto způsobem kompenzovány jen na určitou dobu a poté je nutné je kompenzovat znovu.
@@ -70,11 +88,23 @@ K nim se řadí offsetové projekty, jež ukládají uhlík na velmi dlouhé obd
 "
 %}
 
+{% include figure.html
+    name="za-jak-dlouho-bude-efekt.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace čekání na efekt"
+%}
+
 ## Za jak dlouho tento efekt nastane?
 
 Slibovaného efektu offsetového projektu není obvykle dosaženo hned, ale často až za dlouhou dobu. Jako příklad se dají zmínit projekty zaměřené na výsadbu stromů: ty svou biomasu nabírají teprve s léty, a jejich schopnost ukládat v biomase uhlík se tedy zvyšuje postupně. Také jejich kořenový systém se rozrůstá pozvolna. Malé sazeničky stromků velkou <glossary id="sekvestrace">sekvestrační</glossary> kapacitu nemají. Aby tedy takový offsetový projekt skutečně měl slíbený efekt, musí stromy žít a růst **alespoň několik desítek let**.[^moomaw2019]
 
 Podobné je to v případě zabudovávání uhlíku do půdy pomocí fotosyntézy a aktivity půdních mikroorganismů. Množství uhlíku v půdě nestoupne ihned po zavedení vhodných postupů (k nimž patří třeba výsev meziplodin či omezení orby u půdy využívané k pěstování plodin). Na vybudování (eko)systému pohlcujícího uhlík potřebuje půda minimálně **několik let**: vhodná půdní struktura se vytváří postupně a také bakterie, houby, roztoči, žížaly a další organismy žijící v půdě potřebují k dostatečnému rozmnožení určitý čas.[^miko2019]
+
+{% include figure.html
+    name="nove-prinosy.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky nových přínosů efektu"
+%}
 
 ## Co nového tento projekt přináší?
 
@@ -93,9 +123,21 @@ V souvislosti s **adicionalitou** je vhodné si položit tyto tři otázky:
 - **Není stejný efekt financován opakovaně či z více různých zdrojů?**\\
     Cílem offsetového projektu může být třeba ochrana mokřadního biotopu.[^mokrady] Tato ochrana je však už financována z projektu místního ochranářského spolku zaměřeného na ochranu vzácných druhů mechorostů. Je-li projekt dostatečně financován z jiných zdrojů, prodej uhlíkových kreditů už další redukci emisí skleníkových plynů nepřináší.
 
+{% include figure.html
+    name="pozitivni-prinosy.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky pozitivních přínosů offsetu"
+%}
+
 ## Má projekt ještě další pozitivní přínosy?
 
 Kromě ukládání uhlíku mohou mít kvalitní offsetové projekty i další přínosy, třeba pro místní ekosystém nebo pro příjemnější pobyt v krajině. Aleje (zejména pokud jde o druhy stromů, které zde přirozeně rostou) podporují **biodiverzitu**, hnízdí v nich ptáci a poskytují stín. Druhově a věkově pestré lesy jsou pro biodiverzitu také příznivé, navíc regulují klima v dané oblasti a napomáhají zádrži vody v krajině. Postupy regenerativního zemědělství zase zlepšují půdní strukturu a **schopnost půdy zadržovat vodu**. Všechny tyto přínosy jsou hodnotné samy o sobě, zároveň však i často pomáhají přírodě adaptovat se na probíhající změny klimatu. Jejich podpora se tedy týká jak <glossary id="mitigace">mitigace</glossary>, tak <glossary id="adaptace">adaptace</glossary>.
+
+{% include figure.html
+    name="negativni-dopad.svg"
+    class="negative-margin-bottom"
+    alt="Ilustrace otázky otázky negativních dopadů offsetu"
+%}
 
 ## Nemá offsetový projekt negativní dopad?
 
