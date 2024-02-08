@@ -145,7 +145,7 @@ subtopics:
   - potencial-vetrne-energie-cr
   - potencial-solarni-energie-cr-strechy
   - uzemni-stopa-oze
-  - 2023-reserse-vodik
+  - 2024-reserse-vodik
 
 - id:          "doprava"
   title:       "Doprava"

@@ -1,8 +1,8 @@
 ---
 layout:        survey
 title:         "Vodík v energetice"
-slug:          2023-reserse-vodik
-redirect_from: "/2023-reserse-vodik"
+slug:          2024-reserse-vodik
+redirect_from: "/2024-reserse-vodik"
 weight:        305
 published:     2024-01-18
 tags-scopes:   [ svet ]
@@ -10,9 +10,9 @@ tags-topics:   [ emise, opatreni ]
 use-preview-image: true
 caption:       "Vodík v energetice"
 intro: |
-  Vodík je nejlehčí a nejčastější prvek, který tvoří až 90% atomů ve vesmíru. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, jeho použití je však v jiných odvětvích zcela běžné již mnoho let. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95 Mt, v roce 2050 se odhaduje až na 600 Mt.
+    Vodík je nejlehčí a nejhojnější prvek ve vesmíru, tvoří až 90 % všech atomů. Díky své schopnosti akumulace energie se o něm často mluví jako o technologii budoucnosti, avšak jeho použití v jiných odvětvích je již mnoho let zcela běžné. Dnes je využíván mimo jiné například v chemickém průmyslu jako redukční činidlo, či v zemědělství pro výrobu hnojiv. Zatímco v roce 2022 dosáhla celosvětová poptávka po vodíku 95 Mt, v roce 2050 se odhaduje až na 600 Mt.
 
-  V současnosti (2024) se vodík vyrábí skoro po celém světě, včetně ČR. U nás jde však téměř výhradně o šedý (vysokoemisní) vodík vyráběný v rámci petro-chemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Výroba zeleného vodíku se u nás postupně zavádí v rámci několika výzkumných projektů.
+    V současnosti (2024) se vodík vyrábí skoro po celém světě, včetně Česka. U nás jde však téměř výhradně o šedý (vysokoemisní) vodík vyráběný v rámci petrochemického průmyslu firmami jako např. litvínovský Unipetrol či ústecká Spolchemie. Výroba zeleného vodíku se u nás postupně zavádí v rámci několika výzkumných projektů.
 
 items:
   metrics:
@@ -24,7 +24,7 @@ items:
       comment: |
         **Elektrolyzéry slouží pro výrobu vodíku pomocí elektřiny a vody.** V současnosti komerčně dostupné PEM (_Proton Exchange Membrane_) elektrolyzéry dosahují účinnosti až 70 %. Tento údaj znamená, že z 1 MWh elektřiny se vyrobí množství vodíku s energetickým obsahem 0,65–0,7 MWh, což je asi 20 kg vodíku.
 
-        Další vývoj ale probíhá v mnoha směrech, vyšší účinnost by mohly v komerční škále poskytnout např. technologie SOEC (_Solid Oxide Electrolysis_), AEM (_Anion Exchange Membrane Electrolysers_) nebo pokročilé alkalické elektrolyzéry (např. firma Hysata plánuje do roku 2025 uvést na trh model s udávanou účinností až 95%). Více detailů je ve zprávě [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023), str. 140.
+        Další vývoj ale probíhá v mnoha směrech, vyšší účinnost by mohly v komerční škále poskytnout např. technologie SOEC (_solid oxide electrolyzer cells_), AEM (_anion exchange membrane electrolysers_) nebo pokročilé alkalické elektrolyzéry (např. firma Hysata plánuje do roku 2025 uvést na trh model s udávanou účinností až 95%). Více detailů je ve zprávě [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023), str. 140.
     - name: Účinnost palivových článků
       value: 60 %
       comment: |
@@ -37,7 +37,7 @@ items:
     - name: Očekávaná výroba (2030)
       subname: z toho nízkoemisní
       value: "> 150 Mt"
-      subvalue: 20-38 Mt
+      subvalue: 20–38 Mt
       comment: Celosvětová spotřeba vodíku v roce 2030 se odhaduje minimálně na 150 milionů tun (dle zprávy [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023), str. 66). Podle těchto odhadů by měl nízkoemisní vodík tvořit 20–38 milionů tun (podle toho, zda započítáme projekty v rané fázi plánování).
   projects:
     - name: SG Hydrogen Napajedla
@@ -179,7 +179,7 @@ items:
 ## Přehled současného stavu a odhady dalšího rozvoje
 
 {:.narrow-text}
-Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizovaná a shrnuje veškerou aktuální situaci ohledně využití vodíku v energetice, zahrnující výrobu, spotřebu, infrastrukturu, obchod, politiku, inovace, apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
+Základní orientaci v tématu vodíku dodává **přehledová publikace [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023)** od **Mezinárodní energetické agentury** (IEA). Tato publikace je v posledních letech každoročně aktualizována a shrnuje aktuální situaci ohledně využití vodíku v energetice, včetně výroby, spotřeby, infrastruktury, obchodu, politiky, inovací apod. Napříč publikací se porovnává realita současného stavu ohlášených projektů a politických opatření s žádoucím stavem podle dekarbonizačního scénáře _Net Zero Emissions by 2050_.
 
 <div class="narrow-text" markdown="1">
 
