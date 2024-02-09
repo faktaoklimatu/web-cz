@@ -41,7 +41,8 @@ perex: |
 Následující text se každé z těchto otázek věnuje podrobněji.
 
 {% include figure.html
-    name="vhodne-reseni.svg"
+    name="vhodne-reseni-des.svg"
+    name-mobile="vhodne-reseni-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky vhodného řešení"
 %}
@@ -51,7 +52,8 @@ Následující text se každé z těchto otázek věnuje podrobněji.
 Jak již bylo zmíněno v předcházejících dílech této série, **offsety jsou** z hlediska snižování uhlíkové stopy užitečný, nicméně spíše **doplňkový nástroj**. K jejich nákupu by měl kupující přistoupit až poté, co vyčerpá ostatní dostupné možnosti, jak svou uhlíkovou stopu snížit. Před nákupem je proto vždy potřeba položit si otázku, zda není možné další snížení uhlíkové stopy jinou cestou: nešlo by například zavést úspornější technologii či nahradit materiál ve výrobě za jiný? Nebylo by účinnější odebírat elektřinu vyrobenou z obnovitelných zdrojů nebo se pokusit významněji snížit svou spotřebu energie?
 
 {% include figure.html
-    name="slibeny-efekt.svg"
+    name="slibeny-efekt-des.svg"
+    name-mobile="slibeny-efekt-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky slíbenýho efektu"
 %}
@@ -67,7 +69,8 @@ To je důležitá metodologická otázka: jak tento efekt vlastně odhadovat a m
 Druhý z uvedených příkladů je zásadní – ve světě totiž dnes **většinu projektů s uhlíkovými offsety tvoří ty, které množství uloženého uhlíku pouze odhadují** (v roce 2023 to bylo 90 %[^carbon-direct-2023]). Použití vhodné a přesné metodologie při vypočítávání budoucího efektu projektu je tedy naprosto klíčové. A je třeba se ptát: je použitá metoda vhodná? Lze ji ověřit a opakovat? Je sekvestrováno skutečně tolik uhlíku, kolik projekt slibuje? Není jeho účinek nadhodnocený?
 
 {% include figure.html
-    name="dlouhodoby-efekt.svg"
+    name="dlouhodoby-efekt-des.svg"
+    name-mobile="dlouhodoby-efekt-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky dlouhodobosti offsetu"
 %}
@@ -89,7 +92,8 @@ K nim se řadí offsetové projekty, jež ukládají uhlík na velmi dlouhé obd
 %}
 
 {% include figure.html
-    name="za-jak-dlouho-bude-efekt.svg"
+    name="za-jak-dlouho-bude-efekt-des.svg"
+    name-mobile="za-jak-dlouho-bude-efekt-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace čekání na efekt"
 %}
@@ -101,7 +105,8 @@ Slibovaného efektu offsetového projektu není obvykle dosaženo hned, ale čas
 Podobné je to v případě zabudovávání uhlíku do půdy pomocí fotosyntézy a aktivity půdních mikroorganismů. Množství uhlíku v půdě nestoupne ihned po zavedení vhodných postupů (k nimž patří třeba výsev meziplodin či omezení orby u půdy využívané k pěstování plodin). Na vybudování (eko)systému pohlcujícího uhlík potřebuje půda minimálně **několik let**: vhodná půdní struktura se vytváří postupně a také bakterie, houby, roztoči, žížaly a další organismy žijící v půdě potřebují k dostatečnému rozmnožení určitý čas.[^miko2019]
 
 {% include figure.html
-    name="nove-prinosy.svg"
+    name="nove-prinosy-des.svg"
+    name-mobile="nove-prinosy-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky nových přínosů efektu"
 %}
@@ -124,7 +129,8 @@ V souvislosti s **adicionalitou** je vhodné si položit tyto tři otázky:
     Cílem offsetového projektu může být třeba ochrana mokřadního biotopu.[^mokrady] Tato ochrana je však už financována z projektu místního ochranářského spolku zaměřeného na ochranu vzácných druhů mechorostů. Je-li projekt dostatečně financován z jiných zdrojů, prodej uhlíkových kreditů už další redukci emisí skleníkových plynů nepřináší.
 
 {% include figure.html
-    name="pozitivni-prinosy.svg"
+    name="pozitivni-prinosy-des.svg"
+    name-mobile="pozitivni-prinosy-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky pozitivních přínosů offsetu"
 %}
@@ -134,7 +140,8 @@ V souvislosti s **adicionalitou** je vhodné si položit tyto tři otázky:
 Kromě ukládání uhlíku mohou mít kvalitní offsetové projekty i další přínosy, třeba pro místní ekosystém nebo pro příjemnější pobyt v krajině. Aleje (zejména pokud jde o druhy stromů, které zde přirozeně rostou) podporují **biodiverzitu**, hnízdí v nich ptáci a poskytují stín. Druhově a věkově pestré lesy jsou pro biodiverzitu také příznivé, navíc regulují klima v dané oblasti a napomáhají zádrži vody v krajině. Postupy regenerativního zemědělství zase zlepšují půdní strukturu a **schopnost půdy zadržovat vodu**. Všechny tyto přínosy jsou hodnotné samy o sobě, zároveň však i často pomáhají přírodě adaptovat se na probíhající změny klimatu. Jejich podpora se tedy týká jak <glossary id="mitigace">mitigace</glossary>, tak <glossary id="adaptace">adaptace</glossary>.
 
 {% include figure.html
-    name="negativni-dopad.svg"
+    name="negativni-dopad-des.svg"
+    name-mobile="negativni-dopad-mob.svg"
     class="negative-margin-bottom"
     alt="Ilustrace otázky otázky negativních dopadů offsetu"
 %}
