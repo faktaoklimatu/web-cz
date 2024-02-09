@@ -55,7 +55,7 @@ Jak již bylo zmíněno v předcházejících dílech této série, **offsety js
     name="slibeny-efekt-des.svg"
     name-mobile="slibeny-efekt-mob.svg"
     class="negative-margin-bottom"
-    alt="Ilustrace otázky slíbenýho efektu"
+    alt="Ilustrace otázky slíbeného efektu"
 %}
 
 ## Má uhlíkový offset slíbený efekt?
