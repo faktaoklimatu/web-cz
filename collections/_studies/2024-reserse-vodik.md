@@ -22,13 +22,13 @@ items:
     - name: Účinnost elektrolyzérů
       value: 65–70 %
       comment: |
-        **Elektrolyzéry slouží pro výrobu vodíku pomocí elektřiny a vody.** V současnosti komerčně dostupné PEM (_proton exchange membrane_) elektrolyzéry dosahují účinnosti až 70 %. Tento údaj znamená, že z 1 MWh elektřiny se vyrobí množství vodíku s energetickým obsahem 0,65–0,7 MWh, což je asi 20 kg vodíku.
+        **Elektrolyzéry slouží pro výrobu vodíku pomocí elektřiny a vody.** V současnosti komerčně dostupné PEM (_proton exchange membrane_) elektrolyzéry dosahují účinnosti až 70 %. Tento údaj znamená, že z 1 MWh elektřiny se vyrobí množství vodíku s energetickým obsahem 0,65–0,7 MWh, což odpovídá asi 20 kg vodíku.
 
-        Další vývoj ale probíhá v mnoha směrech, vyšší účinnost by mohly v komerční škále poskytnout např. technologie SOEC (_solid oxide electrolyzer cells_), AEM (_anion exchange membrane electrolysers_) nebo pokročilé alkalické elektrolyzéry (např. firma Hysata plánuje do roku 2025 uvést na trh model s udávanou účinností až 95%). Více detailů je ve zprávě [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023), str. 140.
+        Další vývoj ale probíhá v mnoha směrech, vyšší účinnost by mohly v komerční škále poskytnout např. technologie SOEC (_solid oxide electrolyzer cells_), AEM (_anion exchange membrane electrolysis_) nebo pokročilé alkalické elektrolyzéry (např. firma Hysata plánuje do roku 2025 uvést na trh model s udávanou účinností až 95 %). Více detailů uvádí např. zpráva [Global Hydrogen Review](https://www.iea.org/reports/global-hydrogen-review-2023) na str. 140.
     - name: Účinnost palivových článků
       value: 60 %
       comment: |
-        **Slouží pro konverzi vodíku na elektřinu**, například ve vodíkových autech. Účinnost se liší podle technologie, 60 % dosahují technologie PEM, AFC a SOFC. Tento údaj znamená, že z vodíku s energetickým obsahem 1 MWh se vyrobí 0,6 MWh elektřiny. Větší přehled o dostupných technologiích palivových článků poskytuje např. [fact sheet](https://www.energy.gov/eere/fuelcells/articles/fuel-cells-fact-sheet) ministerstva energetiky USA.
+        **Slouží pro konverzi vodíku na elektřinu**, například ve vodíkových autech. Účinnost se liší podle technologie, 60 % dosahují technologie PEM, AFC a SOEC. Tento údaj znamená, že z vodíku s energetickým obsahem 1 MWh se vyrobí 0,6 MWh elektřiny. Větší přehled o dostupných technologiích palivových článků poskytuje např. [fact sheet](https://www.energy.gov/eere/fuelcells/articles/fuel-cells-fact-sheet) ministerstva energetiky USA.
     - name: Současná výroba (2022)
       subname: z toho nízkoemisní
       value: 95 Mt
@@ -99,36 +99,36 @@ items:
   studies:
     - name: "Hydrogen energy, economy and storage: review and recommendation"
       link: https://www.sciencedirect.com/science/article/abs/pii/S036031991931465X
-      source: J. O. Abe et&nbsp;al.
+      authors: J. O. Abe et&nbsp;al.
       description: Článek identifikuje dostupnost technologií pro skladování vodíku jako základní překážku pro široký rozvoj vodíkové ekonomiky. **Dává přehled technologií pro skladování vodíku z technického i ekonomického pohledu**, se zaměřením na pevné skupenství ve formě hydridů kovů (včetně porovnání energetické hodnoty vodíku na kg hmotnosti oproti ostatním konvenčním zdrojům energie).
       journal: International Journal of Hydrogen Energy
       year: 2019
     - name: "Hydrogen production for energy: An overview"
       link: "https://www.sciencedirect.com/science/article/abs/pii/S0360319919345926"
-      source: Furat Dawood et&nbsp;al.
+      authors: Furat Dawood et&nbsp;al.
       description: Zkoumá **využití vodíku v energetice**, od výroby a čištění, přes ukládání (včetně bezpečnostních aspektů), až po využití vodíku. V závislosti na cestách výroby vodíku porovnává emisní náročnost celého životního cyklu.
       journal: International Journal of Hydrogen Energy
       year: 2020
     - name: "Hydrogen energy systems: A critical review of technologies, applications, trends and challenges"
       link: https://www.sciencedirect.com/science/article/pii/S1364032121004688
-      source: Meiling Yue et&nbsp;al.
+      authors: Meiling Yue et&nbsp;al.
       description: Zaměřuje se na možnosti **využití vodíku v energetice**, od výroby vodíku přes ukládání a distribuci až po konverzi zpět na elektřinu nebo využití v dopravě. Statisticky analyzuje data z dostupné literatury a zkoumá příklady projektů ve světě. Zkoumá náklady, efektivitu a životnost jednotlivých technologií.
       journal: Energy Reviews
       year: 2021
     - name: "Blue and green hydrogen energy to meet European Union decarbonisation objectives. An overview of perspectives and the current state of affairs"
       link: https://www.sciencedirect.com/science/article/abs/pii/S0360319922046675
-      source: Giovanni Lagioia et&nbsp;al.
+      authors: Giovanni Lagioia et&nbsp;al.
       description: Článek dává narativní přehled literatury o **současném stavu technologií pro výrobu zeleného a modrého vodíku** a možnostech jejich příspěvku k plnění dekarbonizačních cílů EU.
       journal: International Journal of Hydrogen Energy
       year: 2022
   strategies:
     - name: Vodíková strategie EU
       link: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0301
-      description: Dokument z roku 2020 od Evropské komise. Rozděluje budoucí vývoj vodíku do roku 2050 na 3 etapy zaměřující se na instalaci elektrolyzérů, výrobu zeleného vodíku, import vodíku a jeho využití při vyrovnávání elektrizační soustavy.
+      description: Dokument z roku 2020 od Evropské komise. Rozděluje budoucí vývoj vodíku do roku 2050 na tři etapy zaměřující se na instalaci elektrolyzérů, výrobu zeleného vodíku, import vodíku a jeho využití při vyrovnávání elektrizační soustavy.
       year: 2020
     - name: Vodíková strategie ČR
       link: https://www.mpo.cz/assets/cz/prumysl/strategicke-projekty/2021/8/Vodikova-strategie_CZ_G_2021-26-07.pdf
-      description: Hlavní vodíková strategie České republiky vytvořená společně Ministerstvem průmyslu a obchodu, Ministerstvem dopravy a Ministerstvem životního prostředí. Vychází z Vodíkové strategie EU a bohužel neobsahuje mnoho konkrétních cílů. Udává prognózu spotřeby vodíku po odvětvích a očekávaný časový vývoj zavádění vodíku do dopravy, průmyslu apod., stejně jako u evropské strategie je období do roku 2050 rozdělené na 3 etapy.
+      description: Hlavní vodíková strategie České republiky vytvořená společně Ministerstvem průmyslu a obchodu, Ministerstvem dopravy a Ministerstvem životního prostředí. Vychází z Vodíkové strategie EU a bohužel neobsahuje mnoho konkrétních cílů. Udává prognózu spotřeby vodíku po odvětvích a očekávaný časový vývoj zavádění vodíku do dopravy, průmyslu apod., stejně jako u evropské strategie je období do roku 2050 rozdělené na tři etapy.
       year: 2021
     - name: Národní akční plán čisté mobility ČR
       link: https://www.mpo.cz/cz/prumysl/zpracovatelsky-prumysl/automobilovy-prumysl/aktualizace-narodniho-akcniho-planu-ciste-mobility--254445/
@@ -139,7 +139,7 @@ items:
       market-cap: $185 mld.
       category: Chemický průmysl
       link: https://www.linde-engineering.com/en/hydrogen/index.html
-      description: Největší světová firma na výrobu průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby po distribuci a ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík, podle různých dostupných informací v současné době silně investuje do rozvoje modrého a zeleného vodíku.
+      description: Největší výrobce průmyslových plynů, zároveň jeden z největších výrobců vodíku. Pokrývá celý hodnotový řetězec od výroby přes distribuci až po ukládání. Na svém webu firma uvádí, že vyrábí šedý, modrý i zelený vodík. Podle dostupných informací v současnosti silně investuje do rozvoje modrého a zeleného vodíku.
     - name: Air Products & Chemicals
       market-cap: $63 mld.
       category: Chemický průmysl
@@ -247,7 +247,7 @@ Kromě toho se někdy mluví o **bílém** vodíku, který se vyskytuje pod zem�
     <tr>
       <th scope="col" class="text-uppercase">Název</th>
       <th scope="col" class="text-uppercase">Rok</th>
-      <th scope="col" class="text-uppercase">Autor</th>
+      <th scope="col" class="text-uppercase">Autoři</th>
       <th scope="col" class="text-uppercase">Žurnál</th>
       <th scope="col" class="text-uppercase">Popis</th>
     </tr>
@@ -259,8 +259,8 @@ Kromě toho se někdy mluví o **bílém** vodíku, který se vyskytuje pod zem�
         <a href="{{ item.link }}">{{ item.name }}</a>
       </td>
       <td class="align-middle">{{ item.year }}</td>
-      <td class="align-middle">{{ item.source }}</td>
-      <td class="align-middle">{{ item.journal }}</td>
+      <td class="align-middle">{{ item.authors }}</td>
+      <td class="align-middle"><i>{{ item.journal }}</i></td>
       <td class="align-middle">{{ item.description | markdownify }}</td>
     </tr>
     {% endfor %}
@@ -268,9 +268,9 @@ Kromě toho se někdy mluví o **bílém** vodíku, který se vyskytuje pod zem�
 </table>
 <dl class="d-md-none">
   {% for item in page.items.studies %}
-  <dt class="mt-3">{{ item.source }}: <a href="{{ item.link }}">{{ item.name }}</a></dt>
+  <dt class="mt-3">{{ item.authors }}: <a href="{{ item.link }}">{{ item.name }}</a></dt>
   <dd class="small mt-1">
-    <p class="my-1">{{ item.journal }}, {{ item.year }}</p>
+    <p class="my-1"><i>{{ item.journal }}</i>, {{ item.year }}</p>
     {{ item.description | markdownify }}
   </dd>
   {% endfor %}
@@ -468,3 +468,6 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
   </dd>
   {% endfor %}
 </dl>
+
+{:.small}
+\* Průměr celkových ročních tržeb v letech 2019–2023.
