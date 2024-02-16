@@ -468,6 +468,3 @@ Pro perspektivu, podle [Vodíkové strategie ČR](https://www.mpo.cz/assets/cz/r
   </dd>
   {% endfor %}
 </dl>
-
-{:.small}
-\* Průměr celkových ročních tržeb v letech 2019–2023.
