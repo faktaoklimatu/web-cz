@@ -137,4 +137,4 @@ Trh s uhlíkovými offsety je pro dosažení uhlíkové neutrality **užitečný
 [^wuest-2014]: Wuest, S., 2014. Seasonal Variation in Soil Organic Carbon. *Soil Science Society of America Journal*. Vol. 78, číslo 4, str. 1442–1447. DOI [10.2136/sssaj2013.10.0447](https://www.ars.usda.gov/ARSUserFiles/6233/seasonalVariationInSoilOrganic.pdf).
 [^sedma-generace]: Nejistotě spojené s měřením množství půdního uhlíku se krátce věnuje rakouský odborník na půdu Matthias Strahlhofer v [článku časopisu Sedmá generace](https://sedmagenerace.cz/je-treba-mobilizovat-ziviny-v-pude/).
 [^varice-indie]: [Cookstove offsets produce millions of junk carbon credits. Climate Home News](https://www.climatechangenews.com/2023/08/25/cookstove-offsets-carbon-emissions-credits-india-enking/)
-[^varice-nadhodnoceni]:N adhodnocení používání nových vařičů objevila např. analýza [Gill-Wiehl et al., 2023](https://www.researchsquare.com/article/rs-2606020/v1).
+[^varice-nadhodnoceni]: Nadhodnocení používání nových vařičů objevila např. analýza [Gill-Wiehl et al., 2023](https://www.researchsquare.com/article/rs-2606020/v1).
