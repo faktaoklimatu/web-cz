@@ -13,6 +13,14 @@
     linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
     twitter: "https://twitter.com/OPribyla"
 
+  - id: "kristina-studena"
+    name: "Kristina Studená"
+    position: "Koordinátorka projektů, týmu a zázemí"
+    summary: "Stará se o efektivní fungování celého týmu. Její role zahrnuje správu projektů, koordinaci interních procesů a péči o dárce a dárkyně. Se zkušenostmi v řízení a komunikaci přináší do týmu organizační schopnosti i strategický přístup."
+    img: "kristina-studena.jpg"
+    email: "kristina.studena@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/kristina-studen%C3%A1-a18b43270/"  
+
   - id: "kristi-psorn-zakopcanova"
     name: "Kristi Pšorn Zákopčanová"
     name_formal: "Kristína Pšorn Zákopčanová"
@@ -38,6 +46,7 @@
     summary: "Zabývá se klimatickou politikou a legislativou na úrovni ČR a EU. Mimo to se věnuje analýze a vizualizaci dat, s praxí i z komerční sféry. Vystudovala hospodářskou politiku a mezinárodní vztahy."
     img: "katka-kolouchova.jpg"
     email: "katerina.kolouchova@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/kate%C5%99ina-kolouchov%C3%A1-b655a02ba/"
     twitter: "https://twitter.com/katkolouchova"
 
   - id: "jirka-lnenicka"
@@ -76,6 +85,14 @@
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
 
+  - id: "zbynek-stajer"
+    name: "Zbyněk Štajer"
+    position: "Analytik"
+    summary: "Jako analytik se věnuje zejména dopravě a energetice. Pro přístup ke komplexním problémům využívá design thinking a zkušenosti získané z konzultantské kariéry."
+    img: "zbynek-stajer.jpg"
+    email: "zbynek.stajer@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/zbynekstajer/"
+
   - id: "andy-snovakova"
     name: "Andy Snováková"
     position: "Analytička"
@@ -91,14 +108,6 @@
     email: "milan.vitek@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
-
-  - id: "adam-bilek"
-    name: "Adam Bílek"
-    position: "Analytik"
-    summary: "Vystudoval mezinárodní vztahy a energetickou bezpečnost společně s environmentálními studii. Ve Faktech o klimatu se věnuje energetice, dekarbonizaci průmyslu a technologiím zachytávání a ukládání uhlíku."
-    img: "adam-bilek.jpg"
-    email: "adam.bilek@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
 
   - id: "hana-tesak-vrtala"
     name: "Hana Tesák Vrtala"
@@ -130,9 +139,14 @@
 
 - title: "Faktům o klimatu dále pomáhají"
   lead: |
-    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu. Je jich však mnohem <a href='https://github.com/faktaoklimatu/web-cz/blob/master/CONTRIBUTORS.md'>více</a>.
+    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu.
   class: "further-team col-12 col-sm-12 col-md-4 col-lg-3 px-0"
   members:
+  - id: "adam-bilek"
+    name: "Adam Bílek"
+    summary: "Pro Fakta o klimatu napsal několik textů o dekarbonizaci průmyslu a energetiky."
+    linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+
   - name: "Jan Krajhanzl"
     summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
 
