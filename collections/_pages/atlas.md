@@ -94,33 +94,24 @@ V budoucnosti bychom rádi připravili také další díly atlasu pokrývající
 
 </div></div>
 </div></div>
-<div class="section"><div class="container" markdown="1">
-
-## Jak si atlas pořídit
-
-<div class="row"><div class="col-md-6 my-3" markdown="1">
-
-### Nákup již hotových výtisků přímo od nás
-
-Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk.
-
-Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
-
-<a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
-
-</div><div class="col-md-6 my-3" markdown="1">
-
-### Stažení elektronické verze ve formátu PDF
-
-Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
-
-<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-
-</div></div></div></div>
 <div class="section"><div class="container">
 <div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 ## Metodické materiály
+
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Čtení s porozuměním: zásobárna otázek pro práci v hodinách
+"
+content="
+Prakticky jakékoliv texty z oblasti přírodních věd se nabízejí jako skvělý materiál pro čtení s porozuměním, kdy si studenti kladou otázky, které je vedou k hlubšímu zamyšlení nad prezentovanými informacemi. 
+
+**Základní forma je jednoduchá:** v menších skupinách (nebo společně v celé třídě) necháte studenty přečíst daný materiál (třeba graf růstu světové teplotní anomálie s doprovodným textem) a pak pokládáte otázky, na které by měla být odpověď v rámci textu. U jednodušších otázek se studenti snadno shodnou, složitější otázky mohou otevírat diskusi - a to, co pak jako učitel potřebujete je vytvářet pro diskusi vhodné prostředí. 
+
+**Zásobárna otázek**, které zde nabízíme, je navržena tak, aby povzbuzovala analytické myšlení, podněcovala ke čtení grafů a přispívaly k formování informovaných názorů a postojů k otázkám klimatické změny. 
+
+<a href='https://docs.google.com/document/d/1pFunrt9mDZFZ7xIvRUGKDM-hHI-GJjPwsEqVBLChQDI/edit?usp=sharing' target='_blank' class='btn btn-secondary'><i class='fas fa-fw fa-file-download'></i> Stáhnout zásobárnu otázek</a>
+
+
+" %}
 
 {%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
@@ -156,3 +147,27 @@ Několik příkladů možného využití atlasu:
 
 </div></div>
 </div></div>
+<div class="section"><div class="container" markdown="1">
+
+## Jak si atlas pořídit
+
+<div class="row"><div class="col-md-6 my-3" markdown="1">
+
+### Nákup již hotových výtisků přímo od nás
+
+Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk.
+
+Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
+
+<a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+
+</div><div class="col-md-6 my-3" markdown="1">
+
+### Stažení elektronické verze ve formátu PDF
+
+Zdarma pro nekomerční použití v rámci licence [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs). Atlas si následně můžete sami vytisknout nebo s ním pracovat v digitální podobě.
+
+<a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
+
+</div></div></div></div>
+
