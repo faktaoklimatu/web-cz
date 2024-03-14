@@ -99,21 +99,18 @@ V budoucnosti bychom rádi připravili také další díly atlasu pokrývající
 
 ## Metodické materiály
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Čtení s porozuměním: zásobárna otázek pro práci v hodinách
-"
+{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Čtení s porozuměním: zásobárna otázek pro práci v hodinách"
 content="
-Prakticky jakékoliv texty z oblasti přírodních věd se nabízejí jako skvělý materiál pro čtení s porozuměním, kdy si studenti kladou otázky, které je vedou k hlubšímu zamyšlení nad prezentovanými informacemi. 
+Prakticky jakékoliv texty z oblasti přírodních věd se nabízejí jako skvělý materiál pro čtení s porozuměním, kdy si studenti kladou otázky, které je vedou k hlubšímu zamyšlení nad prezentovanými informacemi.
 
-**Základní forma je jednoduchá:** v menších skupinách (nebo společně v celé třídě) necháte studenty přečíst daný materiál (třeba graf růstu světové teplotní anomálie s doprovodným textem) a pak pokládáte otázky, na které by měla být odpověď v rámci textu. U jednodušších otázek se studenti snadno shodnou, složitější otázky mohou otevírat diskusi - a to, co pak jako učitel potřebujete je vytvářet pro diskusi vhodné prostředí. 
+**Základní forma je jednoduchá:** v menších skupinách (nebo společně v celé třídě) necháte studenty přečíst daný materiál (třeba graf růstu světové teplotní anomálie s doprovodným textem) a pak pokládáte otázky, na které by měla být odpověď v rámci textu. U jednodušších otázek se studenti snadno shodnou, složitější otázky mohou otevírat diskusi – a to, co pak jako vyučující potřebujete, je vytvářet pro diskusi vhodné prostředí.
 
-**Zásobárna otázek**, které zde nabízíme, je navržena tak, aby povzbuzovala analytické myšlení, podněcovala ke čtení grafů a přispívaly k formování informovaných názorů a postojů k otázkám klimatické změny. 
+**Zásobárna otázek**, které zde nabízíme, je navržena tak, aby povzbuzovala analytické myšlení, podněcovala ke čtení grafů a přispívala k formování informovaných názorů a postojů k otázkám klimatické změny.
 
-<a href='https://docs.google.com/document/d/1pFunrt9mDZFZ7xIvRUGKDM-hHI-GJjPwsEqVBLChQDI/edit?usp=sharing' target='_blank' class='btn btn-secondary'><i class='fas fa-fw fa-file-download'></i> Stáhnout zásobárnu otázek</a>
-
-
+<a href='https://docs.google.com/document/d/1pFunrt9mDZFZ7xIvRUGKDM-hHI-GJjPwsEqVBLChQDI/edit?usp=sharing' target='_blank' class='btn btn-primary' id='stahnout-zasobarnu-otazek'><i class='fas fa-fw fa-file-lines'></i> Stáhnout zásobárnu otázek</a>
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=3 title="### Jak můžete s atlasem pracovat ve výuce"
+{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Jak můžete s atlasem pracovat ve výuce"
 content="
 Jednotlivé části atlasu fungují samostatně a nemusíte jej procházet postupně od začátku do konce. Můžete si vybrat konkrétní problematiku a stejně dobře začít zvyšováním teplot, body zlomu v ekosystémech nebo třeba dopady změn na obyvatele různých oblastí. Obsažené materiály nabízejí plno námětů ke společné diskuzi i individuální práci.
 
@@ -131,7 +128,7 @@ Pokud byste chtěli načerpat rozsáhlejší didaktickou inspiraci, najdete ji k
 
 " %}
 
-{%- include expandable.html id-prefix="collapse-atlas" counter=4 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
+{%- include expandable.html id-prefix="collapse-atlas" counter=5 title="### Procvičování datové gramotnosti a dalších užitečných dovedností "
 content="
 S atlasem se nemusíte omezovat pouze na téma klimatické změny – naše grafiky a texty poslouží též jako praktický materiál při budování mnoha přírodovědných i společenskovědních kompetencí.
 Při různých příležitostech můžete se studenty procvičovat dovednosti jako čtení grafů, práce s daty, interpretace textů apod.
