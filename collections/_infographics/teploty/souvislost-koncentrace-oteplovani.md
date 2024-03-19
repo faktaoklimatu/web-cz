@@ -8,7 +8,7 @@ weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Z historických dat i modelování budoucího vývoje plyne, že oteplování planety je (přibližně) přímo úměrné nárůstu koncentrací CO<sub>2</sub> v atmosféře. Přesněji řečeno: každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm (parts per million) vede k nárůstu teploty zhruba o 0,1 °C."
-data-our:   "https://docs.google.com/spreadsheets/d/1aVn3Uz1wLUtmATagtZHEpeayiee6uy_BRAivZPwfb2s/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1tAKT3SMfaM4oeAZL-RSCgBTfJyKnyvsyao3yAQArd_U/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [ "Keelingova křivka", "https://keelingcurve.ucsd.edu/" ] ]
 ---
 
