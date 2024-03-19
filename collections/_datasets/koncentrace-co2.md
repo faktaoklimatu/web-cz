@@ -7,7 +7,7 @@ weight:     10
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Dataset obsahuje tři různé datové řady pro CO₂ lišící se časovým rozsahem, zdrojem dat i metodikou a jednu datovou řadu pro koncentrace O₂. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
-data-our:   "https://docs.google.com/spreadsheets/d/1hhIgo2eSQJit1-_wgw4lrbm2wNVJZyDvyXJYfkynMO8/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1MchlC6nce4bYfMZX29YW6P_9Zd_va-4IRyzSd7UIibI/edit?usp=sharing"
 data-orig:
   - [ "Keelingova křivka", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html" ] 
   - [ "Koncentrace CO₂", "https://scrippsco2.ucsd.edu/data/atmospheric_co2/icecore_merged_products.html" ]
