@@ -51,7 +51,7 @@ Ochlazující efekt aerosolů a efekt ostatních skleníkových plynů mimo CO<s
 
 ## Lineární, nebo logaritmická závislost?
 
-Teoreticky odvozený vztah mezi koncentrací CO<sub>2</sub> a teplotou není lineární, ale logaritmický. Co to přesně znamená? Z výpočtů i modelů vyplývá, že každé zdvojnásobení koncentrace by mělo způsobit nárůst teploty o stejnou hodnotu: přibližně o 3 °C. Zvýšení koncentrace z 300 na 600 ppm by tedy způsobilo globální oteplení o 3 °C, zvýšení na 1200 ppm o další 3 °C a zvýšení na 2400 ppm opět o 3 °C – dohromady o 12 °C. Tak vysoké koncentrace CO<sub>2</sub> byly na Zemi naposledy v prvohorách před 400 milióny lety[^2] a pro současný život by byly naprostou katastrofou. Kdybychom chtěli popsat oteplení ve velkém rozsahu koncentrací, museli bychom použít logaritmický vztah – pokud nás však zajímá rozsah koncentrací mezi 300 a 600 ppm, můžeme logaritmický vztah aproximovat lineárním.
+Teoreticky odvozený vztah mezi koncentrací CO<sub>2</sub> a teplotou není lineární, ale logaritmický. Co to přesně znamená? Z výpočtů i modelů vyplývá, že každé zdvojnásobení koncentrace by mělo způsobit nárůst teploty o stejnou hodnotu: přibližně o 3 °C. Zvýšení koncentrace z 300 na 600 ppm by tedy způsobilo globální oteplení o 3 °C, zvýšení na 1200 ppm o další 3 °C a zvýšení na 2400 ppm opět o 3 °C – dohromady o 9 °C. Tak vysoké koncentrace CO<sub>2</sub> byly na Zemi naposledy v prvohorách před 400 milióny lety[^2] a pro současný život by byly naprostou katastrofou. Kdybychom chtěli popsat oteplení ve velkém rozsahu koncentrací, museli bychom použít logaritmický vztah – pokud nás však zajímá rozsah koncentrací mezi 300 a 600 ppm, můžeme logaritmický vztah aproximovat lineárním.
 
 {% include figure.html
     name="lin-vs-log.svg"
