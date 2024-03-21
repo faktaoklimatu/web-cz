@@ -173,14 +173,18 @@
     name: "Kristýna Šimonová"
     summary: "Spolupracuje na materiálech týkajících se globálních úmluv v oblasti biodiverzity a zabývá se klimatickými ambicemi států východní Asie."
 
+  - id: "karolina-stollova"
+    name: "Karolína Štollová"
+    summary: "Zpracovala analýzy týkající se energetiky, například energetické soběstačnosti, obnovitelných zdrojů nebo cenové stability."
+
   - name: "Eliška Vlčková"
     summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
     linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
+
+  - name: "Martin crysman Zahradník"
+    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
 
   - id: "jakub-zamouril"
     name: "Jakub Zamouřil"
     summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
     linkedin: "https://www.linkedin.com/in/jakub-zamouril/"
-
-  - name: "Martin crysman Zahradník"
-    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
