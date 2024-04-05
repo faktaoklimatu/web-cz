@@ -7,7 +7,8 @@ published:  2024-04-05
 weight:     103
 tags-scopes: [ cr ]
 tags-topics: [ energetika ]
-caption:    "V Česku se téměř polovina elektřiny a tepla vyrábí z uhlí. Ale kde k této výrobě dochází?"
+caption:    "V Česku se téměř polovina elektřiny a tepla vyrábí z uhlí. Kde se
+nacházejí největší elektrárny a teplárny?"
 data-our:   "https://docs.google.com/spreadsheets/d/1XPbnn2fvfJDzGHX3Q6UiW3_rZNEXHk-mcXY8Z7p8m0s/edit"
 ---
 
