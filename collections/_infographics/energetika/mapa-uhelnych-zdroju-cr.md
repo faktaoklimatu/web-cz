@@ -1,8 +1,8 @@
 ---
 layout:     infographic
 title:      "Uhelné elektrárny a teplárny v Česku"
-slug:       "mapa-uhelek-cr"
-redirect_from: "/mapa-uhelek-cr"
+slug:       "mapa-uhelnych-zdroju-cr"
+redirect_from: "/mapa-uhelnych-zdroju-cr"
 published:  2024-04-05
 weight:     103
 tags-scopes: [ cr ]
