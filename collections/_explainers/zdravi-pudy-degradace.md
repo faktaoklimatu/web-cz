@@ -35,31 +35,31 @@ Půdu lze chápat jako samostatný ekosystém, který je však zároveň velmi �
 
 Neživou (minerální) složku půdy, která vzniká rozpadem matečné horniny na různě velké částice (jílovité, hlinité, písčité), promíchává a doplňuje voda a půdní vzduch (ten může mít často odlišné složení než vzduch, který dýcháme). Díky tomu vznikají podmínky pro život obrovského množství mikrobů, hub, vodních i suchozemských živočichů, od jejich nejmenších zástupců (např. želvušky nebo krytenky) až po tzv. půdní megafaunu (např. žížaly nebo mnohonožky). Když se postavíme do zdravého ekosystému, jako je třeba květnatá louka nebo lužní les, nachází se pod našima nohama zpravidla více půdních organismů, než kolik je lidí na celé planetě. Z hlediska rozmanitosti zastoupených druhů ([biodiverzity](/explainery/ubyvani-biodiverzityexplainery/umirani-ceskych-lesu)) najdeme v půdě více živočišných druhů, než kolik je druhů obratlovců v celé Evropě. Tento živý systém udržuje v chodu stovky milionů let starou "cirkulární ekonomiku", tedy koloběh zdrojů, potřebných jak pro samotný život v půdě, tak pro další ekosystémy na ni napojené (ať už jde o řepková pole nebo květnaté louky).
 
-Abychom lépe pochopili **cyklus živin** a důležitých stavebních prvků (např. uhlíku, dusíku, fosforu), který díky zdravé půdě v přírodě probíhá, představme si rostlinu, která čerpá z půdy potřebné látky, aby mohla pomocí fotosyntézy produkovat organickou hmotu pro budování svého těla. Ve chvíli, kdy taková rostlina nebo jeho část (např. květ po opylení) odumře a padne na zem, na povrchu půdy se začne hromadit nezpracovaná organická hmota. Tu využijí již zmíněné **půdní organismy**, které začnou organickou hmotu postupně požírat a energii z ní využívat pro sebe[^konzumenti-reducenti]. Během tohoto procesu dochází k rozpadu organické hmoty na jednodušší sloučeniny (tomuto procesu se říká mineralizace), které jsou pak v půdě opět k dispozici pro další růst rostlin.
+Abychom lépe pochopili **cyklus živin** a důležitých stavebních prvků (např. uhlíku, dusíku a fosforu), který díky zdravé půdě v přírodě probíhá, představme si rostlinu, která čerpá z půdy potřebné látky, aby mohla pomocí fotosyntézy produkovat organickou hmotu – tedy růst a rozvíjet se. Ve chvíli, kdy taková rostlina nebo její část (třeba květ po opylení) odumře a spadne na zem, začne se na povrchu půdy hromadit nezpracovaná organická hmota. Tu začnou zpracovávat již zmíněné **půdní organismy** – postupně ji požírají a energii z ní využívají pro sebe[^konzumenti-reducenti]. Během tohoto procesu, jemuž se říká **mineralizace**, dochází k rozpadu zmíněné organické hmoty na jednodušší sloučeniny. Ty jsou pak v půdě opět k dispozici pro další růst rostlin.
 
 {% include expander-figure.html
     name="složky-organické-hmoty"
     class="contrast-figure"
-    label="Kontext: Další složky půdní organické hmoty"
+    label="Více o dalších složkách půdní organické hmoty"
     content="
-Odumřelé části organismů však nejsou jedinými organickými složkami půdy. Rostliny ze svých kořenů vylučují tzv. kořenové exudáty. Exudáty fungují jako další forma energie pro půdní organismy (jde v podstatě o cukry), ale také jako jakýsi komunikační kanál mezi rostlinou a půdní faunou. Exudáty rostlina přitahuje organismy do okolí svých kořenů, které začnou kromě exudátů zpracovávat i ostatní organickou hmotu v okolní půdě a tak zpřístupní rostlině potřebné živiny.\\
-Mikroskopické houby, jejichž vlákna procházejí půdou na velké vzdálenosti, zase vylučují látky (např. glomalin), které se významně podílejí na budování půdních agregátů - fungují jako lepidlo.
+Odumřelé části organismů však nejsou jedinými organickými složkami půdy. Rostliny také ze svých kořenů vylučují tzv. kořenové exudáty, jež jsou pro půdní organismy dalším zdrojem energie (jde v podstatě o cukry), ale zároveň fungují i jako jakýsi komunikační kanál mezi rostlinou a půdní faunou. Pomocí exudátů rostlina přitahuje ke svým kořenům organismy, které začnou kromě exudátů zpracovávat i ostatní organickou hmotu v okolní půdě, a zpřístupní tak rostlině potřebné živiny.\\
+Jiné látky jsou zase vylučovány mikroskopickými houbami, jejichž vlákna procházejí půdou na velké vzdálenosti. Tyto látky (např. glomalin) se významně podílejí na budování půdních agregátů – fungují jako lepidlo, díky kterému půdní částice lépe drží pohromadě.
 "
 %}
 
-Tímto mechanickým a chemickým zpracováním odumřelé organické hmoty se půdní organismy podílejí nejen na **zpřístupnění živin pro rostliny**, ale také na budování **půdní struktury** - půdních agregátů. Agregáty si můžeme představit jako slepence organické hmoty, jílovitých částic a dalších materiálů. Struktura zdravé půdy je díky agregátům pórovitá a tedy lépe prostupná pro vzduch a kořeny rostlin, ale také pro vodu, čím pomáhá s **regulací množství vody v krajine**.
+Tímto mechanickým a chemickým zpracováním odumřelé organické hmoty se půdní organismy podílejí nejen na **zpřístupnění živin pro rostliny**, ale také na **vytváření půdní struktury** – tzv. půdních agregátů. Tyto agregáty si lze představit jako slepence organické hmoty, jílovitých částic a dalších materiálů. Půda je díky nim pórovitá a tedy lépe prostupná pro vzduch a kořeny rostlin, ale také pro vodu, čím pomáhá s **regulací množství vody v krajině**.
 
-Je-li odumřelé organické hmoty dostatek, půdní organismy ji nespotřebují všechnu, ale část zůstane v půdě jako tzv. **humus** – dlouhodobě uložená organická hmota, kterou si můžeme představit jako přírodní zásobárnu potravin na horší časy. Tímto způsobem půda navíc dlouhodobě ukládá uhlík v organické hmotě, což je výhodné pro zmírnění změny klimatu.
+Je-li odumřelé organické hmoty dostatek, půdní organismy ji nespotřebují všechnu, ale část zůstává v půdě jako tzv. **humus** – dlouhodobě uložená organická hmota, kterou si lze představit jako přírodní zásobárnu potravin na horší časy. Tímto způsobem půda navíc dlouhodobě ukládá uhlík v organické hmotě, což je výhodné pro zmírnění změny klimatu.
 
-**Shrňme si funkce, které zdravá půda zastává:**
+**Funkce zdravé půdy:**
 
-- Půda je důležitým mezistupněm v cirkulaci některých prvků (uhlík, dusík, fosfor)
-- Půda představuje životní prostor pro velké množství organizmů
-- Půda (a její vhodná struktura) sa podílí na regulaci vody v krajine
-- Půda funguje jako dlouhodobé úložiště uhlíku, čím se podílí na zmírňování změn klimatu
+- Důležitý mezistupeň v cirkulaci některých prvků (uhlík, dusík, fosfor)
+- Podmínky pro život velkého množství organismů
+- Podíl (díky porézní struktuře) na regulaci vody v krajině
+- Dlouhodobé úložiště uhlíku, a tedy podíl na zmírňování klimatické změny
 
-## Proč dochází k půdní degradaci a jak se projevuje?
-Výše popsaný stav půdy nicméně není samozřejmostí. Velká část zemědělské půdy v České republice je narušena různými formami degradace. Degradovaná půda ztrácí svou strukturu, život a organickou hmotu a není schopná dostatečně plnit produkční a ekosystémové funkce (což souvisí i s výrazným snižováním cen půdy). V České republice se nejčastěji setkáváme s těmito formami půdní degradace[^zasolovaní]:
+## Co je půdní degradace a proč k ní dochází?
+Významná část zemědělských půd v Česku je v nějaké formě degradovaná. To znamená, že půda ztrácí svou strukturu, vytrácí se z ní život a organická hmota, a půda tak není schopna dostatečně plnit produkční a ekosystémové funkce (to kromě jiného vede i k výraznému poklesu cen půdy). V Česku se lze nejčastěji setkat s těmito formami půdní degradace[^zasolovaní]:
 
 - **Ztráta organické hmoty** (dehumifikace)
 - **Eroze** (vodní a větrná)
@@ -115,9 +115,9 @@ Půda poskytuje nezastupitelné funkce jak v přírodních, tak i kulturních ek
 
 ## Poznámky a zdroje
 [^ritchie-2021]: Hannah Ritchie (2021) - “Do we only have 60 harvests left?” Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/soil-lifespans'
-[^dust-bowls]: Připomeňme si americké prašné bouře (Dust Bowl), které se objevily hlavně v 30. letech minulého století. Fenomén Dust Bowl byl způsobený dlouhodobým suchem a špatnou kvalitou půdy, která snadno podléhala větrné erozi. Společenské i přírodní důsledky těchto událostí popisuje například John Steinbeck ve své knize *Hrozny hněvu*.
-[^konzumenti-reducenti]:Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto menší fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
-[^zasolovaní]:Kromě uvedených forem degradace může také docházet k zasolení půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
+[^dust-bowls]: Za připomenutí zde stojí americké prašné bouře (Dust Bowls), které se objevily hlavně v 30. letech minulého století. Fenomén Dust Bowl byl způsoben dlouhodobým suchem a špatnou kvalitou půdy, která snadno podléhala větrné erozi. Společenské i přírodní důsledky těchto událostí popisuje například John Steinbeck ve svém románu *Hrozny hněvu*.
+[^konzumenti-reducenti]: Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto menší fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
+[^zasolovaní]: Kromě uvedených forem degradace může docházet také k zasolování půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
 [^rozloha]: **rozloha poli v ČR - dohľadaj**
 [^prumyslove-hnojiva]:V roce 2022 tvořila minerální hnojiva 61 % z celkového objemu živin, které byly dodány na pole. Zbývajících 39 % připadá na statková (hnoj, kejda) a organická hnojiva (zejména digestát z bioplynových stanic). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
 [^erozne-plodiny]:Mezi plodiny náchylné k erozi, resp. plodiny s nízkou ochrannou funkcí patří například kukuřice, řepa, brambory nebo slunečnice. Zdroj:[Eroze od roku 2019, MZ ČR](https://eagri.cz/public/portal/-q335361---cN3hJuYw/prirucka-pro-eroze) 
