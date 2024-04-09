@@ -18,7 +18,7 @@ caption:       "Fit for 55 je balíček legislativních návrhů Evropské komis
 
 [Fit for 55](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021DC0550), balíček legislativních návrhů, který podporuje **snížení emisí skleníkových plynů o 55 % do roku 2030 oproti roku 1990**, byl Evropskou komisí představen v červenci 2021. Balíček obsahuje jak návrhy upravující stávající směrnice či nařízení, tak úplně nové legislativní návrhy, přičemž se zaměřuje na oblasti, jako je obchodování s emisními povolenkami (EU ETS), uhlíkové vyrovnání na hranicích, energetiku a paliva či využívání půdy a lesnictví. V neposlední řadě pak přináší podpůrná opatření, jejichž cílem je učinit transformaci sociálně spravedlivější. Navrhovaná opatření by měla přinést nové příležitosti pro investice, inovace a tvorbu pracovních míst.[^fit-for-55]
 
-Některé legislativní návrhy balíčku byly již schváleny (např. reforma systému obchodování s emisními povolenkami) a vstoupily v platnost, přičemž jejich významná část byla dojednaná za **českého předsednictví Radě EU**,[^predsednictvi-eu] které probíhalo v druhé polovině roku 2022. Některé stále čeká jejich projednání v Evropském parlamentu a Radě Evropské unie, tedy s účastí ministrů vlád členských zemí a národních pracovních skupin. Očekává se, že by vyjednávání o finální podobě legislativy mohla trvat až do roku 2024.[^fit-for-55-q-a]
+Většina legislativních návrhů balíčku byla již schválena (např. reforma systému obchodování s emisními povolenkami) a vstoupila v platnost, přičemž jejich významná část byla dojednaná za **českého předsednictví Radě EU**[^predsednictvi-eu], které probíhalo v druhé polovině roku 2022. Některé stále čeká jejich projednání v Evropském parlamentu a Radě Evropské unie, tedy s účastí ministrů vlád členských zemí a národních pracovních skupin.[^fit-for-55-q-a]
 
 ## Kontext vzniku
 
@@ -76,22 +76,22 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 
 #### Energetika
 
-* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0557) (*Renewable Energy Directive*, RED)[^red] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
-* [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o obnovitelných zdrojích](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413) (*Renewable Energy Directive*, RED) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Revize o snižování emisí metanu v odvětví energetiky a o změně nařízení (EU) 2019/942](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021PC0805)[^metan] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 * [Revize nařízení o vnitřním trhu s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A804%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
-* [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o společných pravidlech pro vnitřní trh s plyny z obnovitelných zdrojů, se zemním plynem a s vodíkem](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2021%3A803%3AFIN)[^plyny-oze-spolecna-pravidla] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Energetická účinnost
 
-* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0558) (*Energy Efficiency Directive*, EED)[^eed] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
-* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023L1791) (*Energy Efficiency Directive*, EED) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD)[^epbd] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
 
 #### Doprava
 
 * [Přísnější emisní předpisy pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851) {% include includes-local/fit-for-55-icon.html status="done" %}
-* [Nová infrastruktura pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0559) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
-* [Iniciativa pro udržitelnější letecká paliva ReFuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0561) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
-* [Iniciativa pro čistší námořní paliva FuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A52021PC0562) {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Nová infrastruktura pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R1804) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Iniciativa pro udržitelnější letecká paliva ReFuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302405) {% include includes-local/fit-for-55-icon.html status="done" %}
+* [Iniciativa pro čistší námořní paliva FuelEU](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R1805) {% include includes-local/fit-for-55-icon.html status="done" %}
 
 #### Krajina a ekosystémy
 
@@ -107,17 +107,6 @@ Pro více informací o jednotlivých opatřeních přejděte na naši infografik
 
 ## Zdroje a poznámky
 
-### Na koho se dále obrátit
-
-Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zabývají:
-
-[Kateřina Davidová](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku\\
-[Štěpán Vizi](https://www.cde-org.cz/cs/kontakt), Centrum pro dopravu a energetiku\\
-[Michal Hrubý](https://www.isfc.org/en/team), International Sustainable Finance Centre\\
-[Tomáš Jungwirth](https://www.amo.cz/autor/tomas-jungwirth/), Asociace pro mezinárodní otázky
-
-### Zdroje
-
 [^fit-for-55]: [„Fit for 55": plnění klimatického cíle EU pro rok 2030 na cestě ke klimatické neutralitě](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=CELEX%3A52021DC0550)
 
 [^predsednictvi-eu]: [Předsednictví Česka Radě Evropské unie](https://www.eu2022.cz/)
@@ -130,6 +119,8 @@ Uvádíme některé z expertů a expertek, kteří se balíčkem Fit for 55 zab�
 
 [^reforma-eu-ets]: Následující opatření jsou součástí jedné směrnice: revize stávajícího systému EU ETS, jeho rozšíření na námořní dopravu, vznik nového systému EU ETS 2 pro silniční dopravu a budovy a posílení Modernizačního a Inovačního fondu.
 
-[^red]: V březnu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/30/council-and-parliament-reach-provisional-deal-on-renewable-energy-directive/) o podobě směrnice, přičemž se očekává, že by měla brzy vstoupit v platnost.
+[^epbd]: V prosinci 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://ec.europa.eu/commission/presscorner/detail/cs/ip_23_6423) o podobě směrnice.
 
-[^eed]: V březnu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/10/council-and-parliament-strike-deal-on-energy-efficiency-directive/) o podobě směrnice, přičemž se očekává, že by měla brzy vstoupit v platnost.
+[^metan]: V listopadu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/15/climate-action-council-and-parliament-reach-deal-on-new-rules-to-cut-methane-emissions-in-the-energy-sector/) o podobě směrnice.
+
+[^plyny-oze-spolecna-pravidla]: V listopadu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/28/internal-markets-in-renewable-and-natural-gases-and-in-hydrogen-council-and-parliament-reach-deal/) o podobě směrnice.
