@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Zdraví a degradace půdy"
+title:       "Co ovlivňuje zdraví půdy a proč půda degraduje?"
 slug:        "zdravi-pudy-degradace"
 published:   2024-03-27
 authors:
@@ -20,7 +20,7 @@ cover-source-text:        "Intenzivní zemědělství"
 cover-source-license:     "https://unsplash.com/license"
 cover-source-license-url: "https://creativecommons.org/licenses/by/2.0"
 cover-source-url:         "https://unsplash.com/photos/a-tractor-in-a-field-ocjO6ibpvFE"
-perex: Většina půdy České republiky je degradována, zneištěna, bez života. Ta stejná půda, ve které pěstujeme potraviny, které jíme, půda, která tvoří základ naší krajiny a také půda, která nám může pomoci v boji s klimatickou změnou. Co vše je s půdou špatně a proč by to mělo být jinak?
+perex: Většina půdy České republiky je degradována, znečištěna, bez života. Ta stejná půda, ve které pěstujeme potraviny, které jíme, půda, která tvoří základ naší krajiny a také půda, která nám může pomoci v boji s klimatickou změnou. Co vše je s půdou špatně a proč by to mělo být jinak?
 
 ---
 
@@ -77,10 +77,10 @@ Ztráta organické hmoty a s tím související pokles množství organismů v p
 {:.table}
 Příčiny    | Důsledky 
 ---------------------- | -----: 
-Aplikace syntetických hnojiv | Strata půdní diverzity  
+Aplikace syntetických hnojiv | Ztráta půdní biodiverzity  
 Nedostatek organické hmoty | Rozpad půdní struktury
 Orba | Vytváření závislosti na neustálém dodávání hnojiv
-Eroze | Uvoľňování CO2 do atmosféry 
+Eroze | Uvolňování CO<sub>2</sub>eq do atmosféry 
 
 {% include figure.html
     name="hole-pole.jpg"
@@ -97,9 +97,9 @@ Spolu s ornicí odnáší voda (nebo vítr) také organickou hmotu a živiny. To
 {:.table}
 Příčiny    | Důsledky 
 ---------------------- | -----: 
-Rozpadnutá půdní struktura | Strata ornice 
-Rozsáhlé lány polí | Strata organické hmoty
-Nedostatek protierozních prvků | Ztráta živin - potřeba neustálého hnojení
+Rozpadlá půdní struktura | Ztráta ornice 
+Rozsáhlé lány polí | Ztráta organické hmoty
+Nedostatek protierozních prvků | Ztráta živin – potřeba neustálého hnojení
 Nevhodné zemědělské postupy | Eutrofizace
 | Prach v ovzduší 
 
@@ -116,7 +116,7 @@ Příčiny    | Důsledky
 Intenzivní hnojení | Nevhodné půdní podmínky
 Monokulturní pěstování | Ztráta biodiverzity
 Kyselé deště | Nepřístupnost důležitých prvků
-Imise síry a dusíku | Zvýšená toxicity půdniho prostředí 
+Imise síry a dusíku | Zvýšená toxicity půdního prostředí 
 | Eutrofizace
 | Zhoršení půdní struktury 
 
@@ -130,7 +130,7 @@ Utužená půda se stává kompaktnější a ztrácí svou pórovitost. Nedoká�
 Příčiny    | Důsledky 
 ---------------------- | -----: 
 Těžká technika | Rozpad půdní struktury 
-Rozpadnutá půdní struktura | Strata pórovitosti a propustnosti
+Rozpadlá půdní struktura | Ztráta pórovitosti a propustnosti
 Vysoká půdní vlhkost | Omezení rozkladu organické hmoty
 | Zvýšené riziko vodní eroze 
 
@@ -147,7 +147,7 @@ Příčiny    | Důsledky
 Imise průmyslu a dopravy | Narušení funkcí půdy
 Havárie | Kontaminace vod
 Skládky odpadu | Ohrožení zdraví organizmů (včetně lidí)
-Banská činost |
+Těžební činnost |
 Agrochemikálie |
 Zpřístupňování toxických prvků při acidifikaci |
 
@@ -158,28 +158,28 @@ Podíl zastavěné plochy v Česku dlouhodobě roste[^zastavba-rust] (za posledn
 {:.table}
 Příčiny    | Důsledky 
 ---------------------- | -----: 
-Rozšiřování obytních oblasti a souvisejíci infrastruktury | Úplná ztráta půdních funkcí 
+Rozšiřování obytných oblastí a související infrastruktury | Úplná ztráta půdních funkcí 
 
 
 ## Poznámky a zdroje
 [^ritchie-2021]: Hannah Ritchie (2021) - “Do we only have 60 harvests left?” Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/soil-lifespans'
 [^dust-bowls]: Za připomenutí zde stojí americké prašné bouře (Dust Bowls), které se objevily hlavně v 30. letech minulého století. Fenomén Dust Bowl byl způsoben dlouhodobým suchem a špatnou kvalitou půdy, která snadno podléhala větrné erozi. Společenské i přírodní důsledky těchto událostí popisuje například John Steinbeck ve svém románu *Hrozny hněvu*.
-[^konzumenti-reducenti]: Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto menší fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
+[^konzumenti-reducenti]: Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
 [^zasolovaní]: Kromě uvedených forem degradace může docházet také k zasolování půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
 [^rozloha]: Česká republika patří mezi evropské státy s největší rozlohou polí. Zdroj: [Farms and Farmland in the European Union](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/73319.pdf)
 [^global-carbon-budget]: Friedlingstein, P. et al., 2020. “Global Carbon Budget 2020”. Earth System Science Data 12(4):3269–3340. doi: [10.5194/essd-12-3269-2020](https://essd.copernicus.org/articles/12/3269/2020/).
-[^pom-maom]:Štúdia od Lavallee a kol. (2019) delí půdní organickou hmotu (jejíž podstatnou složkou je právě uhlík) na *organickou hmotu ve formě pevných organických částic* (particulate organic matter, POM) a na *organické částice vázané na minerály* (mineral-associated organic matter, MAOM). Tyto dvě formy organické hmoty se liší svými vlastnostmi, přičemž nejzásadnejší je poločas rozpadu a možnost nasycení. POM sa v půdě ukládá na krátkou dobu, kapacita půdy na ukládání je v podstatě nekonečná. MAOM se ukládá na dlouhá období (stovky let), no půda má jen omezenou kapacitu na ukládaní této formy organické hmoty (táto kapacita je dána množstvým dostupných chemických vazeb).
+[^pom-maom]:Štúdia od Lavallee a kol. (2019) dělí půdní organickou hmotu (jejíž podstatnou složkou je právě uhlík) na *organickou hmotu ve formě pevných organických částic* (particulate organic matter, POM) a na *organické částice vázané na minerály* (mineral-associated organic matter, MAOM). Tyto dvě formy organické hmoty se liší svými vlastnostmi, přičemž nejzásadnější je poločas rozpadu a možnost nasycení. POM sa v půdě ukládá na krátkou dobu, kapacita půdy na ukládání je v podstatě nekonečná. MAOM se ukládá na dlouhá období (stovky let), nicméně půda má jen omezenou kapacitu na ukládaní této formy organické hmoty (tato kapacita je dána množstvím dostupných chemických vazeb).
 [^prumyslove-hnojiva]: V roce 2022 tvořila minerální hnojiva 61 % z celkového objemu živin, které byly dodány na pole. Zbývajících 39 % připadá na hnojiva statková (hnoj, kejda) a organická hnojiva (zejména digestát z bioplynových stanic). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
 [^erozne-plodiny]: Mezi plodiny málo chránící půdu proti erozi patří například kukuřice, řepa, brambory nebo slunečnice. Zdroj: [Eroze od roku 2019, MZ ČR](https://eagri.cz/public/portal/-q335361---cN3hJuYw/prirucka-pro-eroze) 
 [^goulding-2016]: Goulding, K. W. T. 2016. “Soil Acidification and the Importance of Liming Agricultural Soils with Particular Reference to the United Kingdom”. Soil Use and Management 32(3):390–99. doi: 10.1111/sum.12270.
 [^dusikata-hnojiva]: Dusíkatá hnojiva jsou v ČR nejvíce využívaným typem syntetických hnojiv. Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
-[^eutrofizace]: Obohacování vod o živiny se nazývá eutrofizace. Zvýšené množství živin ve vodě může vést k přemnožení řas a sinic a vytvoření tzv. vodního květu. Přemnožení řas a sinic vede k nedostatku kyslíku ve vdoním prostředí a umírání ryb. 
-[^vapneni]: K vyrovnání pH půdy se využívá vápnění např. vápencem nebo dolomitem, které se však postupně rozpadají (mimo jiné) na vodu a oxid uhličitý. Vápnení tedy přispívá k uvolňování emisí skleníkových plynů: Zdroj: Kunhikrishnan, A., R. Thangarajan, N. S. Bolan, Y. Xu, S. Mandal, D. B. Gleeson, B. Seshadri, M. Zaman, L. Barton, C. Tang, J. Luo, R. Dalal, W. Ding, M. B. Kirkham, a R. Naidu. 2016. “Chapter One - Functional Relationships of Soil Acidification, Liming, and Greenhouse Gas Flux”. Str. 1–71 v Advances in Agronomy. Roč. 139, Advances in Agronomy, sestavil D. L. Sparks. Academic Press.
+[^eutrofizace]: Obohacování vod o živiny se nazývá eutrofizace. Zvýšené množství živin ve vodě může vést k přemnožení řas a sinic a vytvoření tzv. vodního květu. Přemnožení řas a sinic vede k nedostatku kyslíku ve vodním prostředí a umírání ryb. 
+[^vapneni]: K vyrovnání pH půdy se využívá vápnění např. vápencem nebo dolomitem, které se však postupně rozpadají (mimo jiné) na vodu a oxid uhličitý. Vápnění tedy přispívá k uvolňování emisí skleníkových plynů: Zdroj: Kunhikrishnan, A., R. Thangarajan, N. S. Bolan, Y. Xu, S. Mandal, D. B. Gleeson, B. Seshadri, M. Zaman, L. Barton, C. Tang, J. Luo, R. Dalal, W. Ding, M. B. Kirkham, a R. Naidu. 2016. “Chapter One – Functional Relationships of Soil Acidification, Liming, and Greenhouse Gas Flux”. Str. 1–71 v Advances in Agronomy. Roč. 139, Advances in Agronomy, sestavil D. L. Sparks. Academic Press.
 [^nawaz-2013]: Nawaz, Muhammad Farrakh, Guilhem Bourrié, a Fabienne Trolard. 2013. “Soil Compaction Impact and Modelling. A Review”. Agronomy for Sustainable Development 33(2):291–309. doi: [10.1007/s13593-011-0071-8](https://link.springer.com/article/10.1007/s13593-011-0071-8)
 [^BMP]: Tzv. bazální monitorování půd (BMP), při kterém jsou pravidelně sledována množství anorganických polutantů (např. arsen, kadmium, nikl, olovo nebo zinek) a perzistentních organických polutantů (např. polycyklické aromatické uhlovodíky nebo organochlorované pesticidy). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
 [^carson]: S DDT si mnozí spojují knihu *Mlčící jaro* od Rachel Carsonové (vyd. 1962), v níž autorka upozorňuje na negativní dopady intenzivního využívání pesticidů na stabilitu přírodních ekosystémů.
 [^preventivni-limity]: Preventivní hodnoty představují limity množství rizikových prvků a látek, pod kterými nedochází k narušení funkcí půdy. [Vyhláška č. 153/2016 Sb.](https://www.zakonyprolidi.cz/cs/2016-153)
-[^bioakumulace]:Některé látky (např. těžké kovy jako olovo, kadmium nebo arsen) mají schopnost bioakumulace – hromadění v tělech organizmů. Koncentrace bioakumulativních látek jsou obvykle nejvyšší v tělech organizmů na vrcholu potravního řetězce, kam patrí i člověk. 
+[^bioakumulace]: Některé látky (např. těžké kovy jako olovo, kadmium nebo arsen) mají schopnost bioakumulace – hromadí se v tělech organismů. Koncentrace bioakumulativních látek jsou obvykle nejvyšší u organismů na vrcholu potravního řetězce, mezi něž patří i člověk. 
 [^islam-2020]: Islam, Md. Didarul, M. Mehedi Hasan, Ashiqur Rahaman, Papia Haque, Md. Sazedul Islam, a Mohammed Mizanur Rahman. 2020. “Translocation and Bioaccumulation of Trace Metals from Industrial Effluent to Locally Grown Vegetables and Assessment of Human Health Risk in Bangladesh”. SN Applied Sciences 2(8):1315. doi: [10.1007/s42452-020-3123-3](https://link.springer.com/article/10.1007/s42452-020-3123-3).
 [^zastavba-rust]: Zdroj: [Our World in Data](https://ourworldindata.org/grapher/land-use-over-the-long-term?stackMode=relative&country=~CZE)
 [^nejkvalitnejsi-pudy]: Zdroj: Ministerstvo zemědělství ČR. [Situační a výhledová zpráva: Půda](https://eagri.cz/public/portal/-q342039---OEFwN1E5/situacni-a-vyhledova-zprava-puda-2021)
