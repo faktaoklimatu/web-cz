@@ -115,7 +115,7 @@ Následující kapitola blíže představuje **vybrané návrhy[^vycet] Zelené 
     alt="Piktogram větrné elektrárny a solárního panelu na budově"
 %}
 
-Výroba elektřiny a tepla se v roce 2022 podílela na přibližně 20 % emisí skleníkových plynů Unie.[^eurostat] Emise zde vznikají především spalováním fosilních paliv (zejm. uhlí a zemní plyn).
+Výroba elektřiny a tepla se v roce 2021 podílela na přibližně 20 % emisí skleníkových plynů Unie.[^eurostat] Emise zde vznikají především spalováním fosilních paliv (zejm. uhlí a zemního plynu).
 
 Aby došlo k jejich poklesu, je potřeba tato fosilní paliva postupně nahradit **obnovitelnými zdroji energie** (OZE) – především větrnými elektrárnami na pevnině i moři a solárními panely – a investovat do **energetické účinnosti a úspor**. Budoucnost evropské energetiky je důležité vnímat jako společný podnik: zásadní bude posílení přeshraniční infrastruktury a spolupráce (aby například větrné elektrárny v Baltském moři mohly dodávat elektřinu i do vnitrozemských států jako ČR). Transformace energetiky však nemá jen technologický rozměr, má i rozměr spotřebitelský, potažmo sociální. Proto Zelená dohoda vyzdvihuje význam zapojení spotřebitelů do energetické transformace, tedy **komunitní energetiku** a **podporu obyvatel ohrožených energetickou chudobou**.
 
@@ -146,7 +146,7 @@ Na úrovni jednotlivých států EU jsou **klíčovými dokumenty** tzv. [národ
     alt="Piktogram tramvaje, kola a nabíjecí stanice"
 %}
 
-Doprava je druhým nejvíce emisně náročným sektorem v EU, v roce 2022 se podílela na 24 % emisí.[^eurostat] Na rozdíl od všech ostatních sektorů hospodářství emise z dopravy [stále rostou](/infografiky/emise-eu-vyvoj) – v roce 2019 byly o 33 % vyšší než v roce 1990. Vznikají spalováním fosilních paliv, především ropy, v motorech silničních dopravních prostředků (v roce 2019 to bylo 81 %, zatímco letecká doprava tvořila 15 %).
+Doprava je druhým nejvíce emisně náročným sektorem v EU, v roce 2021 se podílela na 24 % emisí.[^eurostat] Na rozdíl od všech ostatních sektorů hospodářství emise z dopravy [stále rostou](/infografiky/emise-eu-vyvoj) – v roce 2021 byly o 18 % vyšší než v roce 1990. Vznikají spalováním fosilních paliv, především ropy, v motorech silničních dopravních prostředků (v roce 2021 to bylo 88 %, zatímco letecká doprava tvořila 9 %).
 
 Podle Zelené dohody je důležité, aby cena dopravy odrážela nejen cenu nákladů, ale i **její dopady na životní prostředí a zdraví**. Jak tyto dopady snížit? Většinou se v této souvislosti mluví hlavně o nahrazení spalovacích motorů elektrickými a o rozvoji syntetických paliv tam, kde elektrifikace zatím není variantou (např. u leteckých paliv). Významnou roli bude hrát i snížení celkové dopravní zátěže, rozvoj hromadné dopravy a cyklistiky.
 
@@ -174,7 +174,7 @@ Podobně jako silniční doprava bude i sektor budov zahrnut do **systému obcho
     alt="Piktogram ozubených kol a šipek v kruhu"
 %}
 
-Průmysl se v roce 2022 podílel na unijních emisích skleníkových plynů přibližně 27 %. Emise zde vznikají jednak spalováním fosilních paliv při procesech zahřívání, jednak v chemických reakcích při výrobě cementu, železa a oceli. Průmysl navíc nezatěžuje životní prostředí pouze skleníkovými plyny, ale i těžbou a zpracováním přírodních materiálů. To představuje další zátěž pro ekosystémy a je jednou z příčin ztráty biodiverzity. Místa s intenzivní těžbou se také často potýkají s nedostatkem vody.
+Průmysl se v roce 2021 podílel na unijních emisích skleníkových plynů přibližně 27 %. Emise zde vznikají jednak spalováním fosilních paliv při procesech zahřívání, jednak v chemických reakcích při výrobě cementu, železa a oceli. Průmysl navíc nezatěžuje životní prostředí pouze skleníkovými plyny, ale i těžbou a zpracováním přírodních materiálů. To představuje další zátěž pro ekosystémy a je jednou z příčin ztráty biodiverzity. Místa s intenzivní těžbou se také často potýkají s nedostatkem vody.
 
 Klíčovými díly skládačky dekarbonizace průmyslu jsou **rozvoj zeleného vodíku, technologií na zachytávání a ukládání uhlíku** (*Carbon Capture and Storage*, CCS) nebo **alternativních paliv**. Využitím zeleného vodíku[^vodik-vysvetleni] je možné nahradit spalování fosilních paliv. Naopak dekarbonizace chemických procesů při výrobě železa a oceli, cementu nebo v chemickém průmyslu pravděpodobně nebude možná bez využití technologií na zachytávání a ukládání uhlíku. Dekarbonizaci průmyslu napomůže i podpora **oběhového hospodářství**, tedy snížení objemu odpadu, znovupoužitelnost materiálů i produktů a jejich recyklace (což se někdy shrnuje anglickým heslem *reduce, reuse, recycle*). V praxi to znamená například konec jednorázových plastů, odpovědnost firem, aby nabízely odolné a opravitelné produkty, nebo udržitelnost a recyklovatelnost baterií používaných nejen v elektromobilech.[^akcni-plan]
 
@@ -203,7 +203,7 @@ S dekarbonizací průmyslu úzce souvisí i otázky spojené se surovinami či v
     alt="Piktogram zeleniny"
 %}
 
-Zemědělství se v roce 2022 podílelo na celkových emisích skleníkových plynů v EU z 13 %.[^eurostat] Emise zde vznikají především při chovu dobytka (emise metanu) a při obdělávání zemědělské půdy (uvolňování oxidu dusného).
+Zemědělství se v roce 2021 podílelo na celkových emisích skleníkových plynů v EU z 13 %.[^eurostat] Emise zde vznikají především při chovu dobytka (emise metanu) a při obdělávání zemědělské půdy (uvolňování oxidu dusného).
 
 Řešením je rozvoj udržitelného zemědělství, které podpoří **zachytávání uhlíku v půdě** a bude využívat **více přírodě blízkých postupů** (precizní zemědělství oproti plošnému, agrolesnictví, omezení chemických hnojiv a pesticidů a další). Přírodě bližší zemědělství je současně zásadní i pro **produkci zdravých, výživných a finančně dostupných potravin**.
 
