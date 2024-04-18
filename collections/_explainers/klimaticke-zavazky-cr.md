@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Jaké jsou závazky Česka v oblasti klimatu?"
 slug:        "klimaticke-zavazky-cr"
 published:   2023-08-17
+updated:     2024-04-18
 authors:
   - id: "katerina-kolouchova"
   - id: "jirka-lnenicka"
@@ -68,11 +69,11 @@ Níže jsou shrnuty závazky Česka v jednotlivých oblastech, a to v kontextu c
 
 {% include figure.html
     name="graf-celkove-emise.svg"
-    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR mezi lety 1990–2021. V roce 2021 byly emise skleníkových plynů o 41 % nižší než v roce 1990."
+    alt="Liniový graf ukazující vývoj emisí skleníkových plynů v ČR mezi lety 1990–2021. V roce 2021 byly emise skleníkových plynů o 34 % nižší než v roce 1990."
     source="Fakta o klimatu"
 %}
 
-Zatímco EU přijala závazek dosáhnout do roku 2030 snížení emisí skleníkových plynů o 55 %[^zavazek-2030] v porovnání s rokem 1990, **Česko** v [Politice ochrany klimatu](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017) z roku 2017 deklaruje závazek snížit do roku 2030 své emise o 44 mil. tun CO<sub>2</sub>eq.[^emisni-zavazek-cr] Přepočteme-li toto číslo relativně vzhledem k roku 1990, jde o **pokles ve výši 47 %** (tedy nikoli 55 % jako v EU). **Do roku 2021 snížilo Česko své emise o 41 %**, k největšímu snížení však došlo vlivem ukončení provozu části těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají.
+Podle [návrhu](https://www.mzp.cz/cz/news_20240206_MZP-aktualizovalo-Politiku-ochrany-klimatu-v-CR-Do-roku-2030-budeme-ziskavat-tretinu-energie-z-obnovitelnych-zdroju-a-spotrebu-snizime-o-petinu) aktualizace Politiky ochrany klimatu z jara 2024 **deklaruje Česko závazek snížit do roku 2030 své emise o 55 %** v porovnání s rokem 1990.[^emisni-zavazek-cr] Stejný závazek si již dříve vytyčila i EU.[^zavazek-2030] **Do roku 2021 snížilo Česko své emise o 34 %**, k největšímu snížení však došlo vlivem ukončení provozu části těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají. Vliv má i kůrovcová kalamita, kvůli které se české lesy staly čistým emitentem CO<sub>2</sub>.
 
 ### Snížení emisí v nejvíce znečišťujících sektorech (EU ETS)
 
@@ -112,7 +113,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
     source="Fakta o klimatu"
 %}
 
-**Podíl obnovitelných zdrojů na konečné spotřebě energie si stanovuje Česko samo** v rámci NECP. Zároveň by však mělo přispívat ke společnému unijnímu cíli ve výši 42,5% podílu v roce 2030.[^red] Jak už bylo zmíněno výše, [NECP](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/) aktuálně prochází revizí, proto lze dosavadní cíl ve výši 22 % považovat za spíše zastaralý. Nový cíl nicméně zatím není znám.[^necp-revize]
+**Podíl obnovitelných zdrojů na konečné spotřebě energie si stanovuje Česko samo** v rámci NECP. Zároveň by však mělo přispívat ke společnému unijnímu cíli ve výši 42,5% podílu v roce 2030.[^red] Jak už bylo zmíněno výše, NECP aktuálně prochází revizí. [Prozatímní návrh](https://www.mpo.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2023/10/Aktualizace_NKEP_10_2023_final.pdf) počítá s cílem ve výši 30 %.
 
 ### Zvýšení energetické účinnosti (= snížení spotřeby energie)
 
@@ -122,7 +123,7 @@ Pokles emisí skleníkových plynů, které nespadají pod sektory obsažené v 
     source="Fakta o klimatu"
 %}
 
-Stejně jako u podílu obnovitelných zdrojů si i v případě energetické účinnosti (tedy snížení spotřeby energie) **stanovuje Česko závazek v NECP**. Protože tento dokument právě prochází revizí, současný cíl už není aktuální. [Stávající NECP](https://www.mpo.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--252016/) obsahuje závazek snížit konečnou spotřebu energie na 990 petajoulů (275 TWh) v roce 2030. V roce 2021 dosahovala spotřeba v Česku hodnoty 1 064 petajoulů (295,6 TWh).[^eed]
+Stejně jako u podílu obnovitelných zdrojů si i v případě energetické účinnosti (tedy snížení spotřeby energie) **stanovuje Česko závazek v NECP**. [Prozatímní návrh](https://www.mpo.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2023/10/Aktualizace_NKEP_10_2023_final.pdf) obsahuje závazek snížit konečnou spotřebu energie na 846 petajoulů (235 TWh) v roce 2030. V roce 2021 dosahovala spotřeba v Česku hodnoty 1 064 petajoulů (295,6 TWh).[^eed]
 
 ### Zvýšení pohlcení skleníkových plynů v sektoru využití půdy a lesnictví (LULUCF)
 
@@ -160,20 +161,19 @@ Na odkazu níže si můžete stáhnout přehled klimatických závazků Česka j
 
 ## Dataset
 
-Všechna data použitá pro znázornění vývoje indikátorů jednotlivých závazků obsahuje náš [dataset](https://docs.google.com/spreadsheets/d/1Nkq-Td5-U-KKbbM--JcP7nHpx9E-2OJUAXIiMy0vZXo/edit?usp=sharing). Pro některé indikátory (např. pro EU ETS 2 nebo pro emise mimo EU ETS – Nařízení o sdílení úsilí) nejsou k dispozici oficiální data, a tak jsme tyto grafy založili na vlastních výpočtech na základě dostupných dat a znění příslušných směrnic a nařízení.
+Všechna data použitá pro znázornění vývoje indikátorů jednotlivých závazků obsahuje náš [dataset](https://docs.google.com/spreadsheets/d/1w-dK_rgEbnDPgaP6FLA4BWRnw4PAl8B69y__75-4DBg/edit?usp=sharing). Pro některé indikátory (např. pro EU ETS 2 nebo pro emise mimo EU ETS – Nařízení o sdílení úsilí) nejsou k dispozici oficiální data, a tak jsme tyto grafy založili na vlastních výpočtech na základě dostupných dat a znění příslušných směrnic a nařízení.
 
 ## Poznámky
 
 [^kjotsky-protokol]: V roce 1997 byl přijat, v platnost vstoupil až v roce 2005.
 [^klimaticke-zakony]: Zasazení klimatických závazků do legislativy umožňuje jejich větší vymahatelnost a ukládá aktérům (veřejné i soukromé sféře) povinnost tyto závazky plnit. Klimatické ambice a opatření se tak zároveň stávají odolnějšími vůči potenciálně nepříznivé politické nebo ekonomické situaci. V současnosti má v EU svůj vlastní klimatický zákon celkem 16 států.
 [^zavazek-2030]: Závazek snížit na úrovni EU emise skleníkových plynů v roce 2030 o 55 % (v porovnání s rokem 1990) právně upravuje [Evropský klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119). Tím se tento cíl, stejně jako dosažení klimatické neutrality v roce 2050, stává právně závazným.
-[^emisni-zavazek-cr]: Jde o emise skleníkových plynů ze všech sektorů hospodářství mimo emise ze sektoru využití půdy, změn ve využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF).
+[^emisni-zavazek-cr]: Jde o emise skleníkových plynů ze všech sektorů hospodářství včetně emisí ze sektoru využití půdy, změn ve využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF) a mezinárodní letecké dopravy.
 [^ets-smernice]: Cíl upravuje [směrnice EU o obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
 [^namorni-doprava]: Námořní doprava bude do EU ETS zařazena mezi lety 2024–2026.
 [^eu-ets-2-vypocet]: Výpočet emisí skleníkových plynů, které spadají pod sektory silniční dopravy a budov a od roku 2027 budou součástí EU ETS 2, vychází z metodologie obsažené ve [směrnici EU o obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) v Příloze III.
-[^red]: Závazek 42,5 % je výsledkem prozatímní dohody mezi Evropskou komisí, Parlamentem a Radou z března 2023 o [podobě směrnice o obnovitelných zdrojích energie](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/30/council-and-parliament-reach-provisional-deal-on-renewable-energy-directive/). Očekává se, že by směrnice brzy měla vstoupit v platnost.
-[^necp-revize]: Návrh revidovaného NECP by měla vláda předložit Evropské komisi v září 2023.
-[^eed]: Společný závazek EU je založen na jiné metrice, než je stávající závazek ČR, proto jej v textu pro porovnání neuvádíme. Podle prozatímní [dohody na podobě směrnice o energetické účinnosti](https://www.consilium.europa.eu/cs/press/press-releases/2023/03/10/council-and-parliament-strike-deal-on-energy-efficiency-directive/) má v EU dosáhnout konečná spotřeba energie v roce 2030 o 11,7 % nižší hodnoty, než ji modeluje [referenční scénář Evropské komise z roku 2020](https://energy.ec.europa.eu/data-and-analysis/energy-modelling/eu-reference-scenario-2020_en).
+[^red]: Závazek 42,5 % vychází ze [směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413).
+[^eed]: Společný závazek EU je založen na jiné metrice, než je stávající závazek ČR, proto jej v textu pro porovnání neuvádíme. Podle [směrnice o energetické účinnosti má](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023L1791) v EU dosáhnout konečná spotřeba energie v roce 2030 o 11,7 % nižší hodnoty, než ji modeluje [referenční scénář Evropské komise z roku 2020](https://energy.ec.europa.eu/data-and-analysis/energy-modelling/eu-reference-scenario-2020_en).
 [^lulucf-zavazek]: Závazky v sektoru LULUCF pro jednotlivé členské státy stanovuje [nařízení EU o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839).
 [^co2-vozidla]: Závazek upravuje [nařízení EU o přísnějších emisních předpisech pro osobní automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851).
 [^vozidla-emise-data]: Data o emisích nově registrovaných [osobních automobilů](https://www.eea.europa.eu/en/datahub/datahubitem-view/fa8b1229-3db6-495d-b18e-9c9b3267c02b) a [dodávek](https://www.eea.europa.eu/en/datahub/datahubitem-view/9636827c-bd0c-40f5-814e-c4065c11c9a0) sbírá Evropská agentura pro životní prostředí (*European Environmental Agency*, EEA).
