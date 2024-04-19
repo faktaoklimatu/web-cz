@@ -4,13 +4,16 @@ title:       "Co ovlivňuje zdraví půdy a proč půda degraduje?"
 slug:        "zdravi-pudy-degradace"
 published:   2024-03-27
 authors:
-  - ids: ["andy-snovakova"]
+  - ids: ["andy-snovakova", "petr-holik"]
   - id: "jirka-lnenicka"
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-  - name: "doplním"
-    affiliation: doplním
+  - name: "Karel Klem"
+    affiliation: Czech Globe
+    minor-role: "konzultace"
+  - name: "Ladislav Miko"
+    affiliation: MŽP
     minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
@@ -34,7 +37,7 @@ Zdravá půda má **nezastupitelný význam** v přírodních (např. les nebo l
 - Poskytuje podmínky pro život velkého množství nejrůznějších organismů
 - Je důležitým mezistupněm v cirkulaci některých prvků (uhlík, dusík, fosfor)
 - Je zásadní pro zadržování vody v krajině (díky své porézní struktuře)
-- Je dlouhodobým úložiště uhlíku a přispívá tak významně i ke zmírňování klimatické změny
+- Je dlouhodobým úložištěm uhlíku a přispívá tak významně i ke zmírňování klimatické změny
 
 
 Půdu lze chápat jako samostatný ekosystém, který je však zároveň velmi úzce propojen se všemi ostatními suchozemskými ekosystémy. Nejde jen o neživou materii, jak by se mohlo na první pohled zdát. Ve skutečnosti je půda **živý komplex** mnoha různých vztahů, funkcí a procesů. Jak vlastně celý tento systém vzniká a funguje?
@@ -55,10 +58,10 @@ Jiné látky jsou zase vylučovány mikroskopickými houbami, jejichž vlákna p
 
 Tímto mechanickým a chemickým zpracováním odumřelé organické hmoty se půdní organismy podílejí nejen na **zpřístupnění živin pro rostliny**, ale také na **vytváření půdní struktury** – tzv. půdních agregátů. Tyto agregáty si lze představit jako slepence organické hmoty, jílovitých částic a dalších materiálů. Půda je díky nim pórovitá a tedy lépe prostupná pro vzduch a kořeny rostlin, ale také pro vodu, čímž pomáhá s **regulací množství vody v krajině**.
 
-Je-li odumřelé organické hmoty dostatek, půdní organismy ji nespotřebují všechnu, ale část zůstává v půdě jako tzv. **humus** – dlouhodobě uložená organická hmota. Ta slouží jednak jako zásobárna potravin "na horší časy" a jednak je významným **dlouhodobým úložištěm uhlíku** – celosvětově je v půdě uloženo více uhlíku než v atmosféře a vegetaci dohromady[^global-carbon-budget]. Kapacita půdy pro dlouhodobé ukládání uhlíku sice není nevyčerpatelná, ale v současnosti není ani zdaleka naplněna[^pom-maom]. Při správném hospodaření, které vede ke zvyšování množství organické hmoty, tak může půda hrát velmi důležitou roli ve zmírňování změny klimatu.
+Je-li odumřelé organické hmoty dostatek, půdní organismy ji nespotřebují všechnu, ale část zůstává v půdě dlouhodobě uložená (navázána např. na jílovité částice)[^humus]. Ta slouží jednak jako zásobárna potravin "na horší časy" a jednak je významným **dlouhodobým úložištěm uhlíku** – celosvětově je v půdě uloženo více uhlíku než v atmosféře a vegetaci dohromady[^global-carbon-budget]. Kapacita půdy pro dlouhodobé ukládání uhlíku sice není nevyčerpatelná, ale v současnosti není ani zdaleka naplněna[^pom-maom]. Při správném hospodaření, které vede ke zvyšování množství organické hmoty, tak může půda hrát velmi důležitou roli ve zmírňování změny klimatu.
 
 ## Co je půdní degradace a proč k ní dochází?
-Významná část zemědělských půd v Česku je více či méně degradovaná. To znamená, že tyto půdy postupně ztrácejí svou strukturu, vytrácí se z nich život a organická hmota, a v důsledku toho nejsou schopny dostatečně plnit své produkční a ekosystémové funkce (což mimo jiné vede i k výraznému poklesu cen půdy). V Česku se lze nejčastěji setkat s těmito formami půdní degradace[^zasolovani]:
+Významná část zemědělských půd v Česku je více či méně degradovaná. To znamená, že tyto půdy postupně ztrácejí svou strukturu, vytrácí se z nich půdní biodiverzita a organická hmota, a v důsledku toho nejsou schopny dostatečně plnit své produkční a ekosystémové funkce (což mimo jiné vede i k výraznému poklesu cen půdy). V Česku se lze nejčastěji setkat s těmito formami půdní degradace[^zasolovani]:
 
 - **Ztráta organické hmoty** (dehumifikace)
 - **Vodní a větrná eroze**
@@ -160,6 +163,8 @@ Příčiny    | Důsledky
 ---------------------- | -----: 
 Rozšiřování obytných oblastí a související infrastruktury | Úplná ztráta půdních funkcí 
 
+## Závěr
+Jak na mnohých príkladech ukazuje výše uvedený text, na degradaci půdy se do velké míry podílejí praktiky intenzivního zemědělství. Na zlepšení stavu půd v České republice je potřebné změnit způsob, jak s půdou a krajinou zacházíme. Je potřebné půdu obohacovat o organickou hmotu a podporovat půdní biodiverzitu, využívat šetrnejší způsoby obrábání půdy, zavádět různé krajinné prvky, omezovat monokultury a také množství syntetických hnojiv a pesticídů.
 
 ## Poznámky a zdroje
 [^ritchie-2021]: Hannah Ritchie (2021) – “Do we only have 60 harvests left?” Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/soil-lifespans'
@@ -167,6 +172,7 @@ Rozšiřování obytných oblastí a související infrastruktury | Úplná ztr�
 [^konzumenti-reducenti]: Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
 [^zasolovani]: Kromě uvedených forem degradace může docházet také k zasolování půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
 [^rozloha]: Česká republika patří mezi evropské státy s největší rozlohou nerozdělených polí (lánů). Zdroj: [Farms and Farmland in the European Union](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/73319.pdf)
+[^humus]: Okrganické hmotě v půdě se obvykle říká humus. Od tohto termínu se však kvůli jeho nejednoznačnosti a náročné definovatelnosti postupně ustupuje. Často se uvádí, že humus tvoří stabilná a dlouhodobě uložená organická hmota, co však nemusí být vždy pravda. Ve skutečnosti může jít o dlouhodobě i krátkodobě uloženou organickú hmotu v různích poměrech. 
 [^global-carbon-budget]: Friedlingstein, P. et al., 2020. “Global Carbon Budget 2020”. Earth System Science Data 12(4):3269–3340. doi: [10.5194/essd-12-3269-2020](https://essd.copernicus.org/articles/12/3269/2020/).
 [^pom-maom]: Studie od Lavallee a kol. (2019) dělí půdní organickou hmotu (jejíž podstatnou složkou je právě uhlík) na *organickou hmotu ve formě pevných organických částic* (particulate organic matter, POM) a na *organické částice vázané na minerály* (mineral-associated organic matter, MAOM). Tyto dvě formy organické hmoty se liší svými vlastnostmi, přičemž nejzásadnější je poločas jejich rozpadu a možnost nasycení. POM se v půdě ukládá na krátkou dobu, kapacita půdy pro tento typ ukládání je tedy v podstatě nekonečná. MAOM je uložen na dlouhá období (řádově stovky let), nicméně kapacita na ukládání této formy organické hmoty je omezená (je dána množstvím dostupných chemických vazeb).
 [^prumyslove-hnojiva]: V roce 2022 tvořila minerální hnojiva 61 % z celkového objemu živin, které byly dodány na pole. Zbývajících 39 % připadá na hnojiva statková (hnoj, kejda) a organická hnojiva (zejména digestát z bioplynových stanic). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
