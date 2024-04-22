@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Rekordní rok 2023</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas of Climate Change</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -35,13 +35,18 @@ slug: index
 </div>
 
 <div class="tab-content" id="myTabContent">
-  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead" markdown="1">
-  **Rok 2023** překonal dosavadní teplotní rekordy a stal se [**nejteplejším rokem v historii měření**](/infografiky/teplotni-anomalie). Ve srovnání s obdobím 1850–1900 byla globální teplota průměrně o 1,46 °C vyšší. Přibližujeme se tak hranici 1,5 °C, kterou Pařížská dohoda definuje jako kritickou. (Údaje pochází z analýzy Copernicus za leden–listopad 2023.)
-
-  Podle předběžných dat **padl rekord i v Česku**. Průměrná roční teplota 9,7 °C byla o 1,4 °C vyšší než průměr let 1991–2020. Od roku 1960 – tedy za dobu života současných seniorů – **stoupla průměrná teplota v Česku o 2,2 °C.** Hlavní příčinou růstu průměrných globálních teplot a dosahování nových teplotních rekordů je [růst koncentrací skleníkových plynů](/explainery/otepleni-zvysenim-koncentrace-co2) v atmosféře způsobený spalováním fosilních paliv.
-
-{% assign featured_slugs = "teplota-cr, teplotni-anomalie, teplota-zeme, umirani-ceskych-lesu, body-zlomu-1, klimaticke-zavazky-cr" | split: ", " %}
-{%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 %}
+  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
+    <div class="row">
+      <div class="col-md-8">
+        <p>Kvalitní debata o klimatické změně je z mnoha důvodů komplikovaná, ať už složitostí tématu nebo pro silné emoce, které zákonitě vzbuzuje. K hledání a nacházení řešení klimatické změny je potřeba vést <strong>konstruktivní a informovanou diskuzi</strong>, která je založena na <strong>datech a faktech</strong>.</p>
+        <p>Proto jsme připravili <a href="https://factsonclimate.org/atlas" target="_blank">anglickou verzi <strong>Atlasu klimatické změny</strong></a>. Cílem Atlasu je podpořit globální snahu o zvyšování povědomí o jednom z nejpalčivějších témat současnosti, zároveň chce publikace pomoci v <strong>hledání efektivních řešení</strong>. Novinka je k dispozici ke stažení ve formátu PDF.</p>
+      </div>
+      <div class="col-md">
+        <a class="no-ext-link-icon" href="https://factsonclimate.org/atlas" target="_blank">
+          <img src="/assets-local/img/atlas-en-front.png" class="img-fluid" alt="Vizualizace anglického Atlasu klimatické změny">
+        </a>
+      </div>
+    </div>
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
