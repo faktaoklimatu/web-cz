@@ -6,22 +6,12 @@ redirect_from: "/atlas-klimaticke-zmeny-materialy"
 intro:      "Stručné a názorné shrnutí nejdůležitějších dat spojených s klimatickou změnou, které laikům umožní pochopit základní souvislosti. Funguje jako samostatná publikace pro zájemce z řad veřejnosti i coby didaktická pomůcka pro lektory a učitele. Jako podklad posloužily naše infografiky, které jsme doplnili vysvětlujícími texty."
 preview_type: "Publikace"
 preview_image: "/assets-local/img/atlas-mockup.jpg"
+eshop_link: https://www.biobooks.cz/p/atlas-klimaticke-zmeny
 include_in_search: true
 ---
 
-<div id="{{ site.data.lang.navigation.first-id }}" class="section pb-0">
-    <div class="container between-navbars">
-        <h1>{{ page.title }}</h1>
-    </div>
-</div>
-<div id="secondary-navbar" class="section">
-    <div class="container page-title">{{ page.title }}</div>
-    <ul class="container">
-        <li><a class="home" href="#{{ site.data.lang.navigation.first-id }}">Úvod</a></li>
-        <li><a href="/atlas-obchod">Koupit</a></li>
-    </ul>
-  </div>
-<div class="section pt-0"><div class="container">
+<div class="section"><div class="container">
+<h1>{{ page.title }}</h1>
 <div class="row">
     <div class="col-md-12 col-lg-9">
         <p class="lead py-4">{{ page.intro }}</p>
@@ -32,7 +22,7 @@ include_in_search: true
         <h3>Pro vás</h3>
         <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
         <a href="/assets-local/files/atlas-klimaticke-zmeny.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout atlas</a>
-        <a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+        <a href="{{ page.eshop_link }}" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
         <h3>Podpořte naši práci</h3>
         <p>Líbí se vám naše činnost a rádi byste Fakta o klimatu podpořili finančně?</p>
         <a href="{{ site.fundraising }}" class="btn btn-primary"><i class="fas fa-fw fa-heart"></i> Chci přispět</a>
@@ -150,13 +140,13 @@ Několik příkladů možného využití atlasu:
 
 <div class="row"><div class="col-md-6 my-3" markdown="1">
 
-### Nákup již hotových výtisků přímo od nás
+### Nákup výtisků od distributora
 
 Takto můžete ušetřit čas, starosti i náklady spojené s tiskem většího počtu atlasů. Tím, že jsme nechali vyrobit opravdu velký počet kusů, jsme se dokázali dostat na lepší cenu, než by byla za běžný malonákladový barevný tisk.
 
 Zároveň svou objednávkou přispějete Faktům o klimatu na další aktualizace atlasu a tvorbu nových materiálů.
 
-<a href="/atlas-obchod" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+<a href="{{ page.eshop_link }}" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
 
 </div><div class="col-md-6 my-3" markdown="1">
 
