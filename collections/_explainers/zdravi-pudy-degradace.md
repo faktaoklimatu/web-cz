@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Co ovlivňuje zdraví půdy a proč půda degraduje?"
 slug:        "zdravi-pudy-degradace"
-published:   2024-04-30
+published:   2024-04-23
 authors:
   - ids: ["andy-snovakova", "petr-holik"]
   - id: "jirka-lnenicka"
