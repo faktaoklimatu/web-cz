@@ -2,18 +2,14 @@
 layout:      explainer
 title:       "Co ovlivňuje zdraví půdy a proč půda degraduje?"
 slug:        "zdravi-pudy-degradace"
-published:   2024-03-27
+published:   2024-04-30
 authors:
   - ids: ["andy-snovakova", "petr-holik"]
   - id: "jirka-lnenicka"
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-  - name: "Karel Klem"
-    affiliation: Czech Globe
-    minor-role: "konzultace"
-  - name: "Ladislav Miko"
-    affiliation: MŽP
+  - name: "Karel Klem (Czech Globe), Ladislav Miko (MŽP)"
     minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
@@ -27,7 +23,7 @@ perex: Kvalita zemědělské půdy v Česku i na mnoha místech ve světě dlouh
 
 ---
 
-Půdy tvoří základ všech suchozemských ekosystémů, což platí i o půdách využívaných k zemědělským účelům, z nichž lidé získávají obživu. Dlouhodobé sledování kvality půd ukazuje, že v mnoha částech světa vlivem dosavadního hospodaření půda postupně degraduje – snižuje se zejména množství obsažené organické hmoty – a klesá tak její schopnost plnit produkční i ekosystémové funkce. Pokud se nic nezmění, může v nejbližších sto letech téměř polovina konvenčně obdělávaných půd světa tyto produkční a další funkce ztratit úplně[^ritchie-2021] – z kdysi úrodné půdy se stane v podstatě písek[^dust-bowls]. Proč k degradaci půd dochází a jak se projevuje? Jaká je situace v Česku? A jak souvisí zdraví půdy s klimatickou změnou?   
+Půdy tvoří základ všech suchozemských ekosystémů, což platí i o půdách využívaných k zemědělským účelům, z nichž lidé získávají obživu. Dlouhodobé sledování kvality půd ukazuje, že v mnoha částech světa vlivem dosavadního hospodaření půda postupně degraduje – snižuje se zejména množství obsažené organické hmoty – a klesá tak její schopnost plnit produkční i ekosystémové funkce. Pokud se nic nezmění, může v nejbližších sto letech téměř polovina konvenčně obdělávaných půd světa tyto produkční a další funkce ztratit úplně[^ritchie-2021] – z kdysi úrodné půdy se stane v podstatě písek[^dust-bowls]. Proč k degradaci půd dochází a jak se projevuje? Jaká je situace v Česku? A jak souvisí zdraví půdy s klimatickou změnou?
 
 ## Co je zdravá půda a jaké plní funkce?
 
@@ -73,7 +69,7 @@ Významná část zemědělských půd v Česku je více či méně degradovaná
 Degradační procesy probíhají v přírodě přirozeně. Platí to i o půdě: ta je za běžných podmínek schopna obnovy a umí tyto procesy vyvažovat. Nevhodné zacházení s půdou však degradační procesy zesiluje a půda se pak nedokáže obnovit dostatečně rychle. **Intenzivní hnojení syntetickými hnojivy**, **aplikace různých pesticidů**, **využívání těžké techniky**, **velkoplošné pěstování jedné plodiny** (monokultury) a **rozsáhlé lány polí**[^rozloha] patří mezi hlavní faktory, proč půda ztrácí své kvality a přestává být zdravá. Důsledky jedné formy degradace jsou navíc často příčinami jiné formy degradace.
 
 ### Ztráta organické hmoty
-V současném intenzivním modelu zemědělství, který je rozšířený v Česku, ale i v řadě dalších zemí světa, jsou živiny do půdy dodávány převážně průmyslově vyráběnými hnojivy[^prumyslove-hnojiva]. Ta sice rostlinám dodají to hlavní, co ke svému růstu potřebují, ale na rozdíl například od chlévské mrvy (pocházející například od dobytka, ovcí či koní) nepřidávají do půdy organickou hmotu, která by vyživovala půdní organismy, a tím i celý půdní ekosystém. Navíc na polích při intenzivním způsobu hospodaření běžně nezůstává ani odumřelá organická hmota – po sklizni jsou i zbývající části rostlin, které by zde jinak postupně zetlely, zpravidla odvezeny pryč. To vede k narušení přirozených cyklů prvků v půdě a zároveň vytváří závislost na neustálém dodávání hnojiva. A nejen to: aby půdní organismy v takto chudém prostředí přežily, začnou zpravidla rozkládat humus, tedy zásoby organické hmoty uložené v půdě. To vede k tomu, že půda postupně chudne a současně se při tomto procesu uvolňuje oxid uhličitý. Jinými slovy: degradace půdy zvyšuje koncentrace CO<sub>2</sub> v atmosféře a tím se podílí i na oteplování planety. (Příčin rychlejšího rozkladu uložené organické hmoty je nicméně více, přispívá k tomu například také orba – kvůli rozorávání se hlubší vrstvy půdy s uloženou organickou hmotou dostávají na povrch, kde vzdušný kyslík urychluje rozkladné procesy.) 
+V současném intenzivním modelu zemědělství, který je rozšířený v Česku, ale i v řadě dalších zemí světa, jsou živiny do půdy dodávány převážně průmyslově vyráběnými hnojivy[^prumyslove-hnojiva]. Ta sice rostlinám dodají to hlavní, co ke svému růstu potřebují, ale na rozdíl například od chlévské mrvy (pocházející například od dobytka, ovcí či koní) nepřidávají do půdy organickou hmotu, která by vyživovala půdní organismy, a tím i celý půdní ekosystém. Navíc na polích při intenzivním způsobu hospodaření běžně nezůstává ani odumřelá organická hmota – po sklizni jsou i zbývající části rostlin, které by zde jinak postupně zetlely, zpravidla odvezeny pryč. To vede k narušení přirozených cyklů prvků v půdě a zároveň vytváří závislost na neustálém dodávání hnojiva. A nejen to: aby půdní organismy v takto chudém prostředí přežily, začnou zpravidla rozkládat organickou hmotu, která je v půdě uložena. To vede k tomu, že půda postupně chudne a současně se při tomto procesu uvolňuje oxid uhličitý. Jinými slovy: degradace půdy zvyšuje koncentrace CO<sub>2</sub> v atmosféře a tím se podílí i na oteplování planety. (Příčin rychlejšího rozkladu uložené organické hmoty je nicméně více, přispívá k tomu například také orba – kvůli rozorávání se hlubší vrstvy půdy s uloženou organickou hmotou dostávají na povrch, kde vzdušný kyslík urychluje rozkladné procesy.) 
 
 Ztráta organické hmoty a s tím související pokles množství organismů v půdě vede k rozpadu půdní struktury (už zmíněných půdních agregátů). Tím půda ztrácí svou soudržnost a stává se zranitelnější – viz dále. 
 
@@ -111,7 +107,7 @@ Nevhodné zemědělské postupy | Eutrofizace
 
 K okyselování půdního prostředí přispívá do velké míry hnojení, zejména použití dusíkatých hnojiv[^goulding-2016],[^dusikata-hnojiva]. Roli hrají také kyselé deště a imise síry a dusíku. Ve zdravém půdním prostředí se přirozeně vyskytují i zásadité prvky (např. vápník), které nízké pH více či méně vyrovnávají. Tyto prvky jsou však při monokulturním pěstování plodin postupně odčerpávány, což vede k půdnímu prostředí se stále vyšší aciditou, které může být nevhodné nejen pro některé druhy rostlin, ale i pro půdní organismy (a vede tak k další redukci biodiverzity). 
 
-Některé klíčové prvky, jako například hořčík nebo fosfor, se v kyselém prostředí hůře rozpouštějí, a stávají se tak pro rostliny nedostupné. Růst rostlin je pak omezený a tyto prvky jsou vymývány do podzemních i povrchových vod[^eutrofizace]. Kyselé prostředí navíc pomáhá k aktivaci některých prvků v půdě (např. hliník nebo mangan), jež jsou pro rostliny toxické[^vapneni].
+Některé klíčové prvky, jako například hořčík nebo fosfor, se v kyselém prostředí hůře rozpouštějí, a stávají se tak pro rostliny nedostupné. Růst rostlin je pak omezený a tyto prvky jsou vymývány do podzemních i povrchových vod. Kyselé prostředí navíc pomáhá k aktivaci některých prvků v půdě (např. hliník nebo mangan), jež jsou pro rostliny toxické[^vapneni].
 
 {:.table}
 Příčiny    | Důsledky 
@@ -170,16 +166,15 @@ Z textu výše je zřejmé, že degradace půdy je způsobena zejména postupy i
 [^ritchie-2021]: Hannah Ritchie (2021) – “Do we only have 60 harvests left?” Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/soil-lifespans'
 [^dust-bowls]: Za připomenutí zde stojí americké prašné bouře (Dust Bowls), které se objevily hlavně v 30. letech minulého století. Fenomén Dust Bowl byl způsoben dlouhodobým suchem a špatnou kvalitou půdy, která snadno podléhala větrné erozi. Společenské i přírodní důsledky těchto událostí popisuje například John Steinbeck ve svém románu *Hrozny hněvu*.
 [^konzumenti-reducenti]: Větší organismy, jako jsou žížaly nebo slimáci (tzv. konzumenti prvního řádu), nejprve rozemelou organickou hmotu na menší části. Tyto fragmenty jsou pak postupně zpracovávány a rozkládány menšími organismy, jako jsou houby a bakterie (tzv. reducenti).
-[^zasolovani]: Kromě uvedených forem degradace může docházet také k zasolování půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
-[^rozloha]: Česká republika patří mezi evropské státy s největší rozlohou nerozdělených polí (lánů). Zdroj: [Farms and Farmland in the European Union](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/73319.pdf)
 [^humus]: Organické hmotě v půdě se někdy říká také _humus_. Od tohoto termínu se však kvůli jeho nejednoznačnosti a náročné definovatelnosti postupně ustupuje. 
 [^global-carbon-budget]: Friedlingstein, P. et al., 2020. “Global Carbon Budget 2020”. Earth System Science Data 12(4):3269–3340. doi: [10.5194/essd-12-3269-2020](https://essd.copernicus.org/articles/12/3269/2020/).
 [^pom-maom]: Studie od Lavallee a kol. (2019) dělí půdní organickou hmotu (jejíž podstatnou složkou je právě uhlík) na *organickou hmotu ve formě pevných organických částic* (particulate organic matter, POM) a na *organické částice vázané na minerály* (mineral-associated organic matter, MAOM). Tyto dvě formy organické hmoty se liší svými vlastnostmi, přičemž nejzásadnější je poločas jejich rozpadu a možnost nasycení. POM se v půdě ukládá na krátkou dobu, kapacita půdy pro tento typ ukládání je tedy v podstatě nekonečná. MAOM je uložen na dlouhá období (řádově stovky let), nicméně kapacita na ukládání této formy organické hmoty je omezená (je dána množstvím dostupných chemických vazeb).
+[^zasolovani]: Kromě uvedených forem degradace může docházet také k zasolování půdy. Touto formou degradace jsou však půdy v České republice ohroženy minimálně.
+[^rozloha]: Česká republika patří mezi evropské státy s největší rozlohou nerozdělených polí (lánů). Zdroj: [Farms and Farmland in the European Union](https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/73319.pdf)
 [^prumyslove-hnojiva]: V roce 2022 tvořila minerální hnojiva 61 % z celkového objemu živin, které byly dodány na pole. Zbývajících 39 % připadá na hnojiva statková (hnoj, kejda) a organická hnojiva (zejména digestát z bioplynových stanic). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
 [^erozne-plodiny]: Mezi plodiny málo chránící půdu proti erozi patří například kukuřice, řepa, brambory nebo slunečnice. Zdroj: [Eroze od roku 2019, MZ ČR](https://eagri.cz/public/portal/-q335361---cN3hJuYw/prirucka-pro-eroze) 
 [^goulding-2016]: Goulding, K. W. T. 2016. “Soil Acidification and the Importance of Liming Agricultural Soils with Particular Reference to the United Kingdom”. Soil Use and Management 32(3):390–99. doi: 10.1111/sum.12270.
 [^dusikata-hnojiva]: Dusíkatá hnojiva jsou v ČR nejvíce využívaným typem syntetických hnojiv. Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
-[^eutrofizace]: Obohacování vod o živiny se nazývá eutrofizace. Zvýšené množství živin ve vodě může vést k přemnožení řas a sinic a vytvoření tzv. vodního květu. Přemnožení řas a sinic vede k nedostatku kyslíku ve vodním prostředí a následnému umírání ryb. 
 [^vapneni]: K vyrovnání pH půdy se využívá vápnění. Vápní se např. vápencem nebo dolomitem, ty se však postupně rozpadají (mimo jiné) na vodu a oxid uhličitý, což znamená, že vápnění přispívá k uvolňování emisí skleníkových plynů: Zdroj: Kunhikrishnan, A., R. Thangarajan, N. S. Bolan, Y. Xu, S. Mandal, D. B. Gleeson, B. Seshadri, M. Zaman, L. Barton, C. Tang, J. Luo, R. Dalal, W. Ding, M. B. Kirkham, a R. Naidu. 2016. “Chapter One – Functional Relationships of Soil Acidification, Liming, and Greenhouse Gas Flux”. Str. 1–71 v Advances in Agronomy. Roč. 139, Advances in Agronomy, sestavil D. L. Sparks. Academic Press.
 [^nawaz-2013]: Nawaz, Muhammad Farrakh, Guilhem Bourrié, a Fabienne Trolard. 2013. “Soil Compaction Impact and Modelling. A Review”. Agronomy for Sustainable Development 33(2):291–309. doi: [10.1007/s13593-011-0071-8](https://link.springer.com/article/10.1007/s13593-011-0071-8)
 [^BMP]: Tzv. bazální monitorování půd (BMP), při kterém jsou pravidelně sledována množství anorganických polutantů (např. arsen, kadmium, nikl, olovo nebo zinek) a perzistentních organických polutantů (např. polycyklické aromatické uhlovodíky nebo organochlorované pesticidy). Zdroj: [Zpráva o životním prostředí České republiky](https://www.cenia.cz/wp-content/uploads/2023/12/Zprava_ZP_CR_2022.pdf)
