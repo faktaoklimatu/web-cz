@@ -119,8 +119,8 @@ Pro více informací o jednotlivých opatřeních přejděte na naši infografik
 
 [^reforma-eu-ets]: Následující opatření jsou součástí jedné směrnice: revize stávajícího systému EU ETS, jeho rozšíření na námořní dopravu, vznik nového systému EU ETS 2 pro silniční dopravu a budovy a posílení Modernizačního a Inovačního fondu.
 
-[^epbd]: V prosinci 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://ec.europa.eu/commission/presscorner/detail/cs/ip_23_6423) o podobě směrnice.
+[^epbd]: V prosinci 2023 došlo mezi Parlamentem, Radou EU a Komisí k [prozatímní dohodě](https://ec.europa.eu/commission/presscorner/detail/cs/ip_23_6423) o podobě směrnice.
 
-[^metan]: V listopadu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/15/climate-action-council-and-parliament-reach-deal-on-new-rules-to-cut-methane-emissions-in-the-energy-sector/) o podobě směrnice.
+[^metan]: V listopadu 2023 došlo mezi Parlamentem, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/15/climate-action-council-and-parliament-reach-deal-on-new-rules-to-cut-methane-emissions-in-the-energy-sector/) o podobě směrnice.
 
-[^plyny-oze-spolecna-pravidla]: V listopadu 2023 došlo mezi Parlament, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/28/internal-markets-in-renewable-and-natural-gases-and-in-hydrogen-council-and-parliament-reach-deal/) o podobě směrnice.
+[^plyny-oze-spolecna-pravidla]: V listopadu 2023 došlo mezi Parlamentem, Radou EU a Komisí k [prozatímní dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2023/11/28/internal-markets-in-renewable-and-natural-gases-and-in-hydrogen-council-and-parliament-reach-deal/) o podobě směrnice.

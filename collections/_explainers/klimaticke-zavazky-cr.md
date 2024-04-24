@@ -73,7 +73,7 @@ Níže jsou shrnuty závazky Česka v jednotlivých oblastech, a to v kontextu c
     source="Fakta o klimatu"
 %}
 
-Podle [návrhu](https://www.mzp.cz/cz/news_20240206_MZP-aktualizovalo-Politiku-ochrany-klimatu-v-CR-Do-roku-2030-budeme-ziskavat-tretinu-energie-z-obnovitelnych-zdroju-a-spotrebu-snizime-o-petinu) aktualizace Politiky ochrany klimatu z jara 2024 **deklaruje Česko závazek snížit do roku 2030 své emise o 55 %** v porovnání s rokem 1990.[^emisni-zavazek-cr] Stejný závazek si již dříve vytyčila i EU.[^zavazek-2030] **Do roku 2021 snížilo Česko své emise o 34 %**, k největšímu snížení však došlo vlivem ukončení provozu části těžkého průmyslu v 90. letech. V současnosti emise ČR příliš neklesají. Vliv má i kůrovcová kalamita, kvůli které se české lesy staly čistým emitentem CO<sub>2</sub>.
+Podle [návrhu](https://www.mzp.cz/cz/news_20240206_MZP-aktualizovalo-Politiku-ochrany-klimatu-v-CR-Do-roku-2030-budeme-ziskavat-tretinu-energie-z-obnovitelnych-zdroju-a-spotrebu-snizime-o-petinu) aktualizace Politiky ochrany klimatu z jara 2024 **deklaruje Česko závazek snížit do roku 2030 své emise o 55 %** v porovnání s rokem 1990.[^emisni-zavazek-cr] Stejný závazek si již dříve vytyčila i EU.[^zavazek-2030] **Do roku 2021 snížilo Česko své emise o 34 %**, k největšímu snížení však došlo vlivem ukončení provozu části těžkého průmyslu v 90. letech. V současnosti emise ČR [spíše stagnují](/infografiky/emise-cr-vyvoj). Vliv má i kůrovcová kalamita, kvůli které se české lesy staly čistým emitentem CO<sub>2</sub>.
 
 ### Snížení emisí v nejvíce znečišťujících sektorech (EU ETS)
 
