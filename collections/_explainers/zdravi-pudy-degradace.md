@@ -32,9 +32,9 @@ Zdravá půda má **nezastupitelný význam** v přírodních ekosystémech (nap
 **Zdravá půda plní několik různých funkcí**: 
 - Poskytuje podmínky pro život velkého množství nejrůznějších organismů
 - Je důležitým mezistupněm v cirkulaci některých prvků (uhlík, dusík, fosfor)
-- Je zásadní pro zadržování vody v krajině (díky své porézní struktuře)
-- Poskytuje velmi kvalitní potraviny, dřevo a další produkty, které jsou pro lidstvo cenné (u degradované půdy kvalita této produkce klesá)     
+- Je zásadní pro zadržování vody v krajině (díky své porézní struktuře)   
 - Je dlouhodobým úložištěm uhlíku a přispívá tak významně i ke zmírňování klimatické změny
+- Poskytuje lidem velmi kvalitní potraviny, dřevo a další cenné produkty (při degradaci kvalita produkce klesá)
 
 Půdu lze chápat jako samostatný ekosystém, který je však zároveň velmi úzce propojen se všemi ostatními suchozemskými ekosystémy. Nejde jen o neživou materii, jak by se mohlo na první pohled zdát. Ve skutečnosti je půda **živý komplex** mnoha různých vztahů, funkcí a procesů. Jak vlastně celý tento systém vzniká a funguje?
 
