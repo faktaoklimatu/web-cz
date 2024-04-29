@@ -9,7 +9,11 @@ authors:
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-  - name: "Karel Klem (Czech Globe), Ladislav Miko (MŽP)"
+  - name: "Karel Klem"
+    affiliation: "Czech Globe"
+    minor-role: "konzultace"
+  - name: "Ladislav Miko"
+    affiliation: "MŽP"
     minor-role: "konzultace"
 weight:      74
 tags-scopes: [ svet ]
