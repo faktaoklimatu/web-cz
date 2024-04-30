@@ -42,6 +42,14 @@ Zdravá půda má **nezastupitelný význam** v přírodních ekosystémech (nap
 
 Půdu lze chápat jako samostatný ekosystém, který je však zároveň velmi úzce propojen se všemi ostatními suchozemskými ekosystémy. Nejde jen o neživou materii, jak by se mohlo na první pohled zdát. Ve skutečnosti je půda **živý komplex** mnoha různých vztahů, funkcí a procesů. Jak vlastně celý tento systém vzniká a funguje?
 
+{% include figure.html
+    name="zdrava-puda.png"
+    caption="Ilustrace zdravé půdy jako živoucího komplexu."
+    alt="TODO"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/zdravi-pudy-degradace"
+%}
+
 Neživá (minerální) složka půdy vzniká rozpadem matečné horniny na různě velké částice (jílovité, hlinité, písčité). Tuto minerální složku promíchává a doplňuje voda a půdní vzduch a díky tomu vznikají **podmínky pro život obrovského množství mikrobů, hub a živočichů** – od jejich nejmenších zástupců (např. želvušky nebo krytenky) až po tzv. půdní megafaunu (např. žížaly nebo mnohonožky). Když stojíme někde v ekosystému, jako je třeba květnatá louka nebo lužní les, nachází se pod našima nohama zpravidla více půdních organismů, než kolik je lidí na Zemi. Z hlediska rozmanitosti zastoupených druhů neboli [biodiverzity](/explainery/ubyvani-biodiverzity) najdeme v půdě více živočišných druhů, než kolik je druhů obratlovců v celé Evropě. Tento živý systém udržuje v chodu stovky milionů let starou "cirkulární ekonomiku", tedy koloběh zdrojů, potřebných jak pro samotný život v půdě, tak pro další přírodní a kulturní ekosystémy na ni napojené (ať už jde o květnaté louky nebo pole s obilím).
 
 Pro lepší pochopení toho, jak se půda podílí na **cyklu živin** a důležitých stavebních prvků (např. uhlíku, dusíku a fosforu), si lze představit rostlinu, jež čerpá z půdy potřebné látky, aby mohla pomocí fotosyntézy produkovat organickou hmotu – tedy růst a rozvíjet se. Ve chvíli, kdy taková rostlina nebo její část (třeba květ po opylení) odumře a spadne na zem, začne se na povrchu půdy hromadit nezpracovaná organická hmota. Tu začnou zpracovávat už zmíněné **půdní organismy** – postupně ji požírají a energii z ní využívají pro sebe[^konzumenti-reducenti]. Během tohoto procesu, jemuž se říká **mineralizace**, dochází k rozpadu zmíněné organické hmoty na jednodušší sloučeniny. Ty jsou pak v půdě opět k dispozici pro další růst rostlin.
@@ -72,18 +80,23 @@ Významná část zemědělských půd v Česku je více či méně degradovaná
 
 Degradační procesy probíhají v přírodě přirozeně. Platí to i o půdě: ta je za běžných podmínek schopna obnovy a umí tyto procesy vyvažovat. Nevhodné zacházení s půdou však degradační procesy zesiluje a půda se pak nedokáže obnovit dostatečně rychle. **Intenzivní hnojení syntetickými hnojivy**, **aplikace různých pesticidů**, **využívání těžké techniky**, **velkoplošné pěstování jedné plodiny** (monokultury) a **rozsáhlé lány**[^rozloha] patří mezi hlavní faktory, proč půda ztrácí své kvality a přestává být zdravá. Důsledky jedné formy degradace jsou navíc často příčinami jiné formy degradace.
 
+{% include figure.html
+    name="degradace-schema.png"
+    caption="Půda degraduje především v důsledku intenzivního zemědělství (nadměrná aplikace syntetických hnojiv a pesticidů, používání těžké techniky, pěstování monokultur…), svou roli ale hrají také znečištění imisemi z továren a dopravy nebo škodlivé látky unikající ze skládek odpadu."
+    alt="Schéma degradace půdy"
+    source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/zdravi-pudy-degradace"
+%}
+
 ### Ztráta organické hmoty
 V současném intenzivním modelu zemědělství, který je rozšířený v Česku, ale i v řadě dalších zemí světa, jsou živiny do půdy dodávány převážně průmyslově vyráběnými hnojivy[^prumyslove-hnojiva]. Ta sice rostlinám dodají to hlavní, co ke svému růstu potřebují, ale na rozdíl například od chlévské mrvy (pocházející například od dobytka, ovcí či koní) nepřidávají do půdy žádnou organickou hmotu, která by vyživovala půdní organismy, a tím i celý půdní ekosystém. Navíc na polích při intenzivním způsobu hospodaření běžně nezůstává ani odumřelá organická hmota – po sklizni jsou i zbývající části rostlin, které by zde jinak postupně zetlely, zpravidla odvezeny pryč. To vede k narušení přirozených cyklů prvků v půdě a zároveň vytváří závislost na neustálém dodávání hnojiva. A nejen to: aby půdní organismy v takto chudém prostředí přežily, začnou zpravidla rozkládat organickou hmotu, která je v půdě uložena. To vede k tomu, že půda postupně chudne a současně se při tomto procesu uvolňuje oxid uhličitý. Jinými slovy: degradace půdy zvyšuje také koncentrace CO<sub>2</sub> v atmosféře a tím se podílí i na oteplování planety. (Příčin rychlejšího rozkladu uložené organické hmoty je nicméně více, přispívá k tomu například také orba – rozoráváním se hlubší vrstvy půdy s uloženou organickou hmotou dostávají na povrch, kde vzdušný kyslík urychluje rozkladné procesy.) 
 
 Ztráta organické hmoty a s tím související pokles množství organismů v půdě vede k rozpadu půdní struktury (už zmíněných půdních agregátů). Tím půda ztrácí svou soudržnost a stává se zranitelnější – viz dále. 
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Aplikace syntetických hnojiv | Ztráta půdní biodiverzity  
-Nedostatek organické hmoty | Rozpad půdní struktury
-Orba | Vytváření závislosti na neustálém dodávání hnojiv
-Eroze | Uvolňování CO<sub>2</sub> do atmosféry 
+{% include figure.html
+    name="ztrata-organicke-hmoty.png"
+    alt="Schéma příčin a důsledků ztráty organické hmoty"
+%}
 
 {% include figure.html
     name="hole-pole.jpg"
@@ -97,15 +110,10 @@ Eroze | Uvolňování CO<sub>2</sub> do atmosféry
 S úbytkem organické hmoty a souvisejícím rozpadem půdní struktury se půda stává náchylnou k tomu, že ji odplaví voda nebo odnese vítr. Tuto erozní zranitelnost půdy dále posilují rozsáhlé lány a nedostatečné množství protierozních prvků v krajině (meze, roztroušená zeleň, travnaté pásy, větrolamy a podobně), ale i nevhodné zemědělské postupy (např. pěstování erozně náchylných plodin[^erozne-plodiny] nebo orba po svahu, která umožňuje vodě snadno stéct a vzít s sebou i úrodnou vrstvu půdy, tzv. ornici).
 Spolu s ornicí odnáší voda (nebo vítr) také organickou hmotu a živiny. To má hned dvojí negativní efekt: jednak tyto živiny v půdě chybějí a jednak se snadno dostávají do vodních toků, kde mohou způsobovat nežádoucí přemnožení řas a sinic (toto obohacování vod živinami se nazývá [eutrofizace](/explainery/ubyvani-biodiverzity) a má další negativní důsledky). Větrem unášené půdní částice mohou být také nebezpečné pro zdraví dýchacích cest.
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Rozpadlá půdní struktura | Ztráta ornice 
-Rozsáhlé lány polí | Ztráta organické hmoty
-Nedostatek protierozních prvků | Ztráta živin – potřeba neustálého dodávání hnojiv
-Nevhodné zemědělské postupy | Eutrofizace
-| Prach v ovzduší 
-
+{% include figure.html
+    name="eroze.png"
+    alt="Schéma příčin a důsledků eroze"
+%}
 
 ### Okyselování
 
@@ -113,15 +121,10 @@ K okyselování půdního prostředí přispívá do velké míry hnojení, zejm
 
 Navíc se některé klíčové prvky, jako například hořčík nebo fosfor, v kyselém prostředí hůře rozpouštějí, a stávají se tak pro rostliny nedostupné. Růst rostlin je pak omezený a tyto prvky jsou vymývány do podzemních i povrchových vod. Kyselé prostředí navíc pomáhá k aktivaci některých dalších prvků v půdě (např. hliník nebo mangan), jež jsou pro rostliny toxické[^vapneni].
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Intenzivní hnojení | Nevhodné půdní podmínky
-Monokulturní pěstování | Ztráta biodiverzity
-Kyselé deště | Nepřístupnost důležitých prvků
-Imise síry a dusíku | Zvýšená toxicity půdního prostředí 
-| Eutrofizace
-| Zhoršení půdní struktury 
+{% include figure.html
+    name="okyselovani.png"
+    alt="Schéma příčin a důsledků okyselování"
+%}
 
 ### Utužení
 
@@ -129,13 +132,10 @@ K utužování půdy dochází zejména využíváním těžké techniky na pol�
 
 Utužená půda je kompaktnější a ztrácí svou pórovitost. Nedokáže pak dobře absorbovat vodu, čím se zvyšuje riziko vodní eroze (voda se nevsákne a pouze steče po povrchu, přičemž odnáší i ornici, viz výše). Nedostatek pórů omezuje také množství kyslíku v půdě, což v kombinaci s nedostatečnou vlhkostí vede k omezení půdních procesů (a tedy i zpomalení rozkladu organické hmoty a uvolňování živin). Rostliny pěstované v takové půdě trpí, protože mají málo vody, vzduchu i živin. Také pro jejich kořeny je utužená půda obtížně průchodná, což jim komplikuje získávání vody a potřebných látek z hlubších vrstev půdy.
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Těžká technika | Rozpad půdní struktury 
-Rozpadlá půdní struktura | Ztráta pórovitosti a propustnosti
-Vysoká půdní vlhkost | Omezení rozkladu organické hmoty
-| Zvýšené riziko vodní eroze 
+{% include figure.html
+    name="utuzeni.png"
+    alt="Schéma příčin a důsledků utužení"
+%}
 
 ### Kontaminace
 
@@ -144,24 +144,19 @@ Znečišťující látky (polutanty) se do půdy dostávají například z emis�
 
 Polutanty mohou v půdě také ovlivňovat některé procesy, jako je třeba rozklad organické hmoty. Navíc se tyto znečišťující látky dostávají z půdy i přímo do pěstovaných plodin (což pak může po konzumaci vést k vážným zdravotním problémům)[^bioakumulace],[^islam-2020], ale pronikají rovněž do podzemních a povrchových vod a tím i do dalších částí ekosystémů.
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Imise průmyslu a dopravy | Narušení funkcí půdy
-Havárie | Kontaminace vod
-Skládky odpadu | Ohrožení zdraví organizmů (včetně lidí)
-Těžební činnost |
-Agrochemikálie |
-Zpřístupňování toxických prvků při acidifikaci |
+{% include figure.html
+    name="kontaminace.png"
+    alt="Schéma příčin a důsledků kontaminace"
+%}
 
 ### Zástavba
 
 Podíl zastavěné plochy v Česku dlouhodobě roste (za posledních 50 let se zastavěná plocha zvětšila dvojnásobně)[^zastavba-rust]. Rozšiřování obytných částí i potřebné infrastruktury vede k úbytku zemědělské půdy, navíc často dochází k zastavování právě nejkvalitnějších půd[^nejkvalitnejsi-pudy]. Při zástavbě je půda do velké míry mechanicky narušena a pokryta nepropustnými materiály (beton, asfalt aj.). Takto znehodnocená půda ztrácí veškeré své produkční i ekosystémové funkce. V krajině vedou takovéto zásahy ke snižování biodiverzity, ztrátám krajinného rázu a dochází též k omezení schopnosti zadržovat vodu (což může zesilovat dopady povodní). Kromě toho zástavba zvyšuje i riziko kontaminace okolních půd a vod. Tato forma degradace půdy je jednou z nejzávažnějších, protože jde v mnoha případech o nevratný proces.
 
-{:.table}
-Příčiny    | Důsledky 
----------------------- | -----: 
-Rozšiřování obytných oblastí a související infrastruktury | Úplná ztráta půdních funkcí 
+{% include figure.html
+    name="zastavba.png"
+    alt="Schéma příčin a důsledků zástavby"
+%}
 
 ## Závěr
 Z textu výše je zřejmé, že degradace půdy je způsobena zejména postupy intenzivního zemědělství. Svou roli hraje také zástavba a různé formy znečištění. Ke zlepšení stavu půd (nejen) v Česku je proto především potřeba změnit způsob, jak se s půdou a krajinou zachází. Konkrétně to znamená obohacovat půdu o organickou hmotu a podporovat půdní biodiverzitu, využívat šetrnější způsoby úpravy půdy (např. omezovat orbu), zavádět různé krajinné prvky a celkově v krajině podporovat pestrost a mozaikovitost. Dále je zapotřebí omezovat pěstování monokultur, redukovat množství syntetických hnojiv a pesticidů a neznehodnocovat úrodnou půdu necitlivou zástavbou. 
