@@ -167,6 +167,7 @@ subtopics:
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a ekonomika>opatreni.
   - potencial-zpusobu-snizeni-emisi
   - emisni-povolenky-ets
+  - emisni-povolenky-ets-2
   - zpoplatneni-emisi-svet
   - mitigacni-opatreni-mmf
   - fit-for-55
