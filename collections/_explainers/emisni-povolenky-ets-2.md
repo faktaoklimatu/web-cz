@@ -100,7 +100,7 @@ Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, na
     source-text="Vlastní výpočty."
 %}
 
-Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. Při ceně 45 eur (1 125 Kč) za povolenku to znamená náklad ve výši 2,7 Kč k současné ceně okolo 38 korun za litr, což představuje nárůst ceny ve výši 4,7 % (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
+Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 2,7 Kč**, což k současné ceně benzínu okolo 40 korun za litr představuje 4,5% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
 
 {% capture komplementarita %}
 
