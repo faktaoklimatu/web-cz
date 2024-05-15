@@ -17,11 +17,11 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/cars-on-road-in-between-trees-during-daytime-5HGOyBMlvww"
-perex:       "Pro zpomalení změny klimatu je nezbytné modernizovat všechny sektory ekonomiky a vytvářet nástroje, které zajistí podmínky pro dekarbonizaci. Jedněmi z ekonomických nástrojů jsou uhlíkové daně nebo obchodování s emisními povolenkami. Systému zpoplatnění tzv. EU ETS (EU Emission Trading System) podléhají v současnosti velké elektrárny, teplárny, těžký průmysl nebo letecká a námořní doprava. Emise ze silniční dopravy a budov však na celoevropské úrovni dosud zpoplatněny nebyly. Jaké cíle z hlediska snížení emisí si nový systém klade? Jak chce ošetřit možné potíže pro domácnosti a malé podniky? Na tyto a další otázky odpovídáme v následujícím článku.
-"
+perex: |
+    Pro zpomalení změny klimatu je nezbytné modernizovat všechny sektory ekonomiky a vytvářet nástroje, které zajistí podmínky pro dekarbonizaci. Jedněmi z ekonomických nástrojů jsou uhlíkové daně nebo obchodování s emisními povolenkami. Systému zpoplatnění, tzv. EU ETS (EU Emissions Trading System), podléhají v současnosti velké elektrárny, teplárny, těžký průmysl nebo letecká a námořní doprava. Emise ze silniční dopravy a budov však na celoevropské úrovni dosud zpoplatněny nebyly. Jaké cíle z hlediska snížení emisí si nový systém klade? Jak chce ošetřit možné potíže domácností a malých podniků? Na tyto a další otázky odpovídáme v následujícím článku.
 ---
 
-**Nový systém tzv. ETS 2** [naváže](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) **od roku 2027** na stávající <glossary id="euets">systém obchodování s emisními povolenkami</glossary> (ETS 1), který funguje od roku 2005. Zpoplatní přitom emise ze silniční dopravy, spalování v budovách a malé energetiky a průmyslu, které v současnosti nespadají pod ETS 1. Díky tomu dojde k **narovnání trhu** jak pro producenty emisí, tak pro podniky využívající nízkoemisní zdroje energie (např. biomasu či biopaliva). Zatímco ETS 1 v současnosti pokrývá přibližně 38 % všech emisí skleníkových plynů EU, ETS 2 pokryje dalších 43 %. **Více než 85 % unijních emisí tak bude podléhat zpoplatnění.** Zbývajících 15 % připadá hlavně zemědělství a odpadovému hospodářství.[^ets-emise]
+**Nový systém tzv. ETS 2** [naváže](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) **od roku 2027** na stávající <glossary id="euets">systém obchodování s emisními povolenkami</glossary> (ETS 1), který funguje od roku 2005. Zpoplatní přitom emise ze silniční dopravy, spalování v budovách a malé energetiky a průmyslu, které v současnosti nespadají pod ETS 1. Díky tomu dojde k **narovnání trhu** jak pro producenty emisí, tak pro podniky využívající nízkoemisní zdroje energie (např. biomasu či biopaliva). Zatímco ETS 1 v současnosti pokrývá přibližně 38 % všech emisí skleníkových plynů EU, ETS 2 pokryje dalších 47 %. **Více než 85 % unijních emisí tak bude podléhat zpoplatnění.** Zbývajících 15 % připadá hlavně zemědělství a odpadovému hospodářství.[^ets-emise]
 
 {% include figure.html
     name="cs-podil-ets-na-emisich-eu-des.svg"
@@ -54,7 +54,7 @@ Systém pro obchodování s emisními povolenkami je jedním z nástrojů zpopla
 
 Povolenky si jednotlivé provozovny nakupují buď v aukcích, od sebe navzájem, nebo v některých případech dostávají určité množství zdarma (to například v rámci EU ETS platí pro průmyslová odvětví, která by v důsledku vyšších výdajů na povolenky mohla ztratit konkurenceschopnost vzhledem k producentům ze třetích zemí, kde jsou emise zpoplatněny méně či vůbec, nebo by hrozil tzv. únik uhlíku do těchto zemí).
 
-Výnosy z prodeje povolenek jsou následně k dispozici pro investice do dekarbonizačních opatření. Více o emisních povolenkách obsahuje náš [článek](/explainery/emisni-povolenky-ets).
+Výnosy z prodeje povolenek jsou následně k dispozici pro investice do dekarbonizačních opatření. Více o emisních povolenkách obsahuje [náš článek](/explainery/emisni-povolenky-ets).
 
 {% endcapture %}
 
@@ -109,7 +109,7 @@ K tomu, aby došlo k významnému snížení emisí skleníkových plynů v sekt
 - [Nařízení o přísnějších emisních standardech pro automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023R0851), podle kterého nebude  po roce 2035 možné prodávat nové automobily a dodávky produkující emise CO<sub>2</sub>.
 - [Nařízení o zavádění infrastruktury pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R1804) má podpořit budování dobíjecí infrastruktury či infrastruktury pro čerpání vodíku.
 
-V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro dekarbonizaci, což úzce souvisí s otázkou průmyslové politiky EU, v současnosti reprezentované především [Průmyslovým plánem Zelené dohody](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52023DC0062&from=CS) (*Green Deal Industrial Plan*, GDIP) a související legislativou. Jejím záměrem je podpořit bezemisní technologie vyráběné na unijní půjdě (a zmírnit tak závislost na dovozu ze třetích zemí, zejména Číny), stejně jako zajistit dostatek strategických materiálů potřebných pro jejich produkci. Mimo to je zásadní i dostatek kvalifikované pracovní síly (pokud si například domácnost plánuje pořídit tepelné čerpadlo, je potřeba, aby bylo dostupné a aby zároveň byli k dispozici pracovníci, kteří jej mohou nainstalovat).
+V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro dekarbonizaci, což úzce souvisí s otázkou průmyslové politiky EU, v současnosti reprezentované především [Průmyslovým plánem Zelené dohody](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52023DC0062&from=CS) (*Green Deal Industrial Plan*, GDIP) a související legislativou. Jejím záměrem je podpořit bezemisní technologie vyráběné na unijní půdě (a zmírnit tak závislost na dovozu ze třetích zemí, zejména Číny), stejně jako zajistit dostatek strategických materiálů potřebných pro jejich produkci. Mimo to je zásadní i dostatek kvalifikované pracovní síly (pokud si například domácnost plánuje pořídit tepelné čerpadlo, je potřeba, aby bylo dostupné a aby zároveň byli k dispozici pracovníci, kteří jej mohou nainstalovat).
 
 {% endcapture %}
 
@@ -139,15 +139,15 @@ Jak v těchto místech vypadá využití výnosů ze zpoplatnění emisí uhlík
 
 ## Poznámky a zdroje
 
-Data k jednotlivým grafům jsou k dispozici v našem [datasetu](https://docs.google.com/spreadsheets/d/1MXCHhsdidk8pyhxWhoyMywMVxyihdxkFez7i2jI_Rkw/edit?usp=sharing).
+Data k jednotlivým grafům jsou k dispozici v [našem datasetu](https://docs.google.com/spreadsheets/d/1MXCHhsdidk8pyhxWhoyMywMVxyihdxkFez7i2jI_Rkw/edit?usp=sharing).
 
-[^ets-emise]: Pro emise nepokryté ETS 1 platí v současnosti závazky jednak v rámci nařízení o sdílení úsilí (*Effort Sharing Regulation*, ESR), jednak v rámci nařízení o využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF). Zatímco ESR se vztahuje k sektorům budov, dopravy, zemědělství, odpadového hospodářství, malého průmyslu a energetiky, nařízení LULUCF vytyčuje cíle pro pohlcení emisí lesy, mokřady, pastvinami, poli atd.
+[^ets-emise]: Pro emise nepokryté ETS 1 platí v současnosti závazky jednak v rámci nařízení o sdílení úsilí (*Effort Sharing Regulation*, ESR), jednak v rámci nařízení o využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF). Zatímco ESR se vztahuje k sektorům budov, dopravy, zemědělství, odpadového hospodářství, malého průmyslu a energetiky, nařízení LULUCF vytyčuje cíle pro pohlcování emisí lesy, mokřady, pastvinami, poli atd.
 [^doprava-emise]: Emise z dopravy navíc na rozdíl od ostatních sektorů ekonomiky stále [narůstají](/infografiky/emise-eu-vyvoj): v porovnání s rokem 1990 došlo v roce 2021 na úrovni EU o nárůst ve výši 18 %, v Česku [vzrostly](/infografiky/emise-cr-vyvoj) o více než polovinu, 62 %.
 [^uhlikova-dan]: Co se týče emisí skleníkových plynů ze silniční dopravy a budov, v některých zemích podléhají uhlíkové dani, ale např. v Česku dosud zpoplatněny nebyly.
 [^danove-sklady]: Podle [dopadové studie Evropské komise](https://eur-lex.europa.eu/resource.html?uri=cellar:7b89687a-eec6-11eb-a71c-01aa75ed71a1.0001.01/DOC_1&format=PDF) by se povinnost měla dotknout přibližně 11 400 entit – [daňových skladů](https://cs.wikipedia.org/wiki/Da%C5%88ov%C3%BD_sklad) pro ropu a lokálních dodavatelů plynu a uhlí.
-[^odlozeni]: Viz článek 30k [směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
-[^redukcni-faktor]: Viz článek 30c [směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959). Množství povolenek, které bude k dispozici od roku 2027, se lineárně snižuje již od roku 2024 (o 5,1 %).
-[^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v článku 30h [směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
+[^odlozeni]: Viz [článek 30k směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030K).
+[^redukcni-faktor]: Viz [článek 30c směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030C). Množství povolenek, které bude k dispozici od roku 2027, se lineárně snižuje již od roku 2024 (o 5,1 %).
+[^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v [článku 30h směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030H).
 [^cbam]: Od roku 2026 (s postupným náběhem od roku 2023) začne fungovat [mechanismus uhlíkového vyrování na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM), který dovoz emisně náročných produktů do EU zpoplatní, čímž dojde k narovnání podmínek s domácími výrobci. Z toho důvodu budou povolenky zdarma postupně vyřazovány a v roce 2034 skončí úplně.
-[^skf]: Sociální klimatický fond začně fungovat o rok dříve, než se ETS 2 spustí, z toho důvodu bude pro jeho financování využito i 50 milionů povolenek dražených v rámci ETS 1.
+[^skf]: Sociální klimatický fond začne fungovat o rok dříve, než se ETS 2 spustí, z toho důvodu bude pro jeho financování využito i 50 milionů povolenek dražených v rámci ETS 1.
 [^uhli]: Uhlí je na rozdíl od ostatních paliv velmi levným zdrojem – je lokální a málo zdaněné. Navíc má vyšší emisní intenzitu než ostatní paliva, proto se zavedení povolenky na jeho ceně projeví více.
