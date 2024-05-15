@@ -92,7 +92,7 @@ Tuto logiku lze použít pro výpočet výnosů zpětně vzhledem ke skutečně 
 
 Dopady zpoplatnění paliv zatíží především nízkopříjmové domácnosti a menší podniky, které typicky za pohonné hmoty a energie vynakládají významnou část svých příjmů. Kromě materiální podpory je důležité **včas komunikovat**, že toto zpoplatnění v příštích letech přijde a ideálně souběžně s tvorbou Sociálního klimatického plánu představit opatření, díky nimž budou domácnosti moci přejít k nízkoemisním alternativám.
 
-Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, nafty, zemního plynu a uhlí. Za pozornost stojí dopad na cenu uhlí, kdy je ve všech případech její nárůst vyšší o více než 30 %.[^uhli]
+Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, nafty, zemního plynu a uhlí. Za pozornost stojí dopad na cenu uhlí, kdy je ve všech případech její nárůst vyšší o více než 30 %.[^uhli] Co se týče biomasy (například dřeva), u té se při udržitelném pěstování předpokládá nulový emisní faktor, a tedy v takovém případě nepodléhá nákupu povolenek.
 
 {% include figure.html
     name="cs-dopady-povolenky-na-cenu-paliv-des.svg"
@@ -104,12 +104,12 @@ Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného
 
 {% capture komplementarita %}
 
-K tomu, aby došlo k významnému snížení emisí skleníkových plynů v sektoru silniční dopravy a budov **je potřeba kromě jejich zpoplatnění i dalších nástrojů** (např. regulací nebo dotační a investiční podpory), které společně nasměrují tyto sektory k dekarbonizaci. Na poli evropské klimatické politiky došlo v rámci balíčku [Fit for 55](/infografiky/fit-for-55) k přijetí několika takových nástrojů, kterými jsou například:
+K tomu, aby došlo k významnému snížení emisí skleníkových plynů v sektoru silniční dopravy a budov, **je potřeba kromě jejich zpoplatnění i dalších nástrojů** (např. regulací nebo dotační a investiční podpory), které společně nasměrují tyto sektory k dekarbonizaci. Na poli evropské klimatické politiky došlo v rámci balíčku [Fit for 55](/infografiky/fit-for-55) k přijetí několika takových nástrojů, kterými jsou například:
 - [Směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275) (*Energy Performance of Buildings Directive*, EPBD), jejímž záměrem je snížit energetickou i emisní náročnost budov, a podpořit tak renovace, instalaci obnovitelných zdrojů energie atd. Směrnice stanovuje, že všechny nové budovy by měly být od roku 2030 bezemisní.
 - [Nařízení o přísnějších emisních standardech pro automobily a dodávky](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023R0851), podle kterého nebude  po roce 2035 možné prodávat nové automobily a dodávky produkující emise CO<sub>2</sub>.
 - [Nařízení o zavádění infrastruktury pro alternativní paliva](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R1804) má podpořit budování dobíjecí infrastruktury či infrastruktury pro čerpání vodíku.
 
-V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro dekarbonizaci, což úzce souvisí s otázkou průmyslové politiky EU, v současnosti reprezentované především [Průmyslovým plánem Zelené dohody](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52023DC0062&from=CS) (*Green Deal Industrial Plan*, GDIP) a související legislativou. Jejím záměrem je podpořit bezemisní technologie vyráběných na unijní půjdě (a zmírnit tak závislost na dovozu ze třetích zemí, zejména Číny), stejně jako zajistit dostatek strategických materiálů potřebných pro jejich produkci. Mimo to je zásadní i dostatek kvalifikované pracovní síly (například v případě chce-li si domácnost pořídit tepelné čerpadlo, je potřeba, aby bylo dostupné a aby zároveň byli k dispozici pracovníci, kteří jej mohou nainstalovat).
+V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro dekarbonizaci, což úzce souvisí s otázkou průmyslové politiky EU, v současnosti reprezentované především [Průmyslovým plánem Zelené dohody](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52023DC0062&from=CS) (*Green Deal Industrial Plan*, GDIP) a související legislativou. Jejím záměrem je podpořit bezemisní technologie vyráběné na unijní půjdě (a zmírnit tak závislost na dovozu ze třetích zemí, zejména Číny), stejně jako zajistit dostatek strategických materiálů potřebných pro jejich produkci. Mimo to je zásadní i dostatek kvalifikované pracovní síly (pokud si například domácnost plánuje pořídit tepelné čerpadlo, je potřeba, aby bylo dostupné a aby zároveň byli k dispozici pracovníci, kteří jej mohou nainstalovat).
 
 {% endcapture %}
 
