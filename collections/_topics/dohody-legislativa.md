@@ -85,7 +85,7 @@ subtopics:
   - fit-for-55
   - fit-for-55-opatreni
   - 19-fit-for-55
-  - emisni-povolenky-ets-2
+  # - emisni-povolenky-ets-2
   - fondy-eu
   - taxonomie-eu
   - fondy-eu-cde

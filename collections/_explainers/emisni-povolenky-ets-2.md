@@ -2,7 +2,8 @@
 layout:      explainer
 title:       "Jak bude fungovat zpoplatnění emisí skleníkových plynů z dopravy a budov (tzv. ETS 2)?"
 slug:        "emisni-povolenky-ets-2"
-published:   2024-05-15
+# published:   2024-05-15
+published:   false
 authors:
   - id: "katerina-kolouchova"
   - ids: ["katerina-kolouchova", "marcel-otruba"]
