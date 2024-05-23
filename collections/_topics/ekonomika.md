@@ -99,7 +99,7 @@ subtopics:
     Mitigace změny klimatu stojí na efektivních tržních a regulačních opatřeních, které **narovnávají tržní prostředí tak, aby snižování emisí skleníkových plynů a udržitelné podnikání bylo v obchodním zájmu** jednotlivých firem. Klíčovým pilířem těchto opatření je **zpoplatnění emisí skleníkových plynů**.
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
   - emisni-povolenky-ets
-  # - emisni-povolenky-ets-2
+  - emisni-povolenky-ets-2
   - zpoplatneni-emisi-svet
   - 26-klimaticka-dividenda
   - mitigacni-opatreni-mmf
