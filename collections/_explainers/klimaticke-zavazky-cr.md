@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jaké jsou závazky Česka v oblasti klimatu?"
 slug:        "klimaticke-zavazky-cr"
 published:   2023-08-17
-updated:     2024-04-18
+updated:     2024-06-03
 authors:
   - id: "katerina-kolouchova"
   - id: "jirka-lnenicka"
@@ -93,7 +93,7 @@ Pro emise skleníkových plynů, které spadají pod systém obchodování s emi
     source="Fakta o klimatu"
 %}
 
-Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sektory budov a silniční dopravy (tzv. EU ETS 2). Stejně jako u stávajícího EU ETS zmíněného výše zde existuje **pouze společný unijní cíl**, a to **snížit emise skleníkových plynů v těchto sektorech o 43 %** do roku 2030 (v porovnání s rokem 2005). Pokud jde o české emise ze silniční dopravy a budov, rozdíl v roce 2021 (v porovnání s rokem 2005) činil −17 %,[^eu-ets-2-vypocet] což není ani polovina z unijního cíle.
+Od roku 2027 se systém obchodování s emisními povolenkami rozšíří na sektory budov a silniční dopravy a sektory malé energetiky a průmyslu, které nespadají pod stávající ETS systém (tzv. EU ETS 2).  Stejně jako u stávajícího EU ETS zmíněného výše zde existuje **pouze společný unijní cíl**, a to **snížit emise skleníkových plynů v těchto sektorech o 42 %** do roku 2030 (v porovnání s rokem 2005). Pokud jde o české emise v těchto sektorech, rozdíl v roce 2021 (v porovnání s rokem 2005) činil −17 %,[^eu-ets-2-vypocet] což není ani polovina z unijního cíle.
 
 ### Snížení emisí mimo EU ETS
 
@@ -171,7 +171,7 @@ Všechna data použitá pro znázornění vývoje indikátorů jednotlivých zá
 [^emisni-zavazek-cr]: Jde o emise skleníkových plynů ze všech sektorů hospodářství včetně emisí ze sektoru využití půdy, změn ve využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF) a mezinárodní letecké dopravy.
 [^ets-smernice]: Cíl upravuje [směrnice EU o obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959).
 [^namorni-doprava]: Námořní doprava bude do EU ETS zařazena mezi lety 2024–2026.
-[^eu-ets-2-vypocet]: Výpočet emisí skleníkových plynů, které spadají pod sektory silniční dopravy a budov a od roku 2027 budou součástí EU ETS 2, vychází z metodologie obsažené ve [směrnici EU o obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) v Příloze III.
+[^eu-ets-2-vypocet]: Výpočet emisí skleníkových plynů, které spadají pod sektory silniční dopravy, budov a malé energetiky a průmyslu a od roku 2027 budou součástí EU ETS 2, vychází z metodologie obsažené ve [směrnici EU o obchodování s emisními povolenkami](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959) v Příloze III.
 [^red]: Závazek 42,5 % vychází ze [směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413).
 [^eed]: Společný závazek EU je založen na jiné metrice, než je stávající závazek ČR, proto jej v textu pro porovnání neuvádíme. Podle [směrnice o energetické účinnosti má](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023L1791) v EU dosáhnout konečná spotřeba energie v roce 2030 o 11,7 % nižší hodnoty, než ji modeluje [referenční scénář Evropské komise z roku 2020](https://energy.ec.europa.eu/data-and-analysis/energy-modelling/eu-reference-scenario-2020_en).
 [^lulucf-zavazek]: Závazky v sektoru LULUCF pro jednotlivé členské státy stanovuje [nařízení EU o využívání půdy a lesnictví](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839).
