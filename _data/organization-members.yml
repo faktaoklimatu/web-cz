@@ -78,7 +78,7 @@
     www: "https://otruba.sk/"
 
   - id: "matej-grabovsky"
-    name: "Matěj Grabovský"
+    name: "Matěj Kolouch Grabovský"
     position: "Analytik a programátor"
     summary: "Tvoří modely, zpracovává a analyzuje data v oblastech spjatých s transformací. Jako softwarový inženýr pracoval na webových aplikacích a distribuovaných systémech."
     img: "matej-grabovsky.jpg"
@@ -102,8 +102,8 @@
 
   - id: "milan-vitek"
     name: "Milan Vítek"
-    position: "Správce sociálních sítí"
-    summary: "Stará se o sociální sítě Fakt o klimatu. Kromě toho se zabývá tématem vlivu změny klimatu na extrémy počasí."
+    position: "Média, PR a sociální sítě"
+    summary: "Stará se o to, aby se materiály Fakt o klimatu dostaly k novinářům, učitelům, politikům a dalším lidem, pro které mohou být užitečné v jejich práci. Kromě toho se zabývá tématem vlivu změny klimatu na extrémy počasí."
     img: "milan-vitek.jpg"
     email: "milan.vitek@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
