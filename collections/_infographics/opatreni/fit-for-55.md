@@ -84,7 +84,7 @@ Níže uvádíme přehled opatření včetně odkazů na poslední verzi legisla
 #### Energetická účinnost
 
 * [Revize směrnice o energetické účinnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023L1791) (*Energy Efficiency Directive*, EED) {% include includes-local/fit-for-55-icon.html status="done" %}
-* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD)[^epbd] {% include includes-local/fit-for-55-icon.html status="inprogress" %}
+* [Revize směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275) (*Energy Performance of Buildings Directive*, EPBD)[^epbd] {% include includes-local/fit-for-55-icon.html status="done" %}
 
 #### Doprava
 

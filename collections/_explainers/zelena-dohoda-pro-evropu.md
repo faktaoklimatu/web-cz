@@ -302,7 +302,7 @@ Zelená dohoda jako taková představuje rámec pro celou EU. Z hlediska jejího
 [^co2-emise-auta]: Členské státy EU se už [v rámci balíčku Fit for 55](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851) shodly na tom, že od roku 2035 nebude možné vyrábět nové vozy se spalovacími motory vypouštějícími emise CO<sub>2</sub>.
 [^eurostat]: Aktuální data o emisích skleníkových plynů v EU poskytuje databáze [Eurostat](https://ec.europa.eu/eurostat/databrowser/view/ENV_AIR_GGE/default/table?lang=en).
 [^emise-budovy]: Hodnoty o spotřebě energie a emisích skleníkových plynů v sektoru budov pochází z roku 2020. Na svých stránkách je uvádí [Evropská komise](https://ec.europa.eu/info/news/focus-energy-efficiency-buildings-2020-lut-17_en).
-[^renovacni-vlna]: Zmíněné priority v sektoru budov se odráží v legislativním návrhu [Směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/cs/TXT/?uri=COM%3A2021%3A802%3AFIN) (*Energy Performance of Buildings Directive*, EPBD), jenž je součástí balíčku Fit for 55.
+[^renovacni-vlna]: Zmíněné priority v sektoru budov se odráží v legislativním návrhu [Směrnice o energetické náročnosti budov](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275) (*Energy Performance of Buildings Directive*, EPBD), jenž je součástí balíčku Fit for 55.
 [^vodik-vysvetleni]: Zelený vodík se vyrábí elektrolýzou vody za využití energie z obnovitelných zdrojů.
 [^akcni-plan]: Na zmíněné návrhy Zelené dohody navázala Komise [akčním plánem pro oběhové hospodářství](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52020DC0098).
 [^ember]: Data o energetických mixech států přehledně zpřístupňuje think tank [Ember](https://ember-climate.org/data/data-explorer/).
