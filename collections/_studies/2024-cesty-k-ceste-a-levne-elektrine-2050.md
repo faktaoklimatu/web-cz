@@ -21,11 +21,9 @@ authors:
     minor-role: "vizualizace, sazba a grafická úprava"
   - id: "jirka-lnenicka"
     minor-role: "editace a korektura"
-
 type:             "Studie"
 perex: |
   Česko, stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem tato studie přináší celou škálu scénářů pro rok 2050, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou. Modelování se zaměřuje na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny (aby dokázalo být v rámci Evropy konkurenceschopné).
-
 ---
 
 ## Důležitá rozhodnutí na dlouho dopředu, která Česko musí udělat dnes
