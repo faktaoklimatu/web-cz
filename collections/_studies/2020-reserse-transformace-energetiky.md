@@ -5,12 +5,29 @@ slug:        2020-reserse-transformace-energetiky
 redirect_from: "/2020-reserse-transformace-energetiky"
 weight:      300
 published:   2020-11-18
+updated:     2024-06-11
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky."
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Cesty k čisté a levné elektřině v roce 2050"
+    date:    Červen 2024
+    url:     "https://faktaoklimatu.cz/studie/2024-cesty-k-ciste-a-levne-elektrine-2050"
+    authors:
+      - name: Fakta o klimatu
+        url:  "https://faktaoklimatu.cz/"
+    timeframe: 2050
+  - title:   "Rozvoj obnovitelné energie v Česku do roku 2030 pro posílení bezpečnosti a plnění klimatických cílů EU"
+    date:    Březen 2023
+    url:     "https://faktaoklimatu.cz/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030"
+    authors:
+      - name: Fakta o klimatu
+        url:  "https://faktaoklimatu.cz/"
+      - name: Frank Bold
+        url:  "https://frankbold.org/"
+    timeframe: 2030
   - title:   "Energetická revoluce: Jak zajistit elektřinu, teplo a dopravu bez fosilních paliv"
     date:    Říjen 2021
     url:     "https://hnutiduha.cz/aktualne/nova-studie-v-roce-2030-se-obejdeme-bez-uhli-cesta-ke-konci-plynu-ropy-vyzaduje-zasadni"
