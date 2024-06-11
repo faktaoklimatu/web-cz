@@ -3,9 +3,9 @@ layout:           publication
 title:            "Cesty k čisté a levné elektřině v roce 2050"
 title_formatted:  "Cesty k čisté a levné elektřině v roce 2050"
 subtitle:         "Jakou roli v dlouhodobém rozvoji <br> elektroenergetiky hraje <br> rozvoj jaderné energetiky?"
-slug:             2024-cesty-k-ceste-a-levne-elektrine-2050
+slug:             2024-cesty-k-ciste-a-levne-elektrine-2050
 redirect_from:
-  - /2024-cesty-k-ceste-a-levne-elektrine-2050
+  - /2024-cesty-k-ciste-a-levne-elektrine-2050
 published:        2024-06-12
 background_color: "#81CEC9"
 text_color: "black"
