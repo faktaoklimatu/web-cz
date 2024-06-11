@@ -22,7 +22,7 @@ subtopics:
   lead: |
     Zpracováváme odborné studie, ve kterých využíváme vlastní analýzy a modelování. Pokud byste chtěli využít naši expertízu a nechat si námi nějakou studii nebo její část vypracovat, [ozvěte se nám](/o-nas#kontaktni-udaje).
   content:
-  - 2024-cesty-k-ceste-a-levne-elektrine-2050
+  - 2024-cesty-k-ciste-a-levne-elektrine-2050
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny
 ---

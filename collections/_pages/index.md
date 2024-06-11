@@ -47,7 +47,7 @@ slug: index
         </p>
       </div>
       <div class="col-md">
-        {% include preview-block.html slug="2024-cesty-k-ceste-a-levne-elektrine-2050" no_include_tags=true %}
+        {% include preview-block.html slug="2024-cesty-k-ciste-a-levne-elektrine-2050" no_include_tags=true %}
       </div>
     </div>
   </div></div>
@@ -67,7 +67,7 @@ slug: index
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "atlas, 2024-cesty-k-ceste-a-levne-elektrine-2050, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
+    {% assign featured_slugs = "atlas, 2024-cesty-k-ciste-a-levne-elektrine-2050, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
