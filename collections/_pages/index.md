@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas of Climate Change</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Levná elektřina v roce 2050</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -38,13 +38,16 @@ slug: index
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
       <div class="col-md-8">
-        <p>Kvalitní debata o klimatické změně je z mnoha důvodů komplikovaná, ať už složitostí tématu nebo pro silné emoce, které zákonitě vzbuzuje. K hledání a nacházení řešení klimatické změny je potřeba vést <strong>konstruktivní a informovanou diskuzi</strong>, která je založena na <strong>datech a faktech</strong>.</p>
-        <p>Proto jsme připravili <a href="https://factsonclimate.org/atlas" target="_blank">anglickou verzi <strong>Atlasu klimatické změny</strong></a>. Cílem Atlasu je podpořit globální snahu o zvyšování povědomí o jednom z nejpalčivějších témat současnosti, zároveň chce publikace pomoci v <strong>hledání efektivních řešení</strong>. Novinka je k dispozici ke stažení ve formátu PDF.</p>
+        <p>
+        Česko, stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem jsme zpracovali <strong>celou škálu scénářů pro rok 2050</strong>, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou.
+        </p>
+        <p>
+        V modelování jsme se zaměřovali na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny, aby dokázalo být v rámci Evropy konkurenceschopné.
+        Z výsledků vyplývá, že pro udržení nízkých nákladů na výrobu elektřiny jsou klíčové tři faktory: <strong>rozvoj větrné energetiky, úspory ve spotřebě a míra propojení a spolupráce v Evropě.</strong>
+        </p>
       </div>
       <div class="col-md">
-        <a class="no-ext-link-icon" href="https://factsonclimate.org/atlas" target="_blank">
-          <img src="/assets-local/img/atlas-en-front.png" class="img-fluid" alt="Vizualizace anglického Atlasu klimatické změny">
-        </a>
+        {% include preview-block.html slug="2024-cesty-k-ceste-a-levne-elektrine-2050" no_include_tags=true %}
       </div>
     </div>
   </div></div>
@@ -64,7 +67,7 @@ slug: index
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "atlas, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030, 2023-prinos-lesni-certifikace-v-casech-klimaticke-zmeny" | split: ", " %}
+    {% assign featured_slugs = "atlas, 2024-cesty-k-ceste-a-levne-elektrine-2050, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
