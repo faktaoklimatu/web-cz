@@ -91,7 +91,7 @@ Důležitou roli bude hrát i **solární energetika** – v dalších letech by
 
 <div class="grid-figures studie-2050-kroky" markdown="1">
 {% include figure.html
-    name="ikonka-propojena-Evropa.svg"
+    name="ikonka-propojena-evropa.svg"
     alt="Piktogram propojení Evropy"
     no-lightbox=true
 %}
