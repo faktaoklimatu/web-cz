@@ -23,7 +23,7 @@ authors:
     minor-role: "editace a korektura"
 type:             "Studie"
 perex: |
-  Česko, stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem tato studie přináší celou škálu scénářů pro rok 2050, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou. Modelování se zaměřuje na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny (aby dokázalo být v rámci Evropy konkurenceschopné).
+  Česko stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem tato studie přináší celou škálu scénářů pro rok 2050, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou. Modelování se zaměřuje na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny (aby dokázalo být v rámci Evropy konkurenceschopné).
 ---
 
 ## Důležitá rozhodnutí na dlouho dopředu, která Česko musí udělat dnes
@@ -42,7 +42,7 @@ Pákovým bodem celé dekarbonizace je **bezemisní výroba elektřiny**. Z hled
 {:.arrow}
 
 Při hledání odpovědí na tyto otázky používá studie optimalizační model evropské elektrizační soustavy, který umožňuje hledat nejlevnější mix zdrojů. Výstupy z modelování jsou ovšem závislé na volbě vstupních parametrů, což je spojeno s významnou nejistotou. Proto jako podklad pro zodpovědné rozhodování:
-- Jsou parametry zvoleny konzervativně (aneb “jak vyřešit problém roku 2050 technologiemi roku 2030”). Už za 10 let může vše vypadat jinak, ale úplně na to dnes spoléhat nelze.
+- Jsou parametry zvoleny konzervativně (aneb "jak vyřešit problém roku 2050 technologiemi roku 2030"). Už za 10 let může vše vypadat jinak, ale úplně na to dnes spoléhat nelze.
 - Jsou provedeny detailní citlivostní analýzy vzhledem ke klíčovým parametrům, jejichž hodnoty jsou zatím neznámé. To ukazuje, které z těchto parametrů jsou pákové a na kterých naopak příliš nezáleží.
 
 ## Kroky vedoucí k nízkým nákladům na výrobu elektřiny v Česku v roce 2050
@@ -51,6 +51,7 @@ Při hledání odpovědí na tyto otázky používá studie optimalizační mode
     name="kroky-web.svg"
     alt="Kroky vedoucí k nízkým nákladům na výrobu elektřiny v Česku v roce 2050"
     source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/studie/2024-cesty-k-ciste-a-levne-elektrine-2050"
 %}
 
 **Analýza ukazuje, že pro dosažení nízkých nákladů na výrobu elektřiny jsou významné zejména tyto tři kroky: rozvoj větrné energetiky, energetické úspory a propojování Evropy.** Tyto kroky budou pro Česko znamenat přínos v každém případě, naproti tomu efekt rozvoje jaderné energetiky není jednoznačný. Velmi totiž záleží na tom, zda se podaří udržet výstavbu pod kontrolou. Při nízké ceně výstavby by nové jaderné elektrárny ke snížení celkových nákladů přispěly, vysoká cena výstavby by naopak tyto náklady výrazně zvýšila.
@@ -60,7 +61,7 @@ Při hledání odpovědí na tyto otázky používá studie optimalizační mode
 <div class="grid-figures studie-2050-kroky" markdown="1">
 {% include figure.html
     name="ikonka-vitr.svg"
-    alt="Piktogram větrné energetiky"
+    alt="Piktogram větrné elektrárny jako symbol větrné energetiky"
     no-lightbox=true
 %}
 
@@ -68,7 +69,7 @@ Větrná energetika je ekonomicky výhodný zdroj hlavně pro pokrytí vysoké z
 
 {% include figure.html
     name="ikonka-slunce.svg"
-    alt="Piktogram solární energetiky"
+    alt="Piktogram fotovolataického panelu jako symbol solární energetiky"
     no-lightbox=true
 %}
 
@@ -80,7 +81,7 @@ Důležitou roli bude hrát i **solární energetika** – v dalších letech by
 <div class="grid-figures studie-2050-kroky" markdown="1">
 {% include figure.html
     name="ikonka-uspory-energie.svg"
-    alt="Piktogram úspor energie"
+    alt="Piktogram elektroměru jako symbol pro úspory energie"
     no-lightbox=true
 %}
 
@@ -92,7 +93,7 @@ Důležitou roli bude hrát i **solární energetika** – v dalších letech by
 <div class="grid-figures studie-2050-kroky" markdown="1">
 {% include figure.html
     name="ikonka-propojena-evropa.svg"
-    alt="Piktogram propojení Evropy"
+    alt="Zjednodušená mapa Evropy jako symbol propojení evropských států"
     no-lightbox=true
 %}
 
@@ -109,7 +110,7 @@ To platí i pro Česko, a proto bude v dalších dekádách rozhodující, zda s
 {% include figure.html
     name="ikonka-jadro.svg"
     class="leadin-figure-smallest"
-    alt="Piktogram jaderné energetiky"
+    alt="Piktogram elektrárny s chladicí věží jako symbol jaderné energetiky"
 %}
 
 Velké jaderné bloky na rozdíl od kroků výše přináší riziko, že jejich výstavba naopak celkové náklady zvýší.
@@ -123,6 +124,7 @@ Rozvoj jaderné energetiky sám o sobě náklady na výrobu elektřiny podstatn�
     name="prodrazeni-web.svg"
     alt="Riziko velkého prodražení celkových nákladů na výrobu elektřiny je nejnižší při stavbě 1–2 jaderných bloků"
     source-text="Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/studie/2024-cesty-k-ciste-a-levne-elektrine-2050"
 %}
 
 **Rozhodnutí o případných dalších blocích je vhodnější odložit až na období po roce 2030** – více ukáže rozvoj větrné energetiky a propojování Evropy, technologický vývoj a průběh stavby prvních bloků.
