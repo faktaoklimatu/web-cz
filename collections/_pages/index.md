@@ -39,7 +39,7 @@ slug: index
     <div class="row">
       <div class="col-md-8">
         <p>
-        Česko, stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem jsme zpracovali <strong>celou škálu scénářů pro rok 2050</strong>, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou.
+        Česko stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem jsme zpracovali <strong>celou škálu scénářů pro rok 2050</strong>, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou.
         </p>
         <p>
         V modelování jsme se zaměřovali na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny, aby dokázalo být v rámci Evropy konkurenceschopné.
