@@ -114,6 +114,16 @@ $c-callout-text: #373633;
     }
 }
 
+.studie-2050-kroky {
+    grid-template-columns: 3em 1fr;
+}
+
+@media (min-width: 768px) {
+    .studie-2050-kroky {
+        grid-template-columns: 4em 1fr;
+    }
+}
+
 .lesni-certifikace-opatreni {
     grid-template-columns: 80px 1fr;
 }
