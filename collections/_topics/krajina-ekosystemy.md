@@ -134,6 +134,7 @@ subtopics:
   - ekonomicka-hodnota-prirody
   - 2023-reserse-soil-carbon
   - zdravi-pudy-degradace
+  - emise-zemedelstvi
 
 - id:          "serie-uhlikove-offsety"
   series:      True
