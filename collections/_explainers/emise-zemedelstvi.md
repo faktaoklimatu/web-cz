@@ -63,7 +63,7 @@ Zdrojem emisí oxidu dusného je také **hnůj** (N<sub>2</sub>O se uvolňuje p�
 ### Oxid uhličitý
 Emise (CO<sub>2</sub>) představují 4 % celkových emisí ze zemědělství. Vznikají při vápnění půd a při aplikaci močoviny. **Vápnění** slouží ke snižování kyselosti zemědělských půd – používá se vápenec nebo dolomit, oba se však postupně rozpadají (mimo jiné) na vodu a oxid uhličitý. **Močovina** se aplikuje na pole jako průmyslově vyráběné dusíkaté hnojivo. V půdě se však rozkládá na amoniak a oxid uhličitý.
 
-## Zdroje a poznámky
+## Zdroje a poznámky 
 
 [^narizeni-EP]: Dle [nařízení Evropského parlamentu](https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:32023R0857).
 [^EEA]: [Projekce Evropské environmentální agentury](https://www.eea.europa.eu/data-and-maps/daviz/agricultural-emissions-by-eu-member-state-2#tab-chart_3).
