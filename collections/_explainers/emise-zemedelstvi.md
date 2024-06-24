@@ -73,4 +73,4 @@ Emise (CO<sub>2</sub>) představují 4 % celkových emisí ze zemědělství. Vz
 [^prime-neprime]: Dělení emisí na přímé a nepřímé v tomto případě vychází z kategorií, které při výpočtu emisí používá [IPCC](https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/4_6_Indirect_N2O_Agriculture.pdf) a také [ČHMÚ](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf). Nesouvisí s dělením emisí dle Scope 1, 2 a 3. 
 [^procenta-vysvetleni]: Procenta v závorkách udávajú podíl, jakým se každý ze zdrojů podílí na přímých emisích. Do celkových emisí se započítávají také nepřímé emise, které tvoří přibližně 22 % emisí oxidu dusného.
 [^dalsi-faktory]: Mezi další faktory ovlivňující množství emisí patří rovněž např. velikost zvířete, množství vyprodukovaného mléka (pokud jde o dojnice) nebo obsah tuku v mléce.
-[^animal-welfare]: V této souvislosti je však důležité zmínit, že pastva na volné pastvině je síce emisně náročnejší, no z pohladu welfare zvířat mnohem vhodnejší. 
+[^animal-welfare]: V této souvislosti je však důležité zmínit, že pastva na volné pastvině je síce emisně náročnejší, no z pohladu welfare zvířat mnohem vhodnejší.
