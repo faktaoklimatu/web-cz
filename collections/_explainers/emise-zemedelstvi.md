@@ -26,11 +26,11 @@ perex: "V souvislosti s dekarbonizací se často zmiňují oblasti průmyslu a e
 
  Podíl sektoru zemědělství na celkových emisích skleníkových plynů Česka v roce 2022 byl 7 %. Aby Česko splnilo závazky spojené s Pařížskou dohodou, mělo by do roku 2030 snížit své celkové emise o 26 % ve srovnání s rokem 2005[^narizeni-EP]. Oproti roku 2005 však v sektoru zemědělství emise mírně vzrostly a do 2030 se očekává jen mírný pokles – o necelé jedno procento[^EEA].
 
- *Kategorizace zdrojů emisí v tomto textu vychází z rozdělení v [Národení inventarizační zpárvě](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf) ČHMU, se kterou pracuje také EUROSTAT. Na základě této kategorizace v textu neuvádíme emise ze spalování fosilních paliv v zemědělství.*
+ *Kategorizace zdrojů emisí v tomto textu vychází z rozdělení v [Národní inventarizační zprávě](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf) ČHMU, se kterou pracuje také EUROSTAT. Na základě této kategorizace v textu neuvádíme emise ze spalování fosilních paliv v zemědělství.*
 
 ## Které skleníkové plyny v zemědělství vznikají?
 
-Na rozdíl od jiných sektorů (jako například [průmysl](https://faktaoklimatu.cz/infografiky/emise-cr-prumysl?q=prumys)), kde většina emisí připadá na oxid uhličitý, v zemědělství vznikají převážně jiné skleníkové plyny. Při přepočtu na CO<sub>2</sub>eq mají největší podíl emise metanu (48 %) a emise oxidu dusného (také 48 %). Podíl emisí oxidu uhličitého je v zemědělství jen minimální (4 %).
+Na rozdíl od jiných sektorů (jako například [průmysl](https://faktaoklimatu.cz/infografiky/emise-cr-prumysl?q=prumys)), kde většina emisí připadá na oxid uhličitý, v zemědělství vznikají převážně jiné skleníkové plyny. Při přepočtu na CO<sub>2</sub>eq mají největší podíl emise metanu (48 %) a emise oxidu dusného (48 %). Podíl emisí oxidu uhličitého je v zemědělství jen minimální (4 %).
 
 
 {% include expander-figure.html
@@ -54,7 +54,7 @@ Hlavním zdrojem emisí oxidu dusného (N<sub>2</sub>O) jsou **zemědělské pů
 - Syntetická (60 %) a organická hnojiva (5 %) aplikovaná na půdu
 - Zbytky rostlin ponechané na poli (12 %)
 - Moč a výkaly pasoucích se zvířat (2 %)
-- Rozkládající se organická hmota v půdě (tento zdroj měl v roce 2022 pozitivní bilanci - emise neprodukoval, ale pohlcoval)[^procenta-vysvetleni]
+- Rozkládající se organická hmota v půdě (tento zdroj v roce 2022 emise neprodukoval, ale pohlcoval)[^procenta-vysvetleni]
 
 Z těchto zdrojů se emise uvolňují buď přímo, nebo nepřímo[^prime-neprime].\\
 Přímé emise: Z uvedených zdrojů se dusíkaté sloučeniny (např. amoniak - NH<sub>3</sub>) uvolňují do půdy, kde v důsledku aktivity půdních bakterií procházejí různými chemickými procesy (nitrifikační a denitrifikační procesy), při kterých vzniká také oxid dusný.  
@@ -73,4 +73,4 @@ Emise (CO<sub>2</sub>) představují 4 % celkových emisí ze zemědělství. Vz
 [^prime-neprime]: Dělení emisí na přímé a nepřímé v tomto případě vychází z kategorií, které při výpočtu emisí používá [IPCC](https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/4_6_Indirect_N2O_Agriculture.pdf) a také [ČHMÚ](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf). Nesouvisí s dělením emisí dle Scope 1, 2 a 3. 
 [^procenta-vysvetleni]: Procenta v závorkách udávajú podíl, jakým se každý ze zdrojů podílí na přímých emisích. Do celkových emisí se započítávají také nepřímé emise, které tvoří přibližně 22 % emisí oxidu dusného.
 [^dalsi-faktory]: Mezi další faktory ovlivňující množství emisí patří rovněž např. velikost zvířete, množství vyprodukovaného mléka (pokud jde o dojnice) nebo obsah tuku v mléce.
-[^animal-welfare]: V této souvislosti je však důležité zmínit, že pastva na volné pastvině je síce emisně náročnejší, no z pohladu welfare zvířat mnohem vhodnejší. 
+[^animal-welfare]: V této souvislosti je však důležité zmínit, že pastva na volné pastvině je síce emisně náročnejší, no z pohladu welfare zvířat mnohem vhodnejší.
