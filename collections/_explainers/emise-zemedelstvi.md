@@ -20,13 +20,13 @@ cover-source-text:        "Aplikace syntetických hnojiv"
 cover-source-license:     "Adobe Stock License"
 cover-source-license-url: "https://stock.adobe.com/cz/license-terms#standardLicenses"
 cover-source-url:         "https://stock.adobe.com/cz/images/tractor-spraying-vegetable-field-in-sunset/374157566?prev_url=detail"
-perex: "V souvislosti s dekarbonizací se často zmiňují oblasti průmyslu a energetiky. Emise skleníkových plynů však vznikají i v zemědělství, které má zároveň velký potenciál s klimatickou změnou bojovat. Na těchto emisích se podílí praktiky intenzivního zemědělství, ale i naše individuální spotřeba (např. masa nebo mléka). O jednotlivých skleníkových plynech a jejich zdrojích pojednává následující text."
+perex: "V souvislosti s dekarbonizací se mluví zejména o sektorech průmyslu a energetiky. Nicméně emise skleníkových plynů vznikají i v zemědělství, zejména v důsledku intenzivního hospodaření, které je zaměřeno na co nejvyšší výnosy, jak v rostlinné, tak živočišné výrobě. O jaké skleníkové plyny jde a kde přesně vznikají?"
   
 ---
 
  Podíl sektoru zemědělství na celkových emisích skleníkových plynů Česka v roce 2022 byl 7 %. Aby Česko splnilo závazky spojené s Pařížskou dohodou, mělo by do roku 2030 snížit své celkové emise o 26 % ve srovnání s rokem 2005[^narizeni-EP]. Oproti roku 2005 však v sektoru zemědělství emise mírně vzrostly a do 2030 se očekává jen mírný pokles – o necelé jedno procento[^EEA].
 
- *Kategorizace zdrojů emisí v tomto textu vychází z rozdělení v [Národní inventarizační zprávě](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf) ČHMU, se kterou pracuje také EUROSTAT. Na základě této kategorizace v textu neuvádíme emise ze spalování fosilních paliv v zemědělství.*
+ *Kategorizace zdrojů emisí v tomto textu vychází z rozdělení v [Národní inventarizační zprávě](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf) ČHMÚ, s níž pracuje také EUROSTAT. Tato kategorizace nezahrnuje emise ze spalování fosilních paliv v zemědělství.*
 
 ## Které skleníkové plyny v zemědělství vznikají?
 
@@ -43,7 +43,7 @@ Z hlediska oteplování atmosféry se různé skleníkové plyny od sebe liší 
 %}
 
 ### Metan
-Emise metanu (CH<sub>4</sub>) vznikají v zemědělství převážně při procesu **enterické fermentace** (90 % emisí metanu), tedy během trávení přežvýkavců (krávy, kozy, ovce). V komplikovaném žaludku přežvýkavců, složeném ze čtyř propojených částí, žijí bakterie, které kvašením (fermentací) pomáhají rozkládat potravu na jednodušší látky. Při tomto procesu vzniká metan, který pak zvířata říhají a vydechují[^entericka-fermentace]. Naprostá většina (97 %) těchto emisí je spojena s chovem hovězího dobytka, trávení ostatních zvířat (ovce, kozy, prasata) se podílí jen minimálně.
+Emise metanu (CH<sub>4</sub>) vznikají v zemědělství převážně při procesu **enterické fermentace** (90 % emisí metanu), tedy během trávení přežvýkavců (krávy, kozy, ovce). V komplikovaném žaludku přežvýkavců, složeném ze čtyř propojených částí, žijí bakterie, které kvašením (fermentací) pomáhají rozkládat potravu na jednodušší látky. Při tomto procesu vzniká metan, který pak zvířata říhají a vydechují[^entericka-fermentace]. Naprostá většina těchto emisí je spojena s chovem hovězího dobytka, trávení ostatních zvířat (ovce, kozy, prasata) se podílí jen minimálně.
 
 Množství vyprodukovaných emisí metanu závisí hlavně na počtu zvířat. Nicméně důležitým faktorem je také to, kolik potravy zvíře přijme a jak se k ní dostane (pokud se kráva pohybuje v prostoru chléva, spotřebuje na získání potravy méně energie a tedy potřebuje i méně potravy než kráva, která se pohybuje po pastvině a hledá potravu, vodu a přístřešek).[^animal-welfare] [^dalsi-faktory]
 
@@ -53,11 +53,11 @@ Dalším zdrojem metanu v zemědělství je také **hnůj**, tedy organický odp
 Hlavním zdrojem emisí oxidu dusného (N<sub>2</sub>O) jsou **zemědělské půdy** (90 % emisí oxidu dusného ze zemědělství), resp. způsob jejich obhospodařování. Bakterie v půdě rozkládají organickou hmotu a složitější látky a přeměňují je na jednodušší sloučeniny využitelné pro rostliny – jedním z produktů těchto procesů je však i oxid dusný. Konkrétně jsou zdroji těchto emisí:
 - Syntetická (60 %) a organická hnojiva (5 %) aplikovaná na půdu
 - Zbytky rostlin ponechané na poli (12 %)
-- Moč a výkaly pasoucích se zvířat (2 %)
-- Rozkládající se organická hmota v půdě (tento zdroj v roce 2022 emise neprodukoval, ale pohlcoval)[^procenta-vysvetleni]
+- Moč a výkaly pasoucích se zvířat (2 %)[^procenta-vysvetleni]
+- Rozkládající se organická hmota v půdě[^org-hmota]
 
 Z těchto zdrojů se emise uvolňují buď přímo, nebo nepřímo[^prime-neprime].\\
-Přímé emise: Z uvedených zdrojů se dusíkaté sloučeniny (např. amoniak - NH<sub>3</sub>) uvolňují do půdy, kde v důsledku aktivity půdních bakterií procházejí různými chemickými procesy (nitrifikační a denitrifikační procesy), při kterých vzniká také oxid dusný.  
+Přímé emise: Z uvedených zdrojů se dusíkaté sloučeniny (např. amoniak – NH<sub>3</sub>) uvolňují do půdy, kde v důsledku aktivity půdních bakterií procházejí různými chemickými procesy (nitrifikační a denitrifikační procesy), při kterých vzniká také oxid dusný.  
 Nepřímé emise: Dusíkaté sloučeniny se z půdy uvolňují do ovzduší nebo pronikají do povrchových či podzemních vod. Z ovzduší dopadají zpět na půdu (nebo se dostávají do povrchových vod) a teprve pak se proměňují na oxid dusný a znovu se uvolňují do atmosféry. 
 
 Zdrojem emisí oxidu dusného je také **hnůj** (N<sub>2</sub>O se uvolňuje při nitrifikačních a denitrifikačních procesech). Mezi faktory, které se na množství emisí podílejí patří např. forma organického odpadu nebo způsob jeho uskladnění (např. v tekuté kejdě vzniká více emisí než v sušší mrvě). Hnůj je rovněž zdrojem nepřímých emisí oxidu dusného: dusík se z hnoje uvolňuje např. ve formě amoniaku, který se v plynném nebo kapalném skupenství dostává do půdy nebo povrchových vod. Zde opět probíhají chemické procesy, jejichž výsledkem jsou emise N<sub>2</sub>O.
@@ -70,7 +70,8 @@ Emise (CO<sub>2</sub>) představují 4 % celkových emisí ze zemědělství. Vz
 [^narizeni-EP]: Dle [nařízení Evropského parlamentu](https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:32023R0857).
 [^EEA]: [Projekce Evropské environmentální agentury](https://www.eea.europa.eu/data-and-maps/daviz/agricultural-emissions-by-eu-member-state-2#tab-chart_3).
 [^entericka-fermentace]: Enterická fermentace probíhá pouze u býložravců, aby byli schopni z poměrně málo výživné potravy (ve srovnání s potravou masožravců nebo všežravců) získat co nejvíce energie. U přežvýkavců (např. kráva, koza, ovce, jelen) se potrava posouvá tam a zpět, u býložravců s jednoduchým žaludkem jde o tzv. fermentaci zadního střeva, tedy fermentační procesy se neodehrávají v žaludku, ale až ve střevě.
-[^prime-neprime]: Dělení emisí na přímé a nepřímé v tomto případě vychází z kategorií, které při výpočtu emisí používá [IPCC](https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/4_6_Indirect_N2O_Agriculture.pdf) a také [ČHMÚ](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf). Nesouvisí s dělením emisí dle Scope 1, 2 a 3. 
-[^procenta-vysvetleni]: Procenta v závorkách udávajú podíl, jakým se každý ze zdrojů podílí na přímých emisích. Do celkových emisí se započítávají také nepřímé emise, které tvoří přibližně 22 % emisí oxidu dusného.
+[^prime-neprime]: Dělení emisí na přímé a nepřímé v tomto případě vychází z kategorií, které při výpočtu emisí používá [IPCC](https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/4_6_Indirect_N2O_Agriculture.pdf) a také [ČHMÚ](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/NIR/CZE_NID-2024-2022_main_text_UNFCCC.pdf). Nesouvisí s dělením emisí dle Scope 1, 2 a 3, které se používá v emisním účetnictví. 
+[^procenta-vysvetleni]: Procenta v závorkách udávají podíl, jímž se každý ze zdrojů podílí na přímých emisích. Do celkových emisí se však započítávají také emise nepřímé (přibližně 22 % emisí N<sub>2</sub>O).
+[^org-hmota]: Tento zdroj v roce 2022 emise neprodukoval, ale pohlcoval.
 [^dalsi-faktory]: Mezi další faktory ovlivňující množství emisí patří rovněž např. velikost zvířete, množství vyprodukovaného mléka (pokud jde o dojnice) nebo obsah tuku v mléce.
-[^animal-welfare]: V této souvislosti je však důležité zmínit, že pastva na volné pastvině je síce emisně náročnejší, no z pohladu welfare zvířat mnohem vhodnejší.
+[^animal-welfare]: V této souvislosti je ovšem třeba zmínit i to, že i když je chov na volné pastvině emisně náročnější, z hlediska welfare zvířat jde o mnohem vhodnější variantu.
