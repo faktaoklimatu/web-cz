@@ -23,6 +23,10 @@ cover-source-url:         "https://stock.adobe.com/cz/images/tractor-spraying-ve
 perex: "V souvislosti s dekarbonizací se mluví zejména o sektorech průmyslu a energetiky. Nicméně emise skleníkových plynů vznikají i v zemědělství, zejména v důsledku intenzivního hospodaření, které je zaměřeno na co nejvyšší výnosy, jak v rostlinné, tak živočišné výrobě. O jaké skleníkové plyny jde a kde přesně vznikají?"
   
 ---
+{% include figure.html
+    name="emise-cr-kontext-des.svg"
+    alt="Graf zobrazující TODO"
+%}
 
  Podíl sektoru zemědělství na celkových emisích skleníkových plynů Česka v roce 2022 byl 7 %. Aby Česko splnilo závazky spojené s Pařížskou dohodou, mělo by do roku 2030 snížit své celkové emise o 26 % ve srovnání s rokem 2005[^narizeni-EP]. Oproti roku 2005 však v sektoru zemědělství emise mírně vzrostly a do 2030 se očekává jen mírný pokles – o necelé jedno procento[^EEA].
 
