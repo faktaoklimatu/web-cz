@@ -203,7 +203,7 @@ Průměrný výkon české domácnosti[^6] je přibližně 420 W[^7]. Maximáln�
 
 Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou hodnotou, neboť jednotlivé domácnosti se svou roční spotřebou elektřiny značně liší – záleží například na tom, zda jde o byt nebo rodinný dům, jestli domácnost elektřinou i topí (což v Česku není příliš obvyklé), případně ji používá na vaření apod. Průměrná česká domácnost **v bytě** spotřebuje **za rok 1 212 kWh na osobu**, **v rodinném domě **je to **2 030 kWh na osobu**.
 
-
+include figure.html file = pokus.jpg
 #### Domácnosti ve městech
 
 Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW a roční spotřeba 22,4 GWh. Do celkového výkonu a spotřeby města je ovšem nutné započítat také průmysl, služby, dopravu, veřejné osvětlení a mnoho dalšího. Na domácnosti připadá jen menší část celkové spotřeby: například v Brně spotřebují **domácnosti přibližně** 448,4 GWh, což je asi **čtvrtina z celkové spotřeby města **(1,8 TWh)[^9]. Podobné je to v Praze: domácnosti cca čtvrtina (1,5 TWh) z celkové spotřeby elektřiny v Praze (6 TWh)[^10]. Příklady roční spotřeby elektřiny ve městech různých velikostí ukazuje následující tabulka[^11].
@@ -308,20 +308,12 @@ Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na 
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.png "image_tooltip")
 
 
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
 
 
 (graf bude hezčí)
