@@ -74,7 +74,7 @@ Společná zemědělská politika (SZP) tvoří přibližně třetinu výdajů z
 
 Česká republika se svým státním rozpočtem různou měrou podílí na **kofinancování** projektů z fondů EU. Míra tohoto kofinancování se liší jak mezi jednotlivými fondy, tak v rámci fondů – v závislosti na typu příjemce, kteří se rovněž ve většině případů na kofinancování podílejí, nebo na hospodářské rozvinutosti regionu.[^kofinancovani]
 
-Do státního rozpočtu plynou také další **výnosy z emisních povolenek**, které Česko získá jejich dražbou (a které nejsou draženy např. pro Modernizační nebo Inovační fond). Podle současných požadavků Evropské komise by 100 % výnosů mělo směřovat na klimatická opatření. Podle [odhadů ministerstva životního prostředí](https://odok.cz/portal/services/download/attachment/ALBSCYBD49Y0/) by Česko mohlo v období 2021–2030 z aukcí emisních povolenek získat přibližně **193–316 miliard korun** (v závislosti na ceně povolenky). V současné době ČR informace o tom, na jaké konkrétní projekty výnosy z povolenek směřují, nezveřejňuje.[^frank-bold]
+Do státního rozpočtu plynou také další **výnosy z emisních povolenek**, které Česko získá jejich dražbou (a které nejsou draženy např. pro Modernizační nebo Inovační fond). Podle současných požadavků Evropské komise by 100 % výnosů mělo směřovat na klimatická opatření. Podle [odhadů Ministerstva životního prostředí](https://odok.cz/portal/services/download/attachment/ALBSCYBD49Y0/) by Česko mohlo v období 2021–2030 z aukcí emisních povolenek získat přibližně **193–316 miliard korun** (v závislosti na ceně povolenky). V současné době ČR informace o tom, na jaké konkrétní projekty výnosy z povolenek směřují, nezveřejňuje.[^frank-bold]
 
 ## Zdroje a poznámky
 
