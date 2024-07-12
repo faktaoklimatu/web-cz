@@ -21,8 +21,8 @@ Na rozdíl od jiných sektorů, kde většina emisí skleníkových plynů přip
 {% include figure.html
 name="emise-podle-plynu-des.svg"
 name-mobile="emise-podle-plynu-mob.svg"
-alt="TODO"
-source-text="EUROSTAT/EEA ČR, výpočty Fakt o klimatu"
+alt="Emise ze zemědělství podle skleníkových plynů"
+source-text="EUROSTAT, ČHMÚ, výpočty Fakt o klimatu"
 %}
 
 Z hlediska oteplování atmosféry se různé skleníkové plyny od sebe liší svým účinkem – některé jsou výrazně „silnější“ než jiné. Aby bylo možné je mezi sebou porovnávat, používá se přepočet na CO<sub>2</sub>eq. Ten říká, jaké množství CO<sub>2</sub> by mělo stejný (ekvivalentní) účinek z hlediska skleníkového efektu jako určité množství jiného skleníkového plynu za nějakou standardizovanou dobu (typicky 100 let). Vzorec pro výpočet CO<sub>2</sub>eq je *množství skleníkového plynu* × *GWP koeficient* (global warming potential, tedy potenciál globálního oteplování). Například GWP koeficient pro metan má hodnotu 28 ([IPCC](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_Chapter08_FINAL.pdf), str. 714), což je možné s určitým zjednodušením chápat tak, že metan je 28× silnější skleníkový plyn než oxid uhličitý, resp. 1 tuna tohoto plynu má podobný účinek jako 28 tun CO<sub>2</sub>. GWP koeficient pro oxid dusný je 265, tedy ještě téměř desetkrát vyšší než GWP koeficient metanu.
