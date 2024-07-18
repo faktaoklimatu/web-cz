@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak bude fungovat zpoplatnění emisí skleníkových plynů z dopravy a budov (tzv. ETS 2)?"
 slug:        "emisni-povolenky-ets-2"
 published:   2024-06-10
-updated:     2024-07-10
+updated:     2024-07-26
 authors:
   - id: "katerina-kolouchova"
   - ids: ["katerina-kolouchova", "marcel-otruba"]
@@ -100,7 +100,9 @@ Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, na
     source-text="Vlastní výpočty."
 %}
 
-Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 2,7 Kč**, což k současné ceně benzínu okolo 40 korun za litr představuje 4,5% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
+Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 2,7 Kč**, což k současné ceně benzínu okolo 40 korun za litr představuje 6,8% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
+
+{% include includes-local/ets2-kalkulacka.html %}
 
 {% capture komplementarita %}
 
