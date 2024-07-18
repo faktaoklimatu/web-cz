@@ -1,8 +1,8 @@
 ---
 layout:      explainer
 title:       "Výroba, výkon a spotřeba elektřiny v Česku"
-slug:        "vyrobaspotreba"
-published:   2023-11-20
+slug:        "elektrina-vyroba-spotreba"
+published:   2024-07-15
 authors:
   - ids: ["ondras-pribyla"]
   - id: "jirka-lnenicka"
