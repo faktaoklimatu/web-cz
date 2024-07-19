@@ -20,8 +20,7 @@ cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash License"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         ""
-perex: |
-    Jaký dopad bude mít rostoucí trend elektrifikace silniční dopravy na spotřebu elektřiny v ČR? Naše analýza zkoumá potenciální změny ve spotřebě v kontextu přechodu na elektrická vozidla.
+perex: 
 ---
 ## Výroba, výkon a spotřeba elektřiny v Česku
 
@@ -110,88 +109,12 @@ V energetice se často používají předpony pro vyjádření velkého množstv
 
 Různé spotřebiče se liší svým výkonem a používají se také různě často nebo dlouho. U některých navíc není množství využívané energie konstantní po celou dobu provozu – například pračky nebo myčky na nádobí mají největší výkon na začátku svého cyklu, kdy ohřívají vodu. Rozlišuje se proto **špičkový (maximální) výkon**[^4]_ _(tedy největší možný výkon spotřebiče) a **průměrný výkon**, tedy_ _kolik elektřiny spotřebič v průměru odebírá při svém provozu ze sítě. Celková spotřeba spotřebiče potom závisí na tom, jaký je jeho výkon (příkon) a jak dlouho a často se používá. Například roční spotřeba chladničky běžící nonstop je cca 250 kWh, pračka používaná třikrát týdně spotřebuje za rok asi 160 kWh. Pro představu přináší srovnání spotřeby několika běžných domácích spotřebičů následující tabulka:
 
-
-<table>
-  <tr>
-   <td>Spotřebič
-   </td>
-   <td>Průměrná doba využívání
-   </td>
-   <td>Spotřeba za rok
-   </td>
-  </tr>
-  <tr>
-   <td>chladnička s mrazákem
-   </td>
-   <td>(nontstop)
-   </td>
-   <td><p style="text-align: right">
-250 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>pračka
-   </td>
-   <td>3 krát za týden, cca 10 hodin týdně
-   </td>
-   <td><p style="text-align: right">
-165 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>myčka
-   </td>
-   <td>5 krát za týden, cca 15 hodin týdně
-   </td>
-   <td><p style="text-align: right">
-190 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>počítač
-   </td>
-   <td>24 hodin týdně
-   </td>
-   <td><p style="text-align: right">
-110 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>televize
-   </td>
-   <td>32 hodin týdně
-   </td>
-   <td><p style="text-align: right">
-195 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>žárovka
-   </td>
-   <td>42 hodin týdně
-   </td>
-   <td><p style="text-align: right">
-10 kWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>celkem
-   </td>
-   <td><p style="text-align: right">
-920 kWh</p>
-
-   </td>
-  </tr>
-</table>
-
+{% include figure.html
+    name="cs-spotreba-spotrebice-des.svg"
+    alt="TODO"
+    source-text="TODO"
+    source-url="TODO"
+%}
 
 _Údaje vychází z šetření Českého statistického úřadu ENERGO 2021_[^5]
 
@@ -201,12 +124,18 @@ _Údaje vychází z šetření Českého statistického úřadu ENERGO 2021_[^5]
 Průměrný výkon české domácnosti[^6] je přibližně 420 W[^7]. Maximální výkon domácnosti závisí na jističích v rozvodové skříni – ty zajišťují, že je domácnost chráněna před zkraty nebo přetížením. U běžných bytů je maximální výkon 5750 W, u rodinných domů je to 17 250 W[^8]. \
 
 
-Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou hodnotou, neboť jednotlivé domácnosti se svou roční spotřebou elektřiny značně liší – záleží například na tom, zda jde o byt nebo rodinný dům, jestli domácnost elektřinou i topí (což v Česku není příliš obvyklé), případně ji používá na vaření apod. Průměrná česká domácnost **v bytě** spotřebuje **za rok 1 212 kWh na osobu**, **v rodinném domě **je to **2 030 kWh na osobu**.
+Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou hodnotou, neboť jednotlivé domácnosti se svou roční spotřebou elektřiny značně liší – záleží například na tom, zda jde o byt nebo rodinný dům, jestli domácnost elektřinou i topí (což v Česku není příliš obvyklé), případně ji používá na vaření apod. Průměrná česká domácnost **v bytě** spotřebuje **za rok 1 212 kWh na osobu**, **v rodinném domě** je to **2 030 kWh na osobu**.
 
-include figure.html file = pokus.jpg
+{% include figure.html
+    name="cs-spotreba-spotrebice-des.svg"
+    alt="TODO"
+    source-text="TODO"
+    source-url="TODO"
+%}
+
 #### Domácnosti ve městech
 
-Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW a roční spotřeba 22,4 GWh. Do celkového výkonu a spotřeby města je ovšem nutné započítat také průmysl, služby, dopravu, veřejné osvětlení a mnoho dalšího. Na domácnosti připadá jen menší část celkové spotřeby: například v Brně spotřebují **domácnosti přibližně** 448,4 GWh, což je asi **čtvrtina z celkové spotřeby města **(1,8 TWh)[^9]. Podobné je to v Praze: domácnosti cca čtvrtina (1,5 TWh) z celkové spotřeby elektřiny v Praze (6 TWh)[^10]. Příklady roční spotřeby elektřiny ve městech různých velikostí ukazuje následující tabulka[^11].
+Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW a roční spotřeba 22,4 GWh. Do celkového výkonu a spotřeby města je ovšem nutné započítat také průmysl, služby, dopravu, veřejné osvětlení a mnoho dalšího. Na domácnosti připadá jen menší část celkové spotřeby: například v Brně spotřebují **domácnosti přibližně** 448,4 GWh, což je asi **čtvrtina z celkové spotřeby města** (1,8 TWh)[^9]. Podobné je to v Praze: domácnosti cca čtvrtina (1,5 TWh) z celkové spotřeby elektřiny v Praze (6 TWh)[^10]. Příklady roční spotřeby elektřiny ve městech různých velikostí ukazuje následující tabulka[^11].
 
 
 <table>
@@ -306,18 +235,14 @@ Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW 
 
 Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na ročním období (v zimě je například topná sezóna, tedy elektřiny je potřeba více) a také na tom, jestli je právě den či noc.
 
-
-
-
-
-
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
 
-
-
-
-(graf bude hezčí)
-
+{% include figure.html
+    name="cs-spotreba-elektriny-domacnosti-des.svg"
+    alt="TODO"
+    source-text="TODO"
+    source-url="TODO"
+%}
 
 ## Výkon a výroba elektřiny
 
