@@ -38,11 +38,11 @@ Co se týče spotřeby, průměrná česká domácnost[^1] v bytě spotřebuje 2
 
 O výkonu a spotřebě elektřiny se dá uvažovat na různých úrovních: na úrovni jednotlivých spotřebičů (a jejich využívání), na úrovni domácností, měst a nebo celého státu. Tato kapitola popisuje každou z těchto úrovní ve větším detailu.   
 
-
-##### Jaký je rozdíl mezi výkonem a spotřebou? (rozbalovátko)
+{% capture rozdil-vykon-spotreba %}
 
 **Výkon** udává, kolik energie je dodáno za určitou jednotku času. Jednotkou výkonu je watt (W).
 
+{:.callout-box}
 1W = 1 joule energie dodaný za 1 sekundu  
 
 Například na uvaření jednoho litru vody je potřeba přibližně 340 000 J energie[^2][^3]. Když chceme vodu uvařit rychle, používáme obvykle rychlovarnou konvici. Typický příkon takové konvice je okolo 2 100 W (tedy za sekundu předá vodě 2 100 J energie) a uvaření vody bude trvat zhruba 2,5 minuty.
@@ -53,12 +53,19 @@ _Poznámka: Namísto výkonu se často používá pojem “příkon”, tedy spo
 
 Například na uvaření jednoho litru vody v rychlovarné konvici se spotřebuje zhruba 90 Wh (2,5 minuty = 150 sekund = 0,04 hod. krát 2 100 W = 90 Wh) Celková denní či roční spotřeba konvice nicméně závisí na tom, jak často se v ní voda vaří: kdybychom vařili litr vody jednou za den, bude denní spotřeba konvice 90 Wh a roční přibližně 33 kWh (90 Wh krát 365 dní = 32 850 Wh, tj. 33 kWh). Budeme-li vařit dvakrát, bude spotřeba dvojnásobná atd. – jinak řečeno: celková spotřeba závisí jednak na výkonu a jednak na častosti používání spotřebiče. 
 
+{% endcapture %}
 
-##### Kolik je mega-, giga-, tera-, peta-? (rozbalovátko)
+{% include expander-figure.html
+    name="rozdil-vykon-spotreba"
+    expanded=false
+    class="contrast-figure"
+    label="Jaký je rozdíl mezi výkonem a spotřebou?"
+    content=rozdil-vykon-spotreba
+%}
 
-V energetice se často používají předpony pro vyjádření velkého množství základních jednotek (wattů / watthodin / joulů). Například jeden megawatt (1 MW) odpovídá jednomu milionu wattů.  \
+{% capture mega-giga-tera-peta %}
 
-
+V energetice se často používají předpony pro vyjádření velkého množství základních jednotek (wattů / watthodin / joulů). Například jeden megawatt (1 MW) odpovídá jednomu milionu wattů.  
 
 <table>
   <tr>
@@ -103,31 +110,36 @@ V energetice se často používají předpony pro vyjádření velkého množstv
   </tr>
 </table>
 
+{% endcapture %}
 
+{% include expander-figure.html
+    name="mega-giga-tera-peta"
+    expanded=false
+    class="contrast-figure"
+    label="Kolik je mega-, giga-, tera-, peta-?"
+    content=mega-giga-tera-peta
+%}
 
 ### Spotřebiče
 
 Různé spotřebiče se liší svým výkonem a používají se také různě často nebo dlouho. U některých navíc není množství využívané energie konstantní po celou dobu provozu – například pračky nebo myčky na nádobí mají největší výkon na začátku svého cyklu, kdy ohřívají vodu. Rozlišuje se proto **špičkový (maximální) výkon**[^4]_ _(tedy největší možný výkon spotřebiče) a **průměrný výkon**, tedy_ _kolik elektřiny spotřebič v průměru odebírá při svém provozu ze sítě. Celková spotřeba spotřebiče potom závisí na tom, jaký je jeho výkon (příkon) a jak dlouho a často se používá. Například roční spotřeba chladničky běžící nonstop je cca 250 kWh, pračka používaná třikrát týdně spotřebuje za rok asi 160 kWh. Pro představu přináší srovnání spotřeby několika běžných domácích spotřebičů následující tabulka:
 
 {% include figure.html
-    name="cs-spotreba-spotrebice-des.svg"
+    name="cs-spotreba-spotrebice-2-des.svg"
+    class="narrow-figure"
     alt="TODO"
-    source-text="TODO"
-    source-url="TODO"
+    source-text="Údaje vychází z šetření Českého statistického úřadu ENERGO 2021"
+    source-url="https://www.czso.cz/csu/czso/energo-2021"
 %}
-
-_Údaje vychází z šetření Českého statistického úřadu ENERGO 2021_[^5]
-
 
 ### Domácnosti
 
 Průměrný výkon české domácnosti[^6] je přibližně 420 W[^7]. Maximální výkon domácnosti závisí na jističích v rozvodové skříni – ty zajišťují, že je domácnost chráněna před zkraty nebo přetížením. U běžných bytů je maximální výkon 5750 W, u rodinných domů je to 17 250 W[^8]. \
 
-
 Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou hodnotou, neboť jednotlivé domácnosti se svou roční spotřebou elektřiny značně liší – záleží například na tom, zda jde o byt nebo rodinný dům, jestli domácnost elektřinou i topí (což v Česku není příliš obvyklé), případně ji používá na vaření apod. Průměrná česká domácnost **v bytě** spotřebuje **za rok 1 212 kWh na osobu**, **v rodinném domě** je to **2 030 kWh na osobu**.
 
 {% include figure.html
-    name="cs-spotreba-spotrebice-des.svg"
+    name="cs-spotreba-byt-dom-des.svg"
     alt="TODO"
     source-text="TODO"
     source-url="TODO"
@@ -137,98 +149,23 @@ Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou ho
 
 Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW a roční spotřeba 22,4 GWh. Do celkového výkonu a spotřeby města je ovšem nutné započítat také průmysl, služby, dopravu, veřejné osvětlení a mnoho dalšího. Na domácnosti připadá jen menší část celkové spotřeby: například v Brně spotřebují **domácnosti přibližně** 448,4 GWh, což je asi **čtvrtina z celkové spotřeby města** (1,8 TWh)[^9]. Podobné je to v Praze: domácnosti cca čtvrtina (1,5 TWh) z celkové spotřeby elektřiny v Praze (6 TWh)[^10]. Příklady roční spotřeby elektřiny ve městech různých velikostí ukazuje následující tabulka[^11].
 
+{% include figure.html
+    name="cs-spotreba-domacnosti-mesta.svg"
+    alt="TODO"
+    source-text="TODO"
+    source-url="TODO"
+%}
 
-<table>
-  <tr>
-   <td><strong>Počet obyvatel</strong>
-   </td>
-   <td><strong>Město</strong>
-   </td>
-   <td><strong>Roční spotřeba všech domácností</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>1 000
-   </td>
-   <td>Špindlerův Mlýn
-   </td>
-   <td><p style="text-align: right">
-1 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>10 000
-   </td>
-   <td>Jeseník
-   </td>
-   <td><p style="text-align: right">
-10 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>20 000
-   </td>
-   <td>Náchod
-   </td>
-   <td><p style="text-align: right">
-25 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>35 000
-   </td>
-   <td>Třebíč
-   </td>
-   <td><p style="text-align: right">
-40 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>50 000
-   </td>
-   <td>Karlovy Vary
-   </td>
-   <td><p style="text-align: right">
-60 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>100 000
-   </td>
-   <td>Olomouc
-   </td>
-   <td><p style="text-align: right">
-110 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>400 000
-   </td>
-   <td>Brno
-   </td>
-   <td><p style="text-align: right">
-450 GWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>1 350 000
-   </td>
-   <td>Praha
-   </td>
-   <td><p style="text-align: right">
-1 500 GWh</p>
-
-   </td>
-  </tr>
-</table>
-
+| Počet obyvatel	| Město | Roční spotřeba všech domácností |
+| - | - |- |
+| 1 000	| Špindlerův Mlýn	| 1 GWh |
+| 10 000	| Jeseník	| 10 GWh |
+| 20 000	| Náchod	| 25 GWh |
+| 35 000	| Třebíč	| 40 GWh |
+| 50 000	| Karlovy Vary	| 60 GWh |
+| 100 000	| Olomouc	| 110 GWh |
+| 400 000	| Brno	| 450 GWh |
+| 1 350 000	| Praha	 | 1 500 GWh |
 
 
 ### Celé Česko
@@ -238,7 +175,7 @@ Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na 
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
 
 {% include figure.html
-    name="cs-spotreba-elektriny-domacnosti-des.svg"
+    name=""
     alt="TODO"
     source-text="TODO"
     source-url="TODO"
