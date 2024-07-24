@@ -7,17 +7,17 @@ weight:     70
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
 caption:    "Dataset obsahuje dva indikátory pro Českou republiku: emise skleníkových plynů (CO<sub>2</sub>, N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> a přepočet na CO<sub>2</sub>eq) za rok 2022 a data ze systému emisních povolenek za rok 2022."
-data-our:    "https://docs.google.com/spreadsheets/d/1S8Z67LCLJJqCj9Jv82U8qkQzDTplTlPDBqmMvxYORv0/edit?gid=676072872"
+data-our:    "https://docs.google.com/spreadsheets/d/13Pb-4rxuMvIb7edLepEz2BPR3l5cDm8M0v5wlWV0tA0/edit?usp=sharing"
 data-orig:
   - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
   - [ "European Commission", "https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx" ]
 ---
 
-## Emise skleníkových plynů za rok 2022
+## Emise skleníkových plynů za rok 2021 a 2022
 
 {% include data-header.html
     name="Eurostat"
-    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro rok 2022 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
+    description="Dataset env_air_gge. V tabulce zobrazujeme souhrnné hodnoty všech skleníkových plynů (GHG) pro roky 2021 a 2022 v milionech tun CO<sub>2</sub>eq, v jedné ose hodnoty SRC_CRF (kategorie zdroje emisí), v druhé ose hodnoty GEO (geografická oblast)."
     url="https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
@@ -34,11 +34,11 @@ data-orig:
 
 Tento dataset obsahuje stejná data o emisích jako dataset Emise EU, jen je omezen na Českou republiku. Více informací o této datové sadě je na [stránce datasetu Emise EU](emise-eu).
 
-## Data ze systému emisních povolenek za rok 2022
+## Data ze systému emisních povolenek za rok 2021
 
 {% include data-header.html
     name="Evropská komise"
-    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2022."
+    description="Tabulka všech evropských podniků v systému ETS a jejich potvrzených emisí do roku 2021."
     url="https://ec.europa.eu/clima/document/download/9bcb5ebd-47bd-49af-8c19-a24df8077cf9_en?filename=verified_emissions_2021_en.xlsx"
     licence="CC BY 4.0"
     licence-url="https://creativecommons.org/licenses/by/4.0/"
