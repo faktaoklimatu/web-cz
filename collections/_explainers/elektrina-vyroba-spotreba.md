@@ -150,23 +150,12 @@ Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou ho
 Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW a roční spotřeba 22,4 GWh. Do celkového výkonu a spotřeby města je ovšem nutné započítat také průmysl, služby, dopravu, veřejné osvětlení a mnoho dalšího. Na domácnosti připadá jen menší část celkové spotřeby: například v Brně spotřebují **domácnosti přibližně** 448,4 GWh, což je asi **čtvrtina z celkové spotřeby města** (1,8 TWh)[^9]. Podobné je to v Praze: domácnosti cca čtvrtina (1,5 TWh) z celkové spotřeby elektřiny v Praze (6 TWh)[^10]. Příklady roční spotřeby elektřiny ve městech různých velikostí ukazuje následující tabulka[^11].
 
 {% include figure.html
-    name="cs-spotreba-domacnosti-mesta.svg"
+    class="wide-figure-desktop"
+    name="spotreba-domacnosti-mapa-des.svg"
+    name-mobile="spotreba-domacnosti-mapa-des.svg"
     alt="TODO"
     source-text="TODO"
-    source-url="TODO"
 %}
-
-| Počet obyvatel	| Město | Roční spotřeba všech domácností |
-| - | - |- |
-| 1 000	| Špindlerův Mlýn	| 1 GWh |
-| 10 000	| Jeseník	| 10 GWh |
-| 20 000	| Náchod	| 25 GWh |
-| 35 000	| Třebíč	| 40 GWh |
-| 50 000	| Karlovy Vary	| 60 GWh |
-| 100 000	| Olomouc	| 110 GWh |
-| 400 000	| Brno	| 450 GWh |
-| 1 350 000	| Praha	 | 1 500 GWh |
-
 
 ### Celé Česko
 
@@ -175,7 +164,7 @@ Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na 
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
 
 {% include figure.html
-    name=""
+    name="cs-spotreba-elektriny-domacnosti-des.svg"
     alt="TODO"
     source-text="TODO"
     source-url="TODO"
