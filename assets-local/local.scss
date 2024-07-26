@@ -210,6 +210,121 @@ $c-callout-text: #373633;
     }
 }
 
+#ets2-kalkulacka {
+    border-radius: 0.5rem;
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+
+    h3 { margin-bottom: 1rem; }
+
+    #allowance-price-number {
+        font-weight: 600;
+        background: none;
+        border: none;
+        text-align: left;
+    }
+
+    .slider-container {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    .slider {
+        width: 100%;
+        height: 5px;
+        margin-top: 1.5rem; 
+        margin-bottom: 1.5rem;  
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        align-self: center;
+    }
+
+    .slider-greyzone, .slider-scale {
+        width: 100%;
+        grid-column: 1 / 3;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .slider-scale {
+        height: 12vw;
+        grid-row: 4 / 5;
+        background-image: url(/assets-local/figures/emisni-povolenky-ets-2/cs-kalkulacka-scale-mob.svg);
+    }
+
+    .slider-greyzone {
+        grid-row: 3 / 4;
+        background-image: url(/assets-local/figures/emisni-povolenky-ets-2/cs-kalkulacka-greyzone-mob.svg);
+        background-position: 0 50%;
+    }
+
+    .allowance-price {
+        font-weight: 600;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        align-self: end;
+        margin-bottom: 1rem;
+    }
+
+    .greyzone-note {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+        font-size: 1rem;
+        line-height: 1.2;
+        align-self: end;
+        color: gray;
+    }
+
+    .fuel {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: baseline;
+    }
+
+    .fuel-name { padding-top: 1rem; }
+
+    .fuel-name, .price-increase-context { font-weight: 600; }
+
+    .price-increase-context { color: gray; }
+
+    .price-increase, #allowance-price-number {
+        color: #3B3B93;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .note {
+        font-size: 1rem;
+        color: gray;
+    }
+
+    #kurz {
+        width: 100%;
+        text-align: right;
+        grid-column: 1 / 3;
+        margin-top: 2rem;
+    }
+
+    .pictogram {
+        height: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    input[type=range] {
+        accent-color: #3B3B93;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
 @media (min-width: 576px) {
     .klimazavazky-grafy {
         grid-template-columns: 1fr 1fr;
@@ -271,6 +386,33 @@ $c-callout-text: #373633;
 
         .checklist li[title] {
             text-decoration: none;
+        }
+    }
+
+    #ets2-kalkulacka {
+        h3 { margin-bottom: 2rem; }
+
+        .allowance-price { margin-bottom: 0rem; }
+
+        .fuel { grid-template-columns: 3fr 4fr 5fr; }
+
+        .fuel-name, .price-increase-context {
+            padding-top: 0rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .slider-greyzone {
+            background-image: url(/assets-local/figures/emisni-povolenky-ets-2/cs-kalkulacka-greyzone-des.svg);
+        }
+
+        .slider-scale {
+            height: 3.5rem;
+            background-image: url(/assets-local/figures/emisni-povolenky-ets-2/cs-kalkulacka-scale-des.svg);
+        }
+
+        .greyzone-note {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
         }
     }
 }
