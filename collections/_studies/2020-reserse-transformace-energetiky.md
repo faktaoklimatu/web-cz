@@ -5,7 +5,7 @@ slug:        2020-reserse-transformace-energetiky
 redirect_from: "/2020-reserse-transformace-energetiky"
 weight:      300
 published:   2020-11-18
-updated:     2024-06-11
+updated:     2024-07-26
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky."
@@ -27,6 +27,13 @@ items:
         url:  "https://faktaoklimatu.cz/"
       - name: Frank Bold
         url:  "https://frankbold.org/"
+    timeframe: 2030
+  - title:   "Dekarbonizace teplárenství: Strategický, regulační a technologicko-ekonomický rámec v České republice"
+    date:    Duben 2022
+    url:     "https://www.budovy21.cz/wp-content/uploads/2022/07/prehledova-studie-dekarbonizace-teplarenstvi-cvut-46-MB.pdf"
+    authors:
+      - name: ČVUT
+        url:  "https://www.cvut.cz/"
     timeframe: 2030
   - title:   "Energetická revoluce: Jak zajistit elektřinu, teplo a dopravu bez fosilních paliv"
     date:    Říjen 2021
