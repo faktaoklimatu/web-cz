@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const formatNumber = Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 1 }).format;
+  const numberFormatOptions = { maximumFractionDigits: 1, minimumFractionDigits: 1 };
+  const formatNumber = Intl.NumberFormat('cs-CZ', numberFormatOptions).format;
 
   const $allowancePrice = $('#allowance-price-number');
   const $allowancePriceInput = $('#allowance-input-range');
