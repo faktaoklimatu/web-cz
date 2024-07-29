@@ -50,10 +50,11 @@ Na **Mac OS** funguje kombinace [postupu dle Jekyllu](https://jekyllrb.com/docs/
   * `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc`
   * případně `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.bash_profile`
   * pravděpodobně bude třeba restartovat okno příkazového řádku, aby se aktualizovala hodnota PATH
-
+* pro `bundler` použij `gem install bundler:2.2.15`
 Inkscape standardně není v `$PATH`, tak je potřeba přidat pomocí
 * `sudo mkdir /usr/local/bin`,
 * `sudo ln -s /Applications/Inkscape.app/Contents/MacOS/inkscape /usr/local/bin/inkscape`.
+Na novějších MacOS je potřeba Inkscape pustit - pokud se instaloval z dmg. -, aby mu OS dal permisions.
 
 ### Instalace v kontejneru
 
