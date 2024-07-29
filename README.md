@@ -10,8 +10,8 @@ Jsme [tým profesionálů zabývajících se různými obory](CONTRIBUTORS.md) �
 
 ## Konvence v repozitáři
 
-* Při vývoji postupujte dle [návodů v systému Notion](https://www.notion.so/faktaoklimatu/GitHub-workflow-4c5b294731dc4f9a8b2203daefcff432).
-* Při psaní textů dodržujte české typografické konvence, viz [dokument v systému Notion](https://www.notion.so/faktaoklimatu/Stylistika-a-typografie-0e01939715434294bf80494ad851d22b).
+* Při vývoji postupujte dle [návodů v systému Notion](https://faktaoklimatu.notion.site/Workflow-GitHub-57f94afa90864f51845b2be4c553cb6b).
+* Při psaní textů dodržujte české typografické konvence, viz [dokument v systému Notion](https://faktaoklimatu.notion.site/Stylistika-a-typografie-86b57bf7662c46738c35e4381e48db47).
 * Nadpisy _issues_ a _pull requestů_ jsou psány v češtině s diakritikou a začínají velkým písmenem. Udržte je krátké a věcné.
 * Text a diskuze v issue může být méně formální, klidně bez diakritiky a klidně ve slovenštině.
 * Snažte se každému _issue_ přiradit vhodné štítky a projekt. Jestli nevíte zvolit, přidejte štítek _na roztřízení_.
