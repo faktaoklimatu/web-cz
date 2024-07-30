@@ -1,13 +1,24 @@
 ---
-layout:        infographic
-title:         "Jaké nástroje má vláda k dispozici pro dekarbonizaci?"
-slug:          "nastroje-stat"
-redirect_from: "/nastroje-stat"
-published:     2024-07-19
-weight:        97.5
-tags-scopes:   [ cr, eu ]
-tags-topics:   [ opatreni ]
-caption:       "To be done"
+layout:      explainer
+title:       "Jaké nástroje má vláda k dispozici pro dekarbonizaci?"
+slug:        "nastroje-stat"
+published:   2024-07-30
+authors:
+  - id: "katerina-kolouchova"
+  - id: "marcel-otruba"
+    minor-role: "vizualizace"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
+weight:      97.5
+tags-scopes: [ cr, eu ]
+tags-topics: [ opatreni ]
+cover-source-author:        "Artem Zhukov"
+cover-source-text:          "Unsplash"
+cover-source-license:       "Unsplash License"
+cover-source-license-url:   "https://unsplash.com/license"
+cover-source-url:           "https://unsplash.com/photos/cars-on-road-in-between-trees-during-daytime-5HGOyBMlvww"
+perex: |
+    TBD
 ---
 
 **Na dekarbonizaci se podílí mnoho různých aktérů** – mezinárodní společenství, vlády národních států, města a samosprávy, firmy, domácnosti, vzdělávací a vědecké instituce, neziskové organizace a další. Každý z těchto aktérů se podílí jiným způsobem a má jiný vliv. **Zásadní roli hraje stát a jeho vláda** (v případě Evropy rovněž Evropská unie – významná část legislativy členských států vychází ze společně schválené legislativy unijní). Stát disponuje **širokou paletou nástrojů, kterými nastavuje podmínky pro dekarbonizaci** jednotlivých sektorů hospodářství. To, jaké nástroje zvolí, může významně ovlivnit průběh a rychlost celé transformace. Rozdělit se dají do tří nebo čtyř kategorií:
