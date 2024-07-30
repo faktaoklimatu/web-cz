@@ -7,7 +7,7 @@ published:     2024-07-19
 weight:        97.5
 tags-scopes:   [ cr, eu ]
 tags-topics:   [ opatreni ]
-caption:       "TBD"
+caption:       "To be done"
 ---
 
 **Na dekarbonizaci se podílí mnoho různých aktérů** – mezinárodní společenství, vlády národních států, města a samosprávy, firmy, domácnosti, vzdělávací a vědecké instituce, neziskové organizace a další. Každý z těchto aktérů se podílí jiným způsobem a má jiný vliv. **Zásadní roli hraje stát a jeho vláda** (v případě Evropy rovněž Evropská unie – významná část legislativy členských států vychází ze společně schválené legislativy unijní). Stát disponuje **širokou paletou nástrojů, kterými nastavuje podmínky pro dekarbonizaci** jednotlivých sektorů hospodářství. To, jaké nástroje zvolí, může významně ovlivnit průběh a rychlost celé transformace. Rozdělit se dají do tří nebo čtyř kategorií:
