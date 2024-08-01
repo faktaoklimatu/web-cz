@@ -28,6 +28,13 @@ items:
       - name: Frank Bold
         url:  "https://frankbold.org/"
     timeframe: 2030
+  - title:   "Česká cesta k uhlíkové neutralitě: Výzva, nebo příležitost pro naši ekonomiku?"
+    date:    Únor 2023
+    url:     "https://www.bcg.com/publications/2023/ceska-cesta-k-uhlikove-neutralite"
+    authors:
+      - name: Boston Consulting Group
+        url:  "https://www.bcg.com/"
+    timeframe: 2050
   - title:   "Dekarbonizace teplárenství: Strategický, regulační a technologicko-ekonomický rámec v České republice"
     date:    Duben 2022
     url:     "https://www.budovy21.cz/wp-content/uploads/2022/07/prehledova-studie-dekarbonizace-teplarenstvi-cvut-46-MB.pdf"
