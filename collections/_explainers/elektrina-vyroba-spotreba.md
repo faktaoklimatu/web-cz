@@ -8,7 +8,7 @@ authors:
   - id: "jirka-lnenicka"
     minor-role: "editace"
   - id: "marcel-otruba"
-    minor-role: "ilustrace"
+    minor-role: "vizualizace"
   - name: ""
     affiliation: 
     minor-role: "konzultace"
@@ -125,8 +125,7 @@ V energetice se často používají předpony pro vyjádření velkého množstv
 Různé spotřebiče se liší svým výkonem a používají se také různě často nebo dlouho. U některých navíc není množství využívané energie konstantní po celou dobu provozu – například pračky nebo myčky na nádobí mají největší výkon na začátku svého cyklu, kdy ohřívají vodu. Rozlišuje se proto **špičkový (maximální) výkon**[^4]_ _(tedy největší možný výkon spotřebiče) a **průměrný výkon**, tedy_ _kolik elektřiny spotřebič v průměru odebírá při svém provozu ze sítě. Celková spotřeba spotřebiče potom závisí na tom, jaký je jeho výkon (příkon) a jak dlouho a často se používá. Například roční spotřeba chladničky běžící nonstop je cca 250 kWh, pračka používaná třikrát týdně spotřebuje za rok asi 160 kWh. Pro představu přináší srovnání spotřeby několika běžných domácích spotřebičů následující tabulka:
 
 {% include figure.html
-    name="cs-spotreba-spotrebice-2-des.svg"
-    class="narrow-figure"
+    name="cs-spotreba-spotrebice-des.svg"
     alt="TODO"
     source-text="Údaje vychází z šetření Českého statistického úřadu ENERGO 2021"
     source-url="https://www.czso.cz/csu/czso/energo-2021"
@@ -151,7 +150,7 @@ Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW 
 
 {% include figure.html
     class="wide-figure-desktop"
-    name="spotreba-domacnosti-mapa-des.svg"
+    name="cs-spotreba-domacnosti-mapa-des.svg"
     name-mobile="spotreba-domacnosti-mapa-des.svg"
     alt="TODO"
     source-text="TODO"
@@ -160,6 +159,13 @@ Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW 
 ### Celé Česko
 
 Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na ročním období (v zimě je například topná sezóna, tedy elektřiny je potřeba více) a také na tom, jestli je právě den či noc.
+
+{% include figure.html
+    class="narrow-figure"
+    name="cs-vykon-ceska.svg"
+    alt="TODO"
+    source-text="TODO"
+%}
 
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
 
@@ -178,231 +184,29 @@ U všech typů zdrojů je základní charakteristikou tzv. **instalovaný výkon
 
 Příklad: pokud by elektrárna měla instalovaný výkon 1 000 MW a pracovala by celý rok (8 760 hodin), může vyrobit až 8 760 000 MWh (8,76 TWh) elektrické energie. Má-li koeficient využití 80 %, což je typické pro jaderné elektrárny, je její skutečný roční výkon přibližně 7 008 000 MWh za rok (80 % z 8 760 000 MWh). Ve srovnání s tím má běžná větrná elektrárna instalovaný výkon 5 MW a koeficient využití pro tento typ elektrárny v Česku je 24 % (záleží na tom, jak často, jak dlouho a jak silně fouká vítr). Za rok tedy vyrobí tato elektrárna s instalovaným výkonem 5 MW celkem 10 512 MWh elektrické energie (24 % z 8 760 × 5). 
 
- \
-Rozdíly v instalovaných výkonech a koeficientech využití pro různé typy elektráren v Česku \
+Rozdíly v instalovaných výkonech a koeficientech využití pro různé typy elektráren v Česku 
 
-
-
-<table>
-  <tr>
-   <td>
-   </td>
-   <td>Solární panel
-   </td>
-   <td>Větrná elektrárna
-   </td>
-   <td>Vodní elektrárna
-<p>
-(střední a velké)
-   </td>
-   <td>Parní elektrárna
-   </td>
-   <td>Paroplynová
-<p>
-elektrárna
-   </td>
-   <td>Jaderná elektrárna
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>400 W
-   </td>
-   <td>2 MW
-   </td>
-   <td>20 MW (4 turbíny)
-   </td>
-   <td>378 MW
-   </td>
-   <td>845 MW (3 turbíny)
-   </td>
-   <td>2 250 MW (2 bloky)
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><a href="https://mapy.cz/zakladni?source=base&id=2223701&x=16.8518941&y=49.3877397&z=17">Rozstání</a>
-   </td>
-   <td><a href="https://cs.wikipedia.org/wiki/Vodn%C3%AD_elektr%C3%A1rna_Vranov">Vranov</a>
-   </td>
-   <td><a href="https://cs.wikipedia.org/wiki/Elektr%C3%A1rna_Opatovice_nad_Labem">Opatovice</a>
-   </td>
-   <td><a href="https://cs.wikipedia.org/wiki/Elektr%C3%A1rna_Po%C4%8Derady">Počerady</a>
-   </td>
-   <td><a href="https://cs.wikipedia.org/wiki/Jadern%C3%A1_elektr%C3%A1rna_Temel%C3%ADn">Temelín</a>
-   </td>
-  </tr>
-  <tr>
-   <td>komentář
-   </td>
-   <td>Typický solární panel o velikosti má velikost 1x1,7 m.
-   </td>
-   <td>Moderní elektrárna s rozpětím lopatek 110-160m o výšce 90-170m má instalovaný výkon 3-5 MW
-   </td>
-   <td>Střední a velké vodní elektrárny mají minimální instalovaný výkon 10 MW.
-   </td>
-   <td>Parní elektrárna pro výrobu elektřiny spaluje palivo - uhlí, biomasu, plyn. Nejtypičtější zástupce parní elektrárny je uhelná elektrárna.
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Instalovaný výkon v ČR
-   </td>
-   <td>2 100,4 MW
-   </td>
-   <td>339,1 MW
-   </td>
-   <td>1 113,6 MW
-   </td>
-   <td>9 415,9 MW
-   </td>
-   <td>1 363,5 MW
-   </td>
-   <td>4 290 MW
-   </td>
-  </tr>
-  <tr>
-   <td>Počet kusů
-   </td>
-   <td>170 000
-   </td>
-   <td>210
-   </td>
-   <td><p style="text-align: right">
-9</p>
-
-   </td>
-   <td><p style="text-align: right">
-42</p>
-
-   </td>
-   <td><p style="text-align: right">
-4</p>
-
-   </td>
-   <td><p style="text-align: right">
-2</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>za rok vyrobí (čistá výroba)
-   </td>
-   <td>2 279,816 GWh
-   </td>
-   <td>633, GWh
-   </td>
-   <td>2 007,912 GWh
-   </td>
-   <td>37 287,7 GWh
-   </td>
-   <td>2 499,4 GWh
-   </td>
-   <td>29 311,3 GWh
-   </td>
-  </tr>
-  <tr>
-   <td>koeficient využití
-   </td>
-   <td><p style="text-align: right">
-12,39%</p>
-
-   </td>
-   <td><p style="text-align: right">
-21,31%</p>
-
-   </td>
-   <td><p style="text-align: right">
-20,58%</p>
-
-   </td>
-   <td><p style="text-align: right">
-45,21%</p>
-
-   </td>
-   <td><p style="text-align: right">
-20,93%</p>
-
-   </td>
-   <td><p style="text-align: right">
-78,00%</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>jeden kus za rok vyrobí
-   </td>
-   <td><p style="text-align: right">
-0,43 MWh</p>
-
-   </td>
-   <td><p style="text-align: right">
-3 733 MWh</p>
-
-   </td>
-   <td><p style="text-align: right">
-36 062 MWh</p>
-
-   </td>
-   <td><p style="text-align: right">
-1 496 910 MWh</p>
-
-   </td>
-   <td><p style="text-align: right">
-1 548 950 MWh</p>
-
-   </td>
-   <td><p style="text-align: right">
-15 373 059 MWh</p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>poznámka
-   </td>
-   <td>Solární asociace uvádí, že solárních panelů umístěných na rodinných domech je až 150 000. Průměrný instalovaný výkon takto umístěných panelů je 10 kW, což odpovídá ploše okolo 50m2.
-   </td>
-   <td>Větrné elektrárny, které v ČR máme, jsou poměrně staré, a proto mají instalovaný výkon převážně mezi 1 a 2 MW.
-   </td>
-   <td>Malých vodních elektráren (MVE) (o instalovaném výkonu max. 10 MW) je v Česku více než 1600 a mají dohromady instalovaný výkon 350 MW.
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
-
+{% include figure.html
+    class="wide-figure-desktop"
+    name="cs-elektrarny-dashboard-des.svg"
+    name-mobile="cs-elektrarny-dashboard-des.svg"
+    alt="TODO"
+    source-text="TODO"
+%}
 
 (zdroje k tabulce jsou v google sheetu, tabulka bude vskutečnosti nějaká infografika) \
  \
 Pokud srovnáme údaje uvedené v tabulce s průměrnou spotřebou domácností a měst různé velikosti, vyplyne z toho, že solární panely mohou snadno pokrýt spotřebu domácnosti v rodinném domě, jedna větrná elektrárna stačí na spotřebu všech domácností v malém městě (okolo 1 000 obyvatel, tedy například Špindlerova Mlýna). Město o velikosti Olomouce spotřebuje přibližně tolik elektřiny, kolik vyrobí jeden blok uhelné elektrárny. Toto srovnání výroby a spotřeby zároveň dává lepší představu, jak velké části obyvatel se dotkne, když bude takový blok uhelné elektrárny odstaven a přestane se využívat, nebo kolik fotovoltaiky či větrných elektráren potřebuje vybudovat obec pro své obyvatele a firmy, které zde působí, aby měli všichni dostatek levné elektřiny po celý rok.      \
- \
+
+{% include figure.html
+    class="wide-figure-desktop"
+    name="cs-vyroba-spotreba-des.svg"
+    name-mobile="cs-vyroba-spotreba-des.svg"
+    alt="TODO"
+    source-text="TODO"
+%}
+
+
 Je také důležité si uvědomit, že stavět velké elektrárny není jednoduché, rychlé ani levné. Zatímco solární panel si může na svůj dům pořídit poměrně snadno téměř každý vlastník a větrnou elektrárnu mohou společně financovat menší investiční skupiny, postavit novou jadernou elektrárnu není bez finanční pomoci státu možné ani pro velkou energetickou společnost. Navíc je výstavba jaderné elektrárny projekt na mnoho let (tedy elektřinu začne tato elektrárna dodávat až za dlouho a do té doby se bez ní musíme obejít). Snadnost a cenová dostupnost jsou přitom důležitými faktory realizace, což je zřetelně vidět například na počtu instalací – fotovoltaických systémů bylo v ČR v roce 2023 nainstalováno přes 80 000[^15], o celkovém instalovaném výkonu 970 MW, což se blíží výkonu jednoho bloku moderní jaderné elektrárny. Ve srovnání s tím se v Česku za posledních 50 let postavilo pouze 6 jaderných bloků. _ \
 _ \
 
