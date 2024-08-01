@@ -141,7 +141,7 @@ Uvedený průměrný výkon české domácnosti je skutečně jen průměrnou ho
     name="cs-spotreba-byt-dom-des.svg"
     alt="TODO"
     source-text="TODO"
-    source-url="TODO"
+    source-url="https://www.czso.cz/csu/czso/energo-2021"
 %}
 
 #### Domácnosti ve městech
@@ -151,7 +151,7 @@ Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW 
 {% include figure.html
     class="wide-figure-desktop"
     name="cs-spotreba-domacnosti-mapa-des.svg"
-    name-mobile="spotreba-domacnosti-mapa-des.svg"
+    name-mobile="cs-spotreba-domacnosti-mapa-des.svg"
     alt="TODO"
     source-text="TODO"
 %}
@@ -164,7 +164,7 @@ Výkon celého Česka kolísá mezi 4,5 GW a 11,5 GW. Záleží především na 
     class="narrow-figure"
     name="cs-vykon-ceska.svg"
     alt="TODO"
-    source-text="TODO"
+    source-url="https://www.czso.cz/csu/czso/energo-2021"
 %}
 
 Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotřeba elektřiny v roce 2022 byla cca 16 TWh[^12], tedy zhruba čtvrtina z celkové spotřeby země[^13] (cca 60 TWh). Z hlediska spotřeby elektřiny jsou domácnosti v současnosti druhým největším sektorem, hned za průmyslem. Zároveň se očekává, že zejména v průmyslu a dopravě bude spotřeba elektřiny s pokračující dekarbonizací (vyžadující čistou, bezemisní elektřinu) významně narůstat. Rozdělení spotřeby elektřiny v Česku mezi jednotlivé sektory v roce 2022 ukazuje graf níže[^14]:
@@ -173,7 +173,7 @@ Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotř
     name="cs-spotreba-elektriny-domacnosti-des.svg"
     alt="TODO"
     source-text="TODO"
-    source-url="TODO"
+    source-url="https://www.czso.cz/csu/czso/energo-2021"
 %}
 
 ## Výkon a výroba elektřiny
@@ -201,7 +201,7 @@ Pokud srovnáme údaje uvedené v tabulce s průměrnou spotřebou domácností 
 {% include figure.html
     class="wide-figure-desktop"
     name="cs-vyroba-spotreba-des.svg"
-    name-mobile="cs-vyroba-spotreba-des.svg"
+    name-mobile="cs-vyroba-spotreba.svg"
     alt="TODO"
     source-text="TODO"
 %}
