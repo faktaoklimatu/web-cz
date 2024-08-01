@@ -187,7 +187,7 @@ Příklad: pokud by elektrárna měla instalovaný výkon 1 000 MW a pracovala b
 Rozdíly v instalovaných výkonech a koeficientech využití pro různé typy elektráren v Česku 
 
 {% include figure.html
-    class="wide-figure-desktop"
+    class="wide-figure-desktop elektrarny-dashboard"
     name="cs-elektrarny-dashboard-des.svg"
     name-mobile="cs-elektrarny-dashboard-des.svg"
     alt="TODO"
@@ -201,7 +201,7 @@ Pokud srovnáme údaje uvedené v tabulce s průměrnou spotřebou domácností 
 {% include figure.html
     class="wide-figure-desktop"
     name="cs-vyroba-spotreba-des.svg"
-    name-mobile="cs-vyroba-spotreba.svg"
+    name-mobile="cs-vyroba-spotreba-des.svg"
     alt="TODO"
     source-text="TODO"
 %}

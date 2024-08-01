@@ -348,3 +348,9 @@ $c-callout-text: #373633;
 .negative-margin-bottom{
     margin-bottom: -1.5rem !important;
 }
+
+@media (min-width: 768px) {
+    .elektrarny-dashboard{
+        margin-left: -85px;
+    }
+}
