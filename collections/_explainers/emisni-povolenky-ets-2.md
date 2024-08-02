@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak bude fungovat zpoplatnění emisí skleníkových plynů z dopravy a budov (tzv. ETS 2)?"
 slug:        "emisni-povolenky-ets-2"
 published:   2024-06-10
-updated:     2024-07-26
+updated:     2024-08-02
 authors:
   - id: "katerina-kolouchova"
   - ids: ["katerina-kolouchova", "marcel-otruba"]
@@ -36,6 +36,7 @@ Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadn�
 
 {% include figure.html
     name="cs-ets-2-emise-vyvoj-des.svg"
+    name-mobile="cs-ets-2-emise-vyvoj-mob.svg"
     alt="Liniový graf, který ukazuje vývoj emisí v sektorech silniční dopravy a budov od roku 2005. V roce 2019 byly tyto emise v porovnání s rokem 2005 o 19 % nižší."
     source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle přílohy III směrnice č. 2023/959."
 %}
@@ -97,6 +98,7 @@ Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, na
 
 {% include figure.html
     name="cs-dopady-povolenky-na-cenu-paliv-des.svg"
+    name-mobile="cs-dopady-povolenky-na-cenu-paliv-mob.svg"
     alt="Graf ukazující vliv zavedení povolenky na cenu benzínu, nafty, zemního plynu a uhlí."
     source-text="Vlastní výpočty."
 %}
@@ -130,6 +132,7 @@ Emise ze silniční dopravy a budov jsou v současnosti zpoplatněny v 18 státe
 
 {% include figure.html
     name="cs-zpoplatneni-emisi-doprava-budovy-des.svg"
+    name-mobile="cs-zpoplatneni-emisi-doprava-budovy-mob.svg"
     alt="Mapa světa, na které jsou vyznačeny státy a další celky, ve kterých jsou k roku 2024 zpoplatněny emise skleníkových plynů z dopravy a budov."
     source-text="World Bank (2024)"
     source-url="https://carbonpricingdashboard.worldbank.org/compliance/instrument-detail"
