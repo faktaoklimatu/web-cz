@@ -147,6 +147,14 @@ Elektřina se vyrábí z různých zdrojů – poměr využití těchto zdrojů 
 
 U všech typů zdrojů je základní charakteristikou tzv. **instalovaný výkon** (nejčastěji uváděný v megawattech). Ten ukazuje, kolik elektřiny dokáže elektrárna dodávat, když je využívána na maximum. Elektrárny však málokdy běží stále na plný výkon – různé typy elektráren jsou v provozu různě dlouhou dobu, například větrná elektrárna potřebuje, aby foukal vítr, výkon vodní elektrárny může být závislý na průtoku vody apod. Pro lepší představu o skutečné roční produkci elektrárny je tedy potřeba vzít v potaz také tzv. **koeficient** **využití** – jak dlouho a často během roku běží tato elektrárna naplno.
 
+{% include figure.html
+    class="wide-figure-desktop"
+    name="cs-elektrarny-priklady-des.svg"
+    name-mobile="cs-elektrarny-priklady-des.svg"
+    alt="TODO"
+    source-text="TODO"
+%}
+
 _Příklad: pokud by elektrárna měla instalovaný výkon 1 000 MW a pracovala by celý rok (8 760 hodin), může vyrobit až 8 760 000 MWh (8,76 TWh) elektrické energie. Má-li koeficient využití 80 %, což je typické pro jaderné elektrárny, je její skutečný roční výkon přibližně 7 008 000 MWh za rok (80 % z 8 760 000 MWh). Ve srovnání s tím má běžná větrná elektrárna instalovaný výkon 5 MW a koeficient využití pro tento typ elektrárny v Česku je 24 % (záleží na tom, jak často, jak dlouho a jak silně fouká vítr). Za rok tedy vyrobí tato elektrárna s instalovaným výkonem 5 MW celkem 10 512 MWh elektrické energie (24 % z 8 760 × 5)._ 
 
 {% include figure.html
