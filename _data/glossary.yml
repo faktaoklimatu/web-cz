@@ -7,6 +7,10 @@
   name-short: "Adaptace"
   description: "Proces přizpůsobení se dopadům klimatických změn a snaha o snížení způsobených škod. Příklady současných adaptačních opatření jsou například protipovodňové zábrany, změny pěstovaných plodin nebo přesídlení do výše položených oblastí, které nebudou postiženy zvyšováním hladiny oceánů. Některé očekávané dopady klimatických změn, jako například silnější hurikány nebo rozšíření tropických nemocí, umožňují jen minimální prevenci a zvládání škod jimi způsobených bude nákladné."
 
+- id: agrovoltaika
+  name-short: "Agrovoltaika"
+  description: "Používá se též název _agrivoltaika_. Jde o koncept, při kterém je **krajina využívána k zemědělské produkci a zároveň k výrobě elektřiny** (pomocí fotovoltaických panelů). Fotovoltaická řešení mohou být velmi různá – panely například mohou být umístěny několik metrů nad zemí na podstavci či ve svislé poloze tak, aby se mezi nimi nebo pod nimi mohla pohybovat zemědělská technika. To umožňuje pěstování plodin, kterým nesvědčí celodenní přímé slunce a pro optimální růst potřebují určité zastínění, jako je třeba brokolice, špenát, bazalka nebo salát (locika). Jinou možností je nechat na pozemku takto navržené fotovoltaické elektrárny pastvinu pro hospodářská zvířata, jež mohou v případě potřeby pod panely rovněž najít stín nebo částečný úkryt. Mezi výhody agrovoltaiky patří i to, že v případě neúrodné sezóny (například v důsledku velkého sucha) může farmář alespoň část své ztráty kompenzovat ziskem z výroby elektřiny."
+
 - id: albedo
   name-short: "Albedo"
   description: "Albedo vyjadřuje odrazivost povrchu, tedy kolik z příchozího záření odrazí povrch zpět. Povrch, který veškeré záření pohltí, má albedo 0 a povrch, který veškeré záření odrazí, má albedo 1. V klimatologii hraje albedo důležitou roli v úvahách o energetické bilanci planety a při určování v množství slunečního záření, které povrch planety odrazí.<br/>
@@ -16,16 +20,34 @@
   name-short: "Antropogenní skleníkové plyny"
   description: "V současnosti mají státy vázané _UNFCCC_ a _Kjótským protokolem_ povinnost inventarizovat emise [7 skleníkových plynů](https://ghgprotocol.org/sites/default/files/standards_supporting/Required%20gases%20and%20GWP%20values.pdf): _antropogenní CO<sub>2</sub>_ (oxid uhličitý), _CH<sub>4</sub>_ (metan), _N<sub>2</sub>O_ (oxid dusný), _PFCs_ (zcela fluorované uhlovodíky), _HFCs_ (částečně fluorované uhlovodíky), _SF<sub>6</sub>_ (fluorid sírový) a _NF<sub>3</sub>_ (fluorid dusitý), což jsou plyny, které přispívají velkou mírou ke skleníkovému efektu (viz _CO<sub>2</sub>eq_ níže)."
 
+- id: ar
+  name-short: "AR"
+  name-long: "Assessment Report, Hodnotící zpráva"
+  description: "Zkratka z anglického _Assessment Report_, tedy **Hodnotící zpráva**, kterou vždy jednou za několik let vydává [Mezivládní panel pro změnu klimatu](/slovnik#ipcc). Jde o **podrobný výtah a posouzení vědecké literatury** publikované za období několika let, která se věnuje změnám klimatu. Kromě fyzikálních souvislostí se zpráva zaměřuje také na [adaptaci](/slovnik#adaptace) a [mitigaci](/slovnik#mitigace) klimatické změny. Zatím poslední zpráva s pořadovým číslem šest (proto AR6) vyšla po částech v letech 2021 a 2022. Více o tom, jak tyto zprávy vznikají a co přinesla Šestá hodnotící zpráva, přibližuje [související text](/explainery/zpravy-ipcc#co-nov%C3%A9ho-p%C5%99in%C3%A1%C5%A1%C3%AD-%C5%A1est%C3%A1-hodnot%C3%ADc%C3%AD-zpr%C3%A1va), obsahující rovněž odkazy na jednotlivé oddíly AR6."
+
+- id: atribuce
+  name-short: "Atribuce"
+  name-long: "atribuční metoda, atribuční studie"
+  description: "Metoda používaná organizací World Weather Attribution, pomocí níž se určuje, **jaký vliv měla klimatická změna na určitou extrémní událost** (požár, vlnu veder, sucho, povodeň apod.). Zvýšila její intenzitu nebo pravděpodobnost výskytu? Výsledky výzkumu bývají shrnuty v tzv. atribuční studii. Další podrobnosti [v souvisejícím explaineru](/explainery/vliv-klimatu-na-extremy-prirucka) a [rešerši](/studie/2023-reserse-extremy)."
+
+- id: biodiverzita
+  name-short: "Biodiverzita, biologická rozmanitost"
+  description: "Biodiverzita označuje **pestrost živého světa**, tedy všechny živočichy, rostliny, houby a mikroorganismy, kteří společně žijí na nějakém místě či v určitém regionu a jsou navzájem propojeni nejrůznějšími vztahy. V nejobecnější rovině označuje pestrost života na Zemi. Biodiverzity v současné době rychle ubývá – přírodní svět přichází o svou rozmanitost a různé druhy živočichů a rostlin navždy mizí. Hlavním příčinám a dalším souvislostem tohoto ubývání biodiverzity (ve světě i v Česku) se věnuje [související text](/explainery/ubyvani-biodiverzity)."
+
 - id: carbon-neutrality
   name-short: "Uhlíková neutralita"
   name-long: "Net-zero carbon, klimatická neutralita"
   description: "Označuje stav, kdy množství skleníkových plynů odstraňovaných z atmosféry daným státem nebo firmou je stejné, jako emise těchto skleníkových plynů. Jinak řečeno, činnost daného státu nebo firmy do atmosféry žádné skleníkové plyny nepřidává ani neubírá a takový stát nebo firma se označuje jako **uhlíkově neutrální**, což je v češtině běžný způsob jak se \"net-zero carbon\" překládá. Striktně řečeno slova **uhlíková neutralita** (*carbon neutrality, net-zero carbon*) a **klimatická neutralita** (*climate neutrality, net-zero emissions*) označují různé stavy: první se týká pouze oxidu uhličitého, druhý všech skleníkových plynů. V praxi ale často lidé používají tyto termíny záměnně, tedy nelze se spolehnout, že když někdo řekne uhlíková neutralita, myslí tím pouze cíl týkající se oxidu uhličitého. Pokud máme udržet úroveň globálního oteplení pod 1,5–2 °C, musí rozvinuté země dosáhnout uhlíkové neutrality do roku 2050. Praktická opatření směřující ke snížení vypouštěných emisí zahrnují zejména přechod na obnovitelné zdroje energie a zvyšování energetické účinnosti. Pro lepší představu, v roce 2017 bylo vyprodukováno 37,1 gigatun emisí CO<sub>2</sub>, přičemž přírodními procesy jich bylo z atmosféry odstraněno jen mezi 9,5 a 11 gigatunami CO<sub>2</sub> (výše odhadu pochází z článku [Uhlíková neutralita](https://www.europarl.europa.eu/news/cs/headlines/society/20190926STO62270/uhlikova-neutralita-dosahneme-ji-do-roku-2050)). Technologie pohlcování skleníkových plynů zatím nemají na dosažení uhlíkové neutrality podstatný dopad."
 
+- id: cbam
+  name-short: "CBAM"
+  name-long: "Carbon Border Adjustment Mechanism"
+  description: "**Mechanismus uhlíkového vyrovnání na hranicích** je nástroj zavedený Evropskou unií, který má zabraňovat tzv. únikům uhlíku. Tedy například situaci, kdy firma přesune výrobu svého zboží mimo EU, typicky do zemí s méně striktními pravidly pro vypouštění skleníkových plynů. Tímto krokem může firma získat výhodu na trhu oproti jiným společnostem, které vyrábějí stejné zboží v Unii a musí platit za emisní povolenky – mají pak vyšší výrobní náklady a to se promítá i do ceny zboží. Mechanismus CBAM má tyto podmínky narovnat, čímž jednak posílí konkurenceschopnost firem v EU a jednak bude napomáhat tomu, aby nebyly emise spojené s výrobou vypuštěny na území jiných států. Konkrétně to znamená, že výrobci ze zemí mimo EU budou muset za emise zaplatit (ve výši ceny povolenky) nebo budou muset prokázat, že za tyto emise už zaplatili jinde. Nástroj se vztahuje na emise ze sektorů zahrnutých do systému EU ETS 1 (tedy jde hlavně o průmysl a výrobu elektřiny a tepla), a zavádí se postupně – definitivně bude v platnosti od roku 2026."
+
 - id: ccs
   name-short: "CCS"
-  name-long: "Carbon capture and storage"
-  description: |
-    Sada technologií a infrastruktury, jejichž cílem je zachycení CO<sub>2</sub> a jeho trvalé uložení v geologicky stabilním úložišti. Tyto technologie jsou zatím celosvětově ve fázi (velkých) pilotních provozů. Nejčastěji se o CCS mluví v souvislosti s velkými bodovými zdroji emisí, jako jsou elektrárny na fosilní zdroje nebo biomasu, cementárny nebo ocelárny. Alternativou k ukládání uhlíku je jeho využití v průmyslu, např. pro výrobu syntetických paliv. Takový postup se pak označuje jako CCU (Carbon capture and utilization).
+  name-long: "carbon capture and storage"
+  description: "Sada technologií a infrastruktury, jejichž cílem je zachycení CO<sub>2</sub> a jeho trvalé uložení v geologicky stabilním úložišti. Tyto technologie jsou zatím celosvětově ve fázi (velkých) pilotních provozů. Nejčastěji se o CCS mluví v souvislosti s velkými bodovými zdroji emisí, jako jsou elektrárny na fosilní zdroje nebo biomasu, cementárny nebo ocelárny. Alternativou k ukládání uhlíku je jeho využití v průmyslu, např. pro výrobu syntetických paliv. Takový postup se pak označuje jako CCU (_carbon capture and utilization_). Více o metodách zachytávání a následného využití uhlíku lze najít [v související rešerši](/studie/2022-reserse-ccs)."
 
 - id: cfchfc
   name-short: "Halogenderiváty uhlovodíků"
@@ -48,7 +70,16 @@
 - id: cop
   name-short: "COP"
   name-long: "Conference of the Parties"
-  description: "V návaznosti na rámcové úmluvy OSN se konají navazující konference smluvních stran (COP). Konference smluvních stran je nejvyšším správním orgánem dané úmluvy OSN. Jejím úkolem je vytvářet shodu na řešeních a naplňovat cíle úmluvy pomocí konkrétní právních úprav. Úmluv OSN existuje celá řada, na našich stránkách se nejčastěji odkazujeme na [Rámcovou úmluvu OSN o změně klimatu](/slovnik#unfccc) a na ni navazující konference smluvních stran. Příkladem mohou být UNFCCC:COP3, kde byl podepsán [Kjótský protokol](/slovnik#kjotskyprotokol), nebo UNFCCC:COP21, kde byla podepsána [Pařížská dohoda](/slovnik#parizskadohoda)."
+  description: "V návaznosti na Rámcovou úmluvu OSN o změně klimatu ([UNFCCC](/slovnik#unfccc)) se každoročně konají **konference smluvních stran** (_Conference of the Parties_, COP). Na těchto konferencích se pravidelně scházejí zástupci z jednotlivých členských států (smluvních stran) a společně hledají shodu na řešeních v oblasti klimatické změny a způsob, jak naplňovat cíle úmluvy pomocí konkrétních právních úprav. Mezi významné konference patří COP 3, kde byl podepsán [Kjótský protokol](/slovnik#kjotskyprotokol), nebo COP 21, kde byla podepsána [Pařížská dohoda](/slovnik#parizskadohoda). Vedle COP věnovaných klimatické změně se konají například také COP zaměřené na problém ubývající biodiverzity (těch se účastní smluvní strany, které podepsaly tzv. Úmluvu o biologické rozmanitosti – _Convention on Biological Diversity_, CBD)."
+
+- id: dac
+  name-short: "DAC"
+  name-long: "direct air capture"
+  description: "**Přímé odstraňování CO<sub>2</sub> z atmosféry** (_direct air capture_). Na rozdíl od technologie [CCS](/slovnik#ccs), která zachytává emise oxidu uhličitého přímo u zdroje (zařízení na komínech elektráren, cementáren apod.), lze pomocí DAC tento skleníkový plyn odstranit z atmosféry kdekoli. Některé instalace jsou již v provozu (např. na Islandu), technologie však prochází vývojem a její relevanci a přínos ukáže teprve budoucnost. Více o metodách zachytávání a následného využití uhlíku lze najít [v související rešerši](/studie/2022-reserse-ccs)."
+
+- id: dekarbonizace
+  name-short: "Dekarbonizace"
+  description: "V kontextu klimatické změny jde o proces, který vede k postupné eliminaci skleníkových plynů vznikajících v jednotlivých odvětví hospodářství a způsobujících oteplování planety. Pojem dekarbonizace je částečně nepřesný v tom smyslu, že existují i jiné skleníkové plyny než ty, které obsahují uhlík (angl. _carbon_), například oxid dusný (N<sub>2</sub>O). Protože však řídicím faktorem, stojícím za výrazně více než 70 % oteplování, je oxid uhličitý (CO<sub>2</sub>) a k němu se přidává metan (CH<sub>4</sub>) jako další skleníkový plyn, používá se často dekarbonizace jako synonymum pro transformaci ekonomiky, která způsobí, že lidstvo přestane přidávat do atmosféry další skleníkové plyny. Více o vztahu mezi koncentracemi CO<sub>2</sub> a globálním oteplováním [v související infografice](/infografiky/souvislost-koncentrace-oteplovani)."
 
 - id: emisniintenzitaekonomiky
   name-short: "Emisní intenzita ekonomiky"
@@ -59,9 +90,26 @@
   name-long: "EU Emissions Trading System"
   description: "Evropský systém pro obchodování s emisemi (EU ETS) reguluje a postupně snižuje množství emisí skleníkových plynů vypouštěných vybranými podniky v EU - především velkými elektrárnami, ropnými rafineriemi atd. EU každoročně uvolní určitý počet emisních povolenek, které vybrané podniky následně draží a směňují, aby byly schopné pokrýt svoji produkci skleníkových plynů. Snižování počtu vydaných povolenek, respektive jejich zdražování na volném trhu, má za cíl motivovat velké znečišťovatele k inovacím v oblasti čistých technologií. Pro více informací viz náš [text k EU ETS](/explainery/emisni-povolenky-ets)."
 
+- id: euets2
+  name-short: "EU ETS 2"
+  description: "Evropský systém pro obchodování s emisemi skleníkových plynů. Vzniká jako samostatný systém vedle již existujícího [EU ETS](/slovnik#euets), řídí se však stejnými principy. **Rozšiřuje zpoplatnění emisí o sektory budov a silniční dopravy** a má motivovat ke snižování emisí v těchto sektorech. Po zavedení tohoto systému budou více než 4/5 unijních emisí podléhat zpoplatnění. Více informací [v souvisejícím explaineru](/explainery/emisni-povolenky-ets-2)."
+
+- id: esg
+  name-short: "ESG"
+  name-long: "Environmental, Social and Governance"
+  description: "Zkratka z angl. ***Environmental, Social and Governance***. Jde o způsob řízení firmy a jejího investování, při kterém se kromě finančního zisku bere v potaz i udržitelnost a sociální dopady. _Environmentální aspekt:_ Jaký dopad mají aktivity firmy na životní prostředí, na zdraví lidí, na kvalitu půdy, ovzduší? _Sociální aspekt:_ Jaký dopad mají na zákazníky, zaměstnance, místní komunity? _Governance aspekt:_ Není daná investice spojena s lobbingem či korupcí? Je fungování společnosti transparentní? Evropské nařízení o zveřejňování informací souvisejících s udržitelností v odvětví finančních služeb definuje, které firmy mají povinnost sbírat a zveřejňovat data o udržitelnosti a kterých dat se to týká. Kromě toho existuje také směrnice _Corporate Sustainability Reporting Directive_ (CSRD), ukládající reportovací povinnost korporacím."
+
+- id: eutrofizace
+  name-short: "Eutrofizace"
+  description: "Obohacování vody o živiny, především dusík a fosfor. Může jít o přirozený proces – v důsledku rozkladu mrtvých organismů, vyplavování živin z půdy a podobně. Problémem je zejména **eutrofizace nepřirozená**, kdy se do vody dostává nadměrné množství těchto živin v důsledku lidské činnosti, například přílišného hnojení či používání některých pracích prostředků. Nepřirozená eutrofizace negativně ovlivňuje kvalitu vod, což má velké důsledky i pro biodiverzitu (viz [související text](/explainery/ubyvani-biodiverzity#vysok%C3%A1-m%C3%ADra-zne%C4%8Di%C5%A1t%C4%9Bn%C3%AD))."
+
 - id: externalita
   name-short: "Externalita"
   description: "Externalita představuje vedlejší, nezamýšlený efekt hospodářské činnosti. Tento efekt může být pozitivní nebo negativní, pak hovoříme o pozitivní či negativní externalitě. Příkladem negativní externality je například továrna vypouštějící toxický odpad do řeky nebo auta uvolňující zplodiny s negativním dopadem na zdraví obyvatel měst. Příkladem pozitivní externality je včelař, jehož včely přispívají k vyšší úrodě zemědělců v okolí, nebo firma, která uvolní svůj software jako open source. Externalita představuje mimotržní dopady, kde nedochází k žádné kompenzaci – například továrna vypouštějící odpad neplatí okolním obyvatelům, kteří již nemohou řeku využívat. Klimatické změny lze považovat za negativní externalitu s globálním dopadem."
+
+- id: fitfor55
+  name-short: "Fit for 55"
+  description: "Soubor legislativních návrhů, který v roce 2021 přijala Evropská unie. Jeho cílem je snížit čisté emise skleníkových plynů do roku 2030 o 55 % (oproti roku 1990) a zároveň zajistit spravedlivou transformaci ekonomiky a celé společnosti. Zaměřuje se na ty cíle Zelené dohody pro Evropu, kterých chce Unie dosáhnout už do roku 2030. Návrhy zahrnují například rozšíření systému emisních povolenek na další sektory, zavedení CBAM, revizi směrnice o obnovitelných zdrojích energie a směrnice o energetické účinnosti, další návrhy se týkají využívání půdy a lesnictví nebo zřízení Sociálního klimatického fondu a posílení Modernizačního a Inovačního fondu. Více [v související infografice](/infografiky/fit-for-55)."
 
 - id: greenwashing
   name-short: "Greenwashing"
@@ -85,9 +133,18 @@
   name-short: "Kjótský protokol"
   description: "Jde o mezinárodní dohodu, která byla sjednána 1997 na [UNFCCC:COP3](/slovnik#cop) v japonském Kjótu a je podobně jako Pařížská dohoda právně závazná. Protokol měl původně 83 signatářů, mezi které patřila většina států Evropy, Rusko, Kazachstán, Austrálie, Nový Zéland, USA a Kanada. Spojené státy však dokument nepodepsaly a Kanada později od smlouvy odstoupila. Signatáři se v něm zavázali snížit emise skleníkových plynů v průměru o 5,2 %, cíl každého státu byl nastaven individuálně podle jeho možností. Mezi sledované plyny patřily kromě CO<sub>2</sub> i metan, N<sub>2</sub>O, HFC, PFC a SF<sub>6</sub>."
 
+- id: lulucf
+  name-short: "LULUCF"
+  name-long: "Land Use, Land-Use Change and Forestry"
+  description: "Zkratka používaná pro sektor **využívání půdy, změn ve využití půdy a lesnictví** (_Land Use, Land-Use Change and Forestry_). V tomto sektoru mohou být emise skleníkových plynů pohlcovány, například lesy či půdou (v nich je uhlík uložen na kratší či delší dobu), mohou zde však emise i vznikat – například v důsledku odlesňování či nevhodného obhospodařování zemědělských půd. Mezi opatření, která podporují pohlcování uhlíku, patří třeba ochrana rašelinišť a mokřadů, vysazování stromů či zemědělské postupy zvyšující podíl organické hmoty v půdě. Naopak aktivity jako deforestace a s ní spojená degradace lesní půdy, vysoušení mokřadů, orba pastvin a další vedou velmi často k tomu, že se uhlík v podobě skleníkových plynů uvolňuje do atmosféry. Potenciál pro ukládání (nebo únik) uhlíku v tomto sektoru je významný, neboť jen v EU zabírají lesy a zemědělská půda více než tři čtvrtiny území. V roce 2018 proto Unie schválila nařízení (revidováno v roce 2023), které definuje konkrétní cíle v tomto sektoru do roku 2030, a snaží se přimět členské státy k zavádění jednotlivých opatření."
+
 - id: mitigace
   name-short: "Mitigace"
   description: "Opatření zaměřená na zmírnění klimatické změny, tedy především na snižování emisí skleníkových plynů (tedy nejen _CO<sub>2</sub>_, ale i metanu, _N<sub>2</sub>O_ a dalších). Příkladem mitigačních opatření je uhlíková daň, využívání obnovitelných zdrojů energie, elektrifikace dopravy nebo zalesňování."
+
+- id: morske-vlny-veder
+  name-short: "Mořské vlny veder"
+  description: "Extrémní události, při kterých se na delší časové období významně zvýší teplota vody v oceánu. Tak jako vlny veder na souši představují rizika pro člověka i suchozemské ekosystémy, vlny veder v oceánech mají negativní dopady na mořskou biodiverzitu, mohou vést k hromadnému úhynu živočichů (velmi citlivé jsou na ně třeba korálové útesy), mohou zesilovat bouře či hurikány, nepříznivě ovlivňovat rybolov apod. V souvislosti s klimatickou změnou nabývají mořské vlny intenzitě, délce i frekvenci. Od roku 2022 sleduje povrchovou teplotu moří např. projekt [Copernicus Marine Service](https://marine.copernicus.eu/)."
 
 - id: nasa
   name-short: "NASA"
@@ -99,10 +156,24 @@
   name-long: "Národní závazky (Nationally Determined Contributions)"
   description: "V rámci Pařížské dohody se státy zavázaly vypracovat a aktualizovat národní cíle pro snižování emisí skleníkových plynů, tedy takzvané *Nationally Determined Contributions*. [[UNFCCC.int](https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/nationally-determined-contributions-ndcs)]"
 
+- id: necp
+  name-short: "NECP"
+  name-long: "National Energy and Climate Plan, Národní energeticko-klimatický plán"
+  description: "Aby bylo možné lépe koordinovat emisní cíle EU a opatření pro jejich plnění, má každý členský stát Unie vypracovaný tzv. **Národní energeticko-klimatický plán**. V něm jsou stanoveny cíle, jichž chce daný stát v oblasti energetiky a klimatu dosáhnout do roku 2030. Tyto cíle se týkají například zvýšení energetické účinnosti, zvýšení podílu obnovitelných zdrojů, snižování emisí skleníkových plynů či propojení s přenosovými soustavami jiných států. Český NECP je jedním ze tří hlavních strategických dokumentů v oblasti energetiky a klimatu, dalšími dvěma jsou Politika ochrany klimatu v ČR a Státní energetická koncepce v ČR."
+
 - id: noaa
   name-short: "NOAA"
   name-long: "National Oceanic and Atmospheric Administration"
   description: "NOAA, neboli Národní úřad pro oceán a atmosféru, je americká vládní agentura zodpovědná za sledování a výzkum oceánů a atmosféry a obecněji životního prostředí. [[cs.wikipedia](https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_%C3%BA%C5%99ad_pro_oce%C3%A1n_a_atmosf%C3%A9ru)]"
+
+- id: offset
+  name-short: "Uhlíkový offset"
+  description: "Uhlíkový offset (též uhlíkový kredit) je obchodovatelná jednotka, díky níž mohou firmy, státy či jednotlivci částečně kompenzovat svou uhlíkovou stopu. Jeden offset odpovídá jedné tuně CO<sub>2</sub>eq. Každý offset je vždy vázán na projekt či aktivitu, která oxid uhličitý buď z atmosféry odstraňuje (např. výsadba stromů) nebo zabraňuje jeho vypouštění (např. výstavba nových elektráren využívajících obnovitelné zdroje). Ačkoli v principu jde o užitečný nástroj, u každého projektu je vždy nutné důkladně posoudit jeho efektivitu a přínos. **Offsetování není alternativou odklonu od fosilních paliv** – má sloužit pouze ke kompenzaci emisí, které už nelze snížit jiným způsobem. Více [v souvisejícím explaineru](/explainery/uhlikove-offsety)."
+
+- id: oze
+  name-short: "OZE"
+  name-long: "Obnovitelné zdroje energie"
+  description: "K obnovitelným zdrojům energie (anglicky _renewable energy sources_, RES) se řadí například vítr, sluneční záření, pohybující se voda nebo biomasa. Jde o zdroje, které se přirozeně obnovují v lidském časovém měřítku a je možné jimi vytápět, chladit či z nich vyrábět elektřinu. Jiné zdroje energie jsou naopak neobnovitelné – v energetice, průmyslu a dalších sektorech jde především o fosilní paliva (uhlí, ropa a zemní plyn). Při spalování těchto paliv navíc vzniká velké množství emisí skleníkových plynů. Ve srovnání s tím jsou OZE nízkoemisní či bezemisní. Neobnovitelným, ale prakticky bezemisním zdrojem energie je jádro. Podíl OZE na výrobě energie celosvětově roste, a to i mimo Evropu, jak ukazuje například [tato rešerše](/studie/2023-reserse-transformace-mixu)."
 
 - id: parizskadohoda
   name-short: "Pařížská dohoda"
@@ -122,9 +193,13 @@
   name-long: "Representative Concentration Pathway"
   description: "_Reprezentativní směry vývoje koncentrací_ jsou různé scénáře vývoje koncentrací skleníkových plynů. Jsou označeny podle přibližného celkového radiačního působení v roce 2100 v porovnání s rokem 1750, tedy např. scénář _RCP2.6_ znamená 2,6 W/m<sup>2</sup>[[en.wikipedia](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]"
 
+- id: repowereu
+  name-short: "RePowerEU"
+  description: "Plán Evropské unie, který vznikl v roce 2022 v reakci na invazi Ruska na Ukrajinu. Jeho cílem je transformace energetiky v EU, která umožní ukončit závislost zemí Unie na dodávkách energií z Ruska, zejména na fosilním plynu. Znamená to především dosáhnout dalších energetických úspor a významně posílit výrobu elektřiny z obnovitelných zdrojů. Plán zvýšil dosavadní unijní ambice uvedené v Zelené dohodě a v balíčku legislativních návrhů Fit for 55. Další informace [v souvisejícím článku](/explainery/repowereu)."
+
 - id: sekvestrace
   name-short: "Sekvestrace"
-  description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. Sekvestrace uhlíku znamená dlouhodobé odstraňování CO<sub>2</sub> z atmosféry přirozenými nebo průmyslovými procesy. Příkladem přirozených procesů mohou být fotosyntéza a následné ukládání uhlíku do kmenů stromů, nebo zvětrávání hornin, při kterém se uhlík chemicky váže. Průmyslové metody mohou zachycovat CO<sub>2</sub> v místě spalování (pak jde o _Carbon Capture and Storage_, _CCS_), nebo ho mohou zachycovat přímo z atmosféry (_Direct atmospheric capture_, _DAC_). Snaha zvýšit sekvestraci uhlíku posílením přírodních procesů nebo stavbou průmyslových zařízení hraje důležitou roli v úsilí zvrátit růst koncentrací CO<sub>2</sub> v atmosféře a zastavit tak globální oteplování."
+  description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. Sekvestrace uhlíku znamená dlouhodobé odstraňování CO<sub>2</sub> z atmosféry přirozenými nebo průmyslovými procesy. Příkladem přirozených procesů mohou být fotosyntéza a následné ukládání uhlíku do kmenů stromů, nebo zvětrávání hornin, při kterém se uhlík chemicky váže. Průmyslové metody mohou zachycovat CO<sub>2</sub> v místě spalování (pak jde o _carbon capture and storage_, CCS), nebo ho mohou zachycovat přímo z atmosféry (_direct air capture_, DAC). Snaha zvýšit sekvestraci uhlíku posílením přírodních procesů nebo stavbou průmyslových zařízení hraje důležitou roli v úsilí zvrátit růst koncentrací CO<sub>2</sub> v atmosféře a zastavit tak globální oteplování."
 
 - id: sr15
   name-short: "SR15"
@@ -140,6 +215,10 @@
   name-short: "SROCC"
   name-long: "Special Report on the Ocean and Cryosphere in a Changing Climate"
   description: "[Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu](https://www.ipcc.ch/srocc/), vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy."
+
+- id: uhlikovy-rozpocet
+  name-short: "Uhlíkový rozpočet"
+  description: "Zatímco uhlíková **neutralita říká, kdy** lidstvo přestane přidávat do atmosféry oxid uhličitý (tedy hlavně skončí se spalováním fosilních paliv), **uhlíkový rozpočet říká, kolik** CO<sub>2</sub> ještě může být vypuštěno do atmosféry, aby nebyla překročena určitá hranice globálního oteplení. Například pro udržení oteplení pod hranicí 1,5 °C to znamená, že od roku 2020 dále může lidstvo vypustit už jen asi 400 gigatun CO<sub>2</sub> – což by vzhledem k tomu, že roční světové emise jsou přibližně 40 Gt CO<sub>2</sub>, znamenalo překročení této hranice už okolo roku 2030. Pro oteplení do 2 °C je pak možné vypustit dalších cca 750 Gt CO<sub>2</sub>. Oteplení 2 °C přitom znamená pravděpodobný bod zlomu pro řadu velkých planetárních systémů a pro některé ekosystémy (např. korálové útesy) je kritická dokonce už hranice 1,5 °C. Více [v související infografice](/infografiky/koncept-uhlikovy-rozpocet)."
 
 - id: unfccc
   name-short: "UNFCCC"
