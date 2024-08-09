@@ -115,11 +115,6 @@
   name-short: "Greenwashing"
   description: "Termínem greenwashing se označuje vytváření falešného dojmu nebo podávání zavádějících informací o tom, jak příznivé pro životní prostředí jsou produkty či činnost nějaké firmy. Může jít o banální přidávání předpony *eko-* před název produktu, nebo o zdůrazňování nepodstatného příspěvku (například když se velká firma zaváže k vysázení 10 000 stromů, může to vypadat jako hodně, ale jde pouze o 3 hektary lesa, tedy 100×300 m). Může jít také o odvádění pozornosti od aktivit, které životnímu prostředí přímo škodí (například když společnost, která těží hnědé uhlí, provozuje uhelné elektrárny a porušuje emisní limity rtuti, poukazuje na své investice do obnovitelných zdrojů elektřiny)."
 
-- id: hackathon
-  name-short: "Hackathon"
-  name-long: "Klimatický hackathon"
-  description: "_Hackathon_ je akce, při níž skupina lidí pracuje intenzívně na nějakém konkrétním projektu, v případě 'klimatonu' jde o spojení slov _klima_ a _marathon_. Používáme tyto termíny pro označení našich pracovních setkání, kde ve vícero lidech děláme společně větší změny a sdílíme novinky o projektu."
-
 - id: ipcc
   name-short: "IPCC"
   name-long: "Intergovernmental Panel on Climate Change"
@@ -205,16 +200,6 @@
   name-short: "SR15"
   name-long: "Special Report on Global Warming of 1.5 °C"
   description: "[Zvláštní zpráva ke globálnímu oteplení o 1,5 °C](https://www.ipcc.ch/sr15/), vydaná IPCC v roce 2018. Zpráva srovnává dopady oteplení o 1,5 °C proti oteplení o 2 °C (vzhledem k předindustriální době) a navrhuje scénáře snižování emisí skleníkových plynů, které by pomohly omezit oteplení v nejbližších letech. Ze zprávy vyplývá, že negativní dopady oteplení o 2 °C by byly výrazně vyšší než při oteplení o 1,5 °C a že je stále možné dosáhnout nárůstu teploty menšího než 1,5 °C – k tomu je nutné razantní snížení emisí od roku 2020 a dosažení uhlíkové neutrality do roku 2050."
-
-- id: srccl
-  name-short: "SRCCL"
-  name-long: "Special Report on Climate Change and Land"
-  description: "[Zvláštní zpráva o změně klimatu, krajině a půdě](https://www.ipcc.ch/srccl/), publikovaná IPCC v roce 2019. Zpráva se zabývá vztahy mezi změnami klimatu a využitím půdy,  poskytuje údaje o emisích metanu ze zemědělství, pojednává o desertifikaci a degradaci půd, potravinové bezpečnosti a diskutuje možnosti managementu rizik a budoucího udržitelného rozvoje."
-
-- id: srocc
-  name-short: "SROCC"
-  name-long: "Special Report on the Ocean and Cryosphere in a Changing Climate"
-  description: "[Zvláštní zpráva o oceánech a kryosféře v měnícím se klimatu](https://www.ipcc.ch/srocc/), vydaná IPCC v roce 2019. Zpráva dokumentuje, že se globální oceán od roku 1970 otepluje a akumuluje více než 90 % přebytečného tepla v klimatickém systému. Zpráva dále podrobněji diskutuje pokles pH oceánů nebo tání ledovců (horských i Antarktida/Grónsko) a dopady tání na vodní režim řek, které jsou ledovci napájeny. V souvislosti se zvyšováním hladin oceánů zpráva konstatuje, že velkoměsta – včetně např. New Yorku, Tokia nebo Káhiry – a další nízko položené části pevniny jsou zvyšováním hladin oceánů vážně ohroženy."
 
 - id: uhlikovy-rozpocet
   name-short: "Uhlíkový rozpočet"
