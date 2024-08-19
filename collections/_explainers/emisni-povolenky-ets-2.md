@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak bude fungovat zpoplatnění emisí skleníkových plynů z dopravy a budov (tzv. ETS 2)?"
 slug:        "emisni-povolenky-ets-2"
 published:   2024-06-10
-updated:     2024-08-02
+updated:     2024-08-19
 authors:
   - id: "katerina-kolouchova"
   - ids: ["katerina-kolouchova", "marcel-otruba"]
@@ -44,7 +44,7 @@ Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadn�
 ## Jak bude ETS 2 fungovat
 
 - Půjde o samostatný systém oddělený od ETS 1, což umožní vyšší kontrolu nad cenou povolenky.
-- Pro nepřekročení sociálně udržitelné ceny pro domácnosti pracuje systém s **mechanismy pro případ nadměrného nárůstu ceny povolenky.** Pokud bude cena povolenky vyšší než její průměrná cena za určité období, nebo pokud cena překročí **45 eur za povolenku**, budou do oběhu uvolněny další povolenky, aby byl nárůst cen zmírněn.[^cena-upresneni]
+- Pro nepřekročení sociálně udržitelné ceny pro domácnosti pracuje systém s **mechanismy pro případ nadměrného nárůstu ceny povolenky.** Pokud bude cena povolenky vyšší než její průměrná cena za určité období, nebo pokud cena překročí **45 eur za povolenku** (ve stálých cenách roku 2020[^stale-ceny]), budou do oběhu uvolněny další povolenky, aby byl nárůst cen zmírněn.[^cena-upresneni]
 - **Nákup povolenek** nebude vzhledem k administrativní náročnosti na jednotlivých producentech skleníkových plynů, tedy spotřebitelích, kteří jezdí autem nebo vytápějí svou domácnost, ale **připadne dodavatelům energií a pohonných hmot.**[^danove-sklady]
 - Podobně jako v rámci ETS 1 se bude množství povolenek v oběhu každoročně snižovat podle předem stanoveného redukčního faktoru.[^redukcni-faktor]
 - Pokud budou v první polovině roku 2026 mimořádně vysoké ceny energie, bude spuštění odloženo z roku 2027 na rok 2028.[^odlozeni]
@@ -153,6 +153,7 @@ Data k jednotlivým grafům jsou k dispozici v [našem datasetu](https://docs.go
 [^danove-sklady]: Podle [dopadové studie Evropské komise](https://eur-lex.europa.eu/resource.html?uri=cellar:7b89687a-eec6-11eb-a71c-01aa75ed71a1.0001.01/DOC_1&format=PDF) by se povinnost měla dotknout přibližně 11 400 entit – [daňových skladů](https://cs.wikipedia.org/wiki/Da%C5%88ov%C3%BD_sklad) pro ropu a lokálních dodavatelů plynu a uhlí.
 [^odlozeni]: Viz [článek 30k směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030K).
 [^redukcni-faktor]: Viz [článek 30c směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030C). Množství povolenek, které bude k dispozici od roku 2027, se lineárně snižuje již od roku 2024 (o 5,1 %).
+[^stale-ceny]: V praxi to znamená, že aktuální hodnotu "stropu" ovlivní inflace, respektive změna [evropského indexu spotřebitelských cen](https://ec.europa.eu/eurostat/cache/dashboard/prices/), kterou evropská ekonomika zaznamenala od roku 2020. Ta pro rok 2023 oproti roku 2020 vychází přibližně na 19,5 %, což hranici ve výši 45 eur posune na přibližně 53 eur.
 [^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v [článku 30h směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030H).
 [^skf]: Sociální klimatický fond začne fungovat o rok dříve, než se ETS 2 spustí, z toho důvodu bude pro jeho financování využito i 50 milionů povolenek dražených v rámci ETS 1.
 [^uhli]: Uhlí je na rozdíl od ostatních paliv velmi levným zdrojem – je lokální a málo zdaněné. Navíc má vyšší emisní intenzitu než ostatní paliva, proto se zavedení povolenky na jeho ceně projeví více.
