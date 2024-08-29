@@ -14,31 +14,31 @@ intro: |
 dashboard:
 - type:        "compare"
   col-xl-size: "3-5"
-  title:       "**Celkové emise** za rok 2018"
+  title:       "**Celkové emise** za rok 2022"
   data:
   - region:    "world"
-    value:     "**51,2**"  # Tohle je tricky -> IPCC uvádí cca 58 Gt CO2eq. EDGAR nepočítá LULUCF a tvrdí, že LULUCF je souhrnně net sink (~ 5 Gt CO2). Oproti tomu IPCC uvádí LULUCF emise cca 6.6 Gt CO2, protože odlišně definuje "antropogenní" (nezahrnuje pohlcování existujícími ekosystémy).
+    value:     "**57,4**"  # Včetně LULUCF, s odchylkou ± 5,48.
     subtitle:  "mld. tun CO<sub>2</sub>eq"
   - region:    "cz"
-    value:     "**129**"  # Pro EU / Česko všude používáme Eurostat data (metriku TOTX4_MEMONIA). Sice to není zcela konzistentní s daty z Edgaru, ale je lepší používat všude stejné číslo.
+    value:     "**118,5**"  # Pro EU / Česko všude používáme Eurostat data (metriku TOTX4_MEMONIA).
     subtitle:  "mil. tun CO<sub>2</sub>eq"
-  source:      "EDGAR, European Commission (světové emise) a Eurostat (emise ČR)"
-  source-url:  "https://edgar.jrc.ec.europa.eu/report_2021?vis=ghgtot#emissions_table"
+  source:      "UNEP (světové emise) a Eurostat (emise ČR)"
+  source-url:  "https://www.unep.org/resources/emissions-gap-report-2023"
 - type:        "compare"
   col-xl-size: "3-5"
-  title:       "**Emise na osobu** za rok 2018"
+  title:       "**Emise na osobu** za rok 2022"
   data:
   - region:    "world"
-    value:     "**6,8**"
+    value:     "**7,2**" # Populace dle World bank.
     subtitle:  "tun CO<sub>2</sub>eq"
   - region:    "cz"
-    value:     "**12,2**"  # Opět založeno na Eurostat datech, aby bylo konzistentní s dalšími grafikami.
+    value:     "**10,9**"  # Opět založeno na Eurostat datech, aby bylo konzistentní s dalšími grafikami. Populace dle ČSÚ.
     subtitle:  "tun CO<sub>2</sub>eq"
-  source:      "Fakta o klimatu"
-  source-url:  "/emise-svet-na-osobu"
+  source:      "UNEP (světové emise), Eurostat (emise ČR), World Bank (světová populace), ČSÚ (populace ČR)"
+  source-url:  "https://www.unep.org/resources/emissions-gap-report-2023"
 - type:        "single"
   col-xl-size: "3-5"
-  value:       "**87 %** emisí CO<sub>2</sub>"
+  value:       "**89 %** emisí CO<sub>2</sub>"
   subtitle:    "pochází ze **zemí směřujících k uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "/emisni-zavazky"
@@ -55,7 +55,7 @@ subtopics:
   - slug: "emise-svet-na-osobu"
     comment-key: 2
     comment: |
-      **ČR** je v přepočtu na osobu **velkým producentem skleníkových plynů**: 12 tun CO<sub>2</sub>eq na osobu ročně. To je 2× více než světový průměr a 1,4× více než průměr EU.
+      **ČR** je v přepočtu na osobu **velkým producentem skleníkových plynů**: 11 tun CO<sub>2</sub>eq na osobu ročně. To je 1,5× více než světový průměr a 1,4× více než průměr EU.
   - slug: "emise-cr"
     comment-key: 3
     comment: |
@@ -69,7 +69,7 @@ subtopics:
   title:       "Množství emisí skleníkových plynů"
   title-short: "Množství emisí"
   lead: |
-    **V roce 2018 celý svět vypustil do atmosféry 51,2 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
+    **V roce 2022 celý svět vypustil do atmosféry 57,4 miliard tun CO<sub>2</sub>eq**. Tato jednotka přepočítává množství různých skleníkových plynů na množství CO<sub>2</sub>, které by mělo stejný příspěvek ke skleníkovému jevu. Například metan je 28× silnější skleníkový plyn než oxid uhličitý (při uvažovaném stoletém horizontu), tedy 1 tuna metanu představuje 28 tun CO<sub>2</sub>eq.
 
     Klimatická změna závisí na celkovém množství skleníkových plynů v atmosféře, při srovnávání jednotlivých zemí je však také vhodné vyjádření na obyvatele. Tím je možné porovnat, jak ke klimatické změně přispívají vzhledem k počtu obyvatel různě veliké státy.
   content:
@@ -85,7 +85,7 @@ subtopics:
   qa:
   - q: "Jaké jsou celkové světové emise?"
     a: |
-      V roce 2012 byly celosvětové emise 46 miliard tun CO<sub>2</sub>eq, **dnes** již **dosahují hodnoty přes 50 miliard tun CO<sub>2</sub>eq ročně**.
+      V roce 2010 byly celosvětové emise 51,6 miliard tun CO<sub>2</sub>eq, **v roce 2022 dosáhly 57,4 miliard tun CO<sub>2</sub>eq** (včetně emisí z využití půdy a lesnictví).
   - q: "Skleníkové plyny, CO<sub>2</sub>, CO<sub>2</sub>eq. Co to vlastně znamená a jaký je mezi těmito pojmy rozdíl?"
     a: |
       Skleníkových plynů je řada, **nejvýznamnější z nich je oxid uhličitý, tedy CO<sub>2</sub>**. Jednotka tuna CO<sub>2</sub> udává tedy výhradně množství oxidu uhličitého. Jednotka tuna **CO<sub>2</sub>eq** pak vyjadřuje **úhrnné množství** více <glossary id="antropogennisklenikoveplyny">skleníkových plynů</glossary> přepočtených na ekvivalentní množství CO<sub>2</sub>.
@@ -97,7 +97,7 @@ subtopics:
   title:       "Emise skleníkových plynů v Česku"
   title-short: "Emise v ČR"
   lead: |
-    V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2018 Česká republika vypustila 129 milionů tun CO<sub>2</sub>eq. Pro relativní srovnávání s jinými státy je ale užitečné vyjádřit množství skleníkových plynů i v přepočtu na jednoho obyvatele – v takovém případě **jsou emise na osobu v Česku dvakrát vyšší, než je celosvětový průměr**.
+    V porovnání s celosvětovými emisemi se mohou zdát emise Česka zanedbatelné – v roce 2022 Česká republika vypustila 118,5 milionu tun CO<sub>2</sub>eq (při zahrnutí sektoru využití půdy a lesnictví 121,8 mil. tun CO<sub>2</sub>eq). Pro relativní srovnávání s jinými státy je ale užitečné vyjádřit množství skleníkových plynů i v přepočtu na jednoho obyvatele – v takovém případě **jsou emise na osobu v Česku 1,5× vyšší, než je celosvětový průměr**.
   content:
   - emise-cr
   - emise-cr-vyvoj
@@ -105,12 +105,12 @@ subtopics:
   qa:
   - q: "Jak velké jsou emise Česka?"
     a: |
-      **V roce 2018 Česko vypustilo 129 milionů tun CO<sub>2</sub>eq**, přepočteno na obyvatele jde o 12,2 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2015 byl 6,5 tun CO<sub>2</sub>eq na osobu. **Emise Česka na osobu jsou tedy dvakrát vyšší, než je celosvětový průměr**.
+      **V roce 2022 Česko vypustilo 118,5 milionů tun CO<sub>2</sub>eq**, přepočteno na obyvatele jde o 10,9 tuny CO<sub>2</sub>eq na osobu. Světový průměr v roce 2022 byl 7,2 tun CO<sub>2</sub>eq na osobu. **Emise Česka na osobu jsou tedy 1,5× vyšší vyšší, než je celosvětový průměr**.
 
 - id:          "sektory"
   title:       "Emise dle sektorů"
   lead: |
-    Jednotlivá hospodářská odvětví přispívají ke klimatické změně v různé míře. Například **v Česku je energetika** (včetně tepláren) **zodpovědná za téměř 40 % emisí skleníkových plynů**, oproti tomu průmysl přispívá 20 %, doprava 16 % a zemědělství přibližně 7 %. Za téměř polovinu českých emisí (45 %) zodpovídá pouze několik desítek největších zdrojů (především elektráren a průmyslových závodů).
+    Jednotlivá hospodářská odvětví přispívají ke klimatické změně v různé míře. Například **v Česku je výroba elektřiny a tepla zodpovědná za 33 % emisí skleníkových plynů**, oproti tomu průmysl přispívá 28 %, doprava 16 % a zemědělství přibližně 8 %. Za téměř polovinu českých emisí (43 %) zodpovídá pouze několik desítek největších zdrojů (především elektráren a průmyslových závodů).
 
     Podíl jednotlivých sektorů na emisích se liší jak v čase, tak napříč zeměmi. V Česku jsou relativně vyšší emise z energetiky oproti ostatním zemím kvůli vyššímu podílu uhelných elektráren a skutečnosti, že Česko je vývozcem elektřiny. Naopak emise ze zemědělství jsou v Česku relativně nižší, neboť některé potraviny dovážíme.
   content:
@@ -154,7 +154,7 @@ subtopics:
 - id:          "neutralita"
   title:       "Klimatická neutralita"
   lead: |
-    **Pro zastavení klimatické změny je nutné přestat vypouštět skleníkové plyny**, neboli dosáhnout tzv. net-zero či klimatické neutrality. Výraz "net-zero" můžeme přeložit jako "čistá nula" a je tím myšleno, že daný stát či firma je klimaticky neutrální, tedy odstraňuje z atmosféry stejné množství skleníkových plynů jako do atmosféry vypouští. Tato situace je také označována jako klimatická neutralita nebo uhlíková neutralita s tím, že druhý z pojmů se většinou týká pouze oxidu uhličitého, nikoli všech skleníkových plynů. **K dosažení uhlíkové neutrality se již přihlásily státy zodpovědné za téměř 90 % světových emisí oxidu uhličitého** (k únoru 2022).
+    **Pro zastavení klimatické změny je nutné přestat vypouštět skleníkové plyny**, neboli dosáhnout tzv. net-zero či klimatické neutrality. Výraz "net-zero" můžeme přeložit jako "čistá nula" a je tím myšleno, že daný stát či firma je klimaticky neutrální, tedy odstraňuje z atmosféry stejné množství skleníkových plynů jako do atmosféry vypouští. Tato situace je také označována jako klimatická neutralita nebo uhlíková neutralita s tím, že druhý z pojmů se většinou týká pouze oxidu uhličitého, nikoli všech skleníkových plynů. **K dosažení uhlíkové neutrality se již přihlásily státy zodpovědné za téměř 90 % světových emisí oxidu uhličitého** (k dubnu 2024).
   content:
   - emisni-zavazky
   - 2021-reserse-zavazky-statu
