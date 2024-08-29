@@ -7,13 +7,13 @@ redirect_from: "/dohody-legislativa"
 published:     2022-04-12
 weight:        50
 intro: |
-  Změna klimatu je celosvětový problém: vypouštění emisí skleníkových plynů v jedné části světa ovlivňuje klima i v jeho dalších částech. Její řešení proto **vyžaduje dlouhodobou spolupráci na regionální i globální úrovni**. Mezinárodní klimatické summity a další jednání slouží jako klíčová **platforma pro sdílení perspektiv a know-how a také formulaci závazků jednotlivých zemí**. Dohody, které na těchto jednáních vzniknou, mají velkou symbolickou hodnotu a současně představují důležitý **rámec pro politické a legislativní kroky**, k nimž následně dochází na unijní, potažmo národní úrovni. Přijatá legislativa pak utváří prostředí pro činnost státních orgánů, podniky i občany.
+  Změna klimatu je celosvětový problém: vypouštění emisí skleníkových plynů v jedné části světa ovlivňuje klima i v jeho dalších částech. Její řešení proto **vyžaduje dlouhodobou spolupráci na regionální i globální úrovni**. Mezinárodní klimatické summity a další jednání slouží jako klíčová **platforma pro sdílení perspektiv a know-how a také formulaci závazků jednotlivých zemí**. Dohody, které na těchto jednáních vzniknou, mají velkou symbolickou hodnotu a současně představují důležitý **rámec pro politické a legislativní kroky**, k nimž následně dochází na unijní, potažmo národní úrovni. Přijatá legislativa pak utváří prostředí pro činnost státních orgánů, podniky i občany a občanky.
 
 dashboard:
 - type:        "single"
   col-lg-size: "3-5"
   col-xl-size: 3
-  value:       "**87 %** emisí CO<sub>2</sub>"
+  value:       "**89 %** emisí CO<sub>2</sub>"
   subtitle:    "pochází ze zemí směřujících k **uhlíkové neutralitě**"
   source:      "Fakta o klimatu"
   source-url:  "https://faktaoklimatu.cz/infografiky/emisni-zavazky"
@@ -25,8 +25,8 @@ dashboard:
   source:      "Evropská komise"
   source-url:  "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
 - type:        "single"
-  value:       "**Egypt**, Sharm El-Sheikh"
-  subtitle:    "místo konání klimatické konference **COP27 v roce 2022**"
+  value:       "**Ázerbájdžán**, Baku"
+  subtitle:    "místo konání klimatické konference **COP29 v roce 2024**"
 
 subtopics:
   # To nejdůležitější
@@ -40,11 +40,11 @@ subtopics:
   - slug: "emisni-zavazky"
     comment-key: "2"
     comment: |
-      Klíčovým důsledkem Pařížské dohody jsou závazky států dosáhnout **uhlíkové neutrality**. Aktuálně pokrývají 87 % světových emisí CO<sub>2</sub>.
+      Klíčovým důsledkem Pařížské dohody jsou závazky států dosáhnout **uhlíkové neutrality**. Aktuálně pokrývají 89 % světových emisí CO<sub>2</sub>.
   - slug: "fit-for-55"
     comment-key: "3"
     comment: |
-      **Závazky je ovšem potřeba proměnit ve skutečnost.** V EU k tomu má přispět balíček opatření Fit for 55.
+      **Závazky je ovšem potřeba proměnit ve skutečnost.** V EU k tomu má přispět Zelená dohoda a balíček opatření Fit for 55.
   qa:
   - q: "Jaké klimatické dohody existují?"
     a: |
@@ -52,7 +52,7 @@ subtopics:
 
   - q: "Jak je naplňování klimatických dohod vymahatelné?"
     a: |
-      Velkou roli hraje to, zda je obsah dohody ukotven i legislativně. **Klimatické cíle EU obsažené v Zelené dohodě pro Evropu jsou ukotveny** v Evropském klimatickém zákonu, a jsou tedy právně vymahatelné. Stejně tak je právně závazná Pařížská dohoda. V mnoha státech světa, např. v Nizozemsku nebo Francii, již uspěly **klimatické žaloby** žalující tamní vlády za nedostatečnou aktivitu v naplňování klimatických závazků. Klimatická žaloba uspěla v červnu 2022 i v Česku, kdy spolek občanů žaloval vládu a příslušná ministerstva.
+      Velkou roli hraje to, zda je obsah dohody ukotven i legislativně. **Klimatické cíle EU obsažené v Zelené dohodě pro Evropu jsou ukotveny** v Evropském klimatickém zákonu, a jsou tedy právně vymahatelné. Stejně tak je právně závazná Pařížská dohoda. V mnoha státech světa, např. v Nizozemsku nebo Francii, již uspěly **klimatické žaloby** žalující tamní vlády za nedostatečnou aktivitu v naplňování klimatických závazků. Klimatická žaloba byla podána i v Česku, kdy spolek občanů žaluje vládu a příslušná ministerstva.
 
   - q: "Kdo se mezinárodních klimatických jednání účastní?"
     a: |
@@ -73,7 +73,7 @@ subtopics:
 
   - q: "Jak je naplňování cílů Zelené dohody financováno?"
     a: |
-      EU se na financování klimaticky prospěšných opatření podílí především prostřednictvím **evropských fondů**. Jde například o Evropské strukturální a investiční fondy, v rámci kterých by mělo na klimatická opatření směřovat alespoň 25 % prostředků. Dále vznikl Fond pro spravedlivou transformaci, který má minimalizovat negativní náklady dekarbonizace v zasažených regionech. Na financování klimatických opatření se podílí i Národní plán obnovy. V neposlední řadě pak existují Modernizační a Inovační fond, které jsou financovány **výnosy z prodeje emisních povolenek** a jejich celý obnos putuje na opatření podporující dekarbonizaci a modernizaci ekonomiky.
+      EU se na financování klimaticky prospěšných opatření podílí především prostřednictvím **evropských fondů**. Jde například o Evropské strukturální a investiční fondy, v rámci kterých by mělo na klimatická opatření směřovat alespoň 30 % prostředků. Dále vznikl Fond pro spravedlivou transformaci, který má minimalizovat negativní náklady dekarbonizace v zasažených regionech. Na financování klimatických opatření se podílí i Národní plán obnovy. Dále existují Modernizační a Inovační fond, které jsou financovány **výnosy z prodeje emisních povolenek** a jejich celý obnos putuje na opatření podporující dekarbonizaci a modernizaci ekonomiky. V roce 2025 bude spuštěn Sociální klimatický fond, který bude zaměřen na dekarbonizaci sektorů budov a silniční dopravy nebo přímou podporu zranitelných domácností. Výnosy z emisních povolenek, které nesměřují do fondů, jsou rozděleny mezi členské země EU, a představují tak další prostředky pro klimatická opatření.
 
   - q: "Jak souvisí Fit for 55 se Zelenou dohodou pro Evropu?"
     a: |
@@ -138,9 +138,9 @@ subtopics:
   title:       "Klimatické konference COP"
   title-short: "Konference COP"
   lead: |
-    Jde o konference smluvních stran (*Conference of Parties, COP*) Rámcové úmluvy OSN o změně klimatu. Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v úsilí zastavit změnu klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 26., se konal ve skotském Glasgow. Příští se bude konat na podzim roku 2022 v Sharm El-Sheikh v Egyptě.
+    Jde o konference smluvních stran (*Conference of Parties, COP*) Rámcové úmluvy OSN o změně klimatu. Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v úsilí zastavit změnu klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 28., se konal v Dubaji. Příští se bude konat na podzim roku 2024 v Baku v Ázerbájdžánu.
 
-    Speciální série našeho podcastu 2050 pokrývá, jak takové jednání probíhá, jaký je jeho význam a co konkrétně přinesla jednání v Glasgow.
+    Speciální série našeho podcastu 2050 pokrývá, jak takové jednání probíhá, jaký je jeho význam a co konkrétně přinesla jednání v Glasgow v roce 2021.
 
   content:
   - 12-jak-svet-vidi-zmenu-klimatu
@@ -156,11 +156,11 @@ subtopics:
   qa:
   - q: "Jak vypadají národní strategie v oblasti změny klimatu?"
     a: |
-      Národní strategie existují zejména ve formě Politiky ochrany klimatu, Adaptační strategie ČR nebo Vnitrostátního energeticko-klimatického plánu.
+      Národní strategie existují zejména ve formě Politiky ochrany klimatu, Strategie přizpůsobení se změně klimatu v podmínkách ČR (adaptační strategie), Vnitrostátního energeticko-klimatického plánu (*National Energy and Climate Plan*, NECP) či Státní energetické koncepce.
 
   - q: "Jak se Česko zavázalo snižovat emise skleníkových plynů?"
     a: |
-      Česko se stejně jako EU zavázalo dosáhnout klimatické neutrality do roku 2050. V rámci Politiky ochrany klimatu si Česko stanovilo cíl dosáhnout snížení emisí skleníkových plynů o 32 Mt do roku 2020 (a o 44 Mt do roku 2030) v porovnání s rokem 2005. V roce 2019 avšak Česko ve srovnání s rokem 2005 dosahovalo snížení pouze o přibližně 25 Mt. V porovnání s rokem 1990 klesly české emise skleníkových plynů do roku 2019 přibližně o 1/3, nicméně z velké části se tak událo zejména díky opouštění těžkého průmyslu v 90. letech.
+      V roce 2024 v Česku probíhá aktualizace klíčových strategických dokumentů v oblasti energetiky a klimatu, aby reflektovaly současné vědecké poznání, cíle Zelené dohody pro Evropu nebo geopolitické změny po invazi Ruska na Ukrajině. V rámci Politiky ochrany klimatu z roku 2017 si Česko stanovilo cíl dosáhnout snížení emisí skleníkových plynů o 32 Mt do roku 2020 (a o 44 Mt do roku 2030) v porovnání s rokem 2005. V roce 2022 Česko ve srovnání s rokem 2005 dosahovalo snížení o přibližně 33 Mt (bez zahrnutí sektoru LULUCF). V porovnání s rokem 1990 klesly české emise skleníkových plynů do roku 2022 přibližně o 1/3, nicméně z velké části se tak událo zejména díky opouštění těžkého průmyslu v 90. letech.
 
   content:
   - klimaticke-zavazky-cr
