@@ -109,6 +109,14 @@
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
 
+  - id: "petr-danis"
+    name: "Petr Daniš"
+    position: "Analytik"
+    summary: "Píše a pomáhá zaměřovat texty na podstatné, přednáší a vystupuje, podporuje vedení organizace. Předtím se věnoval environmentálnímu a klimatickému vzdělávání, dlouhé roky vedl vzdělávací centrum TEREZA a napsal knížku Klima je příležitost."
+    img: "petr-danis.jpg"
+    email: "petr.danis@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/petr-danis/"
+
   - id: "hana-tesak-vrtala"
     name: "Hana Tesák Vrtala"
     position: "Podcasterka"
