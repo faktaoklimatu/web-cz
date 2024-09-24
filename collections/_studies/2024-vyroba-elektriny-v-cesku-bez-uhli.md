@@ -23,56 +23,272 @@ authors:
     minor-role: "editace a korektura"
 type:             "Studie"
 perex: |
-  TODO: Napsat perex.
+  Česko vyrábí zhruba 40 % elektřiny a 50 % tepla z uhlí, které je však kvůli své vysoké emisní intenzitě významně ekonomicky ohroženo systémem zpoplatnění emisí. Studie zkoumá důsledky případného zdražení emisní povolenky a následného odstavování uhelných elektráren z ekonomických příčin. Modelování se zaměřuje na otázky spojené s bezpečností dodávek elektřiny, s importní bilancí a s důsledky možného urychlení modernizace energetiky.
 ---
 
-**Evropská energetika prochází rychlou transformací** směrem k (téměř) nulovým emisím skleníkových plynů a současně k prosperitě a ekonomické konkurenceschopnosti v budoucím nízkoemisním světě.
+## Současná situace v evropské a české energetice
 
-Protože v evropské energetice jde z velké části o decentralizované tržní prostředí, její transformaci určují hlavně ekonomické faktory. Klíčovou roli tedy hraje nastavení trhu, a v rámci něj pak zejména systém **obchodování s emisními povolenkami** (EU ETS). Tento mechanismus, který se využívá i mimo EU, přenáší na elektrárny a další velké podniky společenské náklady související s vypouštěním skleníkových plynů. Tím narovnává tržní prostředí, jež tyto náklady dříve nezohledňovalo.
+**Evropská energetika prochází rychlou transformací.** Protože evropská energetika z velké části funguje v decentralizovaném tržním prostředí, její transformaci určují hlavně ekonomické faktory. Klíčovou roli tedy hraje nastavení trhu, a v rámci něj pak zejména systém obchodování s emisními povolenkami (<glossary id="euets">EU ETS</glossary>). Uhelné elektrárny mají oproti jiným zdrojům elektřiny vysokou emisní intenzitu, a tudíž na ně cena emisních povolenek dopadá výrazněji. **Důsledkem případného zvýšení cen emisních povolenek by proto byla nižší konkurenceschopnost uhelných elektráren a jejich postupné odstavování.**
 
-**Pro Česko transformace výroby elektřiny a tepla znamená v první řadě ukončení výroby z uhlí**, které má oproti jiným zdrojům elektřiny velmi vysokou emisní intenzitu a tedy i vysoké finanční náklady, stále se z něj však v Česku vyrábí zhruba 40 % elektřiny a 50 % tepla. Tento úkol se týká i jiných zemí – v EU dosud hraje uhelná energetika významnou roli v Polsku, Německu, Bulharsku a Slovinsku. V průměru celé EU však výroba elektřiny z uhlí za posledních 20 let klesla asi o 60 %.
+**Pro Česko transformace energetiky tedy znamená v první řadě ukončení výroby elektřiny a tepla z uhlí.** Z uhlí se v Česku nyní vyrábí zhruba 40 % elektřiny a 50 % tepla. Tento úkol se týká i jiných zemí – v EU dosud hraje uhelná energetika významnou roli v Polsku, Německu, Bulharsku a Slovinsku. V průměru celé EU však výroba elektřiny z uhlí za posledních 20 let klesla asi o 60 % a řada zemí uhelné elektrárny zcela uzavřela.
 
-**Pokud Česko usiluje o budoucí prosperitu a ekonomickou konkurenceschopnost, je nezbytné poukázat na ekonomické důsledky současné české výroby elektřiny a tepla** a pragmaticky prosazovat změny, které povedou k moderní a dlouhodobě udržitelné energetice.
+Uzavírání uhelných elektráren a tepláren v Česku a vliv nových zdrojů na trh s elektřinou otevírají řadu otázek souvisejících s bezpečností dodávek elektřiny, s **dopady** cen elektřiny na konkurenceschopnost českých podniků a obecněji prosperitu Česka nebo s **důsledky uzavření** uhelných dolů.
 
-Přitom je potřeba brát ohled na sociální aspekty a možná rizika celé transformace – aby například nebyla ohrožena spolehlivost dodávek elektřiny domácnostem a aby nedošlo k výraznému a plošnému, byť dočasnému zdražení energií. Proto je **nutné pečlivě zvažovat dopady, které by v následujících letech mohlo mít rychlé uzavírání uhelných elektráren a tepláren**.
+## Otázky, na které se studie zaměřuje
 
-## Na co se studie zaměřuje
+<div class="wide-figure-desktop uhelna-studie-otazky">
+<div class="card publication-card" markdown="1" style="background:#efefef;">
 
-**Tato studie se soustředí na krátkodobý výhled dalších zhruba 5 let** a klade si následující otázky:
+{:.small}
+období okolo roku 2025
 
-- **Co způsobí dražší emisní povolenka?** Jak by českou energetiku a nejvíce pak uhelnou energetiku proměnilo rychlé zdražení emisních povolenek?
-- **Proč se vyplatí rozvoj české energetiky urychlit?** Co může Česko pro své občany i podniky v dalších letech získat rychlejším rozvojem moderní energetiky?
-{:.arrow}
+### Co způsobí dražší emisní povolenka?
 
-Při hledání odpovědi na obě otázky využívá studie vlastní optimalizační model evropské elektrizační soustavy, který umožňuje v hodinovém rozlišení analyzovat dopady různých cenových hladin emisních povolenek stejně jako různých scénářů rozvoje nových zdrojů v Česku. Tato studie pro každý ze scénářů sleduje několik zásadních výstupů modelu: (1) z jakých zdrojů se bude v Česku vyrábět elektřina, (2) jak se promění toky v evropské síti a česká importní bilance a (3) zda bude v Česku dostatek elektřiny.
+Jaké budou důsledky dražší povolenky na výrobu elektřiny v Česku, importní bilanci
+Česka a bezpečnost dodávek?
 
-TODO: Tabulky parametrů.
+<div class="uhelna-studie-sada-scenaru" markdown="1">
+{:.scenario-left}
+#### Levnější povolenka
+
+{:.scenario-right}
+#### Dražší povolenka
+
+{:.heading}
+**Cena emisní povolenky** (€/t CO<sub>2</sub>eq)
+
+{:.value-left}
+**60**
+
+{:.value-right}
+**100** (↑ 40)
+
+{:.heading}
+**Instalovaný výkon v ČR** (GW<sub>e</sub> netto)
+
+{:.source-type}
+Fotovoltaika
+
+{:.value-left}
+3,50
+
+{:.value-right}
+3,50
+
+{:.source-type}
+Vítr
+
+{:.value-left}
+0,34
+
+{:.value-right}
+0,34
+
+{:.source-type}
+Bionergie
+
+{:.value-left}
+0,55
+
+{:.value-right}
+0,55
+
+{:.source-type}
+Zemní plyn
+
+{:.value-left}
+2,08
+
+{:.value-right}
+2,08
+
+{:.source-type}
+Uhlí (maximum)
+
+{:.value-left}
+7,22
+
+{:.value-right}
+7,22
+</div>
+
+</div>
+<div class="card publication-card" markdown="1" style="background:#e1f3f5;">
+
+{:.small}
+období okolo roku 2028
+
+### Vyplatí se rozvoj české energetiky urychlit?
+
+Co může energetika v Česku získat pro domácnosti i podniky rychlejší modernizací?
+
+<div class="uhelna-studie-sada-scenaru" markdown="1">
+{:.scenario-left}
+#### Pomalejší rozvoj
+
+{:.scenario-right}
+#### Rychlejší rozvoj
+
+{:.heading}
+**Cena emisní povolenky** (€/t CO<sub>2</sub>eq)
+
+{:.value-left}
+100
+
+{:.value-right}
+100
+
+{:.heading}
+**Instalovaný výkon v ČR** (GW<sub>e</sub> netto)
+
+{:.source-type}
+Fotovoltaika
+
+{:.value-left}
+**7,00**
+
+{:.value-right}
+**10,10** (↑ 3,1)
+
+{:.source-type}
+Vítr
+
+{:.value-left}
+**0,50**
+
+{:.value-right}
+**0,80** (↑ 0,3)
+
+{:.source-type}
+Bionergie
+
+{:.value-left}
+**0,65**
+
+{:.value-right}
+**0,74** (↑ 0,1)
+
+{:.source-type}
+Zemní plyn
+
+{:.value-left}
+**2,51**
+
+{:.value-right}
+**3,03** (↑ 0,5)
+
+{:.source-type}
+Uhlí (maximum)
+
+{:.value-left}
+7,22
+
+{:.value-right}
+7,22
+</div>
+
+</div>
+</div>
+</div>
+
+Pro hledání odpovědi na tyto otázky studie srovnává několik scénářů možného budoucího vývoje a v nich sleduje tři zásadní parametry: (1) z jakých zdrojů se bude v Česku vyrábět elektřina, (2) jak se promění toky v evropské síti a česká importní bilance a (3) zda bude v Česku dostatek elektřiny. Analýza je založena na vlastním optimalizačním modelu propojené evropské elektrizační soustavy, který v hodinovém rozlišení hledá co nejlevnější provoz soustavy, čímž simuluje chování evropského trhu s elektřinou.
 
 ## Co vyplývá z modelování
 
 Výsledky z modelových scénářů lze rozdělit podle hlavních otázek:
 
+<div class="container-fluid wide-figure-desktop">
 <div class="row">
-<div class="col" markdown="1">
-**K čemu by mohl vést rychlý nárůst ceny emisní povolenky (na 100 €/t)**
+<div class="col-md-6 my-3 px-0">
+<div class="publication-card" markdown="1" style="background:#efefef;">
 
-1. **Pokles domácí výroby elektřiny z uhlí o více než dvě třetiny** – na trhu by ji nahradil dostatek levnějších zdrojů na výrobu elektřiny jako zemní plyn a import elektřiny ze zahraničí.
-2. **Odstavení většiny uhelných elektráren** bez dopadu na bezpečnost dodávek elektřiny (velká část uhelných tepláren by byla stále potřeba pro dodávky tepla a mohla by tedy pomáhat v pokrytí špiček spotřeby elektřiny).
-3. Proměna Česka v **dovozce elektřiny** (s čistým importem 2,5 TWh ročně, tedy zhruba 4 % celkové spotřeby); dražší domácí výrobu z uhlí by zčásti nahradila levnější výroba v zahraničí z OZE a zemního plynu.
+**K čemu by vedl nárůst ceny emisní povolenky** (na 100 €)
+
+1. **Pokles domácí výroby elektřiny z uhlí o více než dvě třetiny** – na trhu by ji nahradily zdroje s nižšími emisei (zejména zemní plyn) a import elektřiny ze zahraničí.
+2. **Odstavení většiny uhelných elektráren** bez dopadu na bezpečnost dodávek elektřiny (větší část uhelných tepláren bude stále potřeba pro dodávky tepla a pomůže pokrývat špičky spotřeby elektřiny).
+3. Proměna Česka v **dovozce elektřiny** (s čistým importem 2,5 TWh ročně, tedy zhruba 4 % celkové spotřeby); dražší domácí výrobu z uhlí by zčásti nahradila levnější zahraniční výroba elektřiny z OZE a zemního plynu.
 4. **Zhruba 40% pokles českých emisí** z výroby elektřiny v důsledku snížení výroby z nejvíce znečišťujících zdrojů.
-</div>
 
-<div class="col" markdown="1">
+</div>
+</div>
+<div class="col-md-6 my-3 px-0">
+<div class="publication-card" markdown="1" style="background:#e1f3f5;">
+
 **Co může přinést rychlejší rozvoj moderní energetiky v dalších 5 letech** (oproti scénáři Pomalejšího rozvoje)
 
 1. **Zvýšení výrobní soběstačnosti Česka** a téměř vyrovnanou importní bilanci elektřiny (díky rozvoji zdrojů elektřiny, které lépe konkurují na spotovém trhu).
 2. **Nižší velkoobchodní ceny elektřiny**: čím rychlejší bude rozvoj moderní energetiky, tím nižší budou v průměru ceny na trhu.
-3. **Urychlení přechodu od uhelné energetiky**: snížení výroby elektřiny z uhlí o 13 % a možnost odstavit další uhelné teplárny.
+3. **Urychlení přechodu od uhelné energetiky**: snížení výroby elektřiny z uhlí o dalších 13 % a možnost odstavit další uhelné teplárny.
+
+</div>
+</div>
 </div>
 </div>
 
 ## Čtyři hlavní doporučení pro další rozvoj české energetiky
 
-Studie na základě modelování i na základě dalších studií a analýz identifikuje oblasti rozvoje pro českou energetiku v dalších 5 letech:
+Studie na základě modelování i na základě dalších studií a analýz identifikuje čtyři klíčkové oblasti rozvoje pro českou energetiku v dalších 5 letech:
 
-TODO: Dlaždice doporučení.
+<div class="wide-figure-desktop uhelna-studie-doporuceni">
+<div class="card" markdown="1">
+
+{% include figure.html
+    name="rozvoj-oze.svg"
+    alt="Piktogram fotovoltaické a větrné elektrárny"
+    no-lightbox=true
+%}
+
+### Rozvoj větrných a solárních elektráren
+
+Zejména zkrátit povolovací procesy pro výstavbu větrných elektráren a nastavit vhodné módy podpory obnovitelných zdrojů. To umožní rychle nahradit část elektřiny z fosilních zdrojů.
+
+</div>
+<div class="card" markdown="1">
+
+{% include figure.html
+    name="rozvoj-flexibility.svg"
+    alt="Piktogram stožáru elektrického vedení a rozvaděče"
+    no-lightbox=true
+%}
+
+### Rozvoj flexibility, akumulace a sítí
+
+Pro integraci OZE je třeba hlavně (1) rozvíjet **flexibilitu spotřeby a akumulaci**, které umožní lépe využít nadbytky výroby obnovitelné elektřiny, a (2) **posilovat kapacitu sítí**, aby zvládly připojit a přenést elektřinu z více obnovitelných zdrojů.
+
+</div>
+<div class="card" markdown="1">
+
+{% include figure.html
+    name="rozvoj-riditelnych-zdroju.svg"
+    alt="Piktogram tepelné elektrárny"
+    no-lightbox=true
+%}
+
+### Rozvoj řiditelných zdrojů elektřiny
+
+Hlavně urychlit výstavbu **nových kogeneračních zdrojů**, které umožní dokončit odchod od uhlí.
+
+{:.small}
+Teplárenství ale nemůže spoléhat jen na plynovou kogeneraci. Energeticky úsporné renovace budov, velká tepelná čerpadla, biomasa nebo akumulace tepla mohou dále významně snížit provozní náklady i emise.
+
+{:.small}
+Také je potřeba nastavit ekonomické podmínky, aby mohl vzniknout dostatek špičkových zdrojů elektřiny.
+
+</div>
+<div class="card" markdown="1">
+
+{% include figure.html
+    name="docasne-udrzeni-uhli.svg"
+    alt="Piktogram uhelné elektrárny s přesýpacími hodinami"
+    no-lightbox=true
+%}
+
+### Dočasné udržení části uhelné energetiky
+
+Pro koordinovaný odchod od uhlí může být potřebné **udržet v provozu uhelné teplárny** a související těžbu uhlí, dokud nebudou k dispozici nové zdroje tepla.
+
+{:.small}
+Naopak zvažovaná legislativní opatření pro udržení uhelných elektráren by byla zbytečně drahá a v rozporu s právem EU. Je třeba urychleně najít náhradní řešení všech typů podpůrných služeb, které dnes uhelné elektrárny poskytují.
+
+</div>
+</div>
