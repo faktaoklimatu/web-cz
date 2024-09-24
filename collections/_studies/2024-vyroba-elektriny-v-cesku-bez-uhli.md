@@ -23,7 +23,7 @@ authors:
     minor-role: "editace a korektura"
 type:             "Studie"
 perex: |
-  Česko vyrábí zhruba 40 % elektřiny a 50 % tepla z uhlí, které je však kvůli své vysoké emisní intenzitě významně ekonomicky ohroženo systémem zpoplatnění emisí. Studie zkoumá důsledky případného zdražení emisní povolenky a následného odstavování uhelných elektráren z ekonomických příčin. Modelování se zaměřuje na otázky spojené s bezpečností dodávek elektřiny, s importní bilancí a s důsledky možného urychlení modernizace energetiky.
+  Česko vyrábí zhruba 40 % elektřiny a 50 % tepla z uhlí, které je však kvůli své vysoké emisní intenzitě významně ekonomicky ohroženo systémem zpoplatnění emisí. Studie zkoumá důsledky případného zdražení emisní povolenky a následného odstavování uhelných elektráren na základě ekonomických faktorů. Provedené modelování se zaměřuje na otázky spojené s bezpečností dodávek elektřiny, s importní bilancí a s cenami silové elektřiny v Česku.
 ---
 
 ## Současná situace v evropské a české energetice
