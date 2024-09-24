@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Levná elektřina v roce 2050</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Výroba elektřiny bez uhlí</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -39,15 +39,14 @@ slug: index
     <div class="row">
       <div class="col-md-8">
         <p>
-        Česko stejně jako téměř všechny země světa řeší transformaci energetiky, aby mělo dostatek levné a čisté elektřiny. Pro posouzení možných cest tímto směrem jsme zpracovali <strong>celou škálu scénářů pro rok 2050</strong>, které se liší ve spotřebě elektřiny, možnostech rozvoje obnovitelných zdrojů v Česku, míře rozvoje jaderné energetiky, stejně jako v míře energetické spolupráce napříč Evropou.
+        Česko vyrábí zhruba 40 % elektřiny a 50 % tepla z uhlí, které je však kvůli své vysoké emisní intenzitě významně ekonomicky ohroženo systémem zpoplatnění emisí. Nová studie zkoumá <strong>důsledky případného zdražení emisní povolenky</strong> a následného odstavování uhelných elektráren z ekonomických příčin.
         </p>
         <p>
-        V modelování jsme se zaměřovali na otázku, jakým způsobem může Česko dosáhnout levné výroby elektřiny, aby dokázalo být v rámci Evropy konkurenceschopné.
-        Z výsledků vyplývá, že pro udržení nízkých nákladů na výrobu elektřiny jsou klíčové tři faktory: <strong>rozvoj větrné energetiky, úspory ve spotřebě a míra propojení a spolupráce v Evropě.</strong>
+        V modelování jsme se mimo jiné zaměřili na otázky spojené s bezpečností dodávek elektřiny, s importní bilancí a s důsledky možného urychlení modernizace energetiky. Z výsledků vyplývá, že <strong>ani po uzavření většiny uhelných elektráren</strong> v krátkodobém horizontu v Česku <strong>nehrozí nedodávky elektřiny</strong>. Studie dále zkoumá výhody rychlejšího rozvoje nových zdrojů a poskytuje několik doporučení pro rozvoj moderní energetiky v Česku.
         </p>
       </div>
       <div class="col-md">
-        {% include preview-block.html slug="2024-cesty-k-ciste-a-levne-elektrine-2050" no_include_tags=true %}
+        {% include preview-block.html slug="2024-vyroba-elektriny-v-cesku-bez-uhli" no_include_tags=true %}
       </div>
     </div>
   </div></div>
@@ -67,7 +66,7 @@ slug: index
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "atlas, 2024-cesty-k-ciste-a-levne-elektrine-2050, 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030" | split: ", " %}
+    {% assign featured_slugs = "2024-vyroba-elektriny-v-cesku-bez-uhli, 2024-cesty-k-ciste-a-levne-elektrine-2050, atlas" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
