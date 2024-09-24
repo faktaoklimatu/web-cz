@@ -82,9 +82,10 @@ Tento model je vhodný především pro **porozumění možnostem rozvoje solár
 
 Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 * **Pokrýt zbývající poptávku po elektřině pomocí zadaných flexibilních zdrojů a úložišť elektřiny**. Model při tom **minimalizuje** buď **provozní náklady**, nebo **provozní i investiční náklady** celého systému.
+* Zachytit základní provázanost s teplárenstvím v Česku.
+* Přesněji modelovat spotřebu elektřiny včetně její flexibility.
 * Přibližně **předpovídat spotové ceny** elektřiny na trhu v průběhu celého roku.
 * V rámci souhrnné statistiky počítat koeficienty využití a **ziskovost jednotlivých zdrojů elektřiny**.
-
 
 {% capture optimization %}
 {% include figure.html
@@ -104,16 +105,13 @@ Tento model rozšiřuje základní didaktický model a umožňuje tak navíc:
 
 <a href="https://drive.google.com/drive/folders/1d2QWrEN1BZgYOmoMPGF77UfAzFbFWkMe?usp=share_link" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-chart-area"></i> Další výstupy optimalizačního modelu</a>
 
+Průběžně zveřejňujeme výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný [kód modelu](https://github.com/faktaoklimatu/grid-model). Stejně jako naše ostatní materiály i model je zveřejněný pod licencí _Creative Commons_. Studie založené na optimalizačním modelu najdete [našimi publikacemi](/publikace#odborne-studie).
+
 ## Plány na další rozvoj
 
-Model postupně vylepšujeme, přidáváme nové funkcionality a sbíráme zpětnou vazbu. Průběžně budeme zveřejňovat výstupy modelování, z nich plynoucí vhledy o transformaci energetiky i samotný kód modelu.
-
-Stejně jako naše ostatní materiály i model zveřejníme pod licencí _Creative Commons_.
-
-V budoucnu plánujeme do modelu přidat:
-* základní provázanost s teplárenstvím,
-* přesnější modelování spotřeby včetně její flexibility,
-* modelování systémových služeb.
+Model postupně vylepšujeme, přidáváme nové funkcionality a sbíráme zpětnou vazbu. V budoucnu plánujeme do modelu mimo jiné přidat:
+* jemnější geografické rozlišení (lepší zachycení možností přenosové soustavy),
+* modelování podpůrných služeb.
 
 <a href="{{ site.fundraising }}" target="_blank" class="btn btn-primary no-ext-link-icon"><i class="d-md-none d-lg-inline fas fa-fw fa-heart"></i> Podpořte vývoj modelů energetiky</a>
 
