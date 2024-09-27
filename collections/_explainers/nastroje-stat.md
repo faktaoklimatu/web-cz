@@ -33,6 +33,12 @@ Jednotlivé kategorie opatření a vybrané příklady konkrétních nástrojů 
 
 ## Regulatorní nástroje
 
+{% include lead-in-figure.html
+    name="regulatorni-nastroje.svg"
+    class="leadin-figure-small"
+    alt="Piktogram regulačních nástrojů"
+%}
+
 Jde o nástroje, které něco **omezují či povolují**. Mohou také **nastavovat výkonnostní normy** (např. emisní normy pro osobní automobily) **či cíle** (např. dosažení klimatické neutrality). Regulace, které od průmyslu vyžadují významnější změny (např. přechod k elektromobilitě), by měl stát oznámit alespoň několik let dopředu, aby se na ně podniky mohly připravit.[^4]
 
 ### Zákazy a omezení
@@ -66,6 +72,12 @@ Důležitým nástrojem vlády je i stanovení norem pro určité produkty či a
 
 ## Ekonomické nástroje
 
+{% include lead-in-figure.html
+    name="ekonomicke-nastroje.svg"
+    class="leadin-figure-small"
+    alt="Piktogram ekonomických nástrojů"
+%}
+
 Ekonomické nástroje se vztahují zejména k nákladům, jež jsou s dekarbonizací spojeny. **Pokud má určitá aktivita negativní dopad** na životní prostředí nebo klima (např. při ní dochází k produkci emisí skleníkových plynů), **zatíží ji tyto nástroje zpoplatněním**. Účelem je napravit selhání trhu, který tyto negativní externality nebere v potaz. Naopak **pokud je aktivita pro dekarbonizaci žádoucí, ekonomické nástroje ji zvýhodní** – třeba daňovými úlevami nebo pomocí dotační či jiné podpory.
 
 ### Zpoplatnění emisí skleníkových plynů
@@ -86,6 +98,12 @@ Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření
 * Státní podpora bezemisních zdrojů energie formou aukcí, feed-in tarifů či tzv. contracts for difference[^23]), která výrobcům dodává ujištění (v podobě smlouvy) o návratnosti jejich investice. V Česku takto funguje podpora obnovitelných zdrojů energie, kterou upravuje [zákon č. 469/2023 Sb.](https://www.e-sbirka.cz/sb/2023/469) Jednou z forem této podpory je například garance výkupní ceny za vyrobenou jednotku elektřiny po dobu několika let.
 
 ## Informační nástroje
+
+{% include lead-in-figure.html
+    name="informacni-nastroje.svg"
+    class="leadin-figure-small"
+    alt="Piktogram informačních nástrojů"
+%}
 
 **Dostupné informace pomáhají k lepším rozhodnutím** na různých úrovních. Samotné informační nástroje mohou mít mnoho podob a umožňovat předávání informací mezi různými aktéry (stát → podniky, stát → občané, podniky → stát atd.).
 
@@ -126,6 +144,13 @@ Kampaně se mohou zaměřovat buď na přiblížení dekarbonizace jako celku, n
 
 
 ## Investice do infrastruktury
+
+{% include lead-in-figure.html
+    name="investice-do-infrastruktury.svg"
+    class="leadin-figure-small"
+    alt="Piktogram investic do infrastruktury"
+%}
+
 
 Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard korun do budování infrastruktury**.[^24] Jde o strategické investice, které stát typicky spolufinancuje z evropských prostředků, půjček (např. od Evropské investiční banky), zelených dluhopisů či se na nich podílí ve spolupráci se soukromým sektorem. Příklady:
 * výstavba nového jaderného bloku v Dukovanech
