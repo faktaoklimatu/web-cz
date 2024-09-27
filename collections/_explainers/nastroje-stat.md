@@ -19,6 +19,7 @@ cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/cars-on-road-in-between-trees-during-daytime-5HGOyBMlvww"
 perex: |
     TBD
+infographics-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
 ---
 
 **Na dekarbonizaci se podílí mnoho různých aktérů** – mezinárodní společenství, vlády národních států, města a samosprávy, firmy, vzdělávací a vědecké instituce, ale i domácnosti, neziskové organizace a další. Každý z těchto aktérů přispívá jiným způsobem a má jiný vliv. **Zásadní roli hraje stát a jeho vláda** (v případě Evropy rovněž Evropská unie – významná část legislativy členských států vychází ze společně schválené legislativy unijní). Stát disponuje širokou paletou nástrojů, kterými nastavuje podmínky pro dekarbonizaci jednotlivých sektorů hospodářství. To, jaké nástroje zvolí a jak dobře bude svou volbu komunikovat k dalším aktérům, může významně ovlivnit průběh a rychlost celé transformace. Nástroje lze rozdělit do čtyř kategorií[^1]:
@@ -27,10 +28,21 @@ perex: |
 * informační,
 * investice do infrastruktury.
 
+{% include figure.html
+    name="schema-nastroje-mix.svg"
+    alt="TODO"
+%}
+
 Volbou nástrojů může vláda usilovat o co nejvhodnější kombinaci vzájemně se doplňujících politik,[^2] která co nejvíce usnadní přechod k bezemisnímu hospodářství. Měla by přitom **zvažovat dopad opatření na snížení emisí skleníkových plynů** (případně jiný environmentální cíl), **dopady na společnost a různé skupiny obyvatel** (s ohledem na příjem, věk, gender a podobně) a také **nákladovou efektivitu a institucionální realizovatelnost** nástrojů (jejich přijatelnost a legitimitu).[^3] Protože změny a transformační procesy bývají různými aktéry často vnímány jako náročné a nezřídka se setkávají s odporem či nepochopením, měla by na to vláda být dopředu připravena a pečlivě zvážit, jak bude svá rozhodnutí a kroky prezentovat. 
 
 Jednotlivé kategorie opatření a vybrané příklady konkrétních nástrojů (bez hodnocení jejich přínosů a nedostatků) jsou více popsány v dalším textu.
 
+{% include figure.html
+    name="regulatorni-nastroje.svg"
+    class="negative-margin-bottom"
+    alt="Piktogram regulačních nástrojů"
+%}
+    
 ## Regulatorní nástroje
 
 Jde o nástroje, které něco **omezují či povolují**. Mohou také **nastavovat výkonnostní normy** (např. emisní normy pro osobní automobily) **či cíle** (např. dosažení klimatické neutrality). Regulace, které od průmyslu vyžadují významnější změny (např. přechod k elektromobilitě), by měl stát oznámit alespoň několik let dopředu, aby se na ně podniky mohly připravit.[^4]
@@ -64,6 +76,12 @@ Důležitým nástrojem vlády je i stanovení norem pro určité produkty či a
 * Stanovení podílu obnovitelných zdrojů na konečné spotřebě energie v EU v roce 2030 na úrovni 42,5 % ([směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413))
 * Stanovení množství CO<sub>2</sub>, které má být v EU v roce 2030 pohlceno lesy a půdou ([směrnice LULUCF](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839))
 
+{% include figure.html
+    name="ekonomicke-nastroje.svg"
+    class="negative-margin-bottom"
+    alt="Piktogram ekonomických nástrojů"
+%}
+
 ## Ekonomické nástroje
 
 Ekonomické nástroje se vztahují zejména k nákladům, jež jsou s dekarbonizací spojeny. **Pokud má určitá aktivita negativní dopad** na životní prostředí nebo klima (např. při ní dochází k produkci emisí skleníkových plynů), **zatíží ji tyto nástroje zpoplatněním**. Účelem je napravit selhání trhu, který tyto negativní externality nebere v potaz. Naopak **pokud je aktivita pro dekarbonizaci žádoucí, ekonomické nástroje ji zvýhodní** – třeba daňovými úlevami nebo pomocí dotační či jiné podpory.
@@ -84,6 +102,12 @@ Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření
 * Dotační a investiční programy, z nichž jsou prostředky rozdělovány prostřednictvím [fondů](https://faktaoklimatu.cz/infografiky/fondy-eu) a operačních programů.[^21] Např. [Operační program Životní prostředí pro období 2021–2027](https://opzp.cz/) nebo [Národní program Životní prostředí](https://www.narodniprogramzp.cz/).
 * Daňové úlevy, které jsou např. v USA [součástí](https://www.irs.gov/credits-and-deductions-under-the-inflation-reduction-act-of-2022) investičního balíčku pro dekarbonizaci – v rámci tamního zákona o omezení inflace (_Inflation Reduction Act_, IRA).[^22]
 * Státní podpora bezemisních zdrojů energie formou aukcí, feed-in tarifů či tzv. contracts for difference[^23]), která výrobcům dodává ujištění (v podobě smlouvy) o návratnosti jejich investice. V Česku takto funguje podpora obnovitelných zdrojů energie, kterou upravuje [zákon č. 469/2023 Sb.](https://www.e-sbirka.cz/sb/2023/469) Jednou z forem této podpory je například garance výkupní ceny za vyrobenou jednotku elektřiny po dobu několika let.
+
+{% include figure.html
+    name="informacni-nastroje.svg"
+    class="negative-margin-bottom"
+    alt="Piktogram informačních nástrojů"
+%}
 
 ## Informační nástroje
 
@@ -124,6 +148,11 @@ Kampaně se mohou zaměřovat buď na přiblížení dekarbonizace jako celku, n
 * Kampaň [Zelená modernizace](https://www.zelenamodernizace.cz/), v rámci které ministerstvo životního prostředí představuje možnosti dekarbonizace pro domácnosti i podniky a ukazuje příklady dobré praxe.
 * Kampaň [#Czechia4Climate](https://mzv.gov.cz/jnp/cz/udalosti_a_media/archiv_zprav/rok_2022/ministr_lipavsky_a_ministryne_hubackova.html) ministerstev životního prostředí a zahraničních věcí během předsednictví Česka v Radě EU.
 
+{% include figure.html
+    name="investice-do-infrastruktury.svg"
+    class="negative-margin-bottom"
+    alt="Piktogram investic do infrastruktury"
+%}
 
 ## Investice do infrastruktury
 
@@ -132,6 +161,13 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 * budování a modernizace železniční infrastruktury[^25]
 * infrastruktura pro dobíjecí stanice pro elektromobily[^26]
 * interkonektor[^27] [NordLink](https://www.statnett.no/en/our-projects/interconnectors/nordlink/), propojující pod mořem elektrizační soustavu Dánska a Německa
+
+{% include includes-local/figure-plain-download-preview.html
+    link=page.infographics-url
+    preview="infographics.png"
+    alt="Náhled jednostránkového shrnutí klimatických závazků ČR"
+    caption="Jednostránkové shrnutí klimatických závazků ČR ke stažení ve formátu PDF."
+%}
 
 ## Poznámky
 
