@@ -290,6 +290,12 @@ $c-callout-text: #373633;
     }
 }
 
+.tabulka-uzemni-stopa-oze {
+    td:first-child, td:nth-child(4) {
+        font-weight: 600;
+    }
+}
+
 #ets2-kalkulacka {
     border-radius: 0.5rem;
     background-color: #f7f7f7;
@@ -556,30 +562,6 @@ $c-callout-text: #373633;
 
 .ff55-done {
     color: #8ab59b;
-}
-
-.tabulka-uzemni-stopa-oze {
-    td {
-        font-weight: bold;
-    }
-    th:not(.important), .unit {
-        font-weight: normal;
-    }
-    td:not(.important), .unit {
-        color: $c-grey;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 575px) {
-    .tabulka-uzemni-stopa-oze {
-        th:not(.important), td:not(.important) {
-            font-size: 0.8rem;
-        }
-        td, th {
-            padding: 0.5rem;
-        }
-    }
 }
 
 .negative-margin-bottom{

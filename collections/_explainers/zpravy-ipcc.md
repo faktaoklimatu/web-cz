@@ -109,7 +109,7 @@ První část AR6 vyšla ještě před klimatickou konferencí COP26, která pro
 * [IPCC – Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf) – anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě IPCC, web MŽP
 
 ### Další odkazy a poznámky
+
 * [Climate change assessments – Review of the processes and procedures of the IPCC](https://archive.ipcc.ch/pdf/IAC_report/IAC%20Report.pdf) (2010)
 
-----
 [^1]: [Sixth Assessment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf)
