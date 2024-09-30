@@ -149,10 +149,6 @@
   - name: "Jan Krajhanzl"
     summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
 
-  - id: "kristina-studena"
-    name: "Kristina Studená"
-    summary: "Starala se o efektivní fungování týmu, včetně správy projektů, koordinaci interních procesů a péči o dárce a dárkyně."
-
   - id: "marek-krcal"
     name: "Marek Krčál"
     summary: "Přispívá k tématu energetiky, zejména k otázkám její dlouhodobé transformace."
@@ -180,6 +176,10 @@
     name: "Karolína Štollová"
     summary: "Zpracovala analýzy týkající se energetiky, například energetické soběstačnosti, obnovitelných zdrojů nebo cenové stability."
     linkedin: "https://www.linkedin.com/in/karol%C3%ADna-%C5%A1tollov%C3%A1-61b4a01a0"
+
+  - id: "kristina-studena"
+    name: "Kristina Studená"
+    summary: "Starala se o efektivní fungování týmu, včetně správy projektů, koordinaci interních procesů a péči o dárce a dárkyně."
 
   - name: "Eliška Vlčková"
     summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
