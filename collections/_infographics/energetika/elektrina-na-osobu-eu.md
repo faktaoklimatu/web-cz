@@ -30,8 +30,10 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-climate.org/data-catalogue/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla doplněna z národních a dalších zdrojů.
+* Infografika je založená na [datech](https://ember-climate.org/data-catalogue/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla doplněna z národních a dalších zdrojů.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2024/) a [na celém světě](https://ember-climate.org/insights/research/global-electricity-review-2024/).
 * Data o populaci jsou převzata od Organizace spojených národů.
+
+## Poznámky
 
 [^EU]: Jde o tzv. EU-27: 27 států, které jsou k roku 2023 součástí Evropské unie, tedy bez Velké Británie, která formálně Unii opustila 31. ledna 2020.
