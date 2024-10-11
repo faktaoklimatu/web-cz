@@ -19,7 +19,7 @@ cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/cars-on-road-in-between-trees-during-daytime-5HGOyBMlvww"
 perex: |
     Transformace na nízkouhlíkovou ekonomiku vyžaduje sérii důležitých rozhodnutí o vhodných řešeních a opatřeních. To se neobejde bez jasné komunikace a spolupráce na všech úrovních a bez nastavení podmínek a prostředí pro jednotlivé aktéry. Klíčovým hráčem je v tomto ohledu stát a jeho vláda.    
-infographics-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
+infographics-url: /assets-local/files/nastroje-stat-infografika.pdf
 ---
 
 **Na dekarbonizaci se podílí mnoho různých aktérů** – mezinárodní společenství, vlády národních států, města a samosprávy, firmy, vzdělávací a vědecké instituce, ale i domácnosti, neziskové organizace a další. Každý z těchto aktérů přispívá jiným způsobem a má jiný vliv. Zásadní roli hraje stát a jeho vláda (v případě Evropy rovněž Evropská unie – významná část legislativy členských států vychází ze společně schválené legislativy unijní). Stát disponuje širokou paletou nástrojů, kterými nastavuje podmínky pro dekarbonizaci jednotlivých sektorů hospodářství. To, jaké nástroje zvolí a jak dobře bude svou volbu komunikovat k dalším aktérům, může významně ovlivnit průběh a rychlost celé transformace. Nástroje lze rozdělit do čtyř kategorií:
@@ -30,6 +30,7 @@ infographics-url: /assets-local/files/klimaticke-zavazky-cr-onepager.pdf
 
 {% include figure.html
     name="schema-nastroje-mix.svg"
+    class="narrow-figure"
     alt="TODO"
 %}
 
@@ -65,13 +66,13 @@ Jednotlivé nástroje téměř nikdy nepůsobí izolovaně, respektive často je
     content=mix
 %}
 
-{% include figure.html
-    name="regulatorni-nastroje.svg"
-    class="negative-margin-bottom"
+## Regulatorní nástroje
+
+{% include lead-in-figure.html
+    name="regulatorni-nastroje.svg" 
+    class="leadin-figure-small"
     alt="Piktogram regulačních nástrojů"
 %}
-    
-## Regulatorní nástroje
 
 Jde o nástroje, které něco **omezují či povolují**. Mohou také **nastavovat výkonnostní normy** (např. emisní normy pro osobní automobily) **či cíle** (např. dosažení klimatické neutrality). Regulace, které od průmyslu vyžadují významnější změny (např. přechod k elektromobilitě), by měl stát oznámit alespoň několik let dopředu, aby se na ně podniky mohly připravit.[^4]
 
@@ -104,13 +105,14 @@ Důležitým nástrojem státu je i stanovení norem pro určité produkty či a
 * Stanovení podílu obnovitelných zdrojů na konečné spotřebě energie v EU v roce 2030 na úrovni 42,5 % ([směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413))
 * Stanovení množství CO<sub>2</sub>, které má být v EU v roce 2030 pohlceno lesy a půdou ([směrnice LULUCF](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839))
 
-{% include figure.html
-    name="ekonomicke-nastroje.svg"
-    class="negative-margin-bottom"
-    alt="Piktogram ekonomických nástrojů"
-%}
 
 ## Ekonomické nástroje
+
+{% include lead-in-figure.html
+    name="ekonomicke-nastroje.svg"
+    class="leadin-figure-small"
+    alt="Piktogram ekonomických nástrojů"
+%}
 
 Ekonomické nástroje se vztahují zejména k nákladům, jež jsou s dekarbonizací spojeny. **Pokud má určitá aktivita negativní dopad** na životní prostředí nebo klima (např. při ní dochází k produkci emisí skleníkových plynů), **zatíží ji tyto nástroje zpoplatněním**. Tím doplňují trh, který tyto negativní externality nebere v potaz. Naopak **pokud je aktivita pro dekarbonizaci žádoucí, ekonomické nástroje ji zvýhodní** – třeba daňovými úlevami nebo pomocí dotační či jiné podpory.
 
@@ -131,13 +133,13 @@ Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření
 * Daňové úlevy, které jsou např. v USA [součástí](https://www.irs.gov/credits-and-deductions-under-the-inflation-reduction-act-of-2022) investičního balíčku pro dekarbonizaci – v rámci tamního zákona o omezení inflace (_Inflation Reduction Act_, IRA).[^22]
 * Státní podpora bezemisních zdrojů energie formou aukcí, *feed-in* tarifů či tzv. *contracts for difference*[^23]), která výrobcům dodává ujištění (v podobě smlouvy) o návratnosti jejich investice. V Česku takto funguje podpora obnovitelných zdrojů energie, kterou upravuje [zákon č. 469/2023 Sb.](https://www.e-sbirka.cz/sb/2023/469) Jednou z forem této podpory je například garance výkupní ceny za vyrobenou jednotku elektřiny po dobu několika let.
 
-{% include figure.html
+## Informační nástroje
+
+{% include lead-in-figure.html
     name="informacni-nastroje.svg"
-    class="negative-margin-bottom"
+    class="leadin-figure-small"
     alt="Piktogram informačních nástrojů"
 %}
-
-## Informační nástroje
 
 **Dostupné informace pomáhají k lepším rozhodnutím** na různých úrovních. Samotné informační nástroje mohou mít mnoho podob a umožňovat předávání informací mezi různými aktéry (stát → podniky, stát → občané, podniky → stát atd.).
 
@@ -176,13 +178,13 @@ Kampaně se mohou zaměřovat na přiblížení dekarbonizace jako celku nebo mo
 * Kampaň [Zelená modernizace](https://www.zelenamodernizace.cz/), v rámci které ministerstvo životního prostředí představuje možnosti dekarbonizace pro domácnosti i podniky a ukazuje příklady dobré praxe
 * Kampaň [#Czechia4Climate](https://mzv.gov.cz/jnp/cz/udalosti_a_media/archiv_zprav/rok_2022/ministr_lipavsky_a_ministryne_hubackova.html) ministerstev životního prostředí a zahraničních věcí během předsednictví Česka v Radě EU
 
-{% include figure.html
+## Investice do infrastruktury
+
+{% include lead-in-figure.html
     name="investice-do-infrastruktury.svg"
-    class="negative-margin-bottom"
+    class="leadin-figure-small"
     alt="Piktogram investic do infrastruktury"
 %}
-
-## Investice do infrastruktury
 
 Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard korun do budování infrastruktury**.[^24] Jde o strategické investice, které stát typicky spolufinancuje z evropských prostředků, půjček (např. od Evropské investiční banky), zelených dluhopisů či se na nich podílí ve spolupráci se soukromým sektorem. Příklady:
 * Výstavba nového jaderného bloku v Dukovanech
@@ -192,10 +194,17 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 {% include includes-local/figure-plain-download-preview.html
     link=page.infographics-url
-    preview="infographics.png"
+    preview="infografika-nahled.png"
     alt="Náhled jednostránkového nástrojů státu pro dekarbonizaci"
     caption="Jednostránkové shrnutí nástrojů státu pro dekarbonizaci ke stažení ve formátu PDF."
 %}
+
+<div class="download">
+    <a href="{{ page.infographics-url }}" class="btn btn-primary" download>
+        <i class="fas fa-fw fa-download"></i>
+        Stáhnout PDF
+    </a>
+</div>
 
 ## Poznámky
 
