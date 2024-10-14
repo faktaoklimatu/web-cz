@@ -12,6 +12,13 @@ caption:     "Rešerše klíčových studií věnujících se budoucí transform
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Výroba elektřiny v Česku bez uhlí"
+    date:    Září 2024
+    url:     "https://faktaoklimatu.cz/studie/2024-vyroba-elektriny-v-cesku-bez-uhli"
+    authors:
+      - name: Fakta o klimatu
+        url:  "https://faktaoklimatu.cz/"
+    timeframe: 2030
   - title:   "Cesty k čisté a levné elektřině v roce 2050"
     date:    Červen 2024
     url:     "https://faktaoklimatu.cz/studie/2024-cesty-k-ciste-a-levne-elektrine-2050"
