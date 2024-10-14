@@ -194,7 +194,7 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 {% include includes-local/figure-plain-download-preview.html
     link=page.infographics-url
-    preview="infographics.png"
+    preview="infografika-nahled.png"
     alt="Náhled jednostránkového nástrojů státu pro dekarbonizaci"
     caption="Jednostránkové shrnutí nástrojů státu pro dekarbonizaci ke stažení ve formátu PDF."
 %}
