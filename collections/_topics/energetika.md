@@ -88,7 +88,7 @@ subtopics:
   - elektrina-na-osobu-svet
   - elektrina-svet
   - 2023-reserse-transformace-mixu
-  - mapa-uhelnych-zdroju-cr
+  - mapa-uhli-cr
 
 - id:          "emise-v-energetice"
   title:       "Současný stav: Emise z energetiky"
