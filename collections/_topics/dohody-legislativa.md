@@ -165,6 +165,7 @@ subtopics:
   content:
   - klimaticke-zavazky-cr
   - adaptacni-strategie-cr
+  - nastroje-stat
   - 2019-scenar-necp
   - emise-cr-vyvoj
 ---
