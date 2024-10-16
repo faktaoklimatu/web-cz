@@ -40,14 +40,14 @@ Jak ukazuje graf výše, různé druhy osobní dopravy přispívají k celkovým
 Poměr mezi množstvím emisí a přepravním výkonem se nazývá **emisní intenzita**. V osobní dopravě se emisní intenzita počítá v emisích na osobokilometr (oskm).[^osobokilometr] Znalost emisní intenzity umožňuje srovnat různé druhy dopravy a jejich vliv na životní prostředí. Následující tabulka obsahuje přehled emisní intenzity pro jednotlivé typy dopravních prostředků.
 
 {:.table}
-Dopravní prostředek    | Výkon<br>(mld. oskm) | Emise<br>(Mt CO<sub>2</sub>) | Intenzita<br>(g CO<sub>2</sub>/oskm)
----------------------- | -----: | ----: | ---:
-Osobní automobily      | 4502,6 | 430,5 | 95,6
-Letadla                | 1760,1 | 159,7 | 90,7
-Autobusy               | 1187,4 | 67,4  | 56,8
-Osobní vlaky           | 796,8  | 10,4  | 13,1
-Nemotorizovaná vozidla | 364,4  | 0,0   | 0,0
-Jednostopá vozidla     | 135,0  | 6,0   | 44,5
+| Dopravní prostředek    | Výkon<br><span class="text-muted">(mld. oskm)</span> | Emise<br><span class="text-muted">(Mt CO<sub>2</sub>)</span> | Intenzita<br><span class="text-muted">(g CO<sub>2</sub>/oskm)</span> |
+|------------------------|-------:|------:|-----:|
+| Osobní automobily      | 4502,6 | 430,5 | 95,6 |
+| Letadla                | 1760,1 | 159,7 | 90,7 |
+| Autobusy               | 1187,4 | 67,4  | 56,8 |
+| Osobní vlaky           | 796,8  | 10,4  | 13,1 |
+| Nemotorizovaná vozidla | 364,4  | 0,0   | 0,0  |
+| Jednostopá vozidla     | 135,0  | 6,0   | 44,5 |
 
 Kromě emisní intenzity hraje u emisí z osobní dopravy významnou roli i **vzdálenost, na kterou se cestující dopravují**. Ne všechny dopravní prostředky jsou pro každou cestu stejně vhodné, proto je důležité v úvahách o různých typech dopravy délku trasy zohlednit. Osobní doprava může být:
 

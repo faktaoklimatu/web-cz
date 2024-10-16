@@ -8,7 +8,7 @@ weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2019, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
-data-our:   "https://docs.google.com/spreadsheets/d/1SQSnRSfTQ5HVxVJvwj4igfl22hyblYVjDo_INceKy4I"
+data-our:   "https://docs.google.com/spreadsheets/d/1uLijA3LFRBn-6V26g2iLkRupLiln3333uhhNW6A4OLg"
 data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 

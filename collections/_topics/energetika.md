@@ -196,4 +196,5 @@ subtopics:
   - bezemisni-energetika-cr-1-scenare
   - bezemisni-energetika-cr-2-technologie
   - 2024-cesty-k-ciste-a-levne-elektrine-2050
+  - 2024-vyroba-elektriny-v-cesku-bez-uhli
 ---

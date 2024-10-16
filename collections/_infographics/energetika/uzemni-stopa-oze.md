@@ -55,36 +55,12 @@ Výpočet územní stopy závisí na použité metodice a odhadovaných parametr
 
 Výpočet územní stopy shrnuje následující tabulka, vyjadřující **roční výrobu elektřiny z jednoho km<sup>2</sup> území**:
 
-<table class="table mt-4 tabulka-uzemni-stopa-oze">
-  <thead>
-    <tr>
-      <th scope="col" class="align-middle important">Zdroj</th>
-      <th scope="col" class="align-middle">Instalovaný výkon na km<sup>2</sup></th>
-      <th scope="col" class="align-middle">Průměrný koeficient ročního využití</th>
-      <th scope="col" class="align-middle important">Průměrná roční výroba elektřiny na km<sup>2</sup></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="important">Vítr</td>
-      <td>9,6 <span class="unit">MWp/km<sup>2</sup></span></td>
-      <td>28,9 <span class="unit">%</span></td>
-      <td class="important">24,4 <span class="unit">GWh/km<sup>2</sup></span></td>
-    </tr>
-    <tr>
-      <td class="important">Slunce</td>
-      <td>59,1 <span class="unit">MWp/km<sup>2</sup></span></td>
-      <td>12,5 <span class="unit">%</span></td>
-      <td class="important">64,8 <span class="unit">GWh/km<sup>2</sup></span></td>
-    </tr>
-    <tr>
-      <td class="important">Biomasa</td>
-      <td class="">–</td>
-      <td class="">–</td>
-      <td class="important">2,1 <span class="unit">GWh/km<sup>2</sup></span></td>
-    </tr>
-  </tbody>
-</table>
+{:.table.tabulka-uzemni-stopa-oze}
+| Zdroj | Instalovaný výkon<br><span class="text-muted">(MWp/km<sup>2</sup>)</span> | Průměrný koeficient ročního využití | Průměrná roční výroba elektřiny<br><span class="text-muted">(GWh/km<sup>2</sup>)</span> |
+|---------|-----:|-------:|-----:|
+| Vítr    | 9,6  | 28,9 % | 24,4 |
+| Slunce  | 59,1 | 12,5 % | 64,8 |
+| Biomasa | –    | –      | 2,1  |
 
 Například pro fotovoltaiku je na roční výrobu 25 TWh potřeba 25 000 GWh ÷ 64,8 GWh/km<sup>2</sup> = 386 km<sup>2</sup>. Proto jsou také na mapce v grafice k fotovoltaice vyznačené 4 čtverečky (každý s plochou 100 km<sup>2</sup>).
 

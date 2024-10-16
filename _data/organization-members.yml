@@ -13,14 +13,6 @@
     linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
     twitter: "https://twitter.com/OPribyla"
 
-  - id: "kristina-studena"
-    name: "Kristina Studená"
-    position: "Koordinátorka projektů, týmu a zázemí"
-    summary: "Stará se o efektivní fungování celého týmu. Její role zahrnuje správu projektů, koordinaci interních procesů a péči o dárce a dárkyně. Se zkušenostmi v řízení a komunikaci přináší do týmu organizační schopnosti i strategický přístup."
-    img: "kristina-studena.jpg"
-    email: "kristina.studena@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/kristina-studen%C3%A1-a18b43270/"
-
   - id: "kristi-psorn-zakopcanova"
     name: "Kristi Pšorn Zákopčanová"
     name_formal: "Kristína Pšorn Zákopčanová"
@@ -49,6 +41,30 @@
     linkedin: "https://www.linkedin.com/in/kate%C5%99ina-kolouchov%C3%A1-b655a02ba/"
     twitter: "https://twitter.com/katkolouchova"
 
+  - id: "petr-holik"
+    name: "Petr Holík"
+    position: "Komunikační expert a podcaster"
+    summary: "Svůj vztah k vědě si tvořil spoluprací na výzkumech v Arktidě i na jižní Moravě a už během studia se začal věnovat její komunikaci. Tvoří podcast [2050](https://2050podcast.cz/) a přednáší o klimatické změně a transformaci."
+    img: "petr-holik.jpg"
+    email: "petr.holik@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/petrholik/"
+    twitter: "https://twitter.com/holik_petr"
+
+  - id: "petr-danis"
+    name: "Petr Daniš"
+    summary: "Píše a pomáhá zaměřovat texty na to podstatné, přednáší a vystupuje okolo témat změny klimatu a dekarbonizace. Napsal knížku [Klima je příležitost](https://klimajeprilezitost.cz/). Dříve se věnoval environmentálnímu vzdělávání, dlouhé roky vedl vzdělávací centrum TEREZA."
+    img: "petr-danis.jpg"
+    email: "petr.danis@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/petr-danis/"
+
+  - id: "matej-grabovsky"
+    name: "Matěj Kolouch Grabovský"
+    position: "Analytik a programátor"
+    summary: "Tvoří modely, zpracovává a analyzuje data v oblastech spjatých s transformací. Jako softwarový inženýr pracoval na webových aplikacích a distribuovaných systémech."
+    img: "matej-grabovsky.jpg"
+    email: "matej.grabovsky@faktaoklimatu.cz"
+    www: "https://mgrabovsky.net/"
+
   - id: "jirka-lnenicka"
     name: "Jirka Lněnička"
     name_formal: "Jiří Lněnička"
@@ -59,15 +75,6 @@
     linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
     twitter: "https://twitter.com/JirkaLnenicka"
 
-  - id: "petr-holik"
-    name: "Petr Holík"
-    position: "Komunikační expert a podcaster"
-    summary: "Svůj vztah k vědě si tvořil spoluprací na výzkumech v Arktidě i na jižní Moravě a už během studia se začal věnovat její komunikaci. Tvoří podcast [2050](https://2050podcast.cz/) a přednáší o klimatické změně a transformaci."
-    img: "petr-holik.jpg"
-    email: "petr.holik@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/petrholik/"
-    twitter: "https://twitter.com/holik_petr"
-
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -76,14 +83,6 @@
     email: "marcel.otruba@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
     www: "https://otruba.sk/"
-
-  - id: "matej-grabovsky"
-    name: "Matěj Kolouch Grabovský"
-    position: "Analytik a programátor"
-    summary: "Tvoří modely, zpracovává a analyzuje data v oblastech spjatých s transformací. Jako softwarový inženýr pracoval na webových aplikacích a distribuovaných systémech."
-    img: "matej-grabovsky.jpg"
-    email: "matej.grabovsky@faktaoklimatu.cz"
-    www: "https://mgrabovsky.net/"
 
   - id: "zbynek-stajer"
     name: "Zbyněk Štajer"
@@ -96,7 +95,7 @@
   - id: "andy-snovakova"
     name: "Andy Snováková"
     position: "Analytička"
-    summary: "Věnuje se tématu uhlíku v půdě a jeho vztahu ke klimatické změně a pomáhá s vizualizací dat. Vystudovala evoluční a ekologickou biologii se zaměřením na botaniku a dále pokračuje v environmentálních studiích."
+    summary: "Věnuje se tématu krajiny a jejímu vztahu ke změně klimatu. Vystudovala evoluční a ekologickou biologii se zaměřením na botaniku a environmentální studia."
     img: "andy-snovakova.jpg"
     email: "alexandra.snovakova@faktaoklimatu.cz"
 
@@ -137,9 +136,9 @@
     linkedin: "https://www.linkedin.com/in/tomas-protivinsky-49599040"
     twitter: "https://twitter.com/protivinsky"
 
-- title: "Faktům o klimatu dále pomáhají"
+- title: "Faktům o klimatu dále pomáhají a pomáhali"
   lead: |
-    Další lidé pomáhají konzultačně, rešeršemi, psaním textů nebo programováním webu.
+    Další lidé přispívají nebo přispěli konzultačně, rešeršemi, psaním textů nebo programováním webu.
   class: "further-team col-12 col-sm-12 col-md-4 col-lg-3 px-0"
   members:
   - id: "adam-bilek"
@@ -155,7 +154,7 @@
     summary: "Přispívá k tématu energetiky, zejména k otázkám její dlouhodobé transformace."
 
   - name: "Martin Křivánek"
-    summary: "Přemýšlí, jak může mít práce Fakt o klimatu co největší dopad a jak co nejvíce zhodnotit existující infografiky a materiály."
+    summary: "Podílel se na textech webu, přispíval nápady a připomínkoval infografiky a články."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
 
   - name: "Jan Růžička"
@@ -171,21 +170,25 @@
 
   - id: "kristyna-simonova"
     name: "Kristýna Šimonová"
-    summary: "Spolupracuje na materiálech týkajících se globálních úmluv v oblasti biodiverzity a zabývá se klimatickými ambicemi států východní Asie."
+    summary: "Spolupracovala na materiálech týkajících se globálních úmluv v oblasti biodiverzity."
 
   - id: "karolina-stollova"
     name: "Karolína Štollová"
     summary: "Zpracovala analýzy týkající se energetiky, například energetické soběstačnosti, obnovitelných zdrojů nebo cenové stability."
     linkedin: "https://www.linkedin.com/in/karol%C3%ADna-%C5%A1tollov%C3%A1-61b4a01a0"
 
+  - id: "kristina-studena"
+    name: "Kristina Studená"
+    summary: "Starala se o efektivní fungování týmu, včetně správy projektů, koordinaci interních procesů a péči o dárce a dárkyně."
+
   - name: "Eliška Vlčková"
     summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
     linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
 
   - name: "Martin crysman Zahradník"
-    summary: "V projektu od jeho počátku pomáhá s tím, co je potřeba (korektury, opravy, drobné programování)."
+    summary: "V projektu na jeho počátku pomáhal s tím, co bylo potřeba (korektury, opravy, drobné programování)."
 
   - id: "jakub-zamouril"
     name: "Jakub Zamouřil"
-    summary: "Přispívá analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky. Je redaktorem magazínu [Czechsight](https://www.czechsight.cz)."
+    summary: "Přispěl analytickou prací a psaním textů v tématech fyziky změny klimatu a energetiky."
     linkedin: "https://www.linkedin.com/in/jakub-zamouril/"

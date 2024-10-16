@@ -15,28 +15,28 @@ dashboard:
 - type:        "single"
   col-lg-size: "3-5"
   col-xl-size: "3"
-  value:       "**79,6** mld. $"
-  subtitle:    "přispěly rozvinuté státy **rozvojovým zemím na klimatická opatření** <span class='nobr'>(v roce 2019)</span>"
-  source:      "Fakta o klimatu"
-  source-url:  "https://faktaoklimatu.cz/explainery/klimaticke-finance"
+  value:       "**115,9** mld. $"
+  subtitle:    "přispěly rozvinuté státy **rozvojovým zemím na klimatická opatření** <span class='nobr'>(v roce 2022)</span>"
+  source:      "OECD"
+  source-url:  "https://www.oecd.org/en/publications/climate-finance-provided-and-mobilised-by-developed-countries-in-2013-2022_19150727-en/"
 - type:       "single"
   col-lg-size: "3-5"
   col-xl-size: "3"
-  value:       "**23** %"
-  subtitle:    "**světových emisí je zpoplatněno** daní nebo povolenkami (v roce 2022)"
+  value:       "**24** %"
+  subtitle:    "**světových emisí je zpoplatněno** daní nebo povolenkami (v roce 2024)"
   source:      "World Bank"
-  source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
+  source-url:  "https://openknowledge.worldbank.org/entities/publication/b0d66765-299c-4fb8-921f-61f6bb979087"
 - type:        "compare"
   col-lg-size: "5"
   col-xl-size: "4-5"
-  title:       "**Výnosy ze zpoplatnění uhlíku** <span class='nobr'>za rok 2021</span>"
+  title:       "**Výnosy ze zpoplatnění uhlíku** <span class='nobr'>za rok 2023</span>"
   data:
   - region:    "world"
-    value:     "**84** mld. $"
+    value:     "**104** mld. $"
   - region:    "eu"
-    value:     "**34** mld. $"
+    value:     "**47,4** mld. $"
   source:      "World Bank"
-  source-url:  "https://openknowledge.worldbank.org/handle/10986/37455"
+  source-url:  "https://carbonpricingdashboard.worldbank.org/compliance/revenue"
 
 subtopics:
   # V kostce
@@ -115,7 +115,7 @@ subtopics:
   -
     q: "Co označuje pojem klimatické finance?"
     a: |
-      Pojem "klimatické finance" označuje závazek hospodářsky rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe čelit klimatické změně a jejím dopadům. V roce 2009 na klimatické konferenci COP 15 v Kodani se rozvinuté země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. V roce 2020 tento závazek však nebyl naplněn.
+      Pojem "klimatické finance" označuje závazek hospodářsky rozvinutých států finančně přispívat rozvojovým zemím, aby dokázaly lépe čelit klimatické změně a jejím dopadům. V roce 2009 na klimatické konferenci COP 15 v Kodani se rozvinuté země zavázaly, že budou od roku 2020 každoročně posílat 100 miliard amerických dolarů rozvojovým státům na podporu investic do nízkoemisních technologií a na adaptaci na dopady klimatické změny. Tento závazek byl poprvé naplněn v roce 2022.
 
   content:
   - fondy-eu
