@@ -27,11 +27,11 @@ perex:
 
 ### Základní čísla a pojmy
 
-_Perex bude zde._
+_Perex bude zde._ (poznámka pro editaci: elektřina je důležitá, je to guláš v jednotkách a blbě se to představuje, protože to nezměříš metrem)
 
 Moderní společnost se bez elektřiny neobejde – pro své fungování ji potřebují technologie, které denně používáme, klíčová je pro výrobní sektory ekonomiky i oblast služeb. Elektřinu lze vyrábět z řady různých zdrojů (různě emisně náročných), dá se přeměňovat na jiné formy energie (například na teplo) a je možné ji také transportovat na velké vzdálenosti. 
 
-Co se týče spotřeby, průměrná česká domácnost[^prum_domacnost] v **bytě spotřebuje 2 450 kilowatthodin elektřiny ročně**, v rodinném domě je to v průměru **5 317 kWh** (tedy více než dvojnásobek). Vedle toho spotřebovává velké množství elektřiny průmysl, doprava a další odvětví. Celkově se v Česku ročně spotřebuje přibližně 60 TWh elektřiny, přičemž elektrárny vyrobí cca 84 TWh. Tento text rozebírá tato čísla podrobněji a vysvětluje rozdíly v základních pojmech a používaných jednotkách.
+Co se týče spotřeby, průměrná česká domácnost[^prum_domacnost] v **bytě spotřebuje 2 450 kilowatthodin elektřiny ročně**, v rodinném domě je to v průměru **5 317 kWh** (tedy více než dvojnásobek). Vedle toho spotřebovává velké množství elektřiny průmysl, doprava a další odvětví. Celkově se v Česku ročně spotřebuje přibližně 60 TWh elektřiny, přičemž elektrárny vyrobí cca 84 TWh (poznámka pro editaci: vysvětlit rozdíl). Tento text rozebírá tato čísla podrobněji a vysvětluje rozdíly v základních pojmech a používaných jednotkách.
 
 
 ## Výkon a spotřeba elektřiny
@@ -86,7 +86,7 @@ V energetice se často používají předpony pro vyjádření velkého množstv
 
 ### Spotřebiče
 
-Různé spotřebiče se liší svým výkonem a používají se také různě často nebo dlouho. U některých navíc není množství využívané energie konstantní po celou dobu provozu – například pračky nebo myčky na nádobí mají největší výkon na začátku svého cyklu, kdy ohřívají vodu. Rozlišuje se proto **špičkový (maximální) výkon**[^spickovy_vykon] (tedy největší možný výkon spotřebiče) a **průměrný výkon**, tedy kolik elektřiny spotřebič v průměru odebírá při svém provozu ze sítě. Celková spotřeba spotřebiče potom závisí na tom, jaký je jeho výkon (příkon) a jak dlouho a často se používá. Například roční spotřeba chladničky běžící nonstop je cca 250 kWh, pračka používaná třikrát týdně spotřebuje za rok asi 160 kWh. Pro představu přináší srovnání průměrné roční spotřeby několika běžných domácích spotřebičů následující grafika:
+Různé spotřebiče se liší svým výkonem a používají se také různě často nebo dlouho. U některých navíc není množství využívané energie konstantní po celou dobu provozu – například pračky nebo myčky na nádobí mají největší výkon na začátku svého cyklu, kdy ohřívají vodu. Rozlišuje se proto **špičkový (maximální) výkon**[^spickovy_vykon] (tedy největší možný výkon spotřebiče) a **průměrný výkon**, tedy kolik elektřiny spotřebič v průměru odebírá při svém provozu ze sítě. Celková spotřeba spotřebiče potom závisí na tom, jaký je jeho výkon (příkon) a jak dlouho a často se používá. Například roční spotřeba chladničky běžící nonstop je cca 250 kWh, pračka používaná třikrát týdně spotřebuje za rok asi 160 kWh.
 
 {% include figure.html
     name="cs-spotreba-spotrebice-des.svg"
@@ -116,8 +116,8 @@ Ve městě s 20 000 obyvateli je výkon všech domácností přibližně 2,6 MW 
     class="wide-figure-desktop"
     name="cs-spotreba-domacnosti-mapa-des.svg"
     name-mobile="cs-spotreba-domacnosti-mapa-des.svg"
-    alt="TODO"
-    source-text="TODO"
+    alt="Fakta o klimatu, data ČSÚ"
+    source-text="Fakta o klimatu, data ČSÚ"
 %}
 
 ### Celé Česko
@@ -143,7 +143,7 @@ Domácností je v Česku celkem cca 4,2 milionu a jejich celková roční spotř
 
 ## Výkon a výroba elektřiny
 
-Elektřina se vyrábí z různých zdrojů – poměr využití těchto zdrojů při výrobě se označuje jako **energetický mix**.V energetickém mixu Česka mají stále významný podíl fosilní zdroje, více než 40 % se stále vyrábí z uhlí. S ohledem na mezinárodní závazky Česka snižovat emise skleníkových plynů a zároveň s ohledem na očekávaný nárůst spotřeby elektřiny zmíněný výše to znamená, že energetický mix Česka musí projít velkou proměnou – elektřinu budeme muset získávat z jiných zdrojů.    
+Elektřina se vyrábí z různých zdrojů – poměr využití těchto zdrojů při výrobě se označuje jako **energetický mix**. V energetickém mixu Česka mají stále významný podíl fosilní zdroje, více než 40 % se stále vyrábí z uhlí. S ohledem na mezinárodní závazky Česka snižovat emise skleníkových plynů a zároveň s ohledem na očekávaný nárůst spotřeby elektřiny zmíněný výše to znamená, že energetický mix Česka projde velkou proměnou – elektřinu budeme muset získávat z jiných zdrojů.    
 
 U všech typů zdrojů je základní charakteristikou tzv. **instalovaný výkon** (nejčastěji uváděný v megawattech). Ten ukazuje, kolik elektřiny dokáže elektrárna dodávat, když je využívána na maximum. Elektrárny však málokdy běží stále na plný výkon – různé typy elektráren jsou v provozu různě dlouhou dobu, například větrná elektrárna potřebuje, aby foukal vítr, výkon vodní elektrárny může být závislý na průtoku vody apod. Pro lepší představu o skutečné roční produkci elektrárny je tedy potřeba vzít v potaz také tzv. **koeficient** **využití** – jak dlouho a často během roku běží tato elektrárna naplno.
 
@@ -152,29 +152,31 @@ U všech typů zdrojů je základní charakteristikou tzv. **instalovaný výkon
     name="cs-elektrarny-priklady-des.svg"
     name-mobile="cs-elektrarny-priklady-des.svg"
     alt="TODO"
-    source-text="TODO"
+    source-text="Fakta o klimatu"
 %}
 
-_Příklad: pokud by elektrárna měla instalovaný výkon 1 000 MW a pracovala by celý rok (8 760 hodin), může vyrobit až 8 760 000 MWh (8,76 TWh) elektrické energie. Má-li koeficient využití 80 %, což je typické pro jaderné elektrárny, je její skutečný roční výkon přibližně 7 008 000 MWh za rok (80 % z 8 760 000 MWh). Ve srovnání s tím má běžná větrná elektrárna instalovaný výkon 5 MW a koeficient využití pro tento typ elektrárny v Česku je 24 % (záleží na tom, jak často, jak dlouho a jak silně fouká vítr). Za rok tedy vyrobí tato elektrárna s instalovaným výkonem 5 MW celkem 10 512 MWh elektrické energie (24 % z 8 760 × 5)._ 
+_Příklad: pokud by elektrárna měla instalovaný výkon 1 000 MW a pracovala by celý rok (8 760 hodin), může vyrobit až 8 760 000 MWh (8,76 TWh) elektrické energie. Má-li koeficient využití 80 %, což je typické pro jaderné elektrárny, je její skutečná roční výroba přibližně 7 008 000 MWh za rok (80 % z 8 760 000 MWh). Ve srovnání s tím má běžná větrná elektrárna instalovaný výkon 5 MW a koeficient využití pro tento typ elektrárny v Česku je 24 % (záleží na tom, jak často, jak dlouho a jak silně fouká vítr). Za rok tedy vyrobí tato elektrárna s instalovaným výkonem 5 MW celkem 10 512 MWh elektrické energie (24 % z 8 760 × 5)._ 
 
 {% include figure.html
     class="wide-figure-desktop elektrarny-dashboard"
     name="cs-elektrarny-dashboard-des.svg"
     name-mobile="cs-elektrarny-dashboard-des.svg"
     alt="TODO"
-    source-text="TODO"
+    source-text="Fakta o klimatu"
 %}
 
-Pokud srovnáme údaje uvedené v tabulce s průměrnou spotřebou domácností a měst různé velikosti, vyplyne z toho, že solární panely mohou snadno pokrýt spotřebu domácnosti v rodinném domě, jedna větrná elektrárna stačí na spotřebu všech domácností v malém městě (okolo 1 000 obyvatel, tedy například Špindlerova Mlýna). Město o velikosti Olomouce spotřebuje přibližně tolik elektřiny, kolik vyrobí jeden blok uhelné elektrárny. Toto srovnání výroby a spotřeby zároveň dává lepší představu, jak velké části obyvatel se dotkne, když bude takový blok uhelné elektrárny odstaven a přestane se využívat, nebo kolik fotovoltaiky či větrných elektráren potřebuje vybudovat obec pro své obyvatele a firmy, které zde působí, aby měli všichni dostatek levné elektřiny po celý rok. 
+Když srovnáme údaje uvedené v tabulce s průměrnou spotřebou domácností a měst různé velikosti, vyplyne z toho, že solární panely mohou snadno pokrýt spotřebu domácnosti v rodinném domě, jedna větrná elektrárna stačí na spotřebu všech domácností v malém městě (okolo 1 000 obyvatel, tedy například Špindlerova Mlýna). Město o velikosti Olomouce spotřebuje přibližně tolik elektřiny, kolik vyrobí jeden blok uhelné elektrárny. Toto srovnání výroby a spotřeby zároveň dává lepší představu, jak velké části obyvatel se dotkne, když bude takový blok uhelné elektrárny odstaven a přestane se využívat, nebo kolik fotovoltaiky či větrných elektráren potřebuje vybudovat obec pro své obyvatele a firmy, které zde působí, aby měli všichni dostatek levné elektřiny po celý rok. 
 
 Je také důležité si uvědomit, že stavět velké elektrárny není jednoduché, rychlé ani levné. Zatímco solární panel si může na svůj dům pořídit poměrně snadno téměř každý vlastník a větrnou elektrárnu mohou společně financovat menší investiční skupiny, postavit novou jadernou elektrárnu není bez finanční pomoci státu možné ani pro velkou energetickou společnost. Navíc je výstavba jaderné elektrárny projekt na mnoho let (tedy elektřinu začne tato elektrárna dodávat až za dlouho a do té doby se bez ní musíme obejít). Snadnost a cenová dostupnost jsou přitom důležitými faktory realizace, což je zřetelně vidět například na počtu instalací – fotovoltaických systémů bylo v ČR v roce 2023 nainstalováno přes 80 000[^solary_go_brrr], o celkovém instalovaném výkonu 970 MW, což se blíží výkonu jednoho bloku moderní jaderné elektrárny. Ve srovnání s tím se v Česku za posledních 50 let postavilo pouze 6 jaderných bloků. 
+
+(poznámka k edita: závěr = tak jsme ti to vysvětlili, doufám že ses neztrati a udělal sis nějakou představu o tom jak je to ; hele možná rovnou odkázat na nějaký další náš článek)
 
 {% include figure.html
     class="wide-figure-desktop"
     name="cs-vyroba-spotreba-des.svg"
     name-mobile="cs-vyroba-spotreba-des.svg"
     alt="TODO"
-    source-text="TODO"
+    source-text="Fakta o klimatu"
 %}
 
 ## Zdroje a poznámky
