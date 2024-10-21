@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaké nástroje má stát k dispozici pro dekarbonizaci?"
 slug:        "nastroje-stat"
-published:   2024-10-10
+published:   2024-10-21
 authors:
   - id: "katerina-kolouchova"
   - id: "marcel-otruba"
@@ -12,26 +12,26 @@ authors:
 weight:      97.5
 tags-scopes: [ cr, eu ]
 tags-topics: [ opatreni ]
-cover-source-author:        "Artem Zhukov"
-cover-source-text:          "Unsplash"
-cover-source-license:       "Unsplash License"
-cover-source-license-url:   "https://unsplash.com/license"
-cover-source-url:           "https://unsplash.com/photos/cars-on-road-in-between-trees-during-daytime-5HGOyBMlvww"
+cover-source-author:        "Marcel Otruba"
+cover-source-text:          "Fakta o klimatu"
+cover-source-license:       "CC BY 4.0"
+cover-source-license-url:   "https://creativecommons.org/licenses/by/4.0/deed.cs"
+cover-source-url:           "https://faktaoklimatu.cz/explainery/nastroje-stat"
 perex: |
-    Transformace na nízkouhlíkovou ekonomiku vyžaduje sérii důležitých rozhodnutí o vhodných řešeních a opatřeních. To se neobejde bez jasné komunikace a spolupráce na všech úrovních a bez nastavení podmínek a prostředí pro jednotlivé aktéry. Klíčovým hráčem je v tomto ohledu stát a jeho vláda.    
+    Transformace na nízkouhlíkovou ekonomiku vyžaduje sérii důležitých rozhodnutí o vhodných řešeních a opatřeních. To se neobejde bez jasné komunikace a spolupráce na všech úrovních a bez nastavení podmínek a prostředí pro jednotlivé aktéry. Klíčovým hráčem je v tomto ohledu stát a jeho vláda.
 infographics-url: /assets-local/files/nastroje-stat-infografika.pdf
 ---
 
 **Na dekarbonizaci se podílí mnoho různých aktérů** – mezinárodní společenství, vlády národních států, města a samosprávy, firmy, vzdělávací a vědecké instituce, ale i domácnosti, neziskové organizace a další. Každý z těchto aktérů přispívá jiným způsobem a má jiný vliv. Zásadní roli hraje stát a jeho vláda (v případě Evropy rovněž Evropská unie – významná část legislativy členských států vychází ze společně schválené legislativy unijní). Stát disponuje širokou paletou nástrojů, kterými nastavuje podmínky pro dekarbonizaci jednotlivých sektorů hospodářství. To, jaké nástroje zvolí a jak dobře bude svou volbu komunikovat k dalším aktérům, může významně ovlivnit průběh a rychlost celé transformace. Nástroje lze rozdělit do čtyř kategorií:
-* regulatorní
-* ekonomické
-* informační
-* investice do infrastruktury
+1. regulatorní
+2. ekonomické
+3. informační
+4. investice do infrastruktury
 
 {% include figure.html
     name="schema-nastroje-mix.svg"
     class="narrow-figure"
-    alt="TODO"
+    alt="Schematické zobrazení nástrojů, které stát využívá při nastavování podmínek podnikání a změn ve společnosti. Regulatorní, ekonomické a informační nástroje spolu s investicemi do infrastruktury tvoří určitý mix opatření pro dekarbonizaci."
 %}
 
 {% capture kategorizace %}
@@ -54,7 +54,7 @@ Jednotlivé kategorie opatření a vybrané příklady konkrétních nástrojů 
 
 {% capture mix %}
 
-Jednotlivé nástroje téměř nikdy nepůsobí izolovaně, respektive často je k dosažení požadovaných změn potřeba několika nástrojů najednou. Jako příklad lze uvést nařízení, které zakazuje po roce 2035 prodej nových automobilů, při jejichž provozu vzniká CO<sub>2</sub>. Aby totiž skutečně došlo ke snížení emisí v dopravě, je zároveň potřeba vybudovat dobíjecí a plnící infrastrukturu pro elektromobilitu, investovat do rozvoje a dostupnosti veřejné dopravy atd. Tedy volit taková opatření, která ke stávajícím vozidlům produkujícím CO<sub>2</sub> nabídnou atraktivní a dostupnou alternativu.
+Jednotlivé nástroje téměř nikdy nepůsobí izolovaně, respektive často je k dosažení požadovaných změn potřeba několika nástrojů najednou. Jako příklad lze uvést nařízení, které zakazuje po roce 2035 prodej nových automobilů, při jejichž provozu vzniká CO<sub>2</sub>. Aby totiž skutečně došlo ke snížení emisí v dopravě, je zároveň potřeba vybudovat dobíjecí a plnicí infrastrukturu pro elektromobilitu, investovat do rozvoje a dostupnosti veřejné dopravy atd. Tedy volit taková opatření, která ke stávajícím vozidlům produkujícím CO<sub>2</sub> nabídnou atraktivní a dostupnou alternativu.
 
 {% endcapture %}
 
@@ -69,7 +69,7 @@ Jednotlivé nástroje téměř nikdy nepůsobí izolovaně, respektive často je
 ## Regulatorní nástroje
 
 {% include lead-in-figure.html
-    name="regulatorni-nastroje.svg" 
+    name="regulatorni-nastroje.svg"
     class="leadin-figure-small"
     alt="Piktogram regulačních nástrojů"
 %}
@@ -103,8 +103,7 @@ Důležitým nástrojem státu je i stanovení norem pro určité produkty či a
 * Závazek EU dosáhnout klimatické neutrality do roku 2050 ([Evropský klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119))[^11]
 * Cíle pro jednotlivé členské státy EU ke snížení emisí mimo EU ETS v sektorech dopravy, budov, malého průmyslu a energetiky, v zemědělství a odpadovém hospodářství ([nařízení o sdílení úsilí](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0857))
 * Stanovení podílu obnovitelných zdrojů na konečné spotřebě energie v EU v roce 2030 na úrovni 42,5 % ([směrnice o obnovitelných zdrojích energie](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202302413))
-* Stanovení množství CO<sub>2</sub>, které má být v EU v roce 2030 pohlceno lesy a půdou ([směrnice LULUCF](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839))
-
+* Stanovení množství CO<sub>2</sub>, které má být v EU v roce 2030 pohlceno lesy a půdou (tzv. [směrnice LULUCF](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0839))
 
 ## Ekonomické nástroje
 
@@ -120,18 +119,18 @@ Ekonomické nástroje se vztahují zejména k nákladům, jež jsou s dekarboniz
 
 Jde o zejména systémy pro obchodování s emisními povolenkami nebo uhlíkové daně. Ty mají zpoplatněním **motivovat jak producenty, tak spotřebitele k upřednostnění nízkoemisních a bezemisních alternativ.** V případě producentů jde o dekarbonizaci výroby, u spotřebitelů například o renovaci bydlení nebo změny způsobu dopravy, aby docházelo k co nejmenší spotřebě fosilních paliv. Mezi nástroje pracující s cenou uhlíku patří i tzv. uhlíkové offsety. Ty jsou však pouze dobrovolným nástrojem, který umožňuje podniku účetně snížit[^12] své emise poté, co byly vyčerpány všechny další možnosti jejich snížení.[^13] Příklady:
 
-* [Systém EU pro obchodování s emisními povolenkami](https://faktaoklimatu.cz/explainery/emisni-povolenky-ets) (_Emission Trading System_, EU ETS), který zpoplatňuje každou tunu emisí vyprodukovanou nejvíce znečišťujícími sektory (jako výroba elektřiny, těžký průmysl nebo letecká doprava). Dotčené podniky si za každou tunu emisí musí koupit povolenku, jejíž cenu určuje mechanismus nabídky a poptávky a zároveň je pro objem vypuštěných emisí stanoven strop (tzv. princip _cap-and-trade_). Množství povolenek v oběhu se postupně během let snižuje, aby mohlo být dosaženo předem stanoveného emisního cíle.[^14] [^15]
+* [Systém EU pro obchodování s emisními povolenkami](/explainery/emisni-povolenky-ets) (_Emission Trading System_, EU ETS), který zpoplatňuje každou tunu emisí vyprodukovanou nejvíce znečišťujícími sektory (jako výroba elektřiny, těžký průmysl nebo letecká doprava). Dotčené podniky si za každou tunu emisí musí koupit povolenku, jejíž cenu určuje mechanismus nabídky a poptávky a zároveň je pro objem vypuštěných emisí stanoven strop (tzv. princip _cap-and-trade_). Množství povolenek v oběhu se postupně během let snižuje, aby mohlo být dosaženo předem stanoveného emisního cíle.[^14] [^15]
 * Uhlíkové daně, které předem stanovují konkrétní částku za tunu emisí. Aktuálně jsou [používány](https://carbonpricingdashboard.worldbank.org/compliance/instrument-detail) v 39 zemích nebo jurisdikcích světa napříč různými sektory ekonomiky.[^16] [^17]
 * [Mechanismus uhlíkového vyrovnání na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0956) (_Carbon Border Adjustment Mechanism_, CBAM) neboli tzv. uhlíkové clo, kterým EU od roku 2026 zpoplatní dovozy emisně intenzivních produktů do EU. Tím dojde k narovnání trhu pro domácí výrobce, kteří podléhají povinnosti nakupovat emisní povolenky, a byli by tak v nevýhodě oproti producentům ze zemí mimo EU.
-* [Uhlíkové offsety](https://faktaoklimatu.cz/explainery/uhlikove-offsety), jimiž může podnik účetně snížit své emise – zakoupením offsetu podpoří opatření, které vede buď k pohlcení emisí (např. sázení stromů nebo zlepšení stavu půdy díky šetrnějšímu způsobu hospodaření), nebo zabrání jejich vypouštění (např. stavba elektrárny na obnovitelné zdroje).[^18]
+* [Uhlíkové offsety](/explainery/uhlikove-offsety), jimiž může podnik účetně snížit své emise – zakoupením offsetu podpoří opatření, které vede buď k pohlcení emisí (např. sázení stromů nebo zlepšení stavu půdy díky šetrnějšímu způsobu hospodaření), nebo zabrání jejich vypouštění (např. stavba elektrárny na obnovitelné zdroje).[^18]
 
 ### Podpora dekarbonizačních opatření
 
 Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření** (např. rozvoj obnovitelných zdrojů), u kterých může být – zejména v počátku – nesnadné vzniknout na čistě tržní bázi, přitom je však jejich rozvoj pro úspěšnou dekarbonizaci zásadní. Příklady:
 * Využití příjmů ze zpoplatnění emisí (ať už jde o emisní povolenky, uhlíkovou daň nebo uhlíkové clo) a jejich redistribuce prostřednictvím národních rozpočtů[^19] nebo evropských fondů (Modernizační, Inovační a od roku 2026 také Sociální klimatický fond) ve prospěch dekarbonizačních opatření.[^20]
-* Dotační a investiční programy, z nichž jsou prostředky rozdělovány prostřednictvím [fondů](https://faktaoklimatu.cz/infografiky/fondy-eu) a operačních programů.[^21] Např. [Operační program Životní prostředí pro období 2021–2027](https://opzp.cz/) nebo [Národní program Životní prostředí](https://www.narodniprogramzp.cz/).
+* Dotační a investiční programy, z nichž jsou prostředky rozdělovány prostřednictvím [fondů](/infografiky/fondy-eu) a operačních programů.[^21] Např. [Operační program Životní prostředí pro období 2021–2027](https://opzp.cz/) nebo [Národní program Životní prostředí](https://www.narodniprogramzp.cz/).
 * Daňové úlevy, které jsou např. v USA [součástí](https://www.irs.gov/credits-and-deductions-under-the-inflation-reduction-act-of-2022) investičního balíčku pro dekarbonizaci – v rámci tamního zákona o omezení inflace (_Inflation Reduction Act_, IRA).[^22]
-* Státní podpora bezemisních zdrojů energie formou aukcí, *feed-in* tarifů či tzv. *contracts for difference*[^23]), která výrobcům dodává ujištění (v podobě smlouvy) o návratnosti jejich investice. V Česku takto funguje podpora obnovitelných zdrojů energie, kterou upravuje [zákon č. 469/2023 Sb.](https://www.e-sbirka.cz/sb/2023/469) Jednou z forem této podpory je například garance výkupní ceny za vyrobenou jednotku elektřiny po dobu několika let.
+* Státní podpora bezemisních zdrojů energie (např. formou aukcí, garantovaných výkupních cen či tzv. *contracts for difference*[^23]), která výrobcům zvyšuje jistotu návratnosti jejich investice. V Česku takto funguje podpora obnovitelných zdrojů energie, kterou upravuje [zákon č. 469/2023 Sb.](https://www.e-sbirka.cz/sb/2023/469) Jednou z forem této podpory je například garance výkupní ceny za dodanou jednotku elektřiny po dobu několika let.
 
 ## Informační nástroje
 
@@ -145,7 +144,7 @@ Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření
 
 ### Státní strategie a koncepce
 
-Informují jednotlivé aktéry o tom, **co lze čekat od státní politiky v oblasti dekarbonizace.** Například průmysl může díky kvalitním strategiím lépe plánovat svou budoucí výrobu – v některých sektorech probíhá toto plánování až na desítky let dopředu. Mezi tyto dokumenty patří například: 
+Informují jednotlivé aktéry o tom, **co lze čekat od státní politiky v oblasti dekarbonizace.** Například průmysl může díky kvalitním strategiím lépe plánovat svou budoucí výrobu – v některých sektorech probíhá toto plánování až na desítky let dopředu. Mezi tyto dokumenty patří například:
 * [Vnitrostátní plán ČR v oblasti energetiky a klimatu](https://www.mpo.gov.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/aktualizace-vnitrostatniho-planu-ceske-republiky-v-oblasti-energetiky-a-klimatu--277532/)
 * [Státní energetická koncepce ČR](https://www.mpo.gov.cz/cz/energetika/statni-energeticka-politika/statni-energeticka-koncepce--223620/)
 * [Politika ochrany klimatu ČR](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017)
@@ -157,7 +156,7 @@ Role státu je v tomto nezastupitelná: kvalitně zpracovaná strategie je jedno
 ### Reporting a zveřejňování informací
 
 Tyto nástroje umožňují sbírat **informace o udržitelnosti aktivit v oblasti byznysu a ve finančním sektoru**, a tím nepřímo tlačit jednotlivé aktéry ke zvyšování udržitelnosti (nebo udržitelností podmiňovat finanční podporu). **Na straně státu** může jít o pravidelné **reportování o tom, jak naplňuje emisní a další závazky**, uvedené v existující legislativě nebo v národních strategických dokumentech. Mezi tyto nástroje patří například:
-* [Taxonomie udržitelných aktivit](https://faktaoklimatu.cz/infografiky/taxonomie-eu), která v EU klasifikuje udržitelné aktivity
+* [Taxonomie udržitelných aktivit](/infografiky/taxonomie-eu), která v EU klasifikuje udržitelné aktivity
 * Pravidelné reportování podniků o tom, jak si stojí v oblasti udržitelnosti, na základě [směrnice o podávání zpráv podniků o udržitelnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022L2464) (_Corporate Sustainability Reporting Directive_, CSRD)
 * [Národní inventarizační zprávy](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/nis_uv_cz.html), v nichž Český hydrometeorologický ústav každoročně přináší report o emisích skleníkových plynů v jednotlivých sektorech
 * [Integrované vnitrostátní zprávy o pokroku v oblasti energetiky a klimatu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32022R2299), ve kterých členské státy EU každé dva roky reportují o plnění svých vnitrostátních plánů
@@ -166,7 +165,7 @@ Tyto nástroje umožňují sbírat **informace o udržitelnosti aktivit v oblast
 
 K informovaným spotřebitelským rozhodnutím napomáhají také různá environmentální a energetická označení výrobků a služeb. Příklady:
 * [Energetické štítky domácích spotřebičů](https://energy-efficient-products.ec.europa.eu/ecodesign-and-energy-label/understanding-energy-label_en?prefLang=cs), které značí energetickou náročnost daného zařízení a další [ekoznačky](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32010R0066) výrobků šetrných k životnímu prostředí (např. [kosmetických produktů](https://op.europa.eu/en/publication-detail/-/publication/4d89df1f-d71c-11ec-a95f-01aa75ed71a1))
-* [Certifikace FSC](https://faktaoklimatu.cz/explainery/lesni-certifikace) pro výrobky ze dřeva pocházejícího z lesa, v němž se hospodaří v souladu s přísnými pravidly a důrazem na ekologii a udržitelnost
+* [Certifikace FSC](/explainery/lesni-certifikace) pro výrobky ze dřeva pocházejícího z lesa, v němž se hospodaří v souladu s přísnými pravidly a důrazem na ekologii a udržitelnost
 
 ### Vzdělávání a osvětové kampaně
 
@@ -220,7 +219,7 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 [^8]: LEX OZE je označení používané pro jednotlivé novely energetického zákona č. 19/2023 Sb.
 
-[^9]: V Česku se aktuálně [připravuje legislativa](https://www.mzp.cz/cz/news_20240424_Rozvoj-obnovitelnych-zdroju-energie-urychli-akceleracni-zony), která ve vybraných oblastech umožní získat povolení pro výstavbu solárních nebo větrných elektráren do 12 měsíců. Dosud proces povolování trval mnohem déle – u větrných elektráren až [sedm let](https://faktaoklimatu.cz/assets-local/publications/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030.pdf).
+[^9]: V Česku se aktuálně [připravuje legislativa](https://www.mzp.cz/cz/news_20240424_Rozvoj-obnovitelnych-zdroju-energie-urychli-akceleracni-zony), která ve vybraných oblastech umožní získat povolení pro výstavbu solárních nebo větrných elektráren do 12 měsíců. Dosud proces povolování trval mnohem déle – u větrných elektráren až [sedm let](/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030).
 
 [^10]: EU přijala dané [nařízení](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023R0851) v rámci balíčku Fit for 55, který uvádí do praxe vizi představenou v Zelené dohodě pro Evropu. Ač se v českém prostředí o tomto nařízení často mluví jako o zákazu spalovacích motorů, zakázána je pouze registrace nových aut produkujících CO<sub>2</sub> po roce 2035. Spalovací motory tak bude možné zachovat, budou-li do té doby vyvinuta uhlíkově neutrální syntetická paliva.
 
@@ -238,7 +237,7 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 [^17]: V některých zemích (např. ve Francii, Španělsku nebo Polsku) funguje jak ETS systém, tak uhlíková daň. Zatímco ETS [pokrývá](https://carbonpricingdashboard.worldbank.org/compliance/coverage) v současnosti přibližně jednu pětinu světových emisí CO<sub>2</sub>, v případě uhlíkové daně jde o 6 %.
 
-[^18]: V praxi je však s offsety spojeno několik [problémů](https://faktaoklimatu.cz/explainery/uhlikove-offsety-problemy) a ne vždy mají slibovaný efekt.
+[^18]: V praxi je však s offsety spojeno několik [problémů](/explainery/uhlikove-offsety-problemy) a ne vždy mají slibovaný efekt.
 
 [^19]: V Česku např. spolufinancují program Nová zelená úsporám.
 
@@ -246,9 +245,9 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 [^21]: Mimo výnosů ze zpoplatnění emisí (viz výše) získávají prostředky z dalších příjmů státního rozpočtu nebo v případě Unie například ze společné půjčky [Next Generation EU](https://next-generation-eu.europa.eu/index_cs). Některé státy také vydávají zelené dluhopisy, kterými zajišťují financování pro dekarbonizační projekty.
 
-[^22]: Vztahují se na nákup elektromobilu, zvyšování energetické efektivity domácnosti (tepelná čerpadla, zateplení apod.) nebo rozvoj zařízení na [zachytávání a ukládání uhlíku](https://faktaoklimatu.cz/studie/2022-reserse-ccs) v průmyslu (_Carbon Capture and Storage_, CCS), vodíkovou infrastrukturu či solární a větrné elektrárny.
+[^22]: Vztahují se na nákup elektromobilu, zvyšování energetické efektivity domácnosti (tepelná čerpadla, zateplení apod.) nebo rozvoj zařízení na [zachytávání a ukládání uhlíku](/studie/2022-reserse-ccs) v průmyslu (_Carbon Capture and Storage_, CCS), vodíkovou infrastrukturu či solární a větrné elektrárny.
 
-[^23]: *Contracts for difference* fungují například v Německu, kdy producentům elektřiny garantují výkupní cenu – pokud je smluvená cena nižší než aktuální tržní cena, rozdíl připadne kupujícímu elektřiny (v opačném případě doplatí producentovi rozdíl v ceně kupující).
+[^23]: *Contracts for difference* (CfD) fungují například v Německu, kde producentům elektřiny garantují výkupní cenu – pokud je smluvená cena nižší než aktuální tržní cena, rozdíl připadne kupujícímu elektřiny (v opačném případě doplatí producentovi rozdíl v ceně kupující).
 
 [^24]: V Česku působí [Vládní výbor pro strategické investice](https://vlada.gov.cz/cz/ppov/strategicke-investice/uvod-206914/), jehož úkolem je koordinace strategických investic státu v oblastech dopravy, bydlení, energetiky, vzdělávání, vědy, výzkumu a inovací.
 
