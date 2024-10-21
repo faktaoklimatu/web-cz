@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Komentář: Česko má dnes nadbytečnou kapacitu uhelných zdrojů"
+title:       "Q&A: Česko má dnes nadbytečnou kapacitu uhelných zdrojů"
 slug:        "2024-cesko-ma-nadbytecnou-kapacitu-uhelnych-zdroju"
 published:   2024-10-21
 authors:
@@ -14,7 +14,7 @@ cover-source-license:     "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license-summary/"
 cover-source-url:         "https://pixabay.com/photos/coal-power-plant-power-plant-6972028/"
 perex: |
-    V Česku v současnosti probíhá vášnivá debata okolo možnosti a nemožnosti rychlého odklonu od uhlí ve výrobě elektřiny. Politicky se tyto diskuse koncentrují okolo možných uhelných přílepků v zákoně lex OZE 3. V analytickém týmu Fakt o klimatu jsme nedávno vydali studii <em>Výroba elektřiny v Česku bez uhlí</em>, ve které argumentujeme, že velká většina současných uhelných elektráren není potřeba pro zajištění dodávek elektřiny. Zde znovu vysvětujeme hlavní sdělení studie a podrobně odpovídáme na kritické připomínky.
+    V Česku v současnosti probíhá vášnivá debata okolo možnosti a nemožnosti rychlého odklonu od uhlí ve výrobě elektřiny. Politicky se tyto diskuse koncentrují okolo možných uhelných přílepků v zákoně lex OZE 3. V analytickém týmu Fakt o klimatu jsme nedávno vydali studii <em>Výroba elektřiny v Česku bez uhlí</em>, ve které argumentujeme, že velká většina současných uhelných elektráren není potřeba pro zajištění dodávek elektřiny. Zde znovu vysvětujeme hlavní sdělení studie a podrobně odpovídáme na sadu otázek a kritických připomínek.
 ---
 
 **Nadbytečná kapacita se dá ale argumentovat ještě výrazně jednodušeji.** Současný čistý instalovaný výkon řiditelných zdrojů v Česku je přibližně 15,4 GW (slunce, vítr a průtočné vodní elektrárny do tohoto výkonu nepočítáme, protože nemusí vyrábět, když je budeme potřebovat). Špička zatížení za posledních 10 let přitom byla 11,4 GW.

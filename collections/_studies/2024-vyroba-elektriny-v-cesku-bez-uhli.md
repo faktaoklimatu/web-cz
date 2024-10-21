@@ -30,6 +30,12 @@ perex: |
 
 **Evropská energetika prochází rychlou transformací.** Protože evropská energetika z velké části funguje v decentralizovaném tržním prostředí, její transformaci určují hlavně ekonomické faktory. Klíčovou roli tedy hraje nastavení trhu, a v rámci něj pak zejména systém obchodování s emisními povolenkami (<glossary id="euets">EU ETS</glossary>). Uhelné elektrárny mají oproti jiným zdrojům elektřiny vysokou emisní intenzitu, a tudíž na ně cena emisních povolenek dopadá výrazněji. **Důsledkem případného zvýšení cen emisních povolenek by proto byla nižší konkurenceschopnost uhelných elektráren a jejich postupné odstavování.**
 
+{% include preview-box.html
+    title="Doplňující Q&A"
+    text="Odpovídáme na sadu otázek, které k nám po zveřejnění této studie přišly."
+    slug="2024-cesko-ma-nadbytecnou-kapacitu-uhelnych-zdroju"
+%}
+
 **Pro Česko transformace energetiky tedy znamená v první řadě ukončení výroby elektřiny a tepla z uhlí.** Z uhlí se v Česku nyní vyrábí zhruba 40 % elektřiny a 50 % tepla. Tento úkol se týká i jiných zemí – v EU dosud hraje uhelná energetika významnou roli v Polsku, Německu, Bulharsku a Slovinsku. V průměru celé EU však výroba elektřiny z uhlí za posledních 20 let klesla asi o 60 % a řada zemí uhelné elektrárny zcela uzavřela.
 
 Uzavírání uhelných elektráren a tepláren v Česku a vliv nových zdrojů na trh s elektřinou otevírají řadu otázek souvisejících s bezpečností dodávek elektřiny, s **dopady** cen elektřiny na konkurenceschopnost českých podniků a obecněji prosperitu Česka nebo s **důsledky uzavření** uhelných dolů.
