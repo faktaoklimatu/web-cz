@@ -183,6 +183,7 @@ subtopics:
   - 2018-scenar-energynautics
   - 2019-scenar-necp
   - 2020-reserse-transformace-energetiky
+  - 2024-cesko-ma-nadbytecnou-kapacitu-uhelnych-zdroju
 
 - id:          "serie-elektrina-2050-cr"
   series:      True
