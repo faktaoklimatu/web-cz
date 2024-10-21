@@ -14,14 +14,14 @@ cover-source-license:     "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license-summary/"
 cover-source-url:         "https://pixabay.com/photos/coal-power-plant-power-plant-6972028/"
 perex: |
-    V Česku v současnosti probíhá vášnivá debata okolo možnosti a nemožnosti rychlého odklonu od uhlí ve výrobě elektřiny. Politicky se tyto diskuse koncentrují okolo možných uhelných přílepků v zákoně lex OZE 3. V analytickém týmu Fakt o klimatu jsme nedávno vydali studii <em>Výroba elektřiny v Česku bez uhlí</em>, ve které argumentujeme, že velká většina současných uhelných elektráren není potřeba pro zajištění dodávek elektřiny. Zde znovu vysvětujeme hlavní sdělení studie a podrobně odpovídáme na sadu otázek a kritických připomínek.
+    V Česku v současnosti probíhá vášnivá debata okolo možnosti a nemožnosti rychlého odklonu od uhlí ve výrobě elektřiny. Politicky se tyto diskuse koncentrují okolo možných uhelných přílepků v zákoně LEX OZE 3. V analytickém týmu Fakt o klimatu jsme nedávno vydali studii <em>Výroba elektřiny v Česku bez uhlí</em>, ve které argumentujeme, že velká většina současných uhelných elektráren není potřeba pro zajištění dodávek elektřiny. Zde znovu vysvětlujeme hlavní sdělení studie a podrobně odpovídáme na sadu otázek a kritických připomínek.
 ---
 
 **Nadbytečná kapacita se dá ale argumentovat ještě výrazně jednodušeji.** Současný čistý instalovaný výkon řiditelných zdrojů v Česku je přibližně 15,4 GW (slunce, vítr a průtočné vodní elektrárny do tohoto výkonu nepočítáme, protože nemusí vyrábět, když je budeme potřebovat). Špička zatížení za posledních 10 let přitom byla 11,4 GW.
 
 {% include figure.html
     name="instalovany-vykon-cr.svg"
-    alt="Řiditelných zdrojů je dnes v ČR 15,4 GW netto, historické maximum zatížení je 11,4 GW"
+    alt="Řádkový graf porovnávající instalovaný výkon řiditelných zdrojů elektřiny a historické zatížení v ČR. Řiditelných zdrojů je dnes 15,4 gigawattů netto, přitom maximum zatížení za posledních deset let je 11,4 gigawattů"
 %}
 
 {% include preview-box.html
@@ -32,7 +32,7 @@ perex: |
 
 **Česko má tedy nadbytek řiditelného výkonu v řádu několika GW.** Část tohoto řiditelného instalovaného výkonu samozřejmě nemůže běžet stále na plný výkon, např. vodní nebo přečerpávací vodní elektrárny nebo při plánovaných i neplánovaných odstávkách jednotlivých bloků.
 
-Takto extrémní špička zatížení ovšem taky trvá jen několik hodin. Například během rekordního 15. února 2021 bylo zatížení v pásmu 10,8–11,4 GW jen 7 hodin mezi 7h ráno a 13h odpoledne, tedy výrobu nad 10,8 GW v ten by byla schopna dodat přečerpávací elektrárna Dlouhé Stráně. Obecně je zatížení nad 10,8 GW v Česku poměrně vzácné: za posledních 10 let k němu došlo jen ve 4 letech, v součtu v 69 hodinách a nikdy ne déle než 8h v kuse.
+Takto extrémní špička zatížení ovšem taky trvá jen několik hodin. Například během rekordního 15. února 2021 bylo zatížení v pásmu 10,8–11,4 GW jen 7 hodin mezi 7 h ráno a 13 h odpoledne, tedy výrobu nad 10,8 GW v ten by byla schopna dodat přečerpávací elektrárna Dlouhé Stráně. Obecně je zatížení nad 10,8 GW v Česku poměrně vzácné: za posledních 10 let k němu došlo jen ve 4 letech, v součtu v 69 hodinách a nikdy ne déle než 8h v kuse.
 
 **Proč má Česko takový nadbytečný výkon?** Z ekonomických důvodů. Při současné ceně emisních povolenek je výroba elektřiny z uhlí levnější než výroba ze zemního plynu. Většina takto vyrobené elektřiny z uhlí směřuje na export.
 
@@ -61,7 +61,7 @@ Váš model neobsahuje podpůrné služby. Může Česko odstavit uhelné elektr
 <div class="qa-uhli-odpoved" markdown="1">
 Služby výkonové rovnováhy modelujeme implicitně, studie popisuje použitou metodiku. Nefrekvenční podpůrné služby jako "start ze tmy" model skutečně nezahrnuje, což studie otevřeně přiznává. Přímo v manažerském shrnutí píšeme: "Je třeba urychleně najít náhradní řešení všech typů podpůrných služeb, které dnes uhelné elektrárny poskytují."
 
-To samozřejmě také může znamenat o něco pomalejší odstavování uhelných elektráren, než vychází na základě modelové optimalizace. Během topné sezóny nečekáme z pohledu služeb výkonové rovnováhy zásadní problémy, protože i po odstavení většiny uhelných elektráren by v síti nadále zůstalo velké množství řiditelných zdrojů, které tyto služby mohou dodávat. Část služeb výkonové rovnováhy je navíc možné obchodovat přeshraničně, což může snižovat jejich cenu. Jak ale naznačuje letošní tzv. superkritický scénář od společnosti ČEPS, mimo topnou sezónu může po odstavení většiny uhelných zdrojů docházet k nedostatku celé řady podpůrných služeb (FCR, FRR-, aFFR+, aFRR-). Proto je potřeba dokončit implementaci Lex OZE 3 a vpustit tak na trh řadu nových poskytovatelů, včetně akumulace a agregace.
+To samozřejmě také může znamenat o něco pomalejší odstavování uhelných elektráren, než vychází na základě modelové optimalizace. Během topné sezóny nečekáme z pohledu služeb výkonové rovnováhy zásadní problémy, protože i po odstavení většiny uhelných elektráren by v síti nadále zůstalo velké množství řiditelných zdrojů, které tyto služby mohou dodávat. Část služeb výkonové rovnováhy je navíc možné obchodovat přeshraničně, což může snižovat jejich cenu. Jak ale naznačuje letošní tzv. superkritický scénář od společnosti ČEPS, mimo topnou sezónu může po odstavení většiny uhelných zdrojů docházet k nedostatku celé řady podpůrných služeb (FCR, FRR-, aFFR+, aFRR-). Proto je potřeba dokončit implementaci LEX OZE 3 a vpustit tak na trh řadu nových poskytovatelů, včetně akumulace a agregace.
 
 Větší jasnost by do tohoto tématu měla přinést chystaná zpráva MAF 2023 od společnosti ČEPS.
 </div>
@@ -155,7 +155,7 @@ O čem se jistě dá v rámci snižování rizika diskutovat, je převedení č�
 Další teoretickou možností (byť v rozporu s evropským právem) je nějaká forma podpory pro velmi omezený počet uhelných zdrojů a lomů, na zřetelně ohraničenou dobu. Taková podpora by mohla řešit další možné problémy s poskytováním podpůrných služeb nebo s udržením potřebné těžby pro teplárenství. Protože taková podpora by byla drahá jak ekonomicky tak politicky ve vztahu k EU, bezpodmínečně by vyžadovala solidní a důvěryhodnou analýzu, proč je nutná. Žádná taková analýza zatím neexistuje.
 </div>
 
-## Česko potřebujeme omezit rizika využití zemního plynu na výrobu elektřiny
+## Česko potřebuje omezit rizika využití zemního plynu na výrobu elektřiny
 
 Podle kritiků naší práce je přechod na zemní plyn dražší a riskantnější než udržet uhlí. Dražší to není, podle výsledků modelování při drahé emisní povolence je omezení výroby z uhlí a mírné navýšení výroby ze zemního plynu a dovozu elektřiny nejlevnější možné řešení.
 
@@ -166,12 +166,12 @@ Z hlediska stability soustavy a zajištění dodávek elektřiny je potřeba vys
 Všechny problémy zemního plynu jsou svázané s objemem jeho celkové spotřeby. Ta souvisí s celkovou roční výrobou elektřiny (a tepla) ze zemního plynu. Tu je samozřejmě z uvedených důvodů potřeba držet nízkou, jak ostatně píšeme ve studii. Jedinými smysluplnými kroku, jak v dalších 10 letech držet výrobu ze zemního plynu na přijatelně nízké úrovni jsou: rozvoj obnovitelných zdrojů (obzvláště větrné energetiky) a s tím související rozvoj akumulace a rozvoj flexibility spotřeby. Z dlouhodobého hlediska pak tyto kroky může doplnit rozvoj jaderné energetiky.
 
 {:.qa-uhli-otazka}
-Nahradit více než 30 milionů tun těženého uhlí v ČR plynem znamená dovézt k současné spotřebě kolem 7 mld. m3 dalších až 12 mld. m3. Kudy se tolik zemního plynu doveze?
+Nahradit více než 30 milionů tun těženého uhlí v ČR plynem znamená dovézt k současné spotřebě kolem 7 mld. m<sup>3</sup> dalších až 12 mld. m<sup>3</sup>. Kudy se tolik zemního plynu doveze?
 
 <div class="qa-uhli-odpoved" markdown="1">
-V analyzovaném scénáři, kdy by se z důvodu nerentability odstavila většina uhelných elektráren, narůstá spotřeba zemního plynu v modelu jen o 13 TWh, tedy asi 1,2 mld. m³.
+V analyzovaném scénáři, kdy by se z důvodu nerentability odstavila většina uhelných elektráren, narůstá spotřeba zemního plynu v modelu jen o 13 TWh, tedy asi 1,2 mld. m<sup>3</sup>.
 
-Uvedený odhad 12 mld. m3 je tedy řádově nadsazený a vychází z absurdního předpokladu, že je potřeba zemním plynem nahradit veškerou primární energii uhlí. To je špatně ze dvou důvodů: (1) výroba elektřiny v moderních paroplynových elektrárnách je o 30–50 % účinnější než výroba ve starých uhelných elektrárnách, (2) Česko nepotřebuje nahradit veškerou současnou výrobu elektřiny z uhlí. Není třeba nahrazovat část, která se exportuje, a nebude potřeba nahrazovat část, kterou postupně nahradí obnovitelné zdroje.
+Uvedený odhad 12 mld. m<sup>3</sup> je tedy řádově nadsazený a vychází z absurdního předpokladu, že je potřeba zemním plynem nahradit veškerou primární energii uhlí. To je špatně ze dvou důvodů: (1) výroba elektřiny v moderních paroplynových elektrárnách je o 30–50 % účinnější než výroba ve starých uhelných elektrárnách, (2) Česko nepotřebuje nahradit veškerou současnou výrobu elektřiny z uhlí. Není třeba nahrazovat část, která se exportuje, a nebude potřeba nahrazovat část, kterou postupně nahradí obnovitelné zdroje.
 </div>
 
 {:.qa-uhli-otazka}
@@ -199,14 +199,14 @@ S využitím zemního plynu jsou spojené velké nepřímé emise skleníkových
 Evropa plánuje tyto nepřímé emise metanu také zatížit emisní povolenkou. Dává přechod na zemní plyn vůbec nějaký smysl ekonomicky?
 
 <div class="qa-uhli-odpoved" markdown="1">
-Ano, s využitím zemního plynu jsou spojené úniky metanu a CO2 při těžbě a transportu. (To mimochodem platí i pro uhlí, při jehož těžbě v Česku unikají skoro 2 Mt skleníkových plynů, což je více než 1,5 % české emisní stopy.)
+Ano, s využitím zemního plynu jsou spojené úniky metanu a CO<sub>2</sub> při těžbě a transportu. (To mimochodem platí i pro uhlí, při jehož těžbě v Česku unikají skoro 2 Mt skleníkových plynů, což je více než 1,5 % české emisní stopy.)
 
 Výroba elektřiny ze zemního plynu i tak produkuje zhruba o třetinu nižší celkové emise než výroba elektřiny z uhlí (viz např. parametry IPCC nebo analýza Clean Air Task Force). To je z hlediska dekarbonizace neuspokojivé zlepšení, proto dává přechod na zemní plyn smysl jen při splnění těchto podmínek:
 
 1. **Zemní plyn bude jen jako doplněk OZE** (a jádra). To znamená, že výroba ze zemního plynu nesmí nahradit výrobu uhlí 1:1, je třeba bezodkladně rozvíjet obnovitelné zdroje, akumulaci, flexibilitu spotřeby. I tak budou potřeba záložní zdroje elektřiny, plynové turbíny i paroplynové zdroje jsou pro to technicky vhodnější než uhelné zdroje, protože rychlými změnami výkonu mohou lépe doplňovat proměnlivou výrobu z OZE.
 2. Je třeba **snižovat úniky metanu při těžbě i transportu** zemního plynu, k čemuž se dostaneme níže.
 
-Kromě toho je třeba v souladu s taxonomií co nejdříve přejít od zemního plynu k zeleným plynům (biometan, vodík) nebo využívat technologii zachytávání uhlíku CCUS. To nebude snadné ani levné zařídit pro velké instalované výkony nebo pro velké objemy výroby ze zemního plynu (kvůli omezené dostupnosti biometanu či vodíku, vysokým investičním nákladům technologie CCUS a omezením infrastruktury na ukládání CO2). **Z toho důvodu je třeba investice do plynových zdrojů velmi pečlivě zvažovat** a rozvíjet kromě nich také bezemisní nástroje k balancování soustavy jako např. akumulaci.
+Kromě toho je třeba v souladu s taxonomií co nejdříve přejít od zemního plynu k zeleným plynům (biometan, vodík) nebo využívat technologii zachytávání uhlíku CCUS. To nebude snadné ani levné zařídit pro velké instalované výkony nebo pro velké objemy výroby ze zemního plynu (kvůli omezené dostupnosti biometanu či vodíku, vysokým investičním nákladům technologie CCUS a omezením infrastruktury na ukládání CO<sub>2</sub>). **Z toho důvodu je třeba investice do plynových zdrojů velmi pečlivě zvažovat** a rozvíjet kromě nich také bezemisní nástroje k balancování soustavy jako např. akumulaci.
 
 **Přechod na zemní plyn z hlediska trhu s elektřinou rozhodně smysl dává, protože není v plánu zatížit nepřímé emise metanu emisní povolenkou.** Evropská unie bude místo toho regulovat nepřímé emise metanu jiným způsobem. K postupnému snížení úniků metanu směřuje nedávno přijaté nařízení EU ([EU/2024/1787](https://energy.ec.europa.eu/news/new-eu-methane-regulation-reduce-harmful-emissions-fossil-fuels-europe-and-abroad-2024-05-27_en)), které navazuje na [strategii EU ke snížení emisí metanu](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52020DC0663) z roku 2020 i na [Global Methane Pledge](https://www.globalmethanepledge.org/) z konference COP26 v Glasgow v roce 2021. Toto nařízení požaduje po všech producentech dovážejících do EU ropu, uhlí a zemní plyn, aby od roku 2027 monitorovali a reportovali úniky metanu při těžbě a aby od roku 2030 plnili emisní limity (které ještě nebyly stanoveny). V případě neplnění těchto limitů dojde na pokuty, jejichž výše ale bude v gesci jednotlivých členských států. Cílem tedy není zavést zpoplatnění veškerých úniků metanu, ale jen tlačit producenty k relativně snadným technickým opatřením, které tyto úniky podstatně sníží.
 </div>
