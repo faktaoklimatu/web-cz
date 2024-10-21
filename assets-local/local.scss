@@ -204,6 +204,38 @@ $c-callout-text: #373633;
     }
 }
 
+p.qa-uhli-otazka {
+    background-image: url(/assets-local/figures/2024-cesko-ma-nadbytecnou-kapacitu-uhelnych-zdroju/question.png);
+    background-repeat: no-repeat;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    background-size: calc(1.25rem * 1.3);
+    background-position: top left;
+    font-style: italic;
+    color: #00627f; /* or use c-accent for both question mark and text? */
+    padding-left: calc((1.25rem * 1.3) * 1.3);
+    margin-left: -0.3rem;
+}
+
+.qa-uhli-odpoved {
+    font-size: 1rem;
+    padding-left: calc((1.25rem * 1.3) * 1.2 - 0.3rem);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+    p.qa-uhli-otazka {
+        font-size: 1.35rem;
+        background-size: calc(1.35rem * 1.4);
+        padding-left: calc((1.35rem * 1.4) * 1.5);
+        margin-left: 0;
+    }
+
+    .qa-uhli-odpoved {
+        padding-left: calc((1.35rem * 1.4) * 1.5);
+    }
+}
+
 .lesni-certifikace-opatreni {
     grid-template-columns: 80px 1fr;
 }
