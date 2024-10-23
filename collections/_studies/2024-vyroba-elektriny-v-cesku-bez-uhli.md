@@ -33,7 +33,7 @@ perex: |
 {% include preview-box.html
     title="Doplňující Q&A"
     text="Odpovídáme na sadu otázek, které k nám po zveřejnění této studie přišly."
-    slug="2024-cesko-ma-nadbytecnou-kapacitu-uhelnych-zdroju"
+    slug="2024-qa-vyroba-elektriny-v-cesku-bez-uhli"
 %}
 
 **Pro Česko transformace energetiky tedy znamená v první řadě ukončení výroby elektřiny a tepla z uhlí.** Z uhlí se v Česku nyní vyrábí zhruba 40 % elektřiny a 50 % tepla. Tento úkol se týká i jiných zemí – v EU dosud hraje uhelná energetika významnou roli v Polsku, Německu, Bulharsku a Slovinsku. V průměru celé EU však výroba elektřiny z uhlí za posledních 20 let klesla asi o 60 % a řada zemí uhelné elektrárny zcela uzavřela.
