@@ -8,11 +8,11 @@ authors:
 weight:      74
 tags-scopes: [ svet ]
 tags-topics: [ emise, opatreni ]
-cover-source-author:      "Laura O"
-cover-source-text:        "Pixabay"
-cover-source-license:     "Pixabay License"
-cover-source-license-url: "https://pixabay.com/service/license-summary/"
-cover-source-url:         "https://pixabay.com/photos/coal-power-plant-power-plant-6972028/"
+cover-source-author:        "Marcel Otruba"
+cover-source-text:          "Fakta o klimatu"
+cover-source-license:       "CC BY 4.0"
+cover-source-license-url:   "https://creativecommons.org/licenses/by/4.0/deed.cs"
+cover-source-url:           "https://faktaoklimatu.cz/explainery/2024-qa-vyroba-elektriny-v-cesku-bez-uhli"
 perex: |
     Česko má dnes nadbytečnou kapacitu uhelných zdrojů. A současně v Česku probíhá vášnivá debata okolo možnosti a nemožnosti rychlého odklonu od uhlí ve výrobě elektřiny. Politicky se tyto diskuse koncentrují okolo možných uhelných přílepků v zákoně lex OZE 3. V analytickém týmu Fakt o klimatu jsme nedávno vydali studii <em>Výroba elektřiny v Česku bez uhlí</em>, ve které argumentujeme, že velká většina současných uhelných elektráren není potřeba pro zajištění dodávek elektřiny. Zde znovu vysvětujeme hlavní sdělení studie a podrobně odpovídáme na sadu otázek a kritických připomínek.
 ---
