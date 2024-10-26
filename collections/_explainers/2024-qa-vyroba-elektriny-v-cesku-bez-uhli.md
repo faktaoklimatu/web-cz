@@ -100,7 +100,7 @@ V optimalizaci nejsou náklady na rozvoj a údržbu přenosové a distribuční 
     label="Státy s vysokým podílem fotovoltaických a větrných elektráren nemají nízkou cenu elektřiny pro zákazníka. Jak tedy může OZE zlevňovat elektřinu?"
     content="To je pravda, ale vyvozovat z takového srovnání jasné závěry ohledně cest k levné elektřině v budoucnu je metodologicky ošemetné.
 
-Z hlediska současných nákladů je nejlevnější nic zásadního nedělat a těžit z velkých investic v minulých dekádách (např. francouzská "flotila" jaderných elektráren rychle stárne, a kdyby měla být průběžně obnovována, budou náklady a konečné ceny elektřiny určitě vyšší). Nicméně když použijeme analogii: pokud by stát zcela přestal opravovat své silnice, sice by určitě mohl snížit daně, byl by to ale důkaz prozíravé a efektivní správy?
+Z hlediska současných nákladů je nejlevnější nic zásadního nedělat a těžit z velkých investic v minulých dekádách (např. francouzská \"flotila\" jaderných elektráren rychle stárne, a kdyby měla být průběžně obnovována, budou náklady a konečné ceny elektřiny určitě vyšší). Nicméně když použijeme analogii: pokud by stát zcela přestal opravovat své silnice, sice by určitě mohl snížit daně, byl by to ale důkaz prozíravé a efektivní správy?
 
 Státy s vysokým podílem OZE (např. Německo) navíc podstatnou část tohoto rozvoje udělaly v době mnohem dražších obnovitelných technologií. Ceny solárních panelů za posledních 15 let [velmi výrazně klesly](/cena-energie), k podstatnému poklesu nákladů došlo i u větrných elektráren. Odvozovat z toho nevýhodnost rozvoje OZE do budoucna je podobně zavádějící jako varovat před rozvojem fotovoltaiky na základě nepovedeného českého solárního boomu okolo roku 2010."
 %}
@@ -155,7 +155,7 @@ Další teoretickou možností (ta je nicméně v rozporu s evropskou legislativ
 
 ## Česko potřebuje omezit rizika spojená s využíváním zemního plynu na výrobu elektřiny
 
-Podle kritiků studie je přechod na zemní plyn dražší a riskantnější než udržet uhlí. 
+Podle kritiků studie je přechod na zemní plyn dražší a riskantnější než udržet uhlí.
 
 Dražší není – podle výsledků modelování při drahé emisní povolence je omezení výroby z uhlí a mírné navýšení výroby ze zemního plynu a dovozu elektřiny nejlevnější možné řešení.
 
