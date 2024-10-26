@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Výroba elektřiny v Česku bez uhlí: dodatečné Q&A ke studii"
 slug:        "2024-qa-vyroba-elektriny-v-cesku-bez-uhli"
-published:   2024-10-21
+published:   2024-10-26
 authors:
   - ids: ["jan-krcal", "matej-grabovsky"]
 weight:      74
@@ -17,7 +17,7 @@ perex: |
     Česko má dnes nadbytečnou kapacitu uhelných zdrojů. Současně zde probíhá debata, zda je rychlý odklon od uhlí ve výrobě elektřiny možný, nebo není. Na politické úrovni jde zejména o diskuzi okolo možných uhelných "přílepků" k zákonu nazývanému Lex OZE 3. Analytický tým Fakt o klimatu vydal v září 2024 studii <em>Výroba elektřiny v Česku bez uhlí</em>, kde argumentuje, že velká většina současných uhelných elektráren není pro zajištění dodávek elektřiny potřeba. Následující text podrobně odpovídá na sadu otázek a připomínek, které se po zveřejnění studie objevily, a znovu vysvětluje její hlavní sdělení.
 ---
 
-**Argument "kapacita uhelných zdrojů je nadbytečná" je velmi jednoduchý:** současný čistý instalovaný výkon řiditelných zdrojů v Česku je přibližně 15,4 GW (bez slunce, větru a průtočných vodních elektráren – slunce a vítr nejsou řiditelné zdroje a průtočné vodní elektrárny nemusí být schopny vyrábět v době, kdy je budeme potřebovat). Špička zatížení za posledních 10 let byla 11,4 GW, tedy o 4 GW nižší, než je uvedený instalovaný výkon.
+**Argument "kapacita uhelných zdrojů je nadbytečná" je velmi jednoduchý:** současný čistý instalovaný výkon řiditelných zdrojů v Česku je přibližně 15,4 GW (bez slunce, větru a průtočných vodních elektráren – nejsou to řiditelné zdroje a tedy nemusí být schopny vyrábět v době, kdy je budeme potřebovat). Špička zatížení za posledních 10 let byla 11,4 GW, tedy o 4 GW nižší, než je uvedený instalovaný výkon.
 
 {% include figure.html
     name="instalovany-vykon-cr.svg"
@@ -198,14 +198,14 @@ Obě čísla ale nejsou relevantní, protože vyrábět místo toho více elekt�
     label="S využitím zemního plynu jsou spojeny velké nepřímé emise skleníkových plynů – úniky metanu při těžbě a přepravě. Dává přechod na zemní plyn vůbec z hlediska klimatu smysl, když je emisně srovnatelná s výrobou z uhlí?
 
 Evropa plánuje tyto nepřímé emise metanu také zatížit emisní povolenkou. Dává přechod na zemní plyn vůbec nějaký smysl ekonomicky?"
-    content="Ano, s využitím zemního plynu jsou spojeny úniky metanu a CO2 při těžbě a transportu. (To mimochodem platí i pro uhlí, při jehož těžbě v Česku unikají téměř 2 Mt skleníkových plynů, což je více než 1,5 % emisní stopy Česka.)
+    content="Ano, s využitím zemního plynu jsou spojeny úniky metanu a CO<sub>2</sub> při těžbě a transportu. (To mimochodem platí i pro uhlí, při jehož těžbě v Česku unikají téměř 2 Mt skleníkových plynů, což je více než 1,5 % emisní stopy Česka.)
 
 Výroba elektřiny ze zemního plynu i tak produkuje zhruba o třetinu nižší celkové emise než výroba elektřiny z uhlí (viz např. parametry IPCC nebo analýza Clean Air Task Force). To je z hlediska dekarbonizace neuspokojivé zlepšení, proto dává přechod na zemní plyn smysl jen při splnění těchto podmínek:
 
 1. **Zemní plyn bude jen jako doplněk OZE** (a jádra). To znamená, že výroba ze zemního plynu nesmí nahradit výrobu uhlí 1:1, je třeba bezodkladně rozvíjet obnovitelné zdroje, akumulaci, flexibilitu spotřeby. I tak budou potřeba záložní zdroje elektřiny – plynové turbíny i paroplynové zdroje jsou pro to technicky vhodnější než uhelné zdroje, protože rychlými změnami výkonu mohou lépe doplňovat proměnlivou výrobu z OZE.
 2. Je třeba **snižovat úniky metanu při těžbě i transportu** zemního plynu (viz níže).
 
-Kromě toho je třeba v souladu s taxonomií EU co nejdříve přejít od zemního plynu k zeleným plynům (biometan, vodík) nebo využívat technologii zachytávání uhlíku CCUS. To nebude snadné ani levné zařídit pro velké instalované výkony nebo pro velké objemy výroby ze zemního plynu (kvůli omezené dostupnosti biometanu či vodíku, vysokým investičním nákladům technologie CCUS a omezením infrastruktury na ukládání CO2). **Z toho důvodu je třeba investice do plynových zdrojů velmi pečlivě zvažovat** a rozvíjet kromě nich také bezemisní nástroje k balancování soustavy jako např. akumulaci.
+Kromě toho je třeba v souladu s taxonomií EU co nejdříve přejít od zemního plynu k zeleným plynům (biometan, vodík) nebo využívat technologii zachytávání uhlíku CCUS. To nebude snadné ani levné zařídit pro velké instalované výkony nebo pro velké objemy výroby ze zemního plynu (kvůli omezené dostupnosti biometanu či vodíku, vysokým investičním nákladům technologie CCUS a omezením infrastruktury na ukládání CO<sub>2</sub>). **Z toho důvodu je třeba investice do plynových zdrojů velmi pečlivě zvažovat** a rozvíjet kromě nich také bezemisní nástroje k balancování soustavy jako např. akumulaci.
 
 **Přechod na zemní plyn z hlediska trhu s elektřinou rozhodně smysl dává, protože není v plánu zatížit nepřímé emise metanu emisní povolenkou.** Evropská unie bude místo toho regulovat nepřímé emise metanu jiným způsobem. K postupnému snížení úniků metanu směřuje nedávno přijaté nařízení EU ([EU/2024/1787](https://energy.ec.europa.eu/news/new-eu-methane-regulation-reduce-harmful-emissions-fossil-fuels-europe-and-abroad-2024-05-27_en)), které navazuje na [strategii EU ke snížení emisí metanu](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52020DC0663) z roku 2020 i na [Global Methane Pledge](https://www.globalmethanepledge.org/) z konference COP26 v Glasgow v roce 2021. Toto nařízení požaduje po všech producentech dovážejících do EU ropu, uhlí a zemní plyn, aby od roku 2027 monitorovali a reportovali úniky metanu při těžbě a aby od roku 2030 plnili emisní limity (ty zatím nebyly stanoveny). V případě neplnění těchto limitů dojde na pokuty, jejichž výše ale bude v gesci jednotlivých členských států. Cílem tedy není zavést zpoplatnění veškerých úniků metanu, ale jen tlačit producenty k relativně snadným technickým opatřením, které tyto úniky podstatně sníží."
 %}
