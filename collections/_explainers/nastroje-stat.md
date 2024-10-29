@@ -86,8 +86,8 @@ V tomto případě může jít o zákaz určité aktivity nebo její omezení. P
 ### Povolení, uvolnění pravidel
 
 Stát ovšem nemusí pouze omezovat – může také podpořit rozvoj aktivit, jež jsou pro dekarbonizaci žádoucí. Přijme například opatření, které tyto aktivity umožní realizovat nebo sníží stávající bariéry k jejich realizaci. Příklady:
-* Zrychlení povolovacích procesů pro obnovitelné zdroje ([LEX OZE I](https://www.e-sbirka.cz/sb/2023/19/0000-00-00)[^8])
-* Povolení komunitního sdílení elektřiny ([LEX OZE II](https://www.e-sbirka.cz/sb/2023/19/0000-00-00))
+* Zrychlení povolovacích procesů pro obnovitelné zdroje ([Lex OZE I](https://www.e-sbirka.cz/sb/2023/19/0000-00-00)[^8])
+* Povolení komunitního sdílení elektřiny ([Lex OZE II](https://www.e-sbirka.cz/sb/2023/19/0000-00-00))
 * Vymezení tzv. akceleračních zón pro obnovitelné zdroje[^9]
 
 ### Výkonnostní normy
@@ -217,7 +217,7 @@ Dekarbonizaci mohou také velmi napomáhat **investice státu v řádu miliard k
 
 [^7]: Francie ji v roce 2022 v [klimatickém zákoně](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924) zakázala jako první země na světě. Další podobné iniciativy, nejen na úrovni státu, mapuje stránka [World Without Fossil Ads](https://www.worldwithoutfossilads.org/projects/).
 
-[^8]: LEX OZE je označení používané pro jednotlivé novely energetického zákona č. 19/2023 Sb.
+[^8]: Lex OZE je označení používané pro jednotlivé novely energetického zákona č. 19/2023 Sb.
 
 [^9]: V Česku se aktuálně [připravuje legislativa](https://www.mzp.cz/cz/news_20240424_Rozvoj-obnovitelnych-zdroju-energie-urychli-akceleracni-zony), která ve vybraných oblastech umožní získat povolení pro výstavbu solárních nebo větrných elektráren do 12 měsíců. Dosud proces povolování trval mnohem déle – u větrných elektráren až [sedm let](/studie/2023-rozvoj-obnovitelne-energie-v-cesku-do-2030).
 
