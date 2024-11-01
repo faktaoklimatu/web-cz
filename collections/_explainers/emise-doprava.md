@@ -31,8 +31,8 @@ Celkové emise z dopravy v EU v roce 2020 dosáhly 670 milionů tun CO<sub>2</su
 {% include figure.html
     name="vykony-emise-evropa-des.svg"
     alt="Graf srovnávající podíl dopravních módů na přepravním výkonu a emisích v osobní dopravě v Evropě. Zatímco automobily a letadla zajišťují 72 % přepravního výkonu, produkují až 88 % emisí skleníkových plynů."
-    source-text="OECD, ITF Transport Outlook 2023"
-    source-url="https://faktaoklimatu.cz"
+    source-text="OECD, ITF Transport Outlook 2023, zpracování Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/emise-doprava"
 %}
 
 Jak ukazuje graf výše, různé druhy osobní dopravy přispívají k celkovým emisím skleníkových plynů v různé míře. Nejvíce emisí (téměř 85 %) produkují automobily a letadla, přestože zajišťují pouze 72 % celkového přepravního výkonu – auta s 52 % výkonu mají 64% podíl na emisích, letadla s 20 % výkonu se na emisích podílejí z 24 %. Naproti tomu vlaky zajišťují 10 % výkonu, ale jsou s nimi spojena pouhá 2 % emisí v dopravě.
@@ -59,8 +59,8 @@ Kromě emisní intenzity hraje u emisí z osobní dopravy významnou roli i **vz
     name="sankey-vzdalenost-dopravni-prostredky-des.svg"
     name-mobile="sankey-vzdalenost-dopravni-prostredky-mob.svg"
     alt="Graf zobrazující, jakými prostředky lidé v Eropě cestují na různé vzdálenosti"
-    source-text="OECD, ITF Transport Outlook 2023"
-    source-url="https://faktaoklimatu.cz"
+    source-text="OECD, ITF Transport Outlook 2023, zpracování Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/emise-doprava"
 %}
 
 Tento graf přehledně ukazuje, které druhy osobní dopravy se v Evropě využívají při cestování na různé vzdálenosti. Následující část textu přináší další podrobnosti a popisuje faktory, které ovlivňují volbu dopravního prostředku. Nastiňuje také změny, které by mohly pomoci snížit emise v dalších letech.
@@ -70,8 +70,8 @@ Tento graf přehledně ukazuje, které druhy osobní dopravy se v Evropě využ�
 {% include figure.html
     name="vykony-emise-mezinarodni-des.svg"
     alt="Sloupcový graf zobrazující přepravní výkony a emise v mezinárodní a meziměstské dopravě. Nejvíce výkonu, 51 %, zajišťují letadla, zatímco produkují 63 % emisí skleníkových plynů"
-    source-text="OECD, ITF Transport Outlook 2023"
-    source-url="https://faktaoklimatu.cz"
+    source-text="OECD, ITF Transport Outlook 2023, zpracování Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/emise-doprava"
 %}
 
 Mezinárodní a meziměstská osobní doprava se využívá hlavně **při pracovních cestách a pro turistické účely**. Na kratší trasy do vzdálenosti 500 kilometrů, jako je například cesta z Prahy do Brna, volí lidé nejčastěji osobní auto nebo vlak. Na středně dlouhých trasách mezi 500 a 3 000 kilometry (např. cesta z Prahy do Bruselu) převažuje využití automobilů. U vzdáleností nad 3 000 kilometrů (cesta z Prahy do New Yorku) se obvykle upřednostňuje letecká doprava, která je také často jedinou možnou volbou, zejména při překonávání oceánu.
@@ -85,8 +85,8 @@ Emise z osobní dopravy na velké vzdálenosti je možné snížit například *
 {% include figure.html
     name="vykony-emise-regionalni-des.svg"
     alt="Sloupcový graf zobrazující přepravní výkony a emise v regionální dopravě. Osobní automobily zajišťují 70 % přepravního výkonu a produkují 84 % emisí."
-    source-text="OECD, ITF Transport Outlook 2023"
-    source-url="https://faktaoklimatu.cz"
+    source-text="OECD, ITF Transport Outlook 2023, zpracování Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/emise-doprava"
 %}
 
 **Převaha osobních automobilů** v regionální osobní dopravě je do značné míry způsobena jejich pohodlností a flexibilitou, což je obzvláště důležité v oblastech, kde je hromadná doprava omezená nebo neexistuje. Tento trend byl v minulosti ještě zesilován územním plánováním, které v řadě případů upřednostňovalo silniční sítě před infrastrukturou veřejné dopravy, takže používání automobilů není v mnoha případech pouze osobní preferencí, ale leckdy i nutností. Svou roli hraje také kulturní status spojený s vlastněním automobilu.[^kultura]
@@ -102,8 +102,8 @@ Protože v následujících dekádách bude pravděpodobně dál přibývat lid�
 {% include figure.html
     name="vykony-emise-mestska-des.svg"
     alt="Sloupcový graf zobrazující přepravní výkony a emise v městské a příměstské dopravě"
-    source-text="OECD, ITF Transport Outlook 2023"
-    source-url="https://faktaoklimatu.cz"
+    source-text="OECD, ITF Transport Outlook 2023, zpracování Fakta o klimatu"
+    source-url="https://faktaoklimatu.cz/explainery/emise-doprava"
 %}
 
 I zde **převažuje využívání osobních automobilů** (produkujících přes 80 % emisí). Lidé dají přednost autu, jestliže pro ně hromadná doprava není atraktivní – není dostupná, bezpečná a spolehlivá nebo nejezdí dostatečně často. Také infrastruktura pro nemotorizované způsoby přepravy (chůze, jízda na kole) je v řadě měst nedostatečná, v Česku v některých případech dokonce prakticky neexistuje (např. síť cyklostezek v Brně).
