@@ -7,7 +7,7 @@ redirect_from: "/emise"
 published:     2022-07-01
 weight:        20
 intro: |
-  Lidmi způsobené emise skleníkových plynů zesilují v atmosféře skleníkový efekt, což vede k oteplování planety. Hlavním skleníkovým plynem je **oxid uhličitý** (CO<sub>2</sub>), který k oteplování přispívá přibližně ze 70 %. Jeho koncentrace v atmosféře rostou především kvůli spalování fosilních paliv, ale například i kácení pralesů nebo výrobě oceli a cementu. Dalším významným skleníkovým plynem je **metan** (CH<sub>4</sub>), který do atmosféry uniká hlavně při těžbě fosilních paliv a chovu dobytka. Ke skleníkovým plynům patří i **oxid dusný** (vznikající zejména při používání umělých dusíkatých hnojiv) ⁠a řada synteticky vyráběných **fluorovaných plynů**.
+  Lidmi způsobené emise skleníkových plynů zesilují v atmosféře skleníkový efekt, což vede k oteplování planety. Hlavním antropogenním skleníkovým plynem je **oxid uhličitý** (CO<sub>2</sub>), který k oteplování přispívá přibližně ze 70 %. Jeho koncentrace v atmosféře rostou především kvůli spalování fosilních paliv, ale například i kácení pralesů nebo výrobě oceli a cementu. Dalším významným skleníkovým plynem je **metan** (CH<sub>4</sub>), který do atmosféry uniká hlavně při těžbě fosilních paliv a chovu dobytka. Ke skleníkovým plynům patří i **oxid dusný** (vznikající zejména při používání umělých dusíkatých hnojiv) ⁠a řada synteticky vyráběných **fluorovaných plynů**.
 
   K zastavení klimatické změny je klíčové dosáhnout celosvětově tzv. **klimatické neutrality** – tedy stavu, kdy lidstvo už svou činností nebude přidávat do atmosféry žádné skleníkové plyny.
 
