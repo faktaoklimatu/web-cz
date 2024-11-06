@@ -19,4 +19,9 @@ Hlavním cílem projektu "Atlas dekarbonizace ČR" je poskytnout srozumitelnou a
 
 Termín realizace je 1. 1. 2024 až 30. 11. 2025.
 
+<div class="logos mt-5 mb-4">
+    <img loading="eager" class="wide" src="/assets-local/o-nas/logo-mzp.png" alt="Logo Ministerstva životního prostředi ČR">
+    <img loading="eager" class="wide" src="/assets-local/o-nas/logo-sfzp.png" alt="Logo Státního fondu životního prostředí ČR">
+</div>
+
 </div></div>
