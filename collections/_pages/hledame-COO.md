@@ -16,13 +16,13 @@ Jsme malá organizace s velkými ambicemi: chceme posunout dekarbonizaci Česka 
 
 ### Kdo jsme
 
-V organizaci Fakta o klimatu máme přímočarou misi: **pomoct tomu, aby dekarbonizace v Česku probíhala co nejrychleji a co nejlépe**, to znamená se strategickou rozvahou, nákladově efektivně a sociálně udržitelně. Co pro to děláme? Téma klimatu a dekarbonizace je extrémně složité a těžko srozumitelné, stejně jako spousta vědeckých studií, vládních plánů i statistických dat. My přinášíme pro Česko důležité informace přístupně a srozumitelně, například [přehlednými infografikami](/teplota-cr), [jasnými texty](/explainery/emisni-povolenky-ets-2), [vlastními datovými analýzami](/explainery/teplotni-extremy-cr) a [studiemi](/2024-cesty-k-ciste-a-levne-elektrine-2050), které si cení odborná komunita. Kromě toho věcným stylem mluvíme do médií a s důležitými stakeholdery. Postupně tak veřejnou diskusi o změně klimatu kultivujeme a zaměřujeme ji na řešení. Fungujeme díky podpoře řady grantů, nadací a firemních a individuálních dárců.
+V organizaci Fakta o klimatu máme přímočarou misi: **pomoct tomu, aby dekarbonizace v Česku probíhala co nejrychleji a co nejlépe**, to znamená se strategickou rozvahou, nákladově efektivně a sociálně udržitelně. Co pro to děláme? Téma klimatu a dekarbonizace je extrémně složité a těžko srozumitelné, stejně jako spousta vědeckých studií, vládních plánů i statistických dat. My přinášíme pro Česko důležité informace přístupně a srozumitelně, například [přehlednými infografikami](/teplota-cr){:target="_blank"}, [jasnými texty](/explainery/emisni-povolenky-ets-2){:target="_blank"}, [vlastními datovými analýzami](/explainery/teplotni-extremy-cr){:target="_blank"} a [studiemi](/2024-cesty-k-ciste-a-levne-elektrine-2050){:target="_blank"}, které si cení odborná komunita. Kromě toho věcným stylem mluvíme do médií a s důležitými stakeholdery. Postupně tak veřejnou diskusi o změně klimatu kultivujeme a zaměřujeme ji na řešení. Fungujeme díky podpoře řady grantů, nadací a firemních a individuálních dárců.
 
 Jsme dost pestrý tým zkušených profesionálů, kterým záleží na naší společné budoucnosti. Protože máme slabost pro čísla a data, tak si snadno dokážeme spočítat, že je nejvyšší čas jednat. Kromě čísel a dat nás baví krásné vizualizace, optimalizační modely, analýzy v R, zjednodušování komplexity, balancování mezi střízlivostí a nadějí. A také milujeme výběrovou kávu, elektronickou hudbu, meditaci, běh nebo povídání o tom, jak se kdo zrovna cítí.
 
 Za 5 let jsme se rozrostli na tým 12 lidí a v dalších letech chceme a potřebujeme dále výrazně růst a rozvíjet se, protože nás čeká ještě spousta práce. A na to potřebujeme Tvoji pomoc.
 
-<a class="btn btn-secondary" href="/o-nas"><i class="fas fa-fw fa-people-group"></i> Více o nás</a>
+<a class="btn btn-secondary" href="/o-nas" target="_blank"><i class="fas fa-fw fa-people-group"></i> Více o nás</a>
 
 ### Co budeš dělat
 
@@ -47,8 +47,8 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 
 ### Co nabízíme
 
-* důležitou práci s mimořádným dopadem
-* platové ohodnocení: **60 tisíc +** \\
+* **důležitou práci s mimořádným dopadem**
+* **platové ohodnocení: 60 tisíc +** \\
 (ohodnocení plánujeme zvyšovat v závislosti na tvém výkonu a finančním zdraví organizace)
 * **tým plný zajímavých lidí s přátelskými vztahy**: pomáháme si navzájem, mnozí spolu tráví čas i mimo práci, pravidelně děláme výjezdní porady, kde se můžeme rozvíjet, diskutovat o strategii, spolu se projít nebo zasportovat
 * **6 týdnů dovolené**, příspěvky na wellbeing a osobní rozvoj
@@ -60,13 +60,14 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 * **detailní zadání**: Věci se u nás dějí spíše živelně a zakladatel je především velký vizionář. Nečekej, že Tě někdo povede za ruku a bude stanovovat dílčí úkoly – hledáme samostatného problem-solvera s vlastním pohonem.
 * **fancy kanceláře**: Brněnský Impact Hub je pěkné místo a má spoustu výhod, ale stále je nám to tu trochu malé, filtrovanou kávu si vaříme vlastnoručně a naše kytky někdy taky vypadají povadle.
 
-**Zaujala Tě naše nabídka?** Pošli do **neděle 24. 11.** na [prace@faktaoklimatu.cz](mailto:prace@faktaoklimatu.cz?subject=COO pozice) svoje CV a pár řádků o tom, proč chceš právě k nám, co nám můžeš přinést a proč si myslíš, že by nám to společně fungovalo.
+**Zaujala Tě naše nabídka?** Pošli do **neděle 24. 11.** na [prace@faktaoklimatu.cz](mailto:prace@faktaoklimatu.cz?subject=COO pozice){:target="_blank"} svoje CV a pár řádků o tom, proč chceš právě k nám, co nám můžeš přinést a proč si myslíš, že by nám to společně fungovalo.
 
-<a class="btn btn-primary btn-lg" href="mailto:prace@faktaoklimatu.cz?subject=COO pozice"><i class="fas fa-fw fa-envelope"></i> Pošli nám CV a svoji motivaci</a>
+<a class="btn btn-primary btn-lg" href="mailto:prace@faktaoklimatu.cz?subject=COO pozice" target="_blank"><i class="fas fa-fw fa-envelope"></i> Pošli CV</a>
+
+</div></div>
 
 </div></div>
 
-</div></div>
 <div class="section"><div class="container" markdown="1">
 
 ### Ukázky naší práce
