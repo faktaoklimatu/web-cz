@@ -28,7 +28,7 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 
 * **strategické plánování**: Tvým úkolem je (v úzké spolupráci s ředitelem) převádět vizi organizace do dlouhodobé strategie, fundraisingové strategie, ročních a kvartálních plánů a každodenní praxe organizace. No bullshit: potřebujeme, aby strategie byla pro tým srozumitelná a realizovatelná.
 * **řízení organizace a komunikace s týmem**: Budeš nastavovat organizační strukturu, koordinovat práci a řídit velké projekty, hodnotit výkon a pomáhat rozvoji týmu. Jde o to, držet v organizaci dostatek řádu a jasnosti, aby naše tvorba byla opravdu efektivní, a současně dostatek kreativní startupové mentality, abychom dokázali pružně reagovat na měnící se prostředí.
-* **finanční řízení**: Potřebujeme kvalitní finanční plánování a pořádek ve financích. A potřebujeme někoho, kdo rozumí slovu “zisk”. To znamená, že budeš přinášet lepší řád a jasnost do systému našeho účetnictví, do cash flow managementu a do rozpočtů a finančního řízení našich velkých projektů, abychom mohli růst.
+* **finanční řízení**: Potřebujeme kvalitní finanční plánování a pořádek ve financích. A potřebujeme někoho, kdo rozumí slovu „zisk“. To znamená, že budeš přinášet lepší řád a jasnost do systému našeho účetnictví, do cash flow managementu a do rozpočtů a finančního řízení našich velkých projektů, abychom mohli růst.
 * **compliance**: Potřebujeme, aby organizace fungovala podle všech zákonů a interních pravidel.
 
 (Rozhodně tedy není nutné detailně rozumět klimatu, dekarbonizaci nebo energetice. Oceníme ale zvědavost a chuť se učit i v těchto oblastech.)
@@ -36,7 +36,7 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 ### <i class="fa-solid fa-user-check"></i>&ensp;Klíčové kompetence
 
 * ambice a orientace na výsledky
-* zkušenosti s managementem a řízením organizací (2 roky+)
+* zkušenosti s managementem a řízením organizací (min. 2 roky)
 * skvělé strategické přemýšlení
 * schopnost systematické a organizované práce
 * vysoké komunikační schopnosti uvnitř týmu i navenek (jasnost, empatie, přesvědčivost, zdravá sebejistota)
