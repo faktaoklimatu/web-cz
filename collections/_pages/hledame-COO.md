@@ -14,7 +14,7 @@ _Pomoz nám proměnit naše vize v konkrétní výsledky a přispěj k efektivn�
 {:.perex}
 Jsme malá organizace s velkými ambicemi: chceme posunout dekarbonizaci Česka a kultivovat veřejnou debatu o změnách klimatu. Hledáme klíčového člověka do týmu na pozici COO (provozní ředitel\*ka). Potřebujeme zkušeného lídra, který ukotví naše vize v reálných strategiích a akčních krocích a zajistí jejich důslednou realizaci.
 
-### Kdo jsme
+### <i class="fa-solid fas fa-fw fa-people-group"></i>&ensp;Kdo jsme
 
 V organizaci Fakta o klimatu máme přímočarou misi: **pomoct tomu, aby dekarbonizace v Česku probíhala co nejrychleji a co nejlépe**, to znamená se strategickou rozvahou, nákladově efektivně a sociálně udržitelně. Co pro to děláme? Téma klimatu a dekarbonizace je extrémně složité a těžko srozumitelné, stejně jako spousta vědeckých studií, vládních plánů i statistických dat. My přinášíme pro Česko důležité informace přístupně a srozumitelně, například [přehlednými infografikami](/teplota-cr){:target="_blank"}, [jasnými texty](/explainery/emisni-povolenky-ets-2){:target="_blank"}, [vlastními datovými analýzami](/explainery/teplotni-extremy-cr){:target="_blank"} a [studiemi](/2024-cesty-k-ciste-a-levne-elektrine-2050){:target="_blank"}, které si cení odborná komunita. Kromě toho věcným stylem mluvíme do médií a s důležitými stakeholdery. Postupně tak veřejnou diskusi o změně klimatu kultivujeme a zaměřujeme ji na řešení. Fungujeme díky podpoře řady grantů, nadací a firemních a individuálních dárců.
 
@@ -22,7 +22,7 @@ Jsme dost [pestrý tým zkušených profesionálů](/o-nas), kterým záleží n
 
 Za 5 let jsme se rozrostli na tým 12 lidí a v dalších letech chceme a potřebujeme dále výrazně růst a rozvíjet se, protože nás čeká ještě spousta práce. A na to potřebujeme Tvoji pomoc.
 
-### Co budeš dělat
+### <i class="fa-solid fa-list-check"></i>&ensp;Co budeš dělat
 
 Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme jako COO, ale taky to bude tak trochu finanční manažer\*ka, trochu HR manažer\*ka, a trochu projekťák\*čka. Klíčové činnosti jsou vypsány, zbytek náplně práce specifikujeme společně podle toho, co bude potřeba a ty na to zároveň budeš mít talent.
 
@@ -33,7 +33,7 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 
 (Rozhodně tedy není nutné detailně rozumět klimatu, dekarbonizaci nebo energetice. Oceníme ale zvědavost a chuť se učit i v těchto oblastech.)
 
-### Klíčové kompetence
+### <i class="fa-solid fa-user-check"></i>&ensp;Klíčové kompetence
 
 * ambice a orientace na výsledky
 * zkušenosti s managementem a řízením organizací (2 roky+)
@@ -43,7 +43,7 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 * analytické schopnosti (pro porozumění výstupům stejně jako pro řízení týmu)
 * samostatnost a iniciativa
 
-### Co nabízíme
+### <i class="fa-regular fa-handshake"></i>&ensp;Co nabízíme
 
 * **důležitou práci s mimořádným dopadem**
 * **platové ohodnocení: 60 tisíc +** \\
@@ -52,7 +52,7 @@ Potřebujeme schopného a zkušeného člověka do vedení, pozici označujeme j
 * **6 týdnů dovolené**, příspěvky na wellbeing a osobní rozvoj
 * **flexibilní pracovní doba**, možnost částečné práce na **home office**
 
-### Co nenabízíme
+### <i class="fa-regular fa-thumbs-down"></i>&ensp;Co nenabízíme
 
 * **klid**: Chytáme se příležitostí a kormidlujeme tak, jak se zrovna ve víru událostí dá. Někdy to přináší časový tlak a jistou míru stresu. Klidnou práci s nohama na stole u nás nečekej.
 * **detailní zadání**: Věci se u nás dějí spíše živelně a zakladatel je především velký vizionář. Nečekej, že Tě někdo povede za ruku a bude stanovovat dílčí úkoly – hledáme samostatného problem-solvera s vlastním pohonem.
