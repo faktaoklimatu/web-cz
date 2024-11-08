@@ -18,11 +18,9 @@ Jsme malá organizace s velkými ambicemi: chceme posunout dekarbonizaci Česka 
 
 V organizaci Fakta o klimatu máme přímočarou misi: **pomoct tomu, aby dekarbonizace v Česku probíhala co nejrychleji a co nejlépe**, to znamená se strategickou rozvahou, nákladově efektivně a sociálně udržitelně. Co pro to děláme? Téma klimatu a dekarbonizace je extrémně složité a těžko srozumitelné, stejně jako spousta vědeckých studií, vládních plánů i statistických dat. My přinášíme pro Česko důležité informace přístupně a srozumitelně, například [přehlednými infografikami](/teplota-cr){:target="_blank"}, [jasnými texty](/explainery/emisni-povolenky-ets-2){:target="_blank"}, [vlastními datovými analýzami](/explainery/teplotni-extremy-cr){:target="_blank"} a [studiemi](/2024-cesty-k-ciste-a-levne-elektrine-2050){:target="_blank"}, které si cení odborná komunita. Kromě toho věcným stylem mluvíme do médií a s důležitými stakeholdery. Postupně tak veřejnou diskusi o změně klimatu kultivujeme a zaměřujeme ji na řešení. Fungujeme díky podpoře řady grantů, nadací a firemních a individuálních dárců.
 
-Jsme dost pestrý tým zkušených profesionálů, kterým záleží na naší společné budoucnosti. Protože máme slabost pro čísla a data, tak si snadno dokážeme spočítat, že je nejvyšší čas jednat. Kromě čísel a dat nás baví krásné vizualizace, optimalizační modely, analýzy v R, zjednodušování komplexity, balancování mezi střízlivostí a nadějí. A také milujeme výběrovou kávu, elektronickou hudbu, meditaci, běh nebo povídání o tom, jak se kdo zrovna cítí.
+Jsme dost [pestrý tým zkušených profesionálů](/o-nas), kterým záleží na naší společné budoucnosti. Protože máme slabost pro čísla a data, tak si snadno dokážeme spočítat, že je nejvyšší čas jednat. Kromě čísel a dat nás baví krásné vizualizace, optimalizační modely, analýzy v R, zjednodušování komplexity, balancování mezi střízlivostí a nadějí. A také milujeme výběrovou kávu, elektronickou hudbu, meditaci, běh nebo povídání o tom, jak se kdo zrovna cítí.
 
 Za 5 let jsme se rozrostli na tým 12 lidí a v dalších letech chceme a potřebujeme dále výrazně růst a rozvíjet se, protože nás čeká ještě spousta práce. A na to potřebujeme Tvoji pomoc.
-
-<a class="btn btn-secondary" href="/o-nas" target="_blank"><i class="fas fa-fw fa-people-group"></i> Více o nás</a>
 
 ### Co budeš dělat
 
