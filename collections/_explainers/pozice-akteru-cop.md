@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Kdo jsou hlavní aktéři klimatických jednání a jaké jsou jejich pozice?"
 slug:        "pozice-akteru-cop"
 published:   2021-10-20
+updated:     2024-11-11
 author:      "Tým Fakt o klimatu"
 weight:      74
 tags-scopes: [ svet ]
@@ -12,7 +13,7 @@ cover-source-license: "CC BY-NC-SA 2.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-sa/2.0/"
 cover-source-text: "Flickr Connect4Climate"
 cover-source-url: "https://flickr.com/photos/connect4climate/49242640988/"
-perex:       "Státy světa se pravidelně setkávají v rámci mezinárodních jednání o ochraně klimatu. Zatím poslední velké setkání se konalo v listopadu roku 2021 ve skotském Glasgow. Důležitou roli při těchto jednáních hrají nejen velké či bohaté státy,  ale také skupiny afrických států nebo aliance malých ostrovních států. A zatímco jedni hledají, jak emise snižovat co nejpohodlněji, pro jiné jde doslova o přežití jejich obyvatel. V tomto textu se podrobněji podíváme na rozdílné podmínky, se kterými do klimatických jednání vstupují jednotliví aktéři."
+perex:       "Státy světa se pravidelně setkávají v rámci mezinárodních jednání o ochraně klimatu. Zatím poslední velké setkání se konalo v listopadu roku 2023 v Dubaji. Důležitou roli při těchto jednáních hrají nejen velké či bohaté státy,  ale také skupiny afrických států nebo aliance malých ostrovních států. A zatímco jedni hledají, jak emise snižovat co nejpohodlněji, pro jiné jde doslova o přežití jejich obyvatel. V tomto textu se podrobněji podíváme na rozdílné podmínky, se kterými do klimatických jednání vstupují jednotliví aktéři."
 ---
 
 ## Kontext
