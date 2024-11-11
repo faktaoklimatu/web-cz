@@ -30,9 +30,9 @@ Státy nemohou své emise skleníkových plynů snižovat přímo – nemají mo
 - **Investice a infrastrukturní projekty.** Státy mohou financovat nebo finančně zvýhodnit například budování obnovitelných zdrojů energie nebo sítě dobíjecích stanic pro elektromobily. Rozvojové státy potřebují na takové investice peníze, které pomocí mezinárodních fondů poskytují z velké části rozvinuté státy, z menší části soukromé firmy.
 - **Přehledné prostředí pro soukromé subjekty.** Státy mohou deklarovat jasné cíle, vypracovat plány a zpřístupňovat data, a vytvářet tak předvídatelné podnikatelské prostředí, ve kterém firmy mohou svůj byznys rozvíjet příznivým způsobem.
 
-### Co se změnilo od konference COP25 v Madridu?
+### Jaké jsou světové závazky k ochraně klimatu?
 
-V listopadu roku 2021 se po dvouleté pauze konala klimatická konference COP26 v **Glasgow**. Předchozí konference se konala v roce 2019 v **Madridu**.[^5] A zatímco v roce 2019 téměř žádná země nesměřovala k uhlíkové neutralitě, v letech 2020 a 2021 se k tomuto závazku přihlásilo mnoho států. Dohromady země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně 2060 či 2070, odpovídají za více než 89 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak moc se podaří snížit světové emise skleníkových plynů v následující dekádě, tedy do roku 2030. V tomto horizontu jsou závazky zemí slabší a často postrádají konkrétní plány. Současné závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
+Země se závazkem dosáhnout uhlíkové neutrality do roku 2050, případně 2060 či 2070, odpovídají za více než 89 % současných emisí CO<sub>2</sub>. Pro odhad budoucího oteplení bude klíčové, jak moc se podaří snížit světové emise skleníkových plynů v této dekádě, tedy do roku 2030. Jednotlivé závazky států přehledně srovnává projekt [Climate Action Tracker](https://climateactiontracker.org/countries/).
 
 {% include figure.html
     name="podil-statu-na-emisich.svg"
