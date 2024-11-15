@@ -85,6 +85,7 @@ subtopics:
   - elektrina-sr
   - elektrina-mix-eu
   - elektrina-na-osobu-eu
+  - elektrina-oze-eu
   - elektrina-na-osobu-svet
   - elektrina-svet
   - 2023-reserse-transformace-mixu
