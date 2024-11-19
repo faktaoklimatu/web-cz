@@ -7,7 +7,7 @@ published:  2024-11-18
 weight:     93.1
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
-caption:    "Podíl obnovitelných zdrojů na výrobě elektřiny v EU se mezi lety 2000–2023 zvýšil přibližně 15×. Nejvyšší podíl těchto zdrojů má Dánsko, nejmenší Česko."
+caption:    "Podíl obnovitelných zdrojů na výrobě elektřiny v EU se mezi lety 2000–2023 zvýšil přibližně 15×. Nejvyšší podíl těchto zdrojů má Dánsko, nejnižší Česko."
 data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/per-capita-electricity-generation-eu.ipynb"], ["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"]]
 ---
 
@@ -24,7 +24,7 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 **Celkový rozvoj OZE**
 
-* **Nejvyšší podíl obnovitelných zdrojů** (větru, slunce, biomasy a vody) na výrobě elektřiny ze států EU **má Dánsko**[^lucembursko] (88 % v roce 2023, nárůst o 72 procentních bodů v letech 2000–2023), **nejmenší Česko** (15 %). Dalšími zeměmi s podílem OZE vyšším než 60 % jsou Rakousko, Portugalsko, Švédsko a Chorvatsko.[^litva]
+* **Nejvyšší podíl obnovitelných zdrojů** (větru, slunce, biomasy a vody) na výrobě elektřiny ze států EU **má Dánsko**[^lucembursko] (88 % v roce 2023, nárůst o 72 procentních bodů v letech 2000–2023), **nejnižší Česko** (15 %). Dalšími zeměmi s podílem OZE vyšším než 60 % jsou Rakousko, Portugalsko, Švédsko a Chorvatsko.[^litva]
 * Kromě Dánska došlo k největšímu nárůstu obnovitelné elektřiny v Německu (+46 p. b.), Velké Británii (+45 p. b.) a Nizozemsku (+44 p. b.).
 * **Česko**, jak je zmíněno výše, má podíl obnovitelné elektřiny nejmenší: **1 % vyrobené elektřiny je z větru, 4 % ze slunce, 7 % z biomasy a 3 % z vody**.
 
@@ -48,6 +48,6 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 [^EU]: Infografika ukazuje všechny státy, které patřily do EU-28, tedy současné členy Unie (označované EU-27) a Velkou Británii, jež  Unii opustila 31. ledna 2020.
 [^ostatni-hydro]: Včetně zanedbatelné výroby z elektráren geotermálních, přílivových a těch, které získávají energii z pohybu mořských vln.
-[^lucembursko]: Strikně vzato by na prvním místě bylo Lucembursko s 92 % v roce 2023. To ale vyrábí pouze 20 % spotřebovávané elektřiny, proto není do dalších statistik v textu zahrnuto.
+[^lucembursko]: Striktně vzato by na prvním místě bylo Lucembursko s 92 % v roce 2023. To ale vyrábí pouze 20 % spotřebovávané elektřiny, proto není do dalších statistik v textu zahrnuto.
 [^litva]: Litva vyrábí z obnovitelných zdrojů 74 % elektřiny, ale podobně jako Lucembursko většinu elektřiny dováží – přibližně 65 %. Do dalších statistik v textu není zahrnuta.
 [^estonsko]: V Estonsku se z biomasy vyrábí 21 % elektřiny, avšak tento podíl je důsledkem uzavření tamních uhelných elektráren, nikoliv nárůstem výroby z biomasy v absolutním měřítku.
