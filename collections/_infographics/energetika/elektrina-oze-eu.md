@@ -3,12 +3,14 @@ layout:     infographic
 title:      "Výroba elektřiny z OZE v EU a Británii"
 slug:       "elektrina-oze-eu"
 redirect_from: "/elektrina-oze-eu"
-published:  2024-11-18
+published:  2024-11-25
 weight:     93.1
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
 caption:    "Podíl obnovitelných zdrojů na výrobě elektřiny v EU se mezi lety 2000–2023 zvýšil přibližně 15×. Nejvyšší podíl těchto zdrojů má Dánsko, nejnižší Česko."
-data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-res.ipynb"], ["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"]]
+data-orig:
+  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-res.ipynb" ]
+  - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/" ]
 ---
 
 ## Jak číst tuto infografiku
@@ -30,7 +32,7 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 **Rozvoj jednotlivých OZE**
 * **Vítr** v roce 2023 vyráběl v EU celkem 19 % elektřiny. Největší podíl má Dánsko (58 % v roce 2023, +46 p. b. mezi lety 2000–2023), dále Irsko (37 %, +36 p. b.) a Portugalsko (29 %, +29 p. b.). Na Maltě a na Slovensku zatím nedošlo k žádné výstavbě větrných elektráren, v Česku (+1 p. b.) nebo Maďarsku (+2 p. b.) byla výstavba zatím jen minimální.
-* Zatímco v roce 2000 až na zanedbatelné výjimky nebyly **solární elektrárny** nikde v EU, v roce 2023 se podílely na 8 % vyrobené elektřiny. Tyto elektrárny mají největší podíl na Maltě (21 %), v Řecku (19 %) a Maďarsku (18 %). Méně než 2 % výroby pokrývají ve Finsku, Chorvatsku, Švédsku nebo Irsku. 
+* Zatímco v roce 2000 až na zanedbatelné výjimky nebyly **solární elektrárny** nikde v EU, v roce 2023 se podílely na 8 % vyrobené elektřiny. Tyto elektrárny mají největší podíl na Maltě (21 %), v Řecku (19 %) a Maďarsku (18 %). Méně než 2 % výroby pokrývají ve Finsku, Chorvatsku, Švédsku nebo Irsku.
 * Z **biomasy** bylo v roce 2023 vyrobeno 6 % elektřiny. Největší podíl má v Dánsku (17 %), Lotyšsku (11 %) a Velké Británii (11 %).[^estonsko] Méně než 2 % elektřiny produkují z biomasy v sedmi zemích (Malta, Rumunsko, Kypr, Řecko, Slovinsko, Francie, Španělsko).
 * Výroba z **vodních elektráren** spíše stagnuje (v roce 2023 pokrývala 11 % v EU), ve více než polovině států EU navíc mírně poklesla. Největší podíl má v Lotyšsku (61 %), Rakousku (58 %) a Chorvatsku (47 %). Elektřinu z vodních elektráren vůbec neprodukují (nebo jen v zanedbatelném množství): Kypr, Malta, Dánsko a Nizozemsko.
 
