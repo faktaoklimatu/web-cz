@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Výroba elektřiny z OZE v EU a Británii"
+title:      "Podíl OZE na výrobě elektřiny v EU a Británii"
 slug:       "elektrina-oze-eu"
 redirect_from: "/elektrina-oze-eu"
 published:  2024-11-25
