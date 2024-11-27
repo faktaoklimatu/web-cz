@@ -6,7 +6,7 @@ slug: atlassfzp
 <div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 {:.lead}
-Tento projekt je spolufinancován Státním fondem životního prostředí ČR na základě rozhodnutí ministra životního prostředí.
+Tento projekt je financován Evropskou unií v rámci Národního plánu obnovy.
 
 ## Hlavní cíl projektu
 
@@ -19,9 +19,13 @@ Hlavním cílem projektu "Atlas dekarbonizace ČR" je poskytnout srozumitelnou a
 
 Termín realizace je 1. 1. 2024 až 30. 11. 2025.
 
-<div class="logos mt-5 mb-4">
+</div>
+
+<div class="col logos mt-5 mb-4">
+    <img loading="eager" class="wide" src="/assets-local/o-nas/logo-next-generation-eu.png" alt="Logo Next Generation EU">
+    <img loading="eager" class="wide" src="/assets-local/o-nas/logo-npo.png" alt="Logo Národního plánu obnovy">
     <img loading="eager" class="wide" src="/assets-local/o-nas/logo-mzp.png" alt="Logo Ministerstva životního prostředi ČR">
     <img loading="eager" class="wide" src="/assets-local/o-nas/logo-sfzp.png" alt="Logo Státního fondu životního prostředí ČR">
 </div>
 
-</div></div>
+</div>
