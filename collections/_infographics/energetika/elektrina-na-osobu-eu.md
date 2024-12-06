@@ -10,7 +10,7 @@ tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2023 a srovnání se spotřebou pro členské státy Evropské unie a Velkou Británii. Hodnoty jsou uváděné v kWh na osobu za rok."
 data-orig:
   - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/per-capita-electricity-generation-eu.ipynb" ]
-  - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/" ]
+  - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/" ]
   - [ "OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx" ]
 ---
 
@@ -33,7 +33,7 @@ data-orig:
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-climate.org/data-catalogue/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla doplněna z národních a dalších zdrojů.
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu (pro roky 2000–2017), novější data byla doplněna z národních a dalších zdrojů.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2024/) a [na celém světě](https://ember-climate.org/insights/research/global-electricity-review-2024/).
 * Data o populaci jsou převzata od Organizace spojených národů.
 
