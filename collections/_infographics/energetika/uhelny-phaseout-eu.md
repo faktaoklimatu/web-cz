@@ -9,7 +9,7 @@ tags-scopes: [ eu ]
 tags-topics: [ energetika, opatreni ]
 caption:    "Stav uhelného phase-outu v zemích EU ke konci ledna 2022. Hodnoty produkce elektřiny z uhlí jsou uváděné v kWh na osobu za rok."
 data-our:   "https://docs.google.com/spreadsheets/d/1uLijA3LFRBn-6V26g2iLkRupLiln3333uhhNW6A4OLg/edit?usp=sharing"
-data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-climate.org/project/data-global-electricity-review/"], ["Europe Beyond Coal (termíny phase-outů)", "https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
+data-orig:  [["Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/"], ["Europe Beyond Coal (termíny phase-outů)", "https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4"], ["OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx"]]
 ---
 
 ## Jak číst tento graf
@@ -53,7 +53,7 @@ U těchto státu nelze mluvit přímo o uhelném phase-outu, protože energetick
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-climate.org/insights/research/global-electricity-review-2020/#supporting-material) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny.
 * Pro státy EU Ember vychází především z dat Eurostatu. Data za roky 2018 a 2019 (pro které zatím nejsou oficiální statistiky Eurostatu zpracované) vychází z vlastní analytické práce této organizace, založené na datech Evropské sítě provozovatelů přenosových soustav elektřiny (ENTSO-E) a na dalších zdrojích. Tyto údaje jsou tedy jejich nejlepší možné odhady skutečného stavu, jak ho později zachytí Eurostat. Z minulých let se ukazuje, že tyto odhady zachycují realitu velmi přesně, s odchylkami v řádu desetin procenta celkové produkce elektřiny.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2023/) a [na celém světě](https://ember-climate.org/insights/research/global-electricity-review-2023/).
 * Přehled o termínech phase-outu je založen na rešerši organizace Europe Beyond Coal nazvané [Coal Exit Tracker](https://beyond-coal.eu/coal-exit-tracker/?type=maps&layer=4). Některé údaje jsme zpřesnili na základě naší vlastní rešerše.
