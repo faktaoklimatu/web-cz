@@ -12,6 +12,13 @@ caption:     "Rešerše klíčových studií věnujících se budoucí transform
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Výroba elektřiny v Česku bez uhlí"
+    date:    Září 2024
+    url:     "https://faktaoklimatu.cz/studie/2024-vyroba-elektriny-v-cesku-bez-uhli"
+    authors:
+      - name: Fakta o klimatu
+        url:  "https://faktaoklimatu.cz/"
+    timeframe: 2030
   - title:   "Cesty k čisté a levné elektřině v roce 2050"
     date:    Červen 2024
     url:     "https://faktaoklimatu.cz/studie/2024-cesty-k-ciste-a-levne-elektrine-2050"
@@ -28,6 +35,13 @@ items:
       - name: Frank Bold
         url:  "https://frankbold.org/"
     timeframe: 2030
+  - title:   "Česká cesta k uhlíkové neutralitě: Výzva, nebo příležitost pro naši ekonomiku?"
+    date:    Únor 2023
+    url:     "https://www.bcg.com/publications/2023/ceska-cesta-k-uhlikove-neutralite"
+    authors:
+      - name: Boston Consulting Group
+        url:  "https://www.bcg.com/"
+    timeframe: 2050
   - title:   "Dekarbonizace teplárenství: Strategický, regulační a technologicko-ekonomický rámec v České republice"
     date:    Duben 2022
     url:     "https://www.budovy21.cz/wp-content/uploads/2022/07/prehledova-studie-dekarbonizace-teplarenstvi-cvut-46-MB.pdf"

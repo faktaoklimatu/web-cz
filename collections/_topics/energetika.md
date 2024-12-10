@@ -178,6 +178,7 @@ subtopics:
   content:
   - srovnani-energetickych-scenaru-cr
   - scenar-transformace-elektroenergetiky
+  - 2024-vyroba-elektriny-v-cesku-bez-uhli
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2020-scenar-bloombergnef
   - 2020-scenar-mckinsey
@@ -199,5 +200,4 @@ subtopics:
   - bezemisni-energetika-cr-1-scenare
   - bezemisni-energetika-cr-2-technologie
   - 2024-cesty-k-ciste-a-levne-elektrine-2050
-  - 2024-vyroba-elektriny-v-cesku-bez-uhli
 ---
