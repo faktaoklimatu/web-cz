@@ -19,7 +19,7 @@ footer:
   how-to-use: "Jak používat naše materiály"
   further-sources: "Další zdroje a odkazy"
   contact: "Kontaktní a fakturační údaje"
-  hiring: "Nabíráme: COO (Brno)"
+  # hiring: "Nabíráme: COO (Brno)"  # Uncomment and edit for any other posted hiring in the future.
 
 newsletter:
   subscribe: "Přihlášení k newsletteru Fakta o klimatu"

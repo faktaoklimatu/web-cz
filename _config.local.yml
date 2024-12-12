@@ -30,7 +30,9 @@ slugs:
   how-to-use: jak-pouzivat
   further-sources: zdroje
   about: o-nas
-  hiring: hledame-COO
+  # Uncomment and edit for any other posted hiring in the future.
+  # See https://github.com/faktaoklimatu/web-cz/pull/1371 for a reference hiring page.
+  # hiring: hledame-COO
 
 collections_dir: collections
 # Set permalinks in local language
