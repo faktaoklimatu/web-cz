@@ -15,7 +15,7 @@ caption:    "Planeta je nyní o přibližně 1,2 °C teplejší než v tzv. pře
 # dataset:    "vyvoj-teplota-svet"
 data-our:   "https://docs.google.com/spreadsheets/d/1525431G2uivOpC5tHTTx3e3xOBup-4SapmYhTAqsxPs/edit?usp=sharing"
 data-orig:
-  - [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps/index_v4.html" ]
+  - [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/" ]
 ---
 
 ## Co vidíme v grafu?
