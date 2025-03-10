@@ -11,14 +11,17 @@ Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamen
 Tento dokument může být průběžně aktualizován, aby reflektoval změny v právních požadavcích nebo v našich postupech. 
 
 ## Správce osobních údajů
+
 Správcem osobních údajů je organizace Otevřená data o klimatu, z. ú., se sídlem Cyrilská 7, 602 00 Brno, IČ: 095 55 587, zapsaná v rejstříku ústavů vedeném Krajským soudem v Brně, spisová značka U 300.
 
 Kontaktní osoba pro ochranu osobních údajů: Martin Ukrop. V případě dotazů pište prosím na gdpr@faktaoklimatu.cz.
 
 ## Účel zpracování osobních údajů
+
 Správce zpracovává osobní údaje za účelem plnění smlouvy, za účelem plnění právní povinnosti, za účelem oprávněného zájmu správce nebo za účelem uvedeným při udělení osobního souhlasu. Osobní údaje správce získává přímo od subjektů údajů, případně od zprostředkovatele darovacího procesu.
 
 ### Zpracování osobních údajů při poskytnutí nebo přislíbení daru
+
 Osobní údaje zpracováváme na základě plnění smlouvy, oprávněného zájmu správce a plnění právních povinností. Při poskytnutí nebo přislíbení daru budete zařazeni do databáze dárců.
 
 V databázi uchováváme:
@@ -49,9 +52,11 @@ V této databázi uchováváme:
  * e-mailovou adresu.
 
 ### Analytika na webových stránkách
-K analýze návštěvnosti na našich webových stránkách a k jejich vylepšování používáme Google Analytics. Tato služba používá soubory cookie k rozpoznání opakovaných návštěv a ke sledování interakce s webem. Data jsou ukládána anonymizovaně a neumožňují přímou identifikaci konkrétních osob. Používání cookies můžete odmítnout prostřednictvím nastavení ve svém webovém prohlížeči. 
+
+K analýze návštěvnosti na našich webových stránkách a k jejich vylepšování používáme Google Analytics. Tato služba používá soubory cookie k rozpoznání opakovaných návštěv a ke sledování interakce s webem. Data jsou ukládána anonymizovaně a neumožňují přímou identifikaci konkrétních osob.
 
 ## Doba zpracování osobních údajů
+
 Osobní údaje uchováváme po dobu nezbytně nutnou pro výše uvedené účely.
 
 * Plnění zákonných povinností – dle příslušných právních předpisů (např. zákon o účetnictví).
@@ -63,6 +68,7 @@ Po uplynutí doby archivace jsou osobní údaje buď automaticky vymazány, nebo
 Pokud si nepřejete být v našich databázích, máte právo na výmaz osobních údajů. Kontaktujte nás e-mailem na gdpr@faktaoklimatu.cz nebo se odhlaste z newsletteru (odkaz v patičce e-mailu).
 
 ## Způsob zpracování osobních údajů
+
 Osobní údaje subjektů zpracováváme v rámci ústavu, případně pomocí třetích stran, jejichž seznam naleznete níže. Typicky se jedná o službu pro zasílání newsletterů či o externí účetní firmu. Tyto subjekty jsou obchodními partnery správce a fungují buď jako samostatní správci (mají stanoveny vlastní účely a prostředky zpracování osobních údajů), nebo jako zpracovatelé (zpracovávají osobní údaje pro správce na základě jeho pokynů). Osobní údaje jsou zpracovávány pouze v rámci EU s výjimkou zpracování osobních údajů prostřednictvím platformy Benevity, která se řídí legislativou Kanady.
 
 ### Zpracovatelé a obchodní partneři
@@ -74,6 +80,7 @@ Osobní údaje subjektů zpracováváme v rámci ústavu, případně pomocí t�
 * [Benevity, Inc.](https://benevity.com/privacy-policy), funguje jako samostatný správce pro finanční a nefinanční dary přes jejich portál.
 
 ## Vaše práva
+
 Podle GDPR máte právo:
 
 * na přístup ke svým osobním údajům,
