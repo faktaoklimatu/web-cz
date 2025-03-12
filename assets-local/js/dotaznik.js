@@ -9,7 +9,7 @@
     const config = {
         surveyUrl: "https://www.survio.com/survey/d/U1W4V6F5A5K9W0L3B",
         delay: 3000, // 3 sekundy po načtení stránky, za které se zobrazí okno
-        dismissedCookieDuration: 3, // 3 dny - cookie se nezobrazí 3 dny po zavření
+        shownCookieDuration: 3, // 3 dny - cookie se nezobrazí 3 dny po zavření/zobrazení 
         completedCookieDuration: 30, // 30 dní - po dokončení dotazníku se již nic nezobrazí po tento počet dnů
         completionTime: 90 * 1000, // 90 sekund v milisekundách - čas po kterém se vyplňování dotazníku považuje za dokončené
         shownCookieName: 'sv_form_shown',
@@ -114,6 +114,7 @@
                 background-color: #f9f9f9;
                 border-top: 1px solid #eee;
                 border-radius: 0 0 5px 5px;
+                font-family: "Source Sans Pro", sans-serif !important;
             }
 
             .survio-second-modal {
@@ -290,7 +291,7 @@
                 setCookie(config.completedCookieName, 'true', config.completedCookieDuration);
             } else {
                 // Jinak nastavíme cookie o zobrazení a ukážeme malé okno
-                setCookie(config.shownCookieName, 'true', config.dismissedCookieDuration);
+                setCookie(config.shownCookieName, 'true', config.shownCookieDuration);
                 document.getElementById('survioSecondModal').style.display = 'block';
             }
         });
@@ -306,7 +307,7 @@
         openNewWindow.addEventListener('click', function() {
             window.open(config.surveyUrl, '_blank');
             secondModal.style.display = 'none';
-            setCookie(config.completedCookieName, 'true', config.dismissedCookieDuration);
+            setCookie(config.completedCookieName, 'true', config.completedCookieDuration);
         });
 
         // Zavření druhého modálního okna
