@@ -2,20 +2,18 @@
  * Survio Pop-up Script
  * Vylepšený skript pro vytvoření pop-up okna s formulářem Survio
  * - Detekce dokončení pomocí časovače
- * - Systém více cookies pro různé stavy
+ * - Systém cookies pro různé stavy
  */
 (function() {
     // Konfigurace
     const config = {
         surveyUrl: "https://www.survio.com/survey/d/U1W4V6F5A5K9W0L3B",
         delay: 3000, // 3 sekundy po načtení stránky, za které se zobrazí okno
-        cookieDuration: 3, // 3 dny - pro sv_form_dismissed - okno se nezobrazí 3 dny po zavření
-        completedCookieDuration: 30, // 30 dní - pro sv_form_completed - po dokončení dotazníku se již nic nezobrazí po tento počet dnů
-        shownCookieDuration: 3, // 3 dny - pro sv_form_shown - při opakované návštěvě se zobrazí jen malé okno, pokud není zavřeno
-        completionTime: 1.5 * 60 * 1000, // 1.5 minuty v milisekundách - čas po kterém se vyplňování dotazníku považuje za dokončené a okno se po zavření už nezobrazí
-        cookieName: 'sv_form_dismissed',
-        completedCookieName: 'sv_form_completed',
-        shownCookieName: 'sv_form_shown'
+        dismissedCookieDuration: 3, // 3 dny - cookie se nezobrazí 3 dny po zavření
+        completedCookieDuration: 30, // 30 dní - po dokončení dotazníku se již nic nezobrazí po tento počet dnů
+        completionTime: 90 * 1000, // 90 sekund v milisekundách - čas po kterém se vyplňování dotazníku považuje za dokončené
+        shownCookieName: 'sv_form_shown',
+        completedCookieName: 'sv_form_completed'
     };
 
     // Funkce pro nastavení cookie
@@ -277,152 +275,71 @@
         document.body.appendChild(secondModal);
     }
 
-    // Nová funkce pro detekci dokončení dotazníku podle času
-    function setupCompletionDetection() {
-        let completionTimer = null;
-        let startTime = Date.now();
-        let formCompleted = false;
+    // Funkce pro nastavení event listenerů pro hlavní dialog
+    function setupMainDialogListeners() {
+        const startTime = Date.now();
+        const closeBtn = document.getElementById('survioCloseBtn');
         
-        // Sledování aktivity v iframe
-        document.getElementById('survioIframe').addEventListener('mouseenter', function() {
-            // Reset časovače při interakci s iframe
-            startTime = Date.now();
-        });
-        
-        // Časovač pro kontrolu dokončení
-        completionTimer = setInterval(function() {
+        closeBtn.addEventListener('click', function() {
             const timeSpent = Date.now() - startTime;
+            document.getElementById('survioDialog').style.display = 'none';
+            document.getElementById('survioBackdrop').style.display = 'none';
             
-            // Pokud uživatel strávil dostatečný čas vyplňováním dotazníku
-            if (timeSpent >= config.completionTime && !formCompleted) {
-                formCompleted = true;
-                
-                // Nastavení cookie pro dokončený dotazník (delší platnost)
+            // Pokud strávil dostatek času v dotazníku, považujeme ho za dokončený
+            if (timeSpent >= config.completionTime) {
                 setCookie(config.completedCookieName, 'true', config.completedCookieDuration);
-                
-                console.log('Dotazník považován za dokončený na základě času');
-                clearInterval(completionTimer);
-            }
-        }, 10000); // Kontrola každých 10 sekund
-        
-        // Vyčištění časovače při zavření
-        document.getElementById('survioCloseBtn').addEventListener('click', function() {
-            if (completionTimer) {
-                clearInterval(completionTimer);
-            }
-            
-            // Pokud byl formulář dokončen na základě času, nezobrazujeme malé okno
-            if (formCompleted || getCookie(config.completedCookieName)) {
-                document.getElementById('survioSecondModal').style.display = 'none';
-                document.getElementById('survioBackdrop').style.display = 'none';
+            } else {
+                // Jinak nastavíme cookie o zobrazení a ukážeme malé okno
+                setCookie(config.shownCookieName, 'true', config.dismissedCookieDuration);
+                document.getElementById('survioSecondModal').style.display = 'block';
             }
         });
-        
-        return {
-            isCompleted: function() {
-                return formCompleted || getCookie(config.completedCookieName);
-            },
-            cleanup: function() {
-                if (completionTimer) {
-                    clearInterval(completionTimer);
-                }
-            }
-        };
     }
 
-    // Přidání event listenerů
-    function setupEventListeners() {
-        const overlay = document.getElementById('survioBackdrop');
-        const closeBtn = document.getElementById('survioCloseBtn');
+    // Funkce pro nastavení event listenerů pro druhý dialog
+    function setupSecondDialogListeners() {
         const secondModal = document.getElementById('survioSecondModal');
         const openNewWindow = document.getElementById('survioOpenNewWindow');
         const closeModal = document.getElementById('survioCloseModal');
-        
-        // Inicializace detekce dokončení
-        const completionDetector = setupCompletionDetection();
-
-        // Zavření pop-up okna a zobrazení druhého modálního okna
-        closeBtn.addEventListener('click', function() {
-            document.getElementById('survioDialog').style.display = 'none';
-            
-            // Nastavení cookie sv_form_shown při zavření velkého okna
-            setCookie(config.shownCookieName, 'true', config.shownCookieDuration);
-            
-            // Pokud formulář nebyl dokončen, zobrazíme malé okno
-            if (!completionDetector.isCompleted()) {
-                overlay.style.display = 'none'; // Skrytí tmavého pozadí
-                secondModal.style.display = 'block';
-            } else {
-                // Formulář byl dokončen, nezobrazujeme malé okno
-                overlay.style.display = 'none';
-            }
-        });
 
         // Otevření dotazníku v novém okně
         openNewWindow.addEventListener('click', function() {
             window.open(config.surveyUrl, '_blank');
             secondModal.style.display = 'none';
-            overlay.style.display = 'none';
-            // Nastavení cookie sv_form_dismissed při interakci s malým oknem
-            setCookie(config.cookieName, 'true', config.cookieDuration);
+            setCookie(config.completedCookieName, 'true', config.dismissedCookieDuration);
         });
 
         // Zavření druhého modálního okna
         closeModal.addEventListener('click', function() {
             secondModal.style.display = 'none';
-            overlay.style.display = 'none';
-            // Nastavení cookie sv_form_dismissed při interakci s malým oknem
-            setCookie(config.cookieName, 'true', config.cookieDuration);
+            setCookie(config.completedCookieName, 'true', config.dismissedCookieDuration);
         });
     }
 
     // Inicializace
     function init() {
         // Kontrola priorit cookie:
-        // 1. sv_form_completed - Pokud dotazník byl dokončen, nic nezobrazujeme
+        // 1. Pokud dotazník byl dokončen, nic nezobrazujeme
         if (getCookie(config.completedCookieName)) {
-            console.log('Dotazník již byl dokončen, nezobrazujeme nic');
             return;
         }
         
-        // 2. sv_form_dismissed - Pokud uživatel aktivně interagoval s malým oknem, nic nezobrazujeme
-        if (getCookie(config.cookieName)) {
-            console.log('Uživatel již zavřel dotazník, nezobrazujeme nic');
-            return;
-        }
-        
-        // 3. sv_form_shown - Pokud velké okno již bylo zobrazeno, ale uživatel s ním neinteragoval
+        // 2. Pokud velké okno již bylo zobrazeno, ale uživatel s ním neinteragoval
         if (getCookie(config.shownCookieName)) {
-            console.log('Velké okno již bylo zobrazeno, zobrazíme jen malé okno');
             injectStyles();
             createElements();
             
             // Zobrazit jen malé okno
             document.getElementById('survioSecondModal').style.display = 'block';
-            
-            // Nastavit event listenery
-            const openNewWindow = document.getElementById('survioOpenNewWindow');
-            const closeModal = document.getElementById('survioCloseModal');
-            
-            openNewWindow.addEventListener('click', function() {
-                window.open(config.surveyUrl, '_blank');
-                document.getElementById('survioSecondModal').style.display = 'none';
-                setCookie(config.cookieName, 'true', config.cookieDuration);
-            });
-            
-            closeModal.addEventListener('click', function() {
-                document.getElementById('survioSecondModal').style.display = 'none';
-                setCookie(config.cookieName, 'true', config.cookieDuration);
-            });
-            
+            setupSecondDialogListeners();
             return;
         }
         
-        // 4. Žádná cookie není nastavena - zobrazíme velké okno
-        console.log('První návštěva, zobrazíme velké okno');
+        // 3. První návštěva - zobrazíme velké okno
         injectStyles();
         createElements();
-        setupEventListeners();
+        setupMainDialogListeners();
+        setupSecondDialogListeners();
 
         // Zobrazení pop-up okna po nastaveném zpoždění
         setTimeout(function() {
