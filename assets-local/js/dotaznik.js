@@ -9,7 +9,7 @@
     const config = {
         surveyUrl: "https://www.survio.com/survey/d/U1W4V6F5A5K9W0L3B",
         delay: 3000, // 3 sekundy po načtení stránky, za které se zobrazí okno
-        shownCookieDuration: 3, // 3 dny - cookie se nezobrazí 3 dny po zavření/zobrazení 
+        shownCookieDuration: 3, // 3 dny - cookie se nezobrazí 3 dny po zavření/zobrazení
         completedCookieDuration: 30, // 30 dní - po dokončení dotazníku se již nic nezobrazí po tento počet dnů
         completionTime: 90 * 1000, // 90 sekund v milisekundách - čas po kterém se vyplňování dotazníku považuje za dokončené
         shownCookieName: 'sv_form_shown',
@@ -280,12 +280,12 @@
     function setupMainDialogListeners() {
         const startTime = Date.now();
         const closeBtn = document.getElementById('survioCloseBtn');
-        
+
         closeBtn.addEventListener('click', function() {
             const timeSpent = Date.now() - startTime;
             document.getElementById('survioDialog').style.display = 'none';
             document.getElementById('survioBackdrop').style.display = 'none';
-            
+
             // Pokud strávil dostatek času v dotazníku, považujeme ho za dokončený
             if (timeSpent >= config.completionTime) {
                 setCookie(config.completedCookieName, 'true', config.completedCookieDuration);
@@ -313,7 +313,7 @@
         // Zavření druhého modálního okna
         closeModal.addEventListener('click', function() {
             secondModal.style.display = 'none';
-            setCookie(config.completedCookieName, 'true', config.dismissedCookieDuration);
+            setCookie(config.completedCookieName, 'true', config.shownCookieDuration);
         });
     }
 
@@ -324,18 +324,18 @@
         if (getCookie(config.completedCookieName)) {
             return;
         }
-        
+
         // 2. Pokud velké okno již bylo zobrazeno, ale uživatel s ním neinteragoval
         if (getCookie(config.shownCookieName)) {
             injectStyles();
             createElements();
-            
+
             // Zobrazit jen malé okno
             document.getElementById('survioSecondModal').style.display = 'block';
             setupSecondDialogListeners();
             return;
         }
-        
+
         // 3. První návštěva - zobrazíme velké okno
         injectStyles();
         createElements();
