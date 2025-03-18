@@ -41,7 +41,7 @@ Na našem území se nachází přibližně 2,9 milionů hektarů lesů. Kdybych
 
 ### V čem spočívají nesrovnalosti v datech o lesích?
 
-V českém prostředí se často vyskytují mírně odlišné údaje o celkové ploše lesů. Například ve [zprávách o stavu lesa](http://eagri.cz/public/web/mze/lesy/lesnictvi/zprava-o-stavu-lesa-a-lesniho/) se jako celková plocha lesů uvádí 2,6 milionu hektarů, zatímco [Národní inventarizace lesů](http://www.uhul.cz/kdo-jsme/aktuality/938-publikace-narodni-inventarizace-lesu-v-ceske-republice-vysledky-druheho-cyklu-2011-2015) uvádí plochu o 300 000 hektarů vyšší, tedy 2,9 milionu. Co způsobuje tento rozdíl?
+V českém prostředí se často vyskytují mírně odlišné údaje o celkové ploše lesů. Například ve [zprávách o stavu lesa](http://eagri.cz/public/web/mze/lesy/lesnictvi/zprava-o-stavu-lesa-a-lesniho/) se jako celková plocha lesů uvádí 2,6 milionu hektarů, zatímco [Národní inventarizace lesů](https://nil.uhul.cz/downloads/2019_kniha_nil2_web.pdf) uvádí plochu o 300 000 hektarů vyšší, tedy 2,9 milionu. Co způsobuje tento rozdíl?
 Data ve zprávách o stavu lesa nebo data Českého statistického úřadu evidují *pozemky určené k plnění funkce lesa* (tzv. *PUPFL*) v katastru nemovitostí – a data o objemu těžeb či druhovém zastoupení získávají od jednotlivých subjektů, které na pozemcích hospodaří. Národní inventarizace lesů naproti tomu vychází ze statisticky zpracovaných terénních průzkumů a jako les klasifikuje i porosty, které v katastru nemovitostí jako PUPFL zařazeny nejsou, splňují však definici lesa podle FAO[^2] (například náletové dřeviny na neobdělávaných pozemcích).
 
 ## Poznámky

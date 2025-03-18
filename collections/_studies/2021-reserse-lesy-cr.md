@@ -46,7 +46,7 @@ items:
       timeframe: "2011–2015"
     - name: "Oblastní plány rozvoje lesů"
       authors: "<abbr title=\"Ústav pro hospodářskou úpravu lesů\">ÚHÚL</abbr>"
-      link: "http://www.uhul.cz/nase-cinnost/oblastni-plany-rozvoje-lesu"
+      link: "https://www.uhul.cz/portfolio/oprl/"
       description: "Oblastní plány rozvoje lesů (OPRL) obsahují souhrnné údaje o stavu lesů, potřebách plnění funkcí lesů jako veřejného zájmu a doporučení o způsobech hospodaření v ekosystémovém pojetí. Jsou vypracovávány pro jednotlivé přírodní lesní oblasti (PLO) a fungují jako metodický nástroj státní lesnické politiky. Vzhledem k blížícímu se konci platnosti jednotlivých OPRL probíhá v současné době aktualizace na OPRL2, přičemž plánované dokončení aktualizace poslední přírodní lesní oblasti je stanoveno na rok 2024. Aktualizované OPRL je složeno z všeobecné části popisující základní charakteristiku zájmového území, analytické části, obsahující výsledky získané v rámci šetření údajů o stavu lesa a syntetické části, která překládá získané údaje do kontextu produkčního, ekologického a sociálního pilíře lesního hospodářství."
       timeframe: "1996–2001 pro OPRL1; 2018–2024 pro OPRL2"
     - name: "Strategie přizpůsobení se změně klimatu v podmínkách ČR"

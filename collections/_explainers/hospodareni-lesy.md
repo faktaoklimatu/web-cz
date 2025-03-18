@@ -133,7 +133,7 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném text
 
 [^100]: Mikita, T., Čermák, P., Trnka, M., Jurečka, F.: [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf), Frameadapt, 2016.
 
-[^101]: V publikaci [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf) (str. 7) jsou podrobně ukázány posuny teplot v období 1961–1990 a 1991–2014 pro tzv. [lesní vegetační stupně](http://www.uhul.cz/nase-cinnost/87-lesnicka-typologie/934-lesni-vegetacni-stupne-podrobneji). Zatímco v minulém století se dubový a buko-dubový vegetační stupeň nacházel pouze na jižní Moravě a v Polabí, kolem roku 2050 bude pokrývat prakticky celé území ČR, kromě nejvyšších oblastí Šumavy, Krkonoš a Jeseníků.
+[^101]: V publikaci [Modelování podmínek pro pěstování smrku, buku a dubu](http://www.frameadapt.cz/coajdfadlf/uploads/2015/07/1-3_Modelovani_podminek_pro_pestovani_SM_BK_DB.pdf) (str. 7) jsou podrobně ukázány posuny teplot v období 1961–1990 a 1991–2014 pro tzv. [lesní vegetační stupně](https://www.uhul.cz/nase-cinnost/lesnicka-typologie/lesni-vegetacni-stupne-podrobneji). Zatímco v minulém století se dubový a buko-dubový vegetační stupeň nacházel pouze na jižní Moravě a v Polabí, kolem roku 2050 bude pokrývat prakticky celé území ČR, kromě nejvyšších oblastí Šumavy, Krkonoš a Jeseníků.
 
 [^102]: O možnostech budoucího pěstování smrků v zástinu se zmiňuje lesník Aleš Erber v [rozhovoru v časopise Ekolist](https://ekolist.cz/cz/publicistika/rozhovory/pestovat-dal-smrky-proc-ne-jen-to-musime-delat-jinak-nez-dosud-rika-lesnik-ales-erber).
 
@@ -179,7 +179,7 @@ Podrobněji se otázce legislativních změn budeme věnovat v samostatném text
 
 [^31]: Dobrovolný, L. v [Nepasečné hospodaření jako součást řešení problému klimatické změny](https://prosilvabohemica.cz/wp-content/uploads/2018/12/Sbornik-Krtiny-14-9-2018-komplet.pdf), sborník příspěvků z odborného semináře.
 
-[^40]: [Národní lesnický program](http://www.uhul.cz/images/NLP/NLP_II_final_CZ.pdf) do roku 2013.
+[^40]: [Národní lesnický program](https://mze.gov.cz/public/portal/mze/lesy/lesnictvi/koncepce-a-strategie/narodni-lesnicky-program-pro-obdobi-do) do roku 2013.
 
 [^41]: "Stávající znění lesního zákona sice výslovně nezakazuje hospodaření výběrným způsobem, udržování nízkých a středních lesů či další formy nepasečného hospodaření, celá logika zákona je však formována především orientací na průmyslové lesnictví založené na stejnověkých monokulturách a plantážích stejnověkých dřevin, mýcených za použití těžké techniky, čímž vznikají rozsáhlejší paseky [...] Novela lesního zákona a souvisejících vyhlášek (vyhlášky č. 83/1996 Sb., 84/1996 Sb., 101/1996 Sb. a 139/2004 Sb.) může mít přímý vliv na zlepšení zdravotního stavu našich lesů tím, že zajistí rozmanitější formy lesa, umožní provádět v nich přírodě bližší hospodaření bez holosečí a podpoří některé historické postupy nebo ponechání malé části lesů pouze divoké přírodě a jejím návštěvníkům." Viz Rotter et al. Lesníkův průvodce neklidnými časy (2021 v tisku), 194.
 
