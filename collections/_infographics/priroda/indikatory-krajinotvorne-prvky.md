@@ -3,7 +3,7 @@ layout:        infographic
 title:         "Indikátor: krajinotvorné prvky"
 slug:          "indikatory-krajinotvorne-prvky"
 redirect_from: "/indikatory-krajinotvorne-prvky"
-published:     2025-03-25
+published:     2025-03-27
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
