@@ -6,7 +6,7 @@ series-id:   "serie-elektrina-2050-cr"
 series-order: "I"
 slug:        "bezemisni-energetika-cr-1-scenare"
 redirect_from: "/bezemisni-energetika-cr"
-published:   2023-02-24 01:00
+published:   2023-02-24
 authors:
   - id: "jan-krcal"
   - id: "kristi-psorn-zakopcanova"
