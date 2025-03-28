@@ -54,7 +54,10 @@ slug: index
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
     <p class="lead mb-0">Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky a články.</p>
 
-    {% assign slugs = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers | sort: "published" | reverse | map: "slug" | slice: 0, 6 %}
+    {%
+      assign slugs = site.infographics | concat: site.studies | concat: site.datasets | concat: site.explainers |
+        sort_fallback: "updated", "published" | reverse | map: "slug" | slice: 0, 6
+    %}
     {% include preview-blocks-expandable.html slugs=slugs rows=1 %}
 
     <p class="lead">Pro pravidelné kvalitní informace o klimatické změně můžete sledovat náš newsletter nebo Twitter.
