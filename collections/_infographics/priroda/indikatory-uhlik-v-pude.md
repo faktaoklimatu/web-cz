@@ -3,7 +3,7 @@ layout:        infographic
 title:         "Indikátor: organický uhlík v půdě"
 slug:          "indikatory-uhlik-v-pude"
 redirect_from: "/indikatory-uhlik-v-pude"
-published:     2025-03-27
+published:     2025-03-28
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
