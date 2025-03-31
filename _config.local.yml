@@ -80,7 +80,7 @@ kramdown:
   smart_quotes: sbquo,lsquo,bdquo,ldquo
   footnote_backlink: "↩︎"
 
-local-scripts:[] 
+local-scripts: []
 # Place language-specific JS files here
 # Example: - "/assets-local/js/dotaznik.js"
 
