@@ -3,7 +3,6 @@ layout:     dataset
 title:      "Emise skleníkových plynů ČR"
 slug:       "emise-cr"
 published:  2020-04-19
-updated:    2025-03-17
 weight:     70
 tags-scopes: [ cr ]
 tags-topics: [ emise ]
