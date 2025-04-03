@@ -102,7 +102,7 @@ Ač většina bariér platí pro většinu budov, některé z nich se týkají s
 
 **Chybí data o stavu budov**
 
-Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď neexistují (např. o velikosti nerezidenčních budov nebo jejich spotřebě nebo o energeticky nejnáročnějších budovách), nebo jsou nepřístupná veřejnosti (data o PENB) nebo jsou roztříštěna napříč úřady a nejsou mezi sebou provázána a dostupná na jednom místě.<sup><sup>[\[2\]](#footnote-1)</sup></sup> *Příklad dobré praxe sběru dat z Finska.*
+Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď neexistují (např. o velikosti nerezidenčních budov nebo jejich spotřebě nebo o energeticky nejnáročnějších budovách), nebo jsou nepřístupná veřejnosti (data o PENB) nebo jsou roztříštěna napříč úřady a nejsou mezi sebou provázána a dostupná na jednom místě. *Příklad dobré praxe sběru dat z Finska.*
 
 Kdo může změnit: MPO, MŽP, ČSÚ
 
