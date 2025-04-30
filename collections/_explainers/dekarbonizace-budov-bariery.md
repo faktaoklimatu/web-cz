@@ -106,27 +106,39 @@ Níže shrnujeme ty hlavní se známých bariér, ambicí však není poskytnout
 
 ### Systémové bariéry
 
-**Chybí data o stavu budov**
+**Chybějící data o stavu budov**
 
-Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď neexistují (např. o velikosti nerezidenčních budov nebo jejich spotřebě nebo o energeticky nejnáročnějších budovách), nebo jsou nepřístupná veřejnosti (data o PENB) nebo jsou roztříštěna napříč úřady a nejsou mezi sebou provázána a dostupná na jednom místě. *Příklad dobré praxe sběru dat z Finska.*
+Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď:
+- neexistují (např. o velikosti nerezidenčních budov a jejich spotřebě nebo o energeticky nejnáročnějších budovách),
+- jsou nepřístupná veřejnosti (data o průkazech energetické náročnosti budovy, PENB) nebo
+- jsou roztříštěna napříč úřady a nejsou mezi sebou provázaná.
+
+Jako příklad dobré praxe může sloužit dánský [registr budov a bydlení](https://bbr.dk/om-bbr) (*Bygnings- og Boligregistret*, BBR), který shromažďuje informace o rezidenčních i nerezidenčních budovách na jednom místě – typ, rok výstavby nebo rekonstrukce, velikost, způsob vytápění, materiály atd. Údaje přitom spravuje jak veřejný sektor, tak vlastníci nemovitostí, kteří jsou povinni nahlašovat jejich změny.
 
 Kdo může změnit: MPO, MŽP, ČSÚ
 
-**Chybí strategie renovace budov**
+**Chybějící strategie renovace budov**
 
-Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Chybějící aktuální strategie brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, která je koncentrovaná do několika provozů, roztříštěný. V Česku je kolem tří milionů budov, z nichž každá je v jiném stavu a patří majiteli s jinými charakteristikami a možnostmi dekarbonizace. Hůře se v něm tak investičně plánuje.
+Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Chybějící aktuální strategie brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, která je koncentrovaná do několika provozů, roztříštěný. V Česku je kolem tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. A to znamená i různé možnosti dekarbonizace. Hůře se v něm tak investičně plánuje.
+
+Česko v gesci ministerstva průmyslu a obchodu čeká příprava vnitrostátního plánu renovace budov[^epbd], který bude směřovat k uhlíkově neutrálnímu fondu budov do roku 2050.
 
 Kdo může změnit: MPO, MŽP
 
-**Design opatření k podpoře dekarbonizace budov**
+**Nedostatečná provázanost opatření**
 
-Je potřeba větší propojenosti různých typů nástrojů (regulace a ekonomické zatížení energeticky náročných budov propojit s dotacemi, zvýhodněnými úvěry, daňovými pobídkami, poradenstvím ad.). Také pomůže častější zapojení obcí a developerů do renovací a výstavby, nejen dotační podpora pro jednotlivé domácnosti.
+S tématem chybějící strategie úzce souvisí i promyšlenější [provázanost opatření](/explainery/nastroje-stat) na podporu dekarbonizace budov. Ta vyžaduje kombinaci regulací, ekonomických pobídek (dotací, úvěrů, daňových úlev) a poradenství, a také větší zapojení obcí a developerů.
+
+Propojení nástrojů se částečně daří v programu [Nová zelená usporám](https://novazelenausporam.cz/), kdy je kromě dotace k dispozici energetické poradenství, možnost zvýhodněného úvěru a zároveň probíhá aktivní spolupráce s realizačními firmami.
+
 
 Kdo může změnit: MPO, MŽP (SFŽP)
 
-**Renovace nájemního bydlení**
+**Nízká motivace k renovacím v nájemním sektoru**
 
-Pronajímatelé nemovitostí nejsou mnohdy motivováni investovat do renovace, jelikož náklady za energie nenesou oni, nýbrž nájemníci. Pokud už se majitel nemovitosti pro renovaci rozhodne, může to vést ke zdražení nájmů pro nájemníky. Vídeň proto například přišla s programem poskytujícím majitelům finanční podporu renovace za předpokladu, že po dobu následujících let nenavýší nájem nad určitou úroveň.
+V nájemním bydlení často chybí motivace pro vlastníky investovat do renovací, protože z úspor na energiích těží především nájemníci, nikoli pronajímatelé. Zároveň může renovace vést ke zvyšování nájemného, což představuje sociální riziko a brání širšímu uplatnění úsporných opatření. V Česku přitom nájemní bydlení tvoří významnou část bytového fondu, ale dotační programy se na něj zaměřují jen okrajově a chybí opatření, která by kombinovala podporu renovace s ochranou dostupnosti bydlení. Inspirací může být Vídeň, kde veřejná podpora renovací podmiňuje zachování dostupného nájmu po určitou dobu.
+
+*Pronajímatelé nemovitostí nejsou mnohdy motivováni investovat do renovace, jelikož náklady za energie nenesou oni, nýbrž nájemníci. Pokud už se majitel nemovitosti pro renovaci rozhodne, může to vést ke zdražení nájmů pro nájemníky. Vídeň proto například přišla s programem poskytujícím majitelům finanční podporu renovace za předpokladu, že po dobu následujících let nenavýší nájem nad určitou úroveň.*
 
 Kdo může změnit: MPO, MMR
 
@@ -199,3 +211,5 @@ Možnost adresovat zmíněné bariéry mají především vláda a příslušná
 [^sance-pro-budovy]: Dle [odhadu](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) Šance pro budovy z roku 2016 je nerezidenčních budov asi 600 000. Jde přitom jak o velké kancelářské objekty, školy nebo nemocnice, tak o malá rekreační zařízení jako chatky. Rezidenčních budov je oproti tomu dle Sčítání lidu, domů a bytů z roku 2021 kolem 2,3 milionů (z toho jsou necelé 2 miliony obydlené).
 
 [^strategie-mpo]: [Poslední strategie](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) pro renovace budov vznikla na MPO v roce 2020. Aktuálně probíhá příprava nové.
+
+[^epbd]: Úkol sestavit plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD). [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
