@@ -127,24 +127,23 @@ Kdo může změnit: MPO, MŽP
 
 **Nedostatečná provázanost opatření**
 
-S tématem chybějící strategie úzce souvisí i promyšlenější [provázanost opatření](/explainery/nastroje-stat) na podporu dekarbonizace budov. Ta vyžaduje kombinaci regulací, ekonomických pobídek (dotací, úvěrů, daňových úlev) a poradenství, a také větší zapojení obcí a developerů.
+S tématem chybějící strategie úzce souvisí i promyšlenější [provázanost opatření](/explainery/nastroje-stat) na podporu dekarbonizace budov. Ta vyžaduje kombinaci regulací, ekonomických pobídek (dotací, úvěrů, daňových úlev) a poradenství, a také větší zapojení obcí a developerů. Jinými slovy, k renovaci budov nedojde pouze zpřísněním norem nebo zpoplatněním emisí, je také potřeba poskytnout dotační a investiční podporu, realizovat informační kampaně či nabízet poradenství, které zvýší všeobecné povědomí o možnostech a výhodách renovace. Navíc musí být na trhu dostatek nízkoemisních technologií, jako jsou tepelná čerpadla nebo solární panely, a musí být dost kvalifikované pracovní síly, která umožní jejich instalaci.
 
 Propojení nástrojů se částečně daří v programu [Nová zelená usporám](https://novazelenausporam.cz/), kdy je kromě dotace k dispozici energetické poradenství, možnost zvýhodněného úvěru a zároveň probíhá aktivní spolupráce s realizačními firmami.
-
 
 Kdo může změnit: MPO, MŽP (SFŽP)
 
 **Nízká motivace k renovacím v nájemním sektoru**
 
-V nájemním bydlení často chybí motivace pro vlastníky investovat do renovací, protože z úspor na energiích těží především nájemníci, nikoli pronajímatelé. Zároveň může renovace vést ke zvyšování nájemného, což představuje sociální riziko a brání širšímu uplatnění úsporných opatření. V Česku přitom nájemní bydlení tvoří významnou část bytového fondu, ale dotační programy se na něj zaměřují jen okrajově a chybí opatření, která by kombinovala podporu renovace s ochranou dostupnosti bydlení. Inspirací může být Vídeň, kde veřejná podpora renovací podmiňuje zachování dostupného nájmu po určitou dobu.
-
-*Pronajímatelé nemovitostí nejsou mnohdy motivováni investovat do renovace, jelikož náklady za energie nenesou oni, nýbrž nájemníci. Pokud už se majitel nemovitosti pro renovaci rozhodne, může to vést ke zdražení nájmů pro nájemníky. Vídeň proto například přišla s programem poskytujícím majitelům finanční podporu renovace za předpokladu, že po dobu následujících let nenavýší nájem nad určitou úroveň.*
+V nájemním bydlení často chybí motivace pro vlastníky investovat do renovací, jelikož náklady na energie nenesou oni, nýbrž nájemnící. Ti pak budou těžit i z potenciálních úspor. Pokud už se vlastník pro renovaci rozhodne, může vést ke zvyšování nájemného, což představuje sociální riziko pro nájemce. Nájemní bydlení v Česku tvoří přibližně [20 %](https://scitani.gov.cz/pravni-duvod-uzivani-bytu) bytového fondu (900 tisíc bytů). Chybí přitom opatření, která by kombinovala podporu renovace se zajištěním dostupnosti bydlení. Inspirací může být Vídeň, kde veřejná podpora renovací podmiňuje zachování dostupného nájmu po určitou dobu.[^viden]
 
 Kdo může změnit: MPO, MMR
 
 **Nedostatek poradenských kapacit**
 
-Chybí lepší poradenství pro obce i domácnosti o tom, jak vypadá efektivní renovace, která přinese největší úsporu a zároveň dostatek lidských kapacit. *Popsat současnou iniciativu MPO tyto kapacity navýšit.*
+Chybí poradenské kapacity pro obce, domácnosti i podniky o tom, jak vypadá efektivní renovace, která přinese největší úsporu – nejvíce energie v budovách je potřeba na vytápění, a proto je často vhodným prvním krokem zateplení.
+
+Vláda ve [Vnitrostátním plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf) kromě navýšení poradenských kapacit[^poradci] počítá i se zřízením pilotních kontaktních míst, tzv. *one-stop-shopů*, které budou nabízet jak technické, tak administrativní a finanční poradenství.[^necp]
 
 Kdo může změnit: MPO
 
@@ -152,13 +151,15 @@ Kdo může změnit: MPO
 
 **Vysoké investiční náklady**
 
-Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy (např. Nová zelená úsporám) pomáhají, ale nepokrývají celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. Vysoké investiční nároky se netýkají pouze domácností, ale i nerezidenčních budov.
+Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), pomáhají, ale nemusí pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. V minulosti navíc byla dotační podpora vyplácena zpětně, což se od roku 2025 změnilo a nyní je poskytována zálohově předem. Vysoké investiční nároky se netýkají pouze domácností, ale i nerezidenčních budov.
 
 Kdo může změnit: MPO, MŽP (SFŽP), banky, municipality
 
 **Administrativní zátěž pro obce, podniky i domácnosti**
 
-Komplikované podmínky pro získání dotací nebo stavebního povolení zpomalují realizaci renovací a pro někoho mohou být odrazující.
+Komplikované a časově náročné procesy – od žádosti o dotaci po stavební povolení – zpomalují realizaci renovací a mohou řadu domácností, firem i obcí od investic odradit.
+
+Kromě zjednodušení procesů může pomoct již zmíněné navýšení poradenských kapacit.
 
 Kdo může změnit: MŽP (SFŽP), MMR
 
@@ -166,17 +167,21 @@ Kdo může změnit: MŽP (SFŽP), MMR
 
 **Nedostatek kvalifikované pracovní síly**
 
-Chybí dostatek kvalifikovaných lidí pro zateplování, instalaci tepelných čerpadel nebo fotovoltaiky apod. Stávající kapacity nestačí pokrýt rostoucí poptávku, což zpomaluje tempo renovací. *Příklad úspěšných rekvalifikací/nových programů ze zahraničí.*
+Chybí dostatek kvalifikovaných lidí pro zateplování, instalaci tepelných čerpadel, fotovoltaických systémů apod.[^necp-kapacity] Stávající kapacity nestačí pokrýt rostoucí poptávku, což zpomaluje tempo renovací, a tedy pokles spotřeby energie a emisí.
+
+Vzniká tak prostor pro tvorbu nových pracovních míst. Stejně tak pro prohlubování expertízy stávajících zaměstnanců a zaměstnankyň v sektoru stavebnictví a energetiky.[^cid]
 
 Kdo může změnit: MŠMT, kraje, vzdělávací instituce
 
 **Dlouhé čekací lhůty na technologie**
 
-V situaci, kdy poptávka po novém nízkoemisním zdroji převyšuje nabídku, čekají domácnosti i podniky i několik měsíců, což může snižovat ochotu investovat.
+S nedostatkem kapacit realizačních firem souvisí i riziko nedostupnosti technologií nebo materiálů. Situace, kdy poptávka po nízkoemisních technologiích výrazně převyšuje nabídku, vede k dlouhým čekacím lhůtám a potenciálně vyšší ceně. Ta pro tepelná čerpadla během energetické krize byla i více než [šest měsíců](https://www.ekonews.cz/dnes-objednate-nejdrive-v-zime-dostanete-dodaci-lhuty-na-tepelna-cerpadla-jsou-minimalne-pul-roku/). Dlouhé čekání může pro domácnosti i podniky snižovat ochotu investovat.
 
 **Zranitelnost dodavatelských řetězců**
 
-Fotovoltaické panely, částečně tepelná čerpadla, jsou vyráběny mimo Evropu, především v Číně. Závislost na dovozu zvyšuje riziko výpadků a růstu cen.
+Technologie a materiály pro dekarbonizaci budov – jako fotovoltaické panely – jsou z velké části vyráběny mimo Evropu, především v Číně. Pandemie koronaviru ukázala, jak křehké jsou globální dodavatelské řetězce: narušení logistiky a výroby vedlo k nedostatku stavebních materiálů a prudkému [růstu cen](https://mpo.gov.cz/assets/cz/stavebnictvi-a-suroviny/informace-z-odvetvi/2023/1/Stavebnictvi-2022.pdf). Podobné riziko představuje rostoucí poptávka po kritických surovinách (např. lithiu nebo mědi), jejichž naleziště jsou jednak koncentrovaná především mimo EU, jednak jsou do velké míry [kontrolované Čínou](https://www.amo.cz/wp-content/uploads/2023/06/FS_cina_06.pdf).
+
+Z toho důvodu se EU v poslední době soustředí na posílení vlastní soběstačnosti – ať už navýšením výroby nízkoemisních technologií na jejím území skrze [akt o průmyslu pro čisté nulové emise](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/net-zero-industry-act_cs) (*Net-Zero Industry Act*, NZIA) nebo prostřednictvím [aktu o kritických surovinách](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/european-critical-raw-materials-act_cs) (*Critical Raw Materials Act*, CRMA), jehož cílem je rozvíjet jak domácí těžbu, zpracování a recyklaci, tak navázat stabilní partnerství se třetími zeměmi.
 
 ### Sociální a psychologické bariéry
 
@@ -213,3 +218,13 @@ Možnost adresovat zmíněné bariéry mají především vláda a příslušná
 [^strategie-mpo]: [Poslední strategie](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) pro renovace budov vznikla na MPO v roce 2020. Aktuálně probíhá příprava nové.
 
 [^epbd]: Úkol sestavit plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD). [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
+
+[^viden]: To je součástí tzv. programu jemné obnovy města (*Sanfte Stadterneuerung*). Více viz Hatz, Gerhard. Can public subsidized urban renewal solve the gentrification issue? Dissecting the Viennese example. Cities 115 (2021). https://doi.org/10.1016/j.cities.2021.103218
+
+[^poradci]: Do seznamu stávajících poradců a poradkyň lze nahlédnout [zde](https://efekt.gov.cz/cz/ekis/strediska-EKIS).
+
+[^necp]: Viz str. 158 [Vnistrostátního plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
+
+[^necp-kapacity]: Nedostatek pracovních kapacit zmiňuje i [Vnistrostátní plán ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
+
+[^cid]: Potřebu navýšit kvalifikace v oblasti nízkoemisních řešení obsahuje jako jednu z priorit i [Dohoda o čistém průmyslu](https://commission.europa.eu/topics/eu-competitiveness/clean-industrial-deal_cs), kterou Evropská komise představila v únoru 2025.
