@@ -5,13 +5,24 @@ slug:        2020-reserse-transformace-energetiky
 redirect_from: "/2020-reserse-transformace-energetiky"
 weight:      300
 published:   2020-11-18
-updated:     2024-07-26
+updated:     2025-05-14
 tags-scopes: [ cr ]
 tags-topics: [ energetika, opatreni ]
 caption:     "Rešerše klíčových studií věnujících se budoucí transformaci české energetiky."
 intro: |
   Studií věnujících se transformaci energetiky je mnoho a přístupů, jak takové studie zpracovávat, je taktéž nemalé množství. Tato rešerše podává přehledné shrnutí klíčových studií v oblasti energetiky pro Českou republiku. Studie jsou seřazeny chronologicky od nejnovější po nejstarší.
 items:
+  - title:   "Energie budoucnosti: Jaké mohou být cesty české dekarbonizace"
+    date:    Květen 2025
+    url:     "https://www.modernienergetika.cz/aktuality/rychlejsi-rozvoj-vetrnych-a-solarnich-elektraren-v-cr-zlevni-elektrinu-i-podpori-energetickou-bezpecnost/"
+    authors:
+      - name: Svaz moderní energetiky
+        url:  "https://www.modernienergetika.cz/"
+      - name: Solární asociace
+        url:  "https://www.solarniasociace.cz/"
+      - name: Fakta o klimatu
+        url:  "https://faktaoklimatu.cz/"
+    timeframe: 2030 a 2035
   - title:   "Výroba elektřiny v Česku bez uhlí"
     date:    Září 2024
     url:     "https://faktaoklimatu.cz/studie/2024-vyroba-elektriny-v-cesku-bez-uhli"
