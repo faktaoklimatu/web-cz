@@ -86,9 +86,11 @@ návrh textu, budem meniť: Populácie opeľovačov je možné podporovať hlavn
 {% include expander-figure.html
    name="priklad"
    class="contrast-figure"
-   label="Příklad dobré praxe: "
+   label="Příklad zvýšení diverzity opylovačů díky vhodnému managementu"
    content="
-bude priklad z Brozky
+Konkrétním příkladem, kdy se díky vhodně nastavenému managementu podařilo zvýšit diverzitu i množství opylovačů, je lokalita Číčov v CHKO Dunajské luhy na jihozápadě Slovenska.
+
+Původně podmáčené louky byly v minulosti přeměněny na pole. Z luk se do současnosti zachovala jen malá část, což mělo negativní dopad na početnost i druhovou pestrost opylovačů. Obnova lokality začala v roce 2017, kdy byla pole oseta směsí různých trav a kvetoucích bylin. Od té doby je lokalita pravidelně sečena, což podporuje růst kvetoucích rostlin, z nichž mohou opylovači získávat potravu. Díky těmto zásahům došlo mezi lety 2020–2023 v Číčově nejen k nárůstu počtu jedinců, ale i počtu druhů opylovačů.
 "
 %}
 
