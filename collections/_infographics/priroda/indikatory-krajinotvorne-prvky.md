@@ -3,16 +3,23 @@ layout:        infographic
 title:         "Indikátor: krajinotvorné prvky"
 slug:          "indikatory-krajinotvorne-prvky"
 redirect_from: "/indikatory-krajinotvorne-prvky"
-published:     2025-03-28
+published:     2025-05-26
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "prípadné bla bla"
+caption:       "Pestrá krajina plná stromořadí, mezí, mokřadů či remízků není jen krásná na pohled – je také odolná vůči dopadům klimatické změny a podporuje biologickou rozmanitost. Kvůli kolektivizaci a intenzivnímu hospodaření však krajinotvorné prvky z krajiny zmizely. Je potřeba je znovu obnovit."
 ---
 
 ## Čeho si všímat?
 
 Kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například stromy či jejich skupinky uprostřed polí, polní cesty a stromořadí podél cest, meze, mokřady na loukách či v lesích, tůně, remízky, travnaté nebo květnaté pásy v polích[^EVP].
+
+{% include figure.html
+    name="krajinotvorni-prvek-strom.jpg"
+    caption="Strom jako útočiště v rozsáhlé zemědělské krajině."
+    alt="Strom jako útočiště v rozsáhlé zemědělské krajině."
+    source-text="Ja Kubislav, Unsplash"
+%}
 
 {% include expander-figure.html
     name="vyznam-krajinotvornych-prvku"
@@ -39,16 +46,22 @@ V posledních letech zvolna přibývá snahy ztracenou pestrost do krajiny vrace
 **Udržovat a pečovat** o existující krajinotvorné prvky, **obnovovat** už neexistující prvky (např. odvodněné mokřady či květnaté pásy) nebo **zakládat prvky úplně nové** (výsadba stromořadí podél cest). 
 Kromě lokálních projektů a zapojení veřejnosti (viz příklad níže) jsou neméně důležité i systémové změny – na úrovni legislativy a souvisejících dotačních programů, které budou k péči o krajinotvorné prvky motivovat zemědělce i finančně. Svou roli hraje také osvěta, hlubší pochopení tématu odolnosti krajiny a ochota měnit dlouho používané způsoby hospodaření. 
 
-{% include expander-figure.html
-    name="priklad-obnova-raseliniste"
-    class="contrast-figure"
-    label="Příklad úspěšné obnovy rašeliniště v Jizerských horách"
-    content="
+{% capture expander_content %}
 Obnova krajinotvorného prvku probíhá na lokální úrovni a často vychází z iniciativy jednotlivců či malých skupin. Vždy je třeba k ní přistupovat promyšleně, s ohledem na historii a podmínky dané lokality.
 
 Příkladem může být vysychající rašeliniště v přírodní rezervaci Nová louka. Díky lidem z místního ochranářského spolku dochází k jeho postupné obnově – odvodňovací kanály byly přehrazeny dřevěnými přepážkami (bez použití těžké techniky), aby voda neodtékala tak rychle.
 Rašeliniště tak postupně zarůstá, opět pomáhá s regulací vody v lokalitě a vytváří prostor pro život nejrůznějších rostlin a živočichů.
-"
+
+<br>
+<img src="/assets-local/figures/indikatory-zdravi-krajiny/priklad-nova-louka.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
+{% endcapture %}
+
+
+{% include expander-figure.html
+   name="priklad-raseliniste-nova-louka"
+   class="contrast-figure"
+   label="Příklad úspěšné obnovy rašeliniště v Jizerských horách"
+   content=expander_content
 %}
 
 
