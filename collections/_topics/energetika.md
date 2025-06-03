@@ -88,6 +88,7 @@ subtopics:
   - elektrina-oze-eu
   - elektrina-na-osobu-svet
   - elektrina-svet
+  - spolehlivost-oze
   - 2023-reserse-transformace-mixu
   - mapa-uhli-cr
 
