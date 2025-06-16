@@ -1,8 +1,8 @@
 ---
 layout:        infographic
 title:         "Indikátor: Přirozené druhové složení"
-slug:          "indikatory-prirozene-druhove-slozeni.md"
-redirect_from: "/indikatory-prirozene-druhove-slozeni.md"
+slug:          "indikatory-prirozene-druhove-slozeni"
+redirect_from: "/indikatory-prirozene-druhove-slozeni"
 published:     2025-05-22
 weight:        105
 tags-scopes:   [ svet ]
