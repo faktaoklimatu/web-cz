@@ -196,6 +196,11 @@
   name-short: "Sekvestrace"
   description: "Pojem _sekvestrace_ se u nás objevuje nejčastěji ve spojení s uhlíkem, resp. CO<sub>2</sub>. Sekvestrace uhlíku znamená dlouhodobé odstraňování CO<sub>2</sub> z atmosféry přirozenými nebo průmyslovými procesy. Příkladem přirozených procesů mohou být fotosyntéza a následné ukládání uhlíku do kmenů stromů, nebo zvětrávání hornin, při kterém se uhlík chemicky váže. Průmyslové metody mohou zachycovat CO<sub>2</sub> v místě spalování (pak jde o _carbon capture and storage_, CCS), nebo ho mohou zachycovat přímo z atmosféry (_direct air capture_, DAC). Snaha zvýšit sekvestraci uhlíku posílením přírodních procesů nebo stavbou průmyslových zařízení hraje důležitou roli v úsilí zvrátit růst koncentrací CO<sub>2</sub> v atmosféře a zastavit tak globální oteplování."
 
+- id: skf
+  name-short: "SKF"
+  name-long: "Sociální klimatický fond"
+  description: "Fond EU na období 2026–2032 s alokací až 65 miliard eur, určený ke kompenzaci negativních sociálních dopadů rozšíření systému EU ETS na budovy a dopravu ([EU ETS2](/slovnik#euets2)). Česku připadne 2,4 % z celkové alokace (přibližně 50 miliard korun). Fond je financován dražbou povolenek – nejprve z 50 milionů povolenek původního EU ETS, poté z povolenek ETS2, přičemž členské státy musí dofinancovat nejméně 25 % z vlastních zdrojů. Členské státy vypracovávají sociální klimatické plány (termín předložení do června 2025), ve kterých popisují, jak tyto peníze využijí. Ty mohou zahrnovat přímou podporu příjmů domácností (až 37,5 % alokace), strukturální investice do renovací budov, podporu OZE a další opatření. Fond cílí na ochranu nejzranitelnějších domácností a mikropodniků před dopady klimatických opatření.
+
 - id: sr15
   name-short: "SR15"
   name-long: "Special Report on Global Warming of 1.5 °C"
