@@ -40,7 +40,7 @@ Základní přístup ke snižování emisí by mohl vycházet ze současných em
 
 * Různé země mají různé emise na obyvatele, přičemž je typické, že rozvinuté země mívají emise na obyvatele mnohem vyšší. Je tedy rozumné požadovat, aby kritériem pro snižování emisí nebyly celkové emise státu, ale emise přepočtené na jednoho obyvatele. Tento přístup se dále komplikuje potřebou zohlednit fakt, že populace některých zemí výrazně roste.
 
-* Rozvinuté země dosáhly vysoké životní úrovně především díky ekonomickému rozvoji založenému na fosilní energetice. Nebylo by proto fér bránit chudým zemím v rozvoji s argumentem jen proto, že pro planetu není další spalování fosilních paliv únosné. A nejde pouze o etické kritérium - vyšší životní úroveň je zárověň cestou k zastavení populačního růstu. Rozvoj chudých zemí s sebou tedy nutně nese přinejmenším krátkodobé zvýšení jejich emisí, a rozvinuté země by proto měly snižovat své emise rychleji.
+* Rozvinuté země dosáhly vysoké životní úrovně především díky ekonomickému rozvoji založenému na fosilní energetice. Nebylo by proto fér bránit chudým zemím v rozvoji s argumentem jen proto, že pro planetu není další spalování fosilních paliv únosné. A nejde pouze o etické kritérium - vyšší životní úroveň je zároveň cestou k zastavení populačního růstu. Rozvoj chudých zemí s sebou tedy nutně nese přinejmenším krátkodobé zvýšení jejich emisí, a rozvinuté země by proto měly snižovat své emise rychleji.
 
 * Některé země mají vysoké historické kumulativní emise, a nesou tedy větší zodpovědnost za probíhající klimatickou změnu. Je proto rozumné požadovat, aby země s vysokými historickými emisemi snižovaly své další emise rychleji.
 
