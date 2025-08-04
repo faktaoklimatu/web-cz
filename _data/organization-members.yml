@@ -53,13 +53,13 @@
     twitter: "https://x.com/MichalBerg"
 
   - id: "katerina-kolouchova"
-    name: "Kateřina Kolouchová"
+    name: "Kateřina Kolouch Grabovská"
     position: "Analytička"
     summary: "Zabývá se klimatickou politikou a legislativou na úrovni ČR a EU. Mimo to se věnuje analýze a vizualizaci dat, s praxí i z komerční sféry. Vystudovala hospodářskou politiku a mezinárodní vztahy."
     img: "katka-kolouchova.jpg"
     email: "katerina.kolouchova@faktaoklimatu.cz"
     phone: "+420 735 951 410"
-    linkedin: "https://www.linkedin.com/in/kate%C5%99ina-kolouchov%C3%A1-b655a02ba/"
+    linkedin: "https://www.linkedin.com/in/kate%C5%99ina-kolouch-grabovsk%C3%A1-b655a02ba/"
     twitter: "https://twitter.com/katkolouchova"
 
   - id: "petr-holik"
@@ -113,13 +113,6 @@
     img: "zbynek-stajer.jpg"
     email: "zbynek.stajer@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/zbynekstajer/"
-
-  - id: "andy-snovakova"
-    name: "Andy Snováková"
-    position: "Analytička"
-    summary: "Věnuje se tématu krajiny a jejímu vztahu ke změně klimatu. Vystudovala evoluční a ekologickou biologii se zaměřením na botaniku a environmentální studia."
-    img: "andy-snovakova.jpg"
-    email: "alexandra.snovakova@faktaoklimatu.cz"
 
   - id: "milan-vitek"
     name: "Milan Vítek"
@@ -194,6 +187,11 @@
   - id: "kristyna-simonova"
     name: "Kristýna Šimonová"
     summary: "Spolupracovala na materiálech týkajících se globálních úmluv v oblasti biodiverzity."
+
+  - id: "andy-snovakova"
+    name: "Andy Snováková"
+    summary: "Podílela se na materiálech týkajících se krajiny a jejímu vztahu ke změně klimatu."
+    linkedin: "https://www.linkedin.com/in/alexandra-snov%C3%A1kov%C3%A1-060975264/"
 
   - id: "karolina-stollova"
     name: "Karolína Štollová"
