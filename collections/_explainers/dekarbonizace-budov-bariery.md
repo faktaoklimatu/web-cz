@@ -15,7 +15,7 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/a-small-town-surrounded-by-trees-and-hills-yLMf_BaOh1o"
-perex:       "Sektor budov se v Česku podílí na emisích skleníkových plynů přibližně 36 %. Jde především o emise, které vznikají spalováním zemního plynu a uhlí pro získávání tepla nebo elektřiny, v menší míře pak ty, které pochází z produkce stavebních materiálů. Budovy tak mají velký dekarbonizační potenciál. Ten ale naráží na bariéry, jako je chybějící strategie renovace budov nebo nedostatek finančních prostředků. Hlavní proměnnou je v tomto případě čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí."
+perex:       "Sektor budov se v Česku podílí na necelé polovině spotřeby energie a přibližně třetině vyprodukovaných emisí skleníkových plynů. Jde především o emise, které vznikají spalováním zemního plynu a uhlí pro získávání tepla nebo elektřiny, v menší míře pak ty, které pochází z produkce stavebních materiálů. Budovy tak mají velký dekarbonizační potenciál. Ten ale naráží na bariéry, jako je chybějící strategie renovace budov nebo nedostatek finančních prostředků. Hlavní proměnnou je v tomto případě čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí."
 ---
 
 {% capture cinnosti %}
@@ -52,21 +52,21 @@ Pod výstavbu, příp. demolici, budov řadíme tyto činnosti:
 
 ## Energie a emise v sektoru budov
 
-Ačkoliv díky renovacím a navyšujícím se standardům pro energetickou náročnost budov potřeba energie i vyprodukované emise potřebné v sektoru klesají,[^eea-data] nadále v poměru k celku zaujímají nezanedbatelné množství s velkým potenciálem pro dekarbonizaci.
+Ačkoliv díky renovacím a navyšujícím se standardům pro energetickou náročnost budov potřeba energie i vyprodukované emise v sektoru klesají,[^eea-data] nadále v poměru k celku zaujímají nezanedbatelné množství s velkým potenciálem pro dekarbonizaci.
 
 ### Kde vzniká a je spotřebovávána energie?
 
-Provoz budov stojí za přibližně **43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Ta zahrnuje především energii potřebnou pro provoz budov, tedy vytápění a ohřev teplé vody skrze dálkové teplo nebo kotlů na zemní plyn, biomasu, uhlí či elektřinu. Z pohledu emisí je zásadní, z jakého zdroje je energie vyráběna. Jako zdroj vytápění a ohřevu vody v domácnostech převažuje biomasa (často v podobě dřeva, týká se především rodinných domů), zemní plyn nebo nakupované teplo (které pochází z uhlí, zemního plynu nebo v menší míře z biomasy). Menší část energie je využívaná pro svícení a provoz elektrospotřebičů, který zajišťuje elektřina, jejíž emisní náročnost odráží současný mix Česka (50 % fosilní paliva, 37 % jádro, 13 % OZE). Energie pro vaření pak pochází ze zemního plynu nebo elektřiny.
+Provoz budov stojí za přibližně **43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Ta zahrnuje především energii potřebnou pro provoz budov, tedy vytápění a ohřev teplé vody skrze dálkové teplo nebo kotlů na zemní plyn, biomasu, uhlí či elektřinu. Z pohledu emisí je zásadní, z jakého zdroje je energie vyráběna. Jako zdroj vytápění a ohřevu vody v domácnostech převažuje biomasa (často v podobě dřeva, týká se především rodinných domů), zemní plyn nebo nakupované teplo (které pochází z uhlí, zemního plynu nebo v menší míře z biomasy). Menší část energie je využívaná pro svícení a provoz elektrospotřebičů, který zajišťuje elektřina, jejíž emisní náročnost odráží současný mix Česka (42 % fosilní paliva, 41 % jádro, 17 % obnovitelné zdroje v roce 2024[^ember-mix]). Energie pro vaření pak pochází ze zemního plynu nebo elektřiny.
 
 Menší část energie (odhadem asi 3 % konečné spotřeby energie Česka, 11 % energie spotřebované v průmyslu[^energie-prumysl]) je pak potřebná v průmyslu pro výrobu stavebních materiálů, při výstavbě a rekonstrukci nebo demolici.
 
 {% capture energie-domacnosti %}
 
 {% include figure.html
-    name="sankey-energie-domacnosti.png"
-    name-mobile="sankey-energie-domacnosti.png"
+    name="cs-dekarbonizace-budov-bariery-energie.svg"
+    name-mobile="cs-dekarbonizace-budov-bariery-energie.svg"
     alt="TODO"
-    source-text="Energo 2021"
+    source-text="Český statistický úřad, Energo 2021"
     source-url="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021"
 %}
 
@@ -89,6 +89,15 @@ Obdobně jako energie i emise se dělí podle toho, v jaké fázi vznikají, a t
 
 Celkem tak budovy v celém životním cyklu zaujímají **přibližně 36 % emisí skleníkových plynů Česka.**
 
+{% include figure.html
+    name="cs-dekarbonizace-budov-bariery-emise.svg"
+    name-mobile="cs-dekarbonizace-budov-bariery-emise.svg"
+    class="narrow-figure"
+    alt="TODO"
+    source-text="Evropská agentura pro životní prostředí, data za rok 2022"
+    source-url="https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data"
+%}
+
 ## Jaké jsou bariéry pro snižování emisí?
 
 Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují tempo renovací a snižují jejich dostupnost. Bariéry lze rozdělit do následujících skupin:
@@ -98,28 +107,33 @@ Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují te
 - nedostatek pracovních kapacit a technologií
 - a také sociální a psychologické faktory ovlivňující ochotu lidí renovovat.
 
-Jednotlivé bariéry zároveň nestojí samy o sobě, ale jsou mezi sebou provázané. Například neexistence společné datové základny činí tvorbu dlouhodobé strategie renovace budov obtížnější.
+Jednotlivé bariéry zároveň nestojí samy o sobě, ale jsou mezi sebou provázané. Například neexistence společné datové základny činí obtížnější tvorbu dlouhodobé strategie renovace budov. Níže shrnujeme ty hlavní se známých bariér.[^vycet]
 
-Ač většina bariér platí pro většinu budov, některé z nich se týkají specificky rezidenčních budov. Jednak o nich existuje více dat, jednak je jich několikanásobně více.[^sance-pro-budovy]
+Ačkoliv většina bariér platí pro většinu budov, některé z nich se týkají specificky rezidenčních budov. Jednak o nich existuje více dat, jednak je jich několikanásobně více.[^sance-pro-budovy]
 
-Níže shrnujeme ty hlavní se známých bariér, ambicí však není poskytnout vyčerpávající výčet.
+{% include figure.html
+    name="cs-dekarbonizace-budov-bariery-schema.svg"
+    name-mobile="cs-dekarbonizace-budov-bariery-schema.svg"
+    alt="TODO"
+    source-text="Fakta o klimatu"
+%}
 
 ### Systémové bariéry
 
-**Chybějící data o stavu budov**
+**Chybí data o stavu budov**
 
 Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď:
 - neexistují (např. o velikosti nerezidenčních budov a jejich spotřebě nebo o energeticky nejnáročnějších budovách),
-- jsou nepřístupná veřejnosti (data o průkazech energetické náročnosti budovy, PENB) nebo
+- jsou nepřístupná veřejnosti (např. data o průkazech energetické náročnosti budovy, PENB) nebo
 - jsou roztříštěna napříč úřady a nejsou mezi sebou provázaná.
 
 Jako příklad dobré praxe může sloužit dánský [registr budov a bydlení](https://bbr.dk/om-bbr) (*Bygnings- og Boligregistret*, BBR), který shromažďuje informace o rezidenčních i nerezidenčních budovách na jednom místě – typ, rok výstavby nebo rekonstrukce, velikost, způsob vytápění, materiály atd. Údaje přitom spravuje jak veřejný sektor, tak vlastníci nemovitostí, kteří jsou povinni nahlašovat jejich změny.
 
-**Chybějící strategie renovace budov**
+**Chybí strategie renovace budov**
 
-Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Chybějící aktuální strategie brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, která je koncentrovaná do několika provozů, roztříštěný. V Česku je kolem tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. A to znamená i různé možnosti dekarbonizace. Hůře se v něm tak investičně plánuje.
+Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Chybějící aktuální strategie brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, která je koncentrovaná do několika provozů, roztříštěný. V Česku je kolem tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. A to znamená i různé možnosti dekarbonizace. Hůře se v něm také investičně plánuje.
 
-Česko v gesci ministerstva průmyslu a obchodu čeká příprava vnitrostátního plánu renovace budov[^epbd], který bude směřovat k uhlíkově neutrálnímu fondu budov do roku 2050.
+Česko v gesci ministerstva průmyslu a obchodu čeká příprava vnitrostátního plánu renovace budov,[^epbd] který bude směřovat k uhlíkově neutrálnímu fondu budov do roku 2050.
 
 **Nedostatečná provázanost opatření**
 
@@ -141,7 +155,7 @@ Vláda ve [Vnitrostátním plánu ČR v oblasti energetiky a klimatu](https://mp
 
 **Vysoké investiční náklady**
 
-Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), pomáhají, ale nemusí pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. V minulosti navíc byla dotační podpora vyplácena zpětně, což se od roku 2025 změnilo a nyní je poskytována zálohově předem. Vysoké investiční nároky se netýkají pouze domácností, ale i nerezidenčních budov.
+Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), pomáhají, ale nemusí pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. V minulosti navíc byla dotační podpora vyplácena zpětně, což se od roku 2025 změnilo a nyní je poskytována zálohově předem. Vysoké investiční nároky se netýkají pouze domácností, ale i vlastníků nerezidenčních budov.
 
 **Administrativní zátěž pro obce, podniky i domácnosti**
 
@@ -179,9 +193,7 @@ Komplexní rekonstrukce vyžaduje dočasné uvolnění přestavovaných prostor.
 
 **Málo příkladů dobré praxe**
 
-Pokud v okolí nedochází k renovacím, chybí přímá zkušenost a inspirace. Lidé se tak obtížněji rozhodují a zároveň vzniká prostor pro mýty, jako například "zateplený dům nedýchá". 
-
-Kdo může změnit: MPO, MŽP, municipality
+Pokud v okolí nedochází k renovacím, chybí přímá zkušenost a inspirace. Lidé se tak obtížněji rozhodují a zároveň vzniká prostor pro mýty, jako například "zateplený dům nedýchá".
 
 **Averze ke změnám**
 
@@ -193,7 +205,12 @@ Nejistota ohledně vývoje cen zemního plynu a tedy výhodnosti přechodu na te
 
 ## Kdo se může podílet na řešení bariér?
 
-Odstranění bariér v dekarbonizaci budov – a tedy včasné snížení emisí v sektoru – vyžaduje **koordinovanou spolupráci státu, samospráv, firem i obyvatelstva**. Významnou roli hlavně pro nastavování prostředí hraje vláda a příslušná ministerstva – především Ministerstvo průmyslu a obchodu a Ministerstvo životního prostředí (strategie, dotační programy, poradenství) nebo Ministerstvo pro místní rozvoj (stavební legislativa a nájemní bydlení). Samosprávy mohou přímo iniciovat renovace veřejných budov, nabízet dostupné bydlení nebo poskytovat energetické poradenství a osvětu. Banky a finanční instituce mohou pomoct překonávat bariéru vysokých investičních nákladů nabídkou zvýhodněných úvěrů. Z hlediska realizace úsporných opatření je pak důležitá role soukromého sektoru, konkrétně stavebních a developerských firem nebo výrobců a dodavatelů technologií, které ovlivňují dostupnost a kvalitu technologií, kapacitu pracovní síly i rychlost realizace. Dílčí roli mohou hrát také státní instituce, jako například Český statistický úřad pro tvorbu společné datové základny.
+Odstranění bariér v dekarbonizaci budov – a tedy včasné snížení emisí v sektoru – vyžaduje **koordinovanou spolupráci státu, samospráv, firem i obyvatelstva**.
+- Významnou roli hlavně pro nastavování prostředí hraje vláda a příslušná ministerstva – především ministerstvo průmyslu a obchodu a ministerstvo životního prostředí (strategie, dotační programy, poradenství) nebo ministerstvo pro místní rozvoj (stavební legislativa a nájemní bydlení).
+- Samosprávy mohou přímo iniciovat renovace veřejných budov, nabízet dostupné bydlení nebo poskytovat energetické poradenství a osvětu.
+- Banky a finanční instituce mohou pomoct překonávat bariéru vysokých investičních nákladů nabídkou zvýhodněných úvěrů.
+- Z hlediska realizace úsporných opatření je pak důležitá role soukromého sektoru, konkrétně stavebních a developerských firem nebo výrobců a dodavatelů technologií, které ovlivňují dostupnost a kvalitu technologií, kapacitu pracovní síly i rychlost realizace.
+- Dílčí roli mohou hrát také státní instituce, jako například Český statistický úřad pro tvorbu společné datové základny.
 
 ## Poznámky a zdroje
 
@@ -203,6 +220,8 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 
 [^eurostat-balances]: Jde o průměr za roky 2018–2022 na základě dat Eurostatu (dataset [nrg_bal_c](https://doi.org/10.2908/NRG_BAL_C)).
 
+[^ember-mix]: Viz [data](https://ember-energy.org/data/electricity-data-explorer) think tanku Ember.
+
 [^energie-prumysl]: Jde o odhad vycházející z dat [Českého statistického úřadu](https://csu.gov.cz/produkty/spotreba-paliv-a-energie-2023) pro léta 2021 až 2023 a Eurostatu (dataset [nrg_bal_c](https://doi.org/10.2908/NRG_BAL_C)). Konkrétně zahrnujeme výstavbu a demolici budov (v tom 1 TWh), nekovové minerály (4 TWh), výrobu železa a oceli (3 TWh) a dřevozpracující průmysl (1 TWh).
 
 [^prime-neprime]: Podle místa vzniku se tyto emise také označují jako přímé a nepřímé. Zatímco přímé (tzv. *scope 1* emise) vznikají při spalování paliv v budovách, nepřímé (tzv. *scope 2* emise) při výrobě energie v teplárnách a elektrárnách. Zatímco přímé provozní emise ze spalování paliv v rezidenčních i nerezidenčních budovách jsou uvedeny v každoroční [inventarizaci emisí skleníkových plynů](/infografiky/emise-cr), nepřímé provozní emise [dopočítává](https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data) Evropská agentura pro životní prostředí (EEA) jako odpovídající podíl emisí z výroby elektřiny a tepla podle konečné spotřeby energie dle energetických statistik (jde o tzv. *end-user emissions*).
@@ -210,6 +229,8 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 [^procesni-spalovaci]: Emise z výroby stavebních materiálů pochází jednak spalováním paliv při zahřívání na vysoké teploty, jednak během chemických reakcí (např. při výrobě cementu).
 
 [^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám byl odhadnut na základě dat [konečné spotřeby energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně 3 Mt CO2eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
+
+[^vycet]: Ambicí textu není není poskytnout vyčerpávající výčet.
 
 [^sance-pro-budovy]: Dle [odhadu](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) Šance pro budovy z roku 2016 je nerezidenčních budov asi 600 000. Jde přitom jak o velké kancelářské objekty, školy nebo nemocnice, tak o malá rekreační zařízení jako chatky. Rezidenčních budov je oproti tomu dle [Sčítání lidu, domů a bytů z roku 2021](https://scitani.gov.cz/druh-domu) kolem 2,3 milionů (z toho jsou necelé 2 miliony obydlené).
 
