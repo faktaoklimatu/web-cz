@@ -230,7 +230,7 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 
 [^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám byl odhadnut na základě dat [konečné spotřeby energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně 3 Mt CO2eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
 
-[^vycet]: Ambicí textu není není poskytnout vyčerpávající výčet.
+[^vycet]: Ambicí textu není není poskytnout vyčerpávající výčet. Bariérám dekarbonizace budov se ve větším detailu věnuje například i studie [Zero Carbon Roadmap – Cesta ke klimaticky neutrálním budovám v České republice](https://www.czgbc.org/cs/zero-carbon-roadmap) České rady pro šetrné budovy.
 
 [^sance-pro-budovy]: Dle [odhadu](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) Šance pro budovy z roku 2016 je nerezidenčních budov asi 600 000. Jde přitom jak o velké kancelářské objekty, školy nebo nemocnice, tak o malá rekreační zařízení jako chatky. Rezidenčních budov je oproti tomu dle [Sčítání lidu, domů a bytů z roku 2021](https://scitani.gov.cz/druh-domu) kolem 2,3 milionů (z toho jsou necelé 2 miliony obydlené).
 
