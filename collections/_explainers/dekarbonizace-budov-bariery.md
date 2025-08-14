@@ -38,7 +38,7 @@ Pod výstavbu, příp. demolici, budov řadíme tyto činnosti:
 - výrobu a dopravu stavebních materiálů (cementu, cihel, oceli, dřeva, izolace atd.),
 - samotnou výstavbu (případně rekonstrukci nebo demolici), včetně využívání stavebních strojů,
 - nakládání se stavebním odpadem,
-- výrobu nízkoemisních technologií (tepelných čerpadel, fotovoltaických panelů, baterií atd.).
+- výrobu energetických technologií pro budovy (tepelných čerpadel, fotovoltaických panelů, baterií atd.).
 
 {% endcapture %}
 
@@ -60,24 +60,12 @@ Provoz budov stojí za přibližně **43 % konečné spotřeby energie v Česku*
 
 Menší část energie (odhadem asi 3 % konečné spotřeby energie Česka, 11 % energie spotřebované v průmyslu[^energie-prumysl]) je pak potřebná v průmyslu pro výrobu stavebních materiálů, při výstavbě a rekonstrukci nebo demolici.
 
-{% capture energie-domacnosti %}
-
 {% include figure.html
     name="cs-dekarbonizace-budov-bariery-energie.svg"
     name-mobile="cs-dekarbonizace-budov-bariery-energie.svg"
     alt="TODO"
     source-text="Český statistický úřad, Energo 2021"
     source-url="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021"
-%}
-
-{% endcapture %}
-
-{% include expander-figure.html
-    name="energie-domacnosti"
-    expanded=false
-    class="contrast-figure "
-    label="Příklad: Spotřeba energie v domácnostech"
-    content=energie-domacnosti
 %}
 
 ### Kde vnikají emise?
@@ -94,7 +82,7 @@ Celkem tak budovy v celém životním cyklu zaujímají **přibližně 36 % emis
     name-mobile="cs-dekarbonizace-budov-bariery-emise.svg"
     class="narrow-figure"
     alt="TODO"
-    source-text="Evropská agentura pro životní prostředí, data za rok 2022"
+    source-text="Evropská agentura pro životní prostředí, data za rok 2022 a vlastní zpracování (podíl emisí v průmyslu)"
     source-url="https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data"
 %}
 
@@ -104,8 +92,8 @@ Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují te
 
 - systémová omezení,
 - složitost financování a administrativy,
-- nedostatek pracovních kapacit a technologií
-- a také sociální a psychologické faktory ovlivňující ochotu lidí renovovat.
+- nedostatek pracovních kapacit a technologií,
+- sociální a psychologické faktory ovlivňující ochotu lidí renovovat.
 
 Jednotlivé bariéry zároveň nestojí samy o sobě, ale jsou mezi sebou provázané. Například neexistence společné datové základny činí obtížnější tvorbu dlouhodobé strategie renovace budov. Níže shrnujeme ty hlavní se známých bariér.[^vycet]
 
@@ -122,14 +110,16 @@ Ačkoliv většina bariér platí pro většinu budov, některé z nich se týka
 
 **Chybí data o stavu budov**
 
-Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit renovace efektivně. Data buď:
+Bez bližší znalosti fondu budov zahrnující stáří, energetickou náročnost, památkovou ochranu a další parametry je obtížné plánovat a cílit opatření na podporu renovací efektivně. Data buď:
 - neexistují (např. o velikosti nerezidenčních budov a jejich spotřebě nebo o energeticky nejnáročnějších budovách),
 - jsou nepřístupná veřejnosti (např. data o průkazech energetické náročnosti budovy, PENB) nebo
 - jsou roztříštěna napříč úřady a nejsou mezi sebou provázaná.
 
+Analýza stavu budov v Česku aktuálně probíhá v gesci ministerstva průmyslu a obchodu.
+
 Jako příklad dobré praxe může sloužit dánský [registr budov a bydlení](https://bbr.dk/om-bbr) (*Bygnings- og Boligregistret*, BBR), který shromažďuje informace o rezidenčních i nerezidenčních budovách na jednom místě – typ, rok výstavby nebo rekonstrukce, velikost, způsob vytápění, materiály atd. Údaje přitom spravuje jak veřejný sektor, tak vlastníci nemovitostí, kteří jsou povinni nahlašovat jejich změny.
 
-**Chybí strategie renovace budov**
+**Chybí aktuální strategie renovace budov**
 
 Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Chybějící aktuální strategie brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, která je koncentrovaná do několika provozů, roztříštěný. V Česku je kolem tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. A to znamená i různé možnosti dekarbonizace. Hůře se v něm také investičně plánuje.
 
@@ -149,13 +139,13 @@ V nájemním bydlení často chybí motivace pro vlastníky investovat do renova
 
 Chybí poradenské kapacity pro obce, domácnosti i podniky o tom, jak vypadá efektivní renovace, která přinese největší úsporu – nejvíce energie v budovách je potřeba na vytápění, a proto je často vhodným prvním krokem zateplení.
 
-Vláda ve [Vnitrostátním plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf) kromě navýšení poradenských kapacit[^poradci] počítá i se zřízením pilotních kontaktních míst, tzv. *one-stop-shopů*, které budou nabízet jak technické, tak administrativní a finanční poradenství.[^necp]
+Vláda ve [Vnitrostátním plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf) kromě navýšení poradenských kapacit[^poradci] počítá i se zřízením pilotních kontaktních míst, tzv. *one-stop-shopů*, které budou nabízet jak technické, tak administrativní a finanční poradenství.[^necp] Ministerstvo životního prostředí pak v červenci 2025 vyhlásilo [výzvu](https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/mzp-pripravuje-reformu-energetickeho) na podporu energetického poradenství, ve které podpoří školení pro energetické poradce i manažery, osvětové programy pro veřejnost nebo tvorbu energeticko-klimatických plánů.
 
 ### Finanční a administrativní bariéry
 
 **Vysoké investiční náklady**
 
-Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), pomáhají, ale nemusí pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. V minulosti navíc byla dotační podpora vyplácena zpětně, což se od roku 2025 změnilo a nyní je poskytována zálohově předem. Vysoké investiční nároky se netýkají pouze domácností, ale i vlastníků nerezidenčních budov.
+Počáteční náklady na komplexní renovaci jsou vysoké, část domácností na ně se svými příjmy nevystačí. Stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), pomáhají, ale nemusí pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají vlastní úspory nebo si mohou dovolit úvěr. V minulosti navíc byla dotační podpora vyplácena zpětně, což se od roku 2025 změnilo a nyní je poskytována zálohově předem. V příštích letech by měly být k dispozici další prostředky v rámci [Sociálního klimatického fondu](https://mzp.gov.cz/cz/agenda/prehled-dotaci/socialni-klimaticky-fond#:~:text=Prost%C5%99edky%20Soci%C3%A1ln%C3%ADho%20klimatick%C3%A9ho%20fondu%20jsou,a%20sn%C3%AD%C5%BEen%C3%AD%20energetick%C3%A9%20n%C3%A1ro%C4%8Dnosti%20budov.). Vysoké investiční nároky se netýkají pouze domácností, ale i vlastníků nerezidenčních budov.
 
 **Administrativní zátěž pro obce, podniky i domácnosti**
 
@@ -201,7 +191,7 @@ Do rozhodování domácností se kromě ekonomických faktorů promítají také
 
 **Nejistota budoucích cen**
 
-Nejistota ohledně vývoje cen zemního plynu a tedy výhodnosti přechodu na tepelné čerpadlo nebo transformace teplárenství může snižovat ochotu investovat.
+Nejistota ohledně vývoje cen zemního plynu a elektřiny (případně ceny emisní povolenky pro spalování paliv v budovách – [EU ETS 2](/explainery/emisni-povolenky-ets-2)), a tedy výhodnosti přechodu na tepelné čerpadlo nebo transformace teplárenství, může snižovat ochotu investovat. Obdobně do toho 
 
 ## Kdo se může podílet na řešení bariér?
 
@@ -228,7 +218,7 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 
 [^procesni-spalovaci]: Emise z výroby stavebních materiálů pochází jednak spalováním paliv při zahřívání na vysoké teploty, jednak během chemických reakcí (např. při výrobě cementu).
 
-[^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám byl odhadnut na základě dat [konečné spotřeby energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně 3 Mt CO2eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
+[^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám jsme pro účely tohoto textu zjednodušene odhadli na základě dat [konečné spotřeby energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně 3 Mt CO2eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
 
 [^vycet]: Ambicí textu není není poskytnout vyčerpávající výčet. Bariérám dekarbonizace budov se ve větším detailu věnuje například i studie [Zero Carbon Roadmap – Cesta ke klimaticky neutrálním budovám v České republice](https://www.czgbc.org/cs/zero-carbon-roadmap) České rady pro šetrné budovy.
 
@@ -236,7 +226,7 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 
 [^strategie-mpo]: [Poslední strategie](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) pro renovace budov vznikla na MPO v roce 2020. Aktuálně probíhá příprava nové.
 
-[^epbd]: Úkol sestavit plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD). [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
+[^epbd]: Úkol sestavit plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD) z roku 2024. [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
 
 [^viden]: To je součástí tzv. programu jemné obnovy města (*Sanfte Stadterneuerung*). Více viz Hatz, Gerhard. *Can public subsidized urban renewal solve the gentrification issue? Dissecting the Viennese example.* Cities 115 (2021). https://doi.org/10.1016/j.cities.2021.103218
 
