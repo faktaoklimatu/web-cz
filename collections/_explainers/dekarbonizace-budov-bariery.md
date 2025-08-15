@@ -159,13 +159,13 @@ Chybí dostatek kvalifikovaných pracovníků na zateplování, instalaci tepeln
 
 **Dlouhé čekací lhůty na technologie**
 
-S nedostatkem kapacit realizačních firem souvisí i riziko nedostupnosti technologií nebo materiálů. Situace, kdy poptávka po nízkoemisních technologiích výrazně převyšuje nabídku, vede k dlouhým čekacím lhůtám a potenciálně vyšší ceně. Ta pro tepelná čerpadla během energetické krize byla i více než [šest měsíců](https://www.ekonews.cz/dnes-objednate-nejdrive-v-zime-dostanete-dodaci-lhuty-na-tepelna-cerpadla-jsou-minimalne-pul-roku/). Dlouhé čekání může pro domácnosti i podniky snižovat ochotu investovat.
+S nedostatkem kapacit realizačních firem souvisí i riziko nedostupnosti technologií nebo materiálů. Situace, kdy poptávka po nízkoemisních technologiích výrazně převyšuje nabídku, vede k dlouhým čekacím lhůtám a potenciálně vyšší ceně. Například na tepelná čerpadla bylo během energetické krize nutné čekat i více než [šest měsíců](https://www.ekonews.cz/dnes-objednate-nejdrive-v-zime-dostanete-dodaci-lhuty-na-tepelna-cerpadla-jsou-minimalne-pul-roku/). Dlouhé čekání může pro domácnosti i podniky snižovat ochotu investovat.
 
 **Zranitelnost dodavatelských řetězců**
 
-Technologie a materiály pro dekarbonizaci budov – jako fotovoltaické panely – jsou z velké části vyráběny mimo Evropu, především v Číně. Pandemie koronaviru ukázala, jak křehké jsou globální dodavatelské řetězce: narušení logistiky a výroby vedlo k nedostatku stavebních materiálů a prudkému [růstu cen](https://mpo.gov.cz/assets/cz/stavebnictvi-a-suroviny/informace-z-odvetvi/2023/1/Stavebnictvi-2022.pdf). Podobné riziko představuje rostoucí poptávka po kritických surovinách (např. lithiu nebo mědi), jejichž naleziště jsou jednak koncentrovaná především mimo EU, jednak jsou do velké míry [kontrolované Čínou](https://www.amo.cz/wp-content/uploads/2023/06/FS_cina_06.pdf).
+Technologie a materiály pro dekarbonizaci budov (jako například fotovoltaické panely) se z velké části vyrábí mimo Evropu, především v Číně. Pandemie koronaviru ukázala, jak křehké tyto globální dodavatelské řetězce jsou: narušení logistiky a výroby vedlo k nedostatku stavebních materiálů a prudkému [růstu cen](https://mpo.gov.cz/assets/cz/stavebnictvi-a-suroviny/informace-z-odvetvi/2023/1/Stavebnictvi-2022.pdf). Podobné riziko představuje rostoucí poptávka po kritických surovinách (např. lithiu nebo mědi), jejichž naleziště jsou jednak převážně mimo EU, jednak jsou do velké míry [kontrolována Čínou](https://www.amo.cz/wp-content/uploads/2023/06/FS_cina_06.pdf).
 
-Z toho důvodu se EU v poslední době soustředí na posílení vlastní soběstačnosti – ať už navýšením výroby nízkoemisních technologií na jejím území skrze [akt o průmyslu pro čisté nulové emise](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/net-zero-industry-act_cs) (*Net-Zero Industry Act*, NZIA) nebo prostřednictvím [aktu o kritických surovinách](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/european-critical-raw-materials-act_cs) (*Critical Raw Materials Act*, CRMA), jehož cílem je rozvíjet jak domácí těžbu, zpracování a recyklaci, tak navázat stabilní partnerství se třetími zeměmi.
+Z toho důvodu se EU v poslední době soustředí na posílení vlastní soběstačnosti – ať už navýšením výroby nízkoemisních technologií na vlastním území skrze [akt o průmyslu pro čisté nulové emise](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/net-zero-industry-act_cs) (*Net-Zero Industry Act*, NZIA) nebo prostřednictvím [aktu o kritických surovinách](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/european-critical-raw-materials-act_cs) (*Critical Raw Materials Act*, CRMA), jehož cílem je rozvíjet domácí těžbu, zpracování a recyklaci a zároveň navázat stabilní partnerství se třetími zeměmi.
 
 ### Sociální a psychologické bariéry
 
@@ -175,52 +175,52 @@ Značná část domácností je stavem své nemovitosti spokojena.[^stem] Bez tl
 
 **Prostorová a časová náročnost renovace**
 
-Komplexní rekonstrukce vyžaduje dočasné uvolnění přestavovaných prostor. Ne každá domácnost má možnost přestěhovat se jinam nebo žít v provizorních podmínkách během stavebních prací.
+Komplexní rekonstrukce vyžaduje dočasné uvolnění přestavovaných prostor. Ne každá domácnost má možnost přestěhovat se jinam nebo žít  během stavebních prací v provizorních podmínkách.
 
 **Málo příkladů dobré praxe**
 
-Pokud v okolí nedochází k renovacím, chybí přímá zkušenost a inspirace. Lidé se tak obtížněji rozhodují a zároveň vzniká prostor pro mýty, jako například "zateplený dům nedýchá".
+Pokud v okolí nedochází k renovacím, chybí přímá zkušenost a inspirace. Lidé se tak obtížněji rozhodují a zároveň vzniká prostor pro mýty (například "zateplený dům nedýchá").
 
-**Averze ke změnám**
+**Společenské vzorce a averze ke změnám**
 
-Do rozhodování domácností se kromě ekonomických faktorů promítají také společenské vzorce a zvyky (např. zvyk financovat renovace z úspor). Své investice tak plánují jiným způsobem než firmy nebo stát. Roli hraje i vztah ke změnám, a to jak v případě domácností, tak stavebních firem, kdy může být obtížné nahradit dosavadní stavební postupy novými.
+Do rozhodování domácností se kromě ekonomických faktorů promítají také společenské vzorce a zvyky – například zvyk financovat renovace z úspor (tedy když nejsou úspory, renovace se odkládá). Své investice plánují domácnosti jiným způsobem než firmy nebo stát. Roli hraje i vztah ke změnám, a to jak v případě domácností, tak stavebních firem – může jít o neochotu něco měnit, ale i obtížnost nahrazení dosavadních stavebních postupů novými.
 
 **Nejistota budoucích cen**
 
-Nejistota ohledně vývoje cen zemního plynu a elektřiny (případně ceny emisní povolenky pro spalování paliv v budovách – [EU ETS 2](/explainery/emisni-povolenky-ets-2)), a tedy výhodnosti přechodu na tepelné čerpadlo nebo transformace teplárenství, může snižovat ochotu investovat. Obdobně do toho 
+Ochotu investovat může snižovat i nejistota ohledně dalšího vývoje cen zemního plynu a elektřiny (případně ceny emisní povolenky pro spalování paliv v budovách – [EU ETS 2](/explainery/emisni-povolenky-ets-2)). Výhodnost přechodu na tepelné čerpadlo nebo potřeba transformace teplárenství je v důsledku nejistoty vývoje cen méně zřejmá. Obdobně do toho 
 
 ## Kdo se může na řešení bariér podílet
 
 Odstranění bariér v dekarbonizaci budov – a tedy včasné snížení emisí v sektoru – vyžaduje **koordinovanou spolupráci státu, samospráv, firem i obyvatelstva**.
-- Významnou roli hlavně pro nastavování prostředí hraje vláda a příslušná ministerstva – především ministerstvo průmyslu a obchodu a ministerstvo životního prostředí (strategie, dotační programy, poradenství) nebo ministerstvo pro místní rozvoj (stavební legislativa a nájemní bydlení).
+- Významnou roli (hlavně v nastavování prostředí) má vláda a příslušná ministerstva – především ministerstvo průmyslu a obchodu a ministerstvo životního prostředí (strategie, dotační programy, poradenství) nebo ministerstvo pro místní rozvoj (stavební legislativa a nájemní bydlení).
 - Samosprávy mohou přímo iniciovat renovace veřejných budov, nabízet dostupné bydlení nebo poskytovat energetické poradenství a osvětu.
-- Banky a finanční instituce mohou pomoct překonávat bariéru vysokých investičních nákladů nabídkou zvýhodněných úvěrů.
-- Z hlediska realizace úsporných opatření je pak důležitá role soukromého sektoru, konkrétně stavebních a developerských firem nebo výrobců a dodavatelů technologií, které ovlivňují dostupnost a kvalitu technologií, kapacitu pracovní síly i rychlost realizace.
-- Dílčí roli mohou hrát také státní instituce, jako například Český statistický úřad pro tvorbu společné datové základny.
+- Banky a finanční instituce mohou pomáhat s překonáváním bariéry v podobě vysokých investičních nákladů – nabídkou zvýhodněných úvěrů.
+- Z hlediska realizace úsporných opatření je důležitá role soukromého sektoru, konkrétně stavebních a developerských firem nebo výrobců a dodavatelů technologií. Ti všichni mají vliv na dostupnost a kvalitu technologií, kapacitu pracovní síly i rychlost realizace.
+- Svou roli mohou hrát také státní instituce, například Český statistický úřad může přispět k vytvoření společné datové základny.
 
 ## Poznámky a zdroje
 
-Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z praxe, děkujeme za ně.
+Děkujeme všem expertům a expertkám, jejichž cenné vhledy z praxe přispěly k finální podobě tohoto textu. 
 
-[^eea-data]: Emise z provozu budov klesly v Česku mezi lety 1990 a 2022 o 37 %. Jde o součet přímých i nepřímých emisí z provoz rezidenčních i komerčních budov dle [reportu](https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data) Evropské agentury pro životní prostředí.
+[^eea-data]: Emise z provozu budov klesly v Česku mezi lety 1990 a 2022 o 37 %. Jde o součet přímých i nepřímých emisí z provozu rezidenčních i komerčních budov dle [reportu](https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data) Evropské agentury pro životní prostředí.
 
 [^eurostat-balances]: Jde o průměr za roky 2018–2022 na základě dat Eurostatu (dataset [nrg_bal_c](https://doi.org/10.2908/NRG_BAL_C)).
 
 [^ember-mix]: Viz [data](https://ember-energy.org/data/electricity-data-explorer) think tanku Ember.
 
-[^energie-prumysl]: Jde o odhad vycházející z dat [Českého statistického úřadu](https://csu.gov.cz/produkty/spotreba-paliv-a-energie-2023) pro léta 2021 až 2023 a Eurostatu (dataset [nrg_bal_c](https://doi.org/10.2908/NRG_BAL_C)). Konkrétně zahrnujeme výstavbu a demolici budov (v tom 1 TWh), nekovové minerály (4 TWh), výrobu železa a oceli (3 TWh) a dřevozpracující průmysl (1 TWh).
+[^energie-prumysl]: Jde o odhad vycházející z dat [Českého statistického úřadu](https://csu.gov.cz/produkty/spotreba-paliv-a-energie-2023) pro roky 2021 až 2023 a Eurostatu (dataset [nrg_bal_c](https://doi.org/10.2908/NRG_BAL_C)). Konkrétně je v odhadu zahrnuta výstavba a demolice budov (1 TWh), dále nekovové minerály (4 TWh), výroba železa a oceli (3 TWh) a dřevozpracující průmysl (1 TWh).
 
 [^prime-neprime]: Podle místa vzniku se tyto emise také označují jako přímé a nepřímé. Zatímco přímé (tzv. *scope 1* emise) vznikají při spalování paliv v budovách, nepřímé (tzv. *scope 2* emise) při výrobě energie v teplárnách a elektrárnách. Zatímco přímé provozní emise ze spalování paliv v rezidenčních i nerezidenčních budovách jsou uvedeny v každoroční [inventarizaci emisí skleníkových plynů](/infografiky/emise-cr), nepřímé provozní emise [dopočítává](https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data) Evropská agentura pro životní prostředí (EEA) jako odpovídající podíl emisí z výroby elektřiny a tepla podle konečné spotřeby energie dle energetických statistik (jde o tzv. *end-user emissions*).
 
-[^procesni-spalovaci]: Emise z výroby stavebních materiálů pochází jednak spalováním paliv při zahřívání na vysoké teploty, jednak během chemických reakcí (např. při výrobě cementu).
+[^procesni-spalovaci]: Emise z výroby stavebních materiálů pocházejí jednak ze spalování paliv při zahřívání na vysoké teploty, jednak z chemických reakcí (např. při výrobě cementu).
 
-[^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám jsme pro účely tohoto textu zjednodušene odhadli na základě dat [konečné spotřeby energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně 3 Mt CO2eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
+[^zabudovane-emise]: Jde o podíl [průmyslových emisí](/infografiky/emise-cr-prumysl), které významně souvisejí s výrobou stavebních materiálů a výstavbou. Jejich podíl připadající budovám je pro účely tohoto textu zjednodušeně odhadnut na základě dat ke [konečné spotřebě energie](https://doi.org/10.2908/NRG_BAL_C). Konkrétně jsou to: 3 Mt CO<sub>2</sub>eq z výroby železa a oceli, 2 Mt z nekovových minerálů, 1 Mt ze zpracovatelského průmyslu a konstrukce, 2 Mt z F-plynů. Dohromady jde o 8 Mt, což představuje 7 % emisí Česka.
 
-[^vycet]: Ambicí textu není není poskytnout vyčerpávající výčet. Bariérám dekarbonizace budov se ve větším detailu věnuje například i studie [Zero Carbon Roadmap – Cesta ke klimaticky neutrálním budovám v České republice](https://www.czgbc.org/cs/zero-carbon-roadmap) České rady pro šetrné budovy.
+[^vycet]: Ambicí tohoto textu není poskytnout vyčerpávající výčet. Ve větším detailu se bariérám dekarbonizace budov věnuje například studie [Zero Carbon Roadmap – Cesta ke klimaticky neutrálním budovám v České republice](https://www.czgbc.org/cs/zero-carbon-roadmap) České rady pro šetrné budovy.
 
-[^sance-pro-budovy]: Dle [odhadu](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) Šance pro budovy z roku 2016 je nerezidenčních budov asi 600 000. Jde přitom jak o velké kancelářské objekty, školy nebo nemocnice, tak o malá rekreační zařízení jako chatky. Rezidenčních budov je oproti tomu dle [Sčítání lidu, domů a bytů z roku 2021](https://scitani.gov.cz/druh-domu) kolem 2,3 milionů (z toho jsou necelé 2 miliony obydlené).
+[^sance-pro-budovy]: Dle [odhadu](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) Šance pro budovy z roku 2016 je nerezidenčních budov asi 600 000. Jde přitom jak o velké kancelářské objekty, školy nebo nemocnice, tak o malé objekty, jako jsou rekreační chatky. Rezidenčních budov je oproti tomu dle [Sčítání lidu, domů a bytů z roku 2021](https://scitani.gov.cz/druh-domu) kolem 2,3 milionu (z toho jsou necelé 2 miliony obydlené).
 
-[^strategie-mpo]: [Poslední strategie](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) pro renovace budov vznikla na MPO v roce 2020. Aktuálně probíhá příprava nové.
+[^strategie-mpo]: [Poslední strategie](https://mpo.gov.cz/assets/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/2020/6/_20_III_dlouhodoba_strategie_renovaci_20200520_schvalene.pdf) pro renovace budov vznikla na MPO v roce 2020. Aktuálně probíhá příprava strategie nové.
 
 [^epbd]: Úkol sestavit plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD) z roku 2024. [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
 
@@ -228,10 +228,10 @@ Tento text se opírá i o konzultace s experty a expertkami a jejich vhledy z pr
 
 [^poradci]: Do seznamu stávajících poradců a poradkyň lze nahlédnout [zde](https://efekt.gov.cz/cz/ekis/strediska-EKIS).
 
-[^necp]: Viz str. 158 [Vnistrostátního plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
+[^necp]: Viz str. 158 [Vnitrostátního plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
 
-[^necp-kapacity]: Nedostatek pracovních kapacit zmiňuje i [Vnistrostátní plán ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
+[^necp-kapacity]: Nedostatek pracovních kapacit zmiňuje i [Vnitrostátní plán ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf).
 
-[^cid]: Potřebu navýšit kvalifikace v oblasti nízkoemisních řešení obsahuje jako jednu z priorit i [Dohoda o čistém průmyslu](https://commission.europa.eu/topics/eu-competitiveness/clean-industrial-deal_cs), kterou Evropská komise představila v únoru 2025.
+[^cid]: Potřebu zvýšit míru kvalifikace v oblasti nízkoemisních řešení obsahuje jako jednu z priorit i [Dohoda o čistém průmyslu](https://commission.europa.eu/topics/eu-competitiveness/clean-industrial-deal_cs), kterou Evropská komise představila v únoru roku 2025.
 
-[^stem]: Viz [průzkum STEM](https://www.stem.cz/wp-content/uploads/2024/10/AAA_STEM_vytapime_a_zateplujeme_Vfin.pdf) (2024), slide 28. Při dotazování na investice do jednotlivých úsporných opatření (nová okna, zateplení stěn apod.) více než povolina respondentů odpovídá, že není potřeba. V kontextu závazků a emisních cílů to tak ukazuje potřebu posílit v povědomí lidí provázanost emisní/energetické náročnosti a realizací úsporných opatření. Stejně tak provázanost s ekonomickými úsporami nebo vyšším komfortem.
+[^stem]: Viz [průzkum STEM](https://www.stem.cz/wp-content/uploads/2024/10/AAA_STEM_vytapime_a_zateplujeme_Vfin.pdf) (2024), slide 28. Při dotazování na investice do jednotlivých úsporných opatření (nová okna, zateplení stěn apod.) odpovídá více než polovina respondentů, že nejsou potřeba. V kontextu závazků a emisních cílů to tak ukazuje potřebu posílit v povědomí lidí provázanost emisní/energetické náročnosti a realizací úsporných opatření. A poukazovat na provázanost s ekonomickými úsporami nebo vyšším komfortem.
