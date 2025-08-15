@@ -52,11 +52,11 @@ S výstavbou, případně demolicí, souvisí:
 
 ## Energie a emise v sektoru budov
 
-Díky renovacím a postupnému zvyšování standardů pro energetickou náročnost budov potřeba energie i vyprodukované emise v sektoru klesají.[^eea-data] Přesto mají budovy v Česku i nadále velký podíl na celkové spotřebě energií a celkových emisích země, a je zde tedy i velký potenciál pro další dekarbonizaci.
+Spotřeba energie i množství emisí v tomto sektoru postupně klesá díky renovacím a zvyšování standardů pro energetickou náročnost budov.[^eea-data] Přesto má sektor budovy v Česku na celkové spotřebě energií a emisích i nadále značný podíl, a je zde tedy i velký potenciál pro další dekarbonizaci.
 
-### Kde se spotřebovává energie a jak se tato energie vyrábí?
+### Kolik energie budovy spotřebují a z čeho je vyrobena?
 
-**S provozem budov je spojeno přibližně 43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Jde zejména o energii potřebnou na vytápění a ohřev teplé vody, ať už v teplárenství (dálkové teplo) nebo v kotlích na zemní plyn, biomasu, uhlí či elektřinu. Z hlediska emisí je zásadní, z jakého zdroje se energie vyrábí. U rodinných domů převažuje jako zdroj vytápění a ohřevu vody zemní plyn a biomasa (často v podobě dřeva), v bytových domech je to často zemní plyn či nakupované teplo (pocházející z uhlí, zemního plynu a částečně z biomasy). Menší část spotřeby tvoří elektřina, využívaná na svícení, provoz elektrospotřebičů a vaření (částečně se při vaření využívá i zemní plyn). Emisní náročnost elektřiny vychází ze současného energetického mixu v Česku (v roce 2024 bylo 42 % elektřiny vyrobeno z fosilních paliv, 41 % z jádra a 17 % z obnovitelných zdrojů[^ember-mix]).
+**S provozem budov je spojeno přibližně 43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Jde zejména o energii potřebnou k vytápění a ohřevu teplé vody, ať už v teplárenství (dálkové teplo) nebo v kotlích na zemní plyn, biomasu, uhlí či elektřinu. Z hlediska emisí skleníkových plynů je zásadní, z jakého zdroje se energie vyrábí. U rodinných domů převažuje jako zdroj vytápění a ohřevu vody zemní plyn a biomasa (často jde o dřevo), v bytových domech je to většinou zemní plyn či nakupované teplo (pocházející z uhlí, zemního plynu a částečně z biomasy). Menší část spotřeby tvoří elektřina, využívaná také na svícení, provoz elektrospotřebičů a vaření (částečně se při vaření využívá i zemní plyn). Emisní náročnost elektřiny vychází ze současného energetického mixu v Česku (v roce 2024 bylo 42 % elektřiny vyrobeno z fosilních paliv, 41 % z jádra a 17 % z obnovitelných zdrojů[^ember-mix]).
 
 Menší část energie se spotřebuje v průmyslu při výrobě stavebních materiálů, výstavbě a rekonstrukci nebo demolici. Odhadem jde o cca 3 % konečné spotřeby energie Česka a 11 % energie spotřebované v průmyslu.[^energie-prumysl]
 
@@ -68,12 +68,12 @@ Menší část energie se spotřebuje v průmyslu při výrobě stavebních mate
     source-url="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021"
 %}
 
-### Kde vznikají emise?
+### Jaké emise jsou s budovami spojeny?
 
-Obdobně jako energie se i emise dělí podle toho, v jaké fázi vznikají, a to na:
+Také emise lze rozdělit podle toho, v jaké fázi životního cyklu budovy vznikají, a to na:
 
-- **Provozní** – vznikají hlavně spalováním paliv při výrobě elektřiny a tepla. Jednak v lokálních kotlích nebo kamnech přímo v budovách (9 % emisí Česka v roce 2022), jednak při výrobě elektřiny nebo tepla v elektrárnách a teplárnách, které je následně dodáváno do domácností a kanceláří (asi 20 % emisí Česka).[^prime-neprime]
-- **Zabudované** – pocházejí z výroby stavebních materiálů[^procesni-spalovaci] – cementu, vápna a (asi 7 % emisí Česka).[^zabudovane-emise] Kromě toho jde také o část emisí z výroby oceli nebo z přepravy a likvidace materiálů.
+- **Provozní** – produkované hlavně spalováním paliv při výrobě elektřiny a tepla. Vznikají jednak v lokálních kotlích nebo kamnech přímo v budovách (9 % emisí Česka v roce 2022), jednak v elektrárnách a teplárnách při výrobě elektřiny nebo tepla, které je následně dodáváno do domácností a kanceláří (asi 20 % emisí Česka).[^prime-neprime]
+- **Zabudované** – pocházejí z výroby stavebních materiálů[^procesni-spalovaci] – cementu, vápna a (asi 7 % emisí Česka).[^zabudovane-emise] Kromě toho jde též o část emisí z výroby oceli nebo z přepravy a likvidace materiálů.
 
 Celkem je tak s budovami v celém jejich životním cyklu spojeno **přibližně 36 % emisí skleníkových plynů Česka.**
 
@@ -95,7 +95,7 @@ Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují te
 - nedostatek pracovních kapacit a technologií
 - sociální a psychologické faktory ovlivňující ochotu lidí renovovat
 
-Jednotlivé bariéry jsou mezi sebou provázané – například neexistuje společná datová základna o stavu budov, což komplikuje vytváření dlouhodobé strategie renovace budov. Hlavní bariéry pro dekarbonizaci shrnuje text níže.[^vycet] Ačkoliv řada z nich se týká většiny budov, některé z nich se jsou specifické pro rezidenční budovy. O těchto budovách existuje více dat, zároveň je jich několikanásobně více než budov nerezidenčních.[^sance-pro-budovy]
+Hlavní překážky shrnuje text níže.[^vycet] Tyto bariéry jsou mezi sebou často provázány – například neexistuje společná datová základna o stavu budov, což komplikuje vytváření dlouhodobé strategie renovace budov. Ačkoliv řada bariér se týká většiny budov, některé z nich jsou specifické pro rezidenční budovy. O těchto budovách existuje více dat, zároveň je jich několikanásobně více než budov nerezidenčních.[^sance-pro-budovy]
 
 {% include figure.html
     name="cs-dekarbonizace-budov-bariery-schema.svg"
@@ -109,9 +109,9 @@ Jednotlivé bariéry jsou mezi sebou provázané – například neexistuje spol
 **Chybějí data o stavu budov**
 
 Bez znalosti stáří, energetické náročnosti, stupně památkové ochrany a dalších parametrů fondu budov je obtížné plánovat a efektivně cílit opatření na podporu renovací. Data buď:
-- neexistují (např. o velikosti nerezidenčních budov a jejich spotřebě či o energeticky nejnáročnějších budovách)
+- vůbec neexistují (např. o velikosti nerezidenčních budov a jejich spotřebě či o budovách, které jsou energeticky nejnáročnější) nebo
 - jsou nepřístupná veřejnosti (např. data o průkazech energetické náročnosti budovy – PENB) nebo
-- jsou roztříštěna napříč úřady a nejsou mezi sebou provázána.
+- jsou roztříštěna napříč úřady a nejsou mezi sebou provázána
 
 Analýza stavu budov v Česku aktuálně probíhá (v gesci ministerstva průmyslu a obchodu).
 
@@ -119,23 +119,23 @@ Jako příklad dobré praxe může sloužit dánský [registr budov a bydlení](
 
 **Chybí aktuální strategie renovace budov**
 
-Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Fakt, že chybí aktuální strategie renovace, brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, koncentrovanou do několika provozů, velmi roztříštěný – v Česku je okolo tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. V takovém prostředí je složitější dělat změny a hůře se v něm také investičně plánuje.
+Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a firmy, tak i pro stavební sektor. Fakt, že v Česku chybí aktuální strategie renovace, brzdí rozvoj nabídky i poptávky.[^strategie-mpo] Sektor budov je navíc například v porovnání s elektroenergetikou, koncentrovanou do několika provozů, velmi roztříštěný – v Česku je okolo tří milionů budov, z nichž každá je v jiném stavu a patří jinému majiteli. V takovém prostředí je mnohem složitější dělat změny a hůře se v něm také investičně plánuje.
 
-Česko čeká příprava vnitrostátního plánu renovace budov (řeší ministerstvo průmyslu a obchodu),[^epbd] který bude směřovat k uhlíkově neutrálnímu fondu budov do roku 2050.
+Česko nyní čeká příprava vnitrostátního plánu renovace budov (řeší ministerstvo průmyslu a obchodu),[^epbd] který bude směřovat k uhlíkově neutrálnímu fondu budov do roku 2050.
 
-**Opatření nejsou dostatečně provázaná**
+**Opatření nejsou mezi sebou dostatečně provázána**
 
 S tématem chybějící strategie úzce souvisí i potřeba promyšlenější [provázanosti opatření](/explainery/nastroje-stat) na podporu dekarbonizace budov. Tedy jak dobře zkombinovat regulace, ekonomické pobídky (dotace, úvěry, daňové úlevy) a poradenství, a jak více zapojit obce a developery. Jinými slovy: k renovaci nestačí zpřísnit normy nebo zpoplatnit emise, vyžaduje to i dotační a investiční podporu, a kromě toho také informační kampaně a nabídku poradenství, které zvýší všeobecné povědomí o možnostech a výhodách renovace. Navíc musí být na trhu dostatek nízkoemisních technologií, jako jsou tepelná čerpadla nebo solární panely, a musí být dost kvalifikované pracovní síly, která umožní jejich instalaci. 
 
 Propojení nástrojů se částečně daří v programu [Nová zelená úsporám](https://novazelenausporam.cz/), kdy je kromě dotace k dispozici i energetické poradenství, možnost zvýhodněného úvěru a zároveň probíhá aktivní spolupráce s realizačními firmami.
 
-**V nájemním bydlení je nízká motivace renovovat**
+**Pronajímatelé nemovitostí mají často nízkou motivaci renovovat**
 
-Často chybí motivace pronajímatele investovat do renovací – náklady na energie totiž nenesou oni, ale nájemci. Ti pak budou těžit i z potenciálních úspor. Pokud už se vlastník pro renovaci rozhodne, může to vést ke zvyšování nájemného, což představuje sociální riziko (pro nájemce bude bydlení příliš drahé). Nájemní bydlení dnes v Česku tvoří přibližně [20 %](https://scitani.gov.cz/pravni-duvod-uzivani-bytu) bytového fondu (900 tisíc bytů). Chybějí přitom opatření, která by kombinovala podporu renovace se zajištěním dostupnosti bydlení. Inspirací může být Vídeň, kde je veřejná podpora renovací podmíněna zachováním dostupného nájmu po určitou dobu.[^viden]
+Mnohdy chybí motivace pronajímatele investovat do větších renovací – náklady na energie totiž nenesou oni, ale nájemci. Ti pak budou těžit i z potenciálních úspor. Pokud se vlastník pro renovaci přece jen rozhodne, může to vést ke zvyšování nájemného a s tím spojeným sociálním rizikům (například pro nájemce začne být bydlení už příliš drahé). Nájemní bydlení dnes v Česku tvoří přibližně [20 %](https://scitani.gov.cz/pravni-duvod-uzivani-bytu) bytového fondu (900 tisíc bytů). Chybějí přitom opatření, která by kombinovala podporu renovace se zajištěním dostupného bydlení. Inspirací může být Vídeň, kde je veřejná podpora renovací budov podmíněna zachováním dostupného nájmu po určitou dobu.[^viden]
 
 **Není dostatek poradenských kapacit**
 
-Chybějí poradenské kapacity pro obce, domácnosti i podniky o tom, jak vypadá efektivní renovace, která přinese největší úspory. Například výhodnost zateplení jako prvního kroku – nejvíce energie v budovách se spotřebuje na vytápění.
+Chybějí poradenské kapacity pro obce, domácnosti i podniky, které by ukázaly, jak vypadá efektivní renovace, která přinese největší úspory. Že často je prvním výhodným krokem zateplení – nejvíce energie v budovách se totiž spotřebuje na vytápění.
 
 Vláda ve [Vnitrostátním plánu ČR v oblasti energetiky a klimatu](https://mpo.gov.cz/assets/cz/energetika/strategicke-a-koncepcni-dokumenty/2024/12/Vnitrostatni-plan-Ceske-republiky-v-oblasti-energetiky-a-klimatu-_prosinec-2024_.pdf) kromě navýšení poradenských kapacit[^poradci] počítá i se zřízením pilotních kontaktních míst, tzv. *one-stop-shopů*, které budou nabízet jak technické, tak administrativní a finanční poradenství.[^necp] Ministerstvo životního prostředí v červenci 2025 vyhlásilo [výzvu](https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/mzp-pripravuje-reformu-energetickeho) na podporu energetického poradenství, ve které podpoří školení pro energetické poradce i manažery, osvětové programy pro veřejnost nebo tvorbu energeticko-klimatických plánů.
 
