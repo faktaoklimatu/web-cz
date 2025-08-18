@@ -7,6 +7,8 @@ authors:
   - id: "katerina-kolouchova"
   - ids: ["jirka-lnenicka"]
     minor-role: "editace"
+  - name: "Michal Čejka, Tomáš Trubačík"
+    minor-role: "konzultace"
 weight:      90
 tags-scopes: [ cr ]
 tags-topics: [ opatreni ]
@@ -30,7 +32,7 @@ S provozem budov souvisí:
 - ohřev vody
 - vaření
 - svícení
-- provoz elektrospotřebičů v domácnosti (např. pračka, lednička nebo počítač)
+- provoz elektrospotřebičů (např. pračka, lednička nebo počítač)
 - provoz výtahů a eskalátorů
 
 S výstavbou, případně demolicí, souvisí:
@@ -73,7 +75,7 @@ Menší část energie se spotřebuje v průmyslu při výrobě stavebních mate
 Také emise lze rozdělit podle toho, v jaké fázi životního cyklu budovy vznikají, a to na:
 
 - **Provozní** – produkované hlavně spalováním paliv při výrobě elektřiny a tepla. Vznikají jednak v lokálních kotlích nebo kamnech přímo v budovách (9 % emisí Česka v roce 2022), jednak v elektrárnách a teplárnách při výrobě elektřiny nebo tepla, které je následně dodáváno do domácností a kanceláří (asi 20 % emisí Česka).[^prime-neprime]
-- **Zabudované** – pocházejí z výroby stavebních materiálů[^procesni-spalovaci] – cementu, vápna a (asi 7 % emisí Česka).[^zabudovane-emise] Kromě toho jde též o část emisí z výroby oceli nebo z přepravy a likvidace materiálů.
+- **Zabudované** – pocházejí z výroby stavebních materiálů[^procesni-spalovaci] – cementu, vápna nebo oceli (asi 7 % emisí Česka).[^zabudovane-emise] Kromě toho jde též o část emisí z výroby oceli nebo z přepravy a likvidace materiálů.
 
 Celkem je tak s budovami v celém jejich životním cyklu spojeno **přibližně 36 % emisí skleníkových plynů Česka.**
 
@@ -88,7 +90,7 @@ Celkem je tak s budovami v celém jejich životním cyklu spojeno **přibližně
 
 ## Bariéry pro renovaci budov a snižování emisí
 
-Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují tempo renovací a snižují jejich dostupnost pro obyvatele:
+Dekarbonizace sektoru budov naráží na řadu překážek, které zpomalují tempo renovací a snižují jejich dostupnost:
 
 - systémová omezení
 - složitost financování a administrativy
@@ -127,7 +129,7 @@ Renovace vyžadují stabilní a předvídatelné podmínky jak pro domácnosti a
 
 S tématem chybějící strategie úzce souvisí i potřeba promyšlenější [provázanosti opatření](/explainery/nastroje-stat) na podporu dekarbonizace budov. Tedy jak dobře zkombinovat regulace, ekonomické pobídky (dotace, úvěry, daňové úlevy) a poradenství, a jak více zapojit obce a developery. Jinými slovy: k renovaci nestačí zpřísnit normy nebo zpoplatnit emise, vyžaduje to i dotační a investiční podporu, a kromě toho také informační kampaně a nabídku poradenství, které zvýší všeobecné povědomí o možnostech a výhodách renovace. Navíc musí být na trhu dostatek nízkoemisních technologií, jako jsou tepelná čerpadla nebo solární panely, a musí být dost kvalifikované pracovní síly, která umožní jejich instalaci. 
 
-Propojení nástrojů se částečně daří v programu [Nová zelená úsporám](https://novazelenausporam.cz/), kdy je kromě dotace k dispozici i energetické poradenství, možnost zvýhodněného úvěru a zároveň probíhá aktivní spolupráce s realizačními firmami.
+S kombinací nástrojů již pracuje program [Nová zelená úsporám](https://novazelenausporam.cz/), kdy je kromě dotace k dispozici i energetické poradenství, možnost zvýhodněného úvěru a zároveň probíhá aktivní spolupráce s realizačními firmami.
 
 **Pronajímatelé nemovitostí mají často nízkou motivaci renovovat**
 
@@ -187,7 +189,7 @@ Do rozhodování domácností se kromě ekonomických faktorů promítají také
 
 **Nejistota budoucích cen**
 
-Ochotu investovat může snižovat i nejistota ohledně dalšího vývoje cen zemního plynu a elektřiny (případně ceny emisní povolenky pro spalování paliv v budovách – [EU ETS 2](/explainery/emisni-povolenky-ets-2)). Výhodnost přechodu na tepelné čerpadlo nebo potřeba transformace teplárenství je v důsledku nejistoty vývoje cen méně zřejmá. Obdobně do toho 
+Ochotu investovat může snižovat i nejistota ohledně dalšího vývoje cen zemního plynu a elektřiny (případně ceny emisní povolenky pro spalování paliv v budovách – [EU ETS 2](/explainery/emisni-povolenky-ets-2)). Výhodnost přechodu na tepelné čerpadlo nebo potřeba transformace teplárenství je v důsledku nejistoty vývoje cen méně zřejmá.
 
 ## Kdo se může na řešení bariér podílet
 
