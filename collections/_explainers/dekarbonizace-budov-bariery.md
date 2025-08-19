@@ -22,8 +22,6 @@ perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližn
 
 {% capture cinnosti %}
 
-Při dekarbonizaci sektoru budov jde o to snížit emise spojené s provozem, výstavbou a demolicí budov.
-
 S provozem budov souvisí:
 
 - vytápění
@@ -42,6 +40,8 @@ S výstavbou, případně demolicí, souvisí:
 - nakládání se stavebním odpadem
 - výroba energetických technologií pro budovy (např. tepelných čerpadel, fotovoltaických panelů, baterií)
 
+Dekarbonizace sektoru budov znamená eliminovat emise související s provozem budov i emise spojené s jejich výstavbou a demolicí.
+
 {% endcapture %}
 
 {% include expander-figure.html
@@ -54,11 +54,13 @@ S výstavbou, případně demolicí, souvisí:
 
 ## Energie a emise v sektoru budov
 
-V tomto sektoru vznikají emise skleníkových plynů hlavně při spalování zemního plynu a uhlí (k získávání tepla a elektřiny), v menší míře pocházejí z výroby stavebních materiálů. Díky renovacím a zvyšování standardů pro energetickou náročnost budov celková spotřeba energie i množství emisí v tomto sektoru postupně klesá,[^eea-data] přesto je jeho podíl i nadále značný, a je zde tedy i velký potenciál pro další dekarbonizaci.
+V tomto sektoru **emise skleníkových plynů vznikají hlavně při spalování zemního plynu a uhlí** (k získávání tepla a elektřiny), v menší míře pocházejí z výroby stavebních materiálů. Díky renovacím a zvyšování standardů pro energetickou náročnost budov celková spotřeba energie i množství emisí v tomto sektoru postupně klesá,[^eea-data] přesto je jeho podíl na spotřebě i emisích i nadále značný, a je zde tedy i velký potenciál pro další dekarbonizaci.
 
 ### Kolik energie budovy spotřebují a z čeho je vyrobena?
 
-**S provozem budov je spojeno přibližně 43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Jde zejména o energii potřebnou k vytápění a ohřevu teplé vody, ať už v teplárenství (dálkové teplo) nebo v kotlích na zemní plyn, biomasu, uhlí či elektřinu. Z hlediska emisí skleníkových plynů je zásadní, z jakého zdroje se energie vyrábí. U rodinných domů převažuje jako zdroj vytápění a ohřevu vody zemní plyn a biomasa (často jde o dřevo), v bytových domech je to většinou zemní plyn či nakupované teplo (pocházející z uhlí, zemního plynu a částečně z biomasy). Menší část spotřeby tvoří elektřina, využívaná také na svícení, provoz elektrospotřebičů a vaření (částečně se při vaření využívá i zemní plyn). Emisní náročnost elektřiny vychází ze současného energetického mixu v Česku (v roce 2024 bylo 42 % elektřiny vyrobeno z fosilních paliv, 41 % z jádra a 17 % z obnovitelných zdrojů[^ember-mix]).
+**S provozem budov je spojeno přibližně 43 % konečné spotřeby energie v Česku**.[^eurostat-balances] Jde zejména o energii potřebnou k vytápění a ohřevu teplé vody v teplárnách (dálkové teplo) nebo v lokálních kotlích na zemní plyn, biomasu, uhlí či elektřinu. 
+
+Z hlediska emisí skleníkových plynů je zásadní, z jakého zdroje se energie vyrábí. U rodinných domů převažuje jako zdroj vytápění a ohřevu vody zemní plyn a biomasa (často jde o dřevo), v bytových domech je to většinou zemní plyn či nakupované teplo (pocházející z uhlí, zemního plynu a částečně z biomasy). Menší část spotřeby tvoří elektřina, využívaná také na svícení, provoz elektrospotřebičů a vaření (částečně se při vaření využívá i zemní plyn). Emisní náročnost elektřiny v Česku je dána současným energetickým mixem země (v roce 2024 zde bylo 42 % elektřiny vyrobeno z fosilních paliv, 41 % z jádra a 17 % z obnovitelných zdrojů[^ember-mix]).
 
 Menší část energie se spotřebuje v průmyslu při výrobě stavebních materiálů, výstavbě a rekonstrukci nebo demolici. Odhadem jde o cca 3 % konečné spotřeby energie Česka a 11 % energie spotřebované v průmyslu.[^energie-prumysl]
 
