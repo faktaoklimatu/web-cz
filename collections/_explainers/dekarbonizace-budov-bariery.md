@@ -17,7 +17,7 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/a-small-town-surrounded-by-trees-and-hills-yLMf_BaOh1o"
-perex:       "Se sektorem budov souvisí téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů. Tyto emise vznikají hlavně při spalování zemního plynu a uhlí (k získávání tepla a elektřiny), v menší míře pocházejí z výroby stavebních materiálů. Sektor budov tedy má velký dekarbonizační potenciál, zároveň jsou zde ale i různé bariéry, které jeho dekarbonizaci brání: např. chybějící strategie renovace budov či nedostatek finančních prostředků. Velkou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Jednotlivým bariérám se podrobněji věnuje následující text."
+perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Pojďme se na hlavní bariéry dekarbonizace budov v Česku podívat podrobněji./Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
 ---
 
 {% capture cinnosti %}
@@ -54,7 +54,7 @@ S výstavbou, případně demolicí, souvisí:
 
 ## Energie a emise v sektoru budov
 
-Spotřeba energie i množství emisí v tomto sektoru postupně klesá díky renovacím a zvyšování standardů pro energetickou náročnost budov.[^eea-data] Přesto má sektor budovy v Česku na celkové spotřebě energií a emisích i nadále značný podíl, a je zde tedy i velký potenciál pro další dekarbonizaci.
+V tomto sektoru vznikají emise skleníkových plynů hlavně při spalování zemního plynu a uhlí (k získávání tepla a elektřiny), v menší míře pocházejí z výroby stavebních materiálů. Díky renovacím a zvyšování standardů pro energetickou náročnost budov celková spotřeba energie i množství emisí v tomto sektoru postupně klesá,[^eea-data] přesto je jeho podíl i nadále značný, a je zde tedy i velký potenciál pro další dekarbonizaci.
 
 ### Kolik energie budovy spotřebují a z čeho je vyrobena?
 
