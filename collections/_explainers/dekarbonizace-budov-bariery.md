@@ -17,7 +17,7 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/a-small-town-surrounded-by-trees-and-hills-yLMf_BaOh1o"
-perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Pojďme se na hlavní bariéry dekarbonizace budov v Česku podívat podrobněji./Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
+perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
 ---
 
 {% capture cinnosti %}
