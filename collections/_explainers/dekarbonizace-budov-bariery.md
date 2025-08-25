@@ -17,7 +17,8 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/a-small-town-surrounded-by-trees-and-hills-yLMf_BaOh1o"
-perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Pojďme se na hlavní bariéry dekarbonizace budov v Česku podívat podrobněji./Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
+perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
+infographics-url: /assets-local/files/dekarbonizace-budov-bariery-infografika.pdf
 ---
 
 {% capture cinnosti %}
@@ -67,7 +68,7 @@ Menší část energie se spotřebuje v průmyslu při výrobě stavebních mate
 {% include figure.html
     name="cs-dekarbonizace-budov-bariery-energie.svg"
     name-mobile="cs-dekarbonizace-budov-bariery-energie.svg"
-    alt="TODO"
+    alt="Sankey graf, který zobrazuje, jak se jednotlivé zdroje energie v domácnostech podílí na činnostech, jako je vytápění, ohřev vody, svícení apod."
     source-text="Český statistický úřad, Energo 2021"
     source-url="https://csu.gov.cz/produkty/spotreba-paliv-a-energii-v-domacnostech-energo-2021"
 %}
@@ -85,7 +86,7 @@ Celkem je tak s budovami v celém jejich životním cyklu spojeno přibližně *
     name="cs-dekarbonizace-budov-bariery-emise.svg"
     name-mobile="cs-dekarbonizace-budov-bariery-emise.svg"
     class="narrow-figure"
-    alt="TODO"
+    alt="Koláčový graf, který zobrazuje podíl emisí skleníkových připadající budovám. V Česku to v roce 2022 bylo asi 36 %."
     source-text="Evropská agentura pro životní prostředí, data za rok 2022 a vlastní zpracování (podíl emisí v průmyslu)"
     source-url="https://climate-energy.eea.europa.eu/topics/climate-change-mitigation/greenhouse-gas-emissions-inventory/data"
 %}
@@ -101,14 +102,13 @@ Přestože je se sektorem budov spojena více než třetina emisí skleníkovýc
 
 Hlavní překážky shrnuje text níže.[^vycet] Tyto bariéry jsou navíc často mezi sebou provázány – například neexistuje společná datová základna o stavu budov, což komplikuje vytváření dlouhodobé strategie renovace budov. Některé bariéry dekarbonizace jsou specifické pro rezidenční budovy (o kterých existuje více dat, zároveň je jich několikanásobně více než budov nerezidenčních), řada překážek je však obecnější a týká se většiny budov.[^sance-pro-budovy]
 
-{% include figure.html
-    name="cs-dekarbonizace-budov-bariery-schema.svg"
-    name-mobile="cs-dekarbonizace-budov-bariery-schema.svg"
-    alt="TODO"
-    source-text="Fakta o klimatu"
-%}
-
 ### Systémové bariéry
+
+{% include lead-in-figure.html
+    name="systemove-bariery.svg"
+    class="leadin-figure-small"
+    alt="Piktogram systémových bariér"
+%}
 
 **Chybějí data o stavu budov**
 
@@ -145,6 +145,12 @@ Chybějí poradenské kapacity pro obce, domácnosti i podniky, které by ukáza
 
 ### Finanční a administrativní bariéry
 
+{% include lead-in-figure.html
+    name="financni-bariery.svg"
+    class="leadin-figure-small"
+    alt="Piktogram finančních a administrativních bariér"
+%}
+
 **Vysoké investiční náklady**
 
 Počáteční náklady na komplexní renovaci jsou vysoké a příjmy části domácností na ně nestačí. Pomoci mohou stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), nemusejí však pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají dostatečné vlastní úspory nebo si mohou dovolit úvěr. Navíc v minulosti byla dotační podpora vyplácena až zpětně. To se od roku 2025 změnilo a nyní je poskytována zálohově předem. Další prostředky by měly být v příštích letech k dispozici také v rámci [Sociálního klimatického fondu](https://mzp.gov.cz/cz/agenda/prehled-dotaci/socialni-klimaticky-fond#:~:text=Prost%C5%99edky%20Soci%C3%A1ln%C3%ADho%20klimatick%C3%A9ho%20fondu%20jsou,a%20sn%C3%AD%C5%BEen%C3%AD%20energetick%C3%A9%20n%C3%A1ro%C4%8Dnosti%20budov.). 
@@ -158,6 +164,12 @@ Komplikované a časově náročné procesy – od žádosti o dotaci až po sta
 Kromě zjednodušení procesů by pomohlo i již zmíněné navýšení poradenských kapacit.
 
 ### Technologické bariéry a chybějící kapacita pracovní síly
+
+{% include lead-in-figure.html
+    name="technologicke-bariery.svg"
+    class="leadin-figure-small"
+    alt="Piktogram technologických bariér"
+%}
 
 **Nedostatek kvalifikované pracovní síly**
 
@@ -174,6 +186,12 @@ Technologie a materiály pro dekarbonizaci budov (jako například fotovoltaick�
 Z toho důvodu se EU v poslední době soustředí na posílení vlastní soběstačnosti. Usiluje o to navýšit výrobu nízkoemisních technologií na vlastním území prostřednictvím [aktu o průmyslu pro čisté nulové emise](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/net-zero-industry-act_cs) (*Net-Zero Industry Act*, NZIA), rozvíjet domácí těžbu, zpracování a recyklaci prostřednictvím [aktu o kritických surovinách](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/european-critical-raw-materials-act_cs) (*Critical Raw Materials Act*, CRMA) a zároveň navázat stabilní partnerství s dalšími zeměmi.
 
 ### Sociální a psychologické bariéry
+
+{% include lead-in-figure.html
+    name="socialni-bariery.svg"
+    class="leadin-figure-small"
+    alt="Piktogram sociálních a psychologických bariér"
+%}
 
 **Spokojenost se stavem nemovitosti**
 
@@ -203,6 +221,20 @@ Odstranění bariér v dekarbonizaci budov – a tedy včasné snížení emisí
 - Banky a finanční instituce mohou s překonáváním bariéry v podobě vysokých investičních nákladů pomáhat nabídkou zvýhodněných úvěrů.
 - Z hlediska realizace úsporných opatření je důležitá i role soukromého sektoru, konkrétně stavebních a developerských firem nebo výrobců a dodavatelů technologií. Ti všichni mají vliv na dostupnost a kvalitu technologií, kapacitu pracovní síly i rychlost realizace.
 - Svou roli mohou hrát také různé státní instituce, například Český statistický úřad může přispět k vytvoření společné datové základny.
+
+{% include includes-local/figure-plain-download-preview.html
+    link=page.infographics-url
+    preview="infografika-nahled.png"
+    alt="Náhled jednostránkového shrnutí bariér dekarbonizace budov v Česku"
+    caption="Jednostránkové shrnutí bariér dekarbonizace budov v Česku ke stažení ve formátu PDF."
+%}
+
+<div class="download">
+    <a href="{{ page.infographics-url }}" class="btn btn-primary" download>
+        <i class="fas fa-fw fa-download"></i>
+        Stáhnout PDF
+    </a>
+</div>
 
 ## Poznámky a zdroje
 
