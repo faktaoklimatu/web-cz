@@ -168,4 +168,5 @@ subtopics:
   - nastroje-stat
   - 2019-scenar-necp
   - emise-cr-vyvoj
+  - dekarbonizace-budov-bariery
 ---
