@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaké bariéry stojí v cestě dekarbonizaci sektoru budov v Česku?"
 slug:        "dekarbonizace-budov-bariery"
-published:   2025-08-11
+published:   2025-09-01
 authors:
   - id: "katerina-kolouchova"
   - ids: ["jirka-lnenicka"]
@@ -17,7 +17,8 @@ cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/a-small-town-surrounded-by-trees-and-hills-yLMf_BaOh1o"
-perex:       "Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text."
+perex: |
+    Téměř polovina celkové spotřeby energie v Česku a přibližně třetina vyprodukovaných emisí skleníkových plynů je spojena se sektorem budov. Dekarbonizaci tohoto sektoru nicméně komplikují různé bariéry: například chybějící strategie renovace budov či nedostatek finančních prostředků. Důležitou roli hraje také čas – zrenovovat celý domovní fond totiž není otázkou let, nýbrž desetiletí. Přehled hlavních bariér dekarbonizace budov v Česku přináší následující text.
 infographics-url: /assets-local/files/dekarbonizace-budov-bariery-infografika.pdf
 ---
 
@@ -153,7 +154,7 @@ Chybějí poradenské kapacity pro obce, domácnosti i podniky, které by ukáza
 
 **Vysoké investiční náklady**
 
-Počáteční náklady na komplexní renovaci jsou vysoké a příjmy části domácností na ně nestačí. Pomoci mohou stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), nemusejí však pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají dostatečné vlastní úspory nebo si mohou dovolit úvěr. Navíc v minulosti byla dotační podpora vyplácena až zpětně. To se od roku 2025 změnilo a nyní je poskytována zálohově předem. Další prostředky by měly být v příštích letech k dispozici také v rámci [Sociálního klimatického fondu](https://mzp.gov.cz/cz/agenda/prehled-dotaci/socialni-klimaticky-fond#:~:text=Prost%C5%99edky%20Soci%C3%A1ln%C3%ADho%20klimatick%C3%A9ho%20fondu%20jsou,a%20sn%C3%AD%C5%BEen%C3%AD%20energetick%C3%A9%20n%C3%A1ro%C4%8Dnosti%20budov.). 
+Počáteční náklady na komplexní renovaci jsou vysoké a příjmy části domácností na ně nestačí. Pomoci mohou stávající dotační programy, např. [Nová zelená úsporám](https://novazelenausporam.cz/), nemusejí však pokrýt celou investici, takže jsou dostupné hlavně pro ty, kteří mají dostatečné vlastní úspory nebo si mohou dovolit úvěr. Navíc v minulosti byla dotační podpora vyplácena až zpětně. To se od roku 2025 změnilo a nyní je poskytována zálohově předem. Další prostředky by měly být v příštích letech k dispozici také v rámci [Sociálního klimatického fondu](https://mzp.gov.cz/cz/agenda/prehled-dotaci/socialni-klimaticky-fond). 
 
 Vysoké investiční nároky se netýkají pouze domácností, ale i vlastníků nerezidenčních budov.
 
@@ -262,7 +263,7 @@ Děkujeme všem expertům a expertkám, jejichž cenné vhledy z praxe přispěl
 
 [^epbd]: Úkol sestavit tento plán vychází z unijní směrnice o energetické náročnosti budov (*Energy Performance of Buildings Directive*, EPBD) z roku 2024. [Článek 3](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401275#art_3) upřesňuje, které informace by měl plán obsahovat – shrnutí současného stavu fondu budov, cíle a indikátory a politiky k jejich naplnění, investiční potřeby atd.
 
-[^viden]: To je součástí tzv. programu jemné obnovy města (*Sanfte Stadterneuerung*). Více viz Hatz, Gerhard. *Can public subsidized urban renewal solve the gentrification issue? Dissecting the Viennese example.* Cities 115 (2021). https://doi.org/10.1016/j.cities.2021.103218
+[^viden]: To je součástí tzv. programu jemné obnovy města (*Sanfte Stadterneuerung*). Více viz Hatz, Gerhard. *Can public subsidized urban renewal solve the gentrification issue? Dissecting the Viennese example.* Cities 115 (2021). [doi:10.1016/j.cities.2021.103218](https://doi.org/10.1016/j.cities.2021.103218)
 
 [^poradci]: Do seznamu stávajících poradců a poradkyň lze nahlédnout [zde](https://efekt.gov.cz/cz/ekis/strediska-EKIS).
 
