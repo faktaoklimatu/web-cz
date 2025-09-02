@@ -11,7 +11,7 @@ caption:       "prípadné bla bla"
 ---
 
 
-## Čeho si všímat?
+## Čeho si všímat
 
 
 Mezi ptáky zemědělské krajiny (tedy polí a luk) patří druhy, jež jsou na tyto ekosystémy navázány – získávají zde potravu, hledají místo k hnízdění a podobně. Konkrétně je to například skřivan polní, bramborníček hnědý, koroptev polní, linduška luční, hrdlička divoká nebo čejka chocholatá [^ptaky-NRL].
@@ -33,7 +33,7 @@ Mezi ptáky zemědělské krajiny (tedy polí a luk) patří druhy, jež jsou na
 %}
 
 
-## Jaký stav a vývojové trendy lze pozorovat?
+## Jaký stav a vývojové trendy lze pozorovat
 
 
 Počet ptáků zemědělské krajiny v Česku dlouhodobě klesá. Ve srovnání s rokem 1982 klesl počet jedinců téměř o třetinu[^pokles-cr]. Podobný trend je pozorován i v dalších zemích – v Evropě klesl počet ptáků od roku 1980 téměř o dvě třetiny[^pokles-eu].
@@ -54,7 +54,7 @@ Díky FBI jsou data pro vybrané druhy ptáků zemědělské krajiny shrnuta v r
 %}
 
 
-## Jak tuto situaci zlepšit?
+## Jak tuto situaci zlepšit
 
 
 Špatný stav populací ptáků zemědělské krajiny může významně zlepšit **používání citlivějších zemědělských postupů**, jako je například omezení využívání těžké techniky a redukce aplikace pesticidů. Klíčové je také **podporovat pestrost krajiny** – aby zde ptáci našli dostatek potravy i potřebný úkryt. Tedy například zachovávat, obnovovat či vytvářet meze, travnaté a květnaté pásy, aleje stromů či různé vodní prvky (jako rybníky, mokřady či tůně).
@@ -82,6 +82,6 @@ Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, kt
 
 
 ## Zdroje a poznámky
-[^ptaky-NRL]: Seznam druhů ptáků, kteří jsou klíčoví z hlediska zdraví (české) zemědělské krajiny, uvádí evropské [Nařízení o obnově přírody](https://eur-lex.europa.eu/eli/reg/2024/1991/oj/eng) v příloze V.
+[^ptaky-NRL]: Seznam druhů ptáků, kteří jsou klíčoví z hlediska zdraví zemědělské krajiny, uvádí evropské [Nařízení o obnově přírody](https://eur-lex.europa.eu/eli/reg/2024/1991/oj/eng) v příloze V.
 [^pokles-cr]: [Jednotný program sčítání ptáků](https://www.birdlife.cz/co-delame/vyzkum-a-ochrana-ptaku/vyzkum-ptaku/jpsp/)
 [^pokles-eu]: [PanEuropean Common Bird Monitoring Scheme](https://pecbms.info/trends-and-indicators/indicators/indicators/E_C_Fa/).
