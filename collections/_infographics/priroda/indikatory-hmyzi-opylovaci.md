@@ -1,22 +1,27 @@
 ---
 layout:        infographic
-title:         "Indikátor: hmyzí opylovači"
+title:         "Hmyzí opylovači"
 slug:          "indikatory-hmyzi-opylovaci"
 redirect_from: "/indikatory-hmyzi-opylovaci"
 published:     2025-03-28
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "prípadné bla bla"
+caption:       ""
 ---
 
 
 ## Čeho si všímat
 
 
-Ačkoli opylování stromů a rostlin si většina lidí spojí nejspíše se včelami, důležitými hmyzími opylovači, jejichž výskytu si lze v krajině všímat, jsou také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Je jich mnoho druhů: v Česku žije 29 druhů motýlů[^motyli-zdroj], desítky druhů čmeláků[^cmelaci-zdroj], zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů)[^vcely-zdroj].
+Opylování stromů a rostlin si většina lidí nejspíš spojí se včelami. Ale důležitými hmyzími opylovači, jejichž četnosti si lze v krajině všímat, jsou také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Je jich mnoho druhů: v Česku žije 29 druhů motýlů[^motyli-zdroj], desítky druhů čmeláků[^cmelaci-zdroj], zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů)[^vcely-zdroj].
 
-
+{% include figure.html
+    name="opylovac-pestrenka.jpg"
+    caption="Pestřenky (lidově vosičky) patří mezi důležité opylovače"
+    alt="Pestřenky (lidově vosičky) patří mezi důležité opylovače"
+    source-text="Jiří Lněnička"
+%}
 
 
 {% include expander-figure.html
@@ -67,7 +72,7 @@ Extrémní projevy počasí, které jsou v důsledku klimatické změny častěj
 **Další vlivy**
 
 
-K úbytku opylovačů přispívají rovněž **Choroby** (například varroáza u včel) a **znečištění** (například těžké kovy, jde ale třeba i o světelné znečištění v okolí měst, které narušuje život nočních motýlů).
+K úbytku opylovačů přispívají rovněž **choroby** (například varroáza u včel) a **znečištění** (například těžké kovy, jde ale třeba i o světelné znečištění v okolí měst, které narušuje život nočních motýlů).
 "
 %}
 
@@ -87,11 +92,18 @@ Klíčové je zvyšovat krajinnou pestrost. Tedy například:
 {% include expander-figure.html
    name="priklad"
    class="contrast-figure"
-   label="Příklad zvýšení diverzity opylovačů díky vhodnému managementu"
+   label="Příklad dobré praxe: Zvýšení pestrosti opylovačů v CHKO Dunajské luhy"
    content="
-Druhovou pestrost i množství opylovačů se díky vhodnému managementu podařilo mezi lety 2020 a 2023 zvýšit například v lokalita Číčov v CHKO Dunajské luhy na jihozápadě Slovenska. Zdejší podmáčené louky byly v minulosti přeměněny na pole a do současnosti se zachovala jen malá část, což mělo negativní dopad na početnost i druhovou pestrost opylovačů. Obnova lokality začala v roce 2017, kdy byla pole oseta směsí různých trav a kvetoucích bylin. Od té doby je lokalita pravidelně sečena, což podporuje růst kvetoucích rostlin, z nichž mohou opylovači získávat potravu. 
+Druhovou pestrost i množství opylovačů se díky vhodnému managementu podařilo mezi lety 2020 a 2023 zvýšit například v lokalita Číčov v CHKO Dunajské luhy na jihozápadě Slovenska. Zdejší podmáčené louky byly v minulosti přeměněny na pole a do současnosti se zachovala jen malá část, což mělo značně negativní dopad na početnost i druhovou pestrost opylovačů. Obnova lokality začala v roce 2017, kdy byla pole oseta směsí různých trav a kvetoucích bylin. Od té doby je lokalita pravidelně sečena, což podporuje růst kvetoucích rostlin, z nichž mohou opylovači získávat potravu. 
 "
 
+%}
+
+{% include figure.html
+    name="opylovaci-dunajske-luhy.jpg"
+    caption="Číčov, CHKO Dunajské luhy"
+    alt="Číčov, CHKO Dunajské luhy"
+    source-text="Wikipedia"
 %}
 
 
