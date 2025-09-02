@@ -156,7 +156,7 @@ subtopics:
   content:
     - indikatory-hmyzi-opylovaci
     - indikatory-krajinotvorne-prvky
-    - indikatory-mrtve-drevo-stare-stromy
+    - indikatory-tlejici-drevo-stare-stromy
     - indikatory-pestrost-lesa
     - indikatory-prirozene-druhove-slozeni
     - indikatory-ptaci
