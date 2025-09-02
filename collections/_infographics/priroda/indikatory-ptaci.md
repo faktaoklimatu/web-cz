@@ -1,6 +1,6 @@
 ---
 layout:        infographic
-title:         "Indikátor: ptáci zemědělské krajiny"
+title:         "Ptáci zemědělské krajiny"
 slug:          "indikatory-ptaci"
 redirect_from: "/indikatory-ptaci"
 published:     2025-03-28
@@ -11,10 +11,10 @@ caption:       "prípadné bla bla"
 ---
 
 
-## Čeho si všímat?
+## Čeho si všímat
 
 
-Mezi ptáky zemědělské krajiny, tedy polí a luk, patří druhy, jež jsou na tyto ekosystémy navázány – získávají zde potravu, hledají místo k hnízdění apod. Jde například o druhy jako skřivan polní, bramborníček hnědý, koroptev polní, linduška luční, hrdlička divoká či čejka chocholatá [^ptaky-NRL].
+Mezi ptáky zemědělské krajiny (tedy polí a luk) patří druhy, jež jsou na tyto ekosystémy navázány – získávají zde potravu, hledají místo k hnízdění a podobně. Konkrétně je to například skřivan polní, bramborníček hnědý, koroptev polní, linduška luční, hrdlička divoká nebo čejka chocholatá [^ptaky-NRL].
 
 
 
@@ -25,7 +25,7 @@ Mezi ptáky zemědělské krajiny, tedy polí a luk, patří druhy, jež jsou na
    label="Proč jsou ptáci dobrým indikátorem zdraví zemědělské krajiny?"
    content="
 - **Rychle reagují na změny** – odletí, pokud jim prostředí z nějakého důvodu přestane vyhovovat
-- **Jsou na vrcholu potravního řetězce** polních a lučních ekosystémů – jestliže se na poli vyskytuje velké množství různých ptáků, lze z toho usoudit, že zde mají dostatek potravy – různých druhů hmyzu, semen rostlin a podobně
+- **Jsou na vrcholu potravního řetězce** polních a lučních ekosystémů – jestliže se tedy na poli vyskytuje velké množství různých ptáků, lze z toho usoudit, že zde mají dostatek potravy – tedy že je zde i mnoho různých druhů hmyzu, semen rostlin a podobně
 - **Existuje k nim dostatek dat**, která umožňují srovnávat a získat ucelený obraz – v Česku probíhá systematický monitoring těchto ptáků už od 80. let 20. stol.
 
 
@@ -33,11 +33,11 @@ Mezi ptáky zemědělské krajiny, tedy polí a luk, patří druhy, jež jsou na
 %}
 
 
-## Jaký stav a vývojové trendy lze pozorovat?
+## Jaký stav a vývojové trendy lze pozorovat
 
 
-Počet ptáků zemědělské krajiny v Česku dlouhodobě klesá. Ve srovnání s rokem 1982 klesl počet jedinců téměř o třetinu[^pokles-cr]. Podobný trend je i v dalších zemích – v Evropě klesl počet ptáků od roku 1980 téměř o dvě třetiny[^pokles-eu].
-Mezi hlavní příčiny tohoto úbytku patří postupy používané v intenzivním zemědělství (velké množství pesticidů, ztráta pestrosti krajiny a pěstování monokultur, využívání těžké techniky). To vše způsobuje, že ptáci přicházejí o zdroje potravy a prostor na hnízdění.
+Počet ptáků zemědělské krajiny v Česku dlouhodobě klesá. Ve srovnání s rokem 1982 klesl počet jedinců téměř o třetinu[^pokles-cr]. Podobný trend je pozorován i v dalších zemích – v Evropě klesl počet ptáků od roku 1980 téměř o dvě třetiny[^pokles-eu].
+Mezi hlavní příčiny tohoto úbytku patří postupy používané v intenzivním zemědělství (např. velké množství pesticidů, ztráta pestrosti krajiny, monokulturní pěstování plodin, využívání těžké techniky). To vše způsobuje, že ptáci přicházejí o zdroje potravy a prostor k hnízdění.
 
 
 {% include expander-figure.html
@@ -45,22 +45,19 @@ Mezi hlavní příčiny tohoto úbytku patří postupy používané v intenzivn�
    class="contrast-figure"
    label="Co je Farmland Bird Index?"
    content="
-Farmland bird index (FBI) udává v % počty jedinců, které se vztahují k prvnímu roku monitoringu – v ČR je to pro jednotlivé druhy rok 1982. Tedy například pro [čejku chocholatou](https://birds.cz/jpsp/vysledky.php?taxon=487) měl tento index v roce 1982 hodnotu 100 %, v roce 2024 už to bylo méně než 10 %. Jinými slovy: za posledních cca 40 let klesl počet jedinců čejky chocholaté v české krajině na desetinu původního počtu.
+Farmland bird index (FBI) ukazuje změny v počtech jedinců ve srovnání s prvním rokem monitoringu (v ČR je to pro jednotlivé druhy rok 1982). Příklad: pro [čejku chocholatou](https://birds.cz/jpsp/vysledky.php?taxon=487) měl tento index v roce 1982 hodnotu 100 %, v roce 2024 už to bylo méně než 10 %. To jinými slovy znamená, že za posledních cca 40 let klesl počet jedinců čejky chocholaté v české krajině na desetinu.
 
 
-Díky FBI jsou tak data pro vybrané druhy ptáků zemědělské krajiny shrnuta v rámci jednoho indikátoru, což umožňuje získat ucelenou představu o trendech a změnách v početnosti těchto druhů v průběhu let.
-
-
-
+Díky FBI jsou data pro vybrané druhy ptáků zemědělské krajiny shrnuta v rámci jednoho indikátoru, což umožňuje získat ucelenou představu o trendech a změnách v početnosti těchto druhů v průběhu let.
 
 "
 %}
 
 
-## Jak tuto situaci zlepšit?
+## Jak tuto situaci zlepšit
 
 
-Špatný stav populací ptáků zemědělské krajiny mohou pomoci zlepšit **citlivější zemědělské postupy**, jako například omezení využívání těžké techniky a redukce aplikace pesticidů. Klíčové je také **podporovat pestrost krajiny** – aby zde našli dostatek potravy i potřebný úkryt. Tedy například zachovávat, obnovovat či vytvářet meze, travnaté a květnaté pásy, aleje stromů či různé vodní prvky (rybníky, mokřady, tůně apod.).
+Špatný stav populací ptáků zemědělské krajiny může významně zlepšit **používání citlivějších zemědělských postupů**, jako je například omezení využívání těžké techniky a redukce aplikace pesticidů. Klíčové je také **podporovat pestrost krajiny** – aby zde ptáci našli dostatek potravy i potřebný úkryt. Tedy například zachovávat, obnovovat či vytvářet meze, travnaté a květnaté pásy, aleje stromů či různé vodní prvky (jako rybníky, mokřady či tůně).
 
 
 {% capture expander_content %}
@@ -80,10 +77,11 @@ Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, kt
    class="contrast-figure"
    label="Příklad dobré praxe: Obnova ptačích luk v lokalitě na Ostravsku"
    content=expander_content
+   source-text="Adapterra Awards"
 %}
 
 
 ## Zdroje a poznámky
-[^ptaky-NRL]: Seznam druhů ptáku relevantních v otázce zdraví (české) zemědělské krajiny vymezuje [NRL](https://eur-lex.europa.eu/eli/reg/2024/1991/oj/eng) v příloze V.
-[^pokles-cr]: zdroj: [Jednotný program sčítaní ptáků](https://www.birdlife.cz/co-delame/vyzkum-a-ochrana-ptaku/vyzkum-ptaku/jpsp/)
-[^pokles-eu]: zdroj: [PanEuropean Common Bird Monitoring Scheme](https://pecbms.info/trends-and-indicators/indicators/indicators/E_C_Fa/).
+[^ptaky-NRL]: Seznam druhů ptáků, kteří jsou klíčoví z hlediska zdraví zemědělské krajiny, uvádí evropské [Nařízení o obnově přírody](https://eur-lex.europa.eu/eli/reg/2024/1991/oj/eng) v příloze V.
+[^pokles-cr]: [Jednotný program sčítání ptáků](https://www.birdlife.cz/co-delame/vyzkum-a-ochrana-ptaku/vyzkum-ptaku/jpsp/)
+[^pokles-eu]: [PanEuropean Common Bird Monitoring Scheme](https://pecbms.info/trends-and-indicators/indicators/indicators/E_C_Fa/).
