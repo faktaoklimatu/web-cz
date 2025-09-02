@@ -99,6 +99,13 @@ Druhovou pestrost i množství opylovačů se díky vhodnému managementu podař
 
 %}
 
+{% include figure.html
+    name="opylovaci-dunajske-luhy.jpg"
+    caption="Číčov, CHKO Dunajské luhy"
+    alt="Číčov, CHKO Dunajské luhy"
+    source-text="Wikipedia"
+%}
+
 
 
 
