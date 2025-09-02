@@ -29,9 +29,9 @@ Opylování stromů a rostlin si většina lidí nejspíš spojí se včelami. A
    class="contrast-figure"
    label="Proč jsou opylovači důležití?"
    content="
-**Kvůli opylování rostlin** – je na nich částečně závislá většina pěstovaných i přirozeně rostoucích rostlin v Evropě (které se neopylují se samy, s pomocí větru či vody).
-**Kvůli pestrosti** – některé druhy rostlin mají opylování navázáno na specifické druhy hmyzu, jinak k němu nedojde (například hmyz s krátkým sosákem se nedostane k pylu rostlin s hlubokými květy).
-**Kvůli úrodě** – ta je při nedostatečném opylení plodin je nižší – pokles v počtu opylovačů tak může mít i významné negativní ekonomické dopady.
+- **Kvůli opylování rostlin** – je na nich částečně závislá většina pěstovaných i přirozeně rostoucích rostlin v Evropě (které se neopylují se samy, s pomocí větru či vody).
+- **Kvůli pestrosti** – některé druhy rostlin mají opylování navázáno na specifické druhy hmyzu, jinak k němu nedojde (například hmyz s krátkým sosákem se nedostane k pylu rostlin s hlubokými květy).
+- **Kvůli úrodě** – ta je při nedostatečném opylení plodin je nižší – pokles v počtu opylovačů tak může mít i významné negativní ekonomické dopady.
 "
 %}
 
