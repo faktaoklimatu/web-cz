@@ -11,7 +11,7 @@ caption:       "prípadné bla bla"
 ---
 
 
-## Čeho si všímat?
+## Čeho si všímat
 
 
 Pestrost má v lese různé podoby:
@@ -48,7 +48,7 @@ V přirozeně rostoucím lese se volně střídají skupiny starších a mladš�
 %}
 
 
-## Jaký stav českých lesů?
+## Jaký stav a vývojové trendy lze pozorovat
 
 K hodnocení každého lesa je potřeba přistupovat individuálně podle podmínek, které ovlivňují jeho pestrost (např. vlhkost, teplota, kyselost půdy, množství živin, způsob lesního hospodaření). Z dat Národní inventarizace lesů ČR[^NIL2] si ale můžeme udělat alespoň přibližný obrázek.
 
@@ -68,14 +68,14 @@ Struktura ostatních lesů je o něco bohatší – pod korunami dorůstají mla
 
 Ve většině (86 %) smíšených lesů jsou druhy promíchané (nerostou ve skupinách) – dub se střídá s javorem, lípou apod. Menší část (14 %) tvoří lesy, ve kterých jsou jednotlivé druhy nahloučené do skupin.
 
-## Jak pestrost v lesích podporovat?
+## Jak tuto situaci zlepšit
 
 - **Přirozená obnova** – vede ke vzniku lesů s různorodou strukturou a druhovým složením, které jsou přizpůsobené místním podmínkám.
 - **Nepasečné způsoby hospodaření** – nejrozšířenějším způsobem hospodaření v ČR je pasečné hospodaření, při kterém se větší plocha lesa najednou vytěží a poté znovu zalesní. Tak vzniká jednotvárný, stejně starý les. Nepasečný způsob hospodaření má individuálnější přístup – netěží se celé plochy, ale pouze jednotlivé stromy. Díky tomu se může les postupně přirozeně obnovovat.
 - **Výsadba sazenic různých druhů** – i umělá výsadba může přispět k větší pestrosti lesa.
 
 {% capture expander_content %}
-Školní lesní podnik Křtiny spravuje 10 500 ha lesů severně od Brna. V hospodaření využívá různé přístupy. Jedním z nich je i tzv. *Dauerwald*, tedy trvale tvořivý les, který pokrývá 60 % plochy pozemku.
+Školní lesní podnik Masarykův les Křtiny spravuje 10 500 ha lesů severně od Brna. V hospodaření využívá různé přístupy. Jedním z nich je i tzv. *Dauerwald*, tedy trvale tvořivý les (cca 60 % rozlohy spravovaného území).
 
 Základem tohoto přístupu je porozumění konkrétním podmínkám daného lesa a *„přiměřené usměrňování tvořivých sil přírody“*[^citace]. Těžba neprobíhá na velkých plochách – lesník chodí od stromu ke stromu a vybírá jednotlivé stromy nebo skupiny stromů podle jejich vlastností a vztahů k ostatním stromům v porostu (a také modelu hospodaření, který se na dané ploše uplatňuje).
 Cílem je vytvoření pestrého a odolného lesa, který poskytuje kvalitní dřevo k těžbě, ale zároveň si zachovává přirozenou rozmanitost.
@@ -92,8 +92,8 @@ Cílem je vytvoření pestrého a odolného lesa, který poskytuje kvalitní dř
 %}
 
 ## Zdroje a poznámky
-Odbornou konzultaci k textu poskytli odborníci z Mendlovy univerzity v Brně.
+Odbornou konzultaci k textu poskytli odborníci z Mendelovy univerzity v Brně.
 
 [^NIL2]: [Národní inventarizace lesů v České republice - výsledky druhého cyklu 2011-2015](https://nli.gov.cz/wp-content/uploads/2019_kniha_nil2_web.pdf)
 [^monokultury]: Do těchto 14 % jsou započítány uměle vytvořené, ale i přirozené monokultury, které vytváří např. smrk a buk.
-[^citace]: Citace z rozhovoru s Tomášem Vrškou, ředitelem Školního lesního podniku Křtiny, kteřý vedla autorka textu. 
+[^citace]: Citace z rozhovoru s Tomášem Vrškou, ředitelem Školního lesního podniku Masarykův les Křtiny, který vedla autorka textu. 
