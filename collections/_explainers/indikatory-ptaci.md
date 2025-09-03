@@ -1,13 +1,22 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Ptáci zemědělské krajiny"
 slug:          "indikatory-ptaci"
 redirect_from: "/indikatory-ptaci"
-published:     2025-03-28
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "prípadné bla bla"
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    TODO: Perex
 ---
 
 
@@ -68,7 +77,7 @@ Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, kt
 
 
 <br>
-<img src="/assets-local/figures/indikatory-zdravi-krajiny/kozmicke-ptaci-louky.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
+<img src="/assets-local/figures/{{ page.slug }}/kozmicke-ptaci-louky.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
 {% endcapture %}
 
 

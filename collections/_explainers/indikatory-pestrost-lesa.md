@@ -1,13 +1,22 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Indikátor: Pestrost v lese"
 slug:          "indikatory-pestrost-lesa"
 redirect_from: "/indikatory-pestrost-lesa"
-published:     2025-05-22
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "prípadné bla bla"
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    TODO: Perex
 ---
 
 
@@ -80,7 +89,7 @@ Ve většině (86 %) smíšených lesů jsou druhy promíchané (nerostou ve sku
 Základem tohoto přístupu je porozumění konkrétním podmínkám daného lesa a *„přiměřené usměrňování tvořivých sil přírody“*[^citace]. Těžba neprobíhá na velkých plochách – lesník chodí od stromu ke stromu a vybírá jednotlivé stromy nebo skupiny stromů podle jejich vlastností a vztahů k ostatním stromům v porostu (a také modelu hospodaření, který se na dané ploše uplatňuje).
 Cílem je vytvoření pestrého a odolného lesa, který poskytuje kvalitní dřevo k těžbě, ale zároveň si zachovává přirozenou rozmanitost.
 <br>
-<img src="/assets-local/figures/indikatory-zdravi-krajiny/kozmicke-ptaci-louky.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
+<img src="/assets-local/figures/{{ page.slug }}/kozmicke-ptaci-louky.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
 {% endcapture %}
 
 

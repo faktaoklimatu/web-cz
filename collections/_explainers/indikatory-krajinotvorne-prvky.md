@@ -1,13 +1,22 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Krajinotvorné prvky"
 slug:          "indikatory-krajinotvorne-prvky"
 redirect_from: "/indikatory-krajinotvorne-prvky"
-published:     2025-05-26
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    TODO: Perex
 ---
 
 ## Čeho si všímat
@@ -53,7 +62,7 @@ Příkladem může být vysychající rašeliniště v přírodní rezervaci Nov
 Rašeliniště tak postupně zarůstá, opět pomáhá s regulací vody v lokalitě a vytváří prostor pro život nejrůznějších rostlin a živočichů.
 
 <br>
-<img src="/assets-local/figures/indikatory-zdravi-krajiny/priklad-nova-louka.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
+<img src="/assets-local/figures/{{ page.slug }}/priklad-nova-louka.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
 {% endcapture %}
 
 
