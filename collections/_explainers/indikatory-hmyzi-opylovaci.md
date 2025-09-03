@@ -1,20 +1,29 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Hmyzí opylovači"
 slug:          "indikatory-hmyzi-opylovaci"
 redirect_from: "/indikatory-hmyzi-opylovaci"
-published:     2025-03-28
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       ""
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    TODO: Perex
 ---
 
 
 ## Čeho si všímat
 
 
-Opylování stromů a rostlin si většina lidí nejspíš spojí se včelami. Ale důležitými hmyzími opylovači, jejichž četnosti si lze v krajině všímat, jsou také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Je jich mnoho druhů: v Česku žije 29 druhů motýlů[^motyli-zdroj], desítky druhů čmeláků[^cmelaci-zdroj], zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů)[^vcely-zdroj].
+Opylování stromů a rostlin si většina lidí nejspíš spojí se včelami. Ale důležitými hmyzími opylovači, jejichž četnosti si lze v krajině všímat, jsou také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Je jich mnoho druhů: v Česku žije 29 druhů motýlů,[^motyli-zdroj] desítky druhů čmeláků,[^cmelaci-zdroj] zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů).[^vcely-zdroj]
 
 {% include figure.html
     name="opylovac-pestrenka.jpg"

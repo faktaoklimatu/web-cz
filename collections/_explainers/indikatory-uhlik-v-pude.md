@@ -1,13 +1,22 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Indikátor: organický uhlík v půdě"
 slug:          "indikatory-uhlik-v-pude"
 redirect_from: "/indikatory-uhlik-v-pude"
-published:     2025-03-28
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "Organická hmota (například odumřelé kořeny či listy rostlin) je neodmyslitelnou součástí zdravého půdního systému. Uhlík, jako základní stavební prvek organické hmoty, slouží jako indikátor její přítomnosti a množství."
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    Organická hmota (například odumřelé kořeny či listy rostlin) je neodmyslitelnou součástí zdravého půdního systému. Uhlík, jako základní stavební prvek organické hmoty, slouží jako indikátor její přítomnosti a množství.
 ---
 
 ## Čeho si všímat?

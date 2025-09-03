@@ -1,13 +1,22 @@
 ---
-layout:        infographic
+layout:        explainer
 title:         "Indikátor: Volně tekoucí řeky"
 slug:          "indikatory-volne-tekouci-reky"
 redirect_from: "/indikatory-volne-tekouci-reky"
-published:     2025-05-22
+published:     2025-09-15
+authors:
+  - id: "andy-snovakova"
+  - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-caption:       "prípadné bla bla"
+cover-source-author:      "Karsten Würth"
+cover-source-text:        "Unsplash"
+cover-source-license:     "Unsplash licence"
+cover-source-license-url: "https://unsplash.com/license"
+cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+perex: |
+    TODO: Perex
 ---
 
 
@@ -64,7 +73,7 @@ Hučava je 36 km dlouhá řeka tekoucí v okolí obce Očová na Slovensku. V mi
 V roce 2021 se díky spolupráci několika organizací a crowdfundingu podařilo organizaci WWF Slovensko tento jez odstranit pomocí bagru a znovu tak propojit 25 km toku řeky Hučavy. Zásah měl pozitivní dopad na populace migrujících druhů, jako je pstruh obecný nebo parma středomořská.
 
 <br>
-<img src="/assets-local/figures/indikatory-zdravi-krajiny/priklad-hucava.png" alt="Odstraňování bariéry na řece Hučava na Slovensku. Autor: Jakub Krška" class="no-lightbox">
+<img src="/assets-local/figures/{{ page.slug }}/priklad-hucava.png" alt="Odstraňování bariéry na řece Hučava na Slovensku. Autor: Jakub Krška" class="no-lightbox">
 {% endcapture %}
 
 
