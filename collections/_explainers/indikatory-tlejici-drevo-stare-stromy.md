@@ -1,6 +1,6 @@
 ---
 layout:        explainer
-title:         "Indikátor: Tlející dřevo a staré stromy"
+title:         "Tlející dřevo a staré stromy"
 slug:          "indikatory-tlejici-drevo-stare-stromy"
 redirect_from: "/indikatory-tlejici-drevo-stare-stromy"
 published:     2025-09-15
@@ -22,19 +22,19 @@ perex: |
 
 ## Čeho si všímat?
 
-Jedná se o staré (odumírající) stromy, tející stojící nebo ležící stromy a kmeny, ulomené větve a další části stromů. Mrtvé, tlející, polámané stromy a jejich části mohou působit jako jakýsi „nepořádek“, jejich přítomnost v lese má však velký význam.
+Množství starých (odumírajících) stromů, tlejících stojících nebo ležících stromů a kmenů, ulomených větví a dalších částí stromů. Přestože mohou působit jako jakýsi „nepořádek“ v lese, jejich přítomnost má pro celý ekosystém velký význam.
 
 {% include expander-figure.html
    name="vyznam-tlejiciho-dreva"
    class="contrast-figure"
-   label="Proč je tlející dřevo a staré stromy v lese důležité?"
+   label="Proč jsou staré stromy a tlející dřevo v lese důležité?"
    content="
-Lesy kromě produkce dřeva plní i řadu dalších ekosystémových funkcí, k jejichž naplnění přispívá právě přítomnost tlejícího dřeva.
+Lesy kromě produkce dřeva plní i řadu dalších ekosystémových funkcí. Pro některé z nich je přítomnost tlejícího dřeva velice důležitá.
 
-- **Podpora biodiverzity** – tlející dřevo a staré stromy vytvářejí v lese mikrostanoviště se specifickými podmínkami (dutiny, praskliny, prostor pod kůrou, vývrty po hmyzu apod), na které jsou navázány různé druhy hub, mechů, brouků či larev hmyzu. Biodiverzitu podporujú hlavně staré stromy a velké kusy tlejícího dřeva. 
-- **Cirkulace živin** – tlející dřevo je v neustálém procesu rozkladu, což znamená, že živiny v něm uložené se postupně uvolňují do půdy a stávají se dostupnými pro další organismy. Význam mají převážně tenké větve a menší kusy dřeva, které se rychle rozkládají. 
-- **Ukládání uhlíku** – uhlík může být v tlejícím dřevě (krátkodobě) uložen, nebo se, podobně jako živiny, postupně uvolňuje do půdy, kde může zůstat uchován po dlouhé období. (Část uhlíku se při rozkladu dřeva uvolňuje do atmosféry ve formě CO2.) Významnými pohlcovači a zásobníky uhlíku jsou také staré (živé) stromy – s věkem se zvětšuje jejich koruna (a listová plocha), díky čemuž jsou schopny pohltit více uhlíku a uložit jej do své biomasy. Jeden starý strom je za rok schopen pohltit tolik uhlíku jako několik desítek let starý strom za celý svůj dosavadní život.
-- **Zadržování vláhy** – velké kusy tlejícího dřeva fungují jako „houba“ – absorbují vodu, kterou z nich pak mohou čerpat okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace - ochlazuje okolitý vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí. 
+- **Podporují biodiverzitu** – tlející dřevo a staré stromy vytvářejí v lese mikrostanoviště se specifickými podmínkami (dutiny, praskliny, prostor pod kůrou, vývrty po hmyzu apod), na které jsou navázány různé druhy hub, mechů, brouků či larev hmyzu. Biodiverzitu podporujú hlavně staré stromy a velké kusy tlejícího dřeva. 
+- **Podporují cirkulaci živin** – tlející dřevo je v neustálém procesu rozkladu, což znamená, že živiny v něm uložené se postupně uvolňují do půdy a stávají se dostupnými pro další organismy. Význam mají převážně tenké větve a menší kusy dřeva, které se rychle rozkládají. 
+- **Ukládají uhlík do půdy** – uhlík může být v tlejícím dřevě (krátkodobě) uložen, nebo se, podobně jako živiny, postupně uvolňuje do půdy, kde může zůstat uchován po dlouhé období. (Část uhlíku se při rozkladu dřeva uvolňuje do atmosféry ve formě CO2.) Významnými pohlcovači a zásobníky uhlíku jsou také staré (živé) stromy – s věkem se zvětšuje jejich koruna (a listová plocha), díky čemuž jsou schopny pohltit více uhlíku a uložit jej do své biomasy. Jeden starý strom je za rok schopen pohltit tolik uhlíku jako několik desítek let starý strom za celý svůj dosavadní život.
+- **Zadržují vláhu** – velké kusy tlejícího dřeva fungují jako „houba“ – absorbují vodu, kterou z nich pak mohou čerpat okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace - ochlazuje okolitý vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí. 
 "
 %}
 
@@ -42,10 +42,10 @@ Lesy kromě produkce dřeva plní i řadu dalších ekosystémových funkcí, k 
     name="mrtve-drevo.jpg"
     caption="Tlející mrtvé dřevo v lesích v okolí Hádecké planinky v Brně."
     alt="Tlející mrtvé dřevo v lesích v okolí Hádecké planinky v Brně"
-    source-text="archiv autorky"
+    source-text="Andy Snováková"
 %}
 
-## Jaký stav v ČR?
+## Jaký stav lze pozorovat?
 
 ### Mrtvé dřevo 
 Nelze univerzálně určit, jaké množství tlejícího dřeva v lese je *dostatečné* nebo *optimální* - vždy záleží na konkrétních podmínkách daného lesa. S jistotou však víme, že mrtvé dřevo do lesa patří a plní v něm důležité funkce (viz rozbalovátko výše).
@@ -70,7 +70,7 @@ Z hlediska plnění ekosystémových funkcí jsou nejvýznamnější **silné ku
 
 **Množství stromů starších 120 let postupně roste**. Za posledních 30 let se jejich podíl více než zdvojnásobil – dnes tvoří 9 % lesů. Tento nárůst může být způsoben hospodařením v chráněných oblastech, kde je více stromů ponecháno na dožití. Dalším důvodem může být omezená těžba v těžko přístupných lokalitách. Ponechávání starých stromů na dožití může být sice ekonomicky nevýhodné, ale pro zachování zdraví a funkčnosti lesa nezbytné[^zprava-2023].
 
-## Jak k hospodaření s tlejícím dřevem přistupovat?
+## Jak tuto situaci zlepšit?
 Správné lesní hospodaření vyžaduje **individuální přístup**, který bere v úvahu podmínky konkrétního lesa. To platí i pro hospodaření s tlejícím dřevem. Aby tlející dřevo co nejlépe podporovalo různé (ekosystémové) funkce lesa, je vedle jeho množství třeba zohlednit i další parametry[^dalsi-studie]:
 
 - **Tloušťka dřeva** – silnější kusy dřeva se rozkládají pomaleji, a tím zajišťují přísun živin po delší dobu. Oproti tenčím kusům také poskytují více životního prostoru se stabilními podmínkami.
@@ -80,9 +80,9 @@ Správné lesní hospodaření vyžaduje **individuální přístup**, který be
 - **Kontinuita** – pro fungování lesa je důležité, aby se v něm vyskytovaly různé typy tlejícího dřeva (různé druhy stromů, různé tloušťky) v různém stadiu rozkladu.
 
 ## Zdroje a poznámky
-Odbornou konzultaci k textu poskytli odborníci z Mendlovy univerzity v Brně.
+Odbornou konzultaci k textu poskytli experti z Mendelovy univerzity v Brně.
 
-[^bezpecnost-navstevniku]: O bezpečnost návštěvníků se samozřejmě dbá i v ostatních typech lesů. Majitelé lesů jsou povinni na lesních cestách odstraňovat suché a nebezpečné stromy nebo jejich části.
-[^dalsi-studie]: Konkrétní přístupy k managementu tlejícího dřeva v lesích střední Evropy popisuje studie od [Vítková a kol. (2018)](https://www.sciencedirect.com/science/article/pii/S0378112718307230?fr=RR-2&ref=pdf_download&rr=956399d97bd9b37f). Faktorům ovlivňujícím množství tlejícího dřeva v lese se věnuje studie od [Doefler a kol. (2017)](https://www.sciencedirect.com/science/article/abs/pii/S0378112717302487.)
-[^tlejici-drevo-zdroj]: Data o množství tlejícího dřeva poskytuje [Národní inventarizace lesů](https://nil.uhul.cz). Výsledky třetího cyklu inventarizace týkající se tlejícího dřeva jsou dostupné v článku z časopisu [Lesnická práce](https://nli.gov.cz/wp-content/uploads/2024_10_01__8_mrtve_drevo.pdf).
+[^bezpecnost-navstevniku]: Na bezpečnost návštěvníků se samozřejmě dbá i v ostatních typech lesů. Majitelé lesů jsou povinni na lesních cestách odstraňovat suché a nebezpečné stromy nebo jejich části.
+[^dalsi-studie]: Konkrétní přístupy k hospodaření s tlejícím dřevem v lesích střední Evropy popisuje studie od [Vítková a kol. (2018)](https://www.sciencedirect.com/science/article/pii/S0378112718307230?fr=RR-2&ref=pdf_download&rr=956399d97bd9b37f). Faktorům ovlivňujícím množství tlejícího dřeva v lese se věnuje studie od [Doefler a kol. (2017)](https://www.sciencedirect.com/science/article/abs/pii/S0378112717302487.)
+[^tlejici-drevo-zdroj]: Data o množství tlejícího dřeva poskytuje v Česku [Národní inventarizace lesů](https://nil.uhul.cz). Výsledky třetího cyklu inventarizace týkající se tlejícího dřeva je možné najít v tomto článku časopisu [Lesnická práce](https://nli.gov.cz/wp-content/uploads/2024_10_01__8_mrtve_drevo.pdf).
 [^zprava-2023]:[Zpráva o stavu lesa a lesního hospodářství 2023](https://mze.gov.cz/public/portal/mze/publikace/zprava-o-stavu-lesa-a-lesniho-hospodarstvi-cr/zprava-o-stavu-lesa-a-lesniho-hospodarstvi-2023)
