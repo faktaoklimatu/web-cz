@@ -15,13 +15,13 @@ cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
-perex: |
-    TODO: Perex
+perex:     Už název napovídá, že krajinotvorné prvky tvoří, přesněji řečeno spoluutvářejí krajinu. Jsou to takové malé oázy v často jednotvárné krajině, která se intenzivně využívá k produkci potravin a ve které pro pestrý život mnohdy nejsou vhodné podmínky. 
+ 
 ---
 
 ## Čeho si všímat
 
-Lze si všímat, kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích[^EVP].
+Kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích[^EVP].
 
 {% include figure.html
     name="krajinotvorni-prvek-strom.jpg"
@@ -54,6 +54,8 @@ Rozorání mezí a polních cest, vysoušení mokřadů, vykácení lesíků a r
 
 **Pečovat o existující** krajinotvorné prvky, **obnovovat už neexistující** prvky (např. odvodněné mokřady či květnaté pásy) a **zakládat úplně nové** prvky (např. vysazovat stromořadí podél cest). 
 Kromě lokálních projektů a zapojení veřejnosti (viz příklad níže) jsou neméně důležité i systémové změny – na úrovni legislativy a souvisejících dotačních programů, které budou k péči o krajinotvorné prvky motivovat zemědělce i finančně. Svou roli hraje také osvěta, hlubší pochopení tématu odolnosti krajiny a ochota měnit dlouho používané způsoby hospodaření. 
+
+**Příklad dobré praxe: Obnova rašeliniště v Jizerských horách**
 
 Obnova krajinotvorného prvku probíhá na lokální úrovni a často vychází z iniciativy jednotlivců či malých skupin. Vždy je třeba k ní přistupovat promyšleně, s ohledem na historii a podmínky dané lokality.
 
