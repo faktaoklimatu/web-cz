@@ -10,20 +10,18 @@ authors:
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-cover-source-author:      "Karsten Würth"
-cover-source-text:        "Unsplash"
-cover-source-license:     "Unsplash licence"
-cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+cover-source-author:      "Jiří Lněnička"
+cover-source-text:        "autorský archiv"
+cover-source-url:         "https://github.com/faktaoklimatu/web-cz/blob/preview-indikatory-zdravi-krajiny/assets-local/figures/indikatory-hmyzi-opylovaci/opylovac-drvodelka.jpg"
 perex: |
-    TODO: Perex
+    Opylování si většina lidí nejspíše spojí hlavně se včelami, ale hmyzích opylovačů existuje mnoho různých druhů. Některé druhy jsou úzce navázány na konkrétní druhy rostlin a určité typy květenství.
 ---
 
 
 ## Čeho si všímat
 
 
-Opylování stromů a rostlin si většina lidí nejspíš spojí se včelami. Ale důležitými hmyzími opylovači, jejichž četnosti si lze v krajině všímat, jsou také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Je jich mnoho druhů: v Česku žije 29 druhů motýlů,[^motyli-zdroj] desítky druhů čmeláků,[^cmelaci-zdroj] zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů).[^vcely-zdroj]
+Kolik různých druhů opylovačů lze pozorovat kolem sebe a jaká je jejich četnost. Kromě včel jsou důležitými hmyzími opylovači také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Existuje jich mnoho druhů: v Česku například žije 29 druhů motýlů,[^motyli-zdroj] desítky druhů čmeláků,[^cmelaci-zdroj] zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů).[^vcely-zdroj]
 
 {% include figure.html
     name="opylovac-pestrenka.jpg"
@@ -96,17 +94,9 @@ Klíčové je zvyšovat krajinnou pestrost. Tedy například:
 - sečení luk rozdělit na více etap (tedy nesekat vše naráz)
 
 
-
-
-{% include expander-figure.html
-   name="priklad"
-   class="contrast-figure"
-   label="Příklad dobré praxe: Zvýšení pestrosti opylovačů v CHKO Dunajské luhy"
-   content="
+**Příklad dobré praxe: Zvýšení pestrosti opylovačů v CHKO Dunajské luhy**
 Druhovou pestrost i množství opylovačů se díky vhodnému managementu podařilo mezi lety 2020 a 2023 zvýšit například v lokalita Číčov v CHKO Dunajské luhy na jihozápadě Slovenska. Zdejší podmáčené louky byly v minulosti přeměněny na pole a do současnosti se zachovala jen malá část, což mělo značně negativní dopad na početnost i druhovou pestrost opylovačů. Obnova lokality začala v roce 2017, kdy byla pole oseta směsí různých trav a kvetoucích bylin. Od té doby je lokalita pravidelně sečena, což podporuje růst kvetoucích rostlin, z nichž mohou opylovači získávat potravu. 
-"
 
-%}
 
 {% include figure.html
     name="opylovaci-dunajske-luhy.jpg"
