@@ -61,17 +61,14 @@ Obnova krajinotvorného prvku probíhá na lokální úrovni a často vychází 
 Příkladem může být vysychající rašeliniště v přírodní rezervaci Nová louka. Díky lidem z místního ochranářského spolku dochází k jeho postupné obnově – odvodňovací kanály byly přehrazeny dřevěnými přepážkami (bez použití těžké techniky), aby voda neodtékala tak rychle.
 Rašeliniště tak postupně zarůstá, opět pomáhá s regulací vody v lokalitě a vytváří prostor pro život nejrůznějších rostlin a živočichů.
 
-<br>
-<img src="/assets-local/figures/{{ page.slug }}/priklad-nova-louka.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
-{% endcapture %}
-
-
-{% include expander-figure.html
+{% include figure.html
    name="priklad-raseliniste-nova-louka"
-   class="contrast-figure"
-   label="Příklad dobré praxe: obnova rašeliniště v Jizerských horách"
-   content=expander_content
+   caption="Obnovené rašeliniště v Jizerských horách"
+   alt="Obnovené rašeliniště v Jizerských horách"
+   source-text="Adapterra Awards"
 %}
+
+
 
 
 ## Zdroje a poznámky
