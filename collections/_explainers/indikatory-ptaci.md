@@ -69,23 +69,17 @@ Díky FBI jsou data pro vybrané druhy ptáků zemědělské krajiny shrnuta v r
 Špatný stav populací ptáků zemědělské krajiny může významně zlepšit **používání citlivějších zemědělských postupů**, jako je například omezení využívání těžké techniky a redukce aplikace pesticidů. Klíčové je také **podporovat pestrost krajiny** – aby zde ptáci našli dostatek potravy i potřebný úkryt. Tedy například zachovávat, obnovovat či vytvářet meze, travnaté a květnaté pásy, aleje stromů či různé vodní prvky (jako rybníky, mokřady či tůně).
 
 
-{% capture expander_content %}
-Obnova lokality Kozmické ptačí louky nedaleko Ostravy přispěla k větší rozmanitosti krajiny a tím i ke zlepšení stavů ptačích populací. V minulosti byla tato lokalita odvodněna, terén zarovnán a následně využíván pro zemědělské účely. V posledních letech však došlo k obnově a jsou zde znovu louky.
+**Příklad dobré praxe: Kozmické ptačí louky na Ostravsku**
 
+Obnova lokality Kozmické ptačí louky nedaleko Ostravy přispěla k větší rozmanitosti krajiny a tím i ke zlepšení stavů ptačích populací. V minulosti byla tato lokalita odvodněna, terén zarovnán a následně využíván pro zemědělské účely. V posledních letech však došlo k obnově a jsou zde znovu louky.
 
 Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, které poskytují vhodný prostor k životu mnoha druhům ptáků (mimo jiné zde žije i čejka chocholatá), ale také obojživelníkům nebo vzácným druhům rostlin. Projekt vznikl z iniciativy jednotlivce, člena Českého svazu ochránců přírody, a byl kofinancován z několika českých a evropských programů a také ze soukromých zdrojů.
 
 
-<br>
-<img src="/assets-local/figures/{{ page.slug }}/kozmicke-ptaci-louky.jpg" alt="Kozmické ptačí louky po obnově" class="no-lightbox">
-{% endcapture %}
-
-
-{% include expander-figure.html
+{% include figure.html
    name="priklad-kozmicke-ptaci-louky"
-   class="contrast-figure"
-   label="Příklad dobré praxe: Obnova ptačích luk v lokalitě na Ostravsku"
-   content=expander_content
+   caption="Kozmické ptačí louky"
+   alt="Kozmické ptačí louky"
    source-text="Adapterra Awards"
 %}
 
