@@ -96,13 +96,7 @@ Klíčové je zvyšovat krajinnou pestrost. Tedy například:
 - sečení luk rozdělit na více etap (tedy nesekat vše naráz)
 
 
-
-
-{% include expander-figure.html
-   name="priklad"
-   class="contrast-figure"
-   label="Příklad dobré praxe: Zvýšení pestrosti opylovačů v CHKO Dunajské luhy"
-   content="
+**Příklad dobré praxe: Zvýšení pestrosti opylovačů v CHKO Dunajské luhy**
 Druhovou pestrost i množství opylovačů se díky vhodnému managementu podařilo mezi lety 2020 a 2023 zvýšit například v lokalita Číčov v CHKO Dunajské luhy na jihozápadě Slovenska. Zdejší podmáčené louky byly v minulosti přeměněny na pole a do současnosti se zachovala jen malá část, což mělo značně negativní dopad na početnost i druhovou pestrost opylovačů. Obnova lokality začala v roce 2017, kdy byla pole oseta směsí různých trav a kvetoucích bylin. Od té doby je lokalita pravidelně sečena, což podporuje růst kvetoucích rostlin, z nichž mohou opylovači získávat potravu. 
 "
 
