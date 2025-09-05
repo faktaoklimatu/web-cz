@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Jaké bariéry stojí v cestě dekarbonizaci sektoru budov v Česku?"
 slug:        "dekarbonizace-budov-bariery"
-published:   2025-09-01
+published:   2025-09-05
 authors:
   - id: "katerina-kolouchova"
   - ids: ["jirka-lnenicka"]
