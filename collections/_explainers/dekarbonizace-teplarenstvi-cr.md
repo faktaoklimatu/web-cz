@@ -84,7 +84,7 @@ Celkově bylo ve formě dálkového tepla v roce 2023 v Česku spotřebováno as
     name="PJ"
     class="contrast-figure"
     label="Co je to PJ?"
-    content="Jeden PJ (petajoule) je milion miliard (1015) joulů. Představit si to lze jako roční spotřebu dálkového tepla ve městě Chomutov s cca 50 000 obyvateli nebo jako energii, která by byla potřeba k přivedení asi 2 miliard rychlovarných konvic plných vody k varu (přibližně tolik vody by zaplnilo horní nádrž přečerpávací elektrárny Dlouhé Stráně)."
+    content="Jeden PJ (petajoule) je milion miliard (10<sup>15</sup>) joulů. Představit si to lze jako roční spotřebu dálkového tepla ve městě Chomutov s cca 50 000 obyvateli nebo jako energii, která by byla potřeba k přivedení asi 2 miliard rychlovarných konvic plných vody k varu (přibližně tolik vody by zaplnilo horní nádrž přečerpávací elektrárny Dlouhé Stráně)."
 %}
 
 ### Z čeho se dnes dálkové teplo v Česku vyrábí
