@@ -82,6 +82,7 @@ Celkově bylo ve formě dálkového tepla v roce 2023 v Česku spotřebováno as
 
 {% include expander-figure.html
     name="PJ"
+    class="contrast-figure"
     label="Co je to PJ?"
     content="Jeden PJ (petajoule) je milion miliard (1015) joulů. Představit si to lze jako roční spotřebu dálkového tepla ve městě Chomutov s cca 50 000 obyvateli nebo jako energii, která by byla potřeba k přivedení asi 2 miliard rychlovarných konvic plných vody k varu (přibližně tolik vody by zaplnilo horní nádrž přečerpávací elektrárny Dlouhé Stráně)."
 %}
@@ -93,7 +94,8 @@ Naprostá většina dálkového tepla se dnes v Česku vyrábí spalováním pal
 {% include figure.html
     name="vyroba-dnes.png"
     class="narrow-figure"
-    caption-above="**Zásadní roli ve výrobě tepla dnes hrají fosilní zdroje uhlí a zemní plyn**"
+    caption-above="**Zásadní roli ve výrobě tepla dnes hrají fosilní zdroje uhlí a zemní plyn** \\
+celková brutto výroba tepla: 142 PJ/rok"
     alt="Největší podíl na výrobě brutto v letech 2022–2024 mělo uhlí (45 %), plyn (25 %) a biomasa a bioplyn (20 %). Další zdroje jsou méně významné: odpadní teplo (6 %), odpad (3 %), jaderné teplo (1 %)."
     source-text="ERÚ, Roční zpráva o provozu teplárenských soustav České republiky (průměr za roky 2022–2024)"
     source-url="https://eru.gov.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2024"
@@ -149,7 +151,8 @@ Kromě moderních plynových kogeneračních zdrojů je v Česku v plánu také 
 {% include figure.html
     name="vyroba-2030.png"
     class="narrow-figure"
-    caption-above="**Po odklonu od uhlí (okolo roku 2030) bude hlavním zdrojem dálkového tepla zemní plyn**"
+    caption-above="**Po odklonu od uhlí (okolo roku 2030) bude hlavním zdrojem dálkového tepla zemní plyn** \\
+odhad celkové brutto výroby tepla: 130–140 PJ/rok (až o 8 % méně než dnes)"
     alt="Po roce 2030 může mít podle odhadů Fakt o klimatu plyn 60–68% podíl na výrobě brutto, biomasa a bioplyn 22–26% podíl. Další zdroje budou i nadále relativně málo významné: odpadní teplo, teplo okolního prostředí a elektřina (5–6 %), odpad (4–5 %), jaderné teplo (1–3 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -176,8 +179,8 @@ Kromě toho může přechod k zemnímu plynu přinést i čistší vzduch s pozi
 
 {% include expander-figure.html
     name="natural-gas"
-    label="Pomůže zemní plyn klimatu?"
     class="contrast-figure"
+    label="Pomůže zemní plyn klimatu?"
     content=natural_gas
 %}
 
@@ -196,7 +199,8 @@ V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifi
 {% include figure.html
     name="vyroba-2050.png"
     class="narrow-figure"
-    caption-above="**Z dlouhodobého hlediska lze výrobu dálkového tepla postavit na kombinaci tepelných čerpadel a nízkoemisních paliv**"
+    caption-above="**Z dlouhodobého hlediska lze výrobu dálkového tepla postavit na kombinaci tepelných čerpadel a nízkoemisních paliv** \\
+odhad celkové brutto výroby tepla: 100–120 PJ/rok  (až o 30 % méně než dnes)"
     alt="Po roce 2050 mohou podle odhadů Fakt o klimatu hrát nejvýznamější roli tři skupiny zdrojů: zdroje založené na elektřině (25–50 %), různé plyny jako zemní plyn, bioplyn, příp. vodík (10–45 %) a biomasa (25–28%). Zbytek i nadále může tvořit odpad (2–5 %) a jaderné teplo (3–7 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -241,8 +245,8 @@ Možné **zdroje tepla** pro teplárenská tepelná čerpadla:
 
 {% include expander-figure.html
     name="heat-pumps"
-    label="Jak fungují tepelná čerpadla v teplárenství?"
     class="contrast-figure"
+    label="Jak fungují tepelná čerpadla v teplárenství?"
     content=heat_pumps
 %}
 
