@@ -92,7 +92,7 @@ Celkově se ve formě dálkového tepla v roce 2023 v Česku spotřebovalo asi 1
 Naprostá většina dálkového tepla se dnes v Česku vyrábí spalováním paliv, z velké části fosilních (uhlí a zemního plynu). Třetím nejvýznamnějším zdrojem dálkového tepla je biomasa. Až s velkým odstupem následuje využití odpadního tepla v průmyslu a spalování zbytkového odpadu.
 
 {% include figure.html
-    name="vyroba-dnes.png"
+    name="vyroba-dnes.svg"
     class="narrow-figure"
     caption-above="**Zásadní roli ve výrobě tepla dnes hrají fosilní zdroje uhlí a zemní plyn** \\
 celková brutto výroba tepla: 142 PJ/rok"
@@ -149,7 +149,7 @@ Dnes se v Česku ve velkém plánuje a realizuje **odklon od uhlí** (a přechod
 Kromě moderních plynových kogeneračních zdrojů je v Česku v plánu také výstavba nových teplárenských zdrojů na biomasu a nových spaloven odpadu.[^spalovny] Teplárny Brno rovněž plánují okolo roku 2030 zprovoznit 42 km dlouhý horkovod z Dukovan. Po zkušenostech z plynové krize v letech 2021–2022 se dnes každá teplárna snaží své zdroje tepla aspoň zčásti diverzifikovat. I přes tyto plány lze očekávat, že po odklonu od uhlí bude v Česku mezi lety 2030–2035 hlavním palivem na výrobu dálkového tepla zemní plyn.
 
 {% include figure.html
-    name="vyroba-2030.png"
+    name="vyroba-2030.svg"
     class="narrow-figure"
     caption-above="**Po odklonu od uhlí (okolo roku 2030) bude hlavním zdrojem dálkového tepla zemní plyn** \\
 odhad celkové brutto výroby tepla: 130–140 PJ/rok (až o 8 % méně než dnes)"
@@ -197,7 +197,7 @@ Druhou možností je vyrábět dálkové teplo pomocí nízkoemisní elektřiny 
 V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifikace výroby tepla, která sníží spotřebu zemního plynu, tak nahrazení alespoň části zbývajícího plynu nízkoemisními palivy, jako je biometan. Velká část tepláren bude schopna výrobu tepla pomocí elektřiny a pomocí nízkoemisních paliv kombinovat a oba způsoby bude možné díky chytrému řízení efektivně střídat podle aktuální situace na trhu s elektřinou. Díky tomu bude možné provozní náklady na výrobu tepla snižovat.
 
 {% include figure.html
-    name="vyroba-2050.png"
+    name="vyroba-2050.svg"
     class="narrow-figure"
     caption-above="**Z dlouhodobého hlediska lze výrobu dálkového tepla postavit na kombinaci tepelných čerpadel a nízkoemisních paliv** \\
 odhad celkové brutto výroby tepla: 100–120 PJ/rok  (až o 30 % méně než dnes)"
