@@ -55,20 +55,17 @@ Rozorání mezí a polních cest, vysoušení mokřadů, vykácení lesíků a r
 **Pečovat o existující** krajinotvorné prvky, **obnovovat už neexistující** prvky (např. odvodněné mokřady či květnaté pásy) a **zakládat úplně nové** prvky (např. vysazovat stromořadí podél cest). 
 Kromě lokálních projektů a zapojení veřejnosti (viz příklad níže) jsou neméně důležité i systémové změny – na úrovni legislativy a souvisejících dotačních programů, které budou k péči o krajinotvorné prvky motivovat zemědělce i finančně. Svou roli hraje také osvěta, hlubší pochopení tématu odolnosti krajiny a ochota měnit dlouho používané způsoby hospodaření. 
 
-{% capture expander_content %}
 Obnova krajinotvorného prvku probíhá na lokální úrovni a často vychází z iniciativy jednotlivců či malých skupin. Vždy je třeba k ní přistupovat promyšleně, s ohledem na historii a podmínky dané lokality.
 
 Příkladem může být vysychající rašeliniště v přírodní rezervaci Nová louka. Díky lidem z místního ochranářského spolku dochází k jeho postupné obnově – odvodňovací kanály byly přehrazeny dřevěnými přepážkami (bez použití těžké techniky), aby voda neodtékala tak rychle.
 Rašeliniště tak postupně zarůstá, opět pomáhá s regulací vody v lokalitě a vytváří prostor pro život nejrůznějších rostlin a živočichů.
 
 {% include figure.html
-   name="priklad-raseliniste-nova-louka"
+   name="priklad-nova-louka.jpg"
    caption="Obnovené rašeliniště v Jizerských horách"
    alt="Obnovené rašeliniště v Jizerských horách"
    source-text="Adapterra Awards"
 %}
-
-
 
 
 ## Zdroje a poznámky
