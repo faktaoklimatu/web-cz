@@ -14,7 +14,7 @@ cover-source-author:      "Karsten Würth"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+cover-source-url:         "https://cs.m.wikipedia.org/wiki/Soubor:Northern-Lapwing-Vanellus-vanellus.jpg"
 perex: |
     TODO: Perex
 ---
