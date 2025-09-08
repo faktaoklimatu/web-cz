@@ -41,7 +41,7 @@
     phone: "+420 608 158 653"
     linkedin: "https://www.linkedin.com/in/jan-krcal/"
     twitter: "https://twitter.com/krcal_jan"
-  
+
   - id: "michal-berg"
     name: "Michal Berg"
     position: "Fundraising a partnerství"
@@ -172,6 +172,11 @@
   - name: "Martin Křivánek"
     summary: "Podílel se na textech webu, přispíval nápady a připomínkoval infografiky a články."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
+
+  - id: "matej-piro"
+    name: "Matěj Píro"
+    summary: "Pomáhal se psaním Python skriptů pro automatizaci datových grafik."
+    linkedin: "https://www.linkedin.com/in/mat%C4%9Bj-p%C3%ADro-69341388/"
 
   - name: "Jan Růžička"
     summary: "Muzikant a sounddesigner, který dává podcastu [2050](https://2050podcast.cz/) jeho charakteristický zvuk."
