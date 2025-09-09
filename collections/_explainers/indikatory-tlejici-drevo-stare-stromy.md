@@ -10,11 +10,9 @@ authors:
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-cover-source-author:      "Karsten Würth"
-cover-source-text:        "Unsplash"
-cover-source-license:     "Unsplash licence"
-cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+cover-source-author:      "Jiří Lněnička"
+cover-source-text:        "autorský archiv"
+cover-source-url:         "https://github.com/faktaoklimatu/web-cz/blob/preview-indikatory-zdravi-krajiny/assets-local/figures/indikatory-tlejici-drevo-stare-stromy/mrtve-drevo-cover2.jpg"
 perex:  Přestože mohou staré stromy a tlející dřevo působit jako jakýsi „nepořádek“ v lese, jejich přítomnost má pro lesní ekosystém velký význam.
 ---
 
