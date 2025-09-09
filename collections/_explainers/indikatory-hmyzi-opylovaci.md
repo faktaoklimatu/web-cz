@@ -3,19 +3,23 @@ layout:        explainer
 title:         "Hmyzí opylovači"
 slug:          "indikatory-hmyzi-opylovaci"
 redirect_from: "/indikatory-hmyzi-opylovaci"
+series-id:     "serie-indikatory-zdravi-krajiny"
+series-order:  "I"
 published:     2025-09-15
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
-tags-topics:   [ priroda ]
+tags-topics:   [ krajina-ekosystemy ]
 cover-source-author:      "Jiří Lněnička"
 cover-source-text:        "autorský archiv"
 cover-source-url:         "https://github.com/faktaoklimatu/web-cz/blob/preview-indikatory-zdravi-krajiny/assets-local/figures/indikatory-hmyzi-opylovaci/opylovac-drvodelka.jpg"
 perex: |
     Opylování si většina lidí nejspíše spojí hlavně se včelami, ale hmyzích opylovačů existuje mnoho různých druhů. Některé druhy jsou úzce navázány na konkrétní druhy rostlin a určité typy květenství.
 ---
+
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 
 ## Čeho si všímat

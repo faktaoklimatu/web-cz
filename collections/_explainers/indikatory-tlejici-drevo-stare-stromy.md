@@ -3,23 +3,27 @@ layout:        explainer
 title:         "Tlející dřevo a staré stromy"
 slug:          "indikatory-tlejici-drevo-stare-stromy"
 redirect_from: "/indikatory-tlejici-drevo-stare-stromy"
+series-id:     "serie-indikatory-zdravi-krajiny"
+series-order:  "IV"
 published:     2025-09-15
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
-tags-topics:   [ priroda ]
+tags-topics:   [ krajina-ekosystemy ]
 cover-source-author:      "Jiří Lněnička"
 cover-source-text:        "autorský archiv"
 cover-source-url:         "https://github.com/faktaoklimatu/web-cz/blob/preview-indikatory-zdravi-krajiny/assets-local/figures/indikatory-tlejici-drevo-stare-stromy/mrtve-drevo-cover2.jpg"
-perex:  Přestože mohou staré stromy a tlející dřevo působit jako jakýsi „nepořádek“ v lese, jejich přítomnost má pro lesní ekosystém velký význam.
+perex: |
+    Přestože mohou staré stromy a tlející dřevo působit jako jakýsi „nepořádek“ v lese, jejich přítomnost má pro lesní ekosystém velký význam.
 ---
 
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 ## Čeho si všímat?
 
-Kolik je v lese starých (odumírajících) stromů a dále kolik je zde tlejících (stojících nebo ležících) stromů a kmenů, ulomených větví a dalších částí stromů. 
+Kolik je v lese starých (odumírajících) stromů a dále kolik je zde tlejících (stojících nebo ležících) stromů a kmenů, ulomených větví a dalších částí stromů.
 
 {% include expander-figure.html
    name="vyznam-tlejiciho-dreva"
@@ -28,10 +32,10 @@ Kolik je v lese starých (odumírajících) stromů a dále kolik je zde tlejíc
    content="
 Lesy se hospodářsky využívají (získáváme z nich zejména dřevo), vedle toho však plní i řadu dalších, ekosystémových funkcí. Pro některé z těchto funkcí je přítomnost starých stromů a tlejícího dřeva v lese velice důležitá.
 
-- **Podporují biodiverzitu** – vytvářejí v lese řadu mikrostanovišť se specifickými podmínkami – může jít například o různé dutiny, praskliny, prostor pod kůrou či vývrty po aktivitách hmyzu. Na tyto podmínky jsou navázány nejrůznější druhy hub, mechů, brouků a podobně. Z hlediska biodiverzity jsou zásadní hlavně staré stromy a velké kusy tlejícího dřeva. 
-- **Podporují cirkulaci živin** – tlející dřevo je v neustálém procesu rozkladu. Živiny v něm uložené se díky tomu postupně uvolňují do půdy a stávají se dostupnými pro další organismy. Z hlediska živin mají význam zejména tenké větve a menší kusy dřeva, neboť se rozkládají rychle. 
+- **Podporují biodiverzitu** – vytvářejí v lese řadu mikrostanovišť se specifickými podmínkami – může jít například o různé dutiny, praskliny, prostor pod kůrou či vývrty po aktivitách hmyzu. Na tyto podmínky jsou navázány nejrůznější druhy hub, mechů, brouků a podobně. Z hlediska biodiverzity jsou zásadní hlavně staré stromy a velké kusy tlejícího dřeva.
+- **Podporují cirkulaci živin** – tlející dřevo je v neustálém procesu rozkladu. Živiny v něm uložené se díky tomu postupně uvolňují do půdy a stávají se dostupnými pro další organismy. Z hlediska živin mají význam zejména tenké větve a menší kusy dřeva, neboť se rozkládají rychle.
 - **Ukládají uhlík do půdy** – podobně jako živiny se i uhlík při rozkladu biomasy postupně uvolňuje do půdy, kde může zůstat dlouhodobě uložen. Část se také uvolňuje do atmosféry ve formě CO<sub>2</sub>. Staré (živé) stromy jsou z hlediska zachytávání a ukládání uhlíku důležité mimo jiné svou velikostí – s věkem se zvětšuje jejich koruna (a listová plocha), proto ve srovnání s mladými stromy zachytí mnohem více oxidu uhličitého a uloží více uhlíku do své biomasy. Stejné množství uhlíku, jaké mladý strom uloží za pár desítek let své existence, dokáže velmi starý strom uložit za jediný rok.
-- **Zadržují vláhu** – velké kusy tlejícího dřeva fungují jako „houba“ – absorbují vodu, kterou pak mohou využít okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace – ochlazuje okolní vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí. 
+- **Zadržují vláhu** – velké kusy tlejícího dřeva fungují jako „houba“ – absorbují vodu, kterou pak mohou využít okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace – ochlazuje okolní vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí.
 "
 %}
 
@@ -44,7 +48,7 @@ Lesy se hospodářsky využívají (získáváme z nich zejména dřevo), vedle 
 
 ## Jaký stav lze pozorovat?
 
-### Tlející dřevo 
+### Tlející dřevo
 Nelze obecně určit, jaké množství tlejícího dřeva v lese je optimální – vždy záleží na konkrétních podmínkách dané lokality. Do lesa však toto dřevo určitě patří a plní v něm důležité funkce (viz výše).
 
 V průměru se na jednom hektaru lesa v Česku nachází 20 m<sup>3</sup> tlejícího dřeva. (1 m<sup>3</sup> si lze představit jako kmen zhruba 20 metrů vysokého rovného smrku s průměrem 35 cm). Množství se vždy odvíjí od toho, jak se daný les využívá a jak se v něm hospodaří[^tlejici-drevo-zdroj].
