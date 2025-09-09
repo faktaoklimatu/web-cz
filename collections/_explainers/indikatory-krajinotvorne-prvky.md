@@ -15,13 +15,13 @@ cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
-perex: |
-    TODO: Perex
+perex:     Už název napovídá, že krajinotvorné prvky tvoří, přesněji řečeno spoluutvářejí krajinu. Jsou to takové malé oázy v často jednotvárné krajině, která se intenzivně využívá k produkci potravin a ve které pro pestrý život mnohdy nejsou vhodné podmínky. 
+ 
 ---
 
 ## Čeho si všímat
 
-Lze si všímat, kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích[^EVP].
+Kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích[^EVP].
 
 {% include figure.html
     name="krajinotvorni-prvek-strom.jpg"
