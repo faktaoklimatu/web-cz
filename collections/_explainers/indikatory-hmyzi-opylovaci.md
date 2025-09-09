@@ -10,11 +10,9 @@ authors:
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ priroda ]
-cover-source-author:      "Karsten Würth"
-cover-source-text:        "Unsplash"
-cover-source-license:     "Unsplash licence"
-cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+cover-source-author:      "Jiří Lněnička"
+cover-source-text:        "autorský archiv"
+cover-source-url:         "https://github.com/faktaoklimatu/web-cz/blob/preview-indikatory-zdravi-krajiny/assets-local/figures/indikatory-hmyzi-opylovaci/opylovac-drvodelka.jpg"
 perex: |
     Opylování si většina lidí nejspíše spojí hlavně se včelami, ale hmyzích opylovačů existuje mnoho různých druhů. Některé druhy jsou úzce navázány na konkrétní druhy rostlin a určité typy květenství.
 ---
