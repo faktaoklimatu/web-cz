@@ -1,7 +1,7 @@
 ---
 layout:        topic
 title:         "Krajina a ekosystémy"
-tag-name:	"krajina-ekosystémy"
+tag-name:      "krajina-ekosystémy"
 slug:          "krajina-ekosystemy"
 redirect_from: "/krajina-ekosystemy"
 published:     2022-04-19
@@ -149,17 +149,16 @@ subtopics:
   - uhlikove-offsety-problemy
   - uhlikove-offsety-otazky
 
-- id:	       "indikatory-zdravi-krajiny"
+- id:          "serie-indikatory-zdravi-krajiny"
   title:       "Indikátory zdraví krajiny"
+  series:      True
+  series-short-lead: |
+    TODO: Doplnit krátkou anotaci.
   lead: |
     TODO: Doplnit anotaci.
   content:
     - indikatory-hmyzi-opylovaci
     - indikatory-krajinotvorne-prvky
-    - indikatory-tlejici-drevo-stare-stromy
-    - indikatory-pestrost-lesa
-    - indikatory-prirozene-druhove-slozeni
     - indikatory-ptaci
-    - indikatory-uhlik-v-pude
-    - indikatory-volne-tekouci-reky
+    - indikatory-tlejici-drevo-stare-stromy
 ---

@@ -3,22 +3,25 @@ layout:        explainer
 title:         "Ptáci zemědělské krajiny"
 slug:          "indikatory-ptaci"
 redirect_from: "/indikatory-ptaci"
+series-id:     "serie-indikatory-zdravi-krajiny"
+series-order:  "III"
 published:     2025-09-15
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
 weight:        105
 tags-scopes:   [ svet ]
-tags-topics:   [ priroda ]
+tags-topics:   [ krajina-ekosystemy ]
 cover-source-author:      "Karsten Würth"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://cs.m.wikipedia.org/wiki/Soubor:Northern-Lapwing-Vanellus-vanellus.jpg"
 perex: |
-    Ptáci jsou v polních a lučních ekosystémech na vrcholu potravního řetězce, proto je jejich přítomnost v krajině dobrým znamením. Ukazuje, že krajina je dost pestrá na to, aby zde nalezli dostatek potravy, vhodné podmínky k hnízdění a podobně. 
+    Ptáci jsou v polních a lučních ekosystémech na vrcholu potravního řetězce, proto je jejich přítomnost v krajině dobrým znamením. Ukazuje, že krajina je dost pestrá na to, aby zde nalezli dostatek potravy, vhodné podmínky k hnízdění a podobně.
 ---
 
+{% include series-box.html series-id=page.series-id selected=page.slug %}
 
 ## Čeho si všímat
 
@@ -33,8 +36,6 @@ Kolik lze na polích a loukách pozorovat ptáků zemědělské krajiny. K nim p
 - **Rychle reagují na změny** – odletí, pokud jim prostředí z nějakého důvodu přestane vyhovovat
 - **Jsou na vrcholu potravního řetězce** polních a lučních ekosystémů – jestliže se tedy na poli vyskytuje velké množství různých ptáků, lze z toho usoudit, že zde mají dostatek potravy – tedy že je zde i mnoho různých druhů hmyzu, semen rostlin a podobně
 - **Existuje k nim dostatek dat**, která umožňují srovnávat a získat ucelený obraz – v Česku probíhá systematický monitoring těchto ptáků už od 80. let 20. stol.
-
-
 "
 %}
 
