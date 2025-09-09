@@ -177,6 +177,7 @@ subtopics:
     a: |
       Do roku 2030 není možné postavit žádný nový velký jaderný reaktor. Pokud se pustíme do výstavby nových jaderných bloků, budou uvedeny do provozu nejdříve v druhé polovině třicátých let (realisticky spíše až kolem roku 2040), a v roce 2030 tak nijak neovlivní výrobu elektřiny.
   content:
+  - ceny-elektriny-oze
   - srovnani-energetickych-scenaru-cr
   - scenar-transformace-elektroenergetiky
   - 2024-vyroba-elektriny-v-cesku-bez-uhli
