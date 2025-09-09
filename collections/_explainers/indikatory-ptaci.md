@@ -16,16 +16,13 @@ cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://cs.m.wikipedia.org/wiki/Soubor:Northern-Lapwing-Vanellus-vanellus.jpg"
 perex: |
-    TODO: Perex
+    Ptáci jsou v polních a lučních ekosystémech na vrcholu potravního řetězce, proto je jejich přítomnost v krajině dobrým znamením. Ukazuje, že krajina je dost pestrá na to, aby zde nalezli dostatek potravy, vhodné podmínky k hnízdění a podobně. 
 ---
 
 
 ## Čeho si všímat
 
-
-Mezi ptáky zemědělské krajiny (tedy polí a luk) patří druhy, jež jsou na tyto ekosystémy navázány – získávají zde potravu, hledají místo k hnízdění a podobně. Konkrétně je to například skřivan polní, bramborníček hnědý, koroptev polní, linduška luční, hrdlička divoká nebo čejka chocholatá [^ptaky-NRL].
-
-
+Kolik lze na polích a loukách pozorovat ptáků zemědělské krajiny. K nim patří například skřivan polní, bramborníček hnědý, koroptev polní, linduška luční, hrdlička divoká nebo čejka chocholatá [^ptaky-NRL].
 
 
 {% include expander-figure.html
