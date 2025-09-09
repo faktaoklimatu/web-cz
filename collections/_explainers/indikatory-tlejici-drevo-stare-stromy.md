@@ -40,7 +40,7 @@ Lesy se hospodářsky využívají (získáváme z nich zejména dřevo), vedle 
 
 {% include figure.html
     name="mrtve-drevo.jpg"
-    caption="Tlející dřevo v lesích v okolí Hádecké planinky v Brně."
+    caption="Tlející dřevo v lesích v okolí Hádecké planinky v Brně"
     alt="Tlející dřevo v lesích v okolí Hádecké planinky v Brně"
     source-text="Andy Snováková"
 %}
@@ -78,6 +78,13 @@ Pro lesní hospodaření je zásadní přístup, který vždy bere v úvahu podm
 - **Rozmístění dřeva v lese** – některé organismy navázané na tlející dřevo mají specifické nároky na teplo a světlo – např. mechům vyhovuje spíše stín a vlhko, zatímco lišejníkům spíše teplejší a světlejší podmínky. Tlející dřevo by tedy mělo být v lese rozmístěno tak, aby různé kusy byly vystaveny různým podmínkám.
 - **Typ lesa a jeho využívání** – v lesích s vyšší návštěvností (lesy určené převážně k společenskému využití) je při ponechávání tlejícího dřeva důležité zohlednit i bezpečnost lidí – např. zamezit pádu stromu na cestu[^bezpecnost-navstevniku]. V hospodářských lesích jde spíše o to vhodně skloubit těžbu s ponecháním určitého množství dřeva v lese k zetlení.
 - **Kontinuita** – pro fungování lesa je důležité, aby se v něm vyskytovaly různé typy tlejícího dřeva (různé druhy stromů, různé tloušťky) v různém stadiu rozkladu.
+
+{% include figure.html
+    name="tlejici_drevo.jpg"
+    caption="Velké kusy tlejícího dřeva v CHKO Český les"
+    alt="Velké kusy tlejícího dřeva v CHKO Český les"
+    source-text="Jiří Lněnička"
+%}
 
 ## Zdroje a poznámky
 Odbornou konzultaci k textu poskytli experti z Mendelovy univerzity v Brně.
