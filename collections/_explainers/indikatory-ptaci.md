@@ -77,7 +77,7 @@ Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, kt
 
 
 {% include figure.html
-   name="priklad-kozmicke-ptaci-louky"
+   name="kozmicke-ptaci-louky.jpg"
    caption="Kozmické ptačí louky"
    alt="Kozmické ptačí louky"
    source-text="Adapterra Awards"
