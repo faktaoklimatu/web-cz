@@ -8,8 +8,8 @@ weight:      89
 tags-scopes: [ svet ]
 tags-topics: [ budoucnost, emise, klima ]
 caption:     ""
-data-our:    "https://docs.google.com/spreadsheets/d/1J2QcNjXzsRrf8Z8Y3Xh41R_EHlqYKt6CAuN1NUPg2K0"
-data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107" ] ]
+data-our:    "https://docs.google.com/spreadsheets/d/15It6W3FyrIIoyhZQ-twXJIlwKlvlH_ykvuVRBMz68ZA/edit?usp=sharing"
+data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2024" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107" ] ]
 ---
 
 Tato grafika se věnuje závislosti budoucího oteplení na množství vypuštěných emisí CO<sub>2</sub> a znázorňuje podrobněji pravděpodobnosti udržení oteplení pod danou hranicí.
@@ -18,19 +18,19 @@ Tato grafika se věnuje závislosti budoucího oteplení na množství vypuště
 
 {% include preview-box.html
     title="Koncept: uhlíkový rozpočet"
-    text="Globální oteplení je přibližně přímo úměrné celkovému množství CO2, které bylo vypuštěno do atmosféry"
+    text="Globální oteplení je přibližně přímo úměrné celkovému množství COCO<sub>2</sub>, které bylo vypuštěno do atmosféry"
     slug="koncept-uhlikovy-rozpocet"
 %}
 
-* Celkové oteplení planety závisí na tom, kolik CO<sub>2</sub> vypustíme celkem do atmosféry do doby, než dosáhneme uhlíkové neutrality. Zároveň jsme však schopni předvídat jen s určitou pravděpodobností. Konkrétně: pokud bude od roku 2020 celkem vypuštěno 2000 Gt CO<sub>2</sub>, můžeme s pravděpodobností 67 % očekávat, že globální oteplení překročí hodnotu 2 °C. Jestliže bude vypuštěno jen 1100 Gt CO<sub>2</sub>, bude pravděpodobnost překročení oteplení o 2 °C jen 33 %, pravděpodobnosti 50 % pak odpovídají celkové emise přibližně 1400 Gt CO<sub>2</sub>. Jinými slovy – čím vyšší chceme mít jistotu, že určitá hranice oteplení překročena nebude, tím méně oxidu uhličitého si můžeme dovolit vypustit.
+* Celkové oteplení planety závisí na tom, kolik CO<sub>2</sub> vypustíme celkem do atmosféry do doby, než dosáhneme uhlíkové neutrality. Zároveň jsme však schopni předvídat jen s určitou pravděpodobností. Konkrétně: pokud bude od roku 2024 celkem vypuštěno 1800 Gt CO<sub>2</sub>, můžeme s pravděpodobností 67 % očekávat, že globální oteplení překročí hodnotu 2 °C. Jestliže bude vypuštěno jen 900 Gt CO<sub>2</sub>, bude pravděpodobnost překročení oteplení o 2 °C jen 33 %, pravděpodobnosti 50 % pak odpovídají celkové emise přibližně 1250 Gt CO<sub>2</sub>. Jinými slovy – čím vyšší chceme mít jistotu, že určitá hranice oteplení překročena nebude, tím méně oxidu uhličitého si můžeme dovolit vypustit.
 
 * Tyto různé pravděpodobnosti si můžeme snadno představit na příkladu házení kostkou: 33% pravděpodobnost odpovídá tomu, že nám padne některé ze dvojice čísel (třeba 1 nebo 2). Pravděpodobnost 67 % odpovídá tomu, že padne některé ze čtveřice čísel (třeba 3, 4, 5 nebo 6).
 
-* Oteplení je udáváno vzhledem k teplotám v letech 1850–1900 (přesněji řečeno jde o průměrnou roční teplotní anomálii). Kumulativní emise, znázorněné na horizontální ose, se vztahují k roku 2020.
+* Oteplení je udáváno vzhledem k teplotám v letech 1850–1900 (přesněji řečeno jde o průměrnou roční teplotní anomálii). Kumulativní emise, znázorněné na horizontální ose, se vztahují k roku 2024.
 
 ## Které souvislosti je důležité zmínit?
 
-* Od začátku průmyslové revoluce lidstvo vypustilo 2300 Gt CO<sub>2</sub> (to je 2 300 000 000 000 tun), což vedlo k nárůstu koncentrací CO<sub>2</sub> z 280 ppm na 420 ppm a průměrnému oteplení o cca 1,2 °C (i když třeba v ČR se průměrná teplota zvýšila o více než 2 °C, a na Špicberkách dokonce o více než 4 °C).
+* Od začátku průmyslové revoluce lidstvo vypustilo 2600 Gt CO<sub>2</sub> (to je 2 300 000 000 000 tun), což vedlo k nárůstu koncentrací CO<sub>2</sub> z 280 ppm na 420 ppm a průměrnému oteplení o cca 1,2 °C (i když třeba v ČR se průměrná teplota zvýšila o více než 2 °C, a na Špicberkách dokonce o více než 4 °C).
 
 * Úvahy o zbývajícím uhlíkovém rozpočtu vychází z dobře prověřeného faktu, že **globální oteplení je přibližně přímo úměrné celkovému množství CO<sub>2</sub>, které bylo vypuštěno do atmosféry**.[^58] [^55] [^56] [^57] Jinak řečeno: čím více emisí skleníkových plynů vypustíme, tím vyšší bude průměrná světová teplota. Když si tedy stanovíme určitou hranici oteplení, kterou nechceme překročit, dá se vypočítat, kolik CO<sub>2</sub> ještě můžeme jako lidstvo v budoucnu vypustit, abychom se pod danou hranicí udrželi. Mluvíme pak o zbývajícím uhlíkovém rozpočtu pro danou hranici.
 
