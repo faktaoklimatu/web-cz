@@ -8,7 +8,7 @@ weight:     90
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Z historických dat i modelování budoucího vývoje plyne, že oteplování planety je (přibližně) přímo úměrné nárůstu koncentrací CO<sub>2</sub> v atmosféře. Přesněji řečeno: každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm (parts per million) vede k nárůstu teploty zhruba o 0,1 °C."
-data-our:   "https://docs.google.com/spreadsheets/d/1tAKT3SMfaM4oeAZL-RSCgBTfJyKnyvsyao3yAQArd_U/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/13E_hiW48KhdTtntw05xtNDPQVuDEa2-D4ptyOhkV6XI/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], [ "Keelingova křivka", "https://keelingcurve.ucsd.edu/" ] ]
 ---
 
@@ -20,7 +20,7 @@ data-orig:  [ [ "Zdrojová data NASA", "https://data.giss.nasa.gov/gistemp/" ], 
 
 ## Co je zobrazeno v grafu
 
-Body v levé části grafu zobrazují jednotlivé roky v období 1884–2020. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že závislost přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede k nárůstu teploty zhruba o 0,1 °C**. Tato závislost je podrobněji popsána níže v textu a také v souvisejícím článku [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/otepleni-zvysenim-koncentrace-co2).
+Body v levé části grafu zobrazují jednotlivé roky v období 1884–2024. Umístění bodu vždy odpovídá hodnotám koncentrace CO<sub>2</sub> v daném roce (na vodorovné ose) a hodnotám teplotní anomálie pro daný rok (na svislé ose). V grafu je vidět, že závislost přibližně odpovídá přímé úměrnosti, kdy **každé zvýšení koncentrací CO<sub>2</sub> o 10 ppm vede k nárůstu teploty zhruba o 0,1 °C**. Tato závislost je podrobněji popsána níže v textu a také v souvisejícím článku [Jak moc se oteplí, když se zvýší koncentrace CO₂?](/explainery/otepleni-zvysenim-koncentrace-co2).
 
 Body ukazující jednotlivé roky jsou barevně odlišeny (vždy po 20 letech), a je tak vidět, že se nárůst koncentrací CO<sub>2</sub> v posledních letech zrychluje, což odpovídá zvyšujícím se každoročním emisím CO<sub>2</sub>.
 
