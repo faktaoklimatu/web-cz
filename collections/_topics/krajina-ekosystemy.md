@@ -153,9 +153,9 @@ subtopics:
   title:       "Indikátory zdraví krajiny"
   series:      True
   series-short-lead: |
-    TODO: Doplnit krátkou anotaci.
+    TODO: Tento text je součástí série, která se věnuje několika indikátorům zdravé krajiny.
   lead: |
-    TODO: Doplnit anotaci.
+    TODO: I když mnohdy intuitivně cítíme, zda je krajina kolem nás zdravá a daří se v ní životu (nebo ne), definovat zdraví krajiny je obtížné. Přesto si i laik může povšimnout některých věcí, které v krajině jsou, nebo zde naopak chybějí. Několik snadno pozorovatelných indikátorů zdravé krajiny, kterým se věnuje i evropské Nařízení o obnově přírody z roku 2022, přibližuje tato série.  
   content:
     - indikatory-hmyzi-opylovaci
     - indikatory-krajinotvorne-prvky
