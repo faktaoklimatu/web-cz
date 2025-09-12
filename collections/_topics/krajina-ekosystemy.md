@@ -1,7 +1,7 @@
 ---
 layout:        topic
 title:         "Krajina a ekosystémy"
-tag-name:	"krajina-ekosystémy"
+tag-name:      "krajina-ekosystémy"
 slug:          "krajina-ekosystemy"
 redirect_from: "/krajina-ekosystemy"
 published:     2022-04-19
@@ -148,4 +148,17 @@ subtopics:
   - uhlikove-offsety
   - uhlikove-offsety-problemy
   - uhlikove-offsety-otazky
+
+- id:          "serie-indikatory-zdravi-krajiny"
+  title:       "Indikátory zdraví krajiny"
+  series:      True
+  series-short-lead: |
+    Tento text je součástí série, která se věnuje několika indikátorům zdravé krajiny.
+  lead: |
+    I když mnohdy intuitivně cítíme, zda je krajina kolem nás zdravá a daří se v ní životu (nebo ne), definovat zdraví krajiny je obtížné. Přesto si i laik může povšimnout, co krajině je a co zde naopak chybí. Několik snadno pozorovatelných indikátorů zdravé krajiny, kterým se věnuje i evropské Nařízení o obnově přírody z roku 2022, přibližuje tato série.  
+  content:
+    - indikatory-hmyzi-opylovaci
+    - indikatory-krajinotvorne-prvky
+    - indikatory-ptaci
+    - indikatory-tlejici-drevo-stare-stromy
 ---
