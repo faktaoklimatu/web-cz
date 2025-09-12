@@ -59,7 +59,7 @@ Přesto lze z dostupných dat vyčíst **pokles v populacích opylovačů v cel�
 {% include expander-figure.html
    name="opylovaci-pokles"
    class="contrast-figure"
-   label="Co tento pokles způsobuje?"
+   label="Co způsobuje pokles v populacích opylovačů?"
    content="
 
 **Intenzivní zemědělství**
