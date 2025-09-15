@@ -12,11 +12,11 @@ authors:
 weight:        105
 tags-scopes:   [ svet ]
 tags-topics:   [ krajina-ekosystemy ]
-cover-source-author:      "Karsten Würth"
+cover-source-author:      "Stephan Eickschen"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/windmill-surrounded-by-grass-during-daytime-w_a40DuyPAc"
+cover-source-url:         "https://unsplash.com/photos/red-and-blue-flowers-on-green-grass-field-during-daytime-UqJsmLA52Qc"
 perex: |
     Už název napovídá, že krajinotvorné prvky tvoří, přesněji řečeno spoluutvářejí krajinu. Jsou to takové malé oázy v často jednotvárné krajině, která se intenzivně využívá k produkci potravin a ve které pro pestrý život mnohdy nejsou vhodné podmínky.
 ---
