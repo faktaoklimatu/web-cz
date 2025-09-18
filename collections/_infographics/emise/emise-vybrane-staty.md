@@ -17,7 +17,7 @@ data-orig:
 
 * Všechny hodnoty emisí uvádíme v jednotkách <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 * Roční objemy emisí skleníkových plynů jsou v různých státech EU různé - nejvíce emisí produkují Německo, Francie a Itálie – ale tyto země mají také nejvíce obyvatel. Aby bylo možné čísla srovnávat, uvádíme přepočet v tunách CO<sub>2</sub>eq na obyvatele na rok.
-* Výběr států pro graf: zobrazení všech států EU by bylo nepřehledné a zásadní rozdíly by nebyly dobře vidět. Vybrali jsme tedy vedle ČR šest dalších států tak, aby byly zastoupeny sousední země i určité extrémy v Evropě, a celý vzorek tak byl co nejvíce reprezentativní. Z vybraných zemí má ČR nejvyšší emise, což ale odráží i pozici ČR v EU. (Vyšší emise na obyvatele než ČR má jen Lucembursko a Irsko.)
+* Výběr států pro graf: zobrazení všech států EU by bylo nepřehledné a zásadní rozdíly by nebyly dobře vidět. Vybrali jsme tedy vedle ČR šest dalších států tak, aby byly zastoupeny sousední země i určité extrémy v Evropě, a celý vzorek tak byl co nejvíce reprezentativní. Z vybraných zemí má ČR nejvyšší emise, což ale odráží i pozici ČR v EU. (Vyšší emise na obyvatele než ČR má jen Lucembursko, Irsko, Kypr a Polsko.)
 * V grafu jsou zobrazeny <glossary id="antropogennisklenikoveplyny">antropogenní emise</glossary> CO<sub>2</sub> a N<sub>2</sub>O, CH<sub>4</sub>, HFC, PFC, SF<sub>6</sub>, NF<sub>3</sub> vyjádřené jako <glossary id="co2eq">CO<sub>2</sub>eq</glossary>.
 
 ## Co znamenají jednotlivé sektory a jaké jsou v nich rozdíly v rámci EU?
