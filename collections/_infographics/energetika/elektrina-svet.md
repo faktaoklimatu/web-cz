@@ -34,6 +34,6 @@ data-orig:  [[ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Na stránkách Emberu je možné najít i [interaktivní dashboard](https://ember-energy.org/data/electricity-data-explorer/), kde lze data procházet po jednotlivých zemích i zdrojích energie.
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Na stránkách Emberu je možné najít i [interaktivní dashboard](https://ember-energy.org/data/electricity-data-explorer/), kde lze data procházet po jednotlivých zemích i zdrojích energie.
 * Ember vychází především z dat Eurostatu pro Evropskou unii, z národních databází pro USA, Čínu, Indii a další větší státy a z mezinárodní datové sekce amerického ministerstva energetiky pro ostatní státy světa.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2025/) a [na celém světě](https://ember-energy.org/latest-insights/global-electricity-review-2025/).

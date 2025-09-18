@@ -8,7 +8,7 @@ weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2024, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
-data-orig:  [[ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-world-regions.ipynb" ], ["Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/"], ["OSN (populace)", "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx"]]
+data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-world-regions.ipynb"], ["Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/"], ["OSN (populace)", "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx"]]
 ---
 
 ## Jak číst tento graf
@@ -24,7 +24,7 @@ data-orig:  [[ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-
 * Z grafu jsou také patrné **trendy jednotlivých regionů**:
   * V **Evropské unii** se spotřeba elektřiny na osobu prakticky nemění, dochází však k výraznému nahrazování uhlí ve výrobě elektřiny obnovitelnými zdroji.
   * Spotřeba elektřiny na osobu v **USA** mírně klesla, stále je však mnohonásobně vyšší než světový průměr. Od roku 2007 dochází k poklesu podílu uhlí ve výrobě elektřiny, které je však nahrazováno především zemním plynem, částečně také obnovitelnými zdroji.
-  * V **Číně** se spotřeba elektřiny na osobu zvýšila mezi lety 2000 a 2024 pětinásobně. Došlo k navyšování kapacit všech zdrojů výroby elektřiny, přesto uhlí je v Číně stále dominujícím zdrojem s 58% podílem.
+  * V **Číně** se spotřeba elektřiny na osobu zvýšila mezi lety 2000 a 2024 pětinásobně. Došlo k navyšování kapacit všech zdrojů výroby elektřiny, přesto uhlí je v Číně stále dominujícím zdrojem s 58% podílem (avšak v porovnání se 78 % v roce 2000).
   * V **Indii** došlo k více než dvojnásobnému nárůstu výroby elektřiny na osobu v daném období, přesto je však méně než poloviční ve srovnání s celosvětovým průměrem. Uhlí je stále dominantním zdrojem při výrobě elektřiny se 75% podílem, zároveň dochází i k pozvolnému rozvoji ostatních zdrojů.
   * **Ostatní státy světa** představují velice různorodou skupinu, kde výroba elektřiny na osobu některých států převyšuje USA (například v Kanadě nebo v ropných státech blízkého východu), zároveň v mnoha jiných státech je nižší než v Indii (zpravidla v afrických a některých asijských státech).
 * Graf zobrazuje elektřinu vyrobenou v jednotlivých regionech, nikoli skutečně spotřebovanou. Například v případě České republiky tvoří čistý export 9 % vyrobené elektřiny. U velkých regionů v grafu je však dovoz a vývoz prakticky zanedbatelný.
@@ -33,7 +33,7 @@ data-orig:  [[ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/) (dříve nazývaný Sandbag). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Na stránkách Emberu je možné najít i [interaktivní dashboard](https://ember-energy.org/data/electricity-data-explorer/), kde lze data procházet po jednotlivých zemích i zdrojích energie.
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Na stránkách Emberu je možné najít i [interaktivní dashboard](https://ember-energy.org/data/electricity-data-explorer/), kde lze data procházet po jednotlivých zemích i zdrojích energie.
 * Ember vychází především z dat Eurostatu pro Evropskou unii, z národních databází pro USA, Čínu, Indii a další větší státy a z mezinárodní datové sekce amerického ministerstva energetiky pro ostatní státy světa.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-climate.org/insights/research/european-electricity-review-2025/) a [na celém světě](https://ember-energy.org/latest-insights/global-electricity-review-2025/).
 * Data o populaci jsou převzata od Organizace spojených národů.
