@@ -18,7 +18,7 @@ Graf znázorňuje **vývoj sdružených nákladů na výrobu energie (LCOE – L
 
 Sdružená cena energie je veličina umožňující srovnat ekonomickou výhodnost různých zdrojů energie. Počítá se jako podíl veškerých nákladů spojených se stavbou, provozem a likvidací elektrárny (včetně případného nákupu paliva) a množství energie, které elektrárna vyrobí za dobu své životnosti. Hodnoty uvádíme v korunách za kilowatthodinu. Ceny nezahrnují dotace ani ceny emisních povolenek.
 
-Graf ukazuje výrazný pokles nákladů větrných a hlavně solárních zdrojů, s výjimkou období určitého nárůstu mezi lety 2021–2025 (z důvodu celosvětových inflačních tlaků jako COVID, energetická krize). Náklady na výrobu solární elektřiny se v roce 2025 opět vrátily ke klesajícímu trendu, pro větrnou elektřinu k tomu zatím nedošlo.
+Graf ukazuje výrazný pokles nákladů větrných a hlavně solárních zdrojů, s výjimkou období určitého nárůstu mezi lety 2021–2025 (z důvodu celosvětových inflačních tlaků v důsledku pandemie COVID-19 nebo energetické krize). Náklady na výrobu solární elektřiny se v roce 2025 opět vrátily ke klesajícímu trendu, pro větrnou elektřinu k tomu zatím nedošlo.
 
 ## Metodické poznámky
 
