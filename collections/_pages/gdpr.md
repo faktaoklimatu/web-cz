@@ -6,7 +6,7 @@ slug: gdpr
 <div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 {:.perex}
-Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů. Platné od 6. října 2020, naposledy aktualizovány 13.2.2025.
+Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů. Platné od 6. října 2020, naposledy aktualizovány 18.9.2025.
 
 Tento dokument může být průběžně aktualizován, aby reflektoval změny v právních požadavcích nebo v našich postupech. 
 
@@ -51,6 +51,28 @@ V této databázi uchováváme:
  * telefonní číslo (volitelně),
  * e-mailovou adresu.
 
+### Zpracování osobních údajů při poskytování online kurzu
+
+Při registraci do online kurzu na adrese www.dekarbonizujemecesko.cz budete zařazeni do databáze účastníků kurzu.
+
+V této databázi uchováváme:
+ * jméno, příjmení,
+ * e-mailovou adresu,
+ * údaje o průběhu kurzu.
+
+Osobní údaje zpracováváme za následujícími účely:
+
+1) Poskytování služeb kurzu a zajištění funkčnosti služby (právní základ: plnění smlouvy pro které je zpracování údajů nezbytné - poskytování kurzu)
+   * Umožnění přihlášení a přístupu do aplikace
+   * Sledování pokroku v kurzu
+   * Generování certifikátů o absolvování
+   * Zasílání transakčních e-mailů
+   * Technická podpora a řešení problémů s přístupem
+   * Zasílání dotazníku zpětné vazby po dokončení kurzu
+
+2) Plnění povinností vůči poskytovateli dotace (právní základ: plnění právní povinnosti)
+   * Reporting účastníků kurzu Státnímu fondu životního prostředí (SFŽP) jako poskytovateli dotace na realizaci kurzu
+   
 ### Analytika na webových stránkách
 
 K analýze návštěvnosti na našich webových stránkách a k jejich vylepšování používáme Google Analytics. Tato služba používá soubory cookie k rozpoznání opakovaných návštěv a ke sledování interakce s webem. Data jsou ukládána anonymizovaně a neumožňují přímou identifikaci konkrétních osob.
@@ -62,6 +84,8 @@ Osobní údaje uchováváme po dobu nezbytně nutnou pro výše uvedené účely
 * Plnění zákonných povinností – dle příslušných právních předpisů (např. zákon o účetnictví).
 * Oprávněný zájem správce – do ukončení oprávněného zájmu.
 * Údaje zpracovávané na základě souhlasu – do odvolání souhlasu.
+* Údaje zpracováváné při poskytování online kurzu www.dekarbonizujemecesko.cz - po dobu poskytování služby.
+* Údaje týkající se online kurzu www.dekarbonizujemecesko.cz, týkající se plnění povinností vůči poskytovateli dotace - do konce roku 2035.
 
 Po uplynutí doby archivace jsou osobní údaje buď automaticky vymazány, nebo anonymizovány.
 
