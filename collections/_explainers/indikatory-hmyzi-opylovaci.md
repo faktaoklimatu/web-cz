@@ -114,6 +114,7 @@ Druhovou pestrost i množství opylovačů se díky vhodnému managementu podař
 
 ## Zdroje a poznámky
 Text vznikl na základě konzultací s několika experty a expertkami, kteří se tématu opylovačů v Česku věnují.
+
 [^motyli-zdroj]: [Seznam motýlů vyskytujících se v ČR](https://www.lepidoptera.cz/motyli/)
 [^cmelaci-zdroj]: Více viz [Akademie věd ČR](https://web-api.academia.cz/uploads/Strategie_25_web_dc61f972ae.pdf)
 [^vcely-zdroj]: Viz [Pollinator Academy](https://pollinatoracademy.eu/pollinators/bees/)
