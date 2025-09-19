@@ -28,7 +28,7 @@ perex: |
 - Rozmanité jsou i nástroje, kterými státy platí za rozvoj obnovitelných zdrojů, případně kterými kompenzují vysoké ceny zranitelným skupinám spotřebitelů.
 " %}
 
-Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po Ruské invazi na Ukrajinu v roce 2022 a související "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. Mnohé hlasy přisuzují zdražování Zelené dohodě pro Evropu (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren.
+Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po Ruské invazi na Ukrajinu v roce 2022 a související "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. Mnohé hlasy přisuzují zdražování [Zelené dohodě pro Evropu](/explainery/zelena-dohoda-pro-evropu) (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren.
 
 Realita je však složitější a do cen pro koncové zákazníky vstupuje mnoho různých, navzájem provázaných faktorů. Jak se tedy cena na fakturách za elektřinu stanovuje a jakou roli v tom opravdu hrají obnovitelné zdroje?
 
