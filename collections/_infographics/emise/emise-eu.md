@@ -9,8 +9,8 @@ tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí 27 členských států EU a přepočet na obyvatele."
 data-orig:
-  - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
   - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-EU.ipynb" ]
+  - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
 ---
 
 ## Jak číst tento graf?
@@ -38,7 +38,9 @@ Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org
 
 * Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5× vyšší než průměr EU)
 * Irsko, na druhém místě, má velmi vysoký podíl zemědělské produkce (skoro 5× vyšší než průměr EU)
-* Česko, na třetím místě, má velmi vysoký podíl špinavé energetiky (2× vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
+* Kypr, na třetím místě, má velmi špinavou energetiku založenou na spalování ropných produktů (topných olejů a nafty)
+* Polsko, na čtvrtém místě, má také špinavou energetiku založenou zejména na spalování uhlí
+* Česko, na pátém místě, má také velmi vysoký podíl špinavé energetiky (2× vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr-detail).
 
 ## Poznámky k datům o emisích
 
