@@ -15,7 +15,7 @@ data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-a
 
 * Graf znázorňuje **celosvětový vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2024** a také srovnání s vybranými světovými regiony. Hodnoty jsou uváděné v **<glossary id="w">kWh</glossary> vyrobené elektřiny na osobu za rok**.
 * Všechny grafy mají shodnou vertikální osu, proto u regionů s velmi nízkou průměrnou spotřebou na osobu zabírá vyplněná část jen velmi malý prostor grafu.
-* Srovnání na osobu však nezohledňuje odlišnou velikost jednotlivých regionů, proto **pravý sloupec doplňuje podíl regionů na celkové globální výrobě elektřiny v roce 2024**. Porovnání regionů z hlediska celkového množství vyrobené elektřiny nabízí doplňující infografika [Výroba elektřiny ve světových regionech](/infografiky/elektrina-na-osobu-svet).
+* Srovnání na osobu však nezohledňuje odlišnou velikost jednotlivých regionů, proto **pravý sloupec doplňuje podíl regionů na celkové globální výrobě elektřiny v roce 2024**. Porovnání regionů z hlediska celkového množství vyrobené elektřiny nabízí doplňující infografika [Výroba elektřiny ve světových regionech](/infografiky/elektrina-svet).
 
 ## Komentáře ke grafu
 
