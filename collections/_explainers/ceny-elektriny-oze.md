@@ -18,41 +18,41 @@ cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url:         "https://unsplash.com/photos/a-house-with-a-cloudy-sky-PIoYdeasfU0"
 perex: |
-  Jak se rostoucí instalovaný výkon a výroba z fotovoltaických a větrných elektráren promítá do cen elektřiny pro koncové zákazníky? Slunce a vítr jednoznačně zlevňují velkoobchodní elektřinu, avšak o tom, jestli a jak se toto zlevnění projeví u konečných spotřebitelů, rozhodují i další položky na faktuře. V tomto explaineru vysvětlujeme, co tvoří cenu na faktuře a jak konkrétně státy EU přenášejí na konečné spotřebitele náklady a výnosy rozvoje obnovitelných zdrojů.
+  Jak se rostoucí instalovaný výkon a výroba z fotovoltaických a větrných elektráren promítá do cen elektřiny pro koncové zákazníky? Přestože slunce a vítr jednoznačně zlevňují velkoobchodní elektřinu, jak (a jestli) se toto zlevnění projeví také u koncových spotřebitelů, o tom rozhodují i další položky na faktuře. Následující text vysvětluje, z čeho se cena elektřiny na faktuře skládá, a popisuje různé způsoby, jimiž státy EU přenášejí náklady a výnosy rozvoje obnovitelných zdrojů na konečné spotřebitele.
 ---
 
 {% include tldr.html content="
 - Rozvoj fotovoltaiky a větru jednoznačně snižuje velkoobchodní ceny elektřiny.
-- O tom, jak se zlevňování promítne do konečných cen, rozhoduje mimo jiné struktura tarifů, rozložení nákladů mezi stát a různé skupiny spotřebitelů (domácnosti vs. podniky) a další pravidla.
-- Ceny pro koncové zákazníky i regulace v oblasti energetiky jsou napříč Evropou dosti rozmanité. Proto se ceny i mezi jinak podobnými státy mohou významně lišit.
-- Rozmanité jsou i nástroje, kterými státy platí za rozvoj obnovitelných zdrojů, případně kterými kompenzují vysoké ceny zranitelným skupinám spotřebitelů.
+- O tom, jak se zlevňování promítne do konečných cen pro zákazníky, rozhoduje mimo jiné struktura tarifů, rozložení nákladů mezi stát a různé skupiny spotřebitelů (domácnosti vs. podniky) a další pravidla.
+- Ceny elektřiny pro koncové zákazníky i regulace v oblasti energetiky jsou napříč Evropou dost rozmanité. I mezi jinak podobnými státy se mohou významně lišit.
+- Různé jsou také nástroje, jimiž státy platí za rozvoj obnovitelných zdrojů, případně kompenzují vysoké ceny zranitelným skupinám spotřebitelů.
 " %}
 
-Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po Ruské invazi na Ukrajinu v roce 2022 a související "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. Mnohé hlasy přisuzují zdražování Zelené dohodě pro Evropu (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren.
+Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po ruské invazi na Ukrajinu v roce 2022 a následné "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. 
 
-Realita je však složitější a do cen pro koncové zákazníky vstupuje mnoho různých, navzájem provázaných faktorů. Jak se tedy cena na fakturách za elektřinu stanovuje a jakou roli v tom opravdu hrají obnovitelné zdroje?
+Mnohé hlasy přisuzují zdražování Zelené dohodě pro Evropu (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren. Realita je však složitější a do cen pro koncové zákazníky vstupuje mnoho různých, navzájem provázaných faktorů. Jak se tedy cena na fakturách za elektřinu stanovuje a jakou roli v tom skutečně hrají obnovitelné zdroje?
 
 ## Z čeho se skládá cena elektřiny na vyúčtování?
 
-Ceny pro koncové zákazníky se tradičně rozdělují na tři složky:[^deleni-eurostat]
+Ceny pro koncové zákazníky se zpravidla rozdělují na tři složky:[^deleni-eurostat]
 
 - **Energie a dodávky** (angl. *energy & supply*). Tuto složku tvoří náklady dodavatele, zejména náklady na nákup elektřiny na velkoobchodním trhu, administrativní náklady dodavatelské společnosti, služby pro zákazníky atd.
-- **Náklady na sítě** (*network costs*). Tuto složku tvoří náklady na přenosovou a distribuční soustavu, mj. také poplatek za jistič, náklady ztrát v síti, systémové služby atd.
-- **Daně a další poplatky** (*taxes & other levies*). Zbývající část faktury tvoří daň z přidané hodnoty (DPH), daň z elektřiny, environmentální daně, poplatky za podporu obnovitelných zdrojů, poplatky za jaderné zdroje atd.
+- **Náklady na sítě** (*network costs*). Tuto složku tvoří náklady na přenosovou a distribuční soustavu, mj. také poplatek za jistič, náklady ztrát v síti, systémové služby apod.
+- **Daně a další poplatky** (*taxes & other levies*). Zbývající část ceny na faktuře tvoří daň z přidané hodnoty (DPH), daň z elektřiny, environmentální daně, poplatky za podporu obnovitelných zdrojů, poplatky za jaderné zdroje atd.
 
 {% include expander-figure.html
     name="regulovana-slozka"
     class="contrast-figure"
     label="Co je to regulovaná a neregulovaná složka?"
     content="
-V Česku se faktura dělí na tzv. regulovanou složku, neregulovanou složku a daně. Neregulovaná složka odpovídá odpovídá první kategorii podle dělení výše, tedy ceně za energie a dodávky. Regulovaná složka v Česku zahrnuje náklady na sítě a navíc tzv. poplatek za podporované zdroje energií (POZE),* který však v oficiálních statistikách spadá až do třetí kategorie mezi daně a poplatky.
+V Česku se cena na vyúčtování skládá z tzv. regulované složky, neregulované složky a daně. Neregulovaná složka odpovídá odpovídá první kategorii podle dělení výše, tedy ceně za energie a dodávky. Regulovaná složka v Česku zahrnuje náklady na sítě a navíc tzv. poplatek za podporované zdroje energií (POZE),* který však v oficiálních statistikách spadá až do třetí kategorie mezi daně a poplatky.
 
 {:.longread-tiny}
 \* Podporované zdroje energií zahrnují kromě fotovoltaických a větrných elektráren podporu i biomasy, využití odpadního tepla, vysoce účinné kogenerace a akumulace elektřiny.
 "
 %}
 
-Například v roce 2024 platily za elektřinu české domácnost v průměru 32,2 ¢/kWh (přibližně 8 Kč/kWh).[^jednotka-ceny] Z toho přibližně čtvrtinu tvořily daně a poplatky, čtvrtinu náklady na sítě a polovinu energie a dodávky.
+Například v roce 2024 platily české domácnosti za elektřinu v průměru 32,2 ¢/kWh (přibližně 8 Kč/kWh).[^jednotka-ceny] Z toho přibližně čtvrtinu tvořily daně a poplatky, čtvrtinu náklady na sítě a polovinu cena za energie a dodávky.
 
 {% include figure.html
     name="slozky-ceny-cz.svg"
@@ -61,17 +61,19 @@ Například v roce 2024 platily za elektřinu české domácnost v průměru 32,
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Jak je zřejmé z popisu výše, většinu položek na vyúčtování tvoří náklady nějakého aktéra v systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát. Pro důkladnější objasnění jednotlivých složek ceny a jejich výše nutné zavést pojem *systémové náklady* a vysvětlit rozdíl mezi náklady a cenami.
+Jak je zřejmé z popisu výše, většinu položek na vyúčtování tvoří náklady některého aktéra v systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát. 
+
+Pro důkladnější objasnění jednotlivých složek ceny a jejich výše je nutné vysvětlit pojem *systémové náklady* a objasnit rozdíl mezi náklady a cenami. Tomu se věnuje následující kapitola textu.
 
 ## Jaké jsou náklady na výrobu a dodávky elektřiny?
 
-Pro zajištění spolehlivých dodávek elektrické energie je potřeba toho hodně zařídit: je nutné postavit infrastrukturu (stožáry, dráty, transformátory, rozvodny) a elektrárny, je nutné je udržovat v dobré kondici, je nutné zajistit palivo pro elektrárny a zařídit řadu dalších služeb (administrativa, provoz trhu s elektřinou). Všechny tyto činnosti stojí peníze. Součtu všech těchto nákladů v elektrizační soustavě se říká **systémové náklady**. Ty zahrnují:
+K zajištění spolehlivých dodávek elektřiny je toho potřeba hodně zařídit: je nutné postavit elektrárny a infrastrukturu pro přenos a distribuci (stožáry, dráty, transformátory, rozvodny), to vše je nutné udržovat v dobrém technickém stavu, kromě toho je rovněž nutné zajistit palivo pro elektrárny a zařídit řadu dalších služeb (spojených např. s administrativou a provozem trhu s elektřinou). Součtu všech těchto nákladů v elektrizační soustavě se říká **systémové náklady**. Ty zahrnují:
 
-- náklady na **stavbu, provoz a údržbu zdrojů energií** (elektráren, tepláren, akumulace, záložních zdrojů atd.),[^naklady-stabilizace] včetně mezd zaměstnanců, nákladů na palivo nebo emisní povolenky a přiměřeného zisku
+- náklady na **stavbu, provoz a údržbu zdrojů energií** (elektráren, tepláren, akumulace, záložních zdrojů atd.),[^naklady-stabilizace] včetně mezd zaměstnanců, nákladů na palivo nebo emisní povolenky a také přiměřeného zisku
 - náklady na **stavbu, provoz a údržbu infrastruktury** (přenosové a distribuční soustavy), včetně nákladů provozovatelů soustav a jejich přiměřeného zisku
-- **administrativní náklady** spojené s dodávkami energií (náklady dodavatelů elektřiny, regulačního úřadu, datového centra, provoz trhu s elektřinou atd.)
+- **administrativní náklady** spojené s dodávkami energií (náklady dodavatelů elektřiny, regulačního úřadu, datového centra, provoz trhu s elektřinou apod.)
 
-Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typicky se tyto náklady vyúčtují skrz trh s elektřinou a cenovou regulaci ve faktuře koncovým spotřebitelům. Kromě toho se může část z nich pokrývat z různých dotačních fondů, ze státního rozpočtu apod. Následující sekce se proto zaměřují na složky, ze kterých faktura sestává, a jaká opatření nebo pravidla se běžně využívají pro rozdělení systémových nákladů (a výnosů) elektrizační soustavy mezi spotřebitele.
+Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typicky se tyto náklady vyúčtují skrz trh s elektřinou a cenovou regulaci na faktuře koncovým spotřebitelům. Kromě toho mohou část z nich pokrývat různé dotační fondy, státní rozpočet a podobně. Následující část textu se zaměřuje na složky, z nichž se cena na faktuře skládá, a popisuje, jaká opatření nebo pravidla se běžně využívají pro rozdělení systémových nákladů (a výnosů) elektrizační soustavy mezi spotřebitele.
 
 {% include figure.html
     name="naklady-vs-zdroje-financi.png"
@@ -81,19 +83,19 @@ Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typi
 %}
 
 
-Jelikož se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní nebo z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – to pak znamená nadměrné zisky pro některé výrobce či dodavatele elektřiny.
+Protože se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusejí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní či z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – některým výrobcům či dodavatelům elektřiny to pak přináší nadměrné zisky.
 
-Zatímco celkové systémové náklady se dají jen nepřesně odhadovat, oficiální statistiky o cenách elektřiny jsou spolehlivé a podávají zprávu alespoň o tom, jak se v průběhu času průměrné ceny (včetně jednotlivých složek) vyvíjejí pro různé skupiny spotřebitelů.
+Zatímco celkové systémové náklady se dají odhadovat jen nepřesně, oficiální statistiky o cenách elektřiny jsou spolehlivé a podávají zprávu alespoň o tom, jak se v průběhu času průměrné ceny (včetně jednotlivých složek) vyvíjejí pro různé skupiny spotřebitelů.
 
 ## Jak do nákladů a cen vstupuje rozvoj obnovitelných zdrojů?
 
-Jak tedy výstavba a provoz obnovitelných zdrojů ovlivňuje systémové náklady a jak se tyto náklady promítají do cen elektřiny? Následující výčet není vyčerpávající – popisuje pouze hlavní způsoby, jimiž rozvoj obnovitelných zdrojů působí na ceny elektřiny.
+Jak tedy systémové náklady ovlivňuje výstavba a provoz obnovitelných zdrojů a jak se tyto náklady promítají do cen elektřiny? Následující výčet není vyčerpávající – popisuje pouze hlavní způsoby, jimiž rozvoj obnovitelných zdrojů působí na ceny elektřiny.
 
 Jak slunce a vítr **zlevňují** elektřinu na trhu:
 
-- **Výroba z fotovoltaiky a větrných elektráren nahrazuje výrobu z dražších (typicky fosilních) zdrojů,** a snižuje tak průměrné velkoobchodní ceny (tzv. *merit order effect*). V důsledku tak dodavatelům elektřiny v průměru snižuje náklady na nákup silové elektřiny,[^moe-studie] a tak i neregulovanou složku vyúčtování.
-- Analogicky výroba z fotovoltaiky tzv. "za elektroměrem" (např. na střeše rodinného domu nebo skladu) může nasytit část lokální spotřeby. Důsledkem je nižší poptávka po elektřině ze sítě, což opět v průměru sníží její cenu na trhu, protože na pokrytí poptávky stačí méně výkonu a tak i levnější zdroje.
-- Díky nižší výrobě z fosilních paliv je pak nižší i poptávka po zemním plynu a emisních povolenkách, což může snižovat jejich cenu na trhu a tak může v průměru snížit i ceny elektřiny ve špičkách, kdy je potřeba zapojit více fosilních zdrojů elektřiny.
+- **Výroba z fotovoltaických a větrných elektráren nahrazuje výrobu z dražších (typicky fosilních) zdrojů,** a snižuje tak průměrné velkoobchodní ceny (tzv. *merit order effect*). V důsledku tak dodavatelům elektřiny v průměru snižuje náklady na nákup silové elektřiny,[^moe-studie] a tím i neregulovanou složku vyúčtování.
+- Analogicky výroba z fotovoltaiky tzv. "za elektroměrem" (např. na střeše rodinného domu nebo skladu) může nasytit část lokální spotřeby. Důsledkem je nižší poptávka po elektřině ze sítě, což opět v průměru sníží její cenu na trhu, protože na pokrytí poptávky stačí méně výkonu a tedy i levnější zdroje.
+- Díky nižší výrobě z fosilních paliv je pak nižší i poptávka po zemním plynu a emisních povolenkách, což může snižovat jejich cenu na trhu a tedy i v průměru snížit ceny elektřiny ve špičkách, kdy je potřeba zapojit více fosilních zdrojů elektřiny.
 
 Jak mohou slunce a vítr zvyšovat náklady a tím elektřinu **zdražovat**:
 
