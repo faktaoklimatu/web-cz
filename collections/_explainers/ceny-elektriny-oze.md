@@ -24,8 +24,8 @@ perex: |
 {% include tldr.html content="
 - Rozvoj fotovoltaiky a větru jednoznačně snižuje velkoobchodní ceny elektřiny.
 - O tom, jak se zlevňování promítne do konečných cen pro zákazníky, rozhoduje mimo jiné struktura tarifů, rozložení nákladů mezi stát a různé skupiny spotřebitelů (domácnosti vs. podniky) a další pravidla.
-- Ceny elektřiny pro koncové zákazníky i regulace v oblasti energetiky jsou napříč Evropou dost rozmanité. I mezi jinak podobnými státy se mohou významně lišit.
-- Různé jsou také nástroje, jimiž státy platí za rozvoj obnovitelných zdrojů, případně kompenzují vysoké ceny zranitelným skupinám spotřebitelů.
+- Ceny elektřiny pro koncové zákazníky i regulace v oblasti energetiky jsou napříč Evropou dost rozmanité. I mezi jinak podobnými státy se mohou značně lišit.
+- Různé jsou také nástroje, jimiž státy platí za rozvoj obnovitelných zdrojů, případně kompenzují vysoké ceny elektřiny ekonomicky zranitelným skupinám spotřebitelů.
 " %}
 
 Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po ruské invazi na Ukrajinu v roce 2022 a následné "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. 
@@ -62,9 +62,9 @@ Například v roce 2024 platily české domácnosti za elektřinu v průměru 32
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Jak je zřejmé z popisu výše, většinu položek na vyúčtování tvoří náklady některého aktéra v systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát. 
+Jak je zřejmé z popisu výše, většinu položek ve vyúčtování tvoří náklady některého aktéra v celém systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát. 
 
-Pro důkladnější objasnění jednotlivých složek ceny a jejich výše je nutné vysvětlit pojem *systémové náklady* a objasnit rozdíl mezi náklady a cenami. Tomu se věnuje následující kapitola textu.
+Pro důkladnější objasnění jednotlivých složek ceny a jejich výše je nutné vysvětlit pojem *systémové náklady* a rozdíl mezi náklady a cenami. Tomu se věnuje následující kapitola textu.
 
 ## Jaké jsou náklady na výrobu a dodávky elektřiny?
 
@@ -116,9 +116,9 @@ Provázanost zmíněných faktorů zjednodušeně ilustruje následující sché
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-O tom, jak silně a jak rychle se jednotlivé faktory projeví v konečných cenách, rozhoduje zejména **nastavení pravidel státem, hlavně pak cenová regulace a tarifní struktura**. Právě tato pravidla určují, jakými kanály se systémové náklady rozloží mezi různé skupiny spotřebitelů, státní rozpočet a další zdroje financí.
+O tom, jak silně a jak rychle se jednotlivé faktory projeví v konečných cenách elektřiny, rozhoduje zejména **nastavení pravidel státem, hlavně pak cenová regulace a tarifní struktura**. Právě tato pravidla určují, jakými kanály se systémové náklady rozloží mezi různé skupiny spotřebitelů, státní rozpočet a další zdroje financí.
 
-Dá se to ukázat právě na tom, jaký vliv na konečné ceny elektřiny má snižování velkoobchodních cen (viz schéma níže). Mnohé studie evropského trhu s elektřinou dokazují, že **ke snižování velkoobchodních cen přispívá právě vyšší výroba ze slunce a větru**.[^moe-velikost-efektu] Do jaké míry a jak rychle se toto zlevnění projeví na vyúčtování však záleží i na dalších faktorech – především na tom, jak moc jsou spotřebitelé vystaveni velkoobchodním cenám (podrobněji viz sekce [*Dynamické tarify*](#dynamické-tarify) v další kapitole) a jakým způsobem se uhradí případné vyšší náklady na integraci proměnlivých zdrojů.
+Dá se to ukázat na tom, jaký vliv na konečné ceny elektřiny má snižování velkoobchodních cen (viz schéma níže). Mnohé studie evropského trhu s elektřinou dokazují, že **ke snižování velkoobchodních cen přispívá právě vyšší výroba ze slunce a větru**.[^moe-velikost-efektu] Do jaké míry a jak rychle se toto zlevnění projeví na vyúčtování však záleží i na dalších faktorech – především na tom, jak hodně jsou spotřebitelé vystaveni velkoobchodním cenám (podrobněji viz sekce [*Dynamické tarify*](#dynamické-tarify) v další kapitole) a jakým způsobem se uhradí případné vyšší náklady na integraci proměnlivých zdrojů.
 
 {% include figure.html
     name="diagram-faktoru-podil-oze.png"
@@ -145,7 +145,7 @@ Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu 
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaických a větrných elektráren a síťovou složkou ceny. Z letmého pohledu na data se může zdát, že vztah je jednoznačně pozitivní, ale mechanismus je ve skutečnosti složitější a méně přímočarý než u cen zemního plynu. Bohatší státy Evropské unie obvykle mají fotovoltaických a větrných elektráren více. Zároveň ale mají i obecně vyšší cenovou hladinu, což porovnání nákladů mezi státy zkresluje.
+Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaických a větrných elektráren a síťovou složkou ceny. Z letmého pohledu na data se může zdát, že vztah je jednoznačně pozitivní, ale mechanismus je ve skutečnosti složitější a méně přímočarý než u cen zemního plynu. Bohatší státy Evropské unie obvykle mají fotovoltaických a větrných elektráren více, zároveň ale mají i obecně vyšší cenovou hladinu, což porovnání nákladů mezi státy zkresluje.
 
 {% include figure.html
     name="scatter-oze-vs-site.png"
@@ -166,9 +166,9 @@ Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 v
     content=priklad-vlivu
 %}
 
-## Jaké ceny a pravidla mají evropské státy?
+## Jaké ceny a pravidla mají jinde v Evropě?
 
-Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi státy EU značně liší. Nejvíce za elektřinu v roce 2024 platily německé domácnosti – přibližně 40 centů na kWh dodané elektřiny (zhruba 10 Kč/kWh). Na opačném konci cenové škály se nacházely domácnosti v Bulharsku a Maďarsku, kde lidé platili jen o málo více než 10 ¢/kWh (přibližně 2,5 Kč/kWh). Jak tento čtyřnásobný rozdíl mezi nejvyššími a nejnižšími cenami vysvětlit?
+Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi jednotlivými státy EU značně liší. Nejvíce za elektřinu v roce 2024 platily německé domácnosti – přibližně 40 centů na kWh dodané elektřiny (zhruba 10 Kč/kWh). Na opačném konci cenové škály se nacházely domácnosti v Bulharsku a Maďarsku, kde lidé platili jen o málo více než 10 ¢/kWh (přibližně 2,5 Kč/kWh). Jak tento čtyřnásobný rozdíl mezi nejvyššími a nejnižšími cenami vysvětlit?
 
 {% include figure.html
     name="ceny-eu.svg"
@@ -186,20 +186,20 @@ Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky c
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-V Česku stát první složku ceny (energie a dodávky) ovlivňuje jen nepřímo, s výjimkou krátkodobého zastropování cen energií v době energetické krize. Další složky ceny ale přímo reguluje pomocí energetické politiky, nastavení daní a prostřednictvím cenové regulace v energetice.
+V Česku stát první složku ceny (energie a dodávky) ovlivňuje jen nepřímo, s výjimkou krátkodobého zastropování cen energií v době energetické krize. Další složky ceny ale reguluje přímo pomocí energetické politiky, nastavení daní a prostřednictvím cenové regulace v energetice.
 
-Pohled za hranice Česka (nebo pohled za hranice energetiky) ukazuje, že existuje široká škála možností, jak takovou regulaci nastavit. Následující sekce na příkladech zemí EU ukazují různé možnosti nastavení pravidel, cenové regulace, tarifů atd. a možné dopady těchto rozhodnutí. Patří mezi ně:
+Pohled za hranice Česka (nebo pohled za hranice energetiky) nicméně ukazuje, že existuje široká škála možností, jak takovou regulaci nastavit. Následující část textu na příkladech zemí EU ukazuje různé možnosti nastavení pravidel, cenové regulace, tarifů atd. a možné dopady těchto rozhodnutí. Patří mezi ně:
 
 1. dynamické tarify (např. s cenami průměrovanými po dnech nebo měsících)
 2. zastropování cen (pak je potřeba výrobce kompenzovat nebo jinak zajistit dostatečnou kapacitu pro pokrytí poptávky)
 3. slevy na dani nebo vyúčtování
-4. sociální tarify (speciální tarify nebo slevy pro zranitelné skupiny)
+4. sociální tarify (speciální tarify nebo slevy pro ekonomicky zranitelné skupiny)
 5. přesun nákladů do státního rozpočtu
 6. oboustranné rozdílové smlouvy
 
 ### Dynamické tarify
 
-Většina domácností v Česku (i dalších evropských státech) využívá dlouhodobě fixované tarify. U takových tarifů je cena elektřiny každou hodinu v roce stejná, zafixovaná ve smlouvě zpravidla na rok až dva dopředu. Tyto tarify domácnostem zásadně snižují nejistotu budoucích nákladů, ale neumožňují pružně reagovat na aktuální tržní podmínky.
+Většina domácností v Česku (i dalších evropských státech) využívá dlouhodobě fixované tarify. U takových tarifů je cena elektřiny každou hodinu v roce stejná, zafixovaná ve smlouvě zpravidla na rok až dva dopředu. Tyto tarify domácnostem značně snižují nejistotu budoucích nákladů, ale neumožňují pružně reagovat na aktuální tržní podmínky.
 
 **U dynamických tarifů se ceny elektřiny** (přesněji první složka – energie a dodávky) **mění častěji, třeba každý měsíc nebo i každou hodinu**, podle vývoje na velkoobchodním trhu. To umožňuje koncovým zákazníkům reagovat na aktuální přebytek nebo nedostatek elektřiny (např. odložením spotřeby do hodin s nižšími cenami), což je pro systém výhodné zejména při vysokém podílu proměnlivých obnovitelných zdrojů. V delším horizontu to také rychleji přenáší zlevnění (ale i zdražení) z trhu do vyúčtování.
 
@@ -209,8 +209,8 @@ Zjednodušeně lze dynamické tarify rozdělit na spotové (cena se mění hodin
 
 Následující tři grafy ukazují vývoj silové složky ceny pro domácnosti ve srovnání s velkoobchodními cenami na příkladu tří zemí s vysokým podílem dynamických tarifů.
 
-- V Dánsku jsou dynamické tarify rozšířené, nějakou formu dynamického tarifu má přibližně [70 % domácností](https://www.thelocal.dk/20241115/can-you-save-money-in-denmark-this-winter-with-a-variable-rate-electricity-contract).
-- Ve Španělsku je základní regulovaný tarif dynamický a využívá jej přibližně 28 % domácností.[^spanelsko-pvpc] Cena se určuje zčásti z každodenních velkoobchodních cen, zčásti z cen na dlouhodobém trhu (v roce 2025 byl tento poměr 60:40).
+- V Dánsku jsou dynamické tarify rozšířené, některý z nich má přibližně [70 % domácností](https://www.thelocal.dk/20241115/can-you-save-money-in-denmark-this-winter-with-a-variable-rate-electricity-contract).
+- Ve Španělsku je základní regulovaný tarif dynamický a využívá jej přibližně 28 % domácností.[^spanelsko-pvpc] Cena vychází zčásti z každodenních velkoobchodních cen, zčásti z cen na dlouhodobém trhu (v roce 2025 byl tento poměr 60:40).
 - V Řecku má dynamický tarif většina domácností (v roce 2024 to bylo [až 90 %](https://www.reuters.com/world/europe/greece-offers-new-round-power-bill-subsidies-households-2024-12-06/)). Nejpopulárnější je tzv. ["zelený tarif"](https://www.ekathimerini.com/economy/1270787/growing-number-of-consumers-opt-for-fixed-electricity-tariffs/), ve kterém se cena mění každý měsíc.
 
 {% include figure.html
@@ -229,7 +229,7 @@ Naproti tomu domácnosti v Česku, Německu a Francii využívají převážně 
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Kromě dynamických tarifů za samotnou dodávku elektřiny lze nastavit flexibilně také poplatek za *distribuci* elektřiny. Např. v Belgii se tento poplatek stanovuje podle špičkové spotřeby v daném měsíci (místo běžné platby podle celkem spotřebované elektřiny nebo podle velikosti jističe). V Dánsku i Španělsku mají distributoři [možnost nastavit síťové poplatky](https://ens.dk/sites/default/files/media/documents/2024-11/liberalisation_of_the_danish_power_sector_-_report_final.pdf) tak, aby motivovaly přesouvat spotřebu mimo špičky. Flexibilní poplatky za distribuci dále finančně motivují uzpůsobit spotřebu situaci v síti.
+Kromě dynamických tarifů za samotnou dodávku elektřiny lze nastavit flexibilně také poplatek za *distribuci* elektřiny. Např. v Belgii se tento poplatek stanovuje podle špičkové spotřeby v daném měsíci (místo běžné platby podle celkového množství spotřebované elektřiny nebo podle velikosti jističe). V Dánsku i Španělsku mají distributoři [možnost nastavit síťové poplatky](https://ens.dk/sites/default/files/media/documents/2024-11/liberalisation_of_the_danish_power_sector_-_report_final.pdf) tak, aby motivovaly přesouvat spotřebu mimo špičky. Flexibilní poplatky za distribuci dále finančně motivují uzpůsobit spotřebu situaci v síti.
 
 V Česku má naprostá většina domácností dlouhodobé tarify. Spotový tarif má asi jen [1 % domácností](https://www.acer.europa.eu/sites/default/files/documents/Publications/2025-Retail-Monitoring-Report-Country-Sheets-Electricity.pdf#p=12) a chytrým elektroměrem disponují pouze [3 % domácností](https://aegis.acer.europa.eu/chest/dataitems/585/view) (průměr v EU je 60 %).
 
@@ -248,13 +248,13 @@ Přímé zastropování se většinou týká pouze domácností a často jen spo
 
 Některé státy během energetické krize použily určitou formu zastropování cen na burze. Španělsko a Portugalsko v letech 2022–2023 nastavily [cenový strop na zemní plyn](https://ec.europa.eu/commission/presscorner/detail/en/ip_22_3550) pro výrobce elektřiny (přičemž rozdíl zčásti dopláceli spotřebitelé ve speciálním poplatku, zčásti pak provozovatel přenosové soustavy z výnosů z exportu). Záměrem bylo zlevnit nabídkovou cenu elektřiny ze zemního plynu a tím snížit průměrné ceny na burze. Toto opatření bylo široce kritizováno, neboť zlevnění plynu (resp. zastropování jeho ceny) ekonomicky nemotivuje ke snížení jeho spotřeby.[^kritika-stropu-plynu]
 
-V Česku byly koncové ceny elektřiny (a zemního plynu) zastropovány pouze v roce 2023.
+V Česku byly ceny elektřiny (a zemního plynu) pro koncové spotřebitele zastropovány pouze v roce 2023.
 
 ### Slevy na dani a vyúčtování
 
 Stát může domácnostem nabízet slevu na dani nebo na celém vyúčtování za elektřinu.
 
-- V Nizozemsku jde o dlouhodobý program [fixní slevy na dani](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/overige_belastingen/belastingen_op_milieugrondslag/energiebelasting/), která postupem času roste (v přepočtu od cca 8 000 Kč ročně za každé odběrné místo v roce 2017 po cca 13 000 Kč v roce 2025). Takovou fixní slevou na dani stát občanům snižuje celkové platby za elektřinu, přitom ale plně zachová motivaci k energetickým úsporám. V tomto ohledu jde o výhodnější opatření než zastropování ceny elektřiny.
+- V Nizozemsku jde o dlouhodobý program [fixní slevy na dani](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/overige_belastingen/belastingen_op_milieugrondslag/energiebelasting/), která postupem času roste (v přepočtu od cca 8 000 Kč ročně za každé odběrné místo v roce 2017 po cca 13 000 Kč v roce 2025). Takovou fixní slevou na dani stát občanům snižuje celkové platby za elektřinu, přitom ale plně zachová motivaci k energetickým úsporám. V tomto ohledu jde o výhodnější opatření, než je zastropování ceny elektřiny.
 - V Irsku se v letech 2022–2025 na vyúčtování automaticky aplikovala sleva (v roce 2024 v přepočtu [přibližně 6 000 Kč](https://www.citizensinformation.ie/en/consumer/utilities/electricity-account-credit/)). Podobné dočasné opatření zavedlo Rakousko v roce 2022. Jednalo se o jednorázovou [slevu v přepočtu ve výši přibližně 3 700 Kč](https://www.bmf.gv.at/dam/jcr%3Ad430ba6a-ad9a-4ef1-8345-2d9cdced97c0/20220504_FAQs%20total_english%20%281%29.pdf), které si domácnosti mohly z vyúčtování za elektřinu odečíst.
 
 Tyto slevy lze vidět v datech, nejlépe na výrazně negativních daních v těchto zemích pro domácnosti s nízkou spotřebou.
@@ -270,20 +270,20 @@ V Česku se slevy na dani v souvislosti s energiemi neuplatňují.
 
 ### Sociální tarify
 
-Sociální tarify jsou další možností, jak dopady drahé elektřiny na obyvatelstvo snížit. Na rozdíl od zastropování cen mohou být přesně zacílené na obyvatele ohrožené energetickou chudobou a tím dosáhnout většího sociálního efektu za méně peněz.
+Sociální tarify jsou další možností, jak dopady drahé elektřiny na obyvatelstvo snížit. Na rozdíl od zastropování cen mohou být přesněji zacílené na obyvatele ohrožené energetickou chudobou a tím dosáhnout většího sociálního efektu za méně peněz.
 
-- Itálie nabízí [slevu z vyúčtování](https://www.arera.it/consumatori/bonus-sociale/bonus-sociale-per-disagio-economico/a-quanto-ammontano): nízkopříjmové domácnosti si mohou zažádat o slevu (podle velikosti domácnosti od cca 300 Kč po 500 Kč měsíčně), která se jim strhává při každém vyúčtování. Podobně jako nizozemská sleva na dani jde o fixní slevu, která motivuje k energetickým úsporám.
-- Belgie obdobně nabízí [sociální tarif](https://www.creg.be/fr/consommateurs/prix-et-tarifs/tarif-social/tarif-social-pour-lenergie) – speciální zlevněný tarif pro zranitelné domácnosti (např. pro některé příjemce sociálních dávek nebo nájemníky v sociálních bytech). Cena se určuje každý kvartál podle nejlevnějšího tarifu v předchozím měsíci, navíc je omezen její růst mezi kvartály.
-- Francie od roku 2019 nabízí [voucher pro nízkopříjmové domácnosti](https://www.cre.fr/en/electricity/retail-electricity-market/presentation.html), který se může použít na část plateb za elektřinu nebo na náklady spojené s energetickou renovací.
-- Irsko poskytuje [slevy na vyúčtování](https://www.citizensinformation.ie/en/social-welfare/extra-social-welfare-benefits/household-benefits-package/) seniorům nad 70 let a dalším zranitelným skupinám obyvatel.
+- Itálie nabízí [slevu z vyúčtování](https://www.arera.it/consumatori/bonus-sociale/bonus-sociale-per-disagio-economico/a-quanto-ammontano): nízkopříjmové domácnosti si mohou zažádat o slevu (podle velikosti domácnosti je to v přepočtu od cca 300 Kč po 500 Kč měsíčně), jež se jim strhává při každém vyúčtování. Podobně jako nizozemská sleva na dani jde o fixní slevu, která motivuje k energetickým úsporám.
+- Belgie obdobně nabízí [sociální tarif](https://www.creg.be/fr/consommateurs/prix-et-tarifs/tarif-social/tarif-social-pour-lenergie) – speciální zlevněný tarif pro ekonomicky zranitelné domácnosti (např. pro některé příjemce sociálních dávek nebo nájemníky v sociálních bytech). Cena se určuje každý kvartál podle nejlevnějšího tarifu v předchozím měsíci. Navíc je omezeno, o kolik se může mezi kvartály zvýšit.
+- Francie od roku 2019 nabízí [voucher pro nízkopříjmové domácnosti](https://www.cre.fr/en/electricity/retail-electricity-market/presentation.html), který lze využít na část plateb za elektřinu nebo na náklady spojené s energetickou renovací.
+- Irsko poskytuje [slevy na vyúčtování](https://www.citizensinformation.ie/en/social-welfare/extra-social-welfare-benefits/household-benefits-package/) seniorům nad 70 let a dalším ekonomicky zranitelným skupinám obyvatel.
 
-V Česku žádné sociální tarify na energie nejsou. Nicméně platby za energie vstupují do výpočtu [příspěvku na bydlení](https://www.mpsv.cz/prispevek-na-bydleni).
+V Česku žádné sociální tarify na energie nejsou, nicméně platby za energie vstupují do výpočtu [příspěvku na bydlení](https://www.mpsv.cz/prispevek-na-bydleni).
 
 ### Přesun nákladů do rozpočtu
 
-Německo díky velkým investicím nastartovalo velký (globální) boom obnovitelných zdrojů, zejména fotovoltaických elektráren, a dodnes za to platí. V první dekádě tohoto století dokonce ceny pro koncové zákazníky rostly, přestože velkoobchodní klesaly – právě kvůli nákladům na podporu OZE, které platí zákazníci ve formě speciálního poplatku na vyúčtování. Během energetické krize v roce 2022 německá vláda [rozhodla o trvalém zrušení](https://www.cleanenergywire.org/news/germany-stops-landmark-mechanism-funded-renewables-expansion-power-bills) tohoto poplatku a přesunu nákladů do státního rozpočtu, což mimo jiné znatelně ulevilo rapidně rostoucím cenám. Ke stejnému kroku přistoupilo například Dánsko [už v roce 2017](https://www.pv-magazine.com/2017/05/22/danish-government-unveils-bill-to-introduce-tax-on-self-consumed-pv-power/).
+Německo v minulosti díky velkým investicím nastartovalo velký (globální) boom obnovitelných zdrojů, zejména fotovoltaických elektráren, a dodnes za to platí. V první dekádě tohoto století dokonce ceny pro koncové zákazníky rostly, přestože velkoobchodní klesaly – právě kvůli nákladům na podporu OZE, které zákazníci platili formou speciálního poplatku ve vyúčtování. Během energetické krize v roce 2022 však německá vláda [rozhodla o trvalém zrušení](https://www.cleanenergywire.org/news/germany-stops-landmark-mechanism-funded-renewables-expansion-power-bills) tohoto poplatku a přesunu nákladů do státního rozpočtu, což mimo jiné znatelně ulevilo velmi rychle rostoucím cenám. Ke stejnému kroku přistoupilo například Dánsko [už v roce 2017](https://www.pv-magazine.com/2017/05/22/danish-government-unveils-bill-to-introduce-tax-on-self-consumed-pv-power/).
 
-Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdrojů](https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht) v Německu mezi spotřebitele a státní rozpočet od roku 2010.
+Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdrojů](https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht) v Německu mezi spotřebitele a státní rozpočet (od roku 2010).
 
 {% include figure.html
     name="naklady-nemecko.png"
@@ -294,19 +294,19 @@ Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdr
 
 Obdobně se stát může rozhodnout přenést do rozpočtu část nákladů tvořících jiné složky ceny, např. část nákladů na sítě.[^verejna-infrastruktura]
 
-V Česku se poplatek za podporované zdroje energií dočasně (od října 2022 do prosince 2023) plně [přesunul do státního rozpočtu](https://www.mesec.cz/aktuality/domacnosti-i-firmy-zacnou-opet-v-pristim-roce-platit-poplatky-za-obnovnitelne-zdroje-energie-poze/). Náklady na sítě v Česku (s výjimkou nákladů placených z evropských dotačních fondů) plně nesou spotřebitelé.
+V Česku se poplatek za podporované zdroje energií dočasně (od října 2022 do prosince 2023) plně [přesunul do státního rozpočtu](https://www.mesec.cz/aktuality/domacnosti-i-firmy-zacnou-opet-v-pristim-roce-platit-poplatky-za-obnovnitelne-zdroje-energie-poze/). Náklady na sítě v Česku (s výjimkou nákladů placených z evropských dotačních fondů) hradí pouze spotřebitelé.
 
 ### Oboustranné rozdílové smlouvy
 
 Díky oboustranné [rozdílové smlouvě](https://frankbold.org/zpravodaj/kategorie/aktualne/rozdilove-smlouvy-inovativni-nastroj-pro-podporu-obnovitelnych-zdroju-energie) (angl. *two-way contract for difference* nebo *2-way CfD*) mohou státy poskytnout investorům do nových obnovitelných (případně jaderných) zdrojů větší jistotu návratnosti a zároveň je zajištěno, že případné dodatečné výnosy se státu vrátí.
 
-Hlavní součástí takové smlouvy je tzv. *strike price*, tedy průměrná cena elektřiny, při které je projekt dostatečně návratný. Ta se typicky určuje formou aukce. Když je cena elektřiny na trhu nižší a provozovatelé elektráren mají nedostatečné výnosy z prodeje vyrobené elektřiny, stát na jejich provoz doplácí. Když je naopak cena vyšší, provozovatelé část tržeb vrací státu.
+Hlavní součástí takové smlouvy je tzv. *strike price*, tedy průměrná cena elektřiny, při které má projekt dostatečnou návratnost. Tato cena se typicky určuje formou aukce. Když je cena elektřiny na trhu nižší a provozovatelé elektráren mají nedostatečné výnosy z prodeje vyrobené elektřiny, stát na jejich provoz doplácí. Když je naopak cena vyšší, provozovatelé část tržeb vrací státu.
 
-Běžným záměrem je stanovovat *strike price* tak, aby tyto smlouvy byly pro stát přibližně nákladově neutrální. U většiny typů nových zdrojů elektřiny totiž není nutné je systematicky dotovat – rozdílové smlouvy hlavně zásadně snižují vysoké investiční riziko, čímž projekty výrazně zlevňují a umožňují jejich realizaci.
+Běžným záměrem je stanovovat *strike price* tak, aby tyto smlouvy byly pro stát přibližně nákladově neutrální. U většiny typů nových zdrojů elektřiny totiž není nutné je systematicky dotovat – rozdílové smlouvy hlavně významně snižují vysoké investiční riziko, čímž projekty výrazně zlevňují a umožňují jejich realizaci.
 
-Z hlediska ceny elektřiny je zásadní, jak a kdo platí případné náklady těchto smluv a jak a kdo získává případné výnosy. Napříč Evropou jsou režimy různé: náklady a výnosy může nést stát či spotřebitelé elektřiny nebo se mohou mezi stát a spotřebitele dělit.
+Z hlediska ceny elektřiny je zásadní, jak a kdo platí případné náklady těchto smluv a jak a kdo získává případné výnosy. Napříč Evropou to funguje různě: náklady a výnosy může nést stát či spotřebitelé elektřiny nebo se mohou mezi stát a spotřebitele dělit.
 
-Rozdílové smlouvy se na podporu obnovitelných zdrojů využívají v mnoha evropských zemích, např. ve [Velké Británii](https://www.businessenergydeals.co.uk/blog/contracts-for-difference/), [Polsku](https://www.dentons.com/en/insights/newsletters/2025/january/24/powered-by-dentons/powered-by-dentons-january-2025/result-of-polands-2024-res-auctions), [Litvě](https://renewablesnow.com/news/lithuania-to-relaunch-700-mw-offshore-wind-tender-on-june-9-1276449/), [Rumunsku](https://balkangreenenergynews.com/romania-declares-winners-of-its-wind-solar-power-cfd-auctions/), [Maďarsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=14), [Španělsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=22) a dalších.[^dalsi-cfd]
+Rozdílové smlouvy se na podporu obnovitelných zdrojů využívají v mnoha evropských zemích, např. ve [Velké Británii](https://www.businessenergydeals.co.uk/blog/contracts-for-difference/), [Polsku](https://www.dentons.com/en/insights/newsletters/2025/january/24/powered-by-dentons/powered-by-dentons-january-2025/result-of-polands-2024-res-auctions), [Litvě](https://renewablesnow.com/news/lithuania-to-relaunch-700-mw-offshore-wind-tender-on-june-9-1276449/), [Rumunsku](https://balkangreenenergynews.com/romania-declares-winners-of-its-wind-solar-power-cfd-auctions/), [Maďarsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=14), [Španělsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=22) a jinde.[^dalsi-cfd]
 
 {% include figure.html
     name="cfd-vyuctovani.png"
@@ -318,9 +318,9 @@ Rozdílové smlouvy se na podporu obnovitelných zdrojů využívají v mnoha ev
 Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví energetických firem státem – zisky (nebo jejich část) firmy odvádí státu na dividendách, ztráty také hradí stát jako majitel-investor. Dva příklady:
 
 - Francouzský EDF (státem vlastněný výhradní provozovatel jaderných elektráren) musí elektřinu z jaderných zdrojů [prodávat konkurenčním dodavatelům za nízké ceny](https://www.world-nuclear-news.org/Articles/Agreement-on-post-ARENH-nuclear-electricity-pricin) (42 €/MWh do roku 2025, 70 €/MWh od roku 2026). Výnosy EDF nad touto hladinou stát přerozděluje.
-- Podobně Česko těží ze svých stávajících jaderných elektráren, primárně ve formě dividend z ČEZu, který je provozovatelem jaderných elektráren Temelín a Dukovany. Od roku 2000, kdy ČEZ začal dividendy vyplácet, z nich [stát obdržel 350 miliard korun](https://ct24.ceskatelevize.cz/clanek/ekonomika/cez-vyplati-dividendu-z-lonskeho-zisku-47-korun-za-akcii-celkove-253-miliardy-362257).
+- Podobně Česko těží ze svých stávajících jaderných elektráren, primárně ve formě dividend z ČEZu, který je provozovatelem JE Temelín a Dukovany. Od roku 2000, kdy ČEZ začal dividendy vyplácet, z nich [stát obdržel 350 miliard korun](https://ct24.ceskatelevize.cz/clanek/ekonomika/cez-vyplati-dividendu-z-lonskeho-zisku-47-korun-za-akcii-celkove-253-miliardy-362257).
 
-"Starší" forma provozní podpory stála v Česku za solárním boomem v letech 2006–2010. Šlo o garantovanou výkupní cenu (angl. *feed-in tariff*), která provozovateli elektrárny zaručuje pevnou cenu za každou kilowatthodinu dodanou do sítě. Takto jednoduché schéma má však více problémů, například motivuje dodávat do sítě, i když je elektřiny přebytek, nebo neumožňuje vrátit část potenciálních nadměrných zisků k zákazníkům.
+"Starší" forma provozní podpory stála v Česku za solárním boomem v letech 2006–2010. Šlo o garantovanou výkupní cenu (angl. *feed-in tariff*), která provozovateli elektrárny zaručovala pevnou cenu za každou kilowatthodinu dodanou do sítě. Takto jednoduché schéma má však více problémů, například motivuje dodávat do sítě, i když je elektřiny přebytek, nebo neumožňuje vrátit část potenciálních nadměrných zisků k zákazníkům.
 
 ## Zdroje a poznámky
 
@@ -329,13 +329,13 @@ Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví ener
 [^naklady-stabilizace]: To zahrnuje i náklady na stabilizaci soustavy, vyrovnávání výkyvů atd.
 [^povolenky-poze]: V Česku se takto platí z výnosů část poplatků na podporu obnovitelných zdrojů energie.
 [^moe-studie]: Viz např. [studie IMF](https://doi.org/10.5089/9798400224362.001) z roku 2022. Záleží však na tom, jak dlouho dopředu dodavatel energií elektřinu nakupuje, resp. jak přímo je zákazník vystaven velkoobchodním cenám (viz dále v textu).
-[^statni-podpora]: Podpora pro výstavbu solární energetiky v Česku okolo roku 2010 vedla ke každoročním nákladům ve výši desítek miliard korun. Od té doby však technologie obnovitelných zdrojů výrazně zlevnily, a státní podpora tak nemusí nutně vést k vysokým veřejným nákladům. Současný doporučený způsob podpory je formou tzv. rozdílových smluv (angl. *contracts for difference*, CfD), což dokonce může přinášet výnosy do státního rozpočtu. Viz sekce dále v explaineru.
-[^mareni]: Vzhledem k tomu, že výroba z fotovoltaických (v menší míře i větrných) elektráren je často korelovaná přes velké území, může docházet k plnému vytížení přeshraničních přenosových linek a nutnosti využít náhradní zdroje elektřiny. Tím vznikají náklady na maření elektřiny, *congestion management* a redispečink. Do jisté míry se jedná o náklady pomalého rozvoje sítí v minulosti.
+[^statni-podpora]: Podpora pro výstavbu solární energetiky v Česku okolo roku 2010 vedla ke každoročním nákladům ve výši desítek miliard korun. Od té doby však technologie obnovitelných zdrojů výrazně zlevnily, a státní podpora tak nemusí nutně vést k vysokým veřejným nákladům. Současný doporučený způsob podpory je formou tzv. rozdílových smluv (angl. *contracts for difference*, CfD), což dokonce může přinášet výnosy do státního rozpočtu. Viz kapitola 4.
+[^mareni]: Vzhledem k tomu, že výroba z fotovoltaických (a v menší míře i větrných) elektráren je často korelovaná přes velké území, může docházet k plnému vytížení přeshraničních přenosových linek a nutnosti využít náhradní zdroje elektřiny. Tím vznikají náklady na maření elektřiny, *congestion management* a redispečink. Do jisté míry se jedná o náklady způsobené pomalým rozvojem sítí v minulosti.
 [^konkurence]: Například pro vyrovnávání výkyvů dnes slouží hlavně konvenční, často fosilní (a tedy drahé) elektrárny. Čím dál relevantnějšími technologiemi jsou však bateriová úložiště a flexibilita spotřeby, které na výkyvy dokáží reagovat rychleji, flexibilněji a tím i levněji než konvenční elektrárny.
 [^dalsi-faktory]: Jednotlivé složky, a tedy i výsledné ceny, ovlivňují též další faktory (a komplexní vazby mezi nimi): spotřeba elektřiny, geografické podmínky a počasí, průměrná cenová hladina dané ekonomiky, kapacity přeshraničních spojení a další. Tyto proměnné jsou zde pro zjednodušení ponechány stranou.
 [^moe-velikost-efektu]: Historicky zvýšení podílu slunce a větru na výrobě o jeden procentní bod snižovalo tržní ceny v různých zemích v průměru o 0,6–0,8 %. Viz např. [working paper IMF (2022)](https://doi.org/10.5089/9798400224362.001), [Kolb et al. (2020)](https://ideas.repec.org/a/eee/rensus/v134y2020ics1364032120305955.html), [Bourn et al. (2021)](https://ayrtonb.github.io/Merit-Order-Effect/), [BBVA Research (2025)](https://www.bbvaresearch.com/wp-content/uploads/2025/02/EW_Reaping_the_benefits_edi2docxFinal.pdf), [Clò et al. (2015)](https://ideas.repec.org/a/eee/enepol/v77y2015icp79-88.html).
 [^kombinace-variabilnich]: Případně se oba přístupy dají kombinovat, např. 60 % ceny ze spotového trhu a 40 % z dlouhodobějších trhů (jako v případě španělského tarifu [PVPC](https://www.ree.es/en/operation/electricity-system/pvpc)).
 [^spanelsko-pvpc]: Španělsky [*precio voluntario pequeño consumidor*](https://www.ree.es/en/operation/electricity-system/pvpc), PVPC.
 [^kritika-stropu-plynu]: Vedlo to také k vyššímu exportu elektřiny vyrobené ze zemního plynu do Francie. Navíc kompenzace v podobě položky na vyúčtování za elektřinu znamenala pro domácnosti menší finanční úspory. Takové plošné opatření zároveň pokřivuje trh, neboť dopad na zákazníky s fixními tarify byl větší než na ty s variabilními. Více viz [Center on Global Energy Policy](https://www.energypolicy.columbia.edu/wp-content/uploads/2023/05/Iberian-Exception_Commentary_CGEP_051723-2.pdf) a [ACER](https://acer.europa.eu/sites/default/files/documents/Publications/2023_MMR_EmergencyMeasures.pdf).
-[^verejna-infrastruktura]: Zatímco rozvoj a údržba některých typů veřejné infrastruktury se hradí převážně z veřejných financí (např. silniční síť), rozvoj a údržbu elektrické sítě platí skoro výhradně spotřebitelé dodávané elektřiny. Jde o dost peněz: náklady na přenosovou a distribuční soustavu v Česku tvoří 20–30 % průměrné ceny na vyúčtování.
+[^verejna-infrastruktura]: Zatímco rozvoj a údržba některých typů veřejné infrastruktury se hradí převážně z veřejných financí (např. silniční síť), rozvoj a údržbu elektrické sítě platí téměř výhradně spotřebitelé dodávané elektřiny. Jde o dost peněz: náklady na přenosovou a distribuční soustavu v Česku tvoří 20–30 % průměrné ceny na vyúčtování za elektřinu.
 [^dalsi-cfd]: Základní přehled rozdílových smluv napříč Evropou a rozbor několika případových studií poskytuje report [*Comparison of CfD-related best practices across Europe*](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf) výzkumného centra REKK z roku 2024.
