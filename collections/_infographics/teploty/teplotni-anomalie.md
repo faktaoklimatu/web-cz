@@ -22,7 +22,7 @@ data-orig:
 
 Graf zobrazuje vývoj __teplotní anomálie__ vzhledem k __referenčnímu období 1850–1900__ v uplynulých 144 letech. Teplotní anomálie pro daný rok udává, o kolik byl svět teplejší než průměrná teplota ve vybraném referenčním období a podrobněji oba pojmy vysvětlujeme níže. Data jsou zpracována z měření více než 20 000 stanic na souši, měření lodí i plovoucích bójí a vědeckých stanic v Arktidě a Antarktidě (podrobněji níže).
 
-Z grafu můžeme také vidět, že rok 2024 byl nejteplejším v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,51 °C. V první dvacítce nejteplejších let není žádný z minulého století, všechny rekordní roky jsou ze století jednadvacátého. Mezi všemi měřenými měsíci mělo září 2023 největší teplotní anomálii (+1,71 °C.) __Dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu__.
+Z grafu můžeme také vidět, že rok 2024 byl nejteplejším v historii měření, kdy teplotní anomálie dosáhla hodnoty 1,47 °C. V první dvacítce nejteplejších let není žádný z minulého století, všechny rekordní roky jsou ze století jednadvacátého. Mezi všemi měřenými měsíci mělo září 2023 největší teplotní anomálii (+1,67 °C.) __Dvě třetiny oteplení nastaly po roce 1975 a trend oteplování se pohybuje mezi 0,15–0,20 °C za dekádu__.
 
 ## Důležité souvislosti: místní trendy a rychlost oteplování
 
