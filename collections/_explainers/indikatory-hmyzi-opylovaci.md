@@ -25,7 +25,7 @@ perex: |
 ## Čeho si všímat
 
 
-Kolik různých druhů opylovačů lze pozorovat kolem sebe a jaká je jejich četnost. Kromě včel jsou důležitými hmyzími opylovači také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Existuje jich mnoho druhů: v Česku například žije 29 druhů motýlů,[^motyli-zdroj] desítky druhů čmeláků,[^cmelaci-zdroj] zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů).[^vcely-zdroj]
+Kolik různých druhů opylovačů lze pozorovat kolem sebe a jaká je jejich četnost. Kromě včel jsou důležitými hmyzími opylovači také čmeláci, pestřenky, vosy, mouchy, denní a noční motýli (můry). Existuje jich mnoho druhů: v Česku například žijí desítky druhů motýlů,[^motyli-zdroj] cca 30 druhů čmeláků,[^cmelaci-zdroj] zhruba 700 druhů včel (v Evropě je to dokonce více než 2000 druhů).[^vcely-zdroj]
 
 {% include figure.html
     name="opylovac-pestrenka.jpg"
@@ -113,7 +113,8 @@ Druhovou pestrost i množství opylovačů se díky vhodnému managementu podař
 
 
 ## Zdroje a poznámky
-[^motyli-zdroj]: [Seznam motýlů vyskytujících se v ČR](https://www.lepidoptera.cz/motyli/babocka-admiral-vanessa-atalanta-linnaeus-1758).
+Text vznikl na základě konzultací s několika experty a expertkami, kteří se tématu opylovačů v Česku věnují.
+[^motyli-zdroj]: [Seznam motýlů vyskytujících se v ČR](https://www.lepidoptera.cz/motyli/)
 [^cmelaci-zdroj]: Více viz [Akademie věd ČR](https://web-api.academia.cz/uploads/Strategie_25_web_dc61f972ae.pdf)
 [^vcely-zdroj]: Viz [Pollinator Academy](https://pollinatoracademy.eu/pollinators/bees/)
 [^vcely-neprozkoumane]: Viz [IUCN Red List](https://portals.iucn.org/library/sites/library/files/documents/RL-4-019.pdf)

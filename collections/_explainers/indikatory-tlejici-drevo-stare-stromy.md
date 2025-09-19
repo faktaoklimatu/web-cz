@@ -61,7 +61,7 @@ V průměru se na jednom hektaru lesa v Česku nachází 20 m<sup>3</sup> tlejí
 | Těžba dřeva            | 14 | 58 % | 70 % |
 | Společenské využití    | 13 | 4 %  | 5 % |
 
-*Do uvedeného objemu tlejícího dřeva jsou započítány stojící stromy a ležící dřevo silnější než 7 cm.*
+*Do uvedeného objemu tlejícího dřeva jsou započítány stojící stromy a ležící dřevo silnější než 7 cm.*[^tlejici-drevo-zdroj]
 
 Nejvíce tlejícího dřeva na plochu lze najít tam, kde jsou lesy do velké míry ponechány samovolnému vývoji, tedy zejména v národních parcích a dalších chráněných oblastech. Přibližně tři čtvrtiny lesů v Česku jsou však tzv. lesy hospodářské, využívané k produkci dřeva. V těchto lesích má mrtvé dřevo převážně podobu stojících mrtvých kmenů – často jde o pozůstatky nedávné kůrovcové kalamity. Ulomené nebo uříznuté větve jsou po těžbě zpravidla z lesa odváženy pryč. V důsledku toho jsou hospodářské lesy na mrtvé dřevo poměrně chudé. Nejméně tlejícího dřeva je ponecháváno v lesích určených na rekreaci – především kvůli bezpečnosti návštěvníků.
 

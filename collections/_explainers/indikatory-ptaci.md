@@ -83,6 +83,7 @@ Díky opětovnému zavodnění vznikly v lokalitě různé mokřady a tůně, kt
 
 
 ## Zdroje a poznámky
+Text vznikl na základě odborných konzultací s ornitoložkou Alenou Klvaňovou.  
 [^ptaky-NRL]: Seznam druhů ptáků, kteří jsou klíčoví z hlediska zdraví zemědělské krajiny, uvádí evropské [Nařízení o obnově přírody](https://eur-lex.europa.eu/eli/reg/2024/1991/oj/eng) v příloze V.
 [^pokles-cr]: [Jednotný program sčítání ptáků](https://www.birdlife.cz/co-delame/vyzkum-a-ochrana-ptaku/vyzkum-ptaku/jpsp/)
 [^pokles-eu]: [PanEuropean Common Bird Monitoring Scheme](https://pecbms.info/trends-and-indicators/indicators/indicators/E_C_Fa/).
