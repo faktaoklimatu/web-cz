@@ -2,7 +2,14 @@
 layout:      explainer
 title:       "Dekarbonizace teplárenství: jak v Česku vyrobit dost nízkoemisního tepla pro dálkové vytápění?"
 slug:        "dekarbonizace-teplarenstvi-cr"
-published:   2025-09-02
+published:   2025-09-20
+authors:
+  - id: "jan-krcal"
+  - id: "jirka-lnenicka"
+    minor-role: "editace"
+  - name: "Michaela Valentová"
+    affiliation: ČVUT, Fakulta elektrotechnická
+    minor-role: "konzultace"
 weight:      50
 tags-scopes: [ eu, cr ]
 tags-topics: [ energetika ]
@@ -27,7 +34,7 @@ perex:       "Dálkové vytápění hraje v dodávkách tepla v současném Čes
 
 ## Jaký je současný stav teplárenství v Česku
 
-Tato kapitola popisuje současnou situaci českého teplárenství. Následující kapitoly na ni pak navazují úvahami o možnostech dalšího vývoje. 
+Tato kapitola popisuje současnou situaci českého teplárenství. Následující kapitoly na ni pak navazují úvahami o možnostech dalšího vývoje.
 
 ### Co je to dálkové vytápění a jak funguje
 
@@ -40,7 +47,6 @@ Naopak při **dálkovém vytápění** se teplo vyrábí centrálně pro mnoho d
 {% include figure.html
     name="teplarna-schema-normal-des.svg"
     name-mobile="teplarna-schema-normal-mob.svg"
-    class="narrow-figure"
     caption-above="**Rozvody dálkového tepla se skládají ze dvou sad potrubí** (podobně jako v topném systému v rodinném domě)"
     alt="V teplárně se vyrábí teplo centrálně z uhlí, zemního plynu, biomasy či odpadu a rozvody o délce 1 až 40 km se rozvádí do jednotlivých budov"
     source-text="Fakta o klimatu"
@@ -71,7 +77,6 @@ Teplárenství má v Česku významnou roli.[^teplarny-rozsah] Podle evropského
 {% include figure.html
     name="podil-czt-normal-des.svg"
     name-mobile="podil-czt-normal-mob.svg"
-    class="narrow-figure"
     caption-above="**Česko má v evropském srovnání vysoký podíl domácností připojených k dálkovému teplu**"
     alt="Jen 5 zemí EU (v čele s Dánskem) má znatelně vyšší podíl domácností připojených k dálkovému teplu"
     source-text="Fakta o klimatu"
@@ -93,7 +98,7 @@ Naprostá většina dálkového tepla se dnes v Česku vyrábí spalováním pal
 
 {% include figure.html
     name="vyroba-dnes.svg"
-    class="narrow-figure"
+    name-mobile="vyroba-dnes-mob.svg"
     caption-above="**Zásadní roli ve výrobě tepla dnes hrají fosilní zdroje uhlí a zemní plyn** \\
 celková brutto výroba tepla: 142 PJ/rok"
     alt="Největší podíl na výrobě brutto v letech 2022–2024 mělo uhlí (45 %), plyn (25 %) a biomasa a bioplyn (20 %). Další zdroje jsou méně významné: odpadní teplo (6 %), odpad (3 %), jaderné teplo (1 %)."
@@ -150,7 +155,7 @@ Kromě moderních plynových kogeneračních zdrojů je v Česku v plánu také 
 
 {% include figure.html
     name="vyroba-2030.svg"
-    class="narrow-figure"
+    name-mobile="vyroba-2030-mob.svg"
     caption-above="**Po odklonu od uhlí (okolo roku 2030) bude hlavním zdrojem dálkového tepla zemní plyn** \\
 odhad celkové brutto výroby tepla: 130–140 PJ/rok (až o 8 % méně než dnes)"
     alt="Po roce 2030 může mít podle odhadů Fakt o klimatu plyn 60–68% podíl na výrobě brutto, biomasa a bioplyn 22–26% podíl. Další zdroje budou i nadále relativně málo významné: odpadní teplo, teplo okolního prostředí a elektřina (5–6 %), odpad (4–5 %), jaderné teplo (1–3 %)."
@@ -198,7 +203,7 @@ V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifi
 
 {% include figure.html
     name="vyroba-2050.svg"
-    class="narrow-figure"
+    name-mobile="vyroba-2050-mob.svg"
     caption-above="**Z dlouhodobého hlediska lze výrobu dálkového tepla postavit na kombinaci tepelných čerpadel a nízkoemisních paliv** \\
 odhad celkové brutto výroby tepla: 100–120 PJ/rok  (až o 30 % méně než dnes)"
     alt="Po roce 2050 mohou podle odhadů Fakt o klimatu hrát nejvýznamější roli tři skupiny zdrojů: zdroje založené na elektřině (25–50 %), různé plyny jako zemní plyn, bioplyn, příp. vodík (10–45 %) a biomasa (25–28%). Zbytek i nadále může tvořit odpad (2–5 %) a jaderné teplo (3–7 %)."
