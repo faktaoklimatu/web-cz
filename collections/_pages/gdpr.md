@@ -6,7 +6,7 @@ slug: gdpr
 <div class="row"><div class="col-12 col-lg-10" markdown="1">
 
 {:.perex}
-Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů. Platné od 6. října 2020, naposledy aktualizovány 18.9.2025.
+Vytvořené v souladu s platnou legislativou a Nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů. Platné od 6. října 2020, naposledy aktualizovány 18. 9. 2025.
 
 Tento dokument může být průběžně aktualizován, aby reflektoval změny v právních požadavcích nebo v našich postupech. 
 
@@ -47,31 +47,32 @@ Dary v souhrnné výši nad 20 000 Kč od jednoho dárce za rok zveřejňujeme v
 Osobní údaje zpracováváme na základě uděleného souhlasu, a to za účelem informování o dění v organizaci, termínech seminářů nebo kontaktování pro zpětnou vazbu. Zároveň můžeme na základě oprávněného zájmu správce zasílat žádosti o podporu.
 
 V této databázi uchováváme:
- * jméno, příjmení,
- * telefonní číslo (volitelně),
- * e-mailovou adresu.
+
+* jméno, příjmení,
+* telefonní číslo (volitelně),
+* e-mailovou adresu.
 
 ### Zpracování osobních údajů při poskytování online kurzu
 
-Při registraci do online kurzu na adrese www.dekarbonizujemecesko.cz budete zařazeni do databáze účastníků kurzu.
+Při registraci do online kurzu na adrese [dekarbonizujemecesko.cz](https://dekarbonizujemecesko.cz/) budete zařazeni do databáze účastníků kurzu.
 
 V této databázi uchováváme:
- * jméno, příjmení,
- * e-mailovou adresu,
- * údaje o průběhu kurzu.
+
+* jméno, příjmení,
+* e-mailovou adresu,
+* údaje o průběhu kurzu.
 
 Osobní údaje zpracováváme za následujícími účely:
 
-1) Poskytování služeb kurzu a zajištění funkčnosti služby (právní základ: plnění smlouvy pro které je zpracování údajů nezbytné - poskytování kurzu)
-   * Umožnění přihlášení a přístupu do aplikace
-   * Sledování pokroku v kurzu
-   * Generování certifikátů o absolvování
-   * Zasílání transakčních e-mailů
-   * Technická podpora a řešení problémů s přístupem
-   * Zasílání dotazníku zpětné vazby po dokončení kurzu
-
-2) Plnění povinností vůči poskytovateli dotace (právní základ: plnění právní povinnosti)
-   * Reporting účastníků kurzu Státnímu fondu životního prostředí (SFŽP) jako poskytovateli dotace na realizaci kurzu
+1. Poskytování služeb kurzu a zajištění funkčnosti služby (právní základ: plnění smlouvy pro které je zpracování údajů nezbytné – poskytování kurzu):
+    * Umožnění přihlášení a přístupu do aplikace,
+    * Sledování pokroku v kurzu,
+    * Generování certifikátů o absolvování,
+    * Zasílání transakčních e-mailů,
+    * Technická podpora a řešení problémů s přístupem,
+    * Zasílání dotazníku zpětné vazby po dokončení kurzu.
+2. Plnění povinností vůči poskytovateli dotace (právní základ: plnění právní povinnosti):
+    * Reporting účastníků kurzu [Státnímu fondu životního prostředí (SFŽP)](https://www.sfzp.cz/) jako poskytovateli dotace na realizaci kurzu.
    
 ### Analytika na webových stránkách
 
