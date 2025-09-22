@@ -320,6 +320,12 @@ V mnoha případech ale kompletní rekonstrukce nutná není a bariéry ke sní�
 
 Tento text vychází z několika českých studiích a strategií:
 
+{% include preview-box.html
+    title="Podcastová epizoda"
+    text="Dekarbonizací českého teplárenství se také zabývá epizoda našeho podcastu s Michaelou Valentovou z ČVUT."
+    slug="87-ceske-teplarenstvi"
+%}
+
 - [Vnitrostátní plán České republiky v oblasti energetiky a klimatu](https://mpo.gov.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/vnitrostatni-plan-ceske-republiky-v-oblasti-energetiky-a-klimatu--285293/). MPO, 2024
 - Jaroslav Knápek, Michaela Valentová, Rostislav Krejcar, Jiří Vašíček, Jiří Vecka. [Klimaticko-energetické investice v teplárenství 2014–2030](https://ekonom.fel.cvut.cz/cs/katedra/lide/valenmi7/cic2030/reports/ipp-teplarenstvi-report-final.pdf). ČVUT v Praze, 2021
 - Michaela Valentová, Jaroslav Knápek, Adam Kubín, Jiří Vašíček. [Dekarbonizace teplárenství: strategický, regulační a technologicko-ekonomický rámec v České republice](https://www.budovy21.cz/wp-content/uploads/2022/07/prehledova-studie-dekarbonizace-teplarenstvi-cvut-46-MB.pdf). ČVUT v Praze, 2022
