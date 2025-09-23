@@ -57,4 +57,4 @@ Poměr Chorvatska ke spotřebě – spočítán ručně jako 73 % × (15,4 ÷ 19
 [^ostatni-hydro]: Včetně zanedbatelné výroby z elektráren geotermálních, přílivových a těch, které získávají energii z pohybu mořských vln.
 [^lucembursko]: Striktně vzato by na prvním místě bylo Lucembursko s 90 % v roce 2024. To ale vyrábí pouze cca 20 % spotřebovávané elektřiny, proto není do dalších statistik v textu zahrnuto.
 [^litva]: Litva vyrábí z obnovitelných zdrojů 74 % elektřiny, ale podobně jako Lucembursko většinu elektřiny dováží – přibližně 65 %. Do dalších statistik v textu není zahrnuta.
-[^estonsko]: V Estonsku narost podíl z obnovitelných zdrojů o 57 %, avšak tento nárůst je důsledkem uzavření tamních uhelných elektráren, nikoliv tak výrazným nárůstem výroby z obnovitelných zdrojů v absolutním měřítku.
+[^estonsko]: V Estonsku narostl podíl z obnovitelných zdrojů o 57 %, avšak tento nárůst je důsledkem uzavření tamních uhelných elektráren, nikoliv tak výrazným nárůstem výroby z obnovitelných zdrojů v absolutním měřítku.
