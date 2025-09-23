@@ -5,7 +5,7 @@ slug:          "indikatory-krajinotvorne-prvky"
 redirect_from: "/indikatory-krajinotvorne-prvky"
 series-id:     "serie-indikatory-zdravi-krajiny"
 series-order:  "II"
-published:     2025-09-15
+published:     2025-09-23
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
@@ -25,13 +25,14 @@ perex: |
 
 ## Čeho si všímat
 
-Kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích[^EVP].
+Kolik je v krajině různých drobných prvků, které podporují její pestrost a život v ní – například kolik je stromů či jejich skupinek uprostřed polí, kolik je polních cest a stromořadí, kolik mezí, mokřadů na loukách či v lesích, kolik tůní, travnatých nebo květnatých pásů v polích.[^EVP]
 
 {% include figure.html
-    name="krajinotvorni-prvek-strom.jpg"
+    name="prvek-strom.jpg"
     caption="Strom jako útočiště v jednotvárné zemědělské krajině"
-    alt="Strom jako útočiště v jednotvárné zemědělské krajině"
+    alt="Fotografie stromu uprostřed velkého lánu"
     source-text="Ja Kubislav, Unsplash"
+    source-url="https://unsplash.com/photos/green-grass-field-with-leafless-tree-during-daytime-QbWCItZGraY"
 %}
 
 {% include expander-figure.html
@@ -49,7 +50,7 @@ Krajinotvorné prvky podporují pestrost krajiny, která pak:
 
 **V současnosti na mnoha místech v Česku tyto krajinotvorné prvky chybějí nebo se vyskytují jen sporadicky.** Je to dáno především scelováním pozemků v minulosti (kolektivizace od 50. let 20. století a vznik velkých družstev) a intenzivním zemědělstvím. Politické a legislativní změny stejně jako důraz na výnosy sice přinesly větší efektivitu produkce a ekonomický zisk, ale znamenaly také velké zásahy do krajiny s mnoha negativními důsledky. Krajina tak přišla o svou rozmanitost a s tím i o značnou část své dřívější hodnoty.
 
-Rozorání mezí a polních cest, vysoušení mokřadů, vykácení lesíků a remízků a další změny – to vše vedlo k tomu, že v Česku dnes najdeme jedny z největších ucelených bloků zemědělské půdy v celé EU[^kolektivizace]. Na těchto plochách se navíc často opakovaně pěstuje jedna plodina, zpravidla intenzivně ošetřovaná pesticidy a přihnojovaná syntetickými hnojivy. Vzniká tím prostředí nehostinné pro život dalších druhů a každý krajinotvorný prvek pak představuje pomyslnou malou “oázy v poušti”, kde mohou tyto druhy přežívat.
+Rozorání mezí a polních cest, vysoušení mokřadů, vykácení lesíků a remízků a další změny – to vše vedlo k tomu, že v Česku dnes najdeme jedny z největších ucelených bloků zemědělské půdy v celé EU.[^kolektivizace] Na těchto plochách se navíc často opakovaně pěstuje jedna plodina, zpravidla intenzivně ošetřovaná pesticidy a přihnojovaná syntetickými hnojivy. Vzniká tím prostředí nehostinné pro život dalších druhů a každý krajinotvorný prvek pak představuje pomyslnou malou “oázy v poušti”, kde mohou tyto druhy přežívat.
 
 **V posledních letech zvolna přibývá snahy ztracenou pestrost do krajiny vracet**, a to zejména na lokální úrovni (viz příklad dobré praxe níže). Při splnění podmínek je na to možné využít i evropské dotace – například v rámci [Společné zemědělské politiky](https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en). Opatření potřebná pro obnovu krajinotvorných prvků definuje také evropské nařízení o obnově přírody ([Nature Restoration Law](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52022PC0304)).
 
@@ -67,12 +68,12 @@ Příkladem může být vysychající rašeliniště v přírodní rezervaci Nov
 Rašeliniště tak postupně zarůstá, opět pomáhá s regulací vody v lokalitě a vytváří prostor pro život nejrůznějších rostlin a živočichů.
 
 {% include figure.html
-   name="priklad-nova-louka.jpg"
-   caption="Obnovené rašeliniště v Jizerských horách"
-   alt="Obnovené rašeliniště v Jizerských horách"
-   source-text="Adapterra Awards"
+    name="priklad-nova-louka.jpg"
+    caption="Obnovené rašeliniště v Jizerských horách"
+    alt="Fotografie dřevěných přehrážek na říčce v rašeliništi"
+    source-text="Jizersko-ještědský horský spolek"
+    source-url="https://www.adapterraawards.cz/cs/databaze/2020/obnova-biotopu-raseliniste-v-pr-nova-louka"
 %}
-
 
 ## Zdroje a poznámky
 
