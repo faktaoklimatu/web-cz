@@ -87,16 +87,6 @@
     email: "matej.grabovsky@faktaoklimatu.cz"
     www: "https://mgrabovsky.net/"
 
-  - id: "jirka-lnenicka"
-    name: "Jirka Lněnička"
-    name_formal: "Jiří Lněnička"
-    position: "Editor"
-    summary: "Pomáhá týmu přemýšlet nad texty a ladit jejich finální podobu. Opírá se o 20 let zkušeností z pedagogické, překladatelské a editorské činnosti pro firmy, akademická pracoviště a další organizace."
-    img: "jirka-lnenicka.jpg"
-    email: "jirka.lnenicka@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
-    twitter: "https://twitter.com/JirkaLnenicka"
-
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -172,6 +162,12 @@
   - name: "Martin Křivánek"
     summary: "Podílel se na textech webu, přispíval nápady a připomínkoval infografiky a články."
     linkedin: "https://www.linkedin.com/in/martin-krivanek/"
+
+  - id: "jirka-lnenicka"
+    name: "Jirka Lněnička"
+    name_formal: "Jiří Lněnička"
+    summary: "Pomáhá týmu přemýšlet nad texty a ladit jejich finální podobu. Opírá se o 20 let zkušeností z pedagogické, překladatelské a editorské činnosti pro firmy, akademická pracoviště a další organizace."
+    linkedin: "https://www.linkedin.com/in/jiří-lněnička-091475115/"
 
   - id: "matej-piro"
     name: "Matěj Píro"
