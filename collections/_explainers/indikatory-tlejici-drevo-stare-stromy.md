@@ -43,7 +43,7 @@ Lesy se hospodářsky využívají (získáváme z nich zejména dřevo), vedle 
     name="tlejici-drevo-hady.jpg"
     caption="Tlející dřevo v lesích v okolí Hádecké planinky v Brně"
     alt="Fotografie popadaných kmenů stromů pokrytých mechem uprostřed lesa"
-    source-text="Andy Snováková"
+    source-text="Andy Snováková, Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/indikatory-tlejici-drevo-stare-stromy"
 %}
 
@@ -86,7 +86,7 @@ Pro lesní hospodaření je zásadní přístup, který vždy bere v úvahu podm
     name="tlejici-drevo-cesky-les.jpg"
     caption="Velké kusy tlejícího dřeva v CHKO Český les"
     alt="Velké kusy tlejícího dřeva v CHKO Český les"
-    source-text="Jiří Lněnička"
+    source-text="Jiří Lněnička, Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/indikatory-tlejici-drevo-stare-stromy"
 %}
 

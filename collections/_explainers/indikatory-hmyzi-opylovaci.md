@@ -29,7 +29,7 @@ Kolik různých druhů opylovačů lze pozorovat kolem sebe a jaká je jejich č
     name="opylovac-pestrenka.jpg"
     caption="Pestřenky (lidově vosičky) patří mezi důležité opylovače"
     alt="Fotografie pestřenky na květu čekanky obecné"
-    source-text="Jiří Lněnička"
+    source-text="Jiří Lněnička, Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/indikatory-hmyzi-opylovaci"
 %}
 
