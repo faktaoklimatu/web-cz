@@ -25,18 +25,20 @@ perex: |
 
 Kolik je v lese starých (odumírajících) stromů a dále kolik je zde tlejících (stojících nebo ležících) stromů a kmenů, ulomených větví a dalších částí stromů.
 
-{% include expander-figure.html
-    name="vyznam-tlejiciho-dreva"
-    class="contrast-figure"
-    label="Proč jsou staré stromy a tlející dřevo v lese důležité?"
-    content="
+{% capture vyznam_tlejiciho_dreva %}
 Lesy se hospodářsky využívají (získáváme z nich zejména dřevo), vedle toho však plní i řadu dalších, ekosystémových funkcí. Pro některé z těchto funkcí je přítomnost starých stromů a tlejícího dřeva v lese velice důležitá.
 
 - **Podporují biodiverzitu** – vytvářejí v lese řadu mikrostanovišť se specifickými podmínkami – může jít například o různé dutiny, praskliny, prostor pod kůrou či vývrty po aktivitách hmyzu. Na tyto podmínky jsou navázány nejrůznější druhy hub, mechů, brouků a podobně. Z hlediska biodiverzity jsou zásadní hlavně staré stromy a velké kusy tlejícího dřeva.
 - **Podporují cirkulaci živin** – tlející dřevo je v neustálém procesu rozkladu. Živiny v něm uložené se díky tomu postupně uvolňují do půdy a stávají se dostupnými pro další organismy. Z hlediska živin mají význam zejména tenké větve a menší kusy dřeva, neboť se rozkládají rychle.
 - **Ukládají uhlík do půdy** – podobně jako živiny se i uhlík při rozkladu biomasy postupně uvolňuje do půdy, kde může zůstat dlouhodobě uložen. Část se také uvolňuje do atmosféry ve formě CO<sub>2</sub>. Staré (živé) stromy jsou z hlediska zachytávání a ukládání uhlíku důležité mimo jiné svou velikostí – s věkem se zvětšuje jejich koruna (a listová plocha), proto ve srovnání s mladými stromy zachytí mnohem více oxidu uhličitého a uloží více uhlíku do své biomasy. Stejné množství uhlíku, jaké mladý strom uloží za pár desítek let své existence, dokáže velmi starý strom uložit za jediný rok.
-- **Zadržují vláhu** – velké kusy tlejícího dřeva fungují jako „houba“ – absorbují vodu, kterou pak mohou využít okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace – ochlazuje okolní vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí.
-"
+- **Zadržují vláhu** – velké kusy tlejícího dřeva fungují jako "houba" – absorbují vodu, kterou pak mohou využít okolní rostliny. Uvolňující se vlhkost funguje také jako přírodní klimatizace – ochlazuje okolní vzduch a zmírňuje teplotní rozdíly mezi dnem a nocí.
+{% endcapture %}
+
+{% include expander-figure.html
+    name="vyznam-tlejiciho-dreva"
+    class="contrast-figure"
+    label="Proč jsou staré stromy a tlející dřevo v lese důležité?"
+    content=vyznam_tlejiciho_dreva
 %}
 
 {% include figure.html
