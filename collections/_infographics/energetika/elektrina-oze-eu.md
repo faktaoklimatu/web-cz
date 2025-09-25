@@ -16,7 +16,7 @@ data-orig:
 ## Jak číst tuto infografiku
 
 * Infografika znázorňuje **podíl jednotlivých zdrojů na výrobě elektřiny se zaměřením na obnovitelné zdroje energie v letech 2000–2024** ve všech členských státech Evropské unie a ve Velké Británii.[^EU]
-* Zvýrazněna je především **elektřina z větru, slunce a biomasy**. Podíl výroby z těchto zdrojů se v EU navýšil **z 2 % v roce 2000 na 34 % v roce 2023**, tedy přibližně 17×.
+* Zvýrazněna je především **elektřina z větru, slunce a biomasy**. Podíl výroby z těchto zdrojů se v EU navýšil **z 2 % v roce 2000 na 34 % v roce 2024**, tedy přibližně 17×.
 * Pro srovnání je v infografice zobrazena i výroba z vodních elektráren[^ostatni-hydro] (která víceméně stagnuje) a výroba z jaderných a fosilních zdrojů (uhlí a zemního plynu).
 * Situace tří z uvedených zemí je specifická – Lucembursko a Litva více než polovinu spotřebované elektřiny dováží, v Estonsku v posledních pěti letech výrazně klesla výroba z fosilních paliv (zatímco výroba z obnovitelných zdrojů se příliš nezměnila). Z toho důvodu jsou tyto tři země v infografice potlačeny.
 * Některé další země (v grafu jsou označeny *, např. Chorvatsko nebo Itálie) alespoň jednou v letech 2020 až 2024 dovážely více než 10 % spotřebovávané elektřiny. Vývoj výroby elektřiny z OZE je proto nutné interpretovat s ohledem na tento fakt.
@@ -48,8 +48,8 @@ Poměr Chorvatska ke spotřebě – spočítán ručně jako 73 % × (15,4 ÷ 19
 
 ## Zdroj dat
 
-* Infografika je založena na [datech](https://ember-climate.org/data-catalogue/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jde o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu, nejaktuálnější data byla doplněna z národních a dalších zdrojů.
-* Kromě datových sad publikuje think-tank Ember každý rok také souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-energy.org/latest-insights/european-electricity-review-2025/) a [celosvětově](https://ember-energy.org/latest-insights/global-electricity-review-2025/).
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-energy.org/). Jedná se o nezávislý energetický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu, nejaktuálnější data byla doplněna z národních a dalších zdrojů.
+* Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-energy.org/latest-insights/european-electricity-review-2025/) a [na celém světě](https://ember-energy.org/latest-insights/global-electricity-review-2025/).
 
 ## Poznámky
 

@@ -42,7 +42,7 @@ Podíl importu EU: https://github.com/faktaoklimatu/data-analysis/blob/master/no
 
 ## Zdroj dat
 
-* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-climate.org/). Jedná se o nezávislý klimatický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu, nejaktuálnější data byla doplněna z národních a dalších zdrojů.
+* Infografika je založená na [datech](https://ember-energy.org/data/yearly-electricity-data/) o výrobě a spotřebě elektřiny od organizace [Ember](https://ember-energy.org/). Jedná se o nezávislý energetický think-tank, zaměřený na podporu přechodu od uhlí k čistým zdrojům elektřiny. Ember vychází především z dat Eurostatu, nejaktuálnější data byla doplněna z národních a dalších zdrojů.
 * Think-tank Ember kromě datových sad publikuje také každý rok souhrnné zprávy o výrobě elektřiny v [Evropské unii](https://ember-energy.org/latest-insights/european-electricity-review-2025/) a [na celém světě](https://ember-energy.org/latest-insights/global-electricity-review-2025/).
 * Data o populaci jsou převzata od Organizace spojených národů.
 
