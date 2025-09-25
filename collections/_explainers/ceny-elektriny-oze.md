@@ -56,6 +56,7 @@ Například v roce 2024 platily za elektřinu české domácnost v průměru 32,
 
 {% include figure.html
     name="slozky-ceny-cz.svg"
+    class="narrow-figure"
     alt="TODO: Alt text"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
