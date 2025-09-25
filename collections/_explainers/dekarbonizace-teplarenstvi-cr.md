@@ -45,9 +45,8 @@ Naopak při **dálkovém vytápění** se teplo vyrábí centrálně pro mnoho d
 **Centrálně vyrobené teplo se tepelně izolovaným potrubím rozvádí** po městě, zpravidla opět ve formě horké vody. V každé budově připojené k dané soustavě jsou tepelné výměníky, kde se horkou vodou z teplárny ohřívá voda, kterou pak využívá oddělený topný systém sloužící k vytápění budovy. Zpět do teplárny se pak druhou sadou potrubí vrací chladnější, tzv. vratná voda. (Zjednodušeně by se to dalo přirovnat k cévnímu systému v lidském těle – podobně jako se tepnami rozvádí po těle okysličená krev a odkysličená se následně žílami vrací k srdci, tak se v systémech centrálního tepla rozvádí jednou sadou potrubí horká voda po městě a druhou sadou se pak ochlazená voda z výměníků vrací do teplárny.)[^teplarny-analogie]
 
 {% include figure.html
-    name="teplarna-schema-normal-des.svg"
-    name-mobile="teplarna-schema-normal-mob.svg"
-    caption-above="**Rozvody dálkového tepla se skládají ze dvou sad potrubí** (podobně jako v topném systému v rodinném domě)"
+    name="teplarna-schema-normal-des.png"
+    name-mobile="teplarna-schema-normal-mob.png"
     alt="V teplárně se vyrábí teplo centrálně z uhlí, zemního plynu, biomasy či odpadu a rozvody o délce 1 až 40 km se rozvádí do jednotlivých budov"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -58,9 +57,8 @@ Takových soustav dálkového vytápění je v Česku několik stovek, přičem�
 Velkou soustavu dálkového vytápění lze ukázat na příkladu rozvodné soustavy Pražské teplárenské (viz schematická mapa níže). Ta je zároveň specifická v tom, že má hlavní zdroj tepla mimořádně daleko od většiny spotřeby – až v Mělníku (napaječ do Prahy je dlouhý cca 35 km). U většiny tepláren je to jiné a zdroje tepla se nacházejí přímo ve městě nebo někde poblíž.
 
 {% include figure.html
-    name="rozvody-praha.svg"
-    class="narrow-figure"
-    caption-above="**V Praze je rozsáhlá propojená teplárenská síť.** (Výroba tepla probíhá v teplárně Mělník, spalovně Malešice a několika dalších zdrojích. Soustava zásobuje teplem hlavně části města na pravém břehu Vltavy. Další menší soustavy fungují ve čtvrtích na levém břehu řeky.)"
+    name="rozvody-praha-des.png"
+    name-mobile="rozvody-praha-mob.png"
     alt="Na pravém břehu Vltavy se nachází rozsáhlá síť teplárenských rozvodů, většinu tepla pro tuto soustavu dodává teplárna v Mělníku"
     source-text="Pražská teplárenská"
     source-url="https://www.ptas.cz/odstavky-a-poruchy/"
@@ -75,9 +73,8 @@ Kromě rezidenčních a administrativních budov zásobují teplárny často i p
 Teplárenství má v Česku významnou roli.[^teplarny-rozsah] Podle evropského srovnání z roku 2017 zásobovalo dálkové teplo v Česku asi 40 % domácností. To je vyšší podíl než ve velké většině zemí EU, včetně zemí západní Evropy s podobným klimatem (jako je například Německo či Rakousko).
 
 {% include figure.html
-    name="podil-czt-normal-des.svg"
-    name-mobile="podil-czt-normal-mob.svg"
-    caption-above="**Česko má v evropském srovnání vysoký podíl domácností připojených k dálkovému teplu**"
+    name="podil-czt-normal-des.png"
+    name-mobile="podil-czt-normal-mob.png"
     alt="Jen 5 zemí EU (v čele s Dánskem) má znatelně vyšší podíl domácností připojených k dálkovému teplu"
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -97,10 +94,8 @@ Celkově se ve formě dálkového tepla v roce 2023 v Česku spotřebovalo asi 1
 Naprostá většina dálkového tepla se dnes v Česku vyrábí spalováním paliv, z velké části fosilních (uhlí a zemního plynu). Třetím nejvýznamnějším zdrojem dálkového tepla je biomasa. Až s velkým odstupem následuje využití odpadního tepla v průmyslu a spalování zbytkového odpadu.
 
 {% include figure.html
-    name="vyroba-dnes.svg"
+    name="vyroba-dnes.png"
     name-mobile="vyroba-dnes-mob.svg"
-    caption-above="**Zásadní roli ve výrobě tepla dnes hrají fosilní zdroje uhlí a zemní plyn** \\
-celková brutto výroba tepla: 142 PJ/rok"
     alt="Největší podíl na výrobě brutto v letech 2022–2024 mělo uhlí (45 %), plyn (25 %) a biomasa a bioplyn (20 %). Další zdroje jsou méně významné: odpadní teplo (6 %), odpad (3 %), jaderné teplo (1 %)."
     source-text="ERÚ, Roční zpráva o provozu teplárenských soustav České republiky (průměr za roky 2022–2024)"
     source-url="https://eru.gov.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2024"
@@ -154,10 +149,8 @@ Dnes se v Česku ve velkém plánuje a realizuje **odklon od uhlí** (a přechod
 Kromě moderních plynových kogeneračních zdrojů je v Česku v plánu také výstavba nových teplárenských zdrojů na biomasu a nových spaloven odpadu.[^spalovny] Teplárny Brno rovněž plánují okolo roku 2030 zprovoznit 42 km dlouhý horkovod z Dukovan. Po zkušenostech z plynové krize v letech 2021–2022 se dnes každá teplárna snaží své zdroje tepla aspoň zčásti diverzifikovat. I přes tyto plány lze očekávat, že po odklonu od uhlí bude v Česku mezi lety 2030–2035 hlavním palivem na výrobu dálkového tepla zemní plyn.
 
 {% include figure.html
-    name="vyroba-2030.svg"
+    name="vyroba-2030.png"
     name-mobile="vyroba-2030-mob.svg"
-    caption-above="**Po odklonu od uhlí (okolo roku 2030) bude hlavním zdrojem dálkového tepla zemní plyn** \\
-odhad celkové brutto výroby tepla: 130–140 PJ/rok (až o 8 % méně než dnes)"
     alt="Po roce 2030 může mít podle odhadů Fakt o klimatu plyn 60–68% podíl na výrobě brutto, biomasa a bioplyn 22–26% podíl. Další zdroje budou i nadále relativně málo významné: odpadní teplo, teplo okolního prostředí a elektřina (5–6 %), odpad (4–5 %), jaderné teplo (1–3 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -202,10 +195,8 @@ Druhou možností je vyrábět dálkové teplo pomocí nízkoemisní elektřiny 
 V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifikace výroby tepla, která sníží spotřebu zemního plynu, tak nahrazení alespoň části zbývajícího plynu nízkoemisními palivy, jako je biometan. Velká část tepláren bude schopna výrobu tepla pomocí elektřiny a pomocí nízkoemisních paliv kombinovat a oba způsoby bude možné díky chytrému řízení efektivně střídat podle aktuální situace na trhu s elektřinou. Díky tomu bude možné provozní náklady na výrobu tepla snižovat.
 
 {% include figure.html
-    name="vyroba-2050.svg"
+    name="vyroba-2050.png"
     name-mobile="vyroba-2050-mob.svg"
-    caption-above="**Z dlouhodobého hlediska lze výrobu dálkového tepla postavit na kombinaci tepelných čerpadel a nízkoemisních paliv** \\
-odhad celkové brutto výroby tepla: 100–120 PJ/rok  (až o 30 % méně než dnes)"
     alt="Po roce 2050 mohou podle odhadů Fakt o klimatu hrát nejvýznamější roli tři skupiny zdrojů: zdroje založené na elektřině (25–50 %), různé plyny jako zemní plyn, bioplyn, příp. vodík (10–45 %) a biomasa (25–28%). Zbytek i nadále může tvořit odpad (2–5 %) a jaderné teplo (3–7 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
