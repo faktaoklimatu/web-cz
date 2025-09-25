@@ -96,8 +96,8 @@ Celkově se ve formě dálkového tepla v roce 2023 v Česku spotřebovalo asi 1
 Naprostá většina dálkového tepla se dnes v Česku vyrábí spalováním paliv, z velké části fosilních (uhlí a zemního plynu). Třetím nejvýznamnějším zdrojem dálkového tepla je biomasa. Až s velkým odstupem následuje využití odpadního tepla v průmyslu a spalování zbytkového odpadu.
 
 {% include figure.html
-    name="vyroba-dnes.png"
-    name-mobile="vyroba-dnes-mob.svg"
+    name="vyroba-dnes-des.png"
+    name-mobile="vyroba-dnes-mob.png"
     alt="Největší podíl na výrobě brutto v letech 2022–2024 mělo uhlí (45 %), plyn (25 %) a biomasa a bioplyn (20 %). Další zdroje jsou méně významné: odpadní teplo (6 %), odpad (3 %), jaderné teplo (1 %)."
     source-text="ERÚ, Roční zpráva o provozu teplárenských soustav České republiky (průměr za roky 2022–2024)"
     source-url="https://eru.gov.cz/rocni-zprava-o-provozu-teplarenskych-soustav-cr-za-rok-2024"
@@ -151,8 +151,8 @@ Dnes se v Česku ve velkém plánuje a realizuje **odklon od uhlí** (a přechod
 Kromě moderních plynových kogeneračních zdrojů je v Česku v plánu také výstavba nových teplárenských zdrojů na biomasu a nových spaloven odpadu.[^spalovny] Teplárny Brno rovněž plánují okolo roku 2030 zprovoznit 42 km dlouhý horkovod z Dukovan. Po zkušenostech z plynové krize v letech 2021–2022 se dnes každá teplárna snaží své zdroje tepla aspoň zčásti diverzifikovat. I přes tyto plány lze očekávat, že po odklonu od uhlí bude v Česku mezi lety 2030–2035 hlavním palivem na výrobu dálkového tepla zemní plyn.
 
 {% include figure.html
-    name="vyroba-2030.png"
-    name-mobile="vyroba-2030-mob.svg"
+    name="vyroba-2030-des.png"
+    name-mobile="vyroba-2030-mob.png"
     alt="Po roce 2030 může mít podle odhadů Fakt o klimatu plyn 60–68% podíl na výrobě brutto, biomasa a bioplyn 22–26% podíl. Další zdroje budou i nadále relativně málo významné: odpadní teplo, teplo okolního prostředí a elektřina (5–6 %), odpad (4–5 %), jaderné teplo (1–3 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -197,8 +197,8 @@ Druhou možností je vyrábět dálkové teplo pomocí nízkoemisní elektřiny 
 V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifikace výroby tepla, která sníží spotřebu zemního plynu, tak nahrazení alespoň části zbývajícího plynu nízkoemisními palivy, jako je biometan. Velká část tepláren bude schopna výrobu tepla pomocí elektřiny a pomocí nízkoemisních paliv kombinovat a oba způsoby bude možné díky chytrému řízení efektivně střídat podle aktuální situace na trhu s elektřinou. Díky tomu bude možné provozní náklady na výrobu tepla snižovat.
 
 {% include figure.html
-    name="vyroba-2050.png"
-    name-mobile="vyroba-2050-mob.svg"
+    name="vyroba-2050-des.png"
+    name-mobile="vyroba-2050-mob.png"
     alt="Po roce 2050 mohou podle odhadů Fakt o klimatu hrát nejvýznamější roli tři skupiny zdrojů: zdroje založené na elektřině (25–50 %), různé plyny jako zemní plyn, bioplyn, příp. vodík (10–45 %) a biomasa (25–28%). Zbytek i nadále může tvořit odpad (2–5 %) a jaderné teplo (3–7 %)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz"
@@ -207,6 +207,12 @@ V praxi tak bude pravděpodobně probíhat obojí – jak částečná elektrifi
 Podíl spaloven odpadu na výrobě tepla je v dlouhodobém horizontu nižší než v krátkodobém, popsaném v předchozí sekci – předpokládá se totiž vyšší míra recyklace a snaha předcházet tvorbě odpadu. Naopak mírně vzrůst by mohlo využití jaderného tepla (v případě využití malých modulárních reaktorů). Z dnešního pohledu však není reálné očekávat nasazení malých modulárních reaktorů ve velkém množství menších teplárenských soustav – ať už kvůli vysokým nákladům či kvůli povolovacím procesům v oblasti jaderné bezpečnosti.
 
 Zde jsou hlavní kroky vedoucí k nízkoemisnímu teplárenství v Česku:
+
+{% include figure.html
+    name="hlavni-kroky-dekarbonizace-des.png"
+    name-mobile="hlavni-kroky-dekarbonizace-mob.png"
+    alt="Piktogramy hlavních kroků vedoucí k nízkoemisnímu teplárenství v Česku"
+%}
 
 #### Část energie lze uspořit
 
@@ -277,6 +283,12 @@ V současném Česku dává zatím ekonomicky smysl pouze krátkodobá akumulace
 ## Jaké bariéry stojí v cestě dekarbonizaci teplárenství
 
 Dekarbonizační cíl po roce 2030 je jednoduchý: nahradit převážnou většinu výroby tepla ze zemního plynu kombinací výroby pomocí elektřiny a nízkoemisních paliv. Není však zdaleka snadné se k tomuto cíli dostat. Jasná strategie dekarbonizace sektoru chybí a kromě toho je třeba překonat i ekonomicko-regulatorní, technologické a infrastrukturní bariéry.
+
+{% include figure.html
+    name="bariery-dekarbonizace-des.png"
+    name-mobile="bariery-dekarbonizace-mob.png"
+    alt="Piktogramy bariér dekarbonizace teplárenství"
+%}
 
 ### Chybějící strategie
 
