@@ -12,13 +12,13 @@ authors:
 weight:      77
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
-cover-source-author:      "Nick Nice"
-cover-source-text:        "a house with a cloudy sky"
+cover-source-author:      "Arno Senoner"
+cover-source-text:        "A wind farm with a wind turbine in the background"
 cover-source-license:     "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"
-cover-source-url:         "https://unsplash.com/photos/a-house-with-a-cloudy-sky-PIoYdeasfU0"
+cover-source-url:         "https://unsplash.com/photos/a-wind-farm-with-a-wind-turbine-in-the-background-6lOxktnqo04"
 perex: |
-  Jak se rostoucí instalovaný výkon a výroba z fotovoltaických a větrných elektráren promítá do cen elektřiny pro koncové zákazníky? Přestože slunce a vítr jednoznačně zlevňují velkoobchodní elektřinu, jak (a jestli) se toto zlevnění projeví také u koncových spotřebitelů, o tom rozhodují i další položky na faktuře. Následující text vysvětluje, z čeho se cena elektřiny na faktuře skládá, a popisuje různé způsoby, jimiž státy EU přenášejí náklady a výnosy rozvoje obnovitelných zdrojů na konečné spotřebitele.
+  Jak se rostoucí instalovaný výkon a výroba z fotovoltaických a větrných elektráren promítá do cen elektřiny pro koncové zákazníky? Solární a větrné elektrárny jednoznačně zlevňují velkoobchodní elektřinu. Cenu elektřiny pro koncové spotřebitele však významně ovlivňují i další položky, například daně nebo náklady na rozvoj sítí, které záleží hlavně na regulacích v daném státě. Následující text vysvětluje, z čeho se cena elektřiny na faktuře skládá, a popisuje různé způsoby, jimiž státy EU přenášejí náklady a výnosy rozvoje obnovitelných zdrojů na konečné spotřebitele.
 ---
 
 {% include tldr.html content="
@@ -52,7 +52,7 @@ V Česku se cena na vyúčtování skládá z tzv. regulované složky, neregulo
 "
 %}
 
-Například v roce 2024 platily české domácnosti za elektřinu v průměru 32,2 ¢/kWh (přibližně 8 Kč/kWh).[^jednotka-ceny] Z toho přibližně čtvrtinu tvořily daně a poplatky, čtvrtinu náklady na sítě a polovinu cena za energie a dodávky.
+Například v roce 2024 platily české domácnosti za elektřinu v průměru 0,32 €/kWh (přibližně 8 Kč/kWh).[^jednotka-ceny] Z toho přibližně čtvrtinu tvořily daně a poplatky, čtvrtinu náklady na sítě a polovinu cena za energie a dodávky.
 
 {% include figure.html
     name="slozky-ceny-cz.svg"
@@ -168,7 +168,7 @@ Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 v
 
 ## Jaké ceny a pravidla mají jinde v Evropě?
 
-Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi jednotlivými státy EU značně liší. Nejvíce za elektřinu v roce 2024 platily německé domácnosti – přibližně 40 centů na kWh dodané elektřiny (zhruba 10 Kč/kWh). Na opačném konci cenové škály se nacházely domácnosti v Bulharsku a Maďarsku, kde lidé platili jen o málo více než 10 ¢/kWh (přibližně 2,5 Kč/kWh). Jak tento čtyřnásobný rozdíl mezi nejvyššími a nejnižšími cenami vysvětlit?
+Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi jednotlivými státy EU značně liší. Nejvíce za elektřinu v roce 2024 platily německé domácnosti – přibližně 40 centů na kWh dodané elektřiny (zhruba 10 Kč/kWh). Na opačném konci cenové škály se nacházely domácnosti v Bulharsku a Maďarsku, kde lidé platili jen o málo více než 10 centů na kWh (přibližně 2,5 Kč/kWh). Jak tento čtyřnásobný rozdíl mezi nejvyššími a nejnižšími cenami vysvětlit?
 
 {% include figure.html
     name="ceny-eu.svg"
@@ -283,7 +283,7 @@ V Česku žádné sociální tarify na energie nejsou, nicméně platby za energ
 
 Německo v minulosti díky velkým investicím nastartovalo velký (globální) boom obnovitelných zdrojů, zejména fotovoltaických elektráren, a dodnes za to platí. V první dekádě tohoto století dokonce ceny pro koncové zákazníky rostly, přestože velkoobchodní klesaly – právě kvůli nákladům na podporu OZE, které zákazníci platili formou speciálního poplatku ve vyúčtování. Během energetické krize v roce 2022 však německá vláda [rozhodla o trvalém zrušení](https://www.cleanenergywire.org/news/germany-stops-landmark-mechanism-funded-renewables-expansion-power-bills) tohoto poplatku a přesunu nákladů do státního rozpočtu, což mimo jiné znatelně ulevilo velmi rychle rostoucím cenám. Ke stejnému kroku přistoupilo například Dánsko [už v roce 2017](https://www.pv-magazine.com/2017/05/22/danish-government-unveils-bill-to-introduce-tax-on-self-consumed-pv-power/).
 
-Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdrojů](https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht) v Německu mezi spotřebitele a státní rozpočet (od roku 2010).
+Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdrojů](https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht) v Německu (podle tzv. zákona EEG, něm. *Erneuerbare-Energien-Gesetz*) mezi spotřebitele, federální rozpočet a fond na podporu obnovitelných zdrojů (od roku 2010).
 
 {% include figure.html
     name="naklady-nemecko.png"
@@ -308,13 +308,6 @@ Z hlediska ceny elektřiny je zásadní, jak a kdo platí případné náklady t
 
 Rozdílové smlouvy se na podporu obnovitelných zdrojů využívají v mnoha evropských zemích, např. ve [Velké Británii](https://www.businessenergydeals.co.uk/blog/contracts-for-difference/), [Polsku](https://www.dentons.com/en/insights/newsletters/2025/january/24/powered-by-dentons/powered-by-dentons-january-2025/result-of-polands-2024-res-auctions), [Litvě](https://renewablesnow.com/news/lithuania-to-relaunch-700-mw-offshore-wind-tender-on-june-9-1276449/), [Rumunsku](https://balkangreenenergynews.com/romania-declares-winners-of-its-wind-solar-power-cfd-auctions/), [Maďarsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=14), [Španělsku](https://www.ait.ac.at/fileadmin/mc/energy/downloads/IES/Projekte/Comparision_of_CfD_related_best_practices.pdf#page=22) a jinde.[^dalsi-cfd]
 
-{% include figure.html
-    name="cfd-vyuctovani.png"
-    alt="TODO: Alt text"
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
-%}
-
 Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví energetických firem státem – zisky (nebo jejich část) firmy odvádí státu na dividendách, ztráty také hradí stát jako majitel-investor. Dva příklady:
 
 - Francouzský EDF (státem vlastněný výhradní provozovatel jaderných elektráren) musí elektřinu z jaderných zdrojů [prodávat konkurenčním dodavatelům za nízké ceny](https://www.world-nuclear-news.org/Articles/Agreement-on-post-ARENH-nuclear-electricity-pricin) (42 €/MWh do roku 2025, 70 €/MWh od roku 2026). Výnosy EDF nad touto hladinou stát přerozděluje.
@@ -325,7 +318,7 @@ Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví ener
 ## Zdroje a poznámky
 
 [^deleni-eurostat]: Toto zjednodušené dělení odpovídá klasifikaci [podle Eurostatu](https://ec.europa.eu/eurostat/cache/metadata/en/nrg_pc_204_sims.htm) a často se používá v energetických statistikách evropských států.
-[^jednotka-ceny]: Pro ceny v tomto explaineru se pro konzistenci používá jednotka ¢/kWh (eurocent na kilowatthodinu elektřiny). Pro přibližný převod na Kč/kWh lze zjednodušeně dělit čtyřmi (kurz 1 € ≈ 25 Kč).
+[^jednotka-ceny]: Pro ceny v tomto explaineru se pro konzistenci a snazší srovnávání používá jednotka €/kWh (euro na kilowatthodinu elektřiny). Pro orientační přepočet na Kč/kWh v tomto explaineru používáme směnný kurz 1 € ≈ 25 Kč.
 [^naklady-stabilizace]: To zahrnuje i náklady na stabilizaci soustavy, vyrovnávání výkyvů atd.
 [^povolenky-poze]: V Česku se takto platí z výnosů část poplatků na podporu obnovitelných zdrojů energie.
 [^moe-studie]: Viz např. [studie IMF](https://doi.org/10.5089/9798400224362.001) z roku 2022. Záleží však na tom, jak dlouho dopředu dodavatel energií elektřinu nakupuje, resp. jak přímo je zákazník vystaven velkoobchodním cenám (viz dále v textu).
