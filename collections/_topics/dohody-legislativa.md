@@ -25,8 +25,8 @@ dashboard:
   source:      "Evropská komise"
   source-url:  "https://ec.europa.eu/clima/eu-action/european-green-deal/european-climate-law_en"
 - type:        "single"
-  value:       "**Ázerbájdžán**, Baku"
-  subtitle:    "místo konání klimatické konference **COP29 v roce 2024**"
+  value:       "**Brazílie**, Belém"
+  subtitle:    "místo konání klimatické konference **COP30 v roce 2025**"
 
 subtopics:
   # To nejdůležitější
@@ -138,7 +138,7 @@ subtopics:
   title:       "Klimatické konference COP"
   title-short: "Konference COP"
   lead: |
-    Jde o konference smluvních stran (*Conference of Parties, COP*) Rámcové úmluvy OSN o změně klimatu. Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v úsilí zastavit změnu klimatu a vyjednávaly další kroky**. Zatím poslední COP, v pořadí 28., se konal v Dubaji. Příští se bude konat na podzim roku 2024 v Baku v Ázerbájdžánu.
+    Jde o konference smluvních stran (*Conference of Parties, COP*) Rámcové úmluvy OSN o změně klimatu. Smluvní strany, tedy státy, se od roku 1995 setkávají každý rok, aby **reflektovaly svůj dosavadní pokrok v úsilí zastavit změnu klimatu a vyjednávaly další kroky**.
 
     Speciální série našeho podcastu 2050 pokrývá, jak takové jednání probíhá, jaký je jeho význam a co konkrétně přinesla jednání v Glasgow v roce 2021.
 
