@@ -2,10 +2,10 @@
 layout:      explainer
 title:       "Jak rozvoj solárních a větrných elektráren ovlivňuje ceny elektřiny?"
 slug:        "ceny-elektriny-oze"
-published:   2025-09-24
+published:   2025-10-02
 authors:
   - ids: ["matej-grabovsky", "jan-krcal"]
-  - id: "matej-grabovsky"
+  - ids: ["marcel-otruba", "matej-grabovsky"]
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
@@ -55,7 +55,7 @@ V Česku se cena na vyúčtování skládá z tzv. regulované složky, neregulo
 Například v roce 2024 platily české domácnosti za elektřinu v průměru 0,32 €/kWh (přibližně 8 Kč/kWh).[^jednotka-ceny] Z toho přibližně čtvrtinu tvořily daně a poplatky, čtvrtinu náklady na sítě a polovinu cena za energie a dodávky.
 
 {% include figure.html
-    name="slozky-ceny-cz.svg"
+    name="slozky-ceny-cz.png"
     class="narrow-figure"
     alt="Skládaný sloupcový graf ukazující skladbu průměrné ceny elektřiny pro české domácnosti v roce 2024 (celkem 0,32 €/kWh). Největší podíl tvořily náklady dodavatelů (51 %), menší části pak náklady na sítě, DPH a ostatní daně."
     source-text="Fakta o klimatu"
@@ -146,7 +146,8 @@ Vliv dalších faktorů už tak přímočarý být nemusí – mechanismus půso
 Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu posledních 5–7 let ukazuje následující graf. Světlé úsečky ukazují průměrný vliv ceny plynu na cenu elektřiny v jednotlivých zemích, růžové reprezentují státy, kde se zdražením plynu zdražovala i elektřina.
 
 {% include figure.html
-    name="scatter-plyn-vs-energie.png"
+    name="scatter-plyn-vs-energie-des.png"
+    name-mobile="scatter-plyn-vs-energie-mob.png"
     alt="Bodový graf s regresními čarami ukazuj9c9 vztah mezi průměrnou cenou zemního plynu a cenou elektřiny v EU. Ve většině zemí ceny elektřiny rostou spolu s cenou plynu, přičemž Řecko, Irsko a Itálie vykazují silnou závislost a Finsko naopak slabší. Graf zdůrazňuje rozdílnou citlivost jednotlivých států na vývoj cen plynu."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -155,7 +156,8 @@ Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu 
 Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaických a větrných elektráren a síťovou složkou ceny. Z letmého pohledu na data se může zdát, že vztah je jednoznačně pozitivní, ale mechanismus je ve skutečnosti složitější a méně přímočarý než u cen zemního plynu. Bohatší státy Evropské unie obvykle mají fotovoltaických a větrných elektráren více, zároveň ale mají i obecně vyšší cenovou hladinu, což porovnání nákladů mezi státy zkresluje.
 
 {% include figure.html
-    name="scatter-oze-vs-site.png"
+    name="scatter-oze-vs-site-des.png"
+    name-mobile="scatter-oze-vs-site-mob.png"
     alt="Bodový graf ukazující vztah mezi instalovaným výkonem solárních a větrných elektráren a síťovou složkou ceny elektřiny v zemích EU. V Belgii náklady na sítě klesaly i při postupné výstavbě zdrojů, zatímco v Nizozemsku rychlý rozvoj obnovitelných zdrojů vedl k růstu těchto nákladů. Celkově graf ilustruje rozdílný dopad rozšiřování obnovitelných zdrojů na ceny sítí v jednotlivých zemích."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -178,7 +180,8 @@ Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 v
 Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi jednotlivými státy EU značně liší. Nejvíce za elektřinu v roce 2024 platily německé domácnosti – přibližně 40 centů na kWh dodané elektřiny (zhruba 10 Kč/kWh). Na opačném konci cenové škály se nacházely domácnosti v Bulharsku a Maďarsku, kde lidé platili jen o málo více než 10 centů na kWh (přibližně 2,5 Kč/kWh). Jak tento čtyřnásobný rozdíl mezi nejvyššími a nejnižšími cenami vysvětlit?
 
 {% include figure.html
-    name="ceny-eu.png"
+    name="ceny-eu-des.png"
+    name-mobile="ceny-eu-mob.png"
     alt="Sloupcový graf porovnávající průměrné ceny elektřiny pro domácnosti v zemích EU v roce 2024. Nejvyšší cenu mělo Německo (0,41 €/kWh), nejnižší Maďarsko (0,11 €/kWh), zatímco Česko (0,32 €/kWh) se nachází mírně nad průměrem EU (0,29 €/kWh)."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -187,7 +190,8 @@ Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi j
 Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky ceny (viz sekce [*Z čeho se skládá cena elektřiny na vyúčtování*](#z-čeho-se-skládá-cena-elektřiny-na-vyúčtování) výše). Na první pohled je zřejmé, že se v různých státech liší nejen koncové ceny, ale i podíl jednotlivých složek na ceně. Například v Řecku je podíl daní a poplatků malý a největší část ceny tvoří ceny za energii a dodávky. V Irsku, Rakousku a Nizozemsku jsou dokonce čisté daně záporné. Litva má zase nejvyšší podíl síťové složky a tak dál.
 
 {% include figure.html
-    name="ceny-eu-komponenty.png"
+    name="ceny-eu-komponenty-des.png"
+    name-mobile="ceny-eu-komponenty-mob.png"
     alt="Skládaný sloupcový graf porovnávající ceny elektřiny pro domácnosti v EU v roce 2024 podle jejich složek. Ukazuje podíly nákladů na energie, sítě, DPH a další daně, přičemž některé státy mají zápornou složku díky daňovým slevám."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -221,7 +225,8 @@ Následující tři grafy ukazují vývoj silové složky ceny pro domácnosti v
 - V Řecku má dynamický tarif většina domácností (v roce 2024 to bylo [až 90 %](https://www.reuters.com/world/europe/greece-offers-new-round-power-bill-subsidies-households-2024-12-06/)). Nejpopulárnější je tzv. ["zelený tarif"](https://www.ekathimerini.com/economy/1270787/growing-number-of-consumers-opt-for-fixed-electricity-tariffs/), ve kterém se cena mění každý měsíc.
 
 {% include figure.html
-    name="spot-vs-energie-dynamicke.png"
+    name="spot-vs-energie-dynamicke-des.png"
+    name-mobile="spot-vs-energie-dynamicke-mob.png"
     alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny a cen pro domácnosti v Dánsku, Řecku a Španělsku mezi lety 2017–2024. Ve všech třech zemích ceny prudce stouply kolem roku 2022 a poté rychle klesly. Anotace zdůrazňuje, že v těchto zemích se velkoobchodní ceny rychle promítají do koncových cen pro domácnosti."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -230,7 +235,8 @@ Následující tři grafy ukazují vývoj silové složky ceny pro domácnosti v
 Naproti tomu domácnosti v Česku, Německu a Francii využívají převážně dlouhodobě fixované tarify, proto mají ceny v těchto zemích větší setrvačnost.
 
 {% include figure.html
-    name="spot-vs-energie-fixovane.png"
+    name="spot-vs-energie-fixovane-des.png"
+    name-mobile="spot-vs-energie-fixovane-mob.png"
     alt="Čárové grafy srovnávající velkoobchodní ceny elektřiny a ceny pro domácnosti v Česku, Francii a Německu mezi lety 2017–2024. Ve všech zemích došlo k prudkému nárůstu velkoobchodních cen kolem roku 2022, ale oproti předchozí sadě grafů se zdražení promítlo do cen domácností až s odstupem."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -245,7 +251,8 @@ V Česku má naprostá většina domácností dlouhodobé tarify. Spotový tarif
 Nejjednodušším způsobem regulace cen pro koncové zákazníky je jejich přímé snížení nebo zastropování. Dlouhodobě ceny domácnostem zastropovává například [Bulharsko](https://www.bta.bg/en/news/economy/952789-household-electricity-bills-how-new-consumer-support-mechanism-works), [Maďarsko](https://abouthungary.hu/news-in-brief/hungarian-government-to-continue-utility-price-cap-scheme), [Polsko](https://www.reuters.com/business/energy/poland-keep-household-energy-price-freeze-2025-spend-13-bln-2024-11-19/) či [Slovensko](https://www.reuters.com/world/europe/slovak-government-extend-electricity-price-cap-households-2024-11-20/). Nejde jen o reakci na energetickou krizi – tyto země mají ceny elektřiny pro domácnosti dlouhodobě pod nákladovými cenami. V praxi to znamená, že náklady, které výrobci elektřiny tak jako tak mají, musí doplatit stát.
 
 {% include figure.html
-    name="spot-vs-energie-zastropovane.png"
+    name="spot-vs-energie-zastropovane-des.png"
+    name-mobile="spot-vs-energie-zastropovane-mob.png"
     alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny, cen pro domácnosti a pro průmysl v Maďarsku, Bulharsku, Polsku a na Slovensku mezi lety 2017–2024. Ceny pro domácností zůstavají díky zastropování stabilně nízké, zatímco komerční ceny kopíruje velkoobchodní."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -267,7 +274,8 @@ Stát může domácnostem nabízet slevu na dani nebo na celém vyúčtování z
 Tyto slevy lze vidět v datech, nejlépe na výrazně negativních daních v těchto zemích pro domácnosti s nízkou spotřebou.
 
 {% include figure.html
-    name="ceny-slevy.png"
+    name="ceny-slevy-des.png"
+    name-mobile="ceny-slevy-mob.png"
     alt="Skládané sloupcové grafy porovnávající ceny elektřiny podle spotřeby domácností v Nizozemsku, Irsku a Rakousku. V Nizozemsku se výrazně projevuje daňová sleva, zejména u domácností s nízkou spotřebou, což vede až k záporné složce daní. V Irsku a Rakousku jsou rozdíly mezi nízkou a vysokou spotřebou méně výrazné."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
@@ -293,7 +301,8 @@ Německo v minulosti díky velkým investicím nastartovalo velký (globální) 
 Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdrojů](https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht) v Německu (podle tzv. zákona EEG, něm. *Erneuerbare-Energien-Gesetz*) mezi spotřebitele, federální rozpočet a fond na podporu obnovitelných zdrojů (od roku 2010).
 
 {% include figure.html
-    name="naklady-nemecko.png"
+    name="naklady-nemecko-des.png"
+    name-mobile="naklady-nemecko-mob.png"
     alt="Skládaný sloupcový graf zobrazující financování podpory obnovitelných zdrojů v Německu v letech 2010–2024. Do roku 2022 náklady nesli převážně spotřebitelé přes poplatky na vyúčtování, zatímco po energetické krizi a od roku 2024 je financování zajištěno z federálního rozpočtu. Výše potřebné podpory se v průběhu let měnila v závislosti na rozvoje nových zdrojů a tržních cenách elektřiny."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
