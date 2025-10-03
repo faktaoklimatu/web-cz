@@ -88,6 +88,7 @@ subtopics:
   - elektrina-oze-eu
   - elektrina-na-osobu-svet
   - elektrina-svet
+  - ceny-elektriny-oze
   - spolehlivost-oze
   - 2023-reserse-transformace-mixu
   - mapa-uhli-cr
@@ -130,6 +131,7 @@ subtopics:
   - zpoplatneni-emisi-svet
   - repowereu
   - vyvoj-systemu-elektriny
+  - ceny-elektriny-oze
   - 21-rust-cen-elektriny
 
 - id:          "technologie"
