@@ -77,7 +77,8 @@ K zajištění spolehlivých dodávek elektřiny je toho potřeba hodně zaříd
 Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typicky se tak děje na trhu s elektřinou a skrz cenovou regulaci na vyúčtování koncovým spotřebitelům. Kromě toho mohou část z nich pokrývat různé dotační fondy, státní rozpočet a podobně. Následující část textu se zaměřuje na složky, z nichž se cena na faktuře skládá, a popisuje, jaká opatření nebo pravidla se běžně využívají pro rozdělení systémových nákladů (a výnosů) elektrizační soustavy mezi spotřebitele.
 
 {% include figure.html
-    name="naklady-vs-zdroje-financi.png"
+    name="naklady-vs-zdroje-financi-des.png"
+    name-mobile="naklady-vs-zdroje-financi-mob.png"
     alt="Tabulka se dvěma sloupci. Sloupec vlevo s nadpisem Systémové náklady: náklady na zdroje energií, náklady na infrastrukturu, administrativní náklady. Sloupec vpravo s nadpisem Zdroje financí: vyúčtování domácností, vyúčtování podniků a institucí, státní pokladna, fondy a dotační programy."
 %}
 
