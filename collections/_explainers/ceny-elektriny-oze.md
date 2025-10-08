@@ -187,7 +187,7 @@ Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi j
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky ceny (viz sekce [*Z čeho se skládá cena elektřiny na vyúčtování*](#z-čeho-se-skládá-cena-elektřiny-na-vyúčtování) výše). Na první pohled je zřejmé, že se v různých státech liší nejen koncové ceny, ale i podíl jednotlivých složek na ceně. Například v Řecku je podíl daní a poplatků malý a největší část ceny tvoří ceny za energii a dodávky. V Irsku, Rakousku a Nizozemsku jsou dokonce čisté daně záporné. Litva má zase nejvyšší podíl síťové složky a tak dál.
+Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky ceny (viz sekce [*Z čeho se skládá cena elektřiny na vyúčtování*](#z-čeho-se-skládá-cena-elektřiny-na-vyúčtování) výše). Na první pohled je zřejmé, že se v různých státech liší nejen koncové ceny, ale i podíl jednotlivých složek na ceně. Například v Řecku je podíl daní a poplatků malý a největší část ceny tvoří ceny za energii a dodávky. V Irsku, Rakousku, Nizozemsku a Lucembursku jsou dokonce čisté daně záporné. Litva má zase nejvyšší podíl síťové složky a tak dál.
 
 {% include figure.html
     name="ceny-eu-komponenty-des.png"
