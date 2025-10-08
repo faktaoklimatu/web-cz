@@ -142,7 +142,7 @@ Cena zemního plynu patří mezi proměnné, jež ceny elektřiny ovlivňují ne
 Vliv dalších faktorů už tak přímočarý být nemusí – mechanismus působení může být mnohem složitější a nemusí se jednoznačně projevit v agregovaných datech.
 
 {% capture priklad-vlivu %}
-Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu posledních 5–7 let ukazuje následující graf. Světlé úsečky ukazují průměrný vliv ceny plynu na cenu elektřiny v jednotlivých zemích, růžové reprezentují státy, kde se zdražením plynu zdražovala i elektřina.
+Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu posledních 5–7 let ukazuje následující graf. Úsečky ukazují průměrný vliv ceny plynu na cenu elektřiny v jednotlivých zemích, barevné úsečky reprezentují státy, kde se zdražením plynu zdražovala i elektřina (a šedé úsečky státy, kde se zlevňovala).
 
 {% include figure.html
     name="scatter-plyn-vs-energie-des.png"
