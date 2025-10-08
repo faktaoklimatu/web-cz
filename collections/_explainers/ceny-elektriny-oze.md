@@ -28,7 +28,7 @@ perex: |
 - Různé jsou také nástroje, jimiž státy platí za rozvoj obnovitelných zdrojů, případně kompenzují vysoké ceny elektřiny ekonomicky zranitelným skupinám spotřebitelů.
 " %}
 
-Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po ruské invazi na Ukrajinu v roce 2022 a následné "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou. 
+Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s dekarbonizací. V nedávné době se dostaly do popředí zejména po ruské invazi na Ukrajinu v roce 2022 a následné "energetické krizi". Ačkoliv za zdražováním v tomto období stála zejména vysoká cena zemního plynu na světových trzích, nebyla zdaleka jedinou příčinou.
 
 Mnohé hlasy přisuzují zdražování Zelené dohodě pro Evropu (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren. Realita je však složitější a do cen pro koncové zákazníky vstupuje mnoho různých, navzájem provázaných faktorů. Jak se tedy cena na fakturách za elektřinu stanovuje a jakou roli v tom skutečně hrají obnovitelné zdroje?
 
@@ -62,7 +62,7 @@ Například v roce 2024 platily české domácnosti za elektřinu v průměru 0,
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-Jak je zřejmé z popisu výše, většinu položek ve vyúčtování tvoří náklady některého aktéra v celém systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát. 
+Jak je zřejmé z popisu výše, většinu položek ve vyúčtování tvoří náklady některého aktéra v celém systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát.
 
 Pro důkladnější objasnění jednotlivých složek ceny a jejich výše je nutné vysvětlit pojem *systémové náklady* a rozdíl mezi náklady a cenami. Tomu se věnuje následující kapitola textu.
 
@@ -82,7 +82,6 @@ Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typi
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
-
 
 Protože se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusejí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní či z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – některým výrobcům či dodavatelům elektřiny to pak přináší nadměrné zisky.
 
@@ -119,7 +118,7 @@ Provázanost zmíněných faktorů zjednodušeně ilustruje následující sché
 
 {% include preview-box.html
     title="Role státu, trhu a regulací"
-    text="O tom, jak se v průběhu času proměnovaly role státu a trhu s elektřinou, a o možnostech dalšího vývoje v Evropské unii, pojednává související text."
+    text="O tom, jak se v průběhu času proměňovaly role státu a trhu s elektřinou, a o možnostech dalšího vývoje v Evropské unii, pojednává související text."
     slug="vyvoj-systemu-elektriny"
 %}
 
@@ -138,7 +137,7 @@ Dá se to ukázat na tom, jaký vliv na konečné ceny elektřiny má snižován
 
 Určit míru provázanosti jednotlivých faktorů, které ovlivňují cenu elektřiny, je obecně velmi obtížné, někdy i nemožné. Některé proměnné ale mají jasný mechanismus, jakým na ceny působí, proto lze jejich vliv kvantifikovat poměrně přesně.
 
-Cena zemního plynu patří mezi proměnné, jež ceny elektřiny ovlivňují nejsilněji. Je to dáno tím, že cenu elektřiny hodinu po hodině určuje tzv. závěrný zdroj, kterým je často právě elektrárna spalující zemní plyn (podrobněji viz explainer [*Jak se na trhu stanovuje cena elektřiny?*](/explainery/cena-elektriny-na-trhu)). 
+Cena zemního plynu patří mezi proměnné, jež ceny elektřiny ovlivňují nejsilněji. Je to dáno tím, že cenu elektřiny hodinu po hodině určuje tzv. závěrný zdroj, kterým je často právě elektrárna spalující zemní plyn (podrobněji viz explainer [*Jak se na trhu stanovuje cena elektřiny?*](/explainery/cena-elektriny-na-trhu)).
 
 Vliv dalších faktorů už tak přímočarý být nemusí – mechanismus působení může být mnohem složitější a nemusí se jednoznačně projevit v agregovaných datech.
 
@@ -148,7 +147,7 @@ Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu 
 {% include figure.html
     name="scatter-plyn-vs-energie-des.png"
     name-mobile="scatter-plyn-vs-energie-mob.png"
-    alt="Bodový graf s regresními čarami ukazuj9c9 vztah mezi průměrnou cenou zemního plynu a cenou elektřiny v EU. Ve většině zemí ceny elektřiny rostou spolu s cenou plynu, přičemž Řecko, Irsko a Itálie vykazují silnou závislost a Finsko naopak slabší. Graf zdůrazňuje rozdílnou citlivost jednotlivých států na vývoj cen plynu."
+    alt="Bodový graf s regresními čarami ukazující vztah mezi průměrnou cenou zemního plynu a cenou elektřiny v EU. Ve většině zemí ceny elektřiny rostou spolu s cenou plynu, přičemž Řecko, Irsko a Itálie vykazují silnou závislost a Finsko naopak slabší. Graf zdůrazňuje rozdílnou citlivost jednotlivých států na vývoj cen plynu."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
@@ -253,7 +252,7 @@ Nejjednodušším způsobem regulace cen pro koncové zákazníky je jejich př�
 {% include figure.html
     name="spot-vs-energie-zastropovane-des.png"
     name-mobile="spot-vs-energie-zastropovane-mob.png"
-    alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny, cen pro domácnosti a pro průmysl v Maďarsku, Bulharsku, Polsku a na Slovensku mezi lety 2017–2024. Ceny pro domácností zůstavají díky zastropování stabilně nízké, zatímco komerční ceny kopíruje velkoobchodní."
+    alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny, cen pro domácnosti a pro průmysl v Maďarsku, Bulharsku, Polsku a na Slovensku mezi lety 2017–2024. Ceny pro domácností zůstávají díky zastropování stabilně nízké, zatímco komerční ceny kopíruje velkoobchodní."
     source-text="Fakta o klimatu"
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
