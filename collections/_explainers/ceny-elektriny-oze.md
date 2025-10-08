@@ -58,8 +58,8 @@ Například v roce 2024 platily české domácnosti za elektřinu v průměru 0,
     name="slozky-ceny-cz.png"
     class="narrow-figure"
     alt="Skládaný sloupcový graf ukazující skladbu průměrné ceny elektřiny pro české domácnosti v roce 2024 (celkem 0,32 €/kWh). Největší podíl tvořily náklady dodavatelů (51 %), menší části pak náklady na sítě, DPH a ostatní daně."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat"
+    source-url="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c"
 %}
 
 Jak je zřejmé z popisu výše, většinu položek ve vyúčtování tvoří náklady některého aktéra v celém systému – ať už je to dodavatel, distributor, provozovatel přenosové soustavy nebo třeba stát.
@@ -79,8 +79,6 @@ Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typi
 {% include figure.html
     name="naklady-vs-zdroje-financi.png"
     alt="Tabulka se dvěma sloupci. Sloupec vlevo s nadpisem Systémové náklady: náklady na zdroje energií, náklady na infrastrukturu, administrativní náklady. Sloupec vpravo s nadpisem Zdroje financí: vyúčtování domácností, vyúčtování podniků a institucí, státní pokladna, fondy a dotační programy."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
 Protože se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusejí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní či z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – některým výrobcům či dodavatelům elektřiny to pak přináší nadměrné zisky.
@@ -112,8 +110,6 @@ Provázanost zmíněných faktorů zjednodušeně ilustruje následující sché
     name="diagram-faktoru.png"
     class="wide-figure-desktop"
     alt="Schéma s šipkami znázorňující, z jakých složek se skládá konečná cena elektřiny na faktuře. Hlavními částmi jsou energie a dodávky, náklady na sítě a daně s poplatky, které se dále větví na faktory jako velkoobchodní ceny, investice do infrastruktury či podpora obnovitelných zdrojů. Diagram ukazuje provázanost regulačních, technických a tržních vlivů."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
 {% include preview-box.html
@@ -129,8 +125,6 @@ Dá se to ukázat na tom, jaký vliv na konečné ceny elektřiny má snižován
 {% include figure.html
     name="diagram-faktoru-podil-oze.png"
     alt="Výřez z myšlenkové mapy ukazuje část faktorů tvořících cenu elektřiny. Vizuálně podtrhuje, že složka „Energie a dodávky“ závisí na velkoobchodní ceně elektřiny, kterou ovlivňuje mimo jiné podíl fotovoltaiky a větru na výrobě."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
 ### Jak velký je vliv jednotlivých faktorů?
@@ -148,8 +142,7 @@ Vztah mezi první složkou ceny a cenou zemního plynu v zemích EU v průběhu 
     name="scatter-plyn-vs-energie-des.png"
     name-mobile="scatter-plyn-vs-energie-mob.png"
     alt="Bodový graf s regresními čarami ukazující vztah mezi průměrnou cenou zemního plynu a cenou elektřiny v EU. Ve většině zemí ceny elektřiny rostou spolu s cenou plynu, přičemž Řecko, Irsko a Itálie vykazují silnou závislost a Finsko naopak slabší. Graf zdůrazňuje rozdílnou citlivost jednotlivých států na vývoj cen plynu."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat, výpočty Fakta o klimatu"
 %}
 
 Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaických a větrných elektráren a síťovou složkou ceny. Z letmého pohledu na data se může zdát, že vztah je jednoznačně pozitivní, ale mechanismus je ve skutečnosti složitější a méně přímočarý než u cen zemního plynu. Bohatší státy Evropské unie obvykle mají fotovoltaických a větrných elektráren více, zároveň ale mají i obecně vyšší cenovou hladinu, což porovnání nákladů mezi státy zkresluje.
@@ -158,8 +151,7 @@ Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaick�
     name="scatter-oze-vs-site-des.png"
     name-mobile="scatter-oze-vs-site-mob.png"
     alt="Bodový graf ukazující vztah mezi instalovaným výkonem solárních a větrných elektráren a síťovou složkou ceny elektřiny v zemích EU. V Belgii náklady na sítě klesaly i při postupné výstavbě zdrojů, zatímco v Nizozemsku rychlý rozvoj obnovitelných zdrojů vedl k růstu těchto nákladů. Celkově graf ilustruje rozdílný dopad rozšiřování obnovitelných zdrojů na ceny sítí v jednotlivých zemích."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat, Ember, výpočty Fakta o klimatu"
 %}
 
 {% endcapture %}
@@ -183,8 +175,8 @@ Jak ukazuje následující graf pro rok 2024, koncové ceny elektřiny se mezi j
     name="ceny-eu-des.png"
     name-mobile="ceny-eu-mob.png"
     alt="Sloupcový graf porovnávající průměrné ceny elektřiny pro domácnosti v zemích EU v roce 2024. Nejvyšší cenu mělo Německo (0,41 €/kWh), nejnižší Maďarsko (0,11 €/kWh), zatímco Česko (0,32 €/kWh) se nachází mírně nad průměrem EU (0,29 €/kWh)."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat"
+    source-url="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c"
 %}
 
 Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky ceny (viz sekce [*Z čeho se skládá cena elektřiny na vyúčtování*](#z-čeho-se-skládá-cena-elektřiny-na-vyúčtování) výše). Na první pohled je zřejmé, že se v různých státech liší nejen koncové ceny, ale i podíl jednotlivých složek na ceně. Například v Řecku je podíl daní a poplatků malý a největší část ceny tvoří ceny za energii a dodávky. V Irsku, Rakousku, Nizozemsku a Lucembursku jsou dokonce čisté daně záporné. Litva má zase nejvyšší podíl síťové složky a tak dál.
@@ -193,8 +185,8 @@ Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky c
     name="ceny-eu-komponenty-des.png"
     name-mobile="ceny-eu-komponenty-mob.png"
     alt="Skládaný sloupcový graf porovnávající ceny elektřiny pro domácnosti v EU v roce 2024 podle jejich složek. Ukazuje podíly nákladů na energie, sítě, DPH a další daně, přičemž některé státy mají zápornou složku díky daňovým slevám."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat"
+    source-url="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c"
 %}
 
 V Česku stát první složku ceny (energie a dodávky) ovlivňuje jen nepřímo, s výjimkou krátkodobého zastropování cen energií v době energetické krize. Další složky ceny ale reguluje přímo pomocí energetické politiky, nastavení daní a prostřednictvím cenové regulace v energetice.
@@ -228,8 +220,7 @@ Následující tři grafy ukazují vývoj silové složky ceny pro domácnosti v
     name="spot-vs-energie-dynamicke-des.png"
     name-mobile="spot-vs-energie-dynamicke-mob.png"
     alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny a cen pro domácnosti v Dánsku, Řecku a Španělsku mezi lety 2017–2024. Ve všech třech zemích ceny prudce stouply kolem roku 2022 a poté rychle klesly. Anotace zdůrazňuje, že v těchto zemích se velkoobchodní ceny rychle promítají do koncových cen pro domácnosti."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat, Energy-Charts.info"
 %}
 
 Naproti tomu domácnosti v Česku, Německu a Francii využívají převážně dlouhodobě fixované tarify, proto mají ceny v těchto zemích větší setrvačnost.
@@ -238,8 +229,7 @@ Naproti tomu domácnosti v Česku, Německu a Francii využívají převážně 
     name="spot-vs-energie-fixovane-des.png"
     name-mobile="spot-vs-energie-fixovane-mob.png"
     alt="Čárové grafy srovnávající velkoobchodní ceny elektřiny a ceny pro domácnosti v Česku, Francii a Německu mezi lety 2017–2024. Ve všech zemích došlo k prudkému nárůstu velkoobchodních cen kolem roku 2022, ale oproti předchozí sadě grafů se zdražení promítlo do cen domácností až s odstupem."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat, Energy-Charts.info"
 %}
 
 Kromě dynamických tarifů za samotnou dodávku elektřiny lze nastavit flexibilně také poplatek za *distribuci* elektřiny. Např. v Belgii se tento poplatek stanovuje podle špičkové spotřeby v daném měsíci (místo běžné platby podle celkového množství spotřebované elektřiny nebo podle velikosti jističe). V Dánsku i Španělsku mají distributoři [možnost nastavit síťové poplatky](https://ens.dk/sites/default/files/media/documents/2024-11/liberalisation_of_the_danish_power_sector_-_report_final.pdf) tak, aby motivovaly přesouvat spotřebu mimo špičky. Flexibilní poplatky za distribuci dále finančně motivují uzpůsobit spotřebu situaci v síti.
@@ -254,8 +244,7 @@ Nejjednodušším způsobem regulace cen pro koncové zákazníky je jejich př�
     name="spot-vs-energie-zastropovane-des.png"
     name-mobile="spot-vs-energie-zastropovane-mob.png"
     alt="Čárové grafy ukazující vývoj velkoobchodních cen elektřiny, cen pro domácnosti a pro průmysl v Maďarsku, Bulharsku, Polsku a na Slovensku mezi lety 2017–2024. Ceny pro domácností zůstávají díky zastropování stabilně nízké, zatímco komerční ceny kopíruje velkoobchodní."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat, Energy-Charts.info"
 %}
 
 Přímé zastropování se většinou týká pouze domácností a často jen spotřeby do určité hranice, např. průměrné roční spotřeby. Nad touto hranicí může být cenový strop vyšší nebo může být cena neregulovaná.
@@ -277,8 +266,8 @@ Tyto slevy lze vidět v datech, nejlépe na výrazně negativních daních v tě
     name="ceny-slevy-des.png"
     name-mobile="ceny-slevy-mob.png"
     alt="Skládané sloupcové grafy porovnávající ceny elektřiny podle spotřeby domácností v Nizozemsku, Irsku a Rakousku. V Nizozemsku se výrazně projevuje daňová sleva, zejména u domácností s nízkou spotřebou, což vede až k záporné složce daní. V Irsku a Rakousku jsou rozdíly mezi nízkou a vysokou spotřebou méně výrazné."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Eurostat"
+    source-url="https://ec.europa.eu/eurostat/databrowser/product/view/nrg_pc_204_c"
 %}
 
 V Česku se slevy na dani v souvislosti s energiemi neuplatňují.
@@ -304,8 +293,8 @@ Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdr
     name="naklady-nemecko-des.png"
     name-mobile="naklady-nemecko-mob.png"
     alt="Skládaný sloupcový graf zobrazující financování podpory obnovitelných zdrojů v Německu v letech 2010–2024. Do roku 2022 náklady nesli převážně spotřebitelé přes poplatky na vyúčtování, zatímco po energetické krizi a od roku 2024 je financování zajištěno z federálního rozpočtu. Výše potřebné podpory se v průběhu let měnila v závislosti na rozvoje nových zdrojů a tržních cenách elektřiny."
-    source-text="Fakta o klimatu"
-    source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
+    source-text="Netztransparenz"
+    source-url="https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/EEG-Konten%C3%BCbersicht"
 %}
 
 Obdobně se stát může rozhodnout přenést do rozpočtu část nákladů tvořících jiné složky ceny, např. část nákladů na sítě.[^verejna-infrastruktura]
