@@ -162,9 +162,6 @@ Příkladem složitější vazby může být vztah mezi výstavbou fotovoltaick�
     source-url="https://faktaoklimatu.cz/explainery/ceny-elektriny-oze"
 %}
 
-**Proč nejde předpovídat budoucnost na základě historických dat?** Kvůli komplexním interakcím mezi různými proměnnými, z nichž mnohé nejsou v dostupných datech zachyceny, nelze z historických dat v energetice jednoduše predikovat budoucí vývoj. Vzorce v datech, ale i regulační a politická rozhodnutí se v průběhu času mění, a nelze proto snadno říct, že když *X* v minulosti způsobilo *Y*, způsobí totéž i v budoucnu.
-
-Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 větší než náklady spojené s pokračující výrobou z fosilních paliv. Se zdražující emisní povolenkou a zlevňujícími nízkouhlíkovými technologiemi to ale v roce 2030 už může být naopak.
 {% endcapture %}
 
 {% include expander-figure.html
@@ -173,6 +170,10 @@ Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 v
     label="Příklad: Vliv ceny zemního plynu a vliv výstavby OZE"
     content=priklad-vlivu
 %}
+
+**Proč nejde předpovídat budoucnost na základě historických dat?** Kvůli komplexním interakcím mezi různými proměnnými, z nichž mnohé nejsou v dostupných datech zachyceny, nelze z historických dat v energetice jednoduše predikovat budoucí vývoj. Vzorce v datech, ale i regulační a politická rozhodnutí se v průběhu času mění, a nelze proto snadno říct, že když *X* v minulosti způsobilo *Y*, způsobí totéž i v budoucnu.
+
+Například náklady na výstavbu nízkouhlíkové energetiky byly v roce 2010 větší než náklady spojené s pokračující výrobou z fosilních paliv. Se zdražující emisní povolenkou a zlevňujícími nízkouhlíkovými technologiemi to ale v roce 2030 už může být naopak.
 
 ## Jaké ceny a pravidla mají jinde v Evropě?
 
