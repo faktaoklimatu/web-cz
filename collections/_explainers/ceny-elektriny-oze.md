@@ -137,7 +137,7 @@ Dá se to ukázat na tom, jaký vliv na konečné ceny elektřiny má snižován
 
 Určit míru provázanosti jednotlivých faktorů, které ovlivňují cenu elektřiny, je obecně velmi obtížné, někdy i nemožné. Některé proměnné ale mají jasný mechanismus, jakým na ceny působí, proto lze jejich vliv kvantifikovat poměrně přesně.
 
-Cena zemního plynu patří mezi proměnné, jež ceny elektřiny ovlivňují nejsilněji. Je to dáno tím, že cenu elektřiny hodinu po hodině určuje tzv. závěrný zdroj, kterým je často právě elektrárna spalující zemní plyn (podrobněji viz explainer [*Jak se na trhu stanovuje cena elektřiny?*](/explainery/cena-elektriny-na-trhu)).
+Cena zemního plynu patří mezi proměnné, jež ceny elektřiny ovlivňují nejsilněji. Je to dáno tím, že cenu elektřiny hodinu po hodině určuje tzv. závěrný zdroj, kterým je často právě elektrárna spalující zemní plyn (podrobněji viz text [*Jak se na trhu stanovuje cena elektřiny?*](/explainery/cena-elektriny-na-trhu)).
 
 Vliv dalších faktorů už tak přímočarý být nemusí – mechanismus působení může být mnohem složitější a nemusí se jednoznačně projevit v agregovaných datech.
 
@@ -333,7 +333,7 @@ Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví ener
 ## Zdroje a poznámky
 
 [^deleni-eurostat]: Toto zjednodušené dělení odpovídá klasifikaci [podle Eurostatu](https://ec.europa.eu/eurostat/cache/metadata/en/nrg_pc_204_sims.htm) a často se používá v energetických statistikách evropských států.
-[^jednotka-ceny]: Pro ceny v tomto explaineru se pro konzistenci a snazší srovnávání používá jednotka €/kWh (euro na kilowatthodinu elektřiny). Pro orientační přepočet na Kč/kWh v tomto explaineru používáme směnný kurz 1 € ≈ 25 Kč.
+[^jednotka-ceny]: Pro ceny v tomto textu se pro konzistenci a snazší srovnávání používá jednotka €/kWh (euro na kilowatthodinu elektřiny). Pro orientační přepočet na Kč/kWh v tomto textu používáme směnný kurz 1 € ≈ 25 Kč.
 [^naklady-stabilizace]: To zahrnuje i náklady na stabilizaci soustavy, vyrovnávání výkyvů atd.
 [^povolenky-poze]: V Česku se takto platí z výnosů část poplatků na podporu obnovitelných zdrojů energie.
 [^moe-studie]: Viz např. [studie IMF](https://doi.org/10.5089/9798400224362.001) z roku 2022. Záleží však na tom, jak dlouho dopředu dodavatel energií elektřinu nakupuje, resp. jak přímo je zákazník vystaven velkoobchodním cenám (viz dále v textu).
