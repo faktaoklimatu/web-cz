@@ -323,6 +323,12 @@ Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví ener
 
 "Starší" forma provozní podpory stála v Česku za solárním boomem v letech 2006–2010. Šlo o garantovanou výkupní cenu (angl. *feed-in tariff*), která provozovateli elektrárny zaručovala pevnou cenu za každou kilowatthodinu dodanou do sítě. Takto jednoduché schéma má však více problémů, například motivuje dodávat do sítě, i když je elektřiny přebytek, nebo neumožňuje vrátit část potenciálních nadměrných zisků k zákazníkům.
 
+## Shrnutí
+
+Tento text ilustruje, že stát má skrz řadu nástrojů silný vliv na ceny elektřiny pro koncové zákazníky. Každé opatření, které by mělo ceny elektřiny plošně snížit, by ovšem také přineslo nemalé náklady pro stát (ať už jde o přesun poplatku za podporu obnovitelných zdrojů do státního rozpočtu nebo třeba snížení DPH na elektřinu). Mnohé okolní země EU ovšem podobnými opatřeními ceny elektřiny snižují.
+
+Významný rozvoj obnovitelných (či jaderných) zdrojů by v Česku nepochybně zlevnil silovou elektřinu. Co se týče vlivu na celkové ceny pro koncové zákazníky, z evropských statistik nelze vyčíst jednoznačnou zprávu (jak pro solární a větrné elektrárny, tak ani pro ty jaderné). Moc jiných cest ovšem není, protože spoléhat ve velké míře na plynové příp. uhelné zdroje by českou elektřinu dlouhodobě ještě více zdražovalo. Rozvoj solárních, větrných a později i jaderných zdrojů je tak jediná smysluplná cesta k přijatelným cenám elektřiny.
+
 ## Zdroje a poznámky
 
 [^deleni-eurostat]: Toto zjednodušené dělení odpovídá klasifikaci [podle Eurostatu](https://ec.europa.eu/eurostat/cache/metadata/en/nrg_pc_204_sims.htm) a často se používá v energetických statistikách evropských států.
