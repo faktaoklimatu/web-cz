@@ -84,7 +84,7 @@ Všechny tyto náklady musí z dlouhodobého pohledu vždy někdo zaplatit. Typi
     alt="Tabulka se dvěma sloupci. Sloupec vlevo s nadpisem Systémové náklady: náklady na zdroje energií, náklady na infrastrukturu, administrativní náklady. Sloupec vpravo s nadpisem Zdroje financí: vyúčtování domácností, vyúčtování podniků a institucí, státní pokladna, fondy a dotační programy."
 %}
 
-Protože se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusejí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní či z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – některým výrobcům či dodavatelům elektřiny to pak přináší nadměrné zisky.
+Protože se systémové náklady hradí kombinací různých zdrojů a v různých časových horizontech, **ceny na vyúčtování nemusejí vždy odpovídat aktuálním nákladům** spojeným s provozem a údržbou soustavy. V některých případech mohou být ceny elektřiny nižší, než odpovídá nákladům – dodavatel mohl například nakoupit levnou elektřinu dostatečně dlouho dopředu nebo mohou být národní pravidla nastavena tak, že zbylou část nákladů hradí stát ze svého rozpočtu (např. z daní či z výnosů z prodeje emisních povolenek[^povolenky-poze]). Jindy naopak mohou být ceny na fakturách (zejména v první složce) vyšší, než odpovídá nákladům – některým výrobcům či dodavatelům elektřiny to pak v tomto období přináší nadměrné zisky.
 
 Zatímco celkové systémové náklady se dají odhadovat jen nepřesně, oficiální statistiky o cenách elektřiny jsou spolehlivé a podávají zprávu alespoň o tom, jak se v průběhu času průměrné ceny (včetně jednotlivých složek) vyvíjejí pro různé skupiny spotřebitelů.
 
@@ -237,7 +237,7 @@ Naproti tomu domácnosti v Česku, Německu a Francii využívají převážně 
 
 Kromě dynamických tarifů za samotnou dodávku elektřiny lze nastavit flexibilně také poplatek za *distribuci* elektřiny. Např. v Belgii se tento poplatek stanovuje podle špičkové spotřeby v daném měsíci (místo běžné platby podle celkového množství spotřebované elektřiny nebo podle velikosti jističe). V Dánsku i Španělsku mají distributoři [možnost nastavit síťové poplatky](https://ens.dk/sites/default/files/media/documents/2024-11/liberalisation_of_the_danish_power_sector_-_report_final.pdf) tak, aby motivovaly přesouvat spotřebu mimo špičky. Flexibilní poplatky za distribuci dále finančně motivují uzpůsobit spotřebu situaci v síti.
 
-V Česku má naprostá většina domácností dlouhodobé tarify. Spotový tarif má asi jen [1 % domácností](https://www.acer.europa.eu/sites/default/files/documents/Publications/2025-Retail-Monitoring-Report-Country-Sheets-Electricity.pdf#p=12) a chytrým elektroměrem disponují pouze [3 % domácností](https://aegis.acer.europa.eu/chest/dataitems/585/view) (průměr v EU je 60 %).
+V Česku má naprostá většina domácností dlouhodobé tarify. Spotový tarif má asi jen [1 % domácností](https://www.acer.europa.eu/sites/default/files/documents/Publications/2025-Retail-Monitoring-Report-Country-Sheets-Electricity.pdf#p=12) a chytrým elektroměrem disponují pouze [3 % domácností](https://aegis.acer.europa.eu/chest/dataitems/585/view) (průměr v EU je 60 %). Větší rozšíření chytrých elektroměrů by umožnilo lépe využívat různé formy dynamických tarifů a pomoct tak integrovat vyšší podíl obnovitelných zdrojů.
 
 ### Zastropování cen
 
@@ -302,7 +302,7 @@ Následující graf ukazuje rozložení [nákladů na podporu obnovitelných zdr
 
 Obdobně se stát může rozhodnout přenést do rozpočtu část nákladů tvořících jiné složky ceny, např. část nákladů na sítě.[^verejna-infrastruktura]
 
-V Česku se poplatek za podporované zdroje energií dočasně (od října 2022 do prosince 2023) plně [přesunul do státního rozpočtu](https://www.mesec.cz/aktuality/domacnosti-i-firmy-zacnou-opet-v-pristim-roce-platit-poplatky-za-obnovnitelne-zdroje-energie-poze/). Náklady na sítě v Česku (s výjimkou nákladů placených z evropských dotačních fondů) hradí pouze spotřebitelé.
+V Česku se poplatek za podporované zdroje energií dočasně (od října 2022 do prosince 2023) plně [přesunul do státního rozpočtu](https://www.mesec.cz/aktuality/domacnosti-i-firmy-zacnou-opet-v-pristim-roce-platit-poplatky-za-obnovnitelne-zdroje-energie-poze/), od ledna 2024 opět část nákladů na podporované zdroje nesou spotřebitelé. Náklady na sítě v Česku (s výjimkou nákladů placených z evropských dotačních fondů) hradí pouze spotřebitelé.
 
 ### Oboustranné rozdílové smlouvy
 
@@ -321,7 +321,7 @@ Skrytou formou rozdílových smluv je do jisté míry i (spolu)vlastnictví ener
 - Francouzský EDF (státem vlastněný výhradní provozovatel jaderných elektráren) musí elektřinu z jaderných zdrojů [prodávat konkurenčním dodavatelům za nízké ceny](https://www.world-nuclear-news.org/Articles/Agreement-on-post-ARENH-nuclear-electricity-pricin) (42 €/MWh do roku 2025, 70 €/MWh od roku 2026). Výnosy EDF nad touto hladinou stát přerozděluje.
 - Podobně Česko těží ze svých stávajících jaderných elektráren, primárně ve formě dividend z ČEZu, který je provozovatelem JE Temelín a Dukovany. Od roku 2000, kdy ČEZ začal dividendy vyplácet, z nich [stát obdržel 350 miliard korun](https://ct24.ceskatelevize.cz/clanek/ekonomika/cez-vyplati-dividendu-z-lonskeho-zisku-47-korun-za-akcii-celkove-253-miliardy-362257).
 
-"Starší" forma provozní podpory stála v Česku za solárním boomem v letech 2006–2010. Šlo o garantovanou výkupní cenu (angl. *feed-in tariff*), která provozovateli elektrárny zaručovala pevnou cenu za každou kilowatthodinu dodanou do sítě. Takto jednoduché schéma má však více problémů, například motivuje dodávat do sítě, i když je elektřiny přebytek, nebo neumožňuje vrátit část potenciálních nadměrných zisků k zákazníkům.
+"Starší" forma provozní podpory stála v Česku za solárním boomem v letech 2006–2010. Šlo o garantovanou výkupní cenu (angl. *feed-in tariff*), která provozovateli elektrárny zaručovala pevnou cenu za každou kilowatthodinu dodanou do sítě. Takto jednoduché schéma má však více problémů, například motivuje dodávat do sítě, i když je elektřiny přebytek, nebo neumožňuje vrátit část potenciálních nadměrných zisků k zákazníkům. Tato forma podpory byla na 20 let, tedy skončí okolo roku 2030.
 
 ## Shrnutí
 
