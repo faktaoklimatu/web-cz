@@ -32,6 +32,8 @@ Ceny energií jsou silným tématem veřejné debaty, a to nejen v souvislosti s
 
 Mnohé hlasy přisuzují zdražování Zelené dohodě pro Evropu (tzv. *Green Dealu*) a rozvoji obnovitelných zdrojů energie (OZE), zvláště pak fotovoltaických a větrných elektráren. Realita je však složitější a do cen pro koncové zákazníky vstupuje mnoho různých, navzájem provázaných faktorů. Jak se tedy cena na fakturách za elektřinu stanovuje a jakou roli v tom skutečně hrají obnovitelné zdroje?
 
+Následující text mimo jiné ukazuje, že z evropských statistik cen elektřiny nelze snadno vyvodit ani tvrzení, že rozvoj solárních a větrných elektráren celkovou cenu elektřiny jednoznačně snižuje, ani že by ji jednoznačně zvyšoval. Stejně tak z tohoto srovnání nelze vyvodit, že by relativně vysoké ceny elektřiny v Česku vycházely ze špatného rozvoje místní energetiky (byť by zde leccos šlo zlepšit). Srovnání celkových cen elektřiny napříč EU totiž příliš nevypovídá o kvalitě rozvoje energetiky v jednotlivých zemích. Spíše vypovídá o tom, jak rozdílně země EU přistupují k rozdělování nákladů mezi spotřebitele a státní rozpočet, jak na více příkladech ukazuje závěrečná část textu.
+
 ## Z čeho se skládá cena elektřiny na vyúčtování?
 
 Ceny pro koncové zákazníky se zpravidla rozdělují na tři složky:[^deleni-eurostat]
@@ -192,7 +194,7 @@ Pro podrobnější pochopení rozdílů se lze podívat na jednotlivé složky c
 
 V Česku stát první složku ceny (energie a dodávky) ovlivňuje jen nepřímo, s výjimkou krátkodobého zastropování cen energií v době energetické krize. Další složky ceny ale reguluje přímo pomocí energetické politiky, nastavení daní a prostřednictvím cenové regulace v energetice.
 
-Pohled za hranice Česka (nebo pohled za hranice energetiky) nicméně ukazuje, že existuje široká škála možností, jak takovou regulaci nastavit. Následující část textu na příkladech zemí EU ukazuje různé možnosti nastavení pravidel, cenové regulace, tarifů atd. a možné dopady těchto rozhodnutí. Patří mezi ně:
+Pohled za hranice Česka (nebo pohled za hranice energetiky) nicméně ukazuje, že existuje široká škála možností, jak takovou regulaci nastavit a poupravit tak cenu elektřiny pro jednotlivé skupiny zákazníků. Následující část textu na příkladech zemí EU ukazuje různé možnosti nastavení pravidel, cenové regulace, tarifů atd. a možné dopady těchto rozhodnutí. Patří mezi ně:
 
 1. dynamické tarify (např. s cenami průměrovanými po dnech nebo měsících)
 2. zastropování cen
