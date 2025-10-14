@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Dekarbonizace teplárenství: jak v Česku vyrobit dost nízkoemisního tepla pro dálkové vytápění?"
 slug:        "dekarbonizace-teplarenstvi-cr"
-published:   2025-09-26
+published:   2025-10-14
 authors:
   - id: "jan-krcal"
   - ids: ["matej-grabovsky", "marcel-otruba"]
