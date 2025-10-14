@@ -208,6 +208,12 @@ Podíl spaloven odpadu na výrobě tepla je v dlouhodobém horizontu nižší ne
 
 Zde jsou hlavní kroky vedoucí k nízkoemisnímu teplárenství v Česku:
 
+{% include figure.html
+    name="hlavni-kroky-dekarbonizace-des.png"
+    name-mobile="hlavni-kroky-dekarbonizace-mob.png"
+    alt="Piktogramy hlavních kroků vedoucí k nízkoemisnímu teplárenství v Česku"
+%}
+
 #### Část energie lze uspořit
 
 Úspory sníží jednak náklady a jednak požadavky na množství nízkoemisních paliv (např. biometan má v Česku omezený potenciál a čím úsporněji s ním bude nakládáno, tím více energetických potřeb může naplnit). Úspor energie je možné dosáhnout různými způsoby:
@@ -277,6 +283,12 @@ V současném Česku dává zatím ekonomicky smysl pouze krátkodobá akumulace
 ## Jaké bariéry stojí v cestě dekarbonizaci teplárenství
 
 Dekarbonizační cíl po roce 2030 je jednoduchý: nahradit převážnou většinu výroby tepla ze zemního plynu kombinací výroby pomocí elektřiny a nízkoemisních paliv. Není však zdaleka snadné se k tomuto cíli dostat. Jasná strategie dekarbonizace sektoru chybí a kromě toho je třeba překonat i ekonomicko-regulatorní, technologické a infrastrukturní bariéry.
+
+{% include figure.html
+    name="bariery-dekarbonizace-des.png"
+    name-mobile="bariery-dekarbonizace-mob.png"
+    alt="Piktogramy bariér dekarbonizace teplárenství"
+%}
 
 ### Chybějící strategie
 
