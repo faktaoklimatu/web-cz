@@ -384,6 +384,23 @@
         line-height: 1.6;
     }
 
+    .inline-list {
+        list-style: none;
+
+        li {
+            display: inline;
+
+            &:first-child::before {
+                display: none;
+            }
+
+            &::before {
+                content: "\2022";
+                margin: 0 0.4em 0 0.3em;
+            }
+        }
+    }
+
     /* Lightbox */
     .lightbox {
         display: none;
