@@ -331,6 +331,8 @@ Významný rozvoj obnovitelných (či jaderných) zdrojů by v Česku nepochybn�
 
 ## Zdroje a poznámky
 
+Kód pro analýzy diskutované v tomto textu je open source a dostupný jako [Jupyter notebook v repozitáři na GitHubu](https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/ceny-elektriny-oze.ipynb).
+
 [^deleni-eurostat]: Toto zjednodušené dělení odpovídá klasifikaci [podle Eurostatu](https://ec.europa.eu/eurostat/cache/metadata/en/nrg_pc_204_sims.htm) a často se používá v energetických statistikách evropských států.
 [^jednotka-ceny]: Pro ceny v tomto textu se pro konzistenci a snazší srovnávání používá jednotka €/kWh (euro na kilowatthodinu elektřiny). Pro orientační přepočet na Kč/kWh v tomto textu používáme směnný kurz 1 € ≈ 25 Kč.
 [^naklady-stabilizace]: To zahrnuje i náklady na stabilizaci soustavy, vyrovnávání výkyvů atd.
