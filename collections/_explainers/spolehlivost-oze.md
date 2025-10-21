@@ -269,6 +269,8 @@ Jak ukazují data v tomto explaineru, výroba elektřiny ze slunce a větru je v
 
 ## Poznámky
 
+Kód pro analýzy diskutované v tomto textu je open source a dostupný jako [Jupyter notebook v repozitáři na GitHubu](https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/spolehlivost-oze.ipynb).
+
 [^definice-dunkelflaute]: Pojem *Dunkelflaute* nemá jednotnou, rozšířenou definici. Pro účely tohoto článku tak definujeme dny, ve kterých je kombinovaná výroba ze slunce a větru
 
 [^dataset]: Analýzy v tomto explaineru vychází z [datasetu tzv. Panevropské klimatické databáze (PECD)](https://www.entsoe.eu/eraa/2023/downloads/#Input%20Data), který slouží jako podklad pro celoevropské hodnocení zdrojové přiměřenosti (ERAA) organizace ENTSO-E za rok 2023. Data o historickém počasí v tomto dataset vychází z tzv. reanalýzy [ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5). Všechny analýzy zobrazované v tomto explaineru jsou open source a přístupné jako [Jupyter notebook v repozitáři na GitHubu](https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/spolehlivost-oze.ipynb).
