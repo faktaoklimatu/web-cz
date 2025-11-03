@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Výroba elektřiny bez uhlí</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas dekarbonizace a online kurz Dekarbonizujeme Česko</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,16 +37,41 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-4">
         <p>
-        Česko vyrábí zhruba 40 % elektřiny a 50 % tepla z uhlí, které je však kvůli své vysoké emisní intenzitě významně ekonomicky ohroženo systémem zpoplatnění emisí. Nová studie týmu Fakta o klimatu zkoumá <strong>důsledky případného zdražení emisní povolenky</strong> a následného odstavování uhelných elektráren na základě ekonomických faktorů.
+        Publikace <strong>Atlas dekarbonizace</strong> zaměřuje debatu na řešení, ukazuje sektory s největším potenciálem pro snížení emisí a inspiruje k dalším krokům v daty podložené dekarbonizaci.
         </p>
         <p>
-        Studie se pomocí modelování mimo jiné zaměřuje na otázky spojené s bezpečností dodávek elektřiny, s importní bilancí a s cenami silové elektřiny v Česku. Z výsledků vyplývá, že <strong>ani po uzavření většiny uhelných elektráren</strong> v krátkodobém horizontu v Česku <strong>nehrozí nedodávky elektřiny</strong>. Studie dále zkoumá výhody rychlejšího rozvoje nových zdrojů a poskytuje několik doporučení pro rozvoj moderní energetiky v Česku.
+        Online kurz <strong>Dekarbonizujeme Česko</strong> ukáže, jak si najít v dekarbonizaci vlastní místo a jak se v ní vyznat; jde totiž o jednu z klíčových oblastí prosperity společnosti.
         </p>
       </div>
-      <div class="col-md">
-        {% include preview-block.html slug="2024-vyroba-elektriny-v-cesku-bez-uhli" no_include_tags=true %}
+      <div class="col-md-4">
+        <div class="preview-card-container">
+          <a href="/atlas-dekarbonizace" class="preview-card card ">
+            <div style="--background: url('/assets-local/atlas-dekarbonizace/atlas-dekarbonizace-cover.png')" title="Atlas dekarbonizace Česka" class="preview-card-image img-fluid card-img">
+            </div>
+            <div class="card-img-overlay card-title-overlay">
+              <h5 class="card-title">Atlas dekarbonizace <br>Česka</h5>
+              <h6 class="card-subtitle">
+                Publikace
+              </h6>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="preview-card-container">
+          <a href="https://dekarbonizujemecesko.cz/" class="preview-card card">
+            <div style="--background: url('/assets-local/atlas-dekarbonizace/online-kurz-cover.png')" title="Dekarbonizujeme Česko" class="preview-card-image img-fluid card-img">
+            </div>
+            <div class="card-img-overlay card-title-overlay">
+              <h5 class="card-title">Dekarbonizujeme <br>Česko</h5>
+              <h6 class="card-subtitle">
+                Online kurz
+              </h6>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div></div>
