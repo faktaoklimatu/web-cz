@@ -19,16 +19,6 @@
         font-family: "Roobert", sans-serif;
     }
 
-    h1, h2, h3, h4, p, span{
-        font-family: "Roobert", sans-serif;
-    }
-
-    .main {
-        * {
-            font-family: "Roobert", sans-serif;
-        }
-    }
-
     /* Online Badge - floating */
     .online-badge-float {
         position: fixed;
@@ -693,7 +683,7 @@
 
     @keyframes floating-book {
         0% { transform: translateY(0); }
-        50% { transform: translateY(-40px); }
+        50% { transform: translateY(-30px); }
         100% { transform: translateY(0); }
     }
 
