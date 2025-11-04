@@ -455,7 +455,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
         align-items: center;
-        justify-items: center;
+        justify-items: left;
         margin-bottom: 30px;
     }
 
@@ -471,7 +471,7 @@
     }
 
     .logos-text {
-        text-align: center;
+        text-align: left;
         color: #666;
         font-size: 0.95rem;
         line-height: 1.6;
@@ -489,7 +489,7 @@
 
             &::before {
                 content: "\2022";
-                margin: 0 0.4em 0 0.3em;
+                margin: 0 0 0 0.3em;
             }
         }
     }
