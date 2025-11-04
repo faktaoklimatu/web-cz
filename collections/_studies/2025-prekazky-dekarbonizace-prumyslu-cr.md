@@ -5,12 +5,11 @@ slug:             2025-prekazky-dekarbonizace-prumyslu-cr
 redirect_from:
   - /2025-prekazky-dekarbonizace-prumyslu-cr
 published:        2025-08-30
-background_color: "#81CEC9"
-text_color: "black"
-button_style: "btn-outline-dark"
+background_color: "#3a3a90"
+text_color: "white"
 organizations:
   - name: "Fakta o klimatu"
-    logo: "fakta-black.svg"
+    logo: "fakta.svg"
 authors:
   - id: "ondras-pribyla"
 type:             "Mapování překážek"
