@@ -508,6 +508,13 @@ $c-callout-text: #373633;
         }
     }
 
+    .heating-plants-survey{
+        .summary {
+            display: grid;
+            grid-template-columns: 15% 15% 15% auto;
+        }
+    }
+
     .studie-2050-kroky {
         grid-template-columns: 4em 1fr;
     }

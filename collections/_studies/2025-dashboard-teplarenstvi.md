@@ -10,11 +10,14 @@ use-preview-image: true
 caption:     "Dashboard teplárenství."
 intro: |
   Už šestnáct států Evropské unie přijalo svůj vlastní klimatický zákon. Každý z nich v něm představuje své ambice na snižování emisí skleníkových plynů a cesty k nízkoemisní budoucnosti – míra detailu se ovšem v různých zemích dost liší. Zasazení klimatických závazků do zákona je důležité v tom, že aktéři ve veřejné i soukromé sféře mají větší zodpovědnost za jejich plnění a zároveň se tyto závazky stávají odolnějšími vůči změnám politické nebo ekonomické situace v zemi. Česko zatím svůj klimatický zákon nemá.
+
 items:
   - name: Teplárna Kladno s.r.o.
     city: Kladno
     region: Středočeský kraj
     percentage-of-households: 45
+    emissions: 1382063
+    emissions-decline: 73
     fuel: coal
     emissions-chart-url: 
     status: problematic
@@ -31,6 +34,8 @@ items:
     city: Třinec
     region: Moravskoslezský kraj
     percentage-of-households: 45
+    emissions: 1337644
+    emissions-decline: 87
     fuel: blast-furnace-gas
     emissions-chart-url: 
     status: on-track
@@ -50,6 +55,8 @@ items:
     city: Mělník
     region: Středočeský
     percentage-of-households: 60
+    emissions: 1285945
+    emissions-decline: 81
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -67,6 +74,8 @@ items:
     city: Sokolov
     region: Karlovarský
     percentage-of-households: 60
+    emissions: 807781
+    emissions-decline: 45
     fuel: syngas
     emissions-chart-url: 
     status: on-track
@@ -85,6 +94,8 @@ items:
     city: Mělník
     region: Středočeský
     percentage-of-households: 60
+    emissions: 448818
+    emissions-decline: 60
     fuel: coal
     emissions-chart-url: 
     status: Sloučit
@@ -102,6 +113,8 @@ items:
     city: Ústí nad Labem
     region: Ústecký
     percentage-of-households: 60
+    emissions: 386018
+    emissions-decline: 61
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -119,6 +132,8 @@ items:
     city: Mladá Boleslav
     region: Středočeský
     percentage-of-households: 60
+    emissions: 356704
+    emissions-decline: 86
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -136,6 +151,8 @@ items:
     city: Komořany
     region: Ústecký
     percentage-of-households: 60
+    emissions: 317227
+    emissions-decline: 34
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -151,6 +168,8 @@ items:
     city: Kralupy nad Vltavou
     region: Středočeský
     percentage-of-households: 60
+    emissions: 315795
+    emissions-decline: 78
     fuel: natural-gas
     emissions-chart-url: 
     status: no-change-needed
@@ -168,6 +187,8 @@ items:
     city: Plzeň
     region: Plzeňský
     percentage-of-households: 60
+    emissions: 261547
+    emissions-decline: 67
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -185,6 +206,8 @@ items:
     city: Valašské Meziříčí
     region: Zlínský
     percentage-of-households: 60
+    emissions: 229491
+    emissions-decline: 90
     fuel: natural-gas
     emissions-chart-url: 
     status: no-change-needed
@@ -202,6 +225,8 @@ items:
     city: Olomouc
     region: Olomoucký
     percentage-of-households: 60
+    emissions: 227912
+    emissions-decline: 78
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -217,6 +242,8 @@ items:
     city: Otrokovice
     region: Zlínský
     percentage-of-households: 60
+    emissions: 182262
+    emissions-decline: 55
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -232,6 +259,8 @@ items:
     city: České Budějovice
     region: Jihočeský
     percentage-of-households: 60
+    emissions: 154629
+    emissions-decline: 59
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -249,6 +278,8 @@ items:
     city: Zlín
     region: Zlínský
     percentage-of-households: 60
+    emissions: 149947
+    emissions-decline: 60
     fuel: coal
     emissions-chart-url: 
     status: on-track
@@ -264,6 +295,8 @@ items:
     city: Brno
     region: Jihomoravský
     percentage-of-households: 60
+    emissions: 132269
+    emissions-decline: 91
     fuel: natural-gas
     emissions-chart-url: 
     status: done
@@ -280,6 +313,8 @@ items:
     city: Plzeň
     region: Plzeňský
     percentage-of-households: 60
+    emissions: 125155
+    emissions-decline: 30
     fuel: coal
     emissions-chart-url: 
     status: Sloučit
@@ -297,6 +332,8 @@ items:
     city: Ústí nad Labem
     region: Ústecký
     percentage-of-households: 60
+    emissions: 100988
+    emissions-decline: 88
     fuel: coal
     emissions-chart-url: 
     status: problematic
@@ -314,6 +351,8 @@ items:
     city: Ostrava
     region: Moravskoslezský
     percentage-of-households: 60
+    emissions: 81943
+    emissions-decline: 70
     fuel: natural-gas
     emissions-chart-url: 
     status: done
@@ -329,6 +368,8 @@ items:
     city: Brno
     region: Jihomoravský
     percentage-of-households: 60
+    emissions: 37310
+    emissions-decline: 53
     fuel: natural-gas
     emissions-chart-url: 
     status: Sloučit
@@ -341,6 +382,117 @@ items:
 ---
 {:.narrow-text}
 Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32021R1119) v roce 2021. Zavázala se v něm dosáhnout <glossary id="carbon-neutrality">klimatické neutrality</glossary> v roce 2050 a do roku 2030 snížit své emise skleníkových plynů o 55 % oproti roku 1990. Tento zákon je však závazný pouze pro Unii jako celek – pro jednotlivé členské státy nestanovuje klimatické cíle ani neupravuje trajektorii k jejich dosažení. K roku 2023 přijalo vlastní klimatický zákon 16 z 27 států Unie. Diskuze o klimatickém zákoně dále probíhá na Slovensku a ve Slovinsku. V ostatních státech se toto téma buď ve větší míře neřeší, nebo jen na mimovládní úrovni (v rámci občanské společnosti apod.)
+
+<svg width="30" height="30" viewBox="0 0 30 30">
+  <line x1="0" y1="30" x2="30" y2="15" stroke="black" stroke-width="2" stroke-linecap="round" />
+</svg>
+
+<svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-label="Emissions fall 50%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" />
+    </marker>
+  </defs>
+  <!-- end y = 30 * 0.50 = 15 -->
+  <line x1="0" y1="0" x2="30" y2="15"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        marker-end="url(#arrow)"/>
+</svg>
+
+<svg width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <marker id="arrow-line" viewBox="0 0 10 10"
+            refX="10" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto">
+      <path d="M10 5 L4 1 M10 5 L4 9"
+            stroke="currentColor" stroke-width="1.8" fill="none" />
+    </marker>
+  </defs>
+  <!-- y = 30 * 0.5 = 15 -->
+  <line x1="0" y1="0" x2="30" y2="30"
+        stroke="currentColor" stroke-width="2"
+        marker-end="url(#arrow-line)" />
+</svg>
+
+<div class="heating-plants-survey">
+  {% for item in page.items %}
+    <div
+        class="card"
+        data-name="{{ item.name }}"
+        {% if item.status == "problematic" %}
+          style="background-color: rgba(255, 167, 167, 0.17)"
+        {% endif %}
+    >
+        <h5 class="card-header" id="{{ include.code }}"  {% if item.status == "problematic" %} style="background-color: rgb(255 130 130 / 17%)"{% endif %}>
+            {% if item.status == "problematic" %}
+              <span style="color: #a80223; font-weight: bold"><i class="fa-solid fa-triangle-exclamation"></i> </span>
+              {% elsif item.status == "on-track" %}
+              <span style="color: #eba000ff"><i class="fa-solid fa-circle-arrow-right"></i> </span>
+              {% elsif item.status == "no-change-needed" %}
+              <span style="color: #05737bff"><i class="fa-solid fa-circle-check"></i> </span>
+              {% elsif item.status == "done" %}
+              <span style="color: #05737bff"><i class="fa-solid fa-circle-check"></i> </span>
+              {% else %}
+              <span style="color:rgba(104, 104, 104, 1)f"><i class="fa-solid fa-circle-question"></i></span>
+            {% endif %}
+            {{ item.name }}, 
+            <i>{{ item.city }}</i>
+        </h5>
+        <section class="summary">
+
+          <div class="card-body">
+            <span>Emise CO<sub>2</sub>eq</span><br>
+            <span><b>{{ item.emissions | divided_by: 1000 }} tisíc tun</b></span><br>
+            {% assign d = item.emissions | times: 0.00003346 | plus: 3.752 %}
+            <svg width="{{ d }}" height="{{ d }}" viewBox="0 0 {{ d }} {{ d }}">
+              <circle cx="{{ d | divided_by: 2 }}" cy="{{ d | divided_by: 2 }}" r="{{ d | divided_by: 2 }}" fill="#999" />
+            </svg>
+          </div>
+
+          <div class="card-body">
+            <span>Pokles emisí</span><br>
+            <span><b>na {{ item.emissions-decline }} % z 2022</b></span><br>
+            <svg width="50" height="50" viewBox="-2 -10 60 60">
+              <defs>
+                <marker id="arrow-line" viewBox="0 0 10 10"
+                        refX="9" refY="5" markerWidth="6" markerHeight="6"
+                        orient="auto">
+                  <path d="M9 5 L3.5 1.5 M9 5 L3.5 8.5"
+                        stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </marker>
+              </defs>
+
+              <line x1="0" y1="0"
+                    x2="50" y2="{{ 100 | minus: item.emissions-decline | divided_by: 2 }}"
+                    stroke="currentColor" stroke-width="2"
+                    marker-end="url(#arrow-line)" />
+            </svg>
+          </div>
+
+          <div class="card-body">
+            <span>Hlavní palivo</span><br>
+            <span><b>
+                {% if item.fuel == "coal" %}
+                <span style="color: #915258ff"><i class="fa-solid fa-gem"></i>&nbsp;Uhlí</span>
+                {% elsif item.fuel == "blast-furnace-gas" %}
+                <span style="color: #a06b9fff"><i class="fa-solid fa-fire-flame-simple"></i>&nbsp;Hutní&nbsp;plyn</span>
+                {% elsif item.fuel == "natural-gas" %}
+                <span style="color: #a06b9fff"><i class="fa-solid fa-fire-flame-simple"></i>&nbsp;Zemní&nbsp;plyn</span>
+                {% elsif item.fuel == "syngas" %}
+                <span style="color: #a06b9fff"><i class="fa-solid fa-fire-flame-simple"></i>&nbsp;Energoplyn</span>
+                {% else %}
+                <b>{{item.fuel}}</b>
+                {% endif %}            </b></span><br>
+          </div>
+
+          <div class="card-body">
+            <p>{{ item.technology-comment }}</p>
+          </div>
+        </section>
+    </div>
+  {% endfor %}
+</div>
 
 
 {% comment %}
