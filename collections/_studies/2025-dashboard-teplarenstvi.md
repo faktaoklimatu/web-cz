@@ -526,6 +526,24 @@ Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/
           <div class="card-body">
             <span class="label">Emise CO<sub>2</sub>eq</span><br>
             <span><b>{{ item.emissions | divided_by: 1000 }} tisíc tun</b></span><br>
+            <span class="label">Pokles emisí</span><br>
+            <span><b>na {{ item.emissions-decline }} % z 2022</b></span><br>
+            <svg width="50" height="50" viewBox="-2 -10 60 60">
+              <defs>
+                <marker id="arrow-line" viewBox="0 0 10 10"
+                        refX="9" refY="5" markerWidth="6" markerHeight="6"
+                        orient="auto">
+                  <path d="M9 5 L3.5 1.5 M9 5 L3.5 8.5"
+                        stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </marker>
+              </defs>
+
+              <line x1="0" y1="0"
+                    x2="50" y2="{{ 100 | minus: item.emissions-decline | divided_by: 2 }}"
+                    stroke="currentColor" stroke-width="2"
+                    marker-end="url(#arrow-line)" />
+            </svg>
           </div>
 
           <div class="card-body">
@@ -562,7 +580,7 @@ Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/
                 {% endif %}
             </span><br>
             <span class="label">Komentář k transformaci</span><br>
-            <p>{{ item.status-comment }}</p>  
+            <p><i>{{ item.status-comment }}</i></p>  
           </div>
             
           <div class="card-body">
