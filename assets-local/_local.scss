@@ -511,7 +511,16 @@ $c-callout-text: #373633;
     .heating-plants-survey{
         .summary {
             display: grid;
-            grid-template-columns: 15% 15% 15% auto;
+            grid-template-columns: 1fr 1fr 3fr 2fr;
+        }
+
+        .label{
+            color: grey;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: 10;
+            font-size: 0.9rem;
         }
     }
 
