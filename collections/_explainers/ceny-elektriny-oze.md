@@ -284,7 +284,7 @@ Sociální tarify jsou další možností, jak dopady drahé elektřiny na obyva
 - Francie od roku 2019 nabízí [voucher pro nízkopříjmové domácnosti](https://www.cre.fr/en/electricity/retail-electricity-market/presentation.html), který lze využít na část plateb za elektřinu nebo na náklady spojené s energetickou renovací.
 - Irsko poskytuje [slevy na vyúčtování](https://www.citizensinformation.ie/en/social-welfare/extra-social-welfare-benefits/household-benefits-package/) seniorům nad 70 let a dalším ekonomicky zranitelným skupinám obyvatel.
 
-V Česku žádné sociální tarify na energie nejsou, nicméně platby za energie vstupují do výpočtu [příspěvku na bydlení](https://www.mpsv.cz/prispevek-na-bydleni).
+V Česku žádné sociální tarify na energie nejsou, nicméně platby za energie vstupují do výpočtu [dávky státní sociální pomoci](https://www.mpsv.cz/davka-statni-socialni-pomoci).
 
 ### Přesun nákladů do rozpočtu
 
