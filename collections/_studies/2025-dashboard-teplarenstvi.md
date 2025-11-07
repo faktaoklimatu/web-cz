@@ -553,9 +553,9 @@ Evropská unie přijala vlastní [klimatický zákon](https://eur-lex.europa.eu/
             {% elsif item.status == "on-track" %}
             <span style="color: #eba000ff"><i class="fa-solid fa-circle-arrow-right"></i>&nbsp;<b>On-track</b>&nbsp;→&nbsp;{{item.target-year}}</span><br>
             {% elsif item.status == "no-change-needed" %}
-            <span style="color: #05737bff"><i class="fa-solid fa-check"></i>&nbsp;<b>Není treba transformovat</b></span><br>
+            <span style="color: #05737bff"><i class="fa-solid fa-circle-check"></i>&nbsp;<b>Není treba transformovat</b></span><br>
             {% elsif item.status == "done" %}
-            <span style="color: #05737bff"><i class="fa-solid fa-check"></i></i>&nbsp;<b>Hotovo</b></span><br>
+            <span style="color: #05737bff"><i class="fa-solid fa-circle-check"></i>&nbsp;<b>Hotovo</b></span><br>
             {% else %}
             <span>{{item.status}}, {{item.target-year}}</span><br>
             {% endif %}
