@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const carbonContent = fuelRow.dataset.carbonContent;
 
       // Update price increase and price increase percentage components.
-      const priceIncrease = allowancePriceLocal * carbonContent / 1000;
-      const priceIncreasePercent = 100 * priceIncrease / fuelPrice;
+      const priceIncrease = allowancePriceLocal * carbonContent / 1000  * 1.21;
+      const priceIncreasePercent = 100 * priceIncrease / fuelPrice * 1.21;
 
       $priceIncrease.text(`+${formatNumber(priceIncrease)}`);
       $percentage.text(formatNumber(priceIncreasePercent));
