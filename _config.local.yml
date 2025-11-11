@@ -82,4 +82,5 @@ kramdown:
 
 # Place language-specific JS files here such as a script for running a survey form.
 # See https://github.com/faktaoklimatu/web-cz/pull/1394 for a survey form implementation.
-local-scripts: []
+local-scripts:
+- /assets-local/js/popup-kurz.js
