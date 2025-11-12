@@ -1,4 +1,9 @@
-/* Atlas dekarbonizace Česka - Landing Page v2.2 - 2025-10-02 */
+/* Atlas dekarbonizace Česka - Landing Page v2.4 - 2025-11-12 */
+
+/* Variables */
+$fullscreen-max-width: 1100px;
+
+
 .landing-page-atlas-dekarbonizace {
 
     @font-face {
@@ -57,7 +62,7 @@
     }
 
     .hero-content {
-        max-width: 1200px;
+        max-width: $fullscreen-max-width;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2fr 3fr;
@@ -134,7 +139,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
-        max-width: 1200px;
+        max-width: $fullscreen-max-width;
         margin: 0 auto;
     }
 
@@ -165,7 +170,7 @@
     }
 
     .preview-container {
-        max-width: 1200px;
+        max-width: $fullscreen-max-width;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1.5fr 1fr;
@@ -305,7 +310,7 @@
     }
 
     .course-content {
-        max-width: 1200px;
+        max-width: $fullscreen-max-width;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 4fr 3fr;
