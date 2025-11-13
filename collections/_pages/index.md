@@ -42,7 +42,7 @@ slug: index
         Publikace <strong>Atlas dekarbonizace</strong> zaměřuje debatu na řešení, ukazuje sektory s největším potenciálem pro snížení emisí a inspiruje k dalším krokům v daty podložené dekarbonizaci.
         </p>
         <p>
-        Online kurz <strong>Dekarbonizujeme Česko</strong> ukáže, jak konkrétně by se to dalo udělat.
+        Online kurz <strong>Dekarbonizujeme Česko</strong> ukáže, jak si najít v dekarbonizaci vlastní místo a jak se v ní vyznat; jde totiž o jednu z klíčových oblastí prosperity společnosti.
         </p>
       </div>
       <div class="col-md-4">
