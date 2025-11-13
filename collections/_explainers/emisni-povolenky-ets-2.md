@@ -90,18 +90,14 @@ Tuto logiku lze použít pro výpočet výnosů zpětně vzhledem ke skutečně 
     content=vynosy
 %}
 
-{% capture platci-prijemci %}
-
-Podobně jako například v Modernizačním fondu budou i v Sociálním klimatickém fondu prostředky rozdělovány s ohledem na rozdílnou situaci v jednotlivých státech. Stanovení podílu, který připadne danému členskému státu, vychází mj. z podílu obyvatelstva ohroženého chudobou, hrubého národní důchodu nebo emisí vypouštěných při spalování paliv domácnostmi. Čistými příjemci v rámci SKF tak budou např. Polsko, Rumunko nebo Řecko. Naopak čistými plátci budou Německo, Nizozemsko nebo Itálie. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
-
-{% endcapture %}
-
 {% include expander-figure.html
     name="platci-prijemci"
     expanded=false
     class="contrast-figure"
     label="Na okraj: Kdo bude čistým plátcem a kdo příjemcem?"
-    content=platci-prijemci
+    content="
+Podobně jako například v Modernizačním fondu budou i v Sociálním klimatickém fondu prostředky rozdělovány s ohledem na rozdílnou situaci v jednotlivých státech. Stanovení podílu, který připadne danému členskému státu, vychází mj. z podílu obyvatelstva ohroženého chudobou, hrubého národního důchodu nebo emisí vypouštěných při spalování paliv domácnostmi. Čistými příjemci v rámci SKF tak budou např. Polsko, Rumunko nebo Řecko. Naopak čistými plátci budou Německo, Nizozemsko nebo Itálie. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
+"
 %}
 
 ## Jak se zavedení povolenek promítne do ceny paliv?
@@ -117,7 +113,7 @@ Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, na
     source-text="Vlastní výpočty."
 %}
 
-Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 3,3 Kč včetně DPH**, což k současné ceně benzínu okolo 35 korun za litr představuje 11,3% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
+Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 3,3 Kč včetně DPH**, což k současné ceně benzínu okolo 35 korun za litr představuje 9,3% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
 
 {% include includes-local/ets2-kalkulacka.html %}
 
@@ -144,7 +140,7 @@ V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro 
 
 Ačkoliv legislativa upravující fungování ETS 2 byla na celounijní úrovni schválena už v roce 2023, do října 2025 ji plně transponovalo do svého národního práva [17 států](https://www.ieta.org/ets2-tracker) z 27. Například v Česku proběhla zatím pouze částečná transpozice směrnice a její plné přijetí je nadále předmětem politických diskuzí.
 
-V létě 2025 Česko společně s dalšími 18 členskými státy zaslalo Evropské komisi tzv. [*non-paper*](https://www.mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/ cr-odeslala-evropske-komisi-pozadavky-18), ve kterém nastínilo požadavky na úpravy systému tak, aby mj. došlo k posílení mechanismů pro udržení ceny povolenky na sociálně přijatelné úrovni.V reakci na tuto iniciativu má Komise představit do konce roku 2025 [konkrétní návrhy](https://ec.europa.eu/commission/presscorner/detail/en/speech_25_2469) na úpravy ETS2.[^reakce-komise]
+V létě 2025 Česko společně s dalšími 18 členskými státy zaslalo Evropské komisi tzv. [*non-paper*](https://www.mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/cr-odeslala-evropske-komisi-pozadavky-18), ve kterém nastínilo požadavky na úpravy systému tak, aby mj. došlo k posílení mechanismů pro udržení ceny povolenky na sociálně přijatelné úrovni.V reakci na tuto iniciativu má Komise představit do konce roku 2025 [konkrétní návrhy](https://ec.europa.eu/commission/presscorner/detail/en/speech_25_2469) na úpravy ETS2.[^reakce-komise]
 
 #### Trh s futures
 
@@ -152,18 +148,14 @@ V polovině roku 2025 došlo na burzách ICE a EEX ke spuštění obchodování 
 - Obchody s ETS 2 futures až na jednotky případů neprobíhají.[^futures-obchody] Informace o vývoji ceny tedy nejsou výsledkem skutečných transakcí, ale syntetického modelování, tedy se částečně odvozují od podobných kontraktů, např. EU ETS 1.[^dokumentace] Zatím tak na základě těchto omezených informací nelze předjímat budoucí cenu.
 - Obchodování samotných povolenek (nikoliv futures kontraktů) začne až v roce 2027 na burze EEX v Lipsku (případně dříve, pokud dojde k úpravám [avizovaným](https://ec.europa.eu/commission/presscorner/detail/en/speech_25_2469) Komisí). A až tehdy bude více informací o tom, jak se trh s povolenkami druhé generace chová. Platí přitom, že cena povolenky bude záležet jednak na tom, jak vysoká bude jejich nabídka, jednak na tom jaká bude poptávka (tedy množství emisí v dotčených sektorech).[^bnef]
 
-{% capture futures %}
-
-Futures kontrakty jsou finanční deriváty, které představují závazek nakoupit (nebo prodat) určité aktivum (v tomto případě povolenky) za předem dohodnutou cenu k určitému budoucímu datu. Slouží hlavně k zajištění proti cenovým výkyvům nebo ke spekulaci na budoucí vývoj cen. Jejich aktuální hodnota proto nemusí odrážet skutečnou tržní cenu aktiva dnes, ale spíše očekávání účastníků trhu.
-
-{% endcapture %}
-
 {% include expander-figure.html
     name="futures"
     expanded=false
     class="contrast-figure"
     label="Kontext: Co jsou futures konkrakty?"
-    content=futures
+    content="
+Futures kontrakty jsou finanční deriváty, které představují závazek nakoupit (nebo prodat) určité aktivum (v tomto případě povolenky) za předem dohodnutou cenu k určitému budoucímu datu. Slouží hlavně k zajištění proti cenovým výkyvům nebo ke spekulaci na budoucí vývoj cen. Jejich aktuální hodnota proto nemusí odrážet skutečnou tržní cenu aktiva dnes, ale spíše očekávání účastníků trhu.
+"
 %}
 
 ## Světový kontext
@@ -197,7 +189,7 @@ Data k jednotlivým grafům včetně zjednoušeného modelu výnosů jsou k disp
 [^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v [článku 30h směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030H).
 [^skf]: Sociální klimatický fond začne fungovat o rok dříve, než se ETS 2 spustí, z toho důvodu bude pro jeho financování využito i 50 milionů povolenek dražených v rámci ETS 1.
 [^zdroje-aukce]: Pokud by průměrná cena ETS 2 povolenky byla 60 eur, znamenalo by to v letech 2027–2032 hrubým odhadem dalších 200 mld. Kč pro český rozpočet. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
-[^uhli]: Uhlí je na rozdíl od ostatních paliv velmi levným zdrojem – je lokální a málo zdaněné. Navíc má vyšší emisní intenzitu než ostatní paliva, proto se zavedení povolenky na jeho ceně projeví více. 
+[^uhli]: Uhlí je na rozdíl od ostatních paliv velmi levným zdrojem – je lokální a málo zdaněné. Navíc má vyšší emisní intenzitu než ostatní paliva, proto se zavedení povolenky na jeho ceně projeví více.
 [^reakce-komise]: Tyto úpravy by měly znamenat především uvolnění většího množství povolenek z rezervy tržní stability (*Market Stability Reserve*, MSR) nebo možnost dražit povolenky už před startem ETS2, aby i výnosy byly k dispozici dříve.
 [^futures-obchody]: Viz data burz [ICE](https://www.ice.com/products/83048353/EUA-2-Futures/data?span=1) a [EEX](https://www.eex.com/en/market-data/market-data-hub/environmentals/futures#%7B%22snippetpicker%22%3A%222235%22%7D) a sloupec *Volume*, který se ve většinu dní rovná 0.
 [^dokumentace]: Dokumentace k určování settlement price burz [ICE](https://www.ice.com/publicdocs/endex/ICE_Endex_EoD_Report.pdf) a [EEX](https://www.eex.com/en/trading-resources/trading-information/trading-forms-and-documentation).
