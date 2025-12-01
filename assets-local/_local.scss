@@ -6,8 +6,13 @@ $c-callout-background: #f7efde;
 $c-callout-text: #373633;
 
 .intro {
-    .tagline { width: 15.2rem; }
-    p { padding-left: 19rem; }
+    .tagline {
+        width: 15.2rem;
+    }
+
+    p {
+        padding-left: 19rem;
+    }
 
     .nav-tabs {
         border: none;
@@ -28,7 +33,7 @@ $c-callout-text: #373633;
 .principy-prace {
     grid-template-columns: 6rem 1fr;
 
-    > img {
+    >img {
         align-self: center;
     }
 }
@@ -37,12 +42,20 @@ $c-callout-text: #373633;
     display: grid;
     grid-template-columns: 90px auto;
     grid-gap: 1rem;
-    .team-photo { width: 100%; }
-    div { align-self: center; }
+
+    .team-photo {
+        width: 100%;
+    }
+
+    div {
+        align-self: center;
+    }
 }
 
 @media (min-width: 768px) {
-    .member-small { grid-template-columns: 120px auto; }
+    .member-small {
+        grid-template-columns: 120px auto;
+    }
 }
 
 .cop-entity-summary {
@@ -108,7 +121,9 @@ $c-callout-text: #373633;
 .klimazavazky-grafy {
     row-gap: 0;
 
-    h3 { margin-top: 1rem; }
+    h3 {
+        margin-top: 1rem;
+    }
 
     .longread-figure {
         width: 100%;
@@ -133,7 +148,7 @@ $c-callout-text: #373633;
         background: none;
         border: none;
 
-        > .small {
+        >.small {
             margin-bottom: .25rem;
             color: colors.$c-grey;
             font-size: .85rem;
@@ -155,9 +170,18 @@ $c-callout-text: #373633;
         font-size: .85rem;
     }
 
-    h4 { padding-right: 1rem; }
-    h4.scenario-left { grid-column: 1 / 3; }
-    h4.scenario-right { grid-column: 3 / 5; }
+    h4 {
+        padding-right: 1rem;
+    }
+
+    h4.scenario-left {
+        grid-column: 1 / 3;
+    }
+
+    h4.scenario-right {
+        grid-column: 3 / 5;
+    }
+
     .heading {
         margin-top: 1rem;
         grid-column: 1 / 5;
@@ -168,9 +192,17 @@ $c-callout-text: #373633;
         font-size: 1rem;
     }
 
-    .source-type { grid-column: 1 / 2; }
-    .value-left { grid-column: 2 / 4; }
-    .value-right { grid-column: 4 / 5; }
+    .source-type {
+        grid-column: 1 / 2;
+    }
+
+    .value-left {
+        grid-column: 2 / 4;
+    }
+
+    .value-right {
+        grid-column: 4 / 5;
+    }
 }
 
 .uhelna-studie-doporuceni {
@@ -198,12 +230,15 @@ $c-callout-text: #373633;
             margin: -.25rem 0 0 0;
         }
 
-        h3, p {
+        h3,
+        p {
             grid-column: 2 / 3;
             margin: 0;
         }
 
-        p + p { font-size: 80%; }
+        p+p {
+            font-size: 80%;
+        }
     }
 }
 
@@ -215,7 +250,8 @@ $c-callout-text: #373633;
     background-size: calc(1.25rem * 1.3);
     background-position: top 0.1em left;
     font-style: italic;
-    color: #00627f; /* or use c-accent for both question mark and text? */
+    color: #00627f;
+    /* or use c-accent for both question mark and text? */
     padding-left: calc((1.25rem * 1.3) * 1.3);
     margin-left: -0.3rem;
 }
@@ -230,7 +266,7 @@ $c-callout-text: #373633;
     grid-template-columns: 80px 1fr;
 }
 
-.certifikace-loga > picture {
+.certifikace-loga>picture {
     display: block;
     max-width: 10em;
     margin: 0 auto;
@@ -269,10 +305,21 @@ $c-callout-text: #373633;
     .mix-figures {
         padding-bottom: 0;
 
-        dl { column-count: 2; }
-        .mix-fossil { color: #8c2c79; }
-        .mix-nuclear { color: #024b7a; }
-        .mix-renewables { color: #f58800; }
+        dl {
+            column-count: 2;
+        }
+
+        .mix-fossil {
+            color: #8c2c79;
+        }
+
+        .mix-nuclear {
+            color: #024b7a;
+        }
+
+        .mix-renewables {
+            color: #f58800;
+        }
     }
 }
 
@@ -280,7 +327,9 @@ $c-callout-text: #373633;
     display: flex;
     flex-direction: column;
 
-    .country-flag { margin-right: 0.5rem; }
+    .country-flag {
+        margin-right: 0.5rem;
+    }
 
     .checklist {
         padding-left: 0;
@@ -291,16 +340,29 @@ $c-callout-text: #373633;
             text-decoration: underline dotted;
         }
 
-        .fas { margin-right: 0.7em; }
-        .yes .fas { color: #5db16f; }
-        .no { color: #bdc3c8; }
+        .fas {
+            margin-right: 0.7em;
+        }
+
+        .yes .fas {
+            color: #5db16f;
+        }
+
+        .no {
+            color: #bdc3c8;
+        }
     }
 
     .footer {
         font-size: 0.9em;
 
-        p { padding-left: 1.6em; }
-        p:not(:last-child) { margin-bottom: 0.5em; }
+        p {
+            padding-left: 1.6em;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 0.5em;
+        }
 
         .fas {
             width: 1.6em;
@@ -308,12 +370,16 @@ $c-callout-text: #373633;
             color: #a4a7aa;
         }
 
-        .fa-lightbulb { padding-left: 0.2em; }
+        .fa-lightbulb {
+            padding-left: 0.2em;
+        }
     }
 }
 
 .tabulka-uzemni-stopa-oze {
-    td:first-child, td:nth-child(4) {
+
+    td:first-child,
+    td:nth-child(4) {
         font-weight: 600;
     }
 }
@@ -323,7 +389,9 @@ $c-callout-text: #373633;
     background-color: #f7f7f7;
     padding: 1.5rem;
 
-    h3 { margin-bottom: 1rem; }
+    h3 {
+        margin-bottom: 1rem;
+    }
 
     #allowance-price-number {
         font-weight: 600;
@@ -347,7 +415,8 @@ $c-callout-text: #373633;
         align-self: center;
     }
 
-    .slider-greyzone, .slider-scale {
+    .slider-greyzone,
+    .slider-scale {
         width: 100%;
         grid-column: 1 / 3;
         background-repeat: no-repeat;
@@ -389,13 +458,21 @@ $c-callout-text: #373633;
         align-items: baseline;
     }
 
-    .fuel-name { padding-top: 1rem; }
+    .fuel-name {
+        padding-top: 1rem;
+    }
 
-    .fuel-name, .price-increase-context { font-weight: 600; }
+    .fuel-name,
+    .price-increase-context {
+        font-weight: 600;
+    }
 
-    .price-increase-context { color: gray; }
+    .price-increase-context {
+        color: gray;
+    }
 
-    .price-increase, #allowance-price-number {
+    .price-increase,
+    #allowance-price-number {
         color: #3B3B93;
         font-weight: 600;
         font-size: 1.3rem;
@@ -433,12 +510,42 @@ $c-callout-text: #373633;
     }
 }
 
+#tabulka-reserse-teplaren {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        border-width: 3px;
+    }
+
+    .card-header {
+        display: flex;
+        padding: 1rem 1.75rem;
+        background: none;
+        border-bottom: 0;
+        font-size: 1.6rem;
+        color: #3e3e4d;
+
+        .owner {
+            margin-left: auto;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #b6b6b6;
+        }
+    }
+}
+
 @media (min-width: 576px) {
     .klimazavazky-grafy {
         grid-template-columns: 1fr 1fr;
 
-        h3 { grid-column: 1 / 3; }
-        .longread-figure { max-width: initial; }
+        h3 {
+            grid-column: 1 / 3;
+        }
+
+        .longread-figure {
+            max-width: initial;
+        }
     }
 
     .climate-laws-survey-countries {
@@ -471,6 +578,7 @@ $c-callout-text: #373633;
 
     .grid-figures {
         column-gap: 1.5rem;
+
         p {
             align-self: center;
             margin-bottom: 0;
@@ -481,8 +589,14 @@ $c-callout-text: #373633;
         grid-template-columns: repeat(var(--items), 1fr);
         grid-template-rows: auto auto;
         grid-auto-flow: column;
-        p { align-self: start; }
-        .longread-figure { margin-right: 1em; }
+
+        p {
+            align-self: start;
+        }
+
+        .longread-figure {
+            margin-right: 1em;
+        }
     }
 
     .extremy-histogramy {
@@ -524,13 +638,20 @@ $c-callout-text: #373633;
     }
 
     #ets2-kalkulacka {
-        h3 { margin-bottom: 2rem; }
+        h3 {
+            margin-bottom: 2rem;
+        }
 
-        .allowance-price { margin-bottom: 0rem; }
+        .allowance-price {
+            margin-bottom: 0rem;
+        }
 
-        .fuel { grid-template-columns: 3fr 4fr 5fr; }
+        .fuel {
+            grid-template-columns: 3fr 4fr 5fr;
+        }
 
-        .fuel-name, .price-increase-context {
+        .fuel-name,
+        .price-increase-context {
             padding-top: 0rem;
             padding-bottom: 0.5rem;
         }
@@ -558,14 +679,18 @@ $c-callout-text: #373633;
             grid-template-columns: 1fr auto 1fr;
         }
 
-        .mix-figures dl { column-count: 1; }
+        .mix-figures dl {
+            column-count: 1;
+        }
     }
 
     .climate-laws-survey-countries {
         /* 10 of 12 columns. */
         width: 83.33%;
 
-        .summary { grid-template-columns: 50% auto; }
+        .summary {
+            grid-template-columns: 50% auto;
+        }
     }
 }
 
@@ -588,7 +713,8 @@ $c-callout-text: #373633;
     max-width: 3rem;
 }
 
-.ff55-done, .ff55-inprogress {
+.ff55-done,
+.ff55-inprogress {
     margin-left: 0.5em;
     color: #9ba5ad;
 }
