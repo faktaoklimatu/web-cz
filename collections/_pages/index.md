@@ -47,7 +47,7 @@ slug: index
       </div>
       <div class="col-md-4">
         <div class="preview-card-container">
-          <a href="/atlasdekarbonizace" class="preview-card card ">
+          <a href="/atlas-dekarbonizace" class="preview-card card ">
             <div style="--background: url('/assets-local/atlas-dekarbonizace/atlas-dekarbonizace-cover.png')" title="Atlas dekarbonizace Česka" class="preview-card-image img-fluid card-img">
             </div>
             <div class="card-img-overlay card-title-overlay">
@@ -61,7 +61,7 @@ slug: index
       </div>
       <div class="col-md-4">
         <div class="preview-card-container">
-          <a href="https://dekarbonizujemecesko.cz/" class="preview-card card ">
+          <a href="https://dekarbonizujemecesko.cz/" class="preview-card card">
             <div style="--background: url('/assets-local/atlas-dekarbonizace/online-kurz-cover.png')" title="Dekarbonizujeme Česko" class="preview-card-image img-fluid card-img">
             </div>
             <div class="card-img-overlay card-title-overlay">

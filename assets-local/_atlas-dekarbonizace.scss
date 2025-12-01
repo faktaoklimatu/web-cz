@@ -8,19 +8,19 @@ $fullscreen-max-width: 1100px;
 
     @font-face {
         font-family: "Roobert";
-        src: url("assets-local/fonts/Roobert-Regular.woff2") format("woff2");
+        src: url("/assets-local/fonts/Roobert-Regular.woff2") format("woff2");
         font-weight: 400;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Roobert";
-        src: url("assets-local/fonts/Roobert-Bold.woff2") format("woff2");
+        src: url("/assets-local/fonts/Roobert-Bold.woff2") format("woff2");
         font-weight: 800;
         font-style: normal;
     }
-    
-    * :not(nav):not(nav *):not(i):not(footer *) {
+
+    > main {
         font-family: "Roobert", sans-serif;
     }
 
@@ -51,8 +51,8 @@ $fullscreen-max-width: 1100px;
 
     /* Hero Section */
     .hero {
-        background-image: 
-            linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%), 
+        background-image:
+            linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%),
             url("/assets-local/atlas-dekarbonizace/hero-illustration.svg"),
             linear-gradient(135deg, #006C90 0%, #0091B8 100%);
         color: white;
@@ -370,7 +370,7 @@ $fullscreen-max-width: 1100px;
     }
 
     /* Testimonials section*/
-        
+
     .testimonials-section {
         padding: 3rem 0;
     }
@@ -402,7 +402,7 @@ $fullscreen-max-width: 1100px;
             grid-row: 1/2;
         }
 
-        .person-info{
+        .person-info {
             grid-row: 2/3;
             align-self: end;
             display: grid;
@@ -420,14 +420,14 @@ $fullscreen-max-width: 1100px;
                 align-self: center;
                 overflow: hidden;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
-            .name{
+            .name {
                 grid-column: 2/3;
                 grid-row: 1/2;
                 font-size: 1.2rem;
@@ -435,7 +435,7 @@ $fullscreen-max-width: 1100px;
                 align-self: end;
             }
 
-            .institution{
+            .institution {
                 grid-column: 2/3;
                 grid-row: 2/3;
                 font-size: 0.8rem;
@@ -444,10 +444,10 @@ $fullscreen-max-width: 1100px;
                 align-self: start;
             }
         }
-        
-        
+
+
     }
-    
+
     /* Logos Section */
     .logos-section {
         background: white;
@@ -687,7 +687,7 @@ $fullscreen-max-width: 1100px;
             gap: 40px;
         }
 
-        .testimonial-card{
+        .testimonial-card {
             min-width: none;
         }
     }
@@ -697,9 +697,17 @@ $fullscreen-max-width: 1100px;
     /* Animations */
 
     @keyframes floating-book {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-30px); }
-        100% { transform: translateY(0); }
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
     }
 
 }
