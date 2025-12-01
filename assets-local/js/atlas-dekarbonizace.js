@@ -51,4 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
       closeLightbox();
     }
   });
+
+  // Testimonial button
+  var section = document.querySelector(".testimonials-section");
+  var button = document.querySelector(".testimonials-toggle");
+
+  if (!section || !button) return;
+
+  // collapsed by default (only first 4 visible via CSS)
+  section.classList.add("is-collapsed");
+
+  button.addEventListener("click", function () {
+      var isExpanded = section.classList.toggle("is-expanded");
+      section.classList.toggle("is-collapsed", !isExpanded);
+
+      button.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+      button.textContent = isExpanded ? "Skrýt ohlasy" : "Zobrazit všechny ohlasy";
+  });
 });
+
