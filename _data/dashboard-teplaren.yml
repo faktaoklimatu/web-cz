@@ -1,0 +1,710 @@
+items:
+- name: ČEZ - Elektrárna Tušimice 2
+  status: Odchod od uhlí do roku 2028
+  notes: 'V rámci dekarbonizace by Tušimice měl nahradit nový zdroj v rámci elektrárny Prunéřov. '
+  owner: ČEZ
+  num_households: 6 242
+  munis_covered: Kadaň
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 4.418179
+  - 4.281574
+  - 3.729131
+  - 3.39941
+  - 3.393892
+  - 3.570884
+  - 3.738141
+  emissions_latest: 3,7
+  share_households: 77 %
+- name: ČEZ - Elektrárna Prunéřov 2
+  status: Odchod od uhlí do roku 2028
+  notes: V plánu je biomasová kotelna 35 MWt a účinné kogenerační plynové jednotky 45 MWt (obojí podpořeno z ModFondu, plynové jednotky navíc mají provozní podporu). V rámci dekarbonizace by tyto nové zdroje měly nahradit i Elektrárnu Tušimice jako zdroj tepla pro Kadaň (horkovodní propoj by měl být hotový během roku 2027).
+  owner: ČEZ
+  num_households: 27 297
+  munis_covered: Jirkov, Chomutov, Klášterec nad Ohří
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 2.376611
+  - 3.222089
+  - 2.849359
+  - 3.494895
+  - 3.522951
+  - 3.025634
+  - 3.460284
+  emissions_latest: 3,5
+  share_households: 74 %
+  fuels_main_future:
+  - Biomasa
+  - Zemní plyn
+- name: Elektrárna Ledvice
+  status: Subsidy granted
+  notes: Připravuje se biomasová kotelna (podořena z ModFondu), v 2. etapě pravděpodobně doplněna nějakým dalším zdrojem. Jako záložní a špičkovací zdroj slouží současná plynová kotelna (131 MWt).
+  owner: ČEZ
+  num_households: 19 482
+  munis_covered: Teplice, Bílina, Ledvice
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 0.525759
+  - 0.241512
+  - 0.53979
+  - 3.785709
+  - 3.048206
+  - 2.825961
+  - 2.741285
+  emissions_latest: 2,7
+  share_households: 62 %
+  fuels_secondary_today:
+  - Zemní plyn
+  fuels_main_future:
+  - Biomasa
+  - Zemní plyn
+  other_heating: průmyslová zóna Ledvice
+- name: Elektrárna Chvaletice
+  status: Odchod od uhlí dokončen
+  notes: Dodávky tepla, které v lokalitě zajišťuje ČEZ nahradila od září 2025 nová plynová kotelna s moderními kogeneračními jednotkami. Uhelná elektrárna patřící firmě Sev.en stále běží.
+  owner: Sev.en
+  num_households: '578'
+  munis_covered: Chvaletice, Trnávka
+  fuels_main_today:
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 4.360766
+  - 3.715409
+  - 2.242402
+  - 3.398295
+  - 4.555826
+  - 2.893905
+  - 2.73627
+  emissions_latest: 2,7
+  share_households: 42 %
+- name: Teplárna Kladno s.r.o.
+  status: Problematic
+  notes: 'Naprostá většina tepla v současnosti pochází z hnědého uhlí. Teplárna jedná s městem o vyšší ceně tepla, která by umožňovala transformaci, a hrozí ukončením výroby v roce 2026. Město zvažuje postavit vlastní plynový zdroj. Pro lokalitu není přidělena žádná dotační podpora (jen jedna nepodpořená žádost na plynovou kogeneraci o výkonu 39 MWe). Další vývoj je nejasný. '
+  owner: Sev.en
+  num_households: 19 898
+  munis_covered: Kladno
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 1.938425
+  - 1.832224
+  - 1.749714
+  - 1.744353
+  - 1.890018
+  - 1.772349
+  - 1.382063
+  emissions_latest: 1,4
+  share_households: 64 %
+  fuels_secondary_today:
+  - Biomasa
+  - TAP
+- name: ENERGETIKA TŘINEC, a.s.
+  status: Odchod od uhlí do roku 2027
+  notes: V rámci dekarbonizace bude stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu), následovat má výstavba horkovodu také do Českého Těšína.
+  owner: Moravia Steel
+  num_households: 8 937
+  munis_covered: Třinec
+  fuels_main_today:
+  - Hutní plyn
+  - Hnědé uhlí
+  - Černé uhlí
+  emissions_mtco2eq:
+  - 1.577655
+  - 1.571869
+  - 1.545462
+  - 1.507125
+  - 1.540047
+  - 1.418581
+  - 1.337644
+  emissions_latest: 1,3
+  share_households: 60 %
+  fuels_main_future:
+  - Hutní plyn
+  - Zemní plyn
+  other_heating: Třinecké železárny
+- name: Elektrárna Mělník a další zdroje pro Prahu
+  status: Odchod od uhlí do roku 2030
+  notes: V lokalitě Mělník má do roku 2029 vzniknout první blok na zemní plyn s paroplynovým cyklem (280 MWe, s dotací z ModFondu), do roku 2030 pak i druhý větší blok s výkonem 650 MWe (oba mají provozní podporu). Kromě toho má už do roku 2028 vzniknout nová spalovna odpadu (s dotací z ModFondu), zdroje doplní záložní plynová kotelna. V Praze by do roku 2030 mohla vzniknout velká tepelná čerpadla využívající odpadní teplo z čistírny odpadních vod.
+  owner: ČEZ, Veolia, Praha
+  num_households: 313 329
+  munis_covered: Mělník, Praha, Neratovice, Horní Počaply
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 2.768246
+  - 2.567973
+  - 2.282221
+  - 2.322149
+  - 2.414732
+  - 1.980322
+  - 1.796159
+  emissions_latest: 1,8
+  share_households: 49 %
+  fuels_secondary_today:
+  - Zemní plyn
+  - Komunální odpad
+  fuels_main_future:
+  - Zemní plyn
+  - Komunální odpad
+  - Odpadní teplo
+- name: Sokolovská uhlená - Teplárna a PPC Vřesová
+  status: Problematic
+  notes: Společnost zatím představila jen nejasné plány na transformaci. Nemá žádné dotace.
+  owner: SUAS
+  num_households: 15 388
+  munis_covered: Karlovy Vary, Chodov, Nové Sedlo, Nejdek, Vintířov, Nová Role
+  fuels_main_today:
+  - Hnědé uhlí
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 4.104374
+  - 3.875256
+  - 3.264758
+  - 2.237283
+  - 1.795724
+  - 1.243214
+  - 0.807781
+  emissions_latest: 0,81
+  share_households: 54 %
+  fuels_main_future:
+  - Biomasa
+  - Zemní plyn
+- name: Elektrárny Opatovice - Elektrárna Opatovice
+  status: Odchod od uhlí do roku 2029
+  notes: Uhelné bloky mají nahradit až 4 nové plynové zdroje (s paroplynovým cyklem) a dále nová spalovna odpadu (všechno podpořeno z ModFondu). Zvažují se i zdroje na biomasu.
+  owner: EPH
+  num_households: 60 126
+  munis_covered: Pardubice, Hradec Králové, Lázně Bohdaneč, Opatovice nad Labem, Chrudim, Čeperka, Rybitví
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 1.919466
+  - 1.405208
+  - 1.455373
+  - 1.691752
+  - 1.466281
+  - 0.953248
+  - 0.791452
+  emissions_latest: 0,79
+  share_households: 62 %
+  fuels_main_future:
+  - Zemní plyn
+  - Komunální odpad
+  fuels_secondary_future:
+  - Biomasa
+- name: Elektrárna Třebovice
+  status: Odchod od uhlí do roku 2030
+  notes: Elektrárna Třebovice získala provozní podporu na plynové kogenerační zdroje o celkovém výkonu 174 MWe. V uplynulých letech kvůli přechodu na zemní plyn chystala přivedení vysokotlakého plynového potrbubí do hlavního areálu. Kromě zemního plynu se zvažují i další zdroje, ale zatím pro to nejsou konkrétní plány.
+  owner: Veolia
+  num_households: 81 380
+  munis_covered: Hošťálkovice, Hrabová, Krásné Pole, Lhotka, Mariánské Hory a Hulváky, Martinov, Michálkovice, Nová Bělá, Nová Ves, Petřkovice, Plesná, Polanka nad Odrou, Proskovice, Pustkovec, Radvanice a Bartovice, Stará Bělá, Svinov, Třebovice, Slezská Ostrava, Ostrava-Jih, Poruba
+  fuels_main_today:
+  - Černé uhlí
+  emissions_mtco2eq:
+  - 0.852457
+  - 0.735635
+  - 0.753496
+  - 0.805885
+  - 0.722522
+  - 0.662714
+  - 0.650379
+  emissions_latest: 0,65
+  share_households: 73 %
+  fuels_secondary_today:
+  - Zemní plyn
+  fuels_main_future:
+  - Zemní plyn
+- name: ČEZ - Elektrárna Dětmarovice
+  status: Odchod od uhlí dokončen
+  notes: 'Elektrárna na černé uhlí odstavena ke konci topné sezóny na jaře 2025. Dodávky tepla zatím provizorně zajišťuje záložní a špičková 18MWt plynová kotelna. Do roku 2026 mají být hotové další účinnější zdroje: 8MWt biomasová kotelna, dvě 12MWe kogenerační jednotky (oboje podpořeno z ModFondu, kogenerační jednotky také mají provozní podporu). Kromě toho se plánuje druhá záložní a špičková plynová kotelna o výkonu 3x9 MWt.'
+  owner: ČEZ
+  num_households: 14 319
+  munis_covered: Bohumín, Orlová
+  fuels_main_today:
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 1.256488
+  - 0.518667
+  - 0.376214
+  - 1.165576
+  - 1.072022
+  - 0.75407
+  - 0.585532
+  emissions_latest: 0,59
+  share_households: 66 %
+  fuels_main_future:
+  - Zemní plyn
+  - Biomasa
+- name: ORLEN UNIPETROL -  Energoblok EJ
+  status: Odchod od uhlí do roku 2027
+  notes: 'Do konce roku 2027 mají být hotové nové plynové kotle, které nahradí uhelné kotle ve stávajícím bloku T700. Dále se předpokládá výstavba nového bloku T600 s paroplynovým cyklem. '
+  owner: Orlen
+  num_households: '0'
+  munis_covered: ''
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 0.82661
+  - 0.751603
+  - 0.644524
+  - 0.838445
+  - 0.850651
+  - 0.746295
+  - 0.572674
+  emissions_latest: 0,57
+  fuels_main_future:
+  - Zemní plyn
+  other_heating: chemický areál Orlenu v Litvínově-Záluží
+- name: Elektrárna Tisová
+  status: Problematic
+  notes: Společnost zatím pro Tisovou nepředstavila jasné plány na transformaci. Nemá na obměnu hlavních zdrojů žádné dotace.
+  owner: SUAS
+  num_households: 11 712
+  munis_covered: Sokolov, Svatava, Březová, Bukovany, Habartov, Citice
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 1.233258
+  - 0.609484
+  - 0.415771
+  - 0.763411
+  - 1.098962
+  - 0.888234
+  - 0.492137
+  emissions_latest: 0,49
+  share_households: 75 %
+- name: ČEZ - Teplárna Trmice
+  status: Odchod od uhlí do roku 2029
+  notes: V Trmicích se staví nový kotel na biomasu (podpořeno z ModFondu) a dva bloky na zemní plyn (s paroplynovým cyklem).
+  owner: ČEZ
+  num_households: 28 066
+  munis_covered: Trmice, Ústí nad Labem-město, Ústí nad Labem-Neštěmice, Ústí nad Labem-Severní Terasa
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 0.551542
+  - 0.44925
+  - 0.429087
+  - 0.474569
+  - 0.630317
+  - 0.461891
+  - 0.386018
+  emissions_latest: 0,39
+  share_households: 74 %
+  fuels_secondary_today:
+  - Zemní plyn
+  fuels_main_future:
+  - Zemní plyn
+  - Biomasa
+- name: ŠKO-ENERGO Teplárna Mladá Boleslav
+  status: Odchod od uhlí do roku 2027
+  notes: Kotle na uhlí mají v teplárně nahradit kotle na biomasu (podpořeno z ModFondu).
+  owner: ŠKODA
+  num_households: 13 939
+  munis_covered: Mladá Boleslav, Kosmonosy, Řepov
+  fuels_main_today:
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 0.365504
+  - 0.363212
+  - 0.379193
+  - 0.37869
+  - 0.414736
+  - 0.360807
+  - 0.356704
+  emissions_latest: 0,36
+  share_households: 62 %
+  fuels_secondary_today:
+  - Biomasa
+  - Zemní plyn
+  fuels_main_future:
+  - Biomasa
+  fuels_secondary_future:
+  - Zemní plyn
+  other_heating: dále vytápí areál automobilky Škoda Auto
+- name: United Energy - Teplárna Komořany
+  status: Odchod od uhlí do roku 2030
+  notes: Stále primárně uhelná teplárna, s využitím biomasy v jednom přestavěném kotli. Má v plánu výstavbu velké spalovny komunálního odpadu (do roku 2027, podpořeno z ModFondu) a dvou paroplynových bloků (podpořeno z ModFondu).
+  owner: EPH
+  num_households: 35 873
+  munis_covered: Most, Litvínov, Meziboří
+  fuels_main_today:
+  - Hnědé uhlí
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.983065
+  - 0.621043
+  - 0.590896
+  - 0.826466
+  - 0.922607
+  - 0.511891
+  - 0.317227
+  emissions_latest: 0,32
+  share_households: 83 %
+  fuels_main_future:
+  - Zemní plyn
+  - Komunální odpad
+  - Biomasa
+- name: TAMERO INVEST - Teplárna Kralupy
+  status: Odchod od uhlí dokončen
+  notes: Průmyslová teplárna spalující už dlouho primárně zemní plyn. Kromě toho spaluje další plyny z chemické výroby (acetylenový plyn, topný plyn z FCC).
+  owner: TAMERO
+  num_households: 4 554
+  munis_covered: Kralupy nad Vltavou, Chvatěruby
+  fuels_main_today:
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.401632
+  - 0.403742
+  - 0.397481
+  - 0.429603
+  - 0.404816
+  - 0.325753
+  - 0.315795
+  emissions_latest: 0,32
+  share_households: 54 %
+  other_heating: Teplárna zásobuje teplem hlavně tamní Areál chemických výrob Kralupy, kde se nacházejí provozy produkující syntetický kaučuk, plastické polystyrenové hmoty a zpracovávající ropu (pro Synthos i Orlen)
+- name: Plzeňská teplárenská
+  status: Odchod od uhlí do roku 2028
+  notes: 'Postupný odklon od uhlí už probíhá delší dobu: čistě biomasový kotel kolaudován 2010, spalovna odpadu kolaudována 2019, v roce 2022 přestavěn uhelný kotel K6 na spalování až 80 % biomasy. Teplárna plánuje odejít od uhlí cca do roku 2028 – postavit dva nové paroplynové zdroje (podpořeno ModFond, jeden z nich s provozní podporou) a kotel K6 upravit na 100% biomasu.'
+  owner: Plzeň
+  num_households: 49 919
+  munis_covered: Plzeň
+  fuels_main_today:
+  - Hnědé uhlí
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.815227
+  - 0.779595
+  - 0.764685
+  - 0.759883
+  - 0.805588
+  - 0.58112
+  - 0.386702
+  emissions_latest: 0,39
+  share_households: 61 %
+  fuels_secondary_today:
+  - Komunální odpad
+  fuels_main_future:
+  - Zemní plyn
+  - Biomasa
+  fuels_secondary_future:
+  - Komunální odpad
+- name: ČEZ, a. s. - Elektrárna Poříčí
+  status: Odchod od uhlí do roku 2029
+  notes: Elektrárna plánuje vybudovat nové kotle na biomasu (podpořeno z ModFondu) a záložní a špičkovací plynové kotle. V září 2025 bylo zastaveno posuzování EIA (na žádost ČEZ).
+  owner: ČEZ
+  num_households: 11 203
+  munis_covered: Trutnov, Mladé Buky, Svoboda nad Úpou, Janské Lázně, Úpice, Horní Maršov, Maršov u Úpice, Radvanice, Suchovršice
+  fuels_main_today:
+  - Hnědé uhlí
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.531055
+  - 0.45405
+  - 0.338131
+  - 0.343541
+  - 0.458072
+  - 0.414723
+  - 0.264827
+  emissions_latest: 0,26
+  share_households: 59 %
+  fuels_main_future:
+  - Biomasa
+  - Zemní plyn
+- name: Teplárna Olomouc
+  status: Odchod od uhlí do roku 2028
+  notes: V roce 2023 byl jeden uhelný kotel přestavěn na zemní plyn (podpořeno ModFondem), stejně jako 2 menší mazutové kotle. Dále byla rekonstruována část rozvodů (z parních do horkovodních). Druhý a poslední uhelný kotel se od roku 2024 používá jen jako záložní. Je v plánu ho přestavět na multipalivový kotel (TAP a biomasa, také s podporou ModFondu). Kromě toho teplárna plánuje postavit další plynový zdroj (s provozní podporou i podporou z ModFondu).
+  owner: Veolia
+  num_households: 27 502
+  munis_covered: Olomouc
+  fuels_main_today:
+  - Zemní plyn
+  - Biomasa
+  - Hnědé uhlí
+  emissions_mtco2eq:
+  - 0.313289
+  - 0.297657
+  - 0.295549
+  - 0.310454
+  - 0.310809
+  - 0.276824
+  - 0.247026
+  emissions_latest: 0,25
+  share_households: 56 %
+  fuels_main_future:
+  - Zemní plyn
+  - Biomasa
+  - TAP
+- name: DEZA - teplárna závodu
+  status: Odchod od uhlí dokončen
+  notes: Kromě zemníhu plynu spaluje také mazut a různé vedlejší produkty vlastní chemické výroby.
+  owner: Agrofert
+  num_households: 5 426
+  munis_covered: Valašské Meziříčí
+  fuels_main_today:
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.308976
+  - 0.295011
+  - 0.28931
+  - 0.287896
+  - 0.254285
+  - 0.252399
+  - 0.229491
+  emissions_latest: 0,23
+  share_households: 57 %
+  fuels_secondary_today:
+  - TTO
+  other_heating: DEZA, Masný průmysl Krásno, Mlékárna Valašské Meziříčí
+- name: Teplárna Otrokovice - Teplárna
+  status: Problematic
+  notes: Teplárna má stále v provozu jeden kotel na uhlí. Druhý kotel přestavěla na 100% spalování biomasy (podpořeno z ModFondu a také provozní podporou). Další teplo vyrábí ze zemního plynu a využitím průmyslového odpadního tepla. Nejsou jasné plány na úplný odchod od uhlí.
+  owner: Lama Energy Group
+  num_households: 6 799
+  munis_covered: Otrokovice, Napajedla
+  fuels_main_today:
+  - Hnědé uhlí
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.365686
+  - 0.328663
+  - 0.273534
+  - 0.280815
+  - 0.328676
+  - 0.261958
+  - 0.182262
+  emissions_latest: 0,18
+  share_households: 63 %
+  fuels_secondary_today:
+  - Zemní plyn
+  - Odpadní teplo
+  other_heating: Continental Barum a další průmyslové podniky.
+- name: Teplárna České Budějovice
+  status: Odchod od uhlí do roku 2029
+  notes: Transformace uhelné teplárny probíhá v plném proudu. V roce 2023 byl dokončen horkovod z Temelína, dále byl jeden kotel na uhlí přebudován na spalování 100% biomasy. Pro úplný odchod od uhlí se čeká do roku 2029 na plný provoz nové spalovny komunálmího odpadu Vráto (podpořenou z ModFondu, v červenci 2025 získala stavební povolení). Skladbu zdrojů doplní nový plynový zdroj (získal provozní podporu).
+  owner: České Budějovice
+  num_households: 33 390
+  munis_covered: České Budějovice
+  fuels_main_today:
+  - Biomasa
+  - Hnědé uhlí
+  - Jaderné teplo
+  emissions_mtco2eq:
+  - 0.296139
+  - 0.305262
+  - 0.29651
+  - 0.306234
+  - 0.284055
+  - 0.22734
+  - 0.169721
+  emissions_latest: 0,17
+  share_households: 40 %
+  fuels_secondary_today:
+  - Zemní plyn
+  fuels_main_future:
+  - Biomasa
+  - Jaderné teplo
+  - Komunální odpad
+  fuels_secondary_future:
+  - Zemní plyn
+- name: Teplárny Brno
+  status: Odchod od uhlí dokončen
+  notes: V Teplárnách Brno se uhlí přestalo spalovat v roce 1996. Většinu tepla se vyrábí ze zemního plynu a komunálního odpadu, biomasa tvoří doplňkové palivo. Další kotel na biomasu se staví (dotace ModFond), navíc se chytá horkovod z Dukovan.
+  owner: Brno
+  num_households: 94 005
+  munis_covered: Brno
+  fuels_main_today:
+  - Zemní plyn
+  - Komunální odpad
+  emissions_mtco2eq:
+  - 0.236743
+  - 0.240893
+  - 0.229683
+  - 0.255039
+  - 0.227451
+  - 0.177133
+  - 0.182314
+  emissions_latest: 0,18
+  share_households: 51 %
+  fuels_secondary_today:
+  - Biomasa
+  fuels_main_future:
+  - Jaderné teplo
+  - Komunální odpad
+  fuels_secondary_future:
+  - Biomasa
+  - Zemní plyn
+- name: Teplárna Zlín s.r.o.
+  status: Problematic
+  notes: Teplárna provozuje dva uhelné kotle, ve kterých se v rostoucím objemu spoluspaluje biomasa (do 20 % paliva) a další kotle na zemní plyn. V roce 2021 získala dotaci z programu HEAT na výstavbu nového plynového kotle, který by nahradil jeden z uhelných kotlů, tuto stavbu ovšem zatím nezrealizovala. Kromě toho zvažuje spalování TAP. Datum odchodu od uhlí není zřejmý.
+  owner: Sev.en
+  num_households: 18 473
+  munis_covered: Zlín
+  fuels_main_today:
+  - Hnědé uhlí
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.255259
+  - 0.245566
+  - 0.237005
+  - 0.237652
+  - 0.251768
+  - 0.199543
+  - 0.149947
+  emissions_latest: 0,15
+  share_households: 56 %
+  fuels_secondary_today:
+  - Biomasa
+- name: ENERGY U/L, a.s., kotelna
+  status: Odchod od uhlí dokončen
+  notes: Původní provozovatel soustavy nebyl schopen transformace od uhlí. Po dohodě s městem zásobování teplem převzal ČEZ, v roce 2025 zprovoznil novou plynovou kotelnu.
+  owner: Elrond Holding CZ
+  num_households: 3 238
+  munis_covered: Ústí nad Labem-Střekov
+  fuels_main_today:
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.128884
+  - 0.126859
+  - 0.091218
+  - 0.086074
+  - 0.114145
+  - 0.103888
+  - 0.100988
+  emissions_latest: 0,1
+  share_households: 53 %
+- name: Veolia Energie - Teplárna Přívoz
+  status: Odchod od uhlí dokončen
+  notes: Odebírá koksárenský plyn z nedaleké koksovny Svoboda (společnosti OKK Koksovny). Z uhlí přešla teplárna na zemní plyn v roce 2022.
+  owner: Veolia
+  num_households: 14 845
+  munis_covered: Moravská Ostrava a Přívoz
+  fuels_main_today:
+  - Zemní plyn
+  - Koksárenský plyn
+  emissions_mtco2eq:
+  - 0.142082
+  - 0.138082
+  - 0.139342
+  - 0.141558
+  - 0.117838
+  - 0.096185
+  - 0.081943
+  emissions_latest: 0,082
+  share_households: 77 %
+- name: Veolia Energie - Teplárna Frýdek-Místek
+  status: Odchod od uhlí dokončen
+  notes: V roce 2024 nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn.
+  owner: Veolia
+  num_households: 17 846
+  munis_covered: Frýdek-Místek
+  fuels_main_today:
+  - Biomasa
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.049603
+  - 0.045806
+  - 0.04816
+  - 0.051645
+  - 0.047875
+  - 0.040456
+  - 0.035214
+  emissions_latest: 0,035
+  share_households: 72 %
+- name: Teplárna Karviná a Teplárna ČSA
+  status: Odchod od uhlí do roku 2028
+  notes: Bývalá teplárna dolu ČSM přestavena na zemní plyn, uhelná teplárna Karviná se plánuje přestavět na multipalivový kotel (TAP a biomasa), dále jsou v plánu další plynové kotle.
+  owner: Veolia
+  num_households: 49 109
+  munis_covered: Havířov, Karviná
+  fuels_main_today:
+  - Hnědé uhlí
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.318732
+  - 0.322194
+  - 0.314228
+  - 0.308783
+  - 0.289569
+  - 0.307237
+  - 0.026827
+  emissions_latest: 0,027
+  share_households: 86 %
+  fuels_main_future:
+  - TAP
+  - Biomasa
+  - Zemní plyn
+- name: Teplárna Liberec, a. s.
+  status: Odchod od uhlí dokončen
+  notes: Od roku 1999 pochází většina výroby tepla ze spalovny odpadu. Dalším zdrojem jsou zdroje na zemní plyn, mazut dnes tvoří jen asi 2 % palivového mixu. Mezi lety 2018 a 2025 probíhá postupná rekonstrukce tepelné sítě (výměna parovodů za horkovody), což výrazně snižuje tepelné ztráty. Teplárna má v plánu také vybudovat bioplynovou stanici na zpracování organického odpadu z Liberecka (bez konkrétního termínu).
+  owner: ENETIQA
+  num_households: 13 571
+  munis_covered: Liberec
+  fuels_main_today:
+  - Komunální odpad
+  - Zemní plyn
+  emissions_mtco2eq:
+  - 0.01913
+  - 0.017666
+  - 0.014786
+  - 0.020328
+  - 0.024162
+  - 0.022019
+  - 0.014735
+  emissions_latest: 0,015
+  share_households: 28 %
+  fuels_secondary_today:
+  - TTO
+  fuels_main_future:
+  - Komunální odpad
+  - Zemní plyn
+  fuels_secondary_future:
+  - Bioplyn
+- name: Veolia Energie - Teplárna Přerov
+  status: Odchod od uhlí dokončen
+  notes: Od roku 2022 se zde místo uhlí spaluje odpad (a z části také biomasa). Mezi lety 2018 – 2021 také proběhla rekonstrukce tepelné sítě s 15km nových horkovodů.
+  owner: Veolia
+  num_households: 13 655
+  munis_covered: Přerov
+  fuels_main_today:
+  - TAP
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.234288
+  - 0.216523
+  - 0.172226
+  - 0.148107
+  - 0.069487
+  - 0.022515
+  - 0.013954
+  emissions_latest: 0,014
+  share_households: 71 %
+- name: C-energy Planá
+  status: Odchod od uhlí dokončen
+  notes: Inovativní teplárna využívající také FVE, elektrokotel s akumulací či bateriové úložiště. Od uhlí odešla už v roce 2022, cca 85 % palivového mixu tvoří biomasa, dále má plynové kogenerační jednotky a špičkovací plynové kotle. Dále staví spalovnu odpadu pro Táborsko (měla by být hotová do roku 2028).
+  owner: C-energy Group
+  num_households: 10 970
+  munis_covered: Planá nad Lužnicí, Sezimovo Ústí, Tábor
+  fuels_main_today:
+  - Biomasa
+  emissions_mtco2eq:
+  - 0.117088
+  - 0.10612
+  - 0.126912
+  - 0.108
+  - 0.048845
+  - 0.0516
+  - 0.014925
+  emissions_latest: 0,015
+  share_households: 54 %
+  fuels_secondary_today:
+  - Zemní plyn
+  fuels_main_future:
+  - Biomasa
+  fuels_secondary_future:
+  - Komunální odpad
+  - Zemní plyn
