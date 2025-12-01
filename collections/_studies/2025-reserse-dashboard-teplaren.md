@@ -34,8 +34,8 @@ intro: |
         </h5>
         <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;">
             <div class="card-body">
-                {{ facility.status }}<br/>
-                {{ facility.notes }}
+                <p style="font-weight: bold; color: #0085b6;"><i class="fas fa-circle-check"></i> {{ facility.status }}</p>
+                <p>{{ facility.notes }}</p>
             </div>
             <div class="card-body">
                 <dl>
@@ -51,9 +51,19 @@ intro: |
             <div class="card-body">
                 <dl>
                     <dt>V současnosti využívá</dt>
-                    <dd>{{ facility.fuels_main_today }}{% if facility.fuels_secondary_today %} + {{ facility.fuels_secondary_today }}{% endif %}</dd>
+                    <dd>
+                        {% for fuel in facility.fuels_main_today %}
+                        <span class="badge badge-pill badge-primary">{{ fuel }}</span>
+                        {% endfor %}
+                        {% if facility.fuels_secondary_today %} + {% for fuel in facility.fuels_secondary_today %} <span class="badge badge-pill badge-secondary">{{ fuel }}</span>{% endfor %}{% endif %}
+                    </dd>
                     <dt>Plánuje využívat</dt>
-                    <dd>{{ facility.fuels_main_future }}{% if facility.fuels_secondary_future %} + {{ facility.fuels_secondary_future }}{% endif %}</dd>
+                    <dd>
+                        {% for fuel in facility.fuels_main_future %}
+                        <span class="badge badge-pill badge-success">{{ fuel }}</span>
+                        {% endfor %}
+                        {% if facility.fuels_secondary_future %} + {% for fuel in facility.fuels_secondary_future %} <span class="badge badge-pill badge-secondary">{{ fuel }}</span>{% endfor %}{% endif %}
+                    </dd>
                 </dl>
             </div>
             <div class="card-body">
