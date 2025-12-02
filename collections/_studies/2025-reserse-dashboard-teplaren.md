@@ -66,8 +66,26 @@ intro: |
                     </dd>
                 </dl>
             </div>
-            <div class="card-body">
-                Dotace z ModFondu
+            <div class="card-body small">
+                {% unless facility.mf_subsidies or facility.chp_subsidies %}
+                <p>Žádné dotace</p>
+                {% endunless %}
+                {% if facility.mf_subsidies %}
+                <p>Dotace z ModFondu:</p>
+                <ul>
+                    {% for subsidy in facility.mf_subsidies %}
+                    <li>{{ subsidy.name }}<br><b>{{ subsidy.amount }} mil. Kč</b></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if facility.chp_subsidies %}
+                <p>Provozní podpora KVET</p>
+                <ul>
+                    {% for subsidy in facility.chp_subsidies %}
+                    <li>({{ subsidy.status }}) {{ subsidy.power }} MWe – {{ subsidy.fuel }} (od {{ subsisdy.since }})</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
         </div>
     </div>
