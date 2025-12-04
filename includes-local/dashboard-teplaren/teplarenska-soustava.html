@@ -1,0 +1,104 @@
+{% assign facility = include.facility %}
+{% capture status-icon-class -%}
+    {%- case facility.status -%}
+        {%- when "done" -%} fa-circle-check
+        {%- when "in-progress" -%} fa-circle-question
+        {%- when "problematic" -%} fa-triangle-exclamation
+    {%- endcase -%}
+{%- endcapture %}
+<div class="card status-{{ facility.status }}" id="{{ facility.name | slugify: "latin" }}">
+    <div class="card-header">
+        <div>
+            <h3>{{ facility.name }}</h3>
+            <h4>{{ facility.name_details }}</h4>
+        </div>
+        <span class="owner">{{ facility.owner }}</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <p class="status-line">
+                <i class="status-icon fas {{ status-icon-class }}"></i> {{ facility.status_text }}
+            </p>
+            <p class="notes">{{ facility.notes }}</p>
+            <p class="details-toggle" role="presentation">
+                <button type="button" class="btn btn-link not-detail" onclick="$(this).closest('.card').addClass('details-shown');"><i class="fas fa-angle-down"></i> Více informací</button>
+                <button type="button" class="btn btn-link detail" onclick="$(this).closest('.card').removeClass('details-shown');"><i class="fas fa-angle-up"></i> Méně informací</button>
+            </p>
+        </div>
+        <dl class="stats">
+            <dt class="households">Vytápěné domácnosti</dt>
+            <dd class="households-number{% if facility.num_households %} zero{% endif %}">
+                {{ facility.num_households | round_signif: 2 | format_number }}
+            </dd>
+            {% if facility.share_households %}
+            <dd class="households-share detail"><span class="figure">{{ facility.share_households }} %</span> domácností</dd>
+            {% endif %}
+            {% if facility.munis_supplied %}
+            <dd class="munis-supplied detail">{{ facility.munis_supplied }}</dd>
+            {% endif %}
+            {% if facility.other_heating %}
+            <dd class="other-heating">+ {{ facility.other_heating }}</dd>
+            {% endif %}
+            {% if facility.x and facility.y %}
+            <dt class="map detail">
+                <img src="/assets-local/figures/{{ page.slug }}/mapa-cr.svg" alt="Obrys mapy Česka">
+                <div class="locator" style="left: {{ facility.x }}%; top: {{ facility.y }}%;"></div>
+            </dt>
+            {% endif %}
+            <dt class="emissions">Emise skleníkových plynů</dt>
+            <dd class="emissions"><b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b> Mt CO<sub>2</sub>eq</dd>
+        </dl>
+        <dl class="fuels">
+            {% if facility.fuels_main_today %}
+            <dt>V současnosti využívá</dt>
+            <dd class="fuels-today">
+                {% for fuel in facility.fuels_main_today %}
+                {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
+                {% endfor %}
+                {% if facility.fuels_secondary_today %} + {% for fuel in facility.fuels_secondary_today %}
+                    {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
+                {% endfor %}{% endif %}
+            </dd>
+            {% endif %}
+            {% if facility.fuels_main_future %}
+            <dt>Plánuje využívat</dt>
+            <dd class="fuels-future">
+                {% for fuel in facility.fuels_main_future %}
+                {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
+                {% endfor %}
+                {% if facility.fuels_secondary_future %} + {% for fuel in facility.fuels_secondary_future %}
+                    {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
+                {% endfor %}{% endif %}
+            </dd>
+            {% endif %}
+        </dl>
+        <dl class="subsidies small">
+            {% if facility.mf_subsidies %}
+            <dt>Přidělené dotace z Modernizačního fondu</dt>
+            <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
+            {% if facility.chp_subsidies %}
+            <dd class="not-detail">+ dotační podpora KVET</dd>
+            {% endif %}
+            {% for subsidy in facility.mf_subsidies %}
+            <dd class="detail">{{ subsidy.name }}<br><b>{{ subsidy.amount | format_number }} mil. Kč</b></dd>
+            {% endfor %}
+            </ul>
+            {% else %}
+            <dt>Žádné dotace z Modernizačního fondu</dt>
+            <dd class="mf-total"><b class="zero">0</b> Kč</dd>
+            {% if facility.chp_subsidies %}
+            <dd class="not-detail">+ dotační podpora KVET</dd>
+            {% endif %}
+            {% endif %}
+            {% if facility.chp_subsidies %}
+            <dt class="chp detail">Provozní podpora KVET</dt>
+            {% for subsidy in facility.chp_subsidies %}
+            <dd class="chp detail status-{{ subsidy.status }}">
+                <i class="far {% case subsidy.status %}{% when "accepted" %}fa-circle-check{% when "rejected" %}fa-circle-xmark{% endcase %}"></i>
+                {{ subsidy.power }} MWe – {{ subsidy.fuel }} (od {{ subsidy.since }})
+            </dd>
+            {% endfor %}
+            {% endif %}
+        </dl>
+    </div>
+</div>
