@@ -26,26 +26,46 @@ intro: |
 <div id="tabulka-reserse-teplaren">
     {% for facility in facilities %}
     <div
-        class="card"
+        class="card status-{{ facility.status }}"
         data-name="{{ facility.name }}"
     >
-        <h5 class="card-header" id="{{ facility.name | slugify: "latin" }}">
-            {{ facility.name }}<span class="owner">{{ facility.owner }}</span>
-        </h5>
+        <div class="card-header">
+            <div>
+                <h3 id="{{ facility.name | slugify: "latin" }}">{{ facility.name }}</h3>
+                <h4>{{ facility.name_details }}</h4>
+            </div>
+            <span class="owner">{{ facility.owner }}</span>
+        </div>
         <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;">
             <div class="card-body">
-                <p style="font-weight: bold; color: #0085b6;"><i class="fas fa-circle-check"></i> {{ facility.status }}</p>
+                <p class="status-line">
+                    <i class="status-icon fas {% case facility.status %}{% when "done" %}fa-circle-check{% when "in-progress" %}fa-circle-question{% when "problematic" %}fa-triangle-exclamation{% endcase %}"></i> {{ facility.status_text }}
+                </p>
                 <p>{{ facility.notes }}</p>
             </div>
             <div class="card-body">
                 <dl>
                     <dt>Vytápěné domácnosti</dt>
-                    <dd>{{ facility.num_households }}</dd>
+                    <dd class="households-number{% if facility.num_households %} zero{% endif %}">
+                        {{ facility.num_households | round_signif: 2 | format_number }}
+                    </dd>
+                    {% if facility.share_households %}
+                    <dd class="households-share"><span class="figure">{{ facility.share_households }} %</span> domácností</dd>
+                    {% endif %}
+                    {% if facility.munis_supplied %}
+                    <dd class="munis-supplied">{{ facility.munis_supplied }}</dd>
+                    {% endif %}
+                    {% if facility.x and facility.y %}
+                    <dt class="map">
+                        <img src="/assets-local/figures/{{ page.slug }}/mapa-cr.svg">
+                        <div class="locator" style="left: {{ facility.x }}%; top: {{ facility.y }}%;"></div>
+                    </dt>
+                    {% endif %}
                     {% if facility.other_heating %}
-                    <dd>{{ facility.other_heating }}</dd>
+                    <dd class="other-heating">+ {{ facility.other_heating }}</dd>
                     {% endif %}
                     <dt>Emise skleníkových plynů</dt>
-                    <dd>{{ facility.emissions_latest }} Mt CO<sub>2</sub>eq</dd>
+                    <dd>{{ facility.emissions_latest | round_signif: 2 | format_number }} Mt CO<sub>2</sub>eq</dd>
                 </dl>
             </div>
             <div class="card-body">
@@ -74,7 +94,7 @@ intro: |
                 <p>Dotace z ModFondu:</p>
                 <ul>
                     {% for subsidy in facility.mf_subsidies %}
-                    <li>{{ subsidy.name }}<br><b>{{ subsidy.amount }} mil. Kč</b></li>
+                    <li>{{ subsidy.name }}<br><b>{{ subsidy.amount | format_number }} mil. Kč</b></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -82,7 +102,7 @@ intro: |
                 <p>Provozní podpora KVET</p>
                 <ul>
                     {% for subsidy in facility.chp_subsidies %}
-                    <li>({{ subsidy.status }}) {{ subsidy.power }} MWe – {{ subsidy.fuel }} (od {{ subsisdy.since }})</li>
+                    <li>({{ subsidy.status }}) {{ subsidy.power }} MWe – {{ subsidy.fuel }} (od {{ subsidy.since }})</li>
                     {% endfor %}
                 </ul>
                 {% endif %}
