@@ -518,20 +518,69 @@ $c-callout-text: #373633;
         padding: .5rem .75rem;
         border: 3px solid #d9d9d9;
         border-radius: .75rem;
+        --status-color: grey;
     }
 
     .card-header {
         display: flex;
         background: none;
         border-bottom: 0;
-        font-size: 1.6rem;
-        color: #3e3e4d;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #3e3e4d;
+            margin-bottom: .4rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #999999;
+        }
 
         .owner {
             margin-left: auto;
             font-size: 1rem;
             font-weight: normal;
             color: #b6b6b6;
+        }
+    }
+
+    .status-line {
+        font-weight: bold;
+        color: var(--status-color);
+    }
+
+    .status-icon {
+        margin-right: .3em;
+        font-size: 1.3em;
+        vertical-align: -.1em;
+    }
+
+    .status-done {
+        --status-color: #0085b6;
+    }
+
+    .status-in-progress {
+        --status-color: #ffbc5b;
+    }
+
+    .status-problematic {
+        --status-color: #bb2719;
+    }
+
+    .map {
+        display: inline-block;
+        position: relative;
+
+        .locator {
+            position: absolute;
+            width: .7rem;
+            height: .7rem;
+            border-radius: 100%;
+            background: var(--status-color);
         }
     }
 }
