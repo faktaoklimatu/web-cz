@@ -1,0 +1,20 @@
+{% capture fuel-text -%}
+    {%- case include.fuel-code -%}
+        {%- when "alt" -%} zásobování odjinud
+        {%- when "biogas" -%} bioplyn
+        {%- when "biomass" -%} biomasa
+        {%- when "cokegas" -%} koksárenský plyn
+        {%- when "hardcoal" -%} černé uhlí
+        {%- when "hho" -%} TTO
+        {%- when "lho" -%} LTO
+        {%- when "lignite" -%} hnědé uhlí
+        {%- when "metgas" -%} hutní plyn
+        {%- when "msw" -%} komunální odpad
+        {%- when "natgas" -%} zemní plyn
+        {%- when "nuclear" -%} jaderné teplo
+        {%- when "srf" -%} TAP
+        {%- when "syngas" -%} energoplyn
+        {%- when "wasteheat" -%} odpadní teplo
+    {%- endcase -%}
+{%- endcapture %}
+<span class="badge badge-pill badge-fuel fuel-{{ include.fuel-code }}{% if include.secondary %} fuel-secondary{% endif %}">{{ fuel-text }}</span>

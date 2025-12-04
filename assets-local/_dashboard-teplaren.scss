@@ -1,0 +1,222 @@
+$c-teplarny-uhli: #bc2719;
+$c-teplarny-ostatni: #b4b4b4;
+
+#tabulka-dashboard-teplaren {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        padding: .5rem .75rem;
+        border: 3px solid #d9d9d9;
+        border-radius: .75rem;
+        --status-color: grey;
+    }
+
+    .card-header {
+        display: flex;
+        background: none;
+        border-bottom: 0;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #3e3e4d;
+            margin-bottom: .4rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #999999;
+        }
+
+        .owner {
+            margin-left: auto;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #b6b6b6;
+        }
+    }
+
+    .card-body {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .status-line {
+        font-weight: bold;
+        color: var(--status-color);
+    }
+
+    .status-icon {
+        margin-right: .3em;
+        font-size: 1.3em;
+        vertical-align: -.1em;
+    }
+
+    .status-done {
+        --status-color: #0085b6;
+    }
+
+    .status-in-progress {
+        --status-color: #ffbc5b;
+    }
+
+    .status-problematic {
+        --status-color: #bb2719;
+    }
+
+    .notes {
+        position: relative;
+        height: 5em;
+        overflow: hidden;
+    }
+
+    .notes::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4em;
+        /* adjust how much of the fade you want */
+        background: linear-gradient(to bottom, transparent, white);
+        pointer-events: none;
+        /* allows clicking through the overlay */
+    }
+
+    .details-toggle .btn {
+        margin: 0;
+        padding: .375em 0;
+        font-size: .9em;
+        color: inherit;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+
+        i {
+            margin-right: .2em;
+            vertical-align: -.1em;
+        }
+    }
+
+    .map {
+        display: inline-block;
+        position: relative;
+
+        .locator {
+            position: absolute;
+            width: .7rem;
+            height: .7rem;
+            border-radius: 100%;
+            background: var(--status-color);
+        }
+    }
+
+    .badge-fuel {
+        color: white;
+    }
+
+    // Palivo: Zásobování odjinud
+    .fuel-alt {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Bioplyn
+    .fuel-biogas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Biomasa
+    .fuel-biomass {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Koksárenský plyn
+    .fuel-cokegas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Černé uhlí
+    .fuel-hardcoal {
+        background-color: $c-teplarny-uhli;
+    }
+
+    // Palivo: TTO
+    .fuel-hho {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: LTO
+    .fuel-lho {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Hnědé uhlí
+    .fuel-lignite {
+        background-color: $c-teplarny-uhli;
+    }
+
+    // Palivo: Hutní plyn
+    .fuel-metgas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Komunální odpad
+    .fuel-msw {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Zemní plyn
+    .fuel-natgas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Jaderné teplo
+    .fuel-nuclear {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: TAP
+    .fuel-srf {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Energoplyn
+    .fuel-syngas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Odpadní teplo
+    .fuel-wasteheat {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    .fuel-secondary {
+        opacity: .6;
+    }
+
+    .detail {
+        display: none;
+    }
+
+    .details-shown {
+        .detail {
+            display: block;
+        }
+
+        .not-detail {
+            display: none;
+        }
+
+        .notes {
+            height: auto;
+            overflow: visible;
+        }
+
+        .notes::after {
+            display: none;
+        }
+    }
+}
