@@ -1087,7 +1087,7 @@ items:
   notes: 'Do konce roku 2027 mají být vystaveny nové plynové kotle, které nahradí uhelné kotle ve stávajícím bloku T700. Dále se předpokládá výstavba nového bloku T600 s paroplynovým cyklem. '
   owner: Orlen
   num_households: 0
-  munis_supplied: .nan
+  munis_supplied: null
   fuels_main_today:
   - lignite
   emissions_mtco2eq:
