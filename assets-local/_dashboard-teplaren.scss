@@ -70,7 +70,7 @@ $c-teplarny-ostatni: #b4b4b4;
 
     .notes {
         position: relative;
-        height: 5em;
+        max-height: 5em;
         overflow: hidden;
     }
 
@@ -211,7 +211,7 @@ $c-teplarny-ostatni: #b4b4b4;
         }
 
         .notes {
-            height: auto;
+            max-height: initial;
             overflow: visible;
         }
 
