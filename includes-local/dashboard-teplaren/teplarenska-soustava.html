@@ -41,8 +41,10 @@
             {% endif %}
             {% if facility.x and facility.y %}
             <dt class="map detail">
-                <img src="/assets-local/figures/{{ page.slug }}/mapa-cr.svg" alt="Obrys mapy Česka">
-                <div class="locator" style="left: {{ facility.x }}%; top: {{ facility.y }}%;"></div>
+                <div>
+                    <img src="/assets-local/figures/{{ page.slug }}/mapa-cr.svg" alt="Obrys mapy Česka">
+                    <div class="locator" style="left: {{ facility.x }}%; top: {{ facility.y }}%;"></div>
+                </div>
             </dt>
             {% endif %}
             <dt class="emissions">Emise skleníkových plynů</dt>
