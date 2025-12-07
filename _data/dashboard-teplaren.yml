@@ -972,8 +972,8 @@ items:
   share_households: 77
 - name: Valašské Meziříčí
   name_details: DEZA – teplárna závodu
-  x: 53.5
-  y: 57.2
+  x: 80.0
+  y: 53.8
   status: done
   status_text: Bez uhlí
   notes: Teplárna kromě zemníhu plynu spaluje také mazut a různé vedlejší produkty vlastní chemické výroby.
