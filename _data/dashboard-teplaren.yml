@@ -47,15 +47,15 @@ items:
   - power: 650
     since: '12/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 280
     since: '01/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 5
     since: '11/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
 - name: Ostrava
   name_details: Elektrárna Třebovice a Teplárna Přívoz
   x: 83.2
@@ -99,27 +99,27 @@ items:
   - power: 100
     since: '12/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 62
     since: '11/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 12
     since: '12/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 5
     since: '11/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
   - power: 1
     since: '11/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
   - power: 1
     since: '11/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
 - name: Brno
   name_details: Teplárny Brno a SAKO Brno
   x: 61.6
@@ -225,7 +225,7 @@ items:
   - power: 390
     since: '08/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Plzeň
   name_details: Plzeňská teplárenská
   x: 18.0
@@ -266,15 +266,15 @@ items:
   - power: 200
     since: '06/2029'
     fuel: Zemní plyn, biomasa
-    status: rejected
+    status: accepted
   - power: 199
     since: '12/2028'
     fuel: Zemní plyn a biomasa
-    status: accepted
+    status: rejected
   - power: 97
     since: '01/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Karviná
   name_details: Teplárna Karviná a Teplárna ČSA
   x: 87.7
@@ -314,15 +314,15 @@ items:
   - power: 15
     since: '12/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 12
     since: '11/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 12
     since: '11/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Komořany
   name_details: Teplárna Komořany
   x: 20.5
@@ -362,15 +362,15 @@ items:
   - power: 206
     since: '06/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 2
     since: '07/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 2
     since: '08/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: České Budějovice
   name_details: Teplárna České Budějovice
   x: 32.7
@@ -413,7 +413,7 @@ items:
   - power: 10
     since: '12/2030'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Ústí nad Labem
   name_details: Teplárna Trmice a kotel ve Střekově
   x: 26.4
@@ -445,11 +445,11 @@ items:
   - power: 1
     since: '04/2027'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
   - power: 1
     since: '10/2026'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
 - name: Olomouc
   name_details: Teplárna Olomouc
   x: 70.3
@@ -488,7 +488,7 @@ items:
   - power: 15
     since: '12/2029'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Prunéřov
   name_details: Elektrárna Prunéřov
   x: 16.4
@@ -524,7 +524,7 @@ items:
   - power: 50
     since: '03/2028'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Kladno
   name_details: Teplárna Kladno
   x: 28.1
@@ -556,7 +556,7 @@ items:
   - power: 39
     since: '12/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
 - name: Ledvice
   name_details: Elektrárna Ledvice
   x: 23.4
@@ -617,7 +617,7 @@ items:
   - power: 51
     since: '12/2030'
     fuel: Zemní plyn
-    status: accepted
+    status: rejected
 - name: Frýdek-Místek
   name_details: Teplárna Frýdek-Místek
   x: 85.1
@@ -706,7 +706,7 @@ items:
   - power: 24
     since: '03/2027'
     fuel: Zemní plyn
-    status: rejected
+    status: accepted
 - name: Mladá Boleslav
   name_details: ŠKO-ENERGO – Teplárna Mladá Boleslav
   x: 38.9
@@ -945,7 +945,7 @@ items:
   - power: 15
     since: '05/2028'
     fuel: Zemní plyn, biomasa
-    status: rejected
+    status: accepted
 - name: Tušimice
   name_details: Elektrárna Tušimice
   x: 17.3
