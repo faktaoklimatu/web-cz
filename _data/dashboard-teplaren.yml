@@ -1,3 +1,16 @@
+highlights:
+- status: problematic
+  number: 5
+  num_households: 72270
+  ghg_share: 4.22
+- status: in-progress
+  number: 17
+  num_households: 724043
+  ghg_share: 18.11
+- status: done
+  number: 10
+  num_households: 237737
+  ghg_share: 4.45
 items:
 - name: Praha – pravý břeh Vltavy
   name_details: Elektrárna Mělník, ZEVO Malešice a další zdroje
