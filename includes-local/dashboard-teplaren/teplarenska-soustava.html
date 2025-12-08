@@ -1,11 +1,4 @@
 {% assign facility = include.facility %}
-{% capture status-icon-class -%}
-    {%- case facility.status -%}
-        {%- when "done" -%} fa-circle-check
-        {%- when "in-progress" -%} fa-circle-question
-        {%- when "problematic" -%} fa-triangle-exclamation
-    {%- endcase -%}
-{%- endcapture %}
 <div class="card status-{{ facility.status }}" id="{{ facility.name | slugify: "latin" }}">
     <div class="card-header">
         <div>
@@ -17,7 +10,8 @@
     <div class="card-body">
         <div>
             <p class="status-line">
-                <i class="status-icon fas {{ status-icon-class }}"></i> {{ facility.status_text }}
+                {% include includes-local/dashboard-teplaren/status-icon.html status=facility.status %}
+                {{ facility.status_text }}
             </p>
             <p class="notes">{{ facility.notes }}</p>
             <p class="details-toggle" role="presentation">

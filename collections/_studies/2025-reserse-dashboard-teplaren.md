@@ -16,6 +16,29 @@ intro: |
 ---
 
 {% assign facilities = site.data.dashboard-teplaren.items %}
+{% assign highlights = site.data.dashboard-teplaren.highlights %}
+
+<div id="highlights-dashboard-teplaren" class="card-deck mb-4">
+    {% for item in highlights %}
+    <div class="card status-{{ item.status }}">
+        <div class="card-body">
+            <h3>
+                {% case item.status %}
+                {% when "done" %} Odchod od uhlí dokončen
+                {% when "in-progress" %} Odchod od uhlí probíhá
+                {% when "problematic" %} Nejasný odchod od uhlí
+                {% endcase %}
+            </h3>
+            <h4>
+                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
+                <b>{{ item.number }}</b> soustav
+            </h4>
+            <p><b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
+            <p><b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 <ul class="inline-bullet-list" style="font-size: .8rem;">
     {%- for facility in facilities %}

@@ -1,9 +1,61 @@
+$c-teplarny-grey: #999999;
+$c-teplarny-dark-grey: #737373;
+$c-teplarny-light-grey: #b4b4b4;
 $c-teplarny-uhli: #bb2719;
-$c-teplarny-ostatni: #b4b4b4;
+$c-teplarny-ostatni: $c-teplarny-light-grey;
 
 $c-teplarny-done: #0085b6;
 $c-teplarny-in-progress: #ffbc5b;
 $c-teplarny-problematic: #bb2719;
+$c-teplarny-problematic-bg: #fff1ef;
+
+#highlights-dashboard-teplaren {
+    .card {
+        border: 1px solid var(--status-color);
+        border-radius: .6rem;
+        --status-color: grey;
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: var(--status-color);
+        }
+
+        h4 {
+            margin: .2em 0 .2em 0;
+            font-size: 1.7em;
+            font-weight: normal;
+            color: var(--status-color);
+
+            .status-icon {
+                margin-right: .3em;
+                font-size: .85em;
+            }
+        }
+
+        p {
+            margin: 0 0 0 2.4rem;
+            color: $c-teplarny-dark-grey;
+        }
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{$c-teplarny-in-progress};
+    }
+
+    .status-problematic {
+        background: $c-teplarny-problematic-bg;
+        --status-color: #{$c-teplarny-problematic};
+    }
+
+    .card-body {
+        padding: 1rem 1.25rem .75rem;
+    }
+}
 
 #tabulka-dashboard-teplaren {
     display: flex;
@@ -18,12 +70,12 @@ $c-teplarny-problematic: #bb2719;
 
     // Problematic card
 
-    .status-problematic{
-        border: 2px solid var(--status-color);    
-        background-color: #fff1ef;
+    .status-problematic {
+        border: 2px solid var(--status-color);
+        background-color: $c-teplarny-problematic-bg;
 
-        .notes::after{
-            background: linear-gradient(to bottom, transparent, #fff1ef);    
+        .notes::after {
+            background: linear-gradient(to bottom, transparent, $c-teplarny-problematic-bg);
         }
     }
 
@@ -43,14 +95,14 @@ $c-teplarny-problematic: #bb2719;
             margin: 0;
             font-size: .9rem;
             font-weight: normal;
-            color: #999999;
+            color: $c-teplarny-grey;
         }
 
         .owner {
             margin-left: auto;
             font-size: 1.1rem;
             font-weight: normal;
-            color: #b6b6b6;
+            color: $c-teplarny-light-grey;
         }
     }
 
@@ -73,15 +125,15 @@ $c-teplarny-problematic: #bb2719;
     }
 
     .status-done {
-        --status-color: #0085b6;
+        --status-color: #{$c-teplarny-done};
     }
 
     .status-in-progress {
-        --status-color: #ffbc5b;
+        --status-color: #{$c-teplarny-in-progress};
     }
 
     .status-problematic {
-        --status-color: #bb2719;
+        --status-color: #{$c-teplarny-problematic};
     }
 
     .notes {
@@ -116,11 +168,12 @@ $c-teplarny-problematic: #bb2719;
             vertical-align: -.1em;
         }
     }
-    .map{
+
+    .map {
         margin-bottom: 2rem
     }
 
-    .map > div {
+    .map>div {
         display: inline-block;
         position: relative;
 
@@ -244,45 +297,50 @@ $c-teplarny-problematic: #bb2719;
     }
 
     // Stats labels
-    
-    .households, .emissions, .fuels > dt, .subsidies > dt{
+
+    .households,
+    .emissions,
+    .fuels>dt,
+    .subsidies>dt {
         font-size: 0.9rem;
         font-weight: 400;
-        color: #999;
+        color: $c-teplarny-grey;
         margin-bottom: 0rem;
         text-transform: uppercase;
     }
 
-    .emissions{
+    .emissions {
         margin-top: 1rem;
     }
 
-    .fuels > dt{
+    .fuels>dt {
         margin-bottom: .32rem;
     }
 
     // Stats values
-    
-    .households-number, .emissions-number, .mf-total{
+
+    .households-number,
+    .emissions-number,
+    .mf-total {
         font-size: 1.6rem;
         margin-bottom: 0rem;
     }
 
-    .households-share{
+    .households-share {
         font-size: 1.1rem;
-        color: #999;
+        color: $c-teplarny-grey;
         margin-bottom: 0rem;
 
-        .figure{
+        .figure {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 0rem;
         }
     }
 
-    .munis-supplied{
+    .munis-supplied {
         font-size: 0.9rem;
-        color: #999;
+        color: $c-teplarny-grey;
     }
 
 }
