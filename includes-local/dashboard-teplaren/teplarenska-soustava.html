@@ -28,7 +28,7 @@
         <dl class="stats">
             <dt class="households">Vytápěné domácnosti</dt>
             <dd class="households-number{% if facility.num_households %} zero{% endif %}">
-                {{ facility.num_households | round_signif: 2 | format_number }}
+                <b>{{ facility.num_households | round_signif: 2 | format_number }}</b>
             </dd>
             {% if facility.share_households %}
             <dd class="households-share detail"><span class="figure">{{ facility.share_households }} %</span> domácností</dd>
@@ -48,7 +48,7 @@
             </dt>
             {% endif %}
             <dt class="emissions">Emise skleníkových plynů</dt>
-            <dd class="emissions"><b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b> Mt CO<sub>2</sub>eq</dd>
+            <dd class="emissions-number"><b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b> Mt CO<sub>2</sub>eq</dd>
         </dl>
         <dl class="fuels">
             {% if facility.fuels_main_today %}
@@ -76,7 +76,7 @@
         </dl>
         <dl class="subsidies small">
             {% if facility.mf_subsidies %}
-            <dt>Přidělené dotace z Modernizačního fondu</dt>
+            <dt>Dotace z Modernizačního fondu</dt>
             <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
             {% if facility.chp_subsidies %}
             <dd class="not-detail">+ dotační podpora KVET</dd>
@@ -86,7 +86,7 @@
             {% endfor %}
             </ul>
             {% else %}
-            <dt>Žádné dotace z Modernizačního fondu</dt>
+            <dt>Žádné dotace z Modern. fondu</dt>
             <dd class="mf-total"><b class="zero">0</b> Kč</dd>
             {% if facility.chp_subsidies %}
             <dd class="not-detail">+ dotační podpora KVET</dd>

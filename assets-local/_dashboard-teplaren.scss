@@ -1,5 +1,9 @@
-$c-teplarny-uhli: #bc2719;
+$c-teplarny-uhli: #bb2719;
 $c-teplarny-ostatni: #b4b4b4;
+
+$c-teplarny-done: #0085b6;
+$c-teplarny-in-progress: #ffbc5b;
+$c-teplarny-problematic: #bb2719;
 
 #tabulka-dashboard-teplaren {
     display: flex;
@@ -7,9 +11,20 @@ $c-teplarny-ostatni: #b4b4b4;
 
     .card {
         padding: .5rem .75rem;
-        border: 3px solid #d9d9d9;
+        border: 2px solid #d9d9d9;
         border-radius: .75rem;
         --status-color: grey;
+    }
+
+    // Problematic card
+
+    .status-problematic{
+        border: 2px solid var(--status-color);    
+        background-color: #fff1ef;
+
+        .notes::after{
+            background: linear-gradient(to bottom, transparent, #fff1ef);    
+        }
     }
 
     .card-header {
@@ -26,7 +41,7 @@ $c-teplarny-ostatni: #b4b4b4;
 
         h4 {
             margin: 0;
-            font-size: 1.1rem;
+            font-size: .9rem;
             font-weight: normal;
             color: #999999;
         }
@@ -43,6 +58,7 @@ $c-teplarny-ostatni: #b4b4b4;
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         column-gap: 2rem;
+        padding: 0.2rem 1.25rem;
     }
 
     .status-line {
@@ -100,6 +116,9 @@ $c-teplarny-ostatni: #b4b4b4;
             vertical-align: -.1em;
         }
     }
+    .map{
+        margin-bottom: 2rem
+    }
 
     .map > div {
         display: inline-block;
@@ -116,6 +135,10 @@ $c-teplarny-ostatni: #b4b4b4;
 
     .badge-fuel {
         color: white;
+        font-size: .9rem;
+        font-weight: 600;
+        padding: .4rem .6rem;
+        margin-bottom: 0.3rem;
     }
 
     // Palivo: Zásobování odjinud
@@ -219,4 +242,47 @@ $c-teplarny-ostatni: #b4b4b4;
             display: none;
         }
     }
+
+    // Stats labels
+    
+    .households, .emissions, .fuels > dt, .subsidies > dt{
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #999;
+        margin-bottom: 0rem;
+        text-transform: uppercase;
+    }
+
+    .emissions{
+        margin-top: 1rem;
+    }
+
+    .fuels > dt{
+        margin-bottom: .32rem;
+    }
+
+    // Stats values
+    
+    .households-number, .emissions-number, .mf-total{
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .households-share{
+        font-size: 1.1rem;
+        color: #999;
+        margin-bottom: 0rem;
+
+        .figure{
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0rem;
+        }
+    }
+
+    .munis-supplied{
+        font-size: 0.9rem;
+        color: #999;
+    }
+
 }
