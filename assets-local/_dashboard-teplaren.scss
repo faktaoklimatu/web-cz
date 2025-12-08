@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $c-teplarny-grey: #999999;
 $c-teplarny-dark-grey: #737373;
 $c-teplarny-light-grey: #b4b4b4;
@@ -54,6 +56,42 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .card-body {
         padding: 1rem 1.25rem .75rem;
+    }
+}
+
+#toc-dashboard-teplaren {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    font-size: .9rem;
+
+    li a,
+    .controls label {
+        color: var(--status-color);
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{color.scale($c-teplarny-in-progress, $lightness: -30%)};
+    }
+
+    .status-problematic {
+        --status-color: #{$c-teplarny-problematic};
+    }
+
+    .controls:not(:has(.status-done > input:checked))~ul>.status-done {
+        display: none
+    }
+
+    .controls:not(:has(.status-in-progress > input:checked))~ul>.status-in-progress {
+        display: none
+    }
+
+    .controls:not(:has(.status-problematic > input:checked))~ul>.status-problematic {
+        display: none
     }
 }
 
@@ -343,4 +381,16 @@ $c-teplarny-problematic-bg: #fff1ef;
         color: $c-teplarny-grey;
     }
 
+}
+
+#toc-dashboard-teplaren:not(:has(.controls > .status-done > input:checked))~#tabulka-dashboard-teplaren>.status-done {
+    display: none;
+}
+
+#toc-dashboard-teplaren:not(:has(.controls > .status-in-progress > input:checked))~#tabulka-dashboard-teplaren>.status-in-progress {
+    display: none;
+}
+
+#toc-dashboard-teplaren:not(:has(.controls > .status-problematic > input:checked))~#tabulka-dashboard-teplaren>.status-problematic {
+    display: none;
 }

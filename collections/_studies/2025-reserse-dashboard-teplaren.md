@@ -40,11 +40,29 @@ intro: |
     {% endfor %}
 </div>
 
-<ul class="inline-bullet-list" style="font-size: .8rem;">
-    {%- for facility in facilities %}
-    <li><a href="#{{ facility.name | slugify: "latin" }}">{{ facility.name }}</a></li>
-    {%- endfor %}
-</ul>
+<div id="toc-dashboard-teplaren" >
+    <div class="controls">
+        <div class="form-check status-problematic">
+            <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
+            <label class="form-check-label" for="checkProblematic">Problematické</label>
+        </div>
+        <div class="form-check status-in-progress">
+            <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
+            <label class="form-check-label" for="checkInProgress">Probíhající</label>
+        </div>
+        <div class="form-check status-done">
+            <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
+            <label class="form-check-label" for="checkDone">Dokončené</label>
+        </div>
+    </div>
+    <ul class="inline-bullet-list flex-grow-1">
+        {%- for facility in facilities %}
+        <li class="status-{{ facility.status }}">
+            <a href="#{{ facility.name | slugify: "latin" }}">{{ facility.name }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</div>
 
 <div id="tabulka-dashboard-teplaren">
     {% for facility in facilities %}
