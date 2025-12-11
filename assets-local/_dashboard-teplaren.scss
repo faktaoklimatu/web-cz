@@ -15,6 +15,7 @@ $c-teplarny-problematic-bg: #fff1ef;
     .card {
         border: 1px solid var(--status-color);
         border-radius: .6rem;
+        margin-block: 1rem;
         --status-color: grey;
 
         h3 {
@@ -100,7 +101,7 @@ $c-teplarny-problematic-bg: #fff1ef;
     flex-direction: column;
 
     .card {
-        padding: .5rem .75rem;
+        padding: 1.2rem 1.5rem;
         border: 2px solid #d9d9d9;
         border-radius: .75rem;
         --status-color: grey;
@@ -132,6 +133,33 @@ $c-teplarny-problematic-bg: #fff1ef;
         h4 {
             margin: 0;
             font-size: .9rem;
+            line-height: 1.2;
+            font-weight: normal;
+            color: $c-teplarny-grey;
+        }
+
+        .owner {
+            margin-left: auto;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: $c-teplarny-light-grey;
+        }
+    }
+
+    .card-body {
+        
+        h3 {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #3e3e4d;
+            margin-bottom: .4rem;
+            margin-top: 0rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: .9rem;
             font-weight: normal;
             color: $c-teplarny-grey;
         }
@@ -148,7 +176,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         column-gap: 2rem;
-        padding: 0.2rem 1.25rem;
+        padding: 0rem;
     }
 
     .status-line {
@@ -176,8 +204,9 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .notes {
         position: relative;
-        max-height: 5em;
+        max-height: 3em;
         overflow: hidden;
+        font-size: .9rem;
     }
 
     .notes::after {
@@ -196,8 +225,8 @@ $c-teplarny-problematic-bg: #fff1ef;
     .details-toggle .btn {
         margin: 0;
         padding: .375em 0;
-        font-size: .9em;
-        color: inherit;
+        font-size: .7em;
+        color: #999;
         text-transform: uppercase;
         letter-spacing: .02em;
 
@@ -344,7 +373,6 @@ $c-teplarny-problematic-bg: #fff1ef;
         font-weight: 400;
         color: $c-teplarny-grey;
         margin-bottom: 0rem;
-        text-transform: uppercase;
     }
 
     .emissions {
