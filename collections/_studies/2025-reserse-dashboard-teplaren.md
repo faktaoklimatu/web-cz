@@ -18,6 +18,8 @@ intro: |
 {% assign facilities = site.data.dashboard-teplaren.items %}
 {% assign highlights = site.data.dashboard-teplaren.highlights %}
 
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
 <div id="highlights-dashboard-teplaren" class="card-deck mb-4">
     {% for item in highlights %}
     <div class="card status-{{ item.status }}">
@@ -40,7 +42,21 @@ intro: |
     {% endfor %}
 </div>
 
-<div id="toc-dashboard-teplaren" >
+<div class="overal-grpahics-dashboard-teplaren">
+    <div class="map" id="dashboard-teplaren-map" data-facilities='{{ facilities | jsonify | escape }}'>
+        <h4>Mapa tepláren</h4>
+    </div>
+    <div class="treemap">
+        <h4>Podíl českých domácností připojených na CZT</h4>
+        {% include figure.html
+            name="treemap-domacnosti.png"
+            alt=""
+            source-text=""
+        %}
+    </div>
+</div>
+
+<div id="toc-dashboard-teplaren">
     <div class="controls">
         <div class="form-check status-problematic">
             <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
