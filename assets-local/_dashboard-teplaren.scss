@@ -422,3 +422,25 @@ $c-teplarny-problematic-bg: #fff1ef;
 #toc-dashboard-teplaren:not(:has(.controls > .status-problematic > input:checked))~#tabulka-dashboard-teplaren>.status-problematic {
     display: none;
 }
+
+// Layout for overall dashboard graphics (map + treemap side by side)
+.overal-grpahics-dashboard-teplaren {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+
+    .treemap {
+        flex: 2;
+    }
+
+    .map {
+        width: 100%;
+        max-width: 100%;
+        flex: 3;
+    }
+    #dashboard-teplaren-map-svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
