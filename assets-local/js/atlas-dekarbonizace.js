@@ -58,15 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!section || !button) return;
 
-  // collapsed by default (only first 4 visible via CSS)
+  // Collapsed by default (only first 3 visible via CSS)
   section.classList.add("is-collapsed");
 
   button.addEventListener("click", function () {
-      var isExpanded = section.classList.toggle("is-expanded");
-      section.classList.toggle("is-collapsed", !isExpanded);
+      var isCollapsed = section.classList.toggle("is-collapsed");
+      section.classList.toggle("is-collapsed", isCollapsed);
 
-      button.setAttribute("aria-expanded", isExpanded ? "true" : "false");
-      button.textContent = isExpanded ? "Skrýt ohlasy" : "Zobrazit všechny ohlasy";
+      button.setAttribute("aria-expanded", !isCollapsed ? "true" : "false");
+      button.textContent = !isCollapsed ? "Skrýt ohlasy" : "Zobrazit všechny ohlasy";
   });
 });
 
