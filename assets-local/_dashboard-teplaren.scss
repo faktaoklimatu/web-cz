@@ -254,11 +254,12 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 
     .badge-fuel {
+        margin-bottom: 0.3rem;
+        padding: .4rem .6rem;
+        background: hotpink;
         color: white;
         font-size: .9rem;
         font-weight: 600;
-        padding: .4rem .6rem;
-        margin-bottom: 0.3rem;
     }
 
     // Palivo: Zásobování odjinud
