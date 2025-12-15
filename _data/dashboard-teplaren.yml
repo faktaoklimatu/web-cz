@@ -41,21 +41,38 @@ items:
   - msw
   share_households: 51
   mf_subsidies:
-  - name: '2/2021: 7210200004 – Výstavba ZEVO v elektrárenské lokalitě Mělník'
+  - call: 2/2021
+    application_id: '7210200004'
+    name: ZEVO Mělník
+    long_name: Výstavba ZEVO v elektrárenské lokalitě Mělník
     amount: 6095
-  - name: '1/2022: 7220100019 – EGT-přechod k nízkoemisní výrobě tepla a elektrické energie, etapa 1.'
+  - call: 1/2022
+    application_id: '7220100019'
+    name: Paroplynový zdroj Mělník
+    long_name: EGT-přechod k nízkoemisní výrobě tepla a elektrické energie, etapa 1.
     amount: 7259
-  - name: '1/2023: 7230100004 – Obnova tepelných napáječů – TN Střed, TN TMA Západ a TN Severní město'
+  - call: 1/2023
+    application_id: '7230100004'
+    name: Tepelné napáječe
+    long_name: Obnova tepelných napáječů – TN Střed, TN TMA Západ a TN Severní město
     amount: 266
-  - name: '1/2023: 7230100005 – Obnova tepelných napáječů – TN TMA Malešice Jih a TN Michle'
+  - call: 1/2023
+    application_id: '7230100005'
+    name: Tepelné napáječe
+    long_name: Obnova tepelných napáječů – TN TMA Malešice Jih a TN Michle
     amount: 125
-  - name: '1/2023: 7230100001 – Výměny a obnovy části stávajících potrubních tras horkovodů pro
-
-      rok 2023'
+  - call: 1/2023
+    application_id: '7230100001'
+    name: Potrubní trasy
+    long_name: Výměny a obnovy části stávajících potrubních tras horkovodů pro rok 2023
     amount: 41
-  - name: '1/2023: 7230100003 – VS RABASOVA'
+  - call: 1/2023
+    application_id: '7230100003'
+    name: Rozvody
+    long_name: VS RABASOVA
     amount: 24
   mf_subsidies_total: 13811
+  mf_subsidies_per_household: 55142
   chp_subsidies:
   - power: 650
     since: '12/2030'
@@ -75,7 +92,9 @@ items:
   y: 42.5
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
-  notes: Elektrárna Třebovice získala provozní podporu na plynové kogenerační zdroje o celkovém výkonu 174 MWe. V uplynulých letech kvůli přechodu na zemní plyn chystala přivedení vysokotlakého plynového potrbubí do hlavního areálu. Kromě zemního plynu se zvažují i další zdroje, ale zatím pro to nejsou konkrétní plány. Menší Teplárna Přívoz přešla na zemní plyn v roce 2022. Současně také odebírá koksárenský plyn z nedaleké koksovny Svoboda (společnosti OKK Koksovny).
+  notes: 'V současné době stále hlavně uhelná elektrárna Třebovice chystá přechod na zemní plyn. Nyní je v procesu přívod vysokotlakého plynového potrubí do hlavního areálu.
+
+    Elektrárna také získala provozní podporu na plynové kogenerační zdroje o celkovém výkonu 174 MWe. Kromě zemního plynu se zvažují i další zdroje, ale zatím pro to nejsou konkrétní plány. Menší Teplárna Přívoz přešla na zemní plyn v roce 2022. Současně také odebírá koksárenský plyn z nedaleké koksovny Svoboda (společnosti OKK Koksovny).'
   owner: Veolia
   num_households: 96225
   munis_supplied: Ostrava (kromě části Vítkovice)
@@ -99,15 +118,28 @@ items:
   - cokegas
   share_households: 73
   mf_subsidies:
-  - name: '1/2024: 7240100001 – DEKARBONIZACE A MODERNIZACE LOKALITY OSTRAVA'
+  - call: 1/2024
+    application_id: '7240100001'
+    name: Tepelná čerpadla, využití odpadního tepla, plynový zdroj
+    long_name: DEKARBONIZACE A MODERNIZACE LOKALITY OSTRAVA
     amount: 7432
-  - name: '1/2022: 7220100020 – Podpora KVET SZT Ostrava - KGJ „Korýtko"'
+  - call: 1/2022
+    application_id: '7220100020'
+    name: Plynový zdroj
+    long_name: Podpora KVET SZT Ostrava - KGJ „Korýtko"
     amount: 142
-  - name: '1/2022: 7220100027 – PODPORA KVET SZT OSTRAVA - KGJ "OZO"'
+  - call: 1/2022
+    application_id: '7220100027'
+    name: Plynový zdroj
+    long_name: PODPORA KVET SZT OSTRAVA - KGJ "OZO"
     amount: 50
-  - name: '1/2022: 7220100031 – Podpora KVET SZT Ostrava - KGJ "FN Ostrava"'
+  - call: 1/2022
+    application_id: '7220100031'
+    name: Plynový zdroj
+    long_name: Podpora KVET SZT Ostrava - KGJ "FN Ostrava"
     amount: 98
   mf_subsidies_total: 7723
+  mf_subsidies_per_household: 80260
   chp_subsidies:
   - power: 100
     since: '12/2029'
@@ -165,11 +197,18 @@ items:
   - biomass
   share_households: 51
   mf_subsidies:
-  - name: '2/2021: 7210200003 – Modernizace zdroje „Brno – sever“ pro soustavu zásobování tepelnou energií města Brna'
+  - call: 2/2021
+    application_id: '7210200003'
+    name: Biomasa
+    long_name: Modernizace zdroje „Brno – sever“ pro soustavu zásobování tepelnou energií města Brna
     amount: 1661
-  - name: '2/2021: 7210200001 – Modernizace ZEVO společnosti SAKO Brno za účelem zvýšení zpracovatelské kapacity a efektivity provozu'
+  - call: 2/2021
+    application_id: '7210200001'
+    name: ZEVO
+    long_name: Modernizace ZEVO společnosti SAKO Brno za účelem zvýšení zpracovatelské kapacity a efektivity provozu
     amount: 2848
   mf_subsidies_total: 4509
+  mf_subsidies_per_household: 47966
 - name: Praha – levý břeh Vltavy
   name_details: menší zdroje
   x: 31.8
@@ -201,7 +240,7 @@ items:
   y: 33.0
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
-  notes: Uhelné bloky mají nahradit až 4 nové plynové zdroje (s paroplynovým cyklem) a dále nová spalovna odpadu (všechno podpořeno z ModFondu). Diskutuje se také o výstavbě zdrojů na biomasu.
+  notes: Uhelné bloky mají nahradit až 4 nové plynové zdroje (s paroplynovým cyklem) a dále nové zařízení pro energetické využití odpadu (všechno podpořeno z ModFondu). Diskutuje se také o výstavbě zdrojů na biomasu.
   owner: EPH
   num_households: 60126
   munis_supplied: Pardubice, Hradec Králové, Lázně Bohdaneč, Opatovice nad Labem, Chrudim, Čeperka, Rybitví
@@ -223,17 +262,33 @@ items:
   - biomass
   share_households: 62
   mf_subsidies:
-  - name: '1/2022: 7220100016 – ZEVO OPATOVICE'
+  - call: 1/2022
+    application_id: '7220100016'
+    name: ZEVO
+    long_name: ZEVO OPATOVICE
     amount: 4032
-  - name: '1/2022: 7220100030 – Náhrada uhelného bloku plynovým zdrojem IV.'
+  - call: 1/2022
+    application_id: '7220100030'
+    name: Plynový zdroj
+    long_name: Náhrada uhelného bloku plynovým zdrojem IV.
     amount: 1974
-  - name: '1/2022: 7220100005 – Náhrada uhelného bloku plynovým zdrojem I.'
+  - call: 1/2022
+    application_id: '7220100005'
+    name: Paroplynový zdroj
+    long_name: Náhrada uhelného bloku plynovým zdrojem I.
     amount: 1567
-  - name: '1/2022: 7220100003 – Náhrada uhelného bloku plynovým zdrojem III.'
+  - call: 1/2022
+    application_id: '7220100003'
+    name: Paroplynový zdroj
+    long_name: Náhrada uhelného bloku plynovým zdrojem III.
     amount: 1557
-  - name: '1/2022: 7220100004 – Náhrada uhelného bloku plynovým zdrojem II.'
+  - call: 1/2022
+    application_id: '7220100004'
+    name: Paroplynový zdroj
+    long_name: Náhrada uhelného bloku plynovým zdrojem II.
     amount: 1129
   mf_subsidies_total: 10258
+  mf_subsidies_per_household: 170608
   chp_subsidies:
   - power: 390
     since: '08/2029'
@@ -270,11 +325,18 @@ items:
   - msw
   share_households: 61
   mf_subsidies:
-  - name: '1/2022: 7220100022 – OBNOVA ZDROJE - ENERGETIKA'
+  - call: 1/2022
+    application_id: '7220100022'
+    name: Paroplynový zdroj
+    long_name: OBNOVA ZDROJE - ENERGETIKA
     amount: 1930
-  - name: '1/2022: 7220100010 – OBNOVA ZDROJE - TEPLÁRNA'
+  - call: 1/2022
+    application_id: '7220100010'
+    name: Paroplynový zdroj, biomasa
+    long_name: OBNOVA ZDROJE - TEPLÁRNA
     amount: 1264
   mf_subsidies_total: 3195
+  mf_subsidies_per_household: 64004
   chp_subsidies:
   - power: 200
     since: '06/2029'
@@ -299,8 +361,8 @@ items:
   num_households: 49109
   munis_supplied: Havířov, Karviná
   fuels_main_today:
-  - lignite
   - natgas
+  - hardcoal
   emissions_mtco2eq:
   - 0.319
   - 0.322
@@ -316,13 +378,23 @@ items:
   - natgas
   share_households: 86
   mf_subsidies:
-  - name: '1/2022: 7220100026 – Dekarbonizace Teplárny Karviná – část Multipalivový kotel s KVET a Plynový teplárenský zdroj s KVET'
+  - call: 1/2022
+    application_id: '7220100026'
+    name: Multipalivový kotel, plynový zdroj
+    long_name: Dekarbonizace Teplárny Karviná – část Multipalivový kotel s KVET a Plynový teplárenský zdroj s KVET
     amount: 5017
-  - name: '1/2021: 7210100003 – Dekarbonizace Teplárny Karviná - část plynofikace'
+  - call: 1/2021
+    application_id: '7210100003'
+    name: Plynový zdroj
+    long_name: Dekarbonizace Teplárny Karviná - část plynofikace
     amount: 164
-  - name: '1/2021: 7210100016 – Dekarbonizace Teplárny Karviná - část dostavba plynové kotelny'
+  - call: 1/2021
+    application_id: '7210100016'
+    name: Plynový zdroj
+    long_name: Dekarbonizace Teplárny Karviná - část dostavba plynové kotelny
     amount: 67
   mf_subsidies_total: 5248
+  mf_subsidies_per_household: 106864
   chp_subsidies:
   - power: 15
     since: '12/2029'
@@ -342,7 +414,7 @@ items:
   y: 20.8
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
-  notes: Stále primárně uhelná teplárna, která využívá spalování biomasy v jednom přestavěném kotli. Společnost má v plánu do roku 2027 výstavbu velké spalovny komunálního odpadu a dvou paroplynových bloků (oba projekty podpořeny z ModFondu).
+  notes: Stále primárně uhelná teplárna, která využívá spalování biomasy v jednom přestavěném kotli. Společnost má v plánu do roku 2027 výstavbu velkého zařízení pro energetické využití komunálního odpadu a dvou paroplynových bloků (oba projekty podpořeny z ModFondu).
   owner: EPH
   num_households: 35873
   munis_supplied: Most, Litvínov, Meziboří
@@ -364,13 +436,23 @@ items:
   - biomass
   share_households: 83
   mf_subsidies:
-  - name: '1/2022: 7220100007 – Zařízení pro energetické využití odpadů, EVO – Komořany, Most'
+  - call: 1/2022
+    application_id: '7220100007'
+    name: ZEVO
+    long_name: Zařízení pro energetické využití odpadů, EVO – Komořany, Most
     amount: 2575
-  - name: '1/2022: 7220100009 – Výstavba paroplynového cyklu PPC2 v UE Komořany'
+  - call: 1/2022
+    application_id: '7220100009'
+    name: Paroplynový zdroj
+    long_name: Výstavba paroplynového cyklu PPC2 v UE Komořany
     amount: 1472
-  - name: '1/2022: 7220100008 – Výstavba paroplynového cyklu PPC1 v UE Komořany'
+  - call: 1/2022
+    application_id: '7220100008'
+    name: Paroplynový zdroj
+    long_name: Výstavba paroplynového cyklu PPC1 v UE Komořany
     amount: 1409
   mf_subsidies_total: 5456
+  mf_subsidies_per_household: 152092
   chp_subsidies:
   - power: 206
     since: '06/2029'
@@ -417,11 +499,18 @@ items:
   - natgas
   share_households: 40
   mf_subsidies:
-  - name: '1/2021: 7210100015 – Strategie pro zelené město'
+  - call: 1/2021
+    application_id: '7210100015'
+    name: ZEVO
+    long_name: Strategie pro zelené město
     amount: 329
-  - name: '1/2022: 7220100015 – Strategie pro zelené město – ZEVO Vráto'
+  - call: 1/2022
+    application_id: '7220100015'
+    name: ZEVO
+    long_name: Strategie pro zelené město – ZEVO Vráto
     amount: 4686
   mf_subsidies_total: 5015
+  mf_subsidies_per_household: 150195
   chp_subsidies:
   - power: 10
     since: '12/2030'
@@ -492,11 +581,18 @@ items:
   - srf
   share_households: 56
   mf_subsidies:
-  - name: '1/2022: 7220100001 – MODERNIZACE TEPLÁRNY OLOMOUC – ČÁST MULTIPALIVOVÝ KOTEL A PLYNOVÝ TEPLÁRENSKÝ ZDROJ'
+  - call: 1/2022
+    application_id: '7220100001'
+    name: Multipalivový kotel, plynový zdroj
+    long_name: MODERNIZACE TEPLÁRNY OLOMOUC – ČÁST MULTIPALIVOVÝ KOTEL A PLYNOVÝ TEPLÁRENSKÝ ZDROJ
     amount: 2506
-  - name: '1/2021: 7210100010 – Dekarbonizace Teplárny Olomouc - část plynofikace K3'
+  - call: 1/2021
+    application_id: '7210100010'
+    name: Plynový zdroj
+    long_name: Dekarbonizace Teplárny Olomouc - část plynofikace K3
     amount: 78
   mf_subsidies_total: 2584
+  mf_subsidies_per_household: 93957
   chp_subsidies:
   - power: 15
     since: '12/2029'
@@ -507,7 +603,7 @@ items:
   x: 16.4
   y: 23.9
   status: in-progress
-  status_text: Odchod od uhlí do roku 2028
+  status_text: Odchod od uhlí (v teple) do roku 2028
   notes: V plánu je výstavba biomasové kotelny o výkonu 35 MWt a účinné kogenerační plynové jednotky o výkonu 45 MWt. (Oba projekty podpořeny z ModFondu, plynové jednotky mají navíc i provozní podporu). V rámci dekarbonizace by tyto nové zdroje měly nahradit i Elektrárnu Tušimice jako zdroj tepla pro Kadaň (horkovodní propoj by měl být hotový během roku 2027).
   owner: ČEZ
   num_households: 27297
@@ -528,11 +624,18 @@ items:
   - natgas
   share_households: 74
   mf_subsidies:
-  - name: '1/2022: 7220100028 – CV_PM 45 MW EPR, Prunéřov'
+  - call: 1/2022
+    application_id: '7220100028'
+    name: Biomasa, plynový zdroj
+    long_name: CV_PM 45 MW EPR, Prunéřov
     amount: 1779
-  - name: '1/2022: 7220100029 – CV_BM 17,5 + 17,5 MW EPR, Prunéřov'
+  - call: 1/2022
+    application_id: '7220100029'
+    name: Biomasa
+    long_name: CV_BM 17,5 + 17,5 MW EPR, Prunéřov
     amount: 723
   mf_subsidies_total: 2502
+  mf_subsidies_per_household: 91658
   chp_subsidies:
   - power: 50
     since: '03/2028'
@@ -544,7 +647,7 @@ items:
   y: 32.4
   status: problematic
   status_text: Nejasný odchod od uhlí
-  notes: 'Naprostá většina tepla v současnosti pochází ze spalování hnědého uhlí. Teplárna jedná s městem o vyšší ceně tepla, která by umožňila transformaci, a zároveň hrozí ukončením výroby v roce 2026. Město zvažuje postavit vlastní plynový zdroj. Pro lokalitu není přidělena žádná dotační podpora (jen jedna nepodpořená žádost na plynovou kogeneraci o výkonu 39 MWe). Další vývoj je nejasný. '
+  notes: Naprostá většina tepla v současnosti pochází ze spalování hnědého uhlí. Pro lokalitu není přidělena žádná dotační podpora (jen jedna nepodpořená žádost na plynovou kogeneraci o výkonu 39 MWe). V listopadu 2025 vlastník oznámil, že nejpozději v březnu 2027 ukončí provoz teplárny. Další vývoj je nejasný. Město zvažuje postavit vlastní plynový zdroj. V mezičase bude možná potřeba dále provozovat stávající uhelný zdroj (provozní ztráta by pak byla krytá z veřejných prostředků).
   owner: Sev.en
   num_households: 19898
   munis_supplied: Kladno
@@ -575,7 +678,7 @@ items:
   x: 23.4
   y: 18.9
   status: in-progress
-  status_text: Odchod od uhlí plánován
+  status_text: Odchod od uhlí (v teple) plánován
   notes: Připravuje se biomasová kotelna (podořena z ModFondu), která bude v 2. etapě dekarbonizce pravděpodobně doplněna dalším zdrojem. Jako záložní a špičkovací zdroj slouží současná plynová kotelna (131 MWt).
   owner: ČEZ
   num_households: 19482
@@ -708,13 +811,23 @@ items:
   - biomass
   share_households: 66
   mf_subsidies:
-  - name: '1/2021: 7210100018 – Plynový zdroj pro KVET v lokalitě Dětmarovice'
+  - call: 1/2021
+    application_id: '7210100018'
+    name: Plynový zdroj
+    long_name: Plynový zdroj pro KVET v lokalitě Dětmarovice
     amount: 412
-  - name: '1/2022: 7220100018 – DE_BM kotel 8 MWt, Dětmarovice'
+  - call: 1/2022
+    application_id: '7220100018'
+    name: Biomasa
+    long_name: DE_BM kotel 8 MWt, Dětmarovice
     amount: 111
-  - name: '1/2022: 7220100031 – Podpora KVET SZT Ostrava - KGJ "FN Ostrava"'
+  - call: 1/2022
+    application_id: '7220100031'
+    name: Plynový zdroj
+    long_name: Podpora KVET SZT Ostrava - KGJ "FN Ostrava"
     amount: 98
   mf_subsidies_total: 622
+  mf_subsidies_per_household: 43439
   chp_subsidies:
   - power: 24
     since: '03/2027'
@@ -836,7 +949,7 @@ items:
   y: 19.2
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
-  notes: Elektrárna plánuje vybudovat nové kotle na biomasu (podpořeno z ModFondu) a také záložní a špičkovací plynové kotle. V září 2025 bylo zastaveno posuzování EIA (na žádost ČEZ).
+  notes: Elektrárna plánuje vybudovat nové kotle na biomasu (podpořeno z ModFondu) a také záložní a špičkovací plynové kotle.
   owner: ČEZ
   num_households: 11203
   munis_supplied: Trutnov, Mladé Buky, Svoboda nad Úpou, Janské Lázně, Úpice, Horní Maršov, Maršov u Úpice, Radvanice, Suchovršice
@@ -886,13 +999,23 @@ items:
   - natgas
   share_households: 54
   mf_subsidies:
-  - name: '1/2021: 7210100001 – Konec uhlí v Plané'
+  - call: 1/2021
+    application_id: '7210100001'
+    name: Biomasa
+    long_name: Konec uhlí v Plané
     amount: 389
-  - name: '1/2021: 7210100009 – Plynofikace Teplárny Tábor'
+  - call: 1/2021
+    application_id: '7210100009'
+    name: Plynový zdroj
+    long_name: Plynofikace Teplárny Tábor
     amount: 318
-  - name: '1/2022: 7220100014 – EVO Planá - Energie z odpadu Táborska'
+  - call: 1/2022
+    application_id: '7220100014'
+    name: ZEVO
+    long_name: EVO Planá - Energie z odpadu Táborska
     amount: 1379
   mf_subsidies_total: 2085
+  mf_subsidies_per_household: 190064
 - name: Třinec
   name_details: Energetika Třinec
   x: 89.2
@@ -964,8 +1087,8 @@ items:
   x: 17.3
   y: 25.2
   status: in-progress
-  status_text: Odchod od uhlí do roku 2028
-  notes: 'V rámci dekarbonizace by Tušimice měl nahradit nový zdroj, který bude součástí areálu elektrárny Prunéřov. '
+  status_text: Odchod od uhlí (v teple) do roku 2028
+  notes: 'V rámci dekarbonizace by teplo z Tušimic měl nahradit nový zdroj, který bude součástí areálu elektrárny Prunéřov. '
   owner: ČEZ
   num_households: 6242
   munis_supplied: Kadaň
@@ -989,7 +1112,7 @@ items:
   y: 53.8
   status: done
   status_text: Bez uhlí
-  notes: Teplárna kromě zemníhu plynu spaluje také mazut a různé vedlejší produkty vlastní chemické výroby.
+  notes: Teplárna kromě zemníhu plynu spaluje také mazut a různé vedlejší produkty vlastní chemické výroby. Spolčnost DEZA uvádí, že má „dekarbonizační vizi“, konkrétní plán však chybí.
   owner: Agrofert
   num_households: 5426
   munis_supplied: Valašské Meziříčí
@@ -1064,9 +1187,13 @@ items:
   other_heating: Mondi Štětí
   share_households: 83
   mf_subsidies:
-  - name: '1/2022: 7220100013 – Snížení emisí CO2 při výrobě tepla'
+  - call: 1/2022
+    application_id: '7220100013'
+    name: Biomasa
+    long_name: Snížení emisí CO2 při výrobě tepla
     amount: 3054
   mf_subsidies_total: 3054
+  mf_subsidies_per_household: 1007588
 - name: Chvaletice
   name_details: Elektrárna Chvaletice
   x: 45.9
