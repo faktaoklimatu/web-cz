@@ -13,48 +13,8 @@ tags-topics:   [ energetika ]
 caption:       "Přehled scénářů transformace českých tepláren spalujících uhlí"
 intro: |
     Tato rešerše ukazuje 32 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 69 % všech domácností výtápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 26 % pak soustavy mimo systém EU ETS 1.)
+extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
-
-{% assign facilities = site.data.dashboard-teplaren.items %}
-{% assign highlights = site.data.dashboard-teplaren.highlights %}
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-
-<div id="highlights-dashboard-teplaren" class="card-deck mb-4">
-    {% for item in highlights %}
-    <div class="card status-{{ item.status }}">
-        <div class="card-body">
-            <h3>
-                {% case item.status %}
-                {% when "done" %} Odchod od uhlí dokončen
-                {% when "in-progress" %} Odchod od uhlí probíhá
-                {% when "problematic" %} Nejasný odchod od uhlí
-                {% endcase %}
-            </h3>
-            <h4>
-                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
-                <b>{{ item.number }}</b> soustav
-            </h4>
-            <p><b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
-            <p><b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="overal-grpahics-dashboard-teplaren">
-    <div class="map" id="dashboard-teplaren-map" data-facilities='{{ facilities | jsonify | escape }}'>
-        <h4>Mapa tepláren</h4>
-    </div>
-    <div class="treemap">
-        <h4>Podíl českých domácností připojených na CZT</h4>
-        {% include figure.html
-            name="treemap-domacnosti.png"
-            alt=""
-            source-text=""
-        %}
-    </div>
-</div>
 
 <div class="narrow-text" markdown="1">
 {% capture methodology %}
@@ -86,6 +46,51 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
     content=methodology
 %}
 </div>
+
+{% assign facilities = site.data.dashboard-teplaren.items %}
+{% assign highlights = site.data.dashboard-teplaren.highlights %}
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="labeler.js"></script>
+<script>
+  window.DASHBOARD_TEPLAREN = {
+    highlights: {{ site.data["dashboard-teplaren"].highlights | jsonify }},
+    facilities: {{ site.data["dashboard-teplaren"].items | jsonify }}
+  };
+</script>
+
+<div id="highlights-dashboard-teplaren" class="card-deck mb-4">
+    {% for item in highlights %}
+    <div class="card status-{{ item.status }}">
+        <div class="card-body">
+            <h3>
+                {% case item.status %}
+                {% when "done" %} Odchod od uhlí dokončen
+                {% when "in-progress" %} Odchod od uhlí probíhá
+                {% when "problematic" %} Nejasný odchod od uhlí
+                {% endcase %}
+            </h3>
+            <h4>
+                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
+                <b>{{ item.number }}</b> soustav
+            </h4>
+            <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
+            <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div id="overall-charts">
+    <div id="map">
+        <h4>Mapa zobrazených tepláren</h4>
+    </div>
+    <div id="treemap">
+        <h4>Dvě třetiny domácností na CZT odebírají teplo z tepláren odklánějících se od uhlí.</h4>
+    </div>
+</div>
+
 
 <div id="toc-dashboard-teplaren">
     <div class="controls">

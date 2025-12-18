@@ -60,6 +60,48 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 }
 
+#overall-charts {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 2rem;
+    margin-bottom: 3rem;
+
+    #treemap {
+        max-height: 300px;
+    }
+
+    #treemap .cell text.status {
+        font-size: 1.2rem;
+        font-weight: 600;
+        fill: white;
+        pointer-events: none;
+    }
+
+    #treemap .cell text.pctHouseholds {
+        font-size: 1rem;
+        fill: white;
+    }
+
+    #map {
+        text {
+            font-family: 'Source Sans Pro';
+            paint-order: stroke;
+            stroke: white;
+            stroke-width: 3px;
+        }
+
+        a.facility {
+            text-decoration: none;
+            fill: #3e3e4d;
+
+            .facility-name{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
 #toc-dashboard-teplaren {
     display: flex;
     gap: 1rem;
