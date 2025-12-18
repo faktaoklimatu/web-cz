@@ -55,6 +55,10 @@ $c-teplarny-problematic-bg: #fff1ef;
         --status-color: #{$c-teplarny-problematic};
     }
 
+    .status-not-shown {
+        display: none;
+    }
+
     .card-body {
         padding: 1rem 1.25rem .75rem;
     }
@@ -62,7 +66,7 @@ $c-teplarny-problematic-bg: #fff1ef;
 
 #overall-charts {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-column-gap: 2rem;
     margin-bottom: 3rem;
 
@@ -102,15 +106,17 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 }
 
-#toc-dashboard-teplaren {
+#controls-status {
     display: flex;
     gap: 1rem;
-    flex-direction: row-reverse;
-    font-size: .9rem;
+    font-size: 1.1rem;
 
-    li a,
-    .controls label {
+    label {
         color: var(--status-color);
+    }
+
+    input {
+        accent-color: var(--status-color);
     }
 
     .status-done {
@@ -123,18 +129,6 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .status-problematic {
         --status-color: #{$c-teplarny-problematic};
-    }
-
-    .controls:not(:has(.status-done > input:checked))~ul>.status-done {
-        display: none
-    }
-
-    .controls:not(:has(.status-in-progress > input:checked))~ul>.status-in-progress {
-        display: none
-    }
-
-    .controls:not(:has(.status-problematic > input:checked))~ul>.status-problematic {
-        display: none
     }
 }
 
@@ -248,7 +242,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         position: relative;
         max-height: 3em;
         overflow: hidden;
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
 
     .notes::after {
@@ -296,11 +290,11 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 
     .badge-fuel {
-        margin-bottom: 0.3rem;
-        padding: .4rem .6rem;
+        margin-bottom: 0.2rem;
+        padding: .3rem .5rem;
         background: hotpink;
         color: white;
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 600;
     }
 
@@ -381,6 +375,9 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .fuel-secondary {
         opacity: .6;
+        background-color: white;
+        border: 1px solid #999;
+        color: #999;
     }
 
     .detail {
@@ -411,11 +408,22 @@ $c-teplarny-problematic-bg: #fff1ef;
     .households,
     .emissions,
     .fuels>dt,
-    .subsidies>dt {
+    .subsidies>dt{
         font-size: 0.9rem;
         font-weight: 400;
         color: $c-teplarny-grey;
         margin-bottom: 0rem;
+    }
+
+    .subsidies{
+        .status-rejected {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .detail{
+            margin-bottom: .2rem;
+        }
     }
 
     .emissions {
@@ -452,38 +460,4 @@ $c-teplarny-problematic-bg: #fff1ef;
         color: $c-teplarny-grey;
     }
 
-}
-
-#toc-dashboard-teplaren:not(:has(.controls > .status-done > input:checked))~#tabulka-dashboard-teplaren>.status-done {
-    display: none;
-}
-
-#toc-dashboard-teplaren:not(:has(.controls > .status-in-progress > input:checked))~#tabulka-dashboard-teplaren>.status-in-progress {
-    display: none;
-}
-
-#toc-dashboard-teplaren:not(:has(.controls > .status-problematic > input:checked))~#tabulka-dashboard-teplaren>.status-problematic {
-    display: none;
-}
-
-// Layout for overall dashboard graphics (map + treemap side by side)
-.overal-grpahics-dashboard-teplaren {
-    display: flex;
-    gap: 2rem;
-    align-items: stretch;
-
-    .treemap {
-        flex: 2;
-    }
-
-    .map {
-        width: 100%;
-        max-width: 100%;
-        flex: 3;
-    }
-    #dashboard-teplaren-map-svg {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
 }

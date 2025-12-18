@@ -51,7 +51,6 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
 {% assign highlights = site.data.dashboard-teplaren.highlights %}
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="labeler.js"></script>
 <script>
   window.DASHBOARD_TEPLAREN = {
     highlights: {{ site.data["dashboard-teplaren"].highlights | jsonify }},
@@ -81,39 +80,28 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
     {% endfor %}
 </div>
 
-
 <div id="overall-charts">
     <div id="map">
-        <h4>Mapa zobrazených tepláren</h4>
     </div>
     <div id="treemap">
-        <h4>Dvě třetiny domácností na CZT odebírají teplo z tepláren odklánějících se od uhlí.</h4>
+        <p>Dvě třetiny domácností na CZT odebírají teplo z tepláren odklánějících se od uhlí.</p>
     </div>
 </div>
 
-
-<div id="toc-dashboard-teplaren">
-    <div class="controls">
-        <div class="form-check status-problematic">
-            <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
-            <label class="form-check-label" for="checkProblematic">Problematické</label>
-        </div>
-        <div class="form-check status-in-progress">
-            <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
-            <label class="form-check-label" for="checkInProgress">Probíhající</label>
-        </div>
-        <div class="form-check status-done">
-            <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
-            <label class="form-check-label" for="checkDone">Dokončené</label>
-        </div>
+<div id="controls-status">
+    <p>Filter: </p>
+    <div class="form-check status-problematic">
+        <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
+        <label class="form-check-label" for="checkProblematic">Problematické</label>
     </div>
-    <ul class="inline-bullet-list flex-grow-1">
-        {%- for facility in facilities %}
-        <li class="status-{{ facility.status }}">
-            <a href="#{{ facility.name | slugify: "latin" }}">{{ facility.name }}</a>
-        </li>
-        {%- endfor %}
-    </ul>
+    <div class="form-check status-in-progress">
+        <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
+        <label class="form-check-label" for="checkInProgress">Probíhající</label>
+    </div>
+    <div class="form-check status-done">
+        <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
+        <label class="form-check-label" for="checkDone">Dokončené</label>
+    </div>
 </div>
 
 <div id="tabulka-dashboard-teplaren">

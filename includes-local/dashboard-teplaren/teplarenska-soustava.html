@@ -1,14 +1,5 @@
 {% assign facility = include.facility %}
 <div class="card status-{{ facility.status }}" id="{{ facility.name | slugify: "latin" }}">
-    <!--
-    <div class="card-header">
-        <div>
-            <h3>{{ facility.name }}</h3>
-            <h4>{{ facility.name_details }}</h4>
-        </div>
-        <span class="owner">{{ facility.owner }}</span>
-    </div>
-    -->
     <div class="card-body">
         <div>
             <h4>{{ facility.name_details }}</h4>
@@ -54,7 +45,7 @@
             <dd class="fuels-today">
                 {% for fuel in facility.fuels_main_today %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
-                {% endfor %}
+                {% endfor %}<br>  
                 {% if facility.fuels_secondary_today %} + {% for fuel in facility.fuels_secondary_today %}
                     {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
                 {% endfor %}{% endif %}
@@ -65,7 +56,7 @@
             <dd class="fuels-future">
                 {% for fuel in facility.fuels_main_future %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
-                {% endfor %}
+                {% endfor %}<br>  
                 {% if facility.fuels_secondary_future %} + {% for fuel in facility.fuels_secondary_future %}
                     {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
                 {% endfor %}{% endif %}
@@ -93,9 +84,9 @@
             {% if facility.chp_subsidies %}
             <dt class="chp detail"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
             {% for subsidy in facility.chp_subsidies %}
-            <dd class="chp detail status-{{ subsidy.status }}">
-                <i class="far {% case subsidy.status %}{% when "accepted" %}fa-circle-check{% when "rejected" %}fa-circle-xmark{% endcase %}"></i>
-                {{ subsidy.power }} MWe – {{ subsidy.fuel }} (od {{ subsidy.since }})
+            <dd class="chp detail status-{{ subsidy.status }}" title="Neschválená provozní podpora" data-toggle="tooltip">
+                {{ subsidy.fuel }} (od {{ subsidy.since }})<br>
+                <strong>{{ subsidy.power }} MWe</strong>
             </dd>
             {% endfor %}
             {% endif %}
