@@ -1,3 +1,24 @@
+// Filter 
+const controls = document.getElementById("controls-status");
+const ignoreContainer = document.getElementById("highlights-dashboard-teplaren");
+
+controls.addEventListener("change", e => {
+  if (!e.target.matches("input[type='checkbox']")) return;
+
+  const checkbox = e.target;
+  const statusClass = checkbox.closest(".form-check").classList
+    .value
+    .split(" ")
+    .find(c => c.startsWith("status-"));
+
+  document.querySelectorAll("." + statusClass).forEach(el => {
+    if (controls.contains(el)) return;          // keep controls
+    if (ignoreContainer?.contains(el)) return;  // keep highlights
+    el.style.display = checkbox.checked ? "" : "none";
+  });
+});
+
+// Import YAML data
 const { highlights, facilities } = window.DASHBOARD_TEPLAREN;
 
 // COLOR SCHEME
@@ -187,7 +208,7 @@ async function initCzechFacilitiesMap() {
         .attr("d", path)
         .attr("fill", "#e8eef6")
         .attr("stroke", "#3a3a3a")
-    .attr("stroke-width", 0.8);
+        .attr("stroke-width", 0.8);
 
     // Project points (and drop any that can’t be projected)
     const projected = pts
@@ -216,7 +237,7 @@ async function initCzechFacilitiesMap() {
         .data(projected, d => d.name)
         .join(
             enter => {
-            const a = enter.append("a").attr("class", "facility");
+            const a = enter.append("a").attr("class", d => `facility status-${d.status}`);
             a.append("circle");
             a.append("text").attr("class", "facility-name");
             return a;
