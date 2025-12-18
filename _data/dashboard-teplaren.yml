@@ -11,11 +11,17 @@ highlights:
   number: 10
   num_households: 237737
   ghg_share: 4.45
+- status: not-shown
+  number: 22
+  num_households: 70731
+  ghg_share: 0.37
 items:
 - name: Praha – pravý břeh Vltavy
   name_details: Elektrárna Mělník, ZEVO Malešice a další zdroje
   x: 31.8
   y: 34.6
+  lon: 14.40
+  lat: 50.08
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
   notes: V lokalitě Mělník má do roku 2029 vzniknout první blok na zemní plyn s paroplynovým cyklem (280 MWe, s dotací z ModFondu), a do roku 2030 druhý větší blok s výkonem 650 MWe (oba mají provozní podporu). Kromě toho má už do roku 2028 vzniknout nová spalovna odpadu (s dotací z ModFondu). Zdroje doplní záložní plynová kotelna.
@@ -90,6 +96,8 @@ items:
   name_details: Elektrárna Třebovice a Teplárna Přívoz
   x: 83.2
   y: 42.5
+  lon: 18.21
+  lat: 49.83
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
   notes: 'V současné době stále hlavně uhelná elektrárna Třebovice chystá přechod na zemní plyn. Nyní je v procesu přívod vysokotlakého plynového potrubí do hlavního areálu.
@@ -169,6 +177,8 @@ items:
   name_details: Teplárny Brno a SAKO Brno
   x: 61.6
   y: 62.3
+  lon: 16.61
+  lat: 49.20
   status: done
   status_text: Bez uhlí
   notes: Teplárny Brno přestaly spalovat uhlí již v roce 1996. Většina tepla pochází ze spalování ze zemního plynu a komunálního odpadu, biomasa tvoří doplňkové palivo. Nyní je také ve výstavbě nový kotel na biomasu (dotace ModFond), a chystá se výstavba horkovodu z Dukovan.
@@ -213,6 +223,8 @@ items:
   name_details: menší zdroje
   x: 31.8
   y: 34.6
+  lon: 14.40
+  lat: 50.08
   status: done
   status_text: Bez uhlí
   notes: Sada lokálních soustav (obzvláště na velkých sídlištích) už dlouho vytápěných plynem. Na levém břehu Vltavy by v Praze do roku 2030 mohla vzniknout velká tepelná čerpadla využívající odpadní teplo z čistírny odpadních vod (částečně by mohla zásobovat také oblasti dnes zásobované z Mělníka).
@@ -238,6 +250,8 @@ items:
   name_details: Elektrárna Opatovice
   x: 50.5
   y: 33.0
+  lon: 15.79
+  lat: 50.13
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: Uhelné bloky mají nahradit až 4 nové plynové zdroje (s paroplynovým cyklem) a dále nové zařízení pro energetické využití odpadu (všechno podpořeno z ModFondu). Diskutuje se také o výstavbě zdrojů na biomasu.
@@ -298,6 +312,8 @@ items:
   name_details: Plzeňská teplárenská
   x: 18.0
   y: 45.0
+  lon: 13.38
+  lat: 49.75
   status: in-progress
   status_text: Odchod od uhlí do roku 2028
   notes: Postupný odklon od uhlí už probíhá delší dobu - v roce 2010 by kolaudován čistě biomasový kotel a v roce 2019 spalovna odpadu. V roce 2022 byl přestavěn uhelný kotel K6 na spalování až 80 % biomasy. Teplárna plánuje odejít od uhlí cca do roku 2028. Součástí plánu je postavit dva nové paroplynové zdroje (podpořeno ModFond, jeden z nich s provozní podporou) a kotel K6 upravit na 100% spalování biomasy.
@@ -354,6 +370,8 @@ items:
   name_details: Teplárna Karviná a Teplárna ČSA
   x: 87.7
   y: 41.8
+  lon: 18.54
+  lat: 49.85
   status: in-progress
   status_text: Odchod od uhlí do roku 2028
   notes: Bývalá teplárna dolu ČSM přestavena na spalování zemního plynu. Uhelná teplárna Karviná plánuje obměnu uhelných kotlů za multipalivový kotel (TAP a biomasa) a plynové kotle.
@@ -412,6 +430,8 @@ items:
   name_details: Teplárna Komořany
   x: 20.5
   y: 20.8
+  lon: 13.57
+  lat: 50.52
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
   notes: Stále primárně uhelná teplárna, která využívá spalování biomasy v jednom přestavěném kotli. Společnost má v plánu do roku 2027 výstavbu velkého zařízení pro energetické využití komunálního odpadu a dvou paroplynových bloků (oba projekty podpořeny z ModFondu).
@@ -470,6 +490,8 @@ items:
   name_details: Teplárna České Budějovice
   x: 32.7
   y: 69.5
+  lon: 14.47
+  lat: 48.97
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: Transformace uhelné teplárny probíhá v plném proudu. V roce 2023 byl dokončen horkovod z Temelína a dále byl jeden kotel na uhlí přestavěn na spalování 100% biomasy. Úplný odchod od uhlí se očeká v roce 2029, kdy bude v provozu nová spalovna komunálmího odpadu Vráto. Ta teprve v červenci 2025 dostala stavební povolení (podpořenou z ModFondu). Skladbu zdrojů doplní také nový plynový zdroj. který získal provozní podporu.
@@ -520,6 +542,8 @@ items:
   name_details: Teplárna Trmice a kotel ve Střekově
   x: 26.4
   y: 16.7
+  lon: 14.00
+  lat: 50.65
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: V Trmicích je ve výstavbě nový kotel na biomasu (projekt podpořen z ModFondu) a dva bloky na zemní plyn (s paroplynovým cyklem). Ve Střekově původní provozovatel soustavy nebyl schopen odchodu od uhlí. Po dohodě s městem zásobování teplem převzal ČEZ, který v roce 2025 zprovoznil novou plynovou kotelnu.
@@ -556,6 +580,8 @@ items:
   name_details: Teplárna Olomouc
   x: 70.3
   y: 50.0
+  lon: 17.25
+  lat: 49.59
   status: in-progress
   status_text: Odchod od uhlí do roku 2028
   notes: V roce 2023 byl jeden uhelný kotel přestavěn na zemní plyn (podpořeno ModFondem), stejně jako 2 menší mazutové kotle. Dále byla rekonstruována část rozvodů (z parních do horkovodních). Druhý a poslední uhelný kotel se od roku 2024 používá jen jako záložní. Společnost má v plánu ho přestavět na multipalivový kotel (TAP a biomasa, také s podporou ModFondu). Kromě toho teplárna plánuje postavit další plynový zdroj (s provozní podporou i podporou z ModFondu).
@@ -602,6 +628,8 @@ items:
   name_details: Elektrárna Prunéřov
   x: 16.4
   y: 23.9
+  lon: 13.29
+  lat: 50.38
   status: in-progress
   status_text: Odchod od uhlí (v teple) do roku 2028
   notes: V plánu je výstavba biomasové kotelny o výkonu 35 MWt a účinné kogenerační plynové jednotky o výkonu 45 MWt. (Oba projekty podpořeny z ModFondu, plynové jednotky mají navíc i provozní podporu). V rámci dekarbonizace by tyto nové zdroje měly nahradit i Elektrárnu Tušimice jako zdroj tepla pro Kadaň (horkovodní propoj by měl být hotový během roku 2027).
@@ -645,6 +673,8 @@ items:
   name_details: Teplárna Kladno
   x: 28.1
   y: 32.4
+  lon: 14.10
+  lat: 50.15
   status: problematic
   status_text: Nejasný odchod od uhlí
   notes: Naprostá většina tepla v současnosti pochází ze spalování hnědého uhlí. Pro lokalitu není přidělena žádná dotační podpora (jen jedna nepodpořená žádost na plynovou kogeneraci o výkonu 39 MWe). V listopadu 2025 vlastník oznámil, že nejpozději v březnu 2027 ukončí provoz teplárny. Další vývoj je nejasný. Město zvažuje postavit vlastní plynový zdroj. V mezičase bude možná potřeba dále provozovat stávající uhelný zdroj (provozní ztráta by pak byla krytá z veřejných prostředků).
@@ -677,6 +707,8 @@ items:
   name_details: Elektrárna Ledvice
   x: 23.4
   y: 18.9
+  lon: 13.77
+  lat: 50.59
   status: in-progress
   status_text: Odchod od uhlí (v teple) plánován
   notes: Připravuje se biomasová kotelna (podořena z ModFondu), která bude v 2. etapě dekarbonizce pravděpodobně doplněna dalším zdrojem. Jako záložní a špičkovací zdroj slouží současná plynová kotelna (131 MWt).
@@ -705,6 +737,8 @@ items:
   name_details: Teplárna Zlín
   x: 75.7
   y: 61.3
+  lon: 17.67
+  lat: 49.22
   status: problematic
   status_text: Nejasný odchod od uhlí
   notes: Teplárna provozuje dva uhelné kotle, ve kterých se v rostoucím objemu spoluspaluje biomasa (do 20 % paliva) a také kotle na zemní plyn. V roce 2021 získala dotaci z programu HEAT na výstavbu nového plynového kotle, který by nahradil jeden z uhelných kotlů, tuto stavbu ovšem zatím nezrealizovala. Kromě toho teplárna zvažuje spalování TAP. Datum odchodu od uhlí není zřejmý.
@@ -738,6 +772,8 @@ items:
   name_details: Teplárna Frýdek-Místek
   x: 85.1
   y: 46.9
+  lon: 18.35
+  lat: 49.69
   status: done
   status_text: Bez uhlí
   notes: V roce 2024 byl nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn.
@@ -764,6 +800,8 @@ items:
   name_details: Teplárna a PPC Vřesová
   x: 8.8
   y: 28.9
+  lon: 12.68
+  lat: 50.18
   status: problematic
   status_text: Nejasný odchod od uhlí
   notes: Společnost zatím představila jen nejasné plány na transformaci. V současnosti nemá žádnou dotační podporu.
@@ -789,6 +827,8 @@ items:
   name_details: Elektrárna Dětmarovice
   x: 86.6
   y: 39.9
+  lon: 18.46
+  lat: 49.89
   status: done
   status_text: Bez uhlí
   notes: 'Elektrárna na černé uhlí byla odstavena ke konci topné sezóny na jaře 2025. Dodávky tepla zatím provizorně zajišťuje záložní a špičková plynová kotelna o výkonu 18MWt. Do roku 2026 mají být v provozu další, účinnější zdroje: 8MWt biomasová kotelna a dvě kogenerační jednotky o výkonu 12MWe (oba projekty podpořeny z ModFondu, kogenerační jednotky mají navíc provozní podporu). Kromě toho je v plánu výstavba druhé záložní a špičkové plynové kotelny o výkonu 3x9 MWt.'
@@ -837,6 +877,8 @@ items:
   name_details: ŠKO-ENERGO – Teplárna Mladá Boleslav
   x: 38.9
   y: 23.9
+  lon: 14.91
+  lat: 50.41
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
   notes: Kotle na uhlí budou v teplárně nahrazeny za kotle na biomasu (projekt podpořen z ModFondu).
@@ -867,6 +909,8 @@ items:
   name_details: Teplárna Přerov
   x: 73.0
   y: 54.4
+  lon: 17.45
+  lat: 49.46
   status: done
   status_text: Bez uhlí
   notes: Od roku 2022 se zde místo uhlí spaluje odpad (a z části také biomasa). Mezi lety 2018 – 2021 také proběhla rekonstrukce tepelné sítě s 15km nových horkovodů.
@@ -893,6 +937,8 @@ items:
   name_details: Teplárna Liberec a ZEVO Termizo
   x: 40.7
   y: 12.9
+  lon: 15.06
+  lat: 50.77
   status: done
   status_text: Bez uhlí
   notes: Od roku 1999 pochází většina výrobeného tepla ze spalovny odpadu. Další teplo pochází ze zdrojů na zemní plyn, mazut dnes tvoří jen asi 2 % palivového mixu. Mezi lety 2018 a 2025 probíhala postupná rekonstrukce tepelné sítě (výměna parovodů za horkovody), což výrazně snižuje tepelné ztráty. Teplárna má v plánu také vybudovat bioplynovou stanici na zpracování organického odpadu z Liberecka (bez konkrétního termínu).
@@ -923,6 +969,8 @@ items:
   name_details: Elektrárna Tisová
   x: 7.6
   y: 32.4
+  lon: 12.63
+  lat: 50.19
   status: problematic
   status_text: Nejasný odchod od uhlí
   notes: Společnost zatím pro Tisovou nepředstavila jasný plán na transformaci. Na obměnu hlavních zdrojů nemá v současnosti žádné dotace.
@@ -947,6 +995,8 @@ items:
   name_details: Elektrárna Poříčí
   x: 52.8
   y: 19.2
+  lon: 15.97
+  lat: 50.56
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: Elektrárna plánuje vybudovat nové kotle na biomasu (podpořeno z ModFondu) a také záložní a špičkovací plynové kotle.
@@ -973,6 +1023,8 @@ items:
   name_details: C-energy Planá
   x: 35.8
   y: 57.5
+  lon: 14.70
+  lat: 49.35
   status: done
   status_text: Bez uhlí
   notes: Inovativní teplárna využívající také FVE, elektrokotel s akumulací či bateriové úložiště. Od uhlí odešla už v roce 2022, cca 85 % palivového mixu nyní tvoří biomasa. Dále má teplárna plynové kogenerační jednotky a špičkovací plynové kotle. Ve výstavbě je také spalovna odpadu pro Táborsko (měla by být hotová do roku 2028).
@@ -1020,6 +1072,8 @@ items:
   name_details: Energetika Třinec
   x: 89.2
   y: 47.2
+  lon: 18.67
+  lat: 49.68
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
   notes: V rámci dekarbonizace bude stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu). Následovat má výstavba horkovodu, který povede také do Českého Těšína.
@@ -1048,6 +1102,8 @@ items:
   name_details: Teplárna Otrokovice
   x: 74.1
   y: 61.9
+  lon: 17.52
+  lat: 49.20
   status: problematic
   status_text: Nejasné dokončení odchodu od uhlí
   notes: Teplárna má stále v provozu jeden kotel na uhlí. Druhý uhelný kotel byl přestavěn na 100% spalování biomasy (podpořeno z ModFondu a také provozní podporou). Teplo kromě těchto zdrojů vyrábí také ze zemního plynu, kde navíc využívá průmyslové odpadní teplo. Nejsou jasné plány na úplný odchod od uhlí.
@@ -1086,6 +1142,8 @@ items:
   name_details: Elektrárna Tušimice
   x: 17.3
   y: 25.2
+  lon: 13.36
+  lat: 50.38
   status: in-progress
   status_text: Odchod od uhlí (v teple) do roku 2028
   notes: 'V rámci dekarbonizace by teplo z Tušimic měl nahradit nový zdroj, který bude součástí areálu elektrárny Prunéřov. '
@@ -1110,6 +1168,8 @@ items:
   name_details: DEZA – teplárna závodu
   x: 80.0
   y: 53.8
+  lon: 17.97
+  lat: 49.47
   status: done
   status_text: Bez uhlí
   notes: Teplárna kromě zemníhu plynu spaluje také mazut a různé vedlejší produkty vlastní chemické výroby. Spolčnost DEZA uvádí, že má „dekarbonizační vizi“, konkrétní plán však chybí.
@@ -1139,6 +1199,8 @@ items:
   name_details: Teplárna Kralupy
   x: 30.8
   y: 28.9
+  lon: 14.31
+  lat: 50.24
   status: done
   status_text: Bez uhlí
   notes: Průmyslová teplárna dlouhodobě využívající primárně zemní plyn. Kromě toho spaluje další plyny z chemické výroby (acetylenový plyn, topný plyn z FCC).
@@ -1164,6 +1226,8 @@ items:
   name_details: Mondi Štětí
   x: 31.2
   y: 22.6
+  lon: 14.37
+  lat: 50.45
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: Uhelný kotel podnik plánuje nahradit čistě biomasovým kotlem (podpořeno z ModFondu).
@@ -1198,6 +1262,8 @@ items:
   name_details: Elektrárna Chvaletice
   x: 45.9
   y: 36.2
+  lon: 15.42
+  lat: 50.04
   status: done
   status_text: Dodávky tepla bez uhlí
   notes: Dodávky tepla, které v lokalitě zajišťoval ČEZ, nahradila od září 2025 nová plynová kotelna s moderními kogeneračními jednotkami. Uhelná elektrárna patřící firmě Sev.en stále běží.
@@ -1222,6 +1288,8 @@ items:
   name_details: Orlen Unipetrol –  Energoblok
   x: 20.9
   y: 19.2
+  lon: 13.62
+  lat: 50.60
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
   notes: 'Do konce roku 2027 mají být vystaveny nové plynové kotle, které nahradí uhelné kotle ve stávajícím bloku T700. Dále se předpokládá výstavba nového bloku T600 s paroplynovým cyklem. '
