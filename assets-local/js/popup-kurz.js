@@ -89,6 +89,11 @@
             return;
         }
 
+        // Pokud je v URL hash #newsletter, nic nezobrazujeme (aby se nekryl s formulářem).
+        if (window.location.hash == "#newsletter") {
+            return;
+        }
+
         // První návštěva -- zobrazíme modální okno/pop-up.
         createElements();
         setupMainDialogListeners();
