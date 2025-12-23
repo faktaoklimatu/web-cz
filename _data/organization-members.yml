@@ -79,14 +79,6 @@
     email: "petr.danis@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/petr-danis/"
 
-  - id: "matej-grabovsky"
-    name: "Matěj Kolouch Grabovský"
-    position: "Analytik a programátor"
-    summary: "Tvoří modely, zpracovává a analyzuje data v oblastech spjatých s transformací. Jako softwarový inženýr pracoval na webových aplikacích a distribuovaných systémech."
-    img: "matej-grabovsky.jpg"
-    email: "matej.grabovsky@faktaoklimatu.cz"
-    www: "https://mgrabovsky.net/"
-
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -151,6 +143,11 @@
     name: "Adam Bílek"
     summary: "Pro Fakta o klimatu napsal několik textů o dekarbonizaci průmyslu a energetiky."
     linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+
+  - id: "matej-grabovsky"
+    name: "Matěj Kolouch Grabovský"
+    summary: "Analyzoval data v oblasti klimatu a energetiky. Spolutvořil model evropské elektroenergetiky."
+    www: "https://mgrabovsky.eu/"
 
   - name: "Jan Krajhanzl"
     summary: "Konzultuje, jak k veřejnosti komunikovat náročné téma změny klimatu. Tuto oblast odborně zkoumá se svým týmem na univerzitě a v [Institutu 2050](https://institut2050.cz/)."
