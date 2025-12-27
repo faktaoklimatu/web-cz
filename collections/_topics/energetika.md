@@ -182,6 +182,7 @@ subtopics:
   - srovnani-energetickych-scenaru-cr
   - scenar-transformace-elektroenergetiky
   - 2024-vyroba-elektriny-v-cesku-bez-uhli
+  - 2025-reserse-dashboard-teplaren
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
   - 2020-scenar-bloombergnef
   - 2020-scenar-mckinsey

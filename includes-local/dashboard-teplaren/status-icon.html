@@ -1,0 +1,8 @@
+{% capture status-icon-class -%}
+    {%- case include.status -%}
+        {%- when "done" -%} fa-circle-check
+        {%- when "in-progress" -%} fa-circle-question
+        {%- when "problematic" -%} fa-triangle-exclamation
+    {%- endcase -%}
+{%- endcapture %}
+<i class="status-icon fas {{ status-icon-class }}"></i>

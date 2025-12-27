@@ -1,0 +1,463 @@
+@use "sass:color";
+
+$c-teplarny-grey: #999999;
+$c-teplarny-dark-grey: #737373;
+$c-teplarny-light-grey: #b4b4b4;
+$c-teplarny-uhli: #bb2719;
+$c-teplarny-ostatni: $c-teplarny-light-grey;
+
+$c-teplarny-done: #0085b6;
+$c-teplarny-in-progress: #ffbc5b;
+$c-teplarny-problematic: #bb2719;
+$c-teplarny-problematic-bg: #fff1ef;
+
+#highlights-dashboard-teplaren {
+    .card {
+        border: 1px solid var(--status-color);
+        border-radius: .6rem;
+        margin-block: 1rem;
+        --status-color: grey;
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: var(--status-color);
+        }
+
+        h4 {
+            margin: .2em 0 .2em 0;
+            font-size: 1.7em;
+            font-weight: normal;
+            color: var(--status-color);
+
+            .status-icon {
+                margin-right: .8rem;
+                font-size: .85em;
+            }
+        }
+
+        p {
+            margin: 0 0 0 2.5rem;
+            color: $c-teplarny-dark-grey;
+        }
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{$c-teplarny-in-progress};
+    }
+
+    .status-problematic {
+        background: $c-teplarny-problematic-bg;
+        --status-color: #{$c-teplarny-problematic};
+    }
+
+    .status-not-shown {
+        display: none;
+    }
+
+    .card-body {
+        padding: 1rem 1.25rem .75rem;
+    }
+}
+
+#overall-charts {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 2rem;
+    margin-bottom: 3rem;
+
+    #treemap {
+        max-height: 300px;
+    }
+
+    #treemap .cell text.status {
+        font-size: 1.2rem;
+        font-weight: 600;
+        fill: white;
+        pointer-events: none;
+    }
+
+    #treemap .cell text.pctHouseholds {
+        font-size: 1rem;
+        fill: white;
+    }
+
+    #map {
+        text {
+            font-family: 'Source Sans Pro';
+            paint-order: stroke;
+            stroke: white;
+            stroke-width: 3px;
+        }
+
+        a.facility {
+            text-decoration: none;
+            fill: #3e3e4d;
+
+            .facility-name{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+#controls-status {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+
+    label {
+        color: var(--status-color);
+    }
+
+    input {
+        accent-color: var(--status-color);
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{color.scale($c-teplarny-in-progress, $lightness: -30%)};
+    }
+
+    .status-problematic {
+        --status-color: #{$c-teplarny-problematic};
+    }
+}
+
+#tabulka-dashboard-teplaren {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        padding: 1.2rem 1.5rem;
+        border: 2px solid #d9d9d9;
+        border-radius: .75rem;
+        --status-color: grey;
+    }
+
+    // Problematic card
+
+    .status-problematic {
+        border: 2px solid var(--status-color);
+        background-color: $c-teplarny-problematic-bg;
+
+        .notes::after {
+            background: linear-gradient(to bottom, transparent, $c-teplarny-problematic-bg);
+        }
+    }
+
+    .card-header {
+        display: flex;
+        background: none;
+        border-bottom: 0;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #3e3e4d;
+            margin-bottom: .4rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: .9rem;
+            line-height: 1.2;
+            font-weight: normal;
+            color: $c-teplarny-grey;
+        }
+
+        .owner {
+            margin-left: auto;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: $c-teplarny-light-grey;
+        }
+    }
+
+    .card-body {
+        
+        h3 {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #3e3e4d;
+            margin-bottom: .4rem;
+            margin-top: 0rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: .9rem;
+            font-weight: normal;
+            color: $c-teplarny-grey;
+        }
+
+        .owner {
+            margin-left: auto;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: $c-teplarny-light-grey;
+        }
+    }
+
+    .card-body {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+        padding: 0rem;
+    }
+
+    .status-line {
+        font-weight: bold;
+        color: var(--status-color);
+    }
+
+    .status-icon {
+        margin-right: .3em;
+        font-size: 1.3em;
+        vertical-align: -.1em;
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{$c-teplarny-in-progress};
+    }
+
+    .status-problematic {
+        --status-color: #{$c-teplarny-problematic};
+    }
+
+    .notes {
+        position: relative;
+        max-height: 3em;
+        overflow: hidden;
+        font-size: 1.1rem;
+    }
+
+    .notes::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4em;
+        /* adjust how much of the fade you want */
+        background: linear-gradient(to bottom, transparent, white);
+        pointer-events: none;
+        /* allows clicking through the overlay */
+    }
+
+    .details-toggle .btn {
+        margin: 0;
+        padding: .375em 0;
+        font-size: .7em;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+
+        i {
+            margin-right: .2em;
+            vertical-align: -.1em;
+        }
+    }
+
+    .map {
+        margin-bottom: 2rem
+    }
+
+    .map>div {
+        display: inline-block;
+        position: relative;
+
+        .locator {
+            position: absolute;
+            width: .7rem;
+            height: .7rem;
+            border-radius: 100%;
+            background: var(--status-color);
+        }
+    }
+
+    .badge-fuel {
+        margin-bottom: 0.2rem;
+        padding: .3rem .5rem;
+        background: hotpink;
+        color: white;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    // Palivo: Zásobování odjinud
+    .fuel-alt {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Bioplyn
+    .fuel-biogas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Biomasa
+    .fuel-biomass {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Koksárenský plyn
+    .fuel-cokegas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Černé uhlí
+    .fuel-hardcoal {
+        background-color: $c-teplarny-uhli;
+    }
+
+    // Palivo: TTO
+    .fuel-hho {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: LTO
+    .fuel-lho {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Hnědé uhlí
+    .fuel-lignite {
+        background-color: $c-teplarny-uhli;
+    }
+
+    // Palivo: Hutní plyn
+    .fuel-metgas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Komunální odpad
+    .fuel-msw {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Zemní plyn
+    .fuel-natgas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Jaderné teplo
+    .fuel-nuclear {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: TAP
+    .fuel-srf {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Energoplyn
+    .fuel-syngas {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    // Palivo: Odpadní teplo
+    .fuel-wasteheat {
+        background-color: $c-teplarny-ostatni;
+    }
+
+    .fuel-secondary {
+        opacity: .6;
+        background-color: white;
+        border: 1px solid #999;
+        color: #999;
+    }
+
+    .detail {
+        display: none;
+    }
+
+    .details-shown {
+        .detail {
+            display: block;
+        }
+
+        .not-detail {
+            display: none;
+        }
+
+        .notes {
+            max-height: initial;
+            overflow: visible;
+        }
+
+        .notes::after {
+            display: none;
+        }
+    }
+
+    // Stats labels
+
+    .households,
+    .emissions,
+    .fuels>dt,
+    .subsidies>dt{
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $c-teplarny-grey;
+        margin-bottom: 0rem;
+    }
+
+    .subsidies{
+        .status-rejected {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .detail{
+            margin-bottom: .2rem;
+        }
+    }
+
+    .emissions {
+        margin-top: 1rem;
+    }
+
+    .fuels>dt {
+        margin-bottom: .32rem;
+    }
+
+    // Stats values
+
+    .households-number,
+    .emissions-number,
+    .mf-total {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .households-share {
+        font-size: 1.1rem;
+        color: $c-teplarny-grey;
+        margin-bottom: 0rem;
+
+        .figure {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0rem;
+        }
+    }
+
+    .munis-supplied {
+        font-size: 0.9rem;
+        color: $c-teplarny-grey;
+    }
+
+}
