@@ -68,4 +68,4 @@ Ve zprávě IPCC: Global warming of 1.5°C autoři píší: *...although robust 
 
 [^89]: [Klimatický plán Hlavního města Prahy do roku 2030](https://www.praha.eu/jnp/cz/o_meste/magistrat/tiskovy_servis/tiskove_zpravy/praha_nasla_cestu_k_uhlikove_neutralite.html)
 
-[^99]: [Český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)
+[^99]: [Český překlad Pařížské dohody](https://mzp.gov.cz/system/files/2025-06/733-Parizska_dohoda_CZ-20250620.pdf)

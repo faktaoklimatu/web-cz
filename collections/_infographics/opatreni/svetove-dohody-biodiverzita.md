@@ -27,14 +27,14 @@ caption:    "Ačkoli první mezinárodní úmluvy a strategie věnované ochran�
 Úmluvu ICRW (*International Convention for the Regulation of Whaling*) sjednaly samy velrybářské státy, aby nastavily opatření pro udržitelný lov velryb, který nebude ohrožovat jejich populace. Od roku 1986 platí dočasné moratorium na komerční lov velryb. (Norsko a Island podaly proti moratoriu námitku, a nadále v lovu velryb pokračují.) K úmluvě byla zřízena Mezinárodní velrybářská komise (IWC), která přijímá opatření regulující velrybářství a sleduje jejich dodržování. Velká část ze současných 88 smluvních stran prosazuje, aby se úmluva věnovala primárně ochraně velryb a neotevírala tak možnosti jejich komerčního lovu.
 
 - [Úplné znění Mezinárodní úmluvy o regulaci velrybářství](https://www.zakonyprolidi.cz/ms/2007-7)
-- [Informace o této úmluvě](https://www.mzp.cz/cz/mezinarodni_umluva_o_regulaci_velrybarstvi) na stránkách Ministerstva životního prostředí ČR
+- [Informace o této úmluvě](https://mzp.gov.cz/cz/zahranicni-vztahy/mezinarodni-smlouvy-v-oblasti-zivotniho-prostredi/mezinarodni-umluva-o-regulaci) na stránkách Ministerstva životního prostředí ČR
 
 ### 1971 – Úmluva o mokřadech majících mezinárodní význam především jako biotopy vodního ptactva (Ramsarská úmluva)
 
 Na základě této úmluvy mají smluvní strany povinnost zařadit alespoň jeden ze svých mokřadů na tzv. **Seznam mokřadů mezinárodního významu**, pokud splňuje přísná kritéria v oblasti ekologie, botaniky, zoologie, limnologie či hydrologie, a přispět tak k celosvětové ochraně všech typů mokřadů. [Seznam ohrožených mokřadů](https://rsis.ramsar.org/) zahrnuje mokřady z výše uvedené skupiny, které jsou kvůli ekologickým změnám ohroženy nebo ničeny.
 
-- [Úplné znění Ramsarské úmluvy](https://www.mzp.cz/C1257458002F0DC7/cz/ramsarska_umluva_o_mokradech/$FILE/OZV-ramsar_cesky_text_umluvy-20120228.pdf) (PDF)
-- [Informace o této úmluvě](https://www.mzp.cz/cz/ramsarska_umluva_o_mokradech) na stránkách Ministerstva životního prostředí ČR
+- [Úplné znění Ramsarské úmluvy](https://mzp.gov.cz/system/files/2025-06/733-Ramsarska_umluva_EN-20250620.pdf) (PDF)
+- [Informace o této úmluvě](https://mzp.gov.cz/cz/zahranicni-vztahy/mezinarodni-smlouvy-v-oblasti-zivotniho-prostredi/ramsarska-umluva-o-mokradech) na stránkách Ministerstva životního prostředí ČR
 
 ### 1972 – Úmluva o světovém dědictví
 
@@ -51,15 +51,15 @@ Tato mezinárodní smlouva v rámci Organizace OSN pro vzdělání, vědu a kult
 
 Cílem úmluvy CITES (*Convention on International Trade in Endangered Species of Wild Fauna and Flora*) je **ochrana** ohrožených druhů živočichů a rostlin **před hrozbou vyhubení v přírodě z důvodu nadměrného využívání pro komerční účely**. Úmluva reguluje obchod s exempláři ohrožených druhů získaných z volné přírody, ale v případě druhů v přírodě ohrožených kontroluje i obchod s živočichy odchovanými v zajetí nebo s rostlinami vypěstovanými člověkem.
 
-- [Úplné znění úmluvy CITES](https://www.mzp.cz/C1257458002F0DC7/cz/cites_cesky_text_umluvy/$FILE/Sdeleni%20FMZV.pdf) (PDF)
-- [Informace o této úmluvě](https://www.mzp.cz/cz/cites_obchod_ohrozenymi_druhy) na stránkách Ministerstva životního prostředí ČR
+- [Úplné znění úmluvy CITES](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/cites-obchod-s-ohrozenymi-druhy/cites-cesky-text-umluvy) (PDF)
+- [Informace o této úmluvě](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/cites-obchod-s-ohrozenymi-druhy) na stránkách Ministerstva životního prostředí ČR
 
 ### 1979 – Úmluva o ochraně stěhovavých druhů volně žijících živočichů (Bonnská úmluva)
 
 Úmluva (*Convention on Migratory Species*) se zasazuje o **ochranu stěhovavých druhů živočichů i jejich stanovišť**, a to v celém areálu jejich rozšíření. Seznam druhů, na něž se úmluva vztahuje, je uveden v [přílohách](https://www.cms.int/sites/default/files/basic_page_documents/appendices_cop13_e_0.pdf). Příloha I zahrnuje ohrožené stěhovavé druhy a příloha II pak druhy, na jejichž ochranu je nutné nebo vhodné uzavírat mezinárodní dohody. Mezi takové dohody patří například Dohoda o ochraně populací evropských netopýrů (*Agreement on the Conservation of Population of European Bats*, EUROBATS) a Dohoda o ochraně africko-euroasijských stěhovavých vodních ptáků (*African-Eurasian Waterbird Agreement*, AEWA).
 
-- [Úplné znění Bonnské úmluvy](https://www.mzp.cz/C1257458002F0DC7/cz/bonnska_umluva/$FILE/OZV-cesky_text_umluvy_Bonn-20120131.pdf) (PDF)
-- [Informace o této úmluvě](https://www.mzp.cz/cz/bonnska_umluva) na stránkách Ministerstva životního prostředí ČR
+- [Úplné znění Bonnské úmluvy](https://mzp.gov.cz/system/files/2025-06/733-Bonnska_umluva_CZ-20250620.pdf) (PDF)
+- [Informace o této úmluvě](https://mzp.gov.cz/cz/zahranicni-vztahy/mezinarodni-smlouvy-v-oblasti-zivotniho-prostredi/umluva-o-ochrane-stehovavych) na stránkách Ministerstva životního prostředí ČR
 
 ### 1992 – Úmluva o biologické rozmanitosti
 
@@ -70,7 +70,7 @@ CBD ratifikovalo **všech 195 členských zemí OSN, včetně České republiky*
 **Zdroje:**
 
 - [Úplné znění Úmluvy o biologické rozmanitosti](https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:21993A1213(01)) (PDF)
-- [Informace o této úmluvě](https://www.mzp.cz/cz/ochrana_biodiverzity_umluva) na stránkách Ministerstva životního prostředí ČR
+- [Informace o této úmluvě](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/mezinarodni-umluvy-v-ochrane-prirody/CBD) na stránkách Ministerstva životního prostředí ČR
 
 ### 2000 – Cartagenský protokol
 
@@ -87,7 +87,7 @@ Nagojský protokol o přístupu ke genetickým zdrojům[^geneticke-zdroje] a spr
 **Zdroje:**
 
 - [Úplné znění Nagojského protokolu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=LEGISSUM:20110303_1)
-- [Informace o protokolu](https://www.mzp.cz/cz/nagojsky_protokol) na stránkách Ministerstva životního prostředí ČR
+- [Informace o protokolu](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/mezinarodni-umluvy-v-ochrane-prirody/nagojsky-protokol) na stránkách Ministerstva životního prostředí ČR
 
 ### 2010 – Strategický plán Úmluvy o biologické rozmanitosti: 20 cílů z Aiči
 
@@ -120,8 +120,8 @@ K hodnotící zprávě IPBES se vztahují také opatření obsažená v [Evropsk
 
 **Zdroje:**
 
-- [Úplné znění Globální hodnotící zprávy o biologické rozmanitosti a ekosystémových službách](https://www.mzp.cz/C1257458002F0DC7/cz/globalni_hodnotici_zprava/$FILE/ODOIMZ-IPBES_Globalni_hodnotici_zprava_STP-20210518.pdf) (PDF)
-- [Informace o zprávě](https://www.mzp.cz/cz/globalni_hodnotici_zprava) na stránkách Ministerstva životního prostředí ČR
+- [Úplné znění Globální hodnotící zprávy o biologické rozmanitosti a ekosystémových službách](https://mzp.gov.cz/system/files/2025-01/IPBES_Glob%C3%A1ln%C3%AD%20hodnot%C3%ADc%C3%AD%20zpr%C3%A1va_STP.pdf) (PDF)
+- [Informace o zprávě](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/mezinarodni-umluvy-v-ochrane-prirody/globalni-hodnotici-zprava-ipbes) na stránkách Ministerstva životního prostředí ČR
 
 ### 2020 – Strategie EU v oblasti biologické rozmanitosti do roku 2030
 
@@ -130,7 +130,7 @@ Tato desetiletá strategie z roku 2020 (součást [Zelené dohody pro Evropu](/e
 **Zdroje:**
 
 - [Úplné znění Strategie EU v oblasti biologické rozmanitosti do roku 2030](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52020DC0380)
-- [Informace o strategii](https://www.mzp.cz/cz/biologicka_rozmanitost_2030) na stránkách Ministerstva životního prostředí ČR
+- [Informace o strategii](https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en?prefLang=cs) na stránkách Evropské komise
 
 ### 2022 – Kchun-mingsko-montrealský globální rámec pro biologickou rozmanitost
 
@@ -147,8 +147,8 @@ Dále rámec určuje 23 krátkodobých cílů (do roku 2030), které se zaměřu
 
 **Zdroje:**
 
-- [Úplné znění Kchun-mingsko-montrealského globálního rámce pro biologickou rozmanitost](https://www.mzp.cz/C1257458002F0DC7/cz/kchun_mingsko_montrealsky_globalni_ramec/%24FILE/ODOIMZ-GBF-20231404.pdf) (PDF)
-- [Informace o tomto rámci](https://www.mzp.cz/cz/kchun_mingsko_montrealsky_globalni_ramec) na stránkách Ministerstva životního prostředí ČR
+- [Úplné znění Kchun-mingsko-montrealského globálního rámce pro biologickou rozmanitost](https://mzp.gov.cz/system/files/2025-04/ODOIMZ_GBF_cz_20250402.pdf) (PDF)
+- [Informace o tomto rámci](https://mzp.gov.cz/cz/agenda/priroda-a-krajina/mezinarodni-umluvy-v-ochrane-prirody/KM-GBF) na stránkách Ministerstva životního prostředí ČR
 
 ### 2023 – Dohoda o ochraně biodiverzity v mezinárodních vodách
 

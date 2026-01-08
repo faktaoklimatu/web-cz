@@ -52,7 +52,7 @@ Základní přístup ke snižování emisí by mohl vycházet ze současných em
 
 ### Jak byl stanoven zbývající globální uhlíkový rozpočet?
 
-**Plná citace Pařížské dohody** zní: "Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…" (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
+**Plná citace Pařížské dohody** zní: "Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…" (viz [český překlad Pařížské dohody](https://mzp.gov.cz/system/files/2025-06/733-Parizska_dohoda_CZ-20250620.pdf)).
 
 Jak interpretovat formulaci Pařížské dohody *...výrazně pod hranicí 2 °C...* je otázka, která má politickou dimenzi, ale zároveň je důležitá i z hlediska dopadů oteplení na společnost a rizika překročení bodů zlomu některých velkých ekosystémů. V posudku *Quantifying the implications of Paris Agreement for Czech Republic*[^22]
 je hranice interpretována jako 50% pravděpodobnost nepřekročení oteplení o 1,7 °C. Z toho vyplývá výchozí hodnota globálního uhlíkového rozpočtu 900 Gt CO<sub>2</sub> od roku 2018,[^56] která je dále upravena o emise v letech 2018–2020, zohlednění zpětných vazeb v klimatickém systému, efektů dalších skleníkových plynů a zohlednění procesů, které bude obtížné dekarbonizovat. Z toho pak vychází zbývající globální uhlíkový rozpočet 656 Gt CO<sub>2</sub> od roku 2020, který je dále rozdělován mezi jednotlivé země.
@@ -84,4 +84,4 @@ Poté, co známe globální uhlíkový rozpočet pro dodržení Pařížské doh
 
 [^89]: [Klimatický plán Hlavního města Prahy do roku 2030](https://www.praha.eu/jnp/cz/o_meste/magistrat/tiskovy_servis/tiskove_zpravy/praha_nasla_cestu_k_uhlikove_neutralite.html)
 
-[^99]: [Český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)
+[^99]: [Český překlad Pařížské dohody](https://mzp.gov.cz/system/files/2025-06/733-Parizska_dohoda_CZ-20250620.pdf)

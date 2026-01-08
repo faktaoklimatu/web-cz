@@ -34,7 +34,7 @@ Jak už bylo zmíněno výše, jednotlivé fondy získávají finance předevš�
 
 ### Fond pro spravedlivou transformaci (FST)
 
-Ačkoliv je [FST](https://www.mzp.cz/cz/opst_2021_2027) formálně součástí ESI fondů, odlišuje se tím, že se jedná o nový fond, který vznikl za účelem **minimalizovat negativní dopady dekarbonizace**. Jinými slovy by měl podpořit sociálně spravedlivou rovinu transformace na bezuhlíkovou ekonomiku. Investice z FST ve výši **41 miliard Kč** by měly směřovat zejména do malých a středních podniků, vzniku nových firem, do výzkumu a inovací, rehabilitace životního prostředí, čisté energie, rekvalifikace zaměstnanců ze zasažených odvětví, podpory při hledání nového zaměstnání a transformace uhlíkově náročných provozů. V Česku zamíří do **Karlovarského, Ústeckého a Moravskoslezského kraje**. Protože FST má hlavně minimalizovat negativní dopady dekarbonizace, všechny finance nemusí nutně směřovat přímo na klimatická opatření (prostředky mohou být využity například i na výstavbu montoven, rekvalifikace apod.).
+Ačkoliv je [FST](https://opst.cz/) formálně součástí ESI fondů, odlišuje se tím, že se jedná o nový fond, který vznikl za účelem **minimalizovat negativní dopady dekarbonizace**. Jinými slovy by měl podpořit sociálně spravedlivou rovinu transformace na bezuhlíkovou ekonomiku. Investice z FST ve výši **41 miliard Kč** by měly směřovat zejména do malých a středních podniků, vzniku nových firem, do výzkumu a inovací, rehabilitace životního prostředí, čisté energie, rekvalifikace zaměstnanců ze zasažených odvětví, podpory při hledání nového zaměstnání a transformace uhlíkově náročných provozů. V Česku zamíří do **Karlovarského, Ústeckého a Moravskoslezského kraje**. Protože FST má hlavně minimalizovat negativní dopady dekarbonizace, všechny finance nemusí nutně směřovat přímo na klimatická opatření (prostředky mohou být využity například i na výstavbu montoven, rekvalifikace apod.).
 
 ### Národní plán obnovy (NPO)
 
@@ -87,7 +87,7 @@ Pro další informace o jednotlivých fondech EU a alokacích financí na klimat
 * DotaceEU.cz. [Programové období 2021–2027](https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/kohezni-politika-po-roce-2020)
 * Evropská komise. [Funding for climate action](https://ec.europa.eu/clima/eu-action/funding-climate-action_en)
 * Evropská komise. [NextGenerationEU](https://europa.eu/next-generation-eu/index_en)
-* Ministerstvo životního prostředí. [Fond pro spravedlivou transformaci](https://www.mzp.cz/cz/opst_2021_2027)
+* Ministerstvo životního prostředí. [Fond pro spravedlivou transformaci](https://opst.cz/)
 * Ministerstvo průmyslu a obchodu. [Národní plán obnovy](https://www.planobnovycr.cz/)
 
 ### Poznámky
