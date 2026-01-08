@@ -158,7 +158,7 @@ Role státu je v tomto nezastupitelná: kvalitně zpracovaná strategie je jedno
 Tyto nástroje umožňují sbírat **informace o udržitelnosti aktivit v oblasti byznysu a ve finančním sektoru**, a tím nepřímo tlačit jednotlivé aktéry ke zvyšování udržitelnosti (nebo udržitelností podmiňovat finanční podporu). **Na straně státu** může jít o pravidelné **reportování o tom, jak naplňuje emisní a další závazky**, uvedené v existující legislativě nebo v národních strategických dokumentech. Mezi tyto nástroje patří například:
 * [Taxonomie udržitelných aktivit](/infografiky/taxonomie-eu), která v EU klasifikuje udržitelné aktivity
 * Pravidelné reportování podniků o tom, jak si stojí v oblasti udržitelnosti, na základě [směrnice o podávání zpráv podniků o udržitelnosti](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022L2464) (_Corporate Sustainability Reporting Directive_, CSRD)
-* [Národní inventarizační zprávy](https://www.chmi.cz/files/portal/docs/uoco/oez/nis/nis_uv_cz.html), v nichž Český hydrometeorologický ústav každoročně přináší report o emisích skleníkových plynů v jednotlivých sektorech
+* [Národní inventarizační zprávy](https://www.chmi.cz/kvalita-ovzdusi/emise-sklenikovych-plynu/inventarizace-emisi-sklenikovych-plynu/vysledky-inventarizaci-emisi-sklenikovych-plynu), v nichž Český hydrometeorologický ústav každoročně přináší report o emisích skleníkových plynů v jednotlivých sektorech
 * [Integrované vnitrostátní zprávy o pokroku v oblasti energetiky a klimatu](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32022R2299), ve kterých členské státy EU každé dva roky reportují o plnění svých vnitrostátních plánů
 
 ### Označování zboží a služeb

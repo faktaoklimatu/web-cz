@@ -193,7 +193,7 @@ libor.elleder@chmi.cz<br/>
 
 [^povodne-danhelka]: Daňhelka, J. 2022. Německé povodně zpovzdálí, Meteorologické zprávy č. 2/2022 s. 51–59.
 
-[^povodne-cyklony]: Její příčinou byla dráha srážkotvorné [cyklony typu Vb](https://www.chmi.cz/files/portal/docs/meteo/om/mk/syntypiz/sitweb/B.html) a několikadenní trvalé silné srážky (k těm dochází právě i s ohledem na tvar trajektorie cyklony). Velmi podobné periody přinesly například extrémní přívalové povodně na přelomu června a července 2009 či katastrofální povodně v Jizerských horách v roce 2010.
+[^povodne-cyklony]: Její příčinou byla dráha srážkotvorné [cyklony typu Vb](https://intranet.chmi.cz/files/portal/docs/meteo/om/mk/syntypiz/sitweb/B.html) a několikadenní trvalé silné srážky (k těm dochází právě i s ohledem na tvar trajektorie cyklony). Velmi podobné periody přinesly například extrémní přívalové povodně na přelomu června a července 2009 či katastrofální povodně v Jizerských horách v roce 2010.
 
 [^povodne-buentgen-sucho]: Büntgen, U., Urban, O., Krusic, P.J. et al. Recent European drought extremes beyond Common Era background variability. *Nat. Geosci.* **14**, 190–196 (2021). [doi:10.1038/s41561-021-00698-0](https://doi.org/10.1038/s41561-021-00698-0)
 

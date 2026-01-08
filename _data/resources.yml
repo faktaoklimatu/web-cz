@@ -9,7 +9,7 @@ web_cs:
     url: "http://chmi.cz/"
     image: "chmu.png"
     description-short: "ČHMÚ je ústřední státní orgán ČR pro obory kvality ovzduší, meteorologie, klimatologie či hydrologie."
-    description-long: "V současné době nejvíce těžíme z [přehledu územních teplot](http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty)."
+    description-long: "V současné době nejvíce těžíme z [přehledu územních teplot](https://intranet.chmi.cz/historicka-data/pocasi/uzemni-teploty)."
 
   - title: "CENIA"
     tags: [ zdroje, česky, Česká republika ]
