@@ -11,7 +11,7 @@ caption:    "Srovnání teplot jednotlivých měsíců dekád 1961–1970 a 2012
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"
 data-our:   "https://docs.google.com/spreadsheets/d/1uxIsR2OcKT1rF7cvLiT_QrezAXN63ikOIfpef7TZvMc/edit?usp=sharing"
-data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
+data-orig:  [ [ "Zdrojová data ČHMÚ", "https://intranet.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 
 ---
 

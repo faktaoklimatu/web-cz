@@ -12,7 +12,7 @@ caption:    "Průměrná roční teplota v České republice narostla za posledn
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"
 data-our:   "https://docs.google.com/spreadsheets/d/1U3V4Os-CLK0af4fygfWlKV7sCx3O8_lfWBYohJcEfaY/edit?usp=sharing"
-data-orig:  [ [ "Zdrojová data ČHMÚ", "http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
+data-orig:  [ [ "Zdrojová data ČHMÚ", "https://intranet.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 ---
 
 ## Další komentáře a odkazy
