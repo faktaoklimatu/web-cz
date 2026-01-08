@@ -147,8 +147,8 @@ Ta je **důležitá pro rozvoj a efektivitu klimaticky prospěšných opatření
 Informují jednotlivé aktéry o tom, **co lze čekat od státní politiky v oblasti dekarbonizace.** Například průmysl může díky kvalitním strategiím lépe plánovat svou budoucí výrobu – v některých sektorech probíhá toto plánování až na desítky let dopředu. Mezi tyto dokumenty patří například:
 * [Vnitrostátní plán ČR v oblasti energetiky a klimatu](https://www.mpo.gov.cz/cz/energetika/strategicke-a-koncepcni-dokumenty/aktualizace-vnitrostatniho-planu-ceske-republiky-v-oblasti-energetiky-a-klimatu--277532/)
 * [Státní energetická koncepce ČR](https://www.mpo.gov.cz/cz/energetika/statni-energeticka-politika/statni-energeticka-koncepce--223620/)
-* [Politika ochrany klimatu ČR](https://www.mzp.cz/cz/politika_ochrany_klimatu_2017)
-* [Strategie přizpůsobení se změně klimatu v podmínkách ČR](https://www.mzp.cz/cz/zmena_klimatu_adaptacni_strategie)
+* [Politika ochrany klimatu ČR](https://mzp.gov.cz/cz/ministerstvo/politika-a-strategie-mzp/pripravovane-strategicke-dokumenty/politika-ochrany-klimatu)
+* [Strategie přizpůsobení se změně klimatu v podmínkách ČR](https://mzp.gov.cz/cz/agenda/klima-a-energetika/adaptace-na-zmenu-klimatu)
 * Sektorové strategie ČR – [Vodíková strategie](https://www.mpo.gov.cz/cz/prumysl/strategicke-projekty/vodikova-strategie-cr-aktualizace-2024-schvalena-vladou--282165/), [Dlouhodobá strategie renovací budov](https://www.mpo.gov.cz/cz/energetika/energeticka-ucinnost/strategicke-dokumenty/dlouhodoba-strategie-renovaci-budov--255200/) a další
 
 Role státu je v tomto nezastupitelná: kvalitně zpracovaná strategie je jednou z hlavních podmínek úspěšné dekarbonizace. Každá loď potřebuje mít jasný kurs, protože bez něj se nikam doplout nedá – nikdo v takové situaci neví, co má dělat nebo jak může přispět.

@@ -98,15 +98,16 @@ První část AR6 vyšla ještě před klimatickou konferencí COP26, která pro
 * Údaje o počtech autorů a počtech zpracovaných připomínek zprávy AR6 vychází z [Sixth Assessment Report Fact Sheet](https://www.ipcc.ch/site/assets/uploads/2021/06/Fact_sheet_AR6.pdf).
 
 ### České překlady shrnutí ke zprávám AR6
-* [IPCC – Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_fyzikalni_zaklady/$FILE/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě IPCC, web MŽP
-* [IPCC – Dopady, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_dopady_adaptace_zranitelnost/$FILE/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě IPCC, web MŽP
-* [IPCC – Mitigace](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_preklad_hodnotici_zpravy/$FILE/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) – český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Fyzikální základy](https://mzp.gov.cz/system/files/2025-03/OEOK_AR6%20WGI%20SPM%20CZ_20210909.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Šesté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Dopady, adaptace a zranitelnost](https://mzp.gov.cz/system/files/2025-03/OEOK_AR6%20WGII%20SPM%20CZ_20220328.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Šesté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Mitigace](https://mzp.gov.cz/system/files/2025-03/OEOK_AR6_WGIII_SPM_CZ_20220520.pdf) – český překlad shrnutí zprávy Pracovní skupiny III k Šesté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Souhrnná zpráva](https://mzp.gov.cz/system/files/2025-03/OEOK-AR6_SYR_CZ-20230920.PDF) – český překlad shrnutí Souhrnné zprávy k Šesté hodnotící zprávě IPCC, web MŽP
 
 ### České překlady shrnutí ke starším zprávám AR5
-* [IPCC – Fyzikální základy](https://www.mzp.cz/C1257458002F0DC7/cz/ipcc_zmena_klimatu_zmirnovani/$FILE/OEOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě IPCC, web MŽP
-* [IPCC – Dopady změny klimatu, adaptace a zranitelnost](https://www.mzp.cz/C1257458002F0DC7/cz/zprava_pracovni_skupiny_ipcc/$FILE/OEOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě IPCC, web MŽP
-* [IPCC – Mitigace změny klimatu](https://www.mzp.cz/C1257458002F0DC7/cz/mitigace_zmeny_klimatu_ipcc/$FILE/OEOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf) – anglická verze a český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě IPCC, web MŽP
-* [IPCC – Souhrnná zpráva](https://www.mzp.cz/C1257458002F0DC7/cz/souhrnna_zprava_ipcc_2015/$FILE/OEOK-IPCC_SYR_report_CZ-20150504.pdf) – anglická verze a český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Fyzikální základy](https://mzp.gov.cz/cz/system/files?file=2024-08/OPOK-IPCC_WGI_report_oprava2_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny I k Páté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Dopady změny klimatu, adaptace a zranitelnost](https://mzp.gov.cz/cz/system/files?file=2024-08/OPOK-IPCC_WGII_report_oprava_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny II k Páté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Mitigace změny klimatu](https://mzp.gov.cz/cz/system/files?file=2024-08/OPOK-IPCC_WGIII_report_oprava_CZ-20150227.pdf) – český překlad shrnutí zprávy Pracovní skupiny III k Páté hodnotící zprávě IPCC, web MŽP
+* [IPCC – Souhrnná zpráva](https://mzp.gov.cz/cz/system/files?file=2024-08/OPOK-IPCC_SYR_report_CZ-20150504.pdf) – český překlad shrnutí Souhrnné zprávy k Páté hodnotící zprávě IPCC, web MŽP
 
 ### Další odkazy a poznámky
 

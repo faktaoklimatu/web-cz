@@ -46,7 +46,7 @@ Podrobnou metodologickou diskusi najdete v článku [Global Carbon Budget 2019](
 
 ## Proč se v rámci Pařížské dohody stanovil cíl omezit oteplení o 1,5 °C resp. 2 °C?
 
-__Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…"_ (viz [český překlad Pařížské dohody](https://www.mzp.cz/C1257458002F0DC7/cz/parizska_dohoda/$FILE/OEOK-Cesky_preklad_dohody-20160419.pdf)).
+__Plná citace Pařížské dohody__ zní: _"Cílem této dohody je zlepšit globální reakci na hrozby změny klimatu mimo jiné pomocí udržení nárůstu průměrné globální teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí a úsilí o to, aby nárůst teploty nepřekročil hranici 1,5 °C oproti hodnotám před průmyslovou revolucí…"_ (viz [český překlad Pařížské dohody](https://mzp.gov.cz/system/files/2025-06/733-Parizska_dohoda_CZ-20250620.pdf)).
 
 Vzhledem k tomu, že v současnosti dosáhlo oteplení hodnoty přibližně 1,2 °C oproti předindustriálnímu období a emise dále rostou, je cíl udržet nárůst teploty pod 1,5 °C na hranici dosažitelnosti a cíl udržet nárůst teploty pod hranicí 2 °C je velmi ambiciózní. Zároveň ale již oteplení okolo 2 °C může překročit mnoho ekosystémových bodů zlomu a bude mít velké negativní dopady pro lidstvo. Podrobněji se srovnání dopadů oteplení o 1,5 °C, 2 °C a 3 °C věnuje [zpráva IPCC SR15](https://www.ipcc.ch/sr15/) a poznání o bodech zlomu shrnují [naše grafiky](/infografiky/body-zlomu-1).
 

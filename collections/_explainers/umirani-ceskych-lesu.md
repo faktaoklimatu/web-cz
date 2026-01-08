@@ -132,7 +132,7 @@ Potřebné kroky vyplývají už z výše uvedeného: je nutné změnit způsob 
 
 [^23]: Obecně platí, že monokultury bývají méně odolné než smíšené porosty. Výjimkou jsou ale akátové lesy. Akát je nepůvodní invazní dřevina, jeho kořeny vypouštějí látky, které jsou pro ostatní rostliny toxické, nemá přirozené škůdce, a je proto schopen tvořit velmi odolné monokultury, ze kterých vytlačí všechny ostatní rostliny.
 
-[^24]: Hruška, J., Kopáček, J.: [Kyselý déšť stále s námi – zdroje, mechanismy, účinky, minulost a budoucnost](https://www.mzp.cz/web/edice.nsf/DC21A4C7F0AFAD0AC1257081001AA6B7/$file/planeta_web.pdf), (2005), Ministerstvo životního prostředí ČR.
+[^24]: Hruška, J., Kopáček, J.: [Kyselý déšť stále s námi – zdroje, mechanismy, účinky, minulost a budoucnost](https://mzp.gov.cz/system/files/2025-02/Planeta_c5-2005.pdf), (2005), Ministerstvo životního prostředí ČR.
 
 [^25]: Chuchman, T., Oulehle, F., Hruška, J.: [Poškozování ekosystémů nadměrnou depozicí dusíku a vyjádření míry kritické zátěže](https://ziva.avcr.cz/files/ziva/pdf/poskozovani-ekosystemu-nadmernou-depozici-dusiku-a.pdf), (2019), Živa, nakladatelství Academia, [přílohy a mapy](https://ziva.avcr.cz/2020-4/poskozovani-ekosystemu-nadmernou-depozici-dusiku-a-vyjadreni-miry-kriticke-zateze.html)
 

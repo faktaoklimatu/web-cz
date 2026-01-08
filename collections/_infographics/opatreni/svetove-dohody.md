@@ -62,7 +62,7 @@ Kjótský protokol vstoupil v platnost v únoru 2005 a ratifikovalo ho 192 zemí
 
 - [Text Kjótského protokolu](https://unfccc.int/resource/docs/convkp/kpeng.html) na webu UNFCCC
 - Stránka o [Kjótském protokolu](https://en.wikipedia.org/wiki/Kyoto_Protocol) na anglické Wikipedii
-- Text [Kjótského protokolu v češtině](https://www.mzp.cz/cz/kjotsky_protokol) na stránkách Ministerstva životního prostředí
+- Text [Kjótského protokolu v češtině](https://mzp.gov.cz/system/files/2025-06/733-Kjotsky_protokol_CZ-20250620.pdf) na stránkách Ministerstva životního prostředí
 
 {% include preview-box.html
     title="Srovnání typů mitigačních opatření"
@@ -81,7 +81,7 @@ V roce 2020 proběhla reforma, která řeší například přebytek povolenek a 
 **Zdroje:**
 
 - Stránky o [EU ETS](https://en.wikipedia.org/wiki/European_Union_Emission_Trading_Scheme) na anglické Wikipedii
-- [Dokumenty o obchodování s emisemi](https://www.mzp.cz/cz/emisni_obchodovani) na stránkách Ministerstva životního prostředí
+- [Dokumenty o obchodování s emisemi](https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani) na stránkách Ministerstva životního prostředí
 
 ### 2010 – Zelený klimatický fond (GCF)
 
@@ -110,7 +110,7 @@ Dohoda zavazuje členské státy ke stanovení a dodržení tzv. národních zá
 - Vysvětlení [základních souvislostí](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) Pařížské dohody, UNFCCC/OSN
 - [Klíčové aspekty](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement/key-aspects-of-the-paris-agreement) Pařížské dohody, UNFCCC/OSN
 - [Originální text dohody, UNFCCC](https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf)
-- [Český překlad textu dohody](https://www.mzp.cz/cz/parizska_dohoda) na stránkách Ministerstva životního prostředí ČR
+- [Český překlad textu dohody](https://mzp.gov.cz/system/files/2025-06/733-Parizska_dohoda_CZ-20250620.pdf) na stránkách Ministerstva životního prostředí ČR
 
 {% include preview-box.html
     title="Ekosystémové body zlomu"
