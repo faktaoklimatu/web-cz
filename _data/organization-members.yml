@@ -13,25 +13,6 @@
     linkedin: "https://www.linkedin.com/in/ondr%C3%A1%C5%A1-p%C5%99ibyla-b4b90022/"
     twitter: "https://twitter.com/OPribyla"
 
-  - id: "zdenek-daniel"
-    name: "Zdeněk Daniel"
-    position: "Provozní ředitel"
-    summary: "Má na starosti finanční řízení, projektové řízení, vedení a rozvoj lidí a pokrývá provozní témata. Společně s Ondrášem hledá cesty, jak organizaci dále posilovat tak, aby co nejlépe dosahovala svých cílů."
-    img: "zdenek-daniel.jpg"
-    email: "zdenek.daniel@faktaoklimatu.cz"
-    phone: "+420 606 728 940"
-    linkedin: "https://www.linkedin.com/in/zdenek-daniel/"
-
-  - id: "kristi-psorn-zakopcanova"
-    name: "Kristi Pšorn Zákopčanová"
-    name_formal: "Kristína Pšorn Zákopčanová"
-    position: "Vedoucí designu a grafiky"
-    summary: "Její práci vidíte na většině našich infografik – zabývá se analýzou a vizuální komunikací dat a informací. Pracuje také v datovém týmu iRozhlasu a konzultuje pro PAQ Research. Za svou práci [dostala](https://www.irozhlas.cz/zivotni-styl/novinarska-cena-2021-irozhlas-inovativni-zurnalistika-seznam_2206241001_sam) _Cenu za inovativní online žurnalistiku_."
-    img: "kristi-zakopcanova.jpg"
-    email: "kristi.zakopcanova@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/kristina-zakopcanova/"
-    twitter: "https://twitter.com/kris_zak"
-
   - id: "jan-krcal"
     name: "Jan Krčál"
     position: "Vedoucí analytik"
@@ -88,14 +69,6 @@
     linkedin: "https://www.linkedin.com/in/marcel-otruba-778a32203/"
     www: "https://otruba.sk/"
 
-  - id: "zbynek-stajer"
-    name: "Zbyněk Štajer"
-    position: "Projektový manažer"
-    summary: "Věnuje se zejména dopravě a energetice. Pro přístup ke komplexním problémům využívá design thinking a zkušenosti získané z konzultantské kariéry."
-    img: "zbynek-stajer.jpg"
-    email: "zbynek.stajer@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/zbynekstajer/"
-
   - id: "milan-vitek"
     name: "Milan Vítek"
     position: "Média, PR a sociální sítě"
@@ -106,14 +79,11 @@
     linkedin: "https://www.linkedin.com/in/milan-v%C3%ADtek-151b456b/"
     twitter: "https://twitter.com/vitekmilan"
 
-  - id: "hana-tesak-vrtala"
-    name: "Hana Tesák Vrtala"
-    position: "Podcasterka"
-    summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích učitelů přírodních věd. Ve Faktech o klimatu spoluvytváří podcast [2050](https://2050podcast.cz/)."
-    img: "hana-vrtalova.jpg"
-    email: "hana.vrtalova@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
-    twitter: "https://twitter.com/HVrtalova"
+  - id: "eliska-soperova"
+    name: "Eliška Soperová"
+    position: "Analytička"
+    summary: "Přispívá především k otázkám spojeným s klimatickou politikou Číny a EU. Studuje obor zaměřený na evropskou politiku se specializací na životní prostředí a energetiku v Paříži."
+    img: "eliska-soperova.jpg"
 
   - id: "martin-ukrop"
     name: "Martin Ukrop"
@@ -143,6 +113,11 @@
     name: "Adam Bílek"
     summary: "Pro Fakta o klimatu napsal několik textů o dekarbonizaci průmyslu a energetiky."
     linkedin: "https://www.linkedin.com/in/adam-b-1467861bb/"
+
+  - id: "zdenek-daniel"
+    name: "Zdeněk Daniel"
+    summary: "V průběhu roku 2025 měl na starosti finanční řízení, projektové řízení, vedení a rozvoj lidí a pokrýval provozní témata."
+    linkedin: "https://www.linkedin.com/in/zdenek-daniel/"
 
   - id: "matej-grabovsky"
     name: "Matěj Kolouch Grabovský"
@@ -178,10 +153,6 @@
     name: "Oldřich Sklenář"
     summary: "V projektu konzultuje ohledně energetiky. Na řadě infografik přímo spolupracoval."
 
-  - id: "eliska-soperova"
-    name: "Eliška Soperová"
-    summary: "Přispívá především k otázkám spojeným s klimatickou legislativou EU a jednotlivých členských států."
-
   - id: "kristyna-simonova"
     name: "Kristýna Šimonová"
     summary: "Spolupracovala na materiálech týkajících se globálních úmluv v oblasti biodiverzity."
@@ -200,12 +171,30 @@
     name: "Kristina Studená"
     summary: "Starala se o efektivní fungování týmu, včetně správy projektů, koordinaci interních procesů a péči o dárce a dárkyně."
 
+  - id: "zbynek-stajer"
+    name: "Zbyněk Štajer"
+    summary: "Ve Faktech se analyticky věnoval zejména dopravě a energetice a jako projektový manažer stál za [Atlasem dekarbonizace Česka](/atlas-dekarbonizace)."
+    linkedin: "https://www.linkedin.com/in/zbynekstajer/"
+
   - name: "Eliška Vlčková"
     summary: "Spolupracovala na řadě materiálů týkajících se krajiny, biodiverzity či ochrany životního prostředí. Zpracovává prostorová data a tvoří kartografické výstupy."
     linkedin: "https://www.linkedin.com/in/eliška-vlčková-080a4082/"
 
+  - id: "hana-tesak-vrtala"
+    name: "Hana Tesák Vrtala"
+    summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích učitelů přírodních věd. Ve Faktech o klimatu spoluvytvářela podcast [2050](https://2050podcast.cz/)."
+    linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
+    twitter: "https://twitter.com/HVrtalova"
+
   - name: "Martin crysman Zahradník"
     summary: "V projektu na jeho počátku pomáhal s tím, co bylo potřeba (korektury, opravy, drobné programování)."
+
+  - id: "kristi-psorn-zakopcanova"
+    name: "Kristi Pšorn Zákopčanová"
+    name_formal: "Kristína Pšorn Zákopčanová"
+    summary: "Otisk její práce vidíte u mnoha našich infografik – konzultuje a školí vizuální komunikaci dat a informací. Za svou práci [dostala](https://www.irozhlas.cz/zivotni-styl/novinarska-cena-2021-irozhlas-inovativni-zurnalistika-seznam_2206241001_sam) _Cenu za inovativní online žurnalistiku_."
+    linkedin: "https://www.linkedin.com/in/kristina-zakopcanova/"
+    twitter: "https://twitter.com/kris_zak"
 
   - id: "jakub-zamouril"
     name: "Jakub Zamouřil"
