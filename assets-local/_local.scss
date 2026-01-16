@@ -681,3 +681,31 @@ $c-online-course-green: #14b8a6;
         }
     }
 }
+
+.uhelna-studie2-vysledky {
+    clear: both;
+
+    .ikona {font-size: 2rem;}
+    .kruh {
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 0;           /* Removes default text line height */
+        display: flex;
+        align-items: center;      /* Vertical center */
+        justify-content: center;   /* Horizontal center */
+        border: 2px solid #333;
+        border-radius: 50%;       /* Makes it a circle */
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+}
+
+    .nazev { font-size: 1.3rem; }
+    .hodnota {
+        font-size: 3.2rem; font-weight: bold;
+        span { font-size: 2rem; }
+    }
+    .komentar {
+        font-size: 0.9rem;
+        color: colors.$c-grey;
+    }
+}
