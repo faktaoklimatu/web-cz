@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas dekarbonizace a online kurz Dekarbonizujeme Česko</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Konec uhlí v Česku</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,41 +37,19 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-8">
         <p>
-        Publikace <strong>Atlas dekarbonizace</strong> zaměřuje debatu na řešení, ukazuje sektory s největším potenciálem pro snížení emisí a inspiruje k dalším krokům v daty podložené dekarbonizaci.
+        Česko stále vyrábí zhruba třetinu elektřiny v uhelných zdrojích, které jsou v Evropě kvůli vysokým emisím skleníkových plynů pod velkým ekonomickým tlakem. Skupina Sev.en nedávno oznámila záměr odstavit své elektrárny Počerady a Chvaletice a teplárnu Kladno.
         </p>
         <p>
-        Online kurz <strong>Dekarbonizujeme Česko</strong> ukáže, jak si najít v dekarbonizaci vlastní místo a jak se v ní vyznat; jde totiž o jednu z klíčových oblastí prosperity společnosti.
+        Naše nová studie zkoumá důsledky tohoto kroku na zdrojovou přiměřenost Česka. Z podrobného modelování vyplývá, že <strong>odstavení elektráren Počerady a Chvaletice by neohrozilo dodávky elektřiny v Česku a mělo by jen malý dopad na ceny elektřiny</strong>.
+        </p>
+        <p>
+        Zároveň ale platí, že česká soustava dnes není připravena na okamžité odstavení všech uhelných elektráren. Další kroky proto musí směřovat k <strong>systematické přípravě náhrady uhelných zdrojů</strong> – jak z hlediska výroby elektřiny, tak podpůrných služeb a teplárenství.
         </p>
       </div>
-      <div class="col-md-4">
-        <div class="preview-card-container">
-          <a href="/atlas-dekarbonizace" class="preview-card card ">
-            <div style="--background: url('/assets-local/atlas-dekarbonizace/atlas-dekarbonizace-cover.png')" title="Atlas dekarbonizace Česka" class="preview-card-image img-fluid card-img">
-            </div>
-            <div class="card-img-overlay card-title-overlay">
-              <h5 class="card-title">Atlas dekarbonizace <br>Česka</h5>
-              <h6 class="card-subtitle">
-                Publikace
-              </h6>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="preview-card-container">
-          <a href="https://dekarbonizujemecesko.cz/" class="preview-card card">
-            <div style="--background: url('/assets-local/atlas-dekarbonizace/online-kurz-cover.png')" title="Dekarbonizujeme Česko" class="preview-card-image img-fluid card-img">
-            </div>
-            <div class="card-img-overlay card-title-overlay">
-              <h5 class="card-title">Dekarbonizujeme <br>Česko</h5>
-              <h6 class="card-subtitle">
-                Online kurz
-              </h6>
-            </div>
-          </a>
-        </div>
+      <div class="col-md">
+        {% include preview-block.html slug="2026-konec-uhli-v-cesku" no_include_tags=true %}
       </div>
     </div>
   </div></div>
