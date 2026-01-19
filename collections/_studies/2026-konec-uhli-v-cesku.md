@@ -32,9 +32,9 @@ perex: |
 
 Současná situace kolem skupiny Sev.en je prvním reálným testem nové legislativy zavedené v srpnu 2025 (v rámci tzv. Lex Plyn). Energetický zákon nově v § 34 definuje postup pro případ ohrožení bezpečnosti dodávek při odstavování klíčových zdrojů:
 
-* **Oznamovací povinnost**: Výrobci elektřiny musí záměr uzavřít zdroj o výkonu 100 MWe a více oznámit nejméně 11 měsíců předem.
+* **Oznamovací povinnost**: Výrobci elektřiny musí záměr uzavřít zdroj o výkonu 100&nbsp;MWe a více oznámit nejméně 11 měsíců předem.
 * **Role ČEPS**: Provozovatel přenosové soustavy má následně 60 dní na posouzení, zda toto uzavření neohrozí bezpečný a spolehlivý provoz elektrizační soustavy. Pokud identifikuje riziko, doporučí zachování provozu.
-* **Zásah ERÚ**: V takovém případě může Energetický regulační úřad (dle § 12) uložit povinnost pokračovat v provozu nad rámec původní licence. Provozovatele takového zdroje může ERÚ vysoutěžit v rámci výběrového řízení.
+* **Zásah ERÚ**: V takovém případě může Energetický regulační úřad (dle §&nbsp;12) uložit povinnost pokračovat v provozu nad rámec původní licence. Provozovatele takového zdroje může ERÚ vysoutěžit v rámci výběrového řízení.
 * **Ekonomická kompenzace**: Subjektu, kterému byla tato povinnost uložena, náleží náhrada prokazatelné ztráty a přiměřený zisk.
 
 Tato studie přináší nezávislou analýzu této situace a současně přidává další doplňkové scénáře.
@@ -52,14 +52,14 @@ Na základě oznámení skupiny Sev.en uvažuje analýza dva hlavní scénáře:
 ## Tyto zdroje nejsou potřeba pro zdrojovou přiměřenost
 
 Podle provedeného modelování by odstavení elektráren skupiny Sev.en mělo **minimální dopady** na českou soustavu,
-při ceně povolenky 90 €/t CO₂ by elektrárny Sev.en stejně vyráběly jen málo.
+při ceně povolenky 90&nbsp;€/t&nbsp;CO₂ by elektrárny Sev.en stejně vyráběly jen málo.
 
 <div class="container-fluid wide-figure-desktop uhelna-studie2-vysledky mb-4">
 <div class="row">
 <div class="col-md-4 my-3 px-0">
 <div class="publication-card">
 <div class="ikona"><i class="fa-solid fa-circle-arrow-right" style="color: #9a9a9a"></i></div>
-<div class="nazev">Čistý import vyšší jen o</div>
+<div class="nazev">Čistý import vyšší jen&nbsp;o</div>
 <div class="hodnota">0,5–1,5 <span>TWh</span></div>
 <div class="komentar">tedy jen cca 1–2 % spotřeby</div>
 </div></div>
@@ -67,13 +67,13 @@ při ceně povolenky 90 €/t CO₂ by elektrárny Sev.en stejně vyráběly jen
 <div class="publication-card">
 <div class="ikona"><i class="fa-solid fa-circle-check" style="color: #8ac7d0"></i></div>
 <div class="nazev">Žádné nedodávky elektřiny</div>
-<div class="hodnota">LOLE = 0<span>h</span></div>
+<div class="hodnota">LOLE =&nbsp;0<span>h</span></div>
 <div class="komentar">LOLE značí <em>loss of load expectation</em> neboli očekávaný počet hodin s nedodávkou elektřiny za rok</div>
 </div></div>
 <div class="col-md-4 my-3 px-0">
 <div class="publication-card">
 <div class="ikona"><i class="fa-solid fa-coins" style="color: #fac66c"></i></div>
-<div class="nazev">Silová elektřina dražší jen o</div>
+<div class="nazev">Silová elektřina dražší jen&nbsp;o</div>
 <div class="hodnota">0–2 <span>€/MWh</span></div>
 <div class="komentar">v celoročním průměru v Česku, nárůst ceny jen do 2 %</div>
 </div></div>
