@@ -8,9 +8,9 @@ weight:     70
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazeny podle sektorů."
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-selected-countries.ipynb"
 data-orig:
   - [ "Eurostat", "https://ec.europa.eu/eurostat/web/products-datasets/-/ENV_AIR_GGE" ]
-  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-selected-countries.ipynb" ]
 ---
 
 ## Co je v grafice zobrazeno?

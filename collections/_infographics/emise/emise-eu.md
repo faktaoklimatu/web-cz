@@ -8,8 +8,8 @@ weight:     95
 tags-scopes: [ eu ]
 tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí 27 členských států EU a přepočet na obyvatele."
+data-jupyter:  "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-EU.ipynb"
 data-orig:
-  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-EU.ipynb" ]
   - [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/view/ENV_AIR_GGE" ]
 ---
 

@@ -8,8 +8,8 @@ weight:     93
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2024 a srovnání se spotřebou pro členské státy Evropské unie a Velkou Británii. Hodnoty jsou uváděné v kWh na osobu za rok."
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/per-capita-electricity-generation-eu.ipynb"
 data-orig:
-  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/per-capita-electricity-generation-eu.ipynb" ]
   - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/" ]
   - [ "OSN (populace)", "https://population.un.org/wpp/Download/Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx" ]
 ---

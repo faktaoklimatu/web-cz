@@ -8,7 +8,7 @@ weight:     92.5
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
 caption:    "Výroba elektřiny ve státech Evropské unie a ve Velké Británii v roce 2021 podle podílu jaderných, fosilních a obnovitelných zdrojů. V Česku se na výrobě elektřiny podílely z 50 % fosilní paliva, z 37 % jaderná energie a 13 % vyrobily obnovitelné zdroje."
-data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-mixes-eu.ipynb"]]
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-mixes-eu.ipynb"
 ---
 
 ## Jak číst infografiku
