@@ -4,7 +4,6 @@
 /* Local CSS for Czech web version */
 $c-callout-background: #f7efde;
 $c-callout-text: #373633;
-$c-online-course-green: #14b8a6;
 
 .intro {
     .tagline { width: 15.2rem; }
@@ -598,88 +597,8 @@ $c-online-course-green: #14b8a6;
     color: #8ab59b;
 }
 
-.negative-margin-bottom {
+.negative-margin-bottom{
     margin-bottom: -1.5rem !important;
-}
-
-// Online course pop-up
-
-#online-course-modal {
-    .modal-content {
-        background-image: linear-gradient(0deg, #011f26, transparent), url("/assets-local/img/online-course-popup.jpg");
-        background-size: cover;
-        background-position: center;
-        color: white;
-
-        h2,
-        p {
-            color: white;
-            text-align: center;
-        }
-
-    }
-
-    .modal-body {
-        padding: 5px;
-    }
-
-    .icons-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        margin-bottom: 50px;
-        line-height: 1.2;
-        font-size: 1rem;
-
-        img {
-            display: none;
-        }
-    }
-
-
-    .big-number {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .btn-white {
-        background-color: $c-online-course-green;
-        color: white;
-        margin-top: 0px;
-
-        &:hover {
-            background-color: white;
-            color: $c-online-course-green;
-            margin-top: 50px;
-        }
-    }
-
-    button.close {
-        text-align: right;
-        padding-right: 0.5rem;
-        padding-top: 0.2rem;
-        color: white;
-        opacity: 1;
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 768px) {
-    #online-course-modal {
-        .modal-body {
-            padding: 100px 50px 50px 50px;
-        }
-
-        .icons-container {
-            margin-top: 50px;
-            font-size: 1.1rem;
-
-            img {
-                display: inline;
-                margin-bottom: 0.5rem;
-            }
-        }
-    }
 }
 
 .uhelna-studie2-vysledky {
