@@ -8,8 +8,8 @@ weight:     93.1
 tags-scopes: [ eu ]
 tags-topics: [ energetika ]
 caption:    "Podíl obnovitelných zdrojů na výrobě elektřiny v EU se mezi lety 2000–2024 zvýšil přibližně 17×. Nejvyšší podíl těchto zdrojů má Dánsko, nejnižší Česko."
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-res.ipynb"
 data-orig:
-  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-res.ipynb" ]
   - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/" ]
 ---
 

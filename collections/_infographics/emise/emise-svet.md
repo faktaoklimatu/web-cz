@@ -8,8 +8,8 @@ weight:     80
 tags-scopes: [ svet ]
 tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele."
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-Global.ipynb"
 data-orig:
-  - [ "Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-Global.ipynb" ]
   - [ "Zdrojová databáze EDGAR", "https://edgar.jrc.ec.europa.eu/dataset_ghg2024" ]
 ---
 

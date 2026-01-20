@@ -98,6 +98,7 @@ sidebar:
     caption-data: "Chcete vidět konkrétní čísla? Podívejte se na naši tabulku s daty nebo na původní zdroje."
     button-dataset: "Náš dataset"
     button-data: "Naše tabulka s daty"
+    button-data-jupyter: "Náš notebook s daty"
     button-data-orig: "Původní zdroje dat"
   share:
     title: "Sdílení a licence"

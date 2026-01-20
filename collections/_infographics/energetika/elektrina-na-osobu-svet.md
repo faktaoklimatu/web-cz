@@ -8,7 +8,10 @@ weight:     120
 tags-scopes: [ svet ]
 tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny ve světě v přepočtu na osobu podle jednotlivých zdrojů v letech 2000–2024, včetně údajů pro hlavní světové regiony. Hodnoty jsou uváděné v kWh na osobu za rok."
-data-orig:  [["Náš Jupyter notebook", "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-world-regions.ipynb"], ["Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/"], ["OSN (populace)", "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx"]]
+data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-world-regions.ipynb"
+data-orig:
+ - [ "Ember (výroba a spotřeba elektřiny)", "https://ember-energy.org/data/yearly-electricity-data/" ]
+ - [ "OSN (populace)", "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/1_General/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT.xlsx" ]
 ---
 
 ## Jak číst tento graf
