@@ -13,8 +13,8 @@ slug: index
         </p>
         <p class="intro-buttons">
             <a href="{{ site.fundraising }}" class="btn btn-primary d-md-none"><i class="fas fa-fw fa-heart"></i> Podpořte nás</a>
-            <a href="#temata" class="btn btn-secondary no-ext-link-icon">Naše grafy a články</a>
-            <a href="https://2050podcast.cz/" class="btn btn-secondary no-ext-link-icon">Podcast 2050 <i class="fas fa-fw fa-headphones"></i></a>
+            <a href="https://2050podcast.cz/" class="btn btn-secondary no-ext-link-icon"><i class="fas fa-fw fa-headphones"></i> Podcast 2050</a>
+            <a href="https://dekarbonizujemecesko.cz/" class="btn btn-secondary no-ext-link-icon"><i class="fas fa-graduation-cap fa- mr-1"></i> Online kurz dekarbonizace</a>
             <a class="btn btn-secondary no-ext-link-icon" href="#newsletter-modal" id="newsletter-embed" data-toggle="modal" data-target="#newsletter-modal">
             <span class="fas fa-fw fa-envelope-open-text"></span> Odebírejte newsletter</a><br/>
         </p>
