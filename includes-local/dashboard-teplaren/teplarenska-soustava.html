@@ -9,14 +9,6 @@
                 {{ facility.status_text }}
             </p>
             <p class="notes">{{ facility.notes }}</p>
-            {% if facility.ippc_permits %}
-            <h5 class="ippc-heading detail">Zařízení dle integrovaného povolení (IPPC)</h5>
-            <ul class="ippc detail">
-                {% for permit in facility.ippc_permits %}
-                <li><a href="{{ permit.url }}">{{ permit.name }}</a>
-                {% endfor %}
-            </ul>
-            {% endif %}
             <p class="details-toggle" role="presentation">
                 <button type="button" class="btn btn-link not-detail" onclick="$(this).closest('.card').addClass('details-shown');"><i class="fas fa-angle-down"></i> Více informací</button>
                 <button type="button" class="btn btn-link detail" onclick="$(this).closest('.card').removeClass('details-shown');"><i class="fas fa-angle-up"></i> Méně informací</button>
@@ -70,12 +62,22 @@
                 {% endfor %}{% endif %}
             </dd>
             {% endif %}
+            {% if facility.ippc_permits %}
+            <dt class="detail mt-3"><i class="fa-solid fa-file-contract"></i> Zařízení dle integrovaného povolení (IPPC)</dt>
+            <dd class="detail">
+                <ul class="ippc">
+                    {% for permit in facility.ippc_permits %}
+                    <li><a href="{{ permit.url }}">{{ permit.name }}</a>
+                    {% endfor %}
+                </ul>
+            </dd>
+            {% endif %}
         </dl>
         <dl class="subsidies small">
             {% if facility.mf_subsidies %}
                 <dt><i class="fa-solid fa-sack-dollar"></i> Dotace z Mod. fondu</dt>
                 <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
-                <div class="mf-per-household detail">{{ facility.mf_subsidies_per_household | format_number }} Kč/vytápěnou domácnost</div>
+                <div class="mf-per-household detail mb-3">{{ facility.mf_subsidies_per_household | format_number }} Kč/vytápěnou domácnost</div>
                 {% if facility.chp_subsidies %}
                 <dd class="not-detail">+ dotační podpora KVET</dd>
                 {% endif %}
@@ -91,7 +93,7 @@
                 {% endif %}
             {% endif %}
             {% if facility.chp_subsidies %}
-                <dt class="chp detail"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
+                <dt class="detail mt-3"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
                 {% for subsidy in facility.chp_subsidies %}
                 <dd class="detail status-{{ subsidy.status }}" title="Neschválená provozní podpora" data-toggle="tooltip">
                     {{ subsidy.fuel }} (od {{ subsidy.since }})<br>
