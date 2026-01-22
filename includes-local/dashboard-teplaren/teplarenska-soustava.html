@@ -9,6 +9,14 @@
                 {{ facility.status_text }}
             </p>
             <p class="notes">{{ facility.notes }}</p>
+            {% if facility.ippc_permits %}
+            <h5 class="ippc-heading detail">Zařízení dle integrovaného povolení (IPPC)</h5>
+            <ul class="ippc detail">
+                {% for permit in facility.ippc_permits %}
+                <li><a href="{{ permit.url }}">{{ permit.name }}</a>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <p class="details-toggle" role="presentation">
                 <button type="button" class="btn btn-link not-detail" onclick="$(this).closest('.card').addClass('details-shown');"><i class="fas fa-angle-down"></i> Více informací</button>
                 <button type="button" class="btn btn-link detail" onclick="$(this).closest('.card').removeClass('details-shown');"><i class="fas fa-angle-up"></i> Méně informací</button>
@@ -45,7 +53,7 @@
             <dd class="fuels-today">
                 {% for fuel in facility.fuels_main_today %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
-                {% endfor %}<br>  
+                {% endfor %}<br>
                 {% if facility.fuels_secondary_today %} + {% for fuel in facility.fuels_secondary_today %}
                     {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
                 {% endfor %}{% endif %}
@@ -56,7 +64,7 @@
             <dd class="fuels-future">
                 {% for fuel in facility.fuels_main_future %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
-                {% endfor %}<br>  
+                {% endfor %}<br>
                 {% if facility.fuels_secondary_future %} + {% for fuel in facility.fuels_secondary_future %}
                     {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
                 {% endfor %}{% endif %}

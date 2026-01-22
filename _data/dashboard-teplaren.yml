@@ -54,31 +54,37 @@ items:
     name: ZEVO Mělník
     long_name: Výstavba ZEVO v elektrárenské lokalitě Mělník
     amount: 6095
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100019'
     name: Paroplynový zdroj Mělník
     long_name: EGT-přechod k nízkoemisní výrobě tepla a elektrické energie, etapa 1.
     amount: 7259
+    amount_paid: 0
   - call: 1/2023
     application_id: '7230100004'
     name: Tepelné napaječe
     long_name: Obnova tepelných napáječů – TN Střed, TN TMA Západ a TN Severní město
     amount: 266
+    amount_paid: 19
   - call: 1/2023
     application_id: '7230100005'
     name: Tepelné napaječe
     long_name: Obnova tepelných napáječů – TN TMA Malešice Jih a TN Michle
     amount: 125
+    amount_paid: 19
   - call: 1/2023
     application_id: '7230100001'
     name: Potrubní trasy
     long_name: Výměny a obnovy části stávajících potrubních tras horkovodů pro rok 2023
     amount: 41
+    amount_paid: 19
   - call: 1/2023
     application_id: '7230100003'
     name: Rozvody
     long_name: VS RABASOVA
     amount: 24
+    amount_paid: 0
   mf_subsidies_total: 13811
   mf_subsidies_per_household: 55142
   chp_subsidies:
@@ -94,6 +100,13 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: rejected
+  ippc_permits:
+  - name: Elektrárna Mělník I
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej8p1m
+  - name: Elektrárna Mělník II, Elektrárna Mělník III, Odkaliště Panský les
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejsn47
+  - name: ZEVO Praha Malešice
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehzmh6
 - name: Ostrava
   name_details: Elektrárna Třebovice a Teplárna Přívoz
   x: 83.2
@@ -134,21 +147,25 @@ items:
     name: Plynový zdroj, tepelná čerpadla
     long_name: DEKARBONIZACE A MODERNIZACE LOKALITY OSTRAVA
     amount: 7432
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100020'
     name: Plynový zdroj
     long_name: Podpora KVET SZT Ostrava - KGJ „Korýtko"
     amount: 142
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100027'
     name: Plynový zdroj
     long_name: PODPORA KVET SZT OSTRAVA - KGJ "OZO"
     amount: 50
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100031'
     name: Plynový zdroj
     long_name: Podpora KVET SZT Ostrava - KGJ "FN Ostrava"
     amount: 98
+    amount_paid: 0
   mf_subsidies_total: 7723
   mf_subsidies_per_household: 80260
   chp_subsidies:
@@ -176,6 +193,11 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: rejected
+  ippc_permits:
+  - name: Elektrárna Třebovice
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek8q5u
+  - name: Teplárna Přívoz
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej27qy
 - name: Brno
   name_details: Teplárny Brno a SAKO Brno
   x: 61.6
@@ -217,13 +239,22 @@ items:
     name: Biomasa
     long_name: Modernizace zdroje „Brno – sever“ pro soustavu zásobování tepelnou energií města Brna
     amount: 1661
+    amount_paid: 693
   - call: 2/2021
     application_id: '7210200001'
     name: ZEVO
     long_name: Modernizace ZEVO společnosti SAKO Brno za účelem zvýšení zpracovatelské kapacity a efektivity provozu
     amount: 2848
+    amount_paid: 0
   mf_subsidies_total: 4509
   mf_subsidies_per_household: 47966
+  ippc_permits:
+  - name: Teplárny Brno provozovna Červený Mlýn
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehtgxe
+  - name: Teplárny Brno provozovna Špitálka
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ekbket
+  - name: Teplárny Brno, a. s. - Provoz Brno - sever
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejmtpc
 - name: Praha – levý břeh Vltavy
   name_details: menší zdroje
   x: 31.8
@@ -253,6 +284,9 @@ items:
   - natgas
   - wasteheat
   share_households: 41
+  ippc_permits:
+  - name: Teplárna Veleslavín
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejf5ir
 - name: Opatovice
   name_details: Elektrárna Opatovice
   x: 50.5
@@ -289,26 +323,31 @@ items:
     name: ZEVO
     long_name: ZEVO OPATOVICE
     amount: 4032
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100030'
     name: Plynový zdroj
     long_name: Náhrada uhelného bloku plynovým zdrojem IV.
     amount: 1974
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100005'
     name: Paroplynový zdroj
     long_name: Náhrada uhelného bloku plynovým zdrojem I.
     amount: 1567
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100003'
     name: Paroplynový zdroj
     long_name: Náhrada uhelného bloku plynovým zdrojem III.
     amount: 1557
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100004'
     name: Paroplynový zdroj
     long_name: Náhrada uhelného bloku plynovým zdrojem II.
     amount: 1129
+    amount_paid: 0
   mf_subsidies_total: 10258
   mf_subsidies_per_household: 170608
   chp_subsidies:
@@ -316,6 +355,9 @@ items:
     since: '08/2029'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Elektrárna Opatovice - výroba a dodávka elektřiny a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejemw9
 - name: Plzeň
   name_details: Plzeňská teplárenská
   x: 18.0
@@ -355,11 +397,13 @@ items:
     name: Paroplynový zdroj
     long_name: OBNOVA ZDROJE - ENERGETIKA
     amount: 1930
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100010'
     name: Paroplynový zdroj, biomasa
     long_name: OBNOVA ZDROJE - TEPLÁRNA
     amount: 1264
+    amount_paid: 0
   mf_subsidies_total: 3195
   mf_subsidies_per_household: 64004
   chp_subsidies:
@@ -375,6 +419,11 @@ items:
     since: '01/2029'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Teplárna
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehzt6w
+  - name: Energetika
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ekawpd
 - name: Karviná
   name_details: Teplárna Karviná a Teplárna ČSA
   x: 87.7
@@ -411,16 +460,19 @@ items:
     name: Multipalivový kotel, plynový zdroj
     long_name: Dekarbonizace Teplárny Karviná – část Multipalivový kotel s KVET a Plynový teplárenský zdroj s KVET
     amount: 5017
+    amount_paid: 0
   - call: 1/2021
     application_id: '7210100003'
     name: Plynový zdroj
     long_name: Dekarbonizace Teplárny Karviná - část plynofikace
     amount: 164
+    amount_paid: 159
   - call: 1/2021
     application_id: '7210100016'
     name: Plynový zdroj
     long_name: Dekarbonizace Teplárny Karviná - část dostavba plynové kotelny
     amount: 67
+    amount_paid: 0
   mf_subsidies_total: 5248
   mf_subsidies_per_household: 106864
   chp_subsidies:
@@ -436,6 +488,11 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Teplárna Karviná
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejrpk4
+  - name: Teplárna ČSA
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehyj6j
 - name: Komořany
   name_details: Teplárna Komořany
   x: 20.5
@@ -472,16 +529,19 @@ items:
     name: ZEVO
     long_name: Zařízení pro energetické využití odpadů, EVO – Komořany, Most
     amount: 2575
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100009'
     name: Paroplynový zdroj
     long_name: Výstavba paroplynového cyklu PPC2 v UE Komořany
     amount: 1472
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100008'
     name: Paroplynový zdroj
     long_name: Výstavba paroplynového cyklu PPC1 v UE Komořany
     amount: 1409
+    amount_paid: 0
   mf_subsidies_total: 5456
   mf_subsidies_per_household: 152092
   chp_subsidies:
@@ -497,6 +557,9 @@ items:
     since: '08/2030'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Teplárna Komořany - kogenerační zdroj
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek3wj4
 - name: České Budějovice
   name_details: Teplárna České Budějovice
   x: 32.7
@@ -538,11 +601,13 @@ items:
     name: Biomasa
     long_name: Strategie pro zelené město
     amount: 329
+    amount_paid: 326
   - call: 1/2022
     application_id: '7220100015'
     name: ZEVO
     long_name: Strategie pro zelené město – ZEVO Vráto
     amount: 4686
+    amount_paid: 0
   mf_subsidies_total: 5015
   mf_subsidies_per_household: 150195
   chp_subsidies:
@@ -550,6 +615,9 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Teplárna České Budějovice, a.s., Výroba a prodej tepla a elektřiny
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejcllm
 - name: Ústí nad Labem
   name_details: Teplárna Trmice a kotel ve Střekově
   x: 26.4
@@ -580,6 +648,15 @@ items:
   fuels_secondary_today:
   - natgas
   share_households: 71
+  mf_subsidies:
+  - call: 1/2022
+    application_id: '7220100024'
+    name: Biomasa
+    long_name: UL_BM kotel 32 MWt, Trmice
+    amount: 750
+    amount_paid: 0
+  mf_subsidies_total: 750
+  mf_subsidies_per_household: 23959
   chp_subsidies:
   - power: 1
     since: '04/2027'
@@ -589,6 +666,9 @@ items:
     since: '10/2026'
     fuel: Zemní plyn
     status: rejected
+  ippc_permits:
+  - name: Teplárna Trmice
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek4pev
 - name: Olomouc
   name_details: Teplárna Olomouc
   x: 70.3
@@ -626,11 +706,13 @@ items:
     name: Multipalivový kotel, plynový zdroj
     long_name: MODERNIZACE TEPLÁRNY OLOMOUC – ČÁST MULTIPALIVOVÝ KOTEL A PLYNOVÝ TEPLÁRENSKÝ ZDROJ
     amount: 2506
+    amount_paid: 0
   - call: 1/2021
     application_id: '7210100010'
     name: Plynový zdroj
     long_name: Dekarbonizace Teplárny Olomouc - část plynofikace K3
     amount: 78
+    amount_paid: 62
   mf_subsidies_total: 2584
   mf_subsidies_per_household: 93957
   chp_subsidies:
@@ -638,6 +720,9 @@ items:
     since: '12/2029'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Teplárna Olomouc
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejfy2u
 - name: Prunéřov
   name_details: Elektrárna Prunéřov
   x: 16.4
@@ -672,11 +757,13 @@ items:
     name: Biomasa, plynový zdroj
     long_name: CV_PM 45 MW EPR, Prunéřov
     amount: 1779
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100029'
     name: Biomasa
     long_name: CV_BM 17,5 + 17,5 MW EPR, Prunéřov
     amount: 723
+    amount_paid: 0
   mf_subsidies_total: 2502
   mf_subsidies_per_household: 91658
   chp_subsidies:
@@ -684,6 +771,9 @@ items:
     since: '03/2028'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Elektrárny Prunéřov – Výroba a dodávka elektrické energie a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehtdfc
 - name: Kladno
   name_details: Teplárna Kladno
   x: 28.1
@@ -719,6 +809,9 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
+  ippc_permits:
+  - name: Elektrárna Kladno včetně podpůrných objektů a provozů
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpar98ehunq
 - name: Ledvice
   name_details: Elektrárna Ledvice
   x: 23.4
@@ -750,6 +843,18 @@ items:
   - natgas
   other_heating: průmyslová zóna Ledvice
   share_households: 62
+  mf_subsidies:
+  - call: 1/2024
+    application_id: '7240100005'
+    name: Biomasa
+    long_name: TP_ BM Kotel 20 MWt, Ledvice
+    amount: 499
+    amount_paid: 0
+  mf_subsidies_total: 499
+  mf_subsidies_per_household: 25613
+  ippc_permits:
+  - name: Elektrárna Ledvice, zařízení pro výrobu elektrické energie a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek2vyh
 - name: Zlín
   name_details: Teplárna Zlín
   x: 75.7
@@ -781,11 +886,23 @@ items:
   fuels_secondary_today:
   - biomass
   share_households: 56
+  mf_subsidies:
+  - call: 1/2021
+    application_id: '7210100012'
+    name: Plynový zdroj
+    long_name: Výstavba plynového kotle K23
+    amount: 31
+    amount_paid: 0
+  mf_subsidies_total: 31
+  mf_subsidies_per_household: 1678
   chp_subsidies:
   - power: 51
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
+  ippc_permits:
+  - name: fluidní kotel K31, fluidní kotel K32, plynové kotle K21, K22 a skládku stabilizátu
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehxxm6
 - name: Frýdek-Místek
   name_details: Teplárna Frýdek-Místek
   x: 85.1
@@ -816,6 +933,18 @@ items:
   - biomass
   - natgas
   share_households: 72
+  mf_subsidies:
+  - call: 1/2022
+    application_id: '7220100021'
+    name: Biomasa
+    long_name: DEKARBONIZACE TEPLÁRNY FRÝDEK-MÍSTEK - BIOMASOVÝ BLOK KOTLE K5 A TURBÍNA TG3
+    amount: 375
+    amount_paid: 0
+  mf_subsidies_total: 375
+  mf_subsidies_per_household: 21013
+  ippc_permits:
+  - name: Teplárna Frýdek-Místek
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejawge
 - name: Vřesová
   name_details: Teplárna a PPC Vřesová
   x: 8.8
@@ -844,6 +973,9 @@ items:
   fuels_main_future:
   - unknown
   share_households: 54
+  ippc_permits:
+  - name: Zpracovatelská část Vřesová
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek9953
 - name: Dětmarovice
   name_details: Elektrárna Dětmarovice
   x: 86.6
@@ -878,16 +1010,19 @@ items:
     name: Plynový zdroj
     long_name: Plynový zdroj pro KVET v lokalitě Dětmarovice
     amount: 412
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100018'
     name: Biomasa
     long_name: DE_BM kotel 8 MWt, Dětmarovice
     amount: 111
+    amount_paid: 0
   - call: 1/2022
     application_id: '7220100031'
     name: Plynový zdroj
     long_name: Podpora KVET SZT Ostrava - KGJ "FN Ostrava"
     amount: 98
+    amount_paid: 0
   mf_subsidies_total: 622
   mf_subsidies_per_household: 43439
   chp_subsidies:
@@ -895,6 +1030,9 @@ items:
     since: '03/2027'
     fuel: Zemní plyn
     status: accepted
+  ippc_permits:
+  - name: Elektrárna Dětmarovice, zařízení pro výrobu elektrické energie a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehzl2u
 - name: Mladá Boleslav
   name_details: ŠKO-ENERGO – Teplárna Mladá Boleslav
   x: 38.9
@@ -928,6 +1066,18 @@ items:
   - natgas
   other_heating: dále vytápí areál automobilky Škoda Auto
   share_households: 62
+  mf_subsidies:
+  - call: 2/2021
+    application_id: '7210200006'
+    name: Biomasa
+    long_name: Modernizace technologie výroby tepla společnosti ŠKO-ENERGO, s.r.o.
+    amount: 2180
+    amount_paid: 0
+  mf_subsidies_total: 2180
+  mf_subsidies_per_household: 156396
+  ippc_permits:
+  - name: Teplárna ŠKO-ENERGO
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejwpre
 - name: Přerov
   name_details: Teplárna Přerov
   x: 73.0
@@ -957,6 +1107,18 @@ items:
   - srf
   - biomass
   share_households: 71
+  mf_subsidies:
+  - call: 1/2021
+    application_id: '7210100006'
+    name: Biomasa
+    long_name: Dekarbonizace Teplárny Přerov
+    amount: 374
+    amount_paid: 368
+  mf_subsidies_total: 374
+  mf_subsidies_per_household: 27389
+  ippc_permits:
+  - name: Teplárna Přerov - zařízení pro kogeneraci tepla a elektrické energie
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejas5b
 - name: Liberec
   name_details: Teplárna Liberec a ZEVO Termizo
   x: 40.7
@@ -991,6 +1153,11 @@ items:
   fuels_secondary_today:
   - hho
   share_households: 28
+  ippc_permits:
+  - name: Teplárna Liberec
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej8utp
+  - name: ZEVO Termizo Liberec
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek5la1
 - name: Tisová
   name_details: Elektrárna Tisová
   x: 7.6
@@ -1018,6 +1185,9 @@ items:
   fuels_main_future:
   - unknown
   share_households: 75
+  ippc_permits:
+  - name: Elektrárna Tisová - výroba a dodávka elektrické energie a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejkz5y
 - name: Poříčí
   name_details: Elektrárna Poříčí
   x: 52.8
@@ -1047,6 +1217,18 @@ items:
   - biomass
   - natgas
   share_households: 59
+  mf_subsidies:
+  - call: 1/2024
+    application_id: '7240100003'
+    name: Biomasa
+    long_name: PO_BM Kotel 2 x 25 MWt + TG 10 MWe
+    amount: 1156
+    amount_paid: 0
+  mf_subsidies_total: 1156
+  mf_subsidies_per_household: 103187
+  ippc_permits:
+  - name: Elektrárna Poříčí
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejknv2
 - name: Planá nad Lužnicí
   name_details: C-energy Planá
   x: 35.8
@@ -1085,18 +1267,24 @@ items:
     name: Biomasa
     long_name: Konec uhlí v Plané
     amount: 389
+    amount_paid: 379
   - call: 1/2021
     application_id: '7210100009'
     name: Plynový zdroj
     long_name: Plynofikace Teplárny Tábor
     amount: 318
+    amount_paid: 318
   - call: 1/2022
     application_id: '7220100014'
     name: ZEVO
     long_name: EVO Planá - Energie z odpadu Táborska
     amount: 1379
+    amount_paid: 0
   mf_subsidies_total: 2085
   mf_subsidies_per_household: 190064
+  ippc_permits:
+  - name: C-energy s.r.o. - Planá nad Lužnicí
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek4gqp
 - name: Třinec
   name_details: Energetika Třinec
   x: 89.2
@@ -1128,6 +1316,20 @@ items:
   - natgas
   other_heating: Třinecké železárny
   share_households: 60
+  mf_subsidies:
+  - call: 1/2022
+    application_id: '7220100017'
+    name: Paroplynový zdroj
+    long_name: Nový zdroj na ZP - paroplynový cyklus PPC1
+    amount: 870
+    amount_paid: 0
+  mf_subsidies_total: 870
+  mf_subsidies_per_household: 97348
+  ippc_permits:
+  - name: Teplárna E2
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejuvmx
+  - name: Teplárna E3
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejczvk
 - name: Otrokovice
   name_details: Teplárna Otrokovice
   x: 74.1
@@ -1164,11 +1366,23 @@ items:
   - wasteheat
   other_heating: Continental Barum a další průmyslové podniky.
   share_households: 63
+  mf_subsidies:
+  - call: 1/2022
+    application_id: '7220100025'
+    name: Biomasa
+    long_name: Spalování biomasy v kotli K4 - Etapa 2
+    amount: 124
+    amount_paid: 94
+  mf_subsidies_total: 124
+  mf_subsidies_per_household: 18238
   chp_subsidies:
   - power: 15
     since: '05/2028'
     fuel: Zemní plyn, biomasa
     status: accepted
+  ippc_permits:
+  - name: Teplárna Otrokovice
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejfh44
 - name: Tušimice
   name_details: Elektrárna Tušimice
   x: 17.3
@@ -1196,6 +1410,9 @@ items:
   fuels_main_future:
   - alt
   share_households: 77
+  ippc_permits:
+  - name: Elektrárna Tušimice II – Výroba a dodávka elektrické energie a tepla
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejtd9c
 - name: Valašské Meziříčí
   name_details: DEZA – teplárna závodu
   x: 80.0
@@ -1228,6 +1445,9 @@ items:
   - hho
   other_heating: DEZA, Masný průmysl Krásno, Mlékárna Valašské Meziříčí
   share_households: 57
+  ippc_permits:
+  - name: Provoz energetika
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej94zq
 - name: Kralupy
   name_details: Teplárna Kralupy
   x: 30.8
@@ -1256,6 +1476,9 @@ items:
   - natgas
   other_heating: Areál chemických výrob Kralupy (Synthos i Orlen, tedy produkce syntetického kaučuku, zpracování ropy)
   share_households: 54
+  ippc_permits:
+  - name: Teplárna a související zařízení
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ekb461
 - name: Štětí
   name_details: Mondi Štětí
   x: 31.2
@@ -1291,8 +1514,12 @@ items:
     name: Biomasa
     long_name: Snížení emisí CO2 při výrobě tepla
     amount: 3054
+    amount_paid: 0
   mf_subsidies_total: 3054
   mf_subsidies_per_household: 1007588
+  ippc_permits:
+  - name: Parní kotel K 10 a K 11
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehuatx
 - name: Chvaletice
   name_details: Malé plynové kotle (dříve elektrárna Chvaletice)
   x: 45.9
@@ -1312,6 +1539,9 @@ items:
   fuels_main_future:
   - natgas
   share_households: 42
+  ippc_permits:
+  - name: Spalovací zařízení o jmenovitém tepelném příkonu větším než 50 MW
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehvt9l
 - name: Litvínov
   name_details: Orlen Unipetrol –  Energoblok
   x: 20.9
@@ -1339,3 +1569,6 @@ items:
   fuels_main_future:
   - natgas
   other_heating: chemický areál Orlenu v Litvínově-Záluží
+  ippc_permits:
+  - name: Jednotka energetické služby
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
