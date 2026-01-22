@@ -183,7 +183,7 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 
     .card-body {
-        
+
         h3 {
             font-size: 1.6rem;
             line-height: 1.5;
@@ -256,6 +256,20 @@ $c-teplarny-problematic-bg: #fff1ef;
         background: linear-gradient(to bottom, transparent, white);
         pointer-events: none;
         /* allows clicking through the overlay */
+    }
+
+    .ippc-heading {
+        font-size: 0.8rem;
+        color: $c-teplarny-dark-grey;
+        margin-top: 2rem;
+    }
+
+    .ippc {
+        font-size: 0.8rem;
+        color: $c-teplarny-dark-grey;
+        a {
+            color: $c-teplarny-dark-grey;
+        }
     }
 
     .details-toggle .btn {
