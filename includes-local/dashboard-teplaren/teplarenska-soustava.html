@@ -73,30 +73,31 @@
         </dl>
         <dl class="subsidies small">
             {% if facility.mf_subsidies %}
-            <dt><i class="fa-solid fa-sack-dollar"></i> Dotace z Mod. fondu</dt>
-            <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
-            {% if facility.chp_subsidies %}
-            <dd class="not-detail">+ dotační podpora KVET</dd>
-            {% endif %}
-            {% for subsidy in facility.mf_subsidies %}
-            <dd class="detail">{{ subsidy.name }}<br><b>{{ subsidy.amount | format_number }} mil. Kč</b></dd>
-            {% endfor %}
-            </ul>
+                <dt><i class="fa-solid fa-sack-dollar"></i> Dotace z Mod. fondu</dt>
+                <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
+                <div class="mf-per-household detail">{{ facility.mf_subsidies_per_household | format_number }} Kč/vytápěnou domácnost</div>
+                {% if facility.chp_subsidies %}
+                <dd class="not-detail">+ dotační podpora KVET</dd>
+                {% endif %}
+                {% for subsidy in facility.mf_subsidies %}
+                <dd class="detail">{{ subsidy.name }}<br><b>{{ subsidy.amount | format_number }} mil. Kč</b></dd>
+                {% endfor %}
+                </ul>
             {% else %}
-            <dt>Žádné dotace z Modern. fondu</dt>
-            <dd class="mf-total"><b class="zero">0</b> Kč</dd>
-            {% if facility.chp_subsidies %}
-            <dd class="not-detail">+ dotační podpora KVET</dd>
+                <dt>Žádné dotace z Modern. fondu</dt>
+                <dd class="mf-total"><b class="zero">0</b> Kč</dd>
+                {% if facility.chp_subsidies %}
+                <dd class="not-detail">+ dotační podpora KVET</dd>
+                {% endif %}
             {% endif %}
-            {% endif %}
             {% if facility.chp_subsidies %}
-            <dt class="chp detail"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
-            {% for subsidy in facility.chp_subsidies %}
-            <dd class="chp detail status-{{ subsidy.status }}" title="Neschválená provozní podpora" data-toggle="tooltip">
-                {{ subsidy.fuel }} (od {{ subsidy.since }})<br>
-                <strong>{{ subsidy.power }} MWe</strong>
-            </dd>
-            {% endfor %}
+                <dt class="chp detail"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
+                {% for subsidy in facility.chp_subsidies %}
+                <dd class="detail status-{{ subsidy.status }}" title="Neschválená provozní podpora" data-toggle="tooltip">
+                    {{ subsidy.fuel }} (od {{ subsidy.since }})<br>
+                    <strong>{{ subsidy.power }} MWe</strong>
+                </dd>
+                {% endfor %}
             {% endif %}
         </dl>
     </div>
