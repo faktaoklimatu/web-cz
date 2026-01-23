@@ -100,6 +100,7 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: rejected
+  chp_subsidies_total_accepted: 930
   ippc_permits:
   - name: Elektrárna Mělník I
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej8p1m
@@ -193,6 +194,7 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: rejected
+  chp_subsidies_total_accepted: 174
   ippc_permits:
   - name: Elektrárna Třebovice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek8q5u
@@ -355,6 +357,7 @@ items:
     since: '08/2029'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 390
   ippc_permits:
   - name: Elektrárna Opatovice - výroba a dodávka elektřiny a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejemw9
@@ -419,6 +422,7 @@ items:
     since: '01/2029'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 297
   ippc_permits:
   - name: Teplárna
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehzt6w
@@ -488,6 +492,7 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 39
   ippc_permits:
   - name: Teplárna Karviná
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejrpk4
@@ -557,6 +562,7 @@ items:
     since: '08/2030'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 209
   ippc_permits:
   - name: Teplárna Komořany - kogenerační zdroj
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek3wj4
@@ -615,6 +621,7 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 10
   ippc_permits:
   - name: Teplárna České Budějovice, a.s., Výroba a prodej tepla a elektřiny
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejcllm
@@ -666,6 +673,7 @@ items:
     since: '10/2026'
     fuel: Zemní plyn
     status: rejected
+  chp_subsidies_total_accepted: 1
   ippc_permits:
   - name: Teplárna Trmice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek4pev
@@ -720,6 +728,7 @@ items:
     since: '12/2029'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 15
   ippc_permits:
   - name: Teplárna Olomouc
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejfy2u
@@ -771,6 +780,7 @@ items:
     since: '03/2028'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 50
   ippc_permits:
   - name: Elektrárny Prunéřov – Výroba a dodávka elektrické energie a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehtdfc
@@ -809,6 +819,7 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
+  chp_subsidies_total_accepted: 0
   ippc_permits:
   - name: Elektrárna Kladno včetně podpůrných objektů a provozů
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpar98ehunq
@@ -900,6 +911,7 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
+  chp_subsidies_total_accepted: 0
   ippc_permits:
   - name: fluidní kotel K31, fluidní kotel K32, plynové kotle K21, K22 a skládku stabilizátu
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehxxm6
@@ -1030,6 +1042,7 @@ items:
     since: '03/2027'
     fuel: Zemní plyn
     status: accepted
+  chp_subsidies_total_accepted: 24
   ippc_permits:
   - name: Elektrárna Dětmarovice, zařízení pro výrobu elektrické energie a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehzl2u
@@ -1380,6 +1393,7 @@ items:
     since: '05/2028'
     fuel: Zemní plyn, biomasa
     status: accepted
+  chp_subsidies_total_accepted: 15
   ippc_permits:
   - name: Teplárna Otrokovice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejfh44
