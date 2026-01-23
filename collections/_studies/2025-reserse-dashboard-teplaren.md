@@ -88,10 +88,10 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
 </div>
 
 <div id="controls-status">
-    <p>Filter: </p>
+    <p>Filtr: </p>
     <div class="form-check status-problematic">
         <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
-        <label class="form-check-label" for="checkProblematic">Problematické</label>
+        <label class="form-check-label" for="checkProblematic">Nejasné</label>
     </div>
     <div class="form-check status-in-progress">
         <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
