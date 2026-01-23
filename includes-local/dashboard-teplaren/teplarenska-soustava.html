@@ -84,8 +84,8 @@
                 {% for subsidy in facility.mf_subsidies %}
                 <dd class="detail">
                     <div title="{{ subsidy.long_name | escape }}" data-toggle="tooltip">{{ subsidy.name }}</div><b>{{ subsidy.amount | format_number }} mil. Kč</b>
-                    {% if subsidy.amount_paid > 0 %}
-                    <span class="mf-paid">({{ subsidy.amount_paid | format_number }} mil. Kč vyplaceno)</span>
+                    {% if subsidy.paid_percent > 0 %}
+                    <span class="mf-paid">({{ subsidy.paid_percent | format_number }} % vyplaceno)</span>
                     {% endif %}
                 </dd>
                 {% endfor %}
