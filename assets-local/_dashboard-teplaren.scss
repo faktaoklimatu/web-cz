@@ -461,8 +461,14 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .mf-per-household {
         font-size: 0.8rem;
-        color: $c-teplarny-grey;
+        color: $c-teplarny-light-grey;
         margin-bottom: 0.8rem !important;
+    }
+
+    .mf-paid {
+        color: $c-teplarny-light-grey;
+        display: block;
+        font-size: 0.75rem;
     }
 
     .chp {
