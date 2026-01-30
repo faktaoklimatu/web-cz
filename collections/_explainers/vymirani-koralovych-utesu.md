@@ -76,7 +76,7 @@ Snímky ze sledování prováděného satelity NOAA ukazují současné velmi ne
     caption="Záznam monitorování teploty vody a rizika pro korálové útesy v období prosinec 2020 – březen 2021."
     alt="mapa aktuálních úrovní ohrožení korálů"
     source-text="NOAA"
-    source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa_max_r07d.php"
+    source-url="https://coralreefwatch.noaa.gov/product/5km/index_5km_baa-max-ytd.php"
 %}
 
 Šokující na tomto snímku je především skutečnost, že se nejedná o hypotetický scénář v budoucnosti, nýbrž o současný stav – o aktuální silně negativní dopad, který má na korály probíhající klimatická změna.
@@ -94,7 +94,7 @@ Pomalý růst však také znamená mnohem pomalejší obnovu v případě poško
     caption="Poškození korálů rybářskými sítěmi."
     alt="poškození korálů rybolovem"
     source-text="NOAA"
-    source-url="https://coralreef.noaa.gov/media/images_gallery/leaving_scars_600.jpg"
+    source-url="https://blog.marinedebris.noaa.gov/how-does-marine-debris-affect-coral-reefs"
 %}
 
 ## Zdroje

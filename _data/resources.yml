@@ -23,7 +23,7 @@ web_cs:
     url: "https://www.klimatickazmena.cz/cs/"
     image: "klimaticka-zmena-cz.png"
     description-short: "Web Centra výzkumu globální změny AV ČR (CzechGlobe) prezentující data a modely klimatické změny v ČR."
-    description-long: "Můžeme doporučit mj. studii *[Očekávané klimatické podmínky v České republice](https://www.klimatickazmena.cz/cs/o-nas/aktuality/ocekavane-klimaticke-podminky-v-ceske-republice-cast-i-zmena-zakladnich-parametru/)*."
+    description-long: "Můžeme doporučit mj. studii *[Očekávané klimatické podmínky v České republice](https://www.czechglobe.cz/wp-content/uploads/2019/06/O%C4%8Dek%C3%A1van%C3%A9-klimatick%C3%A9-podm%C3%ADnky-v-%C4%8Cesk%C3%A9-republice-%C4%8D%C3%A1st-I.-zm%C4%9Bna-z%C3%A1kladn%C3%ADch-parametr%C5%AF.pdf)*."
 
 web_en:
   name: Anglické weby

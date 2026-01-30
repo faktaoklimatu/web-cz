@@ -36,7 +36,7 @@ Největší státy EU (jak [z hlediska počtu obyvatel](https://en.wikipedia.org
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
-* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5× vyšší než průměr EU)
+* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má tak vysoké emise kvůli [nafto-benzínovému turismu](https://today.rtl.lu/news/luxembourg/luxembourgs-carbon-footprint-weighed-down-by-fuel-tourism-2303953) (5× vyšší než průměr EU)
 * Irsko, na druhém místě, má velmi vysoký podíl zemědělské produkce (skoro 5× vyšší než průměr EU)
 * Kypr, na třetím místě, má velmi špinavou energetiku založenou na spalování ropných produktů (topných olejů a nafty)
 * Polsko, na čtvrtém místě, má také špinavou energetiku založenou zejména na spalování uhlí

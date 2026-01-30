@@ -25,7 +25,7 @@ data-orig:  [ [ "Eurostat", "https://ec.europa.eu/eurostat/databrowser/product/v
 
 ## Zajímavosti a komentáře k ročním emisím na obyvatele
 
-* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má [dle platformy Votum Klima](https://today.rtl.lu/news/luxembourg/a/1184731.html) tak vysoké emise kvůli nafto-benzínovému turismu (5× vyšší než průměr EU)
+* Lucembursko, které je v přepočtu na obyvatele na prvním místě, má tak vysoké emise kvůli [nafto-benzínovému turismu](https://today.rtl.lu/news/luxembourg/luxembourgs-carbon-footprint-weighed-down-by-fuel-tourism-2303953) (5× vyšší než průměr EU)
 * Estonsko, na druhém místě, má velmi vysoký podíl špinavé energetiky (4,5× vyšší než průměr EU)
 * Irsko, na třetím místě, má velmi vysoký podíl zemědělské produkce (skoro 5× vyšší než průměr EU)
 * Česká republika, na čtvrtém místě, má velmi vysoký podíl špinavé energetiky (2× vyšší než průměr EU, zejména vlivem hnědouhelných elektráren) - viz naše  [související infografika](/infografiky/emise-cr).
