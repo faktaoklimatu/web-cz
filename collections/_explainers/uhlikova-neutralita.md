@@ -119,7 +119,7 @@ V průběhu roku 2020 se k cíli dosažení uhlíkové neutrality do roku 2050 p
 [^6]: Klimatické závazky firmy [Microsoft](https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030/)
 [^71]: Jako **CDR** *(Carbon dioxide removal)* nebo **NET** *(Negative emission technology)* se označují přírodní nebo průmyslové postupy, které mohou odstraňovat oxid uhličitý z atmosféry. Více viz [en.Wikipedia: Carbon dioxide removal](https://en.wikipedia.org/wiki/Carbon_dioxide_removal)
 [^72]: **CCS** *(Carbon capture and storage)* je označení pro průmyslové technologie, které umožňují zachytávat oxid uhličitý v místech jeho produkce – tedy například při spalování v elektrárnách nebo při výrobě cementu. Více viz [en.Wikipedia: Carbon capture and storage](https://en.wikipedia.org/wiki/Carbon_capture_and_storage)
-[^8]: Eco-act: [Darfur Sudan Cookstove Project](https://eco-act.com/project/darfur-low-smoke-cookstoves-project/)
+[^8]: Practical Action: [Clearing the Air in Darfur](https://practicalaction.org/our-work/projects/clearing-the-air-in-darfur/)
 [^9]: The Guardian: [A complete guide to carbon offsetting](https://www.theguardian.com/environment/2011/sep/16/carbon-offset-projects-carbon-emissions)
 [^10]: UK Climate change committee: [Sixth carbon budget](https://www.theccc.org.uk/publication/sixth-carbon-budget/)
 [^11]: IPCC special report: [Global warming of 1.5 °C](https://www.ipcc.ch/sr15/)

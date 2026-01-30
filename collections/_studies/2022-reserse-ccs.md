@@ -28,7 +28,7 @@ items:
       link: https://climeworks.com/
       description: Švýcarská firma, která je v současnosti provozovatelem největšího zařízení pro DAC na světě, jenž se nachází na Islandu. Climeworks nabízí možnost jednotlivcům i firmám zakoupit odstranění CO<sub>2</sub> ze vzduchu.
     - name: Carbon Sequestration Leadership Forum
-      link: https://www.cslforum.org/cslf/
+      link: https://fossil.energy.gov/archives/cslf/index.html
       description: Mezinárodní klimatická iniciativa, která má za cíl rozvoj technologií CCS prostřednictvím budování povědomí. Prosazuje právní, ekonomické, regulační a institucionální kroky vedoucí k rozvoji CCS. Mezi členy patří státy EU, USA, Čína, Indie, Brazílie a mnoho dalších zemí reprezentujících 60 % světové populace a 80 % globálních emisí.
     - name: Carbfix
       link: https://www.carbfix.com/
@@ -108,7 +108,7 @@ items:
       description: Studie o možnosti výroby vodíku ze zemního plynu a biometanu s využitím CCS. Klíčové je zjištění, že v kombinaci s CCS se může produkce vodíku z plynu blížit z hlediska emisní zátěže produkci vodíku z obnovitelných zdrojů, zatímco produkce vodíku z biometanu skýtá možnosti negativních emisí.
       year: 2020
     - name: Carbon Sequestration Leadership Forum Technology Roadmap 2021
-      link: https://www.cslforum.org/cslf/sites/default/files/CSLF_Tech_Roadmap_2021_final_0.pdf
+      link: https://fossil.energy.gov/archives/cslf/sites/default/files/CSLF_Tech_Roadmap_2021_final_0.pdf
       source: Carbon Sequestration Leadership Forum
       description: Technologická roadmapa CCS s cílem pomoci členským státům Carbon Sequestration Leadership Forum implementovat nutné kroky pro rozvoj CCS do svých národních strategií. Dokument mapuje klíčové kroky v oblasti zachytávání, transportace, uchovávání a využití CO<sub>2</sub> a dává doporučení co mají jednotlivé členské státy či regiony dělat.
       year: 2021
@@ -147,7 +147,7 @@ items:
       authors: Clean Air Task Force
       description: Interaktivní mapa zobrazující aktuální i plánované CCS projekty v USA, Evropě a na Blízkém východě. Projekty jsou kategorizovány podle velikosti a typu.
     - name: CO<sub>2</sub> Storage Resource Catalogue
-      link: https://www.ogci.com/CO<sub>2</sub>-storage-resource-catalogue/
+      link: https://www.ogci.com/ccus/co2-storage-catalogue/
       authors: Oil and Gas Climate Initiative
       description: Interaktivní mapa, která má za cíl být katalogem pro hodnocení možností geologického ukládání CO<sub>2</sub> po celém světě.
 ---
