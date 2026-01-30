@@ -3,7 +3,7 @@ layout:      explainer
 title:       "Jak bude fungovat zpoplatnění emisí skleníkových plynů z dopravy a budov (tzv. ETS 2)?"
 slug:        "emisni-povolenky-ets-2"
 published:   2024-06-10
-updated:     2025-11-12
+updated:     2026-01-30
 authors:
   - id: "katerina-kolouchova"
   - ids: ["katerina-kolouchova", "marcel-otruba"]
@@ -23,13 +23,14 @@ perex: |
 extra-scripts: [ /assets-local/js/ets2-kalkulacka.js ]
 ---
 
-**Nový systém tzv. ETS 2** [naváže](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) **od roku 2027** na stávající <glossary id="euets">systém obchodování s emisními povolenkami</glossary> (ETS 1), který funguje od roku 2005. Zpoplatní přitom emise ze silniční dopravy, spalování v budovách a malé energetiky a průmyslu, které v současnosti nespadají pod ETS 1. Díky tomu dojde k **narovnání trhu** jak pro producenty emisí, tak pro podniky využívající nízkoemisní zdroje energie (např. biomasu či biopaliva). Zatímco ETS 1 v současnosti pokrývá přibližně 35 % všech emisí skleníkových plynů EU, ETS 2 pokryje dalších 48 %. **Více než 80 % unijních emisí tak bude podléhat zpoplatnění.** Zbývajících 17 % připadá hlavně zemědělství a odpadovému hospodářství.[^ets-emise]
+**Nový systém tzv. ETS 2** [naváže](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) od roku 2028[^start] na stávající <glossary id="euets">systém obchodování s emisními povolenkami</glossary> (ETS 1), který funguje od roku 2005. Zpoplatní přitom emise ze silniční dopravy, spalování v budovách a malé energetiky a průmyslu, které v současnosti nespadají pod ETS 1. Díky tomu dojde k **narovnání trhu** jak pro producenty emisí, tak pro podniky využívající nízkoemisní zdroje energie (např. biomasu či biopaliva). Zatímco ETS 1 v současnosti pokrývá přibližně 35 % všech emisí skleníkových plynů EU, ETS 2 pokryje dalších 39 %. **Více než 70 % unijních emisí tak bude podléhat zpoplatnění.** Zbývajících 26 % připadá hlavně zemědělství a odpadovému hospodářství a výjimkám z ETS.[^ets-emise]
 
 {% include figure.html
     name="cs-podil-ets-na-emisich-eu-des.svg"
     class="narrow-figure"
     alt="Graf, který ukazuje podíl emisního obchodování na celkových emisích EU. Zatímco ETS 1 pokrývá 38 %, ETS 2 47 %."
-    source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle přílohy III směrnice č. 2023/959."
+    source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle metodiky EEA, str. 17."
+    source-url="https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2025/eea-technical-background-document.pdf"
 %}
 
 Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadní roli auta se spalovacími motory, v menší míře pak autobusy a nákladní vozidla.[^doprava-emise] V případě budov nejde o emise vznikající při jejich stavbě, ale primárně o emise vznikající při lokálním vytápění, ohřevu vody nebo vaření či ty, které produkují malé teplárny a výtopny. Záměrem jejich zpoplatnění je **motivovat domácnosti i podniky k využívání nízkoemisních způsobů dopravy, zateplení domu či pořízení tepelného čerpadla.** Cílem bude snížit emise v těchto sektorech do roku 2030 o 42 % v porovnání s rokem 2005.
@@ -38,7 +39,8 @@ Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadn�
     name="cs-ets-2-emise-vyvoj-des.svg"
     name-mobile="cs-ets-2-emise-vyvoj-mob.svg"
     alt="Liniový graf, který ukazuje vývoj emisí v sektorech silniční dopravy a budov od roku 2005. V roce 2019 byly tyto emise v porovnání s rokem 2005 o 19 % nižší."
-    source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle přílohy III směrnice č. 2023/959."
+    source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle metodiky EEA, str. 17."
+    source-url="https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2025/eea-technical-background-document.pdf"
 %}
 
 ## Jak bude ETS 2 fungovat
@@ -47,14 +49,13 @@ Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadn�
 - Pro nepřekročení sociálně udržitelné ceny pro domácnosti pracuje systém s **mechanismy pro případ nadměrného nárůstu ceny povolenky.** Pokud bude cena povolenky vyšší než její průměrná cena za určité období, nebo pokud cena překročí **45 eur za povolenku** (ve stálých cenách roku 2020[^stale-ceny]), budou do oběhu uvolněny další povolenky, aby byl nárůst cen zmírněn.[^cena-upresneni]
 - **Nákup povolenek** nebude vzhledem k administrativní náročnosti na jednotlivých producentech skleníkových plynů, tedy spotřebitelích, kteří jezdí autem nebo vytápějí svou domácnost, ale **připadne dodavatelům energií a pohonných hmot.**[^danove-sklady]
 - Podobně jako v rámci ETS 1 se bude množství povolenek v oběhu každoročně snižovat podle předem stanoveného redukčního faktoru.[^redukcni-faktor]
-- Pokud budou v první polovině roku 2026 mimořádně vysoké ceny energie, bude spuštění odloženo z roku 2027 na rok 2028.[^odlozeni]
 - ETS 2 se nebude vztahovat na sektory zemědělství, armády a železniční a lodní dopravy.
 
 {% capture ets %}
 
 Systém pro obchodování s emisními povolenkami je jedním z nástrojů zpoplatnění emisí založených na principu **znečišťovatel platí**. Jak v praxi funguje? Producenti skleníkových plynů zařazení do systému (např. elektrárny) musí za každou tunu emisí vypuštěnou do atmosféry vyřadit jednu povolenku. Jejich množství na trhu je však omezené (princip *cap-and-trade*) a v čase se na základě předem stanovené trajektorie snižuje, což vytváří tlak na růst ceny povolenky. **Čím vyšší je cena povolenky, tím více jsou producenti emisí motivování k jejich snižování** a investicím do nízkoemisních alternativ (v případě, že náklady takové investice jsou nižší než náklady na nákup povolenek).
 
-Povolenky si jednotlivé provozovny nakupují buď v aukcích, od sebe navzájem, nebo v některých případech dostávají určité množství zdarma. To například v rámci EU ETS platí pro průmyslová odvětví, která by v důsledku vyšších výdajů na povolenky mohla ztratit konkurenceschopnost vzhledem k producentům ze třetích zemí, kde jsou emise zpoplatněny méně či vůbec, nebo by hrozil tzv. únik uhlíku do těchto zemí. Od roku 2026 (s postupným náběhem od roku 2023) však začne fungovat [mechanismus uhlíkového vyrování na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM), který dovoz emisně náročných produktů do EU zpoplatní, čímž dojde k narovnání podmínek s domácími výrobci. Z toho důvodu budou povolenky zdarma postupně vyřazovány a v roce 2034 skončí úplně.
+Povolenky si jednotlivé provozovny nakupují buď v aukcích, od sebe navzájem, nebo v některých případech dostávají určité množství zdarma. To například v rámci EU ETS platí pro průmyslová odvětví, která by v důsledku vyšších výdajů na povolenky mohla ztratit konkurenceschopnost vzhledem k producentům ze třetích zemí, kde jsou emise zpoplatněny méně či vůbec, nebo by hrozil tzv. únik uhlíku do těchto zemí. Od roku 2026 (s postupným náběhem od roku 2023) však začíná fungovat [mechanismus uhlíkového vyrování na hranicích](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0956) (*Carbon Border Adjustment Mechanism*, CBAM), který dovoz emisně náročných produktů do EU zpoplatní, čímž dojde k narovnání podmínek s domácími výrobci. Z toho důvodu budou povolenky zdarma postupně vyřazovány a v roce 2034 skončí úplně.
 
 Výnosy z prodeje povolenek pak mají státy k dispozici pro investice do dekarbonizačních opatření. Více o emisních povolenkách obsahuje [náš článek](/explainery/emisni-povolenky-ets).
 
@@ -76,7 +77,7 @@ Výnosy z ETS 2 budou k dispozici v následujících dvou formách:
 
 {% capture vynosy %}
 
-Logiku odhadu výnosů z prodeje povolenek lze pro zjednodušení popsat následovně. **Množství emisí vyprodukovaných  v dotčených sektorech v určitém roce vynásobíme průměrnou cenou povolenky v témže roce**, čímž získáme celkové výnosy pro daný rok. Od těch odečteme částku vyhrazenou pro Sociální klimatický fond a zbytek na základě úrovně emisí rozdělíme mezi jednotlivé členské státy. Pokud bychom pro ilustraci uvažovali emise vyprodukované sektory v ETS 2 v roce 2023, tedy 1 554 megatun CO<sub>2</sub>eq (skutečné emise v roce 2027 však pravděpodobně budou nižší), a průměrnou cenu povolenku ve výši 60 eur, dostali bychom se k výnosům ve výši přibližně 93 miliard eur. Víme-li, že pro Sociální klimatický fond jsou v daném roce alokovány 4 miliardy eur, k rozdělení mezi členské státy zbyde asi 89 miliard eur.
+Logiku odhadu výnosů z prodeje povolenek lze pro zjednodušení popsat následovně. **Množství emisí vyprodukovaných  v dotčených sektorech v určitém roce vynásobíme průměrnou cenou povolenky v témže roce**, čímž získáme celkové výnosy pro daný rok. Od těch odečteme částku vyhrazenou pro Sociální klimatický fond a zbytek na základě úrovně emisí rozdělíme mezi jednotlivé členské státy. Pokud bychom pro ilustraci uvažovali emise vyprodukované sektory v ETS 2 v roce 2023, tedy 1 554 megatun CO<sub>2</sub>eq (skutečné emise však v druhé polovině 20. let pravděpodobně budou nižší), a průměrnou cenu povolenku ve výši 60 eur, dostali bychom se k výnosům ve výši přibližně 93 miliard eur. Víme-li, že pro Sociální klimatický fond jsou v daném roce alokovány 4 miliardy eur, k rozdělení mezi členské státy zbyde asi 89 miliard eur.
 
 Tuto logiku lze použít pro výpočet výnosů zpětně vzhledem ke skutečně vyprodukovaným emisím (z nichž všechny budou muset být pokryty povolenkami). Odhad budoucích výnosů je složitější, jelikož do něj vstupuje lineární redukční faktor, který množství povolenek k dražbě každoročně snižuje, počáteční navýšení množství dražených povolenek a mechanismus rezervy tržní stability, který umožňuje uvolňovat další povolenky pro regulaci ceny.
 
@@ -96,7 +97,7 @@ Tuto logiku lze použít pro výpočet výnosů zpětně vzhledem ke skutečně 
     class="contrast-figure"
     label="Na okraj: Kdo bude čistým plátcem a kdo příjemcem?"
     content="
-Podobně jako například v Modernizačním fondu budou i v Sociálním klimatickém fondu prostředky rozdělovány s ohledem na rozdílnou situaci v jednotlivých státech. Stanovení podílu, který připadne danému členskému státu, vychází mj. z podílu obyvatelstva ohroženého chudobou, hrubého národního důchodu nebo emisí vypouštěných při spalování paliv domácnostmi. Čistými příjemci v rámci SKF tak budou např. Polsko, Rumunko nebo Řecko. Naopak čistými plátci budou Německo, Nizozemsko nebo Itálie. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
+Podobně jako například v Modernizačním fondu budou i v Sociálním klimatickém fondu prostředky rozdělovány s ohledem na rozdílnou situaci v jednotlivých státech. Stanovení podílu, který připadne danému členskému státu, vychází mj. z podílu obyvatelstva ohroženého chudobou, hrubého národního důchodu nebo emisí vypouštěných při spalování paliv domácnostmi. Čistými příjemci v rámci SKF tak budou např. Polsko, Rumunko nebo Řecko. Naopak čistými plátci budou Německo, Nizozemsko nebo Itálie. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1SOaRLBSLwsogI7iHkUtAcfcb-8BkItc0lJPQYkL5Tcs/edit?usp=sharing).
 "
 %}
 
@@ -140,13 +141,15 @@ V praktické rovině je pak nezbytná dostupnost materiálů a technologií pro 
 
 Ačkoliv legislativa upravující fungování ETS 2 byla na celounijní úrovni schválena už v roce 2023, do října 2025 ji plně transponovalo do svého národního práva [17 států](https://www.ieta.org/ets2-tracker) z 27. Například v Česku proběhla zatím pouze částečná transpozice směrnice a její plné přijetí je nadále předmětem politických diskuzí.
 
-V létě 2025 Česko společně s dalšími 18 členskými státy zaslalo Evropské komisi tzv. [*non-paper*](https://www.mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/cr-odeslala-evropske-komisi-pozadavky-18), ve kterém nastínilo požadavky na úpravy systému tak, aby mj. došlo k posílení mechanismů pro udržení ceny povolenky na sociálně přijatelné úrovni.V reakci na tuto iniciativu má Komise představit do konce roku 2025 [konkrétní návrhy](https://ec.europa.eu/commission/presscorner/detail/en/speech_25_2469) na úpravy ETS2.[^reakce-komise]
+V létě 2025 Česko společně s dalšími 18 členskými státy zaslalo Evropské komisi tzv. [*non-paper*](https://www.mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/cr-odeslala-evropske-komisi-pozadavky-18), ve kterém nastínilo požadavky na úpravy systému tak, aby mj. došlo k posílení mechanismů pro udržení ceny povolenky na sociálně přijatelné úrovni. V reakci na tuto iniciativu představila Komise na konci roku 2025 [konkrétní návrhy](https://climate.ec.europa.eu/news-other-reads/news/commission-proposes-targeted-adjustments-market-stability-reserve-decision-support-smoother-start-2025-11-27_en?prefLang=cs), jak mají být tyto stabilizační mechanismy zesíleny.[^uprava-msr] Součástí balíčku změn je i dřívější start aukcí (před úplným startem ETS 2) pro včasném signálu o ceně povolenky nebo možnost využívat výnosy dříve skrze půjčku zprostředkovanou [Evropskou investiční bankou](https://www.eib.org/en/projects/all/20250548).
+
+Stejně tak došlo ke konci roku 2025 skrze revizi Evropského klimatického zákona k [dohodě](https://www.consilium.europa.eu/cs/press/press-releases/2025/12/10/2040-climate-target-council-and-parliament-agree-on-a-90-emissions-reduction/) **odložit start ETS 2 na rok 2028**.
 
 #### Trh s futures
 
 V polovině roku 2025 došlo na burzách ICE a EEX ke spuštění obchodování s futures kontrakty na ETS 2 povolenky. V českém veřejném prostoru se následně několikrát objevilo tvrzení, že počátek obchodování s ETS 2 futures ukazuje, že se cena povolenky už nyní pohybuje okolo 70 eur. Toto tvrzení je ale z několika důvodů zavádějící:
 - Obchody s ETS 2 futures až na jednotky případů neprobíhají.[^futures-obchody] Informace o vývoji ceny tedy nejsou výsledkem skutečných transakcí, ale syntetického modelování, tedy se částečně odvozují od podobných kontraktů, např. EU ETS 1.[^dokumentace] Zatím tak na základě těchto omezených informací nelze předjímat budoucí cenu.
-- Obchodování samotných povolenek (nikoliv futures kontraktů) začne až v roce 2027 na burze EEX v Lipsku (případně dříve, pokud dojde k úpravám [avizovaným](https://ec.europa.eu/commission/presscorner/detail/en/speech_25_2469) Komisí). A až tehdy bude více informací o tom, jak se trh s povolenkami druhé generace chová. Platí přitom, že cena povolenky bude záležet jednak na tom, jak vysoká bude jejich nabídka, jednak na tom jaká bude poptávka (tedy množství emisí v dotčených sektorech).[^bnef]
+- Obchodování samotných povolenek (nikoliv futures kontraktů) začne až v roce 2027 nebo 2028 na burze EEX v Lipsku. A až tehdy bude více informací o tom, jak se trh s povolenkami druhé generace chová. Platí přitom, že cena povolenky bude záležet jednak na tom, jak vysoká bude jejich nabídka, jednak na tom jaká bude poptávka (tedy množství emisí v dotčených sektorech).[^bnef]
 
 {% include expander-figure.html
     name="futures"
@@ -177,20 +180,20 @@ Jak v těchto místech vypadá využití výnosů ze zpoplatnění emisí uhlík
 
 ## Poznámky a zdroje
 
-Data k jednotlivým grafům včetně zjednoušeného modelu výnosů jsou k dispozici v [našem datasetu](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
+Data k jednotlivým grafům včetně zjednoušeného modelu výnosů jsou k dispozici v [našem datasetu](https://docs.google.com/spreadsheets/d/1SOaRLBSLwsogI7iHkUtAcfcb-8BkItc0lJPQYkL5Tcs/edit?usp=sharing).
 
+[^start]: Původně měl systém ETS 2 začít fungovat už v roce 2027, ale jak Evropský parlament, tak členské státy v Radě EU se [shodly](https://www.consilium.europa.eu/cs/press/press-releases/2025/12/10/2040-climate-target-council-and-parliament-agree-on-a-90-emissions-reduction/) na odkladu na rok 2028.
 [^ets-emise]: Pro emise nepokryté ETS 1 platí v současnosti závazky jednak v rámci nařízení o sdílení úsilí (*Effort Sharing Regulation*, ESR), jednak v rámci nařízení o využívání půdy a lesnictví (*Land Use, Land Use Change and Forestry*, LULUCF). Zatímco ESR se vztahuje k sektorům budov, dopravy, zemědělství, odpadového hospodářství, malého průmyslu a energetiky, nařízení LULUCF vytyčuje cíle pro pohlcování emisí lesy, mokřady, pastvinami, poli atd.
 [^doprava-emise]: Emise z dopravy navíc na rozdíl od ostatních sektorů ekonomiky stále [narůstají](/infografiky/emise-eu-vyvoj): v porovnání s rokem 1990 došlo v roce 2023 na úrovni EU o nárůst ve výši 26 %, v Česku [vzrostly](/infografiky/emise-cr-vyvoj) o tři čtvrtiny, 75 %.
 [^uhlikova-dan]: Co se týče emisí skleníkových plynů ze silniční dopravy a budov, v některých zemích podléhají uhlíkové dani, ale např. v Česku dosud zpoplatněny nebyly.
 [^danove-sklady]: Podle [dopadové studie Evropské komise](https://eur-lex.europa.eu/resource.html?uri=cellar:7b89687a-eec6-11eb-a71c-01aa75ed71a1.0001.01/DOC_1&format=PDF) by se povinnost měla dotknout přibližně 11 400 entit – [daňových skladů](https://cs.wikipedia.org/wiki/Da%C5%88ov%C3%BD_sklad) pro ropu a lokálních dodavatelů plynu a uhlí.
-[^odlozeni]: Viz [článek 30k směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030K).
-[^redukcni-faktor]: Viz [článek 30c směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030C). Množství povolenek, které bude k dispozici od roku 2027, se lineárně snižuje již od roku 2024 (o 5,1 %).
+[^redukcni-faktor]: Viz [článek 30c směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030C). Množství povolenek, které bude k dispozici od roku startu ETS 2, se lineárně snižuje již od roku 2024 (o 5,1 %).
 [^stale-ceny]: V praxi to znamená, že aktuální výši "stropu" ovlivňuje kumulovaná inflace (přesněji změna [evropského indexu spotřebitelských cen](https://ec.europa.eu/eurostat/cache/dashboard/prices/)) od roku 2020. Ta pro rok 2024 vychází přibližně na 22,6 %, což hranici posune z 45 na přibližně 55 eur.
-[^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v [článku 30h směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030H).
+[^cena-upresneni]: Mechanismy pro nadměrný nárůst ceny povolenky jsou podrobně popsány v [článku 30h směrnice](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32023L0959#030H). V rámci revize [rozhodnutí](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52025PC0738) o rezervě tržní stability mají být navíc ještě posíleny.
 [^skf]: Sociální klimatický fond začne fungovat o rok dříve, než se ETS 2 spustí, z toho důvodu bude pro jeho financování využito i 50 milionů povolenek dražených v rámci ETS 1.
-[^zdroje-aukce]: Pokud by průměrná cena ETS 2 povolenky byla 60 eur, znamenalo by to v letech 2027–2032 hrubým odhadem dalších 200 mld. Kč pro český rozpočet. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1PSheH9ft7ozXIQuOrMw1mc85etGwU3o0Ddrdyrx2VvM/edit?usp=sharing).
+[^zdroje-aukce]: Pokud by průměrná cena ETS 2 povolenky byla 60 eur, znamenalo by to v prvních šesti letech hrubým odhadem dalších 160 mld. Kč pro český rozpočet. Více viz náš [dataset](https://docs.google.com/spreadsheets/d/1SOaRLBSLwsogI7iHkUtAcfcb-8BkItc0lJPQYkL5Tcs/edit?usp=sharing).
 [^uhli]: Uhlí je na rozdíl od ostatních paliv velmi levným zdrojem – je lokální a málo zdaněné. Navíc má vyšší emisní intenzitu než ostatní paliva, proto se zavedení povolenky na jeho ceně projeví více.
-[^reakce-komise]: Tyto úpravy by měly znamenat především uvolnění většího množství povolenek z rezervy tržní stability (*Market Stability Reserve*, MSR) nebo možnost dražit povolenky už před startem ETS2, aby i výnosy byly k dispozici dříve.
+[^uprava-msr]: Konkrétně jde o úpravy v rámci revize [rozhodnutí](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:52025PC0738) o rezervě tržní stability, která navrhuje především navýšit množství uvolňovaných povolenek při překročení ceny 45 eur (v cenách roku 2020).
 [^futures-obchody]: Viz data burz [ICE](https://www.ice.com/products/83048353/EUA-2-Futures/data?span=1) a [EEX](https://www.eex.com/en/market-data/market-data-hub/environmentals/futures#%7B%22snippetpicker%22%3A%222235%22%7D) a sloupec *Volume*, který se ve většinu dní rovná 0.
 [^dokumentace]: Dokumentace k určování settlement price burz [ICE](https://www.ice.com/publicdocs/endex/ICE_Endex_EoD_Report.pdf) a [EEX](https://www.eex.com/en/trading-resources/trading-information/trading-forms-and-documentation).
 [^bnef]: [Studie](https://about.bnef.com/insights/commodities/eu-ets-ii-pricing-scenarios/) BloombergNEF uvádí, že pokud dojde k vhodným úpravám mechanismů pro kontrolu ceny povolenky v rámci rezervy tržní stability, vhodné realokaci výnosů do opatření podporující nízkoemisní alternativy a k plnění cílů, jako jsou emisní standardy pro auta a dodávky nebo energetická účinnost v budovách, je možné dosáhnout jak snížení emisí, tak udržení ceny na sociálně přijatelné úrovni.
