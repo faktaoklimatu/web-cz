@@ -4,7 +4,7 @@ title:      "Průměrná roční teplota v ČR"
 slug:       "teplota-cr"
 redirect_from: "/teplota-cr"
 published:  2019-07-20
-updated:    2026-01-21
+updated:    2026-02-02
 weight:     96
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
@@ -18,9 +18,9 @@ data-orig:  [ [ "Zdrojová data ČHMÚ", "https://intranet.chmi.cz/historicka-da
 ## Další komentáře a odkazy
 
 {% include preview-box.html
-    title="Trend oteplování jednotlivých měsíců"
-    text="Prosinec, leden, červenec a srpen se oteplily o více než 2,9 °C od roku 1961"
-    slug="trend-teplot-cr"
+    title="Průměrná teplota v ČR v jednotlivých měsících"
+    text="Nejvíce se oteplilo v lednu, prosinci, srpnu a červenci."
+    slug="teplota-cr-mesice"
 %}
 
 * Průměrná teplota jednotlivých měsíců roste různě rychle. Nejvíce se oteplují prosinec, leden, červenec a srpen a  (o více než 2,9 °C od roku 1961), nejméně září a říjen. Podrobněji viz [trendy teplot pro jednotlivé měsíce](/infografiky/trend-teplot-cr).
