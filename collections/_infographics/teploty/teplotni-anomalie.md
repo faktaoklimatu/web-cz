@@ -7,6 +7,7 @@ redirect_from:
   - /vyvoj-teplotni-anomalie
   - /infografiky/vyvoj-teplotni-anomalie
 published:  2019-08-03
+updated:    2026-02-02
 weight:     100
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
