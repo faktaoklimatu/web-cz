@@ -48,6 +48,7 @@ items:
   - natgas
   - msw
   share_households: 51
+  share_households_dhs_in_czechia: 0.1673098389
   mf_subsidies:
   - call: 2/2021
     application_id: '7210200004'
@@ -148,6 +149,7 @@ items:
   - natgas
   - cokegas
   share_households: 73
+  share_households_dhs_in_czechia: 0.06427825655
   mf_subsidies:
   - call: 1/2024
     application_id: '7240100001'
@@ -219,7 +221,7 @@ items:
   status: done
   status_text: Bez uhlí
   notes: Teplárny Brno přestaly spalovat uhlí již v roce 1996. Většina tepla pochází ze spalování ze zemního plynu a komunálního odpadu, biomasa tvoří doplňkové palivo. Nyní je také ve výstavbě nový kotel na biomasu (dotace ModFond), a chystá se výstavba horkovodu z Dukovan.
-  owner: Brno
+  owner: město Brno
   owner_web: https://www.teplarny.cz/
   num_households: 94005
   munis_supplied: Brno
@@ -245,6 +247,7 @@ items:
   fuels_secondary_today:
   - biomass
   share_households: 51
+  share_households_dhs_in_czechia: 0.06279529755
   mf_subsidies:
   - call: 2/2021
     application_id: '7210200003'
@@ -300,6 +303,7 @@ items:
   - natgas
   - wasteheat
   share_households: 41
+  share_households_dhs_in_czechia: 0.04195905564
   ippc_permits:
   - name: Teplárna Veleslavín
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejf5ir
@@ -333,6 +337,7 @@ items:
   fuels_secondary_future:
   - biomass
   share_households: 62
+  share_households_dhs_in_czechia: 0.04016414085
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100016'
@@ -389,7 +394,7 @@ items:
   status: in-progress
   status_text: Odchod od uhlí do roku 2028
   notes: Postupný odklon od uhlí už probíhá delší dobu - v roce 2010 by kolaudován čistě biomasový kotel a v roce 2019 spalovna odpadu. V roce 2022 byl přestavěn uhelný kotel K6 na spalování až 80 % biomasy. Teplárna plánuje odejít od uhlí cca do roku 2028. Součástí plánu je postavit dva nové paroplynové zdroje (podpořeno ModFond, jeden z nich s provozní podporou) a kotel K6 upravit na 100% spalování biomasy.
-  owner: Plzeň
+  owner: město Plzeň
   owner_web: https://www.pltep.cz/
   num_households: 49919
   munis_supplied: Plzeň
@@ -413,6 +418,7 @@ items:
   fuels_secondary_today:
   - msw
   share_households: 61
+  share_households_dhs_in_czechia: 0.03334586946
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100022'
@@ -479,6 +485,7 @@ items:
   - biomass
   - natgas
   share_households: 86
+  share_households_dhs_in_czechia: 0.03280478982
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100026'
@@ -552,6 +559,7 @@ items:
   - msw
   - biomass
   share_households: 83
+  share_households_dhs_in_czechia: 0.0239631478
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100007'
@@ -602,7 +610,7 @@ items:
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
   notes: Transformace uhelné teplárny probíhá v plném proudu. V roce 2023 byl dokončen horkovod z Temelína a dále byl jeden kotel na uhlí přestavěn na spalování 100% biomasy. Úplný odchod od uhlí se očeká v roce 2029, kdy bude v provozu nová spalovna komunálmího odpadu Vráto. Ta teprve v červenci 2025 dostala stavební povolení (podpořenou z ModFondu). Skladbu zdrojů doplní také nový plynový zdroj. který získal provozní podporu.
-  owner: České Budějovice
+  owner: město České Budějovice
   owner_web: https://www.teplarna-cb.cz/
   num_households: 33390
   munis_supplied: České Budějovice
@@ -628,6 +636,7 @@ items:
   fuels_secondary_today:
   - natgas
   share_households: 40
+  share_households_dhs_in_czechia: 0.02230450492
   mf_subsidies:
   - call: 1/2021
     application_id: '7210100015'
@@ -686,6 +695,7 @@ items:
   fuels_secondary_today:
   - natgas
   share_households: 71
+  share_households_dhs_in_czechia: 0.02091105786
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100024'
@@ -742,6 +752,7 @@ items:
   - biomass
   - srf
   share_households: 56
+  share_households_dhs_in_czechia: 0.01837132358
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100001'
@@ -798,6 +809,7 @@ items:
   - biomass
   - natgas
   share_households: 74
+  share_households_dhs_in_czechia: 0.01823438367
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100028'
@@ -854,6 +866,7 @@ items:
   - biomass
   - srf
   share_households: 64
+  share_households_dhs_in_czechia: 0.01329185501
   chp_subsidies:
   - power: 39
     since: '12/2030'
@@ -894,6 +907,7 @@ items:
   - natgas
   other_heating: průmyslová zóna Ledvice
   share_households: 62
+  share_households_dhs_in_czechia: 0.0130139672
   mf_subsidies:
   - call: 1/2024
     application_id: '7240100005'
@@ -938,6 +952,7 @@ items:
   fuels_secondary_today:
   - biomass
   share_households: 56
+  share_households_dhs_in_czechia: 0.01233995566
   mf_subsidies:
   - call: 1/2021
     application_id: '7210100012'
@@ -987,6 +1002,7 @@ items:
   - biomass
   - natgas
   share_households: 72
+  share_households_dhs_in_czechia: 0.01192111994
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100021'
@@ -1028,6 +1044,7 @@ items:
   fuels_main_future:
   - unknown
   share_households: 54
+  share_households_dhs_in_czechia: 0.01027917705
   ippc_permits:
   - name: Zpracovatelská část Vřesová
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek9953
@@ -1059,6 +1076,7 @@ items:
   - natgas
   - biomass
   share_households: 66
+  share_households_dhs_in_czechia: 0.009565085534
   mf_subsidies:
   - call: 1/2021
     application_id: '7210100018'
@@ -1101,7 +1119,7 @@ items:
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
   notes: Kotle na uhlí budou v teplárně nahrazeny za kotle na biomasu (projekt podpořen z ModFondu).
-  owner: ŠKODA
+  owner: Škoda Auto
   owner_web: https://www.sko-energo.cz/technologie/teplo-tepla-voda-a-elektrina/
   num_households: 13939
   munis_supplied: Mladá Boleslav, Kosmonosy, Řepov
@@ -1125,6 +1143,7 @@ items:
   - natgas
   other_heating: dále vytápí areál automobilky Škoda Auto
   share_households: 62
+  share_households_dhs_in_czechia: 0.009311245706
   mf_subsidies:
   - call: 2/2021
     application_id: '7210200006'
@@ -1167,6 +1186,7 @@ items:
   - srf
   - biomass
   share_households: 71
+  share_households_dhs_in_czechia: 0.009121533834
   mf_subsidies:
   - call: 1/2021
     application_id: '7210100006'
@@ -1214,6 +1234,7 @@ items:
   fuels_secondary_today:
   - hho
   share_households: 28
+  share_households_dhs_in_czechia: 0.009065421872
   ippc_permits:
   - name: Teplárna Liberec
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej8utp
@@ -1246,6 +1267,7 @@ items:
   fuels_main_future:
   - unknown
   share_households: 75
+  share_households_dhs_in_czechia: 0.007823610711
   ippc_permits:
   - name: Elektrárna Tisová - výroba a dodávka elektrické energie a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejkz5y
@@ -1278,6 +1300,7 @@ items:
   - biomass
   - natgas
   share_households: 59
+  share_households_dhs_in_czechia: 0.007483598941
   mf_subsidies:
   - call: 1/2024
     application_id: '7240100003'
@@ -1300,7 +1323,7 @@ items:
   status: done
   status_text: Bez uhlí
   notes: Inovativní teplárna využívající také FVE, elektrokotel s akumulací či bateriové úložiště. Od uhlí odešla už v roce 2022, cca 85 % palivového mixu nyní tvoří biomasa. Dále má teplárna plynové kogenerační jednotky a špičkovací plynové kotle. Ve výstavbě je také spalovna odpadu pro Táborsko (měla by být hotová do roku 2028).
-  owner: C-energy Group
+  owner: C-energy
   owner_web: https://www.c-energy.cz/
   num_households: 10970
   munis_supplied: Planá nad Lužnicí, Sezimovo Ústí, Tábor
@@ -1323,6 +1346,7 @@ items:
   fuels_secondary_today:
   - natgas
   share_households: 54
+  share_households_dhs_in_czechia: 0.007327955046
   mf_subsidies:
   - call: 1/2021
     application_id: '7210100001'
@@ -1381,6 +1405,7 @@ items:
   - natgas
   other_heating: Třinecké železárny
   share_households: 60
+  share_households_dhs_in_czechia: 0.005969911964
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100017'
@@ -1432,6 +1457,7 @@ items:
   - wasteheat
   other_heating: Continental Barum a další průmyslové podniky.
   share_households: 63
+  share_households_dhs_in_czechia: 0.00454172893
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100025'
@@ -1478,6 +1504,7 @@ items:
   fuels_main_future:
   - alt
   share_households: 77
+  share_households_dhs_in_czechia: 0.004169653181
   ippc_permits:
   - name: Elektrárna Tušimice II – Výroba a dodávka elektrické energie a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejtd9c
@@ -1513,6 +1540,7 @@ items:
   - hho
   other_heating: DEZA, Masný průmysl Krásno, Mlékárna Valašské Meziříčí
   share_households: 57
+  share_households_dhs_in_czechia: 0.00362456555
   ippc_permits:
   - name: Provoz energetika
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej94zq
@@ -1544,6 +1572,7 @@ items:
   - natgas
   other_heating: Areál chemických výrob Kralupy (Synthos i Orlen, tedy produkce syntetického kaučuku, zpracování ropy)
   share_households: 54
+  share_households_dhs_in_czechia: 0.003042069944
   ippc_permits:
   - name: Teplárna a související zařízení
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ekb461
@@ -1576,6 +1605,7 @@ items:
   - biomass
   other_heating: Mondi Štětí
   share_households: 83
+  share_households_dhs_in_czechia: 0.002024706631
   mf_subsidies:
   - call: 1/2022
     application_id: '7220100013'
@@ -1590,7 +1620,7 @@ items:
   - name: Parní kotel K 10 a K 11
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehuatx
 - name: Chvaletice
-  name_details: Malé plynové kotle (dříve elektrárna Chvaletice)
+  name_details: Plynová kotelna místo tepla z elektrárny Chvaletice
   x: 45.9
   y: 36.2
   lon: 15.45
@@ -1608,6 +1638,7 @@ items:
   fuels_main_future:
   - natgas
   share_households: 42
+  share_households_dhs_in_czechia: 0.000386103739
   ippc_permits:
   - name: Spalovací zařízení o jmenovitém tepelném příkonu větším než 50 MW
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehvt9l
@@ -1638,8 +1669,10 @@ items:
   fuels_main_future:
   - natgas
   other_heating: chemický areál Orlenu v Litvínově-Záluží
+  share_households_dhs_in_czechia: 0.0
   ippc_permits:
   - name: Jednotka energetické služby
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
 mf_total: 71365
 chp_subsidies_total_accepted: 2154
+num_households_ets2_total: 392226
