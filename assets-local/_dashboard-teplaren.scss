@@ -11,6 +11,12 @@ $c-teplarny-in-progress: #ffbc5b;
 $c-teplarny-problematic: #bb2719;
 $c-teplarny-problematic-bg: #fff1ef;
 
+#last-updated {
+    font-size: 1rem;
+    color: $c-teplarny-dark-grey;
+    font-style: italic;
+}
+
 #highlights-dashboard-teplaren {
     .card {
         border: 1px solid var(--status-color);
