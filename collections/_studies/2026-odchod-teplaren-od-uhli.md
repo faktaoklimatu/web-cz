@@ -6,7 +6,7 @@ redirect_from:
 - /2026-odchod-teplaren-od-uhli
 - /dashboard-teplaren
 weight:        209
-published:     2025-12-20
+published:     2026-02-09
 tags-scopes:   [ cesko ]
 tags-topics:   [ energetika ]
 # use-preview-image: true
@@ -16,6 +16,9 @@ intro: |
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
 <div class="narrow-text" markdown="1">
+<div id="last-updated">
+Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: "%-d. %-m. %Y" }}
+</div>
 {% capture methodology %}
 
 Tato rešerše je založena na celé řadě datových zdrojů (včetně ručního dohledávání veřejných informací).
