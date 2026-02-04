@@ -83,8 +83,7 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
 <div id="overall-charts">
     <div id="map">
     </div>
-    <div id="treemap">
-        <p>Dvě třetiny domácností na CZT odebírají teplo z tepláren odklánějících se od uhlí.</p>
+    <div>
     </div>
 </div>
 
