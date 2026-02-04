@@ -12,9 +12,11 @@ $c-teplarny-problematic: #bb2719;
 $c-teplarny-problematic-bg: #fff1ef;
 
 #last-updated {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: $c-teplarny-dark-grey;
-    font-style: italic;
+    div, div a {
+        color: $c-teplarny-grey;
+    }
 }
 
 #highlights-dashboard-teplaren {

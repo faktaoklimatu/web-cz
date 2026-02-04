@@ -18,6 +18,9 @@ extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 <div class="narrow-text" markdown="1">
 <div id="last-updated">
 Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: "%-d. %-m. %Y" }}
+<div markdown="1">
+(chyby a nepřesnosti prosíme hlaste na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz))
+</div>
 </div>
 {% capture methodology %}
 
@@ -37,7 +40,7 @@ Pro přehlednost jsou zde jen **větší teplárenské celky**, které dodávaj�
 - **Popis transformace teplárenských celků a jejich celkový stav** stejně jako jejich **vlastník** a **současná skladba paliv i ta plánovaná v budoucnu** jsou údaje založené na veřejných informacích: mediálních výstupech, webu vlastíka, žádostech EIA, dokumentaci IPPC, apod.
 - Paliva jsou u teplárenských celků seřazená podle jejich odhadovaném podílu na mixu (v roce 2025). Jako doplňková jsou označena ta paliva, která podle našich odhadů tvoří méně než 15 % mixu. Ve všech případech ovšem jde o relativně hrubé odhady, protože přesné údaje o palivovém mixu tepláren nejsou veřejně dostupné.
 
-V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme hlaste na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz), včetně odkazu na veřejný aktuální zdroj dat, který uvádí opravený údaj.
+V ručně shromážděných údajích samozřejmě mohou být chyby či nepřesnosti. Ty prosíme hlaste na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz), včetně odkazu na veřejný aktuální zdroj dat, který uvádí opravený údaj.
 
 {% endcapture %}
 
