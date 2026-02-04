@@ -1,9 +1,9 @@
 ---
 layout:        survey
 title:         "Plány odchodu od uhlí velkých teplárenských soustav"
-slug:          2025-reserse-dashboard-teplaren
+slug:          2026-odchod-teplaren-od-uhli
 redirect_from:
-- /2025-reserse-dashboard-teplaren
+- /2026-odchod-teplaren-od-uhli
 - /dashboard-teplaren
 weight:        209
 published:     2025-12-20
@@ -70,7 +70,7 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
                 {% endcase %}
             </h3>
             <p>
-                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} 
+                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
                 <b>{{ item.number }}</b> soustav
             </p>
             <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
