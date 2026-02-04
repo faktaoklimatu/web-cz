@@ -64,6 +64,13 @@ items:
     amount: 7259
     amount_original: 7259
     paid_percent: 0
+  - call: 1/2024
+    application_id: '7240100002'
+    name: Plynový zdroj
+    long_name: EGT-přechod k nízkoemisní výrobě tepla a elektrické energie, etapa 3.
+    amount: 9123
+    amount_original: 9123
+    paid_percent: 0
   - call: 1/2023
     application_id: '7230100004'
     name: Tepelné napaječe
@@ -92,8 +99,8 @@ items:
     amount: 24
     amount_original: 24
     paid_percent: 0
-  mf_subsidies_total: 12825
-  mf_subsidies_per_household: 51205
+  mf_subsidies_total: 21948
+  mf_subsidies_per_household: 87629
   chp_subsidies:
   - power: 650
     since: '12/2030'
@@ -711,8 +718,15 @@ items:
     amount: 750
     amount_original: 750
     paid_percent: 0
-  mf_subsidies_total: 750
-  mf_subsidies_per_household: 23959
+  - call: 1/2022
+    application_id: '7220100023'
+    name: Plynový zdroj
+    long_name: UL_PPC 100 MWt (150 MWe), Trmice
+    amount: 4576
+    amount_original: 4576
+    paid_percent: 0
+  mf_subsidies_total: 5326
+  mf_subsidies_per_household: 170138
   chp_subsidies:
   - power: 1
     since: '04/2027'
@@ -1421,8 +1435,15 @@ items:
     amount: 870
     amount_original: 870
     paid_percent: 0
-  mf_subsidies_total: 870
-  mf_subsidies_per_household: 97348
+  - call: 1/2025
+    application_id: '7250100001'
+    name: Plynový zdroj
+    long_name: Paroplynový cyklus PPC1, turbogenerátor NTG11 a využití odpadního tepla
+    amount: 2263
+    amount_original: 2263
+    paid_percent: 0
+  mf_subsidies_total: 3133
+  mf_subsidies_per_household: 350565
   ippc_permits:
   - name: Teplárna E2
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejuvmx
@@ -1731,7 +1752,7 @@ items:
   ippc_permits:
   - name: Jednotka energetické služby
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
-mf_chp_shown_subsidies_total: 83366
+mf_chp_shown_subsidies_total: 99328
 mf_chp_subsidies_total: 100317
 mf_subsidies_total: 201834
 chp_shown_subsidies_total_accepted: 2159
