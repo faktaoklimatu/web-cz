@@ -17,9 +17,10 @@ $c-teplarny-problematic-bg: #fff1ef;
         border-radius: .6rem;
         margin-block: 1rem;
         --status-color: grey;
+        font-size: 1.3rem;
 
         h3 {
-            margin-bottom: 0;
+            margin-bottom: .375rem;
             font-size: 1.1rem;
             color: var(--status-color);
         }
@@ -37,7 +38,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         }
 
         p {
-            margin: 0 0 0 2.5rem;
+            margin: 0;
             color: $c-teplarny-dark-grey;
         }
     }
@@ -55,18 +56,14 @@ $c-teplarny-problematic-bg: #fff1ef;
         --status-color: #{$c-teplarny-problematic};
     }
 
-    .status-not-shown {
-        display: none;
-    }
-
     .card-body {
-        padding: 1rem 1.25rem .75rem;
+        padding: 1rem 1rem .75rem;
     }
 }
 
 #overall-charts {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
     grid-column-gap: 2rem;
     margin-bottom: 3rem;
 
@@ -251,7 +248,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 4em;
+        height: 5em;
         /* adjust how much of the fade you want */
         background: linear-gradient(to bottom, transparent, white);
         pointer-events: none;
@@ -276,6 +273,7 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .details-toggle .btn {
         position: absolute;
+        bottom: .3rem;
         margin: 0;
         padding: .375em 0;
         font-size: .7em;

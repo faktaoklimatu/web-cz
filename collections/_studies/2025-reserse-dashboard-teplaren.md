@@ -66,12 +66,13 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
                 {% when "done" %} Odchod od uhlí dokončen
                 {% when "in-progress" %} Odchod od uhlí probíhá
                 {% when "problematic" %} Nejasný odchod od uhlí
+                {% when "not-shown" %} Nezobrazujeme
                 {% endcase %}
             </h3>
-            <h4>
-                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
+            <p>
+                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} 
                 <b>{{ item.number }}</b> soustav
-            </h4>
+            </p>
             <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
             <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
         </div>
@@ -88,7 +89,7 @@ V ručně shromážděných údajích samozřejmě mohou být chyby. Ty prosíme
 </div>
 
 <div id="controls-status">
-    <p>Filtr: </p>
+    <p>Filtr podle <b>stavu transformace</b></p>
     <div class="form-check status-problematic">
         <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
         <label class="form-check-label" for="checkProblematic">Nejasné</label>
