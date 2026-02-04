@@ -249,6 +249,13 @@ items:
   share_households: 51
   share_households_dhs_in_czechia: 0.06279529755
   mf_subsidies:
+  - call: 1/2025
+    application_id: '7258100008'
+    name: Horkovod Dukovany–Brno
+    long_name: 'Horkovod Dukovany - Brno '
+    amount: 10598
+    amount_original: 10598
+    paid_percent: 0
   - call: 2/2021
     application_id: '7210200003'
     name: Biomasa
@@ -263,8 +270,8 @@ items:
     amount: 2848
     amount_original: 2848
     paid_percent: 0
-  mf_subsidies_total: 4509
-  mf_subsidies_per_household: 47966
+  mf_subsidies_total: 15107
+  mf_subsidies_per_household: 160704
   ippc_permits:
   - name: Teplárny Brno provozovna Červený Mlýn
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehtgxe
@@ -1724,6 +1731,7 @@ items:
   ippc_permits:
   - name: Jednotka energetické služby
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
-mf_total: 72768
+mf_chp_subsidies_total: 83366
+mf_subsidies_total: 201834
 chp_subsidies_total_accepted: 2159
 num_households_ets2_total: 384724
