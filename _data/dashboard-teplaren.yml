@@ -4,8 +4,8 @@ highlights:
   num_households: 72270
   ghg_share: 4.94
 - status: in-progress
-  number: 16
-  num_households: 724043
+  number: 17
+  num_households: 731545
   ghg_share: 17.39
 - status: done
   number: 10
@@ -40,7 +40,7 @@ items:
   - 1.927
   - 1.742
   emissions_latest: 1.742
-  emissions_note: ZEVO Malešice je (zatím) mimo systém ETS1.
+  emissions_note: ZEVO Malešice je (zatím) mimo systém ETS1, takže jde o neúplné údaje.
   fuels_main_future:
   - natgas
   - msw
@@ -237,7 +237,7 @@ items:
   - 0.177
   - 0.182
   emissions_latest: 0.182
-  emissions_note: Zahrnuje i dnes samostatnou výtopnu FN Brno (bude nahrazena rozvodem Tepláren Brno)
+  emissions_note: Emise zahrnují i dnes samostatnou výtopnu FN Brno, která bude nahrazena rozvodem Tepláren Brno.
   fuels_main_future:
   - nuclear
   - msw
@@ -298,7 +298,7 @@ items:
   - 0.064
   - 0.064
   emissions_latest: 0.064
-  emissions_note: Většina výroba je v menších zdrojích mimo ETS1, tedy skutečné emise jsou výrazně vyšší.
+  emissions_note: Jde o neúplné údaje. Většina výroby je v menších zdrojích mimo ETS1, tedy skutečné emise jsou výrazně vyšší.
   fuels_main_future:
   - natgas
   - wasteheat
@@ -997,7 +997,7 @@ items:
   - 0.04
   - 0.035
   emissions_latest: 0.035
-  emissions_note: Nový zdroj na biomasu dostavěn v polovině 2024, na emisích za rok 2024 se tedy ještě zcela neprojevil.
+  emissions_note: Nový zdroj na biomasu byl dostavěn v polovině roku 2024, na emisích za rok 2024 se tedy ještě zcela neprojevil.
   fuels_main_future:
   - biomass
   - natgas
@@ -1225,7 +1225,7 @@ items:
   - 0.022
   - 0.015
   emissions_latest: 0.015
-  emissions_note: 70% tepla dnes ze spalovny, další z biomasy
+  emissions_note: ZEVO Termizo je (zatím) mimo systém ETS1, takže jde o neúplné údaje.
   fuels_main_future:
   - msw
   - natgas
@@ -1421,6 +1421,57 @@ items:
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejuvmx
   - name: Teplárna E3
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejczvk
+- name: Písek
+  name_details: Teplárna Písek
+  x: 28.4
+  y: 59.2
+  lon: 14.15
+  lat: 49.3
+  status: in-progress
+  status_text: Nejasné dokončení odchodu od uhlí
+  notes: V současnosti využívá jeden kotel na hnědé uhlí a jeden kotel na biomasu. Tyto zdroje plánuje do roku 2026 doplnit kogenerační jednotkou (s provozní podporou i dotací z ModFond). Do roku 2029 mělo uhelný kotel nahradit nové ZEVO (podpořené z ModFond), proti výstavbě se ale v roce 2025 postavili občané v závazném místním referendu a tak je dokončení odchodu od uhlí momentálně nejasné (včetně jeho financování).
+  owner: město Písek
+  owner_web: http://tpi.cz/
+  num_households: 7502
+  munis_supplied: Písek
+  fuels_main_today:
+  - lignite
+  - biomass
+  emissions_note: Dočasně vyřazena ze systému ETS 1 (snížením výkonu zařízení), takže údaje o emisích nejsou dostupné.
+  fuels_main_future:
+  - biomass
+  - natgas
+  - unknown
+  fuels_secondary_today:
+  - hho
+  share_households: 57
+  share_households_dhs_in_czechia: 0.005011332612
+  mf_subsidies:
+  - call: 1/2022
+    application_id: '7220100011'
+    name: ZEVO
+    long_name: ZEVO Písek
+    amount: 1314
+    amount_original: 1314
+    paid_percent: 0
+  - call: 1/2021
+    application_id: '7210100017'
+    name: Plynový zdroj
+    long_name: Instalace kogeneračního zdroje na zemní plyn v rámci SZT Písek
+    amount: 90
+    amount_original: 133
+    paid_percent: 10
+  mf_subsidies_total: 1403
+  mf_subsidies_per_household: 187017
+  chp_subsidies:
+  - power: 5
+    since: '05/2026'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 5
+  ippc_permits:
+  - name: Zařízení na výrobu a rozvod tepelné a elektrické energie
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejucyi
 - name: Otrokovice
   name_details: Teplárna Otrokovice
   x: 74.1
@@ -1673,6 +1724,6 @@ items:
   ippc_permits:
   - name: Jednotka energetické služby
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
-mf_total: 71365
-chp_subsidies_total_accepted: 2154
-num_households_ets2_total: 392226
+mf_total: 72768
+chp_subsidies_total_accepted: 2159
+num_households_ets2_total: 384724
