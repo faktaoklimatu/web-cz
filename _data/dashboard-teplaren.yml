@@ -1731,7 +1731,9 @@ items:
   ippc_permits:
   - name: Jednotka energetické služby
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98eju93c
-mf_chp_subsidies_total: 83366
+mf_chp_shown_subsidies_total: 83366
+mf_chp_subsidies_total: 100317
 mf_subsidies_total: 201834
-chp_subsidies_total_accepted: 2159
+chp_shown_subsidies_total_accepted: 2159
+chp_subsidies_total_accepted: 2308
 num_households_ets2_total: 384724
