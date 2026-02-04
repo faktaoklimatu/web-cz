@@ -9,10 +9,6 @@
                 {{ facility.status_text }}
             </p>
             <p class="notes">{{ facility.notes }}</p>
-            <p class="details-toggle" role="presentation">
-                <button type="button" class="btn btn-link not-detail" onclick="$(this).closest('.card').addClass('details-shown');"><i class="fas fa-angle-down"></i> Více informací</button>
-                <button type="button" class="btn btn-link detail" onclick="$(this).closest('.card').removeClass('details-shown');"><i class="fas fa-angle-up"></i> Méně informací</button>
-            </p>
         </div>
         <dl class="stats">
             <dt class="households"><i class="fa-solid fa-house-fire"></i> Vytápěné domácnosti</dt>
@@ -20,7 +16,7 @@
                 <b>{{ facility.num_households | round_signif: 2 | format_number }}</b>
             </dd>
             {% if facility.share_households %}
-            <dd class="households-share detail"><span class="figure">{{ facility.share_households }} %</span> domácností</dd>
+            <dd class="households-share detail"><b>{{ facility.share_households }} %</b></span> domácností</dd>
             {% endif %}
             {% if facility.munis_supplied %}
             <dd class="munis-supplied detail">{{ facility.munis_supplied }}</dd>
@@ -109,5 +105,9 @@
                 {% endfor %}
             {% endif %}
         </dl>
+        <p class="details-toggle" role="presentation">
+            <button type="button" class="btn btn-link not-detail" onclick="$(this).closest('.card').addClass('details-shown');"><i class="fas fa-angle-down"></i> Více informací</button>
+            <button type="button" class="btn btn-link detail" onclick="$(this).closest('.card').removeClass('details-shown');"><i class="fas fa-angle-up"></i> Méně informací</button>
+        </p>
     </div>
 </div>

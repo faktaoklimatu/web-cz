@@ -275,6 +275,7 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 
     .details-toggle .btn {
+        position: absolute;
         margin: 0;
         padding: .375em 0;
         font-size: .7em;
@@ -290,6 +291,10 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .map {
         margin-bottom: 2rem
+    }
+
+    .map img{
+        opacity: 0.4;
     }
 
     .map>div {
@@ -471,15 +476,9 @@ $c-teplarny-problematic-bg: #fff1ef;
     }
 
     .households-share {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: $c-teplarny-grey;
         margin-bottom: 0rem;
-
-        .figure {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 0rem;
-        }
     }
 
     .munis-supplied {
