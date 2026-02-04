@@ -12,7 +12,7 @@ tags-topics:   [ energetika ]
 # use-preview-image: true
 caption:       "Přehled scénářů transformace českých tepláren spalujících uhlí"
 intro: |
-    Tato rešerše ukazuje 32 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 69 % všech domácností výtápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 26 % pak soustavy mimo systém EU ETS 1.)
+    Tato rešerše ukazuje 33 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 69 % všech domácností výtápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 26 % pak soustavy mimo systém EU ETS 1.)
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
 <div class="narrow-text" markdown="1">
