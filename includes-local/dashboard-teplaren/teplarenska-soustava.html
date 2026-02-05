@@ -2,13 +2,13 @@
 <div class="card status-{{ facility.status }}" id="{{ facility.name | slugify: "latin" }}">
     <div class="card-body">
         <div>
-            <h4>{{ facility.name_details }} ({{ facility.owner }})</h4>
+            <h4>{{ facility.name_details }}</h4>
             <h3>{{ facility.name }}</h3>
             <p class="status-line">
                 {% include includes-local/dashboard-teplaren/status-icon.html status=facility.status %}
                 {{ facility.status_text }}
             </p>
-            <p class="notes">{{ facility.notes }}</p>
+            <p class="notes">{{ facility.notes }}<br><span class="small">Vlastník: {{ facility.owner }}</span></p>
         </div>
         <dl class="stats">
             <dt class="households">Vytápěné domácnosti</dt>
@@ -17,13 +17,13 @@
                 <b>{{ facility.num_households | round_signif: 2 | format_number }}</b>
             </dd>
             {% if facility.share_households %}
-            <dd class="households-share detail"><b>{{ facility.share_households }} %</b></span> domácností</dd>
+            <dd class="households-share detail"><b>{{ facility.share_households }} %</b></span> domácností </dd>
             {% endif %}
             {% if facility.munis_supplied %}
             <dd class="munis-supplied detail">{{ facility.munis_supplied }}</dd>
             {% endif %}
             {% if facility.other_heating %}
-            <dd class="other-heating">+ {{ facility.other_heating }}</dd>
+            <dd class="other-heating"><b>+ {{ facility.other_heating }}</b></dd>
             {% endif %}
             {% if facility.x and facility.y %}
             <dt class="map detail">
@@ -33,41 +33,55 @@
                 </div>
             </dt>
             {% endif %}
-            <dt class="emissions">Emise skleníkových plynů</dt>
+            <dt class="emissions mt-3">Emise skleníkových plynů</dt>
             <dd class="emissions-number">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
+                <b>{{ facility.emissions_latest | round_signif: 2 | format_number | default: "–"}}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
             </dd>
-        </dl>
+            {% if facility.emissions_note %}
+            <dd class="emissions-note">{{facility.emissions_note}}</dd>
+            {% endif %}
+                    </dl>
         <dl class="fuels">
             {% if facility.fuels_main_today %}
-            <dt><i class="fa-solid fa-fire"></i> V současnosti využívá</dt>
+            <dt>V současnosti využívá</dt>
             <dd class="fuels-today">
                 {% for fuel in facility.fuels_main_today %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
                 {% endfor %}<br>
-                {% if facility.fuels_secondary_today %} + {% for fuel in facility.fuels_secondary_today %}
-                    {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
-                {% endfor %}{% endif %}
-            </dd>
+                {% if facility.fuels_secondary_today %}
+                <div class="detail">
+                    <p class="secondary mt-1 mb-1">Vedlejší paliva: <br></span>
+                    {% for fuel in facility.fuels_secondary_today %}
+                        {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
+                    {% endfor %}
+                </div>
+                {% endif %}
             {% endif %}
             {% if facility.fuels_main_future %}
-            <dt><i class="fa-regular fa-calendar"></i> Plánuje využívat</dt>
+            <dt class="mt-3">Plánuje využívat</dt>
             <dd class="fuels-future">
                 {% for fuel in facility.fuels_main_future %}
                 {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel %}
                 {% endfor %}<br>
-                {% if facility.fuels_secondary_future %} + {% for fuel in facility.fuels_secondary_future %}
-                    {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
-                {% endfor %}{% endif %}
+                {% if facility.fuels_secondary_future %}
+                <div class="detail">
+                    <p class="secondary mt-1 mb-1">Vedlejší paliva: <br></span>
+                    {% for fuel in facility.fuels_secondary_future %}
+                        {% include includes-local/dashboard-teplaren/palivo.html fuel-code=fuel secondary=true %}
+                    {% endfor %}
+                </div>
+                {% endif %}
             </dd>
             {% endif %}
             {% if facility.ippc_permits %}
-            <dt class="detail mt-4"><i class="fa-solid fa-file-contract"></i> Zařízení dle integrovaného povolení (IPPC)</dt>
+            <dt class="detail mt-4">Zařízení dle integrovaného povolení (IPPC)</dt>
             <dd class="detail">
-                <ul class="ippc">
+                <ul class="fa-ul ippc">
                     {% for permit in facility.ippc_permits %}
-                    <li><a href="{{ permit.url }}">{{ permit.name }}</a>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-file-contract"></i></span><a href="{{ permit.url }}">{{ permit.name }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
             </dd>
@@ -80,7 +94,7 @@
                     <i class="fa-solid fa-sack-dollar"></i>
                     <b>{{ facility.mf_subsidies_total | format_number }}</b>&nbsp;mil. Kč
                 </dd>
-                <div class="mf-per-household mb-3">(<b>{{ facility.mf_subsidies_per_household | format_number }}</b> Kč/vytápěnou domácnost)</div>
+                <div class="mf-per-household mb-3 detail"><b>{{ facility.mf_subsidies_per_household | format_number }}</b> Kč/vytápěnou dom.</div>
                 {% if facility.chp_subsidies and facility.chp_subsidies_total_accepted > 0 %}
                 <dd class="not-detail">+ provozní podpora pro {{ facility.chp_subsidies_total_accepted }} MW</dd>
                 {% endif %}
@@ -101,7 +115,7 @@
                 {% endif %}
             {% endif %}
             {% if facility.chp_subsidies and facility.chp_subsidies_total_accepted > 0 %}
-                <dt class="detail mt-3"><i class="fa-solid fa-sack-dollar"></i> Provozní podpora KVET</dt>
+                <dt class="detail mt-3">Provozní podpora KVET</dt>
                 {% for subsidy in facility.chp_subsidies %}
                 {% if subsidy.status == "accepted" %}
                 <dd class="detail">
