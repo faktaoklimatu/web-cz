@@ -7,7 +7,9 @@
             {% include includes-local/dashboard-teplaren/status-icon.html status=facility.status %}
             {{ facility.status_text }}
         </p>
-        <p class="notes">{{ facility.notes }}<br><span class="small">Vlastník: {{ facility.owner }}</span></p>
+        <p class="notes">{{ facility.notes }}<br>
+            <span class="owner-label">Vlastník: </span><span class="owner">{{ facility.owner }}</span>
+        </p>
         <dl class="stats">
             <dt class="households">Vytápěné domácnosti</dt>
             <dd class="households-number{% if facility.num_households %} zero{% endif %}">

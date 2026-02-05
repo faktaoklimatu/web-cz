@@ -231,9 +231,9 @@ $c-teplarny-problematic-bg: #fff1ef;
 
         .owner {
             margin-left: auto;
-            font-size: 1.1rem;
-            font-weight: normal;
-            color: $c-teplarny-light-grey;
+            font-size: .9rem;
+            font-weight: 700;
+            color: $c-teplarny-dark-grey;
         }
 
         h4 {
@@ -245,7 +245,8 @@ $c-teplarny-problematic-bg: #fff1ef;
         h4,
         .stats>dt,
         .fuels>dt,
-        .subsidies>dt {
+        .subsidies>dt,
+        .owner-label {
             margin-top: 0;
             font-size: .9rem;
             line-height: 1.2;
@@ -599,7 +600,7 @@ $c-teplarny-problematic-bg: #fff1ef;
 }
 
 // MOBILE ADJUSTMENT
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
     #status-cards, #subsidies-cards {
         display: flex;
