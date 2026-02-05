@@ -71,7 +71,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
         <div id="stacked-bar"></div>
     </div>
     <div id="map"></div>
-    <div id="cards">
+    <div id="status-cards">
         {% for item in highlights %}
         <div class="card status-{{ item.status }}">
             <div class="card-body">
@@ -80,7 +80,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
                     {% when "done" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí dokončen
                     {% when "in-progress" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí probíhá
                     {% when "problematic" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nejasný odchod od uhlí
-                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nezobrazujeme
+                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nezobrazujeme všechno
                     {% endcase %}
                 </h3>
                 {% if item.status == "not-shown" %}
@@ -93,10 +93,13 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
             </div>
         </div>
         {% endfor %}
+    </div>
+    <div id="subsidies-cards">
         <div class="card">
             <div class="card-body">
-                <h3>Dotace z ModFondu</h3>
-                <p>{{site.data.dashboard-teplaren.mf_chp_shown_subsidies_total}}</p>
+                <h3><i class="fas fa-sack-dollar"></i> Dotace a provozní podpora</h3>
+                <p><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Mod. Fondu</p>
+                <p><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> mil. Kč provozní podpory</p>
             </div>
         </div>
     </div>
@@ -104,18 +107,19 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 
 <div id="controls-status">
     <p>Filtr podle <b>stavu odchodu od uhlí</b></p>
-    <div style="flex-basis: 100%; height: 0;"></div> 
-    <div class="form-check status-problematic">
-        <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
-        <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>
-    </div>
-    <div class="form-check status-in-progress">
-        <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
-        <label class="form-check-label" for="checkInProgress">Probíhající odchod</label>
-    </div>
-    <div class="form-check status-done">
-        <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
-        <label class="form-check-label" for="checkDone">Dokončený odchod</label>
+    <div class="forms">
+        <div class="form-check status-problematic">
+            <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
+            <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>
+        </div>
+        <div class="form-check status-in-progress">
+            <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
+            <label class="form-check-label" for="checkInProgress">Probíhající odchod</label>
+        </div>
+        <div class="form-check status-done">
+            <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
+            <label class="form-check-label" for="checkDone">Dokončený odchod</label>
+        </div>
     </div>
 </div>
 
