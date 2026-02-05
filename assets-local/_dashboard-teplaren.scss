@@ -18,66 +18,20 @@ $c-teplarny-problematic-bg: #fff1ef;
     grid-column-gap: 2rem;
     margin-bottom: 3rem;
 
-    .card {
-        border: 1px solid var(--status-color);
-        border-radius: .6rem;
-        margin-block: 1rem;
-        --status-color: grey;
-        font-size: 1.3rem;
-
-        h3 {
-            margin-bottom: .375rem;
-            font-size: 1.1rem;
-            color: var(--status-color);
-        }
-
-        h4 {
-            margin: .2em 0 .2em 0;
-            font-size: 1.7em;
-            font-weight: normal;
-            color: var(--status-color);
-
-            .status-icon {
-                margin-right: .8rem;
-                font-size: .85em;
-            }
-        }
-
-        p {
-            margin: 0;
-            color: $c-teplarny-dark-grey;
-        }
-    }
-
-    .status-done {
-        --status-color: #{$c-teplarny-done};
-    }
-
-    .status-in-progress {
-        --status-color: #{$c-teplarny-in-progress};
-    }
-
-    .status-problematic {
-        background: $c-teplarny-problematic-bg;
-        --status-color: #{$c-teplarny-problematic};
-    }
-
-    .card-body {
-        padding: 1rem 1rem .75rem;
-    }
-
     #pct-households {
         grid-column: 1/3;
         grid-row: 1/2;
+        padding-bottom: 2rem;
 
         h4 {
             margin-bottom: 2rem;
         }
     }
-
+    
     #map {
         grid-column: 1/2;
         grid-row: 2/3;
+        align-self: start;
 
         text {
             font-family: 'Source Sans Pro';
@@ -96,12 +50,65 @@ $c-teplarny-problematic-bg: #fff1ef;
             }
         }
     }
+
+    .card {
+        //border: 1px solid var(--status-color);
+        border: none;
+        background: none;
+        border-radius: .6rem;
+        margin-block: .5rem;
+        --status-color: grey;
+        font-size: 1.1rem;
+
+        h3 {
+            margin-bottom: .375rem;
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            color: var(--status-color);
+
+            i {
+                font-size: 1.3rem;
+            }
+        }
+
+        p {
+            margin: 0;
+            color: $c-teplarny-dark-grey;
+
+            i {
+                opacity: .6;
+            }
+        }
+    }
+
+    .status-done {
+        --status-color: #{$c-teplarny-done};
+    }
+
+    .status-in-progress {
+        --status-color: #{$c-teplarny-in-progress};
+    }
+
+    .status-problematic {
+        //background: $c-teplarny-problematic-bg;
+        --status-color: #{$c-teplarny-problematic};
+    }
+
+    .card-body {
+        padding: .5rem .5rem .25rem;
+    }
+
 }
 
 #controls-status {
     display: flex;
-    gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 0rem;
     font-size: 1.1rem;
+
+    p {
+        margin: 0;
+    }
 
     label {
         color: var(--status-color);
