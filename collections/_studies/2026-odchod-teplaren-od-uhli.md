@@ -59,34 +59,13 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 <script>
   window.DASHBOARD_TEPLAREN = {
     highlights: {{ site.data["dashboard-teplaren"].highlights | jsonify }},
-    facilities: {{ site.data["dashboard-teplaren"].items | jsonify }}
+    facilities: {{ site.data["dashboard-teplaren"].items | jsonify }},
+    num_households_ets2_total: {{ site.data["dashboard-teplaren"].num_households_ets2_total | jsonify }}
   };
 </script>
 
-<div id="highlights-dashboard-teplaren" class="card-deck mb-4">
-    {% for item in highlights %}
-    <div class="card status-{{ item.status }}">
-        <div class="card-body">
-            <h3>
-                {% case item.status %}
-                {% when "done" %} Odchod od uhlí dokončen
-                {% when "in-progress" %} Odchod od uhlí probíhá
-                {% when "problematic" %} Nejasný odchod od uhlí
-                {% when "not-shown" %} Nezobrazujeme
-                {% endcase %}
-            </h3>
-            <p>
-                {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
-                <b>{{ item.number }}</b> soustav
-            </p>
-            <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
-            <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
 <div id="overall-charts">
+    <div id="stacked-bar"></div>
     <div id="map">
     </div>
     <div>

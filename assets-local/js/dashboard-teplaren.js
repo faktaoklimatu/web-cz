@@ -19,7 +19,7 @@ controls.addEventListener("change", e => {
 });
 
 // Import YAML data
-const { highlights, facilities } = window.DASHBOARD_TEPLAREN;
+const { highlights, facilities, num_households_ets2_total } = window.DASHBOARD_TEPLAREN;
 
 // COLOR SCHEME
 const statusColor = new Map([
@@ -29,9 +29,79 @@ const statusColor = new Map([
     ["not-shown", "#999"],
 ]);
 
+function cumulative(data, valueKey = "value") {
+  let acc = 0;
+  return data.map(d => {
+    const v = +d[valueKey] || 0;
+    const out = {
+      ...d,
+      x0: acc,
+      x1: acc + v
+    };
+    acc += v;
+    return out;
+  });
+}
+
+/////////////////////
+// GENERATE STACKED BAR CHART
+/////////////////////
+
+function initStackedBarChart() {
+  const container = d3.select("#stacked-bar");
+  if (container.empty()) {
+      console.error("Container #stacked-bar not found");
+      return;
+  }
+
+  const height = 40,
+        width = 1000;
+
+  const data = [
+    { status: "problematic", label: "Nejasný odchod",         value: highlights.find(d => d.status === "problematic")?.num_households},
+    { status: "in-progress", label: "Probíhá odchod",         value: highlights.find(d => d.status === "in-progress")?.num_households},
+    { status: "done",        label: "Dokončen odchod",        value: highlights.find(d => d.status === "done")?.num_households },
+    { status: "not-shown",   label: "Nezobrazujeme (ETS1)",   value: highlights.find(d => d.status === "not-shown")?.num_households },
+    { status: "ets2",        label: "Nezobrazujeme (ETS2)",   value: num_households_ets2_total}
+  ];
+
+  const stackedData = cumulative(data)
+
+  const total = d3.sum(data, d => d.value)
+
+  // Scales for horizontal placement
+  const xScale = d3.scaleLinear()
+    .domain([0, total])
+    .range([0, width])
+
+  const svg = container.append('svg')
+    .attr('width', '100%')
+    .attr('height', height)
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('preserveAspectRatio', 'none');
+
+  svg.selectAll('rect')
+    .data(stackedData)
+    .enter().append('rect')
+    .attr('class', 'rect-stacked')
+    .attr('x', d => xScale(d.x0))
+    .attr('y', 0)
+    .attr('height', height)
+    .attr('width', d => xScale(d.value))
+    .style('fill', (d, i) => statusColor.get(d.status) ?? "#555")
+    .style('stroke', "white")
+
+  console.log(stackedData)
+    
+
+   
+}
+
+initStackedBarChart();
+
 /////////////////////
 // GENERATE CZECH MAP
-/////////////////
+////////////////////
 
 async function initCzechFacilitiesMap() {
     const container = d3.select("#map");
@@ -174,41 +244,3 @@ async function initCzechFacilitiesMap() {
 }
 
 initCzechFacilitiesMap();
-
-//
-// Text wrapping function (Mike Bostock–style)
-//
-
-function wrapText(text, width) {
-  text.each(function () {
-    const textSel = d3.select(this);
-    const words = textSel.text().split(/\s+/).reverse();
-    let word;
-    let line = [];
-    let lineNumber = 0;
-    const lineHeight = 1.1; // ems
-    const y = textSel.attr("y");
-    const dy = parseFloat(textSel.attr("dy") || 0);
-
-    let tspan = textSel.text(null)
-      .append("tspan")
-      .attr("x", textSel.attr("x"))
-      .attr("y", y)
-      .attr("dy", dy + "em");
-
-    while (word = words.pop()) {
-      line.push(word);
-      tspan.text(line.join(" "));
-      if (tspan.node().getComputedTextLength() > width) {
-        line.pop();
-        tspan.text(line.join(" "));
-        line = [word];
-        tspan = textSel.append("tspan")
-          .attr("x", textSel.attr("x"))
-          .attr("y", y)
-          .attr("dy", ++lineNumber * lineHeight + dy + "em")
-          .text(word);
-      }
-    }
-  });
-}
