@@ -11,7 +11,13 @@ $c-teplarny-in-progress: #ffbc5b;
 $c-teplarny-problematic: #bb2719;
 $c-teplarny-problematic-bg: #fff1ef;
 
-#highlights-dashboard-teplaren {
+#overall-charts {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 2rem;
+    margin-bottom: 3rem;
+
     .card {
         border: 1px solid var(--status-color);
         border-radius: .6rem;
@@ -59,18 +65,14 @@ $c-teplarny-problematic-bg: #fff1ef;
     .card-body {
         padding: 1rem 1rem .75rem;
     }
-}
 
-#overall-charts {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column-gap: 2rem;
-    margin-bottom: 3rem;
-
-    #stacked-bar {
+    #pct-households {
         grid-column: 1/3;
         grid-row: 1/2;
+
+        h4 {
+            margin-bottom: 2rem;
+        }
     }
 
     #map {

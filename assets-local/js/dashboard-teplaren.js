@@ -27,6 +27,7 @@ const statusColor = new Map([
     ["in-progress", "#ffbc5b"],
     ["problematic", "#bb2719"],
     ["not-shown", "#999"],
+    ["ets2", "#aaa"]
 ]);
 
 function cumulative(data, valueKey = "value") {
@@ -48,53 +49,249 @@ function cumulative(data, valueKey = "value") {
 /////////////////////
 
 function initStackedBarChart() {
-  const container = d3.select("#stacked-bar");
-  if (container.empty()) {
-      console.error("Container #stacked-bar not found");
-      return;
-  }
+    const container = d3.select("#stacked-bar");
+    if (container.empty()) {
+        console.error("Container #stacked-bar not found");
+        return;
+    }
 
-  const height = 40,
-        width = 1000;
+    // Clear previous render
+    container.selectAll("*").remove();
 
-  const data = [
-    { status: "problematic", label: "Nejasný odchod",         value: highlights.find(d => d.status === "problematic")?.num_households},
-    { status: "in-progress", label: "Probíhá odchod",         value: highlights.find(d => d.status === "in-progress")?.num_households},
-    { status: "done",        label: "Dokončen odchod",        value: highlights.find(d => d.status === "done")?.num_households },
-    { status: "not-shown",   label: "Nezobrazujeme (ETS1)",   value: highlights.find(d => d.status === "not-shown")?.num_households },
-    { status: "ets2",        label: "Nezobrazujeme (ETS2)",   value: num_households_ets2_total}
-  ];
 
-  const stackedData = cumulative(data)
+    const labelAreaHeight = 50; // space for labels above
+    const barHeight = 40;
+    const bracketAreaHeight = 40; // space below the bar for brackets + text
+    const height = labelAreaHeight + barHeight + bracketAreaHeight;
+    const width = 1110;
 
-  const total = d3.sum(data, d => d.value)
+    const data = [
+        { status: "problematic", label: ["Nejasný", "odchod"],              value: highlights.find(d => d.status === "problematic")?.num_households ?? 0 },
+        { status: "in-progress", label: ["Probíhá odchod", "od uhlí"],      value: highlights.find(d => d.status === "in-progress")?.num_households ?? 0 },
+        { status: "done",        label: ["Dokončen odchod", "od uhlí"],     value: highlights.find(d => d.status === "done")?.num_households ?? 0 },
+        { status: "not-shown",   label: ["Nezobrazujeme", " "],             value: highlights.find(d => d.status === "not-shown")?.num_households ?? 0 },
+        { status: "ets2",        label: [" ", " "],                         value: +num_households_ets2_total || 0 }
+    ];
 
-  // Scales for horizontal placement
-  const xScale = d3.scaleLinear()
-    .domain([0, total])
-    .range([0, width])
+    const stackedData = cumulative(data);
+    const total = d3.sum(data, d => d.value);
 
-  const svg = container.append('svg')
-    .attr('width', '100%')
-    .attr('height', height)
-    .attr('viewBox', `0 0 ${width} ${height}`)
-    .attr('preserveAspectRatio', 'none');
+    // Scales for horizontal placement
+    const xScale = d3.scaleLinear()
+        .domain([0, total])
+        .range([0, width]);
 
-  svg.selectAll('rect')
-    .data(stackedData)
-    .enter().append('rect')
-    .attr('class', 'rect-stacked')
-    .attr('x', d => xScale(d.x0))
-    .attr('y', 0)
-    .attr('height', height)
-    .attr('width', d => xScale(d.value))
-    .style('fill', (d, i) => statusColor.get(d.status) ?? "#555")
-    .style('stroke', "white")
+    const svg = container.append('svg')
+        .attr('width', '100%')
+        .attr('height', height)
+        .attr('viewBox', `0 0 ${width} ${height}`)
+        .attr("preserveAspectRatio", "xMinYMid meet");
 
-  console.log(stackedData)
-    
+    // RENDERING BARCHART
+    svg.selectAll('rect')
+        .data(stackedData)
+        .enter().append('rect')
+        .attr('class', 'rect-stacked')
+        .attr('x', d => xScale(d.x0))
+        .attr('y', labelAreaHeight)
+        .attr('height', barHeight)
+        .attr('width', d => xScale(d.value))
+        .style('fill', d => statusColor.get(d.status) ?? "#555")
+        .style('stroke', "white");
 
-   
+    // Reusable bracket renderer (below the bar)
+    function drawBracketBelow({
+        svg,
+        stackedData,
+        xScale,
+        labelAreaHeight,
+        barHeight,
+        startStatus,
+        endStatus,
+        text,
+        height = 10,
+        gap = 10,
+        stroke = "#999",
+        strokeWidth = 1,
+        textFill = "#999",
+        fontSize = ".9rem",
+        fontWeight = "300",
+    }) {
+        const dStart = stackedData.find(d => d.status === startStatus);
+        const dEnd = stackedData.find(d => d.status === endStatus);
+        if (!dStart || !dEnd) return;
+
+        // Ensure bracket always goes left->right even if statuses are passed reversed
+        const x0 = Math.min(dStart.x0, dEnd.x1);
+        const x1 = Math.max(dStart.x0, dEnd.x1);
+
+        const xStart = xScale(x0);
+        const xEnd = xScale(x1);
+
+        // Position below the bar
+        const yTop = labelAreaHeight + barHeight + gap;
+        const yBottom = yTop + height;
+        const xBuffer = 1;
+
+        const g = svg.append("g")
+            .attr("class", `stacked-bracket bracket-${startStatus}-to-${endStatus}`)
+            .attr("fill", "none")
+            .attr("stroke", stroke)
+            .attr("stroke-width", strokeWidth);
+
+        // Left vertical
+        g.append("line")
+            .attr("x1", xStart + xBuffer)
+            .attr("x2", xStart + xBuffer)
+            .attr("y1", yTop)
+            .attr("y2", yBottom);
+
+        // Bottom horizontal
+        g.append("line")
+            .attr("x1", xStart + xBuffer)
+            .attr("x2", xEnd - xBuffer)
+            .attr("y1", yBottom)
+            .attr("y2", yBottom);
+
+        // Right vertical
+        g.append("line")
+            .attr("x1", xEnd - xBuffer)
+            .attr("x2", xEnd - xBuffer)
+            .attr("y1", yBottom)
+            .attr("y2", yTop);
+
+        // Centered label ON the bracket line with white background
+        if (text) {
+            const cx = (xStart + xEnd) / 2;
+            const cy = yBottom; // aligned with bracket line
+
+            const labelGroup = g.append("g")
+                .attr("class", "bracket-label-group")
+                .attr("transform", `translate(${cx}, ${cy})`);
+
+            const txt = labelGroup.append("text")
+                .attr("class", "bracket-label")
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "middle")
+                .attr("fill", textFill)
+                .attr("font-size", fontSize)
+                .attr("font-weight", fontWeight)
+                .text(text);
+
+            // Draw background rect based on text bbox
+            const bbox = txt.node().getBBox();
+            const padX = 6;
+            const padY = 3;
+
+            labelGroup.insert("rect", "text")
+                .attr("x", bbox.x - padX)
+                .attr("y", bbox.y - padY)
+                .attr("width", bbox.width + padX * 2)
+                .attr("height", bbox.height + padY * 2)
+                .attr("rx", 2)
+                .attr("ry", 2)
+                .attr("fill", "#fff")
+                .attr("stroke", "none");
+        }
+    }
+
+    // Status labels ABOVE the bar (multi-line using tspans)
+    const labelGroup = svg.append('g')
+        .attr('class', 'stacked-labels');
+
+    const lineHeightEm = 1.1;
+
+    const lbl = labelGroup.selectAll('text.stacked-label')
+        .data(stackedData)
+        .enter().append('text')
+        .attr('class', 'stacked-label')
+        .attr('x', d => xScale(d.x0))
+        .attr('y', 20) // baseline for first line
+        .attr('text-anchor', 'start')
+        .attr('fill', d => statusColor.get(d.status) ?? '#555')
+        .attr('font-size', '1.1rem')
+        .attr('font-weight', '500');
+
+    // Add one tspan per line
+    lbl.each(function(d) {
+        const lines = Array.isArray(d.label) ? d.label : [String(d.label ?? '')];
+        const t = d3.select(this);
+        t.selectAll('tspan')
+            .data(lines)
+            .enter().append('tspan')
+            .attr('x', xScale(d.x0) + 2)
+            .attr('dy', (line, i) => i === 0 ? '0em' : `${lineHeightEm}em`)
+            .text(line => line);
+    });
+
+    // Avoid overlaps: if previous label extends beyond its own segment,
+    // push the next label to the right so the two labels don't collide.
+    const LABEL_PAD = 8;
+    const labelNodes = lbl.nodes();
+
+    for (let i = 1; i < labelNodes.length; i++) {
+        const prevNode = labelNodes[i - 1];
+        const prevD = stackedData[i - 1];
+
+        const prevBBox = prevNode.getBBox();
+        const prevLabelRight = prevBBox.x + prevBBox.width;
+
+        const prevSegRight = xScale(prevD.x1);
+
+        if (prevLabelRight > prevSegRight) {
+            const currNode = labelNodes[i];
+            const currD = stackedData[i];
+
+            const currSegLeft = xScale(currD.x0);
+            const newX = Math.max(currSegLeft, prevLabelRight + LABEL_PAD);
+
+            const sel = d3.select(currNode);
+            sel.attr('x', newX);
+            sel.selectAll('tspan').attr('x', newX + 2);
+        }
+    }
+
+    // Percentage labels
+    svg.selectAll('.text-percent')
+        .data(stackedData)
+        .enter().append('text')
+        .attr('class', 'text-percent')
+        .attr('text-anchor', 'left')
+        .attr('fill', 'white')
+        .attr('font-size', '.9rem')
+        .attr('font-weight', '500')
+        .attr('font-stretch', '75%')
+        .attr('x', d => xScale(d.x0) + 7)
+        .attr('y', labelAreaHeight + (barHeight / 2 + 5))
+        .text(d =>  d3.formatLocale({ decimal: "," }).format(".1f")(d.value / total * 100) + ' %');
+
+    // Add EU ETS1 bracket
+    drawBracketBelow({
+        svg,
+        stackedData,
+        xScale,
+        labelAreaHeight,
+        barHeight,
+        startStatus: "problematic",
+        endStatus: "not-shown",
+        text: "Teplárny v systému EU ETS1",
+    });
+
+    // Add EU ETS2 bracket
+    drawBracketBelow({
+        svg,
+        stackedData,
+        xScale,
+        labelAreaHeight,
+        barHeight,
+        startStatus: "ets2",
+        endStatus: "ets2",
+        text: "Teplárny v EU ETS2",
+    });
+
+    // Set font
+    svg.selectAll("text")
+        .attr("font-family", "Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif");
 }
 
 initStackedBarChart();
@@ -128,7 +325,7 @@ async function initCzechFacilitiesMap() {
         cz = await d3.json("/assets-local/files/cz-map.json");
     } catch (e) {
         console.error("Failed to load CZ map GeoJSON", e);
-    return;
+        return;
     }
 
     // Parse + keep only valid lon/lat
@@ -185,13 +382,13 @@ async function initCzechFacilitiesMap() {
         .data(projected, d => d.name)
         .join(
             enter => {
-            const a = enter.append("a").attr("class", d => `facility status-${d.status}`);
-            a.append("circle");
-            a.append("text").attr("class", "facility-name");
-            return a;
-        },
-        update => update,
-        exit => exit.remove()
+                const a = enter.append("a").attr("class", d => `facility status-${d.status}`);
+                a.append("circle");
+                a.append("text").attr("class", "facility-name");
+                return a;
+            },
+            update => update,
+            exit => exit.remove()
         )
         .attr("href", d => `#${slugifyAnchor(d.name)}`);
 
