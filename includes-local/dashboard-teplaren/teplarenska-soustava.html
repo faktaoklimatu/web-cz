@@ -1,15 +1,13 @@
 {% assign facility = include.facility %}
 <div class="card status-{{ facility.status }}" id="{{ facility.name | slugify: "latin" }}">
     <div class="card-body">
-        <div>
-            <h4>{{ facility.name_details }}</h4>
-            <h3>{{ facility.name }}</h3>
-            <p class="status-line">
-                {% include includes-local/dashboard-teplaren/status-icon.html status=facility.status %}
-                {{ facility.status_text }}
-            </p>
-            <p class="notes">{{ facility.notes }}<br><span class="small">Vlastník: {{ facility.owner }}</span></p>
-        </div>
+        <h4>{{ facility.name_details }}</h4>
+        <h3>{{ facility.name }}</h3>
+        <p class="status-line">
+            {% include includes-local/dashboard-teplaren/status-icon.html status=facility.status %}
+            {{ facility.status_text }}
+        </p>
+        <p class="notes">{{ facility.notes }}<br><span class="small">Vlastník: {{ facility.owner }}</span></p>
         <dl class="stats">
             <dt class="households">Vytápěné domácnosti</dt>
             <dd class="households-number{% if facility.num_households %} zero{% endif %}">
