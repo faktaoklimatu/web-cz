@@ -437,6 +437,14 @@ $c-teplarny-problematic-bg: #fff1ef;
     .mf-total {
         font-size: 1.6rem;
         margin-bottom: 0rem;
+        display: inline-flex;     
+        align-items: center;  
+
+        i {
+            font-size: 1.2rem;
+            opacity: .6;
+            margin-right: 0.3em;
+        }
     }
 
     .mf-per-household {
