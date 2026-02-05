@@ -65,26 +65,49 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 </script>
 
 <div id="overall-charts">
-    <div id="stacked-bar"></div>
-    <div id="map">
+    <div id="pct-households">
+        <h2 style="font-weight: 400">V Česku je <b>1 497 000</b> domácností připojeno na centrální zásobování teplem.</h2>
+        <h4 style="font-family: Roboto"> Podíl domácností připojených na CZT podle plánů tepláren na odchod od uhlí</h4>
+        <div id="stacked-bar"></div>
     </div>
-    <div>
+    <div id="map"></div>
+    <div id="cards">
+        {% for item in highlights %}
+        <div class="card status-{{ item.status }}">
+            <div class="card-body">
+                <h3>
+                    {% case item.status %}
+                    {% when "done" %} Odchod od uhlí dokončen
+                    {% when "in-progress" %} Odchod od uhlí probíhá
+                    {% when "problematic" %} Nejasný odchod od uhlí
+                    {% when "not-shown" %} Nezobrazujeme
+                    {% endcase %}
+                </h3>
+                <p>
+                    {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
+                    <b>{{ item.number }}</b> soustav
+                </p>
+                <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
+                <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 
 <div id="controls-status">
-    <p>Filtr podle <b>stavu transformace</b></p>
+    <p>Filtr podle <b>stavu odchodu od uhlí</b></p>
     <div class="form-check status-problematic">
         <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
-        <label class="form-check-label" for="checkProblematic">Nejasné</label>
+        <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>
     </div>
     <div class="form-check status-in-progress">
         <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
-        <label class="form-check-label" for="checkInProgress">Probíhající</label>
+        <label class="form-check-label" for="checkInProgress">Probíhající odchod</label>
     </div>
     <div class="form-check status-done">
         <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
-        <label class="form-check-label" for="checkDone">Dokončené</label>
+        <label class="form-check-label" for="checkDone">Dokončený odchod</label>
     </div>
 </div>
 
