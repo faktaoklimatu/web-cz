@@ -11,8 +11,9 @@
             <p class="notes">{{ facility.notes }}</p>
         </div>
         <dl class="stats">
-            <dt class="households"><i class="fa-solid fa-house-fire"></i> Vytápěné domácnosti</dt>
+            <dt class="households">Vytápěné domácnosti</dt>
             <dd class="households-number{% if facility.num_households %} zero{% endif %}">
+                <i class="fa-solid fa-house-fire"></i>
                 <b>{{ facility.num_households | round_signif: 2 | format_number }}</b>
             </dd>
             {% if facility.share_households %}
@@ -32,8 +33,11 @@
                 </div>
             </dt>
             {% endif %}
-            <dt class="emissions"><i class="fa-solid fa-cloud-arrow-up"></i> Emise skleníkových plynů</dt>
-            <dd class="emissions-number"><b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b> Mt CO<sub>2</sub>eq</dd>
+            <dt class="emissions">Emise skleníkových plynů</dt>
+            <dd class="emissions-number">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <b>{{ facility.emissions_latest | round_signif: 2 | format_number }}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
+            </dd>
         </dl>
         <dl class="fuels">
             {% if facility.fuels_main_today %}
@@ -71,8 +75,11 @@
         </dl>
         <dl class="subsidies small">
             {% if facility.mf_subsidies %}
-                <dt><i class="fa-solid fa-sack-dollar"></i> Dotace z Mod. fondu</dt>
-                <dd class="mf-total"><b>{{ facility.mf_subsidies_total | format_number }}</b> mil. Kč</dd>
+                <dt>Dotace z Mod. fondu</dt>
+                <dd class="mf-total">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <b>{{ facility.mf_subsidies_total | format_number }}</b>&nbsp;mil. Kč
+                </dd>
                 <div class="mf-per-household mb-3">(<b>{{ facility.mf_subsidies_per_household | format_number }}</b> Kč/vytápěnou domácnost)</div>
                 {% if facility.chp_subsidies and facility.chp_subsidies_total_accepted > 0 %}
                 <dd class="not-detail">+ provozní podpora pro {{ facility.chp_subsidies_total_accepted }} MW</dd>
@@ -88,7 +95,7 @@
                 </ul>
             {% else %}
                 <dt>Žádné dotace z Modern. fondu</dt>
-                <dd class="mf-total"><b class="zero">0</b> Kč</dd>
+                <dd class="mf-total"><b class="zero">0</b>&nbsp;Kč</dd>
                 {% if facility.chp_subsidies and facility.chp_subsidies_total_accepted > 0 %}
                 <dd class="not-detail">+ provozní podpora pro {{ facility.chp_subsidies_total_accepted }} MW</dd>
                 {% endif %}
