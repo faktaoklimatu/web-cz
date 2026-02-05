@@ -142,42 +142,13 @@ $c-teplarny-problematic-bg: #fff1ef;
         --status-color: grey;
     }
 
-    // Problematic card
-
+    // Card displaying problematic facilities
     .status-problematic {
         border: 2px solid var(--status-color);
         background-color: $c-teplarny-problematic-bg;
 
         .notes::after {
             background: linear-gradient(to bottom, transparent, $c-teplarny-problematic-bg);
-        }
-    }
-
-    .card-header {
-        display: flex;
-        background: none;
-        border-bottom: 0;
-
-        h3 {
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: #3e3e4d;
-            margin-bottom: .4rem;
-        }
-
-        h4 {
-            margin: 0;
-            font-size: .9rem;
-            line-height: 1.2;
-            font-weight: normal;
-            color: $c-teplarny-grey;
-        }
-
-        .owner {
-            margin-left: auto;
-            font-size: 1.1rem;
-            font-weight: normal;
-            color: $c-teplarny-light-grey;
         }
     }
 
@@ -193,8 +164,8 @@ $c-teplarny-problematic-bg: #fff1ef;
             line-height: 1.5;
             font-weight: bold;
             color: #3e3e4d;
+            margin-top: .2rem;
             margin-bottom: .4rem;
-            margin-top: 0rem;
         }
 
         .owner {
@@ -204,20 +175,22 @@ $c-teplarny-problematic-bg: #fff1ef;
             color: $c-teplarny-light-grey;
         }
 
+        h4 {
+            margin-bottom: 0;
+        }
+        
         h4,
         .stats>dt,
         .fuels>dt,
         .subsidies>dt {
-            margin: 0;
+            margin-top: 0;
             font-size: .9rem;
             line-height: 1.2;
             font-weight: normal;
-            color: $c-teplarny-grey;
+            color: $c-teplarny-dark-grey;
+            text-transform: uppercase;
         }
 
-        .emissions {
-            margin-top: 2rem;
-        }
     }
 
     .status-line {
@@ -261,22 +234,6 @@ $c-teplarny-problematic-bg: #fff1ef;
         background: linear-gradient(to bottom, transparent, white);
         pointer-events: none;
         /* allows clicking through the overlay */
-    }
-
-    .ippc-heading {
-        font-size: 0.8rem;
-        color: $c-teplarny-dark-grey;
-        margin-top: 2rem;
-    }
-
-    .ippc {
-        font-size: 80%;
-        color: $c-teplarny-dark-grey;
-        padding-left: 1rem;
-
-        a {
-            color: $c-teplarny-dark-grey;
-        }
     }
 
     .details-toggle .btn {
@@ -437,19 +394,53 @@ $c-teplarny-problematic-bg: #fff1ef;
     .mf-total {
         font-size: 1.6rem;
         margin-bottom: 0rem;
+        margin-top: 0.2rem;
+        line-height: 1.5;
         display: inline-flex;     
         align-items: center;  
 
         i {
             font-size: 1.2rem;
-            opacity: .6;
+            color: $c-teplarny-dark-grey;
             margin-right: 0.3em;
         }
     }
 
+    .fuels{
+
+        .secondary {
+            font-size: .9rem;
+            color: $c-teplarny-grey;
+        }
+
+        dt {
+            margin-bottom: 0.4rem;
+        }
+
+        .fuels-today{
+            min-height: 2.175rem; //optical aligment to neighbour cell
+        }
+
+    }
+    
+    .emissions-note, .other-heating {
+        font-size: .9rem;
+        line-height: 1.3;
+    }
+    
+    .emissions-note {
+        color: $c-teplarny-grey;
+    }
+
+    .other-heating {
+        color: #3a3a45;
+    }
+
+
+
     .mf-per-household {
-        font-size: 0.8rem;
-        color: $c-teplarny-light-grey;
+        font-size: 0.9rem;
+        color: $c-teplarny-dark-grey;
         margin-bottom: 0.8rem !important;
     }
 
@@ -465,13 +456,28 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .households-share {
         font-size: 0.9rem;
-        color: $c-teplarny-grey;
+        color: $c-teplarny-dark-grey;
         margin-bottom: 0rem;
     }
 
     .munis-supplied {
         font-size: 0.9rem;
         color: $c-teplarny-grey;
+    }
+
+    .ippc{
+        margin-left: 0;
+        color: $c-teplarny-grey;
+        font-size: .9rem;
+
+        a {
+            color: $c-teplarny-grey;
+        }
+
+        li{
+            padding: 0;
+            margin-left: 1.5em;
+        }
     }
 
 }
