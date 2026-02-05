@@ -16,7 +16,7 @@ intro: |
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
 <div class="narrow-text" markdown="1">
-<div id="last-updated">
+<div id="last-updated" class="small">
 Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: "%-d. %-m. %Y" }}
 <div markdown="1">
 (chyby a nepřesnosti prosíme hlaste na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz))
@@ -66,7 +66,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 
 <div id="overall-charts">
     <div id="pct-households">
-        <h2 style="font-weight: 400">V Česku je <b>1 497 000</b> domácností připojeno na centrální zásobování teplem.</h2>
+        <h2 style="font-weight: 400; font-family: Roboto">V Česku je <b>1 497 000</b> domácností připojeno na centrální zásobování teplem</h2>
         <h4 style="font-family: Roboto"> Podíl domácností připojených na CZT podle plánů tepláren na odchod od uhlí</h4>
         <div id="stacked-bar"></div>
     </div>
@@ -77,26 +77,34 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
             <div class="card-body">
                 <h3>
                     {% case item.status %}
-                    {% when "done" %} Odchod od uhlí dokončen
-                    {% when "in-progress" %} Odchod od uhlí probíhá
-                    {% when "problematic" %} Nejasný odchod od uhlí
-                    {% when "not-shown" %} Nezobrazujeme
+                    {% when "done" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí dokončen
+                    {% when "in-progress" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí probíhá
+                    {% when "problematic" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nejasný odchod od uhlí
+                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nezobrazujeme
                     {% endcase %}
                 </h3>
-                <p>
-                    {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %}
-                    <b>{{ item.number }}</b> soustav
-                </p>
-                <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
-                <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
+                {% if item.status == "not-shown" %}
+                    <p class="small">Nezobrazujeme malé teplárny v ETS1 a teplárny v ETS2, protože nemáme data</p>
+                {% else %}
+                    <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> soustav</p>
+                    <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
+                    <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
+        <div class="card">
+            <div class="card-body">
+                <h3>Dotace z ModFondu</h3>
+                <p>{{site.data.dashboard-teplaren.mf_chp_shown_subsidies_total}}</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <div id="controls-status">
     <p>Filtr podle <b>stavu odchodu od uhlí</b></p>
+    <div style="flex-basis: 100%; height: 0;"></div> 
     <div class="form-check status-problematic">
         <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
         <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>

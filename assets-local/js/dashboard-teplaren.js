@@ -226,7 +226,7 @@ function initStackedBarChart() {
 
     // Avoid overlaps: if previous label extends beyond its own segment,
     // push the next label to the right so the two labels don't collide.
-    const LABEL_PAD = 8;
+    const LABEL_PAD = 12;
     const labelNodes = lbl.nodes();
 
     for (let i = 1; i < labelNodes.length; i++) {
