@@ -39,7 +39,7 @@
                 <b>{{ facility.emissions_latest | round_signif: 2 | format_number | default: "–"}}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
             </dd>
             {% if facility.emissions_note %}
-            <dd class="emissions-note">{{facility.emissions_note}}</dd>
+            <dd class="emissions-note detail">{{facility.emissions_note}}</dd>
             {% endif %}
                     </dl>
         <dl class="fuels">
