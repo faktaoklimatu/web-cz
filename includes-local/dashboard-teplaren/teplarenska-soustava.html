@@ -8,7 +8,7 @@
             {{ facility.status_text }}
         </p>
         <p class="notes">{{ facility.notes }}<br>
-            <span class="owner-label">Vlastník: </span><span class="owner">{{ facility.owner }}</span>
+            <span class="owner-label">Většinový vlastník: </span><span class="owner">{{ facility.owner }}</span>
         </p>
         <dl class="stats">
             <dt class="households">Vytápěné domácnosti</dt>
@@ -33,11 +33,15 @@
                 </div>
             </dt>
             {% endif %}
+            {% if facility.emissions_latest > 0 %}
             <dt class="emissions mt-3">Emise skleníkových plynů</dt>
             <dd class="emissions-number">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <b>{{ facility.emissions_latest | round_signif: 2 | format_number | default: "–"}}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
+                <b>{{ facility.emissions_latest | round_signif: 2 | format_number}}</b>&nbsp;Mt&nbsp;CO&#8288;<sub>2</sub>&#8288;eq
             </dd>
+            {% elsif facility.emissions_note %}
+            <dt class="emissions mt-3 mb-2 detail">Emise skleníkových plynů</dt>
+            {% endif %}
             {% if facility.emissions_note %}
             <dd class="emissions-note detail">{{facility.emissions_note}}</dd>
             {% endif %}
