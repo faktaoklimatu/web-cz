@@ -12,7 +12,7 @@ tags-topics:   [ energetika ]
 # use-preview-image: true
 caption:       "Přehled scénářů transformace českých tepláren spalujících uhlí"
 intro: |
-    Tato rešerše ukazuje 33 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 69 % všech domácností výtápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 26 % pak soustavy mimo systém EU ETS 1.)
+    Tato rešerše ukazuje 33 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 70 % všech domácností vytápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 25 % pak soustavy mimo systém EU ETS 1.)
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
 <div class="narrow-text" markdown="1">
@@ -66,8 +66,8 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 
 <div id="overall-charts">
     <div id="pct-households">
-        <h2 style="font-weight: 400; font-family: Roboto">V Česku je <b>1 497 000</b> domácností připojeno na centrální zásobování teplem</h2>
-        <h4 style="font-family: Roboto"> Podíl domácností připojených na CZT podle plánů tepláren na odchod od uhlí</h4>
+        <h2 style="font-weight: 400; font-family: Roboto">V Česku je <b>1,5 milionu</b> domácností připojeno na centrální zásobování teplem</h2>
+        <h4 style="font-family: Roboto"> Podíl připojených domácností podle plánů tepláren na odchod od uhlí</h4>
         <div id="stacked-bar"></div>
     </div>
     <div id="map"></div>
@@ -80,11 +80,11 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
                     {% when "done" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí dokončen
                     {% when "in-progress" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí probíhá
                     {% when "problematic" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nejasný odchod od uhlí
-                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nezobrazujeme všechno
+                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Není zde všechno
                     {% endcase %}
                 </h3>
                 {% if item.status == "not-shown" %}
-                    <p class="small">Nezobrazujeme malé teplárny v ETS1 a teplárny v ETS2, protože nemáme data</p>
+                    <p class="small">Tento přehled neukazuje malé teplárny v ETS1 a teplárny v ETS2, protože o nich nejsou veřejná emisní data</p>
                 {% else %}
                     <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> soustav</p>
                     <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
@@ -98,8 +98,8 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
         <div class="card">
             <div class="card-body">
                 <h3><i class="fas fa-sack-dollar"></i> Dotace a provozní podpora</h3>
-                <p><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Mod. Fondu</p>
-                <p><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> mil. Kč provozní podpory</p>
+                <p><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Modernizačního fondu</p>
+                <p><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> MWe s provozní podporou KVET</p>
             </div>
         </div>
     </div>

@@ -96,7 +96,7 @@
                 </dd>
                 <div class="mf-per-household mb-3 detail"><b>{{ facility.mf_subsidies_per_household | format_number }}</b> Kč/vytápěnou dom.</div>
                 {% if facility.chp_subsidies and facility.chp_subsidies_total_accepted > 0 %}
-                <dd class="not-detail">+ provozní podpora pro {{ facility.chp_subsidies_total_accepted }} MW</dd>
+                <dd class="not-detail">+ provozní podpora pro {{ facility.chp_subsidies_total_accepted }} MWe</dd>
                 {% endif %}
                 {% for subsidy in facility.mf_subsidies %}
                 <dd class="detail">
