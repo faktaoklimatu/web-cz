@@ -261,9 +261,9 @@ function initStackedBarChart() {
         .attr('font-size', '.9rem')
         .attr('font-weight', '500')
         .attr('font-stretch', '75%')
-        .attr('x', d => xScale(d.x0) + 7)
+        .attr('x', d => xScale(d.x0) + 6)
         .attr('y', labelAreaHeight + (barHeight / 2 + 5))
-        .text(d =>  d3.formatLocale({ decimal: "," }).format(".1f")(d.value / total * 100) + ' %');
+        .text(d =>  d3.formatLocale({ decimal: "," }).format(".0f")(d.value / total * 100) + ' %');
 
     // Add EU ETS1 bracket
     drawBracketBelow({
@@ -437,7 +437,7 @@ async function initCzechFacilitiesMap() {
     // Tooltip on hover
     facilityLink.selectAll("title").remove();
     facilityLink.append("title")
-        .text(d => `${d.name} — ${d.num_households.toLocaleString("cs-CZ")} domácností`);
+        .text(d => `${d.name} — ${(Math.round(d.num_households/1000)*1000).toLocaleString("cs-CZ")} domácností`);
 }
 
 initCzechFacilitiesMap();
