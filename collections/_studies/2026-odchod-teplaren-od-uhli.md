@@ -68,8 +68,8 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 
 <div id="overall-charts">
     <div id="pct-households">
-        <h2 style="font-weight: 400; font-family: Roboto">V Česku je <b>1,5 milionu</b> domácností připojeno na centrální zásobování teplem</h2>
-        <h4 style="font-family: Roboto"> Podíl připojených domácností podle plánů tepláren na odchod od uhlí</h4>
+        <h2 style="font-weight: 400">V Česku je <b>1,5 milionu</b> domácností připojeno na centrální zásobování teplem</h2>
+        <h5 style="font-weight: light">Podíl připojených domácností podle plánů tepláren na odchod od uhlí</h5>
         <div id="stacked-bar"></div>
     </div>
     <div id="map"></div>

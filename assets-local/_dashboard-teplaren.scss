@@ -16,15 +16,15 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-bottom: 2rem;
-    
+    margin-top: 2rem;
+
     // DESKTOP ADJUSTMENT
     @media (min-width: 992px) {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: auto auto auto;
         grid-column-gap: 1rem;
-    }   
-    
+    }
+
     #pct-households {
         grid-column: 1/3;
         grid-row: 1/2;
@@ -34,16 +34,16 @@ $c-teplarny-problematic-bg: #fff1ef;
             margin-bottom: 2rem;
         }
     }
-    
+
     #map {
         grid-column: 1/3;
-        grid-row: 2/3; 
+        grid-row: 2/3;
 
         // DESKTOP ADJUSTMENT
         @media (min-width: 992px) {
             grid-column: 2/3;
             grid-row: 2/3;
-        }      
+        }
 
         align-self: start;
 
@@ -67,21 +67,21 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     #status-cards {
         grid-column: 1/3;
-        grid-row: 3/4;   
+        grid-row: 3/4;
 
         // DESKTOP ADJUSTMENT
         @media (min-width: 992px) {
             grid-column: 1/2;
             grid-row: 2/4;
-            
-        }      
+
+        }
 
     }
 
     #subsidies-cards {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
-        
+
 
         // DESKTOP ADJUSTMENT
         @media (min-width: 992px) {
@@ -89,7 +89,7 @@ $c-teplarny-problematic-bg: #fff1ef;
             grid-row: 3/4;
             justify-self: end;
         }
-        
+
         h3 {
             color: #3a3a45;
         }
@@ -162,8 +162,8 @@ $c-teplarny-problematic-bg: #fff1ef;
 
     .forms {
         grid-row: 2/3;
-        display: inline-flex;     
-        align-items: center;  
+        display: inline-flex;
+        align-items: center;
         gap: 1rem;
     }
 
@@ -241,7 +241,7 @@ $c-teplarny-problematic-bg: #fff1ef;
             grid-row: 1/2;
             grid-column: 1/3;
         }
-        
+
         h4,
         .stats>dt,
         .fuels>dt,
@@ -271,7 +271,7 @@ $c-teplarny-problematic-bg: #fff1ef;
 
         // DESKTOP ADJUSTMENT
         @media (min-width: 992px) {
-            grid-template-columns: 2fr 1fr 1fr 1fr; 
+            grid-template-columns: 2fr 1fr 1fr 1fr;
             grid-template-rows: none;
             grid-auto-flow: row;
 
@@ -304,7 +304,7 @@ $c-teplarny-problematic-bg: #fff1ef;
             .stats, .fuels, .subsidies {
                 grid-row: 1/5;
             }
-        }   
+        }
 
 
     }
@@ -513,8 +513,8 @@ $c-teplarny-problematic-bg: #fff1ef;
         margin-bottom: 0rem;
         margin-top: 0.2rem;
         line-height: 1.5;
-        display: inline-flex;     
-        align-items: center;  
+        display: inline-flex;
+        align-items: center;
 
         i {
             font-size: 1.2rem;
@@ -539,12 +539,12 @@ $c-teplarny-problematic-bg: #fff1ef;
         }
 
     }
-    
+
     .emissions-note, .other-heating {
         font-size: .9rem;
         line-height: 1.3;
     }
-    
+
     .emissions-note {
         color: $c-teplarny-grey;
     }
@@ -606,7 +606,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
+
         .card {
             flex: 0 0 50%;
             max-width: 50%;
@@ -620,7 +620,7 @@ $c-teplarny-problematic-bg: #fff1ef;
        .notes::after{
             display: none;
         }
-        
+
         .card-body {
             padding-bottom: 0;
         }
