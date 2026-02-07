@@ -1,6 +1,7 @@
 ---
 layout:        survey
-title:         "Plány odchodu od uhlí velkých teplárenských soustav"
+type:          "Interaktivní přehled"
+title:         "Odchod velkých tepláren od uhlí"
 slug:          2026-odchod-teplaren-od-uhli
 redirect_from:
 - /2026-odchod-teplaren-od-uhli
@@ -46,7 +47,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 
 {% include expander-figure.html
     name="methodology"
-    class="contrast-figure"
+    class="small-expander-title"
     label="Odkud pochází data a další metodika"
     content=methodology
 %}
