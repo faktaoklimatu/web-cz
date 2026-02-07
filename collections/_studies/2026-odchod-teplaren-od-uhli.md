@@ -6,14 +6,15 @@ slug:          2026-odchod-teplaren-od-uhli
 redirect_from:
 - /2026-odchod-teplaren-od-uhli
 - /dashboard-teplaren
+- /odchod-teplaren-od-uhli
 weight:        209
 published:     2026-02-09
 tags-scopes:   [ cesko ]
 tags-topics:   [ energetika ]
 # use-preview-image: true
-caption:       "Přehled scénářů transformace českých tepláren spalujících uhlí"
+caption:       "V jakém stavu je odchod od uhlí u velkých tepláren v Česku?"
 intro: |
-    Tato rešerše ukazuje 33 největších teplárenských soustav, které dohromady zásobují přes milion českých domácností, což je 70 % všech domácností vytápěných dálkovým teplem. (Dalších 5 % tvoří menší soustavy v systému EU ETS 1, zbylých 25 % pak soustavy mimo systém EU ETS 1.)
+    Tento přehled ukazuje stav odchodu od uhlí velkých teplárenských soustav v Česku. Ty dohromady zásobují přes milion českých domácností, což jsou skoro tři čtvrtiny všech domácností vytápěných dálkovým teplem. Naprostá většina z nich buď od uhlí už odešla nebo odchod od uhlí připravuje.
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
 <div class="narrow-text" markdown="1">
@@ -85,7 +86,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
                     {% endcase %}
                 </h3>
                 {% if item.status == "not-shown" %}
-                    <p class="small">Tento přehled neukazuje malé teplárny v ETS1 a teplárny v ETS2, protože o nich nejsou veřejná emisní data</p>
+                    <p class="small">Pro přehlednost zde nejsou zobrazené menší teplárny v ETS 1 a dále malé teplárny a výtopny mimo systém ETS 1, kterých jsou dohromady stovky.</p>
                 {% else %}
                     <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> {% if item.number > 4 %}soustav{% else %}soustavy{% endif %}</p>
                     <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>

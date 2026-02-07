@@ -1,4 +1,4 @@
-// Filter 
+// Filter
 const controls = document.getElementById("controls-status");
 const ignoreContainer = document.getElementById("highlights-dashboard-teplaren");
 
@@ -67,8 +67,8 @@ function initStackedBarChart() {
 
     const data = [
         { status: "problematic", label: ["Nejasný", "odchod"],              value: highlights.find(d => d.status === "problematic")?.num_households ?? 0 },
-        { status: "in-progress", label: ["Probíhá odchod", "od uhlí"],      value: highlights.find(d => d.status === "in-progress")?.num_households ?? 0 },
-        { status: "done",        label: ["Dokončen odchod", "od uhlí"],     value: highlights.find(d => d.status === "done")?.num_households ?? 0 },
+        { status: "in-progress", label: ["Odchod", "probíhá"],              value: highlights.find(d => d.status === "in-progress")?.num_households ?? 0 },
+        { status: "done",        label: ["Odchod", "dokončen"],             value: highlights.find(d => d.status === "done")?.num_households ?? 0 },
         { status: "not-shown",   label: ["Nezobrazujeme", " "],             value: highlights.find(d => d.status === "not-shown")?.num_households ?? 0 },
         { status: "ets2",        label: [" ", " "],                         value: +num_households_ets2_total || 0 }
     ];
@@ -274,7 +274,7 @@ function initStackedBarChart() {
         barHeight,
         startStatus: "problematic",
         endStatus: "not-shown",
-        text: "Teplárny v systému EU ETS1",
+        text: "Teplárny v systému EU ETS 1",
     });
 
     // Add EU ETS2 bracket
@@ -286,7 +286,7 @@ function initStackedBarChart() {
         barHeight,
         startStatus: "ets2",
         endStatus: "ets2",
-        text: "Teplárny v EU ETS2",
+        text: "Teplárny mimo EU ETS 1",
     });
 
     // Set font
@@ -310,7 +310,7 @@ async function initCzechFacilitiesMap() {
     // Build SVG inside the DIV
     const svg = container.append("svg")
         .attr("width", "100%")
-        .attr("height", "100%") 
+        .attr("height", "100%")
         .attr("viewBox", "0 0 900 520")
         .attr("preserveAspectRatio", "xMidYMid meet");
 
@@ -402,7 +402,7 @@ async function initCzechFacilitiesMap() {
         .attr("stroke-width", 1);
 
     // Label positioning
-    const labelGap = 1; 
+    const labelGap = 1;
 
     // Custom label positions
     const labelOffsetOverride = {
