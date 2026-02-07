@@ -412,14 +412,19 @@ async function initCzechFacilitiesMap() {
         "ostrava": { dx: -50, dy: -5 },
         "karvina": { dx: 2, dy: 15 },
         "detmarovice": { dx: 0, dy: 1 },
-        "vresova": { dx: -2, dy: 30 },
+        "vresova": { dx: -2, dy: 25 },
+        "tisova": { dx: -2, dy: 25 },
         "prunerov": { dx: -10, dy: 35 },
         "tusimice": { dx: 1, dy: 10 },
-        "chvaletice": { dx: -10, dy: 25 },
+        "komorany": { dx: 1, dy: 20 },
+        "ledvice": { dx: 1, dy: 10 },
+        "kladno": { dx: -40, dy: 0 },
         "praha-pravy-breh-vltavy": { dx: -20, dy: 65 },
+        "praha-levy-breh-vltavy": { dx: -5, dy: -10 },
+        "strakonice": { dx: 1, dy: 20 },
     };
     function getLabelOffset(d) {
-        const key = slugifyAnchor(d.name); 
+        const key = slugifyAnchor(d.name);
         return labelOffsetOverride[key] ?? { dx: labelGap, dy: 0 };
     }
 
