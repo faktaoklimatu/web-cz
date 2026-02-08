@@ -45,6 +45,41 @@ document.addEventListener('DOMContentLoaded', () => {
     closeLightbox();
   });
 
+  // Download modal
+  const PDF_URL = '/assets-local/files/atlas-dekarbonizace-ceska.pdf';
+
+  const triggerDownload = () => {
+    const a = document.createElement('a');
+    a.href = PDF_URL;
+    a.download = '';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
+  // Load Ecomail widget on first modal open (same pattern as faktaoklimatu.cz newsletter)
+  $('#download-modal').one('show.bs.modal', (event) => {
+    const newsletterId = event.target.dataset.newsletterId;
+    window['ecm-widget'] = 'ecmwidget';
+    window['ecmwidget'] = window['ecmwidget'] || function () {
+      (window['ecmwidget'].q = window['ecmwidget'].q || []).push(arguments)
+    };
+    const js = document.createElement('script');
+    js.id = newsletterId;
+    js.dataset.a = 'faktaoklimatu';
+    js.src = 'https://d70shl7vidtft.cloudfront.net/widget.js';
+    document.head.appendChild(js);
+  });
+
+  // Open modal on download button click — start download immediately + show newsletter popup
+  document.querySelectorAll('.download-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      triggerDownload();
+      $('#download-modal').modal('show');
+    });
+  });
+
   // Close lightbox with Escape key
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
@@ -69,4 +104,3 @@ document.addEventListener('DOMContentLoaded', () => {
       button.textContent = !isCollapsed ? "Skrýt ohlasy" : "Zobrazit všechny ohlasy";
   });
 });
-
