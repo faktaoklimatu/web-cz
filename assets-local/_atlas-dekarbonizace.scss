@@ -734,7 +734,7 @@ $fullscreen-max-width: 1100px;
         }
 
         .modal-body {
-            padding: 40px;
+            padding: 0 20px 20px;
             text-align: center;
 
             h2 {
@@ -768,6 +768,19 @@ $fullscreen-max-width: 1100px;
     [id^="f-"] {
         max-width: 100%;
         overflow: hidden;
+
+        .ec-v-forms-label,
+        .ec-v-form-input {
+            text-align: left !important;
+        }
+
+        .ec-v-form-spacer {
+            display: none !important;
+        }
+
+        .ec-v-form-holder {
+            padding-top: 0 !important;
+        }
     }
 
     /* Animations */
