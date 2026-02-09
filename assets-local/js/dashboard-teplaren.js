@@ -3,19 +3,19 @@ const controls = document.getElementById("controls-status");
 const ignoreContainer = document.getElementById("highlights-dashboard-teplaren");
 
 controls.addEventListener("change", e => {
-  if (!e.target.matches("input[type='checkbox']")) return;
+    if (!e.target.matches("input[type='checkbox']")) return;
 
-  const checkbox = e.target;
-  const statusClass = checkbox.closest(".form-check").classList
-    .value
-    .split(" ")
-    .find(c => c.startsWith("status-"));
+    const checkbox = e.target;
+    const statusClass = checkbox.closest(".form-check").classList
+        .value
+        .split(" ")
+        .find(c => c.startsWith("status-"));
 
-  document.querySelectorAll("." + statusClass).forEach(el => {
-    if (controls.contains(el)) return;          // keep controls
-    if (ignoreContainer?.contains(el)) return;  // keep highlights
-    el.style.display = checkbox.checked ? "" : "none";
-  });
+    document.querySelectorAll("." + statusClass).forEach(el => {
+        if (controls.contains(el)) return;          // keep controls
+        if (ignoreContainer?.contains(el)) return;  // keep highlights
+        el.style.display = checkbox.checked ? "" : "none";
+    });
 });
 
 // Import YAML data
@@ -31,17 +31,17 @@ const statusColor = new Map([
 ]);
 
 function cumulative(data, valueKey = "value") {
-  let acc = 0;
-  return data.map(d => {
-    const v = +d[valueKey] || 0;
-    const out = {
-      ...d,
-      x0: acc,
-      x1: acc + v
-    };
-    acc += v;
-    return out;
-  });
+    let acc = 0;
+    return data.map(d => {
+        const v = +d[valueKey] || 0;
+        const out = {
+            ...d,
+            x0: acc,
+            x1: acc + v
+        };
+        acc += v;
+        return out;
+    });
 }
 
 /////////////////////
@@ -66,11 +66,31 @@ function initStackedBarChart() {
     const width = 1110;
 
     const data = [
-        { status: "problematic", label: ["Nejasný", "odchod"],              value: highlights.find(d => d.status === "problematic")?.num_households ?? 0 },
-        { status: "in-progress", label: ["Odchod", "probíhá"],              value: highlights.find(d => d.status === "in-progress")?.num_households ?? 0 },
-        { status: "done",        label: ["Odchod", "dokončen"],             value: highlights.find(d => d.status === "done")?.num_households ?? 0 },
-        { status: "not-shown",   label: ["Nezobrazujeme", " "],             value: highlights.find(d => d.status === "not-shown")?.num_households ?? 0 },
-        { status: "ets2",        label: [" ", " "],                         value: +num_households_ets2_total || 0 }
+        {
+            status: "problematic",
+            label: ["Nejasný", "odchod"],
+            value: highlights.find(d => d.status === "problematic")?.num_households ?? 0
+        },
+        {
+            status: "in-progress",
+            label: ["Odchod", "probíhá"],
+            value: highlights.find(d => d.status === "in-progress")?.num_households ?? 0
+        },
+        {
+            status: "done",
+            label: ["Odchod", "dokončen"],
+            value: highlights.find(d => d.status === "done")?.num_households ?? 0
+        },
+        {
+            status: "not-shown",
+            label: ["Nezobrazujeme", " "],
+            value: highlights.find(d => d.status === "not-shown")?.num_households ?? 0
+        },
+        {
+            status: "ets2",
+            label: [" ", " "],
+            value: +num_households_ets2_total || 0
+        }
     ];
 
     const stackedData = cumulative(data);
@@ -213,7 +233,7 @@ function initStackedBarChart() {
         .attr('font-weight', '500');
 
     // Add one tspan per line
-    lbl.each(function(d) {
+    lbl.each(function (d) {
         const lines = Array.isArray(d.label) ? d.label : [String(d.label ?? '')];
         const t = d3.select(this);
         t.selectAll('tspan')
@@ -263,7 +283,7 @@ function initStackedBarChart() {
         .attr('font-stretch', '75%')
         .attr('x', d => xScale(d.x0) + 6)
         .attr('y', labelAreaHeight + (barHeight / 2 + 5))
-        .text(d =>  d3.formatLocale({ decimal: "," }).format(".0f")(d.value / total * 100) + ' %');
+        .text(d => d3.formatLocale({ decimal: "," }).format(".0f")(d.value / total * 100) + ' %');
 
     // Add EU ETS1 bracket
     drawBracketBelow({
@@ -343,7 +363,7 @@ async function initCzechFacilitiesMap() {
     const width = vb[2], height = vb[3];
     const padding = 100;
 
-    const projection = d3.geoMercator().fitExtent(  [[0, 0], [width - padding, height]],  cz);
+    const projection = d3.geoMercator().fitExtent([[0, 0], [width - padding, height]], cz);
     const path = d3.geoPath(projection);
 
     // Draw map
@@ -442,7 +462,7 @@ async function initCzechFacilitiesMap() {
     // Tooltip on hover
     facilityLink.selectAll("title").remove();
     facilityLink.append("title")
-        .text(d => `${d.name} — ${(Math.round(d.num_households/1000)*1000).toLocaleString("cs-CZ")} domácností`);
+        .text(d => `${d.name} — ${(Math.round(d.num_households / 1000) * 1000).toLocaleString("cs-CZ")} domácností`);
 }
 
 initCzechFacilitiesMap();
