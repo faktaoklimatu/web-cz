@@ -58,7 +58,7 @@ $c-teplarny-problematic-bg: #fff1ef;
             text-decoration: none;
             fill: #3e3e4d;
 
-            .facility-name{
+            .facility-name {
                 font-size: 1rem;
                 font-weight: 600;
             }
@@ -75,13 +75,11 @@ $c-teplarny-problematic-bg: #fff1ef;
             grid-row: 2/4;
 
         }
-
     }
 
     #subsidies-cards {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
-
 
         // DESKTOP ADJUSTMENT
         @media (min-width: 992px) {
@@ -124,7 +122,7 @@ $c-teplarny-problematic-bg: #fff1ef;
             }
         }
 
-        .card-body{
+        .card-body {
             padding-left: 0;
         }
     }
@@ -255,12 +253,12 @@ $c-teplarny-problematic-bg: #fff1ef;
             text-transform: uppercase;
         }
 
-        .stats{
+        .stats {
             grid-column: 1/2;
             grid-row: 4/5;
         }
 
-        .status-line{
+        .status-line {
             grid-column: 1/3;
         }
 
@@ -275,38 +273,48 @@ $c-teplarny-problematic-bg: #fff1ef;
             grid-template-rows: none;
             grid-auto-flow: row;
 
-            .status-line, h4, h3, .notes {
+            .status-line,
+            h4,
+            h3,
+            .notes {
                 grid-column: 1/2;
                 grid-row: 1/-1;
                 position: relative;
             }
+
             h3 {
                 top: 1rem;
             }
+
             .status-line {
                 top: 3.7rem;
             }
+
             .notes {
                 top: 6rem;
             }
+
             .stats {
                 grid-column: 2/3;
                 grid-row: auto;
             }
-            .fuels{
+
+            .fuels {
                 grid-column: 3/4;
                 grid-row: auto;
             }
+
             .subsidies {
                 grid-column: 4/5;
                 grid-row: auto;
             }
-            .stats, .fuels, .subsidies {
+
+            .stats,
+            .fuels,
+            .subsidies {
                 grid-row: 1/5;
             }
         }
-
-
     }
 
     .status-line {
@@ -373,7 +381,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         margin-bottom: 2rem
     }
 
-    .map img{
+    .map img {
         opacity: 0.4;
     }
 
@@ -523,7 +531,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         }
     }
 
-    .fuels{
+    .fuels {
 
         .secondary {
             font-size: .9rem;
@@ -534,13 +542,14 @@ $c-teplarny-problematic-bg: #fff1ef;
             margin-bottom: 0.4rem;
         }
 
-        .fuels-today{
+        .fuels-today {
             min-height: 2.175rem; //optical aligment to neighbour cell
         }
 
     }
 
-    .emissions-note, .other-heating {
+    .emissions-note,
+    .other-heating {
         font-size: .9rem;
         line-height: 1.3;
     }
@@ -552,8 +561,6 @@ $c-teplarny-problematic-bg: #fff1ef;
     .other-heating {
         color: #3a3a45;
     }
-
-
 
     .mf-per-household {
         font-size: 0.9rem;
@@ -582,7 +589,7 @@ $c-teplarny-problematic-bg: #fff1ef;
         color: $c-teplarny-grey;
     }
 
-    .ippc{
+    .ippc {
         margin-left: 0;
         color: $c-teplarny-grey;
         font-size: .9rem;
@@ -591,18 +598,18 @@ $c-teplarny-problematic-bg: #fff1ef;
             color: $c-teplarny-grey;
         }
 
-        li{
+        li {
             padding: 0;
             margin-left: 1.5em;
         }
     }
-
 }
 
 // MOBILE ADJUSTMENT
 @media (max-width: 991px) {
 
-    #status-cards, #subsidies-cards {
+    #status-cards,
+    #subsidies-cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -612,12 +619,14 @@ $c-teplarny-problematic-bg: #fff1ef;
             max-width: 50%;
         }
     }
+
     #tabulka-dashboard-teplaren {
-        .notes{
+        .notes {
             max-height: initial;
             overflow: visible;
         }
-       .notes::after{
+
+        .notes::after {
             display: none;
         }
 
