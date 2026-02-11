@@ -111,7 +111,6 @@ async function initCzechFacilitiesMap() {
     const facilityCoordOverride = {
         "praha-pravy-breh-vltavy" : { dpx: 0, dpy: 20},
         "praha-levy-breh-vltavy" : { dpx: 0, dpy: 75},
-        "steti" : { dpx: -20, dpy: -10},
         "pisek" : { dpx: 0, dpy: -10},
         "olomouc" : { dpx: 0, dpy: -10},
         "usti-nad-labem" : { dpx: 0, dpy: -30},
@@ -128,6 +127,7 @@ async function initCzechFacilitiesMap() {
         "tusimice" : { dpx: -15, dpy: 10},
         "kralupy" : { dpx: -10, dpy: 0},
         "komorany" : { dpx: 10, dpy: 0},
+        "steti" : { dpx: 10, dpy: -10},
     };
 
     function getFacilityXY(d) {
@@ -176,9 +176,13 @@ async function initCzechFacilitiesMap() {
 
     function numBoxes(d) {
         const raw = +d.num_households || 0;
+        if (raw <= 0) return 0;
+
         const rounded = Math.round(raw / ROUND_TO) * ROUND_TO;
         const n = Math.round(rounded / HOUSEHOLDS_PER_ICON);
-        return Math.max(0, n);
+
+        // Ensure any positive value (incl. < 5 000) still shows at least 1 house
+        return Math.max(1, n);
     }
 
     function markerDims(d) {
