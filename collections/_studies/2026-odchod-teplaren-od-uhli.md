@@ -101,7 +101,7 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 </div>
 
 <div id="controls-status" class="mt-5">
-    <p>Filtr podle <b>stavu odchodu od uhlí</b></p>
+    <p><i class="fa-solid fa-filter"></i> stav odchodu od uhlí</p>
     <div class="forms">
         <div class="form-check status-done">
             <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>

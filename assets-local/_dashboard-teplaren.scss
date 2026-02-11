@@ -1,15 +1,15 @@
 @use "sass:color";
 
-$c-teplarny-grey: #999999;
-$c-teplarny-dark-grey: #737373;
-$c-teplarny-light-grey: #b4b4b4;
-$c-teplarny-uhli: #bb2719;
-$c-teplarny-ostatni: $c-teplarny-light-grey;
-
 $c-teplarny-done: #1c7a96;
 $c-teplarny-in-progress: #ffcb6e;
 $c-teplarny-problematic: #c65163;
 $c-teplarny-problematic-bg: #fff1ef;
+
+$c-teplarny-grey: #999999;
+$c-teplarny-dark-grey: #737373;
+$c-teplarny-light-grey: #b4b4b4;
+$c-teplarny-uhli: $c-teplarny-problematic;
+$c-teplarny-ostatni: $c-teplarny-light-grey;
 
 .perex {
     margin-bottom: .5rem;
@@ -147,28 +147,40 @@ $c-teplarny-problematic-bg: #fff1ef;
 }
 
 #controls-status {
-    display: grid;
+    display: flex;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     font-size: .9rem;
     line-height: 1.3;
+    text-transform: uppercase;
 
-    padding-top: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .5rem;
     border-top: 1px solid $c-teplarny-light-grey;
-    padding-bottom: 1rem;
+    gap: 1rem;
 
     p {
         grid-row: 1/2;
-        text-transform: uppercase;
         color: $c-teplarny-dark-grey;
+        margin-bottom: 0rem;
     }
 
     .forms {
+        font-weight: 600;
         grid-row: 2/3;
         display: inline-flex;
         align-items: center;
         gap: 1rem;
-        font-size: 1.1rem;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+    }
+
+    .form-check-input {
+        margin-top: 0;
     }
 
     label {
@@ -407,7 +419,7 @@ $c-teplarny-problematic-bg: #fff1ef;
     .badge-fuel {
         margin-bottom: 0.2rem;
         padding: .3rem .5rem;
-        background: hotpink;
+        background: $c-teplarny-light-grey;
         color: white;
         font-size: .8rem;
         font-weight: 600;
