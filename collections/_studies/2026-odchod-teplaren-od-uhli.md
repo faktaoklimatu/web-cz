@@ -62,7 +62,7 @@ Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: 
         <div class="card subsidies">
             <div class="card-body">
                 <h3><i class="fas fa-sack-dollar"></i> Dotace na transformaci tepláren</h3>
-                <p class="small ml-4">Investiční podpora <b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | divided_by: 1000 | format_number }} miliard Kč</b> z Modernizačního fondu a k tomu provozní podpora pro <b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }} MWe</b> výkonu nových teplárenských zdrojů.</p>
+                <p class="small">Investiční podpora <b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | divided_by: 1000 | format_number }} miliard Kč</b> z Modernizačního fondu a k tomu provozní podpora pro <b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }} MWe</b> výkonu nových teplárenských zdrojů.</p>
             </div>
         </div>
     </div>
