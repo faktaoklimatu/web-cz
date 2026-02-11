@@ -49,7 +49,7 @@ Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: 
                     {% endcase %}
                 </h3>
                 {% if item.status == "not-shown" %}
-                    <p class="small">Pro přehlednost zde nejsou zobrazené menší teplárny v ETS 1 a dále malé teplárny a výtopny mimo systém ETS 1, kterých jsou dohromady stovky.</p>
+                    <p class="small">Pro přehlednost zde nejsou zobrazeny menší teplárny v ETS 1 (19 soustav a 40 000 domácností) ani malé teplárny a výtopny mimo systém ETS 1, kterých jsou dohromady stovky a které zásobují teplem 380 000 domácností.</p>
                 {% else %}
                     <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> {% if item.number > 4 %}soustav{% else %}soustavy{% endif %}</p>
                     <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
