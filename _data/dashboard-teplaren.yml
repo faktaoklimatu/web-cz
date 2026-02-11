@@ -1,17 +1,17 @@
 timestamp: '2026-02-06'
 highlights:
-- status: problematic
-  number: 4
-  num_households: 65471
-  ghg_share: 3.96
-- status: in-progress
-  number: 18
-  num_households: 738344
-  ghg_share: 8.54
 - status: done
   number: 13
   num_households: 268985
   ghg_share: 1.82
+- status: in-progress
+  number: 18
+  num_households: 738344
+  ghg_share: 8.54
+- status: problematic
+  number: 4
+  num_households: 65471
+  ghg_share: 3.96
 - status: not-shown
   number: 19
   num_households: 39483
