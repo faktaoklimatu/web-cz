@@ -11,7 +11,7 @@ weight:        209
 published:     2026-02-09
 tags-scopes:   [ cesko ]
 tags-topics:   [ energetika ]
-# use-preview-image: true
+use-preview-image: true
 caption:       "V jakém stavu je odchod od uhlí u velkých tepláren v Česku?"
 intro: |
     Tento přehled ukazuje stav odchodu od uhlí velkých teplárenských soustav v Česku. Ty dohromady zásobují přes milion českých domácností, což jsou skoro tři čtvrtiny všech domácností vytápěných dálkovým teplem. Naprostá většina z nich buď od uhlí už odešla nebo odchod od uhlí připravuje.
