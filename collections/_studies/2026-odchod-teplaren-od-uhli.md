@@ -1,7 +1,7 @@
 ---
 layout:        survey
 type:          "Interaktivní přehled"
-title:         "Odchod velkých tepláren od uhlí"
+title:         "Odchod velkých tepláren v Česku od uhlí"
 slug:          2026-odchod-teplaren-od-uhli
 redirect_from:
 - /2026-odchod-teplaren-od-uhli
@@ -34,7 +34,7 @@ Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: 
 </script>
 
 <div id="simple-dashboard">
-    <h2>Většina teplárenských soustav je v procesu odchodu od uhlí</h2>
+    <h2>Odchod od uhlí skoro všechny velké teplárny připravují (nebo už dokončily)</h2>
     <div id="map"></div>
     <div id="status-cards">
         {% for item in highlights %}
@@ -61,9 +61,8 @@ Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: 
     <div id="subsidies-cards">
         <div class="card subsidies">
             <div class="card-body">
-                <h3><i class="fas fa-sack-dollar"></i> Dotace a provozní podpora</h3>
-                <p class="small"><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Modernizačního fondu</p>
-                <p class="small"><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> MWe s provozní podporou KVET</p>
+                <h3><i class="fas fa-sack-dollar"></i> Dotace na transformaci tepláren</h3>
+                <p class="small ml-4">Investiční podpora <b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | divided_by: 1000 | format_number }} miliard Kč</b> z Modernizačního fondu a k tomu provozní podpora pro <b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }} MWe</b> výkonu nových teplárenských zdrojů.</p>
             </div>
         </div>
     </div>
