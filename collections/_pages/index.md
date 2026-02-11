@@ -37,19 +37,22 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-6">
         <p>
-        Česko stále vyrábí zhruba třetinu elektřiny v uhelných zdrojích, které jsou v Evropě kvůli vysokým emisím skleníkových plynů pod velkým ekonomickým tlakem. Skupina Sev.en nedávno oznámila záměr odstavit své elektrárny Počerady a Chvaletice a teplárnu Kladno.
+        Uhelné zdroje jsou v EU kvůli vysokým emisím skleníkových plynů pod velkým ekonomickým tlakem. Proběhne v Česku konec výroby elektřiny a tepla z uhlí bezpečně a spořádaně?
         </p>
         <p>
-        Naše nová studie zkoumá důsledky tohoto kroku na zdrojovou přiměřenost Česka. Z podrobného modelování vyplývá, že <strong>odstavení elektráren Počerady a Chvaletice by neohrozilo dodávky elektřiny v Česku a mělo by jen malý dopad na ceny elektřiny</strong>.
+        Naše nová studie zkoumá, zda bude v Česku po ohlášeném odstavení elektráren Počerady a Chvaletice dostatek zdrojů elektřiny. <strong>Modelování ukazuje, že ano</strong>, je ale třeba se urychleně chystat na uzavření dalších uhelných zdrojů.
         </p>
         <p>
-        Zároveň ale platí, že česká soustava dnes není připravena na okamžité odstavení všech uhelných elektráren. Další kroky proto musí směřovat k <strong>systematické přípravě náhrady uhelných zdrojů</strong> – jak z hlediska výroby elektřiny, tak podpůrných služeb a teplárenství.
+        Stejný tlak působí i na uhelné teplárny. Náš akutální přehled ukazuje, že <strong>velké teplárny na náhradě uhlí usilovně pracují</strong>.
         </p>
       </div>
-      <div class="col-md">
+      <div class="col-md-3">
         {% include preview-block.html slug="2026-konec-uhli-v-cesku" no_include_tags=true %}
+      </div>
+      <div class="col-md-3">
+        {% include preview-block.html slug="2026-odchod-teplaren-od-uhli" no_include_tags=true %}
       </div>
     </div>
   </div></div>
