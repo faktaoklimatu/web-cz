@@ -382,7 +382,7 @@ async function initCzechFacilitiesMap() {
     //   Example: "praha-levy-breh-vltavy": { lon: 14.42, lat: 50.08 },
     const facilityCoordOverride = {
         "praha-pravy-breh-vltavy" : { dpx: 0, dpy: 20},
-        "praha-levy-breh-vltavy" : { dpx: 0, dpy: 70},
+        "praha-levy-breh-vltavy" : { dpx: 0, dpy: 75},
         "steti" : { dpx: -20, dpy: -10},
         "pisek" : { dpx: 0, dpy: -10},
         "olomouc" : { dpx: 0, dpy: -10},
