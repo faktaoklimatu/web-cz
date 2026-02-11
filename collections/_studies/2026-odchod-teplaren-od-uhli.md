@@ -17,13 +17,59 @@ intro: |
     Tento přehled ukazuje stav odchodu od uhlí velkých teplárenských soustav v Česku. Ty dohromady zásobují přes milion českých domácností, což jsou skoro tři čtvrtiny všech domácností vytápěných dálkovým teplem. Naprostá většina z nich buď od uhlí už odešla nebo odchod od uhlí připravuje.
 extra-scripts: [ /assets-local/js/dashboard-teplaren.js ]
 ---
-<div class="narrow-text" markdown="1">
 <div id="last-updated" class="small">
 Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: "%-d. %-m. %Y" }}
-<div markdown="1">
-(chyby a nepřesnosti prosíme hlaste na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz))
 </div>
+
+{% assign facilities = site.data.dashboard-teplaren.items %}
+{% assign highlights = site.data.dashboard-teplaren.highlights %}
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+  window.DASHBOARD_TEPLAREN = {
+    highlights: {{ site.data["dashboard-teplaren"].highlights | jsonify }},
+    facilities: {{ site.data["dashboard-teplaren"].items | jsonify }},
+    num_households_ets2_total: {{ site.data["dashboard-teplaren"].num_households_ets2_total | jsonify }}
+  };
+</script>
+
+<div id="simple-dashboard">
+    <h2>Většina teplárenských soustav je v procesu odchodu od uhlí</h2>
+    <div id="map"></div>
+    <div id="status-cards">
+        {% for item in highlights %}
+        <div class="card status-{{ item.status }}">
+            <div class="card-body">
+                <h3>
+                    {% case item.status %}
+                    {% when "done" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí dokončen
+                    {% when "in-progress" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí probíhá
+                    {% when "problematic" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nejasný odchod od uhlí
+                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Není zde všechno
+                    {% endcase %}
+                </h3>
+                {% if item.status == "not-shown" %}
+                    <p class="small">Pro přehlednost zde nejsou zobrazené menší teplárny v ETS 1 a dále malé teplárny a výtopny mimo systém ETS 1, kterých jsou dohromady stovky.</p>
+                {% else %}
+                    <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> {% if item.number > 4 %}soustav{% else %}soustavy{% endif %}</p>
+                    <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div id="subsidies-cards">
+        <div class="card subsidies">
+            <div class="card-body">
+                <h3><i class="fas fa-sack-dollar"></i> Dotace a provozní podpora</h3>
+                <p class="small"><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Modernizačního fondu</p>
+                <p class="small"><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> MWe s provozní podporou KVET</p>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="narrow-text" markdown="1">
 {% capture methodology %}
 
 Tato rešerše je založena na celé řadě datových zdrojů (včetně ručního dohledávání veřejných informací).
@@ -54,67 +100,20 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 %}
 </div>
 
-{% assign facilities = site.data.dashboard-teplaren.items %}
-{% assign highlights = site.data.dashboard-teplaren.highlights %}
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script>
-  window.DASHBOARD_TEPLAREN = {
-    highlights: {{ site.data["dashboard-teplaren"].highlights | jsonify }},
-    facilities: {{ site.data["dashboard-teplaren"].items | jsonify }},
-    num_households_ets2_total: {{ site.data["dashboard-teplaren"].num_households_ets2_total | jsonify }}
-  };
-</script>
-
-<div id="overall-charts">
-    <div id="map"></div>
-    <div id="status-cards">
-        {% for item in highlights %}
-        <div class="card status-{{ item.status }}">
-            <div class="card-body">
-                <h3>
-                    {% case item.status %}
-                    {% when "done" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí dokončen
-                    {% when "in-progress" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Odchod od uhlí probíhá
-                    {% when "problematic" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Nejasný odchod od uhlí
-                    {% when "not-shown" %} {% include includes-local/dashboard-teplaren/status-icon.html status=item.status %} Není zde všechno
-                    {% endcase %}
-                </h3>
-                {% if item.status == "not-shown" %}
-                    <p class="small">Pro přehlednost zde nejsou zobrazené menší teplárny v ETS 1 a dále malé teplárny a výtopny mimo systém ETS 1, kterých jsou dohromady stovky.</p>
-                {% else %}
-                    <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> {% if item.number > 4 %}soustav{% else %}soustavy{% endif %}</p>
-                    <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <div id="subsidies-cards">
-        <div class="card">
-            <div class="card-body">
-                <h3><i class="fas fa-sack-dollar"></i> Dotace a provozní podpora</h3>
-                <p><b>{{ site.data.dashboard-teplaren.mf_chp_subsidies_total | format_number }}</b> mil. Kč z Modernizačního fondu</p>
-                <p><b>{{ site.data.dashboard-teplaren.chp_subsidies_total_accepted | format_number }}</b> MWe s provozní podporou KVET</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="controls-status">
+<div id="controls-status" class="mt-5">
     <p>Filtr podle <b>stavu odchodu od uhlí</b></p>
     <div class="forms">
-        <div class="form-check status-problematic">
-            <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
-            <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>
+        <div class="form-check status-done">
+            <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
+            <label class="form-check-label" for="checkDone">Dokončený odchod</label>
         </div>
         <div class="form-check status-in-progress">
             <input class="form-check-input" type="checkbox" value="" id="checkInProgress" checked>
             <label class="form-check-label" for="checkInProgress">Probíhající odchod</label>
         </div>
-        <div class="form-check status-done">
-            <input class="form-check-input" type="checkbox" value="" id="checkDone" checked>
-            <label class="form-check-label" for="checkDone">Dokončený odchod</label>
+        <div class="form-check status-problematic">
+            <input class="form-check-input" type="checkbox" value="" id="checkProblematic" checked>
+            <label class="form-check-label" for="checkProblematic">Nejasný odchod</label>
         </div>
     </div>
 </div>
