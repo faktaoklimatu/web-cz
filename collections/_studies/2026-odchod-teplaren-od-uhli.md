@@ -67,11 +67,6 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
 </script>
 
 <div id="overall-charts">
-    <div id="pct-households">
-        <h2 style="font-weight: 400">V Česku je <b>1,5 milionu</b> domácností připojeno na centrální zásobování teplem</h2>
-        <h5 style="font-weight: light">Podíl připojených domácností podle plánů tepláren na odchod od uhlí</h5>
-        <div id="stacked-bar"></div>
-    </div>
     <div id="map"></div>
     <div id="status-cards">
         {% for item in highlights %}
@@ -90,7 +85,6 @@ Kompletní data najdete v doprovodné [tabulce](https://docs.google.com/spreadsh
                 {% else %}
                     <p><i class="fa-solid fa-industry"></i> <b>{{ item.number }}</b> {% if item.number > 4 %}soustav{% else %}soustavy{% endif %}</p>
                     <p><i class="fa-solid fa-house-fire"></i> <b>{{ item.num_households | round_signif: 2 | format_number }}</b> domácností</p>
-                    <p><i class="fa-solid fa-cloud-arrow-up"></i> <b>{{ item.ghg_share | round_signif: 2 | format_number }} %</b> emisí ČR</p>
                 {% endif %}
             </div>
         </div>
