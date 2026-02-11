@@ -245,11 +245,14 @@ $c-teplarny-ostatni: $c-teplarny-light-grey;
             grid-column: 1/3;
         }
 
-        .owner {
-            margin-left: auto;
-            font-size: .9rem;
-            font-weight: 700;
-            color: $c-teplarny-dark-grey;
+        .owner-label {
+            span{
+                margin-left: auto;
+                font-size: .9rem;
+                text-transform: none;
+                color: $c-teplarny-dark-grey;
+                line-height: 2;
+            }
         }
 
         h4 {
