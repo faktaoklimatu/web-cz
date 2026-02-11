@@ -1,7 +1,7 @@
 {% capture status-icon-class -%}
     {%- case include.status -%}
         {%- when "done" -%} fa-circle-check
-        {%- when "in-progress" -%} fa-solid fa-circle-chevron-right
+        {%- when "in-progress" -%} fa-solid fa-clock
         {%- when "problematic" -%} fa-solid fa-triangle-exclamation
         {%- when "not-shown" -%} fa-solid fa-eye-slash
         {%- endcase -%}
