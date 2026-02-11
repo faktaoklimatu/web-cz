@@ -103,7 +103,6 @@ function initStackedBarChart() {
 
     const svg = container.append('svg')
         .attr('width', '100%')
-        .attr('height', height)
         .attr('viewBox', `0 0 ${width} ${height}`)
         .attr("preserveAspectRatio", "xMinYMid meet");
 
@@ -135,7 +134,7 @@ function initStackedBarChart() {
         strokeWidth = 1,
         textFill = "#999",
         fontSize = ".9rem",
-        fontWeight = "300",
+        fontWeight = "400",
     }) {
         const dStart = stackedData.find(d => d.status === startStatus);
         const dEnd = stackedData.find(d => d.status === endStatus);
@@ -194,6 +193,7 @@ function initStackedBarChart() {
                 .attr("text-anchor", "middle")
                 .attr("dominant-baseline", "middle")
                 .attr("fill", textFill)
+                .attr("stroke", "none")
                 .attr("font-size", fontSize)
                 .attr("font-weight", fontWeight)
                 .text(text);
@@ -336,7 +336,7 @@ async function initCzechFacilitiesMap() {
 
     const gMap = svg.append("g").attr("class", "cz");
     const gPts = svg.append("g").attr("class", "facilities");
-    gPts.attr("font-family", "system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif");
+    gPts.attr("font-family", "Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif");
     gPts.attr("fill", "#111");
 
     // Load CZ GeoJSON
@@ -375,15 +375,85 @@ async function initCzechFacilitiesMap() {
         .attr("stroke", "#3a3a3a")
         .attr("stroke-width", 0.8);
 
+    // Optional facility coordinate overrides
+    // - Use { lon, lat } to replace the raw coordinates (still goes through the projection)
+    //   Example:  "ostrava": { dpx: -10, dpy: 6 },
+    // - Use { dpx, dpy } to nudge the projected point in SVG pixels
+    //   Example: "praha-levy-breh-vltavy": { lon: 14.42, lat: 50.08 },
+    const facilityCoordOverride = {
+        "praha-pravy-breh-vltavy" : { dpx: 0, dpy: 20},
+        "praha-levy-breh-vltavy" : { dpx: 0, dpy: 70},
+        "steti" : { dpx: -20, dpy: -10},
+        "pisek" : { dpx: 0, dpy: -10},
+        "olomouc" : { dpx: 0, dpy: -10},
+        "usti-nad-labem" : { dpx: 0, dpy: -20},
+        "ostrava" : { dpx: -50, dpy: 0},
+        "otrokovice" : { dpx: -5, dpy: 20},
+        "detmarovice" : { dpx: 0, dpy: -5},
+        "frydek-mistek" : { dpx: 0, dpy: 10},
+        "trinec" : { dpx: 0, dpy: 5},
+    };
+
+    function getFacilityXY(d) {
+        const key = slugifyAnchor(d.name);
+        const ov = facilityCoordOverride[key];
+
+        // Absolute lon/lat override
+        const lon = (ov && Number.isFinite(+ov.lon)) ? +ov.lon : d.lon;
+        const lat = (ov && Number.isFinite(+ov.lat)) ? +ov.lat : d.lat;
+
+        const base = projection([lon, lat]);
+        if (!base) return null;
+
+        // Pixel nudge override
+        const dpx = ov?.dpx ? +ov.dpx : 0;
+        const dpy = ov?.dpy ? +ov.dpy : 0;
+
+        return [base[0] + dpx, base[1] + dpy];
+    }
+
     // Project points (and drop any that can’t be projected)
     const projected = pts
-        .map(d => ({ ...d, xy: projection([d.lon, d.lat]) }))
+        .map(d => ({ ...d, xy: getFacilityXY(d) }))
         .filter(d => d.xy && Number.isFinite(d.xy[0]) && Number.isFinite(d.xy[1]));
 
-    // Radius scale by num_households (sqrt looks best for bubbles)
-    const r = d3.scaleSqrt()
-        .domain(d3.extent(projected, d => d.num_households))
-        .range([3, 25]); // tweak
+    // One house icon represents ~10 000 households, but we FIRST round households to the nearest 1 000
+    // Example: 11 000 -> 1 icon, 15 000 -> 2 icons
+    const HOUSEHOLDS_PER_ICON = 10000;
+    const ROUND_TO = 1000;
+
+    // Box marker layout
+    const boxSize = 15;
+    const boxGap = 0;
+    const maxCols = 5; // wrap to new row after this many boxes
+
+    // 5-point house icon (pentagon) path generator
+    function housePathAt(x, y, s) {
+        // Points: bottom-left, bottom-right, top-right wall, roof peak, top-left wall
+        const p0 = [x, y + s];
+        const p1 = [x + s, y + s];
+        const p2 = [x + s, y + s * 0.45];
+        const p3 = [x + s * 0.5, y];
+        const p4 = [x, y + s * 0.45];
+        return `M${p0[0]},${p0[1]}L${p1[0]},${p1[1]}L${p2[0]},${p2[1]}L${p3[0]},${p3[1]}L${p4[0]},${p4[1]}Z`;
+    }
+
+    function numBoxes(d) {
+        const raw = +d.num_households || 0;
+        const rounded = Math.round(raw / ROUND_TO) * ROUND_TO;
+        const n = Math.round(rounded / HOUSEHOLDS_PER_ICON);
+        return Math.max(0, n);
+    }
+
+    function markerDims(d) {
+        const n = numBoxes(d);
+        if (n === 0) return { w: 0, h: 0, cols: 0, rows: 0 };
+        const cols = Math.min(maxCols, n);
+        const rows = Math.ceil(n / maxCols);
+        const w = cols * boxSize + Math.max(0, cols - 1) * boxGap;
+        const h = rows * boxSize + Math.max(0, rows - 1) * boxGap;
+        return { w, h, cols, rows };
+    }
 
     // Helper: turn facility name into an in-page anchor id, e.g. "Olomouc" -> "olomouc"
     function slugifyAnchor(s) {
@@ -397,13 +467,13 @@ async function initCzechFacilitiesMap() {
             .replace(/^-+|-+$/g, "");
     }
 
-    // Draw clickable facilities (circle + two-line label)
+    // Draw clickable facilities (box marker + two-line label)
     const facilityLink = gPts.selectAll("a.facility")
         .data(projected, d => d.name)
         .join(
             enter => {
                 const a = enter.append("a").attr("class", d => `facility status-${d.status}`);
-                a.append("circle");
+                a.append("g").attr("class", "facility-marker");
                 a.append("text").attr("class", "facility-name");
                 return a;
             },
@@ -412,52 +482,117 @@ async function initCzechFacilitiesMap() {
         )
         .attr("href", d => `#${slugifyAnchor(d.name)}`);
 
-    facilityLink.select("circle")
-        .attr("cx", d => d.xy[0])
-        .attr("cy", d => d.xy[1])
-        .attr("r", d => r(d.num_households))
-        .attr("fill", d => statusColor.get(d.status) ?? "#555")
-        .attr("fill-opacity", 0.75)
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 1);
+    // Render box markers (one box per 10k households)
+    facilityLink.each(function (d) {
+        const a = d3.select(this);
+        const g = a.select("g.facility-marker");
+
+        const n = numBoxes(d);
+        const dims = markerDims(d);
+
+        // Clear previous marker
+        g.selectAll("*").remove();
+
+        if (n === 0) return;
+
+        // Anchor = leftmost house in bottom row (top-left corner of that house)
+        const rows = dims.rows;
+        const x0 = d.xy[0];
+        const y0 = d.xy[1] - (rows - 1) * (boxSize + boxGap);
+
+        const boxes = d3.range(n).map(i => ({ i }));
+
+        g.selectAll("path.house")
+            .data(boxes, b => b.i)
+            .join("path")
+            .attr("class", "house")
+            .attr("d", b => {
+                const x = x0 + (b.i % maxCols) * (boxSize + boxGap);
+                // Fill from the bottom row first, then upwards
+                const rowFromBottom = Math.floor(b.i / maxCols);
+                const rowFromTop = (rows - 1) - rowFromBottom;
+                const y = y0 + rowFromTop * (boxSize + boxGap);
+                return housePathAt(x, y, boxSize);
+            })
+            .attr("fill", statusColor.get(d.status) ?? "#555")
+            .attr("fill-opacity", 0.9)
+            .attr("stroke", "#fff")
+            .attr("stroke-width", 2)
+            .attr("stroke-linejoin", "round");
+    });
 
     // Label positioning
-    const labelGap = 1;
+    // Default: label under the houses, left-aligned to the marker’s left edge.
+    // Overrides:
+    //  - "above" : above the houses
+    //  - "right" : to the right of the houses (uses labelGap as horizontal gap)
+    //  - "left"  : to the left of the houses (uses labelGap as horizontal gap)
+    const labelGap = 2;
+    const labelBelowPad = 14; // keeps current look (status quo)
 
-    // Custom label positions
-    const labelOffsetOverride = {
-        "otrokovice": { dx: -20, dy: 30 },
-        "valasske-mezirici": { dx: 5, dy: 15 },
-        "frydek-mistek": { dx: -15, dy: 32 },
-        "ostrava": { dx: -50, dy: -5 },
-        "karvina": { dx: 2, dy: 15 },
-        "detmarovice": { dx: 0, dy: 1 },
-        "vresova": { dx: -2, dy: 25 },
-        "tisova": { dx: -2, dy: 25 },
-        "prunerov": { dx: -10, dy: 35 },
-        "tusimice": { dx: 1, dy: 10 },
-        "komorany": { dx: 1, dy: 20 },
-        "ledvice": { dx: 1, dy: 10 },
-        "kladno": { dx: -40, dy: 0 },
-        "praha-pravy-breh-vltavy": { dx: -20, dy: 65 },
-        "praha-levy-breh-vltavy": { dx: -5, dy: -10 },
-        "strakonice": { dx: 1, dy: 20 },
+    const labelPosOverride = {
+        "detmarovice": "right",
+        "kladno": "left",
+        //"steti": "left",
+        "kolin": "above",
+        "kralupy": "left",
+        "mlada-boleslav": "right",
+        "trinec": "right",
+        
     };
-    function getLabelOffset(d) {
+
+    function getLabelPos(d) {
         const key = slugifyAnchor(d.name);
-        return labelOffsetOverride[key] ?? { dx: labelGap, dy: 0 };
+        return labelPosOverride[key] ?? "below";
     }
 
-    facilityLink.select("text.facility-name")
-        .attr("x", d => {
-            const off = getLabelOffset(d);
-            return d.xy[0] + r(d.num_households) + off.dx;
-        })
-        .attr("y", d => {
-            const off = getLabelOffset(d);
-            return d.xy[1] - r(d.num_households) + off.dy;
-        })
+    // Set text first so measurements work
+    const labels = facilityLink.select("text.facility-name")
         .text(d => d.name);
+
+    labels.each(function (d) {
+    const t = d3.select(this);
+    const pos = getLabelPos(d);
+    const dims = markerDims(d);
+
+    // Anchor logic: d.xy is the top-left of the leftmost house in the bottom row
+    const leftX = d.xy[0];
+    const rightX = d.xy[0] + dims.w;
+    const topY = d.xy[1] - (dims.rows - 1) * (boxSize + boxGap);
+    const bottomY = d.xy[1] + boxSize; // bottom edge of the grid
+    const midY = topY + dims.h / 2;
+
+    // Reset common attrs
+    t.attr("text-anchor", "start");
+
+    if (pos === "above") {
+        t.attr("dominant-baseline", "auto")
+        .attr("x", leftX)
+        .attr("y", topY - labelGap);
+        return;
+    }
+
+    if (pos === "right") {
+        t.attr("dominant-baseline", "middle")
+        .attr("x", rightX + labelGap)
+        .attr("y", midY);
+        return;
+    }
+
+    if (pos === "left") {
+        // Measure rendered width to place label to the left
+        const w = this.getBBox().width;
+        t.attr("dominant-baseline", "middle")
+        .attr("x", leftX - labelGap - w)
+        .attr("y", midY);
+        return;
+    }
+
+    // Default: below (status quo)
+    t.attr("dominant-baseline", "auto")
+        .attr("x", leftX)
+        .attr("y", bottomY + labelBelowPad + labelGap);
+    });
 
     // Tooltip on hover
     facilityLink.selectAll("title").remove();
