@@ -150,6 +150,7 @@ $c-teplarny-ostatni: $c-teplarny-light-grey;
 
 #controls-status {
     display: flex;
+    flex-flow: wrap;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     font-size: .9rem;
@@ -512,6 +513,12 @@ $c-teplarny-ostatni: $c-teplarny-light-grey;
         color: #999;
     }
 
+    .subsidies {
+        div[title]{
+            cursor: pointer;
+        }
+    }
+
     .detail {
         display: none;
     }
@@ -642,6 +649,14 @@ $c-teplarny-ostatni: $c-teplarny-light-grey;
             flex: 0 0 50%;
             max-width: 50%;
         }
+    }
+
+    #controls-status {
+
+    p {
+        width: 100%;
+    }
+    
     }
 
     #tabulka-dashboard-teplaren {
