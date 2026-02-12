@@ -35,7 +35,7 @@ Poslední aktualizace dat: {{ site.data["dashboard-teplaren"].timestamp | date: 
 
 <div id="simple-dashboard">
     <h2>Odchod od uhlí skoro všechny velké teplárny připravují (nebo už dokončily)</h2>
-    <div id="map" class="mt-md-3"></div>
+    <div id="map" class="mt-md-5"></div>
     <div id="status-cards">
         {% for item in highlights %}
         <div class="card status-{{ item.status }}">
