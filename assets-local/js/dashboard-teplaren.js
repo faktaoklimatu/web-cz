@@ -338,6 +338,54 @@ async function initCzechFacilitiesMap() {
     facilityLink.selectAll("title").remove();
     facilityLink.append("title")
         .text(d => `${d.name} — ${(Math.round(d.num_households / 1000) * 1000).toLocaleString("cs-CZ")} domácností`);
+
+    // Legend (top-left inside SVG)
+    const gLegend = svg.append("g")
+        .attr("class", "map-legend")
+        .attr("transform", "translate(0,0)");
+
+    const liS = 15; // legend icon size
+    const liGap = 0;
+
+    // Row 1: 1 house
+    const row1 = gLegend.append("g").attr("transform", "translate(0,12)");
+    row1.append("path")
+        .attr("d", housePathAt(0, 0, liS))
+        .attr("fill", "#999")
+        .attr("fill-opacity", 0.9)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2)
+        .attr("stroke-linejoin", "round");
+    row1.append("text")
+        .attr("x", liS + 10)
+        .attr("y", liS * 0.75)
+        .attr("font-size", ".9rem")
+        .attr("fill", "#999")
+        .text(" <10 000 zásobovaných domácností");
+
+    // Row 2: 2 houses
+    const row2 = gLegend.append("g").attr("transform", "translate(0,30)");
+    row2.append("path")
+        .attr("d", housePathAt(0, 0, liS))
+        .attr("fill", "#999")
+        .attr("fill-opacity", 0.9)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2)
+        .attr("stroke-linejoin", "round");
+    row2.append("path")
+        .attr("d", housePathAt(liS + liGap, 0, liS))
+        .attr("fill", "#999")
+        .attr("fill-opacity", 0.9)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2)
+        .attr("stroke-linejoin", "round");
+    row2.append("text")
+        .attr("x", (liS * 2) + liGap + 10)
+        .attr("y", liS * 0.75)
+        .attr("font-size", ".9rem")
+        .attr("fill", "#999")
+        .text(" 20 000");
+
 }
 
 initCzechFacilitiesMap();
