@@ -159,7 +159,7 @@ async function initCzechFacilitiesMap() {
     const ROUND_TO = 1000;
 
     // Box marker layout
-    const boxSize = 15;
+    const boxSize = 12;
     const boxGap = 0;
     const maxCols = 5; // wrap to new row after this many boxes
 
@@ -257,7 +257,7 @@ async function initCzechFacilitiesMap() {
             .attr("fill", statusColor.get(d.status) ?? "#555")
             .attr("fill-opacity", 0.9)
             .attr("stroke", "#fff")
-            .attr("stroke-width", 2)
+            .attr("stroke-width", .75)
             .attr("stroke-linejoin", "round");
     });
 
@@ -272,7 +272,6 @@ async function initCzechFacilitiesMap() {
 
     const labelPosOverride = {
         "detmarovice": "right",
-        //"steti": "left",
         "kolin": "above",
         "kralupy": "left",
         "mlada-boleslav": "right",
@@ -344,10 +343,10 @@ async function initCzechFacilitiesMap() {
         .attr("class", "map-legend")
         .attr("transform", "translate(0,0)");
 
-    const liS = 15; // legend icon size
+    const liS = 12; // legend icon size
     const liGap = 0;
 
-    // Row 1: 1 house
+    // First row of map legend
     const row1 = gLegend.append("g").attr("transform", "translate(0,12)");
     row1.append("path")
         .attr("d", housePathAt(0, 0, liS))
