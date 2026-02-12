@@ -278,8 +278,12 @@ $c-teplarny-ostatni: $c-teplarny-light-grey;
         }
 
         .stats {
-            grid-column: 1/2;
-            grid-row: 4/5;
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+
+        .fuels {
+            grid-row: 4 / 6;
         }
 
         .status-line {
