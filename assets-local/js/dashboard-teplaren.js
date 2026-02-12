@@ -1,23 +1,3 @@
-// Filter
-const controls = document.getElementById("controls-status");
-const ignoreContainer = document.getElementById("highlights-dashboard-teplaren");
-
-controls.addEventListener("change", e => {
-    if (!e.target.matches("input[type='checkbox']")) return;
-
-    const checkbox = e.target;
-    const statusClass = checkbox.closest(".form-check").classList
-        .value
-        .split(" ")
-        .find(c => c.startsWith("status-"));
-
-    document.querySelectorAll("." + statusClass).forEach(el => {
-        if (controls.contains(el)) return;          // keep controls
-        if (ignoreContainer?.contains(el)) return;  // keep highlights
-        el.style.display = checkbox.checked ? "" : "none";
-    });
-});
-
 // Import YAML data
 const { highlights, facilities, num_households_ets2_total } = window.DASHBOARD_TEPLAREN;
 
@@ -43,6 +23,26 @@ function cumulative(data, valueKey = "value") {
         return out;
     });
 }
+
+// Filter
+const controls = document.getElementById("controls-status");
+const ignoreContainer = document.getElementById("highlights-dashboard-teplaren");
+
+controls.addEventListener("change", e => {
+    if (!e.target.matches("input[type='checkbox']")) return;
+
+    const checkbox = e.target;
+    const statusClass = checkbox.closest(".form-check").classList
+        .value
+        .split(" ")
+        .find(c => c.startsWith("status-"));
+
+    document.querySelectorAll("." + statusClass).forEach(el => {
+        if (controls.contains(el)) return;          // keep controls
+        if (ignoreContainer?.contains(el)) return;  // keep highlights
+        el.style.display = checkbox.checked ? "" : "none";
+    });
+});
 
 /////////////////////
 // GENERATE CZECH MAP
@@ -78,12 +78,6 @@ async function initCzechFacilitiesMap() {
 
     // Parse + keep only valid lon/lat
     const pts = facilities
-        .map(d => {
-            const lon = +String(d.lon).replace(",", ".");
-            const lat = +String(d.lat).replace(",", ".");
-            const num = +String(d.num_households ?? 0).replace(",", ".");
-            return { ...d, lon, lat, num_households: num };
-        })
         .filter(d => Number.isFinite(d.lon) && Number.isFinite(d.lat));
 
     // Fit projection to the map
@@ -104,48 +98,43 @@ async function initCzechFacilitiesMap() {
         .attr("stroke-width", 0.8);
 
     // Optional facility coordinate overrides
-    // - Use { lon, lat } to replace the raw coordinates (still goes through the projection)
-    //   Example:  "ostrava": { dpx: -10, dpy: 6 },
     // - Use { dpx, dpy } to nudge the projected point in SVG pixels
-    //   Example: "praha-levy-breh-vltavy": { lon: 14.42, lat: 50.08 },
+    //   Example:  "ostrava": { dpx: -10, dpy: 6 },
     const facilityCoordOverride = {
-        "praha-pravy-breh-vltavy" : { dpx: 0, dpy: 20},
-        "praha-levy-breh-vltavy" : { dpx: 0, dpy: 75},
-        "pisek" : { dpx: 0, dpy: -10},
-        "olomouc" : { dpx: 0, dpy: -10},
-        "usti-nad-labem" : { dpx: 0, dpy: -30},
-        "ostrava" : { dpx: -50, dpy: 0},
-        "otrokovice" : { dpx: -5, dpy: 20},
-        "detmarovice" : { dpx: 0, dpy: -10},
-        "karvina" : { dpx: 0, dpy: -5},
-        "frydek-mistek" : { dpx: 0, dpy: 10},
-        "trinec" : { dpx: 0, dpy: 5},
-        "tisova" : { dpx: -5, dpy: 0},
-        "ledvice" : { dpx: 0, dpy: -5},
-        "prunerov" : { dpx: -25, dpy: 0},
-        "kladno" : { dpx: -30, dpy: 0},
-        "tusimice" : { dpx: -15, dpy: 10},
-        "kralupy" : { dpx: -10, dpy: 0},
-        "komorany" : { dpx: 10, dpy: 0},
-        "steti" : { dpx: 10, dpy: -10},
+        "praha-pravy-breh-vltavy": { dpx: 0, dpy: 10 },
+        "praha-levy-breh-vltavy": { dpx: 0, dpy: 55 },
+        "pisek": { dpx: 0, dpy: -10 },
+        "olomouc": { dpx: 0, dpy: -10 },
+        "usti-nad-labem": { dpx: 0, dpy: -30 },
+        "ostrava": { dpx: -50, dpy: 0 },
+        "otrokovice": { dpx: -5, dpy: 20 },
+        "detmarovice": { dpx: 0, dpy: -10 },
+        "karvina": { dpx: 0, dpy: -5 },
+        "frydek-mistek": { dpx: 0, dpy: 10 },
+        "trinec": { dpx: 0, dpy: 5 },
+        "tisova": { dpx: -5, dpy: 0 },
+        "ledvice": { dpx: 0, dpy: -5 },
+        "prunerov": { dpx: -25, dpy: 0 },
+        "kladno": { dpx: -30, dpy: 0 },
+        "tusimice": { dpx: -15, dpy: 10 },
+        "kralupy": { dpx: -10, dpy: 0 },
+        "komorany": { dpx: 10, dpy: 0 },
+        "steti": { dpx: 10, dpy: -10 },
     };
 
     function getFacilityXY(d) {
         const key = slugifyAnchor(d.name);
         const ov = facilityCoordOverride[key];
 
-        // Absolute lon/lat override
-        const lon = (ov && Number.isFinite(+ov.lon)) ? +ov.lon : d.lon;
-        const lat = (ov && Number.isFinite(+ov.lat)) ? +ov.lat : d.lat;
-
-        const base = projection([lon, lat]);
+        const base = projection([d.lon, d.lat]);
         if (!base) return null;
 
         // Pixel nudge override
         const dpx = ov?.dpx ? +ov.dpx : 0;
         const dpy = ov?.dpy ? +ov.dpy : 0;
 
-        return [base[0] + dpx, base[1] + dpy];
+        // Push anchor left an up so that the first house is centered on the projected point.
+        return [base[0] + dpx - 5, base[1] + dpy - 5];
     }
 
     // Project points (and drop any that can’t be projected)
@@ -159,7 +148,7 @@ async function initCzechFacilitiesMap() {
     const ROUND_TO = 1000;
 
     // Box marker layout
-    const boxSize = 12;
+    const boxSize = 11;
     const boxGap = 0;
     const maxCols = 5; // wrap to new row after this many boxes
 
@@ -276,8 +265,8 @@ async function initCzechFacilitiesMap() {
         "kralupy": "left",
         "mlada-boleslav": "right",
         "trinec": "right",
-        "ledvice": "left",    
-        "prunerov": "above",    
+        "ledvice": "left",
+        "prunerov": "above",
     };
 
     function getLabelPos(d) {
@@ -290,47 +279,47 @@ async function initCzechFacilitiesMap() {
         .text(d => d.name);
 
     labels.each(function (d) {
-    const t = d3.select(this);
-    const pos = getLabelPos(d);
-    const dims = markerDims(d);
+        const t = d3.select(this);
+        const pos = getLabelPos(d);
+        const dims = markerDims(d);
 
-    // Anchor logic: d.xy is the top-left of the leftmost house in the bottom row
-    const leftX = d.xy[0];
-    const rightX = d.xy[0] + dims.w;
-    const topY = d.xy[1] - (dims.rows - 1) * (boxSize + boxGap);
-    const bottomY = d.xy[1] + boxSize; // bottom edge of the grid
-    const midY = topY + dims.h / 2;
+        // Anchor logic: d.xy is the top-left of the leftmost house in the bottom row
+        const leftX = d.xy[0];
+        const rightX = d.xy[0] + dims.w;
+        const topY = d.xy[1] - (dims.rows - 1) * (boxSize + boxGap);
+        const bottomY = d.xy[1] + boxSize; // bottom edge of the grid
+        const midY = topY + dims.h / 2;
 
-    // Reset common attrs
-    t.attr("text-anchor", "start");
+        // Reset common attrs
+        t.attr("text-anchor", "start");
 
-    if (pos === "above") {
+        if (pos === "above") {
+            t.attr("dominant-baseline", "auto")
+                .attr("x", leftX)
+                .attr("y", topY - labelGap);
+            return;
+        }
+
+        if (pos === "right") {
+            t.attr("dominant-baseline", "middle")
+                .attr("x", rightX + labelGap)
+                .attr("y", midY);
+            return;
+        }
+
+        if (pos === "left") {
+            // Measure rendered width to place label to the left
+            const w = this.getBBox().width;
+            t.attr("dominant-baseline", "middle")
+                .attr("x", leftX - labelGap - w)
+                .attr("y", midY);
+            return;
+        }
+
+        // Default: below (status quo)
         t.attr("dominant-baseline", "auto")
-        .attr("x", leftX)
-        .attr("y", topY - labelGap);
-        return;
-    }
-
-    if (pos === "right") {
-        t.attr("dominant-baseline", "middle")
-        .attr("x", rightX + labelGap)
-        .attr("y", midY);
-        return;
-    }
-
-    if (pos === "left") {
-        // Measure rendered width to place label to the left
-        const w = this.getBBox().width;
-        t.attr("dominant-baseline", "middle")
-        .attr("x", leftX - labelGap - w)
-        .attr("y", midY);
-        return;
-    }
-
-    // Default: below (status quo)
-    t.attr("dominant-baseline", "auto")
-        .attr("x", leftX)
-        .attr("y", bottomY + labelBelowPad + labelGap);
+            .attr("x", leftX)
+            .attr("y", bottomY + labelBelowPad + labelGap);
     });
 
     // Tooltip on hover
@@ -343,7 +332,7 @@ async function initCzechFacilitiesMap() {
         .attr("class", "map-legend")
         .attr("transform", "translate(0,0)");
 
-    const liS = 12; // legend icon size
+    const liS = 11; // legend icon size
     const liGap = 0;
 
     // First row of map legend
@@ -361,7 +350,6 @@ async function initCzechFacilitiesMap() {
         .attr("font-size", ".9rem")
         .attr("fill", "#999")
         .text("= přibližně 10 000 domácností");
-
 }
 
 initCzechFacilitiesMap();
