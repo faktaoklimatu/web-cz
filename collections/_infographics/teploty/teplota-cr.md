@@ -4,7 +4,7 @@ title:      "Průměrná roční teplota v ČR"
 slug:       "teplota-cr"
 redirect_from: "/teplota-cr"
 published:  2019-07-20
-updated:    2026-02-02
+updated:    2026-02-23
 weight:     96
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
