@@ -7,7 +7,7 @@ published:  2020-02-27
 weight:     99
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
-caption:    "Svět se od roku 1961 oteplil přibližně o 1 °C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,8 °C, většina pevniny se otepluje rychleji. K největšímu oteplení, které za posledních 60 let přesáhlo 5 °C, dochází v Severním ledovém oceánu."
+caption:    "Svět se od roku 1961 oteplil přibližně o 1,3 °C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,8 °C, většina pevniny se otepluje rychleji. K největšímu oteplení, které za posledních 60 let přesáhlo 5 °C, dochází v Severním ledovém oceánu."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "mapa-teplota-svet"
 data-our:   "https://docs.google.com/spreadsheets/d/1xD-UqmWXJYZR6bZeINyq_7P0n3R37cKYi0SS_Zbdq6k/edit?usp=sharing"
