@@ -7,10 +7,10 @@ published:  2019-07-20
 weight:     105
 tags-scopes: [ cr ]
 tags-topics: [ klima ]
-caption:    "Srovnání teplot jednotlivých měsíců dekád 1961–1970 a 2016–2025. Průměrná roční teplota se od roku 1961 zvýšila o 2,3 °C, ale oteplení se v různých měsících liší, například v květnu se teplota zvýšila průměrně o 1,2 °C. Největší rozdíl mezi teplotami byl v prosinci, lednu, březnu a únoru."
+caption:    "Srovnání teplot jednotlivých měsíců dekád 1961–1970 a 2016–2025. Největší rozdíl mezi teplotami byl v prosinci, lednu, březnu a únoru. Průměrná roční teplota se přitom od roku 1961 zvýšila o 2,3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"
-data-our:   "https://docs.google.com/spreadsheets/d/1uxIsR2OcKT1rF7cvLiT_QrezAXN63ikOIfpef7TZvMc/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1SPOVnDiXRbqmSOwyYODCDmSVSSq_Ui8nctQFV37LYSA/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data ČHMÚ", "https://intranet.chmi.cz/historicka-data/pocasi/uzemni-teploty" ] ]
 
 ---

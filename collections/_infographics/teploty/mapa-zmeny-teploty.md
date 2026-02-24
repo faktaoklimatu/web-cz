@@ -10,7 +10,7 @@ tags-topics: [ klima ]
 caption:    "Svět se od roku 1961 oteplil přibližně o 1,3 °C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,8 °C, většina pevniny se otepluje rychleji. K největšímu oteplení, které za posledních 60 let přesáhlo 5 °C, dochází v Severním ledovém oceánu."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "mapa-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/1xD-UqmWXJYZR6bZeINyq_7P0n3R37cKYi0SS_Zbdq6k/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1Dcc8kfIC3oos1YUU-SDqDt4A8UAvJKL_ID3xOezoLUs/edit?usp=sharing"
 data-orig:  [ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/maps" ] ]
 ---
 
@@ -28,5 +28,5 @@ data-orig:  [ [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/
 
 ## Zdroj dat
 
-* GISTEMP Team, _2022: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2022-10-10 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
+* GISTEMP Team, _2022: GISS Surface Temperature Analysis (GISTEMP)._ NASA Goddard Institute for Space Studies. Dataset navštíven 2026-02-02 na [data.giss.nasa.gov/gistemp](https://data.giss.nasa.gov/gistemp/).
 * Lenssen, N., G. Schmidt, J. Hansen, M. Menne, A. Persin, R. Ruedy a D. Zyss, _2019: Improvements in the GISTEMP uncertainty model._ Journal of Geophysical Research: Atmospheres, 124, č. 12, str. 6307–6326, [doi:10.1029/2018JD029522](http://dx.doi.org/10.1029/2018JD029522).

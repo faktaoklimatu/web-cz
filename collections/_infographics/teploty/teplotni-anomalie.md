@@ -7,14 +7,14 @@ redirect_from:
   - /vyvoj-teplotni-anomalie
   - /infografiky/vyvoj-teplotni-anomalie
 published:  2019-08-03
-updated:    2026-02-23
+updated:    2026-02-24
 weight:     100
 tags-scopes: [ svet ]
 tags-topics: [ klima ]
 caption:    "Planeta je nyní o přibližně 1,3 °C teplejší než v tzv. předindustriálním období, tedy v letech 1850–1900. To je však průměrná hodnota teplotní anomálie pro celou planetu – většina míst na severní polokouli je dnes oproti referenčnímu období teplejší o 2–3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "vyvoj-teplota-svet"
-data-our:   "https://docs.google.com/spreadsheets/d/1phzWCOvNKtKhstLsQdIq54pnS1jWnmTR79yrw2S0OTA/edit?usp=sharing"
+data-our:   "https://docs.google.com/spreadsheets/d/1iCGTcl6ptF2c2qRWGemNrtVLz-sV0NYhksRvHIW94MY/edit?usp=sharing"
 data-orig:
   - [ "Zdrojová data NASA GISS", "https://data.giss.nasa.gov/gistemp/" ]
 ---
