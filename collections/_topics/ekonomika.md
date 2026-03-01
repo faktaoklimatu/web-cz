@@ -73,6 +73,7 @@ subtopics:
   lead: |
     **Pokračující změna klimatu povede k obrovským ekonomickým škodám**, zvlášť pokud se nám ji nepodaří zastavit dostatečně rychle. Jaké dopady na ekonomiku lze očekávat a jak je vyčíslit?
   content:  # U nového obsahu zvaž přidání také do klimaticka-zmena>dopady.
+  - spolecenske-naklady-uhliku
   - 2006-sternova-zprava
   - 23-dopady-zmen-klimatu
 
