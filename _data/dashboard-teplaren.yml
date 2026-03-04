@@ -1,17 +1,17 @@
-timestamp: '2026-02-06'
+timestamp: '2026-03-04'
 highlights:
-- status: done
-  number: 13
-  num_households: 268985
-  ghg_share: 1.82
-- status: in-progress
-  number: 18
-  num_households: 738344
-  ghg_share: 8.54
 - status: problematic
   number: 4
   num_households: 65471
   ghg_share: 3.96
+- status: in-progress
+  number: 18
+  num_households: 738344
+  ghg_share: 8.54
+- status: done
+  number: 13
+  num_households: 268985
+  ghg_share: 1.82
 - status: not-shown
   number: 19
   num_households: 39483
@@ -1521,7 +1521,7 @@ items:
   lat: 49.26
   status: done
   status_text: Téměř bez uhlí
-  notes: Naprostou většinu mixu (98 %) tvoří biomasa, hnědé uhlí a mazut jen jako záložní zdroje. Kromě toho je v plánu rekonstrkci rozvodů (z parovodů na teplovody).
+  notes: Naprostou většinu mixu (98 %) tvoří biomasa, hnědé uhlí a mazut slouží jen jako záložní zdroje. Kromě toho je v plánu rekonstrukce rozvodů (z parovodů na teplovody).
   owner: město Strakonice
   owner_web: http://www.tst.cz/
   num_households: 7521
@@ -1820,11 +1820,11 @@ items:
   mf_subsidies_total: 3054
   mf_subsidies_per_household: 1007588
   ippc_permits:
-  - name: Parní kotel K 10 a K 11
-    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehuatx
+  - name: Výroba sulfátové buničiny a papíru ve Štětí a související činnosti
+    url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejgjbs
 mf_chp_shown_subsidies_total: 99471
 mf_chp_subsidies_total: 100317
-mf_subsidies_total: 201834
+mf_subsidies_total: 203355
 chp_shown_subsidies_total_accepted: 2159
 chp_subsidies_total_accepted: 2308
 num_households_ets2_total: 384724
