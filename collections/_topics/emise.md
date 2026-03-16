@@ -169,6 +169,7 @@ subtopics:
   - potencial-zpusobu-snizeni-emisi
   - emisni-povolenky-ets
   - emisni-povolenky-ets-2
+  - spolecenske-naklady-uhliku
   - zpoplatneni-emisi-svet
   - mitigacni-opatreni-mmf
   - fit-for-55
