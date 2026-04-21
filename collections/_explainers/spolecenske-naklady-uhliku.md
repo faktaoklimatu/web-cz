@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Kolik stojí vypouštění emisí skleníkových plynů?"
 slug:        "spolecenske-naklady-uhliku"
-published:   2026-04-12
+published:   2026-04-21
 authors:
   - ids: ["tom-protivinsky", "katerina-kolouchova"]
   - id: "marcel-otruba"
@@ -177,7 +177,7 @@ Sektorální modely zahrnují klimatické škody v následujících oblastech:
 * zemědělství – dopad na úrodu šesti nejrozšířenějších plodin,
 * pobřežní oblasti – náklady způsobené záplavami pobřežních oblastí, poškozením infrastruktury, související migrací a potřebou adaptačních opatření.
 
-Z těchto pěti oblastí je více než polovina společenských nákladů způsobena dopadem na lidské zdraví[statisticky-zivot8], následně také dopady na zemědělství a produktivitu práce. Náklady na energie se příliš nezvýší, neboť zároveň dojde k úsporám v zimních měsících. Škody v pobřežních oblastech jsou poměrně nízké, protože model předpokládá optimální adaptaci daných oblastí na dopady změny klimatu.
+Z těchto pěti oblastí je více než polovina společenských nákladů způsobena dopadem na lidské zdraví[statisticky-zivot], následně také dopady na zemědělství a produktivitu práce. Náklady na energie se příliš nezvýší, neboť zároveň dojde k úsporám v zimních měsících. Škody v pobřežních oblastech jsou poměrně nízké, protože model předpokládá optimální adaptaci daných oblastí na dopady změny klimatu.
 
 Model nezahrnuje celou řadu dalších očekávaných škod – například náklady související se zajištěním pitné vody, úbytkem biodiverzity, změnami v ekosystémových službách, v lesnictví a chovu dobytka, dopady na lidské zdraví spojené s rozšířením infekčních chorob, dopady acidifikace oceánů nebo v důsledku bodů zlomu.[^epa-oblasti]
 

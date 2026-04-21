@@ -39,7 +39,7 @@ slug: index
     <div class="row">
       <div class="col-md-6">
         <p>
-        Dekarbonizace v dalších dekádách vyžaduje vysoké investiční náklady do nízkoemisních technologií. Avšak další vypouštění emisí skleníkových plynů má také svoji cenu, jen mnohem méně zjevnou. Projevuje se v budoucnu třeba častějšími extrémy počasí, změnami v zemědělské produkci nebo dopady na lidské zdraví. Její vyčíslení se označuje jako <strong>společenské náklady uhlíku.</strong>
+        Dekarbonizace v dalších dekádách vyžaduje vysoké investiční náklady do nízkoemisních technologií. Avšak další vypouštění emisí skleníkových plynů má také svoji cenu, jen mnohem méně zjevnou. Projevuje se třeba častějšími extrémy počasí, změnami v zemědělské produkci nebo dopady na lidské zdraví. Její vyčíslení se označuje jako <strong>společenské náklady uhlíku.</strong>
         </p>
         <p>
         Ty jsou důležitým vstupem k současné diskuzi o emisních povolenkách. Umožňuje ptát se: Neměla by být cena povolenky blíže k nákladům, které vypuštění každé tuny emisí způsobí?
