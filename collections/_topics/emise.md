@@ -166,6 +166,7 @@ subtopics:
   lead: |
     Podíl jednotlivých sektorů na emisích skleníkových plynů poskytuje užitečné vodítko pro zaměření mitigačních snah. Největších emisních úspor může Česko dosáhnout **proměnou** svého **energetického mixu**. Jednotlivci však také mohou přispět ke snížení emisí, například **snížením energetické náročnosti** svých domácností nebo **omezením automobilové dopravy**, případně také **nižší konzumací masa a mléčných výrobků**.
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a ekonomika>opatreni.
+  - 2026-opatreni-dekarbonizace-domacnosti
   - potencial-zpusobu-snizeni-emisi
   - emisni-povolenky-ets
   - emisni-povolenky-ets-2
