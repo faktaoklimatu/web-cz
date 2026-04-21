@@ -32,12 +32,14 @@ Hodnota společenských nákladů uhlíku je užitečná pro analýzu přínosů
 ## Co ovlivňuje výši společenských nákladů uhlíku?
 
 Hodnota SCC je výsledkem modelování s mnoha vstupy. Konečnou výši přitom ovlivňují především:
+
 * **klimatické dopady a škody** zahrnuté do modelu a jejich ekonomický dopad,
 * **diskontní míra**, která vyjadřuje, jakou hodnotu dnes přikládáme budoucnosti.
 
 ### Klimatické dopady a škody
 
 SCC v závislosti na použitém modelu může zahrnovat například škody plynoucí ze:
+
 * ztrát na majetku a infrastruktuře v důsledku extrémních jevů (např. povodní nebo požárů),
 * dopadů na lidské zdraví (např. úmrtnost a nemocnost spojená s vlnami veder),
 * změn zemědělské produkce a dostupnosti vody,
@@ -77,6 +79,7 @@ Odhady společenských nákladů uhlíku se proto obvykle počítají pomocí si
 %}
 
 Ideální výše diskontní míry je předmětem akademických diskuzí a v praxi se lze setkat s různými hodnotami:
+
 * **Nízká diskontní míra**. Předpokládá, že budoucí generace mají skoro stejnou váhu jako generace současná. Například [Sternova zpráva](https://faktaoklimatu.cz/studie/2006-sternova-zprava) používá míru 1,4 %. Takový přístup vede k vyšším odhadům současné hodnoty budoucích klimatických škod a podporuje rychlejší klimatickou akci.
 * **Vysoká diskontní míra**. Odráží silnější preferenci současnosti a předpoklad, že budoucí společnost bude výrazně bohatší, takže škody pro ni budou představovat relativně menší újmu z hlediska blahobytu. Zastáncem vyšší diskontní míry (kolem 4 %) je například americký ekonom William Nordhaus. Vyšší diskontní míra však může vést k odkládání investic do dekarbonizace, protože snižuje dnešní hodnotu budoucích škod.
 
@@ -103,7 +106,6 @@ Globální dopady změny klimatu lze vyjádřit také jako škody v poměru k c
 **Strukturální modely** (sektorální modely použité v odhadu EPA) vychází z popisu mechanismů, jak oteplení ovlivňuje jednotlivé sektory (např. zemědělství, zdraví, energetiku), a tyto dílčí dopady následně agregují do celkového dopadu na ekonomiku. Modely pro rok 2100 odhadují škody v hodnotě **méně než 3 % HDP při oteplení o 2 °C** a přibližně 5 % HDP při oteplení o 4 °C ve srovnání s hypotetickým scénářem bez změny klimatu.
 
 Oproti tomu **statistické modely** odvozují dopady z historických dat – sledují, jak se ekonomická aktivita měnila v letech s odlišnými teplotami a srážkami, a na základě toho vyjadřují, jaké dopady lze očekávat v budoucnu. Pro rok 2100 udávají škody ve výši **více než 10 % HDP při oteplení o 2 °C** a až 20–30 % HDP při oteplení o 4 °C. Takové modely se dosud k odhadům společenských nákladů uhlíku nepoužívají, ačkoliv by vedly k násobně vyšším odhadům nákladů. Zde uváděný odhad společenských nákladů uhlíku 260 $/t CO<sub>2 </sub>podle EPA je vhodné považovat za velice konzervativní, který představuje pouze spodní hranici budoucích ekonomických škod.
-
 
 Srovnání výsledků jednotlivých modelů nabízí například Šestá hodnotící zpráva IPCC, WG II, s. [2497](https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Chapter16.pdf).
 
@@ -163,10 +165,12 @@ Při nižší diskontní míře roste hodnota přisuzovaná budoucím škodám, 
 Změna klimatu je pro posouzení dopadů **modelována pouze jako změna průměrné povrchové teploty a vzestup mořské hladiny**. Škody, které jsou způsobené jinými projevy klimatické změny – například extrémními projevy počasí (povodně), změnou srážek nebo acidifikací oceánů – v modelu vůbec nejsou zahrnuté.[^epa-limity]
 
 Započítané škody jsou v modelu EPA reprezentovány prostřednictvím **tří různých modelů dopadů a škod** a výsledný odhad společenských nákladů uhlíku odpovídá jejich průměru.
+
 * První a druhý model odhadují škody v jednotlivých sektorech (jde o tzv. sektorální strukturální modely) na národní a regionální úrovni.[^epa-modely]
 * Třetí model vychází z metaanalýzy odborných studií.
 
 Sektorální modely zahrnují klimatické škody v následujících oblastech:
+
 * lidské zdraví – úmrtí v důsledku vysokých či nízkých teplot,
 * náklady na energie – výdaje na elektřinu a jiná paliva,
 * produktivita práce – snížená produktivita práce v důsledku vysokých teplot,
