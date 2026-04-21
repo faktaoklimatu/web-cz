@@ -74,7 +74,7 @@ Odhady společenských nákladů uhlíku se proto obvykle počítají pomocí si
 
 {% include preview-box.html
     title="Sternova zpráva"
-    text="Jedna z nejznámějších analýz ekonomických dopadů změny klimatu."
+    text="Jedna z nejznámějších analýz ekonomických dopadů změny klimatu, která vznikla v letech 2005–2006 na zakázku britské vlády."
     slug="2006-sternova-zprava"
 %}
 
