@@ -81,8 +81,9 @@
       const high  = sens.length ? Math.max(...sens.map(s => s.maxNpv)) : result.npv;
 
       return {
-        npv:      { value: result.npv, low, high },
-        co2Saved: result.emissionSavings ? -result.emissionSavings.totalT : null,
+        npv:         { value: result.npv, low, high },
+        co2Saved:    result.emissionSavings ? -result.emissionSavings.totalT : null,
+        sensitivity: sens,
       };
     } catch (e) {
       console.warn('CostsBenefits.calculate error for measure id', measure.id, ':', e.message);
@@ -140,13 +141,12 @@
   }
 
   // ── Summary chart ────────────────────────────────────────────────────────
-  const SUMMARY_ROW_H  = 36;
+  const SUMMARY_ROW_H  = 40;
   const SUMMARY_LABEL_W = 260;
   const SUMMARY_MARGIN  = { top: 28, right: 16, bottom: 36 };
 
-  // Color scheme: buildings teal family, transport orange family
-  const COLOR_BUILDINGS = '#1a7a85';
-  const COLOR_TRANSPORT = '#c05a1a';
+  const COLOR_BUILDINGS = '#2860b4';
+  const COLOR_TRANSPORT = '#6b4fa0';
 
   function getSummaryRows(section) {
     const isBuildings = section === 'buildings';
@@ -169,7 +169,9 @@
         if (!calc) return null;
         return { label: m[catField], npv: calc.npv };
       }).filter(Boolean);
-      return { name, dots };
+      const baselines = [...new Set(entries.map(m => m.measure_baseline).filter(Boolean))];
+      const baseline = baselines.length ? baselines.join(', ') : null;
+      return { name, baseline, dots };
     }).filter(r => r.dots.length > 0);
   }
 
@@ -186,7 +188,6 @@
 
     if (!sections.length) { container.hidden = true; return; }
 
-    const totalRows = sections.reduce((n, s) => n + s.rows.length, 0);
     const sectionHeaderH = 22;
     const totalH = sections.reduce((h, s) =>
       h + sectionHeaderH + s.rows.length * SUMMARY_ROW_H, 0
@@ -194,6 +195,15 @@
 
     const totalW = container.clientWidth || 640;
     const chartW = Math.max(totalW - SUMMARY_LABEL_W - SUMMARY_MARGIN.right, 120);
+
+    // Domain based only on actual dot values (not sensitivity extremes)
+    const dotVals = sections.flatMap(s => s.rows.flatMap(r => r.dots.map(d => d.npv.value)));
+    const [dMin, dMax] = d3.extent(dotVals);
+    const pad = (dMax - dMin) * 0.12 || 50000;
+    const summaryDomain = d3.scaleLinear()
+      .domain([Math.min(dMin - pad, -pad), Math.max(dMax + pad, pad)])
+      .nice()
+      .domain();
 
     d3.select(container).selectAll('*').remove();
 
@@ -204,7 +214,7 @@
       .attr('role', 'img');
 
     const xScale = d3.scaleLinear()
-      .domain(globalXDomain)
+      .domain(summaryDomain)
       .range([0, chartW]);
 
     const chart = svg.append('g').attr('transform', `translate(${SUMMARY_LABEL_W},0)`);
@@ -238,32 +248,27 @@
       for (const row of section.rows) {
         const midY = currentY + SUMMARY_ROW_H / 2;
 
-        // Measure label
+        // Measure label + baseline
         svg.append('text')
-          .attr('x', 8).attr('y', midY + 4)
+          .attr('x', 8).attr('y', row.baseline ? midY - 1 : midY + 4)
           .attr('font-size', '11px').attr('fill', '#444')
           .text(row.name);
-
-        // Dots for each context
-        const dotColor = section.color;
-
-        // Uncertainty bars first (so dots render on top)
-        for (const dot of row.dots) {
-          chart.append('line')
-            .attr('x1', xScale(dot.npv.low)).attr('x2', xScale(dot.npv.high))
-            .attr('y1', midY).attr('y2', midY)
-            .attr('stroke', dotColor).attr('stroke-width', 4)
-            .attr('stroke-linecap', 'round').attr('opacity', 0.15);
+        if (row.baseline) {
+          svg.append('text')
+            .attr('x', 8).attr('y', midY + 13)
+            .attr('font-size', '10px').attr('fill', '#aaa')
+            .text('vs. ' + row.baseline);
         }
 
         // Dots
         for (const dot of row.dots) {
-          const color = dot.npv.value >= 0 ? COLOR_BUILDINGS : COLOR_TRANSPORT;
-          chart.append('circle')
+          const g = chart.append('g');
+          if (dot.label) g.append('title').text(fmtCZK(dot.npv.value) + '\n' + dot.label);
+          g.append('circle')
             .attr('cx', xScale(dot.npv.value)).attr('cy', midY)
-            .attr('r', 4).attr('fill', color)
+            .attr('r', 6).attr('fill', section.color)
             .attr('stroke', 'white').attr('stroke-width', 1.5)
-            .attr('opacity', 0.85);
+            .attr('opacity', dot.npv.value >= 0 ? 0.85 : 0.35);
         }
 
         currentY += SUMMARY_ROW_H;
@@ -288,13 +293,13 @@
   // ── Chart rendering ──────────────────────────────────────────────────────
   const ROW_H  = 54;
   const LABEL_W = 200;
-  const CO2_W   = 110;
+  const CO2_W   = 150;
   const MARGIN  = { top: 28, right: 16, bottom: 36 };
 
   // NPV > 0: measure saves money vs baseline (economically favorable)
   // NPV < 0: measure costs extra vs baseline
-  const COLOR_FAVORABLE = '#1a7a85';
-  const COLOR_COSTLY    = '#c05a1a';
+  const COLOR_FAVORABLE = '#2e7d32';
+  const COLOR_COSTLY    = '#c0392b';
 
   function renderAll() {
     const summaryEl = document.getElementById('summary-chart');
@@ -324,10 +329,11 @@
           baselineName: m.measure_baseline || null,
           npv:          calc.npv,
           co2Saved:     calc.co2Saved,
+          sensitivity:  calc.sensitivity,
         };
       })
       .filter(Boolean)
-      .sort((a, b) => a.npv.value - b.npv.value);
+      .sort((a, b) => b.npv.value - a.npv.value);
 
     if (!rows.length) { container.hidden = true; return; }
 
@@ -369,6 +375,13 @@
       .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
     // ── Rows ──────────────────────────────────────────────────────────────
+    const maxAbsCo2 = Math.max(...rows.map(r => Math.abs(r.co2Saved ?? 0)));
+
+    // Pick a round unit so the largest value fills ~8 squares
+    const rawUnit   = maxAbsCo2 / 8;
+    const magnitude = Math.pow(10, Math.floor(Math.log10(Math.max(rawUnit, 1))));
+    const co2Unit   = ([1, 2, 5, 10].find(f => f * magnitude >= rawUnit) || 10) * magnitude;
+
     rows.forEach((row, i) => {
       const gy    = MARGIN.top + i * ROW_H;
       const midY  = gy + ROW_H / 2;
@@ -391,19 +404,31 @@
       }
 
       // Uncertainty bar (sensitivity range)
-      chart.append('line')
+      const dominantParam = row.sensitivity && row.sensitivity.length
+        ? row.sensitivity.reduce((best, s) =>
+            (s.maxNpv - s.minNpv) > (best.maxNpv - best.minNpv) ? s : best
+          )
+        : null;
+      const tooltipText = dominantParam
+        ? `Největší vliv na rozsah nejistoty: ${dominantParam.param}`
+        : null;
+
+      const bandG = chart.append('g').attr('class', 'uncertainty-band');
+      if (tooltipText) bandG.append('title').text(tooltipText);
+
+      bandG.append('line')
         .attr('x1', xScale(row.npv.low)).attr('x2', xScale(row.npv.high))
         .attr('y1', midY).attr('y2', midY)
-        .attr('stroke', color).attr('stroke-width', 5)
-        .attr('stroke-linecap', 'round').attr('opacity', 0.2);
+        .attr('stroke', '#999').attr('stroke-width', 5)
+        .attr('stroke-linecap', 'round').attr('opacity', 0.35);
 
-      // End-cap ticks
-      [row.npv.low, row.npv.high].forEach(v => {
-        chart.append('line')
-          .attr('x1', xScale(v)).attr('x2', xScale(v))
-          .attr('y1', midY - 6).attr('y2', midY + 6)
-          .attr('stroke', color).attr('stroke-width', 1.5).attr('opacity', 0.45);
-      });
+      // Invisible wider hit area so the tooltip is easy to trigger
+      bandG.append('rect')
+        .attr('x', xScale(row.npv.low))
+        .attr('y', midY - 8)
+        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
+        .attr('height', 16)
+        .attr('fill', 'transparent');
 
       // Central dot
       chart.append('circle')
@@ -411,20 +436,32 @@
         .attr('r', 6).attr('fill', color)
         .attr('stroke', 'white').attr('stroke-width', 2);
 
-      // NPV value label (swap sides when near right edge)
-      const dotX      = xScale(row.npv.value);
-      const labelLeft = dotX + 11 > chartW - 80;
+      // NPV value label (above the dot)
+      const dotX = xScale(row.npv.value);
       chart.append('text')
-        .attr('x', labelLeft ? dotX - 11 : dotX + 11)
-        .attr('y', midY + 4)
-        .attr('text-anchor', labelLeft ? 'end' : 'start')
-        .attr('font-size', '11px').attr('fill', color)
+        .attr('x', dotX)
+        .attr('y', midY - 11)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '13px').attr('fill', color)
         .text(fmtCZK(row.npv.value));
 
       // CO₂ saved column
-      const co2Color = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : '#3a7a50';
+      const co2Color  = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : '#3a7a50';
+      const SQ = 7, SQ_STEP = 9;
+      const numSquares = row.co2Saved !== null
+        ? Math.round(Math.abs(row.co2Saved) / co2Unit)
+        : 0;
+      const sqStartX = chartW + 8;
+      for (let s = 0; s < numSquares; s++) {
+        chart.append('rect')
+          .attr('x', sqStartX + s * SQ_STEP)
+          .attr('y', midY - SQ / 2)
+          .attr('width', SQ).attr('height', SQ)
+          .attr('fill', co2Color).attr('opacity', 0.7);
+      }
+      const textX = sqStartX + Math.max(numSquares, 1) * SQ_STEP + 2;
       chart.append('text')
-        .attr('x', chartW + 8).attr('y', midY + 4)
+        .attr('x', textX).attr('y', midY + 4)
         .attr('font-size', '11px').attr('fill', co2Color)
         .text(fmtCO2(row.co2Saved));
     });
