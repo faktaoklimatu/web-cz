@@ -16,6 +16,8 @@
   // Computed once at init across all measures, all sensitivity params.
   // Fixed so the scale never shifts when controls change.
   let globalXDomain = null;
+  let globalBandDomain = null;          // buildings
+  let globalBandDomainTransport = null; // transport
 
   function computeGlobalDomain() {
     const allMeasures = [
@@ -143,7 +145,7 @@
   // ── Summary chart ────────────────────────────────────────────────────────
   const SUMMARY_ROW_H  = 40;
   const SUMMARY_LABEL_W = 260;
-  const SUMMARY_MARGIN  = { top: 28, right: 16, bottom: 36 };
+  const SUMMARY_MARGIN  = { top: 48, right: 16, bottom: 36 };
 
   const COLOR_BUILDINGS = '#2860b4';
   const COLOR_TRANSPORT = '#6b4fa0';
@@ -234,6 +236,19 @@
       .attr('y1', SUMMARY_MARGIN.top - 4).attr('y2', totalH - SUMMARY_MARGIN.bottom)
       .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
+    // Half-labels
+    const halfLabelY = headerY + 18;
+    chart.append('text')
+      .attr('x', z / 2).attr('y', halfLabelY)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '10px').attr('font-style', 'italic').attr('fill', '#bbb')
+      .text('Fosilní opatření je výhodnější');
+    chart.append('text')
+      .attr('x', z + (chartW - z) / 2).attr('y', halfLabelY)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '10px').attr('font-style', 'italic').attr('fill', '#bbb')
+      .text('Dekarbonizační opatření je výhodnější');
+
     let currentY = SUMMARY_MARGIN.top;
 
     for (const section of sections) {
@@ -298,8 +313,27 @@
 
   // NPV > 0: measure saves money vs baseline (economically favorable)
   // NPV < 0: measure costs extra vs baseline
-  const COLOR_FAVORABLE = '#2e7d32';
+  const COLOR_FAVORABLE = '#1a7a85';
   const COLOR_COSTLY    = '#c0392b';
+
+  function computeBandDomain(measures) {
+    const allMeasures = measures.filter(m => m.measure_baseline_id || m.measure_baseline);
+
+    const vals = [];
+    for (const m of allMeasures) {
+      const calc = computeRow(m);
+      if (!calc) continue;
+      vals.push(calc.npv.low, calc.npv.high, calc.npv.value);
+    }
+
+    if (!vals.length) return [-500000, 500000];
+    const [vMin, vMax] = d3.extent(vals);
+    const pad = (vMax - vMin) * 0.08 || 50000;
+    return d3.scaleLinear()
+      .domain([Math.min(vMin - pad, -pad), Math.max(vMax + pad, pad)])
+      .nice()
+      .domain();
+  }
 
   function renderAll() {
     const summaryEl = document.getElementById('summary-chart');
@@ -349,9 +383,9 @@
       .attr('height', totalH)
       .attr('role', 'img');
 
-    // ── X scale (fixed global domain) ────────────────────────────────────
+    const bandDomain = isBuildings ? globalBandDomain : globalBandDomainTransport;
     const xScale = d3.scaleLinear()
-      .domain(globalXDomain || [-500000, 500000])
+      .domain(bandDomain || [-500000, 500000])
       .range([0, chartW]);
 
     const chart = svg.append('g').attr('transform', `translate(${LABEL_W},0)`);
@@ -360,12 +394,12 @@
     const headerY = 16;
     svg.append('text').attr('x', 4).attr('y', headerY)
       .attr('class', 'chart-col-header').text('Kontext');
-    chart.append('text').attr('x', chartW / 2).attr('y', headerY)
+    chart.append('text').attr('x', xScale(0)).attr('y', headerY)
       .attr('text-anchor', 'middle').attr('class', 'chart-col-header')
       .text('Rozdíl NPV oproti základní variantě');
-    chart.append('text').attr('x', chartW + CO2_W / 2 + 4).attr('y', headerY)
-      .attr('text-anchor', 'middle').attr('class', 'chart-col-header')
-      .text('Klimatický přínos');
+    chart.append('text').attr('x', chartW + 8).attr('y', headerY)
+      .attr('text-anchor', 'start').attr('class', 'chart-col-header')
+      .text('Úspora emisí');
 
     // ── Zero line ─────────────────────────────────────────────────────────
     const z = xScale(0);
@@ -446,7 +480,7 @@
         .text(fmtCZK(row.npv.value));
 
       // CO₂ saved column
-      const co2Color  = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : '#3a7a50';
+      const co2Color  = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
       const SQ = 7, SQ_STEP = 9;
       const numSquares = row.co2Saved !== null
         ? Math.round(Math.abs(row.co2Saved) / co2Unit)
@@ -483,7 +517,9 @@
 
   // ── Init ─────────────────────────────────────────────────────────────────
   function init() {
-    globalXDomain = computeGlobalDomain();
+    globalXDomain         = computeGlobalDomain();
+    globalBandDomain          = computeBandDomain(data.buildings_measures || []);
+    globalBandDomainTransport = computeBandDomain(data.transport_measures  || []);
     setupControls();
     renderAll();
     window.addEventListener('resize', renderAll);

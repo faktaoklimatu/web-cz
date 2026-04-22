@@ -232,8 +232,8 @@ buildings_measures:
   demand_heat_measure_mwh: 10
   lifetime: 40
   energy_savings: 0.0
-  capex_technology_czk: 500000
-  capex_installation_czk: 400000
+  capex_technology_czk: 62500
+  capex_installation_czk: 50000
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 1500
@@ -283,9 +283,9 @@ buildings_measures:
   demand_heat_measure_mwh: 8
   lifetime: 15
   energy_savings: 0.0
-  capex_technology_czk: 1350000
-  capex_installation_czk: 525000
-  capex_preparation_czk: 325000
+  capex_technology_czk: 90000
+  capex_installation_czk: 35000
+  capex_preparation_czk: 21667
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 300
 - id: 18
@@ -300,8 +300,8 @@ buildings_measures:
   demand_heat_measure_mwh: 8
   lifetime: 40
   energy_savings: 0.0
-  capex_technology_czk: 750000
-  capex_installation_czk: 600000
+  capex_technology_czk: 50000
+  capex_installation_czk: 40000
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 1200
@@ -790,8 +790,8 @@ buildings_measures:
   demand_heat_measure_mwh: 5
   lifetime: 40
   energy_savings: 0.5
-  capex_technology_czk: 1008000
-  capex_installation_czk: 792000
+  capex_technology_czk: 126000
+  capex_installation_czk: 99000
   capex_preparation_czk: 0
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 2175
@@ -828,9 +828,9 @@ buildings_measures:
   demand_heat_measure_mwh: 3
   lifetime: 15
   energy_savings: 0.0
-  capex_technology_czk: 1500000
-  capex_installation_czk: 600000
-  capex_preparation_czk: 400000
+  capex_technology_czk: 100000
+  capex_installation_czk: 40000
+  capex_preparation_czk: 26667
   opex_maintenance_czk: 2300
   emissions_embedded_kg: 800
   measure_baseline: Plynová kotelna
@@ -848,8 +848,8 @@ buildings_measures:
   demand_heat_measure_mwh: 7
   lifetime: 25
   energy_savings: 0.15
-  capex_technology_czk: 900000
-  capex_installation_czk: 300000
+  capex_technology_czk: 60000
+  capex_installation_czk: 20000
   capex_preparation_czk: 0
   opex_maintenance_czk: 200
   emissions_embedded_kg: 200
@@ -867,8 +867,8 @@ buildings_measures:
   demand_heat_measure_mwh: 4
   lifetime: 40
   energy_savings: 0.5
-  capex_technology_czk: 1515000
-  capex_installation_czk: 1185000
+  capex_technology_czk: 101000
+  capex_installation_czk: 79000
   capex_preparation_czk: 0
   opex_maintenance_czk: 600
   emissions_embedded_kg: 1740

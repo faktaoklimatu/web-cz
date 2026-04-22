@@ -183,7 +183,7 @@ extra-scripts:
 
     <div class="control-group">
       <div class="control-head">
-        <span class="control-label">Diskontní sazba</span>
+        <span class="control-label">Diskontní míra</span>
         <span class="control-value" id="discount-rate-value">3&thinsp;%</span>
       </div>
       <div class="slider-with-ticks">
@@ -209,9 +209,9 @@ extra-scripts:
     <div class="control-group control-group--select">
       <label class="control-label" for="fuel-scenario-select">Scénář cen energií</label>
       <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
-        <option value="CP">CP – centrální projekce</option>
-        <option value="NZ">NZ – net zero</option>
-        <option value="CP_EC">CP_EC – energetická krize</option>
+        <option value="CP">Současné politiky</option>
+        <option value="NZ">Net-zero</option>
+        <option value="CP_EC">Energetická krize</option>
       </select>
     </div>
 
