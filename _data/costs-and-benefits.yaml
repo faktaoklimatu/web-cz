@@ -878,46 +878,61 @@ transport_measures:
 - id: 49
   transport_category: Nové malé
   measure_name: Malé auto na benzín
+  demand_energy_per_100km: 6.5
   mileage: 15000
   fuel: Petrol
   lifetime: 15
+  capex_czk: 490000
   opex_maintenance_czk: 9000
+  opex_insurance_czk: 16000
   emissions_embedded_kg: 6000
   note: Fabia – 6,5 l, 15 000 km
 - id: 50
   transport_category: Nové velké
   measure_name: Velké auto na naftu
+  demand_energy_per_100km: 8.0
   mileage: 20000
   fuel: Diesel
   lifetime: 15
+  capex_czk: 1100000
   opex_maintenance_czk: 15000
+  opex_insurance_czk: 24000
   emissions_embedded_kg: 8500
   note: Kodiaq – 8 l, 20 000 km
 - id: 51
   transport_category: Ojeté malé
   measure_name: Malé auto na benzín
+  demand_energy_per_100km: 7.5
   mileage: 15000
   fuel: Petrol
   lifetime: 7
+  capex_czk: 200000
   opex_maintenance_czk: 12000
+  opex_insurance_czk: 7000
   emissions_embedded_kg: 2800
   note: Fabia – 7,5 l, 15 000 km
 - id: 52
   transport_category: Ojeté velké
   measure_name: Velké auto na naftu
+  demand_energy_per_100km: 8.5
   mileage: 20000
   fuel: Diesel
   lifetime: 7
+  capex_czk: 530000
   opex_maintenance_czk: 15000
+  opex_insurance_czk: 10000
   emissions_embedded_kg: 2800
   note: Kodiaq – 8,5 l, 20 000 km
 - id: 53
   transport_category: Nové malé
   measure_name: Malý elektromobil
+  demand_energy_per_100km: 0.015
   mileage: 15000
   fuel: Electricity
   lifetime: 15
+  capex_czk: 650000
   opex_maintenance_czk: 7000
+  opex_insurance_czk: 18000
   emissions_embedded_kg: 10000
   measure_baseline: Malé auto na benzín
   note: Elektromobil
@@ -925,10 +940,13 @@ transport_measures:
 - id: 54
   transport_category: Nové malé
   measure_name: Malý hybrid
+  demand_energy_per_100km: 4.5
   mileage: 15000
   fuel: Petrol
   lifetime: 15
+  capex_czk: 600000
   opex_maintenance_czk: 9000
+  opex_insurance_czk: 16000
   emissions_embedded_kg: 7000
   measure_baseline: Malé auto na benzín
   note: Hybrid – 4,5 l
@@ -936,10 +954,13 @@ transport_measures:
 - id: 55
   transport_category: Nové velké
   measure_name: Velký elektromobil
+  demand_energy_per_100km: 0.025
   mileage: 20000
   fuel: Electricity
   lifetime: 15
+  capex_czk: 1130000
   opex_maintenance_czk: 8500
+  opex_insurance_czk: 28000
   emissions_embedded_kg: 15000
   measure_baseline: Velké auto na naftu
   note: Elektromobil
@@ -947,10 +968,13 @@ transport_measures:
 - id: 56
   transport_category: Nové velké
   measure_name: Velký hybrid
+  demand_energy_per_100km: 6.5
   mileage: 20000
   fuel: Petrol
   lifetime: 15
+  capex_czk: 1000000
   opex_maintenance_czk: 14500
+  opex_insurance_czk: 26000
   emissions_embedded_kg: 9500
   measure_baseline: Velké auto na naftu
   note: Hybrid – 6,5 l
@@ -958,10 +982,13 @@ transport_measures:
 - id: 57
   transport_category: Ojeté malé
   measure_name: Malý elektromobil
+  demand_energy_per_100km: 0.017
   mileage: 15000
   fuel: Electricity
   lifetime: 7
+  capex_czk: 280000
   opex_maintenance_czk: 9000
+  opex_insurance_czk: 8000
   emissions_embedded_kg: 4667
   measure_baseline: Malé auto na benzín
   note: Elektromobil
@@ -969,10 +996,13 @@ transport_measures:
 - id: 58
   transport_category: Ojeté malé
   measure_name: Malý hybrid
+  demand_energy_per_100km: 5.5
   mileage: 15000
   fuel: Petrol
   lifetime: 7
+  capex_czk: 350000
   opex_maintenance_czk: 15000
+  opex_insurance_czk: 7000
   emissions_embedded_kg: 3267
   measure_baseline: Malé auto na benzín
   note: Hybrid – 5,5 l
@@ -980,10 +1010,13 @@ transport_measures:
 - id: 59
   transport_category: Ojeté velké
   measure_name: Velký elektromobil
+  demand_energy_per_100km: 0.028
   mileage: 20000
   fuel: Electricity
   lifetime: 7
+  capex_czk: 480000
   opex_maintenance_czk: 11000
+  opex_insurance_czk: 11000
   emissions_embedded_kg: 7000
   measure_baseline: Velké auto na naftu
   note: Elektromobil
@@ -991,10 +1024,13 @@ transport_measures:
 - id: 60
   transport_category: Ojeté velké
   measure_name: Velký hybrid
+  demand_energy_per_100km: 7.0
   mileage: 20000
   fuel: Petrol
   lifetime: 7
+  capex_czk: 500000
   opex_maintenance_czk: 17500
+  opex_insurance_czk: 10000
   emissions_embedded_kg: 4433
   measure_baseline: Velké auto na naftu
   note: Hybrid – 7 l
@@ -1025,11 +1061,11 @@ carbon_cost_scenarios:
 - carbon_price_scenario: 200 € – skutečná cena uhlíku
   carbon_price_eur: 200
 discount_rate_scenarios:
-- discount_rate_scenario: 0 % — peníze by jinak ležely na běžném účtu / bezúročná půjčka
+- discount_rate_scenario: 0 % — bezúročná půjčka
   discount_rate: 0.0
-- discount_rate_scenario: 3 % — peníze by byly na spořicím účtu / levný úvěr
+- discount_rate_scenario: 3 % — výhodný úvěr / hypotéka
   discount_rate: 0.03
-- discount_rate_scenario: 7 % — peníze by byly v akciích / drahý spotřebitelský úvěr
+- discount_rate_scenario: 7 % — výnos akcií / podnikatelský úvěr
   discount_rate: 0.07
 fuel_scenarios:
 - scenario: CP
