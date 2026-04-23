@@ -57,7 +57,7 @@ extra-scripts:
 }
 
 .control-label {
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -65,7 +65,7 @@ extra-scripts:
 }
 
 .control-value {
-  font-size: 12px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #1a7a85;
 }
@@ -105,7 +105,7 @@ extra-scripts:
   margin-bottom: 1px;
 }
 .tick-text {
-  font-size: 9px;
+  font-size: 0.7rem;
   text-align: center;
   color: #888;
   line-height: 1.2;
@@ -114,7 +114,7 @@ extra-scripts:
 .tick-text small {
   display: block;
   color: #bbb;
-  font-size: 8px;
+  font-size: 0.625rem;
 }
 
 /* ── Chart ─────────────────────────────────────────────────────────────────── */
@@ -125,7 +125,7 @@ extra-scripts:
 .measure-chart svg { display: block; }
 
 .chart-col-header {
-  font-size: 10px;
+  font-size: 11px;
   fill: #999;
   font-weight: 600;
   text-transform: uppercase;
@@ -134,7 +134,7 @@ extra-scripts:
 
 .chart-axis path,
 .chart-axis line { stroke: #ddd; }
-.chart-axis text  { font-size: 10px; fill: #888; }
+.chart-axis text  { font-size: 12px; fill: #888; }
 </style>
 
 {% assign data = site.data["costs-and-benefits"] %}

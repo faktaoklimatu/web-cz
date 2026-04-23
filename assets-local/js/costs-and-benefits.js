@@ -13,11 +13,15 @@
   };
 
   // ── Global x-axis domain ─────────────────────────────────────────────────
-  // Computed once at init across all measures, all sensitivity params.
+  // Computed once at init across all measures × all parameter combinations.
   // Fixed so the scale never shifts when controls change.
   let globalXDomain = null;
-  let globalBandDomain = null;          // buildings
-  let globalBandDomainTransport = null; // transport
+
+  // ── Fixed section order ───────────────────────────────────────────────────
+  // Computed once at init using default params; never changes (dynamic
+  // reordering of H2 sections would be disorienting while scrolling).
+  let fixedBuildingOrder = null;
+  let fixedTransportOrder = null;
 
   function computeGlobalDomain() {
     const allMeasures = [
@@ -26,8 +30,6 @@
     ].filter(m => m.measure_baseline_id || m.measure_baseline);
 
     const vals = [];
-
-    // Sample across boundary parameter values to get a wide domain.
     const carbonPrices  = [0, 60, 200];
     const discountRates = [0, 0.03, 0.07];
     const scenarios     = ['CP', 'NZ', 'CP_EC'];
@@ -45,29 +47,22 @@
                 priceScenario:  sc,
               });
               vals.push(result.npv);
-              const sens = result.sensitivity || [];
-              for (const s of sens) {
-                vals.push(s.minNpv, s.maxNpv);
-              }
             } catch (_) { /* skip */ }
           }
         }
       }
     }
-
     if (!vals.length) return [-500000, 500000];
 
     const [vMin, vMax] = d3.extent(vals);
-    const pad = (vMax - vMin) * 0.08 || 50000;
     return d3.scaleLinear()
-      .domain([Math.min(vMin - pad, -pad), Math.max(vMax + pad, pad)])
+      .domain([Math.min(vMin, 0), Math.max(vMax, 0)])
       .nice()
       .domain();
   }
 
   // ── Calculation ──────────────────────────────────────────────────────────
-  // Returns { npv: { value, low, high }, co2Saved } or null on error.
-  // Uncertainty range = overall min/max NPV across all sensitivity parameters.
+  // Returns { npv: { value, low, high }, co2Saved, sensitivity } or null.
   function computeRow(measure) {
     try {
       const result = CostsBenefits.calculate({
@@ -77,11 +72,9 @@
         carbonPriceEur: state.carbonPrice,
         priceScenario:  state.fuelScenario,
       });
-
       const sens  = result.sensitivity || [];
       const low   = sens.length ? Math.min(...sens.map(s => s.minNpv)) : result.npv;
       const high  = sens.length ? Math.max(...sens.map(s => s.maxNpv)) : result.npv;
-
       return {
         npv:         { value: result.npv, low, high },
         co2Saved:    result.emissionSavings ? -result.emissionSavings.totalT : null,
@@ -108,8 +101,8 @@
     if (savedT === null || savedT === undefined) return '—';
     const sign = savedT < 0 ? '−' : '';
     const abs  = Math.abs(savedT);
-    if (abs >= 100) return sign + fmtInt.format(Math.round(abs))            + '\u202ft CO₂';
-    if (abs >= 1)   return sign + (Math.round(abs * 10) / 10).toFixed(1)   + '\u202ft CO₂';
+    if (abs >= 100) return sign + fmtInt.format(Math.round(abs))           + '\u202ft CO₂';
+    if (abs >= 1)   return sign + (Math.round(abs * 10) / 10).toFixed(1)  + '\u202ft CO₂';
     return sign + fmtInt.format(Math.round(abs * 1000)) + '\u202fkg CO₂';
   }
 
@@ -142,14 +135,11 @@
     });
   }
 
-  // ── Summary chart ────────────────────────────────────────────────────────
-  const SUMMARY_ROW_H  = 40;
-  const SUMMARY_LABEL_W = 260;
-  const SUMMARY_MARGIN  = { top: 48, right: 16, bottom: 36 };
+  // ── Shared helpers ────────────────────────────────────────────────────────
+  const ANIM_MS = 450;
 
-  const COLOR_BUILDINGS = '#2860b4';
-  const COLOR_TRANSPORT = '#6b4fa0';
-
+  // Returns a sorted array of { name, baseline, dots } for one section.
+  // Sorted descending by mean NPV so the most favorable measure is on top.
   function getSummaryRows(section) {
     const isBuildings = section === 'buildings';
     const allMeasures = isBuildings ? data.buildings_measures : data.transport_measures;
@@ -162,187 +152,174 @@
       }
     }
 
-    return measureNames.map(name => {
-      const entries = allMeasures.filter(m =>
-        m.measure_name === name && (m.measure_baseline_id || m.measure_baseline)
-      );
-      const dots = entries.map(m => {
-        const calc = computeRow(m);
-        if (!calc) return null;
-        return { label: m[catField], npv: calc.npv };
-      }).filter(Boolean);
-      const baselines = [...new Set(entries.map(m => m.measure_baseline).filter(Boolean))];
-      const baseline = baselines.length ? baselines.join(', ') : null;
-      return { name, baseline, dots };
-    }).filter(r => r.dots.length > 0);
+    return measureNames
+      .map(name => {
+        const entries = allMeasures.filter(m =>
+          m.measure_name === name && (m.measure_baseline_id || m.measure_baseline)
+        );
+        const dots = entries.map(m => {
+          const calc = computeRow(m);
+          if (!calc) return null;
+          return { label: m[catField], npv: calc.npv };
+        }).filter(Boolean);
+        const baselines = [...new Set(entries.map(m => m.measure_baseline).filter(Boolean))];
+        return { name, baseline: baselines.length ? baselines.join(', ') : null, dots };
+      })
+      .filter(r => r.dots.length > 0)
+      .sort((a, b) => d3.mean(b.dots, d => d.npv.value) - d3.mean(a.dots, d => d.npv.value));
   }
+
+  const xAxisFmt = v => {
+    const a = Math.abs(v);
+    const s = v < 0 ? '−' : v > 0 ? '+' : '';
+    if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
+    if (a >= 1e3) return s + Math.round(a / 1e3)  + ' tis.';
+    return v === 0 ? '0' : s + a;
+  };
+
+  // ── Summary chart ─────────────────────────────────────────────────────────
+  const SUMMARY_ROW_H   = 44;
+  const SUMMARY_LABEL_W = 260;
+  const SUMMARY_MARGIN  = { top: 48, right: 16, bottom: 36 };
+  const SECTION_HDR_H   = 22;
+
+  const COLOR_BUILDINGS = '#2860b4';
+  const COLOR_TRANSPORT = '#6b4fa0';
+
+  // NPV > 0: favorable (teal); NPV < 0: costly (red)
+  const COLOR_FAVORABLE = '#1a7a85';
+  const COLOR_COSTLY    = '#c0392b';
 
   function renderSummaryChart(container) {
     if (!globalXDomain) return;
 
-    const buildingRows  = getSummaryRows('buildings');
-    const transportRows = getSummaryRows('transport');
-
     const sections = [
-      { label: 'Budovy',  rows: buildingRows,  color: COLOR_BUILDINGS },
-      { label: 'Doprava', rows: transportRows, color: COLOR_TRANSPORT },
+      { label: 'Budovy',  rows: getSummaryRows('buildings'), color: COLOR_BUILDINGS },
+      { label: 'Doprava', rows: getSummaryRows('transport'),  color: COLOR_TRANSPORT },
     ].filter(s => s.rows.length > 0);
 
     if (!sections.length) { container.hidden = true; return; }
 
-    const sectionHeaderH = 22;
-    const totalH = sections.reduce((h, s) =>
-      h + sectionHeaderH + s.rows.length * SUMMARY_ROW_H, 0
+    const totalW  = container.clientWidth || 640;
+    const chartW  = Math.max(totalW - SUMMARY_LABEL_W - SUMMARY_MARGIN.right, 120);
+    const totalH  = sections.reduce((h, s) =>
+      h + SECTION_HDR_H + s.rows.length * SUMMARY_ROW_H, 0
     ) + SUMMARY_MARGIN.top + SUMMARY_MARGIN.bottom;
 
-    const totalW = container.clientWidth || 640;
-    const chartW = Math.max(totalW - SUMMARY_LABEL_W - SUMMARY_MARGIN.right, 120);
+    const xScale = d3.scaleLinear().domain(globalXDomain).range([0, chartW]);
+    const z      = xScale(0);
 
-    // Domain based only on actual dot values (not sensitivity extremes)
-    const dotVals = sections.flatMap(s => s.rows.flatMap(r => r.dots.map(d => d.npv.value)));
-    const [dMin, dMax] = d3.extent(dotVals);
-    const pad = (dMax - dMin) * 0.12 || 50000;
-    const summaryDomain = d3.scaleLinear()
-      .domain([Math.min(dMin - pad, -pad), Math.max(dMax + pad, pad)])
-      .nice()
-      .domain();
-
-    d3.select(container).selectAll('*').remove();
-
-    const svg = d3.select(container)
-      .append('svg')
-      .attr('width', totalW)
-      .attr('height', totalH)
-      .attr('role', 'img');
-
-    const xScale = d3.scaleLinear()
-      .domain(summaryDomain)
-      .range([0, chartW]);
-
-    const chart = svg.append('g').attr('transform', `translate(${SUMMARY_LABEL_W},0)`);
-
-    // Column headers
-    const headerY = 16;
-    svg.append('text').attr('x', 4).attr('y', headerY)
-      .attr('class', 'chart-col-header').text('Opatření');
-    chart.append('text').attr('x', chartW / 2).attr('y', headerY)
-      .attr('text-anchor', 'middle').attr('class', 'chart-col-header')
-      .text('Rozdíl NPV oproti základní variantě (Kč)');
-
-    // Zero line
-    const z = xScale(0);
-    chart.append('line')
-      .attr('x1', z).attr('x2', z)
-      .attr('y1', SUMMARY_MARGIN.top - 4).attr('y2', totalH - SUMMARY_MARGIN.bottom)
-      .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
-
-    // Half-labels
-    const halfLabelY = headerY + 18;
-    chart.append('text')
-      .attr('x', z / 2).attr('y', halfLabelY)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '10px').attr('font-style', 'italic').attr('fill', '#bbb')
-      .text('Fosilní opatření je výhodnější');
-    chart.append('text')
-      .attr('x', z + (chartW - z) / 2).attr('y', halfLabelY)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '10px').attr('font-style', 'italic').attr('fill', '#bbb')
-      .text('Dekarbonizační opatření je výhodnější');
-
-    let currentY = SUMMARY_MARGIN.top;
-
-    for (const section of sections) {
-      // Section header
-      svg.append('text')
-        .attr('x', 4).attr('y', currentY + 14)
-        .attr('font-size', '11px').attr('font-weight', '700')
-        .attr('fill', section.color).attr('text-transform', 'uppercase')
-        .text(section.label);
-      currentY += sectionHeaderH;
-
-      for (const row of section.rows) {
-        const midY = currentY + SUMMARY_ROW_H / 2;
-
-        // Measure label + baseline
-        svg.append('text')
-          .attr('x', 8).attr('y', row.baseline ? midY - 1 : midY + 4)
-          .attr('font-size', '11px').attr('fill', '#444')
-          .text(row.name);
-        if (row.baseline) {
-          svg.append('text')
-            .attr('x', 8).attr('y', midY + 13)
-            .attr('font-size', '10px').attr('fill', '#aaa')
-            .text('vs. ' + row.baseline);
-        }
-
-        // Dots
-        for (const dot of row.dots) {
-          const g = chart.append('g');
-          if (dot.label) g.append('title').text(fmtCZK(dot.npv.value) + '\n' + dot.label);
-          g.append('circle')
-            .attr('cx', xScale(dot.npv.value)).attr('cy', midY)
-            .attr('r', 6).attr('fill', section.color)
-            .attr('stroke', 'white').attr('stroke-width', 1.5)
-            .attr('opacity', dot.npv.value >= 0 ? 0.85 : 0.35);
-        }
-
-        currentY += SUMMARY_ROW_H;
-      }
+    // ── Create SVG skeleton once ──────────────────────────────────────────
+    let svg = d3.select(container).select('svg');
+    if (svg.empty()) {
+      svg = d3.select(container).append('svg').attr('role', 'img')
+        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+      svg.append('text').attr('class', 'chart-col-header lbl-hdr').attr('x', 4).attr('y', 16)
+        .text('Opatření');
+      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
+      svg.append('line').attr('class', 'zero-line')
+        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('class', 'half-lbl half-lbl-l')
+        .attr('font-size', '11px').attr('font-style', 'italic').attr('fill', '#bbb').attr('text-anchor', 'middle');
+      svg.append('text').attr('class', 'half-lbl half-lbl-r')
+        .attr('font-size', '11px').attr('font-style', 'italic').attr('fill', '#bbb').attr('text-anchor', 'middle');
+      svg.append('g').attr('class', 'sec-hdrs');
+      svg.append('g').attr('class', 'rows-g');
+      svg.append('g').attr('class', 'chart-axis x-axis');
     }
 
-    // X axis
-    chart.append('g')
-      .attr('transform', `translate(0,${totalH - SUMMARY_MARGIN.bottom})`)
-      .attr('class', 'chart-axis')
-      .call(
-        d3.axisBottom(xScale).ticks(5).tickFormat(v => {
-          const a = Math.abs(v);
-          const s = v < 0 ? '−' : v > 0 ? '+' : '';
-          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
-          if (a >= 1e3) return s + Math.round(a / 1e3)  + ' tis.';
-          return v === 0 ? '0' : s + a;
-        })
-      );
+    svg.attr('width', totalW).attr('height', totalH);
+
+    // Update static elements that depend on width/height
+    svg.select('.npv-hdr').attr('x', SUMMARY_LABEL_W + chartW / 2)
+      .text('Rozdíl NPV oproti základní variantě (Kč)');
+    svg.select('.zero-line')
+      .attr('x1', SUMMARY_LABEL_W + z).attr('x2', SUMMARY_LABEL_W + z)
+      .attr('y1', SUMMARY_MARGIN.top - 4).attr('y2', totalH - SUMMARY_MARGIN.bottom);
+    svg.select('.half-lbl-l').attr('x', SUMMARY_LABEL_W + z / 2).attr('y', 34)
+      .text('Fosilní opatření je výhodnější');
+    svg.select('.half-lbl-r').attr('x', SUMMARY_LABEL_W + z + (chartW - z) / 2).attr('y', 34)
+      .text('Dekarbonizační opatření je výhodnější');
+
+    // ── Section headers (fixed y — row counts never change) ───────────────
+    // Pre-compute y-offsets per section
+    const secOffsets = [];
+    let cy = SUMMARY_MARGIN.top;
+    for (const s of sections) {
+      secOffsets.push({ headerY: cy, rowsY: cy + SECTION_HDR_H });
+      cy += SECTION_HDR_H + s.rows.length * SUMMARY_ROW_H;
+    }
+
+    const secSel = svg.select('.sec-hdrs').selectAll('text.sec-hdr')
+      .data(sections, s => s.label);
+    secSel.enter().append('text').attr('class', 'sec-hdr')
+      .attr('font-size', '13px').attr('font-weight', '700')
+      .merge(secSel)
+      .attr('x', 4)
+      .attr('fill', s => s.color)
+      .attr('y', (s, i) => secOffsets[i].headerY + 14)
+      .text(s => s.label);
+    secSel.exit().remove();
+
+    // ── Measure rows (animated on reorder) ───────────────────────────────
+    // Build a flat list with absolute y-positions
+    const allRows = [];
+    sections.forEach((s, si) => {
+      s.rows.forEach((row, ri) => {
+        allRows.push({ ...row, targetY: secOffsets[si].rowsY + ri * SUMMARY_ROW_H });
+      });
+    });
+
+    const rowSel = svg.select('.rows-g').selectAll('g.s-row').data(allRows, d => d.name);
+
+    // ENTER — appear at final position, fade in
+    const rowEnter = rowSel.enter().append('g').attr('class', 's-row')
+      .attr('transform', d => `translate(0,${d.targetY})`)
+      .attr('opacity', 0);
+
+    rowEnter.append('text').attr('class', 'r-name').attr('x', 8).attr('font-size', '13px').attr('fill', '#444');
+    rowEnter.append('text').attr('class', 'r-base').attr('x', 8).attr('font-size', '11px').attr('fill', '#aaa');
+    rowEnter.append('g').attr('class', 'r-dots');
+
+    // MERGE — transition y-position; update content
+    const rowAll = rowSel.merge(rowEnter);
+
+    rowAll.transition().duration(ANIM_MS).ease(d3.easeCubicInOut)
+      .attr('transform', d => `translate(0,${d.targetY})`)
+      .attr('opacity', 1);
+
+    rowAll.each(function (row) {
+      const g   = d3.select(this);
+      const mid = SUMMARY_ROW_H / 2;
+
+      g.select('.r-name').attr('y', row.baseline ? mid - 1 : mid + 4).text(row.name);
+      g.select('.r-base').attr('y', mid + 13).text(row.baseline ? 'vs. ' + row.baseline : '');
+
+      const dotsG = g.select('.r-dots');
+      dotsG.selectAll('*').remove();
+      for (const dot of row.dots) {
+        const dg = dotsG.append('g');
+        if (dot.label) dg.append('title').text(fmtCZK(dot.npv.value) + '\n' + dot.label);
+        dg.append('circle')
+          .attr('cx', SUMMARY_LABEL_W + xScale(dot.npv.value)).attr('cy', mid)
+          .attr('r', 6).attr('fill', dot.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY)
+          .attr('stroke', 'white').attr('stroke-width', 1.5).attr('opacity', 0.85);
+      }
+    });
+
+    rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
+
+    // ── X axis ────────────────────────────────────────────────────────────
+    svg.select('.x-axis')
+      .attr('transform', `translate(${SUMMARY_LABEL_W},${totalH - SUMMARY_MARGIN.bottom})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
   }
 
-  // ── Chart rendering ──────────────────────────────────────────────────────
+  // ── Detailed measure chart ────────────────────────────────────────────────
   const ROW_H  = 54;
   const LABEL_W = 200;
   const CO2_W   = 150;
   const MARGIN  = { top: 28, right: 16, bottom: 36 };
-
-  // NPV > 0: measure saves money vs baseline (economically favorable)
-  // NPV < 0: measure costs extra vs baseline
-  const COLOR_FAVORABLE = '#1a7a85';
-  const COLOR_COSTLY    = '#c0392b';
-
-  function computeBandDomain(measures) {
-    const allMeasures = measures.filter(m => m.measure_baseline_id || m.measure_baseline);
-
-    const vals = [];
-    for (const m of allMeasures) {
-      const calc = computeRow(m);
-      if (!calc) continue;
-      vals.push(calc.npv.low, calc.npv.high, calc.npv.value);
-    }
-
-    if (!vals.length) return [-500000, 500000];
-    const [vMin, vMax] = d3.extent(vals);
-    const pad = (vMax - vMin) * 0.08 || 50000;
-    return d3.scaleLinear()
-      .domain([Math.min(vMin - pad, -pad), Math.max(vMax + pad, pad)])
-      .nice()
-      .domain();
-  }
-
-  function renderAll() {
-    const summaryEl = document.getElementById('summary-chart');
-    if (summaryEl) renderSummaryChart(summaryEl);
-
-    document.querySelectorAll('.measure-chart[data-section]').forEach(el => {
-      renderMeasureChart(el, el.dataset.section, el.dataset.measure);
-    });
-  }
 
   function renderMeasureChart(container, section, measureName) {
     const isBuildings = section === 'buildings';
@@ -353,6 +330,7 @@
       m.measure_name === measureName && (m.measure_baseline_id || m.measure_baseline)
     );
     if (!entries.length) { container.hidden = true; return; }
+    container.hidden = false;
 
     const rows = entries
       .map(m => {
@@ -371,155 +349,196 @@
 
     if (!rows.length) { container.hidden = true; return; }
 
-    const totalW  = container.clientWidth || 640;
-    const chartW  = Math.max(totalW - LABEL_W - CO2_W - MARGIN.right, 120);
-    const totalH  = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
+    const totalW = container.clientWidth || 640;
+    const chartW = Math.max(totalW - LABEL_W - CO2_W - MARGIN.right, 120);
+    const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
 
-    d3.select(container).selectAll('*').remove();
-
-    const svg = d3.select(container)
-      .append('svg')
-      .attr('width', totalW)
-      .attr('height', totalH)
-      .attr('role', 'img');
-
-    const bandDomain = isBuildings ? globalBandDomain : globalBandDomainTransport;
     const xScale = d3.scaleLinear()
-      .domain(bandDomain || [-500000, 500000])
+      .domain(globalXDomain || [-500000, 500000])
       .range([0, chartW]);
-
-    const chart = svg.append('g').attr('transform', `translate(${LABEL_W},0)`);
-
-    // ── Column headers ────────────────────────────────────────────────────
-    const headerY = 16;
-    svg.append('text').attr('x', 4).attr('y', headerY)
-      .attr('class', 'chart-col-header').text('Kontext');
-    chart.append('text').attr('x', xScale(0)).attr('y', headerY)
-      .attr('text-anchor', 'middle').attr('class', 'chart-col-header')
-      .text('Rozdíl NPV oproti základní variantě');
-    chart.append('text').attr('x', chartW + 8).attr('y', headerY)
-      .attr('text-anchor', 'start').attr('class', 'chart-col-header')
-      .text('Úspora emisí');
-
-    // ── Zero line ─────────────────────────────────────────────────────────
     const z = xScale(0);
-    chart.append('line')
-      .attr('x1', z).attr('x2', z)
-      .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom)
-      .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
-    // ── Rows ──────────────────────────────────────────────────────────────
+    // CO₂ unit — pick a round value so the largest bar fills ~8 squares
     const maxAbsCo2 = Math.max(...rows.map(r => Math.abs(r.co2Saved ?? 0)));
-
-    // Pick a round unit so the largest value fills ~8 squares
     const rawUnit   = maxAbsCo2 / 8;
     const magnitude = Math.pow(10, Math.floor(Math.log10(Math.max(rawUnit, 1))));
     const co2Unit   = ([1, 2, 5, 10].find(f => f * magnitude >= rawUnit) || 10) * magnitude;
 
-    rows.forEach((row, i) => {
-      const gy    = MARGIN.top + i * ROW_H;
-      const midY  = gy + ROW_H / 2;
+    // ── Create SVG skeleton once ──────────────────────────────────────────
+    let svg = d3.select(container).select('svg');
+    if (svg.empty()) {
+      svg = d3.select(container).append('svg').attr('role', 'img')
+        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+      svg.append('text').attr('class', 'chart-col-header ctx-hdr').attr('x', 4).attr('y', 16).text('Kontext');
+      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
+      svg.append('text').attr('class', 'chart-col-header co2-hdr').attr('text-anchor', 'start').attr('y', 16);
+      svg.append('line').attr('class', 'zero-line')
+        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+      svg.append('g').attr('class', 'rows-g');
+      svg.append('g').attr('class', 'chart-axis x-axis');
+    }
+
+    svg.attr('width', totalW).attr('height', totalH);
+
+    // Update static elements
+    svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
+    svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
+    svg.select('.zero-line')
+      .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
+      .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
+
+    // ── Row data join ─────────────────────────────────────────────────────
+    const rowSel = svg.select('.rows-g').selectAll('g.d-row').data(rows, d => d.label);
+
+    // ENTER — appear at final position, fade in
+    const rowEnter = rowSel.enter().append('g').attr('class', 'd-row')
+      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
+      .attr('opacity', 0);
+
+    // foreignObject label (created once; text updated below)
+    const fo = rowEnter.append('foreignObject')
+      .attr('x', 4).attr('y', 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
+    const div = fo.append('xhtml:div')
+      .style('display', 'flex').style('flex-direction', 'column')
+      .style('justify-content', 'center').style('height', '100%');
+    div.append('xhtml:span').attr('class', 'lbl-main')
+      .style('font-size', '14px').style('line-height', '1.3').style('color', '#444');
+    div.append('xhtml:span').attr('class', 'lbl-base')
+      .style('font-size', '11px').style('color', '#bbb').style('margin-top', '1px');
+
+    // Uncertainty band
+    const bandG = rowEnter.append('g').attr('class', 'u-band');
+    bandG.append('title').attr('class', 'band-tip');
+    bandG.append('line').attr('class', 'band-line')
+      .attr('stroke', '#999').attr('stroke-width', 5)
+      .attr('stroke-linecap', 'round').attr('opacity', 0.35);
+    bandG.append('rect').attr('class', 'band-hit')
+      .attr('height', 16).attr('fill', 'transparent');
+
+    rowEnter.append('circle').attr('class', 'npv-dot').attr('r', 6)
+      .attr('stroke', 'white').attr('stroke-width', 2);
+    rowEnter.append('text').attr('class', 'npv-lbl')
+      .attr('text-anchor', 'middle').attr('font-size', '14px');
+    rowEnter.append('g').attr('class', 'co2-g');
+
+    // MERGE — animate y; update all content
+    const rowAll = rowSel.merge(rowEnter);
+
+    rowAll.transition().duration(ANIM_MS).ease(d3.easeCubicInOut)
+      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
+      .attr('opacity', 1);
+
+    rowAll.each(function (row) {
+      const g     = d3.select(this);
+      const mid   = ROW_H / 2;
       const color = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
+      const dotX  = LABEL_W + xScale(row.npv.value);
 
-      // Row label (foreignObject for text wrapping)
-      const fo = chart.append('foreignObject')
-        .attr('x', -LABEL_W + 4).attr('y', gy + 2)
-        .attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
-      const labelDiv = fo.append('xhtml:div')
-        .style('display', 'flex').style('flex-direction', 'column')
-        .style('justify-content', 'center').style('height', '100%');
-      labelDiv.append('xhtml:span')
-        .style('font-size', '12px').style('line-height', '1.3').style('color', '#444')
-        .text(row.label);
-      if (row.baselineName) {
-        labelDiv.append('xhtml:span')
-          .style('font-size', '10px').style('color', '#bbb').style('margin-top', '1px')
-          .text('vs. ' + row.baselineName);
-      }
+      g.select('.lbl-main').text(row.label);
+      g.select('.lbl-base').text(row.baselineName ? 'vs. ' + row.baselineName : '');
 
-      // Uncertainty bar (sensitivity range)
-      const dominantParam = row.sensitivity && row.sensitivity.length
-        ? row.sensitivity.reduce((best, s) =>
-            (s.maxNpv - s.minNpv) > (best.maxNpv - best.minNpv) ? s : best
-          )
+      const dominant = row.sensitivity && row.sensitivity.length
+        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
         : null;
-      const tooltipText = dominantParam
-        ? `Největší vliv na rozsah nejistoty: ${dominantParam.param}`
-        : null;
+      g.select('.band-tip').text(dominant ? `Největší vliv: ${dominant.param}` : '');
+      g.select('.band-line')
+        .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
+        .attr('y1', mid).attr('y2', mid);
+      g.select('.band-hit')
+        .attr('x', LABEL_W + xScale(row.npv.low))
+        .attr('y', mid - 8)
+        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1));
 
-      const bandG = chart.append('g').attr('class', 'uncertainty-band');
-      if (tooltipText) bandG.append('title').text(tooltipText);
-
-      bandG.append('line')
-        .attr('x1', xScale(row.npv.low)).attr('x2', xScale(row.npv.high))
-        .attr('y1', midY).attr('y2', midY)
-        .attr('stroke', '#999').attr('stroke-width', 5)
-        .attr('stroke-linecap', 'round').attr('opacity', 0.35);
-
-      // Invisible wider hit area so the tooltip is easy to trigger
-      bandG.append('rect')
-        .attr('x', xScale(row.npv.low))
-        .attr('y', midY - 8)
-        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
-        .attr('height', 16)
-        .attr('fill', 'transparent');
-
-      // Central dot
-      chart.append('circle')
-        .attr('cx', xScale(row.npv.value)).attr('cy', midY)
-        .attr('r', 6).attr('fill', color)
-        .attr('stroke', 'white').attr('stroke-width', 2);
-
-      // NPV value label (above the dot)
-      const dotX = xScale(row.npv.value);
-      chart.append('text')
-        .attr('x', dotX)
-        .attr('y', midY - 11)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '13px').attr('fill', color)
+      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color);
+      g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
         .text(fmtCZK(row.npv.value));
 
-      // CO₂ saved column
+      // CO₂ squares (rebuilt each update — not animated)
+      const co2G    = g.select('.co2-g');
+      co2G.selectAll('*').remove();
       const co2Color  = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
       const SQ = 7, SQ_STEP = 9;
-      const numSquares = row.co2Saved !== null
-        ? Math.round(Math.abs(row.co2Saved) / co2Unit)
-        : 0;
-      const sqStartX = chartW + 8;
-      for (let s = 0; s < numSquares; s++) {
-        chart.append('rect')
-          .attr('x', sqStartX + s * SQ_STEP)
-          .attr('y', midY - SQ / 2)
-          .attr('width', SQ).attr('height', SQ)
-          .attr('fill', co2Color).attr('opacity', 0.7);
+      const nSq = row.co2Saved !== null ? Math.round(Math.abs(row.co2Saved) / co2Unit) : 0;
+      const sqX = LABEL_W + chartW + 8;
+      for (let s = 0; s < nSq; s++) {
+        co2G.append('rect')
+          .attr('x', sqX + s * SQ_STEP).attr('y', mid - SQ / 2)
+          .attr('width', SQ).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
       }
-      const textX = sqStartX + Math.max(numSquares, 1) * SQ_STEP + 2;
-      chart.append('text')
-        .attr('x', textX).attr('y', midY + 4)
-        .attr('font-size', '11px').attr('fill', co2Color)
+      co2G.append('text')
+        .attr('x', sqX + Math.max(nSq, 1) * SQ_STEP + 2).attr('y', mid + 5)
+        .attr('font-size', '13px').attr('fill', co2Color)
         .text(fmtCO2(row.co2Saved));
     });
 
+    rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
+
     // ── X axis ────────────────────────────────────────────────────────────
-    chart.append('g')
-      .attr('transform', `translate(0,${MARGIN.top + rows.length * ROW_H})`)
-      .attr('class', 'chart-axis')
-      .call(
-        d3.axisBottom(xScale).ticks(5).tickFormat(v => {
-          const a = Math.abs(v);
-          const s = v < 0 ? '−' : v > 0 ? '+' : '';
-          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
-          if (a >= 1e3) return s + Math.round(a / 1e3)  + ' tis.';
-          return v === 0 ? '0' : s + a;
-        })
-      );
+    svg.select('.x-axis')
+      .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
+  }
+
+  // ── DOM section reordering ───────────────────────────────────────────────
+  // Reorders the H2 + chart-div pairs inside a section to match a given
+  // measure-name order.  Called once at init; never called again.
+  function reorderSection(sectionId, order) {
+    if (!order || !order.length) return;
+
+    // Collect all (h2, chartDiv) pairs for this section
+    const charts = Array.from(
+      document.querySelectorAll(`.measure-chart[data-section="${sectionId}"]`)
+    );
+    const pairs = charts.map(chart => {
+      const h2 = chart.previousElementSibling;
+      return (h2 && h2.tagName === 'H2') ? { name: chart.dataset.measure, h2, chart } : null;
+    }).filter(Boolean);
+
+    if (!pairs.length) return;
+
+    // Sort pairs into the desired order
+    const rank = new Map(order.map((name, i) => [name, i]));
+    pairs.sort((a, b) =>
+      (rank.has(a.name) ? rank.get(a.name) : Infinity) -
+      (rank.has(b.name) ? rank.get(b.name) : Infinity)
+    );
+
+    // Find the H1 anchor for this section ('Budovy' / 'Doprava')
+    const sectionLabel = sectionId === 'buildings' ? 'Budovy' : 'Doprava';
+    const parent = pairs[0].h2.parentNode;
+    const h1 = Array.from(parent.children)
+      .find(el => el.tagName === 'H1' && el.textContent.trim() === sectionLabel);
+    if (!h1) return;
+
+    // Re-insert pairs in sorted order immediately after the H1
+    let anchor = h1;
+    for (const { h2, chart } of pairs) {
+      anchor.after(h2);
+      h2.after(chart);
+      anchor = chart;
+    }
+  }
+
+  // ── Render all ────────────────────────────────────────────────────────────
+  function renderAll() {
+    const summaryEl = document.getElementById('summary-chart');
+    if (summaryEl) renderSummaryChart(summaryEl);
+
+    document.querySelectorAll('.measure-chart[data-section]').forEach(el => {
+      renderMeasureChart(el, el.dataset.section, el.dataset.measure);
+    });
   }
 
   // ── Init ─────────────────────────────────────────────────────────────────
   function init() {
-    globalXDomain         = computeGlobalDomain();
-    globalBandDomain          = computeBandDomain(data.buildings_measures || []);
-    globalBandDomainTransport = computeBandDomain(data.transport_measures  || []);
+    globalXDomain = computeGlobalDomain();
+
+    // Compute fixed ordering using default params (state is at defaults here).
+    fixedBuildingOrder  = getSummaryRows('buildings').map(r => r.name);
+    fixedTransportOrder = getSummaryRows('transport').map(r => r.name);
+    reorderSection('buildings', fixedBuildingOrder);
+    reorderSection('transport', fixedTransportOrder);
+
     setupControls();
     renderAll();
     window.addEventListener('resize', renderAll);
