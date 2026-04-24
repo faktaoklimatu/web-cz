@@ -204,7 +204,7 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 13
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Plynový kotel
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -221,7 +221,7 @@ buildings_measures:
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 250
 - id: 14
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Renovace bez zateplení
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -238,7 +238,7 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 1500
 - id: 15
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Nedělám nic
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -255,7 +255,7 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 16
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -272,7 +272,7 @@ buildings_measures:
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 250
 - id: 17
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -289,7 +289,7 @@ buildings_measures:
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 300
 - id: 18
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Renovace bez zateplení
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -306,7 +306,7 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 1200
 - id: 19
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Nedělám nic
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -741,7 +741,7 @@ buildings_measures:
   measure_baseline: Nedělám nic
   measure_baseline_id: 12
 - id: 42
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Elektrický kotel
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -760,7 +760,7 @@ buildings_measures:
   measure_baseline: Plynový kotel
   measure_baseline_id: 13
 - id: 43
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Výměna oken a dveří
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -777,9 +777,10 @@ buildings_measures:
   opex_maintenance_czk: 500
   emissions_embedded_kg: 175
   measure_baseline: Nedělám nic
+  note: pro celý menší dům s 8 byty
   measure_baseline_id: 15
 - id: 44
-  building_category: Byt ve staré městské zástavbě s 8 byty (s etážovým plynem)
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Zateplení + fasáda
   dwellings: 8
   demand_heat_building_mwh: 10
@@ -796,9 +797,10 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 2175
   measure_baseline: Renovace bez zateplení
+  note: pro celý menší dům s 8 byty
   measure_baseline_id: 14
 - id: 45
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -815,9 +817,10 @@ buildings_measures:
   opex_maintenance_czk: 150
   emissions_embedded_kg: 150
   measure_baseline: Plynový kotel
+  note: menší dům s 15 byty, společný kotel pro celý dům
   measure_baseline_id: 16
 - id: 46
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -834,10 +837,10 @@ buildings_measures:
   opex_maintenance_czk: 2300
   emissions_embedded_kg: 800
   measure_baseline: Plynová kotelna
-  note: Společné čerpadlo pro celý dům
+  note: menší dům s 15 byty, společné čerpadlo pro celý dům
   measure_baseline_id: 17
 - id: 47
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Výměna oken a dveří
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -854,9 +857,10 @@ buildings_measures:
   opex_maintenance_czk: 200
   emissions_embedded_kg: 200
   measure_baseline: Nedělám nic
+  note: menší dům s 15 byty
   measure_baseline_id: 19
 - id: 48
-  building_category: Byt v panelovém domě s 15 byty (se společnou kotelnou)
+  building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Zateplení + fasáda
   dwellings: 15
   demand_heat_building_mwh: 8
@@ -873,6 +877,7 @@ buildings_measures:
   opex_maintenance_czk: 600
   emissions_embedded_kg: 1740
   measure_baseline: Renovace bez zateplení
+  note: menší dům s 15 byty
   measure_baseline_id: 18
 transport_measures:
 - id: 49
