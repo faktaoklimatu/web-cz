@@ -33,23 +33,23 @@ const CostsBenefits = (() => {
   const SENSITIVITY_PARAM_ORDER = [
     // 'Cena uhlíku',
     // 'Diskontní míra',
-    'CAPEX alternativa',
-    'CAPEX baseline',
-    'Cena: Elektřina',
-    'Cena: Zemní plyn',
-    'Cena: Hnědé uhlí',
-    'Cena: Biomasa',
-    'Cena: Benzín',
-    'Cena: Nafta',
+    'Investiční náklady opatření',
+    'Investiční náklady základní varianty',
+    'Cena elektřiny',
+    'Cena zemního plynu',
+    'Cena hnědého uhlí',
+    'Cena biomasy',
+    'Cena benzínu',
+    'Cena nafty',
   ];
 
   const FUEL_PRICE_LABEL = {
-    Electricity: 'Cena: Elektřina',
-    Gas:         'Cena: Zemní plyn',
-    Lignite:     'Cena: Hnědé uhlí',
-    Biomass:     'Cena: Biomasa',
-    Petrol:      'Cena: Benzín',
-    Diesel:      'Cena: Nafta',
+    Electricity: 'Cena elektřiny',
+    Gas:         'Cena zemního plynu',
+    Lignite:     'Cena hnědého uhlí',
+    Biomass:     'Cena biomasy',
+    Petrol:      'Cena benzínu',
+    Diesel:      'Cena nafty',
   };
 
   // ---------------------------------------------------------------------------
@@ -364,13 +364,13 @@ const CostsBenefits = (() => {
       // { param: 'Cena uhlíku',    label: '60 €', opts: { ...baseOpts, carbonPriceEur: 60  } },
       // { param: 'Cena uhlíku',    label: '200 €',opts: { ...baseOpts, carbonPriceEur: 200 } },
       // CAPEX of the alternative measure
-      { param: 'CAPEX alternativa', label: '-30 %', opts: { ...baseOpts, capexMeasMult: 0.7 } },
-      { param: 'CAPEX alternativa', label: 'Základ', opts: { ...baseOpts, capexMeasMult: 1.0 } },
-      { param: 'CAPEX alternativa', label: '+30 %', opts: { ...baseOpts, capexMeasMult: 1.3 } },
+      { param: 'Investiční náklady opatření', label: '-30 %', opts: { ...baseOpts, capexMeasMult: 0.7 } },
+      { param: 'Investiční náklady opatření', label: 'Základ', opts: { ...baseOpts, capexMeasMult: 1.0 } },
+      { param: 'Investiční náklady opatření', label: '+30 %', opts: { ...baseOpts, capexMeasMult: 1.3 } },
       // CAPEX of the baseline
-      { param: 'CAPEX baseline', label: '-30 %', opts: { ...baseOpts, capexBlMult: 0.7 } },
-      { param: 'CAPEX baseline', label: 'Základ', opts: { ...baseOpts, capexBlMult: 1.0 } },
-      { param: 'CAPEX baseline', label: '+30 %', opts: { ...baseOpts, capexBlMult: 1.3 } },
+      { param: 'Investiční náklady základní varianty', label: '-30 %', opts: { ...baseOpts, capexBlMult: 0.7 } },
+      { param: 'Investiční náklady základní varianty', label: 'Základ', opts: { ...baseOpts, capexBlMult: 1.0 } },
+      { param: 'Investiční náklady základní varianty', label: '+30 %', opts: { ...baseOpts, capexBlMult: 1.3 } },
     ];
 
     // Fuel price variants for all fuels used by baseline or measure
