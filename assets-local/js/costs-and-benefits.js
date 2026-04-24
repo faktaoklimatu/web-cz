@@ -640,21 +640,107 @@
     });
     panel.appendChild(statsEl);
 
+    // NPV timeline chart
+    const timelineEl = document.createElement('div');
+    if ((result.yearByYear || []).length) {
+      const tlHdr = document.createElement('div');
+      tlHdr.className   = 'row-detail-section-label';
+      tlHdr.textContent = 'Kumulativní NPV v čase';
+      panel.appendChild(tlHdr);
+      timelineEl.className = 'row-detail-timeline';
+      panel.appendChild(timelineEl);
+    }
+
     // Tornado chart
+    const tornEl = document.createElement('div');
     const sens = result.sensitivity || [];
     if (sens.length) {
       const tornHdr = document.createElement('div');
       tornHdr.className   = 'row-detail-section-label';
       tornHdr.textContent = 'Citlivostní analýza';
       panel.appendChild(tornHdr);
-      const tornEl = document.createElement('div');
       tornEl.className = 'row-detail-tornado';
       panel.appendChild(tornEl);
-      container.appendChild(panel);
-      renderTornado(tornEl, result);
-    } else {
-      container.appendChild(panel);
     }
+
+    // Append panel before rendering charts so clientWidth is valid
+    container.appendChild(panel);
+    if (timelineEl.className) renderNpvTimeline(timelineEl, result);
+    if (tornEl.className)     renderTornado(tornEl, result);
+  }
+
+  function renderNpvTimeline(container, result) {
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+    const rows = result.yearByYear || [];
+    if (!rows.length) return;
+
+    const margin  = { top: 16, right: 12, bottom: 32, left: 64 };
+    const chartH  = 110;
+
+    const years  = rows.map(r => r.year);
+
+    // Fixed bar step so every year occupies the same width regardless of lifetime.
+    const BAR_STEP = 20;   // px per year slot (bar + gap)
+    const chartW   = years.length * BAR_STEP;
+    const totalW   = margin.left + chartW + margin.right;
+    const totalH   = chartH + margin.top + margin.bottom;
+
+    const [vMin, vMax] = d3.extent(rows, r => r.cumDisc);
+
+    const xScale = d3.scaleBand().domain(years).range([0, chartW]).padding(0.12);
+    const yScale = d3.scaleLinear()
+      .domain([Math.min(vMin, 0), Math.max(vMax, 0)]).nice()
+      .range([chartH, 0]);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', FONT)
+      .style('display', 'block');
+
+    const chart = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    // Zero baseline
+    const z = yScale(0);
+    chart.append('line')
+      .attr('x1', 0).attr('x2', chartW).attr('y1', z).attr('y2', z)
+      .attr('stroke', '#ccc').attr('stroke-width', 1);
+
+    // Payback year marker
+    if (result.paybackYear != null && xScale(result.paybackYear) != null) {
+      const px = xScale(result.paybackYear) + xScale.bandwidth() / 2;
+      chart.append('line')
+        .attr('x1', px).attr('x2', px).attr('y1', 0).attr('y2', chartH)
+        .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+      chart.append('text').attr('x', px + 3).attr('y', 10)
+        .attr('font-size', '10px').attr('fill', '#aaa').text('Návratnost');
+    }
+
+    // Bars
+    rows.forEach(row => {
+      const color = row.cumDisc >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
+      chart.append('rect')
+        .attr('x', xScale(row.year))
+        .attr('y', Math.min(yScale(row.cumDisc), z))
+        .attr('width', xScale.bandwidth())
+        .attr('height', Math.max(Math.abs(yScale(row.cumDisc) - z), 1))
+        .attr('fill', color).attr('opacity', 0.75);
+    });
+
+    // X axis — thin out labels on longer lifetimes
+    const lifetime   = years[years.length - 1] || 0;
+    const step       = lifetime <= 15 ? 1 : lifetime <= 30 ? 5 : 10;
+    const tickValues = years.filter(y => y % step === 0);
+    chart.append('g')
+      .attr('transform', `translate(0,${chartH})`).attr('class', 'chart-axis')
+      .call(d3.axisBottom(xScale).tickValues(tickValues).tickFormat(d => d));
+    chart.append('text')
+      .attr('x', 0).attr('y', chartH + 28)
+      .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', '#999')
+      .text('Rok od investice →');
+
+    // Y axis
+    chart.append('g').attr('class', 'chart-axis')
+      .call(d3.axisLeft(yScale).ticks(4).tickFormat(xAxisFmt));
   }
 
   function renderTornado(container, result) {

@@ -205,6 +205,8 @@ extra-scripts:
   margin-bottom: 4px;
 }
 .row-detail-tornado svg { display: block; }
+.row-detail-timeline { overflow-x: auto; }
+.row-detail-timeline svg { display: block; }
 </style>
 
 {% assign data = site.data["costs-and-benefits"] %}
