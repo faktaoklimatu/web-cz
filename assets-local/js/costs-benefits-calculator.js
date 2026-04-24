@@ -31,8 +31,8 @@ const CostsBenefits = (() => {
 
   // Sensitivity analysis parameter labels (mirrors R make_variants)
   const SENSITIVITY_PARAM_ORDER = [
-    'Cena uhlíku',
-    'Diskontní míra',
+    // 'Cena uhlíku',
+    // 'Diskontní míra',
     'CAPEX alternativa',
     'CAPEX baseline',
     'Cena: Elektřina',
@@ -355,14 +355,14 @@ const CostsBenefits = (() => {
 
     // Build variant list following R's make_variants structure
     const variants = [
-      // Discount rate
-      { param: 'Diskontní míra', label: '0 %',  opts: { ...baseOpts, discountRate: 0.00 } },
-      { param: 'Diskontní míra', label: '3 %',  opts: { ...baseOpts, discountRate: 0.03 } },
-      { param: 'Diskontní míra', label: '7 %',  opts: { ...baseOpts, discountRate: 0.07 } },
-      // Carbon price
-      { param: 'Cena uhlíku',    label: '0 €',  opts: { ...baseOpts, carbonPriceEur: 0   } },
-      { param: 'Cena uhlíku',    label: '60 €', opts: { ...baseOpts, carbonPriceEur: 60  } },
-      { param: 'Cena uhlíku',    label: '200 €',opts: { ...baseOpts, carbonPriceEur: 200 } },
+      // // Discount rate
+      // { param: 'Diskontní míra', label: '0 %',  opts: { ...baseOpts, discountRate: 0.00 } },
+      // { param: 'Diskontní míra', label: '3 %',  opts: { ...baseOpts, discountRate: 0.03 } },
+      // { param: 'Diskontní míra', label: '7 %',  opts: { ...baseOpts, discountRate: 0.07 } },
+      // // Carbon price
+      // { param: 'Cena uhlíku',    label: '0 €',  opts: { ...baseOpts, carbonPriceEur: 0   } },
+      // { param: 'Cena uhlíku',    label: '60 €', opts: { ...baseOpts, carbonPriceEur: 60  } },
+      // { param: 'Cena uhlíku',    label: '200 €',opts: { ...baseOpts, carbonPriceEur: 200 } },
       // CAPEX of the alternative measure
       { param: 'CAPEX alternativa', label: '-30 %', opts: { ...baseOpts, capexMeasMult: 0.7 } },
       { param: 'CAPEX alternativa', label: 'Základ', opts: { ...baseOpts, capexMeasMult: 1.0 } },
