@@ -12,6 +12,43 @@
     fuelScenario: 'CP',
   };
 
+  // ── Tooltip ──────────────────────────────────────────────────────────────
+  // A single floating div reused by all charts. Appears immediately on hover
+  // (no browser-native <title> delay).
+  const tip = document.createElement('div');
+  Object.assign(tip.style, {
+    position:      'fixed',
+    pointerEvents: 'none',
+    background:    'rgba(30,30,30,0.88)',
+    color:         '#fff',
+    borderRadius:  '5px',
+    padding:       '5px 9px',
+    fontSize:      '13px',
+    lineHeight:    '1.45',
+    fontFamily:    'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif',
+    whiteSpace:    'pre-wrap',  // keep \n line breaks AND wrap long lines
+    zIndex:        '9999',
+    display:       'none',
+    maxWidth:      '260px',
+  });
+  document.body.appendChild(tip);
+
+  function showTip(event, text) {
+    tip.textContent = text;
+    tip.style.display = 'block';
+    moveTip(event);
+  }
+  function moveTip(event) {
+    const pad = 12;
+    const tw  = tip.offsetWidth, th = tip.offsetHeight;
+    let x = event.clientX + pad, y = event.clientY + pad;
+    if (x + tw > window.innerWidth  - 4) x = event.clientX - tw - pad;
+    if (y + th > window.innerHeight - 4) y = event.clientY - th - pad;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+  }
+  function hideTip() { tip.style.display = 'none'; }
+
   // ── Global x-axis domain ─────────────────────────────────────────────────
   // Computed once at init across all measures × all parameter combinations.
   // Fixed so the scale never shifts when controls change.
@@ -298,12 +335,14 @@
       const dotsG = g.select('.r-dots');
       dotsG.selectAll('*').remove();
       for (const dot of row.dots) {
-        const dg = dotsG.append('g');
-        if (dot.label) dg.append('title').text(fmtCZK(dot.npv.value) + '\n' + dot.label);
-        dg.append('circle')
+        const tipText = dot.label ? fmtCZK(dot.npv.value) + '\n' + dot.label : fmtCZK(dot.npv.value);
+        dotsG.append('circle')
           .attr('cx', SUMMARY_LABEL_W + xScale(dot.npv.value)).attr('cy', mid)
           .attr('r', 6).attr('fill', dot.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY)
-          .attr('stroke', 'white').attr('stroke-width', 1.5).attr('opacity', 0.85);
+          .attr('stroke', 'white').attr('stroke-width', 1.5).attr('opacity', 0.85)
+          .on('mouseover', e  => showTip(e, tipText))
+          .on('mousemove', moveTip)
+          .on('mouseout',  hideTip);
       }
     });
 
@@ -339,6 +378,7 @@
         return {
           label:        m[catField],
           baselineName: m.measure_baseline || null,
+          measureId:    m.id,
           npv:          calc.npv,
           co2Saved:     calc.co2Saved,
           sensitivity:  calc.sensitivity,
@@ -395,6 +435,10 @@
       .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
       .attr('opacity', 0);
 
+    // Transparent full-width rect — catches clicks in the empty label area
+    rowEnter.append('rect').attr('class', 'row-bg')
+      .attr('x', 0).attr('y', 0).attr('height', ROW_H).attr('fill', 'transparent');
+
     // foreignObject label (created once; text updated below)
     const fo = rowEnter.append('foreignObject')
       .attr('x', 4).attr('y', 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
@@ -408,7 +452,6 @@
 
     // Uncertainty band
     const bandG = rowEnter.append('g').attr('class', 'u-band');
-    bandG.append('title').attr('class', 'band-tip');
     bandG.append('line').attr('class', 'band-line')
       .attr('stroke', '#999').attr('stroke-width', 5)
       .attr('stroke-linecap', 'round').attr('opacity', 0.35);
@@ -434,22 +477,40 @@
       const color = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
       const dotX  = LABEL_W + xScale(row.npv.value);
 
+      g.select('.row-bg').attr('width', totalW);
+      g.style('cursor', 'pointer')
+       .on('click', () => toggleRowDetail(container, row));
+
       g.select('.lbl-main').text(row.label);
       g.select('.lbl-base').text(row.baselineName ? 'vs. ' + row.baselineName : '');
 
       const dominant = row.sensitivity && row.sensitivity.length
         ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
         : null;
-      g.select('.band-tip').text(dominant ? `Největší vliv: ${dominant.param}` : '');
+      const bandTip = [
+        `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+      const dotTip = [
+        fmtCZK(row.npv.value),
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+
       g.select('.band-line')
         .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
         .attr('y1', mid).attr('y2', mid);
       g.select('.band-hit')
         .attr('x', LABEL_W + xScale(row.npv.low))
         .attr('y', mid - 8)
-        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1));
+        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
+        .on('mouseover', e => showTip(e, bandTip))
+        .on('mousemove', moveTip)
+        .on('mouseout',  hideTip);
 
-      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color);
+      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color)
+        .on('mouseover', e => showTip(e, dotTip))
+        .on('mousemove', moveTip)
+        .on('mouseout',  hideTip);
       g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
         .text(fmtCZK(row.npv.value));
 
@@ -519,8 +580,161 @@
     }
   }
 
+  // ── Row detail panel ─────────────────────────────────────────────────────
+  function toggleRowDetail(container, row) {
+    const existing = container.querySelector('.row-detail');
+    const wasOpen  = existing && existing.dataset.rowLabel === row.label;
+    if (existing) existing.remove();
+    if (wasOpen) return;
+
+    let result;
+    try {
+      result = CostsBenefits.calculate({
+        measureId:      row.measureId,
+        data,
+        discountRate:   state.discountRate / 100,
+        carbonPriceEur: state.carbonPrice,
+        priceScenario:  state.fuelScenario,
+      });
+    } catch (e) { return; }
+
+    renderDetailPanel(container, row, result);
+  }
+
+  function renderDetailPanel(container, row, result) {
+    const panel = document.createElement('div');
+    panel.className    = 'row-detail';
+    panel.dataset.rowLabel = row.label;
+
+    // Header
+    const hdr = document.createElement('div');
+    hdr.className = 'row-detail-header';
+    const title = document.createElement('span');
+    title.className = 'row-detail-title';
+    title.innerHTML = `<strong>${row.label}</strong>${row.baselineName ? ` <span class="row-detail-vs">vs. ${row.baselineName}</span>` : ''}`;
+    const closeBtn = document.createElement('button');
+    closeBtn.className   = 'row-detail-close';
+    closeBtn.textContent = '✕';
+    closeBtn.onclick = () => panel.remove();
+    hdr.appendChild(title);
+    hdr.appendChild(closeBtn);
+    panel.appendChild(hdr);
+
+    // Stats strip
+    const statsEl = document.createElement('div');
+    statsEl.className = 'row-detail-stats';
+    const stats = [
+      { label: 'Návratnost',    value: result.paybackYear != null ? result.paybackYear + '\u202flet' : '—' },
+      { label: 'NPV',           value: fmtCZK(result.npv) },
+      { label: 'NPV bez disk.', value: fmtCZK(result.npvUndiscounted) },
+      { label: 'Rozdíl CAPEX',  value: fmtCZK(result.capexDiff) },
+    ];
+    if (result.emissionSavings) {
+      stats.push({ label: 'Úspora emisí', value: fmtCO2(-result.emissionSavings.totalT) });
+    }
+    stats.forEach(({ label, value }) => {
+      const s = document.createElement('div');
+      s.className   = 'row-detail-stat';
+      s.innerHTML   = `<span class="stat-lbl">${label}</span><span class="stat-val">${value}</span>`;
+      statsEl.appendChild(s);
+    });
+    panel.appendChild(statsEl);
+
+    // Tornado chart
+    const sens = result.sensitivity || [];
+    if (sens.length) {
+      const tornHdr = document.createElement('div');
+      tornHdr.className   = 'row-detail-section-label';
+      tornHdr.textContent = 'Citlivostní analýza';
+      panel.appendChild(tornHdr);
+      const tornEl = document.createElement('div');
+      tornEl.className = 'row-detail-tornado';
+      panel.appendChild(tornEl);
+      container.appendChild(panel);
+      renderTornado(tornEl, result);
+    } else {
+      container.appendChild(panel);
+    }
+  }
+
+  function renderTornado(container, result) {
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+    const sens  = [...(result.sensitivity || [])]
+      .sort((a, b) => (b.maxNpv - b.minNpv) - (a.maxNpv - a.minNpv));
+    if (!sens.length) return;
+
+    const width   = container.clientWidth || 560;
+    const TROW_H  = 26;
+    const TLBL_W  = 220;
+    const TM      = { top: 22, right: 12, bottom: 28 };
+    const totalH  = sens.length * TROW_H + TM.top + TM.bottom;
+    const chartW  = Math.max(width - TLBL_W - TM.right, 80);
+
+    const baseNpv = result.npv;
+    const allVals = [0, baseNpv, ...sens.flatMap(s => [s.minNpv, s.maxNpv])];
+    const [xMin, xMax] = d3.extent(allVals);
+    const pad = (xMax - xMin) * 0.06 || 10000;
+    const xScale = d3.scaleLinear()
+      .domain([Math.min(xMin - pad, 0), Math.max(xMax + pad, 0)])
+      .nice().range([0, chartW]);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width', width).attr('height', totalH)
+      .style('font-family', FONT);
+
+    const chart = svg.append('g').attr('transform', `translate(${TLBL_W},0)`);
+
+    // Zero line
+    const z = xScale(0);
+    chart.append('line')
+      .attr('x1', z).attr('x2', z)
+      .attr('y1', TM.top - 2).attr('y2', totalH - TM.bottom)
+      .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+    chart.append('text').attr('x', z).attr('y', TM.top - 4)
+      .attr('text-anchor', 'middle').attr('font-size', '10px').attr('fill', '#aaa')
+      .text('NPV = 0');
+
+    sens.forEach((s, i) => {
+      const midY = TM.top + i * TROW_H + TROW_H / 2;
+      const barH = TROW_H * 0.55;
+
+      // Parameter label
+      svg.append('text').attr('x', TLBL_W - 6).attr('y', midY + 4)
+        .attr('text-anchor', 'end').attr('font-size', '12px').attr('fill', '#555')
+        .text(s.param);
+
+      // Downside bar: baseNpv → minNpv (worse direction)
+      if (s.minNpv !== baseNpv) {
+        chart.append('rect')
+          .attr('x', xScale(Math.min(baseNpv, s.minNpv)))
+          .attr('y', midY - barH / 2)
+          .attr('width', Math.abs(xScale(s.minNpv) - xScale(baseNpv)))
+          .attr('height', barH)
+          .attr('fill', COLOR_COSTLY).attr('opacity', 0.75);
+      }
+      // Upside bar: baseNpv → maxNpv (better direction)
+      if (s.maxNpv !== baseNpv) {
+        chart.append('rect')
+          .attr('x', xScale(Math.min(baseNpv, s.maxNpv)))
+          .attr('y', midY - barH / 2)
+          .attr('width', Math.abs(xScale(s.maxNpv) - xScale(baseNpv)))
+          .attr('height', barH)
+          .attr('fill', COLOR_FAVORABLE).attr('opacity', 0.75);
+      }
+    });
+
+    // X axis
+    chart.append('g')
+      .attr('transform', `translate(0,${totalH - TM.bottom})`)
+      .attr('class', 'chart-axis')
+      .call(d3.axisBottom(xScale).ticks(4).tickFormat(xAxisFmt));
+  }
+
   // ── Render all ────────────────────────────────────────────────────────────
   function renderAll() {
+    // Close any open detail panels — params changed, values would be stale
+    document.querySelectorAll('.row-detail').forEach(el => el.remove());
+
     const summaryEl = document.getElementById('summary-chart');
     if (summaryEl) renderSummaryChart(summaryEl);
 

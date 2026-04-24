@@ -135,6 +135,76 @@ extra-scripts:
 .chart-axis path,
 .chart-axis line { stroke: #ddd; }
 .chart-axis text  { font-size: 12px; fill: #888; }
+
+/* ── Clickable detail rows ─────────────────────────────────────────────── */
+.d-row { cursor: pointer; }
+
+/* ── Row detail panel ──────────────────────────────────────────────────── */
+.row-detail {
+  background: #f7f9fa;
+  border: 1px solid #e0e6ea;
+  border-radius: 6px;
+  margin: 0 0 20px;
+  padding: 12px 16px 10px;
+  font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.row-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  color: #333;
+}
+.row-detail-title strong { font-size: 14px; }
+.row-detail-vs { color: #999; margin-left: 4px; font-size: 12px; }
+
+.row-detail-close {
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0 0 0 12px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.row-detail-close:hover { color: #555; }
+
+.row-detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  margin-bottom: 12px;
+}
+.row-detail-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.stat-lbl {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+}
+.stat-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.row-detail-section-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+  margin-bottom: 4px;
+}
+.row-detail-tornado svg { display: block; }
 </style>
 
 {% assign data = site.data["costs-and-benefits"] %}
