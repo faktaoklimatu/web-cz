@@ -113,17 +113,22 @@ const CostsBenefits = (() => {
 
     const energyCost  = heatDemand                      * priceHeat
                       + measure.demand_electricity_mwh  * priceEl;
-    const carbonCost  = sccCzk
-                      * (heatDemand                     * efFuel
-                       + measure.demand_electricity_mwh * efEl)
-                      / 1000;
+    // Carbon price applies only to direct fossil fuel combustion, not to electricity
+    // (electricity price already embeds ETS costs at the generation level).
+    // This covers both auxiliary electricity (demand_electricity_mwh) and measures
+    // that use electricity as their primary heating fuel (e.g. heat pump, electric boiler).
+    const efFuelForCarbon = measure.fuel === 'Electricity' ? 0 : efFuel;
+    const carbonCost  = sccCzk * heatDemand * efFuelForCarbon / 1000;
     return energyCost + measure.opex_maintenance_czk + carbonCost;
   }
 
   function calcTransportOpex(measure, yearPrices, sccCzk, emissionFactors) {
     const consumption = measure.demand_energy_per_100km * measure.mileage / 100;
     const priceF      = getFuelPrice(yearPrices, measure.fuel);
-    const ef          = getEmissionFactor(measure.fuel, yearPrices, emissionFactors);
+    // Carbon price applies only to fossil fuels, not electricity.
+    const ef          = measure.fuel === 'Electricity'
+                        ? 0
+                        : getEmissionFactor(measure.fuel, yearPrices, emissionFactors);
     const carbonCost  = sccCzk * consumption * ef / 1000;
     return consumption * priceF
          + measure.opex_maintenance_czk
