@@ -227,6 +227,10 @@
   const COLOR_FAVORABLE = '#1a7a85';
   const COLOR_COSTLY    = '#c0392b';
 
+  // CO₂ squares — fixed global scale so all measures are comparable
+  const CO2_UNIT     = 25;  // 1 box = 25 t CO₂ (= 25 000 kg)
+  const CO2_MAX_COLS =  4;  // wrap to new row after 4 boxes (= 100 t = 100K kg)
+
   function renderSummaryChart(container) {
     if (!globalXDomain) return;
 
@@ -398,12 +402,6 @@
       .range([0, chartW]);
     const z = xScale(0);
 
-    // CO₂ unit — pick a round value so the largest bar fills ~8 squares
-    const maxAbsCo2 = Math.max(...rows.map(r => Math.abs(r.co2Saved ?? 0)));
-    const rawUnit   = maxAbsCo2 / 8;
-    const magnitude = Math.pow(10, Math.floor(Math.log10(Math.max(rawUnit, 1))));
-    const co2Unit   = ([1, 2, 5, 10].find(f => f * magnitude >= rawUnit) || 10) * magnitude;
-
     // ── Create SVG skeleton once ──────────────────────────────────────────
     let svg = d3.select(container).select('svg');
     if (svg.empty()) {
@@ -514,20 +512,47 @@
       g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
         .text(fmtCZK(row.npv.value));
 
-      // CO₂ squares (rebuilt each update — not animated)
-      const co2G    = g.select('.co2-g');
+      // CO₂ squares — fixed global scale: 1 box = CO2_UNIT t, wrap at CO2_MAX_COLS
+      const co2G   = g.select('.co2-g');
       co2G.selectAll('*').remove();
-      const co2Color  = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
-      const SQ = 7, SQ_STEP = 9;
-      const nSq = row.co2Saved !== null ? Math.round(Math.abs(row.co2Saved) / co2Unit) : 0;
-      const sqX = LABEL_W + chartW + 8;
+      const co2Color = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
+      const SQ = 7, SQ_GAP = 2, SQ_STEP = SQ + SQ_GAP;
+      const absVal   = row.co2Saved !== null ? Math.abs(row.co2Saved) : 0;
+      // Round to nearest half-unit (12.5 t), then split into full + half boxes
+      const halfUnits = row.co2Saved !== null ? Math.round(absVal / (CO2_UNIT / 2)) : 0;
+      const nSq      = Math.floor(halfUnits / 2);   // full boxes (25 t each)
+      const hasHalf  = (halfUnits % 2) === 1;        // leftover half-box (12.5 t)
+      const sqX     = LABEL_W + chartW + 8;
+
+      // Grid layout: treat half-box as occupying one slot in row 0
+      const nSlots  = nSq + (hasHalf ? 1 : 0);
+      const nCols   = Math.min(nSlots, CO2_MAX_COLS);
+      const nRows   = nSlots > 0 ? Math.ceil(nSlots / CO2_MAX_COLS) : 0;
+      const gridH   = nRows > 0 ? nRows * SQ + (nRows - 1) * SQ_GAP : 0;
+      const gridTop = mid - gridH / 2;
+
       for (let s = 0; s < nSq; s++) {
+        const col    = s % CO2_MAX_COLS;
+        const rowIdx = Math.floor(s / CO2_MAX_COLS);
         co2G.append('rect')
-          .attr('x', sqX + s * SQ_STEP).attr('y', mid - SQ / 2)
-          .attr('width', SQ).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
+          .attr('x', sqX + col * SQ_STEP)
+          .attr('y', gridTop + rowIdx * SQ_STEP)
+          .attr('width', SQ).attr('height', SQ)
+          .attr('fill', co2Color).attr('opacity', 0.7);
       }
+      if (hasHalf) {
+        // Half-box in the next slot after all full boxes
+        const hCol    = nSq % CO2_MAX_COLS;
+        const hRowIdx = Math.floor(nSq / CO2_MAX_COLS);
+        co2G.append('rect')
+          .attr('x', sqX + hCol * SQ_STEP)
+          .attr('y', gridTop + hRowIdx * SQ_STEP)
+          .attr('width', SQ / 2).attr('height', SQ)
+          .attr('fill', co2Color).attr('opacity', 0.7);
+      }
+      const textX = sqX + Math.max(nCols, 1) * SQ_STEP + 2;
       co2G.append('text')
-        .attr('x', sqX + Math.max(nSq, 1) * SQ_STEP + 2).attr('y', mid + 5)
+        .attr('x', textX).attr('y', mid + 5)
         .attr('font-size', '13px').attr('fill', co2Color)
         .text(fmtCO2(row.co2Saved));
     });
