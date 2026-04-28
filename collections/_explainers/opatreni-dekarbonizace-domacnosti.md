@@ -336,27 +336,54 @@ extra-scripts:
 
 <div class="section pt-3 pb-2">
   <div class="container">
-    <p class="chart-col-header mb-2">Cena uhlíku</p>
-    <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+
+    <p class="chart-col-header mb-2" style="color:#2860b4">Budovy</p>
+
+    <p class="chart-col-header mb-1">Cena uhlíku</p>
+    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:1.5rem;">
       <div style="flex:1; min-width:280px;">
         <p class="chart-col-header mb-1">Rodinný dům uhlí – E</p>
-        <div class="tornado-chart" data-category="Rodinný dům uhlí – E" data-param="Cena uhlíku"></div>
+        <div class="tornado-chart" data-category="Rodinný dům uhlí – E" data-param="Cena uhlíku" data-domain-group="cena-uhliku"></div>
       </div>
       <div style="flex:1; min-width:280px;">
         <p class="chart-col-header mb-1">Rodinný dům plyn – E</p>
-        <div class="tornado-chart" data-category="Rodinný dům plyn – E" data-param="Cena uhlíku"></div>
+        <div class="tornado-chart" data-category="Rodinný dům plyn – E" data-param="Cena uhlíku" data-domain-group="cena-uhliku"></div>
       </div>
     </div>
-    <p class="chart-col-header mb-2 mt-4">Diskontní míra</p>
-    <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+
+    <p class="chart-col-header mb-1">Diskontní míra</p>
+    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:3rem;">
       <div style="flex:1; min-width:280px;">
         <p class="chart-col-header mb-1">Rodinný dům uhlí – E</p>
-        <div class="tornado-chart" data-category="Rodinný dům uhlí – E" data-param="Diskontní míra"></div>
+        <div class="tornado-chart" data-category="Rodinný dům uhlí – E" data-param="Diskontní míra" data-exclude="Elektrický kotel" data-domain-group="diskontni-mira"></div>
       </div>
       <div style="flex:1; min-width:280px;">
         <p class="chart-col-header mb-1">Rodinný dům plyn – E</p>
-        <div class="tornado-chart" data-category="Rodinný dům plyn – E" data-param="Diskontní míra"></div>
+        <div class="tornado-chart" data-category="Rodinný dům plyn – E" data-param="Diskontní míra" data-exclude="Elektrický kotel" data-domain-group="diskontni-mira"></div>
       </div>
     </div>
+
+    <p class="chart-col-header mb-2" style="color:#6b4fa0">Doprava</p>
+
+    <p class="chart-col-header mb-1">Cena uhlíku</p>
+    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové malé|Ojeté malé" data-param="Cena uhlíku" data-domain-group="cena-uhliku"></div>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové velké|Ojeté velké" data-param="Cena uhlíku" data-domain-group="cena-uhliku"></div>
+      </div>
+    </div>
+
+    <p class="chart-col-header mb-1">Diskontní míra</p>
+    <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové malé|Ojeté malé" data-param="Diskontní míra" data-domain-group="diskontni-mira"></div>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové velké|Ojeté velké" data-param="Diskontní míra" data-domain-group="diskontni-mira"></div>
+      </div>
+    </div>
+
   </div>
 </div>

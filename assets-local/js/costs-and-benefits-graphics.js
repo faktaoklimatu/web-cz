@@ -60,30 +60,23 @@
     'Kotel na biomasu',
     'Soláry na střeše+baterie',
     'Malý elektromobil',
+    'Malý hybrid',
+    'Velký elektromobil',
+    'Velký hybrid',
   ];
   const CP_CHART_COLORS = [
     '#1a7a85', '#2860b4', '#6b4fa0', '#c05a1a',
     '#2e7d32', '#8b6914', '#c0392b',
+    '#e67e22', '#16a085', '#8e44ad',
   ];
 
   // ── Tornado chart ─────────────────────────────────────────────────────────
-  function renderTornadoChart(container, category, param = 'Cena uhlíku') {
+  //
+  // Cena uhlíku:  band spanning NPV at 0 € → 200 €; dot at current carbon price.
+  // Diskontní míra: three coloured dots at 0 %, 3 % and 7 % (no band).
+
+  function renderTornadoChart(container, category, param = 'Cena uhlíku', exclude = [], forceDomain = null) {
     const catField = 'building_category';
-
-    // Three parameter values shown as individual dots
-    const paramSteps = param === 'Diskontní míra'
-      ? [
-          { label: '0 %',  discountRate: 0,                carbonPrice: state.carbonPrice },
-          { label: '3 %',  discountRate: 3,                carbonPrice: state.carbonPrice },
-          { label: '7 %',  discountRate: 7,                carbonPrice: state.carbonPrice },
-        ]
-      : [
-          { label: '0 €',   discountRate: state.discountRate, carbonPrice: 0   },
-          { label: '60 €',  discountRate: state.discountRate, carbonPrice: 60  },
-          { label: '200 €', discountRate: state.discountRate, carbonPrice: 200 },
-        ];
-
-    const STEP_COLORS = ['#0d4a52', '#1a7a85', '#6ab4bc'];
 
     const allMeasures = [
       ...(data.buildings_measures || []),
@@ -94,101 +87,399 @@
       (!category || m[catField] === category || m.transport_category === category)
     );
 
-    const rows = CP_CHART_MEASURES.map((name, ni) => {
-      const entries = allMeasures.filter(m => m.measure_name === name);
-      if (!entries.length) return null;
+    function calcNpv(entry, cp, dr) {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId:      entry.id, data,
+          discountRate:   dr / 100,
+          carbonPriceEur: cp,
+          priceScenario:  state.fuelScenario,
+        });
+        return isNaN(r.npv) ? null : r.npv;
+      } catch (_) { return null; }
+    }
 
-      // Find any entry that computes without error
-      const entry = entries.find(m => {
+    function findEntry(entries, cp, dr) {
+      return entries.find(m => {
         try {
           const r = CostsBenefits.calculate({
             measureId: m.id, data,
-            discountRate:   paramSteps[1].discountRate / 100,
-            carbonPriceEur: paramSteps[1].carbonPrice,
-            priceScenario:  state.fuelScenario,
+            discountRate: dr / 100, carbonPriceEur: cp,
+            priceScenario: state.fuelScenario,
           });
           return !isNaN(r.npv);
         } catch (_) { return false; }
       });
-      if (!entry) return null;
+    }
 
-      // Compute NPV for each of the three parameter steps
-      const npvs = paramSteps.map(ps => {
+    if (param === 'Diskontní míra') {
+      // ── Three-dot variant ──────────────────────────────────────────────────
+      const STEP_COLORS  = ['#0d4a52', '#1a7a85', '#6ab4bc'];
+      const STEP_RATES   = [0, 3, 7];
+      const STEP_LABELS  = ['0 %', '3 %', '7 %'];
+
+      const rows = CP_CHART_MEASURES.map((name, ni) => {
+        if (exclude.includes(name)) return null;
+        const entries = allMeasures.filter(m => m.measure_name === name);
+        if (!entries.length) return null;
+        const entry = findEntry(entries, state.carbonPrice, 3);
+        if (!entry) return null;
+        const npvs = STEP_RATES.map(dr => calcNpv(entry, state.carbonPrice, dr));
+        if (npvs.every(v => v == null)) return null;
+        return { name, npvs };
+      }).filter(Boolean);
+
+      if (!rows.length) { container.hidden = true; return; }
+
+      const ROW_H    = 32;
+      const LABEL_W  = 200;
+      const T_MARGIN = { top: 20, right: 24, bottom: 36, left: 8 };
+      const totalW   = container.clientWidth || 700;
+      const chartW   = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
+      const totalH   = rows.length * ROW_H + T_MARGIN.top + T_MARGIN.bottom;
+
+      const allVals  = rows.flatMap(r => r.npvs.filter(v => v != null));
+      const [xMin, xMax] = d3.extent(allVals);
+      const xPad  = (xMax - xMin) * 0.06 || 20000;
+      const xDomain = forceDomain || d3.scaleLinear().domain([xMin - xPad, xMax + xPad]).nice().domain();
+      const xScale = d3.scaleLinear().domain(xDomain).range([0, chartW]);
+
+      d3.select(container).selectAll('*').remove();
+      const svg   = d3.select(container).append('svg').attr('width', totalW).attr('height', totalH);
+      const chart = svg.append('g').attr('transform', `translate(${T_MARGIN.left + LABEL_W}, 0)`);
+
+      const zx = xScale(0);
+      chart.append('line')
+        .attr('x1', zx).attr('x2', zx)
+        .attr('y1', T_MARGIN.top).attr('y2', totalH - T_MARGIN.bottom)
+        .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+
+      for (let i = 0; i < rows.length; i++) {
+        const r    = rows[i];
+        const midY = T_MARGIN.top + i * ROW_H + ROW_H / 2;
+
+        svg.append('text')
+          .attr('x', T_MARGIN.left + LABEL_W - 8).attr('y', midY + 4)
+          .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#444')
+          .text(r.name);
+
+        STEP_RATES.forEach((dr, pi) => {
+          const npv = r.npvs[pi];
+          if (npv == null) return;
+          const dotX = xScale(npv);
+          chart.append('circle')
+            .attr('cx', dotX).attr('cy', midY)
+            .attr('r', 5).attr('fill', STEP_COLORS[pi])
+            .attr('stroke', 'white').attr('stroke-width', 1.5);
+          chart.append('text')
+            .attr('x', dotX).attr('y', midY - 8)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
+            .text(STEP_LABELS[pi]);
+        });
+      }
+
+      chart.append('g')
+        .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
+        .attr('class', 'chart-axis')
+        .call(d3.axisBottom(xScale).ticks(5).tickFormat(v => {
+          const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
+          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
+          if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
+          return v === 0 ? '0' : s + a;
+        }));
+
+    } else {
+      // ── Band + dot variant (Cena uhlíku) ──────────────────────────────────
+      const rows = CP_CHART_MEASURES.map((name, ni) => {
+        if (exclude.includes(name)) return null;
+        const entries = allMeasures.filter(m => m.measure_name === name);
+        if (!entries.length) return null;
+        const entry = findEntry(entries, 100, state.discountRate);
+        if (!entry) return null;
+
+        const dr = state.discountRate;
+        const npvAtMin   = calcNpv(entry, 0,   dr);
+        const npvAtMax   = calcNpv(entry, 200, dr);
+        const npvCurrent = calcNpv(entry, state.carbonPrice, dr);
+        if (npvCurrent == null) return null;
+
+        return { name, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
+      }).filter(Boolean);
+
+      if (!rows.length) { container.hidden = true; return; }
+
+      const ROW_H    = 32;
+      const LABEL_W  = 200;
+      const T_MARGIN = { top: 34, right: 24, bottom: 36, left: 8 };
+      const totalW   = container.clientWidth || 700;
+      const chartW   = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
+      const totalH   = rows.length * ROW_H + T_MARGIN.top + T_MARGIN.bottom;
+
+      const allVals = rows.flatMap(r =>
+        [r.npvAtMin, r.npvAtMax, r.npvCurrent].filter(v => v != null)
+      );
+      const [xMin, xMax] = d3.extent(allVals);
+      const xPad  = (xMax - xMin) * 0.06 || 20000;
+      const xDomain = forceDomain || d3.scaleLinear().domain([xMin - xPad, xMax + xPad]).nice().domain();
+      const xScale = d3.scaleLinear().domain(xDomain).range([0, chartW]);
+
+      d3.select(container).selectAll('*').remove();
+      const svg   = d3.select(container).append('svg').attr('width', totalW).attr('height', totalH);
+      const chart = svg.append('g').attr('transform', `translate(${T_MARGIN.left + LABEL_W}, 0)`);
+
+      const zx = xScale(0);
+      chart.append('line')
+        .attr('x1', zx).attr('x2', zx)
+        .attr('y1', T_MARGIN.top).attr('y2', totalH - T_MARGIN.bottom)
+        .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+
+      for (let i = 0; i < rows.length; i++) {
+        const r    = rows[i];
+        const midY = T_MARGIN.top + i * ROW_H + ROW_H / 2;
+        const barH = ROW_H * 0.38;
+
+        svg.append('text')
+          .attr('x', T_MARGIN.left + LABEL_W - 8).attr('y', midY + 4)
+          .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#444')
+          .text(r.name);
+
+        if (r.npvAtMin != null && r.npvAtMax != null) {
+          const x1 = xScale(r.npvAtMin);
+          const x2 = xScale(r.npvAtMax);
+          chart.append('rect')
+            .attr('x', Math.min(x1, x2)).attr('y', midY - barH / 2)
+            .attr('width', Math.max(Math.abs(x2 - x1), 1)).attr('height', barH)
+            .attr('fill', r.color).attr('opacity', 0.25).attr('rx', 3);
+        }
+
+        const dotX = xScale(r.npvCurrent);
+        chart.append('circle')
+          .attr('cx', dotX).attr('cy', midY)
+          .attr('r', 5).attr('fill', r.color)
+          .attr('stroke', 'white').attr('stroke-width', 1.5);
+      }
+
+      chart.append('g')
+        .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
+        .attr('class', 'chart-axis')
+        .call(d3.axisBottom(xScale).ticks(5).tickFormat(v => {
+          const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
+          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
+          if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
+          return v === 0 ? '0' : s + a;
+        }));
+
+      // Legend
+      const BAND_W = 60, BAND_H = 10, DOT_R = 4;
+      const legY = 8, legX = chartW - BAND_W - 100;
+
+      chart.append('rect')
+        .attr('x', legX).attr('y', legY)
+        .attr('width', BAND_W).attr('height', BAND_H)
+        .attr('fill', '#999').attr('opacity', 0.25).attr('rx', 2);
+      chart.append('circle')
+        .attr('cx', legX + BAND_W / 2).attr('cy', legY + BAND_H / 2)
+        .attr('r', DOT_R).attr('fill', '#888')
+        .attr('stroke', 'white').attr('stroke-width', 1.5);
+      chart.append('text')
+        .attr('x', legX).attr('y', legY - 2)
+        .attr('font-size', '9px').attr('fill', '#aaa').text('0 €');
+      chart.append('text')
+        .attr('x', legX + BAND_W).attr('y', legY - 2)
+        .attr('text-anchor', 'end').attr('font-size', '9px').attr('fill', '#aaa').text('200 €');
+      chart.append('text')
+        .attr('x', legX + BAND_W / 2).attr('y', legY + BAND_H + 9)
+        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#888').text('NPV');
+    }
+  }
+  // ── Multi-category tornado chart ──────────────────────────────────────────
+  // Renders several category groups in one SVG with a shared x-axis.
+  // categories: array of category strings, e.g. ['Nové malé', 'Ojeté malé']
+  function renderMultiTornadoChart(container, categories, param = 'Cena uhlíku', exclude = [], forceDomain = null) {
+    const isDiscountRate = param === 'Diskontní míra';
+    const STEP_COLORS  = ['#0d4a52', '#1a7a85', '#6ab4bc'];
+    const STEP_RATES   = [0, 3, 7];
+    const STEP_LABELS  = ['0 %', '3 %', '7 %'];
+
+    function calcNpv(entry, cp, dr) {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId: entry.id, data,
+          discountRate: dr / 100, carbonPriceEur: cp,
+          priceScenario: state.fuelScenario,
+        });
+        return isNaN(r.npv) ? null : r.npv;
+      } catch (_) { return null; }
+    }
+
+    function findEntry(entries, cp, dr) {
+      return entries.find(m => {
         try {
           const r = CostsBenefits.calculate({
-            measureId:      entry.id, data,
-            discountRate:   ps.discountRate / 100,
-            carbonPriceEur: ps.carbonPrice,
-            priceScenario:  state.fuelScenario,
+            measureId: m.id, data,
+            discountRate: dr / 100, carbonPriceEur: cp,
+            priceScenario: state.fuelScenario,
           });
-          return isNaN(r.npv) ? null : r.npv;
-        } catch (_) { return null; }
+          return !isNaN(r.npv);
+        } catch (_) { return false; }
       });
+    }
 
-      if (npvs.every(v => v == null)) return null;
+    // Build rows for each category group
+    const groups = categories.map(category => {
+      const allMeasures = [
+        ...(data.buildings_measures || []),
+        ...(data.transport_measures  || []),
+      ].filter(m =>
+        (m.measure_baseline_id || m.measure_baseline) &&
+        CP_CHART_MEASURES.includes(m.measure_name) &&
+        (!category || m.building_category === category || m.transport_category === category)
+      );
 
-      return { name, color: CP_CHART_COLORS[ni], npvs };
-    }).filter(Boolean);
+      const rows = CP_CHART_MEASURES.map((name, ni) => {
+        if (exclude.includes(name)) return null;
+        const entries = allMeasures.filter(m => m.measure_name === name);
+        if (!entries.length) return null;
 
-    if (!rows.length) { container.hidden = true; return; }
+        if (isDiscountRate) {
+          const entry = findEntry(entries, state.carbonPrice, 3);
+          if (!entry) return null;
+          const npvs = STEP_RATES.map(dr => calcNpv(entry, state.carbonPrice, dr));
+          if (npvs.every(v => v == null)) return null;
+          return { name, color: CP_CHART_COLORS[ni], npvs };
+        } else {
+          const entry = findEntry(entries, 100, state.discountRate);
+          if (!entry) return null;
+          const dr = state.discountRate;
+          const npvAtMin   = calcNpv(entry, 0,   dr);
+          const npvAtMax   = calcNpv(entry, 200, dr);
+          const npvCurrent = calcNpv(entry, state.carbonPrice, dr);
+          if (npvCurrent == null) return null;
+          return { name, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
+        }
+      }).filter(Boolean);
 
-    const ROW_H    = 32;
-    const LABEL_W  = 200;
-    const T_MARGIN = { top: 28, right: 24, bottom: 36, left: 8 };
+      return { category, rows };
+    }).filter(g => g.rows.length > 0);
 
-    const totalW = container.clientWidth || 700;
-    const chartW = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
-    const totalH = rows.length * ROW_H + T_MARGIN.top + T_MARGIN.bottom;
+    if (!groups.length) { container.hidden = true; return; }
 
-    // X domain across all NPV values
-    const allVals = rows.flatMap(r => r.npvs.filter(v => v != null));
+    const ROW_H          = 32;
+    const GROUP_HEADER_H = 22;
+    const GROUP_GAP      = 12;
+    const LABEL_W        = 200;
+    const T_MARGIN       = { top: isDiscountRate ? 20 : 34, right: 24, bottom: 36, left: 8 };
+
+    const totalW  = container.clientWidth || 700;
+    const chartW  = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
+    const totalH  = groups.reduce((h, g) => h + GROUP_HEADER_H + g.rows.length * ROW_H, 0)
+                  + (groups.length - 1) * GROUP_GAP
+                  + T_MARGIN.top + T_MARGIN.bottom;
+
+    // Shared x-domain
+    const allVals = groups.flatMap(g => g.rows.flatMap(r =>
+      isDiscountRate
+        ? r.npvs.filter(v => v != null)
+        : [r.npvAtMin, r.npvAtMax, r.npvCurrent].filter(v => v != null)
+    ));
     const [xMin, xMax] = d3.extent(allVals);
-    const xPad = (xMax - xMin) * 0.06 || 20000;
-    const xDomain = d3.scaleLinear().domain([xMin - xPad, xMax + xPad]).nice().domain();
-    const xScale  = d3.scaleLinear().domain(xDomain).range([0, chartW]);
+    const xPad  = (xMax - xMin) * 0.06 || 20000;
+    const xDomain = forceDomain || d3.scaleLinear().domain([xMin - xPad, xMax + xPad]).nice().domain();
+    const xScale = d3.scaleLinear().domain(xDomain).range([0, chartW]);
 
     d3.select(container).selectAll('*').remove();
-    const svg = d3.select(container).append('svg').attr('width', totalW).attr('height', totalH);
+    const svg   = d3.select(container).append('svg').attr('width', totalW).attr('height', totalH);
+    const chart = svg.append('g').attr('transform', `translate(${T_MARGIN.left + LABEL_W}, 0)`);
 
-    const chartOriginX = T_MARGIN.left + LABEL_W;
-    const chart = svg.append('g').attr('transform', `translate(${chartOriginX}, 0)`);
-
-    // Zero line
+    // Zero line (full chart height)
     const zx = xScale(0);
     chart.append('line')
       .attr('x1', zx).attr('x2', zx)
       .attr('y1', T_MARGIN.top).attr('y2', totalH - T_MARGIN.bottom)
       .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
-    for (let i = 0; i < rows.length; i++) {
-      const r    = rows[i];
-      const midY = T_MARGIN.top + i * ROW_H + ROW_H / 2;
-
-      // Measure label
-      svg.append('text')
-        .attr('x', T_MARGIN.left + LABEL_W - 8).attr('y', midY + 4)
-        .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#444')
-        .text(r.name);
-
-      // Three dots — one per parameter step
-      paramSteps.forEach((ps, pi) => {
-        const npv = r.npvs[pi];
-        if (npv == null) return;
-        const dotX = xScale(npv);
-        chart.append('circle')
-          .attr('cx', dotX).attr('cy', midY)
-          .attr('r', 5).attr('fill', STEP_COLORS[pi])
-          .attr('stroke', 'white').attr('stroke-width', 1.5);
-        // Parameter value label above dot
-        chart.append('text')
-          .attr('x', dotX).attr('y', midY - 8)
-          .attr('text-anchor', 'middle')
-          .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
-          .text(ps.label);
-      });
+    // Legend for carbon price chart (top-right, drawn once)
+    if (!isDiscountRate) {
+      const BAND_W = 60, BAND_H = 10, DOT_R = 4;
+      const legY = 8, legX = chartW - BAND_W - 100;
+      chart.append('rect')
+        .attr('x', legX).attr('y', legY)
+        .attr('width', BAND_W).attr('height', BAND_H)
+        .attr('fill', '#999').attr('opacity', 0.25).attr('rx', 2);
+      chart.append('circle')
+        .attr('cx', legX + BAND_W / 2).attr('cy', legY + BAND_H / 2)
+        .attr('r', DOT_R).attr('fill', '#888').attr('stroke', 'white').attr('stroke-width', 1.5);
+      chart.append('text')
+        .attr('x', legX).attr('y', legY - 2)
+        .attr('font-size', '9px').attr('fill', '#aaa').text('0 €');
+      chart.append('text')
+        .attr('x', legX + BAND_W).attr('y', legY - 2)
+        .attr('text-anchor', 'end').attr('font-size', '9px').attr('fill', '#aaa').text('200 €');
+      chart.append('text')
+        .attr('x', legX + BAND_W / 2).attr('y', legY + BAND_H + 9)
+        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#888').text('NPV');
     }
 
-    // X axis (NPV in Kč)
+    let currentY = T_MARGIN.top;
+
+    for (let gi = 0; gi < groups.length; gi++) {
+      const group = groups[gi];
+
+      // Category header label
+      svg.append('text')
+        .attr('x', T_MARGIN.left + 4).attr('y', currentY + 15)
+        .attr('font-size', '11px').attr('font-weight', '700').attr('fill', '#555')
+        .text(group.category.toUpperCase());
+      currentY += GROUP_HEADER_H;
+
+      for (const r of group.rows) {
+        const midY = currentY + ROW_H / 2;
+        const barH = ROW_H * 0.38;
+
+        // Measure label
+        svg.append('text')
+          .attr('x', T_MARGIN.left + LABEL_W - 8).attr('y', midY + 4)
+          .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#444')
+          .text(r.name);
+
+        if (isDiscountRate) {
+          STEP_RATES.forEach((dr, pi) => {
+            const npv = r.npvs[pi];
+            if (npv == null) return;
+            const dotX = xScale(npv);
+            chart.append('circle')
+              .attr('cx', dotX).attr('cy', midY)
+              .attr('r', 5).attr('fill', STEP_COLORS[pi])
+              .attr('stroke', 'white').attr('stroke-width', 1.5);
+            chart.append('text')
+              .attr('x', dotX).attr('y', midY - 8)
+              .attr('text-anchor', 'middle')
+              .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
+              .text(STEP_LABELS[pi]);
+          });
+        } else {
+          if (r.npvAtMin != null && r.npvAtMax != null) {
+            const x1 = xScale(r.npvAtMin), x2 = xScale(r.npvAtMax);
+            chart.append('rect')
+              .attr('x', Math.min(x1, x2)).attr('y', midY - barH / 2)
+              .attr('width', Math.max(Math.abs(x2 - x1), 1)).attr('height', barH)
+              .attr('fill', r.color).attr('opacity', 0.25).attr('rx', 3);
+          }
+          const dotX = xScale(r.npvCurrent);
+          chart.append('circle')
+            .attr('cx', dotX).attr('cy', midY)
+            .attr('r', 5).attr('fill', r.color)
+            .attr('stroke', 'white').attr('stroke-width', 1.5);
+        }
+
+        currentY += ROW_H;
+      }
+
+      if (gi < groups.length - 1) currentY += GROUP_GAP;
+    }
+
+    // X axis
     chart.append('g')
       .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
       .attr('class', 'chart-axis')
@@ -198,26 +489,6 @@
         if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
         return v === 0 ? '0' : s + a;
       }));
-
-    // Legend — only for carbon price chart (discount rate chart has inline labels)
-    if (param !== 'Diskontní míra') {
-      const legX = chartW - 120;
-      const legY = 8;
-      const LEG_DOT_R = 4;
-      const DOT_GAP   = 26;
-
-      paramSteps.forEach((ps, pi) => {
-        const cx = legX + pi * DOT_GAP;
-        chart.append('circle')
-          .attr('cx', cx).attr('cy', legY + LEG_DOT_R)
-          .attr('r', LEG_DOT_R).attr('fill', STEP_COLORS[pi]);
-        chart.append('text')
-          .attr('x', cx).attr('y', legY + LEG_DOT_R * 2 + 9)
-          .attr('text-anchor', 'middle')
-          .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
-          .text(ps.label);
-      });
-    }
   }
 
   // ── Quadrant chart ────────────────────────────────────────────────────────
@@ -1058,9 +1329,88 @@
   }
 
   // ── Render all charts on the page ─────────────────────────────────────────
+  // Collect all NPV values that will appear in a given chart container.
+  function collectNpvsForEl(el) {
+    const param   = el.dataset.param || 'Cena uhlíku';
+    const exclude = el.dataset.exclude ? el.dataset.exclude.split(',').map(s => s.trim()) : [];
+    const cats    = el.dataset.categories
+      ? el.dataset.categories.split('|')
+      : (el.dataset.category ? [el.dataset.category] : []);
+    const isDR    = param === 'Diskontní míra';
+    const vals    = [];
+
+    for (const category of cats) {
+      const measures = [
+        ...(data.buildings_measures || []),
+        ...(data.transport_measures  || []),
+      ].filter(m =>
+        (m.measure_baseline_id || m.measure_baseline) &&
+        CP_CHART_MEASURES.includes(m.measure_name) &&
+        !exclude.includes(m.measure_name) &&
+        (!category || m.building_category === category || m.transport_category === category)
+      );
+
+      for (const name of CP_CHART_MEASURES) {
+        if (exclude.includes(name)) continue;
+        const entries = measures.filter(m => m.measure_name === name);
+        if (!entries.length) continue;
+        const entry = entries.find(m => {
+          try {
+            const r = CostsBenefits.calculate({
+              measureId: m.id, data,
+              discountRate: 0.03, carbonPriceEur: 60,
+              priceScenario: state.fuelScenario,
+            });
+            return !isNaN(r.npv);
+          } catch (_) { return false; }
+        });
+        if (!entry) continue;
+
+        const cps = isDR ? [state.carbonPrice] : [0, state.carbonPrice, 200];
+        const drs = isDR ? [0, 3, 7] : [state.discountRate];
+        for (const cp of cps) {
+          for (const dr of drs) {
+            try {
+              const r = CostsBenefits.calculate({
+                measureId: entry.id, data,
+                discountRate: dr / 100, carbonPriceEur: cp,
+                priceScenario: state.fuelScenario,
+              });
+              if (!isNaN(r.npv)) vals.push(r.npv);
+            } catch (_) {}
+          }
+        }
+      }
+    }
+    return vals;
+  }
+
   function renderAll() {
+    // Compute shared x-domain per domain group
+    const groupVals = {};
+    document.querySelectorAll('.tornado-chart[data-domain-group]').forEach(el => {
+      const g = el.dataset.domainGroup;
+      if (!groupVals[g]) groupVals[g] = [];
+      groupVals[g].push(...collectNpvsForEl(el));
+    });
+    const sharedDomains = {};
+    for (const [g, vals] of Object.entries(groupVals)) {
+      if (!vals.length) continue;
+      const [vMin, vMax] = d3.extent(vals);
+      const xPad = (vMax - vMin) * 0.06 || 20000;
+      sharedDomains[g] = d3.scaleLinear().domain([vMin - xPad, vMax + xPad]).nice().domain();
+    }
+
+    document.querySelectorAll('.tornado-chart[data-categories]').forEach(el => {
+      const cats   = el.dataset.categories.split('|');
+      const excl   = el.dataset.exclude ? el.dataset.exclude.split(',').map(s => s.trim()) : [];
+      const domain = el.dataset.domainGroup ? sharedDomains[el.dataset.domainGroup] || null : null;
+      renderMultiTornadoChart(el, cats, el.dataset.param || 'Cena uhlíku', excl, domain);
+    });
     document.querySelectorAll('.tornado-chart[data-category]').forEach(el => {
-      renderTornadoChart(el, el.dataset.category, el.dataset.param || 'Cena uhlíku');
+      const excl   = el.dataset.exclude ? el.dataset.exclude.split(',').map(s => s.trim()) : [];
+      const domain = el.dataset.domainGroup ? sharedDomains[el.dataset.domainGroup] || null : null;
+      renderTornadoChart(el, el.dataset.category, el.dataset.param || 'Cena uhlíku', excl, domain);
     });
     const qEl = document.getElementById('quadrant-wrap');
     if (qEl) renderQuadrantChart(qEl);
