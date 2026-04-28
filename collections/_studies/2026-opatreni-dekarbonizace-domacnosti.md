@@ -172,28 +172,67 @@ extra-scripts:
 }
 .row-detail-close:hover { color: #555; }
 
-.row-detail-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 24px;
+/* Stats grid — 4 columns: row-label + 3 data cols */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr 1fr 1fr;
+  row-gap: 6px;
   margin-bottom: 12px;
+  align-items: start;
 }
+
+/* Row category label (Peníze / Emise / Plyn) */
+.stats-row-lbl {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #ccc;
+  align-self: center;
+  padding-right: 4px;
+}
+
+/* Column header cells (top of col 2 and col 3) */
+.stats-col-hdr-cell {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #bbb;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* Individual stat cell */
 .row-detail-stat {
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
 .stat-lbl {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #999;
+  color: #aaa;
 }
 .stat-val {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #333;
+}
+.stat-sub {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #bbb;
+  margin-top: 1px;
+}
+
+/* Dashed left dividers on the NPV and CAPEX columns */
+.stats-cell-npv,
+.stats-cell-capex {
+  border-left: 1px dashed #e0e0e0;
+  padding-left: 10px;
 }
 
 .row-detail-section-label {

@@ -115,6 +115,10 @@
       return {
         npv:         { value: result.npv, low, high },
         co2Saved:    result.emissionSavings ? -result.emissionSavings.totalT : null,
+        capexDiff:   result.capexDiff,
+        sector:      result.sector,
+        gasSavings:  result.gasSavings,
+        fuelSavings: result.fuelSavings,
         sensitivity: sens,
       };
     } catch (e) {
@@ -141,6 +145,59 @@
     if (abs >= 100) return sign + fmtInt.format(Math.round(abs))           + '\u202ft CO₂';
     if (abs >= 1)   return sign + (Math.round(abs * 10) / 10).toFixed(1)  + '\u202ft CO₂';
     return sign + fmtInt.format(Math.round(abs * 1000)) + '\u202fkg CO₂';
+  }
+
+  // X t CO₂ (or kg CO₂) saved per 1 000 CZK of `czk`.
+  // Round x (positive) to 3 significant figures, no trailing zeros.
+  function fmt3sig(x) { return parseFloat(x.toPrecision(3)).toString(); }
+
+  // Kč needed to save 1 t CO₂ (czk signed: + = cost, − = earning).
+  function fmtCZKperT(czk, savedT) {
+    if (savedT == null || !savedT || !isFinite(czk / savedT)) return '—';
+    const v    = czk / savedT;
+    const sign = v < 0 ? '− ' : '';
+    const abs  = Math.abs(v);
+    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/t CO₂';
+    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/t CO₂';
+    return sign + fmt3sig(abs) + ' Kč/t CO₂';
+  }
+
+  // Kč needed to save 1 MWh of gas (czk signed: + = cost, − = earning).
+  function fmtCZKperMWh(czk, mwh) {
+    if (mwh == null || !mwh || !isFinite(czk / mwh)) return '—';
+    const v    = czk / mwh;
+    const sign = v < 0 ? '− ' : '';
+    const abs  = Math.abs(v);
+    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/MWh';
+    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/MWh';
+    return sign + fmt3sig(abs) + ' Kč/MWh';
+  }
+
+  // Kč needed to save 1 litre of fuel (czk signed: + = cost, − = earning).
+  function fmtCZKperL(czk, litres) {
+    if (litres == null || !litres || !isFinite(czk / litres)) return '—';
+    const v    = czk / litres;
+    const sign = v < 0 ? '− ' : '';
+    const abs  = Math.abs(v);
+    if (abs >= 1000) return sign + fmt3sig(abs / 1000) + ' tis. Kč/l';
+    return sign + fmt3sig(abs) + ' Kč/l';
+  }
+
+  function fmtL(litres) {
+    if (litres == null || !isFinite(litres)) return '—';
+    const sign = litres < 0 ? '− ' : '';
+    const abs  = Math.abs(litres);
+    if (abs >= 1000) return sign + fmtInt.format(Math.round(abs / 10) * 10) + ' l';
+    return sign + fmtInt.format(Math.round(abs)) + ' l';
+  }
+
+  function fmtMWh(mwh) {
+    if (mwh == null || !isFinite(mwh)) return '—';
+    const sign = mwh < 0 ? '− ' : '';
+    const abs  = Math.abs(mwh);
+    if (abs >= 1000) return sign + (Math.round(abs / 100) / 10).toFixed(1) + ' GWh';
+    if (abs >= 1)    return sign + fmtInt.format(Math.round(abs))           + ' MWh';
+    return sign + fmtInt.format(Math.round(abs * 1000)) + ' kWh';
   }
 
   // ── Controls ─────────────────────────────────────────────────────────────
@@ -362,6 +419,7 @@
   const ROW_H  = 54;
   const LABEL_W = 200;
   const CO2_W   = 150;
+  const FUEL_W  = 120;
   const MARGIN  = { top: 28, right: 16, bottom: 36 };
 
   function renderMeasureChart(container, section, measureName) {
@@ -385,6 +443,10 @@
           measureId:    m.id,
           npv:          calc.npv,
           co2Saved:     calc.co2Saved,
+          capexDiff:    calc.capexDiff,
+          sector:       calc.sector,
+          gasSavings:   calc.gasSavings,
+          fuelSavings:  calc.fuelSavings,
           sensitivity:  calc.sensitivity,
         };
       })
@@ -394,7 +456,7 @@
     if (!rows.length) { container.hidden = true; return; }
 
     const totalW = container.clientWidth || 640;
-    const chartW = Math.max(totalW - LABEL_W - CO2_W - MARGIN.right, 120);
+    const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - MARGIN.right, 120);
     const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
 
     const xScale = d3.scaleLinear()
@@ -410,6 +472,7 @@
       svg.append('text').attr('class', 'chart-col-header ctx-hdr').attr('x', 4).attr('y', 16).text('Kontext');
       svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
       svg.append('text').attr('class', 'chart-col-header co2-hdr').attr('text-anchor', 'start').attr('y', 16);
+      svg.append('text').attr('class', 'chart-col-header fuel-hdr').attr('text-anchor', 'start').attr('y', 16);
       svg.append('line').attr('class', 'zero-line')
         .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
       svg.append('g').attr('class', 'rows-g');
@@ -421,6 +484,8 @@
     // Update static elements
     svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
     svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
+    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8)
+      .text(isBuildings ? 'Úspora plynu' : 'Úspora PHM');
     svg.select('.zero-line')
       .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
       .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
@@ -461,6 +526,7 @@
     rowEnter.append('text').attr('class', 'npv-lbl')
       .attr('text-anchor', 'middle').attr('font-size', '14px');
     rowEnter.append('g').attr('class', 'co2-g');
+    rowEnter.append('g').attr('class', 'fuel-g');
 
     // MERGE — animate y; update all content
     const rowAll = rowSel.merge(rowEnter);
@@ -550,11 +616,46 @@
           .attr('width', SQ / 2).attr('height', SQ)
           .attr('fill', co2Color).attr('opacity', 0.7);
       }
-      const textX = sqX + Math.max(nCols, 1) * SQ_STEP + 2;
+      const textX = sqX + CO2_MAX_COLS * SQ_STEP + 4;
+      const extraCapexCO2 = row.capexDiff != null ? -row.capexDiff : null;
+      const co2RelStr = (row.co2Saved == null || !extraCapexCO2)
+        ? null : fmtCZKperT(extraCapexCO2, row.co2Saved);
       co2G.append('text')
-        .attr('x', textX).attr('y', mid + 5)
+        .attr('x', textX).attr('y', co2RelStr ? mid - 1 : mid + 5)
         .attr('font-size', '13px').attr('fill', co2Color)
         .text(fmtCO2(row.co2Saved));
+      if (co2RelStr) {
+        co2G.append('text')
+          .attr('x', textX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb')
+          .text(co2RelStr);
+      }
+
+      // Fuel / gas column
+      const fuelG    = g.select('.fuel-g');
+      const fuelColX = LABEL_W + chartW + CO2_W + 8;
+      fuelG.selectAll('*').remove();
+      const extraCapexF = row.capexDiff != null ? -row.capexDiff : null;
+      let fuelAbsStr = '—', fuelRelStr = null;
+      if (row.sector === 'transport' && row.fuelSavings) {
+        fuelAbsStr = fmtL(row.fuelSavings.totalL);
+        if (extraCapexF != null)
+          fuelRelStr = fmtCZKperL(extraCapexF, row.fuelSavings.totalL);
+      } else if (row.sector !== 'transport' && row.gasSavings) {
+        fuelAbsStr = fmtMWh(row.gasSavings.totalMwh);
+        if (extraCapexF != null)
+          fuelRelStr = fmtCZKperMWh(extraCapexF, row.gasSavings.totalMwh);
+      }
+      fuelG.append('text')
+        .attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
+        .attr('font-size', '13px').attr('fill', '#555')
+        .text(fuelAbsStr);
+      if (fuelRelStr) {
+        fuelG.append('text')
+          .attr('x', fuelColX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb')
+          .text(fuelRelStr);
+      }
     });
 
     rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
@@ -645,25 +746,95 @@
     hdr.appendChild(closeBtn);
     panel.appendChild(hdr);
 
-    // Stats strip
-    const statsEl = document.createElement('div');
-    statsEl.className = 'row-detail-stats';
-    const stats = [
-      { label: 'Návratnost',    value: result.paybackYear != null ? result.paybackYear + '\u202flet' : '—' },
-      { label: 'NPV',           value: fmtCZK(result.npv) },
-      { label: 'NPV bez disk.', value: fmtCZK(result.npvUndiscounted) },
-      { label: 'Rozdíl CAPEX',  value: fmtCZK(result.capexDiff) },
-    ];
-    if (result.emissionSavings) {
-      stats.push({ label: 'Úspora emisí', value: fmtCO2(-result.emissionSavings.totalT) });
+    // Stats grid (3 rows × 3 cols + row labels)
+    const savedT     = result.emissionSavings ? -result.emissionSavings.totalT : null;
+    const extraCapex = -result.capexDiff;   // positive = measure costs more than baseline
+
+    function makeStat(label, value, extraClass, tip, sub) {
+      const d = document.createElement('div');
+      d.className = 'row-detail-stat' + (extraClass ? ' ' + extraClass : '');
+      const subHtml = sub ? `<span class="stat-sub">${sub}</span>` : '';
+      d.innerHTML = `<span class="stat-lbl">${label}</span><span class="stat-val">${value}</span>${subHtml}`;
+      if (tip) {
+        d.addEventListener('mouseover', e => showTip(e, tip));
+        d.addEventListener('mousemove', moveTip);
+        d.addEventListener('mouseout',  hideTip);
+      }
+      return d;
     }
-    stats.forEach(({ label, value }) => {
-      const s = document.createElement('div');
-      s.className   = 'row-detail-stat';
-      s.innerHTML   = `<span class="stat-lbl">${label}</span><span class="stat-val">${value}</span>`;
-      statsEl.appendChild(s);
-    });
-    panel.appendChild(statsEl);
+    function makeRowLbl(text) {
+      const d = document.createElement('div');
+      d.className = 'stats-row-lbl';
+      d.textContent = text;
+      return d;
+    }
+    function makeColHdr(text, extraClass) {
+      const d = document.createElement('div');
+      d.className = 'stats-col-hdr-cell' + (extraClass ? ' ' + extraClass : '');
+      d.textContent = text;
+      return d;
+    }
+
+    const grid = document.createElement('div');
+    grid.className = 'stats-grid';
+
+    // Column header row
+    grid.appendChild(document.createElement('div'));           // empty corner
+    grid.appendChild(document.createElement('div'));           // col 1: no header
+    grid.appendChild(makeColHdr('Kč / NPV',      'stats-cell-npv'));
+    grid.appendChild(makeColHdr('Kč / diff CAPEX', 'stats-cell-capex'));
+
+    // Row 1: Money
+    const payVal = result.paybackYear != null ? result.paybackYear + ' let' : '—';
+    grid.appendChild(makeRowLbl('Peníze'));
+    grid.appendChild(makeStat('Návratnost',  payVal));
+    grid.appendChild(makeStat('NPV',           fmtCZK(result.npv),       'stats-cell-npv'));
+    grid.appendChild(makeStat('Rozdíl CAPEX', fmtCZK(result.capexDiff), 'stats-cell-capex'));
+
+    // Row 2: Emissions
+    if (savedT != null) {
+      grid.appendChild(makeRowLbl('Emise'));
+      grid.appendChild(makeStat('Úspora emisí', fmtCO2(savedT)));
+      grid.appendChild(makeStat('Kč/t CO₂',
+        fmtCZKperT(-result.npv, savedT), 'stats-cell-npv'));
+      grid.appendChild(makeStat('Kč/t CO₂',
+        fmtCZKperT(extraCapex, savedT), 'stats-cell-capex'));
+    }
+
+    // Row 3: natural gas (buildings) or liquid fuel/PHM (transport)
+    {
+      if (result.sector === 'transport') {
+        const fs       = result.fuelSavings;
+        const fsTotalL = fs ? fs.totalL  : null;
+        const fsAnnL   = fs ? fs.annualL : null;
+        const annSubFs = fsAnnL != null ? '(' + fmtL(fsAnnL) + '/rok)' : null;
+        grid.appendChild(makeRowLbl('PHM'));
+        grid.appendChild(makeStat('Úspora PHM celkem', fsTotalL != null ? fmtL(fsTotalL) : '—',
+          null, null, annSubFs));
+        grid.appendChild(makeStat('Kč/l',
+          fsTotalL == null ? '—' : fmtCZKperL(-result.npv, fsTotalL),
+          'stats-cell-npv'));
+        grid.appendChild(makeStat('Kč/l',
+          fsTotalL == null ? '—' : fmtCZKperL(extraCapex, fsTotalL),
+          'stats-cell-capex'));
+      } else {
+        const gs         = result.gasSavings;
+        const gsTotalMwh = gs ? gs.totalMwh  : null;
+        const gsAnnMwh   = gs ? gs.annualMwh : null;
+        const annSubGs   = gsAnnMwh != null ? '(' + fmtMWh(gsAnnMwh) + '/rok)' : null;
+        grid.appendChild(makeRowLbl('Plyn'));
+        grid.appendChild(makeStat('Úspora plynu celkem', gsTotalMwh != null ? fmtMWh(gsTotalMwh) : '—',
+          null, null, annSubGs));
+        grid.appendChild(makeStat('Kč/MWh',
+          gsTotalMwh == null ? '—' : fmtCZKperMWh(-result.npv, gsTotalMwh),
+          'stats-cell-npv'));
+        grid.appendChild(makeStat('Kč/MWh',
+          gsTotalMwh == null ? '—' : fmtCZKperMWh(extraCapex, gsTotalMwh),
+          'stats-cell-capex'));
+      }
+    }
+
+    panel.appendChild(grid);
 
     // NPV timeline chart
     const timelineEl = document.createElement('div');

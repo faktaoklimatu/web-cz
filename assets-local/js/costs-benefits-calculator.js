@@ -311,6 +311,41 @@ const CostsBenefits = (() => {
     return { totalT, totalKg, relative, perNpv, perCapexDiff };
   }
 
+  // Annual liquid-fuel consumption (litres) – Petrol or Diesel transport measures only.
+  const LIQUID_FUELS = new Set(['Petrol', 'Diesel']);
+  function annualFuelLitres(measure, sector) {
+    if (!LIQUID_FUELS.has(measure.fuel)) return 0;
+    if (sector === 'transport') return measure.demand_energy_per_100km * measure.mileage / 100;
+    return 0;
+  }
+
+  // Liquid-fuel (PHM) savings over the lifetime (litres) – transport only.
+  // Returns null when neither baseline nor measure uses liquid fuel.
+  function calcFuelSavings(baseline, measure, sector, lifetime) {
+    const annualBl   = annualFuelLitres(baseline, sector);
+    const annualMeas = annualFuelLitres(measure,  sector);
+    if (annualBl === 0 && annualMeas === 0) return null;
+    const annualSaved = annualBl - annualMeas;   // positive = saving fuel
+    return { annualL: annualSaved, totalL: annualSaved * lifetime };
+  }
+
+  // Annual natural-gas consumption (MWh) – buildings measures only.
+  function annualGasMwh(measure, sector) {
+    if (measure.fuel !== 'Gas') return 0;
+    if (sector === 'buildings') return computeHeatDemand(measure);
+    return 0;
+  }
+
+  // Natural-gas savings over the lifetime (MWh) – buildings only.
+  // Returns null when neither baseline nor measure uses gas.
+  function calcGasSavings(baseline, measure, sector, lifetime) {
+    const annualBl   = annualGasMwh(baseline, sector);
+    const annualMeas = annualGasMwh(measure,  sector);
+    if (annualBl === 0 && annualMeas === 0) return null;
+    const annualSaved = annualBl - annualMeas;   // positive = saving gas
+    return { annualMwh: annualSaved, totalMwh: annualSaved * lifetime };
+  }
+
   function calcEnergySavings(yearByYear, npv, capexDiff) {
     // Buildings only – returns null if energy data not present
     const hasEnergy = yearByYear.some(r => r.year > 0 && r.energyDiff !== null);
@@ -470,11 +505,6 @@ const CostsBenefits = (() => {
     const baseOpts = { discountRate, carbonPriceEur, exchangeRate };
 
     const npv = computeNpv(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors);
-    const npvUndiscounted = computeNpv(
-      baseline, measure, sector, scenarioPrices,
-      { ...baseOpts, discountRate: 0 },
-      emissionFactors
-    );
 
     const capexDiff  = getCapex(baseline) - getCapex(measure);
     const yearByYear = buildYearByYear(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors);
@@ -486,10 +516,11 @@ const CostsBenefits = (() => {
       lifetime,
       capexDiff,
       npv,
-      npvUndiscounted,
       paybackYear:     calcPaybackYear(yearByYear),
       emissionSavings: calcEmissionSavings(yearByYear, npv, capexDiff),
       energySavings:   calcEnergySavings(yearByYear, npv, capexDiff),  // null for transport
+      fuelSavings:     calcFuelSavings(baseline, measure, sector, lifetime),
+      gasSavings:      calcGasSavings(baseline, measure, sector, lifetime),
       yearByYear,
       sensitivity:     computeSensitivity(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors),
     };
