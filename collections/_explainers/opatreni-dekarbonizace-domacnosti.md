@@ -117,6 +117,112 @@ extra-scripts:
 }
 .tornado-chart svg { display: block; }
 
+.quadrant-wrap {
+  margin: 4px 0 24px;
+}
+.quadrant-chart {
+  overflow-x: auto;
+}
+.quadrant-chart svg { display: block; }
+
+.q-quad-label {
+  font-size: 10px;
+  fill: #bbb;
+  font-style: italic;
+}
+
+.q-axis-label {
+  font-size: 12px;
+  fill: #666;
+  font-weight: 500;
+}
+
+/* ── Quadrant filters ──────────────────────────────────────────────────────── */
+.q-filters {
+  margin-bottom: 10px;
+}
+.q-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin-bottom: 6px;
+}
+.q-filter-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #999;
+  margin-right: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.q-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px 3px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f8f8f8;
+  color: #bbb;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1.6;
+  transition: border-color 0.12s, color 0.12s, background 0.12s, opacity 0.12s;
+}
+.q-filter-btn.active {
+  background: #fff;
+  color: #333;
+  border-color: #bbb;
+}
+.q-filter-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.35;
+  transition: opacity 0.12s;
+}
+.q-filter-btn.active .q-filter-dot { opacity: 1; }
+.q-sector-btn.active[data-sector="buildings"] { color: #2860b4; border-color: #2860b4; }
+.q-sector-btn.active[data-sector="transport"] { color: #6b4fa0; border-color: #6b4fa0; }
+
+/* ── Static comparison chart toggle ────────────────────────────────────────── */
+.static-chart-toggle-wrap {
+  margin-top: 12px;
+}
+.static-chart-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 14px 6px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  background: #f8f8f8;
+  color: #555;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.static-chart-toggle-btn:hover { background: #f0f0f0; border-color: #bbb; }
+.static-chart-toggle-btn[aria-expanded="true"] { background: #fff; border-color: #aaa; color: #333; }
+.static-chart-toggle-icon {
+  font-size: 9px;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+.static-chart-toggle-btn[aria-expanded="true"] .static-chart-toggle-icon {
+  transform: rotate(90deg);
+}
+.static-comparison-chart {
+  margin-top: 12px;
+}
+
 .chart-col-header {
   font-size: 10px;
   fill: #999;
@@ -202,6 +308,29 @@ extra-scripts:
       </select>
     </div>
 
+  </div>
+</div>
+
+<div class="section pt-3 pb-2">
+  <div class="container">
+    <p class="chart-col-header mb-2">Nákladová efektivita opatření</p>
+    <div id="quadrant-wrap" class="quadrant-wrap">
+      <div id="quadrant-chart" class="quadrant-chart"></div>
+    </div>
+    <div class="static-chart-toggle-wrap">
+      <button id="static-chart-toggle" class="static-chart-toggle-btn" aria-expanded="false">
+        <span class="static-chart-toggle-icon">▶</span>
+        Porovnání scénářů ceny uhlíku: 60 € vs. 200 €
+      </button>
+      <div id="static-comparison-chart" class="quadrant-chart static-comparison-chart" hidden></div>
+    </div>
+  </div>
+</div>
+
+<div class="section pt-3 pb-2">
+  <div class="container">
+    <p class="chart-col-header mb-2">Křivka marginálních nákladů dekarbonizace (MAC curve)</p>
+    <div id="mac-chart" style="overflow-x:auto;"></div>
   </div>
 </div>
 
