@@ -140,7 +140,7 @@ EPA společenské náklady uhlíku počítá na základě čtyř komponent:
 
 Výsledný odhad SCC je daný tzv. Monte Carlo simulací, která umožňuje modelovat nejistotu v parametrech jednotlivých komponent prostřednictvím simulace mnoha různých scénářů současně. Výstupem modelu je pak celé pravděpodobnostní rozložení společenských nákladů uhlíku. Výsledné hodnoty SCC jsou průměrem ze všech modelovaných scénářů.
 
-Při nižší diskontní míře roste hodnota přisuzovaná budoucím škodám, což zároveň zvyšuje nejistotu v odhadu SCC, protože míra škod ve vzdálené budoucnosti je sama o sobě nejistá. Například ve [studii](https://www.nature.com/articles/s41586-022-05224-9) Renner et al. (2022) v základním scénáři s 2% diskontní mírou je 5. percentil odhadu 44 $, průměr 185 $ a 95. percentil 413 $ na tunu CO<sub>2</sub>.
+Při nižší diskontní míře roste hodnota přisuzovaná budoucím škodám, což zároveň zvyšuje nejistotu v odhadu SCC, protože míra škod ve vzdálené budoucnosti je sama o sobě nejistá. Například ve [studii](https://www.nature.com/articles/s41586-022-05224-9) Rennert et al. (2022) v základním scénáři s 2% diskontní mírou je 5. percentil odhadu 44 $, průměr 185 $ a 95. percentil 413 $ na tunu CO<sub>2</sub>.
 
 {% include figure.html
     name="nejistota.png"
