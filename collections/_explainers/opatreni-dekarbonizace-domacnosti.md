@@ -43,6 +43,10 @@ extra-scripts:
   max-width: 220px;
   justify-content: flex-end;
 }
+.control-group--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
 
 .control-head {
   display: flex;
@@ -247,6 +251,15 @@ extra-scripts:
   <div class="container page-title">{{ page.title }}</div>
   <div class="container controls-inner">
 
+    <div class="control-group control-group--select">
+      <label class="control-label" for="fuel-scenario-select">Scénář cen energií</label>
+      <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
+        <option value="CP">Současné politiky</option>
+        <option value="NZ">Net-zero</option>
+        <option value="CP_EC">Energetická krize</option>
+      </select>
+    </div>
+
     <div class="control-group">
       <div class="control-head">
         <span class="control-label">Cena uhlíku</span>
@@ -297,15 +310,6 @@ extra-scripts:
           </span>
         </div>
       </div>
-    </div>
-
-    <div class="control-group control-group--select">
-      <label class="control-label" for="fuel-scenario-select">Scénář cen energií</label>
-      <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
-        <option value="CP">Současné politiky</option>
-        <option value="NZ">Net-zero</option>
-        <option value="CP_EC">Energetická krize</option>
-      </select>
     </div>
 
   </div>
@@ -385,5 +389,56 @@ extra-scripts:
       </div>
     </div>
 
+  </div>
+</div>
+
+<div class="section pt-3 pb-2">
+  <div class="container">
+    <p class="chart-col-header mb-2">Náklady na tunu ušetřeného CO₂ — rozložení opatření</p>
+    <div id="beeswarm-chart"></div>
+  </div>
+</div>
+
+<div class="section pt-3 pb-2">
+  <div class="container">
+    <p class="chart-col-header mb-2">Rozdíl v investičních nákladech na tunu ušetřeného CO₂</p>
+    <div id="beeswarm-capex-chart"></div>
+  </div>
+</div>
+
+<div class="section pt-3 pb-4">
+  <div class="container">
+    <p class="chart-col-header mb-2">NPV opatření v různých cenových scénářích</p>
+    <div id="dumbbell-legend" style="margin-bottom:1rem;"></div>
+    <div style="display:flex; gap:2rem; margin-bottom:1.5rem;">
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#2860b4">Rodinný dům uhlí – E</p>
+        <div id="dumbbell-rd-uhli-e"></div>
+      </div>
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#2860b4">Rodinný dům plyn – E</p>
+        <div id="dumbbell-rd-plyn-e"></div>
+      </div>
+    </div>
+    <div style="display:flex; gap:2rem; margin-bottom:1.5rem;">
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#6b4fa0">Nové malé</p>
+        <div id="dumbbell-nove-male"></div>
+      </div>
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#6b4fa0">Nové velké</p>
+        <div id="dumbbell-nove-velke"></div>
+      </div>
+    </div>
+    <div style="display:flex; gap:2rem;">
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#6b4fa0">Ojeté malé</p>
+        <div id="dumbbell-ojete-male"></div>
+      </div>
+      <div style="flex:1; min-width:0;">
+        <p class="chart-col-header mb-1" style="color:#6b4fa0">Ojeté velké</p>
+        <div id="dumbbell-ojete-velke"></div>
+      </div>
+    </div>
   </div>
 </div>

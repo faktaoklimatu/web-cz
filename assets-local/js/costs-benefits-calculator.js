@@ -57,9 +57,19 @@ const CostsBenefits = (() => {
   // ---------------------------------------------------------------------------
 
   function getPricesForScenario(data, scenario) {
-    const entry = data.fuel_scenarios.find(s => s.scenario === scenario);
-    if (!entry) throw new Error(`Unknown price scenario: ${scenario}`);
-    return entry.prices;
+    const entries = data.fuel_scenarios.filter(s => s.scenario === scenario);
+    if (!entries.length) throw new Error(`Unknown price scenario: ${scenario}`);
+    if (entries.length === 1) return entries[0].prices;
+
+    // Multiple entries per scenario (one per fuel type): merge all into a single
+    // prices array keyed by year_investment, with later entries' fields overwriting earlier ones.
+    const yearMap = {};
+    for (const entry of entries) {
+      for (const p of entry.prices) {
+        yearMap[p.year_investment] = Object.assign(yearMap[p.year_investment] || {}, p);
+      }
+    }
+    return Object.values(yearMap).sort((a, b) => a.year_investment - b.year_investment);
   }
 
   function getPricesForYear(scenarioPrices, yearInvestment) {
@@ -163,7 +173,7 @@ const CostsBenefits = (() => {
     const fuelPriceMult  = opts.fuelPriceMult  !== undefined ? opts.fuelPriceMult  : 1.0;
     const fuelPriceName  = opts.fuelPriceName  || null;
 
-    const sccCzk   = carbonPriceEur * exchangeRate;
+    const sccCzkDefault = carbonPriceEur * exchangeRate;
     const lifetime = Math.min(baseline.lifetime, measure.lifetime);
     const capexDiff = getCapex(baseline) * capexBlMult - getCapex(measure) * capexMeasMult;
 
@@ -175,6 +185,11 @@ const CostsBenefits = (() => {
 
       // Apply optional fuel price multiplier for sensitivity analysis
       const yearPrices = applyFuelPriceMult(rawPrices, fuelPriceName, fuelPriceMult);
+
+      // Use per-year NZ carbon price trajectory when available
+      const sccCzk = yearPrices.carbon_price_eur_nz != null
+        ? yearPrices.carbon_price_eur_nz * exchangeRate
+        : sccCzkDefault;
 
       const discFactor = discountRate === 0 ? 1 : 1 / Math.pow(1 + discountRate, t);
 
@@ -204,7 +219,7 @@ const CostsBenefits = (() => {
     const discountRate   = opts.discountRate   !== undefined ? opts.discountRate   : DEFAULT_DISCOUNT_RATE;
     const carbonPriceEur = opts.carbonPriceEur !== undefined ? opts.carbonPriceEur : DEFAULT_CARBON_PRICE_EUR;
     const exchangeRate   = opts.exchangeRate   !== undefined ? opts.exchangeRate   : DEFAULT_EXCHANGE_RATE;
-    const sccCzk         = carbonPriceEur * exchangeRate;
+    const sccCzkDefault  = carbonPriceEur * exchangeRate;
     const lifetime       = Math.min(baseline.lifetime, measure.lifetime);
     const capexDiff      = getCapex(baseline) - getCapex(measure);
 
@@ -231,6 +246,10 @@ const CostsBenefits = (() => {
     for (let t = 1; t <= lifetime; t++) {
       const yearPrices = getPricesForYear(scenarioPrices, t);
       if (!yearPrices) continue;
+
+      const sccCzk = yearPrices.carbon_price_eur_nz != null
+        ? yearPrices.carbon_price_eur_nz * exchangeRate
+        : sccCzkDefault;
 
       const discFactor = discountRate === 0 ? 1 : 1 / Math.pow(1 + discountRate, t);
 

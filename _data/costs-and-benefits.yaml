@@ -1116,1084 +1116,2682 @@ fuel_scenarios:
   - year_calendar: 2026
     year_investment: 1
     gas: 2719
-    lignite: 1420
-    biomass: 1651
-    electricity: 4464
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 401
   - year_calendar: 2027
     year_investment: 2
     gas: 2709
-    lignite: 1420
-    biomass: 1660
-    electricity: 4446
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 381
   - year_calendar: 2028
     year_investment: 3
     gas: 2699
-    lignite: 1420
-    biomass: 1670
-    electricity: 4427
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 362
   - year_calendar: 2029
     year_investment: 4
     gas: 2688
-    lignite: 1420
-    biomass: 1679
-    electricity: 4409
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 342
   - year_calendar: 2030
     year_investment: 5
     gas: 2678
-    lignite: 1420
-    biomass: 1688
-    electricity: 4391
-    petrol: 36
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 322
   - year_calendar: 2031
     year_investment: 6
     gas: 2668
-    lignite: 1420
-    biomass: 1698
-    electricity: 4373
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 302
   - year_calendar: 2032
     year_investment: 7
     gas: 2657
-    lignite: 1420
-    biomass: 1707
-    electricity: 4355
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 283
   - year_calendar: 2033
     year_investment: 8
     gas: 2647
-    lignite: 1420
-    biomass: 1716
-    electricity: 4336
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 263
   - year_calendar: 2034
     year_investment: 9
     gas: 2637
-    lignite: 1420
-    biomass: 1725
-    electricity: 4318
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 243
   - year_calendar: 2035
     year_investment: 10
     gas: 2626
-    lignite: 1420
-    biomass: 1735
-    electricity: 4300
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 224
   - year_calendar: 2036
     year_investment: 11
     gas: 2636
-    lignite: 1420
-    biomass: 1744
-    electricity: 4283
-    petrol: 37
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 204
   - year_calendar: 2037
     year_investment: 12
     gas: 2645
-    lignite: 1420
-    biomass: 1754
-    electricity: 4267
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 184
   - year_calendar: 2038
     year_investment: 13
     gas: 2655
-    lignite: 1420
-    biomass: 1763
-    electricity: 4250
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 164
   - year_calendar: 2039
     year_investment: 14
     gas: 2664
-    lignite: 1420
-    biomass: 1773
-    electricity: 4233
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 145
   - year_calendar: 2040
     year_investment: 15
     gas: 2674
-    lignite: 1420
-    biomass: 1782
-    electricity: 4217
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 125
   - year_calendar: 2041
     year_investment: 16
     gas: 2683
-    lignite: 1420
-    biomass: 1792
-    electricity: 4200
-    petrol: 38
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 120
   - year_calendar: 2042
     year_investment: 17
     gas: 2693
-    lignite: 1420
-    biomass: 1801
-    electricity: 4183
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 115
   - year_calendar: 2043
     year_investment: 18
     gas: 2702
-    lignite: 1420
-    biomass: 1811
-    electricity: 4167
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2044
     year_investment: 19
     gas: 2712
-    lignite: 1420
-    biomass: 1820
-    electricity: 4150
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 105
   - year_calendar: 2045
     year_investment: 20
     gas: 2721
-    lignite: 1420
-    biomass: 1830
-    electricity: 4133
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 100
   - year_calendar: 2046
     year_investment: 21
     gas: 2731
-    lignite: 1420
-    biomass: 1839
-    electricity: 4117
-    petrol: 39
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 95
   - year_calendar: 2047
     year_investment: 22
     gas: 2740
-    lignite: 1420
-    biomass: 1849
-    electricity: 4100
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 90
   - year_calendar: 2048
     year_investment: 23
     gas: 2750
-    lignite: 1420
-    biomass: 1859
-    electricity: 4083
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 85
   - year_calendar: 2049
     year_investment: 24
     gas: 2759
-    lignite: 1420
-    biomass: 1868
-    electricity: 4067
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 80
   - year_calendar: 2050
     year_investment: 25
     gas: 2769
-    lignite: 1420
-    biomass: 1878
-    electricity: 4050
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2051
     year_investment: 26
     gas: 2778
-    lignite: 1420
-    biomass: 1887
-    electricity: 4033
-    petrol: 40
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 70
   - year_calendar: 2052
     year_investment: 27
     gas: 2788
-    lignite: 1420
-    biomass: 1897
-    electricity: 4017
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 65
   - year_calendar: 2053
     year_investment: 28
     gas: 2797
-    lignite: 1420
-    biomass: 1906
-    electricity: 4000
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 60
   - year_calendar: 2054
     year_investment: 29
     gas: 2807
-    lignite: 1420
-    biomass: 1916
-    electricity: 3983
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 55
   - year_calendar: 2055
     year_investment: 30
     gas: 2816
-    lignite: 1420
-    biomass: 1925
-    electricity: 3967
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2056
     year_investment: 31
     gas: 2826
-    lignite: 1420
-    biomass: 1935
-    electricity: 3950
-    petrol: 41
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2057
     year_investment: 32
     gas: 2835
-    lignite: 1420
-    biomass: 1944
-    electricity: 3933
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2058
     year_investment: 33
     gas: 2845
-    lignite: 1420
-    biomass: 1954
-    electricity: 3917
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2059
     year_investment: 34
     gas: 2854
-    lignite: 1420
-    biomass: 1963
-    electricity: 3900
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 30
   - year_calendar: 2060
     year_investment: 35
     gas: 2864
-    lignite: 1420
-    biomass: 1973
-    electricity: 3883
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 25
   - year_calendar: 2061
     year_investment: 36
     gas: 2873
-    lignite: 1420
-    biomass: 1982
-    electricity: 3867
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 20
   - year_calendar: 2062
     year_investment: 37
     gas: 2883
-    lignite: 1420
-    biomass: 1992
-    electricity: 3850
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 15
   - year_calendar: 2063
     year_investment: 38
     gas: 2892
-    lignite: 1420
-    biomass: 2001
-    electricity: 3833
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 10
   - year_calendar: 2064
     year_investment: 39
     gas: 2902
-    lignite: 1420
-    biomass: 2011
-    electricity: 3817
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2065
     year_investment: 40
     gas: 2911
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
     lignite: 1420
+  - year_calendar: 2027
+    year_investment: 2
+    lignite: 1420
+  - year_calendar: 2028
+    year_investment: 3
+    lignite: 1420
+  - year_calendar: 2029
+    year_investment: 4
+    lignite: 1420
+  - year_calendar: 2030
+    year_investment: 5
+    lignite: 1420
+  - year_calendar: 2031
+    year_investment: 6
+    lignite: 1420
+  - year_calendar: 2032
+    year_investment: 7
+    lignite: 1420
+  - year_calendar: 2033
+    year_investment: 8
+    lignite: 1420
+  - year_calendar: 2034
+    year_investment: 9
+    lignite: 1420
+  - year_calendar: 2035
+    year_investment: 10
+    lignite: 1420
+  - year_calendar: 2036
+    year_investment: 11
+    lignite: 1420
+  - year_calendar: 2037
+    year_investment: 12
+    lignite: 1420
+  - year_calendar: 2038
+    year_investment: 13
+    lignite: 1420
+  - year_calendar: 2039
+    year_investment: 14
+    lignite: 1420
+  - year_calendar: 2040
+    year_investment: 15
+    lignite: 1420
+  - year_calendar: 2041
+    year_investment: 16
+    lignite: 1420
+  - year_calendar: 2042
+    year_investment: 17
+    lignite: 1420
+  - year_calendar: 2043
+    year_investment: 18
+    lignite: 1420
+  - year_calendar: 2044
+    year_investment: 19
+    lignite: 1420
+  - year_calendar: 2045
+    year_investment: 20
+    lignite: 1420
+  - year_calendar: 2046
+    year_investment: 21
+    lignite: 1420
+  - year_calendar: 2047
+    year_investment: 22
+    lignite: 1420
+  - year_calendar: 2048
+    year_investment: 23
+    lignite: 1420
+  - year_calendar: 2049
+    year_investment: 24
+    lignite: 1420
+  - year_calendar: 2050
+    year_investment: 25
+    lignite: 1420
+  - year_calendar: 2051
+    year_investment: 26
+    lignite: 1420
+  - year_calendar: 2052
+    year_investment: 27
+    lignite: 1420
+  - year_calendar: 2053
+    year_investment: 28
+    lignite: 1420
+  - year_calendar: 2054
+    year_investment: 29
+    lignite: 1420
+  - year_calendar: 2055
+    year_investment: 30
+    lignite: 1420
+  - year_calendar: 2056
+    year_investment: 31
+    lignite: 1420
+  - year_calendar: 2057
+    year_investment: 32
+    lignite: 1420
+  - year_calendar: 2058
+    year_investment: 33
+    lignite: 1420
+  - year_calendar: 2059
+    year_investment: 34
+    lignite: 1420
+  - year_calendar: 2060
+    year_investment: 35
+    lignite: 1420
+  - year_calendar: 2061
+    year_investment: 36
+    lignite: 1420
+  - year_calendar: 2062
+    year_investment: 37
+    lignite: 1420
+  - year_calendar: 2063
+    year_investment: 38
+    lignite: 1420
+  - year_calendar: 2064
+    year_investment: 39
+    lignite: 1420
+  - year_calendar: 2065
+    year_investment: 40
+    lignite: 1420
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    biomass: 1651
+  - year_calendar: 2027
+    year_investment: 2
+    biomass: 1660
+  - year_calendar: 2028
+    year_investment: 3
+    biomass: 1670
+  - year_calendar: 2029
+    year_investment: 4
+    biomass: 1679
+  - year_calendar: 2030
+    year_investment: 5
+    biomass: 1688
+  - year_calendar: 2031
+    year_investment: 6
+    biomass: 1698
+  - year_calendar: 2032
+    year_investment: 7
+    biomass: 1707
+  - year_calendar: 2033
+    year_investment: 8
+    biomass: 1716
+  - year_calendar: 2034
+    year_investment: 9
+    biomass: 1725
+  - year_calendar: 2035
+    year_investment: 10
+    biomass: 1735
+  - year_calendar: 2036
+    year_investment: 11
+    biomass: 1744
+  - year_calendar: 2037
+    year_investment: 12
+    biomass: 1754
+  - year_calendar: 2038
+    year_investment: 13
+    biomass: 1763
+  - year_calendar: 2039
+    year_investment: 14
+    biomass: 1773
+  - year_calendar: 2040
+    year_investment: 15
+    biomass: 1782
+  - year_calendar: 2041
+    year_investment: 16
+    biomass: 1792
+  - year_calendar: 2042
+    year_investment: 17
+    biomass: 1801
+  - year_calendar: 2043
+    year_investment: 18
+    biomass: 1811
+  - year_calendar: 2044
+    year_investment: 19
+    biomass: 1820
+  - year_calendar: 2045
+    year_investment: 20
+    biomass: 1830
+  - year_calendar: 2046
+    year_investment: 21
+    biomass: 1839
+  - year_calendar: 2047
+    year_investment: 22
+    biomass: 1849
+  - year_calendar: 2048
+    year_investment: 23
+    biomass: 1859
+  - year_calendar: 2049
+    year_investment: 24
+    biomass: 1868
+  - year_calendar: 2050
+    year_investment: 25
+    biomass: 1878
+  - year_calendar: 2051
+    year_investment: 26
+    biomass: 1887
+  - year_calendar: 2052
+    year_investment: 27
+    biomass: 1897
+  - year_calendar: 2053
+    year_investment: 28
+    biomass: 1906
+  - year_calendar: 2054
+    year_investment: 29
+    biomass: 1916
+  - year_calendar: 2055
+    year_investment: 30
+    biomass: 1925
+  - year_calendar: 2056
+    year_investment: 31
+    biomass: 1935
+  - year_calendar: 2057
+    year_investment: 32
+    biomass: 1944
+  - year_calendar: 2058
+    year_investment: 33
+    biomass: 1954
+  - year_calendar: 2059
+    year_investment: 34
+    biomass: 1963
+  - year_calendar: 2060
+    year_investment: 35
+    biomass: 1973
+  - year_calendar: 2061
+    year_investment: 36
+    biomass: 1982
+  - year_calendar: 2062
+    year_investment: 37
+    biomass: 1992
+  - year_calendar: 2063
+    year_investment: 38
+    biomass: 2001
+  - year_calendar: 2064
+    year_investment: 39
+    biomass: 2011
+  - year_calendar: 2065
+    year_investment: 40
     biomass: 2020
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity: 4464
+  - year_calendar: 2027
+    year_investment: 2
+    electricity: 4446
+  - year_calendar: 2028
+    year_investment: 3
+    electricity: 4427
+  - year_calendar: 2029
+    year_investment: 4
+    electricity: 4409
+  - year_calendar: 2030
+    year_investment: 5
+    electricity: 4391
+  - year_calendar: 2031
+    year_investment: 6
+    electricity: 4373
+  - year_calendar: 2032
+    year_investment: 7
+    electricity: 4355
+  - year_calendar: 2033
+    year_investment: 8
+    electricity: 4336
+  - year_calendar: 2034
+    year_investment: 9
+    electricity: 4318
+  - year_calendar: 2035
+    year_investment: 10
+    electricity: 4300
+  - year_calendar: 2036
+    year_investment: 11
+    electricity: 4283
+  - year_calendar: 2037
+    year_investment: 12
+    electricity: 4267
+  - year_calendar: 2038
+    year_investment: 13
+    electricity: 4250
+  - year_calendar: 2039
+    year_investment: 14
+    electricity: 4233
+  - year_calendar: 2040
+    year_investment: 15
+    electricity: 4217
+  - year_calendar: 2041
+    year_investment: 16
+    electricity: 4200
+  - year_calendar: 2042
+    year_investment: 17
+    electricity: 4183
+  - year_calendar: 2043
+    year_investment: 18
+    electricity: 4167
+  - year_calendar: 2044
+    year_investment: 19
+    electricity: 4150
+  - year_calendar: 2045
+    year_investment: 20
+    electricity: 4133
+  - year_calendar: 2046
+    year_investment: 21
+    electricity: 4117
+  - year_calendar: 2047
+    year_investment: 22
+    electricity: 4100
+  - year_calendar: 2048
+    year_investment: 23
+    electricity: 4083
+  - year_calendar: 2049
+    year_investment: 24
+    electricity: 4067
+  - year_calendar: 2050
+    year_investment: 25
+    electricity: 4050
+  - year_calendar: 2051
+    year_investment: 26
+    electricity: 4033
+  - year_calendar: 2052
+    year_investment: 27
+    electricity: 4017
+  - year_calendar: 2053
+    year_investment: 28
+    electricity: 4000
+  - year_calendar: 2054
+    year_investment: 29
+    electricity: 3983
+  - year_calendar: 2055
+    year_investment: 30
+    electricity: 3967
+  - year_calendar: 2056
+    year_investment: 31
+    electricity: 3950
+  - year_calendar: 2057
+    year_investment: 32
+    electricity: 3933
+  - year_calendar: 2058
+    year_investment: 33
+    electricity: 3917
+  - year_calendar: 2059
+    year_investment: 34
+    electricity: 3900
+  - year_calendar: 2060
+    year_investment: 35
+    electricity: 3883
+  - year_calendar: 2061
+    year_investment: 36
+    electricity: 3867
+  - year_calendar: 2062
+    year_investment: 37
+    electricity: 3850
+  - year_calendar: 2063
+    year_investment: 38
+    electricity: 3833
+  - year_calendar: 2064
+    year_investment: 39
+    electricity: 3817
+  - year_calendar: 2065
+    year_investment: 40
     electricity: 3800
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    petrol: 35
+  - year_calendar: 2027
+    year_investment: 2
+    petrol: 35
+  - year_calendar: 2028
+    year_investment: 3
+    petrol: 35
+  - year_calendar: 2029
+    year_investment: 4
+    petrol: 35
+  - year_calendar: 2030
+    year_investment: 5
+    petrol: 36
+  - year_calendar: 2031
+    year_investment: 6
+    petrol: 36
+  - year_calendar: 2032
+    year_investment: 7
+    petrol: 36
+  - year_calendar: 2033
+    year_investment: 8
+    petrol: 36
+  - year_calendar: 2034
+    year_investment: 9
+    petrol: 36
+  - year_calendar: 2035
+    year_investment: 10
+    petrol: 36
+  - year_calendar: 2036
+    year_investment: 11
+    petrol: 37
+  - year_calendar: 2037
+    year_investment: 12
+    petrol: 37
+  - year_calendar: 2038
+    year_investment: 13
+    petrol: 37
+  - year_calendar: 2039
+    year_investment: 14
+    petrol: 37
+  - year_calendar: 2040
+    year_investment: 15
+    petrol: 37
+  - year_calendar: 2041
+    year_investment: 16
+    petrol: 38
+  - year_calendar: 2042
+    year_investment: 17
+    petrol: 38
+  - year_calendar: 2043
+    year_investment: 18
+    petrol: 38
+  - year_calendar: 2044
+    year_investment: 19
+    petrol: 38
+  - year_calendar: 2045
+    year_investment: 20
+    petrol: 38
+  - year_calendar: 2046
+    year_investment: 21
+    petrol: 39
+  - year_calendar: 2047
+    year_investment: 22
+    petrol: 39
+  - year_calendar: 2048
+    year_investment: 23
+    petrol: 39
+  - year_calendar: 2049
+    year_investment: 24
+    petrol: 39
+  - year_calendar: 2050
+    year_investment: 25
+    petrol: 39
+  - year_calendar: 2051
+    year_investment: 26
+    petrol: 40
+  - year_calendar: 2052
+    year_investment: 27
+    petrol: 40
+  - year_calendar: 2053
+    year_investment: 28
+    petrol: 40
+  - year_calendar: 2054
+    year_investment: 29
+    petrol: 40
+  - year_calendar: 2055
+    year_investment: 30
+    petrol: 40
+  - year_calendar: 2056
+    year_investment: 31
+    petrol: 41
+  - year_calendar: 2057
+    year_investment: 32
+    petrol: 41
+  - year_calendar: 2058
+    year_investment: 33
+    petrol: 41
+  - year_calendar: 2059
+    year_investment: 34
+    petrol: 41
+  - year_calendar: 2060
+    year_investment: 35
+    petrol: 41
+  - year_calendar: 2061
+    year_investment: 36
     petrol: 42
+  - year_calendar: 2062
+    year_investment: 37
+    petrol: 42
+  - year_calendar: 2063
+    year_investment: 38
+    petrol: 42
+  - year_calendar: 2064
+    year_investment: 39
+    petrol: 42
+  - year_calendar: 2065
+    year_investment: 40
+    petrol: 42
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    diesel: 33
+  - year_calendar: 2027
+    year_investment: 2
+    diesel: 33
+  - year_calendar: 2028
+    year_investment: 3
+    diesel: 33
+  - year_calendar: 2029
+    year_investment: 4
+    diesel: 33
+  - year_calendar: 2030
+    year_investment: 5
+    diesel: 33
+  - year_calendar: 2031
+    year_investment: 6
+    diesel: 34
+  - year_calendar: 2032
+    year_investment: 7
+    diesel: 34
+  - year_calendar: 2033
+    year_investment: 8
+    diesel: 34
+  - year_calendar: 2034
+    year_investment: 9
+    diesel: 34
+  - year_calendar: 2035
+    year_investment: 10
+    diesel: 34
+  - year_calendar: 2036
+    year_investment: 11
+    diesel: 34
+  - year_calendar: 2037
+    year_investment: 12
+    diesel: 35
+  - year_calendar: 2038
+    year_investment: 13
+    diesel: 35
+  - year_calendar: 2039
+    year_investment: 14
+    diesel: 35
+  - year_calendar: 2040
+    year_investment: 15
+    diesel: 35
+  - year_calendar: 2041
+    year_investment: 16
+    diesel: 35
+  - year_calendar: 2042
+    year_investment: 17
+    diesel: 36
+  - year_calendar: 2043
+    year_investment: 18
+    diesel: 36
+  - year_calendar: 2044
+    year_investment: 19
+    diesel: 36
+  - year_calendar: 2045
+    year_investment: 20
+    diesel: 36
+  - year_calendar: 2046
+    year_investment: 21
+    diesel: 36
+  - year_calendar: 2047
+    year_investment: 22
+    diesel: 37
+  - year_calendar: 2048
+    year_investment: 23
+    diesel: 37
+  - year_calendar: 2049
+    year_investment: 24
+    diesel: 37
+  - year_calendar: 2050
+    year_investment: 25
+    diesel: 37
+  - year_calendar: 2051
+    year_investment: 26
+    diesel: 37
+  - year_calendar: 2052
+    year_investment: 27
+    diesel: 38
+  - year_calendar: 2053
+    year_investment: 28
+    diesel: 38
+  - year_calendar: 2054
+    year_investment: 29
+    diesel: 38
+  - year_calendar: 2055
+    year_investment: 30
+    diesel: 38
+  - year_calendar: 2056
+    year_investment: 31
+    diesel: 38
+  - year_calendar: 2057
+    year_investment: 32
+    diesel: 39
+  - year_calendar: 2058
+    year_investment: 33
+    diesel: 39
+  - year_calendar: 2059
+    year_investment: 34
+    diesel: 39
+  - year_calendar: 2060
+    year_investment: 35
+    diesel: 39
+  - year_calendar: 2061
+    year_investment: 36
+    diesel: 39
+  - year_calendar: 2062
+    year_investment: 37
+    diesel: 39
+  - year_calendar: 2063
+    year_investment: 38
     diesel: 40
+  - year_calendar: 2064
+    year_investment: 39
+    diesel: 40
+  - year_calendar: 2065
+    year_investment: 40
+    diesel: 40
+- scenario: CP
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity_emission_factor_kg_mwh: 401
+  - year_calendar: 2027
+    year_investment: 2
+    electricity_emission_factor_kg_mwh: 381
+  - year_calendar: 2028
+    year_investment: 3
+    electricity_emission_factor_kg_mwh: 362
+  - year_calendar: 2029
+    year_investment: 4
+    electricity_emission_factor_kg_mwh: 342
+  - year_calendar: 2030
+    year_investment: 5
+    electricity_emission_factor_kg_mwh: 322
+  - year_calendar: 2031
+    year_investment: 6
+    electricity_emission_factor_kg_mwh: 302
+  - year_calendar: 2032
+    year_investment: 7
+    electricity_emission_factor_kg_mwh: 283
+  - year_calendar: 2033
+    year_investment: 8
+    electricity_emission_factor_kg_mwh: 263
+  - year_calendar: 2034
+    year_investment: 9
+    electricity_emission_factor_kg_mwh: 243
+  - year_calendar: 2035
+    year_investment: 10
+    electricity_emission_factor_kg_mwh: 224
+  - year_calendar: 2036
+    year_investment: 11
+    electricity_emission_factor_kg_mwh: 204
+  - year_calendar: 2037
+    year_investment: 12
+    electricity_emission_factor_kg_mwh: 184
+  - year_calendar: 2038
+    year_investment: 13
+    electricity_emission_factor_kg_mwh: 164
+  - year_calendar: 2039
+    year_investment: 14
+    electricity_emission_factor_kg_mwh: 145
+  - year_calendar: 2040
+    year_investment: 15
+    electricity_emission_factor_kg_mwh: 125
+  - year_calendar: 2041
+    year_investment: 16
+    electricity_emission_factor_kg_mwh: 120
+  - year_calendar: 2042
+    year_investment: 17
+    electricity_emission_factor_kg_mwh: 115
+  - year_calendar: 2043
+    year_investment: 18
+    electricity_emission_factor_kg_mwh: 110
+  - year_calendar: 2044
+    year_investment: 19
+    electricity_emission_factor_kg_mwh: 105
+  - year_calendar: 2045
+    year_investment: 20
+    electricity_emission_factor_kg_mwh: 100
+  - year_calendar: 2046
+    year_investment: 21
+    electricity_emission_factor_kg_mwh: 95
+  - year_calendar: 2047
+    year_investment: 22
+    electricity_emission_factor_kg_mwh: 90
+  - year_calendar: 2048
+    year_investment: 23
+    electricity_emission_factor_kg_mwh: 85
+  - year_calendar: 2049
+    year_investment: 24
+    electricity_emission_factor_kg_mwh: 80
+  - year_calendar: 2050
+    year_investment: 25
+    electricity_emission_factor_kg_mwh: 75
+  - year_calendar: 2051
+    year_investment: 26
+    electricity_emission_factor_kg_mwh: 70
+  - year_calendar: 2052
+    year_investment: 27
+    electricity_emission_factor_kg_mwh: 65
+  - year_calendar: 2053
+    year_investment: 28
+    electricity_emission_factor_kg_mwh: 60
+  - year_calendar: 2054
+    year_investment: 29
+    electricity_emission_factor_kg_mwh: 55
+  - year_calendar: 2055
+    year_investment: 30
+    electricity_emission_factor_kg_mwh: 50
+  - year_calendar: 2056
+    year_investment: 31
+    electricity_emission_factor_kg_mwh: 45
+  - year_calendar: 2057
+    year_investment: 32
+    electricity_emission_factor_kg_mwh: 40
+  - year_calendar: 2058
+    year_investment: 33
+    electricity_emission_factor_kg_mwh: 35
+  - year_calendar: 2059
+    year_investment: 34
+    electricity_emission_factor_kg_mwh: 30
+  - year_calendar: 2060
+    year_investment: 35
+    electricity_emission_factor_kg_mwh: 25
+  - year_calendar: 2061
+    year_investment: 36
+    electricity_emission_factor_kg_mwh: 20
+  - year_calendar: 2062
+    year_investment: 37
+    electricity_emission_factor_kg_mwh: 15
+  - year_calendar: 2063
+    year_investment: 38
+    electricity_emission_factor_kg_mwh: 10
+  - year_calendar: 2064
+    year_investment: 39
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2065
+    year_investment: 40
     electricity_emission_factor_kg_mwh: 5
 - scenario: NZ
   prices:
   - year_calendar: 2026
     year_investment: 1
     gas: 2635
-    lignite: 1420
-    biomass: 1651
-    electricity: 4427
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 401
   - year_calendar: 2027
     year_investment: 2
     gas: 2582
-    lignite: 1420
-    biomass: 1660
-    electricity: 4391
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 376
   - year_calendar: 2028
     year_investment: 3
     gas: 2530
-    lignite: 1420
-    biomass: 1670
-    electricity: 4355
-    petrol: 32
-    diesel: 29
-    electricity_emission_factor_kg_mwh: 351
   - year_calendar: 2029
     year_investment: 4
     gas: 2477
-    lignite: 1420
-    biomass: 1679
-    electricity: 4318
-    petrol: 31
-    diesel: 29
-    electricity_emission_factor_kg_mwh: 326
   - year_calendar: 2030
     year_investment: 5
     gas: 2424
-    lignite: 1420
-    biomass: 1688
-    electricity: 4282
-    petrol: 30
-    diesel: 28
-    electricity_emission_factor_kg_mwh: 301
   - year_calendar: 2031
     year_investment: 6
     gas: 2372
-    lignite: 1420
-    biomass: 1698
-    electricity: 4246
-    petrol: 30
-    diesel: 27
-    electricity_emission_factor_kg_mwh: 276
   - year_calendar: 2032
     year_investment: 7
     gas: 2319
-    lignite: 1420
-    biomass: 1707
-    electricity: 4209
-    petrol: 29
-    diesel: 26
-    electricity_emission_factor_kg_mwh: 251
   - year_calendar: 2033
     year_investment: 8
     gas: 2266
-    lignite: 1420
-    biomass: 1716
-    electricity: 4173
-    petrol: 28
-    diesel: 26
-    electricity_emission_factor_kg_mwh: 226
   - year_calendar: 2034
     year_investment: 9
     gas: 2214
-    lignite: 1420
-    biomass: 1725
-    electricity: 4136
-    petrol: 27
-    diesel: 25
-    electricity_emission_factor_kg_mwh: 200
   - year_calendar: 2035
     year_investment: 10
     gas: 2161
-    lignite: 1420
-    biomass: 1735
-    electricity: 4100
-    petrol: 27
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 175
   - year_calendar: 2036
     year_investment: 11
     gas: 2160
-    lignite: 1420
-    biomass: 1744
-    electricity: 4057
-    petrol: 27
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 150
   - year_calendar: 2037
     year_investment: 12
     gas: 2158
-    lignite: 1420
-    biomass: 1754
-    electricity: 4013
-    petrol: 27
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 125
   - year_calendar: 2038
     year_investment: 13
     gas: 2157
-    lignite: 1420
-    biomass: 1763
-    electricity: 3970
-    petrol: 27
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 100
   - year_calendar: 2039
     year_investment: 14
     gas: 2156
-    lignite: 1420
-    biomass: 1773
-    electricity: 3927
-    petrol: 26
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2040
     year_investment: 15
     gas: 2155
-    lignite: 1420
-    biomass: 1782
-    electricity: 3883
-    petrol: 26
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2041
     year_investment: 16
     gas: 2153
-    lignite: 1420
-    biomass: 1792
-    electricity: 3840
-    petrol: 26
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 31
   - year_calendar: 2042
     year_investment: 17
     gas: 2152
-    lignite: 1420
-    biomass: 1801
-    electricity: 3797
-    petrol: 26
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 29
   - year_calendar: 2043
     year_investment: 18
     gas: 2151
-    lignite: 1420
-    biomass: 1811
-    electricity: 3753
-    petrol: 26
-    diesel: 24
-    electricity_emission_factor_kg_mwh: 26
   - year_calendar: 2044
     year_investment: 19
     gas: 2149
-    lignite: 1420
-    biomass: 1820
-    electricity: 3710
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 24
   - year_calendar: 2045
     year_investment: 20
     gas: 2148
-    lignite: 1420
-    biomass: 1830
-    electricity: 3667
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 22
   - year_calendar: 2046
     year_investment: 21
     gas: 2147
-    lignite: 1420
-    biomass: 1839
-    electricity: 3623
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 19
   - year_calendar: 2047
     year_investment: 22
     gas: 2146
-    lignite: 1420
-    biomass: 1849
-    electricity: 3580
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 17
   - year_calendar: 2048
     year_investment: 23
     gas: 2144
-    lignite: 1420
-    biomass: 1859
-    electricity: 3537
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 15
   - year_calendar: 2049
     year_investment: 24
     gas: 2143
-    lignite: 1420
-    biomass: 1868
-    electricity: 3493
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 12
   - year_calendar: 2050
     year_investment: 25
     gas: 2142
-    lignite: 1420
-    biomass: 1878
-    electricity: 3450
-    petrol: 26
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 10
   - year_calendar: 2051
     year_investment: 26
     gas: 2141
-    lignite: 1420
-    biomass: 1887
-    electricity: 3407
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 8
   - year_calendar: 2052
     year_investment: 27
     gas: 2139
-    lignite: 1420
-    biomass: 1897
-    electricity: 3363
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2053
     year_investment: 28
     gas: 2138
-    lignite: 1420
-    biomass: 1906
-    electricity: 3320
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2054
     year_investment: 29
     gas: 2137
-    lignite: 1420
-    biomass: 1916
-    electricity: 3277
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2055
     year_investment: 30
     gas: 2136
-    lignite: 1420
-    biomass: 1925
-    electricity: 3233
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2056
     year_investment: 31
     gas: 2134
-    lignite: 1420
-    biomass: 1935
-    electricity: 3190
-    petrol: 25
-    diesel: 23
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2057
     year_investment: 32
     gas: 2133
-    lignite: 1420
-    biomass: 1944
-    electricity: 3147
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2058
     year_investment: 33
     gas: 2132
-    lignite: 1420
-    biomass: 1954
-    electricity: 3103
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2059
     year_investment: 34
     gas: 2130
-    lignite: 1420
-    biomass: 1963
-    electricity: 3060
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2060
     year_investment: 35
     gas: 2129
-    lignite: 1420
-    biomass: 1973
-    electricity: 3017
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2061
     year_investment: 36
     gas: 2128
-    lignite: 1420
-    biomass: 1982
-    electricity: 2973
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2062
     year_investment: 37
     gas: 2127
-    lignite: 1420
-    biomass: 1992
-    electricity: 2930
-    petrol: 25
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2063
     year_investment: 38
     gas: 2125
-    lignite: 1420
-    biomass: 2001
-    electricity: 2887
-    petrol: 24
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2064
     year_investment: 39
     gas: 2124
-    lignite: 1420
-    biomass: 2011
-    electricity: 2843
-    petrol: 24
-    diesel: 22
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2065
     year_investment: 40
     gas: 2123
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
     lignite: 1420
+  - year_calendar: 2027
+    year_investment: 2
+    lignite: 1420
+  - year_calendar: 2028
+    year_investment: 3
+    lignite: 1420
+  - year_calendar: 2029
+    year_investment: 4
+    lignite: 1420
+  - year_calendar: 2030
+    year_investment: 5
+    lignite: 1420
+  - year_calendar: 2031
+    year_investment: 6
+    lignite: 1420
+  - year_calendar: 2032
+    year_investment: 7
+    lignite: 1420
+  - year_calendar: 2033
+    year_investment: 8
+    lignite: 1420
+  - year_calendar: 2034
+    year_investment: 9
+    lignite: 1420
+  - year_calendar: 2035
+    year_investment: 10
+    lignite: 1420
+  - year_calendar: 2036
+    year_investment: 11
+    lignite: 1420
+  - year_calendar: 2037
+    year_investment: 12
+    lignite: 1420
+  - year_calendar: 2038
+    year_investment: 13
+    lignite: 1420
+  - year_calendar: 2039
+    year_investment: 14
+    lignite: 1420
+  - year_calendar: 2040
+    year_investment: 15
+    lignite: 1420
+  - year_calendar: 2041
+    year_investment: 16
+    lignite: 1420
+  - year_calendar: 2042
+    year_investment: 17
+    lignite: 1420
+  - year_calendar: 2043
+    year_investment: 18
+    lignite: 1420
+  - year_calendar: 2044
+    year_investment: 19
+    lignite: 1420
+  - year_calendar: 2045
+    year_investment: 20
+    lignite: 1420
+  - year_calendar: 2046
+    year_investment: 21
+    lignite: 1420
+  - year_calendar: 2047
+    year_investment: 22
+    lignite: 1420
+  - year_calendar: 2048
+    year_investment: 23
+    lignite: 1420
+  - year_calendar: 2049
+    year_investment: 24
+    lignite: 1420
+  - year_calendar: 2050
+    year_investment: 25
+    lignite: 1420
+  - year_calendar: 2051
+    year_investment: 26
+    lignite: 1420
+  - year_calendar: 2052
+    year_investment: 27
+    lignite: 1420
+  - year_calendar: 2053
+    year_investment: 28
+    lignite: 1420
+  - year_calendar: 2054
+    year_investment: 29
+    lignite: 1420
+  - year_calendar: 2055
+    year_investment: 30
+    lignite: 1420
+  - year_calendar: 2056
+    year_investment: 31
+    lignite: 1420
+  - year_calendar: 2057
+    year_investment: 32
+    lignite: 1420
+  - year_calendar: 2058
+    year_investment: 33
+    lignite: 1420
+  - year_calendar: 2059
+    year_investment: 34
+    lignite: 1420
+  - year_calendar: 2060
+    year_investment: 35
+    lignite: 1420
+  - year_calendar: 2061
+    year_investment: 36
+    lignite: 1420
+  - year_calendar: 2062
+    year_investment: 37
+    lignite: 1420
+  - year_calendar: 2063
+    year_investment: 38
+    lignite: 1420
+  - year_calendar: 2064
+    year_investment: 39
+    lignite: 1420
+  - year_calendar: 2065
+    year_investment: 40
+    lignite: 1420
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    biomass: 1651
+  - year_calendar: 2027
+    year_investment: 2
+    biomass: 1660
+  - year_calendar: 2028
+    year_investment: 3
+    biomass: 1670
+  - year_calendar: 2029
+    year_investment: 4
+    biomass: 1679
+  - year_calendar: 2030
+    year_investment: 5
+    biomass: 1688
+  - year_calendar: 2031
+    year_investment: 6
+    biomass: 1698
+  - year_calendar: 2032
+    year_investment: 7
+    biomass: 1707
+  - year_calendar: 2033
+    year_investment: 8
+    biomass: 1716
+  - year_calendar: 2034
+    year_investment: 9
+    biomass: 1725
+  - year_calendar: 2035
+    year_investment: 10
+    biomass: 1735
+  - year_calendar: 2036
+    year_investment: 11
+    biomass: 1744
+  - year_calendar: 2037
+    year_investment: 12
+    biomass: 1754
+  - year_calendar: 2038
+    year_investment: 13
+    biomass: 1763
+  - year_calendar: 2039
+    year_investment: 14
+    biomass: 1773
+  - year_calendar: 2040
+    year_investment: 15
+    biomass: 1782
+  - year_calendar: 2041
+    year_investment: 16
+    biomass: 1792
+  - year_calendar: 2042
+    year_investment: 17
+    biomass: 1801
+  - year_calendar: 2043
+    year_investment: 18
+    biomass: 1811
+  - year_calendar: 2044
+    year_investment: 19
+    biomass: 1820
+  - year_calendar: 2045
+    year_investment: 20
+    biomass: 1830
+  - year_calendar: 2046
+    year_investment: 21
+    biomass: 1839
+  - year_calendar: 2047
+    year_investment: 22
+    biomass: 1849
+  - year_calendar: 2048
+    year_investment: 23
+    biomass: 1859
+  - year_calendar: 2049
+    year_investment: 24
+    biomass: 1868
+  - year_calendar: 2050
+    year_investment: 25
+    biomass: 1878
+  - year_calendar: 2051
+    year_investment: 26
+    biomass: 1887
+  - year_calendar: 2052
+    year_investment: 27
+    biomass: 1897
+  - year_calendar: 2053
+    year_investment: 28
+    biomass: 1906
+  - year_calendar: 2054
+    year_investment: 29
+    biomass: 1916
+  - year_calendar: 2055
+    year_investment: 30
+    biomass: 1925
+  - year_calendar: 2056
+    year_investment: 31
+    biomass: 1935
+  - year_calendar: 2057
+    year_investment: 32
+    biomass: 1944
+  - year_calendar: 2058
+    year_investment: 33
+    biomass: 1954
+  - year_calendar: 2059
+    year_investment: 34
+    biomass: 1963
+  - year_calendar: 2060
+    year_investment: 35
+    biomass: 1973
+  - year_calendar: 2061
+    year_investment: 36
+    biomass: 1982
+  - year_calendar: 2062
+    year_investment: 37
+    biomass: 1992
+  - year_calendar: 2063
+    year_investment: 38
+    biomass: 2001
+  - year_calendar: 2064
+    year_investment: 39
+    biomass: 2011
+  - year_calendar: 2065
+    year_investment: 40
     biomass: 2020
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity: 4427
+  - year_calendar: 2027
+    year_investment: 2
+    electricity: 4391
+  - year_calendar: 2028
+    year_investment: 3
+    electricity: 4355
+  - year_calendar: 2029
+    year_investment: 4
+    electricity: 4318
+  - year_calendar: 2030
+    year_investment: 5
+    electricity: 4282
+  - year_calendar: 2031
+    year_investment: 6
+    electricity: 4246
+  - year_calendar: 2032
+    year_investment: 7
+    electricity: 4209
+  - year_calendar: 2033
+    year_investment: 8
+    electricity: 4173
+  - year_calendar: 2034
+    year_investment: 9
+    electricity: 4136
+  - year_calendar: 2035
+    year_investment: 10
+    electricity: 4100
+  - year_calendar: 2036
+    year_investment: 11
+    electricity: 4057
+  - year_calendar: 2037
+    year_investment: 12
+    electricity: 4013
+  - year_calendar: 2038
+    year_investment: 13
+    electricity: 3970
+  - year_calendar: 2039
+    year_investment: 14
+    electricity: 3927
+  - year_calendar: 2040
+    year_investment: 15
+    electricity: 3883
+  - year_calendar: 2041
+    year_investment: 16
+    electricity: 3840
+  - year_calendar: 2042
+    year_investment: 17
+    electricity: 3797
+  - year_calendar: 2043
+    year_investment: 18
+    electricity: 3753
+  - year_calendar: 2044
+    year_investment: 19
+    electricity: 3710
+  - year_calendar: 2045
+    year_investment: 20
+    electricity: 3667
+  - year_calendar: 2046
+    year_investment: 21
+    electricity: 3623
+  - year_calendar: 2047
+    year_investment: 22
+    electricity: 3580
+  - year_calendar: 2048
+    year_investment: 23
+    electricity: 3537
+  - year_calendar: 2049
+    year_investment: 24
+    electricity: 3493
+  - year_calendar: 2050
+    year_investment: 25
+    electricity: 3450
+  - year_calendar: 2051
+    year_investment: 26
+    electricity: 3407
+  - year_calendar: 2052
+    year_investment: 27
+    electricity: 3363
+  - year_calendar: 2053
+    year_investment: 28
+    electricity: 3320
+  - year_calendar: 2054
+    year_investment: 29
+    electricity: 3277
+  - year_calendar: 2055
+    year_investment: 30
+    electricity: 3233
+  - year_calendar: 2056
+    year_investment: 31
+    electricity: 3190
+  - year_calendar: 2057
+    year_investment: 32
+    electricity: 3147
+  - year_calendar: 2058
+    year_investment: 33
+    electricity: 3103
+  - year_calendar: 2059
+    year_investment: 34
+    electricity: 3060
+  - year_calendar: 2060
+    year_investment: 35
+    electricity: 3017
+  - year_calendar: 2061
+    year_investment: 36
+    electricity: 2973
+  - year_calendar: 2062
+    year_investment: 37
+    electricity: 2930
+  - year_calendar: 2063
+    year_investment: 38
+    electricity: 2887
+  - year_calendar: 2064
+    year_investment: 39
+    electricity: 2843
+  - year_calendar: 2065
+    year_investment: 40
     electricity: 2800
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    petrol: 33
+  - year_calendar: 2027
+    year_investment: 2
+    petrol: 32
+  - year_calendar: 2028
+    year_investment: 3
+    petrol: 32
+  - year_calendar: 2029
+    year_investment: 4
+    petrol: 31
+  - year_calendar: 2030
+    year_investment: 5
+    petrol: 30
+  - year_calendar: 2031
+    year_investment: 6
+    petrol: 30
+  - year_calendar: 2032
+    year_investment: 7
+    petrol: 29
+  - year_calendar: 2033
+    year_investment: 8
+    petrol: 28
+  - year_calendar: 2034
+    year_investment: 9
+    petrol: 27
+  - year_calendar: 2035
+    year_investment: 10
+    petrol: 27
+  - year_calendar: 2036
+    year_investment: 11
+    petrol: 27
+  - year_calendar: 2037
+    year_investment: 12
+    petrol: 27
+  - year_calendar: 2038
+    year_investment: 13
+    petrol: 27
+  - year_calendar: 2039
+    year_investment: 14
+    petrol: 26
+  - year_calendar: 2040
+    year_investment: 15
+    petrol: 26
+  - year_calendar: 2041
+    year_investment: 16
+    petrol: 26
+  - year_calendar: 2042
+    year_investment: 17
+    petrol: 26
+  - year_calendar: 2043
+    year_investment: 18
+    petrol: 26
+  - year_calendar: 2044
+    year_investment: 19
+    petrol: 26
+  - year_calendar: 2045
+    year_investment: 20
+    petrol: 26
+  - year_calendar: 2046
+    year_investment: 21
+    petrol: 26
+  - year_calendar: 2047
+    year_investment: 22
+    petrol: 26
+  - year_calendar: 2048
+    year_investment: 23
+    petrol: 26
+  - year_calendar: 2049
+    year_investment: 24
+    petrol: 26
+  - year_calendar: 2050
+    year_investment: 25
+    petrol: 26
+  - year_calendar: 2051
+    year_investment: 26
+    petrol: 25
+  - year_calendar: 2052
+    year_investment: 27
+    petrol: 25
+  - year_calendar: 2053
+    year_investment: 28
+    petrol: 25
+  - year_calendar: 2054
+    year_investment: 29
+    petrol: 25
+  - year_calendar: 2055
+    year_investment: 30
+    petrol: 25
+  - year_calendar: 2056
+    year_investment: 31
+    petrol: 25
+  - year_calendar: 2057
+    year_investment: 32
+    petrol: 25
+  - year_calendar: 2058
+    year_investment: 33
+    petrol: 25
+  - year_calendar: 2059
+    year_investment: 34
+    petrol: 25
+  - year_calendar: 2060
+    year_investment: 35
+    petrol: 25
+  - year_calendar: 2061
+    year_investment: 36
+    petrol: 25
+  - year_calendar: 2062
+    year_investment: 37
+    petrol: 25
+  - year_calendar: 2063
+    year_investment: 38
     petrol: 24
+  - year_calendar: 2064
+    year_investment: 39
+    petrol: 24
+  - year_calendar: 2065
+    year_investment: 40
+    petrol: 24
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    diesel: 31
+  - year_calendar: 2027
+    year_investment: 2
+    diesel: 30
+  - year_calendar: 2028
+    year_investment: 3
+    diesel: 29
+  - year_calendar: 2029
+    year_investment: 4
+    diesel: 29
+  - year_calendar: 2030
+    year_investment: 5
+    diesel: 28
+  - year_calendar: 2031
+    year_investment: 6
+    diesel: 27
+  - year_calendar: 2032
+    year_investment: 7
+    diesel: 26
+  - year_calendar: 2033
+    year_investment: 8
+    diesel: 26
+  - year_calendar: 2034
+    year_investment: 9
+    diesel: 25
+  - year_calendar: 2035
+    year_investment: 10
+    diesel: 24
+  - year_calendar: 2036
+    year_investment: 11
+    diesel: 24
+  - year_calendar: 2037
+    year_investment: 12
+    diesel: 24
+  - year_calendar: 2038
+    year_investment: 13
+    diesel: 24
+  - year_calendar: 2039
+    year_investment: 14
+    diesel: 24
+  - year_calendar: 2040
+    year_investment: 15
+    diesel: 24
+  - year_calendar: 2041
+    year_investment: 16
+    diesel: 24
+  - year_calendar: 2042
+    year_investment: 17
+    diesel: 24
+  - year_calendar: 2043
+    year_investment: 18
+    diesel: 24
+  - year_calendar: 2044
+    year_investment: 19
+    diesel: 23
+  - year_calendar: 2045
+    year_investment: 20
+    diesel: 23
+  - year_calendar: 2046
+    year_investment: 21
+    diesel: 23
+  - year_calendar: 2047
+    year_investment: 22
+    diesel: 23
+  - year_calendar: 2048
+    year_investment: 23
+    diesel: 23
+  - year_calendar: 2049
+    year_investment: 24
+    diesel: 23
+  - year_calendar: 2050
+    year_investment: 25
+    diesel: 23
+  - year_calendar: 2051
+    year_investment: 26
+    diesel: 23
+  - year_calendar: 2052
+    year_investment: 27
+    diesel: 23
+  - year_calendar: 2053
+    year_investment: 28
+    diesel: 23
+  - year_calendar: 2054
+    year_investment: 29
+    diesel: 23
+  - year_calendar: 2055
+    year_investment: 30
+    diesel: 23
+  - year_calendar: 2056
+    year_investment: 31
+    diesel: 23
+  - year_calendar: 2057
+    year_investment: 32
     diesel: 22
+  - year_calendar: 2058
+    year_investment: 33
+    diesel: 22
+  - year_calendar: 2059
+    year_investment: 34
+    diesel: 22
+  - year_calendar: 2060
+    year_investment: 35
+    diesel: 22
+  - year_calendar: 2061
+    year_investment: 36
+    diesel: 22
+  - year_calendar: 2062
+    year_investment: 37
+    diesel: 22
+  - year_calendar: 2063
+    year_investment: 38
+    diesel: 22
+  - year_calendar: 2064
+    year_investment: 39
+    diesel: 22
+  - year_calendar: 2065
+    year_investment: 40
+    diesel: 22
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity_emission_factor_kg_mwh: 401
+  - year_calendar: 2027
+    year_investment: 2
+    electricity_emission_factor_kg_mwh: 376
+  - year_calendar: 2028
+    year_investment: 3
+    electricity_emission_factor_kg_mwh: 351
+  - year_calendar: 2029
+    year_investment: 4
+    electricity_emission_factor_kg_mwh: 326
+  - year_calendar: 2030
+    year_investment: 5
+    electricity_emission_factor_kg_mwh: 301
+  - year_calendar: 2031
+    year_investment: 6
+    electricity_emission_factor_kg_mwh: 276
+  - year_calendar: 2032
+    year_investment: 7
+    electricity_emission_factor_kg_mwh: 251
+  - year_calendar: 2033
+    year_investment: 8
+    electricity_emission_factor_kg_mwh: 226
+  - year_calendar: 2034
+    year_investment: 9
+    electricity_emission_factor_kg_mwh: 200
+  - year_calendar: 2035
+    year_investment: 10
+    electricity_emission_factor_kg_mwh: 175
+  - year_calendar: 2036
+    year_investment: 11
+    electricity_emission_factor_kg_mwh: 150
+  - year_calendar: 2037
+    year_investment: 12
+    electricity_emission_factor_kg_mwh: 125
+  - year_calendar: 2038
+    year_investment: 13
+    electricity_emission_factor_kg_mwh: 100
+  - year_calendar: 2039
+    year_investment: 14
+    electricity_emission_factor_kg_mwh: 75
+  - year_calendar: 2040
+    year_investment: 15
+    electricity_emission_factor_kg_mwh: 50
+  - year_calendar: 2041
+    year_investment: 16
+    electricity_emission_factor_kg_mwh: 31
+  - year_calendar: 2042
+    year_investment: 17
+    electricity_emission_factor_kg_mwh: 29
+  - year_calendar: 2043
+    year_investment: 18
+    electricity_emission_factor_kg_mwh: 26
+  - year_calendar: 2044
+    year_investment: 19
+    electricity_emission_factor_kg_mwh: 24
+  - year_calendar: 2045
+    year_investment: 20
+    electricity_emission_factor_kg_mwh: 22
+  - year_calendar: 2046
+    year_investment: 21
+    electricity_emission_factor_kg_mwh: 19
+  - year_calendar: 2047
+    year_investment: 22
+    electricity_emission_factor_kg_mwh: 17
+  - year_calendar: 2048
+    year_investment: 23
+    electricity_emission_factor_kg_mwh: 15
+  - year_calendar: 2049
+    year_investment: 24
+    electricity_emission_factor_kg_mwh: 12
+  - year_calendar: 2050
+    year_investment: 25
+    electricity_emission_factor_kg_mwh: 10
+  - year_calendar: 2051
+    year_investment: 26
+    electricity_emission_factor_kg_mwh: 8
+  - year_calendar: 2052
+    year_investment: 27
     electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2053
+    year_investment: 28
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2054
+    year_investment: 29
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2055
+    year_investment: 30
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2056
+    year_investment: 31
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2057
+    year_investment: 32
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2058
+    year_investment: 33
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2059
+    year_investment: 34
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2060
+    year_investment: 35
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2061
+    year_investment: 36
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2062
+    year_investment: 37
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2063
+    year_investment: 38
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2064
+    year_investment: 39
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2065
+    year_investment: 40
+    electricity_emission_factor_kg_mwh: 5
+- scenario: NZ
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    carbon_price_eur_nz: 60
+  - year_calendar: 2027
+    year_investment: 2
+    carbon_price_eur_nz: 84
+  - year_calendar: 2028
+    year_investment: 3
+    carbon_price_eur_nz: 107
+  - year_calendar: 2029
+    year_investment: 4
+    carbon_price_eur_nz: 131
+  - year_calendar: 2030
+    year_investment: 5
+    carbon_price_eur_nz: 154
+  - year_calendar: 2031
+    year_investment: 6
+    carbon_price_eur_nz: 156
+  - year_calendar: 2032
+    year_investment: 7
+    carbon_price_eur_nz: 158
+  - year_calendar: 2033
+    year_investment: 8
+    carbon_price_eur_nz: 160
+  - year_calendar: 2034
+    year_investment: 9
+    carbon_price_eur_nz: 162
+  - year_calendar: 2035
+    year_investment: 10
+    carbon_price_eur_nz: 165
+  - year_calendar: 2036
+    year_investment: 11
+    carbon_price_eur_nz: 167
+  - year_calendar: 2037
+    year_investment: 12
+    carbon_price_eur_nz: 169
+  - year_calendar: 2038
+    year_investment: 13
+    carbon_price_eur_nz: 171
+  - year_calendar: 2039
+    year_investment: 14
+    carbon_price_eur_nz: 173
+  - year_calendar: 2040
+    year_investment: 15
+    carbon_price_eur_nz: 175
+  - year_calendar: 2041
+    year_investment: 16
+    carbon_price_eur_nz: 179
+  - year_calendar: 2042
+    year_investment: 17
+    carbon_price_eur_nz: 183
+  - year_calendar: 2043
+    year_investment: 18
+    carbon_price_eur_nz: 186
+  - year_calendar: 2044
+    year_investment: 19
+    carbon_price_eur_nz: 190
+  - year_calendar: 2045
+    year_investment: 20
+    carbon_price_eur_nz: 194
+  - year_calendar: 2046
+    year_investment: 21
+    carbon_price_eur_nz: 198
+  - year_calendar: 2047
+    year_investment: 22
+    carbon_price_eur_nz: 202
+  - year_calendar: 2048
+    year_investment: 23
+    carbon_price_eur_nz: 205
+  - year_calendar: 2049
+    year_investment: 24
+    carbon_price_eur_nz: 209
+  - year_calendar: 2050
+    year_investment: 25
+    carbon_price_eur_nz: 213
+  - year_calendar: 2051
+    year_investment: 26
+    carbon_price_eur_nz: 217
+  - year_calendar: 2052
+    year_investment: 27
+    carbon_price_eur_nz: 221
+  - year_calendar: 2053
+    year_investment: 28
+    carbon_price_eur_nz: 225
+  - year_calendar: 2054
+    year_investment: 29
+    carbon_price_eur_nz: 228
+  - year_calendar: 2055
+    year_investment: 30
+    carbon_price_eur_nz: 232
+  - year_calendar: 2056
+    year_investment: 31
+    carbon_price_eur_nz: 236
+  - year_calendar: 2057
+    year_investment: 32
+    carbon_price_eur_nz: 240
+  - year_calendar: 2058
+    year_investment: 33
+    carbon_price_eur_nz: 244
+  - year_calendar: 2059
+    year_investment: 34
+    carbon_price_eur_nz: 248
+  - year_calendar: 2060
+    year_investment: 35
+    carbon_price_eur_nz: 252
+  - year_calendar: 2061
+    year_investment: 36
+    carbon_price_eur_nz: 256
+  - year_calendar: 2062
+    year_investment: 37
+    carbon_price_eur_nz: 259
+  - year_calendar: 2063
+    year_investment: 38
+    carbon_price_eur_nz: 263
+  - year_calendar: 2064
+    year_investment: 39
+    carbon_price_eur_nz: 267
+  - year_calendar: 2065
+    year_investment: 40
+    carbon_price_eur_nz: 271
 - scenario: CP_EC
   prices:
   - year_calendar: 2026
     year_investment: 1
     gas: 2719
-    lignite: 1420
-    biomass: 1651
-    electricity: 4464
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 401
   - year_calendar: 2027
     year_investment: 2
     gas: 2709
-    lignite: 1420
-    biomass: 1660
-    electricity: 4446
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 381
   - year_calendar: 2028
     year_investment: 3
     gas: 2699
-    lignite: 1420
-    biomass: 1670
-    electricity: 4427
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 362
   - year_calendar: 2029
     year_investment: 4
     gas: 4705
-    lignite: 1500
-    biomass: 2351
-    electricity: 5200
-    petrol: 50
-    diesel: 46
-    electricity_emission_factor_kg_mwh: 308
   - year_calendar: 2030
     year_investment: 5
     gas: 4705
-    lignite: 1500
-    biomass: 2351
-    electricity: 6586
-    petrol: 50
-    diesel: 46
-    electricity_emission_factor_kg_mwh: 308
   - year_calendar: 2031
     year_investment: 6
     gas: 6695
-    lignite: 1500
-    biomass: 3039
-    electricity: 8500
-    petrol: 64
-    diesel: 60
-    electricity_emission_factor_kg_mwh: 304
   - year_calendar: 2032
     year_investment: 7
     gas: 6695
-    lignite: 1500
-    biomass: 3039
-    electricity: 8500
-    petrol: 64
-    diesel: 60
-    electricity_emission_factor_kg_mwh: 304
   - year_calendar: 2033
     year_investment: 8
     gas: 4668
-    lignite: 1500
-    biomass: 2377
-    electricity: 6586
-    petrol: 50
-    diesel: 47
-    electricity_emission_factor_kg_mwh: 259
   - year_calendar: 2034
     year_investment: 9
     gas: 3668
-    lignite: 1500
-    biomass: 2000
-    electricity: 5200
-    petrol: 46
-    diesel: 44
-    electricity_emission_factor_kg_mwh: 239
   - year_calendar: 2035
     year_investment: 10
     gas: 2626
-    lignite: 1420
-    biomass: 1735
-    electricity: 4300
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 224
   - year_calendar: 2036
     year_investment: 11
     gas: 2636
-    lignite: 1420
-    biomass: 1744
-    electricity: 4283
-    petrol: 37
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 204
   - year_calendar: 2037
     year_investment: 12
     gas: 2645
-    lignite: 1420
-    biomass: 1754
-    electricity: 4267
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 184
   - year_calendar: 2038
     year_investment: 13
     gas: 2655
-    lignite: 1420
-    biomass: 1763
-    electricity: 4250
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 164
   - year_calendar: 2039
     year_investment: 14
     gas: 2664
-    lignite: 1420
-    biomass: 1773
-    electricity: 4233
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 145
   - year_calendar: 2040
     year_investment: 15
     gas: 2674
-    lignite: 1420
-    biomass: 1782
-    electricity: 4217
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 125
   - year_calendar: 2041
     year_investment: 16
     gas: 2683
-    lignite: 1420
-    biomass: 1792
-    electricity: 4200
-    petrol: 38
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 120
   - year_calendar: 2042
     year_investment: 17
     gas: 2693
-    lignite: 1420
-    biomass: 1801
-    electricity: 4183
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 115
   - year_calendar: 2043
     year_investment: 18
     gas: 2702
-    lignite: 1420
-    biomass: 1811
-    electricity: 4167
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2044
     year_investment: 19
     gas: 2712
-    lignite: 1420
-    biomass: 1820
-    electricity: 4150
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 105
   - year_calendar: 2045
     year_investment: 20
     gas: 2721
-    lignite: 1420
-    biomass: 1830
-    electricity: 4133
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 100
   - year_calendar: 2046
     year_investment: 21
     gas: 2731
-    lignite: 1420
-    biomass: 1839
-    electricity: 4117
-    petrol: 39
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 95
   - year_calendar: 2047
     year_investment: 22
     gas: 2740
-    lignite: 1420
-    biomass: 1849
-    electricity: 4100
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 90
   - year_calendar: 2048
     year_investment: 23
     gas: 2750
-    lignite: 1420
-    biomass: 1859
-    electricity: 4083
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 85
   - year_calendar: 2049
     year_investment: 24
     gas: 2759
-    lignite: 1420
-    biomass: 1868
-    electricity: 4067
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 80
   - year_calendar: 2050
     year_investment: 25
     gas: 2769
-    lignite: 1420
-    biomass: 1878
-    electricity: 4050
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2051
     year_investment: 26
     gas: 2778
-    lignite: 1420
-    biomass: 1887
-    electricity: 4033
-    petrol: 40
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 70
   - year_calendar: 2052
     year_investment: 27
     gas: 2788
-    lignite: 1420
-    biomass: 1897
-    electricity: 4017
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 65
   - year_calendar: 2053
     year_investment: 28
     gas: 2797
-    lignite: 1420
-    biomass: 1906
-    electricity: 4000
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 60
   - year_calendar: 2054
     year_investment: 29
     gas: 2807
-    lignite: 1420
-    biomass: 1916
-    electricity: 3983
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 55
   - year_calendar: 2055
     year_investment: 30
     gas: 2816
-    lignite: 1420
-    biomass: 1925
-    electricity: 3967
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2056
     year_investment: 31
     gas: 2826
-    lignite: 1420
-    biomass: 1935
-    electricity: 3950
-    petrol: 41
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2057
     year_investment: 32
     gas: 2835
-    lignite: 1420
-    biomass: 1944
-    electricity: 3933
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2058
     year_investment: 33
     gas: 2845
-    lignite: 1420
-    biomass: 1954
-    electricity: 3917
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2059
     year_investment: 34
     gas: 2854
-    lignite: 1420
-    biomass: 1963
-    electricity: 3900
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 30
   - year_calendar: 2060
     year_investment: 35
     gas: 2864
-    lignite: 1420
-    biomass: 1973
-    electricity: 3883
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 25
   - year_calendar: 2061
     year_investment: 36
     gas: 2873
-    lignite: 1420
-    biomass: 1982
-    electricity: 3867
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 20
   - year_calendar: 2062
     year_investment: 37
     gas: 2883
-    lignite: 1420
-    biomass: 1992
-    electricity: 3850
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 15
   - year_calendar: 2063
     year_investment: 38
     gas: 2892
-    lignite: 1420
-    biomass: 2001
-    electricity: 3833
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 10
   - year_calendar: 2064
     year_investment: 39
     gas: 2902
-    lignite: 1420
-    biomass: 2011
-    electricity: 3817
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
   - year_calendar: 2065
     year_investment: 40
     gas: 2911
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
     lignite: 1420
+  - year_calendar: 2027
+    year_investment: 2
+    lignite: 1420
+  - year_calendar: 2028
+    year_investment: 3
+    lignite: 1420
+  - year_calendar: 2029
+    year_investment: 4
+    lignite: 1500
+  - year_calendar: 2030
+    year_investment: 5
+    lignite: 1500
+  - year_calendar: 2031
+    year_investment: 6
+    lignite: 1500
+  - year_calendar: 2032
+    year_investment: 7
+    lignite: 1500
+  - year_calendar: 2033
+    year_investment: 8
+    lignite: 1500
+  - year_calendar: 2034
+    year_investment: 9
+    lignite: 1500
+  - year_calendar: 2035
+    year_investment: 10
+    lignite: 1420
+  - year_calendar: 2036
+    year_investment: 11
+    lignite: 1420
+  - year_calendar: 2037
+    year_investment: 12
+    lignite: 1420
+  - year_calendar: 2038
+    year_investment: 13
+    lignite: 1420
+  - year_calendar: 2039
+    year_investment: 14
+    lignite: 1420
+  - year_calendar: 2040
+    year_investment: 15
+    lignite: 1420
+  - year_calendar: 2041
+    year_investment: 16
+    lignite: 1420
+  - year_calendar: 2042
+    year_investment: 17
+    lignite: 1420
+  - year_calendar: 2043
+    year_investment: 18
+    lignite: 1420
+  - year_calendar: 2044
+    year_investment: 19
+    lignite: 1420
+  - year_calendar: 2045
+    year_investment: 20
+    lignite: 1420
+  - year_calendar: 2046
+    year_investment: 21
+    lignite: 1420
+  - year_calendar: 2047
+    year_investment: 22
+    lignite: 1420
+  - year_calendar: 2048
+    year_investment: 23
+    lignite: 1420
+  - year_calendar: 2049
+    year_investment: 24
+    lignite: 1420
+  - year_calendar: 2050
+    year_investment: 25
+    lignite: 1420
+  - year_calendar: 2051
+    year_investment: 26
+    lignite: 1420
+  - year_calendar: 2052
+    year_investment: 27
+    lignite: 1420
+  - year_calendar: 2053
+    year_investment: 28
+    lignite: 1420
+  - year_calendar: 2054
+    year_investment: 29
+    lignite: 1420
+  - year_calendar: 2055
+    year_investment: 30
+    lignite: 1420
+  - year_calendar: 2056
+    year_investment: 31
+    lignite: 1420
+  - year_calendar: 2057
+    year_investment: 32
+    lignite: 1420
+  - year_calendar: 2058
+    year_investment: 33
+    lignite: 1420
+  - year_calendar: 2059
+    year_investment: 34
+    lignite: 1420
+  - year_calendar: 2060
+    year_investment: 35
+    lignite: 1420
+  - year_calendar: 2061
+    year_investment: 36
+    lignite: 1420
+  - year_calendar: 2062
+    year_investment: 37
+    lignite: 1420
+  - year_calendar: 2063
+    year_investment: 38
+    lignite: 1420
+  - year_calendar: 2064
+    year_investment: 39
+    lignite: 1420
+  - year_calendar: 2065
+    year_investment: 40
+    lignite: 1420
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    biomass: 1651
+  - year_calendar: 2027
+    year_investment: 2
+    biomass: 1660
+  - year_calendar: 2028
+    year_investment: 3
+    biomass: 1670
+  - year_calendar: 2029
+    year_investment: 4
+    biomass: 2351
+  - year_calendar: 2030
+    year_investment: 5
+    biomass: 2351
+  - year_calendar: 2031
+    year_investment: 6
+    biomass: 3039
+  - year_calendar: 2032
+    year_investment: 7
+    biomass: 3039
+  - year_calendar: 2033
+    year_investment: 8
+    biomass: 2377
+  - year_calendar: 2034
+    year_investment: 9
+    biomass: 2000
+  - year_calendar: 2035
+    year_investment: 10
+    biomass: 1735
+  - year_calendar: 2036
+    year_investment: 11
+    biomass: 1744
+  - year_calendar: 2037
+    year_investment: 12
+    biomass: 1754
+  - year_calendar: 2038
+    year_investment: 13
+    biomass: 1763
+  - year_calendar: 2039
+    year_investment: 14
+    biomass: 1773
+  - year_calendar: 2040
+    year_investment: 15
+    biomass: 1782
+  - year_calendar: 2041
+    year_investment: 16
+    biomass: 1792
+  - year_calendar: 2042
+    year_investment: 17
+    biomass: 1801
+  - year_calendar: 2043
+    year_investment: 18
+    biomass: 1811
+  - year_calendar: 2044
+    year_investment: 19
+    biomass: 1820
+  - year_calendar: 2045
+    year_investment: 20
+    biomass: 1830
+  - year_calendar: 2046
+    year_investment: 21
+    biomass: 1839
+  - year_calendar: 2047
+    year_investment: 22
+    biomass: 1849
+  - year_calendar: 2048
+    year_investment: 23
+    biomass: 1859
+  - year_calendar: 2049
+    year_investment: 24
+    biomass: 1868
+  - year_calendar: 2050
+    year_investment: 25
+    biomass: 1878
+  - year_calendar: 2051
+    year_investment: 26
+    biomass: 1887
+  - year_calendar: 2052
+    year_investment: 27
+    biomass: 1897
+  - year_calendar: 2053
+    year_investment: 28
+    biomass: 1906
+  - year_calendar: 2054
+    year_investment: 29
+    biomass: 1916
+  - year_calendar: 2055
+    year_investment: 30
+    biomass: 1925
+  - year_calendar: 2056
+    year_investment: 31
+    biomass: 1935
+  - year_calendar: 2057
+    year_investment: 32
+    biomass: 1944
+  - year_calendar: 2058
+    year_investment: 33
+    biomass: 1954
+  - year_calendar: 2059
+    year_investment: 34
+    biomass: 1963
+  - year_calendar: 2060
+    year_investment: 35
+    biomass: 1973
+  - year_calendar: 2061
+    year_investment: 36
+    biomass: 1982
+  - year_calendar: 2062
+    year_investment: 37
+    biomass: 1992
+  - year_calendar: 2063
+    year_investment: 38
+    biomass: 2001
+  - year_calendar: 2064
+    year_investment: 39
+    biomass: 2011
+  - year_calendar: 2065
+    year_investment: 40
     biomass: 2020
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity: 4464
+  - year_calendar: 2027
+    year_investment: 2
+    electricity: 4446
+  - year_calendar: 2028
+    year_investment: 3
+    electricity: 4427
+  - year_calendar: 2029
+    year_investment: 4
+    electricity: 5200
+  - year_calendar: 2030
+    year_investment: 5
+    electricity: 6586
+  - year_calendar: 2031
+    year_investment: 6
+    electricity: 8500
+  - year_calendar: 2032
+    year_investment: 7
+    electricity: 8500
+  - year_calendar: 2033
+    year_investment: 8
+    electricity: 6586
+  - year_calendar: 2034
+    year_investment: 9
+    electricity: 5200
+  - year_calendar: 2035
+    year_investment: 10
+    electricity: 4300
+  - year_calendar: 2036
+    year_investment: 11
+    electricity: 4283
+  - year_calendar: 2037
+    year_investment: 12
+    electricity: 4267
+  - year_calendar: 2038
+    year_investment: 13
+    electricity: 4250
+  - year_calendar: 2039
+    year_investment: 14
+    electricity: 4233
+  - year_calendar: 2040
+    year_investment: 15
+    electricity: 4217
+  - year_calendar: 2041
+    year_investment: 16
+    electricity: 4200
+  - year_calendar: 2042
+    year_investment: 17
+    electricity: 4183
+  - year_calendar: 2043
+    year_investment: 18
+    electricity: 4167
+  - year_calendar: 2044
+    year_investment: 19
+    electricity: 4150
+  - year_calendar: 2045
+    year_investment: 20
+    electricity: 4133
+  - year_calendar: 2046
+    year_investment: 21
+    electricity: 4117
+  - year_calendar: 2047
+    year_investment: 22
+    electricity: 4100
+  - year_calendar: 2048
+    year_investment: 23
+    electricity: 4083
+  - year_calendar: 2049
+    year_investment: 24
+    electricity: 4067
+  - year_calendar: 2050
+    year_investment: 25
+    electricity: 4050
+  - year_calendar: 2051
+    year_investment: 26
+    electricity: 4033
+  - year_calendar: 2052
+    year_investment: 27
+    electricity: 4017
+  - year_calendar: 2053
+    year_investment: 28
+    electricity: 4000
+  - year_calendar: 2054
+    year_investment: 29
+    electricity: 3983
+  - year_calendar: 2055
+    year_investment: 30
+    electricity: 3967
+  - year_calendar: 2056
+    year_investment: 31
+    electricity: 3950
+  - year_calendar: 2057
+    year_investment: 32
+    electricity: 3933
+  - year_calendar: 2058
+    year_investment: 33
+    electricity: 3917
+  - year_calendar: 2059
+    year_investment: 34
+    electricity: 3900
+  - year_calendar: 2060
+    year_investment: 35
+    electricity: 3883
+  - year_calendar: 2061
+    year_investment: 36
+    electricity: 3867
+  - year_calendar: 2062
+    year_investment: 37
+    electricity: 3850
+  - year_calendar: 2063
+    year_investment: 38
+    electricity: 3833
+  - year_calendar: 2064
+    year_investment: 39
+    electricity: 3817
+  - year_calendar: 2065
+    year_investment: 40
     electricity: 3800
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    petrol: 35
+  - year_calendar: 2027
+    year_investment: 2
+    petrol: 35
+  - year_calendar: 2028
+    year_investment: 3
+    petrol: 35
+  - year_calendar: 2029
+    year_investment: 4
+    petrol: 50
+  - year_calendar: 2030
+    year_investment: 5
+    petrol: 50
+  - year_calendar: 2031
+    year_investment: 6
+    petrol: 64
+  - year_calendar: 2032
+    year_investment: 7
+    petrol: 64
+  - year_calendar: 2033
+    year_investment: 8
+    petrol: 50
+  - year_calendar: 2034
+    year_investment: 9
+    petrol: 46
+  - year_calendar: 2035
+    year_investment: 10
+    petrol: 36
+  - year_calendar: 2036
+    year_investment: 11
+    petrol: 37
+  - year_calendar: 2037
+    year_investment: 12
+    petrol: 37
+  - year_calendar: 2038
+    year_investment: 13
+    petrol: 37
+  - year_calendar: 2039
+    year_investment: 14
+    petrol: 37
+  - year_calendar: 2040
+    year_investment: 15
+    petrol: 37
+  - year_calendar: 2041
+    year_investment: 16
+    petrol: 38
+  - year_calendar: 2042
+    year_investment: 17
+    petrol: 38
+  - year_calendar: 2043
+    year_investment: 18
+    petrol: 38
+  - year_calendar: 2044
+    year_investment: 19
+    petrol: 38
+  - year_calendar: 2045
+    year_investment: 20
+    petrol: 38
+  - year_calendar: 2046
+    year_investment: 21
+    petrol: 39
+  - year_calendar: 2047
+    year_investment: 22
+    petrol: 39
+  - year_calendar: 2048
+    year_investment: 23
+    petrol: 39
+  - year_calendar: 2049
+    year_investment: 24
+    petrol: 39
+  - year_calendar: 2050
+    year_investment: 25
+    petrol: 39
+  - year_calendar: 2051
+    year_investment: 26
+    petrol: 40
+  - year_calendar: 2052
+    year_investment: 27
+    petrol: 40
+  - year_calendar: 2053
+    year_investment: 28
+    petrol: 40
+  - year_calendar: 2054
+    year_investment: 29
+    petrol: 40
+  - year_calendar: 2055
+    year_investment: 30
+    petrol: 40
+  - year_calendar: 2056
+    year_investment: 31
+    petrol: 41
+  - year_calendar: 2057
+    year_investment: 32
+    petrol: 41
+  - year_calendar: 2058
+    year_investment: 33
+    petrol: 41
+  - year_calendar: 2059
+    year_investment: 34
+    petrol: 41
+  - year_calendar: 2060
+    year_investment: 35
+    petrol: 41
+  - year_calendar: 2061
+    year_investment: 36
     petrol: 42
+  - year_calendar: 2062
+    year_investment: 37
+    petrol: 42
+  - year_calendar: 2063
+    year_investment: 38
+    petrol: 42
+  - year_calendar: 2064
+    year_investment: 39
+    petrol: 42
+  - year_calendar: 2065
+    year_investment: 40
+    petrol: 42
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    diesel: 33
+  - year_calendar: 2027
+    year_investment: 2
+    diesel: 33
+  - year_calendar: 2028
+    year_investment: 3
+    diesel: 33
+  - year_calendar: 2029
+    year_investment: 4
+    diesel: 46
+  - year_calendar: 2030
+    year_investment: 5
+    diesel: 46
+  - year_calendar: 2031
+    year_investment: 6
+    diesel: 60
+  - year_calendar: 2032
+    year_investment: 7
+    diesel: 60
+  - year_calendar: 2033
+    year_investment: 8
+    diesel: 47
+  - year_calendar: 2034
+    year_investment: 9
+    diesel: 44
+  - year_calendar: 2035
+    year_investment: 10
+    diesel: 34
+  - year_calendar: 2036
+    year_investment: 11
+    diesel: 34
+  - year_calendar: 2037
+    year_investment: 12
+    diesel: 35
+  - year_calendar: 2038
+    year_investment: 13
+    diesel: 35
+  - year_calendar: 2039
+    year_investment: 14
+    diesel: 35
+  - year_calendar: 2040
+    year_investment: 15
+    diesel: 35
+  - year_calendar: 2041
+    year_investment: 16
+    diesel: 35
+  - year_calendar: 2042
+    year_investment: 17
+    diesel: 36
+  - year_calendar: 2043
+    year_investment: 18
+    diesel: 36
+  - year_calendar: 2044
+    year_investment: 19
+    diesel: 36
+  - year_calendar: 2045
+    year_investment: 20
+    diesel: 36
+  - year_calendar: 2046
+    year_investment: 21
+    diesel: 36
+  - year_calendar: 2047
+    year_investment: 22
+    diesel: 37
+  - year_calendar: 2048
+    year_investment: 23
+    diesel: 37
+  - year_calendar: 2049
+    year_investment: 24
+    diesel: 37
+  - year_calendar: 2050
+    year_investment: 25
+    diesel: 37
+  - year_calendar: 2051
+    year_investment: 26
+    diesel: 37
+  - year_calendar: 2052
+    year_investment: 27
+    diesel: 38
+  - year_calendar: 2053
+    year_investment: 28
+    diesel: 38
+  - year_calendar: 2054
+    year_investment: 29
+    diesel: 38
+  - year_calendar: 2055
+    year_investment: 30
+    diesel: 38
+  - year_calendar: 2056
+    year_investment: 31
+    diesel: 38
+  - year_calendar: 2057
+    year_investment: 32
+    diesel: 39
+  - year_calendar: 2058
+    year_investment: 33
+    diesel: 39
+  - year_calendar: 2059
+    year_investment: 34
+    diesel: 39
+  - year_calendar: 2060
+    year_investment: 35
+    diesel: 39
+  - year_calendar: 2061
+    year_investment: 36
+    diesel: 39
+  - year_calendar: 2062
+    year_investment: 37
+    diesel: 39
+  - year_calendar: 2063
+    year_investment: 38
     diesel: 40
+  - year_calendar: 2064
+    year_investment: 39
+    diesel: 40
+  - year_calendar: 2065
+    year_investment: 40
+    diesel: 40
+- scenario: CP_EC
+  prices:
+  - year_calendar: 2026
+    year_investment: 1
+    electricity_emission_factor_kg_mwh: 401
+  - year_calendar: 2027
+    year_investment: 2
+    electricity_emission_factor_kg_mwh: 381
+  - year_calendar: 2028
+    year_investment: 3
+    electricity_emission_factor_kg_mwh: 362
+  - year_calendar: 2029
+    year_investment: 4
+    electricity_emission_factor_kg_mwh: 308
+  - year_calendar: 2030
+    year_investment: 5
+    electricity_emission_factor_kg_mwh: 308
+  - year_calendar: 2031
+    year_investment: 6
+    electricity_emission_factor_kg_mwh: 304
+  - year_calendar: 2032
+    year_investment: 7
+    electricity_emission_factor_kg_mwh: 304
+  - year_calendar: 2033
+    year_investment: 8
+    electricity_emission_factor_kg_mwh: 259
+  - year_calendar: 2034
+    year_investment: 9
+    electricity_emission_factor_kg_mwh: 239
+  - year_calendar: 2035
+    year_investment: 10
+    electricity_emission_factor_kg_mwh: 224
+  - year_calendar: 2036
+    year_investment: 11
+    electricity_emission_factor_kg_mwh: 204
+  - year_calendar: 2037
+    year_investment: 12
+    electricity_emission_factor_kg_mwh: 184
+  - year_calendar: 2038
+    year_investment: 13
+    electricity_emission_factor_kg_mwh: 164
+  - year_calendar: 2039
+    year_investment: 14
+    electricity_emission_factor_kg_mwh: 145
+  - year_calendar: 2040
+    year_investment: 15
+    electricity_emission_factor_kg_mwh: 125
+  - year_calendar: 2041
+    year_investment: 16
+    electricity_emission_factor_kg_mwh: 120
+  - year_calendar: 2042
+    year_investment: 17
+    electricity_emission_factor_kg_mwh: 115
+  - year_calendar: 2043
+    year_investment: 18
+    electricity_emission_factor_kg_mwh: 110
+  - year_calendar: 2044
+    year_investment: 19
+    electricity_emission_factor_kg_mwh: 105
+  - year_calendar: 2045
+    year_investment: 20
+    electricity_emission_factor_kg_mwh: 100
+  - year_calendar: 2046
+    year_investment: 21
+    electricity_emission_factor_kg_mwh: 95
+  - year_calendar: 2047
+    year_investment: 22
+    electricity_emission_factor_kg_mwh: 90
+  - year_calendar: 2048
+    year_investment: 23
+    electricity_emission_factor_kg_mwh: 85
+  - year_calendar: 2049
+    year_investment: 24
+    electricity_emission_factor_kg_mwh: 80
+  - year_calendar: 2050
+    year_investment: 25
+    electricity_emission_factor_kg_mwh: 75
+  - year_calendar: 2051
+    year_investment: 26
+    electricity_emission_factor_kg_mwh: 70
+  - year_calendar: 2052
+    year_investment: 27
+    electricity_emission_factor_kg_mwh: 65
+  - year_calendar: 2053
+    year_investment: 28
+    electricity_emission_factor_kg_mwh: 60
+  - year_calendar: 2054
+    year_investment: 29
+    electricity_emission_factor_kg_mwh: 55
+  - year_calendar: 2055
+    year_investment: 30
+    electricity_emission_factor_kg_mwh: 50
+  - year_calendar: 2056
+    year_investment: 31
+    electricity_emission_factor_kg_mwh: 45
+  - year_calendar: 2057
+    year_investment: 32
+    electricity_emission_factor_kg_mwh: 40
+  - year_calendar: 2058
+    year_investment: 33
+    electricity_emission_factor_kg_mwh: 35
+  - year_calendar: 2059
+    year_investment: 34
+    electricity_emission_factor_kg_mwh: 30
+  - year_calendar: 2060
+    year_investment: 35
+    electricity_emission_factor_kg_mwh: 25
+  - year_calendar: 2061
+    year_investment: 36
+    electricity_emission_factor_kg_mwh: 20
+  - year_calendar: 2062
+    year_investment: 37
+    electricity_emission_factor_kg_mwh: 15
+  - year_calendar: 2063
+    year_investment: 38
+    electricity_emission_factor_kg_mwh: 10
+  - year_calendar: 2064
+    year_investment: 39
+    electricity_emission_factor_kg_mwh: 5
+  - year_calendar: 2065
+    year_investment: 40
     electricity_emission_factor_kg_mwh: 5

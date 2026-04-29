@@ -32,10 +32,25 @@
       state.discountRate = v;
       return v + ' %';
     });
-    const fsSelect = document.getElementById('fuel-scenario-select');
+    const fsSelect       = document.getElementById('fuel-scenario-select');
+    const cpSlider       = document.getElementById('carbon-price-slider');
+    const cpValueEl      = document.getElementById('carbon-price-value');
+    const cpControlGroup = cpSlider && cpSlider.closest('.control-group');
+
+    function applyFuelScenario(scenario) {
+      state.fuelScenario = scenario;
+      const isNZ = scenario === 'NZ';
+      if (cpSlider) {
+        cpSlider.disabled = isNZ;
+        if (cpControlGroup) cpControlGroup.classList.toggle('control-group--disabled', isNZ);
+      }
+      if (isNZ && cpValueEl) cpValueEl.textContent = 'trajektorie NZ';
+      else if (!isNZ && cpValueEl) cpValueEl.textContent = state.carbonPrice + ' €';
+    }
+
     if (fsSelect) {
       fsSelect.addEventListener('change', () => {
-        state.fuelScenario = fsSelect.value;
+        applyFuelScenario(fsSelect.value);
         renderAll();
       });
     }
@@ -500,6 +515,13 @@
   const Q_COLOR_TRANSPORT = '#6b4fa0';
   const Q_ANIM_MS = 450;
 
+  // Quadrant colours (dot fill, keyed by TR/TL/BR/BL)
+  const Q_DOT_COLORS = { tr: '#1f8c47', tl: '#c43535', br: '#1a72b8', bl: '#8b35b0' };
+  function qQuadrantColor(npv, yVal) {
+    if (npv >= 0) return yVal >= 0 ? Q_DOT_COLORS.tr : Q_DOT_COLORS.br;
+    return yVal >= 0 ? Q_DOT_COLORS.tl : Q_DOT_COLORS.bl;
+  }
+
   // Filter state — sectors and measure names that are currently visible.
   // measures = null means "not yet initialised"; after first render it's a Set.
   const qFilter = {
@@ -752,6 +774,7 @@
           npv:       r.npv,
           savedT,
           kcPerT,
+          capexPerT: r.emissionSavings ? r.emissionSavings.perCapexDiff : null,
           npvLow,    npvHigh,
           savedTLow, savedTHigh,
           kcPerTLow, kcPerTHigh,
@@ -836,6 +859,11 @@
       svg.append('rect').attr('class', 'q-plot-bg')
         .attr('fill', '#fafbfc').attr('stroke', '#eee').attr('stroke-width', 1);
 
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tr').attr('fill', 'rgba(40,160,80,0.07)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tl').attr('fill', 'rgba(200,80,80,0.07)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-br').attr('fill', 'rgba(80,160,220,0.07)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-bl').attr('fill', 'rgba(180,100,200,0.07)');
+
       svg.append('line').attr('class', 'q-zero-x')
         .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
       svg.append('line').attr('class', 'q-zero-y')
@@ -847,10 +875,14 @@
       svg.append('text').attr('class', 'q-axis-label q-x-label').attr('text-anchor', 'middle');
       svg.append('text').attr('class', 'q-axis-label q-y-label').attr('text-anchor', 'middle');
 
-      svg.append('text').attr('class', 'q-quad-label q-quad-tr').attr('text-anchor', 'end');
-      svg.append('text').attr('class', 'q-quad-label q-quad-tl').attr('text-anchor', 'start');
-      svg.append('text').attr('class', 'q-quad-label q-quad-br').attr('text-anchor', 'end');
-      svg.append('text').attr('class', 'q-quad-label q-quad-bl').attr('text-anchor', 'start');
+      svg.append('text').attr('class', 'q-quad-label q-quad-tr').attr('text-anchor', 'end')
+        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#145c2a');
+      svg.append('text').attr('class', 'q-quad-label q-quad-tl').attr('text-anchor', 'start')
+        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#7a1010');
+      svg.append('text').attr('class', 'q-quad-label q-quad-br').attr('text-anchor', 'end')
+        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#0d3d70');
+      svg.append('text').attr('class', 'q-quad-label q-quad-bl').attr('text-anchor', 'start')
+        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#4d1066');
 
       svg.append('ellipse').attr('class', 'q-uncertainty')
         .style('pointer-events', 'none')
@@ -868,6 +900,14 @@
     svg.select('.q-plot-bg')
       .attr('x', ox).attr('y', oy)
       .attr('width', chartW).attr('height', chartH);
+
+    // Quadrant background fills — sized by where the zero axes cross
+    const qzx = Math.max(ox, Math.min(ox + chartW, zx)); // clamped zero x
+    const qzy = Math.max(oy, Math.min(oy + chartH, zy)); // clamped zero y
+    svg.select('.q-quad-bg-tr').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', qzy - oy);
+    svg.select('.q-quad-bg-tl').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', qzy - oy);
+    svg.select('.q-quad-bg-br').attr('x', qzx).attr('y', qzy).attr('width', ox + chartW - qzx).attr('height', oy + chartH - qzy);
+    svg.select('.q-quad-bg-bl').attr('x', ox).attr('y', qzy).attr('width', qzx - ox).attr('height', oy + chartH - qzy);
 
     svg.select('.q-zero-x')
       .attr('x1', ox).attr('x2', ox + chartW)
@@ -937,7 +977,7 @@
     const ptAll = ptSel.merge(ptEnter);
 
     ptAll
-      .attr('fill', d => d.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT)
+      .attr('fill', d => qQuadrantColor(d.npv, yVal(d)))
       .style('cursor', 'pointer')
       .on('mouseover', function (e, d) {
         d3.select(this).attr('r', 8).attr('opacity', 1);
@@ -1023,6 +1063,13 @@
       .attr('fill', '#fafbfc').attr('stroke', '#eee').attr('stroke-width', 1);
 
     const zx = ox + xScale(0), zy = oy + yScale(0);
+    const qzx = Math.max(ox, Math.min(ox + chartW, zx));
+    const qzy = Math.max(oy, Math.min(oy + chartH, zy));
+    svg.append('rect').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', qzy - oy).attr('fill', 'rgba(40,160,80,0.07)');
+    svg.append('rect').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', qzy - oy).attr('fill', 'rgba(200,80,80,0.07)');
+    svg.append('rect').attr('x', qzx).attr('y', qzy).attr('width', ox + chartW - qzx).attr('height', oy + chartH - qzy).attr('fill', 'rgba(80,160,220,0.07)');
+    svg.append('rect').attr('x', ox).attr('y', qzy).attr('width', qzx - ox).attr('height', oy + chartH - qzy).attr('fill', 'rgba(180,100,200,0.07)');
+
     svg.append('line')
       .attr('x1', ox).attr('x2', ox + chartW).attr('y1', zy).attr('y2', zy)
       .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
@@ -1049,13 +1096,15 @@
     // Quadrant labels
     const QPAD = 6;
     [
-      { cls: 'end',   x: ox + chartW - QPAD, y: oy + 14,            text: 'Win-win: úspora i dekarbonizace' },
-      { cls: 'start', x: ox + QPAD,          y: oy + 14,            text: 'Drahá dekarbonizace' },
-      { cls: 'end',   x: ox + chartW - QPAD, y: oy + chartH - QPAD, text: 'Levné, ale ↑ emise' },
-      { cls: 'start', x: ox + QPAD,          y: oy + chartH - QPAD, text: 'Ztráta + ↑ emise' },
+      { cls: 'end',   x: ox + chartW - QPAD, y: oy + 14,            text: 'Win-win: úspora i dekarbonizace', color: '#145c2a' },
+      { cls: 'start', x: ox + QPAD,          y: oy + 14,            text: 'Drahá dekarbonizace',             color: '#7a1010' },
+      { cls: 'end',   x: ox + chartW - QPAD, y: oy + chartH - QPAD, text: 'Levné, ale ↑ emise',             color: '#0d3d70' },
+      { cls: 'start', x: ox + QPAD,          y: oy + chartH - QPAD, text: 'Ztráta + ↑ emise',               color: '#4d1066' },
     ].forEach(q => {
       svg.append('text').attr('class', 'q-quad-label')
-        .attr('text-anchor', q.cls).attr('x', q.x).attr('y', q.y).text(q.text);
+        .attr('text-anchor', q.cls).attr('x', q.x).attr('y', q.y)
+        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', q.color)
+        .text(q.text);
     });
 
     // Legend
@@ -1095,7 +1144,7 @@
       svg.append('circle')
         .attr('cx', ox + xScale(a.npv)).attr('cy', oy + yScale(a.savedT))
         .attr('r', DOT_R)
-        .attr('fill', a.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT)
+        .attr('fill', qQuadrantColor(a.npv, a.savedT))
         .attr('opacity', 0.2)
         .attr('stroke', 'white').attr('stroke-width', 1.5);
     });
@@ -1105,11 +1154,326 @@
       svg.append('circle')
         .attr('cx', ox + xScale(b.npv)).attr('cy', oy + yScale(b.savedT))
         .attr('r', DOT_R)
-        .attr('fill', b.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT)
+        .attr('fill', qQuadrantColor(b.npv, b.savedT))
         .attr('opacity', 0.85)
         .attr('stroke', 'white').attr('stroke-width', 1.5);
     });
   }
+
+  // ── Beeswarm chart ────────────────────────────────────────────────────────
+  function renderBeeswarmChart(container, sharedAbsMax) {
+    const points = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+      .filter(p => p.savedT > 0 && isFinite(p.kcPerT));
+
+    const M = { top: 20, right: 24, bottom: 48, left: 24 };
+    const totalW = container.clientWidth || 720;
+    const totalH = 200;
+    const chartW = totalW - M.left - M.right;
+    const chartH = totalH - M.top - M.bottom;
+    const midY   = M.top + chartH / 2;
+
+    const ext = d3.extent(points, p => p.kcPerT);
+    const localAbsMax = Math.max(Math.abs(ext[0]), Math.abs(ext[1])) * 1.1;
+    const xScale = d3.scaleLinear().domain([-(sharedAbsMax || localAbsMax), sharedAbsMax || localAbsMax]).range([0, chartW]).nice();
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+
+    // Zero line
+    const zx = M.left + xScale(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx).attr('y1', M.top).attr('y2', M.top + chartH)
+      .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+    // Half labels
+    svg.append('text')
+      .attr('x', zx - 8).attr('y', M.top + 14)
+      .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#1a72b8').attr('opacity', 0.8)
+      .text('Opatření je výhodnější než fosilní alternativa');
+    svg.append('text')
+      .attr('x', zx + 8).attr('y', M.top + 14)
+      .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', '#8b35b0').attr('opacity', 0.8)
+      .text('Opatření je dražší než fosilní alternativa');
+
+    // X axis
+    svg.append('g').attr('class', 'chart-axis')
+      .attr('transform', `translate(${M.left},${M.top + chartH})`)
+      .call(d3.axisBottom(xScale).ticks(6).tickFormat(v => {
+        const abs = Math.abs(v);
+        return abs >= 1e6 ? (v / 1e6).toFixed(1) + ' M' : abs >= 1e3 ? (v / 1e3).toFixed(0) + ' tis.' : v.toString();
+      }));
+
+    svg.append('text').attr('text-anchor', 'middle')
+      .attr('x', M.left + chartW / 2).attr('y', totalH - 2)
+      .attr('font-size', '11px').attr('fill', '#666')
+      .text('Kč / t CO₂');
+
+    // Beeswarm via force simulation
+    const DOT_R = 5;
+    const simNodes = points.map(p => ({ ...p, x: M.left + xScale(p.kcPerT), y: midY }));
+    d3.forceSimulation(simNodes)
+      .force('x', d3.forceX(d => M.left + xScale(d.kcPerT)).strength(1))
+      .force('y', d3.forceY(midY).strength(0.1))
+      .force('collide', d3.forceCollide(DOT_R + 1.5))
+      .stop()
+      .tick(120);
+
+    // Clamp dots within chart area
+    simNodes.forEach(n => {
+      n.y = Math.max(M.top + DOT_R, Math.min(M.top + chartH - DOT_R, n.y));
+    });
+
+    const dotG = svg.append('g');
+    dotG.selectAll('circle').data(simNodes).enter().append('circle')
+      .attr('r', DOT_R)
+      .attr('cx', d => d.x)
+      .attr('cy', d => d.y)
+      .attr('fill', d => d.kcPerT < 0 ? '#1a72b8' : '#8b35b0')
+      .attr('opacity', 0.85)
+      .attr('stroke', 'white').attr('stroke-width', 1)
+      .style('cursor', 'pointer')
+      .on('mouseover', function(e, d) {
+        d3.select(this).attr('r', DOT_R + 2).attr('opacity', 1);
+        showQTip(e, [
+          d.name + (d.category ? ' — ' + d.category : ''),
+          'Náklady: ' + qFmtCZKperT(-d.npv, d.savedT),
+        ].join('\n'));
+      })
+      .on('mousemove', moveQTip)
+      .on('mouseout', function() {
+        d3.select(this).attr('r', DOT_R).attr('opacity', 0.85);
+        hideQTip();
+      });
+  }
+
+  // ── CAPEX beeswarm chart ──────────────────────────────────────────────────
+  function renderCapexBeeswarmChart(container, sharedAbsMax) {
+    const points = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+      .filter(p => p.savedT > 0 && p.capexPerT != null && isFinite(p.capexPerT));
+
+    const M = { top: 20, right: 24, bottom: 48, left: 24 };
+    const totalW = container.clientWidth || 720;
+    const totalH = 200;
+    const chartW = totalW - M.left - M.right;
+    const chartH = totalH - M.top - M.bottom;
+    const midY   = M.top + chartH / 2;
+
+    const ext = d3.extent(points, p => p.capexPerT);
+    const localAbsMax = Math.max(Math.abs(ext[0]), Math.abs(ext[1])) * 1.1;
+    const xScale = d3.scaleLinear().domain([-(sharedAbsMax || localAbsMax), sharedAbsMax || localAbsMax]).range([0, chartW]).nice();
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+
+    const zx = M.left + xScale(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx).attr('y1', M.top).attr('y2', M.top + chartH)
+      .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+    svg.append('text')
+      .attr('x', zx - 8).attr('y', M.top + 14)
+      .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#1a72b8').attr('opacity', 0.8)
+      .text('Opatření vyžaduje nižší investici než fosilní alternativa');
+    svg.append('text')
+      .attr('x', zx + 8).attr('y', M.top + 14)
+      .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', '#8b35b0').attr('opacity', 0.8)
+      .text('Opatření vyžaduje vyšší investici než fosilní alternativa');
+
+    svg.append('g').attr('class', 'chart-axis')
+      .attr('transform', `translate(${M.left},${M.top + chartH})`)
+      .call(d3.axisBottom(xScale).ticks(6).tickFormat(v => {
+        const abs = Math.abs(v);
+        return abs >= 1e6 ? (v / 1e6).toFixed(1) + ' M' : abs >= 1e3 ? (v / 1e3).toFixed(0) + ' tis.' : v.toString();
+      }));
+
+    svg.append('text').attr('text-anchor', 'middle')
+      .attr('x', M.left + chartW / 2).attr('y', totalH - 2)
+      .attr('font-size', '11px').attr('fill', '#666')
+      .text('Kč / t CO₂ (rozdíl v investičních nákladech)');
+
+    const DOT_R = 5;
+    const simNodes = points.map(p => ({ ...p, x: M.left + xScale(p.capexPerT), y: midY }));
+    d3.forceSimulation(simNodes)
+      .force('x', d3.forceX(d => M.left + xScale(d.capexPerT)).strength(1))
+      .force('y', d3.forceY(midY).strength(0.1))
+      .force('collide', d3.forceCollide(DOT_R + 1.5))
+      .stop()
+      .tick(120);
+
+    simNodes.forEach(n => {
+      n.y = Math.max(M.top + DOT_R, Math.min(M.top + chartH - DOT_R, n.y));
+    });
+
+    svg.append('g').selectAll('circle').data(simNodes).enter().append('circle')
+      .attr('r', DOT_R)
+      .attr('cx', d => d.x)
+      .attr('cy', d => d.y)
+      .attr('fill', d => d.capexPerT < 0 ? '#1a72b8' : '#8b35b0')
+      .attr('opacity', 0.85)
+      .attr('stroke', 'white').attr('stroke-width', 1)
+      .style('cursor', 'pointer')
+      .on('mouseover', function(e, d) {
+        d3.select(this).attr('r', DOT_R + 2).attr('opacity', 1);
+        const fmt = v => {
+          const abs = Math.abs(v);
+          const s = abs >= 1e6 ? (v / 1e6).toFixed(2) + ' M' : abs >= 1e3 ? (v / 1e3).toFixed(1) + ' tis.' : Math.round(v).toString();
+          return s + ' Kč/t CO₂';
+        };
+        showQTip(e, [
+          d.name + (d.category ? ' — ' + d.category : ''),
+          'Rozdíl v investicích: ' + fmt(d.capexPerT),
+        ].join('\n'));
+      })
+      .on('mousemove', moveQTip)
+      .on('mouseout', function() {
+        d3.select(this).attr('r', DOT_R).attr('opacity', 0.85);
+        hideQTip();
+      });
+  }
+
+  // ── NPV scenario comparison (shared helpers) ──────────────────────────────
+  const SCENARIO_DEFS = [
+    { key: 'CP',    label: 'Současné politiky', color: '#2860b4' },
+    { key: 'NZ',    label: 'Net-zero',           color: '#1f8c47' },
+    { key: 'CP_EC', label: 'Energetická krize',  color: '#c43535' },
+  ];
+
+  // categoryFilter: array of category strings, or null for all
+  function computeScenarioRows(categoryFilter) {
+    const byId = {};
+    for (const sc of SCENARIO_DEFS) {
+      const pts = qComputePoints(state.carbonPrice, state.discountRate, sc.key)
+        .filter(p => !categoryFilter || categoryFilter.includes(p.category));
+      for (const p of pts) {
+        if (!byId[p.id]) byId[p.id] = { id: p.id, name: p.name, category: p.category, sector: p.sector };
+        if (isFinite(p.npv)) byId[p.id][sc.key] = p.npv;
+      }
+    }
+    return Object.values(byId)
+      .filter(d => SCENARIO_DEFS.every(sc => d[sc.key] != null))
+      .sort((a, b) => a.CP - b.CP);
+  }
+
+  // ── Dumbbell chart ─────────────────────────────────────────────────────────
+  // categoryFilter: array of category strings, or null for all
+  // sharedDomain: [min, max] passed from renderAll for a harmonised x axis
+  function renderDumbbellChart(container, categoryFilter, sharedDomain) {
+    const rows = computeScenarioRows(categoryFilter);
+    if (!rows.length) return;
+
+    const DOT_R = 4, JITTER = 5, THRESHOLD = DOT_R * 2 + 1;
+    const ROW_H = 22;
+    const M = { top: 6, right: 16, bottom: 36, left: 160 };
+    const totalW = container.clientWidth || 360;
+    const chartW = totalW - M.left - M.right;
+    const totalH = M.top + rows.length * ROW_H + M.bottom;
+
+    const domain = sharedDomain || (() => {
+      const vals = rows.flatMap(d => SCENARIO_DEFS.map(sc => d[sc.key]));
+      const [mn, mx] = d3.extent(vals);
+      const p = (mx - mn) * 0.04 || Math.abs(mn || mx) * 0.1 || 10000;
+      return [mn - p, mx + p];
+    })();
+    const xScale = d3.scaleLinear().domain(domain).nice().range([0, chartW]);
+
+    const fmtTick = v => {
+      const abs = Math.abs(v);
+      return abs >= 1e6 ? (v / 1e6).toFixed(1) + ' M' : abs >= 1e3 ? (v / 1e3).toFixed(0) + ' tis.' : v.toString();
+    };
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+
+    // X axis
+    svg.append('g').attr('class', 'chart-axis')
+      .attr('transform', `translate(${M.left},${M.top + rows.length * ROW_H})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(fmtTick));
+    svg.append('text').attr('text-anchor', 'middle')
+      .attr('x', M.left + chartW / 2).attr('y', totalH - 4)
+      .attr('font-size', '10px').attr('fill', '#888').text('NPV (Kč)');
+
+    // Zero line
+    const zx = M.left + xScale(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M.top).attr('y2', M.top + rows.length * ROW_H)
+      .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+
+    rows.forEach((d, i) => {
+      const cy = M.top + i * ROW_H + ROW_H / 2;
+
+      svg.append('text').attr('x', M.left - 6).attr('y', cy + 4)
+        .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', '#333')
+        .text(d.name);
+
+      const npvs = SCENARIO_DEFS.map(sc => d[sc.key]);
+      svg.append('line')
+        .attr('x1', M.left + xScale(Math.min(...npvs)))
+        .attr('x2', M.left + xScale(Math.max(...npvs)))
+        .attr('y1', cy).attr('y2', cy)
+        .attr('stroke', '#ddd').attr('stroke-width', 1.5);
+
+      // Horizontal jitter: shift overlapping dots along the line
+      const dotPts = SCENARIO_DEFS.map(sc => ({ sc, px: M.left + xScale(d[sc.key]), xOff: 0 }));
+      dotPts.sort((a, b) => a.px - b.px);
+      const close01 = dotPts[1].px - dotPts[0].px < THRESHOLD;
+      const close12 = dotPts[2].px - dotPts[1].px < THRESHOLD;
+      if (close01 && close12) {
+        dotPts[0].xOff = -JITTER; dotPts[2].xOff = JITTER;
+      } else if (close01) {
+        dotPts[0].xOff = -JITTER; dotPts[1].xOff = JITTER;
+      } else if (close12) {
+        dotPts[1].xOff = -JITTER; dotPts[2].xOff = JITTER;
+      }
+      const xOffMap = Object.fromEntries(dotPts.map(p => [p.sc.key, p.xOff]));
+
+      // CP_EC and NZ first, CP last so blue stays on top
+      [...SCENARIO_DEFS].reverse().forEach(sc => {
+        svg.append('circle')
+          .attr('cx', M.left + xScale(d[sc.key]) + xOffMap[sc.key]).attr('cy', cy)
+          .attr('r', DOT_R)
+          .attr('fill', sc.color).attr('stroke', 'white').attr('stroke-width', 1.2)
+          .style('cursor', 'pointer')
+          .on('mouseover', function(e) {
+            d3.select(this).attr('r', DOT_R + 2);
+            showQTip(e, [
+              d.name + (d.category ? ' — ' + d.category : ''),
+              sc.label + ': ' + fmtCZK(d[sc.key]),
+            ].join('\n'));
+          })
+          .on('mousemove', moveQTip)
+          .on('mouseout', function() { d3.select(this).attr('r', DOT_R); hideQTip(); });
+      });
+    });
+  }
+
+  function renderDumbbellLegend(container) {
+    d3.select(container).select('svg').remove();
+    const totalW = container.clientWidth || 400;
+    const svg = d3.select(container).append('svg').attr('width', totalW).attr('height', 20)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+    SCENARIO_DEFS.forEach((sc, i) => {
+      const lx = i * 160;
+      svg.append('circle').attr('cx', lx + 5).attr('cy', 10).attr('r', 4.5).attr('fill', sc.color);
+      svg.append('text').attr('x', lx + 14).attr('y', 14)
+        .attr('font-size', '11px').attr('fill', '#555').text(sc.label);
+    });
+  }
+
+  const DUMBBELL_CONFIGS = [
+    { id: 'dumbbell-rd-uhli-e',   categories: ['Rodinný dům uhlí – E'] },
+    { id: 'dumbbell-rd-plyn-e',   categories: ['Rodinný dům plyn – E'] },
+    { id: 'dumbbell-nove-male',   categories: ['Nové malé']            },
+    { id: 'dumbbell-nove-velke',  categories: ['Nové velké']           },
+    { id: 'dumbbell-ojete-male',  categories: ['Ojeté malé']           },
+    { id: 'dumbbell-ojete-velke', categories: ['Ojeté velké']          },
+  ];
 
   // ── MAC curve ─────────────────────────────────────────────────────────────
 
@@ -1422,6 +1786,39 @@
     // Re-render static chart on resize if visible
     const scEl = document.getElementById('static-comparison-chart');
     if (scEl && !scEl.hidden) renderStaticComparisonChart(scEl);
+    const beeEl = document.getElementById('beeswarm-chart');
+    const capexBeeEl = document.getElementById('beeswarm-capex-chart');
+    if (beeEl || capexBeeEl) {
+      const allPts = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+        .filter(p => p.savedT > 0);
+      const kcVals    = allPts.filter(p => isFinite(p.kcPerT)).map(p => p.kcPerT);
+      const capexVals = allPts.filter(p => p.capexPerT != null && isFinite(p.capexPerT)).map(p => p.capexPerT);
+      const allVals   = [...kcVals, ...capexVals];
+      const sharedAbsMax = allVals.length
+        ? Math.max(Math.abs(d3.min(allVals)), Math.abs(d3.max(allVals))) * 1.1
+        : undefined;
+      if (beeEl) renderBeeswarmChart(beeEl, sharedAbsMax);
+      if (capexBeeEl) renderCapexBeeswarmChart(capexBeeEl, sharedAbsMax);
+    }
+    // Compute shared x-axis domain across all dumbbell charts
+    const allDbVals = [];
+    DUMBBELL_CONFIGS.forEach(cfg => {
+      computeScenarioRows(cfg.categories).forEach(r =>
+        SCENARIO_DEFS.forEach(sc => { if (r[sc.key] != null) allDbVals.push(r[sc.key]); })
+      );
+    });
+    let sharedDbDomain;
+    if (allDbVals.length) {
+      const [dbMin, dbMax] = d3.extent(allDbVals);
+      const dbPad = (dbMax - dbMin) * 0.04;
+      sharedDbDomain = [dbMin - dbPad, dbMax + dbPad];
+    }
+    const legendEl = document.getElementById('dumbbell-legend');
+    if (legendEl) renderDumbbellLegend(legendEl);
+    DUMBBELL_CONFIGS.forEach(cfg => {
+      const el = document.getElementById(cfg.id);
+      if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain);
+    });
   }
 
   // ── Init ──────────────────────────────────────────────────────────────────
