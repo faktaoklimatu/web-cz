@@ -687,15 +687,15 @@ buildings_measures:
   building_category: Rodinný dům plyn – C
   measure_name: Kotel na biomasu
   dwellings: 1
-  demand_heat_building_mwh: 25
+  demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
   fuel: Biomass
-  capacity_kw: 15.0
+  capacity_kw: 10.0
   efficiency: 0.9
-  demand_heat_measure_mwh: 28
+  demand_heat_measure_mwh: 17
   lifetime: 15
   energy_savings: 0.0
-  capex_technology_czk: 95000
+  capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
   opex_maintenance_czk: 5000
