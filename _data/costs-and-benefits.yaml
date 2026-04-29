@@ -258,12 +258,12 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 6
   lifetime: 15
   energy_savings: 0.0
   capex_technology_czk: 58000
@@ -275,12 +275,12 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 6
   lifetime: 15
   energy_savings: 0.0
   capex_technology_czk: 90000
@@ -292,12 +292,12 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Renovace bez zateplení
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 6
   lifetime: 40
   energy_savings: 0.0
   capex_technology_czk: 50000
@@ -309,12 +309,12 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Nedělám nic
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 6
   lifetime: 40
   energy_savings: 0.0
   capex_technology_czk: 0
@@ -841,37 +841,37 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 6
   lifetime: 15
   energy_savings: 0.0
-  capex_technology_czk: 50000
-  capex_installation_czk: 33000
+  capex_technology_czk: 15000
+  capex_installation_czk: 5000
   capex_preparation_czk: 0
   opex_maintenance_czk: 150
   emissions_embedded_kg: 150
-  measure_baseline: Plynový kotel
+  measure_baseline: Plynová kotelna
   note: společný kotel rozpočítaný na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 16
+  measure_baseline_id: 17
 - id: 48
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 3.2
-  demand_heat_measure_mwh: 3
+  demand_heat_measure_mwh: 2
   lifetime: 15
   energy_savings: 0.0
-  capex_technology_czk: 100000
-  capex_installation_czk: 40000
-  capex_preparation_czk: 26667
+  capex_technology_czk: 50000
+  capex_installation_czk: 20000
+  capex_preparation_czk: 10000
   opex_maintenance_czk: 2300
   emissions_embedded_kg: 800
   measure_baseline: Plynová kotelna
@@ -881,12 +881,12 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Výměna oken a dveří
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 7
+  demand_heat_measure_mwh: 5
   lifetime: 25
   energy_savings: 0.15
   capex_technology_czk: 60000
@@ -901,16 +901,16 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Zateplení + fasáda
   dwellings: 15
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 6
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 4
+  demand_heat_measure_mwh: 3
   lifetime: 40
   energy_savings: 0.5
-  capex_technology_czk: 101000
-  capex_installation_czk: 79000
+  capex_technology_czk: 80000
+  capex_installation_czk: 70000
   capex_preparation_czk: 0
   opex_maintenance_czk: 600
   emissions_embedded_kg: 1740
