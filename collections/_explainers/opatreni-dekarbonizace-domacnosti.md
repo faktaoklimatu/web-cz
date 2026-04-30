@@ -442,3 +442,52 @@ extra-scripts:
     </div>
   </div>
 </div>
+
+<div class="section pt-3 pb-4">
+  <div class="container">
+    <p class="chart-col-header mb-3">Úspora paliva při plošném nasazení opatření</p>
+    <table class="table table-sm" style="max-width:700px;">
+      <thead>
+        <tr>
+          <th>Opatření</th>
+          <th class="text-end">Počet opatření</th>
+          <th class="text-end">Úspora na jednotku</th>
+          <th class="text-end">Celková roční úspora</th>
+          <th class="text-end">Z 60 TWh dovozů plynu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tepelné čerpadlo <small class="text-muted">(Rodinný dům plyn – E)</small></td>
+          <td class="text-end">200 000</td>
+          <td class="text-end">24 MWh plynu / rok</td>
+          <td class="text-end"><strong>4,8 TWh plynu / rok</strong></td>
+          <td class="text-end">8 %</td>
+        </tr>
+        <tr>
+          <td>Zateplení + fasáda <small class="text-muted">(Rodinný dům plyn – E)</small></td>
+          <td class="text-end">200 000</td>
+          <td class="text-end">10 MWh plynu / rok</td>
+          <td class="text-end"><strong>2 TWh plynu / rok</strong></td>
+          <td class="text-end">3,3 %</td>
+        </tr>
+        <tr>
+          <td>Malý elektromobil <small class="text-muted">(Nové malé)</small></td>
+          <td class="text-end">500 000</td>
+          <td class="text-end">975 l benzínu / rok</td>
+          <td class="text-end"><strong>487,5 mil. l benzínu / rok</strong></td>
+          <td class="text-end">—</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="text-muted" style="font-size:0.8em;">
+            Tepelné čerpadlo: baseline Plynový kotel 24 MWh/rok → opatření přechází na elektřinu (0 MWh plynu).
+            Zateplení + fasáda: baseline 24 MWh/rok → opatření 14 MWh/rok plynu.
+            Malý elektromobil: baseline Nové malé auto na benzín, 6,5 l/100 km × 15 000 km/rok = 975 l/rok → elektromobil nespotřebuje benzín.
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

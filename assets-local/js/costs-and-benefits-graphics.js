@@ -1365,7 +1365,7 @@
     const rows = computeScenarioRows(categoryFilter);
     if (!rows.length) return;
 
-    const DOT_R = 4, JITTER = 5, THRESHOLD = DOT_R * 2 + 1;
+    const DOT_R = 4;
     const ROW_H = 22;
     const M = { top: 6, right: 16, bottom: 36, left: 160 };
     const totalW = container.clientWidth || 360;
@@ -1419,26 +1419,20 @@
         .attr('y1', cy).attr('y2', cy)
         .attr('stroke', '#ddd').attr('stroke-width', 1.5);
 
-      // Horizontal jitter: shift overlapping dots along the line
-      const dotPts = SCENARIO_DEFS.map(sc => ({ sc, px: M.left + xScale(d[sc.key]), xOff: 0 }));
-      dotPts.sort((a, b) => a.px - b.px);
-      const close01 = dotPts[1].px - dotPts[0].px < THRESHOLD;
-      const close12 = dotPts[2].px - dotPts[1].px < THRESHOLD;
-      if (close01 && close12) {
-        dotPts[0].xOff = -JITTER; dotPts[2].xOff = JITTER;
-      } else if (close01) {
-        dotPts[0].xOff = -JITTER; dotPts[1].xOff = JITTER;
-      } else if (close12) {
-        dotPts[1].xOff = -JITTER; dotPts[2].xOff = JITTER;
-      }
-      const xOffMap = Object.fromEntries(dotPts.map(p => [p.sc.key, p.xOff]));
+      // Give reduced opacity to dots that land on exactly the same pixel
+      const dotPts = SCENARIO_DEFS.map(sc => ({ sc, px: Math.round(M.left + xScale(d[sc.key])) }));
+      const opacityMap = Object.fromEntries(dotPts.map(p => [p.sc.key, 1]));
+      dotPts.forEach((a, ai) => dotPts.forEach((b, bi) => {
+        if (bi > ai && a.px === b.px) { opacityMap[a.sc.key] = 0.4; opacityMap[b.sc.key] = 0.4; }
+      }));
 
       // CP_EC and NZ first, CP last so blue stays on top
       [...SCENARIO_DEFS].reverse().forEach(sc => {
         svg.append('circle')
-          .attr('cx', M.left + xScale(d[sc.key]) + xOffMap[sc.key]).attr('cy', cy)
+          .attr('cx', M.left + xScale(d[sc.key])).attr('cy', cy)
           .attr('r', DOT_R)
           .attr('fill', sc.color).attr('stroke', 'white').attr('stroke-width', 1.2)
+          .attr('opacity', opacityMap[sc.key])
           .style('cursor', 'pointer')
           .on('mouseover', function(e) {
             d3.select(this).attr('r', DOT_R + 2);
