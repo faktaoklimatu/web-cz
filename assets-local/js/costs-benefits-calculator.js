@@ -121,8 +121,8 @@ const CostsBenefits = (() => {
     const efFuel     = getEmissionFactor(measure.fuel, yearPrices, emissionFactors);
     const efEl       = yearPrices.electricity_emission_factor_kg_mwh;
 
-    const energyCost  = heatDemand                      * priceHeat
-                      + measure.demand_electricity_mwh  * priceEl;
+    const energyCost  = heatDemand                              * priceHeat
+                      + measure.demand_electricity_measure_mwh  * priceEl;
     // Carbon price applies only to direct fossil fuel combustion, not to electricity
     // (electricity price already embeds ETS costs at the generation level).
     // This covers both auxiliary electricity (demand_electricity_mwh) and measures
@@ -270,10 +270,10 @@ const CostsBenefits = (() => {
       if (sector === 'buildings') {
         const heatBl   = computeHeatDemand(baseline);
         const heatMeas = computeHeatDemand(measure);
-        emBl   = heatBl   * efFuelBl   + baseline.demand_electricity_mwh * efEl;
-        emMeas = heatMeas * efFuelMeas  + measure.demand_electricity_mwh  * efEl;
-        enBl   = heatBl   + baseline.demand_electricity_mwh;
-        enMeas = heatMeas + measure.demand_electricity_mwh;
+        emBl   = heatBl   * efFuelBl   + baseline.demand_electricity_measure_mwh * efEl;
+        emMeas = heatMeas * efFuelMeas  + measure.demand_electricity_measure_mwh  * efEl;
+        enBl   = heatBl   + baseline.demand_electricity_measure_mwh;
+        enMeas = heatMeas + measure.demand_electricity_measure_mwh;
       } else {
         const cBl   = baseline.demand_energy_per_100km * baseline.mileage / 100;
         const cMeas = measure.demand_energy_per_100km  * measure.mileage  / 100;

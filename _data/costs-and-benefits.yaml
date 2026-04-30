@@ -8,9 +8,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 15.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 29
   lifetime: 15
+  demand_heat_measure_mwh: 29
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 85000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
@@ -25,9 +27,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 29
   lifetime: 40
+  demand_heat_measure_mwh: 29
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 220000
   capex_installation_czk: 170000
   capex_preparation_czk: 0
@@ -42,9 +46,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 29
   lifetime: 40
+  demand_heat_measure_mwh: 29
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -59,9 +65,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 10.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 18
   lifetime: 15
+  demand_heat_measure_mwh: 18
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 65000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
@@ -76,9 +84,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 18
   lifetime: 40
+  demand_heat_measure_mwh: 18
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 120000
   capex_installation_czk: 170000
   capex_preparation_czk: 0
@@ -93,9 +103,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 18
   lifetime: 40
+  demand_heat_measure_mwh: 18
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -110,9 +122,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 15.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 24
   lifetime: 15
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
@@ -127,9 +141,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 24
   lifetime: 40
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 220000
   capex_installation_czk: 170000
   capex_preparation_czk: 0
@@ -144,9 +160,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 24
   lifetime: 40
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -161,9 +179,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 10.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 14
   lifetime: 15
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
@@ -178,9 +198,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 14
   lifetime: 40
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 220000
   capex_installation_czk: 170000
   capex_preparation_czk: 0
@@ -195,9 +217,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 14
   lifetime: 40
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -212,9 +236,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 10
   lifetime: 15
+  demand_heat_measure_mwh: 10
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
@@ -229,9 +255,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 10
   lifetime: 40
+  demand_heat_measure_mwh: 10
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 62500
   capex_installation_czk: 50000
   capex_preparation_czk: 0
@@ -246,9 +274,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 10
   lifetime: 40
+  demand_heat_measure_mwh: 10
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -263,9 +293,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 6
   lifetime: 15
+  demand_heat_measure_mwh: 6
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
@@ -280,9 +312,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 6
   lifetime: 15
+  demand_heat_measure_mwh: 6
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 90000
   capex_installation_czk: 35000
   capex_preparation_czk: 21667
@@ -297,9 +331,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 6
   lifetime: 40
+  demand_heat_measure_mwh: 6
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 50000
   capex_installation_czk: 40000
   capex_preparation_czk: 0
@@ -314,9 +350,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 6
   lifetime: 40
+  demand_heat_measure_mwh: 6
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
@@ -331,9 +369,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 2.8
-  demand_heat_measure_mwh: 9
   lifetime: 15
+  demand_heat_measure_mwh: 9
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
@@ -350,9 +390,11 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 15.0
   efficiency: 0.9
-  demand_heat_measure_mwh: 28
   lifetime: 15
+  demand_heat_measure_mwh: 28
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
@@ -365,13 +407,15 @@ buildings_measures:
   measure_name: Soláry na střeše+baterie
   dwellings: 1
   demand_heat_building_mwh: 25
-  demand_electricity_mwh: 0
+  demand_electricity_mwh: 4
   fuel: Lignite
   capacity_kw: 5.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 29
   lifetime: 25
+  demand_heat_measure_mwh: 29
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.5
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -388,9 +432,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 15.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 25
   lifetime: 15
+  demand_heat_measure_mwh: 25
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
@@ -407,9 +453,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 15
   lifetime: 40
+  demand_heat_measure_mwh: 15
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.5
+  electricity_savings: 0.0
   capex_technology_czk: 430000
   capex_installation_czk: 350000
   capex_preparation_czk: 0
@@ -426,9 +474,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 24
   lifetime: 25
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.2
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 120000
   capex_preparation_czk: 0
@@ -445,9 +495,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 8.0
   efficiency: 3.5
-  demand_heat_measure_mwh: 4
   lifetime: 15
+  demand_heat_measure_mwh: 4
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
@@ -464,9 +516,11 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 10.0
   efficiency: 0.9
-  demand_heat_measure_mwh: 17
   lifetime: 15
+  demand_heat_measure_mwh: 17
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
@@ -479,13 +533,15 @@ buildings_measures:
   measure_name: Soláry na střeše+baterie
   dwellings: 1
   demand_heat_building_mwh: 15
-  demand_electricity_mwh: 0
+  demand_electricity_mwh: 4
   fuel: Lignite
   capacity_kw: 5.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 18
   lifetime: 25
+  demand_heat_measure_mwh: 18
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.5
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -502,9 +558,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 15
   lifetime: 15
+  demand_heat_measure_mwh: 15
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
@@ -521,9 +579,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 11
   lifetime: 40
+  demand_heat_measure_mwh: 11
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.4
+  electricity_savings: 0.0
   capex_technology_czk: 330000
   capex_installation_czk: 350000
   capex_preparation_czk: 0
@@ -540,9 +600,11 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  demand_heat_measure_mwh: 14
   lifetime: 25
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.2
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 120000
   capex_preparation_czk: 0
@@ -559,9 +621,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 2.8
-  demand_heat_measure_mwh: 9
   lifetime: 15
+  demand_heat_measure_mwh: 9
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
@@ -578,9 +642,11 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 15.0
   efficiency: 0.9
-  demand_heat_measure_mwh: 28
   lifetime: 15
+  demand_heat_measure_mwh: 28
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
@@ -593,13 +659,15 @@ buildings_measures:
   measure_name: Soláry na střeše+baterie
   dwellings: 1
   demand_heat_building_mwh: 25
-  demand_electricity_mwh: 0
+  demand_electricity_mwh: 4
   fuel: Gas
   capacity_kw: 5.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 24
   lifetime: 25
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.5
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -616,9 +684,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 15.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 25
   lifetime: 15
+  demand_heat_measure_mwh: 25
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
@@ -635,9 +705,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 14
   lifetime: 40
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.4
+  electricity_savings: 0.0
   capex_technology_czk: 430000
   capex_installation_czk: 350000
   capex_preparation_czk: 0
@@ -654,9 +726,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 19
   lifetime: 25
+  demand_heat_measure_mwh: 19
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.2
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 120000
   capex_preparation_czk: 0
@@ -673,9 +747,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 8.0
   efficiency: 3.5
-  demand_heat_measure_mwh: 4
   lifetime: 15
+  demand_heat_measure_mwh: 4
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
@@ -692,9 +768,11 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 10.0
   efficiency: 0.9
-  demand_heat_measure_mwh: 17
   lifetime: 15
+  demand_heat_measure_mwh: 17
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
@@ -707,13 +785,15 @@ buildings_measures:
   measure_name: Soláry na střeše+baterie
   dwellings: 1
   demand_heat_building_mwh: 15
-  demand_electricity_mwh: 0
+  demand_electricity_mwh: 4
   fuel: Gas
   capacity_kw: 5.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 14
   lifetime: 25
+  demand_heat_measure_mwh: 14
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.5
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -730,9 +810,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 15
   lifetime: 15
+  demand_heat_measure_mwh: 15
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
@@ -749,9 +831,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 9
   lifetime: 40
+  demand_heat_measure_mwh: 9
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.4
+  electricity_savings: 0.0
   capex_technology_czk: 330000
   capex_installation_czk: 350000
   capex_preparation_czk: 0
@@ -768,9 +852,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 11
   lifetime: 25
+  demand_heat_measure_mwh: 11
+  demand_electricity_measure_mwh: 4
   energy_savings: 0.2
+  electricity_savings: 0.0
   capex_technology_czk: 200000
   capex_installation_czk: 120000
   capex_preparation_czk: 0
@@ -787,9 +873,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 10
   lifetime: 15
+  demand_heat_measure_mwh: 10
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 33000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
@@ -806,9 +894,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 8
   lifetime: 25
+  demand_heat_measure_mwh: 8
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.15
+  electricity_savings: 0.0
   capex_technology_czk: 65000
   capex_installation_czk: 20000
   capex_preparation_czk: 0
@@ -826,9 +916,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  demand_heat_measure_mwh: 5
   lifetime: 40
+  demand_heat_measure_mwh: 5
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.5
+  electricity_savings: 0.0
   capex_technology_czk: 126000
   capex_installation_czk: 99000
   capex_preparation_czk: 0
@@ -846,9 +938,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
-  demand_heat_measure_mwh: 6
   lifetime: 15
+  demand_heat_measure_mwh: 6
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 15000
   capex_installation_czk: 5000
   capex_preparation_czk: 0
@@ -866,9 +960,11 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 3.2
-  demand_heat_measure_mwh: 2
   lifetime: 15
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.0
+  electricity_savings: 0.0
   capex_technology_czk: 50000
   capex_installation_czk: 20000
   capex_preparation_czk: 10000
@@ -886,9 +982,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 5
   lifetime: 25
+  demand_heat_measure_mwh: 5
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.15
+  electricity_savings: 0.0
   capex_technology_czk: 60000
   capex_installation_czk: 20000
   capex_preparation_czk: 0
@@ -906,9 +1004,11 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  demand_heat_measure_mwh: 3
   lifetime: 40
+  demand_heat_measure_mwh: 3
+  demand_electricity_measure_mwh: 2
   energy_savings: 0.5
+  electricity_savings: 0.0
   capex_technology_czk: 80000
   capex_installation_czk: 70000
   capex_preparation_czk: 0
@@ -1481,8 +1581,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1651
     electricity: 4427
-    petrol: 33
-    diesel: 31
+    petrol: 32
+    diesel: 29
     electricity_emission_factor_kg_mwh: 401
     carbon_price_eur_nz: 60
   - year_calendar: 2027
@@ -1502,7 +1602,7 @@ fuel_scenarios:
     biomass: 1670
     electricity: 4355
     petrol: 32
-    diesel: 29
+    diesel: 30
     electricity_emission_factor_kg_mwh: 351
     carbon_price_eur_nz: 107
   - year_calendar: 2029
@@ -1511,8 +1611,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1679
     electricity: 4318
-    petrol: 31
-    diesel: 29
+    petrol: 32
+    diesel: 30
     electricity_emission_factor_kg_mwh: 326
     carbon_price_eur_nz: 131
   - year_calendar: 2030
@@ -1521,8 +1621,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1688
     electricity: 4282
-    petrol: 30
-    diesel: 28
+    petrol: 32
+    diesel: 30
     electricity_emission_factor_kg_mwh: 301
     carbon_price_eur_nz: 154
   - year_calendar: 2031
@@ -1531,8 +1631,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1698
     electricity: 4246
-    petrol: 30
-    diesel: 27
+    petrol: 32
+    diesel: 30
     electricity_emission_factor_kg_mwh: 276
     carbon_price_eur_nz: 156
   - year_calendar: 2032
@@ -1541,8 +1641,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1707
     electricity: 4209
-    petrol: 29
-    diesel: 26
+    petrol: 32
+    diesel: 30
     electricity_emission_factor_kg_mwh: 251
     carbon_price_eur_nz: 158
   - year_calendar: 2033
@@ -1551,8 +1651,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1716
     electricity: 4173
-    petrol: 28
-    diesel: 26
+    petrol: 32
+    diesel: 30
     electricity_emission_factor_kg_mwh: 226
     carbon_price_eur_nz: 160
   - year_calendar: 2034
@@ -1561,8 +1661,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1725
     electricity: 4136
-    petrol: 27
-    diesel: 25
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 200
     carbon_price_eur_nz: 162
   - year_calendar: 2035
@@ -1571,8 +1671,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1735
     electricity: 4100
-    petrol: 27
-    diesel: 24
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 175
     carbon_price_eur_nz: 165
   - year_calendar: 2036
@@ -1581,8 +1681,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1744
     electricity: 4057
-    petrol: 27
-    diesel: 24
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 150
     carbon_price_eur_nz: 167
   - year_calendar: 2037
@@ -1591,8 +1691,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1754
     electricity: 4013
-    petrol: 27
-    diesel: 24
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 125
     carbon_price_eur_nz: 169
   - year_calendar: 2038
@@ -1601,8 +1701,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1763
     electricity: 3970
-    petrol: 27
-    diesel: 24
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 100
     carbon_price_eur_nz: 171
   - year_calendar: 2039
@@ -1611,8 +1711,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1773
     electricity: 3927
-    petrol: 26
-    diesel: 24
+    petrol: 33
+    diesel: 31
     electricity_emission_factor_kg_mwh: 75
     carbon_price_eur_nz: 173
   - year_calendar: 2040
@@ -1621,8 +1721,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1782
     electricity: 3883
-    petrol: 26
-    diesel: 24
+    petrol: 34
+    diesel: 32
     electricity_emission_factor_kg_mwh: 50
     carbon_price_eur_nz: 175
   - year_calendar: 2041
@@ -1631,8 +1731,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1792
     electricity: 3840
-    petrol: 26
-    diesel: 24
+    petrol: 34
+    diesel: 32
     electricity_emission_factor_kg_mwh: 31
     carbon_price_eur_nz: 179
   - year_calendar: 2042
@@ -1641,8 +1741,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1801
     electricity: 3797
-    petrol: 26
-    diesel: 24
+    petrol: 34
+    diesel: 32
     electricity_emission_factor_kg_mwh: 29
     carbon_price_eur_nz: 183
   - year_calendar: 2043
@@ -1651,8 +1751,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1811
     electricity: 3753
-    petrol: 26
-    diesel: 24
+    petrol: 34
+    diesel: 32
     electricity_emission_factor_kg_mwh: 26
     carbon_price_eur_nz: 186
   - year_calendar: 2044
@@ -1661,8 +1761,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1820
     electricity: 3710
-    petrol: 26
-    diesel: 23
+    petrol: 34
+    diesel: 32
     electricity_emission_factor_kg_mwh: 24
     carbon_price_eur_nz: 190
   - year_calendar: 2045
@@ -1671,8 +1771,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1830
     electricity: 3667
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 32
     electricity_emission_factor_kg_mwh: 22
     carbon_price_eur_nz: 194
   - year_calendar: 2046
@@ -1681,8 +1781,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1839
     electricity: 3623
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 33
     electricity_emission_factor_kg_mwh: 19
     carbon_price_eur_nz: 198
   - year_calendar: 2047
@@ -1691,8 +1791,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1849
     electricity: 3580
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 33
     electricity_emission_factor_kg_mwh: 17
     carbon_price_eur_nz: 202
   - year_calendar: 2048
@@ -1701,8 +1801,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1859
     electricity: 3537
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 33
     electricity_emission_factor_kg_mwh: 15
     carbon_price_eur_nz: 205
   - year_calendar: 2049
@@ -1711,8 +1811,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1868
     electricity: 3493
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 33
     electricity_emission_factor_kg_mwh: 12
     carbon_price_eur_nz: 209
   - year_calendar: 2050
@@ -1721,8 +1821,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1878
     electricity: 3450
-    petrol: 26
-    diesel: 23
+    petrol: 35
+    diesel: 33
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 213
   - year_calendar: 2051
@@ -1731,8 +1831,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1887
     electricity: 3407
-    petrol: 25
-    diesel: 23
+    petrol: 36
+    diesel: 34
     electricity_emission_factor_kg_mwh: 8
     carbon_price_eur_nz: 217
   - year_calendar: 2052
@@ -1741,8 +1841,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1897
     electricity: 3363
-    petrol: 25
-    diesel: 23
+    petrol: 36
+    diesel: 34
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 221
   - year_calendar: 2053
@@ -1751,8 +1851,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1906
     electricity: 3320
-    petrol: 25
-    diesel: 23
+    petrol: 36
+    diesel: 34
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 225
   - year_calendar: 2054
@@ -1761,8 +1861,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1916
     electricity: 3277
-    petrol: 25
-    diesel: 23
+    petrol: 36
+    diesel: 34
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 228
   - year_calendar: 2055
@@ -1771,8 +1871,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1925
     electricity: 3233
-    petrol: 25
-    diesel: 23
+    petrol: 36
+    diesel: 34
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 232
   - year_calendar: 2056
@@ -1781,8 +1881,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1935
     electricity: 3190
-    petrol: 25
-    diesel: 23
+    petrol: 37
+    diesel: 34
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 236
   - year_calendar: 2057
@@ -1791,8 +1891,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1944
     electricity: 3147
-    petrol: 25
-    diesel: 22
+    petrol: 37
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 240
   - year_calendar: 2058
@@ -1801,8 +1901,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1954
     electricity: 3103
-    petrol: 25
-    diesel: 22
+    petrol: 37
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 244
   - year_calendar: 2059
@@ -1811,8 +1911,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1963
     electricity: 3060
-    petrol: 25
-    diesel: 22
+    petrol: 37
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 248
   - year_calendar: 2060
@@ -1821,8 +1921,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1973
     electricity: 3017
-    petrol: 25
-    diesel: 22
+    petrol: 37
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 252
   - year_calendar: 2061
@@ -1831,8 +1931,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1982
     electricity: 2973
-    petrol: 25
-    diesel: 22
+    petrol: 37
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 256
   - year_calendar: 2062
@@ -1841,8 +1941,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 1992
     electricity: 2930
-    petrol: 25
-    diesel: 22
+    petrol: 38
+    diesel: 35
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 259
   - year_calendar: 2063
@@ -1851,8 +1951,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 2001
     electricity: 2887
-    petrol: 24
-    diesel: 22
+    petrol: 38
+    diesel: 36
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 263
   - year_calendar: 2064
@@ -1861,8 +1961,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 2011
     electricity: 2843
-    petrol: 24
-    diesel: 22
+    petrol: 38
+    diesel: 36
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 267
   - year_calendar: 2065
@@ -1871,8 +1971,8 @@ fuel_scenarios:
     lignite: 1420
     biomass: 2020
     electricity: 2800
-    petrol: 24
-    diesel: 22
+    petrol: 38
+    diesel: 36
     electricity_emission_factor_kg_mwh: 5
     carbon_price_eur_nz: 271
 - scenario: CP_EC
