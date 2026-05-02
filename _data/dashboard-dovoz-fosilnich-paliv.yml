@@ -1,5 +1,70 @@
 timestamp: '2026-03-26'
 
+energy_mix:
+  - year: 2017
+    dovoz_ropy:    21.8
+    dovoz_plynu:   15.5
+    pevna_paliva:   4.5
+    domace_fos:    30.4
+    jaderne_teplo: 17.1
+    oze:            9.9
+  - year: 2018
+    dovoz_ropy:    22.3
+    dovoz_plynu:   14.8
+    pevna_paliva:   4.7
+    domace_fos:    29.0
+    jaderne_teplo: 18.1
+    oze:           10.3
+  - year: 2019
+    dovoz_ropy:    22.5
+    dovoz_plynu:   15.9
+    pevna_paliva:   4.9
+    domace_fos:    26.7
+    jaderne_teplo: 18.4
+    oze:           10.9
+  - year: 2020
+    dovoz_ropy:    22.1
+    dovoz_plynu:   16.1
+    pevna_paliva:   4.2
+    domace_fos:    25.1
+    jaderne_teplo: 19.7
+    oze:           11.9
+  - year: 2021
+    dovoz_ropy:    22.5
+    dovoz_plynu:   16.6
+    pevna_paliva:   4.3
+    domace_fos:    24.6
+    jaderne_teplo: 19.2
+    oze:           12.0
+  - year: 2022
+    dovoz_ropy:    23.4
+    dovoz_plynu:   14.0
+    pevna_paliva:   4.2
+    domace_fos:    26.1
+    jaderne_teplo: 19.1
+    oze:           12.5
+  - year: 2023
+    dovoz_ropy:    24.4
+    dovoz_plynu:   14.7
+    pevna_paliva:   4.1
+    domace_fos:    23.4
+    jaderne_teplo: 19.3
+    oze:           13.3
+  - year: 2024
+    dovoz_ropy:    24.6
+    dovoz_plynu:   15.8
+    pevna_paliva:   4.0
+    domace_fos:    20.4
+    jaderne_teplo: 19.8
+    oze:           14.5
+  - year: 2025
+    dovoz_ropy:    24.6
+    dovoz_plynu:   16.8
+    pevna_paliva:   3.9
+    domace_fos:    17.4
+    jaderne_teplo: 20.2
+    oze:           16.2
+
 highlights:
   year: 2025
   total_czk_mld: 159.6

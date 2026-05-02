@@ -50,8 +50,9 @@ function fokBarChart(containerSelector, data, options = {}) {
     ? options.color
     : () => (typeof options.color === 'string' ? options.color : theme.colors.primary);
 
-  const horiz   = options.horizontal ?? false;
-  const sorted  = options.sorted     ?? false;
+  const horiz      = options.horizontal  ?? false;
+  const sorted     = options.sorted     ?? false;
+  const showLabels = options.showInnerLabels ?? false;
 
   // ── Prepare data ────────────────────────────────────────────────────────
   let rows = data.map(d => ({ _x: xAcc(d), _y: +yAcc(d), _raw: d }));
@@ -118,7 +119,8 @@ function fokBarChart(containerSelector, data, options = {}) {
     g.append('g')
       .attr('class', 'fok-axis fok-axis--y')
       .call(fokAxisY(yScale, {
-        ticks: 6,
+        ticks:      options.yTicks      ?? 6,
+        tickValues: options.yTickValues,
         tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
         gridLines: true,
         gridWidth: inner.w,
@@ -129,6 +131,7 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('class', 'fok-axis fok-axis--x')
       .attr('transform', `translate(0,${inner.h})`)
       .call(fokAxisX(xScale, {
+        tickValues: options.xTickValues,
         tickFormat: options.xFormat,
       }, theme));
   } else {
@@ -230,18 +233,41 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('width',  xScale.bandwidth())
       .attr('y',      d => d._y >= 0 ? yScale(d._y) : yScale(0))
       .attr('height', d => Math.abs(yScale(d._y) - yScale(0)))
-      .attr('fill',   d => colorAcc(d._raw))
-      .attr('rx',     theme.bar.radius)
-      .attr('ry',     theme.bar.radius);
+      .attr('fill',         d => colorAcc(d._raw))
+      .attr('stroke',       '#fff')
+      .attr('stroke-width', 0.5)
+      .attr('rx',           theme.bar.radius)
+      .attr('ry',           theme.bar.radius);
   } else {
     bars
-      .attr('y',      d => yScale(d._x))
-      .attr('height', yScale.bandwidth())
-      .attr('x',      d => d._y >= 0 ? xScale(0) : xScale(d._y))
-      .attr('width',  d => Math.abs(xScale(d._y) - xScale(0)))
-      .attr('fill',   d => colorAcc(d._raw))
-      .attr('rx',     theme.bar.radius)
-      .attr('ry',     theme.bar.radius);
+      .attr('y',            d => yScale(d._x))
+      .attr('height',       yScale.bandwidth())
+      .attr('x',            d => d._y >= 0 ? xScale(0) : xScale(d._y))
+      .attr('width',        d => Math.abs(xScale(d._y) - xScale(0)))
+      .attr('fill',         d => colorAcc(d._raw))
+      .attr('stroke',       '#fff')
+      .attr('stroke-width', 0.5)
+      .attr('rx',           theme.bar.radius)
+      .attr('ry',           theme.bar.radius);
+  }
+
+  // ── Inner labels ─────────────────────────────────────────────────────────
+  if (showLabels && !horiz) {
+    const minH  = theme.fontSize.axisLabel * 2.5;
+    const offset = theme.fontSize.axisLabel * 1.5;
+    g.selectAll('.fok-bar-label')
+      .data(rows.filter(d => Math.abs(yScale(d._y) - yScale(0)) >= minH))
+      .join('text')
+      .attr('class', 'fok-bar-label')
+      .attr('x', d => xScale(d._x) + xScale.bandwidth() / 2)
+      .attr('y', d => (d._y >= 0 ? yScale(d._y) : yScale(0)) + offset)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#fff')
+      .attr('font-family', theme.font)
+      .attr('font-size', 10)
+      .attr('font-weight', 400)
+      .attr('pointer-events', 'none')
+      .text(d => (options.yFormat ?? (v => fokFormatNumber(v, 0)))(d._y));
   }
 
   bars

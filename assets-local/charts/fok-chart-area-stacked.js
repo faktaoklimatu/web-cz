@@ -97,7 +97,7 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   g.append('g')
     .attr('class', 'fok-axis fok-axis--y')
     .call(fokAxisY(yScale, {
-      tickValues: options.proportional ? [0, 25, 50, 75, 100] : undefined,
+      tickValues: options.yTickValues ?? (options.proportional ? [0, 25, 50, 75, 100] : undefined),
       tickFormat: yFmt,
       gridLines:  true,
       gridWidth:  inner.w,
@@ -107,7 +107,7 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     .attr('class', 'fok-axis fok-axis--x')
     .attr('transform', `translate(0,${inner.h})`)
     .call(fokAxisX(xScale, {
-      tickValues: xVals,
+      tickValues: options.xTickValues ?? xVals,
       tickFormat: v => String(Math.round(v)),
     }, theme));
 
@@ -141,6 +141,8 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     areasG.append('path')
       .datum(s)
       .attr('fill', colors[s.key] ?? theme.colors.categorical[0])
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 0.5)
       .attr('opacity', 0.88)
       .attr('d', areaGen);
 
@@ -196,6 +198,27 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
       tip.move(event);
     })
     .on('mouseleave', () => { vline.attr('opacity', 0); tip.hide(); });
+
+  // ── Custom annotations ────────────────────────────────────────────────────
+  // Each annotation: { x, y, text, anchor?, color?, fontSize? }
+  // x and y are data-space coordinates (same units as the chart axes).
+  // The top of the text is anchored at y; anchor sets text-anchor (default 'end').
+  if (options.annotations) {
+    const annotG = g.append('g').attr('class', 'fok-annotations');
+    options.annotations.forEach(ann => {
+      annotG.append('text')
+        .attr('x', xScale(ann.x))
+        .attr('y', yScale(ann.y))
+        .attr('text-anchor',      ann.anchor    ?? 'end')
+        .attr('dominant-baseline', 'hanging')
+        .attr('fill',             ann.color     ?? theme.colors.grey)
+        .attr('font-family',      ann.fontFamily ?? theme.font)
+        .attr('font-size',        ann.fontSize   ?? theme.fontSize.annotation)
+        .attr('font-weight',      ann.fontWeight ?? 400)
+        .attr('pointer-events',   'none')
+        .text(ann.text);
+    });
+  }
 
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend) {

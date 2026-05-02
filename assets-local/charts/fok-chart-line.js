@@ -116,7 +116,8 @@ function fokLineChart(containerSelector, data, options = {}) {
   g.append('g')
     .attr('class', 'fok-axis fok-axis--y')
     .call(fokAxisY(yScale, {
-      ticks: 6,
+      ticks:      options.yTicks      ?? 6,
+      tickValues: options.yTickValues,
       tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
       gridLines: true,
       gridWidth: inner.w,
@@ -125,7 +126,8 @@ function fokLineChart(containerSelector, data, options = {}) {
     .attr('class', 'fok-axis fok-axis--x')
     .attr('transform', `translate(0,${inner.h})`)
     .call(fokAxisX(xScale, {
-      ticks: 8,
+      ticks:      options.xTicks      ?? 8,
+      tickValues: options.xTickValues,
       tickFormat: options.xFormat,
     }, theme));
 
@@ -169,6 +171,8 @@ function fokLineChart(containerSelector, data, options = {}) {
         .attr('class', 'fok-area')
         .attr('d', areaGen)
         .attr('fill', color)
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 0.5)
         .attr('opacity', 0.18);
     }
 

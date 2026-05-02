@@ -1,24 +1,47 @@
-.dovoz-kpis {
-  display: flex;
-  gap: 2rem;
-  margin: 1rem 0 2rem;
-
-  .kpi {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .kpi-value {
+.dashboard-dovoz {
+  h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0050ae;
   }
+}
 
-  .kpi-label {
-    font-size: 0.85rem;
-    color: #53616e;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+// ── KPI header grid ───────────────────────────────────────────────────────────
+#dovoz-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 1.5rem 0 2.5rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem 1rem 0;
+}
+
+.kpi-label {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8a939c;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+
+  .fas, .far, .fal {
+    margin-right: 0.4em;
+    font-size: 0.85em;
+  }
+}
+
+.kpi-value {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3a3a45;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 }

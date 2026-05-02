@@ -49,11 +49,12 @@ fokBarChartStacked('#chart-podil-ets', [{ ets1: 34.8, ets2: 39.4, rest: 25.8 }],
   keys:   ['ets1', 'ets2', 'rest'],
   colors: { ets1: '#6976b5', ets2: '#3b3b93', rest: '#a6b0bd' },
   labels: { ets1: 'ETS 1 (35 %)', ets2: 'ETS 2 (39 %)', rest: 'Nezpoplatněné emise (26 %)' },
-  proportional:    true,
+  proportional:    false,
   horizontal:      true,
   showInnerLabels: true,
   legend:          true,
   height:  90,
+  width:  420,
   margins: { top: 8, right: 8, bottom: 8, left: 8 },
   tooltipHtml: (row, key) => {
     const names = { ets1: 'ETS 1', ets2: 'ETS 2', rest: 'Nezpoplatněné emise' };

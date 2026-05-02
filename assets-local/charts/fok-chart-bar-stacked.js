@@ -128,7 +128,7 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
 
     g.append('g').attr('class', 'fok-axis fok-axis--x')
       .attr('transform', `translate(0,${inner.h})`)
-      .call(fokAxisX(xScale, { tickFormat: options.xFormat }, theme));
+      .call(fokAxisX(xScale, { tickValues: options.xTickValues, tickFormat: options.xFormat }, theme));
   } else {
     // Horizontal: y-axis = categories (band), x-axis = values
     g.append('g').attr('class', 'fok-axis fok-axis--y')
@@ -190,7 +190,9 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
       .data(s)
       .join('rect')
       .attr('class', 'fok-bar')
-      .attr('fill', colorMap[key] ?? theme.colors.primary)
+      .attr('fill',         colorMap[key] ?? theme.colors.primary)
+      .attr('stroke',       '#fff')
+      .attr('stroke-width', 0.5)
       .on('mouseover', function(event, d) {
         d3.select(this).attr('opacity', 0.8);
         tip.show(options.tooltipHtml ? options.tooltipHtml(d.data._raw, key) : defaultTooltip(d.data, key));
@@ -208,6 +210,29 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
         .attr('width',  xScale.bandwidth())
         .attr('y',      d => yScale(d[1]))
         .attr('height', d => Math.max(0, yScale(d[0]) - yScale(d[1])));
+
+      if (showLabels) {
+        const minH = theme.fontSize.axisLabel * 2.5;
+        const offset = theme.fontSize.axisLabel * 1.5;
+        grp.selectAll('.fok-bar-label')
+          .data(s.filter(d => yScale(d[0]) - yScale(d[1]) >= minH))
+          .join('text')
+          .attr('class', 'fok-bar-label')
+          .attr('x', d => xScale(d.data._x) + xScale.bandwidth() / 2)
+          .attr('y', d => yScale(d[1]) + offset)
+          .attr('text-anchor', 'middle')
+          .attr('fill', '#fff')
+          .attr('font-family', theme.font)
+          .attr('font-size', 10)
+          .attr('font-weight', 400)
+          .attr('pointer-events', 'none')
+          .text(d => {
+            const val = proportional ? (d[1] - d[0]) : d.data._raw[key];
+            return proportional
+              ? Math.round(d[1] - d[0]) + ' %'
+              : fokFormatNumber(val, 0);
+          });
+      }
     } else {
       rects
         .attr('y',      d => yScale(d.data._x))

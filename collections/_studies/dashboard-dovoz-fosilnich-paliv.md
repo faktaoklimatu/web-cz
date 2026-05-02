@@ -14,11 +14,9 @@ caption:       "Kolik Česká republika platí za dovoz ropy a zemního plynu a 
 intro: |
     Tento přehled ukazuje vývoj dovozu fosilních paliv do České republiky v letech 2017–2025.
     Zaměřuje se na ropu a zemní plyn — jejich objem, cenu a původ.
+body-class:    dashboard-dovoz
 extra-scripts: [ /assets-local/js/dashboard-dovoz-fosilnich-paliv.js ]
 ---
-<div id="last-updated" class="small">
-Poslední aktualizace dat: {{ site.data["dashboard-dovoz-fosilnich-paliv"].timestamp | date: "%-d. %-m. %Y" }}
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="/assets-local/charts/fok-theme.js"></script>
@@ -29,39 +27,44 @@ Poslední aktualizace dat: {{ site.data["dashboard-dovoz-fosilnich-paliv"].times
 <script src="/assets-local/charts/fok-chart-area-stacked.js"></script>
 <script>
   window.DASHBOARD_DOVOZ = {
-    highlights: {{ site.data["dashboard-dovoz-fosilnich-paliv"].highlights | jsonify }},
-    payments:   {{ site.data["dashboard-dovoz-fosilnich-paliv"].payments   | jsonify }},
-    plyn:       {{ site.data["dashboard-dovoz-fosilnich-paliv"].plyn       | jsonify }},
-    ropa:       {{ site.data["dashboard-dovoz-fosilnich-paliv"].ropa       | jsonify }},
+    highlights:  {{ site.data["dashboard-dovoz-fosilnich-paliv"].highlights  | jsonify }},
+    payments:    {{ site.data["dashboard-dovoz-fosilnich-paliv"].payments    | jsonify }},
+    plyn:        {{ site.data["dashboard-dovoz-fosilnich-paliv"].plyn        | jsonify }},
+    ropa:        {{ site.data["dashboard-dovoz-fosilnich-paliv"].ropa        | jsonify }},
+    energy_mix:  {{ site.data["dashboard-dovoz-fosilnich-paliv"].energy_mix  | jsonify }},
   };
 </script>
 
 <div id="dovoz-header">
-  <p class="small">Rok <span id="dovoz-year"></span></p>
-  <div class="dovoz-kpis">
-    <div class="kpi">
-      <span class="kpi-value" id="kpi-total"></span>
-      <span class="kpi-label">celkové výdaje</span>
-    </div>
-    <div class="kpi">
-      <span class="kpi-value" id="kpi-gdp"></span>
-      <span class="kpi-label">podíl HDP</span>
-    </div>
-    <div class="kpi">
-      <span class="kpi-value" id="kpi-energy"></span>
-      <span class="kpi-label">celkové prim. energie</span>
-    </div>
+  <div class="kpi">
+    <span class="kpi-label"><i class="fas fa-calendar-alt"></i> Rok</span>
+    <span class="kpi-value" id="dovoz-year"></span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label"><i class="fas fa-coins"></i> celkové výdaje</span>
+    <span class="kpi-value" id="kpi-total"></span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label"><i class="fas fa-chart-line"></i> podíl HDP</span>
+    <span class="kpi-value" id="kpi-gdp"></span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label"><i class="fas fa-bolt"></i> podíl prim. energie</span>
+    <span class="kpi-value" id="kpi-energy"></span>
   </div>
 </div>
 
 <h2>Celkové výdaje za ropa a plyn</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div id="chart-celkem-czk"></div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div id="chart-celkem-hdp"></div>
+  </div>
+  <div class="col-md-4">
+    <div id="chart-celkem-energie"></div>
   </div>
 </div>
 
