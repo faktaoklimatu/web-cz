@@ -10,6 +10,7 @@ Rules for AI-assisted chart prototyping in the FoK design system (D3 + fok-theme
 |---|---|
 | Stacked bar (horizontal, proportional) | Share of total — single row breakdown |
 | Stacked bar (vertical, small multiples) | Compare base + delta across categories |
+| Stacked area (proportional) | Geographic/categorical mix evolving over time |
 | Line chart | Time series, trends over years |
 | Choropleth map (world) | Geographic comparison of a single variable |
 
@@ -135,6 +136,7 @@ Named sector colors from `FoKTheme.colors.sectors`:
 
 ### Lines
 
-- No smoothing — use linear segments only (no `curveMonotoneX` or other D3 curves)
+**Never use smoothed curves.** All lines must use `d3.curveLinear` (the D3 default). Do not pass any curve option to `d3.line()` or `d3.area()`. This applies to fokLineChart, fokBarChartStacked, and any custom D3 code in this project. `curveMonotoneX`, `curveBasis`, `curveCardinal`, and all other interpolators are forbidden.
+
 - Solid line for measured/historical data
 - Dashed line (`stroke-dasharray: '5 4'`, `stroke-width` slightly reduced) for projections and trajectories

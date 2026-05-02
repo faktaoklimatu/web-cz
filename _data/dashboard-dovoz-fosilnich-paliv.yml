@@ -1,0 +1,251 @@
+timestamp: '2026-03-26'
+
+highlights:
+  year: 2025
+  total_czk_mld: 159.6
+  gdp_share_pct: 1.58
+  primary_energy_pct: 42
+
+gdp:
+  - year: 2017
+    mld_czk: 5179
+  - year: 2018
+    mld_czk: 5476
+  - year: 2019
+    mld_czk: 5889
+  - year: 2020
+    mld_czk: 5828
+  - year: 2021
+    mld_czk: 6308
+  - year: 2022
+    mld_czk: 7050
+  - year: 2023
+    mld_czk: 7619
+  - year: 2024
+    mld_czk: 8010
+  - year: 2025
+    mld_czk: 10093
+
+payments:
+  - year: 2017
+    plyn_czk_mln: 46623
+    ropa_czk_mln: 74200
+    total_czk_mln: 120822
+    gdp_share_pct: 2.33
+    russia_share_pct: 1.48
+  - year: 2018
+    plyn_czk_mln: 49316
+    ropa_czk_mln: 86621
+    total_czk_mln: 135937
+    gdp_share_pct: 2.48
+    russia_share_pct: 1.66
+  - year: 2019
+    plyn_czk_mln: 41722
+    ropa_czk_mln: 85839
+    total_czk_mln: 127562
+    gdp_share_pct: 2.17
+    russia_share_pct: 1.32
+  - year: 2020
+    plyn_czk_mln: 24605
+    ropa_czk_mln: 49210
+    total_czk_mln: 73815
+    gdp_share_pct: 1.27
+    russia_share_pct: 0.70
+  - year: 2021
+    plyn_czk_mln: 76268
+    ropa_czk_mln: 78054
+    total_czk_mln: 154322
+    gdp_share_pct: 2.45
+    russia_share_pct: 1.80
+  - year: 2022
+    plyn_czk_mln: 228971
+    ropa_czk_mln: 115346
+    total_czk_mln: 344317
+    gdp_share_pct: 4.88
+    russia_share_pct: 3.36
+  - year: 2023
+    plyn_czk_mln: 87598
+    ropa_czk_mln: 94165
+    total_czk_mln: 181763
+    gdp_share_pct: 2.39
+    russia_share_pct: 0.72
+  - year: 2024
+    plyn_czk_mln: 64310
+    ropa_czk_mln: 93932
+    total_czk_mln: 158242
+    gdp_share_pct: 1.98
+    russia_share_pct: 0.72
+  - year: 2025
+    plyn_czk_mln: 77446
+    ropa_czk_mln: 82103
+    total_czk_mln: 159550
+    gdp_share_pct: 1.58
+    russia_share_pct: 0.07
+
+plyn:
+  - year: 2017
+    total_czk_mln: 46623
+    total_kg: 6663901024
+    countries:
+      rusko:   { czk_mln: 39168, kg: 5621160424, pct: 84.35 }
+      norsko:  { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      nemecko: { czk_mln: 1544,  kg: 220112471,  pct: 3.30  }
+      ostatni: { czk_mln: 5910,  kg: 822628129,  pct: 12.34 }
+  - year: 2018
+    total_czk_mln: 49316
+    total_kg: 5927488149
+    countries:
+      rusko:   { czk_mln: 46295, kg: 5565651172, pct: 93.90 }
+      norsko:  { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      nemecko: { czk_mln: 2313,  kg: 265396737,  pct: 4.48  }
+      ostatni: { czk_mln: 707,   kg: 96440240,   pct: 1.63  }
+  - year: 2019
+    total_czk_mln: 41722
+    total_kg: 6942441249
+    countries:
+      rusko:   { czk_mln: 37130, kg: 6174982611, pct: 88.95 }
+      norsko:  { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      nemecko: { czk_mln: 4520,  kg: 746571739,  pct: 10.75 }
+      ostatni: { czk_mln: 72,    kg: 20886899,   pct: 0.30  }
+  - year: 2020
+    total_czk_mln: 24605
+    total_kg: 6210170032
+    countries:
+      rusko:   { czk_mln: 18616, kg: 4512595830, pct: 72.66 }
+      norsko:  { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      nemecko: { czk_mln: 5983,  kg: 1696474698, pct: 27.32 }
+      ostatni: { czk_mln: 6,     kg: 1099504,    pct: 0.02  }
+  - year: 2021
+    total_czk_mln: 76268
+    total_kg: 6385786740
+    countries:
+      rusko:   { czk_mln: 75794, kg: 6343112693, pct: 99.33 }
+      norsko:  { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      nemecko: { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      ostatni: { czk_mln: 474,   kg: 42674047,   pct: 0.67  }
+  - year: 2022
+    total_czk_mln: 228971
+    total_kg: 6586839301
+    countries:
+      rusko:   { czk_mln: 182702, kg: 5234628387, pct: 79.47 }
+      norsko:  { czk_mln: 39286,  kg: 1129340416, pct: 17.15 }
+      nemecko: { czk_mln: 0,      kg: 0,          pct: 0.00  }
+      ostatni: { czk_mln: 6984,   kg: 222870498,  pct: 3.38  }
+  - year: 2023
+    total_czk_mln: 87598
+    total_kg: 4899572026
+    countries:
+      rusko:   { czk_mln: 7340,  kg: 402644072,  pct: 8.22  }
+      norsko:  { czk_mln: 75672, kg: 4256025410, pct: 86.87 }
+      nemecko: { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      ostatni: { czk_mln: 4585,  kg: 240902544,  pct: 4.92  }
+  - year: 2024
+    total_czk_mln: 64310
+    total_kg: 4154701795
+    countries:
+      rusko:   { czk_mln: 20636, kg: 1298792869, pct: 31.26 }
+      norsko:  { czk_mln: 43173, kg: 2819906503, pct: 67.87 }
+      nemecko: { czk_mln: 1,     kg: 55308,      pct: 0.00  }
+      ostatni: { czk_mln: 500,   kg: 35947115,   pct: 0.87  }
+  - year: 2025
+    total_czk_mln: 77446
+    total_kg: 5442039939
+    countries:
+      rusko:   { czk_mln: 11,    kg: 612040,     pct: 0.01  }
+      norsko:  { czk_mln: 53887, kg: 3781606547, pct: 69.49 }
+      nemecko: { czk_mln: 0,     kg: 60,         pct: 0.00  }
+      ostatni: { czk_mln: 23548, kg: 1659821292, pct: 30.50 }
+
+ropa:
+  - year: 2017
+    total_czk_mln: 74200
+    total_kg: 7812098772
+    countries:
+      azerbajdzan:    { czk_mln: 23742, kg: 2425497000, pct: 31.05 }
+      kazachstan:     { czk_mln: 9808,  kg: 985840000,  pct: 12.62 }
+      rusko:          { czk_mln: 37539, kg: 4099926000, pct: 52.48 }
+      saudska_arabie: { czk_mln: 1854,  kg: 178466000,  pct: 2.28  }
+      usa:            { czk_mln: 0,     kg: 1,          pct: 0.00  }
+      ostatni:        { czk_mln: 1256,  kg: 122369771,  pct: 1.57  }
+  - year: 2018
+    total_czk_mln: 86621
+    total_kg: 7439332337
+    countries:
+      azerbajdzan:    { czk_mln: 26720, kg: 2182783000, pct: 29.34 }
+      kazachstan:     { czk_mln: 12291, kg: 985799000,  pct: 13.25 }
+      rusko:          { czk_mln: 44603, kg: 4002666000, pct: 53.80 }
+      saudska_arabie: { czk_mln: 1090,  kg: 98463000,   pct: 1.32  }
+      usa:            { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      ostatni:        { czk_mln: 1916,  kg: 169621337,  pct: 2.28  }
+  - year: 2019
+    total_czk_mln: 85839
+    total_kg: 7737743238
+    countries:
+      azerbajdzan:    { czk_mln: 25584, kg: 2193737000, pct: 28.35 }
+      kazachstan:     { czk_mln: 11714, kg: 990397000,  pct: 12.80 }
+      rusko:          { czk_mln: 40446, kg: 3820946000, pct: 49.38 }
+      saudska_arabie: { czk_mln: 1108,  kg: 104377000,  pct: 1.35  }
+      usa:            { czk_mln: 3152,  kg: 276608000,  pct: 3.57  }
+      ostatni:        { czk_mln: 3836,  kg: 351678238,  pct: 4.54  }
+  - year: 2020
+    total_czk_mln: 49210
+    total_kg: 6174421379
+    countries:
+      azerbajdzan:    { czk_mln: 12790, kg: 1426242000, pct: 23.10 }
+      kazachstan:     { czk_mln: 5691,  kg: 566730000,  pct: 9.18  }
+      rusko:          { czk_mln: 22109, kg: 3013492000, pct: 48.81 }
+      saudska_arabie: { czk_mln: 365,   kg: 103748000,  pct: 1.68  }
+      usa:            { czk_mln: 5820,  kg: 728358000,  pct: 11.80 }
+      ostatni:        { czk_mln: 2436,  kg: 335851379,  pct: 5.44  }
+  - year: 2021
+    total_czk_mln: 78054
+    total_kg: 6841034073
+    countries:
+      azerbajdzan:    { czk_mln: 13105, kg: 1095868000, pct: 16.02 }
+      kazachstan:     { czk_mln: 14470, kg: 1239269000, pct: 18.12 }
+      rusko:          { czk_mln: 37895, kg: 3417355000, pct: 49.95 }
+      saudska_arabie: { czk_mln: 0,     kg: 18,         pct: 0.00  }
+      usa:            { czk_mln: 9186,  kg: 804258052,  pct: 11.76 }
+      ostatni:        { czk_mln: 3398,  kg: 284284003,  pct: 4.16  }
+  - year: 2022
+    total_czk_mln: 115346
+    total_kg: 7424830913
+    countries:
+      azerbajdzan:    { czk_mln: 33291, kg: 1725704000, pct: 23.24 }
+      kazachstan:     { czk_mln: 11629, kg: 726427000,  pct: 9.78  }
+      rusko:          { czk_mln: 53836, kg: 4161546000, pct: 56.05 }
+      saudska_arabie: { czk_mln: 3943,  kg: 203879001,  pct: 2.75  }
+      usa:            { czk_mln: 9637,  kg: 468598057,  pct: 6.31  }
+      ostatni:        { czk_mln: 3009,  kg: 138676855,  pct: 1.87  }
+  - year: 2023
+    total_czk_mln: 94165
+    total_kg: 7406054203
+    countries:
+      azerbajdzan:    { czk_mln: 29664, kg: 1964731000, pct: 26.53 }
+      kazachstan:     { czk_mln: 11574, kg: 756262000,  pct: 10.21 }
+      rusko:          { czk_mln: 47321, kg: 4306492000, pct: 58.15 }
+      saudska_arabie: { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      usa:            { czk_mln: 2556,  kg: 181445000,  pct: 2.45  }
+      ostatni:        { czk_mln: 3050,  kg: 197124203,  pct: 2.66  }
+  - year: 2024
+    total_czk_mln: 93932
+    total_kg: 6501739403
+    countries:
+      azerbajdzan:    { czk_mln: 39541, kg: 2609969000, pct: 40.14 }
+      kazachstan:     { czk_mln: 14919, kg: 1015214000, pct: 15.61 }
+      rusko:          { czk_mln: 37126, kg: 2714678000, pct: 41.75 }
+      saudska_arabie: { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      usa:            { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      ostatni:        { czk_mln: 2346,  kg: 161878403,  pct: 2.49  }
+  - year: 2025
+    total_czk_mln: 82103
+    total_kg: 6856765464
+    countries:
+      azerbajdzan:    { czk_mln: 35978, kg: 2905210000, pct: 42.37 }
+      kazachstan:     { czk_mln: 15334, kg: 1260162000, pct: 18.38 }
+      rusko:          { czk_mln: 7237,  kg: 527124000,  pct: 7.69  }
+      saudska_arabie: { czk_mln: 7955,  kg: 728562000,  pct: 10.63 }
+      usa:            { czk_mln: 0,     kg: 0,          pct: 0.00  }
+      ostatni:        { czk_mln: 15599, kg: 1435707464, pct: 20.94 }
+
+monthly_2025: []

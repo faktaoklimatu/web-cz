@@ -1,0 +1,24 @@
+.dovoz-kpis {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0 2rem;
+
+  .kpi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kpi-value {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0050ae;
+  }
+
+  .kpi-label {
+    font-size: 0.85rem;
+    color: #53616e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
