@@ -15,14 +15,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- D3 from CDN -->
+  <!-- D3 + TopoJSON from CDN -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 
   <!-- Chart system — order matters -->
   <script src="fok-theme.js"></script>
   <script src="fok-utils.js"></script>
   <script src="fok-chart-bar.js"></script>
+  <script src="fok-chart-bar-stacked.js"></script>
   <script src="fok-chart-line.js"></script>
+  <script src="fok-chart-map-world.js"></script>
 
   <style>
     /* Minimal page shell — not part of the chart system */
@@ -90,6 +93,9 @@
       max-width: 220px; word-wrap: break-word;
     }
     .fok-tooltip strong { display: block; margin-bottom: 2px; }
+    .fok-small-multiples {
+      display: grid; gap: 24px 32px; grid-template-columns: repeat(2, 1fr);
+    }
   </style>
 </head>
 <body>
@@ -289,6 +295,107 @@ fokBarChart('#chart-bar-lulucf', lulucfData, {
   tooltipHtml: d => `<strong>${d.label}</strong><br>${fokFormatUnit(d.value, 'Mt CO₂eq', 1)}`,
   height: 300,
 });
+</script>
+
+<!-- ── Demo 6: Proportional stacked horizontal bar ─────────────────────── -->
+<div class="demo-section">
+  <h2>Stacked bar (proportional) — podíl ETS na emisích EU</h2>
+  <p class="desc">
+    Jednořádkový 100% sloupcový graf. <code>fokBarChartStacked</code> s <code>proportional: true, horizontal: true, showInnerLabels: true</code>.
+  </p>
+  <div class="chart-container" id="chart-ets-podil"></div>
+</div>
+
+<!-- ── Demo 7: Small multiples stacked bars ─────────────────────────────── -->
+<div class="demo-section">
+  <h2>Small multiples — dopad ceny povolenky ETS 2 na cenu paliv</h2>
+  <p class="desc">
+    Čtyři grafy v mřížce 2×2. Každý zobrazuje aktuální cenu (světlá) + nárůst o cenu emisní povolenky (tmavá).
+  </p>
+  <div class="fok-small-multiples">
+    <div class="chart-container" id="chart-sm-benzin"></div>
+    <div class="chart-container" id="chart-sm-nafta"></div>
+    <div class="chart-container" id="chart-sm-zp"></div>
+    <div class="chart-container" id="chart-sm-uhli"></div>
+  </div>
+  <div id="chart-sm-legend"></div>
+</div>
+
+<!-- ── Demo 8: World map ─────────────────────────────────────────────────── -->
+<div class="demo-section">
+  <h2>World map — zpoplatnění emisí z dopravy a budov ve světě (2024)</h2>
+  <p class="desc">
+    <code>fokMapWorld</code> — choropleth mapa načítající TopoJSON z CDN.
+  </p>
+  <div class="chart-container" id="chart-world-map"></div>
+</div>
+
+<script>
+// ── Demo 6 ────────────────────────────────────────────────────────────────
+fokBarChartStacked('#chart-ets-podil', [{ ets1: 34.8, ets2: 39.4, rest: 25.8 }], {
+  x: () => '',
+  keys:   ['ets1', 'ets2', 'rest'],
+  colors: { ets1: '#6976b5', ets2: '#3b3b93', rest: '#a6b0bd' },
+  labels: { ets1: 'ETS 1 (35 %)', ets2: 'ETS 2 (39 %)', rest: 'Nezpoplatněné emise (26 %)' },
+  proportional:    true,
+  horizontal:      true,
+  showInnerLabels: true,
+  height:  90,
+  margins: { top: 8, right: 8, bottom: 8, left: 8 },
+});
+
+// ── Demo 7 ────────────────────────────────────────────────────────────────
+(function() {
+  const prices = [25, 50, 75, 100, 125, 150];
+  const CZK = 25, VAT = 1.21;
+  const fuels = [
+    { id:'benzin', label:'Benzín',     unit:'Kč za litr',    base:37.0, co2:0.0024,  yTickValues: [0, 10, 20, 30, 40, 50] },
+    { id:'nafta',  label:'Nafta',      unit:'Kč za litr',    base:34.5, co2:0.00268, yTickValues: [0, 10, 20, 30, 40, 50] },
+    { id:'zp',     label:'Zemní plyn', unit:'Kč za MWh',     base:2600, co2:0.185,   yTickValues: [0, 1000, 2000, 3000, 4000] },
+    { id:'uhli',   label:'Uhlí',       unit:'Kč za 100 kg',  base:1000, co2:0.14,    yTickValues: [0, 500, 1000, 1500, 2000] },
+  ];
+  fuels.forEach(f => {
+    const rows = prices.map(p => ({
+      x: p + ' €', base: f.base,
+      ets: +(p * CZK * f.co2 * VAT).toFixed(f.base < 100 ? 1 : 0),
+    }));
+    fokBarChartStacked('#chart-sm-' + f.id, rows, {
+      x: d => d.x,
+      keys:   ['base', 'ets'],
+      colors: { base: '#bfcad9', ets: '#3b3b93' },
+      labels: { base: 'Současná cena', ets: 'Nárůst (ETS 2)' },
+      yLabel:      f.unit,
+      title:       f.label,
+      legend:      false,
+      width:       420,
+      height:      340,
+      yTickValues: f.yTickValues,
+      margins: { top: 32, right: 12, bottom: 44, left: f.base < 100 ? 52 : 68 },
+    });
+  });
+  fokLegend(d3.select('#chart-sm-legend'), [
+    { label: 'Současná cena paliva', color: '#bfcad9' },
+    { label: 'Nárůst ceny o emisní povolenku (vč. DPH 21 %)', color: '#3b3b93' },
+  ], {}, FoKTheme);
+})();
+
+// ── Demo 8 ────────────────────────────────────────────────────────────────
+(function() {
+  const C_BOTH = '#3b3b93', C_TRANSPORT = '#8546af', C_BUILDINGS = '#0d80d8';
+  fokMapWorld('#chart-world-map', {
+    CA:C_BOTH, DE:C_BOTH, SE:C_BOTH, NO:C_BOTH, FI:C_BOTH, DK:C_BOTH,
+    CH:C_BOTH, GB:C_BOTH, AT:C_BOTH, NL:C_BOTH, JP:C_BOTH, KR:C_BOTH,
+    SG:C_BOTH, ZA:C_BOTH, CL:C_BOTH, CO:C_BOTH, AR:C_BOTH, MX:C_BOTH,
+    NZ:C_TRANSPORT,
+    US:C_BUILDINGS,
+  }, { unknown:'#e4e7ed', width:800, height:400 }).then(() => {
+    fokLegend(d3.select('#chart-world-map'), [
+      { label:'Doprava i budovy', color:C_BOTH },
+      { label:'Doprava',          color:C_TRANSPORT },
+      { label:'Budovy',           color:C_BUILDINGS },
+    ], {}, FoKTheme);
+  });
+})();
 </script>
 
 </body>

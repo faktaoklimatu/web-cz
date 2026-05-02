@@ -23,6 +23,15 @@ perex: |
 extra-scripts: [ /assets-local/js/ets2-kalkulacka.js ]
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="/assets-local/charts/fok-theme.js"></script>
+<script src="/assets-local/charts/fok-utils.js"></script>
+<script src="/assets-local/charts/fok-chart-bar.js"></script>
+<script src="/assets-local/charts/fok-chart-bar-stacked.js"></script>
+<script src="/assets-local/charts/fok-chart-line.js"></script>
+<script src="/assets-local/charts/fok-chart-map-world.js"></script>
+
 **Nový systém tzv. ETS 2** [naváže](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959) od roku 2028[^start] na stávající <glossary id="euets">systém obchodování s emisními povolenkami</glossary> (ETS 1), který funguje od roku 2005. Zpoplatní přitom emise ze silniční dopravy, spalování v budovách a malé energetiky a průmyslu, které v současnosti nespadají pod ETS 1. Díky tomu dojde k **narovnání trhu** jak pro producenty emisí, tak pro podniky využívající nízkoemisní zdroje energie (např. biomasu či biopaliva). Zatímco ETS 1 v současnosti pokrývá přibližně 35 % všech emisí skleníkových plynů EU, ETS 2 pokryje dalších 39 %. **Více než 70 % unijních emisí tak bude podléhat zpoplatnění.** Zbývajících 26 % připadá hlavně zemědělství a odpadovému hospodářství a výjimkám z ETS.[^ets-emise]
 
 {% include figure.html
@@ -33,6 +42,27 @@ extra-scripts: [ /assets-local/js/ets2-kalkulacka.js ]
     source-url="https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2025/eea-technical-background-document.pdf"
 %}
 
+<div id="chart-podil-ets" class="fok-chart" style="margin:1.5rem 0"></div>
+<script>
+fokBarChartStacked('#chart-podil-ets', [{ ets1: 34.8, ets2: 39.4, rest: 25.8 }], {
+  x: () => '',
+  keys:   ['ets1', 'ets2', 'rest'],
+  colors: { ets1: '#6976b5', ets2: '#3b3b93', rest: '#a6b0bd' },
+  labels: { ets1: 'ETS 1 (35 %)', ets2: 'ETS 2 (39 %)', rest: 'Nezpoplatněné emise (26 %)' },
+  proportional:    true,
+  horizontal:      true,
+  showInnerLabels: true,
+  legend:          true,
+  height:  90,
+  margins: { top: 8, right: 8, bottom: 8, left: 8 },
+  tooltipHtml: (row, key) => {
+    const names = { ets1: 'ETS 1', ets2: 'ETS 2', rest: 'Nezpoplatněné emise' };
+    const vals  = { ets1: 34.8, ets2: 39.4, rest: 25.8 };
+    return `<strong>${names[key]}</strong><br>${vals[key]} % emisí EU`;
+  },
+});
+</script>
+
 Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadní roli auta se spalovacími motory, v menší míře pak autobusy a nákladní vozidla.[^doprava-emise] V případě budov nejde o emise vznikající při jejich stavbě, ale primárně o emise vznikající při lokálním vytápění, ohřevu vody nebo vaření či ty, které produkují malé teplárny a výtopny. Záměrem jejich zpoplatnění je **motivovat domácnosti i podniky k využívání nízkoemisních způsobů dopravy, zateplení domu či pořízení tepelného čerpadla.** Cílem bude snížit emise v těchto sektorech do roku 2030 o 42 % v porovnání s rokem 2005.
 
 {% include figure.html
@@ -42,6 +72,94 @@ Kde emise spadající pod ETS 2 vznikají? V silniční dopravě hrají zásadn�
     source-text="EEA a Eurostat. Emise v ETS 2 byly vypočteny podle metodiky EEA, str. 17."
     source-url="https://www.eea.europa.eu/en/analysis/publications/trends-and-projections-in-europe-2025/eea-technical-background-document.pdf"
 %}
+
+<div id="chart-emise-vyvoj" class="fok-chart" style="margin:1.5rem 0"></div>
+<script>
+(function() {
+  // ETS 2 scope: road transport + commercial/residential buildings + small energy/industry not in ETS 1
+  // Source: EEA CRF data — column "Emise v EU ETS 2 v Mt CO2eq"
+  const historical = [
+    {year:2005,mt:1789.02},{year:2006,mt:1798.33},{year:2007,mt:1623.16},
+    {year:2008,mt:1617.81},{year:2009,mt:1542.13},{year:2010,mt:1582.64},
+    {year:2011,mt:1507.74},{year:2012,mt:1484.67},{year:2013,mt:1362.91},
+    {year:2014,mt:1298.62},{year:2015,mt:1346.00},{year:2016,mt:1364.83},
+    {year:2017,mt:1376.82},{year:2018,mt:1365.95},{year:2019,mt:1362.88},
+    {year:2020,mt:1254.34},{year:2021,mt:1347.22},{year:2022,mt:1302.19},
+    {year:2023,mt:1271.09},
+  ].map(d => ({ date: new Date(d.year, 0, 1), value: d.mt }));
+
+  // 2030 target: −42 % from 2005 baseline
+  const TARGET_2030 = Math.round(1789.02 * 0.58 * 10) / 10; // 1037.6 Mt
+
+  const margin = { top: 32, right: 90, bottom: 44, left: 68 };
+  const W = 800, H = 340;
+
+  const { svg } = fokLineChart('#chart-emise-vyvoj', historical, {
+    x:        d => d.date,
+    y:        d => d.value,
+    xDomain:  [new Date(2005,0,1), new Date(2032,0,1)],
+    yDomain:  [900, 1900],
+    yFormat:  v => fokFormatNumber(v, 0),
+    xFormat:  d3.timeFormat('%Y'),
+    yLabel:   'Mt CO₂eq',
+    theme:    { ...FoKTheme, colors: { ...FoKTheme.colors, categorical: ['#3b3b93', ...FoKTheme.colors.categorical.slice(1)] }, 
+              line: { ...FoKTheme.line, strokeWidth: 3 }  },
+    tooltipHtml: d => `<strong>${d.date.getFullYear()}</strong><br>${fokFormatNumber(d.value, 0)} Mt CO₂eq`,
+    height:   H,
+    margins:  margin,
+  });
+
+  const inner = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const xSc = d3.scaleTime()
+    .domain([new Date(2005,0,1), new Date(2032,0,1)])
+    .range([0, inner.w]);
+  const ySc = d3.scaleLinear().domain([900, 1900]).range([inner.h, 0]).nice();
+
+  const g = svg.select('g');
+
+  // Dashed projection line from last data point to 2030 target
+  g.append('path')
+    .datum([
+      { date: new Date(2023, 0, 1), value: 1271.09 },
+      { date: new Date(2030, 0, 1), value: TARGET_2030 },
+    ])
+    .attr('fill', 'none')
+    .attr('stroke', '#3b3b93')
+    .attr('stroke-width', 1.2)
+    .attr('stroke-dasharray', '5 4')
+    .attr('d', d3.line().x(d => xSc(d.date)).y(d => ySc(d.value)));
+
+  // Target circle (open)
+  g.append('circle')
+    .attr('cx', xSc(new Date(2030, 0, 1)))
+    .attr('cy', ySc(TARGET_2030))
+    .attr('r', 5)
+    .attr('fill', '#fff')
+    .attr('stroke', '#3b3b93')
+    .attr('stroke-width', 2);
+
+  // Annotation: latest data point
+  g.append('text')
+    .attr('x', xSc(new Date(2023, 0, 1)) - 8)
+    .attr('y', ySc(1271.09) - 10)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#3b3b93')
+    .attr('font-family', FoKTheme.font)
+    .attr('font-size', FoKTheme.fontSize.annotation)
+    .attr('font-weight', FoKTheme.fontWeight.bold)
+    .text('1 271 Mt (2023)');
+
+  // Annotation: 2030 target
+  g.append('text')
+    .attr('x', xSc(new Date(2030, 0, 1)) + 8)
+    .attr('y', ySc(TARGET_2030) + 4)
+    .attr('text-anchor', 'start')
+    .attr('fill', FoKTheme.colors.grey)
+    .attr('font-family', FoKTheme.font)
+    .attr('font-size', FoKTheme.fontSize.annotation)
+    .text('Cíl 2030: −42 %');
+})();
+</script>
 
 ## Jak bude ETS 2 fungovat
 
@@ -114,6 +232,70 @@ Graf níže nastiňuje dopady tří různých cen povolenky na cenu benzínu, na
     source-text="Vlastní výpočty."
 %}
 
+<style>
+#chart-paliva-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; margin: 1.5rem 0; }
+@media (max-width: 600px) { #chart-paliva-grid { grid-template-columns: 1fr; } }
+</style>
+<div id="chart-paliva-grid">
+  <div id="chart-paliva-benzin"  class="fok-chart"></div>
+  <div id="chart-paliva-nafta"   class="fok-chart"></div>
+  <div id="chart-paliva-zp"      class="fok-chart"></div>
+  <div id="chart-paliva-uhli"    class="fok-chart"></div>
+</div>
+<script>
+(function() {
+  const prices   = [25, 50, 75, 100, 125, 150];
+  const CZK      = 25;   // EUR → CZK exchange rate
+  const VAT      = 1.21;
+
+  // ETS cost per unit = permitPrice × CZK × co2Factor × VAT
+  // co2Factor units match the fuel unit (kg CO₂ per litre / MWh / 100 kg)
+  const fuels = [
+    { id:'benzin', label:'Benzín',     unit:'Kč za litr',    base:37.0, co2: 0.0024,  yTickValues: [0, 10, 20, 30, 40, 50] },
+    { id:'nafta',  label:'Nafta',      unit:'Kč za litr',    base:34.5, co2: 0.00268, yTickValues: [0, 10, 20, 30, 40, 50] },
+    { id:'zp',     label:'Zemní plyn', unit:'Kč za MWh',     base:2600, co2: 0.185,   yTickValues: [0, 1000, 2000, 3000, 4000] },
+    { id:'uhli',   label:'Uhlí',       unit:'Kč za 100 kg',  base:1000, co2: 0.14,    yTickValues: [0, 500, 1000, 1500, 2000] },
+  ];
+
+  fuels.forEach(fuel => {
+    const rows = prices.map(p => ({
+      x:    p + ' €',
+      base: fuel.base,
+      ets:  +(p * CZK * fuel.co2 * VAT).toFixed(fuel.base < 100 ? 1 : 0),
+    }));
+
+    fokBarChartStacked('#chart-paliva-' + fuel.id, rows, {
+      x:      d => d.x,
+      keys:   ['base', 'ets'],
+      colors: { base: '#bfcad9', ets: '#3b3b93' },
+      labels: { base: 'Současná cena paliva', ets: 'Nárůst ceny (ETS 2, vč. DPH 21 %)' },
+      yLabel:      fuel.unit,
+      title:       fuel.label,
+      legend:      false,
+      width:       420,
+      height:      340,
+      yTickValues: fuel.yTickValues,
+      margins: { top: 32, right: 12, bottom: 44, left: fuel.base < 100 ? 52 : 68 },
+      tooltipHtml: (row, key) => key === 'ets'
+        ? `<strong>Cena povolenky: ${row.x}</strong><br>`
+          + `Nárůst: +${row.ets} ${fuel.unit.replace('Kč za ', '')}<br>`
+          + `Celkem: ${(row.base + row.ets).toFixed(fuel.base < 100 ? 1 : 0)} ${fuel.unit.replace('Kč za ', '')}`
+        : `<strong>Současná cena</strong><br>${row.base} ${fuel.unit.replace('Kč za ', '')}`,
+    });
+  });
+
+  // Single shared legend below the grid
+  const legendContainer = document.getElementById('chart-paliva-grid');
+  const div = document.createElement('div');
+  div.style.gridColumn = '1 / -1';
+  legendContainer.appendChild(div);
+  fokLegend(d3.select(div), [
+    { label: 'Současná cena paliva',          color: '#bfcad9' },
+    { label: 'Nárůst ceny o emisní povolenku (vč. DPH 21 %)', color: '#3b3b93' },
+  ], {}, FoKTheme);
+})();
+</script>
+
 Pro výpočet je třeba zohlednit množství oxidu uhličitého vyprodukovaného spálením paliva. Například litr benzínu obsahuje přibližně 650 gramů uhlíku a při jeho spálení vznikne asi 2,4 kilogramu oxidu uhličitého. **Při ceně 45 eur** (1 125 Kč) **za povolenku to znamená náklad ve výši 3,3 Kč včetně DPH**, což k současné ceně benzínu okolo 35 korun za litr představuje 9,3% nárůst (pro srovnání: spotřební daň a DPH tvoří přibližně polovinu ceny).
 
 {% include includes-local/ets2-kalkulacka.html %}
@@ -172,6 +354,54 @@ Emise ze silniční dopravy a budov byly k roku 2024 zpoplatněny v 18 státech 
     source-text="World Bank (2024)"
     source-url="https://carbonpricingdashboard.worldbank.org/compliance/instrument-detail"
 %}
+
+<div id="chart-mapa-svet" class="fok-chart" style="margin:1.5rem 0"></div>
+<div style="margin-bottom:1.5rem"></div>
+<script>
+(function() {
+  // Source: World Bank Carbon Pricing Dashboard 2024
+  // Categories: both = doprava i budovy, transport = doprava, buildings = budovy
+  const C_BOTH      = '#3b3b93';
+  const C_TRANSPORT = '#8546af';
+  const C_BUILDINGS = '#0d80d8';
+
+  const colors = {
+    // Doprava i budovy
+    CA: C_BOTH, DE: C_BOTH, SE: C_BOTH, NO: C_BOTH, FI: C_BOTH,
+    DK: C_BOTH, CH: C_BOTH, GB: C_BOTH, AT: C_BOTH, NL: C_BOTH,
+    JP: C_BOTH, KR: C_BOTH, SG: C_BOTH, ZA: C_BOTH,
+    CL: C_BOTH, CO: C_BOTH, AR: C_BOTH, MX: C_BOTH,
+    // Doprava only
+    NZ: C_TRANSPORT,
+    // Budovy only
+    US: C_BUILDINGS,
+  };
+
+  fokMapWorld('#chart-mapa-svet', colors, {
+    unknown: '#e4e7ed',
+    border:  '#fff',
+    width:   800,
+    height:  420,
+    tooltipHtml: (iso2, color) => {
+      const labels = {
+        [C_BOTH]:      'Doprava i budovy',
+        [C_TRANSPORT]: 'Doprava',
+        [C_BUILDINGS]: 'Budovy',
+      };
+      return `<strong style="font-family:${FoKTheme.font}">${iso2}</strong><br>`
+        + `<span style="color:${color}">■</span> `
+        + `<span style="font-family:${FoKTheme.font}">${labels[color] ?? ''}</span>`;
+    },
+  }).then(() => {
+    // Legend injected after map renders
+    fokLegend(d3.select('#chart-mapa-svet'), [
+      { label: 'Doprava i budovy', color: C_BOTH },
+      { label: 'Doprava',          color: C_TRANSPORT },
+      { label: 'Budovy',           color: C_BUILDINGS },
+    ], {}, FoKTheme);
+  });
+})();
+</script>
 
 Jak v těchto místech vypadá využití výnosů ze zpoplatnění emisí uhlíku?
 - Rakousko: Tamní vláda od roku 2023 zavedla tzv. [Klimabonus](https://www.klimabonus.gv.at/en/), kdy dochází k vrácení prostředků zpět k domácnostem. V roce 2021 spustila tzv. [Klimaticket](https://www.klimaticket.at/en/), cenově výhodnou jízdenku pro veškerou veřejnou dopravu.

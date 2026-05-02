@@ -116,6 +116,26 @@
     }
 }
 
+// ── Small multiples grid ───────────────────────────────────────────────────
+
+.fok-small-multiples {
+    display: grid;
+    gap: 24px 32px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fok-small-multiples--3col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fok-small-multiples--4col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 // ── Annotation ─────────────────────────────────────────────────────────────
 
 .fok-annotation {
