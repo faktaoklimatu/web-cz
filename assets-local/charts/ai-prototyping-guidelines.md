@@ -70,23 +70,29 @@ g.append('circle')
 
 ### SVG width must match rendered column width
 
-The chart `width` option sets the SVG `viewBox`. Because the SVG is responsive (`width: 100%`), it scales down to fit its container. If the viewBox is wider than the container, all text scales down proportionally — **12px text in an 800px viewBox rendered at 400px width appears as 6px**.
+The chart `width` option sets the SVG `viewBox`. Because the SVG is responsive (`width: 100%`), it scales to fit its container. Text in SVG scales proportionally with the viewBox — **if the viewBox is wider than the container, all text shrinks; if narrower, it grows.**
 
-**Always set `width` to match the actual rendered column width**, not a generic default.
+**The only way to get consistent font sizes across all charts is to set `width` to the actual rendered pixel width of the chart's container** — not a generic default. This is what makes a 12 px axis label look 12 px everywhere.
 
-| Layout | Container width | Correct `width` option |
+| Layout | Approx. rendered width | Correct `width` option |
 |---|---|---|
-| Full-width | ~800 px | `800` (default) |
-| 2-column grid | ~400 px | `420` |
-| 3-column grid | ~260 px | `280` |
+| Full-width content column | ~800 px | `800` (default) |
+| `.col-md-6` (half column) | ~420 px | `420` |
+| `.col-6` inside `.col-md-6` (quarter) | ~200 px | `200` |
 
 ```js
-// Wrong — default 800px viewBox in a 400px column → all text halved
+// Wrong — default 800px viewBox in a 420px column → text appears ~63% of intended size
 fokBarChartStacked('#chart', data, { height: 340 });
 
-// Correct — viewBox matches the column
-fokBarChartStacked('#chart', data, { width: 420, height: 340 });
+// Wrong — 280px viewBox in a 200px column → text appears ~71% of intended size
+fokLineChart('#chart', data, { width: 280, height: 220 });
+
+// Correct — viewBox matches the actual rendered column width
+fokBarChartStacked('#chart-half', data, { width: 420, height: 340 });
+fokLineChart('#chart-quarter', data, { width: 200, height: 220 });
 ```
+
+> **To verify**: measure the rendered container with DevTools. The rendered pixel width of the container and the `width` option must match for text to appear at the intended size.
 
 ### Fonts
 

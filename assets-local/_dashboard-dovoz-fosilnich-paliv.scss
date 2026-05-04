@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  margin: 1.5rem 0 2.5rem;
+  margin: 1.5rem 0 0.4rem;
 
   @media (max-width: 576px) {
     grid-template-columns: repeat(2, 1fr);
@@ -20,6 +20,11 @@
   display: flex;
   flex-direction: column;
   padding: 1rem 1.25rem 1rem 0;
+}
+
+// KPIs sitting above charts get extra bottom breathing room
+.row > [class*="col"] > .kpi {
+  margin-bottom: 1.5rem;
 }
 
 .kpi-label {

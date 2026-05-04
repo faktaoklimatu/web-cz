@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const { highlights, payments, plyn, ropa, energy_mix } = window.DASHBOARD_DOVOZ;
 
   // ── KPI header ────────────────────────────────────────────────────────────
-  document.getElementById('dovoz-year').textContent = highlights.year;
   document.getElementById('kpi-total').textContent =
     fokFormatNumber(highlights.total_czk_mld, 1) + ' mld. Kč';
   document.getElementById('kpi-gdp').textContent =
@@ -83,24 +82,22 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // ── Chart 2: Podíl HDP — stacked area (Rusko + ostatní = celkem) ─────────
-  const hdpAreaData = payments.map(d => ({
-    year:    d.year,
-    rusko:   d.russia_share_pct,
-    ostatni: d.gdp_share_pct - d.russia_share_pct,
+  // ── Chart 2: Podíl na HDP — line chart (celkový součet) ──────────────────
+  const hdpLineData = payments.map(d => ({
+    year:  d.year,
+    value: d.gdp_share_pct,
   }));
 
-  fokAreaChartStacked('#chart-celkem-hdp', hdpAreaData, {
-    x:           d => d.year,
-    keys:        ['rusko', 'ostatni'],
-    colors:      { rusko: '#d73027', ostatni: '#b0b0b0' },
-    labels:      { rusko: 'z toho Rusku', ostatni: 'Ostatní země' },
-    title:       'Podíl HDP',
+  fokLineChart('#chart-celkem-hdp', hdpLineData, {
+    x:           d => new Date(d.year, 0, 1),
+    y:           d => d.value,
+    title:       'Podíl na HDP Česka',
     width:       280,
     height:      240,
-    xTickValues: topXTicksNum,
+    xTickValues: topXTicksNum.map(y => new Date(y, 0, 1)),
     theme:       theme2,
     yFormat:     v => fokFormatNumber(v, 1),
+    tooltipHtml: d => `<strong>${d.year}</strong><br>${fokFormatNumber(d.value, 1)} % HDP`,
   });
 
   // ── Chart 3: Podíl na primární energii — stacked area ────────────────────
@@ -109,9 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
     dovoz_ropy:    COLOR_ROPA,
     dovoz_plynu:   COLOR_PLYN,
     pevna_paliva:  '#ffbab8',
-    domace_fos:    '#8f9aa3',
-    jaderne_teplo: '#aab2ba',
-    oze:           '#c5cdd4',
+    domace_fos:    '#ffdbda',
+    jaderne_teplo: '#dbdbdb',
+    oze:           '#dbdbdb',
   };
   const ENERGIE_LABELS = {
     dovoz_ropy:    'Dovoz ropy',
@@ -130,7 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
     title:  'Podíl na primární energii',
     width:  280,
     height: 240,
+    xTickValues: topXTicksNum,
     theme:  theme2,
+    annotations: [
+      { x: 2017.5, y: 15, text: 'Dovezená ropa', anchor: 'start', color: '#fff' },
+      { x: 2017.5, y: 32, text: 'Dovezený zemní plyn', anchor: 'start', color: '#fff' },
+      { x: 2017.5, y: 65, text: 'Domácí fosilní paliva', anchor: 'start', color: '#fff' },
+    ],
     yFormat: v => fokFormatNumber(v, 0),
     yTickValues: [0, 25, 50, 75, 100],
   });
@@ -263,7 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
     theme:        theme2,
     annotations: [
       { x: 2017.5, y: 25, text: 'Rusko', anchor: 'start', color: '#fff' },
-      { x: 2019.5, y: 95, text: 'Německo', anchor: 'start', color: '#fff' },
       { x: 2023, y: 60, text: 'Norsko', anchor: 'start', color: '#fff' }
     ]
   });

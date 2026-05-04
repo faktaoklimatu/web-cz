@@ -37,33 +37,30 @@ extra-scripts: [ /assets-local/js/dashboard-dovoz-fosilnich-paliv.js ]
 
 <div id="dovoz-header">
   <div class="kpi">
-    <span class="kpi-label"><i class="fas fa-calendar-alt"></i> Rok</span>
-    <span class="kpi-value" id="dovoz-year"></span>
-  </div>
-  <div class="kpi">
-    <span class="kpi-label"><i class="fas fa-coins"></i> celkové výdaje</span>
-    <span class="kpi-value" id="kpi-total"></span>
-  </div>
-  <div class="kpi">
-    <span class="kpi-label"><i class="fas fa-chart-line"></i> podíl HDP</span>
-    <span class="kpi-value" id="kpi-gdp"></span>
-  </div>
-  <div class="kpi">
-    <span class="kpi-label"><i class="fas fa-bolt"></i> podíl prim. energie</span>
-    <span class="kpi-value" id="kpi-energy"></span>
+    <span class="kpi-label"><i class="fas fa-calendar-alt"></i> Rok 2025</span>
   </div>
 </div>
 
-<h2>Celkové výdaje za ropa a plyn</h2>
-
 <div class="row">
   <div class="col-md-4">
+    <div class="kpi">
+      <span class="kpi-label"><i class="fas fa-coins"></i> celkové výdaje</span>
+      <span class="kpi-value" id="kpi-total"></span>
+    </div>
     <div id="chart-celkem-czk"></div>
   </div>
   <div class="col-md-4">
+    <div class="kpi">
+      <span class="kpi-label"><i class="fas fa-chart-line"></i> podíl HDP</span>
+      <span class="kpi-value" id="kpi-gdp"></span>
+    </div>
     <div id="chart-celkem-hdp"></div>
   </div>
   <div class="col-md-4">
+    <div class="kpi">
+      <span class="kpi-label"><i class="fas fa-bolt"></i> podíl prim. energie</span>
+      <span class="kpi-value" id="kpi-energy"></span>
+    </div>
     <div id="chart-celkem-energie"></div>
   </div>
 </div>
