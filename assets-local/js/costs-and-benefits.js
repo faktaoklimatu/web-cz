@@ -151,33 +151,33 @@
   // Round x (positive) to 3 significant figures, no trailing zeros.
   function fmt3sig(x) { return parseFloat(x.toPrecision(3)).toString(); }
 
-  // Kč needed to save 1 t CO₂ (czk signed: + = cost, − = earning).
+  // Kč needed to save 1 t CO₂ (czk signed: + = cost, −= earning).
   function fmtCZKperT(czk, savedT) {
     if (savedT == null || !savedT || !isFinite(czk / savedT)) return '—';
     const v    = czk / savedT;
-    const sign = v < 0 ? '− ' : '';
+    const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
     if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/t CO₂';
     if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/t CO₂';
     return sign + fmt3sig(abs) + ' Kč/t CO₂';
   }
 
-  // Kč needed to save 1 MWh of gas (czk signed: + = cost, − = earning).
+  // Kč needed to save 1 MWh of gas (czk signed: + = cost, −= earning).
   function fmtCZKperMWh(czk, mwh) {
     if (mwh == null || !mwh || !isFinite(czk / mwh)) return '—';
     const v    = czk / mwh;
-    const sign = v < 0 ? '− ' : '';
+    const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
     if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/MWh';
     if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/MWh';
     return sign + fmt3sig(abs) + ' Kč/MWh';
   }
 
-  // Kč needed to save 1 litre of fuel (czk signed: + = cost, − = earning).
+  // Kč needed to save 1 litre of fuel (czk signed: + = cost, −= earning).
   function fmtCZKperL(czk, litres) {
     if (litres == null || !litres || !isFinite(czk / litres)) return '—';
     const v    = czk / litres;
-    const sign = v < 0 ? '− ' : '';
+    const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
     if (abs >= 1000) return sign + fmt3sig(abs / 1000) + ' tis. Kč/l';
     return sign + fmt3sig(abs) + ' Kč/l';
@@ -185,7 +185,7 @@
 
   function fmtL(litres) {
     if (litres == null || !isFinite(litres)) return '—';
-    const sign = litres < 0 ? '− ' : '';
+    const sign = litres < 0 ? '−' : '';
     const abs  = Math.abs(litres);
     if (abs >= 1000) return sign + fmtInt.format(Math.round(abs / 10) * 10) + ' l';
     return sign + fmtInt.format(Math.round(abs)) + ' l';
@@ -193,7 +193,7 @@
 
   function fmtMWh(mwh) {
     if (mwh == null || !isFinite(mwh)) return '—';
-    const sign = mwh < 0 ? '− ' : '';
+    const sign = mwh < 0 ? '−' : '';
     const abs  = Math.abs(mwh);
     if (abs >= 1000) return sign + (Math.round(abs / 100) / 10).toFixed(1) + ' GWh';
     if (abs >= 1)    return sign + fmtInt.format(Math.round(abs))           + ' MWh';
@@ -617,14 +617,18 @@
           .attr('fill', co2Color).attr('opacity', 0.7);
       }
       const textX = sqX + CO2_MAX_COLS * SQ_STEP + 4;
-      const extraCapexCO2 = row.capexDiff != null ? -row.capexDiff : null;
-      const co2RelStr = (row.co2Saved == null || !extraCapexCO2)
-        ? null : fmtCZKperT(extraCapexCO2, row.co2Saved);
+      const co2Negative = row.co2Saved !== null && row.co2Saved < 0;
+      const co2RelStr = (!co2Negative && row.co2Saved) ? fmtCZKperT(-row.npv.value, row.co2Saved) : null;
       co2G.append('text')
-        .attr('x', textX).attr('y', co2RelStr ? mid - 1 : mid + 5)
+        .attr('x', textX).attr('y', (co2RelStr || co2Negative) ? mid - 1 : mid + 5)
         .attr('font-size', '13px').attr('fill', co2Color)
         .text(fmtCO2(row.co2Saved));
-      if (co2RelStr) {
+      if (co2Negative) {
+        co2G.append('text')
+          .attr('x', textX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb')
+          .text('zvyšuje emise');
+      } else if (co2RelStr) {
         co2G.append('text')
           .attr('x', textX).attr('y', mid + 13)
           .attr('font-size', '10px').attr('fill', '#bbb')
@@ -635,16 +639,13 @@
       const fuelG    = g.select('.fuel-g');
       const fuelColX = LABEL_W + chartW + CO2_W + 8;
       fuelG.selectAll('*').remove();
-      const extraCapexF = row.capexDiff != null ? -row.capexDiff : null;
       let fuelAbsStr = '—', fuelRelStr = null;
       if (row.sector === 'transport' && row.fuelSavings) {
         fuelAbsStr = fmtL(row.fuelSavings.totalL);
-        if (extraCapexF != null)
-          fuelRelStr = fmtCZKperL(extraCapexF, row.fuelSavings.totalL);
+        if (row.npv) fuelRelStr = fmtCZKperL(-row.npv.value, row.fuelSavings.totalL);
       } else if (row.sector !== 'transport' && row.gasSavings) {
         fuelAbsStr = fmtMWh(row.gasSavings.totalMwh);
-        if (extraCapexF != null)
-          fuelRelStr = fmtCZKperMWh(extraCapexF, row.gasSavings.totalMwh);
+        if (row.npv) fuelRelStr = fmtCZKperMWh(-row.npv.value, row.gasSavings.totalMwh);
       }
       fuelG.append('text')
         .attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
@@ -661,6 +662,212 @@
     rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
 
     // ── X axis ────────────────────────────────────────────────────────────
+    svg.select('.x-axis')
+      .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
+  }
+
+  // ── Group chart (transport: all measures in one category group) ──────────
+  // Renders every measure whose transport_category starts with `group`
+  // (e.g. "Nové" matches "Nové malé" and "Nové velké").
+  // Row label = measure_name; secondary line = baseline name.
+  function renderGroupChart(container, section, group) {
+    const isBuildings = section === 'buildings';
+    const allMeasures = isBuildings ? data.buildings_measures : data.transport_measures;
+    const catField    = isBuildings ? 'building_category' : 'transport_category';
+
+    const entries = allMeasures.filter(m =>
+      (m.measure_baseline_id || m.measure_baseline) &&
+      m[catField] && m[catField].startsWith(group)
+    );
+    if (!entries.length) { container.hidden = true; return; }
+    container.hidden = false;
+
+    const rows = entries
+      .map(m => {
+        const calc = computeRow(m);
+        if (!calc) return null;
+        return {
+          label:        m.measure_name,
+          baselineName: m.measure_baseline || null,
+          measureId:    m.id,
+          npv:          calc.npv,
+          co2Saved:     calc.co2Saved,
+          capexDiff:    calc.capexDiff,
+          sector:       calc.sector,
+          gasSavings:   calc.gasSavings,
+          fuelSavings:  calc.fuelSavings,
+          sensitivity:  calc.sensitivity,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.npv.value - a.npv.value);
+
+    if (!rows.length) { container.hidden = true; return; }
+
+    // Reuse the same SVG skeleton and rendering logic as renderMeasureChart.
+    const totalW = container.clientWidth || 640;
+    const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - MARGIN.right, 120);
+    const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
+
+    const xScale = d3.scaleLinear()
+      .domain(globalXDomain || [-500000, 500000])
+      .range([0, chartW]);
+    const z = xScale(0);
+
+    let svg = d3.select(container).select('svg');
+    if (svg.empty()) {
+      svg = d3.select(container).append('svg').attr('role', 'img')
+        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+      svg.append('text').attr('class', 'chart-col-header ctx-hdr').attr('x', 4).attr('y', 16).text('Opatření');
+      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
+      svg.append('text').attr('class', 'chart-col-header co2-hdr').attr('text-anchor', 'start').attr('y', 16);
+      svg.append('text').attr('class', 'chart-col-header fuel-hdr').attr('text-anchor', 'start').attr('y', 16);
+      svg.append('line').attr('class', 'zero-line')
+        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+      svg.append('g').attr('class', 'rows-g');
+      svg.append('g').attr('class', 'chart-axis x-axis');
+    }
+
+    svg.attr('width', totalW).attr('height', totalH);
+    svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
+    svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
+    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8).text('Úspora PHM');
+    svg.select('.zero-line')
+      .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
+      .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
+
+    const rowSel = svg.select('.rows-g').selectAll('g.d-row').data(rows, d => d.label);
+
+    const rowEnter = rowSel.enter().append('g').attr('class', 'd-row')
+      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
+      .attr('opacity', 0);
+
+    rowEnter.append('rect').attr('class', 'row-bg')
+      .attr('x', 0).attr('y', 0).attr('height', ROW_H).attr('fill', 'transparent');
+
+    const fo = rowEnter.append('foreignObject')
+      .attr('x', 4).attr('y', 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
+    const div = fo.append('xhtml:div')
+      .style('display', 'flex').style('flex-direction', 'column')
+      .style('justify-content', 'center').style('height', '100%');
+    div.append('xhtml:span').attr('class', 'lbl-main')
+      .style('font-size', '14px').style('line-height', '1.3').style('color', '#444');
+    div.append('xhtml:span').attr('class', 'lbl-base')
+      .style('font-size', '11px').style('color', '#bbb').style('margin-top', '1px');
+
+    const bandG = rowEnter.append('g').attr('class', 'u-band');
+    bandG.append('line').attr('class', 'band-line')
+      .attr('stroke', '#999').attr('stroke-width', 5)
+      .attr('stroke-linecap', 'round').attr('opacity', 0.35);
+    bandG.append('rect').attr('class', 'band-hit')
+      .attr('height', 16).attr('fill', 'transparent');
+
+    rowEnter.append('circle').attr('class', 'npv-dot').attr('r', 6)
+      .attr('stroke', 'white').attr('stroke-width', 2);
+    rowEnter.append('text').attr('class', 'npv-lbl')
+      .attr('text-anchor', 'middle').attr('font-size', '14px');
+    rowEnter.append('g').attr('class', 'co2-g');
+    rowEnter.append('g').attr('class', 'fuel-g');
+
+    const rowAll = rowSel.merge(rowEnter);
+    rowAll.transition().duration(ANIM_MS).ease(d3.easeCubicInOut)
+      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
+      .attr('opacity', 1);
+
+    rowAll.each(function (row) {
+      const g     = d3.select(this);
+      const mid   = ROW_H / 2;
+      const color = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
+      const dotX  = LABEL_W + xScale(row.npv.value);
+
+      g.select('.row-bg').attr('width', totalW);
+      g.style('cursor', 'pointer').on('click', () => toggleRowDetail(container, row));
+      g.select('.lbl-main').text(row.label);
+      g.select('.lbl-base').text(row.baselineName ? 'vs. ' + row.baselineName : '');
+
+      const dominant = row.sensitivity && row.sensitivity.length
+        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
+        : null;
+      const bandTip = [
+        `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+      const dotTip = [
+        fmtCZK(row.npv.value),
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+
+      g.select('.band-line')
+        .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
+        .attr('y1', mid).attr('y2', mid);
+      g.select('.band-hit')
+        .attr('x', LABEL_W + xScale(row.npv.low)).attr('y', mid - 8)
+        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
+        .on('mouseover', e => showTip(e, bandTip)).on('mousemove', moveTip).on('mouseout', hideTip);
+      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color)
+        .on('mouseover', e => showTip(e, dotTip)).on('mousemove', moveTip).on('mouseout', hideTip);
+      g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
+        .text(fmtCZK(row.npv.value));
+
+      // CO₂ squares
+      const co2G    = g.select('.co2-g');
+      co2G.selectAll('*').remove();
+      const co2Color = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
+      const SQ = 7, SQ_GAP = 2, SQ_STEP = SQ + SQ_GAP;
+      const absVal   = row.co2Saved !== null ? Math.abs(row.co2Saved) : 0;
+      const halfUnits = row.co2Saved !== null ? Math.round(absVal / (CO2_UNIT / 2)) : 0;
+      const nSq      = Math.floor(halfUnits / 2);
+      const hasHalf  = (halfUnits % 2) === 1;
+      const sqX      = LABEL_W + chartW + 8;
+      const nSlots   = nSq + (hasHalf ? 1 : 0);
+      const nRows    = nSlots > 0 ? Math.ceil(nSlots / CO2_MAX_COLS) : 0;
+      const gridH    = nRows > 0 ? nRows * SQ + (nRows - 1) * SQ_GAP : 0;
+      const gridTop  = mid - gridH / 2;
+      for (let s = 0; s < nSq; s++) {
+        co2G.append('rect')
+          .attr('x', sqX + (s % CO2_MAX_COLS) * SQ_STEP)
+          .attr('y', gridTop + Math.floor(s / CO2_MAX_COLS) * SQ_STEP)
+          .attr('width', SQ).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
+      }
+      if (hasHalf) {
+        co2G.append('rect')
+          .attr('x', sqX + (nSq % CO2_MAX_COLS) * SQ_STEP)
+          .attr('y', gridTop + Math.floor(nSq / CO2_MAX_COLS) * SQ_STEP)
+          .attr('width', SQ / 2).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
+      }
+      const textX = sqX + CO2_MAX_COLS * SQ_STEP + 4;
+      const co2Negative = row.co2Saved !== null && row.co2Saved < 0;
+      const co2RelStr = (!co2Negative && row.co2Saved) ? fmtCZKperT(-row.npv.value, row.co2Saved) : null;
+      co2G.append('text').attr('x', textX).attr('y', (co2RelStr || co2Negative) ? mid - 1 : mid + 5)
+        .attr('font-size', '13px').attr('fill', co2Color).text(fmtCO2(row.co2Saved));
+      if (co2Negative) {
+        co2G.append('text').attr('x', textX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb').text('zvyšuje emise');
+      } else if (co2RelStr) {
+        co2G.append('text').attr('x', textX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb').text(co2RelStr);
+      }
+
+      // Fuel column
+      const fuelG    = g.select('.fuel-g');
+      const fuelColX = LABEL_W + chartW + CO2_W + 8;
+      fuelG.selectAll('*').remove();
+      let fuelAbsStr = '—', fuelRelStr = null;
+      if (row.fuelSavings) {
+        fuelAbsStr = fmtL(row.fuelSavings.totalL);
+        if (row.npv) fuelRelStr = fmtCZKperL(-row.npv.value, row.fuelSavings.totalL);
+      }
+      fuelG.append('text').attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
+        .attr('font-size', '13px').attr('fill', '#555').text(fuelAbsStr);
+      if (fuelRelStr) {
+        fuelG.append('text').attr('x', fuelColX).attr('y', mid + 13)
+          .attr('font-size', '10px').attr('fill', '#bbb').text(fuelRelStr);
+      }
+    });
+
+    rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
+
     svg.select('.x-axis')
       .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
       .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
@@ -1021,7 +1228,11 @@
     if (summaryEl) renderSummaryChart(summaryEl);
 
     document.querySelectorAll('.measure-chart[data-section]').forEach(el => {
-      renderMeasureChart(el, el.dataset.section, el.dataset.measure);
+      if (el.dataset.group) {
+        renderGroupChart(el, el.dataset.section, el.dataset.group);
+      } else {
+        renderMeasureChart(el, el.dataset.section, el.dataset.measure);
+      }
     });
   }
 
@@ -1033,7 +1244,7 @@
     fixedBuildingOrder  = getSummaryRows('buildings').map(r => r.name);
     fixedTransportOrder = getSummaryRows('transport').map(r => r.name);
     reorderSection('buildings', fixedBuildingOrder);
-    reorderSection('transport', fixedTransportOrder);
+    // Transport uses fixed group headings (Nové / Ojeté) — no per-measure reordering needed.
 
     setupControls();
     renderAll();

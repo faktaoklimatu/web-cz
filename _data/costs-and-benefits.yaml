@@ -89,7 +89,7 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 120000
+  capex_technology_czk: 220000
   capex_installation_czk: 170000
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
@@ -1068,7 +1068,7 @@ transport_measures:
   note: Kodiaq – 8,5 l, 20 000 km
 - id: 55
   transport_category: Nové malé
-  measure_name: Malý elektromobil
+  measure_name: Nový malý elektromobil
   demand_energy_per_100km: 0.015
   mileage: 15000
   fuel: Electricity
@@ -1082,7 +1082,7 @@ transport_measures:
   measure_baseline_id: 51
 - id: 56
   transport_category: Nové malé
-  measure_name: Malý hybrid
+  measure_name: Nový malý hybrid
   demand_energy_per_100km: 4.5
   mileage: 15000
   fuel: Petrol
@@ -1096,7 +1096,7 @@ transport_measures:
   measure_baseline_id: 51
 - id: 57
   transport_category: Nové velké
-  measure_name: Velký elektromobil
+  measure_name: Nový velký elektromobil
   demand_energy_per_100km: 0.025
   mileage: 20000
   fuel: Electricity
@@ -1110,12 +1110,12 @@ transport_measures:
   measure_baseline_id: 52
 - id: 58
   transport_category: Nové velké
-  measure_name: Velký hybrid
+  measure_name: Nový velký hybrid
   demand_energy_per_100km: 6.5
   mileage: 20000
   fuel: Petrol
   lifetime: 15
-  capex_czk: 1000000
+  capex_czk: 1200000
   opex_maintenance_czk: 14500
   opex_insurance_czk: 26000
   emissions_embedded_kg: 9500
@@ -1124,7 +1124,7 @@ transport_measures:
   measure_baseline_id: 52
 - id: 59
   transport_category: Ojeté malé
-  measure_name: Malý elektromobil
+  measure_name: Ojetý malý elektromobil
   demand_energy_per_100km: 0.017
   mileage: 15000
   fuel: Electricity
@@ -1138,7 +1138,7 @@ transport_measures:
   measure_baseline_id: 53
 - id: 60
   transport_category: Ojeté malé
-  measure_name: Malý hybrid
+  measure_name: Ojetý malý hybrid
   demand_energy_per_100km: 5.5
   mileage: 15000
   fuel: Petrol
@@ -1152,7 +1152,7 @@ transport_measures:
   measure_baseline_id: 53
 - id: 61
   transport_category: Ojeté velké
-  measure_name: Velký elektromobil
+  measure_name: Ojetý velký elektromobil
   demand_energy_per_100km: 0.028
   mileage: 20000
   fuel: Electricity
@@ -1166,12 +1166,12 @@ transport_measures:
   measure_baseline_id: 54
 - id: 62
   transport_category: Ojeté velké
-  measure_name: Velký hybrid
+  measure_name: Ojetý velký hybrid
   demand_energy_per_100km: 7.0
   mileage: 20000
   fuel: Petrol
   lifetime: 7
-  capex_czk: 500000
+  capex_czk: 550000
   opex_maintenance_czk: 17500
   opex_insurance_czk: 10000
   emissions_embedded_kg: 4433
@@ -1210,6 +1210,15 @@ discount_rate_scenarios:
   discount_rate: 0.03
 - discount_rate_scenario: 7 % — výnos akcií / podnikatelský úvěr
   discount_rate: 0.07
+electricity_price_scenarios:
+- electricity_price_scenario: Nabíjím doma ze sítě
+  electricity_price_factor: 1.0
+- electricity_price_scenario: Nabíjím převážně doma ze sítě
+  electricity_price_factor: 1.45
+- electricity_price_scenario: Nabíjím doma ze solárů
+  electricity_price_factor: 0.5
+- electricity_price_scenario: Nabíjím převážně venku na rychlonabíječce
+  electricity_price_factor: 2.0
 fuel_scenarios:
 - scenario: CP
   prices:

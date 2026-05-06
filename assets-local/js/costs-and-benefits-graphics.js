@@ -6,9 +6,10 @@
 
   // ── State ─────────────────────────────────────────────────────────────────
   const state = {
-    carbonPrice:  60,
-    discountRate:  3,
-    fuelScenario: 'CP',
+    carbonPrice:           60,
+    discountRate:           3,
+    fuelScenario:         'CP',
+    electricityPriceFactor: 1.0,
   };
 
   // ── Formatting ────────────────────────────────────────────────────────────
@@ -54,6 +55,7 @@
         renderAll();
       });
     }
+
   }
 
   function setupSlider(sliderId, valueId, onUpdate) {
@@ -74,15 +76,23 @@
     'Elektrický kotel',
     'Kotel na biomasu',
     'Soláry na střeše+baterie',
-    'Malý elektromobil',
-    'Malý hybrid',
-    'Velký elektromobil',
-    'Velký hybrid',
+    'Nový malý elektromobil',
+    'Nový malý hybrid',
+    'Nový velký elektromobil',
+    'Nový velký hybrid',
+    'Ojetý malý elektromobil',
+    'Ojetý malý hybrid',
+    'Ojetý velký elektromobil',
+    'Ojetý velký hybrid',
   ];
   const CP_CHART_COLORS = [
-    '#1a7a85', '#2860b4', '#6b4fa0', '#c05a1a',
-    '#2e7d32', '#8b6914', '#c0392b',
-    '#e67e22', '#16a085', '#8e44ad',
+    // Buildings (indices 0–5)
+    '#1a7a85', '#2860b4', '#6b4fa0', '#c05a1a', '#2e7d32', '#8b6914',
+    // Transport – EV = red, hybrid = orange, repeated for each size/age group (indices 6–13)
+    '#c0392b', '#e67e22',   // Nový malý elektromobil, Nový malý hybrid
+    '#c0392b', '#e67e22',   // Nový velký elektromobil, Nový velký hybrid
+    '#c0392b', '#e67e22',   // Ojetý malý elektromobil, Ojetý malý hybrid
+    '#c0392b', '#e67e22',   // Ojetý velký elektromobil, Ojetý velký hybrid
   ];
 
   // ── Tornado chart ─────────────────────────────────────────────────────────
@@ -105,10 +115,11 @@
     function calcNpv(entry, cp, dr) {
       try {
         const r = CostsBenefits.calculate({
-          measureId:      entry.id, data,
-          discountRate:   dr / 100,
-          carbonPriceEur: cp,
-          priceScenario:  state.fuelScenario,
+          measureId:             entry.id, data,
+          discountRate:          dr / 100,
+          carbonPriceEur:        cp,
+          priceScenario:         state.fuelScenario,
+          electricityPriceFactor: state.electricityPriceFactor,
         });
         return isNaN(r.npv) ? null : r.npv;
       } catch (_) { return null; }
@@ -118,9 +129,10 @@
       return entries.find(m => {
         try {
           const r = CostsBenefits.calculate({
-            measureId: m.id, data,
-            discountRate: dr / 100, carbonPriceEur: cp,
-            priceScenario: state.fuelScenario,
+            measureId:             m.id, data,
+            discountRate:          dr / 100, carbonPriceEur: cp,
+            priceScenario:         state.fuelScenario,
+            electricityPriceFactor: state.electricityPriceFactor,
           });
           return !isNaN(r.npv);
         } catch (_) { return false; }
@@ -313,16 +325,23 @@
   // categories: array of category strings, e.g. ['Nové malé', 'Ojeté malé']
   function renderMultiTornadoChart(container, categories, param = 'Cena uhlíku', exclude = [], forceDomain = null) {
     const isDiscountRate = param === 'Diskontní míra';
+    const isElTariff     = param === 'Tarif elektřiny';
     const STEP_COLORS  = ['#0d4a52', '#1a7a85', '#6ab4bc'];
     const STEP_RATES   = [0, 3, 7];
     const STEP_LABELS  = ['0 %', '3 %', '7 %'];
+    const TARIFF_SCENARIOS = data.electricity_price_scenarios || [];
+    const TARIFF_FACTORS   = TARIFF_SCENARIOS.map(s => s.electricity_price_factor);
+    const TARIFF_COLORS    = ['#2d1b54', '#6b4fa0', '#9b7fd0', '#c8b4e8'].slice(0, TARIFF_FACTORS.length);
+    const TARIFF_LABELS    = TARIFF_SCENARIOS.map(s => s.electricity_price_scenario);
 
-    function calcNpv(entry, cp, dr) {
+    // epFactor defaults to current state; pass an explicit value for the tariff chart.
+    function calcNpv(entry, cp, dr, epFactor = state.electricityPriceFactor) {
       try {
         const r = CostsBenefits.calculate({
-          measureId: entry.id, data,
-          discountRate: dr / 100, carbonPriceEur: cp,
-          priceScenario: state.fuelScenario,
+          measureId:             entry.id, data,
+          discountRate:          dr / 100, carbonPriceEur: cp,
+          priceScenario:         state.fuelScenario,
+          electricityPriceFactor: epFactor,
         });
         return isNaN(r.npv) ? null : r.npv;
       } catch (_) { return null; }
@@ -332,9 +351,10 @@
       return entries.find(m => {
         try {
           const r = CostsBenefits.calculate({
-            measureId: m.id, data,
-            discountRate: dr / 100, carbonPriceEur: cp,
-            priceScenario: state.fuelScenario,
+            measureId:             m.id, data,
+            discountRate:          dr / 100, carbonPriceEur: cp,
+            priceScenario:         state.fuelScenario,
+            electricityPriceFactor: state.electricityPriceFactor,
           });
           return !isNaN(r.npv);
         } catch (_) { return false; }
@@ -363,6 +383,12 @@
           const npvs = STEP_RATES.map(dr => calcNpv(entry, state.carbonPrice, dr));
           if (npvs.every(v => v == null)) return null;
           return { name, color: CP_CHART_COLORS[ni], npvs };
+        } else if (isElTariff) {
+          const entry = findEntry(entries, state.carbonPrice, state.discountRate);
+          if (!entry) return null;
+          const npvs = TARIFF_FACTORS.map(f => calcNpv(entry, state.carbonPrice, state.discountRate, f));
+          if (npvs.every(v => v == null)) return null;
+          return { name, color: CP_CHART_COLORS[ni], npvs };
         } else {
           const entry = findEntry(entries, 100, state.discountRate);
           if (!entry) return null;
@@ -384,7 +410,7 @@
     const GROUP_HEADER_H = 22;
     const GROUP_GAP      = 12;
     const LABEL_W        = 200;
-    const T_MARGIN       = { top: isDiscountRate ? 20 : 34, right: 24, bottom: 36, left: 8 };
+    const T_MARGIN       = { top: isElTariff ? 64 : isDiscountRate ? 20 : 34, right: 24, bottom: 36, left: 8 };
 
     const totalW  = container.clientWidth || 700;
     const chartW  = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
@@ -394,7 +420,7 @@
 
     // Shared x-domain
     const allVals = groups.flatMap(g => g.rows.flatMap(r =>
-      isDiscountRate
+      (isDiscountRate || isElTariff)
         ? r.npvs.filter(v => v != null)
         : [r.npvAtMin, r.npvAtMax, r.npvCurrent].filter(v => v != null)
     ));
@@ -415,7 +441,7 @@
       .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
     // Legend for carbon price chart (top-right, drawn once)
-    if (!isDiscountRate) {
+    if (!isDiscountRate && !isElTariff) {
       const BAND_W = 60, BAND_H = 10, DOT_R = 4;
       const legY = 8, legX = chartW - BAND_W - 100;
       chart.append('rect')
@@ -434,6 +460,24 @@
       chart.append('text')
         .attr('x', legX + BAND_W / 2).attr('y', legY + BAND_H + 9)
         .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#888').text('NPV');
+    }
+
+    // Legend for tariff chart: vertical list of coloured dots + full scenario names.
+    if (isElTariff) {
+      const DOT_R  = 4;
+      const ITEM_H = 14;
+      const legY   = 6;
+      TARIFF_FACTORS.forEach((_, pi) => {
+        const iy = legY + pi * ITEM_H;
+        chart.append('circle')
+          .attr('cx', DOT_R).attr('cy', iy + DOT_R)
+          .attr('r', DOT_R).attr('fill', TARIFF_COLORS[pi])
+          .attr('stroke', 'white').attr('stroke-width', 1);
+        chart.append('text')
+          .attr('x', DOT_R * 2 + 5).attr('y', iy + DOT_R + 3)
+          .attr('font-size', '9px').attr('fill', '#888')
+          .text(TARIFF_LABELS[pi]);
+      });
     }
 
     let currentY = T_MARGIN.top;
@@ -458,20 +502,24 @@
           .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#444')
           .text(r.name);
 
-        if (isDiscountRate) {
-          STEP_RATES.forEach((dr, pi) => {
-            const npv = r.npvs[pi];
+        if (isDiscountRate || isElTariff) {
+          const DOT_COLORS = isElTariff ? TARIFF_COLORS : STEP_COLORS;
+          const DOT_LABELS = isElTariff ? TARIFF_LABELS : STEP_LABELS;
+          r.npvs.forEach((npv, pi) => {
             if (npv == null) return;
             const dotX = xScale(npv);
             chart.append('circle')
               .attr('cx', dotX).attr('cy', midY)
-              .attr('r', 5).attr('fill', STEP_COLORS[pi])
+              .attr('r', 5).attr('fill', DOT_COLORS[pi])
               .attr('stroke', 'white').attr('stroke-width', 1.5);
-            chart.append('text')
-              .attr('x', dotX).attr('y', midY - 8)
-              .attr('text-anchor', 'middle')
-              .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
-              .text(STEP_LABELS[pi]);
+            // Inline labels only for discount rate; tariff uses a legend instead.
+            if (!isElTariff) {
+              chart.append('text')
+                .attr('x', dotX).attr('y', midY - 8)
+                .attr('text-anchor', 'middle')
+                .attr('font-size', '9px').attr('fill', DOT_COLORS[pi])
+                .text(DOT_LABELS[pi]);
+            }
           });
         } else {
           if (r.npvAtMin != null && r.npvAtMax != null) {
@@ -686,7 +734,7 @@
   }
 
   function qFmtCZK(v) {
-    const sign = v < 0 ? '− ' : '+ ';
+    const sign = v < 0 ? '−' : '+';
     const abs  = Math.abs(v);
     if (abs >= 1e6) return sign + (Math.round(abs / 1e5) / 10).toFixed(1) + ' mil. Kč';
     if (abs >= 1e3) return sign + qFmtInt.format(Math.round(abs / 1e3))    + ' tis. Kč';
@@ -698,7 +746,7 @@
   function qFmtCZKperT(czk, savedT) {
     if (savedT == null || !savedT || !isFinite(czk / savedT)) return '—';
     const v    = czk / savedT;
-    const sign = v < 0 ? '− ' : '+ ';
+    const sign = v < 0 ? '−' : '+';
     const abs  = Math.abs(v);
     if (abs >= 1e6) return sign + qFmt3sig(abs / 1e6) + ' mil. Kč/t CO₂';
     if (abs >= 1e3) return sign + qFmt3sig(abs / 1e3) + ' tis. Kč/t CO₂';
@@ -728,11 +776,12 @@
     for (const m of all) {
       try {
         const r = CostsBenefits.calculate({
-          measureId:      m.id,
+          measureId:             m.id,
           data,
-          discountRate:   discountRatePct / 100,
-          carbonPriceEur: carbonPrice,
-          priceScenario:  scenario,
+          discountRate:          discountRatePct / 100,
+          carbonPriceEur:        carbonPrice,
+          priceScenario:         scenario,
+          electricityPriceFactor: state.electricityPriceFactor,
         });
         const savedT = r.emissionSavings ? -r.emissionSavings.totalT : null;
         if (savedT == null || savedT === 0) continue;
@@ -748,11 +797,12 @@
         const savedTValues = ['CP', 'NZ', 'CP_EC'].map(sc => {
           try {
             const rs = CostsBenefits.calculate({
-              measureId:      m.id,
+              measureId:             m.id,
               data,
-              discountRate:   discountRatePct / 100,
-              carbonPriceEur: carbonPrice,
-              priceScenario:  sc,
+              discountRate:          discountRatePct / 100,
+              carbonPriceEur:        carbonPrice,
+              priceScenario:         sc,
+              electricityPriceFactor: state.electricityPriceFactor,
             });
             const v = rs.emissionSavings ? -rs.emissionSavings.totalT : null;
             return (v !== null && isFinite(v)) ? v : null;
@@ -1694,8 +1744,9 @@
     const cats    = el.dataset.categories
       ? el.dataset.categories.split('|')
       : (el.dataset.category ? [el.dataset.category] : []);
-    const isDR    = param === 'Diskontní míra';
-    const vals    = [];
+    const isDR       = param === 'Diskontní míra';
+    const isElTariff = param === 'Tarif elektřiny';
+    const vals       = [];
 
     for (const category of cats) {
       const measures = [
@@ -1715,27 +1766,34 @@
         const entry = entries.find(m => {
           try {
             const r = CostsBenefits.calculate({
-              measureId: m.id, data,
-              discountRate: 0.03, carbonPriceEur: 60,
-              priceScenario: state.fuelScenario,
+              measureId:             m.id, data,
+              discountRate:          0.03, carbonPriceEur: 60,
+              priceScenario:         state.fuelScenario,
+              electricityPriceFactor: state.electricityPriceFactor,
             });
             return !isNaN(r.npv);
           } catch (_) { return false; }
         });
         if (!entry) continue;
 
-        const cps = isDR ? [state.carbonPrice] : [0, state.carbonPrice, 200];
-        const drs = isDR ? [0, 3, 7] : [state.discountRate];
+        const cps       = (isDR || isElTariff) ? [state.carbonPrice] : [0, state.carbonPrice, 200];
+        const drs       = isDR ? [0, 3, 7] : [state.discountRate];
+        const epFactors = isElTariff
+          ? (data.electricity_price_scenarios || []).map(s => s.electricity_price_factor)
+          : [state.electricityPriceFactor];
         for (const cp of cps) {
           for (const dr of drs) {
-            try {
-              const r = CostsBenefits.calculate({
-                measureId: entry.id, data,
-                discountRate: dr / 100, carbonPriceEur: cp,
-                priceScenario: state.fuelScenario,
-              });
-              if (!isNaN(r.npv)) vals.push(r.npv);
-            } catch (_) {}
+            for (const epF of epFactors) {
+              try {
+                const r = CostsBenefits.calculate({
+                  measureId:             entry.id, data,
+                  discountRate:          dr / 100, carbonPriceEur: cp,
+                  priceScenario:         state.fuelScenario,
+                  electricityPriceFactor: epF,
+                });
+                if (!isNaN(r.npv)) vals.push(r.npv);
+              } catch (_) {}
+            }
           }
         }
       }

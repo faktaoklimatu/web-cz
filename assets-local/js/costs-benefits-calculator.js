@@ -9,11 +9,14 @@
 // Usage:
 //   const result = CostsBenefits.calculate({
 //     measureId: 20,
-//     data: window.CB_DATA,          // {{ site.data['costs-and-benefits'] | jsonify }}
-//     discountRate: 0.03,            // e.g. 0.00, 0.03, 0.07
-//     carbonPriceEur: 60,            // e.g. 0, 60, 100, 200
-//     priceScenario: 'CP',           // 'CP', 'NZ', or 'CP_EC'
-//     exchangeRate: 23               // CZK per EUR
+//     data: window.CB_DATA,             // {{ site.data['costs-and-benefits'] | jsonify }}
+//     discountRate: 0.03,               // e.g. 0.00, 0.03, 0.07
+//     carbonPriceEur: 60,               // e.g. 0, 60, 100, 200
+//     priceScenario: 'CP',              // 'CP', 'NZ', or 'CP_EC'
+//     exchangeRate: 23,                 // CZK per EUR
+//     electricityPriceFactor: 1.0,      // transport EV charging scenario multiplier
+//                                       // (from electricity_price_scenarios in the YAML)
+//                                       // 0.5 = home solar, 1.0 = home grid, 2.0 = fast charger
 //   });
 //
 // =============================================================================
@@ -132,9 +135,12 @@ const CostsBenefits = (() => {
     return energyCost + measure.opex_maintenance_czk + carbonCost;
   }
 
-  function calcTransportOpex(measure, yearPrices, sccCzk, emissionFactors) {
+  function calcTransportOpex(measure, yearPrices, sccCzk, emissionFactors, electricityPriceFactor) {
     const consumption = measure.demand_energy_per_100km * measure.mileage / 100;
-    const priceF      = getFuelPrice(yearPrices, measure.fuel);
+    let   priceF      = getFuelPrice(yearPrices, measure.fuel);
+    // Scale electricity price by the charging-scenario factor from electricity_price_scenarios
+    // (home grid / home solar / fast charger). Has no effect on ICE/hybrid vehicles.
+    if (measure.fuel === 'Electricity') priceF *= electricityPriceFactor;
     // Carbon price applies only to fossil fuels, not electricity.
     const ef          = measure.fuel === 'Electricity'
                         ? 0
@@ -146,32 +152,34 @@ const CostsBenefits = (() => {
          + carbonCost;
   }
 
-  function calcOpex(measure, sector, yearPrices, sccCzk, emissionFactors) {
+  function calcOpex(measure, sector, yearPrices, sccCzk, emissionFactors, electricityPriceFactor) {
     return sector === 'buildings'
       ? calcBuildingOpex(measure, yearPrices, sccCzk, emissionFactors)
-      : calcTransportOpex(measure, yearPrices, sccCzk, emissionFactors);
+      : calcTransportOpex(measure, yearPrices, sccCzk, emissionFactors, electricityPriceFactor);
   }
 
   // ---------------------------------------------------------------------------
   // Core NPV computation
   // ---------------------------------------------------------------------------
   // Options:
-  //   discountRate     – real discount rate (0.03 = 3 %)
-  //   carbonPriceEur   – social cost of carbon in EUR/t CO2
-  //   exchangeRate     – CZK per EUR
-  //   capexBlMult      – multiplier for baseline CAPEX  (default 1.0, sensitivity only)
-  //   capexMeasMult    – multiplier for measure CAPEX   (default 1.0, sensitivity only)
-  //   fuelPriceMult    – multiplier for a specific fuel price (sensitivity only)
-  //   fuelPriceName    – which fuel to scale ('Gas', 'Electricity', etc.)
+  //   discountRate          – real discount rate (0.03 = 3 %)
+  //   carbonPriceEur        – social cost of carbon in EUR/t CO2
+  //   exchangeRate          – CZK per EUR
+  //   electricityPriceFactor– EV charging scenario multiplier (transport only, default 1.0)
+  //   capexBlMult           – multiplier for baseline CAPEX  (default 1.0, sensitivity only)
+  //   capexMeasMult         – multiplier for measure CAPEX   (default 1.0, sensitivity only)
+  //   fuelPriceMult         – multiplier for a specific fuel price (sensitivity only)
+  //   fuelPriceName         – which fuel to scale ('Gas', 'Electricity', etc.)
 
   function computeNpv(baseline, measure, sector, scenarioPrices, opts, emissionFactors) {
-    const discountRate   = opts.discountRate   !== undefined ? opts.discountRate   : DEFAULT_DISCOUNT_RATE;
-    const carbonPriceEur = opts.carbonPriceEur !== undefined ? opts.carbonPriceEur : DEFAULT_CARBON_PRICE_EUR;
-    const exchangeRate   = opts.exchangeRate   !== undefined ? opts.exchangeRate   : DEFAULT_EXCHANGE_RATE;
-    const capexBlMult    = opts.capexBlMult    !== undefined ? opts.capexBlMult    : 1.0;
-    const capexMeasMult  = opts.capexMeasMult  !== undefined ? opts.capexMeasMult  : 1.0;
-    const fuelPriceMult  = opts.fuelPriceMult  !== undefined ? opts.fuelPriceMult  : 1.0;
-    const fuelPriceName  = opts.fuelPriceName  || null;
+    const discountRate          = opts.discountRate          !== undefined ? opts.discountRate          : DEFAULT_DISCOUNT_RATE;
+    const carbonPriceEur        = opts.carbonPriceEur        !== undefined ? opts.carbonPriceEur        : DEFAULT_CARBON_PRICE_EUR;
+    const exchangeRate          = opts.exchangeRate          !== undefined ? opts.exchangeRate          : DEFAULT_EXCHANGE_RATE;
+    const electricityPriceFactor= opts.electricityPriceFactor!== undefined ? opts.electricityPriceFactor: 1.0;
+    const capexBlMult           = opts.capexBlMult           !== undefined ? opts.capexBlMult           : 1.0;
+    const capexMeasMult         = opts.capexMeasMult         !== undefined ? opts.capexMeasMult         : 1.0;
+    const fuelPriceMult         = opts.fuelPriceMult         !== undefined ? opts.fuelPriceMult         : 1.0;
+    const fuelPriceName         = opts.fuelPriceName         || null;
 
     const sccCzkDefault = carbonPriceEur * exchangeRate;
     const lifetime = Math.min(baseline.lifetime, measure.lifetime);
@@ -193,8 +201,8 @@ const CostsBenefits = (() => {
 
       const discFactor = discountRate === 0 ? 1 : 1 / Math.pow(1 + discountRate, t);
 
-      const opexBl   = calcOpex(baseline, sector, yearPrices, sccCzk, emissionFactors);
-      const opexMeas = calcOpex(measure,  sector, yearPrices, sccCzk, emissionFactors);
+      const opexBl   = calcOpex(baseline, sector, yearPrices, sccCzk, emissionFactors, electricityPriceFactor);
+      const opexMeas = calcOpex(measure,  sector, yearPrices, sccCzk, emissionFactors, electricityPriceFactor);
 
       opexSum += (opexBl - opexMeas) * discFactor;
     }
@@ -216,10 +224,11 @@ const CostsBenefits = (() => {
   // ---------------------------------------------------------------------------
 
   function buildYearByYear(baseline, measure, sector, scenarioPrices, opts, emissionFactors) {
-    const discountRate   = opts.discountRate   !== undefined ? opts.discountRate   : DEFAULT_DISCOUNT_RATE;
-    const carbonPriceEur = opts.carbonPriceEur !== undefined ? opts.carbonPriceEur : DEFAULT_CARBON_PRICE_EUR;
-    const exchangeRate   = opts.exchangeRate   !== undefined ? opts.exchangeRate   : DEFAULT_EXCHANGE_RATE;
-    const sccCzkDefault  = carbonPriceEur * exchangeRate;
+    const discountRate          = opts.discountRate          !== undefined ? opts.discountRate          : DEFAULT_DISCOUNT_RATE;
+    const carbonPriceEur        = opts.carbonPriceEur        !== undefined ? opts.carbonPriceEur        : DEFAULT_CARBON_PRICE_EUR;
+    const exchangeRate          = opts.exchangeRate          !== undefined ? opts.exchangeRate          : DEFAULT_EXCHANGE_RATE;
+    const electricityPriceFactor= opts.electricityPriceFactor!== undefined ? opts.electricityPriceFactor: 1.0;
+    const sccCzkDefault         = carbonPriceEur * exchangeRate;
     const lifetime       = Math.min(baseline.lifetime, measure.lifetime);
     const capexDiff      = getCapex(baseline) - getCapex(measure);
 
@@ -253,8 +262,8 @@ const CostsBenefits = (() => {
 
       const discFactor = discountRate === 0 ? 1 : 1 / Math.pow(1 + discountRate, t);
 
-      const opexBl   = calcOpex(baseline, sector, yearPrices, sccCzk, emissionFactors);
-      const opexMeas = calcOpex(measure,  sector, yearPrices, sccCzk, emissionFactors);
+      const opexBl   = calcOpex(baseline, sector, yearPrices, sccCzk, emissionFactors, electricityPriceFactor);
+      const opexMeas = calcOpex(measure,  sector, yearPrices, sccCzk, emissionFactors, electricityPriceFactor);
 
       const opexDiff     = opexBl - opexMeas;
       const opexDiffDisc = opexDiff * discFactor;
@@ -503,10 +512,11 @@ const CostsBenefits = (() => {
     const {
       measureId,
       data,
-      discountRate   = DEFAULT_DISCOUNT_RATE,
-      carbonPriceEur = DEFAULT_CARBON_PRICE_EUR,
-      priceScenario  = DEFAULT_PRICE_SCENARIO,
-      exchangeRate   = DEFAULT_EXCHANGE_RATE,
+      discountRate          = DEFAULT_DISCOUNT_RATE,
+      carbonPriceEur        = DEFAULT_CARBON_PRICE_EUR,
+      priceScenario         = DEFAULT_PRICE_SCENARIO,
+      exchangeRate          = DEFAULT_EXCHANGE_RATE,
+      electricityPriceFactor = 1.0,
     } = options;
 
     // Locate the measure
@@ -526,7 +536,7 @@ const CostsBenefits = (() => {
     const emissionFactors = data.fuel_emission_factors;
     const lifetime        = Math.min(baseline.lifetime, measure.lifetime);
 
-    const baseOpts = { discountRate, carbonPriceEur, exchangeRate };
+    const baseOpts = { discountRate, carbonPriceEur, exchangeRate, electricityPriceFactor };
 
     const npv = computeNpv(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors);
 

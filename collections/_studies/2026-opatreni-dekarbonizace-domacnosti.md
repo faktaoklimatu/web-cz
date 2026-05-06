@@ -356,19 +356,13 @@ extra-scripts:
 
 # Doprava
 
-{% assign transport_measure_names = "" | split: "" %}
-{% for measure in data.transport_measures %}
-  {% if measure.measure_baseline_id %}
-    {% unless transport_measure_names contains measure.measure_name %}
-      {% assign transport_measure_names = transport_measure_names | push: measure.measure_name %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
+## Nové
 
-{% for name in transport_measure_names %}
-## {{ name }}
-<div class="measure-chart" data-section="transport" data-measure="{{ name | escape }}"></div>
-{% endfor %}
+<div class="measure-chart" data-section="transport" data-group="Nové"></div>
+
+## Ojeté
+
+<div class="measure-chart" data-section="transport" data-group="Ojeté"></div>
 
 </div>
 </div>

@@ -380,12 +380,22 @@ extra-scripts:
     </div>
 
     <p class="chart-col-header mb-1">Diskontní míra</p>
-    <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:1.5rem;">
       <div style="flex:1; min-width:200px;">
         <div class="tornado-chart" data-categories="Nové malé|Ojeté malé" data-param="Diskontní míra" data-domain-group="diskontni-mira"></div>
       </div>
       <div style="flex:1; min-width:200px;">
         <div class="tornado-chart" data-categories="Nové velké|Ojeté velké" data-param="Diskontní míra" data-domain-group="diskontni-mira"></div>
+      </div>
+    </div>
+
+    <p class="chart-col-header mb-1">Tarif elektřiny</p>
+    <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové malé|Ojeté malé" data-param="Tarif elektřiny" data-domain-group="tarif-elektriny"></div>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <div class="tornado-chart" data-categories="Nové velké|Ojeté velké" data-param="Tarif elektřiny" data-domain-group="tarif-elektriny"></div>
       </div>
     </div>
 
