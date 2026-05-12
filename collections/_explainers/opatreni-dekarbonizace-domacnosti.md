@@ -238,6 +238,31 @@ extra-scripts:
 .chart-axis path,
 .chart-axis line { stroke: #ddd; }
 .chart-axis text  { font-size: 10px; fill: #888; }
+
+/* ── Chart download buttons ─────────────────────────────────────────────────── */
+.chart-dl-bar {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+.chart-dl-btn {
+  font-size: 10px;
+  color: #bbb;
+  background: none;
+  border: 1px solid #e4e7ed;
+  border-radius: 3px;
+  padding: 2px 8px 3px;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  transition: color 0.12s, border-color 0.12s;
+}
+.chart-dl-btn:hover {
+  color: #53616e;
+  border-color: #aaa;
+}
 </style>
 
 <div class="section pb-3">

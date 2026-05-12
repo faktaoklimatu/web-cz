@@ -1801,6 +1801,111 @@
     return vals;
   }
 
+  // ── Chart export (SVG / PNG download) ────────────────────────────────────────
+
+  const CHART_EXPORT_CSS = [
+    'text { font-family: Roboto, system-ui, sans-serif; }',
+    '.chart-axis path { stroke: none; }',
+    '.chart-axis line { stroke: #ddd; }',
+    '.chart-axis text { font-size: 10px; fill: #888; font-family: Roboto, system-ui, sans-serif; }',
+    '.q-quad-label   { font-size: 10px; fill: #bbb; font-style: italic; }',
+    '.q-axis-label   { font-size: 12px; fill: #666; font-weight: 500; }',
+    '.chart-col-header { font-size: 10px; fill: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }',
+  ].join('\n');
+
+  function prepareExportSVG(svgEl) {
+    const clone = svgEl.cloneNode(true);
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    if (!clone.getAttribute('viewBox')) {
+      const w = clone.getAttribute('width') || svgEl.getBoundingClientRect().width;
+      const h = clone.getAttribute('height') || svgEl.getBoundingClientRect().height;
+      clone.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    }
+    const style = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+    style.textContent = CHART_EXPORT_CSS;
+    clone.insertBefore(style, clone.firstChild);
+    const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    bg.setAttribute('width', '100%');
+    bg.setAttribute('height', '100%');
+    bg.setAttribute('fill', 'white');
+    clone.insertBefore(bg, style.nextSibling);
+    return clone;
+  }
+
+  function triggerDownload(url, filename) {
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function exportSVG(svgEl, filename) {
+    const clone = prepareExportSVG(svgEl);
+    const blob = new Blob([new XMLSerializer().serializeToString(clone)], { type: 'image/svg+xml' });
+    triggerDownload(URL.createObjectURL(blob), filename + '.svg');
+  }
+
+  function exportPNG(svgEl, filename) {
+    const clone = prepareExportSVG(svgEl);
+    const svgStr = new XMLSerializer().serializeToString(clone);
+    const url = URL.createObjectURL(new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' }));
+    const w = +svgEl.getAttribute('width') || svgEl.getBoundingClientRect().width;
+    const h = +svgEl.getAttribute('height') || svgEl.getBoundingClientRect().height;
+    const scale = 2;
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = w * scale; canvas.height = h * scale;
+      const ctx = canvas.getContext('2d');
+      ctx.scale(scale, scale);
+      ctx.fillStyle = 'white'; ctx.fillRect(0, 0, w, h);
+      ctx.drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      canvas.toBlob(blob => triggerDownload(URL.createObjectURL(blob), filename + '.png'), 'image/png');
+    };
+    img.onerror = () => URL.revokeObjectURL(url);
+    img.src = url;
+  }
+
+  function fokDownloadBar(container, filename) {
+    const old = container.querySelector('.chart-dl-bar');
+    if (old) old.remove();
+    if (!container.querySelector('svg')) return;
+    const bar = document.createElement('div');
+    bar.className = 'chart-dl-bar';
+    ['SVG', 'PNG'].forEach(fmt => {
+      const btn = document.createElement('button');
+      btn.className = 'chart-dl-btn';
+      btn.textContent = '↓ ' + fmt;
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const svg = container.querySelector('svg');
+        if (svg) (fmt === 'SVG' ? exportSVG : exportPNG)(svg, filename);
+      });
+      bar.appendChild(btn);
+    });
+    container.appendChild(bar);
+  }
+
+  function addDownloadBars() {
+    document.querySelectorAll('.tornado-chart').forEach(el => {
+      const cat   = el.dataset.category || (el.dataset.categories || '').split('|')[0];
+      const param = el.dataset.param || 'Cena uhlíku';
+      fokDownloadBar(el, 'tornado-' + [cat, param].filter(Boolean).join('-'));
+    });
+    [
+      ['quadrant-chart',          'quadrant'],
+      ['static-comparison-chart', 'quadrant-porovnani'],
+      ['mac-chart',               'mac-curve'],
+      ['beeswarm-chart',          'beeswarm-npv'],
+      ['beeswarm-capex-chart',    'beeswarm-capex'],
+      ...DUMBBELL_CONFIGS.map(c => [c.id, c.id]),
+    ].forEach(([id, name]) => {
+      const el = document.getElementById(id);
+      if (el) fokDownloadBar(el, name);
+    });
+  }
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -1871,6 +1976,7 @@
       const el = document.getElementById(cfg.id);
       if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain);
     });
+    addDownloadBars();
   }
 
   // ── Init ──────────────────────────────────────────────────────────────────
@@ -1887,7 +1993,10 @@
         const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
         toggleBtn.setAttribute('aria-expanded', String(!expanded));
         staticEl.hidden = expanded;
-        if (!expanded) renderStaticComparisonChart(staticEl);
+        if (!expanded) {
+          renderStaticComparisonChart(staticEl);
+          fokDownloadBar(staticEl, 'quadrant-porovnani');
+        }
       });
     }
 
