@@ -2,6 +2,7 @@
 layout: empty
 title: "Hledáme posilu: Projektový a finanční manažer/manažerka projektu OP JAK"
 slug: hledame-posilu
+published: false
 ---
 
 <div class="section">
