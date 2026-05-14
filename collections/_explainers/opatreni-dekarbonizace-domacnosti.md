@@ -131,7 +131,6 @@ extra-scripts:
 
 .q-quad-label {
   font-size: 10px;
-  fill: #bbb;
   font-style: italic;
 }
 
@@ -262,6 +261,26 @@ extra-scripts:
 .chart-dl-btn:hover {
   color: #53616e;
   border-color: #aaa;
+}
+
+/* ── Sensitivity beeswarm ────────────────────────────────────────────────────── */
+.sb-filters {
+  padding-bottom: 10px;
+}
+
+.sb-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  margin-top: 8px;
+}
+.sb-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #555;
 }
 </style>
 
@@ -524,5 +543,19 @@ extra-scripts:
         </tr>
       </tfoot>
     </table>
+  </div>
+</div>
+
+<div class="section pt-3 pb-4">
+  <div class="container">
+    <p class="chart-col-header mb-2">Sensitivita NPV — všechny kombinace parametrů</p>
+    <p class="text-muted" style="font-size:12px;margin-bottom:12px;">
+      Každá tečka = jedna kombinace (scénář cen × cena uhlíku × diskontní míra) pro daný kontext.
+      Zvýrazněné tečky = výchozí kombinace (Současné politiky · 60 € · 3 %).
+    </p>
+    <div id="sensitivity-beeswarm-wrap">
+      <div id="sensitivity-beeswarm-chart"></div>
+      <div id="sensitivity-beeswarm-legend" class="sb-legend"></div>
+    </div>
   </div>
 </div>

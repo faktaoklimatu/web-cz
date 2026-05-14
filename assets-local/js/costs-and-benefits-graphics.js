@@ -95,6 +95,38 @@
     '#c0392b', '#e67e22',   // Ojetý velký elektromobil, Ojetý velký hybrid
   ];
 
+  // ── Sensitivity beeswarm constants ───────────────────────────────────────
+  const SB_SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
+  const SB_SCENARIO_LABEL = { CP: 'Současné politiky', NZ: 'Net-zero', CP_EC: 'Energetická krize' };
+  const SB_CARBON_PRICES  = [0, 60, 100, 200];
+  const SB_DISCOUNT_RATES = [0, 3, 7];
+  const SB_DEFAULT        = { scenario: 'CP', cp: 60, dr: 3 };
+  const SB_X_DOMAIN       = [-1e6, 1e6];
+
+  // Color-by scales
+  const SB_SC_COLORS  = { CP: '#e07b39', NZ: '#2a9d8f', CP_EC: '#9b2335' };
+  const SB_CP_COLORS  = { 0: '#fde0c8', 60: '#fc8d59', 100: '#d7301f', 200: '#7f0000' };
+  const SB_DR_COLORS  = { 0: '#c6dbef', 3:  '#4292c6', 7:   '#08306b' };
+  const SB_CAT_COLORS = {
+    'Rodinný dům uhlí – E':                              '#903156',
+    'Rodinný dům uhlí – C':                              '#903156',
+    'Rodinný dům plyn – E':                              '#e37373',
+    'Rodinný dům plyn – C':                              '#e37373',
+    'Byt ve starší zástavbě s vlastním plynovým kotlem': '#2e7d5b',
+    'Byt v panelovém domě s plynovou kotelnou':          '#1a7a85',
+    'Nové malé':  '#6b4fa0',
+    'Nové velké': '#8546af',
+    'Ojeté malé': '#9b6fc4',
+    'Ojeté velké':'#b090d4',
+  };
+  const SB_BUILDING_CATS  = [
+    'Rodinný dům uhlí – E', 'Rodinný dům uhlí – C',
+    'Rodinný dům plyn – E', 'Rodinný dům plyn – C',
+    'Byt ve starší zástavbě s vlastním plynovým kotlem',
+    'Byt v panelovém domě s plynovou kotelnou',
+  ];
+  const SB_TRANSPORT_CATS = ['Nové malé', 'Nové velké', 'Ojeté malé', 'Ojeté velké'];
+
   // ── Tornado chart ─────────────────────────────────────────────────────────
   //
   // Cena uhlíku:  band spanning NPV at 0 € → 200 €; dot at current carbon price.
@@ -564,7 +596,7 @@
   const Q_ANIM_MS = 450;
 
   // Quadrant colours (dot fill, keyed by TR/TL/BR/BL)
-  const Q_DOT_COLORS = { tr: '#1f8c47', tl: '#c43535', br: '#1a72b8', bl: '#8b35b0' };
+  const Q_DOT_COLORS = { tr: '#006b94', tl: '#8dcdeb', br: '#e2a4a4', bl: '#973d4c' };
   function qQuadrantColor(npv, yVal) {
     if (npv >= 0) return yVal >= 0 ? Q_DOT_COLORS.tr : Q_DOT_COLORS.br;
     return yVal >= 0 ? Q_DOT_COLORS.tl : Q_DOT_COLORS.bl;
@@ -909,10 +941,10 @@
       svg.append('rect').attr('class', 'q-plot-bg')
         .attr('fill', '#fafbfc').attr('stroke', '#eee').attr('stroke-width', 1);
 
-      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tr').attr('fill', 'rgba(40,160,80,0.07)');
-      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tl').attr('fill', 'rgba(200,80,80,0.07)');
-      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-br').attr('fill', 'rgba(80,160,220,0.07)');
-      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-bl').attr('fill', 'rgba(180,100,200,0.07)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tr').attr('fill', 'rgba(0,133,173,0.15)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-tl').attr('fill', 'rgba(172,205,220,0.15)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-br').attr('fill', 'rgba(226,164,164,0.15)');
+      svg.append('rect').attr('class', 'q-quad-bg q-quad-bg-bl').attr('fill', 'rgba(151,61,76,0.15)');
 
       svg.append('line').attr('class', 'q-zero-x')
         .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
@@ -926,13 +958,13 @@
       svg.append('text').attr('class', 'q-axis-label q-y-label').attr('text-anchor', 'middle');
 
       svg.append('text').attr('class', 'q-quad-label q-quad-tr').attr('text-anchor', 'end')
-        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#145c2a');
+        .attr('font-weight', '700').style('fill', Q_DOT_COLORS.tr);
       svg.append('text').attr('class', 'q-quad-label q-quad-tl').attr('text-anchor', 'start')
-        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#7a1010');
+        .attr('font-weight', '700').style('fill', Q_DOT_COLORS.tl);
       svg.append('text').attr('class', 'q-quad-label q-quad-br').attr('text-anchor', 'end')
-        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#0d3d70');
+        .attr('font-weight', '700').style('fill', Q_DOT_COLORS.br);
       svg.append('text').attr('class', 'q-quad-label q-quad-bl').attr('text-anchor', 'start')
-        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', '#4d1066');
+        .attr('font-weight', '700').style('fill', Q_DOT_COLORS.bl);
 
       svg.append('ellipse').attr('class', 'q-uncertainty')
         .style('pointer-events', 'none')
@@ -985,28 +1017,23 @@
     // Abatement mode: top = cheapest abatement,   bottom = most expensive (diagonal)
     const QPAD = 6;
     if (isAbatement) {
-      // Y = −NPV/savedT: positive = you PAY per tonne (costly), negative = you EARN per tonne
-      // TR: NPV > 0, Y > 0 → savedT < 0 (costs money AND increases emissions — rare)
       svg.select('.q-quad-tr').attr('x', ox + chartW - QPAD).attr('y', oy + 14)
-        .text('Ztráta + ↑ emise');
-      // TL: NPV < 0, Y > 0 → savedT > 0 (costly decarbonisation — most measures here)
+        .text('ZTRÁTA A ZVÝŠENÍ EMISÍ');
       svg.select('.q-quad-tl').attr('x', ox + QPAD).attr('y', oy + 14)
-        .text('Drahá dekarbonizace');
-      // BR: NPV > 0, Y < 0 → savedT > 0 (net savings AND CO₂ reduction — win-win)
+        .text('DRAHÁ DEKARBONIZACE');
       svg.select('.q-quad-br').attr('x', ox + chartW - QPAD).attr('y', oy + chartH - QPAD)
-        .text('Výhodná dekarbonizace');
-      // BL: NPV < 0, Y < 0 → savedT < 0 (costly AND increases emissions — rare)
+        .text('ÚSPORA I DEKARBONIZACE');
       svg.select('.q-quad-bl').attr('x', ox + QPAD).attr('y', oy + chartH - QPAD)
-        .text('Levné, ale ↑ emise');
+        .text('ÚSPORA, NO ZVÝŠENÍ EMISÍ');
     } else {
       svg.select('.q-quad-tr').attr('x', ox + chartW - QPAD).attr('y', oy + 14)
-        .text('Win-win: úspora i dekarbonizace');
+        .text('ÚSPORA I DEKARBONIZACE');
       svg.select('.q-quad-tl').attr('x', ox + QPAD).attr('y', oy + 14)
-        .text('Drahá dekarbonizace');
+        .text('DRAHÁ DEKARBONIZACE');
       svg.select('.q-quad-br').attr('x', ox + chartW - QPAD).attr('y', oy + chartH - QPAD)
-        .text('Levné, ale ↑ emise');
+        .text('ÚSPORA, NO ZVÝŠENÍ EMISÍ');
       svg.select('.q-quad-bl').attr('x', ox + QPAD).attr('y', oy + chartH - QPAD)
-        .text('Ztráta + ↑ emise');
+        .text('ZTRÁTA A ZVÝŠENÍ EMISÍ');
     }
 
     // Points
@@ -1115,10 +1142,10 @@
     const zx = ox + xScale(0), zy = oy + yScale(0);
     const qzx = Math.max(ox, Math.min(ox + chartW, zx));
     const qzy = Math.max(oy, Math.min(oy + chartH, zy));
-    svg.append('rect').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', qzy - oy).attr('fill', 'rgba(40,160,80,0.07)');
-    svg.append('rect').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', qzy - oy).attr('fill', 'rgba(200,80,80,0.07)');
-    svg.append('rect').attr('x', qzx).attr('y', qzy).attr('width', ox + chartW - qzx).attr('height', oy + chartH - qzy).attr('fill', 'rgba(80,160,220,0.07)');
-    svg.append('rect').attr('x', ox).attr('y', qzy).attr('width', qzx - ox).attr('height', oy + chartH - qzy).attr('fill', 'rgba(180,100,200,0.07)');
+    svg.append('rect').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', qzy - oy).attr('fill', 'rgba(0,133,173,0.15)');
+    svg.append('rect').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', qzy - oy).attr('fill', 'rgba(172,205,220,0.15)');
+    svg.append('rect').attr('x', qzx).attr('y', qzy).attr('width', ox + chartW - qzx).attr('height', oy + chartH - qzy).attr('fill', 'rgba(226,164,164,0.15)');
+    svg.append('rect').attr('x', ox).attr('y', qzy).attr('width', qzx - ox).attr('height', oy + chartH - qzy).attr('fill', 'rgba(151,61,76,0.15)');
 
     svg.append('line')
       .attr('x1', ox).attr('x2', ox + chartW).attr('y1', zy).attr('y2', zy)
@@ -1146,14 +1173,14 @@
     // Quadrant labels
     const QPAD = 6;
     [
-      { cls: 'end',   x: ox + chartW - QPAD, y: oy + 14,            text: 'Win-win: úspora i dekarbonizace', color: '#145c2a' },
-      { cls: 'start', x: ox + QPAD,          y: oy + 14,            text: 'Drahá dekarbonizace',             color: '#7a1010' },
-      { cls: 'end',   x: ox + chartW - QPAD, y: oy + chartH - QPAD, text: 'Levné, ale ↑ emise',             color: '#0d3d70' },
-      { cls: 'start', x: ox + QPAD,          y: oy + chartH - QPAD, text: 'Ztráta + ↑ emise',               color: '#4d1066' },
+      { cls: 'end',   x: ox + chartW - QPAD, y: oy + 14,            text: 'ÚSPORA I DEKARBONIZACE', color: Q_DOT_COLORS.tr },
+      { cls: 'start', x: ox + QPAD,          y: oy + 14,            text: 'DRAHÁ DEKARBONIZACE',    color: Q_DOT_COLORS.tl },
+      { cls: 'end',   x: ox + chartW - QPAD, y: oy + chartH - QPAD, text: 'ÚSPORA, NO ZVÝŠENÍ EMISÍ', color: Q_DOT_COLORS.br },
+      { cls: 'start', x: ox + QPAD,          y: oy + chartH - QPAD, text: 'ZTRÁTA A ZVÝŠENÍ EMISÍ',   color: Q_DOT_COLORS.bl },
     ].forEach(q => {
       svg.append('text').attr('class', 'q-quad-label')
         .attr('text-anchor', q.cls).attr('x', q.x).attr('y', q.y)
-        .attr('font-size', '12px').attr('font-weight', '600').attr('fill', q.color)
+        .attr('font-weight', '700').style('fill', q.color)
         .text(q.text);
     });
 
@@ -1527,16 +1554,16 @@
     'Rodinný dům uhlí – C',
     'Rodinný dům plyn – E',
     'Rodinný dům plyn – C',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem',
-    'Byt v panelovém domě s plynovou kotelnou',
+    'Byt ve starší zástavbě s vlastním plynovým kotlem',
+    'Byt v panelovém domě s plynovou kotelnou',
   ];
   const MAC_CAT_COLORS = {
     'Rodinný dům uhlí – E':                             '#7b4f2e',
     'Rodinný dům uhlí – C':                             '#b07a50',
     'Rodinný dům plyn – E':                             '#c45e00',
     'Rodinný dům plyn – C':                             '#e08c3a',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem':'#2e7d5b',
-    'Byt v panelovém domě s plynovou kotelnou':         '#1a7a85',
+    'Byt ve starší zástavbě s vlastním plynovým kotlem':'#2e7d5b',
+    'Byt v panelovém domě s plynovou kotelnou':         '#1a7a85',
   };
 
   // Filter state — selected building category (single)
@@ -1906,6 +1933,702 @@
     });
   }
 
+  // ── Sensitivity beeswarm ─────────────────────────────────────────────────
+  let sbSelectedMeasure = null;
+  let sbMeasureGroups   = null;
+  let sbGrouped            = 'none';
+  let sbShowLetters        = false;
+  let sbShowUncertainty    = false;
+  let sbColorBy            = null; // null | 'sc' | 'cp' | 'dr'
+  let sbEnabledScenarios     = new Set(['CP', 'NZ', 'CP_EC']);
+  let sbEnabledDiscountRates = new Set([0, 3, 7]);
+  let sbEnabledCarbonPrices  = new Set([0, 60, 100, 200]);
+  let sbEnabledBaselines     = null; // Set of measure_baseline names; null = all enabled
+
+  function sbFindEntry(measureName, category) {
+    return [...(data.buildings_measures || []), ...(data.transport_measures || [])].find(m =>
+      m.measure_name === measureName &&
+      (m.building_category === category || m.transport_category === category)
+    );
+  }
+
+  function sbCalcNpv(entry, scenario, cp, dr) {
+    try {
+      const r = CostsBenefits.calculate({
+        measureId:             entry.id, data,
+        discountRate:          dr / 100,
+        carbonPriceEur:        cp,
+        priceScenario:         scenario,
+        electricityPriceFactor: 1.0,
+      });
+      return isNaN(r.npv) ? null : r.npv;
+    } catch (_) { return null; }
+  }
+
+  function sbCalcNpvFull(entry, scenario, cp, dr) {
+    try {
+      const r = CostsBenefits.calculate({
+        measureId:             entry.id, data,
+        discountRate:          dr / 100,
+        carbonPriceEur:        cp,
+        priceScenario:         scenario,
+        electricityPriceFactor: 1.0,
+      });
+      if (isNaN(r.npv)) return null;
+      const sens    = r.sensitivity || [];
+      const npvLow  = sens.length ? Math.min(...sens.map(s => s.minNpv)) : r.npv;
+      const npvHigh = sens.length ? Math.max(...sens.map(s => s.maxNpv)) : r.npv;
+      return { npv: r.npv, npvLow, npvHigh };
+    } catch (_) { return null; }
+  }
+
+  function sbBuildMeasureGroups() {
+    // Derive cats from the actual data so we don't miss contexts (e.g. apartment buildings)
+    // that exist in the data but aren't in CP_CHART_MEASURES.
+    const allB = data.buildings_measures || [];
+    const allT = data.transport_measures  || [];
+
+    // All unique measure names, ordered by CP_CHART_MEASURES then any extras
+    const bNamesAll = [...new Set(allB.map(m => m.measure_name))];
+    const tNamesAll = [...new Set(allT.map(m => m.measure_name))];
+    const bNames = [...CP_CHART_MEASURES.filter(n => bNamesAll.includes(n)), ...bNamesAll.filter(n => !CP_CHART_MEASURES.includes(n))];
+    const tNames = [...CP_CHART_MEASURES.filter(n => tNamesAll.includes(n)), ...tNamesAll.filter(n => !CP_CHART_MEASURES.includes(n))];
+
+    function catsFor(names, entries, allowedCats) {
+      return names
+        .map(name => ({
+          name,
+          cats: allowedCats.filter(cat =>
+            entries.some(m => m.measure_name === name &&
+              (m.building_category === cat || m.transport_category === cat))
+          ),
+        }))
+        .filter(g => g.cats.length > 0);
+    }
+
+    const lcB = allB.filter(m => m.measure_baseline_id);
+    const lcT = allT.filter(m => m.measure_baseline_id);
+    const buildingBaselines  = [...new Set(lcB.map(m => m.measure_baseline).filter(Boolean))];
+    const transportBaselines = [...new Set(lcT.map(m => m.measure_baseline).filter(Boolean))];
+
+    return {
+      buildings: catsFor(bNames, allB, SB_BUILDING_CATS),
+      transport: catsFor(tNames, allT, SB_TRANSPORT_CATS),
+      buildingBaselines,
+      transportBaselines,
+    };
+  }
+
+  function sbBuildFilters(wrap) {
+    if (wrap.querySelector('.sb-filters')) return;
+    const filtersDiv = document.createElement('div');
+    filtersDiv.className = 'sb-filters q-filters';
+
+    function makeRow(labelText, groups) {
+      const row = document.createElement('div');
+      row.className = 'q-filter-row';
+      const lbl = document.createElement('span');
+      lbl.className = 'q-filter-label';
+      lbl.textContent = labelText;
+      row.appendChild(lbl);
+      groups.forEach(g => {
+        const btn = document.createElement('button');
+        btn.className = 'q-filter-btn sb-measure-btn' + (sbSelectedMeasure === g.name ? ' active' : '');
+        btn.dataset.measure = g.name;
+        btn.textContent = g.name;
+        btn.addEventListener('click', () => {
+          sbSelectedMeasure = g.name;
+          wrap.querySelectorAll('.sb-measure-btn').forEach(b =>
+            b.classList.toggle('active', b.dataset.measure === g.name)
+          );
+          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+        });
+        row.appendChild(btn);
+      });
+      return row;
+    }
+
+    const lcBuildings = sbMeasureGroups.buildings.filter(g => CP_CHART_MEASURES.includes(g.name));
+    const lcTransport = sbMeasureGroups.transport.filter(g => CP_CHART_MEASURES.includes(g.name));
+    filtersDiv.appendChild(makeRow('Nízkoemisní budovy:', lcBuildings));
+
+    // Fossil baseline pills for buildings
+    if (sbMeasureGroups.buildingBaselines.length) {
+      const bblRow = document.createElement('div');
+      bblRow.className = 'q-filter-row';
+      const bblLbl = document.createElement('span');
+      bblLbl.className = 'q-filter-label';
+      bblLbl.textContent = 'Fosilní budovy:';
+      bblRow.appendChild(bblLbl);
+      sbMeasureGroups.buildingBaselines.forEach(bl => {
+        const btn = document.createElement('button');
+        btn.className = 'q-filter-btn sb-bl-btn' + (sbEnabledBaselines.has(bl) ? ' active' : '');
+        btn.dataset.baseline = bl;
+        btn.textContent = bl;
+        btn.addEventListener('click', () => {
+          if (sbEnabledBaselines.has(bl)) {
+            if (sbEnabledBaselines.size > 1) sbEnabledBaselines.delete(bl);
+          } else {
+            sbEnabledBaselines.add(bl);
+          }
+          btn.classList.toggle('active', sbEnabledBaselines.has(bl));
+          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+        });
+        bblRow.appendChild(btn);
+      });
+      filtersDiv.appendChild(bblRow);
+    }
+
+    filtersDiv.appendChild(makeRow('Nízkoemisní doprava:', lcTransport));
+
+    // Fossil baseline pills for transport
+    if (sbMeasureGroups.transportBaselines.length) {
+      const tblRow = document.createElement('div');
+      tblRow.className = 'q-filter-row';
+      const tblLbl = document.createElement('span');
+      tblLbl.className = 'q-filter-label';
+      tblLbl.textContent = 'Fosilní doprava:';
+      tblRow.appendChild(tblLbl);
+      sbMeasureGroups.transportBaselines.forEach(bl => {
+        const btn = document.createElement('button');
+        btn.className = 'q-filter-btn sb-bl-btn' + (sbEnabledBaselines.has(bl) ? ' active' : '');
+        btn.dataset.baseline = bl;
+        btn.textContent = bl;
+        btn.addEventListener('click', () => {
+          if (sbEnabledBaselines.has(bl)) {
+            if (sbEnabledBaselines.size > 1) sbEnabledBaselines.delete(bl);
+          } else {
+            sbEnabledBaselines.add(bl);
+          }
+          btn.classList.toggle('active', sbEnabledBaselines.has(bl));
+          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+        });
+        tblRow.appendChild(btn);
+      });
+      filtersDiv.appendChild(tblRow);
+    }
+
+    // Scenario toggle pills
+    const scRow = document.createElement('div');
+    scRow.className = 'q-filter-row';
+    const scLbl = document.createElement('span');
+    scLbl.className = 'q-filter-label';
+    scLbl.textContent = 'Scénář:';
+    scRow.appendChild(scLbl);
+    SB_SCENARIOS.forEach(sc => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-scenario-btn' + (sbEnabledScenarios.has(sc) ? ' active' : '');
+      btn.dataset.scenario = sc;
+      btn.textContent = SB_SCENARIO_LABEL[sc];
+      btn.addEventListener('click', () => {
+        if (sbEnabledScenarios.has(sc)) {
+          if (sbEnabledScenarios.size > 1) sbEnabledScenarios.delete(sc);
+        } else {
+          sbEnabledScenarios.add(sc);
+        }
+        btn.classList.toggle('active', sbEnabledScenarios.has(sc));
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      scRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(scRow);
+
+    // Discount rate toggle pills
+    const drRow = document.createElement('div');
+    drRow.className = 'q-filter-row';
+    const drLbl = document.createElement('span');
+    drLbl.className = 'q-filter-label';
+    drLbl.textContent = 'Diskontní míra:';
+    drRow.appendChild(drLbl);
+    SB_DISCOUNT_RATES.forEach(dr => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-dr-btn' + (sbEnabledDiscountRates.has(dr) ? ' active' : '');
+      btn.dataset.dr = dr;
+      btn.textContent = dr + ' %';
+      btn.addEventListener('click', () => {
+        if (sbEnabledDiscountRates.has(dr)) {
+          if (sbEnabledDiscountRates.size > 1) sbEnabledDiscountRates.delete(dr);
+        } else {
+          sbEnabledDiscountRates.add(dr);
+        }
+        btn.classList.toggle('active', sbEnabledDiscountRates.has(dr));
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      drRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(drRow);
+
+    // Carbon price toggle pills
+    const cpRow = document.createElement('div');
+    cpRow.className = 'q-filter-row';
+    const cpLbl = document.createElement('span');
+    cpLbl.className = 'q-filter-label';
+    cpLbl.textContent = 'Cena uhlíku:';
+    cpRow.appendChild(cpLbl);
+    SB_CARBON_PRICES.forEach(cp => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-cp-btn' + (sbEnabledCarbonPrices.has(cp) ? ' active' : '');
+      btn.dataset.cp = cp;
+      btn.textContent = cp + ' €';
+      btn.addEventListener('click', () => {
+        if (sbEnabledCarbonPrices.has(cp)) {
+          if (sbEnabledCarbonPrices.size > 1) sbEnabledCarbonPrices.delete(cp);
+        } else {
+          sbEnabledCarbonPrices.add(cp);
+        }
+        btn.classList.toggle('active', sbEnabledCarbonPrices.has(cp));
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      cpRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(cpRow);
+
+    // Grouping toggle
+    const gRow = document.createElement('div');
+    gRow.className = 'q-filter-row';
+    const gLbl = document.createElement('span');
+    gLbl.className = 'q-filter-label';
+    gLbl.textContent = 'Zobrazení:';
+    gRow.appendChild(gLbl);
+    [
+      { key: 'none',     label: 'Jeden řádek' },
+      { key: 'context',  label: 'Kontext' },
+      { key: 'rdFuel',   label: 'RD souhrnně' },
+      { key: 'fuel',     label: 'Uhlí / Plyn' },
+      { key: 'scenario', label: 'Scénář' },
+      { key: 'price',    label: 'Cena uhlíku' },
+      { key: 'discount', label: 'Diskontní míra' },
+    ].forEach(item => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-group-btn' + (sbGrouped === item.key ? ' active' : '');
+      btn.dataset.grouped = item.key;
+      btn.textContent = item.label;
+      btn.addEventListener('click', () => {
+        sbGrouped = item.key;
+        wrap.querySelectorAll('.sb-group-btn').forEach(b =>
+          b.classList.toggle('active', b.dataset.grouped === item.key)
+        );
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      gRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(gRow);
+
+    // Color-by row
+    const colorRow = document.createElement('div');
+    colorRow.className = 'q-filter-row';
+    const colorLbl = document.createElement('span');
+    colorLbl.className = 'q-filter-label';
+    colorLbl.textContent = 'Barvy dle:';
+    colorRow.appendChild(colorLbl);
+    [
+      { key: null,  label: 'Šedá' },
+      { key: 'sc',  label: 'Scénář' },
+      { key: 'cp',  label: 'Cena CO₂' },
+      { key: 'dr',  label: 'Diskont. míra' },
+    ].forEach(item => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-color-btn' + (sbColorBy === item.key ? ' active' : '');
+      btn.dataset.colorBy = item.key ?? '';
+      btn.textContent = item.label;
+      btn.addEventListener('click', () => {
+        sbColorBy = item.key;
+        wrap.querySelectorAll('.sb-color-btn').forEach(b =>
+          b.classList.toggle('active', b.dataset.colorBy === (item.key ?? ''))
+        );
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      colorRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(colorRow);
+
+    wrap.insertBefore(filtersDiv, wrap.firstChild);
+  }
+
+  function sbRenderChart(container) {
+    if (!container || !sbSelectedMeasure || !sbMeasureGroups) return;
+    const allGroups = [...sbMeasureGroups.buildings, ...sbMeasureGroups.transport];
+    const group = allGroups.find(g => g.name === sbSelectedMeasure);
+    if (!group) return;
+
+    // Build all dots: one per (category × scenario × carbon_price × discount_rate).
+    // NZ scenario has a fixed internal carbon trajectory — iterate only once to avoid duplicates.
+    const dots = [];
+    for (const cat of group.cats) {
+      const entry = sbFindEntry(sbSelectedMeasure, cat);
+      if (!entry || !entry.measure_baseline_id) continue;
+      if (sbEnabledBaselines && !sbEnabledBaselines.has(entry.measure_baseline)) continue;
+      for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
+        const cps = sc === 'NZ'
+          ? (sbEnabledCarbonPrices.has(SB_DEFAULT.cp) ? [SB_DEFAULT.cp] : [])
+          : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
+        for (const cp of cps) {
+          for (const dr of SB_DISCOUNT_RATES.filter(r => sbEnabledDiscountRates.has(r))) {
+            const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr;
+            if (sbShowUncertainty) {
+              const res = sbCalcNpvFull(entry, sc, cp, dr);
+              if (res == null) continue;
+              dots.push({ cat, sc, cp, dr, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
+            } else {
+              const npv = sbCalcNpv(entry, sc, cp, dr);
+              if (npv == null) continue;
+              dots.push({ cat, sc, cp, dr, npv, isDefault, x: 0, y: 0 });
+            }
+          }
+        }
+      }
+    }
+
+    if (!dots.length) {
+      d3.select(container).selectAll('*').remove();
+      return;
+    }
+
+    const cats   = group.cats;
+    const totalW = container.clientWidth || 720;
+    const DOT_R  = 5;
+
+    // Resolve lane config for the active grouping mode
+    const fuelOf = d => /uhlí/i.test(d.cat) ? 'Uhlí' : /plyn/i.test(d.cat) ? 'Plyn' : 'Ostatní';
+    const fuelColors = { 'Uhlí': '#903156', 'Plyn': '#e37373', 'Ostatní': '#888' };
+    const fuelLanes = ['Uhlí', 'Plyn', 'Ostatní'].filter(v => dots.some(d => fuelOf(d) === v));
+
+    const rdFuelLaneOf = d => {
+      if (/Rodinný dům/i.test(d.cat)) return /uhlí/i.test(d.cat) ? 'Rodinný dům – uhlí' : 'Rodinný dům – plyn';
+      return d.cat;
+    };
+    const rdFuelColors = { 'Rodinný dům – uhlí': '#903156', 'Rodinný dům – plyn': '#e37373' };
+    const rdFuelLaneOrder = ['Rodinný dům – uhlí', 'Rodinný dům – plyn', ...SB_BUILDING_CATS.filter(c => !/Rodinný dům/i.test(c))];
+    const rdFuelLanes = rdFuelLaneOrder.filter(v => dots.some(d => rdFuelLaneOf(d) === v));
+
+    const sbCatLabel = v => v.replace(/ – ([EC])(\b|$)/, ' ($1)');
+    const sbLcColor  = name => /renovace bez zateplení/i.test(name) ? '#c05a1a' : '#1a7a85';
+
+    const LANE_CONFIGS = {
+      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#555',    leftMargin: 200, rightMargin: 160, showBaselineLabel: true },
+      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#555', leftMargin: 180, rightMargin: 160, showBaselineLabel: true },
+      scenario: { lanes: SB_SCENARIOS,     laneOf: d => d.sc,    labelFn: v => SB_SCENARIO_LABEL[v], colorFn: () => '#555',                        leftMargin: 160 },
+      price:    { lanes: SB_CARBON_PRICES, laneOf: d => d.cp,    labelFn: v => v + ' €',             colorFn: () => '#555',                        leftMargin:  60 },
+      discount: { lanes: SB_DISCOUNT_RATES,laneOf: d => d.dr,    labelFn: v => v + ' %',             colorFn: () => '#555',                        leftMargin:  50 },
+      fuel:     { lanes: fuelLanes,        laneOf: fuelOf,       labelFn: v => v,                    colorFn: v => fuelColors[v] || '#888',        leftMargin:  70 },
+    };
+    const laneCfg = LANE_CONFIGS[sbGrouped] || null;
+
+    let M, LANE_H, totalH, yTarget, yClamp;
+    if (laneCfg) {
+      M      = { top: 16, right: laneCfg.rightMargin || 24, bottom: 52, left: laneCfg.leftMargin };
+      LANE_H = DOT_R * 14;
+      totalH = laneCfg.lanes.length * LANE_H + M.top + M.bottom;
+      yTarget = d => {
+        const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
+        return M.top + (idx === -1 ? 0 : idx) * LANE_H + LANE_H / 2;
+      };
+      yClamp = (d, y) => {
+        const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
+        const cy  = M.top + (idx === -1 ? 0 : idx) * LANE_H + LANE_H / 2;
+        return Math.max(cy - LANE_H / 2 + DOT_R, Math.min(cy + LANE_H / 2 - DOT_R, y));
+      };
+    } else {
+      M      = { top: 20, right: 24, bottom: 52, left: 24 };
+      LANE_H = DOT_R * 24;
+      totalH = LANE_H + M.top + M.bottom;
+      const midY = M.top + LANE_H / 2;
+      yTarget = () => midY;
+      yClamp  = (d, y) => Math.max(M.top + DOT_R, Math.min(M.top + LANE_H - DOT_R, y));
+    }
+
+    const chartW = Math.max(totalW - M.left - M.right, 200);
+    const xScale = d3.scaleLinear().domain(SB_X_DOMAIN).range([0, chartW]);
+
+    const xTarget = d => M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], d.npv)));
+    dots.forEach(d => { d.x = xTarget(d); d.y = yTarget(d); });
+
+    // Snap x back to NPV position after each tick so only y is displaced by collide
+    const sim = d3.forceSimulation(dots)
+      .force('y', d3.forceY(d => yTarget(d)).strength(laneCfg ? 0.85 : 0.3))
+      .force('collide', d3.forceCollide(DOT_R * 1.2))
+      .stop();
+    const ticks = laneCfg ? 120 : 150;
+    for (let i = 0; i < ticks; i++) {
+      sim.tick();
+      dots.forEach(d => { d.x = xTarget(d); });
+    }
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+
+    // Zero line
+    const zx = M.left + xScale(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M.top).attr('y2', totalH - M.bottom)
+      .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+    // Grouped mode: lane lines + left-side labels
+    if (laneCfg) {
+      laneCfg.lanes.forEach((v, i) => {
+        const cy = M.top + i * LANE_H + LANE_H / 2;
+        svg.append('line')
+          .attr('x1', M.left).attr('x2', M.left + chartW)
+          .attr('y1', cy).attr('y2', cy)
+          .attr('stroke', '#f0f0f0').attr('stroke-width', 1);
+
+        const showBl = laneCfg.showBaselineLabel;
+        const labelY = showBl ? cy - 5 : cy + 4;
+
+        if (showBl) {
+          // Left: category name + fossil baseline (fosilní je horší → vlevo)
+          svg.append('text')
+            .attr('x', M.left - 8).attr('y', labelY)
+            .attr('text-anchor', 'end')
+            .attr('font-size', '11px').attr('fill', '#53616e')
+            .text(laneCfg.labelFn(v));
+
+          const firstCat = laneCfg.laneOf === rdFuelLaneOf
+            ? cats.find(c => rdFuelLaneOf({ cat: c }) === v)
+            : v;
+          const blEntry = firstCat ? sbFindEntry(sbSelectedMeasure, firstCat) : null;
+          const blName  = blEntry?.measure_baseline || '';
+          if (blName) {
+            const blColor = /uhlí|uhelný/i.test(blName) ? '#903156'
+                          : /plyn/i.test(blName)         ? '#e37373'
+                          : /renovace/i.test(blName)     ? '#c05a1a'
+                          : '#888';
+            svg.append('text')
+              .attr('x', M.left - 8).attr('y', cy + 9)
+              .attr('text-anchor', 'end')
+              .attr('font-size', '10px').attr('font-weight', '700')
+              .attr('fill', blColor)
+              .text(blName);
+          }
+
+          // Right: LC measure name (nízkoemisní je lepší → vpravo)
+          svg.append('text')
+            .attr('x', M.left + chartW + 8).attr('y', cy + 4)
+            .attr('text-anchor', 'start')
+            .attr('font-size', '10px').attr('font-weight', '700')
+            .attr('fill', sbLcColor(sbSelectedMeasure))
+            .text(sbSelectedMeasure);
+        } else {
+          svg.append('text')
+            .attr('x', M.left - 8).attr('y', labelY)
+            .attr('text-anchor', 'end')
+            .attr('font-size', '11px').attr('fill', laneCfg.colorFn(v))
+            .text(laneCfg.labelFn(v));
+        }
+      });
+    }
+
+    // X axis
+    svg.append('g')
+      .attr('class', 'chart-axis')
+      .attr('transform', `translate(${M.left},${totalH - M.bottom})`)
+      .call(sel => {
+        sel.call(d3.axisBottom(xScale).ticks(7).tickFormat(v => {
+          const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
+          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
+          if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
+          return v === 0 ? '0' : s + a;
+        }));
+        sel.select('.domain').attr('stroke', 'none');
+        sel.selectAll('.tick line').attr('stroke', '#9ba5ad').attr('stroke-width', 1);
+        sel.selectAll('.tick text')
+          .attr('fill', '#53616e')
+          .attr('font-family', '"Roboto", system-ui, sans-serif')
+          .attr('font-size', 12);
+      });
+
+    svg.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('x', M.left + chartW / 2).attr('y', totalH - 4)
+      .attr('font-size', '12px').attr('fill', '#53616e')
+      .attr('font-family', '"Roboto", system-ui, sans-serif')
+      .text('Rozdíl NPV oproti základní variantě (Kč)');
+
+    // Territory labels
+    svg.append('text')
+      .attr('x', M.left + 4).attr('y', totalH - M.bottom + 14)
+      .attr('font-size', '9px').attr('fill', '#bbb').attr('text-anchor', 'start')
+      .text('← fosilní výhodnější');
+    svg.append('text')
+      .attr('x', M.left + chartW - 4).attr('y', totalH - M.bottom + 14)
+      .attr('font-size', '9px').attr('fill', '#bbb').attr('text-anchor', 'end')
+      .text('nízkoemisní výhodnější →');
+
+    svg.append('text')
+      .attr('x', zx).attr('y', M.top - 4)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '9px').attr('fill', '#aaa')
+      .text('Výchozí (CP · 60 € · 3 %)');
+
+    // Tooltip
+    let sbTip = document.getElementById('sb-tip');
+    if (!sbTip) {
+      sbTip = document.createElement('div');
+      sbTip.id = 'sb-tip';
+      Object.assign(sbTip.style, {
+        position: 'fixed', pointerEvents: 'none', background: 'rgba(30,30,30,0.88)',
+        color: '#fff', fontSize: '12px', lineHeight: '1.5', padding: '6px 10px',
+        borderRadius: '4px', whiteSpace: 'pre', display: 'none', zIndex: 9999,
+      });
+      document.body.appendChild(sbTip);
+    }
+
+    const fmtNpv = v => {
+      const abs = Math.abs(v), sign = v < 0 ? '− ' : '+ ';
+      if (abs >= 1e6) return sign + (Math.round(abs / 1e5) / 10).toFixed(1) + ' mil. Kč';
+      if (abs >= 1e3) return sign + Math.round(abs / 1e3) + ' tis. Kč';
+      return sign + Math.round(abs) + ' Kč';
+    };
+
+    // Per-dot uncertainty bands (drawn behind circles)
+    if (sbShowUncertainty) {
+      const bandH = DOT_R * 1.2;
+      svg.selectAll('.sb-unc-band')
+        .data(dots.filter(d => d.npvLow != null && d.npvHigh != null))
+        .join('rect')
+        .attr('class', 'sb-unc-band')
+        .attr('x',      d => M.left + xScale(Math.max(SB_X_DOMAIN[0], d.npvLow)))
+        .attr('width',  d => Math.max(1, xScale(Math.min(SB_X_DOMAIN[1], d.npvHigh)) - xScale(Math.max(SB_X_DOMAIN[0], d.npvLow))))
+        .attr('y',      d => yClamp(d, d.y) - bandH / 2)
+        .attr('height', bandH)
+        .attr('fill',   '#9ba5ad')
+        .attr('opacity', d => d.isDefault ? 0.35 : 0.12)
+        .attr('rx', 2);
+    }
+
+    // Draw non-default dots first (behind), then default dots on top
+    [dots.filter(d => !d.isDefault), dots.filter(d => d.isDefault)].forEach(subset => {
+      svg.selectAll(null)
+        .data(subset)
+        .join('circle')
+        .attr('cx', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
+        .attr('cy', d => yClamp(d, d.y))
+        .attr('r', d => d.isDefault ? DOT_R + 1 : DOT_R)
+        .attr('fill', d => {
+          if (sbColorBy === 'sc') return SB_SC_COLORS[d.sc] || '#888';
+          if (sbColorBy === 'cp') return SB_CP_COLORS[d.cp] || '#888';
+          if (sbColorBy === 'dr') return SB_DR_COLORS[d.dr] || '#888';
+          return d.isDefault ? '#53616e' : '#9ba5ad';
+        })
+        .attr('opacity', d => d.isDefault ? 0.9 : (sbColorBy ? 0.55 : 0.25))
+        .attr('stroke', d => d.isDefault ? 'white' : 'none')
+        .attr('stroke-width', 1.5)
+        .style('cursor', 'pointer')
+        .on('mouseover', function(event, d) {
+          d3.select(this).attr('opacity', 1);
+          const cpLabel = d.sc === 'NZ' ? 'trajektorie NZ' : d.cp + ' €';
+          sbTip.textContent = [
+            d.cat,
+            'Scénář: ' + SB_SCENARIO_LABEL[d.sc],
+            'Cena uhlíku: ' + cpLabel,
+            'Diskontní míra: ' + d.dr + ' %',
+            'NPV: ' + fmtNpv(d.npv),
+          ].join('\n');
+          sbTip.style.display = 'block';
+          sbTip.style.left = (event.clientX + 14) + 'px';
+          sbTip.style.top  = (event.clientY - 28) + 'px';
+        })
+        .on('mousemove', event => {
+          sbTip.style.left = (event.clientX + 14) + 'px';
+          sbTip.style.top  = (event.clientY - 28) + 'px';
+        })
+        .on('mouseout', function(event, d) {
+          d3.select(this).attr('opacity', d.isDefault ? 0.9 : (sbColorBy ? 0.55 : 0.25));
+          sbTip.style.display = 'none';
+        });
+    });
+
+    // E / C letter inside building dots (– E or – C suffix categories)
+    const catLetter = cat => /– E$/.test(cat) ? 'E' : /– C$/.test(cat) ? 'C' : null;
+    const ecDots = dots.filter(d => catLetter(d.cat));
+    if (sbShowLetters && ecDots.length) {
+      [ecDots.filter(d => !d.isDefault), ecDots.filter(d => d.isDefault)].forEach(subset => {
+        svg.selectAll(null)
+          .data(subset)
+          .join('text')
+          .attr('x', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
+          .attr('y', d => yClamp(d, d.y))
+          .attr('text-anchor', 'middle')
+          .attr('dominant-baseline', 'central')
+          .attr('font-size', d => (d.isDefault ? DOT_R + 1 : DOT_R) * 1.5 + 'px')
+          .attr('font-weight', '700')
+          .attr('fill', 'white')
+          .attr('opacity', d => d.isDefault ? 0.9 : 0.25)
+          .attr('pointer-events', 'none')
+          .text(d => catLetter(d.cat));
+      });
+    }
+
+    fokDownloadBar(container, 'sensitivity-beeswarm');
+
+    // Context legend: always shown except when grouping BY context (labels are in the chart then)
+    const legendEl = document.getElementById('sensitivity-beeswarm-legend');
+    if (legendEl) {
+      legendEl.innerHTML = '';
+      if (sbGrouped !== 'context' && sbGrouped !== 'rdFuel') {
+        cats.forEach(cat => {
+          const item = document.createElement('div');
+          item.className = 'sb-legend-item';
+          const swatch = document.createElement('span');
+          swatch.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:50%;background:${SB_CAT_COLORS[cat] || '#888'};flex-shrink:0;`;
+          const label = document.createElement('span');
+          label.textContent = cat;
+          item.appendChild(swatch);
+          item.appendChild(label);
+          legendEl.appendChild(item);
+        });
+      }
+
+      // E/C toggle button — only when relevant categories exist
+      if (cats.some(c => catLetter(c))) {
+        const ecBtn = document.createElement('button');
+        ecBtn.className = 'chart-dl-btn';
+        ecBtn.style.cssText = 'align-self:center; margin-left:4px;';
+        ecBtn.textContent = sbShowLetters ? 'E/C ✓' : 'E/C';
+        ecBtn.addEventListener('click', () => {
+          sbShowLetters = !sbShowLetters;
+          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+        });
+        legendEl.appendChild(ecBtn);
+      }
+
+      // Uncertainty band toggle
+      const uncBtn = document.createElement('button');
+      uncBtn.className = 'chart-dl-btn';
+      uncBtn.style.cssText = 'align-self:center; margin-left:4px;';
+      uncBtn.textContent = sbShowUncertainty ? 'Rozsah ✓' : 'Rozsah';
+      uncBtn.addEventListener('click', () => {
+        sbShowUncertainty = !sbShowUncertainty;
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      legendEl.appendChild(uncBtn);
+    }
+  }
+
+  function sbInit() {
+    const wrap = document.getElementById('sensitivity-beeswarm-wrap');
+    if (!wrap) return;
+
+    sbMeasureGroups = sbBuildMeasureGroups();
+    sbEnabledBaselines = new Set([...sbMeasureGroups.buildingBaselines, ...sbMeasureGroups.transportBaselines]);
+    const allGroups = [...sbMeasureGroups.buildings, ...sbMeasureGroups.transport];
+    if (!allGroups.length) return;
+
+    sbSelectedMeasure = allGroups[0].name;
+    sbBuildFilters(wrap);
+
+    const chartEl = document.getElementById('sensitivity-beeswarm-chart');
+    sbRenderChart(chartEl);
+
+    window.addEventListener('resize', () => {
+      const el = document.getElementById('sensitivity-beeswarm-chart');
+      if (el) sbRenderChart(el);
+    });
+  }
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -2003,6 +2726,7 @@
     setupControls();
     renderAll();
     window.addEventListener('resize', renderAll);
+    sbInit();
   }
 
   if (document.readyState === 'loading') {
