@@ -2697,6 +2697,230 @@
     });
   }
 
+  // ── Import cost table ─────────────────────────────────────────────────────
+  function getScenarioPrices(scenario) {
+    const entries = data.fuel_scenarios.filter(s => s.scenario === scenario);
+    if (!entries.length) return [];
+    if (entries.length === 1) return entries[0].prices;
+    const yearMap = {};
+    for (const entry of entries)
+      for (const p of entry.prices)
+        yearMap[p.year_investment] = Object.assign(yearMap[p.year_investment] || {}, p);
+    return Object.values(yearMap).sort((a, b) => a.year_investment - b.year_investment);
+  }
+
+  function sumFuelCost(prices, fuelKey, annualAmount, years) {
+    let total = 0;
+    for (let t = 1; t <= years; t++) {
+      const yp = prices.find(p => p.year_investment === t);
+      if (yp && yp[fuelKey] != null) total += yp[fuelKey] * annualAmount;
+    }
+    return total;
+  }
+
+  function fmtMld(v) {
+    return (v / 1e9).toFixed(1) + ' mld. Kč';
+  }
+
+  // Renders one horizontal bar per scenario, stacked vertically.
+  // Full bar length = total fuel savings value; hatched right portion = CAPEX diff.
+  // domMax is shared across all measures so bars are comparable.
+  // scenarioDefs: optional array of {color, label} — defaults to SCENARIO_DEFS.
+  function renderNetBar(container, fuelValues, capex, domMax, scenarioDefs) {
+    scenarioDefs = scenarioDefs || SCENARIO_DEFS;
+    const BAR_H  = 8;
+    const GAP    = 3;
+    const LABEL_W = 44;  // px reserved on right for value labels
+    const PAD    = { l: 4, r: LABEL_W, t: 2, b: 2 };
+    const n      = fuelValues.length;
+    const H      = PAD.t + n * BAR_H + (n - 1) * GAP + PAD.b;
+    const W      = container.clientWidth || 200;
+    const chartW = W - PAD.l - PAD.r;
+
+    const domMin = 0;
+    if (domMax == null) domMax = Math.max(...fuelValues) * 1.05 || 1;
+    const scale = v => PAD.l + (v - domMin) / (domMax - domMin) * chartW;
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+
+    // Shared hatch pattern for the CAPEX portion
+    const patId = 'hatch-' + Math.random().toString(36).slice(2, 8);
+    const defs = svg.append('defs');
+    const pat  = defs.append('pattern')
+      .attr('id', patId).attr('patternUnits', 'userSpaceOnUse')
+      .attr('width', 5).attr('height', 5)
+      .attr('patternTransform', 'rotate(45)');
+    pat.append('line')
+      .attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 5)
+      .attr('stroke', '#999').attr('stroke-width', 1.5);
+
+    fuelValues.forEach((fuel, i) => {
+      const y       = PAD.t + i * (BAR_H + GAP);
+      const sc      = scenarioDefs[i];
+      const net     = fuel - capex;
+      const netPx   = scale(Math.max(0, net));  // solid bar ends here
+      const fuelPx  = scale(fuel);
+      const zeroPx  = scale(0);
+
+      // Full fuel bar (base colour, lower opacity under hatch area)
+      if (fuelPx > zeroPx) {
+        svg.append('rect')
+          .attr('x', zeroPx).attr('y', y)
+          .attr('width', fuelPx - zeroPx).attr('height', BAR_H)
+          .attr('fill', sc.color).attr('opacity', 0.25).attr('rx', 2);
+      }
+
+      // Solid net-benefit portion (0 → net), capped at fuel bar, full opacity
+      if (net > 0) {
+        const solidEndPx = Math.min(netPx, fuelPx);  // cap when capex < 0
+        svg.append('rect')
+          .attr('x', zeroPx).attr('y', y)
+          .attr('width', solidEndPx - zeroPx).attr('height', BAR_H)
+          .attr('fill', sc.color).attr('opacity', 0.85).attr('rx', 2);
+      }
+
+      // Hatch overlay on the CAPEX portion (net → fuel, or whole bar if net ≤ 0)
+      const hatchStart = Math.max(zeroPx, netPx);
+      if (fuelPx > hatchStart) {
+        svg.append('rect')
+          .attr('x', hatchStart).attr('y', y)
+          .attr('width', fuelPx - hatchStart).attr('height', BAR_H)
+          .attr('fill', `url(#${patId})`).attr('rx', 2);
+      }
+
+      // Value label to the right of the bar
+      svg.append('text')
+        .attr('x', fuelPx + 4)
+        .attr('y', y + BAR_H / 2)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 9)
+        .attr('fill', sc.color)
+        .text((fuel / 1e9).toFixed(0) + ' mld.');
+    });
+  }
+
+  function renderImportCostTable() {
+    // ── YAML measure IDs ──────────────────────────────────────────────────────
+    // All fuel savings, lifetimes, and CAPEX diffs are derived from the YAML.
+    // Only deployment counts and import price scenarios are editorial choices.
+    const IDS = {
+      hp:   { m: 33, b: 8  },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–E)
+      ins:  { m: 37, b: 9  },   // Zateplení + fasáda vs. Renovace bez zateplení
+      ev:   { m: 55, b: 51 },   // Nový malý elektromobil vs. Nové malé auto na benzín
+      ev_l: { m: 57, b: 52 },   // Nový velký elektromobil vs. Nové velké auto na naftu
+    };
+    const DEPLOY = { hp: 200_000, ins: 200_000, ev: 500_000, ev_l: 300_000 };
+
+    // Czech fossil fuel import totals (external statistics, not in YAML)
+    const CZ_GAS_MWH = 60e6;   // ~60 TWh/year natural gas imports
+    const CZ_OIL_BBL = 50.4e6; // ~50.4 mil. barrels/year crude oil imports
+
+    // Conversion constants
+    const L_PER_BBL     = 158.987;
+    const CRUDE_L_PER_L = { petrol: 5, diesel: 2.5 }; // European refinery yields
+    const EUR_CZK       = 25;
+    const USD_CZK       = 23;
+
+    // ── Resolve measures from YAML ────────────────────────────────────────────
+    const byId = (list, id) => list.find(x => x.id === id);
+    const bm   = data.buildings_measures;
+    const tm   = data.transport_measures;
+
+    const M = {
+      hp:   { m: byId(bm, IDS.hp.m),   b: byId(bm, IDS.hp.b)   },
+      ins:  { m: byId(bm, IDS.ins.m),  b: byId(bm, IDS.ins.b)  },
+      ev:   { m: byId(tm, IDS.ev.m),   b: byId(tm, IDS.ev.b)   },
+      ev_l: { m: byId(tm, IDS.ev_l.m), b: byId(tm, IDS.ev_l.b) },
+    };
+
+    // ── Annual fuel savings per unit ──────────────────────────────────────────
+    // Gas: baseline gas consumption minus measure gas consumption (0 if measure uses electricity)
+    const gasPerUnit = {
+      hp:  M.hp.b.demand_heat_measure_mwh  - (M.hp.m.fuel  === 'Electricity' ? 0 : M.hp.m.demand_heat_measure_mwh),
+      ins: M.ins.b.demand_heat_measure_mwh - M.ins.m.demand_heat_measure_mwh,
+    };
+    // Oil: baseline liters per year (EV uses no fuel, so all baseline consumption is saved)
+    const litresPerUnit = {
+      ev:   M.ev.b.demand_energy_per_100km   * M.ev.b.mileage   / 100,
+      ev_l: M.ev_l.b.demand_energy_per_100km * M.ev_l.b.mileage / 100,
+    };
+    const oilFuel = {
+      ev:   M.ev.b.fuel.toLowerCase(),
+      ev_l: M.ev_l.b.fuel.toLowerCase(),
+    };
+
+    // ── CAPEX diff (total across deployed units) ───────────────────────────────
+    const bCapex = m => (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0) + (m.capex_preparation_czk || 0);
+    const CAPEX = {
+      hp:   (bCapex(M.hp.m)  - bCapex(M.hp.b))  * DEPLOY.hp,
+      ins:  (bCapex(M.ins.m) - bCapex(M.ins.b)) * DEPLOY.ins,
+      ev:   (M.ev.m.capex_czk  - M.ev.b.capex_czk)  * DEPLOY.ev,
+      ev_l: (M.ev_l.m.capex_czk - M.ev_l.b.capex_czk) * DEPLOY.ev_l,
+    };
+
+    // ── Fill table cells ──────────────────────────────────────────────────────
+    const fill = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+    const fmtMldSigned = v => (v < 0 ? '−' : '') + Math.abs(v / 1e9).toFixed(0) + ' mld. Kč';
+
+    // Savings per unit
+    fill('savings-unit-hp',   gasPerUnit.hp.toFixed(0)  + ' MWh plynu');
+    fill('savings-unit-ins',  gasPerUnit.ins.toFixed(0) + ' MWh plynu');
+    fill('savings-unit-ev',   (litresPerUnit.ev   / L_PER_BBL).toFixed(1) + ' barelu');
+    fill('savings-unit-ev_l', (litresPerUnit.ev_l / L_PER_BBL).toFixed(1) + ' barelu');
+
+    // % of imports
+    const gasPct  = (mwh, n) => (mwh * n / CZ_GAS_MWH * 100).toFixed(1).replace('.', ',') + ' %';
+    const oilPct  = (l,   n) => (l * n / L_PER_BBL / CZ_OIL_BBL * 100).toFixed(1).replace('.', ',') + ' %';
+    fill('savings-imports-hp',   gasPct(gasPerUnit.hp,  DEPLOY.hp));
+    fill('savings-imports-ins',  gasPct(gasPerUnit.ins, DEPLOY.ins));
+    fill('savings-imports-ev',   oilPct(litresPerUnit.ev,   DEPLOY.ev));
+    fill('savings-imports-ev_l', oilPct(litresPerUnit.ev_l, DEPLOY.ev_l));
+
+    // CAPEX diff
+    ['hp', 'ins', 'ev', 'ev_l'].forEach(k => fill('capex-diff-' + k, fmtMldSigned(CAPEX[k])));
+
+    // ── Import price scenarios ────────────────────────────────────────────────
+    const IMPORT_SC = [
+      { key: 'low',  label: 'Běžné ceny',       color: '#2860b4', gas_eur_mwh: 40,  oil_usd_bbl: 80  },
+      { key: 'high', label: 'Energetická krize', color: '#c43535', gas_eur_mwh: 180, oil_usd_bbl: 150 },
+    ];
+
+    // Price column labels
+    const gasLabel = `€${IMPORT_SC[0].gas_eur_mwh}–${IMPORT_SC[1].gas_eur_mwh}/MWh`;
+    const oilLabel = `$${IMPORT_SC[0].oil_usd_bbl}–${IMPORT_SC[1].oil_usd_bbl}/barel`;
+    fill('fuel-price-hp',   gasLabel);
+    fill('fuel-price-ins',  gasLabel);
+    fill('fuel-price-ev',   oilLabel);
+    fill('fuel-price-ev_l', oilLabel);
+
+    // ── Fuel import value (CZK) ───────────────────────────────────────────────
+    const gasVal = (mwh, n, years, sc) => mwh * n * years * sc.gas_eur_mwh * EUR_CZK;
+    const oilVal = (l,   n, years, sc, fuel) =>
+      l * CRUDE_L_PER_L[fuel] / L_PER_BBL * n * years * sc.oil_usd_bbl * USD_CZK;
+
+    const fuelValue = {};
+    IMPORT_SC.forEach(sc => {
+      fuelValue[sc.key] = {
+        hp:   gasVal(gasPerUnit.hp,       DEPLOY.hp,  M.hp.m.lifetime,   sc),
+        ins:  gasVal(gasPerUnit.ins,      DEPLOY.ins, M.ins.m.lifetime,  sc),
+        ev:   oilVal(litresPerUnit.ev,    DEPLOY.ev,  M.ev.m.lifetime,   sc, oilFuel.ev),
+        ev_l: oilVal(litresPerUnit.ev_l,  DEPLOY.ev_l, M.ev_l.m.lifetime, sc, oilFuel.ev_l),
+      };
+    });
+
+    // Shared x-domain across all measures and scenarios
+    const allFuels = ['hp', 'ins', 'ev', 'ev_l'].flatMap(k => IMPORT_SC.map(sc => fuelValue[sc.key][k]));
+    const domMax   = Math.max(...allFuels) * 1.05;
+
+    ['hp', 'ins', 'ev', 'ev_l'].forEach(k => {
+      const el  = document.getElementById('net-benefit-bar-' + k);
+      const vals = IMPORT_SC.map(sc => fuelValue[sc.key][k]);
+      if (el) renderNetBar(el, vals, CAPEX[k], domMax, IMPORT_SC);
+    });
+  }
+
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -2768,9 +2992,89 @@
       if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain);
     });
     addDownloadBars();
+    renderImportCostTable();
   }
 
-  // ── Init ──────────────────────────────────────────────────────────────────
+  // ── Gas savings range chart ────────────────────────────────────────────────
+  function renderGasSavingsRangeChart() {
+    const el = document.getElementById('gas-savings-range-chart');
+    if (!el) return;
+
+    const N         = 200_000;
+    const TOTAL_GAS = 60;      // TWh Czech gas imports
+    const LOW_MWH   = 24;
+    const HIGH_MWH  = 34;
+    const STEPS     = 50;
+
+    const pts = d3.range(LOW_MWH, HIGH_MWH + 0.001, (HIGH_MWH - LOW_MWH) / STEPS)
+      .map(c => ({ mwh: c, twh: N * c / 1e6 }));
+
+    const lowTWh  = N * LOW_MWH  / 1e6;
+    const highTWh = N * HIGH_MWH / 1e6;
+
+    const W = 560, H = 180;
+    const ML = 54, MR = 90, MT = 28, MB = 44;
+    const iW = W - ML - MR, iH = H - MT - MB;
+
+    el.innerHTML = '';
+    const svg = d3.select(el)
+      .append('svg')
+        .attr('viewBox', `0 0 ${W} ${H}`)
+        .attr('style', 'max-width:560px; width:100%; display:block;');
+
+    const g = svg.append('g').attr('transform', `translate(${ML},${MT})`);
+
+    const x = d3.scaleLinear().domain([LOW_MWH, HIGH_MWH]).range([0, iW]);
+    const y = d3.scaleLinear().domain([0, Math.ceil(highTWh + 1)]).range([iH, 0]).nice();
+
+    // Gridlines
+    g.append('g')
+      .call(d3.axisLeft(y).ticks(5).tickSize(-iW).tickFormat(''))
+      .call(ax => { ax.select('.domain').remove(); ax.selectAll('line').attr('stroke', '#eee'); });
+
+    // Area
+    g.append('path')
+      .datum(pts)
+      .attr('d', d3.area().x(d => x(d.mwh)).y0(iH).y1(d => y(d.twh)).curve(d3.curveBasis))
+      .attr('fill', '#2860b4').attr('opacity', 0.15);
+
+    // Line
+    g.append('path')
+      .datum(pts)
+      .attr('d', d3.line().x(d => x(d.mwh)).y(d => y(d.twh)).curve(d3.curveBasis))
+      .attr('fill', 'none').attr('stroke', '#2860b4').attr('stroke-width', 2);
+
+    // Endpoint dots
+    [[LOW_MWH, lowTWh], [HIGH_MWH, highTWh]].forEach(([mwh, twh]) => {
+      g.append('circle').attr('cx', x(mwh)).attr('cy', y(twh))
+        .attr('r', 5).attr('fill', '#2860b4');
+    });
+
+    // Endpoint labels
+    g.append('text').attr('x', x(LOW_MWH)).attr('y', y(lowTWh) - 10)
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', '#2860b4').attr('font-weight', 600)
+      .text(`${lowTWh.toFixed(1)} TWh (${(lowTWh / TOTAL_GAS * 100).toFixed(0)} %)`);
+    g.append('text').attr('x', x(HIGH_MWH)).attr('y', y(highTWh) - 10)
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', '#2860b4').attr('font-weight', 600)
+      .text(`${highTWh.toFixed(1)} TWh (${(highTWh / TOTAL_GAS * 100).toFixed(1)} %)`);
+
+    // Axes
+    g.append('g').attr('class', 'chart-axis').attr('transform', `translate(0,${iH})`)
+      .call(d3.axisBottom(x).ticks(6).tickFormat(d => d + ' MWh'));
+    g.append('g').attr('class', 'chart-axis')
+      .call(d3.axisLeft(y).ticks(5).tickFormat(d => d + ' TWh'));
+
+    // Axis labels
+    g.append('text').attr('x', iW / 2).attr('y', iH + 36)
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', '#888')
+      .text('Průměrná spotřeba tepla budovy (MWh/rok)');
+    svg.append('text')
+      .attr('transform', `translate(12,${MT + iH / 2}) rotate(-90)`)
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', '#888')
+      .text('Celková úspora plynu (TWh/rok)');
+  }
+
+// ── Init ──────────────────────────────────────────────────────────────────
   function init() {
     if (document.getElementById('quadrant-wrap')) {
       quadrantDomains = computeQuadrantDomains();
@@ -2793,6 +3097,7 @@
 
     setupControls();
     renderAll();
+    renderGasSavingsRangeChart();
     window.addEventListener('resize', renderAll);
     sbInit();
   }

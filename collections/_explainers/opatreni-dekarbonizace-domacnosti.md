@@ -500,49 +500,74 @@ extra-scripts:
 <div class="section pt-3 pb-4">
   <div class="container">
     <p class="chart-col-header mb-3">Úspora paliva při plošném nasazení opatření</p>
-    <table class="table table-sm" style="max-width:700px;">
+    <div style="overflow-x:auto;">
+    <table class="table table-sm" style="min-width:700px;">
       <thead>
         <tr>
-          <th>Opatření</th>
-          <th class="text-end">Počet opatření</th>
-          <th class="text-end">Úspora na jednotku</th>
-          <th class="text-end">Celková roční úspora</th>
-          <th class="text-end">Z 60 TWh dovozů plynu</th>
+          <th style="min-width:220px;">Opatření</th>
+          <th class="text-end">Počet</th>
+          <th class="text-end">Úspora / jednotku / rok</th>
+          <th class="text-end">Z dovozů paliva</th>
+          <th class="text-end">Rozdíl investičních nákladů</th>
+          <th class="text-end text-nowrap">Cena paliva</th>
+          <th class="text-nowrap">Hodnota ušetřeného paliva (životnost)
+            <br><small class="text-muted fw-normal">░ = rozdíl invest. nákladů; <span style="color:#2860b4">■</span> Běžné ceny &nbsp;<span style="color:#c43535">■</span> Energetická krize</small></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Tepelné čerpadlo <small class="text-muted">(Rodinný dům plyn – E)</small></td>
+          <td>Tepelné čerpadlo <small class="text-muted">(RD plyn–E, 15 let, vs. plynový kotel)</small></td>
           <td class="text-end">200 000</td>
-          <td class="text-end">24 MWh plynu / rok</td>
-          <td class="text-end"><strong>4,8 TWh plynu / rok</strong></td>
-          <td class="text-end">8 %</td>
+          <td class="text-end" id="savings-unit-hp">…</td>
+          <td class="text-end" id="savings-imports-hp">…</td>
+          <td class="text-end text-nowrap" id="capex-diff-hp">…</td>
+          <td class="text-end text-muted text-nowrap" id="fuel-price-hp">…</td>
+          <td id="net-benefit-bar-hp" style="min-width:100px; width:13%;"></td>
         </tr>
         <tr>
-          <td>Zateplení + fasáda <small class="text-muted">(Rodinný dům plyn – E)</small></td>
+          <td>Zateplení + fasáda <small class="text-muted">(RD plyn–E, 40 let, vs. renovace bez zateplení)</small></td>
           <td class="text-end">200 000</td>
-          <td class="text-end">10 MWh plynu / rok</td>
-          <td class="text-end"><strong>2 TWh plynu / rok</strong></td>
-          <td class="text-end">3,3 %</td>
+          <td class="text-end" id="savings-unit-ins">…</td>
+          <td class="text-end" id="savings-imports-ins">…</td>
+          <td class="text-end text-nowrap" id="capex-diff-ins">…</td>
+          <td class="text-end text-muted text-nowrap" id="fuel-price-ins">…</td>
+          <td id="net-benefit-bar-ins" style="min-width:100px; width:13%;"></td>
         </tr>
         <tr>
-          <td>Malý elektromobil <small class="text-muted">(Nové malé)</small></td>
+          <td>Malý elektromobil <small class="text-muted">(Nové malé, 15 let, vs. benzínové auto)</small></td>
           <td class="text-end">500 000</td>
-          <td class="text-end">975 l benzínu / rok</td>
-          <td class="text-end"><strong>487,5 mil. l benzínu / rok</strong></td>
-          <td class="text-end">—</td>
+          <td class="text-end" id="savings-unit-ev">…</td>
+          <td class="text-end" id="savings-imports-ev">…</td>
+          <td class="text-end text-nowrap" id="capex-diff-ev">…</td>
+          <td class="text-end text-muted text-nowrap" id="fuel-price-ev">…</td>
+          <td id="net-benefit-bar-ev" style="min-width:100px; width:13%;"></td>
+        </tr>
+        <tr>
+          <td>Velký elektromobil <small class="text-muted">(Nové velké, 15 let, vs. naftové auto)</small></td>
+          <td class="text-end">300 000</td>
+          <td class="text-end" id="savings-unit-ev_l">…</td>
+          <td class="text-end" id="savings-imports-ev_l">…</td>
+          <td class="text-end text-nowrap" id="capex-diff-ev_l">…</td>
+          <td class="text-end text-muted text-nowrap" id="fuel-price-ev_l">…</td>
+          <td id="net-benefit-bar-ev_l" style="min-width:100px; width:13%;"></td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3" class="text-muted" style="font-size:0.8em;">
+          <td colspan="7" class="text-muted" style="font-size:0.8em;">
             Tepelné čerpadlo: baseline Plynový kotel 24 MWh/rok → opatření přechází na elektřinu (0 MWh plynu).
-            Zateplení + fasáda: baseline 24 MWh/rok → opatření 14 MWh/rok plynu.
+            Zateplení + fasáda: baseline Renovace bez zateplení 24 MWh/rok → opatření 14 MWh/rok plynu.
             Malý elektromobil: baseline Nové malé auto na benzín, 6,5 l/100 km × 15 000 km/rok = 975 l/rok → elektromobil nespotřebuje benzín.
+            Velký elektromobil: baseline Nové velké auto na naftu, 7,2 l/100 km × 20 000 km/rok = 1 440 l/rok nafty; 1 440 / 158,987 ≈ 9,1 barelu/rok. CAPEX diff: 1 130 000 Kč vs. 1 150 000 Kč = −20 000 Kč/vozidlo (elektromobil je levnější).
+            60 TWh dovozů plynu vychází z dovozu 5 442 039 939 kg zemního plynu do ČR v roce 2025 při výhřevnosti ~11 kWh/kg.
+            5–6 % dovozů ropy vychází z dovozu 6 856 765 464 kg ropy v roce 2025 (~136 kg/barel → ~50,4 mil. barelů); úspora benzínu 487,5 mil. l / 158,987 l/barel ≈ 3,1 mil. barelů (6 %); úspora nafty 432 mil. l / 158,987 l/barel ≈ 2,7 mil. barelů (5 %).
+            Hodnota ušetřeného paliva vychází z cen dovozu paliva (nikoliv maloobchodních cen): pro plyn €40/MWh (běžné ceny) a €180/MWh (energetická krize) — TTF benchmark; pro ropu $80/barel resp. $150/barel (Brent crude); objem ušetřené ropy přepočten z litrů rafinovaného paliva na barely surové ropy pomocí typické výtěžnosti evropských rafinerií (benzín 20 % → 5 l ropy/l benzínu, nafta 40 % → 2,5 l ropy/l nafty); přepočet EUR/CZK = 25, USD/CZK = 23. Jedná se o úspory devizových výdajů ČR po celou dobu životnosti opatření — bez diskontování. CAPEX diff: tepelné čerpadlo 300 000 Kč vs. plynový kotel 95 000 Kč = 205 000 Kč/jednotku × 200 000 = 41 mld. Kč; zateplení + fasáda 780 000 Kč vs. renovace bez zateplení 390 000 Kč = 390 000 Kč/jednotku × 200 000 = 78 mld. Kč; malý elektromobil 650 000 Kč vs. benzínové auto 490 000 Kč = 160 000 Kč/vozidlo × 500 000 = 80 mld. Kč; velký elektromobil 1 130 000 Kč vs. naftové auto 1 150 000 Kč = −20 000 Kč/vozidlo × 300 000 = −6 mld. Kč (elektromobil je levnější).
           </td>
         </tr>
       </tfoot>
     </table>
+    </div>
+
   </div>
 </div>
 
