@@ -1939,6 +1939,7 @@
   let sbGrouped            = 'none';
   let sbShowLetters        = false;
   let sbShowUncertainty    = false;
+  let sbShowViolin         = false;
   let sbColorBy            = null; // null | 'sc' | 'cp' | 'dr'
   let sbEnabledScenarios     = new Set(['CP', 'NZ', 'CP_EC']);
   let sbEnabledDiscountRates = new Set([0, 3, 7]);
@@ -2483,6 +2484,58 @@
       return sign + Math.round(abs) + ' Kč';
     };
 
+    // Violin chart — KDE density shape per lane (drawn behind everything)
+    if (sbShowViolin) {
+      const bw = (SB_X_DOMAIN[1] - SB_X_DOMAIN[0]) * 0.04; // bandwidth = 4 % of x-range (80 000 Kč)
+      const epKernel = (bw) => x => Math.abs(x) <= bw ? 0.75 * (1 - (x/bw) * (x/bw)) / bw : 0;
+      const kernel = epKernel(bw);
+      const nThresh = 300;
+      const thresholds = d3.range(nThresh).map(i =>
+        SB_X_DOMAIN[0] + (i / (nThresh - 1)) * (SB_X_DOMAIN[1] - SB_X_DOMAIN[0])
+      );
+
+      const laneGroups = laneCfg
+        ? laneCfg.lanes.map(v => ({
+            cy: M.top + laneCfg.lanes.indexOf(v) * LANE_H + LANE_H / 2,
+            npvs: dots.filter(d => laneCfg.laneOf(d) === v).map(d => d.npv),
+          }))
+        : [{ cy: M.top + LANE_H / 2, npvs: dots.map(d => d.npv) }];
+
+      laneGroups.forEach(({ cy, npvs }) => {
+        if (npvs.length < 2) return;
+        const density = thresholds.map(t => [t, d3.mean(npvs, d => kernel(t - d))]);
+        const maxDensity = d3.max(density, d => d[1]);
+        if (!maxDensity) return;
+
+        const halfH  = LANE_H * 0.42;
+        const dScale = d3.scaleLinear().domain([0, maxDensity]).range([0, halfH]);
+
+        const area = d3.area()
+          .defined(d => d[0] >= SB_X_DOMAIN[0] && d[0] <= SB_X_DOMAIN[1])
+          .x(d  => M.left + xScale(d[0]))
+          .y0(d => cy - dScale(d[1]))
+          .y1(d => cy + dScale(d[1]))
+          .curve(d3.curveBasis);
+
+        svg.append('path')
+          .datum(density)
+          .attr('fill', '#9ba5ad')
+          .attr('opacity', 0.28)
+          .attr('d', area);
+
+        // Median tick
+        const med = d3.median(npvs);
+        if (med != null) {
+          const mx = M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], med)));
+          svg.append('line')
+            .attr('x1', mx).attr('x2', mx)
+            .attr('y1', cy - halfH * 0.65).attr('y2', cy + halfH * 0.65)
+            .attr('stroke', '#53616e').attr('stroke-width', 1.5)
+            .attr('stroke-dasharray', '3 2');
+        }
+      });
+    }
+
     // Per-dot uncertainty bands (drawn behind circles)
     if (sbShowUncertainty) {
       const bandH = DOT_R * 1.2;
@@ -2500,7 +2553,11 @@
     }
 
     // Draw non-default dots first (behind), then default dots on top
-    [dots.filter(d => !d.isDefault), dots.filter(d => d.isDefault)].forEach(subset => {
+    // In violin mode only the reference dot is shown
+    const dotSubsets = sbShowViolin
+      ? [dots.filter(d => d.isDefault)]
+      : [dots.filter(d => !d.isDefault), dots.filter(d => d.isDefault)];
+    dotSubsets.forEach(subset => {
       svg.selectAll(null)
         .data(subset)
         .join('circle')
@@ -2605,6 +2662,17 @@
         sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
       });
       legendEl.appendChild(uncBtn);
+
+      // Violin chart toggle
+      const violinBtn = document.createElement('button');
+      violinBtn.className = 'chart-dl-btn';
+      violinBtn.style.cssText = 'align-self:center; margin-left:4px;';
+      violinBtn.textContent = sbShowViolin ? 'Housle ✓' : 'Housle';
+      violinBtn.addEventListener('click', () => {
+        sbShowViolin = !sbShowViolin;
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      legendEl.appendChild(violinBtn);
     }
   }
 
