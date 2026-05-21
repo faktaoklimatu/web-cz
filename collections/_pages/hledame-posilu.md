@@ -99,7 +99,7 @@ Jsme malý tým se startupovou atmosférou, který chce měnit k lepšímu česk
 ### Praktické
 
 - **jazyková výbava**: výborná znalost angličtiny a češtiny (příp. slovenštiny)
-- **ochota cestovat**: do Brna/Prahy na týmové meetingy 1 za 14 dní; příležitostně na networking, konference, veřejné vystupování apod. (nejčastěji v Praze)
+- **ochota cestovat**: do Brna/Prahy na týmové meetingy 1 za 14 dní, přibližně 1 za 3 měsíce na 2–3denní strategická setkání (Brno/Praha nebo off-site); příležitostně na networking, konference, veřejné vystupování apod. (nejčastěji v Praze)
 
 ## Silné plus
 
