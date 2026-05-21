@@ -1023,6 +1023,7 @@ transport_measures:
   lifetime: 15
   capex_czk: 490000
   opex_maintenance_czk: 12000
+  opex_repairs_czk: 4333
   opex_insurance_czk: 16000
   emissions_embedded_kg: 6000
   note: Fabia – 6,5 l, 15 000 km
@@ -1035,6 +1036,7 @@ transport_measures:
   lifetime: 15
   capex_czk: 1150000
   opex_maintenance_czk: 20000
+  opex_repairs_czk: 9333
   opex_insurance_czk: 24000
   emissions_embedded_kg: 8500
   note: Kodiaq – 8 l, 20 000 km
@@ -1045,8 +1047,9 @@ transport_measures:
   mileage: 15000
   fuel: Petrol
   lifetime: 7
-  capex_czk: 200000
+  capex_czk: 240000
   opex_maintenance_czk: 18000
+  opex_repairs_czk: 6000
   opex_insurance_czk: 7000
   emissions_embedded_kg: 2800
   note: Fabia – 7,5 l, 15 000 km
@@ -1059,6 +1062,7 @@ transport_measures:
   lifetime: 7
   capex_czk: 530000
   opex_maintenance_czk: 25000
+  opex_repairs_czk: 14286
   opex_insurance_czk: 10000
   emissions_embedded_kg: 2800
   note: Kodiaq – 8,5 l, 20 000 km
@@ -1071,6 +1075,7 @@ transport_measures:
   lifetime: 15
   capex_czk: 650000
   opex_maintenance_czk: 5000
+  opex_repairs_czk: 8000
   opex_insurance_czk: 18000
   emissions_embedded_kg: 10000
   measure_baseline: Nové malé auto na benzín
@@ -1083,8 +1088,9 @@ transport_measures:
   mileage: 15000
   fuel: Petrol
   lifetime: 15
-  capex_czk: 600000
+  capex_czk: 560000
   opex_maintenance_czk: 9000
+  opex_repairs_czk: 5333
   opex_insurance_czk: 16000
   emissions_embedded_kg: 7000
   measure_baseline: Nové malé auto na benzín
@@ -1099,6 +1105,7 @@ transport_measures:
   lifetime: 15
   capex_czk: 1130000
   opex_maintenance_czk: 10000
+  opex_repairs_czk: 9667
   opex_insurance_czk: 28000
   emissions_embedded_kg: 15000
   measure_baseline: Nové velké auto na naftu
@@ -1111,8 +1118,9 @@ transport_measures:
   mileage: 15000
   fuel: Petrol
   lifetime: 15
-  capex_czk: 1200000
+  capex_czk: 1150000
   opex_maintenance_czk: 18000
+  opex_repairs_czk: 7000
   opex_insurance_czk: 24000
   emissions_embedded_kg: 9500
   measure_baseline: Nové velké auto na naftu
@@ -1127,6 +1135,7 @@ transport_measures:
   lifetime: 7
   capex_czk: 280000
   opex_maintenance_czk: 9000
+  opex_repairs_czk: 8571
   opex_insurance_czk: 8000
   emissions_embedded_kg: 4667
   measure_baseline: Ojeté malé auto na benzín
@@ -1141,6 +1150,7 @@ transport_measures:
   lifetime: 7
   capex_czk: 300000
   opex_maintenance_czk: 15000
+  opex_repairs_czk: 7429
   opex_insurance_czk: 7000
   emissions_embedded_kg: 3267
   measure_baseline: Ojeté malé auto na benzín
@@ -1155,6 +1165,7 @@ transport_measures:
   lifetime: 7
   capex_czk: 480000
   opex_maintenance_czk: 11000
+  opex_repairs_czk: 11714
   opex_insurance_czk: 11000
   emissions_embedded_kg: 7000
   measure_baseline: Ojeté velké auto na naftu
@@ -1167,8 +1178,9 @@ transport_measures:
   mileage: 15000
   fuel: Petrol
   lifetime: 7
-  capex_czk: 550000
+  capex_czk: 600000
   opex_maintenance_czk: 17500
+  opex_repairs_czk: 11429
   opex_insurance_czk: 10000
   emissions_embedded_kg: 4433
   measure_baseline: Ojeté velké auto na naftu

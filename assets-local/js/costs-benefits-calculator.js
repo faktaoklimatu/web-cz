@@ -149,6 +149,7 @@ const CostsBenefits = (() => {
     return consumption * priceF
          + measure.opex_maintenance_czk
          + (measure.opex_insurance_czk || 0)
+         + (measure.opex_repairs_czk || 0)
          + carbonCost;
   }
 
