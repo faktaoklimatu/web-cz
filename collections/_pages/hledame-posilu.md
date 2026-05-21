@@ -123,8 +123,8 @@ Jsme malý tým se startupovou atmosférou, který chce měnit k lepšímu česk
 
 - pracovní úvazek 0,8–1,0
 - nástupní mzdu 55–65 tisíc při plném úvazku, dle profilu a zkušeností
-- smysluplnou práci s přesahem v týmu schopných a chytrých lidí.
-- 6 týdnů dovolené, flexibilní pracovní doba, budget na wellness a osobní rozvoj.
+- smysluplnou práci s přesahem v týmu schopných a chytrých lidí
+- 6 týdnů dovolené, flexibilní pracovní doba, budget na wellness a osobní rozvoj
 - práci na dálku či v Impact Hubu v Brně (většina týmu funguje převážně remote a žije v Brně, Praze nebo okolí)
 
 Preferujeme nástup od srpna nebo září 2026.
