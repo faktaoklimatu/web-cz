@@ -2,6 +2,9 @@
   link: /hledame-posilu
   class: "pb-3"
 
+- title: "<span class=\"fas fa-fw fa-chart-gantt\"></span>Projekt: OP JAK"
+  link: /opjak
+
 - title: <span class="fas fa-fw fa-address-card"></span> Kontaktní a fakturační údaje
   link: /o-nas#kontaktni-udaje
 
