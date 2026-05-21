@@ -13,7 +13,7 @@ slug: hledame-posilu
 # Fakta o klimatu hledají posilu: Analytik/čka
 
 {:.perex}
-Fakta o klimatu jsou nezávislý analytický think tank, který pomáhá české společnosti orientovat se v tématech klimatické změny a dekarbonizace. Vytváříme vizualizace, explainery a analytické materiály mapující smysluplné cesty k dekarbonizaci. Tyto výstupy systematicky směřujeme k politikům, firmám, veřejné správě, médiím i do škol, aby podporovaly informované rozhodování, kultivovaly veřejnou diskusi a přispívaly k dekarbonizaci Česka. Více na [www.faktaoklimatu.cz](https://www.faktaoklimatu.cz).
+Fakta o klimatu jsou nezávislý analytický think tank, který pomáhá české společnosti orientovat se v tématech klimatické změny a dekarbonizace. Vytváříme vizualizace, explainery a analytické materiály mapující smysluplné cesty k dekarbonizaci. Tyto výstupy systematicky směřujeme k politikům, firmám, veřejné správě, médiím i do škol, aby podporovaly informované rozhodování, kultivovaly veřejnou diskusi a přispívaly k dekarbonizaci Česka. Více na [faktaoklimatu.cz](https://www.faktaoklimatu.cz).
 
 </div>
 </div>
@@ -45,7 +45,7 @@ Jsme malý tým se startupovou atmosférou, který chce měnit k lepšímu česk
 
 ### Tvorba webových interaktivních nástrojů
 
-- (spolu)vytváření interaktivních webových produktů (interaktivní přehledy, dashboardy, apod.), založených na analytické práci – od technického designu, přípravu dat až po efektivní využití AI při implementaci
+- (spolu)vytváření interaktivních webových produktů (interaktivní přehledy, dashboardy apod.) založených na analytické práci – od technického designu, přípravu dat až po efektivní využití AI při implementaci
 - pomoc s udržováním code base a technologického zázemí Fakt o klimatu (repos, workflows, automatizace apod.)
 
 ### Networking, veřejné vystupování
@@ -86,12 +86,12 @@ Jsme malý tým se startupovou atmosférou, který chce měnit k lepšímu česk
 ### Hard skills
 
 - **algoritmické a kvantitativní přemýšlení**
-- **pracovních zkušenosti s datovou analýzou** (R, python, Google Sheets, apod.)
+- **pracovních zkušenosti s datovou analýzou** (R, python, Google Sheets apod.)
 - **základní orientace okolo změny klimatu, dekarbonizace** a souvislostí ve veřejné politice a legislativě
 
 ### Soft skills
 
-- **komunikační a prezentační dovednosti** – interně pro tým, na expertních setkáních, kulatých stolech, apod.
+- **komunikační a prezentační dovednosti** – interně pro tým, na expertních setkáních, kulatých stolech apod.
 - **samostatnost** a sebeorganizace pro produktivní práci v *remote-first* týmu
 - **spolupráce**: schopnost efektivně spolupracovat s kolegy a kolegyněmi, přebírat zodpovědnost
 - **flexibilita**: schopnost pracovat v nejistém a proměnlivém prostředí, pracovat na komplexních úkolech s nejasným zadáním
@@ -103,8 +103,8 @@ Jsme malý tým se startupovou atmosférou, který chce měnit k lepšímu česk
 
 ## Silné plus
 
-- **pokročilé metody matematického modelování a statistiky** – pracovní zkušenosti s optimalizačními modely, inferenčními modely, agentními modely, stock-flow modely, propojování heterogenních datasetů apod.
-- **zkušenosti s makroekonomickými daty** a základní schopnost makroekonomického modelování (input-output analýzy, apod.)
+- **pokročilé metody matematického modelování a statistiky** – pracovní zkušenosti s optimalizačními modely, inferenčními modely, agentními modely, stock-flow modely, propojování heterogenních datasetů apod.)
+- **zkušenosti s makroekonomickými daty** a základní schopnost makroekonomického modelování (input-output analýzy apod.)
 - **webové technologie**: pracovní zkušenosti s moderním HTML a JS
 - **AI:** praktické zkušenosti s pokročilým využitím AI pro programování, rešerše či analytickou práci
 - **expertíza v dekarbonizaci:** odborné vzdělání či pracovní zkušenosti v oblasti dekarbonizace, transformace energetiky, proměny dopravy či vytápění budov apod. (včetně relevantních kontaktů v ČR či v zahraničí)
