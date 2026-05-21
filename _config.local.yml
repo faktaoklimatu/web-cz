@@ -33,7 +33,6 @@ slugs:
   about: o-nas
   # Uncomment and edit for any other posted hiring in the future.
   # See https://github.com/faktaoklimatu/web-cz/pull/1371 for a reference hiring page.
-  # hiring: hledame-COO
   hiring: hledame-posilu
 
 collections_dir: collections
