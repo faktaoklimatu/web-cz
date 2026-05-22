@@ -231,13 +231,13 @@ buildings_measures:
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Plynový kotel
   dwellings: 8
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 15.0
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -250,13 +250,13 @@ buildings_measures:
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Fasáda
   dwellings: 8
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 40.0
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -269,13 +269,13 @@ buildings_measures:
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Nedělám nic
   dwellings: 8
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 0.0
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -288,13 +288,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -307,13 +307,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -326,13 +326,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Fasáda
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 40.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -345,13 +345,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Nedělám nic
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 0.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -784,13 +784,13 @@ buildings_measures:
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Elektrický kotel
   dwellings: 8
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
   lifetime: 15.0
-  demand_heat_measure_mwh: 8
+  demand_heat_measure_mwh: 12
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -805,13 +805,13 @@ buildings_measures:
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Fasáda + renovace
   dwellings: 8
-  demand_heat_building_mwh: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 40.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.26
   electricity_savings: 0.0
@@ -827,13 +827,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -849,13 +849,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 3.2
   lifetime: 15.0
-  demand_heat_measure_mwh: 2
+  demand_heat_measure_mwh: 3
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
@@ -871,13 +871,13 @@ buildings_measures:
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Fasáda + renovace
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 40.0
-  demand_heat_measure_mwh: 5
+  demand_heat_measure_mwh: 6
   demand_electricity_measure_mwh: 2
   energy_savings: 0.25
   electricity_savings: 0.0
