@@ -230,7 +230,7 @@ buildings_measures:
 - id: 13
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Plynový kotel
-  dwellings: 1
+  dwellings: 8
   demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
@@ -317,9 +317,9 @@ buildings_measures:
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 90000
-  capex_installation_czk: 35000
-  capex_preparation_czk: 21667
+  capex_technology_czk: 25000
+  capex_installation_czk: 10000
+  capex_preparation_czk: 5000
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
 - id: 18
