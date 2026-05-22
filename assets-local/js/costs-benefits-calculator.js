@@ -56,6 +56,34 @@ const CostsBenefits = (() => {
   };
 
   // ---------------------------------------------------------------------------
+  // Sensitivity thresholds
+  //
+  // Each value is a symmetric delta: 0.1 means the range 1−0.1 to 1+0.1.
+  // Labels are derived automatically: 0.3 → "−30 %"/"+ 30 %", etc.
+  // CAPEX sensitivity is read per-measure from the `capex_sensitivity` YAML
+  // field; this constant is the fallback when the field is absent.
+  // ---------------------------------------------------------------------------
+  const DEFAULT_CAPEX_SENSITIVITY = 0.1;
+  const DEFAULT_FUEL_SENSITIVITY = 0.1;
+
+  const SENSITIVITY_THRESHOLDS = {
+    // Fuel / energy price uncertainty (symmetric ± delta multiplier around the base price)
+    Electricity: 0.1,  // Lower because fossil shocks influence only the wholesale price.
+    Gas:         0.1,  // Lower because fossil shocks do not influence distribution costs.
+    Lignite:     0.15,
+    Biomass:     0.15,
+    Petrol:      0.1,  // Lower because of high taxes (fossil shocks have less influence on pump price).
+    Diesel:      0.1,  // Lower because of high taxes (fossil shocks have less influence on pump price).
+  };
+
+  // Convert a multiplier to a human-readable percentage label.
+  function multLabel(mult) {
+    if (mult === 1.0) return 'Základ';
+    const pct = Math.round(Math.abs(mult - 1) * 100);
+    return (mult < 1 ? '−' : '+') + pct + ' %';
+  }
+
+  // ---------------------------------------------------------------------------
   // Data helpers
   // ---------------------------------------------------------------------------
 
@@ -422,7 +450,13 @@ const CostsBenefits = (() => {
     const fuelSet = [baseline.fuel];
     if (measure.fuel && !fuelSet.includes(measure.fuel)) fuelSet.push(measure.fuel);
 
-    // Build variant list following R's make_variants structure
+    // CAPEX thresholds come from per-measure `capex_sensitivity` YAML field.
+    // A value s produces the range [1−s, 1+s] around the base CAPEX.
+    const measS      = measure.capex_sensitivity  != null ? measure.capex_sensitivity  : DEFAULT_CAPEX_SENSITIVITY;
+    const blS        = baseline.capex_sensitivity != null ? baseline.capex_sensitivity : DEFAULT_CAPEX_SENSITIVITY;
+    const threshMeas = { low: 1 - measS, high: 1 + measS };
+    const threshBl   = { low: 1 - blS,   high: 1 + blS   };
+
     const variants = [
       // // Discount rate
       // { param: 'Diskontní míra', label: '0 %',  opts: { ...baseOpts, discountRate: 0.00 } },
@@ -433,28 +467,25 @@ const CostsBenefits = (() => {
       // { param: 'Cena uhlíku',    label: '60 €', opts: { ...baseOpts, carbonPriceEur: 60  } },
       // { param: 'Cena uhlíku',    label: '200 €',opts: { ...baseOpts, carbonPriceEur: 200 } },
       // CAPEX of the alternative measure
-      { param: 'Investiční náklady opatření', label: '-30 %', opts: { ...baseOpts, capexMeasMult: 0.7 } },
-      { param: 'Investiční náklady opatření', label: 'Základ', opts: { ...baseOpts, capexMeasMult: 1.0 } },
-      { param: 'Investiční náklady opatření', label: '+30 %', opts: { ...baseOpts, capexMeasMult: 1.3 } },
+      { param: 'Investiční náklady opatření', label: multLabel(threshMeas.low),  opts: { ...baseOpts, capexMeasMult: threshMeas.low  } },
+      { param: 'Investiční náklady opatření', label: 'Základ',                   opts: { ...baseOpts, capexMeasMult: 1.0              } },
+      { param: 'Investiční náklady opatření', label: multLabel(threshMeas.high), opts: { ...baseOpts, capexMeasMult: threshMeas.high } },
       // CAPEX of the baseline
-      { param: 'Investiční náklady základní varianty', label: '-30 %', opts: { ...baseOpts, capexBlMult: 0.7 } },
-      { param: 'Investiční náklady základní varianty', label: 'Základ', opts: { ...baseOpts, capexBlMult: 1.0 } },
-      { param: 'Investiční náklady základní varianty', label: '+30 %', opts: { ...baseOpts, capexBlMult: 1.3 } },
+      { param: 'Investiční náklady základní varianty', label: multLabel(threshBl.low),  opts: { ...baseOpts, capexBlMult: threshBl.low  } },
+      { param: 'Investiční náklady základní varianty', label: 'Základ',                 opts: { ...baseOpts, capexBlMult: 1.0            } },
+      { param: 'Investiční náklady základní varianty', label: multLabel(threshBl.high), opts: { ...baseOpts, capexBlMult: threshBl.high } },
     ];
 
     // Fuel price variants for all fuels used by baseline or measure
     fuelSet.forEach(fuel => {
       const paramLabel = FUEL_PRICE_LABEL[fuel] || `Cena: ${fuel}`;
-      [
-        { mult: 0.7, label: '-30 %' },
-        { mult: 1.0, label: 'Základ' },
-        { mult: 1.3, label: '+30 %' },
-      ].forEach(({ mult, label }) => {
-        // "Základ" variant with no scaling is equivalent to the baseline opts
+      const delta      = SENSITIVITY_THRESHOLDS[fuel] ?? DEFAULT_FUEL_SENSITIVITY;
+      [1 - delta, 1.0, 1 + delta].forEach(mult => {
+        // baseline variant with mult === 1.0 needs no fuel scaling
         const fuelName = mult === 1.0 ? null : fuel;
         variants.push({
           param: paramLabel,
-          label,
+          label: multLabel(mult),
           opts: { ...baseOpts, fuelPriceName: fuelName, fuelPriceMult: mult },
         });
       });
