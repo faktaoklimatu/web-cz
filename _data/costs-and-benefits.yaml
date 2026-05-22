@@ -940,7 +940,7 @@ transport_measures:
   opex_maintenance_czk: 25000
   opex_repairs_czk: 14286
   opex_insurance_czk: 10000
-  emissions_embedded_kg: 2800
+  emissions_embedded_kg: 3967
   note: Kodiaq – 8,5 l, 20 000 km
 - id: 49
   transport_category: Nové malé
@@ -953,7 +953,7 @@ transport_measures:
   opex_maintenance_czk: 5000
   opex_repairs_czk: 8000
   opex_insurance_czk: 18000
-  emissions_embedded_kg: 10000
+  emissions_embedded_kg: 8800
   measure_baseline: Nové malé auto na benzín
   note: Elektromobil
   measure_baseline_id: 45
@@ -968,7 +968,7 @@ transport_measures:
   opex_maintenance_czk: 9000
   opex_repairs_czk: 5333
   opex_insurance_czk: 16000
-  emissions_embedded_kg: 7000
+  emissions_embedded_kg: 6000
   measure_baseline: Nové malé auto na benzín
   note: Hybrid – 4,5 l
   measure_baseline_id: 45
@@ -983,7 +983,7 @@ transport_measures:
   opex_maintenance_czk: 10000
   opex_repairs_czk: 9667
   opex_insurance_czk: 28000
-  emissions_embedded_kg: 15000
+  emissions_embedded_kg: 11000
   measure_baseline: Nové velké auto na naftu
   note: Elektromobil
   measure_baseline_id: 46
@@ -998,7 +998,7 @@ transport_measures:
   opex_maintenance_czk: 18000
   opex_repairs_czk: 7000
   opex_insurance_czk: 24000
-  emissions_embedded_kg: 9500
+  emissions_embedded_kg: 8500
   measure_baseline: Nové velké auto na naftu
   note: Hybrid – 6,5 l
   measure_baseline_id: 46
@@ -1013,7 +1013,7 @@ transport_measures:
   opex_maintenance_czk: 9000
   opex_repairs_czk: 8571
   opex_insurance_czk: 8000
-  emissions_embedded_kg: 4667
+  emissions_embedded_kg: 4107
   measure_baseline: Ojeté malé auto na benzín
   note: Elektromobil
   measure_baseline_id: 47
@@ -1028,7 +1028,7 @@ transport_measures:
   opex_maintenance_czk: 15000
   opex_repairs_czk: 7429
   opex_insurance_czk: 7000
-  emissions_embedded_kg: 3267
+  emissions_embedded_kg: 2800
   measure_baseline: Ojeté malé auto na benzín
   note: Hybrid – 5,5 l
   measure_baseline_id: 47
@@ -1043,7 +1043,7 @@ transport_measures:
   opex_maintenance_czk: 11000
   opex_repairs_czk: 11714
   opex_insurance_czk: 11000
-  emissions_embedded_kg: 7000
+  emissions_embedded_kg: 5133
   measure_baseline: Ojeté velké auto na naftu
   note: Elektromobil
   measure_baseline_id: 48
@@ -1058,7 +1058,7 @@ transport_measures:
   opex_maintenance_czk: 17500
   opex_repairs_czk: 11429
   opex_insurance_czk: 10000
-  emissions_embedded_kg: 4433
+  emissions_embedded_kg: 3967
   measure_baseline: Ojeté velké auto na naftu
   note: Hybrid – 7 l
   measure_baseline_id: 48
