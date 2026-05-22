@@ -228,6 +228,25 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 13
+  building_category: Rodinný dům plyn – A
+  measure_name: Plynový kotel
+  dwellings: 1
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 4
+  fuel: Gas
+  capacity_kw: 8.0
+  efficiency: 1.05
+  lifetime: 15.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 68000
+  capex_installation_czk: 27000
+  capex_preparation_czk: 0
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 14
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Plynový kotel
   dwellings: 8
@@ -246,7 +265,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 14
+- id: 15
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Fasáda
   dwellings: 8
@@ -265,7 +284,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 15
+- id: 16
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Nedělám nic
   dwellings: 8
@@ -284,7 +303,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 16
+- id: 17
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
@@ -303,7 +322,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 17
+- id: 18
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
@@ -322,7 +341,7 @@ buildings_measures:
   capex_preparation_czk: 5000
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
-- id: 18
+- id: 19
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Fasáda
   dwellings: 15
@@ -341,7 +360,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 19
+- id: 20
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Nedělám nic
   dwellings: 15
@@ -360,7 +379,7 @@ buildings_measures:
   capex_preparation_czk: 0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 20
+- id: 21
   building_category: Rodinný dům uhlí – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -381,7 +400,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 21
+- id: 22
   building_category: Rodinný dům uhlí – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -402,7 +421,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 22
+- id: 23
   building_category: Rodinný dům uhlí – E
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -423,7 +442,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
   measure_baseline_id: 3
-- id: 23
+- id: 24
   building_category: Rodinný dům uhlí – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -444,7 +463,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 24
+- id: 25
   building_category: Rodinný dům uhlí – E
   measure_name: Fasáda + renovace
   dwellings: 1
@@ -465,7 +484,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   measure_baseline_id: 2
-- id: 25
+- id: 26
   building_category: Rodinný dům uhlí – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -486,7 +505,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 4
-- id: 26
+- id: 27
   building_category: Rodinný dům uhlí – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -507,7 +526,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 4
-- id: 27
+- id: 28
   building_category: Rodinný dům uhlí – C
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -528,7 +547,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
   measure_baseline_id: 6
-- id: 28
+- id: 29
   building_category: Rodinný dům uhlí – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -549,7 +568,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 4
-- id: 29
+- id: 30
   building_category: Rodinný dům uhlí – C
   measure_name: Fasáda + renovace
   dwellings: 1
@@ -570,7 +589,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   measure_baseline_id: 5
-- id: 30
+- id: 31
   building_category: Rodinný dům plyn – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -591,7 +610,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 7
-- id: 31
+- id: 32
   building_category: Rodinný dům plyn – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -612,7 +631,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 7
-- id: 32
+- id: 33
   building_category: Rodinný dům plyn – E
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -633,7 +652,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
   measure_baseline_id: 9
-- id: 33
+- id: 34
   building_category: Rodinný dům plyn – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -654,7 +673,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 7
-- id: 34
+- id: 35
   building_category: Rodinný dům plyn – E
   measure_name: Fasáda + renovace
   dwellings: 1
@@ -675,7 +694,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   measure_baseline_id: 8
-- id: 35
+- id: 36
   building_category: Rodinný dům plyn – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -696,7 +715,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 10
-- id: 36
+- id: 37
   building_category: Rodinný dům plyn – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -717,7 +736,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 10
-- id: 37
+- id: 38
   building_category: Rodinný dům plyn – C
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -738,7 +757,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
   measure_baseline_id: 12
-- id: 38
+- id: 39
   building_category: Rodinný dům plyn – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -759,7 +778,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
   measure_baseline_id: 10
-- id: 39
+- id: 40
   building_category: Rodinný dům plyn – C
   measure_name: Fasáda + renovace
   dwellings: 1
@@ -780,7 +799,28 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   measure_baseline_id: 11
-- id: 40
+- id: 41
+  building_category: Rodinný dům plyn – A
+  measure_name: Elektrický kotel
+  dwellings: 1
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 4
+  fuel: Electricity
+  capacity_kw: 6.0
+  efficiency: 0.99
+  lifetime: 15.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 34000
+  capex_installation_czk: 18000
+  capex_preparation_czk: 0
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
+  measure_baseline: Plynový kotel
+  measure_baseline_id: 13
+- id: 42
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Elektrický kotel
   dwellings: 8
@@ -800,8 +840,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 13
-- id: 41
+  measure_baseline_id: 14
+- id: 43
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Fasáda + renovace
   dwellings: 8
@@ -822,8 +862,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   note: rozpočítané na jeden byt (v rámci menšího domu s 8 byty)
-  measure_baseline_id: 14
-- id: 42
+  measure_baseline_id: 15
+- id: 44
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
@@ -844,8 +884,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společný kotel rozpočítaný na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 17
-- id: 43
+  measure_baseline_id: 18
+- id: 45
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
@@ -866,8 +906,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společné čerpadlo rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 17
-- id: 44
+  measure_baseline_id: 18
+- id: 46
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Fasáda + renovace
   dwellings: 15
@@ -888,9 +928,9 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
   note: rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 18
+  measure_baseline_id: 19
 transport_measures:
-- id: 45
+- id: 47
   transport_category: Nové malé
   measure_name: Nové malé auto na benzín
   demand_energy_per_100km: 6.9
@@ -903,7 +943,7 @@ transport_measures:
   opex_insurance_czk: 16000
   emissions_embedded_kg: 6000
   note: Fabia – 6,5 l, 15 000 km
-- id: 46
+- id: 48
   transport_category: Nové velké
   measure_name: Nové velké auto na naftu
   demand_energy_per_100km: 7.2
@@ -916,7 +956,7 @@ transport_measures:
   opex_insurance_czk: 24000
   emissions_embedded_kg: 8500
   note: Kodiaq – 8 l, 20 000 km
-- id: 47
+- id: 49
   transport_category: Ojeté malé
   measure_name: Ojeté malé auto na benzín
   demand_energy_per_100km: 7.5
@@ -929,7 +969,7 @@ transport_measures:
   opex_insurance_czk: 7000
   emissions_embedded_kg: 2800
   note: Fabia – 7,5 l, 15 000 km
-- id: 48
+- id: 50
   transport_category: Ojeté velké
   measure_name: Ojeté velké auto na naftu
   demand_energy_per_100km: 8.5
@@ -942,7 +982,7 @@ transport_measures:
   opex_insurance_czk: 10000
   emissions_embedded_kg: 3967
   note: Kodiaq – 8,5 l, 20 000 km
-- id: 49
+- id: 51
   transport_category: Nové malé
   measure_name: Nový malý elektromobil
   demand_energy_per_100km: 0.02
@@ -956,8 +996,8 @@ transport_measures:
   emissions_embedded_kg: 8800
   measure_baseline: Nové malé auto na benzín
   note: Elektromobil
-  measure_baseline_id: 45
-- id: 50
+  measure_baseline_id: 47
+- id: 52
   transport_category: Nové malé
   measure_name: Nový malý hybrid
   demand_energy_per_100km: 4.5
@@ -971,8 +1011,8 @@ transport_measures:
   emissions_embedded_kg: 6000
   measure_baseline: Nové malé auto na benzín
   note: Hybrid – 4,5 l
-  measure_baseline_id: 45
-- id: 51
+  measure_baseline_id: 47
+- id: 53
   transport_category: Nové velké
   measure_name: Nový velký elektromobil
   demand_energy_per_100km: 0.0215
@@ -986,8 +1026,8 @@ transport_measures:
   emissions_embedded_kg: 11000
   measure_baseline: Nové velké auto na naftu
   note: Elektromobil
-  measure_baseline_id: 46
-- id: 52
+  measure_baseline_id: 48
+- id: 54
   transport_category: Nové velké
   measure_name: Nový velký hybrid
   demand_energy_per_100km: 6.5
@@ -1001,8 +1041,8 @@ transport_measures:
   emissions_embedded_kg: 8500
   measure_baseline: Nové velké auto na naftu
   note: Hybrid – 6,5 l
-  measure_baseline_id: 46
-- id: 53
+  measure_baseline_id: 48
+- id: 55
   transport_category: Ojeté malé
   measure_name: Ojetý malý elektromobil
   demand_energy_per_100km: 0.017
@@ -1016,8 +1056,8 @@ transport_measures:
   emissions_embedded_kg: 4107
   measure_baseline: Ojeté malé auto na benzín
   note: Elektromobil
-  measure_baseline_id: 47
-- id: 54
+  measure_baseline_id: 49
+- id: 56
   transport_category: Ojeté malé
   measure_name: Ojetý malý hybrid
   demand_energy_per_100km: 5.5
@@ -1031,8 +1071,8 @@ transport_measures:
   emissions_embedded_kg: 2800
   measure_baseline: Ojeté malé auto na benzín
   note: Hybrid – 5,5 l
-  measure_baseline_id: 47
-- id: 55
+  measure_baseline_id: 49
+- id: 57
   transport_category: Ojeté velké
   measure_name: Ojetý velký elektromobil
   demand_energy_per_100km: 0.028
@@ -1046,8 +1086,8 @@ transport_measures:
   emissions_embedded_kg: 5133
   measure_baseline: Ojeté velké auto na naftu
   note: Elektromobil
-  measure_baseline_id: 48
-- id: 56
+  measure_baseline_id: 50
+- id: 58
   transport_category: Ojeté velké
   measure_name: Ojetý velký hybrid
   demand_energy_per_100km: 7.0
@@ -1061,7 +1101,7 @@ transport_measures:
   emissions_embedded_kg: 3967
   measure_baseline: Ojeté velké auto na naftu
   note: Hybrid – 7 l
-  measure_baseline_id: 48
+  measure_baseline_id: 50
 fuel_emission_factors:
 - fuel: Gas
   unit: MWh
