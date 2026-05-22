@@ -1386,7 +1386,7 @@ fuel_scenarios:
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2200
+    gas: 2400
     lignite: 1350
     biomass: 1600
     electricity: 4300
@@ -1395,7 +1395,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 400
   - year_calendar: 2027
     year_investment: 2
-    gas: 2500
+    gas: 2700
     lignite: 1500
     biomass: 1625
     electricity: 4700
@@ -1404,7 +1404,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 370
   - year_calendar: 2028
     year_investment: 3
-    gas: 2100
+    gas: 2300
     lignite: 1400
     biomass: 1650
     electricity: 4600
@@ -1413,7 +1413,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 340
   - year_calendar: 2029
     year_investment: 4
-    gas: 2040
+    gas: 2240
     lignite: 1300
     biomass: 1675
     electricity: 4500
@@ -1422,7 +1422,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 310
   - year_calendar: 2030
     year_investment: 5
-    gas: 2050
+    gas: 2250
     lignite: 1300
     biomass: 1700
     electricity: 4600
@@ -1431,7 +1431,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 280
   - year_calendar: 2031
     year_investment: 6
-    gas: 2060
+    gas: 2260
     lignite: 1300
     biomass: 1710
     electricity: 4650
@@ -1440,7 +1440,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 250
   - year_calendar: 2032
     year_investment: 7
-    gas: 2070
+    gas: 2270
     lignite: 1300
     biomass: 1720
     electricity: 4700
@@ -1449,7 +1449,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 220
   - year_calendar: 2033
     year_investment: 8
-    gas: 2080
+    gas: 2280
     lignite: 1300
     biomass: 1730
     electricity: 4750
@@ -1458,7 +1458,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 190
   - year_calendar: 2034
     year_investment: 9
-    gas: 2090
+    gas: 2290
     lignite: 1800
     biomass: 1740
     electricity: 4800
@@ -1467,7 +1467,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 160
   - year_calendar: 2035
     year_investment: 10
-    gas: 2100
+    gas: 2300
     lignite: 1850
     biomass: 1750
     electricity: 4850
@@ -1476,7 +1476,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 155
   - year_calendar: 2036
     year_investment: 11
-    gas: 2120
+    gas: 2320
     lignite: 1900
     biomass: 1760
     electricity: 4900
@@ -1485,7 +1485,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 150
   - year_calendar: 2037
     year_investment: 12
-    gas: 2140
+    gas: 2340
     lignite: 1950
     biomass: 1770
     electricity: 4950
@@ -1494,7 +1494,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 145
   - year_calendar: 2038
     year_investment: 13
-    gas: 2160
+    gas: 2360
     lignite: 2000
     biomass: 1780
     electricity: 5000
@@ -1503,7 +1503,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 140
   - year_calendar: 2039
     year_investment: 14
-    gas: 2180
+    gas: 2380
     lignite: 2050
     biomass: 1790
     electricity: 4800
@@ -1512,7 +1512,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2040
     year_investment: 15
-    gas: 2200
+    gas: 2400
     lignite: 2100
     biomass: 1800
     electricity: 4800
@@ -1521,7 +1521,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 105
   - year_calendar: 2041
     year_investment: 16
-    gas: 2220
+    gas: 2420
     lignite: 2150
     biomass: 1810
     electricity: 4600
@@ -1530,7 +1530,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2042
     year_investment: 17
-    gas: 2240
+    gas: 2440
     lignite: 2200
     biomass: 1820
     electricity: 4600
@@ -1539,7 +1539,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2043
     year_investment: 18
-    gas: 2260
+    gas: 2460
     lignite: 2200
     biomass: 1830
     electricity: 4600
@@ -1548,7 +1548,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2044
     year_investment: 19
-    gas: 2280
+    gas: 2480
     lignite: 2200
     biomass: 1840
     electricity: 4600
@@ -1557,7 +1557,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2045
     year_investment: 20
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1850
     electricity: 4600
@@ -1566,7 +1566,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2046
     year_investment: 21
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1860
     electricity: 4400
@@ -1575,7 +1575,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2047
     year_investment: 22
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1870
     electricity: 4390
@@ -1584,7 +1584,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 49
   - year_calendar: 2048
     year_investment: 23
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1880
     electricity: 4380
@@ -1593,7 +1593,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 48
   - year_calendar: 2049
     year_investment: 24
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1890
     electricity: 4370
@@ -1602,7 +1602,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 47
   - year_calendar: 2050
     year_investment: 25
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1900
     electricity: 4360
@@ -1611,7 +1611,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 46
   - year_calendar: 2051
     year_investment: 26
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1910
     electricity: 4350
@@ -1620,7 +1620,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2052
     year_investment: 27
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1920
     electricity: 4340
@@ -1629,7 +1629,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 44
   - year_calendar: 2053
     year_investment: 28
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1930
     electricity: 4330
@@ -1638,7 +1638,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 43
   - year_calendar: 2054
     year_investment: 29
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1940
     electricity: 4320
@@ -1647,7 +1647,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 42
   - year_calendar: 2055
     year_investment: 30
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1950
     electricity: 4310
@@ -1656,7 +1656,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 41
   - year_calendar: 2056
     year_investment: 31
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1960
     electricity: 4300
@@ -1665,7 +1665,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2057
     year_investment: 32
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1970
     electricity: 4290
@@ -1674,7 +1674,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 39
   - year_calendar: 2058
     year_investment: 33
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1980
     electricity: 4280
@@ -1683,7 +1683,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 38
   - year_calendar: 2059
     year_investment: 34
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1990
     electricity: 4270
@@ -1692,7 +1692,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 37
   - year_calendar: 2060
     year_investment: 35
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4260
@@ -1701,7 +1701,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 36
   - year_calendar: 2061
     year_investment: 36
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -1710,7 +1710,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2062
     year_investment: 37
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -1719,7 +1719,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 34
   - year_calendar: 2063
     year_investment: 38
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -1728,7 +1728,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 33
   - year_calendar: 2064
     year_investment: 39
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -1737,7 +1737,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 32
   - year_calendar: 2065
     year_investment: 40
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -1748,7 +1748,7 @@ fuel_scenarios:
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2200
+    gas: 2400
     lignite: 1350
     biomass: 1600
     electricity: 4300
@@ -1758,7 +1758,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 60
   - year_calendar: 2027
     year_investment: 2
-    gas: 2500
+    gas: 2700
     lignite: 1500
     biomass: 1625
     electricity: 4700
@@ -1768,7 +1768,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 84
   - year_calendar: 2028
     year_investment: 3
-    gas: 2100
+    gas: 2300
     lignite: 1400
     biomass: 1650
     electricity: 4600
@@ -1778,7 +1778,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 107
   - year_calendar: 2029
     year_investment: 4
-    gas: 2040
+    gas: 2240
     lignite: 1300
     biomass: 1750
     electricity: 4350
@@ -1788,7 +1788,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 131
   - year_calendar: 2030
     year_investment: 5
-    gas: 2050
+    gas: 2250
     lignite: 1300
     biomass: 1800
     electricity: 4400
@@ -1798,7 +1798,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 154
   - year_calendar: 2031
     year_investment: 6
-    gas: 2060
+    gas: 2260
     lignite: 1300
     biomass: 1820
     electricity: 4440
@@ -1808,7 +1808,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 156
   - year_calendar: 2032
     year_investment: 7
-    gas: 2070
+    gas: 2270
     lignite: 1300
     biomass: 1840
     electricity: 4480
@@ -1818,7 +1818,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 158
   - year_calendar: 2033
     year_investment: 8
-    gas: 2080
+    gas: 2280
     lignite: 1300
     biomass: 1860
     electricity: 4520
@@ -1828,7 +1828,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 160
   - year_calendar: 2034
     year_investment: 9
-    gas: 2090
+    gas: 2290
     lignite: 1800
     biomass: 1880
     electricity: 4560
@@ -1838,7 +1838,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 162
   - year_calendar: 2035
     year_investment: 10
-    gas: 2100
+    gas: 2300
     lignite: 1850
     biomass: 1900
     electricity: 4600
@@ -1848,7 +1848,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 165
   - year_calendar: 2036
     year_investment: 11
-    gas: 2140
+    gas: 2340
     lignite: 1900
     biomass: 1920
     electricity: 4560
@@ -1858,7 +1858,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 167
   - year_calendar: 2037
     year_investment: 12
-    gas: 2180
+    gas: 2380
     lignite: 1950
     biomass: 1940
     electricity: 4520
@@ -1868,7 +1868,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 169
   - year_calendar: 2038
     year_investment: 13
-    gas: 2220
+    gas: 2420
     lignite: 2000
     biomass: 1960
     electricity: 4480
@@ -1878,7 +1878,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 171
   - year_calendar: 2039
     year_investment: 14
-    gas: 2260
+    gas: 2460
     lignite: 2050
     biomass: 1980
     electricity: 4440
@@ -1888,7 +1888,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 173
   - year_calendar: 2040
     year_investment: 15
-    gas: 2300
+    gas: 2500
     lignite: 2100
     biomass: 2000
     electricity: 4400
@@ -1898,7 +1898,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 175
   - year_calendar: 2041
     year_investment: 16
-    gas: 2340
+    gas: 2540
     lignite: 2150
     biomass: 2020
     electricity: 4380
@@ -1908,7 +1908,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 179
   - year_calendar: 2042
     year_investment: 17
-    gas: 2380
+    gas: 2580
     lignite: 2200
     biomass: 2040
     electricity: 4360
@@ -1918,7 +1918,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 183
   - year_calendar: 2043
     year_investment: 18
-    gas: 2420
+    gas: 2620
     lignite: 2200
     biomass: 2060
     electricity: 4340
@@ -1928,7 +1928,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 186
   - year_calendar: 2044
     year_investment: 19
-    gas: 2460
+    gas: 2660
     lignite: 2200
     biomass: 2080
     electricity: 4320
@@ -1938,7 +1938,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 190
   - year_calendar: 2045
     year_investment: 20
-    gas: 2500
+    gas: 2700
     lignite: 2200
     biomass: 2100
     electricity: 4300
@@ -1948,7 +1948,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 194
   - year_calendar: 2046
     year_investment: 21
-    gas: 2520
+    gas: 2720
     lignite: 2200
     biomass: 2100
     electricity: 4280
@@ -1958,7 +1958,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 198
   - year_calendar: 2047
     year_investment: 22
-    gas: 2540
+    gas: 2740
     lignite: 2200
     biomass: 2100
     electricity: 4260
@@ -1968,7 +1968,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 202
   - year_calendar: 2048
     year_investment: 23
-    gas: 2560
+    gas: 2760
     lignite: 2200
     biomass: 2100
     electricity: 4240
@@ -1978,7 +1978,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 205
   - year_calendar: 2049
     year_investment: 24
-    gas: 2580
+    gas: 2780
     lignite: 2200
     biomass: 2100
     electricity: 4220
@@ -1988,7 +1988,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 209
   - year_calendar: 2050
     year_investment: 25
-    gas: 2600
+    gas: 2800
     lignite: 2200
     biomass: 2100
     electricity: 4200
@@ -1998,7 +1998,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 213
   - year_calendar: 2051
     year_investment: 26
-    gas: 2620
+    gas: 2820
     lignite: 2200
     biomass: 2100
     electricity: 4180
@@ -2008,7 +2008,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 217
   - year_calendar: 2052
     year_investment: 27
-    gas: 2640
+    gas: 2840
     lignite: 2200
     biomass: 2100
     electricity: 4160
@@ -2018,7 +2018,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 221
   - year_calendar: 2053
     year_investment: 28
-    gas: 2660
+    gas: 2860
     lignite: 2200
     biomass: 2100
     electricity: 4140
@@ -2028,7 +2028,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 225
   - year_calendar: 2054
     year_investment: 29
-    gas: 2680
+    gas: 2880
     lignite: 2200
     biomass: 2100
     electricity: 4120
@@ -2038,7 +2038,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 228
   - year_calendar: 2055
     year_investment: 30
-    gas: 2700
+    gas: 2900
     lignite: 2200
     biomass: 2100
     electricity: 4100
@@ -2048,7 +2048,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 232
   - year_calendar: 2056
     year_investment: 31
-    gas: 2720
+    gas: 2920
     lignite: 2200
     biomass: 2100
     electricity: 4080
@@ -2058,7 +2058,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 236
   - year_calendar: 2057
     year_investment: 32
-    gas: 2740
+    gas: 2940
     lignite: 2200
     biomass: 2100
     electricity: 4060
@@ -2068,7 +2068,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 240
   - year_calendar: 2058
     year_investment: 33
-    gas: 2760
+    gas: 2960
     lignite: 2200
     biomass: 2100
     electricity: 4040
@@ -2078,7 +2078,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 244
   - year_calendar: 2059
     year_investment: 34
-    gas: 2780
+    gas: 2980
     lignite: 2200
     biomass: 2100
     electricity: 4020
@@ -2088,7 +2088,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 248
   - year_calendar: 2060
     year_investment: 35
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2098,7 +2098,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 252
   - year_calendar: 2061
     year_investment: 36
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2108,7 +2108,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 256
   - year_calendar: 2062
     year_investment: 37
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2118,7 +2118,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 259
   - year_calendar: 2063
     year_investment: 38
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2128,7 +2128,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 263
   - year_calendar: 2064
     year_investment: 39
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2138,7 +2138,7 @@ fuel_scenarios:
     carbon_price_eur_nz: 267
   - year_calendar: 2065
     year_investment: 40
-    gas: 2800
+    gas: 3000
     lignite: 2200
     biomass: 2100
     electricity: 4000
@@ -2150,7 +2150,7 @@ fuel_scenarios:
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2200
+    gas: 2400
     lignite: 1350
     biomass: 1600
     electricity: 4300
@@ -2159,7 +2159,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 400
   - year_calendar: 2027
     year_investment: 2
-    gas: 2500
+    gas: 2700
     lignite: 1500
     biomass: 1625
     electricity: 4700
@@ -2168,7 +2168,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 370
   - year_calendar: 2028
     year_investment: 3
-    gas: 2100
+    gas: 2300
     lignite: 1400
     biomass: 1650
     electricity: 4600
@@ -2231,7 +2231,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 320
   - year_calendar: 2035
     year_investment: 10
-    gas: 2600
+    gas: 2800
     lignite: 1300
     biomass: 1750
     electricity: 4850
@@ -2240,7 +2240,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 250
   - year_calendar: 2036
     year_investment: 11
-    gas: 2200
+    gas: 2400
     lignite: 1300
     biomass: 1760
     electricity: 4900
@@ -2249,7 +2249,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 225
   - year_calendar: 2037
     year_investment: 12
-    gas: 2200
+    gas: 2400
     lignite: 1300
     biomass: 1770
     electricity: 4950
@@ -2258,7 +2258,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 200
   - year_calendar: 2038
     year_investment: 13
-    gas: 2200
+    gas: 2400
     lignite: 1300
     biomass: 1780
     electricity: 5000
@@ -2267,7 +2267,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 175
   - year_calendar: 2039
     year_investment: 14
-    gas: 2200
+    gas: 2400
     lignite: 1800
     biomass: 1790
     electricity: 4800
@@ -2276,7 +2276,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 120
   - year_calendar: 2040
     year_investment: 15
-    gas: 2200
+    gas: 2400
     lignite: 1850
     biomass: 1800
     electricity: 4800
@@ -2285,7 +2285,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2041
     year_investment: 16
-    gas: 2220
+    gas: 2420
     lignite: 1900
     biomass: 1810
     electricity: 4600
@@ -2294,7 +2294,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2042
     year_investment: 17
-    gas: 2240
+    gas: 2440
     lignite: 1950
     biomass: 1820
     electricity: 4600
@@ -2303,7 +2303,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2043
     year_investment: 18
-    gas: 2260
+    gas: 2460
     lignite: 2000
     biomass: 1830
     electricity: 4600
@@ -2312,7 +2312,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2044
     year_investment: 19
-    gas: 2280
+    gas: 2480
     lignite: 2050
     biomass: 1840
     electricity: 4600
@@ -2321,7 +2321,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2045
     year_investment: 20
-    gas: 2300
+    gas: 2500
     lignite: 2100
     biomass: 1850
     electricity: 4600
@@ -2330,7 +2330,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2046
     year_investment: 21
-    gas: 2300
+    gas: 2500
     lignite: 2150
     biomass: 1860
     electricity: 4400
@@ -2339,7 +2339,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2047
     year_investment: 22
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1870
     electricity: 4390
@@ -2348,7 +2348,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 49
   - year_calendar: 2048
     year_investment: 23
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1880
     electricity: 4380
@@ -2357,7 +2357,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 48
   - year_calendar: 2049
     year_investment: 24
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1890
     electricity: 4370
@@ -2366,7 +2366,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 47
   - year_calendar: 2050
     year_investment: 25
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1900
     electricity: 4360
@@ -2375,7 +2375,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 46
   - year_calendar: 2051
     year_investment: 26
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1910
     electricity: 4350
@@ -2384,7 +2384,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2052
     year_investment: 27
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1920
     electricity: 4340
@@ -2393,7 +2393,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 44
   - year_calendar: 2053
     year_investment: 28
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1930
     electricity: 4330
@@ -2402,7 +2402,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 43
   - year_calendar: 2054
     year_investment: 29
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1940
     electricity: 4320
@@ -2411,7 +2411,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 42
   - year_calendar: 2055
     year_investment: 30
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1950
     electricity: 4310
@@ -2420,7 +2420,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 41
   - year_calendar: 2056
     year_investment: 31
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1960
     electricity: 4300
@@ -2429,7 +2429,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2057
     year_investment: 32
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1970
     electricity: 4290
@@ -2438,7 +2438,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 39
   - year_calendar: 2058
     year_investment: 33
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1980
     electricity: 4280
@@ -2447,7 +2447,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 38
   - year_calendar: 2059
     year_investment: 34
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 1990
     electricity: 4270
@@ -2456,7 +2456,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 37
   - year_calendar: 2060
     year_investment: 35
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4260
@@ -2465,7 +2465,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 36
   - year_calendar: 2061
     year_investment: 36
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -2474,7 +2474,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2062
     year_investment: 37
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -2483,7 +2483,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 34
   - year_calendar: 2063
     year_investment: 38
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -2492,7 +2492,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 33
   - year_calendar: 2064
     year_investment: 39
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
@@ -2501,7 +2501,7 @@ fuel_scenarios:
     electricity_emission_factor_kg_mwh: 32
   - year_calendar: 2065
     year_investment: 40
-    gas: 2300
+    gas: 2500
     lignite: 2200
     biomass: 2000
     electricity: 4250
