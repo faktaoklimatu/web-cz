@@ -540,16 +540,26 @@ const CostsBenefits = (() => {
   // Public API
   // ---------------------------------------------------------------------------
 
+  const DEFAULT_EL_CHARGING_SCENARIO = 'Nabíjím převážně doma ze sítě';
+
+  function getDefaultElectricityPriceFactor(data) {
+    const s = (data.electricity_price_scenarios || [])
+      .find(s => s.electricity_price_scenario === DEFAULT_EL_CHARGING_SCENARIO);
+    return s ? s.electricity_price_factor : 1.0;
+  }
+
   function calculate(options) {
     const {
       measureId,
       data,
-      discountRate          = DEFAULT_DISCOUNT_RATE,
-      carbonPriceEur        = DEFAULT_CARBON_PRICE_EUR,
-      priceScenario         = DEFAULT_PRICE_SCENARIO,
-      exchangeRate          = DEFAULT_EXCHANGE_RATE,
-      electricityPriceFactor = 1.0,
+      discountRate   = DEFAULT_DISCOUNT_RATE,
+      carbonPriceEur = DEFAULT_CARBON_PRICE_EUR,
+      priceScenario  = DEFAULT_PRICE_SCENARIO,
+      exchangeRate   = DEFAULT_EXCHANGE_RATE,
     } = options;
+    const electricityPriceFactor = options.electricityPriceFactor !== undefined
+      ? options.electricityPriceFactor
+      : getDefaultElectricityPriceFactor(data);
 
     // Locate the measure
     const allMeasures = [
@@ -592,5 +602,5 @@ const CostsBenefits = (() => {
     };
   }
 
-  return { calculate };
+  return { calculate, getDefaultElectricityPriceFactor };
 })();
