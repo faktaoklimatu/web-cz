@@ -75,7 +75,9 @@
     'Výměna oken a dveří',
     'Elektrický kotel',
     'Kotel na biomasu',
-    'Soláry na střeše+baterie',
+    'Soláry na střeše + baterie',
+    'Fasáda',
+    'Fasáda + renovace',
     'Nový malý elektromobil',
     'Nový malý hybrid',
     'Nový velký elektromobil',
@@ -86,9 +88,10 @@
     'Ojetý velký hybrid',
   ];
   const CP_CHART_COLORS = [
-    // Buildings (indices 0–5)
+    // Buildings (indices 0–7)
     '#1a7a85', '#2860b4', '#6b4fa0', '#c05a1a', '#2e7d32', '#8b6914',
-    // Transport – EV = red, hybrid = orange, repeated for each size/age group (indices 6–13)
+    '#a0522d', '#cd853f',  // Fasáda, Fasáda + renovace
+    // Transport – EV = red, hybrid = orange, repeated for each size/age group (indices 8–15)
     '#c0392b', '#e67e22',   // Nový malý elektromobil, Nový malý hybrid
     '#c0392b', '#e67e22',   // Nový velký elektromobil, Nový velký hybrid
     '#c0392b', '#e67e22',   // Ojetý malý elektromobil, Ojetý malý hybrid
@@ -115,10 +118,15 @@
     .range(['#fde0c8', '#fc8d59', '#d7301f', '#7f0000']);
   const SB_DR_COLORS  = { 0: '#c6dbef', 3:  '#4292c6', 7:   '#08306b' };
   const SB_CAT_COLORS = {
+    'Rodinný dům uhlí – C':                              '#5a1a2e',
+    'Rodinný dům uhlí – D':                              '#742440',
     'Rodinný dům uhlí – E':                              '#903156',
-    'Rodinný dům uhlí – C':                              '#903156',
+    'Rodinný dům uhlí – F':                              '#b05070',
+    'Rodinný dům plyn – A':                              '#b04040',
+    'Rodinný dům plyn – C':                              '#cc5555',
+    'Rodinný dům plyn – D':                              '#d96666',
     'Rodinný dům plyn – E':                              '#e37373',
-    'Rodinný dům plyn – C':                              '#e37373',
+    'Rodinný dům plyn – F':                              '#ee9898',
     'Byt ve starší zástavbě s vlastním plynovým kotlem': '#2e7d5b',
     'Byt v panelovém domě s plynovou kotelnou':          '#1a7a85',
     'Nové malé':  '#6b4fa0',
@@ -127,8 +135,11 @@
     'Ojeté velké':'#b090d4',
   };
   const SB_BUILDING_CATS  = [
-    'Rodinný dům uhlí – E', 'Rodinný dům uhlí – C',
-    'Rodinný dům plyn – E', 'Rodinný dům plyn – C',
+    'Rodinný dům uhlí – C', 'Rodinný dům uhlí – D',
+    'Rodinný dům uhlí – E', 'Rodinný dům uhlí – F',
+    'Rodinný dům plyn – A', 'Rodinný dům plyn – C',
+    'Rodinný dům plyn – D', 'Rodinný dům plyn – E',
+    'Rodinný dům plyn – F',
     'Byt ve starší zástavbě s vlastním plynovým kotlem',
     'Byt v panelovém domě s plynovou kotelnou',
   ];

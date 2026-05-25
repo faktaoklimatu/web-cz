@@ -569,7 +569,6 @@ const CostsBenefits = (() => {
       carbonPriceEur        = DEFAULT_CARBON_PRICE_EUR,
       priceScenario         = DEFAULT_PRICE_SCENARIO,
       exchangeRate          = DEFAULT_EXCHANGE_RATE,
-      electricityPriceFactor = 1.0,
       globalPriceFactor      = 1.0,
       capexMeasMult          = 1.0,
       capexBlMult            = 1.0,
