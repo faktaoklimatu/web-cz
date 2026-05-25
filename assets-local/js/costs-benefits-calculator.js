@@ -565,13 +565,10 @@ const CostsBenefits = (() => {
     const {
       measureId,
       data,
-      discountRate          = DEFAULT_DISCOUNT_RATE,
-      carbonPriceEur        = DEFAULT_CARBON_PRICE_EUR,
-      priceScenario         = DEFAULT_PRICE_SCENARIO,
-      exchangeRate          = DEFAULT_EXCHANGE_RATE,
-      globalPriceFactor      = 1.0,
-      capexMeasMult          = 1.0,
-      capexBlMult            = 1.0,
+      discountRate   = DEFAULT_DISCOUNT_RATE,
+      carbonPriceEur = DEFAULT_CARBON_PRICE_EUR,
+      priceScenario  = DEFAULT_PRICE_SCENARIO,
+      exchangeRate   = DEFAULT_EXCHANGE_RATE,
     } = options;
     const electricityPriceFactor = options.electricityPriceFactor !== undefined
       ? options.electricityPriceFactor
