@@ -534,9 +534,9 @@ buildings_measures:
   efficiency: 0.85
   lifetime: 25.0
   demand_heat_measure_mwh: 29
-  demand_electricity_measure_mwh: 2
+  demand_electricity_measure_mwh: 1
   energy_savings: 0.0
-  electricity_savings: 0.5
+  electricity_savings: 0.75
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -688,9 +688,9 @@ buildings_measures:
   efficiency: 0.85
   lifetime: 25.0
   demand_heat_measure_mwh: 18
-  demand_electricity_measure_mwh: 2
+  demand_electricity_measure_mwh: 1
   energy_savings: 0.0
-  electricity_savings: 0.5
+  electricity_savings: 0.75
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -798,9 +798,9 @@ buildings_measures:
   efficiency: 1.05
   lifetime: 25.0
   demand_heat_measure_mwh: 24
-  demand_electricity_measure_mwh: 2
+  demand_electricity_measure_mwh: 1
   energy_savings: 0.0
-  electricity_savings: 0.5
+  electricity_savings: 0.75
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
@@ -952,9 +952,9 @@ buildings_measures:
   efficiency: 1.05
   lifetime: 25.0
   demand_heat_measure_mwh: 14
-  demand_electricity_measure_mwh: 2
+  demand_electricity_measure_mwh: 1
   energy_savings: 0.0
-  electricity_savings: 0.5
+  electricity_savings: 0.75
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
