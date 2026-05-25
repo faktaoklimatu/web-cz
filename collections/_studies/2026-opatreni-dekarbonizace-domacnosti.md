@@ -356,6 +356,9 @@ extra-scripts:
 
 # Doprava
 
+{:.text-muted style="font-size:0.8rem; margin-top:-0.5rem"}
+Cena elektřiny pro elektromobily odpovídá scénáři „Nabíjím převážně doma ze sítě" (faktor 1,33).
+
 ## Nové
 
 <div class="measure-chart" data-section="transport" data-group="Nové"></div>

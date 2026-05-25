@@ -368,7 +368,9 @@
     const STEP_COLORS  = ['#0d4a52', '#1a7a85', '#6ab4bc'];
     const STEP_RATES   = [0, 3, 7];
     const STEP_LABELS  = ['0 %', '3 %', '7 %'];
-    const TARIFF_SCENARIOS = data.electricity_price_scenarios || [];
+    const TARIFF_SCENARIOS = [...(data.electricity_price_scenarios || [])]
+      .filter(s => s.electricity_price_scenario !== 'Nabíjím doma ze sítě')
+      .sort((a, b) => a.electricity_price_factor - b.electricity_price_factor);
     const TARIFF_FACTORS   = TARIFF_SCENARIOS.map(s => s.electricity_price_factor);
     const TARIFF_COLORS    = ['#2d1b54', '#6b4fa0', '#9b7fd0', '#c8b4e8'].slice(0, TARIFF_FACTORS.length);
     const TARIFF_LABELS    = TARIFF_SCENARIOS.map(s => s.electricity_price_scenario);
@@ -1813,7 +1815,10 @@
         const cps       = (isDR || isElTariff) ? [state.carbonPrice] : [0, state.carbonPrice, 200];
         const drs       = isDR ? [0, 3, 7] : [state.discountRate];
         const epFactors = isElTariff
-          ? (data.electricity_price_scenarios || []).map(s => s.electricity_price_factor)
+          ? [...(data.electricity_price_scenarios || [])]
+              .filter(s => s.electricity_price_scenario !== 'Nabíjím doma ze sítě')
+              .sort((a, b) => a.electricity_price_factor - b.electricity_price_factor)
+              .map(s => s.electricity_price_factor)
           : [state.electricityPriceFactor];
         for (const cp of cps) {
           for (const dr of drs) {
@@ -2903,10 +2908,10 @@
     // All fuel savings, lifetimes, and CAPEX diffs are derived from the YAML.
     // Only deployment counts and import price scenarios are editorial choices.
     const IDS = {
-      hp:   { m: 33, b: 8  },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–E)
-      ins:  { m: 37, b: 9  },   // Zateplení + fasáda vs. Renovace bez zateplení
-      ev:   { m: 55, b: 51 },   // Nový malý elektromobil vs. Nové malé auto na benzín
-      ev_l: { m: 57, b: 52 },   // Nový velký elektromobil vs. Nové velké auto na naftu
+      hp:   { m: 37, b: 9  },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–E)
+      ins:  { m: 42, b: 11 },   // Fasáda + renovace vs. Fasáda (RD plyn–E)
+      ev:   { m: 59, b: 55 },   // Nový malý elektromobil vs. Nové malé auto na benzín
+      ev_l: { m: 61, b: 56 },   // Nový velký elektromobil vs. Nové velké auto na naftu
     };
     const DEPLOY = { hp: 200_000, ins: 200_000, ev: 500_000, ev_l: 300_000 };
 

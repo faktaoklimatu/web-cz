@@ -16,11 +16,32 @@ buildings_measures:
   capex_technology_czk: 85000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 350.0
+  emissions_embedded_kg: 0
 - id: 2
+  building_category: Rodinný dům uhlí – F
+  measure_name: Fasáda
+  dwellings: 1
+  demand_heat_building_mwh: 30
+  demand_electricity_mwh: 4
+  fuel: Lignite
+  capacity_kw: 0.0
+  efficiency: 0.85
+  lifetime: 40.0
+  demand_heat_measure_mwh: 35
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 220000
+  capex_installation_czk: 66000
+  capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 3
   building_category: Rodinný dům uhlí – E
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -35,9 +56,30 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 5200.0
-- id: 3
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 4
+  building_category: Rodinný dům uhlí – D
+  measure_name: Fasáda
+  dwellings: 1
+  demand_heat_building_mwh: 20
+  demand_electricity_mwh: 4
+  fuel: Lignite
+  capacity_kw: 0.0
+  efficiency: 0.85
+  lifetime: 40.0
+  demand_heat_measure_mwh: 24
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 220000
+  capex_installation_czk: 66000
+  capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 5
   building_category: Rodinný dům uhlí – E
   measure_name: Nedělám nic
   dwellings: 1
@@ -54,28 +96,10 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 4
-  building_category: Rodinný dům uhlí – E
-  measure_name: Výměna oken – dvojskla
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Lignite
-  capacity_kw: 0.0
-  efficiency: 0.85
-  lifetime: 25.0
-  demand_heat_measure_mwh: 25
-  demand_electricity_measure_mwh: 4
-  energy_savings: 0.16
-  electricity_savings: 0.0
-  capex_technology_czk: 130000
-  capex_installation_czk: 90000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 5
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 6
   building_category: Rodinný dům uhlí – C
   measure_name: Uhelný kotel
   dwellings: 1
@@ -92,11 +116,12 @@ buildings_measures:
   capex_technology_czk: 65000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 350.0
-- id: 6
+  emissions_embedded_kg: 0
+- id: 7
   building_category: Rodinný dům uhlí – C
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -111,9 +136,10 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 5200.0
-- id: 7
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 8
   building_category: Rodinný dům uhlí – C
   measure_name: Nedělám nic
   dwellings: 1
@@ -130,9 +156,10 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 8
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 9
   building_category: Rodinný dům plyn – E
   measure_name: Plynový kotel
   dwellings: 1
@@ -149,11 +176,32 @@ buildings_measures:
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 250.0
-- id: 9
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 10
+  building_category: Rodinný dům plyn – F
+  measure_name: Fasáda
+  dwellings: 1
+  demand_heat_building_mwh: 30
+  demand_electricity_mwh: 4
+  fuel: Gas
+  capacity_kw: 0.0
+  efficiency: 1.05
+  lifetime: 40.0
+  demand_heat_measure_mwh: 29
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 220000
+  capex_installation_czk: 66000
+  capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 11
   building_category: Rodinný dům plyn – E
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -168,9 +216,30 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 5200.0
-- id: 10
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 12
+  building_category: Rodinný dům plyn – D
+  measure_name: Fasáda
+  dwellings: 1
+  demand_heat_building_mwh: 20
+  demand_electricity_mwh: 4
+  fuel: Gas
+  capacity_kw: 0.0
+  efficiency: 1.05
+  lifetime: 40.0
+  demand_heat_measure_mwh: 19
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 220000
+  capex_installation_czk: 66000
+  capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 13
   building_category: Rodinný dům plyn – E
   measure_name: Nedělám nic
   dwellings: 1
@@ -187,28 +256,10 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 11
-  building_category: Rodinný dům plyn – E
-  measure_name: Výměna oken – dvojskla
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 1.05
-  lifetime: 25.0
-  demand_heat_measure_mwh: 20
-  demand_electricity_measure_mwh: 4
-  energy_savings: 0.16
-  electricity_savings: 0.0
-  capex_technology_czk: 130000
-  capex_installation_czk: 90000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 12
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 14
   building_category: Rodinný dům plyn – C
   measure_name: Plynový kotel
   dwellings: 1
@@ -225,11 +276,12 @@ buildings_measures:
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 250.0
-- id: 13
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 15
   building_category: Rodinný dům plyn – C
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -244,9 +296,10 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 5200.0
-- id: 14
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 16
   building_category: Rodinný dům plyn – C
   measure_name: Nedělám nic
   dwellings: 1
@@ -263,142 +316,170 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 15
-  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 17
+  building_category: Rodinný dům plyn – A
   measure_name: Plynový kotel
   dwellings: 1
-  demand_heat_building_mwh: 10
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 4
+  fuel: Gas
+  capacity_kw: 8.0
+  efficiency: 1.05
+  lifetime: 15.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 68000
+  capex_installation_czk: 27000
+  capex_preparation_czk: 0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 18
+  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
+  measure_name: Plynový kotel
+  dwellings: 8
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 15.0
-  demand_heat_measure_mwh: 10
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 250.0
-- id: 16
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 19
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 8
-  demand_heat_building_mwh: 10
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 40.0
-  demand_heat_measure_mwh: 10
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 62500
   capex_installation_czk: 50000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1500.0
-- id: 17
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 20
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Nedělám nic
   dwellings: 8
-  demand_heat_building_mwh: 10
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 0.0
-  demand_heat_measure_mwh: 10
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 18
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 21
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 250.0
-- id: 19
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 2500
+  emissions_embedded_kg: 0
+- id: 22
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 90000
-  capex_installation_czk: 35000
-  capex_preparation_czk: 21667
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 300.0
-- id: 20
+  capex_technology_czk: 25000
+  capex_installation_czk: 10000
+  capex_preparation_czk: 5000
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
+- id: 23
   building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Renovace bez zateplení
+  measure_name: Fasáda
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 40.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 50000
   capex_installation_czk: 40000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1200.0
-- id: 21
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 24
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Nedělám nic
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 0.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 0.0
-- id: 22
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 25
   building_category: Rodinný dům uhlí – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -415,11 +496,12 @@ buildings_measures:
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1800.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 23
+- id: 26
   building_category: Rodinný dům uhlí – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -436,11 +518,12 @@ buildings_measures:
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 500.0
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 24
+- id: 27
   building_category: Rodinný dům uhlí – E
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -457,11 +540,12 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 2700.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 3000
+  emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
-  measure_baseline_id: 3
-- id: 25
+  measure_baseline_id: 5
+- id: 28
   building_category: Rodinný dům uhlí – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -478,13 +562,36 @@ buildings_measures:
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 26
+- id: 29
+  building_category: Rodinný dům uhlí – F
+  measure_name: Fasáda + renovace
+  dwellings: 1
+  demand_heat_building_mwh: 30
+  demand_electricity_mwh: 4
+  fuel: Lignite
+  capacity_kw: 0.0
+  efficiency: 0.85
+  lifetime: 40.0
+  demand_heat_measure_mwh: 16
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.55
+  electricity_savings: 0.0
+  capex_technology_czk: 880000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 2
+- id: 30
   building_category: Rodinný dům uhlí – E
-  measure_name: Zateplení + fasáda
+  measure_name: Fasáda + renovace
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -492,39 +599,41 @@ buildings_measures:
   capacity_kw: 0.0
   efficiency: 0.85
   lifetime: 40.0
-  demand_heat_measure_mwh: 23
+  demand_heat_measure_mwh: 15
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.21
+  energy_savings: 0.5
   electricity_savings: 0.0
-  capex_technology_czk: 440000
-  capex_installation_czk: 66000
-  capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 7500.0
-  measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 2
-- id: 27
-  building_category: Rodinný dům uhlí – E
-  measure_name: Výměna oken – trojskla
+  capex_technology_czk: 880000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 3
+- id: 31
+  building_category: Rodinný dům uhlí – D
+  measure_name: Fasáda + renovace
   dwellings: 1
-  demand_heat_building_mwh: 25
+  demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 25.0
-  demand_heat_measure_mwh: 23
+  lifetime: 40.0
+  demand_heat_measure_mwh: 13
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.22
+  energy_savings: 0.44
   electricity_savings: 0.0
-  capex_technology_czk: 250000
-  capex_installation_czk: 90000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 900.0
-  measure_baseline: Výměna oken – dvojskla
+  capex_technology_czk: 860000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
   measure_baseline_id: 4
-- id: 28
+- id: 32
   building_category: Rodinný dům uhlí – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -541,11 +650,12 @@ buildings_measures:
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1800.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 5
-- id: 29
+  measure_baseline_id: 6
+- id: 33
   building_category: Rodinný dům uhlí – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -562,11 +672,12 @@ buildings_measures:
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 500.0
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 5
-- id: 30
+  measure_baseline_id: 6
+- id: 34
   building_category: Rodinný dům uhlí – C
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -583,11 +694,12 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 2700.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 3000
+  emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
-  measure_baseline_id: 7
-- id: 31
+  measure_baseline_id: 8
+- id: 35
   building_category: Rodinný dům uhlí – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -604,13 +716,14 @@ buildings_measures:
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 5
-- id: 32
+  measure_baseline_id: 6
+- id: 36
   building_category: Rodinný dům uhlí – C
-  measure_name: Zateplení + fasáda
+  measure_name: Fasáda + renovace
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -618,18 +731,19 @@ buildings_measures:
   capacity_kw: 0.0
   efficiency: 0.85
   lifetime: 40.0
-  demand_heat_measure_mwh: 15
+  demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.15
+  energy_savings: 0.23
   electricity_savings: 0.0
-  capex_technology_czk: 440000
-  capex_installation_czk: 66000
-  capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 7500.0
-  measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 6
-- id: 33
+  capex_technology_czk: 700000
+  capex_installation_czk: 105000
+  capex_preparation_czk: 55000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 7
+- id: 37
   building_category: Rodinný dům plyn – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -646,11 +760,12 @@ buildings_measures:
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1800.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 8
-- id: 34
+  measure_baseline_id: 9
+- id: 38
   building_category: Rodinný dům plyn – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -667,11 +782,12 @@ buildings_measures:
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 500.0
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 8
-- id: 35
+  measure_baseline_id: 9
+- id: 39
   building_category: Rodinný dům plyn – E
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -688,11 +804,12 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 2700.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 3000
+  emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
-  measure_baseline_id: 10
-- id: 36
+  measure_baseline_id: 13
+- id: 40
   building_category: Rodinný dům plyn – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -709,13 +826,36 @@ buildings_measures:
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 8
-- id: 37
+  measure_baseline_id: 9
+- id: 41
+  building_category: Rodinný dům plyn – F
+  measure_name: Fasáda + renovace
+  dwellings: 1
+  demand_heat_building_mwh: 30
+  demand_electricity_mwh: 4
+  fuel: Gas
+  capacity_kw: 0.0
+  efficiency: 1.05
+  lifetime: 40.0
+  demand_heat_measure_mwh: 13
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.55
+  electricity_savings: 0.0
+  capex_technology_czk: 880000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 10
+- id: 42
   building_category: Rodinný dům plyn – E
-  measure_name: Zateplení + fasáda
+  measure_name: Fasáda + renovace
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -723,39 +863,41 @@ buildings_measures:
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 40.0
-  demand_heat_measure_mwh: 19
+  demand_heat_measure_mwh: 12
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.21
+  energy_savings: 0.5
   electricity_savings: 0.0
-  capex_technology_czk: 440000
-  capex_installation_czk: 66000
-  capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 7500.0
-  measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 9
-- id: 38
-  building_category: Rodinný dům plyn – E
-  measure_name: Výměna oken – trojskla
+  capex_technology_czk: 880000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 11
+- id: 43
+  building_category: Rodinný dům plyn – D
+  measure_name: Fasáda + renovace
   dwellings: 1
-  demand_heat_building_mwh: 25
+  demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 25.0
-  demand_heat_measure_mwh: 19
+  lifetime: 40.0
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.22
+  energy_savings: 0.44
   electricity_savings: 0.0
-  capex_technology_czk: 250000
-  capex_installation_czk: 90000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 900.0
-  measure_baseline: Výměna oken – dvojskla
-  measure_baseline_id: 11
-- id: 39
+  capex_technology_czk: 860000
+  capex_installation_czk: 130000
+  capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 12
+- id: 44
   building_category: Rodinný dům plyn – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -772,11 +914,12 @@ buildings_measures:
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1800.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 12
-- id: 40
+  measure_baseline_id: 14
+- id: 45
   building_category: Rodinný dům plyn – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -793,11 +936,12 @@ buildings_measures:
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
-  emissions_embedded_kg: 500.0
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 12
-- id: 41
+  measure_baseline_id: 14
+- id: 46
   building_category: Rodinný dům plyn – C
   measure_name: Soláry na střeše + baterie
   dwellings: 1
@@ -814,11 +958,12 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 2700.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 3000
+  emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
-  measure_baseline_id: 14
-- id: 42
+  measure_baseline_id: 16
+- id: 47
   building_category: Rodinný dům plyn – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -835,13 +980,14 @@ buildings_measures:
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 12
-- id: 43
+  measure_baseline_id: 14
+- id: 48
   building_category: Rodinný dům plyn – C
-  measure_name: Zateplení + fasáda
+  measure_name: Fasáda + renovace
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -849,65 +995,67 @@ buildings_measures:
   capacity_kw: 0.0
   efficiency: 1.05
   lifetime: 40.0
-  demand_heat_measure_mwh: 12
+  demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 4
-  energy_savings: 0.15
+  energy_savings: 0.23
   electricity_savings: 0.0
-  capex_technology_czk: 440000
-  capex_installation_czk: 66000
-  capex_preparation_czk: 35000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 7500.0
-  measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 13
-- id: 44
+  capex_technology_czk: 700000
+  capex_installation_czk: 105000
+  capex_preparation_czk: 55000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
+  measure_baseline_id: 15
+- id: 49
+  building_category: Rodinný dům plyn – A
+  measure_name: Elektrický kotel
+  dwellings: 1
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 4
+  fuel: Electricity
+  capacity_kw: 6.0
+  efficiency: 0.99
+  lifetime: 15.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 4
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 34000
+  capex_installation_czk: 18000
+  capex_preparation_czk: 0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
+  measure_baseline: Plynový kotel
+  measure_baseline_id: 17
+- id: 50
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Elektrický kotel
   dwellings: 8
-  demand_heat_building_mwh: 10
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
   lifetime: 15.0
-  demand_heat_measure_mwh: 10
+  demand_heat_measure_mwh: 12
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 33000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 15
-- id: 45
+  measure_baseline_id: 18
+- id: 51
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Výměna oken a dveří
+  measure_name: Fasáda + renovace
   dwellings: 8
-  demand_heat_building_mwh: 10
-  demand_electricity_mwh: 2
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 1.05
-  lifetime: 25.0
-  demand_heat_measure_mwh: 8
-  demand_electricity_measure_mwh: 2
-  energy_savings: 0.15
-  electricity_savings: 0.0
-  capex_technology_czk: 65000
-  capex_installation_czk: 20000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 175.0
-  measure_baseline: Nedělám nic
-  note: rozpočítané na jeden byt (v rámci menšího domu s 8 byty)
-  measure_baseline_id: 17
-- id: 46
-  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Zateplení + fasáda
-  dwellings: 8
-  demand_heat_building_mwh: 10
+  demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
@@ -915,106 +1063,88 @@ buildings_measures:
   lifetime: 40.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
-  energy_savings: 0.2
+  energy_savings: 0.26
   electricity_savings: 0.0
-  capex_technology_czk: 126000
-  capex_installation_czk: 99000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 2175.0
-  measure_baseline: Renovace bez zateplení
+  capex_technology_czk: 90000
+  capex_installation_czk: 40000
+  capex_preparation_czk: 7000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
   note: rozpočítané na jeden byt (v rámci menšího domu s 8 byty)
-  measure_baseline_id: 16
-- id: 47
+  measure_baseline_id: 19
+- id: 52
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
   lifetime: 15.0
-  demand_heat_measure_mwh: 6
+  demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 15000
   capex_installation_czk: 5000
   capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 150.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 1000
+  emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společný kotel rozpočítaný na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 19
-- id: 48
+  measure_baseline_id: 22
+- id: 53
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 3.2
   lifetime: 15.0
-  demand_heat_measure_mwh: 2
+  demand_heat_measure_mwh: 3
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 50000
   capex_installation_czk: 20000
   capex_preparation_czk: 10000
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 800.0
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 5000
+  emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společné čerpadlo rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 19
-- id: 49
+  measure_baseline_id: 22
+- id: 54
   building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Výměna oken a dveří
+  measure_name: Fasáda + renovace
   dwellings: 15
-  demand_heat_building_mwh: 6
-  demand_electricity_mwh: 2
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 0.95
-  lifetime: 25.0
-  demand_heat_measure_mwh: 5
-  demand_electricity_measure_mwh: 2
-  energy_savings: 0.15
-  electricity_savings: 0.0
-  capex_technology_czk: 60000
-  capex_installation_czk: 20000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 200.0
-  measure_baseline: Nedělám nic
-  note: rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 21
-- id: 50
-  building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Zateplení + fasáda
-  dwellings: 15
-  demand_heat_building_mwh: 6
+  demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
   lifetime: 40.0
-  demand_heat_measure_mwh: 5
+  demand_heat_measure_mwh: 6
   demand_electricity_measure_mwh: 2
   energy_savings: 0.25
   electricity_savings: 0.0
   capex_technology_czk: 80000
-  capex_installation_czk: 70000
-  capex_preparation_czk: 0
-  opex_maintenance_czk: 3500
-  emissions_embedded_kg: 1740.0
-  measure_baseline: Renovace bez zateplení
+  capex_installation_czk: 30000
+  capex_preparation_czk: 4000
+  capex_sensitivity: 0.2
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+  measure_baseline: Fasáda
   note: rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 20
+  measure_baseline_id: 23
 transport_measures:
-- id: 51
+- id: 55
   transport_category: Nové malé
   measure_name: Nové malé auto na benzín
   demand_energy_per_100km: 6.9
@@ -1022,12 +1152,14 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 490000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 12000
   opex_repairs_czk: 4333
   opex_insurance_czk: 16000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 6000
   note: Fabia – 6,5 l, 15 000 km
-- id: 52
+- id: 56
   transport_category: Nové velké
   measure_name: Nové velké auto na naftu
   demand_energy_per_100km: 7.2
@@ -1035,12 +1167,14 @@ transport_measures:
   fuel: Diesel
   lifetime: 15
   capex_czk: 1150000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 20000
   opex_repairs_czk: 9333
   opex_insurance_czk: 24000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 8500
   note: Kodiaq – 8 l, 20 000 km
-- id: 53
+- id: 57
   transport_category: Ojeté malé
   measure_name: Ojeté malé auto na benzín
   demand_energy_per_100km: 7.5
@@ -1048,12 +1182,14 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 240000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 18000
   opex_repairs_czk: 6000
   opex_insurance_czk: 7000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 2800
   note: Fabia – 7,5 l, 15 000 km
-- id: 54
+- id: 58
   transport_category: Ojeté velké
   measure_name: Ojeté velké auto na naftu
   demand_energy_per_100km: 8.5
@@ -1061,12 +1197,14 @@ transport_measures:
   fuel: Diesel
   lifetime: 7
   capex_czk: 530000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 25000
   opex_repairs_czk: 14286
   opex_insurance_czk: 10000
-  emissions_embedded_kg: 2800
+  opex_sensitivity: 0.15
+  emissions_embedded_kg: 3967
   note: Kodiaq – 8,5 l, 20 000 km
-- id: 55
+- id: 59
   transport_category: Nové malé
   measure_name: Nový malý elektromobil
   demand_energy_per_100km: 0.02
@@ -1074,14 +1212,16 @@ transport_measures:
   fuel: Electricity
   lifetime: 15
   capex_czk: 650000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 5000
   opex_repairs_czk: 8000
   opex_insurance_czk: 18000
-  emissions_embedded_kg: 10000
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 8800
   measure_baseline: Nové malé auto na benzín
   note: Elektromobil
-  measure_baseline_id: 51
-- id: 56
+  measure_baseline_id: 55
+- id: 60
   transport_category: Nové malé
   measure_name: Nový malý hybrid
   demand_energy_per_100km: 4.5
@@ -1089,14 +1229,16 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 560000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 9000
   opex_repairs_czk: 5333
   opex_insurance_czk: 16000
-  emissions_embedded_kg: 7000
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 6000
   measure_baseline: Nové malé auto na benzín
   note: Hybrid – 4,5 l
-  measure_baseline_id: 51
-- id: 57
+  measure_baseline_id: 55
+- id: 61
   transport_category: Nové velké
   measure_name: Nový velký elektromobil
   demand_energy_per_100km: 0.0215
@@ -1104,14 +1246,16 @@ transport_measures:
   fuel: Electricity
   lifetime: 15
   capex_czk: 1130000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 10000
   opex_repairs_czk: 9667
   opex_insurance_czk: 28000
-  emissions_embedded_kg: 15000
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 11000
   measure_baseline: Nové velké auto na naftu
   note: Elektromobil
-  measure_baseline_id: 52
-- id: 58
+  measure_baseline_id: 56
+- id: 62
   transport_category: Nové velké
   measure_name: Nový velký hybrid
   demand_energy_per_100km: 6.5
@@ -1119,14 +1263,16 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 1150000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 18000
   opex_repairs_czk: 7000
   opex_insurance_czk: 24000
-  emissions_embedded_kg: 9500
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 8500
   measure_baseline: Nové velké auto na naftu
   note: Hybrid – 6,5 l
-  measure_baseline_id: 52
-- id: 59
+  measure_baseline_id: 56
+- id: 63
   transport_category: Ojeté malé
   measure_name: Ojetý malý elektromobil
   demand_energy_per_100km: 0.017
@@ -1134,14 +1280,16 @@ transport_measures:
   fuel: Electricity
   lifetime: 7
   capex_czk: 280000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 9000
   opex_repairs_czk: 8571
   opex_insurance_czk: 8000
-  emissions_embedded_kg: 4667
+  opex_sensitivity: 0.15
+  emissions_embedded_kg: 4107
   measure_baseline: Ojeté malé auto na benzín
   note: Elektromobil
-  measure_baseline_id: 53
-- id: 60
+  measure_baseline_id: 57
+- id: 64
   transport_category: Ojeté malé
   measure_name: Ojetý malý hybrid
   demand_energy_per_100km: 5.5
@@ -1149,14 +1297,16 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 300000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 15000
   opex_repairs_czk: 7429
   opex_insurance_czk: 7000
-  emissions_embedded_kg: 3267
+  opex_sensitivity: 0.15
+  emissions_embedded_kg: 2800
   measure_baseline: Ojeté malé auto na benzín
   note: Hybrid – 5,5 l
-  measure_baseline_id: 53
-- id: 61
+  measure_baseline_id: 57
+- id: 65
   transport_category: Ojeté velké
   measure_name: Ojetý velký elektromobil
   demand_energy_per_100km: 0.028
@@ -1164,14 +1314,16 @@ transport_measures:
   fuel: Electricity
   lifetime: 7
   capex_czk: 480000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 11000
   opex_repairs_czk: 11714
   opex_insurance_czk: 11000
-  emissions_embedded_kg: 7000
+  opex_sensitivity: 0.15
+  emissions_embedded_kg: 5133
   measure_baseline: Ojeté velké auto na naftu
   note: Elektromobil
-  measure_baseline_id: 54
-- id: 62
+  measure_baseline_id: 58
+- id: 66
   transport_category: Ojeté velké
   measure_name: Ojetý velký hybrid
   demand_energy_per_100km: 7.0
@@ -1179,13 +1331,15 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 600000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 17500
   opex_repairs_czk: 11429
   opex_insurance_czk: 10000
-  emissions_embedded_kg: 4433
+  opex_sensitivity: 0.15
+  emissions_embedded_kg: 3967
   measure_baseline: Ojeté velké auto na naftu
   note: Hybrid – 7 l
-  measure_baseline_id: 54
+  measure_baseline_id: 58
 fuel_emission_factors:
 - fuel: Gas
   unit: MWh
@@ -1220,1137 +1374,1137 @@ discount_rate_scenarios:
   discount_rate: 0.07
 electricity_price_scenarios:
 - electricity_price_scenario: Nabíjím doma ze sítě
-  electricity_price_factor: 1.0
+  electricity_price_factor: 0.9
 - electricity_price_scenario: Nabíjím převážně doma ze sítě
-  electricity_price_factor: 1.45
-- electricity_price_scenario: Nabíjím doma ze solárů
-  electricity_price_factor: 0.5
-- electricity_price_scenario: Nabíjím převážně venku na rychlonabíječce
-  electricity_price_factor: 2.0
+  electricity_price_factor: 1.33
+- electricity_price_scenario: Nabíjím převážně doma ze solárů a ze sítě
+  electricity_price_factor: 1.21
+- electricity_price_scenario: Nabíjím venku, převážně pomalu
+  electricity_price_factor: 2.3
 fuel_scenarios:
 - scenario: CP
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2719
-    lignite: 1300
-    biomass: 1651
-    electricity: 4464
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 401
+    gas: 2400
+    lignite: 1350
+    biomass: 1600
+    electricity: 4300
+    petrol: 45.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 400
   - year_calendar: 2027
     year_investment: 2
-    gas: 2709
-    lignite: 1300
-    biomass: 1660
-    electricity: 4446
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 381
+    gas: 2700
+    lignite: 1500
+    biomass: 1625
+    electricity: 4700
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 370
   - year_calendar: 2028
     year_investment: 3
-    gas: 2699
-    lignite: 1300
-    biomass: 1670
-    electricity: 4427
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 362
+    gas: 2300
+    lignite: 1400
+    biomass: 1650
+    electricity: 4600
+    petrol: 45.0
+    diesel: 44.0
+    electricity_emission_factor_kg_mwh: 340
   - year_calendar: 2029
     year_investment: 4
-    gas: 2688
+    gas: 2240
     lignite: 1300
-    biomass: 1679
-    electricity: 4409
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 342
+    biomass: 1675
+    electricity: 4500
+    petrol: 35.0
+    diesel: 35.0
+    electricity_emission_factor_kg_mwh: 310
   - year_calendar: 2030
     year_investment: 5
-    gas: 2678
+    gas: 2250
     lignite: 1300
-    biomass: 1688
-    electricity: 4391
-    petrol: 36
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 322
+    biomass: 1700
+    electricity: 4600
+    petrol: 35.0
+    diesel: 35.0
+    electricity_emission_factor_kg_mwh: 280
   - year_calendar: 2031
     year_investment: 6
-    gas: 2668
+    gas: 2260
     lignite: 1300
-    biomass: 1698
-    electricity: 4373
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 302
+    biomass: 1710
+    electricity: 4650
+    petrol: 35.5
+    diesel: 35.5
+    electricity_emission_factor_kg_mwh: 250
   - year_calendar: 2032
     year_investment: 7
-    gas: 2657
+    gas: 2270
     lignite: 1300
-    biomass: 1707
-    electricity: 4355
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 283
+    biomass: 1720
+    electricity: 4700
+    petrol: 36.0
+    diesel: 36.0
+    electricity_emission_factor_kg_mwh: 220
   - year_calendar: 2033
     year_investment: 8
-    gas: 2647
+    gas: 2280
     lignite: 1300
-    biomass: 1716
-    electricity: 4336
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 263
+    biomass: 1730
+    electricity: 4750
+    petrol: 36.5
+    diesel: 36.5
+    electricity_emission_factor_kg_mwh: 190
   - year_calendar: 2034
     year_investment: 9
-    gas: 2637
-    lignite: 1300
-    biomass: 1725
-    electricity: 4318
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 243
+    gas: 2290
+    lignite: 1800
+    biomass: 1740
+    electricity: 4800
+    petrol: 37.0
+    diesel: 37.0
+    electricity_emission_factor_kg_mwh: 160
   - year_calendar: 2035
     year_investment: 10
-    gas: 2626
-    lignite: 1300
-    biomass: 1735
-    electricity: 4300
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 224
+    gas: 2300
+    lignite: 1850
+    biomass: 1750
+    electricity: 4850
+    petrol: 38.0
+    diesel: 38.0
+    electricity_emission_factor_kg_mwh: 155
   - year_calendar: 2036
     year_investment: 11
-    gas: 2636
-    lignite: 1300
-    biomass: 1744
-    electricity: 4283
-    petrol: 37
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 204
+    gas: 2320
+    lignite: 1900
+    biomass: 1760
+    electricity: 4900
+    petrol: 39.0
+    diesel: 39.0
+    electricity_emission_factor_kg_mwh: 150
   - year_calendar: 2037
     year_investment: 12
-    gas: 2645
-    lignite: 1300
-    biomass: 1754
-    electricity: 4267
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 184
+    gas: 2340
+    lignite: 1950
+    biomass: 1770
+    electricity: 4950
+    petrol: 40.0
+    diesel: 40.0
+    electricity_emission_factor_kg_mwh: 145
   - year_calendar: 2038
     year_investment: 13
-    gas: 2655
-    lignite: 1300
-    biomass: 1763
-    electricity: 4250
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 164
+    gas: 2360
+    lignite: 2000
+    biomass: 1780
+    electricity: 5000
+    petrol: 41.0
+    diesel: 41.0
+    electricity_emission_factor_kg_mwh: 140
   - year_calendar: 2039
     year_investment: 14
-    gas: 2664
-    lignite: 1300
-    biomass: 1773
-    electricity: 4233
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 145
+    gas: 2380
+    lignite: 2050
+    biomass: 1790
+    electricity: 4800
+    petrol: 42.0
+    diesel: 42.0
+    electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2040
     year_investment: 15
-    gas: 2674
-    lignite: 1300
-    biomass: 1782
-    electricity: 4217
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 125
+    gas: 2400
+    lignite: 2100
+    biomass: 1800
+    electricity: 4800
+    petrol: 43.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 105
   - year_calendar: 2041
     year_investment: 16
-    gas: 2683
-    lignite: 1300
-    biomass: 1792
-    electricity: 4200
-    petrol: 38
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 120
+    gas: 2420
+    lignite: 2150
+    biomass: 1810
+    electricity: 4600
+    petrol: 43.8
+    diesel: 43.8
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2042
     year_investment: 17
-    gas: 2693
-    lignite: 1300
-    biomass: 1801
-    electricity: 4183
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 115
+    gas: 2440
+    lignite: 2200
+    biomass: 1820
+    electricity: 4600
+    petrol: 44.5
+    diesel: 44.5
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2043
     year_investment: 18
-    gas: 2702
-    lignite: 1300
-    biomass: 1811
-    electricity: 4167
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 110
+    gas: 2460
+    lignite: 2200
+    biomass: 1830
+    electricity: 4600
+    petrol: 45.3
+    diesel: 45.3
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2044
     year_investment: 19
-    gas: 2712
-    lignite: 1300
-    biomass: 1820
-    electricity: 4150
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 105
+    gas: 2480
+    lignite: 2200
+    biomass: 1840
+    electricity: 4600
+    petrol: 46.0
+    diesel: 46.0
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2045
     year_investment: 20
-    gas: 2721
-    lignite: 1300
-    biomass: 1830
-    electricity: 4133
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 100
+    gas: 2500
+    lignite: 2200
+    biomass: 1850
+    electricity: 4600
+    petrol: 46.8
+    diesel: 46.8
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2046
     year_investment: 21
-    gas: 2731
-    lignite: 1300
-    biomass: 1839
-    electricity: 4117
-    petrol: 39
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 95
+    gas: 2500
+    lignite: 2200
+    biomass: 1860
+    electricity: 4400
+    petrol: 47.5
+    diesel: 47.5
+    electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2047
     year_investment: 22
-    gas: 2740
-    lignite: 1300
-    biomass: 1849
-    electricity: 4100
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 90
+    gas: 2500
+    lignite: 2200
+    biomass: 1870
+    electricity: 4390
+    petrol: 48.3
+    diesel: 48.3
+    electricity_emission_factor_kg_mwh: 49
   - year_calendar: 2048
     year_investment: 23
-    gas: 2750
-    lignite: 1300
-    biomass: 1859
-    electricity: 4083
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 85
+    gas: 2500
+    lignite: 2200
+    biomass: 1880
+    electricity: 4380
+    petrol: 49.0
+    diesel: 49.0
+    electricity_emission_factor_kg_mwh: 48
   - year_calendar: 2049
     year_investment: 24
-    gas: 2759
-    lignite: 1300
-    biomass: 1868
-    electricity: 4067
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 80
+    gas: 2500
+    lignite: 2200
+    biomass: 1890
+    electricity: 4370
+    petrol: 49.8
+    diesel: 49.8
+    electricity_emission_factor_kg_mwh: 47
   - year_calendar: 2050
     year_investment: 25
-    gas: 2769
-    lignite: 1300
-    biomass: 1878
-    electricity: 4050
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 75
+    gas: 2500
+    lignite: 2200
+    biomass: 1900
+    electricity: 4360
+    petrol: 50.5
+    diesel: 50.5
+    electricity_emission_factor_kg_mwh: 46
   - year_calendar: 2051
     year_investment: 26
-    gas: 2778
-    lignite: 1300
-    biomass: 1887
-    electricity: 4033
-    petrol: 40
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 70
+    gas: 2500
+    lignite: 2200
+    biomass: 1910
+    electricity: 4350
+    petrol: 51.3
+    diesel: 51.3
+    electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2052
     year_investment: 27
-    gas: 2788
-    lignite: 1300
-    biomass: 1897
-    electricity: 4017
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 65
+    gas: 2500
+    lignite: 2200
+    biomass: 1920
+    electricity: 4340
+    petrol: 52.0
+    diesel: 52.0
+    electricity_emission_factor_kg_mwh: 44
   - year_calendar: 2053
     year_investment: 28
-    gas: 2797
-    lignite: 1300
-    biomass: 1906
-    electricity: 4000
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 60
+    gas: 2500
+    lignite: 2200
+    biomass: 1930
+    electricity: 4330
+    petrol: 53.0
+    diesel: 53.0
+    electricity_emission_factor_kg_mwh: 43
   - year_calendar: 2054
     year_investment: 29
-    gas: 2807
-    lignite: 1300
-    biomass: 1916
-    electricity: 3983
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 55
+    gas: 2500
+    lignite: 2200
+    biomass: 1940
+    electricity: 4320
+    petrol: 54.0
+    diesel: 54.0
+    electricity_emission_factor_kg_mwh: 42
   - year_calendar: 2055
     year_investment: 30
-    gas: 2816
-    lignite: 1300
-    biomass: 1925
-    electricity: 3967
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 50
+    gas: 2500
+    lignite: 2200
+    biomass: 1950
+    electricity: 4310
+    petrol: 55.0
+    diesel: 55.0
+    electricity_emission_factor_kg_mwh: 41
   - year_calendar: 2056
     year_investment: 31
-    gas: 2826
-    lignite: 1300
-    biomass: 1935
-    electricity: 3950
-    petrol: 41
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 45
+    gas: 2500
+    lignite: 2200
+    biomass: 1960
+    electricity: 4300
+    petrol: 56.0
+    diesel: 56.0
+    electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2057
     year_investment: 32
-    gas: 2835
-    lignite: 1300
-    biomass: 1944
-    electricity: 3933
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 40
+    gas: 2500
+    lignite: 2200
+    biomass: 1970
+    electricity: 4290
+    petrol: 57.0
+    diesel: 57.0
+    electricity_emission_factor_kg_mwh: 39
   - year_calendar: 2058
     year_investment: 33
-    gas: 2845
-    lignite: 1300
-    biomass: 1954
-    electricity: 3917
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 35
+    gas: 2500
+    lignite: 2200
+    biomass: 1980
+    electricity: 4280
+    petrol: 58.0
+    diesel: 58.0
+    electricity_emission_factor_kg_mwh: 38
   - year_calendar: 2059
     year_investment: 34
-    gas: 2854
-    lignite: 1300
-    biomass: 1963
-    electricity: 3900
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 30
+    gas: 2500
+    lignite: 2200
+    biomass: 1990
+    electricity: 4270
+    petrol: 59.0
+    diesel: 59.0
+    electricity_emission_factor_kg_mwh: 37
   - year_calendar: 2060
     year_investment: 35
-    gas: 2864
-    lignite: 1300
-    biomass: 1973
-    electricity: 3883
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 25
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4260
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 36
   - year_calendar: 2061
     year_investment: 36
-    gas: 2873
-    lignite: 1300
-    biomass: 1982
-    electricity: 3867
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 20
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2062
     year_investment: 37
-    gas: 2883
-    lignite: 1300
-    biomass: 1992
-    electricity: 3850
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 15
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 34
   - year_calendar: 2063
     year_investment: 38
-    gas: 2892
-    lignite: 1300
-    biomass: 2001
-    electricity: 3833
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 10
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 33
   - year_calendar: 2064
     year_investment: 39
-    gas: 2902
-    lignite: 1300
-    biomass: 2011
-    electricity: 3817
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 32
   - year_calendar: 2065
     year_investment: 40
-    gas: 2911
-    lignite: 1300
-    biomass: 2020
-    electricity: 3800
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 31
 - scenario: NZ
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2635
-    lignite: 1300
-    biomass: 1651
-    electricity: 4427
-    petrol: 32
-    diesel: 29
-    electricity_emission_factor_kg_mwh: 401
+    gas: 2400
+    lignite: 1350
+    biomass: 1600
+    electricity: 4300
+    petrol: 45.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 400
     carbon_price_eur_nz: 60
   - year_calendar: 2027
     year_investment: 2
-    gas: 2582
-    lignite: 1300
-    biomass: 1660
-    electricity: 4391
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 376
+    gas: 2700
+    lignite: 1500
+    biomass: 1625
+    electricity: 4700
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 365
     carbon_price_eur_nz: 84
   - year_calendar: 2028
     year_investment: 3
-    gas: 2530
-    lignite: 1300
-    biomass: 1670
-    electricity: 4355
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 351
+    gas: 2300
+    lignite: 1400
+    biomass: 1650
+    electricity: 4600
+    petrol: 45.0
+    diesel: 44.0
+    electricity_emission_factor_kg_mwh: 330
     carbon_price_eur_nz: 107
   - year_calendar: 2029
     year_investment: 4
-    gas: 2477
+    gas: 2240
     lignite: 1300
-    biomass: 1679
-    electricity: 4318
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 326
+    biomass: 1750
+    electricity: 4350
+    petrol: 35.0
+    diesel: 34.5
+    electricity_emission_factor_kg_mwh: 295
     carbon_price_eur_nz: 131
   - year_calendar: 2030
     year_investment: 5
-    gas: 2424
+    gas: 2250
     lignite: 1300
-    biomass: 1688
-    electricity: 4282
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 301
+    biomass: 1800
+    electricity: 4400
+    petrol: 35.0
+    diesel: 35.0
+    electricity_emission_factor_kg_mwh: 260
     carbon_price_eur_nz: 154
   - year_calendar: 2031
     year_investment: 6
-    gas: 2372
+    gas: 2260
     lignite: 1300
-    biomass: 1698
-    electricity: 4246
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 276
+    biomass: 1820
+    electricity: 4440
+    petrol: 35.5
+    diesel: 35.5
+    electricity_emission_factor_kg_mwh: 225
     carbon_price_eur_nz: 156
   - year_calendar: 2032
     year_investment: 7
-    gas: 2319
+    gas: 2270
     lignite: 1300
-    biomass: 1707
-    electricity: 4209
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 251
+    biomass: 1840
+    electricity: 4480
+    petrol: 36.0
+    diesel: 36.0
+    electricity_emission_factor_kg_mwh: 190
     carbon_price_eur_nz: 158
   - year_calendar: 2033
     year_investment: 8
-    gas: 2266
+    gas: 2280
     lignite: 1300
-    biomass: 1716
-    electricity: 4173
-    petrol: 32
-    diesel: 30
-    electricity_emission_factor_kg_mwh: 226
+    biomass: 1860
+    electricity: 4520
+    petrol: 35.6
+    diesel: 35.6
+    electricity_emission_factor_kg_mwh: 155
     carbon_price_eur_nz: 160
   - year_calendar: 2034
     year_investment: 9
-    gas: 2214
-    lignite: 1300
-    biomass: 1725
-    electricity: 4136
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 200
+    gas: 2290
+    lignite: 1800
+    biomass: 1880
+    electricity: 4560
+    petrol: 37.0
+    diesel: 37.0
+    electricity_emission_factor_kg_mwh: 120
     carbon_price_eur_nz: 162
   - year_calendar: 2035
     year_investment: 10
-    gas: 2161
-    lignite: 1300
-    biomass: 1735
-    electricity: 4100
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 175
+    gas: 2300
+    lignite: 1850
+    biomass: 1900
+    electricity: 4600
+    petrol: 37.5
+    diesel: 37.5
+    electricity_emission_factor_kg_mwh: 115
     carbon_price_eur_nz: 165
   - year_calendar: 2036
     year_investment: 11
-    gas: 2160
-    lignite: 1300
-    biomass: 1744
-    electricity: 4057
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 150
+    gas: 2340
+    lignite: 1900
+    biomass: 1920
+    electricity: 4560
+    petrol: 39.0
+    diesel: 39.0
+    electricity_emission_factor_kg_mwh: 110
     carbon_price_eur_nz: 167
   - year_calendar: 2037
     year_investment: 12
-    gas: 2158
-    lignite: 1300
-    biomass: 1754
-    electricity: 4013
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 125
+    gas: 2380
+    lignite: 1950
+    biomass: 1940
+    electricity: 4520
+    petrol: 40.5
+    diesel: 40.5
+    electricity_emission_factor_kg_mwh: 105
     carbon_price_eur_nz: 169
   - year_calendar: 2038
     year_investment: 13
-    gas: 2157
-    lignite: 1300
-    biomass: 1763
-    electricity: 3970
-    petrol: 33
-    diesel: 31
+    gas: 2420
+    lignite: 2000
+    biomass: 1960
+    electricity: 4480
+    petrol: 42.0
+    diesel: 42.0
     electricity_emission_factor_kg_mwh: 100
     carbon_price_eur_nz: 171
   - year_calendar: 2039
     year_investment: 14
-    gas: 2156
-    lignite: 1300
-    biomass: 1773
-    electricity: 3927
-    petrol: 33
-    diesel: 31
-    electricity_emission_factor_kg_mwh: 75
+    gas: 2460
+    lignite: 2050
+    biomass: 1980
+    electricity: 4440
+    petrol: 43.5
+    diesel: 43.5
+    electricity_emission_factor_kg_mwh: 70
     carbon_price_eur_nz: 173
   - year_calendar: 2040
     year_investment: 15
-    gas: 2155
-    lignite: 1300
-    biomass: 1782
-    electricity: 3883
-    petrol: 34
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 50
+    gas: 2500
+    lignite: 2100
+    biomass: 2000
+    electricity: 4400
+    petrol: 45.0
+    diesel: 45.0
+    electricity_emission_factor_kg_mwh: 40
     carbon_price_eur_nz: 175
   - year_calendar: 2041
     year_investment: 16
-    gas: 2153
-    lignite: 1300
-    biomass: 1792
-    electricity: 3840
-    petrol: 34
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 31
+    gas: 2540
+    lignite: 2150
+    biomass: 2020
+    electricity: 4380
+    petrol: 46.0
+    diesel: 46.0
+    electricity_emission_factor_kg_mwh: 38
     carbon_price_eur_nz: 179
   - year_calendar: 2042
     year_investment: 17
-    gas: 2152
-    lignite: 1300
-    biomass: 1801
-    electricity: 3797
-    petrol: 34
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 29
+    gas: 2580
+    lignite: 2200
+    biomass: 2040
+    electricity: 4360
+    petrol: 47.0
+    diesel: 47.0
+    electricity_emission_factor_kg_mwh: 36
     carbon_price_eur_nz: 183
   - year_calendar: 2043
     year_investment: 18
-    gas: 2151
-    lignite: 1300
-    biomass: 1811
-    electricity: 3753
-    petrol: 34
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 26
+    gas: 2620
+    lignite: 2200
+    biomass: 2060
+    electricity: 4340
+    petrol: 48.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 34
     carbon_price_eur_nz: 186
   - year_calendar: 2044
     year_investment: 19
-    gas: 2149
-    lignite: 1300
-    biomass: 1820
-    electricity: 3710
-    petrol: 34
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 24
+    gas: 2660
+    lignite: 2200
+    biomass: 2080
+    electricity: 4320
+    petrol: 49.0
+    diesel: 49.0
+    electricity_emission_factor_kg_mwh: 32
     carbon_price_eur_nz: 190
   - year_calendar: 2045
     year_investment: 20
-    gas: 2148
-    lignite: 1300
-    biomass: 1830
-    electricity: 3667
-    petrol: 35
-    diesel: 32
-    electricity_emission_factor_kg_mwh: 22
+    gas: 2700
+    lignite: 2200
+    biomass: 2100
+    electricity: 4300
+    petrol: 50.0
+    diesel: 50.0
+    electricity_emission_factor_kg_mwh: 30
     carbon_price_eur_nz: 194
   - year_calendar: 2046
     year_investment: 21
-    gas: 2147
-    lignite: 1300
-    biomass: 1839
-    electricity: 3623
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 19
+    gas: 2720
+    lignite: 2200
+    biomass: 2100
+    electricity: 4280
+    petrol: 51.0
+    diesel: 51.0
+    electricity_emission_factor_kg_mwh: 20
     carbon_price_eur_nz: 198
   - year_calendar: 2047
     year_investment: 22
-    gas: 2146
-    lignite: 1300
-    biomass: 1849
-    electricity: 3580
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 17
+    gas: 2740
+    lignite: 2200
+    biomass: 2100
+    electricity: 4260
+    petrol: 52.0
+    diesel: 52.0
+    electricity_emission_factor_kg_mwh: 19
     carbon_price_eur_nz: 202
   - year_calendar: 2048
     year_investment: 23
-    gas: 2144
-    lignite: 1300
-    biomass: 1859
-    electricity: 3537
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 15
+    gas: 2760
+    lignite: 2200
+    biomass: 2100
+    electricity: 4240
+    petrol: 53.0
+    diesel: 53.0
+    electricity_emission_factor_kg_mwh: 18
     carbon_price_eur_nz: 205
   - year_calendar: 2049
     year_investment: 24
-    gas: 2143
-    lignite: 1300
-    biomass: 1868
-    electricity: 3493
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 12
+    gas: 2780
+    lignite: 2200
+    biomass: 2100
+    electricity: 4220
+    petrol: 54.0
+    diesel: 54.0
+    electricity_emission_factor_kg_mwh: 17
     carbon_price_eur_nz: 209
   - year_calendar: 2050
     year_investment: 25
-    gas: 2142
-    lignite: 1300
-    biomass: 1878
-    electricity: 3450
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 10
+    gas: 2800
+    lignite: 2200
+    biomass: 2100
+    electricity: 4200
+    petrol: 55.0
+    diesel: 55.0
+    electricity_emission_factor_kg_mwh: 16
     carbon_price_eur_nz: 213
   - year_calendar: 2051
     year_investment: 26
-    gas: 2141
-    lignite: 1300
-    biomass: 1887
-    electricity: 3407
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 8
+    gas: 2820
+    lignite: 2200
+    biomass: 2100
+    electricity: 4180
+    petrol: 58.0
+    diesel: 58.0
+    electricity_emission_factor_kg_mwh: 15
     carbon_price_eur_nz: 217
   - year_calendar: 2052
     year_investment: 27
-    gas: 2139
-    lignite: 1300
-    biomass: 1897
-    electricity: 3363
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2840
+    lignite: 2200
+    biomass: 2100
+    electricity: 4160
+    petrol: 61.0
+    diesel: 61.0
+    electricity_emission_factor_kg_mwh: 14
     carbon_price_eur_nz: 221
   - year_calendar: 2053
     year_investment: 28
-    gas: 2138
-    lignite: 1300
-    biomass: 1906
-    electricity: 3320
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2860
+    lignite: 2200
+    biomass: 2100
+    electricity: 4140
+    petrol: 64.0
+    diesel: 64.0
+    electricity_emission_factor_kg_mwh: 13
     carbon_price_eur_nz: 225
   - year_calendar: 2054
     year_investment: 29
-    gas: 2137
-    lignite: 1300
-    biomass: 1916
-    electricity: 3277
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2880
+    lignite: 2200
+    biomass: 2100
+    electricity: 4120
+    petrol: 67.0
+    diesel: 67.0
+    electricity_emission_factor_kg_mwh: 12
     carbon_price_eur_nz: 228
   - year_calendar: 2055
     year_investment: 30
-    gas: 2136
-    lignite: 1300
-    biomass: 1925
-    electricity: 3233
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2900
+    lignite: 2200
+    biomass: 2100
+    electricity: 4100
+    petrol: 70.0
+    diesel: 70.0
+    electricity_emission_factor_kg_mwh: 11
     carbon_price_eur_nz: 232
   - year_calendar: 2056
     year_investment: 31
-    gas: 2134
-    lignite: 1300
-    biomass: 1935
-    electricity: 3190
-    petrol: 37
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2920
+    lignite: 2200
+    biomass: 2100
+    electricity: 4080
+    petrol: 73.0
+    diesel: 73.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 236
   - year_calendar: 2057
     year_investment: 32
-    gas: 2133
-    lignite: 1300
-    biomass: 1944
-    electricity: 3147
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2940
+    lignite: 2200
+    biomass: 2100
+    electricity: 4060
+    petrol: 76.0
+    diesel: 76.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 240
   - year_calendar: 2058
     year_investment: 33
-    gas: 2132
-    lignite: 1300
-    biomass: 1954
-    electricity: 3103
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2960
+    lignite: 2200
+    biomass: 2100
+    electricity: 4040
+    petrol: 79.0
+    diesel: 79.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 244
   - year_calendar: 2059
     year_investment: 34
-    gas: 2130
-    lignite: 1300
-    biomass: 1963
-    electricity: 3060
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2980
+    lignite: 2200
+    biomass: 2100
+    electricity: 4020
+    petrol: 82.0
+    diesel: 82.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 248
   - year_calendar: 2060
     year_investment: 35
-    gas: 2129
-    lignite: 1300
-    biomass: 1973
-    electricity: 3017
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 85.0
+    diesel: 85.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 252
   - year_calendar: 2061
     year_investment: 36
-    gas: 2128
-    lignite: 1300
-    biomass: 1982
-    electricity: 2973
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 90.0
+    diesel: 90.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 256
   - year_calendar: 2062
     year_investment: 37
-    gas: 2127
-    lignite: 1300
-    biomass: 1992
-    electricity: 2930
-    petrol: 38
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 95.0
+    diesel: 95.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 259
   - year_calendar: 2063
     year_investment: 38
-    gas: 2125
-    lignite: 1300
-    biomass: 2001
-    electricity: 2887
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 100.0
+    diesel: 100.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 263
   - year_calendar: 2064
     year_investment: 39
-    gas: 2124
-    lignite: 1300
-    biomass: 2011
-    electricity: 2843
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 105.0
+    diesel: 105.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 267
   - year_calendar: 2065
     year_investment: 40
-    gas: 2123
-    lignite: 1300
-    biomass: 2020
-    electricity: 2800
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 5
+    gas: 3000
+    lignite: 2200
+    biomass: 2100
+    electricity: 4000
+    petrol: 110.0
+    diesel: 110.0
+    electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 271
 - scenario: CP_EC
   prices:
   - year_calendar: 2026
     year_investment: 1
-    gas: 2719
-    lignite: 1300
-    biomass: 1651
-    electricity: 4464
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 401
+    gas: 2400
+    lignite: 1350
+    biomass: 1600
+    electricity: 4300
+    petrol: 45.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 400
   - year_calendar: 2027
     year_investment: 2
-    gas: 2709
-    lignite: 1300
-    biomass: 1660
-    electricity: 4446
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 381
+    gas: 2700
+    lignite: 1500
+    biomass: 1625
+    electricity: 4700
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 370
   - year_calendar: 2028
     year_investment: 3
-    gas: 2699
-    lignite: 1300
-    biomass: 1670
-    electricity: 4427
-    petrol: 35
-    diesel: 33
-    electricity_emission_factor_kg_mwh: 362
+    gas: 2300
+    lignite: 1400
+    biomass: 1650
+    electricity: 4600
+    petrol: 45.0
+    diesel: 44.0
+    electricity_emission_factor_kg_mwh: 340
   - year_calendar: 2029
     year_investment: 4
-    gas: 4705
+    gas: 3500
     lignite: 2000
-    biomass: 2351
-    electricity: 5200
-    petrol: 50
-    diesel: 46
-    electricity_emission_factor_kg_mwh: 308
+    biomass: 2350
+    electricity: 5500
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 370
   - year_calendar: 2030
     year_investment: 5
-    gas: 4705
+    gas: 4000
     lignite: 2000
-    biomass: 2351
-    electricity: 6586
-    petrol: 50
-    diesel: 46
-    electricity_emission_factor_kg_mwh: 308
+    biomass: 2350
+    electricity: 6700
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 360
   - year_calendar: 2031
     year_investment: 6
-    gas: 6695
+    gas: 4500
     lignite: 2000
-    biomass: 3039
-    electricity: 8500
-    petrol: 64
-    diesel: 60
-    electricity_emission_factor_kg_mwh: 304
+    biomass: 3000
+    electricity: 8000
+    petrol: 65.0
+    diesel: 63.0
+    electricity_emission_factor_kg_mwh: 350
   - year_calendar: 2032
     year_investment: 7
-    gas: 6695
+    gas: 4500
     lignite: 2000
-    biomass: 3039
-    electricity: 8500
-    petrol: 64
-    diesel: 60
-    electricity_emission_factor_kg_mwh: 304
+    biomass: 3000
+    electricity: 8000
+    petrol: 65.0
+    diesel: 63.0
+    electricity_emission_factor_kg_mwh: 340
   - year_calendar: 2033
     year_investment: 8
-    gas: 4668
+    gas: 4000
     lignite: 2000
-    biomass: 2377
-    electricity: 6586
-    petrol: 50
-    diesel: 47
-    electricity_emission_factor_kg_mwh: 259
+    biomass: 2350
+    electricity: 7000
+    petrol: 50.0
+    diesel: 48.0
+    electricity_emission_factor_kg_mwh: 330
   - year_calendar: 2034
     year_investment: 9
-    gas: 3668
+    gas: 3000
     lignite: 2000
     biomass: 2000
-    electricity: 5200
-    petrol: 46
-    diesel: 44
-    electricity_emission_factor_kg_mwh: 239
+    electricity: 5750
+    petrol: 45.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 320
   - year_calendar: 2035
     year_investment: 10
-    gas: 2626
+    gas: 2800
     lignite: 1300
-    biomass: 1735
-    electricity: 4300
-    petrol: 36
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 224
+    biomass: 1750
+    electricity: 4850
+    petrol: 38.0
+    diesel: 38.0
+    electricity_emission_factor_kg_mwh: 250
   - year_calendar: 2036
     year_investment: 11
-    gas: 2636
+    gas: 2400
     lignite: 1300
-    biomass: 1744
-    electricity: 4283
-    petrol: 37
-    diesel: 34
-    electricity_emission_factor_kg_mwh: 204
+    biomass: 1760
+    electricity: 4900
+    petrol: 39.0
+    diesel: 39.0
+    electricity_emission_factor_kg_mwh: 225
   - year_calendar: 2037
     year_investment: 12
-    gas: 2645
+    gas: 2400
     lignite: 1300
-    biomass: 1754
-    electricity: 4267
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 184
+    biomass: 1770
+    electricity: 4950
+    petrol: 40.0
+    diesel: 40.0
+    electricity_emission_factor_kg_mwh: 200
   - year_calendar: 2038
     year_investment: 13
-    gas: 2655
+    gas: 2400
     lignite: 1300
-    biomass: 1763
-    electricity: 4250
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 164
+    biomass: 1780
+    electricity: 5000
+    petrol: 41.0
+    diesel: 41.0
+    electricity_emission_factor_kg_mwh: 175
   - year_calendar: 2039
     year_investment: 14
-    gas: 2664
-    lignite: 1300
-    biomass: 1773
-    electricity: 4233
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 145
+    gas: 2400
+    lignite: 1800
+    biomass: 1790
+    electricity: 4800
+    petrol: 42.0
+    diesel: 42.0
+    electricity_emission_factor_kg_mwh: 120
   - year_calendar: 2040
     year_investment: 15
-    gas: 2674
-    lignite: 1300
-    biomass: 1782
-    electricity: 4217
-    petrol: 37
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 125
+    gas: 2400
+    lignite: 1850
+    biomass: 1800
+    electricity: 4800
+    petrol: 43.0
+    diesel: 43.0
+    electricity_emission_factor_kg_mwh: 110
   - year_calendar: 2041
     year_investment: 16
-    gas: 2683
-    lignite: 1300
-    biomass: 1792
-    electricity: 4200
-    petrol: 38
-    diesel: 35
-    electricity_emission_factor_kg_mwh: 120
+    gas: 2420
+    lignite: 1900
+    biomass: 1810
+    electricity: 4600
+    petrol: 43.8
+    diesel: 43.8
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2042
     year_investment: 17
-    gas: 2693
-    lignite: 1300
-    biomass: 1801
-    electricity: 4183
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 115
+    gas: 2440
+    lignite: 1950
+    biomass: 1820
+    electricity: 4600
+    petrol: 44.5
+    diesel: 44.5
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2043
     year_investment: 18
-    gas: 2702
-    lignite: 1300
-    biomass: 1811
-    electricity: 4167
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 110
+    gas: 2460
+    lignite: 2000
+    biomass: 1830
+    electricity: 4600
+    petrol: 45.3
+    diesel: 45.3
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2044
     year_investment: 19
-    gas: 2712
-    lignite: 1300
-    biomass: 1820
-    electricity: 4150
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 105
+    gas: 2480
+    lignite: 2050
+    biomass: 1840
+    electricity: 4600
+    petrol: 46.0
+    diesel: 46.0
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2045
     year_investment: 20
-    gas: 2721
-    lignite: 1300
-    biomass: 1830
-    electricity: 4133
-    petrol: 38
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 100
+    gas: 2500
+    lignite: 2100
+    biomass: 1850
+    electricity: 4600
+    petrol: 46.8
+    diesel: 46.8
+    electricity_emission_factor_kg_mwh: 75
   - year_calendar: 2046
     year_investment: 21
-    gas: 2731
-    lignite: 1300
-    biomass: 1839
-    electricity: 4117
-    petrol: 39
-    diesel: 36
-    electricity_emission_factor_kg_mwh: 95
+    gas: 2500
+    lignite: 2150
+    biomass: 1860
+    electricity: 4400
+    petrol: 47.5
+    diesel: 47.5
+    electricity_emission_factor_kg_mwh: 50
   - year_calendar: 2047
     year_investment: 22
-    gas: 2740
-    lignite: 1300
-    biomass: 1849
-    electricity: 4100
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 90
+    gas: 2500
+    lignite: 2200
+    biomass: 1870
+    electricity: 4390
+    petrol: 48.3
+    diesel: 48.3
+    electricity_emission_factor_kg_mwh: 49
   - year_calendar: 2048
     year_investment: 23
-    gas: 2750
-    lignite: 1300
-    biomass: 1859
-    electricity: 4083
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 85
+    gas: 2500
+    lignite: 2200
+    biomass: 1880
+    electricity: 4380
+    petrol: 49.0
+    diesel: 49.0
+    electricity_emission_factor_kg_mwh: 48
   - year_calendar: 2049
     year_investment: 24
-    gas: 2759
-    lignite: 1300
-    biomass: 1868
-    electricity: 4067
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 80
+    gas: 2500
+    lignite: 2200
+    biomass: 1890
+    electricity: 4370
+    petrol: 49.8
+    diesel: 49.8
+    electricity_emission_factor_kg_mwh: 47
   - year_calendar: 2050
     year_investment: 25
-    gas: 2769
-    lignite: 1300
-    biomass: 1878
-    electricity: 4050
-    petrol: 39
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 75
+    gas: 2500
+    lignite: 2200
+    biomass: 1900
+    electricity: 4360
+    petrol: 50.5
+    diesel: 50.5
+    electricity_emission_factor_kg_mwh: 46
   - year_calendar: 2051
     year_investment: 26
-    gas: 2778
-    lignite: 1300
-    biomass: 1887
-    electricity: 4033
-    petrol: 40
-    diesel: 37
-    electricity_emission_factor_kg_mwh: 70
+    gas: 2500
+    lignite: 2200
+    biomass: 1910
+    electricity: 4350
+    petrol: 51.3
+    diesel: 51.3
+    electricity_emission_factor_kg_mwh: 45
   - year_calendar: 2052
     year_investment: 27
-    gas: 2788
-    lignite: 1300
-    biomass: 1897
-    electricity: 4017
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 65
+    gas: 2500
+    lignite: 2200
+    biomass: 1920
+    electricity: 4340
+    petrol: 52.0
+    diesel: 52.0
+    electricity_emission_factor_kg_mwh: 44
   - year_calendar: 2053
     year_investment: 28
-    gas: 2797
-    lignite: 1300
-    biomass: 1906
-    electricity: 4000
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 60
+    gas: 2500
+    lignite: 2200
+    biomass: 1930
+    electricity: 4330
+    petrol: 53.0
+    diesel: 53.0
+    electricity_emission_factor_kg_mwh: 43
   - year_calendar: 2054
     year_investment: 29
-    gas: 2807
-    lignite: 1300
-    biomass: 1916
-    electricity: 3983
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 55
+    gas: 2500
+    lignite: 2200
+    biomass: 1940
+    electricity: 4320
+    petrol: 54.0
+    diesel: 54.0
+    electricity_emission_factor_kg_mwh: 42
   - year_calendar: 2055
     year_investment: 30
-    gas: 2816
-    lignite: 1300
-    biomass: 1925
-    electricity: 3967
-    petrol: 40
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 50
+    gas: 2500
+    lignite: 2200
+    biomass: 1950
+    electricity: 4310
+    petrol: 55.0
+    diesel: 55.0
+    electricity_emission_factor_kg_mwh: 41
   - year_calendar: 2056
     year_investment: 31
-    gas: 2826
-    lignite: 1300
-    biomass: 1935
-    electricity: 3950
-    petrol: 41
-    diesel: 38
-    electricity_emission_factor_kg_mwh: 45
+    gas: 2500
+    lignite: 2200
+    biomass: 1960
+    electricity: 4300
+    petrol: 56.0
+    diesel: 56.0
+    electricity_emission_factor_kg_mwh: 40
   - year_calendar: 2057
     year_investment: 32
-    gas: 2835
-    lignite: 1300
-    biomass: 1944
-    electricity: 3933
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 40
+    gas: 2500
+    lignite: 2200
+    biomass: 1970
+    electricity: 4290
+    petrol: 57.0
+    diesel: 57.0
+    electricity_emission_factor_kg_mwh: 39
   - year_calendar: 2058
     year_investment: 33
-    gas: 2845
-    lignite: 1300
-    biomass: 1954
-    electricity: 3917
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 35
+    gas: 2500
+    lignite: 2200
+    biomass: 1980
+    electricity: 4280
+    petrol: 58.0
+    diesel: 58.0
+    electricity_emission_factor_kg_mwh: 38
   - year_calendar: 2059
     year_investment: 34
-    gas: 2854
-    lignite: 1300
-    biomass: 1963
-    electricity: 3900
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 30
+    gas: 2500
+    lignite: 2200
+    biomass: 1990
+    electricity: 4270
+    petrol: 59.0
+    diesel: 59.0
+    electricity_emission_factor_kg_mwh: 37
   - year_calendar: 2060
     year_investment: 35
-    gas: 2864
-    lignite: 1300
-    biomass: 1973
-    electricity: 3883
-    petrol: 41
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 25
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4260
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 36
   - year_calendar: 2061
     year_investment: 36
-    gas: 2873
-    lignite: 1300
-    biomass: 1982
-    electricity: 3867
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 20
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 35
   - year_calendar: 2062
     year_investment: 37
-    gas: 2883
-    lignite: 1300
-    biomass: 1992
-    electricity: 3850
-    petrol: 42
-    diesel: 39
-    electricity_emission_factor_kg_mwh: 15
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 34
   - year_calendar: 2063
     year_investment: 38
-    gas: 2892
-    lignite: 1300
-    biomass: 2001
-    electricity: 3833
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 10
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 33
   - year_calendar: 2064
     year_investment: 39
-    gas: 2902
-    lignite: 1300
-    biomass: 2011
-    electricity: 3817
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 32
   - year_calendar: 2065
     year_investment: 40
-    gas: 2911
-    lignite: 1300
-    biomass: 2020
-    electricity: 3800
-    petrol: 42
-    diesel: 40
-    electricity_emission_factor_kg_mwh: 5
+    gas: 2500
+    lignite: 2200
+    biomass: 2000
+    electricity: 4250
+    petrol: 60.0
+    diesel: 60.0
+    electricity_emission_factor_kg_mwh: 31

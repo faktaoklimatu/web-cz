@@ -7,9 +7,10 @@
   // ── State ────────────────────────────────────────────────────────────────
   // discountRate stored as integer percentage points (0–7); divided by 100 on use.
   const state = {
-    carbonPrice:  60,
-    discountRate:  3,
-    fuelScenario: 'CP',
+    carbonPrice:           60,
+    discountRate:           3,
+    fuelScenario:          'CP',
+    electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
   };
 
   // ── Tooltip ──────────────────────────────────────────────────────────────
@@ -77,11 +78,12 @@
           for (const sc of scenarios) {
             try {
               const result = CostsBenefits.calculate({
-                measureId:      m.id,
+                measureId:             m.id,
                 data,
-                discountRate:   dr,
-                carbonPriceEur: cp,
-                priceScenario:  sc,
+                discountRate:          dr,
+                carbonPriceEur:        cp,
+                priceScenario:         sc,
+                electricityPriceFactor: state.electricityPriceFactor,
               });
               vals.push(result.npv);
             } catch (_) { /* skip */ }
@@ -103,11 +105,12 @@
   function computeRow(measure) {
     try {
       const result = CostsBenefits.calculate({
-        measureId:      measure.id,
+        measureId:             measure.id,
         data,
-        discountRate:   state.discountRate / 100,
-        carbonPriceEur: state.carbonPrice,
-        priceScenario:  state.fuelScenario,
+        discountRate:          state.discountRate / 100,
+        carbonPriceEur:        state.carbonPrice,
+        priceScenario:         state.fuelScenario,
+        electricityPriceFactor: state.electricityPriceFactor,
       });
       const sens  = result.sensitivity || [];
       const low   = sens.length ? Math.min(...sens.map(s => s.minNpv)) : result.npv;
@@ -923,11 +926,12 @@
     let result;
     try {
       result = CostsBenefits.calculate({
-        measureId:      row.measureId,
+        measureId:             row.measureId,
         data,
-        discountRate:   state.discountRate / 100,
-        carbonPriceEur: state.carbonPrice,
-        priceScenario:  state.fuelScenario,
+        discountRate:          state.discountRate / 100,
+        carbonPriceEur:        state.carbonPrice,
+        priceScenario:         state.fuelScenario,
+        electricityPriceFactor: state.electricityPriceFactor,
       });
     } catch (e) { return; }
 
