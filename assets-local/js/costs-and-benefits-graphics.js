@@ -98,14 +98,21 @@
   // ── Sensitivity beeswarm constants ───────────────────────────────────────
   const SB_SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
   const SB_SCENARIO_LABEL = { CP: 'Současné politiky', NZ: 'Net-zero', CP_EC: 'Energetická krize' };
-  const SB_CARBON_PRICES  = [0, 60, 100, 200];
+  const SB_CARBON_PRICES  = [0, 40, 60, 70, 100, 200];
   const SB_DISCOUNT_RATES = [0, 3, 7];
   const SB_DEFAULT        = { scenario: 'CP', cp: 60, dr: 3 };
   const SB_X_DOMAIN       = [-1e6, 1e6];
+  const SB_CAPEX_CASES    = [
+    { key: 'worst',     label: 'Nejhorší',   capexMeasMult: 1.10, capexBlMult: 0.85 },
+    { key: 'reference', label: 'Referenční', capexMeasMult: 1.00, capexBlMult: 1.00 },
+    { key: 'best',      label: 'Nejlepší',   capexMeasMult: 0.85, capexBlMult: 1.10 },
+  ];
 
   // Color-by scales
   const SB_SC_COLORS  = { CP: '#e07b39', NZ: '#2a9d8f', CP_EC: '#9b2335' };
-  const SB_CP_COLORS  = { 0: '#fde0c8', 60: '#fc8d59', 100: '#d7301f', 200: '#7f0000' };
+  const SB_CP_COLOR_SCALE = d3.scaleLinear()
+    .domain([0, 60, 100, 200])
+    .range(['#fde0c8', '#fc8d59', '#d7301f', '#7f0000']);
   const SB_DR_COLORS  = { 0: '#c6dbef', 3:  '#4292c6', 7:   '#08306b' };
   const SB_CAT_COLORS = {
     'Rodinný dům uhlí – E':                              '#903156',
@@ -1832,7 +1839,6 @@
 
   const CHART_EXPORT_CSS = [
     'text { font-family: Roboto, system-ui, sans-serif; }',
-    '.chart-axis path { stroke: none; }',
     '.chart-axis line { stroke: #ddd; }',
     '.chart-axis text { font-size: 10px; fill: #888; font-family: Roboto, system-ui, sans-serif; }',
     '.q-quad-label   { font-size: 10px; fill: #bbb; font-style: italic; }',
@@ -1942,9 +1948,38 @@
   let sbShowViolin         = false;
   let sbColorBy            = null; // null | 'sc' | 'cp' | 'dr'
   let sbEnabledScenarios     = new Set(['CP', 'NZ', 'CP_EC']);
-  let sbEnabledDiscountRates = new Set([0, 3, 7]);
-  let sbEnabledCarbonPrices  = new Set([0, 60, 100, 200]);
+  let sbEnabledDiscountRates = new Set([3]);
+  let sbEnabledCarbonPrices  = new Set([40, 70, 100]);
   let sbEnabledBaselines     = null; // Set of measure_baseline names; null = all enabled
+  let sbEnabledPriceFactors  = new Set([0.9, 1.0, 1.1]);                  // global fuel price multipliers
+  let sbEnabledCapexCases    = new Set(['worst', 'reference', 'best']);    // CAPEX scenarios
+
+  // Registry for measure/baseline illustration SVGs.
+  // Populate externally before the chart renders, e.g.:
+  //   window.SB_ICONS['Tepelné čerpadlo'] = 'data:image/svg+xml;base64,...';
+  const SB_ICONS = window.SB_ICONS || {};
+
+  // Draw an illustration icon (or placeholder) into `svg` at the given position.
+  function sbDrawIcon(svg, name, x, y, w, h) {
+    const href = SB_ICONS[name];
+    if (href) {
+      svg.append('image')
+        .attr('href', href)
+        .attr('x', x).attr('y', y)
+        .attr('width', w).attr('height', h)
+        .attr('preserveAspectRatio', 'xMidYMid meet');
+    } else {
+      // Placeholder: dashed rectangle
+      svg.append('rect')
+        .attr('x', x).attr('y', y)
+        .attr('width', w).attr('height', h)
+        .attr('fill', 'none')
+        .attr('stroke', '#ccc')
+        .attr('stroke-width', 1)
+        .attr('stroke-dasharray', '4 3')
+        .attr('rx', 4);
+    }
+  }
 
   function sbFindEntry(measureName, category) {
     return [...(data.buildings_measures || []), ...(data.transport_measures || [])].find(m =>
@@ -1953,7 +1988,7 @@
     );
   }
 
-  function sbCalcNpv(entry, scenario, cp, dr) {
+  function sbCalcNpv(entry, scenario, cp, dr, pf, capexMeasMult, capexBlMult) {
     try {
       const r = CostsBenefits.calculate({
         measureId:             entry.id, data,
@@ -1961,12 +1996,15 @@
         carbonPriceEur:        cp,
         priceScenario:         scenario,
         electricityPriceFactor: 1.0,
+        globalPriceFactor:     pf,
+        capexMeasMult,
+        capexBlMult,
       });
       return isNaN(r.npv) ? null : r.npv;
     } catch (_) { return null; }
   }
 
-  function sbCalcNpvFull(entry, scenario, cp, dr) {
+  function sbCalcNpvFull(entry, scenario, cp, dr, pf, capexMeasMult, capexBlMult) {
     try {
       const r = CostsBenefits.calculate({
         measureId:             entry.id, data,
@@ -1974,6 +2012,9 @@
         carbonPriceEur:        cp,
         priceScenario:         scenario,
         electricityPriceFactor: 1.0,
+        globalPriceFactor:     pf,
+        capexMeasMult,
+        capexBlMult,
       });
       if (isNaN(r.npv)) return null;
       const sens    = r.sensitivity || [];
@@ -2134,6 +2175,60 @@
     });
     filtersDiv.appendChild(scRow);
 
+    // Price factor toggle pills (−10 % / 0 % / +10 %) — multi-select
+    const pfRow = document.createElement('div');
+    pfRow.className = 'q-filter-row';
+    const pfLbl = document.createElement('span');
+    pfLbl.className = 'q-filter-label';
+    pfLbl.textContent = 'Ceny energie:';
+    pfRow.appendChild(pfLbl);
+    [
+      { factor: 0.9, label: '−10 %' },
+      { factor: 1.0, label: '0 %' },
+      { factor: 1.1, label: '+10 %' },
+    ].forEach(item => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-pf-btn' + (sbEnabledPriceFactors.has(item.factor) ? ' active' : '');
+      btn.dataset.pf = item.factor;
+      btn.textContent = item.label;
+      btn.addEventListener('click', () => {
+        if (sbEnabledPriceFactors.has(item.factor)) {
+          if (sbEnabledPriceFactors.size > 1) sbEnabledPriceFactors.delete(item.factor);
+        } else {
+          sbEnabledPriceFactors.add(item.factor);
+        }
+        btn.classList.toggle('active', sbEnabledPriceFactors.has(item.factor));
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      pfRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(pfRow);
+
+    // CAPEX case toggle pills (Nejhorší / Referenční / Nejlepší) — multi-select
+    const cxRow = document.createElement('div');
+    cxRow.className = 'q-filter-row';
+    const cxLbl = document.createElement('span');
+    cxLbl.className = 'q-filter-label';
+    cxLbl.textContent = 'CAPEX případ:';
+    cxRow.appendChild(cxLbl);
+    SB_CAPEX_CASES.forEach(item => {
+      const btn = document.createElement('button');
+      btn.className = 'q-filter-btn sb-cx-btn' + (sbEnabledCapexCases.has(item.key) ? ' active' : '');
+      btn.dataset.cx = item.key;
+      btn.textContent = item.label;
+      btn.addEventListener('click', () => {
+        if (sbEnabledCapexCases.has(item.key)) {
+          if (sbEnabledCapexCases.size > 1) sbEnabledCapexCases.delete(item.key);
+        } else {
+          sbEnabledCapexCases.add(item.key);
+        }
+        btn.classList.toggle('active', sbEnabledCapexCases.has(item.key));
+        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
+      });
+      cxRow.appendChild(btn);
+    });
+    filtersDiv.appendChild(cxRow);
+
     // Discount rate toggle pills
     const drRow = document.createElement('div');
     drRow.className = 'q-filter-row';
@@ -2259,21 +2354,26 @@
       const entry = sbFindEntry(sbSelectedMeasure, cat);
       if (!entry || !entry.measure_baseline_id) continue;
       if (sbEnabledBaselines && !sbEnabledBaselines.has(entry.measure_baseline)) continue;
-      for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
-        const cps = sc === 'NZ'
-          ? (sbEnabledCarbonPrices.has(SB_DEFAULT.cp) ? [SB_DEFAULT.cp] : [])
-          : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
-        for (const cp of cps) {
-          for (const dr of SB_DISCOUNT_RATES.filter(r => sbEnabledDiscountRates.has(r))) {
-            const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr;
-            if (sbShowUncertainty) {
-              const res = sbCalcNpvFull(entry, sc, cp, dr);
-              if (res == null) continue;
-              dots.push({ cat, sc, cp, dr, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
-            } else {
-              const npv = sbCalcNpv(entry, sc, cp, dr);
-              if (npv == null) continue;
-              dots.push({ cat, sc, cp, dr, npv, isDefault, x: 0, y: 0 });
+      for (const capexCase of SB_CAPEX_CASES.filter(c => sbEnabledCapexCases.has(c.key))) {
+        const { capexMeasMult, capexBlMult } = capexCase;
+        for (const pf of [...sbEnabledPriceFactors].sort()) {
+          for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
+            const cps = sc === 'NZ'
+              ? [SB_DEFAULT.cp]
+              : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
+            for (const cp of cps) {
+              for (const dr of SB_DISCOUNT_RATES.filter(r => sbEnabledDiscountRates.has(r))) {
+                const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr && pf === 1.0 && capexCase.key === 'reference';
+                if (sbShowUncertainty) {
+                  const res = sbCalcNpvFull(entry, sc, cp, dr, pf, capexMeasMult, capexBlMult);
+                  if (res == null) continue;
+                  dots.push({ cat, sc, cp, dr, pf, capexCase: capexCase.key, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
+                } else {
+                  const npv = sbCalcNpv(entry, sc, cp, dr, pf, capexMeasMult, capexBlMult);
+                  if (npv == null) continue;
+                  dots.push({ cat, sc, cp, dr, pf, capexCase: capexCase.key, npv, isDefault, x: 0, y: 0 });
+                }
+              }
             }
           }
         }
@@ -2287,7 +2387,7 @@
 
     const cats   = group.cats;
     const totalW = container.clientWidth || 720;
-    const DOT_R  = 5;
+    const DOT_R  = 6;
 
     // Resolve lane config for the active grouping mode
     const fuelOf = d => /uhlí/i.test(d.cat) ? 'Uhlí' : /plyn/i.test(d.cat) ? 'Plyn' : 'Ostatní';
@@ -2306,8 +2406,8 @@
     const sbLcColor  = name => /renovace bez zateplení/i.test(name) ? '#c05a1a' : '#1a7a85';
 
     const LANE_CONFIGS = {
-      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#555',    leftMargin: 200, rightMargin: 160, showBaselineLabel: true },
-      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#555', leftMargin: 180, rightMargin: 160, showBaselineLabel: true },
+      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#555',    leftMargin: 240, rightMargin: 220, showBaselineLabel: true },
+      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#555', leftMargin: 240, rightMargin: 220, showBaselineLabel: true },
       scenario: { lanes: SB_SCENARIOS,     laneOf: d => d.sc,    labelFn: v => SB_SCENARIO_LABEL[v], colorFn: () => '#555',                        leftMargin: 160 },
       price:    { lanes: SB_CARBON_PRICES, laneOf: d => d.cp,    labelFn: v => v + ' €',             colorFn: () => '#555',                        leftMargin:  60 },
       discount: { lanes: SB_DISCOUNT_RATES,laneOf: d => d.dr,    labelFn: v => v + ' %',             colorFn: () => '#555',                        leftMargin:  50 },
@@ -2318,7 +2418,7 @@
     let M, LANE_H, totalH, yTarget, yClamp;
     if (laneCfg) {
       M      = { top: 16, right: laneCfg.rightMargin || 24, bottom: 52, left: laneCfg.leftMargin };
-      LANE_H = DOT_R * 14;
+      LANE_H = DOT_R * 28;
       totalH = laneCfg.lanes.length * LANE_H + M.top + M.bottom;
       yTarget = d => {
         const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
@@ -2331,7 +2431,7 @@
       };
     } else {
       M      = { top: 20, right: 24, bottom: 52, left: 24 };
-      LANE_H = DOT_R * 24;
+      LANE_H = DOT_R * 48;
       totalH = LANE_H + M.top + M.bottom;
       const midY = M.top + LANE_H / 2;
       yTarget = () => midY;
@@ -2339,7 +2439,7 @@
     }
 
     const chartW = Math.max(totalW - M.left - M.right, 200);
-    const xScale = d3.scaleLinear().domain(SB_X_DOMAIN).range([0, chartW]);
+    const xScale = d3.scaleLinear().domain([SB_X_DOMAIN[1], SB_X_DOMAIN[0]]).range([0, chartW]);
 
     const xTarget = d => M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], d.npv)));
     dots.forEach(d => { d.x = xTarget(d); d.y = yTarget(d); });
@@ -2347,7 +2447,7 @@
     // Snap x back to NPV position after each tick so only y is displaced by collide
     const sim = d3.forceSimulation(dots)
       .force('y', d3.forceY(d => yTarget(d)).strength(laneCfg ? 0.85 : 0.3))
-      .force('collide', d3.forceCollide(DOT_R * 1.2))
+      .force('collide', d3.forceCollide(DOT_R * 1.5))
       .stop();
     const ticks = laneCfg ? 120 : 150;
     for (let i = 0; i < ticks; i++) {
@@ -2380,38 +2480,45 @@
         const labelY = showBl ? cy - 5 : cy + 4;
 
         if (showBl) {
-          // Left: category name + fossil baseline (fosilní je horší → vlevo)
-          svg.append('text')
-            .attr('x', M.left - 8).attr('y', labelY)
-            .attr('text-anchor', 'end')
-            .attr('font-size', '11px').attr('fill', '#53616e')
-            .text(laneCfg.labelFn(v));
+          const ICON_W = 48, ICON_H = 48, ICON_GAP = 8;
 
           const firstCat = laneCfg.laneOf === rdFuelLaneOf
             ? cats.find(c => rdFuelLaneOf({ cat: c }) === v)
             : v;
           const blEntry = firstCat ? sbFindEntry(sbSelectedMeasure, firstCat) : null;
           const blName  = blEntry?.measure_baseline || '';
-          if (blName) {
-            const blColor = /uhlí|uhelný/i.test(blName) ? '#903156'
-                          : /plyn/i.test(blName)         ? '#e37373'
-                          : /renovace/i.test(blName)     ? '#c05a1a'
-                          : '#888';
-            svg.append('text')
-              .attr('x', M.left - 8).attr('y', cy + 9)
-              .attr('text-anchor', 'end')
-              .attr('font-size', '10px').attr('font-weight', '700')
-              .attr('fill', blColor)
-              .text(blName);
-          }
+          const blColor = /uhlí|uhelný/i.test(blName) ? '#903156'
+                        : /plyn/i.test(blName)         ? '#e37373'
+                        : /renovace/i.test(blName)     ? '#c05a1a'
+                        : '#888';
 
-          // Right: LC measure name (nízkoemisní je lepší → vpravo)
+          // LEFT: LC measure icon + name
+          sbDrawIcon(svg, sbSelectedMeasure, 4, cy - ICON_H / 2, ICON_W, ICON_H);
           svg.append('text')
-            .attr('x', M.left + chartW + 8).attr('y', cy + 4)
-            .attr('text-anchor', 'start')
+            .attr('x', M.left - ICON_GAP).attr('y', cy - 1)
+            .attr('text-anchor', 'end')
             .attr('font-size', '10px').attr('font-weight', '700')
             .attr('fill', sbLcColor(sbSelectedMeasure))
             .text(sbSelectedMeasure);
+          svg.append('text')
+            .attr('x', M.left - ICON_GAP).attr('y', cy + 11)
+            .attr('text-anchor', 'end')
+            .attr('font-size', '10px').attr('fill', '#53616e')
+            .text(laneCfg.labelFn(v));
+
+          // RIGHT: category name + fossil baseline + icon
+          svg.append('text')
+            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy - 1)
+            .attr('text-anchor', 'start')
+            .attr('font-size', '10px').attr('font-weight', '700')
+            .attr('fill', blColor)
+            .text(blName);
+          svg.append('text')
+            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy + 11)
+            .attr('text-anchor', 'start')
+            .attr('font-size', '10px').attr('fill', '#53616e')
+            .text(laneCfg.labelFn(v));
+          sbDrawIcon(svg, blName, totalW - ICON_GAP - ICON_W, cy - ICON_H / 2, ICON_W, ICON_H);
         } else {
           svg.append('text')
             .attr('x', M.left - 8).attr('y', labelY)
@@ -2433,7 +2540,7 @@
           if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
           return v === 0 ? '0' : s + a;
         }));
-        sel.select('.domain').attr('stroke', 'none');
+        sel.select('.domain').remove();
         sel.selectAll('.tick line').attr('stroke', '#9ba5ad').attr('stroke-width', 1);
         sel.selectAll('.tick text')
           .attr('fill', '#53616e')
@@ -2448,15 +2555,6 @@
       .attr('font-family', '"Roboto", system-ui, sans-serif')
       .text('Rozdíl NPV oproti základní variantě (Kč)');
 
-    // Territory labels
-    svg.append('text')
-      .attr('x', M.left + 4).attr('y', totalH - M.bottom + 14)
-      .attr('font-size', '9px').attr('fill', '#bbb').attr('text-anchor', 'start')
-      .text('← fosilní výhodnější');
-    svg.append('text')
-      .attr('x', M.left + chartW - 4).attr('y', totalH - M.bottom + 14)
-      .attr('font-size', '9px').attr('fill', '#bbb').attr('text-anchor', 'end')
-      .text('nízkoemisní výhodnější →');
 
     svg.append('text')
       .attr('x', zx).attr('y', M.top - 4)
@@ -2566,7 +2664,7 @@
         .attr('r', d => d.isDefault ? DOT_R + 1 : DOT_R)
         .attr('fill', d => {
           if (sbColorBy === 'sc') return SB_SC_COLORS[d.sc] || '#888';
-          if (sbColorBy === 'cp') return SB_CP_COLORS[d.cp] || '#888';
+          if (sbColorBy === 'cp') return SB_CP_COLOR_SCALE(d.cp);
           if (sbColorBy === 'dr') return SB_DR_COLORS[d.dr] || '#888';
           return d.isDefault ? '#53616e' : '#9ba5ad';
         })
