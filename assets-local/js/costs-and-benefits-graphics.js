@@ -103,12 +103,18 @@
   const SB_SCENARIO_LABEL = { CP: 'Současné politiky', NZ: 'Net-zero', CP_EC: 'Energetická krize' };
   const SB_CARBON_PRICES  = [0, 40, 60, 70, 100, 200];
   const SB_DISCOUNT_RATES = [0, 3, 7];
-  const SB_DEFAULT        = { scenario: 'CP', cp: 60, dr: 3 };
+  const SB_DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
   const SB_X_DOMAIN       = [-1e6, 1e6];
   const SB_CAPEX_CASES    = [
-    { key: 'worst',     label: 'Nejhorší',   capexMeasMult: 1.10, capexBlMult: 0.85 },
-    { key: 'reference', label: 'Referenční', capexMeasMult: 1.00, capexBlMult: 1.00 },
-    { key: 'best',      label: 'Nejlepší',   capexMeasMult: 0.85, capexBlMult: 1.10 },
+    { key: 'worst',     label: 'Nejhorší', sensitivityFactor: +1.0 },
+    { key: 'reference', label: 'Normální', sensitivityFactor:  0.0 },
+    { key: 'best',      label: 'Nejlepší', sensitivityFactor: -1.0 },
+  ];
+  const SB_CAPEX_FALLBACK = 0.10;
+  const SB_PRICE_CASES    = [
+    { key: 'worst',  label: 'Pesimistický', fossilMult: 0.9, cleanMult: 1.1 },
+    { key: 'normal', label: 'Normální',     fossilMult: 1.0, cleanMult: 1.0 },
+    { key: 'best',   label: 'Optimistický', fossilMult: 1.1, cleanMult: 0.9 },
   ];
 
   // Color-by scales
@@ -1967,7 +1973,7 @@
   let sbEnabledDiscountRates = new Set([3]);
   let sbEnabledCarbonPrices  = new Set([40, 70, 100]);
   let sbEnabledBaselines     = null; // Set of measure_baseline names; null = all enabled
-  let sbEnabledPriceFactors  = new Set([0.9, 1.0, 1.1]);                  // global fuel price multipliers
+  let sbEnabledPriceCases    = new Set(['worst', 'normal', 'best']);        // energy price cases
   let sbEnabledCapexCases    = new Set(['worst', 'reference', 'best']);    // CAPEX scenarios
 
   // Registry for measure/baseline illustration SVGs.
@@ -2004,7 +2010,7 @@
     );
   }
 
-  function sbCalcNpv(entry, scenario, cp, dr, pf, capexMeasMult, capexBlMult) {
+  function sbCalcNpv(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
     try {
       const r = CostsBenefits.calculate({
         measureId:             entry.id, data,
@@ -2012,7 +2018,8 @@
         carbonPriceEur:        cp,
         priceScenario:         scenario,
         electricityPriceFactor: 1.0,
-        globalPriceFactor:     pf,
+        fossilMult,
+        cleanMult,
         capexMeasMult,
         capexBlMult,
       });
@@ -2020,7 +2027,7 @@
     } catch (_) { return null; }
   }
 
-  function sbCalcNpvFull(entry, scenario, cp, dr, pf, capexMeasMult, capexBlMult) {
+  function sbCalcNpvFull(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
     try {
       const r = CostsBenefits.calculate({
         measureId:             entry.id, data,
@@ -2028,7 +2035,8 @@
         carbonPriceEur:        cp,
         priceScenario:         scenario,
         electricityPriceFactor: 1.0,
-        globalPriceFactor:     pf,
+        fossilMult,
+        cleanMult,
         capexMeasMult,
         capexBlMult,
       });
@@ -2198,22 +2206,18 @@
     pfLbl.className = 'q-filter-label';
     pfLbl.textContent = 'Ceny energie:';
     pfRow.appendChild(pfLbl);
-    [
-      { factor: 0.9, label: '−10 %' },
-      { factor: 1.0, label: '0 %' },
-      { factor: 1.1, label: '+10 %' },
-    ].forEach(item => {
+    SB_PRICE_CASES.forEach(item => {
       const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-pf-btn' + (sbEnabledPriceFactors.has(item.factor) ? ' active' : '');
-      btn.dataset.pf = item.factor;
+      btn.className = 'q-filter-btn sb-pf-btn' + (sbEnabledPriceCases.has(item.key) ? ' active' : '');
+      btn.dataset.pf = item.key;
       btn.textContent = item.label;
       btn.addEventListener('click', () => {
-        if (sbEnabledPriceFactors.has(item.factor)) {
-          if (sbEnabledPriceFactors.size > 1) sbEnabledPriceFactors.delete(item.factor);
+        if (sbEnabledPriceCases.has(item.key)) {
+          if (sbEnabledPriceCases.size > 1) sbEnabledPriceCases.delete(item.key);
         } else {
-          sbEnabledPriceFactors.add(item.factor);
+          sbEnabledPriceCases.add(item.key);
         }
-        btn.classList.toggle('active', sbEnabledPriceFactors.has(item.factor));
+        btn.classList.toggle('active', sbEnabledPriceCases.has(item.key));
         sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
       });
       pfRow.appendChild(btn);
@@ -2365,29 +2369,36 @@
 
     // Build all dots: one per (category × scenario × carbon_price × discount_rate).
     // NZ scenario has a fixed internal carbon trajectory — iterate only once to avoid duplicates.
+    const sbAllMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
     const dots = [];
     for (const cat of group.cats) {
       const entry = sbFindEntry(sbSelectedMeasure, cat);
       if (!entry || !entry.measure_baseline_id) continue;
       if (sbEnabledBaselines && !sbEnabledBaselines.has(entry.measure_baseline)) continue;
+      const baseline = sbAllMeasures.find(m => m.id === entry.measure_baseline_id);
+      const measS = entry.capex_sensitivity    ?? SB_CAPEX_FALLBACK;
+      const blS   = baseline?.capex_sensitivity ?? SB_CAPEX_FALLBACK;
       for (const capexCase of SB_CAPEX_CASES.filter(c => sbEnabledCapexCases.has(c.key))) {
-        const { capexMeasMult, capexBlMult } = capexCase;
-        for (const pf of [...sbEnabledPriceFactors].sort()) {
+        const { sensitivityFactor } = capexCase;
+        const capexMeasMult = 1 + sensitivityFactor * measS;
+        const capexBlMult   = 1 - sensitivityFactor * blS;
+        for (const priceCase of SB_PRICE_CASES.filter(p => sbEnabledPriceCases.has(p.key))) {
+          const { fossilMult, cleanMult } = priceCase;
           for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
             const cps = sc === 'NZ'
               ? [SB_DEFAULT.cp]
               : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
             for (const cp of cps) {
               for (const dr of SB_DISCOUNT_RATES.filter(r => sbEnabledDiscountRates.has(r))) {
-                const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr && pf === 1.0 && capexCase.key === 'reference';
+                const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr && priceCase.key === 'normal' && capexCase.key === 'reference';
                 if (sbShowUncertainty) {
-                  const res = sbCalcNpvFull(entry, sc, cp, dr, pf, capexMeasMult, capexBlMult);
+                  const res = sbCalcNpvFull(entry, sc, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult);
                   if (res == null) continue;
-                  dots.push({ cat, sc, cp, dr, pf, capexCase: capexCase.key, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
+                  dots.push({ cat, sc, cp, dr, priceCase: priceCase.key, capexCase: capexCase.key, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
                 } else {
-                  const npv = sbCalcNpv(entry, sc, cp, dr, pf, capexMeasMult, capexBlMult);
+                  const npv = sbCalcNpv(entry, sc, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult);
                   if (npv == null) continue;
-                  dots.push({ cat, sc, cp, dr, pf, capexCase: capexCase.key, npv, isDefault, x: 0, y: 0 });
+                  dots.push({ cat, sc, cp, dr, priceCase: priceCase.key, capexCase: capexCase.key, npv, isDefault, x: 0, y: 0 });
                 }
               }
             }
@@ -2401,9 +2412,13 @@
       return;
     }
 
-    const cats   = group.cats;
+    const cats = group.cats.slice().sort((a, b) => {
+      const npvA = (dots.find(d => d.cat === a && d.isDefault) || {}).npv ?? 0;
+      const npvB = (dots.find(d => d.cat === b && d.isDefault) || {}).npv ?? 0;
+      return npvB - npvA;
+    });
     const totalW = container.clientWidth || 720;
-    const DOT_R  = 6;
+    const DOT_R  = 7.2;
 
     // Resolve lane config for the active grouping mode
     const fuelOf = d => /uhlí/i.test(d.cat) ? 'Uhlí' : /plyn/i.test(d.cat) ? 'Plyn' : 'Ostatní';
@@ -2455,7 +2470,7 @@
     }
 
     const chartW = Math.max(totalW - M.left - M.right, 200);
-    const xScale = d3.scaleLinear().domain([SB_X_DOMAIN[1], SB_X_DOMAIN[0]]).range([0, chartW]);
+    const xScale = d3.scaleLinear().domain([SB_X_DOMAIN[0], SB_X_DOMAIN[1]]).range([0, chartW]);
 
     const xTarget = d => M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], d.npv)));
     dots.forEach(d => { d.x = xTarget(d); d.y = yTarget(d); });
@@ -2508,33 +2523,37 @@
                         : /renovace/i.test(blName)     ? '#c05a1a'
                         : '#888';
 
-          // LEFT: LC measure icon + name
-          sbDrawIcon(svg, sbSelectedMeasure, 4, cy - ICON_H / 2, ICON_W, ICON_H);
+          // LEFT: fossil baseline icon + name
+          sbDrawIcon(svg, blName, 4, cy - ICON_H / 2, ICON_W, ICON_H);
           svg.append('text')
             .attr('x', M.left - ICON_GAP).attr('y', cy - 1)
             .attr('text-anchor', 'end')
-            .attr('font-size', '10px').attr('font-weight', '700')
-            .attr('fill', sbLcColor(sbSelectedMeasure))
-            .text(sbSelectedMeasure);
+            .attr('font-size', '15px').attr('font-weight', '700')
+            .attr('font-family', 'Inter, system-ui, sans-serif')
+            .attr('fill', '#222')
+            .text(blName);
           svg.append('text')
-            .attr('x', M.left - ICON_GAP).attr('y', cy + 11)
+            .attr('x', M.left - ICON_GAP).attr('y', cy + 17)
             .attr('text-anchor', 'end')
-            .attr('font-size', '10px').attr('fill', '#53616e')
+            .attr('font-size', '15px').attr('font-family', 'Inter, system-ui, sans-serif')
+            .attr('fill', '#53616e')
             .text(laneCfg.labelFn(v));
 
-          // RIGHT: category name + fossil baseline + icon
+          // RIGHT: LC measure name + icon
           svg.append('text')
             .attr('x', M.left + chartW + ICON_GAP).attr('y', cy - 1)
             .attr('text-anchor', 'start')
-            .attr('font-size', '10px').attr('font-weight', '700')
-            .attr('fill', blColor)
-            .text(blName);
+            .attr('font-size', '15px').attr('font-weight', '700')
+            .attr('font-family', 'Inter, system-ui, sans-serif')
+            .attr('fill', '#222')
+            .text(sbSelectedMeasure);
           svg.append('text')
-            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy + 11)
+            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy + 17)
             .attr('text-anchor', 'start')
-            .attr('font-size', '10px').attr('fill', '#53616e')
+            .attr('font-size', '15px').attr('font-family', 'Inter, system-ui, sans-serif')
+            .attr('fill', '#53616e')
             .text(laneCfg.labelFn(v));
-          sbDrawIcon(svg, blName, totalW - ICON_GAP - ICON_W, cy - ICON_H / 2, ICON_W, ICON_H);
+          sbDrawIcon(svg, sbSelectedMeasure, totalW - ICON_GAP - ICON_W, cy - ICON_H / 2, ICON_W, ICON_H);
         } else {
           svg.append('text')
             .attr('x', M.left - 8).attr('y', labelY)

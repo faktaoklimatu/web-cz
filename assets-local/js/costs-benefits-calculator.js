@@ -210,6 +210,8 @@ const CostsBenefits = (() => {
     const fuelPriceMult         = opts.fuelPriceMult         !== undefined ? opts.fuelPriceMult         : 1.0;
     const fuelPriceName         = opts.fuelPriceName         || null;
     const globalPriceFactor     = opts.globalPriceFactor     !== undefined ? opts.globalPriceFactor     : 1.0;
+    const fossilMult            = opts.fossilMult            !== undefined ? opts.fossilMult            : 1.0;
+    const cleanMult             = opts.cleanMult             !== undefined ? opts.cleanMult             : 1.0;
 
     const sccCzkDefault = carbonPriceEur * exchangeRate;
     const lifetime = Math.min(baseline.lifetime, measure.lifetime);
@@ -222,7 +224,10 @@ const CostsBenefits = (() => {
       if (!rawPrices) continue;
 
       // Apply optional fuel price multipliers for sensitivity analysis
-      const yearPrices = applyGlobalPriceFactor(applyFuelPriceMult(rawPrices, fuelPriceName, fuelPriceMult), globalPriceFactor);
+      const yearPrices = applyEnergyPriceCase(
+        applyGlobalPriceFactor(applyFuelPriceMult(rawPrices, fuelPriceName, fuelPriceMult), globalPriceFactor),
+        fossilMult, cleanMult
+      );
 
       // Use per-year NZ carbon price trajectory when available
       const sccCzk = yearPrices.carbon_price_eur_nz != null
@@ -250,6 +255,8 @@ const CostsBenefits = (() => {
   }
 
   const FUEL_PRICE_KEYS = ['electricity', 'gas', 'lignite', 'biomass', 'petrol', 'diesel'];
+  const FOSSIL_PRICE_KEYS = ['gas', 'lignite', 'petrol', 'diesel'];
+  const CLEAN_PRICE_KEYS  = ['electricity', 'biomass'];
 
   // Returns prices for a single year with all fuel prices scaled by `factor`
   function applyGlobalPriceFactor(yearPrices, factor) {
@@ -258,6 +265,17 @@ const CostsBenefits = (() => {
     for (const key of FUEL_PRICE_KEYS) {
       if (copy[key] !== undefined) copy[key] *= factor;
     }
+    return copy;
+  }
+
+  // Returns prices for a single year with fossil and clean fuels scaled independently.
+  // fossilMult applies to gas, lignite, petrol, diesel.
+  // cleanMult  applies to electricity, biomass.
+  function applyEnergyPriceCase(yearPrices, fossilMult, cleanMult) {
+    if (fossilMult === 1.0 && cleanMult === 1.0) return yearPrices;
+    const copy = Object.assign({}, yearPrices);
+    FOSSIL_PRICE_KEYS.forEach(k => { if (copy[k] != null) copy[k] *= fossilMult; });
+    CLEAN_PRICE_KEYS.forEach(k =>  { if (copy[k] != null) copy[k] *= cleanMult;  });
     return copy;
   }
 
@@ -294,9 +312,13 @@ const CostsBenefits = (() => {
       energyDiff:        null,
     });
 
+    const fossilMult = opts.fossilMult !== undefined ? opts.fossilMult : 1.0;
+    const cleanMult  = opts.cleanMult  !== undefined ? opts.cleanMult  : 1.0;
+
     for (let t = 1; t <= lifetime; t++) {
-      const yearPrices = getPricesForYear(scenarioPrices, t);
-      if (!yearPrices) continue;
+      const rawPrices  = getPricesForYear(scenarioPrices, t);
+      if (!rawPrices) continue;
+      const yearPrices = applyEnergyPriceCase(rawPrices, fossilMult, cleanMult);
 
       const sccCzk = yearPrices.carbon_price_eur_nz != null
         ? yearPrices.carbon_price_eur_nz * exchangeRate
@@ -565,10 +587,15 @@ const CostsBenefits = (() => {
     const {
       measureId,
       data,
-      discountRate   = DEFAULT_DISCOUNT_RATE,
-      carbonPriceEur = DEFAULT_CARBON_PRICE_EUR,
-      priceScenario  = DEFAULT_PRICE_SCENARIO,
-      exchangeRate   = DEFAULT_EXCHANGE_RATE,
+      discountRate      = DEFAULT_DISCOUNT_RATE,
+      carbonPriceEur    = DEFAULT_CARBON_PRICE_EUR,
+      priceScenario     = DEFAULT_PRICE_SCENARIO,
+      exchangeRate      = DEFAULT_EXCHANGE_RATE,
+      globalPriceFactor = 1.0,
+      fossilMult        = 1.0,
+      cleanMult         = 1.0,
+      capexMeasMult     = 1.0,
+      capexBlMult       = 1.0,
     } = options;
     const electricityPriceFactor = options.electricityPriceFactor !== undefined
       ? options.electricityPriceFactor
@@ -591,7 +618,7 @@ const CostsBenefits = (() => {
     const emissionFactors = data.fuel_emission_factors;
     const lifetime        = Math.min(baseline.lifetime, measure.lifetime);
 
-    const baseOpts = { discountRate, carbonPriceEur, exchangeRate, electricityPriceFactor, globalPriceFactor, capexMeasMult, capexBlMult };
+    const baseOpts = { discountRate, carbonPriceEur, exchangeRate, electricityPriceFactor, globalPriceFactor, fossilMult, cleanMult, capexMeasMult, capexBlMult };
 
     const npv = computeNpv(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors);
 
