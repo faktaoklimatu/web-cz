@@ -628,9 +628,8 @@ extra-scripts:
             Střešní FVE: baseline Nedělám nic 4 MWh/rok el. ze sítě → opatření 1 MWh/rok; úspora 3 MWh/rok el. × 20 % (podíl plynu v české výrobě elektřiny, výhledová hodnota) / 55 % (účinnost CCGT) ≈ 1,1 MWh/rok plynu.
             Malý elektromobil: baseline Nové malé auto na benzín, 6,5 l/100 km × 15 000 km/rok = 975 l/rok → elektromobil nespotřebuje benzín.
             Velký elektromobil: baseline Nové velké auto na naftu, 7,2 l/100 km × 15 000 km/rok = 1 080 l/rok nafty; 1 080 / 158,987 ≈ 6,8 barelu/rok.
-            60 TWh dovozů plynu vychází z dovozu 5 442 039 939 kg zemního plynu do ČR v roce 2025 při výhřevnosti ~11 kWh/kg.
-            5–6 % dovozů ropy vychází z dovozu 6 856 765 464 kg ropy v roce 2025 (~136 kg/barel → ~50,4 mil. barelů); úspora benzínu 487,5 mil. l / 158,987 l/barel ≈ 3,1 mil. barelů (6 %); úspora nafty 432 mil. l / 158,987 l/barel ≈ 2,7 mil. barelů (5 %).
-            Hodnota ušetřeného paliva vychází z cen dovozu paliva (nikoliv maloobchodních cen): pro plyn €40/MWh (běžné ceny) a €180/MWh (energetická krize) — TTF benchmark; pro ropu $80/barel resp. $150/barel (Brent crude); objem ušetřené ropy přepočten z litrů rafinovaného paliva na barely surové ropy pomocí typické výtěžnosti evropských rafinerií (benzín 20 % → 5 l ropy/l benzínu, nafta 40 % → 2,5 l ropy/l nafty); přepočet EUR/CZK = 25, USD/CZK = 23. Jedná se o úspory devizových výdajů ČR po celou dobu životnosti opatření — bez diskontování.
+            Počet nasazených jednotek je u každého opatření zvolen tak, aby celková úspora odpovídala přibližně 1 % českých dovozů příslušného paliva. Základna: 60 TWh/rok dovozu zemního plynu (5 442 039 939 kg při výhřevnosti ~11 kWh/kg); 50,4 mil. barelů/rok dovozu ropy (6 856 765 464 kg při ~136 kg/barel).
+            Hodnota ušetřeného paliva vychází z cen dovozu paliva (nikoliv maloobchodních cen): pro plyn €40/MWh (běžné ceny) a €180/MWh (energetická krize) — TTF benchmark; pro ropu $80/barel resp. $150/barel (Brent crude); přepočet EUR/CZK = 25, USD/CZK = 23. Jedná se o úspory devizových výdajů ČR po celou dobu životnosti opatření — bez diskontování.
           </td>
         </tr>
       </tfoot>
