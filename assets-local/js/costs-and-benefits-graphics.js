@@ -842,6 +842,12 @@
         const kcPerTLow  = -npvHigh / savedT;   // most negative = most beneficial per tonne
         const kcPerTHigh = -npvLow  / savedT;   // most positive = most costly per tonne
 
+        const fuelSavingsL  = r.fuelSavings ? r.fuelSavings.totalL   : 0;
+        const gasSavingsMwh = r.gasSavings  ? r.gasSavings.totalMwh  : 0;
+        // Choose the non-zero dimension; prefer litres (transport) over MWh (buildings gas)
+        const fuelSavingsSize = fuelSavingsL > 0 ? fuelSavingsL : gasSavingsMwh;
+        const fuelSavingsUnit = fuelSavingsL > 0 ? 'l' : 'MWh';
+
         points.push({
           id:        m.id,
           name:      m.measure_name,
@@ -854,6 +860,10 @@
           npvLow,    npvHigh,
           savedTLow, savedTHigh,
           kcPerTLow, kcPerTHigh,
+          fuelSavingsL,
+          gasSavingsMwh,
+          fuelSavingsSize,
+          fuelSavingsUnit,
         });
       } catch (_) { /* skip */ }
     }
@@ -1086,6 +1096,213 @@
       .transition().duration(Q_ANIM_MS).ease(d3.easeCubicInOut)
       .attr('cx', d => ox + xScale(d.npv))
       .attr('cy', d => oy + yScale(yVal(d)));
+
+    ptSel.exit().remove();
+  }
+
+  // ── Fuel savings bubble chart ────────────────────────────────────────────
+  // Copy of the quadrant chart, but:
+  //   • Only measures that actually save emissions (savedT > 0)
+  //   • Bubble radius ∝ √(fuel saved: litres of petrol/diesel for transport,
+  //                        MWh of gas for buildings)
+  // sector: 'buildings' | 'transport' — pass to filter to one sector.
+  function renderFuelBubbleChart(container, sector) {
+    if (!quadrantDomains) return;
+
+    const allPoints = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+      .filter(p =>
+        p.savedT > 0 &&
+        (!sector || p.sector === sector) &&
+        // Transport: exclude hybrids (petrol savings, but not a full decarbonisation measure)
+        !(sector === 'transport' && p.name.toLowerCase().includes('hybrid'))
+      );
+
+    if (!allPoints.length) return;
+
+    const M = { top: 32, right: 24, bottom: 56, left: 100 };
+    const totalW = container.clientWidth || 720;
+    const totalH = 560;
+    const chartW = Math.max(totalW - M.left - M.right, 200);
+    const chartH = totalH - M.top - M.bottom;
+    const ox = M.left, oy = M.top;
+
+    // X: dynamic domain from the filtered points so each sector fills the chart.
+    // Y: clip to positive only (savedT > 0), with a little headroom.
+    const xExt  = d3.extent(allPoints, p => p.npv);
+    const xPad  = (xExt[1] - xExt[0]) * 0.08 || 50000;
+    const xDomain = d3.scaleLinear().domain([xExt[0] - xPad, xExt[1] + xPad]).nice().domain();
+    const yMax    = d3.max(allPoints, p => p.savedT) || 1;
+    const yPad    = yMax * 0.08;
+    const yDomain = d3.scaleLinear().domain([0, yMax + yPad]).nice().domain();
+
+    const xScale = d3.scaleLinear().domain(xDomain).range([0, chartW]);
+    const yScale = d3.scaleLinear().domain(yDomain).range([chartH, 0]);
+
+    // Bubble radius: √ of fuel savings; min visible = 4 px, max = 32 px.
+    // Coal-replacing measures have fuelSavingsSize = 0 (they save coal, not gas/liquid);
+    // they are shown as a fixed 4 px dot so they appear on the chart but don't imply fuel savings.
+    const FB_COAL_R = 4;
+    const maxFuel = d3.max(allPoints.filter(p => p.fuelSavingsSize > 0), p => p.fuelSavingsSize) || 1;
+    const rScale  = d3.scaleSqrt().domain([0, maxFuel]).range([FB_COAL_R, 32]);
+    const ptR     = d => d.fuelSavingsSize > 0 ? rScale(d.fuelSavingsSize) : FB_COAL_R;
+
+    const zx = ox + xScale(0);
+
+    // ── Build or update SVG ─────────────────────────────────────────────────
+    let svg = d3.select(container).select('svg');
+    if (svg.empty()) {
+      svg = d3.select(container).append('svg').attr('role', 'img')
+        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+
+      // Left (costly) / right (saving) background halves
+      svg.append('rect').attr('class', 'fb-bg-left').attr('fill', 'rgba(172,205,220,0.15)');
+      svg.append('rect').attr('class', 'fb-bg-right').attr('fill', 'rgba(0,133,173,0.15)');
+
+      // Vertical zero line
+      svg.append('line').attr('class', 'fb-zero-y')
+        .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+      // Axes
+      svg.append('g').attr('class', 'chart-axis fb-x-axis');
+      svg.append('g').attr('class', 'chart-axis fb-y-axis');
+
+      // Axis labels
+      svg.append('text').attr('class', 'q-axis-label fb-x-label').attr('text-anchor', 'middle');
+      svg.append('text').attr('class', 'q-axis-label fb-y-label').attr('text-anchor', 'middle');
+
+      // Quadrant labels
+      svg.append('text').attr('class', 'q-quad-label fb-lbl-tr')
+        .attr('text-anchor', 'end').attr('font-weight', '700')
+        .style('fill', Q_DOT_COLORS.tr).text('ÚSPORA I DEKARBONIZACE');
+      svg.append('text').attr('class', 'q-quad-label fb-lbl-tl')
+        .attr('text-anchor', 'start').attr('font-weight', '700')
+        .style('fill', Q_DOT_COLORS.tl).text('DRAHÁ DEKARBONIZACE');
+
+      // Bubble size legend (group)
+      svg.append('g').attr('class', 'fb-size-legend');
+
+      // Points layer
+      svg.append('g').attr('class', 'fb-points');
+    }
+
+    svg.attr('width', totalW).attr('height', totalH);
+
+    // Background halves
+    const qzx = Math.max(ox, Math.min(ox + chartW, zx));
+    svg.select('.fb-bg-left').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', chartH);
+    svg.select('.fb-bg-right').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', chartH);
+
+    // Zero line
+    svg.select('.fb-zero-y')
+      .attr('x1', zx).attr('x2', zx).attr('y1', oy).attr('y2', oy + chartH);
+
+    // Axes
+    svg.select('.fb-x-axis')
+      .attr('transform', `translate(${ox},${oy + chartH})`)
+      .call(d3.axisBottom(xScale).ticks(6).tickFormat(qFmtAxis));
+    svg.select('.fb-y-axis')
+      .attr('transform', `translate(${ox},${oy})`)
+      .call(d3.axisLeft(yScale).ticks(5).tickFormat(qFmtAxis));
+
+    // Axis labels
+    svg.select('.fb-x-label')
+      .attr('x', ox + chartW / 2).attr('y', oy + chartH + 42)
+      .text('Rozdíl NPV oproti základní variantě (Kč)');
+    svg.select('.fb-y-label')
+      .attr('transform', `translate(${ox - 64},${oy + chartH / 2}) rotate(-90)`)
+      .text('Úspora emisí (t CO₂)');
+
+    // Quadrant labels
+    const QPAD = 6;
+    svg.select('.fb-lbl-tr').attr('x', ox + chartW - QPAD).attr('y', oy + 14);
+    svg.select('.fb-lbl-tl').attr('x', ox + QPAD).attr('y', oy + 14);
+
+    // Size legend — three representative bubbles (small / medium / large) + coal note
+    const legG = svg.select('.fb-size-legend');
+    legG.selectAll('*').remove();
+    const legSizes   = [maxFuel * 0.1, maxFuel * 0.4, maxFuel];
+    const legSpacing = 56;
+    const legX0   = ox + chartW - legSizes.length * legSpacing - 8;
+    const legBotY = oy + chartH - 4;
+    const hasFuelPoints = allPoints.some(p => p.fuelSavingsSize > 0);
+    const fuelUnit = allPoints.find(p => p.fuelSavingsSize > 0)?.fuelSavingsUnit || 'l';
+
+    if (hasFuelPoints) {
+      legSizes.forEach((sz, i) => {
+        const r  = rScale(sz);
+        const cx = legX0 + i * legSpacing + legSpacing / 2;
+        const cy = legBotY - r;
+        legG.append('circle')
+          .attr('cx', cx).attr('cy', cy).attr('r', r)
+          .attr('fill', '#888').attr('opacity', 0.18)
+          .attr('stroke', '#999').attr('stroke-width', 1);
+        const label = sz >= 1e6 ? (sz / 1e6).toFixed(1) + ' M'
+                    : sz >= 1e3 ? (sz / 1e3).toFixed(0) + ' k'
+                    : Math.round(sz).toString();
+        legG.append('text')
+          .attr('x', cx).attr('y', legBotY + 11)
+          .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#aaa')
+          .text(label);
+      });
+      legG.append('text')
+        .attr('x', legX0 + (legSizes.length * legSpacing) / 2).attr('y', legBotY + 22)
+        .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#aaa')
+        .text(`Úspora paliva (${fuelUnit})`);
+    }
+
+    // If any coal-replacing measures are present, show a small-dot note
+    const hasCoal = allPoints.some(p => p.fuelSavingsSize === 0);
+    if (hasCoal) {
+      const noteX = ox + 8, noteY = oy + chartH - 4;
+      legG.append('circle')
+        .attr('cx', noteX + FB_COAL_R).attr('cy', noteY - FB_COAL_R)
+        .attr('r', FB_COAL_R)
+        .attr('fill', '#888').attr('opacity', 0.18)
+        .attr('stroke', '#999').attr('stroke-width', 1);
+      legG.append('text')
+        .attr('x', noteX + FB_COAL_R * 2 + 5).attr('y', noteY)
+        .attr('font-size', '9px').attr('fill', '#aaa')
+        .text('Opatření nespoří plyn (uhlí → elektřina/TČ)');
+    }
+
+    // ── Points — D3 update pattern with smooth animation ────────────────────
+    const ptSel = svg.select('.fb-points')
+      .selectAll('circle.fb-pt').data(allPoints, d => d.id);
+
+    const ptEnter = ptSel.enter().append('circle').attr('class', 'fb-pt')
+      .attr('opacity', 0.78)
+      .attr('stroke', 'white').attr('stroke-width', 1.5)
+      .attr('cx', d => ox + xScale(d.npv))
+      .attr('cy', d => oy + yScale(d.savedT));
+
+    const ptAll = ptSel.merge(ptEnter);
+
+    ptAll
+      .attr('r', d => ptR(d))
+      .attr('fill', d => d.npv >= 0 ? Q_DOT_COLORS.tr : Q_DOT_COLORS.tl)
+      .style('cursor', 'pointer')
+      .on('mouseover', function (e, d) {
+        d3.select(this).attr('opacity', 1).attr('r', ptR(d) + 2);
+        const fuelStr = d.fuelSavingsL > 0
+          ? qFmtInt.format(Math.round(d.fuelSavingsL)) + ' l'
+          : d.gasSavingsMwh > 0
+            ? qFmtInt.format(Math.round(d.gasSavingsMwh)) + ' MWh'
+            : '— (opatření nespoří plyn ani kapalná paliva)';
+        showQTip(e, [
+          d.name + (d.category ? ' — ' + d.category : ''),
+          'NPV: ' + qFmtCZK(d.npv),
+          'Úspora emisí: ' + qFmtTonnes(d.savedT),
+          'Úspora paliva: ' + fuelStr,
+        ].join('\n'));
+      })
+      .on('mousemove', moveQTip)
+      .on('mouseout', function (e, d) {
+        d3.select(this).attr('opacity', 0.78).attr('r', ptR(d));
+        hideQTip();
+      })
+      .transition().duration(Q_ANIM_MS).ease(d3.easeCubicInOut)
+      .attr('cx', d => ox + xScale(d.npv))
+      .attr('cy', d => oy + yScale(d.savedT));
 
     ptSel.exit().remove();
   }
@@ -1918,6 +2135,8 @@
     });
     [
       ['quadrant-chart',          'quadrant'],
+      ['fuel-bubble-buildings',   'bubliny-budovy'],
+      ['fuel-bubble-transport',   'bubliny-doprava'],
       ['static-comparison-chart', 'quadrant-porovnani'],
       ['mac-chart',               'mac-curve'],
       ['beeswarm-chart',          'beeswarm-npv'],
@@ -2037,12 +2256,12 @@
     // All fuel savings, lifetimes, and CAPEX diffs are derived from the YAML.
     // Only deployment counts and import price scenarios are editorial choices.
     const IDS = {
-      hp:   { m: 37, b: 9  },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–E)
-      ins:  { m: 42, b: 11 },   // Fasáda + renovace vs. Fasáda (RD plyn–E)
+      hp:   { m: 44, b: 14 },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–C)
+      ins:  { m: 41, b: 10 },   // Fasáda + renovace vs. Fasáda (RD plyn–F)
+      fve:  { m: 39, b: 13 },   // Soláry na střeše + baterie vs. Nedělám nic (RD plyn–E)
       ev:   { m: 59, b: 55 },   // Nový malý elektromobil vs. Nové malé auto na benzín
       ev_l: { m: 61, b: 56 },   // Nový velký elektromobil vs. Nové velké auto na naftu
     };
-    const DEPLOY = { hp: 200_000, ins: 200_000, ev: 500_000, ev_l: 300_000 };
 
     // Czech fossil fuel import totals (external statistics, not in YAML)
     const CZ_GAS_MWH = 60e6;   // ~60 TWh/year natural gas imports
@@ -2062,15 +2281,20 @@
     const M = {
       hp:   { m: byId(bm, IDS.hp.m),   b: byId(bm, IDS.hp.b)   },
       ins:  { m: byId(bm, IDS.ins.m),  b: byId(bm, IDS.ins.b)  },
+      fve:  { m: byId(bm, IDS.fve.m),  b: byId(bm, IDS.fve.b)  },
       ev:   { m: byId(tm, IDS.ev.m),   b: byId(tm, IDS.ev.b)   },
       ev_l: { m: byId(tm, IDS.ev_l.m), b: byId(tm, IDS.ev_l.b) },
     };
 
     // ── Annual fuel savings per unit ──────────────────────────────────────────
     // Gas: baseline gas consumption minus measure gas consumption (0 if measure uses electricity)
+    // FVE: electricity displaced from grid × share of gas in Czech grid mix / CCGT efficiency
+    const GAS_ELEC_EFFICIENCY  = 0.55; // CCGT plant efficiency (electricity from gas)
+    const CZ_GAS_GRID_SHARE    = 0.20; // share of gas in Czech electricity generation (~20 %, forward-looking)
     const gasPerUnit = {
       hp:  M.hp.b.demand_heat_measure_mwh  - (M.hp.m.fuel  === 'Electricity' ? 0 : M.hp.m.demand_heat_measure_mwh),
       ins: M.ins.b.demand_heat_measure_mwh - M.ins.m.demand_heat_measure_mwh,
+      fve: (M.fve.b.demand_electricity_measure_mwh - M.fve.m.demand_electricity_measure_mwh) * CZ_GAS_GRID_SHARE / GAS_ELEC_EFFICIENCY,
     };
     // Oil: baseline liters per year (EV uses no fuel, so all baseline consumption is saved)
     const litresPerUnit = {
@@ -2082,11 +2306,26 @@
       ev_l: M.ev_l.b.fuel.toLowerCase(),
     };
 
+    // ── Deployment counts: how many units are needed to save 1 % of imports ──
+    // Gas: 1 % of CZ_GAS_MWH = gasPerUnit × n  →  n = CZ_GAS_MWH × 0.01 / gasPerUnit
+    // Oil: oilPct = litres × n / L_PER_BBL / CZ_OIL_BBL × 100 = 1
+    //      →  n = L_PER_BBL × CZ_OIL_BBL × 0.01 / litresPerUnit
+    // Round to nearest 1 000 for readability.
+    const round1k = v => Math.round(v / 1000) * 1000;
+    const DEPLOY = {
+      hp:   round1k(CZ_GAS_MWH * 0.01 / gasPerUnit.hp),
+      ins:  round1k(CZ_GAS_MWH * 0.01 / gasPerUnit.ins),
+      fve:  round1k(CZ_GAS_MWH * 0.01 / gasPerUnit.fve),
+      ev:   round1k(L_PER_BBL * CZ_OIL_BBL * 0.01 / litresPerUnit.ev),
+      ev_l: round1k(L_PER_BBL * CZ_OIL_BBL * 0.01 / litresPerUnit.ev_l),
+    };
+
     // ── CAPEX diff (total across deployed units) ───────────────────────────────
     const bCapex = m => (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0) + (m.capex_preparation_czk || 0);
     const CAPEX = {
       hp:   (bCapex(M.hp.m)  - bCapex(M.hp.b))  * DEPLOY.hp,
       ins:  (bCapex(M.ins.m) - bCapex(M.ins.b)) * DEPLOY.ins,
+      fve:  (bCapex(M.fve.m) - bCapex(M.fve.b)) * DEPLOY.fve,
       ev:   (M.ev.m.capex_czk  - M.ev.b.capex_czk)  * DEPLOY.ev,
       ev_l: (M.ev_l.m.capex_czk - M.ev_l.b.capex_czk) * DEPLOY.ev_l,
     };
@@ -2095,9 +2334,14 @@
     const fill = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
     const fmtMldSigned = v => (v < 0 ? '−' : '') + Math.abs(v / 1e9).toFixed(0) + ' mld. Kč';
 
+    // Deployment counts (1 % of imports each)
+    const fmtDeploy = n => new Intl.NumberFormat('cs-CZ').format(n);
+    ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => fill('deploy-' + k, fmtDeploy(DEPLOY[k])));
+
     // Savings per unit
     fill('savings-unit-hp',   gasPerUnit.hp.toFixed(0)  + ' MWh plynu');
     fill('savings-unit-ins',  gasPerUnit.ins.toFixed(0) + ' MWh plynu');
+    fill('savings-unit-fve',  gasPerUnit.fve.toFixed(1) + ' MWh plynu (ekv.)');
     fill('savings-unit-ev',   (litresPerUnit.ev   / L_PER_BBL).toFixed(1) + ' barelu');
     fill('savings-unit-ev_l', (litresPerUnit.ev_l / L_PER_BBL).toFixed(1) + ' barelu');
 
@@ -2106,11 +2350,12 @@
     const oilPct  = (l,   n) => (l * n / L_PER_BBL / CZ_OIL_BBL * 100).toFixed(1).replace('.', ',') + ' %';
     fill('savings-imports-hp',   gasPct(gasPerUnit.hp,  DEPLOY.hp));
     fill('savings-imports-ins',  gasPct(gasPerUnit.ins, DEPLOY.ins));
+    fill('savings-imports-fve',  gasPct(gasPerUnit.fve, DEPLOY.fve));
     fill('savings-imports-ev',   oilPct(litresPerUnit.ev,   DEPLOY.ev));
     fill('savings-imports-ev_l', oilPct(litresPerUnit.ev_l, DEPLOY.ev_l));
 
     // CAPEX diff
-    ['hp', 'ins', 'ev', 'ev_l'].forEach(k => fill('capex-diff-' + k, fmtMldSigned(CAPEX[k])));
+    ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => fill('capex-diff-' + k, fmtMldSigned(CAPEX[k])));
 
     // ── Import price scenarios ────────────────────────────────────────────────
     const IMPORT_SC = [
@@ -2123,29 +2368,31 @@
     const oilLabel = `$${IMPORT_SC[0].oil_usd_bbl}–${IMPORT_SC[1].oil_usd_bbl}/barel`;
     fill('fuel-price-hp',   gasLabel);
     fill('fuel-price-ins',  gasLabel);
+    fill('fuel-price-fve',  gasLabel);
     fill('fuel-price-ev',   oilLabel);
     fill('fuel-price-ev_l', oilLabel);
 
     // ── Fuel import value (CZK) ───────────────────────────────────────────────
     const gasVal = (mwh, n, years, sc) => mwh * n * years * sc.gas_eur_mwh * EUR_CZK;
-    const oilVal = (l,   n, years, sc, fuel) =>
-      l * CRUDE_L_PER_L[fuel] / L_PER_BBL * n * years * sc.oil_usd_bbl * USD_CZK;
+    const oilVal = (l, n, years, sc) =>
+      l / L_PER_BBL * n * years * sc.oil_usd_bbl * USD_CZK;
 
     const fuelValue = {};
     IMPORT_SC.forEach(sc => {
       fuelValue[sc.key] = {
         hp:   gasVal(gasPerUnit.hp,       DEPLOY.hp,  M.hp.m.lifetime,   sc),
         ins:  gasVal(gasPerUnit.ins,      DEPLOY.ins, M.ins.m.lifetime,  sc),
-        ev:   oilVal(litresPerUnit.ev,    DEPLOY.ev,  M.ev.m.lifetime,   sc, oilFuel.ev),
-        ev_l: oilVal(litresPerUnit.ev_l,  DEPLOY.ev_l, M.ev_l.m.lifetime, sc, oilFuel.ev_l),
+        fve:  gasVal(gasPerUnit.fve,      DEPLOY.fve, M.fve.m.lifetime,  sc),
+        ev:   oilVal(litresPerUnit.ev,    DEPLOY.ev,  M.ev.m.lifetime,   sc),
+        ev_l: oilVal(litresPerUnit.ev_l,  DEPLOY.ev_l, M.ev_l.m.lifetime, sc),
       };
     });
 
     // Shared x-domain across all measures and scenarios
-    const allFuels = ['hp', 'ins', 'ev', 'ev_l'].flatMap(k => IMPORT_SC.map(sc => fuelValue[sc.key][k]));
+    const allFuels = ['hp', 'ins', 'fve', 'ev', 'ev_l'].flatMap(k => IMPORT_SC.map(sc => fuelValue[sc.key][k]));
     const domMax   = Math.max(...allFuels) * 1.05;
 
-    ['hp', 'ins', 'ev', 'ev_l'].forEach(k => {
+    ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => {
       const el  = document.getElementById('net-benefit-bar-' + k);
       const vals = IMPORT_SC.map(sc => fuelValue[sc.key][k]);
       if (el) renderNetBar(el, vals, CAPEX[k], domMax, IMPORT_SC);
@@ -2182,6 +2429,10 @@
     });
     const qEl = document.getElementById('quadrant-wrap');
     if (qEl) renderQuadrantChart(qEl);
+    const fbBldEl = document.getElementById('fuel-bubble-buildings');
+    if (fbBldEl) renderFuelBubbleChart(fbBldEl, 'buildings');
+    const fbTrEl = document.getElementById('fuel-bubble-transport');
+    if (fbTrEl) renderFuelBubbleChart(fbTrEl, 'transport');
     const macEl = document.getElementById('mac-chart');
     if (macEl) {
       macBuildFilters(macEl); // no-op after first call
