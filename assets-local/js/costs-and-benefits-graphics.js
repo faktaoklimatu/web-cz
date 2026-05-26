@@ -76,80 +76,45 @@
     'Elektrický kotel',
     'Kotel na biomasu',
     'Soláry na střeše + baterie',
-    'Fasáda',
     'Fasáda + renovace',
-    'Nový malý elektromobil',
-    'Nový malý hybrid',
-    'Nový velký elektromobil',
-    'Nový velký hybrid',
-    'Ojetý malý elektromobil',
-    'Ojetý malý hybrid',
-    'Ojetý velký elektromobil',
-    'Ojetý velký hybrid',
+    'Elektromobil',
+    'Hybrid',
   ];
   const CP_CHART_COLORS = [
-    // Buildings (indices 0–7)
+    // Buildings (indices 0–6)
     '#1a7a85', '#2860b4', '#6b4fa0', '#c05a1a', '#2e7d32', '#8b6914',
-    '#a0522d', '#cd853f',  // Fasáda, Fasáda + renovace
-    // Transport – EV = red, hybrid = orange, repeated for each size/age group (indices 8–15)
-    '#c0392b', '#e67e22',   // Nový malý elektromobil, Nový malý hybrid
-    '#c0392b', '#e67e22',   // Nový velký elektromobil, Nový velký hybrid
-    '#c0392b', '#e67e22',   // Ojetý malý elektromobil, Ojetý malý hybrid
-    '#c0392b', '#e67e22',   // Ojetý velký elektromobil, Ojetý velký hybrid
+    '#cd853f',  // Fasáda + renovace
+    // Transport (indices 7–8)
+    '#c0392b', '#e67e22',  // Elektromobil, Hybrid
   ];
 
-  // ── Sensitivity beeswarm constants ───────────────────────────────────────
-  const SB_SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
-  const SB_SCENARIO_LABEL = { CP: 'Současné politiky', NZ: 'Net-zero', CP_EC: 'Energetická krize' };
-  const SB_CARBON_PRICES  = [0, 40, 60, 70, 100, 200];
-  const SB_DISCOUNT_RATES = [0, 3, 7];
-  const SB_DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
-  const SB_X_DOMAIN       = [-1e6, 1e6];
-  const SB_CAPEX_CASES    = [
-    { key: 'worst',     label: 'Nejhorší', sensitivityFactor: +1.0 },
-    { key: 'reference', label: 'Normální', sensitivityFactor:  0.0 },
-    { key: 'best',      label: 'Nejlepší', sensitivityFactor: -1.0 },
-  ];
-  const SB_CAPEX_FALLBACK = 0.10;
-  const SB_PRICE_CASES    = [
-    { key: 'worst',  label: 'Pesimistický', fossilMult: 0.9, cleanMult: 1.1 },
-    { key: 'normal', label: 'Normální',     fossilMult: 1.0, cleanMult: 1.0 },
-    { key: 'best',   label: 'Optimistický', fossilMult: 1.1, cleanMult: 0.9 },
-  ];
-
-  // Color-by scales
-  const SB_SC_COLORS  = { CP: '#e07b39', NZ: '#2a9d8f', CP_EC: '#9b2335' };
-  const SB_CP_COLOR_SCALE = d3.scaleLinear()
-    .domain([0, 60, 100, 200])
-    .range(['#fde0c8', '#fc8d59', '#d7301f', '#7f0000']);
-  const SB_DR_COLORS  = { 0: '#c6dbef', 3:  '#4292c6', 7:   '#08306b' };
-  const SB_CAT_COLORS = {
-    'Rodinný dům uhlí – C':                              '#5a1a2e',
-    'Rodinný dům uhlí – D':                              '#742440',
-    'Rodinný dům uhlí – E':                              '#903156',
-    'Rodinný dům uhlí – F':                              '#b05070',
-    'Rodinný dům plyn – A':                              '#b04040',
-    'Rodinný dům plyn – C':                              '#cc5555',
-    'Rodinný dům plyn – D':                              '#d96666',
-    'Rodinný dům plyn – E':                              '#e37373',
-    'Rodinný dům plyn – F':                              '#ee9898',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem': '#2e7d5b',
-    'Byt v panelovém domě s plynovou kotelnou':          '#1a7a85',
-    'Nové malé':  '#6b4fa0',
-    'Nové velké': '#8546af',
-    'Ojeté malé': '#9b6fc4',
-    'Ojeté velké':'#b090d4',
+  // Maps virtual transport measure names to the actual YAML measure names per context.
+  const TRANSPORT_MEASURE_MAP = {
+    'Elektromobil': {
+      'Nové malé':   'Nový malý elektromobil',
+      'Nové velké':  'Nový velký elektromobil',
+      'Ojeté malé':  'Ojetý malý elektromobil',
+      'Ojeté velké': 'Ojetý velký elektromobil',
+    },
+    'Hybrid': {
+      'Nové malé':   'Nový malý hybrid',
+      'Nové velké':  'Nový velký hybrid',
+      'Ojeté malé':  'Ojetý malý hybrid',
+      'Ojeté velké': 'Ojetý velký hybrid',
+    },
   };
-  const SB_BUILDING_CATS  = [
-    'Rodinný dům uhlí – C', 'Rodinný dům uhlí – D',
-    'Rodinný dům uhlí – E', 'Rodinný dům uhlí – F',
-    'Rodinný dům plyn – A', 'Rodinný dům plyn – C',
-    'Rodinný dům plyn – D', 'Rodinný dům plyn – E',
-    'Rodinný dům plyn – F',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem',
-    'Byt v panelovém domě s plynovou kotelnou',
-  ];
-  const SB_TRANSPORT_CATS = ['Nové malé', 'Nové velké', 'Ojeté malé', 'Ojeté velké'];
+
+  // ── Helpers for resolving virtual transport names in chart filters ────────
+  // Returns the actual YAML measure name for a given CP_CHART_MEASURES entry
+  // and category (e.g. 'Elektromobil' + 'Nové malé' → 'Nový malý elektromobil').
+  function cpActualName(virtualName, category) {
+    return (TRANSPORT_MEASURE_MAP[virtualName] || {})[category] || virtualName;
+  }
+  // Returns true if the given actual measure name is represented by any entry
+  // in CP_CHART_MEASURES for this category.
+  function cpIncludesForCat(measureName, category) {
+    return CP_CHART_MEASURES.some(n => cpActualName(n, category) === measureName);
+  }
 
   // ── Tornado chart ─────────────────────────────────────────────────────────
   //
@@ -164,7 +129,7 @@
       ...(data.transport_measures  || []),
     ].filter(m =>
       (m.measure_baseline_id || m.measure_baseline) &&
-      CP_CHART_MEASURES.includes(m.measure_name) &&
+      cpIncludesForCat(m.measure_name, category) &&
       (!category || m[catField] === category || m.transport_category === category)
     );
 
@@ -203,7 +168,8 @@
 
       const rows = CP_CHART_MEASURES.map((name, ni) => {
         if (exclude.includes(name)) return null;
-        const entries = allMeasures.filter(m => m.measure_name === name);
+        const actualName = cpActualName(name, category);
+        const entries = allMeasures.filter(m => m.measure_name === actualName);
         if (!entries.length) return null;
         const entry = findEntry(entries, state.carbonPrice, 3);
         if (!entry) return null;
@@ -276,7 +242,8 @@
       // ── Band + dot variant (Cena uhlíku) ──────────────────────────────────
       const rows = CP_CHART_MEASURES.map((name, ni) => {
         if (exclude.includes(name)) return null;
-        const entries = allMeasures.filter(m => m.measure_name === name);
+        const actualName = cpActualName(name, category);
+        const entries = allMeasures.filter(m => m.measure_name === actualName);
         if (!entries.length) return null;
         const entry = findEntry(entries, 100, state.discountRate);
         if (!entry) return null;
@@ -426,13 +393,14 @@
         ...(data.transport_measures  || []),
       ].filter(m =>
         (m.measure_baseline_id || m.measure_baseline) &&
-        CP_CHART_MEASURES.includes(m.measure_name) &&
+        cpIncludesForCat(m.measure_name, category) &&
         (!category || m.building_category === category || m.transport_category === category)
       );
 
       const rows = CP_CHART_MEASURES.map((name, ni) => {
         if (exclude.includes(name)) return null;
-        const entries = allMeasures.filter(m => m.measure_name === name);
+        const actualName = cpActualName(name, category);
+        const entries = allMeasures.filter(m => m.measure_name === actualName);
         if (!entries.length) return null;
 
         if (isDiscountRate) {
@@ -1961,875 +1929,6 @@
     });
   }
 
-  // ── Sensitivity beeswarm ─────────────────────────────────────────────────
-  let sbSelectedMeasure = null;
-  let sbMeasureGroups   = null;
-  let sbGrouped            = 'none';
-  let sbShowLetters        = false;
-  let sbShowUncertainty    = false;
-  let sbShowViolin         = false;
-  let sbColorBy            = null; // null | 'sc' | 'cp' | 'dr'
-  let sbEnabledScenarios     = new Set(['CP', 'NZ', 'CP_EC']);
-  let sbEnabledDiscountRates = new Set([3]);
-  let sbEnabledCarbonPrices  = new Set([40, 70, 100]);
-  let sbEnabledBaselines     = null; // Set of measure_baseline names; null = all enabled
-  let sbEnabledPriceCases    = new Set(['worst', 'normal', 'best']);        // energy price cases
-  let sbEnabledCapexCases    = new Set(['worst', 'reference', 'best']);    // CAPEX scenarios
-
-  // Registry for measure/baseline illustration SVGs.
-  // Populate externally before the chart renders, e.g.:
-  //   window.SB_ICONS['Tepelné čerpadlo'] = 'data:image/svg+xml;base64,...';
-  const SB_ICONS = window.SB_ICONS || {};
-
-  // Draw an illustration icon (or placeholder) into `svg` at the given position.
-  function sbDrawIcon(svg, name, x, y, w, h) {
-    const href = SB_ICONS[name];
-    if (href) {
-      svg.append('image')
-        .attr('href', href)
-        .attr('x', x).attr('y', y)
-        .attr('width', w).attr('height', h)
-        .attr('preserveAspectRatio', 'xMidYMid meet');
-    } else {
-      // Placeholder: dashed rectangle
-      svg.append('rect')
-        .attr('x', x).attr('y', y)
-        .attr('width', w).attr('height', h)
-        .attr('fill', 'none')
-        .attr('stroke', '#ccc')
-        .attr('stroke-width', 1)
-        .attr('stroke-dasharray', '4 3')
-        .attr('rx', 4);
-    }
-  }
-
-  function sbFindEntry(measureName, category) {
-    return [...(data.buildings_measures || []), ...(data.transport_measures || [])].find(m =>
-      m.measure_name === measureName &&
-      (m.building_category === category || m.transport_category === category)
-    );
-  }
-
-  function sbCalcNpv(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
-    try {
-      const r = CostsBenefits.calculate({
-        measureId:             entry.id, data,
-        discountRate:          dr / 100,
-        carbonPriceEur:        cp,
-        priceScenario:         scenario,
-        electricityPriceFactor: 1.0,
-        fossilMult,
-        cleanMult,
-        capexMeasMult,
-        capexBlMult,
-      });
-      return isNaN(r.npv) ? null : r.npv;
-    } catch (_) { return null; }
-  }
-
-  function sbCalcNpvFull(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
-    try {
-      const r = CostsBenefits.calculate({
-        measureId:             entry.id, data,
-        discountRate:          dr / 100,
-        carbonPriceEur:        cp,
-        priceScenario:         scenario,
-        electricityPriceFactor: 1.0,
-        fossilMult,
-        cleanMult,
-        capexMeasMult,
-        capexBlMult,
-      });
-      if (isNaN(r.npv)) return null;
-      const sens    = r.sensitivity || [];
-      const npvLow  = sens.length ? Math.min(...sens.map(s => s.minNpv)) : r.npv;
-      const npvHigh = sens.length ? Math.max(...sens.map(s => s.maxNpv)) : r.npv;
-      return { npv: r.npv, npvLow, npvHigh };
-    } catch (_) { return null; }
-  }
-
-  function sbBuildMeasureGroups() {
-    // Derive cats from the actual data so we don't miss contexts (e.g. apartment buildings)
-    // that exist in the data but aren't in CP_CHART_MEASURES.
-    const allB = data.buildings_measures || [];
-    const allT = data.transport_measures  || [];
-
-    // All unique measure names, ordered by CP_CHART_MEASURES then any extras
-    const bNamesAll = [...new Set(allB.map(m => m.measure_name))];
-    const tNamesAll = [...new Set(allT.map(m => m.measure_name))];
-    const bNames = [...CP_CHART_MEASURES.filter(n => bNamesAll.includes(n)), ...bNamesAll.filter(n => !CP_CHART_MEASURES.includes(n))];
-    const tNames = [...CP_CHART_MEASURES.filter(n => tNamesAll.includes(n)), ...tNamesAll.filter(n => !CP_CHART_MEASURES.includes(n))];
-
-    function catsFor(names, entries, allowedCats) {
-      return names
-        .map(name => ({
-          name,
-          cats: allowedCats.filter(cat =>
-            entries.some(m => m.measure_name === name &&
-              (m.building_category === cat || m.transport_category === cat))
-          ),
-        }))
-        .filter(g => g.cats.length > 0);
-    }
-
-    const lcB = allB.filter(m => m.measure_baseline_id);
-    const lcT = allT.filter(m => m.measure_baseline_id);
-    const buildingBaselines  = [...new Set(lcB.map(m => m.measure_baseline).filter(Boolean))];
-    const transportBaselines = [...new Set(lcT.map(m => m.measure_baseline).filter(Boolean))];
-
-    return {
-      buildings: catsFor(bNames, allB, SB_BUILDING_CATS),
-      transport: catsFor(tNames, allT, SB_TRANSPORT_CATS),
-      buildingBaselines,
-      transportBaselines,
-    };
-  }
-
-  function sbBuildFilters(wrap) {
-    if (wrap.querySelector('.sb-filters')) return;
-    const filtersDiv = document.createElement('div');
-    filtersDiv.className = 'sb-filters q-filters';
-
-    function makeRow(labelText, groups) {
-      const row = document.createElement('div');
-      row.className = 'q-filter-row';
-      const lbl = document.createElement('span');
-      lbl.className = 'q-filter-label';
-      lbl.textContent = labelText;
-      row.appendChild(lbl);
-      groups.forEach(g => {
-        const btn = document.createElement('button');
-        btn.className = 'q-filter-btn sb-measure-btn' + (sbSelectedMeasure === g.name ? ' active' : '');
-        btn.dataset.measure = g.name;
-        btn.textContent = g.name;
-        btn.addEventListener('click', () => {
-          sbSelectedMeasure = g.name;
-          wrap.querySelectorAll('.sb-measure-btn').forEach(b =>
-            b.classList.toggle('active', b.dataset.measure === g.name)
-          );
-          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-        });
-        row.appendChild(btn);
-      });
-      return row;
-    }
-
-    const lcBuildings = sbMeasureGroups.buildings.filter(g => CP_CHART_MEASURES.includes(g.name));
-    const lcTransport = sbMeasureGroups.transport.filter(g => CP_CHART_MEASURES.includes(g.name));
-    filtersDiv.appendChild(makeRow('Nízkoemisní budovy:', lcBuildings));
-
-    // Fossil baseline pills for buildings
-    if (sbMeasureGroups.buildingBaselines.length) {
-      const bblRow = document.createElement('div');
-      bblRow.className = 'q-filter-row';
-      const bblLbl = document.createElement('span');
-      bblLbl.className = 'q-filter-label';
-      bblLbl.textContent = 'Fosilní budovy:';
-      bblRow.appendChild(bblLbl);
-      sbMeasureGroups.buildingBaselines.forEach(bl => {
-        const btn = document.createElement('button');
-        btn.className = 'q-filter-btn sb-bl-btn' + (sbEnabledBaselines.has(bl) ? ' active' : '');
-        btn.dataset.baseline = bl;
-        btn.textContent = bl;
-        btn.addEventListener('click', () => {
-          if (sbEnabledBaselines.has(bl)) {
-            if (sbEnabledBaselines.size > 1) sbEnabledBaselines.delete(bl);
-          } else {
-            sbEnabledBaselines.add(bl);
-          }
-          btn.classList.toggle('active', sbEnabledBaselines.has(bl));
-          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-        });
-        bblRow.appendChild(btn);
-      });
-      filtersDiv.appendChild(bblRow);
-    }
-
-    filtersDiv.appendChild(makeRow('Nízkoemisní doprava:', lcTransport));
-
-    // Fossil baseline pills for transport
-    if (sbMeasureGroups.transportBaselines.length) {
-      const tblRow = document.createElement('div');
-      tblRow.className = 'q-filter-row';
-      const tblLbl = document.createElement('span');
-      tblLbl.className = 'q-filter-label';
-      tblLbl.textContent = 'Fosilní doprava:';
-      tblRow.appendChild(tblLbl);
-      sbMeasureGroups.transportBaselines.forEach(bl => {
-        const btn = document.createElement('button');
-        btn.className = 'q-filter-btn sb-bl-btn' + (sbEnabledBaselines.has(bl) ? ' active' : '');
-        btn.dataset.baseline = bl;
-        btn.textContent = bl;
-        btn.addEventListener('click', () => {
-          if (sbEnabledBaselines.has(bl)) {
-            if (sbEnabledBaselines.size > 1) sbEnabledBaselines.delete(bl);
-          } else {
-            sbEnabledBaselines.add(bl);
-          }
-          btn.classList.toggle('active', sbEnabledBaselines.has(bl));
-          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-        });
-        tblRow.appendChild(btn);
-      });
-      filtersDiv.appendChild(tblRow);
-    }
-
-    // Scenario toggle pills
-    const scRow = document.createElement('div');
-    scRow.className = 'q-filter-row';
-    const scLbl = document.createElement('span');
-    scLbl.className = 'q-filter-label';
-    scLbl.textContent = 'Scénář:';
-    scRow.appendChild(scLbl);
-    SB_SCENARIOS.forEach(sc => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-scenario-btn' + (sbEnabledScenarios.has(sc) ? ' active' : '');
-      btn.dataset.scenario = sc;
-      btn.textContent = SB_SCENARIO_LABEL[sc];
-      btn.addEventListener('click', () => {
-        if (sbEnabledScenarios.has(sc)) {
-          if (sbEnabledScenarios.size > 1) sbEnabledScenarios.delete(sc);
-        } else {
-          sbEnabledScenarios.add(sc);
-        }
-        btn.classList.toggle('active', sbEnabledScenarios.has(sc));
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      scRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(scRow);
-
-    // Price factor toggle pills (−10 % / 0 % / +10 %) — multi-select
-    const pfRow = document.createElement('div');
-    pfRow.className = 'q-filter-row';
-    const pfLbl = document.createElement('span');
-    pfLbl.className = 'q-filter-label';
-    pfLbl.textContent = 'Ceny energie:';
-    pfRow.appendChild(pfLbl);
-    SB_PRICE_CASES.forEach(item => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-pf-btn' + (sbEnabledPriceCases.has(item.key) ? ' active' : '');
-      btn.dataset.pf = item.key;
-      btn.textContent = item.label;
-      btn.addEventListener('click', () => {
-        if (sbEnabledPriceCases.has(item.key)) {
-          if (sbEnabledPriceCases.size > 1) sbEnabledPriceCases.delete(item.key);
-        } else {
-          sbEnabledPriceCases.add(item.key);
-        }
-        btn.classList.toggle('active', sbEnabledPriceCases.has(item.key));
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      pfRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(pfRow);
-
-    // CAPEX case toggle pills (Nejhorší / Referenční / Nejlepší) — multi-select
-    const cxRow = document.createElement('div');
-    cxRow.className = 'q-filter-row';
-    const cxLbl = document.createElement('span');
-    cxLbl.className = 'q-filter-label';
-    cxLbl.textContent = 'CAPEX případ:';
-    cxRow.appendChild(cxLbl);
-    SB_CAPEX_CASES.forEach(item => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-cx-btn' + (sbEnabledCapexCases.has(item.key) ? ' active' : '');
-      btn.dataset.cx = item.key;
-      btn.textContent = item.label;
-      btn.addEventListener('click', () => {
-        if (sbEnabledCapexCases.has(item.key)) {
-          if (sbEnabledCapexCases.size > 1) sbEnabledCapexCases.delete(item.key);
-        } else {
-          sbEnabledCapexCases.add(item.key);
-        }
-        btn.classList.toggle('active', sbEnabledCapexCases.has(item.key));
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      cxRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(cxRow);
-
-    // Discount rate toggle pills
-    const drRow = document.createElement('div');
-    drRow.className = 'q-filter-row';
-    const drLbl = document.createElement('span');
-    drLbl.className = 'q-filter-label';
-    drLbl.textContent = 'Diskontní míra:';
-    drRow.appendChild(drLbl);
-    SB_DISCOUNT_RATES.forEach(dr => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-dr-btn' + (sbEnabledDiscountRates.has(dr) ? ' active' : '');
-      btn.dataset.dr = dr;
-      btn.textContent = dr + ' %';
-      btn.addEventListener('click', () => {
-        if (sbEnabledDiscountRates.has(dr)) {
-          if (sbEnabledDiscountRates.size > 1) sbEnabledDiscountRates.delete(dr);
-        } else {
-          sbEnabledDiscountRates.add(dr);
-        }
-        btn.classList.toggle('active', sbEnabledDiscountRates.has(dr));
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      drRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(drRow);
-
-    // Carbon price toggle pills
-    const cpRow = document.createElement('div');
-    cpRow.className = 'q-filter-row';
-    const cpLbl = document.createElement('span');
-    cpLbl.className = 'q-filter-label';
-    cpLbl.textContent = 'Cena uhlíku:';
-    cpRow.appendChild(cpLbl);
-    SB_CARBON_PRICES.forEach(cp => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-cp-btn' + (sbEnabledCarbonPrices.has(cp) ? ' active' : '');
-      btn.dataset.cp = cp;
-      btn.textContent = cp + ' €';
-      btn.addEventListener('click', () => {
-        if (sbEnabledCarbonPrices.has(cp)) {
-          if (sbEnabledCarbonPrices.size > 1) sbEnabledCarbonPrices.delete(cp);
-        } else {
-          sbEnabledCarbonPrices.add(cp);
-        }
-        btn.classList.toggle('active', sbEnabledCarbonPrices.has(cp));
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      cpRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(cpRow);
-
-    // Grouping toggle
-    const gRow = document.createElement('div');
-    gRow.className = 'q-filter-row';
-    const gLbl = document.createElement('span');
-    gLbl.className = 'q-filter-label';
-    gLbl.textContent = 'Zobrazení:';
-    gRow.appendChild(gLbl);
-    [
-      { key: 'none',     label: 'Jeden řádek' },
-      { key: 'context',  label: 'Kontext' },
-      { key: 'rdFuel',   label: 'RD souhrnně' },
-      { key: 'fuel',     label: 'Uhlí / Plyn' },
-      { key: 'scenario', label: 'Scénář' },
-      { key: 'price',    label: 'Cena uhlíku' },
-      { key: 'discount', label: 'Diskontní míra' },
-    ].forEach(item => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-group-btn' + (sbGrouped === item.key ? ' active' : '');
-      btn.dataset.grouped = item.key;
-      btn.textContent = item.label;
-      btn.addEventListener('click', () => {
-        sbGrouped = item.key;
-        wrap.querySelectorAll('.sb-group-btn').forEach(b =>
-          b.classList.toggle('active', b.dataset.grouped === item.key)
-        );
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      gRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(gRow);
-
-    // Color-by row
-    const colorRow = document.createElement('div');
-    colorRow.className = 'q-filter-row';
-    const colorLbl = document.createElement('span');
-    colorLbl.className = 'q-filter-label';
-    colorLbl.textContent = 'Barvy dle:';
-    colorRow.appendChild(colorLbl);
-    [
-      { key: null,  label: 'Šedá' },
-      { key: 'sc',  label: 'Scénář' },
-      { key: 'cp',  label: 'Cena CO₂' },
-      { key: 'dr',  label: 'Diskont. míra' },
-    ].forEach(item => {
-      const btn = document.createElement('button');
-      btn.className = 'q-filter-btn sb-color-btn' + (sbColorBy === item.key ? ' active' : '');
-      btn.dataset.colorBy = item.key ?? '';
-      btn.textContent = item.label;
-      btn.addEventListener('click', () => {
-        sbColorBy = item.key;
-        wrap.querySelectorAll('.sb-color-btn').forEach(b =>
-          b.classList.toggle('active', b.dataset.colorBy === (item.key ?? ''))
-        );
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      colorRow.appendChild(btn);
-    });
-    filtersDiv.appendChild(colorRow);
-
-    wrap.insertBefore(filtersDiv, wrap.firstChild);
-  }
-
-  function sbRenderChart(container) {
-    if (!container || !sbSelectedMeasure || !sbMeasureGroups) return;
-    const allGroups = [...sbMeasureGroups.buildings, ...sbMeasureGroups.transport];
-    const group = allGroups.find(g => g.name === sbSelectedMeasure);
-    if (!group) return;
-
-    // Build all dots: one per (category × scenario × carbon_price × discount_rate).
-    // NZ scenario has a fixed internal carbon trajectory — iterate only once to avoid duplicates.
-    const sbAllMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
-    const dots = [];
-    for (const cat of group.cats) {
-      const entry = sbFindEntry(sbSelectedMeasure, cat);
-      if (!entry || !entry.measure_baseline_id) continue;
-      if (sbEnabledBaselines && !sbEnabledBaselines.has(entry.measure_baseline)) continue;
-      const baseline = sbAllMeasures.find(m => m.id === entry.measure_baseline_id);
-      const measS = entry.capex_sensitivity    ?? SB_CAPEX_FALLBACK;
-      const blS   = baseline?.capex_sensitivity ?? SB_CAPEX_FALLBACK;
-      for (const capexCase of SB_CAPEX_CASES.filter(c => sbEnabledCapexCases.has(c.key))) {
-        const { sensitivityFactor } = capexCase;
-        const capexMeasMult = 1 + sensitivityFactor * measS;
-        const capexBlMult   = 1 - sensitivityFactor * blS;
-        for (const priceCase of SB_PRICE_CASES.filter(p => sbEnabledPriceCases.has(p.key))) {
-          const { fossilMult, cleanMult } = priceCase;
-          for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
-            const cps = sc === 'NZ'
-              ? [SB_DEFAULT.cp]
-              : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
-            for (const cp of cps) {
-              for (const dr of SB_DISCOUNT_RATES.filter(r => sbEnabledDiscountRates.has(r))) {
-                const isDefault = sc === SB_DEFAULT.scenario && cp === SB_DEFAULT.cp && dr === SB_DEFAULT.dr && priceCase.key === 'normal' && capexCase.key === 'reference';
-                if (sbShowUncertainty) {
-                  const res = sbCalcNpvFull(entry, sc, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult);
-                  if (res == null) continue;
-                  dots.push({ cat, sc, cp, dr, priceCase: priceCase.key, capexCase: capexCase.key, npv: res.npv, npvLow: res.npvLow, npvHigh: res.npvHigh, isDefault, x: 0, y: 0 });
-                } else {
-                  const npv = sbCalcNpv(entry, sc, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult);
-                  if (npv == null) continue;
-                  dots.push({ cat, sc, cp, dr, priceCase: priceCase.key, capexCase: capexCase.key, npv, isDefault, x: 0, y: 0 });
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    if (!dots.length) {
-      d3.select(container).selectAll('*').remove();
-      return;
-    }
-
-    const cats = group.cats.slice().sort((a, b) => {
-      const npvA = (dots.find(d => d.cat === a && d.isDefault) || {}).npv ?? 0;
-      const npvB = (dots.find(d => d.cat === b && d.isDefault) || {}).npv ?? 0;
-      return npvB - npvA;
-    });
-    const totalW = container.clientWidth || 720;
-    const DOT_R  = 7.2;
-
-    // Resolve lane config for the active grouping mode
-    const fuelOf = d => /uhlí/i.test(d.cat) ? 'Uhlí' : /plyn/i.test(d.cat) ? 'Plyn' : 'Ostatní';
-    const fuelColors = { 'Uhlí': '#903156', 'Plyn': '#e37373', 'Ostatní': '#888' };
-    const fuelLanes = ['Uhlí', 'Plyn', 'Ostatní'].filter(v => dots.some(d => fuelOf(d) === v));
-
-    const rdFuelLaneOf = d => {
-      if (/Rodinný dům/i.test(d.cat)) return /uhlí/i.test(d.cat) ? 'Rodinný dům – uhlí' : 'Rodinný dům – plyn';
-      return d.cat;
-    };
-    const rdFuelColors = { 'Rodinný dům – uhlí': '#903156', 'Rodinný dům – plyn': '#e37373' };
-    const rdFuelLaneOrder = ['Rodinný dům – uhlí', 'Rodinný dům – plyn', ...SB_BUILDING_CATS.filter(c => !/Rodinný dům/i.test(c))];
-    const rdFuelLanes = rdFuelLaneOrder.filter(v => dots.some(d => rdFuelLaneOf(d) === v));
-
-    const sbCatLabel = v => v.replace(/ – ([EC])(\b|$)/, ' ($1)');
-    const sbLcColor  = name => /renovace bez zateplení/i.test(name) ? '#c05a1a' : '#1a7a85';
-
-    const LANE_CONFIGS = {
-      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#555',    leftMargin: 240, rightMargin: 220, showBaselineLabel: true },
-      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#555', leftMargin: 240, rightMargin: 220, showBaselineLabel: true },
-      scenario: { lanes: SB_SCENARIOS,     laneOf: d => d.sc,    labelFn: v => SB_SCENARIO_LABEL[v], colorFn: () => '#555',                        leftMargin: 160 },
-      price:    { lanes: SB_CARBON_PRICES, laneOf: d => d.cp,    labelFn: v => v + ' €',             colorFn: () => '#555',                        leftMargin:  60 },
-      discount: { lanes: SB_DISCOUNT_RATES,laneOf: d => d.dr,    labelFn: v => v + ' %',             colorFn: () => '#555',                        leftMargin:  50 },
-      fuel:     { lanes: fuelLanes,        laneOf: fuelOf,       labelFn: v => v,                    colorFn: v => fuelColors[v] || '#888',        leftMargin:  70 },
-    };
-    const laneCfg = LANE_CONFIGS[sbGrouped] || null;
-
-    let M, LANE_H, totalH, yTarget, yClamp;
-    if (laneCfg) {
-      M      = { top: 16, right: laneCfg.rightMargin || 24, bottom: 52, left: laneCfg.leftMargin };
-      LANE_H = DOT_R * 28;
-      totalH = laneCfg.lanes.length * LANE_H + M.top + M.bottom;
-      yTarget = d => {
-        const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
-        return M.top + (idx === -1 ? 0 : idx) * LANE_H + LANE_H / 2;
-      };
-      yClamp = (d, y) => {
-        const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
-        const cy  = M.top + (idx === -1 ? 0 : idx) * LANE_H + LANE_H / 2;
-        return Math.max(cy - LANE_H / 2 + DOT_R, Math.min(cy + LANE_H / 2 - DOT_R, y));
-      };
-    } else {
-      M      = { top: 20, right: 24, bottom: 52, left: 24 };
-      LANE_H = DOT_R * 48;
-      totalH = LANE_H + M.top + M.bottom;
-      const midY = M.top + LANE_H / 2;
-      yTarget = () => midY;
-      yClamp  = (d, y) => Math.max(M.top + DOT_R, Math.min(M.top + LANE_H - DOT_R, y));
-    }
-
-    const chartW = Math.max(totalW - M.left - M.right, 200);
-    const xScale = d3.scaleLinear().domain([SB_X_DOMAIN[0], SB_X_DOMAIN[1]]).range([0, chartW]);
-
-    const xTarget = d => M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], d.npv)));
-    dots.forEach(d => { d.x = xTarget(d); d.y = yTarget(d); });
-
-    // Snap x back to NPV position after each tick so only y is displaced by collide
-    const sim = d3.forceSimulation(dots)
-      .force('y', d3.forceY(d => yTarget(d)).strength(laneCfg ? 0.85 : 0.3))
-      .force('collide', d3.forceCollide(DOT_R * 1.5))
-      .stop();
-    const ticks = laneCfg ? 120 : 150;
-    for (let i = 0; i < ticks; i++) {
-      sim.tick();
-      dots.forEach(d => { d.x = xTarget(d); });
-    }
-
-    d3.select(container).selectAll('*').remove();
-    const svg = d3.select(container).append('svg')
-      .attr('width', totalW).attr('height', totalH)
-      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
-
-    // Zero line
-    const zx = M.left + xScale(0);
-    svg.append('line')
-      .attr('x1', zx).attr('x2', zx)
-      .attr('y1', M.top).attr('y2', totalH - M.bottom)
-      .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
-
-    // Grouped mode: lane lines + left-side labels
-    if (laneCfg) {
-      laneCfg.lanes.forEach((v, i) => {
-        const cy = M.top + i * LANE_H + LANE_H / 2;
-        svg.append('line')
-          .attr('x1', M.left).attr('x2', M.left + chartW)
-          .attr('y1', cy).attr('y2', cy)
-          .attr('stroke', '#f0f0f0').attr('stroke-width', 1);
-
-        const showBl = laneCfg.showBaselineLabel;
-        const labelY = showBl ? cy - 5 : cy + 4;
-
-        if (showBl) {
-          const ICON_W = 48, ICON_H = 48, ICON_GAP = 8;
-
-          const firstCat = laneCfg.laneOf === rdFuelLaneOf
-            ? cats.find(c => rdFuelLaneOf({ cat: c }) === v)
-            : v;
-          const blEntry = firstCat ? sbFindEntry(sbSelectedMeasure, firstCat) : null;
-          const blName  = blEntry?.measure_baseline || '';
-          const blColor = /uhlí|uhelný/i.test(blName) ? '#903156'
-                        : /plyn/i.test(blName)         ? '#e37373'
-                        : /renovace/i.test(blName)     ? '#c05a1a'
-                        : '#888';
-
-          // LEFT: fossil baseline icon + name
-          sbDrawIcon(svg, blName, 4, cy - ICON_H / 2, ICON_W, ICON_H);
-          svg.append('text')
-            .attr('x', M.left - ICON_GAP).attr('y', cy - 1)
-            .attr('text-anchor', 'end')
-            .attr('font-size', '15px').attr('font-weight', '700')
-            .attr('font-family', 'Inter, system-ui, sans-serif')
-            .attr('fill', '#222')
-            .text(blName);
-          svg.append('text')
-            .attr('x', M.left - ICON_GAP).attr('y', cy + 17)
-            .attr('text-anchor', 'end')
-            .attr('font-size', '15px').attr('font-family', 'Inter, system-ui, sans-serif')
-            .attr('fill', '#53616e')
-            .text(laneCfg.labelFn(v));
-
-          // RIGHT: LC measure name + icon
-          svg.append('text')
-            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy - 1)
-            .attr('text-anchor', 'start')
-            .attr('font-size', '15px').attr('font-weight', '700')
-            .attr('font-family', 'Inter, system-ui, sans-serif')
-            .attr('fill', '#222')
-            .text(sbSelectedMeasure);
-          svg.append('text')
-            .attr('x', M.left + chartW + ICON_GAP).attr('y', cy + 17)
-            .attr('text-anchor', 'start')
-            .attr('font-size', '15px').attr('font-family', 'Inter, system-ui, sans-serif')
-            .attr('fill', '#53616e')
-            .text(laneCfg.labelFn(v));
-          sbDrawIcon(svg, sbSelectedMeasure, totalW - ICON_GAP - ICON_W, cy - ICON_H / 2, ICON_W, ICON_H);
-        } else {
-          svg.append('text')
-            .attr('x', M.left - 8).attr('y', labelY)
-            .attr('text-anchor', 'end')
-            .attr('font-size', '11px').attr('fill', laneCfg.colorFn(v))
-            .text(laneCfg.labelFn(v));
-        }
-      });
-    }
-
-    // X axis
-    svg.append('g')
-      .attr('class', 'chart-axis')
-      .attr('transform', `translate(${M.left},${totalH - M.bottom})`)
-      .call(sel => {
-        sel.call(d3.axisBottom(xScale).ticks(7).tickFormat(v => {
-          const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
-          if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
-          if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
-          return v === 0 ? '0' : s + a;
-        }));
-        sel.select('.domain').remove();
-        sel.selectAll('.tick line').attr('stroke', '#9ba5ad').attr('stroke-width', 1);
-        sel.selectAll('.tick text')
-          .attr('fill', '#53616e')
-          .attr('font-family', '"Roboto", system-ui, sans-serif')
-          .attr('font-size', 12);
-      });
-
-    svg.append('text')
-      .attr('text-anchor', 'middle')
-      .attr('x', M.left + chartW / 2).attr('y', totalH - 4)
-      .attr('font-size', '12px').attr('fill', '#53616e')
-      .attr('font-family', '"Roboto", system-ui, sans-serif')
-      .text('Rozdíl NPV oproti základní variantě (Kč)');
-
-
-    svg.append('text')
-      .attr('x', zx).attr('y', M.top - 4)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9px').attr('fill', '#aaa')
-      .text('Výchozí (CP · 60 € · 3 %)');
-
-    // Tooltip
-    let sbTip = document.getElementById('sb-tip');
-    if (!sbTip) {
-      sbTip = document.createElement('div');
-      sbTip.id = 'sb-tip';
-      Object.assign(sbTip.style, {
-        position: 'fixed', pointerEvents: 'none', background: 'rgba(30,30,30,0.88)',
-        color: '#fff', fontSize: '12px', lineHeight: '1.5', padding: '6px 10px',
-        borderRadius: '4px', whiteSpace: 'pre', display: 'none', zIndex: 9999,
-      });
-      document.body.appendChild(sbTip);
-    }
-
-    const fmtNpv = v => {
-      const abs = Math.abs(v), sign = v < 0 ? '− ' : '+ ';
-      if (abs >= 1e6) return sign + (Math.round(abs / 1e5) / 10).toFixed(1) + ' mil. Kč';
-      if (abs >= 1e3) return sign + Math.round(abs / 1e3) + ' tis. Kč';
-      return sign + Math.round(abs) + ' Kč';
-    };
-
-    // Violin chart — KDE density shape per lane (drawn behind everything)
-    if (sbShowViolin) {
-      const bw = (SB_X_DOMAIN[1] - SB_X_DOMAIN[0]) * 0.04; // bandwidth = 4 % of x-range (80 000 Kč)
-      const epKernel = (bw) => x => Math.abs(x) <= bw ? 0.75 * (1 - (x/bw) * (x/bw)) / bw : 0;
-      const kernel = epKernel(bw);
-      const nThresh = 300;
-      const thresholds = d3.range(nThresh).map(i =>
-        SB_X_DOMAIN[0] + (i / (nThresh - 1)) * (SB_X_DOMAIN[1] - SB_X_DOMAIN[0])
-      );
-
-      const laneGroups = laneCfg
-        ? laneCfg.lanes.map(v => ({
-            cy: M.top + laneCfg.lanes.indexOf(v) * LANE_H + LANE_H / 2,
-            npvs: dots.filter(d => laneCfg.laneOf(d) === v).map(d => d.npv),
-          }))
-        : [{ cy: M.top + LANE_H / 2, npvs: dots.map(d => d.npv) }];
-
-      laneGroups.forEach(({ cy, npvs }) => {
-        if (npvs.length < 2) return;
-        const density = thresholds.map(t => [t, d3.mean(npvs, d => kernel(t - d))]);
-        const maxDensity = d3.max(density, d => d[1]);
-        if (!maxDensity) return;
-
-        const halfH  = LANE_H * 0.42;
-        const dScale = d3.scaleLinear().domain([0, maxDensity]).range([0, halfH]);
-
-        const area = d3.area()
-          .defined(d => d[0] >= SB_X_DOMAIN[0] && d[0] <= SB_X_DOMAIN[1])
-          .x(d  => M.left + xScale(d[0]))
-          .y0(d => cy - dScale(d[1]))
-          .y1(d => cy + dScale(d[1]))
-          .curve(d3.curveBasis);
-
-        svg.append('path')
-          .datum(density)
-          .attr('fill', '#9ba5ad')
-          .attr('opacity', 0.28)
-          .attr('d', area);
-
-        // Median tick
-        const med = d3.median(npvs);
-        if (med != null) {
-          const mx = M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], med)));
-          svg.append('line')
-            .attr('x1', mx).attr('x2', mx)
-            .attr('y1', cy - halfH * 0.65).attr('y2', cy + halfH * 0.65)
-            .attr('stroke', '#53616e').attr('stroke-width', 1.5)
-            .attr('stroke-dasharray', '3 2');
-        }
-      });
-    }
-
-    // Per-dot uncertainty bands (drawn behind circles)
-    if (sbShowUncertainty) {
-      const bandH = DOT_R * 1.2;
-      svg.selectAll('.sb-unc-band')
-        .data(dots.filter(d => d.npvLow != null && d.npvHigh != null))
-        .join('rect')
-        .attr('class', 'sb-unc-band')
-        .attr('x',      d => M.left + xScale(Math.max(SB_X_DOMAIN[0], d.npvLow)))
-        .attr('width',  d => Math.max(1, xScale(Math.min(SB_X_DOMAIN[1], d.npvHigh)) - xScale(Math.max(SB_X_DOMAIN[0], d.npvLow))))
-        .attr('y',      d => yClamp(d, d.y) - bandH / 2)
-        .attr('height', bandH)
-        .attr('fill',   '#9ba5ad')
-        .attr('opacity', d => d.isDefault ? 0.35 : 0.12)
-        .attr('rx', 2);
-    }
-
-    // Draw non-default dots first (behind), then default dots on top
-    // In violin mode only the reference dot is shown
-    const dotSubsets = sbShowViolin
-      ? [dots.filter(d => d.isDefault)]
-      : [dots.filter(d => !d.isDefault), dots.filter(d => d.isDefault)];
-    dotSubsets.forEach(subset => {
-      svg.selectAll(null)
-        .data(subset)
-        .join('circle')
-        .attr('cx', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
-        .attr('cy', d => yClamp(d, d.y))
-        .attr('r', d => d.isDefault ? DOT_R + 1 : DOT_R)
-        .attr('fill', d => {
-          if (sbColorBy === 'sc') return SB_SC_COLORS[d.sc] || '#888';
-          if (sbColorBy === 'cp') return SB_CP_COLOR_SCALE(d.cp);
-          if (sbColorBy === 'dr') return SB_DR_COLORS[d.dr] || '#888';
-          return d.isDefault ? '#53616e' : '#9ba5ad';
-        })
-        .attr('opacity', d => d.isDefault ? 0.9 : (sbColorBy ? 0.55 : 0.25))
-        .attr('stroke', d => d.isDefault ? 'white' : 'none')
-        .attr('stroke-width', 1.5)
-        .style('cursor', 'pointer')
-        .on('mouseover', function(event, d) {
-          d3.select(this).attr('opacity', 1);
-          const cpLabel = d.sc === 'NZ' ? 'trajektorie NZ' : d.cp + ' €';
-          sbTip.textContent = [
-            d.cat,
-            'Scénář: ' + SB_SCENARIO_LABEL[d.sc],
-            'Cena uhlíku: ' + cpLabel,
-            'Diskontní míra: ' + d.dr + ' %',
-            'NPV: ' + fmtNpv(d.npv),
-          ].join('\n');
-          sbTip.style.display = 'block';
-          sbTip.style.left = (event.clientX + 14) + 'px';
-          sbTip.style.top  = (event.clientY - 28) + 'px';
-        })
-        .on('mousemove', event => {
-          sbTip.style.left = (event.clientX + 14) + 'px';
-          sbTip.style.top  = (event.clientY - 28) + 'px';
-        })
-        .on('mouseout', function(event, d) {
-          d3.select(this).attr('opacity', d.isDefault ? 0.9 : (sbColorBy ? 0.55 : 0.25));
-          sbTip.style.display = 'none';
-        });
-    });
-
-    // E / C letter inside building dots (– E or – C suffix categories)
-    const catLetter = cat => /– E$/.test(cat) ? 'E' : /– C$/.test(cat) ? 'C' : null;
-    const ecDots = dots.filter(d => catLetter(d.cat));
-    if (sbShowLetters && ecDots.length) {
-      [ecDots.filter(d => !d.isDefault), ecDots.filter(d => d.isDefault)].forEach(subset => {
-        svg.selectAll(null)
-          .data(subset)
-          .join('text')
-          .attr('x', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
-          .attr('y', d => yClamp(d, d.y))
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'central')
-          .attr('font-size', d => (d.isDefault ? DOT_R + 1 : DOT_R) * 1.5 + 'px')
-          .attr('font-weight', '700')
-          .attr('fill', 'white')
-          .attr('opacity', d => d.isDefault ? 0.9 : 0.25)
-          .attr('pointer-events', 'none')
-          .text(d => catLetter(d.cat));
-      });
-    }
-
-    fokDownloadBar(container, 'sensitivity-beeswarm');
-
-    // Context legend: always shown except when grouping BY context (labels are in the chart then)
-    const legendEl = document.getElementById('sensitivity-beeswarm-legend');
-    if (legendEl) {
-      legendEl.innerHTML = '';
-      if (sbGrouped !== 'context' && sbGrouped !== 'rdFuel') {
-        cats.forEach(cat => {
-          const item = document.createElement('div');
-          item.className = 'sb-legend-item';
-          const swatch = document.createElement('span');
-          swatch.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:50%;background:${SB_CAT_COLORS[cat] || '#888'};flex-shrink:0;`;
-          const label = document.createElement('span');
-          label.textContent = cat;
-          item.appendChild(swatch);
-          item.appendChild(label);
-          legendEl.appendChild(item);
-        });
-      }
-
-      // E/C toggle button — only when relevant categories exist
-      if (cats.some(c => catLetter(c))) {
-        const ecBtn = document.createElement('button');
-        ecBtn.className = 'chart-dl-btn';
-        ecBtn.style.cssText = 'align-self:center; margin-left:4px;';
-        ecBtn.textContent = sbShowLetters ? 'E/C ✓' : 'E/C';
-        ecBtn.addEventListener('click', () => {
-          sbShowLetters = !sbShowLetters;
-          sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-        });
-        legendEl.appendChild(ecBtn);
-      }
-
-      // Uncertainty band toggle
-      const uncBtn = document.createElement('button');
-      uncBtn.className = 'chart-dl-btn';
-      uncBtn.style.cssText = 'align-self:center; margin-left:4px;';
-      uncBtn.textContent = sbShowUncertainty ? 'Rozsah ✓' : 'Rozsah';
-      uncBtn.addEventListener('click', () => {
-        sbShowUncertainty = !sbShowUncertainty;
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      legendEl.appendChild(uncBtn);
-
-      // Violin chart toggle
-      const violinBtn = document.createElement('button');
-      violinBtn.className = 'chart-dl-btn';
-      violinBtn.style.cssText = 'align-self:center; margin-left:4px;';
-      violinBtn.textContent = sbShowViolin ? 'Housle ✓' : 'Housle';
-      violinBtn.addEventListener('click', () => {
-        sbShowViolin = !sbShowViolin;
-        sbRenderChart(document.getElementById('sensitivity-beeswarm-chart'));
-      });
-      legendEl.appendChild(violinBtn);
-    }
-  }
-
-  function sbInit() {
-    const wrap = document.getElementById('sensitivity-beeswarm-wrap');
-    if (!wrap) return;
-
-    sbMeasureGroups = sbBuildMeasureGroups();
-    sbEnabledBaselines = new Set([...sbMeasureGroups.buildingBaselines, ...sbMeasureGroups.transportBaselines]);
-    const allGroups = [...sbMeasureGroups.buildings, ...sbMeasureGroups.transport];
-    if (!allGroups.length) return;
-
-    sbSelectedMeasure = allGroups[0].name;
-    sbBuildFilters(wrap);
-
-    const chartEl = document.getElementById('sensitivity-beeswarm-chart');
-    sbRenderChart(chartEl);
-
-    window.addEventListener('resize', () => {
-      const el = document.getElementById('sensitivity-beeswarm-chart');
-      if (el) sbRenderChart(el);
-    });
-  }
-
   // ── Import cost table ─────────────────────────────────────────────────────
   function getScenarioPrices(scenario) {
     const entries = data.fuel_scenarios.filter(s => s.scenario === scenario);
@@ -3232,8 +2331,27 @@
     renderAll();
     renderGasSavingsRangeChart();
     window.addEventListener('resize', renderAll);
-    sbInit();
+    // sensitivity beeswarm initialised by costs-benefits-beeswarm.js
   }
+
+  // Icons for the beeswarm chart — embedded as data URIs so exported SVGs are self-contained
+  const SB_ICONS = {
+    'Uhelný kotel':     'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMi43MDM0OTIgMjYuMTU5NDMiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzhjM2Y1ZjsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBzdHJva2Utd2lkdGg6IC4yNXB4OwogICAgICB9CgogICAgICAuY2xzLTEsIC5jbHMtMiwgLmNscy0zLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgc3Ryb2tlOiAjMzMzOwogICAgICAgIHN0cm9rZS1saW5lam9pbjogcm91bmQ7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy00LCAuY2xzLTUgewogICAgICAgIHN0cm9rZS1saW5lY2FwOiByb3VuZDsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsOiAjZTNlNmViOwogICAgICB9CgogICAgICAuY2xzLTQsIC5jbHMtNiB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmaWxsOiBub25lOwogICAgICB9CgogICAgICAuY2xzLTUsIC5jbHMtNiB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAuNXB4OwogICAgICB9CgogICAgICAuY2xzLTYgewogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgICBzdHJva2U6ICM3NTgwOGU7CiAgICAgICAgc3Ryb2tlLWxpbmVqb2luOiBiZXZlbDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj4KICAgIDxnPgogICAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIxMy4yODE2NzEgMTkuNTQ1MzUgNi43MDMzNTcgNi4zMjM2NTMgLjEyNSAxMS45NDkzNDIgMS43NjQ0NDQgMTIuODk1ODc1IDEuNzY0NDQ0IDE5LjAzNDIyIDExLjY0MjI3MSAyNC43MzcxODcgMTEuNjQyMjcxIDE4LjU5ODg0MiAxMy4yODE2NzEgMTkuNTQ1MzUiLz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIyMy44NjI2MyAxMy40MzgyMTkgMTcuMjg0MzE2IC4yMTY1MjIgMTAuNzA1OTU5IDUuODQyMjExIDEyLjM0NTQwMyA2Ljc4ODc0NSAxMi4zNDU0MDMgMTIuOTI3MDkgMjIuMjIzMjMgMTguNjMwMDU2IDIyLjIyMzIzIDEyLjQ5MTcxMSAyMy44NjI2MyAxMy40MzgyMTkiLz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIxNy4yODQzMTYgLjIxNjUyMiA2LjcwMzM1NyA2LjMyMzY1MyAxMy4yODE2NzEgMTkuNTQ1MzUgMjMuODYyNjMgMTMuNDM4MjE5IDE3LjI4NDMxNiAuMjE2NTIyIi8+CiAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTYiIHBvaW50cz0iMTEuNjQyMjcxIDI0LjczNzE4NyAyMi4yMjMyMyAxOC42MzAwNTYgMjIuMjIzMjMgMTQuMzg0NDUgMTMuMjgxNjcxIDE5LjU0NTM1IDExLjY0MjI3MSAxOC41OTg4NDIgMTEuNjQyMjcxIDI0LjczNzE4NyIvPgogICAgICAgIDwvZz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTYiIHBvaW50cz0iNS43ODk3MDggMTguNzA4NTUzIDMuNDE3NzcyIDE3LjMzOTExNSAzLjQxNzc3MiAxMy44ODg2MjQgNS43ODk3MDggMTUuMjU4MDYyIDUuNzg5NzA4IDE4LjcwODU1MyIvPgogICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSI5LjM0NzgwMSAyMC43NjI4MTkgNi45NzU4NjUgMTkuMzkzMzgxIDYuOTc1ODY1IDE1Ljk0Mjg5IDkuMzQ3ODAxIDE3LjMxMjMyOCA5LjM0NzgwMSAyMC43NjI4MTkiLz4KICAgICAgPC9nPgogICAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIyMi4xOTk4NzQgMjUuOTA5NDMgMTcuMjY5ODQ0IDIzLjA2MzA3NSAxNy4yNjk4NDQgNi45MTY5OTQgMjIuMTk5ODc0IDkuNzYzMzQ4IDIyLjE5OTg3NCAyNS45MDk0MyIvPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjMyLjQ1MzQ5MiAzLjg0MzQxOSAyMi4yMjIwNDIgOS43MzYxNCAxNy4yNjk4NDQgNi45MTY5OTQgMjcuNTAxMjkzIDEuMDI0MjcyIDMyLjQ1MzQ5MiAzLjg0MzQxOSIvPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjMyLjQ1MzQ5MiAxOS45ODk1MDEgMjIuMTk5ODc0IDI1LjkwOTQzIDIyLjE5OTg3NCA5Ljc2MzM0OCAzMi40NTM0OTIgMy44NDM0MTkgMzIuNDUzNDkyIDE5Ljk4OTUwMSIvPgogICAgICAgIDwvZz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iMTcuMjY5ODQ0IDYuOTE2OTk0IDI3LjUwMTI5MyAxLjAyNDI3MiAzMi40NTM0OTIgMy44NDM0MTkgMzIuNDUzNDkyIDE5Ljk4OTUwMSAyMi4xOTk4NzQgMjUuOTA5NDMgMTcuMjY5ODQ0IDIzLjA2MzA3NSAxNy4yNjk4NDQgNi45MTY5OTQiLz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzMS4xMDQyNTYgMTEuMDk3NTQ2IDIzLjg4MzcxIDE1LjI2NjMzIDIzLjg4MzcxIDIzLjU0MzU0MSAzMS4xMDQyNTYgMTkuMzc0NzU3IDMxLjEwNDI1NiAxMS4wOTc1NDYiLz4KICAgICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTI3LjE1MTc4MiwxNS40ODk4NjdjLS4wMDA1OTYuMDAwMDAzLS4wMDE0OTEuMDAxMjAyLS4wMDExOTMuMDAxNzE0LjQ4MjcxNiwxLjE4MDQwNS0xLjE0MTM1MiwyLjA4NzYxNy0xLjIxMzI1MSwzLjcyMDIxNS0uMDY1MTMsMS40Nzg4OTYuNzg2MTY5LDEuMzYxMzIsMS41NjM3NjcuOTE5MzkzLjc4MjcyOC0uNDQ0ODQzLDEuNjA5MjcxLTEuNTUwNjcsMS42MDkyNzEtMi43Mzc3MDYsMC0uOTAzMDA5LS43MTI4OTQtLjYxNjg1Ny0uMzU2Mjk4LTEuNTgxODUzLS40MjkwNDguMjkxODAyLS43MDEzNzQuNzg1NDI1LS42MTE3MjcsMS4yNTYzMDYuMDU4MzQ2LjMwNjQ2OS0uMjIwMjc1LjY5Mzg1OC0uNDM1NDI4LjY4MDA3Ni0uMTkwODM1LS4wMTIyMjQtLjE2OTUyOS0uMjk1NS0uMDAyNTYxLS41Nzk4ODMuMzU2Mjk4LS42MDA4MTguNDcwMDk5LTEuNTkxNjE5LS41NTI1OC0xLjY3ODI2MSIvPgogICAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjUuMjIzNjA3LDEyLjY1NTQyMmMwLC40MjQxNDktLjI5OTk0Ni45NDExNjQtLjY2OTk0OSwxLjE1NDc4NXMtLjY2OTk0OS4wNDI5NTQtLjY2OTk0OS0uMzgxMTk1YzAtLjQyNDE0OS4yOTk5NDYtLjk0MTE2NC42Njk5NDktMS4xNTQ3ODVzLjY2OTk0OS0uMDQyOTU0LjY2OTk0OS4zODExOTVaIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTQiIHgxPSIyNS44MDQ4NzIiIHkxPSIxMS45ODU3NzEiIHgyPSIzMS4xMDQyNTYiIHkyPSI4LjkyNjE3Ii8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTQiIHgxPSIyNS44MDQ4NzIiIHkxPSIxMi42NTM4ODciIHgyPSIzMS4xMDQyNTYiIHkyPSI5LjU5NDI4NiIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtNCIgeDE9IjE4LjMzMzc2IiB5MT0iMjIuMDc0NTYxIiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjMuNTQzNTQxIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTQiIHgxPSIxOC4zMzM3NiIgeTE9IjIxLjQwODU0NCIgeDI9IjIwLjg3ODEwOSIgeTI9IjIyLjg3NzUyNSIvPgogICAgICAgICAgPGxpbmUgY2xhc3M9ImNscy00IiB4MT0iMTguMzMzNzYiIHkxPSIyMC43NDI1MjciIHgyPSIyMC44NzgxMDkiIHkyPSIyMi4yMTE1MDgiLz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtNCIgeDE9IjE4LjMzMzc2IiB5MT0iMjAuMDc2NTExIiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjEuNTQ1NDkyIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTQiIHgxPSIxOC4zMzM3NiIgeTE9IjE5LjQzMzQ2IiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjAuOTAyNDQxIi8+CiAgICAgICAgPC9nPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=',
+    'Plynový kotel':    'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMi43MDM0OTIgMjYuMTU5NDMiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNlM2U2ZWI7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTMsIC5jbHMtNCwgLmNscy01IHsKICAgICAgICBzdHJva2U6ICMzMzM7CiAgICAgICAgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy01IHsKICAgICAgICBzdHJva2Utd2lkdGg6IC4yNXB4OwogICAgICB9CgogICAgICAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBzdHJva2UtbGluZWNhcDogcm91bmQ7CiAgICAgIH0KCiAgICAgIC5jbHMtMiwgLmNscy01IHsKICAgICAgICBmaWxsOiAjZTM3MzczOwogICAgICB9CgogICAgICAuY2xzLTMsIC5jbHMtNiB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLmNscy00IHsKICAgICAgICBmaWxsOiBub25lOwogICAgICB9CgogICAgICAuY2xzLTQsIC5jbHMtNiB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAuNXB4OwogICAgICB9CgogICAgICAuY2xzLTYgewogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgICBzdHJva2U6ICM3NTgwOGU7CiAgICAgICAgc3Ryb2tlLWxpbmVqb2luOiBiZXZlbDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj4KICAgIDxnPgogICAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIxMy4yODE2NzEgMTkuNTQ1MzUgNi43MDMzNTcgNi4zMjM2NTMgLjEyNSAxMS45NDkzNDIgMS43NjQ0NDQgMTIuODk1ODc1IDEuNzY0NDQ0IDE5LjAzNDIyIDExLjY0MjI3MSAyNC43MzcxODcgMTEuNjQyMjcxIDE4LjU5ODg0MiAxMy4yODE2NzEgMTkuNTQ1MzUiLz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIyMy44NjI2MyAxMy40MzgyMTkgMTcuMjg0MzE2IC4yMTY1MjIgMTAuNzA1OTU5IDUuODQyMjExIDEyLjM0NTQwMyA2Ljc4ODc0NSAxMi4zNDU0MDMgMTIuOTI3MDkgMjIuMjIzMjMgMTguNjMwMDU2IDIyLjIyMzIzIDEyLjQ5MTcxMSAyMy44NjI2MyAxMy40MzgyMTkiLz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIxNy4yODQzMTYgLjIxNjUyMiA2LjcwMzM1NyA2LjMyMzY1MyAxMy4yODE2NzEgMTkuNTQ1MzUgMjMuODYyNjMgMTMuNDM4MjE5IDE3LjI4NDMxNiAuMjE2NTIyIi8+CiAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTYiIHBvaW50cz0iMTEuNjQyMjcxIDI0LjczNzE4NyAyMi4yMjMyMyAxOC42MzAwNTYgMjIuMjIzMjMgMTQuMzg0NDUgMTMuMjgxNjcxIDE5LjU0NTM1IDExLjY0MjI3MSAxOC41OTg4NDIgMTEuNjQyMjcxIDI0LjczNzE4NyIvPgogICAgICAgIDwvZz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTYiIHBvaW50cz0iNS43ODk3MDggMTguNzA4NTUzIDMuNDE3NzcyIDE3LjMzOTExNSAzLjQxNzc3MiAxMy44ODg2MjQgNS43ODk3MDggMTUuMjU4MDYyIDUuNzg5NzA4IDE4LjcwODU1MyIvPgogICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSI5LjM0NzgwMSAyMC43NjI4MTkgNi45NzU4NjUgMTkuMzkzMzgxIDYuOTc1ODY1IDE1Ljk0Mjg5IDkuMzQ3ODAxIDE3LjMxMjMyOCA5LjM0NzgwMSAyMC43NjI4MTkiLz4KICAgICAgPC9nPgogICAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyMi4xOTk4NzQgMjUuOTA5NDMgMTcuMjY5ODQ0IDIzLjA2MzA3NSAxNy4yNjk4NDQgNi45MTY5OTQgMjIuMTk5ODc0IDkuNzYzMzQ4IDIyLjE5OTg3NCAyNS45MDk0MyIvPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjMyLjQ1MzQ5MiAzLjg0MzQxOSAyMi4yMjIwNDIgOS43MzYxNCAxNy4yNjk4NDQgNi45MTY5OTQgMjcuNTAxMjkzIDEuMDI0MjcyIDMyLjQ1MzQ5MiAzLjg0MzQxOSIvPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjMyLjQ1MzQ5MiAxOS45ODk1MDEgMjIuMTk5ODc0IDI1LjkwOTQzIDIyLjE5OTg3NCA5Ljc2MzM0OCAzMi40NTM0OTIgMy44NDM0MTkgMzIuNDUzNDkyIDE5Ljk4OTUwMSIvPgogICAgICAgIDwvZz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTQiIHBvaW50cz0iMTcuMjY5ODQ0IDYuOTE2OTk0IDI3LjUwMTI5MyAxLjAyNDI3MiAzMi40NTM0OTIgMy44NDM0MTkgMzIuNDUzNDkyIDE5Ljk4OTUwMSAyMi4xOTk4NzQgMjUuOTA5NDMgMTcuMjY5ODQ0IDIzLjA2MzA3NSAxNy4yNjk4NDQgNi45MTY5OTQiLz4KICAgICAgICA8Zz4KICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtNSIgcG9pbnRzPSIzMS4xMDQyNTYgMTEuMDk3NTQ2IDIzLjg4MzcxIDE1LjI2NjMzIDIzLjg4MzcxIDIzLjU0MzU0MSAzMS4xMDQyNTYgMTkuMzc0NzU3IDMxLjEwNDI1NiAxMS4wOTc1NDYiLz4KICAgICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTI3LjE1MTc4MiwxNS40ODk4NjdjLS4wMDA1OTYuMDAwMDAzLS4wMDE0OTEuMDAxMjAyLS4wMDExOTMuMDAxNzE0LjQ4MjcxNiwxLjE4MDQwNS0xLjE0MTM1MiwyLjA4NzYxNy0xLjIxMzI1MSwzLjcyMDIxNS0uMDY1MTMsMS40Nzg4OTYuNzg2MTY5LDEuMzYxMzIsMS41NjM3NjcuOTE5MzkzLjc4MjcyOC0uNDQ0ODQzLDEuNjA5MjcxLTEuNTUwNjcsMS42MDkyNzEtMi43Mzc3MDYsMC0uOTAzMDA5LS43MTI4OTQtLjYxNjg1Ny0uMzU2Mjk4LTEuNTgxODUzLS40MjkwNDguMjkxODAyLS43MDEzNzQuNzg1NDI1LS42MTE3MjcsMS4yNTYzMDYuMDU4MzQ2LjMwNjQ2OS0uMjIwMjc1LjY5Mzg1OC0uNDM1NDI4LjY4MDA3Ni0uMTkwODM1LS4wMTIyMjQtLjE2OTUyOS0uMjk1NS0uMDAyNTYxLS41Nzk4ODMuMzU2Mjk4LS42MDA4MTguNDcwMDk5LTEuNTkxNjE5LS41NTI1OC0xLjY3ODI2MSIvPgogICAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjUuMjIzNjA3LDEyLjY1NTQyMmMwLC40MjQxNDktLjI5OTk0Ni45NDExNjQtLjY2OTk0OSwxLjE1NDc4NXMtLjY2OTk0OS4wNDI5NTQtLjY2OTk0OS0uMzgxMTk1YzAtLjQyNDE0OS4yOTk5NDYtLjk0MTE2NC42Njk5NDktMS4xNTQ3ODVzLjY2OTk0OS0uMDQyOTU0LjY2OTk0OS4zODExOTVaIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIyNS44MDQ4NzIiIHkxPSIxMS45ODU3NzEiIHgyPSIzMS4xMDQyNTYiIHkyPSI4LjkyNjE3Ii8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIyNS44MDQ4NzIiIHkxPSIxMi42NTM4ODciIHgyPSIzMS4xMDQyNTYiIHkyPSI5LjU5NDI4NiIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtMyIgeDE9IjE4LjMzMzc2IiB5MT0iMjIuMDc0NTYxIiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjMuNTQzNTQxIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIxOC4zMzM3NiIgeTE9IjIxLjQwODU0NCIgeDI9IjIwLjg3ODEwOSIgeTI9IjIyLjg3NzUyNSIvPgogICAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTguMzMzNzYiIHkxPSIyMC43NDI1MjciIHgyPSIyMC44NzgxMDkiIHkyPSIyMi4yMTE1MDgiLz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtMyIgeDE9IjE4LjMzMzc2IiB5MT0iMjAuMDc2NTExIiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjEuNTQ1NDkyIi8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIxOC4zMzM3NiIgeTE9IjE5LjQzMzQ2IiB4Mj0iMjAuODc4MTA5IiB5Mj0iMjAuOTAyNDQxIi8+CiAgICAgICAgPC9nPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=',
+    'Tepelné čerpadlo': 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNS4zMTY0MSAyOC4zNDU4NDQiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNlM2U2ZWI7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTMgewogICAgICAgIHN0cm9rZS13aWR0aDogLjI1cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTMsIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiAjMzMzOwogICAgICAgIHN0cm9rZS1saW5lam9pbjogcm91bmQ7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzM1OTc4ZjsKICAgICAgfQoKICAgICAgLmNscy0zLCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNSB7CiAgICAgICAgZmlsbC1ydWxlOiBldmVub2RkOwogICAgICAgIHN0cm9rZTogIzc1ODA4ZTsKICAgICAgICBzdHJva2UtbGluZWpvaW46IGJldmVsOwogICAgICB9CgogICAgICAuY2xzLTUsIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAuNXB4OwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CiAgICA8Zz4KICAgICAgPGc+CiAgICAgICAgPGc+CiAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iMTMuMjgxNjcxIDE5LjU0NTM1IDYuNzAzMzU3IDYuMzIzNjUzIC4xMjUgMTEuOTQ5MzQyIDEuNzY0NDQ0IDEyLjg5NTg3NSAxLjc2NDQ0NCAxOS4wMzQyMiAxMS42NDIyNzEgMjQuNzM3MTg3IDExLjY0MjI3MSAxOC41OTg4NDIgMTMuMjgxNjcxIDE5LjU0NTM1Ii8+CiAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iMjMuODYyNjMgMTMuNDM4MjE5IDE3LjI4NDMxNiAuMjE2NTIyIDEwLjcwNTk1OSA1Ljg0MjIxMSAxMi4zNDU0MDMgNi43ODg3NDUgMTIuMzQ1NDAzIDEyLjkyNzA5IDIyLjIyMzIzIDE4LjYzMDA1NiAyMi4yMjMyMyAxMi40OTE3MTEgMjMuODYyNjMgMTMuNDM4MjE5Ii8+CiAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iMTcuMjg0MzE2IC4yMTY1MjIgNi43MDMzNTcgNi4zMjM2NTMgMTMuMjgxNjcxIDE5LjU0NTM1IDIzLjg2MjYzIDEzLjQzODIxOSAxNy4yODQzMTYgLjIxNjUyMiIvPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy01IiBwb2ludHM9IjExLjY0MjI3MSAyNC43MzcxODcgMjIuMjIzMjMgMTguNjMwMDU2IDIyLjIyMzIzIDE0LjM4NDQ1IDEzLjI4MTY3MSAxOS41NDUzNSAxMS42NDIyNzEgMTguNTk4ODQyIDExLjY0MjI3MSAyNC43MzcxODciLz4KICAgICAgICA8L2c+CiAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy01IiBwb2ludHM9IjUuNzg5NzA4IDE4LjcwODU1MyAzLjQxNzc3MiAxNy4zMzkxMTUgMzQuMTc3NzIgMTMuODg4NjI0IDUuNzg5NzA4IDE1LjI1ODA2MiA1Ljc4OTcwOCAxOC43MDg1NTMiLz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iOS4zNDc4MDEgMjAuNzYyODE5IDYuOTc1ODY1IDE5LjM5MzM4MSA2Ljk3NTg2NSAxNS45NDI4OSA5LjM0NzgwMSAxNy4zMTIzMjggOS4zNDc4MDEgMjAuNzYyODE5Ii8+CiAgICAgIDwvZz4KICAgICAgPGc+CiAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjIxLjE3ODMzNyAyOC4wODcxNTMgMTUuMzgwODA2IDI0LjczOTk0NiAxNS4zODA4MDYgMTIuODE3MzQ3IDIxLjE3ODMzNyAxNi4xNjQ1NTMgMjEuMTc4MzM3IDI4LjA4NzE1MyIvPgogICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtMyIgeDE9IjE5LjIxMzQ0MiIgeTE9IjE3LjA4NTI4OCIgeDI9IjE3LjAxNTE5NSIgeTI9IjE1LjgxNjEzIi8+CiAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTkuMjEzNDQyIiB5MT0iMTguMTA2OTY2IiB4Mj0iMTcuMDE1MTk1IiB5Mj0iMTYuODM3ODA4Ii8+CiAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTkuMjEzNDQyIiB5MT0iMTkuMTI4NjQ0IiB4Mj0iMTcuMDE1MTk1IiB5Mj0iMTcuODU5NDg2Ii8+CiAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTkuMjEzNDQyIiB5MT0iMjAuMTUwMzIyIiB4Mj0iMTcuMDE1MTk1IiB5Mj0iMTguODgxMTY0Ii8+CiAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMTkuMjEzNDQyIiB5MT0iMjEuMTcyIiB4Mj0iMTcuMDE1MTk1IiB5Mj0iMTkuOTAyODQyIi8+CiAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjM1LjEyMzA1NSA4LjA1MzU1NSAyOS4zNjc0OTMgNC43MzA1NzkgMTUuMzgwODA2IDEyLjgwNTc5NyAyMS4xMzYzNjggMTYuMTI4NzcyIDM1LjEyMzA1NSA4LjA1MzU1NSIvPgogICAgICAgIDxnPgogICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjM1LjE2NDIyIDIwLjAxMTkzNSAyMS4xNzc1MzMgMjguMDg3MTUzIDIxLjE3NzUzMyAxNi4xNjQ1NTMgMzUuMTY0MjIgOC4wODkzMzYgMzUuMTY0MjIgMjAuMDExOTM1Ii8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIzMS42NDEyNDEiIHkxPSIxMi4xMjgiIHgyPSIzMy44Mzk0ODgiIHkyPSIxMC44NTg4NDEiLz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtMyIgeDE9IjMxLjY0MTI0MSIgeTE9IjEzLjE0OTY3NyIgeDI9IjMzLjgzOTQ4OCIgeTI9IjExLjg4MDUxOSIvPgogICAgICAgICAgPGxpbmUgY2xhc3M9ImNscy0zIiB4MT0iMzEuNjQxMjQxIiB5MT0iMTQuMTcxMzU1IiB4Mj0iMzMuODM5NDg4IiB5Mj0iMTIuOTAyMTk3Ii8+CiAgICAgICAgICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIzMS42NDEyNDEiIHkxPSIxNS4xOTMwMzMiIHgyPSIzMy44Mzk0ODgiIHkyPSIxMy45MjM4NzUiLz4KICAgICAgICAgIDxsaW5lIGNsYXNzPSJjbHMtMyIgeDE9IjMxLjY0MTI0MSIgeTE9IjE2LjIxNDcxMSIgeDI9IjMzLjgzOTQ4OCIgeTI9IjE0Ljk0NTU1MyIvPgogICAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAuMjYwNTM1LDE3LjAxMTg2MmMwLDIuNDQ3NzE5LTEuNzMwOTU3LDUuNDMxMzU1LTMuODY2MjAxLDYuNjY0MTM5LTIuMTM1MjQ0LDEuMjMyNzg0LTMuODY2MjAxLjI0Nzg4NC0zLjg2NjIwMS0yLjE5OTgzNCwwLTIuNDQ3NzE5LDEuNzMwOTU3LTUuNDMxMzU1LDMuODY2MjAxLTYuNjY0MTM5LDIuMTM1MjQ0LTEuMjMyNzg0LDMuODY2MjAxLS4yNDc4ODQsMy44NjYyMDEsMi4xOTk4MzRaIi8+CiAgICAgICAgICA8Zz4KICAgICAgICAgICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMjMuODM3NjI0LDE5LjA2MTYxOWwyLjU1Njg4OS4yMjQxMDgtMi40NzQ4NiwzLjA2MzQyNWMtLjI3ODQ5Ny0uMzQ2NDctLjQzNDM1MS0uODQ4MzItLjQzNDM1MS0xLjQ4NzExMiwwLS41NzMwMjYuMTMxMjQ2LTEuMTkzNjc0LjM1MjMyMi0xLjgwMDQyMVoiLz4KICAgICAgICAgICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMjguODc3NTc2LDE5LjQ5NjA5N2MtLjUwNzk3NywxLjI0MjA5My0xLjQzNDA5OCwyLjQxNTU4MS0yLjQ4MzA2MywzLjAyMTIwMXYtMy4yMzE1NzFsMi40ODMwNjMuMjEwMzY5WiIvPgogICAgICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0yOC45NTk0MDQsMTYuMTA0NTU4bC0yLjU2NDg5MiwzLjE4MTE3di0zLjQ0NzYxN2MxLjEwNjM4NS0uNjM4NzcxLDIuMDczMzIxLS40OTI0NzUsMi41NjQ4OTIuMjY2NDQ3WiIvPgogICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTQiIHBvaW50cz0iMjkuMjY5NzgyIDQuODA1NTc1IDE1LjI4Mjk5NCAxMi44MjYxMDEgMTUuMjgyOTk0IDI0Ljc0ODc0MiAyMS4wNzk4OTYgMjguMDk1Mjk1IDIxLjA3OTg5NiAyOC4wOTU4NDQgMjEuMDgwMTcxIDI4LjA5NTg0NCAyMS4wODA3MiAyOC4wOTU4NDQgMjEuMDgwNzIgMjguMDk1Mjk1IDM1LjA2NjQxIDIwLjAyMDk2OSAzNS4wNjY0MSA4LjA5ODMyOCAyOS4yNjk3ODIgNC44MDU1NzUiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+',
+  };
+
+  // Shared exports for costs-benefits-beeswarm.js
+  window.CB_SHARED = {
+    CP_CHART_MEASURES,
+    CP_CHART_COLORS,
+    TRANSPORT_MEASURE_MAP,
+    cpActualName,
+    cpIncludesForCat,
+    fokDownloadBar,
+    fmtCZK,
+    SB_ICONS,
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

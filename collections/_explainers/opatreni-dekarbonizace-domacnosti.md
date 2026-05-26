@@ -14,6 +14,7 @@ extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/costs-benefits-calculator.js
 - /assets-local/js/costs-and-benefits-graphics.js
+- /assets-local/js/costs-benefits-beeswarm.js
 ---
 
 <script>
@@ -193,6 +194,34 @@ extra-scripts:
 .q-filter-btn.active .q-filter-dot { opacity: 1; }
 .q-sector-btn.active[data-sector="buildings"] { color: #2860b4; border-color: #2860b4; }
 .q-sector-btn.active[data-sector="transport"] { color: #6b4fa0; border-color: #6b4fa0; }
+/* Beeswarm control panel sections */
+.sb-section-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #bbb;
+  margin: 10px 0 2px;
+}
+.sb-section-separator {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 6px 0;
+}
+.sb-cat-group-prefix {
+  font-size: 10px;
+  font-weight: 600;
+  color: #aaa;
+  margin: 0 2px 0 4px;
+  white-space: nowrap;
+  align-self: center;
+}
+.sb-group-dot {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0 4px;
+  align-self: center;
+}
 
 /* ── Static comparison chart toggle ────────────────────────────────────────── */
 .static-chart-toggle-wrap {
@@ -236,7 +265,16 @@ extra-scripts:
 
 .chart-axis path,
 .chart-axis line { stroke: #ddd; }
-.chart-axis text  { font-size: 10px; fill: #888; }
+.chart-axis text  { font-size: 14px; fill: #888; }
+
+/* Beeswarm column headers (KONTEXT, NÁVRATNOST, OPATŘENÍ …) */
+.sb-col-hdr {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  fill: #aaa;
+  font-family: Inter, system-ui, sans-serif;
+}
 
 /* ── Chart download buttons ─────────────────────────────────────────────────── */
 .chart-dl-bar {

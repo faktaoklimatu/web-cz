@@ -214,7 +214,11 @@ const CostsBenefits = (() => {
     const cleanMult             = opts.cleanMult             !== undefined ? opts.cleanMult             : 1.0;
 
     const sccCzkDefault = carbonPriceEur * exchangeRate;
-    const lifetime = Math.min(baseline.lifetime, measure.lifetime);
+    // When baseline has no fixed lifetime (e.g. "Nedělám nic" with lifetime=0),
+    // use the measure's lifetime; otherwise cap at the shorter of the two.
+    const lifetime = baseline.lifetime > 0
+      ? Math.min(baseline.lifetime, measure.lifetime)
+      : measure.lifetime;
     const capexDiff = getCapex(baseline) * capexBlMult - getCapex(measure) * capexMeasMult;
 
     let opexSum = 0;
@@ -289,7 +293,11 @@ const CostsBenefits = (() => {
     const exchangeRate          = opts.exchangeRate          !== undefined ? opts.exchangeRate          : DEFAULT_EXCHANGE_RATE;
     const electricityPriceFactor= opts.electricityPriceFactor!== undefined ? opts.electricityPriceFactor: 1.0;
     const sccCzkDefault         = carbonPriceEur * exchangeRate;
-    const lifetime       = Math.min(baseline.lifetime, measure.lifetime);
+    // When baseline has no fixed lifetime (e.g. "Nedělám nic" with lifetime=0),
+    // use the measure's lifetime; otherwise cap at the shorter of the two.
+    const lifetime       = baseline.lifetime > 0
+      ? Math.min(baseline.lifetime, measure.lifetime)
+      : measure.lifetime;
     const capexDiff      = getCapex(baseline) - getCapex(measure);
 
     const rows = [];
@@ -616,7 +624,10 @@ const CostsBenefits = (() => {
     const sector          = getSector(measure);
     const scenarioPrices  = getPricesForScenario(data, priceScenario);
     const emissionFactors = data.fuel_emission_factors;
-    const lifetime        = Math.min(baseline.lifetime, measure.lifetime);
+    // When baseline has no fixed lifetime (e.g. "Nedělám nic", lifetime=0), use measure's lifetime.
+    const lifetime        = baseline.lifetime > 0
+      ? Math.min(baseline.lifetime, measure.lifetime)
+      : measure.lifetime;
 
     const baseOpts = { discountRate, carbonPriceEur, exchangeRate, electricityPriceFactor, globalPriceFactor, fossilMult, cleanMult, capexMeasMult, capexBlMult };
 
