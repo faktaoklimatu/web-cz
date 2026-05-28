@@ -23,6 +23,8 @@
     return sign + fmtInt.format(abs) + ' Kč';
   }
 
+  function fmt3sig(x) { return parseFloat(x.toPrecision(3)).toString(); }
+
   // ── Controls ──────────────────────────────────────────────────────────────
   function setupControls() {
     setupSlider('carbon-price-slider', 'carbon-price-value', v => {
@@ -2476,6 +2478,7 @@
     });
     addDownloadBars();
     renderImportCostTable();
+    renderEffCharts();
   }
 
   // ── Gas savings range chart ────────────────────────────────────────────────
@@ -2558,6 +2561,412 @@
   }
 
 // ── Init ──────────────────────────────────────────────────────────────────
+  // ── Efficiency / investment-effectiveness charts ───────────────────────────────────────
+  const CZ_EMISSIONS_T     =  103_500_000;
+  const CZ_GAS_IMPORTS_MWH =   65_000_000;
+  const CZ_FUEL_IMPORTS_L  = 4_500_000_000;
+  const CZ_FOSSIL_TWH      =          200;  // reference total fossil savings (gas+fuel) in TWh/yr
+  const FUEL_KWH_PER_L     =          9.5;  // kWh per litre of petrol/diesel (≈34–37 MJ/l × ~27% well-to-wheel)
+
+  const effState = {
+    sectors:      new Set(['buildings', 'transport']),
+    combos:       new Set(),   // empty = show all; each entry is 'measure_name|||context'
+    unit:         'abs',
+    capexMode:    'diff',      // 'diff' = extra CAPEX vs baseline | 'full' = total measure CAPEX
+    yearlyMode:   true,        // true = divide by lifetime; false = show lifetime totals
+    investScale:  1e11,        // denominator CZK (100 bil default)
+    showNpvSwarm: false,       // overlay sensitivity beeswarm on NPV chart
+    sortBy:       'co2PerBilCZK',  // shared sort key for all charts
+  };
+
+  function getAllEffEntries() {
+    return [
+      ...(data.buildings_measures || []),
+      ...(data.transport_measures  || []),
+    ].filter(m => m.measure_baseline_id || m.measure_baseline);
+  }
+
+  function fmtScaleLbl() {
+    const s = effState.investScale;
+    if (s >= 1e11) return '100 mld. Kč';
+    if (s >= 1e10) return  '10 mld. Kč';
+    if (s >=  1e9) return   '1 mld. Kč';
+    return '1 mil. Kč';
+  }
+
+  function computeEffRow(m) {
+    try {
+      const r = CostsBenefits.calculate({
+        measureId:              m.id,
+        data,
+        discountRate:           state.discountRate / 100,
+        carbonPriceEur:         state.carbonPrice,
+        priceScenario:          state.fuelScenario,
+        electricityPriceFactor: state.electricityPriceFactor,
+      });
+      const sector   = r.sector;
+      const catField = sector === 'buildings' ? 'building_category' : 'transport_category';
+      // Full CAPEX = sum of all capex fields on the measure entry itself
+      const measureCapex = (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0)
+                         + (m.capex_preparation_czk || 0) + (m.capex_czk || 0);
+      const investCapex  = effState.capexMode === 'full' ? measureCapex : -r.capexDiff;
+      if (investCapex <= 0) return null;
+      const co2Saved = r.emissionSavings ? -r.emissionSavings.totalT : null;
+      return {
+        id:              m.id,
+        measureName:     m.measure_name,
+        context:         m[catField] || '',
+        sector,
+        lifetime:        m.lifetime || 1,
+        extraCapex:      investCapex,
+        co2PerBilCZK:    co2Saved != null ? co2Saved / investCapex * effState.investScale : null,
+        gasMwhPerBilCZK: r.gasSavings  ? r.gasSavings.totalMwh  / investCapex * effState.investScale : null,
+        fuelLPerBilCZK:  r.fuelSavings ? r.fuelSavings.totalL   / investCapex * effState.investScale : null,
+        get fossilTwhPerScale() {
+          const gTwh = r.gasSavings  ? r.gasSavings.totalMwh  * 1e-6          : 0;
+          const fTwh = r.fuelSavings ? r.fuelSavings.totalL * FUEL_KWH_PER_L * 1e-9 : 0;
+          return (r.gasSavings || r.fuelSavings) ? (gTwh + fTwh) / investCapex * effState.investScale : null;
+        },
+        npvPerBilCZK:    r.npv / investCapex * effState.investScale,
+        sensitivity:     r.sensitivity || [],
+        baselineName:    m.measure_baseline || '',
+      };
+    } catch (e) { return null; }
+  }
+
+  // Returns all passing rows sorted by effState.sortBy (shared order across all charts)
+  function getAllEffRowsSorted() {
+    const sortKey = effState.sortBy;
+    return getAllEffEntries()
+      .filter(m => {
+        const sec = m.building_category ? 'buildings' : 'transport';
+        if (!effState.sectors.has(sec)) return false;
+        if (effState.combos.size > 0) {
+          const cf  = m.building_category ? 'building_category' : 'transport_category';
+          const key = m.measure_name + '|||' + (m[cf] || '');
+          if (!effState.combos.has(key)) return false;
+        }
+        return true;
+      })
+      .map(computeEffRow)
+      .filter(r => r !== null)
+      .sort((a, b) => {
+        const av = (a[sortKey] ?? -Infinity) / (effState.yearlyMode ? (a.lifetime || 1) : 1);
+        const bv = (b[sortKey] ?? -Infinity) / (effState.yearlyMode ? (b.lifetime || 1) : 1);
+        return bv - av;
+      });
+  }
+
+  function getEffRows(metric) {
+    // Keep all rows; null metric → displayed as 0
+    return getAllEffRowsSorted();
+  }
+
+  function populateEffSelects() {
+    const all      = getAllEffEntries();
+    const comboSel = document.getElementById('eff-combo-select');
+    if (!comboSel) return;
+
+    const seen = new Set();
+    const combos = [];
+    all
+      .filter(m => effState.sectors.has(m.building_category ? 'buildings' : 'transport'))
+      .forEach(m => {
+        const cf  = m.building_category ? 'building_category' : 'transport_category';
+        const ctx = m[cf] || '';
+        const key = m.measure_name + '|||' + ctx;
+        if (!seen.has(key)) {
+          seen.add(key);
+          combos.push({ key, label: m.measure_name + ' – ' + ctx });
+        }
+      });
+    combos.sort((a, b) => a.label.localeCompare(b.label, 'cs'));
+
+    const prevCombos = new Set(Array.from(comboSel.selectedOptions).map(o => o.value));
+    comboSel.innerHTML = '';
+    combos.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.key; opt.textContent = c.label;
+      if (prevCombos.has(c.key)) opt.selected = true;
+      comboSel.appendChild(opt);
+    });
+    effState.combos = new Set(Array.from(comboSel.selectedOptions).map(o => o.value));
+  }
+
+  function fmtEffBarLabel(val, valueKey, usePct) {
+    const sign = val < 0 ? '−' : '';
+    const abs  = Math.abs(val);
+    if (usePct) {
+      const s = abs < 0.001 ? abs.toFixed(5) : abs < 0.01 ? abs.toFixed(4) : abs < 0.1 ? abs.toFixed(3) : abs.toFixed(2);
+      return sign + s + ' %';
+    }
+    if (valueKey === 'co2PerBilCZK') {
+      if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' Mt';
+      if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' kt';
+      return sign + fmt3sig(abs) + ' t';
+    }
+    if (valueKey === 'gasMwhPerBilCZK') {
+      if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' TWh';
+      if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' GWh';
+      return sign + fmt3sig(abs) + ' MWh';
+    }
+    if (valueKey === 'fossilTwhPerScale') {
+      if (abs >= 1)     return sign + fmt3sig(abs)        + ' TWh';
+      if (abs >= 1e-3)  return sign + fmt3sig(abs * 1e3)  + ' GWh';
+      return sign + fmt3sig(abs * 1e6) + ' MWh';
+    }
+    if (valueKey === 'npvPerBilCZK') {
+      if (abs >= 1e12) return sign + fmt3sig(abs / 1e12) + ' bil. Kč';
+      if (abs >= 1e9)  return sign + fmt3sig(abs / 1e9)  + ' mld. Kč';
+      if (abs >= 1e6)  return sign + fmt3sig(abs / 1e6)  + ' mil. Kč';
+      return sign + fmt3sig(abs) + ' Kč';
+    }
+    if (abs >= 1e9) return sign + fmt3sig(abs / 1e9) + ' Mld. l';
+    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' Ml';
+    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. l';
+    return sign + fmt3sig(abs) + ' l';
+  }
+
+  function buildEffTip(row) {
+    const fmtCap = v => {
+      const a = Math.abs(v);
+      if (a >= 1e6) return fmt3sig(a / 1e6) + ' mil. Kč';
+      if (a >= 1e3) return fmt3sig(a / 1e3) + ' tis. Kč';
+      return fmtInt.format(a) + ' Kč';
+    };
+    const lines = [row.measureName, row.context, '',
+      (effState.capexMode === 'full' ? 'Plný CAPEX: ' : 'Investice nad základ: ') + fmtCap(row.extraCapex)];
+    if (row.co2PerBilCZK != null) {
+      lines.push('Emise: ' + fmtEffBarLabel(row.co2PerBilCZK, 'co2PerBilCZK', false) + '/' + fmtScaleLbl());
+      lines.push('  → ' + (row.co2PerBilCZK / CZ_EMISSIONS_T * 100).toPrecision(3) + ' % č. emisí 2023');
+    }
+    if (row.gasMwhPerBilCZK != null) {
+      lines.push('Plyn: ' + fmtEffBarLabel(row.gasMwhPerBilCZK, 'gasMwhPerBilCZK', false) + '/' + fmtScaleLbl());
+      lines.push('  → ' + (row.gasMwhPerBilCZK / CZ_GAS_IMPORTS_MWH * 100).toPrecision(3) + ' % imp. plynu');
+    }
+    if (row.fuelLPerBilCZK != null) {
+      lines.push('PHM: ' + fmtEffBarLabel(row.fuelLPerBilCZK, 'fuelLPerBilCZK', false) + '/' + fmtScaleLbl());
+      lines.push('  → ' + (row.fuelLPerBilCZK / CZ_FUEL_IMPORTS_L * 100).toPrecision(3) + ' % imp. PHM');
+    }
+    if (row.fossilTwhPerScale != null) {
+      lines.push('Fosilní: ' + fmtEffBarLabel(row.fossilTwhPerScale, 'fossilTwhPerScale', false) + '/' + fmtScaleLbl());
+      lines.push('  → ' + (row.fossilTwhPerScale / CZ_FOSSIL_TWH * 100).toPrecision(3) + ' % ref. fosil. dovozu');
+    }
+    if (row.baselineName) lines.push('vs. ' + row.baselineName);
+    return lines.join('\n');
+  }
+
+  function renderEffBarChart(container, rows, valueKey, yLabel, refTotal) {
+    container.innerHTML = '';
+    if (!rows.length) {
+      container.innerHTML = '<p style="padding:12px 0;color:#aaa;font-size:13px">Žádná data pro aktuální výběr.</p>';
+      return;
+    }
+    const usePct = effState.unit === 'pct' && refTotal != null;
+    // In pct mode: divide by lifetime to get yearly savings, then compare to yearly Czech total
+    const toDisp = (v, lifetime) =>
+      (effState.yearlyMode ? v / (lifetime || 1) : v) / (usePct ? refTotal / 100 : 1);
+    const n     = rows.length;
+    const BAR_W = n > 24 ? 22 : n > 16 ? 28 : n > 10 ? 34 : 40;
+    const GAP   = Math.max(4, Math.round(BAR_W * 0.22));
+    const M     = { top: 28, right: 20, bottom: 340, left: 110 };
+    const CH    = 200;
+    const CW    = n * (BAR_W + GAP) - GAP;
+    const totalW = CW + M.left + M.right;
+    const totalH = CH + M.top + M.bottom;
+    const dispVals = rows.map(r => toDisp(r[valueKey], r.lifetime));
+    const yMax = Math.max(...dispVals, 0);
+    const yMin = Math.min(...dispVals, 0);
+    const yScale = d3.scaleLinear().domain([yMin, yMax]).nice().range([CH, 0]);
+    const z0     = yScale(0);
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
+    const chart = svg.append('g').attr('transform', `translate(${M.left},${M.top})`);
+    chart.append('line')
+      .attr('x1', -4).attr('x2', CW)
+      .attr('y1', z0).attr('y2', z0)
+      .attr('stroke', '#ccc').attr('stroke-width', 1);
+    rows.forEach((row, i) => {
+      const rawMetric = row[valueKey];  // may be null for measures w/o this saving type
+      const val   = toDisp(rawMetric, row.lifetime);  // null → 0 via JS coercion
+      const isNull = rawMetric == null;
+      const bH    = Math.max(Math.abs(yScale(val) - z0), 1);
+      const bY    = val >= 0 ? yScale(val) : z0;
+      const bX    = i * (BAR_W + GAP);
+      const color = row.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT;
+      const tipTx = buildEffTip(row);
+      chart.append('rect')
+        .attr('x', bX).attr('y', bY)
+        .attr('width', BAR_W).attr('height', bH)
+        .attr('fill', color).attr('opacity', isNull ? 0.18 : 0.82)
+        .on('mouseover', e => showQTip(e, tipTx))
+        .on('mousemove', moveQTip)
+        .on('mouseout',  hideQTip);
+      if (!isNull) {
+        const lbl = fmtEffBarLabel(val, valueKey, usePct);
+        chart.append('text')
+          .attr('x', bX + BAR_W / 2)
+          .attr('y', val >= 0 ? bY - 3 : bY + bH + 11)
+          .attr('text-anchor', 'middle')
+          .attr('font-size', '9px').attr('fill', color)
+          .text(lbl);
+      }
+      const fullXLbl = row.measureName + ' – ' + row.context;
+      const xLbl = fullXLbl.length > 46 ? fullXLbl.slice(0, 44) + '…' : fullXLbl;
+      // Two parallel label strips: with rotate(90), the X-axis offset is the
+      // horizontal separation between strips in screen space.
+      // Strip 1 (main): baseline shifted left of bar-centre
+      // Strip 2 (vs. baseline): baseline shifted right of bar-centre
+      const lbl1X = bX + BAR_W / 2 - 5;  // strip 1 baseline
+      const lbl2X = bX + BAR_W / 2 + 8;  // strip 2 baseline (13px gap)
+      chart.append('text')
+        .attr('transform', `translate(${lbl1X},${CH + 8}) rotate(90)`)
+        .attr('text-anchor', 'start')
+        .attr('font-size', '11px').attr('fill', '#555')
+        .on('mouseover', e => showQTip(e, row.measureName + '\n' + row.context))
+        .on('mousemove', moveQTip)
+        .on('mouseout',  hideQTip)
+        .text(xLbl);
+      if (row.baselineName) {
+        const baseLbl = 'vs. ' + row.baselineName;
+        chart.append('text')
+          .attr('transform', `translate(${lbl2X},${CH + 8}) rotate(90)`)
+          .attr('text-anchor', 'start')
+          .attr('font-size', '10px').attr('fill', '#aaa')
+          .attr('pointer-events', 'none')
+          .text(baseLbl);
+      }
+      // NPV beeswarm overlay
+      if (effState.showNpvSwarm && valueKey === 'npvPerBilCZK' && row.sensitivity && row.sensitivity.length) {
+        const nDots = row.sensitivity.length * 2;
+        row.sensitivity.forEach((s, si) => {
+          [s.minNpv, s.maxNpv].forEach((rawNpv, vi) => {
+            const swarmVal = toDisp(rawNpv / row.extraCapex * effState.investScale, row.lifetime);
+            if (!isFinite(swarmVal)) return;
+            const clampedVal = Math.max(yMin, Math.min(yMax, swarmVal));
+            const sy = yScale(clampedVal);
+            const jitter = nDots > 1
+              ? ((si * 2 + vi) / (nDots - 1) - 0.5) * BAR_W * 0.7
+              : 0;
+            chart.append('circle')
+              .attr('cx', bX + BAR_W / 2 + jitter)
+              .attr('cy', sy)
+              .attr('r', 3)
+              .attr('fill', color)
+              .attr('opacity', 0.38)
+              .attr('pointer-events', 'none');
+          });
+        });
+      }
+    });
+    const yTickFmt = usePct
+      ? v => { const a = Math.abs(v); const s = v < 0 ? '−' : ''; return s + (a < 0.01 ? a.toFixed(4) : a < 0.1 ? a.toFixed(3) : a.toFixed(2)) + ' %'; }
+      : v => fmtEffBarLabel(v, valueKey, false);
+    chart.append('g').attr('class', 'chart-axis')
+      .call(d3.axisLeft(yScale).ticks(5).tickFormat(yTickFmt));
+    svg.append('text')
+      .attr('transform', `translate(11,${M.top + CH / 2}) rotate(-90)`)
+      .attr('text-anchor', 'middle').attr('font-size', '10px').attr('fill', '#888')
+      .text(yLabel);
+  }
+
+  function renderEffCharts() {
+    // Update dynamic chart titles
+    const _yearly = effState.yearlyMode;
+    const _scale  = fmtScaleLbl();
+    const _setTitle = (id, yearly, lifetime) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = _yearly ? yearly : lifetime;
+    };
+    _setTitle('eff-co2-title',
+      `Každoroční úspora emisí CO₂ na ${_scale} investic`,
+      `Úspora emisí CO₂ za celou životnost na ${_scale} investic`);
+    _setTitle('eff-fossil-title',
+      `Každoroční úspora fosilních paliv na ${_scale} investic`,
+      `Úspora fosilních paliv za celou životnost na ${_scale} investic`);
+    _setTitle('eff-npv-title',
+      `Roční NPV na ${_scale} investic`,
+      `NPV (životnost) na ${_scale} investic`);
+    const co2El    = document.getElementById('eff-co2-chart');
+    const fossilEl = document.getElementById('eff-fossil-chart');
+    if (co2El) {
+      renderEffBarChart(co2El, getEffRows('co2PerBilCZK'),
+        'co2PerBilCZK',
+        effState.unit === 'pct'
+          ? (effState.yearlyMode ? `% č. emisí/rok / ${fmtScaleLbl()}` : `% č. emisí (životnost) / ${fmtScaleLbl()}`)
+          : (effState.yearlyMode ? `t CO₂/rok / ${fmtScaleLbl()}` : `t CO₂ (životnost) / ${fmtScaleLbl()}`),
+        CZ_EMISSIONS_T);
+      fokDownloadBar(co2El, 'efektivita-emise-co2');
+    }
+    if (fossilEl) {
+      renderEffBarChart(fossilEl, getEffRows('fossilTwhPerScale'),
+        'fossilTwhPerScale',
+        effState.unit === 'pct'
+          ? (effState.yearlyMode ? `% ref. fosil./rok / ${fmtScaleLbl()}` : `% ref. fosil. (životnost) / ${fmtScaleLbl()}`)
+          : (effState.yearlyMode ? `TWh/rok / ${fmtScaleLbl()}` : `TWh (životnost) / ${fmtScaleLbl()}`),
+        CZ_FOSSIL_TWH);
+      fokDownloadBar(fossilEl, 'efektivita-fosilni-paliva');
+    }
+    const npvEl = document.getElementById('eff-npv-chart');
+    if (npvEl) {
+      renderEffBarChart(npvEl, getEffRows('npvPerBilCZK'),
+        'npvPerBilCZK',
+        effState.yearlyMode ? `Kč NPV/rok / ${fmtScaleLbl()} invest.` : `Kč NPV (životnost) / ${fmtScaleLbl()} invest.`,
+        null);
+      fokDownloadBar(npvEl, 'efektivita-npv');
+    }
+  }
+
+  function setupEffControls() {
+    document.querySelectorAll('.eff-sector-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sec = btn.dataset.sector;
+        if (effState.sectors.has(sec)) {
+          if (effState.sectors.size > 1) { effState.sectors.delete(sec); btn.classList.remove('active'); }
+        } else {
+          effState.sectors.add(sec); btn.classList.add('active');
+        }
+        populateEffSelects(); renderEffCharts();
+      });
+    });
+    const comboSel = document.getElementById('eff-combo-select');
+    if (comboSel) comboSel.addEventListener('change', () => {
+      effState.combos = new Set(Array.from(comboSel.selectedOptions).map(o => o.value));
+      renderEffCharts();
+    });
+    const unitSel = document.getElementById('eff-unit-select');
+    if (unitSel) unitSel.addEventListener('change', () => {
+      effState.unit = unitSel.value; renderEffCharts();
+    });
+    const capexChk = document.getElementById('eff-fullcapex-check');
+    if (capexChk) capexChk.addEventListener('change', () => {
+      effState.capexMode = capexChk.checked ? 'full' : 'diff';
+      renderEffCharts();
+    });
+    const yearlyChk = document.getElementById('eff-yearly-check');
+    if (yearlyChk) yearlyChk.addEventListener('change', () => {
+      effState.yearlyMode = yearlyChk.checked;
+      renderEffCharts();
+    });
+    const scaleSel = document.getElementById('eff-scale-select');
+    if (scaleSel) scaleSel.addEventListener('change', () => {
+      effState.investScale = parseFloat(scaleSel.value);
+      renderEffCharts();
+    });
+    const sortSel = document.getElementById('eff-sort-select');
+    if (sortSel) sortSel.addEventListener('change', () => {
+      effState.sortBy = sortSel.value;
+      renderEffCharts();
+    });
+    const swarmChk = document.getElementById('eff-npv-beeswarm-check');
+    if (swarmChk) swarmChk.addEventListener('change', () => {
+      effState.showNpvSwarm = swarmChk.checked;
+      renderEffCharts();
+    });
+    populateEffSelects();
+  }
+
   function init() {
     if (document.getElementById('quadrant-wrap')) {
       quadrantDomains = computeQuadrantDomains();
@@ -2578,6 +2987,7 @@
       });
     }
 
+    setupEffControls();
     setupControls();
     renderAll();
     renderGasSavingsRangeChart();

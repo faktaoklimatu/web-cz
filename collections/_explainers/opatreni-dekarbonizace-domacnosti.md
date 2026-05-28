@@ -320,6 +320,43 @@ extra-scripts:
   font-size: 11px;
   color: #555;
 }
+/* ── Efficiency charts ─────────────────────────────────────────────────── */
+.eff-section { padding-top: 8px; }
+.eff-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 14px 16px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e8ecef;
+}
+.eff-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.eff-filter-group--multi  { flex: 1 1 180px; max-width: 280px; }
+.eff-filter-group--select { min-width: 160px; max-width: 210px; }
+.eff-sector-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.eff-sector-btn {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  transition: background 0.15s, color 0.15s;
+}
+.eff-sector-btn.active { background: #1a7a85; color: #fff; border-color: #1a7a85; }
+.eff-multiselect { font-size: 12px; }
+.eff-chart { overflow-x: auto; margin: 4px 0 28px; }
+.eff-chart svg { display: block; }
+.eff-chart-title { font-size: 1rem; font-weight: 600; margin: 24px 0 2px; color: #333; }
+.eff-note { font-size: 0.78rem; color: #aaa; margin: 0 0 6px; font-style: italic; }
 </style>
 
 <div class="section pb-3">
@@ -650,5 +687,87 @@ extra-scripts:
       <div id="sensitivity-beeswarm-chart"></div>
       <div id="sensitivity-beeswarm-legend" class="sb-legend"></div>
     </div>
+  </div>
+</div>
+
+
+<div class="section pt-3 pb-4 eff-section">
+  <div class="container">
+    <p class="chart-col-header mb-2">Efektivita ve&#345;ejn&#253;ch investic</p>
+    <p class="text-muted" style="font-size:0.85rem; margin-top:-0.25rem; margin-bottom:0.75rem;">
+      Kolik emis&#237; CO&#8322;, zemn&#237;ho plynu nebo pohynn&#253;ch hmot lze u&#353;et&#345;it na ka&#382;dou investovanou miliardu korun
+      &#8211; m&#283;&#345;eno jako rozd&#237;l CAPEX oprot&#237; z&#225;kladn&#237; variant&#283;, kumulovan&#253; za celou dobu &#382;ivotnosti opat&#345;en&#237;.
+    </p>
+
+    <div class="eff-controls">
+      <div class="eff-filter-group">
+        <span class="control-label">Sektor</span>
+        <div class="eff-sector-btns">
+          <button class="eff-sector-btn active" data-sector="buildings">Budovy</button>
+          <button class="eff-sector-btn active" data-sector="transport">Doprava</button>
+        </div>
+      </div>
+      <div class="eff-filter-group eff-filter-group--multi" style="flex: 2 1 300px; max-width: 480px;">
+        <label class="control-label" for="eff-combo-select">Opat&#345;en&#237; &times; kontext <small>(nic = v&#353;e)</small></label>
+        <select id="eff-combo-select" multiple size="8" class="form-select form-select-sm eff-multiselect"></select>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <label class="control-label" for="eff-unit-select">Jednotky</label>
+        <select id="eff-unit-select" class="form-select form-select-sm mt-1">
+          <option value="abs">Absolutn&#237;</option>
+          <option value="pct">% &#269;esk&#233;ho celku</option>
+        </select>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <span class="control-label">Z&#225;klad CAPEX</span>
+        <label class="mt-1" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;">
+          <input type="checkbox" id="eff-fullcapex-check">
+          Pln&#253; CAPEX (ne diff)
+        </label>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <span class="control-label">Obdob&#237;</span>
+        <label class="mt-1" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;">
+          <input type="checkbox" id="eff-yearly-check" checked>
+          Ro&#269;n&#237; (ne celkov&#225;)
+        </label>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <label class="control-label" for="eff-sort-select">Řadit dle</label>
+        <select id="eff-sort-select" class="form-select form-select-sm mt-1">
+          <option value="co2PerBilCZK" selected>Emise CO&#8322;</option>
+          <option value="fossilTwhPerScale">Fosiln&#237; paliva</option>
+          <option value="npvPerBilCZK">NPV</option>
+        </select>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <label class="control-label" for="eff-scale-select">Investice</label>
+        <select id="eff-scale-select" class="form-select form-select-sm mt-1">
+          <option value="1e11" selected>100&#160;mld.&#160;K&#269;</option>
+          <option value="1e10">10&#160;mld.&#160;K&#269;</option>
+          <option value="1e9">1&#160;mld.&#160;K&#269;</option>
+          <option value="1e6">1&#160;mil.&#160;K&#269;</option>
+        </select>
+      </div>
+      <div class="eff-filter-group eff-filter-group--select">
+        <span class="control-label">Citlivost NPV</span>
+        <label class="mt-1" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;">
+          <input type="checkbox" id="eff-npv-beeswarm-check">
+          Beeswarm (NPV)
+        </label>
+      </div>
+    </div>
+
+    <h3 id="eff-co2-title" class="eff-chart-title"></h3>
+    <div id="eff-co2-chart" class="eff-chart"></div>
+
+    <h3 id="eff-fossil-title" class="eff-chart-title"></h3>
+    <p class="eff-note">Zemn&#237; plyn (budovy) + kapaln&#225; paliva – benz&#237;n &amp; nafta (doprava), p&#345;epo&#269;teno na TWh (~9,5&#160;kWh/l). Referen&#269;n&#237; hodnota: ~200&#160;TWh/rok.</p>
+    <div id="eff-fossil-chart" class="eff-chart"></div>
+
+    <h3 id="eff-npv-title" class="eff-chart-title"></h3>
+    <p class="eff-note">&#268;ist&#225; sou&#269;asn&#225; hodnota (NPV) opat&#345;en&#237; p&#345;i aktu&#225;ln&#237;m nastaven&#237; parametr&#367;. Kladn&#225; hodnota = opat&#345;en&#237; se vyplat&#237;, z&#225;porn&#225; = net&#237; n&#225;kladov&#283; efektivn&#237;. Ro&#269;n&#237; re&#382;im d&#283;l&#237; NPV dobou &#382;ivotnosti.</p>
+    <div id="eff-npv-chart" class="eff-chart"></div>
+
   </div>
 </div>
