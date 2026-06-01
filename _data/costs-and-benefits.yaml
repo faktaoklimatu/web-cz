@@ -16,6 +16,7 @@ buildings_measures:
   capex_technology_czk: 85000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
 - id: 2
@@ -35,6 +36,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 3
@@ -54,6 +56,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 4
@@ -73,6 +76,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 5
@@ -92,6 +96,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 6
@@ -111,6 +116,7 @@ buildings_measures:
   capex_technology_czk: 65000
   capex_installation_czk: 13000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
 - id: 7
@@ -130,6 +136,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 8
@@ -149,6 +156,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 9
@@ -168,6 +176,7 @@ buildings_measures:
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
 - id: 10
@@ -187,6 +196,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 11
@@ -206,6 +216,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 12
@@ -225,6 +236,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 13
@@ -244,6 +256,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 14
@@ -263,6 +276,7 @@ buildings_measures:
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
 - id: 15
@@ -282,6 +296,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 66000
   capex_preparation_czk: 35000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 16
@@ -301,6 +316,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 17
@@ -320,6 +336,7 @@ buildings_measures:
   capex_technology_czk: 68000
   capex_installation_czk: 27000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
 - id: 18
@@ -339,6 +356,7 @@ buildings_measures:
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
 - id: 19
@@ -358,6 +376,7 @@ buildings_measures:
   capex_technology_czk: 62500
   capex_installation_czk: 50000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 20
@@ -377,6 +396,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 21
@@ -396,6 +416,7 @@ buildings_measures:
   capex_technology_czk: 58000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
 - id: 22
@@ -415,6 +436,7 @@ buildings_measures:
   capex_technology_czk: 25000
   capex_installation_czk: 10000
   capex_preparation_czk: 5000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
 - id: 23
@@ -434,6 +456,7 @@ buildings_measures:
   capex_technology_czk: 50000
   capex_installation_czk: 40000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 24
@@ -453,6 +476,7 @@ buildings_measures:
   capex_technology_czk: 0
   capex_installation_czk: 0
   capex_preparation_czk: 0
+  capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 25
@@ -472,6 +496,7 @@ buildings_measures:
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -493,6 +518,7 @@ buildings_measures:
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -514,6 +540,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3000
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
@@ -535,6 +562,7 @@ buildings_measures:
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -556,6 +584,7 @@ buildings_measures:
   capex_technology_czk: 880000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -577,6 +606,7 @@ buildings_measures:
   capex_technology_czk: 880000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -598,6 +628,7 @@ buildings_measures:
   capex_technology_czk: 860000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -619,6 +650,7 @@ buildings_measures:
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -640,6 +672,7 @@ buildings_measures:
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -661,6 +694,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3000
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
@@ -682,6 +716,7 @@ buildings_measures:
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
@@ -703,6 +738,7 @@ buildings_measures:
   capex_technology_czk: 700000
   capex_installation_czk: 105000
   capex_preparation_czk: 55000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -724,6 +760,7 @@ buildings_measures:
   capex_technology_czk: 200000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -745,6 +782,7 @@ buildings_measures:
   capex_technology_czk: 95000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -766,6 +804,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3000
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
@@ -787,6 +826,7 @@ buildings_measures:
   capex_technology_czk: 42000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -808,6 +848,7 @@ buildings_measures:
   capex_technology_czk: 880000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -829,6 +870,7 @@ buildings_measures:
   capex_technology_czk: 880000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -850,6 +892,7 @@ buildings_measures:
   capex_technology_czk: 860000
   capex_installation_czk: 130000
   capex_preparation_czk: 70000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -871,6 +914,7 @@ buildings_measures:
   capex_technology_czk: 160000
   capex_installation_czk: 50000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -892,6 +936,7 @@ buildings_measures:
   capex_technology_czk: 70000
   capex_installation_czk: 22000
   capex_preparation_czk: 23000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -913,6 +958,7 @@ buildings_measures:
   capex_technology_czk: 220000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 3000
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
@@ -934,6 +980,7 @@ buildings_measures:
   capex_technology_czk: 38000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -955,6 +1002,7 @@ buildings_measures:
   capex_technology_czk: 700000
   capex_installation_czk: 105000
   capex_preparation_czk: 55000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -976,6 +1024,7 @@ buildings_measures:
   capex_technology_czk: 34000
   capex_installation_czk: 18000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -997,6 +1046,7 @@ buildings_measures:
   capex_technology_czk: 33000
   capex_installation_czk: 17000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
@@ -1018,6 +1068,7 @@ buildings_measures:
   capex_technology_czk: 90000
   capex_installation_czk: 40000
   capex_preparation_czk: 7000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -1040,6 +1091,7 @@ buildings_measures:
   capex_technology_czk: 15000
   capex_installation_czk: 5000
   capex_preparation_czk: 0
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
@@ -1062,6 +1114,7 @@ buildings_measures:
   capex_technology_czk: 50000
   capex_installation_czk: 20000
   capex_preparation_czk: 10000
+  capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
@@ -1084,6 +1137,7 @@ buildings_measures:
   capex_technology_czk: 80000
   capex_installation_czk: 30000
   capex_preparation_czk: 4000
+  capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Fasáda
@@ -1098,9 +1152,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 490000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 12000
   opex_repairs_czk: 4333
   opex_insurance_czk: 16000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 6000
   note: Fabia – 6,5 l, 15 000 km
 - id: 56
@@ -1111,9 +1167,11 @@ transport_measures:
   fuel: Diesel
   lifetime: 15
   capex_czk: 1150000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 20000
   opex_repairs_czk: 9333
   opex_insurance_czk: 24000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 8500
   note: Kodiaq – 8 l, 20 000 km
 - id: 57
@@ -1124,9 +1182,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 240000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 18000
   opex_repairs_czk: 6000
   opex_insurance_czk: 7000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 2800
   note: Fabia – 7,5 l, 15 000 km
 - id: 58
@@ -1137,9 +1197,11 @@ transport_measures:
   fuel: Diesel
   lifetime: 7
   capex_czk: 530000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 25000
   opex_repairs_czk: 14286
   opex_insurance_czk: 10000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 3967
   note: Kodiaq – 8,5 l, 20 000 km
 - id: 59
@@ -1150,9 +1212,11 @@ transport_measures:
   fuel: Electricity
   lifetime: 15
   capex_czk: 650000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 5000
   opex_repairs_czk: 8000
   opex_insurance_czk: 18000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 8800
   measure_baseline: Nové malé auto na benzín
   note: Elektromobil
@@ -1165,9 +1229,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 560000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 9000
   opex_repairs_czk: 5333
   opex_insurance_czk: 16000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 6000
   measure_baseline: Nové malé auto na benzín
   note: Hybrid – 4,5 l
@@ -1180,9 +1246,11 @@ transport_measures:
   fuel: Electricity
   lifetime: 15
   capex_czk: 1150000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 10000
   opex_repairs_czk: 9667
   opex_insurance_czk: 28000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 11000
   measure_baseline: Nové velké auto na naftu
   note: Elektromobil
@@ -1195,9 +1263,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 15
   capex_czk: 1150000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 18000
   opex_repairs_czk: 7000
   opex_insurance_czk: 24000
+  opex_sensitivity: 0.1
   emissions_embedded_kg: 8500
   measure_baseline: Nové velké auto na naftu
   note: Hybrid – 6,5 l
@@ -1210,9 +1280,11 @@ transport_measures:
   fuel: Electricity
   lifetime: 7
   capex_czk: 280000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 9000
   opex_repairs_czk: 8571
   opex_insurance_czk: 8000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 4107
   measure_baseline: Ojeté malé auto na benzín
   note: Elektromobil
@@ -1225,9 +1297,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 300000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 15000
   opex_repairs_czk: 7429
   opex_insurance_czk: 7000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 2800
   measure_baseline: Ojeté malé auto na benzín
   note: Hybrid – 5,5 l
@@ -1240,9 +1314,11 @@ transport_measures:
   fuel: Electricity
   lifetime: 7
   capex_czk: 480000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 11000
   opex_repairs_czk: 11714
   opex_insurance_czk: 11000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 5133
   measure_baseline: Ojeté velké auto na naftu
   note: Elektromobil
@@ -1255,9 +1331,11 @@ transport_measures:
   fuel: Petrol
   lifetime: 7
   capex_czk: 600000
+  capex_sensitivity: 0.05
   opex_maintenance_czk: 17500
   opex_repairs_czk: 11429
   opex_insurance_czk: 10000
+  opex_sensitivity: 0.15
   emissions_embedded_kg: 3967
   measure_baseline: Ojeté velké auto na naftu
   note: Hybrid – 7 l
