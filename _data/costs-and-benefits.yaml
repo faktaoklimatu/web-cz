@@ -13,8 +13,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 85000
-  capex_installation_czk: 13000
+  capex_technology_czk: 95000
+  capex_installation_czk: 40000
   capex_preparation_czk: 0
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
@@ -113,8 +113,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 65000
-  capex_installation_czk: 13000
+  capex_technology_czk: 80000
+  capex_installation_czk: 40000
   capex_preparation_czk: 0
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
@@ -515,8 +515,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 95000
-  capex_installation_czk: 22000
+  capex_technology_czk: 120000
+  capex_installation_czk: 45000
   capex_preparation_czk: 23000
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
@@ -669,8 +669,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 70000
-  capex_installation_czk: 22000
+  capex_technology_czk: 100000
+  capex_installation_czk: 45000
   capex_preparation_czk: 23000
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
@@ -779,8 +779,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 95000
-  capex_installation_czk: 22000
+  capex_technology_czk: 120000
+  capex_installation_czk: 45000
   capex_preparation_czk: 23000
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
@@ -933,8 +933,8 @@ buildings_measures:
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
   electricity_savings: 0.0
-  capex_technology_czk: 70000
-  capex_installation_czk: 22000
+  capex_technology_czk: 100000
+  capex_installation_czk: 45000
   capex_preparation_czk: 23000
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
