@@ -2402,6 +2402,248 @@
   }
 
 
+  // ── CAPEX + OPEX breakdown chart ─────────────────────────────────────────────
+  // Grouped bars per year: baseline (left) and measure (right).
+  // Year 0 shows CAPEX; years 1-N show combined annual OPEX (fuel + maintenance).
+  function renderCostBreakdownChart(container) {
+    const MEASURE_ID  = 59;  // Nový malý elektromobil
+    const BASELINE_ID = 55;  // Nové malé auto na benzín
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+
+    let r;
+    try {
+      r = CostsBenefits.calculate({
+        measureId:              MEASURE_ID,
+        data,
+        discountRate:           0,
+        carbonPriceEur:         state.carbonPrice,
+        priceScenario:          state.fuelScenario,
+        electricityPriceFactor: state.electricityPriceFactor,
+      });
+    } catch (_) { return; }
+
+    const yby = r.yearByYear || [];
+    if (!yby.length) return;
+
+    const byId = (list, id) => list.find(x => x.id === id);
+    const bl   = byId(data.transport_measures, BASELINE_ID);
+    const meas = byId(data.transport_measures, MEASURE_ID);
+
+    // Build per-year data: year 0 = CAPEX, years 1+ = annual OPEX
+    const years = yby.map(row => ({
+      year:    row.year,
+      bl:   row.year === 0 ? bl.capex_czk   : row.opexBaseline,
+      meas: row.year === 0 ? meas.capex_czk : row.opexMeasure,
+    }));
+
+    container.innerHTML = '';
+
+    const COLORS = {
+      bl:   { capex: '#a8c4e0', opex: '#6b8cba' },
+      meas: { capex: '#7cc5ce', opex: '#1a7a85' },
+    };
+
+    const margin = { top: 20, right: 16, bottom: 36, left: 72 };
+    const W = (container.clientWidth || container.parentElement?.clientWidth || 400) - margin.left - margin.right;
+    const H = 160;
+
+    const domMax = d3.max(years, d => Math.max(d.bl, d.meas));
+
+    const x0 = d3.scaleBand().domain(years.map(d => d.year)).range([0, W]).padding(0.1);
+    const x1 = d3.scaleBand().domain(['bl', 'meas']).range([0, x0.bandwidth()]).padding(0.05);
+    const yScale = d3.scaleLinear().domain([0, domMax]).nice().range([H, 0]);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width',  W + margin.left + margin.right)
+      .attr('height', H + margin.top  + margin.bottom)
+      .style('font-family', FONT).style('display', 'block');
+
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    // Zero line
+    g.append('line')
+      .attr('x1', 0).attr('x2', W).attr('y1', H).attr('y2', H)
+      .attr('stroke', '#ccc').attr('stroke-width', 1);
+
+    years.forEach(d => {
+      const gx = x0(d.year);
+      [['bl', d.bl], ['meas', d.meas]].forEach(([key, val]) => {
+        const color = COLORS[key][d.year === 0 ? 'capex' : 'opex'];
+        const bh = Math.max(H - yScale(val), 1);
+        g.append('rect')
+          .attr('x', gx + x1(key))
+          .attr('y', yScale(val))
+          .attr('width', x1.bandwidth())
+          .attr('height', bh)
+          .attr('fill', color).attr('opacity', 0.85);
+      });
+    });
+
+    // X axis — show year number, thin out if needed
+    const lifetime = years[years.length - 1].year;
+    const step = lifetime <= 15 ? 1 : 5;
+    const tickVals = years.map(d => d.year).filter(y => y % step === 0);
+    g.append('g')
+      .attr('transform', `translate(0,${H})`).attr('class', 'chart-axis')
+      .call(d3.axisBottom(x0).tickValues(tickVals).tickFormat(d => d));
+    g.append('text')
+      .attr('x', 0).attr('y', H + 30)
+      .attr('font-size', '11px').attr('fill', '#999').text('Rok od investice →');
+
+    // Y axis
+    g.append('g').attr('class', 'chart-axis')
+      .call(d3.axisLeft(yScale).ticks(5)
+        .tickFormat(v => (v / 1000).toFixed(0) + ' tis.'));
+
+    // Legend
+    const leg = g.append('g').attr('transform', `translate(${W - 200}, 4)`);
+    // Header row: CAPEX / OPEX column labels
+    leg.append('text').attr('x', 0).attr('y', 9)
+      .attr('font-size', '10px').attr('font-weight', '600').attr('fill', '#999').text('CAPEX');
+    leg.append('text').attr('x', 46).attr('y', 9)
+      .attr('font-size', '10px').attr('font-weight', '600').attr('fill', '#999').text('OPEX');
+    // One row per measure
+    [[COLORS.bl.capex, COLORS.bl.opex, bl.measure_name], [COLORS.meas.capex, COLORS.meas.opex, meas.measure_name]].forEach(([capexColor, opexColor, label], i) => {
+      const row = leg.append('g').attr('transform', `translate(0,${14 + i * 16})`);
+      row.append('rect').attr('width', 10).attr('height', 10).attr('fill', capexColor).attr('opacity', 0.85);
+      row.append('rect').attr('x', 46).attr('width', 10).attr('height', 10).attr('fill', opexColor).attr('opacity', 0.85);
+      row.append('text').attr('x', 60).attr('y', 9).attr('font-size', '10px').attr('fill', '#555').text(label);
+    });
+  }
+
+  // ── Discount rate comparison column chart ────────────────────────────────────────────
+  // Each bar = 3 % discounted cumulative NPV (teal / red).
+  // A grey extension shows the additional value visible at 0 % discount —
+  // i.e. what discounting “erases” relative to the undiscounted view.
+  function renderDiscountLineChart(container) {
+    const MEASURE_ID = 59;  // Nový malý elektromobil
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+
+    const calc = rate => {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId:              MEASURE_ID,
+          data,
+          discountRate:           rate,
+          carbonPriceEur:         state.carbonPrice,
+          priceScenario:          state.fuelScenario,
+          electricityPriceFactor: state.electricityPriceFactor,
+        });
+        return { rows: r.yearByYear || [], paybackYear: r.paybackYear };
+      } catch (_) { return { rows: [], paybackYear: null }; }
+    };
+
+    const r3 = calc(0.03);
+    const r0 = calc(0);
+    if (!r3.rows.length) return;
+
+    // Merge into per-year objects: { year, disc3, disc0 }
+    const years = r3.rows.map((row, i) => ({
+      year:  row.year,
+      disc3: row.cumDisc,
+      disc0: (r0.rows[i] || row).cumDisc,
+    }));
+
+    container.innerHTML = '';
+
+    const margin  = { top: 20, right: 16, bottom: 36, left: 72 };
+    const W       = (container.clientWidth || container.parentElement?.clientWidth || 500) - margin.left - margin.right;
+    const H       = 160;
+    const BAR_STEP = Math.floor(W / years.length);
+    const chartW  = BAR_STEP * years.length;
+
+    // Y domain: must cover both disc0 and disc3 extremes
+    const allVals = years.flatMap(d => [d.disc3, d.disc0]);
+    const [vMin, vMax] = d3.extent(allVals);
+
+    const xScale = d3.scaleBand()
+      .domain(years.map(d => d.year))
+      .range([0, chartW]).padding(0.12);
+    const yScale = d3.scaleLinear()
+      .domain([Math.min(vMin, 0), Math.max(vMax, 0)]).nice()
+      .range([H, 0]);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width',  margin.left + chartW + margin.right)
+      .attr('height', H + margin.top + margin.bottom)
+      .style('font-family', FONT).style('display', 'block');
+
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    const z = yScale(0);
+
+    // Zero line
+    g.append('line')
+      .attr('x1', 0).attr('x2', chartW)
+      .attr('y1', z).attr('y2', z)
+      .attr('stroke', '#ccc').attr('stroke-width', 1);
+
+    // Payback marker (3 % rate)
+    if (r3.paybackYear != null) {
+      const px = xScale(r3.paybackYear) + xScale.bandwidth() / 2;
+      g.append('line')
+        .attr('x1', px).attr('x2', px).attr('y1', 0).attr('y2', H)
+        .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+      g.append('text').attr('x', px + 3).attr('y', 10)
+        .attr('font-size', '10px').attr('fill', '#aaa').text('Návratnost');
+    }
+
+    years.forEach(d => {
+      const x  = xScale(d.year);
+      const bw = xScale.bandwidth();
+
+      // Main bar: 3 % cumulative NPV
+      const color3 = d.disc3 >= 0 ? '#1a7a85' : '#c0392b';
+      g.append('rect')
+        .attr('x', x)
+        .attr('y', Math.min(yScale(d.disc3), z))
+        .attr('width', bw)
+        .attr('height', Math.max(Math.abs(yScale(d.disc3) - z), 1))
+        .attr('fill', color3).attr('opacity', 0.8);
+
+      // Grey extension: disc0 ≥ disc3 always (undiscounted savings are higher),
+      // so the grey segment extends outward from the 3 % bar tip.
+      const lo = Math.min(yScale(d.disc0), yScale(d.disc3));
+      const hi = Math.max(yScale(d.disc0), yScale(d.disc3));
+      const extH = hi - lo;
+      if (extH > 0.5) {
+        g.append('rect')
+          .attr('x', x)
+          .attr('y', lo)
+          .attr('width', bw)
+          .attr('height', extH)
+          .attr('fill', '#bbb').attr('opacity', 0.5);
+      }
+    });
+
+    // X axis
+    const lifetime = years[years.length - 1].year;
+    const step = lifetime <= 15 ? 1 : 5;
+    const tickVals = years.map(d => d.year).filter(y => y % step === 0);
+    g.append('g')
+      .attr('transform', `translate(0,${H})`).attr('class', 'chart-axis')
+      .call(d3.axisBottom(xScale).tickValues(tickVals).tickFormat(d => d));
+    g.append('text')
+      .attr('x', 0).attr('y', H + 30)
+      .attr('font-size', '11px').attr('fill', '#999').text('Rok od investice →');
+
+    // Y axis
+    g.append('g').attr('class', 'chart-axis')
+      .call(d3.axisLeft(yScale).ticks(5)
+        .tickFormat(v => (v / 1000).toFixed(0) + ' tis.'));
+
+    // Legend
+    const leg = g.append('g').attr('transform', `translate(${chartW - 180}, 4)`);
+    [
+      { color: COLOR_FAVORABLE, label: 'Kumulativní NPV (3 % diskont)' },
+      { color: '#bbb',          label: 'Navíc při 0 % diskontu',        opacity: 0.5 },
+    ].forEach((item, i) => {
+      const row = leg.append('g').attr('transform', `translate(0,${i * 16})`);
+      row.append('rect').attr('width', 12).attr('height', 10)
+        .attr('fill', item.color).attr('opacity', item.opacity || 0.8);
+      row.append('text').attr('x', 17).attr('y', 9)
+        .attr('font-size', '10px').attr('fill', '#555').text(item.label);
+    });
+  }
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -2479,6 +2721,10 @@
     addDownloadBars();
     renderImportCostTable();
     renderEffCharts();
+    const cbEl = document.getElementById('cost-breakdown-chart');
+    if (cbEl) renderCostBreakdownChart(cbEl);
+    const discEl = document.getElementById('discount-line-chart');
+    if (discEl) renderDiscountLineChart(discEl);
   }
 
   // ── Gas savings range chart ────────────────────────────────────────────────
