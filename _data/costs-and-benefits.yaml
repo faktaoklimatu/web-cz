@@ -1393,6 +1393,8 @@ fuel_scenarios:
     petrol: 45.0
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 400
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2027
     year_investment: 2
     gas: 2700
@@ -1402,6 +1404,8 @@ fuel_scenarios:
     petrol: 50.0
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 370
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2028
     year_investment: 3
     gas: 2300
@@ -1411,6 +1415,8 @@ fuel_scenarios:
     petrol: 45.0
     diesel: 44.0
     electricity_emission_factor_kg_mwh: 340
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2029
     year_investment: 4
     gas: 2240
@@ -1420,6 +1426,8 @@ fuel_scenarios:
     petrol: 35.0
     diesel: 35.0
     electricity_emission_factor_kg_mwh: 310
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2030
     year_investment: 5
     gas: 2250
@@ -1429,6 +1437,8 @@ fuel_scenarios:
     petrol: 35.0
     diesel: 35.0
     electricity_emission_factor_kg_mwh: 280
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2031
     year_investment: 6
     gas: 2260
@@ -1438,6 +1448,8 @@ fuel_scenarios:
     petrol: 35.5
     diesel: 35.5
     electricity_emission_factor_kg_mwh: 250
+    electricity_mix_gas_ratio: 20%
+    electricity_gas_factor_mwh_mwh: 0.44
   - year_calendar: 2032
     year_investment: 7
     gas: 2270
@@ -1447,6 +1459,8 @@ fuel_scenarios:
     petrol: 36.0
     diesel: 36.0
     electricity_emission_factor_kg_mwh: 220
+    electricity_mix_gas_ratio: 25%
+    electricity_gas_factor_mwh_mwh: 0.56
   - year_calendar: 2033
     year_investment: 8
     gas: 2280
@@ -1456,6 +1470,8 @@ fuel_scenarios:
     petrol: 36.5
     diesel: 36.5
     electricity_emission_factor_kg_mwh: 190
+    electricity_mix_gas_ratio: 30%
+    electricity_gas_factor_mwh_mwh: 0.67
   - year_calendar: 2034
     year_investment: 9
     gas: 2290
@@ -1465,6 +1481,8 @@ fuel_scenarios:
     petrol: 37.0
     diesel: 37.0
     electricity_emission_factor_kg_mwh: 160
+    electricity_mix_gas_ratio: 32%
+    electricity_gas_factor_mwh_mwh: 0.71
   - year_calendar: 2035
     year_investment: 10
     gas: 2300
@@ -1474,6 +1492,8 @@ fuel_scenarios:
     petrol: 38.0
     diesel: 38.0
     electricity_emission_factor_kg_mwh: 155
+    electricity_mix_gas_ratio: 31%
+    electricity_gas_factor_mwh_mwh: 0.69
   - year_calendar: 2036
     year_investment: 11
     gas: 2320
@@ -1483,6 +1503,8 @@ fuel_scenarios:
     petrol: 39.0
     diesel: 39.0
     electricity_emission_factor_kg_mwh: 150
+    electricity_mix_gas_ratio: 30%
+    electricity_gas_factor_mwh_mwh: 0.67
   - year_calendar: 2037
     year_investment: 12
     gas: 2340
@@ -1492,6 +1514,8 @@ fuel_scenarios:
     petrol: 40.0
     diesel: 40.0
     electricity_emission_factor_kg_mwh: 145
+    electricity_mix_gas_ratio: 29%
+    electricity_gas_factor_mwh_mwh: 0.64
   - year_calendar: 2038
     year_investment: 13
     gas: 2360
@@ -1501,6 +1525,8 @@ fuel_scenarios:
     petrol: 41.0
     diesel: 41.0
     electricity_emission_factor_kg_mwh: 140
+    electricity_mix_gas_ratio: 28%
+    electricity_gas_factor_mwh_mwh: 0.62
   - year_calendar: 2039
     year_investment: 14
     gas: 2380
@@ -1510,6 +1536,8 @@ fuel_scenarios:
     petrol: 42.0
     diesel: 42.0
     electricity_emission_factor_kg_mwh: 110
+    electricity_mix_gas_ratio: 22%
+    electricity_gas_factor_mwh_mwh: 0.49
   - year_calendar: 2040
     year_investment: 15
     gas: 2400
@@ -1519,6 +1547,8 @@ fuel_scenarios:
     petrol: 43.0
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 105
+    electricity_mix_gas_ratio: 21%
+    electricity_gas_factor_mwh_mwh: 0.47
   - year_calendar: 2041
     year_investment: 16
     gas: 2420
@@ -1528,6 +1558,8 @@ fuel_scenarios:
     petrol: 43.8
     diesel: 43.8
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2042
     year_investment: 17
     gas: 2440
@@ -1537,6 +1569,8 @@ fuel_scenarios:
     petrol: 44.5
     diesel: 44.5
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2043
     year_investment: 18
     gas: 2460
@@ -1546,6 +1580,8 @@ fuel_scenarios:
     petrol: 45.3
     diesel: 45.3
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2044
     year_investment: 19
     gas: 2480
@@ -1555,6 +1591,8 @@ fuel_scenarios:
     petrol: 46.0
     diesel: 46.0
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2045
     year_investment: 20
     gas: 2500
@@ -1564,6 +1602,8 @@ fuel_scenarios:
     petrol: 46.8
     diesel: 46.8
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2046
     year_investment: 21
     gas: 2500
@@ -1573,6 +1613,8 @@ fuel_scenarios:
     petrol: 47.5
     diesel: 47.5
     electricity_emission_factor_kg_mwh: 50
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2047
     year_investment: 22
     gas: 2500
@@ -1582,6 +1624,8 @@ fuel_scenarios:
     petrol: 48.3
     diesel: 48.3
     electricity_emission_factor_kg_mwh: 49
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2048
     year_investment: 23
     gas: 2500
@@ -1591,6 +1635,8 @@ fuel_scenarios:
     petrol: 49.0
     diesel: 49.0
     electricity_emission_factor_kg_mwh: 48
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.21
   - year_calendar: 2049
     year_investment: 24
     gas: 2500
@@ -1600,6 +1646,8 @@ fuel_scenarios:
     petrol: 49.8
     diesel: 49.8
     electricity_emission_factor_kg_mwh: 47
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.21
   - year_calendar: 2050
     year_investment: 25
     gas: 2500
@@ -1609,6 +1657,8 @@ fuel_scenarios:
     petrol: 50.5
     diesel: 50.5
     electricity_emission_factor_kg_mwh: 46
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2051
     year_investment: 26
     gas: 2500
@@ -1618,6 +1668,8 @@ fuel_scenarios:
     petrol: 51.3
     diesel: 51.3
     electricity_emission_factor_kg_mwh: 45
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2052
     year_investment: 27
     gas: 2500
@@ -1627,6 +1679,8 @@ fuel_scenarios:
     petrol: 52.0
     diesel: 52.0
     electricity_emission_factor_kg_mwh: 44
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2053
     year_investment: 28
     gas: 2500
@@ -1636,6 +1690,8 @@ fuel_scenarios:
     petrol: 53.0
     diesel: 53.0
     electricity_emission_factor_kg_mwh: 43
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.19
   - year_calendar: 2054
     year_investment: 29
     gas: 2500
@@ -1645,6 +1701,8 @@ fuel_scenarios:
     petrol: 54.0
     diesel: 54.0
     electricity_emission_factor_kg_mwh: 42
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.19
   - year_calendar: 2055
     year_investment: 30
     gas: 2500
@@ -1654,6 +1712,8 @@ fuel_scenarios:
     petrol: 55.0
     diesel: 55.0
     electricity_emission_factor_kg_mwh: 41
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2056
     year_investment: 31
     gas: 2500
@@ -1663,6 +1723,8 @@ fuel_scenarios:
     petrol: 56.0
     diesel: 56.0
     electricity_emission_factor_kg_mwh: 40
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2057
     year_investment: 32
     gas: 2500
@@ -1672,6 +1734,8 @@ fuel_scenarios:
     petrol: 57.0
     diesel: 57.0
     electricity_emission_factor_kg_mwh: 39
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.17
   - year_calendar: 2058
     year_investment: 33
     gas: 2500
@@ -1681,6 +1745,8 @@ fuel_scenarios:
     petrol: 58.0
     diesel: 58.0
     electricity_emission_factor_kg_mwh: 38
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.17
   - year_calendar: 2059
     year_investment: 34
     gas: 2500
@@ -1690,6 +1756,8 @@ fuel_scenarios:
     petrol: 59.0
     diesel: 59.0
     electricity_emission_factor_kg_mwh: 37
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2060
     year_investment: 35
     gas: 2500
@@ -1699,6 +1767,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 36
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2061
     year_investment: 36
     gas: 2500
@@ -1708,6 +1778,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 35
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2062
     year_investment: 37
     gas: 2500
@@ -1717,6 +1789,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 34
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.15
   - year_calendar: 2063
     year_investment: 38
     gas: 2500
@@ -1726,6 +1800,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 33
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.15
   - year_calendar: 2064
     year_investment: 39
     gas: 2500
@@ -1735,6 +1811,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 32
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.14
   - year_calendar: 2065
     year_investment: 40
     gas: 2500
@@ -1744,6 +1822,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 31
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.14
 - scenario: NZ
   prices:
   - year_calendar: 2026
@@ -1756,6 +1836,8 @@ fuel_scenarios:
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 400
     carbon_price_eur_nz: 60
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2027
     year_investment: 2
     gas: 2700
@@ -1766,6 +1848,8 @@ fuel_scenarios:
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 365
     carbon_price_eur_nz: 84
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2028
     year_investment: 3
     gas: 2300
@@ -1776,6 +1860,8 @@ fuel_scenarios:
     diesel: 44.0
     electricity_emission_factor_kg_mwh: 330
     carbon_price_eur_nz: 107
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2029
     year_investment: 4
     gas: 2240
@@ -1786,6 +1872,8 @@ fuel_scenarios:
     diesel: 34.5
     electricity_emission_factor_kg_mwh: 295
     carbon_price_eur_nz: 131
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2030
     year_investment: 5
     gas: 2250
@@ -1796,6 +1884,8 @@ fuel_scenarios:
     diesel: 35.0
     electricity_emission_factor_kg_mwh: 260
     carbon_price_eur_nz: 154
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2031
     year_investment: 6
     gas: 2260
@@ -1806,6 +1896,8 @@ fuel_scenarios:
     diesel: 35.5
     electricity_emission_factor_kg_mwh: 225
     carbon_price_eur_nz: 156
+    electricity_mix_gas_ratio: 20%
+    electricity_gas_factor_mwh_mwh: 0.44
   - year_calendar: 2032
     year_investment: 7
     gas: 2270
@@ -1816,6 +1908,8 @@ fuel_scenarios:
     diesel: 36.0
     electricity_emission_factor_kg_mwh: 190
     carbon_price_eur_nz: 158
+    electricity_mix_gas_ratio: 28%
+    electricity_gas_factor_mwh_mwh: 0.62
   - year_calendar: 2033
     year_investment: 8
     gas: 2280
@@ -1826,6 +1920,8 @@ fuel_scenarios:
     diesel: 35.6
     electricity_emission_factor_kg_mwh: 155
     carbon_price_eur_nz: 160
+    electricity_mix_gas_ratio: 26%
+    electricity_gas_factor_mwh_mwh: 0.58
   - year_calendar: 2034
     year_investment: 9
     gas: 2290
@@ -1836,6 +1932,8 @@ fuel_scenarios:
     diesel: 37.0
     electricity_emission_factor_kg_mwh: 120
     carbon_price_eur_nz: 162
+    electricity_mix_gas_ratio: 24%
+    electricity_gas_factor_mwh_mwh: 0.53
   - year_calendar: 2035
     year_investment: 10
     gas: 2300
@@ -1846,6 +1944,8 @@ fuel_scenarios:
     diesel: 37.5
     electricity_emission_factor_kg_mwh: 115
     carbon_price_eur_nz: 165
+    electricity_mix_gas_ratio: 23%
+    electricity_gas_factor_mwh_mwh: 0.51
   - year_calendar: 2036
     year_investment: 11
     gas: 2340
@@ -1856,6 +1956,8 @@ fuel_scenarios:
     diesel: 39.0
     electricity_emission_factor_kg_mwh: 110
     carbon_price_eur_nz: 167
+    electricity_mix_gas_ratio: 22%
+    electricity_gas_factor_mwh_mwh: 0.49
   - year_calendar: 2037
     year_investment: 12
     gas: 2380
@@ -1866,6 +1968,8 @@ fuel_scenarios:
     diesel: 40.5
     electricity_emission_factor_kg_mwh: 105
     carbon_price_eur_nz: 169
+    electricity_mix_gas_ratio: 21%
+    electricity_gas_factor_mwh_mwh: 0.47
   - year_calendar: 2038
     year_investment: 13
     gas: 2420
@@ -1876,6 +1980,8 @@ fuel_scenarios:
     diesel: 42.0
     electricity_emission_factor_kg_mwh: 100
     carbon_price_eur_nz: 171
+    electricity_mix_gas_ratio: 20%
+    electricity_gas_factor_mwh_mwh: 0.44
   - year_calendar: 2039
     year_investment: 14
     gas: 2460
@@ -1886,6 +1992,8 @@ fuel_scenarios:
     diesel: 43.5
     electricity_emission_factor_kg_mwh: 70
     carbon_price_eur_nz: 173
+    electricity_mix_gas_ratio: 14%
+    electricity_gas_factor_mwh_mwh: 0.31
   - year_calendar: 2040
     year_investment: 15
     gas: 2500
@@ -1896,6 +2004,8 @@ fuel_scenarios:
     diesel: 45.0
     electricity_emission_factor_kg_mwh: 40
     carbon_price_eur_nz: 175
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2041
     year_investment: 16
     gas: 2540
@@ -1906,6 +2016,8 @@ fuel_scenarios:
     diesel: 46.0
     electricity_emission_factor_kg_mwh: 38
     carbon_price_eur_nz: 179
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.17
   - year_calendar: 2042
     year_investment: 17
     gas: 2580
@@ -1916,6 +2028,8 @@ fuel_scenarios:
     diesel: 47.0
     electricity_emission_factor_kg_mwh: 36
     carbon_price_eur_nz: 183
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2043
     year_investment: 18
     gas: 2620
@@ -1926,6 +2040,8 @@ fuel_scenarios:
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 34
     carbon_price_eur_nz: 186
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.15
   - year_calendar: 2044
     year_investment: 19
     gas: 2660
@@ -1936,6 +2052,8 @@ fuel_scenarios:
     diesel: 49.0
     electricity_emission_factor_kg_mwh: 32
     carbon_price_eur_nz: 190
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.14
   - year_calendar: 2045
     year_investment: 20
     gas: 2700
@@ -1946,6 +2064,8 @@ fuel_scenarios:
     diesel: 50.0
     electricity_emission_factor_kg_mwh: 30
     carbon_price_eur_nz: 194
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2046
     year_investment: 21
     gas: 2720
@@ -1956,6 +2076,8 @@ fuel_scenarios:
     diesel: 51.0
     electricity_emission_factor_kg_mwh: 20
     carbon_price_eur_nz: 198
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.09
   - year_calendar: 2047
     year_investment: 22
     gas: 2740
@@ -1966,6 +2088,8 @@ fuel_scenarios:
     diesel: 52.0
     electricity_emission_factor_kg_mwh: 19
     carbon_price_eur_nz: 202
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.09
   - year_calendar: 2048
     year_investment: 23
     gas: 2760
@@ -1976,6 +2100,8 @@ fuel_scenarios:
     diesel: 53.0
     electricity_emission_factor_kg_mwh: 18
     carbon_price_eur_nz: 205
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.08
   - year_calendar: 2049
     year_investment: 24
     gas: 2780
@@ -1986,6 +2112,8 @@ fuel_scenarios:
     diesel: 54.0
     electricity_emission_factor_kg_mwh: 17
     carbon_price_eur_nz: 209
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.08
   - year_calendar: 2050
     year_investment: 25
     gas: 2800
@@ -1996,6 +2124,8 @@ fuel_scenarios:
     diesel: 55.0
     electricity_emission_factor_kg_mwh: 16
     carbon_price_eur_nz: 213
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.08
   - year_calendar: 2051
     year_investment: 26
     gas: 2820
@@ -2006,6 +2136,8 @@ fuel_scenarios:
     diesel: 58.0
     electricity_emission_factor_kg_mwh: 15
     carbon_price_eur_nz: 217
+    electricity_mix_gas_ratio: 4%
+    electricity_gas_factor_mwh_mwh: 0.08
   - year_calendar: 2052
     year_investment: 27
     gas: 2840
@@ -2016,6 +2148,8 @@ fuel_scenarios:
     diesel: 61.0
     electricity_emission_factor_kg_mwh: 14
     carbon_price_eur_nz: 221
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.08
   - year_calendar: 2053
     year_investment: 28
     gas: 2860
@@ -2026,6 +2160,8 @@ fuel_scenarios:
     diesel: 64.0
     electricity_emission_factor_kg_mwh: 13
     carbon_price_eur_nz: 225
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.07
   - year_calendar: 2054
     year_investment: 29
     gas: 2880
@@ -2036,6 +2172,8 @@ fuel_scenarios:
     diesel: 67.0
     electricity_emission_factor_kg_mwh: 12
     carbon_price_eur_nz: 228
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.07
   - year_calendar: 2055
     year_investment: 30
     gas: 2900
@@ -2046,6 +2184,8 @@ fuel_scenarios:
     diesel: 70.0
     electricity_emission_factor_kg_mwh: 11
     carbon_price_eur_nz: 232
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.07
   - year_calendar: 2056
     year_investment: 31
     gas: 2920
@@ -2056,6 +2196,8 @@ fuel_scenarios:
     diesel: 73.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 236
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.07
   - year_calendar: 2057
     year_investment: 32
     gas: 2940
@@ -2066,6 +2208,8 @@ fuel_scenarios:
     diesel: 76.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 240
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.06
   - year_calendar: 2058
     year_investment: 33
     gas: 2960
@@ -2076,6 +2220,8 @@ fuel_scenarios:
     diesel: 79.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 244
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.06
   - year_calendar: 2059
     year_investment: 34
     gas: 2980
@@ -2086,6 +2232,8 @@ fuel_scenarios:
     diesel: 82.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 248
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.06
   - year_calendar: 2060
     year_investment: 35
     gas: 3000
@@ -2096,6 +2244,8 @@ fuel_scenarios:
     diesel: 85.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 252
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.06
   - year_calendar: 2061
     year_investment: 36
     gas: 3000
@@ -2106,6 +2256,8 @@ fuel_scenarios:
     diesel: 90.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 256
+    electricity_mix_gas_ratio: 3%
+    electricity_gas_factor_mwh_mwh: 0.06
   - year_calendar: 2062
     year_investment: 37
     gas: 3000
@@ -2116,6 +2268,8 @@ fuel_scenarios:
     diesel: 95.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 259
+    electricity_mix_gas_ratio: 2%
+    electricity_gas_factor_mwh_mwh: 0.05
   - year_calendar: 2063
     year_investment: 38
     gas: 3000
@@ -2126,6 +2280,8 @@ fuel_scenarios:
     diesel: 100.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 263
+    electricity_mix_gas_ratio: 2%
+    electricity_gas_factor_mwh_mwh: 0.05
   - year_calendar: 2064
     year_investment: 39
     gas: 3000
@@ -2136,6 +2292,8 @@ fuel_scenarios:
     diesel: 105.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 267
+    electricity_mix_gas_ratio: 2%
+    electricity_gas_factor_mwh_mwh: 0.05
   - year_calendar: 2065
     year_investment: 40
     gas: 3000
@@ -2146,6 +2304,8 @@ fuel_scenarios:
     diesel: 110.0
     electricity_emission_factor_kg_mwh: 10
     carbon_price_eur_nz: 271
+    electricity_mix_gas_ratio: 2%
+    electricity_gas_factor_mwh_mwh: 0.05
 - scenario: CP_EC
   prices:
   - year_calendar: 2026
@@ -2157,6 +2317,8 @@ fuel_scenarios:
     petrol: 45.0
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 400
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2027
     year_investment: 2
     gas: 2700
@@ -2166,6 +2328,8 @@ fuel_scenarios:
     petrol: 50.0
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 370
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2028
     year_investment: 3
     gas: 2300
@@ -2175,6 +2339,8 @@ fuel_scenarios:
     petrol: 45.0
     diesel: 44.0
     electricity_emission_factor_kg_mwh: 340
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.13
   - year_calendar: 2029
     year_investment: 4
     gas: 3500
@@ -2184,6 +2350,8 @@ fuel_scenarios:
     petrol: 50.0
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 370
+    electricity_mix_gas_ratio: 5%
+    electricity_gas_factor_mwh_mwh: 0.11
   - year_calendar: 2030
     year_investment: 5
     gas: 4000
@@ -2193,6 +2361,8 @@ fuel_scenarios:
     petrol: 50.0
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 360
+    electricity_mix_gas_ratio: 5%
+    electricity_gas_factor_mwh_mwh: 0.11
   - year_calendar: 2031
     year_investment: 6
     gas: 4500
@@ -2202,6 +2372,8 @@ fuel_scenarios:
     petrol: 65.0
     diesel: 63.0
     electricity_emission_factor_kg_mwh: 350
+    electricity_mix_gas_ratio: 5%
+    electricity_gas_factor_mwh_mwh: 0.11
   - year_calendar: 2032
     year_investment: 7
     gas: 4500
@@ -2211,6 +2383,8 @@ fuel_scenarios:
     petrol: 65.0
     diesel: 63.0
     electricity_emission_factor_kg_mwh: 340
+    electricity_mix_gas_ratio: 5%
+    electricity_gas_factor_mwh_mwh: 0.11
   - year_calendar: 2033
     year_investment: 8
     gas: 4000
@@ -2220,6 +2394,8 @@ fuel_scenarios:
     petrol: 50.0
     diesel: 48.0
     electricity_emission_factor_kg_mwh: 330
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2034
     year_investment: 9
     gas: 3000
@@ -2229,6 +2405,8 @@ fuel_scenarios:
     petrol: 45.0
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 320
+    electricity_mix_gas_ratio: 11%
+    electricity_gas_factor_mwh_mwh: 0.24
   - year_calendar: 2035
     year_investment: 10
     gas: 2800
@@ -2238,6 +2416,8 @@ fuel_scenarios:
     petrol: 38.0
     diesel: 38.0
     electricity_emission_factor_kg_mwh: 250
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2036
     year_investment: 11
     gas: 2400
@@ -2247,6 +2427,8 @@ fuel_scenarios:
     petrol: 39.0
     diesel: 39.0
     electricity_emission_factor_kg_mwh: 225
+    electricity_mix_gas_ratio: 20%
+    electricity_gas_factor_mwh_mwh: 0.44
   - year_calendar: 2037
     year_investment: 12
     gas: 2400
@@ -2256,6 +2438,8 @@ fuel_scenarios:
     petrol: 40.0
     diesel: 40.0
     electricity_emission_factor_kg_mwh: 200
+    electricity_mix_gas_ratio: 25%
+    electricity_gas_factor_mwh_mwh: 0.56
   - year_calendar: 2038
     year_investment: 13
     gas: 2400
@@ -2265,6 +2449,8 @@ fuel_scenarios:
     petrol: 41.0
     diesel: 41.0
     electricity_emission_factor_kg_mwh: 175
+    electricity_mix_gas_ratio: 30%
+    electricity_gas_factor_mwh_mwh: 0.67
   - year_calendar: 2039
     year_investment: 14
     gas: 2400
@@ -2274,6 +2460,8 @@ fuel_scenarios:
     petrol: 42.0
     diesel: 42.0
     electricity_emission_factor_kg_mwh: 120
+    electricity_mix_gas_ratio: 24%
+    electricity_gas_factor_mwh_mwh: 0.53
   - year_calendar: 2040
     year_investment: 15
     gas: 2400
@@ -2283,6 +2471,8 @@ fuel_scenarios:
     petrol: 43.0
     diesel: 43.0
     electricity_emission_factor_kg_mwh: 110
+    electricity_mix_gas_ratio: 22%
+    electricity_gas_factor_mwh_mwh: 0.49
   - year_calendar: 2041
     year_investment: 16
     gas: 2420
@@ -2292,6 +2482,8 @@ fuel_scenarios:
     petrol: 43.8
     diesel: 43.8
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2042
     year_investment: 17
     gas: 2440
@@ -2301,6 +2493,8 @@ fuel_scenarios:
     petrol: 44.5
     diesel: 44.5
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2043
     year_investment: 18
     gas: 2460
@@ -2310,6 +2504,8 @@ fuel_scenarios:
     petrol: 45.3
     diesel: 45.3
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2044
     year_investment: 19
     gas: 2480
@@ -2319,6 +2515,8 @@ fuel_scenarios:
     petrol: 46.0
     diesel: 46.0
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2045
     year_investment: 20
     gas: 2500
@@ -2328,6 +2526,8 @@ fuel_scenarios:
     petrol: 46.8
     diesel: 46.8
     electricity_emission_factor_kg_mwh: 75
+    electricity_mix_gas_ratio: 15%
+    electricity_gas_factor_mwh_mwh: 0.33
   - year_calendar: 2046
     year_investment: 21
     gas: 2500
@@ -2337,6 +2537,8 @@ fuel_scenarios:
     petrol: 47.5
     diesel: 47.5
     electricity_emission_factor_kg_mwh: 50
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2047
     year_investment: 22
     gas: 2500
@@ -2346,6 +2548,8 @@ fuel_scenarios:
     petrol: 48.3
     diesel: 48.3
     electricity_emission_factor_kg_mwh: 49
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.22
   - year_calendar: 2048
     year_investment: 23
     gas: 2500
@@ -2355,6 +2559,8 @@ fuel_scenarios:
     petrol: 49.0
     diesel: 49.0
     electricity_emission_factor_kg_mwh: 48
+    electricity_mix_gas_ratio: 10%
+    electricity_gas_factor_mwh_mwh: 0.21
   - year_calendar: 2049
     year_investment: 24
     gas: 2500
@@ -2364,6 +2570,8 @@ fuel_scenarios:
     petrol: 49.8
     diesel: 49.8
     electricity_emission_factor_kg_mwh: 47
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.21
   - year_calendar: 2050
     year_investment: 25
     gas: 2500
@@ -2373,6 +2581,8 @@ fuel_scenarios:
     petrol: 50.5
     diesel: 50.5
     electricity_emission_factor_kg_mwh: 46
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2051
     year_investment: 26
     gas: 2500
@@ -2382,6 +2592,8 @@ fuel_scenarios:
     petrol: 51.3
     diesel: 51.3
     electricity_emission_factor_kg_mwh: 45
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2052
     year_investment: 27
     gas: 2500
@@ -2391,6 +2603,8 @@ fuel_scenarios:
     petrol: 52.0
     diesel: 52.0
     electricity_emission_factor_kg_mwh: 44
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.2
   - year_calendar: 2053
     year_investment: 28
     gas: 2500
@@ -2400,6 +2614,8 @@ fuel_scenarios:
     petrol: 53.0
     diesel: 53.0
     electricity_emission_factor_kg_mwh: 43
+    electricity_mix_gas_ratio: 9%
+    electricity_gas_factor_mwh_mwh: 0.19
   - year_calendar: 2054
     year_investment: 29
     gas: 2500
@@ -2409,6 +2625,8 @@ fuel_scenarios:
     petrol: 54.0
     diesel: 54.0
     electricity_emission_factor_kg_mwh: 42
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.19
   - year_calendar: 2055
     year_investment: 30
     gas: 2500
@@ -2418,6 +2636,8 @@ fuel_scenarios:
     petrol: 55.0
     diesel: 55.0
     electricity_emission_factor_kg_mwh: 41
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2056
     year_investment: 31
     gas: 2500
@@ -2427,6 +2647,8 @@ fuel_scenarios:
     petrol: 56.0
     diesel: 56.0
     electricity_emission_factor_kg_mwh: 40
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.18
   - year_calendar: 2057
     year_investment: 32
     gas: 2500
@@ -2436,6 +2658,8 @@ fuel_scenarios:
     petrol: 57.0
     diesel: 57.0
     electricity_emission_factor_kg_mwh: 39
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.17
   - year_calendar: 2058
     year_investment: 33
     gas: 2500
@@ -2445,6 +2669,8 @@ fuel_scenarios:
     petrol: 58.0
     diesel: 58.0
     electricity_emission_factor_kg_mwh: 38
+    electricity_mix_gas_ratio: 8%
+    electricity_gas_factor_mwh_mwh: 0.17
   - year_calendar: 2059
     year_investment: 34
     gas: 2500
@@ -2454,6 +2680,8 @@ fuel_scenarios:
     petrol: 59.0
     diesel: 59.0
     electricity_emission_factor_kg_mwh: 37
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2060
     year_investment: 35
     gas: 2500
@@ -2463,6 +2691,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 36
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2061
     year_investment: 36
     gas: 2500
@@ -2472,6 +2702,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 35
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.16
   - year_calendar: 2062
     year_investment: 37
     gas: 2500
@@ -2481,6 +2713,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 34
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.15
   - year_calendar: 2063
     year_investment: 38
     gas: 2500
@@ -2490,6 +2724,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 33
+    electricity_mix_gas_ratio: 7%
+    electricity_gas_factor_mwh_mwh: 0.15
   - year_calendar: 2064
     year_investment: 39
     gas: 2500
@@ -2499,6 +2735,8 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 32
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.14
   - year_calendar: 2065
     year_investment: 40
     gas: 2500
@@ -2508,3 +2746,5 @@ fuel_scenarios:
     petrol: 60.0
     diesel: 60.0
     electricity_emission_factor_kg_mwh: 31
+    electricity_mix_gas_ratio: 6%
+    electricity_gas_factor_mwh_mwh: 0.14
