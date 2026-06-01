@@ -546,6 +546,8 @@ extra-scripts:
   <div class="container">
     <p class="chart-col-header mb-2">Náklady na tunu ušetřeného CO₂ — rozložení opatření</p>
     <div id="beeswarm-chart"></div>
+    <div id="kc-per-t-controls" style="margin-top:1.5rem;"></div>
+    <div id="kc-per-t-bar-chart" style="margin-top:0.5rem; overflow-x:auto;"></div>
   </div>
 </div>
 
@@ -604,10 +606,11 @@ extra-scripts:
           <th class="text-end">Z dovozů paliva</th>
           <th class="text-end">Počet</th>
           <th class="text-end">Úspora / jednotku / rok</th>
+          <th class="text-end">Celkové náklady opatření</th>
           <th class="text-end">Rozdíl investičních nákladů</th>
-          <th class="text-end text-nowrap">Cena paliva</th>
-          <th class="text-nowrap">Hodnota ušetřeného paliva (životnost)
-            <br><small class="text-muted fw-normal">░ = rozdíl invest. nákladů; <span style="color:#2860b4">■</span> Běžné ceny &nbsp;<span style="color:#c43535">■</span> Energetická krize</small></th>
+          <th class="text-end">Cena paliva</th>
+          <th>Hodnota ušetřeného paliva (životnost)
+            <br><small class="text-muted fw-normal">░ = rozdíl invest. nákladů; <span style="color:#2860b4">■</span> Běžné ceny <span style="color:#c43535">■</span> Energetická krize</small></th>
         </tr>
       </thead>
       <tbody>
@@ -616,50 +619,55 @@ extra-scripts:
           <td class="text-end" id="savings-imports-hp">…</td>
           <td class="text-end" id="deploy-hp">…</td>
           <td class="text-end" id="savings-unit-hp">…</td>
-          <td class="text-end text-nowrap" id="capex-diff-hp">…</td>
+          <td class="text-end" id="capex-measure-hp">…</td>
+          <td class="text-end" id="capex-diff-hp">…</td>
           <td class="text-end text-muted text-nowrap" id="fuel-price-hp">…</td>
-          <td id="net-benefit-bar-hp" style="min-width:100px; width:13%;"></td>
+          <td id="net-benefit-bar-hp" style="min-width:120px;"></td>
         </tr>
         <tr>
           <td>Fasáda + renovace <small class="text-muted">(RD plyn–F, 40 let, vs. fasáda)</small></td>
           <td class="text-end" id="savings-imports-ins">…</td>
           <td class="text-end" id="deploy-ins">…</td>
           <td class="text-end" id="savings-unit-ins">…</td>
-          <td class="text-end text-nowrap" id="capex-diff-ins">…</td>
+          <td class="text-end" id="capex-measure-ins">…</td>
+          <td class="text-end" id="capex-diff-ins">…</td>
           <td class="text-end text-muted text-nowrap" id="fuel-price-ins">…</td>
-          <td id="net-benefit-bar-ins" style="min-width:100px; width:13%;"></td>
+          <td id="net-benefit-bar-ins" style="min-width:120px;"></td>
         </tr>
         <tr>
           <td>Střešní FVE <small class="text-muted">(RD plyn–E, 25 let, vs. bez FVE; úspora plynu přes výrobu el. ze sítě)</small></td>
           <td class="text-end" id="savings-imports-fve">…</td>
           <td class="text-end" id="deploy-fve">…</td>
           <td class="text-end" id="savings-unit-fve">…</td>
-          <td class="text-end text-nowrap" id="capex-diff-fve">…</td>
+          <td class="text-end" id="capex-measure-fve">…</td>
+          <td class="text-end" id="capex-diff-fve">…</td>
           <td class="text-end text-muted text-nowrap" id="fuel-price-fve">…</td>
-          <td id="net-benefit-bar-fve" style="min-width:100px; width:13%;"></td>
+          <td id="net-benefit-bar-fve" style="min-width:120px;"></td>
         </tr>
         <tr>
           <td>Malý elektromobil <small class="text-muted">(Nové malé, 15 let, vs. benzínové auto)</small></td>
           <td class="text-end" id="savings-imports-ev">…</td>
           <td class="text-end" id="deploy-ev">…</td>
           <td class="text-end" id="savings-unit-ev">…</td>
-          <td class="text-end text-nowrap" id="capex-diff-ev">…</td>
+          <td class="text-end" id="capex-measure-ev">…</td>
+          <td class="text-end" id="capex-diff-ev">…</td>
           <td class="text-end text-muted text-nowrap" id="fuel-price-ev">…</td>
-          <td id="net-benefit-bar-ev" style="min-width:100px; width:13%;"></td>
+          <td id="net-benefit-bar-ev" style="min-width:120px;"></td>
         </tr>
         <tr>
           <td>Velký elektromobil <small class="text-muted">(Nové velké, 15 let, vs. naftové auto)</small></td>
           <td class="text-end" id="savings-imports-ev_l">…</td>
           <td class="text-end" id="deploy-ev_l">…</td>
           <td class="text-end" id="savings-unit-ev_l">…</td>
-          <td class="text-end text-nowrap" id="capex-diff-ev_l">…</td>
+          <td class="text-end" id="capex-measure-ev_l">…</td>
+          <td class="text-end" id="capex-diff-ev_l">…</td>
           <td class="text-end text-muted text-nowrap" id="fuel-price-ev_l">…</td>
-          <td id="net-benefit-bar-ev_l" style="min-width:100px; width:13%;"></td>
+          <td id="net-benefit-bar-ev_l" style="min-width:120px;"></td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="7" class="text-muted" style="font-size:0.8em;">
+          <td colspan="8" class="text-muted" style="font-size:0.8em;">
             Tepelné čerpadlo (RD plyn–C): baseline Plynový kotel 14 MWh/rok → opatření přechází na elektřinu (0 MWh plynu).
             Fasáda + renovace (RD plyn–F): baseline Fasáda 29 MWh/rok → opatření 13 MWh/rok plynu.
             Střešní FVE: baseline Nedělám nic 4 MWh/rok el. ze sítě → opatření 1 MWh/rok; úspora 3 MWh/rok el. × 20 % (podíl plynu v české výrobě elektřiny, výhledová hodnota) / 55 % (účinnost CCGT) ≈ 1,1 MWh/rok plynu.

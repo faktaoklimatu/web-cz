@@ -853,6 +853,7 @@
         points.push({
           id:        m.id,
           name:      m.measure_name,
+          baseline:  m.measure_baseline || '',
           category:  m.building_category || m.transport_category || '',
           sector:    r.sector,
           npv:       r.npv,
@@ -2356,6 +2357,17 @@
     fill('savings-imports-ev',   oilPct(litresPerUnit.ev,   DEPLOY.ev));
     fill('savings-imports-ev_l', oilPct(litresPerUnit.ev_l, DEPLOY.ev_l));
 
+    // Total CAPEX of the measure across all deployed units (= 1 % of imports)
+    const fmtMld = v => Math.round(v / 1e9).toFixed(0) + ' mld. Kč';
+    const CAPEX_TOTAL = {
+      hp:   bCapex(M.hp.m)      * DEPLOY.hp,
+      ins:  bCapex(M.ins.m)     * DEPLOY.ins,
+      fve:  bCapex(M.fve.m)     * DEPLOY.fve,
+      ev:   (M.ev.m.capex_czk   || 0) * DEPLOY.ev,
+      ev_l: (M.ev_l.m.capex_czk || 0) * DEPLOY.ev_l,
+    };
+    ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => fill('capex-measure-' + k, fmtMld(CAPEX_TOTAL[k])));
+
     // CAPEX diff
     ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => fill('capex-diff-' + k, fmtMldSigned(CAPEX[k])));
 
@@ -2644,6 +2656,235 @@
         .attr('font-size', '10px').attr('fill', '#555').text(item.label);
     });
   }
+  // ── Kč/t CO₂ horizontal bar chart ──────────────────────────────────────────
+  // One bar per measure, sorted cheapest → most expensive (top → bottom).
+  // A multi-check dropdown above lets the user pick which measures to show.
+
+  let kcMeasureSelection = null; // Set of selected measure names; null = not yet init
+
+  function renderKcPerTBarChart(container) {
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+
+    // All candidates
+    const allPoints = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+      .filter(p => p.savedT > 0 && isFinite(p.kcPerT));
+
+    // All unique name+category combos (for the dropdown)
+    const comboKey  = p => p.name + (p.category ? ' — ' + p.category : '');
+    const allCombos = [...new Set(allPoints.map(comboKey))].sort();
+
+    // Init selection on first call — default to the curated set shown in the screenshot
+    if (!kcMeasureSelection) {
+      const DEFAULT_COMBOS = new Set([
+        'Ojetý velký elektromobil — Ojeté velké',
+        'Nový malý elektromobil — Nové malé',
+        'Fasáda + renovace — Byt ve starší zástavbě s vlastním plynovým kotlem',
+        'Fasáda + renovace — Rodinný dům plyn – F',
+        'Fasáda + renovace — Rodinný dům uhlí – E',
+        'Kotel na biomasu — Rodinný dům uhlí – E',
+        'Kotel na biomasu — Rodinný dům uhlí – C',
+        'Tepelné čerpadlo — Rodinný dům plyn – C',
+        'Tepelné čerpadlo — Rodinný dům plyn – E',
+        'Tepelné čerpadlo — Rodinný dům uhlí – E',
+        'Tepelné čerpadlo — Rodinný dům uhlí – C',
+        'Fasáda + renovace — Rodinný dům uhlí – C',
+        'Elektrický kotel — Rodinný dům uhlí – E',
+        'Fasáda + renovace — Rodinný dům plyn – C',
+        'Soláry na střeše + baterie — Rodinný dům plyn – C',
+      ]);
+      kcMeasureSelection = new Set(allCombos.filter(c => DEFAULT_COMBOS.has(c)));
+    }
+
+    // ── Build / update controls dropdown ───────────────────────────────────────
+    const controlsEl = document.getElementById('kc-per-t-controls');
+    if (controlsEl && !controlsEl.dataset.ready) {
+      controlsEl.dataset.ready = '1';
+      controlsEl.style.fontFamily = FONT;
+
+      // Outer wrapper (relative so panel can be absolute)
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'position:relative; display:inline-block;';
+
+      // Toggle button
+      const btn = document.createElement('button');
+      btn.style.cssText = 'font-size:11px; padding:4px 14px 5px; border:1.5px solid #ddd; border-radius:4px; background:#f8f8f8; cursor:pointer; font-family:inherit; color:#444;';
+      const updateBtn = () => {
+        const n = kcMeasureSelection.size;
+        btn.textContent = (n === allCombos.length ? 'Všechna opatřen\xed' : `${n} opatřen\xed vybr\xe1no`) + ' ▾';
+      };
+      updateBtn();
+
+      // Dropdown panel
+      const panel = document.createElement('div');
+      panel.style.cssText = 'display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200; background:#fff; border:1px solid #ddd; border-radius:6px; padding:8px 4px; max-height:320px; overflow-y:auto; min-width:260px; box-shadow:0 3px 10px rgba(0,0,0,0.12);';
+
+      // Select all / none row
+      const actRow = document.createElement('div');
+      actRow.style.cssText = 'display:flex; gap:8px; padding:2px 10px 6px; border-bottom:1px solid #f0f0f0; margin-bottom:4px;';
+      ['Vše', 'Ž\xe1dn\xe9'].forEach((lbl, isNone) => {
+        const a = document.createElement('button');
+        a.textContent = lbl;
+        a.style.cssText = 'font-size:10px; color:#1a7a85; background:none; border:none; cursor:pointer; padding:0; font-family:inherit;';
+        a.addEventListener('click', () => {
+          kcMeasureSelection = isNone ? new Set() : new Set(allCombos);
+          panel.querySelectorAll('input[type=checkbox]').forEach(cb => { cb.checked = !isNone; });
+          updateBtn();
+          renderKcPerTBarChart(container);
+        });
+        actRow.appendChild(a);
+      });
+      panel.appendChild(actRow);
+
+      // One checkbox per name+category combo
+      allCombos.forEach(combo => {
+        const row = document.createElement('label');
+        row.style.cssText = 'display:flex; align-items:center; gap:8px; padding:3px 10px; cursor:pointer; font-size:11px; color:#333;';
+        row.style.userSelect = 'none';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = kcMeasureSelection.has(combo);
+        cb.style.cursor = 'pointer';
+        cb.addEventListener('change', () => {
+          if (cb.checked) kcMeasureSelection.add(combo);
+          else kcMeasureSelection.delete(combo);
+          updateBtn();
+          renderKcPerTBarChart(container);
+        });
+        row.appendChild(cb);
+        row.appendChild(document.createTextNode(combo));
+        panel.appendChild(row);
+      });
+
+      // Toggle panel on button click
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+      });
+      // Close on outside click
+      document.addEventListener('click', () => { panel.style.display = 'none'; });
+
+      // Keep panel open when interacting inside it
+      panel.addEventListener('click', e => e.stopPropagation());
+
+      wrap.appendChild(btn);
+      wrap.appendChild(panel);
+      controlsEl.appendChild(wrap);
+    }
+
+    // ── Filter & sort ───────────────────────────────────────────────────────────
+    const points = allPoints
+      .filter(p => kcMeasureSelection ? kcMeasureSelection.has(comboKey(p)) : true)
+      .sort((a, b) => a.kcPerT - b.kcPerT);
+
+    if (!points.length) { d3.select(container).selectAll('*').remove(); return; }
+
+    d3.select(container).selectAll('*').remove();
+
+    const BAR_H   = 18;
+    const ROW_H   = 40;  // fits 3 label lines: category + name + baseline
+    const LABEL_W = 280;
+    const margin  = { top: 32, right: 24, bottom: 36, left: LABEL_W };
+    const availW  = container.clientWidth || container.parentElement?.clientWidth || 760;
+    const BAR_AREA_W = Math.max(240, Math.round((availW - LABEL_W - margin.right) / 2));
+    const chartH  = points.length * ROW_H;
+    const totalW  = LABEL_W + BAR_AREA_W + margin.right;
+    const chartW  = BAR_AREA_W;
+    const totalH  = chartH + margin.top + margin.bottom;
+
+    const [vMin, vMax] = d3.extent(points, p => p.kcPerT);
+    const xScale = d3.scaleLinear()
+      .domain([Math.min(vMin, 0) * 1.05, Math.max(vMax, 0) * 1.05]).nice()
+      .range([0, chartW]);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width', totalW).attr('height', totalH)
+      .style('font-family', FONT).style('display', 'block');
+
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    const z = xScale(0);
+
+    // Half-titles above the bars
+    if (z > 10) {
+      g.append('text')
+        .attr('x', z / 2).attr('y', -10)
+        .attr('text-anchor', 'middle').attr('font-size', '10px')
+        .attr('fill', '#1a72b8').attr('font-weight', '600')
+        .text('Opatření je levnější než základní varianta');
+    }
+    if (z < chartW - 10) {
+      g.append('text')
+        .attr('x', z + (chartW - z) / 2).attr('y', -10)
+        .attr('text-anchor', 'middle').attr('font-size', '10px')
+        .attr('fill', '#8b35b0').attr('font-weight', '600')
+        .text('Opatření je dražší než základní varianta');
+    }
+
+    // Zero line
+    g.append('line')
+      .attr('x1', z).attr('x2', z).attr('y1', 0).attr('y2', chartH)
+      .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+
+    // Rows
+    points.forEach((p, i) => {
+      const y     = i * ROW_H;
+      const color = p.kcPerT < 0 ? '#1a72b8' : '#8b35b0';
+      const x0    = Math.min(xScale(p.kcPerT), z);
+      const bw    = Math.max(Math.abs(xScale(p.kcPerT) - z), 1);
+      const midY  = y + BAR_H / 2 + (ROW_H - BAR_H) / 2;
+
+      // Bar
+      g.append('rect')
+        .attr('x', x0).attr('y', y + (ROW_H - BAR_H) / 2)
+        .attr('width', bw).attr('height', BAR_H)
+        .attr('fill', color).attr('opacity', 0.8)
+        .append('title')
+          .text(`${p.name}${p.category ? ' — ' + p.category : ''}\nvs. ${p.baseline}\n${(p.kcPerT / 1000).toFixed(1)} tis. Kč/t CO₂`);
+
+      // Category label (top, small uppercase, light grey)
+      const catText  = p.category ? p.category.toUpperCase() : '';
+      if (catText) {
+        g.append('text')
+          .attr('x', -8).attr('y', y + 10)
+          .attr('text-anchor', 'end')
+          .attr('font-size', '8px').attr('fill', '#bbb').attr('font-weight', '600')
+          .attr('letter-spacing', '0.04em')
+          .text(catText);
+      }
+
+      // Measure name (bold, middle)
+      g.append('text')
+        .attr('x', -8).attr('y', y + 23)
+        .attr('text-anchor', 'end')
+        .attr('font-size', '11px').attr('fill', '#222').attr('font-weight', '600')
+        .text(p.name);
+
+      // Baseline (sub-label, small grey)
+      if (p.baseline) {
+        g.append('text')
+          .attr('x', -8).attr('y', y + 34)
+          .attr('text-anchor', 'end')
+          .attr('font-size', '9px').attr('fill', '#aaa')
+          .text('vs. ' + p.baseline);
+      }
+    });
+
+    // X axis
+    g.append('g').attr('class', 'chart-axis')
+      .attr('transform', `translate(0,${chartH})`)
+      .call(d3.axisBottom(xScale).ticks(6).tickFormat(v => {
+        const abs = Math.abs(v);
+        return abs >= 1e6 ? (v / 1e6).toFixed(1) + ' M'
+             : abs >= 1e3 ? (v / 1e3).toFixed(0) + ' tis.'
+             : v.toFixed(0);
+      }));
+
+    // X label
+    g.append('text')
+      .attr('x', chartW / 2).attr('y', chartH + 30)
+      .attr('text-anchor', 'middle').attr('font-size', '11px').attr('fill', '#666')
+      .text('Kč / t CO₂');
+  }
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -2698,6 +2939,8 @@
         : undefined;
       if (beeEl) renderBeeswarmChart(beeEl, sharedAbsMax);
       if (capexBeeEl) renderCapexBeeswarmChart(capexBeeEl, sharedAbsMax);
+      const kcBarEl = document.getElementById('kc-per-t-bar-chart');
+      if (kcBarEl) renderKcPerTBarChart(kcBarEl);
     }
     // Compute shared x-axis domain across all dumbbell charts
     const allDbVals = [];
