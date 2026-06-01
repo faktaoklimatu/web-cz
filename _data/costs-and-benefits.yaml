@@ -1173,7 +1173,7 @@ transport_measures:
   opex_insurance_czk: 24000
   opex_sensitivity: 0.1
   emissions_embedded_kg: 8500
-  note: Kodiaq – 8 l, 20 000 km
+  note: Kodiaq – 8 l
 - id: 57
   transport_category: Ojeté malé
   measure_name: Ojeté malé auto na benzín
@@ -1203,7 +1203,7 @@ transport_measures:
   opex_insurance_czk: 10000
   opex_sensitivity: 0.15
   emissions_embedded_kg: 3967
-  note: Kodiaq – 8,5 l, 20 000 km
+  note: Kodiaq – 8,5 l
 - id: 59
   transport_category: Nové malé
   measure_name: Nový malý elektromobil
@@ -1275,7 +1275,7 @@ transport_measures:
 - id: 63
   transport_category: Ojeté malé
   measure_name: Ojetý malý elektromobil
-  demand_energy_per_100km: 0.017
+  demand_energy_per_100km: 0.024
   mileage: 15000
   fuel: Electricity
   lifetime: 7
@@ -1309,7 +1309,7 @@ transport_measures:
 - id: 65
   transport_category: Ojeté velké
   measure_name: Ojetý velký elektromobil
-  demand_energy_per_100km: 0.028
+  demand_energy_per_100km: 0.026
   mileage: 15000
   fuel: Electricity
   lifetime: 7
