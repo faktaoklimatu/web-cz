@@ -21,7 +21,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 2
   building_category: Rodinný dům uhlí – F
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 30
   demand_electricity_mwh: 4
@@ -41,7 +41,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 3
   building_category: Rodinný dům uhlí – E
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -61,7 +61,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 4
   building_category: Rodinný dům uhlí – D
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
@@ -121,7 +121,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 7
   building_category: Rodinný dům uhlí – C
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -181,7 +181,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 10
   building_category: Rodinný dům plyn – F
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 30
   demand_electricity_mwh: 4
@@ -201,7 +201,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 11
   building_category: Rodinný dům plyn – E
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -221,7 +221,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 12
   building_category: Rodinný dům plyn – D
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
@@ -281,7 +281,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 15
   building_category: Rodinný dům plyn – C
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -361,7 +361,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 19
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 8
   demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
@@ -441,7 +441,7 @@ buildings_measures:
   emissions_embedded_kg: 0
 - id: 23
   building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Fasáda
+  measure_name: Renovace bez zateplení
   dwellings: 15
   demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
@@ -569,7 +569,7 @@ buildings_measures:
   measure_baseline_id: 1
 - id: 29
   building_category: Rodinný dům uhlí – F
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 30
   demand_electricity_mwh: 4
@@ -587,11 +587,11 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 2
 - id: 30
   building_category: Rodinný dům uhlí – E
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -609,11 +609,11 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 3
 - id: 31
   building_category: Rodinný dům uhlí – D
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
@@ -631,7 +631,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 4
 - id: 32
   building_category: Rodinný dům uhlí – C
@@ -723,7 +723,7 @@ buildings_measures:
   measure_baseline_id: 6
 - id: 36
   building_category: Rodinný dům uhlí – C
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -741,7 +741,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 7
 - id: 37
   building_category: Rodinný dům plyn – E
@@ -833,7 +833,7 @@ buildings_measures:
   measure_baseline_id: 9
 - id: 41
   building_category: Rodinný dům plyn – F
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 30
   demand_electricity_mwh: 4
@@ -851,11 +851,11 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 10
 - id: 42
   building_category: Rodinný dům plyn – E
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -873,11 +873,11 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 11
 - id: 43
   building_category: Rodinný dům plyn – D
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 20
   demand_electricity_mwh: 4
@@ -895,7 +895,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 12
 - id: 44
   building_category: Rodinný dům plyn – C
@@ -987,7 +987,7 @@ buildings_measures:
   measure_baseline_id: 14
 - id: 48
   building_category: Rodinný dům plyn – C
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -1005,7 +1005,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   measure_baseline_id: 15
 - id: 49
   building_category: Rodinný dům plyn – A
@@ -1053,7 +1053,7 @@ buildings_measures:
   measure_baseline_id: 18
 - id: 51
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 8
   demand_heat_building_mwh: 12
   demand_electricity_mwh: 2
@@ -1071,7 +1071,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   note: rozpočítané na jeden byt (v rámci menšího domu s 8 byty)
   measure_baseline_id: 19
 - id: 52
@@ -1122,7 +1122,7 @@ buildings_measures:
   measure_baseline_id: 22
 - id: 54
   building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Fasáda + renovace
+  measure_name: Renovace se zateplením
   dwellings: 15
   demand_heat_building_mwh: 8
   demand_electricity_mwh: 2
@@ -1140,7 +1140,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-  measure_baseline: Fasáda
+  measure_baseline: Renovace bez zateplení
   note: rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
   measure_baseline_id: 23
 transport_measures:
@@ -1359,7 +1359,7 @@ fuel_emission_factors:
 carbon_cost_scenarios:
 - carbon_price_scenario: 0 € – bez ceny uhlíku
   carbon_price_eur: 0
-- carbon_price_scenario: 60 € – ETS2 nižší
+- carbon_price_scenario: 50 € – ETS2 nižší
   carbon_price_eur: 60
 - carbon_price_scenario: 100 € – ETS2 vyšší
   carbon_price_eur: 100
