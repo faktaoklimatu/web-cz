@@ -418,6 +418,8 @@ const CostsBenefits = (() => {
 
   // Annual liquid-fuel consumption (litres) – Petrol or Diesel transport measures only.
   const LIQUID_FUELS = new Set(['Petrol', 'Diesel']);
+  // Energy content of petrol/diesel (LHV ≈ 9.5 kWh/L) for fossil-import accounting
+  const FUEL_MWH_PER_L = 0.0095;
   function annualFuelLitres(measure, sector) {
     if (!LIQUID_FUELS.has(measure.fuel)) return 0;
     if (sector === 'transport') return measure.demand_energy_per_100km * measure.mileage / 100;
@@ -449,6 +451,82 @@ const CostsBenefits = (() => {
     if (annualBl === 0 && annualMeas === 0) return null;
     const annualSaved = annualBl - annualMeas;   // positive = saving gas
     return { annualMwh: annualSaved, totalMwh: annualSaved * lifetime };
+  }
+
+  // Average electricity_gas_factor_mwh_mwh across lifetime years of operation.
+  function computeAvgGasFactor(scenarioPrices, lifetime) {
+    let sum = 0, count = 0;
+    for (let y = 1; y <= lifetime; y++) {
+      const p = getPricesForYear(scenarioPrices, y);
+      if (p && p.electricity_gas_factor_mwh_mwh != null) { sum += p.electricity_gas_factor_mwh_mwh; count++; }
+    }
+    if (count === 0) return 0;
+    if (count < lifetime) {
+      // Extrapolate beyond available data using last known value
+      const lastP = [...scenarioPrices].sort((a, b) => b.year_investment - a.year_investment)
+                        .find(p => p.electricity_gas_factor_mwh_mwh != null);
+      const lastFactor = lastP ? lastP.electricity_gas_factor_mwh_mwh : sum / count;
+      sum += lastFactor * (lifetime - count);
+      count = lifetime;
+    }
+    return sum / count;
+  }
+
+  // Fossil fuel import savings in MWh (energy content) over the lifetime.
+  // Combines:
+  //   • direct gas savings (buildings with gas heating)
+  //   • liquid fuel savings converted to MWh (transport)
+  //   • indirect gas savings/costs from electricity consumption changes
+  //     (e.g. BEV needs electricity → gas; rooftop solar saves electricity → saves gas)
+  // Does NOT change economics (NPV, costs) — purely physical import accounting.
+  function calcFossilImportSavings(baseline, measure, sector, lifetime, scenarioPrices) {
+    const gasFactor = computeAvgGasFactor(scenarioPrices, lifetime);
+
+    if (sector === 'transport') {
+      const fuelBl_L   = annualFuelLitres(baseline, sector);
+      const fuelMeas_L = annualFuelLitres(measure,  sector);
+      const fuelSaved_Mwh = (fuelBl_L - fuelMeas_L) * FUEL_MWH_PER_L;
+
+      // Annual electricity consumption (MWh/year): unit of demand_energy_per_100km for Electricity fuel is MWh/100km
+      const elBl_Mwh   = baseline.fuel === 'Electricity' ? baseline.demand_energy_per_100km * (baseline.mileage || 0) / 100 : 0;
+      const elMeas_Mwh = measure.fuel  === 'Electricity' ? measure.demand_energy_per_100km  * (measure.mileage  || 0) / 100 : 0;
+      const elSaved_Mwh = elBl_Mwh - elMeas_Mwh;  // positive = electricity saved (negative for BEV)
+
+      if (fuelBl_L === 0 && fuelMeas_L === 0 && elBl_Mwh === 0 && elMeas_Mwh === 0) return null;
+      const scope1Annual = fuelSaved_Mwh;                    // direct: liquid fuel saved (MWh)
+      const scope2Annual = elSaved_Mwh * gasFactor;          // indirect: electricity change × gas_factor
+      const annualMwh    = scope1Annual + scope2Annual;
+      return {
+        annualMwh, totalMwh: annualMwh * lifetime,
+        scope1AnnualMwh: scope1Annual, scope1TotalMwh: scope1Annual * lifetime,
+        scope2AnnualMwh: scope2Annual, scope2TotalMwh: scope2Annual * lifetime,
+        gasFactor,
+      };
+
+    } else {
+      // Buildings: direct gas savings + electricity savings × gas_factor (indirect)
+      const gasBl   = annualGasMwh(baseline, sector);
+      const gasMeas = annualGasMwh(measure,  sector);
+      const gasSaved = gasBl - gasMeas;
+
+      // Total electricity = heat demand (if fuel=Electricity) + background household electricity
+      const elBl_heat   = baseline.fuel === 'Electricity' ? computeHeatDemand(baseline) : 0;
+      const elMeas_heat = measure.fuel  === 'Electricity' ? computeHeatDemand(measure)  : 0;
+      const elBl   = elBl_heat   + (baseline.demand_electricity_measure_mwh || 0);
+      const elMeas = elMeas_heat + (measure.demand_electricity_measure_mwh  || 0);
+      const elSaved = elBl - elMeas;  // positive = electricity saved (e.g. solar PV)
+
+      if (gasBl === 0 && gasMeas === 0 && elBl === 0 && elMeas === 0) return null;
+      const scope1Annual = gasSaved;                          // direct: gas saved (MWh)
+      const scope2Annual = elSaved * gasFactor;              // indirect: electricity change × gas_factor
+      const annualMwh    = scope1Annual + scope2Annual;
+      return {
+        annualMwh, totalMwh: annualMwh * lifetime,
+        scope1AnnualMwh: scope1Annual, scope1TotalMwh: scope1Annual * lifetime,
+        scope2AnnualMwh: scope2Annual, scope2TotalMwh: scope2Annual * lifetime,
+        gasFactor,
+      };
+    }
   }
 
   function calcEnergySavings(yearByYear, npv, capexDiff) {
@@ -646,8 +724,9 @@ const CostsBenefits = (() => {
       paybackYear:     calcPaybackYear(yearByYear),
       emissionSavings: calcEmissionSavings(yearByYear, npv, capexDiff),
       energySavings:   calcEnergySavings(yearByYear, npv, capexDiff),  // null for transport
-      fuelSavings:     calcFuelSavings(baseline, measure, sector, lifetime),
-      gasSavings:      calcGasSavings(baseline, measure, sector, lifetime),
+      fuelSavings:          calcFuelSavings(baseline, measure, sector, lifetime),
+      gasSavings:           calcGasSavings(baseline, measure, sector, lifetime),
+      fossilImportSavings:  calcFossilImportSavings(baseline, measure, sector, lifetime, scenarioPrices),
       yearByYear,
       sensitivity:     computeSensitivity(baseline, measure, sector, scenarioPrices, baseOpts, emissionFactors),
     };

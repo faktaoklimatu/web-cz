@@ -847,11 +847,10 @@
         const kcPerTLow  = -npvHigh / savedT;   // most negative = most beneficial per tonne
         const kcPerTHigh = -npvLow  / savedT;   // most positive = most costly per tonne
 
-        const fuelSavingsL  = r.fuelSavings ? r.fuelSavings.totalL   : 0;
-        const gasSavingsMwh = r.gasSavings  ? r.gasSavings.totalMwh  : 0;
-        // Choose the non-zero dimension; prefer litres (transport) over MWh (buildings gas)
-        const fuelSavingsSize = fuelSavingsL > 0 ? fuelSavingsL : gasSavingsMwh;
-        const fuelSavingsUnit = fuelSavingsL > 0 ? 'l' : 'MWh';
+        // Unified fossil import savings in MWh (gas + liquid fuel in MWh + electricity×gas_factor)
+        const fossilSavingsMwh = r.fossilImportSavings ? r.fossilImportSavings.totalMwh : 0;
+        // Bubble size = positive savings only (negative = net import increase, shown as small dot)
+        const fuelSavingsSize = Math.max(0, fossilSavingsMwh);
 
         points.push({
           id:        m.id,
@@ -866,10 +865,8 @@
           npvLow,    npvHigh,
           savedTLow, savedTHigh,
           kcPerTLow, kcPerTHigh,
-          fuelSavingsL,
-          gasSavingsMwh,
+          fossilSavingsMwh,
           fuelSavingsSize,
-          fuelSavingsUnit,
         });
       } catch (_) { /* skip */ }
     }
@@ -1231,7 +1228,6 @@
     const legX0   = ox + chartW - legSizes.length * legSpacing - 8;
     const legBotY = oy + chartH - 4;
     const hasFuelPoints = allPoints.some(p => p.fuelSavingsSize > 0);
-    const fuelUnit = allPoints.find(p => p.fuelSavingsSize > 0)?.fuelSavingsUnit || 'l';
 
     if (hasFuelPoints) {
       legSizes.forEach((sz, i) => {
@@ -1253,7 +1249,7 @@
       legG.append('text')
         .attr('x', legX0 + (legSizes.length * legSpacing) / 2).attr('y', legBotY + 22)
         .attr('text-anchor', 'middle').attr('font-size', '9px').attr('fill', '#aaa')
-        .text(`Úspora paliva (${fuelUnit})`);
+        .text('Úspora importu ropy a plynu (MWh)');
     }
 
     // If any coal-replacing measures are present, show a small-dot note
@@ -1268,7 +1264,7 @@
       legG.append('text')
         .attr('x', noteX + FB_COAL_R * 2 + 5).attr('y', noteY)
         .attr('font-size', '9px').attr('fill', '#aaa')
-        .text('Opatření nespoří plyn (uhlí → elektřina/TČ)');
+        .text('Nulová úspora importu ropy a plynu (uhlí → elektřina/TČ)');
     }
 
     // ── Points — D3 update pattern with smooth animation ────────────────────
@@ -1289,16 +1285,16 @@
       .style('cursor', 'pointer')
       .on('mouseover', function (e, d) {
         d3.select(this).attr('opacity', 1).attr('r', ptR(d) + 2);
-        const fuelStr = d.fuelSavingsL > 0
-          ? qFmtInt.format(Math.round(d.fuelSavingsL)) + ' l'
-          : d.gasSavingsMwh > 0
-            ? qFmtInt.format(Math.round(d.gasSavingsMwh)) + ' MWh'
-            : '— (opatření nespoří plyn ani kapalná paliva)';
+        const fossilStr = d.fossilSavingsMwh > 0
+          ? qFmtInt.format(Math.round(d.fossilSavingsMwh)) + ' MWh'
+          : d.fossilSavingsMwh < 0
+            ? '−' + qFmtInt.format(Math.round(-d.fossilSavingsMwh)) + ' MWh (nárůst importu)'
+            : '— (bez dopadu na fosilní import)';
         showQTip(e, [
           d.name + (d.category ? ' — ' + d.category : ''),
           'NPV: ' + qFmtCZK(d.npv),
           'Úspora emisí: ' + qFmtTonnes(d.savedT),
-          'Úspora paliva: ' + fuelStr,
+          'Úspora importu ropy a plynu: ' + fossilStr,
         ].join('\n'));
       })
       .on('mousemove', moveQTip)
@@ -2892,9 +2888,14 @@
         gasMwhPerBilCZK: r.gasSavings  ? r.gasSavings.totalMwh  / investCapex * effState.investScale : null,
         fuelLPerBilCZK:  r.fuelSavings ? r.fuelSavings.totalL   / investCapex * effState.investScale : null,
         get fossilTwhPerScale() {
-          const gTwh = r.gasSavings  ? r.gasSavings.totalMwh  * 1e-6          : 0;
-          const fTwh = r.fuelSavings ? r.fuelSavings.totalL * FUEL_KWH_PER_L * 1e-9 : 0;
-          return (r.gasSavings || r.fuelSavings) ? (gTwh + fTwh) / investCapex * effState.investScale : null;
+          // Total fossil import savings (scope 1 + scope 2) in TWh
+          const fis = r.fossilImportSavings;
+          return fis ? fis.totalMwh * 1e-6 / investCapex * effState.investScale : null;
+        },
+        get fossilTwhScope2PerScale() {
+          // Scope 2 only: indirect savings via electricity grid (electricity change × gas_factor)
+          const fis = r.fossilImportSavings;
+          return fis ? fis.scope2TotalMwh * 1e-6 / investCapex * effState.investScale : null;
         },
         npvPerBilCZK:    r.npv / investCapex * effState.investScale,
         sensitivity:     r.sensitivity || [],
@@ -3018,8 +3019,14 @@
       lines.push('  → ' + (row.fuelLPerBilCZK / CZ_FUEL_IMPORTS_L * 100).toPrecision(3) + ' % imp. PHM');
     }
     if (row.fossilTwhPerScale != null) {
-      lines.push('Fosilní: ' + fmtEffBarLabel(row.fossilTwhPerScale, 'fossilTwhPerScale', false) + '/' + fmtScaleLbl());
+      lines.push('Fosilní sc.1 (přímý): ' + fmtEffBarLabel(row.fossilTwhPerScale, 'fossilTwhPerScale', false) + '/' + fmtScaleLbl());
       lines.push('  → ' + (row.fossilTwhPerScale / CZ_FOSSIL_TWH * 100).toPrecision(3) + ' % ref. fosil. dovozu');
+    }
+    if (row.fossilTwhScope2PerScale != null && row.fossilTwhScope2PerScale !== 0) {
+      const s2 = row.fossilTwhScope2PerScale;
+      const s2pct = (s2 / CZ_FOSSIL_TWH * 100).toPrecision(3);
+      lines.push('Fosilní sc.2 (el. grid): ' + (s2 >= 0 ? '+' : '') + fmtEffBarLabel(s2, 'fossilTwhPerScale', false) + '/' + fmtScaleLbl());
+      lines.push('  → ' + (s2 >= 0 ? '+' : '') + s2pct + ' % ref. fosil. dovozu (gas factor: ' + ((row.fossilTwhScope2PerScale / (row.fossilTwhPerScale || 1) * 100).toFixed(0)) + '%)');
     }
     if (row.baselineName) lines.push('vs. ' + row.baselineName);
     return lines.join('\n');

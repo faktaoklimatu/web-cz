@@ -120,8 +120,9 @@
         co2Saved:    result.emissionSavings ? -result.emissionSavings.totalT : null,
         capexDiff:   result.capexDiff,
         sector:      result.sector,
-        gasSavings:  result.gasSavings,
-        fuelSavings: result.fuelSavings,
+        gasSavings:          result.gasSavings,
+        fuelSavings:         result.fuelSavings,
+        fossilImportSavings: result.fossilImportSavings,
         sensitivity: sens,
       };
     } catch (e) {
@@ -448,8 +449,9 @@
           co2Saved:     calc.co2Saved,
           capexDiff:    calc.capexDiff,
           sector:       calc.sector,
-          gasSavings:   calc.gasSavings,
-          fuelSavings:  calc.fuelSavings,
+          gasSavings:          calc.gasSavings,
+          fuelSavings:         calc.fuelSavings,
+          fossilImportSavings: calc.fossilImportSavings,
           sensitivity:  calc.sensitivity,
         };
       })
@@ -488,7 +490,12 @@
     svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
     svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
     svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8)
-      .text(isBuildings ? 'Úspora plynu' : 'Úspora PHM');
+      .call(el => {
+        const x = LABEL_W + chartW + CO2_W + 8;
+        el.selectAll('*').remove();
+        el.append('tspan').attr('x', x).attr('dy', '0').text('Úspora importu');
+        el.append('tspan').attr('x', x).attr('dy', '1.1em').text('ropy a plynu');
+      });
     svg.select('.zero-line')
       .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
       .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
@@ -643,12 +650,11 @@
       const fuelColX = LABEL_W + chartW + CO2_W + 8;
       fuelG.selectAll('*').remove();
       let fuelAbsStr = '—', fuelRelStr = null;
-      if (row.sector === 'transport' && row.fuelSavings) {
-        fuelAbsStr = fmtL(row.fuelSavings.totalL);
-        if (row.npv) fuelRelStr = fmtCZKperL(-row.npv.value, row.fuelSavings.totalL);
-      } else if (row.sector !== 'transport' && row.gasSavings) {
-        fuelAbsStr = fmtMWh(row.gasSavings.totalMwh);
-        if (row.npv) fuelRelStr = fmtCZKperMWh(-row.npv.value, row.gasSavings.totalMwh);
+      if (row.fossilImportSavings) {
+        const fis = row.fossilImportSavings;
+        fuelAbsStr = fmtMWh(fis.scope1TotalMwh);
+        const s2 = fis.scope2TotalMwh;
+        if (s2 !== 0) fuelRelStr = (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' výroba elektřiny';
       }
       fuelG.append('text')
         .attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
@@ -658,7 +664,8 @@
         fuelG.append('text')
           .attr('x', fuelColX).attr('y', mid + 13)
           .attr('font-size', '10px').attr('fill', '#bbb')
-          .text(fuelRelStr);
+          .text(fuelRelStr)
+          .append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
       }
     });
 
@@ -698,9 +705,10 @@
           co2Saved:     calc.co2Saved,
           capexDiff:    calc.capexDiff,
           sector:       calc.sector,
-          gasSavings:   calc.gasSavings,
-          fuelSavings:  calc.fuelSavings,
-          sensitivity:  calc.sensitivity,
+          gasSavings:          calc.gasSavings,
+          fuelSavings:         calc.fuelSavings,
+          fossilImportSavings: calc.fossilImportSavings,
+          sensitivity:         calc.sensitivity,
         };
       })
       .filter(Boolean)
@@ -735,7 +743,13 @@
     svg.attr('width', totalW).attr('height', totalH);
     svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
     svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
-    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8).text('Úspora PHM');
+    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8)
+      .call(el => {
+        const x = LABEL_W + chartW + CO2_W + 8;
+        el.selectAll('*').remove();
+        el.append('tspan').attr('x', x).attr('dy', '0').text('Úspora importu');
+        el.append('tspan').attr('x', x).attr('dy', '1.1em').text('ropy a plynu');
+      });
     svg.select('.zero-line')
       .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
       .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
@@ -857,15 +871,18 @@
       const fuelColX = LABEL_W + chartW + CO2_W + 8;
       fuelG.selectAll('*').remove();
       let fuelAbsStr = '—', fuelRelStr = null;
-      if (row.fuelSavings) {
-        fuelAbsStr = fmtL(row.fuelSavings.totalL);
-        if (row.npv) fuelRelStr = fmtCZKperL(-row.npv.value, row.fuelSavings.totalL);
+      if (row.fossilImportSavings) {
+        const fis = row.fossilImportSavings;
+        fuelAbsStr = fmtMWh(fis.scope1TotalMwh);
+        const s2 = fis.scope2TotalMwh;
+        if (s2 !== 0) fuelRelStr = (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' výroba elektřiny';
       }
       fuelG.append('text').attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
         .attr('font-size', '13px').attr('fill', '#555').text(fuelAbsStr);
       if (fuelRelStr) {
         fuelG.append('text').attr('x', fuelColX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb').text(fuelRelStr);
+          .attr('font-size', '10px').attr('fill', '#bbb').text(fuelRelStr)
+          .append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
       }
     });
 
@@ -1014,34 +1031,27 @@
 
     // Row 3: natural gas (buildings) or liquid fuel/PHM (transport)
     {
-      if (result.sector === 'transport') {
-        const fs       = result.fuelSavings;
-        const fsTotalL = fs ? fs.totalL  : null;
-        const fsAnnL   = fs ? fs.annualL : null;
-        const annSubFs = fsAnnL != null ? '(' + fmtL(fsAnnL) + '/rok)' : null;
-        grid.appendChild(makeRowLbl('PHM'));
-        grid.appendChild(makeStat('Úspora PHM celkem', fsTotalL != null ? fmtL(fsTotalL) : '—',
-          null, null, annSubFs));
-        grid.appendChild(makeStat('Kč/l',
-          fsTotalL == null ? '—' : fmtCZKperL(-result.npv, fsTotalL),
+      {
+        const fis        = result.fossilImportSavings;
+        grid.appendChild(makeRowLbl('Fosilní import (sc. 1)'));
+        const s1Total = fis ? fis.scope1TotalMwh : null;
+        const s1Ann   = fis ? fis.scope1AnnualMwh : null;
+        const s2Total = fis ? fis.scope2TotalMwh  : null;
+        const annSubS1 = s1Ann != null ? '(' + fmtMWh(s1Ann) + '/rok)' : null;
+        grid.appendChild(makeStat('Úspora sc. 1 celkem', s1Total != null ? fmtMWh(s1Total) : '—',
+          null, null, annSubS1));
+        grid.appendChild(makeStat('Kč/MWh sc. 1',
+          s1Total == null || !s1Total ? '—' : fmtCZKperMWh(-result.npv, s1Total),
           'stats-cell-npv'));
-        grid.appendChild(makeStat('Kč/l',
-          fsTotalL == null ? '—' : fmtCZKperL(extraCapex, fsTotalL),
+        grid.appendChild(makeStat('Kč/MWh sc. 1',
+          s1Total == null || !s1Total ? '—' : fmtCZKperMWh(extraCapex, s1Total),
           'stats-cell-capex'));
-      } else {
-        const gs         = result.gasSavings;
-        const gsTotalMwh = gs ? gs.totalMwh  : null;
-        const gsAnnMwh   = gs ? gs.annualMwh : null;
-        const annSubGs   = gsAnnMwh != null ? '(' + fmtMWh(gsAnnMwh) + '/rok)' : null;
-        grid.appendChild(makeRowLbl('Plyn'));
-        grid.appendChild(makeStat('Úspora plynu celkem', gsTotalMwh != null ? fmtMWh(gsTotalMwh) : '—',
-          null, null, annSubGs));
-        grid.appendChild(makeStat('Kč/MWh',
-          gsTotalMwh == null ? '—' : fmtCZKperMWh(-result.npv, gsTotalMwh),
-          'stats-cell-npv'));
-        grid.appendChild(makeStat('Kč/MWh',
-          gsTotalMwh == null ? '—' : fmtCZKperMWh(extraCapex, gsTotalMwh),
-          'stats-cell-capex'));
+        grid.appendChild(makeRowLbl('Fosilní import (sc. 2)'));
+        const annSubS2 = fis ? '(' + fmtMWh(fis.scope2AnnualMwh) + '/rok)' : null;
+        grid.appendChild(makeStat('Sc. 2 (el. grid)', s2Total != null ? fmtMWh(s2Total) : '—',
+          null, null, annSubS2));
+        grid.appendChild(makeStat('Gas factor', fis ? (fis.gasFactor * 100).toFixed(1) + ' %' : '—'));
+        grid.appendChild(makeStat(''));
       }
     }
 

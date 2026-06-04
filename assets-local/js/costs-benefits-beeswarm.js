@@ -112,6 +112,24 @@
     }
   }
 
+  // Like sbDrawBlockGrid but grows downward from topY instead of upward from bottomY.
+  function sbDrawBlockGridDown(svg, cx, topY, nFilled, maxPerRow, sqSize, fillColor) {
+    if (nFilled <= 0) return;
+    const n      = Math.min(nFilled, maxPerRow * 2);
+    const gridW  = maxPerRow * sqSize;
+    const startX = cx - gridW / 2;
+    for (let i = 0; i < n; i++) {
+      const col        = i % maxPerRow;
+      const rowFromTop = Math.floor(i / maxPerRow);
+      const y          = topY + rowFromTop * sqSize;
+      svg.append('rect')
+        .attr('x', startX + col * sqSize).attr('y', y)
+        .attr('width', sqSize).attr('height', sqSize)
+        .attr('fill', fillColor || '#dde5ea')
+        .attr('stroke', 'white').attr('stroke-width', 0.5);
+    }
+  }
+
   function sbDrawIcon(svg, name, x, y, w, h) {
     const href = SB_ICONS[name];
     if (href) {
@@ -783,7 +801,7 @@
 
     let M, LANE_H, totalH, yTarget, yClamp;
     if (laneCfg) {
-      M      = { top: laneCfg.showBaselineLabel ? 38 : 30, right: laneCfg.rightMargin || 24, bottom: 40, left: laneCfg.leftMargin };
+      M      = { top: laneCfg.showBaselineLabel ? 56 : 30, right: laneCfg.rightMargin || 24, bottom: 40, left: laneCfg.leftMargin };
       LANE_H = DOT_R * 32.2; // 28 × 1.15
       totalH = laneCfg.lanes.length * LANE_H + M.top + M.bottom;
       yTarget = d => {
@@ -814,7 +832,7 @@
     const rightMeasCX  = xRightCols + rightMeasW / 2;  // centre of measure column
     const xStatCO2     = xRightCols + rightMeasW + statColW / 2;
     const xStatPlyn    = xRightCols + rightMeasW + statColW + statColW / 2;
-    const fuelColHeader = isTransport ? 'ÚSPORA PALIVA' : 'ÚSPORA PLYNU';
+    const fuelColHeader = 'ÚSPORA IMPORTU ROPY A PLYNU';
 
     const xTarget = d => M.left + xScale(Math.max(SB_X_DOMAIN[0], Math.min(SB_X_DOMAIN[1], d.npv)));
     dots.forEach(d => {
@@ -850,13 +868,22 @@
 
     // Column headers (drawn once above all lanes) — styled via .sb-col-hdr CSS class
     if (laneCfg?.showBaselineLabel) {
-      const hdr = (x, anchor = 'middle') => svg.append('text')
-        .attr('class', 'sb-col-hdr').attr('x', x).attr('y', 12).attr('text-anchor', anchor);
-      hdr(4,                     'start').text('KONTEXT');
-      hdr(M.left + chartW / 2          ).text('NÁVRATNOST');
-      hdr(xRightCols + 15,       'start').text('OPATŘENÍ');
-      hdr(xStatCO2                      ).text('ÚSPORA EMISÍ');
-      hdr(xStatPlyn                     ).text(fuelColHeader);
+      // Multi-line column headers: each word on its own line via tspan
+      const hdrLines = (x, lines, anchor = 'middle') => {
+        const t = svg.append('text')
+          .attr('class', 'sb-col-hdr').attr('x', x).attr('y', 12)
+          .attr('text-anchor', anchor)
+          .attr('font-size', '9px').attr('letter-spacing', '0.04em');
+        lines.forEach((line, i) => {
+          t.append('tspan').attr('x', x).attr('dy', i === 0 ? '0' : '1.25em').text(line);
+        });
+        return t;
+      };
+      hdrLines(4,                     ['KONTEXT'],                    'start');
+      hdrLines(M.left + chartW / 2,   ['NÁVRATNOST']);
+      hdrLines(xRightCols + 15,       ['OPATŘENÍ'],                   'start');
+      hdrLines(xStatCO2,              ['ÚSPORA', 'EMISÍ']);
+      hdrLines(xStatPlyn,             ['ÚSPORA', 'IMPORTU', 'ROPY A PLYNU']);
     }
 
     // Grouped mode: lane lines + left-side labels
@@ -949,9 +976,10 @@
                 priceScenario:  SB_DEFAULT.scenario,
               });
               co2Saved  = res.emissionSavings != null ? -res.emissionSavings.totalT : null;
-              fuelSaved = isTransport
-                ? (res.fuelSavings != null ? res.fuelSavings.totalL   : null)
-                : (res.gasSavings  != null ? res.gasSavings.totalMwh  : null);
+              fuelSaved = res.fossilImportSavings != null ? {
+                scope1: res.fossilImportSavings.scope1TotalMwh,
+                scope2: res.fossilImportSavings.scope2TotalMwh,
+              } : null;
             } catch (_) {}
           }
 
@@ -971,12 +999,44 @@
           drawStatCell(xStatCO2, nCo2,
             co2Saved != null && co2Saved > 0 ? Math.round(co2Saved) + ' t CO₂' : '–');
 
-          const fuelPerSq = isTransport ? LTR_PER_SQ : MWH_PER_SQ;
-          const fuelUnit  = isTransport ? ' l' : ' MWh';
-          const nFuel = fuelSaved != null && fuelSaved > 0
-            ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(fuelSaved / fuelPerSq))) : 0;
-          drawStatCell(xStatPlyn, nFuel,
-            fuelSaved != null && fuelSaved > 0 ? Math.round(fuelSaved) + fuelUnit : '–');
+          // Scope 1: direct fossil savings (gas + liquid fuel, in MWh)
+          const scope1Mwh  = fuelSaved != null ? fuelSaved.scope1 : null;
+          const scope2Mwh  = fuelSaved != null ? fuelSaved.scope2 : null;
+          const nScope1 = scope1Mwh != null && scope1Mwh > 0
+            ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(scope1Mwh / MWH_PER_SQ))) : 0;
+          drawStatCell(xStatPlyn, nScope1,
+            scope1Mwh != null && scope1Mwh !== 0 ? Math.round(scope1Mwh) + ' MWh' : '–');
+
+          // Separator line + Scope 2: positive (solar) above line, negative (BEV) below line
+          if (scope2Mwh != null && scope2Mwh !== 0) {
+            const sepY      = cy + 22;   // fixed reference line below scope1 label
+            const gridHalfW = SQ_PER_ROW * SQ_SIZE / 2;
+            svg.append('line')
+              .attr('x1', xStatPlyn - gridHalfW).attr('x2', xStatPlyn + gridHalfW)
+              .attr('y1', sepY).attr('y2', sepY)
+              .attr('stroke', '#c8d4da').attr('stroke-width', 0.8).attr('stroke-dasharray', '3 2');
+            const nScope2 = Math.min(SQ_PER_ROW, Math.max(1, Math.round(Math.abs(scope2Mwh) / MWH_PER_SQ)));
+            const s2Sign  = scope2Mwh > 0 ? '+' : '−';
+            let lblY;
+            if (scope2Mwh > 0) {
+              // Savings: blocks sit just above the separator line, growing upward (teal)
+              const nRowsS2 = Math.ceil(nScope2 / SQ_PER_ROW);
+              sbDrawBlockGridDown(svg, xStatPlyn, sepY - 3 - nRowsS2 * SQ_SIZE,
+                nScope2, SQ_PER_ROW, SQ_SIZE, '#b8d8d0');
+              lblY = sepY + 14;
+            } else {
+              // Extra consumption: blocks grow downward from just below the separator line (rose)
+              const s2RowH = Math.ceil(nScope2 / SQ_PER_ROW) * SQ_SIZE;
+              sbDrawBlockGridDown(svg, xStatPlyn, sepY + 3, nScope2, SQ_PER_ROW, SQ_SIZE, '#e8c4c4');
+              lblY = sepY + 3 + s2RowH + 12;
+            }
+            const lbl = svg.append('text')
+              .attr('x', xStatPlyn).attr('y', lblY)
+              .attr('text-anchor', 'middle').attr('font-size', '10px').attr('font-weight', '400')
+              .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#9ab0ba')
+              .text(s2Sign + Math.round(Math.abs(scope2Mwh)) + ' MWh výroba el.');
+            lbl.append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
+          }
         } else {
           svg.append('text')
             .attr('x', M.left - 8).attr('y', labelY)
