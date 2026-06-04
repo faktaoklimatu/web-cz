@@ -4,6 +4,9 @@
   const data = window.COSTS_AND_BENEFITS;
   if (!data) return;
 
+  const COLOR_FAVORABLE = '#1a7a85';
+  const COLOR_COSTLY    = '#c0392b';
+
   // ── State ─────────────────────────────────────────────────────────────────
   const state = {
     carbonPrice:           60,
@@ -1760,223 +1763,6 @@
     { id: 'dumbbell-ojete-velke', categories: ['Ojeté velké']          },
   ];
 
-  // ── MAC curve ─────────────────────────────────────────────────────────────
-
-  // All building categories in display order
-  const MAC_BUILDING_CATS = [
-    'Rodinný dům uhlí – E',
-    'Rodinný dům uhlí – C',
-    'Rodinný dům plyn – E',
-    'Rodinný dům plyn – C',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem',
-    'Byt v panelovém domě s plynovou kotelnou',
-  ];
-  const MAC_CAT_COLORS = {
-    'Rodinný dům uhlí – E':                             '#7b4f2e',
-    'Rodinný dům uhlí – C':                             '#b07a50',
-    'Rodinný dům plyn – E':                             '#c45e00',
-    'Rodinný dům plyn – C':                             '#e08c3a',
-    'Byt ve starší zástavbě s vlastním plynovým kotlem':'#2e7d5b',
-    'Byt v panelovém domě s plynovou kotelnou':         '#1a7a85',
-  };
-
-  // Filter state — selected building category (single)
-  const macFilter = { category: MAC_BUILDING_CATS[0] };
-
-  function macBuildFilters(wrap) {
-    if (wrap.querySelector('.mac-filters')) return;
-
-    const filtersDiv = document.createElement('div');
-    filtersDiv.className = 'mac-filters q-filters';
-
-    const row = document.createElement('div');
-    row.className = 'q-filter-row';
-    const lbl = document.createElement('label');
-    lbl.className = 'q-filter-label';
-    lbl.textContent = 'Typ budovy:';
-    lbl.setAttribute('for', 'mac-cat-select');
-    row.appendChild(lbl);
-
-    const sel = document.createElement('select');
-    sel.id = 'mac-cat-select';
-    sel.className = 'form-select form-select-sm';
-    sel.style.cssText = 'width:auto; min-width:200px;';
-    MAC_BUILDING_CATS.forEach(cat => {
-      const opt = document.createElement('option');
-      opt.value = cat;
-      opt.textContent = cat;
-      if (cat === macFilter.category) opt.selected = true;
-      sel.appendChild(opt);
-    });
-    sel.addEventListener('change', () => {
-      macFilter.category = sel.value;
-      macRenderSVG(wrap);
-    });
-    row.appendChild(sel);
-
-    filtersDiv.appendChild(row);
-    wrap.insertBefore(filtersDiv, wrap.firstChild);
-  }
-
-  function macRenderSVG(container) {
-    const allPoints = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
-      .filter(p =>
-        p.sector === 'buildings' &&
-        p.category === macFilter.category &&
-        isFinite(p.kcPerT) && isFinite(p.savedT) && p.savedT > 0
-      );
-
-    allPoints.sort((a, b) => a.kcPerT - b.kcPerT);
-
-    const M      = { top: 32, right: 24, bottom: 80, left: 90 };
-    const totalW = container.clientWidth || 720;
-    const totalH = 420;
-    const chartW = Math.max(totalW - M.left - M.right, 200);
-    const chartH = totalH - M.top - M.bottom;
-    const ox = M.left, oy = M.top;
-
-    let cumX = 0;
-    const bars = allPoints.map(p => {
-      const x0 = cumX;
-      cumX += p.savedT;
-      return { ...p, x0, x1: cumX };
-    });
-    const totalSavedT = cumX;
-
-    const xScale = d3.scaleLinear().domain([0, totalSavedT]).range([0, chartW]);
-    const yMin = Math.min(0, ...bars.map(b => b.kcPerTLow));
-    const yMax = Math.max(0, ...bars.map(b => b.kcPerTHigh));
-    const yPad = (yMax - yMin) * 0.12 || 1000;
-    const yScale = d3.scaleLinear()
-      .domain([yMin - yPad, yMax + yPad])
-      .range([chartH, 0]);
-
-    // Remove old SVG only
-    d3.select(container).select('svg').remove();
-
-    const svg = d3.select(container).append('svg')
-      .attr('width', totalW).attr('height', totalH)
-      .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
-
-    svg.append('rect')
-      .attr('x', ox).attr('y', oy).attr('width', chartW).attr('height', chartH)
-      .attr('fill', '#fafbfc').attr('stroke', '#eee').attr('stroke-width', 1);
-
-    const zy = oy + yScale(0);
-    svg.append('line')
-      .attr('x1', ox).attr('x2', ox + chartW).attr('y1', zy).attr('y2', zy)
-      .attr('stroke', '#888').attr('stroke-width', 1);
-
-    svg.append('g').attr('class', 'chart-axis')
-      .attr('transform', `translate(${ox},${oy + chartH})`)
-      .call(d3.axisBottom(xScale).ticks(6).tickFormat(v => {
-        if (Math.abs(v) >= 1000) return (v / 1000).toFixed(0) + ' kt';
-        return v.toFixed(0) + ' t';
-      }));
-    svg.append('g').attr('class', 'chart-axis')
-      .attr('transform', `translate(${ox},${oy})`)
-      .call(d3.axisLeft(yScale).ticks(6).tickFormat(v => {
-        const abs = Math.abs(v);
-        if (abs >= 1e6) return (v / 1e6).toFixed(1) + ' M';
-        if (abs >= 1e3) return (v / 1e3).toFixed(0) + ' tis.';
-        return v.toFixed(0);
-      }));
-
-    svg.append('text').attr('class', 'q-axis-label').attr('text-anchor', 'middle')
-      .attr('x', ox + chartW / 2).attr('y', oy + chartH + 52)
-      .text('Kumulativní úspora emisí (t CO₂)');
-    svg.append('text').attr('class', 'q-axis-label').attr('text-anchor', 'middle')
-      .attr('transform', `translate(${ox - 64},${oy + chartH / 2}) rotate(-90)`)
-      .text('Abatement cost (Kč / t CO₂)');
-
-    // Shared tooltip element
-    let macTip = document.getElementById('mac-tip');
-    if (!macTip) {
-      macTip = document.createElement('div');
-      macTip.id = 'mac-tip';
-      Object.assign(macTip.style, {
-        position: 'fixed', pointerEvents: 'none', background: 'rgba(30,30,30,0.88)',
-        color: '#fff', fontSize: '12px', lineHeight: '1.5', padding: '6px 10px',
-        borderRadius: '4px', whiteSpace: 'pre', display: 'none', zIndex: 9999,
-      });
-      document.body.appendChild(macTip);
-    }
-
-    const fmtKcT = v => {
-      const abs = Math.abs(v), sign = v < 0 ? '− ' : '+ ';
-      if (abs >= 1e6) return sign + (abs / 1e6).toFixed(2) + ' M Kč/t';
-      if (abs >= 1e3) return sign + (abs / 1e3).toFixed(0) + ' tis. Kč/t';
-      return sign + Math.round(abs) + ' Kč/t';
-    };
-    const fmtT = v => Math.abs(v) >= 1000 ? (v / 1000).toFixed(1) + ' kt' : Math.round(v) + ' t';
-
-    const barsG = svg.append('g');
-    bars.forEach(b => {
-      const color = MAC_CAT_COLORS[b.category] || Q_COLOR_BUILDINGS;
-      const bx = ox + xScale(b.x0);
-      const bw = Math.max(xScale(b.x1) - xScale(b.x0) - 1, 1);
-
-      // Uncertainty whisker
-      const wx = bx + bw / 2;
-      const wTop    = oy + yScale(b.kcPerTHigh);
-      const wBottom = oy + yScale(b.kcPerTLow);
-      barsG.append('line')
-        .attr('x1', wx).attr('x2', wx).attr('y1', wTop).attr('y2', wBottom)
-        .attr('stroke', color).attr('stroke-width', 1.5).attr('opacity', 0.35);
-      [[wTop], [wBottom]].forEach(([wy]) => {
-        barsG.append('line')
-          .attr('x1', wx - 3).attr('x2', wx + 3).attr('y1', wy).attr('y2', wy)
-          .attr('stroke', color).attr('stroke-width', 1.5).attr('opacity', 0.35);
-      });
-
-      // Bar
-      const barTop = oy + yScale(Math.max(b.kcPerT, 0));
-      const barH   = Math.max(Math.abs(oy + yScale(Math.min(b.kcPerT, 0)) - barTop), 1);
-      barsG.append('rect')
-        .attr('x', bx).attr('y', barTop).attr('width', bw).attr('height', barH)
-        .attr('fill', color).attr('opacity', 0.75)
-        .attr('stroke', color).attr('stroke-width', 0.5)
-        .style('cursor', 'pointer')
-        .on('mouseover', function (e) {
-          d3.select(this).attr('opacity', 1);
-          macTip.textContent = [
-            b.name + ' — ' + b.category,
-            'Abatement cost: ' + fmtKcT(b.kcPerT) + '  [' + fmtKcT(b.kcPerTLow) + ' — ' + fmtKcT(b.kcPerTHigh) + ']',
-            'Úspora CO₂: ' + fmtT(b.savedT),
-          ].join('\n');
-          macTip.style.display = 'block';
-          macTip.style.left = (e.clientX + 14) + 'px';
-          macTip.style.top  = (e.clientY - 28) + 'px';
-        })
-        .on('mousemove', e => {
-          macTip.style.left = (e.clientX + 14) + 'px';
-          macTip.style.top  = (e.clientY - 28) + 'px';
-        })
-        .on('mouseout', function () {
-          d3.select(this).attr('opacity', 0.75);
-          macTip.style.display = 'none';
-        });
-
-      // Rotated label — only if bar wide enough
-      if (bw > 20) {
-        const shortName = b.name.length > 22 ? b.name.slice(0, 20) + '…' : b.name;
-        const labelY = b.kcPerT >= 0 ? barTop - 4 : barTop + barH + 4;
-        const anchor = b.kcPerT >= 0 ? 'end' : 'start';
-        barsG.append('text')
-          .attr('transform', `translate(${bx + bw / 2},${labelY}) rotate(-60)`)
-          .attr('text-anchor', anchor)
-          .attr('font-size', '9px').attr('fill', '#666')
-          .style('pointer-events', 'none')
-          .text(shortName);
-      }
-    });
-  }
-
-  function renderMACChart(container) {
-    macBuildFilters(container);
-    macRenderSVG(container);
-  }
-
   // ── Render all charts on the page ─────────────────────────────────────────
   // Collect all NPV values that will appear in a given chart container.
   function collectNpvsForEl(el) {
@@ -2141,7 +1927,6 @@
       ['fuel-bubble-buildings',   'bubliny-budovy'],
       ['fuel-bubble-transport',   'bubliny-doprava'],
       ['static-comparison-chart', 'quadrant-porovnani'],
-      ['mac-chart',               'mac-curve'],
       ['beeswarm-chart',          'beeswarm-npv'],
       ['beeswarm-capex-chart',    'beeswarm-capex'],
       ...DUMBBELL_CONFIGS.map(c => [c.id, c.id]),
@@ -2918,11 +2703,6 @@
     if (fbBldEl) renderFuelBubbleChart(fbBldEl, 'buildings');
     const fbTrEl = document.getElementById('fuel-bubble-transport');
     if (fbTrEl) renderFuelBubbleChart(fbTrEl, 'transport');
-    const macEl = document.getElementById('mac-chart');
-    if (macEl) {
-      macBuildFilters(macEl); // no-op after first call
-      macRenderSVG(macEl);
-    }
     // Re-render static chart on resize if visible
     const scEl = document.getElementById('static-comparison-chart');
     if (scEl && !scEl.hidden) renderStaticComparisonChart(scEl);
