@@ -2837,8 +2837,8 @@
     sectors:      new Set(['buildings', 'transport']),
     combos:       new Set(),   // empty = show all; each entry is 'measure_name|||context'
     unit:         'abs',
-    capexMode:    'diff',      // 'diff' = extra CAPEX vs baseline | 'full' = total measure CAPEX
-    yearlyMode:   true,        // true = divide by lifetime; false = show lifetime totals
+    normMode:     'none',      // 'none' = raw per measure | 'diff' = per diff CAPEX | 'full' = per full CAPEX
+    yearlyMode:   false,       // true = divide by lifetime; false = show lifetime totals
     investScale:  1e11,        // denominator CZK (100 bil default)
     showNpvSwarm: false,       // overlay sensitivity beeswarm on NPV chart
     sortBy:       'co2PerBilCZK',  // shared sort key for all charts
@@ -2852,11 +2852,12 @@
   }
 
   function fmtScaleLbl() {
+    if (effState.normMode === 'none') return 'na opatření';
     const s = effState.investScale;
-    if (s >= 1e11) return '100 mld. Kč';
-    if (s >= 1e10) return  '10 mld. Kč';
-    if (s >=  1e9) return   '1 mld. Kč';
-    return '1 mil. Kč';
+    if (s >= 1e11) return '100 mld. Kč';
+    if (s >= 1e10) return  '10 mld. Kč';
+    if (s >=  1e9) return   '1 mld. Kč';
+    return '1 mil. Kč';
   }
 
   function computeEffRow(m) {
@@ -2874,8 +2875,14 @@
       // Full CAPEX = sum of all capex fields on the measure entry itself
       const measureCapex = (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0)
                          + (m.capex_preparation_czk || 0) + (m.capex_czk || 0);
-      const investCapex  = effState.capexMode === 'full' ? measureCapex : -r.capexDiff;
-      if (investCapex <= 0) return null;
+      let investCapex, scale;
+      if (effState.normMode === 'none') {
+        investCapex = 1; scale = 1;   // raw absolute value per measure
+      } else {
+        investCapex = effState.normMode === 'full' ? measureCapex : -r.capexDiff;
+        scale = effState.investScale;
+        if (investCapex <= 0) return null;
+      }
       const co2Saved = r.emissionSavings ? -r.emissionSavings.totalT : null;
       return {
         id:              m.id,
@@ -2884,20 +2891,20 @@
         sector,
         lifetime:        m.lifetime || 1,
         extraCapex:      investCapex,
-        co2PerBilCZK:    co2Saved != null ? co2Saved / investCapex * effState.investScale : null,
-        gasMwhPerBilCZK: r.gasSavings  ? r.gasSavings.totalMwh  / investCapex * effState.investScale : null,
-        fuelLPerBilCZK:  r.fuelSavings ? r.fuelSavings.totalL   / investCapex * effState.investScale : null,
+        co2PerBilCZK:    co2Saved != null ? co2Saved / investCapex * scale : null,
+        gasMwhPerBilCZK: r.gasSavings  ? r.gasSavings.totalMwh  / investCapex * scale : null,
+        fuelLPerBilCZK:  r.fuelSavings ? r.fuelSavings.totalL   / investCapex * scale : null,
         get fossilTwhPerScale() {
           // Total fossil import savings (scope 1 + scope 2) in TWh
           const fis = r.fossilImportSavings;
-          return fis ? fis.totalMwh * 1e-6 / investCapex * effState.investScale : null;
+          return fis ? fis.totalMwh * 1e-6 / investCapex * scale : null;
         },
         get fossilTwhScope2PerScale() {
           // Scope 2 only: indirect savings via electricity grid (electricity change × gas_factor)
           const fis = r.fossilImportSavings;
-          return fis ? fis.scope2TotalMwh * 1e-6 / investCapex * effState.investScale : null;
+          return fis ? fis.scope2TotalMwh * 1e-6 / investCapex * scale : null;
         },
-        npvPerBilCZK:    r.npv / investCapex * effState.investScale,
+        npvPerBilCZK:    r.npv / investCapex * scale,
         sensitivity:     r.sensitivity || [],
         baselineName:    m.measure_baseline || '',
       };
@@ -3005,7 +3012,7 @@
       return fmtInt.format(a) + ' Kč';
     };
     const lines = [row.measureName, row.context, '',
-      (effState.capexMode === 'full' ? 'Plný CAPEX: ' : 'Investice nad základ: ') + fmtCap(row.extraCapex)];
+      (effState.normMode === 'full' ? 'Plný CAPEX: ' : effState.normMode === 'diff' ? 'Investice nad základ: ' : 'CAPEX: ') + fmtCap(row.extraCapex)];
     if (row.co2PerBilCZK != null) {
       lines.push('Emise: ' + fmtEffBarLabel(row.co2PerBilCZK, 'co2PerBilCZK', false) + '/' + fmtScaleLbl());
       lines.push('  → ' + (row.co2PerBilCZK / CZ_EMISSIONS_T * 100).toPrecision(3) + ' % č. emisí 2023');
@@ -3118,7 +3125,7 @@
         const nDots = row.sensitivity.length * 2;
         row.sensitivity.forEach((s, si) => {
           [s.minNpv, s.maxNpv].forEach((rawNpv, vi) => {
-            const swarmVal = toDisp(rawNpv / row.extraCapex * effState.investScale, row.lifetime);
+            const swarmVal = toDisp(rawNpv / row.extraCapex * (effState.normMode !== 'none' ? effState.investScale : 1), row.lifetime);
             if (!isFinite(swarmVal)) return;
             const clampedVal = Math.max(yMin, Math.min(yMax, swarmVal));
             const sy = yScale(clampedVal);
@@ -3155,15 +3162,16 @@
       const el = document.getElementById(id);
       if (el) el.textContent = _yearly ? yearly : lifetime;
     };
+    const _scaled = effState.normMode !== 'none';
     _setTitle('eff-co2-title',
-      `Každoroční úspora emisí CO₂ na ${_scale} investic`,
-      `Úspora emisí CO₂ za celou životnost na ${_scale} investic`);
+      _scaled ? `Každoroční úspora emisí CO₂ na ${_scale} investic` : 'Každoroční úspora emisí CO₂ na opatření',
+      _scaled ? `Úspora emisí CO₂ za celou životnost na ${_scale} investic` : 'Úspora emisí CO₂ za celou životnost na opatření');
     _setTitle('eff-fossil-title',
-      `Každoroční úspora fosilních paliv na ${_scale} investic`,
-      `Úspora fosilních paliv za celou životnost na ${_scale} investic`);
+      _scaled ? `Každoroční úspora fosilních paliv na ${_scale} investic` : 'Každoroční úspora fosilních paliv na opatření',
+      _scaled ? `Úspora fosilních paliv za celou životnost na ${_scale} investic` : 'Úspora fosilních paliv za celou životnost na opatření');
     _setTitle('eff-npv-title',
-      `Roční NPV na ${_scale} investic`,
-      `NPV (životnost) na ${_scale} investic`);
+      _scaled ? `Roční NPV na ${_scale} investic` : 'Roční NPV na opatření',
+      _scaled ? `NPV (životnost) na ${_scale} investic` : 'NPV (životnost) na opatření');
     const co2El    = document.getElementById('eff-co2-chart');
     const fossilEl = document.getElementById('eff-fossil-chart');
     if (co2El) {
@@ -3186,10 +3194,13 @@
     }
     const npvEl = document.getElementById('eff-npv-chart');
     if (npvEl) {
+      const npvScaled = effState.normMode !== 'none';
       renderEffBarChart(npvEl, getEffRows('npvPerBilCZK'),
         'npvPerBilCZK',
-        effState.yearlyMode ? `Kč NPV/rok / ${fmtScaleLbl()} invest.` : `Kč NPV (životnost) / ${fmtScaleLbl()} invest.`,
-        null);
+        npvScaled
+          ? (effState.yearlyMode ? 'NPV/rok / investici [%]' : 'NPV (lifetime) / investici [%]')
+          : (effState.yearlyMode ? 'Kč NPV/rok' : 'Kč NPV (lifetime)'),
+        npvScaled ? effState.investScale : null, npvScaled);
       fokDownloadBar(npvEl, 'efektivita-npv');
     }
   }
@@ -3215,9 +3226,11 @@
     if (unitSel) unitSel.addEventListener('change', () => {
       effState.unit = unitSel.value; renderEffCharts();
     });
-    const capexChk = document.getElementById('eff-fullcapex-check');
-    if (capexChk) capexChk.addEventListener('change', () => {
-      effState.capexMode = capexChk.checked ? 'full' : 'diff';
+    const normSel = document.getElementById('eff-norm-select');
+    if (normSel) normSel.addEventListener('change', () => {
+      effState.normMode = normSel.value;
+      const scaleGroup = document.getElementById('eff-scale-select')?.closest('.eff-filter-group');
+      if (scaleGroup) scaleGroup.style.opacity = normSel.value === 'none' ? '0.35' : '1';
       renderEffCharts();
     });
     const yearlyChk = document.getElementById('eff-yearly-check');

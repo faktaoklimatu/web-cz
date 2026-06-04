@@ -738,16 +738,17 @@ extra-scripts:
         </select>
       </div>
       <div class="eff-filter-group eff-filter-group--select">
-        <span class="control-label">Z&#225;klad CAPEX</span>
-        <label class="mt-1" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;">
-          <input type="checkbox" id="eff-fullcapex-check">
-          Pln&#253; CAPEX (ne diff)
-        </label>
+        <label class="control-label" for="eff-norm-select">Normalizace</label>
+        <select id="eff-norm-select" class="form-select form-select-sm mt-1">
+          <option value="none" selected>&#381;&#225;dn&#225;</option>
+          <option value="diff">Diff of CAPEX</option>
+          <option value="full">Full CAPEX</option>
+        </select>
       </div>
       <div class="eff-filter-group eff-filter-group--select">
         <span class="control-label">Obdob&#237;</span>
         <label class="mt-1" style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;">
-          <input type="checkbox" id="eff-yearly-check" checked>
+          <input type="checkbox" id="eff-yearly-check">
           Ro&#269;n&#237; (ne celkov&#225;)
         </label>
       </div>
