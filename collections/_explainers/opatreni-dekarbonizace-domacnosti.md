@@ -778,16 +778,27 @@ extra-scripts:
       </div>
     </div>
 
-    <h3 id="eff-co2-title" class="eff-chart-title"></h3>
-    <div id="eff-co2-chart" class="eff-chart"></div>
-
-    <h3 id="eff-fossil-title" class="eff-chart-title"></h3>
-    <p class="eff-note">Zemn&#237; plyn (budovy) + kapaln&#225; paliva – benz&#237;n &amp; nafta (doprava), p&#345;epo&#269;teno na TWh (~9,5&#160;kWh/l). Referen&#269;n&#237; hodnota: ~200&#160;TWh/rok.</p>
-    <div id="eff-fossil-chart" class="eff-chart"></div>
-
-    <h3 id="eff-npv-title" class="eff-chart-title"></h3>
-    <p class="eff-note">&#268;ist&#225; sou&#269;asn&#225; hodnota (NPV) opat&#345;en&#237; p&#345;i aktu&#225;ln&#237;m nastaven&#237; parametr&#367;. Kladn&#225; hodnota = opat&#345;en&#237; se vyplat&#237;, z&#225;porn&#225; = net&#237; n&#225;kladov&#283; efektivn&#237;. Ro&#269;n&#237; re&#382;im d&#283;l&#237; NPV dobou &#382;ivotnosti.</p>
-    <div id="eff-npv-chart" class="eff-chart"></div>
+      <ul class="nav nav-tabs mt-3 mb-0" id="eff-tab-nav">
+      <li class="nav-item"><button class="nav-link active" data-tab="co2">Emise CO&#8322;</button></li>
+      <li class="nav-item"><button class="nav-link" data-tab="fossil">Fosiln&#237; paliva</button></li>
+      <li class="nav-item"><button class="nav-link" data-tab="npv">NPV</button></li>
+    </ul>
+    <div class="tab-content border border-top-0 rounded-bottom p-3">
+      <div id="eff-tab-co2" class="tab-pane show active">
+        <h3 id="eff-co2-title" class="eff-chart-title"></h3>
+        <div id="eff-co2-chart" class="eff-chart"></div>
+      </div>
+      <div id="eff-tab-fossil" class="tab-pane">
+        <h3 id="eff-fossil-title" class="eff-chart-title"></h3>
+        <p class="eff-note">Zemn&#237; plyn (budovy) + kapaln&#225; paliva &#8211; benz&#237;n &amp; nafta (doprava), p&#345;epo&#269;teno na TWh (~9,5&#160;kWh/l). Referen&#269;n&#237; hodnota: ~200&#160;TWh/rok.</p>
+        <div id="eff-fossil-chart" class="eff-chart"></div>
+      </div>
+      <div id="eff-tab-npv" class="tab-pane">
+        <h3 id="eff-npv-title" class="eff-chart-title"></h3>
+        <p class="eff-note">&#268;ist&#225; sou&#269;asn&#225; hodnota (NPV) opat&#345;en&#237; p&#345;i aktu&#225;ln&#237;m nastaven&#237; parametr&#367;. Kladn&#225; hodnota = opat&#345;en&#237; se vyplat&#237;, z&#225;porn&#225; = net&#237; n&#225;kladov&#283; efektivn&#237;. Ro&#269;n&#237; re&#382;im d&#283;l&#237; NPV dobou &#382;ivotnosti.</p>
+        <div id="eff-npv-chart" class="eff-chart"></div>
+      </div>
+    </div>
 
   </div>
 </div>

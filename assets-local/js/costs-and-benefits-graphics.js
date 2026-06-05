@@ -2842,6 +2842,7 @@
     investScale:  1e11,        // denominator CZK (100 bil default)
     showNpvSwarm: false,       // overlay sensitivity beeswarm on NPV chart
     sortBy:       'co2PerBilCZK',  // shared sort key for all charts
+    activeTab:    'co2',           // which tab is currently visible
   };
 
   function getAllEffEntries() {
@@ -2941,6 +2942,17 @@
 
   function populateEffSelects() {
     const all      = getAllEffEntries();
+    document.querySelectorAll('#eff-tab-nav .nav-link').forEach(btn => {
+      btn.addEventListener('click', () => {
+        effState.activeTab = btn.dataset.tab;
+        document.querySelectorAll('#eff-tab-nav .nav-link').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('#eff-tab-nav ~ .tab-content .tab-pane').forEach(p => p.classList.remove('show', 'active'));
+        const pane = document.getElementById('eff-tab-' + effState.activeTab);
+        if (pane) pane.classList.add('show', 'active');
+        renderEffCharts();
+      });
+    });
     const comboSel = document.getElementById('eff-combo-select');
     if (!comboSel) return;
 
@@ -3039,121 +3051,136 @@
     return lines.join('\n');
   }
 
-  function renderEffBarChart(container, rows, valueKey, yLabel, refTotal) {
+  function renderEffBarChart(container, rows, valueKey, yLabel, refTotal, forcePct = false) {
     container.innerHTML = '';
     if (!rows.length) {
       container.innerHTML = '<p style="padding:12px 0;color:#aaa;font-size:13px">Žádná data pro aktuální výběr.</p>';
       return;
     }
-    const usePct = effState.unit === 'pct' && refTotal != null;
-    // In pct mode: divide by lifetime to get yearly savings, then compare to yearly Czech total
-    const toDisp = (v, lifetime) =>
+    const usePct  = refTotal != null && (effState.unit === 'pct' || forcePct);
+    const toDisp  = (v, lifetime) =>
       (effState.yearlyMode ? v / (lifetime || 1) : v) / (usePct ? refTotal / 100 : 1);
-    const n     = rows.length;
-    const BAR_W = n > 24 ? 22 : n > 16 ? 28 : n > 10 ? 34 : 40;
-    const GAP   = Math.max(4, Math.round(BAR_W * 0.22));
-    const M     = { top: 28, right: 20, bottom: 340, left: 110 };
-    const CH    = 200;
-    const CW    = n * (BAR_W + GAP) - GAP;
-    const totalW = CW + M.left + M.right;
+
+    const n      = rows.length;
+    const BAR_H  = 26;
+    const GAP    = 4;
+    const M      = { top: 8, right: 90, bottom: 28, left: 330 };
+    const containerW = Math.max(container.clientWidth || 640, 400);
+    const CW     = containerW - M.left - M.right;
+    const CH     = n * (BAR_H + GAP) - GAP;
+    const totalW = containerW;
     const totalH = CH + M.top + M.bottom;
+
     const dispVals = rows.map(r => toDisp(r[valueKey], r.lifetime));
-    const yMax = Math.max(...dispVals, 0);
-    const yMin = Math.min(...dispVals, 0);
-    const yScale = d3.scaleLinear().domain([yMin, yMax]).nice().range([CH, 0]);
-    const z0     = yScale(0);
+    const xMax = Math.max(...dispVals, 0);
+    const xMin = Math.min(...dispVals, 0);
+    const xScale = d3.scaleLinear().domain([xMin, xMax]).nice().range([0, CW]);
+    const z0     = xScale(0);
+
     const svg = d3.select(container).append('svg')
       .attr('width', totalW).attr('height', totalH)
       .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
     const chart = svg.append('g').attr('transform', `translate(${M.left},${M.top})`);
+
+    // Vertical zero line
     chart.append('line')
-      .attr('x1', -4).attr('x2', CW)
-      .attr('y1', z0).attr('y2', z0)
+      .attr('x1', z0).attr('x2', z0)
+      .attr('y1', -4).attr('y2', CH + 4)
       .attr('stroke', '#ccc').attr('stroke-width', 1);
+
     rows.forEach((row, i) => {
-      const rawMetric = row[valueKey];  // may be null for measures w/o this saving type
-      const val   = toDisp(rawMetric, row.lifetime);  // null → 0 via JS coercion
+      const rawMetric = row[valueKey];
+      const val    = toDisp(rawMetric, row.lifetime);
       const isNull = rawMetric == null;
-      const bH    = Math.max(Math.abs(yScale(val) - z0), 1);
-      const bY    = val >= 0 ? yScale(val) : z0;
-      const bX    = i * (BAR_W + GAP);
-      const color = row.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT;
-      const tipTx = buildEffTip(row);
+      const bY     = i * (BAR_H + GAP);
+      const bX     = val >= 0 ? z0 : xScale(val);
+      const bW     = Math.max(Math.abs(xScale(val) - z0), 1);
+      const color  = row.sector === 'buildings' ? Q_COLOR_BUILDINGS : Q_COLOR_TRANSPORT;
+      const tipTx  = buildEffTip(row);
+
       chart.append('rect')
         .attr('x', bX).attr('y', bY)
-        .attr('width', BAR_W).attr('height', bH)
+        .attr('width', bW).attr('height', BAR_H)
         .attr('fill', color).attr('opacity', isNull ? 0.18 : 0.82)
         .on('mouseover', e => showQTip(e, tipTx))
         .on('mousemove', moveQTip)
         .on('mouseout',  hideQTip);
+
+      // Value label at bar tip
       if (!isNull) {
-        const lbl = fmtEffBarLabel(val, valueKey, usePct);
+        const lbl  = fmtEffBarLabel(val, valueKey, usePct);
         chart.append('text')
-          .attr('x', bX + BAR_W / 2)
-          .attr('y', val >= 0 ? bY - 3 : bY + bH + 11)
-          .attr('text-anchor', 'middle')
+          .attr('x', val >= 0 ? bX + bW + 3 : bX - 3)
+          .attr('y', bY + BAR_H / 2 + 4)
+          .attr('text-anchor', val >= 0 ? 'start' : 'end')
           .attr('font-size', '9px').attr('fill', color)
           .text(lbl);
       }
-      const fullXLbl = row.measureName + ' – ' + row.context;
-      const xLbl = fullXLbl.length > 46 ? fullXLbl.slice(0, 44) + '…' : fullXLbl;
-      // Two parallel label strips: with rotate(90), the X-axis offset is the
-      // horizontal separation between strips in screen space.
-      // Strip 1 (main): baseline shifted left of bar-centre
-      // Strip 2 (vs. baseline): baseline shifted right of bar-centre
-      const lbl1X = bX + BAR_W / 2 - 5;  // strip 1 baseline
-      const lbl2X = bX + BAR_W / 2 + 8;  // strip 2 baseline (13px gap)
+
+      // Measure label — two lines, left side, no rotation
+      const mainLbl   = row.measureName + ' – ' + row.context;
+      const truncMain = mainLbl.length > 56 ? mainLbl.slice(0, 54) + '…' : mainLbl;
+      const hasBase   = !!row.baselineName;
       chart.append('text')
-        .attr('transform', `translate(${lbl1X},${CH + 8}) rotate(90)`)
-        .attr('text-anchor', 'start')
+        .attr('x', -8).attr('y', bY + BAR_H / 2 + (hasBase ? -3 : 4))
+        .attr('text-anchor', 'end')
         .attr('font-size', '11px').attr('fill', '#555')
         .on('mouseover', e => showQTip(e, row.measureName + '\n' + row.context))
         .on('mousemove', moveQTip)
         .on('mouseout',  hideQTip)
-        .text(xLbl);
-      if (row.baselineName) {
+        .text(truncMain);
+      if (hasBase) {
         const baseLbl = 'vs. ' + row.baselineName;
         chart.append('text')
-          .attr('transform', `translate(${lbl2X},${CH + 8}) rotate(90)`)
-          .attr('text-anchor', 'start')
-          .attr('font-size', '10px').attr('fill', '#aaa')
+          .attr('x', -8).attr('y', bY + BAR_H / 2 + 10)
+          .attr('text-anchor', 'end')
+          .attr('font-size', '9px').attr('fill', '#aaa')
           .attr('pointer-events', 'none')
-          .text(baseLbl);
+          .text(baseLbl.length > 38 ? baseLbl.slice(0, 36) + '…' : baseLbl);
       }
-      // NPV beeswarm overlay
+
+      // NPV beeswarm overlay — dots scattered vertically within each band
       if (effState.showNpvSwarm && valueKey === 'npvPerBilCZK' && row.sensitivity && row.sensitivity.length) {
         const nDots = row.sensitivity.length * 2;
         row.sensitivity.forEach((s, si) => {
           [s.minNpv, s.maxNpv].forEach((rawNpv, vi) => {
-            const swarmVal = toDisp(rawNpv / row.extraCapex * (effState.normMode !== 'none' ? effState.investScale : 1), row.lifetime);
+            const swarmVal = toDisp(
+              rawNpv / row.extraCapex * (effState.normMode !== 'none' ? effState.investScale : 1),
+              row.lifetime);
             if (!isFinite(swarmVal)) return;
-            const clampedVal = Math.max(yMin, Math.min(yMax, swarmVal));
-            const sy = yScale(clampedVal);
-            const jitter = nDots > 1
-              ? ((si * 2 + vi) / (nDots - 1) - 0.5) * BAR_W * 0.7
+            const clampedVal = Math.max(xMin, Math.min(xMax, swarmVal));
+            const jitter     = nDots > 1
+              ? ((si * 2 + vi) / (nDots - 1) - 0.5) * BAR_H * 0.7
               : 0;
             chart.append('circle')
-              .attr('cx', bX + BAR_W / 2 + jitter)
-              .attr('cy', sy)
-              .attr('r', 3)
-              .attr('fill', color)
-              .attr('opacity', 0.38)
+              .attr('cx', xScale(clampedVal))
+              .attr('cy', bY + BAR_H / 2 + jitter)
+              .attr('r', 3).attr('fill', color).attr('opacity', 0.38)
               .attr('pointer-events', 'none');
           });
         });
       }
     });
-    const yTickFmt = usePct
-      ? v => { const a = Math.abs(v); const s = v < 0 ? '−' : ''; return s + (a < 0.01 ? a.toFixed(4) : a < 0.1 ? a.toFixed(3) : a.toFixed(2)) + ' %'; }
+
+    // X axis at bottom
+    const xTickFmt = usePct
+      ? v => {
+          const a = Math.abs(v); const s = v < 0 ? '−' : '';
+          if (a >= 100) return s + Math.round(a) + ' %';
+          if (a >= 10)  return s + a.toFixed(1)  + ' %';
+          if (a >= 1)   return s + a.toFixed(2)  + ' %';
+          if (a >= 0.1) return s + a.toFixed(3)  + ' %';
+          return s + a.toFixed(4) + ' %';
+        }
       : v => fmtEffBarLabel(v, valueKey, false);
     chart.append('g').attr('class', 'chart-axis')
-      .call(d3.axisLeft(yScale).ticks(5).tickFormat(yTickFmt));
+      .attr('transform', `translate(0,${CH})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xTickFmt));
     svg.append('text')
-      .attr('transform', `translate(11,${M.top + CH / 2}) rotate(-90)`)
-      .attr('text-anchor', 'middle').attr('font-size', '10px').attr('fill', '#888')
+      .attr('x', M.left + CW).attr('y', totalH - 2)
+      .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', '#888')
       .text(yLabel);
   }
-
   function renderEffCharts() {
     // Update dynamic chart titles
     const _yearly = effState.yearlyMode;
@@ -3172,36 +3199,41 @@
     _setTitle('eff-npv-title',
       _scaled ? `Roční NPV na ${_scale} investic` : 'Roční NPV na opatření',
       _scaled ? `NPV (životnost) na ${_scale} investic` : 'NPV (životnost) na opatření');
-    const co2El    = document.getElementById('eff-co2-chart');
-    const fossilEl = document.getElementById('eff-fossil-chart');
-    if (co2El) {
-      renderEffBarChart(co2El, getEffRows('co2PerBilCZK'),
-        'co2PerBilCZK',
-        effState.unit === 'pct'
-          ? (effState.yearlyMode ? `% č. emisí/rok / ${fmtScaleLbl()}` : `% č. emisí (životnost) / ${fmtScaleLbl()}`)
-          : (effState.yearlyMode ? `t CO₂/rok / ${fmtScaleLbl()}` : `t CO₂ (životnost) / ${fmtScaleLbl()}`),
-        CZ_EMISSIONS_T);
-      fokDownloadBar(co2El, 'efektivita-emise-co2');
-    }
-    if (fossilEl) {
-      renderEffBarChart(fossilEl, getEffRows('fossilTwhPerScale'),
-        'fossilTwhPerScale',
-        effState.unit === 'pct'
-          ? (effState.yearlyMode ? `% ref. fosil./rok / ${fmtScaleLbl()}` : `% ref. fosil. (životnost) / ${fmtScaleLbl()}`)
-          : (effState.yearlyMode ? `TWh/rok / ${fmtScaleLbl()}` : `TWh (životnost) / ${fmtScaleLbl()}`),
-        CZ_FOSSIL_TWH);
-      fokDownloadBar(fossilEl, 'efektivita-fosilni-paliva');
-    }
-    const npvEl = document.getElementById('eff-npv-chart');
-    if (npvEl) {
-      const npvScaled = effState.normMode !== 'none';
-      renderEffBarChart(npvEl, getEffRows('npvPerBilCZK'),
-        'npvPerBilCZK',
-        npvScaled
-          ? (effState.yearlyMode ? 'NPV/rok / investici [%]' : 'NPV (lifetime) / investici [%]')
-          : (effState.yearlyMode ? 'Kč NPV/rok' : 'Kč NPV (lifetime)'),
-        npvScaled ? effState.investScale : null, npvScaled);
-      fokDownloadBar(npvEl, 'efektivita-npv');
+    const tab = effState.activeTab;
+    if (tab === 'co2') {
+      const co2El = document.getElementById('eff-co2-chart');
+      if (co2El) {
+        renderEffBarChart(co2El, getEffRows('co2PerBilCZK'),
+          'co2PerBilCZK',
+          effState.unit === 'pct'
+            ? (effState.yearlyMode ? `% č. emisí/rok / ${fmtScaleLbl()}` : `% č. emisí (životnost) / ${fmtScaleLbl()}`)
+            : (effState.yearlyMode ? `t CO₂/rok / ${fmtScaleLbl()}` : `t CO₂ (životnost) / ${fmtScaleLbl()}`),
+          CZ_EMISSIONS_T);
+        fokDownloadBar(co2El, 'efektivita-emise-co2');
+      }
+    } else if (tab === 'fossil') {
+      const fossilEl = document.getElementById('eff-fossil-chart');
+      if (fossilEl) {
+        renderEffBarChart(fossilEl, getEffRows('fossilTwhPerScale'),
+          'fossilTwhPerScale',
+          effState.unit === 'pct'
+            ? (effState.yearlyMode ? `% ref. fosil./rok / ${fmtScaleLbl()}` : `% ref. fosil. (životnost) / ${fmtScaleLbl()}`)
+            : (effState.yearlyMode ? `TWh/rok / ${fmtScaleLbl()}` : `TWh (životnost) / ${fmtScaleLbl()}`),
+          CZ_FOSSIL_TWH);
+        fokDownloadBar(fossilEl, 'efektivita-fosilni-paliva');
+      }
+    } else if (tab === 'npv') {
+      const npvEl = document.getElementById('eff-npv-chart');
+      if (npvEl) {
+        const npvScaled = effState.normMode !== 'none';
+        renderEffBarChart(npvEl, getEffRows('npvPerBilCZK'),
+          'npvPerBilCZK',
+          npvScaled
+            ? (effState.yearlyMode ? 'NPV/rok / investici [%]' : 'NPV (lifetime) / investici [%]')
+            : (effState.yearlyMode ? 'Kč NPV/rok' : 'Kč NPV (lifetime)'),
+          npvScaled ? effState.investScale : null, npvScaled);
+        fokDownloadBar(npvEl, 'efektivita-npv');
+      }
     }
   }
 
