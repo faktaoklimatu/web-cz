@@ -525,7 +525,7 @@ buildings_measures:
   measure_baseline_id: 1
 - id: 27
   building_category: Rodinný dům uhlí – E
-  measure_name: Soláry na střeše + baterie
+  measure_name: Střešní fotovoltaika + baterie
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -679,7 +679,7 @@ buildings_measures:
   measure_baseline_id: 6
 - id: 34
   building_category: Rodinný dům uhlí – C
-  measure_name: Soláry na střeše + baterie
+  measure_name: Střešní fotovoltaika + baterie
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -789,7 +789,7 @@ buildings_measures:
   measure_baseline_id: 9
 - id: 39
   building_category: Rodinný dům plyn – E
-  measure_name: Soláry na střeše + baterie
+  measure_name: Střešní fotovoltaika + baterie
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -943,7 +943,7 @@ buildings_measures:
   measure_baseline_id: 14
 - id: 46
   building_category: Rodinný dům plyn – C
-  measure_name: Soláry na střeše + baterie
+  measure_name: Střešní fotovoltaika + baterie
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -1147,198 +1147,122 @@ transport_measures:
 - id: 55
   transport_category: Nové malé
   measure_name: Nové malé auto na benzín
-  demand_energy_per_100km: 6.9
+  demand_energy_per_100km: 6.0
   mileage: 15000
   fuel: Petrol
   lifetime: 15
-  capex_czk: 490000
+  capex_czk: 470000
   capex_sensitivity: 0.05
-  opex_maintenance_czk: 12000
-  opex_repairs_czk: 4333
-  opex_insurance_czk: 16000
+  opex_maintenance_czk: 11000
+  opex_repairs_czk: 4000
+  opex_insurance_czk: 12000
   opex_sensitivity: 0.1
-  emissions_embedded_kg: 6000
-  note: Fabia – 6,5 l, 15 000 km
+  emissions_embedded_kg: 0
 - id: 56
   transport_category: Nové velké
-  measure_name: Nové velké auto na naftu
-  demand_energy_per_100km: 7.2
+  measure_name: Nové kompaktní SUV na naftu
+  demand_energy_per_100km: 6.5
   mileage: 15000
   fuel: Diesel
   lifetime: 15
-  capex_czk: 1150000
+  capex_czk: 820000
   capex_sensitivity: 0.05
-  opex_maintenance_czk: 20000
-  opex_repairs_czk: 9333
-  opex_insurance_czk: 24000
+  opex_maintenance_czk: 12000
+  opex_repairs_czk: 5000
+  opex_insurance_czk: 17000
   opex_sensitivity: 0.1
-  emissions_embedded_kg: 8500
-  note: Kodiaq – 8 l
+  emissions_embedded_kg: 0
 - id: 57
   transport_category: Ojeté malé
   measure_name: Ojeté malé auto na benzín
-  demand_energy_per_100km: 7.5
+  demand_energy_per_100km: 6.0
   mileage: 15000
   fuel: Petrol
-  lifetime: 7
+  lifetime: 10
   capex_czk: 240000
   capex_sensitivity: 0.05
-  opex_maintenance_czk: 18000
-  opex_repairs_czk: 6000
-  opex_insurance_czk: 7000
+  opex_maintenance_czk: 10000
+  opex_repairs_czk: 5000
+  opex_insurance_czk: 9000
   opex_sensitivity: 0.15
-  emissions_embedded_kg: 2800
-  note: Fabia – 7,5 l, 15 000 km
+  emissions_embedded_kg: 0
 - id: 58
   transport_category: Ojeté velké
-  measure_name: Ojeté velké auto na naftu
-  demand_energy_per_100km: 8.5
+  measure_name: Ojeté kompaktní SUV na benzín
+  demand_energy_per_100km: 7.0
   mileage: 15000
-  fuel: Diesel
-  lifetime: 7
-  capex_czk: 530000
+  fuel: Petrol
+  lifetime: 10
+  capex_czk: 330000
   capex_sensitivity: 0.05
-  opex_maintenance_czk: 25000
-  opex_repairs_czk: 14286
+  opex_maintenance_czk: 10000
+  opex_repairs_czk: 6000
   opex_insurance_czk: 10000
   opex_sensitivity: 0.15
-  emissions_embedded_kg: 3967
-  note: Kodiaq – 8,5 l
+  emissions_embedded_kg: 0
 - id: 59
   transport_category: Nové malé
   measure_name: Nový malý elektromobil
+  demand_energy_per_100km: 0.018
+  mileage: 15000
+  fuel: Electricity
+  lifetime: 15
+  capex_czk: 725000
+  capex_sensitivity: 0.05
+  opex_maintenance_czk: 9000
+  opex_repairs_czk: 3000
+  opex_insurance_czk: 15000
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 0
+  measure_baseline: Nové malé auto na benzín
+  measure_baseline_id: 55
+- id: 60
+  transport_category: Nové velké
+  measure_name: Nové kompaktní SUV elektro
   demand_energy_per_100km: 0.02
   mileage: 15000
   fuel: Electricity
   lifetime: 15
-  capex_czk: 650000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 5000
-  opex_repairs_czk: 8000
-  opex_insurance_czk: 18000
-  opex_sensitivity: 0.1
-  emissions_embedded_kg: 8800
-  measure_baseline: Nové malé auto na benzín
-  note: Elektromobil
-  measure_baseline_id: 55
-- id: 60
-  transport_category: Nové malé
-  measure_name: Nový malý hybrid
-  demand_energy_per_100km: 4.5
-  mileage: 15000
-  fuel: Petrol
-  lifetime: 15
-  capex_czk: 560000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 9000
-  opex_repairs_czk: 5333
-  opex_insurance_czk: 16000
-  opex_sensitivity: 0.1
-  emissions_embedded_kg: 6000
-  measure_baseline: Nové malé auto na benzín
-  note: Hybrid – 4,5 l
-  measure_baseline_id: 55
-- id: 61
-  transport_category: Nové velké
-  measure_name: Nový velký elektromobil
-  demand_energy_per_100km: 0.0215
-  mileage: 15000
-  fuel: Electricity
-  lifetime: 15
-  capex_czk: 1150000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 10000
-  opex_repairs_czk: 9667
-  opex_insurance_czk: 28000
-  opex_sensitivity: 0.1
-  emissions_embedded_kg: 11000
-  measure_baseline: Nové velké auto na naftu
-  note: Elektromobil
-  measure_baseline_id: 56
-- id: 62
-  transport_category: Nové velké
-  measure_name: Nový velký hybrid
-  demand_energy_per_100km: 6.5
-  mileage: 15000
-  fuel: Petrol
-  lifetime: 15
-  capex_czk: 1150000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 18000
-  opex_repairs_czk: 7000
-  opex_insurance_czk: 24000
-  opex_sensitivity: 0.1
-  emissions_embedded_kg: 8500
-  measure_baseline: Nové velké auto na naftu
-  note: Hybrid – 6,5 l
-  measure_baseline_id: 56
-- id: 63
-  transport_category: Ojeté malé
-  measure_name: Ojetý malý elektromobil
-  demand_energy_per_100km: 0.024
-  mileage: 15000
-  fuel: Electricity
-  lifetime: 7
-  capex_czk: 280000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 9000
-  opex_repairs_czk: 8571
-  opex_insurance_czk: 8000
-  opex_sensitivity: 0.15
-  emissions_embedded_kg: 4107
-  measure_baseline: Ojeté malé auto na benzín
-  note: Elektromobil
-  measure_baseline_id: 57
-- id: 64
-  transport_category: Ojeté malé
-  measure_name: Ojetý malý hybrid
-  demand_energy_per_100km: 5.5
-  mileage: 15000
-  fuel: Petrol
-  lifetime: 7
-  capex_czk: 300000
-  capex_sensitivity: 0.05
-  opex_maintenance_czk: 15000
-  opex_repairs_czk: 7429
-  opex_insurance_czk: 7000
-  opex_sensitivity: 0.15
-  emissions_embedded_kg: 2800
-  measure_baseline: Ojeté malé auto na benzín
-  note: Hybrid – 5,5 l
-  measure_baseline_id: 57
-- id: 65
-  transport_category: Ojeté velké
-  measure_name: Ojetý velký elektromobil
-  demand_energy_per_100km: 0.026
-  mileage: 15000
-  fuel: Electricity
-  lifetime: 7
-  capex_czk: 480000
+  capex_czk: 1030000
   capex_sensitivity: 0.05
   opex_maintenance_czk: 11000
-  opex_repairs_czk: 11714
+  opex_repairs_czk: 4000
+  opex_insurance_czk: 19000
+  opex_sensitivity: 0.1
+  emissions_embedded_kg: 0
+  measure_baseline: Nové kompaktní SUV na naftu
+  measure_baseline_id: 56
+- id: 61
+  transport_category: Ojeté malé
+  measure_name: Ojetý malý elektromobil
+  demand_energy_per_100km: 0.02
+  mileage: 15000
+  fuel: Electricity
+  lifetime: 10
+  capex_czk: 340000
+  capex_sensitivity: 0.05
+  opex_maintenance_czk: 10000
+  opex_repairs_czk: 3000
   opex_insurance_czk: 11000
   opex_sensitivity: 0.15
-  emissions_embedded_kg: 5133
-  measure_baseline: Ojeté velké auto na naftu
-  note: Elektromobil
-  measure_baseline_id: 58
-- id: 66
+  emissions_embedded_kg: 0
+  measure_baseline: Ojeté malé auto na benzín
+  measure_baseline_id: 57
+- id: 62
   transport_category: Ojeté velké
-  measure_name: Ojetý velký hybrid
-  demand_energy_per_100km: 7.0
+  measure_name: Ojeté kompaktní SUV elektro
+  demand_energy_per_100km: 0.018
   mileage: 15000
-  fuel: Petrol
-  lifetime: 7
-  capex_czk: 600000
+  fuel: Electricity
+  lifetime: 10
+  capex_czk: 500000
   capex_sensitivity: 0.05
-  opex_maintenance_czk: 17500
-  opex_repairs_czk: 11429
-  opex_insurance_czk: 10000
+  opex_maintenance_czk: 9000
+  opex_repairs_czk: 5000
+  opex_insurance_czk: 12000
   opex_sensitivity: 0.15
-  emissions_embedded_kg: 3967
-  measure_baseline: Ojeté velké auto na naftu
-  note: Hybrid – 7 l
+  emissions_embedded_kg: 0
+  measure_baseline: Ojeté kompaktní SUV na benzín
   measure_baseline_id: 58
 fuel_emission_factors:
 - fuel: Gas
@@ -1359,8 +1283,10 @@ fuel_emission_factors:
 carbon_cost_scenarios:
 - carbon_price_scenario: 0 € – bez ceny uhlíku
   carbon_price_eur: 0
-- carbon_price_scenario: 50 € – ETS2 nižší
-  carbon_price_eur: 60
+- carbon_price_scenario: 40 € – ETS2 nižší
+  carbon_price_eur: 40
+- carbon_price_scenario: 70 € – ETS2 vyšší
+  carbon_price_eur: 70
 - carbon_price_scenario: 100 € – ETS2 vyšší
   carbon_price_eur: 100
 - carbon_price_scenario: 200 € – skutečná cena uhlíku
