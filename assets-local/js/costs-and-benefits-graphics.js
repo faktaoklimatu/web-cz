@@ -9,10 +9,10 @@
 
   // ── State ─────────────────────────────────────────────────────────────────
   const state = {
-    carbonPrice:           60,
+    carbonPrice:           70,
     discountRate:           3,
     fuelScenario:         'CP',
-    electricityPriceFactor: 1.0,
+    electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
   };
 
   // ── Formatting ────────────────────────────────────────────────────────────
@@ -97,15 +97,13 @@
   const TRANSPORT_MEASURE_MAP = {
     'Elektromobil': {
       'Nové malé':   'Nový malý elektromobil',
-      'Nové velké':  'Nový velký elektromobil',
+      'Nové velké':  'Nové kompaktní SUV elektro',
       'Ojeté malé':  'Ojetý malý elektromobil',
-      'Ojeté velké': 'Ojetý velký elektromobil',
+      'Ojeté velké': 'Ojeté kompaktní SUV elektro',
     },
     'Hybrid': {
       'Nové malé':   'Nový malý hybrid',
-      'Nové velké':  'Nový velký hybrid',
       'Ojeté malé':  'Ojetý malý hybrid',
-      'Ojeté velké': 'Ojetý velký hybrid',
     },
   };
 
@@ -180,7 +178,7 @@
         if (!entry) return null;
         const npvs = STEP_RATES.map(dr => calcNpv(entry, state.carbonPrice, dr));
         if (npvs.every(v => v == null)) return null;
-        return { name, npvs };
+        return { name: actualName, npvs };
       }).filter(Boolean);
 
       if (!rows.length) { container.hidden = true; return; }
@@ -259,7 +257,7 @@
         const npvCurrent = calcNpv(entry, state.carbonPrice, dr);
         if (npvCurrent == null) return null;
 
-        return { name, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
+        return { name: actualName, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
       }).filter(Boolean);
 
       if (!rows.length) { container.hidden = true; return; }
@@ -413,13 +411,13 @@
           if (!entry) return null;
           const npvs = STEP_RATES.map(dr => calcNpv(entry, state.carbonPrice, dr));
           if (npvs.every(v => v == null)) return null;
-          return { name, color: CP_CHART_COLORS[ni], npvs };
+          return { name: actualName, color: CP_CHART_COLORS[ni], npvs };
         } else if (isElTariff) {
           const entry = findEntry(entries, state.carbonPrice, state.discountRate);
           if (!entry) return null;
           const npvs = TARIFF_FACTORS.map(f => calcNpv(entry, state.carbonPrice, state.discountRate, f));
           if (npvs.every(v => v == null)) return null;
-          return { name, color: CP_CHART_COLORS[ni], npvs };
+          return { name: actualName, color: CP_CHART_COLORS[ni], npvs };
         } else {
           const entry = findEntry(entries, 100, state.discountRate);
           if (!entry) return null;
@@ -428,7 +426,7 @@
           const npvAtMax   = calcNpv(entry, 200, dr);
           const npvCurrent = calcNpv(entry, state.carbonPrice, dr);
           if (npvCurrent == null) return null;
-          return { name, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
+          return { name: actualName, color: CP_CHART_COLORS[ni], npvAtMin, npvAtMax, npvCurrent };
         }
       }).filter(Boolean);
 
@@ -874,7 +872,7 @@
   }
 
   function computeQuadrantDomains() {
-    const carbonPrices  = [0, 60, 100, 200];
+    const carbonPrices  = [0, 40, 70, 200];
     const discountRates = [0, 3, 7];
     const scenarios     = ['CP', 'NZ', 'CP_EC'];
 
@@ -1777,20 +1775,20 @@
         ...(data.transport_measures  || []),
       ].filter(m =>
         (m.measure_baseline_id || m.measure_baseline) &&
-        CP_CHART_MEASURES.includes(m.measure_name) &&
-        !exclude.includes(m.measure_name) &&
+        cpIncludesForCat(m.measure_name, category) &&
         (!category || m.building_category === category || m.transport_category === category)
       );
 
       for (const name of CP_CHART_MEASURES) {
         if (exclude.includes(name)) continue;
-        const entries = measures.filter(m => m.measure_name === name);
+        const actualName = cpActualName(name, category);
+        const entries = measures.filter(m => m.measure_name === actualName);
         if (!entries.length) continue;
         const entry = entries.find(m => {
           try {
             const r = CostsBenefits.calculate({
               measureId:             m.id, data,
-              discountRate:          0.03, carbonPriceEur: 60,
+              discountRate:          0.03, carbonPriceEur: 70,
               priceScenario:         state.fuelScenario,
               electricityPriceFactor: state.electricityPriceFactor,
             });
@@ -1961,20 +1959,21 @@
   // Full bar length = total fuel savings value; hatched right portion = CAPEX diff.
   // domMax is shared across all measures so bars are comparable.
   // scenarioDefs: optional array of {color, label} — defaults to SCENARIO_DEFS.
-  function renderNetBar(container, fuelValues, capex, domMax, scenarioDefs) {
+  function renderNetBar(container, fuelValues, capex, domMax, scenarioDefs, priceLabels, fixedW) {
     scenarioDefs = scenarioDefs || SCENARIO_DEFS;
-    const BAR_H  = 8;
-    const GAP    = 3;
+    const BAR_H   = 8;
+    const GAP     = 3;
+    const PRICE_W = 62;  // px reserved on left for per-bar price labels
     const LABEL_W = 44;  // px reserved on right for value labels
-    const PAD    = { l: 4, r: LABEL_W, t: 2, b: 2 };
-    const n      = fuelValues.length;
-    const H      = PAD.t + n * BAR_H + (n - 1) * GAP + PAD.b;
-    const W      = container.clientWidth || 200;
-    const chartW = W - PAD.l - PAD.r;
+    const PAD     = { l: 4, r: LABEL_W, t: 2, b: 2 };
+    const n       = fuelValues.length;
+    const H       = PAD.t + n * BAR_H + (n - 1) * GAP + PAD.b;
+    const W       = fixedW || container.clientWidth || 200;
+    const chartW  = W - PRICE_W - PAD.l - PAD.r;
 
     const domMin = 0;
     if (domMax == null) domMax = Math.max(...fuelValues) * 1.05 || 1;
-    const scale = v => PAD.l + (v - domMin) / (domMax - domMin) * chartW;
+    const scale = v => PRICE_W + PAD.l + (v - domMin) / (domMax - domMin) * chartW;
 
     d3.select(container).selectAll('*').remove();
     const svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
@@ -2022,6 +2021,18 @@
           .attr('x', hatchStart).attr('y', y)
           .attr('width', fuelPx - hatchStart).attr('height', BAR_H)
           .attr('fill', `url(#${patId})`).attr('rx', 2);
+      }
+
+      // Per-bar price label on the left
+      if (priceLabels && priceLabels[i]) {
+        svg.append('text')
+          .attr('x', PRICE_W - 4)
+          .attr('y', y + BAR_H / 2)
+          .attr('text-anchor', 'end')
+          .attr('dominant-baseline', 'middle')
+          .attr('font-size', 9)
+          .attr('fill', '#aaa')
+          .text(priceLabels[i]);
       }
 
       // Value label to the right of the bar
@@ -2129,14 +2140,6 @@
     fill('savings-unit-ev',   (litresPerUnit.ev   / L_PER_BBL).toFixed(1) + ' barelu');
     fill('savings-unit-ev_l', (litresPerUnit.ev_l / L_PER_BBL).toFixed(1) + ' barelu');
 
-    // % of imports
-    const gasPct  = (mwh, n) => (mwh * n / CZ_GAS_MWH * 100).toFixed(1).replace('.', ',') + ' %';
-    const oilPct  = (l,   n) => (l * n / L_PER_BBL / CZ_OIL_BBL * 100).toFixed(1).replace('.', ',') + ' %';
-    fill('savings-imports-hp',   gasPct(gasPerUnit.hp,  DEPLOY.hp));
-    fill('savings-imports-ins',  gasPct(gasPerUnit.ins, DEPLOY.ins));
-    fill('savings-imports-fve',  gasPct(gasPerUnit.fve, DEPLOY.fve));
-    fill('savings-imports-ev',   oilPct(litresPerUnit.ev,   DEPLOY.ev));
-    fill('savings-imports-ev_l', oilPct(litresPerUnit.ev_l, DEPLOY.ev_l));
 
     // Total CAPEX of the measure across all deployed units (= 1 % of imports)
     const fmtMld = v => Math.round(v / 1e9).toFixed(0) + ' mld. Kč';
@@ -2158,14 +2161,10 @@
       { key: 'high', label: 'Energetická krize', color: '#c43535', gas_eur_mwh: 180, oil_usd_bbl: 150 },
     ];
 
-    // Price column labels
-    const gasLabel = `€${IMPORT_SC[0].gas_eur_mwh}–${IMPORT_SC[1].gas_eur_mwh}/MWh`;
-    const oilLabel = `$${IMPORT_SC[0].oil_usd_bbl}–${IMPORT_SC[1].oil_usd_bbl}/barel`;
-    fill('fuel-price-hp',   gasLabel);
-    fill('fuel-price-ins',  gasLabel);
-    fill('fuel-price-fve',  gasLabel);
-    fill('fuel-price-ev',   oilLabel);
-    fill('fuel-price-ev_l', oilLabel);
+    // Per-bar price labels (one per scenario, shown directly on each bar)
+    const gasPriceLabels = IMPORT_SC.map(sc => `€${sc.gas_eur_mwh}/MWh`);
+    const oilPriceLabels = IMPORT_SC.map(sc => `$${sc.oil_usd_bbl}/barel`);
+    const priceLabel = { hp: gasPriceLabels, ins: gasPriceLabels, fve: gasPriceLabels, ev: oilPriceLabels, ev_l: oilPriceLabels };
 
     // ── Fuel import value (CZK) ───────────────────────────────────────────────
     const gasVal = (mwh, n, years, sc) => mwh * n * years * sc.gas_eur_mwh * EUR_CZK;
@@ -2187,10 +2186,25 @@
     const allFuels = ['hp', 'ins', 'fve', 'ev', 'ev_l'].flatMap(k => IMPORT_SC.map(sc => fuelValue[sc.key][k]));
     const domMax   = Math.max(...allFuels) * 1.05;
 
+    // Sort rows largest → smallest by net savings under Energetická krize (high scenario) minus CAPEX diff
+    const avgNet = k => fuelValue['high'][k] - CAPEX[k];
+    const tbody = document.getElementById('import-cost-tbody');
+    if (tbody) {
+      [...tbody.querySelectorAll('tr[data-fuel-key]')]
+        .sort((a, b) => avgNet(b.dataset.fuelKey) - avgNet(a.dataset.fuelKey))
+        .forEach(row => tbody.appendChild(row));
+    }
+
+    // Use the same pixel width for every bar so the scale is truly comparable
+    const barEls = ['hp', 'ins', 'fve', 'ev', 'ev_l']
+      .map(k => document.getElementById('net-benefit-bar-' + k)).filter(Boolean);
+    const widths  = barEls.map(el => el.clientWidth).filter(w => w > 0);
+    const sharedW = widths.length ? Math.min(...widths) : 200;
+
     ['hp', 'ins', 'fve', 'ev', 'ev_l'].forEach(k => {
       const el  = document.getElementById('net-benefit-bar-' + k);
       const vals = IMPORT_SC.map(sc => fuelValue[sc.key][k]);
-      if (el) renderNetBar(el, vals, CAPEX[k], domMax, IMPORT_SC);
+      if (el) renderNetBar(el, vals, CAPEX[k], domMax, IMPORT_SC, priceLabel[k], sharedW);
     });
   }
 
@@ -2666,6 +2680,177 @@
       .text('Kč / t CO₂');
   }
 
+  // ── Fuel scenario price charts ────────────────────────────────────────────────
+  function renderScenarioCharts() {
+    const container   = document.getElementById('scenario-charts');
+    const legendEl    = document.getElementById('scenario-charts-legend');
+    if (!container || !data.fuel_scenarios) return;
+
+    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+
+    const SC_META = {
+      CP:    { label: 'Současné politiky', color: '#2860b4' },
+      NZ:    { label: 'Net-zero',          color: '#1a7a85' },
+      CP_EC: { label: 'Energetická krize', color: '#c43535' },
+    };
+
+    const PARAM_META = [
+      { key: 'gas',                               label: 'Zemní plyn',              unit: 'Kč/MWh' },
+      { key: 'electricity',                        label: 'Elektřina',               unit: 'Kč/MWh' },
+      { key: 'petrol',                             label: 'Benzín',                  unit: 'Kč/l'   },
+      { key: 'diesel',                             label: 'Nafta',                   unit: 'Kč/l'   },
+      { key: 'biomass',                            label: 'Biomasa',                 unit: 'Kč/MWh' },
+      { key: 'lignite',                            label: 'Hnědé uhlí',              unit: 'Kč/MWh' },
+      { key: 'carbon_price_eur_nz',                label: 'Cena uhlíku (NZ)',        unit: '€/t CO₂'},
+      { key: 'electricity_emission_factor_kg_mwh', label: 'Emisní intenzita elektřiny', unit: 'kg CO₂/MWh' },
+    ];
+
+    // Build per-param, per-scenario series
+    const series = {};
+    for (const sc of data.fuel_scenarios) {
+      const key = sc.scenario;
+      for (const yr of sc.prices) {
+        const year = yr.year_calendar;
+        for (const { key: pk } of PARAM_META) {
+          const v = yr[pk];
+          if (v === undefined || v === null) continue;
+          const val = typeof v === 'string' ? parseFloat(v) : +v;
+          if (isNaN(val)) continue;
+          if (!series[pk]) series[pk] = {};
+          if (!series[pk][key]) series[pk][key] = [];
+          series[pk][key].push({ year, value: val });
+        }
+      }
+    }
+
+    // For carbon_price_eur_nz: inject constant 70 € for CP and CP_EC (their assumed carbon price)
+    if (series['carbon_price_eur_nz']) {
+      const nzYears = (series['carbon_price_eur_nz']['NZ'] || []).map(d => d.year);
+      const years   = nzYears.length ? nzYears
+        : (data.fuel_scenarios[0]?.prices || []).map(p => p.year_calendar);
+      for (const sc of ['CP', 'CP_EC']) {
+        series['carbon_price_eur_nz'][sc] = years.map(year => ({ year, value: 70 }));
+      }
+    }
+
+    // Legend
+    if (legendEl) {
+      legendEl.style.cssText = `display:flex; gap:16px; flex-wrap:wrap; font-family:${FONT}; font-size:11px;`;
+      legendEl.innerHTML = Object.entries(SC_META).map(([, m]) =>
+        `<span style="display:flex;align-items:center;gap:5px;">
+           <svg width="24" height="3"><line x1="0" y1="1.5" x2="24" y2="1.5" stroke="${m.color}" stroke-width="2"/></svg>
+           ${m.label}
+         </span>`
+      ).join('');
+    }
+
+    const W  = 210;
+    const H  = 130;
+    const mg = { top: 30, right: 8, bottom: 22, left: 38 };
+    const iW = W - mg.left - mg.right;
+    const iH = H - mg.top  - mg.bottom;
+
+    container.innerHTML = '';
+
+    for (const { key: pk, label, unit } of PARAM_META) {
+      const scSeries = series[pk];
+      if (!scSeries || !Object.keys(scSeries).length) continue;
+
+      const allPts = Object.values(scSeries).flat();
+      const xExt   = d3.extent(allPts, d => d.year);
+      const yMin   = d3.min(allPts, d => d.value);
+      const yMax   = d3.max(allPts, d => d.value);
+      const yPad   = (yMax - yMin) * 0.12 || yMax * 0.08 || 1;
+
+      const xSc = d3.scaleLinear().domain(xExt).range([0, iW]);
+      const ySc = d3.scaleLinear().domain([yMin - yPad, yMax + yPad]).range([iH, 0]);
+
+      const wrap = document.createElement('div');
+      wrap.style.cssText = `width:${W}px; flex-shrink:0;`;
+
+      const svg = d3.select(wrap).append('svg')
+        .attr('width', W).attr('height', H)
+        .style('font-family', FONT).style('overflow', 'visible');
+
+      // Chart title (two lines)
+      svg.append('text')
+        .attr('x', mg.left).attr('y', 12)
+        .attr('font-size', '11px').attr('font-weight', '600').attr('fill', '#333')
+        .text(label);
+      svg.append('text')
+        .attr('x', mg.left).attr('y', 24)
+        .attr('font-size', '9px').attr('fill', '#999')
+        .text(unit);
+
+      const g = svg.append('g').attr('transform', `translate(${mg.left},${mg.top})`);
+
+      // Grid lines
+      g.append('g').attr('class', 'chart-axis')
+        .call(d3.axisLeft(ySc).ticks(4)
+          .tickFormat(v => v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v % 1 === 0 ? v : v.toFixed(2)))
+        .call(ax => ax.select('.domain').remove())
+        .call(ax => ax.selectAll('.tick line')
+          .clone().attr('x2', iW).attr('stroke', '#eee').attr('stroke-dasharray', '3 2'))
+        .selectAll('text').attr('font-size', '8px');
+
+      g.append('g').attr('transform', `translate(0,${iH})`).attr('class', 'chart-axis')
+        .call(d3.axisBottom(xSc).ticks(4).tickFormat(d3.format('d')))
+        .call(ax => ax.select('.domain').remove())
+        .selectAll('text').attr('font-size', '8px');
+
+      // Lines per scenario
+      const line = d3.line().x(d => xSc(d.year)).y(d => ySc(d.value));
+
+      // Draw CP and NZ as full lines
+      for (const scKey of ['CP', 'NZ']) {
+        const pts  = scSeries[scKey];
+        const meta = SC_META[scKey];
+        if (!pts || !meta) continue;
+        g.append('path')
+          .datum(pts.slice().sort((a, b) => a.year - b.year))
+          .attr('d', line)
+          .attr('fill', 'none')
+          .attr('stroke', meta.color)
+          .attr('stroke-width', 1.5)
+          .attr('opacity', 0.85);
+      }
+
+      // Draw CP_EC only where it differs from CP (with bridge points for smooth join)
+      const cpecPts = scSeries['CP_EC'];
+      const cpPts   = scSeries['CP'];
+      if (cpecPts && cpPts) {
+        const cpMap = new Map(cpPts.map(d => [d.year, d.value]));
+        const sorted = cpecPts.slice().sort((a, b) => a.year - b.year);
+        const EPS = 0.5;
+        const segments = [];
+        let seg = null;
+        for (let i = 0; i < sorted.length; i++) {
+          const pt     = sorted[i];
+          const cpVal  = cpMap.get(pt.year);
+          const differs = cpVal === undefined || Math.abs(pt.value - cpVal) > EPS;
+          if (differs) {
+            if (!seg) { seg = []; if (i > 0) seg.push(sorted[i - 1]); }
+            seg.push(pt);
+          } else {
+            if (seg) { seg.push(pt); segments.push(seg); seg = null; }
+          }
+        }
+        if (seg) segments.push(seg);
+        for (const segment of segments) {
+          g.append('path')
+            .datum(segment)
+            .attr('d', line)
+            .attr('fill', 'none')
+            .attr('stroke', SC_META['CP_EC'].color)
+            .attr('stroke-width', 1.5)
+            .attr('opacity', 0.9);
+        }
+      }
+
+      container.appendChild(wrap);
+    }
+  }
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -2738,6 +2923,7 @@
       if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain);
     });
     addDownloadBars();
+    renderScenarioCharts();
     renderImportCostTable();
     renderEffCharts();
     const cbEl = document.getElementById('cost-breakdown-chart');

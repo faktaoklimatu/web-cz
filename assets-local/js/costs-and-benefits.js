@@ -7,7 +7,7 @@
   // ── State ────────────────────────────────────────────────────────────────
   // discountRate stored as integer percentage points (0–7); divided by 100 on use.
   const state = {
-    carbonPrice:           60,
+    carbonPrice:           70,
     discountRate:           3,
     fuelScenario:          'CP',
     electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
@@ -68,7 +68,7 @@
     ].filter(m => m.measure_baseline_id || m.measure_baseline);
 
     const vals = [];
-    const carbonPrices  = [0, 60, 200];
+    const carbonPrices  = [0, 40, 70, 200];
     const discountRates = [0, 0.03, 0.07];
     const scenarios     = ['CP', 'NZ', 'CP_EC'];
 

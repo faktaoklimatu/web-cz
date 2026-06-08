@@ -382,22 +382,22 @@ extra-scripts:
     <div class="control-group">
       <div class="control-head">
         <span class="control-label">Cena uhlíku</span>
-        <span class="control-value" id="carbon-price-value">60&thinsp;€</span>
+        <span class="control-value" id="carbon-price-value">70&thinsp;€</span>
       </div>
       <div class="slider-with-ticks">
-        <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="60">
+        <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="70">
         <div class="tick-labels">
           <span class="tick-label" style="left:8px">
             <span class="tick-mark"></span>
             <span class="tick-text">0 €<small>bez ceny uhlíku</small></span>
           </span>
-          <span class="tick-label" style="left:calc(30% + 3.2px)">
+          <span class="tick-label" style="left:calc(20% + 4.8px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">60 €<small>ETS2 nižší</small></span>
+            <span class="tick-text">40 €<small>ETS2 nižší</small></span>
           </span>
-          <span class="tick-label" style="left:50%">
+          <span class="tick-label" style="left:calc(35% + 2.4px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">100 €<small>ETS2 vyšší</small></span>
+            <span class="tick-text">70 €<small>výchozí</small></span>
           </span>
           <span class="tick-label" style="left:calc(100% - 8px)">
             <span class="tick-mark"></span>
@@ -443,7 +443,7 @@ extra-scripts:
     <div class="static-chart-toggle-wrap">
       <button id="static-chart-toggle" class="static-chart-toggle-btn" aria-expanded="false">
         <span class="static-chart-toggle-icon">▶</span>
-        Porovnání scénářů ceny uhlíku: 60 € vs. 200 €
+        Porovnání scénářů ceny uhlíku: 70 € vs. 200 €
       </button>
       <div id="static-comparison-chart" class="quadrant-chart static-comparison-chart" hidden></div>
     </div>
@@ -590,80 +590,82 @@ extra-scripts:
 
 <div class="section pt-3 pb-4">
   <div class="container">
-    <p class="chart-col-header mb-3">Úspora paliva při plošném nasazení opatření</p>
+    <p class="chart-col-header mb-1">Předpoklady cen energií ve třech scénářích</p>
+    <div id="scenario-charts-legend" style="margin-bottom:0.5rem;"></div>
+    <div id="scenario-charts" style="display:flex; flex-wrap:wrap; gap:12px 20px;"></div>
+  </div>
+</div>
+
+<div class="section pt-3 pb-4">
+  <div class="container">
+    <p class="chart-col-header mb-3">Kolik opatření a za kolik peněz je potřeba nainstalovat, aby došlo k úspoře 1 % ropy nebo zemního plynu?</p>
     <div style="overflow-x:auto;">
     <table class="table table-sm" style="min-width:700px;">
       <thead>
         <tr>
           <th style="min-width:220px;">Opatření</th>
-          <th class="text-end">Z dovozů paliva</th>
-          <th class="text-end">Počet</th>
           <th class="text-end">Úspora / jednotku / rok</th>
+          <th class="text-end">Počet</th>
           <th class="text-end">Celkové náklady opatření</th>
-          <th class="text-end">Rozdíl investičních nákladů</th>
-          <th class="text-end">Cena paliva</th>
+          <th class="text-end">Rozdíl investičních nákladů oproti vysokoemisní alternativě</th>
+          <th>Palivo</th>
           <th>Hodnota ušetřeného paliva (životnost)
             <br><small class="text-muted fw-normal">░ = rozdíl invest. nákladů; <span style="color:#2860b4">■</span> Běžné ceny <span style="color:#c43535">■</span> Energetická krize</small></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
+      <tbody id="import-cost-tbody">
+        <tr data-fuel-key="hp">
           <td>Tepelné čerpadlo <small class="text-muted">(RD plyn–C, 15 let, vs. plynový kotel)</small></td>
-          <td class="text-end" id="savings-imports-hp">…</td>
-          <td class="text-end" id="deploy-hp">…</td>
           <td class="text-end" id="savings-unit-hp">…</td>
+          <td class="text-end" id="deploy-hp">…</td>
           <td class="text-end" id="capex-measure-hp">…</td>
           <td class="text-end" id="capex-diff-hp">…</td>
-          <td class="text-end text-muted text-nowrap" id="fuel-price-hp">…</td>
-          <td id="net-benefit-bar-hp" style="min-width:120px;"></td>
+          <td class="text-muted">Zemní plyn</td>
+          <td id="net-benefit-bar-hp" style="min-width:240px; width:40%;"></td>
         </tr>
-        <tr>
-          <td>Fasáda + renovace <small class="text-muted">(RD plyn–F, 40 let, vs. fasáda)</small></td>
-          <td class="text-end" id="savings-imports-ins">…</td>
-          <td class="text-end" id="deploy-ins">…</td>
+        <tr data-fuel-key="ins">
+          <td>Renovace se zateplením <small class="text-muted">(RD plyn–F, 40 let, vs. renovace bez zateplení)</small></td>
           <td class="text-end" id="savings-unit-ins">…</td>
+          <td class="text-end" id="deploy-ins">…</td>
           <td class="text-end" id="capex-measure-ins">…</td>
           <td class="text-end" id="capex-diff-ins">…</td>
-          <td class="text-end text-muted text-nowrap" id="fuel-price-ins">…</td>
-          <td id="net-benefit-bar-ins" style="min-width:120px;"></td>
+          <td class="text-muted">Zemní plyn</td>
+          <td id="net-benefit-bar-ins" style="min-width:240px; width:40%;"></td>
         </tr>
-        <tr>
-          <td>Střešní FVE <small class="text-muted">(RD plyn–E, 25 let, vs. bez FVE; úspora plynu přes výrobu el. ze sítě)</small></td>
-          <td class="text-end" id="savings-imports-fve">…</td>
-          <td class="text-end" id="deploy-fve">…</td>
+        <tr data-fuel-key="fve">
+          <td>Soláry na střeše + baterie <small class="text-muted">(RD plyn–E, 25 let, vs. Nedělám nic; úspora plynu přes výrobu el. ze sítě)</small></td>
           <td class="text-end" id="savings-unit-fve">…</td>
+          <td class="text-end" id="deploy-fve">…</td>
           <td class="text-end" id="capex-measure-fve">…</td>
           <td class="text-end" id="capex-diff-fve">…</td>
-          <td class="text-end text-muted text-nowrap" id="fuel-price-fve">…</td>
-          <td id="net-benefit-bar-fve" style="min-width:120px;"></td>
+          <td class="text-muted">Zemní plyn</td>
+          <td id="net-benefit-bar-fve" style="min-width:240px; width:40%;"></td>
         </tr>
-        <tr>
+        <tr data-fuel-key="ev">
           <td>Malý elektromobil <small class="text-muted">(Nové malé, 15 let, vs. benzínové auto)</small></td>
-          <td class="text-end" id="savings-imports-ev">…</td>
-          <td class="text-end" id="deploy-ev">…</td>
           <td class="text-end" id="savings-unit-ev">…</td>
+          <td class="text-end" id="deploy-ev">…</td>
           <td class="text-end" id="capex-measure-ev">…</td>
           <td class="text-end" id="capex-diff-ev">…</td>
-          <td class="text-end text-muted text-nowrap" id="fuel-price-ev">…</td>
-          <td id="net-benefit-bar-ev" style="min-width:120px;"></td>
+          <td class="text-muted">Ropa</td>
+          <td id="net-benefit-bar-ev" style="min-width:240px; width:40%;"></td>
         </tr>
-        <tr>
+        <tr data-fuel-key="ev_l">
           <td>Velký elektromobil <small class="text-muted">(Nové velké, 15 let, vs. naftové auto)</small></td>
-          <td class="text-end" id="savings-imports-ev_l">…</td>
-          <td class="text-end" id="deploy-ev_l">…</td>
           <td class="text-end" id="savings-unit-ev_l">…</td>
+          <td class="text-end" id="deploy-ev_l">…</td>
           <td class="text-end" id="capex-measure-ev_l">…</td>
           <td class="text-end" id="capex-diff-ev_l">…</td>
-          <td class="text-end text-muted text-nowrap" id="fuel-price-ev_l">…</td>
-          <td id="net-benefit-bar-ev_l" style="min-width:120px;"></td>
+          <td class="text-muted">Ropa</td>
+          <td id="net-benefit-bar-ev_l" style="min-width:240px; width:40%;"></td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="8" class="text-muted" style="font-size:0.8em;">
+          <td colspan="7" class="text-muted" style="font-size:0.8em;">
             Tepelné čerpadlo (RD plyn–C): baseline Plynový kotel 14 MWh/rok → opatření přechází na elektřinu (0 MWh plynu).
-            Fasáda + renovace (RD plyn–F): baseline Fasáda 29 MWh/rok → opatření 13 MWh/rok plynu.
-            Střešní FVE: baseline Nedělám nic 4 MWh/rok el. ze sítě → opatření 1 MWh/rok; úspora 3 MWh/rok el. × 20 % (podíl plynu v české výrobě elektřiny, výhledová hodnota) / 55 % (účinnost CCGT) ≈ 1,1 MWh/rok plynu.
+            Renovace se zateplením (RD plyn–F): baseline Renovace bez zateplení 29 MWh/rok → opatření 13 MWh/rok plynu.
+            Soláry na střeše + baterie (RD plyn–E): baseline Nedělám nic 4 MWh/rok el. ze sítě → opatření 1 MWh/rok; úspora 3 MWh/rok el. × 20 % (podíl plynu v české výrobě elektřiny, výhledová hodnota) / 55 % (účinnost CCGT) ≈ 1,1 MWh/rok plynu.
             Malý elektromobil: baseline Nové malé auto na benzín, 6,5 l/100 km × 15 000 km/rok = 975 l/rok → elektromobil nespotřebuje benzín.
             Velký elektromobil: baseline Nové velké auto na naftu, 7,2 l/100 km × 15 000 km/rok = 1 080 l/rok nafty; 1 080 / 158,987 ≈ 6,8 barelu/rok.
             Počet nasazených jednotek je u každého opatření zvolen tak, aby celková úspora odpovídala přibližně 1 % českých dovozů příslušného paliva. Základna: 60 TWh/rok dovozu zemního plynu (5 442 039 939 kg při výhřevnosti ~11 kWh/kg); 50,4 mil. barelů/rok dovozu ropy (6 856 765 464 kg při ~136 kg/barel).
@@ -700,7 +702,7 @@ extra-scripts:
     <p class="chart-col-header mb-2">Sensitivita NPV — všechny kombinace parametrů</p>
     <p class="text-muted" style="font-size:12px;margin-bottom:12px;">
       Každá tečka = jedna kombinace (scénář cen × cena uhlíku × diskontní míra) pro daný kontext.
-      Zvýrazněné tečky = výchozí kombinace (Současné politiky · 60 € · 3 %).
+      Zvýrazněné tečky = výchozí kombinace (Současné politiky · 70 € · 3 %).
     </p>
     <div id="sensitivity-beeswarm-wrap">
       <div id="sensitivity-beeswarm-chart"></div>
@@ -1019,7 +1021,7 @@ window.addEventListener('load', function () {
 
   /* dot size legend */
   [['none',    '0 € / 200 €'],
-   ['#444444', '60 € CO₂']
+   ['#444444', '70 € CO₂']
   ].forEach(function (cfg, i) {
     var cy = 80 + i * 36;
     leg.append('circle').attr('cx', R_CUR).attr('cy', cy)
@@ -1210,7 +1212,7 @@ window.addEventListener('load', function () {
     .attr('font-size', 18).attr('font-family', FONT).attr('fill', '#aaaaaa').text('NPV (Kč)');
 
   [['none',    '0 € / 200 €'],
-   ['#444444', '60 € CO₂']
+   ['#444444', '70 € CO₂']
   ].forEach(function (cfg, i) {
     var cy = 80 + i * 36;
     leg.append('circle').attr('cx', R_CUR).attr('cy', cy)
