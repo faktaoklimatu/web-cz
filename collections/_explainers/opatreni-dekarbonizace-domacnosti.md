@@ -869,8 +869,8 @@ window.addEventListener('load', function () {
 
   /* ── Data helpers ── */
   var MEASURES = ['Tepelné čerpadlo','Zateplení + fasáda','Výměna oken a dveří',
-                  'Elektrický kotel','Kotel na biomasu','Soláry na střeše + baterie',
-                  'Fasáda + renovace'];
+                  'Elektrický kotel','Kotel na biomasu','Střešní fotovoltaika + baterie',
+                  'Renovace se zateplením'];
 
   function calcNpv(entry, cp, dr) {
     try {

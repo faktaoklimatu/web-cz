@@ -80,8 +80,8 @@
     'Výměna oken a dveří',
     'Elektrický kotel',
     'Kotel na biomasu',
-    'Soláry na střeše + baterie',
-    'Fasáda + renovace',
+    'Střešní fotovoltaika + baterie',
+    'Renovace se zateplením',
     'Elektromobil',
     'Hybrid',
   ];
@@ -3294,7 +3294,11 @@
 
       // Value label at bar tip
       if (!isNull) {
-        const lbl  = fmtEffBarLabel(val, valueKey, usePct);
+        let lbl = fmtEffBarLabel(val, valueKey, usePct);
+        if (!usePct && !effState.yearlyMode && (valueKey === 'co2PerBilCZK' || valueKey === 'fossilTwhPerScale') && (row.lifetime || 1) > 1) {
+          const annualVal = val / row.lifetime;
+          lbl += ' (' + fmtEffBarLabel(annualVal, valueKey, false) + '/rok)';
+        }
         chart.append('text')
           .attr('x', val >= 0 ? bX + bW + 3 : bX - 3)
           .attr('y', bY + BAR_H / 2 + 4)
