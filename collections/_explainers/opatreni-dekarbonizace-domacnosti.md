@@ -707,6 +707,7 @@ extra-scripts:
     <div id="sensitivity-beeswarm-wrap">
       <div id="sensitivity-beeswarm-chart"></div>
       <div id="sensitivity-beeswarm-legend" class="sb-legend"></div>
+      <p id="sensitivity-beeswarm-note" class="eff-note" style="display:none"></p>
     </div>
   </div>
 </div>

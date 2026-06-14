@@ -721,7 +721,10 @@
         for (const priceCase of SB_PRICE_CASES.filter(p => sbEnabledPriceCases.has(p.key))) {
           const { fossilMult, cleanMult } = priceCase;
           for (const sc of SB_SCENARIOS.filter(s => sbEnabledScenarios.has(s))) {
-            const cps = sc === 'NZ'
+            // FVE + baterie: electricity savings are unaffected by carbon price (ETS2 covers
+            // only fossil-fuel sectors, not electricity tariffs in this model) → fix cp to default.
+            const cpFixed = sbSelectedMeasure === 'Střešní fotovoltaika + baterie';
+            const cps = (sc === 'NZ' || cpFixed)
               ? [SB_DEFAULT.cp]
               : SB_CARBON_PRICES.filter(p => sbEnabledCarbonPrices.has(p));
             for (const cp of cps) {
@@ -880,7 +883,7 @@
         return t;
       };
       hdrLines(4,                     ['KONTEXT'],                    'start');
-      hdrLines(M.left + chartW / 2,   ['NÁVRATNOST']);
+      hdrLines(M.left + chartW / 2,   ['VÝHODNOST']);
       hdrLines(xRightCols + 15,       ['OPATŘENÍ'],                   'start');
       hdrLines(xStatCO2,              ['ÚSPORA', 'EMISÍ']);
       hdrLines(xStatPlyn,             ['ÚSPORA', 'IMPORTU', 'ROPY A PLYNU']);
@@ -1254,6 +1257,18 @@
     }
 
     fokDownloadBar(container, 'sensitivity-beeswarm');
+
+    // Measure-specific footnote
+    const noteEl = document.getElementById('sensitivity-beeswarm-note');
+    if (noteEl) {
+      if (sbSelectedMeasure === 'Střešní fotovoltaika + baterie') {
+        noteEl.textContent = 'Poznámka: Cena uhlíku (ETS2) se vztahuje pouze na fosilní sektory, nikoli na ceny elektřiny — pro FVE + baterie proto není zdrojem nejistoty a je fixována na výchozí hodnotě ' + SB_DEFAULT.cp + ' €/t CO₂.';
+        noteEl.style.display = '';
+      } else {
+        noteEl.textContent = '';
+        noteEl.style.display = 'none';
+      }
+    }
 
     // Context legend: always shown except when grouping BY context (labels are in the chart then)
     const legendEl = document.getElementById('sensitivity-beeswarm-legend');

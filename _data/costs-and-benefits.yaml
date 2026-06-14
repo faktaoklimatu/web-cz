@@ -8,7 +8,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 15.0
   efficiency: 0.85
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 29
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -28,7 +28,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 35
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -48,7 +48,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 29
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -68,7 +68,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 24
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -80,26 +80,6 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
 - id: 5
-  building_category: Rodinný dům uhlí – E
-  measure_name: Nedělám nic
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Lignite
-  capacity_kw: 0.0
-  efficiency: 0.85
-  lifetime: 40
-  demand_heat_measure_mwh: 29
-  demand_electricity_measure_mwh: 4
-  energy_savings: 0.0
-  electricity_savings: 0.0
-  capex_technology_czk: 0
-  capex_installation_czk: 0
-  capex_preparation_czk: 0
-  capex_sensitivity: 0.0
-  opex_maintenance_czk: 0
-  emissions_embedded_kg: 0
-- id: 6
   building_category: Rodinný dům uhlí – C
   measure_name: Uhelný kotel
   dwellings: 1
@@ -108,7 +88,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 10.0
   efficiency: 0.85
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 18
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -119,7 +99,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
-- id: 7
+- id: 6
   building_category: Rodinný dům uhlí – C
   measure_name: Renovace bez zateplení
   dwellings: 1
@@ -128,7 +108,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 18
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -139,27 +119,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 8
-  building_category: Rodinný dům uhlí – C
-  measure_name: Nedělám nic
-  dwellings: 1
-  demand_heat_building_mwh: 15
-  demand_electricity_mwh: 4
-  fuel: Lignite
-  capacity_kw: 0.0
-  efficiency: 0.85
-  lifetime: 40
-  demand_heat_measure_mwh: 18
-  demand_electricity_measure_mwh: 4
-  energy_savings: 0.0
-  electricity_savings: 0.0
-  capex_technology_czk: 0
-  capex_installation_czk: 0
-  capex_preparation_czk: 0
-  capex_sensitivity: 0.0
-  opex_maintenance_czk: 0
-  emissions_embedded_kg: 0
-- id: 9
+- id: 7
   building_category: Rodinný dům plyn – E
   measure_name: Plynový kotel
   dwellings: 1
@@ -168,7 +128,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 15.0
   efficiency: 1.05
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 24
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -179,7 +139,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 10
+- id: 8
   building_category: Rodinný dům plyn – F
   measure_name: Renovace bez zateplení
   dwellings: 1
@@ -188,7 +148,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 29
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -199,7 +159,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 11
+- id: 9
   building_category: Rodinný dům plyn – E
   measure_name: Renovace bez zateplení
   dwellings: 1
@@ -208,7 +168,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 24
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -219,7 +179,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 12
+- id: 10
   building_category: Rodinný dům plyn – D
   measure_name: Renovace bez zateplení
   dwellings: 1
@@ -228,7 +188,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 19
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -239,27 +199,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 13
-  building_category: Rodinný dům plyn – E
-  measure_name: Nedělám nic
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 1.05
-  lifetime: 40
-  demand_heat_measure_mwh: 24
-  demand_electricity_measure_mwh: 4
-  energy_savings: 0.0
-  electricity_savings: 0.0
-  capex_technology_czk: 0
-  capex_installation_czk: 0
-  capex_preparation_czk: 0
-  capex_sensitivity: 0.0
-  opex_maintenance_czk: 0
-  emissions_embedded_kg: 0
-- id: 14
+- id: 11
   building_category: Rodinný dům plyn – C
   measure_name: Plynový kotel
   dwellings: 1
@@ -268,7 +208,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 10.0
   efficiency: 1.05
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -279,7 +219,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 15
+- id: 12
   building_category: Rodinný dům plyn – C
   measure_name: Renovace bez zateplení
   dwellings: 1
@@ -288,7 +228,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -299,7 +239,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 16
+- id: 13
   building_category: Rodinný dům plyn – C
   measure_name: Nedělám nic
   dwellings: 1
@@ -308,7 +248,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -319,18 +259,18 @@ buildings_measures:
   capex_sensitivity: 0.0
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 17
+- id: 14
   building_category: Rodinný dům plyn – A
   measure_name: Plynový kotel
   dwellings: 1
   demand_heat_building_mwh: 2
-  demand_electricity_mwh: 4
+  demand_electricity_mwh: 7
   fuel: Gas
   capacity_kw: 8.0
   efficiency: 1.05
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 2
-  demand_electricity_measure_mwh: 4
+  demand_electricity_measure_mwh: 7
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 68000
@@ -339,7 +279,27 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 18
+- id: 15
+  building_category: Rodinný dům plyn – A
+  measure_name: Nedělám nic
+  dwellings: 1
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 7
+  fuel: Gas
+  capacity_kw: 0.0
+  efficiency: 1.05
+  lifetime: 0.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 7
+  energy_savings: 0.0
+  electricity_savings: 0.0
+  capex_technology_czk: 0
+  capex_installation_czk: 0
+  capex_preparation_czk: 0
+  capex_sensitivity: 0.0
+  opex_maintenance_czk: 0
+  emissions_embedded_kg: 0
+- id: 16
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Plynový kotel
   dwellings: 8
@@ -348,7 +308,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -359,7 +319,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 19
+- id: 17
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Renovace bez zateplení
   dwellings: 8
@@ -368,7 +328,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -379,27 +339,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 20
-  building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
-  measure_name: Nedělám nic
-  dwellings: 8
-  demand_heat_building_mwh: 12
-  demand_electricity_mwh: 2
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 1.05
-  lifetime: 40
-  demand_heat_measure_mwh: 11
-  demand_electricity_measure_mwh: 2
-  energy_savings: 0.0
-  electricity_savings: 0.0
-  capex_technology_czk: 0
-  capex_installation_czk: 0
-  capex_preparation_czk: 0
-  capex_sensitivity: 0.0
-  opex_maintenance_czk: 0
-  emissions_embedded_kg: 0
-- id: 21
+- id: 18
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynový kotel
   dwellings: 15
@@ -408,7 +348,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -419,7 +359,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 2500
   emissions_embedded_kg: 0
-- id: 22
+- id: 19
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Plynová kotelna
   dwellings: 15
@@ -428,7 +368,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -439,7 +379,7 @@ buildings_measures:
   capex_sensitivity: 0.1
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
-- id: 23
+- id: 20
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Renovace bez zateplení
   dwellings: 15
@@ -448,7 +388,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -459,27 +399,7 @@ buildings_measures:
   capex_sensitivity: 0.2
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
-- id: 24
-  building_category: Byt v panelovém domě s plynovou kotelnou
-  measure_name: Nedělám nic
-  dwellings: 15
-  demand_heat_building_mwh: 8
-  demand_electricity_mwh: 2
-  fuel: Gas
-  capacity_kw: 0.0
-  efficiency: 0.95
-  lifetime: 40
-  demand_heat_measure_mwh: 8
-  demand_electricity_measure_mwh: 2
-  energy_savings: 0.0
-  electricity_savings: 0.0
-  capex_technology_czk: 0
-  capex_installation_czk: 0
-  capex_preparation_czk: 0
-  capex_sensitivity: 0.0
-  opex_maintenance_czk: 0
-  emissions_embedded_kg: 0
-- id: 25
+- id: 21
   building_category: Rodinný dům uhlí – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -488,7 +408,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 2.8
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 9
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -501,7 +421,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 26
+- id: 22
   building_category: Rodinný dům uhlí – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -510,7 +430,7 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 15.0
   efficiency: 0.9
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 28
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -523,29 +443,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 27
-  building_category: Rodinný dům uhlí – E
-  measure_name: Střešní fotovoltaika + baterie
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Lignite
-  capacity_kw: 5.0
-  efficiency: 0.85
-  lifetime: 25
-  demand_heat_measure_mwh: 29
-  demand_electricity_measure_mwh: 1
-  energy_savings: 0.0
-  electricity_savings: 0.75
-  capex_technology_czk: 220000
-  capex_installation_czk: 80000
-  capex_preparation_czk: 50000
-  capex_sensitivity: 0.1
-  opex_maintenance_czk: 3000
-  emissions_embedded_kg: 0
-  measure_baseline: Nedělám nic
-  measure_baseline_id: 5
-- id: 28
+- id: 23
   building_category: Rodinný dům uhlí – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -554,7 +452,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 15.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 25
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -567,7 +465,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
   measure_baseline_id: 1
-- id: 29
+- id: 24
   building_category: Rodinný dům uhlí – F
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -576,7 +474,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 16
   demand_electricity_measure_mwh: 4
   energy_savings: 0.55
@@ -589,7 +487,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
   measure_baseline_id: 2
-- id: 30
+- id: 25
   building_category: Rodinný dům uhlí – E
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -598,7 +496,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 15
   demand_electricity_measure_mwh: 4
   energy_savings: 0.5
@@ -611,7 +509,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
   measure_baseline_id: 3
-- id: 31
+- id: 26
   building_category: Rodinný dům uhlí – D
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -620,7 +518,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 13
   demand_electricity_measure_mwh: 4
   energy_savings: 0.44
@@ -633,7 +531,7 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
   measure_baseline_id: 4
-- id: 32
+- id: 27
   building_category: Rodinný dům uhlí – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -642,7 +540,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 8.0
   efficiency: 3.5
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 4
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -654,8 +552,8 @@ buildings_measures:
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 6
-- id: 33
+  measure_baseline_id: 5
+- id: 28
   building_category: Rodinný dům uhlí – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -664,7 +562,7 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 10.0
   efficiency: 0.9
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 17
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -676,30 +574,8 @@ buildings_measures:
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 6
-- id: 34
-  building_category: Rodinný dům uhlí – C
-  measure_name: Střešní fotovoltaika + baterie
-  dwellings: 1
-  demand_heat_building_mwh: 15
-  demand_electricity_mwh: 4
-  fuel: Lignite
-  capacity_kw: 5.0
-  efficiency: 0.85
-  lifetime: 25
-  demand_heat_measure_mwh: 18
-  demand_electricity_measure_mwh: 1
-  energy_savings: 0.0
-  electricity_savings: 0.75
-  capex_technology_czk: 220000
-  capex_installation_czk: 80000
-  capex_preparation_czk: 50000
-  capex_sensitivity: 0.1
-  opex_maintenance_czk: 3000
-  emissions_embedded_kg: 0
-  measure_baseline: Nedělám nic
-  measure_baseline_id: 8
-- id: 35
+  measure_baseline_id: 5
+- id: 29
   building_category: Rodinný dům uhlí – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -708,7 +584,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 15
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -720,8 +596,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Uhelný kotel
-  measure_baseline_id: 6
-- id: 36
+  measure_baseline_id: 5
+- id: 30
   building_category: Rodinný dům uhlí – C
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -730,7 +606,7 @@ buildings_measures:
   fuel: Lignite
   capacity_kw: 0.0
   efficiency: 0.85
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 4
   energy_savings: 0.23
@@ -742,8 +618,8 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 7
-- id: 37
+  measure_baseline_id: 6
+- id: 31
   building_category: Rodinný dům plyn – E
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -752,7 +628,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 2.8
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 9
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -764,8 +640,8 @@ buildings_measures:
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 9
-- id: 38
+  measure_baseline_id: 7
+- id: 32
   building_category: Rodinný dům plyn – E
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -774,7 +650,7 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 15.0
   efficiency: 0.9
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 28
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -786,30 +662,8 @@ buildings_measures:
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 9
-- id: 39
-  building_category: Rodinný dům plyn – E
-  measure_name: Střešní fotovoltaika + baterie
-  dwellings: 1
-  demand_heat_building_mwh: 25
-  demand_electricity_mwh: 4
-  fuel: Gas
-  capacity_kw: 5.0
-  efficiency: 1.05
-  lifetime: 25
-  demand_heat_measure_mwh: 24
-  demand_electricity_measure_mwh: 1
-  energy_savings: 0.0
-  electricity_savings: 0.75
-  capex_technology_czk: 220000
-  capex_installation_czk: 80000
-  capex_preparation_czk: 50000
-  capex_sensitivity: 0.1
-  opex_maintenance_czk: 3000
-  emissions_embedded_kg: 0
-  measure_baseline: Nedělám nic
-  measure_baseline_id: 13
-- id: 40
+  measure_baseline_id: 7
+- id: 33
   building_category: Rodinný dům plyn – E
   measure_name: Elektrický kotel
   dwellings: 1
@@ -818,7 +672,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 15.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 25
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -830,8 +684,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 9
-- id: 41
+  measure_baseline_id: 7
+- id: 34
   building_category: Rodinný dům plyn – F
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -840,7 +694,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 13
   demand_electricity_measure_mwh: 4
   energy_savings: 0.55
@@ -852,8 +706,8 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 10
-- id: 42
+  measure_baseline_id: 8
+- id: 35
   building_category: Rodinný dům plyn – E
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -862,7 +716,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 12
   demand_electricity_measure_mwh: 4
   energy_savings: 0.5
@@ -874,8 +728,8 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 11
-- id: 43
+  measure_baseline_id: 9
+- id: 36
   building_category: Rodinný dům plyn – D
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -884,7 +738,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 4
   energy_savings: 0.44
@@ -896,8 +750,8 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 12
-- id: 44
+  measure_baseline_id: 10
+- id: 37
   building_category: Rodinný dům plyn – C
   measure_name: Tepelné čerpadlo
   dwellings: 1
@@ -906,7 +760,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 8.0
   efficiency: 3.5
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 4
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -918,8 +772,8 @@ buildings_measures:
   opex_maintenance_czk: 5000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 14
-- id: 45
+  measure_baseline_id: 11
+- id: 38
   building_category: Rodinný dům plyn – C
   measure_name: Kotel na biomasu
   dwellings: 1
@@ -928,7 +782,7 @@ buildings_measures:
   fuel: Biomass
   capacity_kw: 10.0
   efficiency: 0.9
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 17
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -940,30 +794,52 @@ buildings_measures:
   opex_maintenance_czk: 3500
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 14
-- id: 46
+  measure_baseline_id: 11
+- id: 39
   building_category: Rodinný dům plyn – C
   measure_name: Střešní fotovoltaika + baterie
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
   fuel: Gas
-  capacity_kw: 5.0
+  capacity_kw: 4.0
   efficiency: 1.05
-  lifetime: 25
+  lifetime: 25.0
   demand_heat_measure_mwh: 14
   demand_electricity_measure_mwh: 1
   energy_savings: 0.0
   electricity_savings: 0.75
-  capex_technology_czk: 220000
+  capex_technology_czk: 170000
   capex_installation_czk: 80000
   capex_preparation_czk: 50000
   capex_sensitivity: 0.1
   opex_maintenance_czk: 3000
   emissions_embedded_kg: 0
   measure_baseline: Nedělám nic
-  measure_baseline_id: 16
-- id: 47
+  measure_baseline_id: 13
+- id: 40
+  building_category: Rodinný dům plyn – A
+  measure_name: Střešní fotovoltaika + baterie
+  dwellings: 1
+  demand_heat_building_mwh: 2
+  demand_electricity_mwh: 7
+  fuel: Gas
+  capacity_kw: 6.0
+  efficiency: 1.05
+  lifetime: 25.0
+  demand_heat_measure_mwh: 2
+  demand_electricity_measure_mwh: 2
+  energy_savings: 0.0
+  electricity_savings: 0.75
+  capex_technology_czk: 230000
+  capex_installation_czk: 80000
+  capex_preparation_czk: 50000
+  capex_sensitivity: 0.1
+  opex_maintenance_czk: 3000
+  emissions_embedded_kg: 0
+  measure_baseline: Nedělám nic
+  measure_baseline_id: 15
+- id: 41
   building_category: Rodinný dům plyn – C
   measure_name: Elektrický kotel
   dwellings: 1
@@ -972,7 +848,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 10.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 15
   demand_electricity_measure_mwh: 4
   energy_savings: 0.0
@@ -984,8 +860,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 14
-- id: 48
+  measure_baseline_id: 11
+- id: 42
   building_category: Rodinný dům plyn – C
   measure_name: Renovace se zateplením
   dwellings: 1
@@ -994,7 +870,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 11
   demand_electricity_measure_mwh: 4
   energy_savings: 0.23
@@ -1006,19 +882,19 @@ buildings_measures:
   opex_maintenance_czk: 0
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
-  measure_baseline_id: 15
-- id: 49
+  measure_baseline_id: 12
+- id: 43
   building_category: Rodinný dům plyn – A
   measure_name: Elektrický kotel
   dwellings: 1
   demand_heat_building_mwh: 2
-  demand_electricity_mwh: 4
+  demand_electricity_mwh: 7
   fuel: Electricity
   capacity_kw: 6.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 2
-  demand_electricity_measure_mwh: 4
+  demand_electricity_measure_mwh: 7
   energy_savings: 0.0
   electricity_savings: 0.0
   capex_technology_czk: 34000
@@ -1028,8 +904,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 17
-- id: 50
+  measure_baseline_id: 14
+- id: 44
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Elektrický kotel
   dwellings: 8
@@ -1038,7 +914,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 12
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -1050,8 +926,8 @@ buildings_measures:
   opex_maintenance_czk: 1000
   emissions_embedded_kg: 0
   measure_baseline: Plynový kotel
-  measure_baseline_id: 18
-- id: 51
+  measure_baseline_id: 16
+- id: 45
   building_category: Byt ve starší zástavbě s vlastním plynovým kotlem
   measure_name: Renovace se zateplením
   dwellings: 8
@@ -1060,7 +936,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 1.05
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.26
@@ -1073,8 +949,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
   note: rozpočítané na jeden byt (v rámci menšího domu s 8 byty)
-  measure_baseline_id: 19
-- id: 52
+  measure_baseline_id: 17
+- id: 46
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Elektrický kotel
   dwellings: 15
@@ -1083,7 +959,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 0.99
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 8
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -1096,8 +972,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společný kotel rozpočítaný na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 22
-- id: 53
+  measure_baseline_id: 19
+- id: 47
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Tepelné čerpadlo
   dwellings: 15
@@ -1106,7 +982,7 @@ buildings_measures:
   fuel: Electricity
   capacity_kw: 0.0
   efficiency: 3.2
-  lifetime: 15
+  lifetime: 15.0
   demand_heat_measure_mwh: 3
   demand_electricity_measure_mwh: 2
   energy_savings: 0.0
@@ -1119,8 +995,8 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Plynová kotelna
   note: společné čerpadlo rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 22
-- id: 54
+  measure_baseline_id: 19
+- id: 48
   building_category: Byt v panelovém domě s plynovou kotelnou
   measure_name: Renovace se zateplením
   dwellings: 15
@@ -1129,7 +1005,7 @@ buildings_measures:
   fuel: Gas
   capacity_kw: 0.0
   efficiency: 0.95
-  lifetime: 40
+  lifetime: 40.0
   demand_heat_measure_mwh: 6
   demand_electricity_measure_mwh: 2
   energy_savings: 0.25
@@ -1142,9 +1018,9 @@ buildings_measures:
   emissions_embedded_kg: 0
   measure_baseline: Renovace bez zateplení
   note: rozpočítané na jeden byt (v rámci menšího domu s 15 byty)
-  measure_baseline_id: 23
+  measure_baseline_id: 20
 transport_measures:
-- id: 55
+- id: 49
   transport_category: Nové malé
   measure_name: Nové malé auto na benzín
   demand_energy_per_100km: 6.0
@@ -1158,7 +1034,7 @@ transport_measures:
   opex_insurance_czk: 12000
   opex_sensitivity: 0.1
   emissions_embedded_kg: 0
-- id: 56
+- id: 50
   transport_category: Nové velké
   measure_name: Nové kompaktní SUV na naftu
   demand_energy_per_100km: 6.5
@@ -1172,7 +1048,7 @@ transport_measures:
   opex_insurance_czk: 17000
   opex_sensitivity: 0.1
   emissions_embedded_kg: 0
-- id: 57
+- id: 51
   transport_category: Ojeté malé
   measure_name: Ojeté malé auto na benzín
   demand_energy_per_100km: 6.0
@@ -1186,7 +1062,7 @@ transport_measures:
   opex_insurance_czk: 9000
   opex_sensitivity: 0.15
   emissions_embedded_kg: 0
-- id: 58
+- id: 52
   transport_category: Ojeté velké
   measure_name: Ojeté kompaktní SUV na benzín
   demand_energy_per_100km: 7.0
@@ -1200,7 +1076,7 @@ transport_measures:
   opex_insurance_czk: 10000
   opex_sensitivity: 0.15
   emissions_embedded_kg: 0
-- id: 59
+- id: 53
   transport_category: Nové malé
   measure_name: Nový malý elektromobil
   demand_energy_per_100km: 0.018
@@ -1215,8 +1091,8 @@ transport_measures:
   opex_sensitivity: 0.1
   emissions_embedded_kg: 0
   measure_baseline: Nové malé auto na benzín
-  measure_baseline_id: 55
-- id: 60
+  measure_baseline_id: 49
+- id: 54
   transport_category: Nové velké
   measure_name: Nové kompaktní SUV elektro
   demand_energy_per_100km: 0.02
@@ -1231,8 +1107,8 @@ transport_measures:
   opex_sensitivity: 0.1
   emissions_embedded_kg: 0
   measure_baseline: Nové kompaktní SUV na naftu
-  measure_baseline_id: 56
-- id: 61
+  measure_baseline_id: 50
+- id: 55
   transport_category: Ojeté malé
   measure_name: Ojetý malý elektromobil
   demand_energy_per_100km: 0.02
@@ -1247,8 +1123,8 @@ transport_measures:
   opex_sensitivity: 0.15
   emissions_embedded_kg: 0
   measure_baseline: Ojeté malé auto na benzín
-  measure_baseline_id: 57
-- id: 62
+  measure_baseline_id: 51
+- id: 56
   transport_category: Ojeté velké
   measure_name: Ojeté kompaktní SUV elektro
   demand_energy_per_100km: 0.018
@@ -1263,7 +1139,7 @@ transport_measures:
   opex_sensitivity: 0.15
   emissions_embedded_kg: 0
   measure_baseline: Ojeté kompaktní SUV na benzín
-  measure_baseline_id: 58
+  measure_baseline_id: 52
 fuel_emission_factors:
 - fuel: Gas
   unit: MWh
