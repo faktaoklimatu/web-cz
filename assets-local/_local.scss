@@ -730,3 +730,39 @@ $c-callout-text: #373633;
         color: colors.$c-grey;
     }
 }
+
+ul.plus-list {
+    list-style-type: "+\0020\0020";
+    li { margin-block: 0.4rem; }
+}
+
+ul.minus-list {
+    list-style-type: "−\0020\0020";
+    li { margin-block: 0.4rem; }
+}
+
+ol.circled-list {
+    counter-reset: itemcounter;
+    padding: 0 !important;
+
+    li {
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-block: 2rem;
+    }
+
+    li::before {
+        display: block;
+        content: counter(itemcounter);
+        counter-increment: itemcounter;
+        margin-block: 1rem;
+        border: 2px solid colors.$c-secondary;
+        border-radius: 50%;
+        color: colors.$c-secondary;
+        width: 1.7em;
+        height: 1.7em;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
