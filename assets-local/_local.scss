@@ -732,13 +732,39 @@ $c-callout-text: #373633;
 }
 
 ul.plus-list {
-    list-style-type: "+\0020\0020";
-    li { margin-block: 0.4rem; }
+    list-style-type: "\f055\0020\0020";
+    
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
 }
 
 ul.minus-list {
-    list-style-type: "−\0020\0020";
-    li { margin-block: 0.4rem; }
+    list-style-type: "\f056\0020\0020";
+    
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
+}
+
+ul.warning-list {
+    list-style-type: "\f06a\0020\0020";
+    
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
 }
 
 ol.circled-list {
