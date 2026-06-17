@@ -129,6 +129,16 @@ const CostsBenefits = (() => {
     return measure.demand_heat_measure_mwh;
   }
 
+  // Precise electricity demand (MWh) computed from source parameters rather than the
+  // rounded integer stored in demand_electricity_measure_mwh (e.g. 7 × 0.25 = 1.75
+  // rounds to 2 in the YAML but the Excel reference model uses the exact fraction).
+  function computeElectricityDemand(measure) {
+    if (measure.demand_electricity_mwh != null && measure.electricity_savings != null) {
+      return measure.demand_electricity_mwh * (1 - measure.electricity_savings);
+    }
+    return measure.demand_electricity_measure_mwh || 0;
+  }
+
   // Total CAPEX for a measure (buildings split into three parts; transport has capex_czk)
   function getCapex(measure) {
     return (measure.capex_technology_czk  || 0)
@@ -153,7 +163,7 @@ const CostsBenefits = (() => {
     const efEl       = yearPrices.electricity_emission_factor_kg_mwh;
 
     const energyCost  = heatDemand                              * priceHeat
-                      + measure.demand_electricity_measure_mwh  * priceEl;
+                      + computeElectricityDemand(measure)        * priceEl;
     // Carbon price applies only to direct fossil fuel combustion, not to electricity
     // (electricity price already embeds ETS costs at the generation level).
     // This covers both auxiliary electricity (demand_electricity_mwh) and measures
@@ -351,10 +361,10 @@ const CostsBenefits = (() => {
       if (sector === 'buildings') {
         const heatBl   = computeHeatDemand(baseline);
         const heatMeas = computeHeatDemand(measure);
-        emBl   = heatBl   * efFuelBl   + baseline.demand_electricity_measure_mwh * efEl;
-        emMeas = heatMeas * efFuelMeas  + measure.demand_electricity_measure_mwh  * efEl;
-        enBl   = heatBl   + baseline.demand_electricity_measure_mwh;
-        enMeas = heatMeas + measure.demand_electricity_measure_mwh;
+        emBl   = heatBl   * efFuelBl   + computeElectricityDemand(baseline) * efEl;
+        emMeas = heatMeas * efFuelMeas  + computeElectricityDemand(measure)  * efEl;
+        enBl   = heatBl   + computeElectricityDemand(baseline);
+        enMeas = heatMeas + computeElectricityDemand(measure);
       } else {
         const cBl   = baseline.demand_energy_per_100km * baseline.mileage / 100;
         const cMeas = measure.demand_energy_per_100km  * measure.mileage  / 100;
@@ -512,8 +522,8 @@ const CostsBenefits = (() => {
       // Total electricity = heat demand (if fuel=Electricity) + background household electricity
       const elBl_heat   = baseline.fuel === 'Electricity' ? computeHeatDemand(baseline) : 0;
       const elMeas_heat = measure.fuel  === 'Electricity' ? computeHeatDemand(measure)  : 0;
-      const elBl   = elBl_heat   + (baseline.demand_electricity_measure_mwh || 0);
-      const elMeas = elMeas_heat + (measure.demand_electricity_measure_mwh  || 0);
+      const elBl   = elBl_heat   + computeElectricityDemand(baseline);
+      const elMeas = elMeas_heat + computeElectricityDemand(measure);
       const elSaved = elBl - elMeas;  // positive = electricity saved (e.g. solar PV)
 
       if (gasBl === 0 && gasMeas === 0 && elBl === 0 && elMeas === 0) return null;

@@ -1631,13 +1631,15 @@
   ];
 
   // categoryFilter: array of category strings, or null for all
-  function computeScenarioRows(categoryFilter) {
+  // entries: array of {name, category} to include exactly, or null for all in categoryFilter
+  function computeScenarioRows(categoryFilter, entries) {
     const byId = {};
     for (const sc of SCENARIO_DEFS) {
       const pts = qComputePoints(state.carbonPrice, state.discountRate, sc.key)
-        .filter(p => !categoryFilter || categoryFilter.includes(p.category));
+        .filter(p => !categoryFilter || categoryFilter.includes(p.category))
+        .filter(p => !entries || entries.some(e => e.name === p.name && e.category === p.category));
       for (const p of pts) {
-        if (!byId[p.id]) byId[p.id] = { id: p.id, name: p.name, category: p.category, sector: p.sector };
+        if (!byId[p.id]) byId[p.id] = { id: p.id, name: p.name, baseline: p.baseline, category: p.category, sector: p.sector };
         if (isFinite(p.npv)) byId[p.id][sc.key] = p.npv;
       }
     }
@@ -1649,13 +1651,13 @@
   // ── Dumbbell chart ─────────────────────────────────────────────────────────
   // categoryFilter: array of category strings, or null for all
   // sharedDomain: [min, max] passed from renderAll for a harmonised x axis
-  function renderDumbbellChart(container, categoryFilter, sharedDomain) {
-    const rows = computeScenarioRows(categoryFilter);
+  function renderDumbbellChart(container, categoryFilter, sharedDomain, entries) {
+    const rows = computeScenarioRows(categoryFilter, entries);
     if (!rows.length) return;
 
     const DOT_R = 4;
-    const ROW_H = 22;
-    const M = { top: 6, right: 16, bottom: 36, left: 160 };
+    const ROW_H = 46;
+    const M = { top: 6, right: 16, bottom: 36, left: 190 };
     const totalW = container.clientWidth || 360;
     const chartW = totalW - M.left - M.right;
     const totalH = M.top + rows.length * ROW_H + M.bottom;
@@ -1696,9 +1698,17 @@
     rows.forEach((d, i) => {
       const cy = M.top + i * ROW_H + ROW_H / 2;
 
-      svg.append('text').attr('x', M.left - 6).attr('y', cy + 4)
-        .attr('text-anchor', 'end').attr('font-size', '10px').attr('fill', '#333')
+      svg.append('text').attr('x', M.left - 6).attr('y', cy - 12)
+        .attr('text-anchor', 'end').attr('font-size', '9px').attr('fill', '#999')
+        .attr('font-weight', '600').attr('letter-spacing', '0.05em')
+        .text(d.category.toUpperCase());
+      svg.append('text').attr('x', M.left - 6).attr('y', cy + 3)
+        .attr('text-anchor', 'end').attr('font-size', '11px').attr('fill', '#222')
+        .attr('font-weight', '700')
         .text(d.name);
+      svg.append('text').attr('x', M.left - 6).attr('y', cy + 16)
+        .attr('text-anchor', 'end').attr('font-size', '9px').attr('fill', '#999')
+        .text('vs. ' + d.baseline);
 
       const npvs = SCENARIO_DEFS.map(sc => d[sc.key]);
       svg.append('line')
@@ -1749,12 +1759,19 @@
   }
 
   const DUMBBELL_CONFIGS = [
-    { id: 'dumbbell-rd-uhli-e',   categories: ['Rodinný dům uhlí – E'] },
-    { id: 'dumbbell-rd-plyn-e',   categories: ['Rodinný dům plyn – E'] },
-    { id: 'dumbbell-nove-male',   categories: ['Nové malé']            },
-    { id: 'dumbbell-nove-velke',  categories: ['Nové velké']           },
-    { id: 'dumbbell-ojete-male',  categories: ['Ojeté malé']           },
-    { id: 'dumbbell-ojete-velke', categories: ['Ojeté velké']          },
+    {
+      id: 'dumbbell-combined',
+      categories: null,
+      entries: [
+        { name: 'Ojeté kompaktní SUV elektro',      category: 'Ojeté velké'              },
+        { name: 'Renovace se zateplením',            category: 'Rodinný dům uhlí – F'    },
+        { name: 'Tepelné čerpadlo',                  category: 'Rodinný dům plyn – C'    },
+        { name: 'Tepelné čerpadlo',                  category: 'Rodinný dům uhlí – E'    },
+        { name: 'Nový malý elektromobil',            category: 'Nové malé'               },
+        { name: 'Střešní fotovoltaika + baterie',    category: 'Rodinný dům uhlí – D'    },
+        { name: 'Renovace se zateplením',            category: 'Rodinný dům plyn – C'    },
+      ],
+    },
   ];
 
   // ── Render all charts on the page ─────────────────────────────────────────
@@ -1762,6 +1779,7 @@
   function collectNpvsForEl(el) {
     const param   = el.dataset.param || 'Cena uhlíku';
     const exclude = el.dataset.exclude ? el.dataset.exclude.split(',').map(s => s.trim()) : [];
+
     const cats    = el.dataset.categories
       ? el.dataset.categories.split('|')
       : (el.dataset.category ? [el.dataset.category] : []);
@@ -2906,7 +2924,7 @@
     // Compute shared x-axis domain across all dumbbell charts
     const allDbVals = [];
     DUMBBELL_CONFIGS.forEach(cfg => {
-      computeScenarioRows(cfg.categories).forEach(r =>
+      computeScenarioRows(cfg.categories, cfg.entries).forEach(r =>
         SCENARIO_DEFS.forEach(sc => { if (r[sc.key] != null) allDbVals.push(r[sc.key]); })
       );
     });
@@ -2920,7 +2938,7 @@
     if (legendEl) renderDumbbellLegend(legendEl);
     DUMBBELL_CONFIGS.forEach(cfg => {
       const el = document.getElementById(cfg.id);
-      if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain);
+      if (el) renderDumbbellChart(el, cfg.categories, sharedDbDomain, cfg.entries);
     });
     addDownloadBars();
     renderScenarioCharts();

@@ -555,36 +555,7 @@ extra-scripts:
   <div class="container">
     <p class="chart-col-header mb-2">NPV opatření v různých cenových scénářích</p>
     <div id="dumbbell-legend" style="margin-bottom:1rem;"></div>
-    <div style="display:flex; gap:2rem; margin-bottom:1.5rem;">
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#2860b4">Rodinný dům uhlí – E</p>
-        <div id="dumbbell-rd-uhli-e"></div>
-      </div>
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#2860b4">Rodinný dům plyn – E</p>
-        <div id="dumbbell-rd-plyn-e"></div>
-      </div>
-    </div>
-    <div style="display:flex; gap:2rem; margin-bottom:1.5rem;">
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#6b4fa0">Nové malé</p>
-        <div id="dumbbell-nove-male"></div>
-      </div>
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#6b4fa0">Nové velké</p>
-        <div id="dumbbell-nove-velke"></div>
-      </div>
-    </div>
-    <div style="display:flex; gap:2rem;">
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#6b4fa0">Ojeté malé</p>
-        <div id="dumbbell-ojete-male"></div>
-      </div>
-      <div style="flex:1; min-width:0;">
-        <p class="chart-col-header mb-1" style="color:#6b4fa0">Ojeté velké</p>
-        <div id="dumbbell-ojete-velke"></div>
-      </div>
-    </div>
+    <div id="dumbbell-combined"></div>
   </div>
 </div>
 
