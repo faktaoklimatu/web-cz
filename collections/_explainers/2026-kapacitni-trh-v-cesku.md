@@ -188,7 +188,7 @@ Aby Česko získalo notifikaci k zavedení kapacitního trhu, musí projít v so
 
 - **Kapacitní trhy mohou vést k nadbytečné výstavbě elektráren**, což zvyšuje náklady pro spotřebitele. Návrh těchto trhů mají často na starosti provozovatelé přenosových soustav, jejichž hlavním úkolem je udržet bezpečnost dodávek. Provozovatel se tak logicky bude více obávat toho, že zajistí příliš málo kapacity, než toho, že jí zajistí nadbytek. Tomu lze alespoň částečně čelit transparentností v modelování potřebných kapacit a zapojením odborné veřejnosti ve formě pravidelných konzultací.
 - **Z kapacitních trhů se dnes podporují převážně elektrárny na zemní plyn** (kvůli jejich flexibilitě a spolehlivosti). V kombinaci s dlouhými kontrakty a se sklonem k naddimenzování kapacit to může vést k dlouhodobé závislosti na plynových elektrárnách (tzv. gas lock-in), vysoké závislosti na dovozu a v konečném důsledku k vysokým emisím skleníkových plynů. Tomu lze alespoň částečně čelit tím, že se do aukcí za spravedlivých podmínek umožní vstup bezemisních technologií a kapacitní trhy se budou postupně upravovat pro nové, čisté technologie (nové typy úložišť energie, elektrárny na vodík, plynové elektrárny s technologií zachytávání uhlíku, nové pokročilé designy jaderných elektráren, elektrárny spalující udržitelně pěstovanou biomasu atd.).
-{:.minus-list}
+{:.warning-list}
 
 Zároveň je ale nutné pamatovat na to, že hlavní nástroj pro snižování závislosti na plynu leží mimo samotný kapacitní trh. Je jím dostatečný rozvoj obnovitelných zdrojů elektřiny, hlavně pak větrné energetiky (v dlouhodobém horizontu doplněný jadernou energetikou). Bez rozvoje obnovitelných zdrojů bude česká elektroenergetika v průběhu 30. let na zemním plynu značně závislá.
 
