@@ -29,6 +29,15 @@ perex: |
 
 Energetika v Evropě prochází rychlou proměnou – za posledních 25 let narostl podíl solárních a větrných zdrojů na výrobě elektřiny v EU z méně než 1 % na více než 30 %. Současně s tím klesá výroba elektřiny z uhlí a postupně dochází v mnoha zemích k uzavírání uhelných elektráren. Tuto proměnu táhne kupředu technologický vývoj stejně jako politické úsilí o dekarbonizaci a vyšší energetickou suverenitu Evropy.[^1]
 
+{% include figure.html
+    name="25-let-energetiky-eu.svg"
+    class="narrow-figure"
+    alt="Dva grafy znázorňující vývoj výroby elektřiny v EU v letech 2000–2025. Levý graf: podíl solárních a větrných zdrojů vzrostl z méně než 1 % na 30 %. Pravý graf: podíl uhelných elektráren klesl ze 30 % na 9 %."
+    caption="Zatímco podíl solárních a větrných zdrojů na výrobě elektřiny v EU vzrostl za 25 let třicetinásobně, podíl uhlí klesl na třetinu."
+    source-text="Our World in Data"
+    source-url="https://github.com/owid/energy-data"
+%}
+
 Tato transformace vede napříč Evropou k postupnému úbytku řiditelných elektráren[^2] a ke změnám na trhu s elektřinou: když svítí slunce nebo hodně fouká vítr, je elektřina levná a je jí nadbytek. **Když je ale zataženo nebo bezvětří, jsou potřeba záložní zdroje** jako plynové elektrárny nebo bateriová úložiště, jejichž výroba elektřiny se dá dobře řídit a zvládnou tak chybějící elektřinu dodat.
 
 **Nové záložní elektrárny se ale dnes na trhu těžko uživí.** Tyto elektrárny (stejně jako další druhy elektráren) prodávají elektřinu na trhu a tím generují provozní zisk, ze kterého postupně splácí svoje investiční náklady. Trh s elektřinou ovšem funguje tak, že takové záložní zdroje většinu času prodávají elektřinu za cenu blízko svých provozních nákladů (zjednodušeně za cenu paliva a emisních povolenek). Výraznějších provozních zisků pak dosahují jen v obdobích větší zátěže celé soustavy, kdy jsou pro nasycení poptávky potřeba ještě méně efektivní a provozně dražší elektrárny. Tyto výraznější zisky jsou i v současnosti velmi špatně předvídatelné, často nedostatečné, a navíc jsou zatížené další nejistotou do budoucna v důsledku rychlé proměny celé elektroenergetiky.[^3] Pouze na základě tržních signálů proto napříč Evropou nové záložní elektrárny nevznikají v potřebném množství ani dostatečně rychle. Naopak může docházet k uzavírání některých stávajících záložních elektráren. Jde tak o určité selhání trhu.
@@ -43,6 +52,13 @@ Tato transformace vede napříč Evropou k postupnému úbytku řiditelných ele
 - **Kapacitní trh** (využívá Velká Británie, Francie, Irsko, Itálie, Belgie, Polsko, nově má schváleno Španělsko, zvažuje Německo, Řecko a také Česko) – škála tržních mechanismů, kde výrobci soutěží v aukcích o možnost poskytovat soustavě potřebný instalovaný výkon (kapacitu) na dané období. Provozovatel soustavy ze všech nabídek v aukci vybere ty bloky, které za to požadují nejnižší roční kompenzaci, tzv. kapacitní platbu. Tyto vybrané bloky dále běžně působí na trhu s elektřinou. Výměnou za tuto kapacitní platbu však musí zajistit, že smluvní kapacitu budou na trhu poskytovat během celého období, kdy to mechanismus vyžaduje (což může být např. zimní půlka roku, kdy je vyšší spotřeba elektřiny).
 
 Strategická rezerva může být sjednávána přímo – bez aukce, zatímco **kapacitní trh vždy stojí na aukcích**. Potřebná kapacita se tedy tržním principem zajišťuje za nejlevnější možnou cenu (pokud je na trhu dostatečná konkurence).
+
+{% include figure.html
+    name="mapa-kapacitni-mechanizmy.svg"
+    alt="Mapa Evropy znázorňující typy kapacitních mechanismů: kapacitní trhy zavedly Velká Británie, Francie, Irsko, Itálie, Belgie, Polsko a Španělsko; strategické rezervy využívají Švédsko, Finsko a Německo; zavedení kapacitních trhů zvažuje Německo, Česko a Řecko."
+    caption="Mapa evropských zemí podle typu zavedeného kapacitního mechanismu."
+    source-text="Fakta o klimatu"
+%}
 
 **V praxi to funguje při zajišťování kapacity na daný cílový rok**, např. 2032, takto:
 
@@ -69,6 +85,15 @@ Navzdory relativně pomalému nástupu obnovitelných zdrojů čekají českou e
 **Nové záložní elektrárny se ovšem v Česku téměř nestaví.** Jak je popsáno výše, investoři čelí příliš velkému riziku spojenému s rychlou proměnou energetiky a návratnost takových projektů je velmi nejistá.
 
 V Česku proto podle pravidelného modelování energetiky pro nadcházející roky vycházejí znepokojující výsledky v oblasti spolehlivosti dodávek. Konkrétně má Česko mezi zeměmi EU pro rok 2028 jednu z nejvyšších hodnot očekávané doby ztráty zatížení (loss of load expectation, **LOLE**) – 19,9 hodin za rok.[^10] Jde o počet hodin za rok, kdy soustava nemusí být schopna pokrýt poptávku po elektřině a provozovatel soustavy tak potřebuje regulovat spotřebu (v průmyslu). Tato hodnota zhruba 3× přesahuje pro Česko stanovený standard spolehlivosti – 6,7 hodiny ročně.[^11]
+
+{% include figure.html
+    name="lole-cesko.svg"
+    alt="Infografika znázorňující očekávanou dobu ztráty zatížení (LOLE) v Česku pro rok 2028: 19,9 hodin za rok, což přibližně třikrát překračuje český standard spolehlivosti 6,7 hodin ročně."
+    caption="Česká hodnota LOLE pro rok 2028 podle evropského hodnocení přiměřenosti zdrojů."
+    source-text="ENTSO-E, ERAA 2025"
+    source-url="https://www.entsoe.eu/outlooks/eraa/2025/"
+
+%}
 
 {% capture lole_box %}
 **LOLE** (loss of load expectation, česky očekávaná doba ztráty zatížení) je pravděpodobnostní ukazatel, který vyjadřuje, kolik hodin v roce nebude dostupný instalovaný výkon stačit na pokrytí poptávky po elektřině. Jde o měřítko energetické bezpečnosti – vysoká hodnota LOLE znamená, že systém není spolehlivý a hrozí riziko výpadků elektřiny.
@@ -144,6 +169,7 @@ Aby Česko získalo notifikaci k zavedení kapacitního trhu, musí projít v so
 
 {% include figure.html
     name="kapacitni-trh-kroky.svg"
+    name-mobile="kapacitni-trh-kroky.svg"
     alt="Kroky potřebné k zavedení kapacitního trhu v Česku"
     caption="Přehled kroků, které musí Česko splnit pro zavedení kapacitního trhu a získání notifikace Evropské komise."
     source-text="Fakta o klimatu"
