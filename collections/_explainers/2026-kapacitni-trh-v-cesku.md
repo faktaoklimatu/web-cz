@@ -34,8 +34,8 @@ Energetika v Evropě prochází rychlou proměnou – za posledních 25 let naro
     class="narrow-figure"
     alt="Dva grafy znázorňující vývoj výroby elektřiny v EU v letech 2000–2025. Levý graf: podíl solárních a větrných zdrojů vzrostl z méně než 1 % na 30 %. Pravý graf: podíl uhelných elektráren klesl ze 30 % na 9 %."
     caption="Zatímco podíl solárních a větrných zdrojů na výrobě elektřiny v EU vzrostl za 25 let třicetinásobně, podíl uhlí klesl na třetinu."
-    source-text="Our World in Data"
-    source-url="https://github.com/owid/energy-data"
+    source-text="Ember Yearly Electricity Data"
+    source-url="https://ember-energy.org/data/yearly-electricity-data/"
 %}
 
 Tato transformace vede napříč Evropou k postupnému úbytku řiditelných elektráren[^2] a ke změnám na trhu s elektřinou: když svítí slunce nebo hodně fouká vítr, je elektřina levná a je jí nadbytek. **Když je ale zataženo nebo bezvětří, jsou potřeba záložní zdroje** jako plynové elektrárny nebo bateriová úložiště, jejichž výroba elektřiny se dá dobře řídit a zvládnou tak chybějící elektřinu dodat.
@@ -49,7 +49,7 @@ Tato transformace vede napříč Evropou k postupnému úbytku řiditelných ele
 Řada evropských zemí již nějakou formu kapacitního mechanismu zavedla. Obecně je lze rozdělit do dvou typů:
 
 - **Strategická rezerva** (využívá Německo, Švédsko, Finsko) – cílený mechanismus, v němž provozovatel přenosové soustavy platí stávajícímu výrobci (typicky fosilní elektrárně) roční sjednaný poplatek za to, že zůstane k dispozici pro případ krizové situace. Tento poplatek elektrárně v principu hradí fixní náklady jako platy zaměstnanců nebo nutnou údržbu a přiměřený zisk. Výměnou za to elektrárna nesmí prodávat elektřinu na běžném trhu – funguje pouze na pokyn provozovatele přenosové soustavy. Proto se jí někdy říká „studená" rezerva. Bloky pro strategickou rezervu vybírá provozovatel soustavy, obvykle z řad elektráren, u kterých se už chystalo uzavření a typicky jsou dávno účetně odepsané.
-- **Kapacitní trh** (využívá Velká Británie, Francie, Irsko, Itálie, Belgie, Polsko, nově má schváleno Španělsko, zvažuje Německo, Řecko a také Česko) – škála tržních mechanismů, kde výrobci soutěží v aukcích o možnost poskytovat soustavě potřebný instalovaný výkon (kapacitu) na dané období. Provozovatel soustavy ze všech nabídek v aukci vybere ty bloky, které za to požadují nejnižší roční kompenzaci, tzv. kapacitní platbu. Tyto vybrané bloky dále běžně působí na trhu s elektřinou. Výměnou za tuto kapacitní platbu však musí zajistit, že smluvní kapacitu budou na trhu poskytovat během celého období, kdy to mechanismus vyžaduje (což může být např. zimní půlka roku, kdy je vyšší spotřeba elektřiny).
+- **Kapacitní trh** (využívá Velká Británie, Francie, Irsko, Itálie, Belgie, Polsko, nově má schváleno Španělsko, připravuje Německo, Řecko a také Česko) – škála tržních mechanismů, kde výrobci soutěží v aukcích o možnost poskytovat soustavě potřebný instalovaný výkon (kapacitu) na dané období. Provozovatel soustavy ze všech nabídek v aukci vybere ty bloky, které za to požadují nejnižší roční kompenzaci, tzv. kapacitní platbu. Tyto vybrané bloky dále běžně působí na trhu s elektřinou. Výměnou za tuto kapacitní platbu však musí zajistit, že smluvní kapacitu budou na trhu poskytovat během celého období, kdy to mechanismus vyžaduje (což může být např. zimní půlka roku, kdy je vyšší spotřeba elektřiny).
 
 Strategická rezerva může být sjednávána přímo – bez aukce, zatímco **kapacitní trh vždy stojí na aukcích**. Potřebná kapacita se tedy tržním principem zajišťuje za nejlevnější možnou cenu (pokud je na trhu dostatečná konkurence).
 
@@ -57,7 +57,7 @@ Strategická rezerva může být sjednávána přímo – bez aukce, zatímco **
     name="mapa-kapacitni-mechanizmy.svg"
     alt="Mapa Evropy znázorňující typy kapacitních mechanismů: kapacitní trhy zavedly Velká Británie, Francie, Irsko, Itálie, Belgie, Polsko a Španělsko; strategické rezervy využívají Švédsko, Finsko a Německo; zavedení kapacitních trhů zvažuje Německo, Česko a Řecko."
     caption="Mapa evropských zemí podle typu zavedeného kapacitního mechanismu."
-    source-text="Fakta o klimatu"
+    source-text="Rešerše Fakta o klimatu"
 %}
 
 **V praxi to funguje při zajišťování kapacity na daný cílový rok**, např. 2032, takto:
@@ -84,12 +84,12 @@ Navzdory relativně pomalému nástupu obnovitelných zdrojů čekají českou e
 
 **Nové záložní elektrárny se ovšem v Česku téměř nestaví.** Jak je popsáno výše, investoři čelí příliš velkému riziku spojenému s rychlou proměnou energetiky a návratnost takových projektů je velmi nejistá.
 
-V Česku proto podle pravidelného modelování energetiky pro nadcházející roky vycházejí znepokojující výsledky v oblasti spolehlivosti dodávek. Konkrétně má Česko mezi zeměmi EU pro rok 2028 jednu z nejvyšších hodnot očekávané doby ztráty zatížení (loss of load expectation, **LOLE**) – 19,9 hodin za rok.[^10] Jde o počet hodin za rok, kdy soustava nemusí být schopna pokrýt poptávku po elektřině a provozovatel soustavy tak potřebuje regulovat spotřebu (v průmyslu). Tato hodnota zhruba 3× přesahuje pro Česko stanovený standard spolehlivosti – 6,7 hodiny ročně.[^11]
+V Česku proto podle pravidelného modelování energetiky pro nadcházející roky vycházejí znepokojující výsledky v oblasti spolehlivosti dodávek. Konkrétně má Česko mezi zeměmi EU pro rok 2030 jednu z nejvyšších hodnot očekávané doby ztráty zatížení (loss of load expectation, **LOLE**) – 18–29 hodin za rok.[^10] Jde o počet hodin za rok, kdy soustava nemusí být schopna pokrýt poptávku po elektřině a provozovatel soustavy tak potřebuje regulovat spotřebu (v průmyslu). Tato hodnota zhruba 3–4× přesahuje pro Česko stanovený standard spolehlivosti – 6,7 hodiny ročně.[^11]
 
 {% include figure.html
     name="lole-cesko.svg"
-    alt="Infografika znázorňující očekávanou dobu ztráty zatížení (LOLE) v Česku pro rok 2028: 19,9 hodin za rok, což přibližně třikrát překračuje český standard spolehlivosti 6,7 hodin ročně."
-    caption="Česká hodnota LOLE pro rok 2028 podle evropského hodnocení přiměřenosti zdrojů."
+    alt="Infografika znázorňující očekávanou dobu ztráty zatížení (LOLE) v Česku pro rok 2030: 18-29 hodin za rok, což přibližně třikrát až čtyřikrát překračuje český standard spolehlivosti 6,7 hodin ročně."
+    caption="Česká hodnota LOLE pro rok 2030 podle evropského hodnocení přiměřenosti zdrojů."
     source-text="ENTSO-E, ERAA 2025"
     source-url="https://www.entsoe.eu/outlooks/eraa/2025/"
 
@@ -121,7 +121,7 @@ To je naprosto klíčový parametr, náklady kapacitního trhu jsou zhruba úmě
 
 Chybná rozhodnutí mohou na jedné straně vést k nadbytečné kapacitě, a tím i ke zbytečně vysokým nákladům, na straně druhé pak k nedostatku kapacity a možným problémům se stabilitou sítě během roku.
 
-Část této nejistoty lze vyřešit postupnými aukcemi. Například je možné vydražit 80 % očekávané potřebné kapacity pro rok 2032 šest let dopředu, tedy v roce 2026. Zbývající část potřebné kapacity se dá lépe odhadnout a dodražit o několik let později (blíže k cílovému roku 2032), kdy už v odhadech není tolik nejistoty.
+Část této nejistoty lze vyřešit postupnými aukcemi. Například je možné vydražit 80 % očekávané potřebné kapacity pro rok 2032 pět let dopředu, tedy v roce 2027. Zbývající část potřebné kapacity se dá lépe odhadnout a dodražit o několik let později (blíže k cílovému roku 2032), kdy už v odhadech není tolik nejistoty.
 
 Celkově ovšem správné vyvážení potřebné kapacity vyžaduje pravidelné revize a dobré propojení s energetickými strategiemi. Proto by zavedení kapacitního trhu mělo jít ruku v ruce s jasnou strategií ze strany vlády (např. v podobě dlouho odkládané aktualizace Státní energetické koncepce).
 
@@ -159,21 +159,25 @@ Z toho důvodu rámec CISAF omezuje maximální délku kontraktu pro fosilní el
 
 **Náklady na kapacitní platby lze mezi spotřebitele v Česku rozložit mnoha způsoby.** Rozdíly v sazbách mohou být mezi jednotlivými skupinami odběratelů – domácnosti, malé a střední podniky či velký průmysl – mohou být zatíženy různě, což je v jádru politické rozhodnutí.
 
-**Rámec CISAF stanovuje důležitou podmínku: kapacitní poplatek musí být výrazně vyšší v obdobích odběrové špičky** (90 % poplatku musí být alokováno spotřebitelům v 1 % až 5 % hodin v roce s nejvyšší cenou, kdy je soustava pod největším tlakem). Tento princip rozdělení nákladů motivuje lidi a firmy spotřebovávat méně energie v době špiček.[^14] Z dlouhodobého pohledu pak tlačí na celkově menší potřebu kapacity, a tedy na snížení celkových nákladů kapacitních trhů.
+**Rámec CISAF stanovuje důležitou podmínku: kapacitní poplatek musí být výrazně vyšší v obdobích odběrové špičky** (90 % poplatku musí být alokováno spotřebitelům v 1 % až 5 % hodin v roce s nejvyšší cenou, kdy je soustava pod největším tlakem). Tento princip rozdělení nákladů motivuje lidi a firmy spotřebovávat méně energie v době špiček. Z dlouhodobého pohledu pak tlačí na celkově menší potřebu kapacity, a tedy na snížení celkových nákladů kapacitních trhů.
+
+Zpoplatnění ve špičkách je založeno na chytrém měření spotřeby, v jehož zavádění Česko zaostává za většinou evropských zemí. I s chytrým měřením spotřeby ovšem **zůstává spousta nejasností okolo správné implementace tohoto principu**, aby byly náklady spravedlivě rozloženy, bylo to srozumitelné pro zákazníky a současně to nemělo nežádoucí efekty na trh s elektřinou.
 
 ## Jaké kroky jsou potřeba k zavedení kapacitního trhu?
 
 Kapacitní trh vyhlašuje stát prostřednictvím legislativy a správních rozhodnutí. Podle práva EU se jedná o veřejnou podporu, která vyžaduje schválení Evropskou komisí, tzv. notifikaci.
 
-Aby Česko získalo notifikaci k zavedení kapacitního trhu, musí projít v souladu s rámcem CISAF a podle nařízení o vnitřním trhu s elektřinou[^15] několika kroky. Česko již některé z úvodních kroků splnilo a kapacitní trh by mohlo zavést už v průběhu roku 2026.
+Aby Česko získalo notifikaci k zavedení kapacitního trhu, musí projít v souladu s rámcem CISAF a podle nařízení o vnitřním trhu s elektřinou[^15] několika kroky. Česko již některé z úvodních kroků splnilo a kapacitní trh by teoreticky mohlo zavést už v průběhu roku 2026.
 
 {% include figure.html
     name="kapacitni-trh-kroky.svg"
     name-mobile="kapacitni-trh-kroky.svg"
     alt="Kroky potřebné k zavedení kapacitního trhu v Česku"
     caption="Přehled kroků, které musí Česko splnit pro zavedení kapacitního trhu a získání notifikace Evropské komise."
-    source-text="Fakta o klimatu"
+    source-text="Rešerše Fakta o klimatu"
 %}
+
+Česko je současně první zemí v EU, která připravuje kapacitní trh podle pravidel CISAF. To vyžaduje pečlivou přípravu a důslednou veřejnou diskusi, protože nestačí převzít příklad dobré praxe ze zahraničí (žádný existující evropský kapacitních trh nesplňuje všechny podmínky rámce CISAF).
 
 ## Jaké jsou výhody a problémy kapacitních trhů?
 
@@ -227,9 +231,9 @@ Scarcity pricing motivuje k investicím ve střednědobém až dlouhodobém hori
 Kapacitní trh může být užitečným nástrojem pro zajištění trvalého dostatku elektřiny v síti. Dokáže předejít drahým a nebezpečným výpadkům a umožní lepší integraci obnovitelných zdrojů do energetického systému. Může však také zvýšit ceny elektřiny pro spotřebitele, vést k nadměrné podpoře fosilních zdrojů a zpomalit transformaci směrem k nízkouhlíkové energetice. Aby se minimalizovala rizika a náklady a zároveň zachovaly přínosy, doporučujeme při návrhu a implementaci (na základě nejlepší evropské praxe) zohlednit řadu faktorů.
 
 1. **Jasný směr a řízení.** Integrovat kapacitní trh do energetické strategie země.[^19] Stanovit pro něj jasné, měřitelné cíle a pravidelně vyhodnocovat, zda jich bylo dosaženo.
-2. **Důraz na transparentnost.** Zpřístupnit předpoklady modelování a celý proces zavádění kapacitního trhu veřejné kontrole. Konzultovat postup s účastníky trhu i s odborníky. Transparentnost může zvýšit kvalitu celého trhu a zabránit nežádoucímu politickému vlivu silných zájmových skupin.
-3. **Spravedlivý přístup pro všechny technologie.** Podložit stanovení derating faktorů argumenty a veřejně dostupnými výstupy z modelování. Do systému lze zapojit různé technologie prostřednictvím oddělených aukcí pro různá časová období – kratší časové rámce zvýhodní baterie, zatímco delší podpoří tepelné zdroje.[^20]
-4. **Otevřenost přeshraniční spolupráci.** Vést otevřený dialog se sousedy a lépe sladit parametry sousedních kapacitních trhů, což může omezit vzájemné negativní vlivy těchto trhů a zvýšit jejich celkovou efektivitu.
+2. **Důraz na transparentnost a pečlivost.** Zpřístupnit předpoklady modelování a celý proces zavádění kapacitního trhu veřejné kontrole. Konzultovat postup s účastníky trhu i s odborníky a nechat na diskuse dostatečný čas. Transparentnost a pečlivost při zavádění může výrazně zvýšit kvalitu celého trhu a jeho následného fungování.
+3. **Spravedlivý přístup pro všechny technologie.** Podložit stanovení derating faktorů argumenty a veřejně dostupnými výstupy z modelování. Do systému lze zapojit různé technologie prostřednictvím oddělených aukcí pro různá časová období – kratší časové rámce zvýhodní baterie, zatímco delší podpoří tepelné zdroje.
+4. **Otevřenost přeshraniční spolupráci.** Vést otevřený dialog se sousedy a lépe sladit parametry sousedních kapacitních trhů, což může omezit vzájemné negativní vlivy těchto trhů a zvýšit jejich celkovou efektivitu.[^20]
 5. **Snižování závislosti na plynu (gas lock-in).** Plynové elektrárny jsou v krátkodobém horizontu nezbytné, ale jejich nadměrná výstavba může dlouhodobě zpomalit dekarbonizaci. Při návrhu trhu je klíčové správně odhadnout potřebu kapacit a tyto odhady pravidelně revidovat. Dlouhodobé aukce s kapacitou vysoutěženou na vzdálenou budoucnost k závislosti na plynu přispívají – je proto výhodnější nemalou část kapacity kontrahovat v krátkodobých aukcích a odhady potřebné kapacity upravovat podle nových dat.
 {:.circled-list}
 
@@ -251,11 +255,10 @@ Kapacitní trh může být užitečným nástrojem pro zajištění trvalého do
 [^7]: Tento tlak na zlevňování na společném evropském trhu působí hlavně zahraniční obnovitelné zdroje, ale přidávají se k němu i české solární elektrárny.
 [^8]: Např. dle článku na Ekonomickém deníku: [Uhlí se vrací do hry. Tykač definitivně odkládá konec Počerad i Chvaletic](https://ekonomickydenik.cz/seven-uhelne-bloky-odstavime-pozdeji/).
 [^9]: V posledních letech se staví nebo připravují k výstavbě projekty celé řady tepláren, které odcházejí od uhlí, nejčastěji směrem k zemnímu plynu. Jejich předpokládaný instalovaný výkon ve výrobě elektřiny ovšem zdaleka nestačí jako náhrada uhelných elektráren.
-[^10]: Jde o výsledky analýzy [ERAA 2025](https://www.entsoe.eu/eraa/2025/) od ENTSO-E (Evropské sítě provozovatelů elektroenergetických přenosových soustav).
+[^10]: Jde o rozsah výsledků analýzy [ERAA 2025](https://www.entsoe.eu/eraa/2025/) od ENTSO-E (Evropské sítě provozovatelů elektroenergetických přenosových soustav).
 [^11]: Standard spolehlivosti je stanovený podle optimalizace společenských nákladů. Bere v potaz náklady na výstavbu nejlevnější nové elektrárny a porovnává je s náklady nedodávky elektřiny pro celou ekonomiku. Kvůli nedodávce menší než 6,7 hodiny se v Česku ekonomicky nevyplatí budovat elektrárnu, při delší nedodávce se to už ekonomicky vyplatí.
 [^12]: Rozvoj větrné energetiky by nijak zásadně nesnížil celkový objem potřebné kapacity (protože během zimy nastávají delší období, kdy napříč střední Evropou málo fouká). Zato by ale proměnil strukturu potřebné kapacity: větší podíl na kapacitě by mohla tvořit levnější řešení (špičkovací elektrárny, baterie a další formy tzv. čisté flexibility).
 [^13]: Pro stávající elektrárny, které nesplňují tyto emisní limity, platí ještě alternativní podmínka 350 kg CO₂ ročně na instalovaný kW výkonu, která výrazně omezuje celkové využití elektrárny během roku. České hnědouhelné elektrárny by se tak teoreticky mohly zapojit do strategické rezervy, pokud by byly využity cca jen ve 2–3 % hodin během roku. Viz dokument sítě regulátorů ACER (2019): [Examples of Calculation CO2 emission limits in Capacity Mechanisms](https://www.acer.europa.eu/sites/default/files/documents/Official_documents/Acts_of_the_Agency/Opinions/Documents/ACERs%20Opinion%2022-2019%20examples%20of%20calculation.pdf). V praxi tento limit jejich využití znemožňuje, protože pro tak nízké využití by provozování hnědouhelného lomu bylo nepřijatelně drahé.
-[^14]: Takové zpoplatnění je založeno na chytrém měření spotřeby, v jehož zavádění Česko zaostává za většinou evropských zemí. Je proto otevřenou otázkou, jak tento princip může Česko nejlépe splnit (v reakci na český plán reformy trhu s elektřinou Evropská komise doporučuje rozšířit nasazování chytrého měření).
 [^15]: Nařízení (EU) 2019/943.
 [^19]: Jako strategie dlouhodobého rozvoje energetiky pro potřeby kapacitního trhu těžko může v roce 2026 sloužit Státní energetická koncepce z roku 2015. Jako referenční strategický dokument může sloužit poslední verze Vnitrostátního plánu České republiky v oblasti energetiky a klimatu (2024), ovšem i tento plán není příliš konkrétní z hlediska zajištění hladkého odchodu od uhlí. Větší technické detaily tak mohou poskytnout např. studie MAF od společnosti ČEPS.
 [^20]: Podle CISAF musí být kapacitní trh otevřený i zahraničním účastníkům. Některé země však tuto účast skrytě omezují, což zvyšuje ceny.
