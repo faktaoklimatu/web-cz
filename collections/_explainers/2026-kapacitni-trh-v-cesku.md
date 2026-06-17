@@ -15,7 +15,7 @@ cover-source-license:     "Unsplash License"
 cover-source-license-url: "https://unsplash.com/license"
 cover-source-url: "https://unsplash.com/photos/white-and-blue-factory-under-white-clouds-during-daytime-g8FpKb4J38E"
 perex: |
-  Evropská energetika postupně přechází na obnovitelné zdroje. K tomu je ovšem potřeba zajistit dostatek elektráren pro spolehlivé dodávky elektřiny po celý rok. Čím dál více států se v tomto spoléhá na takzvané kapacitní trhy. Zavedení kapacitního trhu připravuje i Česko (mimo jiné kvůli bezpečnému odchodu od uhlí). Oč jde a co to přinese?
+  Evropská energetika postupně přechází na obnovitelné zdroje. K nim je ovšem potřeba zajistit dostatek řiditelných elektráren pro spolehlivé dodávky elektřiny po celý rok. Ty se však v Evropě nestaví v dostatečné míře. Čím dál více států tento problém řeší takzvanými kapacitními trhy, jehož zavedení připravuje i Česko. Oč jde a co to přinese?
 
 ---
 
