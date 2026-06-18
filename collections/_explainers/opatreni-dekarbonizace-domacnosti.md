@@ -652,7 +652,7 @@ extra-scripts:
 
 <div class="section pt-3 pb-4">
   <div class="container">
-    <p class="chart-col-header mb-2">Malý elektromobil — náklady a vliv diskontování</p>
+    <p class="chart-col-header mb-2">Velký elektromobil — náklady a vliv diskontování</p>
     <p class="text-muted" style="font-size:0.85rem; margin-top:-0.25rem; margin-bottom:0.75rem;">
       Vlevo: rozložení celkových nákladů po dobu životnosti (CAPEX + OPEX) pro baseline a opatření.
       Vpravo: vliv diskontní míry na kumulativní NPV — šedá část ukazuje, kolik hodnoty diskontování „skryje".
