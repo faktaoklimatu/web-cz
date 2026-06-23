@@ -21,7 +21,7 @@
   ])].sort((a, b) => a - b);
   const SB_DISCOUNT_RATES = [0, 3, 7];
   const SB_DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
-  let   SB_X_DOMAIN       = [-1.5e6, 1.5e6];
+  let   SB_X_DOMAIN       = [-800000, 800000];
   const SB_CAPEX_CASES    = [
     { key: 'worst',     label: 'Nejhorší', sensitivityFactor: +1.0 },
     { key: 'reference', label: 'Normální', sensitivityFactor:  0.0 },
@@ -35,7 +35,7 @@
   ];
 
   // Color-by scales
-  const SB_SC_COLORS  = { CP: '#e07b39', NZ: '#2a9d8f', CP_EC: '#9b2335' };
+  const SB_SC_COLORS  = { CP: '#de7c1a', NZ: '#19a0a8', CP_EC: '#b33064' };
   const SB_CP_COLOR_SCALE = d3.scaleLinear()
     .domain([0, 60, 100, 200])
     .range(['#fde0c8', '#fc8d59', '#d7301f', '#7f0000']);
@@ -73,11 +73,13 @@
   let sbSelectedMeasure     = null;
   let sbMeasureGroups       = null;
   let sbGrouped             = 'context';
-  let sbShowLetters         = false;
   let sbShowUncertainty     = false;
   let sbShowViolin          = false;
   let sbOnlyDefault         = false;  // show only výchozí dot + NPV label
-  let sbColorBy             = null; // null | 'sc' | 'cp' | 'dr'
+  let sbColorBy             = 'npv'; // null | 'sc' | 'cp' | 'dr' | 'pf' | 'npv'
+  let sbDotR                = 7.2;   // dot radius (px) — dot-size slider
+  let sbFontScale           = 1.0;   // font-size multiplier — font-scale slider
+  let sbCollideScale        = 1.0;   // collision radius multiplier — overlap slider
   let sbEnabledScenarios    = new Set(['CP', 'NZ', 'CP_EC']);
   let sbEnabledDiscountRates = new Set([3]);
   let sbEnabledCarbonPrices  = new Set([40, 70, 100]);
@@ -107,7 +109,7 @@
       svg.append('rect')
         .attr('x', startX + col * sqSize).attr('y', y)
         .attr('width', sqSize).attr('height', sqSize)
-        .attr('fill', '#c0c8d0')
+        .attr('fill', '#9ea7b3')
         .attr('stroke', 'white').attr('stroke-width', 0.5);
     }
   }
@@ -130,6 +132,38 @@
     }
   }
 
+  function sbDrawCircleGrid(svg, cx, bottomY, nFilled, maxPerRow, sqSize) {
+    if (nFilled <= 0) return;
+    const n      = Math.min(nFilled, maxPerRow * 2);
+    const r      = sqSize / 2;
+    const startX = cx - (maxPerRow * sqSize) / 2;
+    for (let i = 0; i < n; i++) {
+      const col        = i % maxPerRow;
+      const rowFromBot = Math.floor(i / maxPerRow);
+      svg.append('circle')
+        .attr('cx', startX + col * sqSize + r)
+        .attr('cy', bottomY - (rowFromBot + 1) * sqSize + r)
+        .attr('r', r - 0.8)
+        .attr('fill', '#9ea7b3');
+    }
+  }
+
+  function sbDrawCircleGridDown(svg, cx, topY, nFilled, maxPerRow, sqSize, fillColor) {
+    if (nFilled <= 0) return;
+    const n      = Math.min(nFilled, maxPerRow * 2);
+    const r      = sqSize / 2;
+    const startX = cx - (maxPerRow * sqSize) / 2;
+    for (let i = 0; i < n; i++) {
+      const col        = i % maxPerRow;
+      const rowFromTop = Math.floor(i / maxPerRow);
+      svg.append('circle')
+        .attr('cx', startX + col * sqSize + r)
+        .attr('cy', topY + rowFromTop * sqSize + r)
+        .attr('r', r - 0.8)
+        .attr('fill', fillColor || '#dde5ea');
+    }
+  }
+
   function sbDrawIcon(svg, name, x, y, w, h) {
     const href = SB_ICONS[name];
     if (href) {
@@ -144,7 +178,7 @@
         .attr('x', x).attr('y', y)
         .attr('width', w).attr('height', h)
         .attr('fill', 'none')
-        .attr('stroke', '#ccc')
+        .attr('stroke', '#9ea7b3')
         .attr('stroke-width', 1)
         .attr('stroke-dasharray', '4 3')
         .attr('rx', 4);
@@ -159,30 +193,13 @@
     );
   }
 
-  function sbCalcNpv(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
-    try {
-      const r = CostsBenefits.calculate({
-        measureId:             entry.id, data,
-        discountRate:          dr / 100,
-        carbonPriceEur:        cp,
-        priceScenario:         scenario,
-        electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
-        fossilMult,
-        cleanMult,
-        capexMeasMult,
-        capexBlMult,
-      });
-      return isNaN(r.npv) ? null : r.npv;
-    } catch (_) { return null; }
-  }
-
   function sbCalcNpvFull(entry, scenario, cp, dr, fossilMult, cleanMult, capexMeasMult, capexBlMult) {
     try {
       const r = CostsBenefits.calculate({
-        measureId:             entry.id, data,
-        discountRate:          dr / 100,
-        carbonPriceEur:        cp,
-        priceScenario:         scenario,
+        measureId:              entry.id, data,
+        discountRate:           dr / 100,
+        carbonPriceEur:         cp,
+        priceScenario:          scenario,
         electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
         fossilMult,
         cleanMult,
@@ -196,6 +213,8 @@
       return { npv: r.npv, npvLow, npvHigh };
     } catch (_) { return null; }
   }
+
+  const sbCalcNpv = (...args) => sbCalcNpvFull(...args)?.npv ?? null;
 
   function sbBuildMeasureGroups() {
     // Derive cats from the actual data so we don't miss contexts (e.g. apartment buildings)
@@ -688,6 +707,93 @@
       filtersDiv.appendChild(row);
     }
 
+    // Row: Veľkosť bodiek (dot radius)
+    {
+      const row = document.createElement('div');
+      row.className = 'q-filter-row';
+      const lbl = document.createElement('span');
+      lbl.className = 'q-filter-label';
+      lbl.textContent = 'Veľkosť bodiek:';
+      row.appendChild(lbl);
+      const dotVal = document.createElement('span');
+      dotVal.className = 'q-filter-label';
+      dotVal.textContent = sbDotR.toFixed(1);
+      dotVal.style.minWidth = '30px';
+      const dotSlider = document.createElement('input');
+      dotSlider.type  = 'range';
+      dotSlider.min   = 3;
+      dotSlider.max   = 15;
+      dotSlider.step  = 0.5;
+      dotSlider.value = sbDotR;
+      dotSlider.style.cssText = 'flex:1;margin:0 8px;max-width:200px;';
+      dotSlider.addEventListener('input', () => {
+        sbDotR = +dotSlider.value;
+        dotVal.textContent = sbDotR.toFixed(1);
+        rerender();
+      });
+      row.appendChild(dotSlider);
+      row.appendChild(dotVal);
+      filtersDiv.appendChild(row);
+    }
+
+    // Row: Veľkosť písma (font scale)
+    {
+      const row = document.createElement('div');
+      row.className = 'q-filter-row';
+      const lbl = document.createElement('span');
+      lbl.className = 'q-filter-label';
+      lbl.textContent = 'Veľkosť písma:';
+      row.appendChild(lbl);
+      const fontVal = document.createElement('span');
+      fontVal.className = 'q-filter-label';
+      fontVal.textContent = '×' + sbFontScale.toFixed(2);
+      fontVal.style.minWidth = '40px';
+      const fontSlider = document.createElement('input');
+      fontSlider.type  = 'range';
+      fontSlider.min   = 0.5;
+      fontSlider.max   = 2.0;
+      fontSlider.step  = 0.05;
+      fontSlider.value = sbFontScale;
+      fontSlider.style.cssText = 'flex:1;margin:0 8px;max-width:200px;';
+      fontSlider.addEventListener('input', () => {
+        sbFontScale = +fontSlider.value;
+        fontVal.textContent = '×' + sbFontScale.toFixed(2);
+        rerender();
+      });
+      row.appendChild(fontSlider);
+      row.appendChild(fontVal);
+      filtersDiv.appendChild(row);
+    }
+
+    // Row: Rozostup bodiek (collision scale)
+    {
+      const row = document.createElement('div');
+      row.className = 'q-filter-row';
+      const lbl = document.createElement('span');
+      lbl.className = 'q-filter-label';
+      lbl.textContent = 'Rozostup bodiek:';
+      row.appendChild(lbl);
+      const colVal = document.createElement('span');
+      colVal.className = 'q-filter-label';
+      colVal.textContent = sbCollideScale.toFixed(1) + '×';
+      colVal.style.minWidth = '35px';
+      const colSlider = document.createElement('input');
+      colSlider.type  = 'range';
+      colSlider.min   = 0.5;
+      colSlider.max   = 3.0;
+      colSlider.step  = 0.1;
+      colSlider.value = sbCollideScale;
+      colSlider.style.cssText = 'flex:1;margin:0 8px;max-width:200px;';
+      colSlider.addEventListener('input', () => {
+        sbCollideScale = +colSlider.value;
+        colVal.textContent = sbCollideScale.toFixed(1) + '×';
+        rerender();
+      });
+      row.appendChild(colSlider);
+      row.appendChild(colVal);
+      filtersDiv.appendChild(row);
+    }
+
     wrap.insertBefore(filtersDiv, wrap.firstChild);
   }
 
@@ -759,11 +865,12 @@
       return npvB - npvA;
     });
     const totalW = container.clientWidth || 720;
-    const DOT_R  = 7.2;
+    const DOT_R  = sbDotR;
+    const fs     = px => (sbFontScale * px).toFixed(1) + 'px';
 
     // Resolve lane config for the active grouping mode
     const fuelOf = d => /uhlí/i.test(d.cat) ? 'Uhlí' : /plyn/i.test(d.cat) ? 'Plyn' : 'Ostatní';
-    const fuelColors = { 'Uhlí': '#903156', 'Plyn': '#e37373', 'Ostatní': '#888' };
+    const fuelColors = { 'Uhlí': '#903156', 'Plyn': '#e37373', 'Ostatní': '#9ea7b3' };
     const fuelLanes = ['Uhlí', 'Plyn', 'Ostatní'].filter(v => dots.some(d => fuelOf(d) === v));
 
     const rdFuelLaneOf = d => {
@@ -777,13 +884,11 @@
     const sbCatLabel = v => v.replace(/ – ([A-F])(\b|$)/, ' ($1)');
     const sbLcColor  = name => /renovace bez zateplení/i.test(name) ? '#c05a1a' : '#1a7a85';
 
-    // ── Column layout: 15% fossil | 50% chart | 15% measure | 20% stats ─────
-    const leftZoneW        = Math.round(totalW * 0.15);   // fossil context column
-    const rightMeasW       = Math.round(totalW * 0.15);   // low-carbon measure column
-    const rightStatW       = Math.round(totalW * 0.20);   // stat columns (2 × 10 %)
+    // ── Column layout: left padding | chart | measure | stats ─────────────
+    const leftZoneW        = Math.round(totalW * 0.12);    // shrunken left context column (×1.2 of 0.10 base)
+    const rightMeasW       = Math.round(totalW * 0.20);   // low-carbon measure column (icon + text)
+    const rightStatW       = Math.round(totalW * 0.25);   // stat columns (2 × 12.5 %)
     const statColW         = rightStatW / 2;              // each stat sub-column
-    const ICON_COL_W       = Math.min(75, leftZoneW - 8); // icon size in side columns (1.7×)
-    const ICON_COL_H       = ICON_COL_W;
     const SQ_SIZE          = 10;   // block square px
     const SQ_PER_ROW       = 5;
     const CO2_PER_SQ       = 20;
@@ -793,19 +898,19 @@
     const RIGHT_MARGIN_STATS = CHART_R_GAP + rightMeasW + rightStatW;
 
     const LANE_CONFIGS = {
-      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#555',    leftMargin: leftZoneW, rightMargin: RIGHT_MARGIN_STATS, showBaselineLabel: true },
-      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#555', leftMargin: leftZoneW, rightMargin: RIGHT_MARGIN_STATS, showBaselineLabel: true },
-      scenario: { lanes: SB_SCENARIOS,     laneOf: d => d.sc,    labelFn: v => SB_SCENARIO_LABEL[v], colorFn: () => '#555',                        leftMargin: 160 },
-      price:    { lanes: SB_CARBON_PRICES, laneOf: d => d.cp,    labelFn: v => v + ' €',             colorFn: () => '#555',                        leftMargin:  60 },
-      discount: { lanes: SB_DISCOUNT_RATES,laneOf: d => d.dr,    labelFn: v => v + ' %',             colorFn: () => '#555',                        leftMargin:  50 },
-      fuel:     { lanes: fuelLanes,        laneOf: fuelOf,       labelFn: v => v,                    colorFn: v => fuelColors[v] || '#888',        leftMargin:  70 },
+      context:  { lanes: cats,             laneOf: d => d.cat,   labelFn: sbCatLabel,                colorFn: v => SB_CAT_COLORS[v] || '#515b66',    leftMargin: leftZoneW, rightMargin: RIGHT_MARGIN_STATS, showBaselineLabel: true },
+      rdFuel:   { lanes: rdFuelLanes,      laneOf: rdFuelLaneOf, labelFn: sbCatLabel,                colorFn: v => rdFuelColors[v] || SB_CAT_COLORS[v] || '#515b66', leftMargin: leftZoneW, rightMargin: RIGHT_MARGIN_STATS, showBaselineLabel: true },
+      scenario: { lanes: SB_SCENARIOS,     laneOf: d => d.sc,    labelFn: v => SB_SCENARIO_LABEL[v], colorFn: () => '#515b66',                        leftMargin: 160 },
+      price:    { lanes: SB_CARBON_PRICES, laneOf: d => d.cp,    labelFn: v => v + ' €',             colorFn: () => '#515b66',                        leftMargin:  60 },
+      discount: { lanes: SB_DISCOUNT_RATES,laneOf: d => d.dr,    labelFn: v => v + ' %',             colorFn: () => '#515b66',                        leftMargin:  50 },
+      fuel:     { lanes: fuelLanes,        laneOf: fuelOf,       labelFn: v => v,                    colorFn: v => fuelColors[v] || '#9ea7b3',        leftMargin:  70 },
     };
     const laneCfg = LANE_CONFIGS[sbGrouped] || null;
 
     let M, LANE_H, totalH, yTarget, yClamp;
     if (laneCfg) {
       M      = { top: laneCfg.showBaselineLabel ? 56 : 30, right: laneCfg.rightMargin || 24, bottom: 40, left: laneCfg.leftMargin };
-      LANE_H = DOT_R * 32.2; // 28 × 1.15
+      LANE_H = DOT_R * 26.2; // targets ~850 px total height at 4 lanes
       totalH = laneCfg.lanes.length * LANE_H + M.top + M.bottom;
       yTarget = d => {
         const idx = laneCfg.lanes.indexOf(laneCfg.laneOf(d));
@@ -831,7 +936,6 @@
     // Column centre x positions (used when showBaselineLabel)
     const RX           = M.left + chartW;              // beeswarm right edge
     const xRightCols   = RX + CHART_R_GAP;             // start of right columns (after gap)
-    const leftCX       = leftZoneW / 2;                // centre of fossil column
     const rightMeasCX  = xRightCols + rightMeasW / 2;  // centre of measure column
     const xStatCO2     = xRightCols + rightMeasW + statColW / 2;
     const xStatPlyn    = xRightCols + rightMeasW + statColW + statColW / 2;
@@ -847,7 +951,7 @@
     // Snap x back to NPV position after each tick so only y is displaced by collide
     const sim = d3.forceSimulation(dots)
       .force('y', d3.forceY(d => yTarget(d)).strength(laneCfg ? 0.85 : 0.3))
-      .force('collide', d3.forceCollide(DOT_R * 1.5))
+      .force('collide', d3.forceCollide(DOT_R * sbCollideScale))
       .stop();
     const ticks = laneCfg ? 120 : 150;
     for (let i = 0; i < ticks; i++) {
@@ -860,14 +964,22 @@
       .attr('width', totalW).attr('height', totalH)
       .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
 
-    svg.append('defs'); // reserved for future use
+    const NEG_HATCH_ID = 'sb-neg-hatch';
+    const defs = svg.append('defs');
+    const hPat = defs.append('pattern')
+      .attr('id', NEG_HATCH_ID).attr('patternUnits', 'userSpaceOnUse')
+      .attr('width', 5).attr('height', 5)
+      .attr('patternTransform', 'rotate(45 0 0)');
+    hPat.append('rect').attr('width', 5).attr('height', 5).attr('fill', '#9ea7b3');
+    hPat.append('line').attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 5)
+      .attr('stroke', 'white').attr('stroke-width', 2);
 
     // Zero line
     const zx = M.left + xScale(0);
     svg.append('line')
       .attr('x1', zx).attr('x2', zx)
       .attr('y1', M.top).attr('y2', totalH - M.bottom)
-      .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+      .attr('stroke', '#9ea7b3').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
 
     // Column headers (drawn once above all lanes) — styled via .sb-col-hdr CSS class
     if (laneCfg?.showBaselineLabel) {
@@ -876,15 +988,15 @@
         const t = svg.append('text')
           .attr('class', 'sb-col-hdr').attr('x', x).attr('y', 12)
           .attr('text-anchor', anchor)
-          .attr('font-size', '9px').attr('letter-spacing', '0.04em');
+          .attr('font-size', fs(9)).attr('letter-spacing', '0.04em');
         lines.forEach((line, i) => {
           t.append('tspan').attr('x', x).attr('dy', i === 0 ? '0' : '1.25em').text(line);
         });
         return t;
       };
-      hdrLines(4,                     ['KONTEXT'],                    'start');
+
       hdrLines(M.left + chartW / 2,   ['VÝHODNOST']);
-      hdrLines(xRightCols + 15,       ['OPATŘENÍ'],                   'start');
+      hdrLines(xRightCols + 77,       ['OPATŘENÍ'],                   'start');
       hdrLines(xStatCO2,              ['ÚSPORA', 'EMISÍ']);
       hdrLines(xStatPlyn,             ['ÚSPORA', 'IMPORTU', 'ROPY A PLYNU']);
     }
@@ -896,7 +1008,7 @@
         svg.append('line')
           .attr('x1', M.left).attr('x2', M.left + chartW)
           .attr('y1', cy).attr('y2', cy)
-          .attr('stroke', '#b0bfc8').attr('stroke-width', 1);
+          .attr('stroke', '#9ea7b3').attr('stroke-width', 1);
 
         const showBl = laneCfg.showBaselineLabel;
         const labelY = showBl ? cy - 5 : cy + 4;
@@ -905,14 +1017,13 @@
           const firstCat = laneCfg.laneOf === rdFuelLaneOf
             ? cats.find(c => rdFuelLaneOf({ cat: c }) === v)
             : v;
-          const blEntry = firstCat ? sbFindEntry(sbSelectedMeasure, firstCat) : null;
-          const blName  = blEntry?.measure_baseline || '';
-          const blColor = /uhlí|uhelný/i.test(blName) ? '#903156'
-                        : /plyn/i.test(blName)         ? '#e37373'
-                        : /renovace/i.test(blName)     ? '#c05a1a'
-                        : '#888';
+          const measEntry = firstCat ? sbFindEntry(sbSelectedMeasure, firstCat) : null;
+          const blName    = measEntry?.measure_baseline || '';
+          const blColor   = /uhlí|uhelný/i.test(blName) ? '#903156'
+                          : /plyn/i.test(blName)         ? '#e37373'
+                          : /renovace/i.test(blName)     ? '#c05a1a'
+                          : '#9ea7b3';
 
-          // ── LEFT column: context label + badge, then icon (left-aligned) + name ──
           const ctxLabel    = laneCfg.labelFn(v);
           const letterMatch = ctxLabel.match(/\(([A-F])\)$/);
           const badgeLetter = letterMatch?.[1] ?? null;
@@ -921,24 +1032,15 @@
             .replace(/\s*(uhlí|plyn)\s*$/i, '')
             .trim();
 
-          // Icon position (defined first — used by both context label and icon rendering)
-          const iconBaseY    = cy - ICON_COL_H / 2 + 16;   // base position (breathing room above)
-          const iconTopY     = iconBaseY - LANE_H * 0.15;   // raised 15% of lane height
-          const measIconTopY = iconTopY;
+          // ── Layout: two text lines centered around lane cy ──────────────
+          const CTX_PX    = sbFontScale * 12;
+          const BADGE_H   = Math.round(CTX_PX);          // badge matches context text height
+          const BADGE_W   = Math.round(BADGE_H * 1.3);
+          const BADGE_TIP = Math.round(BADGE_H * 0.4);
+          const ctxTextY  = cy - Math.round(CTX_PX * 0.9);
+          const nameTextY = cy + Math.round(CTX_PX * 1.0);
 
-          // Context text + EU energy-label arrow badge — anchored above icon
-          const BADGE_H = 16, BADGE_W = 22, BADGE_TIP = 8;
-          const ctxTextY = iconTopY - 20; // fixed gap above icon
-          svg.append('text')
-            .attr('x', 4).attr('y', ctxTextY)
-            .attr('text-anchor', 'start').attr('font-size', '11px').attr('font-weight', '700')
-            .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#3d4f5c')
-            .text(ctxPrefix.toUpperCase());
-          if (badgeLetter) {
-            const approxTextW = ctxPrefix.length * 7.2;
-            const bx = 4 + approxTextW + 8;
-            const by = ctxTextY - BADGE_H + 2;
-            const badgeColor = '#8a9aaa';
+          const drawBadge = (bx, by) => {
             const pts = [
               `${bx},${by}`,
               `${bx + BADGE_W},${by}`,
@@ -946,34 +1048,54 @@
               `${bx + BADGE_W},${by + BADGE_H}`,
               `${bx},${by + BADGE_H}`,
             ].join(' ');
-            svg.append('polygon').attr('points', pts).attr('fill', badgeColor);
+            svg.append('polygon').attr('points', pts).attr('fill', '#515b66');
             svg.append('text')
-              .attr('x', bx + BADGE_W / 2).attr('y', by + BADGE_H - 4)
-              .attr('text-anchor', 'middle').attr('font-size', '10px').attr('font-weight', '700')
+              .attr('x', bx + BADGE_W / 2).attr('y', by + BADGE_H - Math.round(BADGE_H * 0.2))
+              .attr('text-anchor', 'middle').attr('font-size', fs(9)).attr('font-weight', '700')
               .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#fff')
               .text(badgeLetter);
-          }
-          sbDrawIcon(svg, blName, 4, iconTopY, ICON_COL_W, ICON_COL_H);
+          };
+
+          // ── LEFT column: context + badge + baseline name (no icon) ──────────
           svg.append('text')
-            .attr('x', 4).attr('y', iconTopY + ICON_COL_H + 14)
-            .attr('text-anchor', 'start').attr('font-size', '11px').attr('font-weight', '700')
+            .attr('x', 4).attr('y', ctxTextY)
+            .attr('text-anchor', 'start').attr('font-size', fs(12)).attr('font-weight', '500')
+            .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#515b66')
+            .text(ctxPrefix.toUpperCase());
+          if (badgeLetter) {
+            drawBadge(4 + ctxPrefix.length * sbFontScale * 7.8 + 6, ctxTextY - BADGE_H + 2);
+          }
+          svg.append('text')
+            .attr('x', 4).attr('y', nameTextY)
+            .attr('text-anchor', 'start').attr('font-size', fs(14)).attr('font-weight', '500')
             .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', blColor)
             .text(blName);
 
-          // ── RIGHT column: measure icon (left-aligned, 15% higher) + measure name ──
-          sbDrawIcon(svg, sbSelectedMeasure, xRightCols + 15, measIconTopY, ICON_COL_W, ICON_COL_H);
+          // ── RIGHT column: icon (left) + context + badge + measure name ────────
+          const MEAS_ICON_W = 54;
+          const measIconX   = xRightCols + 15;
+          const measTextX   = measIconX + MEAS_ICON_W + 8;
+          sbDrawIcon(svg, sbSelectedMeasure, measIconX, cy - MEAS_ICON_W / 2, MEAS_ICON_W, MEAS_ICON_W);
           svg.append('text')
-            .attr('x', xRightCols + 15).attr('y', measIconTopY + ICON_COL_H + 14)
-            .attr('text-anchor', 'start').attr('font-size', '11px').attr('font-weight', '700')
-            .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#3d4f5c')
+            .attr('x', measTextX).attr('y', ctxTextY)
+            .attr('text-anchor', 'start').attr('font-size', fs(12)).attr('font-weight', '500')
+            .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#515b66')
+            .text(ctxPrefix.toUpperCase());
+          if (badgeLetter) {
+            drawBadge(measTextX + ctxPrefix.length * sbFontScale * 7.8 + 6, ctxTextY - BADGE_H + 2);
+          }
+          svg.append('text')
+            .attr('x', measTextX).attr('y', nameTextY)
+            .attr('text-anchor', 'start').attr('font-size', fs(14)).attr('font-weight', '700')
+            .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#515b66')
             .text(sbSelectedMeasure);
 
           // ── STATS at default params (CP · 70€ · 3%) ─────────────────────────
           let co2Saved = null, fuelSaved = null;
-          if (blEntry?.id != null) {
+          if (measEntry?.id != null) {
             try {
               const res = CostsBenefits.calculate({
-                measureId:      blEntry.id, data,
+                measureId:      measEntry.id, data,
                 discountRate:   SB_DEFAULT.dr / 100,
                 carbonPriceEur: SB_DEFAULT.cp,
                 priceScenario:  SB_DEFAULT.scenario,
@@ -987,12 +1109,15 @@
           }
 
           // Stat cell: blocks grow upward from cy, value text below centre
-          const STAT_CLR = '#c0c8d0';
-          const drawStatCell = (cx, nSq, valueText) => {
-            if (nSq > 0) sbDrawBlockGrid(svg, cx, cy - 4, nSq, SQ_PER_ROW, SQ_SIZE);
+          const STAT_CLR = '#9ea7b3';
+          const drawStatCell = (cx, nSq, valueText, useCircles = false) => {
+            if (nSq > 0) {
+              if (useCircles) sbDrawCircleGrid(svg, cx, cy - 4, nSq, SQ_PER_ROW, SQ_SIZE);
+              else            sbDrawBlockGrid(svg, cx, cy - 4, nSq, SQ_PER_ROW, SQ_SIZE);
+            }
             svg.append('text')
               .attr('x', cx).attr('y', cy + 16)
-              .attr('text-anchor', 'middle').attr('font-size', '12px').attr('font-weight', '700')
+              .attr('text-anchor', 'middle').attr('font-size', fs(12)).attr('font-weight', '700')
               .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', STAT_CLR)
               .text(valueText);
           };
@@ -1008,7 +1133,7 @@
           const nScope1 = scope1Mwh != null && scope1Mwh > 0
             ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(scope1Mwh / MWH_PER_SQ))) : 0;
           drawStatCell(xStatPlyn, nScope1,
-            scope1Mwh != null && scope1Mwh !== 0 ? Math.round(scope1Mwh) + ' MWh' : '–');
+            scope1Mwh != null && scope1Mwh !== 0 ? Math.round(scope1Mwh) + ' MWh' : '–', true);
 
           // Separator line + Scope 2: positive (solar) above line, negative (BEV) below line
           if (scope2Mwh != null && scope2Mwh !== 0) {
@@ -1017,26 +1142,29 @@
             svg.append('line')
               .attr('x1', xStatPlyn - gridHalfW).attr('x2', xStatPlyn + gridHalfW)
               .attr('y1', sepY).attr('y2', sepY)
-              .attr('stroke', '#c8d4da').attr('stroke-width', 0.8).attr('stroke-dasharray', '3 2');
+              .attr('stroke', '#9ea7b3').attr('stroke-width', 0.8).attr('stroke-dasharray', '3 2');
             const nScope2 = Math.min(SQ_PER_ROW, Math.max(1, Math.round(Math.abs(scope2Mwh) / MWH_PER_SQ)));
             const s2Sign  = scope2Mwh > 0 ? '+' : '−';
             let lblY;
             if (scope2Mwh > 0) {
               // Savings: blocks sit just above the separator line, growing upward (teal)
               const nRowsS2 = Math.ceil(nScope2 / SQ_PER_ROW);
-              sbDrawBlockGridDown(svg, xStatPlyn, sepY - 3 - nRowsS2 * SQ_SIZE,
+              sbDrawCircleGridDown(svg, xStatPlyn, sepY - 3 - nRowsS2 * SQ_SIZE,
                 nScope2, SQ_PER_ROW, SQ_SIZE, '#b8d8d0');
               lblY = sepY + 14;
             } else {
-              // Extra consumption: blocks grow downward from just below the separator line (rose)
+              // Extra consumption: grey hatched circles, downward from just below separator line
               const s2RowH = Math.ceil(nScope2 / SQ_PER_ROW) * SQ_SIZE;
-              sbDrawBlockGridDown(svg, xStatPlyn, sepY + 3, nScope2, SQ_PER_ROW, SQ_SIZE, '#e8c4c4');
+              sbDrawCircleGridDown(svg, xStatPlyn, sepY + 3, nScope2, SQ_PER_ROW, SQ_SIZE,
+                `url(#${NEG_HATCH_ID})`);
               lblY = sepY + 3 + s2RowH + 12;
             }
+            const lblX      = scope2Mwh < 0 ? xStatPlyn - gridHalfW : xStatPlyn;
+            const lblAnchor = scope2Mwh < 0 ? 'start' : 'middle';
             const lbl = svg.append('text')
-              .attr('x', xStatPlyn).attr('y', lblY)
-              .attr('text-anchor', 'middle').attr('font-size', '10px').attr('font-weight', '400')
-              .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#9ab0ba')
+              .attr('x', lblX).attr('y', lblY)
+              .attr('text-anchor', lblAnchor).attr('font-size', fs(10)).attr('font-weight', '400')
+              .attr('font-family', 'Inter, system-ui, sans-serif').attr('fill', '#9ea7b3')
               .text(s2Sign + Math.round(Math.abs(scope2Mwh)) + ' MWh výroba el.');
             lbl.append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
           }
@@ -1044,7 +1172,7 @@
           svg.append('text')
             .attr('x', M.left - 8).attr('y', labelY)
             .attr('text-anchor', 'end')
-            .attr('font-size', '11px').attr('fill', laneCfg.colorFn(v))
+            .attr('font-size', fs(10)).attr('fill', laneCfg.colorFn(v))
             .text(laneCfg.labelFn(v));
         }
       });
@@ -1066,7 +1194,7 @@
             return v === 0 ? '0' : s + a;
           }));
           sel.select('.domain').remove();
-          sel.selectAll('.tick line').attr('stroke', '#9ba5ad').attr('stroke-width', 1);
+          sel.selectAll('.tick line').attr('stroke', '#9ea7b3').attr('stroke-width', 1);
           // font-size and fill come from .chart-axis text CSS rule
         });
     }
@@ -1126,7 +1254,7 @@
 
         svg.append('path')
           .datum(density)
-          .attr('fill', '#9ba5ad')
+          .attr('fill', '#9ea7b3')
           .attr('opacity', 0.28)
           .attr('d', area);
 
@@ -1137,7 +1265,7 @@
           svg.append('line')
             .attr('x1', mx).attr('x2', mx)
             .attr('y1', cy - halfH * 0.65).attr('y2', cy + halfH * 0.65)
-            .attr('stroke', '#53616e').attr('stroke-width', 1.5)
+            .attr('stroke', '#515b66').attr('stroke-width', 1.5)
             .attr('stroke-dasharray', '3 2');
         }
       });
@@ -1154,7 +1282,7 @@
         .attr('width',  d => Math.max(1, xScale(Math.min(SB_X_DOMAIN[1], d.npvHigh)) - xScale(Math.max(SB_X_DOMAIN[0], d.npvLow))))
         .attr('y',      d => yClamp(d, d.y) - bandH / 2)
         .attr('height', bandH)
-        .attr('fill',   '#9ba5ad')
+        .attr('fill',   '#9ea7b3')
         .attr('opacity', d => d.isDefault ? 0.35 : 0.12)
         .attr('rx', 2);
     }
@@ -1172,12 +1300,12 @@
     };
 
     const dotFill = d => {
-      if (sbColorBy === 'sc')  return SB_SC_COLORS[d.sc] || '#888';
+      if (sbColorBy === 'sc')  return SB_SC_COLORS[d.sc] || '#9ea7b3';
       if (sbColorBy === 'cp')  return SB_CP_COLOR_SCALE(d.cp);
-      if (sbColorBy === 'dr')  return SB_DR_COLORS[d.dr] || '#888';
-      if (sbColorBy === 'pf')  return SB_PF_COLORS[d.priceCase] || '#888';
+      if (sbColorBy === 'dr')  return SB_DR_COLORS[d.dr] || '#9ea7b3';
+      if (sbColorBy === 'pf')  return SB_PF_COLORS[d.priceCase] || '#9ea7b3';
       if (sbColorBy === 'npv') return sbNpvFill(d);
-      return '#9ba5ad';
+      return '#9ea7b3';
     };
 
     // Draw non-default dots first (behind), then default dots on top
@@ -1215,46 +1343,24 @@
           sbTip.style.left = (event.clientX + 14) + 'px';
           sbTip.style.top  = (event.clientY - 28) + 'px';
         })
-        .on('mouseout', function() {
-          d3.select(this).attr('opacity', 0.6);
+        .on('mouseout', function(event, d) {
+          d3.select(this).attr('opacity', d.isDefault ? 1 : 0.6);
           sbTip.style.display = 'none';
         });
     });
 
-    // NPV labels above výchozí dots in solo-default mode
-    if (sbOnlyDefault) {
-      svg.selectAll(null)
-        .data(dots.filter(d => d.isDefault))
-        .join('text')
-        .attr('x', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
-        .attr('y', d => yClamp(d, d.y) - DOT_R - 5)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '11px')
-        .attr('font-family', '"Roboto", system-ui, sans-serif')
-        .attr('fill', '#3d4f5c')
-        .text(d => fmtNpv(d.npv));
-    }
-
-    // E / C letter inside building dots (– E or – C suffix categories)
-    const catLetter = cat => /– E$/.test(cat) ? 'E' : /– C$/.test(cat) ? 'C' : null;
-    const ecDots = dots.filter(d => catLetter(d.cat));
-    if (sbShowLetters && ecDots.length) {
-      [ecDots.filter(d => !d.isDefault), ecDots.filter(d => d.isDefault)].forEach(subset => {
-        svg.selectAll(null)
-          .data(subset)
-          .join('text')
-          .attr('x', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
-          .attr('y', d => yClamp(d, d.y))
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'central')
-          .attr('font-size', d => (d.isDefault ? DOT_R + 1 : DOT_R) * 1.5 + 'px')
-          .attr('font-weight', '700')
-          .attr('fill', 'white')
-          .attr('opacity', d => d.isDefault ? 0.9 : 0.25)
-          .attr('pointer-events', 'none')
-          .text(d => catLetter(d.cat));
-      });
-    }
+    // NPV labels above referenční dots — always visible
+    svg.selectAll(null)
+      .data(dots.filter(d => d.isDefault))
+      .join('text')
+      .attr('x', d => Math.max(M.left + DOT_R, Math.min(M.left + chartW - DOT_R, d.x)))
+      .attr('y', d => yClamp(d, d.y) - (DOT_R + 1) - 5)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', fs(12))
+      .attr('font-weight', '700')
+      .attr('font-family', 'Inter, system-ui, sans-serif')
+      .attr('fill', '#515b66')
+      .text(d => fmtNpv(d.npv));
 
     fokDownloadBar(container, 'sensitivity-beeswarm');
 
@@ -1279,7 +1385,7 @@
           const item = document.createElement('div');
           item.className = 'sb-legend-item';
           const swatch = document.createElement('span');
-          swatch.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:50%;background:${SB_CAT_COLORS[cat] || '#888'};flex-shrink:0;`;
+          swatch.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:50%;background:${SB_CAT_COLORS[cat] || '#9ea7b3'};flex-shrink:0;`;
           const label = document.createElement('span');
           label.textContent = cat;
           item.appendChild(swatch);

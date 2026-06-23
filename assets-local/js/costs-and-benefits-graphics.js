@@ -7,6 +7,13 @@
   const COLOR_FAVORABLE = '#1a7a85';
   const COLOR_COSTLY    = '#c0392b';
 
+  // Shared scenario colour palette — used by all charts on this page
+  const SCENARIO_COLORS = {
+    CP:    '#de7c1a',   // Současné politiky
+    NZ:    '#19a0a8',   // Net-zero
+    CP_EC: '#b33064',   // Energetická krize
+  };
+
   // ── State ─────────────────────────────────────────────────────────────────
   const state = {
     carbonPrice:           70,
@@ -185,7 +192,7 @@
 
       const ROW_H    = 32;
       const LABEL_W  = 200;
-      const T_MARGIN = { top: 20, right: 24, bottom: 36, left: 8 };
+      const T_MARGIN = { top: 26, right: 24, bottom: 36, left: 8 };
       const totalW   = container.clientWidth || 700;
       const chartW   = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
       const totalH   = rows.length * ROW_H + T_MARGIN.top + T_MARGIN.bottom;
@@ -206,6 +213,18 @@
         .attr('y1', T_MARGIN.top).attr('y2', totalH - T_MARGIN.bottom)
         .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
 
+      // Compact legend at top (drawn once, not per row)
+      STEP_LABELS.forEach((lbl, pi) => {
+        const lx = pi * 58;
+        chart.append('circle')
+          .attr('cx', lx + 5).attr('cy', 13).attr('r', 5)
+          .attr('fill', STEP_COLORS[pi]).attr('stroke', 'white').attr('stroke-width', 1.5);
+        chart.append('text')
+          .attr('x', lx + 14).attr('y', 17)
+          .attr('font-size', '9px').attr('fill', STEP_COLORS[pi]).attr('font-weight', '600')
+          .text(lbl);
+      });
+
       for (let i = 0; i < rows.length; i++) {
         const r    = rows[i];
         const midY = T_MARGIN.top + i * ROW_H + ROW_H / 2;
@@ -221,20 +240,15 @@
           const dotX = xScale(npv);
           chart.append('circle')
             .attr('cx', dotX).attr('cy', midY)
-            .attr('r', 5).attr('fill', STEP_COLORS[pi])
+            .attr('r', 7).attr('fill', STEP_COLORS[pi])
             .attr('stroke', 'white').attr('stroke-width', 1.5);
-          chart.append('text')
-            .attr('x', dotX).attr('y', midY - 8)
-            .attr('text-anchor', 'middle')
-            .attr('font-size', '9px').attr('fill', STEP_COLORS[pi])
-            .text(STEP_LABELS[pi]);
         });
       }
 
       chart.append('g')
         .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
         .attr('class', 'chart-axis')
-        .call(d3.axisBottom(xScale).ticks(5).tickFormat(v => {
+        .call(d3.axisBottom(xScale).ticks(4).tickFormat(v => {
           const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
           if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
           if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
@@ -309,14 +323,14 @@
         const dotX = xScale(r.npvCurrent);
         chart.append('circle')
           .attr('cx', dotX).attr('cy', midY)
-          .attr('r', 5).attr('fill', r.color)
+          .attr('r', 7).attr('fill', r.color)
           .attr('stroke', 'white').attr('stroke-width', 1.5);
       }
 
       chart.append('g')
         .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
         .attr('class', 'chart-axis')
-        .call(d3.axisBottom(xScale).ticks(5).tickFormat(v => {
+        .call(d3.axisBottom(xScale).ticks(4).tickFormat(v => {
           const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
           if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
           if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
@@ -439,7 +453,7 @@
     const GROUP_HEADER_H = 22;
     const GROUP_GAP      = 12;
     const LABEL_W        = 200;
-    const T_MARGIN       = { top: isElTariff ? 64 : isDiscountRate ? 20 : 34, right: 24, bottom: 36, left: 8 };
+    const T_MARGIN       = { top: isElTariff ? 64 : isDiscountRate ? 26 : 34, right: 24, bottom: 36, left: 8 };
 
     const totalW  = container.clientWidth || 700;
     const chartW  = Math.max(totalW - LABEL_W - T_MARGIN.left - T_MARGIN.right, 120);
@@ -468,6 +482,20 @@
       .attr('x1', zx).attr('x2', zx)
       .attr('y1', T_MARGIN.top).attr('y2', totalH - T_MARGIN.bottom)
       .attr('stroke', '#ccc').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+
+    // Compact legend for discount rate chart (top-left, drawn once)
+    if (isDiscountRate) {
+      STEP_LABELS.forEach((lbl, pi) => {
+        const lx = pi * 58;
+        chart.append('circle')
+          .attr('cx', lx + 5).attr('cy', 13).attr('r', 5)
+          .attr('fill', STEP_COLORS[pi]).attr('stroke', 'white').attr('stroke-width', 1.5);
+        chart.append('text')
+          .attr('x', lx + 14).attr('y', 17)
+          .attr('font-size', '9px').attr('fill', STEP_COLORS[pi]).attr('font-weight', '600')
+          .text(lbl);
+      });
+    }
 
     // Legend for carbon price chart (top-right, drawn once)
     if (!isDiscountRate && !isElTariff) {
@@ -533,22 +561,13 @@
 
         if (isDiscountRate || isElTariff) {
           const DOT_COLORS = isElTariff ? TARIFF_COLORS : STEP_COLORS;
-          const DOT_LABELS = isElTariff ? TARIFF_LABELS : STEP_LABELS;
           r.npvs.forEach((npv, pi) => {
             if (npv == null) return;
             const dotX = xScale(npv);
             chart.append('circle')
               .attr('cx', dotX).attr('cy', midY)
-              .attr('r', 5).attr('fill', DOT_COLORS[pi])
+              .attr('r', 7).attr('fill', DOT_COLORS[pi])
               .attr('stroke', 'white').attr('stroke-width', 1.5);
-            // Inline labels only for discount rate; tariff uses a legend instead.
-            if (!isElTariff) {
-              chart.append('text')
-                .attr('x', dotX).attr('y', midY - 8)
-                .attr('text-anchor', 'middle')
-                .attr('font-size', '9px').attr('fill', DOT_COLORS[pi])
-                .text(DOT_LABELS[pi]);
-            }
           });
         } else {
           if (r.npvAtMin != null && r.npvAtMax != null) {
@@ -561,7 +580,7 @@
           const dotX = xScale(r.npvCurrent);
           chart.append('circle')
             .attr('cx', dotX).attr('cy', midY)
-            .attr('r', 5).attr('fill', r.color)
+            .attr('r', 7).attr('fill', r.color)
             .attr('stroke', 'white').attr('stroke-width', 1.5);
         }
 
@@ -575,7 +594,7 @@
     chart.append('g')
       .attr('transform', `translate(0, ${totalH - T_MARGIN.bottom})`)
       .attr('class', 'chart-axis')
-      .call(d3.axisBottom(xScale).ticks(5).tickFormat(v => {
+      .call(d3.axisBottom(xScale).ticks(4).tickFormat(v => {
         const a = Math.abs(v), s = v < 0 ? '−' : v > 0 ? '+' : '';
         if (a >= 1e6) return s + (a / 1e6).toFixed(1) + ' M';
         if (a >= 1e3) return s + Math.round(a / 1e3) + ' tis.';
@@ -1412,7 +1431,7 @@
     });
 
     // Arrows (drawn before dots so dots sit on top)
-    const DOT_R = 6;
+    const DOT_R = 7;
     pairs.forEach(({ a, b }) => {
       const ax = ox + xScale(a.npv), ay = oy + yScale(a.savedT);
       const bx = ox + xScale(b.npv), by = oy + yScale(b.savedT);
@@ -1499,7 +1518,7 @@
       .text('Kč / t CO₂');
 
     // Beeswarm via force simulation
-    const DOT_R = 5;
+    const DOT_R = 7;
     const simNodes = points.map(p => ({ ...p, x: M.left + xScale(p.kcPerT), y: midY }));
     d3.forceSimulation(simNodes)
       .force('x', d3.forceX(d => M.left + xScale(d.kcPerT)).strength(1))
@@ -1536,7 +1555,7 @@
       });
   }
 
-  // ── CAPEX beeswarm chart ──────────────────────────────────────────────────
+  // ── CAPEX beeswarm chart ─────────────────────────────────────────────────
   function renderCapexBeeswarmChart(container, sharedAbsMax) {
     const points = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
       .filter(p => p.savedT > 0 && p.capexPerT != null && isFinite(p.capexPerT));
@@ -1583,7 +1602,7 @@
       .attr('font-size', '11px').attr('fill', '#666')
       .text('Kč / t CO₂ (rozdíl v investičních nákladech)');
 
-    const DOT_R = 5;
+    const DOT_R = 7;
     const simNodes = points.map(p => ({ ...p, x: M.left + xScale(p.capexPerT), y: midY }));
     d3.forceSimulation(simNodes)
       .force('x', d3.forceX(d => M.left + xScale(d.capexPerT)).strength(1))
@@ -1625,9 +1644,9 @@
 
   // ── NPV scenario comparison (shared helpers) ──────────────────────────────
   const SCENARIO_DEFS = [
-    { key: 'CP',    label: 'Současné politiky', color: '#2860b4' },
-    { key: 'NZ',    label: 'Net-zero',           color: '#1f8c47' },
-    { key: 'CP_EC', label: 'Energetická krize',  color: '#c43535' },
+    { key: 'CP',    label: 'Současné politiky', color: SCENARIO_COLORS.CP    },
+    { key: 'NZ',    label: 'Net-zero',           color: SCENARIO_COLORS.NZ    },
+    { key: 'CP_EC', label: 'Energetická krize',  color: SCENARIO_COLORS.CP_EC },
   ];
 
   // categoryFilter: array of category strings, or null for all
@@ -1645,7 +1664,7 @@
     }
     return Object.values(byId)
       .filter(d => SCENARIO_DEFS.every(sc => d[sc.key] != null))
-      .sort((a, b) => a.CP - b.CP);
+      .sort((a, b) => b.CP - a.CP);
   }
 
   // ── Dumbbell chart ─────────────────────────────────────────────────────────
@@ -1655,8 +1674,8 @@
     const rows = computeScenarioRows(categoryFilter, entries);
     if (!rows.length) return;
 
-    const DOT_R = 4;
-    const ROW_H = 46;
+    const DOT_R = 7;
+    const ROW_H = 54;
     const M = { top: 6, right: 16, bottom: 36, left: 190 };
     const totalW = container.clientWidth || 360;
     const chartW = totalW - M.left - M.right;
@@ -1743,6 +1762,7 @@
           .on('mouseout', function() { d3.select(this).attr('r', DOT_R); hideQTip(); });
       });
     });
+    fokDownloadBar(container, container.id || 'dumbbell');
   }
 
   function renderDumbbellLegend(container) {
@@ -1908,6 +1928,71 @@
     img.src = url;
   }
 
+  function fokDownloadBarMultiSvg(container, filename, cols = 4) {
+    const old = container.querySelector('.chart-dl-bar');
+    if (old) old.remove();
+    const svgs = Array.from(container.querySelectorAll(':scope > div > svg'));
+    if (!svgs.length) return;
+
+    const buildCombined = () => {
+      const W   = +svgs[0].getAttribute('width')  || 210;
+      const H   = +svgs[0].getAttribute('height') || 130;
+      const GAP = 8;
+      const rows    = Math.ceil(svgs.length / cols);
+      const totalW  = cols * W + (cols - 1) * GAP;
+      const totalH  = rows * H + (rows - 1) * GAP;
+
+      const ns  = 'http://www.w3.org/2000/svg';
+      const out = document.createElementNS(ns, 'svg');
+      out.setAttribute('xmlns', ns);
+      out.setAttribute('width',   totalW);
+      out.setAttribute('height',  totalH);
+      out.setAttribute('viewBox', `0 0 ${totalW} ${totalH}`);
+
+      const style = document.createElementNS(ns, 'style');
+      style.textContent = CHART_EXPORT_CSS;
+      out.appendChild(style);
+
+      const bg = document.createElementNS(ns, 'rect');
+      bg.setAttribute('width', '100%'); bg.setAttribute('height', '100%');
+      bg.setAttribute('fill', 'white');
+      out.appendChild(bg);
+
+      svgs.forEach((svg, i) => {
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        const x = col * (W + GAP);
+        const y = row * (H + GAP);
+        const g = document.createElementNS(ns, 'g');
+        g.setAttribute('transform', `translate(${x},${y})`);
+        g.innerHTML = svg.innerHTML;
+        out.appendChild(g);
+      });
+
+      return out;
+    };
+
+    const bar = document.createElement('div');
+    bar.className = 'chart-dl-bar';
+    ['SVG', 'PNG'].forEach(fmt => {
+      const btn = document.createElement('button');
+      btn.className = 'chart-dl-btn';
+      btn.textContent = '↓ ' + fmt;
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const combined = buildCombined();
+        if (fmt === 'SVG') {
+          const blob = new Blob([new XMLSerializer().serializeToString(combined)], { type: 'image/svg+xml' });
+          triggerDownload(URL.createObjectURL(blob), filename + '.svg');
+        } else {
+          exportPNG(combined, filename);
+        }
+      });
+      bar.appendChild(btn);
+    });
+    container.appendChild(bar);
+  }
+
   function fokDownloadBar(container, filename) {
     const old = container.querySelector('.chart-dl-bar');
     if (old) old.remove();
@@ -2069,11 +2154,11 @@
     // All fuel savings, lifetimes, and CAPEX diffs are derived from the YAML.
     // Only deployment counts and import price scenarios are editorial choices.
     const IDS = {
-      hp:   { m: 44, b: 14 },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–C)
-      ins:  { m: 41, b: 10 },   // Fasáda + renovace vs. Fasáda (RD plyn–F)
-      fve:  { m: 39, b: 13 },   // Soláry na střeše + baterie vs. Nedělám nic (RD plyn–E)
-      ev:   { m: 59, b: 55 },   // Nový malý elektromobil vs. Nové malé auto na benzín
-      ev_l: { m: 61, b: 56 },   // Nový velký elektromobil vs. Nové velké auto na naftu
+      hp:   { m: 37, b: 11 },   // Tepelné čerpadlo vs. Plynový kotel  (RD plyn–C)
+      ins:  { m: 34, b:  8 },   // Renovace se zateplením vs. Renovace bez zateplení (RD plyn–F)
+      fve:  { m: 39, b: 13 },   // Soláry na střeše + baterie vs. Nedělám nic (RD plyn–C)
+      ev:   { m: 53, b: 49 },   // Nový malý elektromobil vs. Nové malé auto na benzín
+      ev_l: { m: 54, b: 50 },   // Nové kompaktní SUV elektro vs. Nové kompaktní SUV na naftu
     };
 
     // Czech fossil fuel import totals (external statistics, not in YAML)
@@ -2231,8 +2316,8 @@
   // Grouped bars per year: baseline (left) and measure (right).
   // Year 0 shows CAPEX; years 1-N show combined annual OPEX (fuel + maintenance).
   function renderCostBreakdownChart(container) {
-    const MEASURE_ID  = 59;  // Nový malý elektromobil
-    const BASELINE_ID = 55;  // Nové malé auto na benzín
+    const MEASURE_ID  = 53;  // Nový malý elektromobil
+    const BASELINE_ID = 49;  // Nové malé auto na benzín
     const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
 
     let r;
@@ -2341,7 +2426,7 @@
   // A grey extension shows the additional value visible at 0 % discount —
   // i.e. what discounting “erases” relative to the undiscounted view.
   function renderDiscountLineChart(container) {
-    const MEASURE_ID = 59;  // Nový malý elektromobil
+    const MEASURE_ID = 53;  // Nový malý elektromobil
     const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
 
     const calc = rate => {
@@ -2704,23 +2789,23 @@
     const legendEl    = document.getElementById('scenario-charts-legend');
     if (!container || !data.fuel_scenarios) return;
 
-    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+    const FONT = BSW_CFG.font;
 
     const SC_META = {
-      CP:    { label: 'Současné politiky', color: '#2860b4' },
-      NZ:    { label: 'Net-zero',          color: '#1a7a85' },
-      CP_EC: { label: 'Energetická krize', color: '#c43535' },
+      CP:    { label: 'Současné politiky', color: SCENARIO_COLORS.CP    },
+      NZ:    { label: 'Net-zero',          color: SCENARIO_COLORS.NZ    },
+      CP_EC: { label: 'Energetická krize', color: SCENARIO_COLORS.CP_EC },
     };
 
     const PARAM_META = [
-      { key: 'gas',                               label: 'Zemní plyn',              unit: 'Kč/MWh' },
-      { key: 'electricity',                        label: 'Elektřina',               unit: 'Kč/MWh' },
-      { key: 'petrol',                             label: 'Benzín',                  unit: 'Kč/l'   },
-      { key: 'diesel',                             label: 'Nafta',                   unit: 'Kč/l'   },
-      { key: 'biomass',                            label: 'Biomasa',                 unit: 'Kč/MWh' },
-      { key: 'lignite',                            label: 'Hnědé uhlí',              unit: 'Kč/MWh' },
-      { key: 'carbon_price_eur_nz',                label: 'Cena uhlíku (NZ)',        unit: '€/t CO₂'},
+      { key: 'gas',                               label: 'Zemní plyn',                 unit: 'Kč/MWh' },
+      { key: 'lignite',                            label: 'Hnědé uhlí',                 unit: 'Kč/MWh' },
+      { key: 'biomass',                            label: 'Biomasa',                    unit: 'Kč/MWh' },
+      { key: 'petrol',                             label: 'Benzín',                     unit: 'Kč/l',   maxYear: 2040 },
+      { key: 'diesel',                             label: 'Nafta',                      unit: 'Kč/l',   maxYear: 2040, rowBreakAfter: true },
+      { key: 'electricity',                        label: 'Elektřina',                  unit: 'Kč/MWh' },
       { key: 'electricity_emission_factor_kg_mwh', label: 'Emisní intenzita elektřiny', unit: 'kg CO₂/MWh' },
+      { key: 'carbon_price_eur_nz',                label: 'Cena uhlíku',                unit: '€/t CO₂' },
     ];
 
     // Build per-param, per-scenario series
@@ -2756,95 +2841,135 @@
       legendEl.style.cssText = `display:flex; gap:16px; flex-wrap:wrap; font-family:${FONT}; font-size:11px;`;
       legendEl.innerHTML = Object.entries(SC_META).map(([, m]) =>
         `<span style="display:flex;align-items:center;gap:5px;">
-           <svg width="24" height="3"><line x1="0" y1="1.5" x2="24" y2="1.5" stroke="${m.color}" stroke-width="2"/></svg>
+           <svg width="24" height="5"><line x1="0" y1="2.5" x2="24" y2="2.5" stroke="${m.color}" stroke-width="2.25"/></svg>
            ${m.label}
          </span>`
       ).join('');
     }
 
-    const W  = 210;
-    const H  = 130;
-    const mg = { top: 30, right: 8, bottom: 22, left: 38 };
-    const iW = W - mg.left - mg.right;
-    const iH = H - mg.top  - mg.bottom;
+    const COLS     = 3;
+    const COL_GAP  = 24;
+    const ROW_GAP  = 56;
+    const W        = Math.floor(((container.clientWidth || 840) - (COLS - 1) * COL_GAP) / COLS);
+    const H        = 230;
+    const mg       = { top: 52, right: 14, bottom: 24, left: 44 };
+    const iW       = W - mg.left - mg.right;
+    const iH       = H - mg.top  - mg.bottom;
 
     container.innerHTML = '';
+    container.style.display = 'grid';
+    container.style.gridTemplateColumns = `repeat(${COLS}, 1fr)`;
+    container.style.columnGap = `${COL_GAP}px`;
+    container.style.rowGap    = `${ROW_GAP}px`;
 
-    for (const { key: pk, label, unit } of PARAM_META) {
-      const scSeries = series[pk];
+    // Global x-extent so all charts share the same time axis
+    let globalXMin = Infinity, globalXMax = -Infinity;
+    for (const { key: pk } of PARAM_META) {
+      if (!series[pk]) continue;
+      const pts = Object.values(series[pk]).flat();
+      const [xMin, xMax] = d3.extent(pts, d => d.year);
+      if (xMin < globalXMin) globalXMin = xMin;
+      if (xMax > globalXMax) globalXMax = xMax;
+    }
+    const globalXExt = [globalXMin, globalXMax];
+
+    // Unified y-domain for the first visual row (gas, lignite, biomass — all Kč/MWh)
+    const FIRST_ROW_KEYS = new Set(['gas', 'lignite', 'biomass']);
+    let rowOneYMax = -Infinity;
+    for (const pk of FIRST_ROW_KEYS) {
+      if (!series[pk]) continue;
+      const pts = Object.values(series[pk]).flat();
+      rowOneYMax = Math.max(rowOneYMax, d3.max(pts, d => d.value));
+    }
+    const rowOneYPad = isFinite(rowOneYMax) ? rowOneYMax * 0.08 || 1 : 1;
+
+    for (const { key: pk, label, unit, maxYear, rowBreakAfter } of PARAM_META) {
+      let scSeries = series[pk];
       if (!scSeries || !Object.keys(scSeries).length) continue;
 
-      const allPts = Object.values(scSeries).flat();
-      const xExt   = d3.extent(allPts, d => d.year);
-      const yMin   = d3.min(allPts, d => d.value);
-      const yMax   = d3.max(allPts, d => d.value);
-      const yPad   = (yMax - yMin) * 0.12 || yMax * 0.08 || 1;
+      if (maxYear) {
+        scSeries = Object.fromEntries(
+          Object.entries(scSeries).map(([sc, pts]) => [sc, pts.filter(d => d.year <= maxYear)])
+        );
+      }
 
-      const xSc = d3.scaleLinear().domain(xExt).range([0, iW]);
-      const ySc = d3.scaleLinear().domain([yMin - yPad, yMax + yPad]).range([iH, 0]);
+      const allPts = Object.values(scSeries).flat();
+      const yMax   = FIRST_ROW_KEYS.has(pk) ? rowOneYMax : d3.max(allPts, d => d.value);
+      const yPad   = FIRST_ROW_KEYS.has(pk) ? rowOneYPad : (yMax * 0.08 || 1);
+
+      const xSc = d3.scaleLinear().domain(globalXExt).range([0, iW]);
+      const ySc = d3.scaleLinear().domain([0, yMax + yPad]).range([iH, 0]);
 
       const wrap = document.createElement('div');
-      wrap.style.cssText = `width:${W}px; flex-shrink:0;`;
+      wrap.style.cssText = 'width:100%;';
 
       const svg = d3.select(wrap).append('svg')
         .attr('width', W).attr('height', H)
         .style('font-family', FONT).style('overflow', 'visible');
 
-      // Chart title (two lines)
       svg.append('text')
-        .attr('x', mg.left).attr('y', 12)
-        .attr('font-size', '11px').attr('font-weight', '600').attr('fill', '#333')
+        .attr('x', 4).attr('y', 20)
+        .attr('font-size', '16px').attr('font-weight', '700').attr('fill', BSW_CFG.clrLabel)
         .text(label);
       svg.append('text')
-        .attr('x', mg.left).attr('y', 24)
-        .attr('font-size', '9px').attr('fill', '#999')
+        .attr('x', 4).attr('y', 36)
+        .attr('font-size', '11px').attr('font-weight', '400').attr('fill', BSW_CFG.clrSub)
         .text(unit);
 
       const g = svg.append('g').attr('transform', `translate(${mg.left},${mg.top})`);
 
-      // Grid lines
+      // Grid lines — max 4 ticks, always starting from 0
+      const yTickVals = ySc.ticks(4).filter(v => v > 0).slice(0, 4);
       g.append('g').attr('class', 'chart-axis')
-        .call(d3.axisLeft(ySc).ticks(4)
-          .tickFormat(v => v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v % 1 === 0 ? v : v.toFixed(2)))
+        .call(d3.axisLeft(ySc).tickValues(yTickVals).tickSize(0)
+          .tickFormat(v => d3.format('~g')(v)))
         .call(ax => ax.select('.domain').remove())
         .call(ax => ax.selectAll('.tick line')
-          .clone().attr('x2', iW).attr('stroke', '#eee').attr('stroke-dasharray', '3 2'))
-        .selectAll('text').attr('font-size', '8px');
+          .clone().attr('x1', 0).attr('x2', maxYear ? xSc(maxYear) : iW).attr('stroke', '#eee'))
+        .selectAll('text').attr('font-size', '8px').attr('dx', '-2');
 
+      g.append('line')
+        .attr('x1', 0).attr('x2', maxYear ? xSc(maxYear) : iW)
+        .attr('y1', iH).attr('y2', iH)
+        .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+      const xAxis = d3.axisBottom(xSc).tickFormat(d3.format('d'));
+      if (maxYear) {
+        xAxis.tickValues(xSc.ticks(4).filter(y => y <= maxYear));
+      } else {
+        xAxis.ticks(4);
+      }
       g.append('g').attr('transform', `translate(0,${iH})`).attr('class', 'chart-axis')
-        .call(d3.axisBottom(xSc).ticks(4).tickFormat(d3.format('d')))
+        .call(xAxis)
         .call(ax => ax.select('.domain').remove())
         .selectAll('text').attr('font-size', '8px');
 
-      // Lines per scenario
+      // Lines per scenario — draw order: NZ → CP_EC → CP (CP foreground).
+      // Constant ±1.5 px y-offsets keep overlapping lines visually separable.
       const line = d3.line().x(d => xSc(d.year)).y(d => ySc(d.value));
+      const cpPts   = scSeries['CP'];
+      const cpecPts = scSeries['CP_EC'];
 
-      // Draw CP and NZ as full lines
-      for (const scKey of ['CP', 'NZ']) {
-        const pts  = scSeries[scKey];
-        const meta = SC_META[scKey];
-        if (!pts || !meta) continue;
+      // 1. NZ — background, shifted up 1.5 px
+      const nzPts = scSeries['NZ'];
+      if (nzPts) {
         g.append('path')
-          .datum(pts.slice().sort((a, b) => a.year - b.year))
-          .attr('d', line)
-          .attr('fill', 'none')
-          .attr('stroke', meta.color)
-          .attr('stroke-width', 1.5)
-          .attr('opacity', 0.85);
+          .datum(nzPts.slice().sort((a, b) => a.year - b.year))
+          .attr('d', line).attr('fill', 'none')
+          .attr('stroke', SC_META['NZ'].color).attr('stroke-width', 2.25).attr('opacity', 0.85)
+          .attr('transform', 'translate(0,-2)');
       }
 
-      // Draw CP_EC only where it differs from CP (with bridge points for smooth join)
-      const cpecPts = scSeries['CP_EC'];
-      const cpPts   = scSeries['CP'];
+      // 2. CP_EC — middle layer, shifted down 1.5 px, only where it differs from CP
       if (cpecPts && cpPts) {
-        const cpMap = new Map(cpPts.map(d => [d.year, d.value]));
+        const cpMap  = new Map(cpPts.map(d => [d.year, d.value]));
         const sorted = cpecPts.slice().sort((a, b) => a.year - b.year);
-        const EPS = 0.5;
+        const EPS    = 0.5;
         const segments = [];
         let seg = null;
         for (let i = 0; i < sorted.length; i++) {
-          const pt     = sorted[i];
-          const cpVal  = cpMap.get(pt.year);
+          const pt      = sorted[i];
+          const cpVal   = cpMap.get(pt.year);
           const differs = cpVal === undefined || Math.abs(pt.value - cpVal) > EPS;
           if (differs) {
             if (!seg) { seg = []; if (i > 0) seg.push(sorted[i - 1]); }
@@ -2857,15 +2982,30 @@
         for (const segment of segments) {
           g.append('path')
             .datum(segment)
-            .attr('d', line)
-            .attr('fill', 'none')
-            .attr('stroke', SC_META['CP_EC'].color)
-            .attr('stroke-width', 1.5)
-            .attr('opacity', 0.9);
+            .attr('d', line).attr('fill', 'none')
+            .attr('stroke', SC_META['CP_EC'].color).attr('stroke-width', 2.25).attr('opacity', 0.9)
+            .attr('transform', 'translate(0,2)');
         }
       }
 
+      // 3. CP — foreground, no offset
+      if (cpPts) {
+        g.append('path')
+          .datum(cpPts.slice().sort((a, b) => a.year - b.year))
+          .attr('d', line).attr('fill', 'none')
+          .attr('stroke', SC_META['CP'].color).attr('stroke-width', 2.25).attr('opacity', 0.85);
+      }
+
       container.appendChild(wrap);
+      if (rowBreakAfter) {
+        const placeholder = document.createElement('div');
+        container.appendChild(placeholder);
+      }
+    }
+
+    fokDownloadBarMultiSvg(container, 'predpoklady-cen-energii', 4);
+    if (container.lastElementChild) {
+      container.lastElementChild.style.gridColumn = '1 / -1';
     }
   }
 
@@ -2948,6 +3088,2373 @@
     if (cbEl) renderCostBreakdownChart(cbEl);
     const discEl = document.getElementById('discount-line-chart');
     if (discEl) renderDiscountLineChart(discEl);
+    renderSouhrnNpv();
+    renderSouhrnEmise();
+    renderSouhrnImport();
+    renderSouhrnVse();
+    renderSrovnaniVozidel();
+    renderVyhodnostElektromobilu();
+    renderRenovaceZatepleni();
+    renderTepelneCerpadlo();
+    renderTepCerpadloVyhodnost();
+    renderKotelBiomasu();
+    renderElektrokotel();
+    renderFve();
+  }
+
+  // ── Souhrn NPV chart ──────────────────────────────────────────────────────
+  function renderSouhrnNpv() {
+    const section   = document.getElementById('souhrn_npv');
+    if (!section) return;
+    const container = section.querySelector('.container');
+
+    const FONT      = "Inter, system-ui, -apple-system, sans-serif";
+    const CLR_POS   = '#35978f';
+    const CLR_NEG   = '#75808e';
+    const CLR_LBL   = '#515b66';
+    const CLR_SUB   = '#9ea7b3';
+    const CLR_SEP   = '#eee';
+    const CLR_ZERO  = '#d0d0d0';
+    const ICON_BASE = '/assets-local/img/costs-and-benefits';
+
+    // Energy-class badge colours (darker = worse class)
+    const CLS_CLR = { F: '#3d3d3d', E: '#515b66', D: '#7a8890', C: '#9ea7b3' };
+
+    // Curated 8 rows — labels here, values computed live from state
+    const ROW_DEFS = [
+      { mId: 34, bId:  8, blLabel: 'Renovace bez zateplení', blSub: null,                mLabel: 'Renovace se zateplením',         mSub: null,                cls: 'F', fuel: 'plyn',  icon: 'zatepleni'        },
+      { mId: 21, bId:  1, blLabel: 'Uhelný kotel',           blSub: null,                mLabel: 'Tepelné čerpadlo',                mSub: null,                cls: 'E', fuel: 'uhlí',  icon: 'tepelne-cerpadlo' },
+      { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',                  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null,  icon: 'elektroauto-suv'  },
+      { mId: 37, bId: 11, blLabel: 'Plynový kotel',          blSub: null,                mLabel: 'Tepelné čerpadlo',                mSub: null,                cls: 'C', fuel: 'plyn',  icon: 'tepelne-cerpadlo' },
+      { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil',               mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null,  icon: 'elektroauto-male' },
+      { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null,                mLabel: 'Střešní fotovoltaika a baterie', mSub: null,                cls: 'D', fuel: 'uhlí',  icon: 'fotovoltaika'     },
+      { mId: 36, bId: 10, blLabel: 'Renovace bez zateplení', blSub: null,                mLabel: 'Renovace se zateplením',         mSub: null,                cls: 'D', fuel: 'plyn',  icon: 'zatepleni'        },
+      { mId: 41, bId: 11, blLabel: 'Plynový kotel',          blSub: null,                mLabel: 'Elektrický kotel',                mSub: null,                cls: 'C', fuel: 'plyn',  icon: 'elektrokotel'     },
+    ];
+
+    // Compute NPV for each row using current state
+    const rows = ROW_DEFS.map(def => {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId:              def.mId,
+          data,
+          discountRate:           state.discountRate / 100,
+          carbonPriceEur:         state.carbonPrice,
+          priceScenario:          state.fuelScenario,
+          electricityPriceFactor: state.electricityPriceFactor,
+        });
+        return isNaN(r.npv) ? null : { ...def, npv: r.npv };
+      } catch (_) { return null; }
+    }).filter(Boolean);
+
+    rows.sort((a, b) => b.npv - a.npv);
+
+    // Layout
+    const W        = container.clientWidth || 900;
+    const LEFT_W   = 340;
+    const BAR_W    = W - LEFT_W;
+    const ROW_H    = 70;
+    const HEADER_H = 188;
+    const ICON_SZ  = 46;
+    const TX       = ICON_SZ + 12;
+    const ROBOTO   = "'Roboto', sans-serif";
+    const H        = HEADER_H + rows.length * ROW_H;
+
+    // x scale: symmetric around 0, domain from actual data
+    const npvVals  = rows.map(r => r.npv);
+    const absMax   = Math.max(Math.abs(d3.min(npvVals)), Math.abs(d3.max(npvVals)));
+    const pad      = absMax * 0.06;
+    const xSc      = d3.scaleLinear().domain([-(absMax + pad), absMax + pad]).range([0, BAR_W]);
+    const z        = xSc(0);  // zero pixel position within bar zone
+
+    const fmtBar = v => {
+      const sign    = v < 0 ? '−' : '+';
+      const rounded = Math.round(Math.abs(v) / 100) * 100;
+      return sign + new Intl.NumberFormat('cs-CZ').format(rounded) + ' Kč';
+    };
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    container.querySelectorAll('.key-chart-title, .key-chart-subtitle')
+      .forEach(el => el.style.display = 'none');
+
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    // Title (two lines, 32px bold)
+    svg.append('text')
+      .attr('x', 0).attr('y', 32)
+      .attr('font-family', FONT).attr('font-size', '32px').attr('font-weight', '700')
+      .attr('fill', '#333')
+      .text('Ekonomicky nejvýhodnější je renovace');
+    svg.append('text')
+      .attr('x', 0).attr('y', 67)
+      .attr('font-family', FONT).attr('font-size', '32px').attr('font-weight', '700')
+      .attr('fill', '#333')
+      .text('energeticky nehospodárného domu');
+
+    // Subtitle (two lines, 18px) — 20px padding below title
+    svg.append('text')
+      .attr('x', 0).attr('y', 102)
+      .attr('font-family', FONT).attr('font-size', '18px')
+      .attr('fill', CLR_LBL)
+      .text('Náklady na investici jsou zde vyváženy nižšími provozními náklady');
+    svg.append('text')
+      .attr('x', 0).attr('y', 124)
+      .attr('font-family', FONT).attr('font-size', '18px')
+      .attr('fill', CLR_LBL)
+      .text('a výsledek je robustní pro širokou škálu vstupních parametrů.');
+
+    // Axis label at left edge of bar zone
+    svg.append('text')
+      .attr('x', LEFT_W + 4).attr('y', 167)
+      .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+      .attr('fill', CLR_LBL)
+      .text('Net present value opatření');
+    svg.append('text')
+      .attr('x', LEFT_W + 4).attr('y', 181)
+      .attr('font-family', FONT).attr('font-size', '12px')
+      .attr('fill', CLR_LBL)
+      .text('oproti emisně náročnější alternativě (za celou dobu životnosti)');
+
+    rows.forEach((row, i) => {
+      const y0  = HEADER_H + i * ROW_H;
+      const mid = y0 + ROW_H / 2;
+      const g   = svg.append('g');
+
+      // Row separator
+      if (i > 0)
+        g.append('line')
+          .attr('x1', 0).attr('x2', W)
+          .attr('y1', y0).attr('y2', y0)
+          .attr('stroke', CLR_SEP).attr('stroke-width', 1);
+
+      // ── LEFT: icon + context strip + measure name + "vs." ──────────────────
+      if (row.icon)
+        g.append('image')
+          .attr('href', `${ICON_BASE}/${row.icon}.svg`)
+          .attr('x', 0).attr('y', mid - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ);
+
+      const S = 13, P = 4, CY = S / 2;
+      const CTX_TOP = (mid - 19) - S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${TX},${CTX_TOP})`);
+      let bx = 0;
+
+      if (row.mSub) {
+        ctxG.append('text')
+          .attr('x', 0).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .style('text-transform', 'uppercase')
+          .attr('fill', CLR_SUB).text(row.mSub);
+      } else if (row.cls) {
+        ctxG.append('path')
+          .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', bx + S / 2).attr('y', CY)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+          .attr('fill', 'white').text(row.cls);
+        bx += S + P + 6;
+
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+        bx += 80;
+
+        if (row.fuel) {
+          bx += 12;
+          { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
+            ctxG.append('svg')
+              .attr('x', bx).attr('y', CY - fi.h / 2)
+              .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+              .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+            bx += fi.w + 4; }
+          ctxG.append('text')
+            .attr('x', bx).attr('y', CY)
+            .attr('dominant-baseline', 'middle')
+            .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+            .attr('fill', CLR_SUB)
+            .text(FUEL_ICON_SVG[row.fuel]?.label ?? 'PLYN');
+        }
+      }
+
+      g.append('text')
+        .attr('x', TX).attr('y', mid)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.mLabel);
+
+      g.append('text')
+        .attr('x', TX).attr('y', mid + 18)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('vs. ' + row.blLabel);
+
+      // ── CENTER: bar ───────────────────────────────────────────────────────
+      const barG   = g.append('g').attr('transform', `translate(${LEFT_W},0)`);
+      const color  = row.npv >= 0 ? CLR_POS : CLR_NEG;
+      const barH   = 40;
+      const barX   = row.npv >= 0 ? z : xSc(row.npv);
+      const barW_  = Math.max(Math.abs(xSc(row.npv) - z), 2);
+
+      barG.append('rect')
+        .attr('x', barX).attr('y', mid - barH / 2)
+        .attr('width', barW_).attr('height', barH)
+        .attr('fill', color);
+
+      // Value label
+      const lblInside = barW_ > 86;
+      const lblX = lblInside
+        ? (row.npv >= 0 ? barX + barW_ - 8 : barX + 8)
+        : (row.npv >= 0 ? barX + barW_ + 8 : barX - 8);
+      const lblAnchor = lblInside
+        ? (row.npv >= 0 ? 'end' : 'start')
+        : (row.npv >= 0 ? 'start' : 'end');
+
+      barG.append('text')
+        .attr('x', lblX).attr('y', mid)
+        .attr('text-anchor', lblAnchor).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '600')
+        .attr('fill', lblInside ? 'white' : color)
+        .text(fmtBar(row.npv));
+
+    });
+
+    fokDownloadBar(container, 'souhrn-npv');
+  }
+
+  // ── Souhrn icon-bar chart (shared renderer for emise + import) ─────────────
+  function renderSouhrnIconChart({ sectionId, title, subtitle, rowDefs, getMetric, unitSize, shape, unit, unitPerYear }) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    const container = section.querySelector('.container');
+
+    const FONT      = "Inter, system-ui, -apple-system, sans-serif";
+    const CLR_POS   = '#35978f';
+    const CLR_NEG   = '#75808e';
+    const CLR_LBL   = '#515b66';
+    const CLR_SUB   = '#9ea7b3';
+    const CLR_SEP   = '#eee';
+    const ICON_BASE = '/assets-local/img/costs-and-benefits';
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+
+    const rows = rowDefs.map(def => {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId:              def.mId,
+          data,
+          discountRate:           state.discountRate / 100,
+          carbonPriceEur:         state.carbonPrice,
+          priceScenario:          state.fuelScenario,
+          electricityPriceFactor: state.electricityPriceFactor,
+        });
+        const value = getMetric(r);
+        if (value == null || isNaN(value)) return null;
+        const entry    = allMeasures.find(m => m.id === def.mId);
+        const lifetime = entry ? (entry.lifetime || 1) : 1;
+        return { ...def, value, perYear: value / lifetime };
+      } catch (_) { return null; }
+    }).filter(Boolean);
+
+    rows.sort((a, b) => b.value - a.value);
+
+    const W        = container.clientWidth || 900;
+    const LEFT_W   = 340;
+    const BAR_W    = W - LEFT_W;
+    const ROW_H    = 70;
+    const HEADER_H = 112;
+    const ICON_SZ  = 46;
+    const TX       = ICON_SZ + 12;
+    const ROBOTO   = "'Roboto', sans-serif";
+    const H        = HEADER_H + rows.length * ROW_H;
+
+    const ICON_SIZE   = 10;
+    const ICON_ROWS   = 4;
+    const ICON_STROKE = 0.75;
+    const barH        = ICON_ROWS * ICON_SIZE;  // 40px
+
+    const intFmt = v => new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v)));
+    const decFmt = v => new Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 1 }).format(Math.abs(v));
+    const fmtSigned = (v, fn) => (v < 0 ? '−' : '') + fn(v);
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    container.querySelectorAll('.key-chart-title, .key-chart-subtitle')
+      .forEach(el => el.style.display = 'none');
+
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    svg.append('text').attr('x', 0).attr('y', 36)
+      .attr('font-family', FONT).attr('font-size', '32px').attr('font-weight', '700')
+      .attr('fill', '#333').text(title);
+
+    svg.append('text').attr('x', 0).attr('y', 74)
+      .attr('font-family', FONT).attr('font-size', '18px')
+      .attr('fill', CLR_LBL).text(subtitle);
+
+    // Zero position: leave only enough left space for the largest negative bar
+    const maxNeg  = Math.max(0, ...rows.map(r => r.value < 0 ? Math.abs(r.value) : 0));
+    const negCols = Math.ceil(Math.round(maxNeg / unitSize) / ICON_ROWS);
+    const z       = negCols > 0 ? negCols * ICON_SIZE + 100 : 70;
+
+    rows.forEach((row, i) => {
+      const y0  = HEADER_H + i * ROW_H;
+      const mid = y0 + ROW_H / 2;
+      const g   = svg.append('g');
+
+      if (i > 0)
+        g.append('line')
+          .attr('x1', 0).attr('x2', W)
+          .attr('y1', y0).attr('y2', y0)
+          .attr('stroke', CLR_SEP).attr('stroke-width', 1);
+
+      // ── LEFT: icon + context strip + measure name + "vs." ──────────────────
+      if (row.icon)
+        g.append('image')
+          .attr('href', `${ICON_BASE}/${row.icon}.svg`)
+          .attr('x', 0).attr('y', mid - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ);
+
+      const S = 13, P = 4, CY = S / 2;
+      const CTX_TOP = (mid - 19) - S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${TX},${CTX_TOP})`);
+      let bx = 0;
+
+      if (row.mSub) {
+        ctxG.append('text')
+          .attr('x', 0).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .style('text-transform', 'uppercase')
+          .attr('fill', CLR_SUB).text(row.mSub);
+      } else if (row.cls) {
+        ctxG.append('path')
+          .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', bx + S / 2).attr('y', CY)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+          .attr('fill', 'white').text(row.cls);
+        bx += S + P + 6;
+
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+        bx += 80;
+
+        if (row.fuel) {
+          bx += 12;
+          { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
+            ctxG.append('svg')
+              .attr('x', bx).attr('y', CY - fi.h / 2)
+              .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+              .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+            bx += fi.w + 4; }
+          ctxG.append('text')
+            .attr('x', bx).attr('y', CY)
+            .attr('dominant-baseline', 'middle')
+            .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+            .attr('fill', CLR_SUB)
+            .text(FUEL_ICON_SVG[row.fuel]?.label ?? 'PLYN');
+        }
+      }
+
+      g.append('text')
+        .attr('x', TX).attr('y', mid)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.mLabel);
+
+      g.append('text')
+        .attr('x', TX).attr('y', mid + 18)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('vs. ' + row.blLabel);
+
+      // ── CENTER: icon grid ─────────────────────────────────────────────────
+      const isPos   = row.value >= 0;
+      const nIcons  = Math.max(0, Math.round(Math.abs(row.value) / unitSize));
+      const nCols   = Math.ceil(nIcons / ICON_ROWS) || 0;
+      const iColor  = isPos ? CLR_POS : CLR_NEG;
+      const barG    = g.append('g').attr('transform', `translate(${LEFT_W},0)`);
+      const iconTop = mid - barH / 2;
+
+      for (let idx = 0; idx < nIcons; idx++) {
+        const col    = Math.floor(idx / ICON_ROWS);
+        const rowIdx = idx % ICON_ROWS;
+        const sx     = isPos ? z + col * ICON_SIZE : z - (col + 1) * ICON_SIZE;
+        const sy     = iconTop + rowIdx * ICON_SIZE;
+        if (shape === 'square') {
+          barG.append('rect')
+            .attr('x', sx + ICON_STROKE / 2).attr('y', sy + ICON_STROKE / 2)
+            .attr('width', ICON_SIZE - ICON_STROKE).attr('height', ICON_SIZE - ICON_STROKE)
+            .attr('fill', iColor).attr('stroke', 'white').attr('stroke-width', ICON_STROKE);
+        } else {
+          barG.append('circle')
+            .attr('cx', sx + ICON_SIZE / 2).attr('cy', sy + ICON_SIZE / 2)
+            .attr('r', (ICON_SIZE - ICON_STROKE) / 2)
+            .attr('fill', iColor).attr('stroke', 'white').attr('stroke-width', ICON_STROKE);
+        }
+      }
+
+      const lblX      = isPos ? z + nCols * ICON_SIZE + 8 : z - nCols * ICON_SIZE - 8;
+      const lblAnchor = isPos ? 'start' : 'end';
+      const lblFill   = isPos ? CLR_LBL : CLR_NEG;
+
+      barG.append('text')
+        .attr('x', lblX).attr('y', mid - 7)
+        .attr('text-anchor', lblAnchor).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '14px').attr('font-weight', '700')
+        .attr('fill', lblFill)
+        .text(fmtSigned(row.value, intFmt) + ' ' + unit);
+
+      barG.append('text')
+        .attr('x', lblX).attr('y', mid + 7)
+        .attr('text-anchor', lblAnchor).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '11px')
+        .attr('fill', CLR_SUB)
+        .text(fmtSigned(row.perYear, decFmt) + ' ' + unitPerYear);
+
+    });
+
+    fokDownloadBar(container, sectionId);
+  }
+
+  function renderSouhrnEmise() {
+    renderSouhrnIconChart({
+      sectionId:   'souhrn_emise',
+      title:       'Úspora emisí CO₂',
+      subtitle:    'oproti emisně náročnější alternativě (za celou dobu životnosti)',
+      rowDefs: [
+        { mId: 24, bId:  2, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'F', fuel: 'uhlí', icon: 'zatepleni'        },
+        { mId: 21, bId:  1, blLabel: 'Uhelný kotel',           blSub: null, mLabel: 'Tepelné čerpadlo',                mSub: null, cls: 'E', fuel: 'uhlí', icon: 'tepelne-cerpadlo' },
+        { mId: 36, bId: 10, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'D', fuel: 'plyn', icon: 'zatepleni'        },
+        { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null, icon: 'elektroauto-suv'  },
+        { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil', mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null, icon: 'elektroauto-male' },
+        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: 'D', fuel: 'uhlí', icon: 'fotovoltaika'   },
+        { mId: 41, bId: 11, blLabel: 'Plynový kotel',          blSub: null, mLabel: 'Elektrický kotel',                mSub: null, cls: 'C', fuel: 'plyn', icon: 'elektrokotel'     },
+      ],
+      getMetric:   r => r.emissionSavings ? -r.emissionSavings.totalT : null,
+      unitSize:    2.5,
+      shape:       'square',
+      unit:        'tun',
+      unitPerYear: 't/rok',
+    });
+  }
+
+  function renderSouhrnImport() {
+    renderSouhrnIconChart({
+      sectionId:   'souhrn_import',
+      title:       'Úspora importu ropy a zemního plynu',
+      subtitle:    'oproti emisně náročnější alternativě (za celou dobu životnosti, MWh výhřevnosti)',
+      rowDefs: [
+        { mId: 34, bId:  8, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'F', fuel: 'plyn', icon: 'zatepleni'        },
+        { mId: 31, bId:  7, blLabel: 'Plynový kotel',          blSub: null, mLabel: 'Tepelné čerpadlo',                mSub: null, cls: 'E', fuel: 'plyn', icon: 'tepelne-cerpadlo' },
+        { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null, icon: 'elektroauto-suv'  },
+        { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil', mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null, icon: 'elektroauto-male' },
+        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: 'D', fuel: 'uhlí', icon: 'fotovoltaika'   },
+        { mId: 24, bId:  2, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'F', fuel: 'uhlí', icon: 'zatepleni'        },
+        { mId: 21, bId:  1, blLabel: 'Uhelný kotel',           blSub: null, mLabel: 'Tepelné čerpadlo',                mSub: null, cls: 'E', fuel: 'uhlí', icon: 'tepelne-cerpadlo' },
+      ],
+      getMetric:   r => r.fossilImportSavings ? r.fossilImportSavings.totalMwh : null,
+      unitSize:    10,
+      shape:       'circle',
+      unit:        'MWh',
+      unitPerYear: 'MWh/rok',
+    });
+  }
+
+  // ── Souhrn VSE: combined 3-column overview ────────────────────────────────
+  function renderSouhrnVse() {
+    const section = document.getElementById('souhrn_vse');
+    if (!section) return;
+    const container = section.querySelector('.container');
+
+    const FONT   = "Inter, system-ui, -apple-system, sans-serif";
+    const ROBOTO = "'Roboto', sans-serif";
+    const CLR_POS = '#35978f';
+    const CLR_NEG = '#75808e';
+    const CLR_LBL = '#515b66';
+    const CLR_SUB = '#9ea7b3';
+    const CLR_SEP  = '#eee';
+    const ICON_BASE = '/assets-local/img/costs-and-benefits';
+    const ICON_SZ   = 46;
+    const TX        = ICON_SZ + 12;   // text offset when icon is present
+
+    const ROW_DEFS = [
+      { mId: 24, bId:  2, blLabel: 'Renovace bez zateplení',   mLabel: 'Renovace se zateplením',          cls: 'F', fuel: 'uhlí', icon: 'zatepleni'        },
+      { mId: 21, bId:  1, blLabel: 'Uhelný kotel',             mLabel: 'Tepelné čerpadlo',                cls: 'E', fuel: 'uhlí', icon: 'tepelne-cerpadlo' },
+      { mId: 54, bId: 50, blLabel: 'SUV na naftu',             mLabel: 'Elektrické SUV',                  cls: null, fuel: null, mSub: 'NOVÉ, ŠKODA ELROQ', icon: 'elektroauto-suv'  },
+      { mId: 37, bId: 11, blLabel: 'Plynový kotel',            mLabel: 'Tepelné čerpadlo',                cls: 'C', fuel: 'plyn', icon: 'tepelne-cerpadlo' },
+      { mId: 35, bId:  9, blLabel: 'Renovace bez zateplení',   mLabel: 'Renovace se zateplením',          cls: 'E', fuel: 'plyn', icon: 'zatepleni'        },
+      { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', mLabel: 'Střešní fotovoltaika a baterie',  cls: null, fuel: null, ctxSpecial: 'SPOTŘEBA 7 MWh', icon: 'fotovoltaika' },
+    ];
+
+    const rows = ROW_DEFS.map(def => {
+      try {
+        const r = CostsBenefits.calculate({
+          measureId:              def.mId,
+          data,
+          discountRate:           state.discountRate / 100,
+          carbonPriceEur:         state.carbonPrice,
+          priceScenario:          state.fuelScenario,
+          electricityPriceFactor: state.electricityPriceFactor,
+        });
+        if (isNaN(r.npv)) return null;
+        const emise = r.emissionSavings     ? -r.emissionSavings.totalT       : 0;
+        const imprt = r.fossilImportSavings ? r.fossilImportSavings.totalMwh  : 0;
+        return { ...def, npv: r.npv, emise, imprt };
+      } catch (_) { return null; }
+    }).filter(Boolean);
+
+    rows.sort((a, b) => b.npv - a.npv);
+
+    const W        = container.clientWidth || 900;
+    const LEFT_W   = 340;
+    const COL_GAP  = 50;
+    const COL_W    = Math.floor((W - LEFT_W - 2 * COL_GAP) / 3);
+    const COL1_X   = LEFT_W;
+    const COL2_X   = LEFT_W + COL_W + COL_GAP;
+    const COL3_X   = LEFT_W + (COL_W + COL_GAP) * 2;
+    const ROW_H    = 80;
+    const HEADER_H = 155;
+    const H        = HEADER_H + rows.length * ROW_H;
+
+    const npvMin = Math.min(...rows.map(r => r.npv));
+    const npvMax = Math.max(...rows.map(r => r.npv));
+    const npvPad = Math.max(Math.abs(npvMin), npvMax) * 0.06;
+    const npvSc  = d3.scaleLinear()
+      .domain([npvMin - npvPad, npvMax + npvPad])
+      .range([0, COL_W]);
+    const npvZ = npvSc(0);
+
+    const ICON_SIZE   = 10;
+    const ICON_ROWS   = 4;
+    const ICON_STROKE = 0.75;
+    const iconBarH    = ICON_ROWS * ICON_SIZE;
+    const EMISE_UNIT  = 5;
+    const IMPRT_UNIT  = 20;
+
+    const fmtBar = v => {
+      const sign    = v < 0 ? '−' : '+';
+      const rounded = Math.round(Math.abs(v) / 100) * 100;
+      return sign + new Intl.NumberFormat('cs-CZ').format(rounded) + ' Kč';
+    };
+    const intFmt = v => new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v)));
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    container.querySelectorAll('.key-chart-title, .key-chart-subtitle')
+      .forEach(el => el.style.display = 'none');
+
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    svg.append('text').attr('x', 0).attr('y', 32)
+      .attr('font-family', FONT).attr('font-size', '32px').attr('font-weight', '700')
+      .attr('fill', '#333')
+      .text('Srovnání opatření pro dekarbonizaci domácností');
+
+    svg.append('text').attr('x', 0).attr('y', 67)
+      .attr('font-family', FONT).attr('font-size', '18px')
+      .attr('fill', CLR_LBL)
+      .text('Seřazeno podle čisté současné hodnoty za celou dobu životnosti opatření');
+
+    // Column headers
+    svg.append('text')
+      .attr('x', COL1_X + COL_W / 2).attr('y', 108)
+      .attr('text-anchor', 'middle')
+      .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+      .attr('fill', CLR_LBL).text('Net present value opatření');
+
+    // Auto-scale units and compute zero positions so icons + label fit in COL_W
+    const LBL_W = 65;   // px reserved for value label on the right
+    const L_BUF = 10;   // left buffer before first negative icon
+
+    const eMaxPos  = Math.max(0, ...rows.map(r => r.emise > 0 ? r.emise : 0));
+    const eMaxNeg  = Math.max(0, ...rows.map(r => r.emise < 0 ? Math.abs(r.emise) : 0));
+    const eFitCols = Math.floor((COL_W - L_BUF - LBL_W) / ICON_SIZE);
+    let eUnit = EMISE_UNIT;
+    {
+      const eTC = Math.ceil(Math.round(eMaxPos / eUnit) / ICON_ROWS) +
+                  Math.ceil(Math.round(eMaxNeg / eUnit) / ICON_ROWS);
+      if (eTC > eFitCols && eTC > 0) eUnit = EMISE_UNIT * Math.ceil(eTC / eFitCols);
+    }
+    const eNegCols = Math.ceil(Math.round(eMaxNeg / eUnit) / ICON_ROWS);
+    const eZ       = eNegCols * ICON_SIZE + L_BUF;
+
+    const iMaxPos  = Math.max(0, ...rows.map(r => r.imprt > 0 ? r.imprt : 0));
+    const iMaxNeg  = Math.max(0, ...rows.map(r => r.imprt < 0 ? Math.abs(r.imprt) : 0));
+    const iFitCols = Math.floor((COL_W - L_BUF - LBL_W) / ICON_SIZE);
+    let iUnit = IMPRT_UNIT;
+    {
+      const iTC = Math.ceil(Math.round(iMaxPos / iUnit) / ICON_ROWS) +
+                  Math.ceil(Math.round(iMaxNeg / iUnit) / ICON_ROWS);
+      if (iTC > iFitCols && iTC > 0) iUnit = IMPRT_UNIT * Math.ceil(iTC / iFitCols);
+    }
+    const iNegCols = Math.ceil(Math.round(iMaxNeg / iUnit) / ICON_ROWS);
+    const iZ       = iNegCols * ICON_SIZE + L_BUF;
+
+    svg.append('text')
+      .attr('x', COL2_X + eZ).attr('y', 108)
+      .attr('text-anchor', 'start')
+      .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+      .attr('fill', CLR_LBL).text('Úspora emisí CO₂');
+    ['Úspora importu ropy', 'a zemního plynu'].forEach((line, li) =>
+      svg.append('text')
+        .attr('x', COL3_X + iZ).attr('y', 108 + li * 14)
+        .attr('text-anchor', 'start')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(line)
+    );
+
+    rows.forEach((row, i) => {
+      const y0  = HEADER_H + i * ROW_H;
+      const mid = y0 + ROW_H / 2;
+      const g   = svg.append('g');
+
+      if (i > 0)
+        g.append('line')
+          .attr('x1', 0).attr('x2', W)
+          .attr('y1', y0).attr('y2', y0)
+          .attr('stroke', CLR_SEP).attr('stroke-width', 1);
+
+      // ── LEFT: icon + context strip + measure name + "vs." ──────────────────
+      if (row.icon)
+        g.append('image')
+          .attr('href', `${ICON_BASE}/${row.icon}.svg`)
+          .attr('x', 0).attr('y', mid - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ);
+
+      const S = 13, P = 4, CY = S / 2;
+      const CTX_TOP = (mid - 19) - S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${TX},${CTX_TOP})`);
+      let bx = 0;
+
+      if (row.ctxSpecial) {
+        ctxG.append('path')
+          .attr('d', 'M5,0 L0,6 L4,6 L1,12 L11,5 L7,5 Z')
+          .attr('transform', `translate(0,${CY - 6})`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', 14).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(row.ctxSpecial);
+      } else if (row.mSub) {
+        ctxG.append('text')
+          .attr('x', 0).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .style('text-transform', 'uppercase')
+          .attr('fill', CLR_SUB).text(row.mSub);
+      } else if (row.cls) {
+        ctxG.append('path')
+          .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', bx + S / 2).attr('y', CY)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+          .attr('fill', 'white').text(row.cls);
+        bx += S + P + 6;
+
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+        bx += 80;
+
+        if (row.fuel) {
+          bx += 12;
+          { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
+            ctxG.append('svg')
+              .attr('x', bx).attr('y', CY - fi.h / 2)
+              .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+              .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+            bx += fi.w + 4; }
+          ctxG.append('text')
+            .attr('x', bx).attr('y', CY)
+            .attr('dominant-baseline', 'middle')
+            .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+            .attr('fill', CLR_SUB)
+            .text(FUEL_ICON_SVG[row.fuel]?.label ?? 'PLYN');
+        }
+      }
+
+      // Measure name
+      g.append('text')
+        .attr('x', TX).attr('y', mid)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.mLabel);
+
+      // "vs. baseline"
+      g.append('text')
+        .attr('x', TX).attr('y', mid + 18)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('vs. ' + row.blLabel);
+
+      // ── COLUMN 1: NPV bar ──────────────────────────────────────────────────
+      const npvG    = g.append('g').attr('transform', `translate(${LEFT_W},0)`);
+      const npvBarH = 40;
+      const npvClr  = row.npv >= 0 ? CLR_POS : CLR_NEG;
+      const barX    = row.npv >= 0 ? npvZ : npvSc(row.npv);
+      const barW_   = Math.max(Math.abs(npvSc(row.npv) - npvZ), 2);
+      npvG.append('rect')
+        .attr('x', barX).attr('y', mid - npvBarH / 2)
+        .attr('width', barW_).attr('height', npvBarH)
+        .attr('fill', npvClr);
+      const npvInside    = row.npv > 0 && barW_ > 80;
+      const npvLblX      = npvInside ? barX + barW_ - 6
+                         : row.npv >= 0 ? Math.min(barX + barW_ + 4, COL_W - 2)
+                         : npvZ + 4;
+      const npvLblAnchor = npvInside ? 'end' : 'start';
+      const npvLblFill   = npvInside ? 'white' : npvClr;
+      npvG.append('text')
+        .attr('x', npvLblX).attr('y', mid)
+        .attr('text-anchor', npvLblAnchor).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '11px').attr('font-weight', '600')
+        .attr('fill', npvLblFill).text(fmtBar(row.npv));
+
+      // ── COLUMN 2: Emise squares ────────────────────────────────────────────
+      const emiseG   = g.append('g').attr('transform', `translate(${COL2_X},0)`);
+      const isEPos   = row.emise >= 0;
+      const nEmise   = Math.max(0, Math.round(Math.abs(row.emise) / eUnit));
+      const nECols   = Math.ceil(nEmise / ICON_ROWS) || 0;
+      const eClr     = isEPos ? CLR_POS : CLR_NEG;
+      const eTop     = mid - iconBarH / 2;
+      for (let idx = 0; idx < nEmise; idx++) {
+        const col    = Math.floor(idx / ICON_ROWS);
+        const rowIdx = idx % ICON_ROWS;
+        const sx = isEPos ? eZ + col * ICON_SIZE : eZ - (col + 1) * ICON_SIZE;
+        const sy = eTop + rowIdx * ICON_SIZE;
+        emiseG.append('rect')
+          .attr('x', sx + ICON_STROKE / 2).attr('y', sy + ICON_STROKE / 2)
+          .attr('width', ICON_SIZE - ICON_STROKE).attr('height', ICON_SIZE - ICON_STROKE)
+          .attr('fill', eClr).attr('stroke', 'white').attr('stroke-width', ICON_STROKE);
+      }
+      const eLblX = isEPos ? eZ + nECols * ICON_SIZE + 6 : eZ + 6;
+      emiseG.append('text')
+        .attr('x', eLblX).attr('y', mid)
+        .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '11px').attr('font-weight', '700')
+        .attr('fill', eClr)
+        .text((row.emise < 0 ? '−' : '') + intFmt(row.emise) + ' t');
+
+      // ── COLUMN 3: Import circles ───────────────────────────────────────────
+      const imprtG   = g.append('g').attr('transform', `translate(${COL3_X},0)`);
+      const isIPos   = row.imprt >= 0;
+      const nImprt   = Math.max(0, Math.round(Math.abs(row.imprt) / iUnit));
+      const nICols   = Math.ceil(nImprt / ICON_ROWS) || 0;
+      const iClr     = isIPos ? CLR_POS : CLR_NEG;
+      const iTop     = mid - iconBarH / 2;
+      for (let idx = 0; idx < nImprt; idx++) {
+        const col    = Math.floor(idx / ICON_ROWS);
+        const rowIdx = idx % ICON_ROWS;
+        const sx = isIPos ? iZ + col * ICON_SIZE : iZ - (col + 1) * ICON_SIZE;
+        const sy = iTop + rowIdx * ICON_SIZE;
+        imprtG.append('circle')
+          .attr('cx', sx + ICON_SIZE / 2).attr('cy', sy + ICON_SIZE / 2)
+          .attr('r', (ICON_SIZE - ICON_STROKE) / 2)
+          .attr('fill', iClr).attr('stroke', 'white').attr('stroke-width', ICON_STROKE);
+      }
+      const iLblX = isIPos ? iZ + nICols * ICON_SIZE + 6 : iZ + 6;
+      imprtG.append('text')
+        .attr('x', iLblX).attr('y', mid)
+        .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '11px').attr('font-weight', '700')
+        .attr('fill', iClr)
+        .text((row.imprt < 0 ? '−' : '') + intFmt(row.imprt) + ' MWh');
+    });
+
+    fokDownloadBar(container, 'souhrn-vse');
+  }
+
+  // ── Shared beeswarm style config ─────────────────────────────────────────
+  // Single source of truth for all beeswarm charts (renderSrovnaniVozidel,
+  // renderRenovaceZatepleni, renderBuildingBeeswarmChart, renderTepCerpadloVyhodnost).
+  // Values aligned with renderSouhrnVse / renderSouhrnIconChart where applicable.
+  const BSW_CFG = {
+    // Fonts
+    font:       "Inter, system-ui, -apple-system, sans-serif",
+    fontAlt:    "'Roboto', sans-serif",
+
+    // Colors — aligned with renderSouhrnVse
+    clrLabel:   '#515b66',   // primary text (mLabel, blLabel, column values)
+    clrSub:     '#9ea7b3',   // secondary text, strip text, axis ticks, col headers
+    clrSep:     '#eee',      // row separator lines
+    clrPos:     '#35978f',   // positive savings (teal)
+    clrNeg:     '#75808e',   // negative / neutral (matches souhrn CLR_NEG)
+    clrNegStat: '#903156',   // negative stat columns (maroon, strong emphasis)
+    clrZeroLine:'#d0d4d8',  // y=0 reference line (solid, lighter than clrSub)
+
+    // Font sizes
+    szLabel:    '16px',      // main label (mLabel / blLabel)
+    szSecondary:'12px',      // car name, "vs." sub-label, stat values, col headers
+    szSub:      '11px',      // strip text, sub-labels (NOVÉ/OJETÉ), axis ticks, dot label
+    szBadge:    '10px',      // class badge inside pentagon
+
+    // Measure icon — matches souhrn_vse ICON_SZ = 46, TX = ICON_SZ + 12
+    iconSz:     46,
+    iconGap:    12,
+    iconBase:   '/assets-local/img/costs-and-benefits',
+
+    // Shared beeswarm layout
+    laneH:      150,         // px per row lane
+    dotR:       7.2,         // force-sim dot radius
+    headerH:    32,          // column header strip height
+    mBot:       40,          // bottom margin
+  };
+
+  const FUEL_ICON_SVG = {
+    'uhlí':      { vb: '0 0 8.541159 8.81621',   d: 'M4.605873,0L0,3.14117l.47647,4.764696s5.576459,1.023527,5.611753.899998,2.452936-4.235286,2.452936-4.235286l-2.470583-3.476464-1.464703-1.094115Z', w: 11, h: 11, label: 'UHLÍ' },
+    'plyn':      { vb: '0 0 7.645471 10.381814', d: 'M3.582294,0C3.582294,4.195392,0,3.738583,0,6.92421c0,2.308077,1.392172,3.291961,3.315493,3.457604-1.128032-.387022-1.968437-1.663273-.953733-3.33974,1.065874,1.025814,2.204755-.424075,1.844114-1.914702,2.276466,1.764702,2.439332,4.52971.403295,5.23488,2.147714-.285345,3.036302-1.948538,3.036302-4.123256,0-1.839231-1.081923-3.570279-4.063177-6.238996Z', w: 8, h: 11, label: 'PLYN' },
+    'elektřina': { vb: '0 0 7.102574 11.367486', d: 'M7.102574,4.520453L3.551287,4.520453L3.551287,0L0,6.846908L3.551287,6.846908L3.551287,11.367486Z', w: 7, h: 11, label: 'SPOTŘEBA' },
+  };
+
+  // ── Vehicle pair beeswarm ──────────────────────────────────────────────────
+  function renderSrovnaniVozidel() {
+    const section = document.getElementById('srovnani-vozidel');
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const FONT      = BSW_CFG.font;
+    const ROBOTO    = BSW_CFG.fontAlt;
+    const CLR_POS   = BSW_CFG.clrPos;
+    const CLR_NEG   = BSW_CFG.clrNeg;
+    const CLR_LBL   = BSW_CFG.clrLabel;
+    const CLR_SUB   = BSW_CFG.clrSub;
+    const CLR_SEP   = BSW_CFG.clrSep;
+    const CLR_STAT  = BSW_CFG.clrSub;
+    const ICON_BASE = BSW_CFG.iconBase;
+
+    // 4 pairs — measure id, baseline id, display labels, icon, model names, battery
+    const ROW_DEFS = [
+      { mId: 56, bId: 52, mLabel: 'Elektrické SUV',    sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+      { mId: 55, bId: 51, mLabel: 'Malý elektromobil', sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
+      { mId: 54, bId: 50, mLabel: 'Elektrické SUV',    sub: 'NOVÉ',          blLabel: 'SUV na naftu',        blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
+      { mId: 53, bId: 49, mLabel: 'Malý elektromobil', sub: 'NOVÉ',          blLabel: 'Malé auto na benzín', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
+    ];
+
+    // Parameters — same active buttons as the interactive beeswarm defaults
+    const SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
+    const CARBON_PRICES  = [40, 70, 100];
+    const DISCOUNT_RATES = [3];
+    const DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
+    const CAPEX_FALLBACK = 0.10;
+    const CAPEX_CASES    = [{ key: 'worst', sf: +1 }, { key: 'reference', sf: 0 }, { key: 'best', sf: -1 }];
+    const PRICE_CASES    = [
+      { key: 'worst',  fm: 0.9, cm: 1.1 },
+      { key: 'normal', fm: 1.0, cm: 1.0 },
+      { key: 'best',   fm: 1.1, cm: 0.9 },
+    ];
+    const elpf = CostsBenefits.getDefaultElectricityPriceFactor
+      ? CostsBenefits.getDefaultElectricityPriceFactor(data) : 1;
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+
+    // Build rows: dots + default-scenario stats
+    const rows = ROW_DEFS.map(def => {
+      const entry    = allMeasures.find(m => m.id === def.mId);
+      const baseline = allMeasures.find(m => m.id === def.bId);
+      if (!entry || !baseline) return null;
+
+      const measS = entry.capex_sensitivity    ?? CAPEX_FALLBACK;
+      const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
+
+      const dots = [];
+      let co2Saved = null, fossilMwh = null;
+
+      for (const cc of CAPEX_CASES) {
+        const capexMeasMult = 1 + cc.sf * measS;
+        const capexBlMult   = 1 - cc.sf * blS;
+        for (const pc of PRICE_CASES) {
+          for (const sc of SCENARIOS) {
+            const cps = sc === 'NZ' ? [DEFAULT.cp] : CARBON_PRICES;
+            for (const cp of cps) {
+              for (const dr of DISCOUNT_RATES) {
+                const isDefault = sc === DEFAULT.scenario && cp === DEFAULT.cp && dr === DEFAULT.dr
+                               && pc.key === 'normal' && cc.key === 'reference';
+                try {
+                  const r = CostsBenefits.calculate({
+                    measureId: def.mId, data,
+                    discountRate:           dr / 100,
+                    carbonPriceEur:         cp,
+                    priceScenario:          sc,
+                    electricityPriceFactor: elpf,
+                    fossilMult:             pc.fm,
+                    cleanMult:              pc.cm,
+                    capexMeasMult,
+                    capexBlMult,
+                  });
+                  if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
+                  if (isDefault && r.emissionSavings != null) {
+                    co2Saved  = -r.emissionSavings.totalT;
+                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                  }
+                } catch (_) {}
+              }
+            }
+          }
+        }
+      }
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+    }).filter(Boolean);
+
+    if (!rows.length) return;
+
+    // Layout: [fossil left] [beeswarm] [gap] [electric right] [CO₂ stat] [import stat]
+    const totalW      = container.clientWidth || 900;
+    const LEFT_W      = Math.round(totalW * 0.12);
+    const CHART_R_GAP = 16;
+    const RMEAS_W     = Math.round(totalW * 0.19);
+    const STAT_W      = Math.round(totalW * 0.09);
+    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+
+    const xBsw        = LEFT_W;
+    const xRightCols  = LEFT_W + CHART_W + CHART_R_GAP;
+    const xStatCO2    = xRightCols + RMEAS_W + STAT_W / 2;
+    const xStatImprt  = xRightCols + RMEAS_W + STAT_W + STAT_W / 2;
+
+    const ICON_SZ   = BSW_CFG.iconSz;
+    const ICON_GAP  = BSW_CFG.iconGap;
+    const LANE_H    = BSW_CFG.laneH;
+    const DOT_R     = BSW_CFG.dotR;
+    const HEADER_H  = BSW_CFG.headerH;
+    const M_TOP     = HEADER_H + 14;
+    const M_BOT     = BSW_CFG.mBot;
+    const H         = M_TOP + rows.length * LANE_H + M_BOT;
+
+    // Stat grid constants (vehicles save less per unit than buildings)
+    const SQ_SIZE    = 10;
+    const SQ_PER_ROW = 5;
+    const CO2_PER_SQ = 10;   // tonnes CO₂ per square
+    const MWH_PER_SQ = 25;   // MWh fossil per circle
+
+    const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('rect')
+          .attr('x', startX + col * SQ_SIZE).attr('y', bottomY - (row + 1) * SQ_SIZE)
+          .attr('width', SQ_SIZE).attr('height', SQ_SIZE)
+          .attr('fill', fillColor || CLR_STAT).attr('stroke', 'white').attr('stroke-width', 0.5);
+      }
+    };
+
+    const drawCircleGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const r = SQ_SIZE / 2;
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('circle')
+          .attr('cx', startX + col * SQ_SIZE + r)
+          .attr('cy', bottomY - (row + 1) * SQ_SIZE + r)
+          .attr('r', r - 0.8)
+          .attr('fill', fillColor || CLR_STAT);
+      }
+    };
+
+    // NPV axis — fixed ±350 tis. Kč range
+    const absMax = 350_000;
+    const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
+
+    // Diverging color scale: maroon ← 0 → teal (transport branch, same as interactive beeswarm)
+    const npvColor = d3.scaleLinear()
+      .domain([-absMax, 0, absMax])
+      .range(['#8c3f5f', '#d0d4d8', '#006063'])
+      .clamp(true);
+
+    // Force simulation — x stays pinned to NPV position, only y jitters
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      row.dots.forEach(d => {
+        d.x  = xBsw + xSc(d.npv);
+        d.y  = cy;
+        d.fy = d.isDefault ? cy : undefined;
+      });
+      const sim = d3.forceSimulation(row.dots)
+        .force('y', d3.forceY(cy).strength(0.8))
+        .force('collide', d3.forceCollide(DOT_R + 0.8))
+        .stop();
+      for (let i = 0; i < 120; i++) {
+        sim.tick();
+        row.dots.forEach(d => { d.x = xBsw + xSc(d.npv); });
+      }
+    });
+
+    // Draw
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${totalW} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    // Column headers
+    const hdrY = HEADER_H / 2 + 4;
+    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
+    [
+      { x: 4,                           lines: ['FOSILNÍ VOZIDLO'] },
+      { x: hdrRx,                       lines: ['ELEKTROMOBIL'] },
+      { x: xStatCO2 - hdrStatL,         lines: ['ÚSPORA EMISÍ CO₂'] },
+      { x: xStatImprt - hdrStatL,       lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+    ].forEach(({ x, lines }) => {
+      const lineH = 11;
+      const t = svg.append('text')
+        .attr('text-anchor', 'start')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+        .attr('fill', CLR_SUB);
+      lines.forEach((line, li) =>
+        t.append('tspan').attr('x', x)
+          .attr('y', hdrY - (lines.length - 1) * lineH / 2 + li * lineH)
+          .attr('dominant-baseline', 'middle').text(line)
+      );
+    });
+
+    // Zero line
+    const zx = xBsw + xSc(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M_TOP).attr('y2', H - M_BOT)
+      .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+    // Axis
+    const axisFn = d3.axisTop(xSc.copy().range([xBsw, xBsw + CHART_W]))
+      .ticks(5)
+      .tickFormat(v => {
+        if (v === 0) return '0';
+        const sign = v < 0 ? '−' : '+';
+        return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis.';
+      });
+    svg.append('g')
+      .attr('transform', `translate(0,${M_TOP})`)
+      .call(axisFn)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').attr('stroke', CLR_SUB))
+      .call(g => g.selectAll('.tick text')
+        .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      const g  = svg.append('g');
+
+
+      // ── LEFT ZONE: fossil baseline ─────────────────────────────────────────
+      const subLbl = row.age != null ? `${row.sub} (${row.age} let)` : row.sub;
+      g.append('text')
+        .attr('x', 4).attr('y', cy - 20)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(subLbl);
+
+      g.append('text')
+        .attr('x', 4).attr('y', cy)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.blLabel);
+
+      g.append('text')
+        .attr('x', 4).attr('y', cy + 20)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(row.blName);
+
+      // ── BEESWARM dots ──────────────────────────────────────────────────────
+      row.dots.filter(d => !d.isDefault).forEach(d =>
+        g.append('circle')
+          .attr('cx', d.x).attr('cy', d.y)
+          .attr('r', DOT_R).attr('fill', npvColor(d.npv)).attr('opacity', 0.35)
+      );
+
+      const def = row.dots.find(d => d.isDefault);
+      if (def) {
+        const fmtK = v => {
+          const sign = v < 0 ? '−' : '+';
+          return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis. Kč';
+        };
+        g.append('text')
+          .attr('x', def.x).attr('y', def.y - DOT_R - 1.5 - 5)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'auto')
+          .attr('font-family', FONT).attr('font-size', '13px').attr('font-weight', '600')
+          .attr('stroke', 'white').attr('stroke-width', 3).style('paint-order', 'stroke fill')
+          .attr('fill', CLR_LBL).text(fmtK(def.npv));
+        g.append('circle')
+          .attr('cx', def.x).attr('cy', def.y)
+          .attr('r', DOT_R + 1.5)
+          .attr('fill', npvColor(def.npv))
+          .attr('stroke', CLR_LBL).attr('stroke-width', 1.5);
+      }
+
+      // ── RIGHT ZONE: electric measure ───────────────────────────────────────
+      const rxIcon = xRightCols + 4;
+      const rxText = rxIcon + ICON_SZ + ICON_GAP;
+
+      if (row.icon)
+        g.append('image')
+          .attr('href', `${ICON_BASE}/${row.icon}.svg`)
+          .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ);
+
+      g.append('text')
+        .attr('x', rxText).attr('y', cy - 20)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(subLbl);
+
+      g.append('text')
+        .attr('x', rxText).attr('y', cy)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.mLabel);
+
+      g.append('text')
+        .attr('x', rxText).attr('y', cy + 20)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB)
+        .text(row.mBattery != null ? `${row.mName} (${row.mBattery} kWh)` : row.mName);
+
+      // ── STAT COLUMNS ───────────────────────────────────────────────────────
+      const statBottomY = cy - 6;
+      const CLR_TEAL    = '#35978f';
+      const CLR_MAROON  = '#903156';
+
+      const co2 = row.co2Saved;
+      const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
+      const nCo2 = (co2 != null && co2 > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+      if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
+      g.append('text')
+        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', co2Clr)
+        .text(co2 != null && co2 !== 0 ? Math.round(co2) + ' t CO₂' : '–');
+
+      const mwh = row.fossilMwh;
+      const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
+      const nMwh = (mwh != null && mwh > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+      if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
+      g.append('text')
+        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', mwhClr)
+        .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
+    });
+
+    fokDownloadBar(container, 'srovnani-vozidel');
+  }
+
+  // ── Výhodnost elektromobilu — 3 nabíjecí tarify ───────────────────────────
+  function renderVyhodnostElektromobilu() {
+    const section = document.getElementById('vyhodnost-elektromobilu');
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const FONT      = BSW_CFG.font;
+    const ROBOTO    = BSW_CFG.fontAlt;
+    const CLR_LBL   = BSW_CFG.clrLabel;
+    const CLR_SUB   = BSW_CFG.clrSub;
+    const CLR_SEP   = BSW_CFG.clrSep;
+    const ICON_SZ   = BSW_CFG.iconSz;
+    const ICON_GAP  = BSW_CFG.iconGap;
+    const ICON_BASE = BSW_CFG.iconBase;
+    const LANE_H    = BSW_CFG.laneH;
+    const DOT_R     = BSW_CFG.dotR;
+    const HEADER_H  = BSW_CFG.headerH;
+    const M_BOT     = BSW_CFG.mBot;
+    const M_TOP     = HEADER_H + 14;
+
+    const TARIFF_SCENARIOS = [
+      { label: 'Nabíjím převážně doma ze solárů a ze sítě', factor: 1.21, color: '#2d1b6e' },
+      { label: 'Nabíjím převážně doma ze sítě',              factor: 1.33, color: '#7b5ca8' },
+      { label: 'Nabíjím venku, převážně pomalu',              factor: 2.3,  color: '#b8a0d8' },
+    ];
+
+    const ROW_DEFS = [
+      { mId: 53, bId: 49, sub: 'NOVÉ',         blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
+      { mId: 55, bId: 51, sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
+      { mId: 54, bId: 50, sub: 'NOVÉ',         blLabel: 'SUV na naftu',        mLabel: 'Elektrické SUV',    blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
+      { mId: 56, bId: 52, sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       mLabel: 'Elektrické SUV',    blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+    ];
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+    const DEFAULT_SC  = { discountRate: 0.03, carbonPriceEur: 70, priceScenario: 'CP',
+                          fossilMult: 1, cleanMult: 1, capexMeasMult: 1, capexBlMult: 1 };
+
+    const rows = ROW_DEFS.map(def => {
+      if (!allMeasures.find(m => m.id === def.mId)) return null;
+      const dots = TARIFF_SCENARIOS.map(sc => {
+        try {
+          const r = CostsBenefits.calculate({ measureId: def.mId, data, ...DEFAULT_SC, electricityPriceFactor: sc.factor });
+          return isNaN(r?.npv) ? null : { npv: r.npv, color: sc.color };
+        } catch (_) { return null; }
+      }).filter(Boolean);
+      return dots.length ? { ...def, dots } : null;
+    }).filter(Boolean);
+
+    if (!rows.length) return;
+
+    // Same layout proportions as renderSrovnaniVozidel; stat columns are
+    // phantom (not rendered) so the beeswarm area stays the same width
+    const totalW      = container.clientWidth || 900;
+    const LEFT_W      = Math.round(totalW * 0.12);
+    const CHART_R_GAP = 16;
+    const RMEAS_W     = Math.round(totalW * 0.19);
+    const STAT_W      = Math.round(totalW * 0.09);
+    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const xBsw        = LEFT_W;
+    const xRightCols  = LEFT_W + CHART_W + CHART_R_GAP;
+    const absMax      = 350_000;
+    const xSc         = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
+    const H           = M_TOP + rows.length * LANE_H + M_BOT;
+
+    d3.select(container).selectAll('svg, .chart-dl-bar, .tariff-legend').remove();
+
+    const legendDiv = document.createElement('div');
+    legendDiv.className = 'tariff-legend';
+    legendDiv.style.cssText = `display:flex; gap:16px; flex-wrap:wrap; font-family:${FONT}; font-size:11px; color:${CLR_LBL}; margin-bottom:8px;`;
+    legendDiv.innerHTML = TARIFF_SCENARIOS.map(sc =>
+      `<span style="display:flex;align-items:center;gap:6px;">
+         <svg width="12" height="12"><circle cx="6" cy="6" r="5.5" fill="${sc.color}"/></svg>
+         ${sc.label}
+       </span>`
+    ).join('');
+    container.appendChild(legendDiv);
+
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${totalW} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    const hdrY = HEADER_H / 2 + 4;
+    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    [
+      { x: 4,      text: 'FOSILNÍ VOZIDLO' },
+      { x: hdrRx,  text: 'TARIF ELEKTŘINY' },
+    ].forEach(({ x, text }) =>
+      svg.append('text')
+        .attr('x', x).attr('y', hdrY)
+        .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+        .attr('fill', CLR_SUB).text(text)
+    );
+
+
+    svg.append('line')
+      .attr('x1', xBsw + xSc(0)).attr('x2', xBsw + xSc(0))
+      .attr('y1', M_TOP).attr('y2', H - M_BOT)
+      .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+    const axisFn = d3.axisTop(xSc.copy().range([xBsw, xBsw + CHART_W]))
+      .ticks(5)
+      .tickFormat(v => {
+        if (v === 0) return '0';
+        const sign = v < 0 ? '−' : '+';
+        return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis.';
+      });
+    svg.append('g')
+      .attr('transform', `translate(0,${M_TOP})`)
+      .call(axisFn)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').attr('stroke', CLR_SUB))
+      .call(g => g.selectAll('.tick text')
+        .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      const g  = svg.append('g');
+
+
+      // ── LEFT: fossil vehicle ──────────────────────────────────────────────
+      const subLbl = row.age != null ? `${row.sub} (${row.age} let)` : row.sub;
+      g.append('text').attr('x', 4).attr('y', cy - 20).attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(subLbl);
+      g.append('text').attr('x', 4).attr('y', cy).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.blLabel);
+      g.append('text').attr('x', 4).attr('y', cy + 20).attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(row.blName);
+
+      // ── DOTS: one per tariff scenario ────────────────────────────────────
+      row.dots.forEach(d =>
+        g.append('circle')
+          .attr('cx', xBsw + xSc(d.npv)).attr('cy', cy)
+          .attr('r', DOT_R + 2).attr('fill', d.color)
+      );
+
+      // ── RIGHT: electric vehicle ───────────────────────────────────────────
+      const rxIcon = xRightCols + 4;
+      const rxText = rxIcon + ICON_SZ + ICON_GAP;
+      g.append('image')
+        .attr('href', `${ICON_BASE}/${row.icon}.svg`)
+        .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+        .attr('width', ICON_SZ).attr('height', ICON_SZ);
+      g.append('text').attr('x', rxText).attr('y', cy - 20).attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(subLbl);
+      g.append('text').attr('x', rxText).attr('y', cy).attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.mLabel);
+      g.append('text').attr('x', rxText).attr('y', cy + 20).attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(`${row.mName} (${row.mBattery} kWh)`);
+    });
+
+    fokDownloadBar(container, 'vyhodnost-elektromobilu');
+  }
+
+  // ── Renovace se zateplením — beeswarm across 4 building contexts ──────────
+  function renderRenovaceZatepleni() {
+    const section = document.getElementById('renovace-zatepleni');
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const FONT       = BSW_CFG.font;
+    const ROBOTO     = BSW_CFG.fontAlt;
+    const CLR_POS    = BSW_CFG.clrPos;
+    const CLR_NEG    = BSW_CFG.clrNeg;
+    const CLR_LBL    = BSW_CFG.clrLabel;
+    const CLR_SUB    = BSW_CFG.clrSub;
+    const CLR_SEP    = BSW_CFG.clrSep;
+    const CLR_STAT   = BSW_CFG.clrSub;
+    const CLR_TEAL   = BSW_CFG.clrPos;
+    const CLR_MAROON = BSW_CFG.clrNegStat;
+    const ICON_BASE  = BSW_CFG.iconBase;
+
+    // 4 rows: Renovace se zateplením vs. Renovace bez zateplení, 4 building contexts
+    const ROW_DEFS = [
+      { mId: 24, bId:  2, cls: 'F', fuel: 'uhlí' },
+      { mId: 34, bId:  8, cls: 'F', fuel: 'plyn' },
+      { mId: 26, bId:  4, cls: 'D', fuel: 'uhlí' },
+      { mId: 36, bId: 10, cls: 'D', fuel: 'plyn' },
+    ];
+
+    // Sensitivity sweep — same active parameters as vehicle chart
+    const SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
+    const CARBON_PRICES  = [40, 70, 100];
+    const DISCOUNT_RATES = [3];
+    const DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
+    const CAPEX_FALLBACK = 0.10;
+    const CAPEX_CASES    = [{ key: 'worst', sf: +1 }, { key: 'reference', sf: 0 }, { key: 'best', sf: -1 }];
+    const PRICE_CASES    = [
+      { key: 'worst',  fm: 0.9, cm: 1.1 },
+      { key: 'normal', fm: 1.0, cm: 1.0 },
+      { key: 'best',   fm: 1.1, cm: 0.9 },
+    ];
+    const elpf = CostsBenefits.getDefaultElectricityPriceFactor
+      ? CostsBenefits.getDefaultElectricityPriceFactor(data) : 1;
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+
+    const rows = ROW_DEFS.map(def => {
+      const entry    = allMeasures.find(m => m.id === def.mId);
+      const baseline = allMeasures.find(m => m.id === def.bId);
+      if (!entry || !baseline) return null;
+
+      const measS = entry.capex_sensitivity    ?? CAPEX_FALLBACK;
+      const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
+
+      const dots = [];
+      let co2Saved = null, fossilMwh = null;
+
+      for (const cc of CAPEX_CASES) {
+        const capexMeasMult = 1 + cc.sf * measS;
+        const capexBlMult   = 1 - cc.sf * blS;
+        for (const pc of PRICE_CASES) {
+          for (const sc of SCENARIOS) {
+            const cps = sc === 'NZ' ? [DEFAULT.cp] : CARBON_PRICES;
+            for (const cp of cps) {
+              for (const dr of DISCOUNT_RATES) {
+                const isDefault = sc === DEFAULT.scenario && cp === DEFAULT.cp && dr === DEFAULT.dr
+                               && pc.key === 'normal' && cc.key === 'reference';
+                try {
+                  const r = CostsBenefits.calculate({
+                    measureId: def.mId, data,
+                    discountRate:           dr / 100,
+                    carbonPriceEur:         cp,
+                    priceScenario:          sc,
+                    electricityPriceFactor: elpf,
+                    fossilMult:             pc.fm,
+                    cleanMult:              pc.cm,
+                    capexMeasMult,
+                    capexBlMult,
+                  });
+                  if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
+                  if (isDefault && r.emissionSavings != null) {
+                    co2Saved  = -r.emissionSavings.totalT;
+                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                  }
+                } catch (_) {}
+              }
+            }
+          }
+        }
+      }
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+    }).filter(Boolean);
+
+    if (!rows.length) return;
+
+    // Layout — same proportions as vehicle chart
+    const totalW      = container.clientWidth || 900;
+    const LEFT_W      = Math.round(totalW * 0.12);
+    const CHART_R_GAP = 16;
+    const RMEAS_W     = Math.round(totalW * 0.19);
+    const STAT_W      = Math.round(totalW * 0.09);
+    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+
+    const xBsw       = LEFT_W;
+    const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
+    const xStatCO2   = xRightCols + RMEAS_W + STAT_W / 2;
+    const xStatImprt = xRightCols + RMEAS_W + STAT_W + STAT_W / 2;
+
+    const ICON_SZ    = BSW_CFG.iconSz;
+    const ICON_GAP   = BSW_CFG.iconGap;
+    const LANE_H     = BSW_CFG.laneH;
+    const DOT_R      = BSW_CFG.dotR;
+    const HEADER_H   = BSW_CFG.headerH;
+    const M_TOP      = HEADER_H + 14;
+    const M_BOT      = BSW_CFG.mBot;
+    const H          = M_TOP + rows.length * LANE_H + M_BOT;
+
+    const SQ_SIZE    = 10;
+    const SQ_PER_ROW = 5;
+    const CO2_PER_SQ = 20;
+    const MWH_PER_SQ = 50;
+
+    const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('rect')
+          .attr('x', startX + col * SQ_SIZE).attr('y', bottomY - (row + 1) * SQ_SIZE)
+          .attr('width', SQ_SIZE).attr('height', SQ_SIZE)
+          .attr('fill', fillColor || CLR_STAT).attr('stroke', 'white').attr('stroke-width', 0.5);
+      }
+    };
+
+    const drawCircleGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const r = SQ_SIZE / 2;
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('circle')
+          .attr('cx', startX + col * SQ_SIZE + r)
+          .attr('cy', bottomY - (row + 1) * SQ_SIZE + r)
+          .attr('r', r - 0.8)
+          .attr('fill', fillColor || CLR_STAT);
+      }
+    };
+
+    const absMax = 1_200_000;
+    const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
+
+    const npvColor = d3.scaleLinear()
+      .domain([-absMax, 0, absMax])
+      .range(['#8c3f5f', '#d0d4d8', '#006063'])
+      .clamp(true);
+
+    // Force simulation
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      row.dots.forEach(d => {
+        d.x  = xBsw + xSc(d.npv);
+        d.y  = cy;
+        d.fy = d.isDefault ? cy : undefined;
+      });
+      const sim = d3.forceSimulation(row.dots)
+        .force('y', d3.forceY(cy).strength(0.8))
+        .force('collide', d3.forceCollide(DOT_R + 0.8))
+        .stop();
+      for (let i = 0; i < 120; i++) {
+        sim.tick();
+        row.dots.forEach(d => { d.x = xBsw + xSc(d.npv); });
+      }
+    });
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${totalW} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    // Column headers
+    const hdrY = HEADER_H / 2 + 4;
+    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
+    [
+      { x: 4,                           lines: ['BEZ ZATEPLENÍ'] },
+      { x: hdrRx,                       lines: ['SE ZATEPLENÍM'] },
+      { x: xStatCO2 - hdrStatL,         lines: ['ÚSPORA EMISÍ CO₂'] },
+      { x: xStatImprt - hdrStatL,       lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+    ].forEach(({ x, lines }) => {
+      const lineH = 11;
+      const t = svg.append('text')
+        .attr('text-anchor', 'start')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+        .attr('fill', CLR_SUB);
+      lines.forEach((line, li) =>
+        t.append('tspan').attr('x', x)
+          .attr('y', hdrY - (lines.length - 1) * lineH / 2 + li * lineH)
+          .attr('dominant-baseline', 'middle').text(line)
+      );
+    });
+
+    // Zero line
+    const zx = xBsw + xSc(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M_TOP).attr('y2', H - M_BOT)
+      .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+    // Axis
+    const axisFn = d3.axisTop(xSc.copy().range([xBsw, xBsw + CHART_W]))
+      .ticks(5)
+      .tickFormat(v => {
+        if (v === 0) return '0';
+        const sign = v < 0 ? '−' : '+';
+        return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis.';
+      });
+    svg.append('g')
+      .attr('transform', `translate(0,${M_TOP})`)
+      .call(axisFn)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').attr('stroke', CLR_SUB))
+      .call(g => g.selectAll('.tick text')
+        .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
+
+    // Context strip helper — class badge + RODINNÝ DŮM + fuel icon
+    const drawCtxStrip = (g, x, y, cls, fuel) => {
+      const S = 13, P = 4, CY = S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${x},${y})`);
+      let bx = 0;
+      ctxG.append('path')
+        .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+        .attr('fill', CLR_SUB);
+      ctxG.append('text')
+        .attr('x', bx + S / 2).attr('y', CY)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+        .attr('fill', 'white').text(cls);
+      bx += S + P + 6;
+      ctxG.append('text')
+        .attr('x', bx).attr('y', CY)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+      bx += 82;
+      { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
+        ctxG.append('svg')
+          .attr('x', bx).attr('y', CY - fi.h / 2)
+          .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+          .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+        bx += fi.w + 4; }
+      ctxG.append('text')
+        .attr('x', bx).attr('y', CY)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+    };
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      const g  = svg.append('g');
+
+
+      // ── LEFT ZONE: baseline (bez zateplení) ────────────────────────────────
+      drawCtxStrip(g, 4, cy - 34, row.cls, row.fuel);
+
+      { const t = g.append('text').attr('font-family', FONT).attr('font-size', '16px').attr('fill', CLR_LBL);
+        t.append('tspan').attr('x', 4).attr('y', cy - 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '400').text('Renovace');
+        t.append('tspan').attr('x', 4).attr('y', cy + 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '700').text('bez zateplení'); }
+
+      // ── BEESWARM dots ──────────────────────────────────────────────────────
+      row.dots.filter(d => !d.isDefault).forEach(d =>
+        g.append('circle')
+          .attr('cx', d.x).attr('cy', d.y)
+          .attr('r', DOT_R).attr('fill', npvColor(d.npv)).attr('opacity', 0.35)
+      );
+
+      const def = row.dots.find(d => d.isDefault);
+      if (def) {
+        const fmtK = v => {
+          const sign = v < 0 ? '−' : '+';
+          return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis. Kč';
+        };
+        g.append('text')
+          .attr('x', def.x).attr('y', def.y - DOT_R - 1.5 - 5)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'auto')
+          .attr('font-family', FONT).attr('font-size', '13px').attr('font-weight', '600')
+          .attr('stroke', 'white').attr('stroke-width', 3).style('paint-order', 'stroke fill')
+          .attr('fill', CLR_LBL).text(fmtK(def.npv));
+        g.append('circle')
+          .attr('cx', def.x).attr('cy', def.y)
+          .attr('r', DOT_R + 1.5)
+          .attr('fill', npvColor(def.npv))
+          .attr('stroke', CLR_LBL).attr('stroke-width', 1.5);
+      }
+
+      // ── RIGHT ZONE: measure (se zateplením) ────────────────────────────────
+      const rxIcon = xRightCols + 4;
+      const rxText = rxIcon + ICON_SZ + ICON_GAP;
+
+      g.append('image')
+        .attr('href', `${ICON_BASE}/zatepleni.svg`)
+        .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+        .attr('width', ICON_SZ).attr('height', ICON_SZ);
+
+      drawCtxStrip(g, rxText, cy - 34, row.cls, row.fuel);
+
+      { const t = g.append('text').attr('font-family', FONT).attr('font-size', '16px').attr('fill', CLR_LBL);
+        t.append('tspan').attr('x', rxText).attr('y', cy - 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '400').text('Renovace');
+        t.append('tspan').attr('x', rxText).attr('y', cy + 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '700').text('se zateplením'); }
+
+      // ── STAT COLUMNS ───────────────────────────────────────────────────────
+      const statBottomY = cy - 6;
+
+      const co2 = row.co2Saved;
+      const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
+      const nCo2 = (co2 != null && co2 > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+      if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
+      g.append('text')
+        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', co2Clr)
+        .text(co2 != null && co2 !== 0 ? Math.round(co2) + ' t CO₂' : '–');
+
+      const mwh = row.fossilMwh;
+      const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
+      const nMwh = (mwh != null && mwh > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+      if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
+      g.append('text')
+        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', mwhClr)
+        .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
+    });
+
+    fokDownloadBar(container, 'renovace-zatepleni');
+  }
+
+  // ── Shared building beeswarm (NPV-colored) ────────────────────────────────
+  function renderBuildingBeeswarmChart({
+    sectionId, rowDefs, mLabel, mIcon,
+    leftHdr, rightHdr,
+    stat1Hdr, stat2Hdr,
+    mLabelFontSize,
+    mLabelLines,
+    absMaxOverride,
+  }) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const FONT       = BSW_CFG.font;
+    const ROBOTO     = BSW_CFG.fontAlt;
+    const CLR_LBL    = BSW_CFG.clrLabel;
+    const CLR_SUB    = BSW_CFG.clrSub;
+    const CLR_SEP    = BSW_CFG.clrSep;
+    const CLR_STAT   = BSW_CFG.clrSub;
+    const CLR_TEAL   = BSW_CFG.clrPos;
+    const CLR_MAROON = BSW_CFG.clrNegStat;
+    const ICON_BASE  = BSW_CFG.iconBase;
+
+    const SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
+    const CARBON_PRICES  = [40, 70, 100];
+    const DISCOUNT_RATES = [3];
+    const DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
+    const CAPEX_FALLBACK = 0.10;
+    const CAPEX_CASES    = [{ key: 'worst', sf: +1 }, { key: 'reference', sf: 0 }, { key: 'best', sf: -1 }];
+    const PRICE_CASES    = [
+      { key: 'worst',  fm: 0.9, cm: 1.1 },
+      { key: 'normal', fm: 1.0, cm: 1.0 },
+      { key: 'best',   fm: 1.1, cm: 0.9 },
+    ];
+    const elpf = CostsBenefits.getDefaultElectricityPriceFactor
+      ? CostsBenefits.getDefaultElectricityPriceFactor(data) : 1;
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+
+    const rows = rowDefs.map(def => {
+      const entry    = allMeasures.find(m => m.id === def.mId);
+      const baseline = allMeasures.find(m => m.id === def.bId);
+      if (!entry || !baseline) return null;
+
+      const measS = entry.capex_sensitivity    ?? CAPEX_FALLBACK;
+      const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
+      const dots  = [];
+      let co2Saved = null, fossilMwh = null;
+
+      for (const cc of CAPEX_CASES) {
+        const capexMeasMult = 1 + cc.sf * measS;
+        const capexBlMult   = 1 - cc.sf * blS;
+        for (const pc of PRICE_CASES) {
+          for (const sc of SCENARIOS) {
+            const cps = sc === 'NZ' ? [DEFAULT.cp] : CARBON_PRICES;
+            for (const cp of cps) {
+              for (const dr of DISCOUNT_RATES) {
+                const isDefault = sc === DEFAULT.scenario && cp === DEFAULT.cp && dr === DEFAULT.dr
+                               && pc.key === 'normal' && cc.key === 'reference';
+                try {
+                  const r = CostsBenefits.calculate({
+                    measureId: def.mId, data,
+                    discountRate:           dr / 100,
+                    carbonPriceEur:         cp,
+                    priceScenario:          sc,
+                    electricityPriceFactor: elpf,
+                    fossilMult:             pc.fm,
+                    cleanMult:              pc.cm,
+                    capexMeasMult,
+                    capexBlMult,
+                  });
+                  if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
+                  if (isDefault && r.emissionSavings != null) {
+                    co2Saved  = -r.emissionSavings.totalT;
+                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                  }
+                } catch (_) {}
+              }
+            }
+          }
+        }
+      }
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+    }).filter(Boolean);
+
+    if (!rows.length) return;
+
+    const totalW      = container.clientWidth || 900;
+    const LEFT_W      = Math.round(totalW * 0.12);
+    const CHART_R_GAP = 16;
+    const RMEAS_W     = Math.round(totalW * 0.19);
+    const STAT_W      = Math.round(totalW * 0.09);
+    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+
+    const xBsw       = LEFT_W;
+    const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
+    const xStatCO2   = xRightCols + RMEAS_W + STAT_W / 2;
+    const xStatImprt = xRightCols + RMEAS_W + STAT_W + STAT_W / 2;
+
+    const ICON_SZ    = BSW_CFG.iconSz;
+    const ICON_GAP   = BSW_CFG.iconGap;
+    const LANE_H     = BSW_CFG.laneH;
+    const DOT_R      = BSW_CFG.dotR;
+    const HEADER_H   = BSW_CFG.headerH;
+    const M_TOP      = HEADER_H + 14;
+    const M_BOT      = BSW_CFG.mBot;
+    const H          = M_TOP + rows.length * LANE_H + M_BOT;
+
+    const SQ_SIZE    = 10;
+    const SQ_PER_ROW = 5;
+    const CO2_PER_SQ = 20;
+    const MWH_PER_SQ = 50;
+
+    const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('rect')
+          .attr('x', startX + col * SQ_SIZE).attr('y', bottomY - (row + 1) * SQ_SIZE)
+          .attr('width', SQ_SIZE).attr('height', SQ_SIZE)
+          .attr('fill', fillColor || CLR_STAT).attr('stroke', 'white').attr('stroke-width', 0.5);
+      }
+    };
+
+    const drawCircleGrid = (g, cx, bottomY, nFilled, fillColor) => {
+      const n = Math.min(nFilled, SQ_PER_ROW * 2);
+      const r = SQ_SIZE / 2;
+      const startX = cx - SQ_PER_ROW * SQ_SIZE / 2;
+      for (let i = 0; i < n; i++) {
+        const col = i % SQ_PER_ROW;
+        const row = Math.floor(i / SQ_PER_ROW);
+        g.append('circle')
+          .attr('cx', startX + col * SQ_SIZE + r)
+          .attr('cy', bottomY - (row + 1) * SQ_SIZE + r)
+          .attr('r', r - 0.8)
+          .attr('fill', fillColor || CLR_STAT);
+      }
+    };
+
+    const absMax = absMaxOverride ?? 600_000;
+    const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
+
+    const npvColor = d3.scaleLinear()
+      .domain([-absMax, 0, absMax])
+      .range(['#8c3f5f', '#d0d4d8', '#006063'])
+      .clamp(true);
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      row.dots.forEach(d => {
+        d.x  = xBsw + xSc(d.npv);
+        d.y  = cy;
+        d.fy = d.isDefault ? cy : undefined;
+      });
+      const sim = d3.forceSimulation(row.dots)
+        .force('y', d3.forceY(cy).strength(0.8))
+        .force('collide', d3.forceCollide(DOT_R + 0.8))
+        .stop();
+      for (let i = 0; i < 120; i++) {
+        sim.tick();
+        row.dots.forEach(d => { d.x = xBsw + xSc(d.npv); });
+      }
+    });
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${totalW} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    const hdrY = HEADER_H / 2 + 4;
+    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
+    [
+      { x: 4,                           lines: [leftHdr  || 'STÁVAJÍCÍ STAV'] },
+      { x: hdrRx,                       lines: [rightHdr || 'OPATŘENÍ'] },
+      { x: xStatCO2 - hdrStatL,         lines: [stat1Hdr || 'ÚSPORA EMISÍ CO₂'] },
+      { x: xStatImprt - hdrStatL,       lines: stat2Hdr ? [stat2Hdr] : ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+    ].forEach(({ x, lines }) => {
+      const lineH = 11;
+      const t = svg.append('text')
+        .attr('text-anchor', 'start')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+        .attr('fill', CLR_SUB);
+      lines.forEach((line, li) =>
+        t.append('tspan').attr('x', x)
+          .attr('y', hdrY - (lines.length - 1) * lineH / 2 + li * lineH)
+          .attr('dominant-baseline', 'middle').text(line)
+      );
+    });
+
+    const zx = xBsw + xSc(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M_TOP).attr('y2', H - M_BOT)
+      .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+    const axisFn = d3.axisTop(xSc.copy().range([xBsw, xBsw + CHART_W]))
+      .ticks(5)
+      .tickFormat(v => {
+        if (v === 0) return '0';
+        const sign = v < 0 ? '−' : '+';
+        return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis.';
+      });
+    svg.append('g')
+      .attr('transform', `translate(0,${M_TOP})`)
+      .call(axisFn)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').attr('stroke', CLR_SUB))
+      .call(g => g.selectAll('.tick text')
+        .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
+
+    const drawCtxStrip = (g, x, y, cls, fuel) => {
+      const S = 13, P = 4, CY = S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${x},${y})`);
+      let bx = 0;
+      ctxG.append('path')
+        .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+        .attr('fill', CLR_SUB);
+      ctxG.append('text')
+        .attr('x', bx + S / 2).attr('y', CY)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+        .attr('fill', 'white').text(cls);
+      bx += S + P + 6;
+      ctxG.append('text')
+        .attr('x', bx).attr('y', CY)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+      if (fuel) {
+        bx += 82;
+        { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
+          ctxG.append('svg')
+            .attr('x', bx).attr('y', CY - fi.h / 2)
+            .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+            .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+          bx += fi.w + 4; }
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+      }
+    };
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      const g  = svg.append('g');
+
+
+      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel);
+      g.append('text')
+        .attr('x', 4).attr('y', cy)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.blLabel);
+
+      row.dots.filter(d => !d.isDefault).forEach(d =>
+        g.append('circle')
+          .attr('cx', d.x).attr('cy', d.y)
+          .attr('r', DOT_R).attr('fill', npvColor(d.npv)).attr('opacity', 0.35)
+      );
+
+      const def = row.dots.find(d => d.isDefault);
+      if (def) {
+        const fmtK = v => {
+          const sign = v < 0 ? '−' : '+';
+          return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis. Kč';
+        };
+        g.append('text')
+          .attr('x', def.x).attr('y', def.y - DOT_R - 1.5 - 5)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'auto')
+          .attr('font-family', FONT).attr('font-size', '13px').attr('font-weight', '600')
+          .attr('stroke', 'white').attr('stroke-width', 3).style('paint-order', 'stroke fill')
+          .attr('fill', CLR_LBL).text(fmtK(def.npv));
+        g.append('circle')
+          .attr('cx', def.x).attr('cy', def.y)
+          .attr('r', DOT_R + 1.5)
+          .attr('fill', npvColor(def.npv))
+          .attr('stroke', CLR_LBL).attr('stroke-width', 1.5);
+      }
+
+      const rxIcon = xRightCols + 4;
+      const rxText = mIcon ? rxIcon + ICON_SZ + ICON_GAP : xRightCols + 4;
+
+      if (mIcon) {
+        g.append('image')
+          .attr('href', `${ICON_BASE}/${mIcon}.svg`)
+          .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ);
+      } else {
+        g.append('rect')
+          .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+          .attr('width', ICON_SZ).attr('height', ICON_SZ)
+          .attr('fill', 'none')
+          .attr('stroke', CLR_SUB).attr('stroke-dasharray', '3 3').attr('stroke-width', 1);
+      }
+
+      drawCtxStrip(g, rxText, cy - (mLabelLines && mLabelLines.length > 1 ? 32 : 26), row.cls, row.fuel);
+      if (mLabelLines && mLabelLines.length > 1) {
+        const fsPx = parseFloat(mLabelFontSize || '16');
+        const t = g.append('text').attr('font-family', FONT).attr('font-size', mLabelFontSize || '16px').attr('font-weight', '700').attr('fill', CLR_LBL);
+        mLabelLines.forEach((line, i) => {
+          t.append('tspan')
+            .attr('x', rxText).attr('y', cy + (i - (mLabelLines.length - 1) / 2) * fsPx * 1.1)
+            .attr('dominant-baseline', 'middle').text(line);
+        });
+      } else {
+        g.append('text')
+          .attr('x', rxText).attr('y', cy)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', FONT).attr('font-size', mLabelFontSize || '16px').attr('font-weight', '700')
+          .attr('fill', CLR_LBL).text(mLabel);
+      }
+
+      const statBottomY = cy - 6;
+
+      const co2    = row.co2Saved;
+      const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
+      const nCo2   = (co2 != null && co2 > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+      if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
+      g.append('text')
+        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', co2Clr)
+        .text(co2 != null && co2 !== 0 ? Math.round(co2) + ' t CO₂' : '–');
+
+      const mwh    = row.fossilMwh;
+      const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
+      const nMwh   = (mwh != null && mwh > 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+      if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
+      g.append('text')
+        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', mwhClr)
+        .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
+    });
+
+    fokDownloadBar(container, sectionId);
+  }
+
+  // ── Tepelné čerpadlo ──────────────────────────────────────────────────────
+  function renderTepelneCerpadlo() {
+    renderBuildingBeeswarmChart({
+      sectionId: 'tepelne-cerpadlo',
+      rowDefs: [
+        { mId: 21, bId:  1, cls: 'E', fuel: 'uhlí', blLabel: 'Uhelný kotel'  },
+        { mId: 27, bId:  5, cls: 'C', fuel: 'uhlí', blLabel: 'Uhelný kotel'  },
+        { mId: 31, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },
+        { mId: 37, bId: 11, cls: 'C', fuel: 'plyn', blLabel: 'Plynový kotel' },
+      ],
+      mLabel:   'Tepelné čerpadlo',
+      mIcon:    'tepelne-cerpadlo',
+      leftHdr:  'STÁVAJÍCÍ KOTEL',
+      rightHdr: 'TEPELNÉ ČERPADLO',
+    });
+  }
+
+  // ── Výhodnost tepelného čerpadla (colored by energy price) ───────────────
+  function renderTepCerpadloVyhodnost() {
+    const section = document.getElementById('vyhodnost-tepelneho-cerpadla');
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const FONT       = BSW_CFG.font;
+    const ROBOTO     = BSW_CFG.fontAlt;
+    const CLR_LBL    = BSW_CFG.clrLabel;
+    const CLR_SUB    = BSW_CFG.clrSub;
+    const CLR_SEP    = BSW_CFG.clrSep;
+    const ICON_BASE  = BSW_CFG.iconBase;
+    const PF_COLORS  = { worst: '#c0392b', normal: '#aaa', best: '#2471a3' };
+
+    const ROW_DEFS = [
+      { mId: 31, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },
+      { mId: 37, bId: 11, cls: 'C', fuel: 'plyn', blLabel: 'Plynový kotel' },
+    ];
+
+    const SCENARIOS      = ['CP', 'NZ', 'CP_EC'];
+    const CARBON_PRICES  = [40, 70, 100];
+    const DISCOUNT_RATES = [3];
+    const DEFAULT        = { scenario: 'CP', cp: 70, dr: 3 };
+    const CAPEX_FALLBACK = 0.10;
+    const CAPEX_CASES    = [{ key: 'worst', sf: +1 }, { key: 'reference', sf: 0 }, { key: 'best', sf: -1 }];
+    const PRICE_CASES    = [
+      { key: 'worst',  fm: 0.9, cm: 1.1 },
+      { key: 'normal', fm: 1.0, cm: 1.0 },
+      { key: 'best',   fm: 1.1, cm: 0.9 },
+    ];
+    const elpf = CostsBenefits.getDefaultElectricityPriceFactor
+      ? CostsBenefits.getDefaultElectricityPriceFactor(data) : 1;
+
+    const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
+
+    const rows = ROW_DEFS.map(def => {
+      const entry    = allMeasures.find(m => m.id === def.mId);
+      const baseline = allMeasures.find(m => m.id === def.bId);
+      if (!entry || !baseline) return null;
+
+      const measS = entry.capex_sensitivity    ?? CAPEX_FALLBACK;
+      const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
+      const dots  = [];
+
+      for (const cc of CAPEX_CASES) {
+        const capexMeasMult = 1 + cc.sf * measS;
+        const capexBlMult   = 1 - cc.sf * blS;
+        for (const pc of PRICE_CASES) {
+          for (const sc of SCENARIOS) {
+            const cps = sc === 'NZ' ? [DEFAULT.cp] : CARBON_PRICES;
+            for (const cp of cps) {
+              for (const dr of DISCOUNT_RATES) {
+                const isDefault = sc === DEFAULT.scenario && cp === DEFAULT.cp && dr === DEFAULT.dr
+                               && pc.key === 'normal' && cc.key === 'reference';
+                try {
+                  const r = CostsBenefits.calculate({
+                    measureId: def.mId, data,
+                    discountRate:           dr / 100,
+                    carbonPriceEur:         cp,
+                    priceScenario:          sc,
+                    electricityPriceFactor: elpf,
+                    fossilMult:             pc.fm,
+                    cleanMult:              pc.cm,
+                    capexMeasMult,
+                    capexBlMult,
+                  });
+                  if (!isNaN(r.npv)) dots.push({ npv: r.npv, priceCase: pc.key, isDefault, x: 0, y: 0 });
+                } catch (_) {}
+              }
+            }
+          }
+        }
+      }
+      return dots.length ? { ...def, dots } : null;
+    }).filter(Boolean);
+
+    if (!rows.length) return;
+
+    const totalW      = container.clientWidth || 900;
+    const LEFT_W      = Math.round(totalW * 0.12);
+    const CHART_R_GAP = 16;
+    const RMEAS_W     = Math.round(totalW * 0.19);
+    const STAT_W      = Math.round(totalW * 0.09);
+    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+
+    const xBsw       = LEFT_W;
+    const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
+
+    const ICON_SZ  = BSW_CFG.iconSz;
+    const ICON_GAP = BSW_CFG.iconGap;
+    const LANE_H   = BSW_CFG.laneH;
+    const DOT_R    = BSW_CFG.dotR;
+    const HEADER_H = BSW_CFG.headerH;
+    const LEGEND_H = 20;
+    const M_TOP    = HEADER_H + LEGEND_H + 14;
+    const M_BOT    = BSW_CFG.mBot;
+    const H        = M_TOP + rows.length * LANE_H + M_BOT;
+
+    const absMax = 600_000;
+    const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      row.dots.forEach(d => {
+        d.x  = xBsw + xSc(d.npv);
+        d.y  = cy;
+        d.fy = d.isDefault ? cy : undefined;
+      });
+      const sim = d3.forceSimulation(row.dots)
+        .force('y', d3.forceY(cy).strength(0.8))
+        .force('collide', d3.forceCollide(DOT_R + 0.8))
+        .stop();
+      for (let i = 0; i < 120; i++) {
+        sim.tick();
+        row.dots.forEach(d => { d.x = xBsw + xSc(d.npv); });
+      }
+    });
+
+    d3.select(container).selectAll('svg, .chart-dl-bar').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('viewBox', `0 0 ${totalW} ${H}`)
+      .attr('width', '100%')
+      .attr('style', 'display:block; overflow:visible;');
+
+    const hdrY = HEADER_H / 2 + 4;
+    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    [
+      { x: 4,      text: 'STÁVAJÍCÍ KOTEL'  },
+      { x: hdrRx,  text: 'TEPELNÉ ČERPADLO' },
+    ].forEach(({ x, text }) =>
+      svg.append('text')
+        .attr('x', x).attr('y', hdrY)
+        .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+        .attr('fill', CLR_SUB).text(text)
+    );
+
+    // Price-case legend
+    const legendItems = [
+      { key: 'worst',  label: 'Elektřina drahá, plyn levný' },
+      { key: 'normal', label: 'Referenční ceny'              },
+      { key: 'best',   label: 'Elektřina levná, plyn drahý' },
+    ];
+    const legendY   = HEADER_H + LEGEND_H / 2 + 2;
+    const legendTot = 430;
+    let lx = xBsw + CHART_W / 2 - legendTot / 2;
+    legendItems.forEach(item => {
+      svg.append('circle').attr('cx', lx + 5).attr('cy', legendY).attr('r', 5)
+        .attr('fill', PF_COLORS[item.key]);
+      svg.append('text').attr('x', lx + 14).attr('y', legendY)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '11px').attr('fill', CLR_SUB)
+        .text(item.label);
+      lx += legendTot / legendItems.length;
+    });
+
+    const zx = xBsw + xSc(0);
+    svg.append('line')
+      .attr('x1', zx).attr('x2', zx)
+      .attr('y1', M_TOP).attr('y2', H - M_BOT)
+      .attr('stroke', BSW_CFG.clrZeroLine).attr('stroke-width', 1);
+
+    const axisFn = d3.axisTop(xSc.copy().range([xBsw, xBsw + CHART_W]))
+      .ticks(5)
+      .tickFormat(v => {
+        if (v === 0) return '0';
+        const sign = v < 0 ? '−' : '+';
+        return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis.';
+      });
+    svg.append('g')
+      .attr('transform', `translate(0,${M_TOP})`)
+      .call(axisFn)
+      .call(g => g.select('.domain').remove())
+      .call(g => g.selectAll('.tick line').attr('stroke', CLR_SUB))
+      .call(g => g.selectAll('.tick text')
+        .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
+
+    const drawCtxStrip = (g, x, y, cls, fuel) => {
+      const S = 13, P = 4, CY = S / 2;
+      const ctxG = g.append('g').attr('transform', `translate(${x},${y})`);
+      let bx = 0;
+      ctxG.append('path')
+        .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+        .attr('fill', CLR_SUB);
+      ctxG.append('text')
+        .attr('x', bx + S / 2).attr('y', CY)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+        .attr('fill', 'white').text(cls);
+      bx += S + P + 6;
+      ctxG.append('text')
+        .attr('x', bx).attr('y', CY)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+        .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+      if (fuel) {
+        bx += 82;
+        { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
+          ctxG.append('svg')
+            .attr('x', bx).attr('y', CY - fi.h / 2)
+            .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+            .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+          bx += fi.w + 4; }
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+      }
+    };
+
+    rows.forEach((row, ri) => {
+      const cy = M_TOP + ri * LANE_H + LANE_H / 2;
+      const g  = svg.append('g');
+
+
+      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel);
+      g.append('text')
+        .attr('x', 4).attr('y', cy)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text(row.blLabel);
+
+      row.dots.filter(d => !d.isDefault).forEach(d =>
+        g.append('circle')
+          .attr('cx', d.x).attr('cy', d.y)
+          .attr('r', DOT_R).attr('fill', PF_COLORS[d.priceCase] || '#aaa').attr('opacity', 0.35)
+      );
+
+      const def = row.dots.find(d => d.isDefault);
+      if (def) {
+        const fmtK = v => {
+          const sign = v < 0 ? '−' : '+';
+          return sign + new Intl.NumberFormat('cs-CZ').format(Math.round(Math.abs(v) / 1000)) + ' tis. Kč';
+        };
+        g.append('text')
+          .attr('x', def.x).attr('y', def.y - DOT_R - 1.5 - 5)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'auto')
+          .attr('font-family', FONT).attr('font-size', '13px').attr('font-weight', '600')
+          .attr('stroke', 'white').attr('stroke-width', 3).style('paint-order', 'stroke fill')
+          .attr('fill', CLR_LBL).text(fmtK(def.npv));
+        g.append('circle')
+          .attr('cx', def.x).attr('cy', def.y)
+          .attr('r', DOT_R + 1.5)
+          .attr('fill', PF_COLORS['normal'])
+          .attr('stroke', CLR_LBL).attr('stroke-width', 1.5);
+      }
+
+      const rxIcon = xRightCols + 4;
+      const rxText = rxIcon + ICON_SZ + ICON_GAP;
+      g.append('image')
+        .attr('href', `${ICON_BASE}/tepelne-cerpadlo.svg`)
+        .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
+        .attr('width', ICON_SZ).attr('height', ICON_SZ);
+      drawCtxStrip(g, rxText, cy - 26, row.cls, row.fuel);
+      g.append('text')
+        .attr('x', rxText).attr('y', cy)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
+        .attr('fill', CLR_LBL).text('Tepelné čerpadlo');
+    });
+
+    fokDownloadBar(container, 'vyhodnost-tepelneho-cerpadla');
+  }
+
+  // ── Kotel na biomasu ──────────────────────────────────────────────────────
+  function renderKotelBiomasu() {
+    renderBuildingBeeswarmChart({
+      sectionId: 'kotel-biomasu',
+      rowDefs: [
+        { mId: 22, bId:  1, cls: 'E', fuel: 'uhlí', blLabel: 'Uhelný kotel'  },
+        { mId: 28, bId:  5, cls: 'C', fuel: 'uhlí', blLabel: 'Uhelný kotel'  },
+        { mId: 32, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },
+        { mId: 38, bId: 11, cls: 'C', fuel: 'plyn', blLabel: 'Plynový kotel' },
+      ],
+      mLabel:   'Kotel na biomasu',
+      mIcon:    'biomasa-kotel',
+      leftHdr:  'STÁVAJÍCÍ KOTEL',
+      rightHdr: 'KOTEL NA BIOMASU',
+    });
+  }
+
+  // ── Elektrokotel ──────────────────────────────────────────────────────────
+  function renderElektrokotel() {
+    renderBuildingBeeswarmChart({
+      sectionId:    'elektrokotel',
+      rowDefs: [
+        { mId: 43, bId: 14, cls: 'A', fuel: 'plyn', blLabel: 'Plynový kotel' },
+        { mId: 41, bId: 11, cls: 'C', fuel: 'plyn', blLabel: 'Plynový kotel' },
+        { mId: 33, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },
+      ],
+      mLabel:       'Elektrický kotel',
+      mIcon:        'elektrokotel',
+      leftHdr:      'STÁVAJÍCÍ KOTEL',
+      rightHdr:     'ELEKTRICKÝ KOTEL',
+      absMaxOverride: 1_200_000,
+    });
+  }
+
+  // ── Střešní fotovoltaika a baterie ────────────────────────────────────────
+  function renderFve() {
+    renderBuildingBeeswarmChart({
+      sectionId:       'fve',
+      rowDefs: [
+        { mId: 40, bId: 15, cls: 'D', fuel: null, blLabel: 'Nedělám nic' },
+        { mId: 39, bId: 13, cls: 'C', fuel: null, blLabel: 'Nedělám nic' },
+      ],
+      mLabel:          'Střešní fotovoltaika a baterie',
+      mLabelLines:     ['Střešní fotovoltaika', 'a baterie'],
+      mIcon:           'fotovoltaika',
+      leftHdr:         'BEZ FOTOVOLTAIKY',
+      rightHdr:        'STŘEŠNÍ FOTOVOLTAIKA',
+      stat2Hdr:        'VÝROBA ELEKTŘINY',
+      mLabelFontSize:  '14px',
+    });
   }
 
   // ── Gas savings range chart ────────────────────────────────────────────────

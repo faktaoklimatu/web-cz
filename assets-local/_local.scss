@@ -3,6 +3,11 @@
 @use "dashboard-teplaren";
 
 /* Local CSS for Czech web version */
+
+.page-opatreni-dekarbonizace .section,
+.page-opatreni-dekarbonizace .section:nth-of-type(odd) {
+    background-color: white;
+}
 $c-callout-background: #f7efde;
 $c-callout-text: #373633;
 
@@ -729,4 +734,22 @@ $c-callout-text: #373633;
         font-size: 0.9rem;
         color: colors.$c-grey;
     }
+}
+
+#secondary-navbar {
+    position: static;
+}
+
+.key-chart-title {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+}
+
+.key-chart-subtitle {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.2;
 }
