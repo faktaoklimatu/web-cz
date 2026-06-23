@@ -1662,6 +1662,7 @@
         if (isFinite(p.npv)) byId[p.id][sc.key] = p.npv;
       }
     }
+    const range = d => Math.max(...SCENARIO_DEFS.map(sc => d[sc.key])) - Math.min(...SCENARIO_DEFS.map(sc => d[sc.key]));
     return Object.values(byId)
       .filter(d => SCENARIO_DEFS.every(sc => d[sc.key] != null))
       .sort((a, b) => b.CP - a.CP);
@@ -1783,7 +1784,6 @@
       id: 'dumbbell-combined',
       categories: null,
       entries: [
-        { name: 'Ojeté kompaktní SUV elektro',      category: 'Ojeté velké'              },
         { name: 'Renovace se zateplením',            category: 'Rodinný dům uhlí – F'    },
         { name: 'Tepelné čerpadlo',                  category: 'Rodinný dům plyn – C'    },
         { name: 'Tepelné čerpadlo',                  category: 'Rodinný dům uhlí – E'    },
@@ -2413,7 +2413,7 @@
     leg.append('text').attr('x', 46).attr('y', 9)
       .attr('font-size', '10px').attr('font-weight', '600').attr('fill', '#999').text('OPEX');
     // One row per measure
-    [[COLORS.bl.capex, COLORS.bl.opex, bl.measure_name], [COLORS.meas.capex, COLORS.meas.opex, meas.measure_name]].forEach(([capexColor, opexColor, label], i) => {
+    [[COLORS.bl.capex, COLORS.bl.opex, 'Varianta 1'], [COLORS.meas.capex, COLORS.meas.opex, 'Varianta 2']].forEach(([capexColor, opexColor, label], i) => {
       const row = leg.append('g').attr('transform', `translate(0,${14 + i * 16})`);
       row.append('rect').attr('width', 10).attr('height', 10).attr('fill', capexColor).attr('opacity', 0.85);
       row.append('rect').attr('x', 46).attr('width', 10).attr('height', 10).attr('fill', opexColor).attr('opacity', 0.85);
@@ -2456,7 +2456,7 @@
 
     container.innerHTML = '';
 
-    const margin  = { top: 20, right: 16, bottom: 36, left: 72 };
+    const margin  = { top: 46, right: 16, bottom: 36, left: 72 };
     const W       = (container.clientWidth || container.parentElement?.clientWidth || 500) - margin.left - margin.right;
     const H       = 160;
     const BAR_STEP = Math.floor(W / years.length);
@@ -2478,6 +2478,16 @@
       .attr('height', H + margin.top + margin.bottom)
       .style('font-family', FONT).style('display', 'block');
 
+    svg.append('defs').html(
+      `<pattern id="hatch-teal" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)">
+         <rect width="5" height="5" fill="#1a7a85" opacity="0.55"/>
+         <line x1="0" y1="0" x2="0" y2="5" stroke="white" stroke-width="1.5"/>
+       </pattern>
+       <pattern id="hatch-white" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)">
+         <line x1="0" y1="0" x2="0" y2="5" stroke="white" stroke-width="1.5"/>
+       </pattern>`
+    );
+
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     const z = yScale(0);
 
@@ -2487,15 +2497,6 @@
       .attr('y1', z).attr('y2', z)
       .attr('stroke', '#ccc').attr('stroke-width', 1);
 
-    // Payback marker (3 % rate)
-    if (r3.paybackYear != null) {
-      const px = xScale(r3.paybackYear) + xScale.bandwidth() / 2;
-      g.append('line')
-        .attr('x1', px).attr('x2', px).attr('y1', 0).attr('y2', H)
-        .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
-      g.append('text').attr('x', px + 3).attr('y', 10)
-        .attr('font-size', '10px').attr('fill', '#aaa').text('Návratnost');
-    }
 
     years.forEach(d => {
       const x  = xScale(d.year);
@@ -2521,7 +2522,7 @@
           .attr('y', lo)
           .attr('width', bw)
           .attr('height', extH)
-          .attr('fill', '#bbb').attr('opacity', 0.5);
+          .attr('fill', d.disc3 >= 0 ? 'url(#hatch-teal)' : 'url(#hatch-white)').attr('opacity', 1);
       }
     });
 
@@ -2542,15 +2543,17 @@
         .tickFormat(v => (v / 1000).toFixed(0) + ' tis.'));
 
     // Legend
-    const leg = g.append('g').attr('transform', `translate(${chartW - 180}, 4)`);
+    const leg = g.append('g').attr('transform', `translate(0, -42)`);
     [
-      { color: COLOR_FAVORABLE, label: 'Kumulativní NPV (3 % diskont)' },
-      { color: '#bbb',          label: 'Navíc při 0 % diskontu',        opacity: 0.5 },
+      { colors: [COLOR_FAVORABLE, COLOR_COSTLY], label: 'Kumulativní NPV (3% diskontní míra)' },
+      { colors: ['url(#hatch-teal)'],                     label: 'NPV bez diskontování',        opacity: 1 },
     ].forEach((item, i) => {
       const row = leg.append('g').attr('transform', `translate(0,${i * 16})`);
-      row.append('rect').attr('width', 12).attr('height', 10)
-        .attr('fill', item.color).attr('opacity', item.opacity || 0.8);
-      row.append('text').attr('x', 17).attr('y', 9)
+      item.colors.forEach((c, ci) => {
+        row.append('rect').attr('x', ci * 14).attr('width', 12).attr('height', 10)
+          .attr('fill', c).attr('opacity', item.opacity || 0.8);
+      });
+      row.append('text').attr('x', item.colors.length * 14 + 3).attr('y', 9)
         .attr('font-size', '10px').attr('fill', '#555').text(item.label);
     });
   }
