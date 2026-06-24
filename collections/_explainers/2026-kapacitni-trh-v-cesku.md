@@ -8,6 +8,7 @@ authors:
   - id: "jan-krcal"
 weight:      50
 tags-scopes: [ cr ]
+op-jak:      true
 tags-topics: [ energetika ]
 cover-source-author:      "Untitled Photo"
 cover-source-text:        "Unsplash"

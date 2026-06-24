@@ -733,7 +733,7 @@ $c-callout-text: #373633;
 
 ul.plus-list {
     list-style-type: "\f055\0020\0020";
-    
+
     li {
         margin-block: 0.4rem;
         &::marker {
@@ -745,7 +745,7 @@ ul.plus-list {
 
 ul.minus-list {
     list-style-type: "\f056\0020\0020";
-    
+
     li {
         margin-block: 0.4rem;
         &::marker {
@@ -757,7 +757,7 @@ ul.minus-list {
 
 ul.warning-list {
     list-style-type: "\f06a\0020\0020";
-    
+
     li {
         margin-block: 0.4rem;
         &::marker {
@@ -791,4 +791,10 @@ ol.circled-list {
         font-weight: bold;
         text-align: center;
     }
+}
+
+#opjak-logolink {
+    max-height: 3em;
+    max-width: 100%;
+    margin-block: 1.5rem;
 }
