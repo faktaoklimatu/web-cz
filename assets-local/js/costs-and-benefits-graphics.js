@@ -4030,7 +4030,7 @@
                   if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
-                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    fossilMwh = r.fossilImportSavings?.totalMwh ?? null;
                     const fis = r.fossilImportSavings;
                     elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
@@ -4292,16 +4292,6 @@
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
-      if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
-        const sign = row.elecMwh > 0 ? '' : '−';
-        const lbl  = '(plyn na výrobu elektřiny)';
-        g.append('text')
-          .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
-          .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
-          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '400')
-          .attr('fill', CLR_SUB)
-          .text(sign + Math.round(Math.abs(row.elecMwh)) + ' MWh ' + lbl);
-      }
     });
 
     const footY1 = H - M_BOT + 20;
@@ -4573,7 +4563,7 @@
                   if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
-                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    fossilMwh = r.fossilImportSavings?.totalMwh ?? null;
                     const fis = r.fossilImportSavings;
                     elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
@@ -4913,7 +4903,7 @@
                   if (!isNaN(r.npv)) dots.push({ npv: r.npv, isDefault, x: 0, y: 0 });
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
-                    fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    fossilMwh = r.fossilImportSavings?.totalMwh ?? null;
                     const fis = r.fossilImportSavings;
                     elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
@@ -5201,16 +5191,6 @@
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
-      if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
-        const sign = row.elecMwh > 0 ? '' : '−';
-        const lbl  = '(plyn na výrobu elektřiny)';
-        g.append('text')
-          .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
-          .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
-          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '400')
-          .attr('fill', CLR_SUB)
-          .text(sign + Math.round(Math.abs(row.elecMwh)) + ' MWh ' + lbl);
-      }
     });
 
     const footYb = H - M_BOT + 20;
