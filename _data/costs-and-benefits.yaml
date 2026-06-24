@@ -423,7 +423,7 @@ buildings_measures:
   measure_baseline_id: 1
 - id: 22
   building_category: Rodinný dům uhlí – E
-  measure_name: Kotel na biomasu
+  measure_name: Kotel na dřevo
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -555,7 +555,7 @@ buildings_measures:
   measure_baseline_id: 5
 - id: 28
   building_category: Rodinný dům uhlí – C
-  measure_name: Kotel na biomasu
+  measure_name: Kotel na dřevo
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4
@@ -643,7 +643,7 @@ buildings_measures:
   measure_baseline_id: 7
 - id: 32
   building_category: Rodinný dům plyn – E
-  measure_name: Kotel na biomasu
+  measure_name: Kotel na dřevo
   dwellings: 1
   demand_heat_building_mwh: 25
   demand_electricity_mwh: 4
@@ -775,7 +775,7 @@ buildings_measures:
   measure_baseline_id: 11
 - id: 38
   building_category: Rodinný dům plyn – C
-  measure_name: Kotel na biomasu
+  measure_name: Kotel na dřevo
   dwellings: 1
   demand_heat_building_mwh: 15
   demand_electricity_mwh: 4

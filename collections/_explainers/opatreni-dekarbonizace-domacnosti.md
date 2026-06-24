@@ -500,7 +500,7 @@ extra-scripts:
 
 <div class="section pt-4 pb-3" id="kotel-biomasu">
   <div class="container">
-    <h2 class="key-chart-title">Kotel na biomasu</h2>
+    <h2 class="key-chart-title">Kotel na dřevo</h2>
   </div>
 </div>
 
@@ -513,6 +513,24 @@ extra-scripts:
 <div class="section pt-4 pb-3" id="fve">
   <div class="container">
     <h2 class="key-chart-title">Střešní fotovoltaika a baterie</h2>
+  </div>
+</div>
+
+<div class="section pt-4 pb-3" id="cena-tuny-co2">
+  <div class="container">
+    <h2 class="key-chart-title">Kolik stojí úspora jedné tuny emisí CO<sub>2</sub>?</h2>
+  </div>
+</div>
+
+<div class="section pt-4 pb-3" id="vyhodnost-vs-emise">
+  <div class="container">
+    <h2 class="key-chart-title">Ekonomická výhodnost vs. úspora emisí CO<sub>2</sub></h2>
+  </div>
+</div>
+
+<div class="section pt-4 pb-3" id="scenare-cen-energii">
+  <div class="container">
+    <h2 class="key-chart-title">Jak ekonomickou výhodnost opatření ovlivňují různé scénáře cen energií?</h2>
   </div>
 </div>
 

@@ -86,7 +86,7 @@
     'Zateplení + fasáda',
     'Výměna oken a dveří',
     'Elektrický kotel',
-    'Kotel na biomasu',
+    'Kotel na dřevo',
     'Střešní fotovoltaika + baterie',
     'Renovace se zateplením',
     'Elektromobil',
@@ -2582,8 +2582,8 @@
         'Fasáda + renovace — Byt ve starší zástavbě s vlastním plynovým kotlem',
         'Fasáda + renovace — Rodinný dům plyn – F',
         'Fasáda + renovace — Rodinný dům uhlí – E',
-        'Kotel na biomasu — Rodinný dům uhlí – E',
-        'Kotel na biomasu — Rodinný dům uhlí – C',
+        'Kotel na dřevo — Rodinný dům uhlí – E',
+        'Kotel na dřevo — Rodinný dům uhlí – C',
         'Tepelné čerpadlo — Rodinný dům plyn – C',
         'Tepelné čerpadlo — Rodinný dům plyn – E',
         'Tepelné čerpadlo — Rodinný dům uhlí – E',
@@ -3130,7 +3130,7 @@
       { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',                  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null,  icon: 'elektroauto-suv'  },
       { mId: 37, bId: 11, blLabel: 'Plynový kotel',          blSub: null,                mLabel: 'Tepelné čerpadlo',                mSub: null,                cls: 'C', fuel: 'plyn',  icon: 'tepelne-cerpadlo' },
       { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil',               mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null,  icon: 'elektroauto-male' },
-      { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null,                mLabel: 'Střešní fotovoltaika a baterie', mSub: null,                cls: 'D', fuel: 'uhlí',  icon: 'fotovoltaika'     },
+      { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null,                mLabel: 'Střešní fotovoltaika a baterie', mSub: null,                cls: null, fuel: null, ctxSpecial: 'SPOTŘEBA 7 MWh', icon: 'fotovoltaika'     },
       { mId: 36, bId: 10, blLabel: 'Renovace bez zateplení', blSub: null,                mLabel: 'Renovace se zateplením',         mSub: null,                cls: 'D', fuel: 'plyn',  icon: 'zatepleni'        },
       { mId: 41, bId: 11, blLabel: 'Plynový kotel',          blSub: null,                mLabel: 'Elektrický kotel',                mSub: null,                cls: 'C', fuel: 'plyn',  icon: 'elektrokotel'     },
     ];
@@ -3245,7 +3245,17 @@
       const ctxG = g.append('g').attr('transform', `translate(${TX},${CTX_TOP})`);
       let bx = 0;
 
-      if (row.mSub) {
+      if (row.ctxSpecial) {
+        ctxG.append('path')
+          .attr('d', 'M5,0 L0,6 L4,6 L1,12 L11,5 L7,5 Z')
+          .attr('transform', `translate(0,${CY - 6})`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', 14).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(row.ctxSpecial);
+      } else if (row.mSub) {
         ctxG.append('text')
           .attr('x', 0).attr('y', CY)
           .attr('dominant-baseline', 'middle')
@@ -3432,7 +3442,17 @@
       const ctxG = g.append('g').attr('transform', `translate(${TX},${CTX_TOP})`);
       let bx = 0;
 
-      if (row.mSub) {
+      if (row.ctxSpecial) {
+        ctxG.append('path')
+          .attr('d', 'M5,0 L0,6 L4,6 L1,12 L11,5 L7,5 Z')
+          .attr('transform', `translate(0,${CY - 6})`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', 14).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(row.ctxSpecial);
+      } else if (row.mSub) {
         ctxG.append('text')
           .attr('x', 0).attr('y', CY)
           .attr('dominant-baseline', 'middle')
@@ -3546,7 +3566,7 @@
         { mId: 36, bId: 10, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'D', fuel: 'plyn', icon: 'zatepleni'        },
         { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null, icon: 'elektroauto-suv'  },
         { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil', mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null, icon: 'elektroauto-male' },
-        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: 'D', fuel: 'uhlí', icon: 'fotovoltaika'   },
+        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: null, fuel: null, ctxSpecial: 'SPOTŘEBA 7 MWh', icon: 'fotovoltaika'   },
         { mId: 41, bId: 11, blLabel: 'Plynový kotel',          blSub: null, mLabel: 'Elektrický kotel',                mSub: null, cls: 'C', fuel: 'plyn', icon: 'elektrokotel'     },
       ],
       getMetric:   r => r.emissionSavings ? -r.emissionSavings.totalT : null,
@@ -3567,7 +3587,7 @@
         { mId: 31, bId:  7, blLabel: 'Plynový kotel',          blSub: null, mLabel: 'Tepelné čerpadlo',                mSub: null, cls: 'E', fuel: 'plyn', icon: 'tepelne-cerpadlo' },
         { mId: 54, bId: 50, blLabel: 'SUV na naftu',           blSub: 'NOVÉ, ŠKODA KAROQ', mLabel: 'Elektrické SUV',  mSub: 'NOVÉ, ŠKODA ELROQ', cls: null, fuel: null, icon: 'elektroauto-suv'  },
         { mId: 53, bId: 49, blLabel: 'Malé auto na benzín',    blSub: 'NOVÉ, PEUGEOT 208', mLabel: 'Malý elektromobil', mSub: 'NOVÝ, PEUGEOT 208', cls: null, fuel: null, icon: 'elektroauto-male' },
-        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: 'D', fuel: 'uhlí', icon: 'fotovoltaika'   },
+        { mId: 40, bId: 15, blLabel: 'Bez střešní fotovoltaiky', blSub: null, mLabel: 'Střešní fotovoltaika a baterie', mSub: null, cls: null, fuel: null, ctxSpecial: 'SPOTŘEBA 7 MWh', icon: 'fotovoltaika'   },
         { mId: 24, bId:  2, blLabel: 'Renovace bez zateplení', blSub: null, mLabel: 'Renovace se zateplením',         mSub: null, cls: 'F', fuel: 'uhlí', icon: 'zatepleni'        },
         { mId: 21, bId:  1, blLabel: 'Uhelný kotel',           blSub: null, mLabel: 'Tepelné čerpadlo',                mSub: null, cls: 'E', fuel: 'uhlí', icon: 'tepelne-cerpadlo' },
       ],
@@ -3919,9 +3939,9 @@
     iconBase:   '/assets-local/img/costs-and-benefits',
 
     // Shared beeswarm layout
-    laneH:      150,         // px per row lane
+    laneH:      180,         // px per row lane
     dotR:       7.2,         // force-sim dot radius
-    headerH:    32,          // column header strip height
+    headerH:    52,          // column header strip height
     mBot:       40,          // bottom margin
   };
 
@@ -3950,10 +3970,10 @@
 
     // 4 pairs — measure id, baseline id, display labels, icon, model names, battery
     const ROW_DEFS = [
-      { mId: 56, bId: 52, mLabel: 'Elektrické SUV',    sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
-      { mId: 55, bId: 51, mLabel: 'Malý elektromobil', sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
       { mId: 54, bId: 50, mLabel: 'Elektrické SUV',    sub: 'NOVÉ',          blLabel: 'SUV na naftu',        blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
       { mId: 53, bId: 49, mLabel: 'Malý elektromobil', sub: 'NOVÉ',          blLabel: 'Malé auto na benzín', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
+      { mId: 56, bId: 52, mLabel: 'Elektrické SUV',    sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+      { mId: 55, bId: 51, mLabel: 'Malý elektromobil', sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
     ];
 
     // Parameters — same active buttons as the interactive beeswarm defaults
@@ -3983,7 +4003,7 @@
       const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
 
       const dots = [];
-      let co2Saved = null, fossilMwh = null;
+      let co2Saved = null, fossilMwh = null, elecMwh = null;
 
       for (const cc of CAPEX_CASES) {
         const capexMeasMult = 1 + cc.sf * measS;
@@ -4011,6 +4031,8 @@
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    const fis = r.fossilImportSavings;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
                   }
                 } catch (_) {}
               }
@@ -4018,18 +4040,19 @@
           }
         }
       }
-      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh, elecMwh } : null;
     }).filter(Boolean);
 
     if (!rows.length) return;
 
     // Layout: [fossil left] [beeswarm] [gap] [electric right] [CO₂ stat] [import stat]
     const totalW      = container.clientWidth || 900;
-    const LEFT_W      = Math.round(totalW * 0.12);
+    const contentW    = Math.round(totalW * 0.85);
+    const LEFT_W      = Math.round(contentW * 0.12);
     const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(totalW * 0.19);
-    const STAT_W      = Math.round(totalW * 0.09);
-    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const RMEAS_W     = Math.round(contentW * 0.19);
+    const STAT_W      = Math.round(contentW * 0.09);
+    const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw        = LEFT_W;
     const xRightCols  = LEFT_W + CHART_W + CHART_R_GAP;
@@ -4048,8 +4071,8 @@
     // Stat grid constants (vehicles save less per unit than buildings)
     const SQ_SIZE    = 10;
     const SQ_PER_ROW = 5;
-    const CO2_PER_SQ = 10;   // tonnes CO₂ per square
-    const MWH_PER_SQ = 25;   // MWh fossil per circle
+    const CO2_PER_SQ = 5;    // tonnes CO₂ per square
+    const MWH_PER_SQ = 20;   // MWh fossil per circle
 
     const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
       const n = Math.min(nFilled, SQ_PER_ROW * 2);
@@ -4114,27 +4137,29 @@
       .attr('width', '100%')
       .attr('style', 'display:block; overflow:visible;');
 
-    // Column headers
-    const hdrY = HEADER_H / 2 + 4;
-    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
+    // Column headers — bottom-aligned with axis tick text
+    const lineH    = 12;
+    const hdrBotY  = M_TOP - 9;
     const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
     [
-      { x: 4,                           lines: ['FOSILNÍ VOZIDLO'] },
-      { x: hdrRx,                       lines: ['ELEKTROMOBIL'] },
-      { x: xStatCO2 - hdrStatL,         lines: ['ÚSPORA EMISÍ CO₂'] },
-      { x: xStatImprt - hdrStatL,       lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+      { x: xStatCO2 - hdrStatL,   lines: ['ÚSPORA', 'EMISÍ CO₂'] },
+      { x: xStatImprt - hdrStatL, lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
     ].forEach(({ x, lines }) => {
-      const lineH = 11;
       const t = svg.append('text')
         .attr('text-anchor', 'start')
         .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
         .attr('fill', CLR_SUB);
       lines.forEach((line, li) =>
         t.append('tspan').attr('x', x)
-          .attr('y', hdrY - (lines.length - 1) * lineH / 2 + li * lineH)
+          .attr('y', hdrBotY - lineH / 2 - (lines.length - 1 - li) * lineH)
           .attr('dominant-baseline', 'middle').text(line)
       );
     });
+    svg.append('text')
+      .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
 
     // Zero line
     const zx = xBsw + xSc(0);
@@ -4246,8 +4271,8 @@
 
       const co2 = row.co2Saved;
       const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
-      const nCo2 = (co2 != null && co2 > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+      const nCo2 = (co2 != null && co2 !== 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
         .attr('x', xStatCO2).attr('y', cy + 20)
@@ -4258,8 +4283,8 @@
 
       const mwh = row.fossilMwh;
       const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
-      const nMwh = (mwh != null && mwh > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+      const nMwh = (mwh != null && mwh !== 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
         .attr('x', xStatImprt).attr('y', cy + 20)
@@ -4267,7 +4292,31 @@
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
+      if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
+        const sign = row.elecMwh > 0 ? '+' : '−';
+        const lbl  = row.elecMwh > 0 ? 'výroba el.' : 'spotřeba el.';
+        g.append('text')
+          .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
+          .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '400')
+          .attr('fill', CLR_SUB)
+          .text(sign + Math.round(Math.abs(row.elecMwh)) + ' MWh ' + lbl);
+      }
     });
+
+    const footY1 = H - M_BOT + 20;
+    const ftrL1 = svg.append('text')
+      .attr('x', zx - 4).attr('y', footY1)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrL1.append('tspan').attr('font-family', FONT).text('←');
+    ftrL1.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
+    const ftrR1 = svg.append('text')
+      .attr('x', zx + 4).attr('y', footY1)
+      .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrR1.append('tspan').attr('font-family', ROBOTO).text('Nízkoemisní opatření je výhodnější ');
+    ftrR1.append('tspan').attr('font-family', FONT).text('→');
 
     fokDownloadBar(container, 'srovnani-vozidel');
   }
@@ -4300,10 +4349,10 @@
     ];
 
     const ROW_DEFS = [
-      { mId: 53, bId: 49, sub: 'NOVÉ',         blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
-      { mId: 55, bId: 51, sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
-      { mId: 54, bId: 50, sub: 'NOVÉ',         blLabel: 'SUV na naftu',        mLabel: 'Elektrické SUV',    blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
+      { mId: 54, bId: 50, sub: 'NOVÉ',          blLabel: 'SUV na naftu',        mLabel: 'Elektrické SUV',    blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
+      { mId: 53, bId: 49, sub: 'NOVÉ',          blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
       { mId: 56, bId: 52, sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       mLabel: 'Elektrické SUV',    blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+      { mId: 55, bId: 51, sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
     ];
 
     const allMeasures = [...(data.buildings_measures || []), ...(data.transport_measures || [])];
@@ -4326,11 +4375,12 @@
     // Same layout proportions as renderSrovnaniVozidel; stat columns are
     // phantom (not rendered) so the beeswarm area stays the same width
     const totalW      = container.clientWidth || 900;
-    const LEFT_W      = Math.round(totalW * 0.12);
+    const contentW    = Math.round(totalW * 0.85);
+    const LEFT_W      = Math.round(contentW * 0.12);
     const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(totalW * 0.19);
-    const STAT_W      = Math.round(totalW * 0.09);
-    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const RMEAS_W     = Math.round(contentW * 0.19);
+    const STAT_W      = Math.round(contentW * 0.09);
+    const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
     const xBsw        = LEFT_W;
     const xRightCols  = LEFT_W + CHART_W + CHART_R_GAP;
     const absMax      = 350_000;
@@ -4355,19 +4405,13 @@
       .attr('width', '100%')
       .attr('style', 'display:block; overflow:visible;');
 
-    const hdrY = HEADER_H / 2 + 4;
-    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
-    [
-      { x: 4,      text: 'FOSILNÍ VOZIDLO' },
-      { x: hdrRx,  text: 'TARIF ELEKTŘINY' },
-    ].forEach(({ x, text }) =>
-      svg.append('text')
-        .attr('x', x).attr('y', hdrY)
-        .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
-        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
-        .attr('fill', CLR_SUB).text(text)
-    );
-
+    const lineH_ev   = 12;
+    const hdrBotY_ev = M_TOP - 9;
+    svg.append('text')
+      .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
 
     svg.append('line')
       .attr('x1', xBsw + xSc(0)).attr('x2', xBsw + xSc(0))
@@ -4431,6 +4475,21 @@
         .attr('fill', CLR_SUB).text(`${row.mName} (${row.mBattery} kWh)`);
     });
 
+    const zxEv = xBsw + xSc(0);
+    const footY2 = H - M_BOT + 20;
+    const ftrL2 = svg.append('text')
+      .attr('x', zxEv - 4).attr('y', footY2)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrL2.append('tspan').attr('font-family', FONT).text('←');
+    ftrL2.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
+    const ftrR2 = svg.append('text')
+      .attr('x', zxEv + 4).attr('y', footY2)
+      .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrR2.append('tspan').attr('font-family', ROBOTO).text('Nízkoemisní opatření je výhodnější ');
+    ftrR2.append('tspan').attr('font-family', FONT).text('→');
+
     fokDownloadBar(container, 'vyhodnost-elektromobilu');
   }
 
@@ -4487,7 +4546,7 @@
       const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
 
       const dots = [];
-      let co2Saved = null, fossilMwh = null;
+      let co2Saved = null, fossilMwh = null, elecMwh = null;
 
       for (const cc of CAPEX_CASES) {
         const capexMeasMult = 1 + cc.sf * measS;
@@ -4515,6 +4574,8 @@
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    const fis = r.fossilImportSavings;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
                   }
                 } catch (_) {}
               }
@@ -4522,18 +4583,19 @@
           }
         }
       }
-      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh, elecMwh } : null;
     }).filter(Boolean);
 
     if (!rows.length) return;
 
     // Layout — same proportions as vehicle chart
     const totalW      = container.clientWidth || 900;
-    const LEFT_W      = Math.round(totalW * 0.12);
+    const contentW    = Math.round(totalW * 0.85);
+    const LEFT_W      = Math.round(contentW * 0.12);
     const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(totalW * 0.19);
-    const STAT_W      = Math.round(totalW * 0.09);
-    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const RMEAS_W     = Math.round(contentW * 0.19);
+    const STAT_W      = Math.round(contentW * 0.09);
+    const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
     const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
@@ -4551,8 +4613,8 @@
 
     const SQ_SIZE    = 10;
     const SQ_PER_ROW = 5;
-    const CO2_PER_SQ = 20;
-    const MWH_PER_SQ = 50;
+    const CO2_PER_SQ = 5;
+    const MWH_PER_SQ = 20;
 
     const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
       const n = Math.min(nFilled, SQ_PER_ROW * 2);
@@ -4750,8 +4812,8 @@
 
       const co2 = row.co2Saved;
       const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
-      const nCo2 = (co2 != null && co2 > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+      const nCo2 = (co2 != null && co2 !== 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
         .attr('x', xStatCO2).attr('y', cy + 20)
@@ -4762,8 +4824,8 @@
 
       const mwh = row.fossilMwh;
       const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
-      const nMwh = (mwh != null && mwh > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+      const nMwh = (mwh != null && mwh !== 0)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
         .attr('x', xStatImprt).attr('y', cy + 20)
@@ -4824,7 +4886,7 @@
       const measS = entry.capex_sensitivity    ?? CAPEX_FALLBACK;
       const blS   = baseline.capex_sensitivity ?? CAPEX_FALLBACK;
       const dots  = [];
-      let co2Saved = null, fossilMwh = null;
+      let co2Saved = null, fossilMwh = null, elecMwh = null;
 
       for (const cc of CAPEX_CASES) {
         const capexMeasMult = 1 + cc.sf * measS;
@@ -4852,6 +4914,8 @@
                   if (isDefault && r.emissionSavings != null) {
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
+                    const fis = r.fossilImportSavings;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
                   }
                 } catch (_) {}
               }
@@ -4859,17 +4923,18 @@
           }
         }
       }
-      return dots.length ? { ...def, dots, co2Saved, fossilMwh } : null;
+      return dots.length ? { ...def, dots, co2Saved, fossilMwh, elecMwh } : null;
     }).filter(Boolean);
 
     if (!rows.length) return;
 
     const totalW      = container.clientWidth || 900;
-    const LEFT_W      = Math.round(totalW * 0.12);
+    const contentW    = Math.round(totalW * 0.85);
+    const LEFT_W      = Math.round(contentW * 0.12);
     const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(totalW * 0.19);
-    const STAT_W      = Math.round(totalW * 0.09);
-    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const RMEAS_W     = Math.round(contentW * 0.19);
+    const STAT_W      = Math.round(contentW * 0.09);
+    const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
     const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
@@ -4887,8 +4952,8 @@
 
     const SQ_SIZE    = 10;
     const SQ_PER_ROW = 5;
-    const CO2_PER_SQ = 20;
-    const MWH_PER_SQ = 50;
+    const CO2_PER_SQ = 5;
+    const MWH_PER_SQ = 20;
 
     const drawBlockGrid = (g, cx, bottomY, nFilled, fillColor) => {
       const n = Math.min(nFilled, SQ_PER_ROW * 2);
@@ -4949,26 +5014,28 @@
       .attr('width', '100%')
       .attr('style', 'display:block; overflow:visible;');
 
-    const hdrY = HEADER_H / 2 + 4;
-    const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
-    const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
+    const lineH_b   = 12;
+    const hdrBotY_b = M_TOP - 9;
+    const hdrStatL  = SQ_PER_ROW * SQ_SIZE / 2;
     [
-      { x: 4,                           lines: [leftHdr  || 'STÁVAJÍCÍ STAV'] },
-      { x: hdrRx,                       lines: [rightHdr || 'OPATŘENÍ'] },
-      { x: xStatCO2 - hdrStatL,         lines: [stat1Hdr || 'ÚSPORA EMISÍ CO₂'] },
-      { x: xStatImprt - hdrStatL,       lines: stat2Hdr ? [stat2Hdr] : ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+      { x: xStatCO2 - hdrStatL,   lines: stat1Hdr ? [stat1Hdr] : ['ÚSPORA', 'EMISÍ CO₂'] },
+      { x: xStatImprt - hdrStatL, lines: stat2Hdr ? [stat2Hdr] : ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
     ].forEach(({ x, lines }) => {
-      const lineH = 11;
       const t = svg.append('text')
         .attr('text-anchor', 'start')
         .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
         .attr('fill', CLR_SUB);
       lines.forEach((line, li) =>
         t.append('tspan').attr('x', x)
-          .attr('y', hdrY - (lines.length - 1) * lineH / 2 + li * lineH)
+          .attr('y', hdrBotY_b - lineH_b / 2 - (lines.length - 1 - li) * lineH_b)
           .attr('dominant-baseline', 'middle').text(line)
       );
     });
+    svg.append('text')
+      .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
+      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
 
     const zx = xBsw + xSc(0);
     svg.append('line')
@@ -4995,33 +5062,47 @@
       const S = 13, P = 4, CY = S / 2;
       const ctxG = g.append('g').attr('transform', `translate(${x},${y})`);
       let bx = 0;
-      ctxG.append('path')
-        .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
-        .attr('fill', CLR_SUB);
-      ctxG.append('text')
-        .attr('x', bx + S / 2).attr('y', CY)
-        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
-        .attr('fill', 'white').text(cls);
-      bx += S + P + 6;
-      ctxG.append('text')
-        .attr('x', bx).attr('y', CY)
-        .attr('dominant-baseline', 'middle')
-        .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
-        .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
-      if (fuel) {
-        bx += 82;
-        { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
-          ctxG.append('svg')
-            .attr('x', bx).attr('y', CY - fi.h / 2)
-            .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
-            .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
-          bx += fi.w + 4; }
+      if (cls != null) {
+        ctxG.append('path')
+          .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
+          .attr('fill', CLR_SUB);
+        ctxG.append('text')
+          .attr('x', bx + S / 2).attr('y', CY)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
+          .attr('fill', 'white').text(cls);
+        bx += S + P + 6;
         ctxG.append('text')
           .attr('x', bx).attr('y', CY)
           .attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
-          .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+          .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
+        if (fuel) {
+          bx += 82;
+          { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
+            ctxG.append('svg')
+              .attr('x', bx).attr('y', CY - fi.h / 2)
+              .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+              .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+            bx += fi.w + 4; }
+          ctxG.append('text')
+            .attr('x', bx).attr('y', CY)
+            .attr('dominant-baseline', 'middle')
+            .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+            .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+        }
+      } else if (fuel) {
+        const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
+        ctxG.append('svg')
+          .attr('x', bx).attr('y', CY - fi.h / 2)
+          .attr('width', fi.w).attr('height', fi.h).attr('viewBox', fi.vb)
+          .append('path').attr('d', fi.d).attr('fill', CLR_SUB);
+        bx += fi.w + 4;
+        ctxG.append('text')
+          .attr('x', bx).attr('y', CY)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
+          .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? fuel.toUpperCase());
       }
     };
 
@@ -5100,7 +5181,7 @@
       const co2    = row.co2Saved;
       const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
       const nCo2   = (co2 != null && co2 > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2 / CO2_PER_SQ))) : 0;
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
         .attr('x', xStatCO2).attr('y', cy + 20)
@@ -5112,7 +5193,7 @@
       const mwh    = row.fossilMwh;
       const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
       const nMwh   = (mwh != null && mwh > 0)
-        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(mwh / MWH_PER_SQ))) : 0;
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
         .attr('x', xStatImprt).attr('y', cy + 20)
@@ -5120,7 +5201,31 @@
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
+      if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
+        const sign = row.elecMwh > 0 ? '+' : '−';
+        const lbl  = row.elecMwh > 0 ? 'výroba el.' : 'spotřeba el.';
+        g.append('text')
+          .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
+          .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+          .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '400')
+          .attr('fill', CLR_SUB)
+          .text(sign + Math.round(Math.abs(row.elecMwh)) + ' MWh ' + lbl);
+      }
     });
+
+    const footYb = H - M_BOT + 20;
+    const ftrLb = svg.append('text')
+      .attr('x', zx - 4).attr('y', footYb)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrLb.append('tspan').attr('font-family', FONT).text('←');
+    ftrLb.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
+    const ftrRb = svg.append('text')
+      .attr('x', zx + 4).attr('y', footYb)
+      .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrRb.append('tspan').attr('font-family', ROBOTO).text('Nízkoemisní opatření je výhodnější ');
+    ftrRb.append('tspan').attr('font-family', FONT).text('→');
 
     fokDownloadBar(container, sectionId);
   }
@@ -5222,11 +5327,12 @@
     if (!rows.length) return;
 
     const totalW      = container.clientWidth || 900;
-    const LEFT_W      = Math.round(totalW * 0.12);
+    const contentW    = Math.round(totalW * 0.85);
+    const LEFT_W      = Math.round(contentW * 0.12);
     const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(totalW * 0.19);
-    const STAT_W      = Math.round(totalW * 0.09);
-    const CHART_W     = totalW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
+    const RMEAS_W     = Math.round(contentW * 0.19);
+    const STAT_W      = Math.round(contentW * 0.09);
+    const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
     const xRightCols = LEFT_W + CHART_W + CHART_R_GAP;
@@ -5286,7 +5392,7 @@
       { key: 'normal', label: 'Referenční ceny'              },
       { key: 'best',   label: 'Elektřina levná, plyn drahý' },
     ];
-    const legendY   = HEADER_H + LEGEND_H / 2 + 2;
+    const legendY   = HEADER_H + LEGEND_H / 2 + 2 - 20;
     const legendTot = 430;
     let lx = xBsw + CHART_W / 2 - legendTot / 2;
     legendItems.forEach(item => {
@@ -5418,7 +5524,7 @@
         { mId: 32, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },
         { mId: 38, bId: 11, cls: 'C', fuel: 'plyn', blLabel: 'Plynový kotel' },
       ],
-      mLabel:   'Kotel na biomasu',
+      mLabel:   'Kotel na dřevo',
       mIcon:    'biomasa-kotel',
       leftHdr:  'STÁVAJÍCÍ KOTEL',
       rightHdr: 'KOTEL NA BIOMASU',
@@ -5447,8 +5553,8 @@
     renderBuildingBeeswarmChart({
       sectionId:       'fve',
       rowDefs: [
-        { mId: 40, bId: 15, cls: 'D', fuel: null, blLabel: 'Nedělám nic' },
-        { mId: 39, bId: 13, cls: 'C', fuel: null, blLabel: 'Nedělám nic' },
+        { mId: 40, bId: 15, cls: null, fuel: 'elektřina', blLabel: 'Nedělám nic' },
+        { mId: 39, bId: 13, cls: null, fuel: 'elektřina', blLabel: 'Nedělám nic' },
       ],
       mLabel:          'Střešní fotovoltaika a baterie',
       mLabelLines:     ['Střešní fotovoltaika', 'a baterie'],
