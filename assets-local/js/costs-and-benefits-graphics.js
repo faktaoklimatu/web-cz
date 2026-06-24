@@ -2316,8 +2316,8 @@
   // Grouped bars per year: baseline (left) and measure (right).
   // Year 0 shows CAPEX; years 1-N show combined annual OPEX (fuel + maintenance).
   function renderCostBreakdownChart(container) {
-    const MEASURE_ID  = 53;  // Nový malý elektromobil
-    const BASELINE_ID = 49;  // Nové malé auto na benzín
+    const MEASURE_ID  = 55;  // Ojetý malý elektromobil
+    const BASELINE_ID = 51;  // Ojeté malé auto na benzín
     const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
 
     let r;
@@ -2426,7 +2426,7 @@
   // A grey extension shows the additional value visible at 0 % discount —
   // i.e. what discounting “erases” relative to the undiscounted view.
   function renderDiscountLineChart(container) {
-    const MEASURE_ID = 53;  // Nový malý elektromobil
+    const MEASURE_ID = 55;  // Ojetý malý elektromobil
     const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
 
     const calc = rate => {
@@ -3088,9 +3088,9 @@
     renderImportCostTable();
     renderEffCharts();
     const cbEl = document.getElementById('cost-breakdown-chart');
-    if (cbEl) renderCostBreakdownChart(cbEl);
+    if (cbEl) { renderCostBreakdownChart(cbEl); fokDownloadBar(cbEl, 'naklady-rozlozeni'); }
     const discEl = document.getElementById('discount-line-chart');
-    if (discEl) renderDiscountLineChart(discEl);
+    if (discEl) { renderDiscountLineChart(discEl); fokDownloadBar(discEl, 'npv-diskontovani'); }
     renderSouhrnNpv();
     renderSouhrnEmise();
     renderSouhrnImport();
