@@ -4032,7 +4032,7 @@
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
                     const fis = r.fossilImportSavings;
-                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
                 } catch (_) {}
               }
@@ -4293,8 +4293,8 @@
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
       if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
-        const sign = row.elecMwh > 0 ? '+' : '−';
-        const lbl  = row.elecMwh > 0 ? 'výroba el.' : 'spotřeba el.';
+        const sign = row.elecMwh > 0 ? '' : '−';
+        const lbl  = '(plyn na výrobu elektřiny)';
         g.append('text')
           .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
           .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
@@ -4575,7 +4575,7 @@
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
                     const fis = r.fossilImportSavings;
-                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
                 } catch (_) {}
               }
@@ -4915,7 +4915,7 @@
                     co2Saved  = -r.emissionSavings.totalT;
                     fossilMwh = r.fossilImportSavings?.scope1TotalMwh ?? null;
                     const fis = r.fossilImportSavings;
-                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh / fis.gasFactor : null;
+                    elecMwh   = (fis != null && fis.gasFactor) ? fis.scope2TotalMwh : null;
                   }
                 } catch (_) {}
               }
@@ -5058,7 +5058,7 @@
       .call(g => g.selectAll('.tick text')
         .attr('fill', CLR_SUB).attr('font-family', FONT).attr('font-size', '11px'));
 
-    const drawCtxStrip = (g, x, y, cls, fuel) => {
+    const drawCtxStrip = (g, x, y, cls, fuel, fuelLabel) => {
       const S = 13, P = 4, CY = S / 2;
       const ctxG = g.append('g').attr('transform', `translate(${x},${y})`);
       let bx = 0;
@@ -5089,7 +5089,7 @@
             .attr('x', bx).attr('y', CY)
             .attr('dominant-baseline', 'middle')
             .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
-            .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
+            .attr('fill', CLR_SUB).text(fuelLabel ?? FUEL_ICON_SVG[fuel]?.label ?? 'PLYN');
         }
       } else if (fuel) {
         const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
@@ -5102,7 +5102,7 @@
           .attr('x', bx).attr('y', CY)
           .attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
-          .attr('fill', CLR_SUB).text(FUEL_ICON_SVG[fuel]?.label ?? fuel.toUpperCase());
+          .attr('fill', CLR_SUB).text(fuelLabel ?? FUEL_ICON_SVG[fuel]?.label ?? fuel.toUpperCase());
       }
     };
 
@@ -5111,7 +5111,7 @@
       const g  = svg.append('g');
 
 
-      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel);
+      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel, row.blFuelLabel);
       g.append('text')
         .attr('x', 4).attr('y', cy)
         .attr('dominant-baseline', 'middle')
@@ -5159,7 +5159,7 @@
           .attr('stroke', CLR_SUB).attr('stroke-dasharray', '3 3').attr('stroke-width', 1);
       }
 
-      drawCtxStrip(g, rxText, cy - (mLabelLines && mLabelLines.length > 1 ? 32 : 26), row.cls, row.fuel);
+      drawCtxStrip(g, rxText, cy - (mLabelLines && mLabelLines.length > 1 ? 32 : 26), row.cls, row.fuel, row.blFuelLabel);
       if (mLabelLines && mLabelLines.length > 1) {
         const fsPx = parseFloat(mLabelFontSize || '16');
         const t = g.append('text').attr('font-family', FONT).attr('font-size', mLabelFontSize || '16px').attr('font-weight', '700').attr('fill', CLR_LBL);
@@ -5202,8 +5202,8 @@
         .attr('fill', mwhClr)
         .text(mwh != null && mwh !== 0 ? Math.round(mwh) + ' MWh' : '–');
       if (row.elecMwh != null && Math.round(row.elecMwh) !== 0) {
-        const sign = row.elecMwh > 0 ? '+' : '−';
-        const lbl  = row.elecMwh > 0 ? 'výroba el.' : 'spotřeba el.';
+        const sign = row.elecMwh > 0 ? '' : '−';
+        const lbl  = '(plyn na výrobu elektřiny)';
         g.append('text')
           .attr('x', xStatImprt - SQ_PER_ROW * SQ_SIZE / 2).attr('y', cy + 36)
           .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
@@ -5553,15 +5553,15 @@
     renderBuildingBeeswarmChart({
       sectionId:       'fve',
       rowDefs: [
-        { mId: 40, bId: 15, cls: null, fuel: 'elektřina', blLabel: 'Nedělám nic' },
-        { mId: 39, bId: 13, cls: null, fuel: 'elektřina', blLabel: 'Nedělám nic' },
+        { mId: 40, bId: 15, cls: null, fuel: 'elektřina', blLabel: 'Bez střešní fotovoltaiky', blFuelLabel: 'SPOTŘEBA 7 MWh' },
+        { mId: 39, bId: 13, cls: null, fuel: 'elektřina', blLabel: 'Bez střešní fotovoltaiky', blFuelLabel: 'SPOTŘEBA 4 MWh' },
       ],
       mLabel:          'Střešní fotovoltaika a baterie',
       mLabelLines:     ['Střešní fotovoltaika', 'a baterie'],
       mIcon:           'fotovoltaika',
       leftHdr:         'BEZ FOTOVOLTAIKY',
       rightHdr:        'STŘEŠNÍ FOTOVOLTAIKA',
-      stat2Hdr:        'VÝROBA ELEKTŘINY',
+      
       mLabelFontSize:  '14px',
     });
   }
