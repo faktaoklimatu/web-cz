@@ -3012,6 +3012,153 @@
     }
   }
 
+  // ── Ekonomická výhodnost vs. úspora emisí CO2 (heating measures scatter) ──
+  function renderVyhodnostVsEmise() {
+    const el = document.getElementById('vyhodnost-vs-emise-chart');
+    if (!el) return;
+
+    const GROUPS = [
+      { label: 'TČ vs. uhelný kotel',        color: '#35978f' },
+      { label: 'TČ vs. plynový kotel',        color: '#2471a3' },
+      { label: 'Elektrokotel vs. uhelný kotel', color: '#75808e' },
+    ];
+    const MEASURE_DEFS = [
+      { id: 21, group: 0, cls: 'E' },
+      { id: 27, group: 0, cls: 'C' },
+      { id: 31, group: 1, cls: 'E' },
+      { id: 37, group: 1, cls: 'C' },
+      { id: 23, group: 2, cls: 'E' },
+      { id: 29, group: 2, cls: 'C' },
+    ];
+    const idSet = new Set(MEASURE_DEFS.map(d => d.id));
+    const defMap = Object.fromEntries(MEASURE_DEFS.map(d => [d.id, d]));
+
+    const raw = qComputePoints(state.carbonPrice, state.discountRate, state.fuelScenario)
+      .filter(p => idSet.has(p.id));
+    if (!raw.length) return;
+
+    const points = raw.map(p => ({
+      ...p,
+      ...defMap[p.id],
+      color: GROUPS[defMap[p.id].group].color,
+    }));
+
+    const M = { top: 28, right: 24, bottom: 72, left: 90 };
+    const totalW = el.clientWidth || 720;
+    const totalH = 440;
+    const chartW = Math.max(totalW - M.left - M.right, 200);
+    const chartH = totalH - M.top - M.bottom;
+    const ox = M.left, oy = M.top;
+
+    const npvVals   = points.map(p => p.npv);
+    const savedVals = points.map(p => p.savedT);
+    const npvPad    = Math.max((d3.max(npvVals) - d3.min(npvVals)) * 0.18, 50000);
+    const savedPad  = Math.max((d3.max(savedVals) - d3.min(savedVals)) * 0.18, 2);
+    const xDomain   = [Math.min(0, d3.min(npvVals) - npvPad), Math.max(0, d3.max(npvVals) + npvPad)];
+    const yDomain   = [Math.min(0, d3.min(savedVals) - savedPad), d3.max(savedVals) + savedPad];
+
+    const xScale = d3.scaleLinear().domain(xDomain).range([0, chartW]);
+    const yScale = d3.scaleLinear().domain(yDomain).range([chartH, 0]);
+
+    let svg = d3.select(el).select('svg.ve-svg');
+    if (svg.empty()) {
+      svg = d3.select(el).append('svg').attr('class', 've-svg')
+        .style('font-family', BSW_CFG.font);
+      svg.append('rect').attr('class', 've-bg-tr').attr('fill', 'rgba(0,133,173,0.10)');
+      svg.append('rect').attr('class', 've-bg-tl').attr('fill', 'rgba(172,205,220,0.10)');
+      svg.append('rect').attr('class', 've-bg-br').attr('fill', 'rgba(226,164,164,0.10)');
+      svg.append('rect').attr('class', 've-bg-bl').attr('fill', 'rgba(151,61,76,0.10)');
+      svg.append('line').attr('class', 've-zx').attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+      svg.append('line').attr('class', 've-zy').attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+      svg.append('g').attr('class', 've-x-axis chart-axis');
+      svg.append('g').attr('class', 've-y-axis chart-axis');
+      svg.append('text').attr('class', 've-xl').attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#515b66').text('Ekonomická výhodnost – NPV (tis. Kč)');
+      svg.append('text').attr('class', 've-yl').attr('text-anchor', 'middle').attr('font-size', '12px').attr('fill', '#515b66').text('Úspora emisí CO₂ (t)');
+      svg.append('text').attr('class', 've-ql-tr').attr('text-anchor', 'end').attr('font-size', '10px').attr('font-weight', '700').attr('fill', Q_DOT_COLORS.tr).text('ÚSPORA I DEKARBONIZACE');
+      svg.append('text').attr('class', 've-ql-tl').attr('text-anchor', 'start').attr('font-size', '10px').attr('font-weight', '700').attr('fill', Q_DOT_COLORS.tl).text('DRAHÁ DEKARBONIZACE');
+      svg.append('g').attr('class', 've-points');
+      svg.append('g').attr('class', 've-labels');
+      svg.append('g').attr('class', 've-legend');
+    }
+
+    svg.attr('width', totalW).attr('height', totalH);
+
+    const zx = ox + xScale(0);
+    const zy = oy + yScale(0);
+    const qzx = Math.max(ox, Math.min(ox + chartW, zx));
+    const qzy = Math.max(oy, Math.min(oy + chartH, zy));
+    svg.select('.ve-bg-tr').attr('x', qzx).attr('y', oy).attr('width', ox + chartW - qzx).attr('height', qzy - oy);
+    svg.select('.ve-bg-tl').attr('x', ox).attr('y', oy).attr('width', qzx - ox).attr('height', qzy - oy);
+    svg.select('.ve-bg-br').attr('x', qzx).attr('y', qzy).attr('width', ox + chartW - qzx).attr('height', oy + chartH - qzy);
+    svg.select('.ve-bg-bl').attr('x', ox).attr('y', qzy).attr('width', qzx - ox).attr('height', oy + chartH - qzy);
+    svg.select('.ve-zx').attr('x1', ox).attr('x2', ox + chartW).attr('y1', zy).attr('y2', zy);
+    svg.select('.ve-zy').attr('x1', zx).attr('x2', zx).attr('y1', oy).attr('y2', oy + chartH);
+
+    svg.select('.ve-x-axis').attr('transform', `translate(${ox},${oy + chartH})`)
+      .call(d3.axisBottom(xScale).ticks(6).tickFormat(v => (v / 1000).toFixed(0)));
+    svg.select('.ve-y-axis').attr('transform', `translate(${ox},${oy})`)
+      .call(d3.axisLeft(yScale).ticks(5).tickFormat(v => v.toFixed(0) + ' t'));
+    svg.select('.ve-xl').attr('x', ox + chartW / 2).attr('y', oy + chartH + 44);
+    svg.select('.ve-yl').attr('transform', `translate(${ox - 68},${oy + chartH / 2}) rotate(-90)`);
+
+    const QPAD = 6;
+    svg.select('.ve-ql-tr').attr('x', ox + chartW - QPAD).attr('y', oy + 14);
+    svg.select('.ve-ql-tl').attr('x', ox + QPAD).attr('y', oy + 14);
+
+    // Dots
+    const ptSel = svg.select('.ve-points').selectAll('circle.ve-pt').data(points, d => d.id);
+    const ptEnter = ptSel.enter().append('circle').attr('class', 've-pt')
+      .attr('r', 9).attr('stroke', 'white').attr('stroke-width', 1.5)
+      .attr('cx', d => ox + xScale(d.npv))
+      .attr('cy', d => oy + yScale(d.savedT));
+    ptSel.merge(ptEnter)
+      .attr('fill', d => d.color)
+      .attr('fill-opacity', d => d.cls === 'C' ? 0.9 : 0.65)
+      .on('mouseover', function(e, d) {
+        d3.select(this).attr('r', 11).attr('fill-opacity', 1);
+        showQTip(e, [
+          GROUPS[d.group].label + ' (třída ' + d.cls + ')',
+          'NPV: ' + qFmtCZK(d.npv),
+          'Úspora emisí: ' + qFmtTonnes(d.savedT),
+        ].join('\n'));
+      })
+      .on('mousemove', moveQTip)
+      .on('mouseout', function(e, d) {
+        d3.select(this).attr('r', 9).attr('fill-opacity', d.cls === 'C' ? 0.9 : 0.65);
+        hideQTip();
+      })
+      .transition().duration(400)
+      .attr('cx', d => ox + xScale(d.npv))
+      .attr('cy', d => oy + yScale(d.savedT));
+    ptSel.exit().remove();
+
+    // Energy class letter inside each dot
+    const lblSel = svg.select('.ve-labels').selectAll('text.ve-lbl').data(points, d => d.id);
+    const lblEnter = lblSel.enter().append('text').attr('class', 've-lbl')
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('font-size', '10px').attr('font-weight', '700').attr('fill', 'white')
+      .attr('pointer-events', 'none');
+    lblSel.merge(lblEnter)
+      .text(d => d.cls)
+      .transition().duration(400)
+      .attr('x', d => ox + xScale(d.npv))
+      .attr('y', d => oy + yScale(d.savedT));
+    lblSel.exit().remove();
+
+    // Legend
+    const LEGEND_Y = oy + chartH + 56;
+    const LEGEND_ITEM_W = Math.floor(chartW / 3);
+    const legSel = svg.select('.ve-legend').selectAll('g.ve-leg').data(GROUPS);
+    const legEnter = legSel.enter().append('g').attr('class', 've-leg');
+    legEnter.append('circle').attr('r', 7).attr('cx', 0).attr('cy', 0);
+    legEnter.append('text').attr('x', 12).attr('y', 0).attr('dominant-baseline', 'middle').attr('font-size', '11px');
+    const legAll = legSel.merge(legEnter);
+    legAll.attr('transform', (d, i) => `translate(${ox + i * LEGEND_ITEM_W + 8},${LEGEND_Y})`);
+    legAll.select('circle').attr('fill', d => d.color).attr('fill-opacity', 0.8);
+    legAll.select('text').attr('fill', '#515b66').text(d => d.label);
+    legSel.exit().remove();
+  }
+
   function renderAll() {
     // Compute shared x-domain per domain group
     const groupVals = {};
@@ -3039,6 +3186,7 @@
       const domain = el.dataset.domainGroup ? sharedDomains[el.dataset.domainGroup] || null : null;
       renderTornadoChart(el, el.dataset.category, el.dataset.param || 'Cena uhlíku', excl, domain);
     });
+    renderVyhodnostVsEmise();
     const qEl = document.getElementById('quadrant-wrap');
     if (qEl) renderQuadrantChart(qEl);
     const fbBldEl = document.getElementById('fuel-bubble-buildings');
@@ -3154,11 +3302,11 @@
 
     // Layout
     const W        = container.clientWidth || 900;
-    const LEFT_W   = 340;
+    const LEFT_W   = SOUHRN_CFG.leftW;
     const BAR_W    = W - LEFT_W;
-    const ROW_H    = 70;
+    const ROW_H    = SOUHRN_CFG.rowH;
     const HEADER_H = 188;
-    const ICON_SZ  = 46;
+    const ICON_SZ  = SOUHRN_CFG.iconSz;
     const TX       = ICON_SZ + 12;
     const ROBOTO   = "'Roboto', sans-serif";
     const H        = HEADER_H + rows.length * ROW_H;
@@ -3278,10 +3426,10 @@
           .attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
           .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
-        bx += 80;
+        bx += BSW_CFG.ctxTextW;
 
         if (row.fuel) {
-          bx += 12;
+          bx += 7;
           { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
             ctxG.append('svg')
               .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -3379,16 +3527,16 @@
     rows.sort((a, b) => b.value - a.value);
 
     const W        = container.clientWidth || 900;
-    const LEFT_W   = 340;
+    const LEFT_W   = SOUHRN_CFG.leftW;
     const BAR_W    = W - LEFT_W;
-    const ROW_H    = 70;
+    const ROW_H    = SOUHRN_CFG.rowH;
     const HEADER_H = 112;
-    const ICON_SZ  = 46;
+    const ICON_SZ  = SOUHRN_CFG.iconSz;
     const TX       = ICON_SZ + 12;
     const ROBOTO   = "'Roboto', sans-serif";
     const H        = HEADER_H + rows.length * ROW_H;
 
-    const ICON_SIZE   = 10;
+    const ICON_SIZE   = SOUHRN_CFG.iconGridSz;
     const ICON_ROWS   = 4;
     const ICON_STROKE = 0.75;
     const barH        = ICON_ROWS * ICON_SIZE;  // 40px
@@ -3475,10 +3623,10 @@
           .attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
           .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
-        bx += 80;
+        bx += BSW_CFG.ctxTextW;
 
         if (row.fuel) {
-          bx += 12;
+          bx += 7;
           { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
             ctxG.append('svg')
               .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -3613,7 +3761,7 @@
     const CLR_SUB = '#9ea7b3';
     const CLR_SEP  = '#eee';
     const ICON_BASE = '/assets-local/img/costs-and-benefits';
-    const ICON_SZ   = 46;
+    const ICON_SZ   = SOUHRN_CFG.iconSz;
     const TX        = ICON_SZ + 12;   // text offset when icon is present
 
     const ROW_DEFS = [
@@ -3645,13 +3793,13 @@
     rows.sort((a, b) => b.npv - a.npv);
 
     const W        = container.clientWidth || 900;
-    const LEFT_W   = 340;
-    const COL_GAP  = 50;
+    const LEFT_W   = SOUHRN_CFG.leftW;
+    const COL_GAP  = SOUHRN_CFG.colGap;
     const COL_W    = Math.floor((W - LEFT_W - 2 * COL_GAP) / 3);
     const COL1_X   = LEFT_W;
     const COL2_X   = LEFT_W + COL_W + COL_GAP;
     const COL3_X   = LEFT_W + (COL_W + COL_GAP) * 2;
-    const ROW_H    = 80;
+    const ROW_H    = SOUHRN_CFG.rowHVse;
     const HEADER_H = 155;
     const H        = HEADER_H + rows.length * ROW_H;
 
@@ -3663,7 +3811,7 @@
       .range([0, COL_W]);
     const npvZ = npvSc(0);
 
-    const ICON_SIZE   = 10;
+    const ICON_SIZE   = SOUHRN_CFG.iconGridSz;
     const ICON_ROWS   = 4;
     const ICON_STROKE = 0.75;
     const iconBarH    = ICON_ROWS * ICON_SIZE;
@@ -3800,10 +3948,10 @@
           .attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
           .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
-        bx += 80;
+        bx += BSW_CFG.ctxTextW;
 
         if (row.fuel) {
-          bx += 12;
+          bx += 7;
           { const fi = FUEL_ICON_SVG[row.fuel] || FUEL_ICON_SVG['plyn'];
             ctxG.append('svg')
               .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -3928,10 +4076,16 @@
     clrZeroLine:'#d0d4d8',  // y=0 reference line (solid, lighter than clrSub)
 
     // Font sizes
-    szLabel:    '16px',      // main label (mLabel / blLabel)
-    szSecondary:'12px',      // car name, "vs." sub-label, stat values, col headers
-    szSub:      '11px',      // strip text, sub-labels (NOVÉ/OJETÉ), axis ticks, dot label
+    szLabel:    '18px',      // main label (mLabel / blLabel)
+    szSecondary:'14px',      // car name, "vs." sub-label, stat values, col headers
+    szSub:      '14px',      // strip text, sub-labels (NOVÉ/OJETÉ), axis ticks, dot label
     szBadge:    '10px',      // class badge inside pentagon
+    szAxis:       '10px',    // column header labels (NPV, CO₂, import)
+    szArrow:      '12px',   // "← Emisně náročnější" footer arrows
+    ctxTextW:     107,      // px reserved for "RODINNÝ DŮM" text before fuel icon
+    axisHdrLineH: 13,       // line spacing for multi-line axis column headers (px)
+    axisHdrCase:  'normal', // 'normal' or 'uppercase'
+    clrAxisHdr:   '#515b66',// axis column header text color
 
     // Measure icon — matches souhrn_vse ICON_SZ = 46, TX = ICON_SZ + 12
     iconSz:     46,
@@ -3943,6 +4097,25 @@
     dotR:       7.2,         // force-sim dot radius
     headerH:    52,          // column header strip height
     mBot:       40,          // bottom margin
+
+    // Column layout ratios (fraction of contentW, except chartRGap in px)
+    contentWRatio: 1.0,      // fraction of totalW used; right blank = 1 - this
+    leftWRatio:    0.12,     // context strip (class badge + icon)
+    rmeasWRatio:   0.22,     // right measure column (NPV bar / scenario dots)
+    statWRatio:    0.12,     // each stat column (CO₂ and import)
+    chartRGap:     16,       // px gap between beeswarm and right columns
+    labelGap:      20,       // px gap between sub-text and main label (and main label to name)
+  };
+
+  const BSW_RANGE = {}; // per-section absMax overrides, set by per-chart range sliders
+
+  const SOUHRN_CFG = {
+    leftW:      340,   // left label column width (px)
+    rowH:        70,   // row height for NPV and icon charts
+    rowHVse:     80,   // row height for overview (souhrn_vse)
+    iconSz:      46,   // measure icon size
+    iconGridSz:  10,   // icon grid square/circle cell size
+    colGap:      50,   // column gap in souhrn_vse
   };
 
   const FUEL_ICON_SVG = {
@@ -3972,7 +4145,7 @@
     const ROW_DEFS = [
       { mId: 54, bId: 50, mLabel: 'Elektrické SUV',    sub: 'NOVÉ',          blLabel: 'SUV na naftu',        blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
       { mId: 53, bId: 49, mLabel: 'Malý elektromobil', sub: 'NOVÉ',          blLabel: 'Malé auto na benzín', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
-      { mId: 56, bId: 52, mLabel: 'Elektrické SUV',    sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+      { mId: 56, bId: 52, mLabel: 'Elektrické SUV',    sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       blName: 'Hyundai Kona', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
       { mId: 55, bId: 51, mLabel: 'Malý elektromobil', sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
     ];
 
@@ -4047,11 +4220,11 @@
 
     // Layout: [fossil left] [beeswarm] [gap] [electric right] [CO₂ stat] [import stat]
     const totalW      = container.clientWidth || 900;
-    const contentW    = Math.round(totalW * 0.85);
-    const LEFT_W      = Math.round(contentW * 0.12);
-    const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(contentW * 0.19);
-    const STAT_W      = Math.round(contentW * 0.09);
+    const contentW    = Math.round(totalW * BSW_CFG.contentWRatio);
+    const LEFT_W      = Math.round(contentW * BSW_CFG.leftWRatio);
+    const CHART_R_GAP = BSW_CFG.chartRGap;
+    const RMEAS_W     = Math.round(contentW * BSW_CFG.rmeasWRatio);
+    const STAT_W      = Math.round(contentW * BSW_CFG.statWRatio);
     const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw        = LEFT_W;
@@ -4103,7 +4276,7 @@
     };
 
     // NPV axis — fixed ±350 tis. Kč range
-    const absMax = 350_000;
+    const absMax = BSW_RANGE['srovnani-vozidel'] ?? 350_000;
     const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
 
     // Diverging color scale: maroon ← 0 → teal (transport branch, same as interactive beeswarm)
@@ -4138,12 +4311,12 @@
       .attr('style', 'display:block; overflow:visible;');
 
     // Column headers — bottom-aligned with axis tick text
-    const lineH    = 12;
+    const lineH    = BSW_CFG.axisHdrLineH;
     const hdrBotY  = M_TOP - 9;
     const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
     [
-      { x: xStatCO2 - hdrStatL,   lines: ['ÚSPORA', 'EMISÍ CO₂'] },
-      { x: xStatImprt - hdrStatL, lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+      { x: xStatCO2 - hdrStatL,   lines: ['Úspora', 'emisí CO₂'] },
+      { x: xStatImprt - hdrStatL, lines: ['Úspora importu ropy', 'a zemního plynu'] },
     ].forEach(({ x, lines }) => {
       const t = svg.append('text')
         .attr('text-anchor', 'start')
@@ -4159,7 +4332,7 @@
       .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
       .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
-      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
+      .attr('fill', CLR_SUB).text('Rozdíl v Net Present Value (Kč)');
 
     // Zero line
     const zx = xBsw + xSc(0);
@@ -4192,7 +4365,7 @@
       // ── LEFT ZONE: fossil baseline ─────────────────────────────────────────
       const subLbl = row.age != null ? `${row.sub} (${row.age} let)` : row.sub;
       g.append('text')
-        .attr('x', 4).attr('y', cy - 20)
+        .attr('x', 4).attr('y', cy - BSW_CFG.labelGap)
         .attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(subLbl);
@@ -4204,7 +4377,7 @@
         .attr('fill', CLR_LBL).text(row.blLabel);
 
       g.append('text')
-        .attr('x', 4).attr('y', cy + 20)
+        .attr('x', 4).attr('y', cy + BSW_CFG.labelGap)
         .attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(row.blName);
@@ -4246,7 +4419,7 @@
           .attr('width', ICON_SZ).attr('height', ICON_SZ);
 
       g.append('text')
-        .attr('x', rxText).attr('y', cy - 20)
+        .attr('x', rxText).attr('y', cy - BSW_CFG.labelGap)
         .attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(subLbl);
@@ -4258,7 +4431,7 @@
         .attr('fill', CLR_LBL).text(row.mLabel);
 
       g.append('text')
-        .attr('x', rxText).attr('y', cy + 20)
+        .attr('x', rxText).attr('y', cy + BSW_CFG.labelGap)
         .attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
         .attr('fill', CLR_SUB)
@@ -4275,7 +4448,7 @@
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
-        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('x', xStatCO2).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', co2Clr)
@@ -4287,7 +4460,7 @@
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
-        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('x', xStatImprt).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
@@ -4296,12 +4469,14 @@
 
     const footY1 = H - M_BOT + 20;
     const ftrL1 = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zx - 4).attr('y', footY1)
       .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
     ftrL1.append('tspan').attr('font-family', FONT).text('←');
     ftrL1.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
     const ftrR1 = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zx + 4).attr('y', footY1)
       .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
@@ -4341,7 +4516,7 @@
     const ROW_DEFS = [
       { mId: 54, bId: 50, sub: 'NOVÉ',          blLabel: 'SUV na naftu',        mLabel: 'Elektrické SUV',    blName: 'Škoda Karoq',    mName: 'Škoda Elroq',   mBattery: 77, icon: 'elektroauto-suv'  },
       { mId: 53, bId: 49, sub: 'NOVÉ',          blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Peugeot 208',    mName: 'Peugeot e-208', mBattery: 51, icon: 'elektroauto-male' },
-      { mId: 56, bId: 52, sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       mLabel: 'Elektrické SUV',    blName: 'Hyundai Tucson', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
+      { mId: 56, bId: 52, sub: 'OJETÉ', age: 5, blLabel: 'SUV na benzín',       mLabel: 'Elektrické SUV',    blName: 'Hyundai Kona', mName: 'Hyundai Kona',  mBattery: 64, icon: 'elektroauto-suv'  },
       { mId: 55, bId: 51, sub: 'OJETÉ', age: 5, blLabel: 'Malé auto na benzín', mLabel: 'Malý elektromobil', blName: 'Renault Clio',   mName: 'Renault Zoe',   mBattery: 52, icon: 'elektroauto-male' },
     ];
 
@@ -4365,15 +4540,15 @@
     // Same layout proportions as renderSrovnaniVozidel; stat columns are
     // phantom (not rendered) so the beeswarm area stays the same width
     const totalW      = container.clientWidth || 900;
-    const contentW    = Math.round(totalW * 0.85);
-    const LEFT_W      = Math.round(contentW * 0.12);
-    const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(contentW * 0.19);
-    const STAT_W      = Math.round(contentW * 0.09);
+    const contentW    = Math.round(totalW * BSW_CFG.contentWRatio);
+    const LEFT_W      = Math.round(contentW * BSW_CFG.leftWRatio);
+    const CHART_R_GAP = BSW_CFG.chartRGap;
+    const RMEAS_W     = Math.round(contentW * BSW_CFG.rmeasWRatio);
+    const STAT_W      = Math.round(contentW * BSW_CFG.statWRatio);
     const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
     const xBsw        = LEFT_W;
     const xRightCols  = LEFT_W + CHART_W + CHART_R_GAP;
-    const absMax      = 350_000;
+    const absMax      = BSW_RANGE['vyhodnost-elektromobilu'] ?? 350_000;
     const xSc         = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
     const H           = M_TOP + rows.length * LANE_H + M_BOT;
 
@@ -4401,7 +4576,7 @@
       .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
       .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
-      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
+      .attr('fill', CLR_SUB).text('Rozdíl v Net Present Value (Kč)');
 
     svg.append('line')
       .attr('x1', xBsw + xSc(0)).attr('x2', xBsw + xSc(0))
@@ -4430,13 +4605,13 @@
 
       // ── LEFT: fossil vehicle ──────────────────────────────────────────────
       const subLbl = row.age != null ? `${row.sub} (${row.age} let)` : row.sub;
-      g.append('text').attr('x', 4).attr('y', cy - 20).attr('dominant-baseline', 'middle')
+      g.append('text').attr('x', 4).attr('y', cy - BSW_CFG.labelGap).attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(subLbl);
       g.append('text').attr('x', 4).attr('y', cy).attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
         .attr('fill', CLR_LBL).text(row.blLabel);
-      g.append('text').attr('x', 4).attr('y', cy + 20).attr('dominant-baseline', 'middle')
+      g.append('text').attr('x', 4).attr('y', cy + BSW_CFG.labelGap).attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(row.blName);
 
@@ -4454,13 +4629,13 @@
         .attr('href', `${ICON_BASE}/${row.icon}.svg`)
         .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
         .attr('width', ICON_SZ).attr('height', ICON_SZ);
-      g.append('text').attr('x', rxText).attr('y', cy - 20).attr('dominant-baseline', 'middle')
+      g.append('text').attr('x', rxText).attr('y', cy - BSW_CFG.labelGap).attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(subLbl);
       g.append('text').attr('x', rxText).attr('y', cy).attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
         .attr('fill', CLR_LBL).text(row.mLabel);
-      g.append('text').attr('x', rxText).attr('y', cy + 20).attr('dominant-baseline', 'middle')
+      g.append('text').attr('x', rxText).attr('y', cy + BSW_CFG.labelGap).attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '12px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text(`${row.mName} (${row.mBattery} kWh)`);
     });
@@ -4468,12 +4643,14 @@
     const zxEv = xBsw + xSc(0);
     const footY2 = H - M_BOT + 20;
     const ftrL2 = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zxEv - 4).attr('y', footY2)
       .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
     ftrL2.append('tspan').attr('font-family', FONT).text('←');
     ftrL2.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
     const ftrR2 = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zxEv + 4).attr('y', footY2)
       .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
@@ -4580,11 +4757,11 @@
 
     // Layout — same proportions as vehicle chart
     const totalW      = container.clientWidth || 900;
-    const contentW    = Math.round(totalW * 0.85);
-    const LEFT_W      = Math.round(contentW * 0.12);
-    const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(contentW * 0.19);
-    const STAT_W      = Math.round(contentW * 0.09);
+    const contentW    = Math.round(totalW * BSW_CFG.contentWRatio);
+    const LEFT_W      = Math.round(contentW * BSW_CFG.leftWRatio);
+    const CHART_R_GAP = BSW_CFG.chartRGap;
+    const RMEAS_W     = Math.round(contentW * BSW_CFG.rmeasWRatio);
+    const STAT_W      = Math.round(contentW * BSW_CFG.statWRatio);
     const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
@@ -4634,7 +4811,7 @@
       }
     };
 
-    const absMax = 1_200_000;
+    const absMax = BSW_RANGE['renovace-zatepleni'] ?? 1_200_000;
     const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
 
     const npvColor = d3.scaleLinear()
@@ -4671,12 +4848,12 @@
     const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
     const hdrStatL = SQ_PER_ROW * SQ_SIZE / 2;
     [
-      { x: 4,                           lines: ['BEZ ZATEPLENÍ'] },
-      { x: hdrRx,                       lines: ['SE ZATEPLENÍM'] },
-      { x: xStatCO2 - hdrStatL,         lines: ['ÚSPORA EMISÍ CO₂'] },
-      { x: xStatImprt - hdrStatL,       lines: ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+      { x: 4,                           lines: ['Bez zateplení'] },
+      { x: hdrRx,                       lines: ['Se zateplením'] },
+      { x: xStatCO2 - hdrStatL,         lines: ['Úspora emisí CO₂'] },
+      { x: xStatImprt - hdrStatL,       lines: ['Úspora importu ropy', 'a zemního plynu'] },
     ].forEach(({ x, lines }) => {
-      const lineH = 11;
+      const lineH = BSW_CFG.axisHdrLineH;
       const t = svg.append('text')
         .attr('text-anchor', 'start')
         .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
@@ -4720,6 +4897,7 @@
         .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
         .attr('fill', CLR_SUB);
       ctxG.append('text')
+        .attr('class', 'bsw-badge')
         .attr('x', bx + S / 2).attr('y', CY)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
@@ -4730,7 +4908,7 @@
         .attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
-      bx += 82;
+      bx += BSW_CFG.ctxTextW;
       { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
         ctxG.append('svg')
           .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -4750,7 +4928,7 @@
 
 
       // ── LEFT ZONE: baseline (bez zateplení) ────────────────────────────────
-      drawCtxStrip(g, 4, cy - 34, row.cls, row.fuel);
+      drawCtxStrip(g, 4, cy - 36, row.cls, row.fuel);
 
       { const t = g.append('text').attr('font-family', FONT).attr('font-size', '16px').attr('fill', CLR_LBL);
         t.append('tspan').attr('x', 4).attr('y', cy - 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '400').text('Renovace');
@@ -4791,7 +4969,7 @@
         .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
         .attr('width', ICON_SZ).attr('height', ICON_SZ);
 
-      drawCtxStrip(g, rxText, cy - 34, row.cls, row.fuel);
+      drawCtxStrip(g, rxText, cy - 36, row.cls, row.fuel);
 
       { const t = g.append('text').attr('font-family', FONT).attr('font-size', '16px').attr('fill', CLR_LBL);
         t.append('tspan').attr('x', rxText).attr('y', cy - 8.8).attr('dominant-baseline', 'middle').attr('font-weight', '400').text('Renovace');
@@ -4806,7 +4984,7 @@
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
-        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('x', xStatCO2).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', co2Clr)
@@ -4818,7 +4996,7 @@
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
-        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('x', xStatImprt).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
@@ -4919,11 +5097,11 @@
     if (!rows.length) return;
 
     const totalW      = container.clientWidth || 900;
-    const contentW    = Math.round(totalW * 0.85);
-    const LEFT_W      = Math.round(contentW * 0.12);
-    const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(contentW * 0.19);
-    const STAT_W      = Math.round(contentW * 0.09);
+    const contentW    = Math.round(totalW * BSW_CFG.contentWRatio);
+    const LEFT_W      = Math.round(contentW * BSW_CFG.leftWRatio);
+    const CHART_R_GAP = BSW_CFG.chartRGap;
+    const RMEAS_W     = Math.round(contentW * BSW_CFG.rmeasWRatio);
+    const STAT_W      = Math.round(contentW * BSW_CFG.statWRatio);
     const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
@@ -4973,7 +5151,7 @@
       }
     };
 
-    const absMax = absMaxOverride ?? 600_000;
+    const absMax = BSW_RANGE[sectionId] ?? absMaxOverride ?? 600_000;
     const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
 
     const npvColor = d3.scaleLinear()
@@ -5004,12 +5182,12 @@
       .attr('width', '100%')
       .attr('style', 'display:block; overflow:visible;');
 
-    const lineH_b   = 12;
+    const lineH_b   = BSW_CFG.axisHdrLineH;
     const hdrBotY_b = M_TOP - 9;
     const hdrStatL  = SQ_PER_ROW * SQ_SIZE / 2;
     [
-      { x: xStatCO2 - hdrStatL,   lines: stat1Hdr ? [stat1Hdr] : ['ÚSPORA', 'EMISÍ CO₂'] },
-      { x: xStatImprt - hdrStatL, lines: stat2Hdr ? [stat2Hdr] : ['ÚSPORA IMPORTU ROPY', 'A ZEMNÍHO PLYNU'] },
+      { x: xStatCO2 - hdrStatL,   lines: stat1Hdr ? [stat1Hdr] : ['Úspora', 'emisí CO₂'] },
+      { x: xStatImprt - hdrStatL, lines: stat2Hdr ? [stat2Hdr] : ['Úspora importu ropy', 'a zemního plynu'] },
     ].forEach(({ x, lines }) => {
       const t = svg.append('text')
         .attr('text-anchor', 'start')
@@ -5025,7 +5203,7 @@
       .attr('x', xBsw + CHART_W / 2).attr('y', M_TOP - 28)
       .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
       .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '600')
-      .attr('fill', CLR_SUB).text('ROZDÍL V NET PRESENT VALUE (Kč)');
+      .attr('fill', CLR_SUB).text('Rozdíl v Net Present Value (Kč)');
 
     const zx = xBsw + xSc(0);
     svg.append('line')
@@ -5057,6 +5235,7 @@
           .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
           .attr('fill', CLR_SUB);
         ctxG.append('text')
+          .attr('class', 'bsw-badge')
           .attr('x', bx + S / 2).attr('y', CY)
           .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
           .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
@@ -5068,7 +5247,7 @@
           .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
           .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
         if (fuel) {
-          bx += 82;
+          bx += BSW_CFG.ctxTextW;
           { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
             ctxG.append('svg')
               .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -5101,7 +5280,7 @@
       const g  = svg.append('g');
 
 
-      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel, row.blFuelLabel);
+      drawCtxStrip(g, 4, cy - 28, row.cls, row.fuel, row.blFuelLabel);
       g.append('text')
         .attr('x', 4).attr('y', cy)
         .attr('dominant-baseline', 'middle')
@@ -5149,10 +5328,11 @@
           .attr('stroke', CLR_SUB).attr('stroke-dasharray', '3 3').attr('stroke-width', 1);
       }
 
-      drawCtxStrip(g, rxText, cy - (mLabelLines && mLabelLines.length > 1 ? 32 : 26), row.cls, row.fuel, row.blFuelLabel);
+      drawCtxStrip(g, rxText, cy - (mLabelLines && mLabelLines.length > 1 ? 34 : 28), row.cls, row.fuel, row.blFuelLabel);
       if (mLabelLines && mLabelLines.length > 1) {
-        const fsPx = parseFloat(mLabelFontSize || '16');
-        const t = g.append('text').attr('font-family', FONT).attr('font-size', mLabelFontSize || '16px').attr('font-weight', '700').attr('fill', CLR_LBL);
+        const fsStr = mLabelFontSize || BSW_CFG.szLabel;
+        const fsPx = parseFloat(fsStr);
+        const t = g.append('text').attr('font-family', FONT).attr('font-size', fsStr).attr('font-weight', '700').attr('fill', CLR_LBL);
         mLabelLines.forEach((line, i) => {
           t.append('tspan')
             .attr('x', rxText).attr('y', cy + (i - (mLabelLines.length - 1) / 2) * fsPx * 1.1)
@@ -5162,7 +5342,7 @@
         g.append('text')
           .attr('x', rxText).attr('y', cy)
           .attr('dominant-baseline', 'middle')
-          .attr('font-family', FONT).attr('font-size', mLabelFontSize || '16px').attr('font-weight', '700')
+          .attr('font-family', FONT).attr('font-size', mLabelFontSize || BSW_CFG.szLabel).attr('font-weight', '700')
           .attr('fill', CLR_LBL).text(mLabel);
       }
 
@@ -5170,11 +5350,11 @@
 
       const co2    = row.co2Saved;
       const co2Clr = (co2 != null && co2 < 0) ? CLR_MAROON : CLR_TEAL;
-      const nCo2   = (co2 != null && co2 > 0)
+      const nCo2   = (co2 != null && co2 !== 0)
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(co2) / CO2_PER_SQ))) : 0;
       if (nCo2 > 0) drawBlockGrid(g, xStatCO2, statBottomY, nCo2, co2Clr);
       g.append('text')
-        .attr('x', xStatCO2).attr('y', cy + 20)
+        .attr('x', xStatCO2).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', co2Clr)
@@ -5182,11 +5362,11 @@
 
       const mwh    = row.fossilMwh;
       const mwhClr = (mwh != null && mwh < 0) ? CLR_MAROON : CLR_TEAL;
-      const nMwh   = (mwh != null && mwh > 0)
+      const nMwh   = (mwh != null && mwh !== 0)
         ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(Math.abs(mwh) / MWH_PER_SQ))) : 0;
       if (nMwh > 0) drawCircleGrid(g, xStatImprt, statBottomY, nMwh, mwhClr);
       g.append('text')
-        .attr('x', xStatImprt).attr('y', cy + 20)
+        .attr('x', xStatImprt).attr('y', cy + BSW_CFG.labelGap)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
         .attr('fill', mwhClr)
@@ -5195,12 +5375,14 @@
 
     const footYb = H - M_BOT + 20;
     const ftrLb = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zx - 4).attr('y', footYb)
       .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
     ftrLb.append('tspan').attr('font-family', FONT).text('←');
     ftrLb.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
     const ftrRb = svg.append('text')
+      .attr('class', 'bsw-arrow')
       .attr('x', zx + 4).attr('y', footYb)
       .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
       .attr('font-size', '11px').attr('fill', CLR_SUB);
@@ -5222,8 +5404,8 @@
       ],
       mLabel:   'Tepelné čerpadlo',
       mIcon:    'tepelne-cerpadlo',
-      leftHdr:  'STÁVAJÍCÍ KOTEL',
-      rightHdr: 'TEPELNÉ ČERPADLO',
+      leftHdr:  'Stávající kotel',
+      rightHdr: 'Tepelné čerpadlo',
     });
   }
 
@@ -5307,11 +5489,11 @@
     if (!rows.length) return;
 
     const totalW      = container.clientWidth || 900;
-    const contentW    = Math.round(totalW * 0.85);
-    const LEFT_W      = Math.round(contentW * 0.12);
-    const CHART_R_GAP = 16;
-    const RMEAS_W     = Math.round(contentW * 0.19);
-    const STAT_W      = Math.round(contentW * 0.09);
+    const contentW    = Math.round(totalW * BSW_CFG.contentWRatio);
+    const LEFT_W      = Math.round(contentW * BSW_CFG.leftWRatio);
+    const CHART_R_GAP = BSW_CFG.chartRGap;
+    const RMEAS_W     = Math.round(contentW * BSW_CFG.rmeasWRatio);
+    const STAT_W      = Math.round(contentW * BSW_CFG.statWRatio);
     const CHART_W     = contentW - LEFT_W - CHART_R_GAP - RMEAS_W - STAT_W * 2;
 
     const xBsw       = LEFT_W;
@@ -5327,7 +5509,7 @@
     const M_BOT    = BSW_CFG.mBot;
     const H        = M_TOP + rows.length * LANE_H + M_BOT;
 
-    const absMax = 600_000;
+    const absMax = BSW_RANGE['vyhodnost-tepelneho-cerpadla'] ?? 600_000;
     const xSc    = d3.scaleLinear().domain([-absMax, absMax]).range([0, CHART_W]);
 
     rows.forEach((row, ri) => {
@@ -5356,8 +5538,8 @@
     const hdrY = HEADER_H / 2 + 4;
     const hdrRx = xRightCols + 4 + ICON_SZ + ICON_GAP;
     [
-      { x: 4,      text: 'STÁVAJÍCÍ KOTEL'  },
-      { x: hdrRx,  text: 'TEPELNÉ ČERPADLO' },
+      { x: 4,      text: 'Stávající kotel'  },
+      { x: hdrRx,  text: 'Tepelné čerpadlo' },
     ].forEach(({ x, text }) =>
       svg.append('text')
         .attr('x', x).attr('y', hdrY)
@@ -5414,6 +5596,7 @@
         .attr('d', `M ${bx},-1 L ${bx+S},-1 L ${bx+S+P},${CY-1} L ${bx+S},${S-1} L ${bx},${S-1} Z`)
         .attr('fill', CLR_SUB);
       ctxG.append('text')
+        .attr('class', 'bsw-badge')
         .attr('x', bx + S / 2).attr('y', CY)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('font-family', ROBOTO).attr('font-size', '10px').attr('font-weight', '700')
@@ -5425,7 +5608,7 @@
         .attr('font-family', ROBOTO).attr('font-size', '11px').attr('font-weight', '500')
         .attr('fill', CLR_SUB).text('RODINNÝ DŮM');
       if (fuel) {
-        bx += 82;
+        bx += BSW_CFG.ctxTextW;
         { const fi = FUEL_ICON_SVG[fuel] || FUEL_ICON_SVG['plyn'];
           ctxG.append('svg')
             .attr('x', bx).attr('y', CY - fi.h / 2)
@@ -5445,7 +5628,7 @@
       const g  = svg.append('g');
 
 
-      drawCtxStrip(g, 4, cy - 26, row.cls, row.fuel);
+      drawCtxStrip(g, 4, cy - 28, row.cls, row.fuel);
       g.append('text')
         .attr('x', 4).attr('y', cy)
         .attr('dominant-baseline', 'middle')
@@ -5483,13 +5666,29 @@
         .attr('href', `${ICON_BASE}/tepelne-cerpadlo.svg`)
         .attr('x', rxIcon).attr('y', cy - ICON_SZ / 2)
         .attr('width', ICON_SZ).attr('height', ICON_SZ);
-      drawCtxStrip(g, rxText, cy - 26, row.cls, row.fuel);
+      drawCtxStrip(g, rxText, cy - 28, row.cls, row.fuel);
       g.append('text')
         .attr('x', rxText).attr('y', cy)
         .attr('dominant-baseline', 'middle')
         .attr('font-family', FONT).attr('font-size', '16px').attr('font-weight', '700')
         .attr('fill', CLR_LBL).text('Tepelné čerpadlo');
     });
+
+    const footYt = H - M_BOT + 20;
+    const ftrLt = svg.append('text')
+      .attr('class', 'bsw-arrow')
+      .attr('x', zx - 4).attr('y', footYt)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrLt.append('tspan').attr('font-family', FONT).text('←');
+    ftrLt.append('tspan').attr('font-family', ROBOTO).text(' Emisně náročnější varianta je výhodnější');
+    const ftrRt = svg.append('text')
+      .attr('class', 'bsw-arrow')
+      .attr('x', zx + 4).attr('y', footYt)
+      .attr('text-anchor', 'start').attr('dominant-baseline', 'middle')
+      .attr('font-size', '11px').attr('fill', CLR_SUB);
+    ftrRt.append('tspan').attr('font-family', ROBOTO).text('Nízkoemisní opatření je výhodnější ');
+    ftrRt.append('tspan').attr('font-family', FONT).text('→');
 
     fokDownloadBar(container, 'vyhodnost-tepelneho-cerpadla');
   }
@@ -5506,8 +5705,8 @@
       ],
       mLabel:   'Kotel na dřevo',
       mIcon:    'biomasa-kotel',
-      leftHdr:  'STÁVAJÍCÍ KOTEL',
-      rightHdr: 'KOTEL NA BIOMASU',
+      leftHdr:  'Stávající kotel',
+      rightHdr: 'Kotel na biomasu',
     });
   }
 
@@ -5522,8 +5721,8 @@
       ],
       mLabel:       'Elektrický kotel',
       mIcon:        'elektrokotel',
-      leftHdr:      'STÁVAJÍCÍ KOTEL',
-      rightHdr:     'ELEKTRICKÝ KOTEL',
+      leftHdr:      'Stávající kotel',
+      rightHdr:     'Elektrický kotel',
       absMaxOverride: 1_200_000,
     });
   }
@@ -5539,10 +5738,9 @@
       mLabel:          'Střešní fotovoltaika a baterie',
       mLabelLines:     ['Střešní fotovoltaika', 'a baterie'],
       mIcon:           'fotovoltaika',
-      leftHdr:         'BEZ FOTOVOLTAIKY',
-      rightHdr:        'STŘEŠNÍ FOTOVOLTAIKA',
+      leftHdr:         'Bez fotovoltaiky',
+      rightHdr:        'Střešní fotovoltaika',
       
-      mLabelFontSize:  '14px',
     });
   }
 
@@ -6092,6 +6290,326 @@
     populateEffSelects();
   }
 
+  const BSW_SECTION_IDS = ['srovnani-vozidel','vyhodnost-elektromobilu','renovace-zatepleni','tepelne-cerpadlo','vyhodnost-tepelneho-cerpadla','kotel-biomasu','elektrokotel','fve'];
+
+  function applyBswFontSizes() {
+    const fsMap = { '16': BSW_CFG.szLabel, '12': BSW_CFG.szSecondary, '11': BSW_CFG.szSub, '10': BSW_CFG.szAxis };
+    BSW_SECTION_IDS.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.querySelectorAll('[font-size]:not(.bsw-badge):not(.bsw-arrow)').forEach(t => {
+        const k = (t.getAttribute('font-size') || '').replace('px','');
+        if (fsMap[k]) {
+          t.setAttribute('font-size', fsMap[k]);
+          if (k === '10') {
+            t.setAttribute('fill', BSW_CFG.clrAxisHdr);
+            t.style.textTransform = BSW_CFG.axisHdrCase;
+          }
+        }
+      });
+      el.querySelectorAll('.bsw-badge').forEach(t => t.setAttribute('font-size', BSW_CFG.szBadge));
+      el.querySelectorAll('.bsw-arrow').forEach(t => t.setAttribute('font-size', BSW_CFG.szArrow));
+    });
+  }
+
+  function addBswRangeSliders() {
+    const CHARTS = [
+      { id: 'srovnani-vozidel',             def: 350_000,   max: 1_500_000, fn: renderSrovnaniVozidel },
+      { id: 'vyhodnost-elektromobilu',      def: 350_000,   max: 1_500_000, fn: renderVyhodnostElektromobilu },
+      { id: 'renovace-zatepleni',           def: 1_200_000, max: 3_000_000, fn: renderRenovaceZatepleni },
+      { id: 'tepelne-cerpadlo',             def: 600_000,   max: 2_000_000, fn: renderTepelneCerpadlo },
+      { id: 'vyhodnost-tepelneho-cerpadla', def: 600_000,   max: 2_000_000, fn: renderTepCerpadloVyhodnost },
+      { id: 'kotel-biomasu',                def: 600_000,   max: 3_000_000, fn: renderKotelBiomasu },
+      { id: 'elektrokotel',                 def: 1_200_000, max: 3_000_000, fn: renderElektrokotel },
+      { id: 'fve',                          def: 600_000,   max: 2_000_000, fn: renderFve },
+    ];
+    const fmt = v => '± ' + new Intl.NumberFormat('cs-CZ').format(Math.round(v / 1000)) + ' tis. Kč';
+
+    CHARTS.forEach(({ id, def, max, fn }) => {
+      const section = document.getElementById(id);
+      if (!section || section.querySelector('.bsw-range-wrap')) return;
+      const cur = BSW_RANGE[id] ?? def;
+
+      const wrap = document.createElement('div');
+      wrap.className = 'bsw-range-wrap';
+      wrap.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:10px;padding:4px 0 14px;font-family:system-ui,sans-serif;font-size:11px;color:#aaa;';
+
+      const lbl = document.createElement('span');
+      lbl.style.cssText = 'flex-shrink:0;';
+      lbl.textContent = 'Rozsah osy NPV:';
+
+      const slider = document.createElement('input');
+      slider.type = 'range'; slider.min = 100_000; slider.max = max; slider.step = 50_000;
+      slider.value = cur;
+      slider.style.cssText = 'width:220px;accent-color:#35978f;cursor:pointer;';
+
+      const valSpan = document.createElement('span');
+      valSpan.style.cssText = 'min-width:90px;flex-shrink:0;';
+      valSpan.textContent = fmt(cur);
+
+      slider.addEventListener('input', () => {
+        const n = parseFloat(slider.value);
+        valSpan.textContent = fmt(n);
+        BSW_RANGE[id] = n;
+        fn();
+        applyBswFontSizes();
+      });
+
+      wrap.append(lbl, slider, valSpan);
+      const container = section.querySelector('.container');
+      (container || section).appendChild(wrap);
+    });
+  }
+
+  function renderAllBeeswarm() {
+    renderSrovnaniVozidel();
+    renderVyhodnostElektromobilu();
+    renderRenovaceZatepleni();
+    renderTepelneCerpadlo();
+    renderTepCerpadloVyhodnost();
+    renderKotelBiomasu();
+    renderElektrokotel();
+    renderFve();
+    applyBswFontSizes();
+    addBswRangeSliders();
+  }
+
+  function renderAllSouhrn() {
+    renderSouhrnNpv();
+    renderSouhrnEmise();
+    renderSouhrnImport();
+    renderSouhrnVse();
+  }
+
+  function renderTuningPanel() {
+    if (document.getElementById('bsw-tuning-panel')) return;
+
+    const CTRL_DEFS = [
+      { section: 'Font sizes', key: 'szLabel',       label: 'Label',       min: 8,    max: 28,  step: 1    },
+      { section: 'Font sizes', key: 'szSecondary',   label: 'Secondary',   min: 7,    max: 22,  step: 1    },
+      { section: 'Font sizes', key: 'szSub',         label: 'Sub',         min: 6,    max: 18,  step: 1    },
+      { section: 'Font sizes', key: 'szBadge',       label: 'Badge',       min: 5,    max: 16,  step: 1    },
+      { section: 'Font sizes', key: 'szAxis',        label: 'Axis hdr',    min: 5,    max: 16,  step: 1,   syncTo: 'axisHdrLineH' },
+      { section: 'Font sizes', key: 'axisHdrLineH', label: 'Axis line H', min: 6,    max: 28,  step: 1    },
+      { section: 'Font sizes', key: 'szArrow',       label: 'Arrow lbl',   min: 6,    max: 18,  step: 1    },
+      { section: 'Layout',     key: 'ctxTextW',      label: 'Ctx txt W',   min: 50,   max: 140, step: 2    },
+      { section: 'Layout',     key: 'laneH',         label: 'Lane height', min: 80,   max: 300, step: 2    },
+      { section: 'Layout',     key: 'dotR',          label: 'Dot radius',  min: 2,    max: 15,  step: 0.2  },
+      { section: 'Layout',     key: 'headerH',       label: 'Header H',    min: 20,   max: 100, step: 2    },
+      { section: 'Layout',     key: 'mBot',          label: 'Bot margin',  min: 10,   max: 80,  step: 2    },
+      { section: 'Layout',     key: 'iconSz',        label: 'Icon size',   min: 20,   max: 80,  step: 2    },
+      { section: 'Layout',     key: 'iconGap',       label: 'Icon gap',    min: 0,    max: 30,  step: 1    },
+      { section: 'Columns',    key: 'contentWRatio', label: 'Content W',   min: 0.5,  max: 1.0, step: 0.01 },
+      { section: 'Columns',    key: 'leftWRatio',    label: 'Left col',    min: 0.04, max: 0.30,step: 0.01 },
+      { section: 'Columns',    key: 'rmeasWRatio',   label: 'Measure col', min: 0.05, max: 0.40,step: 0.01 },
+      { section: 'Columns',    key: 'statWRatio',    label: 'Stat col',    min: 0.02, max: 0.20,step: 0.01 },
+      { section: 'Columns',    key: 'chartRGap',     label: 'Chart gap',   min: 0,    max: 60,  step: 2    },
+      { section: 'Columns',    key: 'labelGap',      label: 'Label gap',   min: 4,    max: 50,  step: 1    },
+    ];
+
+    const COLOR_DEFS = [
+      { key: 'clrAxisHdr',  label: 'Axis hdr text' },
+      { key: 'clrLabel',    label: 'Label text' },
+      { key: 'clrSub',      label: 'Sub text' },
+      { key: 'clrSep',      label: 'Separator' },
+      { key: 'clrPos',      label: 'Positive' },
+      { key: 'clrNeg',      label: 'Negative' },
+      { key: 'clrNegStat',  label: 'Neg stat' },
+      { key: 'clrZeroLine', label: 'Zero line' },
+    ];
+
+    function getRaw(key) {
+      const v = BSW_CFG[key];
+      return typeof v === 'string' ? parseFloat(v) : v;
+    }
+    function setVal(key, n) {
+      const cur = BSW_CFG[key];
+      BSW_CFG[key] = typeof cur === 'string' && cur.endsWith('px') ? `${Math.round(n)}px` : n;
+    }
+    function fmtVal(n) { return n < 1 ? n.toFixed(2) : n; }
+
+    const panel = document.createElement('div');
+    panel.id = 'bsw-tuning-panel';
+    panel.style.cssText = 'position:fixed;top:12px;right:12px;z-index:9999;width:272px;max-height:calc(100vh - 24px);overflow-y:auto;background:#fff;border:1px solid #ccc;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.18);font-family:system-ui,sans-serif;font-size:12px;color:#333;';
+
+    const hdr = document.createElement('div');
+    hdr.style.cssText = 'display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:1;';
+    hdr.innerHTML = `<strong style="font-size:13px;">Chart tuning</strong><div style="display:flex;gap:6px;"><button id="bsw-copy" style="font-size:10px;padding:2px 8px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#f5f5f5;">Copy JSON</button><button id="bsw-close" style="font-size:18px;cursor:pointer;border:none;background:none;color:#888;line-height:1;padding:0 2px;">×</button></div>`;
+
+    const body = document.createElement('div');
+    body.style.cssText = 'padding:8px 12px 14px;';
+
+    panel.append(hdr, body);
+    document.body.appendChild(panel);
+
+    const sections = {};
+    CTRL_DEFS.forEach(c => { (sections[c.section] = sections[c.section] || []).push(c); });
+
+    Object.entries(sections).forEach(([name, ctrls]) => {
+      const sh = document.createElement('div');
+      sh.style.cssText = 'font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#aaa;margin:10px 0 5px;';
+      sh.textContent = name;
+      body.appendChild(sh);
+
+      ctrls.forEach(ctrl => {
+        const row = document.createElement('div');
+        row.style.cssText = 'display:flex;align-items:center;gap:6px;margin-bottom:5px;';
+
+        const lbl = document.createElement('span');
+        lbl.style.cssText = 'font-size:11px;color:#555;flex-shrink:0;width:82px;';
+        lbl.textContent = ctrl.label;
+
+        const cur = getRaw(ctrl.key);
+
+        const numInp = document.createElement('input');
+        numInp.type = 'number';
+        numInp.min = ctrl.min; numInp.max = ctrl.max; numInp.step = ctrl.step;
+        numInp.value = cur;
+        numInp.style.cssText = 'width:48px;font-size:11px;color:#222;border:1px solid #ddd;border-radius:3px;padding:1px 3px;text-align:right;flex-shrink:0;';
+
+        const slider = document.createElement('input');
+        slider.type = 'range';
+        slider.min = ctrl.min; slider.max = ctrl.max; slider.step = ctrl.step;
+        slider.value = cur;
+        slider.style.cssText = 'flex:1;cursor:pointer;accent-color:#35978f;';
+        slider.dataset.bswKey = ctrl.key;
+        numInp.dataset.bswNum = ctrl.key;
+
+        const syncTarget = (n) => {
+          if (!ctrl.syncTo) return;
+          const raw = Math.round(parseFloat(n));
+          BSW_CFG[ctrl.syncTo] = raw;
+          const ts = body.querySelector(`[data-bsw-key="${ctrl.syncTo}"]`);
+          const tn = body.querySelector(`[data-bsw-num="${ctrl.syncTo}"]`);
+          if (ts) ts.value = raw;
+          if (tn) tn.value = raw;
+        };
+
+        slider.addEventListener('input', () => {
+          const n = parseFloat(slider.value);
+          numInp.value = n;
+          setVal(ctrl.key, n);
+          syncTarget(n);
+          renderAllBeeswarm();
+        });
+
+        numInp.addEventListener('change', () => {
+          const n = Math.min(ctrl.max, Math.max(ctrl.min, parseFloat(numInp.value) || ctrl.min));
+          slider.value = n; numInp.value = n;
+          setVal(ctrl.key, n);
+          syncTarget(n);
+          renderAllBeeswarm();
+        });
+
+        row.append(lbl, slider, numInp);
+        body.appendChild(row);
+      });
+    });
+
+    // Case toggle for axis headers
+    const caseRow = document.createElement('div');
+    caseRow.style.cssText = 'display:flex;align-items:center;gap:6px;margin-bottom:5px;';
+    const caseLbl = document.createElement('span');
+    caseLbl.style.cssText = 'font-size:11px;color:#555;flex-shrink:0;width:82px;';
+    caseLbl.textContent = 'Axis case';
+    const caseBtn = document.createElement('button');
+    caseBtn.style.cssText = 'font-size:11px;padding:2px 12px;cursor:pointer;border:1px solid #ccc;border-radius:3px;background:#f5f5f5;flex-shrink:0;';
+    const updateCaseBtn = () => { caseBtn.textContent = BSW_CFG.axisHdrCase === 'uppercase' ? 'UPPERCASE' : 'Normal'; };
+    updateCaseBtn();
+    caseBtn.addEventListener('click', () => {
+      BSW_CFG.axisHdrCase = BSW_CFG.axisHdrCase === 'uppercase' ? 'normal' : 'uppercase';
+      updateCaseBtn();
+      renderAllBeeswarm();
+    });
+    caseRow.append(caseLbl, caseBtn);
+    body.appendChild(caseRow);
+
+    const ch = document.createElement('div');
+    ch.style.cssText = 'font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#aaa;margin:10px 0 5px;';
+    ch.textContent = 'Colors';
+    body.appendChild(ch);
+
+    COLOR_DEFS.forEach(cd => {
+      const row = document.createElement('div');
+      row.style.cssText = 'display:flex;align-items:center;justify-content:space-between;margin-bottom:5px;';
+
+      const lbl = document.createElement('span');
+      lbl.style.cssText = 'font-size:11px;color:#555;';
+      lbl.textContent = cd.label;
+
+      const inp = document.createElement('input');
+      inp.type = 'color';
+      inp.value = BSW_CFG[cd.key];
+      inp.style.cssText = 'width:36px;height:22px;border:1px solid #ccc;border-radius:3px;cursor:pointer;padding:1px;';
+
+      inp.addEventListener('input', () => { BSW_CFG[cd.key] = inp.value; renderAllBeeswarm(); });
+
+      row.append(lbl, inp);
+      body.appendChild(row);
+    });
+
+    const SOUHRN_CTRL_DEFS = [
+      { key: 'leftW',      label: 'Left col (px)', min: 200, max: 500, step: 10 },
+      { key: 'rowH',       label: 'Row height',    min: 40,  max: 140, step: 2  },
+      { key: 'rowHVse',    label: 'Row H (vše)',   min: 40,  max: 160, step: 2  },
+      { key: 'iconSz',     label: 'Icon size',     min: 24,  max: 72,  step: 2  },
+      { key: 'iconGridSz', label: 'Icon grid sz',  min: 6,   max: 20,  step: 1  },
+      { key: 'colGap',     label: 'Col gap',       min: 10,  max: 120, step: 5  },
+    ];
+
+    const souhrnShDiv = document.createElement('div');
+    souhrnShDiv.style.cssText = 'font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#aaa;margin:10px 0 5px;border-top:1px solid #eee;padding-top:10px;';
+    souhrnShDiv.textContent = 'Souhrn charts';
+    body.appendChild(souhrnShDiv);
+
+    SOUHRN_CTRL_DEFS.forEach(ctrl => {
+      const row = document.createElement('div');
+      row.style.cssText = 'display:flex;align-items:center;gap:6px;margin-bottom:5px;';
+
+      const lbl = document.createElement('span');
+      lbl.style.cssText = 'font-size:11px;color:#555;flex-shrink:0;width:82px;';
+      lbl.textContent = ctrl.label;
+
+      const slider = document.createElement('input');
+      slider.type = 'range'; slider.min = ctrl.min; slider.max = ctrl.max; slider.step = ctrl.step;
+      slider.value = SOUHRN_CFG[ctrl.key];
+      slider.style.cssText = 'flex:1;cursor:pointer;accent-color:#35978f;';
+
+      const numInp = document.createElement('input');
+      numInp.type = 'number'; numInp.min = ctrl.min; numInp.max = ctrl.max; numInp.step = ctrl.step;
+      numInp.value = SOUHRN_CFG[ctrl.key];
+      numInp.style.cssText = 'width:48px;font-size:11px;color:#222;border:1px solid #ddd;border-radius:3px;padding:1px 3px;text-align:right;flex-shrink:0;';
+
+      slider.addEventListener('input', () => {
+        const n = parseFloat(slider.value);
+        numInp.value = n;
+        SOUHRN_CFG[ctrl.key] = n;
+        renderAllSouhrn();
+      });
+      numInp.addEventListener('change', () => {
+        const n = Math.min(ctrl.max, Math.max(ctrl.min, parseFloat(numInp.value) || ctrl.min));
+        slider.value = n; numInp.value = n;
+        SOUHRN_CFG[ctrl.key] = n;
+        renderAllSouhrn();
+      });
+
+      row.append(lbl, slider, numInp);
+      body.appendChild(row);
+    });
+
+    panel.querySelector('#bsw-close').addEventListener('click', () => panel.remove());
+    panel.querySelector('#bsw-copy').addEventListener('click', () => {
+      const out = { beeswarm: {}, souhrn: {} };
+      [...CTRL_DEFS.map(c => c.key), ...COLOR_DEFS.map(c => c.key)].forEach(k => { out.beeswarm[k] = BSW_CFG[k]; });
+      SOUHRN_CTRL_DEFS.forEach(c => { out.souhrn[c.key] = SOUHRN_CFG[c.key]; });
+      navigator.clipboard.writeText(JSON.stringify(out, null, 2)).then(() => {
+        const btn = panel.querySelector('#bsw-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy JSON'; }, 1500);
+      });
+    });
+  }
+
   function init() {
     if (document.getElementById('quadrant-wrap')) {
       quadrantDomains = computeQuadrantDomains();
@@ -6116,8 +6634,11 @@
     setupControls();
     renderAll();
     renderGasSavingsRangeChart();
-    window.addEventListener('resize', renderAll);
+    applyBswFontSizes();
+    addBswRangeSliders();
+    window.addEventListener('resize', () => { renderAll(); applyBswFontSizes(); });
     // sensitivity beeswarm initialised by costs-benefits-beeswarm.js
+    if (location.search.includes('tune=1')) renderTuningPanel();
   }
 
   // Icons for the beeswarm chart — embedded as data URIs so exported SVGs are self-contained

@@ -525,6 +525,7 @@ extra-scripts:
 <div class="section pt-4 pb-3" id="vyhodnost-vs-emise">
   <div class="container">
     <h2 class="key-chart-title">Ekonomická výhodnost vs. úspora emisí CO<sub>2</sub></h2>
+    <div id="vyhodnost-vs-emise-chart"></div>
   </div>
 </div>
 
