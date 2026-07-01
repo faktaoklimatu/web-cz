@@ -1,6 +1,7 @@
-- title: "<span class=\"fas fa-fw fa-user-plus\"></span> Nabíráme: Analytik/čka</a>"
-  link: /hledame-posilu
-  class: "pb-3"
+# Ukázku hiring stránky najdeš např. v TODO
+# - title: "<span class=\"fas fa-fw fa-user-plus\"></span> Nabíráme: Analytik/čka</a>"
+#   link: /hledame-posilu
+#   class: "pb-3"
 
 - title: "<span class=\"fas fa-fw fa-chart-gantt\"></span>Projekt: OP JAK"
   link: /opjak
