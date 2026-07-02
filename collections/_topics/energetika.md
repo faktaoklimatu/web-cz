@@ -149,6 +149,7 @@ subtopics:
   - cena-energie
   - potencial-vetrne-energie-cr
   - potencial-solarni-energie-cr-strechy
+  - 2026-analyza-opatreni-domacnosti
   - uzemni-stopa-oze
   - 2024-reserse-vodik
 
