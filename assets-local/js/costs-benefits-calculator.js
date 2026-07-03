@@ -507,7 +507,12 @@ const CostsBenefits = (() => {
     if (!opRows.length) return null;
     const scope1Total = opRows.reduce((s, r) => s + (r.fossilScope1 || 0), 0);
     const scope2Total = opRows.reduce((s, r) => s + (r.fossilScope2 || 0), 0);
-    if (scope1Total === 0 && scope2Total === 0) return null;
+    if (scope1Total === 0 && scope2Total === 0) return {
+      annualMwh: 0, totalMwh: 0,
+      scope1AnnualMwh: 0, scope1TotalMwh: 0,
+      scope2AnnualMwh: 0, scope2TotalMwh: 0,
+      gasFactor: true,
+    };
     const n = opRows.length;
     return {
       annualMwh:       (scope1Total + scope2Total) / n,

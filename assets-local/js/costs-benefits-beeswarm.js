@@ -8,7 +8,7 @@
   const TRANSPORT_MEASURE_MAP = shared.TRANSPORT_MEASURE_MAP || {};
   const cpActualName          = shared.cpActualName          || ((n) => n);
   const cpIncludesForCat      = shared.cpIncludesForCat      || (() => false);
-  const fokDownloadBar        = shared.fokDownloadBar        || (() => {});
+  const addDownloadBar        = shared.addDownloadBar        || (() => {});
   const fmtCZK                = shared.fmtCZK                || (v => v);
 
   // ── Sensitivity beeswarm constants ────────────────────────────────────────
@@ -988,7 +988,8 @@
         const t = svg.append('text')
           .attr('class', 'sb-col-hdr').attr('x', x).attr('y', 12)
           .attr('text-anchor', anchor)
-          .attr('font-size', fs(9)).attr('letter-spacing', '0.04em');
+          .attr('font-size', fs(9)).attr('letter-spacing', '0.04em')
+          .attr('font-weight', '700').attr('fill', shared.BSW_CFG?.clrSub || '#aaa');
         lines.forEach((line, i) => {
           t.append('tspan').attr('x', x).attr('dy', i === 0 ? '0' : '1.25em').text(line);
         });
@@ -1362,7 +1363,7 @@
       .attr('fill', '#515b66')
       .text(d => fmtNpv(d.npv));
 
-    fokDownloadBar(container, 'sensitivity-beeswarm');
+    addDownloadBar(container, 'sensitivity-beeswarm');
 
     // Measure-specific footnote
     const noteEl = document.getElementById('sensitivity-beeswarm-note');

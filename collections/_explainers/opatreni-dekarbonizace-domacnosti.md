@@ -519,6 +519,7 @@ extra-scripts:
 <div class="section pt-4 pb-3" id="cena-tuny-co2">
   <div class="container">
     <h2 class="key-chart-title">Kolik stojí úspora jedné tuny emisí CO<sub>2</sub>?</h2>
+    <div id="cena-tuny-co2-chart"></div>
   </div>
 </div>
 
@@ -529,9 +530,18 @@ extra-scripts:
   </div>
 </div>
 
+<div class="section pt-4 pb-3" id="vliv-ceny-uhliku">
+  <div class="container">
+    <h2 class="key-chart-title">Jak ekonomickou výhodnost opatření ovlivňuje cena uhlíku?</h2>
+    <div id="vliv-ceny-uhliku-chart"></div>
+  </div>
+</div>
+
 <div class="section pt-4 pb-3" id="scenare-cen-energii">
   <div class="container">
     <h2 class="key-chart-title">Jak ekonomickou výhodnost opatření ovlivňují různé scénáře cen energií?</h2>
+    <div id="dumbbell-legend" style="margin-bottom:1rem;"></div>
+    <div id="dumbbell-combined"></div>
   </div>
 </div>
 
@@ -652,13 +662,6 @@ extra-scripts:
   </div>
 </div>
 
-<div class="section pt-3 pb-4">
-  <div class="container">
-    <p class="chart-col-header mb-2">NPV opatření v různých cenových scénářích</p>
-    <div id="dumbbell-legend" style="margin-bottom:1rem;"></div>
-    <div id="dumbbell-combined"></div>
-  </div>
-</div>
 
 
 <div class="section pt-3 pb-4">
