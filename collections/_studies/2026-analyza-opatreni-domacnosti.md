@@ -54,7 +54,11 @@ Modelujeme scénáře s rozdílnými vstupními parametry (např. energetická t
 
 **Různá opatření přináší různé kombinace výhod.** Řada zkoumaných opatření přináší jak úsporu financí za celou dobu své životnosti, tak snížení emisí CO2 či importu zemního plynu a ropy. Dekarbonizační opatření už zdaleka nejsou pouze otázkou klimatickou, velká část se vyplatí i ekonomicky a posiluje energetickou soběstačnost Česka díky snížené závislosti na dovozu fosilních paliv.
 
-TADY BUDE SHRNUJÍCÍ GRAFIKA – VIZ SLIDE 9
+{% include figure.html
+    name="souhrn-opatreni.png"
+    alt="TODO"
+%}
+
 
 ## Poznámky a poděkování
 
