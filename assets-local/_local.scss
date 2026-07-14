@@ -798,3 +798,11 @@ ol.circled-list {
     max-width: 100%;
     margin-block: 1.5rem;
 }
+
+.six-objectives {
+    grid-template-columns: 4rem 1fr;
+
+    >img {
+        align-self: center;
+    }
+}

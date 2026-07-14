@@ -231,6 +231,12 @@ Scarcity pricing motivuje k investicím ve střednědobém až dlouhodobém hori
 
 Kapacitní trh může být užitečným nástrojem pro zajištění trvalého dostatku elektřiny v síti. Dokáže předejít drahým a nebezpečným výpadkům a umožní lepší integraci obnovitelných zdrojů do energetického systému. Může však také zvýšit ceny elektřiny pro spotřebitele, vést k nadměrné podpoře fosilních zdrojů a zpomalit transformaci směrem k nízkouhlíkové energetice. Aby se minimalizovala rizika a náklady a zároveň zachovaly přínosy, doporučujeme při návrhu a implementaci (na základě nejlepší evropské praxe) zohlednit řadu faktorů.
 
+{% include preview-box.html
+    title="Navazující policy paper"
+    text="Doporučení pro kapacitní trh v Česku jsou rozpracována v policy paperu (v angličtině), který formuluje šest cílů pro jeho úspěšné zavedení."
+    slug="2026-six-objectives-for-a-successful-capacity-market"
+%}
+
 1. **Jasný směr a řízení.** Integrovat kapacitní trh do energetické strategie země.[^energeticka-strategie-sek] Stanovit pro něj jasné, měřitelné cíle a pravidelně vyhodnocovat, zda jich bylo dosaženo.
 2. **Důraz na transparentnost a pečlivost.** Zpřístupnit předpoklady modelování a celý proces zavádění kapacitního trhu veřejné kontrole. Konzultovat postup s účastníky trhu i s odborníky a nechat na diskuse dostatečný čas. Transparentnost a pečlivost při zavádění může výrazně zvýšit kvalitu celého trhu a jeho následného fungování.
 3. **Spravedlivý přístup pro všechny technologie.** Podložit stanovení derating faktorů argumenty a veřejně dostupnými výstupy z modelování. Do systému lze zapojit různé technologie prostřednictvím oddělených aukcí pro různá časová období – kratší časové rámce zvýhodní baterie, zatímco delší podpoří tepelné zdroje.
