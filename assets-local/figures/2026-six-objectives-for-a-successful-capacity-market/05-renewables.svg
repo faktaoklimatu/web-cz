@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.866142 70.866142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #006c90;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #d0ecf2;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="9.816322" y="10.433209" width="51.281428" height="51.281428"/>
+  <g>
+    <ellipse class="cls-2" cx="21.977835" cy="22.388597" rx="4.809743" ry="4.841826"/>
+    <g>
+      <polygon class="cls-2" points="46.693632 61.277977 40.183425 61.277977 42.341811 35.637263 44.89944 35.637263 46.693632 61.277977"/>
+      <g>
+        <path class="cls-2" d="M40.264407,17.759631l2.107898,16.025663,1.703439-.224057,2.801117-3.649594s-2.250499-8.292281-4.04982-12.818086c-.580432-1.459952-2.76752-.89161-2.562634.666074Z"/>
+        <path class="cls-2" d="M30.013248,45.500384l12.824683-9.838325-1.045759-1.363193-4.561199-.601041s-6.056076,6.09513-9.075879,9.91629c-.97414,1.232644.611603,2.842548,1.858154,1.886269Z"/>
+        <path class="cls-2" d="M59.553662,40.244797l-14.932581-6.187337-.65768,1.58725,1.760083,4.250635s8.306576,2.19715,13.125699,2.901795c1.554571.227307,2.155917-1.950938.704479-2.552343Z"/>
+        <circle class="cls-2" cx="43.381772" cy="34.987326" r="3.448252"/>
+      </g>
+    </g>
+    <g>
+      <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="21.978684" y1="35.043187" x2="21.978684" y2="27.575135"/>
+      </g>
+      <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="15.650639" y1="33.347853" x2="19.384665" y2="26.88033"/>
+      </g>
+      <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="11.018626" y1="28.716544" x2="17.486149" y2="24.982517"/>
+      </g>
+      <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="9.323599" y1="22.389196" x2="16.791651" y2="22.389196"/>
+      </g>
+      <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="11.01869" y1="16.061151" x2="17.486212" y2="19.795177"/>
+      </g>
+      <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="15.650487" y1="11.429626" x2="19.384513" y2="17.897149"/>
+      </g>
+      <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="21.977835" y1="9.734355" x2="21.977835" y2="17.202407"/>
+      </g>
+      <g id="_Radial_Repeat_-8" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="28.304903" y1="11.42969" x2="24.570877" y2="17.897212"/>
+      </g>
+      <g id="_Radial_Repeat_-9" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="32.936916" y1="16.061487" x2="26.469393" y2="19.795513"/>
+      </g>
+      <g id="_Radial_Repeat_-10" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="34.632675" y1="22.388591" x2="27.164623" y2="22.388591"/>
+      </g>
+      <g id="_Radial_Repeat_-11" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="32.937341" y1="28.715659" x2="26.469818" y2="24.981633"/>
+      </g>
+      <g id="_Radial_Repeat_-12" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="28.306032" y1="33.347428" x2="24.572006" y2="26.879905"/>
+      </g>
+    </g>
+  </g>
+  <line class="cls-3" x1="48.035329" y1="17.775846" x2="61.430867" y2="17.775846"/>
+  <line class="cls-3" x1="51.35553" y1="25.118484" x2="61.430867" y2="25.118484"/>
+  <line class="cls-3" x1="53.531482" y1="32.461121" x2="61.430867" y2="32.461121"/>
+  <line class="cls-2" x1="17.508807" y1="45.699866" x2="17.508807" y2="61.360091"/>
+  <line class="cls-2" x1="24.654157" y1="52.547493" x2="24.654157" y2="61.360091"/>
+  <line class="cls-2" x1="31.75981" y1="54.263988" x2="31.75981" y2="61.360091"/>
+</svg>
