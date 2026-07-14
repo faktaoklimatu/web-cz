@@ -35,22 +35,22 @@ slug: index
 </div>
 
 <div class="tab-content" id="myTabContent">
-<div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
-<div class="row">
-<div class="col-md-6" markdown="1">
+  <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
+    <div class="row">
+      <div class="col-md-6" markdown="1">
 
 Českou energetiku čeká v příštích letech odstavování uhelných elektráren. Ty je nutné nahradit čistšími řiditelnými zdroji, jejichž výstavba se však neobejde bez podpory. Stát proto připravuje **kapacitní trh** – systém aukcí, v nichž budou výrobci placeni za udržování záložní kapacity pro případ potřeby.
 
 Fakta o klimatu k tématu připravila [úvodní text](/explainery/2026-kapacitni-trh-v-cesku) vysvětlující fungování tohoto mechanismu. Navazující [policy paper](/studie/2026-six-objectives-for-a-successful-capacity-market) (v angličtině) pak definuje šest cílů pro jeho úspěšné zavedení v Česku – tedy zajištění spolehlivých dodávek za rozumné náklady a bez nadbytečné závislosti na plynu.
 </div>
-<div class="col-md-3">
+      <div class="col-md-3">
         {% include preview-block.html slug="2026-kapacitni-trh-v-cesku" no_include_tags=true %}
-</div>
-<div class="col-md-3">
+      </div>
+      <div class="col-md-3">
         {% include preview-block.html slug="2026-six-objectives-for-a-successful-capacity-market" no_include_tags=true %}
-</div>
-</div>
-</div></div>
+      </div>
+    </div>
+  </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
     <p class="lead mb-0">Zajímají vás naše novinky? V této sekci vždy najdete naše nejnovější infografiky a články.</p>

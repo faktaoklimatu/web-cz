@@ -1,7 +1,6 @@
 ---
 layout:           publication
 title:            "Six objectives for a successful capacity market in Czechia"
-title_formatted:  "Six objectives for a successful capacity market in Czechia"
 slug:             2026-six-objectives-for-a-successful-capacity-market
 redirect_from:
   - /2026-six-objectives-for-a-successful-capacity-market
@@ -74,7 +73,7 @@ Czechia is currently designing its own capacity market under CISAF to incentivis
 
 {% include figure.html name="05-renewables.svg" alt="Pictogram: Accelerating renewables" no-lightbox=true %}
 
-**Buildout of renewables.** Czechia must speed up the rollout of renewables to limit the power sector’s gas dependency during the 2030s – a dependency that the capacity market will unfortunately increase. Both solar and wind power are crucial to minimise the role of gas. Less reliance on gas translates to cheaper electricity that is far less exposed to gas and ETS1 price volatility
+**Buildout of renewables.** Czechia must speed up the rollout of renewables to limit the power sector’s gas dependency during the 2030s – a dependency that the capacity market will unfortunately increase. Both solar and wind power are crucial to minimise the role of gas. Less reliance on gas translates to cheaper electricity that is far less exposed to gas and ETS1 price volatility.
 
 {% include figure.html name="06-flexibility.svg" alt="Pictogram: Enhancing system flexibility" no-lightbox=true %}
 
