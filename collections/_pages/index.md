@@ -41,7 +41,7 @@ slug: index
 
 Českou energetiku čeká v příštích letech odstavování uhelných elektráren. Ty je nutné nahradit čistšími řiditelnými zdroji, jejichž výstavba se však neobejde bez podpory. Stát proto připravuje **kapacitní trh** – systém aukcí, v nichž budou výrobci placeni za udržování záložní kapacity pro případ potřeby.
 
-Fakta o klimatu k tématu připravila [úvodní text](/2026-kapacitni-trh-v-cesku) vysvětlující fungování tohoto mechanismu. Navazující [policy paper](/2026-six-objectives-for-a-successful-capacity-market) (v angličtině) pak definuje šest cílů pro jeho úspěšné zavedení v Česku – tedy zajištění spolehlivých dodávek za rozumné náklady a bez nadbytečné závislosti na plynu.
+Fakta o klimatu k tématu připravila [úvodní text](/explainery/2026-kapacitni-trh-v-cesku) vysvětlující fungování tohoto mechanismu. Navazující [policy paper](/studie/2026-six-objectives-for-a-successful-capacity-market) (v angličtině) pak definuje šest cílů pro jeho úspěšné zavedení v Česku – tedy zajištění spolehlivých dodávek za rozumné náklady a bez nadbytečné závislosti na plynu.
 </div>
 <div class="col-md-3">
         {% include preview-block.html slug="2026-kapacitni-trh-v-cesku" no_include_tags=true %}
