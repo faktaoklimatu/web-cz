@@ -34,10 +34,25 @@ Svět se začíná postupně odklánět od využívání uhlí, ropy a zemního 
 * **Snaha o nezávislost** na dovozech fosilních paliv
 
 Jednou z cest, jak se na dekarbonizaci mohou podílet domácnosti, jsou **investice do nízkoemisních opatření**, jako jsou:
-* Elektromobily
-* Tepelná čerpadla
-* Zateplení domu
-* Střešní fotovoltaika
+
+<div class="row opatreni-ikony">
+<div class="col-6 col-md-3">
+<img src="/assets-local/figures/2026-analyza-opatreni-domacnosti/ikona-elektromobily.svg" alt="">
+Elektromobily
+</div>
+<div class="col-6 col-md-3">
+<img src="/assets-local/figures/2026-analyza-opatreni-domacnosti/ikona-tepelna-cerpadla.svg" alt="">
+Tepelná čerpadla
+</div>
+<div class="col-6 col-md-3">
+<img src="/assets-local/figures/2026-analyza-opatreni-domacnosti/ikona-zatepleni.svg" alt="">
+Zateplení domu
+</div>
+<div class="col-6 col-md-3">
+<img src="/assets-local/figures/2026-analyza-opatreni-domacnosti/ikona-fotovoltaika.svg" alt="">
+Střešní fotovoltaika
+</div>
+</div>
 
 ## Otázky, na které se studie zaměřuje
 
