@@ -1,6 +1,6 @@
 ---
 layout:           publication
-title:            "Six objectives for a successful capacity market in Czechia"
+title:            "Six objectives for&nbsp;a&nbsp;successful capacity market in&nbsp;Czechia"
 slug:             2026-six-objectives-for-a-successful-capacity-market
 redirect_from:
   - /2026-six-objectives-for-a-successful-capacity-market
