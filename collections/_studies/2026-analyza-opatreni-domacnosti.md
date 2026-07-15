@@ -22,6 +22,8 @@ authors:
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
 type:             "Studie"
+extra-scripts:
+  - /assets-local/figures/2026-analyza-opatreni-domacnosti/srovnani-opatreni-chart.js
 perex: |
   Rezidenční budovy a osobní automobilová doprava zodpovídají za přibližně čtvrtinu emisí skleníkových plynů v Česku. Domácnosti jsou proto nedílnou součástí úspěšné dekarbonizace. Tato studie srovnává vybraná nízkoemisní opatření u domácností s obdobnými vysokoemisními variantami a ukazuje, jak toto srovnání vychází ekonomicky, emisně a co do závislosti na importu fosilních paliv. Uvažuje přitom různé vstupní parametry těchto opatření a různé scénáře ceny paliv či emisní povolenky.
 ---
@@ -69,10 +71,9 @@ Modelujeme scénáře s rozdílnými vstupními parametry (např. energetická t
 
 **Různá opatření přináší různé kombinace výhod.** Řada zkoumaných opatření přináší jak úsporu financí za celou dobu své životnosti, tak snížení emisí CO2 či importu zemního plynu a ropy. Dekarbonizační opatření už zdaleka nejsou pouze otázkou klimatickou, velká část se vyplatí i ekonomicky a posiluje energetickou soběstačnost Česka díky snížené závislosti na dovozu fosilních paliv.
 
-{% include figure.html
-    name="souhrn-opatreni.png"
-    alt="TODO"
-%}
+<div class="longread-figure">
+<div id="srovnani-opatreni"></div>
+</div>
 
 
 ## Poznámky a poděkování
