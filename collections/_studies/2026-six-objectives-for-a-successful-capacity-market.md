@@ -53,7 +53,7 @@ Czechia is currently designing its own capacity market under CISAF to incentivis
     alt="Six objectives for the capacity market: the first concerns setting up the market itself, the next three its long-term governance, and the last two the wider electricity market conditions"
 %}
 
-<div class="grid-figures six-objectives mt-5" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text mt-5" style="--figure-width: 3rem; --figure-width-desktop: 4rem;" markdown="1">
 
 {% include figure.html name="01-auction.svg" alt="Pictogram: A successful first auction" no-lightbox=true %}
 

@@ -58,7 +58,7 @@ Při hledání odpovědí na tyto otázky používá studie optimalizační mode
 
 ### #1 Maximální rozvoj větrné energetiky (a dalších obnovitelných zdrojů)
 
-<div class="grid-figures studie-2050-kroky" markdown="1">
+<div class="grid-figures  grid-figures-fig-and-text" style="--figure-width: 3em; --figure-width-desktop: 4em;" markdown="1">
 {% include figure.html
     name="ikonka-vitr.svg"
     alt="Piktogram větrné elektrárny jako symbol větrné energetiky"
@@ -78,7 +78,7 @@ Důležitou roli bude hrát i **solární energetika** – v dalších letech by
 
 ### #2 Snaha o co největší energetické úspory
 
-<div class="grid-figures studie-2050-kroky" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 3em; --figure-width-desktop: 4em;" markdown="1">
 {% include figure.html
     name="ikonka-uspory-energie.svg"
     alt="Piktogram elektroměru jako symbol pro úspory energie"
@@ -90,7 +90,7 @@ Důležitou roli bude hrát i **solární energetika** – v dalších letech by
 
 ### #3 Posilovat propojení přenosových soustav napříč Evropou
 
-<div class="grid-figures studie-2050-kroky" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 3em; --figure-width-desktop: 4em;" markdown="1">
 {% include figure.html
     name="ikonka-propojena-evropa.svg"
     alt="Zjednodušená mapa Evropy jako symbol propojení evropských států"
@@ -106,7 +106,7 @@ To platí i pro Česko, a proto bude v dalších dekádách rozhodující, zda s
 
 ### #4 Rozvoj jaderné energetiky pravděpodobně náklady na výrobu elektřiny příliš nesníží
 
-<div class="grid-figures studie-2050-kroky" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 3em; --figure-width-desktop: 4em;" markdown="1">
 {% include figure.html
     name="ikonka-jadro.svg"
     class="leadin-figure-smallest"

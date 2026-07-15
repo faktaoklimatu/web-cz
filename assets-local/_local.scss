@@ -31,14 +31,6 @@ $c-callout-text: #373633;
     }
 }
 
-.principy-prace {
-    grid-template-columns: 6rem 1fr;
-
-    >img {
-        align-self: center;
-    }
-}
-
 .member-small {
     display: grid;
     grid-template-columns: 90px auto;
@@ -119,6 +111,14 @@ $c-callout-text: #373633;
     }
 }
 
+.grid-figures-fig-and-text {
+    grid-template-columns: var(--figure-width) 1fr;
+
+    img {
+        width: 100%;
+    }
+}
+
 .klimazavazky-grafy {
     row-gap: 0;
 
@@ -131,10 +131,6 @@ $c-callout-text: #373633;
         max-width: 21rem;
         margin: 0 auto;
     }
-}
-
-.studie-2050-kroky {
-    grid-template-columns: 3em 1fr;
 }
 
 .uhelna-studie-otazky {
@@ -261,10 +257,6 @@ $c-callout-text: #373633;
     font-size: 1rem;
     padding-left: calc((1.25rem * 1.3) * 1.2 - 0.3rem);
     margin-bottom: 1rem;
-}
-
-.lesni-certifikace-opatreni {
-    grid-template-columns: 80px 1fr;
 }
 
 .certifikace-loga>picture {
@@ -544,10 +536,6 @@ $c-callout-text: #373633;
 }
 
 @media (min-width: 768px) {
-    .lesni-certifikace-opatreni {
-        grid-template-columns: 120px 1fr;
-    }
-
     .callout-box {
         padding: 1.5rem 2rem;
     }
@@ -559,6 +547,10 @@ $c-callout-text: #373633;
             align-self: center;
             margin-bottom: 0;
         }
+    }
+
+    .grid-figures-fig-and-text {
+        grid-template-columns: var(--figure-width-desktop) 1fr;
     }
 
     .technologie-dekarbonizace-prumyslu {
@@ -596,10 +588,6 @@ $c-callout-text: #373633;
         .checklist li[title] {
             text-decoration: none;
         }
-    }
-
-    .studie-2050-kroky {
-        grid-template-columns: 4em 1fr;
     }
 
     .uhelna-studie-otazky .card {
@@ -797,8 +785,4 @@ ol.circled-list {
     max-height: 3em;
     max-width: 100%;
     margin-block: 1.5rem;
-}
-
-.six-objectives {
-    grid-template-columns: 4rem 1fr;
 }

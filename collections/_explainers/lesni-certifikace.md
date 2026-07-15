@@ -147,7 +147,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Pěstební postupy
 
-<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 80px; --figure-width-desktop: 120px;" markdown="1">
 
 {% include figure.html name="postup-pestrost.svg" alt="Piktogram druhové pestrosti dřevin" no-lightbox=true %}
 **Druhová pestrost dřevin** – velký důraz na původní dřevinnou skladbu a dřeviny vhodné s ohledem na dané stanoviště a měnící se klima
@@ -168,7 +168,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Těžební postupy
 
-<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 80px; --figure-width-desktop: 120px;" markdown="1">
 
 {% include figure.html name="postup-citliva-tezba.svg" alt="Piktogram citlivé těžby" no-lightbox=true %}
 **Citlivá těžba místo holosečí** – upřednostňován nepasečný způsob, u holosečí jasně limitována velikost seče a podíl holosečí na celkové obnovované ploše
@@ -191,7 +191,7 @@ Introdukované druhy, provenience nebo variety jsou používány jako zdůvodně
 
 ### Regulace stavů zvěře
 
-<div class="grid-figures lesni-certifikace-opatreni" markdown="1">
+<div class="grid-figures grid-figures-fig-and-text" style="--figure-width: 80px; --figure-width-desktop: 120px;" markdown="1">
 
 {% include figure.html
     name="postup-regulace-zvere.svg"
