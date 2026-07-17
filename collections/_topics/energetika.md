@@ -186,6 +186,7 @@ subtopics:
   - 2024-vyroba-elektriny-v-cesku-bez-uhli
   - 2026-odchod-teplaren-od-uhli
   - 2023-rozvoj-obnovitelne-energie-v-cesku-do-2030
+  - 2026-six-objectives-for-a-successful-capacity-market
   - 2020-scenar-bloombergnef
   - 2020-scenar-mckinsey
   - 2020-scenar-ember
