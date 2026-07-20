@@ -22,6 +22,27 @@ extra-scripts:
   window.COSTS_AND_BENEFITS = {{ site.data["costs-and-benefits"] | jsonify }};
 </script>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=manage_search" />
+
+<style>
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+
 <style>
 /* ── Controls bar ──────────────────────────────────────────────────────────── */
 /* Sticky behaviour, z-index, shadow and background are handled by the site's
@@ -57,11 +78,12 @@ extra-scripts:
 }
 
 .control-label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: #666;
+  font-family: 'Inter';
 }
 
 .control-value {
@@ -139,26 +161,111 @@ extra-scripts:
 /* ── Clickable detail rows ─────────────────────────────────────────────── */
 .d-row { cursor: pointer; }
 
-/* ── Row detail panel ──────────────────────────────────────────────────── */
-.row-detail {
-  background: #f7f9fa;
-  border: 1px solid #e0e6ea;
-  border-radius: 6px;
-  margin: 0 0 20px;
-  padding: 12px 16px 10px;
-  font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  font-size: 13px;
+/* ── Row detail backdrop ─────────────────────────────────────────────────── */
+#row-detail-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 6;
+  background: rgba(0,0,0,0.28);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+#row-detail-backdrop.is-open { display: block; }
+
+/* ── Row detail floating card ────────────────────────────────────────────── */
+#row-detail-bar {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(calc(100% - 30px), 1200px);
+  z-index: 900;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #dce3e8;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+#row-detail-bar.is-open { display: block; }
+.row-detail-inner {
+  padding: 30px 24px 24px;
+  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  row-gap: 22px;
+  align-items: start;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
-.row-detail-header {
+/* Citlivostní analýza — numeric list */
+.rd-sens { width: 100%; max-width: 460px; }
+.rd-sens-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 20px;
+  padding: 8px 0; border-bottom: 1px solid #eef1f4;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+.rd-sens-row:last-child { border-bottom: none; }
+.rd-sens-param { font-size: 13px; color: #515b66; }
+.rd-sens-range { font-size: 13px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* Footer spans the full grid width */
+.rd-footer {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ea7b3;
+  font-family: 'Source Sans Pro', sans-serif;   /* site body font — distinct from the Inter UI */
+}
+
+/* ── 12-column grid placement ───────────────────────────────────────────── */
+.rd-header      { grid-column: 1 / -1; }
+.rd-col-npv     { grid-column: 1 / 9;  min-width: 0; }
+.rd-stat--emise { grid-column: 9 / 11; }
+.rd-stat--dovoz { grid-column: 11 / 13; }
+.rd-chart--timeline { grid-column: 1 / 9;  min-width: 0; }
+.rd-chart--sens     { grid-column: 9 / 13; min-width: 0; }
+
+/* Header: title block (identity + close) */
+.rd-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-  color: #333;
+  align-items: flex-start;
+  gap: 24px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
-.row-detail-title strong { font-size: 14px; }
-.row-detail-vs { color: #999; margin-left: 4px; font-size: 12px; }
+.rd-identity { flex: 1 1 auto; min-width: 0; }
+.rd-context {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  color: #515b66; margin-bottom: 3px;
+}
+.rd-title { font-size: 18px; color: #515b66; line-height: 1.25; }
+.rd-title-name { font-weight: 700; }
+.rd-vs { color: #9ea7b3; font-weight: 400; }
+.rd-meta { font-size: 12px; color: #9ea7b3; margin-top: 7px; line-height: 1.5; }
+
+.rd-lbl {
+  font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+  color: #9ea7b3; line-height: 1.2; margin-bottom: 10px; max-width: 130px;
+}
+.rd-col-npv .rd-lbl { max-width: none; }
+.rd-stat-val {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  gap: 2px;
+  min-height: 50px;                 /* matches the NPV scale height → aligns on its centerline */
+  font-size: 16px; font-weight: 700; color: #515b66;
+}
+.rd-stat-val svg { flex: 0 0 auto; }
+.rd-stat-note { font-size: 11px; font-weight: 400; }
+
+/* NPV two-pole scale */
+.rd-scale { display: flex; align-items: center; gap: 14px; }
+.rd-pole { font-size: 13px; color: #515b66; flex: 0 1 auto; max-width: 160px; line-height: 1.25; }
+.rd-pole-left { text-align: right; }
+.rd-pole-right { text-align: left; font-weight: 600; }
+.rd-scale-track { flex: 1 1 auto; min-width: 120px; }
 
 .row-detail-close {
   background: none;
@@ -172,69 +279,6 @@ extra-scripts:
 }
 .row-detail-close:hover { color: #555; }
 
-/* Stats grid — 4 columns: row-label + 3 data cols */
-.stats-grid {
-  display: grid;
-  grid-template-columns: 2.8rem 1fr 1fr 1fr;
-  row-gap: 6px;
-  margin-bottom: 12px;
-  align-items: start;
-}
-
-/* Row category label (Peníze / Emise / Plyn) */
-.stats-row-lbl {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: #ccc;
-  align-self: center;
-  padding-right: 4px;
-}
-
-/* Column header cells (top of col 2 and col 3) */
-.stats-col-hdr-cell {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #bbb;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-/* Individual stat cell */
-.row-detail-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-.stat-lbl {
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #aaa;
-}
-.stat-val {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #333;
-}
-.stat-sub {
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: #bbb;
-  margin-top: 1px;
-}
-
-/* Dashed left dividers on the NPV and CAPEX columns */
-.stats-cell-npv,
-.stats-cell-capex {
-  border-left: 1px dashed #e0e0e0;
-  padding-left: 10px;
-}
-
 .row-detail-section-label {
   font-size: 0.68rem;
   font-weight: 600;
@@ -242,8 +286,18 @@ extra-scripts:
   letter-spacing: 0.04em;
   color: #999;
   margin-bottom: 4px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 .row-detail-tornado svg { display: block; }
+
+/* ── Measure takeaway ────────────────────────────────────────────────────── */
+.measure-takeaway {
+  font-size: 0.95rem;
+  color: #515b66;
+  line-height: 1.6;
+  margin: -0.25rem 0 1rem;
+  max-width: 72ch;
+}
 .row-detail-timeline { overflow-x: auto; }
 .row-detail-timeline svg { display: block; }
 </style>
@@ -263,26 +317,63 @@ extra-scripts:
   <div class="container page-title">{{ page.title }}</div>
   <div class="container controls-inner">
 
+    <div class="control-group control-group--select">
+      <label class="control-label" for="fuel-scenario-select">Scénář energií</label>
+      <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
+        <option value="CP">Současné politiky</option>
+        <option value="CP_EC">Energetická krize</option>
+        <option value="NZ">Net-zero</option>
+      </select>
+    </div>
+
     <div class="control-group">
       <div class="control-head">
-        <span class="control-label">Cena uhlíku</span>
-        <span class="control-value" id="carbon-price-value">60&thinsp;€</span>
+        <span class="control-label">Nejistota cen energií</span>
+        <span class="control-value" id="price-uncertainty-value">0&thinsp;%</span>
       </div>
       <div class="slider-with-ticks">
-        <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="60">
+        <input type="range" id="price-uncertainty-slider" min="-10" max="10" step="10" value="0">
+        <div class="tick-labels">
+          <span class="tick-label" style="left:8px">
+            <span class="tick-mark"></span>
+            <span class="tick-text">−10 %<small>levnější</small></span>
+          </span>
+          <span class="tick-label" style="left:50%">
+            <span class="tick-mark"></span>
+            <span class="tick-text">0 %<small>základ</small></span>
+          </span>
+          <span class="tick-label" style="left:calc(100% - 8px)">
+            <span class="tick-mark"></span>
+            <span class="tick-text">+10 %<small>dražší</small></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="control-head">
+        <span class="control-label">Cena uhlíku (ETS&nbsp;2)</span>
+        <span class="control-value" id="carbon-price-value">70&thinsp;€</span>
+      </div>
+      <div class="slider-with-ticks">
+        <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="70">
         <div class="tick-labels">
           <!-- left = calc(val/200 * (100% - 16px) + 8px) -->
           <span class="tick-label" style="left:8px">
             <span class="tick-mark"></span>
             <span class="tick-text">0 €<small>bez ceny uhlíku</small></span>
           </span>
-          <span class="tick-label" style="left:calc(30% + 3.2px)">
+          <span class="tick-label" style="left:calc(20% + 4.8px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">60 €<small>ETS2 nižší</small></span>
+            <span class="tick-text">40 €<small>ETS2 nižší</small></span>
+          </span>
+          <span class="tick-label" style="left:calc(35% + 2.4px)">
+            <span class="tick-mark"></span>
+            <span class="tick-text">70 €<small>ETS2 vyšší</small></span>
           </span>
           <span class="tick-label" style="left:50%">
             <span class="tick-mark"></span>
-            <span class="tick-text">100 €<small>ETS2 vyšší</small></span>
+            <span class="tick-text">100 €</span>
           </span>
           <span class="tick-label" style="left:calc(100% - 8px)">
             <span class="tick-mark"></span>
@@ -292,41 +383,21 @@ extra-scripts:
       </div>
     </div>
 
-    <div class="control-group">
-      <div class="control-head">
-        <span class="control-label">Diskontní míra</span>
-        <span class="control-value" id="discount-rate-value">3&thinsp;%</span>
-      </div>
-      <div class="slider-with-ticks">
-        <input type="range" id="discount-rate-slider" min="0" max="7" step="1" value="3">
-        <div class="tick-labels">
-          <!-- left = calc(val/7 * (100% - 16px) + 8px) -->
-          <span class="tick-label" style="left:8px">
-            <span class="tick-mark"></span>
-            <span class="tick-text">0 %<small>běžný účet</small></span>
-          </span>
-          <span class="tick-label" style="left:calc(42.857% + 1.14px)">
-            <span class="tick-mark"></span>
-            <span class="tick-text">3 %<small>spořicí účet</small></span>
-          </span>
-          <span class="tick-label" style="left:calc(100% - 8px)">
-            <span class="tick-mark"></span>
-            <span class="tick-text">7 %<small>akcie</small></span>
-          </span>
-        </div>
-      </div>
-    </div>
-
     <div class="control-group control-group--select">
-      <label class="control-label" for="fuel-scenario-select">Scénář cen energií</label>
-      <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
-        <option value="CP">Současné politiky</option>
-        <option value="NZ">Net-zero</option>
-        <option value="CP_EC">Energetická krize</option>
+      <label class="control-label" for="capex-level-select">Výše investičních nákladů</label>
+      <select id="capex-level-select" class="form-select form-select-sm mt-1">
+        <option value="1">Pesimistická</option>
+        <option value="0" selected>Střední</option>
+        <option value="-1">Optimistická</option>
       </select>
     </div>
 
   </div>
+</div>
+
+<div id="row-detail-backdrop"></div>
+<div id="row-detail-bar">
+  <div class="container row-detail-inner"></div>
 </div>
 
 <div class="section pt-3 pb-2">
@@ -351,6 +422,17 @@ extra-scripts:
 
 {% for name in building_measure_names %}
 ## {{ name }}
+{% if name == "Renovace se zateplením" %}
+<p class="measure-takeaway">Ekonomicky se vyplatí zejména u energeticky náročných domů (třída E, F) – úspora provozu vyváží nákladnou renovaci. U domů s vyšším standardem (třída D a výše) se zateplení čistě ekonomicky spíše nevyplatí.</p>
+{% elsif name == "Tepelné čerpadlo" %}
+<p class="measure-takeaway">Ekonomická výhodnost závisí na ceně uhlíku – bez jeho zpoplatnění se tepelné čerpadlo mírně nevyplatí, ale při ceně 70&thinsp;€/t CO₂ se vyplatí napříč všemi typy budov.</p>
+{% elsif name == "Kotel na dřevo" %}
+<p class="measure-takeaway">Oproti plynovému kotli se kotel na dřevo ekonomicky vyplatí i bez zpoplatnění uhlíku, oproti uhelný kotli při ceně alespoň 40&thinsp;€/t CO₂. Snížení emisí CO₂ je ale sporné – novější vědecké práce zpochybňují uhlíkovou neutralitu spalování dřeva.</p>
+{% elsif name == "Elektrický kotel" %}
+<p class="measure-takeaway">Elektrický kotel se ekonomicky výrazně nevyplatí v energeticky náročnějších budovách, a nevyplatí se ani emisně – český elektroenergetický mix má vyšší emisní intenzitu než samotný zemní plyn.</p>
+{% elsif name == "Střešní fotovoltaika + baterie" %}
+<p class="measure-takeaway">Ekonomická výhodnost roste s vyšší spotřebou elektřiny v domě. Při nízké nebo střední spotřebě (4–7&thinsp;MWh ročně) se investice bez dotací nemusí vrátit – fotovoltaika se nejvíce vyplatí v domácnostech, které elektřinu hojně využívají (tepelné čerpadlo, elektromobil).</p>
+{% endif %}
 <div class="measure-chart" data-section="buildings" data-measure="{{ name | escape }}"></div>
 {% endfor %}
 
@@ -361,9 +443,13 @@ Cena elektřiny pro elektromobily odpovídá scénáři „Nabíjím převážn�
 
 ## Nové
 
+<p class="measure-takeaway">Nové elektromobily jsou v Česku v celkových nákladech za 15 let životnosti již výhodné ve srovnání s novými auty se spalovacím motorem – navzdory vyšší pořizovací ceně. Ekonomická výhodnost ale zásadně závisí na způsobu nabíjení: při převážně domácím nabíjení se elektromobil vyplatí, při nabíjení venku nikoli.</p>
+
 <div class="measure-chart" data-section="transport" data-group="Nové"></div>
 
 ## Ojeté
+
+<p class="measure-takeaway">Ojeté elektromobily jsou při převážně domácím nabíjení v celkových nákladech za 10 let výhodné oproti srovnatelným ojetinám se spalovacím motorem. Výsledek závisí na konkrétním modelu a ceně ojetiny.</p>
 
 <div class="measure-chart" data-section="transport" data-group="Ojeté"></div>
 

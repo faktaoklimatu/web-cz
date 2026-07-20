@@ -5,13 +5,44 @@
   if (!data) return;
 
   // ── State ────────────────────────────────────────────────────────────────
-  // discountRate stored as integer percentage points (0–7); divided by 100 on use.
+  // discountRate is fixed (control removed); stored as integer % points, /100 on use.
+  // priceUncertainty: −10 / 0 / +10 (%)  → globalPriceFactor (scales all fuel prices).
+  // capexLevel: −1 optimistic / 0 mid / +1 pessimistic → capexMeasMult using each
+  //   measure's own capex_sensitivity (so the toggle matches the tornado analysis).
   const state = {
     carbonPrice:           70,
     discountRate:           3,
     fuelScenario:          'CP',
+    priceUncertainty:       0,
+    capexLevel:             0,
     electricityPriceFactor: CostsBenefits.getDefaultElectricityPriceFactor(data),
   };
+
+  const DEFAULT_CAPEX_SENSITIVITY = 0.1;  // fallback when a measure omits capex_sensitivity
+
+  // NPV at default slider values — used as the permanent sort key so row order
+  // never changes when the user moves the controls.
+  const defaultNpvMap = new Map();
+
+  function findMeasure(id) {
+    return [...(data.buildings_measures || []), ...(data.transport_measures || [])]
+      .find(m => m.id === id);
+  }
+
+  // Shared calculate() options for the current control state, per measure.
+  function calcOpts(measure) {
+    const capexSens = measure.capex_sensitivity != null ? measure.capex_sensitivity : DEFAULT_CAPEX_SENSITIVITY;
+    return {
+      measureId:              measure.id,
+      data,
+      discountRate:           state.discountRate / 100,
+      carbonPriceEur:         state.carbonPrice,
+      priceScenario:          state.fuelScenario,
+      electricityPriceFactor: state.electricityPriceFactor,
+      globalPriceFactor:      1 + state.priceUncertainty / 100,
+      capexMeasMult:          1 + state.capexLevel * capexSens,
+    };
+  }
 
   // ── Tooltip ──────────────────────────────────────────────────────────────
   // A single floating div reused by all charts. Appears immediately on hover
@@ -68,25 +99,31 @@
     ].filter(m => m.measure_baseline_id || m.measure_baseline);
 
     const vals = [];
-    const carbonPrices  = [0, 40, 70, 200];
-    const discountRates = [0, 0.03, 0.07];
-    const scenarios     = ['CP', 'NZ', 'CP_EC'];
+    const carbonPrices    = [0, 200];
+    const scenarios       = ['CP', 'NZ', 'CP_EC'];
+    const priceFactors    = [0.9, 1.1];   // ± energy-price uncertainty extremes
+    const capexLevels     = [-1, 1];       // optimistic / pessimistic CAPEX extremes
 
     for (const m of allMeasures) {
+      const capexSens = m.capex_sensitivity != null ? m.capex_sensitivity : DEFAULT_CAPEX_SENSITIVITY;
       for (const cp of carbonPrices) {
-        for (const dr of discountRates) {
-          for (const sc of scenarios) {
-            try {
-              const result = CostsBenefits.calculate({
-                measureId:             m.id,
-                data,
-                discountRate:          dr,
-                carbonPriceEur:        cp,
-                priceScenario:         sc,
-                electricityPriceFactor: state.electricityPriceFactor,
-              });
-              vals.push(result.npv);
-            } catch (_) { /* skip */ }
+        for (const sc of scenarios) {
+          for (const gf of priceFactors) {
+            for (const cl of capexLevels) {
+              try {
+                const result = CostsBenefits.calculate({
+                  measureId:             m.id,
+                  data,
+                  discountRate:          state.discountRate / 100,
+                  carbonPriceEur:        cp,
+                  priceScenario:         sc,
+                  electricityPriceFactor: state.electricityPriceFactor,
+                  globalPriceFactor:     gf,
+                  capexMeasMult:         1 + cl * capexSens,
+                });
+                vals.push(result.npv);
+              } catch (_) { /* skip */ }
+            }
           }
         }
       }
@@ -104,14 +141,7 @@
   // Returns { npv: { value, low, high }, co2Saved, sensitivity } or null.
   function computeRow(measure) {
     try {
-      const result = CostsBenefits.calculate({
-        measureId:             measure.id,
-        data,
-        discountRate:          state.discountRate / 100,
-        carbonPriceEur:        state.carbonPrice,
-        priceScenario:         state.fuelScenario,
-        electricityPriceFactor: state.electricityPriceFactor,
-      });
+      const result = CostsBenefits.calculate(calcOpts(measure));
       const sens  = result.sensitivity || [];
       const low   = sens.length ? Math.min(...sens.map(s => s.minNpv)) : result.npv;
       const high  = sens.length ? Math.max(...sens.map(s => s.maxNpv)) : result.npv;
@@ -129,6 +159,40 @@
       console.warn('CostsBenefits.calculate error for measure id', measure.id, ':', e.message);
       return null;
     }
+  }
+
+  // Worst-/best-case NPV band — the FULL uncertainty envelope, so it stays stationary
+  // and every navbar control just repositions the dot within it. Spans all four
+  // navbar inputs at their extremes: energy scenario (CP/CP_EC/NZ), carbon price
+  // (0–200 €), ±10 % overall energy-price uncertainty, and CAPEX — plus the per-fuel
+  // price thresholds. Within one (scenario, carbon) base the per-dimension deviations
+  // are summed (NPV is ~linear in each price/CAPEX term, so the joint extreme ≈ sum of
+  // one-at-a-time extremes); the outer min/max spans scenarios × carbon extremes.
+  // ponytail: the global ±10 % factor and the per-fuel thresholds both move energy
+  // prices, so they stack — deliberately widening the band per the chosen inputs.
+  function computeBand(measure) {
+    const base  = calcOpts(measure);
+    const npvOf = o => { try { return CostsBenefits.calculate(o).npv; } catch (_) { return null; } };
+    let lo = Infinity, hi = -Infinity;
+    for (const sc of ['CP', 'CP_EC', 'NZ']) {
+      for (const cp of [0, 200]) {   // carbon-price slider extremes
+        const neutral = { ...base, priceScenario: sc, carbonPriceEur: cp, globalPriceFactor: 1.0, capexMeasMult: 1.0 };
+        let r;
+        try { r = CostsBenefits.calculate(neutral); } catch (_) { continue; }
+        const b = r.npv;
+        let dLo = 0, dHi = 0;
+        // CAPEX (measure + baseline) and per-fuel price swings — already computed
+        // one-at-a-time by the calculator's sensitivity analysis.
+        (r.sensitivity || []).forEach(s => { dLo += s.minNpv - b; dHi += s.maxNpv - b; });
+        // ±10 % overall energy-price uncertainty
+        const gLo = npvOf({ ...neutral, globalPriceFactor: 0.9 });
+        const gHi = npvOf({ ...neutral, globalPriceFactor: 1.1 });
+        if (gLo != null && gHi != null) { dLo += Math.min(gLo, gHi) - b; dHi += Math.max(gLo, gHi) - b; }
+        lo = Math.min(lo, b + dLo);
+        hi = Math.max(hi, b + dHi);
+      }
+    }
+    return isFinite(lo) && isFinite(hi) ? { lo, hi } : null;
   }
 
   // ── Formatting ───────────────────────────────────────────────────────────
@@ -210,14 +274,22 @@
       state.carbonPrice = v;
       return v + '\u202f€';
     });
-    setupSlider('discount-rate-slider', 'discount-rate-value', v => {
-      state.discountRate = v;
-      return v + '\u202f%';
+    setupSlider('price-uncertainty-slider', 'price-uncertainty-value', v => {
+      state.priceUncertainty = v;
+      const sign = v > 0 ? '+' : v < 0 ? '\u2212' : '';
+      return sign + Math.abs(v) + '\u202f%';
     });
     const fsSelect = document.getElementById('fuel-scenario-select');
     if (fsSelect) {
       fsSelect.addEventListener('change', () => {
         state.fuelScenario = fsSelect.value;
+        renderAll();
+      });
+    }
+    const capexSelect = document.getElementById('capex-level-select');
+    if (capexSelect) {
+      capexSelect.addEventListener('change', () => {
+        state.capexLevel = +capexSelect.value;
         renderAll();
       });
     }
@@ -242,6 +314,22 @@
     const isBuildings = section === 'buildings';
     const allMeasures = isBuildings ? data.buildings_measures : data.transport_measures;
     const catField    = isBuildings ? 'building_category' : 'transport_category';
+
+    // Transport: collapse every electric-vs-fossil comparison onto a single row.
+    if (!isBuildings) {
+      const dots = allMeasures
+        .filter(m => m.measure_baseline_id || m.measure_baseline)
+        .map(m => {
+          const calc = computeRow(m);
+          if (!calc) return null;
+          const detail = m.measure_baseline ? m.measure_name + ' vs. ' + m.measure_baseline : m.measure_name;
+          return { label: detail, npv: calc.npv };
+        })
+        .filter(Boolean);
+      return dots.length
+        ? [{ name: 'Elektromobil', baseline: 'automobil na fosilní paliva', dots }]
+        : [];
+    }
 
     const measureNames = [];
     for (const m of allMeasures) {
@@ -276,7 +364,7 @@
   };
 
   // ── Summary chart ─────────────────────────────────────────────────────────
-  const SUMMARY_ROW_H   = 44;
+  const SUMMARY_ROW_H   = 72;   // match the measure-chart ROW_H
   const SUMMARY_LABEL_W = 260;
   const SUMMARY_MARGIN  = { top: 48, right: 16, bottom: 36 };
   const SECTION_HDR_H   = 22;
@@ -319,8 +407,8 @@
       svg.append('text').attr('class', 'chart-col-header lbl-hdr').attr('x', 4).attr('y', 16)
         .text('Opatření');
       svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
-      svg.append('line').attr('class', 'zero-line')
-        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+      svg.append('line').attr('class', 'top-divider')
+        .attr('stroke', '#e6e9ed').attr('stroke-width', 1);
       svg.append('text').attr('class', 'half-lbl half-lbl-l')
         .attr('font-size', '11px').attr('font-style', 'italic').attr('fill', '#bbb').attr('text-anchor', 'middle');
       svg.append('text').attr('class', 'half-lbl half-lbl-r')
@@ -333,11 +421,11 @@
     svg.attr('width', totalW).attr('height', totalH);
 
     // Update static elements that depend on width/height
+    svg.select('.top-divider')
+      .attr('x1', 0).attr('x2', totalW)
+      .attr('y1', SUMMARY_MARGIN.top - 8).attr('y2', SUMMARY_MARGIN.top - 8);
     svg.select('.npv-hdr').attr('x', SUMMARY_LABEL_W + chartW / 2)
       .text('Rozdíl NPV oproti základní variantě (Kč)');
-    svg.select('.zero-line')
-      .attr('x1', SUMMARY_LABEL_W + z).attr('x2', SUMMARY_LABEL_W + z)
-      .attr('y1', SUMMARY_MARGIN.top - 4).attr('y2', totalH - SUMMARY_MARGIN.bottom);
     svg.select('.half-lbl-l').attr('x', SUMMARY_LABEL_W + z / 2).attr('y', 34)
       .text('Fosilní opatření je výhodnější');
     svg.select('.half-lbl-r').attr('x', SUMMARY_LABEL_W + z + (chartW - z) / 2).attr('y', 34)
@@ -379,8 +467,12 @@
       .attr('transform', d => `translate(0,${d.targetY})`)
       .attr('opacity', 0);
 
-    rowEnter.append('text').attr('class', 'r-name').attr('x', 8).attr('font-size', '13px').attr('fill', '#444');
-    rowEnter.append('text').attr('class', 'r-base').attr('x', 8).attr('font-size', '11px').attr('fill', '#aaa');
+    rowEnter.append('line').attr('class', 'r-divider').attr('stroke', '#eaedf0').attr('stroke-width', 1);
+    rowEnter.append('line').attr('class', 'r-zero').attr('stroke', CLR_SUB).attr('stroke-width', 1);
+    rowEnter.append('text').attr('class', 'r-name').attr('x', 4)
+      .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '700').attr('fill', CLR_TEXT);
+    rowEnter.append('text').attr('class', 'r-base').attr('x', 4)
+      .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '500').attr('fill', CLR_TEXT);
     rowEnter.append('g').attr('class', 'r-dots');
 
     // MERGE — transition y-position; update content
@@ -394,16 +486,24 @@
       const g   = d3.select(this);
       const mid = SUMMARY_ROW_H / 2;
 
-      g.select('.r-name').attr('y', row.baseline ? mid - 1 : mid + 4).text(row.name);
-      g.select('.r-base').attr('y', mid + 13).text(row.baseline ? 'vs. ' + row.baseline : '');
+      // Per-row divider (top edge) + solid zero tick — matching the measure charts
+      const ZG = 8;
+      g.select('.r-divider').attr('x1', 0).attr('x2', totalW).attr('y1', 0).attr('y2', 0);
+      g.select('.r-zero')
+        .attr('x1', SUMMARY_LABEL_W + z).attr('x2', SUMMARY_LABEL_W + z)
+        .attr('y1', ZG).attr('y2', SUMMARY_ROW_H - ZG);
+
+      g.select('.r-name').attr('y', row.baseline ? mid - 2 : mid + 5).text(row.name);
+      g.select('.r-base').attr('y', mid + 15).text(row.baseline ? 'vs. ' + row.baseline : '');
 
       const dotsG = g.select('.r-dots');
       dotsG.selectAll('*').remove();
       for (const dot of row.dots) {
         const tipText = dot.label ? fmtCZK(dot.npv.value) + '\n' + dot.label : fmtCZK(dot.npv.value);
+        const fuelHint = (dot.label || '') + ' ' + (row.baseline || '');
         dotsG.append('circle')
           .attr('cx', SUMMARY_LABEL_W + xScale(dot.npv.value)).attr('cy', mid)
-          .attr('r', 6).attr('fill', dot.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY)
+          .attr('r', 6).attr('fill', npvFill(dot.npv.value, fuelHint))
           .attr('stroke', 'white').attr('stroke-width', 1.5).attr('opacity', 0.85)
           .on('mouseover', e  => showTip(e, tipText))
           .on('mousemove', moveTip)
@@ -420,11 +520,301 @@
   }
 
   // ── Detailed measure chart ────────────────────────────────────────────────
-  const ROW_H  = 54;
-  const LABEL_W = 200;
-  const CO2_W   = 150;
-  const FUEL_W  = 120;
-  const MARGIN  = { top: 28, right: 16, bottom: 36 };
+  // Visual style ported from the explainer beeswarm (costs-benefits-beeswarm.js):
+  // Inter typography, slate/grey palette, energy-class badges, block/circle
+  // pictographs for CO₂ & fossil-import, diverging NPV dot colour.
+  const ROW_H   = 72;
+  const LABEL_W = 210;
+  const CO2_W   = 120;
+  const FUEL_W  = 160;
+  const ICON_W  = 30;   // trailing "more info" affordance column
+  const MARGIN  = { top: 46, right: 12, bottom: 34 };
+
+  const SQ         = 9;    // pictograph square/circle size (px)
+  const SQ_PER_ROW = 5;    // wrap to a new row after 5
+  const CO2_PER_SQ = 20;   // 1 square = 20 t CO₂
+  const MWH_PER_SQ = 50;   // 1 circle = 50 MWh
+
+  // ── Beeswarm palette ───────────────────────────────────────────────────────
+  const CB_FONT      = 'Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+  const CLR_TEXT     = '#515b66';  // primary labels, measure name, NPV label
+  const CLR_SUB      = '#9ea7b3';  // stat pictographs, zero line, secondary
+  const CLR_POS      = '#006063';  // favorable (NPV > 0) end of diverging scale
+  const CLR_NEG_COAL = '#903156';
+  const CLR_NEG_GAS  = '#c0392b';
+  const CLR_NEG_DEF  = '#8c3f5f';
+
+  // NPV → fill: negative end shifts by fuel of the context; grey at 0; teal positive.
+  function npvFill(npv, fuelHint) {
+    const neg = /uhlí|uhelný/i.test(fuelHint) ? CLR_NEG_COAL
+              : /plyn/i.test(fuelHint)          ? CLR_NEG_GAS
+              :                                   CLR_NEG_DEF;
+    const dom = globalXDomain || [-500000, 500000];
+    return d3.scaleLinear().domain([dom[0], 0, dom[1]])
+      .range([neg, '#e0e0e0', CLR_POS]).clamp(true)(npv);
+  }
+
+  // Split a context label like "Rodinný dům uhlí – E" into { prefix, badge:'E' }.
+  // Labels without a trailing " – <A–F>" (transport, apartments, measure names)
+  // return the whole string as prefix and no badge.
+  function splitLabel(label) {
+    const m = /^(.*?)\s*–\s*([A-F])\s*$/.exec(label || '');
+    return m ? { prefix: m[1], badge: m[2] } : { prefix: label || '', badge: null };
+  }
+
+  // Arrow-shaped energy-class badge as an inline HTML span (wraps naturally in the
+  // foreignObject label). ponytail: HTML clip-path instead of an SVG polygon so the
+  // whole label stays in one wrapping <div>.
+  function badgeHtml(letter, marginLeft = 5) {
+    if (!letter) return '';
+    return `<span style="display:inline-block;background:${CLR_TEXT};color:#fff;` +
+           `font-size:8px;font-weight:700;line-height:1.3;padding:1px 8px 1px 5px;margin-left:${marginLeft}px;` +
+           `clip-path:polygon(0 0,72% 0,100% 50%,72% 100%,0 100%);">${letter}</span>`;
+  }
+
+  // Grid of grey squares growing upward from bottomY, centred on cx.
+  function drawBlockGrid(svg, cx, bottomY, n, perRow, sq, fill) {
+    if (n <= 0) return;
+    n = Math.min(n, perRow * 2);
+    const startX = cx - (perRow * sq) / 2;
+    for (let i = 0; i < n; i++) {
+      svg.append('rect')
+        .attr('x', startX + (i % perRow) * sq)
+        .attr('y', bottomY - (Math.floor(i / perRow) + 1) * sq)
+        .attr('width', sq).attr('height', sq)
+        .attr('fill', fill || CLR_SUB).attr('stroke', 'white').attr('stroke-width', 0.5);
+    }
+  }
+
+  // Grid of circles growing upward from bottomY, centred on cx.
+  function drawCircleGrid(svg, cx, bottomY, n, perRow, sq, fill) {
+    if (n <= 0) return;
+    n = Math.min(n, perRow * 2);
+    const rr = sq / 2, startX = cx - (perRow * sq) / 2;
+    for (let i = 0; i < n; i++) {
+      svg.append('circle')
+        .attr('cx', startX + (i % perRow) * sq + rr)
+        .attr('cy', bottomY - (Math.floor(i / perRow) + 1) * sq + rr)
+        .attr('r', rr - 0.8).attr('fill', fill || CLR_SUB);
+    }
+  }
+
+  // Build styled row objects from a list of measure entries.
+  // labelField = 'building_category' | 'transport_category' | 'measure_name'.
+  function buildRows(entries, labelField) {
+    return entries
+      .map(m => {
+        const calc = computeRow(m);
+        if (!calc) return null;
+        if (!defaultNpvMap.has(m.id)) defaultNpvMap.set(m.id, calc.npv.value);
+        const band = computeBand(m);
+        const npv  = band
+          ? { value: calc.npv.value,
+              low:  Math.min(band.lo, calc.npv.value),
+              high: Math.max(band.hi, calc.npv.value) }
+          : calc.npv;
+        return {
+          label:               m[labelField],
+          measureName:         m.measure_name || null,
+          baselineName:        m.measure_baseline || null,
+          measureId:           m.id,
+          npv,
+          co2Saved:            calc.co2Saved,
+          capexDiff:           calc.capexDiff,
+          sector:              calc.sector,
+          gasSavings:          calc.gasSavings,
+          fuelSavings:         calc.fuelSavings,
+          fossilImportSavings: calc.fossilImportSavings,
+          sensitivity:         calc.sensitivity,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => (defaultNpvMap.get(b.measureId) ?? 0) - (defaultNpvMap.get(a.measureId) ?? 0));
+  }
+
+  // ── Shared row-chart renderer (beeswarm-styled) ─────────────────────────────
+  // Clear-and-redraw (no reorder animation — rows only change on control change).
+  function renderRowChart(container, rows, colHeaderLabel) {
+    const totalW = container.clientWidth || 640;
+    const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - ICON_W - MARGIN.right, 160);
+    const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
+
+    const xScale = d3.scaleLinear().domain(globalXDomain || [-500000, 500000]).range([0, chartW]);
+    const z = xScale(0);
+
+    d3.select(container).selectAll('*').remove();
+    const svg = d3.select(container).append('svg')
+      .attr('role', 'img').attr('width', totalW).attr('height', totalH)
+      .style('font-family', CB_FONT);
+
+    // Column x anchors. Stat columns are LEFT-aligned: texts and pictographs
+    // start at *LX; GRID_HALF shifts a grid's centre so its left edge lands on *LX.
+    const co2X0  = LABEL_W + chartW;
+    const fuelX0 = co2X0 + CO2_W;
+    const iconCX = fuelX0 + FUEL_W + ICON_W / 2;
+    const co2LX  = co2X0 + 6;
+    const fuelLX = fuelX0 + 6;
+    const GRID_HALF = (SQ_PER_ROW * SQ) / 2;
+
+    // ── Column headers (uppercase, multi-line via tspan) ──────────────────────
+    const hdr = (x, lines, anchor = 'middle') => {
+      const t = svg.append('text').attr('class', 'chart-col-header')
+        .attr('x', x).attr('y', 12).attr('text-anchor', anchor)
+        .attr('font-family', CB_FONT).attr('fill', '#aaa')
+        .style('letter-spacing', '0.06em');
+      lines.forEach((ln, i) =>
+        t.append('tspan').attr('x', x).attr('dy', i === 0 ? '0' : '1.2em').text(ln));
+      return t;
+    };
+    hdr(4, [colHeaderLabel], 'start');
+    hdr(LABEL_W + chartW / 2, ['VÝHODNOST (NPV)']);
+    hdr(co2LX,  ['SNÍŽENÍ', 'EMISÍ'], 'start');
+    hdr(fuelLX, ['SNÍŽENÍ IMPORTU', 'ROPY A ZEMNÍHO PLYNU'], 'start');
+
+    // ── Rows ────────────────────────────────────────────────────────────────
+    const ZERO_GAP = 7;   // inset so the per-row zero tick never touches a divider
+    rows.forEach((row, i) => {
+      const top = MARGIN.top + i * ROW_H;
+      const mid = top + ROW_H / 2;
+      const fuelHint = (row.label || '') + ' ' + (row.baselineName || '');
+      const color = npvFill(row.npv.value, fuelHint);
+      const dotX  = LABEL_W + xScale(row.npv.value);
+
+      const g = svg.append('g').attr('class', 'd-row').style('cursor', 'pointer')
+        .on('click', () => toggleRowDetail(container, row));
+      g.append('rect')
+        .attr('x', 0).attr('y', top).attr('width', totalW).attr('height', ROW_H)
+        .attr('fill', 'transparent');
+
+      // Divider between rows (skip above the first row)
+      if (i > 0) {
+        svg.append('line')
+          .attr('x1', 0).attr('x2', totalW).attr('y1', top).attr('y2', top)
+          .attr('stroke', '#eaedf0').attr('stroke-width', 1);
+      }
+
+      // Per-row zero tick — short segment that stops short of the dividers
+      svg.append('line')
+        .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
+        .attr('y1', top + ZERO_GAP).attr('y2', top + ROW_H - ZERO_GAP)
+        .attr('stroke', CLR_SUB).attr('stroke-width', 1);
+
+      // ── Label (foreignObject → wrapping HTML) ──────────────────────────────
+      const fo  = g.append('foreignObject')
+        .attr('x', 4).attr('y', top + 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
+      const div = fo.append('xhtml:div')
+        .style('display', 'flex').style('flex-direction', 'column')
+        .style('justify-content', 'center').style('height', '100%')
+        .style('font-family', CB_FONT);
+      // Label: context prefix + badge, measure name, then "vs. baseline" — all slate #515b66.
+      const hasContext = row.measureName && row.measureName !== row.label;
+      if (hasContext) {
+        const { prefix, badge } = splitLabel(row.label);
+        div.append('xhtml:span')
+          .style('font-size', '10px').style('font-weight', '700').style('line-height', '1.2')
+          .style('color', CLR_TEXT).style('letter-spacing', '0.04em')
+          .html(badgeHtml(badge, 0) + (badge ? ' ' : '') + prefix.toUpperCase());
+        div.append('xhtml:span')
+          .style('font-size', '14px').style('font-weight', '700').style('line-height', '1.2')
+          .style('color', CLR_TEXT).style('margin-top', '2px')
+          .text(row.measureName);
+      } else {
+        const { prefix, badge } = splitLabel(row.label);
+        const mainText = badge ? prefix.toUpperCase() : row.label;
+        div.append('xhtml:span')
+          .style('font-size', '13px').style('font-weight', '600').style('line-height', '1.25')
+          .style('color', CLR_TEXT).style('letter-spacing', badge ? '0.03em' : '0')
+          .html(mainText + badgeHtml(badge));
+      }
+      if (row.baselineName) {
+        div.append('xhtml:span')
+          .style('font-size', '14px').style('font-weight', '500').style('margin-top', '1px')
+          .style('color', CLR_TEXT)
+          .text('vs. ' + row.baselineName);
+      }
+
+      // ── NPV: uncertainty band + dot + label ────────────────────────────────
+      const dominant = row.sensitivity && row.sensitivity.length
+        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
+        : null;
+      const bandTip = [
+        `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+      const dotTip = [
+        fmtCZK(row.npv.value),
+        dominant ? `Největší vliv: ${dominant.param}` : null,
+      ].filter(Boolean).join('\n');
+
+      svg.append('line')
+        .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
+        .attr('y1', mid).attr('y2', mid)
+        .attr('stroke', CLR_SUB).attr('stroke-width', 5)
+        .attr('stroke-linecap', 'round').attr('opacity', 0.3);
+      svg.append('rect')
+        .attr('x', LABEL_W + xScale(row.npv.low)).attr('y', mid - 8)
+        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1)).attr('height', 16)
+        .attr('fill', 'transparent')
+        .on('mouseover', e => showTip(e, bandTip)).on('mousemove', moveTip).on('mouseout', hideTip);
+
+      svg.append('circle')
+        .attr('cx', dotX).attr('cy', mid).attr('r', 7)
+        .attr('fill', color).attr('stroke', 'white').attr('stroke-width', 2)
+        .on('mouseover', e => showTip(e, dotTip)).on('mousemove', moveTip).on('mouseout', hideTip);
+      svg.append('text')
+        .attr('x', dotX).attr('y', mid - 12).attr('text-anchor', 'middle')
+        .attr('font-family', CB_FONT).attr('font-size', '13px').attr('font-weight', '700')
+        .attr('fill', CLR_TEXT).text(fmtCZK(row.npv.value));
+
+      // ── CO₂: square pictograph + value (left-aligned). Emission INCREASES are
+      //    red squares with the amount + a "zvyšuje emise" note underneath. ────
+      const co2Neg = row.co2Saved !== null && row.co2Saved < 0;
+      const co2Pos = row.co2Saved !== null && row.co2Saved > 0;
+      const co2Mag = row.co2Saved !== null ? Math.abs(row.co2Saved) : 0;
+      const nCo2 = (co2Pos || co2Neg)
+        ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(co2Mag / CO2_PER_SQ))) : 0;
+      if (nCo2) drawBlockGrid(svg, co2LX + GRID_HALF, mid - 4, nCo2, SQ_PER_ROW, SQ,
+        co2Neg ? CLR_NEG_GAS : COLOR_FAVORABLE);
+      svg.append('text')
+        .attr('x', co2LX).attr('y', nCo2 ? mid + 16 : mid + 4).attr('text-anchor', 'start')
+        .attr('font-family', CB_FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', co2Neg ? CLR_NEG_GAS : CLR_SUB)
+        .text(fmtCO2(co2Neg ? co2Mag : row.co2Saved));
+      if (co2Neg) {
+        svg.append('text')
+          .attr('x', co2LX).attr('y', mid + 30).attr('text-anchor', 'start')
+          .attr('font-family', CB_FONT).attr('font-size', '10px').attr('font-weight', '400')
+          .attr('fill', CLR_NEG_GAS).text('zvyšuje emise');
+      }
+
+      // ── Fossil import: scope 1 circles + value (left-aligned). The scope-2
+      //    "výroba el." breakdown lives in the detail window, not here. ────────
+      const s1 = row.fossilImportSavings ? row.fossilImportSavings.scope1TotalMwh : null;
+      const s1Pos = s1 != null && s1 > 0;
+      const nS1 = s1Pos ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(s1 / MWH_PER_SQ))) : 0;
+      if (s1Pos) drawCircleGrid(svg, fuelLX + GRID_HALF, mid - 4, nS1, SQ_PER_ROW, SQ, COLOR_FAVORABLE);
+      svg.append('text')
+        .attr('x', fuelLX).attr('y', s1Pos ? mid + 16 : mid + 4).attr('text-anchor', 'start')
+        .attr('font-family', CB_FONT).attr('font-size', '12px').attr('font-weight', '700')
+        .attr('fill', CLR_SUB).text(s1 != null ? fmtMWh(s1) : '—');
+
+      // ── "more info" affordance — the whole row is already clickable; this only
+      //    signals that a detail view exists. ────────────────────────────────
+      g.append('foreignObject')
+        .attr('x', iconCX - 12).attr('y', mid - 12).attr('width', 24).attr('height', 24)
+        .append('xhtml:span')
+        .attr('class', 'material-symbols-outlined')
+        .attr('title', 'Zobrazit detail')
+        .style('font-size', '20px').style('line-height', '24px').style('color', CLR_SUB)
+        .text('manage_search');
+    });
+
+    // ── X axis (bottom, grey) ─────────────────────────────────────────────────
+    svg.append('g').attr('class', 'chart-axis')
+      .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
+      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt))
+      .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
+  }
 
   function renderMeasureChart(container, section, measureName) {
     const isBuildings = section === 'buildings';
@@ -435,252 +825,15 @@
       m.measure_name === measureName && (m.measure_baseline_id || m.measure_baseline)
     );
     if (!entries.length) { container.hidden = true; return; }
-    container.hidden = false;
-
-    const rows = entries
-      .map(m => {
-        const calc = computeRow(m);
-        if (!calc) return null;
-        return {
-          label:        m[catField],
-          baselineName: m.measure_baseline || null,
-          measureId:    m.id,
-          npv:          calc.npv,
-          co2Saved:     calc.co2Saved,
-          capexDiff:    calc.capexDiff,
-          sector:       calc.sector,
-          gasSavings:          calc.gasSavings,
-          fuelSavings:         calc.fuelSavings,
-          fossilImportSavings: calc.fossilImportSavings,
-          sensitivity:  calc.sensitivity,
-        };
-      })
-      .filter(Boolean)
-      .sort((a, b) => b.npv.value - a.npv.value);
-
+    const rows = buildRows(entries, catField);
     if (!rows.length) { container.hidden = true; return; }
-
-    const totalW = container.clientWidth || 640;
-    const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - MARGIN.right, 120);
-    const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
-
-    const xScale = d3.scaleLinear()
-      .domain(globalXDomain || [-500000, 500000])
-      .range([0, chartW]);
-    const z = xScale(0);
-
-    // ── Create SVG skeleton once ──────────────────────────────────────────
-    let svg = d3.select(container).select('svg');
-    if (svg.empty()) {
-      svg = d3.select(container).append('svg').attr('role', 'img')
-        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
-      svg.append('text').attr('class', 'chart-col-header ctx-hdr').attr('x', 4).attr('y', 16).text('Kontext');
-      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
-      svg.append('text').attr('class', 'chart-col-header co2-hdr').attr('text-anchor', 'start').attr('y', 16);
-      svg.append('text').attr('class', 'chart-col-header fuel-hdr').attr('text-anchor', 'start').attr('y', 16);
-      svg.append('line').attr('class', 'zero-line')
-        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
-      svg.append('g').attr('class', 'rows-g');
-      svg.append('g').attr('class', 'chart-axis x-axis');
-    }
-
-    svg.attr('width', totalW).attr('height', totalH);
-
-    // Update static elements
-    svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
-    svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
-    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8)
-      .call(el => {
-        const x = LABEL_W + chartW + CO2_W + 8;
-        el.selectAll('*').remove();
-        el.append('tspan').attr('x', x).attr('dy', '0').text('Úspora importu');
-        el.append('tspan').attr('x', x).attr('dy', '1.1em').text('ropy a plynu');
-      });
-    svg.select('.zero-line')
-      .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
-      .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
-
-    // ── Row data join ─────────────────────────────────────────────────────
-    const rowSel = svg.select('.rows-g').selectAll('g.d-row').data(rows, d => d.label);
-
-    // ENTER — appear at final position, fade in
-    const rowEnter = rowSel.enter().append('g').attr('class', 'd-row')
-      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
-      .attr('opacity', 0);
-
-    // Transparent full-width rect — catches clicks in the empty label area
-    rowEnter.append('rect').attr('class', 'row-bg')
-      .attr('x', 0).attr('y', 0).attr('height', ROW_H).attr('fill', 'transparent');
-
-    // foreignObject label (created once; text updated below)
-    const fo = rowEnter.append('foreignObject')
-      .attr('x', 4).attr('y', 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
-    const div = fo.append('xhtml:div')
-      .style('display', 'flex').style('flex-direction', 'column')
-      .style('justify-content', 'center').style('height', '100%');
-    div.append('xhtml:span').attr('class', 'lbl-main')
-      .style('font-size', '14px').style('line-height', '1.3').style('color', '#444');
-    div.append('xhtml:span').attr('class', 'lbl-base')
-      .style('font-size', '11px').style('color', '#bbb').style('margin-top', '1px');
-
-    // Uncertainty band
-    const bandG = rowEnter.append('g').attr('class', 'u-band');
-    bandG.append('line').attr('class', 'band-line')
-      .attr('stroke', '#999').attr('stroke-width', 5)
-      .attr('stroke-linecap', 'round').attr('opacity', 0.35);
-    bandG.append('rect').attr('class', 'band-hit')
-      .attr('height', 16).attr('fill', 'transparent');
-
-    rowEnter.append('circle').attr('class', 'npv-dot').attr('r', 6)
-      .attr('stroke', 'white').attr('stroke-width', 2);
-    rowEnter.append('text').attr('class', 'npv-lbl')
-      .attr('text-anchor', 'middle').attr('font-size', '14px');
-    rowEnter.append('g').attr('class', 'co2-g');
-    rowEnter.append('g').attr('class', 'fuel-g');
-
-    // MERGE — animate y; update all content
-    const rowAll = rowSel.merge(rowEnter);
-
-    rowAll.transition().duration(ANIM_MS).ease(d3.easeCubicInOut)
-      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
-      .attr('opacity', 1);
-
-    rowAll.each(function (row) {
-      const g     = d3.select(this);
-      const mid   = ROW_H / 2;
-      const color = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
-      const dotX  = LABEL_W + xScale(row.npv.value);
-
-      g.select('.row-bg').attr('width', totalW);
-      g.style('cursor', 'pointer')
-       .on('click', () => toggleRowDetail(container, row));
-
-      g.select('.lbl-main').text(row.label);
-      g.select('.lbl-base').text(row.baselineName ? 'vs. ' + row.baselineName : '');
-
-      const dominant = row.sensitivity && row.sensitivity.length
-        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
-        : null;
-      const bandTip = [
-        `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
-        dominant ? `Největší vliv: ${dominant.param}` : null,
-      ].filter(Boolean).join('\n');
-      const dotTip = [
-        fmtCZK(row.npv.value),
-        dominant ? `Největší vliv: ${dominant.param}` : null,
-      ].filter(Boolean).join('\n');
-
-      g.select('.band-line')
-        .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
-        .attr('y1', mid).attr('y2', mid);
-      g.select('.band-hit')
-        .attr('x', LABEL_W + xScale(row.npv.low))
-        .attr('y', mid - 8)
-        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
-        .on('mouseover', e => showTip(e, bandTip))
-        .on('mousemove', moveTip)
-        .on('mouseout',  hideTip);
-
-      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color)
-        .on('mouseover', e => showTip(e, dotTip))
-        .on('mousemove', moveTip)
-        .on('mouseout',  hideTip);
-      g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
-        .text(fmtCZK(row.npv.value));
-
-      // CO₂ squares — fixed global scale: 1 box = CO2_UNIT t, wrap at CO2_MAX_COLS
-      const co2G   = g.select('.co2-g');
-      co2G.selectAll('*').remove();
-      const co2Color = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
-      const SQ = 7, SQ_GAP = 2, SQ_STEP = SQ + SQ_GAP;
-      const absVal   = row.co2Saved !== null ? Math.abs(row.co2Saved) : 0;
-      // Round to nearest half-unit (12.5 t), then split into full + half boxes
-      const halfUnits = row.co2Saved !== null ? Math.round(absVal / (CO2_UNIT / 2)) : 0;
-      const nSq      = Math.floor(halfUnits / 2);   // full boxes (25 t each)
-      const hasHalf  = (halfUnits % 2) === 1;        // leftover half-box (12.5 t)
-      const sqX     = LABEL_W + chartW + 8;
-
-      // Grid layout: treat half-box as occupying one slot in row 0
-      const nSlots  = nSq + (hasHalf ? 1 : 0);
-      const nCols   = Math.min(nSlots, CO2_MAX_COLS);
-      const nRows   = nSlots > 0 ? Math.ceil(nSlots / CO2_MAX_COLS) : 0;
-      const gridH   = nRows > 0 ? nRows * SQ + (nRows - 1) * SQ_GAP : 0;
-      const gridTop = mid - gridH / 2;
-
-      for (let s = 0; s < nSq; s++) {
-        const col    = s % CO2_MAX_COLS;
-        const rowIdx = Math.floor(s / CO2_MAX_COLS);
-        co2G.append('rect')
-          .attr('x', sqX + col * SQ_STEP)
-          .attr('y', gridTop + rowIdx * SQ_STEP)
-          .attr('width', SQ).attr('height', SQ)
-          .attr('fill', co2Color).attr('opacity', 0.7);
-      }
-      if (hasHalf) {
-        // Half-box in the next slot after all full boxes
-        const hCol    = nSq % CO2_MAX_COLS;
-        const hRowIdx = Math.floor(nSq / CO2_MAX_COLS);
-        co2G.append('rect')
-          .attr('x', sqX + hCol * SQ_STEP)
-          .attr('y', gridTop + hRowIdx * SQ_STEP)
-          .attr('width', SQ / 2).attr('height', SQ)
-          .attr('fill', co2Color).attr('opacity', 0.7);
-      }
-      const textX = sqX + CO2_MAX_COLS * SQ_STEP + 4;
-      const co2Negative = row.co2Saved !== null && row.co2Saved < 0;
-      const co2RelStr = (!co2Negative && row.co2Saved) ? fmtCZKperT(-row.npv.value, row.co2Saved) : null;
-      co2G.append('text')
-        .attr('x', textX).attr('y', (co2RelStr || co2Negative) ? mid - 1 : mid + 5)
-        .attr('font-size', '13px').attr('fill', co2Color)
-        .text(fmtCO2(row.co2Saved));
-      if (co2Negative) {
-        co2G.append('text')
-          .attr('x', textX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb')
-          .text('zvyšuje emise');
-      } else if (co2RelStr) {
-        co2G.append('text')
-          .attr('x', textX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb')
-          .text(co2RelStr);
-      }
-
-      // Fuel / gas column
-      const fuelG    = g.select('.fuel-g');
-      const fuelColX = LABEL_W + chartW + CO2_W + 8;
-      fuelG.selectAll('*').remove();
-      let fuelAbsStr = '—', fuelRelStr = null;
-      if (row.fossilImportSavings) {
-        const fis = row.fossilImportSavings;
-        fuelAbsStr = fmtMWh(fis.scope1TotalMwh);
-        const s2 = fis.scope2TotalMwh;
-        if (s2 !== 0) fuelRelStr = (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' výroba elektřiny';
-      }
-      fuelG.append('text')
-        .attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
-        .attr('font-size', '13px').attr('fill', '#555')
-        .text(fuelAbsStr);
-      if (fuelRelStr) {
-        fuelG.append('text')
-          .attr('x', fuelColX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb')
-          .text(fuelRelStr)
-          .append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
-      }
-    });
-
-    rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
-
-    // ── X axis ────────────────────────────────────────────────────────────
-    svg.select('.x-axis')
-      .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
-      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
+    container.hidden = false;
+    renderRowChart(container, rows, 'KONTEXT');
   }
 
   // ── Group chart (transport: all measures in one category group) ──────────
   // Renders every measure whose transport_category starts with `group`
   // (e.g. "Nové" matches "Nové malé" and "Nové velké").
-  // Row label = measure_name; secondary line = baseline name.
   function renderGroupChart(container, section, group) {
     const isBuildings = section === 'buildings';
     const allMeasures = isBuildings ? data.buildings_measures : data.transport_measures;
@@ -691,206 +844,10 @@
       m[catField] && m[catField].startsWith(group)
     );
     if (!entries.length) { container.hidden = true; return; }
-    container.hidden = false;
-
-    const rows = entries
-      .map(m => {
-        const calc = computeRow(m);
-        if (!calc) return null;
-        return {
-          label:        m.measure_name,
-          baselineName: m.measure_baseline || null,
-          measureId:    m.id,
-          npv:          calc.npv,
-          co2Saved:     calc.co2Saved,
-          capexDiff:    calc.capexDiff,
-          sector:       calc.sector,
-          gasSavings:          calc.gasSavings,
-          fuelSavings:         calc.fuelSavings,
-          fossilImportSavings: calc.fossilImportSavings,
-          sensitivity:         calc.sensitivity,
-        };
-      })
-      .filter(Boolean)
-      .sort((a, b) => b.npv.value - a.npv.value);
-
+    const rows = buildRows(entries, 'measure_name');
     if (!rows.length) { container.hidden = true; return; }
-
-    // Reuse the same SVG skeleton and rendering logic as renderMeasureChart.
-    const totalW = container.clientWidth || 640;
-    const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - MARGIN.right, 120);
-    const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
-
-    const xScale = d3.scaleLinear()
-      .domain(globalXDomain || [-500000, 500000])
-      .range([0, chartW]);
-    const z = xScale(0);
-
-    let svg = d3.select(container).select('svg');
-    if (svg.empty()) {
-      svg = d3.select(container).append('svg').attr('role', 'img')
-        .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
-      svg.append('text').attr('class', 'chart-col-header ctx-hdr').attr('x', 4).attr('y', 16).text('Opatření');
-      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
-      svg.append('text').attr('class', 'chart-col-header co2-hdr').attr('text-anchor', 'start').attr('y', 16);
-      svg.append('text').attr('class', 'chart-col-header fuel-hdr').attr('text-anchor', 'start').attr('y', 16);
-      svg.append('line').attr('class', 'zero-line')
-        .attr('stroke', '#bbb').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
-      svg.append('g').attr('class', 'rows-g');
-      svg.append('g').attr('class', 'chart-axis x-axis');
-    }
-
-    svg.attr('width', totalW).attr('height', totalH);
-    svg.select('.npv-hdr').attr('x', LABEL_W + z).text('Rozdíl NPV oproti základní variantě');
-    svg.select('.co2-hdr').attr('x', LABEL_W + chartW + 8).text('Úspora emisí');
-    svg.select('.fuel-hdr').attr('x', LABEL_W + chartW + CO2_W + 8)
-      .call(el => {
-        const x = LABEL_W + chartW + CO2_W + 8;
-        el.selectAll('*').remove();
-        el.append('tspan').attr('x', x).attr('dy', '0').text('Úspora importu');
-        el.append('tspan').attr('x', x).attr('dy', '1.1em').text('ropy a plynu');
-      });
-    svg.select('.zero-line')
-      .attr('x1', LABEL_W + z).attr('x2', LABEL_W + z)
-      .attr('y1', MARGIN.top - 4).attr('y2', totalH - MARGIN.bottom);
-
-    const rowSel = svg.select('.rows-g').selectAll('g.d-row').data(rows, d => d.label);
-
-    const rowEnter = rowSel.enter().append('g').attr('class', 'd-row')
-      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
-      .attr('opacity', 0);
-
-    rowEnter.append('rect').attr('class', 'row-bg')
-      .attr('x', 0).attr('y', 0).attr('height', ROW_H).attr('fill', 'transparent');
-
-    const fo = rowEnter.append('foreignObject')
-      .attr('x', 4).attr('y', 2).attr('width', LABEL_W - 8).attr('height', ROW_H - 4);
-    const div = fo.append('xhtml:div')
-      .style('display', 'flex').style('flex-direction', 'column')
-      .style('justify-content', 'center').style('height', '100%');
-    div.append('xhtml:span').attr('class', 'lbl-main')
-      .style('font-size', '14px').style('line-height', '1.3').style('color', '#444');
-    div.append('xhtml:span').attr('class', 'lbl-base')
-      .style('font-size', '11px').style('color', '#bbb').style('margin-top', '1px');
-
-    const bandG = rowEnter.append('g').attr('class', 'u-band');
-    bandG.append('line').attr('class', 'band-line')
-      .attr('stroke', '#999').attr('stroke-width', 5)
-      .attr('stroke-linecap', 'round').attr('opacity', 0.35);
-    bandG.append('rect').attr('class', 'band-hit')
-      .attr('height', 16).attr('fill', 'transparent');
-
-    rowEnter.append('circle').attr('class', 'npv-dot').attr('r', 6)
-      .attr('stroke', 'white').attr('stroke-width', 2);
-    rowEnter.append('text').attr('class', 'npv-lbl')
-      .attr('text-anchor', 'middle').attr('font-size', '14px');
-    rowEnter.append('g').attr('class', 'co2-g');
-    rowEnter.append('g').attr('class', 'fuel-g');
-
-    const rowAll = rowSel.merge(rowEnter);
-    rowAll.transition().duration(ANIM_MS).ease(d3.easeCubicInOut)
-      .attr('transform', (d, i) => `translate(0,${MARGIN.top + i * ROW_H})`)
-      .attr('opacity', 1);
-
-    rowAll.each(function (row) {
-      const g     = d3.select(this);
-      const mid   = ROW_H / 2;
-      const color = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
-      const dotX  = LABEL_W + xScale(row.npv.value);
-
-      g.select('.row-bg').attr('width', totalW);
-      g.style('cursor', 'pointer').on('click', () => toggleRowDetail(container, row));
-      g.select('.lbl-main').text(row.label);
-      g.select('.lbl-base').text(row.baselineName ? 'vs. ' + row.baselineName : '');
-
-      const dominant = row.sensitivity && row.sensitivity.length
-        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
-        : null;
-      const bandTip = [
-        `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
-        dominant ? `Největší vliv: ${dominant.param}` : null,
-      ].filter(Boolean).join('\n');
-      const dotTip = [
-        fmtCZK(row.npv.value),
-        dominant ? `Největší vliv: ${dominant.param}` : null,
-      ].filter(Boolean).join('\n');
-
-      g.select('.band-line')
-        .attr('x1', LABEL_W + xScale(row.npv.low)).attr('x2', LABEL_W + xScale(row.npv.high))
-        .attr('y1', mid).attr('y2', mid);
-      g.select('.band-hit')
-        .attr('x', LABEL_W + xScale(row.npv.low)).attr('y', mid - 8)
-        .attr('width', Math.max(xScale(row.npv.high) - xScale(row.npv.low), 1))
-        .on('mouseover', e => showTip(e, bandTip)).on('mousemove', moveTip).on('mouseout', hideTip);
-      g.select('.npv-dot').attr('cx', dotX).attr('cy', mid).attr('fill', color)
-        .on('mouseover', e => showTip(e, dotTip)).on('mousemove', moveTip).on('mouseout', hideTip);
-      g.select('.npv-lbl').attr('x', dotX).attr('y', mid - 11).attr('fill', color)
-        .text(fmtCZK(row.npv.value));
-
-      // CO₂ squares
-      const co2G    = g.select('.co2-g');
-      co2G.selectAll('*').remove();
-      const co2Color = (row.co2Saved !== null && row.co2Saved < 0) ? COLOR_COSTLY : COLOR_FAVORABLE;
-      const SQ = 7, SQ_GAP = 2, SQ_STEP = SQ + SQ_GAP;
-      const absVal   = row.co2Saved !== null ? Math.abs(row.co2Saved) : 0;
-      const halfUnits = row.co2Saved !== null ? Math.round(absVal / (CO2_UNIT / 2)) : 0;
-      const nSq      = Math.floor(halfUnits / 2);
-      const hasHalf  = (halfUnits % 2) === 1;
-      const sqX      = LABEL_W + chartW + 8;
-      const nSlots   = nSq + (hasHalf ? 1 : 0);
-      const nRows    = nSlots > 0 ? Math.ceil(nSlots / CO2_MAX_COLS) : 0;
-      const gridH    = nRows > 0 ? nRows * SQ + (nRows - 1) * SQ_GAP : 0;
-      const gridTop  = mid - gridH / 2;
-      for (let s = 0; s < nSq; s++) {
-        co2G.append('rect')
-          .attr('x', sqX + (s % CO2_MAX_COLS) * SQ_STEP)
-          .attr('y', gridTop + Math.floor(s / CO2_MAX_COLS) * SQ_STEP)
-          .attr('width', SQ).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
-      }
-      if (hasHalf) {
-        co2G.append('rect')
-          .attr('x', sqX + (nSq % CO2_MAX_COLS) * SQ_STEP)
-          .attr('y', gridTop + Math.floor(nSq / CO2_MAX_COLS) * SQ_STEP)
-          .attr('width', SQ / 2).attr('height', SQ).attr('fill', co2Color).attr('opacity', 0.7);
-      }
-      const textX = sqX + CO2_MAX_COLS * SQ_STEP + 4;
-      const co2Negative = row.co2Saved !== null && row.co2Saved < 0;
-      const co2RelStr = (!co2Negative && row.co2Saved) ? fmtCZKperT(-row.npv.value, row.co2Saved) : null;
-      co2G.append('text').attr('x', textX).attr('y', (co2RelStr || co2Negative) ? mid - 1 : mid + 5)
-        .attr('font-size', '13px').attr('fill', co2Color).text(fmtCO2(row.co2Saved));
-      if (co2Negative) {
-        co2G.append('text').attr('x', textX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb').text('zvyšuje emise');
-      } else if (co2RelStr) {
-        co2G.append('text').attr('x', textX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb').text(co2RelStr);
-      }
-
-      // Fuel column
-      const fuelG    = g.select('.fuel-g');
-      const fuelColX = LABEL_W + chartW + CO2_W + 8;
-      fuelG.selectAll('*').remove();
-      let fuelAbsStr = '—', fuelRelStr = null;
-      if (row.fossilImportSavings) {
-        const fis = row.fossilImportSavings;
-        fuelAbsStr = fmtMWh(fis.scope1TotalMwh);
-        const s2 = fis.scope2TotalMwh;
-        if (s2 !== 0) fuelRelStr = (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' výroba elektřiny';
-      }
-      fuelG.append('text').attr('x', fuelColX).attr('y', fuelRelStr ? mid - 1 : mid + 5)
-        .attr('font-size', '13px').attr('fill', '#555').text(fuelAbsStr);
-      if (fuelRelStr) {
-        fuelG.append('text').attr('x', fuelColX).attr('y', mid + 13)
-          .attr('font-size', '10px').attr('fill', '#bbb').text(fuelRelStr)
-          .append('title').text('zemní plyn spotřebovaný na výrobu elektřiny');
-      }
-    });
-
-    rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
-
-    svg.select('.x-axis')
-      .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
-      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt));
+    container.hidden = false;
+    renderRowChart(container, rows, 'OPATŘENÍ');
   }
 
   // ── DOM section reordering ───────────────────────────────────────────────
@@ -934,160 +891,287 @@
   }
 
   // ── Row detail panel ─────────────────────────────────────────────────────
-  function toggleRowDetail(container, row) {
-    const existing = container.querySelector('.row-detail');
-    const wasOpen  = existing && existing.dataset.rowLabel === row.label;
-    if (existing) existing.remove();
-    if (wasOpen) return;
+  let openMeasureId = null;
+  let openRowMeta   = null;   // { label, measureName, baselineName } — display metadata from clicked row
 
-    let result;
-    try {
-      result = CostsBenefits.calculate({
-        measureId:             row.measureId,
-        data,
-        discountRate:          state.discountRate / 100,
-        carbonPriceEur:        state.carbonPrice,
-        priceScenario:         state.fuelScenario,
-        electricityPriceFactor: state.electricityPriceFactor,
-      });
-    } catch (e) { return; }
-
-    renderDetailPanel(container, row, result);
+  function toggleRowDetail(_container, row) {
+    if (openMeasureId === row.measureId) {
+      openMeasureId = null;
+      openRowMeta   = null;
+      closeDetailBar();
+      return;
+    }
+    openMeasureId = row.measureId;
+    openRowMeta   = { label: row.label, measureName: row.measureName, baselineName: row.baselineName };
+    renderOpenDetail();
   }
 
-  function renderDetailPanel(container, row, result) {
-    const panel = document.createElement('div');
-    panel.className    = 'row-detail';
-    panel.dataset.rowLabel = row.label;
+  function closeDetailBar() {
+    const bar = document.getElementById('row-detail-bar');
+    if (!bar) return;
+    bar.classList.remove('is-open');
+    bar.querySelector('.row-detail-inner').innerHTML = '';
+    document.getElementById('row-detail-backdrop')?.classList.remove('is-open');
+  }
 
-    // Header
+  function renderOpenDetail() {
+    if (!openMeasureId || !openRowMeta) return;
+    const measure = findMeasure(openMeasureId);
+    if (!measure) return;
+
+    // Full result for timeline + tornado
+    let result;
+    try { result = CostsBenefits.calculate(calcOpts(measure)); } catch (e) { return; }
+
+    // Reconstruct the full row object (same shape as buildRows produces)
+    const calc = computeRow(measure);
+    if (!calc) return;
+    const band = computeBand(measure);
+    const npv  = band
+      ? { value: calc.npv.value, low: Math.min(band.lo, calc.npv.value), high: Math.max(band.hi, calc.npv.value) }
+      : calc.npv;
+    const row = {
+      ...openRowMeta,
+      measureId:           openMeasureId,
+      npv,
+      co2Saved:            calc.co2Saved,
+      capexDiff:           calc.capexDiff,
+      sector:              calc.sector,
+      gasSavings:          calc.gasSavings,
+      fuelSavings:         calc.fuelSavings,
+      fossilImportSavings: calc.fossilImportSavings,
+      sensitivity:         calc.sensitivity,
+    };
+
+    renderDetailPanel(row, result);
+  }
+
+  function statCell(label, value, iconEl, color, note, noteColor) {
+    const cell = document.createElement('div');
+    const l = document.createElement('div');
+    l.className = 'rd-lbl';
+    l.textContent = label;
+    const v = document.createElement('div');
+    v.className = 'rd-stat-val';
+    if (iconEl) v.appendChild(iconEl);
+    const t = document.createElement('span');
+    t.textContent = value;
+    if (color) t.style.color = color;
+    v.appendChild(t);
+    if (note) {
+      const n = document.createElement('span');
+      n.className = 'rd-stat-note';
+      n.textContent = note;
+      if (noteColor) n.style.color = noteColor;
+      n.title = 'zemní plyn spotřebovaný na výrobu elektřiny';
+      v.appendChild(n);
+    }
+    cell.appendChild(l);
+    cell.appendChild(v);
+    return cell;
+  }
+
+  // NPV two-pole scale: baseline (fossil) anchors the left, measure the right;
+  // band + dot + zero tick sit between them.
+  function renderNpvScale(container, row) {
+    const left = document.createElement('div');
+    left.className = 'rd-pole rd-pole-left';
+    left.textContent = row.baselineName || '';
+    const mid = document.createElement('div');
+    mid.className = 'rd-scale-track';
+    const right = document.createElement('div');
+    right.className = 'rd-pole rd-pole-right';
+    right.textContent = row.measureName || row.label;
+    container.appendChild(left);
+    container.appendChild(mid);
+    container.appendChild(right);
+
+    const W = mid.clientWidth || 400, H = 50, midY = 25;
+    const xScale = d3.scaleLinear().domain(globalXDomain || [-500000, 500000]).range([0, W]);
+    const z = xScale(0);
+    const color = npvFill(row.npv.value, (row.label || '') + ' ' + (row.baselineName || ''));
+
+    const svg = d3.select(mid).append('svg')
+      .attr('width', W).attr('height', H).style('display', 'block').style('font-family', CB_FONT);
+    // baseline track + zero tick
+    svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', midY).attr('y2', midY)
+      .attr('stroke', '#e6e9ed').attr('stroke-width', 1);
+    svg.append('line').attr('x1', z).attr('x2', z).attr('y1', midY - 12).attr('y2', midY + 12)
+      .attr('stroke', CLR_SUB).attr('stroke-width', 1);
+    // uncertainty band
+    svg.append('line')
+      .attr('x1', xScale(row.npv.low)).attr('x2', xScale(row.npv.high))
+      .attr('y1', midY).attr('y2', midY)
+      .attr('stroke', CLR_SUB).attr('stroke-width', 5).attr('stroke-linecap', 'round').attr('opacity', 0.3);
+    // dot + value label above it (as in the measure-chart rows)
+    const dotX = xScale(row.npv.value);
+    svg.append('circle').attr('cx', dotX).attr('cy', midY).attr('r', 7)
+      .attr('fill', color).attr('stroke', 'white').attr('stroke-width', 2);
+    svg.append('text')
+      .attr('x', Math.max(28, Math.min(W - 28, dotX))).attr('y', midY - 12).attr('text-anchor', 'middle')
+      .attr('font-family', CB_FONT).attr('font-size', '13px').attr('font-weight', '700')
+      .attr('fill', CLR_TEXT).text(fmtCZK(row.npv.value));
+  }
+
+  // Plain CZK (no +/− sign) for descriptive amounts like CAPEX.
+  function czkPlain(v) {
+    const a = Math.abs(Math.round(v));
+    if (a >= 1e6) return (Math.round(a / 1e5) / 10).toString().replace('.', ',') + ' mil. Kč';
+    if (a >= 1e3) return fmtInt.format(Math.round(a / 1e3)) + ' tis. Kč';
+    return fmtInt.format(a) + ' Kč';
+  }
+
+  // Descriptive context of the measure/building — CAPEX, car type, consumption, lifetime.
+  function measureContextLine(m) {
+    if (!m) return '';
+    const capex = m.capex_czk != null
+      ? m.capex_czk
+      : (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0) + (m.capex_preparation_czk || 0);
+    const parts = [];
+    if (m.transport_category) {
+      if (m.transport_category)          parts.push('Typ: ' + m.transport_category);
+      if (capex)                         parts.push('Cena ' + czkPlain(capex));
+      if (m.demand_energy_per_100km != null) parts.push('Spotřeba ' + fmtInt.format(Math.round(m.demand_energy_per_100km * 1000)) + ' kWh/100 km');
+      if (m.mileage != null)             parts.push('Nájezd ' + fmtInt.format(m.mileage) + ' km/rok');
+    } else {
+      if (capex)                         parts.push('Investice ' + czkPlain(capex));
+      if (m.demand_heat_building_mwh != null) parts.push('Spotřeba tepla ' + m.demand_heat_building_mwh + ' MWh/rok');
+    }
+    if (m.lifetime != null)              parts.push('Životnost ' + Math.round(m.lifetime) + ' let');
+    return parts.join('  ·  ');
+  }
+
+  function renderDetailPanel(row, result) {
+    const bar = document.getElementById('row-detail-bar');
+    if (!bar) return;
+    const inner = bar.querySelector('.row-detail-inner');
+    inner.innerHTML = '';
+    bar.classList.add('is-open');
+    document.getElementById('row-detail-backdrop')?.classList.add('is-open');
+
+    const measure = findMeasure(row.measureId);
+
+    // ── Header: title block on its own row ────────────────────────────────────
     const hdr = document.createElement('div');
-    hdr.className = 'row-detail-header';
-    const title = document.createElement('span');
-    title.className = 'row-detail-title';
-    title.innerHTML = `<strong>${row.label}</strong>${row.baselineName ? ` <span class="row-detail-vs">vs. ${row.baselineName}</span>` : ''}`;
+    hdr.className = 'rd-header';
+
+    const idBlock = document.createElement('div');
+    idBlock.className = 'rd-identity';
+    const hasContext = row.measureName && row.measureName !== row.label;
+    if (hasContext) {
+      const { prefix, badge } = splitLabel(row.label);
+      const ctx = document.createElement('div');
+      ctx.className = 'rd-context';
+      ctx.innerHTML = badgeHtml(badge, 0) + (badge ? ' ' : '') + prefix.toUpperCase();
+      idBlock.appendChild(ctx);
+    }
+    const title = document.createElement('div');
+    title.className = 'rd-title';
+    const strong = document.createElement('span');
+    strong.className = 'rd-title-name';
+    strong.textContent = row.measureName || row.label;
+    title.appendChild(strong);
+    if (row.baselineName) {
+      const vs = document.createElement('span');
+      vs.className = 'rd-vs';
+      vs.textContent = ' vs. ' + row.baselineName;
+      title.appendChild(vs);
+    }
+    idBlock.appendChild(title);
+    const metaText = measureContextLine(measure);
+    if (metaText) {
+      const meta = document.createElement('div');
+      meta.className = 'rd-meta';
+      meta.textContent = metaText;
+      idBlock.appendChild(meta);
+    }
+    hdr.appendChild(idBlock);
+
     const closeBtn = document.createElement('button');
     closeBtn.className   = 'row-detail-close';
     closeBtn.textContent = '✕';
-    closeBtn.onclick = () => panel.remove();
-    hdr.appendChild(title);
+    closeBtn.onclick = () => { openMeasureId = null; openRowMeta = null; closeDetailBar(); };
     hdr.appendChild(closeBtn);
-    panel.appendChild(hdr);
+    inner.appendChild(hdr);
 
-    // Stats grid (3 rows × 3 cols + row labels)
-    const savedT     = result.emissionSavings ? -result.emissionSavings.totalT : null;
-    const extraCapex = -result.capexDiff;   // positive = measure costs more than baseline
+    // ── Row 2: NPV (cols 1-8) · Snížení emisí (9-10) · Snížení dovozu (11-12) ──
+    const npvCol = document.createElement('div');
+    npvCol.className = 'rd-col-npv';
+    const npvLbl = document.createElement('div');
+    npvLbl.className = 'rd-lbl';
+    npvLbl.textContent = 'Výhodnost (NPV)';        // axis label; value sits by the dot
+    const scaleEl = document.createElement('div');
+    scaleEl.className = 'rd-scale';
+    npvCol.appendChild(npvLbl);
+    npvCol.appendChild(scaleEl);
+    inner.appendChild(npvCol);
 
-    function makeStat(label, value, extraClass, tip, sub) {
-      const d = document.createElement('div');
-      d.className = 'row-detail-stat' + (extraClass ? ' ' + extraClass : '');
-      const subHtml = sub ? `<span class="stat-sub">${sub}</span>` : '';
-      d.innerHTML = `<span class="stat-lbl">${label}</span><span class="stat-val">${value}</span>${subHtml}`;
-      if (tip) {
-        d.addEventListener('mouseover', e => showTip(e, tip));
-        d.addEventListener('mousemove', moveTip);
-        d.addEventListener('mouseout',  hideTip);
-      }
-      return d;
-    }
-    function makeRowLbl(text) {
-      const d = document.createElement('div');
-      d.className = 'stats-row-lbl';
-      d.textContent = text;
-      return d;
-    }
-    function makeColHdr(text, extraClass) {
-      const d = document.createElement('div');
-      d.className = 'stats-col-hdr-cell' + (extraClass ? ' ' + extraClass : '');
-      d.textContent = text;
-      return d;
-    }
+    // Single-item detail: pictographs have nothing to compare against, so show
+    // the number alone (bigger). Pictographs stay in the multi-row measure charts.
+    const co2Neg = row.co2Saved !== null && row.co2Saved < 0;
+    const emiseCell = statCell('Snížení emisí',
+      co2Neg ? 'zvyšuje emise o ' + fmtCO2(Math.abs(row.co2Saved)) : fmtCO2(row.co2Saved),
+      null, co2Neg ? CLR_NEG_GAS : CLR_TEXT);
+    emiseCell.classList.add('rd-stat--emise');
+    inner.appendChild(emiseCell);
 
-    const grid = document.createElement('div');
-    grid.className = 'stats-grid';
+    const s1 = row.fossilImportSavings ? row.fossilImportSavings.scope1TotalMwh : null;
+    const s2 = row.fossilImportSavings ? row.fossilImportSavings.scope2TotalMwh : 0;
+    const dovozNote = s2 ? (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' na výrobu elektřiny' : null;
+    const dovozCell = statCell('Snížení dovozu ropy a zemního plynu', s1 != null ? fmtMWh(s1) : '—',
+      null, CLR_TEXT, dovozNote, s2 > 0 ? CLR_POS : CLR_SUB);
+    dovozCell.classList.add('rd-stat--dovoz');
+    inner.appendChild(dovozCell);
 
-    // Column header row
-    grid.appendChild(document.createElement('div'));           // empty corner
-    grid.appendChild(document.createElement('div'));           // col 1: no header
-    grid.appendChild(makeColHdr('Kč / NPV',      'stats-cell-npv'));
-    grid.appendChild(makeColHdr('Kč / diff CAPEX', 'stats-cell-capex'));
+    renderNpvScale(scaleEl, row);   // after layout so clientWidth is resolved
 
-    // Row 1: Money
-    const payVal = result.paybackYear != null ? result.paybackYear + ' let' : '—';
-    grid.appendChild(makeRowLbl('Peníze'));
-    grid.appendChild(makeStat('Návratnost',  payVal));
-    grid.appendChild(makeStat('NPV',           fmtCZK(result.npv),       'stats-cell-npv'));
-    grid.appendChild(makeStat('Rozdíl CAPEX', fmtCZK(result.capexDiff), 'stats-cell-capex'));
-
-    // Row 2: Emissions
-    if (savedT != null) {
-      grid.appendChild(makeRowLbl('Emise'));
-      grid.appendChild(makeStat('Úspora emisí', fmtCO2(savedT)));
-      grid.appendChild(makeStat('Kč/t CO₂',
-        fmtCZKperT(-result.npv, savedT), 'stats-cell-npv'));
-      grid.appendChild(makeStat('Kč/t CO₂',
-        fmtCZKperT(extraCapex, savedT), 'stats-cell-capex'));
-    }
-
-    // Row 3: natural gas (buildings) or liquid fuel/PHM (transport)
-    {
-      {
-        const fis        = result.fossilImportSavings;
-        grid.appendChild(makeRowLbl('Fosilní import (sc. 1)'));
-        const s1Total = fis ? fis.scope1TotalMwh : null;
-        const s1Ann   = fis ? fis.scope1AnnualMwh : null;
-        const s2Total = fis ? fis.scope2TotalMwh  : null;
-        const annSubS1 = s1Ann != null ? '(' + fmtMWh(s1Ann) + '/rok)' : null;
-        grid.appendChild(makeStat('Úspora sc. 1 celkem', s1Total != null ? fmtMWh(s1Total) : '—',
-          null, null, annSubS1));
-        grid.appendChild(makeStat('Kč/MWh sc. 1',
-          s1Total == null || !s1Total ? '—' : fmtCZKperMWh(-result.npv, s1Total),
-          'stats-cell-npv'));
-        grid.appendChild(makeStat('Kč/MWh sc. 1',
-          s1Total == null || !s1Total ? '—' : fmtCZKperMWh(extraCapex, s1Total),
-          'stats-cell-capex'));
-        grid.appendChild(makeRowLbl('Fosilní import (sc. 2)'));
-        const annSubS2 = fis ? '(' + fmtMWh(fis.scope2AnnualMwh) + '/rok)' : null;
-        grid.appendChild(makeStat('Sc. 2 (el. grid)', s2Total != null ? fmtMWh(s2Total) : '—',
-          null, null, annSubS2));
-        grid.appendChild(makeStat('Gas factor', fis ? (fis.gasFactor * 100).toFixed(1) + ' %' : '—'));
-        grid.appendChild(makeStat(''));
-      }
-    }
-
-    panel.appendChild(grid);
-
-    // NPV timeline chart
-    const timelineEl = document.createElement('div');
+    // ── Row 3: Kumulativní NPV v čase (cols 1-8) · Citlivostní analýza (9-12) ──
     if ((result.yearByYear || []).length) {
-      const tlHdr = document.createElement('div');
-      tlHdr.className   = 'row-detail-section-label';
-      tlHdr.textContent = 'Kumulativní NPV v čase';
-      panel.appendChild(tlHdr);
+      const wrap = document.createElement('div');
+      wrap.className = 'rd-chart--timeline';
+      const lbl = document.createElement('div');
+      lbl.className = 'row-detail-section-label';
+      lbl.textContent = 'Kumulativní NPV v čase';
+      const timelineEl = document.createElement('div');
       timelineEl.className = 'row-detail-timeline';
-      panel.appendChild(timelineEl);
+      wrap.appendChild(lbl);
+      wrap.appendChild(timelineEl);
+      inner.appendChild(wrap);
+      renderNpvTimeline(timelineEl, result);
     }
 
-    // Tornado chart
-    const tornEl = document.createElement('div');
-    const sens = result.sensitivity || [];
+    const carbon = measure ? carbonSensitivity(measure) : null;
+    const sens = [...(result.sensitivity || []), ...(carbon ? [carbon] : [])];
     if (sens.length) {
-      const tornHdr = document.createElement('div');
-      tornHdr.className   = 'row-detail-section-label';
-      tornHdr.textContent = 'Citlivostní analýza';
-      panel.appendChild(tornHdr);
-      tornEl.className = 'row-detail-tornado';
-      panel.appendChild(tornEl);
+      const wrap = document.createElement('div');
+      wrap.className = 'rd-chart--sens';
+      const lbl = document.createElement('div');
+      lbl.className = 'row-detail-section-label';
+      lbl.textContent = 'Citlivostní analýza';
+      const tornEl = document.createElement('div');
+      tornEl.className = 'row-detail-sens';
+      wrap.appendChild(lbl);
+      wrap.appendChild(tornEl);
+      inner.appendChild(wrap);
+      renderSensitivity(tornEl, sens);
     }
 
-    // Append panel before rendering charts so clientWidth is valid
-    container.appendChild(panel);
-    if (timelineEl.className) renderNpvTimeline(timelineEl, result);
-    if (tornEl.className)     renderTornado(tornEl, result);
+    // Footer: the slider inputs these figures were computed with
+    const SCEN  = { CP: 'Současné politiky', CP_EC: 'Energetická krize', NZ: 'Net-zero' };
+    const CAPEX = { '-1': 'optimistická', '0': 'střední', '1': 'pesimistická' };
+    const pu = (state.priceUncertainty > 0 ? '+' : '') + state.priceUncertainty + ' %';
+    const footer = document.createElement('div');
+    footer.className = 'rd-footer';
+    footer.textContent =
+      `Platí pro nastavení: scénář energií „${SCEN[state.fuelScenario] || state.fuelScenario}“ · `
+      + `nejistota cen ${pu} · cena uhlíku ${state.carbonPrice} € · `
+      + `investiční náklady ${CAPEX[state.capexLevel] || state.capexLevel}`;
+    inner.appendChild(footer);
   }
 
+
   function renderNpvTimeline(container, result) {
-    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
+    const FONT = CB_FONT;   // Inter — the detail window is all Inter except the footer
     const rows = result.yearByYear || [];
     if (!rows.length) return;
 
@@ -1149,7 +1233,8 @@
     const tickValues = years.filter(y => y % step === 0);
     chart.append('g')
       .attr('transform', `translate(0,${chartH})`).attr('class', 'chart-axis')
-      .call(d3.axisBottom(xScale).tickValues(tickValues).tickFormat(d => d));
+      .call(d3.axisBottom(xScale).tickValues(tickValues).tickSize(3).tickFormat(d => d))
+      .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
     chart.append('text')
       .attr('x', 0).attr('y', chartH + 28)
       .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', '#999')
@@ -1157,87 +1242,39 @@
 
     // Y axis
     chart.append('g').attr('class', 'chart-axis')
-      .call(d3.axisLeft(yScale).ticks(4).tickFormat(xAxisFmt));
+      .call(d3.axisLeft(yScale).ticks(4).tickSize(3).tickFormat(xAxisFmt))
+      .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
   }
 
-  function renderTornado(container, result) {
-    const FONT = 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif';
-    const sens  = [...(result.sensitivity || [])]
+  // Carbon-price sensitivity across the slider range (0–200 €/t), other inputs held.
+  function carbonSensitivity(measure) {
+    const base = calcOpts(measure);
+    const npvAt = cp => { try { return CostsBenefits.calculate({ ...base, carbonPriceEur: cp }).npv; } catch (_) { return null; } };
+    const a = npvAt(0), b = npvAt(200);
+    if (a == null || b == null) return null;
+    return { param: 'Cena uhlíku', minNpv: Math.min(a, b), maxNpv: Math.max(a, b) };
+  }
+
+  // Sensitivity as a compact list (biggest lever first): parameter → min→max NPV.
+  function renderSensitivity(container, sensInput) {
+    const sens = [...(sensInput || [])]
       .sort((a, b) => (b.maxNpv - b.minNpv) - (a.maxNpv - a.minNpv));
     if (!sens.length) return;
 
-    const width   = container.clientWidth || 560;
-    const TROW_H  = 26;
-    const TLBL_W  = 220;
-    const TM      = { top: 22, right: 12, bottom: 28 };
-    const totalH  = sens.length * TROW_H + TM.top + TM.bottom;
-    const chartW  = Math.max(width - TLBL_W - TM.right, 80);
-
-    const baseNpv = result.npv;
-    const allVals = [0, baseNpv, ...sens.flatMap(s => [s.minNpv, s.maxNpv])];
-    const [xMin, xMax] = d3.extent(allVals);
-    const pad = (xMax - xMin) * 0.06 || 10000;
-    const xScale = d3.scaleLinear()
-      .domain([Math.min(xMin - pad, 0), Math.max(xMax + pad, 0)])
-      .nice().range([0, chartW]);
-
-    const svg = d3.select(container).append('svg')
-      .attr('width', width).attr('height', totalH)
-      .style('font-family', FONT);
-
-    const chart = svg.append('g').attr('transform', `translate(${TLBL_W},0)`);
-
-    // Zero line
-    const z = xScale(0);
-    chart.append('line')
-      .attr('x1', z).attr('x2', z)
-      .attr('y1', TM.top - 2).attr('y2', totalH - TM.bottom)
-      .attr('stroke', '#aaa').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
-    chart.append('text').attr('x', z).attr('y', TM.top - 4)
-      .attr('text-anchor', 'middle').attr('font-size', '10px').attr('fill', '#aaa')
-      .text('NPV = 0');
-
-    sens.forEach((s, i) => {
-      const midY = TM.top + i * TROW_H + TROW_H / 2;
-      const barH = TROW_H * 0.55;
-
-      // Parameter label
-      svg.append('text').attr('x', TLBL_W - 6).attr('y', midY + 4)
-        .attr('text-anchor', 'end').attr('font-size', '12px').attr('fill', '#555')
-        .text(s.param);
-
-      // Downside bar: baseNpv → minNpv (worse direction)
-      if (s.minNpv !== baseNpv) {
-        chart.append('rect')
-          .attr('x', xScale(Math.min(baseNpv, s.minNpv)))
-          .attr('y', midY - barH / 2)
-          .attr('width', Math.abs(xScale(s.minNpv) - xScale(baseNpv)))
-          .attr('height', barH)
-          .attr('fill', COLOR_COSTLY).attr('opacity', 0.75);
-      }
-      // Upside bar: baseNpv → maxNpv (better direction)
-      if (s.maxNpv !== baseNpv) {
-        chart.append('rect')
-          .attr('x', xScale(Math.min(baseNpv, s.maxNpv)))
-          .attr('y', midY - barH / 2)
-          .attr('width', Math.abs(xScale(s.maxNpv) - xScale(baseNpv)))
-          .attr('height', barH)
-          .attr('fill', COLOR_FAVORABLE).attr('opacity', 0.75);
-      }
+    const list = d3.select(container).append('div').attr('class', 'rd-sens');
+    sens.forEach(s => {
+      const rowEl = list.append('div').attr('class', 'rd-sens-row');
+      rowEl.append('span').attr('class', 'rd-sens-param').text(s.param);
+      const range = rowEl.append('span').attr('class', 'rd-sens-range');
+      range.append('span').style('color', COLOR_COSTLY).text(xAxisFmt(s.minNpv));
+      range.append('span').style('color', '#9ea7b3').text(' → ');
+      range.append('span').style('color', COLOR_FAVORABLE).text(xAxisFmt(s.maxNpv));
+      range.append('span').style('color', '#9ea7b3').text(' Kč');
     });
-
-    // X axis
-    chart.append('g')
-      .attr('transform', `translate(0,${totalH - TM.bottom})`)
-      .attr('class', 'chart-axis')
-      .call(d3.axisBottom(xScale).ticks(4).tickFormat(xAxisFmt));
   }
 
   // ── Render all ────────────────────────────────────────────────────────────
   function renderAll() {
-    // Close any open detail panels — params changed, values would be stale
-    document.querySelectorAll('.row-detail').forEach(el => el.remove());
-
     const summaryEl = document.getElementById('summary-chart');
     if (summaryEl) renderSummaryChart(summaryEl);
 
@@ -1248,6 +1285,8 @@
         renderMeasureChart(el, el.dataset.section, el.dataset.measure);
       }
     });
+
+    renderOpenDetail();
   }
 
   // ── Init ─────────────────────────────────────────────────────────────────
@@ -1263,6 +1302,11 @@
     setupControls();
     renderAll();
     window.addEventListener('resize', renderAll);
+
+    const backdrop = document.getElementById('row-detail-backdrop');
+    if (backdrop) backdrop.addEventListener('click', () => {
+      openMeasureId = null; openRowMeta = null; closeDetailBar();
+    });
   }
 
   if (document.readyState === 'loading') {
