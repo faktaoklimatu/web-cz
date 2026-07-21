@@ -971,48 +971,6 @@
     return cell;
   }
 
-  // NPV two-pole scale: baseline (fossil) anchors the left, measure the right;
-  // band + dot + zero tick sit between them.
-  function renderNpvScale(container, row) {
-    const left = document.createElement('div');
-    left.className = 'rd-pole rd-pole-left';
-    left.textContent = row.baselineName || '';
-    const mid = document.createElement('div');
-    mid.className = 'rd-scale-track';
-    const right = document.createElement('div');
-    right.className = 'rd-pole rd-pole-right';
-    right.textContent = row.measureName || row.label;
-    container.appendChild(left);
-    container.appendChild(mid);
-    container.appendChild(right);
-
-    const W = mid.clientWidth || 400, H = 50, midY = 25;
-    const xScale = d3.scaleLinear().domain(globalXDomain || [-500000, 500000]).range([0, W]);
-    const z = xScale(0);
-    const color = npvFill(row.npv.value, (row.label || '') + ' ' + (row.baselineName || ''));
-
-    const svg = d3.select(mid).append('svg')
-      .attr('width', W).attr('height', H).style('display', 'block').style('font-family', CB_FONT);
-    // baseline track + zero tick
-    svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', midY).attr('y2', midY)
-      .attr('stroke', '#e6e9ed').attr('stroke-width', 1);
-    svg.append('line').attr('x1', z).attr('x2', z).attr('y1', midY - 12).attr('y2', midY + 12)
-      .attr('stroke', CLR_SUB).attr('stroke-width', 1);
-    // uncertainty band
-    svg.append('line')
-      .attr('x1', xScale(row.npv.low)).attr('x2', xScale(row.npv.high))
-      .attr('y1', midY).attr('y2', midY)
-      .attr('stroke', CLR_SUB).attr('stroke-width', 5).attr('stroke-linecap', 'round').attr('opacity', 0.3);
-    // dot + value label above it (as in the measure-chart rows)
-    const dotX = xScale(row.npv.value);
-    svg.append('circle').attr('cx', dotX).attr('cy', midY).attr('r', 7)
-      .attr('fill', color).attr('stroke', 'white').attr('stroke-width', 2);
-    svg.append('text')
-      .attr('x', Math.max(28, Math.min(W - 28, dotX))).attr('y', midY - 12).attr('text-anchor', 'middle')
-      .attr('font-family', CB_FONT).attr('font-size', '13px').attr('font-weight', '700')
-      .attr('fill', CLR_TEXT).text(fmtCZK(row.npv.value));
-  }
-
   // Plain CZK (no +/− sign) for descriptive amounts like CAPEX.
   function czkPlain(v) {
     const a = Math.abs(Math.round(v));
@@ -1039,6 +997,63 @@
     }
     if (m.lifetime != null)              parts.push('Životnost ' + Math.round(m.lifetime) + ' let');
     return parts.join('  ·  ');
+  }
+
+  const FUEL_CZ = {
+    Electricity: 'Elektřina', Lignite: 'Hnědé uhlí', 'Black coal': 'Černé uhlí', 'Hard coal': 'Černé uhlí',
+    Coal: 'Uhlí', 'Natural gas': 'Zemní plyn', Gas: 'Zemní plyn', Biomass: 'Biomasa', Wood: 'Dřevo',
+    'Wood pellets': 'Dřevní pelety', Petrol: 'Benzín', Gasoline: 'Benzín', Diesel: 'Nafta', 'Heating oil': 'Topný olej',
+  };
+  const fuelCz = f => FUEL_CZ[f] || f || '—';
+  const capexTotal = m => m.capex_czk != null
+    ? m.capex_czk
+    : (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0) + (m.capex_preparation_czk || 0);
+
+  // Parameter rows for the measure-vs-baseline comparison table.
+  function comparisonSpecs(m) {
+    if (m.transport_category) {
+      return [
+        ['Pořizovací cena', x => czkPlain(capexTotal(x))],
+        ['Provoz / rok',    x => czkPlain((x.opex_maintenance_czk || 0) + (x.opex_repairs_czk || 0) + (x.opex_insurance_czk || 0))],
+        ['Palivo',          x => fuelCz(x.fuel)],
+        ['Spotřeba',        x => x.demand_energy_per_100km != null ? fmtInt.format(Math.round(x.demand_energy_per_100km * 1000)) + ' kWh/100 km' : '—'],
+        ['Roční nájezd',    x => x.mileage != null ? fmtInt.format(x.mileage) + ' km' : '—'],
+        ['Životnost',       x => x.lifetime != null ? Math.round(x.lifetime) + ' let' : '—'],
+      ];
+    }
+    return [
+      ['Investiční náklady', x => czkPlain(capexTotal(x))],
+      ['Provoz / rok',       x => x.opex_maintenance_czk != null ? czkPlain(x.opex_maintenance_czk) : '—'],
+      ['Palivo',             x => fuelCz(x.fuel)],
+      ['Spotřeba paliva',    x => x.demand_heat_measure_mwh != null ? x.demand_heat_measure_mwh + ' MWh/rok' : '—'],
+      ['Účinnost',           x => x.efficiency != null ? String(x.efficiency).replace('.', ',') : '—'],
+      ['Životnost',          x => x.lifetime != null ? Math.round(x.lifetime) + ' let' : '—'],
+    ];
+  }
+
+  // Measure vs. baseline parameters as a compact 3-column table.
+  function renderComparison(container, measure, baseline) {
+    if (!measure) return;
+    const specs = comparisonSpecs(measure);
+    const tbl = document.createElement('table');
+    tbl.className = 'rd-params';
+    const htr = document.createElement('tr');
+    htr.innerHTML = '<th></th>'
+      + `<th class="rd-params-meas">${measure.measure_name || ''}</th>`
+      + (baseline ? `<th class="rd-params-base">${baseline.measure_name || ''}</th>` : '');
+    const thead = document.createElement('thead');
+    thead.appendChild(htr);
+    tbl.appendChild(thead);
+    const tb = document.createElement('tbody');
+    specs.forEach(([label, get]) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td class="rd-params-lbl">${label}</td>`
+        + `<td class="rd-params-meas">${get(measure)}</td>`
+        + (baseline ? `<td class="rd-params-base">${get(baseline)}</td>` : '');
+      tb.appendChild(tr);
+    });
+    tbl.appendChild(tb);
+    container.appendChild(tbl);
   }
 
   function renderDetailPanel(row, result) {
@@ -1094,17 +1109,11 @@
     hdr.appendChild(closeBtn);
     inner.appendChild(hdr);
 
-    // ── Row 2: NPV (cols 1-8) · Snížení emisí (9-10) · Snížení dovozu (11-12) ──
-    const npvCol = document.createElement('div');
-    npvCol.className = 'rd-col-npv';
-    const npvLbl = document.createElement('div');
-    npvLbl.className = 'rd-lbl';
-    npvLbl.textContent = 'Výhodnost (NPV)';        // axis label; value sits by the dot
-    const scaleEl = document.createElement('div');
-    scaleEl.className = 'rd-scale';
-    npvCol.appendChild(npvLbl);
-    npvCol.appendChild(scaleEl);
-    inner.appendChild(npvCol);
+    // ── Row 2: three stat cells — NPV (1-4) · emise (5-8) · dovoz (9-12) ──────
+    const npvColor = row.npv.value >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
+    const npvCell = statCell('Rozdíl v Net Present Value', fmtCZK(row.npv.value), null, npvColor);
+    npvCell.classList.add('rd-stat--npv');
+    inner.appendChild(npvCell);
 
     // Single-item detail: pictographs have nothing to compare against, so show
     // the number alone (bigger). Pictographs stay in the multi-row measure charts.
@@ -1123,8 +1132,6 @@
     dovozCell.classList.add('rd-stat--dovoz');
     inner.appendChild(dovozCell);
 
-    renderNpvScale(scaleEl, row);   // after layout so clientWidth is resolved
-
     // ── Row 3: Kumulativní NPV v čase (cols 1-8) · Citlivostní analýza (9-12) ──
     if ((result.yearByYear || []).length) {
       const wrap = document.createElement('div');
@@ -1136,8 +1143,20 @@
       timelineEl.className = 'row-detail-timeline';
       wrap.appendChild(lbl);
       wrap.appendChild(timelineEl);
+
+      // Full parameter comparison — measure vs. fossil baseline — under the timeline
+      const baseline = measure && measure.measure_baseline_id ? findMeasure(measure.measure_baseline_id) : null;
+      const plbl = document.createElement('div');
+      plbl.className = 'row-detail-section-label';
+      plbl.style.marginTop = '22px';
+      plbl.textContent = 'Parametry';
+      const cmp = document.createElement('div');
+      wrap.appendChild(plbl);
+      wrap.appendChild(cmp);
+
       inner.appendChild(wrap);
       renderNpvTimeline(timelineEl, result);
+      renderComparison(cmp, measure, baseline);
     }
 
     const carbon = measure ? carbonSensitivity(measure) : null;
@@ -1153,7 +1172,7 @@
       wrap.appendChild(lbl);
       wrap.appendChild(tornEl);
       inner.appendChild(wrap);
-      renderSensitivity(tornEl, sens);
+      renderTornado(tornEl, sens, result.npv);
     }
 
     // Footer: the slider inputs these figures were computed with
@@ -1255,22 +1274,56 @@
     return { param: 'Cena uhlíku', minNpv: Math.min(a, b), maxNpv: Math.max(a, b) };
   }
 
-  // Sensitivity as a compact list (biggest lever first): parameter → min→max NPV.
-  function renderSensitivity(container, sensInput) {
+  // Sensitivity tornado (biggest lever on top): red = downside, teal = upside,
+  // parameter label above each bar so bars use the full column width.
+  function renderTornado(container, sensInput, baseNpv) {
     const sens = [...(sensInput || [])]
       .sort((a, b) => (b.maxNpv - b.minNpv) - (a.maxNpv - a.minNpv));
     if (!sens.length) return;
 
-    const list = d3.select(container).append('div').attr('class', 'rd-sens');
-    sens.forEach(s => {
-      const rowEl = list.append('div').attr('class', 'rd-sens-row');
-      rowEl.append('span').attr('class', 'rd-sens-param').text(s.param);
-      const range = rowEl.append('span').attr('class', 'rd-sens-range');
-      range.append('span').style('color', COLOR_COSTLY).text(xAxisFmt(s.minNpv));
-      range.append('span').style('color', '#9ea7b3').text(' → ');
-      range.append('span').style('color', COLOR_FAVORABLE).text(xAxisFmt(s.maxNpv));
-      range.append('span').style('color', '#9ea7b3').text(' Kč');
+    const width  = container.clientWidth || 420;
+    const ROW    = 46, BAR = 12;
+    const M      = { top: 16, right: 14, bottom: 26, left: 2 };
+    const totalH = sens.length * ROW + M.top + M.bottom;
+    const chartW = Math.max(width - M.left - M.right, 120);
+
+    // Zoom to the outcome range; pull in 0 only when uncertainty crosses it.
+    const vals = [baseNpv, ...sens.flatMap(s => [s.minNpv, s.maxNpv])];
+    let xMin = Math.min(...vals), xMax = Math.max(...vals);
+    if (xMin <= 0 && xMax >= 0) { xMin = Math.min(xMin, 0); xMax = Math.max(xMax, 0); }
+    const pad = (xMax - xMin) * 0.08 || 10000;
+    const x = d3.scaleLinear().domain([xMin - pad, xMax + pad]).nice().range([0, chartW]);
+    const dom = x.domain(), showZero = dom[0] <= 0 && dom[1] >= 0;
+
+    const svg = d3.select(container).append('svg')
+      .attr('width', width).attr('height', totalH).style('font-family', CB_FONT);
+    const chart = svg.append('g').attr('transform', `translate(${M.left},0)`);
+
+    if (showZero) {
+      const z = x(0);
+      chart.append('line').attr('x1', z).attr('x2', z)
+        .attr('y1', M.top - 2).attr('y2', totalH - M.bottom)
+        .attr('stroke', '#c9d0d6').attr('stroke-width', 1).attr('stroke-dasharray', '4 3');
+    }
+
+    sens.forEach((s, i) => {
+      const top = M.top + i * ROW, by = top + 22;
+      chart.append('text').attr('x', 0).attr('y', top + 11)
+        .attr('font-size', '12px').attr('font-weight', '500').attr('fill', CLR_TEXT).text(s.param);
+      if (s.minNpv !== baseNpv) chart.append('rect')
+        .attr('x', x(Math.min(baseNpv, s.minNpv))).attr('y', by)
+        .attr('width', Math.abs(x(s.minNpv) - x(baseNpv))).attr('height', BAR)
+        .attr('fill', COLOR_COSTLY).attr('opacity', 0.8);
+      if (s.maxNpv !== baseNpv) chart.append('rect')
+        .attr('x', x(Math.min(baseNpv, s.maxNpv))).attr('y', by)
+        .attr('width', Math.abs(x(s.maxNpv) - x(baseNpv))).attr('height', BAR)
+        .attr('fill', COLOR_FAVORABLE).attr('opacity', 0.8);
     });
+
+    chart.append('g')
+      .attr('transform', `translate(0,${totalH - M.bottom})`).attr('class', 'chart-axis')
+      .call(d3.axisBottom(x).ticks(4).tickSize(3).tickFormat(xAxisFmt))
+      .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
   }
 
   // ── Render all ────────────────────────────────────────────────────────────

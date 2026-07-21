@@ -56,6 +56,28 @@ extra-scripts:
   padding-bottom: 0.25rem;
 }
 
+/* ── In-page measure navigation ────────────────────────────────────────────── */
+.measure-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e9ed;
+}
+.measure-nav a {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a7a85;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.measure-nav a:hover { text-decoration: underline; }
+
+/* Anchored headings must clear the sticky main + secondary navbars */
+.section h2 { scroll-margin-top: 190px; }
+
 .control-group {
   display: flex;
   flex-direction: column;
@@ -200,16 +222,22 @@ extra-scripts:
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
-/* Citlivostní analýza — numeric list */
-.rd-sens { width: 100%; max-width: 460px; }
-.rd-sens-row {
-  display: flex; justify-content: space-between; align-items: baseline; gap: 20px;
-  padding: 8px 0; border-bottom: 1px solid #eef1f4;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+/* Citlivostní analýza — tornado */
+.row-detail-sens svg { display: block; }
+
+/* Measure vs. baseline parameter comparison */
+.rd-params { width: 100%; border-collapse: collapse; font-size: 13px; }
+.rd-params th, .rd-params td {
+  text-align: left; padding: 6px 14px 6px 0; border-bottom: 1px solid #f0f2f4; vertical-align: baseline;
 }
-.rd-sens-row:last-child { border-bottom: none; }
-.rd-sens-param { font-size: 13px; color: #515b66; }
-.rd-sens-range { font-size: 13px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rd-params tbody tr:last-child td { border-bottom: none; }
+.rd-params thead th {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: #9ea7b3; font-weight: 700;
+  padding-bottom: 8px;
+}
+.rd-params-lbl  { color: #9ea7b3; width: 40%; }
+.rd-params-meas { color: #515b66; font-weight: 600; font-variant-numeric: tabular-nums; }
+.rd-params-base { color: #9ea7b3; font-variant-numeric: tabular-nums; }
 
 /* Footer spans the full grid width */
 .rd-footer {
@@ -222,9 +250,9 @@ extra-scripts:
 
 /* ── 12-column grid placement ───────────────────────────────────────────── */
 .rd-header      { grid-column: 1 / -1; }
-.rd-col-npv     { grid-column: 1 / 9;  min-width: 0; }
-.rd-stat--emise { grid-column: 9 / 11; }
-.rd-stat--dovoz { grid-column: 11 / 13; }
+.rd-stat--npv   { grid-column: 1 / 5; }
+.rd-stat--emise { grid-column: 5 / 9; }
+.rd-stat--dovoz { grid-column: 9 / 13; }
 .rd-chart--timeline { grid-column: 1 / 9;  min-width: 0; }
 .rd-chart--sens     { grid-column: 9 / 13; min-width: 0; }
 
@@ -234,6 +262,8 @@ extra-scripts:
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eef1f4;   /* separates identity from the metrics */
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 .rd-identity { flex: 1 1 auto; min-width: 0; }
@@ -248,24 +278,18 @@ extra-scripts:
 
 .rd-lbl {
   font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
-  color: #9ea7b3; line-height: 1.2; margin-bottom: 10px; max-width: 130px;
+  color: #9ea7b3; line-height: 1.2; margin-bottom: 10px;
 }
-.rd-col-npv .rd-lbl { max-width: none; }
 .rd-stat-val {
   display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
   gap: 2px;
-  min-height: 50px;                 /* matches the NPV scale height → aligns on its centerline */
   font-size: 16px; font-weight: 700; color: #515b66;
 }
 .rd-stat-val svg { flex: 0 0 auto; }
 .rd-stat-note { font-size: 11px; font-weight: 400; }
 
-/* NPV two-pole scale */
-.rd-scale { display: flex; align-items: center; gap: 14px; }
-.rd-pole { font-size: 13px; color: #515b66; flex: 0 1 auto; max-width: 160px; line-height: 1.25; }
-.rd-pole-left { text-align: right; }
-.rd-pole-right { text-align: left; font-weight: 600; }
-.rd-scale-track { flex: 1 1 auto; min-width: 120px; }
+/* NPV is the headline outcome — give it visual weight over the co-benefit metrics */
+.rd-stat--npv .rd-stat-val { font-size: 26px; }
 
 .row-detail-close {
   background: none;
@@ -288,7 +312,6 @@ extra-scripts:
   margin-bottom: 4px;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
-.row-detail-tornado svg { display: block; }
 
 /* ── Measure takeaway ────────────────────────────────────────────────────── */
 .measure-takeaway {
@@ -304,6 +327,15 @@ extra-scripts:
 
 {% assign data = site.data["costs-and-benefits"] %}
 
+{% assign building_measure_names = "" | split: "" %}
+{% for measure in data.buildings_measures %}
+  {% if measure.measure_baseline_id %}
+    {% unless building_measure_names contains measure.measure_name %}
+      {% assign building_measure_names = building_measure_names | push: measure.measure_name %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
 <div class="section pb-3">
   <div class="container between-navbars">
     <h1>{{ page.title }}</h1>
@@ -315,6 +347,15 @@ extra-scripts:
 
 <div id="secondary-navbar" class="section">
   <div class="container page-title">{{ page.title }}</div>
+
+  <nav class="container measure-nav" aria-label="Přejít na opatření">
+    {% for name in building_measure_names %}
+    <a href="#m-{{ forloop.index }}">{{ name }}</a>
+    {% endfor %}
+    <a href="#m-nove">Nové elektromobily</a>
+    <a href="#m-ojete">Ojeté elektromobily</a>
+  </nav>
+
   <div class="container controls-inner">
 
     <div class="control-group control-group--select">
@@ -411,17 +452,8 @@ extra-scripts:
 
 # Budovy
 
-{% assign building_measure_names = "" | split: "" %}
-{% for measure in data.buildings_measures %}
-  {% if measure.measure_baseline_id %}
-    {% unless building_measure_names contains measure.measure_name %}
-      {% assign building_measure_names = building_measure_names | push: measure.measure_name %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-
 {% for name in building_measure_names %}
-## {{ name }}
+## {{ name }} {#m-{{ forloop.index }}}
 {% if name == "Renovace se zateplením" %}
 <p class="measure-takeaway">Ekonomicky se vyplatí zejména u energeticky náročných domů (třída E, F) – úspora provozu vyváží nákladnou renovaci. U domů s vyšším standardem (třída D a výše) se zateplení čistě ekonomicky spíše nevyplatí.</p>
 {% elsif name == "Tepelné čerpadlo" %}
@@ -441,13 +473,13 @@ extra-scripts:
 {:.text-muted style="font-size:0.8rem; margin-top:-0.5rem"}
 Cena elektřiny pro elektromobily odpovídá scénáři „Nabíjím převážně doma ze sítě" (faktor 1,33).
 
-## Nové
+## Nové {#m-nove}
 
 <p class="measure-takeaway">Nové elektromobily jsou v Česku v celkových nákladech za 15 let životnosti již výhodné ve srovnání s novými auty se spalovacím motorem – navzdory vyšší pořizovací ceně. Ekonomická výhodnost ale zásadně závisí na způsobu nabíjení: při převážně domácím nabíjení se elektromobil vyplatí, při nabíjení venku nikoli.</p>
 
 <div class="measure-chart" data-section="transport" data-group="Nové"></div>
 
-## Ojeté
+## Ojeté {#m-ojete}
 
 <p class="measure-takeaway">Ojeté elektromobily jsou při převážně domácím nabíjení v celkových nákladech za 10 let výhodné oproti srovnatelným ojetinám se spalovacím motorem. Výsledek závisí na konkrétním modelu a ceně ojetiny.</p>
 
