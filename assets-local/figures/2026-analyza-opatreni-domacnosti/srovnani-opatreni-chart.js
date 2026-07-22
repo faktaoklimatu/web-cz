@@ -126,7 +126,7 @@
       .attr('x', COL1_X + COL_W / 2).attr('y', 24)
       .attr('text-anchor', 'middle')
       .attr('font-family', FONT).attr('font-size', '12px').attr('font-weight', '700')
-      .attr('fill', CLR_LBL).text('Net present value opatření');
+      .attr('fill', CLR_LBL).text('Rozdíl v Net Present Value');
 
     // Auto-scale units and compute zero positions so icons + label fit in COL_W
     const LBL_W = 65;   // px reserved for value label on the right
