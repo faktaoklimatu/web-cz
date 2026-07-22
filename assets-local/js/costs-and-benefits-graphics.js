@@ -5746,7 +5746,7 @@
     const CLR_SUB    = BSW_CFG.clrSub;
     const CLR_SEP    = BSW_CFG.clrSep;
     const ICON_BASE  = BSW_CFG.iconBase;
-    const PF_COLORS  = { worst: '#c0392b', normal: '#aaa', best: '#2471a3' };
+    const PF_COLORS  = { worst: '#eb9100', normal: '#aaa', best: '#6e42a6' };  // drahá=oranžová, levná=fialová
 
     const ROW_DEFS = [
       { mId: 31, bId:  7, cls: 'E', fuel: 'plyn', blLabel: 'Plynový kotel' },

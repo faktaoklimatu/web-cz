@@ -44,6 +44,17 @@ extra-scripts:
 </style>
 
 <style>
+/* Remove the alternating grey section background — keep the page uniformly white */
+.section, .section:nth-of-type(odd), .section:nth-of-type(even) { background-color: #fff; }
+
+/* ── Page-wide typography ───────────────────────────────────────────────────
+   The whole study uses Inter (site chrome / main navbar stays as the site sets). */
+#secondary-navbar, .section, .between-navbars,
+.section h1, .section h2, .section h3,
+.perex, .page-type, .measure-takeaway {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+
 /* ── Controls bar ──────────────────────────────────────────────────────────── */
 /* Sticky behaviour, z-index, shadow and background are handled by the site's
    #secondary-navbar / .secondary-navbar-stuck styles in _core_design.scss.    */
@@ -85,12 +96,40 @@ extra-scripts:
   max-width: 360px;
   min-width: 160px;
 }
-.control-group.control-group--select {
-  flex: 0 1 200px;
-  min-width: 160px;
-  max-width: 220px;
-  justify-content: flex-end;
+.control-group.control-group--seg {
+  flex: 0 0 auto;
+  max-width: none;
 }
+.control-group.control-group--narrow {
+  flex: 0 1 210px;
+  min-width: 150px;
+  max-width: 210px;
+}
+
+/* Segmented control — all options visible, single click, hover title for details */
+.seg {
+  display: inline-flex;
+  margin-top: 4px;
+  border: 1px solid #d3dae0;
+  border-radius: 6px;
+  overflow: hidden;
+  align-self: flex-start;
+}
+.seg-btn {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 11px;
+  background: #fff;
+  color: #666;
+  border: none;
+  border-right: 1px solid #d3dae0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.seg-btn:last-child { border-right: none; }
+.seg-btn:hover { background: #f0f3f5; color: #515b66; }
+.seg-btn.is-active { background: #515b66; color: #fff; }
 
 .control-head {
   display: flex;
@@ -104,14 +143,14 @@ extra-scripts:
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: #666;
+  color: #515b66;
   font-family: 'Inter';
 }
 
 .control-value {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #1a7a85;
+  color: #515b66;
 }
 
 /* ── Slider with ticks ─────────────────────────────────────────────────────── */
@@ -222,30 +261,54 @@ extra-scripts:
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
-/* Citlivostní analýza — tornado */
+/* Short explanatory subtitle under a section label */
+.rd-section-sub {
+  font-size: 12px; color: #9ea7b3; line-height: 1.4; margin: -1px 0 12px; max-width: 46ch;
+}
+
+/* Timeline headline — sentence, then the prominent payback figure on its own line */
+.rd-payback {
+  display: flex; flex-direction: column; gap: 3px;
+  margin: 2px 0 14px; max-width: 60ch;
+}
+.rd-payback-txt { font-size: 13px; color: #515b66; line-height: 1.4; }
+.rd-payback-num { font-size: 24px; font-weight: 700; color: #515b66; line-height: 1.15; }
+
+/* Citlivostní analýza — tornado / dumbbell */
 .row-detail-sens svg { display: block; }
 
-/* Measure vs. baseline parameter comparison */
+/* Variant toggle (dev/testing) */
+.rd-sens-toggle { display: flex; gap: 4px; margin-bottom: 10px; }
+.rd-sens-tbtn {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.02em;
+  color: #9ea7b3; background: #f4f6f8; border: 1px solid #e2e6ea; border-radius: 4px;
+  padding: 3px 8px; cursor: pointer;
+}
+.rd-sens-tbtn:hover { color: #515b66; }
+.rd-sens-tbtn.is-active { color: #fff; background: #515b66; border-color: #515b66; }
+
+/* Measure vs. baseline parameter comparison (params as columns, one row per variant) */
 .rd-params { width: 100%; border-collapse: collapse; font-size: 13px; }
 .rd-params th, .rd-params td {
-  text-align: left; padding: 6px 14px 6px 0; border-bottom: 1px solid #f0f2f4; vertical-align: baseline;
+  text-align: left; padding: 8px 16px 8px 0; border-bottom: 1px solid #f0f2f4; vertical-align: baseline;
+  font-variant-numeric: tabular-nums;
 }
 .rd-params tbody tr:last-child td { border-bottom: none; }
 .rd-params thead th {
   font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: #9ea7b3; font-weight: 700;
   padding-bottom: 8px;
 }
-.rd-params-lbl  { color: #9ea7b3; width: 40%; }
-.rd-params-meas { color: #515b66; font-weight: 600; font-variant-numeric: tabular-nums; }
-.rd-params-base { color: #9ea7b3; font-variant-numeric: tabular-nums; }
+.rd-params-name { font-variant-numeric: normal; }        /* first column: variant name */
+.rd-params-meas { color: #515b66; font-weight: 600; }
+.rd-params-base { color: #9ea7b3; }
 
-/* Footer spans the full grid width */
-.rd-footer {
-  grid-column: 1 / -1;
+/* Current-settings caption under the title */
+.rd-settings {
   margin-top: 8px;
   font-size: 12px;
   color: #9ea7b3;
-  font-family: 'Source Sans Pro', sans-serif;   /* site body font — distinct from the Inter UI */
+  line-height: 1.4;
 }
 
 /* ── 12-column grid placement ───────────────────────────────────────────── */
@@ -253,8 +316,10 @@ extra-scripts:
 .rd-stat--npv   { grid-column: 1 / 5; }
 .rd-stat--emise { grid-column: 5 / 9; }
 .rd-stat--dovoz { grid-column: 9 / 13; }
-.rd-chart--timeline { grid-column: 1 / 9;  min-width: 0; }
-.rd-chart--sens     { grid-column: 9 / 13; min-width: 0; }
+.rd-chart--timeline { grid-column: 1 / 7;  min-width: 0; }
+.rd-chart--sens     { grid-column: 7 / 13; min-width: 0; }
+.rd-params-row      { grid-column: 1 / -1; }
+.rd-hr              { grid-column: 1 / -1; border-bottom: 1px solid #eef1f4; }
 
 /* Header: title block (identity + close) */
 .rd-header {
@@ -271,10 +336,9 @@ extra-scripts:
   font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
   color: #515b66; margin-bottom: 3px;
 }
-.rd-title { font-size: 18px; color: #515b66; line-height: 1.25; }
+.rd-title { font-size: 22px; color: #515b66; line-height: 2; }
 .rd-title-name { font-weight: 700; }
 .rd-vs { color: #9ea7b3; font-weight: 400; }
-.rd-meta { font-size: 12px; color: #9ea7b3; margin-top: 7px; line-height: 1.5; }
 
 .rd-lbl {
   font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
@@ -283,13 +347,10 @@ extra-scripts:
 .rd-stat-val {
   display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
   gap: 2px;
-  font-size: 16px; font-weight: 700; color: #515b66;
+  font-size: 24px; font-weight: 700; color: #515b66;   /* all three KPIs share one style */
 }
 .rd-stat-val svg { flex: 0 0 auto; }
 .rd-stat-note { font-size: 11px; font-weight: 400; }
-
-/* NPV is the headline outcome — give it visual weight over the co-benefit metrics */
-.rd-stat--npv .rd-stat-val { font-size: 26px; }
 
 .row-detail-close {
   background: none;
@@ -317,7 +378,7 @@ extra-scripts:
 .measure-takeaway {
   font-size: 0.95rem;
   color: #515b66;
-  line-height: 1.6;
+  line-height: 1.4;
   margin: -0.25rem 0 1rem;
   max-width: 72ch;
 }
@@ -358,19 +419,19 @@ extra-scripts:
 
   <div class="container controls-inner">
 
-    <div class="control-group control-group--select">
-      <label class="control-label" for="fuel-scenario-select">Scénář energií</label>
-      <select id="fuel-scenario-select" class="form-select form-select-sm mt-1">
-        <option value="CP">Současné politiky</option>
-        <option value="CP_EC">Energetická krize</option>
-        <option value="NZ">Net-zero</option>
-      </select>
+    <div class="control-group control-group--seg">
+      <span class="control-label">Scénář energií</span>
+      <div class="seg" id="fuel-scenario-seg">
+        <button type="button" class="seg-btn is-active" data-scenario="CP" title="Vývoj cen energií při zachování současných politik a trhů.">Současné politiky</button>
+        <button type="button" class="seg-btn" data-scenario="CP_EC" title="Opakování energetické krize – trvale vyšší ceny fosilních paliv.">Energetická krize</button>
+        <button type="button" class="seg-btn" data-scenario="NZ" title="Cesta k uhlíkové neutralitě – rostoucí cena uhlíku, levnější čistá energie.">Net-zero</button>
+      </div>
     </div>
 
-    <div class="control-group">
+    <div class="control-group control-group--narrow">
       <div class="control-head">
         <span class="control-label">Nejistota cen energií</span>
-        <span class="control-value" id="price-uncertainty-value">0&thinsp;%</span>
+        <span class="control-value" id="price-uncertainty-value">0&nbsp;%</span>
       </div>
       <div class="slider-with-ticks">
         <input type="range" id="price-uncertainty-slider" min="-10" max="10" step="10" value="0">
@@ -402,15 +463,15 @@ extra-scripts:
           <!-- left = calc(val/200 * (100% - 16px) + 8px) -->
           <span class="tick-label" style="left:8px">
             <span class="tick-mark"></span>
-            <span class="tick-text">0 €<small>bez ceny uhlíku</small></span>
+            <span class="tick-text">0 €</span>
           </span>
           <span class="tick-label" style="left:calc(20% + 4.8px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">40 €<small>ETS2 nižší</small></span>
+            <span class="tick-text">40 €</span>
           </span>
           <span class="tick-label" style="left:calc(35% + 2.4px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">70 €<small>ETS2 vyšší</small></span>
+            <span class="tick-text">70 €</span>
           </span>
           <span class="tick-label" style="left:50%">
             <span class="tick-mark"></span>
@@ -418,19 +479,19 @@ extra-scripts:
           </span>
           <span class="tick-label" style="left:calc(100% - 8px)">
             <span class="tick-mark"></span>
-            <span class="tick-text">200 €<small>skutečná cena</small></span>
+            <span class="tick-text">200 €</span>
           </span>
         </div>
       </div>
     </div>
 
-    <div class="control-group control-group--select">
-      <label class="control-label" for="capex-level-select">Výše investičních nákladů</label>
-      <select id="capex-level-select" class="form-select form-select-sm mt-1">
-        <option value="1">Pesimistická</option>
-        <option value="0" selected>Střední</option>
-        <option value="-1">Optimistická</option>
-      </select>
+    <div class="control-group control-group--seg">
+      <span class="control-label">Výše investičních nákladů</span>
+      <div class="seg" id="capex-level-seg">
+        <button type="button" class="seg-btn" data-capex="-1" title="Nižší investiční náklady (rychlejší zlevňování technologií).">Optimistická</button>
+        <button type="button" class="seg-btn is-active" data-capex="0" title="Očekávané investiční náklady.">Střední</button>
+        <button type="button" class="seg-btn" data-capex="1" title="Vyšší investiční náklady, než se čeká.">Pesimistická</button>
+      </div>
     </div>
 
   </div>
