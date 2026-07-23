@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)",
+      "Bash(git rebase *)",
+      "Bash(node --input-type=module)",
+      "Bash(grep -A5 \"scenario: CP$\" _data/costs-and-benefits.yaml)",
+      "Bash(python3 -c ' *)",
+      "WebSearch",
+      "WebFetch(domain:www.tipcars.com)",
+      "WebFetch(domain:www.kurzy.cz)",
+      "WebFetch(domain:www.sauto.cz)",
+      "WebFetch(domain:www.autohled.cz)"
+    ]
+  }
+}
