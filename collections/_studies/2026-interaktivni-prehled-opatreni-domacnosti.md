@@ -2,9 +2,9 @@
 layout:        empty
 type:          "Interaktivní přehled"
 title:         "Opatření pro dekarbonizaci domácností"
-slug:          2026-opatreni-dekarbonizace-domacnosti
+slug:          2026-interaktivni-prehled-opatreni-domacnosti
 redirect_from:
-- /opatreni-dekarbonizace-domacnosti
+- /2026-interaktivni-prehled-opatreni-domacnosti
 weight:        210
 published:     2026-04-21
 tags-scopes:   [ cesko ]
@@ -16,6 +16,7 @@ extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/costs-benefits-calculator.js
 - /assets-local/js/costs-and-benefits.js
+- /assets-local/figures/2026-interaktivni-prehled-opatreni-domacnosti/scenare-cen-energii-chart.js
 ---
 
 <script>
