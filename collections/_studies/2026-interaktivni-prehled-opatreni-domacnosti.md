@@ -48,13 +48,14 @@ extra-scripts:
 .section, .section:nth-of-type(odd), .section:nth-of-type(even) { background-color: #fff; }
 
 /* ── Page-wide typography ───────────────────────────────────────────────────
-   Interactive UI (controls, charts, detail) uses Inter; the headings + intro use Roboto. */
-#secondary-navbar, .section, .between-navbars, .measure-takeaway {
+   Only the interactive UI (controls, charts, detail) uses Inter; classic text
+   (headings, paragraphs, perex, takeaways) keeps the site's default Source Sans. */
+#secondary-navbar {
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
-.section h1, .section h2, .section h3,
-.perex, .page-type, #secondary-navbar .page-title {
-  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+/* …but the page title is classic text — keep it in the site font. */
+#secondary-navbar .page-title {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* ── Controls bar ──────────────────────────────────────────────────────────── */
@@ -407,7 +408,7 @@ extra-scripts:
 
 /* ── Measure takeaway ────────────────────────────────────────────────────── */
 .measure-takeaway {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: #515b66;
   line-height: 1.4;
   margin: -0.25rem 0 1rem;
