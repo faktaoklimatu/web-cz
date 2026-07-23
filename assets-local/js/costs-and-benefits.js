@@ -202,7 +202,7 @@
   const fmtInt = new Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 0 });
 
   function fmtCZK(v) {
-    const sign = v < 0 ? '−\u00a0' : '+\u00a0';
+    const sign = v < 0 ? '−' : '+';
     const abs  = Math.abs(v);
     if (abs >= 1e6) return sign + (Math.round(abs / 1e5) / 10).toFixed(1).replace('.', ',') + '\u00a0mil. Kč';
     if (abs >= 1e3) return sign + fmtInt.format(Math.round(abs / 1e3))    + '\u00a0tis. Kč';
@@ -277,16 +277,28 @@
       state.carbonPrice = v;
       return v + '\u00a0€';
     });
-    setupSlider('price-uncertainty-slider', 'price-uncertainty-value', v => {
-      state.priceUncertainty = v;
-      const sign = v > 0 ? '+' : v < 0 ? '\u2212' : '';
-      return sign + Math.abs(v) + '\u00a0%';
-    });
-    setupSegmented('fuel-scenario-seg', 'scenario', v => { state.fuelScenario = v; });
+    setupSegmented('fuel-scenario-seg', 'scenario', v => { state.fuelScenario = v; updateCarbonLock(); });
     setupSegmented('capex-level-seg',  'capex',    v => { state.capexLevel = +v; });
+    // Group-level hover: control-labels carrying a data-desc get the same styled tooltip.
+    document.querySelectorAll('#secondary-navbar .control-label[data-desc]').forEach(lbl => {
+      const html = `<div style="font-size:12px;font-weight:700;color:${CLR_TEXT};margin-bottom:3px">${lbl.textContent}</div>`
+        + `<div style="font-size:12px;color:${CLR_SUB};max-width:240px">${lbl.dataset.desc}</div>`;
+      lbl.style.cursor = 'help';
+      lbl.addEventListener('mouseover', e => showTipHtml(e, html));
+      lbl.addEventListener('mousemove', moveTip);
+      lbl.addEventListener('mouseout',  hideTip);
+    });
+    updateCarbonLock();
   }
 
-  // Segmented control: single-click select, active state, re-render.
+  // Under Net-zero the carbon price follows the scenario trajectory, so the slider
+  // is inert — cover it with an explanatory overlay.
+  function updateCarbonLock() {
+    document.getElementById('carbon-group')?.classList.toggle('is-locked', state.fuelScenario === 'NZ');
+  }
+
+  // Segmented control: single-click select, active state, re-render. Each button's
+  // data-desc shows as the styled (summary-chart) tooltip on hover.
   function setupSegmented(containerId, dataKey, onSelect) {
     const el = document.getElementById(containerId);
     if (!el) return;
@@ -298,6 +310,13 @@
         onSelect(btn.dataset[dataKey]);
         renderAll();
       });
+      if (btn.dataset.desc) {
+        const html = `<div style="font-size:12px;font-weight:700;color:${CLR_TEXT};margin-bottom:3px">${btn.textContent}</div>`
+          + `<div style="font-size:12px;color:${CLR_SUB};max-width:240px">${btn.dataset.desc}</div>`;
+        btn.addEventListener('mouseover', e => showTipHtml(e, html));
+        btn.addEventListener('mousemove', moveTip);
+        btn.addEventListener('mouseout',  hideTip);
+      }
     });
   }
 
@@ -315,7 +334,17 @@
   const ANIM_MS = 450;
 
   // Returns a sorted array of { name, baseline, dots } for one section.
-  // Sorted descending by mean NPV so the most favorable measure is on top.
+  // Fixed display order of the building measures (summary chart + section flow).
+  const BUILDING_ORDER = [
+    'Tepelné čerpadlo',
+    'Renovace se zateplením',
+    'Střešní fotovoltaika + baterie',
+    'Kotel na dřevo',
+    'Elektrický kotel',
+  ];
+  const buildingOrderIdx = n => { const i = BUILDING_ORDER.indexOf(n); return i === -1 ? 999 : i; };
+
+  // Buildings ordered by the fixed list above; transport collapsed to one row.
   function getSummaryRows(section) {
     const isBuildings = section === 'buildings';
     const allMeasures = isBuildings ? data.buildings_measures : data.transport_measures;
@@ -358,7 +387,7 @@
         return { name, baseline: baselines.length ? baselines.join(', ') : null, dots };
       })
       .filter(r => r.dots.length > 0)
-      .sort((a, b) => d3.mean(b.dots, d => d.npv.value) - d3.mean(a.dots, d => d.npv.value));
+      .sort((a, b) => buildingOrderIdx(a.name) - buildingOrderIdx(b.name));
   }
 
   const xAxisFmt = v => {
@@ -425,17 +454,17 @@
 
     // Update static elements that depend on width/height
     svg.select('.npv-hdr').attr('x', SUMMARY_LABEL_W + chartW / 2).attr('y', 16)
-      .text('Rozdíl NPV oproti základní variantě (Kč)');
+      .text('Rozdíl Net Present Value oproti emisně náročnější variantě (Kč)');
 
-    // Direction labels — under the header, flanking the 0 line, coloured by meaning
+    // Direction labels — under the header, flanking the 0 line (neutral colour)
     svg.select('.half-lbl-l')
       .attr('x', SUMMARY_LABEL_W + z - 8).attr('y', 36).attr('text-anchor', 'end')
-      .attr('fill', CLR_NEG_COAL)
-      .text('← Fosilní opatření je výhodnější');
+      .attr('fill', CLR_TEXT)
+      .text('← Emisně náročnější varianta je výhodnější');
     svg.select('.half-lbl-r')
       .attr('x', SUMMARY_LABEL_W + z + 8).attr('y', 36).attr('text-anchor', 'start')
-      .attr('fill', COLOR_FAVORABLE)
-      .text('Dekarbonizační opatření je výhodnější →');
+      .attr('fill', CLR_TEXT)
+      .text('Nízkoemisní opatření je výhodnější →');
 
     // NPV scale — value + short tick below it, coloured by sign; drop the −1 mil. label
     const xtop = svg.select('.x-top');
@@ -467,7 +496,7 @@
       .attr('font-size', '13px').attr('font-weight', '700').style('letter-spacing', '0.04em')
       .merge(secSel)
       .attr('x', 4)
-      .attr('fill', s => s.color)
+      .attr('fill', CLR_TEXT)
       .attr('y', (s, i) => secOffsets[i].headerY + 14)
       .text(s => s.label.toUpperCase());
     secSel.exit().remove();
@@ -515,7 +544,7 @@
         .attr('y1', ZG).attr('y2', SUMMARY_ROW_H - ZG);
 
       g.select('.r-name').attr('y', row.baseline ? mid - 2 : mid + 5).text(row.name);
-      g.select('.r-base').attr('y', mid + 15).text(row.baseline ? 'vs. ' + row.baseline : '');
+      g.select('.r-base').attr('y', mid + 15).text(row.baseline ? 'vs. ' + lcBaseline(row.baseline) : '');
 
       const dotsG = g.select('.r-dots');
       dotsG.selectAll('*').remove();
@@ -584,7 +613,28 @@
   // the fuel is already implied by the "vs. baseline" line. Two measures keep it.
   const FUEL_IN_CONTEXT = ['Renovace se zateplením', 'Střešní fotovoltaika + baterie'];
   function contextPrefix(prefix, measureName) {
-    return FUEL_IN_CONTEXT.includes(measureName) ? prefix : prefix.replace(/\s+(uhlí|plyn)\s*$/i, '');
+    if (FUEL_IN_CONTEXT.includes(measureName)) {
+      return prefix.replace(/\s+uhlí\s*$/i, ' (kotel na uhlí)').replace(/\s+plyn\s*$/i, ' (kotel na plyn)');
+    }
+    return prefix.replace(/\s+(uhlí|plyn)\s*$/i, '');
+  }
+
+  // Lowercase the first letter of each comma-separated baseline name (used after "vs.").
+  const lcBaseline = s => s ? s.split(', ').map(p => p.charAt(0).toLowerCase() + p.slice(1)).join(', ') : s;
+
+  // Context label HTML for a row. FVE is distinguished by household electricity use
+  // ("⚡ SPOTŘEBA X MWh"), everything else by its energy-class badge + building type.
+  function contextHtml(measureName, measureId, label) {
+    if (measureName === 'Střešní fotovoltaika + baterie') {
+      const m = findMeasure(measureId);
+      const mwh = m && m.demand_electricity_mwh != null ? m.demand_electricity_mwh : null;
+      const building = splitLabel(label).prefix.replace(/\s+(uhlí|plyn)\s*$/i, '').toUpperCase();
+      const bolt = `<svg width="7" height="11" viewBox="0 0 7.102574 11.367486" style="display:inline-block;vertical-align:-1px;margin-right:4px">`
+        + `<path d="M7.102574,4.520453L3.551287,4.520453L3.551287,0L0,6.846908L3.551287,6.846908L3.551287,11.367486Z" fill="${CLR_TEXT}"/></svg>`;
+      return building + ' ' + bolt + 'SPOTŘEBA' + (mwh != null ? ' ' + mwh + ' MWh' : '');
+    }
+    const { prefix, badge } = splitLabel(label);
+    return badgeHtml(badge, 0) + (badge ? ' ' : '') + contextPrefix(prefix, measureName).toUpperCase();
   }
 
   // HTML for a summary-dot tooltip: context label (badge + context, fuel-aware) + value.
@@ -741,11 +791,10 @@
       // the context (badge + building type) and the "vs. baseline" line.
       const hasContext = row.measureName && row.measureName !== row.label;
       if (hasContext) {
-        const { prefix, badge } = splitLabel(row.label);
         div.append('xhtml:span')
           .style('font-size', '10px').style('font-weight', '700').style('line-height', '1.2')
           .style('color', CLR_TEXT).style('letter-spacing', '0.04em').style('white-space', 'nowrap')
-          .html(badgeHtml(badge, 0) + (badge ? ' ' : '') + contextPrefix(prefix, row.measureName).toUpperCase());
+          .html(contextHtml(row.measureName, row.measureId, row.label));
       } else {
         const { prefix, badge } = splitLabel(row.label);
         const mainText = badge ? prefix.toUpperCase() : row.label;
@@ -758,7 +807,7 @@
         div.append('xhtml:span')
           .style('font-size', '16px').style('font-weight', '500').style('margin-top', '2px')
           .style('color', CLR_TEXT)
-          .text('vs. ' + row.baselineName);
+          .text('vs. ' + lcBaseline(row.baselineName));
       }
 
       // ── NPV: uncertainty band + dot + label ────────────────────────────────
@@ -825,7 +874,7 @@
       svg.append('text')
         .attr('x', fuelLX).attr('y', numY).attr('text-anchor', 'start')
         .attr('font-family', CB_FONT).attr('font-size', '12px').attr('font-weight', '700')
-        .attr('fill', fuelCol).text(s1 != null ? fmtMWh(s1) : '—');
+        .attr('fill', fuelCol).text(s1 == null ? '—' : s1 === 0 ? '– MWh' : fmtMWh(s1));
 
       // ── "more info" affordance — the whole row is already clickable; this only
       //    signals that a detail view exists. ────────────────────────────────
@@ -990,9 +1039,8 @@
     if (note) {
       const n = document.createElement('span');
       n.className = 'rd-stat-note';
-      n.textContent = note;
+      n.innerHTML = note;               // note may contain <strong>
       if (noteColor) n.style.color = noteColor;
-      n.title = 'zemní plyn spotřebovaný na výrobu elektřiny';
       v.appendChild(n);
     }
     cell.appendChild(l);
@@ -1021,12 +1069,6 @@
     return lastNeg == null ? { verdict: 'always', year: 0 } : { verdict: 'payback', year: lastNeg + 1 };
   }
 
-  const FUEL_CZ = {
-    Electricity: 'Elektřina', Lignite: 'Hnědé uhlí', 'Black coal': 'Černé uhlí', 'Hard coal': 'Černé uhlí',
-    Coal: 'Uhlí', 'Natural gas': 'Zemní plyn', Gas: 'Zemní plyn', Biomass: 'Biomasa', Wood: 'Dřevo',
-    'Wood pellets': 'Dřevní pelety', Petrol: 'Benzín', Gasoline: 'Benzín', Diesel: 'Nafta', 'Heating oil': 'Topný olej',
-  };
-  const fuelCz = f => FUEL_CZ[f] || f || '—';
   const capexTotal = m => m.capex_czk != null
     ? m.capex_czk
     : (m.capex_technology_czk || 0) + (m.capex_installation_czk || 0) + (m.capex_preparation_czk || 0);
@@ -1065,7 +1107,6 @@
         ['Pořizovací cena',            x => czkPlain(capexTotal(x))],
         ['Náklady na palivo za životnost', lifeEnergy],
         ['Provoz za životnost',        x => czkPlain(((x.opex_maintenance_czk || 0) + (x.opex_repairs_czk || 0) + (x.opex_insurance_czk || 0)) * measureLifetime(x))],
-        ['Palivo',                     x => fuelCz(x.fuel)],
         ['Spotřeba',                   x => x.demand_energy_per_100km != null ? fmtInt.format(Math.round(x.demand_energy_per_100km * 1000)) + ' kWh/100 km' : '—'],
         ['Roční nájezd',               x => x.mileage != null ? fmtInt.format(x.mileage) + ' km' : '—'],
         ['Životnost',                  x => x.lifetime != null ? Math.round(x.lifetime) + ' let' : '—'],
@@ -1075,7 +1116,6 @@
       ['Investiční náklady',            x => czkPlain(capexTotal(x))],
       ['Náklady na energii za životnost', lifeEnergy],
       ['Údržba za životnost',           x => x.opex_maintenance_czk != null ? czkPlain(x.opex_maintenance_czk * measureLifetime(x)) : '—'],
-      ['Palivo',                        x => fuelCz(x.fuel)],
       ['Spotřeba paliva',               x => x.demand_heat_measure_mwh != null ? x.demand_heat_measure_mwh + ' MWh/rok' : '—'],
       ['Účinnost',                      x => x.efficiency != null ? String(x.efficiency).replace('.', ',') : '—'],
       ['Životnost',                     x => x.lifetime != null ? Math.round(x.lifetime) + ' let' : '—'],
@@ -1124,8 +1164,8 @@
     const CAPEX = { '-1': 'optimistická', '0': 'střední', '1': 'pesimistická' };
     const pu = (state.priceUncertainty > 0 ? '+' : '') + state.priceUncertainty + ' %';
     const settingsText =
-      `Platí pro nastavení: scénář energií „${SCEN[state.fuelScenario] || state.fuelScenario}“ · `
-      + `nejistota cen ${pu} · cena uhlíku ${state.carbonPrice} € · `
+      `Scénář energií „${SCEN[state.fuelScenario] || state.fuelScenario}“ · `
+      + `cena uhlíku ${state.carbonPrice} € · `
       + `investiční náklady ${CAPEX[state.capexLevel] || state.capexLevel} · `
       + `diskontní míra ${state.discountRate} %`;
 
@@ -1137,10 +1177,9 @@
     idBlock.className = 'rd-identity';
     const hasContext = row.measureName && row.measureName !== row.label;
     if (hasContext) {
-      const { prefix, badge } = splitLabel(row.label);
       const ctx = document.createElement('div');
       ctx.className = 'rd-context';
-      ctx.innerHTML = badgeHtml(badge, 0) + (badge ? ' ' : '') + contextPrefix(prefix, row.measureName).toUpperCase();
+      ctx.innerHTML = contextHtml(row.measureName, row.measureId, row.label);
       idBlock.appendChild(ctx);
     }
     const title = document.createElement('div');
@@ -1152,7 +1191,7 @@
     if (row.baselineName) {
       const vs = document.createElement('span');
       vs.className = 'rd-vs';
-      vs.textContent = ' vs. ' + row.baselineName;
+      vs.textContent = ' vs. ' + lcBaseline(row.baselineName);
       title.appendChild(vs);
     }
     idBlock.appendChild(title);
@@ -1187,9 +1226,15 @@
 
     const s1 = row.fossilImportSavings ? row.fossilImportSavings.scope1TotalMwh : null;
     const s2 = row.fossilImportSavings ? row.fossilImportSavings.scope2TotalMwh : 0;
-    const dovozNote = s2 ? (s2 > 0 ? '+' : '−') + fmtMWh(Math.abs(s2)) + ' na výrobu elektřiny' : null;
-    const dovozColor = s1 == null || s1 === 0 ? CLR_TEXT : s1 > 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
-    const dovozCell = statCell('Snížení dovozu ropy a zemního plynu', s1 != null ? fmtMWh(s1) : '—',
+    const dovozTotal = row.fossilImportSavings ? (s1 || 0) + (s2 || 0) : null;
+    const dovozNote = s2
+      ? (s2 < 0
+          ? 'Z toho výroba potřebné elektřiny naopak zvyšuje spotřebu zemního plynu o <strong>' + fmtMWh(Math.abs(s2)) + '</strong>.'
+          : 'Z toho <strong>' + fmtMWh(s2) + '</strong> připadá na nižší spotřebu zemního plynu při výrobě elektřiny.')
+      : null;
+    const dovozColor = dovozTotal == null || dovozTotal === 0 ? CLR_TEXT : dovozTotal > 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
+    const dovozValue = dovozTotal == null ? '—' : dovozTotal === 0 ? '– MWh' : fmtMWh(dovozTotal);
+    const dovozCell = statCell('Snížení dovozu ropy a zemního plynu', dovozValue,
       null, dovozColor, dovozNote, s2 > 0 ? CLR_POS : CLR_SUB);
     dovozCell.classList.add('rd-stat--dovoz');
     inner.appendChild(dovozCell);
@@ -1205,7 +1250,7 @@
       wrap.className = 'rd-chart--timeline';
       const lbl = document.createElement('div');
       lbl.className = 'row-detail-section-label';
-      lbl.textContent = 'Kumulativní NPV v čase';
+      lbl.textContent = 'Rozdíl v kumulativní Net Present Value v čase (Kč)';
 
       // Headline: prominent payback figure + supporting text
       const note = document.createElement('div');
@@ -1214,14 +1259,11 @@
       const pb = paybackInfo(result.yearByYear);
       const yr = n => n + ' ' + (n === 1 ? 'rok' : (n >= 2 && n <= 4 ? 'roky' : 'let'));
       if (pb.verdict === 'never') {
-        note.innerHTML = `<span class="rd-payback-txt">Investice do opatření „${nm}“ se za dobu životnosti</span>`
-          + `<span class="rd-payback-num">nevyplatí</span>`;
+        note.innerHTML = `Investice do opatření „${nm}“ se za dobu životnosti <strong>nevyplatí</strong>.`;
       } else if (pb.verdict === 'always') {
-        note.innerHTML = `<span class="rd-payback-txt">Investice do opatření „${nm}“ je výhodná</span>`
-          + `<span class="rd-payback-num">ihned</span>`;
+        note.innerHTML = `Investice do opatření „${nm}“ je výhodná <strong>ihned</strong>.`;
       } else {
-        note.innerHTML = `<span class="rd-payback-txt">Investice do opatření „${nm}“ se vyplatí za</span>`
-          + `<span class="rd-payback-num">${yr(pb.year)}</span>`;
+        note.innerHTML = `Investice do opatření „${nm}“ se vyplatí za <strong>${yr(pb.year)}</strong>.`;
       }
 
       const timelineEl = document.createElement('div');
@@ -1234,14 +1276,15 @@
     }
 
     const carbon = measure ? carbonSensitivity(measure) : null;
-    // Replace the generic "opatření" / "základní varianty" with the real names.
-    const lcFirst = s => s ? s.charAt(0).toLowerCase() + s.slice(1) : s;
-    const mName = lcFirst((measure && measure.measure_name) || 'opatření');
-    const bName = lcFirst((baseline && baseline.measure_name) || 'základní variantu');
-    const sens = [...(result.sensitivity || []), ...(carbon ? [carbon] : [])].map(s => {
-      if (s.param === 'Investiční náklady opatření')          return { ...s, param: 'Investiční náklady na ' + mName };
-      if (s.param === 'Investiční náklady základní varianty') return { ...s, param: 'Investiční náklady na ' + bName };
-      return s;
+    // The navbar's "Výše investičních nákladů" is one lever (it scales the measure's
+    // CAPEX), so collapse the two CAPEX sensitivity rows into a single matching row and
+    // relabel its ends optimistická/pesimistická.
+    const capexLbl = l => (l && l.includes('+')) ? 'pesimistická' : 'optimistická';
+    const sens = [...(result.sensitivity || []), ...(carbon ? [carbon] : [])].flatMap(s => {
+      if (s.param === 'Investiční náklady základní varianty') return [];   // merged into the row below
+      if (s.param === 'Investiční náklady opatření')
+        return [{ ...s, param: 'Výše investičních nákladů', minLabel: capexLbl(s.minLabel), maxLabel: capexLbl(s.maxLabel) }];
+      return [s];
     });
     if (sens.length) {
       const wrap = document.createElement('div');
@@ -1251,7 +1294,7 @@
       lbl.textContent = 'Co ovlivňuje výhodnost';
       const sub = document.createElement('div');
       sub.className = 'rd-section-sub';
-      sub.textContent = 'Jak moc změní výhodnost (NPV) změna jednotlivých faktorů.';
+      sub.textContent = 'Jak ovlivní ekonomickou výhodnost opatření změna jednotlivých parametrů.';
       const tornEl = document.createElement('div');
       tornEl.className = 'row-detail-sens';
       wrap.appendChild(lbl);
@@ -1265,11 +1308,11 @@
     if (measure) {
       const wrap = document.createElement('div');
       wrap.className = 'rd-params-row';
-      const plbl = document.createElement('div');
-      plbl.className = 'row-detail-section-label';
-      plbl.textContent = 'Parametry';
+      const phr = document.createElement('div');
+      phr.className = 'rd-hr';
+      phr.style.margin = '0 0 16px';
       const cmp = document.createElement('div');
-      wrap.appendChild(plbl);
+      wrap.appendChild(phr);
       wrap.appendChild(cmp);
       inner.appendChild(wrap);
       renderComparison(cmp, measure, baseline);
@@ -1341,7 +1384,7 @@
       .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
     chart.append('text')
       .attr('x', 0).attr('y', chartH + 28)
-      .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', '#999')
+      .attr('text-anchor', 'start').attr('font-size', '11px').attr('fill', CLR_SUB)
       .text('Rok od investice →');
 
     // Y axis — on the right of the chart
@@ -1366,42 +1409,12 @@
     };
   }
 
-  // ── Sensitivity chart: dispatch between variants (dev toggle) ──────────────
-  let sensVariant = 'table';   // persists across re-renders
-
   function renderSensitivity(container, sensInput, baseNpv) {
-    const VARIANTS = [
-      ['table',          'Tabulka'],
-      ['dumbbell-input', 'Vážky · vstupy'],
-      ['dumbbell-value', 'Vážky · Kč'],
-      ['tornado',        'Tornado'],
-    ];
-    const toggle = document.createElement('div');
-    toggle.className = 'rd-sens-toggle';
-    VARIANTS.forEach(([key, label]) => {
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'rd-sens-tbtn' + (sensVariant === key ? ' is-active' : '');
-      b.textContent = label;
-      b.onclick = () => { sensVariant = key; renderOpenDetail(); };
-      toggle.appendChild(b);
-    });
-    container.appendChild(toggle);
-
-    const chart = document.createElement('div');
-    container.appendChild(chart);
-    if (sensVariant === 'tornado') {
-      renderTornado(chart, sensInput, baseNpv);
-    } else if (sensVariant === 'table') {
-      renderSensTable(chart, sensInput, baseNpv);
-    } else {
-      renderDumbbell(chart, sensInput, baseNpv, { labelMode: sensVariant === 'dumbbell-value' ? 'value' : 'input', dividers: false, axis: true });
-    }
+    renderSensTable(container, sensInput, baseNpv);
   }
 
   // Compact table: parameter name (left) + dumbbell on the SAME line, one row each,
-  // sorted by impact, divider between rows, no axis. Shared NPV scale so bar length
-  // is comparable → the longest bar is the biggest lever.
+  // sorted by impact, divider between rows, with a shared NPV x-axis on top.
   function renderSensTable(container, sensInput, baseNpv) {
     const sens = [...(sensInput || [])]
       .sort((a, b) => (b.maxNpv - b.minNpv) - (a.maxNpv - a.minNpv));
@@ -1410,7 +1423,7 @@
     const width  = container.clientWidth || 500;
     const LBL_W  = Math.min(190, Math.max(130, width * 0.36));
     const ROW    = 48;   // taller: NPV value above the dots + input label beside them
-    const M      = { top: 4, right: 8, bottom: 4 };
+    const M      = { top: 30, right: 8, bottom: 4 };   // top holds the NPV axis
     const PAD    = 42;   // room for the flanking input labels at the extremes
     const totalH = sens.length * ROW + M.top + M.bottom;
     const plotX  = LBL_W;
@@ -1424,6 +1437,16 @@
 
     const svg = d3.select(container).append('svg')
       .attr('width', width).attr('height', totalH).style('font-family', CB_FONT);
+
+    // Top NPV axis — tick labels + short ticks, no domain line (like the dumbbell axis)
+    const axis = svg.append('g').attr('transform', `translate(${plotX},0)`);
+    x.ticks(5).forEach(t => {
+      const tx = x(t);
+      axis.append('text').attr('x', tx).attr('y', 12).attr('text-anchor', 'middle')
+        .attr('font-size', '11px').attr('fill', CLR_SUB).text(xAxisFmt(t));
+      axis.append('line').attr('x1', tx).attr('x2', tx).attr('y1', 17).attr('y2', 22)
+        .attr('stroke', CLR_SUB).attr('stroke-width', 1);
+    });
 
     if (showZero) {
       const z = plotX + x(0);
@@ -1457,11 +1480,11 @@
       svg.append('circle').attr('cx', xCur).attr('cy', cy).attr('r', 4.5)
         .attr('fill', '#fff').attr('stroke', CLR_TEXT).attr('stroke-width', 2);
 
-      // Input-bound (edge-case) labels — same style as the parameter name
+      // Input-bound (edge-case) labels — normal weight
       svg.append('text').attr('x', xLo - 8).attr('y', cy + 4).attr('text-anchor', 'end')
-        .attr('font-size', '12px').attr('font-weight', '700').attr('fill', CLR_TEXT).text(s.minLabel || '');
+        .attr('font-size', '12px').attr('font-weight', '400').attr('fill', CLR_TEXT).text(s.minLabel || '');
       svg.append('text').attr('x', xHi + 8).attr('y', cy + 4).attr('text-anchor', 'start')
-        .attr('font-size', '12px').attr('font-weight', '700').attr('fill', CLR_TEXT).text(s.maxLabel || '');
+        .attr('font-size', '12px').attr('font-weight', '400').attr('fill', CLR_TEXT).text(s.maxLabel || '');
 
       // NPV value above each dot — light, coloured by sign (matches the line)
       const near = (xHi - xLo) < 90;

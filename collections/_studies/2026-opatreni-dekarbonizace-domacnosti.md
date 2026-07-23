@@ -11,7 +11,7 @@ tags-scopes:   [ cesko ]
 tags-topics:   [ opatreni, budovy, doprava ]
 caption:       "Jak jsou nákladově efektivní různá opatření pro dekarbonizaci domácností?"
 intro: |
-    Tento přehled porovnává nákladovou efektivitu opatření pro dekarbonizaci domácností – jak v oblasti budov, tak v dopravě. Pro každé opatření lze porovnat jeho efektivitu v různých kontextech (typ budovy nebo vozidla).
+    Tento přehled porovnává efektivitu opatření pro dekarbonizaci domácností v budovách a dopravě oproti emisně náročnějším variantám. A to z pohledu jejich ekonomiky, emisí CO₂ a úspory dovážených fosilních paliv.
 extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/costs-benefits-calculator.js
@@ -48,11 +48,13 @@ extra-scripts:
 .section, .section:nth-of-type(odd), .section:nth-of-type(even) { background-color: #fff; }
 
 /* ── Page-wide typography ───────────────────────────────────────────────────
-   The whole study uses Inter (site chrome / main navbar stays as the site sets). */
-#secondary-navbar, .section, .between-navbars,
-.section h1, .section h2, .section h3,
-.perex, .page-type, .measure-takeaway {
+   Interactive UI (controls, charts, detail) uses Inter; the headings + intro use Roboto. */
+#secondary-navbar, .section, .between-navbars, .measure-takeaway {
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+.section h1, .section h2, .section h3,
+.perex, .page-type, #secondary-navbar .page-title {
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
 /* ── Controls bar ──────────────────────────────────────────────────────────── */
@@ -62,12 +64,15 @@ extra-scripts:
 .controls-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 32px;
+  gap: 8px 40px;
   align-items: flex-start;
   padding-bottom: 0.25rem;
 }
 
 /* ── In-page measure navigation ────────────────────────────────────────────── */
+/* Extra space above the sticky title once the navbar collapses (scrolled down) */
+#secondary-navbar.secondary-navbar-stuck { padding-top: 10px; }
+#secondary-navbar.secondary-navbar-stuck .page-title { opacity: 1; margin-bottom: 1rem; }
 .measure-nav {
   display: flex;
   flex-wrap: wrap;
@@ -75,16 +80,23 @@ extra-scripts:
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #e6e9ed;
+  font-size: 0.9rem;
 }
-.measure-nav a {
+#secondary-navbar .measure-nav a {
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;   /* override the site's larger link styling */
   font-weight: 600;
-  color: #1a7a85;
-  text-decoration: none;
+  color: #1a7a85 !important;      /* override the site's grey link colour */
+  text-decoration: none !important;
   white-space: nowrap;
+  line-height: 1.3;
 }
-.measure-nav a:hover { text-decoration: underline; }
+#secondary-navbar .measure-nav a:hover { color: #0d5a63 !important; text-decoration: none !important; }
+/* Active measure (site scroll-spy adds .highlighted) → bold, not underlined */
+#secondary-navbar .measure-nav a.highlighted {
+  font-weight: 700;
+  text-decoration: none !important;
+}
 
 /* Anchored headings must clear the sticky main + secondary navbars */
 .section h2 { scroll-margin-top: 190px; }
@@ -92,18 +104,27 @@ extra-scripts:
 .control-group {
   display: flex;
   flex-direction: column;
-  flex: 1 1 180px;
-  max-width: 360px;
-  min-width: 160px;
-}
-.control-group.control-group--seg {
-  flex: 0 0 auto;
+  flex: 1 1 0;          /* equal thirds across the three controls */
   max-width: none;
+  min-width: 190px;
+  position: relative;   /* anchor for the Net-zero overlay */
 }
-.control-group.control-group--narrow {
-  flex: 0 1 210px;
-  min-width: 150px;
-  max-width: 210px;
+
+/* Net-zero: the carbon price follows the scenario, so the slider is replaced by a note */
+.carbon-lock {
+  display: none;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #515b66;
+  line-height: 1.35;
+  padding-top: 8px;
+}
+#carbon-group.is-locked .carbon-lock       { display: block; }
+#carbon-group.is-locked .slider-with-ticks { display: none; }
+#carbon-group.is-locked .control-value     { display: none; }
+.control-group.control-group--seg {
+  flex: 1 1 0;
 }
 
 /* Segmented control — all options visible, single click, hover title for details */
@@ -164,7 +185,7 @@ extra-scripts:
   width: 100%;
   margin: 0;
   cursor: pointer;
-  accent-color: #1a7a85;
+  accent-color: #515b66;
 }
 .tick-labels {
   position: absolute;
@@ -263,30 +284,18 @@ extra-scripts:
 
 /* Short explanatory subtitle under a section label */
 .rd-section-sub {
-  font-size: 12px; color: #9ea7b3; line-height: 1.4; margin: -1px 0 12px; max-width: 46ch;
+  font-size: 12px; color: #515b66; line-height: 1.4; margin: -1px 0 12px; max-width: 46ch;
 }
 
-/* Timeline headline — sentence, then the prominent payback figure on its own line */
+/* Timeline headline — sentence with the payback figure bolded inline */
 .rd-payback {
-  display: flex; flex-direction: column; gap: 3px;
+  font-size: 13px; color: #515b66; line-height: 1.45;
   margin: 2px 0 14px; max-width: 60ch;
 }
-.rd-payback-txt { font-size: 13px; color: #515b66; line-height: 1.4; }
-.rd-payback-num { font-size: 24px; font-weight: 700; color: #515b66; line-height: 1.15; }
+.rd-payback strong { font-weight: 700; }
 
 /* Citlivostní analýza — tornado / dumbbell */
 .row-detail-sens svg { display: block; }
-
-/* Variant toggle (dev/testing) */
-.rd-sens-toggle { display: flex; gap: 4px; margin-bottom: 10px; }
-.rd-sens-tbtn {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 10px; font-weight: 600; letter-spacing: 0.02em;
-  color: #9ea7b3; background: #f4f6f8; border: 1px solid #e2e6ea; border-radius: 4px;
-  padding: 3px 8px; cursor: pointer;
-}
-.rd-sens-tbtn:hover { color: #515b66; }
-.rd-sens-tbtn.is-active { color: #fff; background: #515b66; border-color: #515b66; }
 
 /* Measure vs. baseline parameter comparison (params as columns, one row per variant) */
 .rd-params { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -313,9 +322,9 @@ extra-scripts:
 
 /* ── 12-column grid placement ───────────────────────────────────────────── */
 .rd-header      { grid-column: 1 / -1; }
-.rd-stat--npv   { grid-column: 1 / 5; }
-.rd-stat--emise { grid-column: 5 / 9; }
-.rd-stat--dovoz { grid-column: 9 / 13; }
+.rd-stat--npv   { grid-column: 1 / 7; }    /* 6fr */
+.rd-stat--emise { grid-column: 7 / 10; }   /* 3fr */
+.rd-stat--dovoz { grid-column: 10 / 13; }  /* 3fr */
 .rd-chart--timeline { grid-column: 1 / 7;  min-width: 0; }
 .rd-chart--sens     { grid-column: 7 / 13; min-width: 0; }
 .rd-params-row      { grid-column: 1 / -1; }
@@ -341,8 +350,8 @@ extra-scripts:
 .rd-vs { color: #9ea7b3; font-weight: 400; }
 
 .rd-lbl {
-  font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
-  color: #9ea7b3; line-height: 1.2; margin-bottom: 10px;
+  font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+  color: #515b66; line-height: 1.2; margin-bottom: 10px;
 }
 .rd-stat-val {
   display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
@@ -350,13 +359,14 @@ extra-scripts:
   font-size: 24px; font-weight: 700; color: #515b66;   /* all three KPIs share one style */
 }
 .rd-stat-val svg { flex: 0 0 auto; }
-.rd-stat-note { font-size: 11px; font-weight: 400; }
+.rd-stat-note { font-size: 11px; font-weight: 400; text-decoration: none; border-bottom: none; }
+.rd-stat-note strong { font-weight: 700; }
 
 .row-detail-close {
   background: none;
   border: none;
   font-size: 15px;
-  color: #bbb;
+  color: #9ea7b3;
   cursor: pointer;
   padding: 0 0 0 12px;
   line-height: 1;
@@ -365,11 +375,11 @@ extra-scripts:
 .row-detail-close:hover { color: #555; }
 
 .row-detail-section-label {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #999;
+  color: #515b66;
   margin-bottom: 4px;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
@@ -388,14 +398,8 @@ extra-scripts:
 
 {% assign data = site.data["costs-and-benefits"] %}
 
-{% assign building_measure_names = "" | split: "" %}
-{% for measure in data.buildings_measures %}
-  {% if measure.measure_baseline_id %}
-    {% unless building_measure_names contains measure.measure_name %}
-      {% assign building_measure_names = building_measure_names | push: measure.measure_name %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
+{% comment %} Fixed display order (must match BUILDING_ORDER in costs-and-benefits.js) {% endcomment %}
+{% assign building_measure_names = "Tepelné čerpadlo|Renovace se zateplením|Střešní fotovoltaika + baterie|Kotel na dřevo|Elektrický kotel" | split: "|" %}
 
 <div class="section pb-3">
   <div class="container between-navbars">
@@ -413,50 +417,35 @@ extra-scripts:
     {% for name in building_measure_names %}
     <a href="#m-{{ forloop.index }}">{{ name }}</a>
     {% endfor %}
-    <a href="#m-nove">Nové elektromobily</a>
-    <a href="#m-ojete">Ojeté elektromobily</a>
+    <a href="#m-nove">Elektromobily</a>
   </nav>
 
   <div class="container controls-inner">
 
     <div class="control-group control-group--seg">
-      <span class="control-label">Scénář energií</span>
+      <span class="control-label" data-desc="Všechny scénáře reflektují probíhající Hormuzskou krizi a předpokládají její trvání do roku 2028.">Scénář cen energií</span>
       <div class="seg" id="fuel-scenario-seg">
-        <button type="button" class="seg-btn is-active" data-scenario="CP" title="Vývoj cen energií při zachování současných politik a trhů.">Současné politiky</button>
-        <button type="button" class="seg-btn" data-scenario="CP_EC" title="Opakování energetické krize – trvale vyšší ceny fosilních paliv.">Energetická krize</button>
-        <button type="button" class="seg-btn" data-scenario="NZ" title="Cesta k uhlíkové neutralitě – rostoucí cena uhlíku, levnější čistá energie.">Net-zero</button>
+        <button type="button" class="seg-btn is-active" data-scenario="CP" data-desc="Vychází z aktuálně platných plánů (rozvoj OZE nebo jaderné energetiky, konec uhlí).">Současné politiky</button>
+        <button type="button" class="seg-btn" data-scenario="CP_EC" data-desc="Totožný se scénářem současných politik, akorát předpokládá hypotetickou šestiletou energetickou krizi od roku 2029, která zvýší ceny fosilních paliv i elektřiny ze sítě.">Energetická krize</button>
+        <button type="button" class="seg-btn" data-scenario="NZ" data-desc="Odráží vyšší tempo adopce nízkoemisních zdrojů a průměrnou cenu emisní povolenky ve výši 200 €.">Net-zero</button>
       </div>
     </div>
 
-    <div class="control-group control-group--narrow">
-      <div class="control-head">
-        <span class="control-label">Nejistota cen energií</span>
-        <span class="control-value" id="price-uncertainty-value">0&nbsp;%</span>
-      </div>
-      <div class="slider-with-ticks">
-        <input type="range" id="price-uncertainty-slider" min="-10" max="10" step="10" value="0">
-        <div class="tick-labels">
-          <span class="tick-label" style="left:8px">
-            <span class="tick-mark"></span>
-            <span class="tick-text">−10 %<small>levnější</small></span>
-          </span>
-          <span class="tick-label" style="left:50%">
-            <span class="tick-mark"></span>
-            <span class="tick-text">0 %<small>základ</small></span>
-          </span>
-          <span class="tick-label" style="left:calc(100% - 8px)">
-            <span class="tick-mark"></span>
-            <span class="tick-text">+10 %<small>dražší</small></span>
-          </span>
-        </div>
+    <div class="control-group control-group--seg">
+      <span class="control-label">Výše investičních nákladů</span>
+      <div class="seg" id="capex-level-seg">
+        <button type="button" class="seg-btn" data-capex="-1" data-desc="Nízkoemisní opatření je relativně levnější, zatímco emisně náročnější varianta je relativně dražší než ve středním scénáři.">Optimistická</button>
+        <button type="button" class="seg-btn is-active" data-capex="0" data-desc="Námi stanovená průměrná cena nízkoemisního opatření i emisně náročnější varianty.">Střední</button>
+        <button type="button" class="seg-btn" data-capex="1" data-desc="Nízkoemisní opatření je relativně dražší, zatímco emisně náročnější varianta je relativně levnější než ve středním scénáři.">Pesimistická</button>
       </div>
     </div>
 
-    <div class="control-group">
+    <div class="control-group" id="carbon-group">
       <div class="control-head">
         <span class="control-label">Cena uhlíku (ETS&nbsp;2)</span>
         <span class="control-value" id="carbon-price-value">70&thinsp;€</span>
       </div>
+      <div class="carbon-lock" id="carbon-lock">Cena uhlíku má ve scénáři net-zero předem stanovenou trajektorii v průměru 200 €.</div>
       <div class="slider-with-ticks">
         <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="70">
         <div class="tick-labels">
@@ -465,32 +454,15 @@ extra-scripts:
             <span class="tick-mark"></span>
             <span class="tick-text">0 €</span>
           </span>
-          <span class="tick-label" style="left:calc(20% + 4.8px)">
-            <span class="tick-mark"></span>
-            <span class="tick-text">40 €</span>
-          </span>
           <span class="tick-label" style="left:calc(35% + 2.4px)">
             <span class="tick-mark"></span>
             <span class="tick-text">70 €</span>
-          </span>
-          <span class="tick-label" style="left:50%">
-            <span class="tick-mark"></span>
-            <span class="tick-text">100 €</span>
           </span>
           <span class="tick-label" style="left:calc(100% - 8px)">
             <span class="tick-mark"></span>
             <span class="tick-text">200 €</span>
           </span>
         </div>
-      </div>
-    </div>
-
-    <div class="control-group control-group--seg">
-      <span class="control-label">Výše investičních nákladů</span>
-      <div class="seg" id="capex-level-seg">
-        <button type="button" class="seg-btn" data-capex="-1" title="Nižší investiční náklady (rychlejší zlevňování technologií).">Optimistická</button>
-        <button type="button" class="seg-btn is-active" data-capex="0" title="Očekávané investiční náklady.">Střední</button>
-        <button type="button" class="seg-btn" data-capex="1" title="Vyšší investiční náklady, než se čeká.">Pesimistická</button>
       </div>
     </div>
 
@@ -516,15 +488,15 @@ extra-scripts:
 {% for name in building_measure_names %}
 ## {{ name }} {#m-{{ forloop.index }}}
 {% if name == "Renovace se zateplením" %}
-<p class="measure-takeaway">Ekonomicky se vyplatí zejména u energeticky náročných domů (třída E, F) – úspora provozu vyváží nákladnou renovaci. U domů s vyšším standardem (třída D a výše) se zateplení čistě ekonomicky spíše nevyplatí.</p>
+<p class="measure-takeaway">Ekonomicky se vyplatí především zateplení energeticky náročných rodinných domů, a to i ve scénářích s nízkou cenou uhlíku. Snížení emisí CO₂ po zateplení je nejvyšší u domů vytápěných uhlím, protože mají vysokou emisní náročnost.</p>
 {% elsif name == "Tepelné čerpadlo" %}
-<p class="measure-takeaway">Ekonomická výhodnost závisí na ceně uhlíku – bez jeho zpoplatnění se tepelné čerpadlo mírně nevyplatí, ale při ceně 70&thinsp;€/t CO₂ se vyplatí napříč všemi typy budov.</p>
+<p class="measure-takeaway">Ekonomická výhodnost závisí na ceně uhlíku – bez jeho zpoplatnění se tepelné čerpadlo mírně nevyplatí, ale při ceně 70&thinsp;€/t CO₂ se vyplatí napříč všemi typy budov. K největší úspoře emisí dochází u domů, které využívají k vytápění uhlí. Naopak úsporu dovážených fosilních paliv přináší náhrada plynových kotlů (uhlí je totiž z velké části lokální).</p>
 {% elsif name == "Kotel na dřevo" %}
-<p class="measure-takeaway">Oproti plynovému kotli se kotel na dřevo ekonomicky vyplatí i bez zpoplatnění uhlíku, oproti uhelný kotli při ceně alespoň 40&thinsp;€/t CO₂. Snížení emisí CO₂ je ale sporné – novější vědecké práce zpochybňují uhlíkovou neutralitu spalování dřeva.</p>
+<p class="measure-takeaway">Ekonomicky se vyplatí především v případě levného zdroje dřeva, což však bývá vyváženo nároky na jeho přípravu a skladování. Ačkoliv dřevo uvažujeme jako uhlíkově neutrální zdroj, v realitě je jeho nízká emisní stopa sporná. Spalování dřeva navíc způsobuje lokální znečištění ovzduší.</p>
 {% elsif name == "Elektrický kotel" %}
-<p class="measure-takeaway">Elektrický kotel se ekonomicky výrazně nevyplatí v energeticky náročnějších budovách, a nevyplatí se ani emisně – český elektroenergetický mix má vyšší emisní intenzitu než samotný zemní plyn.</p>
+<p class="measure-takeaway">Elektrický kotel se vyplatí pouze v budovách s velmi nízkou spotřebou energie. V případě využívání elektřiny ze sítě ve srovnání s plynovým kotlem nepřináší úsporu emisí – český elektrický mix má vyšší emisní intenzitu než samotný zemní plyn.</p>
 {% elsif name == "Střešní fotovoltaika + baterie" %}
-<p class="measure-takeaway">Ekonomická výhodnost roste s vyšší spotřebou elektřiny v domě. Při nízké nebo střední spotřebě (4–7&thinsp;MWh ročně) se investice bez dotací nemusí vrátit – fotovoltaika se nejvíce vyplatí v domácnostech, které elektřinu hojně využívají (tepelné čerpadlo, elektromobil).</p>
+<p class="measure-takeaway">Ekonomická výhodnost roste s vyšší spotřebou elektřiny v domě. Při nízké nebo střední spotřebě (4–7&thinsp;MWh ročně) se investice bez dotací nemusí vrátit. Fotovoltaika se tak více vyplatí v domácnostech, které spotřebují větší množství elektřiny – na ohřev teplé vody, provoz tepelného čerpadla, dobíjení elektromobilu apod.</p>
 {% endif %}
 <div class="measure-chart" data-section="buildings" data-measure="{{ name | escape }}"></div>
 {% endfor %}
@@ -532,17 +504,13 @@ extra-scripts:
 # Doprava
 
 {:.text-muted style="font-size:0.8rem; margin-top:-0.5rem"}
-Cena elektřiny pro elektromobily odpovídá scénáři „Nabíjím převážně doma ze sítě" (faktor 1,33).
+Cena elektřiny pro elektromobily odpovídá scénáři, kdy řidič/ka nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.
 
-## Nové {#m-nove}
+## Elektromobily {#m-nove}
 
-<p class="measure-takeaway">Nové elektromobily jsou v Česku v celkových nákladech za 15 let životnosti již výhodné ve srovnání s novými auty se spalovacím motorem – navzdory vyšší pořizovací ceně. Ekonomická výhodnost ale zásadně závisí na způsobu nabíjení: při převážně domácím nabíjení se elektromobil vyplatí, při nabíjení venku nikoli.</p>
+<p class="measure-takeaway">Elektromobily jsou již v Česku často ekonomicky výhodnější oproti srovnatelným autům se spalovacím motorem, uvažujeme-li celkové náklady za vlastnictví a provoz aut po dobu jejich životnosti. Ekonomická výhodnost závisí na způsobu nabíjení – vyplatí se především při levném domácím nabíjení a také ceně pohonných hmot.</p>
 
 <div class="measure-chart" data-section="transport" data-group="Nové"></div>
-
-## Ojeté {#m-ojete}
-
-<p class="measure-takeaway">Ojeté elektromobily jsou při převážně domácím nabíjení v celkových nákladech za 10 let výhodné oproti srovnatelným ojetinám se spalovacím motorem. Výsledek závisí na konkrétním modelu a ceně ojetiny.</p>
 
 <div class="measure-chart" data-section="transport" data-group="Ojeté"></div>
 
