@@ -533,5 +533,22 @@ extra-scripts:
 
 <p class="measure-takeaway">Cena elektřiny pro elektromobily odpovídá scénáři, kdy řidič/ka nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.</p>
 
+## Vstupní data a scénáře cen energií
+
+Kompletní sadu vstupních parametrů použitou pro analýzu opatření naleznete v našem [datasetu](https://docs.google.com/spreadsheets/d/1B5GQVkr3jh0dDXflDDjGOmC_nnb_bFX-OwR4t94pfNM/edit?usp=sharing).
+
+Dataset obsahuje i námi definované tři scénáře vývoje cen paliv a elektřiny včetně emisní intenzity a ceny emisní povolenky (v případě net-zero scénáře).
+
+{% capture scenare-cen-energii %}
+<div id="scenare-cen-energii"></div>
+{% endcapture %}
+
+{% include expander-figure.html
+    name="scenare-cen-energii"
+    label="Scénáře vývoje cen energií"
+    class="large-expander-title"
+    content=scenare-cen-energii
+%}
+
 </div>
 </div>

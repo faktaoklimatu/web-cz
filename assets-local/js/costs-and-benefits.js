@@ -411,7 +411,7 @@
   const COLOR_TRANSPORT = '#6b4fa0';
 
   // NPV > 0: favorable (teal); NPV < 0: costly (red)
-  const COLOR_FAVORABLE = '#1a7a85';
+  const COLOR_FAVORABLE = '#35978f';
   const COLOR_COSTLY    = '#903156';   // unified adverse/negative colour (matches the NPV dot)
 
   // CO₂ squares — fixed global scale so all measures are comparable
@@ -646,8 +646,27 @@
     return prefix.replace(/\s+(uhlí|plyn)\s*$/i, '');
   }
 
-  // Lowercase the first letter of each comma-separated baseline name (used after "vs.").
-  const lcBaseline = s => s ? s.split(', ').map(p => p.charAt(0).toLowerCase() + p.slice(1)).join(', ') : s;
+  // Display-name overrides (study charts only — the shared measure_name is matched
+  // by the explainer, so we remap for display here instead of in the data).
+  const MEASURE_DISPLAY_NAME = {
+    'Nové kompaktní SUV elektro':  'Elektrické SUV',
+    'Ojeté kompaktní SUV elektro': 'Elektrické SUV',
+    'Nový malý elektromobil':      'Malý elektromobil',
+    'Ojetý malý elektromobil':     'Malý elektromobil',
+  };
+  const BASELINE_DISPLAY_NAME = {
+    'Nové kompaktní SUV na naftu':   'SUV na naftu',
+    'Ojeté kompaktní SUV na benzín': 'SUV na benzín',
+    'Nové malé auto na benzín':      'Malé auto na benzín',
+    'Ojeté malé auto na benzín':     'Malé auto na benzín',
+    'Nedělám nic':                   'bez střešní fotovoltaiky',
+  };
+
+  // Lowercase the first letter of each comma-separated baseline name (used after "vs."),
+  // but keep leading acronyms intact ("SUV na naftu", not "sUV na naftu").
+  const lcFirst = p => (p.length > 1 && p[1] === p[1].toUpperCase() && p[1] !== p[1].toLowerCase())
+    ? p : p.charAt(0).toLowerCase() + p.slice(1);
+  const lcBaseline = s => s ? s.split(', ').map(lcFirst).join(', ') : s;
 
   // Context label HTML for a row. FVE is distinguished by household electricity use
   // ("⚡ SPOTŘEBA X MWh"), everything else by its energy-class badge + building type.
@@ -660,6 +679,10 @@
         + `<path d="M7.102574,4.520453L3.551287,4.520453L3.551287,0L0,6.846908L3.551287,6.846908L3.551287,11.367486Z" fill="${CLR_TEXT}"/></svg>`;
       return building + ' ' + bolt + 'SPOTŘEBA' + (mwh != null ? ' ' + mwh + ' MWh' : '');
     }
+    // Transport: the "malé/velké" size is already implied by the measure name, so
+    // the context is just the age group ("NOVÉ" / "OJETÉ").
+    const tm = /^(Nové|Ojeté)\s+(malé|velké)$/.exec(label || '');
+    if (tm) return tm[1].toUpperCase();
     const { prefix, badge } = splitLabel(label);
     return badgeHtml(badge, 0) + (badge ? ' ' : '') + contextPrefix(prefix, measureName).toUpperCase();
   }
@@ -718,8 +741,8 @@
           : calc.npv;
         return {
           label:               m[labelField],
-          measureName:         m.measure_name || null,
-          baselineName:        m.measure_baseline || null,
+          measureName:         MEASURE_DISPLAY_NAME[m.measure_name] || m.measure_name || null,
+          baselineName:        BASELINE_DISPLAY_NAME[m.measure_baseline] || m.measure_baseline || null,
           measureId:           m.id,
           npv,
           co2Saved:            calc.co2Saved,
@@ -737,7 +760,7 @@
 
   // ── Shared row-chart renderer (beeswarm-styled) ─────────────────────────────
   // Clear-and-redraw (no reorder animation — rows only change on control change).
-  function renderRowChart(container, rows, colHeaderLabel) {
+  function renderRowChart(container, rows, colHeaderLabel, showMeasureName = false) {
     const totalW = container.clientWidth || 640;
     const chartW = Math.max(totalW - LABEL_W - CO2_W - FUEL_W - ICON_W - MARGIN.right, 160);
     const totalH = rows.length * ROW_H + MARGIN.top + MARGIN.bottom;
@@ -822,6 +845,13 @@
           .style('font-size', '10px').style('font-weight', '700').style('line-height', '1.2')
           .style('color', CLR_TEXT).style('letter-spacing', '0.04em').style('white-space', 'nowrap')
           .html(contextHtml(row.measureName, row.measureId, row.label));
+        // Charts without a per-measure heading (transport) show the measure name here.
+        if (showMeasureName) {
+          div.append('xhtml:span')
+            .style('font-size', '16px').style('font-weight', '700').style('line-height', '1.25')
+            .style('margin-top', '1px').style('color', CLR_TEXT)
+            .text(row.measureName);
+        }
       } else {
         const { prefix, badge } = splitLabel(row.label);
         const mainText = badge ? prefix.toUpperCase() : row.label;
@@ -838,8 +868,10 @@
       }
 
       // ── NPV: uncertainty band + dot + label ────────────────────────────────
-      const dominant = row.sensitivity && row.sensitivity.length
-        ? row.sensitivity.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
+      // Same processed list the detail table shows, so "Největší vliv" == its top row.
+      const sensRows = buildSensRows(findMeasure(row.measureId), row.sensitivity);
+      const dominant = sensRows.length
+        ? sensRows.reduce((b, s) => (s.maxNpv - s.minNpv) > (b.maxNpv - b.minNpv) ? s : b)
         : null;
       const bandTip = [
         `Rozsah nejistoty: ${fmtCZK(row.npv.low)} až ${fmtCZK(row.npv.high)}`,
@@ -953,7 +985,7 @@
     const rows = buildRows(entries, 'measure_name');
     if (!rows.length) { container.hidden = true; return; }
     container.hidden = false;
-    renderRowChart(container, rows, 'OPATŘENÍ');
+    renderRowChart(container, rows, 'OPATŘENÍ', /* showMeasureName */ true);
   }
 
   // ── DOM section reordering ───────────────────────────────────────────────
@@ -1166,7 +1198,8 @@
     const tb = document.createElement('tbody');
     const variantRow = (m, cls) => {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td class="rd-params-name ${cls}">${m.measure_name || ''}</td>`
+      const dispName = MEASURE_DISPLAY_NAME[m.measure_name] || BASELINE_DISPLAY_NAME[m.measure_name] || m.measure_name || '';
+      tr.innerHTML = `<td class="rd-params-name ${cls}">${dispName}</td>`
         + specs.map(([, get]) => `<td class="${cls}">${get(m)}</td>`).join('');
       tb.appendChild(tr);
     };
@@ -1303,17 +1336,7 @@
       renderNpvTimeline(timelineEl, result);
     }
 
-    const carbon = measure ? carbonSensitivity(measure) : null;
-    // The navbar's "Výše investičních nákladů" is one lever (it scales the measure's
-    // CAPEX), so collapse the two CAPEX sensitivity rows into a single matching row and
-    // relabel its ends optimistická/pesimistická.
-    const capexLbl = l => (l && l.includes('+')) ? 'pesimistická' : 'optimistická';
-    const sens = [...(result.sensitivity || []), ...(carbon ? [carbon] : [])].flatMap(s => {
-      if (s.param === 'Investiční náklady základní varianty') return [];   // merged into the row below
-      if (s.param === 'Investiční náklady opatření')
-        return [{ ...s, param: 'Výše investičních nákladů', minLabel: capexLbl(s.minLabel), maxLabel: capexLbl(s.maxLabel) }];
-      return [s];
-    });
+    const sens = buildSensRows(measure, result.sensitivity);
     if (sens.length) {
       const wrap = document.createElement('div');
       wrap.className = 'rd-chart--sens';
@@ -1415,6 +1438,21 @@
   }
 
   // Carbon-price sensitivity across the slider range (0–200 €/t), other inputs held.
+  // Sensitivity rows exactly as the detail window shows them: raw calculator rows
+  // + carbon, with the two CAPEX rows collapsed into "Výše investičních nákladů" and
+  // the baseline-capex row dropped. Shared so the row chart's "Největší vliv" always
+  // matches the top (widest-span) row of the detail table.
+  function buildSensRows(measure, rawSens) {
+    const carbon = measure ? carbonSensitivity(measure) : null;
+    const capexLbl = l => (l && l.includes('+')) ? 'pesimistická' : 'optimistická';
+    return [...(rawSens || []), ...(carbon ? [carbon] : [])].flatMap(s => {
+      if (s.param === 'Investiční náklady základní varianty') return [];
+      if (s.param === 'Investiční náklady opatření')
+        return [{ ...s, param: 'Výše investičních nákladů', minLabel: capexLbl(s.minLabel), maxLabel: capexLbl(s.maxLabel) }];
+      return [s];
+    });
+  }
+
   function carbonSensitivity(measure) {
     const base = calcOpts(measure);
     const npvAt = cp => { try { return CostsBenefits.calculate({ ...base, carbonPriceEur: cp }).npv; } catch (_) { return null; } };
