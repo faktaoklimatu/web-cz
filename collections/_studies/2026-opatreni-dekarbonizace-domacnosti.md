@@ -106,7 +106,8 @@ extra-scripts:
   flex-direction: column;
   flex: 1 1 0;          /* equal thirds across the three controls */
   max-width: none;
-  min-width: 190px;
+  min-width: 340px;
+  margin-bottom: 1rem;    
   position: relative;   /* anchor for the Net-zero overlay */
 }
 
@@ -129,14 +130,16 @@ extra-scripts:
 
 /* Segmented control — all options visible, single click, hover title for details */
 .seg {
-  display: inline-flex;
+  display: flex;
+  width: 100%;          /* fill the group so both segmented rows are equal width */
   margin-top: 4px;
   border: 1px solid #d3dae0;
   border-radius: 6px;
   overflow: hidden;
-  align-self: flex-start;
 }
 .seg-btn {
+  flex: 1 1 0;          /* buttons share the seg width evenly */
+  text-align: center;
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
@@ -166,12 +169,20 @@ extra-scripts:
   letter-spacing: 0.02em;
   color: #515b66;
   font-family: 'Inter';
+  white-space: nowrap;   /* keep the label on one line (no wrap-induced overlap) */
 }
 
 .control-value {
   font-size: 0.875rem;
   font-weight: 700;
   color: #515b66;
+}
+
+/* Narrow screens: stack each control full-width; let button labels wrap, not clip */
+@media (max-width: 640px) {
+  .control-group,
+  .control-group.control-group--seg { flex-basis: 100%; min-width: 0; }
+  .seg-btn { white-space: normal; padding: 5px 6px; }
 }
 
 /* ── Slider with ticks ─────────────────────────────────────────────────────── */
@@ -230,7 +241,7 @@ extra-scripts:
 
 .chart-col-header {
   font-size: 11px;
-  fill: #999;
+  fill: #515b66;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -315,8 +326,10 @@ extra-scripts:
 /* Current-settings caption under the title */
 .rd-settings {
   margin-top: 8px;
-  font-size: 12px;
-  color: #9ea7b3;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #515b66;
   line-height: 1.4;
 }
 
@@ -342,7 +355,7 @@ extra-scripts:
 }
 .rd-identity { flex: 1 1 auto; min-width: 0; }
 .rd-context {
-  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
   color: #515b66; margin-bottom: 3px;
 }
 .rd-title { font-size: 22px; color: #515b66; line-height: 2; }
@@ -382,6 +395,14 @@ extra-scripts:
   color: #515b66;
   margin-bottom: 4px;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+
+/* ── Measure heading icon (leading figure) ───────────────────────────────── */
+.section h2 .measure-icon {
+  height: 1.4em;
+  width: auto;
+  vertical-align: -0.32em;
+  margin-right: 0.5rem;
 }
 
 /* ── Measure takeaway ────────────────────────────────────────────────────── */
@@ -443,7 +464,7 @@ extra-scripts:
     <div class="control-group" id="carbon-group">
       <div class="control-head">
         <span class="control-label">Cena uhlíku (ETS&nbsp;2)</span>
-        <span class="control-value" id="carbon-price-value">70&thinsp;€</span>
+        <span class="control-value" id="carbon-price-value">70&thinsp;€/t&nbsp;CO₂</span>
       </div>
       <div class="carbon-lock" id="carbon-lock">Cena uhlíku má ve scénáři net-zero předem stanovenou trajektorii v průměru 200 €.</div>
       <div class="slider-with-ticks">
@@ -486,7 +507,8 @@ extra-scripts:
 # Budovy
 
 {% for name in building_measure_names %}
-## {{ name }} {#m-{{ forloop.index }}}
+{% case name %}{% when "Tepelné čerpadlo" %}{% assign micon = "tepelne-cerpadlo" %}{% when "Renovace se zateplením" %}{% assign micon = "zatepleni" %}{% when "Střešní fotovoltaika + baterie" %}{% assign micon = "fotovoltaika" %}{% when "Kotel na dřevo" %}{% assign micon = "biomasa-kotel" %}{% when "Elektrický kotel" %}{% assign micon = "elektrokotel" %}{% else %}{% assign micon = "" %}{% endcase %}
+## <img class="measure-icon" src="/assets-local/img/costs-and-benefits/{{ micon }}.svg" alt=""> {{ name }} {#m-{{ forloop.index }}}
 {% if name == "Renovace se zateplením" %}
 <p class="measure-takeaway">Ekonomicky se vyplatí především zateplení energeticky náročných rodinných domů, a to i ve scénářích s nízkou cenou uhlíku. Snížení emisí CO₂ po zateplení je nejvyšší u domů vytápěných uhlím, protože mají vysokou emisní náročnost.</p>
 {% elsif name == "Tepelné čerpadlo" %}
@@ -503,16 +525,13 @@ extra-scripts:
 
 # Doprava
 
-{:.text-muted style="font-size:0.8rem; margin-top:-0.5rem"}
-Cena elektřiny pro elektromobily odpovídá scénáři, kdy řidič/ka nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.
-
-## Elektromobily {#m-nove}
+## <img class="measure-icon" src="/assets-local/img/costs-and-benefits/elektroauto-male.svg" alt=""> Elektromobily {#m-nove}
 
 <p class="measure-takeaway">Elektromobily jsou již v Česku často ekonomicky výhodnější oproti srovnatelným autům se spalovacím motorem, uvažujeme-li celkové náklady za vlastnictví a provoz aut po dobu jejich životnosti. Ekonomická výhodnost závisí na způsobu nabíjení – vyplatí se především při levném domácím nabíjení a také ceně pohonných hmot.</p>
 
-<div class="measure-chart" data-section="transport" data-group="Nové"></div>
+<div class="measure-chart" data-section="transport" data-group=""></div>
 
-<div class="measure-chart" data-section="transport" data-group="Ojeté"></div>
+<p class="measure-takeaway">Cena elektřiny pro elektromobily odpovídá scénáři, kdy řidič/ka nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.</p>
 
 </div>
 </div>

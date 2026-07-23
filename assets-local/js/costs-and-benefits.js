@@ -218,7 +218,7 @@
     return sign + fmtInt.format(Math.round(abs * 1000)) + '\u00a0kg CO₂';
   }
 
-  // X t CO₂ (or kg CO₂) saved per 1 000 CZK of `czk`.
+  // X t CO₂ (or kg CO₂) saved per 1 000 CZK of `czk`.
   // Round x (positive) to 3 significant figures, no trailing zeros.
   function fmt3sig(x) { return parseFloat(x.toPrecision(3)).toString().replace('.', ','); }
 
@@ -228,9 +228,9 @@
     const v    = czk / savedT;
     const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
-    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/t CO₂';
-    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/t CO₂';
-    return sign + fmt3sig(abs) + ' Kč/t CO₂';
+    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/t CO₂';
+    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/t CO₂';
+    return sign + fmt3sig(abs) + ' Kč/t CO₂';
   }
 
   // Kč needed to save 1 MWh of gas (czk signed: + = cost, −= earning).
@@ -239,9 +239,9 @@
     const v    = czk / mwh;
     const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
-    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/MWh';
-    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/MWh';
-    return sign + fmt3sig(abs) + ' Kč/MWh';
+    if (abs >= 1e6) return sign + fmt3sig(abs / 1e6) + ' mil. Kč/MWh';
+    if (abs >= 1e3) return sign + fmt3sig(abs / 1e3) + ' tis. Kč/MWh';
+    return sign + fmt3sig(abs) + ' Kč/MWh';
   }
 
   // Kč needed to save 1 litre of fuel (czk signed: + = cost, −= earning).
@@ -250,32 +250,32 @@
     const v    = czk / litres;
     const sign = v < 0 ? '−' : '';
     const abs  = Math.abs(v);
-    if (abs >= 1000) return sign + fmt3sig(abs / 1000) + ' tis. Kč/l';
-    return sign + fmt3sig(abs) + ' Kč/l';
+    if (abs >= 1000) return sign + fmt3sig(abs / 1000) + ' tis. Kč/l';
+    return sign + fmt3sig(abs) + ' Kč/l';
   }
 
   function fmtL(litres) {
     if (litres == null || !isFinite(litres)) return '—';
     const sign = litres < 0 ? '−' : '';
     const abs  = Math.abs(litres);
-    if (abs >= 1000) return sign + fmtInt.format(Math.round(abs / 10) * 10) + ' l';
-    return sign + fmtInt.format(Math.round(abs)) + ' l';
+    if (abs >= 1000) return sign + fmtInt.format(Math.round(abs / 10) * 10) + ' l';
+    return sign + fmtInt.format(Math.round(abs)) + ' l';
   }
 
   function fmtMWh(mwh) {
     if (mwh == null || !isFinite(mwh)) return '—';
     const sign = mwh < 0 ? '−' : '';
     const abs  = Math.abs(mwh);
-    if (abs >= 1000) return sign + (Math.round(abs / 100) / 10).toFixed(1).replace('.', ',') + ' GWh';
-    if (abs >= 1)    return sign + fmtInt.format(Math.round(abs))           + ' MWh';
-    return sign + fmtInt.format(Math.round(abs * 1000)) + ' kWh';
+    if (abs >= 1000) return sign + (Math.round(abs / 100) / 10).toFixed(1).replace('.', ',') + ' GWh';
+    if (abs >= 1)    return sign + fmtInt.format(Math.round(abs))           + ' MWh';
+    return sign + fmtInt.format(Math.round(abs * 1000)) + ' kWh';
   }
 
   // ── Controls ─────────────────────────────────────────────────────────────
   function setupControls() {
     setupSlider('carbon-price-slider', 'carbon-price-value', v => {
       state.carbonPrice = v;
-      return v + '\u00a0€';
+      return v + '\u00a0€/t\u00a0CO₂';
     });
     setupSegmented('fuel-scenario-seg', 'scenario', v => { state.fuelScenario = v; updateCarbonLock(); });
     setupSegmented('capex-level-seg',  'capex',    v => { state.capexLevel = +v; });
@@ -400,8 +400,10 @@
 
   // ── Summary chart ─────────────────────────────────────────────────────────
   const SUMMARY_ROW_H   = 72;   // match the measure-chart ROW_H
-  const SUMMARY_LABEL_W = 260;
-  const SUMMARY_MARGIN  = { top: 66, right: 16, bottom: 12 };  // top holds header + direction labels + scale
+  const SUMMARY_LABEL_W = 300;   // room for the leading measure icon + label
+  const SUMMARY_ICON_SZ = 34;    // leading measure illustration
+  const SUMMARY_LABEL_X = 4 + SUMMARY_ICON_SZ + 10;   // text starts after the icon
+  const SUMMARY_MARGIN  = { top: 50, right: 16, bottom: 34 };  // top: header + direction labels; bottom: x-axis
   const SECTION_GAP     = 26;   // extra top padding before each later section
   const SECTION_HDR_H   = 22;
 
@@ -440,12 +442,14 @@
     if (svg.empty()) {
       svg = d3.select(container).append('svg').attr('role', 'img')
         .style('font-family', 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif');
-      svg.append('text').attr('class', 'chart-col-header npv-hdr').attr('text-anchor', 'middle').attr('y', 16);
-      svg.append('g').attr('class', 'x-top');   // NPV scale labels + ticks above the chart
+      svg.append('text').attr('class', 'npv-hdr').attr('text-anchor', 'middle').attr('y', 16)
+        .attr('font-family', CB_FONT).attr('font-size', '13px').attr('font-weight', '700')
+        .style('letter-spacing', '0.04em').attr('fill', CLR_HDR);
+      svg.append('g').attr('class', 'x-top');   // NPV scale labels + ticks below the chart
       svg.append('text').attr('class', 'half-lbl half-lbl-l')
-        .attr('font-size', '11px').attr('font-style', 'italic').attr('fill', '#bbb').attr('text-anchor', 'middle');
+        .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '500').attr('text-anchor', 'middle');
       svg.append('text').attr('class', 'half-lbl half-lbl-r')
-        .attr('font-size', '11px').attr('font-style', 'italic').attr('fill', '#bbb').attr('text-anchor', 'middle');
+        .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '500').attr('text-anchor', 'middle');
       svg.append('g').attr('class', 'sec-hdrs');
       svg.append('g').attr('class', 'rows-g');
     }
@@ -454,7 +458,7 @@
 
     // Update static elements that depend on width/height
     svg.select('.npv-hdr').attr('x', SUMMARY_LABEL_W + chartW / 2).attr('y', 16)
-      .text('Rozdíl Net Present Value oproti emisně náročnější variantě (Kč)');
+      .text('ROZDÍL NET PRESENT VALUE OPROTI EMISNĚ NÁROČNĚJŠÍ VARIANTĚ (Kč)');
 
     // Direction labels — under the header, flanking the 0 line (neutral colour)
     svg.select('.half-lbl-l')
@@ -466,18 +470,18 @@
       .attr('fill', CLR_TEXT)
       .text('Nízkoemisní opatření je výhodnější →');
 
-    // NPV scale — value + short tick below it, coloured by sign; drop the −1 mil. label
+    // NPV scale — bottom axis: short tick then label, neutral grey; drop the −1 mil. label
     const xtop = svg.select('.x-top');
     xtop.selectAll('*').remove();
+    const axisY = totalH - SUMMARY_MARGIN.bottom + 6;
     xScale.ticks(5).filter(t => t > -1e6).forEach(t => {
-      const tx  = SUMMARY_LABEL_W + xScale(t);
-      const col = t < 0 ? CLR_NEG_COAL : t > 0 ? COLOR_FAVORABLE : '#999';
-      xtop.append('text')
-        .attr('x', tx).attr('y', 52).attr('text-anchor', 'middle')
-        .attr('font-size', '12px').attr('fill', col).text(xAxisFmt(t));
+      const tx = SUMMARY_LABEL_W + xScale(t);
       xtop.append('line')
-        .attr('x1', tx).attr('x2', tx).attr('y1', 56).attr('y2', 62)
+        .attr('x1', tx).attr('x2', tx).attr('y1', axisY).attr('y2', axisY + 6)
         .attr('stroke', '#cfd6dc').attr('stroke-width', 1);
+      xtop.append('text')
+        .attr('x', tx).attr('y', axisY + 20).attr('text-anchor', 'middle')
+        .attr('font-size', '12px').attr('fill', CLR_SUB).text(xAxisFmt(t));
     });
 
     // ── Section headers (fixed y — row counts never change) ───────────────
@@ -496,7 +500,7 @@
       .attr('font-size', '13px').attr('font-weight', '700').style('letter-spacing', '0.04em')
       .merge(secSel)
       .attr('x', 4)
-      .attr('fill', CLR_TEXT)
+      .attr('fill', CLR_HDR)
       .attr('y', (s, i) => secOffsets[i].headerY + 14)
       .text(s => s.label.toUpperCase());
     secSel.exit().remove();
@@ -519,9 +523,11 @@
 
     rowEnter.append('line').attr('class', 'r-divider').attr('stroke', '#eaedf0').attr('stroke-width', 1);
     rowEnter.append('line').attr('class', 'r-zero').attr('stroke', '#eaedf0').attr('stroke-width', 1);
-    rowEnter.append('text').attr('class', 'r-name').attr('x', 4)
+    rowEnter.append('image').attr('class', 'r-icon').attr('x', 4)
+      .attr('width', SUMMARY_ICON_SZ).attr('height', SUMMARY_ICON_SZ);
+    rowEnter.append('text').attr('class', 'r-name').attr('x', SUMMARY_LABEL_X)
       .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '700').attr('fill', CLR_TEXT);
-    rowEnter.append('text').attr('class', 'r-base').attr('x', 4)
+    rowEnter.append('text').attr('class', 'r-base').attr('x', SUMMARY_LABEL_X)
       .attr('font-family', CB_FONT).attr('font-size', '14px').attr('font-weight', '500').attr('fill', CLR_TEXT);
     rowEnter.append('g').attr('class', 'r-dots');
 
@@ -542,6 +548,12 @@
       g.select('.r-zero')
         .attr('x1', SUMMARY_LABEL_W + z).attr('x2', SUMMARY_LABEL_W + z)
         .attr('y1', ZG).attr('y2', SUMMARY_ROW_H - ZG);
+
+      const iconHref = measureIconHref(row.name);
+      g.select('.r-icon')
+        .attr('y', mid - SUMMARY_ICON_SZ / 2)
+        .attr('href', iconHref)
+        .style('display', iconHref ? null : 'none');
 
       g.select('.r-name').attr('y', row.baseline ? mid - 2 : mid + 5).text(row.name);
       g.select('.r-base').attr('y', mid + 15).text(row.baseline ? 'vs. ' + lcBaseline(row.baseline) : '');
@@ -573,7 +585,7 @@
   const CO2_W   = 120;
   const FUEL_W  = 160;
   const ICON_W  = 30;   // trailing "more info" affordance column
-  const MARGIN  = { top: 46, right: 12, bottom: 34 };
+  const MARGIN  = { top: 50, right: 12, bottom: 34 };
 
   const SQ         = 9;    // pictograph square/circle size (px)
   const SQ_PER_ROW = 5;    // wrap to a new row after 5
@@ -587,6 +599,21 @@
   const CLR_POS      = '#006063';  // favorable (NPV > 0) end of diverging scale
   const CLR_NEG_COAL = '#903156';  // adverse NPV dot (flat, no gradient)
   const CLR_NEG_GAS  = '#903156';  // emission-increase pictograph (unified with the adverse colour)
+  const CLR_HDR      = '#3e3e4c';  // column / chart-title headers (dark slate)
+
+  // Leading illustration icon per measure (shared with the explainer beeswarm set).
+  const CB_ICON_BASE   = '/assets-local/img/costs-and-benefits';
+  const MEASURE_ICONS  = {
+    'Tepelné čerpadlo':               'tepelne-cerpadlo',
+    'Renovace se zateplením':         'zatepleni',
+    'Střešní fotovoltaika + baterie': 'fotovoltaika',
+    'Kotel na dřevo':                 'biomasa-kotel',
+    'Elektrický kotel':               'elektrokotel',
+    'Elektromobil':                   'elektroauto-male',
+  };
+  function measureIconHref(name) {
+    return MEASURE_ICONS[name] ? `${CB_ICON_BASE}/${MEASURE_ICONS[name]}.svg` : null;
+  }
 
   // NPV dot: flat favourable (teal) vs. adverse (maroon) — no gradient, no fuel variation.
   function npvDotColor(npv) { return npv >= 0 ? COLOR_FAVORABLE : CLR_NEG_COAL; }
@@ -631,7 +658,7 @@
       const building = splitLabel(label).prefix.replace(/\s+(uhlí|plyn)\s*$/i, '').toUpperCase();
       const bolt = `<svg width="7" height="11" viewBox="0 0 7.102574 11.367486" style="display:inline-block;vertical-align:-1px;margin-right:4px">`
         + `<path d="M7.102574,4.520453L3.551287,4.520453L3.551287,0L0,6.846908L3.551287,6.846908L3.551287,11.367486Z" fill="${CLR_TEXT}"/></svg>`;
-      return building + ' ' + bolt + 'SPOTŘEBA' + (mwh != null ? ' ' + mwh + ' MWh' : '');
+      return building + ' ' + bolt + 'SPOTŘEBA' + (mwh != null ? ' ' + mwh + ' MWh' : '');
     }
     const { prefix, badge } = splitLabel(label);
     return badgeHtml(badge, 0) + (badge ? ' ' : '') + contextPrefix(prefix, measureName).toUpperCase();
@@ -735,15 +762,15 @@
     // ── Column headers (uppercase, multi-line via tspan) ──────────────────────
     const hdr = (x, lines, anchor = 'middle') => {
       const t = svg.append('text').attr('class', 'chart-col-header')
-        .attr('x', x).attr('y', 12).attr('text-anchor', anchor)
-        .attr('font-family', CB_FONT).attr('fill', '#aaa')
+        .attr('x', x).attr('y', 28).attr('text-anchor', anchor)
+        .attr('font-family', CB_FONT).attr('fill', CLR_HDR)
         .style('letter-spacing', '0.06em');
       lines.forEach((ln, i) =>
         t.append('tspan').attr('x', x).attr('dy', i === 0 ? '0' : '1.2em').text(ln));
       return t;
     };
     hdr(4, [colHeaderLabel], 'start');
-    hdr(LABEL_W + chartW / 2, ['VÝHODNOST (NPV)']);
+    hdr(LABEL_W + chartW / 2, ['ROZDÍL V NET PRESENT VALUE']);
     hdr(co2LX,  ['SNÍŽENÍ', 'EMISÍ'], 'start');
     hdr(fuelLX, ['SNÍŽENÍ IMPORTU', 'ROPY A ZEMNÍHO PLYNU'], 'start');
 
@@ -864,17 +891,18 @@
           .attr('fill', CLR_NEG_COAL).text('zvyšuje emise');
       }
 
-      // ── Fossil import: scope 1 circles + value (left-aligned). The scope-2
-      //    "výroba el." breakdown lives in the detail window, not here. ────────
-      const s1 = row.fossilImportSavings ? row.fossilImportSavings.scope1TotalMwh : null;
-      const s1Pos = s1 != null && s1 > 0;
-      const nS1 = s1Pos ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(s1 / MWH_PER_SQ))) : 0;
-      const fuelCol = s1 == null || s1 === 0 ? CLR_SUB : s1 > 0 ? COLOR_FAVORABLE : CLR_NEG_COAL;
-      if (s1Pos) drawCircleGrid(svg, fuelLX + GRID_HALF, numY - 14, nS1, SQ_PER_ROW, SQ, COLOR_FAVORABLE);
+      // ── Fossil import: scope 1 + scope 2 total (same figure as the detail
+      //    window's big number). Positive → teal circles + value. ──────────────
+      const fis     = row.fossilImportSavings;
+      const fuelTot = fis ? (fis.scope1TotalMwh || 0) + (fis.scope2TotalMwh || 0) : null;
+      const fuelPos = fuelTot != null && fuelTot > 0;
+      const nFuel   = fuelPos ? Math.min(SQ_PER_ROW * 2, Math.max(1, Math.round(fuelTot / MWH_PER_SQ))) : 0;
+      const fuelCol = fuelTot == null || fuelTot === 0 ? CLR_SUB : fuelTot > 0 ? COLOR_FAVORABLE : CLR_NEG_COAL;
+      if (fuelPos) drawCircleGrid(svg, fuelLX + GRID_HALF, numY - 14, nFuel, SQ_PER_ROW, SQ, COLOR_FAVORABLE);
       svg.append('text')
         .attr('x', fuelLX).attr('y', numY).attr('text-anchor', 'start')
         .attr('font-family', CB_FONT).attr('font-size', '12px').attr('font-weight', '700')
-        .attr('fill', fuelCol).text(s1 == null ? '—' : s1 === 0 ? '– MWh' : fmtMWh(s1));
+        .attr('fill', fuelCol).text(fuelTot == null ? '—' : fuelTot === 0 ? '–' : fmtMWh(fuelTot));
 
       // ── "more info" affordance — the whole row is already clickable; this only
       //    signals that a detail view exists. ────────────────────────────────
@@ -1164,10 +1192,10 @@
     const CAPEX = { '-1': 'optimistická', '0': 'střední', '1': 'pesimistická' };
     const pu = (state.priceUncertainty > 0 ? '+' : '') + state.priceUncertainty + ' %';
     const settingsText =
-      `Scénář energií „${SCEN[state.fuelScenario] || state.fuelScenario}“ · `
-      + `cena uhlíku ${state.carbonPrice} € · `
-      + `investiční náklady ${CAPEX[state.capexLevel] || state.capexLevel} · `
-      + `diskontní míra ${state.discountRate} %`;
+      `Scénář cen energií: ${SCEN[state.fuelScenario] || state.fuelScenario} · `
+      + `Cena uhlíku: ${state.carbonPrice} € · `
+      + `Výše investičních nákladů: ${CAPEX[state.capexLevel] || state.capexLevel} · `
+      + `Diskontní míra: ${state.discountRate} %`;
 
     // ── Header: title block on its own row ────────────────────────────────────
     const hdr = document.createElement('div');
@@ -1229,11 +1257,11 @@
     const dovozTotal = row.fossilImportSavings ? (s1 || 0) + (s2 || 0) : null;
     const dovozNote = s2
       ? (s2 < 0
-          ? 'Z toho výroba potřebné elektřiny naopak zvyšuje spotřebu zemního plynu o <strong>' + fmtMWh(Math.abs(s2)) + '</strong>.'
-          : 'Z toho <strong>' + fmtMWh(s2) + '</strong> připadá na nižší spotřebu zemního plynu při výrobě elektřiny.')
+          ? 'Včetně zvýšení dovozu plynu (<strong>' + fmtMWh(Math.abs(s2)) + '</strong>) na výrobu el. energie.'
+          : 'Včetně snížení dovozu plynu (<strong>' + fmtMWh(s2) + '</strong>) na výrobu el. energie.')
       : null;
     const dovozColor = dovozTotal == null || dovozTotal === 0 ? CLR_TEXT : dovozTotal > 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
-    const dovozValue = dovozTotal == null ? '—' : dovozTotal === 0 ? '– MWh' : fmtMWh(dovozTotal);
+    const dovozValue = dovozTotal == null ? '—' : dovozTotal === 0 ? '–' : fmtMWh(dovozTotal);
     const dovozCell = statCell('Snížení dovozu ropy a zemního plynu', dovozValue,
       null, dovozColor, dovozNote, s2 > 0 ? CLR_POS : CLR_SUB);
     dovozCell.classList.add('rd-stat--dovoz');
@@ -1355,14 +1383,6 @@
       .attr('x1', 0).attr('x2', chartW).attr('y1', z).attr('y2', z)
       .attr('stroke', '#ccc').attr('stroke-width', 1);
 
-    // Payback marker — bold teal label whose left edge sits at the first positive bar.
-    const pb = paybackInfo(rows);
-    if (pb.verdict === 'payback' && xScale(pb.year) != null) {
-      chart.append('text').attr('x', xScale(pb.year)).attr('y', 8).attr('text-anchor', 'start')
-        .attr('font-size', '11px').attr('font-weight', '700').attr('fill', COLOR_FAVORABLE)
-        .text('Návratnost →');
-    }
-
     // Bars
     rows.forEach(row => {
       const color = row.cumDisc >= 0 ? COLOR_FAVORABLE : COLOR_COSTLY;
@@ -1438,10 +1458,16 @@
     const svg = d3.select(container).append('svg')
       .attr('width', width).attr('height', totalH).style('font-family', CB_FONT);
 
-    // Top NPV axis — tick labels + short ticks, no domain line (like the dumbbell axis)
+    // Top NPV axis — tick labels + short ticks, no domain line (like the dumbbell axis).
+    // Drop any label closer than MIN_GAP px to the previous one so wide "+140 tis."
+    // labels never overlap on a narrow plot.
     const axis = svg.append('g').attr('transform', `translate(${plotX},0)`);
-    x.ticks(5).forEach(t => {
+    const MIN_GAP = 62;
+    let lastTx = -Infinity;
+    x.ticks(6).forEach(t => {
       const tx = x(t);
+      if (tx - lastTx < MIN_GAP) return;
+      lastTx = tx;
       axis.append('text').attr('x', tx).attr('y', 12).attr('text-anchor', 'middle')
         .attr('font-size', '11px').attr('fill', CLR_SUB).text(xAxisFmt(t));
       axis.append('line').attr('x1', tx).attr('x2', tx).attr('y1', 17).attr('y2', 22)
@@ -1475,10 +1501,13 @@
         .attr('stroke', c).attr('stroke-width', 2).attr('stroke-linecap', 'round');
       if (s.minNpv < 0) seg(xLo, Math.min(zx, xHi), CLR_NEG_COAL);
       if (s.maxNpv > 0) seg(Math.max(zx, xLo), xHi, COLOR_FAVORABLE);
-      svg.append('circle').attr('cx', xLo).attr('cy', cy).attr('r', 5).attr('fill', npvCol(s.minNpv));
-      svg.append('circle').attr('cx', xHi).attr('cy', cy).attr('r', 5).attr('fill', npvCol(s.maxNpv));
-      svg.append('circle').attr('cx', xCur).attr('cy', cy).attr('r', 4.5)
-        .attr('fill', '#fff').attr('stroke', CLR_TEXT).attr('stroke-width', 2);
+      // Edge cases: hollow (white fill, sign-coloured ring). Current NPV: solid, coloured by sign.
+      svg.append('circle').attr('cx', xLo).attr('cy', cy).attr('r', 5)
+        .attr('fill', '#fff').attr('stroke', npvCol(s.minNpv)).attr('stroke-width', 2);
+      svg.append('circle').attr('cx', xHi).attr('cy', cy).attr('r', 5)
+        .attr('fill', '#fff').attr('stroke', npvCol(s.maxNpv)).attr('stroke-width', 2);
+      svg.append('circle').attr('cx', xCur).attr('cy', cy).attr('r', 5)
+        .attr('fill', npvCol(baseNpv));
 
       // Input-bound (edge-case) labels — normal weight
       svg.append('text').attr('x', xLo - 8).attr('y', cy + 4).attr('text-anchor', 'end')
@@ -1630,8 +1659,8 @@
     if (summaryEl) renderSummaryChart(summaryEl);
 
     document.querySelectorAll('.measure-chart[data-section]').forEach(el => {
-      if (el.dataset.group) {
-        renderGroupChart(el, el.dataset.section, el.dataset.group);
+      if (el.hasAttribute('data-group')) {
+        renderGroupChart(el, el.dataset.section, el.dataset.group);   // '' = whole section
       } else {
         renderMeasureChart(el, el.dataset.section, el.dataset.measure);
       }
