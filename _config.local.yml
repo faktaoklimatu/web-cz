@@ -5,7 +5,6 @@ lang: "cs"
 title: "Fakta o klimatu"
 url: https://faktaoklimatu.cz
 email: info@faktaoklimatu.cz
-github: faktaoklimatu/web-cz
 twitter: "faktaoklimatu"
 facebook: "faktaoklimatu"
 linkedin: "68480136"
@@ -29,12 +28,7 @@ slugs:
   datasets: datasety
   glossary: slovnik
   how-to-use: jak-pouzivat
-  further-sources: zdroje
   about: o-nas
-  # Uncomment and edit for any other posted hiring in the future.
-  # See https://github.com/faktaoklimatu/web-cz/pull/1371 for a reference hiring page.
-  # hiring: hledame-COO
-  hiring: hledame-posilu
 
 collections_dir: collections
 # Set permalinks in local language

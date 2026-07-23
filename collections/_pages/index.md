@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Konec uhlí v Česku</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Společenské náklady uhlíku</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -39,20 +39,17 @@ slug: index
     <div class="row">
       <div class="col-md-6">
         <p>
-        Uhelné zdroje jsou v EU kvůli vysokým emisím skleníkových plynů pod velkým ekonomickým tlakem. Proběhne v Česku konec výroby elektřiny a tepla z uhlí bezpečně a spořádaně?
+        Dekarbonizace v dalších dekádách vyžaduje vysoké investiční náklady do nízkoemisních technologií. Avšak další vypouštění emisí skleníkových plynů má také svoji cenu, jen mnohem méně zjevnou. Projevuje se třeba častějšími extrémy počasí, změnami v zemědělské produkci nebo dopady na lidské zdraví. Její vyčíslení se označuje jako <strong>společenské náklady uhlíku.</strong>
         </p>
         <p>
-        Naše nová studie zkoumá, zda bude v Česku po ohlášeném odstavení elektráren Počerady a Chvaletice dostatek zdrojů elektřiny. <strong>Modelování ukazuje, že ano</strong>, je ale třeba se urychleně chystat na uzavření dalších uhelných zdrojů.
-        </p>
-        <p>
-        Stejný tlak působí i na uhelné teplárny. Náš akutální přehled ukazuje, že <strong>velké teplárny na náhradě uhlí usilovně pracují</strong>.
+        Ty jsou důležitým vstupem k současné diskuzi o emisních povolenkách. Umožňuje ptát se: Neměla by být cena povolenky blíže k nákladům, které vypuštění každé tuny emisí způsobí?
         </p>
       </div>
       <div class="col-md-3">
-        {% include preview-block.html slug="2026-konec-uhli-v-cesku" no_include_tags=true %}
+        {% include preview-block.html slug="spolecenske-naklady-uhliku" no_include_tags=true %}
       </div>
       <div class="col-md-3">
-        {% include preview-block.html slug="2026-odchod-teplaren-od-uhli" no_include_tags=true %}
+        {% include preview-block.html slug="emisni-povolenky-ets" no_include_tags=true %}
       </div>
     </div>
   </div></div>

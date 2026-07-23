@@ -752,4 +752,94 @@ $c-callout-text: #373633;
 .key-chart-subtitle {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.2;
+.opatreni-ikony {
+    margin: 1.5rem 0;
+    row-gap: 1.5rem;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.2;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .opatreni-ikony {
+        width: 66.667%;
+    }
+}
+
+ul.plus-list {
+    list-style-type: "\f055\0020\0020";
+
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
+}
+
+ul.minus-list {
+    list-style-type: "\f056\0020\0020";
+
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
+}
+
+ul.warning-list {
+    list-style-type: "\f06a\0020\0020";
+
+    li {
+        margin-block: 0.4rem;
+        &::marker {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    }
+}
+
+ol.circled-list {
+    counter-reset: itemcounter;
+    padding: 0 !important;
+
+    li {
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-block: 2rem;
+    }
+
+    li::before {
+        display: block;
+        content: counter(itemcounter);
+        counter-increment: itemcounter;
+        margin-block: 1rem;
+        border: 2px solid colors.$c-secondary;
+        border-radius: 50%;
+        color: colors.$c-secondary;
+        width: 1.7em;
+        height: 1.7em;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+#opjak-logolink {
+    max-height: 3em;
+    max-width: 100%;
+    margin-block: 1.5rem;
 }

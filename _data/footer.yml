@@ -1,0 +1,22 @@
+# Ukázku hiring stránky najdeš např. v https://github.com/faktaoklimatu/web-cz/pull/1478
+# - title: "<span class=\"fas fa-fw fa-user-plus\"></span> Nabíráme: Analytik/čka</a>"
+#   link: /hledame-posilu
+#   class: "pb-3"
+
+- title: "<span class=\"fas fa-fw fa-chart-gantt\"></span>Projekt: OP JAK"
+  link: /opjak
+
+- title: <span class="fas fa-fw fa-address-card"></span> Kontaktní a fakturační údaje
+  link: /o-nas#kontaktni-udaje
+
+- title: <span class="fas fa-fw fa-redo"></span> Jak používat naše materiály
+  link: /jak-pouzivat
+
+- title: <span class="fas fa-fw fa-bookmark"></span> Další zdroje a odkazy
+  link: /zdroje
+
+- title: <span class="fas fa-fw fa-file-contract"></span> Zásady zpracování osobních údajů
+  link: /gdpr
+
+- title: <span class="fab fa-fw fa-github"></span> faktaoklimatu/web-cz
+  link: https://github.com/faktaoklimatu/web-cz

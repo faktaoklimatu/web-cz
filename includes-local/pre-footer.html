@@ -1,0 +1,11 @@
+{% if page.op-jak %}
+  <div class="mt-5">
+  {%- case page.layout -%}
+      {%- when "explainer" -%}
+          <em>Tento explainer vznikl v rámci projektu Dekarbonizujeme Česko: od kvalitních informací ke kvalitní diskusi, který je spolufinancován Evropskou unií.</em><br/>
+      {%- else %}
+          <div class="build-error">Unknown layout ‘{{ page.layout }}’</div>
+  {%- endcase -%}
+  </div>
+  <img id="opjak-logolink" src="/assets-local/img/EU-MSMT.png" alt="Logo EU a MŠMT">
+{% endif %}
