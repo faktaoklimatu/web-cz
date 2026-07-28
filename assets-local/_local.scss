@@ -3,6 +3,7 @@
 @use "dashboard-teplaren";
 
 /* Local CSS for Czech web version */
+
 $c-callout-background: #f7efde;
 $c-callout-text: #373633;
 
@@ -503,6 +504,52 @@ $c-callout-text: #373633;
     }
 }
 
+
+.key-chart-title {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+}
+
+.key-chart-subtitle {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.2;
+}
+
+.opatreni-ikony {
+    margin: 1.5rem 0;
+    row-gap: 1.5rem;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.2;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#opatreni-otazky {
+    dt {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        display: list-item;
+        list-style-type: "→  ";
+    }
+
+    dd {
+        margin-left: 1.5rem;
+    }
+}
+
 @media (min-width: 576px) {
     .klimazavazky-grafy {
         grid-template-columns: 1fr 1fr;
@@ -633,6 +680,10 @@ $c-callout-text: #373633;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
+    }
+
+    .opatreni-ikony {
+        width: 75%;
     }
 }
 

@@ -149,17 +149,21 @@ subtopics:
   - cena-energie
   - potencial-vetrne-energie-cr
   - potencial-solarni-energie-cr-strechy
+  - 2026-analyza-opatreni-domacnosti
+  - 2026-interaktivni-prehled-opatreni-domacnosti
   - uzemni-stopa-oze
   - 2024-reserse-vodik
 
-- id:          "doprava"
-  title:       "Doprava"
-  title-short: "Doprava"
+- id:          "doprava-budovy"
+  title:       "Doprava a budovy"
+  title-short: "Doprava a budovy"
+  # TODO: fix the lead (it was anyway outdated)
   lead: |
     Emise z dopravy tvoří globálně téměř pětinu všech emisí skleníkových plynů. V Česku je přeprava osob a zboží zodpovědná zhruba za 16 % emisí a objem emisí stále roste. Hlavními nástroji dekarbonizace v sektoru dopravy jsou **změna způsobu dopravy**, **snižování potřeby cestovat** a **elektrifikace** dopravních prostředků.
 
     Jak tyto nástroje můžeme aplikovat v praxi? Kolik elektřiny by bylo v Česku potřeba pro nahrazení stávajících vozů se spalovacími motory elektroauty? Jak může v dekarbonizaci pomoci železniční doprava?
   content:
+  - 2026-opatreni-dekarbonizace-domacnosti
   - emise-doprava
   - elektrifikace-dopravy
   - 52-dekarbonizace-dopravy
@@ -171,7 +175,7 @@ subtopics:
 
 - id:          "scenare-2030-cr"
   title:       "Scénáře vývoje: Česká energetika v roce 2030"
-  title-short: "Scénáře Česko 2030"
+  title-short: "Scénáře ČR 2030"
   lead: |
     EU se zavázala **snížit emise skleníkových plynů do roku 2030 o 55 %** (oproti roku 1990). K dosažení tohoto cíle je klíčová právě transformace energetiky. **Jaké jsou scénáře pro transformaci tohoto sektoru v Česku?**
   qa:
@@ -198,7 +202,7 @@ subtopics:
 - id:          "serie-elektrina-2050-cr"
   series:      True
   title:       "Bezemisní energetika v Česku v roce 2050"
-  title-short: "Bezemisní energetika v Česku 2050"
+  title-short: "Bezemisní energetika v ČR 2050"
   series-short-lead: |
     Tento text je součástí série textů o základních kamenech bezemisní energetiky.
   lead: |

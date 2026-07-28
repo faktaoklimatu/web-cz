@@ -1,0 +1,151 @@
+// _charts.scss — FoK chart CSS
+//
+// Handles layout and positioning that D3 can't easily do in JS.
+// All color/font values are set in fok-theme.js and applied via inline styles by D3.
+// This file only deals with structural CSS: display, position, overflow, cursor.
+
+// ── Chart wrapper ──────────────────────────────────────────────────────────
+
+.fok-chart {
+    position: relative;
+    width: 100%;
+
+    &__title {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.fok-chart-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible; // allow axis labels outside viewBox
+}
+
+// ── Axes ───────────────────────────────────────────────────────────────────
+
+.fok-axis {
+    .domain {
+        shape-rendering: crispEdges;
+    }
+
+    .tick line {
+        shape-rendering: crispEdges;
+    }
+
+    .tick text {
+        user-select: none;
+    }
+}
+
+// ── Bars ───────────────────────────────────────────────────────────────────
+
+.fok-bar {
+    cursor: default;
+    transition: opacity 0.15s ease;
+}
+
+// ── Lines ──────────────────────────────────────────────────────────────────
+
+.fok-line {
+    pointer-events: none;
+}
+
+.fok-area {
+    pointer-events: none;
+}
+
+.fok-voronoi-cell {
+    cursor: crosshair;
+}
+
+// ── Map ────────────────────────────────────────────────────────────────────
+
+.cz-region {
+    transition: fill 0.2s ease;
+}
+
+.cz-point {
+    cursor: pointer;
+    transition: r 0.1s ease;
+}
+
+// ── Tooltip ────────────────────────────────────────────────────────────────
+
+.fok-tooltip {
+    // Structural only — colors/fonts are set via fok-theme.js in JS
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    max-width: 220px;
+    word-wrap: break-word;
+
+    strong {
+        display: block;
+        margin-bottom: 2px;
+    }
+}
+
+// ── Legend ─────────────────────────────────────────────────────────────────
+
+.fok-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin-top: 0.5rem;
+
+    &--vertical {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__swatch {
+        display: inline-block;
+        border-radius: 2px;
+        flex-shrink: 0;
+    }
+
+    &__label {
+        white-space: nowrap;
+    }
+}
+
+// ── Small multiples grid ───────────────────────────────────────────────────
+
+.fok-small-multiples {
+    display: grid;
+    gap: 24px 32px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fok-small-multiples--3col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fok-small-multiples--4col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+// ── Annotation ─────────────────────────────────────────────────────────────
+
+.fok-annotation {
+    pointer-events: none;
+    user-select: none;
+}
+
+// ── Axis label ─────────────────────────────────────────────────────────────
+
+.fok-axis-label {
+    pointer-events: none;
+    user-select: none;
+}
