@@ -101,6 +101,7 @@ subtopics:
   content:  # U nového obsahu zvaž přidání také do dohody-legislativa>eu a emise>mitigace.
   - emisni-povolenky-ets
   - emisni-povolenky-ets-2
+  - 2026-analyza-opatreni-domacnosti
   - zpoplatneni-emisi-svet
   - 26-klimaticka-dividenda
   - mitigacni-opatreni-mmf
