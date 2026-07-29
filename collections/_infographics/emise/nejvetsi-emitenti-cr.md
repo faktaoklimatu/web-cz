@@ -1,6 +1,6 @@
 ---
 layout:     infographic
-title:      "Největší emitenti v ČR v roce 2023"
+title:      "Největší emitenti v ČR v roce 2024"
 slug:       "nejvetsi-emitenti-cr"
 redirect_from: "/nejvetsi-emitenti-cr"
 published:  2021-01-20
