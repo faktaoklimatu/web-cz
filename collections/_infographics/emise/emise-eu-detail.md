@@ -3,7 +3,7 @@ layout:         infographic
 title:          "Emise skleníkových plynů v EU podle sektorů"
 slug:           "emise-eu-detail"
 redirect_from:  "/emise-eu-detail"
-published:      2022-07-14
+published:      2026-07-29
 weight:         51
 tags-scopes:    [ eu ]
 tags-topics:    [ emise ]
