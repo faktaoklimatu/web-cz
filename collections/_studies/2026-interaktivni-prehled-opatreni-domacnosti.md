@@ -491,7 +491,7 @@ include_in_search: true
         <span class="control-label">Cena uhlíku (ETS&nbsp;2)</span>
         <span class="control-value" id="carbon-price-value">70&thinsp;€/t&nbsp;CO₂</span>
       </div>
-      <div class="carbon-lock" id="carbon-lock">Cena uhlíku má ve scénáři net-zero předem stanovenou trajektorii ve výši v průměru 200 €.</div>
+      <div class="carbon-lock" id="carbon-lock">Cena uhlíku má ve scénáři net-zero předem stanovenou trajektorii v průměrné výši 200 €.</div>
       <div class="slider-with-ticks">
         <input type="range" id="carbon-price-slider" min="0" max="200" step="10" value="70">
         <div class="tick-labels">
@@ -541,7 +541,7 @@ include_in_search: true
 {% elsif name == "Tepelné čerpadlo" %}
 <p class="measure-takeaway">Ekonomická výhodnost závisí na ceně uhlíku – bez jeho zpoplatnění se tepelné čerpadlo mírně nevyplatí, ale při ceně 70&thinsp;€/t CO₂ se vyplatí napříč všemi typy budov. K největší úspoře emisí dochází u domů, které využívají k vytápění uhlí. Naopak úsporu dovážených fosilních paliv přináší náhrada plynových kotlů (uhlí je totiž z velké části lokální).</p>
 {% elsif name == "Kotel na dřevo" %}
-<p class="measure-takeaway">Ekonomicky se vyplatí především v případě levného zdroje dřeva, což však bývá vyváženo nároky na jeho přípravu a skladování. Ačkoliv dřevo uvažujeme jako uhlíkově neutrální zdroj, v realitě je jeho nízká emisní stopa sporná. Spalování dřeva navíc způsobuje lokální znečištění ovzduší.</p>
+<p class="measure-takeaway">Ekonomicky se vyplatí především v případě levného zdroje dřeva, což však bývá vyváženo nároky na jeho přípravu a skladování. Ačkoliv je dřevo obecně považováno za uhlíkově neutrální zdroj, v realitě je jeho nízká emisní stopa sporná. Spalování dřeva navíc způsobuje lokální znečištění ovzduší.</p>
 {% elsif name == "Elektrický kotel" %}
 <p class="measure-takeaway">Elektrický kotel se vyplatí pouze v budovách s velmi nízkou spotřebou energie. V případě využívání elektřiny ze sítě ve srovnání s plynovým kotlem nepřináší úsporu emisí – český elektrický mix má vyšší emisní intenzitu než samotný zemní plyn.</p>
 {% elsif name == "Střešní fotovoltaika + baterie" %}
@@ -556,13 +556,13 @@ include_in_search: true
 
 ## <img class="measure-icon" src="/assets-local/figures/2026-analyza-opatreni-domacnosti/elektroauto-male.svg" alt=""> Elektromobily {#m-nove}
 
-<p class="measure-takeaway">Elektromobily jsou již v Česku často ekonomicky výhodnější oproti srovnatelným autům se spalovacím motorem, uvažujeme-li celkové náklady za vlastnictví a provoz aut po dobu jejich životnosti. Ekonomická výhodnost závisí na způsobu nabíjení – vyplatí se především při levném domácím nabíjení a také ceně pohonných hmot.</p>
+<p class="measure-takeaway">Elektromobily jsou již v Česku často ekonomicky výhodnější oproti srovnatelným autům se spalovacím motorem, uvažujeme-li celkové náklady za vlastnictví a provoz aut po dobu jejich životnosti. Ekonomická výhodnost závisí na způsobu nabíjení – vyplatí se především při levném domácím nabíjení a také vysoké ceně pohonných hmot.</p>
 
 <div class="wide-figure-mobile">
   <div class="measure-chart" data-section="transport" data-group=""></div>
 </div>
 
-<p class="measure-takeaway">Cena elektřiny pro elektromobily odpovídá scénáři, kdy řidič/ka nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.</p>
+<p class="measure-takeaway">Cena elektřiny pro elektromobily odpovídá scénáři, kdy se vozidlo nabíjí ze 70 % doma ze sítě, z 20 % na pomalé AC nabíječce a z 10 % na rychlé DC nabíječce.</p>
 
 </div>
 </div>
