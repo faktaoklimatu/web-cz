@@ -2,14 +2,11 @@
 layout:      explainer
 title:       "Jak má mechanismus CBAM chránit evropský průmysl?"
 slug:        "cbam"
-published:   2026-08-03
+published:   2026-08-06
 authors:
   - id: "katerina-kolouchova"
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
-weight:      76
-tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni, ekonomika ]
 cover-source-author:        "Venti Views"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
@@ -60,7 +57,7 @@ CBAM je zároveň i novým zdrojem financí pro rozpočet EU. Výše výnosů se
 
 ### Koho se týká a jaké přináší povinnosti?
 
-CBAM se týká základních surovin[^downstream-produkty] v emisně náročných [sektorech](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-sectors_en), kterými jsou výroba **cementu, železa a oceli, hliníku, hnojiv, elektřiny a vodíku**, respektive souvisejících produktů.[^cbam-produkty]
+CBAM se týká základních surovin v emisně náročných [sektorech](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-sectors_en), kterými jsou výroba **cementu, železa a oceli, hliníku, hnojiv, elektřiny a vodíku**, respektive souvisejících produktů.[^cbam-produkty]
 
 Dovozci ze zemí mimo EU, kteří dováží více než 50 tun takového zboží, mají od roku 2026 **povinnost zajistit si tzv. certifikáty**,[^cbam-sprava] jejichž cena bude odpovídat průměrné ceně povolenky v ETS1.[^cbam-cena] Jeden certifikát, stejně jako emisní povolenka, **odpovídá jedné tuně emisí CO<sub>2</sub>**.
 
@@ -168,7 +165,7 @@ Dekarbonizace některých průmyslových sektorů, jako je právě výroba oceli
 
 Kromě ochrany klimatu a konkurenceschopnosti je důležitá i **otázka evropské strategické autonomie** výroby základních surovin, jako je ocel nebo hliník. Tyto suroviny jsou totiž důležité pro budování infrastruktury – ať už civilní nebo obranné, a významná závislost na třetích zemích by tak mohla ohrozit unijní bezpečnost.
 
-## Poznámky a zdroje
+## Poznámky
 
 [^zpoplatneni-emisi]: Ačkoliv emisní povolenka nebo uhlíková daň dnes pokrývají téměř třetinu světových emisí, v mnohých státech je cena za tunu CO<sub>2</sub> nižší než v EU.
 
@@ -187,4 +184,3 @@ Kromě ochrany klimatu a konkurenceschopnosti je důležitá i **otázka evropsk
 [^revize-ets-podminka]: Nový [návrh Komise](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM:2026:0616:FIN) o revizi EU ETS sice přichází s investicemi do dekarbonizace jako podmínkou pro obdržení povolenek zdarma, ale jeho konečná podoba bude ještě předmětem vyjednávání v následujících měsících.
 
 [^ccfd]: Jednou z vhodných možností by mohly být *Carbon Contracts for Difference* (CCfDs), kdy by stát nebo unijní instituce podniku zaručily fixní cenu za tunu uspořené CO<sub>2</sub>, aby měl jistotu, že se investice vyplatí i v časech, kdy by cena emisní povolenky byla z různých důvodů nižší. V takovém případě by stát tento rozdíl podniku doplatil. Naopak pokud by byla cena emisní povolenky vyšší, podnik by přebytek vrátil státu.
-
