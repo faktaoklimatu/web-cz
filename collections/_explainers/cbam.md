@@ -16,7 +16,7 @@ cover-source-license:       "Unsplash License"
 cover-source-license-url:   "https://unsplash.com/license"
 cover-source-url:           "https://unsplash.com/photos/aerial-view-of-blue-and-white-boat-on-body-of-water-during-daytime-FPKnAO-CF6M"
 perex: |
-    Konkurenceschopnost unijního průmyslu vůči výrobcům ze zemí mimo EU je dlouhodobě tématem veřejné debaty. Kromě nákladů na energie hrají zásadní roli také odlišné emisní standardy. Zatímco Unie už dvě dekády zpoplatňuje emise skleníkových plynů v energetice či průmyslu, ve třetích zemích jsou platby za uhlík často nižší nebo žádné. CBAM je jedním z mechanismů, jak pro domácí výrobce na unijním trhu zajistit rovnější podmínky. 
+    Konkurenceschopnost unijního průmyslu vůči výrobcům ze zemí mimo EU je dlouhodobě tématem veřejné debaty. Kromě nákladů na energie hrají zásadní roli také odlišné emisní standardy. Zatímco Unie už dvě dekády zpoplatňuje emise skleníkových plynů v energetice či průmyslu, ve třetích zemích jsou platby za uhlík často nižší nebo žádné. CBAM je jedním z mechanismů, jak pro domácí výrobce na unijním trhu zajistit rovnější podmínky.
 ---
 
 Odlišné emisní standardy se mohou projevovat náhradou dražších domácích výrobků za levnější dovoz nebo přesunem výroby do zemí s nižšími emisními standardy a náklady. Tyto pohyby pak vedou k **úniku uhlíku** (*carbon leakage*), tedy situaci, kdy se produkce emisí CO<sub>2</sub> přesune mimo EU a ke globálnímu snížení emisí nedojde.[^zpoplatneni-emisi] [^konkurenceschopnost] Proto byla přijata **opatření, která úniku uhlíku brání a podmínky pro unijní výrobce narovnávají**:
@@ -50,20 +50,20 @@ Odlišné emisní standardy se mohou projevovat náhradou dražších domácích
     source-url="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959#art_1"
 %}
 
-CBAM je zároveň i novým zdrojem financí pro rozpočet EU. Výše výnosů se přitom bude odvíjet od ceny emisní povolenky v EU i zemích mimo EU – tedy od toho, za jakou část emisí budou dovozci platit na území EU. V rámci plánovaného rozpočtu pro období 2028 až 2034 [očekává](https://commission.europa.eu/strategy-and-policy/eu-budget/long-term-eu-budget/eu-budget-2028-2034_en) Komise výnosy ve výši 1,4 mld. eur (34 mld. Kč) ročně.
+CBAM je zároveň i novým zdrojem financí pro rozpočet EU. Výše výnosů se přitom bude odvíjet od ceny emisní povolenky v EU i zemích mimo EU – tedy od toho, za jakou část emisí budou dovozci platit na území EU. V rámci plánovaného rozpočtu pro období 2028 až 2034 [očekává](https://commission.europa.eu/strategy-and-policy/eu-budget/long-term-eu-budget/eu-budget-2028-2034_en) Komise výnosy v průměru ve výši 1,4 mld. eur (34 mld. Kč) ročně.
 
 ### Koho se týká a jaké přináší povinnosti?
 
 CBAM se týká základních surovin[^downstream-produkty] v emisně náročných [sektorech](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-sectors_en), kterými jsou výroba **cementu, železa a oceli, hliníku, hnojiv, elektřiny a vodíku**, respektive souvisejících produktů.[^cbam-produkty]
 
-Dovozci ze zemí mimo EU, kteří dováží více než 50 tun takového zboží, mají od roku 2026 **povinnost zajistit si tzv. certifikáty**,[^cbam-sprava] jejichž hodnota bude odpovídat průměrné ceně povolenky v ETS1.[^cbam-cena] Stejně Jeden certifikát, stejně jako emisní povolenka, **odpovídá jedné tuně emisí CO<sub>2</sub>**.
+Dovozci ze zemí mimo EU, kteří dováží více než 50 tun takového zboží, mají od roku 2026 **povinnost zajistit si tzv. certifikáty**,[^cbam-sprava] jejichž cena bude odpovídat průměrné ceně povolenky v ETS1.[^cbam-cena] Jeden certifikát, stejně jako emisní povolenka, **odpovídá jedné tuně emisí CO<sub>2</sub>**.
 
 V praxi však může být počet potřebných certifikátů snížen v následujících případech:
 
 * **Cena za emise už byla zaplacena.** Pokud dovozce prokáže, že platba za emise byla odvedena mimo EU, zaplatí pouze případný rozdíl mezi danou částkou a průměrnou cenou ETS1 povolenky (včetně rozdílu v nákladech s ohledem na rozdílnou emisní intenzitu výroby zboží v EU a třetí zemi).
 * **Unijní výrobce stejného výrobku dostává povolenky zdarma.** Jak bylo zmíněno výše, CBAM se zavádí postupně s tím, jak dochází k vyřazování povolenek alokovaných zdarma. Povinnost platit za emise v dovážených produktech je tak snižována o odpovídající příděl povolenek, které výrobce stejného zboží v EU dostává zdarma. Jinými slovy, CBAM se vztahuje jen na ty emise, které v Unii nepokrývají povolenky zdarma.
 
-Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle vzorce níže. 
+Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle vzorce níže.
 
 {% include figure.html
     name="cs-cbam-vypocet-des.svg"
@@ -75,14 +75,19 @@ Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle 
 
 {% capture priklad %}
 
-* Podnik v roce 2030 doveze 1000 tun cementového slínku. Předpokládejme, že skutečná emisní intenzita výroby tuny takového produktu mimo EU je 0,9 tuny CO<sub>2</sub>[^zahrnute-emise]. Bez úlev by tak potřeboval nakoupit 900 certifikátů.
+* Podnik v roce 2030 doveze 1000 tun cementového slínku. Předpokládejme, že skutečná emisní intenzita výroby tuny takového produktu mimo EU je 0,9 tuny CO<sub>2</sub>.<sup>*</sup> Bez úlev by tak potřeboval nakoupit 900 certifikátů.
 * Podnik ze třetí země už za emise zaplatil 20 € za tunu CO<sub>2</sub>, tedy čtvrtinu z ceny certifikátu ve výši 80 € (225 tun).
-* Standardizovaná emisní intenzita výroby tuny takového produktu v EU (CBAM benchmark)<sup>*</sup> je 0,67 tuny CO<sub>2</sub>. V daném roce je podíl povolenek alokovaných zdarma (CBAM faktor)<sup>**</sup> 51,5 %. Z platby si tak dovozce odečte dalších 345 t CO<sub>2</sub>.
+* Standardizovaná emisní intenzita výroby tuny takového produktu v EU (CBAM benchmark)<sup>\*\*</sup> je 0,67 tuny CO<sub>2</sub>. V daném roce je podíl povolenek alokovaných zdarma (CBAM faktor)<sup>\*\*\*</sup> 51,5 %. Z platby si tak dovozce odečte dalších 345 t CO<sub>2</sub>.
 * V roce 2030 tak bude potřebovat 330 certifikátů (namísto původních 900).
 
-<sup>*</sup>Hodnoty benchmarků pro jednotlivá zboží obsahuje [Prováděcí nařízení Komise 2025/2620](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202502620).
+<sup>*</sup> Skutečné emise zahrnují jak přímé emise vznikající při výrobním procesu, tak nepřímé emise vznikající při výrobě elektřiny (konkrétně scope 1 a 2). U složeného zboží jsou součástí i emise vstupních materiálů. Konkrétněji viz 2. část [Přílohy IV](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023R0956#anx_IV) nařízení.
+{: .footnotes}
 
-<sup>**</sup>Hodnoty CBAM faktoru v jednotlivých letech obsahuje revidovaná [směrnice o ETS](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959#art_1), článek 10(a).
+<sup>**</sup> Hodnoty benchmarků pro jednotlivá zboží obsahuje [Prováděcí nařízení Komise 2025/2620](https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202502620).
+{: .footnotes}
+
+<sup>***</sup> Hodnoty CBAM faktoru v jednotlivých letech obsahuje revidovaná [směrnice o ETS](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023L0959#art_1), článek 10(a).
+{: .footnotes}
 
 {% endcapture %}
 
@@ -149,9 +154,7 @@ Kromě ochrany klimatu a konkurenceschopnosti je důležitá i **otázka strateg
 
 [^cbam-sprava]: V Česku [bude mít](https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-schvalila-navrh-zakona-o-pravidlech-cbam-62859) vydávání certifikátů a administrativu související s CBAM na starost [Ministerstvo životního prostředí](https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/cbam) a [Celní správa](https://celnisprava.gov.cz/cz/dalsi-kompetence/cbam/Stranky/default.aspx).
 
-[^cbam-cena]: Konkrétně bude cena certifikátu odpovídat průměrné ceně povolenky za čtvrtletí v roce 2026 a za týden od roku 2027 dál.
-
-[^zahrnute-emise]: Skutečné emise zahrnují jak přímé emise vznikající při výrobním procesu, tak nepřímé emise vznikající při výrobě elektřiny (konkrétně scope 1 a 2). U složeného zboží jsou součástí i emise vstupních materiálů. Konkrétněji viz 2. část [Přílohy IV](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex:32023R0956#anx_IV) nařízení.
+[^cbam-cena]: Konkrétně bude cena certifikátu odpovídat v roce 2026 pro jednoduchost vždy průměrné ceně povolenky za poslední čtvrtletí a od roku 2027 dál pro větší přesnost vždy průměrné ceně povolenky za poslední týden.
 
 [^export-podpora]: Téma podpory vývozu emisně náročného zboží mimo EU je něco, po čem unijní průmysl dlouhodobě volá. V praxi se například mluví o tzv. *export rebates* – mechanismu, který by měl kompenzovat znevýhodnění unijních vývozců vůči zahraniční konkurenci, která podléhá nižšímu (nebo žádnému) zpoplatnění emisí. Fungoval by tedy jako zrcadlový protějšek CBAM na straně vývozu.
 
