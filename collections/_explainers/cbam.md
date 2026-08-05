@@ -107,17 +107,20 @@ Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle 
 
 ### Jak CBAM ovlivní dynamiku obchodu?
 
-CBAM ve stávající podobě narovnává podmínky uvnitř unijního trhu. Co tedy znamená pro dovozce v EU a výrobce ze třetích zemí?
+CBAM ve stávající podobě narovnává podmínky uvnitř unijního trhu. Co tedy znamená pro výrobce ze třetích zemí, pro spotřebitele v EU a také pro výrobce v EU a exportéry z EU?
 
-CBAM povede k tomu, že dovozce bude porovnávat dodavatele také podle emisní náročnosti,[^hodnoty-emisi] což bude výrobce mimo EU směřovat k tomu, aby buď snížili emise nebo jejich cenu zohlednili v ceně svých produktů, pokud budou chtít zůstat konkurenceschopní. Také to může být motivace pro vlády v mimounijních zemích, které významně obchodují s EU, aby zavedly (navýšily) domácí cenu za emise, a výnosy tak zůstaly v lokální ekonomice. V opačném případě by výrobci mohli být nuceni snížit vývozní marže, případně by přišli o přístup na unijní trh.
+CBAM předně motivuje mimoevropské výrobce ke snižování emisí. Dovozce do EU bude totiž porovnávat dodavatele také podle jejich emisní náročnosti:[^hodnoty-emisi]
 
-V případě, že emisní intenzita daného zboží ze třetí země bude nižší než v EU, může to přispět k relativně vyšší konkurenceschopnosti zahraničního výrobce oproti domácímu na unijním trhu.
+* To bude výrobce mimo EU směřovat k tomu, aby buď snížili emise nebo jejich cenu zohlednili v ceně svých produktů pro evropský trh, pokud budou chtít zůstat konkurenceschopní.
+* Pokud výrobce mimo EU dosáhne nižší emisní intenzity daného zboží než v EU, může to přispět k jeho relativně vyšší konkurenceschopnosti oproti domácímu na unijním trhu.
 
-Dopad CBAM na ceny zboží v EU bude záležet na tom, v jaké míře dovozci přenesou náklad na dodavatele (např. zda vznesou požadavek na nižší cenu jako podmínku pro pokračující obchodování) a v jaké na spotřebitele v EU.
+CBAM také může být motivace pro vlády v mimounijních zemích, které významně obchodují s EU, aby zavedly (navýšily) domácí cenu za emise, a výnosy ze zpoplatnění uhlíku tak zůstaly v lokální ekonomice. V opačném případě by výrobci mohli být nuceni snížit vývozní marže, případně by přišli o přístup na unijní trh.
 
-CBAM v současnosti zahrnuje pouze základní suroviny. To vytváří riziko, že by mohlo dojít k obcházení CBAM dovozem navazujících (*downstream*) produktů, které tyto suroviny obsahují, ale CBAM nepodléhají (např. výkonové transformátory, pračky nebo auta). V EU se ale na tyto produkty vztahuje EU ETS. Proto Evropská komise v prosinci 2025 představila [návrh](https://ec.europa.eu/commission/presscorner/detail/cs/ip_25_3088), který by od roku 2028 zahrnul i vybrané *downstream* produkty – především ty s vysokým obsahem oceli nebo hliníku (CBAM by se pak vztahoval právě na emise vázané v těchto surovinách, nikoliv na celý produkt).
+Dopad CBAM na ceny zboží v EU bude záležet na tom, v jaké míře dovozci přenesou náklad na dodavatele (např. zda vznesou požadavek na nižší cenu jako podmínku pro pokračující obchodování) a v jaké na spotřebitele v EU. Pravděpodobně to ale k určitému navýšení cen zboží na unijním trhu povede.
 
-Zatímco CBAM narovnává podmínky na unijním trhu, unijním vývozcům emisně náročných produktů na jiné trhy nepomáhá. Téma podpory vývozu emisně náročného zboží mimo EU je však také předmětem veřejné debaty, hlavně na straně průmyslu. Mluví se například o tzv. *export rebates* – mechanismu, který by měl kompenzovat znevýhodnění unijních vývozců vůči zahraniční konkurenci, která podléhá nižšímu (nebo žádnému) zpoplatnění emisí. Fungoval by tedy jako zrcadlový protějšek CBAM na straně vývozu.
+CBAM narovnává podmínky na trhu pro unijní výrobce základních surovin zpoplatněných CBAM. Mohl by ovšem mít nepříjemné dopady na unijní výrobce navazujících (*downstream*) produktů, které mají vysoký obsah těchto základních surovin (např. výkonové transformátory s vysokým obsahem hliníku nebo pračky či auta s vysokým obsahem oceli). Tyto downstream produkty podle současné legislativy totiž nepodléhají CBAM a jejich dovozem by mohlo docházet k určitému obcházení tohoto systému, protože mimounijní výrobce takových produktů by na rozdíl od evropských výrobců za emise nemusel platit nic. Proto Evropská komise v prosinci 2025 představila [návrh](https://ec.europa.eu/commission/presscorner/detail/cs/ip_25_3088), který by od roku 2028 zahrnul i vybrané *downstream* produkty – především ty s vysokým obsahem oceli nebo hliníku (CBAM by se pak vztahoval právě na emise vázané v těchto surovinách, nikoliv na celý produkt).
+
+Unijním exportérům emisně náročných produktů na jiné trhy CBAM nijak nepomáhá. Téma podpory vývozu emisně náročného zboží mimo EU je však také předmětem veřejné debaty, hlavně na straně průmyslu. Mluví se například o tzv. *export rebates* – mechanismu, který by měl kompenzovat znevýhodnění unijních vývozců vůči zahraniční konkurenci, která podléhá nižšímu (nebo žádnému) zpoplatnění emisí. Fungoval by tedy jako zrcadlový protějšek CBAM na straně vývozu.
 
 {% capture wb-studie %}
 
@@ -153,7 +156,7 @@ Z hlediska objemu, nejvíce CBAM zboží [pochází](https://www.cer.eu/sites/de
     name="wb-studie"
     expanded=false
     class="contrast-figure"
-    label="Kontext: Dopad CBAM na mimounijní země"
+    label="Kontext: Dopad CBAM na ekonomiku mimounijních zemí"
     content=wb-studie
 %}
 
@@ -161,9 +164,9 @@ Z hlediska objemu, nejvíce CBAM zboží [pochází](https://www.cer.eu/sites/de
 
 Současný režim povolenek zdarma motivuje unijní průmysl k dekarbonizaci velmi slabě.[^revize-ets-podminka] Jejich postupné vyřazování bude pro evropský průmysl znamenat vyšší cenu za emise, ale současně **díky CBAM dojde k narovnání podmínek** s dovozem obdobného zboží ze třetích zemí.
 
-Dekarbonizace některých průmyslových sektorů, jako je právě výroba oceli nebo cementu či chemikálií, je náročná a drahá (jde o tzv. *hard-to-abate* sektory), proto je kromě pobídky ve formě zpoplatnění emisí **potřeba vhodné nastavení dalších regulací a incentiv**.[^ccfd] Velkou roli hraje také **předvídatelnost** a regulatorní jistota, protože investiční cyklus v průmyslu trvá dekády.
+Dekarbonizace některých průmyslových sektorů, jako je právě výroba oceli nebo cementu či chemikálií, je náročná a drahá (jde o tzv. *hard-to-abate* sektory), proto je kromě impulsu ve formě zpoplatnění emisí **potřeba vhodné nastavení dalších regulací a incentiv**.[^ccfd] Velkou roli hraje také **předvídatelnost** a regulatorní jistota, protože investiční cyklus v průmyslu trvá dekády.
 
-Kromě ochrany klimatu a konkurenceschopnosti je důležitá i **otázka strategické autonomie** výroby základních surovin, jako je ocel nebo hliník, v EU. Tyto suroviny jsou totiž důležité pro budování infrastruktury – ať už civilní nebo obranné, a významná závislost na třetích zemích by tak mohla ohrozit unijní bezpečnost.
+Kromě ochrany klimatu a konkurenceschopnosti je důležitá i **otázka evropské strategické autonomie** výroby základních surovin, jako je ocel nebo hliník. Tyto suroviny jsou totiž důležité pro budování infrastruktury – ať už civilní nebo obranné, a významná závislost na třetích zemích by tak mohla ohrozit unijní bezpečnost.
 
 ## Poznámky a zdroje
 
