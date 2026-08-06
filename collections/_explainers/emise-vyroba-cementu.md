@@ -5,9 +5,6 @@ slug:        "emise-vyroba-cementu"
 published:   2021-02-13
 authors:
   - id: "ondras-pribyla"
-weight:      73
-tags-scopes: [ svet ]
-tags-topics: [ emise ]
 cover-source-author: "Gavin Houtheusen/Department for International Development"
 cover-source-license: "CC BY 3.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by/3.0/deed.en"

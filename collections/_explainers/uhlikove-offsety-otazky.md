@@ -14,9 +14,6 @@ authors:
   - name: "Jana Smolíková"
     affiliation: CI2
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author:      "Dan Meyers"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash licence"

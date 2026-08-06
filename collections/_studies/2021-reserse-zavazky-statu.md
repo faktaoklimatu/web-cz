@@ -3,10 +3,7 @@ layout:      survey
 title:       "Emisní závazky států"
 slug:        2021-reserse-zavazky-statu
 redirect_from: "/2021-reserse-zavazky-statu"
-weight:      300
 published:   2021-05-12
-tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni ]
 caption:     "Přehled států a státních celků, jež se největší měrou podílejí na světových emisích oxidu uhličitého a jejich oficiální závazky k omezení emisí."
 intro: |
   Evropská unie a dalších 194 signatářů Pařížské dohody prezentovalo svoje národní závazky s cílem snížit emise skleníkových plynů na svém území. Většina zemí nad rámec těchto národních závazků, zpravidla cílících na rok 2030, deklarovala i dlouhodobější závazky – nejčastěji tzv. <a href="/explainery/uhlikova-neutralita">net-zero emise</a> v roce 2050. Mezi státy, které termín klimatické neutrality (net-zero emise) zatím neohlásily, patří Írán a Mexiko.

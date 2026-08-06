@@ -4,9 +4,6 @@ title:          "Emise skleníkových plynů ze zemědělství v ČR"
 slug:           "emise-cr-zemedelstvi"
 redirect_from:  "/emise-cr-zemedelstvi"
 published:      2024-07-12
-weight:         51
-tags-scopes:    [ cr ]
-tags-topics:    [ emise ]
 caption:        "Podíl zemědělství (včetně spalování fosilních paliv v tomto sektoru) na celkových emisích skleníkových plynů Česka v roce 2022 byl 8,2 %."
 dataset:        "emise-cr"
 ---

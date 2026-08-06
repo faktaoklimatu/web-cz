@@ -12,9 +12,6 @@ authors:
     minor-role: "vizualizace"
   - ids: ["eliska-soperova", "kristyna-simonova"]
     minor-role: "rešerše"
-weight:      80
-tags-scopes: [ cr ]
-tags-topics: [ opatreni ]
 cover-source-author: "Antoine Schibler"
 cover-source-text: "Unsplash"
 cover-source-url: "https://unsplash.com/photos/KF3Ty-K6NVA"

@@ -4,9 +4,6 @@ title:      "Lesnatost v přírodních lesních oblastech"
 slug:       "lesnatost-plo"
 redirect_from: "/lesnatost-plo"
 published:  2021-11-04
-weight:     91
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 caption:    "Lesy v ČR pokrývají 36,8 % celkové plochy. Nejvyšší lesnatost najdeme v okrajových pohořích, nejnižší je v Polabí a nížinných úvalech."
 
 ---

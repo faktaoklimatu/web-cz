@@ -4,9 +4,6 @@ title:          "Emise skleníkových plynů z průmyslu v EU"
 slug:           "emise-eu-prumysl"
 redirect_from:  "/emise-eu-prumysl"
 published:      2023-08-14
-weight:         51
-tags-scopes:    [ eu ]
-tags-topics:    [ emise ]
 caption:        "Z průmyslu pochází více než čtvrtina celkových emisí skleníkových plynů v Evropské unii. Průmysl je tak největším producentem těchto emisí před dopravou a výrobou elektřiny a tepla."
 dataset:        "emise-eu"
 ---

@@ -5,9 +5,6 @@ slug:        "pozice-akteru-cop"
 published:   2021-10-20
 updated:     2024-11-11
 author:      "Tým Fakt o klimatu"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ opatreni, ekonomika ]
 cover-source-author: "Kaia Rose, Connect4Climate"
 cover-source-license: "CC BY-NC-SA 2.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-sa/2.0/"

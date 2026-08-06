@@ -4,9 +4,6 @@ title:       "Srovnání scénářů transformace elektroenergetiky ČR"
 slug:        "srovnani-energetickych-scenaru-cr"
 redirect_from: "/srovnani-scenaru"
 published:   2020-11-20
-weight:      73
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Srovnání pěti nedávných scénářů pro transformaci české elektroenergetiky do roku 2030. Scénáře se radikálně liší ve svém dopadu na snížení emisí skleníkových plynů souvisejících s výrobou elektřiny. Stejně tak se scénáře liší zaměřením a použitou metodikou."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:

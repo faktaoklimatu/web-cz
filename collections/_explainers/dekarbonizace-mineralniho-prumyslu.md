@@ -11,9 +11,6 @@ authors:
     affiliation: Asociace pro mezinárodní otázky
     minor-role: "konzultace"
 
-weight:      74
-tags-scopes: [  ]
-tags-topics: [  ]
 cover-source-author:        "Bjonsson"
 cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"

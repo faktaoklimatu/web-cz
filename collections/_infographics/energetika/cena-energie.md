@@ -4,9 +4,6 @@ title:      "Vývoj světových cen elektřiny podle zdrojů"
 slug:       "cena-energie"
 redirect_from: "/cena-energie"
 published:  2021-06-24
-weight:     80
-tags-scopes: [ svet ]
-tags-topics: [ energetika ]
 caption:    "Srovnání vývoje sdružených nákladů na výrobu elektřiny v modelových velkých elektrárnách (tzv. utility-scale) od roku 2009 do roku 2025, především z hlediska technologií a trhu. Do ceny nejsou započteny dotace, ceny emisních povolenek ani náklady spojené s vyrovnáním nestálosti zdrojů. V grafu jsou zobrazeny obnovitelné zdroje, které mají v České republice největší potenciál rozvoje."
 data-our:   "https://docs.google.com/spreadsheets/d/1e4QPC8HLKM1HJ-EiI4kxF79tU1i1OuEqlpyj1tcvBr4"
 data-orig:  [["Zdrojová data Lazard", "https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/"]]

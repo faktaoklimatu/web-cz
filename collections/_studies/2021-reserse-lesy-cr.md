@@ -3,10 +3,7 @@ layout:      survey
 title:       "Stav lesů ČR"
 slug:        2021-reserse-lesy-cr
 redirect_from: "/2021-reserse-lesy-cr"
-weight:      301
 published:   2021-06-10
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 caption:     "Přehled zdrojů zabývajících se stavem českých lesů."
 intro: |
   Informace o českých lesích a jejich stavu jsou roztříštěny mezi soukromé i státní organizace, české i zahraniční zdroje. Tato rešerše poskytuje základní vhled do organizací zabývajících se správou českých lesů a poskytováním informací o nich. Dále poskytuje odkazy na souhrnné studie a grafiky, na projekty zpracovávající interaktivní mapy a data o lesích.

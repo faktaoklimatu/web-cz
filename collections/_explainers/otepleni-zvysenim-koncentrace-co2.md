@@ -5,9 +5,6 @@ slug:        "otepleni-zvysenim-koncentrace-co2"
 published:   2021-05-01
 authors:
   - id: "ondras-pribyla"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 cover-source-author: "Allan Nygren"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"

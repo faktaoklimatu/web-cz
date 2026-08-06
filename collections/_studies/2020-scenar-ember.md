@@ -4,9 +4,6 @@ title:       "Ember: Scénář transformace elektroenergetiky ČR"
 slug:        "2020-scenar-ember"
 redirect_from: "/2020-scenar-ember"
 published:   2020-11-19
-weight:      91
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Studie Ember zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně zkoumá variantu ukončení provozu všech českých uhelných elektráren a uhelných tepláren. V tomto rámci pak hledá nákladově optimální výstavbu a provoz elektráren. Studie ukazuje, že i takto ambiciózní scénář je myslitelný, vyžaduje ale výrazné tempo rozvoje solárních, větrných i záložních plynových elektráren."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:

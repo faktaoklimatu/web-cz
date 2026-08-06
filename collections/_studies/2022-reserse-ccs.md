@@ -3,10 +3,7 @@ layout:        survey
 title:         "Zachytávání, ukládání a využití uhlíku"
 slug:          2022-reserse-ccs
 redirect_from: "/2022-reserse-ccs"
-weight:        305
 published:     2022-09-29
-tags-scopes:   [ svet ]
-tags-topics:   [ emise, opatreni ]
 caption:       "Přehled institucí a článků věnujících se zachytávání a ukládání uhlíku z atmosféry."
 intro: |
   <i>Carbon capture and storage</i> (CCS) je proces, při kterém je zachytáván CO<sub>2</sub>, který je následně uložen, aby neunikl zpět do atmosféry. Jedná se o potenciálně klíčový nástroj pro mitigaci změn klimatu a je součástí většiny scénářů k dosažení klimatické neutrality.

@@ -4,9 +4,6 @@ title:         "Finance z fondů EU na klimatická opatření v ČR"
 slug:          "fondy-eu"
 redirect_from: "/fondy-eu"
 published:     2022-03-26
-weight:        94.5
-tags-scopes:   [ eu, cr ]
-tags-topics:   [ opatreni, ekonomika ]
 data-our:      "https://docs.google.com/spreadsheets/d/1kJj-V-eg1mv6JrvxikBRCP49vqyo5W4ICnUxVRs-XUs/edit?usp=sharing"
 caption:       "Česká republika v následujících letech obdrží z fondů EU bezprecedentní objem financí na klimatická opatření. Tyto prostředky budou podle ceny emisních povolenek odpovídat 900 až 1 100 miliardám korun a budou směřovat do mnoha oblastí: od obnovitelných zdrojů energie a komunitní energetiky přes zlepšování energetické účinnosti až po udržitelné zemědělství a další."
 ---

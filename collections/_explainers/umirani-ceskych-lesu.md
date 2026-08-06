@@ -5,9 +5,6 @@ slug:        "umirani-ceskych-lesu"
 published:   2021-10-06
 authors:
   - id: "ondras-pribyla"
-weight:      74
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 cover-source-author: "Ondráš Přibyla"
 cover-source-license: "CC BY 4.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by/4.0/"

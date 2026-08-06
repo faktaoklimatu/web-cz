@@ -4,9 +4,6 @@ title:      "Mezinárodní dohody o biodiverzitě"
 slug:       "svetove-dohody-biodiverzita"
 redirect_from: "/svetove-dohody-biodiverzita"
 published:  2023-10-17
-weight:     95.5
-tags-scopes: [ svet ]
-tags-topics: [ opatreni, dohody, budoucnost ]
 caption:    "Ačkoli první mezinárodní úmluvy a strategie věnované ochraně přírody vznikly už ve druhé polovině 20. století, teprve v poslední dekádě začíná svět mnohem více vnímat ubývající biodiverzitu jako problém, který představuje významná rizika – jak pro přírodu samotnou, tak pro lidskou civilizaci. Tomu odpovídá zvýšené úsilí zaměřené na ochranu biodiverzity."
 ---
 

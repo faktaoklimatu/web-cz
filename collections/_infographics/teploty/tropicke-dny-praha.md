@@ -4,9 +4,6 @@ title:      "Tropické a ledové dny v Praze-Ruzyni"
 slug:       "tropicke-dny-praha"
 redirect_from: "/tropicke-dny-praha"
 published:  2020-05-13
-weight:     110
-tags-scopes: [ cr ]
-tags-topics: [ klima ]
 caption:    "Jako ukazatel změny klimatu v ČR může sloužit i nárůst počtu tropických a pokles počtu ledových dní. Zatímco dříve bylo v Praze mnohem více dní s teplotou pod 0 °C než s teplotou nad 30 °C, v posledních letech jsou tyto počty srovnatelné."
 dataset:    "tropicke-dny"
 ---

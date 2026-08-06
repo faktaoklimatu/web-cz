@@ -9,9 +9,6 @@ authors:
     minor-role: "editace"
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace dat"
-weight:      74
-tags-scopes: [ cr, eu ]
-tags-topics: [ emise, energetika ]
 cover-source-author:      "aled7"
 cover-source-text:        "Pixabay"
 cover-source-license:     "Pixabay License"
