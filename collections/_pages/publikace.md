@@ -3,7 +3,6 @@ layout:        topic
 title:         "Naše publikace"
 slug:          "publikace"
 published:     2023-04-10
-weight:        20
 no_image:      True
 intro: |
   Kromě infografik, explainerů a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie. Na publikacích často spolupracujeme s dalšími aktéry – ať už jde o nevládní organizace, firmy nebo tvůrce politik a politické představitele.

@@ -9,9 +9,6 @@ authors:
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
-weight:      74
-tags-scopes: [  ]
-tags-topics: [  ]
 cover-source-author:        "Robert Schwemmer, NOAA, NOS, CINMS"
 cover-source-license:       "CC BY 2.0"
 cover-source-license-url:   "https://creativecommons.org/licenses/by/2.0/deed.en"

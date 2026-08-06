@@ -4,9 +4,6 @@ title:      "Změna průměrné teploty planety za 22 000 let"
 slug:       "teplota-22000-let"
 redirect_from: "/teplota-22000-let"
 published:  2020-07-30
-weight:     97
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 caption:    "Zatímco v průběhu přirozeného přechodu mezi dobou ledovou a meziledovou trvalo planetě Zemi oteplení o 1 °C více než tisíc let, nyní se vlivem člověkem vypouštěných skleníkových plynů ohřála o 1 °C za méně než sto let. Podle předpovědí se od současných teplot do konce tohoto století planeta oteplí ještě o dalších 0,5–3 °C, v závislosti na množství emisí skleníkových plynů."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/global-temperature-22000-years.ipynb"
 data-orig:

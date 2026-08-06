@@ -3,10 +3,7 @@ layout:        survey
 title:         "Atribuce nedávných extrémních událostí"
 slug:          2023-reserse-extremy
 redirect_from: "/2023-reserse-extremy"
-weight:        305
 published:     2023-06-08
-tags-scopes:   [ ]
-tags-topics:   [ ]
 use-preview-image: true
 caption:       "Přehled extrémních událostí a jejich spojitost se změnou klimatu"
 intro: |

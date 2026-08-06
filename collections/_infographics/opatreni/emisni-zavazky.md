@@ -4,9 +4,6 @@ title:         "Světové emise a závazky k uhlíkové neutralitě"
 slug:          "emisni-zavazky"
 redirect_from: "/emisni-zavazky"
 published:     2022-03-30
-weight:        91
-tags-scopes:   [ svet ]
-tags-topics:   [ opatreni, emise ]
 caption:       "89 % světových emisí oxidu uhličitého pochází ze států, které směřují k uhlíkové neutralitě. Těchto států je již 150. Státy, které svůj závazek k uhlíkové neutralitě zatím nepředstavily, se naproti tomu podílí na 8,1 % světových emisí. 2,9 % emisí pak připadá na mezinárodní námořní a leteckou dopravu."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/net-zero-pledges.ipynb"
 ---

@@ -5,9 +5,6 @@ slug:        "2024-qa-vyroba-elektriny-v-cesku-bez-uhli"
 published:   2024-10-26
 authors:
   - ids: ["jan-krcal", "matej-grabovsky"]
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni ]
 cover-source-author:        "Marcel Otruba"
 cover-source-text:          "Fakta o klimatu"
 cover-source-license:       "CC BY 4.0"

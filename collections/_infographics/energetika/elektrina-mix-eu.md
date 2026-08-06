@@ -4,9 +4,6 @@ title:      "Podíl zdrojů na výrobě elektřiny v EU a Británii"
 slug:       "elektrina-mix-eu"
 redirect_from: "/elektrina-mix-eu"
 published:  2023-02-24
-weight:     92.5
-tags-scopes: [ eu ]
-tags-topics: [ energetika ]
 caption:    "Výroba elektřiny ve státech Evropské unie a ve Velké Británii v roce 2021 podle podílu jaderných, fosilních a obnovitelných zdrojů. V Česku se na výrobě elektřiny podílely z 50 % fosilní paliva, z 37 % jaderná energie a 13 % vyrobily obnovitelné zdroje."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-mixes-eu.ipynb"
 ---

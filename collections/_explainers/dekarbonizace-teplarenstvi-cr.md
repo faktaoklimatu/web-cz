@@ -12,9 +12,6 @@ authors:
   - name: "Michaela Valentová"
     affiliation: ČVUT, Fakulta elektrotechnická
     minor-role: "konzultace"
-weight:      50
-tags-scopes: [ eu, cr ]
-tags-topics: [ energetika ]
 cover-source-author: "Hubert Kororo"
 cover-source-license: "CC BY-SA 4.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-sa/4.0/deed.cs"

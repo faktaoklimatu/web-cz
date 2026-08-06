@@ -3,10 +3,7 @@ layout:      survey
 title:       "Požáry vegetace a jejich souvislosti s klimatickou změnou"
 slug:        2022-reserse-pozary
 redirect_from: "/2022-reserse-pozary"
-weight:      301
 published:   2022-08-19
-tags-scopes: [ cr, svet ]
-tags-topics: [ priroda ]
 caption:     "Přehled článků a zdrojů zabývajících se požáry vegetace či lesními požáry v souvislosti s klimatickou změnou."
 intro: |
  Jako požáry vegetace, nebo také přírodní požáry (*wildfires/bushfires*), se označují nekontrolované požáry lesů, křovin nebo suché trávy, které vzplály ve volné přírodě (např. zapálením bleskem) nebo byly úmyslně či neúmyslně založeny lidmi. Na světě je požáry ročně postižena plocha okolo 4 milionů km<sup>2</sup>, ale charakter požárů je velmi různý v různých oblastech. V afrických savanách a stepích Asie a Jižní Ameriky jde především o rozsáhlé požáry suché trávy, v lesích Severní Ameriky a Sibiře o požáry hustých jehličnatých lesů, v tropických oblastech pak o vypalování deštného pralesa.

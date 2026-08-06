@@ -10,9 +10,6 @@ authors:
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
-weight:      100
-tags-scopes: [ eu ]
-tags-topics: [ opatreni ]
 cover-source-author:        "Appolinary Kalashnikova"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"

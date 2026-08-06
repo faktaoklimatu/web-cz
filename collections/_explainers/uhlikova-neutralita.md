@@ -5,9 +5,6 @@ slug:        "uhlikova-neutralita"
 published:   2021-05-11
 authors:
   - id: "ondras-pribyla"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ opatreni, emise ]
 cover-source-author: "Oimheidi"
 cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"

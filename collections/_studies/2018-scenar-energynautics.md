@@ -7,9 +7,6 @@ redirect_from:
   - /2018_energetika-cr-bez-uhli
   - /studie/2018_energetika-cr-bez-uhli
 published:   2020-11-19
-weight:      92
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Studie Energynautics zkoumá možnou proměnu české elektroenergetiky do roku 2030. Konkrétně analyzuje dopady ukončení provozu českých uhelných elektráren a rozvoje obnovitelných zdrojů na elektrizační soustavu ČR. Závěrem je, že stabilita sítě není zásadní překážkou pro přechod od uhlí k obnovitelným zdrojům."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:
