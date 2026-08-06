@@ -9,6 +9,7 @@ authors:
     minor-role: "editace"
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
+op-jak:      true
 cover-source-author:        "Venti Views"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
