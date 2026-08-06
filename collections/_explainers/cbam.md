@@ -5,6 +5,8 @@ slug:        "cbam"
 published:   2026-08-06
 authors:
   - id: "katerina-kolouchova"
+  - id: "jan-krcal"
+    minor-role: "editace"
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
 cover-source-author:        "Venti Views"
@@ -115,7 +117,7 @@ CBAM také může být motivace pro vlády v mimounijních zemích, které význ
 
 Dopad CBAM na ceny zboží v EU bude záležet na tom, v jaké míře dovozci přenesou náklad na dodavatele (např. zda vznesou požadavek na nižší cenu jako podmínku pro pokračující obchodování) a v jaké na spotřebitele v EU. Pravděpodobně to ale k určitému navýšení cen zboží na unijním trhu povede.
 
-CBAM narovnává podmínky na trhu pro unijní výrobce základních surovin zpoplatněných CBAM. Mohl by ovšem mít nepříjemné dopady na unijní výrobce navazujících (*downstream*) produktů, které mají vysoký obsah těchto základních surovin (např. výkonové transformátory s vysokým obsahem hliníku nebo pračky či auta s vysokým obsahem oceli). Tyto downstream produkty podle současné legislativy totiž nepodléhají CBAM a jejich dovozem by mohlo docházet k určitému obcházení tohoto systému, protože mimounijní výrobce takových produktů by na rozdíl od evropských výrobců za emise nemusel platit nic. Proto Evropská komise v prosinci 2025 představila [návrh](https://ec.europa.eu/commission/presscorner/detail/cs/ip_25_3088), který by od roku 2028 zahrnul i vybrané *downstream* produkty – především ty s vysokým obsahem oceli nebo hliníku (CBAM by se pak vztahoval právě na emise vázané v těchto surovinách, nikoliv na celý produkt).
+CBAM narovnává podmínky na trhu pro unijní výrobce základních surovin zpoplatněných CBAM. Mohl by ovšem mít negativní dopady na unijní výrobce navazujících (*downstream*) produktů, které mají vysoký obsah těchto základních surovin (např. výkonové transformátory s vysokým obsahem hliníku nebo pračky či auta s vysokým obsahem oceli). Tyto *downstream* produkty podle současné legislativy totiž nepodléhají CBAM a jejich dovozem by mohlo docházet k určitému obcházení tohoto systému, protože mimounijní výrobce takových produktů by na rozdíl od evropských výrobců (kteří podlehájí EU ETS) za emise nemusel platit nic. Proto Evropská komise v prosinci 2025 představila [návrh](https://ec.europa.eu/commission/presscorner/detail/cs/ip_25_3088), který by od roku 2028 zahrnul i vybrané *downstream* produkty – především ty s vysokým obsahem oceli nebo hliníku (CBAM by se pak vztahoval právě na emise vázané v těchto surovinách, nikoliv na celý produkt).
 
 Unijním exportérům emisně náročných produktů na jiné trhy CBAM nijak nepomáhá. Téma podpory vývozu emisně náročného zboží mimo EU je však také předmětem veřejné debaty, hlavně na straně průmyslu. Mluví se například o tzv. *export rebates* – mechanismu, který by měl kompenzovat znevýhodnění unijních vývozců vůči zahraniční konkurenci, která podléhá nižšímu (nebo žádnému) zpoplatnění emisí. Fungoval by tedy jako zrcadlový protějšek CBAM na straně vývozu.
 
