@@ -472,7 +472,7 @@ include_in_search: true
       <span class="control-label" data-desc="Všechny scénáře reflektují probíhající Hormuzskou krizi a předpokládají její trvání do roku 2028.">Scénář cen energií</span>
       <div class="seg" id="fuel-scenario-seg">
         <button type="button" class="seg-btn is-active" data-scenario="CP" data-desc="Vychází z aktuálně platných plánů (rozvoj OZE nebo jaderné energetiky, konec uhlí).">Současné politiky</button>
-        <button type="button" class="seg-btn" data-scenario="CP_EC" data-desc="Totožný se scénářem současných politik, akorát předpokládá hypotetickou šestiletou energetickou krizi od roku 2029, která zvýší ceny fosilních paliv i elektřiny ze sítě.">Energetická krize</button>
+        <button type="button" class="seg-btn" data-scenario="CP_EC" data-desc="Totožný se scénářem současných politik s tím, že předpokládá hypotetickou šestiletou energetickou krizi od roku 2029, která zvýší ceny fosilních paliv i elektřiny ze sítě.">Energetická krize</button>
         <button type="button" class="seg-btn" data-scenario="NZ" data-desc="Odráží vyšší tempo adopce nízkoemisních zdrojů a průměrnou cenu emisní povolenky ve výši 200 €.">Net-zero</button>
       </div>
     </div>

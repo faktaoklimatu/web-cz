@@ -98,4 +98,4 @@ Dataset obsahuje i námi definované tři scénáře vývoje cen paliv a elektř
 
 ## Poděkování
 
-Autorský tým děkuje za konzultace Michalu Čejkovi, Petru Vomáčkovi a dalším.
+Autorský tým děkuje za konzultace Michalu Čejkovi, Karolíně Smutkové, Tomáši Stavovi a Petru Vomáčkovi.
