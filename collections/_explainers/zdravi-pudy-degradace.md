@@ -15,9 +15,6 @@ authors:
   - name: "Ladislav Miko"
     affiliation: "MŽP"
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author:      "Darla Hueske"
 cover-source-text:        "Intenzivní zemědělství"
 cover-source-license:     "https://unsplash.com/license"

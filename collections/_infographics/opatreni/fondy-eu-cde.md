@@ -4,9 +4,6 @@ title:         "Evropské fondy a financování klimatických opatření v ČR"
 slug:          "fondy-eu-cde"
 redirect_from: "/fondy-eu-cde"
 published:     2022-06-06
-weight:        100
-tags-scopes:   [ eu, cr ]
-tags-topics:   [ opatreni, ekonomika ]
 data-orig:
 - [ "Analýza CDE", "https://www.cde-org.cz/media/object/1972/revize_climate_taggingu_evropskych_fondu_v_ceske_republice.pdf" ]
 - [ "Dokumentace na GitHubu", "https://cdeorgcz.github.io/esiftagging/index.html" ]

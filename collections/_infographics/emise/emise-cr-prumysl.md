@@ -4,9 +4,6 @@ title:          "Emise skleníkových plynů z průmyslu v ČR"
 slug:           "emise-cr-prumysl"
 redirect_from:  "/emise-cr-prumysl"
 published:      2023-08-17
-weight:         51
-tags-scopes:    [ cr ]
-tags-topics:    [ emise ]
 caption:        "Z průmyslu pochází čtvrtina celkových emisí skleníkových plynů v České republice. Průmysl je tak po výrobě elektřiny a tepla druhým největším producentem těchto emisí."
 dataset:        "emise-cr"
 ---

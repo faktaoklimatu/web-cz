@@ -9,9 +9,6 @@ authors:
     minor-role: "vizualizace"
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
-weight:      76
-tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni, ekonomika ]
 cover-source-author:        "Marcel Otruba"
 cover-source-text:          "Fakta o klimatu"
 cover-source-license:       "CC BY 4.0"

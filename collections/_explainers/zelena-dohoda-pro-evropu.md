@@ -8,9 +8,6 @@ authors:
   - id: "katerina-kolouchova"
   - ids: ["jirka-lnenicka", "kristi-psorn-zakopcanova"]
     minor-role: "editace"
-weight:      74
-tags-scopes: [ eu ]
-tags-topics: [ opatreni ]
 cover-source-author:        "Agent J"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"

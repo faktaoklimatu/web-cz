@@ -4,9 +4,6 @@ title:      "Podíl OZE na výrobě elektřiny v EU a Británii"
 slug:       "elektrina-oze-eu"
 redirect_from: "/elektrina-oze-eu"
 published:  2024-11-25
-weight:     93.1
-tags-scopes: [ eu ]
-tags-topics: [ energetika ]
 caption:    "Podíl obnovitelných zdrojů na výrobě elektřiny v EU se mezi lety 2000–2024 zvýšil přibližně 17×. Nejvyšší podíl těchto zdrojů má Dánsko, nejnižší Česko."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/electricity-generation-res.ipynb"
 data-orig:

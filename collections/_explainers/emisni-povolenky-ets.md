@@ -10,9 +10,6 @@ authors:
     minor-role: "vizualizace"
   - ids: ["jirka-lnenicka", "jan-krcal"]
     minor-role: "editace"
-weight:      74
-tags-scopes: [ eu ]
-tags-topics: [ emise, opatreni, ekonomika ]
 cover-source-author: "Gerd Altmann / geralt"
 cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"

@@ -4,9 +4,6 @@ title:      "Cesta k nízkouhlíkové společnosti"
 slug:       "nizkouhlikova-spolecnost"
 redirect_from: "/nizkouhlikova-spolecnost"
 published:  2021-08-18
-weight:     95
-tags-scopes: [ svet ]
-tags-topics: [ opatreni, ekonomika ]
 caption:    "Hledáme cestu k dosažení stavu, kdy většina lidí na planetě bude žít spokojený život a přitom společnost jako celek bude mít v podstatě nulové emise skleníkových plynů. Jakou roli v tom mohou sehrát jednotlivé části společnosti?"
 ---
 

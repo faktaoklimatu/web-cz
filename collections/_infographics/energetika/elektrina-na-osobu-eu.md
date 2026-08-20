@@ -4,9 +4,6 @@ title:      "Výroba elektřiny na osobu v EU a Británii"
 slug:       "elektrina-na-osobu-eu"
 redirect_from: "/elektrina-na-osobu-eu"
 published:  2020-06-01
-weight:     93
-tags-scopes: [ eu ]
-tags-topics: [ energetika ]
 caption:    "Vývoj vyrobené elektřiny na osobu podle jednotlivých zdrojů v letech 2000–2024 a srovnání se spotřebou pro členské státy Evropské unie a Velkou Británii. Hodnoty jsou uváděné v kWh na osobu za rok."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/per-capita-electricity-generation-eu.ipynb"
 data-orig:

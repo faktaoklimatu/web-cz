@@ -3,10 +3,7 @@ layout:        survey
 title:         "Vodík v energetice"
 slug:          2024-reserse-vodik
 redirect_from: "/2024-reserse-vodik"
-weight:        305
 published:     2024-01-18
-tags-scopes:   [ svet ]
-tags-topics:   [ emise, opatreni ]
 use-preview-image: true
 caption:       "Vodík v energetice"
 intro: |

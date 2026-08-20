@@ -3,9 +3,6 @@ layout:     dataset
 title:      "Vývoj koncentrace CO₂ a O₂ v atmosféře"
 slug:       "koncentrace-co2"
 published:  2020-04-19
-weight:     10
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 caption:    "Dataset obsahuje tři různé datové řady pro CO₂ lišící se časovým rozsahem, zdrojem dat i metodikou a jednu datovou řadu pro koncentrace O₂. Koncentrace CO₂ jsou uvedeny v jednotkách ppm."
 data-our:   "https://docs.google.com/spreadsheets/d/1BpfuFGnqrX12nEDgCR1bE-t_SBBg5lOPVmJrRtV0eh8/edit?usp=sharing"
 data-orig:

@@ -2,10 +2,7 @@
 layout:      survey
 title:       "Klimatické zákony států EU"
 slug:        2023-reserse-klimaticke-zakony
-weight:      303
 published:   2023-09-15
-tags-scopes: [ eu ]
-tags-topics: [ opatreni ]
 use-preview-image: true
 caption:     "Přehled základních informací o klimatických zákonech ve státech EU."
 intro: |

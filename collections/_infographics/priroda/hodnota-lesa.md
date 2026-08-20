@@ -4,9 +4,6 @@ title:         "Hodnota lesa pro přírodu a společnost"
 slug:          "hodnota-lesa"
 redirect_from: "/hodnota-lesa"
 published:     2023-04-26
-weight:        105
-tags-scopes:   [ svet ]
-tags-topics:   [ priroda ]
 caption:       "Důsledkem zúženého pohledu na hodnotu lesa, kdy pro jeho majitele je dřevo zpravidla jediným zdrojem příjmu, je jednostranné zaměření lesního hospodaření na produkční funkci. Ostatní důležité funkce lesa pak ustupují do pozadí – ke škodě člověka i přírody."
 ---
 

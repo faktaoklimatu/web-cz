@@ -4,9 +4,6 @@ title:         "Aktéři klimatických jednání"
 slug:          "akteri-klimatickych-jednani"
 redirect_from: "/akteri-klimatickych-jednani"
 published:     2021-10-17
-weight:        95
-tags-scopes:   [ svet ]
-tags-topics:   [ opatreni, dohody, budoucnost ]
 data-our:      "https://docs.google.com/spreadsheets/d/1_mHnCTeOLjhMiZY8_fcrgI4hy3v2iNf9EZ1ScUCQifY/edit?usp=sharing"
 caption:       "Přehled aktérů mezinárodních klimatických jednání na základě dat o emisích skleníkových plynů, HDP, spotřebě elektřiny a velikosti populace ukazuje, že jednotliví aktéři vstupují do těchto jednání s různými výchozími podmínkami. Ty pak ovlivňují jejich vyjednávací pozici."
 ---

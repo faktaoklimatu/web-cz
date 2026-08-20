@@ -7,9 +7,6 @@ authors:
   - id: "jirka-lnenicka"
   - name: "Vojtěch Kotecký"
     minor-role: "konzultace"
-weight:      76
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author: "Eutah Mizushima"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"

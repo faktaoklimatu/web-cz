@@ -6,9 +6,6 @@ published:   2021-04-03
 authors:
   - name: "Tereza Jarníková"
     affiliation: "University of British Columbia"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author: "Coral Reef Image Bank/Yen-Yi Lee"
 cover-source-license: "NC"
 cover-source-license-url: "https://theoceanagency.org/terms-of-service"

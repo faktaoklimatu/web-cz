@@ -9,9 +9,6 @@ published:     2025-09-23
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
-weight:        105
-tags-scopes:   [ svet ]
-tags-topics:   [ krajina-ekosystemy ]
 cover-source-author:      "Andreas Trepte"
 cover-source-text:        "Wikimedia Commons"
 cover-source-license:     "CC BY-SA 2.5"

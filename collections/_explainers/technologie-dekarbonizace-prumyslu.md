@@ -9,9 +9,6 @@ authors:
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-weight:      74
-tags-scopes: [  ]
-tags-topics: [  ]
 cover-source-author:        "Anton Eprev"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"

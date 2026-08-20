@@ -4,9 +4,6 @@ title:      "Lesnatost v krajích"
 slug:       "lesnatost-kraje"
 redirect_from: "/lesnatost-kraje"
 published:  2021-11-04
-weight:     90
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 caption:    "Lesy pokrývají 36,8 % území ČR, ale procentuální zastoupení lesů v jednotlivých krajích se liší. Z krajů (mimo Prahu) je nejméně zalesněný Jihomoravský (29,7 %) a nejvíce Karlovarský kraj (49,4 %)."
 
 ---

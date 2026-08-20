@@ -4,9 +4,6 @@ title:       "Jak různé varianty snižování emisí ovlivní oteplení"
 slug:        "koncept-cesty-k-neutralite"
 redirect_from: "/koncept-cesty-k-neutralite"
 published:   2021-07-21
-weight:      90
-tags-scopes: [ svet ]
-tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Exponenciální snižování emisí vedoucí k dosažení uhlíkové neutrality v roce 2075 způsobí stejné globální oteplení jako lineární snižování emisí, které povede k uhlíkové neutralitě v roce 2050. Jinými slovy: z hlediska diskuze nad opatřeními spojenými se snižováním emisí je celkový uhlíkový rozpočet mnohem důležitější než datum dosažení uhlíkové neutrality."
 data-our:    "https://docs.google.com/spreadsheets/d/1J2QcNjXzsRrf8Z8Y3Xh41R_EHlqYKt6CAuN1NUPg2K0/edit?usp=sharing"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=122" ] ]

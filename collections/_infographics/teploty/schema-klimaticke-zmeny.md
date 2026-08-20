@@ -4,9 +4,6 @@ title:      "Schematická mapa klimatické změny"
 slug:       "schema-klimaticke-zmeny"
 redirect_from: "/schema-klimaticke-zmeny"
 published:  2020-08-24
-weight:     80
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 caption:    "Klimatická změna není jen nárůst teploty – jde o souhrnný pojem pro řadu vzájemně provázaných jevů. Změna jednoho faktoru, například zvýšení koncentrace CO<sub>2</sub> v atmosféře, vyvolává dlouhý řetězec příčin a následků."
 ---
 
