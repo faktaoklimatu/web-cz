@@ -24,173 +24,171 @@ activities:
   short: Chemický průmysl
 - n: Ostatní aktivity
   short: Ostatní
-- n: ETS2 sektory
-  short: ETS2 sektory
 installs:
 - n: AERO Vodochody AERO - plynová kotelna Odolena Voda
   c: CZ
   act: 0
-  co: AERO Vodochody AEROSPACE a.s.
+  co: 'AERO Vodochody AEROSPACE '
 - n: AGC Flat Glass Czech - výrobní linka R3
   c: CZ
   act: 6
-  co: AGC Flat Glass Czech a.s.,člen AGC Group
+  co: AGC Flat Glass Czech
 - n: AGC Flat Glass Czech - závod Barevka
   c: CZ
   act: 6
-  co: AGC Flat Glass Czech a.s.,člen AGC Group
+  co: AGC Flat Glass Czech
 - n: AGC Flat Glass Czech - závod Řetenice
   c: CZ
   act: 6
-  co: AGC Flat Glass Czech a.s.,člen AGC Group
+  co: AGC Flat Glass Czech
 - n: AL INVEST Břidličná, a.s.
   c: CZ
   act: 0
-  co: AL INVEST Břidličná, a.s.
+  co: AL INVEST Břidličná
 - n: ATALIAN CZ - Areál Zbrojovky Brno
   c: CZ
   act: 0
-  co: ATALIAN CZ s.r.o.
+  co: 'ATALIAN CZ '
 - n: Actherm - teplárna - spalovací zařízení
   c: CZ
   act: 0
-  co: ACTHERM, spol s r.o.
+  co: ČEZ
 - n: Aircraft Industries, a. s. kotelna
   c: CZ
   act: 0
-  co: Aircraft Industries, a. s
+  co: Aircraft Industries
 - n: Ammann - Tepelné hospodářství
   c: CZ
   act: 0
-  co: Ammann Czech Republic a.s.
+  co: 'Ammann Czech Republic '
 - n: Amper Savings - Areál Gumotex Břeclav
   c: CZ
   act: 0
-  co: Amper Savings, a.s.
+  co: Amper Savings
 - n: ArcelorMittal Frýdek-Místek
   c: CZ
   act: 2
-  co: ArcelorMittal Frýdek-Místek a.s.
+  co: 'ArcelorMittal Frýdek-Místek '
 - n: ArcelorMittal Tubular Products Karviná
   c: CZ
   act: 0
-  co: ArcelorMittal Tubular Products Karviná a.s.
+  co: 'ArcelorMittal Tubular Products Karviná '
 - n: BEFACOAL s.r.o. - kotelna Dobříš
   c: CZ
   act: 0
-  co: BEFACOAL s.r.o.
+  co: 'BEFACOAL '
 - n: BEFACOAL s.r.o. - kotelna Oslavany
   c: CZ
   act: 0
-  co: BEFACOAL s.r.o.
+  co: 'BEFACOAL '
 - n: BFS Energo, a.s.
   c: CZ
   act: 0
-  co: BFS Energo, a.s
+  co: BFS Energo
 - n: BRUDRA - Sdružení Teplárna Radotín
   c: CZ
   act: 0
-  co: BRUDRA s.r.o.
+  co: 'BRUDRA '
 - n: Balsac papermill s.r.o. - Lukavice
   c: CZ
   act: 8
-  co: Balsac papermill s.r.o.
+  co: 'Balsac papermill '
 - n: Best - Business, a. s. - provozovna Kunštát
   c: CZ
   act: 7
-  co: Best - Business, a.s.
+  co: Best - Business
 - n: C-Energy Planá - TTA 2
   c: CZ
   act: 0
-  co: C-Energy Planá s.r.o.
+  co: 'C-Energy Planá '
 - n: C-Energy Planá - Teplárna
   c: CZ
   act: 0
-  co: C-Energy Planá s.r.o.
+  co: 'C-Energy Planá '
 - n: C-Energy Planá - kotelna TTA 1
   c: CZ
   act: 0
-  co: C-Energy Planá s.r.o.
+  co: 'C-Energy Planá '
 - n: CARMEUSE CZECH REPUBLIC s.r.o. - Vápenka Mokrá
   c: CZ
   act: 5
-  co: CARMEUSE CZECH REPUBLIC s.r.o.
+  co: 'CARMEUSE CZECH REPUBLIC '
 - n: CEMEX Czech Republic, s.r.o.
   c: CZ
   act: 5
-  co: CEMEX Czech Republic, s.r.o.
+  co: CEMEX Czech Republic
 - n: CEREPA a.s.
   c: CZ
   act: 8
-  co: CEREPA a.s.
+  co: 'CEREPA '
 - n: CRYSTALEX CZ - závod Nový Bor
   c: CZ
   act: 6
-  co: CRYSTALEX CZ, s.r.o.
+  co: CRYSTALEX CZ
 - n: CRYSTALITE BOHEMIA a.s.
   c: CZ
   act: 6
-  co: CRYSTAL Bohemia a.s.
+  co: 'CRYSTAL Bohemia '
 - n: CTZ s.r.o. - Kotelna
   c: CZ
   act: 0
-  co: CTZ s.r.o.
+  co: 'CTZ '
 - n: Carthamus - Energoblok Domoradice
   c: CZ
   act: 0
-  co: CARTHAMUS a.s.
+  co: 'CARTHAMUS '
 - n: Cement Hranice - rotační pec
   c: CZ
   act: 5
-  co: Cement Hranice, akciová společnost
+  co: Cement Hranice
 - n: Centrální zdroj tepla
   c: CZ
   act: 0
-  co: Energo Příbram, s.r.o.
+  co: Veolia Energie ČR
 - n: Chrudim IRON&STEEL,s.r.o. - Slévárna tvárné litiny
   c: CZ
   act: 0
-  co: Chrudim IRON & STEEL, s.r.o.
+  co: Chrudim IRON & STEEL
 - n: Cihelna Hodonín, s.r.o.
   c: CZ
   act: 7
-  co: Cihelna Hodonín, s.r.o.
+  co: Cihelna Hodonín
 - n: Cihelna Kinský spol. s r.o
   c: CZ
   act: 7
-  co: Cihelna Kinský spol. s r.o.
+  co: 'Cihelna Kinský '
 - n: Cihelna Polom spol. s r.o.
   c: CZ
   act: 7
-  co: Cihelna Polom spol. s r.o.
+  co: 'Cihelna Polom '
 - n: Cihelna Vysoké Mýto, s.r.o.
   c: CZ
   act: 7
-  co: Cihelna Vysoké Mýto, s.r.o.
+  co: Cihelna Vysoké Mýto
 - n: Cihelny STAMP Miskolezy, s.r.o.
   c: CZ
   act: 7
-  co: Cihelny STAMP Miskolezy, s.r.o.
+  co: Cihelny STAMP Miskolezy
 - n: Crystal BOHEMIA, a.s.
   c: CZ
   act: 6
-  co: Crystal BOHEMIA a.s.
+  co: 'Crystal BOHEMIA '
 - n: Cukrovar Hrušovany
   c: CZ
   act: 0
-  co: Moravskoslezské cukrovary s.r.o.
+  co: 'Moravskoslezské cukrovary '
 - n: Cukrovar Opava
   c: CZ
   act: 0
-  co: Moravskoslezské cukrovary, s.r.o.
+  co: Moravskoslezské cukrovary
 - n: Cukrovar Vrbátky - uhelná kotelna
   c: CZ
   act: 0
-  co: Cukrovar Vrbátky a.s.
+  co: 'Cukrovar Vrbátky '
 - n: DEZA - teplárna závodu
   c: CZ
   act: 0
-  co: DEZA, a.s.
+  co: AGROFERT
 - n: DIAMO – výtopna Stráž pod Ralskem
   c: CZ
   act: 0
@@ -202,11 +200,11 @@ installs:
 - n: Dalkia - Provozovna Setuza
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Devro - plynová kotelna
   c: CZ
   act: 0
-  co: Devro s.r.o.
+  co: 'Devro '
 - n: Dřevozpracující družstvo - Kotelny družstva
   c: CZ
   act: 0
@@ -214,91 +212,91 @@ installs:
 - n: EMBA spol. s r.o.
   c: CZ
   act: 8
-  co: EMBA, spol. s r.o.
+  co: EMBA
 - n: ENERGETIKA TŘINEC - Teplárny a Tepelná zařízení
   c: CZ
   act: 0
-  co: ENERGETIKA TŘINEC, a.s.
+  co: Moravia Steel
 - n: ENERGIE Holding - Výtopna Litoměřice - Kocanda
   c: CZ
   act: 0
-  co: ENERGIE Holding a.s.
+  co: 'ENERGIE Holding '
 - n: ENERGIE Holding - Výtopna Louny
   c: CZ
   act: 0
-  co: ENERGIE Holding a.s.
+  co: 'ENERGIE Holding '
 - n: ENERGIE Holding - Výtopna Mimoň - Hradčany
   c: CZ
   act: 0
-  co: ENERGIE Holding a.s.
+  co: 'ENERGIE Holding '
 - n: ENERGOAQUA, a.s. - Výtopna
   c: CZ
   act: 0
-  co: ENERGOAQUA, a.s.
+  co: ENERGOAQUA
 - n: ENERGOTRANS - Elektrárna Mělník 1
   c: CZ
   act: 0
-  co: Energotrans, a.s.
+  co: ČEZ
 - n: ENERGY U/L, a.s., kotelna
   c: CZ
   act: 0
-  co: ENERGY Ústí nad Labem, a.s.
+  co: ENERGY Ústí nad Labem
 - n: EOP Distribuce - Chrudim
   c: CZ
   act: 0
-  co: EOP Distribuce, a.s.
+  co: EPH
 - n: EOP Distribuce - Farářství
   c: CZ
   act: 0
-  co: EOP Distribuce, a.s.
+  co: EPH
 - n: EOP Distribuce - Teplárna Pardubice
   c: CZ
   act: 0
-  co: EOP Distribuce, a.s.
+  co: EPH
 - n: EOP Distribuce - ZVU
   c: CZ
   act: 0
-  co: EOP Distribuce, a.s.
+  co: EPH
 - n: EUROSERUM s.r.o.
   c: CZ
   act: 0
-  co: EUROSERUM s.r.o
+  co: 'EUROSERUM '
 - n: Elektrárna Chvaletice
   c: CZ
   act: 0
-  co: Sev.en Česká energie a.s.
+  co: 'Sev.en Česká energie '
 - n: Elektrárna Počerady
   c: CZ
   act: 0
-  co: Sev.en Česká energie a.s.
+  co: 'Sev.en Česká energie '
 - n: Elektrárna Tisová
   c: CZ
   act: 0
-  co: SUAS Group, a.s.
+  co: SUAS Group
 - n: Elektrárny Opatovice - Elektrárna Opatovice
   c: CZ
   act: 0
-  co: Elektrárny Opatovice, a.s.
+  co: EPH
 - n: Energetické centrum s.r.o. - teplárna
   c: CZ
   act: 0
-  co: Energetické centrum s.r.o
+  co: ČEZ
 - n: Energotrans - Výtopna Třeboradice
   c: CZ
   act: 0
-  co: Energotrans, a.s.
+  co: ČEZ
 - n: Energotrans a.s. - Elektrárna Mělník 2
   c: CZ
   act: 0
-  co: Energotrans, a.s.
+  co: ČEZ
 - n: Energotrans, a.s. - Elektrárna Mělník 3
   c: CZ
   act: 0
-  co: Energotrans, a.s.
+  co: ČEZ
 - n: Ethanol Energy - Kotle K1-K3 (Cukrovar Vrdy)
   c: CZ
   act: 0
-  co: Ethanol Energy, a.s.
+  co: Ethanol Energy
 - n: FN BRNO Výtopna, pracoviště medicíny dospělého věk
   c: CZ
   act: 0
@@ -310,99 +308,99 @@ installs:
 - n: Fosfa - kotelna Fosfa
   c: CZ
   act: 0
-  co: Fosfa a.s.
+  co: 'Fosfa '
 - n: GLAZURA - Výroba keramických frit
   c: CZ
   act: 7
-  co: Glazura s.r.o.
+  co: 'Glazura '
 - n: GZ DIGITAL MEDIA a.s. - plynova kotelna
   c: CZ
   act: 0
-  co: GZ Digital Media, a.s.
+  co: GZ Digital Media
 - n: Glazura
   c: CZ
   act: 7
-  co: Glazura s.r.o.
+  co: 'Glazura '
 - n: HASIT Šumavské vápenice a omítkárny, s.r.o.
   c: CZ
   act: 5
-  co: HASIT Šumavské vápenice a omítkárny, s.r.o.
+  co: HASIT Šumavské vápenice a omítkárny
 - n: HELUZ cihl. prům. - Cihelna Kryry
   c: CZ
   act: 7
-  co: HELUZ cihlářský průmysl v.o.s.
+  co: HELUZ cihlářský průmysl
 - n: HELUZ cihlářský průmysl - Cihelna Hevlín
   c: CZ
   act: 7
-  co: HELUZ cihlářský průmysl v.o.s.
+  co: HELUZ cihlářský průmysl
 - n: HELUZ cihlářský průmysl v.o.s.
   c: CZ
   act: 0
-  co: HELUZ cihlářský průmysl v.o.s.
+  co: HELUZ cihlářský průmysl
 - n: HELUZ cihlářský průmysl v.o.s.-Cihelna Libochovice
   c: CZ
   act: 7
-  co: HELUZ cihlářský průmysl v.o.s.
+  co: HELUZ cihlářský průmysl
 - n: HELUZ cihlářský průmysl-Cihelna Dolní Bukovsko
   c: CZ
   act: 7
-  co: HELUZ cihlářský průmysl, a.s.
+  co: HELUZ cihlářský průmysl
 - n: HOLOUBEK ENERGO - Teplárna divize Tevex
   c: CZ
   act: 0
-  co: HOLOUBEK ENERGO, a.s.
+  co: HOLOUBEK ENERGO
 - n: Hanácká p.s., Cukrovar Prosenice
   c: CZ
   act: 0
-  co: Hanácká potravinářská společnost s.r.o.
+  co: 'Hanácká potravinářská společnost '
 - n: Heidelberg Materials CZ - závod Mokrá
   c: CZ
   act: 5
-  co: Heidelberg Materials CZ, a.s.
+  co: Heidelberg Materials CZ
 - n: Heidelberg Materials CZ - závod Radotín
   c: CZ
   act: 5
-  co: Heidelberg Materials CZ, a.s.
+  co: Heidelberg Materials CZ
 - n: Heineken - Královský pivovar Krušovice
   c: CZ
   act: 0
-  co: Heineken Česká republika, a.s.
+  co: Heineken Česká republika
 - n: Holcim (Česko), a.s. - Cementárna Čížkovice
   c: CZ
   act: 5
-  co: Holcim (Česko), a.s.
+  co: Holcim
 - n: Huhtamaki Česká republika, a.s.
   c: CZ
   act: 8
-  co: Huhtamaki Česká republika, a.s.
+  co: Huhtamaki Česká republika
 - n: IROMEZ - Kotelna Z1
   c: CZ
   act: 0
-  co: IROMEZ s.r.o.
+  co: 'IROMEZ '
 - n: IROMEZ - Kotelna Z2
   c: CZ
   act: 0
-  co: IROMEZ s.r.o.
+  co: 'IROMEZ '
 - n: Iveco - Výtopna E-1
   c: CZ
   act: 0
-  co: Iveco Czech Republic, a.s.
+  co: Iveco Czech Republic
 - n: JIHLAVSKÉ KOTELNY,s.r.o.
   c: CZ
   act: 0
-  co: JIHLAVSKÉ KOTELNY, s.r.o.
+  co: JIHLAVSKÉ KOTELNY
 - n: JIP - Papírny Větřní, a.s.
   c: CZ
   act: 0
-  co: JIP - Papírny Větřní, a.s
+  co: JIP - Papírny Větřní
 - n: Jablonecká energetická - Výtopna Brandl
   c: CZ
   act: 0
-  co: Jablonecká energetická, a.s.
+  co: Jablonecká energetická
 - n: Jablonecká energetická - Výtopna Rýnovice
   c: CZ
   act: 0
-  co: Jablonecká energetická, a.s.
+  co: Jablonecká energetická
 - n: Jan Fiala - Cihelna Šterboholy
   c: CZ
   act: 7
@@ -410,63 +408,63 @@ installs:
 - n: KAREL HOLOUBEK - Trade Group - Teplárna Bohatice
   c: CZ
   act: 0
-  co: KAREL HOLOUBEK - Trade Group, a.s.
+  co: KAREL HOLOUBEK - Trade Group
 - n: KAVALIERGLASS
   c: CZ
   act: 6
-  co: Kavalierglass, a.s.
+  co: Kavalierglass
 - n: KAVALIERGLASS - Kotelna Papírny Bělá
   c: CZ
   act: 6
-  co: KAVALIERGLASS, a.s.
+  co: KAVALIERGLASS
 - n: KG Energo s.r.o.
   c: CZ
   act: 0
-  co: KG Energo s.r.o.
+  co: 'KG Energo '
 - n: KLATOVSKÁ TEPLÁRNA - Kotelna
   c: CZ
   act: 0
-  co: KLATOVSKÁ TEPLÁRNA, a.s.
+  co: KLATOVSKÁ TEPLÁRNA
 - n: KNAUF INSULATION
   c: CZ
   act: 7
-  co: Knauf Insulation, spol. s r.o.
+  co: Knauf
 - n: KOMTERM Morava - Kotelna Areál Tatry, Kopřivnice
   c: CZ
   act: 0
-  co: KOMTERM services, s.r.o.
+  co: KOMTERM services
 - n: KOMTERM Čechy- Kotelna Jitex Písek
   c: CZ
   act: 0
-  co: KOMTERM Čechy, s.r.o.
+  co: KOMTERM Čechy
 - n: KOVOBRASIV Mníšek, spol s r.o.
   c: CZ
   act: 2
-  co: KOVOBRASIV Mníšek, spol. s r.o.
+  co: KOVOBRASIV Mníšek
 - n: KRONOSPAN CR
   c: CZ
   act: 0
-  co: KRONOSPAN CR, spol. s r.o.
+  co: KRONOSPAN
 - n: KRPA PAPER - Závodní elektrárna
   c: CZ
   act: 0
-  co: KRPA PAPER, a.s.
+  co: KRPA PAPER
 - n: Kappa Morava Paper a Kappa Žimrovice
   c: CZ
   act: 0
-  co: Smurfit Westrock Czech s.r.o.
+  co: 'Smurfit Westrock Czech '
 - n: Kongresové centrum Praha a.s.
   c: CZ
   act: 0
-  co: Kongresové centrum Praha, a.s.
+  co: Kongresové centrum Praha
 - n: Kotelna ASAVET Přeštice
   c: CZ
   act: 0
-  co: ASAVET a.s.
+  co: 'ASAVET '
 - n: Kotelna Pivovaru Radegast
   c: CZ
   act: 0
-  co: Plzeňský Prazdroj, a.s.
+  co: Asahi
 - n: Kotelna a kogenerační jednotky v ÚVN Praha
   c: CZ
   act: 0
@@ -474,231 +472,231 @@ installs:
 - n: Kotelna závodu HAMÉ
   c: CZ
   act: 0
-  co: Hamé s.r.o.
+  co: 'Hamé '
 - n: LASSELSBERGER - závod Borovany
   c: CZ
   act: 7
-  co: LASSELSBERGER, s.r.o.
+  co: LASSELSBERGER
 - n: LASSELSBERGER - závod Chlumčany
   c: CZ
   act: 7
-  co: LASSELSBERGER, s.r.o.
+  co: LASSELSBERGER
 - n: LASSELSBERGER - závod Podbořany
   c: CZ
   act: 7
-  co: LASSELSBERGER, s.r.o.
+  co: LASSELSBERGER
 - n: LASSELSBERGER - závod RAKO 3
   c: CZ
   act: 7
-  co: LASSELSBERGER, s.r.o.
+  co: LASSELSBERGER
 - n: LAUFEN CZ s.r.o.,  provozovna Bechyně
   c: CZ
   act: 7
-  co: LAUFEN CZ s.r.o.
+  co: 'LAUFEN CZ '
 - n: LB Cemix, s.r.o.
   c: CZ
   act: 5
-  co: LB Cemix, s r.o.
+  co: LB Cemix
 - n: Lenzing Biocel Paskov a.s.
   c: CZ
   act: 8
-  co: Lenzing Biocel Paskov a.s
+  co: 'Lenzing Biocel Paskov '
 - n: Letiště Praha, a. s. – Výtopna SEVER
   c: CZ
   act: 0
-  co: Letiště Praha, a.s.
+  co: Letiště Praha
 - n: Liapor s.r.o.
   c: CZ
   act: 7
-  co: Liapor s.r.o.
+  co: 'Liapor '
 - n: Liberty Ostrava
   c: CZ
   act: 2
-  co: Liberty Ostrava a.s.
+  co: 'Liberty Ostrava '
 - n: Liberty Ostrava a.s.
   c: CZ
   act: 0
-  co: Liberty Ostrava a.s
+  co: 'Liberty Ostrava '
 - n: Lovochemie - Plynová kotelna
   c: CZ
   act: 0
-  co: Lovochemie, a.s.
+  co: AGROFERT
 - n: Lovochemie - Uhelná kotelna
   c: CZ
   act: 0
-  co: Lovochemie, a.s.
+  co: AGROFERT
 - n: MS UTILITIES & SERVICES
   c: CZ
   act: 0
-  co: MS UTILITIES & SERVICES a.s.
+  co: 'MS UTILITIES & SERVICES '
 - n: Masokombinát Polička
   c: CZ
   act: 0
-  co: MASO UZENINY POLIČKA, a.s.
+  co: MASO UZENINY POLIČKA
 - n: Mondi Štětí - Energetika
   c: CZ
   act: 0
-  co: Mondi Štětí a.s.
+  co: Mondi
 - n: NET4GAS - kompresní stanice Břeclav
   c: CZ
   act: 0
-  co: NET4GAS, s.r.o.
+  co: ČEPS
 - n: NET4GAS - kompresní stanice Hostim
   c: CZ
   act: 0
-  co: NET4GAS, s.r.o.
+  co: ČEPS
 - n: NET4GAS - kompresní stanice Kouřim
   c: CZ
   act: 0
-  co: NET4GAS, s.r.o.
+  co: ČEPS
 - n: NET4GAS - kompresní stanice Kralice nad Oslavou
   c: CZ
   act: 0
-  co: NET4GAS, s.r.o.
+  co: ČEPS
 - n: NET4GAS - kompresní stanice Veselí nad Lužnicí
   c: CZ
   act: 0
-  co: NET4GAS, s.r.o.
+  co: ČEPS
 - n: Nemocnice Kroměříž - Výtopna
   c: CZ
   act: 0
-  co: Kroměřížská nemocnice a.s.
+  co: 'Kroměřížská nemocnice '
 - n: O-I Czech Republic - Nové Sedlo
   c: CZ
   act: 6
-  co: O-I  Czech Republic, a.s.
+  co: O-I  Czech Republic
 - n: O-I Czech Republic - Rudolfova huť
   c: CZ
   act: 6
-  co: O-I Czech Republic, a.s.
+  co: O-I Czech Republic
 - n: OKIN FACILITY a.s. - Kotelna SKV
   c: CZ
   act: 0
-  co: OKIN FACILITY a.s
+  co: 'OKIN FACILITY '
 - n: OKK - Koksovna Svoboda
   c: CZ
   act: 0
-  co: OKK Koksovny a.s.
+  co: 'OKK Koksovny '
 - n: OMGD, s.r.o., provozovna Kaznějov
   c: CZ
   act: 0
-  co: OMGD, s.r.o.
+  co: OMGD
 - n: OP papírna - Nové energocentrum
   c: CZ
   act: 8
-  co: OP papírna, s.r.o.
+  co: OP papírna
 - n: OPATHERM - Výtopna Hillova
   c: CZ
   act: 0
-  co: OPATHERM a.s.
+  co: 'OPATHERM '
 - n: OPATHERM - Výtopna Olomoucká
   c: CZ
   act: 0
-  co: OPATHERM a.s.
+  co: 'OPATHERM '
 - n: ORLEN UNIPETROL - AGROCHEMIE
   c: CZ
   act: 0
-  co: ORLEN UNIPETROL RPA, s.r.o.
+  co: ORLEN UNIPETROL RPA
 - n: ORLEN UNIPETROL RPA, s.r.o. - RAFINÉRIE, Kralupy
   c: CZ
   act: 1
-  co: ORLEN UNIPETROL RPA, s.r.o.
+  co: ORLEN UNIPETROL RPA
 - n: ORLEN UNIPETROL RPA, s.r.o. - RAFINÉRIE, Litvínov
   c: CZ
   act: 1
-  co: ORLEN UNIPETROL RPA, s.r.o.
+  co: ORLEN UNIPETROL RPA
 - n: P-D Refractories - Lokalita Svitavy
   c: CZ
   act: 7
-  co: RHI Magnesita Czech Republic a.s.
+  co: 'RHI Magnesita Czech Republic '
 - n: P-D Refractories - Lokalita Velké Opatovice
   c: CZ
   act: 7
-  co: RHI Magnesita Czech Republic a.s.
+  co: 'RHI Magnesita Czech Republic '
 - n: PARAMO-HS Kolín
   c: CZ
   act: 1
-  co: ORLEN Unipetrol RPA s.r.o.
+  co: ORLEN UNIPETROL RPA
 - n: PARAMO-HS Pardubice
   c: CZ
   act: 1
-  co: Paramo a.s.
+  co: 'Paramo '
 - n: PBS Industry - Plynová výtopna
   c: CZ
   act: 0
-  co: PBS INDUSTRY, a.s.
+  co: PBS INDUSTRY
 - n: PILSEN STEEL - Elektrické obloukové pece
   c: CZ
   act: 2
-  co: PILSEN STEEL s.r.o.
+  co: 'PILSEN STEEL '
 - n: PLEAS a.s., Havlíčkův Brod
   c: CZ
   act: 0
-  co: PLEAS a.s.
+  co: 'PLEAS '
 - n: POLDI s.r.o.
   c: CZ
   act: 2
-  co: POLDI s.r.o
+  co: 'POLDI '
 - n: POWGEN - TUBOX
   c: CZ
   act: 0
-  co: POWGEN a.s.
+  co: 'POWGEN '
 - n: PRECIOSA ORNELA-Polubný,Příchovice a Desná
   c: CZ
   act: 6
-  co: Preciosa Ornela, a.s.
+  co: Preciosa Ornela
 - n: Papos Trade s.r.o.
   c: CZ
   act: 8
-  co: PAPOS Trade, s.r.o.
+  co: PAPOS Trade
 - n: Papírna Aloisov
   c: CZ
   act: 8
-  co: Papírna Aloisov a.s.
+  co: 'Papírna Aloisov '
 - n: Paralax a.s. - Cihelna Nebužely
   c: CZ
   act: 7
-  co: PARALAX, a.s.
+  co: PARALAX
 - n: Plynová kotelna SPH-SLUŽBY, s.r.o.
   c: CZ
   act: 0
-  co: SPH-SLUŽBY, s.r.o.
+  co: SPH-SLUŽBY
 - n: Plzeňská teplárenská - centrální zdroj tepla Plzeň
   c: CZ
   act: 0
-  co: Plzeňská teplárenská, a.s.
+  co: EPH
 - n: Plzeňská teplárenská, a.s. - Teplárna ELU III
   c: CZ
   act: 0
-  co: Plzeňská teplárenská a.s.
+  co: EPH
 - n: Plzeňský Prazdroj - varny závodu Plzeň
   c: CZ
   act: 0
-  co: Plzeňský Prazdroj, a.s.
+  co: Asahi
 - n: Pražská teplárenská - Teplárna Holešovice
   c: CZ
   act: 0
-  co: Pražská teplárenská a.s.
+  co: 'Pražská teplárenská '
 - n: Pražská teplárenská - Teplárna Malešice
   c: CZ
   act: 0
-  co: Pražská teplárenská a.s.
+  co: 'Pražská teplárenská '
 - n: Pražská teplárenská - Teplárna Michle
   c: CZ
   act: 0
-  co: Pražská teplárenská a.s.
+  co: 'Pražská teplárenská '
 - n: Pražská teplárenská - Výtopna Krč
   c: CZ
   act: 0
-  co: Pražská teplárenská a.s.
+  co: 'Pražská teplárenská '
 - n: Pražská teplárenská - Výtopna Ruzyně
   c: CZ
   act: 0
-  co: Pražská teplárenská a.s.
+  co: 'Pražská teplárenská '
 - n: Procter&Gamble - Rakona - Kotelna
   c: CZ
   act: 0
-  co: Procter & Gamble - Rakona, s.r.o.
+  co: Procter & Gamble
 - n: Psychiatr. léčebna v Dobřanech - plynová kotelna
   c: CZ
   act: 0
@@ -706,407 +704,407 @@ installs:
 - n: REFRASIL, s.r.o.
   c: CZ
   act: 7
-  co: Refrasil, s.r.o.
+  co: Refrasil
 - n: RWE Gas Storage CZ - PZP Háje
   c: CZ
   act: 0
-  co: 'Gas Storage, s.r.o. '
+  co: ČEPS
 - n: Rockwool, Technologická linka BOH2
   c: CZ
   act: 6
-  co: ROCKWOOL, a.s.
+  co: ROCKWOOL
 - n: Rýnovická energetická s.r.o.
   c: CZ
   act: 0
-  co: Rýnovická energetická s.r.o.
+  co: 'Rýnovická energetická '
 - n: SAINT-GOBAIN ADFORS CZ - Litomyšl
   c: CZ
   act: 6
-  co: SAINT-GOBAIN ADFORS CZ s.r.o.
+  co: 'SAINT-GOBAIN ADFORS CZ '
 - n: SAINT-GOBAIN ADFORS CZ - závod Hodonice
   c: CZ
   act: 6
-  co: SAINT-GOBAIN ADFORS CZ s.r.o.
+  co: 'SAINT-GOBAIN ADFORS CZ '
 - n: SCB Foundry - Slévárna České Budějovice
   c: CZ
   act: 2
-  co: SCB Foundry, a.s.
+  co: SCB Foundry
 - n: SKATLOP a.s.
   c: CZ
   act: 0
-  co: SKATLOP a.s
+  co: 'SKATLOP '
 - n: STOELZLE UNION s.r.o.
   c: CZ
   act: 6
-  co: Stoelzle Union s.r.o.
+  co: 'Stoelzle Union '
 - n: Saint-Gobain Construction Products CZ a.s.
   c: CZ
   act: 0
-  co: Saint-Gobain Construction Products CZ a.s.
+  co: 'Saint-Gobain Construction Products CZ '
 - n: Schiedel, závod Zliv
   c: CZ
   act: 7
-  co: Schiedel, s.r.o.
+  co: Schiedel
 - n: Seco Industries - Kotelna AGS
   c: CZ
   act: 0
-  co: Seco Industries, s.r.o.
+  co: Seco Industries
 - n: Sellier & Bellot - Centrální kotelna
   c: CZ
   act: 0
-  co: Sellier & Bellot a.s.
+  co: 'Sellier & Bellot '
 - n: Seves Glass Block s.r.o.
   c: CZ
   act: 6
-  co: Seves Glass Block s.r.o.
+  co: 'Seves Glass Block '
 - n: Silike keramika - provozovna Děčín
   c: CZ
   act: 7
-  co: Silike keramika, spol. s r.o.
+  co: Silike keramika
 - n: Sklárny Moravia, a.s.
   c: CZ
   act: 6
-  co: SKLÁRNY MORAVIA, akciová společnost
+  co: SKLÁRNY MORAVIA
 - n: Slévárna ČKD Kutná Hora, a.s.
   c: CZ
   act: 0
-  co: ČKD Kutná Hora, a.s.
+  co: ČKD Kutná Hora
 - n: Sokolovská uhelná - Teplárna a PPC Vřesová
   c: CZ
   act: 0
-  co: Sokolovská uhelná, právní nástupce, a.s.
+  co: Sokolovská uhelná, právní nástupce
 - n: Spolana - Závod Energetika
   c: CZ
   act: 9
-  co: SPOLANA s.r.o.
+  co: 'SPOLANA '
 - n: Synthesia a.s., odštěpný závod SYNTHESIA
   c: CZ
   act: 0
-  co: Synthesia, a.s.
+  co: Synthesia
 - n: Synthomer, kotelna
   c: CZ
   act: 0
-  co: Synthomer a.s.
+  co: 'Synthomer '
 - n: TAMERO INVEST - Teplárna Kralupy
   c: CZ
   act: 0
-  co: TAMERO INVEST s.r.o.
+  co: 'TAMERO INVEST '
 - n: TEREA Cheb - Bloková výtopna Nemocnice
   c: CZ
   act: 0
-  co: TEREA Cheb s.r.o.
+  co: 'TEREA Cheb '
 - n: TEREA Cheb - Bloková výtopna Skalka
   c: CZ
   act: 0
-  co: TEREA Cheb s.r.o.
+  co: 'TEREA Cheb '
 - n: TEREA Cheb - Kotelna Hedvábnická
   c: CZ
   act: 0
-  co: TEREA Cheb s.r.o.
+  co: 'TEREA Cheb '
 - n: TERMIKA Varnsdorf a.s.
   c: CZ
   act: 0
-  co: TERMIKA Varnsdorf a.s
+  co: 'TERMIKA Varnsdorf '
 - n: TERMO Děčín - CZT Teplárna Benešovská
   c: CZ
   act: 0
-  co: TERMO Děčín a.s.
+  co: 'TERMO Děčín '
 - n: TERMO Děčín - Teplárna Bynov
   c: CZ
   act: 0
-  co: TERMO Děčín a.s.
+  co: 'TERMO Děčín '
 - n: TERMO Děčín - Teplárna Želenice
   c: CZ
   act: 0
-  co: TERMO Děčín a.s.
+  co: 'TERMO Děčín '
 - n: TERMO Frýdlant n.O s.r.o., Uhelná kotelna v areálu
   c: CZ
   act: 0
-  co: T E R M O Frýdlant n.O. s.r.o.
+  co: 'T E R M O Frýdlant n.O. '
 - n: TON - ENERGO-Teplárna  Bystřice pod Hostýnem
   c: CZ
   act: 0
-  co: BH ENERGO a.s.
+  co: 'BH ENERGO '
 - n: TON - ENERGO-Teplárna Holešov
   c: CZ
   act: 0
-  co: BH ENERGO a.s.
+  co: 'BH ENERGO '
 - n: TONDACH Česká republika s.r.o. - Závod Hranice
   c: CZ
   act: 7
-  co: Wienerberger s.r.o.
+  co: Wienerberger
 - n: TS Vlašim plynová výtopna Pila
   c: CZ
   act: 0
-  co: Technické služby Vlašim, s.r.o.
+  co: Technické služby Vlašim
 - n: TTS energo s.r.o., kotelna K13
   c: CZ
   act: 0
-  co: TTS energo s.r.o.
+  co: 'TTS energo '
 - n: TYLEX Letovice a.s.
   c: CZ
   act: 0
-  co: TYLEX Letovice a.s
+  co: 'TYLEX Letovice '
 - n: Tepelné hospodářství Prachatice - kotelna IV - byt
   c: CZ
   act: 0
-  co: Tepelné hospodářství Prachatice s.r.o.
+  co: 'Tepelné hospodářství Prachatice '
 - n: Tepelné hospodářství Rychnov nad Kněžnou, s.r.o. ,
   c: CZ
   act: 0
-  co: Tepelné hospodářství Rychnov nad Kněžnou, s.r.o.
+  co: Tepelné hospodářství Rychnov nad Kněžnou
 - n: Teplo Bruntál - Centrální výtopna Dolní
   c: CZ
   act: 0
-  co: Teplo Bruntál, a.s.
+  co: Teplo Bruntál
 - n: Teplospol - kotelna Vajgar
   c: CZ
   act: 0
-  co: Teplospol a.s.
+  co: 'Teplospol '
 - n: Teplárna Kladno - Elektrárna Kladno
   c: CZ
   act: 0
-  co: Sev.en Česká energie a.s.
+  co: 'Sev.en Česká energie '
 - n: Teplárna Kladno - Elektrárna Kladno 2
   c: CZ
   act: 0
-  co: Sev.en Česká energie a.s.
+  co: 'Sev.en Česká energie '
 - n: Teplárna Kyjov - Paroplynová kogenerační jednotka
   c: CZ
   act: 0
-  co: Teplárna Kyjov, a.s.
+  co: Teplárna Kyjov
 - n: Teplárna Liberec, a.s.
   c: CZ
   act: 0
-  co: Teplárna Liberec, a.s.
+  co: Teplárna Liberec
 - n: Teplárna Loučovice
   c: CZ
   act: 0
-  co: Teplárna Loučovice, a.s.
+  co: Teplárna Loučovice
 - n: Teplárna Ostrov
   c: CZ
   act: 0
-  co: Ostrovská teplárenská, a.s.
+  co: Ostrovská teplárenská
 - n: Teplárna Otrokovice - Teplárna
   c: CZ
   act: 0
-  co: Teplárna Otrokovice, a.s.
+  co: Teplárna Otrokovice
 - n: Teplárna Otrokovice - posilovací a záložní zdroj
   c: CZ
   act: 0
-  co: Teplárna Otrokovice a.s.
+  co: 'Teplárna Otrokovice '
 - n: Teplárna Písek
   c: CZ
   act: 0
-  co: Teplárna Písek, a.s.
+  co: Teplárna Písek
 - n: Teplárna Písek - Výtopna Samoty
   c: CZ
   act: 0
-  co: Teplárna Písek, a.s.
+  co: Teplárna Písek
 - n: Teplárna Strakonice, a.s.
   c: CZ
   act: 0
-  co: Teplárna Strakonice, a.s.
+  co: Teplárna Strakonice
 - n: Teplárna Týnec
   c: CZ
   act: 0
-  co: Teplárna Týnec s.r.o.
+  co: 'Teplárna Týnec '
 - n: Teplárna Zlín s.r.o.
   c: CZ
   act: 0
-  co: Sev.en Česká energie a.s.
+  co: 'Sev.en Česká energie '
 - n: Teplárna České Budějovice - Výtopna Vráto
   c: CZ
   act: 0
-  co: Teplárna České Budějovice, a.s.
+  co: Teplárna České Budějovice
 - n: Teplárna České Budějovice, Novohradská ul.
   c: CZ
   act: 0
-  co: Teplárna České Budějovice, a.s.
+  co: Teplárna České Budějovice
 - n: Teplárny Brno - Provoz Brno sever
   c: CZ
   act: 0
-  co: Teplárny Brno a.s.
+  co: 'Teplárny Brno '
 - n: Teplárny Brno - Provoz Staré Brno
   c: CZ
   act: 0
-  co: Teplárny Brno a.s.
+  co: 'Teplárny Brno '
 - n: Teplárny Brno - Provoz Červený Mlýn
   c: CZ
   act: 0
-  co: Teplárny Brno a.s.
+  co: 'Teplárny Brno '
 - n: Teplárny Brno - Provoz Špitálka
   c: CZ
   act: 0
-  co: Teplárny Brno a.s.
+  co: 'Teplárny Brno '
 - n: Tereos TTD - Cukrovar Dobrovice
   c: CZ
   act: 0
-  co: Tereos TTD, a.s.
+  co: Tereos TTD
 - n: Tereos TTD - Cukrovar ČeskéMeziříčí
   c: CZ
   act: 0
-  co: Tereos TTD, a.s.
+  co: Tereos TTD
 - n: Tereos TTD - Lihovar Chrudim
   c: CZ
   act: 0
-  co: Tereos TTD, a.s.
+  co: Tereos TTD
 - n: Tereos TTD - Moravský Lihovar Kojetín kotelna
   c: CZ
   act: 0
-  co: Tereos TTD, a.s.
+  co: Tereos TTD
 - n: Teva Czech Industries - Energetika - kotelna
   c: CZ
   act: 0
-  co: Teva Czech Industries s.r.o.
+  co: 'Teva Czech Industries '
 - n: Thermoservis spol. s r. o. - Kotelna CZT Nymburk
   c: CZ
   act: 0
-  co: Thermoservis spol. s r.o.
+  co: 'Thermoservis '
 - n: Thermoservis spol. s r. o. - Kotelna ŽOS Nymburk
   c: CZ
   act: 0
-  co: Thermoservis spol. s r.o.
+  co: 'Thermoservis '
 - n: Toray Textiles - plynová kotelna
   c: CZ
   act: 0
-  co: Toray Textiles Central Europe s.r.o.
+  co: 'Toray Textiles Central Europe '
 - n: Trelleborg Wheel Systems CR - Plynová kotelna
   c: CZ
   act: 0
-  co: Trelleborg Wheel Systems CR, a.s.
+  co: Trelleborg Wheel Systems CR
 - n: Třinecké železárny
   c: CZ
   act: 2
-  co: TŘINECKÉ ŽELEZÁRNY, a.s.
+  co: Moravia Steel
 - n: UNIPETROL - Petrochemie
   c: CZ
   act: 0
-  co: ORLEN UNIPETROL RPA, s.r.o.
+  co: ORLEN UNIPETROL RPA
 - n: United Energy - Teplárna Komořany
   c: CZ
   act: 0
-  co: UNITED Energy, a.s.
+  co: UNITED Energy
 - n: VETROPACK MORAVIA GLASS
   c: CZ
   act: 6
-  co: VETROPACK MORAVIA GLASS, a.s.
+  co: VETROPACK MORAVIA GLASS
 - n: Varroc Lighting Systems - kotelna
   c: CZ
   act: 0
-  co: Varroc Lighting Systems, s.r.o.
+  co: Varroc Lighting Systems
 - n: Veolia Energie - Elektrárna Třebovice
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Mobilní kotelna Jižní Město
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Provoz Nový Jičín
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Provozovna Fakultní nemocnice
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Frýdek-Místek
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Karviná
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Krnov
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Olomouc
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Přerov
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Přívoz
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Teplárna Československé armády
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Výtopna Anenská
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie - Špičková výtopna Olomouc
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie Kolín - Elektrárna Kolín
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie Kolín - Výtopna Východ
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie Mariánské Lázně - výtopna Nádražní
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie Praha - Teplárna Veleslavín
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Energie Praha - Výtopna Juliska
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR - Důl ČSM - teplárna
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR - kotelna Chlebovice
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR - kotelna Staříč
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR - kotelna Sviadnov
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR - kotelna dolu Darkov
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: Veolia Průmyslové služby ČR -Důl Lazy-kotelna Lazy
   c: CZ
   act: 0
-  co: Veolia Energie ČR, a.s.
+  co: Veolia Energie ČR
 - n: VÍTKOVICE STEEL, a.s. - Ocelárna I
   c: CZ
   act: 2
-  co: VÍTKOVICE STEEL, a.s.
+  co: VÍTKOVICE STEEL
 - n: Vápenka Vitošov s.r.o.
   c: CZ
   act: 5
-  co: VÁPENKA VITOŠOV s.r.o.
+  co: 'VÁPENKA VITOŠOV '
 - n: Vápenka Čertovy schody
   c: CZ
   act: 5
-  co: Vápenka Čertovy schody a.s.
+  co: 'Vápenka Čertovy schody '
 - n: Výtopna ESAB Vamberk
   c: CZ
   act: 0
-  co: ESAB VAMBERK, s.r.o.
+  co: ESAB VAMBERK
 - n: Všeobecná fakultní nemocnice - Benátská
   c: CZ
   act: 0
@@ -1118,363 +1116,359 @@ installs:
 - n: Wienerberger - Závod Blížejov
   c: CZ
   act: 7
-  co: Wienerberger s.r.o.
+  co: Wienerberger
 - n: Wienerberger - Závod Stod
   c: CZ
   act: 7
-  co: Wienerberger s.r.o.
+  co: Wienerberger
 - n: Wienerberger - Závod Šlapanice
   c: CZ
   act: 7
-  co: Wienerberger s.r.o.
+  co: Wienerberger
 - n: Wienerberger - závod Holice
   c: CZ
   act: 7
-  co: Wienerberger, s.r.o.
+  co: Wienerberger
 - n: Wienerberger - závod Novosedly
   c: CZ
   act: 7
-  co: Wienerberger, s.r.o.
+  co: Wienerberger
 - n: Wienerberger - závod Týn n/Vltavou
   c: CZ
   act: 7
-  co: Wienerberger, s.r.o.
+  co: Wienerberger
 - n: Wienerberger - závod Řepov
   c: CZ
   act: 7
-  co: Wienerberger, s.r.o.
+  co: Wienerberger
 - n: Wienerberger cihelna Jezernice
   c: CZ
   act: 7
-  co: Wienerberger, s.r.o.
+  co: Wienerberger
 - n: Wotan Forest, a.s.
   c: CZ
   act: 0
-  co: Wotan Forest, a.s.
+  co: Wotan Forest
 - n: Z-Group - Železárny Hrádek
   c: CZ
   act: 2
-  co: Železárny Hrádek, a.s.
+  co: Železárny Hrádek
 - n: ZVVZ ENERGO, s.r.o. - Milevsko - kotelna
   c: CZ
   act: 0
-  co: ZVVZ ENERGO, s.r.o.
+  co: ZVVZ ENERGO
 - n: Zlínské cihelny s.r.o., cihelna Malenovice
   c: CZ
   act: 0
-  co: Zlínské cihelny s.r.o.
+  co: 'Zlínské cihelny '
 - n: Zlínské cihelny s.r.o., cihelna Žopy
   c: CZ
   act: 7
-  co: Zlínské cihelny s.r.o.
+  co: 'Zlínské cihelny '
 - n: Zás.tep.Vsetín-Plynová kotelna Jasenice
   c: CZ
   act: 0
-  co: Zásobování teplem Vsetín, a.s.
+  co: Zásobování teplem Vsetín
 - n: Zás.tep.Vsetín-Teplárna Jiráskova
   c: CZ
   act: 0
-  co: Zásobování teplem Vsetín a.s.
+  co: 'Zásobování teplem Vsetín '
 - n: Zás.tep.Vsetín-Uhelná kotelna Jasenice
   c: CZ
   act: 0
-  co: Zásobování teplem Vsetín a.s.
+  co: 'Zásobování teplem Vsetín '
 - n: Zás.tep.Vsetín-Výtopna Ohrada
   c: CZ
   act: 0
-  co: Zásobování teplem Vsetín a.s.
+  co: 'Zásobování teplem Vsetín '
 - n: innogy Energo - Teplárna Králův Dvůr
   c: CZ
   act: 0
-  co: innogy Energo, s.r.o.
+  co: innogy Energo
 - n: innogy Energo - Teplárna Náchod
   c: CZ
   act: 0
-  co: innogy Energo, s.r.o.
+  co: innogy Energo
 - n: kotelna Cukrovar Litovel
   c: CZ
   act: 0
-  co: Litovelská cukrovarna, a.s.
+  co: Litovelská cukrovarna
 - n: kotelna Semperflex Optimit
   c: CZ
   act: 0
-  co: Semperflex Optimit s.r.o.
+  co: 'Semperflex Optimit '
 - n: kotelny Mlékárny Hlinsko
   c: CZ
   act: 0
-  co: Mlékárna Hlinsko, a.s.
+  co: Mlékárna Hlinsko
 - n: ČESKOLIPSKÁ TEPLÁRENSKÁ - Výtopna LOOS Stará Lípa
   c: CZ
   act: 0
-  co: ČESKOLIPSKÁ TEPLÁRENSKÁ a.s.
+  co: 'ČESKOLIPSKÁ TEPLÁRENSKÁ '
 - n: ČESKOLIPSKÁ TEPLÁRENSKÁ - výtopna Holý Vrch
   c: CZ
   act: 0
-  co: ČESKOLIPSKÁ TEPLÁRENSKÁ a.s.
+  co: 'ČESKOLIPSKÁ TEPLÁRENSKÁ '
 - n: ČEZ - Teplárna Trmice
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ Energetické služby - Kotelna Vítkovice I
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ Energetické služby - en. hosp. Mohelnice
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ Energetické služby - kotelna Nádražní
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ Teplárenská - Výtopna Proboštov
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Dětmarovice
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Hodonín
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Ledvice
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Poříčí
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Prunéřov 1
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Prunéřov 2
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Temelín
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Elektrárna Tušimice 2
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: ČEZ, a. s. - Teplárna Dvůr Králové nad Labem
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: Česká zbrojovka - kotelna v hlavním závodě
   c: CZ
   act: 0
-  co: Česká zbrojovka a.s.
+  co: 'Česká zbrojovka '
 - n: České lupkové závody - Nové Strašecí
   c: CZ
   act: 7
-  co: České lupkové závody, a.s.
+  co: České lupkové závody
 - n: ŠKO-ENERGO - Výtopna Vrchlabí
   c: CZ
   act: 0
-  co: ŠKO-ENERGO, s.r.o.
+  co: ŠKO-ENERGO
 - n: ŠKO-ENERGO Teplárna Mladá Boleslav
   c: CZ
   act: 0
-  co: ŠKO-ENERGO, s.r.o.
+  co: ŠKO-ENERGO
 - n: ŠKODA AUTO, Plynová kotelna, Kvasiny
   c: CZ
   act: 0
-  co: 'ŠKODA AUTO a.s. '
+  co: Volkswagen
 - n: Žatecká teplárenská - Výtopna Perč
   c: CZ
   act: 0
-  co: Žatecká teplárenská, a.s.
+  co: Žatecká teplárenská
 - n: ŽĎAS, a.s. - metalurgie a teplárna
   c: CZ
   act: 0
-  co: ŽĎAS, a.s.
+  co: ŽĎAS
 - n: Jaderná elektrárna Dukovany
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: SLADOVNY SOUFFLET ČR - závod Kroměříž
   c: CZ
   act: 0
-  co: SLADOVNY SOUFFLET ČR, a.s.
+  co: SLADOVNY SOUFFLET ČR
 - n: TAMEH Czech
   c: CZ
   act: 0
-  co: TAMEH Czech s.r.o.
+  co: 'TAMEH Czech '
 - n: Gas Storage CZ - PZP Třanovice
   c: CZ
   act: 0
-  co: 'Gas Storage, s.r.o. '
+  co: ČEPS
 - n: Liberty Engineering Products Ostrava
   c: CZ
   act: 0
-  co: Liberty Engineering Products Ostrava s.r.o.
+  co: 'Liberty Ostrava '
 - n: SPP Storage - PZP Dolní Bojanovice
   c: CZ
   act: 0
-  co: SPP Storage, s.r.o.
+  co: SPP Storage
 - n: ČEZ - Elektrárna Ledvice 4
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: MND Energy Storage - PZP Uhřice
   c: CZ
   act: 0
-  co: MND Energy Storage a.s.
+  co: MND
 - n: VIADRUS a.s.
   c: CZ
   act: 2
-  co: VIADRUS a.s
+  co: 'VIADRUS '
 - n: ČEZ, a. s., Elektrárna Počerady 2
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: BorsodChem MCHZ, s.r.o.
   c: CZ
   act: 9
-  co: BorsodChem MCHZ, s.r.o.
+  co: BorsodChem MCHZ
 - n: CS CABOT, spol. s r.o.
   c: CZ
   act: 9
-  co: CS CABOT, spol.s r.o.
+  co: CS CABOT
 - n: Constellium Extrusions Děčín s.r.o.
   c: CZ
   act: 3
-  co: Constellium Extrusions Děčín s.r.o.
+  co: 'Constellium Extrusions Děčín '
 - n: FERROMET - divize Veselí
   c: CZ
   act: 0
-  co: FERROMET a.s.
+  co: 'FERROMET '
 - n: Hyundai Motor Manufacturing Czech s.r.o.
   c: CZ
   act: 0
-  co: Hyundai Motor Manufacturing Czech s.r.o.
+  co: 'Hyundai Motor Manufacturing Czech '
 - n: PRECHEZA výroba síranu vápenatého a anorg.pigmentů
   c: CZ
   act: 9
-  co: PRECHEZA a.s.
+  co: AGROFERT
 - n: Porr a.s. - Středokluky
   c: CZ
   act: 0
-  co: Porr a.s.
+  co: 'Porr '
 - n: Pražská obalovna Herink, s.r.o.
   c: CZ
   act: 0
-  co: Pražská obalovna Herink, s.r.o.
+  co: Pražská obalovna Herink
 - n: SYNTHOS Kralupy a.s. - provoz Styren
   c: CZ
   act: 9
-  co: 'SYNTHOS Kralupy a.s. '
+  co: 'SYNTHOS Kralupy  '
 - n: SYNTHOS Kralupy a.s.- výroba Etylbenzen
   c: CZ
   act: 9
-  co: SYNTHOS Kralupy a.s.
+  co: 'SYNTHOS Kralupy '
 - n: SYNTHOS Kralupy a.s.-výroba Polystyreny
   c: CZ
   act: 9
-  co: SYNTHOS Kralupy a.s.
+  co: 'SYNTHOS Kralupy '
 - n: Slévárny Třinec, a.s.
   c: CZ
   act: 2
-  co: Slévárny Třinec, a.s.
+  co: Moravia Steel
 - n: Tepelná a zvuková izolace Rotaflex
   c: CZ
   act: 7
-  co: 'UNION LESNÍ BRÁNA, a.s. '
+  co: 'UNION LESNÍ BRÁNA '
 - n: Třinecké železárny, a.s. -  Kladno
   c: CZ
   act: 0
-  co: TŘINECKÉ ŽELEZÁRNY, a.s.
+  co: Moravia Steel
 - n: Válcovna kol, kovárna náprav BONATRANS GROUP a.s.
   c: CZ
   act: 2
-  co: BONATRANS GROUP a.s.
+  co: 'BONATRANS GROUP '
 - n: Válcovny trub Chomutov - divize Chomutov
   c: CZ
   act: 0
-  co: Válcovny trub Chomutov, a.s.
+  co: Válcovny trub Chomutov
 - n: Špičkový zdroj – Spalovací turbíny s generátorem
   c: CZ
   act: 0
-  co: Elektrárna Prostějov, s.r.o.
+  co: Elektrárna Prostějov
 - n: PK ELE
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: POLDI TRADE a.s.
   c: CZ
   act: 2
-  co: POLDI TRADE a.s
+  co: 'POLDI TRADE '
 - n: TŘINECKÉ ŽELEZÁRNY, a.s.(provoz VT-VÁLCOVNA TRUB)
   c: CZ
   act: 0
-  co: TŘINECKÉ ŽELEZÁRNY, a.s.
+  co: Moravia Steel
 - n: Spalovací zařízení kotelny
   c: CZ
   act: 0
-  co: ENE20 s.r.o.
+  co: 'ENE20 '
 - n: PZP Dambořice
   c: CZ
   act: 0
-  co: MND Gas Storage a.s.
+  co: MND
 - n: Pittsburgh Corning CR
   c: CZ
   act: 6
-  co: Pittsburgh Corning CR, s.r.o.
+  co: Pittsburgh Corning CR
 - n: Papírna APIS s.r.o.
   c: CZ
   act: 8
-  co: Papírna APIS s.r.o
+  co: 'Papírna APIS '
 - n: Pražská obalovna Herink, s.r.o.
   c: CZ
   act: 0
-  co: Pražská obalovna Herink, s.r.o.
+  co: Pražská obalovna Herink
 - n: Výrobní linky formalínu
   c: CZ
   act: 9
-  co: Dukol Ostrava s.r.o.
+  co: 'Dukol Ostrava '
 - n: Nexen Tire Europe s.r.o.
   c: CZ
   act: 0
-  co: Nexen Tire Europe s.r.o.
+  co: 'Nexen Tire Europe '
 - n: Kotelna Procter & Gamble Rakovník
   c: CZ
   act: 0
-  co: Procter & Gamble - Rakona, s.r.o.
-- n: ETS2 účet České republiky
-  c: CZ
-  act: 11
-  co: ETS2 účet České republiky
+  co: Procter & Gamble
 - n: Technologický komplex Energy nest
   c: CZ
   act: 0
-  co: E.nest Energy, a.s.
+  co: E.nest Energy
 - n: Kalcinační jednotka Vřesová
   c: CZ
   act: 7
-  co: SUAS Group, a.s.
+  co: SUAS Group
 - n: Plynová kotelna Prunéřov
   c: CZ
   act: 0
-  co: ČEZ, a. s.
+  co: ČEZ
 - n: Saint-Gobain Construction Products CZ a.s., Rigips
   c: CZ
   act: 7
-  co: Saint-Gobain Construction Products CZ a.s.
+  co: 'Saint-Gobain Construction Products CZ '
 - n: Synthesia Nitrocellulose
   c: CZ
   act: 9
-  co: Synthesia, a.s.
+  co: Synthesia
 - n: Výroba sádry a sádrokartonových desek
   c: CZ
   act: 7
-  co: KNAUF Praha, spol. s r. o.
+  co: Knauf
 records:
 - - 0
   - 2008
@@ -20628,10 +20622,6 @@ records:
   - 2024
   - 100988
   - 18345
-- - 355
-  - 2024
-  - 33393151
-  - 0
 - - 59
   - 2024
   - 2736270
@@ -21072,7 +21062,7 @@ records:
   - 2024
   - 694
   - 1738
-- - 356
+- - 355
   - 2024
   - 1861
   - 0
@@ -21584,7 +21574,7 @@ records:
   - 2025
   - 32009
   - 17675
-- - 357
+- - 356
   - 2025
   - 6937
   - 0
@@ -21752,7 +21742,7 @@ records:
   - 2025
   - 5921
   - 5449
-- - 358
+- - 357
   - 2025
   - 2462
   - 0
@@ -21844,7 +21834,7 @@ records:
   - 2025
   - 57775
   - 42133
-- - 359
+- - 358
   - 2025
   - 23521
   - 0
@@ -21880,7 +21870,7 @@ records:
   - 2025
   - 18958
   - 33684
-- - 360
+- - 359
   - 2025
   - 618
   - 0
@@ -21904,7 +21894,7 @@ records:
   - 2025
   - 311
   - 1689
-- - 356
+- - 355
   - 2025
   - 1578
   - 0
@@ -22072,7 +22062,7 @@ records:
   - 2025
   - 237503
   - 149708
-- - 361
+- - 360
   - 2025
   - 13826
   - 0
