@@ -10,8 +10,10 @@
 
   // Timeline chart colors — keep in sync with the .legend-swatch styles in the
   // page's <style> block (hardcoded there too, since it's plain HTML/CSS).
-  const COLOR_COVERED = "#5b7c99"; // emissions covered by free allowances (+ hatched: surplus allowances)
-  const COLOR_DEFICIT = "#7d5ba6"; // emissions not covered by free allowances
+  const COLOR_COVERED = "#506D87"; // emissions covered by free allowances (+ hatched: surplus allowances)
+  // Free-allocation portions (covered + surplus hatch, both charts) —
+  // lighter than COLOR_COVERED so they read as distinct from the deficit.
+  const COLOR_ALLOCATION_SURPLUS = "#7994AB";
 
   // ── Lookups built once ────────────────────────────────────────────────────
   const recordsByInstall = new Map();
@@ -27,6 +29,7 @@
     installs: new Set(),   // install indices; empty = all installations
     yearFrom: YEAR_MIN,
     yearTo: YEAR_MAX,
+    activityView: "absolute", // "absolute" | "relative" — chart 2's bar scaling
   };
 
   // ── Formatting ────────────────────────────────────────────────────────────
@@ -34,13 +37,14 @@
     if (n == null) return "—";
     const abs = Math.abs(n);
     const sign = n < 0 ? "−" : "";
+    // Czech convention uses a comma for the decimal point (not a period).
     if (unit === "povolenek") {
-      if (abs >= 1e6) return sign + d3.format(".2f")(abs / 1e6) + " mil. povolenek";
-      if (abs >= 1e3) return sign + d3.format(".1f")(abs / 1e3) + " tis. povolenek";
+      if (abs >= 1e6) return sign + d3.format(".2f")(abs / 1e6).replace(".", ",") + " mil. povolenek";
+      if (abs >= 1e3) return sign + d3.format(".1f")(abs / 1e3).replace(".", ",") + " tis. povolenek";
       return sign + d3.format(",")(abs) + " povolenek";
     }
-    if (abs >= 1e6) return sign + d3.format(".2f")(abs / 1e6) + " Mt";
-    if (abs >= 1e3) return sign + d3.format(".1f")(abs / 1e3) + " kt";
+    if (abs >= 1e6) return sign + d3.format(".2f")(abs / 1e6).replace(".", ",") + " Mt";
+    if (abs >= 1e3) return sign + d3.format(".1f")(abs / 1e3).replace(".", ",") + " kt";
     return sign + d3.format(",")(abs) + " t";
   }
   function fmtShort(n) {
@@ -118,7 +122,10 @@
   function refreshActivityToggle() {
     const btn = document.getElementById("ets-activity-toggle");
     const sel = state.activities;
+    const industrial = getSelectableIndustrialIndices();
+    const isWholeIndustryGroup = sel.size === industrial.length && industrial.every(i => sel.has(i));
     if (sel.size === 0) btn.textContent = "Všechny aktivity";
+    else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = ACTIVITIES[[...sel][0]].short;
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "aktivity", "aktivit");
   }
@@ -211,14 +218,39 @@
   // Re-renders the activity checkbox list. See renderInstallOptions for the
   // availability/hide-unless-selected rule (no search box here — the list is
   // short enough that one isn't needed).
+  // "Výroba elektřiny a tepla" is by far the largest emitter category, so it
+  // stays pinned at the top level; every other activity is grouped beneath a
+  // "Průmysl" header, giving the list a two-tier hierarchy instead of one
+  // flat alphabetical-ish dump. The group header is itself selectable — it
+  // checks/unchecks every activity nested under it at once.
+  const ACTIVITY_PRIMARY_NAME = "Výroba elektřiny a tepla";
+
+  // Normalize before comparing: the data file inserts non-breaking spaces
+  // around single-letter Czech prepositions ("a", "i", ...) per Czech
+  // typographic convention, which look identical to a plain space but
+  // compare unequal against a hardcoded literal.
+  function normalizeActName(s) { return s.normalize("NFC").replace(/\u00A0/g, " "); }
+  function isActivityPrimary(act) { return normalizeActName(act.n) === normalizeActName(ACTIVITY_PRIMARY_NAME); }
+  function getIndustrialActivityIndices() {
+    return ACTIVITIES.map((act, i) => i).filter(i => !isActivityPrimary(ACTIVITIES[i]));
+  }
+  // Same as above, but narrowed to activities that are actually selectable
+  // right now (available given other filters, or already selected) — some
+  // activities have zero installations in the data and never render as an
+  // option, so comparing against the full list would never count as "whole".
+  function getSelectableIndustrialIndices() {
+    const available = getAvailableActivities();
+    return getIndustrialActivityIndices().filter(i => available.has(i) || state.activities.has(i));
+  }
+
   function renderActivityOptions() {
     const wrap = document.getElementById("ets-activity-options");
     wrap.innerHTML = "";
     const available = getAvailableActivities();
-    ACTIVITIES.forEach((act, i) => {
-      if (!available.has(i) && !state.activities.has(i)) return;
+
+    function buildOption(i, act, nested) {
       const label = document.createElement("label");
-      label.className = "ms-option";
+      label.className = nested ? "ms-option ms-option--nested" : "ms-option";
       const cb = document.createElement("input");
       cb.type = "checkbox";
       cb.dataset.idx = i;
@@ -234,8 +266,44 @@
       name.textContent = act.short;
       label.appendChild(cb);
       label.appendChild(name);
-      wrap.appendChild(label);
+      return label;
+    }
+
+    const visible = ACTIVITIES
+      .map((act, i) => ({ act, i }))
+      .filter(({ i }) => available.has(i) || state.activities.has(i));
+    const isPrimary = isActivityPrimary;
+    const primary = visible.filter(({ act }) => isPrimary(act));
+    const others = visible.filter(({ act }) => !isPrimary(act));
+
+    primary.forEach(({ i, act }) => {
+      const opt = buildOption(i, act, false);
+      opt.classList.add("ms-group-label"); // same top-level styling as "Průmysl" below it
+      wrap.appendChild(opt);
     });
+    if (others.length) {
+      const otherIdxs = others.map(({ i }) => i);
+      const selectedCount = otherIdxs.filter(i => state.activities.has(i)).length;
+
+      const groupLabel = document.createElement("label");
+      groupLabel.className = "ms-option ms-group-label";
+      const groupCb = document.createElement("input");
+      groupCb.type = "checkbox";
+      groupCb.checked = selectedCount === otherIdxs.length;
+      groupCb.indeterminate = selectedCount > 0 && selectedCount < otherIdxs.length;
+      groupCb.addEventListener("change", function () {
+        otherIdxs.forEach(i => { if (this.checked) state.activities.add(i); else state.activities.delete(i); });
+        onFilterChange();
+      });
+      const groupName = document.createElement("span");
+      groupName.className = "ms-option-name";
+      groupName.textContent = "Průmysl";
+      groupLabel.appendChild(groupCb);
+      groupLabel.appendChild(groupName);
+      wrap.appendChild(groupLabel);
+
+      others.forEach(({ i, act }) => wrap.appendChild(buildOption(i, act, true)));
+    }
     if (!wrap.children.length) wrap.innerHTML = '<div class="ms-empty">Žádná aktivita nenalezena</div>';
   }
 
@@ -358,6 +426,16 @@
       update();
     });
     updateYearBar();
+
+    document.querySelectorAll("#ets-activity-view-toggle .view-toggle-btn").forEach(btn => {
+      btn.addEventListener("click", function () {
+        if (this.dataset.view === state.activityView) return;
+        state.activityView = this.dataset.view;
+        document.querySelectorAll("#ets-activity-view-toggle .view-toggle-btn")
+          .forEach(b => b.classList.toggle("active", b === this));
+        renderActivityChart(getFilteredInstallIndices());
+      });
+    });
   }
 
   function updateYearBar() {
@@ -373,7 +451,6 @@
 
   // ── KPIs ──────────────────────────────────────────────────────────────────
   function updateKPIs(idxs) {
-    const set = new Set(idxs);
     let e = 0, a = 0;
     idxs.forEach(i => {
       (recordsByInstall.get(i) || []).forEach(r => {
@@ -384,17 +461,11 @@
       });
     });
     const d = a - e;
-    const rangeLabel = state.yearFrom === state.yearTo ? String(state.yearFrom) : state.yearFrom + "–" + state.yearTo;
-    const scopeLabel = idxs.length + (idxs.length === 1 ? " instalace" : " instalací");
 
     document.getElementById("ets-kpi-e").textContent = fmt(e);
     document.getElementById("ets-kpi-a").textContent = fmt(a, "povolenek");
     document.getElementById("ets-kpi-d").textContent = (d >= 0 ? "+" : "") + fmt(d);
     document.getElementById("ets-kpi-d-card").className = "kpi-card " + (d >= 0 ? "surplus" : "deficit");
-    [["ets-kpi-e-sub", rangeLabel + " · " + scopeLabel],
-     ["ets-kpi-a-sub", rangeLabel + " · " + scopeLabel],
-     ["ets-kpi-d-sub", rangeLabel + " · " + scopeLabel]]
-      .forEach(([id, txt]) => { document.getElementById(id).textContent = txt; });
   }
 
   // ── Tooltip ───────────────────────────────────────────────────────────────
@@ -425,7 +496,7 @@
       .attr("patternUnits", "userSpaceOnUse")
       .attr("patternTransform", "rotate(45)")
       .call(p => {
-        p.append("rect").attr("width", 6).attr("height", 6).attr("fill", COLOR_COVERED);
+        p.append("rect").attr("width", 6).attr("height", 6).attr("fill", COLOR_ALLOCATION_SURPLUS);
         p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6)
           .attr("stroke", "#fff").attr("stroke-width", 2.5).attr("opacity", 0.6);
       });
@@ -449,47 +520,48 @@
       document.getElementById("ets-timeline-title").textContent = "Emise a povolenky zdarma v čase";
     }
 
-    // Subtitle: one segment per active facet — the facet's selected name(s) if
-    // there are few enough to name, otherwise just a count. Facets with no
-    // selection are omitted entirely; with nothing selected anywhere, fall
-    // back to a generic summary of the whole (unfiltered) dataset.
-    const subParts = [];
-    if (state.activities.size > 0) {
-      subParts.push(state.activities.size <= 5
-        ? [...state.activities].map(i => ACTIVITIES[i].short).join(", ")
-        : state.activities.size + " " + pluralCz(state.activities.size, "aktivity", "aktivit"));
+    // Subtitle: one segment each for activity / owner / installation, derived
+    // from what's ACTUALLY in the filtered result set — not just what's
+    // explicitly checked in that facet's own dropdown. This way, narrowing
+    // via one facet (e.g. picking an owner with a single activity) still
+    // surfaces the implied activity name, even though "Hlavní aktivita"
+    // itself has nothing selected. Few enough distinct values → name them;
+    // otherwise just a count.
+    const subEl = document.getElementById("ets-timeline-sub");
+    if (idxs.length === 0) {
+      subEl.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
+    } else {
+      const distinctActs = [...new Set(idxs.map(i => INSTALLS[i].act))];
+      const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].co))];
+      subEl.textContent = [
+        distinctActs.length <= 2
+          ? distinctActs.map(a => ACTIVITIES[a].short).join(", ")
+          : distinctActs.length + " " + pluralCz(distinctActs.length, "aktivity", "aktivit"),
+        distinctCos.length <= 2
+          ? distinctCos.join(", ")
+          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
+        idxs.length <= 3
+          ? idxs.map(i => INSTALLS[i].n).join(", ")
+          : idxs.length + " " + pluralCz(idxs.length, "instalace", "instalací"),
+      ].join(" · ");
     }
-    if (state.companies.size > 0) {
-      subParts.push(state.companies.size <= 5
-        ? [...state.companies].join(", ")
-        : state.companies.size + " " + pluralCz(state.companies.size, "vlastníci", "vlastníků"));
-    }
-    if (state.installs.size > 0) {
-      subParts.push(state.installs.size <= 5
-        ? [...state.installs].map(i => INSTALLS[i].n).join(", ")
-        : state.installs.size + " " + pluralCz(state.installs.size, "instalace", "instalací"));
-    }
-    document.getElementById("ets-timeline-sub").textContent = subParts.length
-      ? subParts.join(" · ")
-      : idxs.length + " instalací";
 
     const allYears = d3.range(YEAR_MIN, YEAR_MAX + 1);
     const dataMap = byYear;
     allYears.forEach(yr => {
       const d = dataMap[yr];
       if (!d) return;
-      d.covered = Math.min(d.e, d.a);
-      d.surplus = Math.max(d.a - d.e, 0);
-      d.deficit = Math.max(d.e - d.a, 0);
-      d.top = d.covered + d.surplus + d.deficit; // = max(e, a)
+      d.covered = Math.min(d.e, d.a); // portion of emissions matched by free allocation
+      d.deficit = Math.max(d.e - d.a, 0); // emissions above what allocation covers
+      d.top = Math.max(d.e, d.a);
     });
     const visibleYears = allYears.filter(yr => dataMap[yr] && state.yearFrom <= yr && yr <= state.yearTo);
     const maxVal = d3.max(visibleYears, yr => dataMap[yr].top) || 1;
-    // Band domain matches the selected range (not the full data range), so
-    // narrowing the year slider fills the chart width instead of leaving
-    // blank space where excluded years would otherwise still reserve a slot.
-    const selectedYears = d3.range(state.yearFrom, state.yearTo + 1);
-    const x = d3.scaleBand().domain(selectedYears).range([0, W]).padding(0.18);
+    // Band domain matches years that actually have data in the selected range
+    // (not the full slider span), so there's no reserved blank space either
+    // for years excluded by the slider or for years the current filter simply
+    // has no records for (e.g. an installation whose reporting starts later).
+    const x = d3.scaleBand().domain(visibleYears).range([0, W]).padding(0.18);
     const y = d3.scaleLinear().domain([0, maxVal * 1.05]).range([H, 0]).nice();
 
     svg.append("text")
@@ -502,28 +574,41 @@
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").attr("stroke", "#edf2f7").attr("stroke-dasharray", "3,3"));
 
+    // Bottom of the bar: the portion of emissions actually matched by free
+    // allocation — lighter, same family as the surplus hatch, so everything
+    // "allocation-related" reads as one lighter tone against the plain blue.
     svg.selectAll(".bar-covered")
       .data(visibleYears)
       .join("rect").attr("class", "bar-covered")
       .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].covered))
       .attr("width", x.bandwidth()).attr("height", yr => H - y(dataMap[yr].covered))
-      .attr("fill", COLOR_COVERED);
+      .attr("fill", COLOR_ALLOCATION_SURPLUS);
 
-    svg.selectAll(".bar-surplus")
-      .data(visibleYears.filter(yr => dataMap[yr].surplus > 0))
-      .join("rect").attr("class", "bar-surplus")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].covered + dataMap[yr].surplus))
-      .attr("width", x.bandwidth())
-      .attr("height", yr => y(dataMap[yr].covered) - y(dataMap[yr].covered + dataMap[yr].surplus))
-      .attr("fill", "url(#ets-hatch-surplus)");
-
+    // Where emissions exceed allocation, cap the covered portion with the
+    // plain solid blue for the uncovered excess.
     svg.selectAll(".bar-deficit")
       .data(visibleYears.filter(yr => dataMap[yr].deficit > 0))
       .join("rect").attr("class", "bar-deficit")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].covered + dataMap[yr].deficit))
-      .attr("width", x.bandwidth())
-      .attr("height", yr => y(dataMap[yr].covered) - y(dataMap[yr].covered + dataMap[yr].deficit))
-      .attr("fill", COLOR_DEFICIT);
+      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].e))
+      .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].covered) - y(dataMap[yr].e))
+      .attr("fill", COLOR_COVERED);
+
+    // Where allocation exceeds emissions, cap the bar with a hatched block up
+    // to the allocation line — makes the surplus itself visible as an area,
+    // not just implied by the line floating above the bar.
+    svg.selectAll(".bar-surplus")
+      .data(visibleYears.filter(yr => dataMap[yr].a > dataMap[yr].e))
+      .join("rect").attr("class", "bar-surplus")
+      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].a))
+      .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].e) - y(dataMap[yr].a))
+      .attr("fill", "url(#ets-hatch-surplus)");
+
+    svg.selectAll(".line-allocation")
+      .data(visibleYears)
+      .join("line").attr("class", "line-allocation")
+      .attr("x1", yr => x(yr)).attr("x2", yr => x(yr) + x.bandwidth())
+      .attr("y1", yr => y(dataMap[yr].a)).attr("y2", yr => y(dataMap[yr].a))
+      .attr("stroke", "#1a202c").attr("stroke-width", 3);
 
     svg.selectAll(".hover-zone")
       .data(visibleYears)
@@ -533,16 +618,12 @@
       .attr("fill", "transparent")
       .on("mouseover", function (event, yr) {
         const d = dataMap[yr];
-        const extra = d.surplus > 0
-          ? `Povolenky zdarma alokované navíc: <strong>${fmt(d.surplus)}</strong><br>`
-          : d.deficit > 0
-          ? `Emise nepokryté povolenkami zdarma: <strong>${fmt(d.deficit)}</strong><br>`
-          : "";
+        const bal = d.a - d.e;
         showTip(event,
           `<strong>${yr}</strong><br>` +
           `Ověřené emise: <strong>${fmt(d.e)}</strong><br>` +
           `Bezplatné povolenky: <strong>${fmt(d.a)}</strong><br>` +
-          extra
+          `Bilance: <strong>${bal >= 0 ? "+" : ""}${fmt(bal)}</strong>`
         );
       })
       .on("mousemove", moveTip)
@@ -598,15 +679,51 @@
       return;
     }
 
-    // Reserve a right-hand gutter for the "X % emisí" tail label so it never
-    // overlaps the longest bar (which otherwise spans the full plot width).
+    // Reserve a right-hand gutter for the tail label so it never overlaps the
+    // longest bar (which otherwise spans the full plot width). Relative view
+    // shows the coverage ratio; absolute view shows the allocation itself,
+    // in Mt with a Czech decimal comma and a single decimal place.
     const labelGutter = 60;
-    const coverageText = d => `${Math.round(d.a / d.e * 100)} % emisí`;
+    const coverageText = d => state.activityView === "relative"
+      ? `${Math.round(d.a / d.e * 100)} % emisí`
+      : `${(d.a / 1e6).toFixed(1).replace(".", ",")} Mt`;
 
-    const maxVal = d3.max(data, d => Math.max(d.e, d.a)) || 1;
+    // Same encoding as chart 1: a light "covered" portion, a dark "deficit"
+    // cap when emissions exceed allocation, a light hatched cap when
+    // allocation exceeds emissions, and a black line marking the exact
+    // allocation value. In relative view, each bar is rescaled so the
+    // activity's own emissions (d.e) sit at 100% — surplus can still push
+    // past that, deficit can't.
+    const isRelative = state.activityView === "relative";
+    data.forEach(d => {
+      d.covered = Math.min(d.e, d.a);
+      d.surplus = Math.max(d.a - d.e, 0);
+      d.deficit = Math.max(d.e - d.a, 0);
+      d.top = d.covered + d.surplus + d.deficit; // = max(e, a)
+      const scale = (isRelative && d.e > 0) ? 100 / d.e : 1;
+      d.dCovered = d.covered * scale;
+      d.dSurplus = d.surplus * scale;
+      d.dDeficit = d.deficit * scale;
+      d.dTop = d.top * scale;
+      d.dA = d.a * scale;
+    });
+
+    const maxVal = d3.max(data, d => d.dTop) || 1;
     const y = d3.scaleBand().domain(data.map(d => d.act)).range([0, H]).padding(0.3);
     const x = d3.scaleLinear().domain([0, maxVal]).range([0, Math.max(W - labelGutter, 40)]).nice();
-    const bh = y.bandwidth() / 2;
+    const axisFormat = isRelative ? (v => Math.round(v) + " %") : fmtShort;
+
+    const defs = svg.append("defs");
+    defs.append("pattern")
+      .attr("id", "ets-hatch-surplus-activity")
+      .attr("width", 6).attr("height", 6)
+      .attr("patternUnits", "userSpaceOnUse")
+      .attr("patternTransform", "rotate(45)")
+      .call(p => {
+        p.append("rect").attr("width", 6).attr("height", 6).attr("fill", COLOR_ALLOCATION_SURPLUS);
+        p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6)
+          .attr("stroke", "#fff").attr("stroke-width", 2.5).attr("opacity", 0.6);
+      });
 
     svg.append("g")
       .call(d3.axisBottom(x).tickSize(H).tickFormat("").ticks(5))
@@ -614,34 +731,53 @@
       .call(g => g.selectAll(".tick line").attr("stroke", "#edf2f7").attr("stroke-dasharray", "3,3").attr("y1", -H));
 
     function tipHtml(d) {
-      const bal = d.a - d.e;
+      const extra = d.surplus > 0
+        ? `Povolenky zdarma alokované navíc: <strong>${fmt(d.surplus)}</strong><br>`
+        : d.deficit > 0
+        ? `Emise nepokryté povolenkami zdarma: <strong>${fmt(d.deficit)}</strong><br>`
+        : "";
       return `<strong>${ACTIVITIES[d.act].n}</strong><br>` +
         `Ověřené emise: <strong>${fmt(d.e)}</strong><br>` +
         `Bezplatné povolenky: <strong>${fmt(d.a)}</strong><br>` +
-        `Bilance: <strong>${bal >= 0 ? "+" : ""}${fmt(bal)}</strong>`;
+        extra;
     }
 
-    svg.selectAll(".a-bar-e")
-      .data(data).join("rect").attr("class", "a-bar-e")
+    svg.selectAll(".a-bar-covered")
+      .data(data).join("rect").attr("class", "a-bar-covered")
       .attr("y", d => y(d.act)).attr("x", 0)
-      .attr("height", bh).attr("width", d => x(d.e))
-      .attr("fill", COLOR_DEFICIT).attr("rx", 1)
+      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered))
+      .attr("fill", COLOR_ALLOCATION_SURPLUS)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
-    svg.selectAll(".a-bar-a")
-      .data(data).join("rect").attr("class", "a-bar-a")
-      .attr("y", d => y(d.act) + bh + 1).attr("x", 0)
-      .attr("height", bh).attr("width", d => x(d.a))
-      .attr("fill", COLOR_COVERED).attr("rx", 1)
+    svg.selectAll(".a-bar-deficit")
+      .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-deficit")
+      .attr("y", d => y(d.act)).attr("x", d => x(d.dCovered))
+      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered + d.dDeficit) - x(d.dCovered))
+      .attr("fill", COLOR_COVERED)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
+
+    svg.selectAll(".a-bar-surplus")
+      .data(data.filter(d => d.surplus > 0)).join("rect").attr("class", "a-bar-surplus")
+      .attr("y", d => y(d.act)).attr("x", d => x(d.dCovered))
+      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered + d.dSurplus) - x(d.dCovered))
+      .attr("fill", "url(#ets-hatch-surplus-activity)")
+      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
+      .on("mousemove", moveTip).on("mouseout", hideTip);
+
+    svg.selectAll(".a-line-allocation")
+      .data(data)
+      .join("line").attr("class", "a-line-allocation")
+      .attr("y1", d => y(d.act)).attr("y2", d => y(d.act) + y.bandwidth())
+      .attr("x1", d => x(d.dA)).attr("x2", d => x(d.dA))
+      .attr("stroke", "#1a202c").attr("stroke-width", 3);
 
     svg.selectAll(".a-bar-label")
       .data(data.filter(d => d.e > 0))
       .join("text").attr("class", "a-bar-label")
-      .attr("x", d => Math.max(x(d.e), x(d.a)) + 8)
-      .attr("y", d => y(d.act) + bh)
+      .attr("x", d => x(d.dTop) + 8)
+      .attr("y", d => y(d.act) + y.bandwidth() / 2)
       .attr("dy", "0.32em")
       .attr("font-size", "13.5px")
       .attr("fill", "#718096")
@@ -655,7 +791,7 @@
         .call(wrapText, mg.left - 20, -10));
 
     svg.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).ticks(5).tickFormat(fmtShort))
+      .call(d3.axisBottom(x).ticks(5).tickFormat(axisFormat))
       .call(g => g.select(".domain").attr("stroke", "#e2e8f0"))
       .call(g => g.selectAll(".tick line").attr("stroke", "#e2e8f0"))
       .call(g => g.selectAll(".tick text").attr("font-size", "12px").attr("fill", "#718096"));

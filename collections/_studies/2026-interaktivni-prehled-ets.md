@@ -116,6 +116,18 @@ include_in_search: true
 .ms-option:hover { background: #f0f3f5; }
 .ms-option input[type="checkbox"] { cursor: pointer; flex-shrink: 0; accent-color: #5b7c99; }
 .ms-option-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ms-option--nested { padding-left: 28px; }
+.ms-group-label {
+  padding: 8px 12px 4px;
+  margin-top: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #a0aec0;
+  border-top: 1px solid #f0f2f4;
+}
+.ms-options > .ms-group-label:first-child { border-top: none; margin-top: 0; }
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 
 @media (max-width: 640px) {
@@ -155,8 +167,8 @@ include_in_search: true
 .kpi-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #718096; margin-bottom: 4px; }
 .kpi-value { font-size: 24px; font-weight: 700; color: #2d3748; }
 .kpi-sub { font-size: 13px; ; font-weight: 500; color: #718096; margin-top: 3px; }
-.kpi-card.emissions .kpi-value { color: #7d5ba6; }
-.kpi-card.allocation .kpi-value { color: #5b7c99; }
+.kpi-card.emissions .kpi-value { color: #506D87; }
+.kpi-card.allocation .kpi-value { color: #7994AB; }
 
 /* ── Chart panels ──────────────────────────────────────────────────────────── */
 .chart-panel {
@@ -173,10 +185,39 @@ include_in_search: true
 .legend-item { display: flex; align-items: center; gap: 5px; font-size: 13px; ; font-weight: 500; color: #718096; white-space: nowrap; }
 .legend-swatch { width: 14px; height: 3px; border-radius: 1px; }
 .legend-swatch.sq { height: 10px; border-radius: 2px; }
-.legend-swatch.hatch {
-  background-color: #5b7c99;
+.legend-swatch.hatch-light {
+  background-color: #7994AB;
   background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.75) 0, rgba(255,255,255,0.75) 1.5px, transparent 1.5px, transparent 4px);
 }
+.legend-swatch.line-box {
+  background-color: #7994AB;
+  border-top: 3px solid #1a202c;
+  box-sizing: border-box;
+  height: 10px;
+}
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+.view-toggle-btn {
+  background: #fff;
+  border: none;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #718096;
+  cursor: pointer;
+  flex: 1 1 0;
+  min-width: 76px;
+  text-align: center;
+}
+.view-toggle-btn + .view-toggle-btn { border-left: 1px solid #ced4da; }
+.view-toggle-btn.active { background: #5b7c99; color: #fff; }
 
 #tooltip {
   position: fixed; background: #1a202c; color: #e2e8f0;
@@ -213,7 +254,7 @@ include_in_search: true
     </div>
 
     <div class="control-group control-group--owner">
-      <span class="control-label">Vlastník</span>
+      <span class="control-label">Současný vlastník</span>
       <div class="ms-dropdown" id="ets-company-ms">
         <button type="button" class="ms-toggle" id="ets-company-toggle">Všichni vlastníci</button>
         <div class="ms-panel" id="ets-company-panel">
@@ -265,17 +306,14 @@ include_in_search: true
       <div class="kpi-card emissions">
         <div class="kpi-label">Emise CO<sub>2</sub></div>
         <div class="kpi-value" id="ets-kpi-e">—</div>
-        <div class="kpi-sub" id="ets-kpi-e-sub"></div>
       </div>
       <div class="kpi-card allocation">
         <div class="kpi-label">Povolenky zdarma</div>
         <div class="kpi-value" id="ets-kpi-a">—</div>
-        <div class="kpi-sub" id="ets-kpi-a-sub"></div>
       </div>
       <div class="kpi-card" id="ets-kpi-d-card">
         <div class="kpi-label">Bilance (povolenky zdarma − emise)</div>
         <div class="kpi-value" id="ets-kpi-d">—</div>
-        <div class="kpi-sub" id="ets-kpi-d-sub"></div>
       </div>
     </div>
 
@@ -286,9 +324,9 @@ include_in_search: true
           <div class="chart-sub" id="ets-timeline-sub"></div>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#5b7c99"></div>Emise pokryté povolenkami zdarma</div>
-          <div class="legend-item"><div class="legend-swatch sq hatch"></div>Povolenky zdarma alokované navíc</div>
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#7d5ba6"></div>Emise nepokryté povolenkami zdarma</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:#506D87"></div>Emise</div>
+          <div class="legend-item"><div class="legend-swatch sq line-box"></div>Bezplatné povolenky</div>
+          <div class="legend-item"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
       </div>
       <svg id="ets-svg-timeline"></svg>
@@ -298,17 +336,31 @@ include_in_search: true
       <div class="panel-header">
         <div class="panel-title-group">
           <h2>Kolik emisí pokryly povolenky zdarma?</h2>
+          <div class="view-toggle" id="ets-activity-view-toggle">
+            <button type="button" class="view-toggle-btn active" data-view="absolute">Absolutně</button>
+            <button type="button" class="view-toggle-btn" data-view="relative">Relativně</button>
+          </div>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#7d5ba6"></div>Emise</div>
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#5b7c99"></div>Povolenky zdarma</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:#506D87"></div>Emise</div>
+          <div class="legend-item"><div class="legend-swatch sq line-box"></div>Bezplatné povolenky</div>
+          <div class="legend-item"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
       </div>
       <svg id="ets-svg-activity"></svg>
     </div>
 
 {% capture povolenky-zdarma %}
-TBD
+[Povolenky zdarma](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/about-free-allocation_en?prefLang=cs) v minulosti vycházely především ze dvou předpokladů:
+* **Postupný náběh systému**, aby se podniky měly čas přizpůsobit a nákup emisních povolenek pro ně nebyl bezprostředním navýšením nákladů. To však v prvních letech vedlo k výraznému přebytku povolenek zdarma nad skutečně vyprodukovanými emisemi. Některé z podniků tak nebyly pouze kompenzovány 1:1, ale naopak na bezplatných alokacích vydělaly.
+* **Riziko úniku uhlíku** v energeticky náročných průmyslových sektorech, kde by mohlo dojít k tomu, že unijní podniky přesunou svou výrobů mimo EU do zemí s nižšími emisními standardy nebo dojde k upřednostňování konkurence z těchto zemí na úkor domácího průmyslu.
+
+Zatímco výroba elektřiny (s výjimkami pro modernizaci sektoru) povolenky zdarma od roku 2013 nedostává, teplárenství dostává pouze část, průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů nahradit mechanismus uhlíkového vyrovnání na hranicích (*Carbon Border Adjustment Mechanism*, CBAM).
+
+Povolenky zdarma jsou na jedné straně velmi vítaným opatřením ze strany průmyslu, který má díky nim stran plateb za emise srovnatelné podmínky se zahraniční konkurencí a více prostoru na drahé investice do dekarbonizace. Na druhou stranu je otázkou, zda právě chybějící cenový signál není to, co (mimo jiné) transformaci průmyslu brzdí. Podle posledního návrhu Evropské komise by tak v budoucnu alokace povolenek zdarma měla být podmíněna vypracováním konkrétních investičních plánů do dekarbonizace výroby podniku nebo již zrealizovanými dekarbonizačními opatřeními.
+
+Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají tzv. **kompenzaci nepřímých nákladů**, tedy náhradu zvýšených základů za elektřinu v důsledku ETS. Informace o vyplacených kompenzacích lze nalézt na [webu](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/) Ministerstva průmyslu a obchodu (např. přehled za rok 2024 [zde](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/informace-o-vyplacenych-kompenzacich-neprimych-nakladu-za-kalendarni-rok-2024--291108/)). *Tady ještě popsat, že zvýšené náklady za elektřinu nebo teplo mohou být pro některé podniky problematické – např. TŽ.*
+
 {% endcapture %}
 
 {% include expander-figure.html
@@ -319,12 +371,12 @@ TBD
 %}
 
 {% capture data %}
-TBD
+Tady bude popsaný zdroj dat a transformace dat. S odkazem na GitHub.
 {% endcapture %}
 
 {% include expander-figure.html
     name="data"
-    label="Data"
+    label="Data a metodologie"
     class="large-expander-title"
     content=data
 %}
