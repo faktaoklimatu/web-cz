@@ -22,6 +22,7 @@ subtopics:
   lead: |
     Zpracováváme odborné studie, ve kterých využíváme vlastní analýzy a modelování. Pokud byste chtěli využít naši expertízu a nechat si námi nějakou studii nebo její část vypracovat, [ozvěte se nám](/o-nas#kontaktni-udaje).
   content:
+  - 2026-six-objectives-for-a-successful-capacity-market
   - 2026-konec-uhli-v-cesku
   - 2024-vyroba-elektriny-v-cesku-bez-uhli
   - 2024-cesty-k-ciste-a-levne-elektrine-2050
