@@ -68,7 +68,7 @@ Střešní fotovoltaika
 <dt>Jak se nízkoemisní opatření vyplatí ekonomicky?</dt>
 <dd>Zkoumáme ekonomickou výhodnost za celou dobu životnosti skrze rozdíl v Net Present Value oproti vysokoemisní variantě (např. tepelné čerpadlo vs. plynový kotel).</dd>
 
-<dt>O kolik sníží nízkoemisní opatření emise CO<sub>2</sub>? O kolik sníží import ropy a zemního plynu?</dt>
+<dt>O kolik nízkoemisní opatření sníží emise CO<sub>2</sub>? O kolik sníží import ropy a zemního plynu?</dt>
 <dd>Za celý životní cyklus v porovnání s vysokoemisní variantou.</dd>
 
 <dt>Jak výsledek závisí na vstupních parametrech?</dt>
@@ -98,4 +98,4 @@ Dataset obsahuje i námi definované tři scénáře vývoje cen paliv a elektř
 
 ## Poděkování
 
-Autorský tým děkuje za konzultace Michalu Čejkovi, Petru Vomáčkovi a dalším.
+Autorský tým děkuje za konzultace Michalu Čejkovi, Karolíně Smutkové, Tomáši Stavovi a Petru Vomáčkovi.
