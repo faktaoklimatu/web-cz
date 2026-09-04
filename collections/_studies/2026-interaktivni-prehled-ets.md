@@ -31,11 +31,16 @@ include_in_search: true
    #secondary-navbar / .secondary-navbar-stuck styles in _core_design.scss.    */
 .controls-inner {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.controls-row {
+  display: flex;
   flex-wrap: wrap;
   gap: 1rem 28px;
   align-items: flex-start;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 .control-group {
   display: flex;
@@ -44,8 +49,6 @@ include_in_search: true
   min-width: 220px;
 }
 .control-group.control-group--years { min-width: 170px; max-width: 220px; flex: 0.8 1 0; }
-.control-group.control-group--install,
-.control-group.control-group--owner { min-width: 280px; }
 .control-head {
   display: flex;
   justify-content: space-between;
@@ -115,7 +118,11 @@ include_in_search: true
 }
 .ms-option:hover { background: #f0f3f5; }
 .ms-option input[type="checkbox"] { cursor: pointer; flex-shrink: 0; accent-color: #5b7c99; }
-.ms-option-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ms-option-name {
+  flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  /* !important: the site's span[title] rule (higher specificity) would otherwise win */
+  text-decoration: none !important;
+}
 .ms-option--nested { padding-left: 28px; }
 .ms-group-label {
   padding: 8px 12px 4px;
@@ -131,8 +138,7 @@ include_in_search: true
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 
 @media (max-width: 640px) {
-  .control-group, .control-group.control-group--years, .control-group.control-group--install,
-  .control-group.control-group--owner {
+  .control-group {
     flex-basis: 100%; min-width: 0;
   }
 }
@@ -207,14 +213,14 @@ include_in_search: true
 .view-toggle-btn {
   background: #fff;
   border: none;
-  padding: 5px 12px;
+  padding: 5px 16px;
   font-size: 12px;
   font-weight: 600;
   color: #718096;
   cursor: pointer;
-  flex: 1 1 0;
-  min-width: 76px;
+  flex: 0 0 auto;
   text-align: center;
+  white-space: nowrap;
 }
 .view-toggle-btn + .view-toggle-btn { border-left: 1px solid #ced4da; }
 .view-toggle-btn.active { background: #5b7c99; color: #fff; }
@@ -239,61 +245,81 @@ include_in_search: true
 <div id="secondary-navbar" class="section">
   <div class="container controls-inner">
 
-    <div class="control-group">
-      <span class="control-label">Hlavní aktivita</span>
-      <div class="ms-dropdown" id="ets-activity-ms">
-        <button type="button" class="ms-toggle" id="ets-activity-toggle">Všechny aktivity</button>
-        <div class="ms-panel" id="ets-activity-panel">
-          <div class="ms-actions">
-            <button type="button" data-action="all">Vybrat vše</button>
-            <button type="button" data-action="none">Zrušit výběr</button>
-          </div>
-          <div class="ms-options" id="ets-activity-options"></div>
+    <div class="controls-row controls-row--years">
+      <div class="control-group control-group--years">
+        <div class="control-head">
+          <span class="control-label">Období</span>
+          <span class="control-value"><span id="ets-year-from-val"></span>–<span id="ets-year-to-val"></span></span>
+        </div>
+        <div class="dual-range">
+          <div class="range-track-bg"></div>
+          <div class="range-fill" id="ets-year-fill"></div>
+          <input type="range" id="ets-year-from" step="1">
+          <input type="range" id="ets-year-to" step="1">
         </div>
       </div>
     </div>
 
-    <div class="control-group control-group--owner">
-      <span class="control-label">Současný vlastník</span>
-      <div class="ms-dropdown" id="ets-company-ms">
-        <button type="button" class="ms-toggle" id="ets-company-toggle">Všichni vlastníci</button>
-        <div class="ms-panel" id="ets-company-panel">
-          <input type="text" class="form-control ms-search" id="ets-company-search" placeholder="Hledat vlastníka…">
-          <div class="ms-actions">
-            <button type="button" data-action="all">Vybrat vše</button>
-            <button type="button" data-action="none">Zrušit výběr</button>
+    <div class="controls-row controls-row--filters">
+
+      <div class="control-group">
+        <span class="control-label">Hlavní odvětví (dle ETS)</span>
+        <div class="ms-dropdown" id="ets-activity-ms">
+          <button type="button" class="ms-toggle" id="ets-activity-toggle">Všechny aktivity</button>
+          <div class="ms-panel" id="ets-activity-panel">
+            <div class="ms-actions">
+              <button type="button" data-action="all">Vybrat vše</button>
+              <button type="button" data-action="none">Zrušit výběr</button>
+            </div>
+            <div class="ms-options" id="ets-activity-options"></div>
           </div>
-          <div class="ms-options" id="ets-company-options"></div>
         </div>
       </div>
-    </div>
 
-    <div class="control-group control-group--install">
-      <span class="control-label">Instalace</span>
-      <div class="ms-dropdown" id="ets-installation-ms">
-        <button type="button" class="ms-toggle" id="ets-installation-toggle">Všechny instalace</button>
-        <div class="ms-panel" id="ets-installation-panel">
-          <input type="text" class="form-control ms-search" id="ets-installation-search" placeholder="Hledat instalaci…">
-          <div class="ms-actions">
-            <button type="button" data-action="all">Vybrat vše</button>
-            <button type="button" data-action="none">Zrušit výběr</button>
+      <div class="control-group">
+        <span class="control-label">Skutečné odvětví</span>
+        <div class="ms-dropdown" id="ets-real-activity-ms">
+          <button type="button" class="ms-toggle" id="ets-real-activity-toggle">Všechna odvětví</button>
+          <div class="ms-panel" id="ets-real-activity-panel">
+            <div class="ms-actions">
+              <button type="button" data-action="all">Vybrat vše</button>
+              <button type="button" data-action="none">Zrušit výběr</button>
+            </div>
+            <div class="ms-options" id="ets-real-activity-options"></div>
           </div>
-          <div class="ms-options" id="ets-installation-options"></div>
         </div>
       </div>
-    </div>
 
-    <div class="control-group control-group--years">
-      <div class="control-head">
-        <span class="control-label">Období</span>
-        <span class="control-value"><span id="ets-year-from-val"></span>–<span id="ets-year-to-val"></span></span>
+      <div class="control-group">
+        <span class="control-label">Současný vlastník</span>
+        <div class="ms-dropdown" id="ets-company-ms">
+          <button type="button" class="ms-toggle" id="ets-company-toggle">Všichni vlastníci</button>
+          <div class="ms-panel" id="ets-company-panel">
+            <input type="text" class="form-control ms-search" id="ets-company-search" placeholder="Hledat vlastníka…">
+            <div class="ms-actions">
+              <button type="button" data-action="all">Vybrat vše</button>
+              <button type="button" data-action="none">Zrušit výběr</button>
+            </div>
+            <div class="ms-options" id="ets-company-options"></div>
+          </div>
+        </div>
       </div>
-      <div class="dual-range">
-        <div class="range-track-bg"></div>
-        <div class="range-fill" id="ets-year-fill"></div>
-        <input type="range" id="ets-year-from" step="1">
-        <input type="range" id="ets-year-to" step="1">
+
+      <div class="control-group">
+        <span class="control-label">Instalace</span>
+        <div class="ms-dropdown" id="ets-installation-ms">
+          <button type="button" class="ms-toggle" id="ets-installation-toggle">Všechny instalace</button>
+          <div class="ms-panel" id="ets-installation-panel">
+            <input type="text" class="form-control ms-search" id="ets-installation-search" placeholder="Hledat instalaci…">
+            <div class="ms-actions">
+              <button type="button" data-action="all">Vybrat vše</button>
+              <button type="button" data-action="none">Zrušit výběr</button>
+            </div>
+            <div class="ms-options" id="ets-installation-options"></div>
+          </div>
+        </div>
       </div>
+
     </div>
 
   </div>
@@ -336,9 +362,9 @@ include_in_search: true
       <div class="panel-header">
         <div class="panel-title-group">
           <h2>Kolik emisí pokryly povolenky zdarma?</h2>
-          <div class="view-toggle" id="ets-activity-view-toggle">
-            <button type="button" class="view-toggle-btn active" data-view="absolute">Absolutně</button>
-            <button type="button" class="view-toggle-btn" data-view="relative">Relativně</button>
+          <div class="view-toggle" id="ets-activity-groupby-toggle">
+            <button type="button" class="view-toggle-btn active" data-groupby="act">Hlavní odvětví (dle ETS)</button>
+            <button type="button" class="view-toggle-btn" data-groupby="ra">Skutečné odvětví</button>
           </div>
         </div>
         <div class="legend">
@@ -355,11 +381,11 @@ include_in_search: true
 * **Postupný náběh systému**, aby se podniky měly čas přizpůsobit a nákup emisních povolenek pro ně nebyl bezprostředním navýšením nákladů. To však v prvních letech vedlo k výraznému přebytku povolenek zdarma nad skutečně vyprodukovanými emisemi. Některé z podniků tak nebyly pouze kompenzovány 1:1, ale naopak na bezplatných alokacích vydělaly.
 * **Riziko úniku uhlíku** v energeticky náročných průmyslových sektorech, kde by mohlo dojít k tomu, že unijní podniky přesunou svou výrobů mimo EU do zemí s nižšími emisními standardy nebo dojde k upřednostňování konkurence z těchto zemí na úkor domácího průmyslu.
 
-Zatímco výroba elektřiny (s výjimkami pro modernizaci sektoru) povolenky zdarma od roku 2013 nedostává, teplárenství dostává pouze část, průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů nahradit mechanismus uhlíkového vyrovnání na hranicích (*Carbon Border Adjustment Mechanism*, CBAM).
+Zatímco výroba elektřiny (s výjimkami pro modernizaci sektoru) povolenky zdarma od roku 2013 nedostává, teplárenství dostává pouze část (v současnosti až [30 %](https://mzp.gov.cz/system/files/2025-12/opok-MPkCNP-20251211.pdf)), průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů nahradit mechanismus uhlíkového vyrovnání na hranicích (*Carbon Border Adjustment Mechanism*, CBAM).
 
 Povolenky zdarma jsou na jedné straně velmi vítaným opatřením ze strany průmyslu, který má díky nim stran plateb za emise srovnatelné podmínky se zahraniční konkurencí a více prostoru na drahé investice do dekarbonizace. Na druhou stranu je otázkou, zda právě chybějící cenový signál není to, co (mimo jiné) transformaci průmyslu brzdí. Podle posledního návrhu Evropské komise by tak v budoucnu alokace povolenek zdarma měla být podmíněna vypracováním konkrétních investičních plánů do dekarbonizace výroby podniku nebo již zrealizovanými dekarbonizačními opatřeními.
 
-Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají tzv. **kompenzaci nepřímých nákladů**, tedy náhradu zvýšených základů za elektřinu v důsledku ETS. Informace o vyplacených kompenzacích lze nalézt na [webu](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/) Ministerstva průmyslu a obchodu (např. přehled za rok 2024 [zde](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/informace-o-vyplacenych-kompenzacich-neprimych-nakladu-za-kalendarni-rok-2024--291108/)). *Tady ještě popsat, že zvýšené náklady za elektřinu nebo teplo mohou být pro některé podniky problematické – např. TŽ.*
+Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají tzv. **kompenzaci nepřímých nákladů**, tedy náhradu zvýšených základů za elektřinu v důsledku ETS. Informace o vyplacených kompenzacích lze nalézt na [webu](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/) Ministerstva průmyslu a obchodu (např. přehled za rok 2024 [zde](https://mpo.gov.cz/cz/prumysl/prumysl-a-zivotni-prostredi/kompenzace-neprimych-nakladu/informace-o-vyplacenych-kompenzacich-neprimych-nakladu-za-kalendarni-rok-2024--291108/)).
 
 {% endcapture %}
 

@@ -24,12 +24,13 @@
   });
 
   const state = {
-    activities: new Set(), // activity indices; empty = all activities
+    activities: new Set(),     // activity indices; empty = all activities
+    realActivities: new Set(), // real-activity names (installs[].ra); empty = all
     companies: new Set(),  // company names (installs[].co); empty = all companies
     installs: new Set(),   // install indices; empty = all installations
     yearFrom: YEAR_MIN,
     yearTo: YEAR_MAX,
-    activityView: "absolute", // "absolute" | "relative" — chart 2's bar scaling
+    activityGroupBy: "act", // "act" (Hlavní odvětví dle ETS) | "ra" (Skutečné odvětví) — chart 2's grouping dimension
   };
 
   // ── Formatting ────────────────────────────────────────────────────────────
@@ -66,6 +67,7 @@
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
       if (state.activities.size && !state.activities.has(inst.act)) continue;
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
       if (state.companies.size && !state.companies.has(inst.co)) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       out.push(i);
@@ -75,15 +77,27 @@
 
   // ── Cross-filtering ──────────────────────────────────────────────────────────
   // Each facet's option list only offers values that are actually reachable
-  // given the OTHER two facets' current selections (its own facet is excluded
+  // given the OTHER facets' current selections (its own facet is excluded
   // from the check, since that's the thing being chosen).
   function getAvailableActivities() {
     const out = new Set();
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
       if (state.companies.size && !state.companies.has(inst.co)) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       out.add(inst.act);
+    }
+    return out;
+  }
+  function getAvailableRealActivities() {
+    const out = new Set();
+    for (let i = 0; i < INSTALLS.length; i++) {
+      const inst = INSTALLS[i];
+      if (state.activities.size && !state.activities.has(inst.act)) continue;
+      if (state.companies.size && !state.companies.has(inst.co)) continue;
+      if (state.installs.size && !state.installs.has(i)) continue;
+      out.add(inst.ra);
     }
     return out;
   }
@@ -92,6 +106,7 @@
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
       if (state.activities.size && !state.activities.has(inst.act)) continue;
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       out.add(inst.co);
     }
@@ -102,6 +117,7 @@
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
       if (state.activities.size && !state.activities.has(inst.act)) continue;
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
       if (state.companies.size && !state.companies.has(inst.co)) continue;
       out.add(i);
     }
@@ -116,6 +132,16 @@
   const sortedCompanies = Array.from(new Set(INSTALLS.map(inst => inst.co).filter(Boolean)))
     .sort((a, b) => a.localeCompare(b, "cs"));
 
+  // "Ostatní odvětví" is a catch-all, not a real category, so it's pinned to
+  // the bottom of the list instead of sorting alphabetically with the rest.
+  const REAL_ACTIVITY_OTHER = "Ostatní odvětví";
+  const sortedRealActivities = Array.from(new Set(INSTALLS.map(inst => inst.ra).filter(Boolean)))
+    .sort((a, b) => {
+      if (a === REAL_ACTIVITY_OTHER) return 1;
+      if (b === REAL_ACTIVITY_OTHER) return -1;
+      return a.localeCompare(b, "cs");
+    });
+
   // Czech plural agreement: 1 = singular (handled separately), 2–4 = "few", else "many".
   function pluralCz(n, few, many) { return (n >= 2 && n <= 4) ? few : many; }
 
@@ -128,6 +154,16 @@
     else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = ACTIVITIES[[...sel][0]].short;
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "aktivity", "aktivit");
+    btn.title = btn.textContent;
+  }
+
+  function refreshRealActivityToggle() {
+    const btn = document.getElementById("ets-real-activity-toggle");
+    const sel = state.realActivities;
+    if (sel.size === 0) btn.textContent = "Všechna odvětví";
+    else if (sel.size === 1) btn.textContent = [...sel][0];
+    else btn.textContent = sel.size + " odvětví";
+    btn.title = btn.textContent;
   }
 
   function refreshInstallToggle() {
@@ -136,6 +172,7 @@
     if (sel.size === 0) btn.textContent = "Všechny instalace";
     else if (sel.size === 1) btn.textContent = INSTALLS[[...sel][0]].n;
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "instalace", "instalací");
+    btn.title = btn.textContent;
   }
 
   function refreshCompanyToggle() {
@@ -144,6 +181,7 @@
     if (sel.size === 0) btn.textContent = "Všichni vlastníci";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "vlastníci", "vlastníků");
+    btn.title = btn.textContent;
   }
 
   // Re-renders the (optionally search-filtered) checkbox list for installations.
@@ -176,21 +214,50 @@
       const name = document.createElement("span");
       name.className = "ms-option-name";
       name.textContent = n;
+      name.title = n;
       label.appendChild(cb);
       label.appendChild(name);
       wrap.appendChild(label);
     });
   }
 
-  // Re-renders the (optionally search-filtered) checkbox list for companies.
-  // See renderInstallOptions for the availability/hide-unless-selected rule.
+  // Sums verified emissions per owner within the currently selected year
+  // range, restricted to installations reachable given the OTHER facets
+  // (activity / real activity / installation) — mirrors getAvailableCompanies
+  // but returns per-owner totals instead of just a reachability Set. Used to
+  // both order and annotate the owner dropdown.
+  function computeCompanyEmissions() {
+    const sums = new Map();
+    for (let i = 0; i < INSTALLS.length; i++) {
+      const inst = INSTALLS[i];
+      if (!inst.co) continue;
+      if (state.activities.size && !state.activities.has(inst.act)) continue;
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.installs.size && !state.installs.has(i)) continue;
+      let e = 0;
+      (recordsByInstall.get(i) || []).forEach(r => {
+        const [, y, em] = r;
+        if (y < state.yearFrom || y > state.yearTo) return;
+        e += em || 0;
+      });
+      sums.set(inst.co, (sums.get(inst.co) || 0) + e);
+    }
+    return sums;
+  }
+
+  // Re-renders the (optionally search-filtered) checkbox list for companies,
+  // ordered by their total verified emissions in the selected year range
+  // (highest first) with that total shown in brackets after the name. See
+  // renderInstallOptions for the availability/hide-unless-selected rule.
   function renderCompanyOptions(filterText) {
     const wrap = document.getElementById("ets-company-options");
     wrap.innerHTML = "";
     const q = (filterText || "").trim().toLowerCase();
     const available = getAvailableCompanies();
-    const filtered = sortedCompanies.filter(co =>
-      (available.has(co) || state.companies.has(co)) && (!q || co.toLowerCase().includes(q)));
+    const emissions = computeCompanyEmissions();
+    const filtered = sortedCompanies
+      .filter(co => (available.has(co) || state.companies.has(co)) && (!q || co.toLowerCase().includes(q)))
+      .sort((a, b) => (emissions.get(b) || 0) - (emissions.get(a) || 0) || a.localeCompare(b, "cs"));
     if (!filtered.length) {
       wrap.innerHTML = '<div class="ms-empty">Žádný vlastník nenalezen</div>';
       return;
@@ -206,9 +273,44 @@
         if (this.checked) state.companies.add(co); else state.companies.delete(co);
         onFilterChange();
       });
+      const e = emissions.get(co) || 0;
       const name = document.createElement("span");
       name.className = "ms-option-name";
-      name.textContent = co;
+      name.textContent = e > 0 ? `${co} (${fmt(e)})` : co;
+      name.title = name.textContent;
+      label.appendChild(cb);
+      label.appendChild(name);
+      wrap.appendChild(label);
+    });
+  }
+
+  // Re-renders the real-activity ("Skutečné odvětví") checkbox list. Flat, no
+  // search box (short enough list) — see renderInstallOptions for the
+  // availability/hide-unless-selected rule.
+  function renderRealActivityOptions() {
+    const wrap = document.getElementById("ets-real-activity-options");
+    wrap.innerHTML = "";
+    const available = getAvailableRealActivities();
+    const filtered = sortedRealActivities.filter(ra => available.has(ra) || state.realActivities.has(ra));
+    if (!filtered.length) {
+      wrap.innerHTML = '<div class="ms-empty">Žádné odvětví nenalezeno</div>';
+      return;
+    }
+    filtered.forEach(ra => {
+      const label = document.createElement("label");
+      label.className = "ms-option";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.dataset.ra = ra;
+      cb.checked = state.realActivities.has(ra);
+      cb.addEventListener("change", function () {
+        if (this.checked) state.realActivities.add(ra); else state.realActivities.delete(ra);
+        onFilterChange();
+      });
+      const name = document.createElement("span");
+      name.className = "ms-option-name";
+      name.textContent = ra;
+      name.title = ra;
       label.appendChild(cb);
       label.appendChild(name);
       wrap.appendChild(label);
@@ -264,6 +366,7 @@
       const name = document.createElement("span");
       name.className = "ms-option-name";
       name.textContent = act.short;
+      name.title = act.n;
       label.appendChild(cb);
       label.appendChild(name);
       return label;
@@ -312,6 +415,7 @@
   // facet's choice can change what the other two facets can still offer.
   function refreshOptionPanels() {
     renderActivityOptions();
+    renderRealActivityOptions();
     renderCompanyOptions(document.getElementById("ets-company-search").value);
     renderInstallOptions(document.getElementById("ets-installation-search").value);
   }
@@ -320,6 +424,7 @@
   // labels, re-filter all option panels against each other, and redraw.
   function onFilterChange() {
     refreshActivityToggle();
+    refreshRealActivityToggle();
     refreshCompanyToggle();
     refreshInstallToggle();
     refreshOptionPanels();
@@ -329,6 +434,7 @@
   function populateControls() {
     refreshOptionPanels();
     refreshActivityToggle();
+    refreshRealActivityToggle();
     refreshCompanyToggle();
     refreshInstallToggle();
   }
@@ -347,6 +453,7 @@
 
   function setupControls() {
     setupDropdownToggle("ets-activity-toggle", "ets-activity-panel");
+    setupDropdownToggle("ets-real-activity-toggle", "ets-real-activity-panel");
     setupDropdownToggle("ets-company-toggle", "ets-company-panel");
     setupDropdownToggle("ets-installation-toggle", "ets-installation-panel");
     document.addEventListener("click", function () {
@@ -367,6 +474,21 @@
       document.querySelectorAll("#ets-activity-options input[type=checkbox]").forEach(cb => {
         cb.checked = false;
         state.activities.delete(+cb.dataset.idx);
+      });
+      onFilterChange();
+    });
+
+    document.querySelector('#ets-real-activity-panel [data-action="all"]').addEventListener("click", function () {
+      document.querySelectorAll("#ets-real-activity-options input[type=checkbox]").forEach(cb => {
+        cb.checked = true;
+        state.realActivities.add(cb.dataset.ra);
+      });
+      onFilterChange();
+    });
+    document.querySelector('#ets-real-activity-panel [data-action="none"]').addEventListener("click", function () {
+      document.querySelectorAll("#ets-real-activity-options input[type=checkbox]").forEach(cb => {
+        cb.checked = false;
+        state.realActivities.delete(cb.dataset.ra);
       });
       onFilterChange();
     });
@@ -417,21 +539,23 @@
       state.yearFrom = Math.min(+this.value, state.yearTo);
       this.value = state.yearFrom;
       updateYearBar();
+      renderCompanyOptions(document.getElementById("ets-company-search").value);
       update();
     });
     yTo.addEventListener("input", function () {
       state.yearTo = Math.max(+this.value, state.yearFrom);
       this.value = state.yearTo;
       updateYearBar();
+      renderCompanyOptions(document.getElementById("ets-company-search").value);
       update();
     });
     updateYearBar();
 
-    document.querySelectorAll("#ets-activity-view-toggle .view-toggle-btn").forEach(btn => {
+    document.querySelectorAll("#ets-activity-groupby-toggle .view-toggle-btn").forEach(btn => {
       btn.addEventListener("click", function () {
-        if (this.dataset.view === state.activityView) return;
-        state.activityView = this.dataset.view;
-        document.querySelectorAll("#ets-activity-view-toggle .view-toggle-btn")
+        if (this.dataset.groupby === state.activityGroupBy) return;
+        state.activityGroupBy = this.dataset.groupby;
+        document.querySelectorAll("#ets-activity-groupby-toggle .view-toggle-btn")
           .forEach(b => b.classList.toggle("active", b === this));
         renderActivityChart(getFilteredInstallIndices());
       });
@@ -647,25 +771,39 @@
     const W0 = svgEl.clientWidth, H0 = svgEl.clientHeight;
     if (!W0 || !H0) return;
 
-    const byAct = {};
+    // Grouping key + label depend on the "Hlavní odvětví / Skutečné odvětví"
+    // toggle: "act" groups by the formal ETS activity (numeric index into
+    // ACTIVITIES), "ra" groups by the real-activity name (installs[].ra,
+    // already a display-ready string — no lookup array for it).
+    const groupByRa = state.activityGroupBy === "ra";
+    const keyOf = i => groupByRa ? (INSTALLS[i].ra || "Neuvedeno") : INSTALLS[i].act;
+    const labelOf = key => groupByRa ? key : ACTIVITIES[key].short;
+    const titleOf = key => groupByRa ? key : ACTIVITIES[key].n;
+
+    const byKey = {};
     idxs.forEach(i => {
-      const act = INSTALLS[i].act;
-      if (!byAct[act]) byAct[act] = { act, e: 0, a: 0 };
+      const key = keyOf(i);
+      if (!byKey[key]) byKey[key] = { key, e: 0, a: 0 };
       (recordsByInstall.get(i) || []).forEach(r => {
         const [, y, em, al] = r;
         if (y < state.yearFrom || y > state.yearTo) return;
-        byAct[act].e += em || 0;
-        byAct[act].a += al || 0;
+        byKey[key].e += em || 0;
+        byKey[key].a += al || 0;
       });
     });
 
-    const data = Object.values(byAct)
+    const data = Object.values(byKey)
       .filter(d => d.e > 0 || d.a > 0)
-      .filter(d => ACTIVITIES[d.act].n !== "ETS2 sektory")
+      .filter(d => groupByRa || ACTIVITIES[d.key].n !== "ETS2 sektory")
       .sort((a, b) => b.e - a.e)
       .slice(0, 12);
 
-    const mg = { top: 8, right: 16, bottom: 24, left: 230 };
+    // mg.right reserves two things to the right of the plotted bars: the
+    // in-line "Mt" tail label right after each bar (within labelGutter,
+    // below), and a fixed-position "X %" column further right (headed
+    // "Povolenky zdarma"), showing the share of that row's emissions
+    // matched by free allocation. mg.top makes room for that column header.
+    const mg = { top: 26, right: 150, bottom: 24, left: 230 };
     const W = W0 - mg.left - mg.right;
     const H = H0 - mg.top - mg.bottom;
 
@@ -680,38 +818,30 @@
     }
 
     // Reserve a right-hand gutter for the tail label so it never overlaps the
-    // longest bar (which otherwise spans the full plot width). Relative view
-    // shows the coverage ratio; absolute view shows the allocation itself,
-    // in Mt with a Czech decimal comma and a single decimal place.
+    // longest bar (which otherwise spans the full plot width) — the
+    // allocation itself, in Mt with a Czech decimal comma and one decimal.
     const labelGutter = 60;
-    const coverageText = d => state.activityView === "relative"
-      ? `${Math.round(d.a / d.e * 100)} % emisí`
-      : `${(d.a / 1e6).toFixed(1).replace(".", ",")} Mt`;
+    const coverageText = d => `${(d.a / 1e6).toFixed(1).replace(".", ",")} Mt`;
+    // Allocation as a share of emissions — not capped at 100%, since a
+    // surplus (allocation > emissions) is exactly the case worth surfacing.
+    // The "Povolenky zdarma" wording lives once in the column header instead
+    // of repeating on every row.
+    const shareText = d => `${Math.round(d.a / d.e * 100)} %`;
 
     // Same encoding as chart 1: a light "covered" portion, a dark "deficit"
     // cap when emissions exceed allocation, a light hatched cap when
     // allocation exceeds emissions, and a black line marking the exact
-    // allocation value. In relative view, each bar is rescaled so the
-    // activity's own emissions (d.e) sit at 100% — surplus can still push
-    // past that, deficit can't.
-    const isRelative = state.activityView === "relative";
+    // allocation value.
     data.forEach(d => {
       d.covered = Math.min(d.e, d.a);
       d.surplus = Math.max(d.a - d.e, 0);
       d.deficit = Math.max(d.e - d.a, 0);
       d.top = d.covered + d.surplus + d.deficit; // = max(e, a)
-      const scale = (isRelative && d.e > 0) ? 100 / d.e : 1;
-      d.dCovered = d.covered * scale;
-      d.dSurplus = d.surplus * scale;
-      d.dDeficit = d.deficit * scale;
-      d.dTop = d.top * scale;
-      d.dA = d.a * scale;
     });
 
-    const maxVal = d3.max(data, d => d.dTop) || 1;
-    const y = d3.scaleBand().domain(data.map(d => d.act)).range([0, H]).padding(0.3);
+    const maxVal = d3.max(data, d => d.top) || 1;
+    const y = d3.scaleBand().domain(data.map(d => d.key)).range([0, H]).padding(0.3);
     const x = d3.scaleLinear().domain([0, maxVal]).range([0, Math.max(W - labelGutter, 40)]).nice();
-    const axisFormat = isRelative ? (v => Math.round(v) + " %") : fmtShort;
 
     const defs = svg.append("defs");
     defs.append("pattern")
@@ -736,7 +866,7 @@
         : d.deficit > 0
         ? `Emise nepokryté povolenkami zdarma: <strong>${fmt(d.deficit)}</strong><br>`
         : "";
-      return `<strong>${ACTIVITIES[d.act].n}</strong><br>` +
+      return `<strong>${titleOf(d.key)}</strong><br>` +
         `Ověřené emise: <strong>${fmt(d.e)}</strong><br>` +
         `Bezplatné povolenky: <strong>${fmt(d.a)}</strong><br>` +
         extra;
@@ -744,24 +874,24 @@
 
     svg.selectAll(".a-bar-covered")
       .data(data).join("rect").attr("class", "a-bar-covered")
-      .attr("y", d => y(d.act)).attr("x", 0)
-      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered))
+      .attr("y", d => y(d.key)).attr("x", 0)
+      .attr("height", y.bandwidth()).attr("width", d => x(d.covered))
       .attr("fill", COLOR_ALLOCATION_SURPLUS)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
     svg.selectAll(".a-bar-deficit")
       .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-deficit")
-      .attr("y", d => y(d.act)).attr("x", d => x(d.dCovered))
-      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered + d.dDeficit) - x(d.dCovered))
+      .attr("y", d => y(d.key)).attr("x", d => x(d.covered))
+      .attr("height", y.bandwidth()).attr("width", d => x(d.covered + d.deficit) - x(d.covered))
       .attr("fill", COLOR_COVERED)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
     svg.selectAll(".a-bar-surplus")
       .data(data.filter(d => d.surplus > 0)).join("rect").attr("class", "a-bar-surplus")
-      .attr("y", d => y(d.act)).attr("x", d => x(d.dCovered))
-      .attr("height", y.bandwidth()).attr("width", d => x(d.dCovered + d.dSurplus) - x(d.dCovered))
+      .attr("y", d => y(d.key)).attr("x", d => x(d.covered))
+      .attr("height", y.bandwidth()).attr("width", d => x(d.covered + d.surplus) - x(d.covered))
       .attr("fill", "url(#ets-hatch-surplus-activity)")
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
@@ -769,29 +899,52 @@
     svg.selectAll(".a-line-allocation")
       .data(data)
       .join("line").attr("class", "a-line-allocation")
-      .attr("y1", d => y(d.act)).attr("y2", d => y(d.act) + y.bandwidth())
-      .attr("x1", d => x(d.dA)).attr("x2", d => x(d.dA))
+      .attr("y1", d => y(d.key)).attr("y2", d => y(d.key) + y.bandwidth())
+      .attr("x1", d => x(d.a)).attr("x2", d => x(d.a))
       .attr("stroke", "#1a202c").attr("stroke-width", 3);
 
     svg.selectAll(".a-bar-label")
       .data(data.filter(d => d.e > 0))
       .join("text").attr("class", "a-bar-label")
-      .attr("x", d => x(d.dTop) + 8)
-      .attr("y", d => y(d.act) + y.bandwidth() / 2)
+      .attr("x", d => x(d.top) + 8)
+      .attr("y", d => y(d.key) + y.bandwidth() / 2)
       .attr("dy", "0.32em")
       .attr("font-size", "13.5px")
       .attr("fill", "#718096")
       .text(coverageText);
 
+    // Separate fixed-position right-hand column (independent of bar length)
+    // showing the share of that row's emissions actually matched by free
+    // allocation — e.g. "124 %", headed by a single "Povolenky zdarma"
+    // column-name label instead of repeating the wording on every row.
+    svg.append("text")
+      .attr("x", W + mg.right - 16).attr("y", -12)
+      .attr("text-anchor", "end")
+      .attr("font-size", "13px")
+      .attr("fill", COLOR_ALLOCATION_SURPLUS)
+      .text("Povolenky zdarma");
+
+    svg.selectAll(".a-share-label")
+      .data(data.filter(d => d.e > 0))
+      .join("text").attr("class", "a-share-label")
+      .attr("x", W + mg.right - 16)
+      .attr("y", d => y(d.key) + y.bandwidth() / 2)
+      .attr("dy", "0.32em")
+      .attr("text-anchor", "end")
+      .attr("font-size", "13.5px")
+      .attr("font-weight", "600")
+      .attr("fill", "#2d3748")
+      .text(shareText);
+
     svg.append("g")
-      .call(d3.axisLeft(y).tickFormat(d => ACTIVITIES[d].short))
+      .call(d3.axisLeft(y).tickFormat(labelOf))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").remove())
       .call(g => g.selectAll(".tick text").attr("font-size", "14px").attr("fill", "#718096")
         .call(wrapText, mg.left - 20, -10));
 
     svg.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).ticks(5).tickFormat(axisFormat))
+      .call(d3.axisBottom(x).ticks(5).tickFormat(fmtShort))
       .call(g => g.select(".domain").attr("stroke", "#e2e8f0"))
       .call(g => g.selectAll(".tick line").attr("stroke", "#e2e8f0"))
       .call(g => g.selectAll(".tick text").attr("font-size", "12px").attr("fill", "#718096"));
