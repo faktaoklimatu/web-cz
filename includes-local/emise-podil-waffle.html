@@ -1,0 +1,7 @@
+{%- comment -%}
+Inline waffle: one square per whole percent of global emissions, plus the share
+in the same colour. Params: color (hex), squares (whole percent), pct (label).
+{%- endcomment -%}
+{%- assign n = include.squares | plus: 0 -%}
+<span style="display:block;margin-top:0.2em;">{%- for i in (1..n) -%}<span style="display:inline-block;width:0.6em;height:0.6em;background:{{ include.color }};margin-right:0.13em;"></span>{%- endfor -%}
+<span style="color:{{ include.color }};">&nbsp;{{ include.pct }}</span></span>

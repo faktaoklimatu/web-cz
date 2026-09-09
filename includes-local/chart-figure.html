@@ -1,0 +1,21 @@
+{%- comment -%}
+Figure wrapper for a JS-rendered chart. Mirrors figure.html (same .longread-figure
+markup and caption/source styling) but wraps an empty div that a chart script fills
+in, instead of an <img>. Caption text goes through markdownify — do NOT use
+markdown="1" in content for this, it breaks kramdown's block parsing.
+
+Params: id (required), caption, source-text, source-url, class
+{%- endcomment -%}
+<div class="longread-figure {{ include.class }}">
+<div id="{{ include.id }}"></div>
+{%- if include.caption or include.source-text %}
+<div class="fancybox-custom-caption">
+{%- if include.caption %}
+<div class="caption caption-below">{{ include.caption | markdownify }}</div>
+{%- endif %}
+{%- if include.source-text %}
+<div class="source">{{ site.data.lang.text.figure.source }} {% if include.source-url %}<a href="{{ include.source-url }}">{% endif %}{{ include.source-text }}{% if include.source-url %}</a>{% endif %}</div>
+{%- endif %}
+</div>
+{%- endif %}
+</div>
