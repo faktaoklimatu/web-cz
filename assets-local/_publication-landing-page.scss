@@ -133,7 +133,7 @@ $fullscreen-max-width: 1100px;
     /* Features Section */
     .features {
         background: var(--lp-surface);
-        padding: 20px 20px 40px 20px;
+        padding: 20px 20px 30px 20px;
         position: relative;
         z-index: 1;
     }
@@ -576,6 +576,30 @@ $fullscreen-max-width: 1100px;
         opacity: 0.7;
     }
 
+    .preview-notes {
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        .btn {
+            margin: 0 10px 10px 0;
+        }
+    }
+
+    .about-section {
+        background: white;
+        padding: 80px 20px;
+    }
+
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
     /* Responsive */
     @media (max-width: 968px) {
         .hero {
@@ -847,6 +871,27 @@ $fullscreen-max-width: 1100px;
         font-family: "Inter", sans-serif;
     }
 
+    // Match the site's default .btn geometry (Bootstrap 4.6), inverted for the
+    // dark hero: white fill and border, dark label.
+    .btn-primary.btn-cta {
+        padding: 0.375rem 0.75rem;
+        border: 1px solid colors.$c-accent;
+        border-radius: 0.25rem;
+        background: white;
+        color: colors.$c-accent;
+        font-weight: 400;
+        line-height: 1.5;
+
+        // Site-default hover: fills with the accent, no lift.
+        &:hover {
+            background: colors.$c-accent;
+            border-color: colors.$c-accent;
+            color: white;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
     .hero {
         background-image: url("/assets-local/atlas/atlas-klimaticke-zmeny-background.png");
         background-size: cover;
@@ -857,8 +902,47 @@ $fullscreen-max-width: 1100px;
         top: 0px
     }
 
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    // Same look as the site's default .btn.btn-secondary (Bootstrap 4.6 geometry).
+    // Nested under .testimonials-section to outweigh the shared rule above.
+    .testimonials-section .testimonials-toggle {
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        border: 1px solid colors.$c-secondary;
+        background: transparent;
+        color: colors.$c-secondary;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        &:hover {
+            background: colors.$c-accent;
+            border-color: colors.$c-accent;
+            color: white;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
     .carousel {
         border: none;
+    }
+
+    // No portraits in the testimonials: single column, name stacked above the
+    // institution, rows sized to their content instead of the 1fr/1fr split.
+    // Full nesting needed to outweigh the shared .testimonial-card rule.
+    .testimonials-section .testimonial-card .person-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        .name {
+            align-self: start;
+            margin-bottom: 0.1rem;
+        }
     }
 
     @media (min-width: 969px) {
