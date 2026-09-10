@@ -1,5 +1,7 @@
 /* Atlas dekarbonizace Česka - Landing Page v2.4 - 2025-11-12 */
 
+@use "colors";
+
 /* Variables */
 $fullscreen-max-width: 1100px;
 
@@ -17,11 +19,9 @@ $fullscreen-max-width: 1100px;
     font-style: normal;
 }
 
-.landing-page-atlas-dekarbonizace {
-
-    > main {
-        font-family: "Roobert", sans-serif;
-    }
+.landing-page-atlas {
+    --lp-accent: #006C90;
+    --lp-surface: #E5F5FA;
 
     /* Online Badge - floating */
     .online-badge-float {
@@ -50,10 +50,6 @@ $fullscreen-max-width: 1100px;
 
     /* Hero Section */
     .hero {
-        background-image:
-            linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%),
-            url("/assets-local/atlas-dekarbonizace/hero-illustration.svg"),
-            linear-gradient(135deg, #006C90 0%, #0091B8 100%);
         color: white;
         padding: 80px 20px 50px 20px;
         position: relative;
@@ -93,20 +89,21 @@ $fullscreen-max-width: 1100px;
         }
     }
 
+    // Geometry only -- .btn-cta anchors carry no Bootstrap .btn class, so the
+    // padding/radius must live here. Colours and case come from the page scopes.
     .btn-primary.btn-cta {
         display: inline-block;
-        background: white;
-        color: #003d52;
+        background: colors.$c-secondary;
+        color: white;
         padding: 15px 25px;
         text-decoration: none;
-        font-weight: 800;
-        letter-spacing: 0.02rem;
-        text-transform: uppercase;
         border-radius: 5px;
         transition: all 0.3s;
         font-size: 1rem;
 
         &:hover {
+            background: colors.$c-accent;
+            color: white;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
@@ -135,7 +132,7 @@ $fullscreen-max-width: 1100px;
 
     /* Features Section */
     .features {
-        background: #E5F5FA;
+        background: var(--lp-surface);
         padding: 20px 20px 40px 20px;
         position: relative;
         z-index: 1;
@@ -152,7 +149,7 @@ $fullscreen-max-width: 1100px;
     .feature-card {
         text-align: left;
         padding: 30px 20px;
-        color: #006c90;
+        color: var(--lp-accent);
         font-size: 1.2rem;
         line-height: 1.2;
     }
@@ -191,7 +188,7 @@ $fullscreen-max-width: 1100px;
     .carousel {
         position: relative;
         overflow: hidden;
-        border: 1px solid #006C90;
+        border: 1px solid var(--lp-accent);
     }
 
     .carousel-slide {
@@ -230,7 +227,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .carousel-dot.active {
-        background: #006C90;
+        background: var(--lp-accent);
         width: 30px;
         border-radius: 6px;
     }
@@ -251,7 +248,7 @@ $fullscreen-max-width: 1100px;
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        background: #006C90;
+        background: var(--lp-accent);
         color: white;
         display: flex;
         align-items: center;
@@ -271,7 +268,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .cta-box {
-        background: #E5F5FA;
+        background: var(--lp-surface);
         padding: 30px;
         border-radius: 8px;
         margin-top: 30px;
@@ -281,7 +278,7 @@ $fullscreen-max-width: 1100px;
     .cta-box .btn-primary {
         display: inline-block;
         margin-bottom: 10px;
-        background: #006C90;
+        background: var(--lp-accent);
         color: white;
         padding: 15px 25px;
         font-size: 1rem;
@@ -296,7 +293,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .cta-box-text a {
-        color: #006C90;
+        color: var(--lp-accent);
         text-decoration: underline;
         font-weight: 600;
     }
@@ -393,7 +390,7 @@ $fullscreen-max-width: 1100px;
         max-width: 100%;
         min-width: 0;
         text-align: left;
-        color: #006C90;
+        color: var(--lp-accent);
         padding: 1.5rem;
         border-radius: 1rem;
         background: white;
@@ -459,8 +456,8 @@ $fullscreen-max-width: 1100px;
             margin: 2rem auto 0;
             padding: 0.8rem 1.8rem;
             border-radius: 999px;
-            border: 1px solid #006C90;
-            background: #006C90;
+            border: 1px solid var(--lp-accent);
+            background: var(--lp-accent);
             color: white;
             font-weight: 700;
             cursor: pointer;
@@ -752,7 +749,7 @@ $fullscreen-max-width: 1100px;
 
             h2 {
                 font-size: 1.6rem;
-                color: #006C90;
+                color: var(--lp-accent);
                 margin-bottom: 10px;
             }
 
@@ -813,4 +810,63 @@ $fullscreen-max-width: 1100px;
         }
     }
 
+}
+
+.landing-page-atlas-dekarbonizace{
+    > main {
+        font-family: "Roobert", sans-serif;
+    }
+
+    .btn-primary.btn-cta {
+        background: white;
+        color: #003d52;
+        font-weight: 800;
+        letter-spacing: 0.02rem;
+        text-transform: uppercase;
+
+        &:hover {
+            background: white;
+            color: #003d52;
+        }
+    }
+
+    .hero {
+        background-image:
+        linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%),
+        url("/assets-local/atlas-dekarbonizace/hero-illustration.svg"),
+        linear-gradient(135deg, #006C90 0%, #0091B8 100%);
+    }
+}
+
+.landing-page-atlas-klimaticke-zmeny{
+    --lp-accent: #3e3e4c;
+    --lp-surface: #f7f7f7;
+
+    .hero-text h1,
+    .hero-text p {
+        font-family: "Inter", sans-serif;
+    }
+
+    .hero {
+        background-image: url("/assets-local/atlas/atlas-klimaticke-zmeny-background.png");
+        background-size: cover;
+    }
+
+    .hero-image {
+        animation: none;
+        top: 0px
+    }
+
+    @media (min-width: 969px) {
+        // ponytail: nowrap on the container keeps the three CTAs on one line; they
+        // overflow the grid column on purpose. Widen .hero-content columns instead
+        // if the overflow ever collides with the book image.
+        .hero-text {
+            white-space: nowrap;
+        }
+
+        .hero-text p {
+            white-space: normal;
+        }
+    }
 }
