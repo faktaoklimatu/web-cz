@@ -587,17 +587,24 @@ $fullscreen-max-width: 1100px;
     }
 
     .about-section {
-        background: white;
+        background: var(--lp-surface);
         padding: 80px 20px;
     }
 
-    .about-container {
-        max-width: 800px;
-        margin: 0 auto;
+    // Width, type size and h2 now come from .course-content / .course-text.
+    .about-container li {
+        margin-bottom: 0.5rem;
+    }
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+    .about-section .btn {
+        margin: 0 10px 10px 0;
+    }
+
+    // One button per line, each only as wide as its own label.
+    .about-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* Responsive */
@@ -909,8 +916,34 @@ $fullscreen-max-width: 1100px;
     
     .feature-card {
         padding-left: 0;
-        font-size: 1.1rem;
-        line-height: 1.1;   
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .course-content {
+        font-size: 1.2rem;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    // Text column wider than the button stack.
+    .about-grid {
+        grid-template-columns: 4fr 3fr;
+    }
+
+    // .testimonials-section centres everything; the heading opts out and lines
+    // up with .testimonials-container instead of the page edge.
+    // Sized to match .course-text h2, including its 968px step-down.
+    .testimonials-section > h2 {
+        max-width: $fullscreen-max-width;
+        margin-inline: auto;
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @media (max-width: 968px) {
+            font-size: 2rem;
+        }
     }
     .feature-card strong {
         padding-bottom: 0.5rem;
@@ -941,8 +974,14 @@ $fullscreen-max-width: 1100px;
         border: none;
     }
 
+    .testimonials-section {
+        background: white;
+    }
+
+    // Inverted against the shared block: white section, grey cards.
     .testimonials-section .testimonial-card {
         border-bottom-left-radius: 1rem;
+        background: var(--lp-surface);
     }
 
     // No portraits in the testimonials: single column, name stacked above the
