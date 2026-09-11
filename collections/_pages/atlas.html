@@ -21,7 +21,7 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
             <p>Vizuální průvodce vědou a daty</p>
             <a href="{{ page.eshop_link }}" class="btn-primary btn-cta ext-link">Koupit tištěný atlas</a>
             <a href="#" class="btn-primary btn-cta download-trigger">Stáhnout PDF</a>
-            <a href="https://atlas.faktaoklimatu.cz/" class="btn-primary btn-cta ext-link">Online atlas</a>
+            <a href="https://atlas.faktaoklimatu.cz/" class="btn-primary btn-cta ext-link">Atlas jako web</a>
         </div>
         <div class="hero-image">
             <img src="/assets-local/{{ page.slug }}/publikace-mock-up-hero.png" alt="Atlas klimatické změny">
@@ -34,17 +34,20 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
     <div class="features-grid">
         <div class="feature-card">
             <!--</div><img src="/assets-local/{{ page.slug }}/ilustrace-kotva.svg" alt="Datová kotva" class="feature-icon">-->
-            <strong><i class="fa-solid fa-square-poll-vertical"></i> Datová kotva</strong> Aktuální data od předních institucí jako NASA, Eurostat či ČHMÚ
+            <h3><i class="fa-solid fa-square-poll-vertical"></i>  Datová kotva</h3>
+            Aktuální data od předních institucí jako NASA, Eurostat či ČHMÚ
         </div>
 
         <div class="feature-card">
             <!--<img src="/assets-local/{{ page.slug }}/ilustrace-mapa.svg" alt="Vizuální mapa" class="feature-icon">-->
-            <strong><i class="fa-solid fa-map"></i> Vizuální mapa</strong> Podstatné souvislosti na první pohled v přehledných infografikách
+            <h3><i class="fa-solid fa-map"></i>  Vizuální mapa</h3>
+            Podstatné souvislosti na první pohled v přehledných infografikách
         </div>
 
         <div class="feature-card">
             <!--<img src="/assets-local/{{ page.slug }}/ilustrace-kompas.svg" alt="Tematický kompas" class="feature-icon">-->
-            <strong><i class="fa-solid fa-compass"></i> Tematický kompas</strong> Vysvětlení příčin, dopadů, trendů a možných&nbsp;řešení
+            <h3><i class="fa-solid fa-compass"></i>  Tematický kompas</h3>
+            Vysvětlení příčin, dopadů, trendů a možných&nbsp;řešení
         </div>
     </div>
 </section>
@@ -53,55 +56,53 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
 <section class="preview-section">
     <div class="preview-container">
         <div class="carousel-container">
+            <!-- Static single image. Keeps .carousel-slide.active so the shared
+                 lightbox handler in atlas-dekarbonizace.js still opens it. -->
             <div class="carousel">
                 <div class="carousel-slide active">
-                    <img src="/assets-local/{{ page.slug }}/nahled001.png" alt="Náhled publikace">
+                    <img src="/assets-local/{{ page.slug }}/mockup-multiple-spreads-transparent.png" alt="Náhled publikace">
                 </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-jak-moc-se-planeta-otepluje.png" alt="Náhled infografiky Jak moc se planeta otepluje: graf světové teplotní anomálie od roku 1880 do roku 2024, kdy dosáhla 1,47 °C oproti letům 1850–1900">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-sklenikovy-efekt.png" alt="Náhled infografiky Skleníkový efekt a energetická nerovnováha Země: schéma toků energie mezi Sluncem, atmosférou a zemským povrchem ve wattech na metr čtvereční">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-globalni-emise.png" alt="Náhled infografiky Globální emise stále rostou: graf globálních emisí skleníkových plynů podle typu plynu od 70. let do roku 2024, kdy dosáhly 57,8 Gt CO2eq">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-emise-eu.png" alt="Náhled infografiky Emise v EU dlouhodobě klesají: graf vývoje emisí v EU v letech 1990–2024 podle sektorů a jejich změna oproti roku 1990">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-mapa-teplotnich-zmen.png" alt="Náhled infografiky s mapou teplotních změn">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/infografika-extremy.png" alt="Náhled infografiky s extrémy">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/assets-local/{{ page.slug }}/stranka-obsah.png" alt="Náhled stránky s obsahem">
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <!-- dots generated dynamically in JS from slide count -->
             </div>
         </div>
 
         <div class="preview-notes">
-            <h3>Pro vás</h3>
-            <p>Pokud byste rádi měli atlas pro vlastní použití, můžete si jej zdarma stáhnout nebo si od nás objednat tištěnou verzi.</p>
+            <h2>Nové, aktualizované a výrazně rozšířené vydání (2026)</h2>
+            <p>Po šesti letech jsme <strong>výrazně přepracovali náš původní Atlas klimatické změny</strong>. Přináší pevné základy pro porozumění změně klimatu v přehledných infografikách a srozumitelných textech.</p>
             <a href="{{ page.pdf_link }}" target="_blank" class="btn btn-secondary"><i class="fas fa-fw fa-file-download"></i> Stáhnout PDF</a>
             <a href="{{ page.eshop_link }}" class="btn btn-primary"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
 
-            <h3>Licence</h3>
-            <p>Atlas je k dispozici pro <em>nekomerční</em> použití pod licencí <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.cs" title="Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní" rel="license">CC-BY-NC-4.0</a>.</p>
+            <h2>Volně k použití</h2>
+            <p>Infografiky z atlasu můžete volně používat pro vlastní potřeby – v prezentacích, výuce i vlastních materiálech. Stačí uvést zdroj.</p>
             
-            <h3>Také jako samostatný web</h3>
-            <p>TODO: Atlas v online podobe…</p>
-            <a href="https://atlas.faktaoklimatu.cz/" class="btn btn-secondary"><i class="fa-solid fa-arrow-pointer"></i> Online atlas</a>
+        </div>
+    </div>
+</section>
+
+<!-- Web Version Section -->
+<section class="about-section">
+    <div class="course-content">
+        <div class="course-text">
+            <h2>Atlas také jako web</h2>
+            <p>Celý Atlas klimatické změny najdete i jako samostatný web, rozdělený po jednotlivých tématech.</p>
+
+            <ul class="course-features">
+                <li><i class="fa-solid fa-magnifying-glass"></i>   Prohlížíte si jen to, co zrovna potřebujete.</li>
+                <li><i class="fa-solid fa-file-arrow-down"></i>   Stáhnete si jednotlivé grafiky ve formátu PNG nebo PDF a snadno je použijete ve vlastní prezentaci či výuce.</li>
+                <li><i class="fa-solid fa-square-poll-vertical"></i>   Přejdete ke zdrojům informací na jedno kliknutí.</li>
+            </ul>
+
+            <a href="https://atlas.faktaoklimatu.cz/" class="btn btn-primary ext-link">Přejít na web</a>
+        </div>
+
+        <div>
+            <img src="/assets-local/{{ page.slug }}/webpage-laptop-mockup.png" alt="Náhled webové verze Atlasu klimatické změny" class="img-fluid">
         </div>
     </div>
 </section>
 
 <!-- Testimonials Section -->
 <section class="testimonials-section" id="testimonials">
+    <h2>Atlas doporučují</h2>
     <div class="testimonials-container">
         <div class="testimonial-card">
             <p class="text">Atlas <b>převádí složitou fyziku klimatického systému do srozumitelných, vizuálně působivých a přitom vědecky podložených grafik</b>. Vybírá podstatné informace a zasazuje je do správných souvislostí. Navíc ukazuje proč a jak rychle se klima mění a co z toho vyplývá. Je to kniha, ke které se lze znovu a znovu vracet.</p>
@@ -158,47 +159,26 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
 
 <!-- About Section -->
 <section class="about-section">
-    <div class="about-container">
-        <h2>K čemu publikace slouží</h2>
-        <p>Atlas klimatické změny vychází z naší dlouhodobé snahy kultivovat veřejnou debatu o klimatu a související transformaci, kterou společnost zažívá. Za tímto účelem v něm nabízíme srozumitelně podaná data ve formě jednoduchých a přehledných grafů, map či infografik.</p>
-        <p>Naše práce si zakládá na tom, aby čtenáři z těchto zdrojů dokázali snadno vyčíst informace, které je zajímají, a odnesli si uchopitelné sdělení. Vše doplňujeme komentářem o širších souvislostech probíraných jevů.</p>
+    <!-- Same .course-content grid as the web-version section above, but with only
+         the text column filled, so both sections share width and left edge. -->
+    <div class="course-content about-grid">
+        <div class="course-text about-container">
+            <h2>Pro koho je Atlas?</h2>
+            <p>Atlas je spolehlivým průvodcem pro každého, kdo chce změně klimatu rozumět do hloubky.</p>
+            <ul>
+                <li><b>Novináři a decision makeři</b> – rychlá orientace v datech a souvislostech, na které se dá odkázat.</li>
+                <li><b>Studenti a pedagogové</b> – ucelený přehled tématu, použitelný jako jádro klimatického kurikula na středních i vysokých školách.</li>
+                <li><b>Široká veřejnost</b> – srozumitelný vstup do tématu bez nutnosti číst odborné zprávy.</li>
+            </ul>
+        </div>
 
-        <h2>Co najdete uvnitř</h2>
-        <p>Obsah jsme uspořádali do následujících tematických oddílů:</p>
-        <ol>
-            <li><b>Úvod: klimatická změna v souvislostech</b><br>co vše změna klimatu zahrnuje a jak dlouho již o ní víme</li>
-            <li><b>Fyzikální základy: koncentrace a teploty</b><br>jak roste koncentrace CO<sub>2</sub> v atmosféře a ruku v ruce s tím i teplota ve světě a v Česku, co je přesně skleníkový efekt a jak vzniká energetická nerovnováha Země</li>
-            <li><b>Dopady: měnící se planeta</b><br>jak stoupají hladiny moří, sílí extrémy počasí a čím hrozí klimatické body zlomu jako tání permafrostu, odumírání amazonského pralesa či kolaps atlantické cirkulace</li>
-            <li><b>Výhledy: emise a budoucí oteplení</b><br>čím se vyznačují hlavní skleníkové plyny, jak stále rostou jejich globální emise, jak velký uhlíkový rozpočet ještě zbývá a o kolik se oteplí do roku 2100</li>
-            <li><b>Řešení: cesty ke změně</b><br>co obnáší klimatické dohody, jaké jsou hlavní cesty ke snižování emisí v jednotlivých sektorech a díky čemu emise reálně klesají v Česku a v EU</li>
-        </ol>
-        <p>Grafiky a texty jsou vytvořeny s ohledem na laickou veřejnost a snaží se vždy dát návod, jak zobrazená data číst a co znamenají. Díky nim například pochopíte, co jsou to body zlomu v různých ekosystémech, zjistíte, jak se změny klimatu projevují v různých částech světa, nebo se zorientujete v tom, jak skleníkové plyny ovlivňují teplotu a řadu souvisejících jevů. V kapitole o emisních scénářích se zase dozvíte, co můžeme udělat pro lepší budoucnost a minimalizaci dalšího oteplování planety.</p>
-        <p>V závěru najdete také seznam dalších zdrojů vědecky podložených informací o klimatické změně.</p>
-
-        <h2>Komu může být atlas užitečný</h2>
-        <p>V zásadě komukoliv, koho zajímá <b>úvod do klimatické změny</b> a souvisejících jevů. Naše publikace je vhodný zdroj, jak začít s jejich studiem, ať už se do něj chcete ponořit vy sami nebo potřebujete didaktickou pomůcku, o niž se můžete opřít.</p>
-        <p>Atlas se může hodit ve <b>školní výuce</b> v rámci různých předmětů, na <b>firemním workshopu</b> či při jiných obdobných příležitostech.</p>
-    </div>
-</section>
-
-<!-- Download Modal -->
-<div class="modal fade download-modal" id="download-modal" data-pdf-url="{{ page.pdf_link }}" tabindex="-1" role="dialog" aria-label="Stažení Atlasu dekarbonizace" aria-hidden="true" data-newsletter-id="25-f17c94ba9f7a7a06b025a1afaaca6e6a">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content download-modal-content">
-            <div class="modal-body">
-                <button type="button" class="close download-modal-close" data-dismiss="modal" aria-label="Zavřít">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h2>Atlas se začal stahovat</h2>
-                <p>Mezitím se můžete přihlásit k newsletteru Fakt o klimatu</p>
-                <p class="newsletter-description">Dvakrát měsíčně novinky z klimatu a dekarbonizace, opřené o vědu a ověřená data.</p>
-                <div class="ecomail-widget">
-                    <div id="f-25-f17c94ba9f7a7a06b025a1afaaca6e6a"></div>
-                </div>
-            </div>
+        <div class="about-actions">
+            <a href="{{ page.eshop_link }}" class="btn btn-primary ext-link"><i class="fas fa-fw fa-atlas"></i> Koupit tištěný atlas</a>
+            <a href="#" class="btn btn-secondary download-trigger"><i class="fas fa-fw fa-file-download"></i> Stáhnout PDF</a>
+            <a href="https://atlas.faktaoklimatu.cz/" class="btn btn-secondary ext-link"><i class="fa-solid fa-arrow-pointer"></i> Atlas jako web</a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">

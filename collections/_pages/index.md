@@ -40,10 +40,10 @@ slug: index
       <div class="col-md-4">
         {% include preview-block.html slug="atlas" no_include_tags=true %}
       </div>
-      <div class="col-md-6" markdown="1">
-  Českou energetiku čeká v příštích letech odstavování uhelných elektráren. Ty je nutné nahradit čistšími řiditelnými zdroji, jejichž výstavba se však neobejde bez podpory. Stát proto připravuje **kapacitní trh** – systém aukcí, v nichž budou výrobci placeni za udržování záložní kapacity pro případ potřeby.
-
-  K tématu jsme připravili [úvodní text](/explainery/2026-kapacitni-trh-v-cesku) vysvětlující fungování tohoto mechanismu a navazující [policy paper](/studie/2026-six-objectives-for-a-successful-capacity-market) (v angličtině), který definuje šest cílů pro jeho úspěšné zavedení v Česku – tedy zajištění spolehlivých dodávek za rozumné náklady a bez nadbytečné závislosti na plynu.
+      <div class="col-md-6" markdown="0">
+        <br>
+        <p>V polarizované debatě o klimatu lidé často utíkají k extrémům – bagatelizaci, nebo katastrofickým scénářů</p>
+        <p>Po šesti letech jsme proto <strong>výrazně přepracovali náš původní Atlas klimatické změny</strong>. Přináší pevné základy pro porozumění změně klimatu v přehledných infografikách a srozumitelných textech. Aktualizovaný a rozšířený atlas si můžete přečíst online, stáhnout zdarma, nebo si koupit vytištěný.</p>
   </div>
   </div>
   </div></div>
