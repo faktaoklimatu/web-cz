@@ -19,6 +19,13 @@ $fullscreen-max-width: 1100px;
 }
 
 .product-page {
+
+    /* Every <section> on these pages. Sections whose spacing differs override
+       this from their own class (.hero, .features, .logos-section, ...). */
+    .section {
+        padding: 80px 20px;
+    }
+
     --pp-accent: #006C90;
     --pp-surface: #E5F5FA;
 
@@ -143,7 +150,6 @@ $fullscreen-max-width: 1100px;
     /* Preview Section */
     .preview-section {
         background: white;
-        padding: 80px 20px;
     }
 
     .preview-container {
