@@ -16,8 +16,16 @@
     }
 
     .preview-notes {
+        font-size: 1.2rem;
+
         h3:first-child {
             margin-top: 0;
+        }
+
+        // Spacing around the pair of buttons lives on the wrapper, so it is
+        // independent of the gap between the buttons themselves.
+        .preview-actions {
+            margin-block: 2rem;
         }
 
         .btn {
