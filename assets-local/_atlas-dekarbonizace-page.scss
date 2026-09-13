@@ -1,0 +1,252 @@
+/* Atlas dekarbonizace Česka — rules used only by this page.
+ * Shared layout: _product-page.scss
+ */
+
+@use "colors";
+@use "product-page" as pp;
+
+@font-face {
+    font-family: "Roobert";
+    src: url("/assets-local/fonts/Roobert-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roobert";
+    src: url("/assets-local/fonts/Roobert-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+.atlas-dekarbonizace-page {
+    .online-badge-float {
+        width: 10vh;
+        height: auto;
+        top: 8vh;
+        right: 8vh;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .preview-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stat-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: var(--pp-accent);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .stat-label {
+        color: #666;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .cta-box {
+        background: var(--pp-surface);
+        padding: 30px;
+        border-radius: 8px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .cta-box .btn-primary {
+        display: inline-block;
+        margin-bottom: 10px;
+        background: var(--pp-accent);
+        color: white;
+        padding: 15px 25px;
+        font-size: 1rem;
+        min-width: 240px;
+    }
+
+    .cta-box-text {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+    .cta-box-text a {
+        color: var(--pp-accent);
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .online-course {
+        background: #14B8A6;
+        color: white;
+        padding: 80px 20px;
+
+        h2 {
+            color: white;
+        }
+    }
+
+    .btn-secondary.btn-cta {
+        display: inline-block;
+        background: white;
+        color: #0d7a6e;
+        padding: 15px 35px;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .logos-section {
+        background: white;
+        padding: 60px 20px;
+    }
+
+    .logos-container {
+        max-width: pp.$fullscreen-max-width;
+        margin: 0 auto;
+    }
+
+    .logos-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        align-items: center;
+        justify-items: left;
+        margin-bottom: 30px;
+    }
+
+    .logo-item {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .logo-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .logos-text {
+        text-align: left;
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 90ch;
+    }
+
+    > main {
+        font-family: "Roobert", sans-serif;
+    }
+
+    .btn-primary.btn-cta {
+        background: white;
+        color: #003d52;
+        font-weight: 800;
+        letter-spacing: 0.02rem;
+        text-transform: uppercase;
+
+        &:hover {
+            background: white;
+            color: #003d52;
+        }
+    }
+
+    .hero {
+        background-image:
+        linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%),
+        url("/assets-local/atlas-dekarbonizace/hero-illustration.svg"),
+        linear-gradient(135deg, #006C90 0%, #0091B8 100%);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .online-badge-float {
+            width: 8vw;
+            height: 8vw;
+        }
+
+        .logos-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+    }
+
+    @media (max-width: 640px) {
+        .online-badge-float {
+            display: none;
+        }
+
+        .online-course {
+            padding: 50px 20px;
+        }
+
+        .stat-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logos-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+    }
+}
