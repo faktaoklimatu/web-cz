@@ -46,7 +46,7 @@ $(function () {
     $('body').css('overflow', 'auto');
   };
 
-  $('.carousel-slide img').on('click', function () {
+  $('.carousel-slide img, .preview-image').on('click', function () {
     openLightbox(this.src);
   });
 

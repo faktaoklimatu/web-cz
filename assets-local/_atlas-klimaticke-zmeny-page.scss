@@ -6,6 +6,15 @@
 @use "product-page" as pp;
 
 .atlas-klimaticke-zmeny-page {
+
+    /* This page shows one static spread instead of the carousel. */
+    .preview-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
     .preview-notes {
         h3:first-child {
             margin-top: 0;
