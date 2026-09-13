@@ -198,20 +198,4 @@
         font-size: 1.2rem;
         font-weight: 600;
     }
-
-    // Filled accent button that inverts on hover. Both states carry a 1px
-    // border so the box never shifts; in the normal state that border is
-    // white, i.e. invisible against the section background.
-    .btn {
-        background: colors.$c-accent;
-        border: 1px solid white;
-        color: white;
-
-        &:hover,
-        &:focus {
-            background: white;
-            border-color: colors.$c-accent;
-            color: colors.$c-accent;
-        }
-    }
 }
