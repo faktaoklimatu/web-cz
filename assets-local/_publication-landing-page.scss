@@ -19,9 +19,9 @@ $fullscreen-max-width: 1100px;
     font-style: normal;
 }
 
-.landing-page-atlas {
-    --lp-accent: #006C90;
-    --lp-surface: #E5F5FA;
+.product-page {
+    --pp-accent: #006C90;
+    --pp-surface: #E5F5FA;
 
     /* Online Badge - floating */
     .online-badge-float {
@@ -132,7 +132,7 @@ $fullscreen-max-width: 1100px;
 
     /* Features Section */
     .features {
-        background: var(--lp-surface);
+        background: var(--pp-surface);
         padding: 20px 20px 30px 20px;
         position: relative;
         z-index: 1;
@@ -149,7 +149,7 @@ $fullscreen-max-width: 1100px;
     .feature-card {
         text-align: left;
         padding: 30px 20px;
-        color: var(--lp-accent);
+        color: var(--pp-accent);
         font-size: 1.2rem;
         line-height: 1.2;
     }
@@ -188,7 +188,7 @@ $fullscreen-max-width: 1100px;
     .carousel {
         position: relative;
         overflow: hidden;
-        border: 1px solid var(--lp-accent);
+        border: 1px solid var(--pp-accent);
     }
 
     .carousel-slide {
@@ -227,7 +227,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .carousel-dot.active {
-        background: var(--lp-accent);
+        background: var(--pp-accent);
         width: 30px;
         border-radius: 6px;
     }
@@ -248,7 +248,7 @@ $fullscreen-max-width: 1100px;
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        background: var(--lp-accent);
+        background: var(--pp-accent);
         color: white;
         display: flex;
         align-items: center;
@@ -268,7 +268,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .cta-box {
-        background: var(--lp-surface);
+        background: var(--pp-surface);
         padding: 30px;
         border-radius: 8px;
         margin-top: 30px;
@@ -278,7 +278,7 @@ $fullscreen-max-width: 1100px;
     .cta-box .btn-primary {
         display: inline-block;
         margin-bottom: 10px;
-        background: var(--lp-accent);
+        background: var(--pp-accent);
         color: white;
         padding: 15px 25px;
         font-size: 1rem;
@@ -293,7 +293,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .cta-box-text a {
-        color: var(--lp-accent);
+        color: var(--pp-accent);
         text-decoration: underline;
         font-weight: 600;
     }
@@ -390,7 +390,7 @@ $fullscreen-max-width: 1100px;
         max-width: 100%;
         min-width: 0;
         text-align: left;
-        color: var(--lp-accent);
+        color: var(--pp-accent);
         padding: 1.5rem;
         border-radius: 1rem;
         background: white;
@@ -456,8 +456,8 @@ $fullscreen-max-width: 1100px;
             margin: 2rem auto 0;
             padding: 0.8rem 1.8rem;
             border-radius: 999px;
-            border: 1px solid var(--lp-accent);
-            background: var(--lp-accent);
+            border: 1px solid var(--pp-accent);
+            background: var(--pp-accent);
             color: white;
             font-weight: 700;
             cursor: pointer;
@@ -587,7 +587,7 @@ $fullscreen-max-width: 1100px;
     }
 
     .about-section {
-        background: var(--lp-surface);
+        background: var(--pp-surface);
         padding: 80px 20px;
     }
 
@@ -780,7 +780,7 @@ $fullscreen-max-width: 1100px;
 
             h2 {
                 font-size: 1.6rem;
-                color: var(--lp-accent);
+                color: var(--pp-accent);
                 margin-bottom: 10px;
             }
 
@@ -843,7 +843,7 @@ $fullscreen-max-width: 1100px;
 
 }
 
-.landing-page-atlas-dekarbonizace{
+.atlas-dekarbonizace-page{
     > main {
         font-family: "Roobert", sans-serif;
     }
@@ -869,9 +869,9 @@ $fullscreen-max-width: 1100px;
     }
 }
 
-.landing-page-atlas-klimaticke-zmeny{
-    --lp-accent: #3e3e4c;
-    --lp-surface: #f7f7f7;
+.atlas-klimaticke-zmeny-page{
+    --pp-accent: #3e3e4c;
+    --pp-surface: #f7f7f7;
 
     .hero-text h1,
     .hero-text p {
@@ -975,13 +975,16 @@ $fullscreen-max-width: 1100px;
     }
 
     .testimonials-section {
-        background: white;
+        background: var(--pp-surface);
     }
 
-    // Inverted against the shared block: white section, grey cards.
     .testimonials-section .testimonial-card {
         border-bottom-left-radius: 1rem;
-        background: var(--lp-surface);
+    }
+
+    // .about-section is grey by default; this one section stays white.
+    .web-version {
+        background: white;
     }
 
     // No portraits in the testimonials: single column, name stacked above the
