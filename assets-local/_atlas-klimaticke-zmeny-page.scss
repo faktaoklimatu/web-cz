@@ -121,6 +121,13 @@
     }
 
     // Same look as the site's default .btn.btn-secondary (Bootstrap 4.6 geometry).
+    // The toggle shares the heading's container box, so it lines up with the
+    // heading and the first card instead of being centred in the section.
+    .testimonials-footer {
+        @include pp.container;
+        text-align: left;
+    }
+
     // Nested under .testimonials-section to outweigh the shared rule above.
     .testimonials-section .testimonials-toggle {
         border-radius: 0.25rem;
