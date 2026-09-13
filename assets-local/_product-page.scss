@@ -1,52 +1,22 @@
-/* Atlas dekarbonizace Česka - Landing Page v2.4 - 2025-11-12 */
+/* Product page — layout shared by the two Atlas landing pages.
+ *
+ *   collections/_pages/atlas.html               .product-page .atlas-klimaticke-zmeny-page
+ *   collections/_pages/atlas-dekarbonizace.html .product-page .atlas-dekarbonizace-page
+ *
+ * Only rules used by BOTH pages belong here; anything page-specific lives in
+ * _atlas-klimaticke-zmeny-page.scss / _atlas-dekarbonizace-page.scss.
+ */
 
 @use "colors";
 
-/* Variables */
+/* Shared by the page partials too, hence not private. */
 $fullscreen-max-width: 1100px;
-
-@font-face {
-    font-family: "Roobert";
-    src: url("/assets-local/fonts/Roobert-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Roobert";
-    src: url("/assets-local/fonts/Roobert-Bold.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
-}
 
 .product-page {
     --pp-accent: #006C90;
     --pp-surface: #E5F5FA;
 
     /* Online Badge - floating */
-    .online-badge-float {
-        width: 10vh;
-        height: auto;
-        top: 8vh;
-        right: 8vh;
-        position: absolute;
-        z-index: 2;
-        cursor: pointer;
-        transition: transform 0.3s;
-
-        &::after {
-            display: none;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
 
     /* Hero Section */
     .hero {
@@ -232,82 +202,7 @@ $fullscreen-max-width: 1100px;
         border-radius: 6px;
     }
 
-    .preview-stats {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .stat-item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .stat-circle {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background: var(--pp-accent);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-
-    .stat-number {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-
-    .stat-label {
-        color: #666;
-        font-size: 1.3rem;
-        font-weight: 700;
-    }
-
-    .cta-box {
-        background: var(--pp-surface);
-        padding: 30px;
-        border-radius: 8px;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .cta-box .btn-primary {
-        display: inline-block;
-        margin-bottom: 10px;
-        background: var(--pp-accent);
-        color: white;
-        padding: 15px 25px;
-        font-size: 1rem;
-        min-width: 240px;
-    }
-
-    .cta-box-text {
-        color: #333;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 10px;
-    }
-
-    .cta-box-text a {
-        color: var(--pp-accent);
-        text-decoration: underline;
-        font-weight: 600;
-    }
-
     /* Online Course Section */
-    .online-course {
-        background: #14B8A6;
-        color: white;
-        padding: 80px 20px;
-
-        h2 {
-            color: white;
-        }
-    }
 
     .course-content {
         max-width: $fullscreen-max-width;
@@ -335,39 +230,6 @@ $fullscreen-max-width: 1100px;
         padding: 0.3rem 0;
         position: relative;
         font-size: 1.2rem;
-    }
-
-    .btn-secondary.btn-cta {
-        display: inline-block;
-        background: white;
-        color: #0d7a6e;
-        padding: 15px 35px;
-        text-decoration: none;
-        font-weight: 700;
-        border-radius: 5px;
-        transition: all 0.3s;
-
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-    }
-
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    }
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
     }
 
     /* Testimonials section*/
@@ -473,60 +335,6 @@ $fullscreen-max-width: 1100px;
     }
 
     /* Logos Section */
-    .logos-section {
-        background: white;
-        padding: 60px 20px;
-    }
-
-    .logos-container {
-        max-width: $fullscreen-max-width;
-        margin: 0 auto;
-    }
-
-    .logos-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        align-items: center;
-        justify-items: left;
-        margin-bottom: 30px;
-    }
-
-    .logo-item {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .logo-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .logos-text {
-        text-align: left;
-        color: #666;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        max-width: 90ch;
-    }
-
-    .inline-list {
-        list-style: none;
-
-        li {
-            display: inline;
-
-            &:first-child::before {
-                display: none;
-            }
-
-            &::before {
-                content: "\2022";
-                margin: 0 0 0 0.3em;
-            }
-        }
-    }
 
     /* Lightbox */
     .lightbox {
@@ -576,196 +384,11 @@ $fullscreen-max-width: 1100px;
         opacity: 0.7;
     }
 
-    .preview-notes {
-        h3:first-child {
-            margin-top: 0;
-        }
-
-        .btn {
-            margin: 0 10px 10px 0;
-        }
-    }
-
-    .about-section {
-        background: var(--pp-surface);
-        padding: 80px 20px;
-    }
-
     // Width, type size and h2 now come from .course-content / .course-text.
-    .about-container li {
-        margin-bottom: 0.5rem;
-    }
-
-    .about-section .btn {
-        margin: 0 10px 10px 0;
-    }
 
     // One button per line, each only as wide as its own label.
-    .about-actions {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     /* Responsive */
-    @media (max-width: 968px) {
-        .hero {
-            padding: 40px 20px 50px 20px;
-        }
-
-        .features {
-            padding: 140px 20px 40px 20px; // large top padding accommodates hero image overlap
-        }
-
-        .hero-content {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .hero-text {
-            padding-top: 0;
-        }
-
-        .hero-text p {
-            margin-bottom: 20px;
-        }
-
-        .hero-text a {
-            min-width: 220px;
-        }
-
-        .preview-container,
-        .course-content {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        .hero-text h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .features-grid {
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-
-        .hero-image {
-            justify-content: center;
-            margin-top: 0;
-            margin-bottom: -160px; // reduced overlap for smaller hero image (max-width: 500px)
-        }
-
-        .hero-image img {
-            max-width: 500px;
-        }
-
-        .feature-card {
-            padding: 15px 10px;
-        }
-
-        .online-badge-float {
-            width: 8vw;
-            height: 8vw;
-        }
-
-        .logos-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .course-text h2 {
-            font-size: 2rem;
-        }
-
-        .testimonials-section {
-            .testimonials-container {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-    }
-
-    @media (max-width: 640px) {
-        .online-badge-float {
-            display: none;
-        }
-
-        .hero {
-            padding: 30px 20px 20px 20px;
-        }
-
-        .hero-text h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        .hero-text p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-image {
-            margin-bottom: -80px; // reduced overlap for mobile hero image (max-width: 350px)
-        }
-
-        .hero-image img {
-            max-width: 350px;
-        }
-
-        .features {
-            padding: 100px 20px 30px 20px; // top padding for hero image overlap on mobile
-        }
-
-        .features-grid {
-            gap: 20px;
-        }
-
-        .feature-card {
-            padding: 10px 5px;
-        }
-
-        .feature-icon {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 15px;
-        }
-
-        .feature-card strong {
-            font-size: 1rem;
-        }
-
-        .preview-section,
-        .online-course {
-            padding: 50px 20px;
-        }
-
-        .stat-item {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .course-features li {
-            font-size: 0.95rem;
-        }
-
-        .logos-grid {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        .testimonials-section {
-            .testimonials-container {
-                grid-template-columns: 1fr;
-            }
-
-            .testimonial-card {
-                padding: 1.2rem;
-                border-bottom-left-radius: 2rem;
-            }
-        }
-    }
-
-
 
     /* Download Modal (Bootstrap modal) */
     .download-modal {
@@ -841,175 +464,138 @@ $fullscreen-max-width: 1100px;
         }
     }
 
-}
-
-.atlas-dekarbonizace-page{
-    > main {
-        font-family: "Roobert", sans-serif;
-    }
-
-    .btn-primary.btn-cta {
-        background: white;
-        color: #003d52;
-        font-weight: 800;
-        letter-spacing: 0.02rem;
-        text-transform: uppercase;
-
-        &:hover {
-            background: white;
-            color: #003d52;
+    /* Responsive */
+    @media (max-width: 968px) {
+        .hero {
+            padding: 40px 20px 50px 20px;
         }
-    }
 
-    .hero {
-        background-image:
-        linear-gradient(135deg, rgb(0 79 123) 0%, rgba(0, 144, 184, 0) 100%),
-        url("/assets-local/atlas-dekarbonizace/hero-illustration.svg"),
-        linear-gradient(135deg, #006C90 0%, #0091B8 100%);
-    }
-}
-
-.atlas-klimaticke-zmeny-page{
-    --pp-accent: #3e3e4c;
-    --pp-surface: #f7f7f7;
-
-    .hero-text h1,
-    .hero-text p {
-        font-family: "Inter", sans-serif;
-    }
-
-    // Site-default .btn geometry, inverted for the dark hero photo:
-    // white fill and outline, dark label.
-    .btn-primary.btn-cta {
-        padding: 0.375rem 0.75rem;
-        border: 1px solid white;
-        border-radius: 0.25rem;
-        background: white;
-        color: colors.$c-secondary;
-        font-weight: 400;
-        line-height: 1.5;
-
-        // Site-default hover: fills with the accent, no lift.
-        &:hover {
-            background: colors.$c-accent;
-            border-color: colors.$c-accent;
-            color: white;
-            transform: none;
-            box-shadow: none;
+        .features {
+            padding: 140px 20px 40px 20px; // large top padding accommodates hero image overlap
         }
-    }
 
-    .hero {
-        background-image: url("/assets-local/atlas/atlas-klimaticke-zmeny-background.png");
-        background-size: cover;
-    }
-
-    .hero-image {
-        animation: none;
-        top: 0px
-    }
-
-    .feature-icon {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .feature-card {
-        padding-left: 0;
-        font-size: 1.2rem;
-        line-height: 1.2;
-    }
-
-    .course-content {
-        font-size: 1.2rem;
-        grid-template-columns: 3fr 4fr;
-    }
-
-    // Text column wider than the button stack.
-    .about-grid {
-        grid-template-columns: 4fr 3fr;
-    }
-
-    // .testimonials-section centres everything; the heading opts out and lines
-    // up with .testimonials-container instead of the page edge.
-    // Sized to match .course-text h2, including its 968px step-down.
-    .testimonials-section > h2 {
-        max-width: $fullscreen-max-width;
-        margin-inline: auto;
-        text-align: left;
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1.2;
-
-        @media (max-width: 968px) {
-            font-size: 2rem;
+        .hero-content {
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
-    }
-    .feature-card strong {
-        padding-bottom: 0.5rem;
-    }
 
-    // Same look as the site's default .btn.btn-secondary (Bootstrap 4.6 geometry).
-    // Nested under .testimonials-section to outweigh the shared rule above.
-    .testimonials-section .testimonials-toggle {
-        padding: 0.375rem 0.75rem;
-        border-radius: 0.25rem;
-        border: 1px solid colors.$c-secondary;
-        background: transparent;
-        color: colors.$c-secondary;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.5;
-
-        &:hover {
-            background: colors.$c-accent;
-            border-color: colors.$c-accent;
-            color: white;
-            transform: none;
-            box-shadow: none;
-        }
-    }
-
-    .carousel {
-        border: none;
-    }
-
-    .testimonials-section {
-        background: var(--pp-surface);
-    }
-
-    .testimonials-section .testimonial-card {
-        border-bottom-left-radius: 1rem;
-    }
-
-    // .about-section is grey by default; this one section stays white.
-    .web-version {
-        background: white;
-    }
-
-    // No portraits in the testimonials: single column, name stacked above the
-    // institution, rows sized to their content instead of the 1fr/1fr split.
-    // Full nesting needed to outweigh the shared .testimonial-card rule.
-    .testimonials-section .testimonial-card .person-info {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-
-        .name {
-            align-self: start;
-            margin-bottom: 0.1rem;
-        }
-    }
-
-    @media (min-width: 969px) {
-        // ponytail: nowrap on the container keeps the three CTAs on one line; they
-        // overflow the grid column on purpose. Widen .hero-content columns instead
-        // if the overflow ever collides with the book image.
         .hero-text {
-            white-space: nowrap;
+            padding-top: 0;
         }
 
         .hero-text p {
-            white-space: normal;
+            margin-bottom: 20px;
         }
+
+        .hero-text a {
+            min-width: 220px;
+        }
+
+        .preview-container,
+        .course-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .features-grid {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .hero-image {
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: -160px; // reduced overlap for smaller hero image (max-width: 500px)
+        }
+
+        .hero-image img {
+            max-width: 500px;
+        }
+
+        .feature-card {
+            padding: 15px 10px;
+        }
+
+        .course-text h2 {
+            font-size: 2rem;
+        }
+
+        .testimonials-section {
+            .testimonials-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+    }
+
+    @media (max-width: 640px) {
+        .hero {
+            padding: 30px 20px 20px 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            margin-bottom: -80px; // reduced overlap for mobile hero image (max-width: 350px)
+        }
+
+        .hero-image img {
+            max-width: 350px;
+        }
+
+        .features {
+            padding: 100px 20px 30px 20px; // top padding for hero image overlap on mobile
+        }
+
+        .features-grid {
+            gap: 20px;
+        }
+
+        .feature-card {
+            padding: 10px 5px;
+        }
+
+        .feature-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+        }
+
+        .feature-card strong {
+            font-size: 1rem;
+        }
+
+        .preview-section {
+            padding: 50px 20px;
+        }
+
+        .course-features li {
+            font-size: 0.95rem;
+        }
+
+        .testimonials-section {
+            .testimonials-container {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-card {
+                padding: 1.2rem;
+                border-bottom-left-radius: 2rem;
+            }
+        }
+
     }
 }
