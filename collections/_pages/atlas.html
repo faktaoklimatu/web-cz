@@ -10,6 +10,7 @@ include_in_search: true
 preview_type: Publikace
 preview_image: /assets-local/atlas/atlas-klimaticke-zmeny-cover.png
 eshop_link: https://www.biobooks.cz/p/atlas-klimaticke-zmeny-vizualni-pruvodce-vedou-a-daty?utm_source=faktaoklimatu.cz
+atlas_as_webpage_link: https://atlasklimatu.cz/
 pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
 ---
 
@@ -78,28 +79,6 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
     </div>
 </section>
 
-<!-- Web Version Section -->
-<section class="about-section">
-    <div class="course-content">
-        <div class="course-text">
-            <h2>Atlas také jako web</h2>
-            <p>Celý Atlas klimatické změny najdete i jako samostatný web, rozdělený po jednotlivých tématech.</p>
-
-            <ul class="course-features">
-                <li><i class="fa-solid fa-magnifying-glass"></i>   Prohlížíte si jen to, co zrovna potřebujete.</li>
-                <li><i class="fa-solid fa-file-arrow-down"></i>   Stáhnete si jednotlivé grafiky ve formátu PNG nebo PDF a snadno je použijete ve vlastní prezentaci či výuce.</li>
-                <li><i class="fa-solid fa-square-poll-vertical"></i>   Přejdete ke zdrojům informací na jedno kliknutí.</li>
-            </ul>
-
-            <a href="https://atlas.faktaoklimatu.cz/" class="btn btn-primary ext-link">Přejít na web</a>
-        </div>
-
-        <div>
-            <img src="/assets-local/{{ page.slug }}/webpage-laptop-mockup.png" alt="Náhled webové verze Atlasu klimatické změny" class="img-fluid">
-        </div>
-    </div>
-</section>
-
 <!-- Testimonials Section -->
 <section class="testimonials-section" id="testimonials">
     <h2>Atlas doporučují</h2>
@@ -155,6 +134,28 @@ pdf_link: /assets-local/files/atlas-klimaticke-zmeny.pdf
     <button class="testimonials-toggle" type="button" aria-expanded="false">
         Zobraz více ohlasů
     </button>
+</section>
+
+<!-- Web Version Section -->
+<section class="about-section web-version">
+    <div class="course-content">
+        <div class="course-text">
+            <h2>Atlas také jako web</h2>
+            <p>Celý Atlas klimatické změny najdete i jako samostatný web, rozdělený po jednotlivých tématech.</p>
+
+            <ul class="course-features">
+                <li><i class="fa-solid fa-magnifying-glass"></i>   Prohlížíte si jen to, co zrovna potřebujete.</li>
+                <li><i class="fa-solid fa-file-arrow-down"></i>   Stáhnete si jednotlivé grafiky ve formátu PNG nebo PDF a snadno je použijete ve vlastní prezentaci či výuce.</li>
+                <li><i class="fa-solid fa-square-poll-vertical"></i>   Přejdete ke zdrojům informací na jedno kliknutí.</li>
+            </ul>
+
+            <a href="{{ page.atlas_as_webpage_link}}" class="btn btn-primary ext-link">Přejít na web</a>
+        </div>
+
+        <div>
+            <img src="/assets-local/{{ page.slug }}/webpage-laptop-mockup.png" alt="Náhled webové verze Atlasu klimatické změny" class="img-fluid">
+        </div>
+    </div>
 </section>
 
 <!-- About Section -->
