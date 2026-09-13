@@ -159,8 +159,7 @@
     }
 
     .logos-container {
-        max-width: pp.$fullscreen-max-width;
-        margin: 0 auto;
+        @include pp.container;
     }
 
     .logos-grid {
