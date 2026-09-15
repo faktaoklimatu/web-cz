@@ -145,22 +145,38 @@
   // Czech plural agreement: 1 = singular (handled separately), 2–4 = "few", else "many".
   function pluralCz(n, few, many) { return (n >= 2 && n <= 4) ? few : many; }
 
+  // "Výroba elektřiny a tepla" is also the largest single value on the real-
+  // activity facet, so it gets the same pinned-primary + selectable
+  // "Průmysl" group hierarchy as "Hlavní odvětví" (see ACTIVITY_PRIMARY_NAME
+  // / normalizeActName further down — referenced here, not redefined).
+  function isRealActivityPrimary(ra) { return normalizeActName(ra) === normalizeActName(ACTIVITY_PRIMARY_NAME); }
+  function getIndustrialRealActivities() {
+    return sortedRealActivities.filter(ra => !isRealActivityPrimary(ra));
+  }
+  function getSelectableIndustrialRealActivities() {
+    const available = getAvailableRealActivities();
+    return getIndustrialRealActivities().filter(ra => available.has(ra) || state.realActivities.has(ra));
+  }
+
   function refreshActivityToggle() {
     const btn = document.getElementById("ets-activity-toggle");
     const sel = state.activities;
     const industrial = getSelectableIndustrialIndices();
     const isWholeIndustryGroup = sel.size === industrial.length && industrial.every(i => sel.has(i));
-    if (sel.size === 0) btn.textContent = "Všechny aktivity";
+    if (sel.size === 0) btn.textContent = "Všechna odvětví";
     else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = ACTIVITIES[[...sel][0]].short;
-    else btn.textContent = sel.size + " " + pluralCz(sel.size, "aktivity", "aktivit");
+    else btn.textContent = sel.size + " odvětví";
     btn.title = btn.textContent;
   }
 
   function refreshRealActivityToggle() {
     const btn = document.getElementById("ets-real-activity-toggle");
     const sel = state.realActivities;
+    const industrial = getSelectableIndustrialRealActivities();
+    const isWholeIndustryGroup = sel.size === industrial.length && industrial.every(ra => sel.has(ra));
     if (sel.size === 0) btn.textContent = "Všechna odvětví";
+    else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " odvětví";
     btn.title = btn.textContent;
@@ -284,21 +300,21 @@
     });
   }
 
-  // Re-renders the real-activity ("Skutečné odvětví") checkbox list. Flat, no
-  // search box (short enough list) — see renderInstallOptions for the
-  // availability/hide-unless-selected rule.
+  // Re-renders the real-activity ("Skutečné odvětví") checkbox list. Same
+  // two-tier hierarchy as "Hlavní odvětví" (renderActivityOptions below):
+  // "Výroba elektřiny a tepla" pinned standalone at top, everything else
+  // (including the "Ostatní odvětví" catch-all, sorted last within the
+  // group by sortedRealActivities) nested under a selectable "Průmysl"
+  // header. No search box — the list is short enough not to need one. See
+  // renderInstallOptions for the availability/hide-unless-selected rule.
   function renderRealActivityOptions() {
     const wrap = document.getElementById("ets-real-activity-options");
     wrap.innerHTML = "";
     const available = getAvailableRealActivities();
-    const filtered = sortedRealActivities.filter(ra => available.has(ra) || state.realActivities.has(ra));
-    if (!filtered.length) {
-      wrap.innerHTML = '<div class="ms-empty">Žádné odvětví nenalezeno</div>';
-      return;
-    }
-    filtered.forEach(ra => {
+
+    function buildOption(ra, nested) {
       const label = document.createElement("label");
-      label.className = "ms-option";
+      label.className = nested ? "ms-option ms-option--nested" : "ms-option";
       const cb = document.createElement("input");
       cb.type = "checkbox";
       cb.dataset.ra = ra;
@@ -313,8 +329,41 @@
       name.title = ra;
       label.appendChild(cb);
       label.appendChild(name);
-      wrap.appendChild(label);
+      return label;
+    }
+
+    const visible = sortedRealActivities.filter(ra => available.has(ra) || state.realActivities.has(ra));
+    const primary = visible.filter(isRealActivityPrimary);
+    const others = visible.filter(ra => !isRealActivityPrimary(ra));
+
+    primary.forEach(ra => {
+      const opt = buildOption(ra, false);
+      opt.classList.add("ms-group-label"); // same top-level styling as "Průmysl" below it
+      wrap.appendChild(opt);
     });
+    if (others.length) {
+      const selectedCount = others.filter(ra => state.realActivities.has(ra)).length;
+
+      const groupLabel = document.createElement("label");
+      groupLabel.className = "ms-option ms-group-label";
+      const groupCb = document.createElement("input");
+      groupCb.type = "checkbox";
+      groupCb.checked = selectedCount === others.length;
+      groupCb.indeterminate = selectedCount > 0 && selectedCount < others.length;
+      groupCb.addEventListener("change", function () {
+        others.forEach(ra => { if (this.checked) state.realActivities.add(ra); else state.realActivities.delete(ra); });
+        onFilterChange();
+      });
+      const groupName = document.createElement("span");
+      groupName.className = "ms-option-name";
+      groupName.textContent = "Průmysl";
+      groupLabel.appendChild(groupCb);
+      groupLabel.appendChild(groupName);
+      wrap.appendChild(groupLabel);
+
+      others.forEach(ra => wrap.appendChild(buildOption(ra, true)));
+    }
+    if (!wrap.children.length) wrap.innerHTML = '<div class="ms-empty">Žádné odvětví nenalezeno</div>';
   }
 
   // Re-renders the activity checkbox list. See renderInstallOptions for the
@@ -407,7 +456,7 @@
 
       others.forEach(({ i, act }) => wrap.appendChild(buildOption(i, act, true)));
     }
-    if (!wrap.children.length) wrap.innerHTML = '<div class="ms-empty">Žádná aktivita nenalezena</div>';
+    if (!wrap.children.length) wrap.innerHTML = '<div class="ms-empty">Žádné odvětví nenalezeno</div>';
   }
 
   // Re-renders all three option panels, preserving whatever search text is
@@ -573,6 +622,57 @@
     fill.style.width = (toPct - fromPct) + "%";
   }
 
+  // ── Filter summary ───────────────────────────────────────────────────────
+  // One segment each for activity / owner / installation, derived from
+  // what's ACTUALLY in the filtered result set — not just what's explicitly
+  // checked in that facet's own dropdown. This way, narrowing via one facet
+  // (e.g. picking an owner with a single activity) still surfaces the
+  // implied activity name, even though "Hlavní odvětví" itself has nothing
+  // selected. Few enough distinct values → name them; otherwise just a
+  // count. Sits below the filter controls, describing the whole page's
+  // current selection rather than any one chart.
+  function updateFilterSummary(idxs) {
+    const el = document.getElementById("ets-filter-summary");
+    if (idxs.length === 0) {
+      el.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
+      return;
+    }
+    const distinctActs = [...new Set(idxs.map(i => INSTALLS[i].act))];
+    const distinctRa = [...new Set(idxs.map(i => INSTALLS[i].ra).filter(Boolean))];
+    const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].co))];
+    const actNames = distinctActs.map(a => ACTIVITIES[a].short);
+    // If the real-activity names are exactly the same set as the main-ETS-
+    // activity names (a common case — most installations' real sector
+    // matches their formal ETS activity), say "stejné" instead of just
+    // repeating the same names right after each other.
+    const normActNames = actNames.map(normalizeActName).sort();
+    const normRaNames = distinctRa.map(normalizeActName).sort();
+    const raSameAsActs = distinctRa.length <= 2 && normActNames.length === normRaNames.length &&
+      normActNames.every((v, i) => v === normRaNames[i]);
+    // When few enough distinct values are named outright, prefix with the
+    // facet's own label (grammatically agreeing with the count: singular
+    // for exactly one, plural for more) — otherwise a plain count, with the
+    // adjective in nominative plural for 2–4 and genitive plural for 5+
+    // (matches pluralCz's own "few"/"many" bucketing), e.g. "9 hlavních
+    // odvětví" / "10 skutečných odvětví".
+    el.textContent = [
+      distinctActs.length <= 2
+        ? "Hlavní odvětví: " + actNames.join(", ")
+        : distinctActs.length + " " + pluralCz(distinctActs.length, "hlavní", "hlavních") + " odvětví",
+      raSameAsActs
+        ? "Skutečné odvětví: stejné"
+        : distinctRa.length <= 2
+        ? (distinctRa.length === 1 ? "Skutečné odvětví: " : "Skutečná odvětví: ") + distinctRa.join(", ")
+        : distinctRa.length + " " + pluralCz(distinctRa.length, "skutečná", "skutečných") + " odvětví",
+      distinctCos.length <= 3
+        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + distinctCos.join(", ")
+        : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
+      idxs.length <= 3
+        ? "Instalace: " + idxs.map(i => INSTALLS[i].n).join(", ")
+        : idxs.length + " " + pluralCz(idxs.length, "instalace", "instalací"),
+    ].join(" · ");
+  }
+
   // ── KPIs ──────────────────────────────────────────────────────────────────
   function updateKPIs(idxs) {
     let e = 0, a = 0;
@@ -642,32 +742,6 @@
       document.getElementById("ets-timeline-title").textContent = inst.n;
     } else {
       document.getElementById("ets-timeline-title").textContent = "Emise a povolenky zdarma v čase";
-    }
-
-    // Subtitle: one segment each for activity / owner / installation, derived
-    // from what's ACTUALLY in the filtered result set — not just what's
-    // explicitly checked in that facet's own dropdown. This way, narrowing
-    // via one facet (e.g. picking an owner with a single activity) still
-    // surfaces the implied activity name, even though "Hlavní aktivita"
-    // itself has nothing selected. Few enough distinct values → name them;
-    // otherwise just a count.
-    const subEl = document.getElementById("ets-timeline-sub");
-    if (idxs.length === 0) {
-      subEl.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
-    } else {
-      const distinctActs = [...new Set(idxs.map(i => INSTALLS[i].act))];
-      const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].co))];
-      subEl.textContent = [
-        distinctActs.length <= 2
-          ? distinctActs.map(a => ACTIVITIES[a].short).join(", ")
-          : distinctActs.length + " " + pluralCz(distinctActs.length, "aktivity", "aktivit"),
-        distinctCos.length <= 2
-          ? distinctCos.join(", ")
-          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
-        idxs.length <= 3
-          ? idxs.map(i => INSTALLS[i].n).join(", ")
-          : idxs.length + " " + pluralCz(idxs.length, "instalace", "instalací"),
-      ].join(" · ");
     }
 
     const allYears = d3.range(YEAR_MIN, YEAR_MAX + 1);
@@ -979,6 +1053,7 @@
   // ── Update ────────────────────────────────────────────────────────────────
   function update() {
     const idxs = getFilteredInstallIndices();
+    updateFilterSummary(idxs);
     updateKPIs(idxs);
     renderTimeline(idxs);
     renderActivityChart(idxs);
