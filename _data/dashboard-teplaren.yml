@@ -1,4 +1,4 @@
-timestamp: '2026-03-04'
+timestamp: '2026-09-15'
 highlights:
 - status: problematic
   number: 4
@@ -25,7 +25,7 @@ items:
   lat: 50.08
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
-  notes: V lokalitě Mělník má do roku 2029 vzniknout první blok na zemní plyn s paroplynovým cyklem (280 MWe, s dotací z ModFondu), a do roku 2030 druhý větší blok s výkonem 650 MWe (oba mají provozní podporu, byť ten druhý jen na 520 MWe výkonu). Kromě toho má už do roku 2028 vzniknout nové zařízení na energetické využití odpadu (s dotací z ModFondu). Zdroje doplní záložní plynová kotelna.
+  notes: V lokalitě Mělník má do roku 2029 vzniknout první blok na zemní plyn s paroplynovým cyklem (280 MWe, s dotací z ModFondu), a do roku 2030 druhý větší blok s výkonem 650 MWe (oba mají provozní podporu, byť ten druhý jen na 520 MWe výkonu). Kromě toho má už do roku 2028 vzniknout nové zařízení na energetické využití odpadu a později také sada tepelných čerpadel na využití odpadního tepla (oboje s dotací z ModFondu). Zdroje doplní záložní plynová kotelna.
   owner: Skupina ČEZ, hlavní město Praha
   owner_web: https://www.cez.cz/nextcez/cs/o-cez/vyrobni-zdroje/uhelne-elektrarny-a-teplarny/uhelne-elektrarny-a-teplarny-cez-v-cr/elektrarna-melnik-58183
   num_households: 250464
@@ -45,6 +45,8 @@ items:
   fuels_main_future:
   - natgas
   - msw
+  fuels_secondary_future:
+  - wasteheat
   fuels_secondary_today:
   - natgas
   - msw
@@ -71,7 +73,7 @@ items:
     long_name: Výstavba ZEVO v elektrárenské lokalitě Mělník
     amount: 5362
     amount_original: 6095
-    paid_percent: 0
+    paid_percent: 4
   - call: 1/2023
     application_id: '7230100004'
     name: Tepelné napaječe
@@ -100,8 +102,36 @@ items:
     amount: 24
     amount_original: 24
     paid_percent: 0
-  mf_subsidies_total: 21948
-  mf_subsidies_per_household: 87629
+  - call: 1/2025
+    application_id: '7250100007'
+    name: Chemická úpravna vody v Teplárně Malešice
+    long_name: Nová CHÚV v Teplárně Malešice
+    amount: 92
+    amount_original: 92
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100008'
+    name: Tepelná čerpadla I. etapa
+    long_name: EGT-tepelné čerpadlo, etapa 1.
+    amount: 575
+    amount_original: 575
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100013'
+    name: Tepelná čerpadla II. etapa
+    long_name: EGT-tepelné čerpadlo, etapa 2.
+    amount: 112
+    amount_original: 112
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100042'
+    name: Rekonstrukce rozvodů
+    long_name: EGT-rekonstrukce horkovodu Mělník, ulice Havlíčkova
+    amount: 11
+    amount_original: 11
+    paid_percent: 0
+  mf_subsidies_total: 22738
+  mf_subsidies_per_household: 90784
   chp_subsidies:
   - power: 650
     since: '12/2030'
@@ -133,7 +163,7 @@ items:
   status_text: Odchod od uhlí do roku 2030
   notes: 'V současné době stále hlavně uhelná elektrárna Třebovice chystá přechod na zemní plyn. Nyní je v procesu přívod vysokotlakého plynového potrubí do hlavního areálu.
 
-    Elektrárna také získala provozní podporu na plynové kogenerační zdroje o celkovém výkonu 174 MWe. Kromě zemního plynu se zvažují i další zdroje, ale zatím pro to nejsou konkrétní plány. Menší Teplárna Přívoz přešla na zemní plyn v roce 2022. Současně také odebírá koksárenský plyn z nedaleké koksovny Svoboda (společnosti OKK Koksovny).'
+    Soustava také získala provozní podporu na plynové kogenerační zdroje o celkovém výkonu 179 MWe. Kromě zemního plynu se zvažují i další zdroje, ale zatím pro to nejsou konkrétní plány. Menší Teplárna Přívoz přešla na zemní plyn v roce 2022. Současně také odebírá koksárenský plyn z nedaleké koksovny Svoboda (společnosti OKK Koksovny).'
   owner: Veolia
   owner_web: https://www.vecr.cz/media/aktuality/jedna-z-dominant-ostravy-meni-svou-podobu-elektrarna-trebovice-boura-chladici-vez/
   num_households: 96225
@@ -187,8 +217,15 @@ items:
     amount: 98
     amount_original: 98
     paid_percent: 0
-  mf_subsidies_total: 7684
-  mf_subsidies_per_household: 79855
+  - call: 1/2025
+    application_id: '7250100046'
+    name: Modernizace SZT
+    long_name: Modernizace SZT Ostrava – vybraná opatření
+    amount: 172
+    amount_original: 172
+    paid_percent: 0
+  mf_subsidies_total: 7857
+  mf_subsidies_per_household: 81652
   chp_subsidies:
   - power: 100
     since: '12/2029'
@@ -214,7 +251,11 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: rejected
-  chp_subsidies_total_accepted: 174
+  - power: 5
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 179
   ippc_permits:
   - name: Elektrárna Třebovice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek8q5u
@@ -270,7 +311,7 @@ items:
     long_name: Modernizace zdroje „Brno – sever“ pro soustavu zásobování tepelnou energií města Brna
     amount: 1661
     amount_original: 1661
-    paid_percent: 66
+    paid_percent: 85
   - call: 2/2021
     application_id: '7210200001'
     name: ZEVO
@@ -278,8 +319,85 @@ items:
     amount: 2848
     amount_original: 2848
     paid_percent: 0
-  mf_subsidies_total: 15107
-  mf_subsidies_per_household: 160704
+  - call: 1/2025
+    application_id: '7250100016'
+    name: 'Rekostrukce rozvodů: Špitálka'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Špitálka, Štěpánská
+    amount: 29
+    amount_original: 29
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100017'
+    name: 'Rekostrukce rozvodů: Přízova'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Přízová
+    amount: 9
+    amount_original: 9
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100018'
+    name: 'Rekostrukce rozvodů: Nádražní'
+    long_name: Rekonstrukce SCZT pára x HV – přepojení hlavního vlakového nádraží a pošty, ul. Nádražní
+    amount: 6
+    amount_original: 6
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100021'
+    name: 'Rekostrukce rozvodů: Bělohorská'
+    long_name: Rekonstrukce horkovodu Bělohorská od šachty B60 po šachtu B180
+    amount: 43
+    amount_original: 43
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100022'
+    name: 'Rekostrukce rozvodů: Benešova'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Benešova II. Etapa
+    amount: 9
+    amount_original: 9
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100024'
+    name: 'Rekostrukce rozvodů: Šedova'
+    long_name: Obytný soubor Šedova, I. etapa SO02 Posílení stávajícího HV rozvodu
+    amount: 18
+    amount_original: 18
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100027'
+    name: 'Rekostrukce rozvodů: Jezuitská'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Jezuitská
+    amount: 9
+    amount_original: 9
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100029'
+    name: 'Rekostrukce rozvodů: Dvořákova'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Dvořákova, Beethovenova, Za divadlem
+    amount: 15
+    amount_original: 15
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100031'
+    name: 'Rekostrukce rozvodů: Stavební'
+    long_name: Rekonstrukce SCZT pára x HV – oblast provozu Špitálka - ul. Stavební
+    amount: 16
+    amount_original: 16
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100033'
+    name: 'Rekostrukce rozvodů: Cejl'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Cejl (Radlas - Koliště)
+    amount: 29
+    amount_original: 29
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100036'
+    name: 'Rekostrukce rozvodů: Česká'
+    long_name: Rekonstrukce SCZT pára x HV - oblast ul. Česká + převedení Moravského nám., Rašínova, Jakubské nám,
+    amount: 7
+    amount_original: 7
+    paid_percent: 0
+  mf_subsidies_total: 15296
+  mf_subsidies_per_household: 162715
   ippc_permits:
   - name: Teplárny Brno provozovna Červený Mlýn
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehtgxe
@@ -319,6 +437,12 @@ items:
   - wasteheat
   share_households: 41
   share_households_dhs_in_czechia: 0.04195905564
+  chp_subsidies:
+  - power: 5
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 5
   ippc_permits:
   - name: Teplárna Veleslavín
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejf5ir
@@ -449,8 +573,22 @@ items:
     amount: 1264
     amount_original: 1264
     paid_percent: 0
-  mf_subsidies_total: 3195
-  mf_subsidies_per_household: 64004
+  - call: 1/2025
+    application_id: '7250100026'
+    name: Rozvody I. etapa
+    long_name: Modernizace rozvodů SZTE – I. etapa
+    amount: 20
+    amount_original: 20
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100034'
+    name: Rozvody II. etapa
+    long_name: Modernizace rozvodů SZTE – II. etapa
+    amount: 64
+    amount_original: 64
+    paid_percent: 0
+  mf_subsidies_total: 3278
+  mf_subsidies_per_household: 65666
   chp_subsidies:
   - power: 200
     since: '06/2029'
@@ -478,7 +616,7 @@ items:
   lat: 49.85
   status: in-progress
   status_text: Odchod od uhlí do roku 2028
-  notes: Bývalá teplárna dolu ČSM přestavena na spalování zemního plynu. Uhelná teplárna Karviná plánuje obměnu uhelných kotlů za multipalivový kotel (TAP a biomasa) a plynové kotle.
+  notes: Bývalá teplárna dolu ČSM přestavena na spalování zemního plynu. Uhelná teplárna Karviná plánuje obměnu uhelných kotlů za multipalivový kotel (TAP a biomasa) a plynové kotle. Soustavu doplní sada plynových kogeneračních jednotek v různých lokalitách, všechny zmíněné zdroje jsou podpořeny z ModFondu.
   owner: Veolia
   owner_web: https://www.veolia.cz/cs/media/novinky/veolia-energie-skonci-v-karvine-s-uhlim-drive-urychluje-modernizaci-sve-teplarny
   num_households: 49109
@@ -523,8 +661,15 @@ items:
     amount: 67
     amount_original: 67
     paid_percent: 0
-  mf_subsidies_total: 5272
-  mf_subsidies_per_household: 107353
+  - call: 1/2025
+    application_id: '7250100032'
+    name: Modernizace SZT
+    long_name: Modernizace SZT Havířov a Karviná - vybraná opatření
+    amount: 79
+    amount_original: 79
+    paid_percent: 0
+  mf_subsidies_total: 5352
+  mf_subsidies_per_household: 108982
   chp_subsidies:
   - power: 15
     since: '12/2029'
@@ -538,7 +683,19 @@ items:
     since: '11/2030'
     fuel: Zemní plyn
     status: accepted
-  chp_subsidies_total_accepted: 39
+  - power: 4
+    since: '06/2030'
+    fuel: Zemní plyn
+    status: accepted
+  - power: 4
+    since: '06/2030'
+    fuel: Zemní plyn
+    status: accepted
+  - power: 2
+    since: '02/2028'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 50
   ippc_permits:
   - name: Teplárna Karviná
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejrpk4
@@ -552,7 +709,7 @@ items:
   lat: 50.52
   status: in-progress
   status_text: Odchod od uhlí do roku 2030
-  notes: Stále primárně uhelná teplárna, která využívá spalování biomasy v jednom přestavěném kotli. Společnost má v plánu do roku 2027 výstavbu velkého zařízení pro energetické využití komunálního odpadu a dvou paroplynových bloků (oba projekty podpořeny z ModFondu).
+  notes: Stále primárně uhelná teplárna, která využívá spalování biomasy v jednom přestavěném kotli. Společnost má v plánu do roku 2027 výstavbu velkého zařízení pro energetické využití komunálního odpadu a dvou paroplynových bloků (oba projekty podpořeny z ModFondu, ZEVO je ve výstavbě).
   owner: EPH
   owner_web: https://teplarnakomorany.cz/
   num_households: 35873
@@ -582,7 +739,7 @@ items:
     long_name: Zařízení pro energetické využití odpadů, EVO – Komořany, Most
     amount: 2575
     amount_original: 2575
-    paid_percent: 0
+    paid_percent: 32
   - call: 1/2022
     application_id: '7220100009'
     name: Paroplynový zdroj
@@ -664,11 +821,25 @@ items:
     application_id: '7220100015'
     name: ZEVO
     long_name: Strategie pro zelené město – ZEVO Vráto
-    amount: 4686
+    amount: 4560
     amount_original: 4686
     paid_percent: 0
-  mf_subsidies_total: 5015
-  mf_subsidies_per_household: 150195
+  - call: 1/2025
+    application_id: '7250100023'
+    name: Propoj Jírovcova - Nové Vráto
+    long_name: SZT Horkovodní propoj Jírovcova - Nové Vráto
+    amount: 74
+    amount_original: 74
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100040'
+    name: Horkovody pro Rožnov
+    long_name: SZT - systematický přechod z páry na horkou vodu - část Rožnov
+    amount: 9
+    amount_original: 9
+    paid_percent: 0
+  mf_subsidies_total: 4972
+  mf_subsidies_per_household: 148907
   chp_subsidies:
   - power: 10
     since: '12/2030'
@@ -688,7 +859,7 @@ items:
   lat: 50.65
   status: in-progress
   status_text: Odchod od uhlí do roku 2029
-  notes: V Trmicích je ve výstavbě nový kotel na biomasu (projekt podpořen z ModFondu) a dva bloky na zemní plyn (s paroplynovým cyklem). Ve Střekově původní provozovatel soustavy nebyl schopen odchodu od uhlí. Po dohodě s městem zásobování teplem převzal ČEZ, který v roce 2025 zprovoznil novou plynovou kotelnu.
+  notes: V Trmicích je ve výstavbě nový kotel na biomasu (projekt podpořen z ModFondu) a blok na zemní plyn s paroplynovým cyklem (podpořený provozní podporou). Ve Střekově původní provozovatel soustavy nebyl schopen odchodu od uhlí. Po dohodě s městem zásobování teplem převzal ČEZ, který v roce 2025 zprovoznil novou plynovou kotelnu.
   owner: Skupina ČEZ
   owner_web: https://www.cez.cz/nextcez/cs/o-cez/vyrobni-zdroje/uhelne-elektrarny-a-teplarny/uhelne-elektrarny-a-teplarny-cez-v-cr/teplarna-trmice-58160
   num_households: 31304
@@ -726,8 +897,22 @@ items:
     amount: 4576
     amount_original: 4576
     paid_percent: 0
-  mf_subsidies_total: 5326
-  mf_subsidies_per_household: 170138
+  - call: 1/2025
+    application_id: '7250100015'
+    name: Rekonstrukce rozvodů Skřivánek
+    long_name: ST140766_UL Konverze rozvodů Skřivánek
+    amount: 31
+    amount_original: 31
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100041'
+    name: Rekonstrukce rozvodů Vnější Město
+    long_name: UL_Konverze rozvodů Vnější Město
+    amount: 72
+    amount_original: 72
+    paid_percent: 0
+  mf_subsidies_total: 5429
+  mf_subsidies_per_household: 173428
   chp_subsidies:
   - power: 1
     since: '04/2027'
@@ -737,7 +922,11 @@ items:
     since: '10/2026'
     fuel: Zemní plyn
     status: rejected
-  chp_subsidies_total_accepted: 1
+  - power: 183
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 184
   ippc_permits:
   - name: Teplárna Trmice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek4pev
@@ -790,8 +979,15 @@ items:
     amount: 62
     amount_original: 78
     paid_percent: 100
-  mf_subsidies_total: 2568
-  mf_subsidies_per_household: 93375
+  - call: 1/2025
+    application_id: '7250100045'
+    name: Modernizace SZT
+    long_name: Modernizace SZT Olomouc - vybraná opatření
+    amount: 8
+    amount_original: 8
+    paid_percent: 0
+  mf_subsidies_total: 2576
+  mf_subsidies_per_household: 93666
   chp_subsidies:
   - power: 15
     since: '12/2029'
@@ -839,8 +1035,22 @@ items:
     amount: 723
     amount_original: 723
     paid_percent: 0
-  mf_subsidies_total: 2502
-  mf_subsidies_per_household: 91658
+  - call: 1/2025
+    application_id: '7250100014'
+    name: Tepelný napaječ pro Kadaň
+    long_name: CV_HV propoj EPR – Kadaň
+    amount: 149
+    amount_original: 149
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100020'
+    name: Rekonstrukce části rozvodů Klášterec nad Ohří
+    long_name: CV_REKO 4T VS4 Klášterec nad Ohří
+    amount: 5
+    amount_original: 5
+    paid_percent: 0
+  mf_subsidies_total: 2656
+  mf_subsidies_per_household: 97300
   chp_subsidies:
   - power: 50
     since: '03/2028'
@@ -857,8 +1067,8 @@ items:
   lon: 14.13
   lat: 50.15
   status: problematic
-  status_text: Nejasný odchod od uhlí
-  notes: Naprostá většina tepla v současnosti pochází ze spalování hnědého uhlí. Pro lokalitu není přidělena žádná dotační podpora (jen jedna nepodpořená žádost na plynovou kogeneraci o výkonu 39 MWe). V únoru 2026 vlastník oznámil, že na konci března 2026 ukončí výrobu tepla. Energetický regulační úřad teď musí určit budoucího dodavatele tepla na Kladně (tzv. nad rámec licence). Tento dodavatel bude nejspíše dočasně provozovat stávající uhelný zdroj. Město v mezičase připravuje výstavbu vlastního plynového zdroje.
+  status_text: Připravují se plány odchodu od uhlí
+  notes: Naprostá většina tepla v současnosti pochází ze spalování hnědého uhlí. V únoru 2026 vlastník oznámil, že na konci března 2026 ukončí výrobu tepla. Město se nakonec s teplárnou dohodlo na pokračování dodávek tepla z uhelné elektrárny až do roku 2028. Město v mezičase připravuje výstavbu vlastní plynové kotelny (doplněné elektrokotli a kogenerační jednotkou). Sev.en ovšem v dubnu dostal přidělenou provozní dotaci na nový plynový kogenerační zdroj o výkonu 39 MWe, tedy přesná vlastnická struktura budoucího zásobování Kladna teplem zatím není zcela jasná.
   owner: Sev.en
   owner_web: https://www.7.cz/cz/skupina/teplarna-kladno.html
   num_households: 19898
@@ -875,7 +1085,7 @@ items:
   - 1.382
   emissions_latest: 1.382
   fuels_main_future:
-  - unknown
+  - natgas
   fuels_secondary_today:
   - biomass
   - srf
@@ -886,7 +1096,11 @@ items:
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
-  chp_subsidies_total_accepted: 0
+  - power: 39
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 39
   ippc_permits:
   - name: Elektrárna Kladno včetně podpůrných objektů a provozů
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpar98ehunq
@@ -935,7 +1149,7 @@ items:
   lat: 49.23
   status: problematic
   status_text: Nejasný odchod od uhlí
-  notes: Teplárna provozuje dva uhelné kotle, ve kterých se v rostoucím objemu spoluspaluje biomasa (do 20 % paliva) a také kotle na zemní plyn. V roce 2021 získala dotaci z programu HEAT na výstavbu nového plynového kotle, který by nahradil jeden z uhelných kotlů, tuto stavbu ovšem zatím nezrealizovala. Kromě toho teplárna zvažuje spalování TAP. Datum odchodu od uhlí není zřejmý.
+  notes: Teplárna provozuje dva uhelné kotle, ve kterých se v rostoucím objemu spoluspaluje biomasa (do 20 % paliva) a také kotle na zemní plyn. V roce 2021 získala dotaci z programu HEAT na výstavbu nového plynového kotle, který by nahradil jeden z uhelných kotlů, tuto stavbu ovšem zatím nezrealizovala. Na plynové zdroje získala v roce 2026 také provozní podporu, měly by být hotové do roku 2030. Kromě toho teplárna zvažuje spalování TAP. O datu úplného odchodu od uhlí nejsou věrohodné veřejné informace.
   owner: Sev.en
   owner_web: https://www.7.cz/cz/skupina/teplarna-zlin.html
   num_households: 18473
@@ -967,14 +1181,25 @@ items:
     amount: 31
     amount_original: 31
     paid_percent: 0
-  mf_subsidies_total: 31
-  mf_subsidies_per_household: 1678
+  - call: 1/2025
+    application_id: '7250100050'
+    name: Modernizace SZTE v Teplárně Zlín
+    long_name: Modernizace SZTE v Teplárně Zlín
+    amount: 15
+    amount_original: 15
+    paid_percent: 0
+  mf_subsidies_total: 46
+  mf_subsidies_per_household: 2490
   chp_subsidies:
   - power: 51
     since: '12/2030'
     fuel: Zemní plyn
     status: rejected
-  chp_subsidies_total_accepted: 0
+  - power: 51
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 51
   ippc_permits:
   - name: fluidní kotel K31, fluidní kotel K32, plynové kotle K21, K22 a skládku stabilizátu
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ehxxm6
@@ -986,7 +1211,7 @@ items:
   lat: 49.69
   status: done
   status_text: Bez uhlí
-  notes: V roce 2024 byl nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn.
+  notes: V roce 2024 byl nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn. Soustavu doplní v roce 2030 kogerenační jednotka (podpořená provozní podporou).
   owner: Veolia
   owner_web: https://www.vecr.cz/media/tiskove-zpravy/frydek-mistek-je-prvnim-z-velkych-mest-v-kraji-dekarbonizaci-provozu-mistni-teplarny-se-zavrsil-od/
   num_households: 17846
@@ -1017,8 +1242,21 @@ items:
     amount: 375
     amount_original: 375
     paid_percent: 0
-  mf_subsidies_total: 375
-  mf_subsidies_per_household: 21013
+  - call: 1/2025
+    application_id: '7250100025'
+    name: Modernizace SZT
+    long_name: Modernizace SZT Frýdek – Místek - vybraná opatření
+    amount: 45
+    amount_original: 45
+    paid_percent: 0
+  mf_subsidies_total: 420
+  mf_subsidies_per_household: 23535
+  chp_subsidies:
+  - power: 6
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 6
   ippc_permits:
   - name: Teplárna Frýdek-Místek
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejawge
@@ -1029,8 +1267,8 @@ items:
   lon: 12.7
   lat: 50.26
   status: problematic
-  status_text: Nejasný odchod od uhlí
-  notes: Společnost zatím představila jen nejasné plány na transformaci. V současnosti nemá žádnou dotační podporu.
+  status_text: Připravují se plány odchodu od uhlí
+  notes: Společnost postupně připravuje transformační plány a diskutuje je s dotčenými obcemi. V roce 2026 získala dotaci z ModFondu na výstavbu biomasového zdroje. Dále pro zásobování teplem plánuje využít záložní plynovou kotelnu a elektrokotel a také modernizovat rozvody tepla. Stále ovšem tyto plány nejsou prezentovány jako finální a o přesném směřování této soustavy tak rozhodnou další měsíce.
   owner: SUAS
   owner_web: https://suas-teplarenska.cz/
   num_households: 15388
@@ -1048,9 +1286,21 @@ items:
   - 0.808
   emissions_latest: 0.808
   fuels_main_future:
-  - unknown
+  - biomass
+  fuels_secondary_future:
+  - natgas
   share_households: 54
   share_households_dhs_in_czechia: 0.01027917705
+  mf_subsidies:
+  - call: 1/2025
+    application_id: '7250100038'
+    name: Biomasa
+    long_name: Biomasový zdroj Vřesová
+    amount: 250
+    amount_original: 250
+    paid_percent: 0
+  mf_subsidies_total: 250
+  mf_subsidies_per_household: 16246
   ippc_permits:
   - name: Zpracovatelská část Vřesová
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ek9953
@@ -1088,16 +1338,16 @@ items:
     application_id: '7210100018'
     name: Plynový zdroj
     long_name: Plynový zdroj pro KVET v lokalitě Dětmarovice
-    amount: 412
+    amount: 368
     amount_original: 412
-    paid_percent: 0
+    paid_percent: 91
   - call: 1/2022
     application_id: '7220100018'
     name: Biomasa
     long_name: DE_BM kotel 8 MWt, Dětmarovice
     amount: 111
     amount_original: 111
-    paid_percent: 0
+    paid_percent: 66
   - call: 1/2022
     application_id: '7220100031'
     name: Plynový zdroj
@@ -1105,8 +1355,8 @@ items:
     amount: 98
     amount_original: 98
     paid_percent: 0
-  mf_subsidies_total: 622
-  mf_subsidies_per_household: 43439
+  mf_subsidies_total: 577
+  mf_subsidies_per_household: 40296
   chp_subsidies:
   - power: 24
     since: '03/2027'
@@ -1124,7 +1374,7 @@ items:
   lat: 50.42
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
-  notes: Kotle na uhlí budou v teplárně nahrazeny za kotle na biomasu (projekt podpořen z ModFondu).
+  notes: Kotle na uhlí budou v teplárně nahrazeny za kotle na biomasu (projekt podpořen z ModFondu, ve výstavbě).
   owner: Škoda Auto
   owner_web: https://www.sko-energo.cz/technologie/teplo-tepla-voda-a-elektrina/
   num_households: 13939
@@ -1157,9 +1407,16 @@ items:
     long_name: Modernizace technologie výroby tepla společnosti ŠKO-ENERGO, s.r.o.
     amount: 2180
     amount_original: 2180
-    paid_percent: 10
-  mf_subsidies_total: 2180
-  mf_subsidies_per_household: 156396
+    paid_percent: 38
+  - call: 1/2025
+    application_id: '7250100030'
+    name: Rozvody závod Česana
+    long_name: ŠKO-ENERGO - Výstavba rozvodů s napojením na stávající SZTE (Česana)
+    amount: 9
+    amount_original: 9
+    paid_percent: 0
+  mf_subsidies_total: 2189
+  mf_subsidies_per_household: 157041
   ippc_permits:
   - name: Teplárna ŠKO-ENERGO
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejwpre
@@ -1201,8 +1458,15 @@ items:
     amount: 368
     amount_original: 374
     paid_percent: 100
-  mf_subsidies_total: 368
-  mf_subsidies_per_household: 26950
+  - call: 1/2025
+    application_id: '7250100035'
+    name: Modernizace SZT
+    long_name: Modernizace SZT Přerov – vybraná opatření
+    amount: 41
+    amount_original: 41
+    paid_percent: 0
+  mf_subsidies_total: 409
+  mf_subsidies_per_household: 29952
   ippc_permits:
   - name: Teplárna Přerov - zařízení pro kogeneraci tepla a elektrické energie
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejas5b
@@ -1241,6 +1505,16 @@ items:
   - hho
   share_households: 28
   share_households_dhs_in_czechia: 0.009065421872
+  mf_subsidies:
+  - call: 1/2025
+    application_id: '7250100057'
+    name: Tepelné napaječe
+    long_name: Připojení lokality Františkov na SZTE města Liberec
+    amount: 17
+    amount_original: 17
+    paid_percent: 0
+  mf_subsidies_total: 17
+  mf_subsidies_per_household: 1253
   ippc_permits:
   - name: Teplárna Liberec
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej8utp
@@ -1253,8 +1527,8 @@ items:
   lon: 12.61
   lat: 50.15
   status: problematic
-  status_text: Nejasný odchod od uhlí
-  notes: Společnost zatím pro Tisovou nepředstavila jasný plán na transformaci. Na obměnu hlavních zdrojů nemá v současnosti žádné dotace.
+  status_text: Připravují se plány odchodu od uhlí
+  notes: Společnost zatím pro Tisovou veřejně nepředstavila jasný plán na transformaci. Dle veřejných informací staví novou záložní plynovou kotelnu, dále pak v roce 2026 získala provozní podporu na nový kogenerační plynový zdroj o výkonu 10 MWe. Tyto plynové zdroje by mohl doplnit kotel na biomasu nebo TAP.
   owner: SUAS
   owner_web: https://www.etias.cz/
   num_households: 11712
@@ -1272,8 +1546,16 @@ items:
   emissions_latest: 0.492
   fuels_main_future:
   - unknown
+  fuels_secondary_future:
+  - natgas
   share_households: 75
   share_households_dhs_in_czechia: 0.007823610711
+  chp_subsidies:
+  - power: 10
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 10
   ippc_permits:
   - name: Elektrárna Tisová - výroba a dodávka elektrické energie a tepla
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejkz5y
@@ -1315,8 +1597,15 @@ items:
     amount: 1156
     amount_original: 1156
     paid_percent: 0
-  mf_subsidies_total: 1156
-  mf_subsidies_per_household: 103187
+  - call: 1/2025
+    application_id: '7250100044'
+    name: Rekonstrukce části rozvodů Trutnov
+    long_name: PO_REKO rozvodů za VS, Trutnov
+    amount: 17
+    amount_original: 17
+    paid_percent: 0
+  mf_subsidies_total: 1172
+  mf_subsidies_per_household: 104615
   ippc_permits:
   - name: Elektrárna Poříčí
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejknv2
@@ -1328,7 +1617,7 @@ items:
   lat: 49.35
   status: done
   status_text: Bez uhlí
-  notes: Inovativní teplárna využívající také FVE, elektrokotel s akumulací či bateriové úložiště. Od uhlí odešla už v roce 2022, cca 85 % palivového mixu nyní tvoří biomasa. Dále má teplárna plynové kogenerační jednotky a špičkovací plynové kotle. Ve výstavbě je také zařízení na energetické využití odpadu pro Táborsko (mělo by být hotové do roku 2028).
+  notes: Inovativní teplárna využívající také FVE, elektrokotel s akumulací či bateriové úložiště. Od uhlí odešla už v roce 2022 (díky dotaci z ModFondu), cca 85 % palivového mixu nyní tvoří biomasa. Dále má teplárna plynové kogenerační jednotky (také podpořeno z MondFondu) a špičkovací plynové kotle. Ve výstavbě je také zařízení na energetické využití odpadu pro Táborsko (mělo by být hotové do roku 2028).
   owner: C-energy
   owner_web: https://www.c-energy.cz/
   num_households: 10970
@@ -1374,7 +1663,7 @@ items:
     long_name: EVO Planá - Energie z odpadu Táborska
     amount: 1379
     amount_original: 1379
-    paid_percent: 5
+    paid_percent: 22
   mf_subsidies_total: 2075
   mf_subsidies_per_household: 189152
   ippc_permits:
@@ -1422,7 +1711,7 @@ items:
   lat: 49.68
   status: in-progress
   status_text: Odchod od uhlí do roku 2027
-  notes: V rámci dekarbonizace má být stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu). Následovat má výstavba horkovodu, který povede také do Českého Těšína.
+  notes: V rámci dekarbonizace má být stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu a provozní podporou). Následovat má výstavba horkovodu, který povede také do Českého Těšína.
   owner: Moravia Steel
   owner_web: https://www.etas.trz.cz/
   num_households: 8937
@@ -1463,6 +1752,16 @@ items:
     paid_percent: 0
   mf_subsidies_total: 3133
   mf_subsidies_per_household: 350565
+  chp_subsidies:
+  - power: 62
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  - power: 9
+    since: '07/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 71
   ippc_permits:
   - name: Teplárna E2
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejuvmx
@@ -1521,7 +1820,7 @@ items:
   lat: 49.26
   status: done
   status_text: Téměř bez uhlí
-  notes: Naprostou většinu mixu (98 %) tvoří biomasa, hnědé uhlí a mazut slouží jen jako záložní zdroje. Kromě toho je v plánu rekonstrukce rozvodů (z parovodů na teplovody).
+  notes: Naprostou většinu mixu (98 %) tvoří biomasa, hnědé uhlí a mazut slouží jen jako záložní zdroje. Kromě toho je v plánu rekonstrukce rozvodů (z parovodů na teplovody), podpořená z ModFondu.
   owner: město Strakonice
   owner_web: http://www.tst.cz/
   num_households: 7521
@@ -1547,6 +1846,23 @@ items:
   - hho
   share_households: 75
   share_households_dhs_in_czechia: 0.005024024604
+  mf_subsidies:
+  - call: 1/2025
+    application_id: '7250100010'
+    name: Rekostrukce části rozvodů
+    long_name: Eliminace parovodu S1-V1
+    amount: 51
+    amount_original: 51
+    paid_percent: 0
+  - call: 1/2025
+    application_id: '7250100012'
+    name: Rekostrukce části rozvodů
+    long_name: Modernizace topných rozvodů včetně VS a umístění DPS na sídlišti Mír
+    amount: 25
+    amount_original: 25
+    paid_percent: 0
+  mf_subsidies_total: 76
+  mf_subsidies_per_household: 10105
   ippc_permits:
   - name: Teplárna Strakonice – výroba tepelné energie, rozvod tepelné energie a výroba elektřiny
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejpm1b
@@ -1558,7 +1874,7 @@ items:
   lat: 49.3
   status: in-progress
   status_text: Nejasné dokončení odchodu od uhlí
-  notes: V současnosti využívá jeden kotel na hnědé uhlí a jeden kotel na biomasu. Tyto zdroje plánuje do roku 2026 doplnit kogenerační jednotkou (s provozní podporou i dotací z ModFond). Do roku 2029 mělo uhelný kotel nahradit nové ZEVO (podpořené z ModFond), proti výstavbě se ale v roce 2025 postavili občané v závazném místním referendu a tak je dokončení odchodu od uhlí momentálně nejasné (včetně jeho financování).
+  notes: V současnosti využívá jeden kotel na hnědé uhlí a jeden kotel na biomasu. Tyto zdroje plánuje do roku 2028 doplnit dvě kogenerační jednotky (s provozní podporou i dotací z ModFond). Do roku 2029 mělo uhelný kotel nahradit nové ZEVO (podpořené z ModFond), proti výstavbě se ale v roce 2025 postavili občané v závazném místním referendu a tak je dokončení odchodu od uhlí momentálně nejasné (včetně jeho financování).
   owner: město Písek
   owner_web: http://tpi.cz/
   num_households: 7502
@@ -1589,7 +1905,7 @@ items:
     long_name: Instalace kogeneračního zdroje na zemní plyn v rámci SZT Písek
     amount: 90
     amount_original: 133
-    paid_percent: 10
+    paid_percent: 90
   mf_subsidies_total: 1403
   mf_subsidies_per_household: 187017
   chp_subsidies:
@@ -1597,7 +1913,11 @@ items:
     since: '05/2026'
     fuel: Zemní plyn
     status: accepted
-  chp_subsidies_total_accepted: 5
+  - power: 5
+    since: '12/2028'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 10
   ippc_permits:
   - name: Zařízení na výrobu a rozvod tepelné a elektrické energie
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejucyi
@@ -1609,7 +1929,7 @@ items:
   lat: 48.84
   status: done
   status_text: Téměř bez uhlí
-  notes: Elektrárna Hodonín již nyní vyrábí elektřinu a teplo převážně z biomasy. Ačkoliv plán ČEZu "Biomasa MAX" dříve avizoval přechod na 100% biomasu, nyní konkrétní plán na úplný odklon od uhlí chybí.
+  notes: Elektrárna Hodonín již nyní vyrábí elektřinu a teplo převážně z biomasy. Ačkoliv plán ČEZu "Biomasa MAX" dříve avizoval přechod na 100% biomasu, nyní konkrétní plán na úplný odklon od uhlí chybí. Do roku 2030 se zde plánuje postavit malý plynový kogenerační zdroj.
   owner: Skupina ČEZ
   owner_web: https://www.cez.cz/nextcez/cs/o-cez/vyrobni-zdroje/uhelne-elektrarny-a-teplarny/uhelne-elektrarny-a-teplarny-cez-v-cr/elektrarna-hodonin-58184
   num_households: 6832
@@ -1629,6 +1949,12 @@ items:
   - lignite
   share_households: 63
   share_households_dhs_in_czechia: 0.004563772915
+  chp_subsidies:
+  - power: 3
+    since: '12/2030'
+    fuel: Zemní plyn
+    status: accepted
+  chp_subsidies_total_accepted: 3
   ippc_permits:
   - name: Elektrárna Hodonín - fluidní kotle FK 1 a FK 2
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ej85of
@@ -1639,8 +1965,8 @@ items:
   lon: 17.53
   lat: 49.21
   status: in-progress
-  status_text: Nejasné dokončení odchodu od uhlí
-  notes: Teplárna má stále v provozu jeden kotel na uhlí. Druhý uhelný kotel byl přestavěn na 100% spalování biomasy (podpořeno z ModFondu a také provozní podporou). Teplo kromě těchto zdrojů vyrábí také ze zemního plynu, kde navíc využívá průmyslové odpadní teplo. Nejsou jasné plány na úplný odchod od uhlí.
+  status_text: Odchod od uhlí do roku 2029
+  notes: Teplárna má stále v provozu jeden kotel na uhlí. Druhý uhelný kotel byl přestavěn na 100% spalování biomasy (podpořeno z ModFondu). Teplárna kromě toho také využívá zemní plyn a průmyslové odpadní teplo. V roce 2026 získalo dotaci z ModFondu na přestavbu druhého kotle z uhlí na biomasu a také provozní podporu od roku 2029 na turbogenerátory (na výrobu elektřiny z biomasy a zemního plynu), do té doby by tedy měl být hotov odchod od uhlí. Kromě toho teplárna získala provozní podporu od roku 2030 na kogenerační jednotky o výkonu téměř 24 MWe.
   owner: Lama Energy Group
   owner_web: https://www.tot.cz/
   num_households: 6799
@@ -1658,10 +1984,9 @@ items:
   - 0.182
   emissions_latest: 0.182
   fuels_main_future:
-  - unknown
   - biomass
-  fuels_secondary_future:
   - natgas
+  fuels_secondary_future:
   - wasteheat
   fuels_secondary_today:
   - natgas
@@ -1677,14 +2002,33 @@ items:
     amount: 101
     amount_original: 124
     paid_percent: 100
-  mf_subsidies_total: 101
-  mf_subsidies_per_household: 14855
+  - call: 1/2025
+    application_id: '7250100056'
+    name: Biomasa
+    long_name: Rekonstrukce zdroje tepla–spalování biomasy v kotli K3
+    amount: 400
+    amount_original: 400
+    paid_percent: 0
+  mf_subsidies_total: 501
+  mf_subsidies_per_household: 73687
   chp_subsidies:
   - power: 15
     since: '05/2028'
     fuel: Zemní plyn, biomasa
     status: accepted
-  chp_subsidies_total_accepted: 15
+  - power: 24
+    since: '11/2030'
+    fuel: Zemní plyn
+    status: accepted
+  - power: 4
+    since: '11/2029'
+    fuel: Zemní plyn, biomasa
+    status: accepted
+  - power: 20
+    since: '11/2029'
+    fuel: Zemní plyn, biomasa
+    status: accepted
+  chp_subsidies_total_accepted: 62
   ippc_permits:
   - name: Teplárna Otrokovice
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejfh44
@@ -1814,17 +2158,17 @@ items:
     application_id: '7220100013'
     name: Biomasa
     long_name: Snížení emisí CO2 při výrobě tepla
-    amount: 3054
+    amount: 1777
     amount_original: 3054
     paid_percent: 0
-  mf_subsidies_total: 3054
-  mf_subsidies_per_household: 1007588
+  mf_subsidies_total: 1777
+  mf_subsidies_per_household: 586275
   ippc_permits:
   - name: Výroba sulfátové buničiny a papíru ve Štětí a související činnosti
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejgjbs
-mf_chp_shown_subsidies_total: 99471
-mf_chp_subsidies_total: 100317
-mf_subsidies_total: 203355
-chp_shown_subsidies_total_accepted: 2159
-chp_subsidies_total_accepted: 2308
+mf_chp_shown_subsidies_total: 100555
+mf_chp_subsidies_total: 101936
+mf_subsidies_total: 212427
+chp_shown_subsidies_total_accepted: 2595
+chp_subsidies_total_accepted: 2889
 num_households_ets2_total: 384724
