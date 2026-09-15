@@ -183,7 +183,7 @@ include_in_search: true
   margin-bottom: 16px;
 }
 .chart-panel h2 { font-size: 17px; font-weight: 700; color: #2d3748; margin: 0; }
-.chart-sub { font-size: 15px; font-weight: 500; color: #718096; margin-top: 2px; margin-bottom: 10px; }
+.filter-summary { font-size: 14px; font-weight: 500; color: #718096; margin-bottom: 16px; }
 .chart-panel svg { width: 100%; height: 340px; display: block; }
 .panel-header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .panel-title-group { flex: 1; min-width: 200px; }
@@ -265,7 +265,7 @@ include_in_search: true
       <div class="control-group">
         <span class="control-label">Hlavní odvětví (dle ETS)</span>
         <div class="ms-dropdown" id="ets-activity-ms">
-          <button type="button" class="ms-toggle" id="ets-activity-toggle">Všechny aktivity</button>
+          <button type="button" class="ms-toggle" id="ets-activity-toggle">Všechna odvětví</button>
           <div class="ms-panel" id="ets-activity-panel">
             <div class="ms-actions">
               <button type="button" data-action="all">Vybrat vše</button>
@@ -328,6 +328,8 @@ include_in_search: true
 <div class="section pt-4">
   <div class="container">
 
+    <div class="filter-summary" id="ets-filter-summary"></div>
+
     <div id="ets-kpi-row">
       <div class="kpi-card emissions">
         <div class="kpi-label">Emise CO<sub>2</sub></div>
@@ -347,7 +349,6 @@ include_in_search: true
       <div class="panel-header">
         <div class="panel-title-group">
           <h2 id="ets-timeline-title">Vývoj v čase</h2>
-          <div class="chart-sub" id="ets-timeline-sub"></div>
         </div>
         <div class="legend">
           <div class="legend-item"><div class="legend-swatch sq" style="background:#506D87"></div>Emise</div>
@@ -378,10 +379,15 @@ include_in_search: true
 
 {% capture povolenky-zdarma %}
 [Povolenky zdarma](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/about-free-allocation_en?prefLang=cs) v minulosti vycházely především ze dvou předpokladů:
-* **Postupný náběh systému**, aby se podniky měly čas přizpůsobit a nákup emisních povolenek pro ně nebyl bezprostředním navýšením nákladů. To však v prvních letech vedlo k výraznému přebytku povolenek zdarma nad skutečně vyprodukovanými emisemi. Některé z podniků tak nebyly pouze kompenzovány 1:1, ale naopak na bezplatných alokacích vydělaly.
-* **Riziko úniku uhlíku** v energeticky náročných průmyslových sektorech, kde by mohlo dojít k tomu, že unijní podniky přesunou svou výrobů mimo EU do zemí s nižšími emisními standardy nebo dojde k upřednostňování konkurence z těchto zemí na úkor domácího průmyslu.
+* **Postupný náběh systému**, aby se podniky měly čas přizpůsobit a nákup emisních povolenek pro ně nebyl bezprostředním navýšením nákladů. To však v prvních letech vedlo k výraznému přebytku povolenek zdarma nad skutečně vyprodukovanými emisemi. Některé z podniků tak nebyly pouze kompenzovány 1:1, ale naopak na bezplatných alokacích vydělaly (v grafech je tato nadměrná alokace zobrazená jako *Povolenky zdarma alokované navíc*).
+* **Riziko úniku uhlíku** v energeticky náročných průmyslových sektorech (jejich aktuální seznam [zde](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=uriserv:OJ.L_.2019.120.01.0020.01.CES&toc=OJ:L:2019:120:FULL)), kde by mohlo dojít k tomu, že unijní podniky přesunou svou výrobů mimo EU do zemí s nižšími emisními standardy nebo dojde k upřednostňování konkurence z těchto zemí na úkor domácího průmyslu.
 
-Zatímco výroba elektřiny (s výjimkami pro modernizaci sektoru) povolenky zdarma od roku 2013 nedostává, teplárenství dostává pouze část (v současnosti až [30 %](https://mzp.gov.cz/system/files/2025-12/opok-MPkCNP-20251211.pdf)), průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů nahradit mechanismus uhlíkového vyrovnání na hranicích (*Carbon Border Adjustment Mechanism*, CBAM).
+Zatímco výroba elektřiny (s výjimkami pro modernizaci sektoru) povolenky zdarma od roku 2013 nedostává (neexistuje zde riziko úniku uhlíku), teplárenství dostává pouze část (v současnosti až [30 %](https://mzp.gov.cz/system/files/2025-12/opok-MPkCNP-20251211.pdf)), průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů nahradit [mechanismus uhlíkového vyrovnání na hranicích](/explainery/cbam) (*Carbon Border Adjustment Mechanism*, CBAM).
+
+**Jak konkrétně jsou povolenky zdarma pro průmysl rozdělovány?**
+* Povolenky zdarma jsou alokovány na základě benchmarku emisní intenzity výroby daného produktu, který odpovídá průměru 10 % nejefektivnějších instalací v daném sektoru v EU.
+* Systém tak odměňuje ty nejefektivnější – ty, co se do benchmarku vejdou obdrží všechny povolenky zdarma. Instalace, které jsou pod benchmarkem naopak dostávají pouze část. Například pokud je benchmark 0,1 tuna CO<sub>2</sub> na tunu výroby a instalace vyrábí 1000 tun s emisní intenzitou 0,15, dostane 100 povolenek zdarma a 50 musí nakoupit. Aby byly instalace motivované dekarbonizovat, jsou benchmarky postupně zpřísňovány.
+* V praxi to pak vypadá tak, že členský stát zašle v pětiletém cyklu podklady od jednotlivých instalací (údaje o výrobě, riziko úniku uhlíku) Evropské komisi, která je musí schválit. Poté příslušný orgán (v Česku Ministerstvo životního prostředí) povolenky každý rok alokuje. Instalace musí každý rok MŽP reportovat svou výrobu, aby nedošlo k tomu, že dostanouv více povolenek než potřebují. Detaily obsahuje metodika [na stránkách](https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/bezplatna-alokace-2021-2030-eu-ets-1) MŽP.
 
 Povolenky zdarma jsou na jedné straně velmi vítaným opatřením ze strany průmyslu, který má díky nim stran plateb za emise srovnatelné podmínky se zahraniční konkurencí a více prostoru na drahé investice do dekarbonizace. Na druhou stranu je otázkou, zda právě chybějící cenový signál není to, co (mimo jiné) transformaci průmyslu brzdí. Podle posledního návrhu Evropské komise by tak v budoucnu alokace povolenek zdarma měla být podmíněna vypracováním konkrétních investičních plánů do dekarbonizace výroby podniku nebo již zrealizovanými dekarbonizačními opatřeními.
 
@@ -397,7 +403,17 @@ Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají 
 %}
 
 {% capture data %}
-Tady bude popsaný zdroj dat a transformace dat. S odkazem na GitHub.
+
+Data o alokacích povolenek zdarma a ověřených emisí pochází z [Unijního registru](https://union-registry-data.ec.europa.eu/report/welcome), konkrétně souboru [*Verified emissions 2025*](https://climate.ec.europa.eu/document/download/53018483-62b3-499e-9ab9-b4a831cc44f4_en?filename=verified_emissions_2025_en.xlsx).
+
+Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lepší srozumitelnost a analýzu přidali následující atributy:
+* Skutečné odvětví podniku – původní data obsahují data o hlavní aktivitě (odvětví), která ale v některých případech přesně neodpovídá skutečné aktivitě. Jde především o průmyslové podniky zařazené do aktivity Výroba elektřiny a tepla (spalování paliv), kam se podnik dostal kvůli tomu, protože překročil práh tepelného příkonu (nad 20 MW) a nikoliv práh definovaný objemem výroby (např. stanovený objem denní produkce), ačkoliv reálně působí v konkrétním průmyslovém odvětví. Aby bylo možné lépe analyzovat, jaká je situace v jednotlivých odvětvích, přidali jsme na základě rešerše toto skutečné odvětví.
+* Současný vlastník – k názvu instalace (podniku) jsme na základě rešerše přidali současného vlastníka instalace (historii vlastnictví pro zjednodušení nezahrnujeme). Ve většině případů jde o mateřskou společnost. V rozbalovacím seznamu jsme je následně seřadili podle množství emisí, které jejich podniky vyprodukují.
+
+Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na info@faktaoklimatu.cz.
+
+Zdrojový kód pro zpracování dat je k dispozici na GitHubu (DOPLNIT LINK).
+
 {% endcapture %}
 
 {% include expander-figure.html
