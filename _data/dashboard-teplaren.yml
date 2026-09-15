@@ -253,7 +253,7 @@ items:
     status: rejected
   - power: 5
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 179
   ippc_permits:
@@ -342,7 +342,7 @@ items:
     paid_percent: 0
   - call: 1/2025
     application_id: '7250100021'
-    name: Rekostrukce části rozvodů
+    name: 'Rekostrukce rozvodů: Bělohorská'
     long_name: Rekonstrukce horkovodu Bělohorská od šachty B60 po šachtu B180
     amount: 43
     amount_original: 43
@@ -440,7 +440,7 @@ items:
   chp_subsidies:
   - power: 5
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 5
   ippc_permits:
@@ -685,15 +685,15 @@ items:
     status: accepted
   - power: 4
     since: '06/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   - power: 4
     since: '06/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   - power: 2
     since: '02/2028'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 50
   ippc_permits:
@@ -924,7 +924,7 @@ items:
     status: rejected
   - power: 183
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 184
   ippc_permits:
@@ -1098,7 +1098,7 @@ items:
     status: rejected
   - power: 39
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 39
   ippc_permits:
@@ -1197,7 +1197,7 @@ items:
     status: rejected
   - power: 51
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 51
   ippc_permits:
@@ -1211,7 +1211,7 @@ items:
   lat: 49.69
   status: done
   status_text: Bez uhlí
-  notes: V roce 2024 byl nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn. Soustavu doplní v roce 2030 koferenační jednotka (podpořená provozní podporou).
+  notes: V roce 2024 byl nahrazen uhelný blok novým biomasovým kotlem (na štěpku). Biomasa tvoří asi 60 % palivového mixu. Dalším zdrojem je zemní plyn. Soustavu doplní v roce 2030 kogerenační jednotka (podpořená provozní podporou).
   owner: Veolia
   owner_web: https://www.vecr.cz/media/tiskove-zpravy/frydek-mistek-je-prvnim-z-velkych-mest-v-kraji-dekarbonizaci-provozu-mistni-teplarny-se-zavrsil-od/
   num_households: 17846
@@ -1254,7 +1254,7 @@ items:
   chp_subsidies:
   - power: 6
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 6
   ippc_permits:
@@ -1553,7 +1553,7 @@ items:
   chp_subsidies:
   - power: 10
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 10
   ippc_permits:
@@ -1755,11 +1755,11 @@ items:
   chp_subsidies:
   - power: 62
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   - power: 9
     since: '07/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 71
   ippc_permits:
@@ -1915,7 +1915,7 @@ items:
     status: accepted
   - power: 5
     since: '12/2028'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 10
   ippc_permits:
@@ -1952,7 +1952,7 @@ items:
   chp_subsidies:
   - power: 3
     since: '12/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   chp_subsidies_total_accepted: 3
   ippc_permits:
@@ -2018,15 +2018,15 @@ items:
     status: accepted
   - power: 24
     since: '11/2030'
-    fuel: Zemni plyn
+    fuel: Zemní plyn
     status: accepted
   - power: 4
     since: '11/2029'
-    fuel: Zemni plyn, biomasa
+    fuel: Zemní plyn, biomasa
     status: accepted
   - power: 20
     since: '11/2029'
-    fuel: Zemni plyn, biomasa
+    fuel: Zemní plyn, biomasa
     status: accepted
   chp_subsidies_total_accepted: 62
   ippc_permits:
