@@ -615,8 +615,8 @@ items:
   lon: 18.54
   lat: 49.85
   status: in-progress
-  status_text: Odchod od uhlí do roku 2028
-  notes: Bývalá teplárna dolu ČSM přestavena na spalování zemního plynu. Uhelná teplárna Karviná plánuje obměnu uhelných kotlů za multipalivový kotel (TAP a biomasa) a plynové kotle. Soustavu doplní sada plynových kogeneračních jednotek v různých lokalitách, všechny zmíněné zdroje jsou podpořeny z ModFondu.
+  status_text: Odchod od uhlí do roku 2029
+  notes: Bývalá teplárna dolu ČSM přestavena na spalování zemního plynu. Uhelná teplárna Karviná plánuje obměnu uhelných kotlů za multipalivový kotel (TAP a biomasa) a plynové kotle. Soustavu doplní sada plynových kogeneračních jednotek v různých lokalitách, všechny zmíněné zdroje jsou podpořeny z ModFondu. Druhá fáze (výměna posledních čtyř uhelných kotlů) má být dokončena do roku 2029.
   owner: Veolia
   owner_web: https://www.veolia.cz/cs/media/novinky/veolia-energie-skonci-v-karvine-s-uhlim-drive-urychluje-modernizaci-sve-teplarny
   num_households: 49109
@@ -1710,8 +1710,8 @@ items:
   lon: 18.65
   lat: 49.68
   status: in-progress
-  status_text: Odchod od uhlí do roku 2027
-  notes: V rámci dekarbonizace má být stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu a provozní podporou). Následovat má výstavba horkovodu, který povede také do Českého Těšína.
+  status_text: Odchod od uhlí do roku 2030
+  notes: V rámci dekarbonizace má být stávající kotel na uhlí nahrazen paroplynovým cyklem (podpořeno z ModFondu a provozní podporou). Následovat má výstavba horkovodu, který povede také do Českého Těšína. Uvedení paroplynového zdroje do provozu se plánuje na druhou polovinu roku 2030.
   owner: Moravia Steel
   owner_web: https://www.etas.trz.cz/
   num_households: 8937
