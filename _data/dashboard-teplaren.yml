@@ -1,4 +1,4 @@
-timestamp: '2026-09-15'
+timestamp: '2026-09-17'
 highlights:
 - status: problematic
   number: 4
@@ -2168,7 +2168,7 @@ items:
     url: https://ippc.mzp.cz/ippc/ippc.nsf/%24pid/mzpr98ejgjbs
 mf_chp_shown_subsidies_total: 100555
 mf_chp_subsidies_total: 101936
-mf_subsidies_total: 212427
+mf_subsidies_total: 212419
 chp_shown_subsidies_total_accepted: 2595
 chp_subsidies_total_accepted: 2889
 num_households_ets2_total: 384724
