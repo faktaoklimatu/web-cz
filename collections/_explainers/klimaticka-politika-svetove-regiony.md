@@ -61,12 +61,6 @@ Tato komparativní analýza zasazuje klimatickou politiku EU do globálního kon
 * Původní důraz na ochranu budoucích generací v posledních letech doplňuje snaha o zajištění konkurenceschopnosti a energetické bezpečnosti.
 * Mnohoúrovňové rozhodování sice zajišťuje demokratickou shodu, ale prodlužuje implementaci opatření, která z velké části závisí na politické vůli členských států.
 
-{% include includes-local/chart-figure.html
-    id="emise-regiony"
-    caption="Emise CO<sub>2</sub> čtyř největších emitentů. Přepínač volí mezi celkovými emisemi, emisemi na obyvatele a podílem na kumulativních emisích. Všechny čtyři grafy mají stejnou svislou osu, takže je lze přímo srovnávat."
-    source-text="Our World in Data (owid-co2-data.csv), data 1950–2023"
-    source-url="https://ourworldindata.org/co2-emissions-metrics"
-%}
 
 ## Klimatické cíle, governance, hlavní politiky
 
@@ -102,6 +96,13 @@ Tato komparativní analýza zasazuje klimatickou politiku EU do globálního kon
 * **Governance:** V Indii je v otázce klimatu vedoucím orgánem *Ministry of New and Renewable Energy*, které je podporováno expertními institucemi, jako jsou NITI Aayog, vládní think tank zabývající se veřejnou politikou, a *National Institute of Solar Energy* (NISE), nezávislá výzkumná organizace zaměřená na solární energetiku. V Indii funguje „kooperativní federalismus“, kdy klimatické politiky a strategie jsou přijímány centrální vládou a státy a svazová území se na implementaci výrazně podílejí tím, že si mohou přizpůsobit strategie svým konkrétním socioekonomickým a energetickým podmínkám.
 
 ## Emise regionů a jejich historický vývoj
+
+{% include includes-local/chart-figure.html
+    id="emise-regiony"
+    caption="Emise CO<sub>2</sub> čtyř největších emitentů. Přepínač volí mezi celkovými emisemi, emisemi na obyvatele a podílem na kumulativních emisích. Všechny čtyři grafy mají stejnou svislou osu, takže je lze přímo srovnávat."
+    source-text="Our World in Data (owid-co2-data.csv), data 1950–2023"
+    source-url="https://ourworldindata.org/co2-emissions-metrics"
+%}
 
 **EU**
 
