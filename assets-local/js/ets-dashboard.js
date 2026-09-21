@@ -27,7 +27,7 @@
     lineWidth: 3.5,           // chart 1: allocation marker thickness
     tickCount: 5,             // chart 1: axis ticks
     allocStepped: true,       // chart 1: draw allocation as one staircase
-    barPaddingActivity: 0.3,  // chart 2: gap between sector bars (0-1)
+    barPaddingActivity: 0.15, // chart 2: gap between sector bars (0-1)
     lineWidthActivity: 3.5,   // chart 2: allocation marker thickness
     tickCountActivity: 5,     // chart 2: axis ticks
     hatchSize: 6,             // surplus hatch: pattern tile size
@@ -782,6 +782,13 @@
 
     document.getElementById("ets-kpi-e").textContent = fmt(e);
     document.getElementById("ets-kpi-a").textContent = fmt(a, "povolenek");
+    // Share of emissions covered by free allocation — the aggregate of the
+    // per-sector "Povolenky zdarma" column in chart 2, so it is rounded the
+    // same way and likewise not capped at 100 % (over-allocation is the
+    // finding worth showing). Undefined with no emissions to divide by.
+    const share = e > 0 ? Math.round(a / e * 100) : null;
+    document.getElementById("ets-kpi-share").textContent =
+      share == null ? "—" : share + " %";
     document.getElementById("ets-kpi-d-label").textContent = d >= 0 ? "Přebytek povolenek" : "Deficit povolenek";
     document.getElementById("ets-kpi-d").textContent = (d >= 0 ? "+" : "") + fmt(d, "povolenek");
     document.getElementById("ets-kpi-d-card").className = "kpi-card " + (d >= 0 ? "surplus" : "deficit");

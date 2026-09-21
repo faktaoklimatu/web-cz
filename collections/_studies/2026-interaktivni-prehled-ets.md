@@ -153,6 +153,12 @@ include_in_search: true
 .ms-options > .ms-group-label:first-child { border-top: none; margin-top: 0; }
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 
+/* Four cards need ~836px to sit in one row; below that they would wrap 3 + 1,
+   so force an even 2 + 2 instead (and one per row once even that won't fit). */
+@media (max-width: 900px) {
+  .kpi-card { flex-basis: calc(50% - 6px); }
+}
+
 @media (max-width: 640px) {
   .control-group {
     flex-basis: 100%; min-width: 0;
@@ -198,7 +204,7 @@ include_in_search: true
 }
 .kpi-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #718096; margin-bottom: 4px; }
 .kpi-value { font-size: 24px; font-weight: 700; color: #2d3748; }
-.kpi-sub { font-size: 13px; ; font-weight: 500; color: #718096; margin-top: 3px; }
+.kpi-card.coverage { flex: 0.5; min-width: 120px; }
 .kpi-card.emissions .kpi-value { color: #506D87; }
 .kpi-card.allocation .kpi-value { color: #7994AB; }
 
@@ -333,6 +339,10 @@ include_in_search: true
       <div class="kpi-card" id="ets-kpi-d-card">
         <div class="kpi-label" id="ets-kpi-d-label">—</div>
         <div class="kpi-value" id="ets-kpi-d">—</div>
+      </div>
+      <div class="kpi-card coverage">
+        <div class="kpi-label">Pokrytí emisí povolenkami</div>
+        <div class="kpi-value" id="ets-kpi-share">—</div>
       </div>
     </div>
 
