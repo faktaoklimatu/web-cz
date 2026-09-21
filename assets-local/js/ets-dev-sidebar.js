@@ -56,6 +56,7 @@
       ["barPaddingActivity", "Mezera mezi odvětvími", "range", 0, 0.8, 0.01],
       ["lineWidthActivity", "Tloušťka čáry alokace", "range", 0, 8, 0.5],
       ["tickCountActivity", "Počet dílků na ose", "range", 2, 12, 1],
+      ["minBarActivity", "Min. tloušťka řádku (px)", "range", 0, 60, 1],
     ]],
     ["Čára alokace (společné)", [
       ["haloWidth", "Šířka odsazení (0 = vypnuto)", "range", 0, 6, 0.25],

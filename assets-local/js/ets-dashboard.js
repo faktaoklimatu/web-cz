@@ -30,6 +30,7 @@
     barPaddingActivity: 0.15, // chart 2: gap between sector bars (0-1)
     lineWidthActivity: 3.5,   // chart 2: allocation marker thickness
     tickCountActivity: 5,     // chart 2: axis ticks
+    minBarActivity: 25,       // chart 2: rows never thinner than this (px)
     hatchSize: 6,             // surplus hatch: pattern tile size
     hatchAngle: 45,
     hatchStroke: 4.75,
@@ -42,6 +43,26 @@
     gridColor: "#edf2f7",
   };
   window.ETS_CFG = CFG;
+
+  // The same breakpoint the page's CSS uses for .control-group, read from JS.
+  // The window "resize" handler at the bottom redraws both charts, which also
+  // covers crossing this threshold (and a phone rotating).
+  const MOBILE = window.matchMedia("(max-width: 640px)");
+
+  // Chart 2's sector names do not fit a phone-width axis. Keyed on the
+  // NORMALISED name: several values in the data carry non-breaking spaces
+  // (e.g. "Výroba elektřiny a tepla"), so a plain lookup would never match.
+  const SHORT_ACTIVITY_NAMES = {
+    "Výroba elektřiny a tepla": "Výroba el. a tepla",
+    "Rafinace minerálních olejů": "Rafinace",
+    "Ostatní minerály (keramika, cihly, minerální vlna, sádra)": "Ostatní minerály",
+    "Potravinářský průmysl": "Potraviny",
+  };
+  // Display only — the row's key is untouched, so tooltips keep the full name.
+  // Owner names fall through unchanged, since none of them are in the map.
+  function activityLabel(key) {
+    return MOBILE.matches ? (SHORT_ACTIVITY_NAMES[normalizeActName(key)] || key) : key;
+  }
 
   // Chart 1's margins live out here because fixedBarWidth() needs its plot
   // width before renderTimeline runs.
@@ -965,8 +986,19 @@
       .on("mousemove", moveTip)
       .on("mouseout", hideTip);
 
+    // Every year label collides at phone width, so only multiples of five are
+    // labelled. A range too narrow to hold two of those falls back to its first
+    // and last year, so the axis is never left unlabelled.
+    let tickYears = visibleYears;
+    if (MOBILE.matches && visibleYears.length > 2) {
+      const byFive = visibleYears.filter(yr => yr % 5 === 0);
+      tickYears = byFive.length >= 2
+        ? byFive
+        : [visibleYears[0], visibleYears[visibleYears.length - 1]];
+    }
+
     svg.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).tickValues(visibleYears).tickFormat(d3.format("d")))
+      .call(d3.axisBottom(x).tickValues(tickYears).tickFormat(d3.format("d")))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").remove())
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
@@ -982,8 +1014,14 @@
   function renderActivityChart(idxs) {
     const svgEl = document.getElementById("ets-svg-activity");
     const W0 = svgEl.clientWidth;
-    const barThickness = fixedBarWidth();
-    if (!W0 || !barThickness) return;
+    const chart1Bar = fixedBarWidth();
+    // Zero means chart 1 has not been laid out yet — test that, not the
+    // floored value below, which is never zero.
+    if (!W0 || !chart1Bar) return;
+    // Rows follow chart 1's bar width but never drop below the floor, so the
+    // sector labels stay legible on a narrow screen. Past that point the two
+    // charts no longer match in thickness — legibility wins.
+    const barThickness = Math.max(chart1Bar, CFG.minBarActivity);
 
     // Both grouping keys are already display-ready strings on the
     // installation, so neither needs a lookup array.
@@ -1025,7 +1063,12 @@
     // below), and a fixed-position "X %" column further right (headed
     // "Povolenky zdarma"), showing the share of that row's emissions
     // matched by free allocation. mg.top makes room for that column header.
-    const mg = { top: 26, right: 150, bottom: 24, left: 230 };
+    // At phone width the desktop margins (230 + 150) exceed the whole SVG, so
+    // the plot collapses to its 40px floor — hence a narrower set, paired with
+    // the shortened axis labels in SHORT_ACTIVITY_NAMES.
+    const mg = MOBILE.matches
+      ? { top: 26, right: 64, bottom: 24, left: 116 }
+      : { top: 26, right: 150, bottom: 24, left: 230 };
     const W = W0 - mg.left - mg.right;
     // Rows are as thick as chart 1's bars, so the height follows from how many
     // sectors there are rather than being set in CSS. Sizing the range this
@@ -1049,7 +1092,7 @@
     // Reserve a right-hand gutter for the tail label so it never overlaps the
     // longest bar (which otherwise spans the full plot width) — the
     // allocation itself, in Mt with a Czech decimal comma and one decimal.
-    const labelGutter = 60;
+    const labelGutter = MOBILE.matches ? 44 : 60;
     const coverageText = d => `${(d.a / 1e6).toFixed(1).replace(".", ",")} Mt`;
     // Allocation as a share of emissions — not capped at 100%, since a
     // surplus (allocation > emissions) is exactly the case worth surfacing.
@@ -1158,7 +1201,7 @@
       .text(shareText);
 
     svg.append("g")
-      .call(d3.axisLeft(y))
+      .call(d3.axisLeft(y).tickFormat(activityLabel))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").remove())
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisLabelFontSize + "px").attr("fill", CFG.axisTextColor)
