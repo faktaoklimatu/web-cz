@@ -106,8 +106,6 @@ include_in_search: true
   z-index: 20;
   top: calc(100% + 4px);
   left: 0; right: 0;
-  max-height: 340px;
-  overflow-y: auto;
   background: #fff;
   border: 1px solid #ced4da;
   border-radius: 6px;
@@ -138,16 +136,20 @@ include_in_search: true
   text-decoration: none !important;
 }
 .ms-option--nested { padding-left: 28px; }
+/* A group header is itself a clickable option — its checkbox selects the whole
+   site — so it reads like one, inheriting .ms-option's type. The rule above it
+   and its children's indent carry the grouping; a shrunken uppercase caption
+   made a live control look like a disabled label, and uppercased "Mt" to "MT". */
 .ms-group-label {
-  padding: 8px 12px 4px;
   margin-top: 4px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #a0aec0;
+  padding-top: 10px;
   border-top: 1px solid #f0f2f4;
 }
+/* Only the option list scrolls. The search box and the select-all actions sit
+   outside it, so they stay put at the top of the panel instead of scrolling
+   out of reach — no sticky positioning needed. The vh cap keeps the panel from
+   growing taller than a short window. */
+.ms-options { max-height: min(420px, 60vh); overflow-y: auto; }
 .ms-options > .ms-group-label:first-child { border-top: none; margin-top: 0; }
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 

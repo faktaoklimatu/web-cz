@@ -93,6 +93,13 @@
     recordsByInstall.get(i).push(r);
   });
 
+  // Selected options float to the top of the "Současný vlastník" and
+  // "Zařízení" lists, against the live selection — every checkbox runs
+  // onFilterChange(), which re-renders both lists, so a ticked row rises
+  // immediately. Note the cost: the rows below it shift up by one, so ticking
+  // several in a row means re-aiming each time.
+  const byPin = (pin, a, b) => (pin.has(b) ? 1 : 0) - (pin.has(a) ? 1 : 0);
+
   // Every value each facet can take, to recognise an unfiltered facet.
   const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(i => i.ra).filter(Boolean));
   const ALL_OWNERS = new Set(INSTALLS.map(i => i.own));
@@ -196,10 +203,10 @@
   // still identifiable without a group header — unless the two are already
   // identical (the installation's own name just repeats the site name), in
   // which case that would only duplicate the text, so it's shown flat and
-  // bare. Flat entries and group headers are merged into one alphabetically
-  // sorted list (by the flat row's own display text; by site name for group
-  // rows), so the panel still reads as a single A–Z list, same pattern as
-  // the "Odvětví" hierarchy's pinned-primary + selectable-group design.
+  // bare. Flat entries and group headers are merged into one list; sortKey
+  // (the flat row's display text, the site name for group rows) is only the
+  // alphabetical tie-break — renderInstallOptions orders the panel by
+  // emissions, biggest first, the same as the "Současný vlastník" list.
   const installRows = (() => {
     const byCo = new Map();
     INSTALLS.forEach((inst, i) => {
@@ -234,6 +241,11 @@
       return a.localeCompare(b, "cs");
     });
 
+  // An empty set is how "no restriction" is normally represented, but
+  // "Vybrat vše" fills the set instead — same meaning, so the toggle reads the
+  // same rather than showing the full count ("180 vlastníků").
+  const isEverySelected = (sel, total) => total > 0 && sel.size === total;
+
   // Czech plural agreement: 1 = singular (handled separately), 2–4 = "few", else "many".
   function pluralCz(n, few, many) { return (n >= 2 && n <= 4) ? few : many; }
 
@@ -255,7 +267,8 @@
     const sel = state.realActivities;
     const industrial = getSelectableIndustrialRealActivities();
     const isWholeIndustryGroup = sel.size === industrial.length && industrial.every(ra => sel.has(ra));
-    if (sel.size === 0) btn.textContent = "Všechna odvětví";
+    if (sel.size === 0 || isEverySelected(sel, sortedRealActivities.length))
+      btn.textContent = "Všechna odvětví";
     else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " odvětví";
@@ -265,7 +278,8 @@
   function refreshInstallToggle() {
     const btn = document.getElementById("ets-installation-toggle");
     const sel = state.installs;
-    if (sel.size === 0) btn.textContent = "Všechna zařízení";
+    if (sel.size === 0 || isEverySelected(sel, INSTALLS.length))
+      btn.textContent = "Všechna zařízení";
     else if (sel.size === 1) btn.textContent = INSTALLS[[...sel][0]].n;
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "instalace", "instalací");
     btn.title = btn.textContent;
@@ -274,7 +288,8 @@
   function refreshCompanyToggle() {
     const btn = document.getElementById("ets-company-toggle");
     const sel = state.companies;
-    if (sel.size === 0) btn.textContent = "Všichni vlastníci";
+    if (sel.size === 0 || isEverySelected(sel, ALL_OWNERS.size))
+      btn.textContent = "Všichni vlastníci";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "vlastníci", "vlastníků");
     btn.title = btn.textContent;
@@ -288,11 +303,53 @@
   // user can still see and deselect it. A group's membership (its shared
   // name prefix) doesn't change with search/availability — only which of
   // its installations are currently shown does.
+  // Emissions per installation over the selected years, with every other
+  // facet applied but not the installation facet itself — same rule as
+  // computeCompanyEmissions, so each option shows what picking it would bring.
+  function computeInstallEmissions() {
+    const sums = new Map();
+    for (let i = 0; i < INSTALLS.length; i++) {
+      const inst = INSTALLS[i];
+      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.companies.size && !state.companies.has(inst.own)) continue;
+      let e = 0;
+      (recordsByInstall.get(i) || []).forEach(r => {
+        const [, y, em] = r;
+        if (y < state.yearFrom || y > state.yearTo) return;
+        e += em || 0;
+      });
+      sums.set(i, e);
+    }
+    return sums;
+  }
+
   function renderInstallOptions(filterText) {
     const wrap = document.getElementById("ets-installation-options");
     wrap.innerHTML = "";
     const q = (filterText || "").trim().toLowerCase();
     const available = getAvailableInstalls();
+    const emissions = computeInstallEmissions();
+    const shown = i => available.has(i) || state.installs.has(i);
+    const emOf = i => (shown(i) ? emissions.get(i) || 0 : 0);
+    // A row's weight: its own emissions, or the total of the installations it
+    // groups. Deliberately ignores the search query, so the number describes
+    // the site itself and the order does not jump while typing — same as the
+    // owner list, whose figures are query-independent too.
+    const rowEmissions = row => row.type === "flat"
+      ? emOf(row.i)
+      : row.items.reduce((sum, { i }) => sum + emOf(i), 0);
+    // Selected rows first, then biggest emitters, with alphabetical only as a
+    // tie-break (and for rows with no emissions in the selected years). A
+    // group counts as selected if any member is.
+    const pin = state.installs;
+    const rowPinned = row => row.type === "flat"
+      ? pin.has(row.i)
+      : row.items.some(({ i }) => pin.has(i));
+    const rows = installRows
+      .map(row => ({ row, e: rowEmissions(row), pinned: rowPinned(row) }))
+      .sort((a, b) => (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0) ||
+        b.e - a.e || a.row.sortKey.localeCompare(b.row.sortKey, "cs"))
+      .map(({ row }) => row);
 
     function buildOption(i, n, nested) {
       const label = document.createElement("label");
@@ -305,19 +362,20 @@
         if (this.checked) state.installs.add(i); else state.installs.delete(i);
         onFilterChange();
       });
+      const e = emOf(i);
       const name = document.createElement("span");
       name.className = "ms-option-name";
-      name.textContent = n;
-      name.title = n;
+      name.textContent = e > 0 ? `${n} (${fmt(e)})` : n;
+      name.title = name.textContent;
       label.appendChild(cb);
       label.appendChild(name);
       return label;
     }
 
     let rendered = 0;
-    installRows.forEach(row => {
+    rows.forEach(row => {
       if (row.type === "flat") {
-        if (!(available.has(row.i) || state.installs.has(row.i))) return;
+        if (!shown(row.i)) return;
         if (q && !row.n.toLowerCase().includes(q)) return;
         wrap.appendChild(buildOption(row.i, row.n, false));
         rendered++;
@@ -326,9 +384,11 @@
       // Group row: a query matches either an individual installation's own
       // name, or the site name (co), so searching the site surfaces the
       // whole group even if no single installation name contains it.
-      const visible = row.items.filter(({ i, n }) =>
-        (available.has(i) || state.installs.has(i)) &&
-        (!q || n.toLowerCase().includes(q) || row.co.toLowerCase().includes(q)));
+      const visible = row.items
+        .filter(({ i, n }) => shown(i) &&
+          (!q || n.toLowerCase().includes(q) || row.co.toLowerCase().includes(q)))
+        .sort((a, b) => byPin(pin, a.i, b.i) ||
+          emOf(b.i) - emOf(a.i) || a.n.localeCompare(b.n, "cs"));
       if (!visible.length) return;
       const idxs = visible.map(({ i }) => i);
       const selectedCount = idxs.filter(i => state.installs.has(i)).length;
@@ -343,10 +403,11 @@
         idxs.forEach(i => { if (this.checked) state.installs.add(i); else state.installs.delete(i); });
         onFilterChange();
       });
+      const groupE = rowEmissions(row);
       const groupName = document.createElement("span");
       groupName.className = "ms-option-name";
-      groupName.textContent = row.co;
-      groupName.title = row.co;
+      groupName.textContent = groupE > 0 ? `${row.co} (${fmt(groupE)})` : row.co;
+      groupName.title = groupName.textContent;
       groupLabel.appendChild(groupCb);
       groupLabel.appendChild(groupName);
       wrap.appendChild(groupLabel);
@@ -392,7 +453,8 @@
     const emissions = computeCompanyEmissions();
     const filtered = sortedCompanies
       .filter(own => (available.has(own) || state.companies.has(own)) && (!q || own.toLowerCase().includes(q)))
-      .sort((a, b) => (emissions.get(b) || 0) - (emissions.get(a) || 0) || a.localeCompare(b, "cs"));
+      .sort((a, b) => byPin(state.companies, a, b) ||
+        (emissions.get(b) || 0) - (emissions.get(a) || 0) || a.localeCompare(b, "cs"));
     if (!filtered.length) {
       wrap.innerHTML = '<div class="ms-empty">Žádný vlastník nenalezen</div>';
       return;
