@@ -227,6 +227,16 @@ include_in_search: true
 .panel-header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .panel-title-group { flex: 1; min-width: 200px; }
 .legend { display: flex; gap: 14px; flex-shrink: 0; margin-top: 2px; }
+/* Grouping switch for chart 2 — scoped to that chart, unlike the page-wide
+   filters in the bar at the top. */
+.seg { display: inline-flex; border: 1px solid #ced4da; border-radius: 4px; overflow: hidden; flex-shrink: 0; }
+.seg button {
+  background: #fff; border: none; padding: 4px 12px; cursor: pointer;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; color: #515b66;
+}
+.seg button + button { border-left: 1px solid #ced4da; }
+.seg button:hover:not(.active) { background: #f0f3f5; }
+.seg button.active { background: #515b66; color: #fff; }
 .legend-item { display: flex; align-items: center; gap: 5px; font-size: 13px; ; font-weight: 500; color: #718096; white-space: nowrap; }
 .legend-swatch { width: 14px; height: 3px; border-radius: 1px; }
 .legend-swatch.sq { height: 10px; border-radius: 2px; }
@@ -371,6 +381,10 @@ include_in_search: true
           <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-uncovered)"></div>Emise nepokryté povolenkami zdarma</div>
           <div class="legend-item"><div class="legend-swatch line-alloc"></div>Bezplatné povolenky</div>
           <div class="legend-item legend-surplus"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
+        </div>
+        <div class="seg" id="ets-activity-groupby">
+          <button type="button" data-group="ra" class="active">Odvětví</button>
+          <button type="button" data-group="own">Vlastníci</button>
         </div>
       </div>
       <svg id="ets-svg-activity"></svg>
