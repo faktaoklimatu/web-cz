@@ -8,12 +8,82 @@
   const YEAR_MIN = DATA.year_min;
   const YEAR_MAX = DATA.year_max;
 
-  // Timeline chart colors — keep in sync with the .legend-swatch styles in the
-  // page's <style> block (hardcoded there too, since it's plain HTML/CSS).
-  const COLOR_COVERED = "#506D87"; // emissions covered by free allowances (+ hatched: surplus allowances)
-  // Free-allocation portions (covered + surplus hatch, both charts) —
-  // lighter than COLOR_COVERED so they read as distinct from the deficit.
-  const COLOR_ALLOCATION_SURPLUS = "#7994AB";
+  // Chart look — single source of truth. The dev sidebar (ets-dev-sidebar.js,
+  // only active with ?dev=1) mutates this and calls window.ETS_REDRAW().
+  // The colours are mirrored as CSS variables in the page's <style> block so
+  // the HTML legend swatches match; the sidebar keeps both in step.
+  const CFG = {
+    colorEmissions: "#1b4c6f", // the whole emissions bar
+    colorUncovered: "#8ba1b1", // overlay: emissions above the free allocation
+    colorAlloc: "#fffafa",     // background the surplus hatch is drawn on
+    colorLine: "#000000",      // allocation marker line
+    haloColor: "#ffffff",      // stroked under the marker, both charts
+    haloWidth: 1.5,            // halo thickness per side, 0 = no halo
+    showSurplus: true,         // both charts: hatched block for over-allocation
+    // Geometry is per chart — chart 1 (#ets-svg-timeline, "Emise a povolenky
+    // zdarma v čase") and chart 2 (#ets-svg-activity, "Kolik emisí pokryly
+    // povolenky zdarma?") are tuned independently. Colours above are shared.
+    barPadding: 0.26,         // chart 1: gap between year bars (0-1)
+    lineWidth: 3.5,           // chart 1: allocation marker thickness
+    tickCount: 5,             // chart 1: axis ticks
+    allocStepped: true,       // chart 1: draw allocation as one staircase
+    barPaddingActivity: 0.3,  // chart 2: gap between sector bars (0-1)
+    lineWidthActivity: 3.5,   // chart 2: allocation marker thickness
+    tickCountActivity: 5,     // chart 2: axis ticks
+    hatchSize: 6,             // surplus hatch: pattern tile size
+    hatchAngle: 45,
+    hatchStroke: 4.75,
+    hatchOpacity: 1,
+    hatchColor: "#ff9c66",
+    axisFontSize: 13,         // axis tick labels
+    axisLabelFontSize: 14,    // sector names on the activity chart
+    valueFontSize: 13.5,      // in-chart value labels (Mt, %)
+    axisTextColor: "#718096",
+    gridColor: "#edf2f7",
+  };
+  window.ETS_CFG = CFG;
+
+  // Chart 1's margins live out here because fixedBarWidth() needs its plot
+  // width before renderTimeline runs.
+  const TL_MARGIN = { top: 26, right: 16, bottom: 28, left: 64 };
+  const FULL_YEARS = YEAR_MAX - YEAR_MIN + 1;
+
+  // The bar width chart 1 has when the whole year span is shown. Both charts
+  // key off it: chart 1 keeps this width whatever the year selection, and
+  // chart 2 matches it, so bars carry the same visual weight in both.
+  // Depends on the container width, so it is recomputed on every render.
+  function fixedBarWidth() {
+    const el = document.getElementById("ets-svg-timeline");
+    const W = (el ? el.clientWidth : 0) - TL_MARGIN.left - TL_MARGIN.right;
+    if (W <= 0) return 0;
+    // d3.scaleBand with paddingInner = paddingOuter = p: step = W / (n + p).
+    return (W / (FULL_YEARS + CFG.barPadding)) * (1 - CFG.barPadding);
+  }
+
+  // The allocation marker is stroked twice: a wider halo underneath, then the
+  // line itself on top — the halo leaves a visible margin against the bar
+  // fill it sits on. Returns the [stroke, width] passes, in draw order.
+  function markerPasses(width) {
+    return CFG.haloWidth > 0
+      ? [[CFG.haloColor, width + CFG.haloWidth * 2], [CFG.colorLine, width]]
+      : [[CFG.colorLine, width]];
+  }
+
+  // One hatch definition for both charts, fully CFG-driven.
+  function addHatch(defs, id) {
+    const s = CFG.hatchSize;
+    defs.append("pattern")
+      .attr("id", id)
+      .attr("width", s).attr("height", s)
+      .attr("patternUnits", "userSpaceOnUse")
+      .attr("patternTransform", `rotate(${CFG.hatchAngle})`)
+      .call(p => {
+        p.append("rect").attr("width", s).attr("height", s).attr("fill", CFG.colorAlloc);
+        p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", s)
+          .attr("stroke", CFG.hatchColor).attr("stroke-width", CFG.hatchStroke)
+          .attr("opacity", CFG.hatchOpacity);
+      });
+  }
 
   // ── Lookups built once ────────────────────────────────────────────────────
   const recordsByInstall = new Map();
@@ -22,6 +92,10 @@
     if (!recordsByInstall.has(i)) recordsByInstall.set(i, []);
     recordsByInstall.get(i).push(r);
   });
+
+  // Every value each facet can take, to recognise an unfiltered facet.
+  const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(i => i.ra).filter(Boolean));
+  const ALL_OWNERS = new Set(INSTALLS.map(i => i.own));
 
   const state = {
     realActivities: new Set(), // real-activity names (installs[].ra); empty = all
@@ -603,37 +677,29 @@
       el.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
       return;
     }
-    const distinctActs = [...new Set(idxs.map(i => INSTALLS[i].act))];
     const distinctRa = [...new Set(idxs.map(i => INSTALLS[i].ra).filter(Boolean))];
     const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].own))];
-    const actNames = distinctActs.map(a => ACTIVITIES[a].short);
-    // If the real-activity names are exactly the same set as the main-ETS-
-    // activity names (a common case — most installations' real sector
-    // matches their formal ETS activity), say "stejné" instead of just
-    // repeating the same names right after each other.
-    const normActNames = actNames.map(normalizeActName).sort();
-    const normRaNames = distinctRa.map(normalizeActName).sort();
-    const raSameAsActs = distinctRa.length <= 2 && normActNames.length === normRaNames.length &&
-      normActNames.every((v, i) => v === normRaNames[i]);
-    // When few enough distinct values are named outright, prefix with the
-    // facet's own label (grammatically agreeing with the count: singular
-    // for exactly one, plural for more) — otherwise a plain count, with the
-    // adjective in nominative plural for 2–4 and genitive plural for 5+
-    // (matches pluralCz's own "few"/"many" bucketing), e.g. "9 hlavních
-    // odvětví" / "10 skutečných odvětví".
+    // One segment per filter control: odvětví, vlastníci, instalace. A facet
+    // still spanning every value in the data says "vše" — the count would just
+    // be the dataset total and carry no information. Otherwise the values are
+    // named outright while there are few enough, else counted (the noun in
+    // nominative plural for 2-4 and genitive plural for 5+, which is what
+    // pluralCz buckets; "odvětví" is identical in both, so it needs no call).
     el.textContent = [
-      distinctActs.length <= 2
-        ? "Hlavní odvětví: " + actNames.join(", ")
-        : distinctActs.length + " " + pluralCz(distinctActs.length, "hlavní", "hlavních") + " odvětví",
-      raSameAsActs
-        ? "Skutečné odvětví: stejné"
+      distinctRa.length === ALL_REAL_ACTIVITIES.size
+        ? "Všechna odvětví"
         : distinctRa.length <= 2
-        ? (distinctRa.length === 1 ? "Skutečné odvětví: " : "Skutečná odvětví: ") + distinctRa.join(", ")
-        : distinctRa.length + " " + pluralCz(distinctRa.length, "skutečná", "skutečných") + " odvětví",
-      distinctCos.length <= 3
-        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + distinctCos.join(", ")
+        ? "Odvětví: " + distinctRa.join(", ")
+        : distinctRa.length + " odvětví",
+      distinctCos.length === ALL_OWNERS.size
+        ? "Všichni vlastníci"
+        : distinctCos.length <= 3
+        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
+          distinctCos.join(", ")
         : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
-      idxs.length <= 3
+      idxs.length === INSTALLS.length
+        ? "Všechny instalace"
+        : idxs.length <= 3
         ? "Instalace: " + idxs.map(i => INSTALLS[i].n).join(", ")
         : idxs.length + " " + pluralCz(idxs.length, "instalace", "instalací"),
     ].join(" · ");
@@ -668,29 +734,20 @@
   }
   function hideTip() { tip.style.display = "none"; }
 
-  // ── Chart 1: timeline — stacked bars: covered / surplus (hatched) / deficit ─
+  // ── Chart 1: timeline — one emissions bar per year, uncovered share
+  // overlaid on it, allocation drawn as a marker (optionally a staircase) ──
   function renderTimeline(idxs) {
     const svgEl = document.getElementById("ets-svg-timeline");
     const W0 = svgEl.clientWidth, H0 = svgEl.clientHeight;
     if (!W0 || !H0) return;
 
-    const mg = { top: 26, right: 16, bottom: 28, left: 64 };
+    const mg = TL_MARGIN;
     const W = W0 - mg.left - mg.right;
     const H = H0 - mg.top - mg.bottom;
 
     d3.select(svgEl).selectAll("*").remove();
 
-    const defs = d3.select(svgEl).append("defs");
-    defs.append("pattern")
-      .attr("id", "ets-hatch-surplus")
-      .attr("width", 6).attr("height", 6)
-      .attr("patternUnits", "userSpaceOnUse")
-      .attr("patternTransform", "rotate(45)")
-      .call(p => {
-        p.append("rect").attr("width", 6).attr("height", 6).attr("fill", COLOR_ALLOCATION_SURPLUS);
-        p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6)
-          .attr("stroke", "#fff").attr("stroke-width", 2.5).attr("opacity", 0.6);
-      });
+    d3.select(svgEl).append("defs");
 
     const svg = d3.select(svgEl).append("g").attr("transform", `translate(${mg.left},${mg.top})`);
 
@@ -716,64 +773,94 @@
     allYears.forEach(yr => {
       const d = dataMap[yr];
       if (!d) return;
-      d.covered = Math.min(d.e, d.a); // portion of emissions matched by free allocation
       d.deficit = Math.max(d.e - d.a, 0); // emissions above what allocation covers
       d.top = Math.max(d.e, d.a);
     });
     const visibleYears = allYears.filter(yr => dataMap[yr] && state.yearFrom <= yr && yr <= state.yearTo);
     const maxVal = d3.max(visibleYears, yr => dataMap[yr].top) || 1;
-    // Band domain matches years that actually have data in the selected range
-    // (not the full slider span), so there's no reserved blank space either
-    // for years excluded by the slider or for years the current filter simply
-    // has no records for (e.g. an installation whose reporting starts later).
-    const x = d3.scaleBand().domain(visibleYears).range([0, W]).padding(0.18);
+    // Bar width is fixed at whatever it is for the full year span, so
+    // narrowing the selection makes the chart narrower instead of making the
+    // bars fatter. Sizing the range to the visible count at that same step
+    // keeps the bars left-aligned against the value axis, with the freed
+    // space left empty on the right.
+    const stepFull = W / (FULL_YEARS + CFG.barPadding);
+    const x = d3.scaleBand()
+      .domain(visibleYears)
+      .range([0, stepFull * (visibleYears.length + CFG.barPadding)])
+      .padding(CFG.barPadding);
     const y = d3.scaleLinear().domain([0, maxVal * 1.05]).range([H, 0]).nice();
 
     svg.append("text")
       .attr("x", -mg.left + 2).attr("y", -12)
-      .attr("font-size", "13px").attr("fill", "#718096")
+      .attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
       .text("povolenek / t CO₂");
 
     svg.append("g")
-      .call(d3.axisLeft(y).tickSize(-W).tickFormat("").ticks(5))
+      .call(d3.axisLeft(y).tickSize(-W).tickFormat("").ticks(CFG.tickCount))
       .call(g => g.select(".domain").remove())
-      .call(g => g.selectAll(".tick line").attr("stroke", "#edf2f7").attr("stroke-dasharray", "3,3"));
+      .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor));
 
-    // Bottom of the bar: the portion of emissions actually matched by free
-    // allocation — lighter, same family as the surplus hatch, so everything
-    // "allocation-related" reads as one lighter tone against the plain blue.
-    svg.selectAll(".bar-covered")
+    // One bar per year: total verified emissions. The share free allocation
+    // does not cover is drawn over its top, so a year reads as a single
+    // quantity with a marked part rather than as a stack of three.
+    svg.selectAll(".bar-emissions")
       .data(visibleYears)
-      .join("rect").attr("class", "bar-covered")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].covered))
-      .attr("width", x.bandwidth()).attr("height", yr => H - y(dataMap[yr].covered))
-      .attr("fill", COLOR_ALLOCATION_SURPLUS);
-
-    // Where emissions exceed allocation, cap the covered portion with the
-    // plain solid blue for the uncovered excess.
-    svg.selectAll(".bar-deficit")
-      .data(visibleYears.filter(yr => dataMap[yr].deficit > 0))
-      .join("rect").attr("class", "bar-deficit")
+      .join("rect").attr("class", "bar-emissions")
       .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].e))
-      .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].covered) - y(dataMap[yr].e))
-      .attr("fill", COLOR_COVERED);
+      .attr("width", x.bandwidth()).attr("height", yr => H - y(dataMap[yr].e))
+      .attr("fill", CFG.colorEmissions);
 
-    // Where allocation exceeds emissions, cap the bar with a hatched block up
-    // to the allocation line — makes the surplus itself visible as an area,
-    // not just implied by the line floating above the bar.
-    svg.selectAll(".bar-surplus")
-      .data(visibleYears.filter(yr => dataMap[yr].a > dataMap[yr].e))
-      .join("rect").attr("class", "bar-surplus")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].a))
-      .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].e) - y(dataMap[yr].a))
-      .attr("fill", "url(#ets-hatch-surplus)");
+    svg.selectAll(".bar-uncovered")
+      .data(visibleYears.filter(yr => dataMap[yr].deficit > 0))
+      .join("rect").attr("class", "bar-uncovered")
+      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].e))
+      .attr("width", x.bandwidth())
+      .attr("height", yr => y(dataMap[yr].a) - y(dataMap[yr].e))
+      .attr("fill", CFG.colorUncovered);
 
-    svg.selectAll(".line-allocation")
-      .data(visibleYears)
-      .join("line").attr("class", "line-allocation")
-      .attr("x1", yr => x(yr)).attr("x2", yr => x(yr) + x.bandwidth())
-      .attr("y1", yr => y(dataMap[yr].a)).attr("y2", yr => y(dataMap[yr].a))
-      .attr("stroke", "#1a202c").attr("stroke-width", 3);
+    // Over-allocation as a hatched block up to the allocation marker. Off by
+    // default: the marker already shows it by floating above the bar.
+    if (CFG.showSurplus) {
+      addHatch(d3.select(svgEl).select("defs"), "ets-hatch-surplus");
+      svg.selectAll(".bar-surplus")
+        .data(visibleYears.filter(yr => dataMap[yr].a > dataMap[yr].e))
+        .join("rect").attr("class", "bar-surplus")
+        .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].a))
+        .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].e) - y(dataMap[yr].a))
+        .attr("fill", "url(#ets-hatch-surplus)");
+    }
+
+    // Allocation marker — either one flat segment sitting on each bar
+    // (default), or a continuous staircase whose treads span the full band
+    // step, so the year-to-year change reads as one line with visible risers.
+    if (CFG.allocStepped) {
+      const gap = x.step() - x.bandwidth();
+      let d = "";
+      visibleYears.forEach((yr, i) => {
+        const lvl = y(dataMap[yr].a);
+        // Treads are widened by half a gap on each side, so consecutive years
+        // meet exactly and the riser between them is a single vertical line.
+        d += (i === 0 ? `M${x(yr) - gap / 2},${lvl}` : `V${lvl}`) +
+             `H${x(yr) + x.bandwidth() + gap / 2}`;
+      });
+      markerPasses(CFG.lineWidth).forEach(([stroke, width]) => {
+        svg.append("path").attr("class", "line-allocation")
+          .attr("d", d).attr("fill", "none")
+          .attr("stroke", stroke).attr("stroke-width", width)
+          .attr("stroke-linejoin", "miter");
+      });
+    } else {
+      // A separate class per pass, so the second pass joins its own elements
+      // instead of re-binding the halo's.
+      markerPasses(CFG.lineWidth).forEach(([stroke, width], i) => {
+        svg.selectAll(".line-allocation-" + i)
+          .data(visibleYears)
+          .join("line").attr("class", "line-allocation-" + i)
+          .attr("x1", yr => x(yr)).attr("x2", yr => x(yr) + x.bandwidth())
+          .attr("y1", yr => y(dataMap[yr].a)).attr("y2", yr => y(dataMap[yr].a))
+          .attr("stroke", stroke).attr("stroke-width", width);
+      });
+    }
 
     svg.selectAll(".hover-zone")
       .data(visibleYears)
@@ -796,21 +883,23 @@
 
     svg.append("g").attr("transform", `translate(0,${H})`)
       .call(d3.axisBottom(x).tickValues(visibleYears).tickFormat(d3.format("d")))
-      .call(g => g.select(".domain").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick line").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick text").attr("font-size", "13px").attr("fill", "#718096"));
+      .call(g => g.select(".domain").remove())
+      .call(g => g.selectAll(".tick line").remove())
+      .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
     svg.append("g")
-      .call(d3.axisLeft(y).ticks(5).tickFormat(fmtShort))
-      .call(g => g.select(".domain").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick line").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick text").attr("font-size", "13px").attr("fill", "#718096"));
+      .call(d3.axisLeft(y).ticks(CFG.tickCount).tickFormat(fmtShort))
+      .call(g => g.select(".domain").remove())
+      .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor))
+      .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
   }
 
-  // ── Chart 2: activity breakdown — two bars per activity (emissions / allowances) ─
+  // ── Chart 2: activity breakdown — one emissions bar per sector, uncovered
+  // share overlaid on it, allocation marked by a plain line ──────────────────
   function renderActivityChart(idxs) {
     const svgEl = document.getElementById("ets-svg-activity");
-    const W0 = svgEl.clientWidth, H0 = svgEl.clientHeight;
-    if (!W0 || !H0) return;
+    const W0 = svgEl.clientWidth;
+    const barThickness = fixedBarWidth();
+    if (!W0 || !barThickness) return;
 
     // Grouped by the real-activity name (installs[].ra) — already a
     // display-ready string, no lookup array needed for it.
@@ -840,7 +929,14 @@
     // matched by free allocation. mg.top makes room for that column header.
     const mg = { top: 26, right: 150, bottom: 24, left: 230 };
     const W = W0 - mg.left - mg.right;
-    const H = H0 - mg.top - mg.bottom;
+    // Rows are as thick as chart 1's bars, so the height follows from how many
+    // sectors there are rather than being set in CSS. Sizing the range this
+    // way makes scaleBand's bandwidth come out exactly at barThickness.
+    const rowStep = barThickness / (1 - CFG.barPaddingActivity);
+    const H = data.length
+      ? rowStep * (data.length + CFG.barPaddingActivity)
+      : 80; // nothing to plot — just enough room for the empty-state message
+    svgEl.style.height = (H + mg.top + mg.bottom) + "px";
 
     d3.select(svgEl).selectAll("*").remove();
     const svg = d3.select(svgEl).append("g").attr("transform", `translate(${mg.left},${mg.top})`);
@@ -863,37 +959,25 @@
     // of repeating on every row.
     const shareText = d => `${Math.round(d.a / d.e * 100)} %`;
 
-    // Same encoding as chart 1: a light "covered" portion, a dark "deficit"
-    // cap when emissions exceed allocation, a light hatched cap when
-    // allocation exceeds emissions, and a black line marking the exact
-    // allocation value.
+    // Same encoding as chart 1 — one emissions bar with the uncovered share
+    // overlaid — except the allocation marker is a plain line per row, never
+    // a staircase (the rows are sectors, not a time series).
     data.forEach(d => {
-      d.covered = Math.min(d.e, d.a);
       d.surplus = Math.max(d.a - d.e, 0);
       d.deficit = Math.max(d.e - d.a, 0);
-      d.top = d.covered + d.surplus + d.deficit; // = max(e, a)
+      d.top = Math.max(d.e, d.a);
     });
 
     const maxVal = d3.max(data, d => d.top) || 1;
-    const y = d3.scaleBand().domain(data.map(d => d.key)).range([0, H]).padding(0.3);
+    const y = d3.scaleBand().domain(data.map(d => d.key)).range([0, H]).padding(CFG.barPaddingActivity);
     const x = d3.scaleLinear().domain([0, maxVal]).range([0, Math.max(W - labelGutter, 40)]).nice();
 
-    const defs = svg.append("defs");
-    defs.append("pattern")
-      .attr("id", "ets-hatch-surplus-activity")
-      .attr("width", 6).attr("height", 6)
-      .attr("patternUnits", "userSpaceOnUse")
-      .attr("patternTransform", "rotate(45)")
-      .call(p => {
-        p.append("rect").attr("width", 6).attr("height", 6).attr("fill", COLOR_ALLOCATION_SURPLUS);
-        p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6)
-          .attr("stroke", "#fff").attr("stroke-width", 2.5).attr("opacity", 0.6);
-      });
+    if (CFG.showSurplus) addHatch(svg.append("defs"), "ets-hatch-surplus-activity");
 
     svg.append("g")
-      .call(d3.axisBottom(x).tickSize(H).tickFormat("").ticks(5))
+      .call(d3.axisBottom(x).tickSize(H).tickFormat("").ticks(CFG.tickCountActivity))
       .call(g => g.select(".domain").remove())
-      .call(g => g.selectAll(".tick line").attr("stroke", "#edf2f7").attr("stroke-dasharray", "3,3").attr("y1", -H));
+      .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor).attr("y1", -H));
 
     function tipHtml(d) {
       const extra = d.surplus > 0
@@ -907,36 +991,40 @@
         extra;
     }
 
-    svg.selectAll(".a-bar-covered")
-      .data(data).join("rect").attr("class", "a-bar-covered")
+    svg.selectAll(".a-bar-emissions")
+      .data(data).join("rect").attr("class", "a-bar-emissions")
       .attr("y", d => y(d.key)).attr("x", 0)
-      .attr("height", y.bandwidth()).attr("width", d => x(d.covered))
-      .attr("fill", COLOR_ALLOCATION_SURPLUS)
+      .attr("height", y.bandwidth()).attr("width", d => x(d.e))
+      .attr("fill", CFG.colorEmissions)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
-    svg.selectAll(".a-bar-deficit")
-      .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-deficit")
-      .attr("y", d => y(d.key)).attr("x", d => x(d.covered))
-      .attr("height", y.bandwidth()).attr("width", d => x(d.covered + d.deficit) - x(d.covered))
-      .attr("fill", COLOR_COVERED)
+    svg.selectAll(".a-bar-uncovered")
+      .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-uncovered")
+      .attr("y", d => y(d.key)).attr("x", d => x(d.a))
+      .attr("height", y.bandwidth()).attr("width", d => x(d.e) - x(d.a))
+      .attr("fill", CFG.colorUncovered)
       .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
-    svg.selectAll(".a-bar-surplus")
-      .data(data.filter(d => d.surplus > 0)).join("rect").attr("class", "a-bar-surplus")
-      .attr("y", d => y(d.key)).attr("x", d => x(d.covered))
-      .attr("height", y.bandwidth()).attr("width", d => x(d.covered + d.surplus) - x(d.covered))
-      .attr("fill", "url(#ets-hatch-surplus-activity)")
-      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
-      .on("mousemove", moveTip).on("mouseout", hideTip);
+    if (CFG.showSurplus) {
+      svg.selectAll(".a-bar-surplus")
+        .data(data.filter(d => d.surplus > 0)).join("rect").attr("class", "a-bar-surplus")
+        .attr("y", d => y(d.key)).attr("x", d => x(d.e))
+        .attr("height", y.bandwidth()).attr("width", d => x(d.a) - x(d.e))
+        .attr("fill", "url(#ets-hatch-surplus-activity)")
+        .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
+        .on("mousemove", moveTip).on("mouseout", hideTip);
+    }
 
-    svg.selectAll(".a-line-allocation")
-      .data(data)
-      .join("line").attr("class", "a-line-allocation")
-      .attr("y1", d => y(d.key)).attr("y2", d => y(d.key) + y.bandwidth())
-      .attr("x1", d => x(d.a)).attr("x2", d => x(d.a))
-      .attr("stroke", "#1a202c").attr("stroke-width", 3);
+    markerPasses(CFG.lineWidthActivity).forEach(([stroke, width], i) => {
+      svg.selectAll(".a-line-allocation-" + i)
+        .data(data)
+        .join("line").attr("class", "a-line-allocation-" + i)
+        .attr("y1", d => y(d.key)).attr("y2", d => y(d.key) + y.bandwidth())
+        .attr("x1", d => x(d.a)).attr("x2", d => x(d.a))
+        .attr("stroke", stroke).attr("stroke-width", width);
+    });
 
     svg.selectAll(".a-bar-label")
       .data(data.filter(d => d.e > 0))
@@ -944,7 +1032,7 @@
       .attr("x", d => x(d.top) + 8)
       .attr("y", d => y(d.key) + y.bandwidth() / 2)
       .attr("dy", "0.32em")
-      .attr("font-size", "13.5px")
+      .attr("font-size", CFG.valueFontSize + "px")
       .attr("fill", "#718096")
       .text(coverageText);
 
@@ -955,8 +1043,8 @@
     svg.append("text")
       .attr("x", W + mg.right - 16).attr("y", -12)
       .attr("text-anchor", "end")
-      .attr("font-size", "13px")
-      .attr("fill", COLOR_ALLOCATION_SURPLUS)
+      .attr("font-size", CFG.axisFontSize + "px")
+      .attr("fill", CFG.axisTextColor)
       .text("Povolenky zdarma");
 
     svg.selectAll(".a-share-label")
@@ -966,7 +1054,7 @@
       .attr("y", d => y(d.key) + y.bandwidth() / 2)
       .attr("dy", "0.32em")
       .attr("text-anchor", "end")
-      .attr("font-size", "13.5px")
+      .attr("font-size", CFG.valueFontSize + "px")
       .attr("font-weight", "600")
       .attr("fill", "#2d3748")
       .text(shareText);
@@ -975,14 +1063,14 @@
       .call(d3.axisLeft(y))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").remove())
-      .call(g => g.selectAll(".tick text").attr("font-size", "14px").attr("fill", "#718096")
+      .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisLabelFontSize + "px").attr("fill", CFG.axisTextColor)
         .call(wrapText, mg.left - 20, -10));
 
     svg.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).ticks(5).tickFormat(fmtShort))
-      .call(g => g.select(".domain").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick line").attr("stroke", "#e2e8f0"))
-      .call(g => g.selectAll(".tick text").attr("font-size", "12px").attr("fill", "#718096"));
+      .call(d3.axisBottom(x).ticks(CFG.tickCountActivity).tickFormat(fmtShort))
+      .call(g => g.select(".domain").remove())
+      .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor))
+      .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
   }
 
   // Wrap long activity-name axis labels onto two lines instead of overflowing.
@@ -1110,7 +1198,7 @@
         return `M${x0},${y0t} C${xm},${y0t} ${xm},${y1t} ${x1},${y1t} ` +
           `L${x1},${y1b} C${xm},${y1b} ${xm},${y0b} ${x0},${y0b} Z`;
       })
-      .attr("fill", COLOR_COVERED).attr("fill-opacity", 0.28).attr("stroke", "none")
+      .attr("fill", CFG.colorUncovered).attr("fill-opacity", 0.28).attr("stroke", "none")
       .on("mouseover", (ev, l) => showTip(ev,
         `<strong>${l.act}</strong> → <strong>${l.ra}</strong><br>${fmt(l.value * 1e6)}`))
       .on("mousemove", moveTip).on("mouseout", hideTip);
@@ -1145,11 +1233,11 @@
         .append("rect")
         .attr("x", x).attr("width", BAR_W)
         .attr("y", n => layoutPos.get(n).barY).attr("height", n => layoutPos.get(n).barH)
-        .attr("rx", 2).attr("fill", COLOR_ALLOCATION_SURPLUS);
+        .attr("rx", 2).attr("fill", CFG.colorEmissions);
       svg.selectAll(null)
         .data(names).enter()
         .append("text")
-        .attr("text-anchor", anchor).attr("font-size", "13px").attr("fill", "#718096")
+        .attr("text-anchor", anchor).attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
         .each(function (n) {
           const lines = wrapLabelByChars(n, 26);
           const cy = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
@@ -1188,6 +1276,8 @@
   setupControls();
   update();
   renderSankeyChart();
+  // Redraw hook for the dev sidebar (?dev=1) after it mutates CFG.
+  window.ETS_REDRAW = () => { update(); renderSankeyChart(); };
   window.addEventListener("resize", () => {
     const idxs = getFilteredInstallIndices();
     renderTimeline(idxs);
