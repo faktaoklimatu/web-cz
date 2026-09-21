@@ -12,6 +12,9 @@ intro: |
 extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/ets-dashboard.js
+# TEMPORARY: chart-tuning sidebar, only renders with ?dev=1 — delete both this
+# line and assets-local/js/ets-dev-sidebar.js once the chart look is final.
+- /assets-local/js/ets-dev-sidebar.js
 preview_type: "Interaktivní přehled"
 include_in_search: true
 ---
@@ -20,7 +23,23 @@ include_in_search: true
   window.ETS_DASHBOARD = {{ site.data["ets-dashboard"] | jsonify }};
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
+
 <style>
+/* ── Chart look tokens ─────────────────────────────────────────────────────
+   Mirror of the CFG block in assets-local/js/ets-dashboard.js — the SVG
+   charts read CFG, these swatches/sizes read the variables. Keep both in
+   sync (the ?dev=1 sidebar sets both at once and can copy out a snippet).  */
+:root {
+  --ets-emissions: #1b4c6f;
+  --ets-uncovered: #8ba1b1;
+  --ets-alloc: #fffafa;           /* hatch background */
+  --ets-hatch: #ff9c66;           /* hatch stripes */
+  --ets-line: #000000;
+  --ets-chart-height: 340px;      /* sankey + fallback */
+  --ets-timeline-height: 340px;   /* chart 1; chart 2's height is derived in JS */
+}
+
 /* ── Title / perex ─────────────────────────────────────────────────────────── */
 #secondary-navbar {
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
@@ -187,9 +206,16 @@ include_in_search: true
   border: 1px solid #e2e8f0; padding: 16px 18px;
   margin-bottom: 16px;
 }
+/* Everything drawn inside a chart panel — SVG text, legend, panel title —
+   plus the tooltip the charts render. SVG <text> has no font-family of its
+   own, so it inherits this. */
+.chart-panel, #tooltip {
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
 .chart-panel h2 { font-size: 17px; font-weight: 700; color: #2d3748; margin: 0; }
 .filter-summary { font-size: 14px; font-weight: 500; color: #718096; margin-bottom: 16px; }
-.chart-panel svg { width: 100%; height: 340px; display: block; }
+.chart-panel svg { width: 100%; height: var(--ets-chart-height); display: block; }
+#ets-svg-timeline { height: var(--ets-timeline-height); }
 .panel-header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .panel-title-group { flex: 1; min-width: 200px; }
 .legend { display: flex; gap: 14px; flex-shrink: 0; margin-top: 2px; }
@@ -197,15 +223,11 @@ include_in_search: true
 .legend-swatch { width: 14px; height: 3px; border-radius: 1px; }
 .legend-swatch.sq { height: 10px; border-radius: 2px; }
 .legend-swatch.hatch-light {
-  background-color: #7994AB;
-  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.75) 0, rgba(255,255,255,0.75) 1.5px, transparent 1.5px, transparent 4px);
+  background-color: var(--ets-alloc);
+  background-image: repeating-linear-gradient(45deg, var(--ets-hatch) 0, var(--ets-hatch) 3px, transparent 3px, transparent 4px);
+  border: 1px solid #cbd5e0;
 }
-.legend-swatch.line-box {
-  background-color: #7994AB;
-  border-top: 3px solid #1a202c;
-  box-sizing: border-box;
-  height: 10px;
-}
+.legend-swatch.line-alloc { background: var(--ets-line); }
 
 #tooltip {
   position: fixed; background: #1a202c; color: #e2e8f0;
@@ -318,9 +340,10 @@ include_in_search: true
           <h2 id="ets-timeline-title">Vývoj v čase</h2>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#506D87"></div>Emise</div>
-          <div class="legend-item"><div class="legend-swatch sq line-box"></div>Bezplatné povolenky</div>
-          <div class="legend-item"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-emissions)"></div>Emise</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-uncovered)"></div>Emise nepokryté povolenkami zdarma</div>
+          <div class="legend-item"><div class="legend-swatch line-alloc"></div>Bezplatné povolenky</div>
+          <div class="legend-item legend-surplus"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
       </div>
       <svg id="ets-svg-timeline"></svg>
@@ -332,9 +355,10 @@ include_in_search: true
           <h2>Kolik emisí pokryly povolenky zdarma?</h2>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:#506D87"></div>Emise</div>
-          <div class="legend-item"><div class="legend-swatch sq line-box"></div>Bezplatné povolenky</div>
-          <div class="legend-item"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-emissions)"></div>Emise</div>
+          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-uncovered)"></div>Emise nepokryté povolenkami zdarma</div>
+          <div class="legend-item"><div class="legend-swatch line-alloc"></div>Bezplatné povolenky</div>
+          <div class="legend-item legend-surplus"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
       </div>
       <svg id="ets-svg-activity"></svg>
