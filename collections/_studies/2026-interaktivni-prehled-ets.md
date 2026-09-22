@@ -38,6 +38,9 @@ include_in_search: true
   --ets-line: #000000;
   --ets-chart-height: 340px;      /* sankey + fallback */
   --ets-timeline-height: 340px;   /* chart 1; chart 2's height is derived in JS */
+  --ets-title-size-1: 21px;       /* chart 1 heading */
+  --ets-title-size-2: 21px;       /* chart 2 heading */
+  --ets-legend-size: 13px;        /* legend text, both charts */
 }
 
 /* ── Title / perex ─────────────────────────────────────────────────────────── */
@@ -221,15 +224,25 @@ include_in_search: true
   font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 .chart-panel h2 { font-size: 17px; font-weight: 700; color: #2d3748; margin: 0; }
+.chart-panel h2 .title-period { font-weight: 400; }
+#ets-timeline-title { font-size: var(--ets-title-size-1); }
+#ets-activity-title { font-size: var(--ets-title-size-2); }
 .filter-summary { font-size: 14px; font-weight: 500; color: #718096; margin-bottom: 16px; }
 .chart-panel svg { width: 100%; height: var(--ets-chart-height); display: block; }
 #ets-svg-timeline { height: var(--ets-timeline-height); }
-.panel-header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
-.panel-title-group { flex: 1; min-width: 200px; }
-.legend { display: flex; gap: 14px; flex-shrink: 0; margin-top: 2px; }
+/* The heading takes a full row of its own (flex-basis 100% forces the wrap),
+   so it has the whole chart width for a long generated title. The legend and
+   chart 2's grouping switch then share the row underneath it. */
+.panel-header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.panel-title-group { flex: 0 0 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 2px; min-width: 0; }
 /* Grouping switch for chart 2 — scoped to that chart, unlike the page-wide
    filters in the bar at the top. */
-.seg { display: inline-flex; border: 1px solid #ced4da; border-radius: 4px; overflow: hidden; flex-shrink: 0; }
+.seg {
+  display: inline-flex; border: 1px solid #ced4da; border-radius: 4px;
+  overflow: hidden; flex-shrink: 0;
+  margin-left: auto;   /* sits at the right end of the row under the heading */
+}
 .seg button {
   background: #fff; border: none; padding: 4px 12px; cursor: pointer;
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; color: #515b66;
@@ -237,15 +250,25 @@ include_in_search: true
 .seg button + button { border-left: 1px solid #ced4da; }
 .seg button:hover:not(.active) { background: #f0f3f5; }
 .seg button.active { background: #515b66; color: #fff; }
-.legend-item { display: flex; align-items: center; gap: 5px; font-size: 13px; ; font-weight: 500; color: #718096; white-space: nowrap; }
-.legend-swatch { width: 14px; height: 3px; border-radius: 1px; }
-.legend-swatch.sq { height: 10px; border-radius: 2px; }
-.legend-swatch.hatch-light {
-  background-color: var(--ets-alloc);
-  background-image: repeating-linear-gradient(45deg, var(--ets-hatch) 0, var(--ets-hatch) 3px, transparent 3px, transparent 4px);
-  border: 1px solid #cbd5e0;
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: var(--ets-legend-size); font-weight: 500; white-space: nowrap; }
+/* Square, not a wide bar, and each label carries its own swatch colour. */
+.legend-swatch {
+  width: 12px; height: 12px; border-radius: 0; flex-shrink: 0;
+  box-sizing: border-box; overflow: hidden; line-height: 0;
 }
-.legend-swatch.line-alloc { background: var(--ets-line); }
+/* The allocation is drawn as a marker line in both charts, so its swatch is a
+   line too, not a filled square like the area series. */
+.legend-item.li-line .legend-swatch { width: 14px; height: 3px; }
+.legend-item.li-emissions { color: var(--ets-emissions); }
+.legend-item.li-uncovered { color: var(--ets-uncovered); }
+.legend-item.li-line      { color: var(--ets-line); }
+.legend-item.li-hatch     { color: var(--ets-hatch); }
+.legend-item.li-emissions .legend-swatch { background: var(--ets-emissions); }
+.legend-item.li-uncovered .legend-swatch { background: var(--ets-uncovered); }
+.legend-item.li-line      .legend-swatch { background: var(--ets-line); }
+/* Filled by renderLegendSwatches() with the chart's own SVG hatch pattern;
+   the background is only what shows before that runs. */
+.legend-swatch.hatch-light { background: var(--ets-alloc); border: 1px solid #cbd5e0; }
 
 #tooltip {
   position: fixed; background: #1a202c; color: #e2e8f0;
@@ -362,10 +385,10 @@ include_in_search: true
           <h2 id="ets-timeline-title">Vývoj v čase</h2>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-emissions)"></div>Emise</div>
-          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-uncovered)"></div>Emise nepokryté povolenkami zdarma</div>
-          <div class="legend-item"><div class="legend-swatch line-alloc"></div>Bezplatné povolenky</div>
-          <div class="legend-item legend-surplus"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
+          <div class="legend-item li-emissions"><div class="legend-swatch"></div>Emise pokryté povolenkami zdarma</div>
+          <div class="legend-item li-uncovered"><div class="legend-swatch"></div>Emise nepokryté povolenkami zdarma</div>
+          <div class="legend-item li-line"><div class="legend-swatch"></div>Povolenky zdarma</div>
+          <div class="legend-item li-hatch legend-surplus"><div class="legend-swatch hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
       </div>
       <svg id="ets-svg-timeline"></svg>
@@ -374,13 +397,13 @@ include_in_search: true
     <div class="chart-panel">
       <div class="panel-header">
         <div class="panel-title-group">
-          <h2>Kolik emisí pokryly povolenky zdarma?</h2>
+          <h2 id="ets-activity-title">Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?</h2>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-emissions)"></div>Emise</div>
-          <div class="legend-item"><div class="legend-swatch sq" style="background:var(--ets-uncovered)"></div>Emise nepokryté povolenkami zdarma</div>
-          <div class="legend-item"><div class="legend-swatch line-alloc"></div>Bezplatné povolenky</div>
-          <div class="legend-item legend-surplus"><div class="legend-swatch sq hatch-light"></div>Povolenky zdarma alokované navíc</div>
+          <div class="legend-item li-emissions"><div class="legend-swatch"></div>Emise pokryté povolenkami zdarma</div>
+          <div class="legend-item li-uncovered"><div class="legend-swatch"></div>Emise nepokryté povolenkami zdarma</div>
+          <div class="legend-item li-line"><div class="legend-swatch"></div>Povolenky zdarma</div>
+          <div class="legend-item li-hatch legend-surplus"><div class="legend-swatch hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
         <div class="seg" id="ets-activity-groupby">
           <button type="button" data-group="ra" class="active">Odvětví</button>

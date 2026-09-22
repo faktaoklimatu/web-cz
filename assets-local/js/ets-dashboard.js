@@ -90,9 +90,12 @@
       : [[CFG.colorLine, width]];
   }
 
-  // One hatch definition for both charts, fully CFG-driven.
-  function addHatch(defs, id) {
-    const s = CFG.hatchSize;
+  // One hatch definition for both charts and the legend swatches, fully
+  // CFG-driven. `scale` shrinks the whole pattern (tile and stroke together),
+  // so a scaled copy stays the same pattern rather than a different one.
+  function addHatch(defs, id, scale) {
+    scale = scale || 1;
+    const s = CFG.hatchSize * scale;
     defs.append("pattern")
       .attr("id", id)
       .attr("width", s).attr("height", s)
@@ -101,7 +104,7 @@
       .call(p => {
         p.append("rect").attr("width", s).attr("height", s).attr("fill", CFG.colorAlloc);
         p.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", s)
-          .attr("stroke", CFG.hatchColor).attr("stroke-width", CFG.hatchStroke)
+          .attr("stroke", CFG.hatchColor).attr("stroke-width", CFG.hatchStroke * scale)
           .attr("opacity", CFG.hatchOpacity);
       });
   }
@@ -288,11 +291,17 @@
     return getIndustrialRealActivities().filter(ra => available.has(ra) || state.realActivities.has(ra));
   }
 
+  function isWholeIndustrySelected() {
+    const industrial = getSelectableIndustrialRealActivities();
+    return industrial.length > 0 &&
+      state.realActivities.size === industrial.length &&
+      industrial.every(ra => state.realActivities.has(ra));
+  }
+
   function refreshRealActivityToggle() {
     const btn = document.getElementById("ets-real-activity-toggle");
     const sel = state.realActivities;
-    const industrial = getSelectableIndustrialRealActivities();
-    const isWholeIndustryGroup = sel.size === industrial.length && industrial.every(ra => sel.has(ra));
+    const isWholeIndustryGroup = isWholeIndustrySelected();
     if (sel.size === 0 || isEverySelected(sel, sortedRealActivities.length))
       btn.textContent = "Všechna odvětví";
     else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
@@ -839,6 +848,67 @@
   }
   function hideTip() { tip.style.display = "none"; }
 
+  // The hatch swatch in both legends is drawn with the chart's own pattern
+  // rather than approximated in CSS: a repeating-linear-gradient rotates the
+  // opposite way to SVG's patternTransform, so it would mirror the stripes,
+  // and it could not follow the angle/width at all.
+  const LEGEND_HATCH_SCALE = 0.7;
+  function renderLegendSwatches() {
+    document.querySelectorAll(".legend-swatch.hatch-light").forEach((el, i) => {
+      el.innerHTML = "";
+      const id = "ets-hatch-legend-" + i;
+      const svg = d3.select(el).append("svg")
+        .attr("width", "100%").attr("height", "100%");
+      addHatch(svg.append("defs"), id, LEGEND_HATCH_SCALE);
+      svg.append("rect").attr("width", "100%").attr("height", "100%")
+        .attr("fill", `url(#${id})`);
+    });
+  }
+
+  // ── Chart 1 title ─────────────────────────────────────────────────────────
+  // Names the narrowest scope it can state cleanly. There is no subtitle, so a
+  // phrase must never claim more than is really selected — hence the
+  // "vybraných …" forms whenever a facet holds several values that cannot all
+  // be named. Proper names (an installation, an owner) lead the sentence;
+  // categories follow the "Emise a povolenky zdarma …" stem.
+
+  // Built from the years actually plotted, not the slider, so a selection whose
+  // data starts later does not claim a period it has no bars for.
+  function periodPhrase(years) {
+    const from = years.length ? years[0] : state.yearFrom;
+    const to = years.length ? years[years.length - 1] : state.yearTo;
+    return from === to ? `v roce ${from}` : `za období ${from}–${to}`;
+  }
+
+  function sectorPhrase(ra) {
+    // The catch-all would otherwise read "v odvětví ostatní odvětví".
+    if (normalizeActName(ra) === REAL_ACTIVITY_OTHER) return "v ostatních odvětvích";
+    // A trailing parenthetical is an explanatory gloss ("Ostatní minerály
+    // (keramika, cihly, …)") — useful on an axis, far too long in a headline.
+    const name = ra.replace(/\s*\(.*\)\s*$/, "");
+    return "v odvětví " + name.charAt(0).toLowerCase() + name.slice(1);
+  }
+
+  // Returns the parts separately: the period is set in regular weight, so it
+  // goes in its own element rather than into one string.
+  function timelineTitle(years) {
+    const period = periodPhrase(years);
+    const named = subject => ({ lead: `${subject}: emise a povolenky zdarma`, period });
+    const about = phrase => ({ lead: `Emise a povolenky zdarma ${phrase}`, period });
+
+    if (state.installs.size === 1) return named(INSTALLS[[...state.installs][0]].n);
+    if (state.installs.size > 1) return about("ve vybraných zařízeních");
+    if (state.companies.size === 1) return named([...state.companies][0]);
+    if (state.companies.size > 1) return about("u vybraných vlastníků");
+
+    const sel = state.realActivities;
+    if (sel.size === 0 || isEverySelected(sel, sortedRealActivities.length))
+      return about("v sektorech EU ETS");
+    if (isWholeIndustrySelected()) return about("v průmyslu");
+    if (sel.size === 1) return about(sectorPhrase([...sel][0]));
+    return about("ve vybraných odvětvích");
+  }
+
   // ── Chart 1: timeline — one emissions bar per year, uncovered share
   // overlaid on it, allocation drawn as a marker (optionally a staircase) ──
   function renderTimeline(idxs) {
@@ -866,13 +936,6 @@
       });
     });
 
-    if (state.installs.size === 1) {
-      const inst = INSTALLS[[...state.installs][0]];
-      document.getElementById("ets-timeline-title").textContent = inst.n;
-    } else {
-      document.getElementById("ets-timeline-title").textContent = "Emise a povolenky zdarma v čase";
-    }
-
     const allYears = d3.range(YEAR_MIN, YEAR_MAX + 1);
     const dataMap = byYear;
     allYears.forEach(yr => {
@@ -882,6 +945,15 @@
       d.top = Math.max(d.e, d.a);
     });
     const visibleYears = allYears.filter(yr => dataMap[yr] && state.yearFrom <= yr && yr <= state.yearTo);
+    // Built as nodes, not innerHTML: the lead carries installation and owner
+    // names straight from the dataset.
+    const { lead, period } = timelineTitle(visibleYears);
+    const titleEl = document.getElementById("ets-timeline-title");
+    titleEl.textContent = lead + " ";
+    const periodEl = document.createElement("span");
+    periodEl.className = "title-period";
+    periodEl.textContent = period;
+    titleEl.appendChild(periodEl);
     const maxVal = d3.max(visibleYears, yr => dataMap[yr].top) || 1;
     // Bar width is fixed at whatever it is for the full year span, so
     // narrowing the selection makes the chart narrower instead of making the
@@ -1027,6 +1099,9 @@
     // installation, so neither needs a lookup array.
     const byOwner = activityGroupBy === "own";
     const keyOf = i => (byOwner ? INSTALLS[i].own : INSTALLS[i].ra) || "Neuvedeno";
+    document.getElementById("ets-activity-title").textContent = byOwner
+      ? "Kolik vybraných emisí pokryly povolenky zdarma podle vlastníka?"
+      : "Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?";
 
     const byKey = {};
     idxs.forEach(i => {
@@ -1405,6 +1480,7 @@
 
   // ── Update ────────────────────────────────────────────────────────────────
   function update() {
+    renderLegendSwatches();
     const idxs = getFilteredInstallIndices();
     updateFilterSummary(idxs);
     updateKPIs(idxs);
