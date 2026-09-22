@@ -25,12 +25,15 @@
   // Chart 2's height is derived in JS from its row count (rows are as thick
   // as chart 1's bars), so only chart 1's height is settable here.
   const CSS_LEN = {
-    timelineHeight: "--ets-timeline-height",
+    timelineHeight: ["--ets-timeline-height", 340],
+    titleSize1: ["--ets-title-size-1", 21],
+    titleSize2: ["--ets-title-size-2", 21],
+    legendSize: ["--ets-legend-size", 13],
   };
   const lens = {};
   const rootStyle = getComputedStyle(document.documentElement);
-  Object.entries(CSS_LEN).forEach(([k, v]) => {
-    lens[k] = parseInt(rootStyle.getPropertyValue(v)) || 340;
+  Object.entries(CSS_LEN).forEach(([k, [cssVar, fallback]]) => {
+    lens[k] = parseFloat(rootStyle.getPropertyValue(cssVar)) || fallback;
   });
 
   // Colours, hatch and typography are deliberately shared by both charts —
@@ -51,12 +54,14 @@
       ["lineWidth", "Tloušťka čáry alokace", "range", 0, 8, 0.5],
       ["tickCount", "Počet dílků na ose", "range", 2, 12, 1],
       ["timelineHeight", "Výška grafu (px)", "range", 200, 700, 10],
+      ["titleSize1", "Velikost nadpisu (px)", "range", 11, 44, 1],
     ]],
     ["Graf 2 — pokrytí podle odvětví", [
       ["barPaddingActivity", "Mezera mezi odvětvími", "range", 0, 0.8, 0.01],
       ["lineWidthActivity", "Tloušťka čáry alokace", "range", 0, 8, 0.5],
       ["tickCountActivity", "Počet dílků na ose", "range", 2, 12, 1],
       ["minBarActivity", "Min. tloušťka řádku (px)", "range", 0, 60, 1],
+      ["titleSize2", "Velikost nadpisu (px)", "range", 11, 44, 1],
     ]],
     ["Čára alokace (společné)", [
       ["haloWidth", "Šířka odsazení (0 = vypnuto)", "range", 0, 6, 0.25],
@@ -73,6 +78,7 @@
       ["axisFontSize", "Popisky os", "range", 8, 22, 0.5],
       ["axisLabelFontSize", "Názvy odvětví", "range", 8, 24, 0.5],
       ["valueFontSize", "Hodnoty v grafu", "range", 8, 22, 0.5],
+      ["legendSize", "Velikost legendy (px)", "range", 8, 24, 0.5],
     ]],
   ];
 
@@ -89,7 +95,7 @@
   function set(k, v) {
     if (k in CSS_LEN) {
       lens[k] = v;
-      document.documentElement.style.setProperty(CSS_LEN[k], v + "px");
+      document.documentElement.style.setProperty(CSS_LEN[k][0], v + "px");
       return;
     }
     CFG[k] = v;
@@ -139,7 +145,7 @@
     Object.entries(inputs).forEach(([k, { input, out, type }]) => {
       const val = get(k);
       if (type === "checkbox") input.checked = !!val; else input.value = val;
-      if (out) out.textContent = val;
+      if (out) out.value = val;
     });
     recent = [name, ...recent.filter(n => n !== name)].slice(0, 2);
     renderViews();
@@ -168,16 +174,21 @@
   .ets-dev-body { padding: 8px 10px 10px; }
   .ets-dev-group { font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
     font-size: 10px; color: #718096; margin: 12px 0 4px;
-    border-top: 1px solid #edf2f7; padding-top: 8px; }
+    border-top: 1px solid #edf2f7; padding-top: 8px;
+    cursor: pointer; user-select: none; display: flex; gap: 5px; align-items: center; }
+  .ets-dev-group:hover { color: #2d3748; }
   .ets-dev-group:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+  .ets-dev-caret { display: inline-block; width: 8px; transition: transform .12s; }
+  .ets-dev-group.collapsed .ets-dev-caret { transform: rotate(-90deg); }
   .ets-dev-row { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
   .ets-dev-row label { flex: 1 1 auto; }
-  .ets-dev-row input[type=range] { flex: 0 0 90px; width: 90px; }
+  .ets-dev-row input[type=range] { flex: 0 0 76px; width: 76px; min-width: 0; }
   .ets-dev-row input[type=color] { flex: 0 0 34px; width: 34px; height: 22px; padding: 0;
     border: 1px solid #cbd5e0; background: none; }
   .ets-dev-row input[type=checkbox] { flex: 0 0 auto; margin: 0; }
-  .ets-dev-row output { flex: 0 0 34px; text-align: right; font-variant-numeric: tabular-nums;
-    color: #718096; }
+  .ets-dev-row input.ets-dev-num { flex: 0 0 52px; width: 52px; padding: 1px 3px;
+    border: 1px solid #cbd5e0; border-radius: 3px; font: inherit; text-align: right;
+    font-variant-numeric: tabular-nums; color: #2d3748; }
   .ets-dev-view { display: flex; align-items: center; gap: 6px; padding: 3px 6px;
     border-radius: 4px; cursor: pointer; }
   .ets-dev-view:hover { background: #edf2f7; }
@@ -209,8 +220,30 @@
       <button type="button" id="ets-dev-flip" title="klávesa: mezerník">⇄ Blikat A/B</button>
     </div>`);
 
+  // Collapsed groups are remembered, so a panel folded down to the section you
+  // are working in stays that way across the reloads a tuning session involves.
+  const COLLAPSE_STORE = "ets-dev-collapsed";
+  let collapsed;
+  try { collapsed = new Set(JSON.parse(localStorage.getItem(COLLAPSE_STORE) || "[]")); }
+  catch (e) { collapsed = new Set(); }
+
   FIELDS.forEach(([group, rows]) => {
-    body.insertAdjacentHTML("beforeend", `<div class="ets-dev-group">${group}</div>`);
+    const head = document.createElement("div");
+    head.className = "ets-dev-group" + (collapsed.has(group) ? " collapsed" : "");
+    head.innerHTML = `<span class="ets-dev-caret">▾</span><span>${group}</span>`;
+    const box = document.createElement("div");
+    box.hidden = collapsed.has(group);
+    head.addEventListener("click", () => {
+      const isCollapsed = !box.hidden;
+      box.hidden = isCollapsed;
+      head.classList.toggle("collapsed", isCollapsed);
+      if (isCollapsed) collapsed.add(group); else collapsed.delete(group);
+      try { localStorage.setItem(COLLAPSE_STORE, JSON.stringify([...collapsed])); }
+      catch (e) { /* ignore */ }
+    });
+    body.appendChild(head);
+    body.appendChild(box);
+
     rows.forEach(([key, label, type, min, max, step]) => {
       const row = document.createElement("div");
       row.className = "ets-dev-row";
@@ -218,21 +251,30 @@
       const attrs = type === "range" ? `min="${min}" max="${max}" step="${step}" value="${v}"`
                   : type === "checkbox" ? (v ? "checked" : "")
                   : `value="${v}"`;
+      // Ranges get a number box beside them: the slider is for feeling out a
+      // value, the box for typing an exact one (and for going past the
+      // slider's range when needed).
       row.innerHTML = `<label>${label}</label>
         <input type="${type}" ${attrs}>
-        ${type === "range" ? `<output>${v}</output>` : ""}`;
+        ${type === "range" ? `<input type="number" class="ets-dev-num" step="${step}" value="${v}">` : ""}`;
       const input = row.querySelector("input");
-      const out = row.querySelector("output");
+      const out = row.querySelector(".ets-dev-num");
       inputs[key] = { input, out, type };
+      const push = val => { set(key, val); apply(); };
       input.addEventListener("input", () => {
         const val = type === "range" ? parseFloat(input.value)
                   : type === "checkbox" ? input.checked
                   : input.value;
-        set(key, val);
-        if (out) out.textContent = val;
-        apply();
+        if (out) out.value = val;
+        push(val);
       });
-      body.appendChild(row);
+      if (out) out.addEventListener("input", () => {
+        const val = parseFloat(out.value);
+        if (!Number.isFinite(val)) return;   // mid-typing "-" or ""
+        input.value = val;                   // slider clamps itself to its range
+        push(val);
+      });
+      box.appendChild(row);
     });
   });
 
@@ -330,7 +372,10 @@
       `  --ets-alloc: ${CFG.colorAlloc};\n` +
       `  --ets-hatch: ${CFG.hatchColor};\n` +
       `  --ets-line: ${CFG.colorLine};\n` +
-      `  --ets-timeline-height: ${lens.timelineHeight}px;\n}\n`;
+      `  --ets-timeline-height: ${lens.timelineHeight}px;\n` +
+      `  --ets-title-size-1: ${lens.titleSize1}px;\n` +
+      `  --ets-title-size-2: ${lens.titleSize2}px;\n` +
+      `  --ets-legend-size: ${lens.legendSize}px;\n}\n`;
     navigator.clipboard.writeText(text)
       .then(() => alert("Zkopírováno do schránky:\n\n" + text))
       .catch(() => prompt("Zkopírujte ručně:", text));
