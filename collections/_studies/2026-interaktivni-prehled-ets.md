@@ -37,10 +37,22 @@ include_in_search: true
   --ets-hatch: #ff9c66;           /* hatch stripes */
   --ets-line: #000000;
   --ets-chart-height: 340px;      /* sankey + fallback */
-  --ets-timeline-height: 340px;   /* chart 1; chart 2's height is derived in JS */
-  --ets-title-size-1: 21px;       /* chart 1 heading */
-  --ets-title-size-2: 21px;       /* chart 2 heading */
-  --ets-legend-size: 13px;        /* legend text, both charts */
+  --ets-timeline-height: 350px;   /* chart 1; chart 2's height is derived in JS */
+  --ets-title-size-1: 24px;       /* chart 1 heading */
+  --ets-title-size-2: 24px;       /* chart 2 heading */
+  --ets-legend-size: 14px;        /* legend text, both charts */
+  --ets-box-border: 1px;          /* chart panel outline; 0 = none */
+  --ets-kpi-label-size: 13px;     /* KPI cards — all tunable from the sidebar */
+  --ets-kpi-tracking: 0.25px;
+  --ets-kpi-value-size: 24px;   /* matches --ets-title-size-1 */
+  --ets-kpi-pad-y: 18px;
+  --ets-kpi-pad-x: 18px;
+  --ets-kpi-gap: 12px;
+  --ets-kpi-border: 1px;
+  --ets-legend-gap: 25px;         /* space under the legend row, both charts */
+  --ets-legend-gap-top: 0px;      /* space above it */
+  --ets-summary-pad-t: 14px;      /* filter-summary line, both charts */
+  --ets-summary-pad-b: 0px;
 }
 
 /* ── Title / perex ─────────────────────────────────────────────────────────── */
@@ -156,12 +168,6 @@ include_in_search: true
 .ms-options > .ms-group-label:first-child { border-top: none; margin-top: 0; }
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 
-/* Four cards need ~836px to sit in one row; below that they would wrap 3 + 1,
-   so force an even 2 + 2 instead (and one per row once even that won't fit). */
-@media (max-width: 900px) {
-  .kpi-card { flex-basis: calc(50% - 6px); }
-}
-
 @media (max-width: 640px) {
   .control-group {
     flex-basis: 100%; min-width: 0;
@@ -199,57 +205,90 @@ include_in_search: true
 .phase-annotation--right { right: 0; }
 
 /* ── KPI cards ─────────────────────────────────────────────────────────────── */
-#ets-kpi-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+#ets-kpi-row { display: flex; flex-wrap: wrap; gap: var(--ets-kpi-gap); margin: 0 0 16px; }
 .kpi-card {
-  flex: 1; min-width: 200px;
-  background: #fff; border-radius: 8px;
-  padding: 14px 18px; border: 1px solid #e2e8f0;
+  flex: 1; min-width: 180px;
+  color: #515b66;
+  padding: var(--ets-kpi-pad-y) var(--ets-kpi-pad-x);
+  border: var(--ets-kpi-border) solid #e2e8f0;
+  border-radius: 8px;
 }
-.kpi-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #718096; margin-bottom: 4px; }
-.kpi-value { font-size: 24px; font-weight: 700; color: #2d3748; }
-.kpi-card.coverage { flex: 0.5; min-width: 120px; }
-.kpi-card.emissions .kpi-value { color: #506D87; }
-.kpi-card.allocation .kpi-value { color: #7994AB; }
+.kpi-label {
+  font-size: var(--ets-kpi-label-size); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--ets-kpi-tracking);
+  color: inherit; margin-bottom: 0;
+}
+.kpi-value { font-size: var(--ets-kpi-value-size); font-weight: 700; color: inherit; }
+/* Midway between --ets-emissions (#1b4c6f) and --ets-uncovered (#8ba1b1),
+   the two tones the emissions bar is drawn in. */
+.kpi-card.emissions { color: #537690; }
+.kpi-card.allocation { color: #2d3748; }
 
 /* ── Chart panels ──────────────────────────────────────────────────────────── */
 .chart-panel {
   background: #fff; border-radius: 8px;
-  border: 1px solid #e2e8f0; padding: 16px 18px;
+  border: var(--ets-box-border) solid #e2e8f0; padding: 16px 18px;
   margin-bottom: 16px;
 }
 /* Everything drawn inside a chart panel — SVG text, legend, panel title —
-   plus the tooltip the charts render. SVG <text> has no font-family of its
-   own, so it inherits this. */
-.chart-panel, #tooltip {
+   plus the tooltip the charts render and the KPI row, which sits outside the
+   panels. SVG <text> has no font-family of its own, so it inherits this. */
+.chart-panel, #tooltip, #ets-kpi-row {
   font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 .chart-panel h2 { font-size: 17px; font-weight: 700; color: #2d3748; margin: 0; }
-.chart-panel h2 .title-period { font-weight: 400; }
-#ets-timeline-title { font-size: var(--ets-title-size-1); }
-#ets-activity-title { font-size: var(--ets-title-size-2); }
-.filter-summary { font-size: 14px; font-weight: 500; color: #718096; margin-bottom: 16px; }
+/* Heads the whole first panel (title, filters, KPIs, chart), so it overrides
+   the 17px panel-heading rule above and keeps a gap under itself. */
+.chart-panel > #ets-timeline-title {
+  font-size: var(--ets-title-size-1);
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 10px;
+}
+.chart-panel > #ets-timeline-title .title-period { font-weight: 400; }
+#ets-activity-title { font-size: var(--ets-title-size-2); margin: 0 0 10px; }
+.filter-summary {
+  font-size: 14px; font-weight: 400; color: #718096; margin-bottom: 0;
+  padding: var(--ets-summary-pad-t) 0 var(--ets-summary-pad-b);
+}
 .chart-panel svg { width: 100%; height: var(--ets-chart-height); display: block; }
 #ets-svg-timeline { height: var(--ets-timeline-height); }
 /* The heading takes a full row of its own (flex-basis 100% forces the wrap),
    so it has the whole chart width for a long generated title. The legend and
    chart 2's grouping switch then share the row underneath it. */
-.panel-header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.panel-header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-bottom: var(--ets-legend-gap); }
 .panel-title-group { flex: 0 0 100%; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 2px; min-width: 0; }
-/* Grouping switch for chart 2 — scoped to that chart, unlike the page-wide
-   filters in the bar at the top. */
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: var(--ets-legend-gap-top); min-width: 0; }
+/* Grouping switch for chart 2, drawn as tabs across the top of its panel.
+   It is a direct child of .chart-panel, not of .panel-header: inside the header
+   its width came from .panel-title-group, which flex sizes to its content (the
+   heading) rather than to the panel. The negative margins then cancel the
+   panel's 16px/18px padding so the strip runs its full width. */
 .seg {
-  display: inline-flex; border: 1px solid #ced4da; border-radius: 4px;
-  overflow: hidden; flex-shrink: 0;
-  margin-left: auto;   /* sits at the right end of the row under the heading */
+  display: flex; flex-wrap: wrap;
+  margin: -16px -18px 16px;
+  width: calc(100% + 36px);
+  box-sizing: border-box;
+  background: #f7fafc;
+  border-bottom: var(--ets-box-border) solid #e2e8f0;
+  border-radius: 7px 7px 0 0;   /* 8px panel radius minus its 1px border */
 }
 .seg button {
-  background: #fff; border: none; padding: 4px 12px; cursor: pointer;
-  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; color: #515b66;
+  background: none; border: none; padding: 6px 14px; cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: #718096;
+  /* Each tab continues the strip's rule and hangs exactly one border lower, so
+     the active tab can repaint that stretch in its own white — the cut is what
+     makes it read as joined to the panel below rather than sitting on it. */
+  border-bottom: var(--ets-box-border) solid #e2e8f0;
+  margin-bottom: calc(-1 * var(--ets-box-border));
 }
-.seg button + button { border-left: 1px solid #ced4da; }
-.seg button:hover:not(.active) { background: #f0f3f5; }
-.seg button.active { background: #515b66; color: #fff; }
+.seg button + button { border-left: var(--ets-box-border) solid #e2e8f0; }
+.seg button:first-child { border-top-left-radius: 7px; }
+.seg button:hover:not(.active) { color: #515b66; }
+.seg button.active {
+  background: #fff; color: #2d3748;
+  border-bottom-color: #fff;
+}
 .legend-item { display: flex; align-items: center; gap: 5px; font-size: var(--ets-legend-size); font-weight: 500; white-space: nowrap; }
 /* Square, not a wide bar, and each label carries its own swatch colour. */
 .legend-swatch {
@@ -358,32 +397,25 @@ include_in_search: true
 <div class="section pt-4">
   <div class="container">
 
-    <div class="filter-summary" id="ets-filter-summary"></div>
-
     <div id="ets-kpi-row">
       <div class="kpi-card emissions">
-        <div class="kpi-label">Vyprodukované emise CO<sub>2</sub></div>
+        <div class="kpi-label">Vyprodukované emise</div>
         <div class="kpi-value" id="ets-kpi-e">—</div>
       </div>
       <div class="kpi-card allocation">
         <div class="kpi-label">Povolenky alokované zdarma</div>
         <div class="kpi-value" id="ets-kpi-a">—</div>
       </div>
-      <div class="kpi-card" id="ets-kpi-d-card">
-        <div class="kpi-label" id="ets-kpi-d-label">—</div>
-        <div class="kpi-value" id="ets-kpi-d">—</div>
-      </div>
       <div class="kpi-card coverage">
-        <div class="kpi-label">Pokrytí emisí povolenkami</div>
+        <div class="kpi-label">Pokrytí emisí povolenkami zdarma</div>
         <div class="kpi-value" id="ets-kpi-share">—</div>
       </div>
     </div>
 
     <div class="chart-panel">
+      <h2 id="ets-timeline-title">Vývoj v čase</h2>
+
       <div class="panel-header">
-        <div class="panel-title-group">
-          <h2 id="ets-timeline-title">Vývoj v čase</h2>
-        </div>
         <div class="legend">
           <div class="legend-item li-emissions"><div class="legend-swatch"></div>Emise pokryté povolenkami zdarma</div>
           <div class="legend-item li-uncovered"><div class="legend-swatch"></div>Emise nepokryté povolenkami zdarma</div>
@@ -392,9 +424,16 @@ include_in_search: true
         </div>
       </div>
       <svg id="ets-svg-timeline"></svg>
+
+      <div class="filter-summary" id="ets-filter-summary"></div>
     </div>
 
     <div class="chart-panel">
+      <div class="seg" id="ets-activity-groupby">
+        <button type="button" data-group="ra" class="active">Odvětví</button>
+        <button type="button" data-group="own">Vlastníci</button>
+      </div>
+
       <div class="panel-header">
         <div class="panel-title-group">
           <h2 id="ets-activity-title">Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?</h2>
@@ -405,12 +444,10 @@ include_in_search: true
           <div class="legend-item li-line"><div class="legend-swatch"></div>Povolenky zdarma</div>
           <div class="legend-item li-hatch legend-surplus"><div class="legend-swatch hatch-light"></div>Povolenky zdarma alokované navíc</div>
         </div>
-        <div class="seg" id="ets-activity-groupby">
-          <button type="button" data-group="ra" class="active">Odvětví</button>
-          <button type="button" data-group="own">Vlastníci</button>
-        </div>
       </div>
       <svg id="ets-svg-activity"></svg>
+
+      <div class="filter-summary" id="ets-activity-filter-summary"></div>
     </div>
 
 {% capture povolenky-zdarma %}

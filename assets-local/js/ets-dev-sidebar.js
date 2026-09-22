@@ -25,10 +25,22 @@
   // Chart 2's height is derived in JS from its row count (rows are as thick
   // as chart 1's bars), so only chart 1's height is settable here.
   const CSS_LEN = {
-    timelineHeight: ["--ets-timeline-height", 340],
-    titleSize1: ["--ets-title-size-1", 21],
-    titleSize2: ["--ets-title-size-2", 21],
-    legendSize: ["--ets-legend-size", 13],
+    timelineHeight: ["--ets-timeline-height", 350],
+    titleSize1: ["--ets-title-size-1", 24],
+    titleSize2: ["--ets-title-size-2", 24],
+    legendSize: ["--ets-legend-size", 14],
+    boxBorder: ["--ets-box-border", 1],
+    legendGapTop: ["--ets-legend-gap-top", 0],
+    summaryPadT: ["--ets-summary-pad-t", 14],
+    summaryPadB: ["--ets-summary-pad-b", 0],
+    legendGap: ["--ets-legend-gap", 25],
+    kpiLabelSize: ["--ets-kpi-label-size", 13],
+    kpiTracking: ["--ets-kpi-tracking", 0.25],
+    kpiValueSize: ["--ets-kpi-value-size", 24],
+    kpiPadY: ["--ets-kpi-pad-y", 18],
+    kpiPadX: ["--ets-kpi-pad-x", 18],
+    kpiGap: ["--ets-kpi-gap", 12],
+    kpiBorder: ["--ets-kpi-border", 1],
   };
   const lens = {};
   const rootStyle = getComputedStyle(document.documentElement);
@@ -66,6 +78,9 @@
     ["Čára alokace (společné)", [
       ["haloWidth", "Šířka odsazení (0 = vypnuto)", "range", 0, 6, 0.25],
     ]],
+    ["Sankey (metodologie)", [
+      ["sankeyHorizontal", "Vodorovná orientace", "checkbox"],
+    ]],
     ["Šrafování (společné)", [
       ["showSurplus", "Zobrazit alokaci navíc", "checkbox"],
       ["hatchAngle", "Úhel", "range", 0, 180, 5],
@@ -79,6 +94,22 @@
       ["axisLabelFontSize", "Názvy odvětví", "range", 8, 24, 0.5],
       ["valueFontSize", "Hodnoty v grafu", "range", 8, 22, 0.5],
       ["legendSize", "Velikost legendy (px)", "range", 8, 24, 0.5],
+      ["boxBorder", "Rámeček boxů (0 = vypnuto)", "range", 0, 4, 1],
+      ["legendGapTop", "Mezera nad legendou (px)", "range", 0, 60, 2],
+      ["legendGap", "Mezera pod legendou (px)", "range", 0, 60, 2],
+    ]],
+    ["Souhrn filtrů (oba grafy)", [
+      ["summaryPadT", "Odsazení nahoře (px)", "range", 0, 48, 1],
+      ["summaryPadB", "Odsazení dole (px)", "range", 0, 48, 1],
+    ]],
+    ["KPI karty", [
+      ["kpiLabelSize", "Velikost popisku (px)", "range", 8, 22, 0.5],
+      ["kpiTracking", "Prostrkání popisku (px)", "range", 0, 3, 0.25],
+      ["kpiValueSize", "Velikost čísla (px)", "range", 10, 48, 1],
+      ["kpiPadY", "Odsazení nahoře/dole (px)", "range", 0, 60, 2],
+      ["kpiPadX", "Odsazení po stranách (px)", "range", 0, 60, 2],
+      ["kpiGap", "Mezera mezi kartami (px)", "range", 0, 80, 2],
+      ["kpiBorder", "Rámeček karet (0 = vypnuto)", "range", 0, 4, 1],
     ]],
   ];
 
@@ -104,17 +135,24 @@
       document.querySelectorAll(".legend-surplus").forEach(el => { el.hidden = !v; });
   }
 
+  // Only knobs actually touched are remembered. Saving all of them meant one
+  // slider drag froze the entire set, so every value later committed as a new
+  // default stayed invisible behind a stale stored copy of the old one.
+  const touched = new Set();
+
   // Restore a previous session before building the inputs, so they show it.
   try {
     const saved = JSON.parse(localStorage.getItem(STORE) || "{}");
     Object.entries(saved).forEach(([k, v]) => {
-      if (k in CSS_LEN || k in CFG) set(k, v);
+      if (k in CSS_LEN || k in CFG) { set(k, v); touched.add(k); }
     });
   } catch (e) { /* ignore a corrupted/blocked store */ }
 
   const save = () => {
     const out = {};
-    FIELDS.forEach(([, rows]) => rows.forEach(([k]) => { out[k] = get(k); }));
+    FIELDS.forEach(([, rows]) => rows.forEach(([k]) => {
+      if (touched.has(k)) out[k] = get(k);
+    }));
     try { localStorage.setItem(STORE, JSON.stringify(out)); } catch (e) { /* ignore */ }
   };
 
@@ -140,7 +178,9 @@
   function applyView(name) {
     const v = views[name];
     if (!v) return;
-    Object.entries(v).forEach(([k, val]) => { if (k in CSS_LEN || k in CFG) set(k, val); });
+    Object.entries(v).forEach(([k, val]) => {
+      if (k in CSS_LEN || k in CFG) { touched.add(k); set(k, val); }
+    });
     // Push the new values back into the controls.
     Object.entries(inputs).forEach(([k, { input, out, type }]) => {
       const val = get(k);
@@ -260,7 +300,7 @@
       const input = row.querySelector("input");
       const out = row.querySelector(".ets-dev-num");
       inputs[key] = { input, out, type };
-      const push = val => { set(key, val); apply(); };
+      const push = val => { touched.add(key); set(key, val); apply(); };
       input.addEventListener("input", () => {
         const val = type === "range" ? parseFloat(input.value)
                   : type === "checkbox" ? input.checked
@@ -375,7 +415,19 @@
       `  --ets-timeline-height: ${lens.timelineHeight}px;\n` +
       `  --ets-title-size-1: ${lens.titleSize1}px;\n` +
       `  --ets-title-size-2: ${lens.titleSize2}px;\n` +
-      `  --ets-legend-size: ${lens.legendSize}px;\n}\n`;
+      `  --ets-legend-size: ${lens.legendSize}px;\n` +
+      `  --ets-box-border: ${lens.boxBorder}px;\n` +
+      `  --ets-legend-gap-top: ${lens.legendGapTop}px;\n` +
+      `  --ets-legend-gap: ${lens.legendGap}px;\n` +
+      `  --ets-summary-pad-t: ${lens.summaryPadT}px;\n` +
+      `  --ets-summary-pad-b: ${lens.summaryPadB}px;\n` +
+      `  --ets-kpi-label-size: ${lens.kpiLabelSize}px;\n` +
+      `  --ets-kpi-tracking: ${lens.kpiTracking}px;\n` +
+      `  --ets-kpi-value-size: ${lens.kpiValueSize}px;\n` +
+      `  --ets-kpi-pad-y: ${lens.kpiPadY}px;\n` +
+      `  --ets-kpi-pad-x: ${lens.kpiPadX}px;\n` +
+      `  --ets-kpi-gap: ${lens.kpiGap}px;\n` +
+      `  --ets-kpi-border: ${lens.kpiBorder}px;\n}\n`;
     navigator.clipboard.writeText(text)
       .then(() => alert("Zkopírováno do schránky:\n\n" + text))
       .catch(() => prompt("Zkopírujte ručně:", text));

@@ -30,6 +30,7 @@
     barPaddingActivity: 0.15, // chart 2: gap between sector bars (0-1)
     lineWidthActivity: 3.5,   // chart 2: allocation marker thickness
     tickCountActivity: 5,     // chart 2: axis ticks
+    sankeyHorizontal: false,  // sankey: stack nodes along x, flow top to bottom
     minBarActivity: 25,       // chart 2: rows never thinner than this (px)
     hatchSize: 6,             // surplus hatch: pattern tile size
     hatchAngle: 45,
@@ -316,7 +317,7 @@
     if (sel.size === 0 || isEverySelected(sel, INSTALLS.length))
       btn.textContent = "Všechna zařízení";
     else if (sel.size === 1) btn.textContent = INSTALLS[[...sel][0]].n;
-    else btn.textContent = sel.size + " " + pluralCz(sel.size, "instalace", "instalací");
+    else btn.textContent = sel.size + " zařízení";
     btn.title = btn.textContent;
   }
 
@@ -450,7 +451,7 @@
       visible.forEach(({ i, n }) => wrap.appendChild(buildOption(i, n, true)));
       rendered++;
     });
-    if (!rendered) wrap.innerHTML = '<div class="ms-empty">Žádná instalace nenalezena</div>';
+    if (!rendered) wrap.innerHTML = '<div class="ms-empty">Žádné zařízení nenalezeno</div>';
   }
 
   // Sums verified emissions per owner within the currently selected year
@@ -779,37 +780,86 @@
   // filter controls, describing the whole page's current selection rather
   // than any one chart.
   function updateFilterSummary(idxs) {
-    const el = document.getElementById("ets-filter-summary");
+    const full = document.getElementById("ets-filter-summary");
+    const narrowed = document.getElementById("ets-activity-filter-summary");
     if (idxs.length === 0) {
-      el.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
+      full.textContent = "Pro tento výběr nejsou k dispozici žádná data.";
+      if (narrowed) narrowed.textContent = "";
       return;
     }
     const distinctRa = [...new Set(idxs.map(i => INSTALLS[i].ra).filter(Boolean))];
     const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].own))];
-    // One segment per filter control: odvětví, vlastníci, instalace. A facet
+    // One segment per filter control: odvětví, vlastníci, zařízení. A facet
     // still spanning every value in the data says "vše" — the count would just
     // be the dataset total and carry no information. Otherwise the values are
     // named outright while there are few enough, else counted (the noun in
     // nominative plural for 2-4 and genitive plural for 5+, which is what
     // pluralCz buckets; "odvětví" is identical in both, so it needs no call).
-    el.textContent = [
-      distinctRa.length === ALL_REAL_ACTIVITIES.size
-        ? "Všechna odvětví"
-        : distinctRa.length <= 2
-        ? "Odvětví: " + distinctRa.join(", ")
-        : distinctRa.length + " odvětví",
-      distinctCos.length === ALL_OWNERS.size
-        ? "Všichni vlastníci"
-        : distinctCos.length <= 3
-        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
-          distinctCos.join(", ")
-        : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
-      idxs.length === INSTALLS.length
-        ? "Všechny instalace"
-        : idxs.length <= 3
-        ? "Instalace: " + idxs.map(i => INSTALLS[i].n).join(", ")
-        : idxs.length + " " + pluralCz(idxs.length, "instalace", "instalací"),
-    ].join(" · ");
+    // `all` marks a facet that is not narrowing anything, so the copy under
+    // chart 2 can leave it out.
+    const segments = [
+      {
+        all: distinctRa.length === ALL_REAL_ACTIVITIES.size,
+        text: distinctRa.length === ALL_REAL_ACTIVITIES.size
+          ? "Všechna odvětví"
+          : distinctRa.length <= 2
+          ? "Odvětví: " + distinctRa.join(", ")
+          : distinctRa.length + " odvětví",
+      },
+      {
+        all: distinctCos.length === ALL_OWNERS.size,
+        text: distinctCos.length === ALL_OWNERS.size
+          ? "Všichni vlastníci"
+          : distinctCos.length <= 3
+          ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
+            distinctCos.join(", ")
+          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
+      },
+      {
+        all: idxs.length === INSTALLS.length,
+        text: idxs.length === INSTALLS.length
+          ? "Všechna zařízení"
+          : idxs.length <= 3
+          ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
+          : idxs.length + " zařízení",
+      },
+    ];
+
+    // Chart 2 repeats the line but names only the facets that actually narrow
+    // the selection, so with nothing filtered it stays empty instead of
+    // restating "all three" under its heading.
+    if (narrowed) {
+      narrowed.textContent = segments.filter(x => !x.all).map(x => x.text).join(" · ");
+    }
+
+    // Chart 1's heading already names one facet and the period, so its line
+    // carries only what the heading leaves out: the facets the reader actually
+    // restricted, minus the one the heading speaks for. Built from the
+    // selections rather than from the result — picking a single owner should
+    // not spell out the sectors that owner happens to span, since the reader
+    // never chose those.
+    const spoken = titleNamesItsFacet() ? titleFacet() : null;
+    const line = [];
+    const ra = [...state.realActivities];
+    const own = [...state.companies];
+    const inst = [...state.installs];
+
+    if (spoken !== "ra" && facetNarrowed(state.realActivities, sortedRealActivities.length)) {
+      line.push(isWholeIndustrySelected() ? "Průmysl"
+        : ra.length <= 2 ? "Odvětví: " + ra.join(", ")
+        : ra.length + " odvětví");
+    }
+    if (spoken !== "own" && facetNarrowed(state.companies, ALL_OWNERS.size)) {
+      line.push(own.length <= 3
+        ? (own.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + own.join(", ")
+        : own.length + " " + pluralCz(own.length, "vlastníci", "vlastníků"));
+    }
+    if (spoken !== "inst" && facetNarrowed(state.installs, INSTALLS.length)) {
+      line.push(inst.length <= 3
+        ? "Zařízení: " + inst.map(i => INSTALLS[i].n).join(", ")
+        : inst.length + " zařízení");
+    }
+    full.textContent = line.join(" · ");
   }
 
   // ── KPIs ──────────────────────────────────────────────────────────────────
@@ -823,9 +873,13 @@
         a += al || 0;
       });
     });
-    const d = a - e;
-
-    document.getElementById("ets-kpi-e").textContent = fmt(e);
+    // "CO2" rides with the value, not the label — the unit itself (t/kt/Mt)
+    // comes from fmt() and changes with magnitude, so the suffix is appended
+    // here rather than sitting static in the markup. <sub> for a real
+    // subscript, as the label used to render it.
+    const emisEl = document.getElementById("ets-kpi-e");
+    emisEl.textContent = fmt(e) + " CO";
+    emisEl.appendChild(document.createElement("sub")).textContent = "2";
     document.getElementById("ets-kpi-a").textContent = fmt(a, "povolenek");
     // Share of emissions covered by free allocation — the aggregate of the
     // per-sector "Povolenky zdarma" column in chart 2, so it is rounded the
@@ -834,9 +888,6 @@
     const share = e > 0 ? Math.round(a / e * 100) : null;
     document.getElementById("ets-kpi-share").textContent =
       share == null ? "—" : share + " %";
-    document.getElementById("ets-kpi-d-label").textContent = d >= 0 ? "Přebytek povolenek" : "Deficit povolenek";
-    document.getElementById("ets-kpi-d").textContent = (d >= 0 ? "+" : "") + fmt(d, "povolenek");
-    document.getElementById("ets-kpi-d-card").className = "kpi-card " + (d >= 0 ? "surplus" : "deficit");
   }
 
   // ── Tooltip ───────────────────────────────────────────────────────────────
@@ -891,18 +942,49 @@
 
   // Returns the parts separately: the period is set in regular weight, so it
   // goes in its own element rather than into one string.
+  // A facet counts as narrowed only if it was actually restricted: an empty
+  // set and a fully ticked one both mean "no restriction".
+  function facetNarrowed(sel, total) {
+    return sel.size > 0 && !isEverySelected(sel, total);
+  }
+  // True when the heading names its facet outright — a single installation or
+  // owner, a single sector, the whole industry group, or nothing filtered. Its
+  // vague forms ("ve vybraných zařízeních") say which facet but not which
+  // values, so the summary still has to spell those out.
+  function titleNamesItsFacet() {
+    const f = titleFacet();
+    if (f === "inst") return state.installs.size === 1;
+    if (f === "own") return state.companies.size === 1;
+    const sel = state.realActivities;
+    return !facetNarrowed(sel, sortedRealActivities.length) ||
+      isWholeIndustrySelected() || sel.size === 1;
+  }
+
+  // The facet the heading speaks for — the narrowest one that is narrowed.
+  function titleFacet() {
+    if (facetNarrowed(state.installs, INSTALLS.length)) return "inst";
+    if (facetNarrowed(state.companies, ALL_OWNERS.size)) return "own";
+    return "ra";
+  }
+
   function timelineTitle(years) {
     const period = periodPhrase(years);
     const named = subject => ({ lead: `${subject}: emise a povolenky zdarma`, period });
     const about = phrase => ({ lead: `Emise a povolenky zdarma ${phrase}`, period });
 
-    if (state.installs.size === 1) return named(INSTALLS[[...state.installs][0]].n);
-    if (state.installs.size > 1) return about("ve vybraných zařízeních");
-    if (state.companies.size === 1) return named([...state.companies][0]);
-    if (state.companies.size > 1) return about("u vybraných vlastníků");
+    if (facetNarrowed(state.installs, INSTALLS.length)) {
+      return state.installs.size === 1
+        ? named(INSTALLS[[...state.installs][0]].n)
+        : about("ve vybraných zařízeních");
+    }
+    if (facetNarrowed(state.companies, ALL_OWNERS.size)) {
+      return state.companies.size === 1
+        ? named([...state.companies][0])
+        : about("u vybraných vlastníků");
+    }
 
     const sel = state.realActivities;
-    if (sel.size === 0 || isEverySelected(sel, sortedRealActivities.length))
+    if (!facetNarrowed(sel, sortedRealActivities.length))
       return about("v sektorech EU ETS");
     if (isWholeIndustrySelected()) return about("v průmyslu");
     if (sel.size === 1) return about(sectorPhrase([...sel][0]));
@@ -966,11 +1048,6 @@
       .range([0, stepFull * (visibleYears.length + CFG.barPadding)])
       .padding(CFG.barPadding);
     const y = d3.scaleLinear().domain([0, maxVal * 1.05]).range([H, 0]).nice();
-
-    svg.append("text")
-      .attr("x", -mg.left + 2).attr("y", -12)
-      .attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
-      .text("povolenek / t CO₂");
 
     svg.append("g")
       .call(d3.axisLeft(y).tickSize(-W).tickFormat("").ticks(CFG.tickCount))
@@ -1047,12 +1124,14 @@
       .attr("fill", "transparent")
       .on("mouseover", function (event, yr) {
         const d = dataMap[yr];
-        const bal = d.a - d.e;
+        // Same rounding and the same uncapped treatment as the KPI card and
+        // chart 2's column, so the three never disagree for a given year.
+        const share = d.e > 0 ? Math.round(d.a / d.e * 100) + " %" : "—";
         showTip(event,
           `<strong>${yr}</strong><br>` +
           `Ověřené emise: <strong>${fmt(d.e)}</strong><br>` +
           `Bezplatné povolenky: <strong>${fmt(d.a)}</strong><br>` +
-          `Bilance: <strong>${bal >= 0 ? "+" : ""}${fmt(bal)}</strong>`
+          `Pokrytí emisí povolenkami zdarma: <strong>${share}</strong>`
         );
       })
       .on("mousemove", moveTip)
@@ -1074,11 +1153,23 @@
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").remove())
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
-    svg.append("g")
+    const leftAxis = svg.append("g")
       .call(d3.axisLeft(y).ticks(CFG.tickCount).tickFormat(fmtShort))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor))
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
+
+    // Unit caption, flush with the left edge of the widest tick label so the
+    // axis reads as one column. Measured from the rendered labels rather than
+    // guessed, since their width depends on the formatted values and the
+    // font size, both of which change.
+    const tickLefts = [];
+    leftAxis.selectAll(".tick text").each(function () { tickLefts.push(this.getBBox().x); });
+    svg.append("text")
+      .attr("x", tickLefts.length ? Math.min(...tickLefts) : -mg.left + 2)
+      .attr("y", -12)
+      .attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
+      .text("Povolenky / tuny CO₂");
   }
 
   // ── Chart 2: activity breakdown — one emissions bar per sector, uncovered
@@ -1133,17 +1224,15 @@
       data = ranked.slice(0, 12);
     }
 
-    // mg.right reserves two things to the right of the plotted bars: the
-    // in-line "Mt" tail label right after each bar (within labelGutter,
-    // below), and a fixed-position "X %" column further right (headed
-    // "Povolenky zdarma"), showing the share of that row's emissions
-    // matched by free allocation. mg.top makes room for that column header.
+    // mg.right reserves the fixed-position "X %" column to the right of the
+    // bars, showing the share of that row's emissions matched by free
+    // allocation. mg.top makes room for that column's header.
     // At phone width the desktop margins (230 + 150) exceed the whole SVG, so
     // the plot collapses to its 40px floor — hence a narrower set, paired with
     // the shortened axis labels in SHORT_ACTIVITY_NAMES.
     const mg = MOBILE.matches
-      ? { top: 26, right: 64, bottom: 24, left: 116 }
-      : { top: 26, right: 150, bottom: 24, left: 230 };
+      ? { top: 46, right: 64, bottom: 24, left: 116 }
+      : { top: 46, right: 150, bottom: 24, left: 230 };
     const W = W0 - mg.left - mg.right;
     // Rows are as thick as chart 1's bars, so the height follows from how many
     // sectors there are rather than being set in CSS. Sizing the range this
@@ -1164,15 +1253,9 @@
       return;
     }
 
-    // Reserve a right-hand gutter for the tail label so it never overlaps the
-    // longest bar (which otherwise spans the full plot width) — the
-    // allocation itself, in Mt with a Czech decimal comma and one decimal.
-    const labelGutter = MOBILE.matches ? 44 : 60;
-    const coverageText = d => `${(d.a / 1e6).toFixed(1).replace(".", ",")} Mt`;
     // Allocation as a share of emissions — not capped at 100%, since a
     // surplus (allocation > emissions) is exactly the case worth surfacing.
-    // The "Povolenky zdarma" wording lives once in the column header instead
-    // of repeating on every row.
+    // The wording lives once in the column header instead of on every row.
     const shareText = d => `${Math.round(d.a / d.e * 100)} %`;
 
     // Same encoding as chart 1 — one emissions bar with the uncovered share
@@ -1186,7 +1269,7 @@
 
     const maxVal = d3.max(data, d => d.top) || 1;
     const y = d3.scaleBand().domain(data.map(d => d.key)).range([0, H]).padding(CFG.barPaddingActivity);
-    const x = d3.scaleLinear().domain([0, maxVal]).range([0, Math.max(W - labelGutter, 40)]).nice();
+    const x = d3.scaleLinear().domain([0, maxVal]).range([0, Math.max(W, 40)]).nice();
 
     if (CFG.showSurplus) addHatch(svg.append("defs"), "ets-hatch-surplus-activity");
 
@@ -1242,26 +1325,25 @@
         .attr("stroke", stroke).attr("stroke-width", width);
     });
 
-    svg.selectAll(".a-bar-label")
-      .data(data.filter(d => d.e > 0))
-      .join("text").attr("class", "a-bar-label")
-      .attr("x", d => x(d.top) + 8)
-      .attr("y", d => y(d.key) + y.bandwidth() / 2)
-      .attr("dy", "0.32em")
-      .attr("font-size", CFG.valueFontSize + "px")
-      .attr("fill", "#718096")
-      .text(coverageText);
-
     // Separate fixed-position right-hand column (independent of bar length)
     // showing the share of that row's emissions actually matched by free
-    // allocation — e.g. "124 %", headed by a single "Povolenky zdarma"
-    // column-name label instead of repeating the wording on every row.
-    svg.append("text")
-      .attr("x", W + mg.right - 16).attr("y", -12)
+    // allocation — e.g. "124 %", under a single column-name heading rather
+    // than repeating the wording on every row.
+    // Set in the same type as the values it heads and right-aligned with them,
+    // wrapped onto two lines so it stays inside the column's width. Laid out
+    // upwards from the plot edge, so adding a line grows into mg.top.
+    const shareX = W + mg.right - 16;
+    const headLines = ["Pokrytí emisí", "povolenkami zdarma"];
+    const headLineH = Math.round(CFG.valueFontSize * 1.25);
+    const head = svg.append("text")
+      .attr("x", shareX)
+      .attr("y", -10 - (headLines.length - 1) * headLineH)
       .attr("text-anchor", "end")
-      .attr("font-size", CFG.axisFontSize + "px")
-      .attr("fill", CFG.axisTextColor)
-      .text("Povolenky zdarma");
+      .attr("font-size", CFG.valueFontSize + "px")
+      .attr("font-weight", "600")
+      .attr("fill", "#2d3748");
+    headLines.forEach((line, i) => head.append("tspan")
+      .attr("x", shareX).attr("dy", i ? headLineH : 0).text(line));
 
     svg.selectAll(".a-share-label")
       .data(data.filter(d => d.e > 0))
@@ -1360,10 +1442,20 @@
     const srcOrder = new Map(sources.map((n, i) => [n, i]));
     const tgtOrder = new Map(targets.map((n, i) => [n, i]));
 
+    // Geometry is written in two axes rather than x/y: nodes are stacked along
+    // the STACK axis and the ribbons run along the FLOW axis. Default puts
+    // stack on y and flow on x (two columns, left to right); the horizontal
+    // variant swaps them (two rows, top to bottom).
+    const T = !!CFG.sankeyHorizontal;
     const k = 0.4; // px per Mt
     const GAP = 10, LAYOUT_MIN = 16, BAR_MIN = 1.5;
-    const X_L = 240, BAR_W = 10, X_R = 620;
+    const BAR_W = 10;
+    const FLOW_A = T ? 170 : 240;   // near row / left column
+    const FLOW_B = T ? 430 : 620;   // far row / right column
     const Y0 = 30;
+    // "stack,flow" -> "x,y" for whichever orientation is active. Bezier control
+    // points transpose the same way, so one path string serves both.
+    const P = (stack, flow) => (T ? `${stack},${flow}` : `${flow},${stack}`);
 
     function layout(names, totals) {
       const pos = new Map();
@@ -1398,21 +1490,25 @@
         tgtCursor.set(l.ra, l.yT + l.h);
       });
 
-    const H = Math.max(srcLayout.bottom, tgtLayout.bottom) + 20;
-    svgEl.setAttribute("viewBox", `0 0 900 ${H}`);
-    svgEl.style.height = H + "px";
+    const stackExtent = Math.max(srcLayout.bottom, tgtLayout.bottom) + 20;
+    // The horizontal variant needs room past the far row for its labels; the
+    // default one keeps its fixed 900-wide frame.
+    const flowExtent = T ? FLOW_B + BAR_W + 170 : 900;
+    svgEl.setAttribute("viewBox",
+      T ? `0 0 ${stackExtent} ${flowExtent}` : `0 0 ${flowExtent} ${stackExtent}`);
+    svgEl.style.height = (T ? flowExtent : stackExtent) + "px";
     d3.select(svgEl).selectAll("*").remove();
     const svg = d3.select(svgEl);
 
-    const xm = (X_L + BAR_W + X_R) / 2;
+    const mid = (FLOW_A + BAR_W + FLOW_B) / 2;
     svg.selectAll(".sankey-link")
       .data(linkGeo)
       .join("path").attr("class", "sankey-link")
       .attr("d", l => {
-        const x0 = X_L + BAR_W, x1 = X_R;
-        const y0t = l.yS, y0b = l.yS + l.h, y1t = l.yT, y1b = l.yT + l.h;
-        return `M${x0},${y0t} C${xm},${y0t} ${xm},${y1t} ${x1},${y1t} ` +
-          `L${x1},${y1b} C${xm},${y1b} ${xm},${y0b} ${x0},${y0b} Z`;
+        const f0 = FLOW_A + BAR_W, f1 = FLOW_B;
+        const s0t = l.yS, s0b = l.yS + l.h, s1t = l.yT, s1b = l.yT + l.h;
+        return `M${P(s0t, f0)} C${P(s0t, mid)} ${P(s1t, mid)} ${P(s1t, f1)} ` +
+          `L${P(s1b, f1)} C${P(s1b, mid)} ${P(s0b, mid)} ${P(s0b, f0)} Z`;
       })
       .attr("fill", CFG.colorUncovered).attr("fill-opacity", 0.28).attr("stroke", "none")
       .on("mouseover", (ev, l) => showTip(ev,
@@ -1443,39 +1539,64 @@
       return lines;
     }
 
-    function drawNodes(names, layoutPos, x, anchor, labelX) {
+    // `before` = labels sit on the low side of the row/column (left, or above).
+    function drawNodes(names, layoutPos, flowPos, before) {
       svg.selectAll(null)
         .data(names).enter()
         .append("rect")
-        .attr("x", x).attr("width", BAR_W)
-        .attr("y", n => layoutPos.get(n).barY).attr("height", n => layoutPos.get(n).barH)
+        .attr("x", n => (T ? layoutPos.get(n).barY : flowPos))
+        .attr("y", n => (T ? flowPos : layoutPos.get(n).barY))
+        .attr("width", n => (T ? layoutPos.get(n).barH : BAR_W))
+        .attr("height", n => (T ? BAR_W : layoutPos.get(n).barH))
         .attr("rx", 2).attr("fill", CFG.colorEmissions);
+
+      const labelFlow = before ? flowPos - 10 : flowPos + BAR_W + 10;
+      // Rotating the frame flips which anchor runs away from the bar: local +x
+      // points up the screen after rotate(-90), so the two modes are opposites.
+      const anchor = T ? (before ? "start" : "end") : (before ? "end" : "start");
+
       svg.selectAll(null)
         .data(names).enter()
         .append("text")
-        .attr("text-anchor", anchor).attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
+        .attr("text-anchor", anchor)
+        .attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
+        .attr("transform", n => {
+          if (!T) return null;
+          const c = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
+          return `translate(${c},${labelFlow}) rotate(-90)`;
+        })
         .each(function (n) {
-          const lines = wrapLabelByChars(n, 26);
-          const cy = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
-          const startY = cy - (lines.length - 1) * 7;
+          // Stacked sideways at 22 chars in the rotated frame: the space a
+          // label has there is the node's own width, not a shared gutter.
+          const lines = wrapLabelByChars(n, T ? 22 : 26);
+          const c = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
           d3.select(this).selectAll("tspan")
             .data(lines)
             .join("tspan")
-            .attr("x", labelX)
-            .attr("y", (d, i) => startY + i * 14)
-            .attr("dy", "0.32em")
+            .attr("x", T ? 0 : labelFlow)
+            .attr("y", T ? null : (d, i) => c - (lines.length - 1) * 7 + i * 14)
+            .attr("dy", (d, i) => (T
+              ? (i === 0 ? `${-(lines.length - 1) * 0.45}em` : "0.95em")
+              : "0.32em"))
             .text(d => d);
         });
     }
-    drawNodes(sources, srcLayout.pos, X_L, "end", X_L - 10);
-    drawNodes(targets, tgtLayout.pos, X_R, "start", X_R + BAR_W + 10);
+    drawNodes(sources, srcLayout.pos, FLOW_A, true);
+    drawNodes(targets, tgtLayout.pos, FLOW_B, false);
 
-    svg.append("text").attr("x", X_L - 10).attr("y", 14)
-      .attr("text-anchor", "end").attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
-      .text("Hlavní odvětví (dle ETS)");
-    svg.append("text").attr("x", X_R + BAR_W + 10).attr("y", 14)
-      .attr("text-anchor", "start").attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
-      .text("Skutečné odvětví");
+    // Column/row headings. Transposed they cannot sit beside the rows (the
+    // rotated labels are there), so they head the whole block instead.
+    const heading = (text, x, y, anchor) => svg.append("text")
+      .attr("x", x).attr("y", y).attr("text-anchor", anchor)
+      .attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
+      .text(text);
+    if (T) {
+      heading("Hlavní odvětví (dle ETS)", 0, 14, "start");
+      heading("Skutečné odvětví", 0, flowExtent - 6, "start");
+    } else {
+      heading("Hlavní odvětví (dle ETS)", FLOW_A - 10, 14, "end");
+      heading("Skutečné odvětví", FLOW_B + BAR_W + 10, 14, "start");
+    }
   }
 
   // ── Update ────────────────────────────────────────────────────────────────
