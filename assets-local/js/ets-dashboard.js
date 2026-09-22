@@ -730,13 +730,35 @@
       renderCompanyOptions(document.getElementById("ets-company-search").value);
       update();
     });
+    // The two year captions are inputs: applied on change (blur or Enter)
+    // rather than on every keystroke, so a half-typed "20" is not clamped to
+    // the range before the reader finishes.
+    const yFromVal = document.getElementById("ets-year-from-val");
+    const yToVal = document.getElementById("ets-year-to-val");
+    [yFromVal, yToVal].forEach(el => { el.min = YEAR_MIN; el.max = YEAR_MAX; });
+    function applyTypedYears() {
+      const clamp = v => Math.min(Math.max(Math.round(v), YEAR_MIN), YEAR_MAX);
+      let a = clamp(Number(yFromVal.value) || state.yearFrom);
+      let b = clamp(Number(yToVal.value) || state.yearTo);
+      if (a > b) { const t = a; a = b; b = t; }   // typing a start past the end swaps them
+      state.yearFrom = a;
+      state.yearTo = b;
+      yFrom.value = a;
+      yTo.value = b;
+      updateYearBar();
+      renderCompanyOptions(document.getElementById("ets-company-search").value);
+      update();
+    }
+    yFromVal.addEventListener("change", applyTypedYears);
+    yToVal.addEventListener("change", applyTypedYears);
+
     updateYearBar();
     renderPhaseAnnotations();
   }
 
   function updateYearBar() {
-    document.getElementById("ets-year-from-val").textContent = state.yearFrom;
-    document.getElementById("ets-year-to-val").textContent = state.yearTo;
+    document.getElementById("ets-year-from-val").value = state.yearFrom;
+    document.getElementById("ets-year-to-val").value = state.yearTo;
     const span = YEAR_MAX - YEAR_MIN || 1;
     const fromPct = (state.yearFrom - YEAR_MIN) / span * 100;
     const toPct = (state.yearTo - YEAR_MIN) / span * 100;

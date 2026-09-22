@@ -97,6 +97,18 @@ include_in_search: true
   font-weight: 700;
   color: #515b66;
 }
+/* The two years are editable. They read as plain text until pointed at, so
+   the control still looks like a caption rather than a form. */
+.year-input {
+  width: 3.6em; padding: 0 2px;
+  border: 1px solid transparent; border-radius: 3px; background: none;
+  font: inherit; color: inherit; text-align: center;
+  -moz-appearance: textfield;
+}
+.year-input::-webkit-outer-spin-button,
+.year-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.year-input:hover { border-color: #ced4da; }
+.year-input:focus { border-color: #5b7c99; background: #fff; outline: none; }
 
 /* ── Multi-select dropdowns (activity / installation) ─────────────────────── */
 .ms-dropdown { position: relative; }
@@ -169,8 +181,28 @@ include_in_search: true
 .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
 
 @media (max-width: 640px) {
+  /* No sticky filter bar on a phone: it eats a third of the viewport, and the
+     charts are what the reader came for. Overrides web-core's sticky rule and
+     the .secondary-navbar-stuck shadow its navbar.js toggles in — the inline
+     `top` that script sets stops applying once the element is static. */
+  #secondary-navbar { position: static; margin-top: 0; }
+  #secondary-navbar.secondary-navbar-stuck { box-shadow: none; background-color: #fff; }
+
+  /* Label beside its selector rather than above it — three stacked pairs cost
+     far more vertical space than a phone screen can spare. */
   .control-group {
     flex-basis: 100%; min-width: 0;
+    flex-direction: row; align-items: center; gap: 10px;
+  }
+  .control-group > .control-label {
+    flex: 0 0 88px;        /* one column, so the selectors line up */
+    white-space: normal;   /* lets "Současný vlastník" take two lines */
+  }
+  .control-group > .ms-dropdown { flex: 1 1 auto; min-width: 0; }
+  /* Období keeps its stacked head + track, and takes the full width. */
+  .control-group.control-group--years {
+    flex-direction: column; align-items: stretch;
+    max-width: none; gap: 0;
   }
 }
 
@@ -379,7 +411,7 @@ include_in_search: true
   <div class="control-group control-group--years">
     <div class="control-head">
       <span class="control-label">Období</span>
-      <span class="control-value"><span id="ets-year-from-val"></span>–<span id="ets-year-to-val"></span></span>
+      <span class="control-value"><input type="number" class="year-input" id="ets-year-from-val" step="1" inputmode="numeric" aria-label="Od roku">–<input type="number" class="year-input" id="ets-year-to-val" step="1" inputmode="numeric" aria-label="Do roku"></span>
     </div>
     <div class="dual-range">
       <div class="range-track-bg"></div>
