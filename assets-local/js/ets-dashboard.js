@@ -8,10 +8,9 @@
   const YEAR_MIN = DATA.year_min;
   const YEAR_MAX = DATA.year_max;
 
-  // Chart look — single source of truth. The dev sidebar (ets-dev-sidebar.js,
-  // only active with ?dev=1) mutates this and calls window.ETS_REDRAW().
-  // The colours are mirrored as CSS variables in the page's <style> block so
-  // the HTML legend swatches match; the sidebar keeps both in step.
+  // Chart look — single source of truth for everything drawn inside the SVGs.
+  // The colours are mirrored as CSS variables in the page's <style> block,
+  // which the HTML legend swatches read; keep the two in sync.
   const CFG = {
     colorEmissions: "#1b4c6f", // the whole emissions bar
     colorUncovered: "#8ba1b1", // overlay: emissions above the free allocation
@@ -43,7 +42,6 @@
     axisTextColor: "#718096",
     gridColor: "#edf2f7",
   };
-  window.ETS_CFG = CFG;
 
   // The same breakpoint the page's CSS uses for .control-group, read from JS.
   // The window "resize" handler at the bottom redraws both charts, which also
@@ -128,11 +126,6 @@
   // Every value each facet can take, to recognise an unfiltered facet.
   const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(i => i.ra).filter(Boolean));
   const ALL_OWNERS = new Set(INSTALLS.map(i => i.own));
-
-  // Chart 2 can group its rows by real activity or by current owner. A view
-  // option for that one chart, not a filter, so it is kept out of `state`.
-  let activityGroupBy = "ra";   // "ra" | "own"
-  const ACTIVITY_OWNER_ROWS = 10;  // 180 owners exist; the rest are aggregated
 
   const state = {
     realActivities: new Set(), // real-activity names (installs[].ra); empty = all
@@ -632,16 +625,6 @@
   }
 
   function setupControls() {
-    document.querySelectorAll("#ets-activity-groupby button").forEach(btn => {
-      btn.addEventListener("click", function () {
-        if (activityGroupBy === this.dataset.group) return;
-        activityGroupBy = this.dataset.group;
-        document.querySelectorAll("#ets-activity-groupby button")
-          .forEach(b => b.classList.toggle("active", b === this));
-        renderActivityChart(getFilteredInstallIndices());
-      });
-    });
-
     setupDropdownToggle("ets-real-activity-toggle", "ets-real-activity-panel");
     setupDropdownToggle("ets-company-toggle", "ets-company-panel");
     setupDropdownToggle("ets-installation-toggle", "ets-installation-panel");
@@ -1208,13 +1191,9 @@
     // charts no longer match in thickness — legibility wins.
     const barThickness = Math.max(chart1Bar, CFG.minBarActivity);
 
-    // Both grouping keys are already display-ready strings on the
-    // installation, so neither needs a lookup array.
-    const byOwner = activityGroupBy === "own";
-    const keyOf = i => (byOwner ? INSTALLS[i].own : INSTALLS[i].ra) || "Neuvedeno";
-    document.getElementById("ets-activity-title").textContent = byOwner
-      ? "Kolik vybraných emisí pokryly povolenky zdarma podle vlastníka?"
-      : "Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?";
+    // The real-activity name is already a display-ready string on the
+    // installation, so it needs no lookup array.
+    const keyOf = i => INSTALLS[i].ra || "Neuvedeno";
 
     const byKey = {};
     idxs.forEach(i => {
@@ -1228,23 +1207,12 @@
       });
     });
 
-    const ranked = Object.values(byKey)
+    // Only ~10 real activities exist, so the cap never bites; it is a guard
+    // against the axis growing unbounded if the data gains categories.
+    const data = Object.values(byKey)
       .filter(d => d.e > 0 || d.a > 0)
-      .sort((a, b) => b.e - a.e);
-    // There are only ~10 real activities, so they all fit. Owners run to 180,
-    // where the top 10 are 86 % of emissions — so the tail is summed into a
-    // final row rather than dropped, keeping the rows adding up to the KPI
-    // cards above. It is appended after sorting so it stays last, even though
-    // its total would otherwise place it near the top.
-    let data;
-    if (byOwner && ranked.length > ACTIVITY_OWNER_ROWS) {
-      const tail = ranked.slice(ACTIVITY_OWNER_ROWS);
-      data = ranked.slice(0, ACTIVITY_OWNER_ROWS).concat([tail.reduce((acc, d) => {
-        acc.e += d.e; acc.a += d.a; return acc;
-      }, { key: `Ostatní vlastníci (${tail.length})`, e: 0, a: 0 })]);
-    } else {
-      data = ranked.slice(0, 12);
-    }
+      .sort((a, b) => b.e - a.e)
+      .slice(0, 12);
 
     // mg.right reserves the fixed-position "X %" column to the right of the
     // bars, showing the share of that row's emissions matched by free
@@ -1636,8 +1604,6 @@
   setupControls();
   update();
   renderSankeyChart();
-  // Redraw hook for the dev sidebar (?dev=1) after it mutates CFG.
-  window.ETS_REDRAW = () => { update(); renderSankeyChart(); };
   window.addEventListener("resize", () => {
     const idxs = getFilteredInstallIndices();
     renderTimeline(idxs);
