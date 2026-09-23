@@ -1,0 +1,140 @@
+// Free allocation vs verified emissions — the two d3 charts in the CBAM
+// explainer. Markup: includes-local/cbam-charts.html, behaviour:
+// assets-local/js/cbam-povolenky.js.
+//
+// The palette is repeated in that script's `C` object, because the colours are
+// needed inside the SVG where var() cannot reach. Change both together.
+
+#cbam-charts {
+    --ets-emissions: #1b4c6f;
+    --ets-uncovered: #8ba1b1;
+    --ets-alloc: #fffafa;
+    --ets-hatch: #ff9c66;
+    --ets-line: #000000;
+
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+
+    // No frame, and flush left so the chart lines up with the body text.
+    .chart-panel {
+        background: #fff;
+        padding: 16px 18px 16px 0;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 21px;
+        font-weight: 700;
+        color: #2d3748;
+        margin: 0 0 14px;
+    }
+
+    .legend {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+
+    .legend-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 14px;
+    }
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .legend-swatch {
+        width: 12px;
+        height: 12px;
+        border-radius: 0;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    // Each legend label is set in the colour of its own swatch.
+    .li-emissions {
+        color: var(--ets-emissions);
+
+        .legend-swatch {
+            background: var(--ets-emissions);
+        }
+    }
+
+    .li-uncovered {
+        color: var(--ets-uncovered);
+
+        .legend-swatch {
+            background: var(--ets-uncovered);
+        }
+    }
+
+    // The allocation is a marker line in the chart, so its swatch is a line too.
+    .li-line {
+        color: var(--ets-line);
+
+        .legend-swatch {
+            width: 14px;
+            height: 3px;
+            background: var(--ets-line);
+        }
+    }
+
+    // Filled by the script with the chart's own SVG hatch, at 0.7 scale.
+    .li-hatch {
+        color: var(--ets-hatch);
+
+        .legend-swatch {
+            background: var(--ets-alloc);
+        }
+    }
+
+    svg {
+        width: 100%;
+        height: 272px;
+        display: block;
+    }
+
+    .chart-source {
+        font-size: 13px;
+        color: #718096;
+        text-align: right;
+        margin: 0;
+    }
+
+    // MOBILE ADJUSTMENT
+    @media (max-width: 640px) {
+        h2 {
+            font-size: 18px;
+        }
+
+        svg {
+            height: 208px;
+        }
+    }
+}
+
+// Sits outside #cbam-charts so it can be positioned against the viewport.
+#cbam-tooltip {
+    position: fixed;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    line-height: 1.7;
+    max-width: 260px;
+    font-family: 'Roboto', system-ui, sans-serif;
+}
