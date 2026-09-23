@@ -1,3 +1,8 @@
+<!-- The charts are set in Roboto, which this site does not otherwise load.
+     There is no head hook for a single page and web-core is shared, so the
+     stylesheet is pulled in here, next to the markup that needs it. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap">
+
 <script>
   window.CBAM_POVOLENKY = {{ site.data["cbam-povolenky-zdarma"] | jsonify }};
 </script>
