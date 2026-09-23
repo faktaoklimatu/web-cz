@@ -1,0 +1,28 @@
+<script>
+  window.CBAM_POVOLENKY = {{ site.data["cbam-povolenky-zdarma"] | jsonify }};
+</script>
+
+<div id="cbam-charts">
+  <div class="chart-panel">
+    <h2>Množství povolenek zdarma v podnicích celkově po roce 2012 klesá</h2>
+      <div class="legend">
+        <div class="legend-row">
+          <div class="legend-item li-emissions"><div class="legend-swatch"></div>Emise pokryté povolenkami zdarma</div>
+          <div class="legend-item li-uncovered"><div class="legend-swatch"></div>Emise nepokryté povolenkami zdarma</div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-item li-line"><div class="legend-swatch"></div>Povolenky zdarma</div>
+          <div class="legend-item li-hatch"><div class="legend-swatch hatch-light"></div>Povolenky zdarma alokované navíc</div>
+        </div>
+      </div>
+    <svg id="cbam-svg-total"></svg>
+  </div>
+
+  <div class="chart-panel">
+    <h2>Naopak průmyslové podniky stále dostávají téměř všechny povolenky zdarma</h2>
+    <svg id="cbam-svg-industry"></svg>
+  </div>
+
+  <p class="chart-source">Zdroj: <a href="https://www.eea.europa.eu/en/analysis/maps-and-charts/emissions-trading-viewer-1-dashboards">EEA</a>, data pro EU27, 2005–2025</p>
+</div>
+<div id="cbam-tooltip"></div>
