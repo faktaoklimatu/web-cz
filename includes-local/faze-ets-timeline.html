@@ -1,0 +1,53 @@
+<style>
+.ets-timeline { display: flex; gap: 4px; margin: 2rem 0; }
+.ets-timeline .phase { flex: 1 1 0; min-width: 0; }
+.ets-timeline .name { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.04em; text-align: center; margin-bottom: 0.4rem; }
+.ets-timeline .track { position: relative; height: 22px; }
+.ets-timeline .track::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; border-top: 2px solid currentColor; }
+.ets-timeline .phase.open { color: #3b3b93; }
+.ets-timeline .phase.open .track::before { border-top-style: dashed; }
+.ets-timeline .dot { position: absolute; top: 50%; width: 12px; height: 12px; margin-top: -6px; border: 2px solid currentColor; border-radius: 50%; background: var(--body-bg, #fff); }
+.ets-timeline .dot.start { left: 0; }
+.ets-timeline .dot.end { right: 0; }
+.ets-timeline .years { display: flex; justify-content: space-between; font-size: 0.8rem; margin-top: 0.2rem; }
+.ets-timeline .note { font-size: 0.8rem; font-style: italic; line-height: 1.2; text-align: left; margin-top: 0.5rem; opacity: 0.8; }
+@media (max-width: 640px) {
+  .ets-timeline { flex-direction: column; gap: 1rem; }
+  .ets-timeline .note { margin-top: 0.2rem; }
+}
+</style>
+
+<div class="ets-timeline" id="ets-timeline"></div>
+
+<script>
+(function () {
+  // Uprav jen tohle pole – zbytek se vykreslí sám.
+  var PHASES = [
+    { name: "Fáze I",   from: 2005, to: 2007, note: "pilotní fáze" },
+    { name: "Fáze II",  from: 2008, to: 2012, note: "první skutečné snižování emisního stropu" },
+    { name: "Fáze III", from: 2013, to: 2020, note: "jednotný evropský strop, aukce jako hlavní způsob přidělování povolenek" },
+    { name: "Fáze IV",  from: 2021, to: 2030, note: "zpřísnění v rámci Green Dealu / Fit for 55" },
+    { name: "Fáze V",   from: 2031, to: null, note: "předmět navrhované revize" }
+  ];
+  var OPEN_WEIGHT = 5; // šířka otevřené fáze v „letech“
+
+  var root = document.getElementById("ets-timeline");
+  PHASES.forEach(function (p) {
+    var open = p.to === null;
+    var weight = open ? OPEN_WEIGHT : p.to - p.from + 1;
+
+    var el = document.createElement("div");
+    el.className = "phase" + (open ? " open" : "");
+    el.style.flexGrow = weight;
+
+    var dots = '<span class="dot start"></span>' + (open ? "" : '<span class="dot end"></span>');
+    el.innerHTML =
+      '<div class="name">' + p.name + "</div>" +
+      '<div class="track">' + dots + "</div>" +
+      '<div class="years"><span>' + p.from + "</span><span>" + (open ? "" : p.to) + "</span></div>" +
+      '<div class="note">' + p.note + "</div>";
+
+    root.appendChild(el);
+  });
+})();
+</script>
