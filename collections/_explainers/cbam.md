@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Jak má mechanismus CBAM chránit evropský průmysl?"
 slug:        "cbam"
 published:   2026-08-06
+updated:     2026-09-23
 authors:
   - id: "katerina-kolouchova"
   - id: "jan-krcal"
