@@ -76,6 +76,8 @@ Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle 
     source-url="https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/cbam"
 %}
 
+{% include includes-local/cbam-vypocet.html %}
+
 {% capture priklad %}
 
 * Podnik v roce 2030 doveze 1000 tun cementového slínku. Předpokládejme, že skutečná emisní intenzita výroby tuny takového produktu mimo EU je 0,9 tuny CO<sub>2</sub>.<sup>*</sup> Bez úlev by tak potřeboval nakoupit 900 certifikátů.

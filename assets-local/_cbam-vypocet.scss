@@ -1,0 +1,131 @@
+// "Výpočet potřebných CBAM certifikátů" — the formula from the CBAM explainer
+// as four boxes with operators between them. Markup: includes-local/cbam-vypocet.html.
+//
+// Colours follow the static figure it sits under
+// (assets-local/figures/cbam/cs-cbam-vypocet-*.svg): each operator carries the
+// colour of the box that follows it.
+
+$c-dovoz: #53616e;    // the imported goods going in
+$c-podil: #5a338e;    // share of emissions not paid for elsewhere
+$c-emise: #1b4c6f;    // emissions already covered by free allocation in the EU
+                      // (same as --ets-emissions in the charts above)
+$c-vysledek: #343a40; // the certificates that come out
+
+// The operators are positioned off these, so they are named rather than inlined.
+$box-padding: .8rem;
+$title-size: 1.1rem;
+$title-line: 1.15;
+
+#cbam-vypocet {
+    // No font-family: body already sets Source Sans Pro and it inherits down.
+    margin-block: 2rem;
+
+    h4 {
+        font-family: inherit;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #333;
+        margin: 0 0 1.5rem;
+    }
+
+    .vypocet-row {
+        display: flex;
+        align-items: stretch;
+        gap: .2rem;
+        margin-top: 1.25rem;
+    }
+
+    .vypocet-box {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: #{$box-padding};
+        // Border takes the box colour, so only `color` is set per variant.
+        border: 1px solid currentColor;
+        border-radius: 6px;
+    }
+
+    .box-title {
+        font-size: #{$title-size};
+        font-weight: 700;
+        line-height: #{$title-line};
+        margin: 0 0 .75rem;
+    }
+
+    .box-note {
+        font-size: .8rem;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    // The × separating the three factors inside the third box.
+    .box-op {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .vypocet-op {
+        flex: 0 0 auto;
+        min-width: 1.25rem;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 700;
+        // Sit on the second line of the titles: clear the box padding and one
+        // full title line, then take that line's height so the glyph centres
+        // inside it.
+        align-self: flex-start;
+        padding-top: calc(#{$box-padding} + #{$title-size} * #{$title-line});
+        line-height: calc(#{$title-size} * #{$title-line});
+    }
+
+    .is-dovoz {
+        color: $c-dovoz;
+    }
+
+    .is-podil {
+        color: $c-podil;
+    }
+
+    .is-emise {
+        color: $c-emise;
+    }
+
+    .is-vysledek {
+        color: $c-vysledek;
+    }
+
+    // 10 % of the box's own colour, so the fill always matches its border.
+    .vypocet-box {
+        &.is-dovoz {
+            background: rgba($c-dovoz, .1);
+        }
+
+        &.is-podil {
+            background: rgba($c-podil, .1);
+        }
+
+        &.is-emise {
+            background: rgba($c-emise, .1);
+        }
+    }
+
+    // The result is not an input to the formula, so it gets neither frame nor fill.
+    .vypocet-box.is-vysledek {
+        border: none;
+        padding-inline: 0;
+    }
+
+    // MOBILE ADJUSTMENT — stack the boxes, operators sit between the rows.
+    @media (max-width: 767px) {
+        .vypocet-row {
+            flex-direction: column;
+        }
+
+        .vypocet-op {
+            align-self: center;
+            padding-top: 0;
+            line-height: 1.2;
+            min-height: 1.75rem;
+        }
+    }
+}

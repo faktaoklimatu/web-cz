@@ -1,0 +1,33 @@
+<div id="cbam-vypocet">
+  <h4 class="js-toc-ignore">Výpočet potřebných CBAM certifikátů</h4>
+
+  <div class="vypocet-row">
+    <div class="vypocet-box is-dovoz">
+      <p class="box-title">Skutečné emise z dováženého zboží</p>
+    </div>
+
+    <div class="vypocet-op is-podil" aria-hidden="true">×</div>
+
+    <div class="vypocet-box is-podil">
+      <p class="box-title">Podíl nezaplacených emisí</p>
+      <p class="box-note">1 − (<strong>poměr ceny emisí ve třetí zemi</strong> a <strong>ceny CBAM certifikátu</strong>)</p>
+    </div>
+
+    <div class="vypocet-op is-emise" aria-hidden="true">−</div>
+
+    <div class="vypocet-box is-emise">
+      <p class="box-title">Emise v EU pokryté povolenkami zdarma</p>
+      <p class="box-note"><strong>CBAM benchmark</strong><br>(standardizovaná emisní intenzita daného zboží)</p>
+      <p class="box-op" aria-hidden="true">×</p>
+      <p class="box-note"><strong>CBAM faktor</strong><br>(podíl povolenek alokovaných v EU zdarma)</p>
+      <p class="box-op" aria-hidden="true">×</p>
+      <p class="box-note"><strong>Množství zboží</strong></p>
+    </div>
+
+    <div class="vypocet-op is-vysledek" aria-hidden="true">=</div>
+
+    <div class="vypocet-box is-vysledek">
+      <p class="box-title">Počet certifikátů, které dovozce nakoupí</p>
+    </div>
+  </div>
+</div>
