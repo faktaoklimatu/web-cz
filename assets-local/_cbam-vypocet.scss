@@ -22,7 +22,7 @@ $title-line: 1.15;
 
     h4 {
         font-family: inherit;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: #333;
         margin: 0 0 1.5rem;
@@ -107,12 +107,6 @@ $title-line: 1.15;
         &.is-emise {
             background: rgba($c-emise, .1);
         }
-    }
-
-    // The result is not an input to the formula, so it gets neither frame nor fill.
-    .vypocet-box.is-vysledek {
-        border: none;
-        padding-inline: 0;
     }
 
     // MOBILE ADJUSTMENT — stack the boxes, operators sit between the rows.
