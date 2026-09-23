@@ -68,14 +68,6 @@ V praxi však může být počet potřebných certifikátů snížen v následuj
 
 Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle vzorce níže.
 
-{% include figure.html
-    name="cs-cbam-vypocet-des.svg"
-    name-mobile="cs-cbam-vypocet-mob.svg"
-    alt="Graf ukazuje vzorec, podle kterého lze vypočítat, kolik CBAM certifikátu bude muset dovozce nakoupit."
-    source-text="Ministerstvo životního prostředí"
-    source-url="https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/cbam"
-%}
-
 {% include includes-local/cbam-vypocet.html %}
 
 {% capture priklad %}
