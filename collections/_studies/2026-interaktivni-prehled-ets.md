@@ -8,7 +8,7 @@ redirect_from:
 published:     2026-09-25
 caption:       "Jak velkou část emisí v EU ETS pokrývají povolenky zdarma?"
 intro: |
-    Tento přehled ukazuje bilanci emisí skleníkových plynů a povolenek zdarma energetických a průmyslových podniků v Česku. Zatímco v sektoru elektřiny a tepla povolenky zdarma po roce 2012 klesají, průmysl jimi stále pokryje většinu svých emisí.
+    Tento přehled zobrazuje bilanci emisí skleníkových plynů a povolenek zdarma energetických a průmyslových podniků v Česku. Umožňuje měnit pohled podle jednotlivých odvětví, vlastníků nebo zařízení. To ukazuje, že zatímco v sektoru elektřiny a tepla povolenky zdarma po roce 2012 klesají, průmysl jimi stále pokryje většinu svých emisí.
 extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/ets-dashboard.js
@@ -534,7 +534,9 @@ Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lep
 
 Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na info@faktaoklimatu.cz.
 
-Zdrojový kód pro zpracování dat je k dispozici na GitHubu (DOPLNIT LINK).
+Tabulka s emisemi skleníkových plynů a povolenek zdarma v letech 2008–2025 pro všechna zařízení v Česku, doplněná o současné vlastníky a skutečná odvětví, je pro případné další analýzy k dispozici [zde](https://github.com/faktaoklimatu/data-analysis/blob/data-dashboard-ets1/outputs/ets-dashboard/ETS-data.csv).
+
+Zdrojový kód pro zpracování dat je k dispozici na [GitHubu](https://github.com/faktaoklimatu/data-analysis/tree/data-dashboard-ets1/scripts/dashboard-ets1).
 
 {% endcapture %}
 
