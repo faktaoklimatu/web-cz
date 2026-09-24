@@ -127,6 +127,11 @@
   const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(i => i.ra).filter(Boolean));
   const ALL_OWNERS = new Set(INSTALLS.map(i => i.own));
 
+  // Chart 2 can group its rows by real activity or by current owner. A view
+  // option for that one chart, not a filter, so it is kept out of `state`.
+  let activityGroupBy = "ra";   // "ra" | "own"
+  const ACTIVITY_OWNER_ROWS = 10;  // 180 owners exist; the rest are aggregated
+
   const state = {
     realActivities: new Set(), // real-activity names (installs[].ra); empty = all
     companies: new Set(),  // owner names (installs[].own); empty = all companies
@@ -625,6 +630,16 @@
   }
 
   function setupControls() {
+    document.querySelectorAll("#ets-activity-groupby button").forEach(btn => {
+      btn.addEventListener("click", function () {
+        if (activityGroupBy === this.dataset.group) return;
+        activityGroupBy = this.dataset.group;
+        document.querySelectorAll("#ets-activity-groupby button")
+          .forEach(b => b.classList.toggle("active", b === this));
+        renderActivityChart(getFilteredInstallIndices());
+      });
+    });
+
     setupDropdownToggle("ets-real-activity-toggle", "ets-real-activity-panel");
     setupDropdownToggle("ets-company-toggle", "ets-company-panel");
     setupDropdownToggle("ets-installation-toggle", "ets-installation-panel");
@@ -1191,9 +1206,13 @@
     // charts no longer match in thickness — legibility wins.
     const barThickness = Math.max(chart1Bar, CFG.minBarActivity);
 
-    // The real-activity name is already a display-ready string on the
-    // installation, so it needs no lookup array.
-    const keyOf = i => INSTALLS[i].ra || "Neuvedeno";
+    // Both grouping keys are already display-ready strings on the
+    // installation, so neither needs a lookup array.
+    const byOwner = activityGroupBy === "own";
+    const keyOf = i => (byOwner ? INSTALLS[i].own : INSTALLS[i].ra) || "Neuvedeno";
+    document.getElementById("ets-activity-title").textContent = byOwner
+      ? "Kolik vybraných emisí pokryly povolenky zdarma podle vlastníka?"
+      : "Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?";
 
     const byKey = {};
     idxs.forEach(i => {
@@ -1207,12 +1226,23 @@
       });
     });
 
-    // Only ~10 real activities exist, so the cap never bites; it is a guard
-    // against the axis growing unbounded if the data gains categories.
-    const data = Object.values(byKey)
+    const ranked = Object.values(byKey)
       .filter(d => d.e > 0 || d.a > 0)
-      .sort((a, b) => b.e - a.e)
-      .slice(0, 12);
+      .sort((a, b) => b.e - a.e);
+    // There are only ~10 real activities, so they all fit. Owners run to 180,
+    // where the top 10 are 86 % of emissions — so the tail is summed into a
+    // final row rather than dropped, keeping the rows adding up to the KPI
+    // cards above. It is appended after sorting so it stays last, even though
+    // its total would otherwise place it near the top.
+    let data;
+    if (byOwner && ranked.length > ACTIVITY_OWNER_ROWS) {
+      const tail = ranked.slice(ACTIVITY_OWNER_ROWS);
+      data = ranked.slice(0, ACTIVITY_OWNER_ROWS).concat([tail.reduce((acc, d) => {
+        acc.e += d.e; acc.a += d.a; return acc;
+      }, { key: `Ostatní vlastníci (${tail.length})`, e: 0, a: 0 })]);
+    } else {
+      data = ranked.slice(0, 12);
+    }
 
     // mg.right reserves the fixed-position "X %" column to the right of the
     // bars, showing the share of that row's emissions matched by free

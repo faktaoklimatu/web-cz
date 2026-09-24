@@ -288,6 +288,36 @@ include_in_search: true
 .panel-header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-bottom: var(--ets-legend-gap); }
 .panel-title-group { flex: 0 0 100%; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: var(--ets-legend-gap-top); min-width: 0; }
+/* Grouping switch for chart 2, drawn as tabs across the top of its panel.
+   It is a direct child of .chart-panel, not of .panel-header: inside the header
+   its width came from .panel-title-group, which flex sizes to its content (the
+   heading) rather than to the panel. The negative margins then cancel the
+   panel's 16px/18px padding so the strip runs its full width. */
+.seg {
+  display: flex; flex-wrap: wrap;
+  margin: -16px -18px 16px;
+  width: calc(100% + 36px);
+  box-sizing: border-box;
+  background: #f7fafc;
+  border-bottom: var(--ets-box-border) solid #e2e8f0;
+  border-radius: 7px 7px 0 0;   /* 8px panel radius minus its 1px border */
+}
+.seg button {
+  background: none; border: none; padding: 6px 14px; cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: #718096;
+  /* Each tab continues the strip's rule and hangs exactly one border lower, so
+     the active tab can repaint that stretch in its own white — the cut is what
+     makes it read as joined to the panel below rather than sitting on it. */
+  border-bottom: var(--ets-box-border) solid #e2e8f0;
+  margin-bottom: calc(-1 * var(--ets-box-border));
+}
+.seg button + button { border-left: var(--ets-box-border) solid #e2e8f0; }
+.seg button:first-child { border-top-left-radius: 7px; }
+.seg button:hover:not(.active) { color: #515b66; }
+.seg button.active {
+  background: #fff; color: #2d3748;
+  border-bottom-color: #fff;
+}
 .legend-item { display: flex; align-items: center; gap: 5px; font-size: var(--ets-legend-size); font-weight: 500; white-space: nowrap; }
 /* Square, not a wide bar, and each label carries its own swatch colour. */
 .legend-swatch {
@@ -306,7 +336,7 @@ include_in_search: true
 .legend-item.li-line      .legend-swatch { background: var(--ets-line); }
 /* Filled by renderLegendSwatches() with the chart's own SVG hatch pattern;
    the background is only what shows before that runs. */
-.legend-swatch.hatch-light { background: var(--ets-alloc); border: 1px solid #cbd5e0; }
+.legend-swatch.hatch-light { background: var(--ets-alloc); }
 
 #tooltip {
   position: fixed; background: #1a202c; color: #e2e8f0;
@@ -428,6 +458,11 @@ include_in_search: true
     </div>
 
     <div class="chart-panel">
+      <div class="seg" id="ets-activity-groupby">
+        <button type="button" data-group="ra" class="active">Odvětví</button>
+        <button type="button" data-group="own">Vlastníci</button>
+      </div>
+
       <div class="panel-header">
         <div class="panel-title-group">
           <h2 id="ets-activity-title">Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?</h2>
