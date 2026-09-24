@@ -1,0 +1,378 @@
+/* Emise a povolenky zdarma v EU ETS — collections/_studies/2026-interaktivni-prehled-ets.md
+ *
+ * Scoped to that page's body class rather than written globally: the names it
+ * needs are ordinary ones (.control-group, .legend, .kpi-card, #secondary-navbar)
+ * that the household-measures dashboard and web-core's own _core_design.scss
+ * already use. main.scss pulls this file in BEFORE the universal rules, so an
+ * unscoped copy would also lose to core at equal specificity — the body class
+ * settles both problems at once.
+ *
+ * Set by `body-class: ets-dashboard` in the page's front matter.
+ */
+body.ets-dashboard {
+    --ets-emissions: #1b4c6f;
+    --ets-uncovered: #8ba1b1;
+    --ets-alloc: #fffafa;           /* hatch background */
+    --ets-hatch: #ff9c66;           /* hatch stripes */
+    --ets-line: #000000;
+    --ets-chart-height: 340px;      /* chart 2 + fallback */
+    --ets-timeline-height: 350px;   /* chart 1; chart 2's height is derived in JS */
+    --ets-title-size-1: 24px;       /* chart 1 heading */
+    --ets-title-size-2: 24px;       /* chart 2 heading */
+    --ets-legend-size: 14px;        /* legend text, both charts */
+    --ets-box-border: 1px;          /* chart panel outline; 0 = none */
+    --ets-kpi-label-size: 13px;     /* KPI cards */
+    --ets-kpi-tracking: 0.25px;
+    --ets-kpi-value-size: 24px;   /* matches --ets-title-size-1 */
+    --ets-kpi-pad-y: 18px;
+    --ets-kpi-pad-x: 18px;
+    --ets-kpi-gap: 12px;
+    --ets-kpi-border: 1px;
+    --ets-legend-gap: 25px;         /* space under the legend row, both charts */
+    --ets-legend-gap-top: 0px;      /* space above it */
+    --ets-summary-pad-t: 14px;      /* filter-summary line, both charts */
+    --ets-summary-pad-b: 0px;
+
+  /* ── Chart look tokens ─────────────────────────────────────────────────────
+     Mirror of the CFG block in assets-local/js/ets-dashboard.js — the SVG
+     charts read CFG, these swatches/sizes read the variables. Keep both in
+     sync.                                                                    */
+
+  /* ── Title / perex ─────────────────────────────────────────────────────────── */
+  #secondary-navbar {
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  }
+
+  /* ── Controls bar ──────────────────────────────────────────────────────────── */
+  /* Sticky behaviour, z-index, shadow and background are handled by the site's
+     #secondary-navbar / .secondary-navbar-stuck styles in _core_design.scss.    */
+  .controls-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 28px;
+    align-items: flex-start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 220px;
+  }
+  .control-group.control-group--years { min-width: 200px; max-width: 260px; flex: 1 1 0; }
+  .control-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .control-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #515b66;
+    white-space: nowrap;
+  }
+  .control-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #515b66;
+  }
+  /* The two years are editable. They read as plain text until pointed at, so
+     the control still looks like a caption rather than a form.
+     The width is tied to the digit width rather than guessed in em: 1ch is the
+     advance of "0" in whatever font the element ends up with — this control sits
+     outside .chart-panel, so it is the site font, not the charts' Roboto — and
+     digits share one advance, so 4ch is exactly a year. The 8px on top covers the
+     1px border each side and leaves a little slack; each box then hangs its text
+     towards the dash, so the slack falls on the outer edge instead of opening a
+     gap around it. */
+  .year-input {
+    width: calc(4ch + 8px); padding: 0;
+    border: 1px solid transparent; border-radius: 3px; background: none;
+    font: inherit; color: inherit;
+    -moz-appearance: textfield;
+  }
+  #ets-year-from-val { text-align: right; }
+  /* The trailing box gets no slack at all — only its 1px border on each side —
+     so the last digit ends exactly where the box does, and .control-head's
+     space-between then lands that edge on the slider's own right edge. The
+     leading box keeps its slack, which its right-alignment pushes outwards. */
+  #ets-year-to-val { text-align: left; width: calc(4ch + 2px); }
+  .year-input::-webkit-outer-spin-button,
+  .year-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .year-input:hover { border-color: #ced4da; }
+  .year-input:focus { border-color: #5b7c99; background: #fff; outline: none; }
+
+  /* ── Multi-select dropdowns (activity / installation) ─────────────────────── */
+  .ms-dropdown { position: relative; }
+  .ms-toggle {
+    width: 100%;
+    text-align: left;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath fill='%23515b66' d='M0 0h8L4 5z'/%3E%3C/svg%3E") no-repeat right 12px center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 28px 6px 12px;
+    font-size: 0.9rem;
+    color: #2d3748;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .ms-toggle:focus { outline: 2px solid #5b7c99; outline-offset: 1px; }
+  .ms-panel {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 4px);
+    left: 0; right: 0;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 6px 0;
+  }
+  .ms-panel.open { display: block; }
+  .ms-search { margin: 0 10px 6px; width: calc(100% - 20px); }
+  .ms-actions {
+    display: flex;
+    padding: 0 10px 6px; margin-bottom: 4px;
+    border-bottom: 1px solid #f0f2f4;
+  }
+  .ms-actions button {
+    background: none; border: none; padding: 0;
+    font-size: 0.75rem; color: #5b7c99; cursor: pointer;
+  }
+  .ms-actions button:hover { text-decoration: underline; }
+  .ms-option {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 12px; cursor: pointer; font-size: 0.85rem;
+  }
+  .ms-option:hover { background: #f0f3f5; }
+  .ms-option input[type="checkbox"] { cursor: pointer; flex-shrink: 0; accent-color: #5b7c99; }
+  .ms-option-name {
+    flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    /* !important: the site's span[title] rule (higher specificity) would otherwise win */
+    text-decoration: none !important;
+  }
+  .ms-option--nested { padding-left: 28px; }
+  /* A group header is itself a clickable option — its checkbox selects the whole
+     site — so it reads like one, inheriting .ms-option's type. The rule above it
+     and its children's indent carry the grouping; a shrunken uppercase caption
+     made a live control look like a disabled label, and uppercased "Mt" to "MT". */
+  .ms-group-label {
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid #f0f2f4;
+  }
+  /* Only the option list scrolls. The search box and the select-all actions sit
+     outside it, so they stay put at the top of the panel instead of scrolling
+     out of reach — no sticky positioning needed. The vh cap keeps the panel from
+     growing taller than a short window. */
+  .ms-options { max-height: min(420px, 60vh); overflow-y: auto; }
+  .ms-options > .ms-group-label:first-child { border-top: none; margin-top: 0; }
+  .ms-empty { padding: 10px 12px; font-size: 0.85rem; color: #a0aec0; }
+
+  @media (max-width: 640px) {
+    /* No sticky filter bar on a phone: it eats a third of the viewport, and the
+       charts are what the reader came for. Overrides web-core's sticky rule and
+       the .secondary-navbar-stuck shadow its navbar.js toggles in — the inline
+       `top` that script sets stops applying once the element is static. */
+    #secondary-navbar { position: static; margin-top: 0; }
+    #secondary-navbar.secondary-navbar-stuck { box-shadow: none; background-color: #fff; }
+
+    /* Label beside its selector rather than above it — three stacked pairs cost
+       far more vertical space than a phone screen can spare. */
+    .control-group {
+      flex-basis: 100%; min-width: 0;
+      flex-direction: row; align-items: center; gap: 10px;
+    }
+    .control-group > .control-label {
+      flex: 0 0 88px;        /* one column, so the selectors line up */
+      white-space: normal;   /* lets "Současný vlastník" take two lines */
+    }
+    .control-group > .ms-dropdown { flex: 1 1 auto; min-width: 0; }
+    /* Období keeps its stacked head + track, and takes the full width. */
+    .control-group.control-group--years {
+      flex-direction: column; align-items: stretch;
+      max-width: none; gap: 0;
+    }
+  }
+
+  /* ── Year dual-range slider ───────────────────────────────────────────────── */
+  /* --ets-thumb is shared with the tick placement in renderPhaseAnnotations:
+     a range input centres its thumb inside the track minus one thumb width,
+     so a tick positioned as a plain percentage of the full track drifts away
+     from the handles and disappears under them near the middle values. */
+  .dual-range {
+    --ets-thumb: 16px;
+    position: relative; height: 26px; display: flex; align-items: center; margin-top: -6px;
+  }
+  .range-track-bg { position: absolute; left: 0; right: 0; height: 3px; background: #dde3e8; border-radius: 1.5px; }
+  .range-fill { position: absolute; height: 3px; background: #515b66; border-radius: 1.5px; pointer-events: none; }
+  .dual-range input[type="range"] {
+    position: absolute; width: 100%; margin: 0;
+    background: none; pointer-events: none;
+    -webkit-appearance: none; appearance: none; outline: none;
+  }
+  .dual-range input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all; -webkit-appearance: none; appearance: none;
+    width: var(--ets-thumb); height: var(--ets-thumb); border-radius: 50%;
+    background: #fff; cursor: pointer;
+    border: 2px solid #515b66; box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+  .dual-range input[type="range"]::-moz-range-thumb {
+    pointer-events: all; width: 14px; height: 14px; border-radius: 50%;
+    background: #fff; cursor: pointer; border: 2px solid #515b66; box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+  .range-ticks { position: absolute; left: 0; right: 0; top: 0; bottom: 0; pointer-events: none; }
+  /* JS sets left to the boundary's own position, so the mark is pulled back by
+     half its width to straddle it rather than start there. */
+  .range-tick {
+    position: absolute; top: 50%; transform: translate(-50%, -50%);
+    width: 6px; height: 3px; background: #fff;
+  }
+  .phase-annotations { position: relative; height: 14px; margin-top: -2px; }
+  .phase-annotation {
+    position: absolute; top: 0;
+    font-size: 10.5px; font-weight: 500; color: #a0aec0; white-space: nowrap;
+  }
+  /* Lit while a handle is standing inside that phase; set by updateYearBar. */
+  .phase-annotation.is-active { color: #515b66; }
+  .phase-annotation--left { left: 0; }
+  .phase-annotation--center { transform: translateX(-50%); }
+  .phase-annotation--right { right: 0; }
+
+  /* ── KPI cards ─────────────────────────────────────────────────────────────── */
+  #ets-kpi-row { display: flex; flex-wrap: wrap; gap: var(--ets-kpi-gap); margin: 0 0 16px; }
+  .kpi-card {
+    flex: 1; min-width: 180px;
+    color: #515b66;
+    padding: var(--ets-kpi-pad-y) var(--ets-kpi-pad-x);
+    border: var(--ets-kpi-border) solid #e2e8f0;
+    border-radius: 8px;
+  }
+  .kpi-label {
+    font-size: var(--ets-kpi-label-size); font-weight: 600;
+    text-transform: uppercase; letter-spacing: var(--ets-kpi-tracking);
+    color: inherit; margin-bottom: 0;
+  }
+  .kpi-value { font-size: var(--ets-kpi-value-size); font-weight: 700; color: inherit; }
+  /* Midway between --ets-emissions (#1b4c6f) and --ets-uncovered (#8ba1b1),
+     the two tones the emissions bar is drawn in. */
+  .kpi-card.emissions { color: #537690; }
+  .kpi-card.allocation { color: #2d3748; }
+
+  /* ── Chart panels ──────────────────────────────────────────────────────────── */
+  .chart-panel {
+    background: #fff; border-radius: 8px;
+    border: var(--ets-box-border) solid #e2e8f0; padding: 16px 18px;
+    margin-bottom: 16px;
+  }
+  /* Everything drawn inside a chart panel — SVG text, legend, panel title —
+     plus the tooltip the charts render and the KPI row, which sits outside the
+     panels. SVG <text> has no font-family of its own, so it inherits this. */
+  .chart-panel, #tooltip, #ets-kpi-row {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  }
+  .chart-panel h2 { font-size: 17px; font-weight: 700; color: #2d3748; margin: 0; }
+  /* Heads the whole first panel (title, filters, KPIs, chart), so it overrides
+     the 17px panel-heading rule above and keeps a gap under itself. */
+  .chart-panel > #ets-timeline-title {
+    font-size: var(--ets-title-size-1);
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 10px;
+  }
+  .chart-panel > #ets-timeline-title .title-period { font-weight: 400; }
+  #ets-activity-title { font-size: var(--ets-title-size-2); margin: 0 0 10px; }
+  .chart-foot {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    justify-content: flex-end; gap: 4px 16px;
+    padding-top: 0.4rem;
+    font-size: 0.8rem; color: #a0aec0;
+  }
+  .chart-foot a, .chart-foot a:hover { color: #a0aec0; }
+  .chart-foot .svg-download {
+    background: none; border: none; padding: 0;
+    font: inherit; color: inherit; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chart-foot .svg-download:hover { text-decoration: underline; }
+  .filter-summary {
+    font-size: 14px; font-weight: 400; color: #718096; margin-bottom: 0;
+    padding: var(--ets-summary-pad-t) 0 var(--ets-summary-pad-b);
+  }
+  .chart-panel svg { width: 100%; height: var(--ets-chart-height); display: block; }
+  #ets-svg-timeline { height: var(--ets-timeline-height); }
+  /* The heading takes a full row of its own (flex-basis 100% forces the wrap),
+     so it has the whole chart width for a long generated title. The legend and
+     chart 2's grouping switch then share the row underneath it. */
+  .panel-header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-bottom: var(--ets-legend-gap); }
+  .panel-title-group { flex: 0 0 100%; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: var(--ets-legend-gap-top); min-width: 0; }
+  /* Grouping switch for chart 2, drawn as tabs across the top of its panel.
+     It is a direct child of .chart-panel, not of .panel-header: inside the header
+     its width came from .panel-title-group, which flex sizes to its content (the
+     heading) rather than to the panel. The negative margins then cancel the
+     panel's 16px/18px padding so the strip runs its full width. */
+  .seg {
+    display: flex; flex-wrap: wrap;
+    margin: -16px -18px 16px;
+    width: calc(100% + 36px);
+    box-sizing: border-box;
+    background: #f7fafc;
+    border-bottom: var(--ets-box-border) solid #e2e8f0;
+    border-radius: 7px 7px 0 0;   /* 8px panel radius minus its 1px border */
+  }
+  .seg button {
+    background: none; border: none; padding: 6px 14px; cursor: pointer;
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; color: #718096;
+    /* Each tab continues the strip's rule and hangs exactly one border lower, so
+       the active tab can repaint that stretch in its own white — the cut is what
+       makes it read as joined to the panel below rather than sitting on it. */
+    border-bottom: var(--ets-box-border) solid #e2e8f0;
+    margin-bottom: calc(-1 * var(--ets-box-border));
+  }
+  .seg button + button { border-left: var(--ets-box-border) solid #e2e8f0; }
+  .seg button:first-child { border-top-left-radius: 7px; }
+  .seg button:hover:not(.active) { color: #515b66; }
+  .seg button.active {
+    background: #fff; color: #2d3748;
+    border-bottom-color: #fff;
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: var(--ets-legend-size); font-weight: 500; white-space: nowrap; }
+  /* Square, not a wide bar, and each label carries its own swatch colour. */
+  .legend-swatch {
+    width: 12px; height: 12px; border-radius: 0; flex-shrink: 0;
+    box-sizing: border-box; overflow: hidden; line-height: 0;
+  }
+  /* The allocation is drawn as a marker line in both charts, so its swatch is a
+     line too, not a filled square like the area series. */
+  .legend-item.li-line .legend-swatch { width: 14px; height: 3px; }
+  .legend-item.li-emissions { color: var(--ets-emissions); }
+  .legend-item.li-uncovered { color: var(--ets-uncovered); }
+  .legend-item.li-line      { color: var(--ets-line); }
+  .legend-item.li-hatch     { color: var(--ets-hatch); }
+  .legend-item.li-emissions .legend-swatch { background: var(--ets-emissions); }
+  .legend-item.li-uncovered .legend-swatch { background: var(--ets-uncovered); }
+  .legend-item.li-line      .legend-swatch { background: var(--ets-line); }
+  /* Filled by renderLegendSwatches() with the chart's own SVG hatch pattern;
+     the background is only what shows before that runs. */
+  .legend-swatch.hatch-light { background: var(--ets-alloc); }
+
+  #tooltip {
+    position: fixed; background: #fff; color: #515b66;
+    border: 1px solid #dce3e8;
+    padding: 7px 11px; border-radius: 8px; font-size: 13px;
+    pointer-events: none; display: none; z-index: 1000;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12); line-height: 1.45; max-width: 280px;
+    white-space: pre-wrap;   /* wrap long owner names in the filter tooltips */
+  }
+  #tooltip strong { color: #2d3748; }
+
+  .ets-sankey-indent { margin-left: 2rem; margin-top: -0.5rem; }
+}
