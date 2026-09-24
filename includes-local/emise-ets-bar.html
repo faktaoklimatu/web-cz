@@ -1,58 +1,60 @@
 <style>
 .ets-bar { margin: 2rem 0; }
-.ets-bar .legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.5rem; font-size: 0.9rem; margin-bottom: 1rem; }
-.ets-bar .legend span { display: inline-flex; align-items: center; gap: 0.5rem; }
-.ets-bar .legend i { width: 1rem; height: 1rem; border-radius: 2px; }
-.ets-bar .plot { position: relative; padding: 1.5rem 0; }
-.ets-bar .grid { position: absolute; top: 0; bottom: 0; width: 1px; background: #b0b0b0; }
-.ets-bar .track { position: relative; display: flex; height: 110px; }
-.ets-bar .seg { min-width: 1px; }
-.ets-bar .source { font-size: 0.8rem; opacity: 0.7; margin-top: 0.75rem; }
-@media (max-width: 640px) { .ets-bar .track { height: 70px; } }
+.ets-bar .track { display: flex; gap: 4px; height: 40px; }
+.ets-bar .seg { flex: 1 1 0; min-width: 2px; }
+.ets-bar .labels { display: flex; gap: 4px; margin-top: 0.6rem; }
+.ets-bar .labels > div { flex: 1 1 0; min-width: 0; white-space: nowrap; line-height: 1.25; }
+.ets-bar .labels .name { font-weight: 700; }
+.ets-bar .labels .pct { font-variant-numeric: tabular-nums; }
+.ets-bar .source { font-size: 0.8rem; opacity: 0.7; margin-top: 1rem; }
+@media (max-width: 640px) {
+  .ets-bar .track { height: 28px; }
+  .ets-bar .labels { display: block; }
+  .ets-bar .labels > div { text-align: left !important; margin-top: 0.5rem; }
+  .ets-bar .labels .name, .ets-bar .labels .pct { display: inline; }
+  .ets-bar .labels .pct::before { content: " — "; }
+}
 </style>
 
 <div class="ets-bar" id="ets-bar">
-  <div class="legend"></div>
-  <div class="plot"><div class="track"></div></div>
+  <div class="track"></div>
+  <div class="labels"></div>
   <div class="source">Zdroj: EEA, směrnice o ETS, Transport &amp; Environment</div>
 </div>
 
 <script>
 (function () {
   // Uprav jen tohle pole (hodnoty v Mt CO2eq, 2024) – zbytek se vykreslí sám.
+  // align: kam se zarovná popisek pod dílem ("left" / "right")
   var DATA = [
-    { label: "ETS1 nyní",  value: 1186.5, color: "#2f5597" },
-    { label: "ETS1 nově",  value: 66.2,   color: "#5b9bd5" },
-    { label: "ETS2",       value: 1261,   color: "#7030a0" },
-    { label: "Mimo ETS",   value: 529.3,  color: "#d9d9d9" }
+    { label: "ETS1 nyní", value: 1186.5, color: "#6c6cd6", align: "left"  },
+    { label: "ETS1 nově", value: 66.2,   color: "#3b3b93", align: "left", prefix: "+ " },
+    { label: "ETS2",      value: 1261,   color: "#b5b8bd", align: "right" },
+    { label: "Mimo ETS",  value: 529.3,  color: "#d3d5d9", align: "right" }
   ];
-  var GRIDLINES = [0, 25, 50, 75, 100]; // v procentech celku
 
   var root = document.getElementById("ets-bar");
-  var legend = root.querySelector(".legend");
-  var plot = root.querySelector(".plot");
   var track = root.querySelector(".track");
+  var labels = root.querySelector(".labels");
   var total = DATA.reduce(function (a, d) { return a + d.value; }, 0);
 
-  GRIDLINES.forEach(function (pct) {
-    var g = document.createElement("div");
-    g.className = "grid";
-    g.style.left = "calc(" + pct + "% - " + (pct / 100) + "px)";
-    plot.insertBefore(g, track);
-  });
-
   DATA.forEach(function (d) {
-    var share = d.value / total * 100;
+    var pct = (d.value / total * 100).toFixed(1).replace(".", ",") + " %";
+
     var seg = document.createElement("div");
     seg.className = "seg";
     seg.style.background = d.color;
     seg.style.flexGrow = d.value;
-    seg.title = d.label + ": " + d.value + " Mt (" + share.toFixed(1).replace(".", ",") + " %)";
+    seg.title = d.label + ": " + d.value + " Mt (" + pct + ")";
     track.appendChild(seg);
 
-    var item = document.createElement("span");
-    item.innerHTML = '<i style="background:' + d.color + '"></i>' + d.label;
-    legend.appendChild(item);
+    var cell = document.createElement("div");
+    cell.style.flexGrow = d.value;
+    cell.style.color = d.color;
+    cell.style.textAlign = d.align || "left";
+    cell.innerHTML = '<div class="name">' + (d.prefix || "") + d.label + "</div>" +
+                     '<div class="pct">' + pct + "</div>";
+    labels.appendChild(cell);
   });
 })();
 </script>
