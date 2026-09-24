@@ -100,16 +100,22 @@ include_in_search: true
    The width is tied to the digit width rather than guessed in em: 1ch is the
    advance of "0" in whatever font the element ends up with — this control sits
    outside .chart-panel, so it is the site font, not the charts' Roboto — and
-   digits share one advance, so 4ch is exactly a year. The 8px covers the 2px
-   padding and 1px border on each side under border-box, plus a pixel of slack for
-   sub-pixel rounding — too little and the last digit is clipped, too much and
-   text-align:center splits the excess either side of the dash. */
+   digits share one advance, so 4ch is exactly a year. The 8px on top covers the
+   1px border each side and leaves a little slack; each box then hangs its text
+   towards the dash, so the slack falls on the outer edge instead of opening a
+   gap around it. */
 .year-input {
-  width: calc(4ch + 8px); padding: 0 2px;
+  width: calc(4ch + 8px); padding: 0;
   border: 1px solid transparent; border-radius: 3px; background: none;
-  font: inherit; color: inherit; text-align: center;
+  font: inherit; color: inherit;
   -moz-appearance: textfield;
 }
+#ets-year-from-val { text-align: right; }
+/* The trailing box gets no slack at all — only its 1px border on each side —
+   so the last digit ends exactly where the box does, and .control-head's
+   space-between then lands that edge on the slider's own right edge. The
+   leading box keeps its slack, which its right-alignment pushes outwards. */
+#ets-year-to-val { text-align: left; width: calc(4ch + 2px); }
 .year-input::-webkit-outer-spin-button,
 .year-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .year-input:hover { border-color: #ced4da; }
@@ -220,8 +226,8 @@ include_in_search: true
   --ets-thumb: 16px;
   position: relative; height: 26px; display: flex; align-items: center; margin-top: -6px;
 }
-.range-track-bg { position: absolute; left: 0; right: 0; height: 4px; background: #dde3e8; border-radius: 2px; }
-.range-fill { position: absolute; height: 4px; background: #515b66; border-radius: 2px; pointer-events: none; }
+.range-track-bg { position: absolute; left: 0; right: 0; height: 3px; background: #dde3e8; border-radius: 1.5px; }
+.range-fill { position: absolute; height: 3px; background: #515b66; border-radius: 1.5px; pointer-events: none; }
 .dual-range input[type="range"] {
   position: absolute; width: 100%; margin: 0;
   background: none; pointer-events: none;
@@ -242,7 +248,7 @@ include_in_search: true
    half its width to straddle it rather than start there. */
 .range-tick {
   position: absolute; top: 50%; transform: translate(-50%, -50%);
-  width: 4px; height: 6px; background: #fff;
+  width: 6px; height: 3px; background: #fff;
 }
 .phase-annotations { position: relative; height: 14px; margin-top: -2px; }
 .phase-annotation {
@@ -491,7 +497,7 @@ include_in_search: true
       <div class="filter-summary" id="ets-filter-summary"></div>
       <div class="chart-foot">
         <span id="ets-source-timeline">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
-        <button type="button" class="svg-download" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+        <button type="button" class="svg-download" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
       </div>
     </div>
 
@@ -517,7 +523,7 @@ include_in_search: true
       <div class="filter-summary" id="ets-activity-filter-summary"></div>
       <div class="chart-foot">
         <span id="ets-source-activity">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
-        <button type="button" class="svg-download" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+        <button type="button" class="svg-download" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
       </div>
     </div>
 
@@ -562,7 +568,7 @@ Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lep
   <svg id="ets-svg-sankey"></svg>
   <div class="chart-foot">
     <span id="ets-source-sankey">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a>, rešerše Fakta o klimatu</span>
-    <button type="button" class="svg-download" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+    <button type="button" class="svg-download" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
   </div>
 </div>
 
