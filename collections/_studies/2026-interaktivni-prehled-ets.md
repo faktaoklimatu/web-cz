@@ -12,6 +12,7 @@ intro: |
 extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/ets-dashboard.js
+- /assets-local/js/svg-download.js
 preview_type: "Interaktivní přehled"
 include_in_search: true
 ---
@@ -33,7 +34,7 @@ include_in_search: true
   --ets-alloc: #fffafa;           /* hatch background */
   --ets-hatch: #ff9c66;           /* hatch stripes */
   --ets-line: #000000;
-  --ets-chart-height: 340px;      /* sankey + fallback */
+  --ets-chart-height: 340px;      /* chart 2 + fallback */
   --ets-timeline-height: 350px;   /* chart 1; chart 2's height is derived in JS */
   --ets-title-size-1: 24px;       /* chart 1 heading */
   --ets-title-size-2: 24px;       /* chart 2 heading */
@@ -95,9 +96,16 @@ include_in_search: true
   color: #515b66;
 }
 /* The two years are editable. They read as plain text until pointed at, so
-   the control still looks like a caption rather than a form. */
+   the control still looks like a caption rather than a form.
+   The width is tied to the digit width rather than guessed in em: 1ch is the
+   advance of "0" in whatever font the element ends up with — this control sits
+   outside .chart-panel, so it is the site font, not the charts' Roboto — and
+   digits share one advance, so 4ch is exactly a year. The 8px covers the 2px
+   padding and 1px border on each side under border-box, plus a pixel of slack for
+   sub-pixel rounding — too little and the last digit is clipped, too much and
+   text-align:center splits the excess either side of the dash. */
 .year-input {
-  width: 3.6em; padding: 0 2px;
+  width: calc(4ch + 8px); padding: 0 2px;
   border: 1px solid transparent; border-radius: 3px; background: none;
   font: inherit; color: inherit; text-align: center;
   -moz-appearance: textfield;
@@ -139,7 +147,7 @@ include_in_search: true
 .ms-panel.open { display: block; }
 .ms-search { margin: 0 10px 6px; width: calc(100% - 20px); }
 .ms-actions {
-  display: flex; justify-content: space-between;
+  display: flex;
   padding: 0 10px 6px; margin-bottom: 4px;
   border-bottom: 1px solid #f0f2f4;
 }
@@ -204,7 +212,14 @@ include_in_search: true
 }
 
 /* ── Year dual-range slider ───────────────────────────────────────────────── */
-.dual-range { position: relative; height: 26px; display: flex; align-items: center; margin-top: 6px; }
+/* --ets-thumb is shared with the tick placement in renderPhaseAnnotations:
+   a range input centres its thumb inside the track minus one thumb width,
+   so a tick positioned as a plain percentage of the full track drifts away
+   from the handles and disappears under them near the middle values. */
+.dual-range {
+  --ets-thumb: 16px;
+  position: relative; height: 26px; display: flex; align-items: center; margin-top: -6px;
+}
 .range-track-bg { position: absolute; left: 0; right: 0; height: 4px; background: #dde3e8; border-radius: 2px; }
 .range-fill { position: absolute; height: 4px; background: #515b66; border-radius: 2px; pointer-events: none; }
 .dual-range input[type="range"] {
@@ -214,7 +229,7 @@ include_in_search: true
 }
 .dual-range input[type="range"]::-webkit-slider-thumb {
   pointer-events: all; -webkit-appearance: none; appearance: none;
-  width: 16px; height: 16px; border-radius: 50%;
+  width: var(--ets-thumb); height: var(--ets-thumb); border-radius: 50%;
   background: #fff; cursor: pointer;
   border: 2px solid #515b66; box-shadow: 0 1px 4px rgba(0,0,0,0.25);
 }
@@ -223,12 +238,19 @@ include_in_search: true
   background: #fff; cursor: pointer; border: 2px solid #515b66; box-shadow: 0 1px 4px rgba(0,0,0,0.25);
 }
 .range-ticks { position: absolute; left: 0; right: 0; top: 0; bottom: 0; pointer-events: none; }
-.range-tick { position: absolute; top: 15px; width: 1px; height: 8px; background: #ced4da; }
-.phase-annotations { position: relative; height: 14px; margin-top: 2px; }
+/* JS sets left to the boundary's own position, so the mark is pulled back by
+   half its width to straddle it rather than start there. */
+.range-tick {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 4px; height: 6px; background: #fff;
+}
+.phase-annotations { position: relative; height: 14px; margin-top: -2px; }
 .phase-annotation {
   position: absolute; top: 0;
   font-size: 10.5px; font-weight: 500; color: #a0aec0; white-space: nowrap;
 }
+/* Lit while a handle is standing inside that phase; set by updateYearBar. */
+.phase-annotation.is-active { color: #515b66; }
 .phase-annotation--left { left: 0; }
 .phase-annotation--center { transform: translateX(-50%); }
 .phase-annotation--right { right: 0; }
@@ -276,6 +298,19 @@ include_in_search: true
 }
 .chart-panel > #ets-timeline-title .title-period { font-weight: 400; }
 #ets-activity-title { font-size: var(--ets-title-size-2); margin: 0 0 10px; }
+.chart-foot {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: flex-end; gap: 4px 16px;
+  padding-top: 0.4rem;
+  font-size: 0.8rem; color: #a0aec0;
+}
+.chart-foot a, .chart-foot a:hover { color: #a0aec0; }
+.chart-foot .svg-download {
+  background: none; border: none; padding: 0;
+  font: inherit; color: inherit; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.chart-foot .svg-download:hover { text-decoration: underline; }
 .filter-summary {
   font-size: 14px; font-weight: 400; color: #718096; margin-bottom: 0;
   padding: var(--ets-summary-pad-t) 0 var(--ets-summary-pad-b);
@@ -339,14 +374,16 @@ include_in_search: true
 .legend-swatch.hatch-light { background: var(--ets-alloc); }
 
 #tooltip {
-  position: fixed; background: #1a202c; color: #e2e8f0;
-  padding: 8px 12px; border-radius: 6px; font-size: 11px;
+  position: fixed; background: #fff; color: #515b66;
+  border: 1px solid #dce3e8;
+  padding: 7px 11px; border-radius: 8px; font-size: 13px;
   pointer-events: none; display: none; z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4); line-height: 1.7; max-width: 240px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12); line-height: 1.45; max-width: 280px;
+  white-space: pre-wrap;   /* wrap long owner names in the filter tooltips */
 }
+#tooltip strong { color: #2d3748; }
 
 .ets-sankey-indent { margin-left: 2rem; margin-top: -0.5rem; }
-.ets-sankey-toggle .expander-title { font-size: 0.85rem; }
 </style>
 
 <div class="section pb-3">
@@ -367,7 +404,6 @@ include_in_search: true
       <button type="button" class="ms-toggle" id="ets-real-activity-toggle">Všechna odvětví</button>
       <div class="ms-panel" id="ets-real-activity-panel">
         <div class="ms-actions">
-          <button type="button" data-action="all">Vybrat vše</button>
           <button type="button" data-action="none">Zrušit výběr</button>
         </div>
         <div class="ms-options" id="ets-real-activity-options"></div>
@@ -382,7 +418,6 @@ include_in_search: true
       <div class="ms-panel" id="ets-company-panel">
         <input type="text" class="form-control ms-search" id="ets-company-search" placeholder="Hledat vlastníka…">
         <div class="ms-actions">
-          <button type="button" data-action="all">Vybrat vše</button>
           <button type="button" data-action="none">Zrušit výběr</button>
         </div>
         <div class="ms-options" id="ets-company-options"></div>
@@ -397,7 +432,6 @@ include_in_search: true
       <div class="ms-panel" id="ets-installation-panel">
         <input type="text" class="form-control ms-search" id="ets-installation-search" placeholder="Hledat zařízení…">
         <div class="ms-actions">
-          <button type="button" data-action="all">Vybrat vše</button>
           <button type="button" data-action="none">Zrušit výběr</button>
         </div>
         <div class="ms-options" id="ets-installation-options"></div>
@@ -412,8 +446,8 @@ include_in_search: true
     </div>
     <div class="dual-range">
       <div class="range-track-bg"></div>
-      <div class="range-ticks" id="ets-year-phase-ticks"></div>
       <div class="range-fill" id="ets-year-fill"></div>
+      <div class="range-ticks" id="ets-year-phase-ticks"></div>
       <input type="range" id="ets-year-from" step="1">
       <input type="range" id="ets-year-to" step="1">
     </div>
@@ -455,6 +489,10 @@ include_in_search: true
       <svg id="ets-svg-timeline"></svg>
 
       <div class="filter-summary" id="ets-filter-summary"></div>
+      <div class="chart-foot">
+        <span id="ets-source-timeline">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
+        <button type="button" class="svg-download" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+      </div>
     </div>
 
     <div class="chart-panel">
@@ -477,6 +515,10 @@ include_in_search: true
       <svg id="ets-svg-activity"></svg>
 
       <div class="filter-summary" id="ets-activity-filter-summary"></div>
+      <div class="chart-foot">
+        <span id="ets-source-activity">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
+        <button type="button" class="svg-download" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+      </div>
     </div>
 
 {% capture povolenky-zdarma %}
@@ -504,17 +546,6 @@ Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají 
     content=povolenky-zdarma
 %}
 
-{% capture sankey-figure %}
-<div class="chart-panel">
-  <div class="panel-header">
-    <div class="panel-title-group">
-      <h2>Mapování hlavní ETS aktivity na skutečné odvětví</h2>
-    </div>
-  </div>
-  <svg id="ets-svg-sankey"></svg>
-</div>
-{% endcapture %}
-
 {% capture data %}
 
 Data o alokacích povolenek zdarma a ověřených emisí pochází z [Unijního registru](https://union-registry-data.ec.europa.eu/report/welcome), konkrétně souboru [*Verified emissions 2025*](https://climate.ec.europa.eu/document/download/53018483-62b3-499e-9ab9-b4a831cc44f4_en?filename=verified_emissions_2025_en.xlsx).
@@ -522,13 +553,18 @@ Data o alokacích povolenek zdarma a ověřených emisí pochází z [Unijního 
 Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lepší srozumitelnost a analýzu přidali následující atributy:
 * **Odvětví zařízení** – původní data obsahují data o hlavní aktivitě (odvětví) daného zařízení, která ale v některých případech přesně neodpovídá skutečné aktivitě celého podniku. Jde především o primárně průmyslová zařízení zařazené do aktivity _Výroba elektřiny a tepla (spalování paliv)_, kam se podnik dostal kvůli tomu, protože překročil práh tepelného příkonu (nad 20 MW) a nikoliv práh definovaný objemem výroby (např. stanovený objem denní produkce). Přeřazení takového zařízení do konkrétního průmyslového odvětví (na základě naší rešerše) umožňuje lépe analyzovat, jaká je celková situace v jednotlivých odvětvích průmyslu.
 
-{% include expander-figure.html
-    name="sankey-mapping"
-    class="ets-sankey-indent"
-    label="Mapování hlavní aktivity dle ETS na skutečné odvětví"
-    label-class="ets-sankey-toggle"
-    content=sankey-figure
-%}
+<div class="chart-panel ets-sankey-indent">
+  <div class="panel-header">
+    <div class="panel-title-group">
+      <h2 id="ets-sankey-title">Mapování hlavní ETS aktivity na skutečné odvětví</h2>
+    </div>
+  </div>
+  <svg id="ets-svg-sankey"></svg>
+  <div class="chart-foot">
+    <span id="ets-source-sankey">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a>, rešerše Fakta o klimatu</span>
+    <button type="button" class="svg-download" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey"><i class="fa-solid fa-arrow-down"></i>Stáhnout SVG</button>
+  </div>
+</div>
 
 * **Současný vlastník** – k názvu zařízení (podniku) jsme na základě rešerše přidali současného vlastníka zařízení (historii vlastnictví pro zjednodušení nezahrnujeme). Ve většině případů jde o mateřskou společnost, u které se potkávají všechny její česká zařízení zahrnutá v ETS1. V rozbalovacím seznamu jsme je následně seřadili podle množství emisí, které jejich zařízení vyprodukují.
 
