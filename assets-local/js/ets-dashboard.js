@@ -220,39 +220,40 @@
   const sortedCompanies = Array.from(new Set(INSTALLS.map(inst => inst.own).filter(Boolean)))
     .sort((a, b) => a.localeCompare(b, "cs"));
 
-  // Group installations under their facility/site name (installs[].co) —
-  // e.g. every install with co "ČEZ" nests under a "ČEZ" header. This is
-  // distinct from installs[].own, the current contractual owner (used for
-  // the separate "Současný vlastník" facet below) — co is the site's own
-  // identity, own is who currently runs it, and they often differ (a site
-  // can change hands while keeping its name). Sites with only one
-  // installation stay flat, shown plainly rather than as a redundant
-  // one-item group; a flat row combines co and n as "co – n" so the site is
-  // still identifiable without a group header — unless the two are already
-  // identical (the installation's own name just repeats the site name), in
-  // which case that would only duplicate the text, so it's shown flat and
-  // bare. Flat entries and group headers are merged into one list; sortKey
-  // (the flat row's display text, the site name for group rows) is only the
-  // alphabetical tie-break — renderInstallOptions orders the panel by
-  // emissions, biggest first, the same as the "Současný vlastník" list.
+  // Group installations under their facility/site name (installs[].operator)
+  // — e.g. every install with operator "ČEZ" nests under a "ČEZ" header.
+  // This is distinct from installs[].own, the current contractual owner
+  // (used for the separate "Současný vlastník" facet below) — operator is
+  // the site's own identity, own is who currently runs it, and they often
+  // differ (a site can change hands while keeping its name). Sites with
+  // only one installation stay flat, shown plainly rather than as a
+  // redundant one-item group; a flat row combines operator and n as
+  // "operator – n" so the site is still identifiable without a group
+  // header — unless the two are already identical (the installation's own
+  // name just repeats the site name), in which case that would only
+  // duplicate the text, so it's shown flat and bare. Flat entries and group
+  // headers are merged into one list; sortKey (the flat row's display text,
+  // the site name for group rows) is only the alphabetical tie-break —
+  // renderInstallOptions orders the panel by emissions, biggest first, the
+  // same as the "Současný vlastník" list.
   const installRows = (() => {
-    const byCo = new Map();
+    const byOperator = new Map();
     INSTALLS.forEach((inst, i) => {
-      if (!inst.co) return;
-      if (!byCo.has(inst.co)) byCo.set(inst.co, []);
-      byCo.get(inst.co).push({ i, n: inst.n });
+      if (!inst.operator) return;
+      if (!byOperator.has(inst.operator)) byOperator.set(inst.operator, []);
+      byOperator.get(inst.operator).push({ i, n: inst.n });
     });
     const grouped = new Set();
     const rows = [];
-    byCo.forEach((items, co) => {
+    byOperator.forEach((items, operator) => {
       if (items.length < 2) return;
       items.sort((a, b) => a.n.localeCompare(b.n, "cs"));
       items.forEach(({ i }) => grouped.add(i));
-      rows.push({ type: "group", co, items, sortKey: co });
+      rows.push({ type: "group", operator, items, sortKey: operator });
     });
     INSTALLS.forEach((inst, i) => {
       if (grouped.has(i)) return;
-      const label = inst.co && inst.co !== inst.n ? `${inst.co} – ${inst.n}` : inst.n;
+      const label = inst.operator && inst.operator !== inst.n ? `${inst.operator} – ${inst.n}` : inst.n;
       rows.push({ type: "flat", i, n: label, sortKey: label });
     });
     rows.sort((a, b) => a.sortKey.localeCompare(b.sortKey, "cs"));
@@ -416,11 +417,11 @@
         return;
       }
       // Group row: a query matches either an individual installation's own
-      // name, or the site name (co), so searching the site surfaces the
-      // whole group even if no single installation name contains it.
+      // name, or the site name (operator), so searching the site surfaces
+      // the whole group even if no single installation name contains it.
       const visible = row.items
         .filter(({ i, n }) => shown(i) &&
-          (!q || n.toLowerCase().includes(q) || row.co.toLowerCase().includes(q)))
+          (!q || n.toLowerCase().includes(q) || row.operator.toLowerCase().includes(q)))
         .sort((a, b) => byPin(pin, a.i, b.i) ||
           emOf(b.i) - emOf(a.i) || a.n.localeCompare(b.n, "cs"));
       if (!visible.length) return;
@@ -440,7 +441,7 @@
       const groupE = rowEmissions(row);
       const groupName = document.createElement("span");
       groupName.className = "ms-option-name";
-      groupName.textContent = groupE > 0 ? `${row.co} (${fmt(groupE)})` : row.co;
+      groupName.textContent = groupE > 0 ? `${row.operator} (${fmt(groupE)})` : row.operator;
       groupName.dataset.tip = groupName.textContent;
       groupLabel.appendChild(groupCb);
       groupLabel.appendChild(groupName);
