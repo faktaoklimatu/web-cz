@@ -29,2890 +29,2168 @@ installs:
   c: CZ
   act: 0
   own: HSC Aerojet
-  co: AERO Vodochody AERO
+  operator: AERO Vodochody AERO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Výrobní linka R3
   c: CZ
   act: 6
   own: AGC
-  co: AGC Flat Glass Czech
+  operator: AGC Flat Glass Czech
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Závod Barevka
   c: CZ
   act: 6
   own: AGC
-  co: AGC Flat Glass Czech
+  operator: AGC Flat Glass Czech
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Závod Řetenice
   c: CZ
   act: 6
   own: AGC
-  co: AGC Flat Glass Czech
+  operator: AGC Flat Glass Czech
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: AL INVEST Břidličná
   c: CZ
   act: 0
   own: MTX
-  co: AL INVEST Břidličná
+  operator: AL INVEST Břidličná
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Areál Zbrojovky Brno
   c: CZ
   act: 0
   own: ATALIAN
-  co: ATALIAN CZ
+  operator: ATALIAN CZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna – spalovací zařízení
   c: CZ
   act: 0
   own: ČEZ
-  co: Actherm
+  operator: Actherm
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Omnipol
-  co: Aircraft Industries
+  operator: Aircraft Industries
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Tepelné hospodářství
   c: CZ
   act: 0
   own: Ammann
-  co: Ammann
+  operator: Ammann
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Areál Gumotex Břeclav
   c: CZ
   act: 0
   own: Amper
-  co: Amper Savings
+  operator: Amper Savings
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Frýdek-Místek
   c: CZ
   act: 2
   own: Stalprodukt
-  co: ArcelorMittal
+  operator: ArcelorMittal
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
-- n: Tubular Products Karviná
+- n: ArcelorMittal Tubular Products Karviná
   c: CZ
   act: 0
   own: ArcelorMittal
-  co: ArcelorMittal
+  operator: ArcelorMittal Tubular Products Karviná
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Kotelna Dobříš
   c: CZ
   act: 0
   own: BEFACOAL
-  co: BEFACOAL
+  operator: BEFACOAL
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Oslavany
   c: CZ
   act: 0
   own: BEFACOAL
-  co: BEFACOAL
+  operator: BEFACOAL
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: BFS Energo
   c: CZ
   act: 0
   own: BFS
-  co: BFS Energo
+  operator: BFS Energo
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Sdružení Teplárna Radotín
   c: CZ
   act: 0
   own: 'BRUDRA '
-  co: BRUDRA
+  operator: BRUDRA
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Lukavice
   c: CZ
   act: 8
   own: JIVA Trade
-  co: Balsac papermill
+  operator: Balsac papermill
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Provozovna Kunštát
   c: CZ
   act: 7
   own: BEST-BUSINESS
-  co: Best Business
+  operator: Best Business
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: TTA 2
   c: CZ
   act: 0
   own: C-Energy
-  co: C-Energy Planá
+  operator: C-Energy Planá
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna
   c: CZ
   act: 0
   own: C-Energy
-  co: C-Energy Planá
+  operator: C-Energy Planá
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna TTA 1
   c: CZ
   act: 0
   own: C-Energy
-  co: C-Energy Planá
+  operator: C-Energy Planá
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Vápenka Mokrá
   c: CZ
   act: 5
   own: CARMEUSE
-  co: CARMEUSE CZECH REPUBLIC
+  operator: CARMEUSE CZECH REPUBLIC
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: CEMEX Czech Republic
   c: CZ
   act: 5
   own: Cemex
-  co: CEMEX Czech Republic
+  operator: CEMEX Czech Republic
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: CEREPA
   c: CZ
   act: 8
   own: Cerepa
-  co: CEREPA
+  operator: CEREPA
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Závod Nový Bor
   c: CZ
   act: 6
   own: BUGAT
-  co: CRYSTALEX CZ
+  operator: CRYSTALEX CZ
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: 'CRYSTALITE BOHEMIA '
   c: CZ
   act: 6
   own: Crystal BOHEMIA
-  co: 'CRYSTALITE BOHEMIA '
+  operator: Crystal BOHEMIA
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: ENETIQA
-  co: CTZ
+  operator: CTZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Energoblok Domoradice
   c: CZ
   act: 0
   own: 'CARTHAMUS '
-  co: Carthamus
+  operator: Carthamus
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Rotační pec
   c: CZ
   act: 5
   own: Buzzi
-  co: Cement Hranice
+  operator: Cement Hranice
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Centrální zdroj tepla
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Centrální zdroj tepla
+  operator: Centrální zdroj tepla
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Slévárna tvárné litiny
   c: CZ
   act: 0
   own: Chrudim IRON & STEEL
-  co: Chrudim IRON&STEEL
+  operator: Chrudim IRON&STEEL
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Cihelna Hodonín
   c: CZ
   act: 7
   own: Cihelna Hodonín
-  co: Cihelna Hodonín
+  operator: Cihelna Hodonín
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Kinský
   c: CZ
   act: 7
   own: 'Cihelna Kinský '
-  co: Cihelna Kinský
+  operator: Cihelna Kinský
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Polom
   c: CZ
   act: 7
   own: 'Cihelna Polom '
-  co: Cihelna Polom
+  operator: Cihelna Polom
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Vysoké Mýto
   c: CZ
   act: 7
   own: Cihelna Vysoké Mýto
-  co: Cihelna Vysoké Mýto
+  operator: Cihelna Vysoké Mýto
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelny STAMP Miskolezy
   c: CZ
   act: 7
   own: Cihelny STAMP Miskolezy
-  co: Cihelny STAMP Miskolezy
+  operator: Cihelny STAMP Miskolezy
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Crystal BOHEMIA
   c: CZ
   act: 6
   own: Crystal BOHEMIA
-  co: Crystal BOHEMIA
+  operator: Crystal BOHEMIA
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Cukrovar Hrušovany
   c: CZ
   act: 0
   own: Agrana
-  co: Cukrovar Hrušovany
+  operator: Moravskoslezské cukrovary
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Cukrovar Opava
   c: CZ
   act: 0
   own: Agrana
-  co: Cukrovar Opava
+  operator: Moravskoslezské cukrovary
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Uhelná kotelna
   c: CZ
   act: 0
   own: 'Cukrovar Vrbátky '
-  co: Cukrovar Vrbátky
+  operator: Cukrovar Vrbátky
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Teplárna závodu
   c: CZ
   act: 0
   own: AGROFERT
-  co: DEZA
+  operator: DEZA
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Výtopna Stráž pod Ralskem
   c: CZ
   act: 0
   own: DIAMO
-  co: DIAMO
+  operator: DIAMO
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Odštěpný závod GEAM provoz Chemická úpravna
   c: CZ
   act: 0
   own: DIAMO
-  co: DIAMO
+  operator: DIAMO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Provozovna Setuza
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Dalkia
+  operator: Dalkia
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: SARIA
-  co: Devro
+  operator: Devro
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Kotelny družstva
   c: CZ
   act: 0
   own: Dřevozpracující družstvo
-  co: Dřevozpracující družstvo
+  operator: Dřevozpracující družstvo
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: EMBA
   c: CZ
   act: 8
   own: EMBA
-  co: EMBA
+  operator: EMBA
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Teplárny a Tepelná zařízení
   c: CZ
   act: 0
   own: Moravia Steel
-  co: ENERGETIKA TŘINEC
+  operator: ENERGETIKA TŘINEC
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Výtopna Litoměřice – Kocanda
   c: CZ
   act: 0
   own: ENETIQA
-  co: ENERGIE Holding
+  operator: ENERGIE Holding
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Louny
   c: CZ
   act: 0
   own: ENETIQA
-  co: ENERGIE Holding
+  operator: ENERGIE Holding
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Mimoň – Hradčany
   c: CZ
   act: 0
   own: ENETIQA
-  co: ENERGIE Holding
+  operator: ENERGIE Holding
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna
   c: CZ
   act: 0
   own: ENERGOAQUA
-  co: ENERGOAQUA
+  operator: ENERGOAQUA
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Mělník 1
   c: CZ
   act: 0
   own: ČEZ
-  co: Energotrans
+  operator: Energotrans
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Elrond
-  co: ENERGY U/L
+  operator: ENERGY Ústí nad Labem
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Chrudim
   c: CZ
   act: 0
   own: EPH
-  co: EOP Distribuce
+  operator: EOP Distribuce
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Farářství
   c: CZ
   act: 0
   own: EPH
-  co: EOP Distribuce
+  operator: EOP Distribuce
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Pardubice
   c: CZ
   act: 0
   own: EPH
-  co: EOP Distribuce
+  operator: EOP Distribuce
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: ZVU
   c: CZ
   act: 0
   own: EPH
-  co: EOP Distribuce
+  operator: EOP Distribuce
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: EUROSERUM
   c: CZ
   act: 0
   own: Eligo
-  co: EUROSERUM
+  operator: EUROSERUM
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Elektrárna Chvaletice
   c: CZ
   act: 0
   own: 'Sev.en Česká energie '
-  co: Elektrárna Chvaletice
+  operator: Elektrárna Chvaletice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Počerady
   c: CZ
   act: 0
   own: 'Sev.en Česká energie '
-  co: Elektrárna Počerady
+  operator: Elektrárna Počerady
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Tisová
   c: CZ
   act: 0
   own: SUAS
-  co: Elektrárna Tisová
+  operator: Elektrárna Tisová
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Opatovice
   c: CZ
   act: 0
   own: EPH
-  co: Elektrárny Opatovice
+  operator: Elektrárny Opatovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna
   c: CZ
   act: 0
   own: ČEZ
-  co: Energetické centrum
+  operator: Energetické centrum
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Třeboradice
   c: CZ
   act: 0
   own: ČEZ
-  co: Výtopna Třeboradice
+  operator: Energotrans
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Mělník 2
   c: CZ
   act: 0
   own: ČEZ
-  co: Energotrans
+  operator: Energotrans
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Mělník 3
   c: CZ
   act: 0
   own: ČEZ
-  co: Energotrans
+  operator: Energotrans
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotle K1-K3 (Cukrovar Vrdy)
   c: CZ
   act: 0
   own: AGROFERT
-  co: Ethanol Energy
+  operator: Ethanol Energy
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Výtopna
   c: CZ
   act: 0
   own: Ministerstvo zdravotnictví
-  co: FN BRNO
+  operator: Fakultní nemocnice Brno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Centrální kotelna
   c: CZ
   act: 0
   own: Ministerstvo zdravotnictví
-  co: Fakultní nemocnice v Motole
+  operator: Fakultní nemocnice v Motole
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Fosfa
   c: CZ
   act: 0
   own: FB HOLDING
-  co: Fosfa
+  operator: Fosfa
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Výroba keramických frit
   c: CZ
   act: 7
   own: Torrecid
-  co: GLAZURA
+  operator: GLAZURA
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: GZ Holding
-  co: GZ DIGITAL MEDIA
+  operator: GZ DIGITAL MEDIA
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Glazura
   c: CZ
   act: 7
   own: Torrecid
-  co: Glazura
+  operator: Glazura
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: HASIT Šumavské vápenice a omítkárny
   c: CZ
   act: 5
   own: FIXIT
-  co: HASIT Šumavské vápenice a omítkárny
+  operator: HASIT Šumavské vápenice a omítkárny
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Cihelna Kryry
   c: CZ
   act: 7
   own: HELUZ
-  co: HELUZ cihlářský průmysl
+  operator: HELUZ cihlářský průmysl
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Hevlín
   c: CZ
   act: 7
   own: HELUZ
-  co: HELUZ cihlářský průmysl
+  operator: HELUZ cihlářský průmysl
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: HELUZ cihlářský průmysl
   c: CZ
   act: 0
   own: HELUZ
-  co: HELUZ cihlářský průmysl
+  operator: HELUZ cihlářský průmysl
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Libochovice
   c: CZ
   act: 7
   own: HELUZ
-  co: HELUZ cihlářský průmysl
+  operator: HELUZ cihlářský průmysl
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Dolní Bukovsko
   c: CZ
   act: 7
   own: HELUZ
-  co: HELUZ cihlářský průmysl
+  operator: HELUZ cihlářský průmysl
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Teplárna divize Tevex
   c: CZ
   act: 0
   own: KAREL HOLOUBEK – Trade Group
-  co: HOLOUBEK
+  operator: HOLOUBEK
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Cukrovar Prosenice
   c: CZ
   act: 0
   own: 'Hanácká potravinářská společnost '
-  co: Hanácká p.s.
+  operator: Hanácká p.s.
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Závod Mokrá
   c: CZ
   act: 5
   own: Heidelberg Materials
-  co: Heidelberg Materials CZ
+  operator: Heidelberg Materials CZ
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Závod Radotín
   c: CZ
   act: 5
   own: Heidelberg Materials
-  co: Heidelberg Materials CZ
+  operator: Heidelberg Materials CZ
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Královský pivovar Krušovice
   c: CZ
   act: 0
   own: Heineken
-  co: Heineken
+  operator: Heineken
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Cementárna Čížkovice
   c: CZ
   act: 5
   own: Holcim
-  co: Holcim (Česko)
+  operator: Holcim (Česko)
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Huhtamaki Česká republika
   c: CZ
   act: 8
   own: Huhtamaki
-  co: Huhtamaki Česká republika
+  operator: Huhtamaki Česká republika
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Kotelna Z1
   c: CZ
   act: 0
   own: ENETIQA
-  co: IROMEZ
+  operator: IROMEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Z2
   c: CZ
   act: 0
   own: ENETIQA
-  co: IROMEZ
+  operator: IROMEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna E-1
   c: CZ
   act: 0
   own: Iveco
-  co: Iveco
+  operator: Iveco
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: JIHLAVSKÉ KOTELNY
   c: CZ
   act: 0
   own: Město Jihlava
-  co: JIHLAVSKÉ KOTELNY
+  operator: JIHLAVSKÉ KOTELNY
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Papírny Větřní, a.s.
   c: CZ
   act: 0
   own: JIP - Papírny Větřní
-  co: JIP
+  operator: JIP
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Výtopna Brandl
   c: CZ
   act: 0
   own: Město Jablonec nad Nisou
-  co: Jablonecká energetická
+  operator: Jablonecká energetická
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Rýnovice
   c: CZ
   act: 0
   own: Město Jablonec nad Nisou
-  co: Jablonecká energetická
+  operator: Jablonecká energetická
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Cihelna Šterboholy
   c: CZ
   act: 7
   own: Cihelna Štěrboholy
-  co: Jan Fiala
+  operator: Jan Fiala
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Teplárna Bohatice
   c: CZ
   act: 0
   own: KAREL HOLOUBEK – Trade Group
-  co: HOLOUBEK
+  operator: HOLOUBEK
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: KAVALIERGLASS
   c: CZ
   act: 6
   own: KAVALIERGLASS
-  co: KAVALIERGLASS
+  operator: KAVALIERGLASS
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Kotelna Papírny Bělá
   c: CZ
   act: 6
   own: KAVALIERGLASS
-  co: KAVALIERGLASS
+  operator: KAVALIERGLASS
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: KG Energo
   c: CZ
   act: 0
   own: 'KG Energo '
-  co: KG Energo
+  operator: KG Energo
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Město Klatovy
-  co: KLATOVSKÁ TEPLÁRNA
+  operator: KLATOVSKÁ TEPLÁRNA
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: KNAUF INSULATION
   c: CZ
   act: 7
   own: Knauf
-  co: KNAUF INSULATION
+  operator: KNAUF INSULATION
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Kotelna Areál Tatry, Kopřivnice
   c: CZ
   act: 0
   own: KOMTERM
-  co: KOMTERM Morava
+  operator: KOMTERM Morava
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna Jitex Písek
   c: CZ
   act: 0
   own: KOMTERM
-  co: KOMTERM Čechy
+  operator: KOMTERM Čechy
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: KOVOBRASIV Mníšek
   c: CZ
   act: 2
   own: Winoa
-  co: KOVOBRASIV Mníšek
+  operator: KOVOBRASIV Mníšek
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: KRONOSPAN CR
   c: CZ
   act: 0
   own: Kronospan
-  co: KRONOSPAN CR
+  operator: KRONOSPAN CR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Závodní elektrárna
   c: CZ
   act: 0
   own: KRPA
-  co: KRPA PAPER
+  operator: KRPA PAPER
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Kappa Morava Paper a Kappa Žimrovice
   c: CZ
   act: 0
   own: Smurfit Westrock
-  co: Kappa Morava Paper a Kappa Žimrovice
+  operator: Smurfit Westrock Czech
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Kongresové centrum Praha
   c: CZ
   act: 0
   own: Hlavní město Praha
-  co: Kongresové centrum Praha
+  operator: Kongresové centrum Praha
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: 'ASAVET '
-  co: ASAVET Přeštice
+  operator: ASAVET Přeštice
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
-- n: Kotelna
+- n: Kotelna Pivovaru Radegast
   c: CZ
   act: 0
   own: Asahi
-  co: Pivovar Radegast
+  operator: Plzeňský Prazdroj
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Kotelna a kogenerační jednotky
   c: CZ
   act: 0
   own: Ministerstvo obrany
-  co: ÚVN Praha
+  operator: ÚVN Praha
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna závodu
   c: CZ
   act: 0
   own: Orkla
-  co: HAMÉ
+  operator: HAMÉ
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Závod Borovany
   c: CZ
   act: 7
   own: Lasselsberger
-  co: LASSELSBERGER
+  operator: LASSELSBERGER
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Chlumčany
   c: CZ
   act: 7
   own: Lasselsberger
-  co: LASSELSBERGER
+  operator: LASSELSBERGER
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Podbořany
   c: CZ
   act: 7
   own: Lasselsberger
-  co: LASSELSBERGER
+  operator: LASSELSBERGER
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod RAKO 3
   c: CZ
   act: 7
   own: Lasselsberger
-  co: LASSELSBERGER
+  operator: LASSELSBERGER
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Provozovna Bechyně
   c: CZ
   act: 7
   own: Roca
-  co: LAUFEN CZ
+  operator: LAUFEN CZ
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: LB Cemix, s.r.o.
   c: CZ
   act: 5
   own: Lasselsberger
-  co: LB Cemix
+  operator: LB Cemix
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Lenzing Biocel Paskov
   c: CZ
   act: 8
   own: Lenzing
-  co: Lenzing Biocel Paskov
+  operator: Lenzing Biocel Paskov
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Výtopna SEVER
   c: CZ
   act: 0
   own: Ministerstvo financí
-  co: Letiště Praha
+  operator: Letiště Praha
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Liapor s.r.o.
   c: CZ
   act: 7
   own: 'Liapor '
-  co: Liapor
+  operator: Liapor
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Liberty Ostrava
   c: CZ
   act: 2
   own: 'Liberty Steel '
-  co: Liberty Ostrava
+  operator: Liberty Ostrava
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Liberty Ostrava a.s.
   c: CZ
   act: 0
   own: 'Liberty Steel '
-  co: Liberty Ostrava
+  operator: Liberty Ostrava
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: AGROFERT
-  co: Lovochemie
+  operator: Lovochemie
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Uhelná kotelna
   c: CZ
   act: 0
   own: AGROFERT
-  co: Lovochemie
+  operator: Lovochemie
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: MS UTILITIES & SERVICES
   c: CZ
   act: 0
   own: 'MS UTILITIES & SERVICES '
-  co: MS UTILITIES & SERVICES
+  operator: MS UTILITIES & SERVICES
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Masokombinát Polička
   c: CZ
   act: 0
   own: MASO UZENINY PÍSEK
-  co: Masokombinát Polička
+  operator: Masokombinát Polička
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Mondi Štětí - Energetika
   c: CZ
   act: 0
   own: Mondi
-  co: Mondi Štětí - Energetika
+  operator: Mondi Štětí - Energetika
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Kompresní stanice Břeclav
   c: CZ
   act: 0
   own: ČEPS
-  co: NET4GAS
+  operator: NET4GAS
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kompresní stanice Hostim
   c: CZ
   act: 0
   own: ČEPS
-  co: NET4GAS
+  operator: NET4GAS
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kompresní stanice Kouřim
   c: CZ
   act: 0
   own: ČEPS
-  co: NET4GAS
+  operator: NET4GAS
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kompresní stanice Kralice nad Oslavou
   c: CZ
   act: 0
   own: ČEPS
-  co: NET4GAS
+  operator: NET4GAS
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kompresní stanice Veselí nad Lužnicí
   c: CZ
   act: 0
   own: ČEPS
-  co: NET4GAS
+  operator: NET4GAS
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Výtopna
   c: CZ
   act: 0
   own: Zlínský kraj
-  co: Nemocnice Kroměříž
+  operator: Nemocnice Kroměříž
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Nové Sedlo
   c: CZ
   act: 6
   own: O-I Glass
-  co: O-I Czech Republic
+  operator: O-I Czech Republic
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Rudolfova huť
   c: CZ
   act: 6
   own: O-I Glass
-  co: O-I Czech Republic
+  operator: O-I Czech Republic
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Kotelna SKV
   c: CZ
   act: 0
   own: OKIN
-  co: OKIN FACILITY
+  operator: OKIN FACILITY
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Koksovna Svoboda
   c: CZ
   act: 0
   own: MTX
-  co: OKK
+  operator: OKK Koksovny
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Provozovna Kaznějov
   c: CZ
   act: 0
   own: OMGD
-  co: OMGD
+  operator: OMGD
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Nové energocentrum
   c: CZ
   act: 8
   own: delfort
-  co: OP papírna
+  operator: OP papírna
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Výtopna Hillova
   c: CZ
   act: 0
   own: ENETIQA
-  co: OPATHERM
+  operator: OPATHERM
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Olomoucká
   c: CZ
   act: 0
   own: ENETIQA
-  co: OPATHERM
+  operator: OPATHERM
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: AGROCHEMIE
   c: CZ
   act: 0
   own: ORLEN UNIPETROL
-  co: ORLEN UNIPETROL
+  operator: ORLEN UNIPETROL
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: RAFINÉRIE, Kralupy
   c: CZ
   act: 1
   own: ORLEN UNIPETROL
-  co: ORLEN UNIPETROL RPA
+  operator: ORLEN UNIPETROL RPA
   ra: Rafinace minerálních olejů
-  aff: 0
-  aff_name: null
 - n: RAFINÉRIE, Litvínov
   c: CZ
   act: 1
   own: ORLEN UNIPETROL
-  co: ORLEN UNIPETROL RPA
+  operator: ORLEN UNIPETROL RPA
   ra: Rafinace minerálních olejů
-  aff: 0
-  aff_name: null
-- n: Lokalita Svitavy
+- n: P-D Refractories – Lokalita Svitavy
   c: CZ
   act: 7
   own: RHI Magnesita
-  co: P-D Refractories
+  operator: RHI Magnesita Czech Republic
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
-- n: Lokalita Velké Opatovice
+- n: P-D Refractories – Lokalita Velké Opatovice
   c: CZ
   act: 7
   own: RHI Magnesita
-  co: P-D Refractories
+  operator: RHI Magnesita Czech Republic
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: HS Kolín
   c: CZ
   act: 1
   own: ORLEN UNIPETROL
-  co: PARAMO
+  operator: ORLEN UNIPETROL RPA
   ra: Rafinace minerálních olejů
-  aff: 0
-  aff_name: null
 - n: HS Pardubice
   c: CZ
   act: 1
   own: ORLEN UNIPETROL
-  co: PARAMO
+  operator: PARAMO
   ra: Rafinace minerálních olejů
-  aff: 0
-  aff_name: null
 - n: Plynová výtopna
   c: CZ
   act: 0
   own: PBS
-  co: PBS Industry
+  operator: PBS Industry
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Elektrické obloukové pece
   c: CZ
   act: 2
   own: Max Aicher
-  co: PILSEN STEEL
+  operator: PILSEN STEEL
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: PLEAS, Havlíčkův Brod
   c: CZ
   act: 0
   own: Delta Galil
-  co: PLEAS, Havlíčkův Brod
+  operator: PLEAS, Havlíčkův Brod
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: POLDI
   c: CZ
   act: 2
   own: Poldi
-  co: POLDI
+  operator: POLDI
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: POWGEN – TUBOX
   c: CZ
   act: 0
   own: ENETIQA
-  co: POWGEN TUBOX
+  operator: POWGEN TUBOX
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Polubný,Příchovice a Desná
   c: CZ
   act: 6
   own: Preciosa
-  co: PRECIOSA ORNELA
+  operator: PRECIOSA ORNELA
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Papos Trade
   c: CZ
   act: 8
   own: PAPOS Trade
-  co: Papos Trade
+  operator: Papos Trade
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Papírna Aloisov
   c: CZ
   act: 8
   own: 'Papírna Aloisov '
-  co: Papírna Aloisov
+  operator: Papírna Aloisov
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Cihelna Nebužely
   c: CZ
   act: 7
   own: PARALAX
-  co: Paralax
+  operator: Paralax
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: SPH-SLUŽBY
-  co: SPH-SLUŽBY
+  operator: SPH-SLUŽBY
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Centrální zdroj tepla Plzeň
   c: CZ
   act: 0
   own: EPH
-  co: Plzeňská teplárenská
+  operator: Plzeňská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna ELU III
   c: CZ
   act: 0
   own: EPH
-  co: Plzeňská teplárenská
+  operator: Plzeňská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Varny závodu Plzeň
   c: CZ
   act: 0
   own: Asahi
-  co: Plzeňský Prazdroj
+  operator: Plzeňský Prazdroj
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Teplárna Holešovice
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Pražská teplárenská
+  operator: Pražská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Malešice
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Pražská teplárenská
+  operator: Pražská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Michle
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Pražská teplárenská
+  operator: Pražská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Krč
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Pražská teplárenská
+  operator: Pražská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Ruzyně
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Pražská teplárenská
+  operator: Pražská teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Rakona – Kotelna
   c: CZ
   act: 0
   own: Procter & Gamble
-  co: Procter & Gamble
+  operator: PROCTER&GAMBLE-RAKONA
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: Ministerstvo zdravotnictví ČR
-  co: Psychiatr. léčebna v Dobřanech
+  operator: Psychiatr. léčebna v Dobřanech
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: REFRASIL
   c: CZ
   act: 7
   own: Moravia Steel
-  co: REFRASIL
+  operator: REFRASIL
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: ENERGETIKA TŘINEC - Teplárny a Tepelná zařízení
 - n: PZP Háje
   c: CZ
   act: 0
   own: ČEPS
-  co: Gas Storage CZ
+  operator: Gas Storage CZ
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Technologická linka BOH2
   c: CZ
   act: 6
   own: ROCKWOOL
-  co: Rockwool
+  operator: Rockwool
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Rýnovická energetická
   c: CZ
   act: 0
   own: Sytherm
-  co: Rýnovická energetická
+  operator: Rýnovická energetická
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Litomyšl
   c: CZ
   act: 6
   own: Compagnie de Saint-Gobain
-  co: SAINT-GOBAIN ADFORS CZ
+  operator: SAINT-GOBAIN ADFORS CZ
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Závod Hodonice
   c: CZ
   act: 6
   own: Compagnie de Saint-Gobain
-  co: SAINT-GOBAIN ADFORS CZ
+  operator: SAINT-GOBAIN ADFORS CZ
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Slévárna České Budějovice
   c: CZ
   act: 2
   own: SCB Foundry
-  co: SCB Foundry
+  operator: SCB Foundry
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: SKATLOP
   c: CZ
   act: 0
   own: 'SKATLOP '
-  co: SKATLOP
+  operator: SKATLOP
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: STOELZLE UNION
   c: CZ
   act: 6
   own: Stoelzle Oberglas
-  co: STOELZLE UNION
+  operator: STOELZLE UNION
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Saint-Gobain Construction Products CZ
   c: CZ
   act: 0
   own: Compagnie de Saint-Gobain
-  co: Saint-Gobain Construction Products CZ
+  operator: Saint-Gobain Construction Products CZ
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Zliv
   c: CZ
   act: 7
   own: Standard Industries
-  co: Schiedel
+  operator: Schiedel
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Kotelna AGS
   c: CZ
   act: 0
   own: Seco Industries
-  co: Seco Industries
+  operator: Seco Industries
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Centrální kotelna
   c: CZ
   act: 0
   own: Colt CZ
-  co: Sellier & Bellot
+  operator: Sellier & Bellot
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Seves Glass Block
   c: CZ
   act: 6
   own: SEDIVER
-  co: Seves Glass Block
+  operator: Seves Glass Block
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Provozovna Děčín
   c: CZ
   act: 7
   own: Wienerberger
-  co: Silike keramika
+  operator: Silike keramika
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Sklárny Moravia
   c: CZ
   act: 6
   own: SKLÁRNY MORAVIA
-  co: Sklárny Moravia
+  operator: Sklárny Moravia
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Slévárna
   c: CZ
   act: 0
   own: ČKD Kutná Hora
-  co: ČKD Kutná Hora
+  operator: ČKD Kutná Hora
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Teplárna a PPC Vřesová
   c: CZ
   act: 0
   own: SUAS
-  co: Sokolovská uhelná
+  operator: Sokolovská uhelná
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Závod Energetika
   c: CZ
   act: 9
   own: ORLEN UNIPETROL
-  co: Spolana
+  operator: Spolana
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Odštěpný závod
   c: CZ
   act: 0
   own: Kaprain
-  co: Synthesia
+  operator: Synthesia
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Synthomer, kotelna
   c: CZ
   act: 0
   own: 'Synthomer '
-  co: Synthomer, kotelna
+  operator: Synthomer, kotelna
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Teplárna Kralupy
   c: CZ
   act: 0
   own: Synthos
-  co: TAMERO INVEST
+  operator: TAMERO INVEST
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Bloková výtopna Nemocnice
   c: CZ
   act: 0
   own: 'TEREA Cheb '
-  co: TEREA Cheb
+  operator: TEREA Cheb
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Bloková výtopna Skalka
   c: CZ
   act: 0
   own: 'TEREA Cheb '
-  co: TEREA Cheb
+  operator: TEREA Cheb
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Hedvábnická
   c: CZ
   act: 0
   own: 'TEREA Cheb '
-  co: TEREA Cheb
+  operator: TEREA Cheb
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: TERMIKA Varnsdorf
   c: CZ
   act: 0
   own: 'TERMIKA Varnsdorf '
-  co: TERMIKA Varnsdorf
+  operator: TERMIKA Varnsdorf
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: CZT Teplárna Benešovská
   c: CZ
   act: 0
   own: ENETIQA
-  co: TERMO Děčín
+  operator: TERMO Děčín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Bynov
   c: CZ
   act: 0
   own: ENETIQA
-  co: TERMO Děčín
+  operator: TERMO Děčín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Želenice
   c: CZ
   act: 0
   own: ENETIQA
-  co: TERMO Děčín
+  operator: TERMO Děčín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Uhelná kotelna v areálu
   c: CZ
   act: 0
   own: 'T E R M O Frýdlant n.O. '
-  co: TERMO Frýdlant n.O
+  operator: TERMO Frýdlant n.O
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: ENERGO – Teplárna  Bystřice pod Hostýnem
   c: CZ
   act: 0
   own: TON
-  co: TON
+  operator: TON
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: ENERGO – Teplárna Holešov
   c: CZ
   act: 0
   own: TON
-  co: TON
+  operator: TON
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
-- n: Závod Hranice
+- n: TONDACH – Závod Hranice
   c: CZ
   act: 7
   own: Wienerberger
-  co: TONDACH Česká republika s.r.o.
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: TS Vlašim plynová výtopna Pila
   c: CZ
   act: 0
   own: Město Vlašim
-  co: TS Vlašim plynová výtopna Pila
+  operator: TS Vlašim plynová výtopna Pila
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna K13
   c: CZ
   act: 0
   own: 'TTS energo '
-  co: TTS energo
+  operator: TTS energo
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: TYLEX Letovice
   c: CZ
   act: 0
   own: 'TYLEX Letovice '
-  co: TYLEX Letovice
+  operator: TYLEX Letovice
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna IV – byt
   c: CZ
   act: 0
   own: Město Prachatice
-  co: Tepelné hospodářství Prachatice
+  operator: Tepelné hospodářství Prachatice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Tepelné hospodářství Rychnov nad Kněžnou
   c: CZ
   act: 0
   own: Město Rychnov nad Kněžnou
-  co: Tepelné hospodářství Rychnov nad Kněžnou
+  operator: Tepelné hospodářství Rychnov nad Kněžnou
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Centrální výtopna Dolní
   c: CZ
   act: 0
   own: Město Bruntál
-  co: Teplo Bruntál
+  operator: Teplo Bruntál
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Vajgar
   c: CZ
   act: 0
   own: 'Teplospol '
-  co: Teplospol
+  operator: Teplospol
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Kladno
   c: CZ
   act: 0
   own: 'Sev.en Česká energie '
-  co: Teplárna Kladno
+  operator: Teplárna Kladno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Kladno 2
   c: CZ
   act: 0
   own: 'Sev.en Česká energie '
-  co: Teplárna Kladno
+  operator: Sev.en Zeta
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Paroplynová kogenerační jednotka
   c: CZ
   act: 0
   own: Lama Energy
-  co: Teplárna Kyjov
+  operator: Teplárna Kyjov
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Liberec
   c: CZ
   act: 0
   own: ENETIQA
-  co: Teplárna Liberec
+  operator: Teplárna Liberec
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Loučovice
   c: CZ
   act: 0
   own: Teplárna Loučovice
-  co: Teplárna Loučovice
+  operator: Teplárna Loučovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Ostrov
   c: CZ
   act: 0
   own: Město Ostrov
-  co: Teplárna Ostrov
+  operator: Teplárna Ostrov
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna
   c: CZ
   act: 0
   own: Lama Energy
-  co: Teplárna Otrokovice
+  operator: Teplárna Otrokovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Posilovací a záložní zdroj
   c: CZ
   act: 0
   own: Lama Energy
-  co: Teplárna Otrokovice
+  operator: Teplárna Otrokovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Písek
   c: CZ
   act: 0
   own: Město Písek
-  co: Teplárna Písek
+  operator: Teplárna Písek
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Samoty
   c: CZ
   act: 0
   own: Město Písek
-  co: Teplárna Písek
+  operator: Teplárna Písek
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Strakonice
   c: CZ
   act: 0
   own: Město Strakonice
-  co: Teplárna Strakonice
+  operator: Teplárna Strakonice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Týnec
   c: CZ
   act: 0
   own: Město Týnec nad Sázavou
-  co: Teplárna Týnec
+  operator: Teplárna Týnec
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Zlín s.r.o.
   c: CZ
   act: 0
   own: 'Sev.en Česká energie '
-  co: Teplárna Zlín s.r.o.
+  operator: Teplárna Zlín s.r.o.
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Vráto
   c: CZ
   act: 0
   own: Město České Budějovice
-  co: Teplárna České Budějovice
+  operator: Teplárna České Budějovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Novohradská ul.
   c: CZ
   act: 0
   own: Město České Budějovice
-  co: Teplárna České Budějovice
+  operator: Teplárna České Budějovice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provoz Brno sever
   c: CZ
   act: 0
   own: Město Brno
-  co: Teplárny Brno
+  operator: Teplárny Brno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provoz Staré Brno
   c: CZ
   act: 0
   own: Město Brno
-  co: Teplárny Brno
+  operator: Teplárny Brno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provoz Červený Mlýn
   c: CZ
   act: 0
   own: Město Brno
-  co: Teplárny Brno
+  operator: Teplárny Brno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provoz Špitálka
   c: CZ
   act: 0
   own: Město Brno
-  co: Teplárny Brno
+  operator: Teplárny Brno
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Cukrovar Dobrovice
   c: CZ
   act: 0
   own: Tereos
-  co: Tereos TTD
+  operator: Tereos TTD
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Cukrovar České Meziříčí
   c: CZ
   act: 0
   own: Tereos
-  co: Tereos TTD
+  operator: Tereos TTD
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Lihovar Chrudim
   c: CZ
   act: 0
   own: Tereos
-  co: Tereos TTD
+  operator: Tereos TTD
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Moravský Lihovar Kojetín kotelna
   c: CZ
   act: 0
   own: Tereos
-  co: Tereos TTD
+  operator: Tereos TTD
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Energetika – kotelna
   c: CZ
   act: 0
   own: Teva
-  co: Teva Czech Industries
+  operator: Teva Czech Industries
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Kotelna CZT Nymburk
   c: CZ
   act: 0
   own: 'Thermoservis '
-  co: Thermoservis
+  operator: Thermoservis
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna ŽOS Nymburk
   c: CZ
   act: 0
   own: 'Thermoservis '
-  co: Thermoservis
+  operator: Thermoservis
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: Toray
-  co: Toray Textiles
+  operator: Toray Textiles
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna
   c: CZ
   act: 0
   own: Trelleborg
-  co: Trelleborg Wheel Systems CR
+  operator: Trelleborg Wheel Systems CR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Třinecké železárny
   c: CZ
   act: 2
   own: Moravia Steel
-  co: Třinecké železárny
+  operator: Třinecké železárny
   ra: Železo a ocel
-  aff: 0
-  aff_name: ENERGETIKA TŘINEC - Teplárny a Tepelná zařízení
 - n: Petrochemie
   c: CZ
   act: 0
   own: ORLEN UNIPETROL
-  co: UNIPETROL
+  operator: UNIPETROL
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Teplárna Komořany
   c: CZ
   act: 0
   own: EPH
-  co: United Energy
+  operator: United Energy
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: VETROPACK MORAVIA GLASS
   c: CZ
   act: 6
   own: Vetropack
-  co: VETROPACK MORAVIA GLASS
+  operator: VETROPACK MORAVIA GLASS
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Plastic Omnium
-  co: Varroc Lighting Systems
+  operator: Varroc Lighting Systems
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Elektrárna Třebovice
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Mobilní kotelna Jižní Město
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provoz Nový Jičín
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Provozovna Fakultní nemocnice
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Frýdek-Místek
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Karviná
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Krnov
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Olomouc
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Přerov
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Přívoz
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Československé armády
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Anenská
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Špičková výtopna Olomouc
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie
+  operator: Veolia Energie
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Kolín
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie Kolín
+  operator: Veolia Energie Kolín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Východ
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie Kolín
+  operator: Veolia Energie Kolín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Nádražní
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie Mariánské Lázně
+  operator: Veolia Energie Mariánské Lázně
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Veleslavín
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie Praha
+  operator: Veolia Energie Praha
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Juliska
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Energie Praha
+  operator: Veolia Energie Praha
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Důl ČSM – teplárna
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna Chlebovice
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna Staříč
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna Sviadnov
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna dolu Darkov
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Důl Lazy – kotelna Lazy
   c: CZ
   act: 0
   own: Veolia Energie
-  co: Veolia Průmyslové služby ČR
+  operator: Veolia Průmyslové služby ČR
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Ocelárna I
   c: CZ
   act: 2
   own: Jindal
-  co: VÍTKOVICE STEEL
+  operator: VÍTKOVICE STEEL
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Vápenka Vitošov
   c: CZ
   act: 5
   own: SigmaRoc
-  co: Vápenka Vitošov
+  operator: Vápenka Vitošov
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Vápenka Čertovy schody
   c: CZ
   act: 5
   own: Lhoist
-  co: Vápenka Čertovy schody
+  operator: Vápenka Čertovy schody
   ra: Cement a vápno
-  aff: 0
-  aff_name: null
 - n: Výtopna ESAB Vamberk
   c: CZ
   act: 0
   own: ESAB
-  co: Výtopna ESAB Vamberk
+  operator: Výtopna ESAB Vamberk
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Benátská
   c: CZ
   act: 0
   own: Ministerstvo zdravotnictví
-  co: Všeobecná fakultní nemocnice
+  operator: Všeobecná fakultní nemocnice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Wenzigova
   c: CZ
   act: 0
   own: Ministerstvo zdravotnictví
-  co: Všeobecná fakultní nemocnice
+  operator: Všeobecná fakultní nemocnice
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Závod Blížejov
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Stod
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Šlapanice
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Holice
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Novosedly
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Týn n/Vltavou
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Závod Řepov
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Jezernice
   c: CZ
   act: 7
   own: Wienerberger
-  co: Wienerberger
+  operator: Wienerberger
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Wotan Forest
   c: CZ
   act: 0
   own: AGROFERT
-  co: Wotan Forest
+  operator: Wotan Forest
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Železárny Hrádek
   c: CZ
   act: 2
   own: Z-Group
-  co: Z-Group
+  operator: Z-Group
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Milevsko – kotelna
   c: CZ
   act: 0
   own: ZVVZ
-  co: ZVVZ ENERGO
+  operator: ZVVZ ENERGO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Cihelna Malenovice
   c: CZ
   act: 0
   own: 'Zlínské cihelny '
-  co: Zlínské cihelny
+  operator: Zlínské cihelny
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Cihelna Žopy
   c: CZ
   act: 7
   own: 'Zlínské cihelny '
-  co: Zlínské cihelny
+  operator: Zlínské cihelny
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna Jasenice
   c: CZ
   act: 0
   own: ENETIQA
-  co: Zás.tep.Vsetín
+  operator: Zás.tep.Vsetín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Jiráskova
   c: CZ
   act: 0
   own: ENETIQA
-  co: Zás.tep.Vsetín
+  operator: Zás.tep.Vsetín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Uhelná kotelna Jasenice
   c: CZ
   act: 0
   own: ENETIQA
-  co: Zás.tep.Vsetín
+  operator: Zás.tep.Vsetín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Ohrada
   c: CZ
   act: 0
   own: ENETIQA
-  co: Zás.tep.Vsetín
+  operator: Zás.tep.Vsetín
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Králův Dvůr
   c: CZ
   act: 0
   own: MVM
-  co: innogy Energo
+  operator: innogy Energo
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Náchod
   c: CZ
   act: 0
   own: MVM
-  co: innogy Energo
+  operator: innogy Energo
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Litovelská cukrovarna
-  co: Cukrovar Litovel
+  operator: Cukrovar Litovel
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Kotelna
   c: CZ
   act: 0
   own: Semperit
-  co: Semperflex Optimit
+  operator: Semperflex Optimit
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelny
   c: CZ
   act: 0
   own: AGROFERT
-  co: Mlékárny Hlinko
+  operator: Mlékárny Hlinko
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: Výtopna LOOS Stará Lípa
   c: CZ
   act: 0
   own: ENETIQA
-  co: ČESKOLIPSKÁ TEPLÁRENSKÁ
+  operator: ČESKOLIPSKÁ TEPLÁRENSKÁ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Holý Vrch
   c: CZ
   act: 0
   own: ENETIQA
-  co: ČESKOLIPSKÁ TEPLÁRENSKÁ
+  operator: ČESKOLIPSKÁ TEPLÁRENSKÁ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Trmice
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Vítkovice I
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ Energetické služby
+  operator: ČEZ ESL
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: En. hosp. Mohelnice
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ Energetické služby
+  operator: ČEZ ESL
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna Nádražní
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ Energetické služby
+  operator: ČEZ Energetické služby
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Výtopna Proboštov
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ Teplárenská
+  operator: ČEZ Teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Dětmarovice
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Hodonín
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Ledvice
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Poříčí
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Prunéřov 1
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Prunéřov 2
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Temelín
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Elektrárna Tušimice 2
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Teplárna Dvůr Králové nad Labem
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kotelna v hlavním závodě
   c: CZ
   act: 0
   own: Colt CZ
-  co: Česká zbrojovka
+  operator: Česká zbrojovka
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Nové Strašecí
   c: CZ
   act: 7
   own: České lupkové závody
-  co: České lupkové závody
+  operator: České lupkové závody
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Výtopna Vrchlabí
   c: CZ
   act: 0
-  own: Volkswagen
-  co: ŠKO-ENERGO
+  own: ŠKODA
+  operator: ŠKO-ENERGO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Teplárna Mladá Boleslav
   c: CZ
   act: 0
-  own: Volkswagen
-  co: ŠKO-ENERGO
+  own: ŠKODA
+  operator: ŠKO-ENERGO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna, Kvasiny
   c: CZ
   act: 0
-  own: Volkswagen
-  co: ŠKODA AUTO
+  own: ŠKODA
+  operator: ŠKODA AUTO
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Výtopna Perč
   c: CZ
   act: 0
   own: Město Žatec
-  co: Žatecká teplárenská
+  operator: Žatecká teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Metalurgie a teplárna
   c: CZ
   act: 0
   own: CITIC
-  co: ŽĎAS
+  operator: ŽĎAS
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Jaderná elektrárna Dukovany
   c: CZ
   act: 0
   own: ČEZ
-  co: Jaderná elektrárna Dukovany
+  operator: Jaderná elektrárna Dukovany
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Závod Kroměříž
   c: CZ
   act: 0
   own: InVivo
-  co: SLADOVNY SOUFFLET ČR
+  operator: SLADOVNY SOUFFLET ČR
   ra: Potravinářský průmysl
-  aff: 0
-  aff_name: null
 - n: TAMEH Czech
   c: CZ
   act: 0
   own: TAMEH
-  co: TAMEH Czech
+  operator: TAMEH Czech
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: PZP Třanovice
   c: CZ
   act: 0
   own: ČEPS
-  co: Gas Storage CZ
+  operator: Gas Storage CZ
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Liberty Engineering Products Ostrava
   c: CZ
   act: 0
   own: 'Liberty Steel '
-  co: Liberty Engineering Products Ostrava
+  operator: Liberty Engineering Products Ostrava
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: PZP Dolní Bojanovice
   c: CZ
   act: 0
   own: EPH
-  co: SPP Storage
+  operator: SPP Storage
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Elektrárna Ledvice 4
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: PZP Uhřice
   c: CZ
   act: 0
   own: MND
-  co: MND Energy Storage
+  operator: MND Energy Storage
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: VIADRUS
   c: CZ
   act: 2
   own: Bonatrans
-  co: VIADRUS
+  operator: VIADRUS
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Elektrárna Počerady 2
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: BorsodChem MCHZ
   c: CZ
   act: 9
   own: Wanhua
-  co: BorsodChem MCHZ
+  operator: BorsodChem MCHZ
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: CS CABOT
   c: CZ
   act: 9
   own: CABOT
-  co: CS CABOT
+  operator: CS CABOT
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Constellium Extrusions Děčín s.r.o.
   c: CZ
   act: 3
   own: Constellium
-  co: Constellium Extrusions Děčín
+  operator: Constellium Extrusions Děčín
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Divize Veselí
   c: CZ
   act: 0
   own: Z-Group
-  co: FERROMET
+  operator: FERROMET
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Hyundai Motor Manufacturing Czech
   c: CZ
   act: 0
   own: 'Hyundai Motor '
-  co: Hyundai Motor Manufacturing Czech
+  operator: Hyundai Motor Manufacturing Czech
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Výroba síranu vápenatého a anorg.pigmentů
   c: CZ
   act: 9
   own: AGROFERT
-  co: PRECHEZA
+  operator: PRECHEZA
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Středokluky
   c: CZ
   act: 0
   own: 'Porr '
-  co: Porr
+  operator: Porr
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Pražská obalovna Herink
   c: CZ
   act: 0
   own: Skanska a VINCI Construction
-  co: Pražská obalovna Herink
+  operator: Pražská obalovna Herink
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Provoz Styren
   c: CZ
   act: 9
   own: Synthos
-  co: SYNTHOS Kralupy
+  operator: SYNTHOS Kralupy
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: TAMERO INVEST - Teplárna Kralupy
 - n: Výroba Etylbenzen
   c: CZ
   act: 9
   own: Synthos
-  co: SYNTHOS Kralupy
+  operator: SYNTHOS Kralupy
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: TAMERO INVEST - Teplárna Kralupy
 - n: Výroba Polystyreny
   c: CZ
   act: 9
   own: Synthos
-  co: SYNTHOS Kralupy
+  operator: SYNTHOS Kralupy
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: TAMERO INVEST - Teplárna Kralupy
 - n: Slévárny Třinec
   c: CZ
   act: 2
   own: Moravia Steel
-  co: Slévárny Třinec
+  operator: Slévárny Třinec
   ra: Železo a ocel
-  aff: 0
-  aff_name: ENERGETIKA TŘINEC - Teplárny a Tepelná zařízení
 - n: Tepelná a zvuková izolace Rotaflex
   c: CZ
   act: 7
   own: 'UNION LESNÍ BRÁNA '
-  co: Tepelná a zvuková izolace Rotaflex
+  operator: UNION LESNÍ BRÁNA
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Kladno
   c: CZ
   act: 0
   own: Moravia Steel
-  co: Třinecké železárny
+  operator: Třinecké železárny
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Válcovna kol, kovárna náprav
   c: CZ
   act: 2
   own: GHH-BONATRANS
-  co: BONATRANS
+  operator: BONATRANS
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Divize Chomutov
   c: CZ
   act: 0
   own: Z-Group
-  co: Válcovny trub Chomutov
+  operator: Válcovny trub Chomutov
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Špičkový zdroj – Spalovací turbíny s generátorem
   c: CZ
   act: 0
   own: Creditas
-  co: Špičkový zdroj – Spalovací turbíny s generátorem
+  operator: Elektrárna Prostějov
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: PK ELE
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ Teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: POLDI TRADE
   c: CZ
   act: 2
   own: Poldi
-  co: POLDI TRADE
+  operator: POLDI TRADE
   ra: Železo a ocel
-  aff: 0
-  aff_name: null
 - n: Provoz VT-VÁLCOVNA TRUB
   c: CZ
   act: 0
   own: Moravia Steel
-  co: TŘINECKÉ ŽELEZÁRNY
+  operator: TŘINECKÉ ŽELEZÁRNY
   ra: Železo a ocel
-  aff: 0
-  aff_name: ENERGETIKA TŘINEC - Teplárny a Tepelná zařízení
 - n: Spalovací zařízení kotelny
   c: CZ
   act: 0
   own: 'ENE20 '
-  co: Spalovací zařízení kotelny
+  operator: ENE20
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: PZP Dambořice
   c: CZ
   act: 0
   own: MND
-  co: PZP Dambořice
+  operator: MND Gas Storage
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Pittsburgh Corning CR
   c: CZ
   act: 6
   own: Owens Corning
-  co: Pittsburgh Corning CR
+  operator: Pittsburgh Corning CR
   ra: Sklo
-  aff: 0
-  aff_name: null
 - n: Papírna APIS
   c: CZ
   act: 8
   own: 'Papírna APIS '
-  co: Papírna APIS
+  operator: Papírna APIS
   ra: Papír
-  aff: 0
-  aff_name: null
 - n: Pražská obalovna Herink
   c: CZ
   act: 0
   own: Skanska a VINCI Construction
-  co: Pražská obalovna Herink
+  operator: Pražská obalovna Herink
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Výrobní linky formalínu
   c: CZ
   act: 9
   own: 'Dukol Ostrava '
-  co: Výrobní linky formalínu
+  operator: Dukol Ostrava
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Nexen Tire Europe
   c: CZ
   act: 0
   own: Nexen Tire
-  co: Nexen Tire Europe
+  operator: Nexen Tire Europe
   ra: Ostatní odvětví
-  aff: 0
-  aff_name: null
 - n: Kotelna Rakovník
   c: CZ
   act: 0
   own: Procter & Gamble
-  co: Procter & Gamble
+  operator: PROCTER&GAMBLE-RAKONA
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Technologický komplex Energy nest
   c: CZ
   act: 0
   own: Decci
-  co: Technologický komplex Energy nest
+  operator: E.nest Energy
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
 - n: Kalcinační jednotka Vřesová
   c: CZ
   act: 7
   own: SUAS
-  co: Kalcinační jednotka Vřesová
+  operator: SUAS – Lindner
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Plynová kotelna Prunéřov
   c: CZ
   act: 0
   own: ČEZ
-  co: ČEZ
+  operator: ČEZ Teplárenská
   ra: Výroba elektřiny a tepla
-  aff: 0
-  aff_name: null
-- n: Saint-Gobain Construction Products CZRigips
+- n: Saint-Gobain Construction Products CZ, Rigips
   c: CZ
   act: 7
   own: Compagnie de Saint-Gobain
-  co: Saint-Gobain Construction Products CZRigips
+  operator: Saint-Gobain Construction Products CZ, Rigips
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 - n: Synthesia Nitrocellulose
   c: CZ
   act: 9
   own: COLT CZ
-  co: Synthesia Nitrocellulose
+  operator: Synthesia Nitrocellulose
   ra: Chemikálie a hnojiva
-  aff: 0
-  aff_name: null
 - n: Výroba sádry a sádrokartonových desek
   c: CZ
   act: 7
   own: Knauf
-  co: Výroba sádry a sádrokartonových desek
+  operator: KNAUF Praha
   ra: Ostatní minerály (keramika, cihly, minerální vlna, sádra)
-  aff: 0
-  aff_name: null
 records:
 - - 0
   - 2008
