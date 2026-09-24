@@ -269,9 +269,9 @@
       return a.localeCompare(b, "cs");
     });
 
-  // An empty set is how "no restriction" is normally represented, but
-  // "Vybrat vše" fills the set instead — same meaning, so the toggle reads the
-  // same rather than showing the full count ("180 vlastníků").
+  // An empty set is how "no restriction" is normally represented, but ticking
+  // every row by hand fills the set instead — same meaning, so the toggle
+  // reads the same rather than showing the full count ("180 vlastníků").
   const isEverySelected = (sel, total) => total > 0 && sel.size === total;
 
   // Czech plural agreement: 1 = singular (handled separately), 2–4 = "few", else "many".
@@ -306,7 +306,7 @@
     else if (isWholeIndustryGroup) btn.textContent = "Průmysl";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " odvětví";
-    btn.title = btn.textContent;
+    btn.dataset.tip = btn.textContent;
   }
 
   function refreshInstallToggle() {
@@ -316,7 +316,7 @@
       btn.textContent = "Všechna zařízení";
     else if (sel.size === 1) btn.textContent = INSTALLS[[...sel][0]].n;
     else btn.textContent = sel.size + " zařízení";
-    btn.title = btn.textContent;
+    btn.dataset.tip = btn.textContent;
   }
 
   function refreshCompanyToggle() {
@@ -326,7 +326,7 @@
       btn.textContent = "Všichni vlastníci";
     else if (sel.size === 1) btn.textContent = [...sel][0];
     else btn.textContent = sel.size + " " + pluralCz(sel.size, "vlastníci", "vlastníků");
-    btn.title = btn.textContent;
+    btn.dataset.tip = btn.textContent;
   }
 
   // Re-renders the (optionally search-filtered) checkbox list for installations,
@@ -400,7 +400,7 @@
       const name = document.createElement("span");
       name.className = "ms-option-name";
       name.textContent = e > 0 ? `${n} (${fmt(e)})` : n;
-      name.title = name.textContent;
+      name.dataset.tip = name.textContent;
       label.appendChild(cb);
       label.appendChild(name);
       return label;
@@ -441,7 +441,7 @@
       const groupName = document.createElement("span");
       groupName.className = "ms-option-name";
       groupName.textContent = groupE > 0 ? `${row.co} (${fmt(groupE)})` : row.co;
-      groupName.title = groupName.textContent;
+      groupName.dataset.tip = groupName.textContent;
       groupLabel.appendChild(groupCb);
       groupLabel.appendChild(groupName);
       wrap.appendChild(groupLabel);
@@ -508,7 +508,7 @@
       const name = document.createElement("span");
       name.className = "ms-option-name";
       name.textContent = e > 0 ? `${own} (${fmt(e)})` : own;
-      name.title = name.textContent;
+      name.dataset.tip = name.textContent;
       label.appendChild(cb);
       label.appendChild(name);
       wrap.appendChild(label);
@@ -540,7 +540,7 @@
       const name = document.createElement("span");
       name.className = "ms-option-name";
       name.textContent = ra;
-      name.title = ra;
+      name.dataset.tip = ra;
       label.appendChild(cb);
       label.appendChild(name);
       return label;
@@ -647,21 +647,13 @@
       document.querySelectorAll(".ms-panel.open").forEach(p => p.classList.remove("open"));
     });
 
-    // "Select all / clear" only ever touch the currently rendered (i.e.
-    // availability/search-filtered) rows, so they behave predictably together
+    // "Zrušit výběr" only ever touches the currently rendered (i.e.
+    // availability/search-filtered) rows, so it behaves predictably together
     // with cross-filtering and the search box.
 
-    document.querySelector('#ets-real-activity-panel [data-action="all"]').addEventListener("click", function () {
-      // [data-ra] excludes the "Průmysl" group checkbox, which has no
-      // dataset.ra of its own — including it here would add "undefined" to
-      // state.realActivities and silently inflate its size.
-      document.querySelectorAll("#ets-real-activity-options input[type=checkbox][data-ra]").forEach(cb => {
-        cb.checked = true;
-        state.realActivities.add(cb.dataset.ra);
-      });
-      onFilterChange();
-    });
     document.querySelector('#ets-real-activity-panel [data-action="none"]').addEventListener("click", function () {
+      // [data-ra] excludes the "Průmysl" group checkbox, which has no
+      // dataset.ra of its own.
       document.querySelectorAll("#ets-real-activity-options input[type=checkbox][data-ra]").forEach(cb => {
         cb.checked = false;
         state.realActivities.delete(cb.dataset.ra);
@@ -671,13 +663,6 @@
 
     document.getElementById("ets-company-search").addEventListener("input", function () {
       renderCompanyOptions(this.value);
-    });
-    document.querySelector('#ets-company-panel [data-action="all"]').addEventListener("click", function () {
-      document.querySelectorAll("#ets-company-options input[type=checkbox]").forEach(cb => {
-        cb.checked = true;
-        state.companies.add(cb.dataset.own);
-      });
-      onFilterChange();
     });
     document.querySelector('#ets-company-panel [data-action="none"]').addEventListener("click", function () {
       document.querySelectorAll("#ets-company-options input[type=checkbox]").forEach(cb => {
@@ -690,17 +675,9 @@
     document.getElementById("ets-installation-search").addEventListener("input", function () {
       renderInstallOptions(this.value);
     });
-    document.querySelector('#ets-installation-panel [data-action="all"]').addEventListener("click", function () {
-      // [data-idx] excludes company group checkboxes, which have no
-      // dataset.idx of their own — including them here would add NaN to
-      // state.installs and silently inflate its size.
-      document.querySelectorAll("#ets-installation-options input[type=checkbox][data-idx]").forEach(cb => {
-        cb.checked = true;
-        state.installs.add(+cb.dataset.idx);
-      });
-      onFilterChange();
-    });
     document.querySelector('#ets-installation-panel [data-action="none"]').addEventListener("click", function () {
+      // [data-idx] excludes company group checkboxes, which have no
+      // dataset.idx of their own.
       document.querySelectorAll("#ets-installation-options input[type=checkbox][data-idx]").forEach(cb => {
         cb.checked = false;
         state.installs.delete(+cb.dataset.idx);
@@ -750,8 +727,8 @@
     yFromVal.addEventListener("change", applyTypedYears);
     yToVal.addEventListener("change", applyTypedYears);
 
-    updateYearBar();
     renderPhaseAnnotations();
+    updateYearBar();
   }
 
   function updateYearBar() {
@@ -763,31 +740,64 @@
     const fill = document.getElementById("ets-year-fill");
     fill.style.left = fromPct + "%";
     fill.style.width = (toPct - fromPct) + "%";
+
+    // A phase label lights up while any part of that phase falls inside the
+    // selected range, so the reader can see which trading phases they are
+    // looking at without reading the years off the boxes above. It is an
+    // overlap test, not "a handle is standing in it": a phase wholly enclosed
+    // by the range holds neither handle and is the most covered of all.
+    document.querySelectorAll("#ets-phase-annotations .phase-annotation").forEach(el => {
+      const overlaps = +el.dataset.from <= state.yearTo && +el.dataset.to >= state.yearFrom;
+      el.classList.toggle("is-active", overlaps);
+    });
   }
 
-  // EU ETS trading-phase boundaries below the year slider — fixed regulatory
-  // dates, not derived from the data, so computed once against YEAR_MIN/MAX
-  // rather than refreshed on every drag. Tick marks on the track itself show
-  // exactly where each phase starts; the labels just name the phase (the
-  // year range is already visible via the ticks and the slider's own
-  // min/max, so it isn't repeated in text). Phase II's label sits flush left
-  // and phase IV's flush right (like axis min/max labels), since both run to
-  // the edge of the data range; only phase III, a fully-enclosed span, gets
-  // a label centered on its own midpoint.
+  // EU ETS trading phases — fixed regulatory dates, not derived from the data.
+  // Only each phase's first year is stated; its last is the year before the
+  // next one starts, and the tick between them sits on the half year. Stating
+  // the starts alone is what keeps the ticks, the labels' midpoints and the
+  // overlap test in updateYearBar from being able to disagree.
+  const PHASE_STARTS = [
+    { label: "Fáze II", start: 2008 },
+    { label: "Fáze III", start: 2013 },
+    { label: "Fáze IV", start: 2021 },
+  ];
+
+  // Drawn below the year slider. Tick marks on the track show where each phase
+  // starts; the labels just name it (the years are already visible via the
+  // ticks and the slider's own min/max, so they are not repeated in text).
+  // The first label sits flush left and the last flush right, like axis
+  // min/max labels, since both run to the edge of the data range; the
+  // fully-enclosed ones are centred on their own midpoint.
   function renderPhaseAnnotations() {
     const span = YEAR_MAX - YEAR_MIN || 1;
     const pct = y => (y - YEAR_MIN) / span * 100;
-    const boundaries = [2012.5, 2020.5].filter(y => y > YEAR_MIN && y < YEAR_MAX);
+    const phases = PHASE_STARTS.map((p, i) => ({
+      label: p.label,
+      from: Math.max(p.start, YEAR_MIN),
+      to: i + 1 < PHASE_STARTS.length ? PHASE_STARTS[i + 1].start - 1 : YEAR_MAX,
+    }));
+    const boundaries = phases.slice(1)
+      .map(p => p.from - 0.5)
+      .filter(y => y > YEAR_MIN && y < YEAR_MAX);
 
+    // Placed in the thumbs' own coordinate system, not as a plain percentage
+    // of the track: a range input centres its thumb within the track minus one
+    // thumb width, so the two scales diverge by up to half a thumb and a
+    // boundary next to a handle ends up hidden underneath it. --ets-thumb is
+    // defined on .dual-range, alongside the thumb's own width.
     const ticks = document.getElementById("ets-year-phase-ticks");
-    ticks.innerHTML = boundaries.map(y => `<span class="range-tick" style="left:${pct(y)}%"></span>`).join("");
+    ticks.innerHTML = boundaries.map(y =>
+      `<span class="range-tick" style="left:calc(var(--ets-thumb) / 2 + (100% - var(--ets-thumb)) * ${pct(y) / 100})"></span>`
+    ).join("");
 
     const labels = document.getElementById("ets-phase-annotations");
-    const phase3CenterPct = pct((2013 + 2020) / 2);
-    labels.innerHTML =
-      '<span class="phase-annotation phase-annotation--left">Fáze II</span>' +
-      `<span class="phase-annotation phase-annotation--center" style="left:${phase3CenterPct}%">Fáze III</span>` +
-      '<span class="phase-annotation phase-annotation--right">Fáze IV</span>';
+    labels.innerHTML = phases.map((p, i) => {
+      const place = i === 0 ? 'class="phase-annotation phase-annotation--left"'
+        : i === phases.length - 1 ? 'class="phase-annotation phase-annotation--right"'
+        : `class="phase-annotation phase-annotation--center" style="left:${pct((p.from + p.to) / 2)}%"`;
+      return `<span ${place} data-from="${p.from}" data-to="${p.to}">${p.label}</span>`;
+    }).join("");
   }
 
   // ── Filter summary ───────────────────────────────────────────────────────
@@ -799,6 +809,11 @@
   // distinct values → name them; otherwise just a count. Sits below the
   // filter controls, describing the whole page's current selection rather
   // than any one chart.
+  // Past this many values a facet is counted rather than listed by name.
+  // Shared by both summary lines so they do not disagree about when a list
+  // becomes a count.
+  const NAME_LIMIT = 3;
+
   function updateFilterSummary(idxs) {
     const full = document.getElementById("ets-filter-summary");
     const narrowed = document.getElementById("ets-activity-filter-summary");
@@ -809,47 +824,48 @@
     }
     const distinctRa = [...new Set(idxs.map(i => INSTALLS[i].ra).filter(Boolean))];
     const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].own))];
-    // One segment per filter control: odvětví, vlastníci, zařízení. A facet
-    // still spanning every value in the data says "vše" — the count would just
-    // be the dataset total and carry no information. Otherwise the values are
-    // named outright while there are few enough, else counted (the noun in
-    // nominative plural for 2-4 and genitive plural for 5+, which is what
-    // pluralCz buckets; "odvětví" is identical in both, so it needs no call).
-    // `all` marks a facet that is not narrowing anything, so the copy under
-    // chart 2 can leave it out.
-    const segments = [
-      {
-        all: distinctRa.length === ALL_REAL_ACTIVITIES.size,
-        text: distinctRa.length === ALL_REAL_ACTIVITIES.size
-          ? "Všechna odvětví"
-          : distinctRa.length <= 2
-          ? "Odvětví: " + distinctRa.join(", ")
-          : distinctRa.length + " odvětví",
-      },
-      {
-        all: distinctCos.length === ALL_OWNERS.size,
-        text: distinctCos.length === ALL_OWNERS.size
-          ? "Všichni vlastníci"
-          : distinctCos.length <= 3
-          ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
-            distinctCos.join(", ")
-          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků"),
-      },
-      {
-        all: idxs.length === INSTALLS.length,
-        text: idxs.length === INSTALLS.length
-          ? "Všechna zařízení"
-          : idxs.length <= 3
-          ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
-          : idxs.length + " zařízení",
-      },
-    ];
+    // Chart 2's line stands alone — its heading names no part of the selection
+    // — so unlike chart 1's it states every facet, not only the narrowed ones.
+    // Each is read off the filtered result rather than off the checkboxes, so
+    // it describes what is actually plotted above it.
 
-    // Chart 2 repeats the line but names only the facets that actually narrow
-    // the selection, so with nothing filtered it stays empty instead of
-    // restating "all three" under its heading.
+
+    // "Průmysl" is every real activity except the primary one, and reads far
+    // better than "9 odvětví". Recognised from the result rather than from the
+    // dropdown's own state, so it cannot claim the whole of industry while
+    // another facet has since narrowed the selection to part of it.
+    const industrial = getIndustrialRealActivities();
+    const wholeIndustry = distinctRa.length === industrial.length &&
+      industrial.every(ra => distinctRa.includes(ra));
+
+    const raText =
+      distinctRa.length === ALL_REAL_ACTIVITIES.size ? "Všechna odvětví"
+      : wholeIndustry ? "Průmysl"
+      : distinctRa.length <= NAME_LIMIT ? "Odvětví: " + distinctRa.join(", ")
+      : distinctRa.length + " odvětví";
+
+    // Nominative plural for 2-4 and genitive plural for 5+, which is what
+    // pluralCz buckets; "odvětví" and "zařízení" are identical in both.
+    const ownText =
+      distinctCos.length === ALL_OWNERS.size ? "Všichni vlastníci"
+      : distinctCos.length <= NAME_LIMIT
+        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
+          distinctCos.join(", ")
+      : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků");
+
+    const instText =
+      idxs.length === INSTALLS.length ? "Všechna zařízení"
+      : idxs.length <= NAME_LIMIT ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
+      : idxs.length + " zařízení";
+
+    // Owners are the one facet that can be dropped: naming the individual
+    // installations already pins the selection down to its finest grain, and
+    // the owner is then a property of those plants rather than a choice the
+    // reader made.
     if (narrowed) {
-      narrowed.textContent = segments.filter(x => !x.all).map(x => x.text).join(" · ");
+      narrowed.textContent = (facetNarrowed(state.installs, INSTALLS.length)
+        ? [raText, instText]
+        : [raText, ownText, instText]).join(" · ");
     }
 
     // Chart 1's heading already names one facet and the period, so its line
@@ -866,16 +882,25 @@
 
     if (spoken !== "ra" && facetNarrowed(state.realActivities, sortedRealActivities.length)) {
       line.push(isWholeIndustrySelected() ? "Průmysl"
-        : ra.length <= 2 ? "Odvětví: " + ra.join(", ")
+        : ra.length <= NAME_LIMIT ? "Odvětví: " + ra.join(", ")
         : ra.length + " odvětví");
     }
-    if (spoken !== "own" && facetNarrowed(state.companies, ALL_OWNERS.size)) {
-      line.push(own.length <= 3
-        ? (own.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + own.join(", ")
-        : own.length + " " + pluralCz(own.length, "vlastníci", "vlastníků"));
+    // Owners are the one facet worth naming even when the reader never opened
+    // its dropdown: choosing an installation chooses its owner implicitly, and
+    // for a single plant that is exactly what the line should say. So whenever
+    // the installation facet narrows the selection the owners are read off the
+    // result instead — which also keeps the line honest when an owner was
+    // ticked whose plants the installation filter then excluded.
+    const ownNamed = facetNarrowed(state.installs, INSTALLS.length) ? distinctCos
+      : facetNarrowed(state.companies, ALL_OWNERS.size) ? own
+      : null;
+    if (spoken !== "own" && ownNamed) {
+      line.push(ownNamed.length <= NAME_LIMIT
+        ? (ownNamed.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + ownNamed.join(", ")
+        : ownNamed.length + " " + pluralCz(ownNamed.length, "vlastníci", "vlastníků"));
     }
     if (spoken !== "inst" && facetNarrowed(state.installs, INSTALLS.length)) {
-      line.push(inst.length <= 3
+      line.push(inst.length <= NAME_LIMIT
         ? "Zařízení: " + inst.map(i => INSTALLS[i].n).join(", ")
         : inst.length + " zařízení");
     }
@@ -914,10 +939,51 @@
   const tip = document.getElementById("tooltip");
   function showTip(ev, html) { tip.innerHTML = html; tip.style.display = "block"; moveTip(ev); }
   function moveTip(ev) {
-    tip.style.left = Math.min(ev.clientX + 12, window.innerWidth - 240) + "px";
-    tip.style.top = Math.min(ev.clientY + 12, window.innerHeight - 130) + "px";
+    // Flip to the other side of the cursor rather than clamping to the
+    // viewport edge: the card's width varies with its content, so a fixed
+    // clamp would either overflow or park it far from the pointer.
+    const pad = 12;
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    let x = ev.clientX + pad, y = ev.clientY + pad;
+    if (x + tw > window.innerWidth - 4) x = ev.clientX - tw - pad;
+    if (y + th > window.innerHeight - 4) y = ev.clientY - th - pad;
+    tip.style.left = x + "px";
+    tip.style.top = y + "px";
   }
   function hideTip() { tip.style.display = "none"; }
+
+  // Filter rows and the closed dropdown buttons ellipsise long names, so the
+  // full text shows on hover. The browser's native title= waits well over a
+  // second and cannot be restyled, so those elements carry data-tip and reuse
+  // this tooltip instead. The delay is what keeps sweeping down a long list
+  // from flashing a card on every row on the way past.
+  const TIP_DELAY_MS = 500;
+  let tipTimer = null;
+  // textContent, not innerHTML: these strings are owner and installation
+  // names straight from the dataset.
+  function showTipText(ev, text) {
+    tip.textContent = text;
+    tip.style.display = "block";
+    moveTip(ev);
+  }
+  // Guarded because an SVG element's `closest` is missing in older engines,
+  // and these listeners see every pointer event on the page.
+  const tipTarget = ev => (ev.target.closest ? ev.target.closest("[data-tip]") : null);
+
+  document.addEventListener("mouseover", ev => {
+    const el = tipTarget(ev);
+    if (!el) return;
+    clearTimeout(tipTimer);
+    tipTimer = setTimeout(() => showTipText(ev, el.dataset.tip), TIP_DELAY_MS);
+  });
+  document.addEventListener("mousemove", ev => {
+    if (tip.style.display === "block" && tipTarget(ev)) moveTip(ev);
+  });
+  document.addEventListener("mouseout", ev => {
+    if (!tipTarget(ev)) return;
+    clearTimeout(tipTimer);
+    hideTip();
+  });
 
   // The hatch swatch in both legends is drawn with the chart's own pattern
   // rather than approximated in CSS: a repeating-linear-gradient rotates the
@@ -1005,7 +1071,7 @@
 
     const sel = state.realActivities;
     if (!facetNarrowed(sel, sortedRealActivities.length))
-      return about("v sektorech EU ETS");
+      return about("v EU ETS");
     if (isWholeIndustrySelected()) return about("v průmyslu");
     if (sel.size === 1) return about(sectorPhrase([...sel][0]));
     return about("ve vybraných odvětvích");
@@ -1360,7 +1426,7 @@
       .attr("y", -10 - (headLines.length - 1) * headLineH)
       .attr("text-anchor", "end")
       .attr("font-size", CFG.valueFontSize + "px")
-      .attr("font-weight", "600")
+      .attr("font-weight", "500")
       .attr("fill", "#2d3748");
     headLines.forEach((line, i) => head.append("tspan")
       .attr("x", shareX).attr("dy", i ? headLineH : 0).text(line));
@@ -1373,7 +1439,7 @@
       .attr("dy", "0.32em")
       .attr("text-anchor", "end")
       .attr("font-size", CFG.valueFontSize + "px")
-      .attr("font-weight", "600")
+      .attr("font-weight", "500")
       .attr("fill", "#2d3748")
       .text(shareText);
 
@@ -1467,12 +1533,39 @@
     // stack on y and flow on x (two columns, left to right); the horizontal
     // variant swaps them (two rows, top to bottom).
     const T = !!CFG.sankeyHorizontal;
-    const k = 0.4; // px per Mt
     const GAP = 10, LAYOUT_MIN = 16, BAR_MIN = 1.5;
     const BAR_W = 10;
-    const FLOW_A = T ? 170 : 240;   // near row / left column
-    const FLOW_B = T ? 430 : 620;   // far row / right column
-    const Y0 = 30;
+    const Y0 = 30, PAD_END = 20;
+
+    // Both columns are labelled outside their bars, and the ribbons get what is
+    // left between them. Trimming LABEL_RIGHT is what pushes the whole diagram
+    // further right; the left gutter is the wider of the two because that
+    // column carries the real-sector names, which are the longer set.
+    const LABEL_LEFT = 300, LABEL_RIGHT = 210, FLOW_SPAN = 590;
+    const FLOW_A = T ? 170 : LABEL_LEFT;                   // near row / left column
+    const FLOW_B = T ? 430 : FLOW_A + BAR_W + FLOW_SPAN;   // far row / right column
+
+    // px per Mt, solved so the taller column fills SANKEY_H instead of being a
+    // fixed scale that has to be retuned whenever the data grows. A node too
+    // small to reach LAYOUT_MIN takes a fixed share of the height rather than a
+    // proportional one, so the scale is re-solved over the rest until the set
+    // of pinned nodes stops changing — with this data most nodes are pinned, so
+    // a single linear pass would overshoot the target by a fifth.
+    const SANKEY_H = 400;
+    function solveScale(values) {
+      const avail = SANKEY_H - Y0 - PAD_END - (values.length - 1) * GAP;
+      let k = avail / d3.sum(values);
+      for (let i = 0; i < 20; i++) {
+        const free = values.filter(v => v * k >= LAYOUT_MIN);
+        if (!free.length) break;
+        const next = (avail - (values.length - free.length) * LAYOUT_MIN) / d3.sum(free);
+        if (Math.abs(next - k) < 1e-9) break;
+        k = next;
+      }
+      return k;
+    }
+    const k = Math.min(solveScale([...srcTotals.values()]),
+                       solveScale([...tgtTotals.values()]));
     // "stack,flow" -> "x,y" for whichever orientation is active. Bezier control
     // points transpose the same way, so one path string serves both.
     const P = (stack, flow) => (T ? `${stack},${flow}` : `${flow},${stack}`);
@@ -1510,36 +1603,52 @@
         tgtCursor.set(l.ra, l.yT + l.h);
       });
 
-    const stackExtent = Math.max(srcLayout.bottom, tgtLayout.bottom) + 20;
-    // The horizontal variant needs room past the far row for its labels; the
-    // default one keeps its fixed 900-wide frame.
-    const flowExtent = T ? FLOW_B + BAR_W + 170 : 900;
-    svgEl.setAttribute("viewBox",
-      T ? `0 0 ${stackExtent} ${flowExtent}` : `0 0 ${flowExtent} ${stackExtent}`);
-    svgEl.style.height = (T ? flowExtent : stackExtent) + "px";
+    const stackExtent = Math.max(srcLayout.bottom, tgtLayout.bottom) + PAD_END;
+    const flowExtent = T ? FLOW_B + BAR_W + 170 : FLOW_B + BAR_W + LABEL_RIGHT;
+    const vbW = T ? stackExtent : flowExtent;
+    const vbH = T ? flowExtent : stackExtent;
+    svgEl.setAttribute("viewBox", `0 0 ${vbW} ${vbH}`);
+    // Sized by ratio, not by a pixel height: the SVG is width:100% of its
+    // panel, so a fixed height that disagrees with the viewBox letterboxes the
+    // drawing inside it. aspect-ratio also needs no measurement, which matters
+    // because this chart first renders inside a collapsed dropdown.
+    svgEl.style.height = "auto";
+    svgEl.style.aspectRatio = `${vbW} / ${vbH}`;
     d3.select(svgEl).selectAll("*").remove();
     const svg = d3.select(svgEl);
 
     const mid = (FLOW_A + BAR_W + FLOW_B) / 2;
+    const LINK_BASE = 0.28, LINK_ON = 0.6, LINK_OFF = 0.06;
     svg.selectAll(".sankey-link")
       .data(linkGeo)
       .join("path").attr("class", "sankey-link")
       .attr("d", l => {
         const f0 = FLOW_A + BAR_W, f1 = FLOW_B;
-        const s0t = l.yS, s0b = l.yS + l.h, s1t = l.yT, s1b = l.yT + l.h;
+        // The left column is the real sector and the right one the ETS
+        // activity, so a ribbon leaves the TARGET's stack position and lands on
+        // the source's — the reverse of the order the links were built in.
+        const s0t = l.yT, s0b = l.yT + l.h, s1t = l.yS, s1b = l.yS + l.h;
         return `M${P(s0t, f0)} C${P(s0t, mid)} ${P(s1t, mid)} ${P(s1t, f1)} ` +
           `L${P(s1b, f1)} C${P(s1b, mid)} ${P(s0b, mid)} ${P(s0b, f0)} Z`;
       })
-      .attr("fill", CFG.colorUncovered).attr("fill-opacity", 0.28).attr("stroke", "none")
+      .attr("fill", CFG.colorUncovered).attr("fill-opacity", LINK_BASE).attr("stroke", "none")
       .on("mouseover", (ev, l) => showTip(ev,
-        `<strong>${l.act}</strong> → <strong>${l.ra}</strong><br>${fmt(l.value * 1e6)}`))
+        `<strong>${l.ra}</strong> → <strong>${l.act}</strong><br>${fmt(l.value * 1e6)}`))
       .on("mousemove", moveTip).on("mouseout", hideTip);
+
+    // Pointing at a node lifts the ribbons touching it and fades the rest, so a
+    // sector's share can be followed across without reading every label. `key`
+    // says which end of the link that column stands for.
+    function highlightFlows(key, name) {
+      svg.selectAll(".sankey-link").attr("fill-opacity", l =>
+        !name ? LINK_BASE : l[key] === name ? LINK_ON : LINK_OFF);
+    }
 
     // Wraps by character count rather than measured pixel width (unlike the
     // shared wrapText helper used elsewhere) because this chart renders once
-    // at page load while still nested inside two collapsed dropdowns —
-    // getComputedTextLength() reads 0 for text under a display:none
-    // ancestor, so a measurement-based wrap would never trigger.
+    // at page load while still inside the collapsed "Data a metodologie"
+    // expander — getComputedTextLength() reads 0 for text under a
+    // display:none ancestor, so a measurement-based wrap would never trigger.
     function wrapLabelByChars(text, maxChars) {
       if (text.length <= maxChars) return [text];
       const words = text.split(/\s+/);
@@ -1560,7 +1669,13 @@
     }
 
     // `before` = labels sit on the low side of the row/column (left, or above).
-    function drawNodes(names, layoutPos, flowPos, before) {
+    function drawNodes(names, layoutPos, flowPos, before, key) {
+      // Both the bar and its label are handles for the same node.
+      const hover = sel => sel
+        .style("cursor", "pointer")
+        .on("mouseenter", (ev, n) => highlightFlows(key, n))
+        .on("mouseleave", () => highlightFlows(null, null));
+
       svg.selectAll(null)
         .data(names).enter()
         .append("rect")
@@ -1568,7 +1683,8 @@
         .attr("y", n => (T ? flowPos : layoutPos.get(n).barY))
         .attr("width", n => (T ? layoutPos.get(n).barH : BAR_W))
         .attr("height", n => (T ? BAR_W : layoutPos.get(n).barH))
-        .attr("rx", 2).attr("fill", CFG.colorEmissions);
+        .attr("fill", CFG.colorEmissions)
+        .call(hover);
 
       const labelFlow = before ? flowPos - 10 : flowPos + BAR_W + 10;
       // Rotating the frame flips which anchor runs away from the bar: local +x
@@ -1599,10 +1715,11 @@
               ? (i === 0 ? `${-(lines.length - 1) * 0.45}em` : "0.95em")
               : "0.32em"))
             .text(d => d);
-        });
+        })
+        .call(hover);
     }
-    drawNodes(sources, srcLayout.pos, FLOW_A, true);
-    drawNodes(targets, tgtLayout.pos, FLOW_B, false);
+    drawNodes(targets, tgtLayout.pos, FLOW_A, true, "ra");
+    drawNodes(sources, srcLayout.pos, FLOW_B, false, "act");
 
     // Column/row headings. Transposed they cannot sit beside the rows (the
     // rotated labels are there), so they head the whole block instead.
@@ -1611,11 +1728,11 @@
       .attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
       .text(text);
     if (T) {
-      heading("Hlavní odvětví (dle ETS)", 0, 14, "start");
-      heading("Skutečné odvětví", 0, flowExtent - 6, "start");
+      heading("Skutečné odvětví", 0, 14, "start");
+      heading("Hlavní odvětví (dle ETS)", 0, flowExtent - 6, "start");
     } else {
-      heading("Hlavní odvětví (dle ETS)", FLOW_A - 10, 14, "end");
-      heading("Skutečné odvětví", FLOW_B + BAR_W + 10, 14, "start");
+      heading("Skutečné odvětví", FLOW_A - 10, 14, "end");
+      heading("Hlavní odvětví (dle ETS)", FLOW_B + BAR_W + 10, 14, "start");
     }
   }
 
