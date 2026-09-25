@@ -13,7 +13,7 @@ intro: |
 extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/ets-dashboard.js
-- /assets-local/js/svg-download.js
+- /assets-local/js/chart-download.js
 preview_type: "Interaktivní přehled"
 include_in_search: true
 ---
@@ -130,7 +130,10 @@ include_in_search: true
       <div class="filter-summary" id="ets-filter-summary"></div>
       <div class="chart-foot">
         <span id="ets-source-timeline">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
-        <button type="button" class="svg-download" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
+        <span class="chart-downloads">Stáhnout:
+          <button type="button" class="chart-download" data-format="png" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline">PNG</button>,
+          <button type="button" class="chart-download" data-svg="ets-svg-timeline" data-filename="ets-vyvoj-v-case.svg" data-title="#ets-timeline-title" data-subtitle="#ets-filter-summary" data-source="#ets-source-timeline">SVG</button>
+        </span>
       </div>
     </div>
 
@@ -156,7 +159,10 @@ include_in_search: true
       <div class="filter-summary" id="ets-activity-filter-summary"></div>
       <div class="chart-foot">
         <span id="ets-source-activity">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a></span>
-        <button type="button" class="svg-download" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
+        <span class="chart-downloads">Stáhnout:
+          <button type="button" class="chart-download" data-format="png" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity">PNG</button>,
+          <button type="button" class="chart-download" data-svg="ets-svg-activity" data-filename="ets-podle-odvetvi.svg" data-title="#ets-activity-title" data-subtitle="#ets-activity-filter-summary" data-source="#ets-source-activity">SVG</button>
+        </span>
       </div>
     </div>
 
@@ -201,7 +207,10 @@ Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lep
   <svg id="ets-svg-sankey"></svg>
   <div class="chart-foot">
     <span id="ets-source-sankey">Zdroj: <a href="https://union-registry-data.ec.europa.eu/report/welcome">Unijní registr EU ETS</a>, rešerše Fakta o klimatu</span>
-    <button type="button" class="svg-download" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey">Stáhnout SVG<i class="fa-regular fa-image"></i></button>
+    <span class="chart-downloads">Stáhnout:
+      <button type="button" class="chart-download" data-format="png" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey">PNG</button>,
+      <button type="button" class="chart-download" data-svg="ets-svg-sankey" data-filename="ets-mapovani-odvetvi.svg" data-title="#ets-sankey-title" data-source="#ets-source-sankey">SVG</button>
+    </span>
   </div>
 </div>
 

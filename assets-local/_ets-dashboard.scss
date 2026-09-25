@@ -296,12 +296,14 @@ body.ets-dashboard {
     font-size: 0.8rem; color: #a0aec0;
   }
   .chart-foot a, .chart-foot a:hover { color: #a0aec0; }
-  .chart-foot .svg-download {
+  /* The two formats read as one "Stáhnout: PNG, SVG" phrase, so they must not
+     be split across lines by the footer's own wrapping. */
+  .chart-foot .chart-downloads { white-space: nowrap; }
+  .chart-foot .chart-download {
     background: none; border: none; padding: 0;
     font: inherit; color: inherit; cursor: pointer;
-    display: inline-flex; align-items: center; gap: 6px;
   }
-  .chart-foot .svg-download:hover { text-decoration: underline; }
+  .chart-foot .chart-download:hover { text-decoration: underline; }
   .filter-summary {
     font-size: 14px; font-weight: 400; color: #718096; margin-bottom: 0;
     padding: var(--ets-summary-pad-t) 0 var(--ets-summary-pad-b);
