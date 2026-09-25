@@ -1,0 +1,164 @@
+/* Dovoz fosilních paliv do ČR — collections/_studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.md
+ *
+ * Only the page's own furniture lives here: the KPI row, the panels the charts
+ * sit in and the headings between them. Everything inside a panel is drawn by
+ * the shared chart library (assets-local/charts/), which styles itself from
+ * fok-theme.js and charts/_charts.scss — so there are no colours, fonts or
+ * sizes for the chart contents in this file.
+ *
+ * Scoped to the page's body class: the names are ordinary (.kpi-card,
+ * .chart-panel) and main.scss pulls this file in BEFORE the universal rules,
+ * so an unscoped copy would also lose to web-core at equal specificity.
+ *
+ * Set by `body-class: dovoz-fosilnich-paliv` in the page's front matter.
+ */
+body.dovoz-fosilnich-paliv {
+    --dovoz-border: 1px solid #e2e8f0;
+    --dovoz-gap: 16px;
+
+    /* web-core paints only every other .section white and lets the rest show
+       body's #f7f7f7 — which left the charts on grey. The panels are white, so
+       the whole page is set white and their borders do the separating.
+       Outranks .section:nth-of-type(odd) (0,2,0) at (0,2,1), so load order
+       relative to the universal rules does not matter. */
+    .section {
+        background-color: #fff;
+    }
+
+    /* Which year the KPI figures speak for, set above them like a caption. */
+    .data-year {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #a0aec0;
+        margin-bottom: 10px;
+    }
+
+    /* Panels share a row while there is room and stack on a phone. The row owns
+       the spacing, so the panels' own bottom margin is dropped inside it. */
+    .chart-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--dovoz-gap);
+    }
+
+    .chart-row > .chart-panel {
+        flex: 1;
+        min-width: 280px;
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* Names the fuel the box beneath it describes. It stands outside that box,
+       so it is the one heading here the chart library does not draw — hence the
+       explicit font above. */
+    .fuel-heading {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2d3748;
+        margin: 28px 0 12px;
+    }
+
+    .fuel {
+        margin-bottom: 28px;
+    }
+
+    /* One box per fuel, from the tablet breakpoint up: the four charts about a
+       fuel read as one unit, so the box is drawn once around them and the
+       panels inside give up their own. 768px is where the two small charts
+       start sharing a row (2 × 280px + gap needs a 576px-wide row, which the
+       container reaches at about that viewport) — below it they are stacked
+       anyway and the nesting would only cost width. */
+    /* The two fuels are meant to be compared, so from the large breakpoint their
+       boxes stand side by side. 992px is the first width where that still
+       leaves the four charts inside something usable: the container is 960px,
+       which puts the two small charts at about 210px — the narrowest the chart
+       guidelines call workable. Below it the row is a plain block and the boxes
+       stack. */
+    @media (min-width: 992px) {
+        .fuel-row {
+            display: flex;
+            gap: var(--dovoz-gap);
+        }
+
+        .fuel-row > .fuel {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+
+        /* Halving the box halves the row inside it too, so the small charts
+           have to give up the 280px floor that keeps them apart elsewhere. */
+        .fuel-box .chart-row > .chart-panel {
+            min-width: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .fuel-box {
+            background: #fff;
+            border: var(--dovoz-border);
+            border-radius: 8px;
+            padding: 16px 18px;
+
+            .chart-panel {
+                background: none;
+                border: 0;
+                padding: 0;
+            }
+
+            /* The box's own padding closes the bottom. */
+            > .chart-panel:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /* ── KPI heading ───────────────────────────────────────────────────────── */
+    /* The headline figure and the chart that unpacks it share one panel, split
+       by a rule. The negative margins cancel the panel's own padding so that
+       rule runs the panel's full width instead of stopping at the text. */
+    .kpi {
+        margin: -16px -18px 16px;
+        padding: 16px 18px;
+        border-bottom: var(--dovoz-border);
+        color: #515b66;
+    }
+
+    .kpi-label {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        margin-bottom: 0;
+    }
+
+    .kpi-value {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /* ── Chart panels ──────────────────────────────────────────────────────── */
+    .chart-panel {
+        background: #fff;
+        border-radius: 8px;
+        border: var(--dovoz-border);
+        padding: 16px 18px;
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* The charts set a font-family inline on everything they draw; this only
+       catches the KPI row and anything a chart leaves unstyled. */
+    .chart-panel,
+    .fuel-heading {
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+
+    /* Explains a band whose label alone would mislead; sits under the chart it
+       belongs to, inside the same panel. */
+    .chart-note {
+        margin: 8px 0 0;
+        font-size: 13px;
+        line-height: 1.45;
+        color: #a0aec0;
+    }
+}
