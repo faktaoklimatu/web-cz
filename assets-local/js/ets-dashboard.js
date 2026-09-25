@@ -796,7 +796,7 @@
     labels.innerHTML = phases.map((p, i) => {
       const place = i === 0 ? 'class="phase-annotation phase-annotation--left"'
         : i === phases.length - 1 ? 'class="phase-annotation phase-annotation--right"'
-        : `class="phase-annotation phase-annotation--center" style="left:${pct((p.from + p.to) / 2)}%"`;
+          : `class="phase-annotation phase-annotation--center" style="left:${pct((p.from + p.to) / 2)}%"`;
       return `<span ${place} data-from="${p.from}" data-to="${p.to}">${p.label}</span>`;
     }).join("");
   }
@@ -841,23 +841,23 @@
 
     const raText =
       distinctRa.length === ALL_REAL_ACTIVITIES.size ? "Všechna odvětví"
-      : wholeIndustry ? "Průmysl"
-      : distinctRa.length <= NAME_LIMIT ? "Odvětví: " + distinctRa.join(", ")
-      : distinctRa.length + " odvětví";
+        : wholeIndustry ? "Průmysl"
+          : distinctRa.length <= NAME_LIMIT ? "Odvětví: " + distinctRa.join(", ")
+            : distinctRa.length + " odvětví";
 
     // Nominative plural for 2-4 and genitive plural for 5+, which is what
     // pluralCz buckets; "odvětví" and "zařízení" are identical in both.
     const ownText =
       distinctCos.length === ALL_OWNERS.size ? "Všichni vlastníci"
-      : distinctCos.length <= NAME_LIMIT
-        ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
+        : distinctCos.length <= NAME_LIMIT
+          ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
           distinctCos.join(", ")
-      : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků");
+          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků");
 
     const instText =
       idxs.length === INSTALLS.length ? "Všechna zařízení"
-      : idxs.length <= NAME_LIMIT ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
-      : idxs.length + " zařízení";
+        : idxs.length <= NAME_LIMIT ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
+          : idxs.length + " zařízení";
 
     // Owners are the one facet that can be dropped: naming the individual
     // installations already pins the selection down to its finest grain, and
@@ -884,7 +884,7 @@
     if (spoken !== "ra" && facetNarrowed(state.realActivities, sortedRealActivities.length)) {
       line.push(isWholeIndustrySelected() ? "Průmysl"
         : ra.length <= NAME_LIMIT ? "Odvětví: " + ra.join(", ")
-        : ra.length + " odvětví");
+          : ra.length + " odvětví");
     }
     // Owners are the one facet worth naming even when the reader never opened
     // its dropdown: choosing an installation chooses its owner implicitly, and
@@ -894,7 +894,7 @@
     // ticked whose plants the installation filter then excluded.
     const ownNamed = facetNarrowed(state.installs, INSTALLS.length) ? distinctCos
       : facetNarrowed(state.companies, ALL_OWNERS.size) ? own
-      : null;
+        : null;
     if (spoken !== "own" && ownNamed) {
       line.push(ownNamed.length <= NAME_LIMIT
         ? (ownNamed.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + ownNamed.join(", ")
@@ -1194,7 +1194,7 @@
         // Treads are widened by half a gap on each side, so consecutive years
         // meet exactly and the riser between them is a single vertical line.
         d += (i === 0 ? `M${x(yr) - gap / 2},${lvl}` : `V${lvl}`) +
-             `H${x(yr) + x.bandwidth() + gap / 2}`;
+          `H${x(yr) + x.bandwidth() + gap / 2}`;
       });
       markerPasses(CFG.lineWidth).forEach(([stroke, width]) => {
         svg.append("path").attr("class", "line-allocation")
@@ -1381,8 +1381,8 @@
       const extra = d.surplus > 0
         ? `Povolenky zdarma alokované navíc: <strong>${fmt(d.surplus)}</strong><br>`
         : d.deficit > 0
-        ? `Emise nepokryté povolenkami zdarma: <strong>${fmt(d.deficit)}</strong><br>`
-        : "";
+          ? `Emise nepokryté povolenkami zdarma: <strong>${fmt(d.deficit)}</strong><br>`
+          : "";
       return `<strong>${d.key}</strong><br>` +
         `Ověřené emise: <strong>${fmt(d.e)}</strong><br>` +
         `Bezplatné povolenky: <strong>${fmt(d.a)}</strong><br>` +
@@ -1587,7 +1587,7 @@
       return k;
     }
     const k = Math.min(solveScale([...srcTotals.values()]),
-                       solveScale([...tgtTotals.values()]));
+      solveScale([...tgtTotals.values()]));
     // "stack,flow" -> "x,y" for whichever orientation is active. Bezier control
     // points transpose the same way, so one path string serves both.
     const P = (stack, flow) => (T ? `${stack},${flow}` : `${flow},${stack}`);

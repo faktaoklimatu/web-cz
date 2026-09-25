@@ -25,7 +25,6 @@ include_in_search: true
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
 
-
 <div class="section pb-3">
   <div class="container between-navbars">
     <h1>{{ page.title }}</h1>
@@ -169,12 +168,14 @@ include_in_search: true
 
 {% capture povolenky-zdarma %}
 [Povolenky zdarma](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/about-free-allocation_en?prefLang=cs) v minulosti vycházely především ze dvou předpokladů:
+
 * **Postupný náběh systému**, aby se zařízení měla čas přizpůsobit a nákup emisních povolenek pro ně nebyl bezprostředním navýšením nákladů. To však v prvních letech vedlo k výraznému přebytku povolenek zdarma nad skutečně vyprodukovanými emisemi. Některé ze zařízení tak nebyly kompenzovány pouze 1:1, ale naopak na bezplatných alokacích vydělaly (v grafech je tato nadměrná alokace zobrazená jako *Povolenky zdarma alokované navíc*).
 * **Riziko úniku uhlíku** v energeticky náročných průmyslových sektorech (jejich aktuální seznam [zde](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=uriserv:OJ.L_.2019.120.01.0020.01.CES&toc=OJ:L:2019:120:FULL)), kde by mohlo dojít k tomu, že unijní podniky přesunou svou výrobů mimo EU do zemí s nižšími emisními standardy nebo dojde k upřednostňování konkurence z těchto zemí na úkor domácího průmyslu.
 
 Zatímco výroba elektřiny povolenky zdarma od roku 2013 téměř nedostává (riziko úniku uhlíku je zde omezené), teplárenství dostává pouze část (v současnosti maximálně [30 %](https://mzp.gov.cz/system/files/2025-12/opok-MPkCNP-20251211.pdf)), průmysl kvůli riziku uhlíku stále dostává většinu. Povolenky zdarma by měl ve většině sektorů postupně nahradit [mechanismus uhlíkového vyrovnání na hranicích](/explainery/cbam) (*Carbon Border Adjustment Mechanism*, CBAM).
 
 **Jak konkrétně jsou povolenky zdarma pro průmysl rozdělovány?**
+
 * Povolenky zdarma jsou alokovány na základě benchmarku emisní intenzity výroby daného produktu, který odpovídá průměru 10 % nejefektivnějších zařízení v daném sektoru v EU.
 * Systém tak odměňuje ty nejefektivnější – ty, co se do benchmarku vejdou, obdrží všechny povolenky zdarma. Instalace, které jsou pod benchmarkem, naopak dostávají pouze část. Například pokud je benchmark pro určitý produkt 0,1 tuna CO<sub>2</sub> na tunu výroby tohoto produktu a zařízení ho vyrábí s emisní intenzitou 0,15 t CO<sub>2</sub>/t výroby, tak dostane dvě třetiny povolenek zdarma a zbylou třetinu musí dokoupit. Pokud zařízení vyrobí 1000 t produktu ročně, emituje při tom 150 tun CO<sub>2</sub>, k čemuž dostane 100 povolenek zdarma a 50 jich musí nakoupit. Aby byla zařízení motivovaná dále dekarbonizovat, jsou benchmarky postupně zpřísňovány (vždy podle 10 % nejefektivnější produkce v EU).
 * V praxi to pak vypadá tak, že členský stát zašle v pětiletém cyklu podklady od jednotlivých zařízení (údaje o výrobě, popis rizika úniku uhlíku) Evropské komisi, která je musí schválit. Poté příslušný orgán (v Česku Ministerstvo životního prostředí) povolenky každý rok alokuje. Instalace musí každý rok MŽP reportovat svou výrobu, aby nedošlo k tomu, že dostanou více povolenek, než potřebují na svoji výrobu. Detaily obsahuje [metodika](https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/bezplatna-alokace-2021-2030-eu-ets-1) na stránkách MŽP.
@@ -197,7 +198,8 @@ Kromě povolenek zdarma navíc také některé průmyslové podniky dostávají 
 Data o alokacích povolenek zdarma a ověřených emisí pochází z [Unijního registru](https://union-registry-data.ec.europa.eu/report/welcome), konkrétně souboru [*Verified emissions 2025*](https://climate.ec.europa.eu/document/download/53018483-62b3-499e-9ab9-b4a831cc44f4_en?filename=verified_emissions_2025_en.xlsx).
 
 Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lepší srozumitelnost a analýzu přidali následující atributy:
-* **Odvětví zařízení** – původní data obsahují data o hlavní aktivitě (odvětví) daného zařízení, která ale v některých případech přesně neodpovídá skutečné aktivitě celého podniku. Jde především o primárně průmyslová zařízení zařazené do aktivity _Výroba elektřiny a tepla (spalování paliv)_, kam se podnik dostal kvůli tomu, protože překročil práh tepelného příkonu (nad 20 MW) a nikoliv práh definovaný objemem výroby (např. stanovený objem denní produkce). Přeřazení takového zařízení do konkrétního průmyslového odvětví (na základě naší rešerše) umožňuje výrazně přesněji analyzovat, jaká je celková situace v jednotlivých odvětvích průmyslu. Přesto ale tímto postupem nelze zachytit skutečnost zcela přesně. Mnohé primárně průmyslové teplárny totiž současně také dodávají teplo zákazníkům mimo průmysl (kteří jim tak pokryjí část nákladů za povolenky), stejně jako mnohé primárně městské teplárny současně také dodávají teplo do průmyslových podniků (což znamená pro průmysl nepřímo náklady za povolenky navíc). O těchto dodávkách tepla nejsou veřejná data, a proto je v tomto přehledu nelze zohlednit.
+
+* **Odvětví zařízení** – původní data obsahují data o hlavní aktivitě (odvětví) daného zařízení, která ale v některých případech přesně neodpovídá skutečné aktivitě celého podniku. Jde především o primárně průmyslová zařízení zařazené do aktivity *Výroba elektřiny a tepla (spalování paliv)*, kam se podnik dostal kvůli tomu, protože překročil práh tepelného příkonu (nad 20 MW) a nikoliv práh definovaný objemem výroby (např. stanovený objem denní produkce). Přeřazení takového zařízení do konkrétního průmyslového odvětví (na základě naší rešerše) umožňuje výrazně přesněji analyzovat, jaká je celková situace v jednotlivých odvětvích průmyslu. Přesto ale tímto postupem nelze zachytit skutečnost zcela přesně. Mnohé primárně průmyslové teplárny totiž současně také dodávají teplo zákazníkům mimo průmysl (kteří jim tak pokryjí část nákladů za povolenky), stejně jako mnohé primárně městské teplárny současně také dodávají teplo do průmyslových podniků (což znamená pro průmysl nepřímo náklady za povolenky navíc). O těchto dodávkách tepla nejsou veřejná data, a proto je v tomto přehledu nelze zohlednit.
 
 <div class="chart-panel ets-sankey-indent">
   <div class="panel-header">
@@ -217,7 +219,7 @@ Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lep
 
 * **Současný vlastník** – k názvu zařízení (podniku) jsme na základě rešerše přidali současného vlastníka zařízení (historii vlastnictví pro zjednodušení nezahrnujeme). Ve většině případů jde o mateřskou společnost, u které se potkávají všechny její česká zařízení zahrnutá v ETS1. V rozbalovacím seznamu jsme je následně seřadili podle množství emisí, které jejich zařízení vyprodukují.
 
-Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na info@faktaoklimatu.cz.
+Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na <info@faktaoklimatu.cz>.
 
 Tabulka s emisemi skleníkových plynů a povolenek zdarma v letech 2008–2025 pro všechna zařízení v Česku, doplněná o současné vlastníky a skutečná odvětví, je pro případné další analýzy k dispozici [zde](https://github.com/faktaoklimatu/data-analysis/blob/data-dashboard-ets1/outputs/ets-dashboard/ETS-data.csv).
 
