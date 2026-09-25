@@ -945,6 +945,18 @@
     // clamp would either overflow or park it far from the pointer.
     const pad = 12;
     const tw = tip.offsetWidth, th = tip.offsetHeight;
+
+    // On a phone the card is nearly as wide as the screen, so there is no side
+    // of the touch point it fits beside — flipping it just moves which edge it
+    // runs off. Centred in the viewport and tucked under the finger instead.
+    if (MOBILE.matches) {
+      let y = ev.clientY + pad;
+      if (y + th > window.innerHeight - 4) y = ev.clientY - th - pad;
+      tip.style.left = Math.max(4, Math.round((window.innerWidth - tw) / 2)) + "px";
+      tip.style.top = Math.max(4, y) + "px";
+      return;
+    }
+
     let x = ev.clientX + pad, y = ev.clientY + pad;
     if (x + tw > window.innerWidth - 4) x = ev.clientX - tw - pad;
     if (y + th > window.innerHeight - 4) y = ev.clientY - th - pad;
@@ -1451,8 +1463,17 @@
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisLabelFontSize + "px").attr("fill", CFG.axisTextColor)
         .call(wrapText, mg.left - 20, -10));
 
+    // At phone width the full run ("200 mil. 400 mil. …") collides into one
+    // smear, so every second label is dropped and the unit is named once, on
+    // the last one — the rest are bare numbers read against it.
+    const xTicks = x.ticks(CFG.tickCountActivity);
+    const labelled = MOBILE.matches ? xTicks.filter((d, i) => i % 2 === 0) : xTicks;
+    const lastLabel = labelled[labelled.length - 1];
+    const fmtAxis = !MOBILE.matches ? fmtShort
+      : d => (d === lastLabel ? fmtShort(d) : fmtShort(d).replace(/\s(mil\.|tis\.)$/, ""));
+
     svg.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).ticks(CFG.tickCountActivity).tickFormat(fmtShort))
+      .call(d3.axisBottom(x).tickValues(labelled).tickFormat(fmtAxis))
       .call(g => g.select(".domain").remove())
       .call(g => g.selectAll(".tick line").attr("stroke", CFG.gridColor))
       .call(g => g.selectAll(".tick text").attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor));
