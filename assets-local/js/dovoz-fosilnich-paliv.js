@@ -56,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const ENERGIE_KEYS = Object.keys(ENERGIE);
 
+  // Only the bottom of each stack is drawn at full strength: those three bands
+  // carry the bulk of the imports, and pushing the rest back stops the thin
+  // upper slivers from competing with them. Half the saturation and half the
+  // weight against the panel's white — applied as a flat colour rather than a
+  // fill-opacity, so the grid lines underneath do not show through.
+  const EMPHASISED = 3;
+  const fade = c => {
+    const hsl = d3.hsl(c);
+    hsl.s *= 0.5;
+    return d3.interpolateRgb(hsl, '#fff')(0.5);
+  };
+
   const keysOf   = m => Object.values(m).map(v => v[0]).concat(OSTATNI[0]);
   const labelsOf = m => Object.fromEntries(Object.values(m).concat([OSTATNI]).map(v => [v[0], v[1]]));
   const colorsOf = m => Object.fromEntries(Object.values(m).concat([OSTATNI]).map(v => [v[0], v[2]]));
@@ -201,13 +213,18 @@ document.addEventListener('DOMContentLoaded', () => {
       tooltipHtml: d => head(d.year) + plain(`${fokFormatNumber(d.mt, 2)} Mt`),
     });
 
-    const origin = (sel, fuel, codes, title) => w => fokAreaChartStacked(sel, shareRows(fuel), {
-      x: d => d.year, keys: fuel.keys,
-      colors: colorsOf(codes), labels: labelsOf(codes),
-      proportional: true, title, yLabel: '% objemu',
-      width: w, height: 380, theme, legend: true,
-      xTickValues: xTicks, xFormat: String,
-    });
+    const origin = (sel, fuel, codes, title) => w => {
+      const base = colorsOf(codes);
+      return fokAreaChartStacked(sel, shareRows(fuel), {
+        x: d => d.year, keys: fuel.keys,
+        colors: Object.fromEntries(fuel.keys.map((k, i) =>
+          [k, i < EMPHASISED ? base[k] : fade(base[k])])),
+        labels: labelsOf(codes),
+        proportional: true, title, yLabel: '% objemu',
+        width: w, height: 285, theme, legend: true,
+        xTickValues: xTicks, xFormat: String,
+      });
+    };
 
     // Each entry draws into its container at that container's own width.
     const CHARTS = [
@@ -217,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
           keys: ['ropa', 'plyn'],
           colors: { ropa: COLOR_ROPA, plyn: COLOR_PLYN },
           labels: { ropa: 'Ropa', plyn: 'Zemní plyn' },
-          title: 'Výdaje za ropu a plyn', yLabel: 'mld. Kč',
+          yLabel: 'mld. Kč',
           width: w, height: 260, theme,
           xTickValues: xTicks.map(String),
           yFormat: v => fokFormatNumber(v, 0),
@@ -228,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       ['#chart-celkem-hdp', w => fokLineChart('#chart-celkem-hdp', payments, {
         x: d => d.year, y: d => d.gdp_share_pct,
-        title: 'Podíl na HDP Česka', yLabel: '% HDP',
+        yLabel: '% HDP',
         width: w, height: 260, theme: lineTheme(COLOR_ROPA),
         xTickValues: xTicks, xFormat: String,
         yFormat: v => fokFormatNumber(v, 1),
@@ -239,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
         x: d => d.year, keys: ENERGIE_KEYS,
         colors: Object.fromEntries(Object.entries(ENERGIE).map(([k, v]) => [k, v[1]])),
         labels: Object.fromEntries(Object.entries(ENERGIE).map(([k, v]) => [k, v[0]])),
-        proportional: true, title: 'Podíl na primární energii', yLabel: '%',
+        proportional: true, yLabel: '%',
         width: w, height: 260, theme, legend: true,
         xTickValues: xTicks, xFormat: String,
       })],

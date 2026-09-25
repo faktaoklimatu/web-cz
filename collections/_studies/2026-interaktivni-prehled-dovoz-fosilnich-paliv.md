@@ -38,42 +38,64 @@ extra-scripts:
 
     <div class="data-year"><i class="fa-regular fa-calendar"></i> <span id="data-year"></span></div>
 
-    <div id="kpi-row">
-      <div class="kpi-card">
-        <div class="kpi-label">Celkové výdaje</div>
-        <div class="kpi-value" id="kpi-total"></div>
+    <div class="chart-row" id="main-charts">
+      <div class="chart-panel">
+        <div class="kpi">
+          <div class="kpi-label">Výdaje za ropu a plyn</div>
+          <div class="kpi-value" id="kpi-total"></div>
+        </div>
+        <div id="chart-celkem-czk"></div>
       </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Podíl HDP</div>
-        <div class="kpi-value" id="kpi-gdp"></div>
+      <div class="chart-panel">
+        <div class="kpi">
+          <div class="kpi-label">Podíl na HDP Česka</div>
+          <div class="kpi-value" id="kpi-gdp"></div>
+        </div>
+        <div id="chart-celkem-hdp"></div>
       </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Podíl prim. energie</div>
-        <div class="kpi-value" id="kpi-energy"></div>
+      <div class="chart-panel">
+        <div class="kpi">
+          <div class="kpi-label">Podíl na primární energii</div>
+          <div class="kpi-value" id="kpi-energy"></div>
+        </div>
+        <div id="chart-celkem-energie"></div>
+        <p class="chart-note">Placeholder — čísla zatím nejsou z ověřeného zdroje.</p>
       </div>
     </div>
 
-    <div class="chart-row">
-      <div class="chart-panel"><div id="chart-celkem-czk"></div></div>
-      <div class="chart-panel"><div id="chart-celkem-hdp"></div></div>
-      <div class="chart-panel"><div id="chart-celkem-energie"></div></div>
-    </div>
+{% comment %}
+  Od tabletu je rámeček jeden na palivo: .fuel-box ho kreslí a grafy uvnitř
+  svůj vlastní nemají. Na mobilu .fuel-box nic nekreslí a panely si rámeček
+  berou zpátky, protože poskládané pod sebou se bez něj špatně oddělují.
+  Od velkého breakpointu stojí obě paliva vedle sebe, aby šla porovnat.
+{% endcomment %}
+    <div class="fuel-row">
 
-    <h2 class="fuel-heading">Ropa</h2>
-    <div class="chart-row">
-      <div class="chart-panel"><div id="chart-ropa-czk"></div></div>
-      <div class="chart-panel"><div id="chart-ropa-kg"></div></div>
-    </div>
-    <div class="chart-panel"><div id="chart-ropa-zeme"></div></div>
+      <div class="fuel">
+        <h2 class="fuel-heading">Ropa</h2>
+        <div class="fuel-box">
+          <div class="chart-row">
+            <div class="chart-panel"><div id="chart-ropa-czk"></div></div>
+            <div class="chart-panel"><div id="chart-ropa-kg"></div></div>
+          </div>
+          <div class="chart-panel"><div id="chart-ropa-zeme"></div></div>
+        </div>
+      </div>
 
-    <h2 class="fuel-heading">Zemní plyn</h2>
-    <div class="chart-row">
-      <div class="chart-panel"><div id="chart-plyn-czk"></div></div>
-      <div class="chart-panel"><div id="chart-plyn-kg"></div></div>
-    </div>
-    <div class="chart-panel">
-      <div id="chart-plyn-zeme"></div>
-      <p class="chart-note">Jako „neurčená země“ vykazuje statistika dovoz, u něhož není země původu uvedena — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
+      <div class="fuel">
+        <h2 class="fuel-heading">Zemní plyn</h2>
+        <div class="fuel-box">
+          <div class="chart-row">
+            <div class="chart-panel"><div id="chart-plyn-czk"></div></div>
+            <div class="chart-panel"><div id="chart-plyn-kg"></div></div>
+          </div>
+          <div class="chart-panel">
+            <div id="chart-plyn-zeme"></div>
+            <p class="chart-note">Jako „neurčená země“ vykazuje statistika dovoz, u něhož není země původu uvedena — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
