@@ -233,7 +233,7 @@ body.ets-dashboard {
      half its width to straddle it rather than start there. */
   .range-tick {
     position: absolute; top: 50%; transform: translate(-50%, -50%);
-    width: 6px; height: 3px; background: #fff;
+    width: 6px; height: 4px; background: #fff;
   }
   .phase-annotations { position: relative; height: 14px; margin-top: -2px; }
   .phase-annotation {
