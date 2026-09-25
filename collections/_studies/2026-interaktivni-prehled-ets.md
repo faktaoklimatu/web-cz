@@ -15,6 +15,7 @@ extra-scripts:
 - /assets-local/js/ets-dashboard.js
 - /assets-local/js/chart-download.js
 preview_type: "Interaktivní přehled"
+preview_image: "/assets/studies/2026-interaktivni-prehled-ets.svg"
 include_in_search: true
 ---
 
