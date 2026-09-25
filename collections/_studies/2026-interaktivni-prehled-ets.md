@@ -1,7 +1,7 @@
 ---
 layout:        empty
 type:          "Interaktivní přehled"
-title:         "Emise a povolenky zdarma v EU ETS"
+title:         "EU ETS: Emise a povolenky zdarma v Česku"
 slug:          2026-interaktivni-prehled-ets
 body-class:    ets-dashboard
 redirect_from:
