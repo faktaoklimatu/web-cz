@@ -1,6 +1,6 @@
 /* Shared download buttons for the site's d3 charts — SVG or PNG.
  *
- * Drop the script on a page and give any button the class and the target:
+ * Drop the script on a page and give any button the class and the target (data-svg):
  *
  *   <button type="button" class="chart-download"
  *           data-svg="ets-svg-timeline"
