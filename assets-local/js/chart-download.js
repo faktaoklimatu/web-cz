@@ -1,13 +1,16 @@
-/* Shared "Stáhnout SVG" button for the site's d3 charts.
+/* Shared download buttons for the site's d3 charts — SVG or PNG.
  *
  * Drop the script on a page and give any button the class and the target:
  *
- *   <button type="button" class="svg-download"
+ *   <button type="button" class="chart-download"
  *           data-svg="ets-svg-timeline"
  *           data-filename="ets-vyvoj-v-case.svg"
  *           data-title="#ets-timeline-title"
  *           data-subtitle="#ets-filter-summary"
  *           data-source="#ets-source-timeline">
+ *
+ * data-format="png" rasterises instead, at PNG_SCALE times the chart's size on
+ * screen; the filename's extension follows the format either way.
  *
  * data-title / data-subtitle / data-source are optional selectors. The first
  * two are drawn into a band above the chart and the third below it, under the
@@ -383,14 +386,11 @@
     });
   }
 
-  function serialize(out, filename) {
-    const url = URL.createObjectURL(new Blob(
-      ['<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(out)],
-      { type: "image/svg+xml;charset=utf-8" }
-    ));
+  function saveBlob(blob, filename) {
+    const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = filename || "graf.svg";
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -398,18 +398,76 @@
     setTimeout(() => URL.revokeObjectURL(url), 0);
   }
 
+  function svgBlob(out) {
+    return new Blob(
+      ['<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(out)],
+      { type: "image/svg+xml;charset=utf-8" }
+    );
+  }
+
+  // A raster has one fixed resolution, so it is drawn larger than the chart is
+  // on screen — otherwise it is unusable in anything but a web page.
+  const PNG_SCALE = 2;
+
+  // Rasterised by handing the SVG to an <img> and drawing that onto a canvas.
+  // An <img> may not load anything external, which is exactly why the outline
+  // conversion matters here: with live <text> the webfont would not load and
+  // the PNG would come out in whatever generic face the renderer falls back to.
+  // The blob is same-origin, so it does not taint the canvas and toBlob works.
+  function pngBlob(out) {
+    const w = +out.getAttribute("width"), h = +out.getAttribute("height");
+
+    // The enlarging happens in the SVG, not in drawImage. An <img> renders an
+    // SVG at the image's own intrinsic size, so drawing it into a larger
+    // destination rectangle blows up that finished bitmap instead of
+    // re-rendering the vector — which is what makes the edges ragged. Raising
+    // width/height while the viewBox stays as it is makes the intrinsic size
+    // the output size, so the shapes are rasterised at full resolution and the
+    // draw below is 1:1.
+    const scaled = out.cloneNode(true);
+    scaled.setAttribute("width", w * PNG_SCALE);
+    scaled.setAttribute("height", h * PNG_SCALE);
+
+    const url = URL.createObjectURL(svgBlob(scaled));
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        URL.revokeObjectURL(url);
+        const canvas = document.createElement("canvas");
+        canvas.width = w * PNG_SCALE;
+        canvas.height = h * PNG_SCALE;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        canvas.toBlob(blob => (blob ? resolve(blob) : reject(new Error("toBlob selhalo"))), "image/png");
+      };
+      img.onerror = () => {
+        URL.revokeObjectURL(url);
+        reject(new Error("SVG se nepodařilo vykreslit do PNG"));
+      };
+      img.src = url;
+    });
+  }
+
+  // The button says which format it wants; the filename follows it, so the two
+  // buttons under a chart can be copies of each other bar the one attribute.
+  function emit(out, btn) {
+    const png = btn.dataset.format === "png";
+    const name = (btn.dataset.filename || "graf.svg").replace(/\.(svg|png)$/i, "") + (png ? ".png" : ".svg");
+    if (!png) { saveBlob(svgBlob(out), name); return Promise.resolve(); }
+    return pngBlob(out).then(blob => saveBlob(blob, name));
+  }
+
   function download(btn) {
     const { out, inner, src, family, lines } = buildSvg(btn);
     return loadFamily(primaryFamily(family)).then(fonts => {
       const outlined = !!fonts && outlineInto(inner, src, fonts);
       appendLines(out, lines, outlined ? fonts : null);
-      serialize(out, btn.dataset.filename);
-      return outlined;
+      return emit(out, btn);
     });
   }
 
   function bind() {
-    document.querySelectorAll("button.svg-download").forEach(btn => {
+    document.querySelectorAll("button.chart-download").forEach(btn => {
       btn.addEventListener("click", () => {
         btn.disabled = true;
         download(btn)
@@ -421,7 +479,7 @@
             try {
               const fallback = buildSvg(btn);
               appendLines(fallback.out, fallback.lines, null);
-              serialize(fallback.out, btn.dataset.filename);
+              emit(fallback.out, btn);
             } catch (e) { console.error(e); }
           })
           .finally(() => { btn.disabled = false; });
