@@ -219,7 +219,7 @@ Pro účely přehledu pracujeme pouze s daty pro Česko, přičemž jsme pro lep
 
 * **Současný vlastník** – k názvu zařízení (podniku) jsme na základě rešerše přidali současného vlastníka zařízení (historii vlastnictví pro zjednodušení nezahrnujeme). Ve většině případů jde o mateřskou společnost, u které se potkávají všechny její česká zařízení zahrnutá v ETS1. V rozbalovacím seznamu jsme je následně seřadili podle množství emisí, které jejich zařízení vyprodukují.
 
-Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na <info@faktaoklimatu.cz>.
+Tabulka se skutečnými odvětvími a současnými vlastníky je k dispozici k nahlédnutí [zde](https://docs.google.com/spreadsheets/d/1DX6MGLeiKXbGsPxHH9HwjuK7qOFl27XdsFu5CzDWH1Y/edit?usp=sharing), v případě nalezených nesrovnalostí nás prosím kontaktuje na [info@faktaoklimatu.cz](mailto:info@faktaoklimatu.cz).
 
 Tabulka s emisemi skleníkových plynů a povolenek zdarma v letech 2008–2025 pro všechna zařízení v Česku, doplněná o současné vlastníky a skutečná odvětví, je pro případné další analýzy k dispozici [zde](https://github.com/faktaoklimatu/data-analysis/blob/data-dashboard-ets1/outputs/ets-dashboard/ETS-data.csv).
 
