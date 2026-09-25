@@ -325,6 +325,19 @@
     // A nested <svg> keeps whatever coordinate system each chart already has.
     const inner = src.cloneNode(true);
     inner.removeAttribute("id");   // the id belongs to the element on the page
+
+    // Elements painted `transparent` exist only to catch pointer events —
+    // chart 1 lays one over each year for its tooltip. They are invisible in a
+    // browser, but `transparent` is a CSS3 colour keyword that SVG 1.1 does not
+    // accept as a paint value: a renderer that follows the older spec, which
+    // includes the ones a designer opens the file in, discards it and falls
+    // back to fill's initial value — black. The file then opens with solid
+    // bars across the chart. Dropping them cannot change how it looks: with no
+    // fill and no stroke they draw nothing either way.
+    inner.querySelectorAll('[fill="transparent"]').forEach(el => {
+      const stroke = el.getAttribute("stroke");
+      if (!stroke || stroke === "none") el.remove();
+    });
     inner.setAttribute("x", 0);
     inner.setAttribute("y", headerH);
     inner.setAttribute("width", w);
