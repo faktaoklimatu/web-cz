@@ -1,0 +1,115 @@
+/* Dovoz fosilních paliv do ČR — collections/_studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.md
+ *
+ * Only the page's own furniture lives here: the KPI row, the panels the charts
+ * sit in and the headings between them. Everything inside a panel is drawn by
+ * the shared chart library (assets-local/charts/), which styles itself from
+ * fok-theme.js and charts/_charts.scss — so there are no colours, fonts or
+ * sizes for the chart contents in this file.
+ *
+ * Scoped to the page's body class: the names are ordinary (.kpi-card,
+ * .chart-panel) and main.scss pulls this file in BEFORE the universal rules,
+ * so an unscoped copy would also lose to web-core at equal specificity.
+ *
+ * Set by `body-class: dovoz-fosilnich-paliv` in the page's front matter.
+ */
+body.dovoz-fosilnich-paliv {
+    --dovoz-border: 1px solid #e2e8f0;
+    --dovoz-gap: 16px;
+
+    /* web-core paints only every other .section white and lets the rest show
+       body's #f7f7f7 — which left the charts on grey. The panels are white, so
+       the whole page is set white and their borders do the separating.
+       Outranks .section:nth-of-type(odd) (0,2,0) at (0,2,1), so load order
+       relative to the universal rules does not matter. */
+    .section {
+        background-color: #fff;
+    }
+
+    /* Which year the KPI figures speak for, set above them like a caption. */
+    .data-year {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #a0aec0;
+        margin-bottom: 10px;
+    }
+
+    /* Panels share a row while there is room and stack on a phone. The row owns
+       the spacing, so the panels' own bottom margin is dropped inside it. */
+    .chart-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--dovoz-gap);
+    }
+
+    .chart-row > .chart-panel {
+        flex: 1;
+        min-width: 280px;
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* Names the fuel the panels beneath it describe, so it has to outrank the
+       titles the charts draw for themselves rather than read as one of them. */
+    .fuel-heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: #2d3748;
+        margin: 28px 0 12px;
+    }
+
+    /* ── KPI cards ─────────────────────────────────────────────────────────── */
+    #kpi-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0 0 var(--dovoz-gap);
+    }
+
+    .kpi-card {
+        flex: 1;
+        min-width: 180px;
+        color: #515b66;
+        padding: 18px;
+        border: var(--dovoz-border);
+        border-radius: 8px;
+    }
+
+    .kpi-label {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        margin-bottom: 0;
+    }
+
+    .kpi-value {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /* ── Chart panels ──────────────────────────────────────────────────────── */
+    .chart-panel {
+        background: #fff;
+        border-radius: 8px;
+        border: var(--dovoz-border);
+        padding: 16px 18px;
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* The charts set a font-family inline on everything they draw; this only
+       catches the KPI row and anything a chart leaves unstyled. */
+    .chart-panel,
+    #kpi-row {
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+
+    /* Explains a band whose label alone would mislead; sits under the chart it
+       belongs to, inside the same panel. */
+    .chart-note {
+        margin: 8px 0 0;
+        font-size: 13px;
+        line-height: 1.45;
+        color: #a0aec0;
+    }
+}
