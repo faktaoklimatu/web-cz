@@ -326,9 +326,13 @@
     return getIndustrialRealActivities().filter(ra => available.has(ra) || state.realActivities.has(ra));
   }
 
+  // "Whole industry" is judged against the industrial sectors still reachable
+  // given the other facets. Once those narrow it to a single sector (e.g. one
+  // installation is picked), that sector's own name is the better label, so
+  // "Průmysl" needs at least two.
   function isWholeIndustrySelected() {
     const industrial = getSelectableIndustrialRealActivities();
-    return industrial.length > 0 &&
+    return industrial.length > 1 &&
       state.realActivities.size === industrial.length &&
       industrial.every(ra => state.realActivities.has(ra));
   }
