@@ -23,8 +23,6 @@ include_in_search: true
   window.ETS_DASHBOARD = {{ site.data["ets-dashboard"] | jsonify }};
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
-
 <div class="section pb-3">
   <div class="container between-navbars">
     <h1>{{ page.title }}</h1>
