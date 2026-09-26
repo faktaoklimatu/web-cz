@@ -1330,32 +1330,24 @@
         extra;
     }
 
-    // Every part of a row shows the same card.
-    const withTip = sel => sel
-      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
-      .on("mousemove", moveTip).on("mouseout", hideTip);
-
     svg.selectAll(".a-bar-emissions")
       .data(data).join("rect").attr("class", "a-bar-emissions")
       .attr("y", d => y(d.key)).attr("x", 0)
       .attr("height", y.bandwidth()).attr("width", d => x(d.e))
-      .attr("fill", CFG.colorEmissions)
-      .call(withTip);
+      .attr("fill", CFG.colorEmissions);
 
     svg.selectAll(".a-bar-uncovered")
       .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-uncovered")
       .attr("y", d => y(d.key)).attr("x", d => x(d.a))
       .attr("height", y.bandwidth()).attr("width", d => x(d.e) - x(d.a))
-      .attr("fill", CFG.colorUncovered)
-      .call(withTip);
+      .attr("fill", CFG.colorUncovered);
 
     if (CFG.showSurplus) {
       svg.selectAll(".a-bar-surplus")
         .data(data.filter(d => d.surplus > 0)).join("rect").attr("class", "a-bar-surplus")
         .attr("y", d => y(d.key)).attr("x", d => x(d.e))
         .attr("height", y.bandwidth()).attr("width", d => x(d.a) - x(d.e))
-        .attr("fill", "url(#ets-hatch-surplus-activity)")
-        .call(withTip);
+        .attr("fill", "url(#ets-hatch-surplus-activity)");
     }
 
     markerPasses(CFG.lineWidthActivity).forEach(([stroke, width], i) => {
@@ -1366,6 +1358,18 @@
         .attr("x1", d => x(d.a)).attr("x2", d => x(d.a))
         .attr("stroke", stroke).attr("stroke-width", width);
     });
+
+    // One invisible hover zone per row, spanning the whole plot width and
+    // drawn over the bars, so a row with a short bar is as easy to point at
+    // (or tap) as a long one — same approach as chart 1's year columns.
+    svg.selectAll(".a-hover-zone")
+      .data(data)
+      .join("rect").attr("class", "a-hover-zone")
+      .attr("x", 0).attr("y", d => y(d.key))
+      .attr("width", x.range()[1]).attr("height", y.bandwidth())
+      .attr("fill", "transparent")
+      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
+      .on("mousemove", moveTip).on("mouseout", hideTip);
 
     // Separate fixed-position right-hand column (independent of bar length)
     // showing the share of that row's emissions actually matched by free
@@ -1572,8 +1576,14 @@
     // edge, with both Bezier control points at the midpoint.
     const x0 = ACT_X + BAR_W, x1 = RA_X, mid = (x0 + x1) / 2;
     const LINK_BASE = 0.28, LINK_ON = 0.6, LINK_OFF = 0.06;
+    // Thin ribbons are hard to point at, so each carries an invisible stroke
+    // of HIT_PAD px that widens its hover area (SVG hit-tests a transparent
+    // stroke, not a "none" one). Drawn widest first, so where padding overlaps
+    // a neighbour the thinner ribbon sits on top and wins. The order does not
+    // change the look: every ribbon has the same fill and opacity.
+    const HIT_PAD = 6;
     svg.selectAll(".sankey-link")
-      .data(ribbons)
+      .data([...ribbons].sort((a, b) => b.h - a.h))
       .join("path").attr("class", "sankey-link")
       .attr("d", l => {
         const actTop = l.yAct, actBottom = l.yAct + l.h;
@@ -1581,7 +1591,8 @@
         return `M${x0},${actTop} C${mid},${actTop} ${mid},${raTop} ${x1},${raTop} ` +
           `L${x1},${raBottom} C${mid},${raBottom} ${mid},${actBottom} ${x0},${actBottom} Z`;
       })
-      .attr("fill", CFG.colorUncovered).attr("fill-opacity", LINK_BASE).attr("stroke", "none")
+      .attr("fill", CFG.colorUncovered).attr("fill-opacity", LINK_BASE)
+      .attr("stroke", "transparent").attr("stroke-width", HIT_PAD)
       .on("mouseover", (ev, l) => showTip(ev,
         `<strong>${l.act}</strong> → <strong>${l.ra}</strong><br>${fmt(l.value * 1e6)}`))
       .on("mousemove", moveTip).on("mouseout", hideTip);
@@ -1633,6 +1644,7 @@
         .attr("x", barX).attr("y", n => pos.get(n).barY)
         .attr("width", BAR_W).attr("height", n => pos.get(n).barH)
         .attr("fill", CFG.colorEmissions)
+        .attr("stroke", "transparent").attr("stroke-width", HIT_PAD) // see ribbons
         .call(hover);
 
       const labelX = labelLeft ? barX - 10 : barX + BAR_W + 10;
