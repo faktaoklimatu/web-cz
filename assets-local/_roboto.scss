@@ -1,0 +1,18 @@
+/* Roboto, self-hosted — the typeface of the d3 charts (ETS dashboard, CBAM).
+ *
+ * The same files are what chart-download.js reads to outline text in exported
+ * SVG/PNG, so the page and its downloads use identical glyphs. They are
+ * static instances of Roboto v3 (SIL OFL 1.1, see Roboto-OFL.txt) cut to
+ * latin + Czech. @font-face is lazy: a page downloads a weight only if it
+ * actually sets text in it, so declaring these site-wide costs nothing.
+ */
+
+@each $weight in 400, 500, 600, 700 {
+    @font-face {
+        font-family: "Roboto";
+        src: url("/assets-local/fonts/Roboto-#{$weight}.ttf") format("truetype");
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
