@@ -1,7 +1,2 @@
 version: ~> 1.0
-# DOČASNÉ: konfigurace se bere z větve web-core, která má připnutou funkční
-# verzi Firebase CLI (15.30.2) — na masteru je zatím "latest", tedy rozbité
-# 15.31.0, a deploy preview kvůli tomu padá. Vrátit na @master hned po tom,
-# co se web-core PR smerguje, a rozhodně před mergem této větve.
-# import: faktaoklimatu/web-core:.travis.global.yml@temp-fix-makefile
 import: faktaoklimatu/web-core:.travis.global.yml@master
