@@ -1447,7 +1447,7 @@
     });
   }
 
-  // ── Sankey: skutečné odvětví (vlevo) ↔ hlavní ETS aktivita (vpravo) ─────────
+  // ── Sankey: hlavní ETS aktivita (left) → skutečné odvětví (right) ─────────
   // Explains, in the methodology expander, why "Hlavní odvětví (dle ETS)" and
   // "Skutečné odvětví" sometimes diverge (e.g. a steelworks' own boiler is
   // formally classified under "Výroba elektřiny a tepla"). Deliberately static
@@ -1457,9 +1457,9 @@
   // measured clientWidth/clientHeight like the other two charts) because it
   // lives inside a collapsed dropdown at page load, where clientWidth/Height
   // would read 0.
-  // Two columns: real sectors (`ra`) on the left, ETS activities (`act`) on
-  // the right, with ribbons running between them. Everything below is named
-  // after the column it belongs to.
+  // Two columns: ETS activities (`act`) on the left, real sectors (`ra`) on
+  // the right, with ribbons flowing from one to the other. Everything below is
+  // named after the column it belongs to.
   function renderSankeyChart() {
     const svgEl = document.getElementById("ets-svg-sankey");
     if (!svgEl) return;
@@ -1493,11 +1493,11 @@
 
     // Both columns are labelled outside their bars, and the ribbons get what is
     // left between them. Trimming LABEL_RIGHT is what pushes the whole diagram
-    // further right; the left gutter is the wider of the two because that
-    // column carries the real-sector names, which are the longer set.
+    // further right; the left gutter is the wider of the two because its
+    // labels are right-aligned against the bars and need room to run leftwards.
     const LABEL_LEFT = 300, LABEL_RIGHT = 210, FLOW_SPAN = 590;
-    const RA_X = LABEL_LEFT;                   // left column's bars
-    const ACT_X = RA_X + BAR_W + FLOW_SPAN;    // right column's bars
+    const ACT_X = LABEL_LEFT;                  // left column's bars
+    const RA_X = ACT_X + BAR_W + FLOW_SPAN;    // right column's bars
 
     // px per Mt, solved so the taller column fills SANKEY_H instead of being a
     // fixed scale that has to be retuned whenever the data grows. A node too
@@ -1556,7 +1556,7 @@
         raCursor.set(l.ra, l.yRa + l.h);
       });
 
-    const vbW = ACT_X + BAR_W + LABEL_RIGHT;
+    const vbW = RA_X + BAR_W + LABEL_RIGHT;
     const vbH = Math.max(raLayout.bottom, actLayout.bottom) + PAD_END;
     svgEl.setAttribute("viewBox", `0 0 ${vbW} ${vbH}`);
     // Sized by ratio, not by a pixel height: the SVG is width:100% of its
@@ -1570,20 +1570,20 @@
 
     // Ribbons run from the left bars' right edge to the right bars' left
     // edge, with both Bezier control points at the midpoint.
-    const x0 = RA_X + BAR_W, x1 = ACT_X, mid = (x0 + x1) / 2;
+    const x0 = ACT_X + BAR_W, x1 = RA_X, mid = (x0 + x1) / 2;
     const LINK_BASE = 0.28, LINK_ON = 0.6, LINK_OFF = 0.06;
     svg.selectAll(".sankey-link")
       .data(ribbons)
       .join("path").attr("class", "sankey-link")
       .attr("d", l => {
-        const raTop = l.yRa, raBottom = l.yRa + l.h;
         const actTop = l.yAct, actBottom = l.yAct + l.h;
-        return `M${x0},${raTop} C${mid},${raTop} ${mid},${actTop} ${x1},${actTop} ` +
-          `L${x1},${actBottom} C${mid},${actBottom} ${mid},${raBottom} ${x0},${raBottom} Z`;
+        const raTop = l.yRa, raBottom = l.yRa + l.h;
+        return `M${x0},${actTop} C${mid},${actTop} ${mid},${raTop} ${x1},${raTop} ` +
+          `L${x1},${raBottom} C${mid},${raBottom} ${mid},${actBottom} ${x0},${actBottom} Z`;
       })
       .attr("fill", CFG.colorUncovered).attr("fill-opacity", LINK_BASE).attr("stroke", "none")
       .on("mouseover", (ev, l) => showTip(ev,
-        `<strong>${l.ra}</strong> → <strong>${l.act}</strong><br>${fmt(l.value * 1e6)}`))
+        `<strong>${l.act}</strong> → <strong>${l.ra}</strong><br>${fmt(l.value * 1e6)}`))
       .on("mousemove", moveTip).on("mouseout", hideTip);
 
     // Pointing at a node lifts the ribbons touching it and fades the rest, so a
@@ -1655,15 +1655,15 @@
         })
         .call(hover);
     }
-    drawNodes(raNodes, raLayout.pos, RA_X, true, "ra");
-    drawNodes(actNodes, actLayout.pos, ACT_X, false, "act");
+    drawNodes(actNodes, actLayout.pos, ACT_X, true, "act");
+    drawNodes(raNodes, raLayout.pos, RA_X, false, "ra");
 
     const heading = (text, x, anchor) => svg.append("text")
       .attr("x", x).attr("y", 14).attr("text-anchor", anchor)
       .attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
       .text(text);
-    heading("Skutečné odvětví", RA_X - 10, "end");
-    heading("Hlavní odvětví (dle ETS)", ACT_X + BAR_W + 10, "start");
+    heading("Hlavní odvětví (dle ETS)", ACT_X - 10, "end");
+    heading("Skutečné odvětví", RA_X + BAR_W + 10, "start");
   }
 
   // ── Update ────────────────────────────────────────────────────────────────
