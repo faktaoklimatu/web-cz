@@ -82,6 +82,8 @@
   // width before renderTimeline runs.
   const TL_MARGIN = { top: 26, right: 16, bottom: 28, left: 64 };
   const FULL_YEARS = YEAR_MAX - YEAR_MIN + 1;
+  // Denominator for placing a year along the slider track (0-100 %).
+  const YEAR_SPAN = YEAR_MAX - YEAR_MIN || 1;
 
   // The bar width chart 1 has when the whole year span is shown. Both charts
   // key off it: chart 1 keeps this width whatever the year selection, and
@@ -184,16 +186,27 @@
   // match the real-activity selection (if any) AND the company selection (if
   // any) AND be in the installation selection (if any). An empty Set means
   // "no restriction on this facet".
+  // `skip` leaves one facet ("ra" | "own" | "inst") out of the check — see
+  // cross-filtering below.
+  const INSTALL_IDXS = d3.range(INSTALLS.length);
+  function matchesFilters(i, skip) {
+    const inst = INSTALLS[i];
+    if (skip !== "ra" && state.realActivities.size && !state.realActivities.has(raName(inst))) return false;
+    if (skip !== "own" && state.companies.size && !state.companies.has(inst.own)) return false;
+    if (skip !== "inst" && state.installs.size && !state.installs.has(i)) return false;
+    return true;
+  }
   function getFilteredInstallIndices() {
-    const out = [];
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
-      if (state.companies.size && !state.companies.has(inst.own)) continue;
-      if (state.installs.size && !state.installs.has(i)) continue;
-      out.push(i);
-    }
-    return out;
+    return INSTALL_IDXS.filter(i => matchesFilters(i));
+  }
+
+  // Verified emissions of one installation within the selected years.
+  function emissionsInRange(i) {
+    let e = 0;
+    (recordsByInstall.get(i) || []).forEach(([, y, em]) => {
+      if (y >= state.yearFrom && y <= state.yearTo) e += em || 0;
+    });
+    return e;
   }
 
   // ── Cross-filtering ──────────────────────────────────────────────────────────
@@ -201,34 +214,13 @@
   // given the OTHER facets' current selections (its own facet is excluded
   // from the check, since that's the thing being chosen).
   function getAvailableRealActivities() {
-    const out = new Set();
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (state.companies.size && !state.companies.has(inst.own)) continue;
-      if (state.installs.size && !state.installs.has(i)) continue;
-      out.add(raName(inst));
-    }
-    return out;
+    return new Set(INSTALL_IDXS.filter(i => matchesFilters(i, "ra")).map(i => raName(INSTALLS[i])));
   }
   function getAvailableCompanies() {
-    const out = new Set();
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
-      if (state.installs.size && !state.installs.has(i)) continue;
-      out.add(inst.own);
-    }
-    return out;
+    return new Set(INSTALL_IDXS.filter(i => matchesFilters(i, "own")).map(i => INSTALLS[i].own));
   }
   function getAvailableInstalls() {
-    const out = new Set();
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
-      if (state.companies.size && !state.companies.has(inst.own)) continue;
-      out.add(i);
-    }
-    return out;
+    return new Set(INSTALL_IDXS.filter(i => matchesFilters(i, "inst")));
   }
 
   // ── Controls: activity / owner / installation multi-select dropdowns ────────
@@ -290,13 +282,41 @@
   // reads the same rather than showing the full count ("180 vlastníků").
   const isEverySelected = (sel, total) => total > 0 && sel.size === total;
 
+  // Adds or removes every value in `values` from a facet's selection, then
+  // lets the rest of the page catch up.
+  function setSelected(sel, values, on) {
+    values.forEach(v => { if (on) sel.add(v); else sel.delete(v); });
+    onFilterChange();
+  }
+
+  // One row of a dropdown panel: checkbox + name. `data` is copied onto the
+  // checkbox's dataset, which the "Zrušit výběr" buttons use to find the rows
+  // they clear; group headers pass none, so those buttons skip them. The name
+  // doubles as its own hover tip (rows ellipsise), unless `tip` is false.
+  function buildCheckboxRow({ text, checked, indeterminate, onChange, className, data, tip }) {
+    const label = document.createElement("label");
+    label.className = className ? "ms-option " + className : "ms-option";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    Object.assign(cb.dataset, data);
+    cb.checked = checked;
+    cb.indeterminate = !!indeterminate;
+    cb.addEventListener("change", function () { onChange(this.checked); });
+    const name = document.createElement("span");
+    name.className = "ms-option-name";
+    name.textContent = text;
+    if (tip !== false) name.dataset.tip = text;
+    label.appendChild(cb);
+    label.appendChild(name);
+    return label;
+  }
+
   // Czech plural agreement: 1 = singular (handled separately), 2–4 = "few", else "many".
   function pluralCz(n, few, many) { return (n >= 2 && n <= 4) ? few : many; }
 
-  // "Výroba elektřiny a tepla" is also the largest single value on the real-
-  // activity facet, so it gets the same pinned-primary + selectable
-  // "Průmysl" group hierarchy as "Hlavní odvětví" (ACTIVITY_PRIMARY_NAME is
-  // the first real activity, see its definition at the top).
+  // "Výroba elektřiny a tepla" (ACTIVITY_PRIMARY_NAME, the first real
+  // activity) is by far the largest value on the real-activity facet, so it
+  // is pinned standalone above a selectable "Průmysl" group holding the rest.
   function isRealActivityPrimary(ra) { return ra === ACTIVITY_PRIMARY_NAME; }
   function getIndustrialRealActivities() {
     return sortedRealActivities.filter(ra => !isRealActivityPrimary(ra));
@@ -345,6 +365,15 @@
     btn.dataset.tip = btn.textContent;
   }
 
+  // Emissions per installation over the selected years, with every other
+  // facet applied but not the installation facet itself — same rule as
+  // computeCompanyEmissions, so each option shows what picking it would bring.
+  function computeInstallEmissions() {
+    const sums = new Map();
+    INSTALL_IDXS.filter(i => matchesFilters(i, "inst")).forEach(i => sums.set(i, emissionsInRange(i)));
+    return sums;
+  }
+
   // Re-renders the (optionally search-filtered) checkbox list for installations,
   // grouped per installRows above. Re-used on init, on every keystroke in the
   // search box, and whenever another facet's selection changes the set of
@@ -353,26 +382,6 @@
   // user can still see and deselect it. A group's membership (its shared
   // name prefix) doesn't change with search/availability — only which of
   // its installations are currently shown does.
-  // Emissions per installation over the selected years, with every other
-  // facet applied but not the installation facet itself — same rule as
-  // computeCompanyEmissions, so each option shows what picking it would bring.
-  function computeInstallEmissions() {
-    const sums = new Map();
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
-      if (state.companies.size && !state.companies.has(inst.own)) continue;
-      let e = 0;
-      (recordsByInstall.get(i) || []).forEach(r => {
-        const [, y, em] = r;
-        if (y < state.yearFrom || y > state.yearTo) return;
-        e += em || 0;
-      });
-      sums.set(i, e);
-    }
-    return sums;
-  }
-
   function renderInstallOptions(filterText) {
     const wrap = document.getElementById("ets-installation-options");
     wrap.innerHTML = "";
@@ -402,24 +411,14 @@
       .map(({ row }) => row);
 
     function buildOption(i, n, nested) {
-      const label = document.createElement("label");
-      label.className = nested ? "ms-option ms-option--nested" : "ms-option";
-      const cb = document.createElement("input");
-      cb.type = "checkbox";
-      cb.dataset.idx = i;
-      cb.checked = state.installs.has(i);
-      cb.addEventListener("change", function () {
-        if (this.checked) state.installs.add(i); else state.installs.delete(i);
-        onFilterChange();
-      });
       const e = emOf(i);
-      const name = document.createElement("span");
-      name.className = "ms-option-name";
-      name.textContent = e > 0 ? `${n} (${fmt(e)})` : n;
-      name.dataset.tip = name.textContent;
-      label.appendChild(cb);
-      label.appendChild(name);
-      return label;
+      return buildCheckboxRow({
+        text: e > 0 ? `${n} (${fmt(e)})` : n,
+        checked: state.installs.has(i),
+        onChange: on => setSelected(state.installs, [i], on),
+        className: nested ? "ms-option--nested" : null,
+        data: { idx: i },
+      });
     }
 
     let rendered = 0;
@@ -443,24 +442,14 @@
       const idxs = visible.map(({ i }) => i);
       const selectedCount = idxs.filter(i => state.installs.has(i)).length;
 
-      const groupLabel = document.createElement("label");
-      groupLabel.className = "ms-option ms-group-label";
-      const groupCb = document.createElement("input");
-      groupCb.type = "checkbox";
-      groupCb.checked = selectedCount === idxs.length;
-      groupCb.indeterminate = selectedCount > 0 && selectedCount < idxs.length;
-      groupCb.addEventListener("change", function () {
-        idxs.forEach(i => { if (this.checked) state.installs.add(i); else state.installs.delete(i); });
-        onFilterChange();
-      });
       const groupE = rowEmissions(row);
-      const groupName = document.createElement("span");
-      groupName.className = "ms-option-name";
-      groupName.textContent = groupE > 0 ? `${row.operator} (${fmt(groupE)})` : row.operator;
-      groupName.dataset.tip = groupName.textContent;
-      groupLabel.appendChild(groupCb);
-      groupLabel.appendChild(groupName);
-      wrap.appendChild(groupLabel);
+      wrap.appendChild(buildCheckboxRow({
+        text: groupE > 0 ? `${row.operator} (${fmt(groupE)})` : row.operator,
+        checked: selectedCount === idxs.length,
+        indeterminate: selectedCount > 0 && selectedCount < idxs.length,
+        onChange: on => setSelected(state.installs, idxs, on),
+        className: "ms-group-label",
+      }));
 
       visible.forEach(({ i, n }) => wrap.appendChild(buildOption(i, n, true)));
       rendered++;
@@ -475,19 +464,11 @@
   // both order and annotate the owner dropdown.
   function computeCompanyEmissions() {
     const sums = new Map();
-    for (let i = 0; i < INSTALLS.length; i++) {
-      const inst = INSTALLS[i];
-      if (!inst.own) continue;
-      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
-      if (state.installs.size && !state.installs.has(i)) continue;
-      let e = 0;
-      (recordsByInstall.get(i) || []).forEach(r => {
-        const [, y, em] = r;
-        if (y < state.yearFrom || y > state.yearTo) return;
-        e += em || 0;
-      });
-      sums.set(inst.own, (sums.get(inst.own) || 0) + e);
-    }
+    INSTALL_IDXS.filter(i => matchesFilters(i, "own")).forEach(i => {
+      const own = INSTALLS[i].own;
+      if (!own) return;
+      sums.set(own, (sums.get(own) || 0) + emissionsInRange(i));
+    });
     return sums;
   }
 
@@ -510,24 +491,13 @@
       return;
     }
     filtered.forEach(own => {
-      const label = document.createElement("label");
-      label.className = "ms-option";
-      const cb = document.createElement("input");
-      cb.type = "checkbox";
-      cb.dataset.own = own;
-      cb.checked = state.companies.has(own);
-      cb.addEventListener("change", function () {
-        if (this.checked) state.companies.add(own); else state.companies.delete(own);
-        onFilterChange();
-      });
       const e = emissions.get(own) || 0;
-      const name = document.createElement("span");
-      name.className = "ms-option-name";
-      name.textContent = e > 0 ? `${own} (${fmt(e)})` : own;
-      name.dataset.tip = name.textContent;
-      label.appendChild(cb);
-      label.appendChild(name);
-      wrap.appendChild(label);
+      wrap.appendChild(buildCheckboxRow({
+        text: e > 0 ? `${own} (${fmt(e)})` : own,
+        checked: state.companies.has(own),
+        onChange: on => setSelected(state.companies, [own], on),
+        data: { own },
+      }));
     });
   }
 
@@ -542,54 +512,30 @@
     wrap.innerHTML = "";
     const available = getAvailableRealActivities();
 
-    function buildOption(ra, nested) {
-      const label = document.createElement("label");
-      label.className = nested ? "ms-option ms-option--nested" : "ms-option";
-      const cb = document.createElement("input");
-      cb.type = "checkbox";
-      cb.dataset.ra = ra;
-      cb.checked = state.realActivities.has(ra);
-      cb.addEventListener("change", function () {
-        if (this.checked) state.realActivities.add(ra); else state.realActivities.delete(ra);
-        onFilterChange();
-      });
-      const name = document.createElement("span");
-      name.className = "ms-option-name";
-      name.textContent = ra;
-      name.dataset.tip = ra;
-      label.appendChild(cb);
-      label.appendChild(name);
-      return label;
-    }
+    // The primary activity gets the same top-level styling as "Průmysl".
+    const buildOption = (ra, nested) => buildCheckboxRow({
+      text: ra,
+      checked: state.realActivities.has(ra),
+      onChange: on => setSelected(state.realActivities, [ra], on),
+      className: nested ? "ms-option--nested" : "ms-group-label",
+      data: { ra },
+    });
 
     const visible = sortedRealActivities.filter(ra => available.has(ra) || state.realActivities.has(ra));
     const primary = visible.filter(isRealActivityPrimary);
     const others = visible.filter(ra => !isRealActivityPrimary(ra));
 
-    primary.forEach(ra => {
-      const opt = buildOption(ra, false);
-      opt.classList.add("ms-group-label"); // same top-level styling as "Průmysl" below it
-      wrap.appendChild(opt);
-    });
+    primary.forEach(ra => wrap.appendChild(buildOption(ra, false)));
     if (others.length) {
       const selectedCount = others.filter(ra => state.realActivities.has(ra)).length;
-
-      const groupLabel = document.createElement("label");
-      groupLabel.className = "ms-option ms-group-label";
-      const groupCb = document.createElement("input");
-      groupCb.type = "checkbox";
-      groupCb.checked = selectedCount === others.length;
-      groupCb.indeterminate = selectedCount > 0 && selectedCount < others.length;
-      groupCb.addEventListener("change", function () {
-        others.forEach(ra => { if (this.checked) state.realActivities.add(ra); else state.realActivities.delete(ra); });
-        onFilterChange();
-      });
-      const groupName = document.createElement("span");
-      groupName.className = "ms-option-name";
-      groupName.textContent = "Průmysl";
-      groupLabel.appendChild(groupCb);
-      groupLabel.appendChild(groupName);
-      wrap.appendChild(groupLabel);
+      wrap.appendChild(buildCheckboxRow({
+        text: "Průmysl",
+        checked: selectedCount === others.length,
+        indeterminate: selectedCount > 0 && selectedCount < others.length,
+        onChange: on => setSelected(state.realActivities, others, on),
+        className: "ms-group-label",
+        tip: false,
+      }));
 
       others.forEach(ra => wrap.appendChild(buildOption(ra, true)));
     }
@@ -681,7 +627,7 @@
       renderInstallOptions(this.value);
     });
     document.querySelector('#ets-installation-panel [data-action="none"]').addEventListener("click", function () {
-      // [data-idx] excludes company group checkboxes, which have no
+      // [data-idx] excludes the operator group checkboxes, which have no
       // dataset.idx of their own.
       document.querySelectorAll("#ets-installation-options input[type=checkbox][data-idx]").forEach(cb => {
         cb.checked = false;
@@ -696,21 +642,23 @@
     yFrom.max = yTo.max = YEAR_MAX;
     yFrom.value = state.yearFrom;
     yTo.value = state.yearTo;
-    yFrom.addEventListener("input", function () {
-      state.yearFrom = Math.min(+this.value, state.yearTo);
-      this.value = state.yearFrom;
+    // The owner and installation lists show emissions over the selected
+    // years, so they are re-rendered along with the charts.
+    function onYearChange() {
       updateYearBar();
       renderCompanyOptions(document.getElementById("ets-company-search").value);
       renderInstallOptions(document.getElementById("ets-installation-search").value);
       update();
+    }
+    yFrom.addEventListener("input", function () {
+      state.yearFrom = Math.min(+this.value, state.yearTo);
+      this.value = state.yearFrom;
+      onYearChange();
     });
     yTo.addEventListener("input", function () {
       state.yearTo = Math.max(+this.value, state.yearFrom);
       this.value = state.yearTo;
-      updateYearBar();
-      renderCompanyOptions(document.getElementById("ets-company-search").value);
-      renderInstallOptions(document.getElementById("ets-installation-search").value);
-      update();
+      onYearChange();
     });
     // The two year captions are inputs: applied on change (blur or Enter)
     // rather than on every keystroke, so a half-typed "20" is not clamped to
@@ -727,10 +675,7 @@
       state.yearTo = b;
       yFrom.value = a;
       yTo.value = b;
-      updateYearBar();
-      renderCompanyOptions(document.getElementById("ets-company-search").value);
-      renderInstallOptions(document.getElementById("ets-installation-search").value);
-      update();
+      onYearChange();
     }
     yFromVal.addEventListener("change", applyTypedYears);
     yToVal.addEventListener("change", applyTypedYears);
@@ -742,9 +687,8 @@
   function updateYearBar() {
     document.getElementById("ets-year-from-val").value = state.yearFrom;
     document.getElementById("ets-year-to-val").value = state.yearTo;
-    const span = YEAR_MAX - YEAR_MIN || 1;
-    const fromPct = (state.yearFrom - YEAR_MIN) / span * 100;
-    const toPct = (state.yearTo - YEAR_MIN) / span * 100;
+    const fromPct = (state.yearFrom - YEAR_MIN) / YEAR_SPAN * 100;
+    const toPct = (state.yearTo - YEAR_MIN) / YEAR_SPAN * 100;
     const fill = document.getElementById("ets-year-fill");
     fill.style.left = fromPct + "%";
     fill.style.width = (toPct - fromPct) + "%";
@@ -778,8 +722,7 @@
   // min/max labels, since both run to the edge of the data range; the
   // fully-enclosed ones are centred on their own midpoint.
   function renderPhaseAnnotations() {
-    const span = YEAR_MAX - YEAR_MIN || 1;
-    const pct = y => (y - YEAR_MIN) / span * 100;
+    const pct = y => (y - YEAR_MIN) / YEAR_SPAN * 100;
     const phases = PHASE_STARTS.map((p, i) => ({
       label: p.label,
       from: Math.max(p.start, YEAR_MIN),
@@ -809,18 +752,34 @@
   }
 
   // ── Filter summary ───────────────────────────────────────────────────────
-  // One segment each for activity / owner / installation, derived from
-  // what's ACTUALLY in the filtered result set — not just what's explicitly
-  // checked in that facet's own dropdown. "Hlavní odvětví" in particular has
-  // no filter control of its own any more, so this is the only place its
-  // value (implied by the other facets) is surfaced at all. Few enough
-  // distinct values → name them; otherwise just a count. Sits below the
-  // filter controls, describing the whole page's current selection rather
-  // than any one chart.
+  // Two summary lines: chart 2's, which names every facet as read off the
+  // filtered result, and chart 1's, which names only the facets the reader
+  // restricted and its heading does not already speak for. Few enough
+  // distinct values → name them; otherwise just a count.
   // Past this many values a facet is counted rather than listed by name.
   // Shared by both summary lines so they do not disagree about when a list
   // becomes a count.
   const NAME_LIMIT = 3;
+
+  // One phrase per facet, shared by both summary lines. Owners and
+  // installations take nominative plural for 2-4 and genitive plural for 5+,
+  // which is what pluralCz buckets; "odvětví" and "zařízení" are identical in
+  // both.
+  function raPhrase(ras, wholeIndustry) {
+    return wholeIndustry ? "Průmysl"
+      : ras.length <= NAME_LIMIT ? "Odvětví: " + ras.join(", ")
+        : ras.length + " odvětví";
+  }
+  function ownPhrase(owners) {
+    return owners.length <= NAME_LIMIT
+      ? (owners.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + owners.join(", ")
+      : owners.length + " " + pluralCz(owners.length, "vlastníci", "vlastníků");
+  }
+  function instPhrase(idxs) {
+    return idxs.length <= NAME_LIMIT
+      ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
+      : idxs.length + " zařízení";
+  }
 
   function updateFilterSummary(idxs) {
     const full = document.getElementById("ets-filter-summary");
@@ -837,7 +796,6 @@
     // Each is read off the filtered result rather than off the checkboxes, so
     // it describes what is actually plotted above it.
 
-
     // "Průmysl" is every real activity except the primary one, and reads far
     // better than "9 odvětví". Recognised from the result rather than from the
     // dropdown's own state, so it cannot claim the whole of industry while
@@ -846,25 +804,12 @@
     const wholeIndustry = distinctRa.length === industrial.length &&
       industrial.every(ra => distinctRa.includes(ra));
 
-    const raText =
-      distinctRa.length === ALL_REAL_ACTIVITIES.size ? "Všechna odvětví"
-        : wholeIndustry ? "Průmysl"
-          : distinctRa.length <= NAME_LIMIT ? "Odvětví: " + distinctRa.join(", ")
-            : distinctRa.length + " odvětví";
-
-    // Nominative plural for 2-4 and genitive plural for 5+, which is what
-    // pluralCz buckets; "odvětví" and "zařízení" are identical in both.
-    const ownText =
-      distinctCos.length === ALL_OWNERS.size ? "Všichni vlastníci"
-        : distinctCos.length <= NAME_LIMIT
-          ? (distinctCos.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") +
-          distinctCos.join(", ")
-          : distinctCos.length + " " + pluralCz(distinctCos.length, "vlastníci", "vlastníků");
-
-    const instText =
-      idxs.length === INSTALLS.length ? "Všechna zařízení"
-        : idxs.length <= NAME_LIMIT ? "Zařízení: " + idxs.map(i => INSTALLS[i].n).join(", ")
-          : idxs.length + " zařízení";
+    const raText = distinctRa.length === sortedRealActivities.length ? "Všechna odvětví"
+      : raPhrase(distinctRa, wholeIndustry);
+    const ownText = distinctCos.length === ALL_OWNERS.size ? "Všichni vlastníci"
+      : ownPhrase(distinctCos);
+    const instText = idxs.length === INSTALLS.length ? "Všechna zařízení"
+      : instPhrase(idxs);
 
     // Owners are the one facet that can be dropped: naming the individual
     // installations already pins the selection down to its finest grain, and
@@ -884,14 +829,9 @@
     // never chose those.
     const spoken = titleNamesItsFacet() ? titleFacet() : null;
     const line = [];
-    const ra = [...state.realActivities];
-    const own = [...state.companies];
-    const inst = [...state.installs];
 
     if (spoken !== "ra" && facetNarrowed(state.realActivities, sortedRealActivities.length)) {
-      line.push(isWholeIndustrySelected() ? "Průmysl"
-        : ra.length <= NAME_LIMIT ? "Odvětví: " + ra.join(", ")
-          : ra.length + " odvětví");
+      line.push(raPhrase([...state.realActivities], isWholeIndustrySelected()));
     }
     // Owners are the one facet worth naming even when the reader never opened
     // its dropdown: choosing an installation chooses its owner implicitly, and
@@ -900,17 +840,11 @@
     // result instead — which also keeps the line honest when an owner was
     // ticked whose plants the installation filter then excluded.
     const ownNamed = facetNarrowed(state.installs, INSTALLS.length) ? distinctCos
-      : facetNarrowed(state.companies, ALL_OWNERS.size) ? own
+      : facetNarrowed(state.companies, ALL_OWNERS.size) ? [...state.companies]
         : null;
-    if (spoken !== "own" && ownNamed) {
-      line.push(ownNamed.length <= NAME_LIMIT
-        ? (ownNamed.length === 1 ? "Současný vlastník: " : "Současní vlastníci: ") + ownNamed.join(", ")
-        : ownNamed.length + " " + pluralCz(ownNamed.length, "vlastníci", "vlastníků"));
-    }
+    if (spoken !== "own" && ownNamed) line.push(ownPhrase(ownNamed));
     if (spoken !== "inst" && facetNarrowed(state.installs, INSTALLS.length)) {
-      line.push(inst.length <= NAME_LIMIT
-        ? "Zařízení: " + inst.map(i => INSTALLS[i].n).join(", ")
-        : inst.length + " zařízení");
+      line.push(instPhrase([...state.installs]));
     }
     full.textContent = line.join(" · ");
   }
@@ -1124,15 +1058,12 @@
       });
     });
 
-    const allYears = d3.range(YEAR_MIN, YEAR_MAX + 1);
-    const dataMap = byYear;
-    allYears.forEach(yr => {
-      const d = dataMap[yr];
-      if (!d) return;
+    Object.values(byYear).forEach(d => {
       d.deficit = Math.max(d.e - d.a, 0); // emissions above what allocation covers
       d.top = Math.max(d.e, d.a);
     });
-    const visibleYears = allYears.filter(yr => dataMap[yr] && state.yearFrom <= yr && yr <= state.yearTo);
+    const visibleYears = d3.range(YEAR_MIN, YEAR_MAX + 1)
+      .filter(yr => byYear[yr] && state.yearFrom <= yr && yr <= state.yearTo);
     // Built as nodes, not innerHTML: the lead carries installation and owner
     // names straight from the dataset.
     const { lead, period } = timelineTitle(visibleYears);
@@ -1142,7 +1073,7 @@
     periodEl.className = "title-period";
     periodEl.textContent = period;
     titleEl.appendChild(periodEl);
-    const maxVal = d3.max(visibleYears, yr => dataMap[yr].top) || 1;
+    const maxVal = d3.max(visibleYears, yr => byYear[yr].top) || 1;
     // Bar width is fixed at whatever it is for the full year span, so
     // narrowing the selection makes the chart narrower instead of making the
     // bars fatter. Sizing the range to the visible count at that same step
@@ -1166,27 +1097,27 @@
     svg.selectAll(".bar-emissions")
       .data(visibleYears)
       .join("rect").attr("class", "bar-emissions")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].e))
-      .attr("width", x.bandwidth()).attr("height", yr => H - y(dataMap[yr].e))
+      .attr("x", yr => x(yr)).attr("y", yr => y(byYear[yr].e))
+      .attr("width", x.bandwidth()).attr("height", yr => H - y(byYear[yr].e))
       .attr("fill", CFG.colorEmissions);
 
     svg.selectAll(".bar-uncovered")
-      .data(visibleYears.filter(yr => dataMap[yr].deficit > 0))
+      .data(visibleYears.filter(yr => byYear[yr].deficit > 0))
       .join("rect").attr("class", "bar-uncovered")
-      .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].e))
+      .attr("x", yr => x(yr)).attr("y", yr => y(byYear[yr].e))
       .attr("width", x.bandwidth())
-      .attr("height", yr => y(dataMap[yr].a) - y(dataMap[yr].e))
+      .attr("height", yr => y(byYear[yr].a) - y(byYear[yr].e))
       .attr("fill", CFG.colorUncovered);
 
-    // Over-allocation as a hatched block up to the allocation marker. Off by
-    // default: the marker already shows it by floating above the bar.
+    // Over-allocation as a hatched block up to the allocation marker, on top of
+    // the marker's own cue of floating above the bar (CFG.showSurplus).
     if (CFG.showSurplus) {
       addHatch(d3.select(svgEl).select("defs"), "ets-hatch-surplus");
       svg.selectAll(".bar-surplus")
-        .data(visibleYears.filter(yr => dataMap[yr].a > dataMap[yr].e))
+        .data(visibleYears.filter(yr => byYear[yr].a > byYear[yr].e))
         .join("rect").attr("class", "bar-surplus")
-        .attr("x", yr => x(yr)).attr("y", yr => y(dataMap[yr].a))
-        .attr("width", x.bandwidth()).attr("height", yr => y(dataMap[yr].e) - y(dataMap[yr].a))
+        .attr("x", yr => x(yr)).attr("y", yr => y(byYear[yr].a))
+        .attr("width", x.bandwidth()).attr("height", yr => y(byYear[yr].e) - y(byYear[yr].a))
         .attr("fill", "url(#ets-hatch-surplus)");
     }
 
@@ -1197,7 +1128,7 @@
       const gap = x.step() - x.bandwidth();
       let d = "";
       visibleYears.forEach((yr, i) => {
-        const lvl = y(dataMap[yr].a);
+        const lvl = y(byYear[yr].a);
         // Treads are widened by half a gap on each side, so consecutive years
         // meet exactly and the riser between them is a single vertical line.
         d += (i === 0 ? `M${x(yr) - gap / 2},${lvl}` : `V${lvl}`) +
@@ -1217,7 +1148,7 @@
           .data(visibleYears)
           .join("line").attr("class", "line-allocation-" + i)
           .attr("x1", yr => x(yr)).attr("x2", yr => x(yr) + x.bandwidth())
-          .attr("y1", yr => y(dataMap[yr].a)).attr("y2", yr => y(dataMap[yr].a))
+          .attr("y1", yr => y(byYear[yr].a)).attr("y2", yr => y(byYear[yr].a))
           .attr("stroke", stroke).attr("stroke-width", width);
       });
     }
@@ -1229,7 +1160,7 @@
       .attr("width", x.bandwidth()).attr("height", H)
       .attr("fill", "transparent")
       .on("mouseover", function (event, yr) {
-        const d = dataMap[yr];
+        const d = byYear[yr];
         // Same rounding and the same uncapped treatment as the KPI card and
         // chart 2's column, so the three never disagree for a given year.
         const share = d.e > 0 ? Math.round(d.a / d.e * 100) + " %" : "—";
@@ -1396,21 +1327,24 @@
         extra;
     }
 
+    // Every part of a row shows the same card.
+    const withTip = sel => sel
+      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
+      .on("mousemove", moveTip).on("mouseout", hideTip);
+
     svg.selectAll(".a-bar-emissions")
       .data(data).join("rect").attr("class", "a-bar-emissions")
       .attr("y", d => y(d.key)).attr("x", 0)
       .attr("height", y.bandwidth()).attr("width", d => x(d.e))
       .attr("fill", CFG.colorEmissions)
-      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
-      .on("mousemove", moveTip).on("mouseout", hideTip);
+      .call(withTip);
 
     svg.selectAll(".a-bar-uncovered")
       .data(data.filter(d => d.deficit > 0)).join("rect").attr("class", "a-bar-uncovered")
       .attr("y", d => y(d.key)).attr("x", d => x(d.a))
       .attr("height", y.bandwidth()).attr("width", d => x(d.e) - x(d.a))
       .attr("fill", CFG.colorUncovered)
-      .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
-      .on("mousemove", moveTip).on("mouseout", hideTip);
+      .call(withTip);
 
     if (CFG.showSurplus) {
       svg.selectAll(".a-bar-surplus")
@@ -1418,8 +1352,7 @@
         .attr("y", d => y(d.key)).attr("x", d => x(d.e))
         .attr("height", y.bandwidth()).attr("width", d => x(d.a) - x(d.e))
         .attr("fill", "url(#ets-hatch-surplus-activity)")
-        .on("mouseover", (ev, d) => showTip(ev, tipHtml(d)))
-        .on("mousemove", moveTip).on("mouseout", hideTip);
+        .call(withTip);
     }
 
     markerPasses(CFG.lineWidthActivity).forEach(([stroke, width], i) => {
@@ -1454,7 +1387,7 @@
     svg.selectAll(".a-share-label")
       .data(data.filter(d => d.e > 0))
       .join("text").attr("class", "a-share-label")
-      .attr("x", W + mg.right - 16)
+      .attr("x", shareX)
       .attr("y", d => y(d.key) + y.bandwidth() / 2)
       .attr("dy", "0.32em")
       .attr("text-anchor", "end")
@@ -1488,7 +1421,6 @@
 
   // Wrap long activity-name axis labels onto two lines instead of overflowing.
   function wrapText(selection, width, xOffset) {
-    xOffset = xOffset == null ? -10 : xOffset;
     selection.each(function () {
       const text = d3.select(this);
       const words = (text.text() || "").split(/\s+/).reverse();
@@ -1532,19 +1464,18 @@
       if (em) emByInstall.set(idx, (emByInstall.get(idx) || 0) + em);
     });
 
-    const flowMap = new Map(); // "act|||ra" -> Mt
+    // One link per (ETS activity, real activity) pair, keyed by the index pair.
+    const flowMap = new Map();
     INSTALLS.forEach((inst, i) => {
       const v = emByInstall.get(i) || 0;
       if (v <= 0) return;
-      const act = ACTIVITIES[inst.act].n;
-      const ra = raName(inst) || "Neuvedeno";
-      const key = act + "|||" + ra;
-      flowMap.set(key, (flowMap.get(key) || 0) + v);
+      const key = inst.act + "," + inst.ra;
+      if (!flowMap.has(key)) {
+        flowMap.set(key, { act: ACTIVITIES[inst.act].n, ra: raName(inst) || "Neuvedeno", value: 0 });
+      }
+      flowMap.get(key).value += v / 1e6; // Mt
     });
-    const links = [...flowMap.entries()].map(([key, value]) => {
-      const [act, ra] = key.split("|||");
-      return { act, ra, value: value / 1e6 }; // Mt
-    });
+    const links = [...flowMap.values()];
     if (!links.length) return;
 
     const srcTotals = new Map(), tgtTotals = new Map();
