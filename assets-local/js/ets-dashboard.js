@@ -30,7 +30,6 @@
     barPaddingActivity: 0.15, // chart 2: gap between sector bars (0-1)
     lineWidthActivity: 3.5,   // chart 2: allocation marker thickness
     tickCountActivity: 5,     // chart 2: axis ticks
-    sankeyHorizontal: false,  // sankey: stack nodes along x, flow top to bottom
     minBarActivity: 25,       // chart 2: rows never thinner than this (px)
     hatchSize: 6,             // surplus hatch: pattern tile size
     hatchAngle: 45,
@@ -1448,7 +1447,7 @@
     });
   }
 
-  // ── Sankey: hlavní ETS aktivita → skutečné odvětví ──────────────────────────
+  // ── Sankey: skutečné odvětví (vlevo) ↔ hlavní ETS aktivita (vpravo) ─────────
   // Explains, in the methodology expander, why "Hlavní odvětví (dle ETS)" and
   // "Skutečné odvětví" sometimes diverge (e.g. a steelworks' own boiler is
   // formally classified under "Výroba elektřiny a tepla"). Deliberately static
@@ -1458,20 +1457,17 @@
   // measured clientWidth/clientHeight like the other two charts) because it
   // lives inside a collapsed dropdown at page load, where clientWidth/Height
   // would read 0.
+  // Two columns: real sectors (`ra`) on the left, ETS activities (`act`) on
+  // the right, with ribbons running between them. Everything below is named
+  // after the column it belongs to.
   function renderSankeyChart() {
     const svgEl = document.getElementById("ets-svg-sankey");
     if (!svgEl) return;
 
-    const emByInstall = new Map();
-    RECORDS.forEach(r => {
-      const [idx, , em] = r;
-      if (em) emByInstall.set(idx, (emByInstall.get(idx) || 0) + em);
-    });
-
     // One link per (ETS activity, real activity) pair, keyed by the index pair.
     const flowMap = new Map();
     INSTALLS.forEach((inst, i) => {
-      const v = emByInstall.get(i) || 0;
+      const v = d3.sum(recordsByInstall.get(i) || [], r => r[2]);
       if (v <= 0) return;
       const key = inst.act + "," + inst.ra;
       if (!flowMap.has(key)) {
@@ -1482,21 +1478,15 @@
     const links = [...flowMap.values()];
     if (!links.length) return;
 
-    const srcTotals = new Map(), tgtTotals = new Map();
-    links.forEach(l => {
-      srcTotals.set(l.act, (srcTotals.get(l.act) || 0) + l.value);
-      tgtTotals.set(l.ra, (tgtTotals.get(l.ra) || 0) + l.value);
-    });
-    const sources = [...srcTotals.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name);
-    const targets = [...tgtTotals.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name);
-    const srcOrder = new Map(sources.map((n, i) => [n, i]));
-    const tgtOrder = new Map(targets.map((n, i) => [n, i]));
+    // Each column's node totals, and its nodes ordered biggest first.
+    const raTotals = d3.rollup(links, v => d3.sum(v, l => l.value), l => l.ra);
+    const actTotals = d3.rollup(links, v => d3.sum(v, l => l.value), l => l.act);
+    const byTotal = totals => [...totals.keys()].sort((a, b) => totals.get(b) - totals.get(a));
+    const raNodes = byTotal(raTotals);
+    const actNodes = byTotal(actTotals);
+    const raOrder = new Map(raNodes.map((n, i) => [n, i]));
+    const actOrder = new Map(actNodes.map((n, i) => [n, i]));
 
-    // Geometry is written in two axes rather than x/y: nodes are stacked along
-    // the STACK axis and the ribbons run along the FLOW axis. Default puts
-    // stack on y and flow on x (two columns, left to right); the horizontal
-    // variant swaps them (two rows, top to bottom).
-    const T = !!CFG.sankeyHorizontal;
     const GAP = 10, LAYOUT_MIN = 16, BAR_MIN = 1.5;
     const BAR_W = 10;
     const Y0 = 30, PAD_END = 20;
@@ -1506,8 +1496,8 @@
     // further right; the left gutter is the wider of the two because that
     // column carries the real-sector names, which are the longer set.
     const LABEL_LEFT = 300, LABEL_RIGHT = 210, FLOW_SPAN = 590;
-    const FLOW_A = T ? 170 : LABEL_LEFT;                   // near row / left column
-    const FLOW_B = T ? 430 : FLOW_A + BAR_W + FLOW_SPAN;   // far row / right column
+    const RA_X = LABEL_LEFT;                   // left column's bars
+    const ACT_X = RA_X + BAR_W + FLOW_SPAN;    // right column's bars
 
     // px per Mt, solved so the taller column fills SANKEY_H instead of being a
     // fixed scale that has to be retuned whenever the data grows. A node too
@@ -1528,11 +1518,8 @@
       }
       return k;
     }
-    const k = Math.min(solveScale([...srcTotals.values()]),
-      solveScale([...tgtTotals.values()]));
-    // "stack,flow" -> "x,y" for whichever orientation is active. Bezier control
-    // points transpose the same way, so one path string serves both.
-    const P = (stack, flow) => (T ? `${stack},${flow}` : `${flow},${stack}`);
+    const k = Math.min(solveScale([...raTotals.values()]),
+      solveScale([...actTotals.values()]));
 
     function layout(names, totals) {
       const pos = new Map();
@@ -1547,30 +1534,30 @@
       });
       return { pos, bottom: y - GAP };
     }
-    const srcLayout = layout(sources, srcTotals);
-    const tgtLayout = layout(targets, tgtTotals);
+    const raLayout = layout(raNodes, raTotals);
+    const actLayout = layout(actNodes, actTotals);
 
-    const srcCursor = new Map(sources.map(n => [n, srcLayout.pos.get(n).barY]));
-    const tgtCursor = new Map(targets.map(n => [n, tgtLayout.pos.get(n).barY]));
-    const linkGeo = [...links]
-      .sort((a, b) => (srcOrder.get(a.act) - srcOrder.get(b.act)) || (tgtOrder.get(a.ra) - tgtOrder.get(b.ra)))
-      .map(l => {
-        const h = l.value * k;
-        const yS = srcCursor.get(l.act);
-        srcCursor.set(l.act, yS + h);
-        return { ...l, h, yS };
-      });
-    linkGeo
-      .sort((a, b) => (tgtOrder.get(a.ra) - tgtOrder.get(b.ra)) || (srcOrder.get(a.act) - srcOrder.get(b.act)))
+    // Stacks each ribbon's two ends inside their nodes: on the right in the
+    // order of the left column, and on the left in the order of the right
+    // column, so ribbons leaving a node do not cross one another.
+    const ribbons = links.map(l => ({ ...l, h: l.value * k }));
+    const actCursor = new Map(actNodes.map(n => [n, actLayout.pos.get(n).barY]));
+    const raCursor = new Map(raNodes.map(n => [n, raLayout.pos.get(n).barY]));
+    ribbons
+      .sort((a, b) => (actOrder.get(a.act) - actOrder.get(b.act)) || (raOrder.get(a.ra) - raOrder.get(b.ra)))
       .forEach(l => {
-        l.yT = tgtCursor.get(l.ra);
-        tgtCursor.set(l.ra, l.yT + l.h);
+        l.yAct = actCursor.get(l.act);
+        actCursor.set(l.act, l.yAct + l.h);
+      });
+    ribbons
+      .sort((a, b) => (raOrder.get(a.ra) - raOrder.get(b.ra)) || (actOrder.get(a.act) - actOrder.get(b.act)))
+      .forEach(l => {
+        l.yRa = raCursor.get(l.ra);
+        raCursor.set(l.ra, l.yRa + l.h);
       });
 
-    const stackExtent = Math.max(srcLayout.bottom, tgtLayout.bottom) + PAD_END;
-    const flowExtent = T ? FLOW_B + BAR_W + 170 : FLOW_B + BAR_W + LABEL_RIGHT;
-    const vbW = T ? stackExtent : flowExtent;
-    const vbH = T ? flowExtent : stackExtent;
+    const vbW = ACT_X + BAR_W + LABEL_RIGHT;
+    const vbH = Math.max(raLayout.bottom, actLayout.bottom) + PAD_END;
     svgEl.setAttribute("viewBox", `0 0 ${vbW} ${vbH}`);
     // Sized by ratio, not by a pixel height: the SVG is width:100% of its
     // panel, so a fixed height that disagrees with the viewBox letterboxes the
@@ -1581,19 +1568,18 @@
     d3.select(svgEl).selectAll("*").remove();
     const svg = d3.select(svgEl);
 
-    const mid = (FLOW_A + BAR_W + FLOW_B) / 2;
+    // Ribbons run from the left bars' right edge to the right bars' left
+    // edge, with both Bezier control points at the midpoint.
+    const x0 = RA_X + BAR_W, x1 = ACT_X, mid = (x0 + x1) / 2;
     const LINK_BASE = 0.28, LINK_ON = 0.6, LINK_OFF = 0.06;
     svg.selectAll(".sankey-link")
-      .data(linkGeo)
+      .data(ribbons)
       .join("path").attr("class", "sankey-link")
       .attr("d", l => {
-        const f0 = FLOW_A + BAR_W, f1 = FLOW_B;
-        // The left column is the real sector and the right one the ETS
-        // activity, so a ribbon leaves the TARGET's stack position and lands on
-        // the source's — the reverse of the order the links were built in.
-        const s0t = l.yT, s0b = l.yT + l.h, s1t = l.yS, s1b = l.yS + l.h;
-        return `M${P(s0t, f0)} C${P(s0t, mid)} ${P(s1t, mid)} ${P(s1t, f1)} ` +
-          `L${P(s1b, f1)} C${P(s1b, mid)} ${P(s0b, mid)} ${P(s0b, f0)} Z`;
+        const raTop = l.yRa, raBottom = l.yRa + l.h;
+        const actTop = l.yAct, actBottom = l.yAct + l.h;
+        return `M${x0},${raTop} C${mid},${raTop} ${mid},${actTop} ${x1},${actTop} ` +
+          `L${x1},${actBottom} C${mid},${actBottom} ${mid},${raBottom} ${x0},${raBottom} Z`;
       })
       .attr("fill", CFG.colorUncovered).attr("fill-opacity", LINK_BASE).attr("stroke", "none")
       .on("mouseover", (ev, l) => showTip(ev,
@@ -1632,8 +1618,9 @@
       return lines;
     }
 
-    // `before` = labels sit on the low side of the row/column (left, or above).
-    function drawNodes(names, layoutPos, flowPos, before, key) {
+    // One column: a bar per node plus its label, to the left of the bars when
+    // `labelLeft` and to the right otherwise.
+    function drawNodes(names, pos, barX, labelLeft, key) {
       // Both the bar and its label are handles for the same node.
       const hover = sel => sel
         .style("cursor", "pointer")
@@ -1643,61 +1630,40 @@
       svg.selectAll(null)
         .data(names).enter()
         .append("rect")
-        .attr("x", n => (T ? layoutPos.get(n).barY : flowPos))
-        .attr("y", n => (T ? flowPos : layoutPos.get(n).barY))
-        .attr("width", n => (T ? layoutPos.get(n).barH : BAR_W))
-        .attr("height", n => (T ? BAR_W : layoutPos.get(n).barH))
+        .attr("x", barX).attr("y", n => pos.get(n).barY)
+        .attr("width", BAR_W).attr("height", n => pos.get(n).barH)
         .attr("fill", CFG.colorEmissions)
         .call(hover);
 
-      const labelFlow = before ? flowPos - 10 : flowPos + BAR_W + 10;
-      // Rotating the frame flips which anchor runs away from the bar: local +x
-      // points up the screen after rotate(-90), so the two modes are opposites.
-      const anchor = T ? (before ? "start" : "end") : (before ? "end" : "start");
-
+      const labelX = labelLeft ? barX - 10 : barX + BAR_W + 10;
       svg.selectAll(null)
         .data(names).enter()
         .append("text")
-        .attr("text-anchor", anchor)
+        .attr("text-anchor", labelLeft ? "end" : "start")
         .attr("font-size", CFG.axisFontSize + "px").attr("fill", CFG.axisTextColor)
-        .attr("transform", n => {
-          if (!T) return null;
-          const c = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
-          return `translate(${c},${labelFlow}) rotate(-90)`;
-        })
         .each(function (n) {
-          // Stacked sideways at 22 chars in the rotated frame: the space a
-          // label has there is the node's own width, not a shared gutter.
-          const lines = wrapLabelByChars(n, T ? 22 : 26);
-          const c = layoutPos.get(n).slotY + layoutPos.get(n).slotH / 2;
+          // Up to two lines, centred on the node's slot.
+          const lines = wrapLabelByChars(n, 26);
+          const c = pos.get(n).slotY + pos.get(n).slotH / 2;
           d3.select(this).selectAll("tspan")
             .data(lines)
             .join("tspan")
-            .attr("x", T ? 0 : labelFlow)
-            .attr("y", T ? null : (d, i) => c - (lines.length - 1) * 7 + i * 14)
-            .attr("dy", (d, i) => (T
-              ? (i === 0 ? `${-(lines.length - 1) * 0.45}em` : "0.95em")
-              : "0.32em"))
+            .attr("x", labelX)
+            .attr("y", (d, i) => c - (lines.length - 1) * 7 + i * 14)
+            .attr("dy", "0.32em")
             .text(d => d);
         })
         .call(hover);
     }
-    drawNodes(targets, tgtLayout.pos, FLOW_A, true, "ra");
-    drawNodes(sources, srcLayout.pos, FLOW_B, false, "act");
+    drawNodes(raNodes, raLayout.pos, RA_X, true, "ra");
+    drawNodes(actNodes, actLayout.pos, ACT_X, false, "act");
 
-    // Column/row headings. Transposed they cannot sit beside the rows (the
-    // rotated labels are there), so they head the whole block instead.
-    const heading = (text, x, y, anchor) => svg.append("text")
-      .attr("x", x).attr("y", y).attr("text-anchor", anchor)
+    const heading = (text, x, anchor) => svg.append("text")
+      .attr("x", x).attr("y", 14).attr("text-anchor", anchor)
       .attr("font-size", "13px").attr("font-weight", "700").attr("fill", "#2d3748")
       .text(text);
-    if (T) {
-      heading("Skutečné odvětví", 0, 14, "start");
-      heading("Hlavní odvětví (dle ETS)", 0, flowExtent - 6, "start");
-    } else {
-      heading("Skutečné odvětví", FLOW_A - 10, 14, "end");
-      heading("Hlavní odvětví (dle ETS)", FLOW_B + BAR_W + 10, 14, "start");
-    }
+    heading("Skutečné odvětví", RA_X - 10, "end");
+    heading("Hlavní odvětví (dle ETS)", ACT_X + BAR_W + 10, "start");
   }
 
   // ── Update ────────────────────────────────────────────────────────────────
