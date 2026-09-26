@@ -701,6 +701,7 @@
       this.value = state.yearFrom;
       updateYearBar();
       renderCompanyOptions(document.getElementById("ets-company-search").value);
+      renderInstallOptions(document.getElementById("ets-installation-search").value);
       update();
     });
     yTo.addEventListener("input", function () {
@@ -708,6 +709,7 @@
       this.value = state.yearTo;
       updateYearBar();
       renderCompanyOptions(document.getElementById("ets-company-search").value);
+      renderInstallOptions(document.getElementById("ets-installation-search").value);
       update();
     });
     // The two year captions are inputs: applied on change (blur or Enter)
@@ -727,6 +729,7 @@
       yTo.value = b;
       updateYearBar();
       renderCompanyOptions(document.getElementById("ets-company-search").value);
+      renderInstallOptions(document.getElementById("ets-installation-search").value);
       update();
     }
     yFromVal.addEventListener("change", applyTypedYears);
