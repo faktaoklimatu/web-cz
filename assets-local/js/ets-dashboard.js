@@ -2,8 +2,9 @@
   const DATA = window.ETS_DASHBOARD;
   if (!DATA) return;
 
-  const ACTIVITIES = DATA.activities;    // [{n, short}] — broad sector groups
-  const INSTALLS = DATA.installs;        // [{n,c,act,co}] — all Czech installations
+  const ACTIVITIES = DATA.activities;    // [{n}] — EU ETS activity groups (installs[].act)
+  const REAL_ACTIVITIES = DATA.real_activities; // [{n, short}] — actual sectors (installs[].ra)
+  const INSTALLS = DATA.installs;        // [{n,c,act,own,operator,ra}] — all Czech installations
   const RECORDS = DATA.records;          // [[instIdx, year, emissions|null, allocation]]
   const YEAR_MIN = DATA.year_min;
   const YEAR_MAX = DATA.year_max;
@@ -48,19 +49,33 @@
   // covers crossing this threshold (and a phone rotating).
   const MOBILE = window.matchMedia("(max-width: 640px)");
 
-  // Chart 2's sector names do not fit a phone-width axis. Keyed on the
-  // NORMALISED name: several values in the data carry non-breaking spaces
-  // (e.g. "Výroba elektřiny a tepla"), so a plain lookup would never match.
-  const SHORT_ACTIVITY_NAMES = {
-    "Výroba elektřiny a tepla": "Výroba el. a tepla",
-    "Rafinace minerálních olejů": "Rafinace",
-    "Ostatní minerály (keramika, cihly, minerální vlna, sádra)": "Ostatní minerály",
-    "Potravinářský průmysl": "Potraviny",
-  };
+  // installs[].ra is an index into REAL_ACTIVITIES. Everything downstream —
+  // filter state, titles, chart rows — works with the full name, which is
+  // unique, so the index is resolved here once per use.
+  function raName(inst) {
+    return inst.ra == null ? null : REAL_ACTIVITIES[inst.ra].n;
+  }
+
+  // Two real activities get special treatment, and both are identified by
+  // their POSITION in real_activities rather than by name, so the YAML is free
+  // to change their wording or typography (e.g. non-breaking spaces):
+  // - the FIRST entry is the primary activity ("Výroba elektřiny a tepla"),
+  //   by far the largest emitter, pinned standalone at the top of the
+  //   "Odvětví" dropdown above the "Průmysl" group;
+  // - the LAST entry is the catch-all ("Ostatní odvětví"), sorted after all
+  //   the others and given its own phrasing in chart 1's title.
+  // Keep that order when editing real_activities in the data file.
+  const ACTIVITY_PRIMARY_NAME = REAL_ACTIVITIES[0].n;
+  const REAL_ACTIVITY_OTHER = REAL_ACTIVITIES[REAL_ACTIVITIES.length - 1].n;
+
+  // Chart 2's sector names do not fit a phone-width axis, so there it uses
+  // each real activity's short name from the data.
   // Display only — the row's key is untouched, so tooltips keep the full name.
-  // Owner names fall through unchanged, since none of them are in the map.
+  // Owner names fall through unchanged, since none of them match an activity.
   function activityLabel(key) {
-    return MOBILE.matches ? (SHORT_ACTIVITY_NAMES[normalizeActName(key)] || key) : key;
+    if (!MOBILE.matches) return key;
+    const act = REAL_ACTIVITIES.find(a => a.n === key);
+    return (act && act.short) || key;
   }
 
   // Chart 1's margins live out here because fixedBarWidth() needs its plot
@@ -124,7 +139,7 @@
   const byPin = (pin, a, b) => (pin.has(b) ? 1 : 0) - (pin.has(a) ? 1 : 0);
 
   // Every value each facet can take, to recognise an unfiltered facet.
-  const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(i => i.ra).filter(Boolean));
+  const ALL_REAL_ACTIVITIES = new Set(INSTALLS.map(raName).filter(Boolean));
   const ALL_OWNERS = new Set(INSTALLS.map(i => i.own));
 
   // Chart 2 can group its rows by real activity or by current owner. A view
@@ -133,7 +148,7 @@
   const ACTIVITY_OWNER_ROWS = 10;  // 180 owners exist; the rest are aggregated
 
   const state = {
-    realActivities: new Set(), // real-activity names (installs[].ra); empty = all
+    realActivities: new Set(), // real-activity names (REAL_ACTIVITIES[installs[].ra].n); empty = all
     companies: new Set(),  // owner names (installs[].own); empty = all companies
     installs: new Set(),   // install indices; empty = all installations
     yearFrom: YEAR_MIN,
@@ -173,7 +188,7 @@
     const out = [];
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
       if (state.companies.size && !state.companies.has(inst.own)) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       out.push(i);
@@ -191,7 +206,7 @@
       const inst = INSTALLS[i];
       if (state.companies.size && !state.companies.has(inst.own)) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
-      out.add(inst.ra);
+      out.add(raName(inst));
     }
     return out;
   }
@@ -199,7 +214,7 @@
     const out = new Set();
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       out.add(inst.own);
     }
@@ -209,7 +224,7 @@
     const out = new Set();
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
       if (state.companies.size && !state.companies.has(inst.own)) continue;
       out.add(i);
     }
@@ -260,10 +275,10 @@
     return rows;
   })();
 
-  // "Ostatní odvětví" is a catch-all, not a real category, so it's pinned to
-  // the bottom of the list instead of sorting alphabetically with the rest.
-  const REAL_ACTIVITY_OTHER = "Ostatní odvětví";
-  const sortedRealActivities = Array.from(new Set(INSTALLS.map(inst => inst.ra).filter(Boolean)))
+  // "Ostatní odvětví" (REAL_ACTIVITY_OTHER, the last real activity) is a
+  // catch-all, not a real category, so it's pinned to the bottom of the list
+  // instead of sorting alphabetically with the rest.
+  const sortedRealActivities = Array.from(ALL_REAL_ACTIVITIES)
     .sort((a, b) => {
       if (a === REAL_ACTIVITY_OTHER) return 1;
       if (b === REAL_ACTIVITY_OTHER) return -1;
@@ -280,9 +295,9 @@
 
   // "Výroba elektřiny a tepla" is also the largest single value on the real-
   // activity facet, so it gets the same pinned-primary + selectable
-  // "Průmysl" group hierarchy as "Hlavní odvětví" (see ACTIVITY_PRIMARY_NAME
-  // / normalizeActName further down — referenced here, not redefined).
-  function isRealActivityPrimary(ra) { return normalizeActName(ra) === normalizeActName(ACTIVITY_PRIMARY_NAME); }
+  // "Průmysl" group hierarchy as "Hlavní odvětví" (ACTIVITY_PRIMARY_NAME is
+  // the first real activity, see its definition at the top).
+  function isRealActivityPrimary(ra) { return ra === ACTIVITY_PRIMARY_NAME; }
   function getIndustrialRealActivities() {
     return sortedRealActivities.filter(ra => !isRealActivityPrimary(ra));
   }
@@ -345,7 +360,7 @@
     const sums = new Map();
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
-      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
       if (state.companies.size && !state.companies.has(inst.own)) continue;
       let e = 0;
       (recordsByInstall.get(i) || []).forEach(r => {
@@ -463,7 +478,7 @@
     for (let i = 0; i < INSTALLS.length; i++) {
       const inst = INSTALLS[i];
       if (!inst.own) continue;
-      if (state.realActivities.size && !state.realActivities.has(inst.ra)) continue;
+      if (state.realActivities.size && !state.realActivities.has(raName(inst))) continue;
       if (state.installs.size && !state.installs.has(i)) continue;
       let e = 0;
       (recordsByInstall.get(i) || []).forEach(r => {
@@ -580,17 +595,6 @@
     }
     if (!wrap.children.length) wrap.innerHTML = '<div class="ms-empty">Žádné odvětví nenalezeno</div>';
   }
-
-  // "Výroba elektřiny a tepla" is by far the largest emitter category, which
-  // is why it's pinned standalone at the top of the "Odvětví" hierarchy
-  // above, with everything else grouped under "Průmysl".
-  const ACTIVITY_PRIMARY_NAME = "Výroba elektřiny a tepla";
-
-  // Normalize before comparing: the data file inserts non-breaking spaces
-  // around single-letter Czech prepositions ("a", "i", ...) per Czech
-  // typographic convention, which look identical to a plain space but
-  // compare unequal against a hardcoded literal.
-  function normalizeActName(s) { return s.normalize("NFC").replace(/\u00A0/g, " "); }
 
   // Re-renders all three option panels, preserving whatever search text is
   // currently typed. Called whenever a selection changes anywhere, since one
@@ -823,7 +827,7 @@
       if (narrowed) narrowed.textContent = "";
       return;
     }
-    const distinctRa = [...new Set(idxs.map(i => INSTALLS[i].ra).filter(Boolean))];
+    const distinctRa = [...new Set(idxs.map(i => raName(INSTALLS[i])).filter(Boolean))];
     const distinctCos = [...new Set(idxs.map(i => INSTALLS[i].own))];
     // Chart 2's line stands alone — its heading names no part of the selection
     // — so unlike chart 1's it states every facet, not only the narrowed ones.
@@ -1032,7 +1036,7 @@
 
   function sectorPhrase(ra) {
     // The catch-all would otherwise read "v odvětví ostatní odvětví".
-    if (normalizeActName(ra) === REAL_ACTIVITY_OTHER) return "v ostatních odvětvích";
+    if (ra === REAL_ACTIVITY_OTHER) return "v ostatních odvětvích";
     // A trailing parenthetical is an explanatory gloss ("Ostatní minerály
     // (keramika, cihly, …)") — useful on an axis, far too long in a headline.
     const name = ra.replace(/\s*\(.*\)\s*$/, "");
@@ -1285,10 +1289,10 @@
     // charts no longer match in thickness — legibility wins.
     const barThickness = Math.max(chart1Bar, CFG.minBarActivity);
 
-    // Both grouping keys are already display-ready strings on the
-    // installation, so neither needs a lookup array.
+    // Rows are keyed by display-ready strings: the owner name, or the real
+    // activity's full name (activityLabel shortens it on a phone).
     const byOwner = activityGroupBy === "own";
-    const keyOf = i => (byOwner ? INSTALLS[i].own : INSTALLS[i].ra) || "Neuvedeno";
+    const keyOf = i => (byOwner ? INSTALLS[i].own : raName(INSTALLS[i])) || "Neuvedeno";
     document.getElementById("ets-activity-title").textContent = byOwner
       ? "Kolik vybraných emisí pokryly povolenky zdarma podle vlastníka?"
       : "Kolik vybraných emisí pokryly povolenky zdarma podle odvětví?";
@@ -1328,7 +1332,7 @@
     // allocation. mg.top makes room for that column's header.
     // At phone width the desktop margins (230 + 150) exceed the whole SVG, so
     // the plot collapses to its 40px floor — hence a narrower set, paired with
-    // the shortened axis labels in SHORT_ACTIVITY_NAMES.
+    // the shortened axis labels from activityLabel.
     const mg = MOBILE.matches
       ? { top: 46, right: 64, bottom: 24, left: 116 }
       : { top: 46, right: 150, bottom: 24, left: 230 };
@@ -1529,8 +1533,8 @@
     INSTALLS.forEach((inst, i) => {
       const v = emByInstall.get(i) || 0;
       if (v <= 0) return;
-      const act = ACTIVITIES[inst.act].short;
-      const ra = inst.ra || "Neuvedeno";
+      const act = ACTIVITIES[inst.act].n;
+      const ra = raName(inst) || "Neuvedeno";
       const key = act + "|||" + ra;
       flowMap.set(key, (flowMap.get(key) || 0) + v);
     });
