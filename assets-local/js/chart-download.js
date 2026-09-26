@@ -38,12 +38,14 @@
 
   const OPENTYPE_URL = "https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js";
 
-  // Subsets of the upstream Apache-2.0 releases, cut to latin + Czech.
-  // Keys are the weights the charts actually ask for; see nearestWeight().
+  // The same files the page itself displays (see _roboto.scss): static
+  // instances of Roboto v3 (SIL OFL 1.1), cut to latin + Czech. Keys are the
+  // weights the charts actually ask for; see nearestWeight().
   const FONTS = {
     roboto: {
       400: "/assets-local/fonts/Roboto-400.ttf",
       500: "/assets-local/fonts/Roboto-500.ttf",
+      600: "/assets-local/fonts/Roboto-600.ttf",
       700: "/assets-local/fonts/Roboto-700.ttf",
     },
   };
