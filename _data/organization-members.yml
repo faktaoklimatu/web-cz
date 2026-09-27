@@ -86,6 +86,15 @@
     img: "eliska-soperova.jpg"
     linkedin: "https://www.linkedin.com/in/eli%C5%A1ka-soperov%C3%A1/"
 
+    
+  - id: "jakub-komarek"
+    name: "Jakub Komárek"
+    position: "Analytik/Ekonom"
+    summary: "Z dat vytváří příběhy. Z pozice ekonoma se zajímá o distribuční otázky spojené s dekarbonizací. Dříve na MF připravoval podklady pro renovační strategii budov. V PAQ Research stál u zrodu daňových analýz a NERV doporučení pro dostupnější bydlení."
+    img: "jakub-komarek.jpg"
+    email: "jakub.komarek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/jakub-kom%C3%A1rek/"
+
   - id: "martin-ukrop"
     name: "Martin Ukrop"
     position: "Administrátor a programátor"
