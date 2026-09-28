@@ -60,6 +60,14 @@
     email: "petr.danis@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/petr-danis/"
 
+  - id: "jakub-komarek"
+    name: "Jakub Komárek"
+    position: "Analytik a ekonom"
+    summary: "Z dat vytváří příběhy. Z pozice ekonoma se zajímá o distribuční otázky spojené s dekarbonizací. Dříve na MF připravoval podklady pro renovační strategii budov. V PAQ Research stál u zrodu daňových analýz a NERV doporučení pro dostupnější bydlení."
+    img: "jakub-komarek.jpg"
+    email: "jakub.komarek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/jakub-kom%C3%A1rek/"
+
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -85,15 +93,6 @@
     summary: "Přispívá především k otázkám spojeným s klimatickou politikou Číny a EU. Studuje obor zaměřený na evropskou politiku se specializací na životní prostředí a energetiku v Paříži."
     img: "eliska-soperova.jpg"
     linkedin: "https://www.linkedin.com/in/eli%C5%A1ka-soperov%C3%A1/"
-
-    
-  - id: "jakub-komarek"
-    name: "Jakub Komárek"
-    position: "Analytik/Ekonom"
-    summary: "Z dat vytváří příběhy. Z pozice ekonoma se zajímá o distribuční otázky spojené s dekarbonizací. Dříve na MF připravoval podklady pro renovační strategii budov. V PAQ Research stál u zrodu daňových analýz a NERV doporučení pro dostupnější bydlení."
-    img: "jakub-komarek.jpg"
-    email: "jakub.komarek@faktaoklimatu.cz"
-    linkedin: "https://www.linkedin.com/in/jakub-kom%C3%A1rek/"
 
   - id: "martin-ukrop"
     name: "Martin Ukrop"
