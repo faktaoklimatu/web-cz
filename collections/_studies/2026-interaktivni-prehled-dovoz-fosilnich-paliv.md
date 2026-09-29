@@ -1,7 +1,7 @@
 ---
 layout:        empty
 type:          "Interaktivní přehled"
-title:         "Dovoz fosilních paliv do ČR"
+title:         "Dovoz ropy a zemního plynu do ČR"
 slug:          2026-interaktivni-prehled-dovoz-fosilnich-paliv
 body-class:    dovoz-fosilnich-paliv
 redirect_from:
@@ -55,11 +55,11 @@ extra-scripts:
       </div>
       <div class="chart-panel">
         <div class="kpi">
-          <div class="kpi-label">Podíl na primární energii</div>
+          <div class="kpi-label">Dovoz fosilních paliv</div>
           <div class="kpi-value" id="kpi-energy"></div>
         </div>
         <div id="chart-celkem-energie"></div>
-        <p class="chart-note">Placeholder — čísla zatím nejsou z ověřeného zdroje.</p>
+        <p class="chart-note">Hmotnost přepočtena na energii výhřevnostmi (ropa 42,6 GJ/t, zemní plyn 48,0 GJ/t).</p>
       </div>
     </div>
 

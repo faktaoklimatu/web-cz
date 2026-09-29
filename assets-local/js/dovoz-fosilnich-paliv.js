@@ -43,18 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const OSTATNI = ['ostatni', 'Ostatní', '#c7ccd1'];
 
-  // Primary energy, stack order bottom first. The two imported fossil bands are
-  // the subject of the page and carry the fuel colours; everything else is grey,
-  // so the chart reads as "this much of our energy is shipped in".
-  const ENERGIE = {
-    dovoz_ropy:    ['Dovoz ropy',          '#bd3d52'],
-    dovoz_plynu:   ['Dovoz plynu',         '#ff7773'],
-    pevna_paliva:  ['Dovoz pevných paliv', '#ffbab8'],
-    domace_fos:    ['Domácí fos. paliva',  '#ffdbda'],
-    jaderne_teplo: ['Jaderné teplo',       '#b5bcc4'],
-    oze:           ['OZE',                 '#d8dde2'],
+  // Both fuels together, as energy rather than as tonnes or crowns. The suppliers
+  // of the two are merged and cut to the five that carry it — 92 % of the period
+  // — because the per-fuel charts further down hold the detail. Colours are the
+  // ones the fuel charts already use, so a country reads the same everywhere.
+  const FOSIL = {
+    RU: ['rusko',       'Rusko',         '#d73027'],
+    AZ: ['azerbajdzan', 'Ázerbájdžán',   '#73d5d6'],
+    NO: ['norsko',      'Norsko',        '#2b2b9e'],
+    KZ: ['kazachstan',  'Kazachstán',    '#e07b00'],
+    QU: ['neurceno',    'Neurčená země', '#5b6470'],
   };
-  const ENERGIE_KEYS = Object.keys(ENERGIE);
+
+  // Net calorific values in TJ/Gg, which is the same number as GJ per tonne.
+  // Mass is the only energy-bearing column in the customs data, so this is what
+  // puts a tonne of crude and a tonne of gas on one scale. Gas is the IPCC 2006
+  // default (vol. 2, table 1.2); crude is 42.6 rather than that table's 42.3.
+  const NCV = { crude_oil: 42.6, natural_gas: 48.0 };
+  const toPJ = (kg, commodity) => kg * NCV[commodity] * 1e-9;
 
   // Only the bottom of each stack is drawn at full strength: those three bands
   // carry the bulk of the imports, and pushing the rest back stops the thin
@@ -87,10 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /** Totals and country shares per year for one commodity. Shares are shares of
    *  mass, matching the "% objemu" axis the bands are drawn against. */
+  const inWindow = d => d.year >= YEAR_FROM && d.year <= YEAR_TO;
+
   function aggregate(rows, commodity, codes) {
     const byYear = d3.group(
-      rows.filter(d => d.commodity === commodity && d.year >= YEAR_FROM && d.year <= YEAR_TO),
-      d => d.year);
+      rows.filter(d => d.commodity === commodity && inWindow(d)), d => d.year);
     const keys = keysOf(codes);
     return {
       keys,
@@ -110,20 +117,33 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  // primary-energy.csv opens with "#" notes on where its numbers came from and
-  // d3's parser has no comment syntax, so they are stripped before parsing.
-  const csvWithNotes = (url, row) =>
-    d3.text(url).then(t => d3.csvParse(t.replace(/^#.*(\r?\n)/gm, ''), row));
+  /** Both fuels' imports per year in PJ, split by country of origin. Each row
+   *  also carries the two fuels' own totals: the bands answer "from where",
+   *  the totals answer "how much of which", and the tooltip shows both. The
+   *  chart only reads the country keys, so the extra fields are ignored there. */
+  function energyByCountry(rows) {
+    const keys = keysOf(FOSIL);
+    const byYear = d3.group(rows.filter(inWindow), d => d.year);
+    return years.map(year => {
+      const out = Object.fromEntries(keys.map(k => [k, 0]));
+      out.year = year;
+      out.ropa_pj = 0;
+      out.plyn_pj = 0;
+      (byYear.get(year) ?? []).forEach(d => {
+        const pj = toPJ(d.mass_kg, d.commodity);
+        out[(FOSIL[d.country_code] ?? OSTATNI)[0]] += pj;
+        if (d.commodity === 'crude_oil') out.ropa_pj += pj;
+        else out.plyn_pj += pj;
+      });
+      return out;
+    });
+  }
 
   Promise.all([
     d3.csv(`${DATA}/imports-annual.csv`, importRow),
     d3.csv(`${DATA}/gdp.csv`, d => [+d.year, +d.value_mil_czk]),
-    csvWithNotes(`${DATA}/primary-energy.csv`, d => {
-      const row = { year: +d.year };
-      ENERGIE_KEYS.forEach(k => { row[k] = +d[k]; });
-      return row;
-    }),
-  ]).then(([imports, gdp, energie]) => {
+  ]).then(([imports, gdp]) => {
+    const energie = energyByCountry(imports);
     const ropa = aggregate(imports, 'crude_oil', ROPA);
     const plyn = aggregate(imports, 'natural_gas', PLYN);
     const gdpByYear = new Map(gdp);
@@ -153,18 +173,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function render({ ropa, plyn, payments, energie }) {
     const last = payments[payments.length - 1];
-    // The rows sum to ~99.2, not 100, so the headline share is taken against
-    // each year's own total — the same normalisation the chart applies.
     const lastEnergie = energie[energie.length - 1];
-    const energieTotal = d3.sum(ENERGIE_KEYS, k => lastEnergie[k]);
-    const importedPct = 100 * (lastEnergie.dovoz_ropy + lastEnergie.dovoz_plynu) / energieTotal;
+    const energiePJ = d3.sum(keysOf(FOSIL), k => lastEnergie[k]);
     document.getElementById('data-year').textContent = `Rok ${YEAR_TO}`;
     document.getElementById('kpi-total').textContent =
       fokFormatNumber(last.total_czk_mld, 1) + ' mld. Kč';
     document.getElementById('kpi-gdp').textContent =
       fokFormatNumber(last.gdp_share_pct, 1) + ' % HDP';
     document.getElementById('kpi-energy').textContent =
-      fokFormatNumber(importedPct, 0) + ' %';
+      fokFormatNumber(energiePJ, 0) + ' PJ';
 
     // The two fuels, wherever they are drawn side by side. Deliberately not
     // ROPA.RU's red — ropa and Rusko appear in charts a screen apart and must
@@ -182,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Every other year, so the labels never collide once the panels are narrow.
     const xTicks = years.filter((_, i) => i % 2 === 0);
     const czkMld = d => `${fokFormatNumber(d, 1)} mld. Kč`;
+    const pj     = d => `${fokFormatNumber(d, 1)} PJ`;
     const head   = y => `<strong style="font-family:${theme.font}">${y}</strong><br>`;
     const plain  = s => `<span style="font-family:${theme.font}">${s}</span>`;
 
@@ -192,6 +210,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxMt  = Math.ceil(d3.max(both, d => d.mt));
 
     const shareRows = fuel => fuel.rows.map(d => ({ year: d.year, ...d.shares }));
+
+    const fosilKeys   = keysOf(FOSIL);
+    const fosilColors = colorsOf(FOSIL);
+    const fosilLabels = labelsOf(FOSIL);
 
     const money = (sel, fuel, color) => w => fokBarChart(sel, fuel.rows, {
       x: d => String(d.year), y: d => d.czk_mld,
@@ -253,12 +275,28 @@ document.addEventListener('DOMContentLoaded', () => {
       })],
 
       ['#chart-celkem-energie', w => fokAreaChartStacked('#chart-celkem-energie', energie, {
-        x: d => d.year, keys: ENERGIE_KEYS,
-        colors: Object.fromEntries(Object.entries(ENERGIE).map(([k, v]) => [k, v[1]])),
-        labels: Object.fromEntries(Object.entries(ENERGIE).map(([k, v]) => [k, v[0]])),
-        proportional: true, yLabel: '%',
+        x: d => d.year, keys: fosilKeys,
+        colors: fosilColors, labels: fosilLabels,
+        yLabel: 'PJ',
         width: w, height: 260, theme, legend: true,
         xTickValues: xTicks, xFormat: String,
+        // The series peaks just under 700 PJ; left to itself the axis puts 14
+        // labels on a 320px-wide panel.
+        yTickValues: [0, 200, 400, 600],
+        yFormat: v => fokFormatNumber(v, 0),
+        // The library's own tooltip lists the bands but not what they add up to,
+        // which is what this chart exists for. Same shape as the default —
+        // topmost band first — then the split the stack hides, because the
+        // bands answer "from where" and say nothing about which fuel.
+        tooltipHtml: row => head(row.year)
+          + fosilKeys.slice().reverse().map(k =>
+              `<span style="color:${fosilColors[k]}">■</span> `
+              + plain(`${fosilLabels[k]}: ${pj(row[k])}`)).join('<br>')
+          + `<div style="font-family:${theme.font};margin-top:4px;padding-top:4px;`
+          + `border-top:1px solid ${theme.colors.gridLine}">`
+          + `Ropa: ${pj(row.ropa_pj)}<br>Zemní plyn: ${pj(row.plyn_pj)}`
+          + `<div style="font-weight:700">Celkem: ${pj(row.ropa_pj + row.plyn_pj)}</div>`
+          + `</div>`,
       })],
 
       ['#chart-ropa-czk',  money('#chart-ropa-czk',  ropa, COLOR_ROPA)],
