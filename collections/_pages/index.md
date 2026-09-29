@@ -42,7 +42,7 @@ slug: index
       </div>
       <div class="col-md-6" markdown="0">
         <br>
-        <p>V polarizované debatě o klimatu lidé často utíkají k extrémům – bagatelizaci, nebo katastrofickým scénářů</p>
+        <p>V polarizované debatě o klimatu lidé často utíkají k extrémům – bagatelizaci, nebo katastrofickým scénářům.</p>
         <p>Po šesti letech jsme proto <strong>výrazně přepracovali náš původní Atlas klimatické změny</strong>. Přináší pevné základy pro porozumění změně klimatu v přehledných infografikách a srozumitelných textech. Aktualizovaný a rozšířený atlas si můžete přečíst online, stáhnout zdarma, nebo si koupit vytištěný.</p>
   </div>
   </div>
