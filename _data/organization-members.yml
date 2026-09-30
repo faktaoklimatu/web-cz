@@ -60,6 +60,14 @@
     email: "petr.danis@faktaoklimatu.cz"
     linkedin: "https://www.linkedin.com/in/petr-danis/"
 
+  - id: "jakub-komarek"
+    name: "Jakub Komárek"
+    position: "Analytik a ekonom"
+    summary: "Z dat vytváří příběhy. Z pozice ekonoma se zajímá o distribuční otázky spojené s dekarbonizací. Dříve na MF připravoval podklady pro renovační strategii budov. V PAQ Research stál u zrodu daňových analýz a NERV doporučení pro dostupnější bydlení."
+    img: "jakub-komarek.jpg"
+    email: "jakub.komarek@faktaoklimatu.cz"
+    linkedin: "https://www.linkedin.com/in/jakub-kom%C3%A1rek/"
+
   - id: "marcel-otruba"
     name: "Marcel Otruba"
     position: "Designer"
@@ -183,7 +191,7 @@
 
   - id: "hana-tesak-vrtala"
     name: "Hana Tesák Vrtala"
-    summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích vyučujících přírodních věd. Ve Faktech o klimatu spoluvytvářela podcast [2050](https://2050podcast.cz/)."
+    summary: "Věnuje se komunikaci vědy a pedagogickému vzdělávání budoucích vyučujících přírodních věd. Ve Faktech o klimatu spoluvytváří podcast [2050](https://2050podcast.cz/)."
     linkedin: "https://www.linkedin.com/in/hana-vrtalová/"
     twitter: "https://twitter.com/HVrtalova"
 

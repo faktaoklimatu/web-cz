@@ -3,6 +3,7 @@ layout:      explainer
 title:       "Jak má mechanismus CBAM chránit evropský průmysl?"
 slug:        "cbam"
 published:   2026-08-06
+updated:     2026-09-23
 authors:
   - id: "katerina-kolouchova"
   - id: "jan-krcal"
@@ -10,6 +11,9 @@ authors:
   - name: "Barbora Zoja Zuchová"
     minor-role: "korektura"
 op-jak:      true
+extra-scripts:
+- https://d3js.org/d3.v7.min.js
+- /assets-local/js/cbam-povolenky.js
 cover-source-author:        "Venti Views"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"
@@ -34,13 +38,7 @@ Odlišné emisní standardy se mohou projevovat náhradou dražších domácích
 
 [Povolenky zdarma](https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/about-free-allocation_en) dostávají unijní výrobci od startu EU ETS v roce 2005. Zpočátku to bylo především z důvodu bezpečného postupného náběhu systému, v posledních letech je to kvůli riziku úniku uhlíku a existenci zahraniční konkurence. Zatímco většina elektráren tak už od roku 2013 povolenky zdarma nedostává, většina průmyslových podniků kvůli riziku úniku uhlíku stále ano. Tato volná alokace má ale postupně končit, protože nemotivuje ke snižování emisí CO<sub>2</sub>.
 
-{% include figure.html
-    name="cs-emise-povolenky-des.svg"
-    name-mobile="cs-emise-povolenky-mob.svg"
-    alt="Graf ukazuje vývoj povolenek alokovaných zdarma v energetice a průmyslu v poměru k ověřeným emisím. Zatímco celkově povolenky alokované zdarma klesají, průmyslové podniky jich stále dostávají tolik, aby jimi pokryly většinu svých emisí."
-    source-text="EEA"
-    source-url="https://www.eea.europa.eu/en/analysis/maps-and-charts/emissions-trading-viewer-1-dashboards"
-%}
+{% include includes-local/cbam-charts.html %}
 
 ## CBAM
 
@@ -71,13 +69,7 @@ V praxi však může být počet potřebných certifikátů snížen v následuj
 
 Konečný počet potřebných CBAM certifikátů je tak možné vypočítat dle vzorce níže.
 
-{% include figure.html
-    name="cs-cbam-vypocet-des.svg"
-    name-mobile="cs-cbam-vypocet-mob.svg"
-    alt="Graf ukazuje vzorec, podle kterého lze vypočítat, kolik CBAM certifikátu bude muset dovozce nakoupit."
-    source-text="Ministerstvo životního prostředí"
-    source-url="https://mzp.gov.cz/cz/agenda/klima-a-energetika/emisni-obchodovani/cbam"
-%}
+{% include includes-local/cbam-vypocet.html %}
 
 {% capture priklad %}
 

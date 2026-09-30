@@ -171,6 +171,7 @@ subtopics:
   - emisni-povolenky-ets
   - emisni-povolenky-ets-2
   - cbam
+  - 2026-interaktivni-prehled-ets
   - spolecenske-naklady-uhliku
   - zpoplatneni-emisi-svet
   - mitigacni-opatreni-mmf

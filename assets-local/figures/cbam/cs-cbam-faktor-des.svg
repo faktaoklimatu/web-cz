@@ -11,15 +11,11 @@
       }
 
       .cls-4 {
-        fill: #5a338e;
-      }
-
-      .cls-4, .cls-5 {
-        opacity: .81;
+        fill: #1b4c6f;
       }
 
       .cls-5 {
-        fill: #2e6087;
+        fill: #8ba1b1;
       }
 
       .cls-6 {
