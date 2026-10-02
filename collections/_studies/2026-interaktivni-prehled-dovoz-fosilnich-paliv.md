@@ -36,8 +36,6 @@ extra-scripts:
 <div class="section pt-4">
   <div class="container">
 
-    <div class="data-year"><i class="fa-regular fa-calendar"></i> <span id="data-year"></span></div>
-
     <div class="chart-row" id="main-charts">
       <div class="chart-panel">
         <div class="kpi">
@@ -45,6 +43,7 @@ extra-scripts:
           <div class="kpi-value" id="kpi-total"></div>
         </div>
         <div id="chart-celkem-czk"></div>
+        <p class="kpi-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="chart-panel">
         <div class="kpi">
@@ -52,51 +51,53 @@ extra-scripts:
           <div class="kpi-value" id="kpi-gdp"></div>
         </div>
         <div id="chart-celkem-hdp"></div>
+        <p class="kpi-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="chart-panel">
         <div class="kpi">
-          <div class="kpi-label">Dovoz fosilních paliv</div>
+          <div class="kpi-label">Dovoz ropy a zemního plynu</div>
           <div class="kpi-value" id="kpi-energy"></div>
         </div>
         <div id="chart-celkem-energie"></div>
-        <p class="chart-note">Hmotnost přepočtena na energii výhřevnostmi (ropa 42,6 GJ/t, zemní plyn 48,0 GJ/t).</p>
+        <p class="kpi-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
 
-{% comment %}
-  Od tabletu je rámeček jeden na palivo: .fuel-box ho kreslí a grafy uvnitř
-  svůj vlastní nemají. Na mobilu .fuel-box nic nekreslí a panely si rámeček
-  berou zpátky, protože poskládané pod sebou se bez něj špatně oddělují.
-  Od velkého breakpointu stojí obě paliva vedle sebe, aby šla porovnat.
-{% endcomment %}
-    <div class="fuel-row">
-
-      <div class="fuel">
-        <h2 class="fuel-heading">Ropa</h2>
-        <div class="fuel-box">
-          <div class="chart-row">
-            <div class="chart-panel"><div id="chart-ropa-czk"></div></div>
-            <div class="chart-panel"><div id="chart-ropa-kg"></div></div>
-          </div>
-          <div class="chart-panel"><div id="chart-ropa-zeme"></div></div>
+    <div class="fuel-box">
+      <h2 class="fuel-heading">Ropa</h2>
+      <div class="chart-row">
+        <div class="fuel-chart"><div id="chart-ropa-czk"></div></div>
+        <div class="fuel-chart v1-only">
+          <div id="chart-ropa-energie"></div>
+        </div>
+        <div class="fuel-chart v2-only"><div id="chart-ropa-objem"></div></div>
+        <div class="fuel-chart v2-only">
+          <div id="chart-ropa-podil"></div>
         </div>
       </div>
+    </div>
 
-      <div class="fuel">
-        <h2 class="fuel-heading">Zemní plyn</h2>
-        <div class="fuel-box">
-          <div class="chart-row">
-            <div class="chart-panel"><div id="chart-plyn-czk"></div></div>
-            <div class="chart-panel"><div id="chart-plyn-kg"></div></div>
-          </div>
-          <div class="chart-panel">
-            <div id="chart-plyn-zeme"></div>
-            <p class="chart-note">Jako „neurčená země“ vykazuje statistika dovoz, u něhož není země původu uvedena — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
-          </div>
+    <div class="fuel-box">
+      <h2 class="fuel-heading">Zemní plyn</h2>
+      <div class="chart-row">
+        <div class="fuel-chart"><div id="chart-plyn-czk"></div></div>
+        <div class="fuel-chart v1-only">
+          <div id="chart-plyn-energie"></div>
+          <p class="chart-note">Kategorie „Ostatní“ zahrnuje i dovoz, u něhož statistika zemi původu neuvádí — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
+        </div>
+        <div class="fuel-chart v2-only"><div id="chart-plyn-objem"></div></div>
+        <div class="fuel-chart v2-only">
+          <div id="chart-plyn-podil"></div>
+          <p class="chart-note">Kategorie „Ostatní“ zahrnuje i dovoz, u něhož statistika zemi původu neuvádí — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
         </div>
       </div>
-
     </div>
 
   </div>
+</div>
+
+{% comment %} Jen pro prototyp: přepíná dvě rozvržení boxů s palivy. {% endcomment %}
+<div class="variant-switch" role="group" aria-label="Varianta rozvržení">
+  <button type="button" data-variant="1">Varianta 1</button>
+  <button type="button" data-variant="2">Varianta 2</button>
 </div>

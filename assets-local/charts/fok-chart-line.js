@@ -29,6 +29,7 @@
  *   series      {function}  accessor for series key (multi-series mode)
  *   multi       {boolean}   treat data as multi-series (default false)
  *   area        {boolean}   fill area under line(s) (default false)
+ *   areaOpacity {number}    opacity of that fill (default 0.18)
  *   legend      {boolean}   render a legend (multi-series, default false)
  *   yLabel      {string}    y-axis label
  *   xLabel      {string}    x-axis label
@@ -173,7 +174,7 @@ function fokLineChart(containerSelector, data, options = {}) {
         .attr('fill', color)
         .attr('stroke', '#fff')
         .attr('stroke-width', 0.5)
-        .attr('opacity', 0.18);
+        .attr('opacity', options.areaOpacity ?? 0.18);
     }
 
     seriesG.append('path')

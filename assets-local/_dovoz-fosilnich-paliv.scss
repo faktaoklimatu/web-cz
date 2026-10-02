@@ -25,16 +25,6 @@ body.dovoz-fosilnich-paliv {
         background-color: #fff;
     }
 
-    /* Which year the KPI figures speak for, set above them like a caption. */
-    .data-year {
-        font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #a0aec0;
-        margin-bottom: 10px;
-    }
-
     /* Panels share a row while there is room and stack on a phone. The row owns
        the spacing, so the panels' own bottom margin is dropped inside it. */
     .chart-row {
@@ -43,73 +33,33 @@ body.dovoz-fosilnich-paliv {
         gap: var(--dovoz-gap);
     }
 
-    .chart-row > .chart-panel {
+    .chart-row > .chart-panel,
+    .chart-row > .fuel-chart {
         flex: 1;
         min-width: 280px;
         margin-bottom: var(--dovoz-gap);
     }
 
-    /* Names the fuel the box beneath it describes. It stands outside that box,
-       so it is the one heading here the chart library does not draw — hence the
-       explicit font above. */
+    /* Names the fuel its box describes. It is the one heading here the chart
+       library does not draw — hence the explicit font below. */
     .fuel-heading {
         font-size: 24px;
         font-weight: 700;
         color: #2d3748;
-        margin: 28px 0 12px;
+        margin: 0 0 12px;
     }
 
-    .fuel {
-        margin-bottom: 28px;
-    }
+    /* One box per fuel: its heading and charts read as one unit, so the
+       box is drawn once around them and the charts inside get none. The box's
+       own padding closes the bottom, so the row's margins are dropped. */
+    .fuel-box {
+        border: var(--dovoz-border);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin: 28px 0 var(--dovoz-gap);
 
-    /* One box per fuel, from the tablet breakpoint up: the four charts about a
-       fuel read as one unit, so the box is drawn once around them and the
-       panels inside give up their own. 768px is where the two small charts
-       start sharing a row (2 × 280px + gap needs a 576px-wide row, which the
-       container reaches at about that viewport) — below it they are stacked
-       anyway and the nesting would only cost width. */
-    /* The two fuels are meant to be compared, so from the large breakpoint their
-       boxes stand side by side. 992px is the first width where that still
-       leaves the four charts inside something usable: the container is 960px,
-       which puts the two small charts at about 210px — the narrowest the chart
-       guidelines call workable. Below it the row is a plain block and the boxes
-       stack. */
-    @media (min-width: 992px) {
-        .fuel-row {
-            display: flex;
-            gap: var(--dovoz-gap);
-        }
-
-        .fuel-row > .fuel {
-            flex: 1 1 0;
-            min-width: 0;
-        }
-
-        /* Halving the box halves the row inside it too, so the small charts
-           have to give up the 280px floor that keeps them apart elsewhere. */
-        .fuel-box .chart-row > .chart-panel {
-            min-width: 0;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .fuel-box {
-            background: #fff;
-            border: var(--dovoz-border);
-            border-radius: 8px;
-            padding: 16px 18px;
-
-            .chart-panel {
-                background: none;
-                border: 0;
-                padding: 0;
-            }
-
-            /* The box's own padding closes the bottom. */
-            > .chart-panel:last-child {
-                margin-bottom: 0;
-            }
+        .chart-row > * {
+            margin-bottom: 0;
         }
     }
 
@@ -139,6 +89,8 @@ body.dovoz-fosilnich-paliv {
 
     /* ── Chart panels ──────────────────────────────────────────────────────── */
     .chart-panel {
+        display: flex;
+        flex-direction: column;
         background: #fff;
         border-radius: 8px;
         border: var(--dovoz-border);
@@ -149,8 +101,19 @@ body.dovoz-fosilnich-paliv {
     /* The charts set a font-family inline on everything they draw; this only
        catches the KPI row and anything a chart leaves unstyled. */
     .chart-panel,
-    .fuel-heading {
+    .fuel-box {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+
+    /* What the headline figure and its chart say, in a sentence or two. Sits
+       on the bottom of the panel, so the texts line up across the row even
+       where a chart has no legend; the padding keeps it off a tall chart. */
+    .kpi-text {
+        margin: auto 0 0;
+        padding-top: 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #515b66;
     }
 
     /* Explains a band whose label alone would mislead; sits under the chart it
@@ -160,5 +123,43 @@ body.dovoz-fosilnich-paliv {
         font-size: 13px;
         line-height: 1.45;
         color: #a0aec0;
+    }
+
+    /* ── Variant switch (prototype only) ───────────────────────────────────── */
+    /* Both layouts of the fuel boxes are in the markup; the body class set by
+       the floating buttons decides which columns show. */
+    &:not(.variant-2) .v2-only,
+    &.variant-2 .v1-only {
+        display: none;
+    }
+
+    /* Bottom left, because the dev-version badge holds the bottom right. */
+    .variant-switch {
+        position: fixed;
+        left: 16px;
+        bottom: 16px;
+        z-index: 1000;
+        display: flex;
+        overflow: hidden;
+        background: #fff;
+        border: var(--dovoz-border);
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+
+        button {
+            border: 0;
+            background: none;
+            padding: 8px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #515b66;
+            cursor: pointer;
+        }
+
+        button[aria-pressed="true"] {
+            background: #3e3e4c;
+            color: #fff;
+        }
     }
 }

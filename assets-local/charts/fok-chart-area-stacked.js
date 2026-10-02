@@ -29,6 +29,8 @@
  *   labels        {object}    { key: labelString }
  *   proportional  {boolean}   normalize each row to 100 % (default false)
  *   legend        {boolean}   render a color legend below the chart (default false)
+ *   totalLine     {string}    colour of a solid line along the top of the stack (the total)
+ *   yMax          {number}    fixed top of the y-axis, e.g. to share a scale between charts
  *   yLabel        {string}    y-axis label
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
@@ -87,7 +89,8 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
 
   // ── Scales ──────────────────────────────────────────────────────────────
   const xScale = d3.scaleLinear().domain(d3.extent(xVals)).range([0, inner.w]);
-  const yMax   = options.proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
+  const yMax   = options.proportional ? 100
+    : options.yMax ?? d3.max(series, s => d3.max(s, d => d[1]));
   const yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]);
 
   // ── Grid + Axes ──────────────────────────────────────────────────────────
@@ -154,6 +157,16 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
       .attr('opacity', 0.5)
       .attr('d', topLineGen);
   });
+
+  if (options.totalLine && series.length) {
+    g.append('path')
+      .datum(series[series.length - 1])
+      .attr('fill', 'none')
+      .attr('stroke', options.totalLine)
+      .attr('stroke-width', 2)
+      .attr('pointer-events', 'none')
+      .attr('d', topLineGen);
+  }
 
   // ── Tooltip + vertical crosshair ─────────────────────────────────────────
   const tip = fokTooltip(theme);
