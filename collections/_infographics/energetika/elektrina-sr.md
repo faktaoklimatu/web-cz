@@ -4,9 +4,6 @@ title:      "Elektřina na Slovensku: výroba, spotřeba a emise"
 slug:       "elektrina-sr"
 redirect_from: "/elektrina-sr"
 published:  2022-01-10
-weight:     130
-tags-scopes: [ eu ]
-tags-topics: [ energetika ]
 caption:    "Přehled výroby elektřiny podle zdrojů, souvisejících emisí CO<sub>2</sub>eq a spotřeby elektřiny podle sektorů. Uhelné a plynové zdroje měly v roce 2019 20% podíl na výrobě elektřiny, ovšem stály za naprostou většinu emisí v rámci slovenské elektroenergetiky."
 data-our:   "https://docs.google.com/spreadsheets/d/1QuTWA4zH6moMBC29JyPXXc3Fi0PXeyCw5nwJR9opAvE/edit?usp=sharing"
 data-orig:  [ [ "Energetika 2019", "https://slovak.statistics.sk:443/wps/portal?urile=wcm:path:/obsah-sk-pub/publikacie/vsetkypublikacie/92027e17-ae10-424c-87c4-e73038aeb9dc" ]

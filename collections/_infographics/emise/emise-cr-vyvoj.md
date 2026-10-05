@@ -4,9 +4,6 @@ title:         "Emise skleníkových plynů v ČR v letech 1990–2024"
 slug:          "emise-cr-vyvoj"
 redirect_from: "/emise-cr-vyvoj"
 published:     2020-10-09
-weight:        75
-tags-scopes:   [ cr ]
-tags-topics:   [ emise, energetika ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v ČR v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 195,5 mil. tun CO<sub>2</sub>eq, klesly celkové emise ČR na 98,0 mil. tun CO<sub>2</sub>eq v roce 2024."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-over-time-eu.ipynb"
 data-orig:

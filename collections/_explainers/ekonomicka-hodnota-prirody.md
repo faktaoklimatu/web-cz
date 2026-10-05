@@ -7,9 +7,6 @@ authors:
   - id: "jirka-lnenicka"
   - names-or-ids: ["Vojtěch Kotecký", "tom-protivinsky"]
     minor-role: "konzultace"
-weight:      79
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author: "Zdeněk Macháček"
 cover-source-url: "https://unsplash.com/photos/lTebCR71_7A"
 cover-source-text: "Unsplash"

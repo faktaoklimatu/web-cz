@@ -82,10 +82,12 @@ subtopics:
   content:  # U nového obsahu zvaž přidání také do ekonomika>opatreni a emise>mitigace.
   - zelena-dohoda-pro-evropu
   - emisni-povolenky-ets
+  - 2026-interaktivni-prehled-ets
   - fit-for-55
   - fit-for-55-opatreni
   - 19-fit-for-55
   - emisni-povolenky-ets-2
+  - cbam
   - fondy-eu
   - taxonomie-eu
   - fondy-eu-cde

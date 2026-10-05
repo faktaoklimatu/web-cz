@@ -4,9 +4,6 @@ title:         "Vývoj světových emisí CO₂"
 slug:          "emise-co2-svet-vyvoj"
 redirect_from: "/emise-co2-svet-vyvoj"
 published:     2023-08-11
-weight:        75
-tags-scopes:   [ svet ]
-tags-topics:   [ emise ]
 caption:       "Emise oxidu uhličitého vzrostly ze 17 miliard tun v roce 1959 na 41,4 miliard tun v roce 2023. Z naprosté většiny nyní pochází ze spalování fosilních paliv a z průmyslových procesů."
 data-our:   "https://docs.google.com/spreadsheets/d/1z5M-S0l9FrBlkAt1D6so0PncsN4gIu3HJTLNy2HWpuQ/edit?usp=sharing"
 data-orig:

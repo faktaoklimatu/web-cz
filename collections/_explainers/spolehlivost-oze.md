@@ -8,9 +8,6 @@ authors:
   - id: "matej-grabovsky"
   - id: "matej-grabovsky"
     minor-role: "vizualizace"
-weight:      98.5
-tags-scopes: [ cr ]
-tags-topics: [ energetika ]
 cover-source-author:        "Karsten Würth"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash licence"

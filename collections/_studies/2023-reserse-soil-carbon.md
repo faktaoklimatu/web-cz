@@ -3,10 +3,7 @@ layout:        survey
 title:         "Uhlík v půdě"
 slug:          2023-reserse-soil-carbon
 redirect_from: "/2023-reserse-soil-carbon"
-weight:        305
 published:     2023-08-04
-tags-scopes:   [ svet ]
-tags-topics:   [ emise, opatreni ]
 use-preview-image: true
 caption:       "Přehled studií o uhlíku v půdě."
 intro: |

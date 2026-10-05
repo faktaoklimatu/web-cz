@@ -9,9 +9,6 @@ authors:
     minor-role: "editace"
   - name: "Michal Čejka, Tomáš Trubačík"
     minor-role: "konzultace"
-weight:      90
-tags-scopes: [ cr ]
-tags-topics: [ opatreni ]
 cover-source-author:        "Jakub Żerdzicki"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"

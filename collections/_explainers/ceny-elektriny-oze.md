@@ -9,9 +9,6 @@ authors:
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
-weight:      77
-tags-scopes: [ eu ]
-tags-topics: [ energetika ]
 cover-source-author:      "Arno Senoner"
 cover-source-text:        "A wind farm with a wind turbine in the background"
 cover-source-license:     "Unsplash licence"

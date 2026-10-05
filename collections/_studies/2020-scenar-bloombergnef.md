@@ -4,9 +4,6 @@ title:       "BloombergNEF: Scénář transformace elektroenergetiky ČR"
 slug:        "2020-scenar-bloombergnef"
 redirect_from: "/2020-scenar-bloombergnef"
 published:   2020-11-19
-weight:      93
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Studie BloombergNEF zkoumá možnou proměnu české elektroenergetiky do roku 2030. Tato studie modeluje nákladově nejvýhodnější vývoj. Počítá při tom se stávají úpravou emisních povolenek a nepředpokládá žádné další politické zásahy, které by cenu uhlíku zvyšovaly. Studie ukazuje, že vývoj s nejnižšími celkovými náklady také současně výrazně snižuje emise skleníkových plynů."
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"
 data-orig:

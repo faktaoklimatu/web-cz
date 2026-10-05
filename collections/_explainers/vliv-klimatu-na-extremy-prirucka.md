@@ -12,9 +12,6 @@ authors:
     link: "https://twitter.com/FrediOtto"
   - id: "jirka-lnenicka"
     minor-role: "překlad"
-weight:      80
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 cover-source-author: "Greenpeace"
 cover-source-license: "CC BY-NC-ND"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-nd/3.0/cz/"

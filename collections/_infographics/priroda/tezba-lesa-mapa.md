@@ -4,9 +4,6 @@ title:         "Plocha těžby lesů v krajích v letech 2016–2020"
 slug:          "tezba-lesa-mapa"
 redirect_from: "/tezba-lesa-mapa"
 published:     2021-10-25
-weight:        100
-tags-scopes:   [ cr ]
-tags-topics:   [ priroda ]
 caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Olomoucký kraj a kraj Vysočina."
 ---
 

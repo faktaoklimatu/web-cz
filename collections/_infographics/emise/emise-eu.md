@@ -4,9 +4,6 @@ title:      "Emise skleníkových plynů států EU"
 slug:       "emise-eu"
 redirect_from: "/emise-eu"
 published:  2019-08-22
-weight:     95
-tags-scopes: [ eu ]
-tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí 27 členských států EU a přepočet na obyvatele."
 data-jupyter:  "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-EU.ipynb"
 data-orig:

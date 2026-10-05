@@ -14,9 +14,6 @@ authors:
     affiliation: "Ústav výzkumu globální změny AV ČR"
   - name: "Libor Elleder"
     affiliation: "Český hydrometeorologický ústav"
-weight:      80
-tags-scopes: [ cr ]
-tags-topics: [ klima ]
 cover-source-author: "Honza Groh"
 cover-source-license: "CC BY 3.0"
 cover-source-license-url: "https://creativecommons.org/licenses/by-sa/3.0"

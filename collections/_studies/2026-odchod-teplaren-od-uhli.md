@@ -7,10 +7,7 @@ redirect_from:
 - /2026-odchod-teplaren-od-uhli
 - /dashboard-teplaren
 - /odchod-teplaren-od-uhli
-weight:        209
 published:     2026-02-09
-tags-scopes:   [ cesko ]
-tags-topics:   [ energetika ]
 use-preview-image: true
 caption:       "V jakém stavu je odchod od uhlí u velkých tepláren v Česku?"
 intro: |

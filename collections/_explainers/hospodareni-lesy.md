@@ -7,9 +7,6 @@ authors:
   - id: "jirka-lnenicka"
   - name: "Pavel Rotter, Matěj Šašek"
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 cover-source-author: "Aleš Erber"
 cover-source-license: "Použito se svolením autora"
 cover-source-text: "Fotoarchiv autora (Rýchorský prales, Krkonoše)"

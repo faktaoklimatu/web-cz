@@ -4,9 +4,6 @@ title:      "Světové emise CO₂ z fosilních paliv a výroby cementu"
 slug:       "emise-fosilni-paliva"
 redirect_from: "/emise-fosilni-paliva"
 published:  2021-02-26
-weight:     95
-tags-scopes: [ svet ]
-tags-topics: [ emise, energetika ]
 caption:    "Světové emise CO<sub>2</sub> ze spalování uhlí, ropy a plynu narostly za posledních 60 let čtyřnásobně. K dosažení uhlíkové neutrality bude potřeba, aby klesly prakticky na nulu. "
 data-our:   "https://docs.google.com/spreadsheets/d/19PiqYV6FkttzrNcjkbTQmphzxgydtTc1MB6nDZpybj0/edit?usp=sharing"
 data-orig:  [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ]

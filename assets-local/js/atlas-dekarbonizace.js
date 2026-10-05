@@ -67,7 +67,8 @@ $(function () {
   });
 
   // Download modal
-  const PDF_URL = '/assets-local/files/atlas-dekarbonizace-ceska.pdf';
+  const PDF_URL = $('#download-modal').data('pdf-url')
+    || '/assets-local/files/atlas-dekarbonizace-ceska.pdf';
 
   const triggerDownload = () => {
     const a = document.createElement('a');

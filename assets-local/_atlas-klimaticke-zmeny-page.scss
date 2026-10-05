@@ -1,0 +1,208 @@
+/* Atlas klimatické změny — rules used only by this page.
+ * Shared layout: _product-page.scss
+ */
+
+@use "colors";
+@use "product-page" as pp;
+
+.atlas-klimaticke-zmeny-page {
+
+    /* This page shows one static spread instead of the carousel. */
+    .preview-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .preview-notes {
+        font-size: 1.2rem;
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        // Spacing around the pair of buttons lives on the wrapper, so it is
+        // independent of the gap between the buttons themselves.
+        .preview-actions {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            margin: 0 10px 10px 0;
+        }
+
+        // Poznámka pod tlačítky: menší a tlumená proti 1.2rem okolního textu.
+        // Odkaz na mail drží barvu poznámky, aby se linka z odstavce nevylomila.
+        .order-note {
+            font-size: 0.9rem;
+            color: colors.$c-grey;
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .about-section {
+        background: var(--pp-surface);
+    }
+
+    .about-container li {
+        margin-bottom: 0.5rem;
+    }
+
+    .about-section .btn {
+        margin: 0 10px 10px 0;
+    }
+
+    .about-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    --pp-accent: #3e3e4c;
+    --pp-surface: #f7f7f7;
+
+    .hero-text h1,
+    .hero-text p {
+        font-family: "Inter", sans-serif;
+    }
+
+    // Site-default .btn geometry, inverted for the dark hero photo:
+    // white fill and outline, dark label.
+    .btn-primary.btn-cta {
+        border: 1px solid white;
+        border-radius: 0.25rem;
+        background: white;
+        color: colors.$c-secondary;
+        line-height: 1.5;
+
+        // Site-default hover: fills with the accent, no lift.
+        &:hover {
+            background: colors.$c-accent;
+            border-color: colors.$c-accent;
+            color: white;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
+    .hero {
+        background-image: url("/assets-local/atlas/atlas-klimaticke-zmeny-background.png");
+        background-size: cover;
+    }
+
+    .hero-image {
+        animation: none;
+        top: 0px
+    }
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .feature-card {
+        padding-left: 0;
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .course-content {
+        font-size: 1.2rem;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    // Text column wider than the button stack.
+    .about-grid {
+        grid-template-columns: 4fr 3fr;
+    }
+
+    // .testimonials-section centres everything; the heading opts out and lines
+    // up with .testimonials-container instead of the page edge.
+    // Sized to match .course-text h2, including its 968px step-down.
+    .testimonials-section > h2 {
+        max-width: pp.$fullscreen-max-width;
+        margin-inline: auto;
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @media (max-width: 968px) {
+            font-size: 2rem;
+        }
+    }
+    .feature-card strong {
+        padding-bottom: 0.5rem;
+    }
+
+    // Same look as the site's default .btn.btn-secondary (Bootstrap 4.6 geometry).
+    // The toggle shares the heading's container box, so it lines up with the
+    // heading and the first card instead of being centred in the section.
+    .testimonials-footer {
+        @include pp.container;
+        text-align: left;
+    }
+
+    // Nested under .testimonials-section to outweigh the shared rule above.
+    .testimonials-section .testimonials-toggle {
+        border-radius: 0.25rem;
+        border: 1px solid colors.$c-secondary;
+        background: transparent;
+        color: colors.$c-secondary;
+        line-height: 1.5;
+
+        &:hover {
+            background: colors.$c-accent;
+            border-color: colors.$c-accent;
+            color: white;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
+    .carousel {
+        border: none;
+    }
+
+    .testimonials-section {
+        background: var(--pp-surface);
+    }
+
+    .testimonials-section .testimonial-card {
+        border-bottom-left-radius: 1rem;
+    }
+
+    // .about-section is grey by default; this one section stays white.
+    .web-version {
+        background: white;
+    }
+
+    @media (min-width: 969px) {
+        // ponytail: nowrap on the container keeps the three CTAs on one line; they
+        // overflow the grid column on purpose. Widen .hero-content columns instead
+        // if the overflow ever collides with the book image.
+        .hero-text {
+            white-space: nowrap;
+        }
+
+        .hero-text p {
+            white-space: normal;
+        }
+    }
+
+    // Every button on the page: the Bootstrap ones, the hero CTAs and the
+    // testimonials toggle. Last in the block so it outranks the rules above,
+    // which share its specificity.
+    .btn,
+    .btn-primary.btn-cta,
+    .testimonials-section .testimonials-toggle {
+        padding: 0.6rem 1.25rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}

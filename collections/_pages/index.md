@@ -22,7 +22,7 @@ slug: index
     <div class="container">
         <ul class="nav nav-tabs flex-nowrap flex-md-wrap align-items-stretch overflow-hidden" role="tablist">
             <li class="nav-item" role="presentation">
-                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Kapacitní trh v Česku</h2>
+                <h2 class="nav-link bg-extralight-blue active" id="tab-role-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Vybíráme: Atlas klimatické změny</h2>
             </li>
             <li class="nav-item" role="presentation">
                 <h2 class="nav-link bg-extralight-lightblue" id="tab-role-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nejnovější</h2>
@@ -37,19 +37,15 @@ slug: index
 <div class="tab-content" id="myTabContent">
   <div class="section tab-pane fade show active bg-extralight-blue pt-4 pb-4" id="tab1" role="tabpanel" aria-labelledby="tab-role-1"><div class="container lead">
     <div class="row">
-      <div class="col-md-6" markdown="1">
-
-Českou energetiku čeká v příštích letech odstavování uhelných elektráren. Ty je nutné nahradit čistšími řiditelnými zdroji, jejichž výstavba se však neobejde bez podpory. Stát proto připravuje **kapacitní trh** – systém aukcí, v nichž budou výrobci placeni za udržování záložní kapacity pro případ potřeby.
-
-K tématu jsme připravili [úvodní text](/explainery/2026-kapacitni-trh-v-cesku) vysvětlující fungování tohoto mechanismu a navazující [policy paper](/studie/2026-six-objectives-for-a-successful-capacity-market) (v angličtině), který definuje šest cílů pro jeho úspěšné zavedení v Česku – tedy zajištění spolehlivých dodávek za rozumné náklady a bez nadbytečné závislosti na plynu.
-</div>
-      <div class="col-md-3">
-        {% include preview-block.html slug="2026-kapacitni-trh-v-cesku" no_include_tags=true %}
+      <div class="col-md-4">
+        {% include preview-block.html slug="atlas" no_include_tags=true %}
       </div>
-      <div class="col-md-3">
-        {% include preview-block.html slug="2026-six-objectives-for-a-successful-capacity-market" no_include_tags=true %}
-      </div>
-    </div>
+      <div class="col-md-6" markdown="0">
+        <br>
+        <p>V polarizované debatě o klimatu lidé často utíkají k extrémům – bagatelizaci, nebo katastrofickým scénářům.</p>
+        <p>Po šesti letech jsme proto <strong>výrazně přepracovali náš původní Atlas klimatické změny</strong>. Přináší pevné základy pro porozumění změně klimatu v přehledných infografikách a srozumitelných textech. Aktualizovaný a rozšířený atlas si můžete přečíst online, stáhnout zdarma, nebo si koupit vytištěný.</p>
+  </div>
+  </div>
   </div></div>
 
   <div class="section tab-pane fade bg-extralight-lightblue pt-4 pb-4" id="tab2" role="tabpanel" aria-labelledby="tab-role-2"><div class="container">
@@ -70,7 +66,7 @@ K tématu jsme připravili [úvodní text](/explainery/2026-kapacitni-trh-v-cesk
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "2026-konec-uhli-v-cesku, atlas-dekarbonizace, 2024-cesty-k-ciste-a-levne-elektrine-2050" | split: ", " %}
+    {% assign featured_slugs = "2026-six-objectives-for-a-successful-capacity-market, 2026-konec-uhli-v-cesku, atlas-dekarbonizace" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>

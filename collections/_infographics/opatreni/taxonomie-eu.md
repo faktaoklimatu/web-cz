@@ -4,9 +4,6 @@ title:      "Co je taxonomie EU"
 slug:       "taxonomie-eu"
 redirect_from: "/taxonomie-eu"
 published:  2022-05-13
-weight:     95.5
-tags-scopes: [ eu ]
-tags-topics: [ opatreni, ekonomika ]
 caption:    "K dosažení klimatických cílů bude potřeba velký objem jak veřejného, tak soukromého kapitálu. V rámci Evropské unie by mobilizaci soukromého kapitálu měla napomoci právě taxonomie, neboť přináší klasifikaci udržitelných a klimatu prospěšných aktivit."
 ---
 

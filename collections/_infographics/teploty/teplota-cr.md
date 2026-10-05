@@ -5,9 +5,6 @@ slug:       "teplota-cr"
 redirect_from: "/teplota-cr"
 published:  2019-07-20
 updated:    2026-02-24
-weight:     96
-tags-scopes: [ cr ]
-tags-topics: [ klima ]
 caption:    "Průměrná roční teplota v České republice narostla za posledních 64 let o 2,3 °C."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "teplota-cr"

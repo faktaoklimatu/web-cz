@@ -10,9 +10,6 @@ authors:
     minor-role: "vizualizace"
   - id: "kristina-studena"
     minor-role: "editace"
-weight:      74.5
-tags-scopes: [ eu ]
-tags-topics: [ emise, opatreni, ekonomika ]
 cover-source-author:        "Artem Zhukov"
 cover-source-text:          "Unsplash"
 cover-source-license:       "Unsplash License"

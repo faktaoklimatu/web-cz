@@ -9,9 +9,6 @@ authors:
   - id: "matej-grabovsky"
   - id: "kristi-psorn-zakopcanova"
     minor-role: "vizualizace"
-weight:      80
-tags-scopes: [ cr ]
-tags-topics: [ klima ]
 cover-source-author: "Fakta o klimatu"
 cover-source-text: "Histogram teplotních odchylek"
 cover-source-url: "https://faktaoklimatu.cz/explainery/teplotni-extremy-cr"

@@ -5,9 +5,6 @@ slug:        "lesnicka-strategie-eu"
 published:   2021-12-06
 authors:
   - id: "jirka-lnenicka"
-weight:      76
-tags-scopes: [ evropa ]
-tags-topics: [ opatreni, priroda ]
 cover-source-author: "Marcin Jozwiak"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"

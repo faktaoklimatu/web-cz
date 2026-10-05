@@ -9,9 +9,6 @@ authors:
     minor-role: "editace"
   - id: "marcel-otruba"
     minor-role: "ilustrace"
-weight:      74
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 cover-source-author:      "CHUTTERSNAP"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash License"

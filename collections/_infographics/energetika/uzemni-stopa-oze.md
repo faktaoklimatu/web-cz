@@ -4,9 +4,6 @@ title:      "Územní stopa elektřiny ze slunce, větru a biomasy"
 slug:       "uzemni-stopa-oze"
 redirect_from: "/uzemni-stopa-oze"
 published:  2023-09-18
-weight:     90
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:    "Fotovoltaika má menší územní stopu než větrné parky, převážnou část území s větrnými elektrárnami lze ovšem využít k dalšímu účelu (třeba jako pole, louku nebo les). U solárních elektráren umístěných v krajině je toto dvojí využití také možné, ale omezenější. Mnohonásobně větší územní stopu pak má cíleně pěstovaná biomasa, která tak může sloužit pouze jako doplňkový zdroj energie."
 data-our:   "https://docs.google.com/spreadsheets/d/1SIiWX_pCvMLBQKPB25q6xLOZxWAxHYIBSQpmHPhlKsQ/edit"
 ---

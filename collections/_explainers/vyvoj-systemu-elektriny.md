@@ -7,9 +7,6 @@ authors:
  - ids: ["adam-bilek", "jan-krcal"]
  - ids: ["jirka-lnenicka", "katerina-kolouchova"]
    minor-role: "editace"
-weight:      74
-tags-scopes: [ ]
-tags-topics: [ ]
 cover-source-author:        "Bergadder"
 cover-source-text:          "Pixabay"
 cover-source-license:       "Pixabay License"

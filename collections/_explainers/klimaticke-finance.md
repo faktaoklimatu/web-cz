@@ -6,9 +6,6 @@ published:   2021-11-09
 updated:     2023-12-01
 authors:
   - names-or-ids: ["Alena Moravová", "tom-protivinsky", "katerina-kolouchova"]
-weight:      75
-tags-scopes: [ svet ]
-tags-topics: [ opatreni, ekonomika ]
 cover-source-author: "Harry Strauss"
 cover-source-license: "Pixabay License"
 cover-source-license-url: "https://pixabay.com/service/license/"

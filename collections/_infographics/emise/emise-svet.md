@@ -4,9 +4,6 @@ title:      "Emise skleníkových plynů světa"
 slug:       "emise-svet"
 redirect_from: "/emise-svet"
 published:  2019-10-28
-weight:     80
-tags-scopes: [ svet ]
-tags-topics: [ emise ]
 caption:    "Poměrové srovnání ročních emisí regionů světa a přepočet na obyvatele."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/treemap-Global.ipynb"
 data-orig:

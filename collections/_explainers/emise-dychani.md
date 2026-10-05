@@ -5,9 +5,6 @@ slug:        "emise-dychani"
 published:   2021-02-13
 authors:
   - id: "ondras-pribyla"
-weight:      76
-tags-scopes: [ svet ]
-tags-topics: [ emise , priroda ]
 cover-source-author: "dan carlson"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"

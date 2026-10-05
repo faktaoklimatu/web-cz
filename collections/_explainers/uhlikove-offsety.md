@@ -14,9 +14,6 @@ authors:
   - name: "Jana Smolíková"
     affiliation: CI2
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author:      "Niels Weiss"
 cover-source-text:        "Stromová alej"
 cover-source-license:     "Unsplash licence"

@@ -5,9 +5,6 @@ slug:        "lesni-certifikace"
 published:   2023-04-26
 authors:
   - ids: ["jirka-lnenicka", "ondras-pribyla"]
-weight:      89
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author: "Maksim Shutov"
 cover-source-url: "https://unsplash.com/photos/H8vhhepiiaU"
 cover-source-text: "Unsplash"

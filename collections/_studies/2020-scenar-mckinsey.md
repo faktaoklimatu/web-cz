@@ -4,9 +4,6 @@ title:       "McKinsey: Scénář transformace elektroenergetiky ČR"
 slug:        "2020-scenar-mckinsey"
 redirect_from: "/2020-scenar-mckinsey"
 published:   2021-06-07
-weight:      95
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Studie McKinsey hledá nákladově efektivní scénář dosažení snížení emisí v ČR o 55 % do roku 2030 a poté klimatické neutrality do roku 2050. Modeluje přitom vývoj nejen v energetice, ale i v průmyslu, zemědělství, dopravě a dalších odvětvích. Ukazuje, že dosažení těchto cílů v ČR je realistické a většina vynaložených investic se vrátí.
 "
 data-our:    "https://docs.google.com/spreadsheets/d/14CB428mF-_iHTgrLb2Dd0zJZ4xHUMdGhbr_FZ2fZy6k/edit"

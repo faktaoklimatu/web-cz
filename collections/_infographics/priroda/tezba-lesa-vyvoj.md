@@ -4,9 +4,6 @@ title:         "Kolik jehličnatého lesa bylo vytěženo v krajích?"
 slug:          "tezba-lesa-vyvoj"
 redirect_from: "/tezba-lesa-vyvoj"
 published:     2021-10-25
-weight:        100.4
-tags-scopes:   [ cr ]
-tags-topics:   [ priroda ]
 caption:       "Naprostou většinu těžby v letech 2016–2020 tvořila nahodilá těžba, která je převážně spojena s kůrovcovou kalamitou. Těžil se hlavně smrk a nejvíce postižen byl Kraj Vysočina a také Olomoucký a Moravskoslezský kraj."
 ---
 

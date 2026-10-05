@@ -4,9 +4,6 @@ title:       "Uhelné elektrárny a teplárny v Česku"
 slug:        "mapa-uhli-cr"
 redirect_from: "/mapa-uhli-cr"
 published:   2024-10-31
-weight:      103
-tags-scopes: [ cr ]
-tags-topics: [ energetika ]
 caption:     "Uhlí je pro Česko významným palivem – vyrábí se z něj dvě pětiny elektřiny a polovina dodaného tepla. Kde se v Česku uhlí těží a kde se nacházejí největší elektrárny a teplárny?"
 data-orig:
   - [ "Beyond Fossil Fuels", "https://beyondfossilfuels.org/database/" ]

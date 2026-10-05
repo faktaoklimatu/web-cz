@@ -4,9 +4,6 @@ title:       "Potenciál solární energie v ČR: střechy a fasády"
 slug:        "potencial-solarni-energie-cr-strechy"
 redirect_from: "/potencial-solarni-energie-cr-strechy"
 published:   2021-06-16
-weight:      79
-tags-scopes: [ cr ]
-tags-topics: [ energetika, opatreni ]
 caption:     "Studie společnosti EGÚ Brno odhaduje, že instalací solárních elektráren na všech technicky vhodných střechách a fasádách v Česku bychom pokryli až 27 % spotřeby elektřiny v roce 2019."
 data-our:    "https://docs.google.com/spreadsheets/d/1SnzcwGrrFUbEUl6Zg7WilwPmeaZcjUvdh53ItkW8Yp0/edit#gid=0"
 data-orig:

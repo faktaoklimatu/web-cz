@@ -4,9 +4,6 @@ title:      "Mapa změny teploty mezi lety 1961–2025"
 slug:       "mapa-zmeny-teploty"
 redirect_from: "/mapa-zmeny-teploty"
 published:  2020-02-27
-weight:     99
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 caption:    "Svět se od roku 1961 oteplil přibližně o 1,3 °C, různá místa se ale oteplují různou rychlostí. Zatímco pro většinu oceánů nepřesáhlo oteplení 0,8 °C, většina pevniny se otepluje rychleji. K největšímu oteplení, které za posledních 60 let přesáhlo 5 °C, dochází v Severním ledovém oceánu."
 # TODO: Nahradit za dataset, až bude text dopsaný.
 # dataset:    "mapa-teplota-svet"

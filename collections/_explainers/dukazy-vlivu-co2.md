@@ -5,9 +5,6 @@ slug:        "dukazy-vlivu-co2"
 published:   2021-07-02
 authors:
   - id: "jakub-zamouril"
-weight:      72
-tags-scopes: [ svet ]
-tags-topics: [ klima ]
 cover-source-author: "ActionVance"
 cover-source-text: "Unsplash"
 cover-source-license: "Unsplash licence"

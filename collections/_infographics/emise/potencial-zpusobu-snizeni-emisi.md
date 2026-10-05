@@ -4,9 +4,6 @@ title:      "Potenciál vybraných způsobů snížení emisí v ČR"
 slug:       "potencial-zpusobu-snizeni-emisi"
 redirect_from: "/potencial-zpusobu-snizeni-emisi"
 published:  2020-09-07
-weight:     65
-tags-scopes: [ cr ]
-tags-topics: [ emise, opatreni ]
 caption:    "Srovnání jakou část emisí mohou v tuto chvíli ovlivnit lidé radikální změnou své spotřeby a jakou část emisí může ovlivnit stát systémovými změnami. Nejvyšší potenciál má změna energetického mixu, skrze odstavování hnědouhelných elektráren a nahrazování zdroji energie s nižší emisní intenzitou."
 data-our:   "https://docs.google.com/spreadsheets/d/1Mfua6djrufHgLh2MjNLxkJd7NxtaK1vVX2m8xLPGZLg/edit?usp=sharing"
 ---

@@ -5,9 +5,6 @@ slug:        "zpravy-ipcc"
 published:   2021-08-06
 authors:
   - id: "jirka-lnenicka"
-weight:      90
-tags-scopes: [ svet ]
-tags-topics: [ opatreni ]
 cover-source-author: "Yves Nevens"
 cover-source-license: "Copyright: © Belspo / Nevens"
 cover-source-license-url: "https://creativecommons.org/licenses/by-nc-nd/2.0/"

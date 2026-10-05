@@ -9,9 +9,6 @@ published:     2025-09-23
 authors:
   - id: "andy-snovakova"
   - id: "jirka-lnenicka"
-weight:        105
-tags-scopes:   [ svet ]
-tags-topics:   [ krajina-ekosystemy ]
 cover-source-author:      "Jiří Lněnička"
 cover-source-text:        "autorský archiv"
 cover-source-url:         "https://faktaoklimatu.cz/explainery/indikatory-hmyzi-opylovaci"

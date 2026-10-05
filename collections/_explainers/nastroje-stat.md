@@ -9,9 +9,6 @@ authors:
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
-weight:      97.5
-tags-scopes: [ cr, eu ]
-tags-topics: [ opatreni ]
 cover-source-author:        "Marcel Otruba"
 cover-source-text:          "Fakta o klimatu"
 cover-source-license:       "CC BY 4.0"

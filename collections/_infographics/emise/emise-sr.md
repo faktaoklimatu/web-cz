@@ -4,9 +4,6 @@ title:      "Emise skleníkových plynů Slovenska podle sektorů"
 slug:       "emise-sr"
 redirect_from: "/emise-sr"
 published:  2020-10-14
-weight:     97
-tags-scopes: [ eu ]
-tags-topics: [ emise ]
 caption:    "Rozložení celkových emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) na Slovensku za rok 2024 v jednotlivých sektorech lidské činnosti. Roční objem emisí Slovenska je 34,09 mil. tun. V přepočtu na obyvatele to je 6,28 t CO<sub>2</sub>eq na obyvatele."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions/pie-charts/SK.ipynb"
 data-orig:

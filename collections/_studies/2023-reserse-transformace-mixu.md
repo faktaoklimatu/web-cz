@@ -3,10 +3,7 @@ layout:        survey
 title:         "Proměny mixů výroby elektřiny"
 slug:          2023-reserse-transformace-mixu
 redirect_from: /2023-reserse-transformace-mixu
-weight:        311
 published:     2023-05-16
-tags-scopes:   [ eu ]
-tags-topics:   [ energetika ]
 use-preview-image: true
 caption:       "Přehled cest, kterými se ubírají vybrané státy Evropy a světa v transformaci mixu výroby elektřiny."
 intro: |

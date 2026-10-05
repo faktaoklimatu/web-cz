@@ -14,9 +14,6 @@ authors:
   - name: "Jana Smolíková"
     affiliation: CI2
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ priroda ]
 cover-source-author:      "United Soybean Board"
 cover-source-text:        "Wikimedia Commons"
 cover-source-license:     "Creative Commons Attribution 2.0 Generic license"

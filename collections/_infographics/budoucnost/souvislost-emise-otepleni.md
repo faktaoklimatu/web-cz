@@ -4,9 +4,6 @@ title:       "Závislost oteplení na budoucích emisích CO<sub>2</sub>"
 slug:        "souvislost-emise-otepleni"
 redirect_from: "/souvislost-emise-otepleni"
 published:   2021-07-21
-weight:      89
-tags-scopes: [ svet ]
-tags-topics: [ budoucnost, emise, klima ]
 caption:     ""
 data-our:    "https://docs.google.com/spreadsheets/d/15It6W3FyrIIoyhZQ-twXJIlwKlvlH_ykvuVRBMz68ZA/edit?usp=sharing"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2024" ], [ "IPCC SR15", "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_Low_Res.pdf#page=107" ] ]

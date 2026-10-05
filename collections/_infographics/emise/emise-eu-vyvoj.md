@@ -4,9 +4,6 @@ title:         "Emise skleníkových plynů v EU v letech 1990–2024"
 slug:          "emise-eu-vyvoj"
 redirect_from: "/emise-eu-vyvoj"
 published:     2022-01-24
-weight:        76
-tags-scopes:   [ eu ]
-tags-topics:   [ emise, energetika ]
 caption:       "Vývoj emisí skleníkových plynů (v tunách CO<sub>2</sub> ekvivalentu) v Evropské unii v jednotlivých sektorech lidské činnosti během let a jejich relativní změny. Od roku 1990, kdy dosahovaly 4,9 miliard tun CO<sub>2</sub>eq, klesly celkové emise EU o více než třetinu na 3,1 miliardy tun CO<sub>2</sub>eq v roce 2024."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-over-time-eu.ipynb"
 data-orig:

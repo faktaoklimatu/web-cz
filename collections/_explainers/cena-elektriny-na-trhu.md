@@ -12,9 +12,6 @@ authors:
   - name: "Prokop Čech"
     affiliation: Nano Energies
     minor-role: "konzultace"
-weight:      50
-tags-scopes: [ eu, cr ]
-tags-topics: [ energetika ]
 cover-source-author: "Alexandru Boicu"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"

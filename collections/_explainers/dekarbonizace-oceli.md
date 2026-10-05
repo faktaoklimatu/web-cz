@@ -12,9 +12,6 @@ authors:
   - name: "Jiří Mravec"
     affiliation: Třinecké železárny
     minor-role: "konzultace"
-weight:      74
-tags-scopes: [ svet ]
-tags-topics: [ emise, opatreni ]
 cover-source-author:      "Ant Rozetsky"
 cover-source-text:        "Unsplash"
 cover-source-license:     "Unsplash License"

@@ -4,9 +4,6 @@ title:      "Kde jsou v Česku lesy?"
 slug:       "lesy-cr-mapa"
 redirect_from: "/lesy-cr-mapa"
 published:  2021-11-26
-weight:     60
-tags-scopes: [ cr ]
-tags-topics: [ priroda ]
 caption:    "Lesy v ČR pokrývají 36,8 % celkové plochy. Nejvyšší lesnatost najdeme v okrajových pohořích, nejnižší je v Polabí a nížinných úvalech."
 
 ---

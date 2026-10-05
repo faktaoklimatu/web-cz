@@ -4,9 +4,6 @@ title:      "Srovnání emisí skleníkových plynů na obyvatele"
 slug:       "emise-vybrane-staty"
 redirect_from: "/emise-vybrane-staty"
 published:  2019-07-23
-weight:     70
-tags-scopes: [ eu ]
-tags-topics: [ emise ]
 caption:    "Srovnání emisí některých zemí EU přepočtených na obyvatele (jednotka jsou tuny CO<sub>2</sub>eq na obyvatele), zobrazeny podle sektorů."
 data-jupyter: "https://github.com/faktaoklimatu/data-analysis/blob/master/notebooks/emissions-selected-countries.ipynb"
 data-orig:

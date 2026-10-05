@@ -4,9 +4,6 @@ title:       "Koncept: Uhlíkový rozpočet"
 slug:        "koncept-uhlikovy-rozpocet"
 redirect_from: "/koncept-uhlikovy-rozpocet"
 published:   2021-07-21
-weight:      70
-tags-scopes: [ svet ]
-tags-topics: [ budoucnost, emise, opatreni ]
 caption:     "Podobně jako rodinný rozpočet na dovolenou udává, kolik peněz je celkově možné utratit v průběhu dovolené, globální uhlíkový rozpočet říká, jaké množství CO<sub>2</sub> může ještě lidstvo vypustit, aby nebyla překročena určitá hodnota globálního oteplení."
 data-our:    "https://docs.google.com/spreadsheets/d/1eRY1uSRaUzWk6F1fO4f_7xSbkuhVzJ_lHyXbqGyF9mo"
 data-orig:   [ [ "Global Carbon Budget", "https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020" ], [ "IPCC AR6", "https://www.ipcc.ch/assessment-report/ar6/" ] ]

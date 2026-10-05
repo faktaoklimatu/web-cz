@@ -12,9 +12,6 @@ authors:
     minor-role: "vizualizace"
   - id: "jirka-lnenicka"
     minor-role: "editace"
-weight:      50
-tags-scopes: [ eu, cr ]
-tags-topics: [ energetika ]
 cover-source-author: "Karsten Würth"
 cover-source-license: "Unsplash licence"
 cover-source-license-url: "https://unsplash.com/license"

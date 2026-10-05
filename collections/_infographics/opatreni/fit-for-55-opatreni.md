@@ -4,9 +4,6 @@ title:         "Fit for 55: přehled opatření"
 slug:          "fit-for-55-opatreni"
 redirect_from: "/fit-for-55-opatreni"
 published:     2022-01-20
-weight:        94
-tags-scopes:   [ eu ]
-tags-topics:   [ opatreni, ekonomika ]
 caption:       "Fit for 55 je balíček legislativních návrhů Evropské komise, které mají vést k 55% snížení evropských emisí skleníkových plynů do roku 2030 v porovnání s rokem 1990. Tento cíl je mezikrokem k dosažení uhlíkové neutrality do roku 2050, ke kterému se Evropská unie právně zavázala."
 ---
 
