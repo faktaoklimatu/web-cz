@@ -1,0 +1,118 @@
+// d3 chart panels in the look of the CBAM explainer charts (_cbam-charts.scss)
+// with the ETS dashboard's source / download foot (_ets-dashboard.scss).
+// Markup: includes-local/chart-panel.html. First used by the explainer
+// klimaticka-politika-svetove-regiony.
+
+.d3-panel {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    margin: 1.5rem 0 2rem;
+
+    .d3-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #2d3748;
+        margin: 0 0 14px;
+    }
+
+    // Metric switch, inserted by the page script above the svg.
+    .seg {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e2e8f0;
+
+        button {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            padding: 4px 12px 6px 0;
+            margin-right: 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #718096;
+        }
+
+        button:hover:not(.active) {
+            color: #515b66;
+        }
+
+        button.active {
+            color: #2d3748;
+            border-bottom-color: #2d3748;
+        }
+    }
+
+    svg {
+        width: 100%;
+        display: block;
+        overflow: visible;
+    }
+
+    .chart-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-end;
+        gap: 4px 16px;
+        padding-top: 0.4rem;
+        font-size: 0.8rem;
+        color: #a0aec0;
+
+        a,
+        a:hover {
+            color: #a0aec0;
+        }
+
+        // "Stáhnout: PNG, SVG" reads as one phrase, keep it on one line.
+        .chart-downloads {
+            white-space: nowrap;
+        }
+
+        .chart-download {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .chart-download:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .d3-title {
+            font-size: 18px;
+        }
+    }
+}
+
+// Appended to <body> by the page script, positioned against the viewport.
+.d3-tooltip {
+    position: fixed;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    line-height: 1.6;
+    max-width: 280px;
+    font-family: 'Roboto', system-ui, sans-serif;
+
+    .swatch {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+    }
+}

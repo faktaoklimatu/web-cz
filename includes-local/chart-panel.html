@@ -1,0 +1,21 @@
+{%- comment -%}
+A d3 chart in the CBAM / ETS dashboard style: a title, an empty <svg> the page
+script draws into (legend and unit caption included, so the PNG/SVG export
+carries them), and the "Zdroj: … Stáhnout: PNG, SVG" foot that
+assets-local/js/chart-download.js wires up. Styles: assets-local/_chart-panel.scss.
+
+The title is a div, not an h2, so it stays out of the article's table of contents.
+
+Params: id (required), title, source (HTML, e.g. '<a href="…">Ember</a>')
+{%- endcomment -%}
+<div class="d3-panel" id="{{ include.id }}">
+  <div class="d3-title" id="{{ include.id }}-title">{{ include.title }}</div>
+  <svg id="{{ include.id }}-svg"></svg>
+  <div class="chart-foot">
+    <span id="{{ include.id }}-source">Zdroj: {{ include.source }}</span>
+    <span class="chart-downloads">Stáhnout:
+      <button type="button" class="chart-download" data-format="png" data-svg="{{ include.id }}-svg" data-filename="{{ include.id }}.svg" data-title="#{{ include.id }}-title" data-source="#{{ include.id }}-source">PNG</button>,
+      <button type="button" class="chart-download" data-svg="{{ include.id }}-svg" data-filename="{{ include.id }}.svg" data-title="#{{ include.id }}-title" data-source="#{{ include.id }}-source">SVG</button>
+    </span>
+  </div>
+</div>
