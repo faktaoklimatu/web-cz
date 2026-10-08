@@ -29,6 +29,7 @@
  *   series      {function}  accessor for series key (multi-series mode)
  *   multi       {boolean}   treat data as multi-series (default false)
  *   area        {boolean}   fill area under line(s) (default false)
+ *   areaOpacity {number}    opacity of that fill (default 0.18)
  *   legend      {boolean}   render a legend (multi-series, default false)
  *   yLabel      {string}    y-axis label
  *   xLabel      {string}    x-axis label
@@ -37,6 +38,9 @@
  *   xDomain     {[min,max]} override x scale domain
  *   yFormat     {function}  tick formatter for y axis
  *   xFormat     {function}  tick formatter for x axis
+ *   markers     {object[]}  events: { x, label } — a dashed vertical line, label above the plot
+ *   dashed      {function}  (seriesKey) => true draws that series dashed and a little
+ *                           thinner — for references and projections, per the guidelines
  *   tooltipHtml {function}  (d) => HTML string for hovered point tooltip
  *   width       {number}    viewBox width  (default 800)
  *   height      {number}    viewBox height (default 420)
@@ -66,7 +70,9 @@ function fokLineChart(containerSelector, data, options = {}) {
   const seriesKeys   = [...seriesMap.keys()];
   const colorScale   = fokColorOrdinal(seriesKeys, theme);
 
-  const allPoints = data.map(d => ({ _x: xAcc(d), _y: +yAcc(d), _k: kAcc(d), _raw: d }));
+  // A point without a value (NaN) is a gap in its line, and no hover target.
+  const allPoints = data.map(d => ({ _x: xAcc(d), _y: +yAcc(d), _k: kAcc(d), _raw: d }))
+    .filter(p => Number.isFinite(p._y));
   const xExtent = options.xDomain ?? d3.extent(allPoints, p => p._x);
   const yAll    = allPoints.map(p => p._y);
   const yMin    = options.yDomain ? options.yDomain[0] : Math.min(0, d3.min(yAll));
@@ -173,19 +179,24 @@ function fokLineChart(containerSelector, data, options = {}) {
         .attr('fill', color)
         .attr('stroke', '#fff')
         .attr('stroke-width', 0.5)
-        .attr('opacity', 0.18);
+        .attr('opacity', options.areaOpacity ?? 0.18);
     }
 
+    const dashed = options.dashed?.(key);
     seriesG.append('path')
       .datum(pts)
       .attr('class', 'fok-line')
       .attr('d', lineGen)
       .attr('fill', 'none')
       .attr('stroke', color)
-      .attr('stroke-width', theme.line.strokeWidth)
+      .attr('stroke-width', theme.line.strokeWidth * (dashed ? 0.75 : 1))
+      .attr('stroke-dasharray', dashed ? '5 4' : null)
       .attr('stroke-linejoin', 'round')
-      .attr('stroke-linecap', 'round');
+      .attr('stroke-linecap', dashed ? 'butt' : 'round');
   });
+
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  fokMarkers(g, options.markers, m => xScale(m.x), inner, theme);
 
   // ── Tooltip overlay ───────────────────────────────────────────────────────
   const tip = fokTooltip(theme);
@@ -242,7 +253,7 @@ function fokLineChart(containerSelector, data, options = {}) {
 
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend && options.multi) {
-    const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k) }));
+    const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k), dashed: !!options.dashed?.(k) }));
     fokLegend(container, legendItems, {}, theme);
   }
 
