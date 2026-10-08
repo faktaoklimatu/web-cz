@@ -46,8 +46,7 @@ window.DOVOZ_CFG = {
   barPadding: 0.2,         // gap between bars (0-1)
   lineWidth: 2,            // line charts
   areaOpacity: 0.6,        // fill under the small multiples' lines
-  showBenchmarks: false,   // price charts: Brent / TTF exchange prices, for reference
-  colorBenchmark: '#7a8696',
+  showBenchmarks: false,   // price charts: Brent / TTF exchange prices, dashed in their fuel's colour
   gasGCV: false,           // gas prices per MWh of gross calorific value, as gas is quoted
   exploreYMax: 40,         // PJ, top of the monthly import axes unless a month goes higher
   toolAspect: 0.5,         // the explorer's chart, legend included: height ÷ width (2:1)
@@ -60,6 +59,11 @@ window.DOVOZ_CFG = {
 document.addEventListener('DOMContentLoaded', () => {
   const CFG = window.DOVOZ_CFG;
   const DATA = '/assets-local/files/dovoz-fosilnich-paliv';
+  // The route map's countries: Natural Earth at 1:50m — the library's 110m
+  // world is too coarse zoomed in on Europe, where it closes the Bosporus.
+  // Loaded on its own, so the charts never wait for it.
+  const worldReady = d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json')
+    .then(t => topojson.feature(t, t.objects.countries).features);
 
   // The source runs 1999–2026, but 2026 is a part-year (its monthly companion
   // stops at month 7) and has no GDP figure, so it would read as a collapse in
@@ -341,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Reader toggles above the column charts. Each kind is one setting for both
     // fuels — every checkbox of a kind follows — so the columns stay comparable
     // row by row.
-    const toggles = { yearSpendByCountry: false, minis: false, share: false, spendByCountry: false, priceByCountry: false };
+    const toggles = { yearSpendByCountry: false, minis: false, minisRows: false, share: false, spendByCountry: false, priceByCountry: false };
 
     // The span selector by the fuel headings: all charts, the long-term ones
     // or the latest 36 months'. Both headings carry one and stay in step.
@@ -411,16 +415,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // "Zvlášť po zemích" for columns: one row per country, stacked in a single
-    // chart over the whole chart's box, which keeps its size — the biggest
-    // supplier at the bottom, Ostatní on top (it is no country). Every row
-    // stands on its own zero on one shared scale (`o.top`), so the bars compare
-    // across rows, and the periods line up down the shared x axis. The y axis
-    // shrinks to one note of that scale; the rows are named instead.
+    // chart over the whole chart's box — the biggest supplier at the bottom,
+    // Ostatní on top (it is no country). Every bar is drawn to the whole chart's
+    // own scale, so a column of bars down the rows adds up to that period's
+    // stacked bar; each row is as tall as its country's highest bar, not one
+    // height for all. The countries peak at different times, so the rows can
+    // need more room than the box: then the chart grows rather than shrinking
+    // the scale. `o.plotH` and `o.top` are the whole chart's plot height and
+    // the top of its axis; the bar charts nice() that top, and so does this.
+    // With `o.area` the rows are areas over `o.xDomain`, as in the imports
+    // chart, which takes its top as given.
     const countryRows = (sel, boxSels, data, codes, o) => {
       const box = d3.select(sel).html('')
         .style('grid-template-columns', '1fr').style('grid-template-rows', '1fr');
-      const H = Math.round(d3.min(boxSels, s => document.querySelector(s).getBoundingClientRect().height));
-      box.style('height', H + 'px');
+      const boxH = Math.round(d3.min(boxSels, s => document.querySelector(s).getBoundingClientRect().height));
       const W = Math.round(box.node().getBoundingClientRect().width);
       const colors = colorsOf(codes), labels = labelsOf(codes);
       const total = k => d3.sum(data, d => d[k]);
@@ -428,33 +436,63 @@ document.addEventListener('DOMContentLoaded', () => {
         .sort((a, b) => total(b) - total(a)).concat(OSTATNI[0]);
       const ctx = document.createElement('canvas').getContext('2d');
       ctx.font = `600 ${theme.fontSize.axisLabel}px Roboto, sans-serif`;
-      const m = { top: 24, right: 8, bottom: 32, left: Math.ceil(d3.max(keys, k => ctx.measureText(labels[k]).width)) + 12 };
+      // An area runs to the plot's edge, and so does its last year's label.
+      const m = { top: 24, right: o.area ? theme.margins.right : 8, bottom: 32, left: Math.ceil(d3.max(keys, k => ctx.measureText(labels[k]).width)) + 12 };
+      const perUnit = o.plotH / (o.area ? o.top : d3.scaleLinear().domain([0, o.top]).nice().domain()[1]);
+      // A row: its tallest bar, never less than its name needs, and a gap above.
+      const rowHs = keys.map(k => Math.max(perUnit * (d3.max(data, d => d[k]) || 0), 14) + 8);
+      const H = Math.max(boxH, Math.ceil(m.top + d3.sum(rowHs) + m.bottom));
+      box.style('height', H + 'px');
+      box.node().closest('.fuel-plot').style.minHeight = H > boxH ? H + 'px' : '';
       const inner = { w: W - m.left - m.right, h: H - m.top - m.bottom };
-      const rowH = inner.h / keys.length;
-      const x = d3.scaleBand(data.map(o.key), [0, inner.w])
-        .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
-      const y = d3.scaleLinear([0, o.top], [0, rowH * 0.9]);
+      const x = o.area ? d3.scaleLinear(o.xDomain, [0, inner.w])
+        : d3.scaleBand(data.map(o.key), [0, inner.w])
+          .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
       const svg = fokResponsiveSVG(box, `0 0 ${W} ${H}`);
       const g = svg.append('g').attr('transform', `translate(${m.left},${m.top})`);
       g.append('text').attr('class', 'fok-axis-label')
         .attr('x', -m.left + 4).attr('y', -10)
         .attr('fill', theme.colors.grey).attr('font-family', theme.font).attr('font-size', theme.fontSize.axisLabel)
-        .text(`Řádek každé země: 0–${fokFormatNumber(o.top, 0)} ${o.unit}`);
+        .text(`${o.unit}, ve stejném měřítku jako celkový graf`);
       const tip = fokTooltip(theme);
+      let base = inner.h;   // rows from the bottom up
       keys.forEach((k, i) => {
-        const row = g.append('g').attr('transform', `translate(0,${rowH * (keys.length - i)})`);
+        const row = g.append('g').attr('class', 'country-row').attr('transform', `translate(0,${base})`);
         row.append('line').attr('x2', inner.w).attr('stroke', theme.axis.gridColor);
         row.append('text').attr('x', -8).attr('y', -2).attr('text-anchor', 'end')
           .attr('fill', readable(colors[k])).attr('font-family', theme.font)
           .attr('font-size', theme.fontSize.axisLabel).attr('font-weight', 600).text(labels[k]);
+        if (o.area) {
+          // Area and line as in the small multiples; hovering a row marks the
+          // nearest year.
+          const y = d => -perUnit * d[k];
+          row.append('path').datum(data).attr('fill', colors[k]).attr('opacity', CFG.areaOpacity)
+            .attr('d', d3.area().x(d => x(o.key(d))).y0(0).y1(y));
+          row.append('path').datum(data).attr('fill', 'none').attr('stroke', colors[k])
+            .attr('stroke-width', CFG.lineWidth).attr('stroke-linejoin', 'round')
+            .attr('d', d3.line().x(d => x(o.key(d))).y(y));
+          const dot = row.append('circle').attr('r', 3.5).attr('fill', colors[k]).attr('opacity', 0);
+          row.append('rect').attr('y', -rowHs[i]).attr('width', inner.w).attr('height', rowHs[i])
+            .attr('fill', 'transparent')
+            .on('mousemove', event => {
+              const mx = d3.pointer(event)[0];
+              const d = data[d3.leastIndex(data, r => Math.abs(x(o.key(r)) - mx))];
+              dot.attr('cx', x(o.key(d))).attr('cy', y(d)).attr('opacity', 1);
+              tip.show(head(o.label(d)) + plain(`${labels[k]}: ${o.fmt(d[k])}`)); tip.move(event);
+            })
+            .on('mouseleave', () => { dot.attr('opacity', 0); tip.hide(); });
+          base -= rowHs[i];
+          return;
+        }
         row.selectAll('rect').data(data).join('rect')
           .attr('x', d => x(o.key(d))).attr('width', x.bandwidth())
-          .attr('y', d => -y(d[k])).attr('height', d => y(d[k]))
+          .attr('y', d => -perUnit * d[k]).attr('height', d => perUnit * d[k])
           .attr('fill', d => o.partial?.(d) ? fokHatch(svg, colors[k]) : colors[k])
           .attr('opacity', d => o.partial?.(d) ? 0.5 : 1)
           .on('mouseover', (event, d) => { tip.show(head(o.label(d)) + plain(`${labels[k]}: ${o.fmt(d[k])}`)); tip.move(event); })
           .on('mousemove', event => tip.move(event))
           .on('mouseleave', () => tip.hide());
+        base -= rowHs[i];
       });
       g.append('g').attr('class', 'fok-axis fok-axis--x').attr('transform', `translate(0,${inner.h})`)
         .call(fokAxisX(x, { tickValues: o.ticks, tickFormat: o.tickFormat }, theme));
@@ -471,6 +509,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const top = share ? 100 : miniMax;
       const value = share ? (d, k) => 100 * d[k] / totalPJ(d) : (d, k) => d[k];
       const fmt = share ? v => `${fokFormatNumber(v, 0)} %` : pj;
+      if (toggles.minisRows) {
+        const data = share ? rows.map(d => ({ ...d, ...Object.fromEntries(keysOf(codes).map(k => [k, value(d, k)])) })) : rows;
+        countryRows(sel, ['#chart-ropa-energie', '#chart-plyn-energie'], data, codes, {
+          area: true, key: d => d.year, xDomain: [YEAR_FROM, lastYear],
+          plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: share ? 100 : maxPJ,
+          unit: share ? '% dovozu' : 'PJ', fmt, label: d => yearName(d.year),
+          ticks: colTicks(sel), tickFormat: String,
+        });
+        return;
+      }
       tiles(sel, ['#chart-ropa-energie', '#chart-plyn-energie'], codes, (node, k, t) => {
         fokLineChart(node, rows, {
           x: d => d.year, y: d => value(d, k), area: true, areaOpacity: CFG.areaOpacity,
@@ -489,15 +537,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Výdaje by year, per country: a row per country (countryRows), the
-    // part-year hatched as in the whole chart. One scale for both fuels.
+    // part-year hatched as in the whole chart, on the whole chart's scale.
     const yearCzk = c => toNewest.map(year => ({ year,
       ...czkByCountry(imports.filter(d => d.commodity === c && d.year === year), c === 'crude_oil' ? ROPA : PLYN) }));
     const yearCzkRows = { crude_oil: yearCzk('crude_oil'), natural_gas: yearCzk('natural_gas') };
-    const yearCzkTop = d3.nice(0, d3.max([['crude_oil', ROPA], ['natural_gas', PLYN]], ([c, codes]) =>
-      d3.max(yearCzkRows[c], r => d3.max(keysOf(codes), k => r[k]))), 2)[1];
     const yearSpendRows = (sel, commodity, codes) => () =>
       countryRows(sel, ['#chart-ropa-czk', '#chart-plyn-czk'], yearCzkRows[commodity], codes, {
-        key: d => String(d.year), top: yearCzkTop, unit: 'mld. Kč', fmt: czkMld,
+        key: d => String(d.year), plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: maxCzk, unit: 'mld. Kč', fmt: czkMld,
         label: d => yearName(d.year), partial: d => isPartYear(d.year),
         ticks: colTicks(sel).map(String),
       });
@@ -554,12 +600,10 @@ document.addEventListener('DOMContentLoaded', () => {
         yFormat: v => fokFormatNumber(v, 0),
         tooltipHtml: d => head(`${monthLong(d.month)} ${d.year}`) + plain(czkMld(d.czk)),
       });
-    const spendTileTop = d3.nice(0, d3.max([['crude_oil', ROPA], ['natural_gas', PLYN]], ([c, codes]) =>
-      d3.max(recent, d => d3.max(Object.values(czkByCountry(ofMonth(c, d.year, d.month), codes))))), 2)[1];
     const spendRows = (sel, commodity, codes) => () =>
       countryRows(sel, ['#chart-ropa-czk-mesice', '#chart-plyn-czk-mesice'],
         recent.map(d => ({ ...d, ...czkByCountry(ofMonth(commodity, d.year, d.month), codes) })), codes, {
-          key: ymKey, top: spendTileTop, unit: 'mld. Kč', fmt: czkMld,
+          key: ymKey, plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: spendTop, unit: 'mld. Kč', fmt: czkMld,
           label: d => `${monthLong(d.month)} ${d.year}`,
           ticks: recentJanuaries.map(ymKey), tickFormat: k => k.split('-')[0],
         });
@@ -631,7 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const colors = colorsOf(codes), labels = labelsOf(codes);
       // The exchange price first and the average last, so the reference sits
       // under everything and the average over the countries.
-      const lines = (CFG.showBenchmarks ? [['bench', BENCH_NAME[commodity], CFG.colorBenchmark]] : [])
+      const lines = (CFG.showBenchmarks ? [['bench', BENCH_NAME[commodity], color]] : [])
         .concat(split ? keysOf(codes).map(k => [k, labels[k], colors[k]]) : [])
         .concat([['prumer', 'Průměr', split ? CFG.colorTotal : color]]);
       const top = priceTop(kind);
@@ -650,7 +694,7 @@ document.addEventListener('DOMContentLoaded', () => {
           + `<div style="font-family:${theme.font};font-weight:700">Průměr: ${kcMwh(r.prumer)}</div>`
           + (split ? keysOf(codes).filter(k => Number.isFinite(r[k])).reverse().map(k =>
               `<span style="color:${colors[k]}">■</span> ` + plain(`${labels[k]}: ${kcMwh(r[k])}`)).join('<br>') : '')
-          + (Number.isFinite(r.bench) ? (split ? '<br>' : '') + `<span style="color:${CFG.colorBenchmark}">■</span> `
+          + (Number.isFinite(r.bench) ? (split ? '<br>' : '') + `<span style="color:${color}">■</span> `
               + plain(`${BENCH_NAME[commodity]}: ${kcMwh(r.bench)}`) : ''),
       });
     };
@@ -674,6 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearGroups = d3.group(imports, d => d.commodity, d => d.year);
     const BOTH = { ...ROPA, ...PLYN };   // every named supplier of either fuel
     const codesOf = c => c === 'crude_oil' ? ROPA : PLYN;
+    const fuelColor = c => c === 'crude_oil' ? CFG.colorRopa : CFG.colorPlyn;
     const FUEL_NAME = {
       crude_oil:   { gen: 'ropy', acc: 'ropu', label: 'Ropa' },
       natural_gas: { gen: 'zemního plynu', acc: 'zemní plyn', label: 'Zemní plyn' },
@@ -772,7 +817,6 @@ document.addEventListener('DOMContentLoaded', () => {
         : toolMonths.filter(d => d.year >= v.from && d.year <= v.to).map(d =>
             ({ ...d, x: d.year + (d.month - 1) / 12, key: ymKey(d), label: `${monthLong(d.month)} ${d.year}` }));
       const rowsIn = (c, p) => TOOL.step === 'years' ? yearGroups.get(c)?.get(p.year) ?? [] : ofMonth(c, p.year, p.month);
-      const fuelColor = c => c === 'crude_oil' ? CFG.colorRopa : CFG.colorPlyn;
       const basis = c => c === 'natural_gas' && CFG.gasGCV ? NCV_PER_GCV : 1;
       let keys, colors, labels;
       if (v.byCountry) { keys = keysOf(v.codes); colors = colorsOf(v.codes); labels = labelsOf(v.codes); }
@@ -806,8 +850,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Price lines: the exchange price(s) underneath, then the countries and
       // their average — or each fuel's average.
       const lines = !v.price ? [] : [
-        ...(v.bench ? (v.byCountry ? [['bench', BENCH_NAME[v.fuels[0]], CFG.colorBenchmark]]
-          : v.fuels.map(c => [`bench-${c}`, BENCH_NAME[c], CFG.colorBenchmark])) : []),
+        ...(v.bench ? (v.byCountry ? [['bench', BENCH_NAME[v.fuels[0]], fuelColor(v.fuels[0])]]
+          : v.fuels.map(c => [`bench-${c}`, BENCH_NAME[c], fuelColor(c)])) : []),
         ...keys.map(k => [k, labels[k], colors[k]]),
         ...(v.byCountry ? [['prumer', 'Průměr', CFG.colorTotal]] : []),
       ];
@@ -851,6 +895,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return { placed, height: items.length ? y + 20 : 0 };
     };
 
+    // The whole chart's plot height and axis top, for the rows drawn over it.
+    let toolScale;
     const toolChart = w => {
       const v = toolView();
       const { rows, keys, colors, labels, lines, unit, fmt } = toolData(v);
@@ -909,7 +955,10 @@ document.addEventListener('DOMContentLoaded', () => {
           xTickValues: ticks, xFormat: String, tooltipHtml: tip,
         });
       }
+      // Hidden rows aren't redrawn and would keep the download id.
+      d3.selectAll('#tool-svg').attr('id', null);
       chart.svg.attr('id', 'tool-svg');
+      toolScale = { plotH: height - theme.margins.top - theme.margins.bottom - legendRoom, top };
       const lg = chart.svg.append('g').attr('class', 'tool-legend')
         .attr('transform', `translate(${theme.margins.left},${height - legendRoom + 4})`);
       legend.placed.forEach(it => {
@@ -947,12 +996,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const { rows, keys, fmt, unit } = toolData(v);
       if (TOOL.metric === 'czk') {
         const ticks = toolTicks('#chart-tool-tiles', v);
+        // The rows are one SVG, so the download buttons take them instead.
+        d3.select('#tool-svg').attr('id', null);
         countryRows('#chart-tool-tiles', ['#chart-tool'], rows, v.codes, {
-          key: d => d.key, top: d3.nice(0, toolTops(v).tiles || 1, 10)[1],
+          key: d => d.key, plotH: toolScale.plotH, top: toolScale.top,
           unit, fmt, label: d => d.label, markers: contextMarkers(),
           ticks: TOOL.step === 'years' ? ticks.map(String) : ticks.map(y => `${y}-1`).filter(k => rows.some(r => r.key === k)),
           tickFormat: k => k.split('-')[0],
-        });
+        }).attr('id', 'tool-svg');
         return;
       }
       const value = (r, k) => r[k];
@@ -972,7 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
             xTickValues: ends.map(r => r.key), xFormat: key => key.split('-')[0],
           });
         } else {
-          const series = v.bench ? [['bench', CFG.colorBenchmark], [k, t.color]] : [[k, t.color]];
+          const series = v.bench ? [['bench', fuelColor(v.fuels[0])], [k, t.color]] : [[k, t.color]];
           fokLineChart(node, series.flatMap(([key, ]) => rows.map(r => ({ ...r, series: key, val: r[key] }))), {
             ...shared, multi: true, x: d => d.x, y: d => d.val, dashed: series => series === 'bench',
             area: TOOL.metric === 'energy', areaOpacity: CFG.areaOpacity,
@@ -985,6 +1036,311 @@ document.addEventListener('DOMContentLoaded', () => {
           .attr('text-anchor', (_, i, all) => i === 0 ? 'start' : i === all.length - 1 ? 'end' : 'middle');
       }, { perRow: 4, max: 8 });
     };
+
+    // ── The route map: where the crude comes from, and how ──────────────────
+    // Two crude pipelines enter Czechia: Družba, which brought Russia's oil,
+    // and IKL from Ingolstadt, fed by TAL from the port of Trieste, where all
+    // the rest lands by tanker. Customs data give the country of origin, not
+    // the way the oil came, so each route is that rule drawn out, simplified:
+    // the pipelines roughly as they run, the sea legs along open water.
+    // Points are [lon, lat]; every route ends at MERO's tank farm, Nelahozeves.
+    // A year from TOOL_FIRST to YEAR_TO is picked on a slider; "Přehrát rok"
+    // plays it month by month, and "výdaje" adds squares for what was paid.
+    const PIPELINES = {
+      'Družba': [[52.3, 54.9], [50.1, 53.2], [45.0, 53.2], [39.5, 52.6], [34.4, 53.25], [32.7, 52.85],
+        [29.25, 52.05], [25.15, 50.08], [22.3, 48.62], [20.3, 48.45], [17.9, 48.45], [16.9, 48.85],
+        [16.0, 49.4], [14.3, 50.26]],
+      TAL: [[13.78, 45.63], [12.97, 46.6], [12.5, 47.25], [12.17, 47.58], [12.0, 48.0], [11.43, 48.77]],
+      IKL: [[11.43, 48.77], [12.1, 49.05], [12.47, 49.65], [13.4, 49.85], [14.3, 50.26]],
+      BTC: [[49.47, 40.18], [44.8, 41.7], [42.9, 41.6], [41.27, 39.9], [39.5, 39.75], [37.0, 39.75],
+        [36.9, 37.6], [35.83, 36.88]],
+      CPC: [[53.45, 46.15], [51.9, 47.1], [47.9, 46.3], [44.3, 46.0], [40.57, 45.44], [37.77, 44.72]],
+    };
+    // Every tanker meets the others in the Ionian Sea, sails the Strait of
+    // Otranto and the Adriatic to Trieste, and the oil goes on by TAL and IKL.
+    const VIA_TRIESTE = [[18.6, 38.3], [18.9, 40.25], [17.6, 42.0], [15.6, 42.7], [14.5, 43.6], [13.1, 44.6],
+      [13.2, 45.4], ...PIPELINES.TAL, ...PIPELINES.IKL.slice(1)];
+    // Tankers from the Atlantic — Norway's, America's — come in by Gibraltar.
+    const VIA_GIBRALTAR = [[-5.6, 35.96], [-3.0, 36.0], [1.0, 37.3], [8.0, 37.9], [11.5, 37.5], [13.0, 36.9],
+      [15.5, 36.4], ...VIA_TRIESTE];
+    // By supplier slug, as in ROPA; one without a route warns below.
+    const ROUTES = {
+      rusko: PIPELINES['Družba'],
+      azerbajdzan: [...PIPELINES.BTC, [35.5, 36.45], [34.8, 35.95], [32.6, 35.7], [29.5, 35.5], [26.5, 34.6],
+        [24.0, 34.6], [21.5, 36.2], ...VIA_TRIESTE],
+      kazachstan: [...PIPELINES.CPC, [37.3, 44.45], [34.0, 43.6], [30.5, 42.3], [29.1, 41.25], [29.0, 41.0],
+        [28.0, 40.75], [26.7, 40.4], [26.2, 40.02], [25.3, 39.0], [24.65, 38.05], [24.1, 37.65], [23.6, 36.9],
+        [23.1, 36.05], [21.5, 36.6], ...VIA_TRIESTE],
+      saudska_arabie: [[38.06, 24.09], [37.3, 24.6], [35.4, 26.0], [34.0, 27.5], [33.3, 28.5], [32.55, 29.95],
+        [32.35, 30.6], [32.3, 31.3], [29.0, 33.0], [25.0, 34.3], [21.5, 36.0], ...VIA_TRIESTE],
+      norsko: [[5.03, 60.81], [3.8, 60.0], [3.0, 57.0], [2.6, 53.5], [1.6, 51.0], [-1.0, 50.2], [-5.8, 48.5],
+        [-9.8, 43.3], [-10.0, 39.0], [-9.4, 36.8], [-6.3, 36.0], ...VIA_GIBRALTAR],
+      // From the Gulf of Mexico, far off the map: the band comes in off the Atlantic.
+      usa: [[-12.5, 35.0], [-8.5, 35.6], ...VIA_GIBRALTAR],
+      // Everyone else — Libya, Algeria, Nigeria, Iraq, … — by tanker as well:
+      // a short band from no one place, joining the others in the Ionian Sea.
+      ostatni: [[17.0, 35.0], ...VIA_TRIESTE],
+    };
+    keysOf(ROPA).filter(k => !ROUTES[k])
+      .forEach(k => console.warn(`dovoz: crude from ${k} has no route on the map`));
+    // Where routes share the way they run side by side, in this order from
+    // left to right of travel — the order they come in, west to east — so no
+    // band crosses another. Each is moved aside from the first point it shares.
+    const STACK = ['norsko', 'usa', 'ostatni', 'saudska_arabie', 'azerbajdzan', 'kazachstan'];
+    const ptKey = p => p.join();
+    const JOINS = Object.fromEntries(Object.entries(ROUTES).map(([s, route]) => {
+      const others = new Set(Object.entries(ROUTES).filter(([o]) => o !== s).flatMap(([, r]) => r.map(ptKey)));
+      return [s, route.findIndex(p => others.has(ptKey(p)))];
+    }));
+    // Labels: a supplier's at its origin, a pipeline's beside a point of it.
+    // The sides are mapLabel's.
+    const ORIGIN_LABEL = { rusko: 'right', azerbajdzan: 'below end', kazachstan: 'below end',
+      saudska_arabie: 'above start', norsko: 'right', usa: 'below start', ostatni: 'below' };
+    const PIPELINE_LABEL = [['Družba', [39.5, 52.6], 'above'], ['TAL', [12.5, 47.25], 'left'],
+      ['IKL', [12.47, 49.65], 'left'], ['BTC', [42.9, 41.6], 'above'], ['CPC', [44.3, 46.0], 'above']];
+    const PJ_PER_PX = 15;   // band width: PJ a year per pixel, on a map 1000 px wide
+    const MIN_PJ = 0.5;     // a supplier under this in a year is left off: stray consignments
+    const SQUARE_MLD = 5;   // výdaje: mld. Kč a square — Russia, 2012–2025 played through, is ~120
+    const MONTH_MS = 200;   // a month, playing
+    // While the map plays, a glint runs along each band toward Czechia: layers
+    // of faint white, each shorter, all ending at the head — the band's colour,
+    // lightened most at the front. One every `every` px, `length` px long.
+    const GLINT = { every: 90, length: 40, layers: 4, opacity: 0.15, speed: 160 };   // speed: px/s
+    const TRIESTE = PIPELINES.TAL[0];
+
+    // What the map shows: a year, or while it plays, up to a month of it.
+    // A play runs from January of `since` to December of `until` — one year,
+    // or every year — and the labels and squares count from its start.
+    const MAP = { year: YEAR_TO, month: 0, spend: false, since: YEAR_TO, until: YEAR_TO };   // month 0: the whole year
+    let playTimer, glintTimer;
+    const mapView = () => {
+      // Every month from January of y0 to month m of y1.
+      const span = (y0, y1, m) => d3.range(y0, y1 + 1).flatMap(y =>
+        d3.range(1, (y === y1 ? m : 12) + 1).flatMap(mm => ofMonth('crude_oil', y, mm)));
+      const year = byCountry(span(MAP.year, MAP.year, 12), ROPA);
+      const whole = span(MAP.since, MAP.until, 12);
+      const sofar = span(MAP.since, MAP.year, MAP.month || 12);
+      const total = byCountry(whole, ROPA);
+      return {
+        total,
+        // Everyone the play reaches, so no label or squares leave mid-way.
+        present: Object.keys(ROUTES).filter(s => total[s] >= MIN_PJ),
+        // Band width: the year, or the month at its yearly rate (×12), so a
+        // steady flow keeps its width as the map plays.
+        flow: MAP.month ? byCountry(ofMonth('crude_oil', MAP.year, MAP.month), ROPA) : year,
+        perYear: MAP.month ? 12 : 1,
+        // Labels and squares: the year, or what came and was paid since the start.
+        pj: byCountry(sofar, ROPA),
+        czk: czkByCountry(sofar, ROPA),
+        czkYear: czkByCountry(whole, ROPA),
+      };
+    };
+
+    // A label beside a point: a line per [text, attributes], then, given
+    // `squares`, that many squares in rows of ten. Haloed in white so it reads
+    // across bands and borders; `gap` is how far it keeps off the point. Side:
+    // above or below, centred on the point — or with "start"/"end", that edge
+    // at it — or left or right, the first line level with the point.
+    const mapLabel = (g, [x, y], spec, lines, { gap = 10, squares = 0, color } = {}) => {
+      const LH = 15, SQ = 5, ROW = 10;
+      const [side, align] = spec.split(' ');
+      const anchor = align ?? { above: 'middle', below: 'middle', left: 'end', right: 'start' }[side];
+      const x0 = x + ({ left: -gap, right: gap }[side] ?? { start: -6, end: 6 }[align] ?? 0);
+      const textH = lines.length * LH;
+      const gridH = squares ? 4 + Math.ceil(squares / ROW) * (SQ + 1) : 0;
+      const top = side === 'above' ? y - gap - textH - gridH : side === 'below' ? y + gap : y - 7;
+      const text = g.append('text').attr('text-anchor', anchor).attr('font-family', theme.font)
+        .attr('stroke', '#fff').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('paint-order', 'stroke');
+      lines.forEach(([t, attrs], i) => {
+        const span = text.append('tspan').attr('x', x0).attr('y', top + 11 + i * LH).text(t);
+        Object.entries(attrs).forEach(([k, v]) => span.attr(k, v));
+      });
+      if (!squares) return;
+      const gridW = Math.min(squares, ROW) * (SQ + 1) - 1;
+      const left = { start: x0, middle: x0 - gridW / 2, end: x0 - gridW }[anchor];
+      g.append('g').attr('fill', color).selectAll('rect').data(d3.range(squares)).join('rect')
+        .attr('x', i => left + (i % ROW) * (SQ + 1)).attr('y', i => top + textH + 4 + Math.floor(i / ROW) * (SQ + 1))
+        .attr('width', SQ).attr('height', SQ);
+    };
+
+    // A route on screen, shifted `off` px to the left of travel from its point
+    // `from` on — where it joins the others — and mitred at the bends, so bands
+    // side by side keep their width. Before, it runs on its own line, through
+    // its pipeline; the curve eases it across.
+    const unit = (a, b) => { const l = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1; return [(b[0] - a[0]) / l, (b[1] - a[1]) / l]; };
+    const shifted = (proj, route, off, from) => {
+      const p = route.map(proj), n = p.length;
+      return p.map((pt, i) => {
+        if (i < from) return pt;
+        const a = unit(p[Math.max(i - 1, 0)], p[Math.max(i, 1)]);
+        const b = unit(p[Math.min(i, n - 2)], p[Math.min(i + 1, n - 1)]);
+        const t = unit([0, 0], [a[0] + b[0], a[1] + b[1]]);
+        const o = off / Math.max(0.5, t[0] * a[0] + t[1] * a[1]);
+        return [pt[0] + t[1] * o, pt[1] - t[0] * o];
+      });
+    };
+    const curve = d3.line().curve(d3.curveCatmullRom.alpha(0.5));
+
+    // The land and the pipelines, at the container's width; updateMap then
+    // puts on the flows and labels, and redraws those alone as the map plays.
+    let world, mapScene;   // the countries, once worldReady has them; the map as drawn
+    const drawMap = w => {
+      if (!world) return;
+      const box = d3.select('#mapa-ropy').html('');
+      // Framed on the routes, as tight as their labels allow.
+      const PAD = 16;
+      const routes = { type: 'MultiPoint', coordinates: Object.values(ROUTES).flat() };
+      const proj = d3.geoAzimuthalEqualArea().rotate([-22, -46]).fitWidth(w - 2 * PAD, routes);
+      const [[, y0], [, y1]] = d3.geoPath(proj).bounds(routes);
+      proj.fitExtent([[PAD, PAD], [w - PAD, PAD + y1 - y0]], routes);
+      // The library lets its SVGs overflow for axis labels; a map's land must not.
+      const svg = fokResponsiveSVG(box, `0 0 ${w} ${Math.round(y1 - y0 + 2 * PAD)}`)
+        .style('overflow', 'hidden')
+        .attr('role', 'img').attr('aria-labelledby', 'mapa-ropy-title');
+      svg.append('g').selectAll('path').data(world).join('path')
+        .attr('d', d3.geoPath(proj))
+        .attr('fill', d => +d.id === 203 ? '#c9d3df' : theme.axis.gridColor)   // 203: Česko
+        .attr('stroke', '#fff').attr('stroke-width', 0.5);
+      const flows = svg.append('g').attr('fill', 'none').attr('stroke-linejoin', 'round');
+      // The pipelines over the bands: a thin line through them, which tells a
+      // pipeline from a tanker's way — half-opaque, so even Russia's narrow
+      // band still shows red under Družba's.
+      svg.append('g').attr('fill', 'none').attr('stroke', theme.colors.grey).attr('stroke-width', 1)
+        .attr('stroke-opacity', 0.55)
+        .selectAll('path').data(Object.values(PIPELINES)).join('path')
+        .attr('d', pts => curve(pts.map(proj)));
+      // On a phone the suppliers' labels would pile up in the east, so they
+      // go in a list under the map instead.
+      mapScene = { proj, w, flows, labels: svg.append('g'),
+        list: w < 560 ? box.append('ul').attr('class', 'route-list') : null };
+      updateMap();
+    };
+
+    // Bands, glints and labels for MAP as it stands; `ms` eases the bands there.
+    const updateMap = (ms = 0) => {
+      if (!mapScene) return;
+      const { proj, w, flows, labels, list } = mapScene;
+      const v = mapView();
+      const bandW = s => v.flow[s] > 0 ? Math.max(v.flow[s] * v.perYear / PJ_PER_PX * w / 1000, 1) : 0;
+      const offset = {};
+      let edge = d3.sum(STACK, bandW) / 2;
+      STACK.forEach(s => { offset[s] = edge - bandW(s) / 2; edge -= bandW(s); });
+      const pathOf = s => curve(STACK.includes(s) ? shifted(proj, ROUTES[s], offset[s], JOINS[s]) : ROUTES[s].map(proj));
+      const ease = sel => ms ? sel.transition().duration(ms).ease(d3.easeLinear) : sel;
+
+      // A group per supplier: its band and the glint's layers over it. The
+      // year's biggest first, so a narrow band crossing a wide one stays on top.
+      const groups = flows.selectAll('g')
+        .data(v.present.slice().sort((a, b) => v.total[b] - v.total[a]), s => s)
+        .join(enter => {
+          const g = enter.append('g');
+          g.append('path').attr('stroke', s => CFG[s]).attr('stroke-linecap', 'round');
+          d3.range(1, GLINT.layers + 1).forEach(i => {
+            const len = GLINT.length * i / GLINT.layers;
+            g.append('path').attr('class', 'glint').attr('data-len', len)
+              .attr('stroke', '#fff').attr('stroke-opacity', GLINT.opacity)
+              .attr('stroke-dasharray', `${len} ${GLINT.every - len}`);
+          });
+          return g;
+        })
+        .order();
+      groups.selectAll('.glint').attr('display', playTimer ? null : 'none');
+      ease(groups.selectAll('path')).attr('d', pathOf).attr('stroke-width', bandW);
+
+      labels.html('');
+      const small = { 'font-size': theme.fontSize.axisLabel, fill: theme.colors.grey };
+      const trunk = d3.sum(STACK, bandW) / 2;
+      // On a phone the pipelines' names would crowd out the suppliers'.
+      if (w >= 560) {
+        PIPELINE_LABEL.forEach(([name, at, side]) =>
+          mapLabel(labels, proj(at), side, [[name, { ...small, 'font-style': 'italic' }]],
+            { gap: name === 'TAL' || name === 'IKL' ? trunk + 6 : 6 }));
+      }
+      labels.append('circle').attr('r', 3).attr('fill', theme.colors.grey)
+        .attr('cx', proj(TRIESTE)[0]).attr('cy', proj(TRIESTE)[1]);
+      mapLabel(labels, proj(TRIESTE), 'right', [['Terst', small]], { gap: trunk + 4 });
+      const amount = s => `${fokFormatNumber(v.pj[s], 0)} PJ · ${fokFormatNumber(100 * v.pj[s] / v.pj.ropa_pj, 0)} %`;
+      const squares = (s, czk = v.czk) => MAP.spend ? Math.round(czk[s] / SQUARE_MLD) : 0;
+      v.present.forEach(s => {
+        const at = proj(ROUTES[s][0]);
+        const color = readable(CFG[s]);
+        // Ostatní has no place of its own to mark.
+        if (s !== OSTATNI[0]) labels.append('circle').attr('cx', at[0]).attr('cy', at[1]).attr('r', 4)
+          .attr('fill', CFG[s]).attr('stroke', '#fff').attr('stroke-width', 1.5);
+        if (!list) mapLabel(labels, at, ORIGIN_LABEL[s], [
+          [labelsOf(ROPA)[s], { 'font-size': 13, 'font-weight': 700, fill: color }],
+          [amount(s), small],
+          ...(MAP.spend ? [[czkMld(v.czk[s]), small]] : []),
+        ], { squares: squares(s), color });
+      });
+      // The phone's list, biggest first. Each row of squares keeps the room
+      // the whole year's take, so the page stays put as the map plays.
+      list?.selectAll('li').data(v.present.slice().sort((a, b) => v.total[b] - v.total[a])).join('li')
+        .style('color', s => readable(CFG[s]))
+        .html(s => `<b>${labelsOf(ROPA)[s]}</b> <span>${amount(s)}${MAP.spend ? ' · ' + czkMld(v.czk[s]) : ''}</span>`
+          + (MAP.spend ? `<span class="route-squares" style="min-height:${Math.ceil(squares(s, v.czkYear) / 10) * 6}px">`
+            + '<i></i>'.repeat(squares(s)) + '</span>' : ''));
+      // Top left, over the Atlantic: the month while playing, the squares' key.
+      if (MAP.month) labels.append('text').attr('x', 20).attr('y', 44)
+        .attr('font-family', theme.font).attr('font-size', w < 600 ? 16 : 22).attr('font-weight', 700)
+        .attr('fill', theme.colors.grey).text(`${monthLong(MAP.month)} ${MAP.year}`);
+      if (MAP.spend) {
+        const ky = MAP.month ? 66 : 36;
+        labels.append('rect').attr('x', 20).attr('y', ky - 6).attr('width', 5).attr('height', 5)
+          .attr('fill', theme.colors.grey);
+        labels.append('text').attr('x', 30).attr('y', ky).attr('font-family', theme.font)
+          .attr('font-size', theme.fontSize.axisLabel).attr('fill', theme.colors.grey)
+          .text(`= ${fokFormatNumber(SQUARE_MLD, 0)} mld. Kč za ropu`);
+      }
+    };
+
+    // The controls above the map: the year, playing one or all, and výdaje.
+    const mapYear = document.getElementById('mapa-rok');
+    const playButtons = { year: document.getElementById('mapa-play'), all: document.getElementById('mapa-play-all') };
+    const PLAY_LABEL = { year: '▶ Přehrát rok', all: `▶ ${TOOL_FIRST}–${YEAR_TO}` };
+    Object.assign(mapYear, { min: TOOL_FIRST, max: YEAR_TO, step: 1, value: YEAR_TO });
+    const paintMapYear = () => {
+      mapYear.value = MAP.year;
+      document.getElementById('mapa-rok-value').textContent = MAP.year;
+      document.getElementById('mapa-ropy-title').textContent = `Dovoz ropy podle země původu, ${MAP.year}`;
+      mapYear.closest('.dual-range').style.setProperty('--to', (MAP.year - TOOL_FIRST) / (YEAR_TO - TOOL_FIRST));
+    };
+    paintMapYear();
+    // Done playing — at the end or stopped — the map goes back to the year it is on.
+    const stopMap = () => {
+      playTimer?.stop();
+      glintTimer?.stop();
+      playTimer = glintTimer = null;
+      Object.assign(MAP, { month: 0, since: MAP.year, until: MAP.year });
+      Object.entries(playButtons).forEach(([k, b]) => { b.setAttribute('aria-pressed', 'false'); b.textContent = PLAY_LABEL[k]; });
+      updateMap(MONTH_MS);
+    };
+    Object.entries(playButtons).forEach(([kind, button]) => button.addEventListener('click', () => {
+      if (playTimer) { stopMap(); return; }
+      button.setAttribute('aria-pressed', 'true');
+      button.textContent = '■ Zastavit';
+      if (kind === 'all') Object.assign(MAP, { year: TOOL_FIRST, since: TOOL_FIRST, until: YEAR_TO });
+      MAP.month = 1;
+      paintMapYear();
+      playTimer = d3.interval(() => {
+        if (MAP.month === 12 && MAP.year === MAP.until) { stopMap(); return; }
+        if (MAP.month === 12) { MAP.year += 1; MAP.month = 1; paintMapYear(); } else MAP.month += 1;
+        updateMap(MONTH_MS);
+      }, MONTH_MS);
+      // Every layer's head at the same distance, moving on with the time.
+      glintTimer = d3.timer(t => mapScene?.flows.selectAll('.glint')
+        .attr('stroke-dashoffset', function () { return this.dataset.len - t / 1000 * GLINT.speed; }));
+      updateMap(MONTH_MS);
+    }));
+    mapYear.addEventListener('input', () => {
+      Object.assign(MAP, { year: +mapYear.value, since: +mapYear.value, until: +mapYear.value });
+      paintMapYear();
+      if (playTimer) stopMap(); else updateMap();
+    });
+    document.getElementById('mapa-vydaje').addEventListener('change', e => {
+      MAP.spend = e.target.checked;
+      updateMap();
+    });
 
     // Each entry draws into its container at that container's own width;
     // hidden containers measure 0 and are skipped. Built per draw, so the
@@ -1056,6 +1412,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ['#chart-plyn-cena-mesice',    price('#chart-plyn-cena-mesice', 'months', 'natural_gas', PLYN, CFG.colorPlyn)],
       ['#chart-tool',         toolChart],
       ['#chart-tool-tiles',   toolTiles],
+      ['#mapa-ropy',          drawMap],
     ];
 
     const drawAll = () => {
@@ -1064,6 +1421,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // A class per reader toggle, for the CSS that swaps a chart for its tiles.
       Object.entries(toggles).forEach(([key, on]) => document.body.classList.toggle(`tiles-${key}`, on));
       document.body.classList.toggle('tiles-toolTiles', toolView().tiles);
+      document.querySelectorAll('.fuel-plot').forEach(p => { p.style.minHeight = ''; });
       document.body.classList.toggle('span-long', span === 'long');
       document.body.classList.toggle('span-recent', span === 'recent');
       document.body.classList.toggle('show-bench', CFG.showBenchmarks);
@@ -1086,6 +1444,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.DOVOZ_REDRAW = drawAll;
     // ponytail: any control redraws every chart, not just its own — cheap here.
     drawAll();
+    worldReady.then(features => { world = features; drawAll(); })
+      .catch(err => console.error('dovoz: map failed to load', err));
 
     // Redrawing is the only way to resize: the width is baked into the viewBox.
     let resizeTimer;

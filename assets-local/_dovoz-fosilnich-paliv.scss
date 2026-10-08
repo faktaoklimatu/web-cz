@@ -226,6 +226,22 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
+    /* "pod sebou" sits under "zvlášť po zemích", whose option it is, and
+       shows only while that is on; hidden, it keeps its room. */
+    .chart-toggles--sub {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 12px;
+    }
+
+    .chart-toggle--sub {
+        grid-column: 2;
+    }
+
+    &:not(.tiles-minis) .chart-toggle--sub {
+        visibility: hidden;
+    }
+
     /* What a chart shows, in two or three sentences under it. */
     .fuel-copy {
         margin: 8px 0 0;
@@ -285,7 +301,8 @@ body.dovoz-fosilnich-paliv {
        catches the KPI row and anything a chart leaves unstyled. */
     .chart-panel,
     .fuel-columns,
-    .tool {
+    .tool,
+    .route-map {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     }
 
@@ -363,7 +380,8 @@ body.dovoz-fosilnich-paliv {
        chart in a panel with its title, summary, source and downloads — the
        same pieces, in the same order, as the ETS overview's panels, so
        chart-download.js reads the same data-* attributes. */
-    .tool {
+    .tool,
+    .route-map {
         margin-top: 56px;
     }
 
@@ -555,6 +573,39 @@ body.dovoz-fosilnich-paliv {
             box-shadow: 0 0 0 1px #cbd5e0;
             cursor: pointer;
             pointer-events: auto;
+        }
+    }
+
+    /* The route map's suppliers on a phone, under the map rather than on it
+       (drawMap): a name in its colour, the numbers in grey, and with "výdaje"
+       the squares in rows of ten. */
+    .route-list {
+        margin: 8px 0 0;
+        padding: 0;
+        list-style: none;
+        font-size: var(--dovoz-note-size);
+
+        li {
+            margin: 4px 0;
+        }
+
+        span {
+            color: #53616e;
+        }
+    }
+
+    .route-squares {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 1px;
+        width: 59px;
+        margin-top: 2px;
+
+        i {
+            width: 5px;
+            height: 5px;
+            background: currentColor;
         }
     }
 

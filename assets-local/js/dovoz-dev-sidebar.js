@@ -42,7 +42,6 @@
     ]],
     ["Ceny", [
       ["showBenchmarks", "Burzovní ceny (Brent, TTF)", "checkbox"],
-      ["colorBenchmark", "Barva burzovní ceny", "color"],
       ["gasGCV", "Plyn ve spalném teple", "checkbox"],
     ]],
     ["Podíl na HDP", [
