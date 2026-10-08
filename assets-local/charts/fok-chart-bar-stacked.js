@@ -44,6 +44,9 @@
  *   legend        {boolean}    render legend       (default true when >1 key)
  *   legendDirection {'horizontal'|'vertical'}      (default 'horizontal')
  *   tooltipHtml   {function}   (rawRow, key) => HTML
+ *   yMax          {number}     fixed top of the y-axis, e.g. to share a scale between charts
+ *   markers       {object[]}   events: { band, offset, label } — a dashed vertical line at
+ *                              `offset` (0–1, default 0.5) across that category's band
  *   yLabel        {string}
  *   title         {string}
  *   width/height  {number}
@@ -98,7 +101,7 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
   // ── D3 stack ──────────────────────────────────────────────────────────────
   const stack  = d3.stack().keys(keys);
   const series = stack(rows);
-  const yMax   = proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
+  const yMax   = proportional ? 100 : options.yMax ?? d3.max(series, s => d3.max(s, d => d[1]));
   const cats   = rows.map(r => r._x);
 
   // ── Scales ────────────────────────────────────────────────────────────────
@@ -264,6 +267,12 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
         });
     }
   });
+
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  if (!horiz) {
+    fokMarkers(g, options.markers, m => xScale(m.band) == null ? null
+      : xScale(m.band) + (m.offset ?? 0.5) * xScale.bandwidth(), inner, theme);
+  }
 
   // ── Legend ────────────────────────────────────────────────────────────────
   const showLegend = options.legend !== false && keys.length > 1;

@@ -150,6 +150,73 @@ function fokAnnotation(svg, text, x, y, options = {}, theme = FoKTheme) {
 }
 
 // ---------------------------------------------------------------------------
+// Hatch fill
+// ---------------------------------------------------------------------------
+
+/**
+ * A diagonal-stripe fill in `color`, for a partial period. The pattern is made
+ * once per colour per SVG; returns the url() to use as a fill.
+ */
+function fokHatch(svg, color) {
+  const node = svg.node();
+  node.__fokHatches = node.__fokHatches ?? new Map();
+  if (!node.__fokHatches.has(color)) {
+    const id = 'fok-hatch-' + Math.random().toString(36).slice(2, 7);
+    let defs = svg.select('defs');
+    if (defs.empty()) defs = svg.append('defs');
+    defs.append('pattern')
+      .attr('id', id)
+      .attr('patternUnits', 'userSpaceOnUse')
+      .attr('width', 6).attr('height', 6)
+      .attr('patternTransform', 'rotate(45)')
+      .append('rect').attr('width', 2.5).attr('height', 6).attr('fill', color);
+    node.__fokHatches.set(color, `url(#${id})`);
+  }
+  return node.__fokHatches.get(color);
+}
+
+// ---------------------------------------------------------------------------
+// Event markers
+// ---------------------------------------------------------------------------
+
+/**
+ * Event markers: a dashed vertical line through the plot, its label in the top
+ * margin, clear of whatever the chart does there. pointer-events off, so the
+ * hover targets underneath still answer. An empty label draws the line alone.
+ *
+ * @param {d3.Selection} g        the plot group (origin at the plot's top left)
+ * @param {object[]}     markers  as the chart received them
+ * @param {function}     xOf      marker => x in the plot, or null to skip it
+ * @param {{w:number,h:number}} inner  the plot's size; markers off it are skipped
+ */
+function fokMarkers(g, markers, xOf, inner, theme = FoKTheme) {
+  (markers ?? []).forEach(m => {
+    const mx = xOf(m);
+    if (mx == null || !Number.isFinite(mx) || mx < 0 || mx > inner.w) return;
+    const mg = g.append('g').attr('class', 'fok-marker').attr('pointer-events', 'none');
+    mg.append('line')
+      .attr('x1', mx).attr('x2', mx)
+      .attr('y1', -4).attr('y2', inner.h)
+      .attr('stroke', theme.colors.text)
+      .attr('stroke-width', 1)
+      .attr('stroke-dasharray', '3 3');
+    if (m.label) {
+      // Centred on the line, unless that would run past the plot's edge: then
+      // it hangs inward from the line. Half the width is estimated from the
+      // character count, which is close enough for a short label.
+      const half = m.label.length * theme.fontSize.axisLabel * 0.28;
+      mg.append('text')
+        .attr('x', mx).attr('y', -10)
+        .attr('text-anchor', mx + half > inner.w ? 'end' : mx - half < 0 ? 'start' : 'middle')
+        .attr('fill', theme.colors.text)
+        .attr('font-family', theme.font)
+        .attr('font-size', theme.fontSize.axisLabel)
+        .text(m.label);
+    }
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Legend
 // ---------------------------------------------------------------------------
 
@@ -177,11 +244,13 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
   items.forEach(item => {
     const itemEl = legendEl.append('div').attr('class', 'fok-legend__item');
 
-    itemEl.append('span')
+    // A dashed series (item.dashed) gets a dashed stroke for a swatch, so the
+    // legend reads like the line; everything else a filled square.
+    const swatch = itemEl.append('span')
       .attr('class', 'fok-legend__swatch')
-      .style('background', item.color)
-      .style('width',  swatchSize + 'px')
-      .style('height', swatchSize + 'px');
+      .style('width',  swatchSize + 'px');
+    if (item.dashed) swatch.style('height', 0).style('border-top', `2px dashed ${item.color}`);
+    else swatch.style('background', item.color).style('height', swatchSize + 'px');
 
     itemEl.append('span')
       .attr('class', 'fok-legend__label')
@@ -198,14 +267,21 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
 // ---------------------------------------------------------------------------
 
 /**
- * Creates a floating tooltip div and returns show/hide/move helpers.
- * Appends the tooltip to document.body (escapes SVG stacking context).
+ * Returns show/hide/move helpers for the page's floating tooltip div, kept on
+ * document.body (escapes SVG stacking context).
+ *
+ * There is one such div per page, shared by every chart and every redraw. A
+ * new one per draw piled up on <body>, and one that was showing when its chart
+ * redrew under the mouse stayed stuck: the handler that would hide it went
+ * with the old chart. Each call restyles it and hides it.
+ * ponytail: styled by the last chart drawn; restyle in show() if a page ever
+ * mixes tooltip themes.
  *
  * @param {object} [theme]
  * @returns {{ show: function, move: function, hide: function, remove: function }}
  */
 function fokTooltip(theme = FoKTheme) {
-  const tip = d3.select('body').append('div')
+  const tip = d3.select('body').selectAll('.fok-tooltip').data([null]).join('div')
     .attr('class', 'fok-tooltip')
     .style('position', 'fixed')
     .style('pointer-events', 'none')
