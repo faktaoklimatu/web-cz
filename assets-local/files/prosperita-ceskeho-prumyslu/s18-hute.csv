@@ -1,0 +1,47 @@
+"Slide 18: Hutě podle lokalit: emise, povolenky zdarma a dokoupené povolenky (kt)"
+EK Union Registry
+Směrnice (EU) 2023/959 – útlum alokace podle CBAM
+"Co tabulka ukazuje: Hutě podle lokalit: kolik emitují, kolik povolenek dostávají zdarma a kolik musí dokoupit."
+Pojmy a jednotky: Vše v kt CO2 (tisících tun). dokoupit_kt = emise − povolenky zdarma; záporné = přebytek povolenek.
+"Ostrava = Liberty Ostrava a.s. + Liberty Ostrava + TAMEH; Třinec = Třinecké železárny + Energetika Třinec. Výhled v grafu: emise 2024, alokace TŽ × 0,515 (2030) a × 0 (2034). Výpočet: R/03_ets_costs.R → out/steel_sites.csv."
+
+lokalita,rok,emise_kt,povolenky_zdarma_kt,dokoupit_kt
+Ostrava,2013,5314.1,4906,408.1
+Ostrava,2014,5377.7,4820.7,556.9
+Ostrava,2015,5098.8,4734.6,364.2
+Ostrava,2016,5667.1,4647.5,1019.5
+Ostrava,2017,4848.9,4559.6,289.3
+Ostrava,2018,5319.3,4470.8,848.5
+Ostrava,2019,4435.9,4381,54.9
+Ostrava,2020,4041.1,4290.8,-249.7
+Ostrava,2021,5178.9,2743.5,2435.4
+Ostrava,2022,4213.5,3407.5,806
+Ostrava,2023,2433.2,3404.2,-971
+Ostrava,2024,48.6,300.2,-251.6
+Ostrava,2025,0,16.3,-16.3
+Třinec,2013,4554.2,3938.1,616.2
+Třinec,2014,4460.7,3861.3,599.4
+Třinec,2015,4316.7,3784.8,531.9
+Třinec,2016,4355.6,3708.5,647.2
+Třinec,2017,4190.4,3632.3,558
+Třinec,2018,4274.3,3556.4,717.9
+Třinec,2019,4222.3,3480.4,741.8
+Třinec,2020,4389.4,3405.8,983.6
+Třinec,2021,4039.8,3430.4,609.4
+Třinec,2022,4028.9,3376.5,652.4
+Třinec,2023,3955,3378.5,576.5
+Třinec,2024,3911,3376.7,534.3
+Třinec,2025,3841.3,3372.3,468.9
+ostatní,2013,646.7,658,-11.4
+ostatní,2014,626.2,662.7,-36.5
+ostatní,2015,584,637.5,-53.6
+ostatní,2016,491.8,587.2,-95.40000000000001
+ostatní,2017,447.6,539.2,-91.59999999999999
+ostatní,2018,392.3,489.2,-96.90000000000001
+ostatní,2019,356.1,432.3,-76.2
+ostatní,2020,308.3,399.9,-91.59999999999999
+ostatní,2021,304.7,210.6,94
+ostatní,2022,264.3,202.7,61.6
+ostatní,2023,252.3,191.1,61.2
+ostatní,2024,258,167.8,90.2
+ostatní,2025,260.5,167.5,93

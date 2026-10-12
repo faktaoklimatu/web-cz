@@ -1,0 +1,13 @@
+Slide 16: Příběhy oborů: náklady na 100 € tržeb (2024)
+Eurostat sbs_ovw_act
+EK Union Registry
+"Co tabulka ukazuje: Kolik obor zaplatí za práci, energii a ETS na každých 100 € tržeb (2024)."
+Pojmy a jednotky: € na 100 € čistého obratu. ETS v elektřině = horní odhad. ETS přímo = čistý náklad povolenek (u hutí nejlepší odhad).
+Platí pro slidy 16–20.
+
+NACE,obor,trzby_2024_mil_EUR,energie_na_100EUR,prace_na_100EUR,ETS_v_elektrine_na_100EUR,ETS_primo_na_100EUR
+C20,Chemie,14244.5,5.28,7.22,1.2,0.92
+C23,"Cement, sklo, keramika",7818.8,8.49,18.23,1.48,-0.01
+C24,Hutě (základní kovy),8717.6,6.98,12.54,1.41,0.15
+C28,Stroje,17398,1.99,19.56,0.34,0
+C29,Auta,71454.7,1.15,8.44,0.24,0.03

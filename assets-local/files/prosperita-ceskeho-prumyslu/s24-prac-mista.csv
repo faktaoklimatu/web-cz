@@ -1,0 +1,15 @@
+Slide 24: Pracovní místa v energeticky náročných oborech podle regionů soudržnosti (2023)
+Eurostat sbs_r_nuts2021
+"Co tabulka ukazuje: Pracovní místa v energeticky náročných oborech podle regionů soudržnosti (NUTS 2), 2023."
+"Pojmy a jednotky: Počet zaměstnaných v místních jednotkách (provozovnách). Energeticky náročné = papír, chemie, cement/sklo/keramika, hutě. Podíl = jejich místa / místa ve zpracovatelském průmyslu, %."
+Osoby zaměstnané v místních jednotkách. Data podle oborů existují jen za NUTS 2. Výpočet: R/05_regions.R.
+
+NUTS2,region,papir,chemie,cement_sklo_keramika,hute,energeticky_narocne_celkem,zpracovatelsky_prumysl,podil_%
+CZ01,Praha,713,2160,5261,1303,9437,94962,9.9
+CZ02,Střední Čechy,2864,4539,6273,3079,16755,155821,10.8
+CZ03,Jihozápad,1882,2061,6401,1711,12055,159641,7.6
+CZ04,Severozápad,2884,6911,10044,3554,23393,107454,21.8
+CZ05,Severovýchod,5208,5185,11040,3991,25424,220193,11.5
+CZ06,Jihovýchod,2669,3338,7850,4372,18229,211210,8.6
+CZ07,Střední Morava,2681,5402,4365,3775,16223,175128,9.300000000000001
+CZ08,Moravskoslezsko,2324,2184,2430,18756,25694,148471,17.3

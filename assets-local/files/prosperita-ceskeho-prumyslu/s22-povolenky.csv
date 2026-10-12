@@ -1,0 +1,20 @@
+Slide 22: Průmyslová zařízení v EU ETS: povolenky zdarma vs. emise
+EK Union Registry
+DEHSt – aukční ceny
+Co tabulka ukazuje: Všechna průmyslová zařízení v EU ETS v ČR: bezplatné povolenky vs. emise podle let.
+"Pojmy a jednotky: Tuny CO2. Procesní = činnosti 21–99 (hutě, cement, sklo, papír, chemie…); spalovací průmyslové = kotelny a energetiky podniků (kód 20). Deficit v mil. € = deficit × průměrná aukční cena daného roku (€/t)."
+
+rok,povolenky_zdarma_procesni_t,emise_procesni_t,povolenky_zdarma_spalovaci_prum_t,emise_spalovaci_prum_t,cena_EUR_t,povolenky_celkem,emise_celkem,deficit_t,deficit_mil_EUR
+2013,10565063,8611978,8697214,13687343,4.33,,,,
+2014,10337327,8844640,8487079,13726854,5.9,,,,
+2015,10136961,8795299,8402754,13161878,7.6,,,,
+2016,9943348,8782344,8227694,13338797,5.26,,,,
+2017,9711918,9280286,7561642,13057543,5.8,,,,
+2018,9557471,9565041,7749995,13276594,14.9,,,,
+2019,9335842,9547699,7529634,12319076,24.66,,,,
+2020,9087734,9170580,7324903,11395781,24.59,,,,
+2021,8908570,9145087,5184690,13091552,52.47,,,,
+2022,8830544,8631202,5904769,11902290,80.40000000000001,,,,
+2023,8873167,7745022,6016542,9434166,83.68000000000001,,,,
+2024,8257895,7607064,2737677,6451178,65.01000000000001,,,,
+2025,7856049,7610466,2186858,6254217,73.86,,,,

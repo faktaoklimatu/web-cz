@@ -1,0 +1,27 @@
+Slide 4: Změna objemu výroby 2015→2025 a příspěvky oborů
+Eurostat sts_inpr_a
+Eurostat nama_10_a64 (HPH 2015)
+Co tabulka ukazuje: Jak se změnil objem výroby oborů 2015→2025 a kolik který obor přispěl ke změně výroby celého průmyslu.
+"Pojmy a jednotky: Index průmyslové výroby = objem výroby (očištěný o ceny, kalendářně upravený) vůči základnímu roku; 2015 = 100. 110 znamená o 10 % vyšší výrobu než v roce 2015."
+"Pojmy a jednotky: váha_HPH_2015 = podíl oboru na HPH průmyslu 2015 (0–1). zmena_vyroby = změna indexu 2025/2015 − 1 (podíl, 0,10 = +10 %). příspěvek_pb = váha × změna, v procentních bodech růstu celého průmyslu."
+"Příspěvek = váha 2015 × změna indexu / index průmyslu 2015 × 100. Viz též příloha, slide 28."
+
+NACE,obor,vaha_HPH_2015,zmena_vyroby_2015_2025,zmena_indexu_bodu,prispevek_pb
+C29,Auta,0.1921,0.4827,41.9,9.147600000000001
+C27,Elektrická zařízení,0.07770000000000001,0.3854,30.6,2.7028
+C25,Kovovýroba,0.1133,0.2199,18.6,2.394
+C26,Elektronika,0.057,0.2529,21.6,1.3985
+C10-12,Potraviny a nápoje,0.08019999999999999,0.138,12.7,1.1577
+C30,Ostatní doprava,0.0222,0.4431,37,0.9337
+C21,Farmacie,0.0163,0.7553,50,0.9237
+C22,Pryž a plasty,0.079,0.1084,9.5,0.853
+C33,Opravy a instalace,0.0355,0.1826,17,0.6858
+C31_32,Nábytek a ostatní,0.0321,0.2058,17.1,0.6241
+C17,Papír,0.0171,0.3386,25.8,0.5017
+C28,Stroje,0.0949,0.0312,2.9,0.3129
+C20,Chemie,0.0367,0.0068,0.6,0.025
+C23,"Cement, sklo, keramika",0.0464,-0.0034,-0.3,-0.0158
+C16,Dřevo,0.0222,-0.0382,-3.7,-0.0935
+C18,Tisk,0.0126,-0.1006,-8.800000000000001,-0.1264
+C13-15,Textil a oděvy,0.0229,-0.0824,-8.4,-0.2187
+C24,Hutě (základní kovy),0.0373,-0.2505,-25.6,-1.0848

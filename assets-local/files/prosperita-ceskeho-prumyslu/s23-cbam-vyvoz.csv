@@ -1,0 +1,24 @@
+"Slide 23: Vývoz mimo oblast EU ETS (2024, mil. €)"
+Eurostat FIGARO naio_10_fcp_ii4 (2024)
+Nařízení (EU) 2023/956
+"Co tabulka ukazuje: Kolik produkce obory vyvážejí mimo oblast EU ETS, tedy kam CBAM nedosáhne."
+"Pojmy a jednotky: Mil. € (FIGARO 2024). Oblast EU ETS = EU + Norsko, Island, Lichtenštejnsko, Švýcarsko. Podíly v % produkce oboru."
+
+NACE,obor,produkce_2024,vyvoz_mimo_EU,Norsko,Svycarsko,Spojene_kralovstvi,USA,Cina,Turecko,mimo_oblast_ETS_bez_UK_%,UK_%
+C10-12,Potraviny a nápoje,20087,1439.2,38.9,51.1,334.4,87.59999999999999,66.3,28.9,,
+C13-15,Textil a oděvy,3485.2,542.9,8.699999999999999,26.3,71,51.1,102,30.8,,
+C16,Dřevo,4527.3,455.2,5.9,38.5,31.3,64,47.9,8.300000000000001,,
+C17,Papír,4306,1143.2,13.1,53.7,180.6,103.1,156.7,46.7,,
+C20,Chemie,14867.9,1715.4,24.1,109.9,122.3,150.4,86,91.8,,
+C21,Farmacie,2904.5,258.9,4.4,46.6,34.8,40.4,10,4.4,,
+C22,Pryž a plasty,13583.4,2843.8,39.7,146.5,315.8,455.9,267.1,239.2,,
+C23,"Cement, sklo, keramika",7948.1,1058,29.9,50.2,125.5,116.3,87.7,72.40000000000001,,
+C24,Hutě (základní kovy),8506.799999999999,807.8,32.5,41,86.2,124.1,68.09999999999999,60,,
+C25,Kovovýroba,20390,2684.1,65.5,198.7,410.1,378.1,227.5,171.9,,
+C26,Elektronika,15100.3,4354.3,89.7,198,504.9,555.6,592.8,239.8,,
+C27,Elektrická zařízení,17418.1,4024.6,59.3,201.5,414.4,502.1,701.7,249.2,,
+C28,Stroje,17152.6,4519.2,81.59999999999999,182.2,541.7,775.9,543.5,354.9,,
+C29,Auta,73337.5,14812.5,392.3,990,4717.9,604.8,765.1,1734.8,,
+C30,Ostatní doprava,5097.6,1172.8,8.199999999999999,86.09999999999999,171.7,196.1,113.2,36.5,,
+C31_32,Nábytek a ostatní,5771.4,1319.3,25.1,134,332.6,206.2,80.40000000000001,37.4,,
+C33,Opravy a instalace,7166.1,489.9,7.2,39.7,51.9,62.9,39.5,13.1,,

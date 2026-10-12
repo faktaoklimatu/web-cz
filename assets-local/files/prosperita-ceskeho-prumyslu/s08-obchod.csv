@@ -1,0 +1,25 @@
+Slide 8: Dovozní penetrace a vývoz 2024
+Eurostat FIGARO naio_10_fcp_ii4 (2024)
+Co tabulka ukazuje: Odkud obory čelí dovozu a kam vyvážejí (2024).
+"Pojmy a jednotky: Dovoz z EU a mimo EU v % domácí spotřeby výrobků oboru. Vývoz v % produkce oboru. Oblast EU ETS = EU + Norsko, Island, Lichtenštejnsko a Švýcarsko (propojený ETS)."
+"Viz též příloha, slide 30."
+
+NACE,obor,dovoz_z_EU_%,dovoz_mimo_EU_%,vyvoz_do_EU_%_produkce,vyvoz_mimo_oblast_ETS_%_produkce,dovozni_penetrace_%
+C33,Opravy a instalace,8,3,11.8,6.2,11
+C18,Tisk,8.4,4.3,0.4,4.1,12.6
+C16,Dřevo,22.8,5.9,29.5,9.1,28.7
+C23,"Cement, sklo, keramika",23.3,8,30.4,12.3,31.3
+C25,Kovovýroba,33.9,9.199999999999999,37.5,11.9,43.1
+C10-12,Potraviny a nápoje,37.4,6.8,33.4,6.7,44.2
+C30,Ostatní doprava,26.7,18.7,31.5,21.2,45.4
+C29,Auta,40.7,13,53.3,18.3,53.7
+C20,Chemie,39.6,14.5,32.1,10.6,54.2
+C22,Pryž a plasty,44.6,14.5,45.6,19.6,59.1
+C21,Farmacie,42.3,21.2,20.9,7.2,63.6
+C24,Hutě (základní kovy),55.2,11.4,39.2,8.6,66.59999999999999
+C27,Elektrická zařízení,44.7,23.1,48.6,21.6,67.8
+C17,Papír,58.6,10.1,48.1,25,68.7
+C31_32,Nábytek a ostatní,49.1,20.1,50.5,20.1,69.2
+C28,Stroje,52.8,18.4,47.4,24.8,71.2
+C13-15,Textil a oděvy,35.2,36.8,48.9,14.6,72
+C26,Elektronika,29.8,56.2,56,26.9,85.90000000000001

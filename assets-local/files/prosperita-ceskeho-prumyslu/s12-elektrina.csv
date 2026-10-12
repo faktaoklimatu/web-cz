@@ -1,0 +1,21 @@
+"Slide 12: Cena elektřiny pro průmysl: pásmo IF (70–150 GWh, v grafu) a ID (2–20 GWh), bez DPH a vratných daní"
+Eurostat nrg_pc_205
+Co tabulka ukazuje: Cena elektřiny pro průmyslové odběratele v Česku a dalších zemích EU.
+"Pojmy a jednotky: €/MWh bez DPH a vratných daní, průměr obou pololetí roku. Pásmo IF = roční odběr 70–150 GWh (typický energeticky náročný podnik), pásmo ID = 2–20 GWh (střední podnik)."
+"2019 a 2025 = průměr obou pololetí, 2026 = 1. pololetí. Výpočet: R/06_electricity_price.R."
+
+zeme,IF_2019_EUR_MWh,IF_2025_EUR_MWh,IF_2026_EUR_MWh,ID_2019_EUR_MWh,ID_2025_EUR_MWh,ID_2026_EUR_MWh,zmena_IF_%
+CZ,70.5,180,164.9,74.2,164.6,145.8,
+HU,79.59999999999999,158,166.8,88.59999999999999,187.4,196,
+SK,98.90000000000001,152,151.5,123.3,181,177.3,
+RO,85.59999999999999,145,147.9,92.59999999999999,167.4,172.3,
+DE,92.8,144.3,137.9,133.6,192.7,174.2,
+PL,76.3,144.2,150.1,84.59999999999999,173,181.2,
+IT,92.3,143.8,148.8,140.8,198.9,199.1,
+AT,78.40000000000001,140,136.8,95.3,180.1,169.2,
+NL,57.5,130,125.2,88,185.6,182.4,
+EU27_2020,76.40000000000001,123.2,,103.8,161.8,,
+ES,74.40000000000001,99,91.7,94.8,122,117.7,
+FR,59.1,76.8,79.40000000000001,81.2,125.4,123.9,
+SE,50.7,70.8,89.7,63,84.5,105.6,
+FI,57.6,46.8,79.3,67.5,68.59999999999999,85.2,

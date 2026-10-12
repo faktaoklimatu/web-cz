@@ -1,0 +1,28 @@
+"Slide 10: Náklady na energii a ETS (% HPH, 2024)"
+Eurostat sbs_ovw_act
+Eurostat env_ac_pefasu
+EK Union Registry
+Co tabulka ukazuje: Náklady na energii a na ETS jako % hrubé přidané hodnoty oboru (2024).
+"Pojmy a jednotky: HPH = hrubá přidaná hodnota v běžných cenách (mil. €) – hodnota, kterou obor vytvoří: tržby minus nakoupené zboží a služby."
+"Pojmy a jednotky: Nákupy energie = vše, co podniky za energii zaplatily. Nepřímé náklady ETS = část ceny elektřiny daná povolenkou (spotřeba elektřiny × 0,85 t CO2/MWh × 65 €/t; horní odhad). Přímé čisté náklady ETS = (ověřené emise − bezplatné povolenky) × 65 €/t. Záporné = přebytek povolenek."
+
+NACE,obor,HPH_2024,podil_HPH,nakupy_energie_%HPH,neprime_ETS_%HPH,prime_ETS_%HPH
+C24,Hutě (základní kovy),1136.2,0.018,53.547,10.782,1.139
+C20,Chemie,1842.2,0.028,40.832,9.253,7.094
+C23,"Cement, sklo, keramika",2574.1,0.04,25.788,4.507,-0.03
+C17,Papír,1148.1,0.018,16.958,8.465,0.759
+C10-12,Potraviny a nápoje,5826.7,0.09,13.301,1.751,0.133
+C22,Pryž a plasty,3973.5,0.061,12.065,2.801,0.026
+C27,Elektrická zařízení,5647.5,0.08699999999999999,11.926,0.9409999999999999,
+C13-15,Textil a oděvy,1265.1,0.02,11.92,2.428,0
+C16,Dřevo,1366,0.021,11.537,2.116,-0.489
+C18,Tisk,710.5,0.011,7.305,1.187,
+C25,Kovovýroba,7939.3,0.122,7.261,1.136,-0.002
+C28,Stroje,5515.8,0.08500000000000001,6.28,1.062,0
+C29,Auta,14642.3,0.226,5.616,1.152,0.166
+C31_32,Nábytek a ostatní,2255.5,0.035,5.356,0.827,
+C21,Farmacie,1116.8,0.017,4.782,0.921,0.024
+C33,Opravy a instalace,2831.4,0.044,4.482,0.198,
+C30,Ostatní doprava,1900,0.029,3.763,0.637,0
+C26,Elektronika,3090.9,0.048,3.51,0.6820000000000001,
+C,Průmysl celkem,64824.7,1,10.434,1.928,0.307

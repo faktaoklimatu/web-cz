@@ -1,0 +1,19 @@
+Slide 17: Stroje (C28)
+Eurostat sts_inpr_a
+Eurostat nama_10_a64 / _e
+"Co tabulka ukazuje: Stroje (C28): výroba, náklady práce a produktivita."
+"Pojmy a jednotky: Index průmyslové výroby = objem výroby (očištěný o ceny, kalendářně upravený) vůči základnímu roku; 2015 = 100. 110 znamená o 10 % vyšší výrobu než v roce 2015."
+Pojmy a jednotky: Náklady práce na zaměstnance a výroba na pracujícího jako index 2015 = 100.
+
+rok,vyroba_CZ_2015=100,naklady_prace_na_zam_2015=100,vyroba_na_pracujiciho_2015=100
+2015,100,100,100
+2016,102.4,106.3,102.2
+2017,111.8,116.7,110.3
+2018,113.8,128.6,110.3
+2019,112.8,136.3,110.7
+2020,98.59999999999999,133,102.9
+2021,107,145.1,113.3
+2022,112.3,165.6,120.7
+2023,110.6,184.4,122.5
+2024,101.2,182.1,113
+2025,103.1,193.4,117

@@ -1,0 +1,19 @@
+Slide 16: Auta (C29)
+Eurostat sts_inpr_a
+Eurostat nama_10_a64 / _e
+"Co tabulka ukazuje: Auta (C29): výroba, náklady práce a produktivita."
+"Pojmy a jednotky: Index průmyslové výroby = objem výroby (očištěný o ceny, kalendářně upravený) vůči základnímu roku; 2015 = 100. 110 znamená o 10 % vyšší výrobu než v roce 2015."
+Pojmy a jednotky: Náklady práce na zaměstnance a výroba na pracujícího jako index 2015 = 100.
+
+rok,vyroba_CZ_2015=100,vyroba_DE_2015=100,naklady_prace_na_zam_2015=100,vyroba_na_pracujiciho_2015=100
+2015,100,100,100,100
+2016,111.2,100.1,107.7,106
+2017,122.2,101.9,118.6,110.7
+2018,125.1,100.3,132.2,111.6
+2019,125.2,95.40000000000001,140.4,111.7
+2020,110.3,76.2,137.2,105.1
+2021,114.6,74.09999999999999,153,109
+2022,128,77.09999999999999,171.8,124.1
+2023,149.9,87,193.5,144.2
+2024,147.6,80.40000000000001,195.3,139.7
+2025,148.3,79.90000000000001,215.8,143.5

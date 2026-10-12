@@ -1,0 +1,26 @@
+Slide 6: Hrubé užití energie podle nosičů (2023) a energetická náročnost
+"Eurostat env_ac_pefasu (PEFA, USE)"
+Eurostat nama_10_a64 (HPH 2023)
+Co tabulka ukazuje: Kolik energie obory spotřebují a z jakých zdrojů (2023).
+"Pojmy a jednotky: Hrubé užití energie v TJ (terajoulech; 1 TJ = 278 MWh) podle nosičů, vč. paliv použitých jako surovina (např. koks ve vysoké peci, nafta v petrochemii). Energetická náročnost = TJ na 1 mil. € HPH."
+"Vč. vstupů do koksoven a vysokých pecí a surovin pro chemii. Viz též příloha, slide 29."
+
+NACE,obor,elektrina_TJ,plyn_TJ,uhli_koks_TJ,koks_vysokopec_plyn_TJ,nafta_surovina_TJ,ostatni_ropne_TJ,teplo_TJ,biomasa_TJ,odpady_TJ,TJ_na_mil_EUR_HPH,celkem_TJ
+C26,Elektronika,1373,235,104,0,0,351,820,128,0,0.9,
+C33,Opravy a instalace,366,918,4,0,0,1585,236,33,0,1.11,
+C27,Elektrická zařízení,3462,2233,13,0,0,991,468,32,0,1.24,
+C31_32,Nábytek a ostatní,1215,489,13,0,0,1073,246,120,0,1.36,
+C29,Auta,10991,6703,7,0,0,2021,1620,19,0,1.62,
+C28,Stroje,3816,2699,55,0,0,2237,645,10,0,1.64,
+C30,Ostatní doprava,789,1086,114,0,0,291,233,5,0,1.66,
+C25,Kovovýroba,5875,4536,77,0,0,2949,628,111,0,1.8,
+C21,Farmacie,670,641,2,375,0,126,351,11,0,1.86,
+C18,Tisk,549,1696,5,0,0,224,83,1,0,3.42,
+C22,Pryž a plasty,7251,3468,21,0,0,3359,1839,22,0,3.89,
+C13-15,Textil a oděvy,2001,3455,18,0,0,693,267,6,0,4.77,
+C10-12,Potraviny a nápoje,6646,11559,2222,0,0,6468,6414,647,0,5.89,
+C16,Dřevo,1883,1361,1,0,0,1919,4773,6349,0,10.75,
+C23,"Cement, sklo, keramika",7558,17429,4809,109,0,2757,9049,117,8482,17.93,
+C17,Papír,6332,4109,2142,0,0,590,13269,20408,0,38.76,
+C20,Chemie,11105,10401,31934,1408,37234,27793,16469,308,111,51.04,
+C24,Hutě (základní kovy),7981,7779,95466,10850,0,864,2141,18,0,113.23,

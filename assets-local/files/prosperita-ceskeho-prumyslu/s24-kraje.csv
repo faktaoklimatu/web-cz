@@ -1,0 +1,22 @@
+Slide 24: Kraje: zaměstnanost v průmyslu 2015→2023 a průmyslové emise ETS
+Eurostat nama_10r_3empers
+EK Union Registry
+Natural Earth (hranice)
+Co tabulka ukazuje: Kraje: zaměstnanost v průmyslu a průmyslové emise v EU ETS.
+"Pojmy a jednotky: Zaměstnanost v tis. osob (regionální účty). Emise = průměrné roční ověřené emise průmyslových zařízení v kraji 2015–2019, kt CO2. ETS_t_na_zamestnaneho = emise / průměrná zaměstnanost."
+
+NUTS3,kraj,zamestnani_2015_tis,zamestnani_C_2015_tis,zamestnani_C_2023_tis,zamestnani_prumer_2015_2019_tis,prum_emise_ETS_2015_2019_kt,podil_C_2015_%,zmena_C_2015_2023_%,ETS_t_na_zamestnaneho
+CZ010,Praha,896.08,58.71,62.33,912.872,470.4394,,,
+CZ020,Středočeský,573.5599999999999,178.07,174.58,598.148,2232.7096,,,
+CZ031,Jihočeský,305.88,90.31999999999999,85.17,309.982,207.2796,,,
+CZ032,Plzeňský,279.42,93.2,88.22,279.704,170.1938,,,
+CZ041,Karlovarský,138.39,36.35,30.18,136.164,136.2538,,,
+CZ042,Ústecký,349.84,101.32,96.91,358.218,5050.5824,,,
+CZ051,Liberecký,197.33,75.48999999999999,68.94,197.276,45.3428,,,
+CZ052,Královéhradecký,250.7,82.18000000000001,86.64,261.48,192.9264,,,
+CZ053,Pardubický,251.51,89.13,82.48999999999999,248.98,925.0912,,,
+CZ063,Vysočina,231.63,84.89,82.72,242.104,144.5804,,,
+CZ064,Jihomoravský,591.78,138.39,131.46,597.24,1010.746,,,
+CZ071,Olomoucký,289.24,90.11,85.59999999999999,299.416,1131.9762,,,
+CZ072,Zlínský,279.03,105.66,103,282.374,422.6316,,,
+CZ080,Moravskoslezský,540.7,157.31,157.81,558.496,10039.0018,,,

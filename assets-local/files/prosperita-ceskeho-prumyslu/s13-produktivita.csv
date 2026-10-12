@@ -1,0 +1,18 @@
+"Slide 13: Náklady práce a produktivita, Česko (2015 = 100, v €)"
+Eurostat nama_10_a64
+Eurostat nama_10_a64_e
+"Co tabulka ukazuje: Vývoj nákladů práce a produktivity ve zpracovatelském průmyslu ČR, index 2015 = 100."
+"Pojmy a jednotky: Náklady práce na zaměstnance = náhrady zaměstnancům (mzdy + odvody) / počet zaměstnanců, v €. Produktivita = HPH ve stálých cenách / počet pracujících. Jednotkové náklady práce = náklady práce na jednotku výkonu (poměr obou)."
+
+rok,naklady_prace_na_zam_2015=100,jednotkove_naklady_prace_2015=100,produktivita_2015=100,podil_prace_na_HPH_%
+2015,100,100,100,51.2
+2016,106.2,103.1,103,
+2017,117,106.9,109.5,
+2018,130,116.4,111.7,58.5
+2019,139,118,117.8,58.1
+2020,136.4,123.9,110.2,60.3
+2021,150.3,134.7,111.6,63.2
+2022,169.6,140.3,120.9,61.9
+2023,187.9,147.6,127.3,57.8
+2024,190.1,151.6,125.5,58.8
+2025,203.5,158.4,128.5,61.4

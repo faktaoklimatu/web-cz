@@ -1,0 +1,25 @@
+Slide 5: Struktura nákladů 2024: energie vs. práce
+Eurostat sbs_ovw_act (2024)
+Co tabulka ukazuje: Struktura nákladů oborů v roce 2024: kolik jde na energii a kolik na práci.
+Pojmy a jednotky: Všechny částky v mil. €. Nákupy zboží a služeb zahrnují i energii. Osobní náklady = mzdy + odvody. Celkové náklady = nákupy zboží a služeb + osobní náklady; podíly v % celkových nákladů.
+Celkové náklady = nákupy zboží a služeb + osobní náklady. Kvadranty v grafu = medián oborů.
+
+NACE,obor,trzby_mil_EUR,nakupy_zbozi_sluzeb_mil_EUR,nakupy_energie_mil_EUR,osobni_naklady_mil_EUR,celkove_naklady,energie_%_nakladu,prace_%_nakladu
+C10-12,Potraviny a nápoje,21902.9,17503.9,775,2623.7,,,
+C13-15,Textil a oděvy,3523.8,2518.2,150.8,738.4,,,
+C16,Dřevo,4513.1,3515,157.6,582.4,,,
+C17,Papír,4674.4,3726.7,194.7,598.1,,,
+C18,Tisk,1871.4,1296.9,51.9,344,,,
+C20,Chemie,14244.5,12406.7,752.2,1028.2,,,
+C21,Farmacie,2929,2103.3,53.4,391,,,
+C22,Pryž a plasty,15322.2,11757.8,479.4,2239.3,,,
+C23,"Cement, sklo, keramika",7818.8,5473.5,663.8,1425,,,
+C24,Hutě (základní kovy),8717.6,7835.9,608.4,1093.5,,,
+C25,Kovovýroba,20854.3,14690.3,576.5,3870.5,,,
+C26,Elektronika,14470.3,12953.8,108.5,1293,,,
+C27,Elektrická zařízení,17680.8,13599,673.5,2880.6,,,
+C28,Stroje,17398,12692,346.4,3402.8,,,
+C29,Auta,71454.7,61107.1,822.3,6032.9,,,
+C30,Ostatní doprava,6670.5,5267.6,71.5,812.3,,,
+C31_32,Nábytek a ostatní,5648.4,3882.6,120.8,1235.8,,,
+C33,Opravy a instalace,7725.6,5426.1,126.9,1459.1,,,

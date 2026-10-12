@@ -1,0 +1,15 @@
+Slide 14: Manuální profese ve zpracovatelském průmyslu (ISCO 7–9)
+Eurostat lfsa_eisn2
+Co tabulka ukazuje: Podíl manuálních profesí mezi pracujícími ve zpracovatelském průmyslu.
+"Pojmy a jednotky: ISCO 7 = řemeslníci a opraváři, ISCO 8 = obsluha strojů a montéři, ISCO 9 = pomocní pracovníci; v % pracujících v průmyslu, počet v tis. osob."
+"Srovnání od 2022: v roce 2021 metodický zlom v LFS (u Slovinska velký, rozdělení ISCO 7/8/9 nespolehlivé)."
+
+zeme,ISCO7_%,ISCO8_%,ISCO9_%,manualni_2025_%,manualni_2022_%,manualni_2025_tis
+DE,27.2,11.6,6.1,44.9,47.2,3248.9
+AT,25.5,10.4,9.199999999999999,45.1,49,286.5
+EU27,29.6,18.3,6.1,54,56.5,16516.3
+PL,34.8,17.5,4.4,56.7,60.3,1845.1
+SK,28,27.1,5.7,60.8,66.90000000000001,345.4
+HU,27.6,30.4,4.6,62.6,66.8,564.6
+SI,28.2,21.3,13.7,63.1,59.2,137.6
+CZ,30.6,26.2,7.5,64.2,65.90000000000001,790.7

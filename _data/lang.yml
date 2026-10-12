@@ -61,6 +61,12 @@ text:
     author: "Autor"
     licence: "Licence"
     updated: "aktualizováno"
+  slides:
+    slides: "Prezentace"
+    present: "Promítat"
+    previous: "Předchozí snímek"
+    next: "Další snímek"
+    close: "Ukončit promítání"
   related:
     title: "Související infografiky a studie"
     caption: "Zaujala vás naše práce? Prozkoumejte další související infografiky a studie:"
