@@ -514,12 +514,13 @@
     const { svg, W, H } = canvas(el);
     const m = { top: 60, right: 20, bottom: 90, left: 70 };
     const x = d3.scaleLinear().domain([5, 26.5]).range([m.left, W - m.right]);
-    const y = d3.scaleLinear().domain([0, 11]).range([H - m.bottom, m.top]);
+    // Below zero only the bottom quadrant labels, clear of the bubbles.
+    const y = d3.scaleLinear().domain([-1, 11.2]).range([H - m.bottom, m.top]);
     const r = d3.scaleSqrt().domain([0, d3.max(data, (d) => d.hph)]).range([0, 58]);
     yAxis(svg, y, m.left, W - m.left - m.right, { ticks: [0, 2, 4, 6, 8, 10] });
     xAxis(svg, x, H - m.bottom, { ticks: [5, 10, 15, 20, 25], grid: H - m.bottom - m.top });
     txt(svg, (m.left + W - m.right) / 2, H - 16, "Náklady práce, % celkových nákladů", { anchor: "middle", size: FS.tick, color: C.grey });
-    txt(svg, m.left - 50, 18, "Nákupy energie, % celkových nákladů", { size: FS.tick, color: C.grey });
+    const yTitle = txt(svg, m.left - 50, 18, "Nákupy energie, % celkových nákladů", { size: FS.tick, color: C.grey });
     const mx = d3.median(data, (d) => d.prace);
     const my = d3.median(data, (d) => d.energie);
     vline(svg, x(mx), m.top, H - m.bottom, { color: C.grey, dashed: true });
@@ -530,7 +531,7 @@
     txt(svg, m.left + 12, H - m.bottom - 18, "Rozhodují materiály a díly", q);
     txt(svg, W - m.right - 12, H - m.bottom - 18, "Náročné hlavně na práci", { ...q, anchor: "end" });
     const pos = {
-      C24: "t", C20: "t", C23: "t", C17: "t", "C10-12": "l", C16: "b", C22: "t", C27: "t",
+      C24: "t", C20: "t", C23: "l", C17: "t", "C10-12": "l", C16: "b", C22: "t", C27: "t",
       "C13-15": "t", C18: [46, -44, "start"], C25: [-120, 18, "end"], C31_32: "t", C28: "r", C33: "br",
       C21: "b", C30: "b", C29: "l", C26: "br",
     };
@@ -541,7 +542,7 @@
         .call(hover, (d) => `<strong>${d.name}</strong><br>Práce: ${pct(d.prace, 1)} nákladů<br>Energie: ${pct(d.energie, 1)} nákladů<br>HPH 2025: ${fmt(d.hph / 1000, 1)} mld. €`);
     });
     data.forEach((d) => bubbleLabel(svg, x(d.prace), y(d.energie), r(d.hph), d.name, pos[d.nace] || "t", { size: FS.label }));
-    legend(svg, GROUPS, W - 1330, 18, { size: FS.small });
+    legend(svg, GROUPS, m.left - 50 + yTitle.node().getComputedTextLength() + 48, 18, { size: FS.small });
   };
 
   // 6 — energy intensity and main energy carrier
@@ -607,7 +608,7 @@
     vline(svg, x(50), m.top, H - m.bottom, { color: C.grey, dashed: true });
     hline(svg, y(10), m.left, W - m.right, { color: C.grey, dashed: true });
     txt(svg, (m.left + W - m.right) / 2, H - 16, "Dovozní penetrace: dovoz / zdánlivá domácí spotřeba", { anchor: "middle", size: FS.tick, color: C.grey });
-    txt(svg, m.left - 56, 12, "TJ energie na mil. € HPH (log. škála)", { size: FS.tick, color: C.grey });
+    const yTitle = txt(svg, m.left - 56, 12, "TJ energie na mil. € HPH (log. škála)", { size: FS.tick, color: C.grey });
     lines(svg, W - m.right - 14, m.top + 22, ["Vysoká náročnost + silná konkurence dovozu", "→ nejtěžší přenést náklad ETS do cen"], { anchor: "end", bold: true, color: C.energy, top: true });
     lines(svg, m.left + 14, m.top + 22, ["Náročné, ale chráněné", "(regionální trh)"], { size: FS.small, color: C.grey, top: true });
     txt(svg, W - m.right - 14, y(10) + 26, "Obchodovatelné, energeticky nenáročné", { anchor: "end", size: FS.small, color: C.grey });
@@ -635,14 +636,14 @@
     const pos = {
       "C19-20": [-36, 30, "end"], C24: [120, -12, "start"], C17: [150, 0, "start"], C23: [-60, -40, "end"],
       "C10-12": [-40, -60, "end"], C25: [-110, -16, "end"], C30: [-130, 50, "end"], C33: [10, 50, "start"],
-      C29: [-70, 70, "end"], C22: [60, -50, "start"], C28: [150, -50, "start"], C31_32: [120, 10, "start"],
+      C29: [-70, 70, "end"], C22: [-24, -62, "end"], C28: [150, -50, "start"], C31_32: [120, 10, "start"],
       C27: [20, 70, "start"], C26: [60, 40, "start"],
     };
     data.forEach((d) => {
       const strong = group(d.nace) === "energy";
       bubbleLabel(svg, x(d.p24), y(d.e23), r(d.h24), d.name, pos[d.nace] || "t", { bold: strong, color: strong ? C.energy : C.text });
     });
-    legend(svg, GROUPS, W - 1330, 12, { size: FS.small });
+    legend(svg, GROUPS, m.left - 56 + yTitle.node().getComputedTextLength() + 48, 12, { size: FS.small });
   };
 
   // 8 — import penetration, EU vs. outside
@@ -678,8 +679,8 @@
     const head = 70;
     const y = rows(data.length, head + 6, H, 0.22);
     const bw = y.bandwidth();
-    const xa = d3.scaleLinear().domain([0, 24]).range([lw + 6, lw + 190]);
-    const xb = d3.scaleLinear().domain([0, 55]).range([lw + 380, W - 330]);
+    const xa = d3.scaleLinear().domain([0, 24]).range([lw + 6, lw + 170]);
+    const xb = d3.scaleLinear().domain([0, 55]).range([lw + 300, W - 250]);
     const xc = W - 20;
     const hs = { size: FS.small, color: C.grey, top: true };
     lines(svg, xa(0), 8, ["Podíl na HPH", "průmyslu 2024"], hs);
@@ -699,9 +700,11 @@
       const red = rect(svg, xb(0), xb(d.indirect), y(i), bw, C.energy);
       const label = fmt(d.indirect, 1);
       const inside = xb(d.indirect) - xb(0) > label.length * 12 + 12;
-      txt(svg, inside ? xb(0) + 8 : xb(d.indirect) + 6, cy, label, { size: FS.small, bold: true, color: inside ? "white" : C.energy });
+      const redLabel = txt(svg, inside ? xb(0) + 8 : xb(d.indirect) + 6, cy, label, { size: FS.small, bold: true, color: inside ? "white" : C.energy });
+      // A short bar's red label sits past it, so the total moves out of its way.
+      const redEnd = inside ? 0 : xb(d.indirect) + 6 + redLabel.node().getComputedTextLength();
       red.call(hover, () => `<strong>${d.name}</strong><br>Nákupy energie: ${pct(d.energy, 1)} HPH<br>z toho nepřímé náklady ETS: ${pct(d.indirect, 1)} HPH`);
-      txt(svg, xb(d.energy) + 10, cy, pct(d.energy), { size: FS.value, bold: total });
+      txt(svg, Math.max(xb(d.energy), redEnd) + 10, cy, pct(d.energy), { size: FS.value, bold: total });
       let direct = "—";
       let color = C.light;
       if (d.direct != null) {
@@ -751,11 +754,10 @@
     const fit = (v) => my + slope * (Math.log10(v) - mx);
     svg.append("line").attr("x1", x(6)).attr("y1", y(fit(6))).attr("x2", x(5000)).attr("y2", y(fit(5000)))
       .attr("stroke", C.grey).attr("stroke-width", 3).attr("stroke-dasharray", "10 7");
-    lines(svg, x(4.6), y(98), [
-      "Trend napříč zeměmi: odvětví s 10× vyšší",
-      `emisní náročností rostla v průměru o ${fmt(-slope)} p. b. méně`,
+    lines(svg, x(3.2), y(106), [
+      `Trend: 10× vyšší náročnost = růst v průměru o ${fmt(-slope)} p. b. nižší`,
       `(korelace ${sgn(corr, 2)} – slabá vazba)`,
-    ], { top: true });
+    ], { top: true, size: FS.small });
     const g = svg.append("g");
     const clamp = (v) => Math.max(EMISNI_Y[0], Math.min(EMISNI_Y[1], v));
     const tipHtml = (d) => `<strong>${COUNTRY[d.country]}: ${names.get(d.nace) || d.nace}</strong><br>Emisní náročnost: ${fmt(d.x)} t CO₂e/mil. €<br>Změna výroby: ${sgn(d.y)} %`;
@@ -1205,9 +1207,9 @@
     const head = 40;
     const y = rows(data.length, head + 10, H - 60, 0.25);
     const cols = [
-      { title: "Podíl na HPH průmyslu 2025", x0: lw + 10, w: 280, max: 21, v: (d) => d.share, label: (d) => [[pct(d.share, 1)], [` (${fmt(d.hphAbs, 1)} mld. €)`, { color: C.grey }]] },
-      { title: "Podíl na zaměstnanosti v průmyslu 2025", x0: lw + 590, w: 250, max: 16, v: (d) => d.empShare, label: (d) => [[pct(d.empShare, 1)], [` (${fmt(d.emp)} tis.)`, { color: C.grey }]] },
-      { title: "Tržby 2024", x0: lw + 1090, w: 190, max: 72, v: (d) => d.sales, label: (d) => [[`${fmt(d.sales, 1)} mld. €`]] },
+      { title: "Podíl na HPH 2025", x0: lw + 10, w: 0.19 * (W - lw), max: 21, v: (d) => d.share, label: (d) => [[pct(d.share, 1)], [` (${fmt(d.hphAbs, 1)} mld. €)`, { color: C.grey }]] },
+      { title: "Podíl na zaměstnanosti 2025", x0: lw + 10 + 0.415 * (W - lw), w: 0.165 * (W - lw), max: 16, v: (d) => d.empShare, label: (d) => [[pct(d.empShare, 1)], [` (${fmt(d.emp)} tis.)`, { color: C.grey }]] },
+      { title: "Tržby 2024", x0: lw + 10 + 0.77 * (W - lw), w: 0.105 * (W - lw), max: 72, v: (d) => d.sales, label: (d) => [[`${fmt(d.sales, 1)} mld. €`]] },
     ];
     cols.forEach((c) => {
       const x = d3.scaleLinear().domain([0, c.max]).range([c.x0, c.x0 + c.w]);
@@ -1230,8 +1232,8 @@
     const lw = LW;
     const y = rows(data.length, 60, H - 60, 0.25);
     const bw = y.bandwidth();
-    const xw = d3.scaleLinear().domain([0, 20]).range([lw + 10, lw + 330]);
-    const xc = d3.scaleLinear().domain([-30, 80]).range([lw + 560, W - 260]);
+    const xw = d3.scaleLinear().domain([0, 20]).range([lw + 10, lw + 0.3 * (W - lw)]);
+    const xc = d3.scaleLinear().domain([-30, 80]).range([lw + 0.45 * (W - lw), W - 130]);
     const hs = { size: FS.small, color: C.grey, top: true };
     lines(svg, xw(0), 4, ["Váha: podíl na HPH", "zpracovatelského průmyslu 2015"], hs);
     lines(svg, xc(-30), 4, ["Změna objemu výroby 2015 → 2025"], hs);
@@ -1262,8 +1264,8 @@
     const legendH = 90;
     const y = rows(data.length, 40, H - legendH, 0.22);
     const bw = y.bandwidth();
-    const xm = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 920]);
-    const xi = d3.scaleLog().domain([0.5, 150]).range([lw + 990, W - 70]);
+    const xm = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 0.66 * (W - lw)]);
+    const xi = d3.scaleLog().domain([0.5, 150]).range([lw + 0.74 * (W - lw), W - 50]);
     txt(svg, xm(0), 10, "Skladba užité energie (%)", { size: FS.small, color: C.grey });
     txt(svg, xi(0.5), 10, "Energetická náročnost (TJ na mil. € HPH, log.)", { size: FS.small, color: C.grey });
     data.forEach((d, i) => {
@@ -1281,7 +1283,7 @@
       txt(svg, xi(d.tj) + 8, cy, fmtTJ(d.tj), { size: FS.small });
     });
     legend(svg, CARRIERS.map(([, name, , color]) => ({ label: name, color })), 20, H - 62,
-      { columns: 5, columnWidth: 345, size: FS.small, lineHeight: 36 });
+      { columns: 5, columnWidths: [270, 200, 200, 360], size: FS.small, lineHeight: 36 });
   };
 
   // 30 — appendix: imports and exports
@@ -1296,8 +1298,8 @@
     const lw = LW;
     const y = rows(data.length, 50, H - 60, 0.25);
     const bw = y.bandwidth();
-    const xi = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 560]);
-    const xe = d3.scaleLinear().domain([0, 100]).range([lw + 740, W - 40]);
+    const xi = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 0.48 * (W - lw)]);
+    const xe = d3.scaleLinear().domain([0, 100]).range([lw + 0.56 * (W - lw), W - 50]);
     txt(svg, xi(0), 14, "Dovozní penetrace 2024: dovoz z EU / z mimo EU", { size: FS.small, color: C.grey });
     txt(svg, xe(0), 14, "Vývoz 2024 (% produkce): do EU / mimo oblast EU ETS", { size: FS.small, color: C.grey });
     data.forEach((d, i) => {

@@ -527,6 +527,7 @@ Zdroj: [Eurostat naio_10_fcp_ii4](https://ec.europa.eu/eurostat/databrowser/view
   chart-title="Průmysl není jeden: každý obor má jiný profil"
   chart-note="(čím sytější červená, tím vyšší hodnota mezi obory)"
   chart="souhrn"
+  wide="true"
   source="Výroba: modrá = růst, červená = pokles; ostatní sloupce podle pořadí mezi obory. Zdroje: Eurostat, FIGARO, EK Union Registry (podrobně v poznámkách)"
   notes="
 K grafu: Výroba: modrá = růst, červená = pokles. Ostatní sloupce: odstín podle pořadí mezi obory (přímý náklad ETS podle hodnoty). Zdroje: Eurostat nama_10_a64 (2025), sts_inpr_a, env_ac_pefasu (2023), sbs_ovw_act (2024), FIGARO naio_10_fcp_ii4 (2024); EK Union Registry (2024)
