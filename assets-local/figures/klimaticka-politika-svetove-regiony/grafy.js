@@ -31,12 +31,16 @@
 
   const DIR = "/assets-local/files/klimaticka-politika-svetove-regiony/";
 
-  // Colours match the waffle squares in the text (emise-podil-waffle.html).
+  // Region colours live in CSS (--region-* in assets-local/_chart-panel.scss),
+  // shared with the region boxes in the text. Read at draw time, so the ?dev=1
+  // sidebar can change them live; the hex is only a fallback.
+  const rootStyle = getComputedStyle(document.documentElement);
+  const regionColor = (key, fallback) => rootStyle.getPropertyValue("--region-" + key).trim() || fallback;
   const REGIONS = [
-    { key: "cina",  label: "Čína",  color: "#e0495a" },
-    { key: "usa",   label: "USA",   color: "#3b85d8" },
-    { key: "indie", label: "Indie", color: "#8a3eb0" },
-    { key: "eu",    label: "EU",    color: "#36369b" },
+    { key: "cina",  label: "Čína",  get color() { return regionColor("cina", "#e0495a"); } },
+    { key: "usa",   label: "USA",   get color() { return regionColor("usa", "#3b85d8"); } },
+    { key: "indie", label: "Indie", get color() { return regionColor("indie", "#37a97e"); } },
+    { key: "eu",    label: "EU",    get color() { return regionColor("eu", "#36369b"); } },
   ];
   const WORLD = { key: "svet", label: "Svět", color: "#9ba5ad", dashed: true };
 
@@ -63,10 +67,10 @@
   // drawn (`hidden`). Ember's few GW of "Other Renewables" (geothermal etc.)
   // ride with biomass.
   const CAPACITY = [
+    { key: "hydro",   label: "Voda",                  color: "#a1bdcf", from: ["Hydro"] },
     { key: "wind",    label: "Vítr",                  color: "#237dde", from: ["Wind"] },
     { key: "solar",   label: "Slunce",                color: "#ffb32e", from: ["Solar"] },
     { key: "bio",     label: "Biomasa a ostatní OZE", color: "#ca851c", from: ["Bioenergy", "Other Renewables"] },
-    { key: "hydro",   label: "Voda",                  color: "#a1bdcf", from: ["Hydro"] },
     { key: "nuclear", label: "Jádro",                 color: "#ebeef0", from: ["Nuclear"], hidden: true },
     { key: "fossil",  label: "Fosilní zdroje",        color: "#c5c8ca", from: ["Coal", "Gas", "Other Fossil"], hidden: true },
   ];
@@ -178,6 +182,10 @@
     return sel.attr("font-size", C.axisFontSize).attr("fill", C.axis);
   }
 
+  // Every chart's redraw, for the ?dev=1 sidebar after it changes a colour.
+  const redraws = [];
+  window.REGIONY_REDRAW = () => redraws.forEach(f => f());
+
   // Draws the chart now and again whenever the svg's width changes: on window
   // resize, and when the collapsed box holding it is opened (it has no width
   // until then). `draw(svg, width)` returns the height it needs.
@@ -199,6 +207,7 @@
     // Text is measured for wrapping and placement; once the webfont is in,
     // measure again, or labels sized against the fallback font run long.
     document.fonts.ready.then(redraw);
+    redraws.push(redraw);
     return redraw;
   }
 
@@ -861,20 +870,21 @@
 
   // Podíl elektromobilů na prodejích nových aut.
   csv("elektromobily.csv").then(raw => {
-    const series = REGIONS.map(r => ({ ...r,
+    // Built per draw: spreading r reads its colour getter once and freezes it.
+    const series = () => REGIONS.map(r => ({ ...r,
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektromobily", (svg, w) => lines(svg, w, {
-      series, decimals: 1, short: "%", xTicks: [2010, 2015, 2020, 2025],
+      series: series(), decimals: 1, short: "%", xTicks: [2010, 2015, 2020, 2025],
       unit: "Podíl elektromobilů na prodejích nových osobních aut (%)",
     }));
   });
 
   // Míra elektrifikace — in a collapsed box, drawn once it is opened.
   csv("elektrifikace.csv").then(raw => {
-    const series = [...REGIONS, WORLD].map(r => ({ ...r,
+    const series = () => [...REGIONS, WORLD].map(r => ({ ...r,
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektrifikace", (svg, w) => lines(svg, w, {
-      series, decimals: 1, short: "%", xTicks: [2000, 2005, 2010, 2015, 2019],
+      series: series(), decimals: 1, short: "%", xTicks: [2000, 2005, 2010, 2015, 2019],
       unit: "Podíl elektřiny na konečné spotřebě energie (%)",
     }));
   });

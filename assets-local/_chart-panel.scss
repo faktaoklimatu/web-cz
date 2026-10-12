@@ -116,3 +116,111 @@
         margin-right: 5px;
     }
 }
+
+// Region boxes in "Hlavní charakteristiky" (2×2 grid). Every value is a CSS
+// variable so the ?dev=1 sidebar (assets-local/js/svetove-regiony-dev-sidebar.js)
+// can tune it live. Region colours match REGIONS in the page's grafy.js.
+:root {
+    --region-eu: #36369b;
+    --region-cina: #e0495a;
+    --region-usa: #3b85d8;
+    --region-indie: #37a97e;
+    --region-tint: 0%;          // background = region colour at this strength
+    --region-border: 1px;
+    --region-radius: 8px;
+    --region-pad: 16px;
+    --region-flag: 22px;
+    --region-title-size: 22px;
+    --region-card-width: 85%;   // carousel: card share of the row, the rest is the next card peeking in
+    --region-fade: 15%;         // carousel: width of the fade over the peeking card
+}
+
+.region-box {
+    padding: var(--region-pad);
+    border: var(--region-border) solid var(--region);
+    border-radius: var(--region-radius);
+    background: color-mix(in srgb, var(--region) var(--region-tint), transparent);
+
+    h3, h4 {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        flex-wrap: wrap;
+        margin-top: 0;
+        font-size: var(--region-title-size);
+    }
+
+    p:last-child { margin-bottom: 0; }
+}
+
+.region-flag {
+    width: var(--region-flag);
+    height: var(--region-flag);
+    border-radius: 50%;
+    flex: none;
+}
+
+// Equal heights only inside the 2×2 grid; full-width boxes size to content.
+.region-grid .region-box { height: 100%; }
+
+.region-eu    { --region: var(--region-eu); }
+.region-cina  { --region: var(--region-cina); }
+.region-usa   { --region: var(--region-usa); }
+.region-indie { --region: var(--region-indie); }
+
+// Font Awesome icon before the repeated labels (Strategie / Nástroje / Governance).
+.region-icon {
+    width: 1.25em;
+    text-align: center;
+    color: var(--region);
+}
+
+// Carousel variant of the 2×2 grid (class is-carousel on .region-grid, toggled
+// from the ?dev=1 sidebar): cards side by side, the next one peeking in,
+// moved by the arrows from karusel.js or by swiping. Scroll-snap keeps a card
+// aligned to the text column; the row stretches all cards to the tallest one.
+.region-grid.is-carousel {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { display: none; }
+
+    // The peeking card fades out at the edge. The mask sits on the scroll box,
+    // so it stays put while the cards move under it. Cards snap to the left,
+    // so the peek is on the right, except at the last card (karusel.js flags
+    // it), where the previous card peeks in on the left instead.
+    --fade-l: 0%;
+    --fade-r: var(--region-fade);
+    &.at-end { --fade-l: var(--region-fade); --fade-r: 0%; }
+    $fade: linear-gradient(to right, transparent, #000 var(--fade-l),
+                           #000 calc(100% - var(--fade-r)), transparent);
+    -webkit-mask-image: $fade;
+    mask-image: $fade;
+
+    > * {
+        flex: 0 0 var(--region-card-width);
+        max-width: var(--region-card-width);
+        scroll-snap-align: start;
+    }
+}
+
+.region-carousel-nav {
+    display: none;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: -0.5rem 0 1.5rem;
+
+    button {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid #cbd5e0;
+        background: #fff;
+        color: #2d3748;
+
+        &:disabled { opacity: 0.35; }
+    }
+}
+
+.region-grid.is-carousel + .region-carousel-nav { display: flex; }
