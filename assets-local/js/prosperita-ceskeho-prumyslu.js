@@ -785,7 +785,8 @@
     });
   };
 
-  // 12 — electricity price for large industrial consumers
+  // 12 — electricity price for large industrial consumers: a dot per
+  // period, arrows 2019 → 2025 → 1st half of 2026, values in columns
   CHARTS.elektrina = async (el) => {
     const data = (await sheet("s12-elektrina")).map((d) => ({
       code: d.zeme, name: COUNTRY[d.zeme] || d.zeme,
@@ -793,34 +794,68 @@
     }));
     const { svg, W, H } = canvas(el);
     const lw = 220;
-    const y = rows(data.length, 40, H, 0.25);
-    const bw = y.bandwidth();
-    const x = d3.scaleLinear().domain([0, 182]).range([lw, W - 360]);
-    const c25 = W - 300;
-    const c26 = W - 150;
-    txt(svg, c25, 12, "2025", { size: FS.small, color: C.grey });
-    txt(svg, c26, 12, "1. pol. 2026", { size: FS.small, color: C.energy });
-    data.forEach((d, i) => {
-      const cy = y(i) + bw / 2;
-      const cz = d.code === "CZ";
-      const eu = d.code.startsWith("EU");
-      txt(svg, lw - 14, cy, d.name, { anchor: "end", bold: cz, color: cz ? C.cz : C.text });
-      rect(svg, x(0), x(d.v25), y(i), bw, cz ? C.cz : eu ? C.dark : C.other)
-        .call(hover, () => `<strong>${d.name}</strong><br>2019: ${fmt(d.v19)} €/MWh<br>2025: ${fmt(d.v25)} €/MWh` + (d.v26 ? `<br>1. pol. 2026: ${fmt(d.v26)} €/MWh` : ""));
-      svg.append("circle").attr("cx", x(d.v19)).attr("cy", cy).attr("r", 9)
-        .attr("fill", "white").attr("stroke", C.text).attr("stroke-width", 3).attr("pointer-events", "none");
-      if (d.v26 != null) {
-        svg.append("rect").attr("x", -9).attr("y", -9).attr("width", 18).attr("height", 18)
-          .attr("transform", `translate(${x(d.v26)},${cy}) rotate(45)`).attr("fill", C.energy).attr("pointer-events", "none");
-        txt(svg, c26, cy, fmt(d.v26) + " €", { size: FS.value, color: C.energy });
+    const top = 56;
+    const m = { bottom: 44 };
+    const y = rows(data.length, top, H - m.bottom, 0.25);
+    const x = d3.scaleLinear().domain([40, 190]).range([lw + 10, W - 500]);
+    const periods = [
+      { key: "v19", label: "2019", color: C.other, col: W - 430 },
+      { key: "v25", label: "2025", color: "#8b8bc4", col: W - 280 },
+      { key: "v26", label: "1. pol. 2026", color: C.cz, col: W - 130 },
+    ];
+    const r = 11;
+    xAxis(svg, x, H - m.bottom, { ticks: [50, 75, 100, 125, 150, 175], format: (v) => fmt(v), grid: H - m.bottom - top + 10 });
+    const arrow = uid("arrow");
+    svg.append("defs").append("marker").attr("id", arrow)
+      .attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
+      .attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto")
+      .append("path").attr("d", "M0,0L10,5L0,10z").attr("fill", C.light);
+    // Header: the three periods as a legend over the dots, and over their columns.
+    let lx = lw + 10;
+    periods.forEach((p, i) => {
+      svg.append("circle").attr("cx", lx + r).attr("cy", 16).attr("r", r).attr("fill", p.color);
+      const t = txt(svg, lx + 2 * r + 8, 16, p.label, { size: FS.small });
+      lx += 2 * r + 8 + t.node().getComputedTextLength() + 16;
+      if (i < periods.length - 1) {
+        txt(svg, lx, 16, "→", { size: FS.small, color: C.light });
+        lx += 40;
       }
-      txt(svg, c25, cy, fmt(d.v25) + " €", { size: FS.value, bold: cz, color: cz ? C.cz : C.text });
+      txt(svg, p.col, 16, p.label, { size: FS.small, color: C.grey });
     });
-    legend(svg, [
-      { label: "2019", kind: "ring", color: C.text },
-      { label: "1. pololetí 2026", kind: "diamond", color: C.energy },
-      { label: "2025", color: C.other },
-    ], x(112), H - 130, { vertical: true });
+    const trend = (now, before) => {
+      if (before == null || now == null || Math.round(now) === Math.round(before)) return [];
+      return now > before ? [["\u2009↑", { color: FoKTheme.colors.negative, bold: true }]] : [["\u2009↓", { color: FoKTheme.colors.positive, bold: true }]];
+    };
+    data.forEach((d, i) => {
+      const cy = y(i) + y.bandwidth() / 2;
+      const cz = d.code === "CZ";
+      txt(svg, lw - 14, cy, d.name, { anchor: "end", bold: cz, color: cz ? C.cz : C.text });
+      const shown = periods.filter((p) => d[p.key] != null);
+      shown.slice(1).forEach((p, k) => {
+        const x0 = x(d[shown[k].key]);
+        const x1 = x(d[p.key]);
+        if (Math.abs(x1 - x0) < 2 * r + 6) return;
+        const dir = Math.sign(x1 - x0);
+        const path = k === 0
+          ? `M${x0 + dir * r},${cy}H${x1 - dir * (r + 2)}`
+          // The later step arcs over the row, so a price falling back does
+          // not run along the first arrow.
+          : `M${x0 + dir * r * 0.5},${cy - r}Q${(x0 + x1) / 2},${cy - 2.6 * r} ${x1 - dir * r * 0.5},${cy - r - 2}`;
+        svg.append("path").attr("d", path).attr("fill", "none")
+          .attr("stroke", C.light).attr("stroke-width", 3).attr("marker-end", `url(#${arrow})`);
+      });
+      shown.forEach((p) => svg.append("circle").attr("cx", x(d[p.key])).attr("cy", cy).attr("r", r)
+        .attr("fill", p.color).attr("stroke", "white").attr("stroke-width", 2));
+      periods.forEach((p, k) => {
+        if (d[p.key] == null) return;
+        const before = k ? d[periods[k - 1].key] : null;
+        txt(svg, p.col, cy, [[fmt(d[p.key]) + "\u00a0€"], ...trend(d[p.key], before)], { size: FS.value, bold: cz, color: cz ? C.cz : C.text });
+      });
+      svg.append("rect").attr("x", lw - 200).attr("width", W - lw + 200).attr("y", y(i)).attr("height", y.step())
+        .attr("fill", "transparent")
+        .call(hover, () => `<strong>${d.name}</strong>` + periods.filter((p) => d[p.key] != null)
+          .map((p) => `<br>${p.label}: ${fmt(d[p.key])} €/MWh`).join(""));
+    });
   };
 
   // 13 — productivity vs. labour costs
