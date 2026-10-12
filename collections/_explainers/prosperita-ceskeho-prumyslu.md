@@ -40,7 +40,7 @@ Fakta o klimatu · říjen 2026"
 
 {% include slide.html
   title="Velikost: auta jsou pětina průmyslu"
-  lead="→ **Auta** tvoří 21 % HPH průmyslu; hutě, papír a chemie dohromady 7 %"
+  lead="**Auta** tvoří 21 % HPH průmyslu; hutě, papír a chemie dohromady 7 %"
   chart-title="Podíl oborů na HPH zpracovatelského průmyslu"
   chart-note="(2025)"
   chart="velikost"
@@ -54,7 +54,7 @@ Zdroje: [Eurostat nama_10_a64](https://ec.europa.eu/eurostat/databrowser/view/na
 
 {% include slide.html
   title="Vývoj: obory jdou opačnými směry"
-  lead="→ **Auta a farmacie** rostou o desítky procent, **hutě** ztratily čtvrtinu výroby"
+  lead="**Auta a farmacie** rostou o desítky procent, **hutě** ztratily čtvrtinu výroby"
   chart-title="Změna objemu výroby"
   chart-note="(2015 → 2025)"
   chart="vyvoj"
@@ -68,7 +68,7 @@ Zdroj: [Eurostat sts_inpr_a](https://ec.europa.eu/eurostat/databrowser/view/sts_
 
 {% include slide.html
   title="Náklady: u někoho práce, u někoho energie"
-  lead="→ **Chemie a hutě** platí hlavně za energii, **stroje a kovovýroba** za práci, **auta** za díly"
+  lead="**Chemie a hutě** platí hlavně za energii, **stroje a kovovýroba** za práci, **auta** za díly"
   chart-title="Co obory stojí: práce, nebo energie?"
   chart-note="(2024; velikost = HPH 2025; čáry = medián oborů)"
   chart="naklady"
@@ -82,7 +82,7 @@ Zdroj: [Eurostat sbs_ovw_act](https://ec.europa.eu/eurostat/databrowser/view/sbs
 
 {% include slide.html
   title="Energie: jiná paliva, jiné zranitelnosti"
-  lead="→ **Hutě** jedou na koks, **papír** na biomasu, **cement a textil** na plyn, **auta a stroje** na elektřinu"
+  lead="**Hutě** jedou na koks, **papír** na biomasu, **cement a textil** na plyn, **auta a stroje** na elektřinu"
   chart-title="Energetická náročnost a hlavní zdroj energie"
   chart-note="(TJ na mil. € HPH, 2023, log. škála)"
   chart="energie"
@@ -96,7 +96,7 @@ Zdroj: [Eurostat env_ac_pefasu](https://ec.europa.eu/eurostat/databrowser/view/e
 
 {% include slide.html
   title="Kdo náklad nemůže přenést do cen"
-  lead="→ **Hutě, chemie, papír**: energeticky náročné a z ~⅔ pokryté dovozem"
+  lead="**Hutě, chemie, papír**: energeticky náročné a z ~⅔ pokryté dovozem"
   chart-title="Energetická náročnost a dovozní konkurence"
   chart-note="(světle 2015, sytě 2024; velikost = HPH; prahy 10 TJ/mil. € a 50 %)"
   chart="expozice"
@@ -112,7 +112,7 @@ Zdroje: [Eurostat naio_10_fcp_ii4](https://ec.europa.eu/eurostat/databrowser/vie
 
 {% include slide.html
   title="Obchod: kdo čelí dovozu"
-  lead="→ **Elektronika** čelí dovozu z celého světa, **cement a dřevo** jen sousedům"
+  lead="**Elektronika** čelí dovozu z celého světa, **cement a dřevo** jen sousedům"
   chart-title="Kolik domácí spotřeby pokrývá dovoz"
   chart-note="(dovozní penetrace 2024)"
   chart="obchod"
@@ -152,7 +152,7 @@ Kompenzace nepřímých nákladů: za náklady roku 2024 vyplatilo MPO v prosinc
 
 {% include slide.html
   title="Emisně náročné obory rostou pomaleji – v celé EU"
-  lead="→ **Emisně náročné obory** (vpravo dole) rostou pomaleji – v celé EU, ale vazba je slabá"
+  lead="**Emisně náročné obory** (vpravo dole) rostou pomaleji – v celé EU, ale vazba je slabá"
   chart-title="Změna výroby 2015 → 2025 podle emisní náročnosti odvětví"
   chart-note="(ČR barevně; SK, DE, AT, PL, HU šedě)"
   chart="emisni"
@@ -170,7 +170,7 @@ Zdroj: [Eurostat env_ac_ainah_r2](https://ec.europa.eu/eurostat/databrowser/view
 
 {% include slide.html
   title="Elektřina: velký průmysl v Česku mezi nejdražšími"
-  lead="→ **180 €/MWh** v ČR v roce 2025 (1. pol. 2026: 165 €) vs. 144 € v Polsku a 123 € v průměru EU"
+  lead="**180 €/MWh** v ČR v roce 2025 (1. pol. 2026: 165 €) vs. 144 € v Polsku a 123 € v průměru EU"
   chart-title="Cena elektřiny pro průmysl"
   chart-note="(€/MWh bez DPH a vratných daní, odběr 70–150 GWh; 2025, 2019 a 1. pol. 2026)"
   chart="elektrina"
@@ -190,7 +190,7 @@ Zdroj: [Eurostat nrg_pc_205](https://ec.europa.eu/eurostat/databrowser/view/nrg_
 
 {% include slide.html
   title="Větší problém než ETS: pomalý růst produktivity"
-  lead="→ **Produktivita jen +28 % za 10 let** (≈ 2,5 % ročně), náklady práce +104 %"
+  lead="**Produktivita jen +28 % za 10 let** (≈ 2,5 % ročně), náklady práce +104 %"
   chart-title="Produktivita roste pomaleji než náklady práce"
   chart-note="(zpracovatelský průmysl)"
   panels="
@@ -213,7 +213,7 @@ Zdroje: [Eurostat nama_10_a64](https://ec.europa.eu/eurostat/databrowser/view/na
 
 {% include slide.html
   title="Manuální práce: Česko má nejvyšší podíl v regionu"
-  lead="→ **64 % pracovníků** českého průmyslu jsou řemeslníci, obsluha strojů a montáž – v Německu 45 %"
+  lead="**64 % pracovníků** českého průmyslu jsou řemeslníci, obsluha strojů a montáž – v Německu 45 %"
   chart-title="Manuální profese ve zpracovatelském průmyslu"
   chart-note="(% zaměstnaných v průmyslu, 2025; tečka = 2022)"
   chart="manualni"
@@ -238,7 +238,7 @@ Zdroj: [Eurostat lfsa_eisn2](https://ec.europa.eu/eurostat/databrowser/view/lfsa
 
 {% include slide.html
   title="Auta: zatím vítěz, ale rizika rostou"
-  lead="→ **Výroba +48 % (Německo −20 %)**, ale produktivita roste pomaleji než náklady práce a sílí Čína"
+  lead="**Výroba +48 % (Německo −20 %)**, ale produktivita roste pomaleji než náklady práce a sílí Čína"
   panels="
 auta-vyroba: Výroba aut (index 2015 = 100) |
 auta-prace: Náklady práce vs. výroba na pracujícího (2015 = 100) |
@@ -266,7 +266,7 @@ Dovoz osobních aut (HS 8703) z Číny do EU27: 0,13 mld. € (2015) → 14,5 ml
 
 {% include slide.html
   title="Stroje: stagnace a slabá produktivita"
-  lead="→ **Výroba +3 % za 10 let** – slabá poptávka z Německa a pomalý růst produktivity, ne ETS"
+  lead="**Výroba +3 % za 10 let** – slabá poptávka z Německa a pomalý růst produktivity, ne ETS"
   panels="
 stroje-vyroba: Výroba (index 2015 = 100) |
 stroje-prace: Náklady práce vs. výroba na pracujícího (2015 = 100) |
@@ -292,7 +292,7 @@ Stroje (C28). Výroba 2015→2025 +3 %, Německo −12 % (sts_inpr_a); od vrchol
 
 {% include slide.html
   title="Hutě: stejná povolenka, různé osudy"
-  lead="→ **Česko −25 %, Polsko +24 %** – rozhoduje Liberty Ostrava, energie a poptávka"
+  lead="**Česko −25 %, Polsko +24 %** – rozhoduje Liberty Ostrava, energie a poptávka"
   panels="
 hute-vyroba: Výroba (index 2015 = 100) |
 hute-ets: Emise a povolenky zdarma podle lokalit (mil. t) |
@@ -327,7 +327,7 @@ Výhled: alokace oceli se podle CBAM krátí na 97,5 % (2026), 51,5 % (2030) a 0
 
 {% include slide.html
   title="Chemie: kde ETS opravdu stojí peníze"
-  lead="→ **Přímý náklad ETS až 7,1 % HPH** – nejvíc ze všech oborů; petrochemie pod CBAM nespadá"
+  lead="**Přímý náklad ETS až 7,1 % HPH** – nejvíc ze všech oborů; petrochemie pod CBAM nespadá"
   panels="
 chemie-vyroba: Výroba (index 2015 = 100) |
 chemie-ets: Emise a povolenky zdarma (mil. t) |
@@ -356,7 +356,7 @@ Náklady na 100 € tržeb 2024: práce 7,2 €, energie 5,3 €, ETS přímo 0,
 
 {% include slide.html
   title="Cement, sklo, keramika: chráněné vzdáleností"
-  lead="→ **Regionální trh** – náklady ETS lze snáz přenést do cen, cement chrání CBAM"
+  lead="**Regionální trh** – náklady ETS lze snáz přenést do cen, cement chrání CBAM"
   panels="
 cement-vyroba: Výroba (index 2015 = 100) |
 cement-ets: Emise a povolenky zdarma (mil. t) |
@@ -387,7 +387,7 @@ Ostatní nekovové minerální výrobky (C23): cement, vápno, sklo, keramika, c
 
 {% include slide.html
   title="Přímý náklad: průmysl povolenky dokupuje"
-  lead="→ **Emise o 57 mil. t vyšší** než bezplatné povolenky (2013–2025), hlavně chemie a hutě"
+  lead="**Emise o 57 mil. t vyšší** než bezplatné povolenky (2013–2025), hlavně chemie a hutě"
   chart-title="Průmyslová zařízení v EU ETS v Česku"
   chart-note="(mil. t CO₂e za rok)"
   panels="
@@ -411,7 +411,7 @@ Zdroj: [Union Registry](https://climate.ec.europa.eu/eu-action/carbon-markets/eu
 
 {% include slide.html
   title="CBAM a vývoz mimo oblast EU ETS"
-  lead="→ **CBAM chrání trh EU, ne vývoz**: riziko nese downstream – stroje 22 %, auta 12 % (+ UK 6 %)"
+  lead="**CBAM chrání trh EU, ne vývoz**: riziko nese downstream – stroje 22 %, auta 12 % (+ UK 6 %)"
   chart-title="Kolik produkce jde mimo oblast EU ETS"
   chart-note="(% produkce oboru, 2024; v závorce objem)"
   chart="cbam-vyvoz"
@@ -429,7 +429,7 @@ Zdroje: [Eurostat naio_10_fcp_ii4](https://ec.europa.eu/eurostat/databrowser/vie
 
 {% include slide.html
   title="Kraje: emise ve dvou krajích, místa ubývají jinde"
-  lead="→ **Moravskoslezský a Ústecký kraj**: 68 % emisí, ale místa ubývají i jinde (korelace ≈ 0)"
+  lead="**Moravskoslezský a Ústecký kraj**: 68 % emisí, ale místa ubývají i jinde (korelace ≈ 0)"
   panels="
 kraje-mapa: Kruh = průmyslové emise EU ETS (Mt ročně, 2015–2019)<br>Odstín = místa v energeticky náročných oborech, % míst v průmyslu (2023) |
 kraje-zamestnanost: Změna zaměstnanosti v průmyslu 2015 → 2023<br>podle emisí EU ETS na zaměstnaného
@@ -471,7 +471,7 @@ Bod 4: produktivita (HPH ve stálých cenách na pracujícího) zpracovatelskéh
 
 {% include slide.html
   title="Příloha: velikost oborů – HPH, zaměstnanost, tržby"
-  lead="→ **Tři měřítka velikosti** dávají různé pořadí"
+  lead="**Tři měřítka velikosti** dávají různé pořadí"
   chart-title="Velikost oborů"
   chart-note="(zpracovatelský průmysl = 21 % HPH ekonomiky; rafinerie vynechány)"
   chart="priloha-velikost"
@@ -483,7 +483,7 @@ Zdroje: [Eurostat nama_10_a64](https://ec.europa.eu/eurostat/databrowser/view/na
 
 {% include slide.html
   title="Příloha: kdo táhne výrobu nahoru a kdo dolů"
-  lead="→ **Příspěvek** = váha oboru × změna výroby"
+  lead="**Příspěvek** = váha oboru × změna výroby"
   chart-title="Kdo táhne výrobu nahoru a kdo dolů"
   chart-note="(seřazeno podle příspěvku; celkem 2015 → 2025: +18,4 %)"
   chart="priloha-prispevky"
@@ -495,7 +495,7 @@ Váhy = HPH 2015. Zdroj: [Eurostat sts_inpr_a](https://ec.europa.eu/eurostat/dat
 
 {% include slide.html
   title="Příloha: skladba užité energie"
-  lead="→ **Celá skladba** energie podle oborů"
+  lead="**Celá skladba** energie podle oborů"
   chart-title="Jakou energii obory používají a kolik"
   chart-note="(hrubé užití energie 2023)"
   chart="priloha-energie"
@@ -509,7 +509,7 @@ Zdroj: [Eurostat env_ac_pefasu](https://ec.europa.eu/eurostat/databrowser/view/e
 
 {% include slide.html
   title="Příloha: dovoz a vývoz podle oborů"
-  lead="→ **Dovozní penetrace** a vývoz mimo oblast EU ETS"
+  lead="**Dovozní penetrace** a vývoz mimo oblast EU ETS"
   chart-title="Konkurence z dovozu a závislost na vývozu"
   chart-note="(CBAM = obor pod uhlíkovým clem EU)"
   chart="priloha-obchod"
@@ -523,7 +523,7 @@ Zdroj: [Eurostat naio_10_fcp_ii4](https://ec.europa.eu/eurostat/databrowser/view
 
 {% include slide.html
   title="Příloha: souhrnná tabulka ukazatelů"
-  lead="→ **Průmysl není jeden**: 18 oborů × 9 ukazatelů"
+  lead="**Průmysl není jeden**: 18 oborů × 9 ukazatelů"
   chart-title="Průmysl není jeden: každý obor má jiný profil"
   chart-note="(čím sytější červená, tím vyšší hodnota mezi obory)"
   chart="souhrn"
