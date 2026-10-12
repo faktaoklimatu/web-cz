@@ -80,6 +80,9 @@
   // Slide 11 keeps the deck's y range; the three points outside it sit on the
   // edge as triangles (they still count in the trend).
   const EMISNI_Y = [-45, 125];
+  // Slides 16–20 share one output scale (index 2015 = 100), so the branches
+  // compare across slides: from Czech steel's 71 to Czech cars' 150.
+  const OUTPUT_Y = { domain: [65, 155], ticks: d3.range(70, 151, 10) };
 
   // ── Loading ──────────────────────────────────────────────────────────────
   const files = new Map();
@@ -907,7 +910,7 @@
     indexChart(el, [
       { name: "Česko", values: cz, color: C.cz, label: label("Česko", cz) },
       { name: "Německo", values: de, color: C.other, dots: false, width: 4, label: label("Německo", de) },
-    ], { domain: [70, 155], ticks: [80, 90, 100, 110, 120, 130, 140, 150], right: 190 });
+    ], { ...OUTPUT_Y, right: 190 });
   };
 
   function laborChart(el, d) {
@@ -944,7 +947,7 @@
     indexChart(el, [
       { name: "Česko", values: cz, color: C.cz, label: label("Česko", cz) },
       { name: "Německo", values: de, color: C.other, dots: false, width: 4, label: label("Německo", de) },
-    ], { domain: [86, 116], ticks: [90, 95, 100, 105, 110, 115], right: 190 });
+    ], { ...OUTPUT_Y, right: 190 });
   };
 
   CHARTS["hute-vyroba"] = async (el) => {
@@ -962,7 +965,7 @@
       { name: "Slovensko*", values: sk, color: C.other, dots: false, width: 4, dashed: true, label: label("Slovensko*", sk) },
       { name: "Německo", values: de, color: C.other, dots: false, width: 4, label: label("Německo", de) },
       { name: "Česko", values: cz, color: C.cz, label: label("Česko", cz) },
-    ], { domain: [68, 132], ticks: [70, 80, 90, 100, 110, 120, 130], right: 220 });
+    ], { ...OUTPUT_Y, right: 220 });
   };
 
   CHARTS["chemie-vyroba"] = async (el) => {
@@ -970,7 +973,7 @@
     indexChart(el, [
       { name: "Česko", values: cz, color: C.cz, label: label("Česko", cz) },
       { name: "Německo", values: de, color: C.other, dots: false, width: 4, label: label("Německo", de) },
-    ], { domain: [77, 116], ticks: [80, 85, 90, 95, 100, 105, 110, 115], right: 190 });
+    ], { ...OUTPUT_Y, right: 190 });
   };
 
   CHARTS["cement-vyroba"] = async (el) => {
@@ -978,7 +981,7 @@
     indexChart(el, [
       { name: "Česko", values: cz, color: C.cz, label: label("Česko", cz) },
       { name: "Německo", values: de, color: C.other, dots: false, width: 4, label: label("Německo", de) },
-    ], { domain: [81, 120], ticks: [85, 90, 95, 100, 105, 110, 115], right: 190 });
+    ], { ...OUTPUT_Y, right: 190 });
   };
 
   CHARTS["stroje-naklady"] = (el) => costBars(el, "C28");
