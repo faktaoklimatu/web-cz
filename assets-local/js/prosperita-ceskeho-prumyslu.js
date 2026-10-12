@@ -19,6 +19,11 @@
   // canvas is shown at roughly 0.6× on a laptop, so 22 design px reads like
   // the theme's 12–13 px.
   const FS = { tick: 22, label: 23, value: 22, legend: 22, small: 20 };
+  // Every bar chart: bar thickness at most, and the label column of charts
+  // listing the branches, so bars line up from slide to slide.
+  const BAR = 28;
+  const ROW_MAX = 64;
+  const LW = 360;
   const TH = {
     ...FoKTheme,
     fontSize: { ...FoKTheme.fontSize, axisLabel: FS.tick, annotation: FS.small },
@@ -150,8 +155,13 @@
     list.forEach((line, i) => txt(g, x, y0 + i * lh, line, o));
   }
 
-  function rows(n, top, bottom, padding = 0.3) {
-    return d3.scaleBand().domain(d3.range(n)).range([top, bottom]).paddingInner(padding).paddingOuter(padding / 2);
+  // Rows of bars spread over the height, but no bar thicker than BAR, so bars
+  // match across slides; a short list gets wider gaps (up to ROW_MAX apart)
+  // rather than fatter bars, and only a very short one leaves room below.
+  function rows(n, top, bottom, padding = 0.3, max = BAR) {
+    const step = Math.min((bottom - top) / n, ROW_MAX);
+    const p = Math.max(padding, 1 - max / step);
+    return d3.scaleBand().domain(d3.range(n)).range([top, top + step * n]).paddingInner(p).paddingOuter(p / 2);
   }
 
   function rect(g, x0, x1, y, h, fill) {
@@ -335,8 +345,9 @@
     const lw = 150;
     // One scale for all four branches, so the slides compare.
     const x = d3.scaleLinear().domain([0, 20]).range([lw, W - 110]);
-    const y = d3.scaleBand().domain([0, 1, 2]).range([10, H - 20]).paddingInner(0.55).paddingOuter(0.15);
-    const bw = y.bandwidth();
+    const band = d3.scaleBand().domain([0, 1, 2]).range([10, H - 20]).paddingInner(0.55).paddingOuter(0.15);
+    const bw = Math.min(band.bandwidth(), BAR);
+    const y = (i) => band(i) + (band.bandwidth() - bw) / 2;
     const row = (i, name) => txt(svg, lw - 14, y(i) + bw / 2, name, { anchor: "end" });
     row(0, "Práce");
     rect(svg, x(0), x(prace), y(0), bw, C.other);
@@ -454,7 +465,7 @@
   CHARTS.velikost = async (el) => {
     const data = await sizeRows();
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const y = rows(data.length, 0, H);
     const x = d3.scaleLinear().domain([0, d3.max(data, (d) => d.share)]).range([lw, lw + (W - lw) * 0.5]);
     data.forEach((d, i) => {
@@ -473,7 +484,7 @@
       .map((d) => ({ nace: d.NACE, name: d.obor, v: +d.zmena_vyroby_2015_2025 * 100 }))
       .sort((a, b) => b.v - a.v);
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const y = rows(data.length, 0, H);
     const x = d3.scaleLinear().domain([-30, 82]).range([lw + 20, W - 120]);
     vline(svg, x(0), 0, H, { color: C.grey });
@@ -563,7 +574,7 @@
   CHARTS.energie = async (el) => {
     const data = await energyRows();
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const y = rows(data.length, 0, H);
     const x = d3.scaleLog().domain([0.5, 150]).range([lw, lw + (W - lw) * 0.62]);
     data.forEach((d, i) => {
@@ -641,7 +652,7 @@
       .map((d) => ({ nace: d.NACE, name: d.obor + (CBAM_MARK[d.NACE] || ""), eu: +d["dovoz_z_EU_%"], out: +d["dovoz_mimo_EU_%"] }))
       .sort((a, b) => b.eu + b.out - (a.eu + a.out));
     const { svg, W, H } = canvas(el);
-    const lw = 360;
+    const lw = LW;
     const y = rows(data.length, 0, H);
     const x = d3.scaleLinear().domain([0, 90]).range([lw, W - 330]);
     data.forEach((d, i) => {
@@ -663,7 +674,7 @@
       direct: num(d["prime_ETS_%HPH"]),
     }));
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const head = 70;
     const y = rows(data.length, head + 6, H, 0.22);
     const bw = y.bandwidth();
@@ -1080,7 +1091,7 @@
       return { nace: d.NACE, name: d.obor, share: ((outEts - uk) / prod) * 100, uk: (uk / prod) * 100, volume: outEts / 1000, color };
     }).sort((a, b) => b.share + b.uk - (a.share + a.uk));
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const y = rows(data.length, 0, H, 0.28);
     const x = d3.scaleLinear().domain([0, 30]).range([lw, lw + (W - lw) * 0.52]);
     data.forEach((d, i) => {
@@ -1190,13 +1201,13 @@
   CHARTS["priloha-velikost"] = async (el) => {
     const data = await sizeRows();
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const head = 40;
     const y = rows(data.length, head + 10, H - 60, 0.25);
     const cols = [
-      { title: "Podíl na HPH průmyslu 2025", x0: lw + 10, w: 300, max: 21, v: (d) => d.share, label: (d) => [[pct(d.share, 1)], [` (${fmt(d.hphAbs, 1)} mld. €)`, { color: C.grey }]] },
-      { title: "Podíl na zaměstnanosti v průmyslu 2025", x0: lw + 620, w: 260, max: 16, v: (d) => d.empShare, label: (d) => [[pct(d.empShare, 1)], [` (${fmt(d.emp)} tis.)`, { color: C.grey }]] },
-      { title: "Tržby 2024", x0: lw + 1140, w: 200, max: 72, v: (d) => d.sales, label: (d) => [[`${fmt(d.sales, 1)} mld. €`]] },
+      { title: "Podíl na HPH průmyslu 2025", x0: lw + 10, w: 280, max: 21, v: (d) => d.share, label: (d) => [[pct(d.share, 1)], [` (${fmt(d.hphAbs, 1)} mld. €)`, { color: C.grey }]] },
+      { title: "Podíl na zaměstnanosti v průmyslu 2025", x0: lw + 590, w: 250, max: 16, v: (d) => d.empShare, label: (d) => [[pct(d.empShare, 1)], [` (${fmt(d.emp)} tis.)`, { color: C.grey }]] },
+      { title: "Tržby 2024", x0: lw + 1090, w: 190, max: 72, v: (d) => d.sales, label: (d) => [[`${fmt(d.sales, 1)} mld. €`]] },
     ];
     cols.forEach((c) => {
       const x = d3.scaleLinear().domain([0, c.max]).range([c.x0, c.x0 + c.w]);
@@ -1216,7 +1227,7 @@
       nace: d.NACE, name: d.obor, w: +d.vaha_HPH_2015 * 100, ch: +d.zmena_vyroby_2015_2025 * 100, c: +d.prispevek_pb,
     })).sort((a, b) => b.c - a.c);
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const y = rows(data.length, 60, H - 60, 0.25);
     const bw = y.bandwidth();
     const xw = d3.scaleLinear().domain([0, 20]).range([lw + 10, lw + 330]);
@@ -1247,7 +1258,7 @@
   CHARTS["priloha-energie"] = async (el) => {
     const data = await energyRows();
     const { svg, W, H } = canvas(el);
-    const lw = 300;
+    const lw = LW;
     const legendH = 90;
     const y = rows(data.length, 40, H - legendH, 0.22);
     const bw = y.bandwidth();
@@ -1282,7 +1293,7 @@
       ee: +d["vyvoz_do_EU_%_produkce"], eo: +d["vyvoz_mimo_oblast_ETS_%_produkce"],
     })).sort((a, b) => b.ie + b.io - (a.ie + a.io));
     const { svg, W, H } = canvas(el);
-    const lw = 360;
+    const lw = LW;
     const y = rows(data.length, 50, H - 60, 0.25);
     const bw = y.bandwidth();
     const xi = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 560]);
@@ -1307,7 +1318,10 @@
 
   // 31 — appendix: summary table, shaded by rank among the 18 branches
   CHARTS.souhrn = async (el) => {
-    const data = await sheet("s31-souhrn");
+    const [table, size] = await Promise.all([sheet("s31-souhrn"), sizeRows()]);
+    const share = new Map(size.map((d) => [d.nace, d.share]));
+    // The sheet's share column is rounded to two decimals; see sizeRows().
+    const data = table.map((d) => ({ ...d, "podil_HPH_%": share.get(d.NACE) }));
     const cols = [
       { key: "podil_HPH_%", head: ["Podíl na HPH", "průmyslu 2025"], f: (v) => pct(v, 1), shade: "flat" },
       { key: "zmena_vyroby_2015_2025_%", head: ["Výroba", "2015 → 2025"], f: (v) => sgn(v) + " %", shade: "diverging" },
@@ -1320,10 +1334,10 @@
       { key: "prime_ETS_%HPH", head: ["Přímý náklad", "ETS, % HPH"], f: (v) => (Math.abs(v) < 0.05 ? "≈ 0" : sgn(v, 1) + " %"), shade: "value" },
     ];
     const { svg, W, H } = canvas(el);
-    const lw = 290;
+    const lw = LW;
     const head = 70;
     const cw = (W - lw - 10) / cols.length;
-    const y = rows(data.length, head, H, 0.1);
+    const y = rows(data.length, head, H, 0.1, Infinity);
     const red = d3.interpolateRgb("#fff3f5", C.energy);
     const blue = d3.interpolateRgb("#f0f7fd", C.core);
     cols.forEach((c, j) => {
