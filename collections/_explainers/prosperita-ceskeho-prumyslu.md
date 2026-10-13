@@ -24,11 +24,9 @@ grafy (chart, panels) kreslí assets-local/js/prosperita-ceskeho-prumyslu.js.
 {% endcomment %}
 
 {% include slide-cover.html
-  logo="/assets-local/figures/prosperita-ceskeho-prumyslu/logo-svetle.svg"
   title="Co rozhoduje o prosperitě českého průmyslu?"
   subtitle="Průmysl není jeden: každý sektor stojí na jiných základech"
-  byline="**Jakub Komárek**\\
-Fakta o klimatu · říjen 2026"
+  byline="**Jakub Komárek,** Fakta o klimatu · říjen 2026"
 %}
 
 {% include slide-section.html
