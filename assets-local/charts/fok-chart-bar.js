@@ -22,6 +22,8 @@
  *   y          {function}  accessor for y value    (default: d => d.value)
  *   color      {function|string}  accessor or fixed color for bar fill
  *                               (default: theme.colors.primary)
+ *   partial    {function}  (row) => true draws that bar hatched in its colour
+ *                          at half opacity, e.g. for a part-year
  *   yLabel     {string}    label shown on y-axis
  *   xLabel     {string}    label shown on x-axis
  *   title      {string}    chart title rendered above
@@ -50,6 +52,7 @@ function fokBarChart(containerSelector, data, options = {}) {
     ? options.color
     : () => (typeof options.color === 'string' ? options.color : theme.colors.primary);
 
+  const partialAcc = options.partial ?? (() => false);
   const horiz      = options.horizontal  ?? false;
   const sorted     = options.sorted     ?? false;
   const showLabels = options.showInnerLabels ?? false;
@@ -84,6 +87,10 @@ function fokBarChart(containerSelector, data, options = {}) {
 
   const g = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Partial bars: diagonal stripes in the bar's colour, at half opacity.
+  const barFill    = d => partialAcc(d._raw) ? fokHatch(svg, colorAcc(d._raw)) : colorAcc(d._raw);
+  const barOpacity = d => partialAcc(d._raw) ? 0.5 : 1;
 
   // ── Scales ──────────────────────────────────────────────────────────────
   let xScale, yScale;
@@ -233,7 +240,8 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('width',  xScale.bandwidth())
       .attr('y',      d => d._y >= 0 ? yScale(d._y) : yScale(0))
       .attr('height', d => Math.abs(yScale(d._y) - yScale(0)))
-      .attr('fill',         d => colorAcc(d._raw))
+      .attr('fill',         barFill)
+      .attr('opacity',      barOpacity)
       .attr('stroke',       '#fff')
       .attr('stroke-width', 0.5)
       .attr('rx',           theme.bar.radius)
@@ -244,7 +252,8 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('height',       yScale.bandwidth())
       .attr('x',            d => d._y >= 0 ? xScale(0) : xScale(d._y))
       .attr('width',        d => Math.abs(xScale(d._y) - xScale(0)))
-      .attr('fill',         d => colorAcc(d._raw))
+      .attr('fill',         barFill)
+      .attr('opacity',      barOpacity)
       .attr('stroke',       '#fff')
       .attr('stroke-width', 0.5)
       .attr('rx',           theme.bar.radius)
@@ -272,13 +281,13 @@ function fokBarChart(containerSelector, data, options = {}) {
 
   bars
     .on('mouseover', function(event, d) {
-      d3.select(this).attr('opacity', 0.8);
+      d3.select(this).attr('opacity', barOpacity(d) * 0.8);
       tip.show(tooltipHtml(d));
       tip.move(event);
     })
     .on('mousemove', (event) => tip.move(event))
-    .on('mouseleave', function() {
-      d3.select(this).attr('opacity', 1);
+    .on('mouseleave', function(event, d) {
+      d3.select(this).attr('opacity', barOpacity(d));
       tip.hide();
     });
 

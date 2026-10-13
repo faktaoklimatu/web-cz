@@ -29,6 +29,11 @@
  *   labels        {object}    { key: labelString }
  *   proportional  {boolean}   normalize each row to 100 % (default false)
  *   legend        {boolean}   render a color legend below the chart (default false)
+ *   totalLine     {string}    colour of a solid line along the top of the stack (the total)
+ *   yMax          {number}    fixed top of the y-axis, e.g. to share a scale between charts
+ *   xDomain       {[min,max]} override x scale domain, e.g. a full year of months
+ *   xFormat       {function}  tick formatter for x axis
+ *   markers       {object[]}  events: { x, label } — a dashed vertical line, label above the plot
  *   yLabel        {string}    y-axis label
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
@@ -86,8 +91,9 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   const g   = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
   // ── Scales ──────────────────────────────────────────────────────────────
-  const xScale = d3.scaleLinear().domain(d3.extent(xVals)).range([0, inner.w]);
-  const yMax   = options.proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
+  const xScale = d3.scaleLinear().domain(options.xDomain ?? d3.extent(xVals)).range([0, inner.w]);
+  const yMax   = options.proportional ? 100
+    : options.yMax ?? d3.max(series, s => d3.max(s, d => d[1]));
   const yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]);
 
   // ── Grid + Axes ──────────────────────────────────────────────────────────
@@ -108,7 +114,7 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     .attr('transform', `translate(0,${inner.h})`)
     .call(fokAxisX(xScale, {
       tickValues: options.xTickValues ?? xVals,
-      tickFormat: v => String(Math.round(v)),
+      tickFormat: options.xFormat ?? (v => String(Math.round(v))),
     }, theme));
 
   // ── Y-axis label ─────────────────────────────────────────────────────────
@@ -125,12 +131,17 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   }
 
   // ── Area + separator line generators ─────────────────────────────────────
+  // A row with a missing value (NaN) stacks to NaN from that band up, and both
+  // generators leave a gap there rather than drawing garbage.
+  const known = d => Number.isFinite(d[0]) && Number.isFinite(d[1]);
   const areaGen = d3.area()
+    .defined(known)
     .x((d, i) => xScale(xVals[i]))
     .y0(d => yScale(d[0]))
     .y1(d => yScale(d[1]));
 
   const topLineGen = d3.line()
+    .defined(known)
     .x((d, i) => xScale(xVals[i]))
     .y(d => yScale(d[1]));
 
@@ -154,6 +165,16 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
       .attr('opacity', 0.5)
       .attr('d', topLineGen);
   });
+
+  if (options.totalLine && series.length) {
+    g.append('path')
+      .datum(series[series.length - 1])
+      .attr('fill', 'none')
+      .attr('stroke', options.totalLine)
+      .attr('stroke-width', 2)
+      .attr('pointer-events', 'none')
+      .attr('d', topLineGen);
+  }
 
   // ── Tooltip + vertical crosshair ─────────────────────────────────────────
   const tip = fokTooltip(theme);
@@ -219,6 +240,9 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
         .text(ann.text);
     });
   }
+
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  fokMarkers(g, options.markers, m => xScale(m.x), inner, theme);
 
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend) {
