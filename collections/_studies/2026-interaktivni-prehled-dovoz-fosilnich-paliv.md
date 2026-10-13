@@ -64,20 +64,19 @@ extra-scripts:
     </div>
 
     {% comment %} Dva sloupce, ropa a plyn, zarovnané po řádcích: každý má
-    přesně třináct prvků, viz .fuel-columns v _dovoz-fosilnich-paliv.scss. {% endcomment %}
+    přesně třináct prvků, viz .fuel-columns v _dovoz-fosilnich-paliv.scss.
+    Přepínač nad nimi ukazuje v obou buď dlouhodobé grafy, nebo posledních 36 měsíců. {% endcomment %}
+    <div class="seg-buttons seg-buttons--small span-select" data-span-select role="group" aria-label="Které grafy ukázat">
+      <button type="button" data-value="long" aria-pressed="true">Dlouhodobě</button>
+      <button type="button" data-value="recent" aria-pressed="false">Posledních 36 měsíců</button>
+    </div>
     <div class="fuel-columns">
       <div class="fuel-head">
         <h2 class="fuel-heading">Ropa</h2>
-        <div class="seg-buttons seg-buttons--small" data-span-select role="group" aria-label="Které grafy ukázat">
-          <button type="button" data-value="all" aria-pressed="true">Vše</button>
-          <button type="button" data-value="long" aria-pressed="false">Dlouhodobě</button>
-          <button type="button" data-value="recent" aria-pressed="false">Posledních 36 měsíců</button>
-        </div>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za ropu</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="yearSpendByCountry" autocomplete="off"> zvlášť po zemích</label>
         </div>
         <div class="fuel-plot" data-tiles="yearSpendByCountry">
           <div id="chart-ropa-czk" class="whole"></div>
@@ -88,11 +87,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Dovoz ropy</h3>
-          <div class="chart-toggles chart-toggles--sub">
-            <label class="chart-toggle"><input type="checkbox" data-toggle="share" autocomplete="off"> 100 %</label>
-            <label class="chart-toggle"><input type="checkbox" data-toggle="minis" autocomplete="off"> zvlášť po zemích</label>
-            <label class="chart-toggle chart-toggle--sub"><input type="checkbox" data-toggle="minisRows" autocomplete="off"> pod sebou</label>
-          </div>
         </div>
         <div class="fuel-plot" data-tiles="minis">
           <div id="chart-ropa-energie" class="whole"></div>
@@ -103,7 +97,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena ropy</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="priceByCountry" autocomplete="off"> podle zemí</label>
         </div>
         <div id="chart-ropa-cena"></div>
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
@@ -113,7 +106,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za ropu za posledních 36 měsíců</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="spendByCountry" autocomplete="off"> zvlášť po zemích</label>
         </div>
         <div class="fuel-plot" data-tiles="spendByCountry">
           <div id="chart-ropa-czk-mesice" class="whole"></div>
@@ -129,7 +121,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="priceByCountry" autocomplete="off"> podle zemí</label>
         </div>
         <div id="chart-ropa-cena-mesice"></div>
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
@@ -139,16 +130,10 @@ extra-scripts:
 
       <div class="fuel-head">
         <h2 class="fuel-heading">Zemní plyn</h2>
-        <div class="seg-buttons seg-buttons--small" data-span-select role="group" aria-label="Které grafy ukázat">
-          <button type="button" data-value="all" aria-pressed="true">Vše</button>
-          <button type="button" data-value="long" aria-pressed="false">Dlouhodobě</button>
-          <button type="button" data-value="recent" aria-pressed="false">Posledních 36 měsíců</button>
-        </div>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za zemní plyn</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="yearSpendByCountry" autocomplete="off"> zvlášť po zemích</label>
         </div>
         <div class="fuel-plot" data-tiles="yearSpendByCountry">
           <div id="chart-plyn-czk" class="whole"></div>
@@ -159,11 +144,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Dovoz zemního plynu</h3>
-          <div class="chart-toggles chart-toggles--sub">
-            <label class="chart-toggle"><input type="checkbox" data-toggle="share" autocomplete="off"> 100 %</label>
-            <label class="chart-toggle"><input type="checkbox" data-toggle="minis" autocomplete="off"> zvlášť po zemích</label>
-            <label class="chart-toggle chart-toggle--sub"><input type="checkbox" data-toggle="minisRows" autocomplete="off"> pod sebou</label>
-          </div>
         </div>
         <div class="fuel-plot" data-tiles="minis">
           <div id="chart-plyn-energie" class="whole"></div>
@@ -175,7 +155,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena zemního plynu</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="priceByCountry" autocomplete="off"> podle zemí</label>
         </div>
         <div id="chart-plyn-cena"></div>
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
@@ -185,7 +164,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="spendByCountry" autocomplete="off"> zvlášť po zemích</label>
         </div>
         <div class="fuel-plot" data-tiles="spendByCountry">
           <div id="chart-plyn-czk-mesice" class="whole"></div>
@@ -201,7 +179,6 @@ extra-scripts:
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
-          <label class="chart-toggle"><input type="checkbox" data-toggle="priceByCountry" autocomplete="off"> podle zemí</label>
         </div>
         <div id="chart-plyn-cena-mesice"></div>
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
@@ -282,9 +259,14 @@ extra-scripts:
     </div>
 
     {% comment %} Mapa tras ropy: ropovody a pásy podle dovozu, kreslí ji
-    drawMap v dovoz-fosilnich-paliv.js. {% endcomment %}
+    drawMap v dovoz-fosilnich-paliv.js. Rozbalovací jako expander.html z web-core;
+    sbalená se nekreslí, po rozbalení ji překreslí DOVOZ_REDRAW. {% endcomment %}
     <div class="route-map">
-      <h2 class="fuel-heading">Kudy ropa do Česka přichází</h2>
+      <a class="expander collapsed" data-toggle="collapse" data-target="#mapa-collapse" aria-expanded="false" aria-controls="mapa-collapse">
+        <div class="expander-button"><i class="fas fa-chevron-down"></i></div>
+        <h2 class="fuel-heading">Kudy ropa do Česka přichází</h2>
+      </a>
+      <div class="collapse" id="mapa-collapse">
       <div class="tool-controls">
         <div class="control-group control-group--years">
           <div class="control-head">
@@ -317,5 +299,6 @@ extra-scripts:
         </div>
       </div>
     </div>
+      </div>
   </div>
 </div>

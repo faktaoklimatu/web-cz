@@ -69,6 +69,11 @@ body.dovoz-fosilnich-paliv {
         grid-template-rows: repeat(13, auto);
         grid-auto-flow: column;
         column-gap: 48px;
+        margin-top: 16px;
+    }
+
+    /* The one span selector, above both columns. */
+    .span-select {
         margin-top: 40px;
     }
 
@@ -383,6 +388,20 @@ body.dovoz-fosilnich-paliv {
     .tool,
     .route-map {
         margin-top: 56px;
+    }
+
+    /* The map's heading is the expander link that opens it. */
+    .route-map a.expander {
+        align-items: center;
+        cursor: pointer;
+
+        .fuel-heading {
+            margin: 0;
+        }
+    }
+
+    #mapa-collapse > .tool-controls {
+        margin-top: 16px;
     }
 
     /* The generated title takes up to two lines on a phone; the room is kept

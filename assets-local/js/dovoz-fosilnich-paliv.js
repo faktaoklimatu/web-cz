@@ -347,19 +347,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // row by row.
     const toggles = { yearSpendByCountry: false, minis: false, minisRows: false, share: false, spendByCountry: false, priceByCountry: false };
 
-    // The span selector by the fuel headings: all charts, the long-term ones
-    // or the latest 36 months'. Both headings carry one and stay in step.
-    let span = 'all';
+    // The span selector above the fuel columns: the long-term charts or the
+    // latest 36 months', in both columns at once.
+    let span = 'long';
     document.querySelectorAll('[data-span-select] button').forEach(b => b.addEventListener('click', () => {
       span = b.dataset.value;
       document.querySelectorAll('[data-span-select] button')
         .forEach(x => x.setAttribute('aria-pressed', String(x.dataset.value === span)));
-      drawAll();
-    }));
-    document.querySelectorAll('[data-toggle]').forEach(box => box.addEventListener('change', () => {
-      toggles[box.dataset.toggle] = box.checked;
-      document.querySelectorAll(`[data-toggle="${box.dataset.toggle}"]`)
-        .forEach(b => { b.checked = box.checked; });
       drawAll();
     }));
 
@@ -1442,6 +1436,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
     window.DOVOZ_REDRAW = drawAll;
+    // The collapsed map has no width, so drawAll skips it; draw it once opened.
+    $('#mapa-collapse').on('shown.bs.collapse', drawAll);
     // ponytail: any control redraws every chart, not just its own — cheap here.
     drawAll();
     worldReady.then(features => { world = features; drawAll(); })
