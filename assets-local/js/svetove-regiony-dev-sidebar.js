@@ -24,6 +24,7 @@
     pad: ["--region-pad", 16, "px"],
     flag: ["--region-flag", 22, "px"],
     titleSize: ["--region-title-size", 22, "px"],
+    textSize: ["--region-text-size", 1, "rem"],
     cardWidth: ["--region-card-width", 85, "%"],
     fade: ["--region-fade", 15, "%"],
   };
@@ -50,6 +51,7 @@
       ["titleSize", "Velikost nadpisu (px)", "range", 14, 40, 1],
     ]],
     ["Hlavní charakteristiky", [
+      ["textSize", "Velikost písma (rem)", "range", 0.7, 1.6, 0.05],
       ["carousel", "Karusel místo mřížky 2×2", "checkbox"],
       ["cardWidth", "Šířka karty (%)", "range", 50, 100, 1],
       ["fade", "Přechod okraje (%)", "range", 0, 40, 1],

@@ -131,6 +131,7 @@
     --region-pad: 16px;
     --region-flag: 22px;
     --region-title-size: 22px;
+    --region-text-size: 1rem;   // body text in the 2×2 "Hlavní charakteristiky" boxes
     --region-card-width: 85%;   // carousel: card share of the row, the rest is the next card peeking in
     --region-fade: 15%;         // carousel: width of the fade over the peeking card
 }
@@ -162,6 +163,17 @@
 
 // Equal heights only inside the 2×2 grid; full-width boxes size to content.
 .region-grid .region-box { height: 100%; }
+.region-grid .region-box strong { color: var(--region); }
+.region-stats {
+    color: #718096;
+    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
+    strong { color: inherit; }
+    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
+}
+.region-detail {
+    width: 75%;
+}
+.region-grid .region-box p { font-size: var(--region-text-size); }
 
 .region-eu    { --region: var(--region-eu); }
 .region-cina  { --region: var(--region-cina); }

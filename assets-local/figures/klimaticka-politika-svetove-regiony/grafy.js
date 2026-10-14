@@ -19,6 +19,8 @@
  *                       by fuel, both % and TWh
  *   kapacita.csv        Ember yearly_full_release_long_format.csv, capacity GW
  *                       by fuel (shares of the total are computed here)
+ *   populace.csv        UN WPP 2024, population 1 July (mil.; 2024–25 medium
+ *                       variant, EU = sum of the 27 members), for per capita
  *   elektromobily.csv   OWID grapher electric-car-sales-share (IEA GEVO 2026)
  *   elektrifikace.csv   IEA chart "Share of electricity in total final
  *                       consumption in selected countries and regions"
@@ -42,6 +44,9 @@
     { key: "indie", label: "Indie", get color() { return regionColor("indie", "#37a97e"); } },
     { key: "eu",    label: "EU",    get color() { return regionColor("eu", "#36369b"); } },
   ];
+  // Small-multiple panels (areas, squares) in the article order.
+  const PANEL_ORDER = ["eu", "usa", "cina", "indie"];
+  const regionOf = key => REGIONS.find(x => x.key === key);
   const WORLD = { key: "svet", label: "Svět", color: "#9ba5ad", dashed: true };
 
   const C = {
@@ -250,7 +255,7 @@
     const stack = d3.stack().keys(o.keys.map(k => k.key));
     const area = d3.area().x(d => x(d.data.year)).y0(d => y(d[0])).y1(d => y(d[1]));
 
-    REGIONS.forEach((r, i) => {
+    PANEL_ORDER.map(regionOf).forEach((r, i) => {
       const col = i % cols, row = Math.floor(i / cols);
       const g = svg.append("g").attr("transform",
         `translate(${left + col * (panelW + gapX)},${top + row * (titleH + plotH + axisH + rowGap)})`);
@@ -313,7 +318,7 @@
     const GAP = 2, PAD = 8, VALUE_SIZE = 12, NAME_SIZE = 13, TOTAL_SIZE = 26;
     const color = key => o.keys.find(k => k.key === key).color;
     const total = r => d3.sum(o.keys, k => o.rows.get(r.key)[k.key]);
-    const regions = REGIONS.slice().sort((a, b) => total(b) - total(a));
+    const regions = PANEL_ORDER.map(regionOf);
     const maxValue = d3.max(regions, r => d3.max(o.keys, k => o.rows.get(r.key)[k.key]));
 
     // Square positions for one region at `side` px for the largest value.
@@ -579,7 +584,6 @@
   function timeline(svg, width, goals) {
     const NOTE = 13, LINE_H = 16, NEUTRAL = 15, YEAR = 18, R = 11, r = 4.5;
     const narrow = width < 560;
-    const regionOf = key => REGIONS.find(x => x.key === key);
 
     const widths = new Map();
     const measure = (t, size, bold, italic) => {
@@ -793,10 +797,10 @@
       const m = METRICS[metric];
       const rows = new Map();
       d3.group(raw, d => d.region).forEach((rr, reg) =>
-        rows.set(reg, rr.map(d => ({ year: +d.year, v: +d[m.col] * m.k }))));
+        rows.set(reg, rr.filter(d => +d.year >= 1990).map(d => ({ year: +d.year, v: +d[m.col] * m.k }))));
       return smallMultiples(svg, w, {
         keys: [{ key: "v" }], rows, unit: m.unit, short: m.short, decimals: m.decimals,
-        yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1950, 1990, 2024],
+        yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1990, 2010, 2024],
       });
     });
   });
@@ -846,21 +850,27 @@
   });
 
   // Instalovaný výkon — GW, or each source's share of the region's total.
-  csv("kapacita.csv").then(raw => {
+  Promise.all([csv("kapacita.csv"), csv("populace.csv")]).then(([raw, popRaw]) => {
     const gw = byYear(raw, CAPACITY, "source", "gw");
     const shown = CAPACITY.filter(k => !k.hidden);
     const share = new Map([...gw].map(([reg, years]) => [reg, years.map(d => {
       const total = d3.sum(CAPACITY, k => d[k.key]);
       return Object.fromEntries([["year", d.year], ...CAPACITY.map(k => [k.key, d[k.key] / total * 100])]);
     })]));
+    // GW / mil. obyvatel × 1000 = W na obyvatele.
+    const pop = new Map(popRaw.map(d => [d.region + d.year, +d.population_mil]));
+    const perCapita = new Map([...gw].map(([reg, years]) => [reg, years.map(d =>
+      Object.fromEntries([["year", d.year], ...CAPACITY.map(k => [k.key, d[k.key] / pop.get(reg + d.year) * 1000])]))]));
+    const stackMax = rows => d3.max([...rows.values()].flat(), d => d3.sum(shown, k => d[k.key]));
     const METRICS = {
-      share: { label: "Podíl", rows: share, yMax: 100, decimals: 1, short: "%",
-               unit: "Podíl na celkovém instalovaném výkonu (%)" },
-      gw:    { label: "Výkon v GW", rows: gw, decimals: 0, short: "GW",
-               yMax: d3.max([...gw.values()].flat(), d => d3.sum(shown, k => d[k.key])),
-               unit: "Instalovaný výkon (GW)" },
+      gw:        { label: "Výkon v GW", rows: gw, decimals: 0, short: "GW", yMax: stackMax(gw),
+                   unit: "Instalovaný výkon (GW)" },
+      share:     { label: "Podíl", rows: share, yMax: 100, decimals: 1, short: "%",
+                   unit: "Podíl na celkovém instalovaném výkonu (%)" },
+      perCapita: { label: "Na obyvatele", rows: perCapita, decimals: 0, short: "W", yMax: stackMax(perCapita),
+                   unit: "Instalovaný výkon na obyvatele (W)" },
     };
-    let metric = "share", draw = () => {};
+    let metric = "gw", draw = () => {};
     addSwitch("graf-oze", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
       key => { metric = key; draw(); });
     draw = mount("graf-oze", (svg, w) => smallMultiples(svg, w, {
