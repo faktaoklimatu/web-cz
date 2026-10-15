@@ -64,7 +64,9 @@
       .attr("x2", W).attr("y1", y).attr("y2", y).attr("stroke", C.grid);
     g.append("g").attr("text-anchor", "end").selectAll("text").data(Y_TICKS).join("text")
       .attr("x", -8).attr("y", y).attr("dy", "0.35em").text(pct);
+    // On the page only: the downloaded file gets this as its title (chart-foot.html).
     g.append("text").attr("x", -mg.left).attr("y", -14).attr("font-weight", 700)
+      .attr("data-export-omit", "")
       .text("Podíl povolenek zdarma pro odvětví v CBAM");
 
     // Note in the empty top right, on a white box that hides the grid lines.

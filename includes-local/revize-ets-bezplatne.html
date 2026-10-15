@@ -4,12 +4,13 @@
 #ets-bezplatne { position: relative; margin-top: 2rem; font-family: Roboto, system-ui, sans-serif; }
 #ets-bezplatne svg { display: block; width: 100%; height: auto; }
 #ets-bezplatne .tip { position: absolute; display: none; pointer-events: none; padding: 8px 12px; background: #fff; border: 1px solid #e8eef6; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1); font-size: 12px; line-height: 1.4; white-space: nowrap; }
-.ets-bezplatne-poznamka { margin: .5rem 0 0; font-size: .8rem; color: #718096; font-family: Roboto, system-ui, sans-serif; }
-@media (min-width: 768px) { .ets-bezplatne-graf { width: 85%; } }  /* whole block, note and footer included */
+@media (min-width: 768px) { .ets-bezplatne-graf { width: 85%; } }  /* whole block, footer included */
 </style>
 
 <div class="ets-bezplatne-graf">
 <div id="ets-bezplatne" data-src="/assets-local/files/revize-ets/cbam-faktor.csv"></div>
 {% capture zdroj %}Zdroj: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02003L0087-20240301">Směrnice o EU ETS</a>, <a href="https://ec.europa.eu/commission/presscorner/detail/cs/ip_26_1596">Návrh revize směrnice o EU ETS</a>{% endcapture %}
-{% include includes-local/chart-foot.html svg="ets-bezplatne-svg" file="ets-bezplatne-povolenky" source=zdroj subtitle="#ets-bezplatne-poznamka" %}
+{% include includes-local/chart-foot.html
+   title="Podíl povolenek zdarma pro odvětví v CBAM"
+   svg="ets-bezplatne-svg" file="ets-bezplatne-povolenky" source=zdroj %}
 </div>
