@@ -297,7 +297,10 @@ function fokMarkers(g, markers, xOf, inner, theme = FoKTheme) {
  * @param {object} [options]
  * @param {'horizontal'|'vertical'} [options.direction='horizontal']
  * @param {number} [options.swatchSize=12]
- * @param {number} [options.gap=8]           — gap between swatch and label
+ * @param {number} [options.gap=14]          — gap between swatch and label
+ * @param {number} [options.radius]          — swatch corner radius, px (CSS default 2)
+ * @param {function}[options.labelColor]     — item → label colour (default theme grey)
+ * @param {string} [options.position='bottom'] — 'top': before the chart's SVG
  * @param {number} [options.itemSpacing=20]  — spacing between legend items
  * @param {object} [theme]
  */
@@ -305,10 +308,11 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
   const sel = typeof container === 'string' ? d3.select(container) : container;
   const direction    = options.direction    ?? 'horizontal';
   const swatchSize   = options.swatchSize   ?? 12;
-  const gap          = options.gap          ?? 8;
+  const gap          = options.gap          ?? 14;
   const itemSpacing  = options.itemSpacing  ?? 20;
 
-  const legendEl = sel.append('div').attr('class', 'fok-legend fok-legend--' + direction);
+  const legendEl = (options.position === 'top' ? sel.insert('div', ':scope > svg') : sel.append('div'))
+    .attr('class', `fok-legend fok-legend--${direction} fok-legend--${options.position ?? 'bottom'}`);
 
   items.forEach(item => {
     const itemEl = legendEl.append('div').attr('class', 'fok-legend__item');
@@ -317,7 +321,8 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
     // legend reads like the line; everything else a filled square.
     const swatch = itemEl.append('span')
       .attr('class', 'fok-legend__swatch')
-      .style('width',  swatchSize + 'px');
+      .style('width',  swatchSize + 'px')
+      .style('border-radius', options.radius != null ? options.radius + 'px' : null);
     if (item.dashed) swatch.style('height', 0).style('border-top', `2px dashed ${item.color}`);
     else swatch.style('background', item.color).style('height', swatchSize + 'px');
 
@@ -325,7 +330,7 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
       .attr('class', 'fok-legend__label')
       .style('font-family', theme.font)
       .style('font-size', theme.fontSize.axisLabel + 'px')
-      .style('color', theme.colors.grey)
+      .style('color', options.labelColor ? options.labelColor(item) : theme.colors.grey)
       .style('margin-left', gap + 'px')
       .text(item.label);
   });

@@ -27,9 +27,10 @@ window.DOVOZ_CFG = {
   kpiUnitInline: true,     // KPI row: each axis' unit after its top label ("350 mld. Kč")
   colorDefense: '#d0d9e1',
   showMsmt: true,          // GDP chart: the education ministry's spending (MŠMT)
-  colorMsmt: '#bcd3c1',
+  colorMsmt: '#9aa5b1',
   showSfdi: true,          // GDP chart: the transport infrastructure fund's (SFDI)
-  colorSfdi: '#e2cfae',
+  colorSfdi: '#9aa5b1',
+  compareDash: '8 2',      // GDP chart: the comparisons' dashes, dash and gap 4 : 1
   // Suppliers, keyed by the slugs in the country tables below, so a country
   // reads the same in every chart. Grey is reserved for Ostatní, so no named
   // band can be mistaken for the leftovers.
@@ -1342,6 +1343,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Each entry draws into its container at that container's own width;
     // hidden containers measure 0 and are skipped. Built per draw, so the
     // colours are whatever CFG holds now.
+    // The KPI cards' legends: above the chart, square swatches, each label in
+    // its swatch's colour (darkened where it would not read on white) and a
+    // third of a swatch away from it.
+    const kpiLegend = { position: 'top', radius: 0, gap: 12 / 3, labelColor: it => readable(it.color) };
+
     const charts = () => [
       ['#chart-celkem-czk', w => fokBarChartStacked('#chart-celkem-czk',
         payments.map(d => ({ year: String(d.year), ropa: d.ropa_czk_mld, plyn: d.plyn_czk_mld })), {
@@ -1353,6 +1359,7 @@ document.addEventListener('DOMContentLoaded', () => {
           width: w, height: CFG.chartHeight, theme,
           xTickValues: xTicks.map(String),
           yMax: 400, yTickValues: d3.range(0, 401, 100), yGridValues: d3.range(0, 401, 50),
+          legendOptions: kpiLegend,
           yFormat: v => fokFormatNumber(v, 0),
           // The whole year whichever band is hovered: the sum, then the two
           // fuels in stack order, top first.
@@ -1378,14 +1385,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // x in years, y in % HDP: the last row's baseline. Defence has none.
         const lineLabels = {
           'Ropa a zemní plyn': { x: 2022.3, y: 4.55, lines: ['**Ropa a zemní plyn**'] },
-          'Výdaje na školství (rozpočet MŠMT)':
-            { x: 2017, y: 4.0, lines: ['**Výdaje na školství**', '(rozpočet MŠMT)'] },
+          'Výdaje na školství (rozpočet MŠMT)': { x: 2017, y: 4.0, lines: ['Výdaje na školství'] },
           'Výdaje na dopravní infrastrukturu (rozpočet SFDI)':
-            { x: 2025, y: 0.55, anchor: 'end', lines: ['**Výdaje na dopravní**', '**infrastrukturu**', '(rozpočet SFDI)'] },
+            { x: 2025, y: 0.92, anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
         };
         return fokLineChart('#chart-celkem-hdp',
           lines.flatMap(([series, field]) => payments.map(d => ({ ...d, series, pct: d[field] }))), {
             multi: true, x: d => d.year, y: d => d.pct, legend: false,
+            dashed: series => series !== 'Ropa a zemní plyn', dashArray: CFG.compareDash,
             lineLabels: Object.fromEntries(lines.filter(([series]) => lineLabels[series])
               .map(([series, , color]) => [series, { ...lineLabels[series], color: readable(color) }])),
             yLabel: '% HDP', yLabelInline: CFG.kpiUnitInline,
@@ -1402,7 +1409,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // labels every 200, grid every 100.
       ['#chart-celkem-energie', energy('#chart-celkem-energie', energie, FOSIL, {
         yMax: 800, yTickValues: d3.range(0, 801, 200), yGridValues: d3.range(0, 801, 100),
-        yLabelInline: CFG.kpiUnitInline,
+        yLabelInline: CFG.kpiUnitInline, legendOptions: kpiLegend,
       })],
 
       ['#chart-ropa-czk',     money('#chart-ropa-czk', ropa.czk, CFG.colorRopa)],

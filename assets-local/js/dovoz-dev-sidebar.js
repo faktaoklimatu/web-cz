@@ -26,6 +26,7 @@
     kpiLabelSize: ["--dovoz-kpi-label-size", 13],
     kpiValueSize: ["--dovoz-kpi-value-size", 24],
     textSize: ["--dovoz-text-size", 14],
+    chartGap: ["--dovoz-chart-gap", 48],
     noteSize: ["--dovoz-note-size", 13],
   };
   const lens = {};
@@ -87,7 +88,8 @@
       ["chartTitleSize", "Nadpis grafu (px)", "range", 12, 32, 1],
       ["kpiLabelSize", "KPI popisek (px)", "range", 8, 22, 0.5],
       ["kpiValueSize", "KPI číslo (px)", "range", 12, 48, 1],
-      ["textSize", "Text pod grafy (px)", "range", 10, 20, 0.5],
+      ["textSize", "Text přepínačů (px)", "range", 10, 20, 0.5],
+      ["chartGap", "Mezera mezi grafy ve sloupci (px)", "range", 0, 96, 2],
       ["noteSize", "Poznámka pod grafem (px)", "range", 10, 20, 0.5],
       ["gap", "Mezera mezi panely (px)", "range", 0, 48, 2],
       ["padY", "Odsazení panelů nahoře/dole (px)", "range", 0, 40, 1],

@@ -50,6 +50,7 @@
  *   yLabel        {string}
  *   yLabelInline  {boolean}   the unit after the top tick label, not above the axis
  *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
  *   title         {string}
  *   width/height  {number}
  *   margins       {object}
@@ -280,7 +281,7 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
   const showLegend = options.legend !== false && keys.length > 1;
   if (showLegend) {
     const items = keys.map(k => ({ label: labelMap[k] ?? k, color: colorMap[k] ?? theme.colors.primary }));
-    fokLegend(container, items, { direction: options.legendDirection ?? 'horizontal' }, theme);
+    fokLegend(container, items, { direction: options.legendDirection ?? 'horizontal', ...options.legendOptions }, theme);
   }
 
   // ── Y-axis unit, over the data ────────────────────────────────────────────

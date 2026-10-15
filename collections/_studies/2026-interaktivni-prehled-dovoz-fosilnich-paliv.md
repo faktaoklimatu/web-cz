@@ -64,7 +64,9 @@ extra-scripts:
     </div>
 
     {% comment %} Dva sloupce, ropa a plyn, zarovnané po řádcích: každý má
-    přesně třináct prvků, viz .fuel-columns v _dovoz-fosilnich-paliv.scss.
+    přesně sedm prvků (nadpis s úvodem, tři dlouhodobé a tři měsíční grafy),
+    viz .fuel-columns v _dovoz-fosilnich-paliv.scss. Úvod pod nadpisem je
+    obyčejný markdown: řádky bez odsazení, prázdný řádek před i za.
     Přepínač nad nimi ukazuje v obou buď dlouhodobé grafy, nebo posledních 36 měsíců. {% endcomment %}
     <div class="seg-buttons seg-buttons--small span-select" data-span-select role="group" aria-label="Které grafy ukázat">
       <button type="button" data-value="long" aria-pressed="true">Dlouhodobě</button>
@@ -73,7 +75,11 @@ extra-scripts:
     <div class="fuel-columns">
       <div class="fuel-head">
         <h2 class="fuel-heading">Ropa</h2>
-        <p class="fuel-copy">Ropa je klíčová pro výrobu pohonných hmot, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.</p>
+        <div class="fuel-intro" markdown="1">
+
+Ropa je klíčová pro výrobu pohonných hmot, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
+
+</div>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
@@ -84,7 +90,6 @@ extra-scripts:
           <div id="chart-ropa-czk-roky" class="mini-grid tiles"></div>
         </div>
       </div>
-      <p class="fuel-copy" data-span="long">Za dovoz ropy Česko obvykle platí zhruba 75 až 95 miliard korun ročně. Výjimkou byl rok 2020, kdy během pandemie klesly ceny i dovezené množství, a rok 2022, kdy po ruské invazi na Ukrajinu výdaje vyskočily na 115 miliard. V roce 2025 to bylo 82 miliard.</p>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Dovoz ropy</h3>
@@ -94,7 +99,6 @@ extra-scripts:
           <div id="chart-ropa-mini" class="mini-grid tiles"></div>
         </div>
       </div>
-      <p class="fuel-copy" data-span="long">Dovezené množství ropy se drží kolem 300 PJ ročně, mění se ale její původ. Ještě v roce 2023 pocházelo z Ruska 58 % dovozu, v roce 2025 už jen 8 % — přes 90 % tvořila ropa z Ázerbájdžánu, Norska, Kazachstánu a Saúdské Arábie.</p>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena ropy</h3>
@@ -103,7 +107,6 @@ extra-scripts:
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
         <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
       </div>
-      <p class="fuel-copy" data-span="long">Průměrná dovozní cena ropy vzrostla z 800 Kč/MWh v roce 2017 na 1 310 Kč/MWh v roce 2022, v roce 2025 to bylo 1 010 Kč/MWh. Do roku 2024 byla ruská ropa každý rok levnější než ázerbájdžánská — v letech 2022 a 2023 zhruba o třetinu a o čtvrtinu.</p>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za ropu za posledních 36 měsíců</h3>
@@ -113,12 +116,10 @@ extra-scripts:
           <div id="chart-ropa-czk-tiles" class="mini-grid tiles"></div>
         </div>
       </div>
-      <p class="fuel-copy" data-span="recent">Měsíčně jde za ropu v průměru necelých 8 miliard korun, částky ale silně kolísají: od necelých 4 do přes 12 miliard. Za posledních 36 měsíců šlo nejvíc peněz do Ázerbájdžánu (39 %), Ruska (24 %) a Kazachstánu (18 %).</p>
       <div class="fuel-figure" data-span="recent">
         <h3 class="chart-title">Dovoz ropy za posledních 36 měsíců</h3>
         <div id="chart-ropa-energie-mesice"></div>
       </div>
-      <p class="fuel-copy" data-span="recent">Ruská ropa do Česka naposledy dorazila v dubnu 2025. Její místo zaplnila hlavně ropa z Norska a Saúdské Arábie, vedle dosavadních dodávek z Ázerbájdžánu a Kazachstánu.</p>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
@@ -127,11 +128,14 @@ extra-scripts:
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
         <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
       </div>
-      <p class="fuel-copy" data-span="recent">V roce 2025 průměrná cena ropy postupně klesala až pod 870 Kč/MWh v prosinci. Na jaře 2026 prudce vzrostla — v červnu na 1 720 Kč/MWh, nejvíc za poslední tři roky.</p>
 
       <div class="fuel-head">
         <h2 class="fuel-heading">Zemní plyn</h2>
-        <p class="fuel-copy">Zemní plyn je zásadní zdroj tepla v budovách a průmyslu (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.</p>
+        <div class="fuel-intro" markdown="1">
+
+Zemní plyn je zásadní zdroj tepla v budovách a průmyslu (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
+
+</div>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
@@ -142,7 +146,6 @@ extra-scripts:
           <div id="chart-plyn-czk-roky" class="mini-grid tiles"></div>
         </div>
       </div>
-      <p class="fuel-copy" data-span="long">Do roku 2020 Česko za dovoz zemního plynu platilo 26 až 52 miliard korun ročně. V roce 2022 výdaje vyskočily na 232 miliard — téměř trojnásobek roku 2021 — přestože se dovezené množství skoro nezměnilo. V roce 2025 to bylo 79 miliard.</p>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Dovoz zemního plynu</h3>
@@ -153,7 +156,6 @@ extra-scripts:
         </div>
         <p class="chart-note">Kategorie „Ostatní“ zahrnuje i dovoz, u něhož statistika zemi původu neuvádí — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
       </div>
-      <p class="fuel-copy" data-span="long">Ještě v roce 2021 pocházelo z Ruska 97 % dovezeného plynu. Od roku 2023 převažuje plyn z Norska, v roce 2024 se ale ruský podíl vrátil na 30 %. V roce 2025 ruský plyn chybí úplně a 29 % dovozu tvoří plyn, u něhož statistika zemi původu neuvádí.</p>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena zemního plynu</h3>
@@ -162,7 +164,6 @@ extra-scripts:
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
         <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
       </div>
-      <p class="fuel-copy" data-span="long">Plyn zdražoval mnohem prudčeji než ropa: z 310 Kč/MWh v roce 2020 na 2 580 Kč/MWh v roce 2022, tedy víc než osmkrát. Ceny plynu z různých zemí se přitom liší jen málo — v roce 2022 stál ruský i norský kolem 2 610 Kč/MWh. V roce 2025 to bylo průměrně 1 070 Kč/MWh.</p>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
@@ -172,12 +173,10 @@ extra-scripts:
           <div id="chart-plyn-czk-tiles" class="mini-grid tiles"></div>
         </div>
       </div>
-      <p class="fuel-copy" data-span="recent">Za plyn Česko měsíčně platí v průměru přes 6 miliard korun. Za posledních 36 měsíců šly dvě třetiny těchto peněz za plyn z Norska, 18 % za plyn bez uvedené země původu a 12 % do Ruska.</p>
       <div class="fuel-figure" data-span="recent">
         <h3 class="chart-title">Dovoz zemního plynu za posledních 36 měsíců</h3>
         <div id="chart-plyn-energie-mesice"></div>
       </div>
-      <p class="fuel-copy" data-span="recent">Dovoz plynu se během roku mění víc než u ropy: nejvíc ho přichází od května do července, kdy se plní zásobníky. Ruský plyn statistika naposledy zachycuje v prosinci 2024.</p>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
           <h3 class="chart-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
@@ -186,7 +185,6 @@ extra-scripts:
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
         <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
       </div>
-      <p class="fuel-copy" data-span="recent">Za poslední tři roky se měsíční cena plynu držela zhruba mezi 920 a 1 360 Kč/MWh, daleko pod vrcholem roku 2022. Nejlevnější byl dovoz na konci roku 2025, od března 2026 je cena zase nad 1 150 Kč/MWh.</p>
     </div>
 
     {% comment %} Interaktivní graf: ovládání nastavuje TOOL v dovoz-fosilnich-paliv.js,

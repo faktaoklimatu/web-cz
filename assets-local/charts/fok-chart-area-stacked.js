@@ -37,6 +37,7 @@
  *   yLabel        {string}    y-axis label
  *   yLabelInline  {boolean}   the unit after the top tick label, not above the axis
  *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
  *   tooltipHtml   {function}  (row) => HTML string shown on hover
@@ -243,7 +244,7 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend) {
     const legendItems = keys.map(k => ({ label: labels[k] ?? k, color: colors[k] ?? '#888' }));
-    fokLegend(container, legendItems, {}, theme);
+    fokLegend(container, legendItems, options.legendOptions, theme);
   }
 
   // ── Y-axis unit, over the data ────────────────────────────────────────────

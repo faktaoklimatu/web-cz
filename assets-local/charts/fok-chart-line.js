@@ -34,6 +34,8 @@
  *   yLabel      {string}    y-axis label
  *   yLabelInline {boolean}   the unit after the top tick label, not above the axis
  *   yGridValues  {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object} passed to fokLegend: position, radius, gap, labelColor
+ *   dashArray   {string}    stroke-dasharray of the dashed series (default '5 4')
  *   lineLabels   {object}    direct labels by series: { x, y, anchor, lines, color }
  *   xLabel      {string}    x-axis label
  *   title       {string}    chart title
@@ -187,7 +189,7 @@ function fokLineChart(containerSelector, data, options = {}) {
       .attr('fill', 'none')
       .attr('stroke', color)
       .attr('stroke-width', theme.line.strokeWidth * (dashed ? 0.75 : 1))
-      .attr('stroke-dasharray', dashed ? '5 4' : null)
+      .attr('stroke-dasharray', dashed ? options.dashArray ?? '5 4' : null)
       .attr('stroke-linejoin', 'round')
       .attr('stroke-linecap', dashed ? 'butt' : 'round');
   });
@@ -273,7 +275,7 @@ function fokLineChart(containerSelector, data, options = {}) {
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend && options.multi) {
     const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k), dashed: !!options.dashed?.(k) }));
-    fokLegend(container, legendItems, {}, theme);
+    fokLegend(container, legendItems, options.legendOptions, theme);
   }
 
   // ── Y-axis unit, over the data ────────────────────────────────────────────
