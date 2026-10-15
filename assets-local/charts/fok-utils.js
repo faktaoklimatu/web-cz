@@ -85,6 +85,8 @@ function fokAxisX(scale, options = {}, theme = FoKTheme) {
  * @param {function}[options.tickFormat]
  * @param {boolean} [options.gridLines=true]  — draw horizontal grid lines (default on)
  * @param {number}  [options.gridWidth]       — required when gridLines=true
+ * @param {number[]}[options.gridValues]      — grid lines at these values too,
+ *                                              e.g. every 50 under labels every 100
  * @param {object}  [theme]
  * @returns {function}
  */
@@ -101,7 +103,74 @@ function fokAxisY(scale, options = {}, theme = FoKTheme) {
   return function(selection) {
     selection.call(axis);
     _styleAxis(selection, gridLines, theme);
+    if (gridLines && options.gridValues) {
+      selection.append('g').attr('class', 'fok-grid')
+        .call(d3.axisLeft(scale).tickValues(options.gridValues).tickSize(-options.gridWidth).tickFormat(''))
+        .call(g => _styleAxis(g, true, theme));
+    }
   };
+}
+
+/**
+ * Width a left axis takes: its widest tick label plus the tick padding. As a
+ * chart's left margin, it puts the widest label flush with the SVG's left
+ * edge, the others right-aligned to it. Takes the same ticks, tickValues and
+ * tickFormat as fokAxisY, so it measures the labels the axis will draw.
+ * Measured on a canvas: before the web font loads it measures the fallback,
+ * so a page redraws once document.fonts.ready.
+ *
+ * @param {d3.Scale} scale — a linear or band scale; only its domain counts
+ * @param {object}  [options]
+ * @param {object}  [theme]
+ * @returns {number}
+ */
+function fokAxisYWidth(scale, options = {}, theme = FoKTheme) {
+  const format = options.tickFormat ?? (scale.tickFormat ? scale.tickFormat(options.ticks) : String);
+  const ctx = (fokAxisYWidth.ctx ??= document.createElement('canvas').getContext('2d'));
+  ctx.font = `${theme.fontSize.axisLabel}px ${theme.font}`;
+  return Math.ceil(d3.max(_tickValues(scale, options), v => ctx.measureText(format(v)).width) ?? 0)
+    + theme.axis.tickPadding;
+}
+
+/**
+ * The y axis' unit (e.g. "mld. Kč"), drawn last so it sits over the data.
+ * By default above the plot, flush with the widest tick label (the SVG's left
+ * edge when the margin is fokAxisYWidth). With `inline`, on the top tick's line
+ * right after its label — "350 mld. Kč" — over a box in the panel's colour
+ * that hides the grid line and whatever else runs under it.
+ *
+ * @param {d3.Selection} g       — the plot group, translated by the margins
+ * @param {d3.Scale}     scale   — the y scale
+ * @param {object}       options — the axis' ticks / tickValues, as for fokAxisY
+ * @param {string}       text
+ * @param {object}       where   — { marginLeft, inline, background = '#fff' }
+ * @param {object}       [theme]
+ */
+function fokAxisYLabel(g, scale, options, text, where, theme = FoKTheme) {
+  const box = where.inline ? g.append('rect') : null;
+  const label = g.append('text')
+    .attr('class', 'fok-axis-label')
+    .attr('fill', theme.colors.grey)
+    .attr('font-family', theme.font)
+    .attr('font-size', theme.fontSize.axisLabel)
+    .attr('pointer-events', 'none')
+    .attr('text-anchor', 'start')
+    .text(text);
+  if (!where.inline) {
+    label.attr('x', -where.marginLeft).attr('y', -10);
+    return;
+  }
+  // The tick labels end tickPadding left of the plot; a space after that.
+  label.attr('x', -theme.axis.tickPadding).attr('dx', '0.3em')
+    .attr('y', scale(d3.max(_tickValues(scale, options)))).attr('dy', '0.32em');
+  const b = label.node().getBBox();
+  box.attr('x', b.x).attr('y', b.y).attr('width', b.width + 4).attr('height', b.height)
+    .attr('fill', where.background ?? '#fff').attr('pointer-events', 'none');
+}
+
+// The values a d3 axis on `scale` labels, given fokAxisY's options.
+function _tickValues(scale, options) {
+  return options.tickValues ?? (scale.ticks ? scale.ticks(options.ticks) : scale.domain());
 }
 
 function _styleAxis(selection, isGrid, theme) {

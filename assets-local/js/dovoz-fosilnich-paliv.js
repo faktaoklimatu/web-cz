@@ -21,12 +21,14 @@ window.DOVOZ_CFG = {
   colorRopa: '#813751',
   colorPlyn: '#d4a1a1',
   colorTotal: '#3e3e4c',   // the line along the top of every by-country stack
-  showDefense: true,       // GDP chart: defence spending as a faint line, for scale
+  colorGdp: '#a13f54',     // KPI GDP chart: the imports' line
+  showDefense: false,      // GDP chart: defence spending as a faint line, for scale
   gdpFirst: false,         // KPI row: the GDP share first, ahead of the spending
+  kpiUnitInline: true,     // KPI row: each axis' unit after its top label ("350 mld. Kč")
   colorDefense: '#d0d9e1',
-  showMsmt: false,         // GDP chart: the education ministry's spending (MŠMT)
+  showMsmt: true,          // GDP chart: the education ministry's spending (MŠMT)
   colorMsmt: '#bcd3c1',
-  showSfdi: false,         // GDP chart: the transport infrastructure fund's (SFDI)
+  showSfdi: true,          // GDP chart: the transport infrastructure fund's (SFDI)
   colorSfdi: '#e2cfae',
   // Suppliers, keyed by the slugs in the country tables below, so a country
   // reads the same in every chart. Grey is reserved for Ostatní, so no named
@@ -905,7 +907,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const sum = r => d3.sum(keys, k => r[k]);
       const top = d3.nice(0, toolTops(v).chart || 1, 5)[1];
       const ticks = toolTicks('#chart-tool', v);
-      const legendWidth = w - theme.margins.left - theme.margins.right;
+      // Flush left, under the y labels.
+      const legendWidth = w - theme.margins.right;
       const legend = legendLayout((v.price ? lines : keys.map(k => [k, labels[k], colors[k]]))
         .map(([key, label, color]) => ({ label, color, dashed: key.startsWith('bench') })), legendWidth);
       // Room for the longest legend any view can have, so the chart keeps one
@@ -954,7 +957,7 @@ document.addEventListener('DOMContentLoaded', () => {
       chart.svg.attr('id', 'tool-svg');
       toolScale = { plotH: height - theme.margins.top - theme.margins.bottom - legendRoom, top };
       const lg = chart.svg.append('g').attr('class', 'tool-legend')
-        .attr('transform', `translate(${theme.margins.left},${height - legendRoom + 4})`);
+        .attr('transform', `translate(0,${height - legendRoom + 4})`);
       legend.placed.forEach(it => {
         // A dashed series gets a dashed stroke for a swatch, the rest a square.
         if (it.dashed) lg.append('line').attr('x1', it.x).attr('x2', it.x + 12).attr('y1', it.y + 6).attr('y2', it.y + 6)
@@ -1346,9 +1349,10 @@ document.addEventListener('DOMContentLoaded', () => {
           keys: ['ropa', 'plyn'],
           colors: { ropa: CFG.colorRopa, plyn: CFG.colorPlyn },
           labels: { ropa: 'Ropa', plyn: 'Zemní plyn' },
-          yLabel: 'mld. Kč',
+          yLabel: 'mld. Kč', yLabelInline: CFG.kpiUnitInline,
           width: w, height: CFG.chartHeight, theme,
           xTickValues: xTicks.map(String),
+          yMax: 400, yTickValues: d3.range(0, 401, 100), yGridValues: d3.range(0, 401, 50),
           yFormat: v => fokFormatNumber(v, 0),
           // The whole year whichever band is hovered: the sum, then the two
           // fuels in stack order, top first.
@@ -1363,28 +1367,43 @@ document.addEventListener('DOMContentLoaded', () => {
         // listed first, so they are drawn behind the imports' line.
         const lines = [
           [CFG.showDefense, 'Výdaje na obranu', 'defense_pct', CFG.colorDefense],
-          [CFG.showMsmt, 'Výdaje na školství (MŠMT)', 'msmt_pct', CFG.colorMsmt],
-          [CFG.showSfdi, 'Výdaje na dopravní infrastrukturu (SFDI)', 'sfdi_pct', CFG.colorSfdi],
+          [CFG.showMsmt, 'Výdaje na školství (rozpočet MŠMT)', 'msmt_pct', CFG.colorMsmt],
+          [CFG.showSfdi, 'Výdaje na dopravní infrastrukturu (rozpočet SFDI)', 'sfdi_pct', CFG.colorSfdi],
         ].filter(([shown]) => shown).map(([, ...line]) => line)
-          .concat([['Ropa a zemní plyn', 'gdp_share_pct', CFG.colorRopa]]);
+          .concat([['Ropa a zemní plyn', 'gdp_share_pct', CFG.colorGdp]]);
         const compared = lines.length > 1;
+        // Labels on the lines instead of a legend, each where its line has
+        // room: imports right of their 2022 peak, MŠMT above its line on the
+        // left, SFDI under its line on the right (above it runs the imports').
+        // x in years, y in % HDP: the last row's baseline. Defence has none.
+        const lineLabels = {
+          'Ropa a zemní plyn': { x: 2022.3, y: 4.55, lines: ['**Ropa a zemní plyn**'] },
+          'Výdaje na školství (rozpočet MŠMT)':
+            { x: 2017, y: 4.0, lines: ['**Výdaje na školství**', '(rozpočet MŠMT)'] },
+          'Výdaje na dopravní infrastrukturu (rozpočet SFDI)':
+            { x: 2025, y: 0.55, anchor: 'end', lines: ['**Výdaje na dopravní**', '**infrastrukturu**', '(rozpočet SFDI)'] },
+        };
         return fokLineChart('#chart-celkem-hdp',
           lines.flatMap(([series, field]) => payments.map(d => ({ ...d, series, pct: d[field] }))), {
-            multi: true, x: d => d.year, y: d => d.pct, legend: compared,
-            yLabel: '% HDP',
+            multi: true, x: d => d.year, y: d => d.pct, legend: false,
+            lineLabels: Object.fromEntries(lines.filter(([series]) => lineLabels[series])
+              .map(([series, , color]) => [series, { ...lineLabels[series], color: readable(color) }])),
+            yLabel: '% HDP', yLabelInline: CFG.kpiUnitInline,
             width: w, height: CFG.chartHeight,
             theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
             xTickValues: xTicks, xFormat: String,
-            yFormat: v => fokFormatNumber(v, 1),
+            yDomain: [0, 5], yTickValues: d3.range(0, 6), yFormat: v => fokFormatNumber(v, 0),
             tooltipHtml: d => head(d.year) + lines.slice().reverse().map(([series, field]) =>
               plain(`${compared ? series + ': ' : ''}${fokFormatNumber(d[field], 1)} % HDP`)).join('<br>'),
           });
       }],
 
-      // The series peaks just under 700 PJ; left to itself the axis puts 14
-      // labels on a 320px-wide panel.
-      ['#chart-celkem-energie', energy('#chart-celkem-energie', energie, FOSIL,
-        { yTickValues: [0, 200, 400, 600] })],
+      // The series peaks just under 700 PJ (2019), so the axis runs to 800:
+      // labels every 200, grid every 100.
+      ['#chart-celkem-energie', energy('#chart-celkem-energie', energie, FOSIL, {
+        yMax: 800, yTickValues: d3.range(0, 801, 200), yGridValues: d3.range(0, 801, 100),
+        yLabelInline: CFG.kpiUnitInline,
+      })],
 
       ['#chart-ropa-czk',     money('#chart-ropa-czk', ropa.czk, CFG.colorRopa)],
       ['#chart-ropa-energie', fuelEnergy('#chart-ropa-energie', ropa.energie, ROPA)],
@@ -1440,6 +1459,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#mapa-collapse').on('shown.bs.collapse', drawAll);
     // ponytail: any control redraws every chart, not just its own — cheap here.
     drawAll();
+    // The left margins are measured in Roboto: once it loads, again.
+    document.fonts.ready.then(drawAll);
     worldReady.then(features => { world = features; drawAll(); })
       .catch(err => console.error('dovoz: map failed to load', err));
 

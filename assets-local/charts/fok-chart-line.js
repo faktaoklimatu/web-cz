@@ -32,6 +32,9 @@
  *   areaOpacity {number}    opacity of that fill (default 0.18)
  *   legend      {boolean}   render a legend (multi-series, default false)
  *   yLabel      {string}    y-axis label
+ *   yLabelInline {boolean}   the unit after the top tick label, not above the axis
+ *   yGridValues  {number[]}  grid lines at these values too, between the labelled ticks
+ *   lineLabels   {object}    direct labels by series: { x, y, anchor, lines, color }
  *   xLabel      {string}    x-axis label
  *   title       {string}    chart title
  *   yDomain     {[min,max]} override y scale domain
@@ -53,7 +56,7 @@ function fokLineChart(containerSelector, data, options = {}) {
   const margin = fokMargin(options.margins ?? {}, theme);
   const W      = options.width  ?? 800;
   const H      = options.height ?? 420;
-  const inner  = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const inner  = { h: H - margin.top - margin.bottom };
 
   const xAcc = options.x      ?? (d => d.date);
   const yAcc = options.y      ?? (d => d.value);
@@ -77,6 +80,20 @@ function fokLineChart(containerSelector, data, options = {}) {
   const yAll    = allPoints.map(p => p._y);
   const yMin    = options.yDomain ? options.yDomain[0] : Math.min(0, d3.min(yAll));
   const yMax    = options.yDomain ? options.yDomain[1] : d3.max(yAll);
+
+  // The y scale first: the left margin fits its labels, the plot takes the rest.
+  const yScale = d3.scaleLinear()
+    .domain([yMin, yMax])
+    .range([inner.h, 0])
+    .nice();
+  const yAxis = {
+    ticks:      options.yTicks      ?? 6,
+    tickValues: options.yTickValues,
+    tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
+    gridValues: options.yGridValues,
+  };
+  margin.left ??= fokAxisYWidth(yScale, yAxis, theme);
+  inner.w = W - margin.left - margin.right;
 
   // ── Clear container ─────────────────────────────────────────────────────
   const container = d3.select(containerSelector);
@@ -113,18 +130,11 @@ function fokLineChart(containerSelector, data, options = {}) {
     ? d3.scaleTime().domain(xExtent).range([0, inner.w])
     : d3.scaleLinear().domain(xExtent).range([0, inner.w]);
 
-  const yScale = d3.scaleLinear()
-    .domain([yMin, yMax])
-    .range([inner.h, 0])
-    .nice();
-
   // ── Grid + Axes ──────────────────────────────────────────────────────────
   g.append('g')
     .attr('class', 'fok-axis fok-axis--y')
     .call(fokAxisY(yScale, {
-      ticks:      options.yTicks      ?? 6,
-      tickValues: options.yTickValues,
-      tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
+      ...yAxis,
       gridLines: true,
       gridWidth: inner.w,
     }, theme));
@@ -136,19 +146,6 @@ function fokLineChart(containerSelector, data, options = {}) {
       tickValues: options.xTickValues,
       tickFormat: options.xFormat,
     }, theme));
-
-  // ── Axis labels ──────────────────────────────────────────────────────────
-  if (options.yLabel) {
-    g.append('text')
-      .attr('class', 'fok-axis-label')
-      .attr('x', -margin.left + 4)
-      .attr('y', -10)
-      .attr('text-anchor', 'start')
-      .attr('fill', theme.colors.grey)
-      .attr('font-family', theme.font)
-      .attr('font-size', theme.fontSize.axisLabel)
-      .text(options.yLabel);
-  }
 
   // ── Line/area generators ─────────────────────────────────────────────────
   const lineGen = d3.line()
@@ -193,6 +190,28 @@ function fokLineChart(containerSelector, data, options = {}) {
       .attr('stroke-dasharray', dashed ? '5 4' : null)
       .attr('stroke-linejoin', 'round')
       .attr('stroke-linecap', dashed ? 'butt' : 'round');
+  });
+
+  // ── Direct labels (options.lineLabels) ───────────────────────────────────
+  // { [series]: { x, y, anchor, lines, color } }, x and y in data units: the
+  // last line's baseline sits at (x, y), the others above it. `**…**` in a
+  // line is bold. The white halo keeps a label legible where a line crosses it.
+  Object.entries(options.lineLabels ?? {}).forEach(([key, l]) => {
+    const text = g.append('text')
+      .attr('class', 'fok-line-label')
+      .attr('y', yScale(l.y))
+      .attr('text-anchor', l.anchor ?? 'start')
+      .attr('fill', l.color ?? colorScale(key))
+      .attr('font-family', theme.font)
+      .attr('font-size', theme.fontSize.axisLabel)
+      .attr('stroke', '#fff').attr('stroke-width', 3).attr('paint-order', 'stroke')
+      .attr('pointer-events', 'none');
+    l.lines.forEach((line, i) => {
+      const row = text.append('tspan').attr('x', xScale(l.x))
+        .attr('dy', i ? '1.2em' : `${-1.2 * (l.lines.length - 1)}em`);
+      line.split('**').forEach((part, j) => part && row.append('tspan')
+        .attr('font-weight', j % 2 ? theme.fontWeight.bold : null).text(part));
+    });
   });
 
   // ── Event markers (see fokMarkers) ───────────────────────────────────────
@@ -255,6 +274,12 @@ function fokLineChart(containerSelector, data, options = {}) {
   if (options.legend && options.multi) {
     const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k), dashed: !!options.dashed?.(k) }));
     fokLegend(container, legendItems, {}, theme);
+  }
+
+  // ── Y-axis unit, over the data ────────────────────────────────────────────
+  if (options.yLabel) {
+    fokAxisYLabel(g, yScale, yAxis, options.yLabel,
+      { marginLeft: margin.left, inline: options.yLabelInline }, theme);
   }
 
   return { svg, tip };

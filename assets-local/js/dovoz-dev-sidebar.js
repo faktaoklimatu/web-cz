@@ -46,6 +46,7 @@
     ]],
     ["Podíl na HDP", [
       ["gdpFirst", "Jako první KPI box", "checkbox"],
+      ["colorGdp", "Barva linky ropy a plynu", "color"],
       ["showDefense", "Výdaje na obranu", "checkbox"],
       ["colorDefense", "Barva linky obrany", "color"],
       ["showMsmt", "Výdaje na školství (MŠMT)", "checkbox"],
@@ -64,6 +65,7 @@
       ["ostatni", "Ostatní", "color"],
     ]],
     ["Grafy", [
+      ["kpiUnitInline", "KPI: jednotka za nejvyšším číslem", "checkbox"],
       ["chartHeight", "Výška grafů (px)", "range", 160, 480, 10],
       ["chartFraction", "Šířka grafů ve sloupci (podíl)", "range", 0.3, 1, 0.05],
       ["barPadding", "Mezera mezi sloupci", "range", 0, 0.8, 0.01],

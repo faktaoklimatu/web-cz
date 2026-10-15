@@ -25,6 +25,8 @@
  *   partial    {function}  (row) => true draws that bar hatched in its colour
  *                          at half opacity, e.g. for a part-year
  *   yLabel     {string}    label shown on y-axis
+ *   yLabelInline {boolean}   the unit after the top tick label, not above the axis
+ *   yGridValues  {number[]}  grid lines at these values too, between the labelled ticks
  *   xLabel     {string}    label shown on x-axis
  *   title      {string}    chart title rendered above
  *   yDomain    {[min,max]} override y scale domain
@@ -44,7 +46,7 @@ function fokBarChart(containerSelector, data, options = {}) {
   const margin  = fokMargin(options.margins ?? {}, theme);
   const W       = options.width  ?? 800;
   const H       = options.height ?? 420;
-  const inner   = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const inner   = { h: H - margin.top - margin.bottom };
 
   const xAcc    = options.x     ?? (d => d.label);
   const yAcc    = options.y     ?? (d => d.value);
@@ -81,6 +83,19 @@ function fokBarChart(containerSelector, data, options = {}) {
       .text(options.title);
   }
 
+  // ── Y scale ─────────────────────────────────────────────────────────────
+  // First: the left margin fits its labels, the plot takes the rest.
+  const yScale = !horiz
+    ? d3.scaleLinear().domain([yMin, yMax]).range([inner.h, 0]).nice()
+    : d3.scaleBand().domain(labels).range([0, inner.h])
+      .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
+  const yAxis = !horiz
+    ? { ticks: options.yTicks ?? 6, tickValues: options.yTickValues,
+        tickFormat: options.yFormat ?? (v => fokFormatNumber(v)), gridValues: options.yGridValues }
+    : { tickFormat: options.xFormat };
+  margin.left ??= fokAxisYWidth(yScale, yAxis, theme);
+  inner.w = W - margin.left - margin.right;
+
   // ── SVG scaffold ────────────────────────────────────────────────────────
   const svg = fokResponsiveSVG(container, `0 0 ${W} ${H}`)
     .attr('class', 'fok-chart-svg');
@@ -93,7 +108,7 @@ function fokBarChart(containerSelector, data, options = {}) {
   const barOpacity = d => partialAcc(d._raw) ? 0.5 : 1;
 
   // ── Scales ──────────────────────────────────────────────────────────────
-  let xScale, yScale;
+  let xScale;
 
   if (!horiz) {
     xScale = d3.scaleBand()
@@ -101,23 +116,12 @@ function fokBarChart(containerSelector, data, options = {}) {
       .range([0, inner.w])
       .paddingInner(theme.bar.padding)
       .paddingOuter(theme.bar.padding / 2);
-
-    yScale = d3.scaleLinear()
-      .domain([yMin, yMax])
-      .range([inner.h, 0])
-      .nice();
   } else {
     // Horizontal: x→value, y→category
     xScale = d3.scaleLinear()
       .domain([yMin, yMax])
       .range([0, inner.w])
       .nice();
-
-    yScale = d3.scaleBand()
-      .domain(labels)
-      .range([0, inner.h])
-      .paddingInner(theme.bar.padding)
-      .paddingOuter(theme.bar.padding / 2);
   }
 
   // ── Grid + Axes ──────────────────────────────────────────────────────────
@@ -126,9 +130,7 @@ function fokBarChart(containerSelector, data, options = {}) {
     g.append('g')
       .attr('class', 'fok-axis fok-axis--y')
       .call(fokAxisY(yScale, {
-        ticks:      options.yTicks      ?? 6,
-        tickValues: options.yTickValues,
-        tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
+        ...yAxis,
         gridLines: true,
         gridWidth: inner.w,
       }, theme));
@@ -146,7 +148,7 @@ function fokBarChart(containerSelector, data, options = {}) {
     g.append('g')
       .attr('class', 'fok-axis fok-axis--y')
       .call(fokAxisY(yScale, {
-        tickFormat: options.xFormat,
+        ...yAxis,
         gridLines: false,
       }, theme));
 
@@ -177,30 +179,18 @@ function fokBarChart(containerSelector, data, options = {}) {
   }
 
   // ── Axis labels ──────────────────────────────────────────────────────────
-  if (options.yLabel) {
-    if (!horiz) {
-      // Horizontal label above the top of the y-axis
-      g.append('text')
-        .attr('class', 'fok-axis-label')
-        .attr('x', -margin.left + 4)
-        .attr('y', -10)
-        .attr('text-anchor', 'start')
-        .attr('fill', theme.colors.grey)
-        .attr('font-family', theme.font)
-        .attr('font-size', theme.fontSize.axisLabel)
-        .text(options.yLabel);
-    } else {
-      // Horizontal bar: value axis is x — label below x-axis
-      g.append('text')
-        .attr('class', 'fok-axis-label')
-        .attr('x', inner.w / 2)
-        .attr('y', inner.h + margin.bottom - 4)
-        .attr('text-anchor', 'middle')
-        .attr('fill', theme.colors.grey)
-        .attr('font-family', theme.font)
-        .attr('font-size', theme.fontSize.axisLabel)
-        .text(options.yLabel);
-    }
+  // Horizontal bar: value axis is x — label below x-axis. A vertical chart's
+  // unit is drawn last, by fokAxisYLabel.
+  if (options.yLabel && horiz) {
+    g.append('text')
+      .attr('class', 'fok-axis-label')
+      .attr('x', inner.w / 2)
+      .attr('y', inner.h + margin.bottom - 4)
+      .attr('text-anchor', 'middle')
+      .attr('fill', theme.colors.grey)
+      .attr('font-family', theme.font)
+      .attr('font-size', theme.fontSize.axisLabel)
+      .text(options.yLabel);
   }
 
   if (options.xLabel) {
@@ -292,5 +282,11 @@ function fokBarChart(containerSelector, data, options = {}) {
     });
 
   // Cleanup tooltip when chart is replaced
+  // ── Y-axis unit, over the data ────────────────────────────────────────────
+  if (options.yLabel && !horiz) {
+    fokAxisYLabel(g, yScale, yAxis, options.yLabel,
+      { marginLeft: margin.left, inline: options.yLabelInline }, theme);
+  }
+
   return { svg, tip };
 }
