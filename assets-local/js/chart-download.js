@@ -43,6 +43,7 @@
   // weights the charts actually ask for; see nearestWeight().
   const FONTS = {
     roboto: {
+      300: "/assets-local/fonts/Roboto-300.ttf",
       400: "/assets-local/fonts/Roboto-400.ttf",
       500: "/assets-local/fonts/Roboto-500.ttf",
       600: "/assets-local/fonts/Roboto-600.ttf",
@@ -179,15 +180,19 @@
 
       const font = fonts.byWeight[nearestWeight(fonts.weights, weight)];
       let x = pos.x;
+      const advance = font.getAdvanceWidth(text, fontSize);
       if (anchor === "middle" || anchor === "end") {
-        const advance = font.getAdvanceWidth(text, fontSize);
         x -= anchor === "middle" ? advance / 2 : advance;
       }
       const path = font.getPath(text, x, pos.y, fontSize);
       const el = document.createElementNS(SVG_NS, "path");
       el.setAttribute("d", path.toPathData(2));
       el.setAttribute("fill", fill);
-      return { pos, paths: [el] };
+      // Hand back where this run ends, not where it began: a following tspan
+      // without its own x (a bold word, then the rest of the line) continues
+      // from here, as it does in the browser. Returning the start drew every
+      // run of a mixed-weight line on top of the first.
+      return { pos: { x: x + advance, y: pos.y }, paths: [el] };
     }
 
     const { paths } = draw(textEl, {

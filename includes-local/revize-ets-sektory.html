@@ -1,0 +1,11 @@
+<!-- Rozšíření ETS o další sektory, drawn by assets-local/js/revize-ets-sektory.js.
+     Roboto is self-hosted (assets-local/_roboto.scss), the same files the download outlines. -->
+<style>
+#ets-sektory { position: relative; margin-top: 2rem; font-family: Roboto, system-ui, sans-serif; }
+#ets-sektory svg { display: block; width: 100%; height: auto; }
+#ets-sektory .tip { position: absolute; display: none; pointer-events: none; padding: 8px 12px; background: #fff; border: 1px solid #e8eef6; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1); font-size: 12px; line-height: 1.4; white-space: nowrap; }
+</style>
+
+<div id="ets-sektory"></div>
+{% capture zdroj %}Zdroj: EEA, směrnice o ETS, Transport &amp; Environment, vlastní výpočet{% endcapture %}
+{% include includes-local/chart-foot.html svg="ets-sektory-svg" file="ets-rozsireni-sektoru" source=zdroj %}
