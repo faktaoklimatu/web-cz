@@ -9,7 +9,7 @@ redirect_from:
 published:     2026-09-25
 caption:       "Kolik Česko platí za dovoz ropy a zemního plynu a odkud je dováží?"
 intro: |
-    Tento přehled ukazuje vývoj dovozu fosilních paliv do České republiky v letech 2017–2025. Zaměřuje se na ropu a zemní plyn — jejich objem, cenu a původ.
+    V posledních letech se výrazně měnila cena ropy a zemního plynu na světových trzích, což vedlo k výkyvům nákladů na jejich dovoz do Česka. Po ruské invazi na Ukrajinu vzrostly ceny fosilních paliv (až k vrcholu v roce 2022) a Evropa postupně snižovala jejich dovoz z Ruska. V roce 2026 další cenový šok vyvolala krize v Hormuzském průlivu.
 preview_type: "Interaktivní přehled"
 include_in_search: true
 extra-scripts:
@@ -49,7 +49,7 @@ extra-scripts:
       </div>
       <div class="chart-panel">
         <div class="kpi">
-          <div class="kpi-label">Podíl na HDP Česka</div>
+          <div class="kpi-label">Podíl výdajů na HDP Česka</div>
           <div class="kpi-value" id="kpi-gdp"></div>
         </div>
         <div id="chart-celkem-hdp"></div>
@@ -73,6 +73,7 @@ extra-scripts:
     <div class="fuel-columns">
       <div class="fuel-head">
         <h2 class="fuel-heading">Ropa</h2>
+        <p class="fuel-copy">Ropa je klíčová pro výrobu pohonných hmot, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.</p>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
@@ -130,6 +131,7 @@ extra-scripts:
 
       <div class="fuel-head">
         <h2 class="fuel-heading">Zemní plyn</h2>
+        <p class="fuel-copy">Zemní plyn je zásadní zdroj tepla v budovách a průmyslu (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.</p>
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">

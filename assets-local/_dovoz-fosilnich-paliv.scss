@@ -97,14 +97,9 @@ body.dovoz-fosilnich-paliv {
         margin-top: 24px;
     }
 
-    /* The fuel's name, and beside it the span selector: every chart, the
-       long-term ones, or the latest 36 months'. */
+    /* The fuel's name and its intro: one grid item, so the column stays
+       thirteen children and both intros share a row. */
     .fuel-head {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 8px 16px;
         margin-bottom: 12px;
 
         .fuel-heading {
