@@ -9,5 +9,7 @@
 <div class="ets-strop-graf">
 <div id="ets-strop" data-src="/assets-local/files/revize-ets/emisni-strop.csv"></div>
 {% capture zdroj %}Zdroj: <a href="https://ec.europa.eu/commission/presscorner/detail/cs/ip_26_1596">Návrh revize směrnice o EU ETS</a>, Evropská komise, vlastní výpočet{% endcapture %}
-{% include includes-local/chart-foot.html svg="ets-strop-svg" file="ets-emisni-strop" source=zdroj %}
+{% include includes-local/chart-foot.html
+   title="Jak má vypadat budoucí emisní strop v EU ETS?"
+   svg="ets-strop-svg" file="ets-emisni-strop" source=zdroj %}
 </div>

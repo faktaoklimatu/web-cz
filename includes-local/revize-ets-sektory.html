@@ -8,4 +8,6 @@
 
 <div id="ets-sektory"></div>
 {% capture zdroj %}Zdroj: EEA, <a href="https://ec.europa.eu/commission/presscorner/detail/cs/ip_26_1596">Návrh revize směrnice o EU ETS</a>, <a href="https://www.transportenvironment.org/articles/eu-takes-half-hearted-step-towards-taxing-international-flights">Transport &amp; Environment</a>, vlastní výpočet{% endcapture %}
-{% include includes-local/chart-foot.html svg="ets-sektory-svg" file="ets-rozsireni-sektoru" source=zdroj %}
+{% include includes-local/chart-foot.html
+   title="Podíl emisí EU pokrytý EU ETS"
+   svg="ets-sektory-svg" file="ets-rozsireni-sektoru" source=zdroj %}

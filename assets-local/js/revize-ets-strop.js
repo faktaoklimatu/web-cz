@@ -131,6 +131,7 @@
       else runs.push({ lrf: r.lrf_navrh, from: r.rok, to: r.rok });
     });
     const ry = top + rulerY;
+    let phaseVLabel;   // the first phase V value, which the note below lines up with
     runs.forEach((run, i) => {
       const x0 = x(run.from - 0.5), x1 = x(run.to + 0.5), v = run.from >= PHASE_V;
       const color = v ? C.navrh : C.soucasna;
@@ -138,20 +139,21 @@
       const ticks = i === runs.length - 1 ? [x0, x1] : [x0];
       ticks.forEach(tx => g.append("line").attr("x1", tx).attr("x2", tx).attr("y1", ry - 5).attr("y2", ry + 5)
         .attr("stroke", color).attr("stroke-width", 1.5));
-      g.append("text").attr("x", (x0 + x1) / 2).attr("text-anchor", "middle").attr("y", ry - 9)
+      const label = g.append("text").attr("x", (x0 + x1) / 2).attr("text-anchor", "middle").attr("y", ry - 9)
         .attr("fill", v ? C.navrh : C.text).attr("font-weight", v ? 700 : null).text(pct(run.lrf));
+      if (v && !phaseVLabel) phaseVLabel = label;
     });
 
-    // What the LRF becomes without credits, under the band's last cell: three set
-    // lines on desktop, free wrapping on a phone; on a white box so the grid does
-    // not run through the text.
+    // What the LRF becomes without credits, just under the ruler and flush with
+    // the first phase V value: three set lines on desktop, free wrapping on a
+    // phone; on a white box so the grid does not run through the text.
     const alt = rows.find(r => r.lrf_bez_kreditu !== r.lrf_navrh);
     if (alt) {
-      const nx = x(alt.rok - 0.5) + 6;
+      const nx = phaseVLabel.node().getBBox().x;
       const bold = pct(alt.lrf_bez_kreditu) + ",";
       const set = [`${bold} pokud by po roce ${alt.rok}`, "nebyly k dispozici dostatečně", "kvalitní mezinárodní kredity"];
       const lines = narrow ? wrapLines(g, words(set.join(" ")), W - nx, fs, { italic: true }) : set;
-      const t = g.append("text").attr("x", nx).attr("y", fs + 4).attr("fill", C.bez).attr("font-style", "italic");
+      const t = g.append("text").attr("x", nx).attr("y", ry + 14 + fs).attr("fill", C.bez).attr("font-style", "italic");
       lines.forEach((line, i) => {
         const ts = t.append("tspan").attr("x", nx).attr("dy", i ? "1.25em" : 0);
         if (i === 0 && line.startsWith(bold)) {
