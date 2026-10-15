@@ -1,0 +1,13 @@
+<!-- Emisní strop 2021–2050, drawn by assets-local/js/revize-ets-strop.js.
+     Roboto is self-hosted (assets-local/_roboto.scss), the same files the download outlines. -->
+<style>
+#ets-strop { position: relative; margin-top: 2rem; font-family: Roboto, system-ui, sans-serif; }
+#ets-strop svg { display: block; width: 100%; height: auto; }
+#ets-strop .tip { position: absolute; display: none; pointer-events: none; padding: 8px 12px; background: #fff; border: 1px solid #e8eef6; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1); font-size: 12px; line-height: 1.4; white-space: nowrap; }
+</style>
+
+<div class="ets-strop-graf">
+<div id="ets-strop" data-src="/assets-local/files/revize-ets/emisni-strop.csv"></div>
+{% capture zdroj %}Zdroj: <a href="https://ec.europa.eu/commission/presscorner/detail/cs/ip_26_1596">Evropská komise</a>, vlastní výpočet{% endcapture %}
+{% include includes-local/chart-foot.html svg="ets-strop-svg" file="ets-emisni-strop" source=zdroj %}
+</div>
