@@ -75,6 +75,12 @@ body.dovoz-fosilnich-paliv {
             grid-row: 2;
         }
 
+        /* No legend above it: the chart takes the legend row as well, and
+           levelKpi draws it that much taller. */
+        .fok-chart-svg:first-child {
+            grid-row: 1 / span 2;
+        }
+
         /* A one-line legend in a row a two-line one sets: at the top, not
            spread down it. */
         .fok-legend {

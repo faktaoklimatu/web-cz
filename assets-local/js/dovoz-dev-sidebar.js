@@ -68,6 +68,7 @@
     ["Grafy", [
       ["kpiUnitInline", "KPI: jednotka za nejvyšším číslem", "checkbox"],
       ["chartHeight", "Výška grafů (px)", "range", 160, 480, 10],
+      ["kpiPlotHeight", "Výška grafu v KPI, bez okrajů (px)", "range", 120, 480, 2],
       ["chartFraction", "Šířka grafů ve sloupci (podíl)", "range", 0.3, 1, 0.05],
       ["barPadding", "Mezera mezi sloupci", "range", 0, 0.8, 0.01],
       ["lineWidth", "Tloušťka čáry", "range", 0.5, 6, 0.5],

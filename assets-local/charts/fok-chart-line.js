@@ -196,24 +196,9 @@ function fokLineChart(containerSelector, data, options = {}) {
 
   // ── Direct labels (options.lineLabels) ───────────────────────────────────
   // { [series]: { x, y, anchor, lines, color } }, x and y in data units: the
-  // last line's baseline sits at (x, y), the others above it. `**…**` in a
-  // line is bold. The white halo keeps a label legible where a line crosses it.
+  // last line's baseline sits at (x, y), the others above it (see fokLabel).
   Object.entries(options.lineLabels ?? {}).forEach(([key, l]) => {
-    const text = g.append('text')
-      .attr('class', 'fok-line-label')
-      .attr('y', yScale(l.y))
-      .attr('text-anchor', l.anchor ?? 'start')
-      .attr('fill', l.color ?? colorScale(key))
-      .attr('font-family', theme.font)
-      .attr('font-size', theme.fontSize.axisLabel)
-      .attr('stroke', '#fff').attr('stroke-width', 3).attr('paint-order', 'stroke')
-      .attr('pointer-events', 'none');
-    l.lines.forEach((line, i) => {
-      const row = text.append('tspan').attr('x', xScale(l.x))
-        .attr('dy', i ? '1.2em' : `${-1.2 * (l.lines.length - 1)}em`);
-      line.split('**').forEach((part, j) => part && row.append('tspan')
-        .attr('font-weight', j % 2 ? theme.fontWeight.bold : null).text(part));
-    });
+    fokLabel(g, xScale(l.x), yScale(l.y), { color: colorScale(key), ...l }, theme);
   });
 
   // ── Event markers (see fokMarkers) ───────────────────────────────────────

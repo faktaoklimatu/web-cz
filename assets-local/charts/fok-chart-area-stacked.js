@@ -38,6 +38,7 @@
  *   yLabelInline  {boolean}   the unit after the top tick label, not above the axis
  *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
  *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
+ *   bandLabels    {object}    labels on the bands by key: { x, y, at, dx, dy, lines, valign, color }
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
  *   tooltipHtml   {function}  (row) => HTML string shown on hover
@@ -238,6 +239,21 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     });
   }
 
+  // ── Band labels (options.bandLabels) ─────────────────────────────────────
+  // { [key]: { x, y, at, dx, dy, lines, valign, … } }: by default the band's
+  // name at its first point, centred in its thickness there. x and y (data
+  // units) move it; without y, `at: 'top'` / 'bottom' takes that edge of the
+  // band at x instead of its middle. dx, dy nudge it in px. Drawn by fokLabel,
+  // so `**…**` is bold and valign sets what y is.
+  Object.entries(options.bandLabels ?? {}).forEach(([key, l]) => {
+    const s = series.find(s => s.key === key);
+    if (!s) return;
+    const i = l.x == null ? 0 : d3.minIndex(xVals, v => Math.abs(v - l.x));
+    const edge = { top: s[i][1], bottom: s[i][0] }[l.at] ?? (s[i][0] + s[i][1]) / 2;
+    fokLabel(g, xScale(l.x ?? xVals[0]) + (l.dx ?? 0), yScale(l.y ?? edge) + (l.dy ?? 0),
+      { lines: [labels[key] ?? key], valign: 'middle', ...l }, theme);
+  });
+
   // ── Event markers (see fokMarkers) ───────────────────────────────────────
   fokMarkers(g, options.markers, m => xScale(m.x), inner, theme);
 
@@ -253,5 +269,6 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
       { marginLeft: margin.left, inline: options.yLabelInline }, theme);
   }
 
-  return { svg, tip };
+  // The plot group and scales too, for whatever a page draws over the chart.
+  return { svg, tip, g, xScale, yScale };
 }

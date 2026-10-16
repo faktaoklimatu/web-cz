@@ -301,7 +301,9 @@ function fokMarkers(g, markers, xOf, inner, theme = FoKTheme) {
  * @param {number} [options.radius]          — swatch corner radius, px (CSS default 2)
  * @param {function}[options.labelColor]     — item → label colour (default theme grey)
  * @param {string} [options.position='bottom'] — 'top': before the chart's SVG
- * @param {number} [options.itemSpacing=20]  — spacing between legend items
+ * @param {number} [options.itemSpacing]     — spacing between legend items, px (CSS default 16)
+ * @param {number} [options.fontSize]        — label size, px (default theme axisLabel)
+ * @param {string} [options.justify]         — CSS justify-content of the row, e.g. 'space-between'
  * @param {object} [theme]
  */
 function fokLegend(container, items, options = {}, theme = FoKTheme) {
@@ -309,10 +311,11 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
   const direction    = options.direction    ?? 'horizontal';
   const swatchSize   = options.swatchSize   ?? 12;
   const gap          = options.gap          ?? 14;
-  const itemSpacing  = options.itemSpacing  ?? 20;
 
   const legendEl = (options.position === 'top' ? sel.insert('div', ':scope > svg') : sel.append('div'))
-    .attr('class', `fok-legend fok-legend--${direction} fok-legend--${options.position ?? 'bottom'}`);
+    .attr('class', `fok-legend fok-legend--${direction} fok-legend--${options.position ?? 'bottom'}`)
+    .style('column-gap', options.itemSpacing != null ? options.itemSpacing + 'px' : null)
+    .style('justify-content', options.justify ?? null);
 
   items.forEach(item => {
     const itemEl = legendEl.append('div').attr('class', 'fok-legend__item');
@@ -329,11 +332,88 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
     itemEl.append('span')
       .attr('class', 'fok-legend__label')
       .style('font-family', theme.font)
-      .style('font-size', theme.fontSize.axisLabel + 'px')
+      .style('font-size', (options.fontSize ?? theme.fontSize.axisLabel) + 'px')
       .style('color', options.labelColor ? options.labelColor(item) : theme.colors.grey)
       .style('margin-left', gap + 'px')
       .text(item.label);
   });
+}
+
+/**
+ * A text label at (x, y), px in `g`: one or more lines, `**…**` in a line bold.
+ * `valign` puts y at the last line's baseline, the others stacked above it
+ * ('baseline', the default); at the block's middle ('middle'); or at the first
+ * line's cap height ('top'). A white halo keeps it legible where a line
+ * crosses it, unless `halo: false` (a label on a filled band).
+ *
+ * @param {d3.Selection} g
+ * @param {number} x
+ * @param {number} y
+ * @param {object} l — { lines, anchor = 'start', valign = 'baseline', color, halo = true }
+ * @param {object} [theme]
+ */
+function fokLabel(g, x, y, l, theme = FoKTheme) {
+  const n = l.lines.length;
+  const text = g.append('text')
+    .attr('class', 'fok-label')
+    .attr('y', y)
+    .attr('text-anchor', l.anchor ?? 'start')
+    .attr('fill', l.color ?? theme.colors.grey)
+    .attr('font-family', theme.font)
+    .attr('font-size', theme.fontSize.axisLabel)
+    .attr('pointer-events', 'none');
+  if (l.halo !== false) {
+    text.attr('stroke', '#fff').attr('stroke-width', 3).attr('paint-order', 'stroke')
+      .attr('stroke-linejoin', 'round');   // no spikes at the letters' corners
+  }
+  l.lines.forEach((line, i) => {
+    const row = text.append('tspan').attr('x', x)
+      .attr('dy', i ? '1.2em' : {
+        middle: `${0.35 - 0.6 * (n - 1)}em`,
+        top: '0.71em',   // Roboto's cap height
+      }[l.valign] ?? `${-1.2 * (n - 1)}em`);
+    line.split('**').forEach((part, j) => part && row.append('tspan')
+      .attr('font-weight', j % 2 ? theme.fontWeight.bold : null).text(part));
+  });
+}
+
+/**
+ * A legend drawn into the SVG, one item a row, on a box in the panel's colour:
+ * for a legend laid over an empty corner of the plot rather than beside it.
+ * Square swatches; the label `gap` (default a third of a swatch) to the right.
+ *
+ * @param {d3.Selection} g     — the plot group
+ * @param {Array<{label: string, color: string}>} items — top row first
+ * @param {object} [options]   — x, y: the box's top-left corner, px in `g`
+ *   (its top-right one with `align: 'right'`); swatchSize (12), gap,
+ *   rowGap (6), padding (6), background ('#fff'), labelColor (item → colour;
+ *   default theme grey)
+ * @param {object} [theme]
+ */
+function fokLegendSvg(g, items, options = {}, theme = FoKTheme) {
+  const size = options.swatchSize ?? 12;
+  const gap  = options.gap ?? size / 3;
+  const pad  = options.padding ?? 6;
+  const box  = g.append('g').attr('class', 'fok-legend-svg').attr('pointer-events', 'none')
+    .attr('transform', `translate(${options.x ?? 0},${options.y ?? 0})`);
+  const bg   = box.append('rect').attr('fill', options.background ?? '#fff');
+  const rows = box.append('g');
+  items.forEach((item, i) => {
+    const row = rows.append('g').attr('transform', `translate(${pad},${pad + i * (size + (options.rowGap ?? 6))})`);
+    row.append('rect').attr('width', size).attr('height', size).attr('fill', item.color);
+    row.append('text')
+      .attr('x', size + gap).attr('y', size / 2).attr('dy', '0.35em')
+      .attr('fill', options.labelColor ? options.labelColor(item) : theme.colors.grey)
+      .attr('font-family', theme.font)
+      .attr('font-size', theme.fontSize.axisLabel)
+      .text(item.label);
+  });
+  const b = rows.node().getBBox();
+  const w = b.x + b.width + pad;
+  bg.attr('width', w).attr('height', b.y + b.height + pad);
+  if (options.align === 'right') {
+    box.attr('transform', `translate(${(options.x ?? 0) - w},${options.y ?? 0})`);
+  }
 }
 
 // ---------------------------------------------------------------------------

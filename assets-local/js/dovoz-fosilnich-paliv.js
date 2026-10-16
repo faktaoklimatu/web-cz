@@ -42,7 +42,8 @@ window.DOVOZ_CFG = {
   usa: '#92cbc1',
   nemecko: '#8aa0b5',
   ostatni: '#c7ccd1',
-  chartHeight: 260,        // px, every chart
+  chartHeight: 260,        // px, every chart but the KPI row's
+  kpiPlotHeight: 254,      // px, the KPI charts' plot alone, margins aside (1.2 × the 212 it was)
   chartFraction: 0.75,     // fuel columns, desktop: a chart's share of its column's width
   fuelBoxed: false,        // fuel columns drawn as boxes
   fuelBoxColored: false,   // …with the border in the fuel's colour
@@ -1347,19 +1348,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // its swatch's colour (darkened where it would not read on white) and a
     // third of a swatch away from it.
     const kpiLegend = { position: 'top', radius: 0, gap: 12 / 3, labelColor: it => readable(it.color) };
+    // Above a KPI chart's plot as much white as under its year labels: 20 px
+    // of margin less the top label's upper half (~5 px) plus the card's 16 px
+    // rule gap, against the 40 px bottom margin less the labels (~25 px) plus
+    // the card's 16 px padding — about 31 px each.
+    const kpiMargins = { top: 20 };
+    const kpiHeight = (grow = kpiGrow) => kpiMargins.top + CFG.kpiPlotHeight + theme.margins.bottom + grow;
+    // A KPI chart with no legend above it (spending, GDP) takes that row as
+    // well: it is drawn this much taller, the height of the legend row the
+    // other cards share — measured after each draw, see levelKpi.
+    let kpiGrow = 0;
 
     const charts = () => [
-      ['#chart-celkem-czk', w => fokBarChartStacked('#chart-celkem-czk',
-        payments.map(d => ({ year: String(d.year), ropa: d.ropa_czk_mld, plyn: d.plyn_czk_mld })), {
+      ['#chart-celkem-czk', w => {
+        const chart = fokBarChartStacked('#chart-celkem-czk',
+          payments.map(d => ({ year: String(d.year), ropa: d.ropa_czk_mld, plyn: d.plyn_czk_mld })), {
           x: d => d.year,
           keys: ['ropa', 'plyn'],
           colors: { ropa: CFG.colorRopa, plyn: CFG.colorPlyn },
           labels: { ropa: 'Ropa', plyn: 'Zemní plyn' },
           yLabel: 'mld. Kč', yLabelInline: CFG.kpiUnitInline,
-          width: w, height: CFG.chartHeight, theme,
+          width: w, height: kpiHeight(), theme, margins: kpiMargins,
           xTickValues: xTicks.map(String),
           yMax: 400, yTickValues: d3.range(0, 401, 100), yGridValues: d3.range(0, 401, 50),
-          legendOptions: kpiLegend,
+          legend: false,
           yFormat: v => fokFormatNumber(v, 0),
           // The whole year whichever band is hovered: the sum, then the two
           // fuels in stack order, top first.
@@ -1367,7 +1379,19 @@ document.addEventListener('DOMContentLoaded', () => {
             + `<div style="font-family:${theme.font};font-weight:700">Celkem: ${czkMld(raw.ropa + raw.plyn)}</div>`
             + [['plyn', 'Zemní plyn', CFG.colorPlyn], ['ropa', 'Ropa', CFG.colorRopa]].map(([k, label, color]) =>
                 `<span style="color:${color}">■</span> ` + plain(`${label}: ${czkMld(raw[k])}`)).join('<br>'),
-        })],
+        });
+        // The legend over the plot's empty top left, its corner at 320 mld. Kč
+        // and 2017.3 (a year a band), plyn over ropa as they stack.
+        const x = chart.xScale, year = 2017.3;
+        fokLegendSvg(chart.g, [
+          { label: 'Zemní plyn', color: CFG.colorPlyn },
+          { label: 'Ropa', color: CFG.colorRopa },
+        ], {
+          x: x(String(Math.floor(year))) + x.bandwidth() / 2 + (year % 1) * x.step(),
+          y: chart.yScale(320), labelColor: kpiLegend.labelColor,
+        }, theme);
+        return chart;
+      }],
 
       ['#chart-celkem-hdp', w => {
         // Comparisons switched on in the sidebar join as faint lines for scale —
@@ -1384,8 +1408,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // left, SFDI under its line on the right (above it runs the imports').
         // x in years, y in % HDP: the last row's baseline. Defence has none.
         const lineLabels = {
-          'Ropa a zemní plyn': { x: 2022.3, y: 4.55, lines: ['**Ropa a zemní plyn**'] },
-          'Výdaje na školství (rozpočet MŠMT)': { x: 2017, y: 4.0, lines: ['Výdaje na školství'] },
+          'Ropa a zemní plyn': { x: 2022.3, y: 4.55, lines: ['**Ropa**', '**a zemní plyn**'] },
+          'Výdaje na školství (rozpočet MŠMT)': { x: 2017, y: 4.0, lines: ['Výdaje', 'na školství'] },
           'Výdaje na dopravní infrastrukturu (rozpočet SFDI)':
             { x: 2025, y: 0.92, anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
         };
@@ -1396,7 +1420,7 @@ document.addEventListener('DOMContentLoaded', () => {
             lineLabels: Object.fromEntries(lines.filter(([series]) => lineLabels[series])
               .map(([series, , color]) => [series, { ...lineLabels[series], color: readable(color) }])),
             yLabel: '% HDP', yLabelInline: CFG.kpiUnitInline,
-            width: w, height: CFG.chartHeight,
+            width: w, height: kpiHeight(), margins: kpiMargins,
             theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
             xTickValues: xTicks, xFormat: String,
             yDomain: [0, 5], yTickValues: d3.range(0, 6), yFormat: v => fokFormatNumber(v, 0),
@@ -1407,9 +1431,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // The series peaks just under 700 PJ (2019), so the axis runs to 800:
       // labels every 200, grid every 100.
+      // All five countries in one line above the chart, at 11 px: their
+      // swatches and names take ~299 of the card's 321 px, so the items spread
+      // over the full width (at least 4 px apart) and wrap only on a narrower
+      // card. With a legend this chart keeps its height; the other two grow
+      // into its row (levelKpi).
       ['#chart-celkem-energie', energy('#chart-celkem-energie', energie, FOSIL, {
         yMax: 800, yTickValues: d3.range(0, 801, 200), yGridValues: d3.range(0, 801, 100),
-        yLabelInline: CFG.kpiUnitInline, legendOptions: kpiLegend,
+        yLabelInline: CFG.kpiUnitInline, margins: kpiMargins, height: kpiHeight(0),
+        legendOptions: { ...kpiLegend, fontSize: 11, itemSpacing: 4, justify: 'space-between' },
       })],
 
       ['#chart-ropa-czk',     money('#chart-ropa-czk', ropa.czk, CFG.colorRopa)],
@@ -1434,6 +1464,25 @@ document.addEventListener('DOMContentLoaded', () => {
       ['#chart-tool-tiles',   toolTiles],
       ['#mapa-ropy',          drawMap],
     ];
+
+    // The KPI cards share their rows (subgrid, see #main-charts in the SCSS); a
+    // chart with no legend above it spans the legend row and its own. Drawn at
+    // the legend row's height more, its time axis stays level with the
+    // others'. The legend is measured, not its row, which the taller chart
+    // could itself have stretched. Stacked on a phone, a card has no legend
+    // row to take. Redraws only when the height has changed.
+    const levelKpi = () => {
+      const boxes = ['#chart-celkem-czk', '#chart-celkem-hdp', '#chart-celkem-energie']
+        .map(sel => document.querySelector(sel));
+      const sameRow = new Set(boxes.map(b => Math.round(b.getBoundingClientRect().top))).size === 1;
+      const legends = boxes.map(b => b.querySelector(':scope > .fok-legend')).filter(Boolean);
+      const grow = sameRow ? Math.round(d3.max(legends, l =>
+        l.getBoundingClientRect().height + parseFloat(getComputedStyle(l).marginBottom)) ?? 0) : 0;
+      if (grow === kpiGrow) return;
+      kpiGrow = grow;
+      charts().filter(([sel]) => sel === '#chart-celkem-czk' || sel === '#chart-celkem-hdp')
+        .forEach(([sel, draw]) => draw(Math.round(document.querySelector(sel).getBoundingClientRect().width)));
+    };
 
     const drawAll = () => {
       theme = makeTheme();
@@ -1460,6 +1509,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const w = Math.round(document.querySelector(sel).getBoundingClientRect().width);
         if (w > 0) draw(w);
       });
+      levelKpi();
     };
     window.DOVOZ_REDRAW = drawAll;
     // The collapsed map has no width, so drawAll skips it; draw it once opened.
@@ -1468,6 +1518,9 @@ document.addEventListener('DOMContentLoaded', () => {
     drawAll();
     // The left margins are measured in Roboto: once it loads, again.
     document.fonts.ready.then(drawAll);
+    // A font arriving after the last draw can rewrap a KPI legend; the row's
+    // size changes with it, and levelKpi follows.
+    new ResizeObserver(levelKpi).observe(document.getElementById('main-charts'));
     worldReady.then(features => { world = features; drawAll(); })
       .catch(err => console.error('dovoz: map failed to load', err));
 

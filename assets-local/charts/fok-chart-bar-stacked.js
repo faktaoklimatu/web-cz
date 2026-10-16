@@ -290,5 +290,6 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
       { marginLeft: margin.left, inline: options.yLabelInline }, theme);
   }
 
-  return { svg, tip };
+  // The plot group and scales too, for whatever a page draws over the chart.
+  return { svg, tip, g, xScale, yScale };
 }

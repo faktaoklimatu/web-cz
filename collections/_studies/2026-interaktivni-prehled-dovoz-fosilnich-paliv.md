@@ -77,7 +77,7 @@ extra-scripts:
         <h2 class="fuel-heading">Ropa</h2>
         <div class="fuel-intro" markdown="1">
 
-Ropa je klíčová pro výrobu pohonných hmot, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
+**Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
 
 </div>
       </div>
@@ -133,7 +133,7 @@ Ropa je klíčová pro výrobu pohonných hmot, dále pak jako surovina pro chem
         <h2 class="fuel-heading">Zemní plyn</h2>
         <div class="fuel-intro" markdown="1">
 
-Zemní plyn je zásadní zdroj tepla v budovách a průmyslu (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
+**Zemní plyn je zásadní zdroj tepla v budovách a průmyslu** (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
 
 </div>
       </div>
