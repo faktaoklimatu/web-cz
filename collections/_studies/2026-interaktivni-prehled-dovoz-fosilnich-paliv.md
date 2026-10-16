@@ -21,7 +21,6 @@ extra-scripts:
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script src="/assets-local/charts/fok-theme.js"></script>
 <script src="/assets-local/charts/fok-utils.js"></script>
 <script src="/assets-local/charts/fok-chart-line.js"></script>
@@ -196,7 +195,8 @@ extra-scripts:
 
     {% comment %} Interaktivní graf: ovládání nastavuje TOOL v dovoz-fosilnich-paliv.js,
     stahování obstarává chart-download.js podle data-* atributů tlačítek. Rozbalovací
-    jako mapa níže; sbalený se nekreslí, po rozbalení ho překreslí DOVOZ_REDRAW. {% endcomment %}
+    jako expander.html z web-core; sbalený se nekreslí, po rozbalení ho překreslí
+    DOVOZ_REDRAW. {% endcomment %}
     <div class="tool">
       <a class="expander collapsed" data-toggle="collapse" data-target="#nastroj-collapse" aria-expanded="false" aria-controls="nastroj-collapse">
         <div class="expander-button"><i class="fas fa-chevron-down"></i></div>
@@ -268,48 +268,5 @@ extra-scripts:
       </div>
       </div>
     </div>
-
-    {% comment %} Mapa tras ropy: ropovody a pásy podle dovozu, kreslí ji
-    drawMap v dovoz-fosilnich-paliv.js. Rozbalovací jako expander.html z web-core;
-    sbalená se nekreslí, po rozbalení ji překreslí DOVOZ_REDRAW. {% endcomment %}
-    <div class="route-map">
-      <a class="expander collapsed" data-toggle="collapse" data-target="#mapa-collapse" aria-expanded="false" aria-controls="mapa-collapse">
-        <div class="expander-button"><i class="fas fa-chevron-down"></i></div>
-        <h2 class="fuel-heading">Kudy ropa do Česka přichází</h2>
-      </a>
-      <div class="collapse" id="mapa-collapse">
-      <div class="tool-controls">
-        <div class="control-group control-group--years">
-          <div class="control-head">
-            <span class="control-label">Rok</span>
-            <output class="control-value" id="mapa-rok-value"></output>
-          </div>
-          <span class="dual-range">
-            <span class="range-fill"></span>
-            <input type="range" id="mapa-rok" aria-label="Rok">
-          </span>
-        </div>
-        <div class="control-group">
-          <span class="control-label">Po měsících</span>
-          <div class="seg-buttons">
-            <button type="button" id="mapa-play" aria-pressed="false">▶ Přehrát rok</button>
-            <button type="button" id="mapa-play-all" aria-pressed="false">▶ 2012–2025</button>
-          </div>
-        </div>
-        <div class="control-group">
-          <span class="control-label">Výdaje</span>
-          <label class="chart-toggle"><input type="checkbox" id="mapa-vydaje" autocomplete="off"> ukázat výdaje</label>
-        </div>
-      </div>
-      <div class="chart-panel">
-        <h3 class="chart-title" id="mapa-ropy-title"></h3>
-        <div id="mapa-ropy"></div>
-        <p class="chart-note">Šířka pásu odpovídá množství ropy dovezené z dané země za rok; při přehrávání po měsících ukazuje měsíční dovoz přepočtený na rok a čísla i čtverečky výdajů (1 čtvereček = 5 mld. Kč) se načítají od začátku přehrávání. Do Česka vedou dva ropovody: Družba, kterou do dubna 2025 přitékala ruská ropa, a IKL z Ingolstadtu, který ropovod TAL spojuje s přístavem Terst. Ropa z ostatních zemí do Terstu připlouvá tankery. Trasy jsou zjednodušené — statistika uvádí zemi původu, ne cestu.</p>
-        <div class="chart-foot">
-          <span>Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie přepočtena výhřevností. Mapa: Natural Earth.</span>
-        </div>
-      </div>
-    </div>
-      </div>
   </div>
 </div>

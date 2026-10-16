@@ -381,8 +381,7 @@ body.dovoz-fosilnich-paliv {
     .chart-panel,
     .fuel-figure,
     .span-select,
-    .tool,
-    .route-map {
+    .tool {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     }
 
@@ -455,15 +454,12 @@ body.dovoz-fosilnich-paliv {
        chart in a panel with its title, summary, source and downloads — the
        same pieces, in the same order, as the ETS overview's panels, so
        chart-download.js reads the same data-* attributes. */
-    .tool,
-    .route-map {
+    .tool {
         margin-top: 56px;
     }
 
-    /* The explorer's and the map's headings are the expander links that
-       open them. */
-    .tool a.expander,
-    .route-map a.expander {
+    /* The explorer's heading is the expander link that opens it. */
+    .tool a.expander {
         align-items: center;
         cursor: pointer;
 
@@ -472,8 +468,7 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
-    #nastroj-collapse > .tool-controls,
-    #mapa-collapse > .tool-controls {
+    #nastroj-collapse > .tool-controls {
         margin-top: 16px;
     }
 
@@ -661,39 +656,6 @@ body.dovoz-fosilnich-paliv {
             box-shadow: 0 0 0 1px #cbd5e0;
             cursor: pointer;
             pointer-events: auto;
-        }
-    }
-
-    /* The route map's suppliers on a phone, under the map rather than on it
-       (drawMap): a name in its colour, the numbers in grey, and with "výdaje"
-       the squares in rows of ten. */
-    .route-list {
-        margin: 8px 0 0;
-        padding: 0;
-        list-style: none;
-        font-size: var(--dovoz-note-size);
-
-        li {
-            margin: 4px 0;
-        }
-
-        span {
-            color: #53616e;
-        }
-    }
-
-    .route-squares {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        gap: 1px;
-        width: 59px;
-        margin-top: 2px;
-
-        i {
-            width: 5px;
-            height: 5px;
-            background: currentColor;
         }
     }
 
