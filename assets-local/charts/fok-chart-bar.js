@@ -90,11 +90,13 @@ function fokBarChart(containerSelector, data, options = {}) {
   }
 
   // ── Y scale ─────────────────────────────────────────────────────────────
-  // First: the left margin fits its labels, the plot takes the rest.
+  // First: the left margin fits its labels, the plot takes the rest. A domain
+  // given is kept as it is; one taken from the data is rounded out.
   const yScale = !horiz
-    ? d3.scaleLinear().domain([yMin, yMax]).range([inner.h, 0]).nice()
+    ? d3.scaleLinear().domain([yMin, yMax]).range([inner.h, 0])
     : d3.scaleBand().domain(labels).range([0, inner.h])
       .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
+  if (!horiz && !options.yDomain) yScale.nice();
   const yAxis = !horiz
     ? { ticks: options.yTicks ?? 6, tickValues: options.yTickValues,
         tickFormat: options.yFormat ?? (v => fokFormatNumber(v)), gridValues: options.yGridValues }
@@ -311,5 +313,6 @@ function fokBarChart(containerSelector, data, options = {}) {
     fokFitTop(svg, g, margin, W, H);
   }
 
-  return { svg, tip };
+  // The plot group and scales too, for whatever a page draws over the chart.
+  return { svg, tip, g, xScale, yScale };
 }

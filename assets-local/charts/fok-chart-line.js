@@ -46,6 +46,8 @@
  *   markers     {object[]}  events: { x, label } — a dashed vertical line, label above the plot
  *   dashed      {function}  (seriesKey) => true draws that series dashed and a little
  *                           thinner — for references and projections, per the guidelines
+ *   partialAfter {number|Date} every line dashed past this x, as dashed series are:
+ *                           the run into a part-period (a year not yet complete)
  *   tooltipHtml {function}  (d) => HTML string for hovered point tooltip
  *   width       {number}    viewBox width  (default 800)
  *   height      {number}    viewBox height (default 420)
@@ -84,10 +86,11 @@ function fokLineChart(containerSelector, data, options = {}) {
   const yMax    = options.yDomain ? options.yDomain[1] : d3.max(yAll);
 
   // The y scale first: the left margin fits its labels, the plot takes the rest.
+  // A domain given is kept as it is; one taken from the data is rounded out.
   const yScale = d3.scaleLinear()
     .domain([yMin, yMax])
-    .range([inner.h, 0])
-    .nice();
+    .range([inner.h, 0]);
+  if (!options.yDomain) yScale.nice();
   const yAxis = {
     ticks:      options.yTicks      ?? 6,
     tickValues: options.yTickValues,
@@ -150,10 +153,16 @@ function fokLineChart(containerSelector, data, options = {}) {
     }, theme));
 
   // ── Line/area generators ─────────────────────────────────────────────────
-  const lineGen = d3.line()
+  const known = d => d._y != null && !isNaN(d._y);
+  const lineOf = defined => d3.line()
     .x(d => xScale(d._x))
     .y(d => yScale(d._y))
-    .defined(d => d._y != null && !isNaN(d._y));
+    .defined(defined);
+  const lineGen = lineOf(known);
+  // With partialAfter, a line in two: solid up to that x, dashed from it on.
+  const after = options.partialAfter;
+  const upTo = after == null ? lineGen : lineOf(d => known(d) && d._x <= after);
+  const past = after == null ? null : lineOf(d => known(d) && d._x >= after);
 
   const areaGen = d3.area()
     .x(d => xScale(d._x))
@@ -182,16 +191,19 @@ function fokLineChart(containerSelector, data, options = {}) {
     }
 
     const dashed = options.dashed?.(key);
-    seriesG.append('path')
+    const drawLine = (gen, dash) => seriesG.append('path')
       .datum(pts)
       .attr('class', 'fok-line')
-      .attr('d', lineGen)
+      .attr('d', gen)
       .attr('fill', 'none')
       .attr('stroke', color)
-      .attr('stroke-width', theme.line.strokeWidth * (dashed ? 0.75 : 1))
-      .attr('stroke-dasharray', dashed ? options.dashArray ?? '5 4' : null)
+      .attr('stroke-width', theme.line.strokeWidth * (dash ? 0.75 : 1))
+      .attr('stroke-dasharray', dash ? options.dashArray ?? '5 4' : null)
       .attr('stroke-linejoin', 'round')
-      .attr('stroke-linecap', dashed ? 'butt' : 'round');
+      .attr('stroke-linecap', dash ? 'butt' : 'round');
+    // A dashed series stays whole; the others split at partialAfter.
+    if (dashed || !past) drawLine(dashed ? lineGen : upTo, dashed);
+    else { drawLine(upTo, false); drawLine(past, true); }
   });
 
   // ── Direct labels (options.lineLabels) ───────────────────────────────────

@@ -230,6 +230,11 @@ function fokAnnotation(svg, text, x, y, options = {}, theme = FoKTheme) {
  * rect under them keeps its hover. Returns the <path>.
  */
 function fokHatch(g, x, y, w, h, color) {
+  return fokHatchPolygon(g, [[x, y], [x + w, y], [x + w, y + h], [x, y + h]], color);
+}
+
+/** The same stripes over any convex polygon of `g`, its points [[x, y], …]. */
+function fokHatchPolygon(g, poly, color) {
   const P = 6 * Math.SQRT2, T = 2.5 * Math.SQRT2;   // period and stripe width, along x + y
   // The part of polygon `poly` where f ≥ 0: one Sutherland–Hodgman pass.
   const clip = (poly, f) => poly.flatMap((p, i) => {
@@ -241,10 +246,10 @@ function fokHatch(g, x, y, w, h, color) {
     }
     return out;
   });
-  const rect = [[x, y], [x + w, y], [x + w, y + h], [x, y + h]];
+  const sums = poly.map(p => p[0] + p[1]);
   let d = '';
-  for (let s = Math.floor((x + y) / P) * P; s < x + y + w + h; s += P) {
-    const stripe = clip(clip(rect, p => p[0] + p[1] - s), p => s + T - p[0] - p[1]);
+  for (let s = Math.floor(Math.min(...sums) / P) * P; s < Math.max(...sums); s += P) {
+    const stripe = clip(clip(poly, p => p[0] + p[1] - s), p => s + T - p[0] - p[1]);
     if (stripe.length > 2) d += 'M' + stripe.map(p => p.map(v => +v.toFixed(2)).join(',')).join('L') + 'Z';
   }
   return g.append('path').attr('class', 'fok-hatch').attr('d', d)
