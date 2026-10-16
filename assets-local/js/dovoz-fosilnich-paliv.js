@@ -1069,13 +1069,22 @@ document.addEventListener('DOMContentLoaded', () => {
       // strait closed on 4 March (en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis).
       { option: 'hormuz', label: 'Začátek krize v Hormuzském průlivu', date: [2026, 2, 28] },
     ];
-    const contextMarkers = (withLabels = true) => CONTEXT.filter(e => TOOL[e.option]).map(({ label, date: [y, m, d] }) => {
-      const text = withLabels ? label : '';
-      const dayOfYear = (Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 864e5;
-      if (TOOL.metric !== 'czk') return { x: y + dayOfYear / 365, label: text };
-      return TOOL.step === 'years' ? { band: String(y), offset: dayOfYear / 365, label: text }
-        : { band: `${y}-${m}`, offset: (d - 1) / new Date(y, m, 0).getDate(), label: text };
-    });
+    // Drawn as the KPI's comparisons are (Výdaje na školství): grey, dashed
+    // 4 : 1, the label in the line's grey darkened to read. With both shown,
+    // the earlier's label goes a row higher, so on a narrow chart they never
+    // run into each other; the chart's top margin makes the room (toolChart).
+    const contextMarkers = (withLabels = true) => {
+      const shown = CONTEXT.filter(e => TOOL[e.option]);
+      return shown.map(({ label, date: [y, m, d] }, i) => {
+        const text = withLabels ? label : '';
+        const style = { color: CFG.colorMsmt, dash: CFG.compareDash, width: CFG.lineWidth * 0.75,
+          labelColor: readable(CFG.colorMsmt), level: shown.length - 1 - i };
+        const dayOfYear = (Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 864e5;
+        if (TOOL.metric !== 'czk') return { ...style, x: y + dayOfYear / 365, label: text };
+        return TOOL.step === 'years' ? { ...style, band: String(y), offset: dayOfYear / 365, label: text }
+          : { ...style, band: `${y}-${m}`, offset: (d - 1) / new Date(y, m, 0).getDate(), label: text };
+      });
+    };
 
     // The whole chart's plot height and axis top, for the rows drawn over it.
     let toolScale;
@@ -1105,6 +1114,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const legendRoom = legendLayout([...Object.values(labelsOf(BOTH)), 'Průměr', ...Object.values(BENCH_NAME)]
         .map(label => ({ label })), legendWidth, 4).height;
       const height = Math.max(Math.round(w * CFG.toolAspect), 360);
+      // A row more over the plot for each context label past the first.
+      const markerRoom = Math.max(0, CONTEXT.filter(e => TOOL[e.option]).length - 1) * fokMarkerRow(theme);
       const swatch = c => `<span style="color:${c}">■</span> `;
       // Imports also give each band's share of that year's or month's total.
       const share = (r, k) => TOOL.metric === 'energy' && keys.length > 1 && sum(r) > 0
@@ -1115,7 +1126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         : keys.slice().reverse().map(k => swatch(colors[k]) + plain(`${labels[k]}: ${fmt(r[k])}${share(r, k)}`)).join('<br>')
           + (keys.length > 1 ? `<div style="font-family:${theme.font};font-weight:700;margin-top:4px">Celkem: ${fmt(sum(r))}</div>` : ''));
       const common = {
-        width: w, height, theme, margins: { bottom: theme.margins.bottom + legendRoom },
+        width: w, height, theme,
+        margins: { bottom: theme.margins.bottom + legendRoom, top: theme.margins.top + markerRoom },
         yLabel: unit, yLabelInline: true, yFormat: x => fokFormatNumber(x, 0), legend: false, markers: contextMarkers(),
       };
 
@@ -1145,7 +1157,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Hidden rows aren't redrawn and would keep the download id.
       d3.selectAll('#tool-svg').attr('id', null);
       chart.svg.attr('id', 'tool-svg');
-      toolScale = { plotH: height - theme.margins.top - theme.margins.bottom - legendRoom, top };
+      toolScale = { plotH: height - theme.margins.top - markerRoom - theme.margins.bottom - legendRoom, top };
       drawLegend(chart.svg, legend, height - legendRoom + 4, it => readable(it.color));
 
       // Title and summary: on the page, and in a saved file's header.

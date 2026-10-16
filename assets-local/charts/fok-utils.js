@@ -264,6 +264,11 @@ function fokHatchPolygon(g, poly, color) {
  * Event markers: a dashed vertical line through the plot, its label in the top
  * margin, clear of whatever the chart does there. pointer-events off, so the
  * hover targets underneath still answer. An empty label draws the line alone.
+ * A marker may style itself: `color`, `dash` and `width` of its line (default
+ * the text colour, '3 3', 1), `labelColor` (default the line's), and `level`,
+ * its label's row above the plot — 0 nearest it, each next one a line higher,
+ * the line running up to it — so labels that would collide can be stacked.
+ * The chart's top margin has to leave the rows their room.
  *
  * @param {d3.Selection} g        the plot group (origin at the plot's top left)
  * @param {object[]}     markers  as the chart received them
@@ -271,30 +276,41 @@ function fokHatchPolygon(g, poly, color) {
  * @param {{w:number,h:number}} inner  the plot's size; markers off it are skipped
  */
 function fokMarkers(g, markers, xOf, inner, theme = FoKTheme) {
+  const rowH = fokMarkerRow(theme);
   (markers ?? []).forEach(m => {
     const mx = xOf(m);
     if (mx == null || !Number.isFinite(mx) || mx < 0 || mx > inner.w) return;
+    const ly = -10 - (m.level ?? 0) * rowH;
+    const color = m.color ?? theme.colors.text;
     const mg = g.append('g').attr('class', 'fok-marker').attr('pointer-events', 'none');
     mg.append('line')
       .attr('x1', mx).attr('x2', mx)
-      .attr('y1', -4).attr('y2', inner.h)
-      .attr('stroke', theme.colors.text)
-      .attr('stroke-width', 1)
-      .attr('stroke-dasharray', '3 3');
+      .attr('y1', ly + 6).attr('y2', inner.h)
+      .attr('stroke', color)
+      .attr('stroke-width', m.width ?? 1)
+      .attr('stroke-dasharray', m.dash ?? '3 3');
     if (m.label) {
       // Centred on the line, unless that would run past the plot's edge: then
       // it hangs inward from the line. Half the width is estimated from the
-      // character count, which is close enough for a short label.
+      // character count, which is close enough for a short label. Haloed, as
+      // another marker's line may run behind it.
       const half = m.label.length * theme.fontSize.axisLabel * 0.28;
       mg.append('text')
-        .attr('x', mx).attr('y', -10)
+        .attr('x', mx).attr('y', ly)
         .attr('text-anchor', mx + half > inner.w ? 'end' : mx - half < 0 ? 'start' : 'middle')
-        .attr('fill', theme.colors.text)
+        .attr('fill', m.labelColor ?? color)
         .attr('font-family', theme.font)
         .attr('font-size', theme.fontSize.axisLabel)
+        .attr('stroke', '#fff').attr('stroke-width', 3).attr('paint-order', 'stroke')
+        .attr('stroke-linejoin', 'round')
         .text(m.label);
     }
   });
+}
+
+/** The height of one row of marker labels (fokMarkers' `level`). */
+function fokMarkerRow(theme = FoKTheme) {
+  return Math.round(theme.fontSize.axisLabel * 1.3);
 }
 
 // ---------------------------------------------------------------------------
