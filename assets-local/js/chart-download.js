@@ -12,13 +12,17 @@
  * data-format="png" rasterises instead, at PNG_SCALE times the chart's size on
  * screen; the filename's extension follows the format either way.
  *
- * data-title / data-subtitle / data-source are optional selectors. The first
+ * data-title / data-subtitle / data-source are optional selectors (data-title-inset
+ * overrides the title's left inset, in px). The first
  * two are drawn into a band above the chart and the third below it, under the
  * CREDIT line — on the page all three live in the panel's HTML rather than in
  * the SVG, so the file would otherwise lose them. The page's own "Stáhnout SVG"
  * button is never drawn: it is a control, meaningless once the file is open
  * elsewhere. Everything else is read off the live chart, so the file follows
  * the page's CSS without repeating any of it here.
+ *
+ * A chart's own text marked data-export-omit (a heading that the file gets
+ * from data-title instead) is left out of the file.
  *
  * Text is converted to outlines so the file survives a trip to a machine
  * without the webfont — the usual destination is print. That needs the font as
@@ -43,6 +47,7 @@
   // weights the charts actually ask for; see nearestWeight().
   const FONTS = {
     roboto: {
+      300: "/assets-local/fonts/Roboto-300.ttf",
       400: "/assets-local/fonts/Roboto-400.ttf",
       500: "/assets-local/fonts/Roboto-500.ttf",
       600: "/assets-local/fonts/Roboto-600.ttf",
@@ -178,16 +183,31 @@
       if (!text.trim()) return { pos, paths: [] };
 
       const font = fonts.byWeight[nearestWeight(fonts.weights, weight)];
-      let x = pos.x;
-      if (anchor === "middle" || anchor === "end") {
-        const advance = font.getAdvanceWidth(text, fontSize);
-        x -= anchor === "middle" ? advance / 2 : advance;
+      const advance = font.getAdvanceWidth(text, fontSize);
+      // Where the browser put this run's first character. It has already
+      // applied text-anchor to the whole line, which matters when a line is
+      // several tspans (a bold word in a right-aligned note): anchoring each
+      // run on its own would stack them on top of one another. The anchor
+      // arithmetic below is only the fallback for a node that cannot answer.
+      let x = pos.x, y = pos.y;
+      try {
+        const start = node.getStartPositionOfChar(0);
+        x = start.x;
+        y = start.y;
+      } catch (e) {
+        if (anchor === "middle" || anchor === "end") {
+          x -= anchor === "middle" ? advance / 2 : advance;
+        }
       }
-      const path = font.getPath(text, x, pos.y, fontSize);
+      const path = font.getPath(text, x, y, fontSize);
       const el = document.createElementNS(SVG_NS, "path");
       el.setAttribute("d", path.toPathData(2));
       el.setAttribute("fill", fill);
-      return { pos, paths: [el] };
+      // Hand back where this run ends, not where it began: a following tspan
+      // without its own x (a bold word, then the rest of the line) continues
+      // from here, as it does in the browser. Returning the start drew every
+      // run of a mixed-weight line on top of the first.
+      return { pos: { x: x + advance, y }, paths: [el] };
     }
 
     const { paths } = draw(textEl, {
@@ -207,8 +227,9 @@
     const cloneTexts = clone.querySelectorAll("text");
     if (liveTexts.length !== cloneTexts.length) return false;   // out of step, leave as text
     liveTexts.forEach((liveText, i) => {
-      const paths = outlineText(liveText, fonts, window.getComputedStyle(liveText));
       const target = cloneTexts[i];
+      if (liveText.hasAttribute("data-export-omit")) { target.remove(); return; }
+      const paths = outlineText(liveText, fonts, window.getComputedStyle(liveText));
       const g = document.createElementNS(SVG_NS, "g");
       // A <text> can carry its own transform — the sankey rotates its node
       // labels that way in the transposed layout — and the outlines are in that
@@ -250,13 +271,13 @@
     // Returns the baseline of the last line, which is what the band's height
     // is then measured from. `anchor` of "end" hangs the lines off the right
     // margin; x is then the edge they end at, not the one they start from.
-    function layout(items, startY, anchor) {
-      const x = anchor === "end" ? w - PAD : PAD;
+    function layout(items, startY, anchor, inset = PAD) {
+      const x = anchor === "end" ? w - PAD : inset;
       let y = startY;
       const lines = [];
       items.forEach((it, i) => {
         if (i) y += Math.round(it.size * 0.5);   // gap between blocks
-        wrapToWidth(it.text, `${it.weight} ${it.size}px ${family}`, w - 2 * PAD).forEach(t => {
+        wrapToWidth(it.text, `${it.weight} ${it.size}px ${family}`, w - inset - PAD).forEach(t => {
           y += Math.round(it.size * 1.3);
           lines.push({ t, y, x, anchor, size: it.size, weight: it.weight, fill: it.fill, href: it.href });
         });
@@ -266,7 +287,9 @@
 
     const headItems = [itemFrom(btn.dataset.title, 700), itemFrom(btn.dataset.subtitle, 400)]
       .filter(Boolean);
-    const head = layout(headItems, PAD);
+    // data-title-inset="0" puts the title flush with a chart drawn edge to edge.
+    const inset = btn.dataset.titleInset ? +btn.dataset.titleInset : PAD;
+    const head = layout(headItems, PAD, "start", inset);
     const headerH = head.lines.length ? head.end + PAD : 0;
 
     // Credit and source go under the chart, credit first. The "Stáhnout SVG"
@@ -409,7 +432,7 @@
 
   // A raster has one fixed resolution, so it is drawn larger than the chart is
   // on screen — otherwise it is unusable in anything but a web page.
-  const PNG_SCALE = 2;
+  const PNG_SCALE = 4;
 
   // Rasterised by handing the SVG to an <img> and drawing that onto a canvas.
   // An <img> may not load anything external, which is exactly why the outline
@@ -463,6 +486,9 @@
     const { out, inner, src, family, lines } = buildSvg(btn);
     return loadFamily(primaryFamily(family)).then(fonts => {
       const outlined = !!fonts && outlineInto(inner, src, fonts);
+      // outlineInto drops omitted text itself (it needs the clone's texts in
+      // step with the live ones until then); text left live is dropped here.
+      if (!outlined) inner.querySelectorAll("[data-export-omit]").forEach(el => el.remove());
       appendLines(out, lines, outlined ? fonts : null);
       return emit(out, btn);
     });

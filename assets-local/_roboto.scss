@@ -7,7 +7,7 @@
  * actually sets text in it, so declaring these site-wide costs nothing.
  */
 
-@each $weight in 400, 500, 600, 700 {
+@each $weight in 300, 400, 500, 600, 700 {
     @font-face {
         font-family: "Roboto";
         src: url("/assets-local/fonts/Roboto-#{$weight}.ttf") format("truetype");
