@@ -223,25 +223,32 @@ function fokAnnotation(svg, text, x, y, options = {}, theme = FoKTheme) {
 // ---------------------------------------------------------------------------
 
 /**
- * A diagonal-stripe fill in `color`, for a partial period. The pattern is made
- * once per colour per SVG; returns the url() to use as a fill.
+ * Diagonal stripes in `color` over the rect (x, y, w, h) of `g`, for a partial
+ * period: 2.5 px stripes every 6 px, rising at 45°, lined up across every rect
+ * in `g`. They are plain polygons cut to the rect, not a <pattern> fill, which
+ * editors such as Figma drop from an imported SVG. pointer-events off, so the
+ * rect under them keeps its hover. Returns the <path>.
  */
-function fokHatch(svg, color) {
-  const node = svg.node();
-  node.__fokHatches = node.__fokHatches ?? new Map();
-  if (!node.__fokHatches.has(color)) {
-    const id = 'fok-hatch-' + Math.random().toString(36).slice(2, 7);
-    let defs = svg.select('defs');
-    if (defs.empty()) defs = svg.append('defs');
-    defs.append('pattern')
-      .attr('id', id)
-      .attr('patternUnits', 'userSpaceOnUse')
-      .attr('width', 6).attr('height', 6)
-      .attr('patternTransform', 'rotate(45)')
-      .append('rect').attr('width', 2.5).attr('height', 6).attr('fill', color);
-    node.__fokHatches.set(color, `url(#${id})`);
+function fokHatch(g, x, y, w, h, color) {
+  const P = 6 * Math.SQRT2, T = 2.5 * Math.SQRT2;   // period and stripe width, along x + y
+  // The part of polygon `poly` where f ≥ 0: one Sutherland–Hodgman pass.
+  const clip = (poly, f) => poly.flatMap((p, i) => {
+    const q = poly[(i + 1) % poly.length], fp = f(p), fq = f(q);
+    const out = fp >= 0 ? [p] : [];
+    if ((fp >= 0) !== (fq >= 0)) {
+      const t = fp / (fp - fq);
+      out.push([p[0] + t * (q[0] - p[0]), p[1] + t * (q[1] - p[1])]);
+    }
+    return out;
+  });
+  const rect = [[x, y], [x + w, y], [x + w, y + h], [x, y + h]];
+  let d = '';
+  for (let s = Math.floor((x + y) / P) * P; s < x + y + w + h; s += P) {
+    const stripe = clip(clip(rect, p => p[0] + p[1] - s), p => s + T - p[0] - p[1]);
+    if (stripe.length > 2) d += 'M' + stripe.map(p => p.map(v => +v.toFixed(2)).join(',')).join('L') + 'Z';
   }
-  return node.__fokHatches.get(color);
+  return g.append('path').attr('class', 'fok-hatch').attr('d', d)
+    .attr('fill', color).attr('pointer-events', 'none');
 }
 
 // ---------------------------------------------------------------------------
@@ -342,14 +349,16 @@ function fokLegend(container, items, options = {}, theme = FoKTheme) {
 /**
  * A text label at (x, y), px in `g`: one or more lines, `**…**` in a line bold.
  * `valign` puts y at the last line's baseline, the others stacked above it
- * ('baseline', the default); at the block's middle ('middle'); or at the first
- * line's cap height ('top'). A white halo keeps it legible where a line
- * crosses it, unless `halo: false` (a label on a filled band).
+ * ('baseline', the default); at the block's middle ('middle'); at the first
+ * line's cap height ('top'); or at the first line's middle ('first'). A white
+ * halo keeps it legible where a line crosses it, unless `halo: false` (a label
+ * on a filled band). Returns the <text>.
  *
  * @param {d3.Selection} g
  * @param {number} x
  * @param {number} y
- * @param {object} l — { lines, anchor = 'start', valign = 'baseline', color, halo = true }
+ * @param {object} l — { lines, anchor = 'start', valign = 'baseline', color,
+ *   fontSize (default theme axisLabel), halo = true }
  * @param {object} [theme]
  */
 function fokLabel(g, x, y, l, theme = FoKTheme) {
@@ -360,7 +369,7 @@ function fokLabel(g, x, y, l, theme = FoKTheme) {
     .attr('text-anchor', l.anchor ?? 'start')
     .attr('fill', l.color ?? theme.colors.grey)
     .attr('font-family', theme.font)
-    .attr('font-size', theme.fontSize.axisLabel)
+    .attr('font-size', l.fontSize ?? theme.fontSize.axisLabel)
     .attr('pointer-events', 'none');
   if (l.halo !== false) {
     text.attr('stroke', '#fff').attr('stroke-width', 3).attr('paint-order', 'stroke')
@@ -371,10 +380,200 @@ function fokLabel(g, x, y, l, theme = FoKTheme) {
       .attr('dy', i ? '1.2em' : {
         middle: `${0.35 - 0.6 * (n - 1)}em`,
         top: '0.71em',   // Roboto's cap height
+        first: '0.35em',
       }[l.valign] ?? `${-1.2 * (n - 1)}em`);
     line.split('**').forEach((part, j) => part && row.append('tspan')
       .attr('font-weight', j % 2 ? theme.fontWeight.bold : null).text(part));
   });
+  return text;
+}
+
+// ---------------------------------------------------------------------------
+// Arrows
+// ---------------------------------------------------------------------------
+
+/**
+ * Arrowheads by name, for fokArrow's `head`. Each draws its head into `g` with
+ * the tip at `tip`, pointing along `angle` (radians: the curve's direction
+ * over the head's length), and says how far short of the tip the line stops
+ * (`inset`), so a head is not poked through by the line. `a` carries the
+ * arrow's resolved color, strokeWidth, headSize and headAngle (radians).
+ * Another kind of head is one more entry.
+ */
+const FOK_ARROW_HEADS = {
+  none: { inset: () => 0, draw: () => {} },
+  // Two strokes back from the tip, square-ended and mitred to a sharp point.
+  // A mitre sticks out past the strokes' vertex, so the vertex is set back
+  // that far and the point lands on the tip; the line ends at the vertex.
+  open: {
+    inset: a => a.strokeWidth / (2 * Math.sin(a.headAngle)),
+    draw: (g, tip, angle, a) => {
+      const v = fokArrowBack(tip, angle, a.strokeWidth / (2 * Math.sin(a.headAngle)));
+      return g.append('path')
+        .attr('d', `M${fokArrowBarb(v, angle, a, -1)}L${v}L${fokArrowBarb(v, angle, a, 1)}`)
+        .attr('fill', 'none').attr('stroke', a.color).attr('stroke-width', a.strokeWidth)
+        .attr('stroke-linecap', 'butt').attr('stroke-linejoin', 'miter').attr('stroke-miterlimit', 10);
+    },
+  },
+  // A solid triangle; the line ends at its base.
+  triangle: {
+    inset: a => a.headSize * Math.cos(a.headAngle),
+    draw: (g, tip, angle, a) => g.append('path')
+      .attr('d', `M${fokArrowBarb(tip, angle, a, -1)}L${tip}L${fokArrowBarb(tip, angle, a, 1)}Z`)
+      .attr('fill', a.color),
+  },
+  // A dot on the target; the line ends at its edge.
+  dot: {
+    inset: a => a.headSize / 2,
+    draw: (g, tip, angle, a) => g.append('circle')
+      .attr('cx', tip[0]).attr('cy', tip[1]).attr('r', a.headSize / 2).attr('fill', a.color),
+  },
+};
+
+/** One barb of a head: headSize back from the tip, headAngle to the given side. */
+function fokArrowBarb(tip, angle, a, side) {
+  const t = angle + Math.PI + side * a.headAngle;
+  return [tip[0] + a.headSize * Math.cos(t), tip[1] + a.headSize * Math.sin(t)].map(v => +v.toFixed(2));
+}
+
+/** The point `d` px back from `p` against direction `angle`. */
+function fokArrowBack(p, angle, d) {
+  return [p[0] - d * Math.cos(angle), p[1] - d * Math.sin(angle)].map(v => +v.toFixed(2));
+}
+
+/**
+ * An annotation arrow in `g`: a text, and a curved line from it to what it is
+ * about. px in `g`; the chart factories take the ends in data units (their
+ * `arrows` option) and pass them on here.
+ *
+ * The line is a cubic Bézier curve from textEnd to target. `bezier` places its
+ * two control points as fractions of that run, the way CSS cubic-bezier()
+ * does: [x1, y1, x2, y2] puts the first at textEnd + (x1·dx, y1·dy) and the
+ * second at textEnd + (x2·dx, y2·dy). The default [0.5, 0, 1, 0.5] leaves the
+ * text level and arrives at the target upright; [0, 0, 1, 1] is straight.
+ * `controls` gives the two points outright instead, where the run is too short
+ * for fractions — a hook out and back round the end of a band, say.
+ *
+ * @param {d3.Selection} g
+ * @param {object} a — {
+ *   target: [x, y]   where the head points; the tip stops `gap` (4) short of it.
+ *                    Without one there is no line, only the text at textEnd
+ *   textEnd: [x, y]  where the line leaves the text
+ *   lines            the text, as fokLabel's: one string a line, `**…**` bold
+ *   side             where the text sits from textEnd, `textGap` (4) away:
+ *                    'right' (default) or 'left', level with its first line's
+ *                    middle; 'above' or 'below', centred
+ *   bezier           [x1, y1, x2, y2], see above
+ *   controls         [[x, y], [x, y]], the control points themselves; over bezier
+ *   head             a key of FOK_ARROW_HEADS: 'open' (default), 'triangle',
+ *                    'dot', 'none'; headSize (6 px), headAngle (35°, degrees),
+ *                    its strokes as thick as the line. The head points
+ *                    the way the curve runs over its last headSize, not along
+ *                    the tangent at the very tip, which a bend near the end
+ *                    would leave looking askew.
+ *   color            line, head and text (default theme grey); strokeWidth (1)
+ *   fontSize         default theme axisLabel
+ *   background       a white box under the text (default true), cutting the
+ *                    grid lines behind it; false gives fokLabel's halo instead
+ * }
+ * @param {object} [theme]
+ * @returns {d3.Selection} the arrow's <g>
+ */
+function fokArrow(g, a, theme = FoKTheme) {
+  const o = {
+    color: theme.colors.grey, strokeWidth: 1, headSize: 6, gap: 4, textGap: 4,
+    head: 'open', bezier: [0.5, 0, 1, 0.5], side: 'right', background: true,
+    ...a,
+  };
+  o.headAngle = (a.headAngle ?? 35) * Math.PI / 180;
+  const head = FOK_ARROW_HEADS[o.head] ?? FOK_ARROW_HEADS.open;
+  const [sx, sy] = o.textEnd;
+  const arrow = g.append('g').attr('class', 'fok-arrow').attr('pointer-events', 'none');
+
+  // Without a target, the text alone.
+  if (o.target) {
+    const [tx, ty] = o.target;
+    const [dx, dy] = [tx - sx, ty - sy];
+    const [x1, y1, x2, y2] = o.bezier;
+    const [c1, c2] = o.controls ?? [[sx + x1 * dx, sy + y1 * dy], [sx + x2 * dx, sy + y2 * dy]];
+
+    // The curve ends at the tip, `gap` short of the target the way it arrives
+    // there: from its last control point that is not on the target.
+    const from = [c2, c1, o.textEnd].find(p => Math.hypot(tx - p[0], ty - p[1]) > 1e-6) ?? o.textEnd;
+    const tip = fokArrowBack(o.target, Math.atan2(ty - from[1], tx - from[0]), o.gap);
+    const P = [o.textEnd, c1, c2, tip];
+    const lerp = (p, q, t) => [p[0] + t * (q[0] - p[0]), p[1] + t * (q[1] - p[1])];
+    // de Casteljau: the control points of the curve's part from 0 to t, the
+    // last of them its point at t.
+    const upTo = t => {
+      const p01 = lerp(P[0], P[1], t), p12 = lerp(P[1], P[2], t), p23 = lerp(P[2], P[3], t);
+      const p012 = lerp(p01, p12, t), p123 = lerp(p12, p23, t);
+      return [P[0], p01, p012, lerp(p012, p123, t)];
+    };
+    // The last t whose point is `dist` px or more from the tip.
+    const tBack = dist => {
+      for (let t = 1; t > 0; t -= 0.002) {
+        const q = upTo(t)[3];
+        if (Math.hypot(tip[0] - q[0], tip[1] - q[1]) >= dist) return t;
+      }
+      return 0;
+    };
+    const q = upTo(tBack(o.headSize * Math.cos(o.headAngle)))[3];
+    const angle = Math.atan2(tip[1] - q[1], tip[0] - q[0]);
+
+    const r = p => p.map(v => +v.toFixed(2));
+    const [, l1, l2, l3] = upTo(tBack(head.inset(o)));
+    arrow.append('path')
+      .attr('d', `M${r(o.textEnd)}C${r(l1)},${r(l2)},${r(l3)}`)
+      .attr('fill', 'none').attr('stroke', o.color).attr('stroke-width', o.strokeWidth)
+      .attr('stroke-linecap', 'butt');
+    head.draw(arrow, tip, angle, o);
+  }
+
+  const at = {
+    right: [sx + o.textGap, sy, 'start', 'first'],
+    left:  [sx - o.textGap, sy, 'end', 'first'],
+    above: [sx, sy - o.textGap, 'middle', 'baseline'],
+    below: [sx, sy + o.textGap, 'middle', 'top'],
+  }[o.side] ?? [sx + o.textGap, sy, 'start', 'first'];
+  const text = fokLabel(arrow, at[0], at[1], {
+    lines: o.lines, anchor: at[2], valign: at[3], color: o.color, fontSize: o.fontSize,
+    halo: !o.background,
+  }, theme);
+  if (o.background) {
+    const b = text.node().getBBox(), pad = 3;
+    arrow.insert('rect', () => text.node())
+      .attr('x', b.x - pad).attr('y', b.y - pad)
+      .attr('width', b.width + 2 * pad).attr('height', b.height + 2 * pad)
+      .attr('fill', '#fff');
+  }
+  return arrow;
+}
+
+/**
+ * A chart's `arrows` option, drawn into its plot group `g`: each as fokArrow's,
+ * with target, textEnd and controls in data units, which `at([x, y])` turns
+ * into px.
+ */
+function fokArrowsIn(g, arrows, at, theme = FoKTheme) {
+  (arrows ?? []).forEach(a => fokArrow(g, {
+    ...a, target: a.target && at(a.target), textEnd: at(a.textEnd), controls: a.controls?.map(at),
+  }, theme));
+}
+
+/**
+ * Grows a chart upward until everything in its plot group `g` fits in the
+ * SVG: for text set above the plot, such as an arrow's. The plot keeps its
+ * size and place in the group; the SVG gets taller and the group moves down.
+ * Updates margin.top; returns how many px it grew.
+ */
+function fokFitTop(svg, g, margin, W, H, pad = 2) {
+  const over = Math.ceil(-g.node().getBBox().y - margin.top + pad);
+  if (over <= 0) return 0;
+  margin.top += over;
+  g.attr('transform', `translate(${margin.left},${margin.top})`);
+  svg.attr('viewBox', `0 0 ${W} ${H + over}`);
+  return over;
 }
 
 /**

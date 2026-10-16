@@ -34,13 +34,12 @@ window.DOVOZ_CFG = {
   // Suppliers, keyed by the slugs in the country tables below, so a country
   // reads the same in every chart. Grey is reserved for Ostatní, so no named
   // band can be mistaken for the leftovers.
-  rusko: '#eb4c42',
-  azerbajdzan: '#ffa578',
-  kazachstan: '#ffd282',
-  norsko: '#1671ab',
-  saudska_arabie: '#c7a671',
+  rusko: '#db4d43',
+  azerbajdzan: '#f59c70',
+  kazachstan: '#fbd189',
+  norsko: '#35759c',
+  saudska_arabie: '#c19753',
   usa: '#92cbc1',
-  nemecko: '#8aa0b5',
   ostatni: '#c7ccd1',
   chartHeight: 260,        // px, every chart but the KPI row's
   kpiPlotHeight: 254,      // px, the KPI charts' plot alone, margins aside (1.2 × the 212 it was)
@@ -52,7 +51,6 @@ window.DOVOZ_CFG = {
   areaOpacity: 0.6,        // fill under the small multiples' lines
   showBenchmarks: false,   // price charts: Brent / TTF exchange prices, dashed in their fuel's colour
   gasGCV: false,           // gas prices per MWh of gross calorific value, as gas is quoted
-  exploreYMax: 40,         // PJ, top of the monthly import axes unless a month goes higher
   toolAspect: 0.5,         // the explorer's chart, legend included: height ÷ width (2:1)
   titleSize: 16,           // chart titles drawn by the library
   axisSize: 12,            // axis ticks, units and legends
@@ -77,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Which suppliers get a band of their own, in stack order, bottom first;
   // every other country code falls into Ostatní — including Eurostat's
-  // "country not specified" codes (QU, QV). Colours are in CFG, by slug.
+  // "country not specified" codes (QU, QV), and Germany's gas. Colours are in
+  // CFG, by slug.
   const ROPA = {
     RU: ['rusko',          'Rusko'],
     AZ: ['azerbajdzan',    'Ázerbájdžán'],
@@ -89,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const PLYN = {
     RU: ['rusko',    'Rusko'],
     NO: ['norsko',   'Norsko'],
-    DE: ['nemecko',  'Německo'],
   };
   const OSTATNI = ['ostatni', 'Ostatní'];
 
@@ -108,6 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // puts a tonne of crude and a tonne of gas on one scale. Gas is the IPCC 2006
   // default (vol. 2, table 1.2); crude is 42.6 rather than that table's 42.3.
   const NCV = { crude_oil: 42.6, natural_gas: 48.0 };
+  // Gas's NCV is 0.9 of its gross calorific value (IPCC 2006), the basis it is
+  // traded and quoted on.
+  const NCV_PER_GCV = 0.9;
   const toPJ = (kg, commodity) => kg * NCV[commodity] * 1e-9;
 
   const keysOf   = m => Object.values(m).map(v => v[0]).concat(OSTATNI[0]);
@@ -282,8 +283,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const head   = y => `<strong style="font-family:${theme.font}">${y}</strong><br>`;
     const plain  = s => `<span style="font-family:${theme.font}">${s}</span>`;
 
-    // Ropa and plyn are meant to be read against each other, so their money and
-    // energy charts share one scale each rather than each picking its own.
+    // Ropa and plyn are meant to be read against each other, so their money
+    // charts share one scale rather than each picking its own. maxPJ is the
+    // per-country tiles' (minis).
     const maxCzk = Math.ceil(d3.max(ropa.czk.concat(plyn.czk), d => d.czk_mld) / 50) * 50;
     const maxPJ  = Math.ceil(d3.max(ropa.energie.concat(plyn.energie), totalPJ) / 100) * 100;
 
@@ -296,14 +298,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearName = year => isPartYear(year) ? `${year} (leden–${monthLong(lastMonth.get(year))})` : year;
     const colTicks = sel => d3.range(lastYear, YEAR_FROM - 1, isNarrow(sel) ? -2 : -1).reverse();
 
-    const money = (sel, rows, color) => w => fokBarChart(sel, rows, {
+    // An arrow's text is the page's: the `arrow` of the chart's foot include in
+    // the .md, its lines split at "|". Without one the chart draws no arrow;
+    // where it points is the chart's, in `arrow`.
+    const arrowsFor = (sel, arrow) => {
+      const text = document.querySelector(`.chart-foot[data-chart="${sel.slice(1)}"]`)?.dataset.arrow;
+      return text ? [{ ...arrow, lines: text.split('|') }] : [];
+    };
+
+    const money = (sel, rows, color, extra) => w => fokBarChart(sel, rows, {
       x: d => String(d.year), y: d => d.czk_mld,
-      color, partial: d => isPartYear(d.year), yLabel: 'mld. Kč',
+      color, partial: d => isPartYear(d.year), yLabel: 'mld. Kč', yLabelInline: true,
       width: w, height: CFG.chartHeight, theme,
       yDomain: [0, maxCzk], yTicks: 4,
       xTickValues: colTicks(sel).map(String),
       yFormat: v => fokFormatNumber(v, 0),
       tooltipHtml: d => head(yearName(d.year)) + plain(czkMld(d.czk_mld)),
+      ...extra,
     });
 
     // Stacked by country of origin, with the total drawn on top. The library's
@@ -312,39 +323,116 @@ document.addEventListener('DOMContentLoaded', () => {
     // where both fuels are stacked together, the split the stack hides, because
     // the bands answer "from where" and say nothing about which fuel. `when`
     // names the row: a year here, a month in the exploration. With `share`
-    // the bands are the chart's percentages; the total stays in PJ.
-    const bandsTip = (codes, when, share = false) => {
+    // the bands are the chart's percentages; the total stays in PJ. `fmt`
+    // writes a value in the chart's unit; with `pct` each band also gets its
+    // share of the row's total, "(57 %)".
+    const bandsTip = (codes, when, { share = false, fmt = pj, pct = false } = {}) => {
       const keys = keysOf(codes), colors = colorsOf(codes), labels = labelsOf(codes);
       return row => head(when(row))
         + keys.slice().reverse().map(k =>
             `<span style="color:${colors[k]}">■</span> `
-            + plain(`${labels[k]}: ${share ? fokFormatNumber(row[k], 0) + ' %' : pj(row[k])}`)).join('<br>')
+            + plain(`${labels[k]}: ${share ? fokFormatNumber(row[k], 0) + ' %' : fmt(row[k])}`
+              + (pct ? ` (${fokFormatNumber(100 * row[k] / totalPJ(row), 0)} %)` : ''))).join('<br>')
         + `<div style="font-family:${theme.font};margin-top:4px;padding-top:4px;`
         + `border-top:1px solid ${theme.colors.gridLine}">`
-        + (codes === FOSIL ? `Ropa: ${pj(row.ropa_pj)}<br>Zemní plyn: ${pj(row.plyn_pj)}` : '')
-        + `<div style="font-weight:700">Celkem: ${pj(totalPJ(row))}</div>`
+        + (codes === FOSIL ? `Ropa: ${fmt(row.ropa_pj)}<br>Zemní plyn: ${fmt(row.plyn_pj)}` : '')
+        + `<div style="font-weight:700">Celkem: ${fmt(totalPJ(row))}</div>`
         + `</div>`;
     };
     const energy = (sel, rows, codes, extra) => w => fokAreaChartStacked(sel, rows, {
       x: d => d.year, keys: keysOf(codes), colors: colorsOf(codes), labels: labelsOf(codes),
-      yLabel: 'PJ', totalLine: CFG.colorTotal,
+      yLabel: 'PJ', yLabelInline: true, totalLine: CFG.colorTotal,
       width: w, height: CFG.chartHeight, theme, legend: true,
       xTickValues: xTicks, xFormat: String,
       yFormat: v => fokFormatNumber(v, 0),
       tooltipHtml: bandsTip(codes, row => row.year),
       ...extra,
     });
-    const fuelTicks = d3.range(0, maxPJ + 1, 100);
-    // With toggles.share, each year's imports as 100 %: the split by country
+
+    // A legend in the SVG, so a downloaded file keeps it: a swatch and its
+    // label per item, wrapped to `width`; `gap` is the swatch-to-label gap.
+    const LEGEND_ROW = 20;
+    const legendLayout = (items, width, gap = 6) => {
+      const ctx = document.createElement('canvas').getContext('2d');
+      ctx.font = `${theme.fontSize.axisLabel}px Roboto, sans-serif`;
+      let x = 0, y = 0;
+      const placed = items.map(it => {
+        const w = 12 + gap + ctx.measureText(it.label).width;
+        if (x > 0 && x + w > width) { x = 0; y += LEGEND_ROW; }
+        const at = { ...it, x, y };
+        x += w + 16;
+        return at;
+      });
+      return { placed, gap, height: items.length ? y + LEGEND_ROW : 0 };
+    };
+    // Draws a laid-out legend at (0, y) of `svg`, labels in the axis grey or
+    // in labelColor(item).
+    const drawLegend = (svg, legend, y, labelColor = () => theme.colors.grey) => {
+      const lg = svg.append('g').attr('class', 'svg-legend').attr('transform', `translate(0,${y})`);
+      legend.placed.forEach(it => {
+        // A dashed series gets a dashed stroke for a swatch, the rest a square.
+        if (it.dashed) lg.append('line').attr('x1', it.x).attr('x2', it.x + 12).attr('y1', it.y + 6).attr('y2', it.y + 6)
+          .attr('stroke', it.color).attr('stroke-width', 2).attr('stroke-dasharray', '4 2');
+        else lg.append('rect').attr('x', it.x).attr('y', it.y).attr('width', 12).attr('height', 12).attr('fill', it.color);
+        lg.append('text').attr('x', it.x + 12 + legend.gap).attr('y', it.y + 10)
+          .attr('font-family', theme.font).attr('font-size', theme.fontSize.axisLabel)
+          .attr('fill', labelColor(it)).text(it.label);
+      });
+    };
+
+    // The columns' imports: the KPI cards' legend — square swatches, a third
+    // of one to the label, each label in its colour — in the SVG, flush left
+    // above the plot. Both fuels keep room for the taller of their two
+    // legends, so the plots stay level across the columns.
+    const legendItems = codes => keysOf(codes).map(k => ({ label: labelsOf(codes)[k], color: colorsOf(codes)[k] }));
+    const columnEnergy = (sel, rows, codes, extra) => w => {
+      const room = d3.max([ROPA, PLYN], c => legendLayout(legendItems(c), w, 4).height);
+      const legend = legendLayout(legendItems(codes), w, 4);
+      const chart = energy(sel, rows, codes, {
+        ...extra, legend: false, height: CFG.chartHeight + room, margins: { top: theme.margins.top + room },
+      })(w);
+      drawLegend(chart.svg, legend, room - legend.height, it => readable(it.color));
+      return chart;
+    };
+
+    // The columns' import charts each speak the fuel's own unit, not PJ:
+    // crude by mass, gas in TWh of gross calorific value, as it is traded.
+    // PER_PJ is what one PJ makes. The rows come back in `unit`, the fuels'
+    // totals (ropa_pj, plyn_pj) too, with the tooltip's format.
+    const PER_PJ = {
+      'mil. t': 1 / NCV.crude_oil,
+      'tis. t': 1000 / NCV.crude_oil,
+      'TWh': 1 / 3.6 / NCV_PER_GCV,
+    };
+    const inUnit = (rows, codes, unit) => {
+      const fields = [...keysOf(codes), 'ropa_pj', 'plyn_pj'];
+      return {
+        rows: rows.map(r => ({ ...r, ...Object.fromEntries(fields.map(k => [k, r[k] * PER_PJ[unit]])) })),
+        fmt: v => `${fokFormatNumber(v, 1)} ${unit}`,
+      };
+    };
+
+    // "Postupný konec dovozu z Ruska" on the yearly imports: the text alone,
+    // no arrow, over the stack's right end and flush with the plot's right
+    // edge (lastYear, where the grid lines end).
+    const russiaEndNote = (sel, textY) => arrowsFor(sel, { textEnd: [lastYear, textY], side: 'left', textGap: 0 });
+
+    // By year: the unit, the axis' top and its label step. With
+    // toggles.share, each year's imports as 100 %: the split by country
     // without the swings in volume. The total line would sit on the top edge.
-    const fuelEnergy = (sel, rows, codes) => energy(sel, rows, codes, {
-      yMax: maxPJ, yTickValues: fuelTicks,
-      xDomain: [YEAR_FROM, lastYear], xTickValues: colTicks(sel),
-      ...(toggles.share && {
-        proportional: true, totalLine: null, yLabel: '% dovozu', yTickValues: undefined,
-        yFormat: v => `${v} %`, tooltipHtml: bandsTip(codes, row => row.year, true),
-      }),
-    });
+    const fuelEnergy = (sel, rows, codes, { unit, top, step }, extra) => {
+      const u = inUnit(rows, codes, unit);
+      return columnEnergy(sel, u.rows, codes, {
+        yLabel: unit, yMax: top, yTickValues: d3.range(0, top + step / 2, step),
+        xDomain: [YEAR_FROM, lastYear], xTickValues: colTicks(sel),
+        tooltipHtml: bandsTip(codes, row => row.year, { fmt: u.fmt, pct: true }),
+        ...extra,
+        ...(toggles.share && {
+          proportional: true, totalLine: null, yLabel: '% dovozu', yTickValues: undefined,
+          yFormat: v => `${v} %`, tooltipHtml: bandsTip(codes, row => row.year, { share: true }),
+        }),
+      });
+    };
 
     // Reader toggles above the column charts. Each kind is one setting for both
     // fuels — every checkbox of a kind follows — so the columns stay comparable
@@ -485,11 +573,16 @@ document.addEventListener('DOMContentLoaded', () => {
         row.selectAll('rect').data(data).join('rect')
           .attr('x', d => x(o.key(d))).attr('width', x.bandwidth())
           .attr('y', d => -perUnit * d[k]).attr('height', d => perUnit * d[k])
-          .attr('fill', d => o.partial?.(d) ? fokHatch(svg, colors[k]) : colors[k])
-          .attr('opacity', d => o.partial?.(d) ? 0.5 : 1)
+          .attr('fill', d => o.partial?.(d) ? '#fff' : colors[k])
+          .attr('fill-opacity', d => o.partial?.(d) ? 0 : null)
           .on('mouseover', (event, d) => { tip.show(head(o.label(d)) + plain(`${labels[k]}: ${o.fmt(d[k])}`)); tip.move(event); })
           .on('mousemove', event => tip.move(event))
-          .on('mouseleave', () => tip.hide());
+          .on('mouseleave', () => tip.hide())
+          // A part-year: the empty bar keeps the hover, stripes over it.
+          .filter(d => o.partial?.(d)).each(function() {
+            const b = this.getBBox();
+            fokHatch(row, b.x, b.y, b.width, b.height, colors[k]).attr('opacity', 0.5);
+          });
         base -= rowHs[i];
       });
       g.append('g').attr('class', 'fok-axis fok-axis--x').attr('transform', `translate(0,${inner.h})`)
@@ -565,21 +658,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const monthGroups = Object.fromEntries(['crude_oil', 'natural_gas'].map(c =>
       [c, d3.group(monthly.filter(d => d.commodity === c), d => d.year, d => d.month)]));
     const ofMonth = (commodity, year, month) => monthGroups[commodity].get(year)?.get(month) ?? [];
-    const monthPJ = (commodity, year, month) =>
-      d3.sum(ofMonth(commodity, year, month), d => toPJ(d.mass_kg, d.commodity));
-
-    // Monthly import axes run to CFG.exploreYMax, taller only when a month needs it.
-    const axisTop = peak => peak > CFG.exploreYMax ? d3.nice(0, peak, 4)[1] : CFG.exploreYMax;
     // Twelve labels fit a half-row on a desktop, not on a phone.
     const isNarrow = sel => document.querySelector(sel).getBoundingClientRect().width < 440;
     // 24 February 2022: day 55 of the year, on the year-fraction scale of the month charts.
     const INVASION = { x: 2022 + 54 / 365, label: 'Ruská invaze na Ukrajinu' };
 
     // The columns' last two charts: the latest 36 months, money then energy.
-    // Each pair shares an axis across the fuels, like the yearly charts.
+    // Spending shares an axis across the fuels, like the yearly charts.
     // 36: the charts' titles and texts on the page say so — change them together.
     const recent = windowMonths.slice(-36);
-    const recentPeak = d3.max(['crude_oil', 'natural_gas'], c => d3.max(recent, d => monthPJ(c, d.year, d.month)));
     const spendPeak = d3.max(['crude_oil', 'natural_gas'], c =>
       d3.max(recent, d => d3.sum(ofMonth(c, d.year, d.month), r => r.value_mil_czk) / 1000));
     const spendTop = d3.nice(0, spendPeak, 4)[1];
@@ -589,15 +676,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // A column per month in the fuel's colour; toggles.spendByCountry swaps it
     // for a row per country (countryRows).
-    const spendMonths = (sel, commodity, color) => w => fokBarChart(sel,
-      recent.map(d => ({ ...d, key: ymKey(d), czk: d3.sum(ofMonth(commodity, d.year, d.month), r => r.value_mil_czk) / 1000 })), {
-        x: d => d.key, y: d => d.czk, color, yLabel: 'mld. Kč',
+    const monthCzk = (commodity, year, month) => d3.sum(ofMonth(commodity, year, month), r => r.value_mil_czk) / 1000;
+    const spendMonths = (sel, commodity, color, extra) => w => fokBarChart(sel,
+      recent.map(d => ({ ...d, key: ymKey(d), czk: monthCzk(commodity, d.year, d.month) })), {
+        x: d => d.key, y: d => d.czk, color, yLabel: 'mld. Kč', yLabelInline: true,
         width: w, height: CFG.chartHeight, theme,
         yDomain: [0, spendTop], yTickValues: d3.ticks(0, spendTop, 4),
         xTickValues: recentJanuaries.map(ymKey), xFormat: k => k.split('-')[0],
         yFormat: v => fokFormatNumber(v, 0),
         tooltipHtml: d => head(`${monthLong(d.month)} ${d.year}`) + plain(czkMld(d.czk)),
+        ...extra,
       });
+    // The Hormuz crisis (28 February 2026, see CONTEXT) on the 36 months'
+    // spending: onto March, its first month, from text left of January, over
+    // the months before it. The tip stops at 11 mld. Kč, or on the bar's top
+    // where the bar is taller.
+    const hormuzArrow = (sel, commodity) => arrowsFor(sel, {
+      target: ['2026-3', Math.max(11, monthCzk(commodity, 2026, 3))],
+      textEnd: ['2026-1', 13.5], side: 'left',
+    });
     const spendRows = (sel, commodity, codes) => () =>
       countryRows(sel, ['#chart-ropa-czk-mesice', '#chart-plyn-czk-mesice'],
         recent.map(d => ({ ...d, ...czkByCountry(ofMonth(commodity, d.year, d.month), codes) })), codes, {
@@ -606,18 +703,29 @@ document.addEventListener('DOMContentLoaded', () => {
           ticks: recentJanuaries.map(ymKey), tickFormat: k => k.split('-')[0],
         });
 
-    // Imports per month by country, as the run above draws them.
-    const importMonths = (sel, commodity, codes) => {
-      const top = axisTop(recentPeak);
-      return energy(sel, recent.map(d => ({
+    // Imports per month by country, as the run above draws them, in the
+    // fuel's own unit (inUnit) on an axis of its own.
+    const importMonths = (sel, commodity, codes, extra) => {
+      const unit = commodity === 'crude_oil' ? 'tis. t' : 'TWh';
+      const u = inUnit(recent.map(d => ({
         ...d, t: d.year + (d.month - 1) / 12, ...byCountry(ofMonth(commodity, d.year, d.month), codes),
-      })), codes, {
-        x: d => d.t, markers: [INVASION],
+      })), codes, unit);
+      const top = d3.nice(0, d3.max(u.rows, totalPJ), 4)[1];
+      return columnEnergy(sel, u.rows, codes, {
+        x: d => d.t, markers: [INVASION], yLabel: unit,
         xTickValues: recentJanuaries.map(d => d.year), xFormat: String,
         yMax: top, yTickValues: d3.ticks(0, top, 4),
-        tooltipHtml: bandsTip(codes, d => `${monthLong(d.month)} ${d.year}`),
+        tooltipHtml: bandsTip(codes, d => `${monthLong(d.month)} ${d.year}`, { fmt: u.fmt, pct: true }),
+        ...extra,
       });
     };
+    // Gas's 36 months of imports: June 2025, the peak, as storage fills for
+    // the winter — onto the top of the stack, from text over the months
+    // before it. The axis runs to 12 TWh, which leaves the text its room.
+    const refillArrow = sel => arrowsFor(sel, {
+      target: [2025 + 5 / 12, d3.sum(ofMonth('natural_gas', 2025, 6), d => toPJ(d.mass_kg, d.commodity)) * PER_PJ.TWh],
+      textEnd: [2025.25, 11.3], side: 'left',
+    });
 
     // Average import prices, Kč/MWh: by year (YEAR_FROM–YEAR_TO) and for the
     // latest 36 months. One line per fuel; with toggles.priceByCountry the
@@ -643,7 +751,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // CFG.gasGCV then moves gas — ours and TTF alike — to GCV, as gas is quoted.
     const MWH_PER_BBL = 42.6 / 7.53 / 3.6;
     const MWH_PER_MMBTU = 0.293071;
-    const NCV_PER_GCV = 0.9;
     const benchMonth = new Map(benchmarks.map(b => [ymKey(b), {
       crude_oil: b.brent * b.usd / MWH_PER_BBL,
       natural_gas: b.ttf * b.usd / MWH_PER_MMBTU / NCV_PER_GCV,
@@ -682,7 +789,7 @@ document.addEventListener('DOMContentLoaded', () => {
         multi: true, x: d => yearly ? d.year : d.t, y: d => d.price, legend: lines.length > 1,
         dashed: series => series === BENCH_NAME[commodity],
         yLabel: commodity === 'natural_gas' && CFG.gasGCV ? 'Kč/MWh spalného tepla' : 'Kč/MWh',
-        width: w, height: CFG.chartHeight,
+        yLabelInline: true, width: w, height: CFG.chartHeight,
         theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
         yDomain: [0, top], yTickValues: d3.ticks(0, top, 4),
         xTickValues: yearly ? d3.range(YEAR_FROM, YEAR_TO + 1, isNarrow(sel) ? 2 : 1) : recentJanuaries.map(d => d.year),
@@ -708,7 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // a collapse; months run to the newest.
     const TOOL_FIRST = 2012;
     const TOOL = {
-      metric: 'energy', fuel: 'both', split: 'country', step: 'years',
+      metric: 'czk', fuel: 'both', split: false, step: 'months',
       tiles: false, bench: false, invasion: false, hormuz: false,
     };
     const toolMonths = monthsOf(monthly.filter(d => d.year >= TOOL_FIRST));
@@ -723,32 +830,58 @@ document.addEventListener('DOMContentLoaded', () => {
       both:        { gen: 'ropy a zemního plynu', acc: 'ropu a zemní plyn' },
     };
 
-    // The period slider; the stretch between the thumbs is drawn darker.
+    // The period slider, in months: a month's index is year·12 + month − 1.
+    // By year it steps twelve at a time, each thumb on a January standing for
+    // its whole year; by month, one. Switching keeps the period: a year's
+    // "to" opens out to its last month, a month's falls back to its year. The
+    // stretch between the thumbs is drawn darker.
+    const mIdx = d => d.year * 12 + d.month - 1;
+    const idxYear = i => Math.floor(i / 12);
+    const lastIdx = mIdx(toolMonths[toolMonths.length - 1]);
     const toolFrom = document.getElementById('tool-from');
     const toolTo = document.getElementById('tool-to');
     const toolRange = toolFrom.closest('.dual-range');
-    [toolFrom, toolTo].forEach(r => Object.assign(r, { min: TOOL_FIRST, max: lastYear, step: 1 }));
-    toolFrom.value = YEAR_FROM;
-    toolTo.value = lastYear;
     const paintRange = () => {
-      const at = v => (v - TOOL_FIRST) / (lastYear - TOOL_FIRST);
+      const at = v => (v - toolFrom.min) / (toolFrom.max - toolFrom.min);
       toolRange.style.setProperty('--from', at(+toolFrom.value));
       toolRange.style.setProperty('--to', at(+toolTo.value));
     };
-    paintRange();
-    // The thumbs never cross: the one dragged stops a year short of the other.
+    const setSlider = (from, to) => {
+      const byYear = TOOL.step === 'years';
+      [toolFrom, toolTo].forEach(r => Object.assign(r, {
+        min: TOOL_FIRST * 12, max: byYear ? lastYear * 12 : lastIdx, step: byYear ? 12 : 1,
+      }));
+      toolFrom.value = byYear ? idxYear(from) * 12 : from;
+      toolTo.value = byYear ? idxYear(to) * 12 : Math.min(idxYear(to) * 12 + 11, lastIdx);
+      paintRange();
+    };
+    setSlider(YEAR_FROM * 12, lastYear * 12);
+    // The thumbs never cross: the one dragged stops a step short of the other.
     [toolFrom, toolTo].forEach(r => r.addEventListener('input', () => {
       if (+toolFrom.value >= +toolTo.value)
-        r.value = r === toolFrom ? +toolTo.value - 1 : +toolFrom.value + 1;
+        r.value = r === toolFrom ? +toolTo.value - +r.step : +toolFrom.value + +r.step;
       paintRange();
       drawAll();
     }));
     document.querySelectorAll('.tool [data-control] button').forEach(b => b.addEventListener('click', () => {
       const group = b.closest('[data-control]');
+      const [from, to] = [+toolFrom.value, +toolTo.value];
       TOOL[group.dataset.control] = b.dataset.value;
       group.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      if (group.dataset.control === 'step') setSlider(from, to);
       drawAll();
     }));
+    // Palivo: checkboxes, either fuel or both, never neither — the last one
+    // ticked stays ticked.
+    const fuelBoxes = [...document.querySelectorAll('.tool [data-fuel]')];
+    fuelBoxes.forEach(box => box.addEventListener('change', () => {
+      const picked = fuelBoxes.filter(b => b.checked).map(b => b.dataset.fuel);
+      if (!picked.length) { box.checked = true; return; }
+      TOOL.fuel = picked.length > 1 ? 'both' : picked[0];
+      drawAll();
+    }));
+    // Členění: a checkbox, by country or the total (TOOL.split, data-option).
+    const splitBox = document.querySelector('.tool [data-option="split"]');
     document.querySelectorAll('.tool [data-option]').forEach(box => box.addEventListener('change', () => {
       TOOL[box.dataset.option] = box.checked;
       drawAll();
@@ -760,11 +893,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const fuels = TOOL.fuel === 'both' ? ['crude_oil', 'natural_gas'] : [TOOL.fuel];
       const price = TOOL.metric === 'price';
       const splitAllowed = !(price && fuels.length > 1);
-      const byCountry = TOOL.split === 'country' && splitAllowed;
-      let from = +toolFrom.value, to = +toolTo.value;
+      const byCountry = TOOL.split && splitAllowed;
+      // Years for the year view and the axis ticks, months for the month view.
+      const fromIdx = +toolFrom.value, toIdx = +toolTo.value;
+      let from = idxYear(fromIdx), to = idxYear(toIdx);
       if (TOOL.step === 'years') { to = Math.min(to, lastFullYear); from = Math.min(from, to - 1); }
       return {
-        fuels, price, splitAllowed, byCountry, from, to,
+        fuels, price, splitAllowed, byCountry, from, to, fromIdx, toIdx,
         codes: fuels.length > 1 ? BOTH : codesOf(fuels[0]),
         tiles: byCountry && TOOL.tiles, bench: price && TOOL.bench,
       };
@@ -777,7 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // (per fuel, see below). `tiles` is the same for a single country, for
     // small multiples and rows.
     const toolTops = v => {
-      const period = { from: v.from, to: v.to };
+      const period = { from: v.from, to: v.to, fromIdx: v.fromIdx, toIdx: v.toIdx };
       const both = ['crude_oil', 'natural_gas'];
       const view = (fuels, byCountry) => ({ ...period, fuels, byCountry, bench: true,
         price: TOOL.metric === 'price', codes: fuels.length > 1 ? BOTH : codesOf(fuels[0]) });
@@ -792,7 +927,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const p = d3.max(views, vv => { const d = toolData(vv); return peak(d, d.lines.map(([k]) => k)); });
         return { chart: p, tiles: p };
       }
-      const total = toolData(view(both, false)), countries = toolData(view(both, true));
+      // Imports of one fuel are in its own unit (toolData), so on its own axis.
+      const fuels = TOOL.metric === 'energy' && TOOL.fuel !== 'both' ? [TOOL.fuel] : both;
+      const total = toolData(view(fuels, false)), countries = toolData(view(fuels, true));
       return { chart: d3.max(total.rows, r => d3.sum(total.keys, k => r[k])), tiles: peak(countries, countries.keys) };
     };
 
@@ -812,7 +949,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toolData = v => {
       const periods = TOOL.step === 'years'
         ? d3.range(v.from, v.to + 1).map(year => ({ year, x: year, key: String(year), label: String(year) }))
-        : toolMonths.filter(d => d.year >= v.from && d.year <= v.to).map(d =>
+        : toolMonths.filter(d => mIdx(d) >= v.fromIdx && mIdx(d) <= v.toIdx).map(d =>
             ({ ...d, x: d.year + (d.month - 1) / 12, key: ymKey(d), label: `${monthLong(d.month)} ${d.year}` }));
       const rowsIn = (c, p) => TOOL.step === 'years' ? yearGroups.get(c)?.get(p.year) ?? [] : ofMonth(c, p.year, p.month);
       const basis = c => c === 'natural_gas' && CFG.gasGCV ? NCV_PER_GCV : 1;
@@ -824,8 +961,13 @@ document.addEventListener('DOMContentLoaded', () => {
         labels = Object.fromEntries(v.fuels.map(c => [c, FUEL_NAME[c].label]));
       }
       const minMWh = TOOL.step === 'years' ? 12 * PRICE_MIN_MWH : PRICE_MIN_MWH;
+      // Imports: both fuels together in PJ, the only unit they share; one fuel
+      // in its own, as in the columns — crude by mass, gas in TWh (PER_PJ).
+      const energyUnit = v.fuels.length > 1 ? 'PJ'
+        : v.fuels[0] === 'natural_gas' ? 'TWh' : TOOL.step === 'years' ? 'mil. t' : 'tis. t';
+      const perPJ = PER_PJ[energyUnit] ?? 1;
       const amount = rs => TOOL.metric === 'energy'
-        ? d3.sum(rs, d => toPJ(d.mass_kg, d.commodity)) : d3.sum(rs, d => d.value_mil_czk) / 1000;
+        ? d3.sum(rs, d => toPJ(d.mass_kg, d.commodity)) * perPJ : d3.sum(rs, d => d.value_mil_czk) / 1000;
       const rows = periods.map(p => {
         const row = { ...p };
         if (v.price && v.byCountry) {
@@ -853,22 +995,32 @@ document.addEventListener('DOMContentLoaded', () => {
         ...keys.map(k => [k, labels[k], colors[k]]),
         ...(v.byCountry ? [['prumer', 'Průměr', CFG.colorTotal]] : []),
       ];
-      const unit = { energy: 'PJ', czk: 'mld. Kč',
+      const unit = { energy: energyUnit, czk: 'mld. Kč',
         price: v.fuels.every(c => basis(c) !== 1) ? 'Kč/MWh spalného tepla' : 'Kč/MWh' }[TOOL.metric];
-      const fmt = { energy: pj, czk: czkMld, price: x => `${fokFormatNumber(x, 0)} ${unit}` }[TOOL.metric];
+      const fmt = { energy: x => `${fokFormatNumber(x, 1)} ${unit}`, czk: czkMld,
+        price: x => `${fokFormatNumber(x, 0)} ${unit}` }[TOOL.metric];
       return { rows, keys, colors, labels, lines, unit, fmt };
     };
 
     // Ticks: a year label every few years, so at most a dozen fit (six narrow).
+    // By month, on Januaries, so only those inside the period.
     const toolTicks = (sel, v) =>
-      d3.range(v.from, v.to + 1, Math.ceil((v.to - v.from + 1) / (isNarrow(sel) ? 6 : 12)));
+      d3.range(v.from, v.to + 1, Math.ceil((v.to - v.from + 1) / (isNarrow(sel) ? 6 : 12)))
+        .filter(y => TOOL.step === 'years' || (y * 12 >= v.fromIdx && y * 12 <= v.toIdx));
+    // "2017–2025", or by month "led 2017 – čvc 2026" — with `long` names, for
+    // the title, "leden 2017 – červenec 2026".
+    const periodText = (v, long = false) => {
+      if (TOOL.step === 'years') return `${v.from}–${v.to}`;
+      const month = long ? monthLong : monthShort;
+      return `${month(v.fromIdx % 12 + 1)} ${idxYear(v.fromIdx)} – ${month(v.toIdx % 12 + 1)} ${idxYear(v.toIdx)}`;
+    };
     // Context events, each a checkbox under Kontext: a dated line on the year
     // scale, or within its column for spending. Without labels in the tiles.
     const CONTEXT = [
-      { option: 'invasion', label: 'Ruská invaze na Ukrajinu', date: [2022, 2, 24] },
+      { option: 'invasion', label: 'Začátek ruské invaze na Ukrajinu', date: [2022, 2, 24] },
       // US and Israeli strikes on Iran, 28 February 2026; Iran declared the
       // strait closed on 4 March (en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis).
-      { option: 'hormuz', label: 'Krize v Hormuzském průlivu', date: [2026, 2, 28] },
+      { option: 'hormuz', label: 'Začátek krize v Hormuzském průlivu', date: [2026, 2, 28] },
     ];
     const contextMarkers = (withLabels = true) => CONTEXT.filter(e => TOOL[e.option]).map(({ label, date: [y, m, d] }) => {
       const text = withLabels ? label : '';
@@ -878,57 +1030,46 @@ document.addEventListener('DOMContentLoaded', () => {
         : { band: `${y}-${m}`, offset: (d - 1) / new Date(y, m, 0).getDate(), label: text };
     });
 
-    // Legend inside the SVG: swatch and label, wrapped to the plot's width.
-    const legendLayout = (items, width) => {
-      const ctx = document.createElement('canvas').getContext('2d');
-      ctx.font = `${theme.fontSize.axisLabel}px Roboto, sans-serif`;
-      let x = 0, y = 0;
-      const placed = items.map(it => {
-        const w = 18 + ctx.measureText(it.label).width;
-        if (x > 0 && x + w > width) { x = 0; y += 20; }
-        const at = { ...it, x, y };
-        x += w + 16;
-        return at;
-      });
-      return { placed, height: items.length ? y + 20 : 0 };
-    };
-
     // The whole chart's plot height and axis top, for the rows drawn over it.
     let toolScale;
     const toolChart = w => {
       const v = toolView();
       const { rows, keys, colors, labels, lines, unit, fmt } = toolData(v);
-      document.querySelector('[data-control="split"] [data-value="country"]').disabled = !v.splitAllowed;
+      splitBox.disabled = !v.splitAllowed;
       // Options show only where they apply: data-when names the view's flag.
       // Hidden, they keep their place, so the controls never shift.
       document.querySelectorAll('.tool [data-when]').forEach(el => {
         el.style.visibility = v[el.dataset.when] ? '' : 'hidden';
       });
-      document.getElementById('tool-period').textContent = `${v.from}–${v.to}`;
+      document.getElementById('tool-period').textContent = periodText(v);
 
       const sum = r => d3.sum(keys, k => r[k]);
       const top = d3.nice(0, toolTops(v).chart || 1, 5)[1];
       const ticks = toolTicks('#chart-tool', v);
-      // Flush left, under the y labels.
+      // Flush left, under the y labels; styled as the KPI cards' and the
+      // columns': a third of a swatch to the label, the label in its colour.
       const legendWidth = w - theme.margins.right;
       const legend = legendLayout((v.price ? lines : keys.map(k => [k, labels[k], colors[k]]))
-        .map(([key, label, color]) => ({ label, color, dashed: key.startsWith('bench') })), legendWidth);
+        .map(([key, label, color]) => ({ label, color, dashed: key.startsWith('bench') })), legendWidth, 4);
       // Room for the longest legend any view can have, so the chart keeps one
       // height whatever is picked and the page never jumps. The whole chart,
       // legend included, is CFG.toolAspect of its width (2:1) — but on a phone
       // that would leave the plot a sliver under the legend, hence the floor.
       const legendRoom = legendLayout([...Object.values(labelsOf(BOTH)), 'Průměr', ...Object.values(BENCH_NAME)]
-        .map(label => ({ label })), legendWidth).height;
+        .map(label => ({ label })), legendWidth, 4).height;
       const height = Math.max(Math.round(w * CFG.toolAspect), 360);
       const swatch = c => `<span style="color:${c}">■</span> `;
+      // Imports also give each band's share of that year's or month's total.
+      const share = (r, k) => TOOL.metric === 'energy' && keys.length > 1 && sum(r) > 0
+        ? ` (${fokFormatNumber(100 * r[k] / sum(r), 0)} %)` : '';
       const tip = r => head(r.label) + (v.price
         ? lines.slice().reverse().filter(([k]) => Number.isFinite(r[k]))
             .map(([k, label, color]) => swatch(color) + plain(`${label}: ${fmt(r[k])}`)).join('<br>')
-        : keys.slice().reverse().map(k => swatch(colors[k]) + plain(`${labels[k]}: ${fmt(r[k])}`)).join('<br>')
+        : keys.slice().reverse().map(k => swatch(colors[k]) + plain(`${labels[k]}: ${fmt(r[k])}${share(r, k)}`)).join('<br>')
           + (keys.length > 1 ? `<div style="font-family:${theme.font};font-weight:700;margin-top:4px">Celkem: ${fmt(sum(r))}</div>` : ''));
       const common = {
         width: w, height, theme, margins: { bottom: theme.margins.bottom + legendRoom },
-        yLabel: unit, yFormat: x => fokFormatNumber(x, 0), legend: false, markers: contextMarkers(),
+        yLabel: unit, yLabelInline: true, yFormat: x => fokFormatNumber(x, 0), legend: false, markers: contextMarkers(),
       };
 
       let chart;
@@ -958,29 +1099,24 @@ document.addEventListener('DOMContentLoaded', () => {
       d3.selectAll('#tool-svg').attr('id', null);
       chart.svg.attr('id', 'tool-svg');
       toolScale = { plotH: height - theme.margins.top - theme.margins.bottom - legendRoom, top };
-      const lg = chart.svg.append('g').attr('class', 'tool-legend')
-        .attr('transform', `translate(0,${height - legendRoom + 4})`);
-      legend.placed.forEach(it => {
-        // A dashed series gets a dashed stroke for a swatch, the rest a square.
-        if (it.dashed) lg.append('line').attr('x1', it.x).attr('x2', it.x + 12).attr('y1', it.y + 6).attr('y2', it.y + 6)
-          .attr('stroke', it.color).attr('stroke-width', 2).attr('stroke-dasharray', '4 2');
-        else lg.append('rect').attr('x', it.x).attr('y', it.y).attr('width', 12).attr('height', 12).attr('fill', it.color);
-        lg.append('text').attr('x', it.x + 18).attr('y', it.y + 10)
-          .attr('font-family', theme.font).attr('font-size', theme.fontSize.axisLabel)
-          .attr('fill', theme.colors.grey).text(it.label);
-      });
+      drawLegend(chart.svg, legend, height - legendRoom + 4, it => readable(it.color));
 
       // Title and summary: on the page, and in a saved file's header.
       const metricName = { energy: 'Dovoz', czk: 'Výdaje za', price: 'Průměrná dovozní cena' }[TOOL.metric];
       const fuelName = FUEL_NAME[TOOL.fuel][TOOL.metric === 'czk' ? 'acc' : 'gen'];
-      document.getElementById('tool-title').textContent =
-        `${metricName} ${fuelName}${v.byCountry ? ' podle zemí' : ''}, ${v.from}–${v.to}`;
+      // The period in regular (.chart-title-period), on the page and in a
+      // saved file, which takes the span as a run of its own weight.
+      const title = document.getElementById('tool-title');
+      title.textContent = `${metricName} ${fuelName}${v.byCountry ? ' podle zemí' : ''}`;
+      title.append(Object.assign(document.createElement('span'),
+        { className: 'chart-title-period', textContent: `, ${periodText(v, true)}` }));
       document.getElementById('tool-summary').textContent = [
-        { energy: 'Energie v PJ', czk: 'Celní hodnota v mld. Kč',
+        { energy: { 'PJ': 'Energie v PJ', 'TWh': 'Energie v TWh spalného tepla' }[unit] ?? `Hmotnost v ${unit}`,
+          czk: 'Celní hodnota v mld. Kč',
           price: `Celní hodnota dělená energetickým obsahem dovozu, v ${unit}` }[TOOL.metric]
           + (TOOL.step === 'years' ? ', roční' : ', měsíční') + (v.price ? ' průměry.' : ' součty.'),
         v.tiles ? 'Každá země zvlášť, na společné ose.' : '',
-        TOOL.step === 'years' && +toolTo.value > lastFullYear ? `Rok ${lastFullYear + 1} je neúplný, ukazují ho měsíce.` : '',
+        TOOL.step === 'years' && idxYear(+toolTo.value) > lastFullYear ? `Rok ${lastFullYear + 1} je neúplný, ukazují ho měsíce.` : '',
         v.price && v.byCountry ? 'Země s malým dovozem graf vynechává.' : '',
         v.bench ? 'Burzovní cena: Brent, resp. TTF (od dubna 2015), podle Světové banky, přepočtená kurzem ČNB.' : '',
       ].filter(Boolean).join(' ');
@@ -1404,14 +1540,15 @@ document.addEventListener('DOMContentLoaded', () => {
           .concat([['Ropa a zemní plyn', 'gdp_share_pct', CFG.colorGdp]]);
         const compared = lines.length > 1;
         // Labels on the lines instead of a legend, each where its line has
-        // room: imports right of their 2022 peak, MŠMT above its line on the
-        // left, SFDI under its line on the right (above it runs the imports').
-        // x in years, y in % HDP: the last row's baseline. Defence has none.
+        // room: imports right of their 2022 peak, level with its top; MŠMT
+        // over its line on the left, its halo cutting the line; SFDI under its
+        // line on the right (above it runs the imports'). x in years, y in
+        // % HDP: the last row's baseline. Defence has none.
         const lineLabels = {
-          'Ropa a zemní plyn': { x: 2022.3, y: 4.55, lines: ['**Ropa**', '**a zemní plyn**'] },
-          'Výdaje na školství (rozpočet MŠMT)': { x: 2017, y: 4.0, lines: ['Výdaje', 'na školství'] },
+          'Ropa a zemní plyn': { x: 2022.3, y: 4.85, lines: ['**Ropa**', '**a zemní plyn**'] },
+          'Výdaje na školství (rozpočet MŠMT)': { x: 2017.45, y: 3.25, lines: ['Výdaje', 'na školství'] },
           'Výdaje na dopravní infrastrukturu (rozpočet SFDI)':
-            { x: 2025, y: 0.92, anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
+            { x: 2024.35, y: 1.22, anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
         };
         return fokLineChart('#chart-celkem-hdp',
           lines.flatMap(([series, field]) => payments.map(d => ({ ...d, series, pct: d[field] }))), {
@@ -1443,19 +1580,33 @@ document.addEventListener('DOMContentLoaded', () => {
       })],
 
       ['#chart-ropa-czk',     money('#chart-ropa-czk', ropa.czk, CFG.colorRopa)],
-      ['#chart-ropa-energie', fuelEnergy('#chart-ropa-energie', ropa.energie, ROPA)],
-      ['#chart-plyn-czk',     money('#chart-plyn-czk', plyn.czk, CFG.colorPlyn)],
-      ['#chart-plyn-energie', fuelEnergy('#chart-plyn-energie', plyn.energie, PLYN)],
+      ['#chart-ropa-energie', fuelEnergy('#chart-ropa-energie', ropa.energie, ROPA,
+        { unit: 'mil. t', top: 10, step: 2 },
+        { arrows: russiaEndNote('#chart-ropa-energie', 9.2) })],
+      // The 2022 peak, pointed out (fokArrow): from the text right of the bar
+      // down onto its top.
+      ['#chart-plyn-czk',     money('#chart-plyn-czk', plyn.czk, CFG.colorPlyn, {
+        arrows: arrowsFor('#chart-plyn-czk', {
+          target: [2022, plyn.czk.find(d => d.year === 2022).czk_mld],
+          textEnd: [2022.8, 270],
+        }),
+      })],
+      ['#chart-plyn-energie', fuelEnergy('#chart-plyn-energie', plyn.energie, PLYN,
+        { unit: 'TWh', top: 140, step: 20 },
+        { arrows: russiaEndNote('#chart-plyn-energie', 125) })],
       ['#chart-ropa-czk-roky', yearSpendRows('#chart-ropa-czk-roky', 'crude_oil', ROPA)],
       ['#chart-plyn-czk-roky', yearSpendRows('#chart-plyn-czk-roky', 'natural_gas', PLYN)],
       ['#chart-ropa-mini',    minis('#chart-ropa-mini', ropa.energie, ROPA)],
       ['#chart-plyn-mini',    minis('#chart-plyn-mini', plyn.energie, PLYN)],
-      ['#chart-ropa-czk-mesice',     spendMonths('#chart-ropa-czk-mesice', 'crude_oil', CFG.colorRopa)],
+      ['#chart-ropa-czk-mesice',     spendMonths('#chart-ropa-czk-mesice', 'crude_oil', CFG.colorRopa,
+        { arrows: hormuzArrow('#chart-ropa-czk-mesice', 'crude_oil') })],
       ['#chart-plyn-czk-mesice',     spendMonths('#chart-plyn-czk-mesice', 'natural_gas', CFG.colorPlyn)],
       ['#chart-ropa-czk-tiles',      spendRows('#chart-ropa-czk-tiles', 'crude_oil', ROPA)],
       ['#chart-plyn-czk-tiles',      spendRows('#chart-plyn-czk-tiles', 'natural_gas', PLYN)],
       ['#chart-ropa-energie-mesice', importMonths('#chart-ropa-energie-mesice', 'crude_oil', ROPA)],
-      ['#chart-plyn-energie-mesice', importMonths('#chart-plyn-energie-mesice', 'natural_gas', PLYN)],
+      ['#chart-plyn-energie-mesice', importMonths('#chart-plyn-energie-mesice', 'natural_gas', PLYN, {
+        yMax: 12, yTickValues: d3.range(0, 13, 2), arrows: refillArrow('#chart-plyn-energie-mesice'),
+      })],
       ['#chart-ropa-cena',           price('#chart-ropa-cena', 'years', 'crude_oil', ROPA, CFG.colorRopa)],
       ['#chart-plyn-cena',           price('#chart-plyn-cena', 'years', 'natural_gas', PLYN, CFG.colorPlyn)],
       ['#chart-ropa-cena-mesice',    price('#chart-ropa-cena-mesice', 'months', 'crude_oil', ROPA, CFG.colorRopa)],
@@ -1493,7 +1644,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.fuel-plot').forEach(p => { p.style.minHeight = ''; });
       document.body.classList.toggle('span-long', span === 'long');
       document.body.classList.toggle('span-recent', span === 'recent');
-      document.body.classList.toggle('show-bench', CFG.showBenchmarks);
       document.body.style.setProperty('--dovoz-chart-fraction', CFG.chartFraction);
       document.body.classList.toggle('fuel-boxed', CFG.fuelBoxed);
       document.body.classList.toggle('fuel-box-colored', CFG.fuelBoxColored);
@@ -1512,8 +1662,9 @@ document.addEventListener('DOMContentLoaded', () => {
       levelKpi();
     };
     window.DOVOZ_REDRAW = drawAll;
-    // The collapsed map has no width, so drawAll skips it; draw it once opened.
-    $('#mapa-collapse').on('shown.bs.collapse', drawAll);
+    // The collapsed explorer and map have no width, so drawAll skips them;
+    // draw them once opened.
+    $('#nastroj-collapse, #mapa-collapse').on('shown.bs.collapse', drawAll);
     // ponytail: any control redraws every chart, not just its own — cheap here.
     drawAll();
     // The left margins are measured in Roboto: once it loads, again.

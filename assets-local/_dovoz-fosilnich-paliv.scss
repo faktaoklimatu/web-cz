@@ -114,7 +114,7 @@ body.dovoz-fosilnich-paliv {
         margin-top: 16px;
     }
 
-    /* The one span selector, above both columns. */
+    /* The one span selector, above both columns: the explorer's buttons. */
     .span-select {
         margin-top: 40px;
     }
@@ -134,9 +134,18 @@ body.dovoz-fosilnich-paliv {
     /* On a desktop a chart takes a share of its column's width — set by drawAll
        from CFG.chartFraction — and its text keeps the full width. The share is
        taken by the figure's contents, not the figure, so a boxed column's
-       border still runs the full width. */
+       border still runs the full width. A figure is as tall as its
+       counterpart in the other column (they share a grid row); the title
+       takes up the difference, so where one wraps and the other does not the
+       charts under them still sit level. */
     .fuel-figure {
+        display: flex;
+        flex-direction: column;
         margin-top: 24px;
+
+        > .chart-head {
+            flex-grow: 1;
+        }
     }
 
     /* A chart under another chart of its span (the other span's sit between
@@ -279,6 +288,29 @@ body.dovoz-fosilnich-paliv {
             margin: 0;
             accent-color: #3e3e4c;
         }
+
+        &:has(input:disabled) {
+            color: #cbd5e0;
+            cursor: not-allowed;
+        }
+    }
+
+    /* The explorer's checkboxes in place of buttons (Palivo, Členění): a row
+       as tall as a row of buttons, so the groups' first lines stay level, and
+       labels as big and as dark as the buttons' text. */
+    .control-options {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 12px;
+        min-height: 31px;
+
+        .chart-toggle {
+            margin: 0;
+            gap: 6px;
+            font-size: var(--dovoz-text-size);
+            color: #515b66;
+        }
     }
 
     /* "pod sebou" sits under "zvlášť po zemích", whose option it is, and
@@ -348,6 +380,7 @@ body.dovoz-fosilnich-paliv {
        catches the KPI row and anything a chart leaves unstyled. */
     .chart-panel,
     .fuel-figure,
+    .span-select,
     .tool,
     .route-map {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
@@ -417,11 +450,6 @@ body.dovoz-fosilnich-paliv {
         text-overflow: ellipsis;
     }
 
-    /* The exchange prices' source note shows with them (CFG.showBenchmarks). */
-    &:not(.show-bench) .bench-only {
-        display: none;
-    }
-
     /* ── The explorer ─────────────────────────────────────────────────────── */
     /* One chart, every view: the controls above it in a wrapping row, the
        chart in a panel with its title, summary, source and downloads — the
@@ -432,7 +460,9 @@ body.dovoz-fosilnich-paliv {
         margin-top: 56px;
     }
 
-    /* The map's heading is the expander link that opens it. */
+    /* The explorer's and the map's headings are the expander links that
+       open them. */
+    .tool a.expander,
     .route-map a.expander {
         align-items: center;
         cursor: pointer;
@@ -442,6 +472,7 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
+    #nastroj-collapse > .tool-controls,
     #mapa-collapse > .tool-controls {
         margin-top: 16px;
     }
@@ -452,6 +483,16 @@ body.dovoz-fosilnich-paliv {
         .tool-panel .chart-title {
             min-height: 2.5em;
         }
+    }
+
+    /* The explorer's generated title, half as big again as the charts', its
+       period in regular. */
+    .tool-panel .chart-title {
+        font-size: calc(1.5 * var(--dovoz-chart-title-size));
+    }
+
+    .chart-title-period {
+        font-weight: 400;
     }
 
     .tool-controls {
@@ -540,20 +581,6 @@ body.dovoz-fosilnich-paliv {
             color: #cbd5e0;
             background: #fff;
             cursor: not-allowed;
-        }
-    }
-
-    /* The quiet variant, by the fuel headings: smaller, and pressed in grey. */
-    .seg-buttons--small {
-        button {
-            padding: 2px 8px;
-            font-size: 12px;
-        }
-
-        button[aria-pressed="true"] {
-            background: #e2e8f0;
-            color: #2d3748;
-            font-weight: 600;
         }
     }
 

@@ -62,7 +62,6 @@
       ["norsko", "Norsko", "color"],
       ["saudska_arabie", "Saúdská Arábie", "color"],
       ["usa", "USA", "color"],
-      ["nemecko", "Německo", "color"],
       ["ostatni", "Ostatní", "color"],
     ]],
     ["Grafy", [
@@ -73,7 +72,6 @@
       ["barPadding", "Mezera mezi sloupci", "range", 0, 0.8, 0.01],
       ["lineWidth", "Tloušťka čáry", "range", 0.5, 6, 0.5],
       ["areaOpacity", "Plocha malých grafů", "range", 0, 1, 0.05],
-      ["exploreYMax", "Osa Y po měsících (PJ)", "range", 10, 100, 5],
       ["toolAspect", "Poměr stran velkého grafu (výška/šířka)", "range", 0.4, 1.2, 0.05],
       ["axisTextColor", "Text os a legendy", "color"],
       ["gridColor", "Mřížka", "color"],

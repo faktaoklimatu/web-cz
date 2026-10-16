@@ -24,6 +24,12 @@
  *                               (default: theme.colors.primary)
  *   partial    {function}  (row) => true draws that bar hatched in its colour
  *                          at half opacity, e.g. for a part-year
+ *   arrows     {object[]}  annotation arrows, as fokArrow's, but target and
+ *                          textEnd as [x, y] in data units: x a bar's category,
+ *                          or a number — its bar's centre plus that fraction of
+ *                          a step (2022.8 is four fifths of the way to the next
+ *                          bar); controls likewise. The chart grows upward
+ *                          to fit their text.
  *   yLabel     {string}    label shown on y-axis
  *   yLabelInline {boolean}   the unit after the top tick label, not above the axis
  *   yGridValues  {number[]}  grid lines at these values too, between the labelled ticks
@@ -103,8 +109,10 @@ function fokBarChart(containerSelector, data, options = {}) {
   const g = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
-  // Partial bars: diagonal stripes in the bar's colour, at half opacity.
-  const barFill    = d => partialAcc(d._raw) ? fokHatch(svg, colorAcc(d._raw)) : colorAcc(d._raw);
+  // Partial bars: an empty bar, which keeps the hover, under diagonal stripes
+  // in its colour at half opacity (fokHatch, drawn after the bars).
+  const barFill    = d => partialAcc(d._raw) ? '#fff' : colorAcc(d._raw);
+  const barFillOpacity = d => partialAcc(d._raw) ? 0 : null;
   const barOpacity = d => partialAcc(d._raw) ? 0.5 : 1;
 
   // ── Scales ──────────────────────────────────────────────────────────────
@@ -231,6 +239,7 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('y',      d => d._y >= 0 ? yScale(d._y) : yScale(0))
       .attr('height', d => Math.abs(yScale(d._y) - yScale(0)))
       .attr('fill',         barFill)
+      .attr('fill-opacity', barFillOpacity)
       .attr('opacity',      barOpacity)
       .attr('stroke',       '#fff')
       .attr('stroke-width', 0.5)
@@ -243,12 +252,18 @@ function fokBarChart(containerSelector, data, options = {}) {
       .attr('x',            d => d._y >= 0 ? xScale(0) : xScale(d._y))
       .attr('width',        d => Math.abs(xScale(d._y) - xScale(0)))
       .attr('fill',         barFill)
+      .attr('fill-opacity', barFillOpacity)
       .attr('opacity',      barOpacity)
       .attr('stroke',       '#fff')
       .attr('stroke-width', 0.5)
       .attr('rx',           theme.bar.radius)
       .attr('ry',           theme.bar.radius);
   }
+
+  bars.filter(d => partialAcc(d._raw)).each(function(d) {
+    const b = this.getBBox();
+    fokHatch(g, b.x, b.y, b.width, b.height, colorAcc(d._raw)).attr('opacity', 0.5);
+  });
 
   // ── Inner labels ─────────────────────────────────────────────────────────
   if (showLabels && !horiz) {
@@ -281,11 +296,19 @@ function fokBarChart(containerSelector, data, options = {}) {
       tip.hide();
     });
 
-  // Cleanup tooltip when chart is replaced
   // ── Y-axis unit, over the data ────────────────────────────────────────────
   if (options.yLabel && !horiz) {
     fokAxisYLabel(g, yScale, yAxis, options.yLabel,
       { marginLeft: margin.left, inline: options.yLabelInline }, theme);
+  }
+
+  // ── Arrows (options.arrows) ──────────────────────────────────────────────
+  if (options.arrows?.length && !horiz) {
+    const xOf = v => typeof v === 'number'
+      ? xScale(String(Math.floor(v))) + xScale.bandwidth() / 2 + (v % 1) * xScale.step()
+      : xScale(v) + xScale.bandwidth() / 2;
+    fokArrowsIn(g, options.arrows, ([x, y]) => [xOf(x), yScale(y)], theme);
+    fokFitTop(svg, g, margin, W, H);
   }
 
   return { svg, tip };

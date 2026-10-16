@@ -68,8 +68,8 @@ extra-scripts:
     viz .fuel-columns v _dovoz-fosilnich-paliv.scss. Úvod pod nadpisem je
     obyčejný markdown: řádky bez odsazení, prázdný řádek před i za.
     Přepínač nad nimi ukazuje v obou buď dlouhodobé grafy, nebo posledních 36 měsíců. {% endcomment %}
-    <div class="seg-buttons seg-buttons--small span-select" data-span-select role="group" aria-label="Které grafy ukázat">
-      <button type="button" data-value="long" aria-pressed="true">Dlouhodobě</button>
+    <div class="seg-buttons span-select" data-span-select role="group" aria-label="Období grafů">
+      <button type="button" data-value="long" aria-pressed="true">Dlouhodobý vývoj</button>
       <button type="button" data-value="recent" aria-pressed="false">Posledních 36 měsíců</button>
     </div>
     <div class="fuel-columns">
@@ -83,50 +83,54 @@ extra-scripts:
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Výdaje za ropu</h3>
+          <h3 class="chart-title" id="chart-ropa-czk-title">Výdaje za ropu</h3>
         </div>
         <div class="fuel-plot" data-tiles="yearSpendByCountry">
           <div id="chart-ropa-czk" class="whole"></div>
           <div id="chart-ropa-czk-roky" class="mini-grid tiles"></div>
         </div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-czk" filename="vydaje-za-ropu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Dovoz ropy</h3>
+          <h3 class="chart-title" id="chart-ropa-energie-title">Dovoz ropy</h3>
         </div>
         <div class="fuel-plot" data-tiles="minis">
           <div id="chart-ropa-energie" class="whole"></div>
           <div id="chart-ropa-mini" class="mini-grid tiles"></div>
         </div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-energie" filename="dovoz-ropy" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Průměrná dovozní cena ropy</h3>
+          <h3 class="chart-title" id="chart-ropa-cena-title">Průměrná dovozní cena ropy</h3>
         </div>
         <div id="chart-ropa-cena"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
-        <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-cena" filename="dovozni-cena-ropy" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
-          <h3 class="chart-title">Výdaje za ropu za posledních 36 měsíců</h3>
+          <h3 class="chart-title" id="chart-ropa-czk-mesice-title">Výdaje za ropu za posledních 36 měsíců</h3>
         </div>
         <div class="fuel-plot" data-tiles="spendByCountry">
           <div id="chart-ropa-czk-mesice" class="whole"></div>
           <div id="chart-ropa-czk-tiles" class="mini-grid tiles"></div>
         </div>
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <h3 class="chart-title">Dovoz ropy za posledních 36 měsíců</h3>
-        <div id="chart-ropa-energie-mesice"></div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-czk-mesice" filename="vydaje-za-ropu-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek krize|v Hormuzském průlivu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
-          <h3 class="chart-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
+          <h3 class="chart-title" id="chart-ropa-energie-mesice-title">Dovoz ropy za posledních 36 měsíců</h3>
+        </div>
+        <div id="chart-ropa-energie-mesice"></div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-energie-mesice" filename="dovoz-ropy-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
+      </div>
+      <div class="fuel-figure" data-span="recent">
+        <div class="chart-head">
+          <h3 class="chart-title" id="chart-ropa-cena-mesice-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
         </div>
         <div id="chart-ropa-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
-        <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-cena-mesice" filename="dovozni-cena-ropy-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
 
       <div class="fuel-head">
@@ -139,89 +143,95 @@ extra-scripts:
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Výdaje za zemní plyn</h3>
+          <h3 class="chart-title" id="chart-plyn-czk-title">Výdaje za zemní plyn</h3>
         </div>
         <div class="fuel-plot" data-tiles="yearSpendByCountry">
           <div id="chart-plyn-czk" class="whole"></div>
           <div id="chart-plyn-czk-roky" class="mini-grid tiles"></div>
         </div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-czk" filename="vydaje-za-zemni-plyn" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek ruské|invaze na Ukrajinu" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Dovoz zemního plynu</h3>
+          <h3 class="chart-title" id="chart-plyn-energie-title">Dovoz zemního plynu</h3>
         </div>
         <div class="fuel-plot" data-tiles="minis">
           <div id="chart-plyn-energie" class="whole"></div>
           <div id="chart-plyn-mini" class="mini-grid tiles"></div>
         </div>
-        <p class="chart-note">Kategorie „Ostatní“ zahrnuje i dovoz, u něhož statistika zemi původu neuvádí — od roku 2023 jde převážně o zkapalněný plyn nakoupený na evropském trhu.</p>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-energie" filename="dovoz-zemniho-plynu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
-          <h3 class="chart-title">Průměrná dovozní cena zemního plynu</h3>
+          <h3 class="chart-title" id="chart-plyn-cena-title">Průměrná dovozní cena zemního plynu</h3>
         </div>
         <div id="chart-plyn-cena"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 600 GWh za rok graf vynechává.</p>
-        <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-cena" filename="dovozni-cena-zemniho-plynu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
-          <h3 class="chart-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
+          <h3 class="chart-title" id="chart-plyn-czk-mesice-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
         </div>
         <div class="fuel-plot" data-tiles="spendByCountry">
           <div id="chart-plyn-czk-mesice" class="whole"></div>
           <div id="chart-plyn-czk-tiles" class="mini-grid tiles"></div>
         </div>
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <h3 class="chart-title">Dovoz zemního plynu za posledních 36 měsíců</h3>
-        <div id="chart-plyn-energie-mesice"></div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-czk-mesice" filename="vydaje-za-zemni-plyn-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
         <div class="chart-head">
-          <h3 class="chart-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
+          <h3 class="chart-title" id="chart-plyn-energie-mesice-title">Dovoz zemního plynu za posledních 36 měsíců</h3>
+        </div>
+        <div id="chart-plyn-energie-mesice"></div>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-energie-mesice" filename="dovoz-zemniho-plynu-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Sezónní vrchol|doplňování zásobníků" %}
+      </div>
+      <div class="fuel-figure" data-span="recent">
+        <div class="chart-head">
+          <h3 class="chart-title" id="chart-plyn-cena-mesice-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
         </div>
         <div id="chart-plyn-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho energetickým obsahem, ne burzovní cena. Země s dovozem pod 50 GWh za měsíc graf vynechává.</p>
-        <p class="chart-note bench-only">Burzovní cena: Brent, resp. TTF — měsíční průměry podle Světové banky (Pink Sheet), přepočtené měsíčním kurzem ČNB.</p>
+        {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-cena-mesice" filename="dovozni-cena-zemniho-plynu-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
     </div>
 
     {% comment %} Interaktivní graf: ovládání nastavuje TOOL v dovoz-fosilnich-paliv.js,
-    stahování obstarává chart-download.js podle data-* atributů tlačítek. {% endcomment %}
+    stahování obstarává chart-download.js podle data-* atributů tlačítek. Rozbalovací
+    jako mapa níže; sbalený se nekreslí, po rozbalení ho překreslí DOVOZ_REDRAW. {% endcomment %}
     <div class="tool">
-      <h2 class="fuel-heading">Prozkoumejte data</h2>
+      <a class="expander collapsed" data-toggle="collapse" data-target="#nastroj-collapse" aria-expanded="false" aria-controls="nastroj-collapse">
+        <div class="expander-button"><i class="fas fa-chevron-down"></i></div>
+        <h2 class="fuel-heading">Prozkoumejte data</h2>
+      </a>
+      <div class="collapse" id="nastroj-collapse">
       <div class="tool-controls">
         <div class="control-group">
           <span class="control-label">Ukazatel</span>
           <div class="seg-buttons" data-control="metric" role="group" aria-label="Ukazatel">
-            <button type="button" data-value="energy" aria-pressed="true">Dovoz</button>
-            <button type="button" data-value="czk" aria-pressed="false">Výdaje</button>
+            <button type="button" data-value="czk" aria-pressed="true">Výdaje</button>
             <button type="button" data-value="price" aria-pressed="false">Cena</button>
+            <button type="button" data-value="energy" aria-pressed="false">Dovoz</button>
           </div>
           <label class="chart-toggle" data-when="price"><input type="checkbox" data-option="bench" autocomplete="off"> burzovní cena</label>
         </div>
         <div class="control-group">
           <span class="control-label">Palivo</span>
-          <div class="seg-buttons" data-control="fuel" role="group" aria-label="Palivo">
-            <button type="button" data-value="crude_oil" aria-pressed="false">Ropa</button>
-            <button type="button" data-value="natural_gas" aria-pressed="false">Zemní plyn</button>
-            <button type="button" data-value="both" aria-pressed="true">Obojí</button>
+          <div class="control-options" role="group" aria-label="Palivo">
+            <label class="chart-toggle"><input type="checkbox" data-fuel="crude_oil" checked autocomplete="off"> Ropa</label>
+            <label class="chart-toggle"><input type="checkbox" data-fuel="natural_gas" checked autocomplete="off"> Zemní plyn</label>
           </div>
         </div>
         <div class="control-group">
           <span class="control-label">Členění</span>
-          <div class="seg-buttons" data-control="split" role="group" aria-label="Členění">
-            <button type="button" data-value="total" aria-pressed="false">Celkem</button>
-            <button type="button" data-value="country" aria-pressed="true">Podle zemí</button>
+          <div class="control-options">
+            <label class="chart-toggle"><input type="checkbox" data-option="split" autocomplete="off"> rozdělení podle zemí</label>
           </div>
-          <label class="chart-toggle" data-when="byCountry"><input type="checkbox" data-option="tiles" autocomplete="off"> zvlášť po zemích</label>
+          <label class="chart-toggle" data-when="byCountry"><input type="checkbox" data-option="tiles" autocomplete="off"> každá země ve vlastním grafu</label>
         </div>
         <div class="control-group">
-          <span class="control-label">Krok</span>
-          <div class="seg-buttons" data-control="step" role="group" aria-label="Krok">
-            <button type="button" data-value="years" aria-pressed="true">Roky</button>
-            <button type="button" data-value="months" aria-pressed="false">Měsíce</button>
+          <span class="control-label">Frekvence</span>
+          <div class="seg-buttons" data-control="step" role="group" aria-label="Frekvence">
+            <button type="button" data-value="years" aria-pressed="false">Roční</button>
+            <button type="button" data-value="months" aria-pressed="true">Měsíční</button>
           </div>
         </div>
         <div class="control-group control-group--years">
@@ -231,14 +241,14 @@ extra-scripts:
           </div>
           <span class="dual-range">
             <span class="range-fill"></span>
-            <input type="range" id="tool-from" aria-label="Od roku">
-            <input type="range" id="tool-to" aria-label="Do roku">
+            <input type="range" id="tool-from" aria-label="Začátek období">
+            <input type="range" id="tool-to" aria-label="Konec období">
           </span>
         </div>
         <div class="control-group control-group--inline">
           <span class="control-label">Kontext</span>
-          <label class="chart-toggle"><input type="checkbox" data-option="invasion" autocomplete="off"> ruská invaze na Ukrajinu</label>
-          <label class="chart-toggle"><input type="checkbox" data-option="hormuz" autocomplete="off"> krize v Hormuzském průlivu</label>
+          <label class="chart-toggle"><input type="checkbox" data-option="invasion" autocomplete="off"> začátek ruské invaze na Ukrajinu</label>
+          <label class="chart-toggle"><input type="checkbox" data-option="hormuz" autocomplete="off"> začátek krize v Hormuzském průlivu</label>
         </div>
       </div>
       <div class="chart-panel tool-panel">
@@ -251,10 +261,11 @@ extra-scripts:
         <div class="chart-foot">
           <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie přepočtena výhřevností</span>
           <span class="chart-downloads">Stáhnout:
-            <button type="button" class="chart-download" data-format="png" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-subtitle="#tool-summary" data-source="#tool-source">PNG</button>,
-            <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-subtitle="#tool-summary" data-source="#tool-source">SVG</button>
+            <button type="button" class="chart-download" data-format="png" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">PNG</button>,
+            <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">SVG</button>
           </span>
         </div>
+      </div>
       </div>
     </div>
 

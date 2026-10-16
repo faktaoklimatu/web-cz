@@ -39,6 +39,9 @@
  *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
  *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
  *   bandLabels    {object}    labels on the bands by key: { x, y, at, dx, dy, lines, valign, color }
+ *   arrows        {object[]}  annotation arrows, as fokArrow's, with target, textEnd and
+ *                             controls as [x, y] in data units; the chart grows upward
+ *                             to fit their text
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
  *   tooltipHtml   {function}  (row) => HTML string shown on hover
@@ -267,6 +270,12 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   if (options.yLabel) {
     fokAxisYLabel(g, yScale, yAxis, options.yLabel,
       { marginLeft: margin.left, inline: options.yLabelInline }, theme);
+  }
+
+  // ── Arrows (options.arrows) ──────────────────────────────────────────────
+  if (options.arrows?.length) {
+    fokArrowsIn(g, options.arrows, ([x, y]) => [xScale(x), yScale(y)], theme);
+    fokFitTop(svg, g, margin, W, H);
   }
 
   // The plot group and scales too, for whatever a page draws over the chart.

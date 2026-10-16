@@ -1,0 +1,11 @@
+{%- comment -%} Zdroj a „Stáhnout: PNG, SVG“ pod grafem přehledu dovozu fosilních paliv
+(chart-download.js). chart = id kontejneru grafu, jehož nadpis má id „{chart}-title“;
+filename bez přípony; source = text zdroje, jde i do staženého souboru; arrow = text
+šipky v grafu (nepovinný), řádky oddělené „|“ — kam šipka míří, určuje JS. {%- endcomment -%}
+<div class="chart-foot" data-chart="{{ include.chart }}"{% if include.arrow %} data-arrow="{{ include.arrow | escape }}"{% endif %}>
+  <span id="{{ include.chart }}-source">{{ include.source }}</span>
+  <span class="chart-downloads">Stáhnout:
+    <button type="button" class="chart-download" data-format="png" data-svg="{{ include.chart }}" data-filename="{{ include.filename }}.png" data-title="#{{ include.chart }}-title" data-source="#{{ include.chart }}-source">PNG</button>,
+    <button type="button" class="chart-download" data-svg="{{ include.chart }}" data-filename="{{ include.filename }}.svg" data-title="#{{ include.chart }}-title" data-source="#{{ include.chart }}-source">SVG</button>
+  </span>
+</div>
