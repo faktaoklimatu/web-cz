@@ -37,7 +37,8 @@
   // shared with the region boxes in the text. Read at draw time, so the ?dev=1
   // sidebar can change them live; the hex is only a fallback.
   const rootStyle = getComputedStyle(document.documentElement);
-  const regionColor = (key, fallback) => rootStyle.getPropertyValue("--region-" + key).trim() || fallback;
+  const varColor = (name, fallback) => rootStyle.getPropertyValue(name).trim() || fallback;
+  const regionColor = (key, fallback) => varColor("--region-" + key, fallback);
   const REGIONS = [
     { key: "cina",  label: "Čína",  get color() { return regionColor("cina", "#e0495a"); } },
     { key: "usa",   label: "USA",   get color() { return regionColor("usa", "#3b85d8"); } },
@@ -59,12 +60,16 @@
 
   // Electricity mix in four groups, bottom of the stack first; Ember's fuels
   // in `from`. Between them they cover all nine of Ember's fuels, so the
-  // shares add up to 100 % with no remainder to show.
+  // shares add up to 100 % with no remainder to show. Colours are CSS
+  // variables (--mix-*) like the region ones, so the ?dev=1 sidebar tunes them.
   const MIX = [
-    { key: "coal",    label: "Uhlí",                   color: "#eb4a66", from: ["Coal"] },
-    { key: "fossil",  label: "Plyn a ostatní fosilní", color: "#b3306e", from: ["Gas", "Other Fossil"] },
-    { key: "nuclear", label: "Jádro",                  color: "#7f94a6", from: ["Nuclear"] },
-    { key: "oze",     label: "Obnovitelné zdroje",     color: "#30b8ab",
+    { key: "coal",    label: "Uhlí",                   get color() { return varColor("--mix-coal", "#eb4a66"); },
+      from: ["Coal"] },
+    { key: "fossil",  label: "Plyn a ostatní fosilní", get color() { return varColor("--mix-fossil", "#b3306e"); },
+      from: ["Gas", "Other Fossil"] },
+    { key: "nuclear", label: "Jádro",                  get color() { return varColor("--mix-nuclear", "#7f94a6"); },
+      from: ["Nuclear"] },
+    { key: "oze",     label: "Obnovitelné zdroje",     get color() { return varColor("--mix-oze", "#30b8ab"); },
       from: ["Hydro", "Bioenergy", "Other Renewables", "Wind", "Solar"] },
   ];
   // Installed capacity by source, bottom of the stack first. Nuclear and
@@ -103,27 +108,28 @@
     bottom: ["odpady"],
   };
 
-  // Climate targets for the timeline. A note is a list of [text, bold, italic]
-  // runs; non-breaking spaces keep "−55 %" in one piece when it wraps.
+  // Climate targets for the timeline. side: where the region's dots push to
+  // and its notes go. A note is a list of [text, bold, italic] runs;
+  // non-breaking spaces keep "−55 %" in one piece when it wraps.
   const GOALS = [
-    { region: "eu", label: "Evropská unie", short: "EU", marks: [
-      { year: 2030, kind: "dot", place: "above", note: [["−55 %", true], [" emisí oproti 1990"]] },
-      { year: 2040, kind: "dot", place: "above", note: [["−90 %", true], [" emisí oproti 1990"]] },
+    { region: "eu", label: "Evropská unie", short: "EU", side: "above", marks: [
+      { year: 2030, kind: "dot", note: [["−55 %", true], [" emisí oproti 1990"]] },
+      { year: 2040, kind: "dot", note: [["−90 %", true], [" emisí oproti 1990"]] },
       { year: 2050, kind: "neutral" },
     ] },
-    { region: "usa", label: "USA", short: "USA", marks: [
-      { year: 2050, kind: "cancelled", note: [["zrušeno", false, true]],
+    { region: "indie", label: "Indie", short: "Indie", side: "above", marks: [
+      { year: 2070, kind: "neutral" },
+    ] },
+    { region: "usa", label: "USA", short: "USA", side: "below", marks: [
+      { year: 2050, kind: "cancelled",
         tip: "Cíle Bidenovy administrativy – klimatická neutralita do roku 2050, −50–52 % emisí " +
              "do roku 2030 a −61–66 % do roku 2035 oproti roku 2005 – zrušila Trumpova administrativa." },
     ] },
-    { region: "cina", label: "Čína", short: "Čína", marks: [
-      { year: 2030, kind: "dot", place: "above", note: [["zvrátit růst", true], [" emisí"]] },
-      { year: 2035, kind: "dot", place: "below", note: [["−7 až −10 %", true],
-        [" do roku 2035 oproti roku s maximálními hodnotami (pravděpodobně 2025 nebo 2026)"]] },
+    { region: "cina", label: "Čína", short: "Čína", side: "below", marks: [
+      { year: 2030, kind: "dot", note: [["zvrátit růst", true], [" emisí"]] },
+      { year: 2035, kind: "dot", note: [["−7 až −10 %", true], [" oproti vrcholu emisí"]],
+        tip: "−7 až −10 % emisí do roku 2035 oproti roku s maximálními hodnotami (pravděpodobně 2025 nebo 2026)" },
       { year: 2060, kind: "neutral" },
-    ] },
-    { region: "indie", label: "Indie", short: "Indie", marks: [
-      { year: 2070, kind: "neutral", align: "end" },
     ] },
   ];
 
@@ -239,6 +245,7 @@
   // auto-scale independently make the comparison meaningless.
   //   o.rows: Map region → [{year, <key>: value}]   o.keys: [{key, label, color}]
   //   (a single key with no colour takes the region's colour)
+  //   o.square: plot area as tall as it is wide
   function smallMultiples(svg, width, o) {
     const multi = o.keys.length > 1;
     let top = multi ? legend(svg, o.keys, width) : 0;
@@ -247,7 +254,7 @@
     const cols = width >= 560 ? 4 : 2;
     const left = 40, gapX = 16, titleH = 22, axisH = 22, rowGap = 14;
     const panelW = (width - left - gapX * (cols - 1)) / cols;
-    const plotH = cols === 4 ? 150 : 130;
+    const plotH = o.square ? panelW : cols === 4 ? 150 : 130;
 
     const years = o.rows.get(REGIONS[0].key).map(d => d.year);
     const x = d3.scaleLinear().domain(d3.extent(years)).range([0, panelW]);
@@ -527,63 +534,79 @@
     return out;
   }
 
-  // Waffle as in the original FoK graphic: one square per percent of the
-  // world, five to a column, columns filled bottom-up from the left, name and
-  // share underneath. The last block (rest of the world) stands further off.
+  // Waffle: a 4-row grid, one square per percent of the world. The regions
+  // follow one another with no gap, column by column from the left, each
+  // column filled top-down; the last block (rest of the world) carries on
+  // the same sequence, shifted right past an empty column. Name and share sit under the column a
+  // block starts in, nudged sideways where narrow regions would collide.
   //   o.rows: [{region, value, share}]
   function waffle(svg, width, o) {
-    const top = 30 + unitCaption(svg, o.unit, 13, width), ROWS = 5, NAME_SIZE = 15, GAP = 1.5, GAP_LAST = 3;
-    const counts = largestRemainder(o.rows.map(d => d.share), 100);
-    const blocks = o.rows.map((d, i) => ({ ...d, n: counts[i], cols: Math.ceil(counts[i] / ROWS) }));
+    const top = 0;
+    const ROWS = 4, COLS = 25, NAME_SIZE = 15, LABEL_GAP = 12, SQUARE_GAP = 2, REST_GAP_COLS = 1;
+    const cell = width * 0.8 * 0.8 / COLS;   // 4/5 of the width for 4 × 25, scaled down to 0.8
+    const counts = largestRemainder(o.rows.map(d => d.share), ROWS * COLS);
+    let first = 0;
+    const blocks = o.rows.map((d, i) => {
+      // Same row offset as where the previous block stopped, just moved past
+      // an empty column, so the sequence reads on rather than restarting.
+      if (i === o.rows.length - 1) first += (REST_GAP_COLS + (first % ROWS ? 1 : 0)) * ROWS;
+      const b = { ...d, first, n: counts[i] };
+      first += counts[i];
+      return b;
+    });
     const measure = (text, weight) => {
       const t = svg.append("text").attr("font-size", NAME_SIZE).attr("font-weight", weight).text(text);
       const w = t.node().getComputedTextLength();
       t.remove();
       return w;
     };
+
+    // Labels: at their start column, pushed right past the previous one, then
+    // pulled back left from the edge. ponytail: on a very narrow screen the
+    // five labels may still not fit side by side; stack them if that matters.
     blocks.forEach(b => {
       b.labelW = Math.max(measure(b.region.label, 700), measure(fmt(b.share, 1) + " %", 400));
+      b.labelX = Math.floor(b.first / ROWS) * cell;
     });
-    const gapAfter = i => (i === blocks.length - 2 ? GAP_LAST : GAP);
-    const rowWidth = cell => d3.sum(blocks, (b, i) =>
-      Math.max(b.cols * cell, b.labelW) + (i < blocks.length - 1 ? gapAfter(i) * cell : 0));
-    // Largest square that fits the row, capped near the original's size.
-    let lo = 4, hi = 24;
-    for (let i = 0; i < 30; i++) {
-      const mid = (lo + hi) / 2;
-      if (rowWidth(mid) <= width) lo = mid; else hi = mid;
-    }
-    const cell = lo;
-
-    let x = 0;
     blocks.forEach((b, i) => {
-      const g = svg.append("g").attr("transform", `translate(${x},${top})`);
+      if (i) b.labelX = Math.max(b.labelX, blocks[i - 1].labelX + blocks[i - 1].labelW + LABEL_GAP);
+    });
+    for (let i = blocks.length - 1; i >= 0; i--) {
+      const limit = i === blocks.length - 1 ? width : blocks[i + 1].labelX - LABEL_GAP;
+      blocks[i].labelX = Math.min(blocks[i].labelX, limit - blocks[i].labelW);
+    }
+
+    const g = svg.append("g").attr("transform", `translate(0,${top})`);
+    blocks.forEach(b => {
       const textColor = d3.lab(b.region.color).l > 75 ? d3.lab(b.region.color).darker(1.5) : b.region.color;
-      g.selectAll("rect").data(d3.range(b.n)).join("rect")
-        .attr("x", j => Math.floor(j / ROWS) * cell)
-        .attr("y", j => (ROWS - 1 - j % ROWS) * cell)
-        .attr("width", cell - 2).attr("height", cell - 2)
+      g.append("g").selectAll("rect").data(d3.range(b.first, b.first + b.n)).join("rect")
+        .attr("x", k => Math.floor(k / ROWS) * cell)
+        .attr("y", k => (k % ROWS) * cell)
+        .attr("width", cell - SQUARE_GAP).attr("height", cell - SQUARE_GAP)
         .attr("fill", b.region.color)
         .on("mousemove", ev => showTip(ev, `${sw(b.region.color)}<strong>${b.region.label}</strong>: ` +
           `${fmt(b.share, 1)} % (${fmt(b.value, 0)} ${o.short})`))
         .on("mouseleave", hideTip);
-      g.append("text").attr("y", ROWS * cell + 6 + NAME_SIZE)
+      g.append("text").attr("x", b.labelX).attr("y", ROWS * cell + 6 + NAME_SIZE)
         .attr("font-size", NAME_SIZE).attr("font-weight", 700).attr("fill", textColor)
         .text(b.region.label);
-      g.append("text").attr("y", ROWS * cell + 6 + NAME_SIZE * 2 + 4)
+      g.append("text").attr("x", b.labelX).attr("y", ROWS * cell + 6 + NAME_SIZE * 2 + 4)
         .attr("font-size", NAME_SIZE).attr("font-weight", 400).attr("fill", textColor)
         .text(fmt(b.share, 1) + " %");
-      x += Math.max(b.cols * cell, b.labelW) + gapAfter(i) * cell;
     });
     return top + ROWS * cell + 6 + NAME_SIZE * 2 + 8;
   }
 
-  // Timeline of climate targets, after the FoK graphic in the article draft:
-  // a line per region, small dots for interim targets with an arrowed note,
-  // a large dot for climate neutrality, a crossed one for a cancelled target.
+  // Climate targets on one time axis, a small beeswarm: a large dot for each
+  // region's climate-neutrality year (the chart title says what it is), a
+  // dashed hollow one for a cancelled target, a small dot with an arrowed note
+  // for each interim target. EU and India sit above the line, China and USA
+  // below; dots of the same year on both sides push apart. Labels are laid out
+  // from the right in levels moving away from the line, so a note never runs
+  // into another note or across another note's arrow.
   function timeline(svg, width, goals) {
-    const NOTE = 13, LINE_H = 16, NEUTRAL = 15, YEAR = 18, R = 11, r = 4.5;
-    const narrow = width < 560;
+    const NOTE = 13, LABEL = 15, LINE_H = 16, LEVEL_GAP = 6, R = 11, r = 4.5;
+    const narrow = width < 560, NOTE_W = narrow ? 110 : 140;
 
     const widths = new Map();
     const measure = (t, size, bold, italic) => {
@@ -600,13 +623,13 @@
     };
 
     // Greedy word wrap over styled runs; breaks only at plain spaces.
-    function wrap(runs, maxW) {
+    function wrap(runs, maxW, size) {
       const words = runs.flatMap(([t, bold, italic]) =>
         t.split(/(?<= )/).map(w => ({ t: w, bold, italic })));
       const lines = [[]];
       let w = 0;
       words.forEach(word => {
-        const ww = measure(word.t, NOTE, word.bold, word.italic);
+        const ww = measure(word.t, size, word.bold, word.italic);
         if (w + ww > maxW && lines[lines.length - 1].length) {
           lines.push([]);
           w = 0;
@@ -615,10 +638,10 @@
         lines[lines.length - 1].push(word);
         w += ww;
       });
-      return { lines, w: d3.max(lines, l => d3.sum(l, x => measure(x.t, NOTE, x.bold, x.italic))) };
+      return { lines, w: d3.max(lines, l => d3.sum(l, x => measure(x.t, size, x.bold, x.italic))) };
     }
-    function drawRuns(g, line, x, y, color, anchor) {
-      const t = g.append("text").attr("x", x).attr("y", y).attr("font-size", NOTE).attr("fill", color)
+    function drawRuns(g, line, x, y, color, anchor, size) {
+      const t = g.append("text").attr("x", x).attr("y", y).attr("font-size", size).attr("fill", color)
         .attr("text-anchor", anchor || "start");
       line.forEach(word => t.append("tspan").attr("font-weight", word.bold ? 700 : 400)
         .attr("font-style", word.italic ? "italic" : null).text(word.t));
@@ -634,108 +657,111 @@
         .attr("stroke-linejoin", "round").attr("stroke-linecap", "round");
     }
 
-    const labelOf = gl => (narrow ? gl.short : gl.label);
-    const LABEL = narrow ? 14 : 17;
-    const labelCol = d3.max(goals, gl => measure(labelOf(gl), LABEL, true)) + 16;
-    const x = d3.scaleLinear().domain([2027, 2072]).range([labelCol, width - 4]);
+    const x = d3.scaleLinear().domain([2027, 2072]).range([R + 4, width - R - 4]);
+    const marks = goals.flatMap(gl => gl.marks.map(m => ({
+      ...m, side: gl.side, color: regionOf(gl.region).color, cx: x(m.year), rad: m.kind === "dot" ? r : R, dy: 0,
+      // Large dots: region name and year (and "zrušeno" under a cancelled one).
+      // Small dots: the note, wrapped, starting just right of the dot.
+      text: m.kind === "dot" ? m.note
+        : [[narrow ? gl.short : gl.label, true], [" " + m.year]],
+    })));
 
-    // Lay out every annotation first: horizontal span and height above or
-    // below its line, so the rows can be spaced to clear each other.
-    const rows = goals.map(gl => {
-      const reg = regionOf(gl.region);
-      const marks = gl.marks.map((m, i) => {
-        const cx = x(m.year);
-        // A note runs on until the next thing drawn on its own side of the line.
-        const sideOf = mk => (mk.kind === "dot" ? mk.place : "above");
-        const next = gl.marks.slice(i + 1).find(mk => sideOf(mk) === sideOf(m));
-        if (m.kind === "neutral") {
-          const w = Math.max(measure("Klimatická neutralita", NEUTRAL, true), measure(String(m.year), YEAR));
-          // Hangs right from the dot, or left of it where it would run off the edge.
-          const align = m.align || (cx - R + w > width ? "end" : "start");
-          const x0 = align === "end" ? cx + R - w : cx - R;
-          return { ...m, align, cx, side: "above", x0, x1: x0 + w, h: 18 + 22 + NEUTRAL };
-        }
-        if (m.kind === "cancelled") {
-          const w = measure(m.note[0][0], NOTE, false, true);
-          return { ...m, cx, side: "above", x0: cx - 14 - w, x1: cx, h: 26 + NOTE };
-        }
-        const tx = cx + (m.place === "below" ? 22 : 12);
-        const maxRight = next ? x(next.year) - (next.kind === "dot" ? 16 : R + 16) : width - 4;
-        const wrapped = wrap(m.note, Math.max(60, maxRight - tx));
-        const n = wrapped.lines.length;
-        return { ...m, cx, side: m.place, tx, wrapped, x0: tx, x1: tx + wrapped.w,
-                 h: m.place === "below" ? 30 + (n - 1) * LINE_H + 4 : 16 + n * LINE_H };
-      });
-      return { gl, reg, marks,
-               above: marks.filter(m => m.side === "above"), below: marks.filter(m => m.side === "below") };
-    });
+    // Beeswarm: dots on opposite sides that would touch both move off the
+    // line by half the overlap.
+    marks.forEach(a => marks.forEach(b => {
+      const d = a.rad + b.rad + 2, dx = Math.abs(a.cx - b.cx);
+      if (a.side !== b.side && dx < d) a.dy = Math.max(a.dy, Math.sqrt(d * d - dx * dx) / 2);
+    }));
 
-    const overlaps = (a, b) => a.x0 < b.x1 + 8 && b.x0 < a.x1 + 8;
-    let y = 30 + (d3.max(rows[0].above, m => m.h) || 0) + 8;
-    rows.forEach((row, i) => {
-      if (i) {
-        const prev = rows[i - 1];
-        const pairs = prev.below.flatMap(b => row.above.filter(a => overlaps(a, b)).map(a => a.h + b.h + 10));
-        y += Math.max(40, (d3.max(prev.below, m => m.h) || 0) + 12,
-                      (d3.max(row.above, m => m.h) || 0) + 12, d3.max(pairs) || 0);
+    marks.forEach(m => {
+      m.size = m.kind === "dot" ? NOTE : LABEL;
+      m.wrapped = wrap(m.text, m.kind === "dot" ? NOTE_W : Infinity, m.size);
+      if (m.kind === "cancelled") {
+        m.wrapped.lines.push([{ t: "zrušeno", italic: true }]);
+        m.wrapped.w = Math.max(m.wrapped.w, measure("zrušeno", LABEL, false, true));
       }
-      row.y = y;
+      m.h = m.wrapped.lines.length * LINE_H;
     });
 
-    // Axis on top: year labels with a short tick under each.
+    // Levels per side, filled right to left: a note takes the level nearest
+    // the line where it fits, and its arrow reserves a corridor on every level
+    // it crosses. A large-dot label has no arrow, so it stays on level 0 and
+    // hangs right from its dot or, where that is taken or runs off the edge,
+    // left of it. ponytail: if neither fits it still lands on level 0, over
+    // whatever is there; no such clash with this data.
+    const sides = {};
+    ["above", "below"].forEach(side => {
+      const occ = [], heights = [];
+      const free = (k, [a, b]) => !(occ[k] || []).some(([c, d]) => c < b && a < d);
+      marks.filter(m => m.side === side).sort((a, b) => b.cx - a.cx).forEach(m => {
+        const w = m.wrapped.w;
+        let k = 0;
+        if (m.kind === "dot") {
+          m.x0 = m.cx + 12;
+          m.align = "start";
+          const span = [m.x0 - 8, m.x0 + w + 8], corridor = [m.cx - 6, m.x0];
+          while (k < occ.length && (!free(k, span) || d3.range(k).some(j => !free(j, corridor)))) k++;
+          if (k) d3.range(k).forEach(j => occ[j].push(corridor));
+        } else {
+          const fits = x0 => x0 >= 0 && x0 + w <= width;
+          const options = [m.cx - R, m.cx + R - w];
+          m.x0 = options.find(x0 => fits(x0) && free(0, [x0 - 8, x0 + w + 8]))
+            ?? options.find(fits) ?? options[0];
+          m.align = m.x0 === options[0] ? "start" : "end";
+        }
+        m.x1 = m.x0 + w;
+        const span = [m.x0 - 8, m.x1 + 8];
+        m.level = k;
+        (occ[k] = occ[k] || []).push(span);
+        heights[k] = Math.max(heights[k] || 0, m.h);
+      });
+      const clear = (d3.max(marks.filter(m => m.side === side), m => m.dy + m.rad) || 0) + 8;
+      // Distance from the line to each level's inner edge.
+      const offset = heights.map((h, k) => clear + d3.sum(heights.slice(0, k)) + k * LEVEL_GAP);
+      sides[side] = { offset, total: clear + d3.sum(heights) + (heights.length - 1) * LEVEL_GAP };
+    });
+
+    const AXIS = 30;
+    const lineY = AXIS + sides.above.total;
+
+    // Axis on top: year labels with a short tick under each, and the same
+    // ticks on the line itself.
     [2030, 2040, 2050, 2060, 2070].forEach(yr => {
       svg.append("text").attr("x", x(yr)).attr("y", 14).attr("text-anchor", "middle")
         .attr("font-size", C.axisFontSize + 1).attr("fill", C.axis).text(yr);
       svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", 20).attr("y2", 26)
         .attr("stroke", C.axis).attr("stroke-width", 1.3);
-    });
-
-    rows.forEach(row => {
-      const c = row.reg.color, g = svg.append("g");
-      g.append("text").attr("x", labelCol - 16).attr("y", row.y).attr("dy", "0.35em")
-        .attr("text-anchor", "end").attr("font-size", LABEL).attr("font-weight", 700).attr("fill", c)
-        .text(labelOf(row.gl));
-      g.append("line").attr("x1", labelCol).attr("x2", width).attr("y1", row.y).attr("y2", row.y)
+      svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", lineY - 4).attr("y2", lineY + 4)
         .attr("stroke", "#8a94a3").attr("stroke-width", 1.5);
+    });
+    svg.append("line").attr("x1", 0).attr("x2", width).attr("y1", lineY).attr("y2", lineY)
+      .attr("stroke", "#8a94a3").attr("stroke-width", 1.5);
 
-      row.marks.forEach(m => {
-        if (m.kind === "neutral") {
-          g.append("circle").attr("cx", m.cx).attr("cy", row.y).attr("r", R)
-            .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", 4).attr("paint-order", "stroke");
-          const ax = m.align === "end" ? m.cx + R : m.cx - R, anchor = m.align === "end" ? "end" : "start";
-          g.append("text").attr("x", ax).attr("y", row.y - 40).attr("text-anchor", anchor)
-            .attr("font-size", NEUTRAL).attr("font-weight", 700).attr("fill", c).text("Klimatická neutralita");
-          g.append("text").attr("x", ax).attr("y", row.y - 18).attr("text-anchor", anchor)
-            .attr("font-size", YEAR).attr("fill", c).text(m.year);
-        } else if (m.kind === "cancelled") {
-          g.append("circle").attr("cx", m.cx).attr("cy", row.y).attr("r", R)
-            .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", 4).attr("paint-order", "stroke")
-            .on("mousemove", ev => showTip(ev, m.tip)).on("mouseleave", hideTip);
-          [[-1, -1, 1, 1], [-1, 1, 1, -1]].forEach(([a, b, d, e]) => g.append("line")
-            .attr("x1", m.cx + a * 4.5).attr("y1", row.y + b * 4.5).attr("x2", m.cx + d * 4.5).attr("y2", row.y + e * 4.5)
-            .attr("stroke", "#fff").attr("stroke-width", 2.5).attr("stroke-linecap", "round")
-            .attr("pointer-events", "none"));
-          drawRuns(g, [{ t: m.note[0][0], italic: true }], m.cx - 14, row.y - 26, c, "end");
-          arrow(g, m.cx - 10, row.y - 30, m.cx, row.y - 30, m.cx, row.y - R - 4, c);
-        } else {
-          g.append("circle").attr("cx", m.cx).attr("cy", row.y).attr("r", r)
-            .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", 4).attr("paint-order", "stroke");
-          const n = m.wrapped.lines.length;
-          if (m.side === "above") {
-            const last = row.y - 16;
-            m.wrapped.lines.forEach((line, i) => drawRuns(g, line, m.tx, last - (n - 1 - i) * LINE_H, c));
-            arrow(g, m.tx - 3, last - 4, m.cx, last - 4, m.cx, row.y - r - 4, c);
-          } else {
-            const first = row.y + 30;
-            m.wrapped.lines.forEach((line, i) => drawRuns(g, line, m.tx, first + i * LINE_H, c));
-            arrow(g, m.tx - 3, first - 4, m.cx, first - 4, m.cx, row.y + r + 4, c);
-          }
-        }
-      });
+    marks.forEach(m => {
+      const g = svg.append("g"), c = m.color, up = m.side === "above" ? -1 : 1;
+      const cy = lineY + up * m.dy;
+      const dot = g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad);
+      if (m.kind === "cancelled") {
+        dot.attr("fill", "transparent").attr("stroke", c).attr("stroke-width", 2).attr("stroke-dasharray", "3 2.5");
+      } else {
+        dot.attr("fill", c).attr("stroke", "#fff").attr("stroke-width", m.kind === "dot" ? 4 : 3)
+          .attr("paint-order", "stroke");
+      }
+      if (m.tip) dot.on("mousemove", ev => showTip(ev, m.tip)).on("mouseleave", hideTip);
+
+      // Baselines: lines stack away from the line, the first one nearest it.
+      const inner = lineY + up * sides[m.side].offset[m.level];
+      const n = m.wrapped.lines.length;
+      const baseline = i => up < 0 ? inner - 3 - (n - 1 - i) * LINE_H : inner + m.size - 2 + i * LINE_H;
+      const tx = m.align === "end" ? m.x1 : m.x0;
+      m.wrapped.lines.forEach((line, i) => drawRuns(g, line, tx, baseline(i), c, m.align, m.size));
+      if (m.kind === "dot") {
+        const ay = baseline(up < 0 ? n - 1 : 0) - 4;
+        arrow(g, m.x0 - 3, ay, m.cx, ay, m.cx, cy + up * (m.rad + 4), c);
+      }
     });
 
-    const last = rows[rows.length - 1];
-    return last.y + Math.max(R + 6, (d3.max(last.below, m => m.h) || 0) + 6);
+    return lineY + sides.below.total + 4;
   }
 
   // ── Data → charts ─────────────────────────────────────────────────────────
@@ -776,12 +802,31 @@
     rows.forEach(d => { d.share = d.value / world * 100; });
     mount("graf-podil", (svg, w) => waffle(svg, w, {
       rows, short: "Mt CO₂eq",
-      unit: "1 čtvereček = 1 % světových emisí skleníkových plynů (bez lesnictví a využití půdy)",
     }));
   });
 
-  // Emise CO₂ — switch between total, per capita and cumulative share.
-  csv("emise-co2.csv").then(raw => {
+  // Emise CO₂ — switch between total, per capita and cumulative share, plus
+  // a fourth view with greenhouse gases per capita by sector (EDGAR). That one
+  // is a different gas set, year and source, so the title and source above and
+  // below the chart swap with it (the PNG/SVG export reads them live).
+  Promise.all([csv("emise-co2.csv"), csv("emise-sektory.csv"), csv("emise-celkem.csv")])
+    .then(([raw, sectorRaw, perCapita]) => {
+    // Emise podle sektorů na obyvatele — all gases summed per sector. The
+    // population is EDGAR's own (its total over its per-capita figure), so the
+    // regions' totals here match the per-capita numbers EDGAR publishes.
+    const population = new Map(perCapita.map(d => [d.region, d.ghg_total_mt / d.ghg_per_capita_t]));
+    const lookup = new Map(SECTORS.flatMap(s => s.from.map(f => [f, s.key])));
+    const sectorRows = new Map();
+    d3.group(sectorRaw, d => d.region).forEach((rr, reg) => {
+      const sums = Object.fromEntries(SECTORS.map(s => [s.key, 0]));
+      rr.forEach(d => {
+        const key = lookup.get(d.sector);
+        if (key) sums[key] += +d.mt_co2eq;
+        else console.warn("emise-sektory.csv: neznámý sektor", d.sector);
+      });
+      sectorRows.set(reg, Object.fromEntries(SECTORS.map(s => [s.key, sums[s.key] / population.get(reg)])));
+    });
+
     const METRICS = {
       total:     { label: "Celkové emise", col: "co2_mt", k: 1 / 1000, decimals: 2, short: "mld. t",
                    unit: "Roční emise CO₂ (mld. t)" },
@@ -789,11 +834,26 @@
                    unit: "Roční emise CO₂ na obyvatele (t)" },
       cumShare:  { label: "Podíl na kumulativních emisích", col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
                    unit: "Podíl na světových emisích CO₂ od roku 1750 (%)" },
+      sectors:   { label: "Podle sektorů",
+                   title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2024",
+                   source: '<a href="https://edgar.jrc.ec.europa.eu/report_2025">EDGAR</a> (Společné výzkumné středisko EK, 2025)' },
     };
+    const titleEl = document.getElementById("graf-emise-title");
+    const sourceEl = document.getElementById("graf-emise-source");
+    const base = { title: titleEl?.textContent, source: sourceEl?.innerHTML };
     let metric = "total", draw = () => {};
     addSwitch("graf-emise", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
-      key => { metric = key; draw(); });
+      key => {
+        metric = key;
+        if (titleEl) titleEl.textContent = METRICS[key].title || base.title;
+        if (sourceEl) sourceEl.innerHTML = METRICS[key].source ? "Zdroj: " + METRICS[key].source : base.source;
+        draw();
+      });
     draw = mount("graf-emise", (svg, w) => {
+      if (metric === "sectors") return squares(svg, w, {
+        keys: SECTORS, rows: sectorRows, layout: SQUARES_LAYOUT, short: "t CO₂eq",
+        unit: "Tuny CO₂eq na obyvatele (bez lesnictví a využití půdy)",
+      });
       const m = METRICS[metric];
       const rows = new Map();
       d3.group(raw, d => d.region).forEach((rr, reg) =>
@@ -803,28 +863,6 @@
         yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1990, 2010, 2024],
       });
     });
-  });
-
-  // Emise podle sektorů na obyvatele — all gases summed per sector. The
-  // population is EDGAR's own (its total over its per-capita figure), so the
-  // regions' totals here match the per-capita numbers EDGAR publishes.
-  Promise.all([csv("emise-sektory.csv"), csv("emise-celkem.csv")]).then(([raw, perCapita]) => {
-    const population = new Map(perCapita.map(d => [d.region, d.ghg_total_mt / d.ghg_per_capita_t]));
-    const lookup = new Map(SECTORS.flatMap(s => s.from.map(f => [f, s.key])));
-    const rows = new Map();
-    d3.group(raw, d => d.region).forEach((rr, reg) => {
-      const sums = Object.fromEntries(SECTORS.map(s => [s.key, 0]));
-      rr.forEach(d => {
-        const key = lookup.get(d.sector);
-        if (key) sums[key] += +d.mt_co2eq;
-        else console.warn("emise-sektory.csv: neznámý sektor", d.sector);
-      });
-      rows.set(reg, Object.fromEntries(SECTORS.map(s => [s.key, sums[s.key] / population.get(reg)])));
-    });
-    mount("graf-sektory", (svg, w) => squares(svg, w, {
-      keys: SECTORS, rows, layout: SQUARES_LAYOUT, short: "t CO₂eq",
-      unit: "Tuny CO₂eq na obyvatele (bez lesnictví a využití půdy)",
-    }));
   });
 
   // Mix výroby elektřiny — shares or TWh, both straight from Ember.
@@ -846,6 +884,7 @@
       key => { metric = key; draw(); });
     draw = mount("graf-mix", (svg, w) => smallMultiples(svg, w, {
       ...METRICS[metric], keys: MIX, rows: rows[metric], yMax: yMax[metric], xTicks: [2000, 2010, 2025],
+      square: true,
     }));
   });
 
@@ -874,7 +913,7 @@
     addSwitch("graf-oze", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
       key => { metric = key; draw(); });
     draw = mount("graf-oze", (svg, w) => smallMultiples(svg, w, {
-      ...METRICS[metric], keys: shown, xTicks: [2000, 2010, 2025],
+      ...METRICS[metric], keys: shown, xTicks: [2000, 2010, 2025], square: true,
     }));
   });
 

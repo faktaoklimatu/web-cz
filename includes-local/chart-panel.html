@@ -6,9 +6,10 @@ assets-local/js/chart-download.js wires up. Styles: assets-local/_chart-panel.sc
 
 The title is a div, not an h2, so it stays out of the article's table of contents.
 
-Params: id (required), title, source (HTML, e.g. '<a href="…">Ember</a>')
+Params: id (required), title, source (HTML, e.g. '<a href="…">Ember</a>'),
+class (extra classes on the panel, e.g. wide-figure-desktop)
 {%- endcomment -%}
-<div class="d3-panel" id="{{ include.id }}">
+<div class="d3-panel {{ include.class }}" id="{{ include.id }}">
   <div class="d3-title" id="{{ include.id }}-title">{{ include.title }}</div>
   <svg id="{{ include.id }}-svg"></svg>
   <div class="chart-foot">

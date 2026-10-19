@@ -3,7 +3,7 @@
  *
  * Only runs with ?dev=1 in the URL, so it can never reach a normal visitor.
  * Every knob is a CSS variable on :root (defaults in assets-local/_chart-panel.scss).
- * The region colours are shared with the charts (grafy.js reads them at draw
+ * The region and electricity-mix colours are shared with the charts (grafy.js reads them at draw
  * time), so a colour change also calls window.REGIONY_REDRAW. Settings survive
  * a reload via localStorage. When the look is final, hit "Kopírovat" and paste the :root block over the one in
  * _chart-panel.scss, then delete this file and its extra-scripts line.
@@ -18,19 +18,21 @@
     colorCina: ["--region-cina", "#e0495a", ""],
     colorUSA: ["--region-usa", "#3b85d8", ""],
     colorIndie: ["--region-indie", "#37a97e", ""],
-    tint: ["--region-tint", 0, "%"],
+    mixCoal: ["--mix-coal", "#eb4a66", ""],
+    mixFossil: ["--mix-fossil", "#b3306e", ""],
+    mixNuclear: ["--mix-nuclear", "#7f94a6", ""],
+    mixOze: ["--mix-oze", "#30b8ab", ""],
+    tint: ["--region-tint", 3, "%"],
     border: ["--region-border", 1, "px"],
     radius: ["--region-radius", 8, "px"],
     pad: ["--region-pad", 16, "px"],
     flag: ["--region-flag", 22, "px"],
     titleSize: ["--region-title-size", 22, "px"],
     textSize: ["--region-text-size", 1, "rem"],
-    cardWidth: ["--region-card-width", 85, "%"],
-    fade: ["--region-fade", 15, "%"],
+    lineHeight: ["--region-line-height", 1.5, "em"],
   };
   // key -> [selector, class]: checkboxes that toggle a class, not a variable.
   const CLASSES = {
-    carousel: [".region-grid", "is-carousel"],
   };
 
   const FIELDS = [
@@ -39,6 +41,12 @@
       ["colorCina", "Čína", "color"],
       ["colorUSA", "USA", "color"],
       ["colorIndie", "Indie", "color"],
+    ]],
+    ["Mix výroby elektřiny", [
+      ["mixCoal", "Uhlí", "color"],
+      ["mixFossil", "Plyn a ostatní fosilní", "color"],
+      ["mixNuclear", "Jádro", "color"],
+      ["mixOze", "Obnovitelné zdroje", "color"],
     ]],
     ["Boxy", [
       ["tint", "Podbarvení (%)", "range", 0, 30, 1],
@@ -52,9 +60,7 @@
     ]],
     ["Hlavní charakteristiky", [
       ["textSize", "Velikost písma (rem)", "range", 0.7, 1.6, 0.05],
-      ["carousel", "Karusel místo mřížky 2×2", "checkbox"],
-      ["cardWidth", "Šířka karty (%)", "range", 50, 100, 1],
-      ["fade", "Přechod okraje (%)", "range", 0, 40, 1],
+      ["lineHeight", "Řádkování (em)", "range", 1, 2.2, 0.05],
     ]],
   ];
 

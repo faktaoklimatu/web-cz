@@ -125,15 +125,19 @@
     --region-cina: #e0495a;
     --region-usa: #3b85d8;
     --region-indie: #37a97e;
-    --region-tint: 0%;          // background = region colour at this strength
+    --region-tint: 3%;          // background = region colour at this strength
     --region-border: 1px;
     --region-radius: 8px;
     --region-pad: 16px;
     --region-flag: 22px;
     --region-title-size: 22px;
     --region-text-size: 1rem;   // body text in the 2×2 "Hlavní charakteristiky" boxes
-    --region-card-width: 85%;   // carousel: card share of the row, the rest is the next card peeking in
-    --region-fade: 15%;         // carousel: width of the fade over the peeking card
+    --region-line-height: 1.5em; // its line height (em: the sidebar reads a unitless knob as a colour)
+    // Chart "Mix výroby elektřiny" (MIX in grafy.js).
+    --mix-coal: #eb4a66;
+    --mix-fossil: #b3306e;
+    --mix-nuclear: #7f94a6;
+    --mix-oze: #30b8ab;
 }
 
 .region-box {
@@ -163,7 +167,6 @@
 
 // Equal heights only inside the 2×2 grid; full-width boxes size to content.
 .region-grid .region-box { height: 100%; }
-.region-grid .region-box strong { color: var(--region); }
 .region-stats {
     color: #718096;
     p { font-size: 0.9rem; margin-bottom: 0.25rem; }
@@ -173,66 +176,33 @@
 .region-detail {
     width: 75%;
 }
-.region-grid .region-box p { font-size: var(--region-text-size); }
+// The boxes list only the bold key phrases, each behind an icon; the full
+// text follows under the grid.
+.region-grid .region-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.region-grid .region-box li {
+    color: var(--region);
+    font-size: var(--region-text-size);
+    line-height: var(--region-line-height);
+    margin-bottom: 0.4em;
+}
 
 .region-eu    { --region: var(--region-eu); }
 .region-cina  { --region: var(--region-cina); }
 .region-usa   { --region: var(--region-usa); }
 .region-indie { --region: var(--region-indie); }
 
-// Font Awesome icon before the repeated labels (Strategie / Nástroje / Governance).
+// Font Awesome icon before each key phrase in the boxes; takes the region
+// colour from the list item.
 .region-icon {
     width: 1.25em;
     text-align: center;
-    color: var(--region);
 }
 
-// Carousel variant of the 2×2 grid (class is-carousel on .region-grid, toggled
-// from the ?dev=1 sidebar): cards side by side, the next one peeking in,
-// moved by the arrows from karusel.js or by swiping. Scroll-snap keeps a card
-// aligned to the text column; the row stretches all cards to the tallest one.
-.region-grid.is-carousel {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    &::-webkit-scrollbar { display: none; }
-
-    // The peeking card fades out at the edge. The mask sits on the scroll box,
-    // so it stays put while the cards move under it. Cards snap to the left,
-    // so the peek is on the right, except at the last card (karusel.js flags
-    // it), where the previous card peeks in on the left instead.
-    --fade-l: 0%;
-    --fade-r: var(--region-fade);
-    &.at-end { --fade-l: var(--region-fade); --fade-r: 0%; }
-    $fade: linear-gradient(to right, transparent, #000 var(--fade-l),
-                           #000 calc(100% - var(--fade-r)), transparent);
-    -webkit-mask-image: $fade;
-    mask-image: $fade;
-
-    > * {
-        flex: 0 0 var(--region-card-width);
-        max-width: var(--region-card-width);
-        scroll-snap-align: start;
-    }
-}
-
-.region-carousel-nav {
-    display: none;
-    justify-content: flex-end;
-    gap: 8px;
-    margin: -0.5rem 0 1.5rem;
-
-    button {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        border: 1px solid #cbd5e0;
-        background: #fff;
-        color: #2d3748;
-
-        &:disabled { opacity: 0.35; }
-    }
-}
-
-.region-grid.is-carousel + .region-carousel-nav { display: flex; }
+// web-core pads every div inside an expandable box (.expandable-content div),
+// so the panel's own nested divs stacked up an indent. Keep the panel flush.
+.expandable-content .d3-panel,
+.expandable-content .d3-panel div { padding: 0; }
