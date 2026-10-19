@@ -28,6 +28,7 @@
  *   colors        {object}    { key: colorString }
  *   labels        {object}    { key: labelString }
  *   proportional  {boolean}   normalize each row to 100 % (default false)
+ *   yMax          {number}    force the y-axis maximum (shared scale across small multiples)
  *   legend        {boolean}   render a color legend below the chart (default false)
  *   yLabel        {string}    y-axis label
  *   title         {string}    chart title
@@ -87,7 +88,8 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
 
   // ── Scales ──────────────────────────────────────────────────────────────
   const xScale = d3.scaleLinear().domain(d3.extent(xVals)).range([0, inner.w]);
-  const yMax   = options.proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
+  const yMax   = options.yMax
+    ?? (options.proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1])));
   const yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]);
 
   // ── Grid + Axes ──────────────────────────────────────────────────────────

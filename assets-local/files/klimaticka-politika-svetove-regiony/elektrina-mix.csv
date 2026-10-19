@@ -1,0 +1,885 @@
+region,year,source,share_pct,twh
+cina,2000,Bioenergy,0.19,2.54
+cina,2000,Coal,78.21,1060.26
+cina,2000,Gas,0.43,5.77
+cina,2000,Hydro,16.41,222.41
+cina,2000,Nuclear,1.23,16.74
+cina,2000,Other Fossil,3.49,47.27
+cina,2000,Solar,0,0.02
+cina,2000,Wind,0.04,0.59
+cina,2001,Bioenergy,0.17,2.55
+cina,2001,Coal,76.25,1129.14
+cina,2001,Gas,0.33,4.93
+cina,2001,Hydro,18.74,277.43
+cina,2001,Nuclear,1.18,17.47
+cina,2001,Other Fossil,3.28,48.52
+cina,2001,Solar,0,0.03
+cina,2001,Wind,0.05,0.72
+cina,2002,Bioenergy,0.15,2.55
+cina,2002,Coal,77.54,1282.57
+cina,2002,Gas,0.25,4.19
+cina,2002,Hydro,17.41,287.97
+cina,2002,Nuclear,1.52,25.13
+cina,2002,Other Fossil,3.07,50.71
+cina,2002,Solar,0,0.05
+cina,2002,Wind,0.05,0.84
+cina,2003,Bioenergy,0.13,2.54
+cina,2003,Coal,79.56,1519.97
+cina,2003,Gas,0.27,5.16
+cina,2003,Hydro,14.85,283.68
+cina,2003,Nuclear,2.27,43.34
+cina,2003,Other Fossil,2.87,54.83
+cina,2003,Solar,0,0.06
+cina,2003,Wind,0.05,1
+cina,2004,Bioenergy,0.11,2.53
+cina,2004,Coal,78.17,1722.42
+cina,2004,Gas,0.34,7.46
+cina,2004,Hydro,16.05,353.54
+cina,2004,Nuclear,2.29,50.47
+cina,2004,Other Fossil,2.97,65.53
+cina,2004,Solar,0,0.08
+cina,2004,Wind,0.06,1.28
+cina,2005,Bioenergy,0.21,5.32
+cina,2005,Coal,79.2,1980.15
+cina,2005,Gas,0.49,12.14
+cina,2005,Hydro,15.88,397.02
+cina,2005,Nuclear,2.12,53.09
+cina,2005,Other Fossil,2.02,50.51
+cina,2005,Solar,0,0.08
+cina,2005,Wind,0.08,1.95
+cina,2006,Bioenergy,0.25,7.13
+cina,2006,Coal,80.34,2302.42
+cina,2006,Gas,0.83,23.82
+cina,2006,Hydro,15.21,435.79
+cina,2006,Nuclear,1.91,54.84
+cina,2006,Other Fossil,1.32,37.92
+cina,2006,Solar,0,0.09
+cina,2006,Wind,0.13,3.71
+cina,2007,Bioenergy,0.3,9.86
+cina,2007,Coal,80.96,2656.7
+cina,2007,Gas,1.03,33.91
+cina,2007,Hydro,14.79,485.26
+cina,2007,Nuclear,1.89,62.13
+cina,2007,Other Fossil,0.86,28.09
+cina,2007,Solar,0,0.11
+cina,2007,Wind,0.17,5.48
+cina,2008,Bioenergy,0.43,14.87
+cina,2008,Coal,77.49,2708.91
+cina,2008,Gas,0.99,34.57
+cina,2008,Hydro,18.22,636.96
+cina,2008,Nuclear,1.96,68.39
+cina,2008,Other Fossil,0.54,18.81
+cina,2008,Solar,0,0.15
+cina,2008,Wind,0.37,13.1
+cina,2009,Bioenergy,0.56,20.86
+cina,2009,Coal,78.38,2911.52
+cina,2009,Gas,1.52,56.56
+cina,2009,Hydro,16.57,615.64
+cina,2009,Nuclear,1.89,70.05
+cina,2009,Other Fossil,0.33,12.12
+cina,2009,Solar,0.01,0.28
+cina,2009,Wind,0.74,27.61
+cina,2010,Bioenergy,0.59,24.9
+cina,2010,Coal,76.86,3233.6
+cina,2010,Gas,1.85,77.73
+cina,2010,Hydro,16.91,711.38
+cina,2010,Nuclear,1.78,74.74
+cina,2010,Other Fossil,0.83,34.71
+cina,2010,Solar,0.02,0.7
+cina,2010,Wind,1.17,49.4
+cina,2011,Bioenergy,0.59,27.63
+cina,2011,Coal,78.31,3690.87
+cina,2011,Gas,2.31,108.77
+cina,2011,Hydro,14.6,688.04
+cina,2011,Nuclear,1.85,87.2
+cina,2011,Other Fossil,0.72,33.8
+cina,2011,Solar,0.06,2.61
+cina,2011,Wind,1.57,74.1
+cina,2012,Bioenergy,0.6,30.13
+cina,2012,Coal,75.15,3748.19
+cina,2012,Gas,2.21,110.25
+cina,2012,Hydro,17.3,862.79
+cina,2012,Nuclear,1.97,98.32
+cina,2012,Other Fossil,0.63,31.22
+cina,2012,Solar,0.07,3.59
+cina,2012,Wind,2.07,103.05
+cina,2013,Bioenergy,0.68,37.13
+cina,2013,Coal,75.07,4077.37
+cina,2013,Gas,2.14,116.39
+cina,2013,Hydro,16.75,909.61
+cina,2013,Nuclear,2.05,111.5
+cina,2013,Other Fossil,0.61,33
+cina,2013,Solar,0.15,8.37
+cina,2013,Wind,2.55,138.26
+cina,2014,Bioenergy,0.8,46.27
+cina,2014,Coal,72.54,4203.06
+cina,2014,Gas,2.3,133.28
+cina,2014,Hydro,18.29,1059.69
+cina,2014,Nuclear,2.3,133.22
+cina,2014,Other Fossil,0.62,35.66
+cina,2014,Solar,0.41,23.51
+cina,2014,Wind,2.76,159.76
+cina,2015,Bioenergy,0.93,54.07
+cina,2015,Coal,69.59,4046.17
+cina,2015,Gas,2.87,166.91
+cina,2015,Hydro,19.17,1114.52
+cina,2015,Nuclear,2.95,171.38
+cina,2015,Other Fossil,0.63,36.46
+cina,2015,Solar,0.68,39.48
+cina,2015,Wind,3.19,185.59
+cina,2016,Bioenergy,1.01,62.13
+cina,2016,Coal,67.77,4156.35
+cina,2016,Gas,3.07,188.28
+cina,2016,Hydro,18.8,1153.27
+cina,2016,Nuclear,3.48,213.18
+cina,2016,Other Fossil,0.86,52.56
+cina,2016,Solar,1.08,66.53
+cina,2016,Wind,3.93,240.86
+cina,2017,Bioenergy,1.21,79.6
+cina,2017,Coal,67.08,4430.03
+cina,2017,Gas,3.08,203.2
+cina,2017,Hydro,17.64,1165.06
+cina,2017,Nuclear,3.76,248.1
+cina,2017,Other Fossil,0.85,56.05
+cina,2017,Solar,1.78,117.8
+cina,2017,Wind,4.61,304.6
+cina,2018,Bioenergy,1.31,93.8
+cina,2018,Coal,66.48,4763.85
+cina,2018,Gas,3.01,215.5
+cina,2018,Hydro,16.73,1198.89
+cina,2018,Nuclear,4.12,295
+cina,2018,Other Fossil,0.79,56.4
+cina,2018,Solar,2.47,176.9
+cina,2018,Wind,5.1,365.8
+cina,2019,Bioenergy,1.5,112.8
+cina,2019,Coal,64.71,4855.12
+cina,2019,Gas,3.1,232.5
+cina,2019,Hydro,16.96,1272.54
+cina,2019,Nuclear,4.65,348.7
+cina,2019,Other Fossil,0.7,52.47
+cina,2019,Solar,2.99,224
+cina,2019,Wind,5.4,405.3
+cina,2020,Bioenergy,1.74,135.7
+cina,2020,Coal,63.27,4921.89
+cina,2020,Gas,3.25,252.5
+cina,2020,Hydro,16.99,1321.71
+cina,2020,Nuclear,4.71,366.2
+cina,2020,Other Fossil,0.69,53.47
+cina,2020,Solar,3.36,261.1
+cina,2020,Wind,6,466.5
+cina,2021,Bioenergy,1.95,166
+cina,2021,Coal,62.5,5333.8
+cina,2021,Gas,3.36,287.1
+cina,2021,Hydro,15.23,1300
+cina,2021,Nuclear,4.77,407.5
+cina,2021,Other Fossil,0.67,57.06
+cina,2021,Solar,3.83,327
+cina,2021,Wind,7.68,655.8
+cina,2022,Bioenergy,2.06,182.6
+cina,2022,Coal,61.19,5414.72
+cina,2022,Gas,3.11,275.62
+cina,2022,Hydro,14.67,1298.12
+cina,2022,Nuclear,4.72,417.78
+cina,2022,Other Fossil,0.79,69.93
+cina,2022,Solar,4.83,427.27
+cina,2022,Wind,8.62,762.67
+cina,2023,Bioenergy,2.1,198.2
+cina,2023,Coal,60.83,5752.74
+cina,2023,Gas,3.15,297.8
+cina,2023,Hydro,12.96,1226
+cina,2023,Nuclear,4.6,434.72
+cina,2023,Other Fossil,0.81,76.97
+cina,2023,Solar,6.18,584.15
+cina,2023,Wind,9.37,885.87
+cina,2024,Bioenergy,2.07,208.5
+cina,2024,Coal,57.77,5827.6
+cina,2024,Gas,3.18,320.72
+cina,2024,Hydro,13.43,1354.25
+cina,2024,Nuclear,4.47,450.85
+cina,2024,Other Fossil,0.88,88.88
+cina,2024,Solar,8.32,839.04
+cina,2024,Wind,9.88,997.04
+cina,2025,Bioenergy,1.95,206.58
+cina,2025,Coal,54.57,5772.31
+cina,2025,Gas,3.01,317.89
+cina,2025,Hydro,13.19,1394.79
+cina,2025,Nuclear,4.6,487.06
+cina,2025,Other Fossil,0.84,88.71
+cina,2025,Solar,11.11,1174.94
+cina,2025,Wind,10.73,1135.43
+eu,2000,Bioenergy,1.15,30.11
+eu,2000,Coal,30.52,800.33
+eu,2000,Gas,12.52,328.19
+eu,2000,Hydro,13.35,350.17
+eu,2000,Nuclear,32.8,859.95
+eu,2000,Other Fossil,8.65,226.81
+eu,2000,Other Renewables,0.2,5.29
+eu,2000,Solar,0,0.05
+eu,2000,Wind,0.81,21.28
+eu,2001,Bioenergy,1.18,31.9
+eu,2001,Coal,29.38,792.92
+eu,2001,Gas,13.02,351.41
+eu,2001,Hydro,13.84,373.43
+eu,2001,Nuclear,32.94,888.9
+eu,2001,Other Fossil,8.5,229.35
+eu,2001,Other Renewables,0.19,5.09
+eu,2001,Solar,0.01,0.17
+eu,2001,Wind,0.95,25.75
+eu,2002,Bioenergy,1.35,36.8
+eu,2002,Coal,29.92,814.34
+eu,2002,Gas,13.76,374.6
+eu,2002,Hydro,11.48,312.6
+eu,2002,Nuclear,33.15,902.34
+eu,2002,Other Fossil,8.85,240.85
+eu,2002,Other Renewables,0.19,5.25
+eu,2002,Solar,0.01,0.28
+eu,2002,Wind,1.29,35.06
+eu,2003,Bioenergy,1.54,43.16
+eu,2003,Coal,30.32,849.04
+eu,2003,Gas,14.96,418.9
+eu,2003,Hydro,10.88,304.64
+eu,2003,Nuclear,32.4,907.18
+eu,2003,Other Fossil,8.12,227.38
+eu,2003,Other Renewables,0.21,5.92
+eu,2003,Solar,0.01,0.4
+eu,2003,Wind,1.55,43.31
+eu,2004,Bioenergy,1.84,52.76
+eu,2004,Coal,29.13,835.42
+eu,2004,Gas,15.99,458.48
+eu,2004,Hydro,11.27,323.19
+eu,2004,Nuclear,32.38,928.46
+eu,2004,Other Fossil,7.15,205.03
+eu,2004,Other Renewables,0.21,5.99
+eu,2004,Solar,0.02,0.68
+eu,2004,Wind,2.01,57.54
+eu,2005,Bioenergy,2.11,61
+eu,2005,Coal,28.04,808.89
+eu,2005,Gas,17.77,512.54
+eu,2005,Hydro,10.64,307.02
+eu,2005,Nuclear,31.76,916.08
+eu,2005,Other Fossil,7.05,203.41
+eu,2005,Other Renewables,0.2,5.87
+eu,2005,Solar,0.05,1.48
+eu,2005,Wind,2.36,68.1
+eu,2006,Bioenergy,2.38,69.86
+eu,2006,Coal,27.84,816.5
+eu,2006,Gas,18.42,540.05
+eu,2006,Hydro,10.57,309.98
+eu,2006,Nuclear,31.18,914.44
+eu,2006,Other Fossil,6.62,194.13
+eu,2006,Other Renewables,0.21,6.08
+eu,2006,Solar,0.09,2.52
+eu,2006,Wind,2.69,78.75
+eu,2007,Bioenergy,2.66,78.43
+eu,2007,Coal,28.11,828.74
+eu,2007,Gas,19.4,571.96
+eu,2007,Hydro,10.44,307.72
+eu,2007,Nuclear,29.59,872.24
+eu,2007,Other Fossil,6.06,178.6
+eu,2007,Other Renewables,0.21,6.24
+eu,2007,Solar,0.13,3.83
+eu,2007,Wind,3.39,99.95
+eu,2008,Bioenergy,2.98,88.09
+eu,2008,Coal,25.58,757.01
+eu,2008,Gas,20.67,611.65
+eu,2008,Hydro,11,325.59
+eu,2008,Nuclear,29.89,884.73
+eu,2008,Other Fossil,5.6,165.74
+eu,2008,Other Renewables,0.21,6.2
+eu,2008,Solar,0.25,7.51
+eu,2008,Wind,3.83,113.26
+eu,2009,Bioenergy,3.46,97.24
+eu,2009,Coal,25.05,703.55
+eu,2009,Gas,20.08,564.03
+eu,2009,Hydro,11.72,329
+eu,2009,Nuclear,29.37,824.92
+eu,2009,Other Fossil,5.16,144.78
+eu,2009,Other Renewables,0.21,5.99
+eu,2009,Solar,0.51,14.22
+eu,2009,Wind,4.44,124.61
+eu,2010,Bioenergy,3.78,111.47
+eu,2010,Coal,23.81,701.2
+eu,2010,Gas,19.94,587.36
+eu,2010,Hydro,12.62,371.82
+eu,2010,Nuclear,29.01,854.47
+eu,2010,Other Fossil,5.08,149.76
+eu,2010,Other Renewables,0.21,6.09
+eu,2010,Solar,0.8,23.49
+eu,2010,Wind,4.75,139.88
+eu,2011,Bioenergy,4.09,118.98
+eu,2011,Coal,24.92,724.81
+eu,2011,Gas,19.14,556.85
+eu,2011,Hydro,10.57,307.43
+eu,2011,Nuclear,28.8,837.77
+eu,2011,Other Fossil,4.93,143.31
+eu,2011,Other Renewables,0.22,6.42
+eu,2011,Solar,1.64,47.71
+eu,2011,Wind,5.69,165.41
+eu,2012,Bioenergy,4.58,132.87
+eu,2012,Coal,25.58,742.68
+eu,2012,Gas,16.62,482.7
+eu,2012,Hydro,11.42,331.67
+eu,2012,Nuclear,27.96,811.95
+eu,2012,Other Fossil,4.73,137.27
+eu,2012,Other Renewables,0.22,6.28
+eu,2012,Solar,2.43,70.5
+eu,2012,Wind,6.46,187.55
+eu,2013,Bioenergy,4.82,139.13
+eu,2013,Coal,25.28,728.9
+eu,2013,Gas,14.34,413.43
+eu,2013,Hydro,12.76,368.02
+eu,2013,Nuclear,27.96,806.23
+eu,2013,Other Fossil,4.45,128.23
+eu,2013,Other Renewables,0.22,6.44
+eu,2013,Solar,2.9,83.76
+eu,2013,Wind,7.27,209.55
+eu,2014,Bioenergy,5.11,144.25
+eu,2014,Coal,24.53,692.78
+eu,2014,Gas,12.59,355.41
+eu,2014,Hydro,13.1,370.06
+eu,2014,Nuclear,28.77,812.57
+eu,2014,Other Fossil,4.46,125.99
+eu,2014,Other Renewables,0.24,6.79
+eu,2014,Solar,3.31,93.6
+eu,2014,Wind,7.88,222.46
+eu,2015,Bioenergy,5.2,149.37
+eu,2015,Coal,24.56,705.03
+eu,2015,Gas,13.76,394.84
+eu,2015,Hydro,11.71,336
+eu,2015,Nuclear,27.41,786.69
+eu,2015,Other Fossil,4.45,127.87
+eu,2015,Other Renewables,0.25,7.09
+eu,2015,Solar,3.49,100.2
+eu,2015,Wind,9.17,263.28
+eu,2016,Bioenergy,5.23,151.09
+eu,2016,Coal,22.8,659.16
+eu,2016,Gas,16.07,464.77
+eu,2016,Hydro,11.95,345.6
+eu,2016,Nuclear,26.56,767.95
+eu,2016,Other Fossil,4.43,128.2
+eu,2016,Other Renewables,0.25,7.23
+eu,2016,Solar,3.48,100.49
+eu,2016,Wind,9.23,266.91
+eu,2017,Bioenergy,5.26,153.64
+eu,2017,Coal,21.86,638.86
+eu,2017,Gas,17.91,523.62
+eu,2017,Hydro,10.07,294.34
+eu,2017,Nuclear,25.98,759.4
+eu,2017,Other Fossil,4.34,126.88
+eu,2017,Other Renewables,0.25,7.23
+eu,2017,Solar,3.65,106.58
+eu,2017,Wind,10.69,312.43
+eu,2018,Bioenergy,5.34,155.46
+eu,2018,Coal,20.48,595.54
+eu,2018,Gas,16.81,488.95
+eu,2018,Hydro,11.82,343.84
+eu,2018,Nuclear,26.2,761.94
+eu,2018,Other Fossil,4.16,120.86
+eu,2018,Other Renewables,0.25,7.14
+eu,2018,Solar,3.92,114.13
+eu,2018,Wind,11.03,320.76
+eu,2019,Bioenergy,5.55,159.65
+eu,2019,Coal,15.68,450.79
+eu,2019,Gas,19.78,568.62
+eu,2019,Hydro,11.14,320.29
+eu,2019,Nuclear,26.63,765.34
+eu,2019,Other Fossil,3.86,110.91
+eu,2019,Other Renewables,0.25,7.23
+eu,2019,Solar,4.33,124.38
+eu,2019,Wind,12.78,367.29
+eu,2020,Bioenergy,5.91,162.59
+eu,2020,Coal,12.8,352.33
+eu,2020,Gas,20.33,559.7
+eu,2020,Hydro,12.61,347.09
+eu,2020,Nuclear,24.83,683.51
+eu,2020,Other Fossil,3.55,97.76
+eu,2020,Other Renewables,0.26,7.23
+eu,2020,Solar,5.26,144.72
+eu,2020,Wind,14.46,398.16
+eu,2021,Bioenergy,5.97,171.56
+eu,2021,Coal,14.57,419
+eu,2021,Gas,19.03,547.04
+eu,2021,Hydro,12.11,348.25
+eu,2021,Nuclear,25.45,731.71
+eu,2021,Other Fossil,3.49,100.41
+eu,2021,Other Renewables,0.24,7.03
+eu,2021,Solar,5.67,163.05
+eu,2021,Wind,13.46,386.94
+eu,2022,Bioenergy,5.95,165.27
+eu,2022,Coal,16.15,448.43
+eu,2022,Gas,19.22,533.95
+eu,2022,Hydro,9.94,276.11
+eu,2022,Nuclear,21.94,609.26
+eu,2022,Other Fossil,3.81,105.87
+eu,2022,Other Renewables,0.25,6.93
+eu,2022,Solar,7.55,209.76
+eu,2022,Wind,15.19,421.83
+eu,2023,Bioenergy,5.79,156.84
+eu,2023,Coal,11.76,318.59
+eu,2023,Gas,16.78,454.82
+eu,2023,Hydro,12.19,330.44
+eu,2023,Nuclear,22.86,619.6
+eu,2023,Other Fossil,3.36,91.08
+eu,2023,Other Renewables,0.25,6.72
+eu,2023,Solar,9.37,254.04
+eu,2023,Wind,17.64,478.06
+eu,2024,Bioenergy,5.66,156.85
+eu,2024,Coal,9.8,271.83
+eu,2024,Gas,15.55,431.23
+eu,2024,Hydro,13.33,369.68
+eu,2024,Nuclear,23.42,649.55
+eu,2024,Other Fossil,3.21,89.11
+eu,2024,Other Renewables,0.24,6.68
+eu,2024,Solar,11.08,307.26
+eu,2024,Wind,17.71,491.18
+eu,2025,Bioenergy,5.65,157.76
+eu,2025,Coal,9.2,256.82
+eu,2025,Gas,16.61,463.79
+eu,2025,Hydro,11.7,326.53
+eu,2025,Nuclear,23.36,652
+eu,2025,Other Fossil,2.95,82.37
+eu,2025,Other Renewables,0.25,6.84
+eu,2025,Solar,13.13,366.4
+eu,2025,Wind,17.16,479.04
+indie,2000,Bioenergy,0.3,1.69
+indie,2000,Coal,68.29,390.23
+indie,2000,Gas,9.79,55.96
+indie,2000,Hydro,13.47,76.99
+indie,2000,Nuclear,2.76,15.77
+indie,2000,Other Fossil,5.1,29.16
+indie,2000,Solar,0,0.01
+indie,2000,Wind,0.28,1.58
+indie,2001,Bioenergy,0.35,2.07
+indie,2001,Coal,69.66,408.29
+indie,2001,Gas,9.54,55.93
+indie,2001,Hydro,12.29,72.02
+indie,2001,Nuclear,3.22,18.89
+indie,2001,Other Fossil,4.57,26.79
+indie,2001,Solar,0,0.01
+indie,2001,Wind,0.36,2.09
+indie,2002,Bioenergy,0.35,2.14
+indie,2002,Coal,69.99,426.7
+indie,2002,Gas,10.31,62.88
+indie,2002,Hydro,11.24,68.54
+indie,2002,Nuclear,3.17,19.35
+indie,2002,Other Fossil,4.58,27.93
+indie,2002,Solar,0,0.01
+indie,2002,Wind,0.34,2.09
+indie,2003,Bioenergy,0.42,2.71
+indie,2003,Coal,69.18,441.47
+indie,2003,Gas,11.41,72.8
+indie,2003,Hydro,10.86,69.3
+indie,2003,Nuclear,2.84,18.14
+indie,2003,Other Fossil,4.87,31.09
+indie,2003,Solar,0,0.02
+indie,2003,Wind,0.41,2.6
+indie,2004,Bioenergy,0.47,3.31
+indie,2004,Coal,66.3,463.01
+indie,2004,Gas,10.97,76.58
+indie,2004,Hydro,14.41,100.64
+indie,2004,Nuclear,3.04,21.26
+indie,2004,Other Fossil,4.05,28.27
+indie,2004,Solar,0,0.02
+indie,2004,Wind,0.75,5.23
+indie,2005,Bioenergy,0.57,4.04
+indie,2005,Coal,67.92,478.48
+indie,2005,Gas,10.71,75.47
+indie,2005,Hydro,13.83,97.42
+indie,2005,Nuclear,2.52,17.73
+indie,2005,Other Fossil,3.6,25.37
+indie,2005,Solar,0,0.02
+indie,2005,Wind,0.85,5.99
+indie,2006,Bioenergy,0.75,5.59
+indie,2006,Coal,67.9,505.46
+indie,2006,Gas,10.03,74.7
+indie,2006,Hydro,15.13,112.62
+indie,2006,Nuclear,2.37,17.63
+indie,2006,Other Fossil,2.56,19.08
+indie,2006,Solar,0,0.01
+indie,2006,Wind,1.25,9.34
+indie,2007,Bioenergy,0.93,7.4
+indie,2007,Coal,66.97,533.27
+indie,2007,Gas,11.31,90.05
+indie,2007,Hydro,15.4,122.61
+indie,2007,Nuclear,2.24,17.83
+indie,2007,Other Fossil,1.68,13.36
+indie,2007,Solar,0.01,0.06
+indie,2007,Wind,1.47,11.68
+indie,2008,Bioenergy,1.12,9.3
+indie,2008,Coal,69.18,573.12
+indie,2008,Gas,10.37,85.88
+indie,2008,Hydro,13.9,115.17
+indie,2008,Nuclear,1.84,15.23
+indie,2008,Other Fossil,1.84,15.27
+indie,2008,Solar,0.01,0.06
+indie,2008,Wind,1.74,14.38
+indie,2009,Bioenergy,1.2,10.56
+indie,2009,Coal,69.55,611.11
+indie,2009,Gas,11.88,104.37
+indie,2009,Hydro,12.1,106.34
+indie,2009,Nuclear,1.91,16.82
+indie,2009,Other Fossil,1.49,13.08
+indie,2009,Solar,0.01,0.08
+indie,2009,Wind,1.85,16.27
+indie,2010,Bioenergy,1.41,13.22
+indie,2010,Coal,68.66,642.97
+indie,2010,Gas,12.6,118.03
+indie,2010,Hydro,11.61,108.74
+indie,2010,Nuclear,2.46,23.08
+indie,2010,Other Fossil,1.15,10.78
+indie,2010,Solar,0.01,0.11
+indie,2010,Wind,2.08,19.46
+indie,2011,Bioenergy,1.5,15.46
+indie,2011,Coal,67.93,701.25
+indie,2011,Gas,11.39,117.56
+indie,2011,Hydro,12.76,131.7
+indie,2011,Nuclear,3.12,32.22
+indie,2011,Other Fossil,0.91,9.35
+indie,2011,Solar,0.08,0.83
+indie,2011,Wind,2.32,23.95
+indie,2012,Bioenergy,1.52,16.52
+indie,2012,Coal,72.32,787.13
+indie,2012,Gas,8.84,96.25
+indie,2012,Hydro,10.64,115.78
+indie,2012,Nuclear,3.04,33.14
+indie,2012,Other Fossil,0.93,10.07
+indie,2012,Solar,0.19,2.1
+indie,2012,Wind,2.52,27.43
+indie,2013,Bioenergy,1.54,17.57
+indie,2013,Coal,74.3,847.97
+indie,2013,Gas,5.81,66.31
+indie,2013,Hydro,11.56,131.98
+indie,2013,Nuclear,2.92,33.31
+indie,2013,Other Fossil,0.93,10.65
+indie,2013,Solar,0.3,3.43
+indie,2013,Wind,2.63,30.01
+indie,2014,Bioenergy,1.68,21.14
+indie,2014,Coal,75.47,949.93
+indie,2014,Gas,5.09,64.01
+indie,2014,Hydro,11.04,139
+indie,2014,Nuclear,2.76,34.69
+indie,2014,Other Fossil,0.92,11.55
+indie,2014,Solar,0.39,4.91
+indie,2014,Wind,2.66,33.45
+indie,2015,Bioenergy,1.4,18.36
+indie,2015,Coal,76.8,1006.55
+indie,2015,Gas,4.94,64.77
+indie,2015,Hydro,10.18,133.48
+indie,2015,Nuclear,2.92,38.31
+indie,2015,Other Fossil,0.71,9.26
+indie,2015,Solar,0.54,7.09
+indie,2015,Wind,2.5,32.74
+indie,2016,Bioenergy,1.23,17.2
+indie,2016,Coal,76.96,1073.6
+indie,2016,Gas,5.21,72.62
+indie,2016,Hydro,9.22,128.55
+indie,2016,Nuclear,2.72,37.9
+indie,2016,Other Fossil,0.67,9.41
+indie,2016,Solar,0.87,12.2
+indie,2016,Wind,3.11,43.45
+indie,2017,Bioenergy,1.03,14.99
+indie,2017,Coal,76.26,1115.24
+indie,2017,Gas,5.13,74.99
+indie,2017,Hydro,9.3,135.98
+indie,2017,Nuclear,2.56,37.41
+indie,2017,Other Fossil,0.6,8.79
+indie,2017,Solar,1.53,22.36
+indie,2017,Wind,3.6,52.63
+indie,2018,Bioenergy,1.17,18.4
+indie,2018,Coal,76.28,1198.86
+indie,2018,Gas,4.53,71.26
+indie,2018,Hydro,8.9,139.92
+indie,2018,Nuclear,2.48,39.05
+indie,2018,Other Fossil,0.41,6.4
+indie,2018,Solar,2.38,37.45
+indie,2018,Wind,3.84,60.31
+indie,2019,Bioenergy,1.19,18.99
+indie,2019,Coal,74.88,1198.76
+indie,2019,Gas,4.49,71.95
+indie,2019,Hydro,10.14,162.29
+indie,2019,Nuclear,2.82,45.16
+indie,2019,Other Fossil,0.19,3.07
+indie,2019,Solar,2.34,37.45
+indie,2019,Wind,3.95,63.31
+indie,2020,Bioenergy,1.27,19.88
+indie,2020,Coal,73.16,1143.78
+indie,2020,Gas,4.78,74.79
+indie,2020,Hydro,10.49,163.94
+indie,2020,Nuclear,2.85,44.61
+indie,2020,Other Fossil,0.2,3.09
+indie,2020,Solar,3.38,52.91
+indie,2020,Wind,3.87,60.43
+indie,2021,Bioenergy,1.26,21.2
+indie,2021,Coal,74.79,1255.56
+indie,2021,Gas,3.6,60.4
+indie,2021,Hydro,9.57,160.57
+indie,2021,Nuclear,2.62,43.92
+indie,2021,Other Fossil,0.2,3.39
+indie,2021,Solar,3.91,65.59
+indie,2021,Wind,4.06,68.09
+indie,2022,Bioenergy,1.29,23.29
+indie,2022,Coal,74.5,1344.42
+indie,2022,Gas,2.56,46.17
+indie,2022,Hydro,9.7,175.09
+indie,2022,Nuclear,2.56,46.19
+indie,2022,Other Fossil,0.19,3.48
+indie,2022,Solar,5.32,95.92
+indie,2022,Wind,3.88,70.05
+indie,2023,Bioenergy,1.2,23.01
+indie,2023,Coal,75.35,1445.44
+indie,2023,Gas,2.65,50.8
+indie,2023,Hydro,7.79,149.43
+indie,2023,Nuclear,2.51,48.2
+indie,2023,Other Fossil,0.2,3.85
+indie,2023,Solar,6.02,115.42
+indie,2023,Wind,4.28,82.11
+indie,2024,Bioenergy,1.09,22.25
+indie,2024,Coal,74.53,1517.9
+indie,2024,Gas,2.77,56.44
+indie,2024,Hydro,7.69,156.53
+indie,2024,Nuclear,2.69,54.7
+indie,2024,Other Fossil,0.2,4.09
+indie,2024,Solar,7.03,143.07
+indie,2024,Wind,4,81.54
+indie,2025,Bioenergy,1.11,23.04
+indie,2025,Coal,70.82,1474.15
+indie,2025,Gas,2.33,48.54
+indie,2025,Hydro,8.55,177.97
+indie,2025,Nuclear,2.59,53.83
+indie,2025,Other Fossil,0.2,4.1
+indie,2025,Solar,9.42,195.99
+indie,2025,Wind,5,103.98
+usa,2000,Bioenergy,1.6,60.73
+usa,2000,Coal,51.72,1966.27
+usa,2000,Gas,16.18,614.99
+usa,2000,Hydro,7.1,270.03
+usa,2000,Nuclear,19.83,753.89
+usa,2000,Other Fossil,3.05,116.02
+usa,2000,Other Renewables,0.37,14.09
+usa,2000,Solar,0.01,0.49
+usa,2000,Wind,0.15,5.59
+usa,2001,Bioenergy,1.33,49.75
+usa,2001,Coal,51.08,1903.96
+usa,2001,Gas,17.15,639.13
+usa,2001,Hydro,5.58,208.14
+usa,2001,Nuclear,20.63,768.83
+usa,2001,Other Fossil,3.64,135.59
+usa,2001,Other Renewables,0.4,14.89
+usa,2001,Solar,0.01,0.54
+usa,2001,Wind,0.18,6.74
+usa,2002,Bioenergy,1.4,53.71
+usa,2002,Coal,50.29,1933.13
+usa,2002,Gas,17.98,691.01
+usa,2002,Hydro,6.65,255.59
+usa,2002,Nuclear,20.29,780.06
+usa,2002,Other Fossil,2.7,103.69
+usa,2002,Other Renewables,0.42,16.14
+usa,2002,Solar,0.01,0.55
+usa,2002,Wind,0.27,10.35
+usa,2003,Bioenergy,1.38,53.34
+usa,2003,Coal,51.02,1973.74
+usa,2003,Gas,16.8,649.91
+usa,2003,Hydro,6.91,267.27
+usa,2003,Nuclear,19.74,763.73
+usa,2003,Other Fossil,3.42,132.38
+usa,2003,Other Renewables,0.44,16.85
+usa,2003,Solar,0.01,0.53
+usa,2003,Wind,0.29,11.19
+usa,2004,Bioenergy,1.35,53.54
+usa,2004,Coal,50.06,1978.3
+usa,2004,Gas,17.97,710.1
+usa,2004,Hydro,6.58,259.93
+usa,2004,Nuclear,19.95,788.53
+usa,2004,Other Fossil,3.29,129.88
+usa,2004,Other Renewables,0.43,16.95
+usa,2004,Solar,0.01,0.58
+usa,2004,Wind,0.36,14.14
+usa,2005,Bioenergy,1.35,54.28
+usa,2005,Coal,49.89,2012.87
+usa,2005,Gas,18.86,760.96
+usa,2005,Hydro,6.54,263.76
+usa,2005,Nuclear,19.38,781.99
+usa,2005,Other Fossil,3.13,126.13
+usa,2005,Other Renewables,0.41,16.64
+usa,2005,Solar,0.01,0.55
+usa,2005,Wind,0.44,17.81
+usa,2006,Bioenergy,1.36,54.86
+usa,2006,Coal,49.19,1990.51
+usa,2006,Gas,20.17,816.44
+usa,2006,Hydro,6.99,282.69
+usa,2006,Nuclear,19.45,787.22
+usa,2006,Other Fossil,1.77,71.61
+usa,2006,Other Renewables,0.41,16.51
+usa,2006,Solar,0.01,0.51
+usa,2006,Wind,0.66,26.59
+usa,2007,Bioenergy,1.34,55.54
+usa,2007,Coal,48.68,2016.46
+usa,2007,Gas,21.64,896.59
+usa,2007,Hydro,5.81,240.61
+usa,2007,Nuclear,19.47,806.42
+usa,2007,Other Fossil,1.82,75.19
+usa,2007,Other Renewables,0.4,16.7
+usa,2007,Solar,0.01,0.61
+usa,2007,Wind,0.83,34.45
+usa,2008,Bioenergy,1.34,55.03
+usa,2008,Coal,48.35,1985.8
+usa,2008,Gas,21.5,882.98
+usa,2008,Hydro,6.05,248.54
+usa,2008,Nuclear,19.63,806.21
+usa,2008,Other Fossil,1.35,55.43
+usa,2008,Other Renewables,0.42,17.32
+usa,2008,Solar,0.02,0.86
+usa,2008,Wind,1.35,55.36
+usa,2009,Bioenergy,1.38,54.49
+usa,2009,Coal,44.57,1755.9
+usa,2009,Gas,23.38,920.98
+usa,2009,Hydro,6.82,268.82
+usa,2009,Nuclear,20.28,798.85
+usa,2009,Other Fossil,1.23,48.53
+usa,2009,Other Renewables,0.44,17.47
+usa,2009,Solar,0.02,0.89
+usa,2009,Wind,1.88,73.89
+usa,2010,Bioenergy,1.36,56.09
+usa,2010,Coal,44.9,1847.29
+usa,2010,Gas,24.01,987.7
+usa,2010,Hydro,6.19,254.7
+usa,2010,Nuclear,19.62,806.97
+usa,2010,Other Fossil,1.15,47.5
+usa,2010,Other Renewables,0.43,17.83
+usa,2010,Solar,0.03,1.21
+usa,2010,Wind,2.3,94.65
+usa,2011,Bioenergy,1.39,56.67
+usa,2011,Coal,42.39,1733.43
+usa,2011,Gas,24.79,1013.69
+usa,2011,Hydro,7.65,312.93
+usa,2011,Nuclear,19.33,790.2
+usa,2011,Other Fossil,1.02,41.81
+usa,2011,Other Renewables,0.44,18.14
+usa,2011,Solar,0.04,1.82
+usa,2011,Wind,2.94,120.18
+usa,2012,Bioenergy,1.43,57.62
+usa,2012,Coal,37.47,1514.04
+usa,2012,Gas,30.34,1225.89
+usa,2012,Hydro,6.71,271.29
+usa,2012,Nuclear,19.04,769.33
+usa,2012,Other Fossil,0.97,39.09
+usa,2012,Other Renewables,0.45,18.26
+usa,2012,Solar,0.11,4.33
+usa,2012,Wind,3.49,140.82
+usa,2013,Bioenergy,1.5,60.86
+usa,2013,Coal,38.99,1581.11
+usa,2013,Gas,27.74,1124.84
+usa,2013,Hydro,6.51,263.88
+usa,2013,Nuclear,19.46,789.02
+usa,2013,Other Fossil,0.99,40.26
+usa,2013,Other Renewables,0.46,18.76
+usa,2013,Solar,0.22,9.04
+usa,2013,Wind,4.14,167.84
+usa,2014,Bioenergy,1.56,63.99
+usa,2014,Coal,38.62,1581.71
+usa,2014,Gas,27.51,1126.61
+usa,2014,Hydro,6.18,253.19
+usa,2014,Nuclear,19.46,797.17
+usa,2014,Other Fossil,1.07,43.69
+usa,2014,Other Renewables,0.47,19.08
+usa,2014,Solar,0.71,28.92
+usa,2014,Wind,4.43,181.65
+usa,2015,Bioenergy,1.56,63.63
+usa,2015,Coal,33.11,1352.4
+usa,2015,Gas,32.65,1333.48
+usa,2015,Hydro,5.97,243.99
+usa,2015,Nuclear,19.52,797.18
+usa,2015,Other Fossil,1.09,44.44
+usa,2015,Other Renewables,0.47,19.12
+usa,2015,Solar,0.96,39.03
+usa,2015,Wind,4.67,190.72
+usa,2016,Bioenergy,1.54,62.76
+usa,2016,Coal,30.32,1239.15
+usa,2016,Gas,33.72,1378.31
+usa,2016,Hydro,6.39,261.13
+usa,2016,Nuclear,19.71,805.69
+usa,2016,Other Fossil,0.97,39.5
+usa,2016,Other Renewables,0.47,19.16
+usa,2016,Solar,1.34,54.87
+usa,2016,Wind,5.55,226.99
+usa,2017,Bioenergy,1.55,62.73
+usa,2017,Coal,29.76,1205.84
+usa,2017,Gas,31.99,1296.44
+usa,2017,Hydro,7.25,293.84
+usa,2017,Nuclear,19.86,804.95
+usa,2017,Other Fossil,0.94,37.89
+usa,2017,Other Renewables,0.47,19.04
+usa,2017,Solar,1.91,77.28
+usa,2017,Wind,6.28,254.3
+usa,2018,Bioenergy,1.47,61.83
+usa,2018,Coal,27.36,1149.49
+usa,2018,Gas,34.97,1469.13
+usa,2018,Hydro,6.82,286.62
+usa,2018,Nuclear,19.21,807.08
+usa,2018,Other Fossil,1.02,42.68
+usa,2018,Other Renewables,0.44,18.69
+usa,2018,Solar,2.22,93.36
+usa,2018,Wind,6.49,272.67
+usa,2019,Bioenergy,1.38,57.51
+usa,2019,Coal,23.21,964.96
+usa,2019,Gas,38.14,1585.81
+usa,2019,Hydro,6.8,282.61
+usa,2019,Nuclear,19.46,809.41
+usa,2019,Other Fossil,0.9,37.44
+usa,2019,Other Renewables,0.43,17.87
+usa,2019,Solar,2.57,106.89
+usa,2019,Wind,7.12,295.88
+usa,2020,Bioenergy,1.35,54.7
+usa,2020,Coal,19.13,773.39
+usa,2020,Gas,40.17,1624.17
+usa,2020,Hydro,6.92,279.95
+usa,2020,Nuclear,19.54,789.88
+usa,2020,Other Fossil,0.85,34.34
+usa,2020,Other Renewables,0.45,18.09
+usa,2020,Solar,3.23,130.72
+usa,2020,Wind,8.36,337.94
+usa,2021,Bioenergy,1.31,54.25
+usa,2021,Coal,21.62,898
+usa,2021,Gas,38.02,1579.19
+usa,2021,Hydro,5.93,246.47
+usa,2021,Nuclear,18.77,779.65
+usa,2021,Other Fossil,0.85,35.2
+usa,2021,Other Renewables,0.44,18.24
+usa,2021,Solar,3.96,164.42
+usa,2021,Wind,9.11,378.2
+usa,2022,Bioenergy,1.21,51.85
+usa,2022,Coal,19.4,831.51
+usa,2022,Gas,39.35,1687.06
+usa,2022,Hydro,5.8,248.76
+usa,2022,Nuclear,18,771.54
+usa,2022,Other Fossil,0.9,38.64
+usa,2022,Other Renewables,0.42,18.16
+usa,2022,Solar,4.78,205.07
+usa,2022,Wind,10.13,434.3
+usa,2023,Bioenergy,1.11,47.2
+usa,2023,Coal,15.87,675.11
+usa,2023,Gas,42.46,1806.06
+usa,2023,Hydro,5.62,239.01
+usa,2023,Nuclear,18.22,774.87
+usa,2023,Other Fossil,0.78,33.13
+usa,2023,Other Renewables,0.43,18.45
+usa,2023,Solar,5.62,238.94
+usa,2023,Wind,9.9,421.14
+usa,2024,Bioenergy,1.06,46.42
+usa,2024,Coal,14.85,652.16
+usa,2024,Gas,42.58,1869.9
+usa,2024,Hydro,5.4,237.04
+usa,2024,Nuclear,17.81,781.86
+usa,2024,Other Fossil,0.69,30.47
+usa,2024,Other Renewables,0.4,17.52
+usa,2024,Solar,6.92,303.75
+usa,2024,Wind,10.29,451.9
+usa,2025,Bioenergy,1.02,46.19
+usa,2025,Coal,16.31,737.15
+usa,2025,Gas,39.99,1807.34
+usa,2025,Hydro,5.35,241.7
+usa,2025,Nuclear,17.36,784.78
+usa,2025,Other Fossil,0.7,31.72
+usa,2025,Other Renewables,0.39,17.7
+usa,2025,Solar,8.6,388.82
+usa,2025,Wind,10.27,464.39

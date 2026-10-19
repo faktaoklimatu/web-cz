@@ -1,0 +1,208 @@
+// d3 chart panels in the look of the CBAM explainer charts (_cbam-charts.scss)
+// with the ETS dashboard's source / download foot (_ets-dashboard.scss).
+// Markup: includes-local/chart-panel.html. First used by the explainer
+// klimaticka-politika-svetove-regiony.
+
+.d3-panel {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    margin: 1.5rem 0 2rem;
+
+    .d3-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #2d3748;
+        margin: 0 0 14px;
+    }
+
+    // Metric switch, inserted by the page script above the svg.
+    .seg {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e2e8f0;
+
+        button {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            padding: 4px 12px 6px 0;
+            margin-right: 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #718096;
+        }
+
+        button:hover:not(.active) {
+            color: #515b66;
+        }
+
+        button.active {
+            color: #2d3748;
+            border-bottom-color: #2d3748;
+        }
+    }
+
+    svg {
+        width: 100%;
+        display: block;
+        overflow: visible;
+    }
+
+    .chart-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-end;
+        gap: 4px 16px;
+        padding-top: 0.4rem;
+        font-size: 0.8rem;
+        color: #a0aec0;
+
+        a,
+        a:hover {
+            color: #a0aec0;
+        }
+
+        // "Stáhnout: PNG, SVG" reads as one phrase, keep it on one line.
+        .chart-downloads {
+            white-space: nowrap;
+        }
+
+        .chart-download {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .chart-download:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .d3-title {
+            font-size: 18px;
+        }
+    }
+}
+
+// Appended to <body> by the page script, positioned against the viewport.
+.d3-tooltip {
+    position: fixed;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    line-height: 1.6;
+    max-width: 280px;
+    font-family: 'Roboto', system-ui, sans-serif;
+
+    .swatch {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+    }
+}
+
+// Region boxes in "Hlavní charakteristiky" (2×2 grid). Every value is a CSS
+// variable so the ?dev=1 sidebar (assets-local/js/svetove-regiony-dev-sidebar.js)
+// can tune it live. Region colours match REGIONS in the page's grafy.js.
+:root {
+    --region-eu: #36369b;
+    --region-cina: #e0495a;
+    --region-usa: #3b85d8;
+    --region-indie: #37a97e;
+    --region-tint: 3%;          // background = region colour at this strength
+    --region-border: 1px;
+    --region-radius: 8px;
+    --region-pad: 16px;
+    --region-flag: 22px;
+    --region-title-size: 22px;
+    --region-text-size: 1rem;   // body text in the 2×2 "Hlavní charakteristiky" boxes
+    --region-line-height: 1.5em; // its line height (em: the sidebar reads a unitless knob as a colour)
+    // Chart "Mix výroby elektřiny" (MIX in grafy.js).
+    --mix-coal: #eb4a66;
+    --mix-fossil: #b3306e;
+    --mix-nuclear: #7f94a6;
+    --mix-oze: #30b8ab;
+}
+
+.region-box {
+    padding: var(--region-pad);
+    border: var(--region-border) solid var(--region);
+    border-radius: var(--region-radius);
+    background: color-mix(in srgb, var(--region) var(--region-tint), transparent);
+
+    h3, h4 {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        flex-wrap: wrap;
+        margin-top: 0;
+        font-size: var(--region-title-size);
+    }
+
+    p:last-child { margin-bottom: 0; }
+}
+
+.region-flag {
+    width: var(--region-flag);
+    height: var(--region-flag);
+    border-radius: 50%;
+    flex: none;
+}
+
+// Equal heights only inside the 2×2 grid; full-width boxes size to content.
+.region-grid .region-box { height: 100%; }
+.region-stats {
+    color: #718096;
+    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
+    strong { color: inherit; }
+    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
+}
+.region-detail {
+    width: 75%;
+}
+// The boxes list only the bold key phrases, each behind an icon; the full
+// text follows under the grid.
+.region-grid .region-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.region-grid .region-box li {
+    color: var(--region);
+    font-size: var(--region-text-size);
+    line-height: var(--region-line-height);
+    margin-bottom: 0.4em;
+}
+
+.region-eu    { --region: var(--region-eu); }
+.region-cina  { --region: var(--region-cina); }
+.region-usa   { --region: var(--region-usa); }
+.region-indie { --region: var(--region-indie); }
+
+// Font Awesome icon before each key phrase in the boxes; takes the region
+// colour from the list item.
+.region-icon {
+    width: 1.25em;
+    text-align: center;
+}
+
+// web-core pads every div inside an expandable box (.expandable-content div),
+// so the panel's own nested divs stacked up an indent. Keep the panel flush.
+.expandable-content .d3-panel,
+.expandable-content .d3-panel div { padding: 0; }
