@@ -15,6 +15,7 @@ extra-scripts:
 - /assets-local/charts/fok-theme.js
 - /assets-local/charts/fok-utils.js
 - /assets-local/js/prosperita-ceskeho-prumyslu.js
+- /assets-local/js/chart-download.js
 ---
 
 {% comment %}
@@ -504,6 +505,38 @@ K grafu: Hrubé užití = včetně vstupů do koksoven a vysokých pecí (hutě)
 Zdroj: [Eurostat env_ac_pefasu](https://ec.europa.eu/eurostat/databrowser/view/env_ac_pefasu/default/table?lang=en)
 "
 %}
+
+{% include slide.html
+  title="Příloha: skladba užité energie"
+  lead="**Celá skladba** energie podle oborů"
+  chart-title="Jakou energii obory používají a kolik"
+  chart-note="(hrubé užití energie 2023)"
+  chart="priloha-energie-2"
+  wide="true"
+  source="Hrubé užití vč. vstupů do koksoven, vysokých pecí a surovin pro chemii; rafinerie vynechány. Zdroj: Eurostat env_ac_pefasu (2023)"
+  notes="
+K grafu: Hrubé užití = včetně vstupů do koksoven a vysokých pecí (hutě) a surovin (nafta v chemii). Ostatní ropné produkty zahrnují i naftu pro dopravu. Rafinerie vynechány. Zdroj: Eurostat env_ac_pefasu (2023)
+
+Zdroj: [Eurostat env_ac_pefasu](https://ec.europa.eu/eurostat/databrowser/view/env_ac_pefasu/default/table?lang=en)
+"
+%}
+
+<p class="slide-download">Stáhnout graf: <button type="button" class="chart-download" data-svg="svg-priloha-energie-2" data-filename="skladba-uzite-energie.svg" data-title=".slide:has([data-chart='priloha-energie-2']) .slide-chart__title" data-source=".slide:has([data-chart='priloha-energie-2']) .slide__source">SVG</button></p>
+
+{% include slide.html
+  title="Domácnosti a energeticky náročný průmysl"
+  lead="**Česko** má u energeticky náročného průmyslu nejvyšší hodnotu ze srovnávaných zemí, **Francie** výrazně nejnižší"
+  chart-title="Domácnosti a energeticky náročný průmysl podle zemí"
+  chart-note="(%)"
+  chart="domacnosti-prumysl"
+  wide="true"
+  source="Hodnoty odečteny z grafu; Česko přibližně. Zdroj: DOPLNIT"
+  notes="
+Hodnoty pro DE, ES, FR, IT a NL odečteny z obrázku grafu (přesnost ± 0,05), Česko přibližně. Co graf ukazuje, rok a zdroj DOPLNIT.
+"
+%}
+
+<p class="slide-download">Stáhnout graf: <button type="button" class="chart-download" data-svg="svg-domacnosti-prumysl" data-filename="domacnosti-prumysl.svg" data-title=".slide:has([data-chart='domacnosti-prumysl']) .slide-chart__title" data-source=".slide:has([data-chart='domacnosti-prumysl']) .slide__source">SVG</button></p>
 
 {% include slide.html
   title="Příloha: dovoz a vývoz podle oborů"

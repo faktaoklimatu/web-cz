@@ -13,6 +13,7 @@
   "use strict";
 
   const DIR = "/assets-local/files/prosperita-ceskeho-prumyslu/";
+  const DEV = new URLSearchParams(location.search).get("dev") === "1";
 
   // ── Look ─────────────────────────────────────────────────────────────────
   // FoK chart style (assets-local/charts/fok-theme.js) at slide scale: the
@@ -123,7 +124,9 @@
     const k = 1920 / el.closest(".slide").getBoundingClientRect().width;
     const W = Math.round(el.clientWidth * k);
     const H = Math.round(el.clientHeight * k);
+    // The id is what a chart-download.js button names (data-svg).
     const svg = d3.select(el).append("svg")
+      .attr("id", "svg-" + el.dataset.chart)
       .attr("viewBox", `0 0 ${W} ${H}`)
       .attr("font-family", FoKTheme.font)
       .attr("font-size", FS.label)
@@ -1291,35 +1294,135 @@
     ], xc(-30), H - 20, { size: FS.small });
   };
 
-  // 29 — appendix: energy mix
-  CHARTS["priloha-energie"] = async (el) => {
+  // 29 — appendix: energy mix. The copy (-2) colours the carriers by fuel
+  // family and shows the intensity in grey on a linear axis.
+  // Given: elektřina, uhlí, ropa, plyn, biomasa; the rest is a guess. Keyed by
+  // the legend label, so the ?dev=1 pickers can name them.
+  const ENERGY_2 = {
+    "Elektřina": "#0994c4",
+    "Zemní plyn": "#e57473",
+    "Uhlí a koks": "#923255",
+    "Koksárenský a vysokopecní plyn": "#b98a9b",
+    "Nafta (surovina)": "#eaa7b0",
+    "Ostatní ropné produkty": "#cb435c",
+    "Teplo": "#f3a65a",
+    "Biomasa": "#d1ae7f",
+    "Odpady": "#d3d7db",
+    "Energetická náročnost": "#8a949c",
+  };
+  const energyMix = (plain) => async (el) => {
     const data = await energyRows();
     const { svg, W, H } = canvas(el);
     const lw = LW;
-    const legendH = 90;
+    const legendH = plain ? 150 : 90;
     const y = rows(data.length, 40, H - legendH, 0.22);
     const bw = y.bandwidth();
-    const xm = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 0.66 * (W - lw)]);
-    const xi = d3.scaleLog().domain([0.5, 150]).range([lw + 0.74 * (W - lw), W - 50]);
+    const colors = CARRIERS.map((c) => (plain ? ENERGY_2[c[1]] : c[3]));
+    // The copy is a wide slide: the mix keeps the 4/5 width of the others
+    // (_slides.scss) and the intensity runs on to the right edge.
+    const Wm = plain ? W * 0.8 : W;
+    const xm = d3.scaleLinear().domain([0, 100]).range([lw + 10, lw + 0.66 * (Wm - lw)]);
+    const xi = (plain ? d3.scaleLinear().domain([0, 120]) : d3.scaleLog().domain([0.5, 150])).range([lw + 0.74 * (Wm - lw), W - 50]);
+    const x0 = xi.domain()[0];
     txt(svg, xm(0), 10, "Skladba užité energie (%)", { size: FS.small, color: C.grey });
-    txt(svg, xi(0.5), 10, "Energetická náročnost (TJ na mil. € HPH, log.)", { size: FS.small, color: C.grey });
+    // The copy's unit goes under its axis: the header alone has to fit the
+    // canvas, or the downloaded SVG cuts it off.
+    txt(svg, xi(x0), 10, "Energetická náročnost" + (plain ? "" : " (TJ na mil. € HPH, log.)"), { size: FS.small, color: C.grey });
+    if (plain) {
+      const ay = y.range()[1];
+      xAxis(svg, xi, ay, { ticks: d3.range(0, 121, 20), format: (v) => fmt(v), grid: ay - 30 });
+      txt(svg, (xi.range()[0] + xi.range()[1]) / 2, ay + 56, "TJ na mil. € HPH", { anchor: "middle", size: FS.small, color: C.grey });
+    }
     data.forEach((d, i) => {
       const cy = y(i) + bw / 2;
       txt(svg, lw - 14, cy, d.name, { anchor: "end", size: FS.small + 1 });
       let acc = 0;
       d.shares.forEach((s, k) => {
-        const [, name, , color] = CARRIERS[k];
+        const name = CARRIERS[k][1];
+        const color = colors[k];
         rect(svg, xm(acc), xm(acc + s), y(i), bw, color)
           .call(hover, () => `<strong>${d.name}</strong><br>${name}: ${pct(s, 1)}`);
-        if (s >= 14) txt(svg, xm(acc + s / 2), cy, fmt(s), { anchor: "middle", size: FS.small - 2, color: DARK_CARRIERS.includes(color) ? "white" : C.text });
+        // The copy's colours can be anything (?dev=1), so it reads lightness.
+        const dark = plain ? d3.lab(color).l < 60 : DARK_CARRIERS.includes(color);
+        if (s >= 14) txt(svg, xm(acc + s / 2), cy, fmt(s), { anchor: "middle", size: FS.small - 2, color: dark ? "white" : C.text });
         acc += s;
       });
-      rect(svg, xi(0.5), xi(d.tj), y(i), bw, groupColor(d.nace));
+      rect(svg, xi(x0), xi(d.tj), y(i), bw, plain ? ENERGY_2["Energetická náročnost"] : groupColor(d.nace));
       txt(svg, xi(d.tj) + 8, cy, fmtTJ(d.tj), { size: FS.small });
     });
-    legend(svg, CARRIERS.map(([, name, , color]) => ({ label: name, color })), 20, H - 62,
+    legend(svg, CARRIERS.map(([, name], k) => ({ label: name, color: colors[k] })), 20, H - 62,
       { columns: 5, columnWidths: [270, 200, 200, 360], size: FS.small, lineHeight: 36 });
   };
+  CHARTS["priloha-energie"] = energyMix(false);
+  CHARTS["priloha-energie-2"] = async (el) => {
+    await energyMix(true)(el);
+    if (DEV) devColors(el, ENERGY_2, energyMix(true));
+  };
+
+  // Households vs. energy-intensive industry by country, values read off a
+  // chart image; Czechia highlighted, the rest grey. Same country order in
+  // both groups, sorted by industry; a country without values goes last.
+  CHARTS["domacnosti-prumysl"] = async (el) => {
+    const data = (await sheet("domacnosti-prumysl")).map((d) => ({
+      code: d.zeme, name: COUNTRY[d.zeme] || d.zeme, h: num(d.domacnosti), i: num(d.energeticky_narocny_prumysl),
+    })).sort((a, b) => (b.i ?? -1) - (a.i ?? -1));
+    const CZ_BAR = "#004c6b";
+    const groups = [
+      { key: "h", label: "Domácnosti" },
+      { key: "i", label: "Energeticky náročný průmysl" },
+    ];
+    const { svg, W, H } = canvas(el);
+    const m = { top: 40, right: 20, bottom: 100, left: 64 };
+    const y = d3.scaleLinear().domain([0, 14]).range([H - m.bottom, m.top]);
+    const xg = d3.scaleBand().domain(groups.map((g) => g.key)).range([m.left + 20, W - m.right]).paddingInner(0.12);
+    const xc = d3.scaleBand().domain(data.map((d) => d.name)).range([0, xg.bandwidth()]).padding(0.3);
+    yAxis(svg, y, m.left, W - m.left - m.right, { ticks: d3.range(0, 15, 2), format: (v) => pct(v) });
+    groups.forEach((g) => {
+      const gx = xg(g.key);
+      data.forEach((d) => {
+        const bx = gx + xc(d.name);
+        const cx = bx + xc.bandwidth() / 2;
+        const cz = d.code === "CZ";
+        const v = d[g.key];
+        txt(svg, cx, y(0) + 26, d.name, { anchor: "middle", size: FS.small, bold: cz, color: cz ? CZ_BAR : C.text });
+        if (v == null) {
+          txt(svg, cx, y(0) - 16, "DOPLNIT", { anchor: "middle", size: FS.small, color: C.grey });
+          return;
+        }
+        rect(svg, bx, bx + xc.bandwidth(), y(v), y(0) - y(v), cz ? CZ_BAR : C.other)
+          .call(hover, () => `<strong>${d.name}</strong><br>${g.label}: ${pct(v, 1)}`);
+        txt(svg, cx, y(v) - 16, pct(v, 1), { anchor: "middle", size: FS.value, bold: cz, color: cz ? CZ_BAR : C.text });
+      });
+      txt(svg, gx + xg.bandwidth() / 2, y(0) + 72, g.label, { anchor: "middle", bold: true });
+    });
+  };
+
+  // ?dev=1: a native colour picker per palette entry under the slide, redrawing
+  // the chart on each change. ponytail: the edits live until a reload; paste
+  // the printed palette back into the source to keep them.
+  function devColors(el, palette, draw) {
+    const box = document.createElement("div");
+    box.style.cssText = "display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0;font-size:14px";
+    const out = document.createElement("pre");
+    out.style.cssText = "font-size:12px;user-select:all";
+    const show = () => { out.textContent = JSON.stringify(palette, null, 2); };
+    Object.keys(palette).forEach((name) => {
+      const input = document.createElement("input");
+      input.type = "color";
+      input.value = palette[name];
+      input.addEventListener("input", () => {
+        palette[name] = input.value;
+        show();
+        el.replaceChildren();
+        draw(el);
+      });
+      const label = document.createElement("label");
+      label.append(input, " " + name);
+      box.append(label);
+    });
+    show();
+    el.closest(".slide").after(box, out);
+  }
 
   // 30 — appendix: imports and exports
   CHARTS["priloha-obchod"] = async (el) => {
