@@ -10,11 +10,12 @@
  * extracts of the sources, filtered to the four regions; grouping and shares
  * are computed here. To refresh, re-export from the same source and keep the
  * column names:
- *   emise-co2.csv       Our World in Data, owid-co2-data.csv (1950–2024)
+ *   emise-ghg.csv       EDGAR 2025 booklet, GHG_totals_by_country and
+ *                       GHG_per_capita_by_country, 1990–2024, incl. GLOBAL
+ *                       TOTAL as "svet" (shares of world; per-capita population)
+ *   emise-co2.csv       Our World in Data, owid-co2-data.csv (1950–2024),
+ *                       only for the cumulative CO₂ share
  *   emise-sektory.csv   EDGAR 2025 booklet, GHG_by_sector_and_country, 2024
- *   emise-celkem.csv    EDGAR 2025 booklet, GHG_totals_by_country and
- *                       GHG_per_capita_by_country, 2024, incl. GLOBAL TOTAL
- *                       as "svet" (shares of world; per-capita population)
  *   elektrina-mix.csv   Ember yearly_full_release_long_format.csv, generation
  *                       by fuel, both % and TWh
  *   kapacita.csv        Ember yearly_full_release_long_format.csv, capacity GW
@@ -42,8 +43,8 @@
   const REGIONS = [
     { key: "cina",  label: "Čína",  get color() { return regionColor("cina", "#e0495a"); } },
     { key: "usa",   label: "USA",   get color() { return regionColor("usa", "#3b85d8"); } },
-    { key: "indie", label: "Indie", get color() { return regionColor("indie", "#37a97e"); } },
-    { key: "eu",    label: "EU",    get color() { return regionColor("eu", "#36369b"); } },
+    { key: "indie", label: "Indie", get color() { return regionColor("indie", "#8546af"); } },
+    { key: "eu",    label: "EU",    long: "Evropská unie", get color() { return regionColor("eu", "#36369b"); } },
   ];
   // Small-multiple panels (areas, squares) in the article order.
   const PANEL_ORDER = ["eu", "usa", "cina", "indie"];
@@ -63,19 +64,19 @@
   // shares add up to 100 % with no remainder to show. Colours are CSS
   // variables (--mix-*) like the region ones, so the ?dev=1 sidebar tunes them.
   const MIX = [
-    { key: "coal",    label: "Uhlí",                   get color() { return varColor("--mix-coal", "#eb4a66"); },
+    { key: "coal",    label: "Uhlí",                   get color() { return varColor("--mix-coal", "#914b64"); },
       from: ["Coal"] },
-    { key: "fossil",  label: "Plyn a ostatní fosilní", get color() { return varColor("--mix-fossil", "#b3306e"); },
+    { key: "fossil",  label: "Plyn a ostatní fosilní", get color() { return varColor("--mix-fossil", "#e29292"); },
       from: ["Gas", "Other Fossil"] },
-    { key: "nuclear", label: "Jádro",                  get color() { return varColor("--mix-nuclear", "#7f94a6"); },
+    { key: "nuclear", label: "Jádro",                  get color() { return varColor("--mix-nuclear", "#a7cad3"); },
       from: ["Nuclear"] },
-    { key: "oze",     label: "Obnovitelné zdroje",     get color() { return varColor("--mix-oze", "#30b8ab"); },
+    { key: "oze",     label: "Obnovitelné zdroje",     get color() { return varColor("--mix-oze", "#008a94"); },
       from: ["Hydro", "Bioenergy", "Other Renewables", "Wind", "Solar"] },
   ];
-  // Installed capacity by source, bottom of the stack first. Nuclear and
-  // fossil plants count to the total the shares are taken of, but are not
-  // drawn (`hidden`). Ember's few GW of "Other Renewables" (geothermal etc.)
-  // ride with biomass.
+  // Renewables by source, bottom of the stack first; the same groups split
+  // both capacity and generation. Nuclear and fossil are not drawn
+  // (`hidden`). Ember's few GW of "Other Renewables" (geothermal etc.) ride
+  // with biomass.
   const CAPACITY = [
     { key: "hydro",   label: "Voda",                  color: "#a1bdcf", from: ["Hydro"] },
     { key: "wind",    label: "Vítr",                  color: "#237dde", from: ["Wind"] },
@@ -109,27 +110,31 @@
   };
 
   // Climate targets for the timeline. side: where the region's dots push to
-  // and its notes go. A note is a list of [text, bold, italic] runs;
-  // non-breaking spaces keep "−55 %" in one piece when it wraps.
+  // and its notes go. A note is a list of [text, bold, italic] runs; the
+  // chart has no title, the neutrality notes say what it shows. An interim
+  // target (kind "dot") has a note in regular weight; `tip` adds a tooltip. Non-breaking
+  // spaces keep "−55 %" and "v roce" in one piece when it wraps.
   const GOALS = [
-    { region: "eu", label: "Evropská unie", short: "EU", side: "above", marks: [
+    { region: "eu", side: "above", marks: [
       { year: 2030, kind: "dot", note: [["−55 %", true], [" emisí oproti 1990"]] },
       { year: 2040, kind: "dot", note: [["−90 %", true], [" emisí oproti 1990"]] },
-      { year: 2050, kind: "neutral" },
+      { year: 2050, kind: "neutral",
+        note: [["EU", true], [" plánuje dosáhnout klimatické neutrality v\u00a0roce "], ["2050", true]] },
     ] },
-    { region: "indie", label: "Indie", short: "Indie", side: "above", marks: [
-      { year: 2070, kind: "neutral" },
+    { region: "indie", side: "above", marks: [
+      { year: 2070, kind: "neutral", note: [["Indie", true], [" v\u00a0roce "], ["2070", true]] },
     ] },
-    { region: "usa", label: "USA", short: "USA", side: "below", marks: [
-      { year: 2050, kind: "cancelled",
-        tip: "Cíle Bidenovy administrativy – klimatická neutralita do roku 2050, −50–52 % emisí " +
-             "do roku 2030 a −61–66 % do roku 2035 oproti roku 2005 – zrušila Trumpova administrativa." },
+    { region: "usa", side: "below", marks: [
+      { year: 2050, kind: "cancelled", note: [["USA", true], [" svůj cíl zrušily"]],
+        tip: "Za Bidenovy administrativy byl cíl klimatické neutrality nastaven na rok 2050. Tento cíl " +
+             "byl zrušen s nástupem Trumpa. Zrušeny byly i dílčí cíle −50–52 % emisí do roku 2030 " +
+             "a −61–66 % do roku 2035 oproti roku 2005." },
     ] },
     { region: "cina", label: "Čína", short: "Čína", side: "below", marks: [
       { year: 2030, kind: "dot", note: [["zvrátit růst", true], [" emisí"]] },
       { year: 2035, kind: "dot", note: [["−7 až −10 %", true], [" oproti vrcholu emisí"]],
         tip: "−7 až −10 % emisí do roku 2035 oproti roku s maximálními hodnotami (pravděpodobně 2025 nebo 2026)" },
-      { year: 2060, kind: "neutral" },
+      { year: 2060, kind: "neutral", note: [["Čína", true], [" v\u00a0roce "], ["2060", true]] },
     ] },
   ];
 
@@ -193,6 +198,17 @@
     return sel.attr("font-size", C.axisFontSize).attr("fill", C.axis);
   }
 
+  // The unit right after the top tick label, on its grid line ("20 mld. t
+  // CO₂eq"), over a box in the background colour that hides the grid and data
+  // under it, as dataviz does (axis.yLabel, inline). Draw it after the data.
+  function inlineUnit(g, y, ticks, text) {
+    const box = g.append("rect").attr("fill", "#fff");
+    const t = axisText(g.append("text")).attr("x", 0).attr("dx", "0.3em")
+      .attr("y", y(d3.max(y.ticks(ticks)))).attr("dy", "0.32em").text(text);
+    const b = t.node().getBBox();
+    box.attr("x", b.x).attr("y", b.y).attr("width", b.width + 4).attr("height", b.height);
+  }
+
   // Every chart's redraw, for the ?dev=1 sidebar after it changes a colour.
   const redraws = [];
   window.REGIONY_REDRAW = () => redraws.forEach(f => f());
@@ -204,16 +220,24 @@
     const el = document.getElementById(id + "-svg");
     if (!el) return () => {};
     let last = 0;
+    // The layout width, not the bounding box: a sticky chart shrunk with a
+    // transform (the ?dev=1 experiment) must still draw at full size.
+    const width = () => el.parentNode.clientWidth;
     const redraw = () => {
-      const w = Math.round(el.getBoundingClientRect().width);
+      const w = width();
       if (!w) return;
       last = w;
       const svg = d3.select(el);
       svg.selectAll("*").remove();
       svg.attr("height", draw(svg, w));
+      // A chart narrower than its panel (the waffle) ends its foot at the
+      // chart's right edge, not the panel's.
+      const b = el.getBBox(), gap = w - (b.x + b.width);
+      foot.style.marginRight = gap > w / 10 ? gap + "px" : "";
     };
+    const foot = el.parentNode.querySelector(".chart-foot");
     new ResizeObserver(() => {
-      if (Math.round(el.getBoundingClientRect().width) !== last) redraw();
+      if (width() !== last) redraw();
     }).observe(el);
     // Text is measured for wrapping and placement; once the webfont is in,
     // measure again, or labels sized against the fallback font run long.
@@ -248,11 +272,21 @@
   //   o.square: plot area as tall as it is wide
   function smallMultiples(svg, width, o) {
     const multi = o.keys.length > 1;
-    let top = multi ? legend(svg, o.keys, width) : 0;
-    top += 26 + unitCaption(svg, o.unit, top + 13, width);
+    const top = multi ? legend(svg, o.keys, width) + 4 : 4;
 
     const cols = width >= 560 ? 4 : 2;
-    const left = 40, gapX = 16, titleH = 22, axisH = 22, rowGap = 14;
+    // The left margin is the top tick label's width: that label starts flush
+    // with the chart's left edge and the others end where it ends (d3 sets
+    // them 3 px left of the plot). Ticks depend only on the niced domain.
+    // ponytail: assumes the top label is the widest, true for counts from 0.
+    const ticks = d3.scaleLinear().domain([0, o.yMax]).nice(4).ticks(4);
+    // o.tickSuffix (" %"): the unit after every tick label instead of once on the top line.
+    const tickLabel = o.tickSuffix ? v => tickFmt(v) + o.tickSuffix : tickFmt;
+    const probe = axisText(svg.append("text")).text(tickLabel(d3.max(ticks)));
+    const left = Math.ceil(probe.node().getComputedTextLength()) + 3;
+    probe.remove();
+    // titleH: the region name and room under it for the top tick label.
+    const gapX = 16, titleH = 32, axisH = 22, rowGap = 14;
     const panelW = (width - left - gapX * (cols - 1)) / cols;
     const plotH = o.square ? panelW : cols === 4 ? 150 : 130;
 
@@ -266,11 +300,13 @@
       const col = i % cols, row = Math.floor(i / cols);
       const g = svg.append("g").attr("transform",
         `translate(${left + col * (panelW + gapX)},${top + row * (titleH + plotH + axisH + rowGap)})`);
-      g.append("text").attr("y", 15).attr("font-size", 15).attr("font-weight", 700)
-        .attr("fill", multi ? C.title : r.color).text(r.label);
+      // The region in full (r.long); the first column's name starts at the
+      // chart's left edge, over the tick labels.
+      g.append("text").attr("x", col === 0 ? -left : 0).attr("y", 15).attr("font-size", 15).attr("font-weight", 700)
+        .attr("fill", multi ? C.title : r.color).text(r.long || r.label);
 
       const p = g.append("g").attr("transform", `translate(0,${titleH})`);
-      p.append("g").call(d3.axisLeft(y).ticks(4).tickSize(-panelW).tickFormat(col === 0 ? tickFmt : ""))
+      p.append("g").call(d3.axisLeft(y).ticks(4).tickSize(-panelW).tickFormat(col === 0 ? tickLabel : ""))
         .call(a => a.select(".domain").remove())
         .call(a => a.selectAll(".tick line").attr("stroke", C.grid))
         .call(a => axisText(a.selectAll(".tick text")));
@@ -279,6 +315,7 @@
       p.selectAll(".area").data(stack(data)).join("path")
         .attr("fill", (s, j) => o.keys[j].color || r.color)
         .attr("d", area);
+      if (col === 0 && !o.tickSuffix) inlineUnit(p, y, 4, o.short);
 
       p.append("g").attr("transform", `translate(0,${plotH})`)
         .call(d3.axisBottom(x).tickValues(o.xTicks).tickFormat(d3.format("d")).tickSize(4))
@@ -319,11 +356,18 @@
   // square's AREA is proportional to its value, on one scale for all regions.
   //   o.rows: Map region → {<key>: value}   o.layout: SQUARES_LAYOUT
   function squares(svg, width, o) {
-    let top = legend(svg, o.keys, width);
+    // EXPERIMENT (?dev=1 sidebar, body class rg-squares-region): every square
+    // of a region in the region's colour, fading sector by sector in the
+    // legend's order. ponytail: the step is fixed at 15 %, 6 sectors fit.
+    const byRegion = document.body.classList.contains("rg-squares-region");
+    const strength = key => 1 - 0.15 * o.keys.findIndex(k => k.key === key);
+    const shade = (base, key) => d3.interpolateRgb("#fff", base)(strength(key));
+    const keys = byRegion ? o.keys.map(k => ({ ...k, color: shade(C.title, k.key) })) : o.keys;
+    let top = legend(svg, keys, width);
     top += 40 + unitCaption(svg, o.unit, top + 13, width);
 
     const GAP = 2, PAD = 8, VALUE_SIZE = 12, NAME_SIZE = 13, TOTAL_SIZE = 26;
-    const color = key => o.keys.find(k => k.key === key).color;
+    const color = (key, r) => byRegion ? shade(r.color, key) : o.keys.find(k => k.key === key).color;
     const total = r => d3.sum(o.keys, k => o.rows.get(r.key)[k.key]);
     const regions = PANEL_ORDER.map(regionOf);
     const maxValue = d3.max(regions, r => d3.max(o.keys, k => o.rows.get(r.key)[k.key]));
@@ -417,14 +461,16 @@
         const sum = total(d.r);
 
         g.append("text").attr("x", -PAD).attr("y", NAME_SIZE).attr("text-anchor", "end")
-          .attr("font-size", NAME_SIZE).attr("font-weight", 700).attr("fill", d.r.color)
+          .attr("font-size", NAME_SIZE).attr("font-weight", 700).attr("fill", C.title)
           .text(d.r.label.toUpperCase());
         g.append("text").attr("x", -PAD).attr("y", NAME_SIZE + 6 + TOTAL_SIZE * 0.8).attr("text-anchor", "end")
           .attr("font-size", TOTAL_SIZE).attr("font-weight", 700).attr("fill", C.title)
           .text(fmt(sum, 1));
 
         d.sq.forEach(s => {
-          const v = o.rows.get(d.r.key)[s.key], c = color(s.key);
+          const v = o.rows.get(d.r.key)[s.key], c = color(s.key, d.r);
+          // Text beside a square takes the full colour, a pale shade would not read.
+          const ink = byRegion ? d.r.color : c;
           const label = o.keys.find(k => k.key === s.key).label;
           g.append("rect").attr("x", s.x).attr("y", s.y).attr("width", s.w).attr("height", s.w)
             .attr("fill", c)
@@ -439,12 +485,12 @@
           const t = g.append("text").attr("font-size", VALUE_SIZE).attr("font-weight", 500)
             .attr("pointer-events", "none").text(text);
           if (inside) {
-            t.attr("fill", "#fff").attr("text-anchor", "end").attr("x", s.x + s.w - 4)
+            t.attr("fill", byRegion && strength(s.key) < 0.55 ? d.r.color : "#fff").attr("text-anchor", "end").attr("x", s.x + s.w - 4)
               .attr("y", s.pos === "bottom" ? s.y + VALUE_SIZE + 2 : s.y + s.w - 4);
           } else if (s.pos === "top") {
-            t.attr("fill", c).attr("text-anchor", "end").attr("x", s.x + s.w).attr("y", s.y - 4);
+            t.attr("fill", ink).attr("text-anchor", "end").attr("x", s.x + s.w).attr("y", s.y - 4);
           } else {
-            t.attr("fill", c).attr("x", s.x + s.w + 4)
+            t.attr("fill", ink).attr("x", s.x + s.w + 4)
               .attr("y", s.pos === "bottom" ? s.y + VALUE_SIZE : s.y + s.w - 2);
           }
         });
@@ -457,7 +503,7 @@
   // Line per series, labelled at its end instead of a legend.
   //   o.series: [{key, label, color, dashed?, values: [{year, v}]}]
   function lines(svg, width, o) {
-    const mg = { top: 30 + unitCaption(svg, o.unit, 13, width), right: 56, bottom: 24, left: 34 };
+    const mg = { top: 12, right: 56, bottom: 24, left: 34 };
     const H = width >= 560 ? 300 : 240;
     const W = width - mg.left - mg.right;
     const g = svg.append("g").attr("transform", `translate(${mg.left},${mg.top})`);
@@ -488,6 +534,7 @@
     ends.forEach((e, i) => { if (i && e.y - ends[i - 1].y < 15) e.y = ends[i - 1].y + 15; });
     ends.forEach(e => g.append("text").attr("x", W + 6).attr("y", e.y).attr("dy", "0.35em")
       .attr("font-size", 13).attr("font-weight", 700).attr("fill", e.s.color).text(e.s.label));
+    inlineUnit(g, y, 5, o.short);
 
     const rule = g.append("line").attr("y1", 0).attr("y2", H)
       .attr("stroke", C.title).attr("stroke-width", 1).style("display", "none");
@@ -597,24 +644,36 @@
     return top + ROWS * cell + 6 + NAME_SIZE * 2 + 8;
   }
 
-  // Climate targets on one time axis, a small beeswarm: a large dot for each
-  // region's climate-neutrality year (the chart title says what it is), a
-  // dashed hollow one for a cancelled target, a small dot with an arrowed note
-  // for each interim target. EU and India sit above the line, China and USA
-  // below; dots of the same year on both sides push apart. Labels are laid out
-  // from the right in levels moving away from the line, so a note never runs
-  // into another note or across another note's arrow.
+  // Climate targets on one time line, no arrows: a large dot for each
+  // region's climate-neutrality year with its note right at it (the chart has
+  // no title, the notes say it), the same dot with a × for a cancelled target,
+  // and a small dot with a regular-weight note for each interim target. EU and India
+  // sit above the line, China and USA below; a dot below moves down off one
+  // above of the same year. Notes are laid out from the right: each wraps to
+  // end before the next on its side, and one that still does not fit (narrow
+  // screens) moves a level away from the line, with a thin leader. Years
+  // under it all.
   function timeline(svg, width, goals) {
-    const NOTE = 13, LABEL = 15, LINE_H = 16, LEVEL_GAP = 6, R = 11, r = 4.5;
-    const narrow = width < 560, NOTE_W = narrow ? 110 : 140;
+    // Interim notes: regular, at the size of the source line under the chart.
+    const NOTE = parseFloat(getComputedStyle(svg.node().parentNode.querySelector(".chart-foot")).fontSize) || 13;
+    const LABEL = 15, LINE_H = 16, LEVEL_GAP = 6, R = 8.8, r = 4.5;
+    // Interim dot style, an experiment in the ?dev=1 sidebar: filled (default),
+    // ring, tick or diamond, as a body class.
+    const dotStyle = ["ring", "tick", "diamond"].find(k => document.body.classList.contains("rg-dot-" + k));
+    const NOTE_MIN = 40, NOTE_MAX = 140, LABEL_MAX = 230, PAD = 8, NOTE_GAP = 4;
+    // Large dot to its label; the ?dev=1 sidebar tunes it.
+    const LABEL_GAP = parseFloat(varColor("--timeline-label-gap", "6"));
+    const narrow = width < 560;
 
+    // A run's `bold`: true (700), a weight, or none (400).
+    const fw = bold => bold === true ? 700 : bold || 400;
     const widths = new Map();
     const measure = (t, size, bold, italic) => {
       const id = [t, size, bold, italic].join("|");
       if (!widths.has(id)) {
         // white-space: pre, or SVG drops a word's trailing space from the
         // measurement and every wrapped line comes out a few px too long.
-        const el = svg.append("text").attr("font-size", size).attr("font-weight", bold ? 700 : 400)
+        const el = svg.append("text").attr("font-size", size).attr("font-weight", fw(bold))
           .attr("font-style", italic ? "italic" : null).style("white-space", "pre").text(t);
         widths.set(id, el.node().getComputedTextLength());
         el.remove();
@@ -638,130 +697,122 @@
         lines[lines.length - 1].push(word);
         w += ww;
       });
-      return { lines, w: d3.max(lines, l => d3.sum(l, x => measure(x.t, size, x.bold, x.italic))) };
+      return { lines, w: d3.max(lines, l => d3.sum(l, x => measure(x.t.trimEnd(), size, x.bold, x.italic))) };
     }
     function drawRuns(g, line, x, y, color, anchor, size) {
       const t = g.append("text").attr("x", x).attr("y", y).attr("font-size", size).attr("fill", color)
-        .attr("text-anchor", anchor || "start");
-      line.forEach(word => t.append("tspan").attr("font-weight", word.bold ? 700 : 400)
+        .attr("text-anchor", anchor);
+      line.forEach(word => t.append("tspan").attr("font-weight", fw(word.bold))
         .attr("font-style", word.italic ? "italic" : null).text(word.t));
     }
-    // A small curved arrow; its head is one three-point stroke at (x2, y2).
-    function arrow(g, x1, y1, cx, cy, x2, y2, color) {
-      g.append("path").attr("d", `M${x1},${y1}Q${cx},${cy} ${x2},${y2}`)
-        .attr("fill", "none").attr("stroke", color).attr("stroke-width", 1.3);
-      const a = Math.atan2(y2 - cy, x2 - cx);
-      const wing = d => `${x2 - 6 * Math.cos(a + d)},${y2 - 6 * Math.sin(a + d)}`;
-      g.append("path").attr("d", `M${wing(-0.6)}L${x2},${y2}L${wing(0.6)}`)
-        .attr("fill", "none").attr("stroke", color).attr("stroke-width", 1.3)
-        .attr("stroke-linejoin", "round").attr("stroke-linecap", "round");
-    }
 
-    const x = d3.scaleLinear().domain([2027, 2072]).range([R + 4, width - R - 4]);
+    const x = d3.scaleLinear().domain([2028, 2072]).range([R + 4, width - R - 4]);
     const marks = goals.flatMap(gl => gl.marks.map(m => ({
       ...m, side: gl.side, color: regionOf(gl.region).color, cx: x(m.year), rad: m.kind === "dot" ? r : R, dy: 0,
-      // Large dots: region name and year (and "zrušeno" under a cancelled one).
-      // Small dots: the note, wrapped, starting just right of the dot.
-      text: m.kind === "dot" ? m.note
-        : [[narrow ? gl.short : gl.label, true], [" " + m.year]],
     })));
 
-    // Beeswarm: dots on opposite sides that would touch both move off the
-    // line by half the overlap.
+    // Dots of the same year: the one above stays on the line, the one below
+    // moves down until they no longer touch.
     marks.forEach(a => marks.forEach(b => {
-      const d = a.rad + b.rad + 2, dx = Math.abs(a.cx - b.cx);
-      if (a.side !== b.side && dx < d) a.dy = Math.max(a.dy, Math.sqrt(d * d - dx * dx) / 2);
+      const d = a.rad + b.rad + 3, dx = Math.abs(a.cx - b.cx);
+      if (a.side === "below" && b.side === "above" && dx < d) a.dy = Math.max(a.dy, Math.sqrt(d * d - dx * dx));
     }));
 
-    marks.forEach(m => {
-      m.size = m.kind === "dot" ? NOTE : LABEL;
-      m.wrapped = wrap(m.text, m.kind === "dot" ? NOTE_W : Infinity, m.size);
-      if (m.kind === "cancelled") {
-        m.wrapped.lines.push([{ t: "zrušeno", italic: true }]);
-        m.wrapped.w = Math.max(m.wrapped.w, measure("zrušeno", LABEL, false, true));
-      }
-      m.h = m.wrapped.lines.length * LINE_H;
-    });
-
-    // Levels per side, filled right to left: a note takes the level nearest
-    // the line where it fits, and its arrow reserves a corridor on every level
-    // it crosses. A large-dot label has no arrow, so it stays on level 0 and
-    // hangs right from its dot or, where that is taken or runs off the edge,
-    // left of it. ponytail: if neither fits it still lands on level 0, over
-    // whatever is there; no such clash with this data.
-    const sides = {};
+    // Horizontal: right to left per side. A note starts at its dot's left edge
+    // (or ends at its right edge where it would run off the chart) and wraps to
+    // end before the next note; it takes the level nearest the line where it
+    // fits, and its leader reserves a corridor on the levels it crosses.
+    const extent = {};
     ["above", "below"].forEach(side => {
-      const occ = [], heights = [];
+      const occ = [];
       const free = (k, [a, b]) => !(occ[k] || []).some(([c, d]) => c < b && a < d);
-      marks.filter(m => m.side === side).sort((a, b) => b.cx - a.cx).forEach(m => {
-        const w = m.wrapped.w;
+      let limit = width;   // left edge of the nearest level-0 label to the right
+      const placed = marks.filter(m => m.side === side).sort((a, b) => b.cx - a.cx);
+      placed.forEach(m => {
         let k = 0;
-        if (m.kind === "dot") {
-          m.x0 = m.cx + 12;
-          m.align = "start";
-          const span = [m.x0 - 8, m.x0 + w + 8], corridor = [m.cx - 6, m.x0];
-          while (k < occ.length && (!free(k, span) || d3.range(k).some(j => !free(j, corridor)))) k++;
-          if (k) d3.range(k).forEach(j => occ[j].push(corridor));
-        } else {
-          const fits = x0 => x0 >= 0 && x0 + w <= width;
-          const options = [m.cx - R, m.cx + R - w];
-          m.x0 = options.find(x0 => fits(x0) && free(0, [x0 - 8, x0 + w + 8]))
-            ?? options.find(fits) ?? options[0];
-          m.align = m.x0 === options[0] ? "start" : "end";
-        }
-        m.x1 = m.x0 + w;
-        const span = [m.x0 - 8, m.x1 + 8];
+        const big = m.kind !== "dot";
+        m.size = big ? LABEL : NOTE;
+        const runs = big ? m.note : m.note.map(([t]) => [t, false]);
+        const maxW = big ? LABEL_MAX : NOTE_MAX, room = limit - PAD - (m.cx - m.rad);
+        // Squeezed by the chart's right edge (not by another note): end at the
+        // dot's right edge instead, with the room on the left.
+        const end = limit === width && room < Math.min(maxW, wrap(runs, Infinity, m.size).w);
+        // ponytail: an end-aligned note takes at most a quarter of the width, so
+        // on a phone it wraps rather than squeezing the notes to its left.
+        m.wrapped = wrap(runs, Math.max(NOTE_MIN, Math.min(maxW, end ? width / 4 : room)), m.size);
+        m.align = end ? "end" : "start";
+        m.x0 = end ? m.cx + m.rad - m.wrapped.w : m.cx - m.rad;
+        const span = [m.x0, m.x0 + m.wrapped.w + PAD], corridor = [m.cx - 3, m.cx + 3];
+        while (!free(k, span) || d3.range(k).some(j => !free(j, corridor))) k++;
+        d3.range(k).forEach(j => (occ[j] = occ[j] || []).push(corridor));
         m.level = k;
-        (occ[k] = occ[k] || []).push(span);
-        heights[k] = Math.max(heights[k] || 0, m.h);
+        m.h = m.wrapped.lines.length * LINE_H;
+        (occ[k] = occ[k] || []).push([m.x0, m.x0 + m.wrapped.w + PAD]);
+        if (!k) limit = Math.min(limit, m.x0);
       });
-      const clear = (d3.max(marks.filter(m => m.side === side), m => m.dy + m.rad) || 0) + 8;
-      // Distance from the line to each level's inner edge.
-      const offset = heights.map((h, k) => clear + d3.sum(heights.slice(0, k)) + k * LEVEL_GAP);
-      sides[side] = { offset, total: clear + d3.sum(heights) + (heights.length - 1) * LEVEL_GAP };
+      // Vertical: level 0 hugs its own dot, each further level clears the one before.
+      const ext = [];
+      d3.range(d3.max(placed, m => m.level) + 1).forEach(k => placed.filter(m => m.level === k).forEach(m => {
+        m.inner = k ? ext[k - 1] + LEVEL_GAP : m.dy + m.rad + (m.kind === "dot" ? NOTE_GAP : LABEL_GAP);
+        ext[k] = Math.max(ext[k] || 0, m.inner + m.h);
+      }));
+      extent[side] = d3.max(ext) || 0;
     });
 
-    const AXIS = 30;
-    const lineY = AXIS + sides.above.total;
-
-    // Axis on top: year labels with a short tick under each, and the same
-    // ticks on the line itself.
-    [2030, 2040, 2050, 2060, 2070].forEach(yr => {
-      svg.append("text").attr("x", x(yr)).attr("y", 14).attr("text-anchor", "middle")
-        .attr("font-size", C.axisFontSize + 1).attr("fill", C.axis).text(yr);
-      svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", 20).attr("y2", 26)
-        .attr("stroke", C.axis).attr("stroke-width", 1.3);
-      svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", lineY - 4).attr("y2", lineY + 4)
-        .attr("stroke", "#8a94a3").attr("stroke-width", 1.5);
-    });
+    const lineY = extent.above + 4;
     svg.append("line").attr("x1", 0).attr("x2", width).attr("y1", lineY).attr("y2", lineY)
       .attr("stroke", "#8a94a3").attr("stroke-width", 1.5);
+
+    // Years under everything, ticks without an axis line; the ticks repeat on the line.
+    const axisY = lineY + extent.below + 16;
+    [2030, 2040, 2050, 2060, 2070].forEach(yr => {
+      svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", lineY - 4).attr("y2", lineY + 4)
+        .attr("stroke", "#8a94a3").attr("stroke-width", 1.5);
+      svg.append("line").attr("x1", x(yr)).attr("x2", x(yr)).attr("y1", axisY).attr("y2", axisY + 5)
+        .attr("stroke", C.axis).attr("stroke-width", 1);
+      svg.append("text").attr("x", x(yr)).attr("y", axisY + 19).attr("text-anchor", "middle")
+        .attr("font-size", C.axisFontSize + 1).attr("fill", C.axis).text(yr);
+    });
 
     marks.forEach(m => {
       const g = svg.append("g"), c = m.color, up = m.side === "above" ? -1 : 1;
       const cy = lineY + up * m.dy;
-      const dot = g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad);
-      if (m.kind === "cancelled") {
-        dot.attr("fill", "transparent").attr("stroke", c).attr("stroke-width", 2).attr("stroke-dasharray", "3 2.5");
-      } else {
-        dot.attr("fill", c).attr("stroke", "#fff").attr("stroke-width", m.kind === "dot" ? 4 : 3)
+      if (m.kind !== "dot" || !dotStyle) {
+        g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad)
+          .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", m.kind === "dot" ? 4 : 3)
           .attr("paint-order", "stroke");
+      } else if (dotStyle === "ring") {
+        g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad)
+          .attr("fill", "#fff").attr("stroke", c).attr("stroke-width", 2);
+      } else if (dotStyle === "tick") {
+        g.append("line").attr("x1", m.cx).attr("x2", m.cx).attr("y1", cy - 7).attr("y2", cy + 7)
+          .attr("stroke", c).attr("stroke-width", 2.5).attr("stroke-linecap", "round");
+      } else {
+        const d = m.rad + 1;
+        g.append("path").attr("d", `M${m.cx},${cy - d}L${m.cx + d},${cy}L${m.cx},${cy + d}L${m.cx - d},${cy}Z`)
+          .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", 2).attr("paint-order", "stroke");
       }
-      if (m.tip) dot.on("mousemove", ev => showTip(ev, m.tip)).on("mouseleave", hideTip);
+      // A cancelled target: the same dot with a white × in it.
+      if (m.kind === "cancelled") {
+        const k = m.rad * 0.42;
+        g.append("path").attr("d", `M${m.cx - k},${cy - k}L${m.cx + k},${cy + k}M${m.cx + k},${cy - k}L${m.cx - k},${cy + k}`)
+          .attr("stroke", "#fff").attr("stroke-width", 1.8).attr("stroke-linecap", "round");
+      }
+      if (m.tip) g.style("cursor", "default").on("mousemove", ev => showTip(ev, m.tip)).on("mouseleave", hideTip);
 
       // Baselines: lines stack away from the line, the first one nearest it.
-      const inner = lineY + up * sides[m.side].offset[m.level];
-      const n = m.wrapped.lines.length;
+      const inner = lineY + up * m.inner, n = m.wrapped.lines.length;
       const baseline = i => up < 0 ? inner - 3 - (n - 1 - i) * LINE_H : inner + m.size - 2 + i * LINE_H;
-      const tx = m.align === "end" ? m.x1 : m.x0;
+      const tx = m.align === "end" ? m.x0 + m.wrapped.w : m.x0;
       m.wrapped.lines.forEach((line, i) => drawRuns(g, line, tx, baseline(i), c, m.align, m.size));
-      if (m.kind === "dot") {
-        const ay = baseline(up < 0 ? n - 1 : 0) - 4;
-        arrow(g, m.x0 - 3, ay, m.cx, ay, m.cx, cy + up * (m.rad + 4), c);
+      if (m.level) {
+        g.append("line").attr("x1", m.cx).attr("x2", m.cx)
+          .attr("y1", cy + up * (m.rad + 2)).attr("y2", inner - up * 2)
+          .attr("stroke", c).attr("stroke-width", 1);
       }
     });
 
-    return lineY + sides.below.total + 4;
+    return axisY + 24;
   }
 
   // ── Data → charts ─────────────────────────────────────────────────────────
@@ -792,8 +843,8 @@
 
   // Podíl na světových emisích — EDGAR's GLOBAL TOTAL includes international
   // aviation and shipping, which therefore count to the rest of the world.
-  csv("emise-celkem.csv").then(raw => {
-    const total = key => +raw.find(d => d.region === key).ghg_total_mt;
+  csv("emise-ghg.csv").then(raw => {
+    const total = key => +raw.find(d => d.region === key && d.year === "2024").ghg_mt;
     const world = total("svet");
     const rows = REGIONS.map(r => ({ region: r, value: total(r.key) }))
       .sort((a, b) => b.value - a.value);
@@ -805,16 +856,18 @@
     }));
   });
 
-  // Emise CO₂ — switch between total, per capita and cumulative share, plus
-  // a fourth view with greenhouse gases per capita by sector (EDGAR). That one
-  // is a different gas set, year and source, so the title and source above and
-  // below the chart swap with it (the PNG/SVG export reads them live).
-  Promise.all([csv("emise-co2.csv"), csv("emise-sektory.csv"), csv("emise-celkem.csv")])
-    .then(([raw, sectorRaw, perCapita]) => {
+  // Emise skleníkových plynů (EDGAR, CO₂eq) — total, per capita and by sector.
+  // The cumulative share is CO₂ only (OWID): summing CO₂eq over centuries
+  // would count long-gone methane in full. Views that differ from the markup
+  // carry their own title and source, swapped above and below the chart (the
+  // PNG/SVG export reads them live), so the change of gas is never silent.
+  Promise.all([csv("emise-ghg.csv"), csv("emise-co2.csv"), csv("emise-sektory.csv")])
+    .then(([ghg, co2, sectorRaw]) => {
+    const perCapita = ghg.filter(d => d.year === "2024");
     // Emise podle sektorů na obyvatele — all gases summed per sector. The
     // population is EDGAR's own (its total over its per-capita figure), so the
     // regions' totals here match the per-capita numbers EDGAR publishes.
-    const population = new Map(perCapita.map(d => [d.region, d.ghg_total_mt / d.ghg_per_capita_t]));
+    const population = new Map(perCapita.map(d => [d.region, d.ghg_mt / d.ghg_per_capita_t]));
     const lookup = new Map(SECTORS.flatMap(s => s.from.map(f => [f, s.key])));
     const sectorRows = new Map();
     d3.group(sectorRaw, d => d.region).forEach((rr, reg) => {
@@ -828,15 +881,13 @@
     });
 
     const METRICS = {
-      total:     { label: "Celkové emise", col: "co2_mt", k: 1 / 1000, decimals: 2, short: "mld. t",
-                   unit: "Roční emise CO₂ (mld. t)" },
-      perCapita: { label: "Na obyvatele", col: "co2_per_capita_t", k: 1, decimals: 1, short: "t",
-                   unit: "Roční emise CO₂ na obyvatele (t)" },
-      cumShare:  { label: "Podíl na kumulativních emisích", col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
-                   unit: "Podíl na světových emisích CO₂ od roku 1750 (%)" },
+      total:     { label: "Celkové emise", data: ghg, col: "ghg_mt", k: 1 / 1000, decimals: 2, short: "mld. t CO₂eq" },
+      perCapita: { label: "Na obyvatele", data: ghg, col: "ghg_per_capita_t", k: 1, decimals: 1, short: "t CO₂eq" },
       sectors:   { label: "Podle sektorů",
-                   title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2024",
-                   source: '<a href="https://edgar.jrc.ec.europa.eu/report_2025">EDGAR</a> (Společné výzkumné středisko EK, 2025)' },
+                   title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2024" },
+      cumShare:  { label: "Historický podíl (jen CO₂)", data: co2, col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
+                   title: "Podíl na kumulativních emisích CO₂ od roku 1750 (jen CO₂, bez ostatních plynů)",
+                   source: '<a href="https://ourworldindata.org/co2-emissions-metrics">Our World in Data</a> (Global Carbon Budget)' },
     };
     const titleEl = document.getElementById("graf-emise-title");
     const sourceEl = document.getElementById("graf-emise-source");
@@ -856,29 +907,32 @@
       });
       const m = METRICS[metric];
       const rows = new Map();
-      d3.group(raw, d => d.region).forEach((rr, reg) =>
-        rows.set(reg, rr.filter(d => +d.year >= 1990).map(d => ({ year: +d.year, v: +d[m.col] * m.k }))));
+      d3.group(m.data, d => d.region).forEach((rr, reg) => {
+        if (regionOf(reg)) rows.set(reg, rr.filter(d => +d.year >= 1990).map(d => ({ year: +d.year, v: +d[m.col] * m.k })));
+      });
       return smallMultiples(svg, w, {
-        keys: [{ key: "v" }], rows, unit: m.unit, short: m.short, decimals: m.decimals,
+        keys: [{ key: "v" }], rows, short: m.short, decimals: m.decimals,
         yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1990, 2010, 2024],
       });
     });
   });
 
-  // Mix výroby elektřiny — shares or TWh, both straight from Ember.
-  csv("elektrina-mix.csv").then(raw => {
+  // Mix výroby elektřiny — shares or TWh straight from Ember, and TWh per
+  // inhabitant (UN WPP population, as for the renewables chart).
+  Promise.all([csv("elektrina-mix.csv"), csv("populace.csv")]).then(([raw, popRaw]) => {
     const METRICS = {
-      share: { label: "Podíl", col: "share_pct", decimals: 1, short: "%",
-               unit: "Podíl na výrobě elektřiny (%)" },
-      twh:   { label: "Výroba v TWh", col: "twh", decimals: 0, short: "TWh",
-               unit: "Výroba elektřiny (TWh)" },
+      share:     { label: "Podíl", col: "share_pct", decimals: 1, short: "%", tickSuffix: "\u00a0%" },
+      twh:       { label: "Výroba v TWh", col: "twh", decimals: 0, short: "TWh" },
+      perCapita: { label: "Na obyvatele", decimals: 1, short: "MWh" },
     };
-    const rows = Object.fromEntries(Object.entries(METRICS).map(([k, m]) => [k, byYear(raw, MIX, "source", m.col)]));
-    // Shares stack to 100; for TWh the shared scale runs to the largest total.
-    const yMax = {
-      share: 100,
-      twh: d3.max([...rows.twh.values()].flat(), d => d3.sum(MIX, k => d[k.key])),
-    };
+    const rows = { share: byYear(raw, MIX, "source", "share_pct"), twh: byYear(raw, MIX, "source", "twh") };
+    // TWh / mil. obyvatel = MWh na obyvatele.
+    const pop = new Map(popRaw.map(d => [d.region + d.year, +d.population_mil]));
+    rows.perCapita = new Map([...rows.twh].map(([reg, years]) => [reg, years.map(d =>
+      Object.fromEntries([["year", d.year], ...MIX.map(k => [k.key, d[k.key] / pop.get(reg + d.year)])]))]));
+    // Shares stack to 100; the others share one scale up to the largest total.
+    const stackMax = r => d3.max([...r.values()].flat(), d => d3.sum(MIX, k => d[k.key]));
+    const yMax = { share: 100, twh: stackMax(rows.twh), perCapita: stackMax(rows.perCapita) };
     let metric = "share", draw = () => {};
     addSwitch("graf-mix", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
       key => { metric = key; draw(); });
@@ -888,26 +942,22 @@
     }));
   });
 
-  // Instalovaný výkon — GW, or each source's share of the region's total.
-  Promise.all([csv("kapacita.csv"), csv("populace.csv")]).then(([raw, popRaw]) => {
+  // Rozvoj obnovitelných zdrojů — capacity (GW, per capita) and the share of
+  // electricity generation. Not the share of capacity: that counts idle
+  // peakers and reserve plants alongside running ones.
+  Promise.all([csv("kapacita.csv"), csv("populace.csv"), csv("elektrina-mix.csv")]).then(([raw, popRaw, mixRaw]) => {
     const gw = byYear(raw, CAPACITY, "source", "gw");
     const shown = CAPACITY.filter(k => !k.hidden);
-    const share = new Map([...gw].map(([reg, years]) => [reg, years.map(d => {
-      const total = d3.sum(CAPACITY, k => d[k.key]);
-      return Object.fromEntries([["year", d.year], ...CAPACITY.map(k => [k.key, d[k.key] / total * 100])]);
-    })]));
+    const share = byYear(mixRaw, CAPACITY, "source", "share_pct");
     // GW / mil. obyvatel × 1000 = W na obyvatele.
     const pop = new Map(popRaw.map(d => [d.region + d.year, +d.population_mil]));
     const perCapita = new Map([...gw].map(([reg, years]) => [reg, years.map(d =>
       Object.fromEntries([["year", d.year], ...CAPACITY.map(k => [k.key, d[k.key] / pop.get(reg + d.year) * 1000])]))]));
     const stackMax = rows => d3.max([...rows.values()].flat(), d => d3.sum(shown, k => d[k.key]));
     const METRICS = {
-      gw:        { label: "Výkon v GW", rows: gw, decimals: 0, short: "GW", yMax: stackMax(gw),
-                   unit: "Instalovaný výkon (GW)" },
-      share:     { label: "Podíl", rows: share, yMax: 100, decimals: 1, short: "%",
-                   unit: "Podíl na celkovém instalovaném výkonu (%)" },
-      perCapita: { label: "Na obyvatele", rows: perCapita, decimals: 0, short: "W", yMax: stackMax(perCapita),
-                   unit: "Instalovaný výkon na obyvatele (W)" },
+      gw:        { label: "Instalovaný výkon", rows: gw, decimals: 0, short: "GW", yMax: stackMax(gw) },
+      share:     { label: "Podíl na výrobě elektřiny", rows: share, yMax: 100, decimals: 1, short: "%" },
+      perCapita: { label: "Na obyvatele", rows: perCapita, decimals: 0, short: "W", yMax: stackMax(perCapita) },
     };
     let metric = "gw", draw = () => {};
     addSwitch("graf-oze", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
@@ -924,7 +974,6 @@
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektromobily", (svg, w) => lines(svg, w, {
       series: series(), decimals: 1, short: "%", xTicks: [2010, 2015, 2020, 2025],
-      unit: "Podíl elektromobilů na prodejích nových osobních aut (%)",
     }));
   });
 
@@ -934,7 +983,6 @@
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektrifikace", (svg, w) => lines(svg, w, {
       series: series(), decimals: 1, short: "%", xTicks: [2000, 2005, 2010, 2015, 2019],
-      unit: "Podíl elektřiny na konečné spotřebě energie (%)",
     }));
   });
 
