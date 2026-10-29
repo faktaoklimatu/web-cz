@@ -10,12 +10,13 @@
  * extracts of the sources, filtered to the four regions; grouping and shares
  * are computed here. To refresh, re-export from the same source and keep the
  * column names:
- *   emise-ghg.csv       EDGAR 2025 booklet, GHG_totals_by_country and
- *                       GHG_per_capita_by_country, 1990–2024, incl. GLOBAL
+ *   emise-ghg.csv       EDGAR 2026 booklet, GHG_totals_by_country and
+ *                       GHG_per_capita_by_country, 1990–2025, incl. GLOBAL
  *                       TOTAL as "svet" (shares of world; per-capita population)
  *   emise-co2.csv       Our World in Data, owid-co2-data.csv (1950–2024),
  *                       only for the cumulative CO₂ share
- *   emise-sektory.csv   EDGAR 2025 booklet, GHG_by_sector_and_country, 2024
+ *   emise-sektory.csv   EDGAR 2026 booklet, GHG_by_sector_and_country, 2025
+ *                       (gases without the GWP_100_AR5_ prefix)
  *   elektrina-mix.csv   Ember yearly_full_release_long_format.csv, generation
  *                       by fuel, both % and TWh
  *   kapacita.csv        Ember yearly_full_release_long_format.csv, capacity GW
@@ -87,14 +88,14 @@
   ];
 
   // EDGAR sectors in the categories and palette of the FoK emission
-  // infographics (fok-theme.js, colors.sectors). Fuel Exploitation (refining,
+  // infographics (fok-theme.js, colors.sectors). Fuel Production (refining,
   // fugitive emissions) goes to industry, as CRF 1.A.1.b/c and 1.B do in
   // data-analysis lib/R/emissions-utils.r. EDGAR has no remainder, so the
   // infographic's "Jiné" category would always be empty and is left out.
   const SECTORS = [
     { key: "energetika",  label: "Výroba elektřiny a tepla", color: "#f4465b", from: ["Power Industry"] },
     { key: "prumysl",     label: "Průmysl",                  color: "#3b3b93",
-      from: ["Industrial Combustion", "Processes", "Fuel Exploitation"] },
+      from: ["Industrial Combustion", "Processes", "Fuel Production"] },
     { key: "doprava",     label: "Doprava",                  color: "#8546af", from: ["Transport"] },
     { key: "budovy",      label: "Budovy",                   color: "#0d80d8", from: ["Buildings"] },
     { key: "zemedelstvi", label: "Zemědělství",              color: "#00aa95", from: ["Agriculture"] },
@@ -844,7 +845,7 @@
   // Podíl na světových emisích — EDGAR's GLOBAL TOTAL includes international
   // aviation and shipping, which therefore count to the rest of the world.
   csv("emise-ghg.csv").then(raw => {
-    const total = key => +raw.find(d => d.region === key && d.year === "2024").ghg_mt;
+    const total = key => +raw.find(d => d.region === key && d.year === "2025").ghg_mt;
     const world = total("svet");
     const rows = REGIONS.map(r => ({ region: r, value: total(r.key) }))
       .sort((a, b) => b.value - a.value);
@@ -852,7 +853,7 @@
                 value: world - d3.sum(rows, d => d.value) });
     rows.forEach(d => { d.share = d.value / world * 100; });
     mount("graf-podil", (svg, w) => waffle(svg, w, {
-      rows, short: "Mt CO₂eq", unit: "Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2024",
+      rows, short: "Mt CO₂eq", unit: "Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2025",
     }));
   });
 
@@ -863,7 +864,7 @@
   // PNG/SVG export reads them live), so the change of gas is never silent.
   Promise.all([csv("emise-ghg.csv"), csv("emise-co2.csv"), csv("emise-sektory.csv")])
     .then(([ghg, co2, sectorRaw]) => {
-    const perCapita = ghg.filter(d => d.year === "2024");
+    const perCapita = ghg.filter(d => d.year === "2025");
     // Emise podle sektorů na obyvatele — all gases summed per sector. The
     // population is EDGAR's own (its total over its per-capita figure), so the
     // regions' totals here match the per-capita numbers EDGAR publishes.
@@ -884,7 +885,7 @@
       total:     { label: "Celkové emise", data: ghg, col: "ghg_mt", k: 1 / 1000, decimals: 2, short: "mld. t CO₂eq" },
       perCapita: { label: "Na obyvatele", data: ghg, col: "ghg_per_capita_t", k: 1, decimals: 1, short: "t CO₂eq na obyv." },
       sectors:   { label: "Sektory na obyvatele",
-                   title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2024" },
+                   title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2025" },
       cumShare:  { label: "Historický podíl CO₂", data: co2, col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
                    title: "Podíl na kumulativních emisích CO₂ od roku 1750 (jen CO₂, bez ostatních plynů)",
                    source: '<a href="https://ourworldindata.org/co2-emissions-metrics">Our World in Data</a> (Global Carbon Budget)' },
@@ -912,7 +913,7 @@
       });
       return smallMultiples(svg, w, {
         keys: [{ key: "v" }], rows, short: m.short, decimals: m.decimals,
-        yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1990, 2010, 2024],
+        yMax: d3.max([...rows.values()].flat(), d => d.v), xTicks: [1990, 2010, d3.max(m.data, d => +d.year)],
       });
     });
   });

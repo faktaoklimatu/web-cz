@@ -30,8 +30,8 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 {% include includes-local/chart-panel.html
     id="graf-podil"
     class="no-foot no-title"
-    title="Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2024"
-    source='<a href="https://edgar.jrc.ec.europa.eu/report_2025">EDGAR</a> (Společné výzkumné středisko EK, 2025)'
+    title="Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2025"
+    source='<a href="https://edgar.jrc.ec.europa.eu/report_2026">EDGAR</a> (Společné výzkumné středisko EK, 2026)'
 %}
 
 
@@ -277,8 +277,8 @@ Indie dováží téměř [40 %](https://www.iea.org/countries/india/energy-mix) 
 {% include includes-local/chart-panel.html
     id="graf-emise"
     class="no-title"
-    title="Emise skleníkových plynů čtyř největších emitentů, 1990–2024"
-    source='<a href="https://edgar.jrc.ec.europa.eu/report_2025">EDGAR</a> (Společné výzkumné středisko EK, 2025)'
+    title="Emise skleníkových plynů čtyř největších emitentů, 1990–2025"
+    source='<a href="https://edgar.jrc.ec.europa.eu/report_2026">EDGAR</a> (Společné výzkumné středisko EK, 2026)'
 %}
 
 ### Evropská unie
@@ -287,9 +287,9 @@ Zatímco globálně emise rostou, EU je **od roku 1990 snížila o [40 %](https:
 
 <div class="region-stats" markdown="1">
 
-<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **3,16 miliardy t CO<sub>2</sub>eq**
+<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **3,13 miliardy t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **7,14 t CO<sub>2</sub>eq**
+<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **7,06 t CO<sub>2</sub>eq**
 
 <i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **16,27 %**
 
@@ -301,9 +301,9 @@ Na rozdíl od EU **snížily** USA **své emise oproti roku 1990 pouze o [3 %](h
 
 <div class="region-stats" markdown="1">
 
-<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **5,91 miliardy t CO<sub>2</sub>eq**
+<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **6,02 miliardy t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **17,34 t CO<sub>2</sub>eq**
+<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **17,53 t CO<sub>2</sub>eq**
 
 <i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **23,52 %**
 
@@ -315,9 +315,9 @@ Jako „světová továrna“ a prudce se rozvíjející ekonomika je Čína nej
 
 <div class="region-stats" markdown="1">
 
-<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **15,54 miliardy t CO<sub>2</sub>eq**
+<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **15,98 miliardy t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **10,81 t CO<sub>2</sub>eq**
+<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **11,11 t CO<sub>2</sub>eq**
 
 <i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **15,42 %**
 
@@ -329,9 +329,9 @@ Indie je příkladem rychle se rozvíjející ekonomiky, jejíž emise prudce ro
 
 <div class="region-stats" markdown="1">
 
-<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **4,37 miliardy t CO<sub>2</sub>eq**
+<i class="fa-solid fa-cloud-arrow-up stat-icon" aria-hidden="true"></i> Roční emise: **4,51 miliardy t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **3,04 t CO<sub>2</sub>eq**
+<i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **3,11 t CO<sub>2</sub>eq**
 
 <i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **3,57 %**
 

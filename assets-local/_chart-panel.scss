@@ -164,11 +164,11 @@
 
 // A line in the region colour above each region heading, as long as the
 // region's annual greenhouse gas emissions: the EU's, the smallest, is
-// --region-rule-length and the others scale from it (EDGAR 2025, 2024 totals
-// in emise-ghg.csv: EU 3.16, USA 5.91, India 4.37, China 15.54 Gt CO₂eq).
+// --region-rule-length and the others scale from it (EDGAR 2026, 2025 totals
+// in emise-ghg.csv: EU 3.13, USA 6.02, India 4.51, China 15.98 Gt CO₂eq).
 // A region heading carries its region class in the markdown
 // ({: .js-toc-ignore .region-eu}); not the headings inside the region boxes.
-@each $key, $k in (eu 1.0, cina 4.909, usa 1.868, indie 1.381) {
+@each $key, $k in (eu 1.0, cina 5.11, usa 1.925, indie 1.442) {
     .region-#{$key} { --region-rule-k: #{$k}; }
 }
 :is(h3, h4):is(.region-eu, .region-cina, .region-usa, .region-indie):not(.region-box *) {
