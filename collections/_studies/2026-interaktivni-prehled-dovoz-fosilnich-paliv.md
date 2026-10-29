@@ -31,7 +31,7 @@ fuels:
     energie: "Postupný konec|dovozu z Ruska"
     czk-mesice: "Začátek krize|v Hormuzském průlivu"
   intro: |
-    **Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
+    **Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot (kvůli vysokému zdanění), proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy jako v ceně samotné komodity.
 - name: Zemní plyn
   slug: plyn
   acc: zemní plyn
