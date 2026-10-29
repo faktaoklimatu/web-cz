@@ -50,24 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     barPadding: 0.2,         // gap between bars (0-1)
     lineWidth: 2,            // line charts
     areaOpacity: 0.6,        // fill under the small multiples' lines
-    // Energy — the imports, and the MWh every price is per — on one basis and
-    // in one unit across the page, so ropa and plyn add up and a volume times
-    // a price is the spending (TWh × Kč/MWh ÷ 1000 = mld. Kč).
-    //   energyBasis: 'gcv' — gross calorific value (spalné teplo), as gas is
-    //                        traded (TTF), billed and reported (Eurostat's gas
-    //                        statistics)
-    //                'ncv' — net calorific value (výhřevnost), as energy
-    //                        balances add fuels up (ČSÚ, Eurostat, IEA)
-    //   energyUnit:  'twh' | 'pj'
-    energyBasis: 'gcv',
-    energyUnit: 'twh',
-    // The unit an import price is shown in (PRICE_UNITS below): each fuel on
-    // its own — its column charts and the explorer with that fuel alone — and
-    // both fuels together on one chart (the explorer).
-    //   'barrel' — Kč/barel, as crude is quoted (crude_oil only)
-    //   'mwh'    — Kč/MWh, on energyBasis
-    //   'pj'     — mil. Kč/PJ, on energyBasis
-    priceUnit: { crude_oil: 'barrel', natural_gas: 'mwh', both: 'mwh' },
     toolAspect: 0.5,         // the explorer's chart, legend included: height ÷ width (2:1)
     titleSize: 16,           // chart titles drawn by the library
     axisSize: 12,            // axis ticks, units and legends
@@ -75,12 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
     gridColor: '#e8eef6',
   };
 
-  // Conversion factors: customs tonnes → energy and barrels.
-  const CONVERSIONS = {
-    ncv: { crude_oil: 42.6, natural_gas: 48.0 },        // výhřevnost, GJ/t
-    ncvPerGcv: { crude_oil: 0.95, natural_gas: 0.9 },   // výhřevnost ÷ spalné teplo
-    barrelsPerTonne: 7.53,                              // crude oil
-  };
+  // Energy — the imports, and the MWh every price is per — is net calorific
+  // value (výhřevnost), as energy balances add fuels up (ČSÚ, Eurostat, IEA),
+  // in TWh across the page, so ropa and plyn add up and a volume times a
+  // price is the spending (TWh × Kč/MWh ÷ 1000 = mld. Kč). Mass is the only
+  // energy-bearing column in the customs data; these take it to energy, GJ/t.
+  const NCV = { crude_oil: 42.6, natural_gas: 48.0 };
+  // Energy in TWh: kg × GJ/t is MJ, and a TWh is 3.6e9 MJ.
+  const toEnergy = (kg, commodity) => kg * NCV[commodity] / 3.6e9;
 
   const DATA = '/assets-local/files/dovoz-fosilnich-paliv';
   // The source runs 1999–2026, but 2026 is a part-year and has no GDP figure,
@@ -116,20 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     KZ: ['kazachstan',  'Kazachstán'],
   };
 
-  // Calorific values in GJ/t on CFG.energyBasis (CONVERSIONS). Mass is the
-  // only energy-bearing column in the customs data.
-  const { ncv: NCV, ncvPerGcv: NCV_PER_GCV } = CONVERSIONS;
-  const GCV = CFG.energyBasis === 'gcv';
-  const CV = GCV ? { crude_oil: NCV.crude_oil / NCV_PER_GCV.crude_oil, natural_gas: NCV.natural_gas / NCV_PER_GCV.natural_gas } : NCV;
-  // The basis in words: after a unit ("TWh spalného tepla") and as a noun.
-  const BASIS = GCV ? { of: 'spalného tepla', name: 'spalné teplo', in: 've spalném teple' }
-    : { of: 'výhřevnosti', name: 'výhřevnost', in: 've výhřevnosti' };
-  // The page's text that names it (a source line in the .md).
-  document.querySelectorAll('[data-energy-basis]').forEach(el => { el.textContent = BASIS.in; });
-  // Energy in CFG.energyUnit; `perPJ` is how many of it make a PJ.
-  const ENERGY = { twh: { label: 'TWh', perPJ: 1 / 3.6 }, pj: { label: 'PJ', perPJ: 1 } }[CFG.energyUnit];
-  const toEnergy = (kg, commodity) => kg * CV[commodity] * 1e-9 * ENERGY.perPJ;
-
   const keysOf   = m => Object.values(m).map(v => v[0]).concat(OSTATNI[0]);
   const labelsOf = m => Object.fromEntries(Object.values(m).concat([OSTATNI]).map(v => [v[0], v[1]]));
   const colorsOf = m => Object.fromEntries(keysOf(m).map(k => [k, CFG[k]]));
@@ -157,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return yrs.map(year => ({ year, czk_mld: byYear.get(year) ?? 0 }));
   }
 
-  /** Imports in CFG.energyUnit, split by country of origin. The result also carries the
+  /** Imports in TWh, split by country of origin. The result also carries the
    *  two fuels' own totals: the bands answer "from where", the totals answer
    *  "how much of which", and the tooltip shows both. The chart only reads the
    *  country keys, so the extra fields are ignored there. */
@@ -178,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
    *  overall (`prumer`) and per country. Under `minMWh` it is NaN — a small
    *  consignment's unit value says nothing about a price — which the line
    *  chart draws as a gap. Customs value at the border, not an exchange price. */
-  const toMWh = d => d.mass_kg * CV[d.commodity] / 3600;
+  const toMWh = d => toEnergy(d.mass_kg, d.commodity) * 1e6;
   function prices(rows, codes, minMWh) {
     const price = rs => {
       const mwh = d3.sum(rs, toMWh);
@@ -264,23 +234,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setText('kpi-total',  fokFormatNumber(lastOf(payments).total_czk_mld, 1) + ' mld. Kč');
     setText('kpi-gdp',    fokFormatNumber(lastOf(payments).gdp_share_pct, 1) + ' % HDP');
-    setText('kpi-energy', `${fokFormatNumber(totalE(lastOf(energie)), 0)} ${ENERGY.label}`);
-    // The imports' KPI explains its unit on hover: which basis, why, and the
-    // figure on the other one.
+    setText('kpi-energy', `${fokFormatNumber(totalE(lastOf(energie)), 0)} TWh`);
+    // The imports' KPI explains its unit on hover: which basis and why.
     {
       const last = lastOf(energie);
-      const other = GCV ? last.ropa_e * NCV_PER_GCV.crude_oil + last.plyn_e * NCV_PER_GCV.natural_gas
-        : last.ropa_e / NCV_PER_GCV.crude_oil + last.plyn_e / NCV_PER_GCV.natural_gas;
       // Inline: the tooltip's <strong> is its heading, a block.
       const bold = t => `<span style="font-weight:700">${t}</span>`;
-      const why = GCV
-        ? [`Energie dovezené ropy a zemního plynu ve ${bold('spalném teple')}, tedy tak, jak se zemní plyn obchoduje a účtuje (burza, faktury).`,
-           `Ve výhřevnosti, kterou používají energetické bilance (ČSÚ, Eurostat), by to bylo ${fokFormatNumber(other, 0)} ${ENERGY.label}.`]
-        : [`Energie dovezené ropy a zemního plynu ve ${bold('výhřevnosti')}, tak jak ji používají energetické bilance (ČSÚ, Eurostat).`,
-           `Ve spalném teple, ve kterém se obchoduje a účtuje zemní plyn, by to bylo ${fokFormatNumber(other, 0)} ${ENERGY.label}.`];
       const html = `<div style="font-family:${FoKTheme.font};max-width:280px">`
-        + `<strong>${fokFormatNumber(totalE(last), 0)} ${ENERGY.label} ${BASIS.of}</strong><br>`
-        + why.join('<br>') + (ENERGY.label === 'TWh' ? '<br>1 TWh = 3,6 PJ.' : '<br>1 PJ ≈ 0,28 TWh.') + '</div>';
+        + `<strong>${fokFormatNumber(totalE(last), 0)} TWh výhřevnosti</strong><br>`
+        + `Energie dovezené ropy a zemního plynu ve ${bold('výhřevnosti')}, tak jak ji používají energetické bilance (ČSÚ, Eurostat).</div>`;
       const tip = fokTooltip(FoKTheme);
       d3.select(document.getElementById('kpi-energy').closest('.kpi')).classed('kpi--info', true)
         .on('mouseenter', e => { tip.show(html); tip.move(e); })
@@ -305,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Every other year, so the labels never collide once the panels are narrow.
     const xTicks = years.filter((_, i) => i % 2 === 0);
     const czkMld = d => `${fokFormatNumber(d, 1)} mld. Kč`;
-    const en     = d => `${fokFormatNumber(d, 1)} ${ENERGY.label}`;
+    const en     = d => `${fokFormatNumber(d, 1)} TWh`;
     const head   = y => `<strong style="font-family:${theme.font}">${y}</strong><br>`;
     const plain  = s => `<span style="font-family:${theme.font}">${s}</span>`;
 
@@ -393,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     const energy = (sel, rows, codes, extra) => w => fokAreaChartStacked(sel, rows, {
       x: d => d.year, keys: keysOf(codes), colors: colorsOf(codes), labels: labelsOf(codes),
-      yLabel: ENERGY.label, yLabelInline: true, totalLine: CFG.colorTotal,
+      yLabel: 'TWh', yLabelInline: true, totalLine: CFG.colorTotal,
       width: w, height: CFG.chartHeight, theme, legend: true,
       xTickValues: xTicks, xFormat: String,
       yFormat: v => fokFormatNumber(v, 0),
@@ -440,9 +402,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const columnEnergy = (sel, rows, codes, extra) => w => {
       const room = d3.max([ROPA, PLYN], c => legendLayout(legendItems(c), w, 4).height);
       const legend = legendLayout(legendItems(codes), w, 4);
-      // The fuels' own charts have the room to name the basis: "TWh spalného tepla".
+      // The fuels' own charts have the room to name the basis.
       const chart = energy(sel, rows, codes, {
-        yLabel: GCV ? `${ENERGY.label} ${BASIS.of}` : ENERGY.label,
+        yLabel: 'TWh výhřevnosti',
         ...extra, legend: false, height: CFG.chartHeight + room, margins: { top: theme.margins.top + room },
       })(w);
       drawLegend(chart.svg, legend, room - legend.height, it => readable(it.color));
@@ -732,33 +694,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // only where it brought at least PRICE_MIN_MWH that month (that times the
     // months in a year).
     const PRICE_MIN_MWH = 50000;   // 50 GWh
-    // Prices are computed in Kč per MWh (CFG.energyBasis) and shown in
-    // CFG.priceUnit: `basis` takes Kč/MWh to the unit. A barrel holds
-    // CV / barrelsPerTonne of energy; a PJ is 277 778 MWh, so mil. Kč/PJ is Kč/MWh
-    // over 3.6.
-    const MWH_PER_BBL = CV.crude_oil / CONVERSIONS.barrelsPerTonne / 3.6;
-    const PRICE_UNITS = {
-      barrel: { basis: MWH_PER_BBL, label: 'Kč/barel' },
-      mwh:    { basis: 1,       label: GCV ? `Kč/MWh ${BASIS.of}` : 'Kč/MWh' },
-      pj:     { basis: 1 / 3.6, label: GCV ? `mil. Kč/PJ ${BASIS.of}` : 'mil. Kč/PJ' },
-    };
-    const ALLOWED_UNITS = {
-      crude_oil: ['barrel', 'mwh', 'pj'],
-      natural_gas: ['mwh', 'pj'],
-      both: ['mwh', 'pj'],
-    };
-    Object.entries(ALLOWED_UNITS).forEach(([c, ok]) => {
-      if (!ok.includes(CFG.priceUnit[c])) throw new Error(`dovoz: CFG.priceUnit.${c} must be one of ${ok.join(', ')}`);
-    });
-    // `c`: 'crude_oil', 'natural_gas' or 'both'.
-    const priceBasis = c => PRICE_UNITS[CFG.priceUnit[c]].basis;
-    const priceUnit = c => PRICE_UNITS[CFG.priceUnit[c]].label;
-    const priceFmt = unit => v => `${fokFormatNumber(v, 0)} ${unit}`;
+    // Prices in Kč per MWh of výhřevnost, for both fuels.
+    const PRICE_UNIT = 'Kč/MWh';
+    const kc = v => `${fokFormatNumber(v, 0)} ${PRICE_UNIT}`;
 
-    // The fuel columns' price rows: each year's or month's average, in the
-    // fuel's own unit.
+    // The fuel columns' price rows: each year's or month's average.
     const priceRows = (kind, c) => {
-      const avg = rs => prices(rs, {}, 1).prumer * priceBasis(c);
+      const avg = rs => prices(rs, {}, 1).prumer;
       return kind === 'years'
         ? toNewest.map(year => ({ year, prumer: avg(imports.filter(d => d.commodity === c && d.year === year)) }))
         : recent.map(d => ({ ...d, t: d.year + (d.month - 1) / 12, prumer: avg(ofMonth(c, d.year, d.month)) }));
@@ -768,10 +710,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const rows = priceRows(kind, commodity);
       const top = d3.nice(0, d3.max(rows, r => r.prumer), 4)[1];
       const yearly = kind === 'years';
-      const kc = priceFmt(priceUnit(commodity));
       return fokLineChart(sel, rows, {
         x: d => yearly ? d.year : d.t, y: d => d.prumer,
-        yLabel: priceUnit(commodity), yLabelInline: true, width: w, height: CFG.chartHeight,
+        yLabel: PRICE_UNIT, yLabelInline: true, width: w, height: CFG.chartHeight,
         theme: lineTheme(color),
         yDomain: [0, top], yTickValues: d3.ticks(0, top, 4),
         xTickValues: yearly ? colTicks(sel) : recentJanuaries.map(d => d.year),
@@ -896,9 +837,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const view = (fuels, byCountry) => ({ ...period, fuels, byCountry,
         price: TOOL.metric === 'price', codes: fuels.length > 1 ? BOTH : codesOf(fuels[0]) });
       const peak = (d, keys) => d3.max(d.rows, r => d3.max(keys, k => r[k]));
-      // Prices are the one exception: each fuel alone keeps its own axis, in
-      // its own unit (priceBasis), whatever else is picked; both fuels share
-      // one, in CFG.priceUnit.both.
+      // Prices are the one exception: each fuel alone keeps its own axis,
+      // whatever else is picked; both fuels share one.
       if (TOOL.metric === 'price') {
         const views = TOOL.fuel === 'both' ? [view(both, false)] : [view([TOOL.fuel], true)];
         const p = d3.max(views, vv => { const d = toolData(vv); return peak(d, d.lines.map(([k]) => k)); });
@@ -916,8 +856,6 @@ document.addEventListener('DOMContentLoaded', () => {
         : toolMonths.filter(d => mIdx(d) >= v.fromIdx && mIdx(d) <= v.toIdx).map(d =>
             ({ ...d, x: d.year + (d.month - 1) / 12, key: ymKey(d), label: `${monthLong(d.month)} ${d.year}` }));
       const rowsIn = (c, p) => TOOL.step === 'years' ? yearGroups.get(c)?.get(p.year) ?? [] : ofMonth(c, p.year, p.month);
-      // Prices: one fuel in its own unit, both in CFG.priceUnit.both.
-      const basis = c => priceBasis(v.fuels.length > 1 ? 'both' : c);
       let keys, colors, labels;
       if (v.byCountry) { keys = keysOf(v.codes); colors = colorsOf(v.codes); labels = labelsOf(v.codes); }
       else {
@@ -932,9 +870,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const row = { ...p };
         if (v.price && v.byCountry) {
           const c = v.fuels[0], pr = prices(rowsIn(c, p), v.codes, minMWh);
-          [...keys, 'prumer'].forEach(k => { row[k] = pr[k] * basis(c); });
+          [...keys, 'prumer'].forEach(k => { row[k] = pr[k]; });
         } else if (v.price) {
-          v.fuels.forEach(c => { row[c] = prices(rowsIn(c, p), codesOf(c), minMWh).prumer * basis(c); });
+          v.fuels.forEach(c => { row[c] = prices(rowsIn(c, p), codesOf(c), minMWh).prumer; });
         } else if (v.byCountry) {
           const g = d3.group(v.fuels.flatMap(c => rowsIn(c, p)), d => (v.codes[d.country_code] ?? OSTATNI)[0]);
           keys.forEach(k => { row[k] = amount(g.get(k) ?? []); });
@@ -948,10 +886,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ...keys.map(k => [k, labels[k], colors[k]]),
         ...(v.byCountry ? [['prumer', 'Průměr', CFG.colorTotal]] : []),
       ];
-      const unit = { energy: ENERGY.label, czk: 'mld. Kč',
-        price: priceUnit(v.fuels.length > 1 ? 'both' : v.fuels[0]) }[TOOL.metric];
-      const fmt = { energy: x => `${fokFormatNumber(x, 1)} ${unit}`, czk: czkMld,
-        price: x => `${fokFormatNumber(x, 0)} ${unit}` }[TOOL.metric];
+      const unit = { energy: 'TWh', czk: 'mld. Kč', price: PRICE_UNIT }[TOOL.metric];
+      const fmt = { energy: en, czk: czkMld, price: kc }[TOOL.metric];
       return { rows, keys, colors, labels, lines, unit, fmt };
     };
 
@@ -1080,10 +1016,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('tool-title').replaceChildren(`${metricName} `, ...fuelNames,
         v.byCountry ? ' podle zemí' : '', span(`, ${periodText(v, true)}`, { className: 'chart-title-period' }));
       document.getElementById('tool-summary').textContent = [
-        { energy: `Energie v ${ENERGY.label} ${BASIS.of}`,
-          czk: 'Celní hodnota v mld. Kč',
-          price: unit === PRICE_UNITS.barrel.label ? 'Celní hodnota za barel dovezené ropy'
-            : `Celní hodnota dělená energetickým obsahem dovozu${GCV ? '' : ` (${BASIS.name})`}, v ${unit}` }[TOOL.metric]
+        { energy: 'Energie dovozu v TWh výhřevnosti',
+          czk: 'Celní hodnota dovozu v mld. Kč',
+          price: `Celní hodnota dělená výhřevností dovozu, v ${PRICE_UNIT}` }[TOOL.metric]
           + (TOOL.step === 'years' ? ', roční' : ', měsíční') + (v.price ? ' průměry.' : ' součty.'),
         v.tiles ? 'Každá země zvlášť, na společné ose.' : '',
         TOOL.step === 'years' && idxYear(+toolTo.value) > lastFullYear ? `Rok ${lastFullYear + 1} je neúplný, ukazují ho měsíce.` : '',

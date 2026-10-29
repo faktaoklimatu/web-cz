@@ -97,7 +97,7 @@ extra-scripts:
           <h3 class="chart-title" id="chart-ropa-cena-title">Průměrná dovozní cena ropy</h3>
         </div>
         <div id="chart-ropa-cena"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím, nikoli burzovní cena.</p>
+        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
         {% include includes-local/chart-foot.html svg="chart-ropa-cena" file="dovozni-cena-ropy" title_from="chart-ropa-cena-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
@@ -119,7 +119,7 @@ extra-scripts:
           <h3 class="chart-title" id="chart-ropa-cena-mesice-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
         </div>
         <div id="chart-ropa-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím, nikoli burzovní cena.</p>
+        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
         {% include includes-local/chart-foot.html svg="chart-ropa-cena-mesice" file="dovozni-cena-ropy-36-mesicu" title_from="chart-ropa-cena-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
 
@@ -150,7 +150,7 @@ extra-scripts:
           <h3 class="chart-title" id="chart-plyn-cena-title">Průměrná dovozní cena zemního plynu</h3>
         </div>
         <div id="chart-plyn-cena"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím, nikoli burzovní cena.</p>
+        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
         {% include includes-local/chart-foot.html svg="chart-plyn-cena" file="dovozni-cena-zemniho-plynu" title_from="chart-plyn-cena-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
@@ -172,7 +172,7 @@ extra-scripts:
           <h3 class="chart-title" id="chart-plyn-cena-mesice-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
         </div>
         <div id="chart-plyn-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím, nikoli burzovní cena.</p>
+        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
         {% include includes-local/chart-foot.html svg="chart-plyn-cena-mesice" file="dovozni-cena-zemniho-plynu-36-mesicu" title_from="chart-plyn-cena-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
     </div>
@@ -243,7 +243,7 @@ extra-scripts:
         </div>
         <div class="filter-summary" id="tool-summary"></div>
         <div class="chart-foot">
-          <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie <span data-energy-basis>ve spalném teple</span></span>
+          <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie ve výhřevnosti</span>
           <span class="chart-downloads">Stáhnout:
             <button type="button" class="chart-download" data-format="png" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-title-inset="0" data-note="#tool-summary" data-source="#tool-source">PNG</button>,
             <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-title-inset="0" data-note="#tool-summary" data-source="#tool-source">SVG</button>,
