@@ -409,12 +409,10 @@ Oproti tomu míra elektrifikace v USA a EU už od roku 2010 stagnuje na hodnotá
 
 Elektrifikace v Indii je sice pomalejší, ale to se v posledních letech mění. Pohání ji rychlá výstavba OZE, zejména velkých solárních parků, doplněná rozvojem rezidenční a zemědělské fotovoltaiky a instalací elektrických čerpadel. Odbyt elektromobilů neroste tak rychle, s podporou vlády však dochází k rychlé elektrifikaci dvou- a tříkolových vozidel, která aktuálně tvoří přes [88 %](https://www.imarcgroup.com/india-electric-two-wheeler-market#:~:text=Table_content%3A%20%7C%20Report%20Features%20%7C%20Details%20%7C,Okinawa%20Autotech%2C%20Revolt%20Intellicorp%20Private%20Limited%2C%20etc.) všech prodaných elektrovozidel.
 
-Data pro Čínu, USA a EU (OECD) viz [China Energy Transition Review 2025](https://ember-energy.org/app/uploads/2025/09/China-Energy-Transition-Review-2025.pdf#page=22.99), Ember, s. 23.
-
 {% include includes-local/chart-panel.html
     id="graf-elektrifikace"
-    title="Podíl elektřiny na konečné spotřebě energie, 2000–2019"
-    source='<a href="https://www.iea.org/data-and-statistics/charts/share-of-electricity-in-total-final-consumption-in-selected-countries-and-regions-2000-2020">IEA</a>'
+    title="Podíl elektřiny na konečné spotřebě energie, 1990–2024"
+    source='<a href="https://www.iea.org/data-and-statistics/data-product/world-energy-balances-highlights">IEA World Energy Balances Highlights 2026</a> (EU: 23 členských států bez Bulharska, Chorvatska, Kypru a Malty)'
 %}
 {% endcapture %}
 

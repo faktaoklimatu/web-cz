@@ -984,7 +984,7 @@
     const series = () => [...REGIONS, WORLD].map(r => ({ ...r,
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektrifikace", (svg, w) => lines(svg, w, {
-      series: series(), decimals: 1, short: "%", xTicks: [2000, 2005, 2010, 2015, 2019],
+      series: series(), decimals: 1, short: "%", xTicks: [1990, 2000, 2010, 2024],
     }));
   });
 
