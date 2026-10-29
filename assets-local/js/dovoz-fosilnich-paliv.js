@@ -67,10 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const toEnergy = (kg, commodity) => kg * NCV[commodity] / 3.6e9;
 
   const DATA = '/assets-local/files/dovoz-fosilnich-paliv';
-  // The source runs 1999–2026, but 2026 is a part-year and has no GDP figure,
-  // so the KPI row stops at the last complete year. Move this once it closes.
   const YEAR_FROM = 2017;
-  const YEAR_TO   = 2025;
+  // The KPI row's last year, and its years from YEAR_FROM: set once the data
+  // have loaded, as the last complete year of the imports that GDP and the KPI's
+  // comparisons also cover. The newest year in the export is usually a
+  // part-year, and GDP lags behind it.
+  let YEAR_TO, years;
 
   // Which suppliers get a band of their own, in stack order, bottom first;
   // every other country code falls into Ostatní — including Eurostat's
@@ -117,8 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // The same export cut by month, for the latest 36 months and the explorer.
   const monthlyRow = d => ({ ...importRow(d), month: +d.month });
 
-  const years = d3.range(YEAR_FROM, YEAR_TO + 1);
-  const inWindow = d => d.year >= YEAR_FROM && d.year <= YEAR_TO;
 
   /** What one commodity cost per year, in mld. Kč, for the given years. */
   function spending(rows, commodity, yrs) {
@@ -158,10 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return { prumer: price(rows), ...Object.fromEntries(keysOf(codes).map(k => [k, price(byKey.get(k) ?? [])])) };
   }
 
-  /** Energy by country, per year of the window. */
-  function energyByCountry(rows, codes) {
-    const byYear = d3.group(rows.filter(inWindow), d => d.year);
-    return years.map(year => ({ year, ...byCountry(byYear.get(year) ?? [], codes) }));
+  /** Energy by country, per year of `yrs`. */
+  function energyByCountry(rows, codes, yrs) {
+    const byYear = d3.group(rows, d => d.year);
+    return yrs.map(year => ({ year, ...byCountry(byYear.get(year) ?? [], codes) }));
   }
 
   Promise.all([
@@ -172,22 +172,28 @@ document.addEventListener('DOMContentLoaded', () => {
     d3.csv(`${DATA}/sfdi.csv`, d => [+d.year, +d.total_mld_czk]),
   ]).then(([imports, monthly, gdp, msmt, sfdi]) => {
     const ofFuel = c => imports.filter(d => d.commodity === c);
-    // Spending runs on to the newest year in the export, part-year included:
-    // the fuel columns draw that year's bar as an outline. Imports stop at
-    // YEAR_TO, as a part-year area would read as a collapse. `payments` reads
-    // spending by index from YEAR_FROM, so the extra year never reaches it.
-    const toNewest = d3.range(YEAR_FROM, d3.max(imports, d => d.year) + 1);
-    const ropa = {
-      czk: spending(imports, 'crude_oil', toNewest),
-      energie: energyByCountry(ofFuel('crude_oil'), ROPA),
-    };
-    const plyn = {
-      czk: spending(imports, 'natural_gas', toNewest),
-      energie: energyByCountry(ofFuel('natural_gas'), PLYN),
-    };
     const gdpByYear = new Map(gdp);
     const msmtByYear = new Map(msmt);
     const sfdiByYear = new Map(sfdi);
+    // A year is complete once the monthly export has its December.
+    const lastFull = d3.max(monthly.filter(d => d.month === 12), d => d.year);
+    YEAR_TO = Math.min(lastFull, ...[gdpByYear, msmtByYear, sfdiByYear].map(m => d3.max(m.keys())));
+    years = d3.range(YEAR_FROM, YEAR_TO + 1);
+    // Spending runs on to the newest year in the export, part-year included:
+    // the fuel columns draw that year's bar as an outline. Their imports stop
+    // at the last complete year, as a part-year area would read as a
+    // collapse; the part-year's estimate is drawn on from there. `payments`
+    // reads spending by index from YEAR_FROM, so the extra years never reach it.
+    const toNewest = d3.range(YEAR_FROM, d3.max(imports, d => d.year) + 1);
+    const toFull = d3.range(YEAR_FROM, lastFull + 1);
+    const ropa = {
+      czk: spending(imports, 'crude_oil', toNewest),
+      energie: energyByCountry(ofFuel('crude_oil'), ROPA, toFull),
+    };
+    const plyn = {
+      czk: spending(imports, 'natural_gas', toNewest),
+      energie: energyByCountry(ofFuel('natural_gas'), PLYN, toFull),
+    };
 
     const payments = years.map((year, i) => {
       const total = ropa.czk[i].czk_mld + plyn.czk[i].czk_mld;
@@ -220,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn(`dovoz: monthly and annual exports disagree for ${key}`);
     });
 
-    render({ ropa, plyn, payments, monthly, imports, toNewest, energie: energyByCountry(imports, FOSIL) });
+    render({ ropa, plyn, payments, monthly, imports, toNewest, energie: energyByCountry(imports, FOSIL, years) });
   }).catch(err => console.error('dovoz: data failed to load', err));
 
   function render({ ropa, plyn, payments, monthly, imports, toNewest, energie }) {
