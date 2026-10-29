@@ -504,7 +504,10 @@
   // Line per series, labelled at its end instead of a legend.
   //   o.series: [{key, label, color, dashed?, values: [{year, v}]}]
   function lines(svg, width, o) {
-    const mg = { top: 12, right: 56, bottom: 24, left: 34 };
+    // As in the FoK charts: the x axis sits a gap below the y = 0 grid line,
+    // with longer ticks.
+    const X_GAP = 6, X_TICK = 8;
+    const mg = { top: 12, right: 56, bottom: 24 + X_GAP + X_TICK - 4, left: 34 };
     const H = width >= 560 ? 300 : 240;
     const W = width - mg.left - mg.right;
     const g = svg.append("g").attr("transform", `translate(${mg.left},${mg.top})`);
@@ -516,8 +519,8 @@
       .call(a => a.select(".domain").remove())
       .call(a => a.selectAll(".tick line").attr("stroke", C.grid))
       .call(a => axisText(a.selectAll(".tick text")));
-    g.append("g").attr("transform", `translate(0,${H})`)
-      .call(d3.axisBottom(x).tickValues(o.xTicks).tickFormat(d3.format("d")).tickSize(4))
+    g.append("g").attr("transform", `translate(0,${H + X_GAP})`)
+      .call(d3.axisBottom(x).tickValues(o.xTicks).tickFormat(d3.format("d")).tickSize(X_TICK))
       .call(a => a.select(".domain").attr("stroke", C.axis))
       .call(a => a.selectAll(".tick line").attr("stroke", C.axis))
       .call(a => axisText(a.selectAll(".tick text")));
