@@ -17,7 +17,6 @@
  *   msmt.csv, sfdi.csv      the education ministry's and the transport
  *                           infrastructure fund's spending, mld. Kč — the KPI
  *                           GDP chart's comparisons
- *   defense.csv             defence spending; delivered, not drawn
  *
  * Charts are the shared FoK library (assets-local/charts/), whose `width` option
  * is the viewBox width. Per ai-prototyping-guidelines.md that has to match the
