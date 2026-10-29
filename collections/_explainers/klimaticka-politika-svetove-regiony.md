@@ -15,7 +15,6 @@ extra-scripts:
 - https://d3js.org/d3.v7.min.js
 - /assets-local/js/chart-download.js
 - /assets-local/figures/klimaticka-politika-svetove-regiony/grafy.js
-- /assets-local/js/svetove-regiony-dev-sidebar.js
 cover-source-author:        "Marcel Otruba (zadání pro AI)"
 cover-source-text:          "Fakta o klimatu, vygenerováno pomocí AI"
 cover-source-license:       "CC BY 4.0"
@@ -272,8 +271,6 @@ Indie dováží téměř [40 %](https://www.iea.org/countries/india/energy-mix) 
 
 ## Emise jednotlivých aktérů a jejich historický vývoj
 
-<div class="sticky-scope" markdown="1">
-
 {% include includes-local/chart-panel.html
     id="graf-emise"
     class="no-title"
@@ -337,13 +334,9 @@ Indie je příkladem rychle se rozvíjející ekonomiky, jejíž emise prudce ro
 
 </div>
 
-</div>
-
 ## Vývoj ve vybraných oblastech
 
 ### Mix výroby elektřiny
-
-<div class="sticky-scope" markdown="1">
 
 {% include includes-local/chart-panel.html
     id="graf-mix"
@@ -367,8 +360,6 @@ Přestože se OZE v USA začaly rozvíjet později a o něco pomaleji, i USA za�
 #### Indie
 {: .js-toc-ignore .region-indie}
 Podobně jako Čína se i Indie potýká s prudkým nárůstem poptávky po elektřině a její **mix je založený především na uhlí**. V posledních pěti letech však Indie masivně staví solární zdroje a bateriová úložiště. Podíl elektřiny z OZE tak rychle roste, zatímco podíl elektřiny z uhlí se snížil [ze 75 % v roce 2023 na 71 % v roce 2025](https://ember-energy.org/latest-insights/global-electricity-review-2026/). Aktuálně tak **[27 %](https://ember-energy.org/countries-and-regions/india/) elektřiny pochází z čistých zdrojů** a z toho [14 p. b.](https://ember-energy.org/countries-and-regions/india/) ze slunce a větru.
-
-</div>
 
 ### Rozvoj obnovitelných zdrojů
 

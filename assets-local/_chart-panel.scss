@@ -5,8 +5,7 @@
 
 .d3-panel {
     font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-    // Space above and below; the ?dev=1 sidebar sets them per chart.
-    margin: var(--panel-mt, 1.5rem) 0 var(--panel-mb, 2rem);
+    margin: 1.5rem 0 2rem;
 
     .d3-title {
         font-size: 21px;
@@ -118,77 +117,45 @@
     }
 }
 
-// Region boxes in "Hlavní charakteristiky" (2×2 grid). Every value is a CSS
-// variable so the ?dev=1 sidebar (assets-local/js/svetove-regiony-dev-sidebar.js)
-// can tune it live. Region colours match REGIONS in the page's grafy.js.
+// Region colours, also read by the page's grafy.js (REGIONS).
 :root {
     --region-eu: #36369b;
     --region-cina: #e0495a;
     --region-usa: #3b85d8;
     --region-indie: #8546af;
-    --region-tint: 0%;          // background = region colour at this strength
-    --region-border: 0px;
-    --region-radius: 8px;
-    --region-pad: 0px;
-    --region-title-size: 22px;
-    --region-text-size: 1.1rem;   // body text in the 2×2 "Hlavní charakteristiky" boxes
-    --region-line-height: 1.2em; // its line height (em: the sidebar reads a unitless knob as a colour)
-    --region-rule: 2.5px;       // line in the region colour above region headings
-    --region-rule-gap: 6px;     //   its distance from the heading
-    --region-rule-length: 24px; //   its length for the EU; the others scale with their emissions
-    --timeline-label-gap: 9px;  // chart "graf-cile": large dot to its region / year note
-    --sticky-scale: 0.33;       // EXPERIMENT: size of a stuck chart in mini mode
-    --sticky-top: 72px;         // EXPERIMENT: sticky charts, distance from the top (fixed navbar is 53 px + its shadow)
-    // Chart "Mix výroby elektřiny" (MIX in grafy.js). From dataviz tokens: coal
-    // and gas are roles.energy (uhli, zemni_plyn); nuclear and renewables have
-    // no role there yet, so palette grey-400 and teal.
-    --mix-coal: #914b64;
-    --mix-fossil: #e29292;
-    --mix-nuclear: #a7cad3;
-    --mix-oze: #008a94;
+}
+.region-eu    { --region: var(--region-eu); }
+.region-cina  { --region: var(--region-cina); }
+.region-usa   { --region: var(--region-usa); }
+.region-indie { --region: var(--region-indie); }
+
+// A line in the region colour above each region heading, as long as the
+// region's annual greenhouse gas emissions: the EU's, the smallest, is 24 px
+// and the others scale from it (EDGAR 2026, 2025 totals in emise-ghg.csv:
+// EU 3.13, USA 6.02, India 4.51, China 15.98 Gt CO₂eq). A region heading
+// carries its region class in the markdown ({: .js-toc-ignore .region-eu});
+// not the headings inside the region boxes.
+$region-rule: 2.5px;
+$region-rule-gap: 6px;
+@each $key, $k in (eu 1.0, cina 5.11, usa 1.925, indie 1.442) {
+    $length: 24px * $k;
+    :is(h3, h4).region-#{$key}:not(.region-box *) {
+        padding-top: $region-rule + $region-rule-gap;
+        background: linear-gradient(var(--region), var(--region)) left top / #{$length} #{$region-rule} no-repeat;
+    }
 }
 
+// "Hlavní charakteristiky": a 2×2 grid of region boxes listing only the key
+// phrases, each behind an icon and linking to its paragraph under the grid.
 .region-box {
-    padding: var(--region-pad);
-    border: var(--region-border) solid var(--region);
-    border-radius: var(--region-radius);
-    background: color-mix(in srgb, var(--region) var(--region-tint), transparent);
-
     h3, h4 {
         margin-top: 0;
-        font-size: var(--region-title-size);
+        font-size: 22px;
     }
 
     p:last-child { margin-bottom: 0; }
 }
-
-// A line in the region colour above each region heading, as long as the
-// region's annual greenhouse gas emissions: the EU's, the smallest, is
-// --region-rule-length and the others scale from it (EDGAR 2026, 2025 totals
-// in emise-ghg.csv: EU 3.13, USA 6.02, India 4.51, China 15.98 Gt CO₂eq).
-// A region heading carries its region class in the markdown
-// ({: .js-toc-ignore .region-eu}); not the headings inside the region boxes.
-@each $key, $k in (eu 1.0, cina 5.11, usa 1.925, indie 1.442) {
-    .region-#{$key} { --region-rule-k: #{$k}; }
-}
-:is(h3, h4):is(.region-eu, .region-cina, .region-usa, .region-indie):not(.region-box *) {
-    padding-top: calc(var(--region-rule) + var(--region-rule-gap));
-    background: linear-gradient(var(--region), var(--region)) left top
-        / calc(var(--region-rule-length) * var(--region-rule-k, 1)) var(--region-rule) no-repeat;
-}
-
-// Equal heights only inside the 2×2 grid; full-width boxes size to content.
 .region-grid .region-box { height: 100%; }
-.region-stats {
-    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
-    strong { color: inherit; }
-    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
-}
-.region-detail {
-    width: 75%;
-}
-// The boxes list only the bold key phrases, each behind an icon; the full
-// text follows under the grid.
 .region-grid .region-box ul {
     list-style: none;
     padding: 0;
@@ -198,20 +165,18 @@
     display: flex;
     align-items: center;
     gap: 0.6em;
-    font-size: var(--region-text-size);
-    line-height: var(--region-line-height);
+    font-size: 1.1rem;
+    line-height: 1.2em;
     margin-bottom: 0.4em;
 }
-// Each key phrase links to its paragraph under the grid; only the pointer
-// gives it away.
+// Only the pointer gives the link away.
 .region-grid .region-box li a,
 .region-grid .region-box li a:hover {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
-
-// Each key phrase behind its icon in a full circle of the region colour.
+// Each key phrase's Font Awesome icon in a full circle of the region colour.
 .region-grid .region-icon {
     flex: none;
     display: inline-flex;
@@ -225,79 +190,24 @@
     color: #fff;
 }
 
+// Imports and exports by fuel, and the emission figures under each region.
+.region-stats {
+    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
+    strong { color: inherit; }
+    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
+}
+.region-detail {
+    width: 75%;
+}
+
 // The title stays in the PNG/SVG export (chart-download.js reads its text)
 // but not on the page, where the section heading above already says it.
 .d3-panel.no-title .d3-title { display: none; }
-// No source / download line under the chart (the export still reads the source),
-// or the line aligned left.
+// No source / download line under the chart (the export still reads the source).
 .d3-panel.no-foot .chart-foot { display: none; }
-// Space around the charts of klimaticka-politika-svetove-regiony that differ
-// from the 24 / 32 px default.
-#graf-podil { --panel-mt: 32px; --panel-mb: 64px; }
-#graf-cile { --panel-mt: 48px; --panel-mb: 64px; }
-.d3-panel.foot-left .chart-foot { justify-content: flex-start; }
-
-// EXPERIMENT (?dev=1 sidebar, "Přilepené grafy"): body classes. The chart
-// stays at the top of the screen while its section (.sticky-scope) scrolls
-// under it; rg-sticky-box frames it.
-body.rg-sticky .sticky-scope > .d3-panel {
-    position: sticky;
-    top: var(--sticky-top);
-    z-index: 4;
-    background: #fff;
-    padding-bottom: 8px;
-    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, .15);
-}
-// rg-sticky-mini: once stuck (.is-stuck, set by the sidebar script), the
-// chart shrinks to a third in the top left corner of the text block, under
-// its title at a readable size. A transform, so the text below does not jump.
-body.rg-sticky.rg-sticky-mini .sticky-scope > .d3-panel {
-    .d3-body { transform-origin: 0 0; transition: transform .25s ease; }
-    &.is-stuck {
-        background: none;
-        box-shadow: none;
-        border-color: transparent;
-        pointer-events: none;
-    }
-    &.is-stuck .d3-title {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: calc(100% * var(--sticky-scale));
-        margin: 0;
-        padding: 6px 8px 4px;
-        font-size: 13px;
-        line-height: 1.3;
-        background: #fff;
-        border-radius: 6px 6px 0 0;
-    }
-    &.is-stuck .d3-body {
-        transform: translateY(var(--title-h, 0px)) scale(var(--sticky-scale));
-        pointer-events: auto;
-        background: #fff;
-        border-radius: 0 0 18px 18px;
-        box-shadow: 0 12px 36px rgba(0, 0, 0, .3);
-    }
-}
-body.rg-sticky.rg-sticky-box .sticky-scope > .d3-panel {
-    padding: 12px 16px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-}
-
-.region-eu    { --region: var(--region-eu); }
-.region-cina  { --region: var(--region-cina); }
-.region-usa   { --region: var(--region-usa); }
-.region-indie { --region: var(--region-indie); }
-
-// Font Awesome icon before each key phrase in the boxes; takes the text
-// colour from the list item.
-.region-icon {
-    width: 1.25em;
-    text-align: center;
-}
+// Space around the charts that differ from the default.
+#graf-podil { margin: 32px 0 64px; }
+#graf-cile { margin: 48px 0 64px; }
 
 // web-core pads every div inside an expandable box (.expandable-content div),
 // so the panel's own nested divs stacked up an indent. Keep the panel flush.

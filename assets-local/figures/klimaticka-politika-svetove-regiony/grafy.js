@@ -36,16 +36,15 @@
   const DIR = "/assets-local/files/klimaticka-politika-svetove-regiony/";
 
   // Region colours live in CSS (--region-* in assets-local/_chart-panel.scss),
-  // shared with the region boxes in the text. Read at draw time, so the ?dev=1
-  // sidebar can change them live; the hex is only a fallback.
+  // shared with the region boxes and the rules above the region headings; the
+  // hex is only a fallback.
   const rootStyle = getComputedStyle(document.documentElement);
-  const varColor = (name, fallback) => rootStyle.getPropertyValue(name).trim() || fallback;
-  const regionColor = (key, fallback) => varColor("--region-" + key, fallback);
+  const regionColor = (key, fallback) => rootStyle.getPropertyValue("--region-" + key).trim() || fallback;
   const REGIONS = [
-    { key: "cina",  label: "Čína",  get color() { return regionColor("cina", "#e0495a"); } },
-    { key: "usa",   label: "USA",   get color() { return regionColor("usa", "#3b85d8"); } },
-    { key: "indie", label: "Indie", get color() { return regionColor("indie", "#8546af"); } },
-    { key: "eu",    label: "EU",    long: "Evropská unie", get color() { return regionColor("eu", "#36369b"); } },
+    { key: "cina",  label: "Čína",  color: regionColor("cina", "#e0495a") },
+    { key: "usa",   label: "USA",   color: regionColor("usa", "#3b85d8") },
+    { key: "indie", label: "Indie", color: regionColor("indie", "#8546af") },
+    { key: "eu",    label: "EU",    long: "Evropská unie", color: regionColor("eu", "#36369b") },
   ];
   // Small-multiple panels (areas, squares) in the article order.
   const PANEL_ORDER = ["eu", "usa", "cina", "indie"];
@@ -62,16 +61,12 @@
 
   // Electricity mix in four groups, bottom of the stack first; Ember's fuels
   // in `from`. Between them they cover all nine of Ember's fuels, so the
-  // shares add up to 100 % with no remainder to show. Colours are CSS
-  // variables (--mix-*) like the region ones, so the ?dev=1 sidebar tunes them.
+  // shares add up to 100 % with no remainder to show.
   const MIX = [
-    { key: "coal",    label: "Uhlí",                   get color() { return varColor("--mix-coal", "#914b64"); },
-      from: ["Coal"] },
-    { key: "fossil",  label: "Plyn a ostatní fosilní zdroje", get color() { return varColor("--mix-fossil", "#e29292"); },
-      from: ["Gas", "Other Fossil"] },
-    { key: "nuclear", label: "Jádro",                  get color() { return varColor("--mix-nuclear", "#a7cad3"); },
-      from: ["Nuclear"] },
-    { key: "oze",     label: "Obnovitelné zdroje",     get color() { return varColor("--mix-oze", "#008a94"); },
+    { key: "coal",    label: "Uhlí",                          color: "#914b64", from: ["Coal"] },
+    { key: "fossil",  label: "Plyn a ostatní fosilní zdroje", color: "#e29292", from: ["Gas", "Other Fossil"] },
+    { key: "nuclear", label: "Jádro",                         color: "#a7cad3", from: ["Nuclear"] },
+    { key: "oze",     label: "Obnovitelné zdroje",            color: "#008a94",
       from: ["Hydro", "Bioenergy", "Other Renewables", "Wind", "Solar"] },
   ];
   // Renewables by source, bottom of the stack first; the same groups split
@@ -210,10 +205,6 @@
     box.attr("x", b.x).attr("y", b.y).attr("width", b.width + 4).attr("height", b.height);
   }
 
-  // Every chart's redraw, for the ?dev=1 sidebar after it changes a colour.
-  const redraws = [];
-  window.REGIONY_REDRAW = () => redraws.forEach(f => f());
-
   // Draws the chart now and again whenever the svg's width changes: on window
   // resize, and when the collapsed box holding it is opened (it has no width
   // until then). `draw(svg, width)` returns the height it needs.
@@ -221,8 +212,6 @@
     const el = document.getElementById(id + "-svg");
     if (!el) return () => {};
     let last = 0;
-    // The layout width, not the bounding box: a sticky chart shrunk with a
-    // transform (the ?dev=1 experiment) must still draw at full size.
     const width = () => el.parentNode.clientWidth;
     const redraw = () => {
       const w = width();
@@ -243,7 +232,6 @@
     // Text is measured for wrapping and placement; once the webfont is in,
     // measure again, or labels sized against the fallback font run long.
     document.fonts.ready.then(redraw);
-    redraws.push(redraw);
     return redraw;
   }
 
@@ -357,18 +345,11 @@
   // square's AREA is proportional to its value, on one scale for all regions.
   //   o.rows: Map region → {<key>: value}   o.layout: SQUARES_LAYOUT
   function squares(svg, width, o) {
-    // EXPERIMENT (?dev=1 sidebar, body class rg-squares-region): every square
-    // of a region in the region's colour, fading sector by sector in the
-    // legend's order. ponytail: the step is fixed at 15 %, 6 sectors fit.
-    const byRegion = document.body.classList.contains("rg-squares-region");
-    const strength = key => 1 - 0.15 * o.keys.findIndex(k => k.key === key);
-    const shade = (base, key) => d3.interpolateRgb("#fff", base)(strength(key));
-    const keys = byRegion ? o.keys.map(k => ({ ...k, color: shade(C.title, k.key) })) : o.keys;
-    let top = legend(svg, keys, width);
+    let top = legend(svg, o.keys, width);
     top += 40 + unitCaption(svg, o.unit, top + 13, width);
 
     const GAP = 2, PAD = 8, VALUE_SIZE = 12, NAME_SIZE = 13, TOTAL_SIZE = 26;
-    const color = (key, r) => byRegion ? shade(r.color, key) : o.keys.find(k => k.key === key).color;
+    const color = key => o.keys.find(k => k.key === key).color;
     const total = r => d3.sum(o.keys, k => o.rows.get(r.key)[k.key]);
     const regions = PANEL_ORDER.map(regionOf);
     const maxValue = d3.max(regions, r => d3.max(o.keys, k => o.rows.get(r.key)[k.key]));
@@ -469,9 +450,7 @@
           .text(fmt(sum, 1));
 
         d.sq.forEach(s => {
-          const v = o.rows.get(d.r.key)[s.key], c = color(s.key, d.r);
-          // Text beside a square takes the full colour, a pale shade would not read.
-          const ink = byRegion ? d.r.color : c;
+          const v = o.rows.get(d.r.key)[s.key], c = color(s.key);
           const label = o.keys.find(k => k.key === s.key).label;
           g.append("rect").attr("x", s.x).attr("y", s.y).attr("width", s.w).attr("height", s.w)
             .attr("fill", c)
@@ -486,12 +465,12 @@
           const t = g.append("text").attr("font-size", VALUE_SIZE).attr("font-weight", 500)
             .attr("pointer-events", "none").text(text);
           if (inside) {
-            t.attr("fill", byRegion && strength(s.key) < 0.55 ? d.r.color : "#fff").attr("text-anchor", "end").attr("x", s.x + s.w - 4)
+            t.attr("fill", "#fff").attr("text-anchor", "end").attr("x", s.x + s.w - 4)
               .attr("y", s.pos === "bottom" ? s.y + VALUE_SIZE + 2 : s.y + s.w - 4);
           } else if (s.pos === "top") {
-            t.attr("fill", ink).attr("text-anchor", "end").attr("x", s.x + s.w).attr("y", s.y - 4);
+            t.attr("fill", c).attr("text-anchor", "end").attr("x", s.x + s.w).attr("y", s.y - 4);
           } else {
-            t.attr("fill", ink).attr("x", s.x + s.w + 4)
+            t.attr("fill", c).attr("x", s.x + s.w + 4)
               .attr("y", s.pos === "bottom" ? s.y + VALUE_SIZE : s.y + s.w - 2);
           }
         });
@@ -661,12 +640,8 @@
     // Interim notes: regular, at the size of the source line under the chart.
     const NOTE = parseFloat(getComputedStyle(svg.node().parentNode.querySelector(".chart-foot")).fontSize) || 13;
     const LABEL = 15, LINE_H = 16, LEVEL_GAP = 6, R = 8.8, r = 4.5;
-    // Interim dot style, an experiment in the ?dev=1 sidebar: filled (default),
-    // ring, tick or diamond, as a body class.
-    const dotStyle = ["ring", "tick", "diamond"].find(k => document.body.classList.contains("rg-dot-" + k));
     const NOTE_MIN = 40, NOTE_MAX = 140, LABEL_MAX = 230, PAD = 8, NOTE_GAP = 4;
-    // Large dot to its label; the ?dev=1 sidebar tunes it.
-    const LABEL_GAP = parseFloat(varColor("--timeline-label-gap", "6"));
+    const LABEL_GAP = 9;   // large dot to its label
     const narrow = width < 560;
 
     // A run's `bold`: true (700), a weight, or none (400).
@@ -781,21 +756,9 @@
     marks.forEach(m => {
       const g = svg.append("g"), c = m.color, up = m.side === "above" ? -1 : 1;
       const cy = lineY + up * m.dy;
-      if (m.kind !== "dot" || !dotStyle) {
-        g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad)
-          .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", m.kind === "dot" ? 4 : 3)
-          .attr("paint-order", "stroke");
-      } else if (dotStyle === "ring") {
-        g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad)
-          .attr("fill", "#fff").attr("stroke", c).attr("stroke-width", 2);
-      } else if (dotStyle === "tick") {
-        g.append("line").attr("x1", m.cx).attr("x2", m.cx).attr("y1", cy - 7).attr("y2", cy + 7)
-          .attr("stroke", c).attr("stroke-width", 2.5).attr("stroke-linecap", "round");
-      } else {
-        const d = m.rad + 1;
-        g.append("path").attr("d", `M${m.cx},${cy - d}L${m.cx + d},${cy}L${m.cx},${cy + d}L${m.cx - d},${cy}Z`)
-          .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", 2).attr("paint-order", "stroke");
-      }
+      g.append("circle").attr("cx", m.cx).attr("cy", cy).attr("r", m.rad)
+        .attr("fill", c).attr("stroke", "#fff").attr("stroke-width", m.kind === "dot" ? 4 : 3)
+        .attr("paint-order", "stroke");
       // A cancelled target: the same dot with a white × in it.
       if (m.kind === "cancelled") {
         const k = m.rad * 0.42;
@@ -975,20 +938,19 @@
 
   // Podíl elektromobilů na prodejích nových aut.
   csv("elektromobily.csv").then(raw => {
-    // Built per draw: spreading r reads its colour getter once and freezes it.
-    const series = () => REGIONS.map(r => ({ ...r,
+    const series = REGIONS.map(r => ({ ...r,
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektromobily", (svg, w) => lines(svg, w, {
-      series: series(), decimals: 1, short: "%", xTicks: [2010, 2015, 2020, 2025],
+      series, decimals: 1, short: "%", xTicks: [2010, 2015, 2020, 2025],
     }));
   });
 
   // Míra elektrifikace — in a collapsed box, drawn once it is opened.
   csv("elektrifikace.csv").then(raw => {
-    const series = () => [...REGIONS, WORLD].map(r => ({ ...r,
+    const series = [...REGIONS, WORLD].map(r => ({ ...r,
       values: raw.filter(d => d.region === r.key).map(d => ({ year: +d.year, v: +d.share_pct })) }));
     mount("graf-elektrifikace", (svg, w) => lines(svg, w, {
-      series: series(), decimals: 1, short: "%", xTicks: [1990, 2000, 2010, 2024],
+      series, decimals: 1, short: "%", xTicks: [1990, 2000, 2010, 2024],
     }));
   });
 
