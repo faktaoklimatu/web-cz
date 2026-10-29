@@ -126,11 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
     : { of: 'výhřevnosti', name: 'výhřevnost', in: 've výhřevnosti' };
   // The page's text that names it (a source line in the .md).
   document.querySelectorAll('[data-energy-basis]').forEach(el => { el.textContent = BASIS.in; });
-  // …and that quotes CONVERSIONS (the sources section), with the decimals given.
-  document.querySelectorAll('[data-conversion]').forEach(el => {
-    const v = el.dataset.conversion.split('.').reduce((o, k) => o?.[k], CONVERSIONS);
-    if (v != null) el.textContent = fokFormatNumber(v, String(v).split('.')[1]?.length ?? 0);
-  });
   // Energy in CFG.energyUnit; `perPJ` is how many of it make a PJ.
   const ENERGY = { twh: { label: 'TWh', perPJ: 1 / 3.6 }, pj: { label: 'PJ', perPJ: 1 } }[CFG.energyUnit];
   const toEnergy = (kg, commodity) => kg * CV[commodity] * 1e-9 * ENERGY.perPJ;
@@ -711,7 +706,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Imports per month by country, as the run above draws them, ropa and
     // plyn on one axis (recentTop) like the yearly charts.
     const monthE = (commodity, year, month) => d3.sum(ofMonth(commodity, year, month), d => toEnergy(d.mass_kg, d.commodity));
-    const recentTop = d3.nice(0, d3.max(['crude_oil', 'natural_gas'], c => d3.max(recent, d => monthE(c, d.year, d.month))), 4)[1];
+    // 15 % over the peak, so the gas chart's annotation clears the axis label.
+    const recentTop = d3.nice(0, 1.15 * d3.max(['crude_oil', 'natural_gas'], c => d3.max(recent, d => monthE(c, d.year, d.month))), 4)[1];
     const importMonths = (sel, commodity, codes, extra) => columnEnergy(sel, recent.map(d => ({
       ...d, t: d.year + (d.month - 1) / 12, ...byCountry(ofMonth(commodity, d.year, d.month), codes),
     })), codes, {
@@ -726,7 +722,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // before it, high on the axis (recentTop), where they leave room.
     const refillArrow = sel => arrowsFor(sel, {
       target: [2025 + 5 / 12, monthE('natural_gas', 2025, 6)],
-      textEnd: [2025.25, 0.94 * recentTop], side: 'left',
+      textEnd: [2025.25, 0.87 * recentTop], side: 'left',
     });
 
     // Average import prices: by year, to the newest in the export — an

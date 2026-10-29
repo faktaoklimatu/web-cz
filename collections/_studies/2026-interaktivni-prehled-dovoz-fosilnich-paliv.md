@@ -253,34 +253,5 @@ extra-scripts:
       </div>
       </div>
     </div>
-
-    {% comment %} Zdroje dat a metodika, rozbalovací jako „Prozkoumejte data“.
-    Převodní koeficienty (data-conversion) a základ energie (data-energy-basis)
-    doplňuje dovoz-fosilnich-paliv.js z CONVERSIONS a CFG, text je jen výchozí. {% endcomment %}
-    <div class="sources">
-      <a class="expander collapsed" data-toggle="collapse" data-target="#zdroje-collapse" aria-expanded="false" aria-controls="zdroje-collapse">
-        <div class="expander-button"><i class="fas fa-chevron-down"></i></div>
-        <h2 class="fuel-heading">Zdroje dat a metodika</h2>
-      </a>
-      <div class="collapse" id="zdroje-collapse">
-      <div class="sources-body narrow-text" markdown="1">
-
-**Dovoz ropy a zemního plynu:** Český statistický úřad, statistika zahraničního obchodu, dovoz podle země původu. Měsíční hmotnost a celní hodnota dovozu od roku 1999, roční údaje jsou součty měsíců.
-
-**Energie:** hmotnost přepočítáváme na energii výhřevností <span data-conversion="ncv.natural_gas">48</span> GJ/t u zemního plynu (IPCC 2006) a <span data-conversion="ncv.crude_oil">42,6</span> GJ/t u ropy, na spalné teplo poměrem výhřevnosti ke spalnému teplu <span data-conversion="ncvPerGcv.crude_oil">0,95</span> u ropy a <span data-conversion="ncvPerGcv.natural_gas">0,9</span> u zemního plynu (konvence IEA). Energii uvádíme <span data-energy-basis>ve spalném teple</span>, tak jak se zemní plyn obchoduje a účtuje.
-
-**Ceny:** průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím, nikoli burzovní cena. Ropu přepočítáváme na barely (<span data-conversion="barrelsPerTonne">7,53</span> barelu na tunu). Ceny podle zemí vynechávají země, ze kterých za měsíc přišlo méně než 50 GWh.
-
-**Neúplný rok:** rok, který data ještě nepokrývají celý, dopočítáváme. Dovoz za zbývající měsíce je průměrem stejných měsíců tří předchozích let, výdaje za něj počítáme s průměrnou cenou posledních tří měsíců, za které data máme.
-
-**HDP:** Český statistický úřad, hrubý domácí produkt v běžných cenách.
-
-**Srovnání s výdaji státu:** výdaje Ministerstva školství, mládeže a tělovýchovy (MŠMT) a Státního fondu dopravní infrastruktury (SFDI).
-
-**Události v grafech:** začátek ruské invaze na Ukrajinu 24. 2. 2022, začátek krize v Hormuzském průlivu 28. 2. 2026.
-
-</div>
-      </div>
-    </div>
   </div>
 </div>

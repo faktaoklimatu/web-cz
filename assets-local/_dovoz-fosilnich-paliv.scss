@@ -299,8 +299,7 @@ body.dovoz-fosilnich-paliv {
     .chart-panel,
     .fuel-figure,
     .span-select,
-    .tool,
-    .sources a.expander {
+    .tool {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     }
 
@@ -362,19 +361,8 @@ body.dovoz-fosilnich-paliv {
         margin-top: 56px;
     }
 
-    /* The sources under the explorer, collapsed the same way. */
-    .sources {
-        margin-top: 40px;
-    }
-
-    .sources-body {
-        margin-top: 16px;
-    }
-
-    /* The explorer's heading, and the sources', is the expander link that
-       opens it. */
-    .tool a.expander,
-    .sources a.expander {
+    /* The explorer's heading is the expander link that opens it. */
+    .tool a.expander {
         align-items: center;
         cursor: pointer;
 
