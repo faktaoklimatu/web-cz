@@ -29,7 +29,7 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 
 {% include includes-local/chart-panel.html
     id="graf-podil"
-    class="no-foot no-title"
+    class="no-title"
     title="Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2025"
     source='<a href="https://edgar.jrc.ec.europa.eu/report_2026">EDGAR</a> (Společné výzkumné středisko EK, 2026)'
 %}
