@@ -882,10 +882,10 @@
 
     const METRICS = {
       total:     { label: "Celkové emise", data: ghg, col: "ghg_mt", k: 1 / 1000, decimals: 2, short: "mld. t CO₂eq" },
-      perCapita: { label: "Na obyvatele", data: ghg, col: "ghg_per_capita_t", k: 1, decimals: 1, short: "t CO₂eq" },
-      sectors:   { label: "Podle sektorů",
+      perCapita: { label: "Na obyvatele", data: ghg, col: "ghg_per_capita_t", k: 1, decimals: 1, short: "t CO₂eq na obyv." },
+      sectors:   { label: "Sektory na obyvatele",
                    title: "Emise skleníkových plynů na obyvatele podle sektorů v roce 2024" },
-      cumShare:  { label: "Historický podíl (jen CO₂)", data: co2, col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
+      cumShare:  { label: "Historický podíl CO₂", data: co2, col: "share_cumulative_pct", k: 1, decimals: 1, short: "%",
                    title: "Podíl na kumulativních emisích CO₂ od roku 1750 (jen CO₂, bez ostatních plynů)",
                    source: '<a href="https://ourworldindata.org/co2-emissions-metrics">Our World in Data</a> (Global Carbon Budget)' },
     };
@@ -923,7 +923,7 @@
     const METRICS = {
       share:     { label: "Podíl", col: "share_pct", decimals: 1, short: "%", tickSuffix: "\u00a0%" },
       twh:       { label: "Výroba", col: "twh", decimals: 0, short: "TWh" },
-      perCapita: { label: "Na obyvatele", decimals: 1, short: "MWh" },
+      perCapita: { label: "Na obyvatele", decimals: 1, short: "MWh na obyv." },
     };
     const rows = { share: byYear(raw, MIX, "source", "share_pct"), twh: byYear(raw, MIX, "source", "twh") };
     // TWh / mil. obyvatel = MWh na obyvatele.
@@ -942,13 +942,14 @@
     }));
   });
 
-  // Rozvoj obnovitelných zdrojů — capacity (GW, per capita) and the share of
-  // electricity generation. Not the share of capacity: that counts idle
+  // Rozvoj obnovitelných zdrojů — capacity (GW, per capita), generation (TWh) and
+  // its share. Not the share of capacity: that counts idle
   // peakers and reserve plants alongside running ones.
   Promise.all([csv("kapacita.csv"), csv("populace.csv"), csv("elektrina-mix.csv")]).then(([raw, popRaw, mixRaw]) => {
     const gw = byYear(raw, CAPACITY, "source", "gw");
     const shown = CAPACITY.filter(k => !k.hidden);
     const share = byYear(mixRaw, CAPACITY, "source", "share_pct");
+    const twh = byYear(mixRaw, CAPACITY, "source", "twh");
     // GW / mil. obyvatel × 1000 = W na obyvatele.
     const pop = new Map(popRaw.map(d => [d.region + d.year, +d.population_mil]));
     const perCapita = new Map([...gw].map(([reg, years]) => [reg, years.map(d =>
@@ -956,8 +957,9 @@
     const stackMax = rows => d3.max([...rows.values()].flat(), d => d3.sum(shown, k => d[k.key]));
     const METRICS = {
       gw:        { label: "Instalovaný výkon", rows: gw, decimals: 0, short: "GW", yMax: stackMax(gw) },
+      perCapita: { label: "Výkon na obyvatele", rows: perCapita, decimals: 0, short: "W na obyv.", yMax: stackMax(perCapita) },
+      twh:       { label: "Výroba", rows: twh, decimals: 0, short: "TWh", yMax: stackMax(twh) },
       share:     { label: "Podíl na výrobě elektřiny", rows: share, yMax: 100, decimals: 1, short: "%" },
-      perCapita: { label: "Na obyvatele", rows: perCapita, decimals: 0, short: "W", yMax: stackMax(perCapita) },
     };
     let metric = "gw", draw = () => {};
     addSwitch("graf-oze", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
@@ -989,12 +991,12 @@
   // Investice do energetické transformace — absolute or as a share of GDP.
   csv("investice.csv").then(raw => {
     const METRICS = {
-      abs: { label: "Objem investic", short: "mld. $", decimals: 0,
-             unit: "Investice v roce 2025 (mld. USD)", v: d => +d.investment_bn_usd },
       gdp: { label: "Podíl na HDP", short: "%", decimals: 1,
-             unit: "Investice v roce 2025 jako podíl na HDP (%)", v: d => d.investment_bn_usd / d.gdp_bn_usd * 100 },
+             unit: "% HDP", v: d => d.investment_bn_usd / d.gdp_bn_usd * 100 },
+      abs: { label: "Objem investic", short: "mld. $", decimals: 0,
+             unit: "mld. USD", v: d => +d.investment_bn_usd },
     };
-    let metric = "abs", draw = () => {};
+    let metric = "gdp", draw = () => {};
     addSwitch("graf-investice", Object.entries(METRICS).map(([key, m]) => ({ key, label: m.label })),
       key => { metric = key; draw(); });
     draw = mount("graf-investice", (svg, w) => {
