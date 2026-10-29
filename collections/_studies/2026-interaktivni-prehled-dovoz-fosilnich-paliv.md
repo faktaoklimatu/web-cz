@@ -16,6 +16,34 @@ include_in_search: true
 extra-scripts:
 - /assets-local/js/dovoz-fosilnich-paliv.js
 - /assets-local/js/chart-download.js
+# Sloupce paliv: nadpis s úvodem (markdown), pak grafy, viz smyčka níže.
+# acc/gen: 4. a 2. pád názvu do nadpisů grafů, file_*: totéž v názvech
+# stahovaných souborů. arrows: text šipky v grafu podle id grafu bez
+# předpony (řádky oddělené „|“); kam míří, určuje dovoz-fosilnich-paliv.js.
+fuels:
+- name: Ropa
+  slug: ropa
+  acc: ropu
+  gen: ropy
+  file_acc: ropu
+  file_gen: ropy
+  arrows:
+    energie: "Postupný konec|dovozu z Ruska"
+    czk-mesice: "Začátek krize|v Hormuzském průlivu"
+  intro: |
+    **Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
+- name: Zemní plyn
+  slug: plyn
+  acc: zemní plyn
+  gen: zemního plynu
+  file_acc: zemni-plyn
+  file_gen: zemniho-plynu
+  arrows:
+    czk: "Začátek ruské|invaze na Ukrajinu"
+    energie: "Postupný konec|dovozu z Ruska"
+    energie-mesice: "Sezónní vrchol|doplňování zásobníků"
+  intro: |
+    **Zemní plyn je zásadní zdroj tepla v budovách a průmyslu** (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
@@ -62,119 +90,60 @@ extra-scripts:
 
     {% comment %} Dva sloupce, ropa a plyn, zarovnané po řádcích: každý má
     přesně sedm prvků (nadpis s úvodem, tři dlouhodobé a tři měsíční grafy),
-    viz .fuel-columns v _dovoz-fosilnich-paliv.scss. Úvod pod nadpisem je
-    obyčejný markdown: řádky bez odsazení, prázdný řádek před i za.
-    Přepínač nad nimi ukazuje v obou buď dlouhodobé grafy, nebo posledních 36 měsíců. {% endcomment %}
+    viz .fuel-columns v _dovoz-fosilnich-paliv.scss. Paliva, jejich úvody a
+    texty šipek jsou v page.fuels v hlavičce. Přepínač nad nimi ukazuje
+    v obou buď dlouhodobé grafy, nebo posledních 36 měsíců. {% endcomment %}
     <div class="seg-buttons span-select" data-span-select role="group" aria-label="Období grafů">
       <button type="button" data-value="long" aria-pressed="true">Dlouhodobý vývoj</button>
       <button type="button" data-value="recent" aria-pressed="false">Posledních 36 měsíců</button>
     </div>
+    {%- assign spans = "long,recent" | split: "," %}
+    {%- assign metrics = "czk,energie,cena" | split: "," %}
     <div class="fuel-columns">
+    {%- for fuel in page.fuels %}
       <div class="fuel-head">
-        <h2 class="fuel-heading">Ropa</h2>
-        <div class="fuel-intro" markdown="1">
-
-**Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot, proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy.
-
-</div>
+        <h2 class="fuel-heading">{{ fuel.name }}</h2>
+        <div class="fuel-intro">{{ fuel.intro | markdownify }}</div>
       </div>
-      <div class="fuel-figure" data-span="long">
+      {%- for span in spans %}
+      {%- for metric in metrics %}
+      {%- if span == "recent" %}
+        {%- assign key = metric | append: "-mesice" %}
+        {%- assign title_end = " za posledních 36 měsíců" %}
+        {%- assign file_end = "-36-mesicu" %}
+      {%- else %}
+        {%- assign key = metric %}
+        {%- assign title_end = "" %}
+        {%- assign file_end = "" %}
+      {%- endif %}
+      {%- case metric %}
+      {%- when "czk" %}
+        {%- assign title = "Výdaje za " | append: fuel.acc %}
+        {%- assign file = "vydaje-za-" | append: fuel.file_acc %}
+      {%- when "energie" %}
+        {%- assign title = "Dovoz " | append: fuel.gen %}
+        {%- assign file = "dovoz-" | append: fuel.file_gen %}
+      {%- else %}
+        {%- assign title = "Průměrná dovozní cena " | append: fuel.gen %}
+        {%- assign file = "dovozni-cena-" | append: fuel.file_gen %}
+      {%- endcase %}
+      {%- assign id = "chart-" | append: fuel.slug | append: "-" | append: key %}
+      {%- assign title_id = id | append: "-title" %}
+      {%- assign file = file | append: file_end %}
+      {%- assign arrow = fuel.arrows[key] %}
+      <div class="fuel-figure" data-span="{{ span }}">
         <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-czk-title">Výdaje za ropu</h3>
+          <h3 class="chart-title" id="{{ title_id }}">{{ title }}{{ title_end }}</h3>
         </div>
-        <div id="chart-ropa-czk"></div>
-        {% include includes-local/chart-foot.html svg="chart-ropa-czk" file="vydaje-za-ropu" title_from="chart-ropa-czk-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
-      <div class="fuel-figure" data-span="long">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-energie-title">Dovoz ropy</h3>
-        </div>
-        <div id="chart-ropa-energie"></div>
-        {% include includes-local/chart-foot.html svg="chart-ropa-energie" file="dovoz-ropy" title_from="chart-ropa-energie-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
-      </div>
-      <div class="fuel-figure" data-span="long">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-cena-title">Průměrná dovozní cena ropy</h3>
-        </div>
-        <div id="chart-ropa-cena"></div>
+        <div id="{{ id }}"></div>
+        {%- if metric == "cena" %}
         <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
-        {% include includes-local/chart-foot.html svg="chart-ropa-cena" file="dovozni-cena-ropy" title_from="chart-ropa-cena-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
+        {%- endif %}
+        {% include includes-local/chart-foot.html svg=id file=file title_from=title_id source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow=arrow %}
       </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-czk-mesice-title">Výdaje za ropu za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-ropa-czk-mesice"></div>
-        {% include includes-local/chart-foot.html svg="chart-ropa-czk-mesice" file="vydaje-za-ropu-36-mesicu" title_from="chart-ropa-czk-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek krize|v Hormuzském průlivu" %}
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-energie-mesice-title">Dovoz ropy za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-ropa-energie-mesice"></div>
-        {% include includes-local/chart-foot.html svg="chart-ropa-energie-mesice" file="dovoz-ropy-36-mesicu" title_from="chart-ropa-energie-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-ropa-cena-mesice-title">Průměrná dovozní cena ropy za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-ropa-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
-        {% include includes-local/chart-foot.html svg="chart-ropa-cena-mesice" file="dovozni-cena-ropy-36-mesicu" title_from="chart-ropa-cena-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
-
-      <div class="fuel-head">
-        <h2 class="fuel-heading">Zemní plyn</h2>
-        <div class="fuel-intro" markdown="1">
-
-**Zemní plyn je zásadní zdroj tepla v budovách a průmyslu** (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
-
-</div>
-      </div>
-      <div class="fuel-figure" data-span="long">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-czk-title">Výdaje za zemní plyn</h3>
-        </div>
-        <div id="chart-plyn-czk"></div>
-        {% include includes-local/chart-foot.html svg="chart-plyn-czk" file="vydaje-za-zemni-plyn" title_from="chart-plyn-czk-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek ruské|invaze na Ukrajinu" %}
-      </div>
-      <div class="fuel-figure" data-span="long">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-energie-title">Dovoz zemního plynu</h3>
-        </div>
-        <div id="chart-plyn-energie"></div>
-        {% include includes-local/chart-foot.html svg="chart-plyn-energie" file="dovoz-zemniho-plynu" title_from="chart-plyn-energie-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
-      </div>
-      <div class="fuel-figure" data-span="long">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-cena-title">Průměrná dovozní cena zemního plynu</h3>
-        </div>
-        <div id="chart-plyn-cena"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
-        {% include includes-local/chart-foot.html svg="chart-plyn-cena" file="dovozni-cena-zemniho-plynu" title_from="chart-plyn-cena-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-czk-mesice-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-plyn-czk-mesice"></div>
-        {% include includes-local/chart-foot.html svg="chart-plyn-czk-mesice" file="vydaje-za-zemni-plyn-36-mesicu" title_from="chart-plyn-czk-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-energie-mesice-title">Dovoz zemního plynu za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-plyn-energie-mesice"></div>
-        {% include includes-local/chart-foot.html svg="chart-plyn-energie-mesice" file="dovoz-zemniho-plynu-36-mesicu" title_from="chart-plyn-energie-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Sezónní vrchol|doplňování zásobníků" %}
-      </div>
-      <div class="fuel-figure" data-span="recent">
-        <div class="chart-head">
-          <h3 class="chart-title" id="chart-plyn-cena-mesice-title">Průměrná dovozní cena zemního plynu za posledních 36 měsíců</h3>
-        </div>
-        <div id="chart-plyn-cena-mesice"></div>
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
-        {% include includes-local/chart-foot.html svg="chart-plyn-cena-mesice" file="dovozni-cena-zemniho-plynu-36-mesicu" title_from="chart-plyn-cena-mesice-title" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
-      </div>
+      {%- endfor %}
+      {%- endfor %}
+    {%- endfor %}
     </div>
 
     {% comment %} Interaktivní graf: ovládání nastavuje TOOL v dovoz-fosilnich-paliv.js,
