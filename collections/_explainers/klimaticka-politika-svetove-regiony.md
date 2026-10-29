@@ -463,6 +463,3 @@ USA hrají v klimatických jednáních **klíčovou roli díky svému ekonomick�
 ### Indie
 {: .js-toc-ignore .region-indie}
 Jakožto velký **zastánce multilateralismu** je Indie aktivním členem mezinárodních jednání a podporuje mezinárodní spolupráci. Dlouhodobě prosazuje **princip společné, ale rozdílné odpovědnosti** a klimatické spravedlnosti. Tyto zásady nevyužívá ke zbavení se odpovědnosti, ale k získání potřebné flexibility pro svůj rozvoj. Dlouhodobě požaduje předvídatelné a dostatečné klimatické finance ze strany vyspělých států, které hodnotí jako nezbytné pro dekarbonizaci rozvojového světa. Za tímto účelem se kromě mezinárodních klimatických jednání zapojuje do řady iniciativ, které také vede. Jejich cílem je reformovat mezinárodní finanční instituce a zpřístupnit finance pro energetickou transformaci a ochranu klimatu rozvojovým státům.
-
-## Poznámky
-

@@ -66,7 +66,7 @@
   const MIX = [
     { key: "coal",    label: "Uhlí",                   get color() { return varColor("--mix-coal", "#914b64"); },
       from: ["Coal"] },
-    { key: "fossil",  label: "Plyn a ostatní fosilní", get color() { return varColor("--mix-fossil", "#e29292"); },
+    { key: "fossil",  label: "Plyn a ostatní fosilní zdroje", get color() { return varColor("--mix-fossil", "#e29292"); },
       from: ["Gas", "Other Fossil"] },
     { key: "nuclear", label: "Jádro",                  get color() { return varColor("--mix-nuclear", "#a7cad3"); },
       from: ["Nuclear"] },
@@ -922,7 +922,7 @@
   Promise.all([csv("elektrina-mix.csv"), csv("populace.csv")]).then(([raw, popRaw]) => {
     const METRICS = {
       share:     { label: "Podíl", col: "share_pct", decimals: 1, short: "%", tickSuffix: "\u00a0%" },
-      twh:       { label: "Výroba v TWh", col: "twh", decimals: 0, short: "TWh" },
+      twh:       { label: "Výroba", col: "twh", decimals: 0, short: "TWh" },
       perCapita: { label: "Na obyvatele", decimals: 1, short: "MWh" },
     };
     const rows = { share: byYear(raw, MIX, "source", "share_pct"), twh: byYear(raw, MIX, "source", "twh") };

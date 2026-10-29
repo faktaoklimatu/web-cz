@@ -234,7 +234,7 @@
 // Space around the charts of klimaticka-politika-svetove-regiony that differ
 // from the 24 / 32 px default.
 #graf-podil { --panel-mt: 32px; --panel-mb: 64px; }
-#graf-cile { --panel-mb: 64px; }
+#graf-cile { --panel-mt: 48px; --panel-mb: 64px; }
 .d3-panel.foot-left .chart-foot { justify-content: flex-start; }
 
 // EXPERIMENT (?dev=1 sidebar, "Přilepené grafy"): body classes. The chart
