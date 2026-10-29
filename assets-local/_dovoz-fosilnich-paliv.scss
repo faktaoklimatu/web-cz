@@ -253,6 +253,11 @@ body.dovoz-fosilnich-paliv {
         color: #515b66;
     }
 
+    /* A KPI that explains itself in a tooltip (the imports' unit). */
+    .kpi--info {
+        cursor: pointer;
+    }
+
     .kpi-label {
         font-size: var(--dovoz-kpi-label-size);
         font-weight: 600;

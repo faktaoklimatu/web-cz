@@ -194,7 +194,6 @@ extra-scripts:
             <button type="button" data-value="price" aria-pressed="false">Cena</button>
             <button type="button" data-value="energy" aria-pressed="false">Dovoz</button>
           </div>
-          <label class="chart-toggle" data-when="price"><input type="checkbox" data-option="bench" autocomplete="off"> burzovní cena</label>
         </div>
         <div class="control-group">
           <span class="control-label">Palivo</span>
@@ -242,7 +241,7 @@ extra-scripts:
         </div>
         <div class="filter-summary" id="tool-summary"></div>
         <div class="chart-foot">
-          <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie přepočtena výhřevností</span>
+          <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie <span data-energy-basis>ve spalném teple</span></span>
           <span class="chart-downloads">Stáhnout:
             <button type="button" class="chart-download" data-format="png" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">PNG</button>,
             <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">SVG</button>,

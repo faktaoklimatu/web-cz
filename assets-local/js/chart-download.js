@@ -128,16 +128,17 @@
       if (!part) return;
       if (/^\s+$/.test(part)) { space = true; return; }
       if (space || !tokens.length) tokens.push([]);
-      tokens[tokens.length - 1].push({ t: part, weight: r.weight });
+      tokens[tokens.length - 1].push({ t: part, weight: r.weight, fill: r.fill });
       space = false;
     }));
-    // A line's runs: neighbours of one weight merged, a space between tokens.
+    // A line's runs: neighbours of one weight and colour merged, a space
+    // between tokens.
     const segsOf = line => line.reduce((segs, token, i) => {
       token.forEach((word, j) => {
         const t = (i && !j ? " " : "") + word.t;
         const last = segs[segs.length - 1];
-        if (last && last.weight === word.weight) last.t += t;
-        else segs.push({ t, weight: word.weight });
+        if (last && last.weight === word.weight && last.fill === word.fill) last.t += t;
+        else segs.push({ t, weight: word.weight, fill: word.fill });
       });
       return segs;
     }, []);
@@ -273,9 +274,12 @@
       if (!text) return null;
       const cs = window.getComputedStyle(el);
       const link = el.querySelector && el.querySelector("a");
+      // A child element is a run of its own weight and colour (a coloured
+      // word in a title); bare text takes the block's.
       const runs = Array.from(el.childNodes).map(n => ({
         text: n.textContent,
         weight: n.nodeType === 1 ? parseInt(window.getComputedStyle(n).fontWeight, 10) || weight : weight,
+        fill: n.nodeType === 1 ? window.getComputedStyle(n).color : null,
       }));
       return {
         text, weight, runs,
@@ -415,6 +419,7 @@
         segs.forEach(g => {
           const path = document.createElementNS(SVG_NS, "path");
           path.setAttribute("d", fontOf(g).getPath(g.t, x, l.y, l.size).toPathData(2));
+          if (g.fill) path.setAttribute("fill", g.fill);
           node.appendChild(path);
           x += fontOf(g).getAdvanceWidth(g.t, l.size);
         });
@@ -428,6 +433,7 @@
         segs.forEach(g => {
           const span = document.createElementNS(SVG_NS, "tspan");
           span.setAttribute("font-weight", g.weight);
+          if (g.fill) span.setAttribute("fill", g.fill);
           span.textContent = g.t;
           node.appendChild(span);
         });
