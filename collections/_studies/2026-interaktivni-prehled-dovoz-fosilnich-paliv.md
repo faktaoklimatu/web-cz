@@ -11,6 +11,7 @@ caption:       "Kolik Česko platí za dovoz ropy a zemního plynu a odkud je do
 intro: |
     V posledních letech se výrazně měnila cena ropy a zemního plynu na světových trzích, což vedlo k výkyvům nákladů na jejich dovoz do Česka. Po ruské invazi na Ukrajinu vzrostly ceny fosilních paliv (až k vrcholu v roce 2022) a Evropa postupně snižovala jejich dovoz z Ruska. V roce 2026 další cenový šok vyvolala krize v Hormuzském průlivu.
 preview_type: "Interaktivní přehled"
+preview_image: "/assets/studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.svg"
 include_in_search: true
 extra-scripts:
 - /assets-local/js/dovoz-fosilnich-paliv.js
