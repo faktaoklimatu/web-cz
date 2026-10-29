@@ -951,8 +951,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
 
-    // The whole chart's plot height and axis top, for the rows drawn over it.
-    let toolScale;
+    // The explorer's chart at width `w`: its height and the room above and
+    // below its plot, the plot's height, and the y-axis top. Shared by the
+    // whole chart and the country rows drawn over it to the same scale.
+    const toolLayout = (v, w) => {
+      const top = d3.nice(0, toolTops(v).chart || 1, 5)[1];
+      const legendWidth = w - theme.margins.right;
+      // Room for the longest legend any view can have, so the chart keeps one
+      // height whatever is picked and the page never jumps. The whole chart,
+      // legend included, is CFG.toolAspect of its width (2:1) — but on a phone
+      // that would leave the plot a sliver under the legend, hence the floor.
+      const legendRoom = legendLayout([...Object.values(labelsOf(BOTH)), 'Průměr']
+        .map(label => ({ label })), legendWidth, 4).height;
+      const height = Math.max(Math.round(w * CFG.toolAspect), 360);
+      // A row more over the plot for each context label past the first.
+      const markerRoom = Math.max(0, contextShown(v).length - 1) * fokMarkerRow(theme);
+      const plotH = height - theme.margins.top - markerRoom - theme.margins.bottom - legendRoom;
+      return { top, legendWidth, legendRoom, height, markerRoom, plotH };
+    };
+
     const toolChart = w => {
       const v = toolView();
       const { rows, keys, colors, labels, lines, unit, fmt } = toolData(v);
@@ -970,22 +987,12 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('tool-period').textContent = periodText(v);
 
       const sum = r => d3.sum(keys, k => r[k]);
-      const top = d3.nice(0, toolTops(v).chart || 1, 5)[1];
+      const { top, legendWidth, legendRoom, height, markerRoom } = toolLayout(v, w);
       const ticks = toolTicks('#chart-tool', v);
       // Flush left, under the y labels; styled as the KPI cards' and the
       // columns': a third of a swatch to the label, the label in its colour.
-      const legendWidth = w - theme.margins.right;
       const legend = legendLayout((v.price ? lines : keys.map(k => [k, labels[k], colors[k]]))
         .map(([, label, color]) => ({ label, color })), legendWidth, 4);
-      // Room for the longest legend any view can have, so the chart keeps one
-      // height whatever is picked and the page never jumps. The whole chart,
-      // legend included, is CFG.toolAspect of its width (2:1) — but on a phone
-      // that would leave the plot a sliver under the legend, hence the floor.
-      const legendRoom = legendLayout([...Object.values(labelsOf(BOTH)), 'Průměr']
-        .map(label => ({ label })), legendWidth, 4).height;
-      const height = Math.max(Math.round(w * CFG.toolAspect), 360);
-      // A row more over the plot for each context label past the first.
-      const markerRoom = Math.max(0, contextShown(v).length - 1) * fokMarkerRow(theme);
       const swatch = c => `<span style="color:${c}">■</span> `;
       // Imports also give each band's share of that year's or month's total.
       const share = (r, k) => TOOL.metric === 'energy' && keys.length > 1 && sum(r) > 0
@@ -1026,7 +1033,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // Hidden rows aren't redrawn and would keep the download id.
       d3.selectAll('#tool-svg').attr('id', null);
       chart.svg.attr('id', 'tool-svg');
-      toolScale = { plotH: height - theme.margins.top - markerRoom - theme.margins.bottom - legendRoom, top };
       drawLegend(chart.svg, legend, height - legendRoom + 4, it => readable(it.color));
 
       // Title and summary: on the page, and in a saved file's header.
@@ -1063,10 +1069,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const { rows, keys, fmt, unit } = toolData(v);
       if (TOOL.metric === 'czk') {
         const ticks = toolTicks('#chart-tool-tiles', v);
+        // The whole chart's box stays laid out under the rows (see tiles).
+        const { plotH, top } = toolLayout(v, Math.round(document.querySelector('#chart-tool').getBoundingClientRect().width));
         // The rows are one SVG, so the download buttons take them instead.
         d3.select('#tool-svg').attr('id', null);
         countryRows('#chart-tool-tiles', '#chart-tool', rows, v.codes, {
-          key: d => d.key, plotH: toolScale.plotH, top: toolScale.top,
+          key: d => d.key, plotH, top,
           unit, fmt, label: d => d.label, markers: contextMarkers(v),
           ticks: TOOL.step === 'years' ? ticks.map(String) : ticks.map(y => `${y}-1`).filter(k => rows.some(r => r.key === k)),
           tickFormat: k => k.split('-')[0],
