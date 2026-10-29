@@ -15,7 +15,6 @@
 body.dovoz-fosilnich-paliv {
     --dovoz-border: 1px solid #e2e8f0;
     --dovoz-gap: 16px;
-    /* Tunable live from the ?dev=1 sidebar (js/dovoz-dev-sidebar.js). */
     --dovoz-pad-y: 16px;            /* panel padding */
     --dovoz-pad-x: 18px;
     --dovoz-heading-size: 24px;     /* Ropa / Zemní plyn */
@@ -24,7 +23,7 @@ body.dovoz-fosilnich-paliv {
     --dovoz-kpi-value-size: 24px;
     --dovoz-text-size: 14px;        /* the segmented buttons */
     --dovoz-chart-gap: 48px;        /* fuel columns: above a chart that follows a chart */
-    --dovoz-note-size: 13px;        /* .chart-note */
+    --dovoz-note-size: 13px;        /* .filter-summary */
 
     /* web-core paints only every other .section white and lets the rest show
        body's #f7f7f7 — which left the charts on grey. The panels are white, so
@@ -131,13 +130,9 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
-    /* On a desktop a chart takes a share of its column's width — set by drawAll
-       from CFG.chartFraction — and its text keeps the full width. The share is
-       taken by the figure's contents, not the figure, so a boxed column's
-       border still runs the full width. A figure is as tall as its
-       counterpart in the other column (they share a grid row); the title
-       takes up the difference, so where one wraps and the other does not the
-       charts under them still sit level. */
+    /* A figure is as tall as its counterpart in the other column (they share
+       a grid row); the title takes up the difference, so where one wraps and
+       the other does not the charts under them still sit level. */
     .fuel-figure {
         display: flex;
         flex-direction: column;
@@ -185,74 +180,14 @@ body.dovoz-fosilnich-paliv {
         grid-template-rows: repeat(4, auto);
     }
 
-    /* Boxed, the long-term span ends on each column's fourth child. */
-    &.fuel-boxed.span-long .fuel-columns > :nth-child(7n + 4) {
-        border-bottom-width: 1px;
-        border-radius: 0 0 8px 8px;
-        padding-bottom: var(--dovoz-pad-y);
-    }
-
+    /* On a desktop a chart takes three quarters of its column's width. */
     @media (min-width: 768px) {
         .fuel-figure > * {
-            width: calc(var(--dovoz-chart-fraction, 0.75) * 100%);
+            width: 75%;
         }
     }
 
-    /* Columns as boxes (CFG.fuelBoxed). The column is no element of its own —
-       its seven children sit straight in the grid — so the box is drawn on
-       them: side borders on each, the top on the heading, the bottom on the
-       last chart, and their vertical margins turned into padding so the sides
-       run unbroken. */
-    &.fuel-boxed .fuel-columns {
-        // Boxes sit as far apart as the KPI panels above them.
-        column-gap: var(--dovoz-gap);
-
-        > * {
-            border: var(--dovoz-border);
-            border-width: 0 1px;
-            padding-left: var(--dovoz-pad-x);
-            padding-right: var(--dovoz-pad-x);
-        }
-
-        > .fuel-head {
-            border-top-width: 1px;
-            border-radius: 8px 8px 0 0;
-            margin-bottom: 0;
-            padding-top: var(--dovoz-pad-y);
-            padding-bottom: 12px;
-        }
-
-        > .fuel-figure {
-            margin-top: 0;
-            padding-top: 24px;
-        }
-
-        > .fuel-figure[data-span="long"] + .fuel-figure[data-span="long"],
-        > .fuel-figure[data-span="recent"] + .fuel-figure[data-span="recent"] {
-            padding-top: var(--dovoz-chart-gap);
-        }
-
-        > :nth-child(7n) {
-            border-bottom-width: 1px;
-            border-radius: 0 0 8px 8px;
-            padding-bottom: var(--dovoz-pad-y);
-        }
-    }
-
-    /* …and with CFG.fuelBoxColored, the border in each fuel's colour (set on
-       <body> by drawAll): the first seven children are ropa's, the rest plyn's. */
-    &.fuel-boxed.fuel-box-colored .fuel-columns {
-        > :nth-child(-n + 7) {
-            border-color: var(--dovoz-color-ropa);
-        }
-
-        > :nth-child(n + 8) {
-            border-color: var(--dovoz-color-plyn);
-        }
-    }
-
-    /* A chart's name, with its toggle at the far right when it has one. The
-       toggles keep their one line; a long title wraps in what is left. */
+    /* A chart's name; a long title wraps. */
     .chart-head {
         display: flex;
         align-items: baseline;
@@ -265,13 +200,7 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
-    /* Toggles above a chart, kept quiet: small checkboxes in the axis grey. */
-    .chart-toggles {
-        display: flex;
-        flex: none;
-        gap: 12px;
-    }
-
+    /* A checkbox, kept quiet: small, in the axis grey. */
     .chart-toggle {
         display: inline-flex;
         flex: none;
@@ -311,22 +240,6 @@ body.dovoz-fosilnich-paliv {
             font-size: var(--dovoz-text-size);
             color: #515b66;
         }
-    }
-
-    /* "pod sebou" sits under "zvlášť po zemích", whose option it is, and
-       shows only while that is on; hidden, it keeps its room. */
-    .chart-toggles--sub {
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 12px;
-    }
-
-    .chart-toggle--sub {
-        grid-column: 2;
-    }
-
-    &:not(.tiles-minis) .chart-toggle--sub {
-        visibility: hidden;
     }
 
     /* ── KPI heading ───────────────────────────────────────────────────────── */
@@ -385,21 +298,12 @@ body.dovoz-fosilnich-paliv {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     }
 
-    /* Explains a band whose label alone would mislead; sits under the chart it
-       belongs to, inside the same panel. */
-    .chart-note {
-        margin: 8px 0 0;
-        font-size: var(--dovoz-note-size);
-        line-height: 1.45;
-        color: #a0aec0;
-    }
-
-    /* ── Small multiples (the "zvlášť po zemích" toggles) ─────────────────── */
-    /* A .fuel-plot holds a whole chart and its tiles; data-tiles names the
-       toggle, and drawAll sets body.tiles-<toggle> while it is on. The whole
-       chart stays laid out, only hidden, and the tiles are drawn over its box —
-       so switching never changes the figure's height and the page does not
-       jump. tiles() in the script sets the grid's height and the margins. */
+    /* ── The explorer by country ("každá země ve vlastním grafu") ─────────── */
+    /* A .fuel-plot holds the whole chart and its tiles; drawAll sets
+       body.tiles-toolTiles while they are on. The whole chart stays laid out,
+       only hidden, and the tiles are drawn over its box — so switching never
+       changes the figure's height and the page does not jump. tiles() in the
+       script sets the grid's height, columns and the margins. */
     .fuel-plot {
         position: relative;
 
@@ -408,10 +312,7 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
-    &.tiles-toolTiles [data-tiles="toolTiles"],
-    &.tiles-yearSpendByCountry [data-tiles="yearSpendByCountry"],
-    &.tiles-minis [data-tiles="minis"],
-    &.tiles-spendByCountry [data-tiles="spendByCountry"] {
+    &.tiles-toolTiles [data-tiles="toolTiles"] {
         .whole {
             visibility: hidden;
         }
@@ -421,17 +322,14 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
-    /* Three tiles to a row; the first in each row is wider by its axis, so
-       all plots are equally wide: 18px = 36px axis margin − 6px edge margin
-       − 12px gap (MINI_AXIS and MINI_EDGE in the script). */
+    /* The first tile in each row is wider by its axis, so all plots are
+       equally wide (MINI_AXIS and MINI_EDGE in the script). */
     .mini-grid {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         display: grid;
-        grid-template-columns: 18px repeat(3, minmax(0, 1fr));
-        grid-template-rows: repeat(2, minmax(0, 1fr));
         gap: 4px 12px;
 
         > .mini-first {
@@ -689,7 +587,8 @@ body.dovoz-fosilnich-paliv {
         white-space: nowrap;
     }
 
-    .chart-download {
+    .chart-download,
+    .chart-download-csv {
         background: none;
         border: none;
         padding: 0;

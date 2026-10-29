@@ -2,9 +2,25 @@
  * dovoz-fosilnich-paliv.js — charts for
  * collections/_studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.md
  *
- * Reads the ČSÚ exports in assets-local/files/dovoz-fosilnich-paliv/ straight
- * from the browser and aggregates them here, so the CSVs are the only copy of
- * the numbers — drop a newer export in and the page follows.
+ * Data: assets-local/files/dovoz-fosilnich-paliv/*.csv, as the analyst
+ * delivers them — keep the file and column names. Read straight from the
+ * browser and aggregated here, so the CSVs are the only copy of the numbers:
+ * drop a newer delivery in and the page follows.
+ *   imports-annual.csv      ČSÚ, statistika zahraničního obchodu, dovoz podle
+ *   imports-monthly.csv     země původu, by year and by month from 1999:
+ *                           commodity (crude_oil, natural_gas), country_code
+ *                           (ISO 2; _RESIDUAL, QU, QV = unattributed), mass_kg,
+ *                           value_mil_czk (customs value). One export, so the
+ *                           two are checked against each other on load;
+ *                           mass_kg is blank in 2006–2008.
+ *   benchmarks-monthly.csv  World Bank Pink Sheet, monthly Brent (US$/bbl) and
+ *                           European gas (US$/MMBtu, TTF from April 2015), with
+ *                           the ČNB's monthly average US$ rate
+ *   gdp.csv                 ČSÚ, nominal GDP, mil. Kč
+ *   msmt.csv, sfdi.csv      the education ministry's and the transport
+ *                           infrastructure fund's spending, mld. Kč — the KPI
+ *                           GDP chart's comparisons
+ *   defense.csv             defence spending; delivered, not drawn
  *
  * Charts are the shared FoK library (assets-local/charts/), whose `width` option
  * is the viewBox width. Per ai-prototyping-guidelines.md that has to match the
@@ -13,57 +29,42 @@
  * That is also what keeps the text readable once the panels stack on a phone.
  */
 
-// The look of the charts, in one place. With ?dev=1 the tuning sidebar
-// (dovoz-dev-sidebar.js) writes into this object and calls DOVOZ_REDRAW, so it
-// lives outside the DOMContentLoaded handler: the sidebar reads it on load.
-window.DOVOZ_CFG = {
-  // The two fuels, wherever they are drawn side by side.
-  colorRopa: '#813751',
-  colorPlyn: '#d4a1a1',
-  colorTotal: '#3e3e4c',   // the line along the top of every by-country stack
-  colorGdp: '#a13f54',     // KPI GDP chart: the imports' line
-  showDefense: false,      // GDP chart: defence spending as a faint line, for scale
-  gdpFirst: false,         // KPI row: the GDP share first, ahead of the spending
-  kpiUnitInline: true,     // KPI row: each axis' unit after its top label ("350 mld. Kč")
-  colorDefense: '#d0d9e1',
-  showMsmt: true,          // GDP chart: the education ministry's spending (MŠMT)
-  colorMsmt: '#9aa5b1',
-  showSfdi: true,          // GDP chart: the transport infrastructure fund's (SFDI)
-  colorSfdi: '#9aa5b1',
-  compareDash: '8 2',      // GDP chart: the comparisons' dashes, dash and gap 4 : 1
-  // Suppliers, keyed by the slugs in the country tables below, so a country
-  // reads the same in every chart. Grey is reserved for Ostatní, so no named
-  // band can be mistaken for the leftovers.
-  rusko: '#db4d43',
-  azerbajdzan: '#f59c70',
-  kazachstan: '#fbd189',
-  norsko: '#35759c',
-  saudska_arabie: '#c19753',
-  usa: '#92cbc1',
-  ostatni: '#c7ccd1',
-  chartHeight: 260,        // px, every chart but the KPI row's
-  kpiPlotHeight: 254,      // px, the KPI charts' plot alone, margins aside (1.2 × the 212 it was)
-  chartFraction: 0.75,     // fuel columns, desktop: a chart's share of its column's width
-  fuelBoxed: false,        // fuel columns drawn as boxes
-  fuelBoxColored: false,   // …with the border in the fuel's colour
-  barPadding: 0.2,         // gap between bars (0-1)
-  lineWidth: 2,            // line charts
-  areaOpacity: 0.6,        // fill under the small multiples' lines
-  showBenchmarks: false,   // price charts: Brent / TTF exchange prices, dashed in their fuel's colour
-  gasGCV: true,            // gas prices per MWh of gross calorific value, as gas is quoted
-  toolAspect: 0.5,         // the explorer's chart, legend included: height ÷ width (2:1)
-  titleSize: 16,           // chart titles drawn by the library
-  axisSize: 12,            // axis ticks, units and legends
-  axisTextColor: '#53616e',
-  gridColor: '#e8eef6',
-};
-
 document.addEventListener('DOMContentLoaded', () => {
-  const CFG = window.DOVOZ_CFG;
+  // The look of the charts, in one place.
+  const CFG = {
+    // The two fuels, wherever they are drawn side by side.
+    colorRopa: '#813751',
+    colorPlyn: '#d4a1a1',
+    colorTotal: '#3e3e4c',   // the line along the top of every by-country stack
+    colorGdp: '#a13f54',     // KPI GDP chart: the imports' line
+    colorCompare: '#9aa5b1', // GDP chart's comparisons (MŠMT, SFDI) and the explorer's context lines
+    compareDash: '8 2',      // …their dashes, dash and gap 4 : 1
+    // Suppliers, keyed by the slugs in the country tables below, so a country
+    // reads the same in every chart. Grey is reserved for Ostatní, so no named
+    // band can be mistaken for the leftovers.
+    rusko: '#db4d43',
+    azerbajdzan: '#f59c70',
+    kazachstan: '#fbd189',
+    norsko: '#35759c',
+    saudska_arabie: '#c19753',
+    usa: '#92cbc1',
+    ostatni: '#c7ccd1',
+    chartHeight: 260,        // px, every chart but the KPI row's
+    kpiPlotHeight: 254,      // px, the KPI charts' plot alone, margins aside
+    barPadding: 0.2,         // gap between bars (0-1)
+    lineWidth: 2,            // line charts
+    areaOpacity: 0.6,        // fill under the small multiples' lines
+    gasGCV: true,            // gas prices per MWh of gross calorific value, as gas is quoted
+    toolAspect: 0.5,         // the explorer's chart, legend included: height ÷ width (2:1)
+    titleSize: 16,           // chart titles drawn by the library
+    axisSize: 12,            // axis ticks, units and legends
+    axisTextColor: '#53616e',
+    gridColor: '#e8eef6',
+  };
+
   const DATA = '/assets-local/files/dovoz-fosilnich-paliv';
-  // The source runs 1999–2026, but 2026 is a part-year (its monthly companion
-  // stops at month 7) and has no GDP figure, so it would read as a collapse in
-  // imports. Widen this once the year closes.
+  // The source runs 1999–2026, but 2026 is a part-year and has no GDP figure,
+  // so the KPI row stops at the last complete year. Move this once it closes.
   const YEAR_FROM = 2017;
   const YEAR_TO   = 2025;
 
@@ -119,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mass_kg: d.mass_kg ? +d.mass_kg : 0,
     value_mil_czk: d.value_mil_czk ? +d.value_mil_czk : 0,
   });
-  // The same export cut by month, for the exploration.
+  // The same export cut by month, for the latest 36 months and the explorer.
   const monthlyRow = d => ({ ...importRow(d), month: +d.month });
 
   const years = d3.range(YEAR_FROM, YEAR_TO + 1);
@@ -149,13 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return out;
   }
 
-  /** Spending in mld. Kč, split the same way. */
-  function czkByCountry(rows, codes) {
-    const out = Object.fromEntries(keysOf(codes).map(k => [k, 0]));
-    rows.forEach(d => { out[(codes[d.country_code] ?? OSTATNI)[0]] += d.value_mil_czk / 1000; });
-    return out;
-  }
-
   /** Average import price in Kč/MWh: what was paid over the energy that came,
    *  overall (`prumer`) and per country. Under `minMWh` it is NaN — a small
    *  consignment's unit value says nothing about a price — which the line
@@ -180,13 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
     d3.csv(`${DATA}/imports-annual.csv`, importRow),
     d3.csv(`${DATA}/imports-monthly.csv`, monthlyRow),
     d3.csv(`${DATA}/gdp.csv`, d => [+d.year, +d.value_mil_czk]),
-    d3.csv(`${DATA}/defense.csv`, d => [+d.year, +d.total_mld_czk]),
     d3.csv(`${DATA}/msmt.csv`, d => [+d.year, +d.total_mld_czk]),
     d3.csv(`${DATA}/sfdi.csv`, d => [+d.year, +d.total_mld_czk]),
     d3.csv(`${DATA}/benchmarks-monthly.csv`, d => ({
       year: +d.year, month: +d.month, brent: +d.brent_usd_bbl, ttf: +d.ttf_usd_mmbtu, usd: +d.usd_czk,
     })),
-  ]).then(([imports, monthly, gdp, defense, msmt, sfdi, benchmarks]) => {
+  ]).then(([imports, monthly, gdp, msmt, sfdi, benchmarks]) => {
     const ofFuel = c => imports.filter(d => d.commodity === c);
     // Spending runs on to the newest year in the export, part-year included:
     // the fuel columns draw that year's bar as an outline. Imports stop at
@@ -202,7 +195,6 @@ document.addEventListener('DOMContentLoaded', () => {
       energie: energyByCountry(ofFuel('natural_gas'), PLYN),
     };
     const gdpByYear = new Map(gdp);
-    const defenseByYear = new Map(defense);
     const msmtByYear = new Map(msmt);
     const sfdiByYear = new Map(sfdi);
 
@@ -214,9 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
         plyn_czk_mld: plyn.czk[i].czk_mld,
         total_czk_mld: total,
         gdp_share_pct: 100 * total * 1000 / gdpByYear.get(year),
-        // Comparisons over the same GDP, so every line shares a base: defence,
-        // the education ministry (MŠMT) and the transport infrastructure fund (SFDI).
-        defense_pct: 100 * defenseByYear.get(year) * 1000 / gdpByYear.get(year),
+        // Comparisons over the same GDP, so every line shares a base: the
+        // education ministry (MŠMT) and the transport infrastructure fund (SFDI).
         msmt_pct: 100 * msmtByYear.get(year) * 1000 / gdpByYear.get(year),
         sfdi_pct: 100 * sfdiByYear.get(year) * 1000 / gdpByYear.get(year),
       };
@@ -228,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .forEach(y => console.warn(`dovoz: no GDP for ${y}`));
 
     // The two import files are one export. Replace one without the other and
-    // the exploration would quietly disagree with the charts above it.
+    // the months would quietly disagree with the years.
     const massBy = rows => d3.rollup(rows, rs => d3.sum(rs, d => d.mass_kg),
       d => `${d.commodity} ${d.year}`);
     const [annualKg, monthlyKg] = [massBy(imports), massBy(monthly)];
@@ -254,16 +245,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setText('kpi-gdp',    fokFormatNumber(lastOf(payments).gdp_share_pct, 1) + ' % HDP');
     setText('kpi-energy', fokFormatNumber(totalPJ(lastOf(energie)), 0) + ' PJ');
 
-    // Rebuilt from CFG on every draw, so the tuning sidebar's changes show.
-    let theme;
-    const makeTheme = () => ({
+    const theme = {
       ...FoKTheme,
       colors:   { ...FoKTheme.colors, grey: CFG.axisTextColor },
       fontSize: { ...FoKTheme.fontSize, title: CFG.titleSize, axisLabel: CFG.axisSize },
       axis:     { ...FoKTheme.axis, gridColor: CFG.gridColor },
       bar:      { ...FoKTheme.bar, padding: CFG.barPadding },
       line:     { ...FoKTheme.line, strokeWidth: CFG.lineWidth },
-    });
+    };
     // A line chart takes its colour from categorical[0], not from colors.primary.
     const lineTheme = c => ({
       ...theme,
@@ -341,16 +330,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // the line is for. Same shape as the default — topmost band first — then,
     // where both fuels are stacked together, the split the stack hides, because
     // the bands answer "from where" and say nothing about which fuel. `when`
-    // names the row: a year here, a month in the exploration. With `share`
-    // the bands are the chart's percentages; the total stays in PJ. `fmt`
-    // writes a value in the chart's unit; with `pct` each band also gets its
-    // share of the row's total, "(57 %)".
-    const bandsTip = (codes, when, { share = false, fmt = pj, pct = false } = {}) => {
+    // names the row: a year or a month. `fmt` writes a value in the chart's
+    // unit; with `pct` each band also gets its share of the row's total, "(57 %)".
+    const bandsTip = (codes, when, { fmt = pj, pct = false } = {}) => {
       const keys = keysOf(codes), colors = colorsOf(codes), labels = labelsOf(codes);
       return row => head(when(row))
         + keys.slice().reverse().map(k =>
             `<span style="color:${colors[k]}">■</span> `
-            + plain(`${labels[k]}: ${share ? fokFormatNumber(row[k], 0) + ' %' : fmt(row[k])}`
+            + plain(`${labels[k]}: ${fmt(row[k])}`
               + (pct ? ` (${fokFormatNumber(100 * row[k] / totalPJ(row), 0)} %)` : ''))).join('<br>')
         + `<div style="font-family:${theme.font};margin-top:4px;padding-top:4px;`
         + `border-top:1px solid ${theme.colors.gridLine}">`
@@ -419,15 +406,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // edge (lastYear, where the grid lines end).
     const russiaEndNote = (sel, textY) => arrowsFor(sel, { textEnd: [lastYear, textY], side: 'left', textGap: 0 });
 
-    // By year, on the axis ropa and plyn share (maxPJ). With
-    // toggles.share, each year's imports as 100 %: the split by country
-    // without the swings in volume. The total line would sit on the top edge.
+    // By year, on the axis ropa and plyn share (maxPJ).
     // The part-year's estimate is the total alone (estimate): its row is all
     // gaps, so the stack stops at the last full year and the hover still
     // reaches it; over it, an area hatched in the grid lines' colour up to the
     // estimate, the total line dashed in to its top, as thick as the solid.
     const fuelEnergy = (sel, rows, codes, extra) => {
-      const est = !toggles.share && estimate(codes === ROPA ? 'crude_oil' : 'natural_gas');
+      const est = estimate(codes === ROPA ? 'crude_oil' : 'natural_gas');
       const gaps = est && { year: est.year, estimate: true,
         ...Object.fromEntries([...keysOf(codes), 'ropa_pj', 'plyn_pj'].map(k => [k, NaN])) };
       const bands = bandsTip(codes, row => row.year, { pct: true });
@@ -438,10 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
         xDomain: [YEAR_FROM, lastYear], xTickValues: colTicks(sel),
         tooltipHtml: row => row.estimate ? tip : bands(row),
         ...extra,
-        ...(toggles.share && {
-          proportional: true, totalLine: null, yLabel: '% dovozu', yTickValues: undefined,
-          yFormat: v => `${v} %`, tooltipHtml: bandsTip(codes, row => row.year, { share: true }),
-        }),
       });
       return w => {
         const chart = draw(w);
@@ -457,11 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     };
 
-    // Reader toggles above the column charts. Each kind is one setting for both
-    // fuels — every checkbox of a kind follows — so the columns stay comparable
-    // row by row.
-    const toggles = { yearSpendByCountry: false, minis: false, minisRows: false, share: false, spendByCountry: false, priceByCountry: false };
-
     // The span selector above the fuel columns: the long-term charts or the
     // latest 36 months', in both columns at once.
     let span = 'long';
@@ -472,18 +448,6 @@ document.addEventListener('DOMContentLoaded', () => {
       drawAll();
     }));
 
-    // Small multiples, behind the "zvlášť po zemích" toggles: one small chart
-    // per country, so a band a stack squeezes between others reads on its own.
-    // They are drawn over the whole chart's own box, which stays laid out
-    // (hidden, not removed), so switching never changes the page's height. At
-    // most six, three to a row in two rows — ropa's seven bands lose Ostatní —
-    // at the height of the shorter of the two fuels' boxes, so the tiles match
-    // across the columns. One scale for every country of both fuels; only the
-    // first tile of a row labels it. `drawTile(node, key, tile)` draws one.
-    // Left margins of the first tile and the rest. The grid's first column is
-    // their difference less the column gap, so every plot is equally wide:
-    // keep `grid-template-columns` in .mini-grid in step.
-    const MINI_AXIS = 36, MINI_EDGE = 6;
     // Each name in its country's colour, darkened in the same hue only as far
     // as it takes to read on white (4.5:1): the pale ones — Kazachstán, USA,
     // Ostatní — would all but vanish as text.
@@ -497,18 +461,28 @@ document.addEventListener('DOMContentLoaded', () => {
       while (1.05 / (luminance(hsl) + 0.05) < 4.5 && hsl.l > 0) hsl = d3.hsl(hsl.h, hsl.s, hsl.l - 0.02);
       return hsl.formatHex();
     };
-    // `perRow` and `max` default to the columns' three and six; the explorer,
-    // a full row wide, takes four and eight. Over `max`, Ostatní goes first.
-    const tiles = (sel, boxSels, codes, drawTile, { perRow = 3, max = 6 } = {}) => {
+
+    // The explorer by country, "každá země ve vlastním grafu": drawn over the
+    // whole chart's box, which stays laid out (hidden, not removed), so
+    // switching never changes the page's height.
+    //
+    // Small multiples: one small chart per country, so a band a stack squeezes
+    // between others reads on its own. Four to a row, at most eight — over
+    // that, Ostatní goes first. One scale for every tile; only the first tile
+    // of a row labels it. `drawTile(node, key, tile)` draws one.
+    // Left margins of the first tile and the rest. The grid's first column is
+    // their difference less the column gap, so every plot is equally wide.
+    const MINI_AXIS = 36, MINI_EDGE = 6, PER_ROW = 4, MAX_TILES = 8;
+    const tiles = (sel, boxSel, codes, drawTile) => {
       const grid = d3.select(sel).html('');
       let keys = keysOf(codes);
-      if (keys.length > max) keys = keys.filter(k => k !== OSTATNI[0]).slice(0, max);
-      grid.style('height', d3.min(boxSels, s => document.querySelector(s).getBoundingClientRect().height) + 'px')
-        .style('grid-template-columns', `${MINI_AXIS - MINI_EDGE - 12}px repeat(${perRow}, minmax(0, 1fr))`)
-        .style('grid-template-rows', `repeat(${Math.ceil(keys.length / perRow)}, minmax(0, 1fr))`);
+      if (keys.length > MAX_TILES) keys = keys.filter(k => k !== OSTATNI[0]).slice(0, MAX_TILES);
+      grid.style('height', document.querySelector(boxSel).getBoundingClientRect().height + 'px')
+        .style('grid-template-columns', `${MINI_AXIS - MINI_EDGE - 12}px repeat(${PER_ROW}, minmax(0, 1fr))`)
+        .style('grid-template-rows', `repeat(${Math.ceil(keys.length / PER_ROW)}, minmax(0, 1fr))`);
       const colors = colorsOf(codes), labels = labelsOf(codes);
       keys.forEach((k, i) => {
-        const first = i % perRow === 0;
+        const first = i % PER_ROW === 0;
         const cell = grid.append('div').classed('mini-first', first);
         const label = cell.append('div').attr('class', 'mini-label')
           .style('color', readable(colors[k])).text(labels[k]).node();
@@ -523,20 +497,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
 
-    // "Zvlášť po zemích" for columns: one row per country, stacked in a single
-    // chart over the whole chart's box — the biggest supplier at the bottom,
-    // Ostatní on top (it is no country). Every bar is drawn to the whole chart's
-    // own scale, so a column of bars down the rows adds up to that period's
-    // stacked bar; each row is as tall as its country's highest bar, not one
-    // height for all. The countries peak at different times, so the rows can
-    // need more room than the box: then the chart grows rather than shrinking
-    // the scale. `o.plotH` and `o.top` are the whole chart's plot height and
-    // the top of its axis, taken as given, as the charts take it. With
-    // `o.area` the rows are areas over `o.xDomain`, as in the imports chart.
-    const countryRows = (sel, boxSels, data, codes, o) => {
+    // Spending: one row of columns per country, stacked in a single chart —
+    // the biggest supplier at the bottom, Ostatní on top (it is no country).
+    // Every bar is drawn to the whole chart's own scale, so a column of bars
+    // down the rows adds up to that period's stacked bar; each row is as tall
+    // as its country's highest bar, not one height for all. The countries
+    // peak at different times, so the rows can need more room than the box:
+    // then the chart grows rather than shrinking the scale. `o.plotH` and
+    // `o.top` are the whole chart's plot height and the top of its axis.
+    const countryRows = (sel, boxSel, data, codes, o) => {
       const box = d3.select(sel).html('')
         .style('grid-template-columns', '1fr').style('grid-template-rows', '1fr');
-      const boxH = Math.round(d3.min(boxSels, s => document.querySelector(s).getBoundingClientRect().height));
+      const boxH = Math.round(document.querySelector(boxSel).getBoundingClientRect().height);
       const W = Math.round(box.node().getBoundingClientRect().width);
       const colors = colorsOf(codes), labels = labelsOf(codes);
       const total = k => d3.sum(data, d => d[k]);
@@ -544,8 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .sort((a, b) => total(b) - total(a)).concat(OSTATNI[0]);
       const ctx = document.createElement('canvas').getContext('2d');
       ctx.font = `600 ${theme.fontSize.axisLabel}px Roboto, sans-serif`;
-      // An area runs to the plot's edge, and so does its last year's label.
-      const m = { top: 24, right: o.area ? theme.margins.right : 8, bottom: 32, left: Math.ceil(d3.max(keys, k => ctx.measureText(labels[k]).width)) + 12 };
+      const m = { top: 24, right: 8, bottom: 32, left: Math.ceil(d3.max(keys, k => ctx.measureText(labels[k]).width)) + 12 };
       const perUnit = o.plotH / o.top;
       // A row: its tallest bar, never less than its name needs, and a gap above.
       const rowHs = keys.map(k => Math.max(perUnit * (d3.max(data, d => d[k]) || 0), 14) + 8);
@@ -553,9 +524,8 @@ document.addEventListener('DOMContentLoaded', () => {
       box.style('height', H + 'px');
       box.node().closest('.fuel-plot').style.minHeight = H > boxH ? H + 'px' : '';
       const inner = { w: W - m.left - m.right, h: H - m.top - m.bottom };
-      const x = o.area ? d3.scaleLinear(o.xDomain, [0, inner.w])
-        : d3.scaleBand(data.map(o.key), [0, inner.w])
-          .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
+      const x = d3.scaleBand(data.map(o.key), [0, inner.w])
+        .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
       const svg = fokResponsiveSVG(box, `0 0 ${W} ${H}`);
       const g = svg.append('g').attr('transform', `translate(${m.left},${m.top})`);
       g.append('text').attr('class', 'fok-axis-label')
@@ -570,41 +540,13 @@ document.addEventListener('DOMContentLoaded', () => {
         row.append('text').attr('x', -8).attr('y', -2).attr('text-anchor', 'end')
           .attr('fill', readable(colors[k])).attr('font-family', theme.font)
           .attr('font-size', theme.fontSize.axisLabel).attr('font-weight', 600).text(labels[k]);
-        if (o.area) {
-          // Area and line as in the small multiples; hovering a row marks the
-          // nearest year.
-          const y = d => -perUnit * d[k];
-          row.append('path').datum(data).attr('fill', colors[k]).attr('opacity', CFG.areaOpacity)
-            .attr('d', d3.area().x(d => x(o.key(d))).y0(0).y1(y));
-          row.append('path').datum(data).attr('fill', 'none').attr('stroke', colors[k])
-            .attr('stroke-width', CFG.lineWidth).attr('stroke-linejoin', 'round')
-            .attr('d', d3.line().x(d => x(o.key(d))).y(y));
-          const dot = row.append('circle').attr('r', 3.5).attr('fill', colors[k]).attr('opacity', 0);
-          row.append('rect').attr('y', -rowHs[i]).attr('width', inner.w).attr('height', rowHs[i])
-            .attr('fill', 'transparent')
-            .on('mousemove', event => {
-              const mx = d3.pointer(event)[0];
-              const d = data[d3.leastIndex(data, r => Math.abs(x(o.key(r)) - mx))];
-              dot.attr('cx', x(o.key(d))).attr('cy', y(d)).attr('opacity', 1);
-              tip.show(head(o.label(d)) + plain(`${labels[k]}: ${o.fmt(d[k])}`)); tip.move(event);
-            })
-            .on('mouseleave', () => { dot.attr('opacity', 0); tip.hide(); });
-          base -= rowHs[i];
-          return;
-        }
         row.selectAll('rect').data(data).join('rect')
           .attr('x', d => x(o.key(d))).attr('width', x.bandwidth())
           .attr('y', d => -perUnit * d[k]).attr('height', d => perUnit * d[k])
-          .attr('fill', d => o.partial?.(d) ? '#fff' : colors[k])
-          .attr('fill-opacity', d => o.partial?.(d) ? 0 : null)
+          .attr('fill', colors[k])
           .on('mouseover', (event, d) => { tip.show(head(o.label(d)) + plain(`${labels[k]}: ${o.fmt(d[k])}`)); tip.move(event); })
           .on('mousemove', event => tip.move(event))
-          .on('mouseleave', () => tip.hide())
-          // A part-year: the empty bar keeps the hover, stripes over it.
-          .filter(d => o.partial?.(d)).each(function() {
-            const b = this.getBBox();
-            fokHatch(row, b.x, b.y, b.width, b.height, colors[k]).attr('opacity', 0.5);
-          });
+          .on('mouseleave', () => tip.hide());
         base -= rowHs[i];
       });
       g.append('g').attr('class', 'fok-axis fok-axis--x').attr('transform', `translate(0,${inner.h})`)
@@ -612,54 +554,6 @@ document.addEventListener('DOMContentLoaded', () => {
       fokMarkers(g, o.markers, mk => x(mk.band) == null ? null : x(mk.band) + (mk.offset ?? 0.5) * x.bandwidth(), inner, theme);
       return svg;
     };
-
-    // Dovoz: an area per country, in PJ or, with the 100 % toggle, as shares
-    // of each year's imports.
-    const miniMax = Math.ceil(d3.max([[ropa.energie, ROPA], [plyn.energie, PLYN]],
-      ([rows, codes]) => d3.max(rows, r => d3.max(keysOf(codes), k => r[k]))) / 50) * 50;
-    const minis = (sel, rows, codes) => () => {
-      const share = toggles.share;
-      const top = share ? 100 : miniMax;
-      const value = share ? (d, k) => 100 * d[k] / totalPJ(d) : (d, k) => d[k];
-      const fmt = share ? v => `${fokFormatNumber(v, 0)} %` : pj;
-      if (toggles.minisRows) {
-        const data = share ? rows.map(d => ({ ...d, ...Object.fromEntries(keysOf(codes).map(k => [k, value(d, k)])) })) : rows;
-        countryRows(sel, ['#chart-ropa-energie', '#chart-plyn-energie'], data, codes, {
-          area: true, key: d => d.year, xDomain: [YEAR_FROM, lastYear],
-          plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: share ? 100 : maxPJ,
-          unit: share ? '% dovozu' : 'PJ', fmt, label: d => yearName(d.year),
-          ticks: colTicks(sel), tickFormat: String,
-        });
-        return;
-      }
-      tiles(sel, ['#chart-ropa-energie', '#chart-plyn-energie'], codes, (node, k, t) => {
-        fokLineChart(node, rows, {
-          x: d => d.year, y: d => value(d, k), area: true, areaOpacity: CFG.areaOpacity,
-          yLabel: t.first ? (share ? '%' : 'PJ') : undefined,
-          width: t.width, height: t.height, margins: t.margins,
-          theme: lineTheme(t.color),
-          yDomain: [0, top], yTickValues: [0, top], yFormat: t.yFormat,
-          xDomain: [YEAR_FROM, lastYear], xTickValues: [YEAR_FROM, lastYear], xFormat: String,
-          tooltipHtml: d => head(d.year) + plain(`${t.label}: ${fmt(value(d, k))}`),
-        });
-        // The two year labels sit on the plot's edges; anchored inward, they
-        // stay inside the tile instead of running into the next one.
-        d3.select(node).selectAll('.fok-axis--x .tick text')
-          .attr('text-anchor', (_, i, all) => i === 0 ? 'start' : i === all.length - 1 ? 'end' : 'middle');
-      });
-    };
-
-    // Výdaje by year, per country: a row per country (countryRows), the
-    // part-year hatched as in the whole chart, on the whole chart's scale.
-    const yearCzk = c => toNewest.map(year => ({ year,
-      ...czkByCountry(imports.filter(d => d.commodity === c && d.year === year), c === 'crude_oil' ? ROPA : PLYN) }));
-    const yearCzkRows = { crude_oil: yearCzk('crude_oil'), natural_gas: yearCzk('natural_gas') };
-    const yearSpendRows = (sel, commodity, codes) => () =>
-      countryRows(sel, ['#chart-ropa-czk', '#chart-plyn-czk'], yearCzkRows[commodity], codes, {
-        key: d => String(d.year), plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: maxCzk, unit: 'mld. Kč', fmt: czkMld,
-        label: d => yearName(d.year), partial: d => isPartYear(d.year),
-        ticks: colTicks(sel).map(String),
-      });
 
     // Months: Czech names, and every month of the export from YEAR_FROM.
     const monthFmt = opts => {
@@ -720,8 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ymKey = d => `${d.year}-${d.month}`;
     const recentJanuaries = recent.filter(d => d.month === 1);
 
-    // A column per month in the fuel's colour; toggles.spendByCountry swaps it
-    // for a row per country (countryRows).
+    // A column per month in the fuel's colour.
     const monthCzk = (commodity, year, month) => d3.sum(ofMonth(commodity, year, month), r => r.value_mil_czk) / 1000;
     const spendMonths = (sel, commodity, color, extra) => w => fokBarChart(sel,
       recent.map(d => ({ ...d, key: ymKey(d), czk: monthCzk(commodity, d.year, d.month) })), {
@@ -741,14 +634,6 @@ document.addEventListener('DOMContentLoaded', () => {
       target: ['2026-3', Math.max(11, monthCzk(commodity, 2026, 3))],
       textEnd: ['2026-1', 13.5], side: 'left',
     });
-    const spendRows = (sel, commodity, codes) => () =>
-      countryRows(sel, ['#chart-ropa-czk-mesice', '#chart-plyn-czk-mesice'],
-        recent.map(d => ({ ...d, ...czkByCountry(ofMonth(commodity, d.year, d.month), codes) })), codes, {
-          key: ymKey, plotH: CFG.chartHeight - theme.margins.top - theme.margins.bottom, top: spendTop, unit: 'mld. Kč', fmt: czkMld,
-          label: d => `${monthLong(d.month)} ${d.year}`,
-          ticks: recentJanuaries.map(ymKey), tickFormat: k => k.split('-')[0],
-        });
-
     // Imports per month by country, as the run above draws them, ropa and
     // plyn on one axis (recentTop) like the yearly charts.
     const monthPJ = (commodity, year, month) => d3.sum(ofMonth(commodity, year, month), d => toPJ(d.mass_kg, d.commodity));
@@ -770,24 +655,14 @@ document.addEventListener('DOMContentLoaded', () => {
       textEnd: [2025.25, 0.94 * recentTop], side: 'left',
     });
 
-    // Average import prices, Kč/MWh: by year, to the newest in the export —
-    // an average, unlike a total, reads true for a part-year, whose tooltip
-    // names its months — and for the latest 36 months. One line per fuel;
-    // with toggles.priceByCountry the countries join it, each only where it
-    // brought at least PRICE_MIN_MWH that month (that times the months in a
-    // year). Each chart's axis covers every line both
-    // fuels can show, so the toggle never rescales it; it starts at zero.
+    // Average import prices: by year, to the newest in the export — an
+    // average, unlike a total, reads true for a part-year, whose tooltip
+    // names its months — and for the latest 36 months. One line per fuel, on
+    // its own axis, from zero. By country (the explorer), a country counts
+    // only where it brought at least PRICE_MIN_MWH that month (that times the
+    // months in a year).
     const PRICE_MIN_MWH = 50000;   // 50 GWh
-    const yearPrices = c => toNewest.map(year =>
-      ({ year, ...prices(imports.filter(d => d.commodity === c && d.year === year), c === 'crude_oil' ? ROPA : PLYN,
-        (lastMonth.get(year) ?? 12) * PRICE_MIN_MWH) }));
-    const monthPrices = c => recent.map(d =>
-      ({ ...d, t: d.year + (d.month - 1) / 12, ...prices(ofMonth(c, d.year, d.month), c === 'crude_oil' ? ROPA : PLYN, PRICE_MIN_MWH) }));
-    const priceRows = {
-      years: { crude_oil: yearPrices('crude_oil'), natural_gas: yearPrices('natural_gas') },
-      months: { crude_oil: monthPrices('crude_oil'), natural_gas: monthPrices('natural_gas') },
-    };
-    // Exchange prices for reference (CFG.showBenchmarks), monthly averages:
+    // Exchange prices for reference (the explorer), monthly averages:
     // Brent and TTF from the World Bank's Pink Sheet in US$, at the ČNB's
     // monthly US$ rate (benchmarks-monthly.csv). A barrel of Brent (38° API,
     // ~7.53 bbl/t) at crude's NCV of 42.6 GJ/t holds 1.57 MWh; an MMBtu is
@@ -806,43 +681,26 @@ document.addEventListener('DOMContentLoaded', () => {
       crude_oil: b.brent * b.usd / MWH_PER_BBL,
       natural_gas: b.ttf * b.usd / MWH_PER_MMBTU / NCV_PER_GCV,
     }]));
-    const benchYear = (c, year) => d3.mean(d3.range(1, (lastMonth.get(year) ?? 12) + 1), m => benchMonth.get(`${year}-${m}`)?.[c]);
     const BENCH_NAME = { crude_oil: 'Brent (burza)', natural_gas: 'TTF (burza)' };
 
-    // The rows a price chart draws: ours on the chosen basis, plus the
-    // exchange price when shown.
-    const priceKeys = codes => ['prumer', ...keysOf(codes)];
-    const priceSeries = (kind, commodity, codes) => {
-      const basis = priceBasis(commodity);
-      return priceRows[kind][commodity].map(r => ({
-        ...r,
-        ...Object.fromEntries(priceKeys(codes).map(k => [k, r[k] * basis])),
-        bench: CFG.showBenchmarks
-          ? basis * (kind === 'years' ? benchYear(commodity, r.year) : benchMonth.get(ymKey(r))?.[commodity])
-          : NaN,
-      }));
+    // The fuel columns' price rows: each year's or month's average, in the
+    // fuel's own unit.
+    const priceRows = (kind, c) => {
+      const avg = rs => prices(rs, {}, 1).prumer * priceBasis(c);
+      return kind === 'years'
+        ? toNewest.map(year => ({ year, prumer: avg(imports.filter(d => d.commodity === c && d.year === year)) }))
+        : recent.map(d => ({ ...d, t: d.year + (d.month - 1) / 12, prumer: avg(ofMonth(c, d.year, d.month)) }));
     };
-    // Each fuel's axis covers every line it can show, in its own unit.
-    const priceTop = (kind, commodity, codes) => d3.nice(0,
-      d3.max(priceSeries(kind, commodity, codes), r => d3.max([...priceKeys(codes), 'bench'], k => r[k])), 4)[1];
 
-    const price = (sel, kind, commodity, codes, color) => w => {
-      const split = toggles.priceByCountry;
-      const rows = priceSeries(kind, commodity, codes);
-      const colors = colorsOf(codes), labels = labelsOf(codes);
-      // The exchange price first and the average last, so the reference sits
-      // under everything and the average over the countries.
-      const lines = (CFG.showBenchmarks ? [['bench', BENCH_NAME[commodity], color]] : [])
-        .concat(split ? keysOf(codes).map(k => [k, labels[k], colors[k]]) : [])
-        .concat([['prumer', 'Průměr', split ? CFG.colorTotal : color]]);
-      const top = priceTop(kind, commodity, codes);
+    const price = (sel, kind, commodity, color) => w => {
+      const rows = priceRows(kind, commodity);
+      const top = d3.nice(0, d3.max(rows, r => r.prumer), 4)[1];
       const yearly = kind === 'years';
       const kc = priceFmt(priceUnit(commodity));
-      return fokLineChart(sel, lines.flatMap(([key, series]) => rows.map(r => ({ ...r, series, price: r[key] }))), {
-        multi: true, x: d => yearly ? d.year : d.t, y: d => d.price, legend: lines.length > 1,
-        dashed: series => series === BENCH_NAME[commodity],
+      return fokLineChart(sel, rows, {
+        x: d => yearly ? d.year : d.t, y: d => d.prumer,
         yLabel: priceUnit(commodity), yLabelInline: true, width: w, height: CFG.chartHeight,
-        theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
+        theme: lineTheme(color),
         yDomain: [0, top], yTickValues: d3.ticks(0, top, 4),
         xTickValues: yearly ? colTicks(sel) : recentJanuaries.map(d => d.year),
         xFormat: String,
@@ -850,11 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // A part-year's average is dashed in from the last full year.
         partialAfter: yearly && isPartYear(lastYear) ? lastYear - 1 : undefined,
         tooltipHtml: r => head(yearly ? yearName(r.year) : `${monthLong(r.month)} ${r.year}`)
-          + `<div style="font-family:${theme.font};font-weight:700">Průměr: ${kc(r.prumer)}</div>`
-          + (split ? keysOf(codes).filter(k => Number.isFinite(r[k])).reverse().map(k =>
-              `<span style="color:${colors[k]}">■</span> ` + plain(`${labels[k]}: ${kc(r[k])}`)).join('<br>') : '')
-          + (Number.isFinite(r.bench) ? (split ? '<br>' : '') + `<span style="color:${color}">■</span> `
-              + plain(`${BENCH_NAME[commodity]}: ${kc(r.bench)}`) : ''),
+          + `<div style="font-family:${theme.font};font-weight:700">Průměr: ${kc(r.prumer)}</div>`,
       });
     };
 
@@ -1077,8 +931,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const shown = CONTEXT.filter(e => TOOL[e.option]);
       return shown.map(({ label, date: [y, m, d] }, i) => {
         const text = withLabels ? label : '';
-        const style = { color: CFG.colorMsmt, dash: CFG.compareDash, width: CFG.lineWidth * 0.75,
-          labelColor: readable(CFG.colorMsmt), level: shown.length - 1 - i };
+        const style = { color: CFG.colorCompare, dash: CFG.compareDash, width: CFG.lineWidth * 0.75,
+          labelColor: readable(CFG.colorCompare), level: shown.length - 1 - i };
         const dayOfYear = (Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 864e5;
         if (TOOL.metric !== 'czk') return { ...style, x: y + dayOfYear / 365, label: text };
         return TOOL.step === 'years' ? { ...style, band: String(y), offset: dayOfYear / 365, label: text }
@@ -1193,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ticks = toolTicks('#chart-tool-tiles', v);
         // The rows are one SVG, so the download buttons take them instead.
         d3.select('#tool-svg').attr('id', null);
-        countryRows('#chart-tool-tiles', ['#chart-tool'], rows, v.codes, {
+        countryRows('#chart-tool-tiles', '#chart-tool', rows, v.codes, {
           key: d => d.key, plotH: toolScale.plotH, top: toolScale.top,
           unit, fmt, label: d => d.label, markers: contextMarkers(),
           ticks: TOOL.step === 'years' ? ticks.map(String) : ticks.map(y => `${y}-1`).filter(k => rows.some(r => r.key === k)),
@@ -1201,40 +1055,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }).attr('id', 'tool-svg');
         return;
       }
-      const value = (r, k) => r[k];
       const yTop = d3.nice(0, toolTops(v).tiles || 1, 3)[1];
       const ends = rows.length ? [rows[0], rows[rows.length - 1]] : [];
-      tiles('#chart-tool-tiles', ['#chart-tool'], v.codes, (node, k, t) => {
-        const tip = r => head(r.label) + plain(`${t.label}: ${fmt(value(r, k))}`)
+      tiles('#chart-tool-tiles', '#chart-tool', v.codes, (node, k, t) => {
+        const tip = r => head(r.label) + plain(`${t.label}: ${fmt(r[k])}`)
           + (v.bench && Number.isFinite(r.bench) ? '<br>' + plain(`${BENCH_NAME[v.fuels[0]]}: ${fmt(r.bench)}`) : '');
-        const shared = {
+        const series = v.bench ? [['bench', fuelColor(v.fuels[0])], [k, t.color]] : [[k, t.color]];
+        fokLineChart(node, series.flatMap(([key, ]) => rows.map(r => ({ ...r, series: key, val: r[key] }))), {
           width: t.width, height: t.height, margins: t.margins, yFormat: t.yFormat,
           yLabel: t.first ? unit : undefined, markers: contextMarkers(false), tooltipHtml: tip,
-        };
-        if (TOOL.metric === 'czk') {
-          fokBarChart(node, rows, {
-            ...shared, theme, x: d => d.key, y: d => value(d, k), color: t.color,
-            yDomain: [0, yTop], yTickValues: [0, yTop],
-            xTickValues: ends.map(r => r.key), xFormat: key => key.split('-')[0],
-          });
-        } else {
-          const series = v.bench ? [['bench', fuelColor(v.fuels[0])], [k, t.color]] : [[k, t.color]];
-          fokLineChart(node, series.flatMap(([key, ]) => rows.map(r => ({ ...r, series: key, val: r[key] }))), {
-            ...shared, multi: true, x: d => d.x, y: d => d.val, dashed: series => series === 'bench',
-            area: TOOL.metric === 'energy', areaOpacity: CFG.areaOpacity,
-            theme: { ...theme, colors: { ...theme.colors, categorical: series.map(s => s[1]) } },
-            yDomain: [0, yTop], yTickValues: [0, yTop],
-            xDomain: d3.extent(rows, r => r.x), xTickValues: ends.map(r => r.year), xFormat: String,
-          });
-        }
+          multi: true, x: d => d.x, y: d => d.val, dashed: series => series === 'bench',
+          area: TOOL.metric === 'energy', areaOpacity: CFG.areaOpacity,
+          theme: { ...theme, colors: { ...theme.colors, categorical: series.map(s => s[1]) } },
+          yDomain: [0, yTop], yTickValues: [0, yTop],
+          xDomain: d3.extent(rows, r => r.x), xTickValues: ends.map(r => r.year), xFormat: String,
+        });
+        // The two year labels sit on the plot's edges; anchored inward, they
+        // stay inside the tile instead of running into the next one.
         d3.select(node).selectAll('.fok-axis--x .tick text')
           .attr('text-anchor', (_, i, all) => i === 0 ? 'start' : i === all.length - 1 ? 'end' : 'middle');
-      }, { perRow: 4, max: 8 });
+      });
     };
 
+    // "Stáhnout: CSV" under the explorer: what it shows, as a table — a row
+    // per year or month, a column per series, in the chart's unit. A BOM, so
+    // Excel reads the diacritics as UTF-8.
+    document.getElementById('tool-csv').addEventListener('click', () => {
+      const v = toolView();
+      const { rows, keys, labels, lines, unit } = toolData(v);
+      const byMonth = TOOL.step === 'months';
+      const series = v.price ? lines.map(([k, label]) => [k, label]) : keys.map(k => [k, labels[k]]);
+      const table = [
+        ['rok', ...(byMonth ? ['měsíc'] : []), ...series.map(([, label]) => `${label} [${unit}]`)],
+        ...rows.map(r => [r.year, ...(byMonth ? [r.month] : []),
+          ...series.map(([k]) => Number.isFinite(r[k]) ? +r[k].toFixed(3) : '')]),
+      ];
+      const blob = new Blob(['﻿' + d3.csvFormatRows(table)], { type: 'text/csv;charset=utf-8' });
+      const a = Object.assign(document.createElement('a'),
+        { href: URL.createObjectURL(blob), download: 'dovoz-fosilnich-paliv.csv' });
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href));
+    });
+
     // Each entry draws into its container at that container's own width;
-    // hidden containers measure 0 and are skipped. Built per draw, so the
-    // colours are whatever CFG holds now.
+    // hidden containers measure 0 and are skipped.
     // The KPI cards' legends: above the chart, square swatches, each label in
     // its swatch's colour (darkened where it would not read on white) and a
     // third of a swatch away from it.
@@ -1258,7 +1122,7 @@ document.addEventListener('DOMContentLoaded', () => {
           keys: ['ropa', 'plyn'],
           colors: { ropa: CFG.colorRopa, plyn: CFG.colorPlyn },
           labels: { ropa: 'Ropa', plyn: 'Zemní plyn' },
-          yLabel: 'mld. Kč', yLabelInline: CFG.kpiUnitInline,
+          yLabel: 'mld. Kč', yLabelInline: true,
           width: w, height: kpiHeight(), theme, margins: kpiMargins,
           xTickValues: xTicks.map(String),
           yMax: 400, yTickValues: d3.range(0, 401, 100), yGridValues: d3.range(0, 401, 50),
@@ -1285,20 +1149,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }],
 
       ['#chart-celkem-hdp', w => {
-        // Comparisons switched on in the sidebar join as faint lines for scale —
-        // listed first, so they are drawn behind the imports' line.
+        // Comparisons as faint lines for scale — listed first, so they are
+        // drawn behind the imports' line.
         const lines = [
-          [CFG.showDefense, 'Výdaje na obranu', 'defense_pct', CFG.colorDefense],
-          [CFG.showMsmt, 'Výdaje na školství (rozpočet MŠMT)', 'msmt_pct', CFG.colorMsmt],
-          [CFG.showSfdi, 'Výdaje na dopravní infrastrukturu (rozpočet SFDI)', 'sfdi_pct', CFG.colorSfdi],
-        ].filter(([shown]) => shown).map(([, ...line]) => line)
-          .concat([['Ropa a zemní plyn', 'gdp_share_pct', CFG.colorGdp]]);
-        const compared = lines.length > 1;
+          ['Výdaje na školství (rozpočet MŠMT)', 'msmt_pct', CFG.colorCompare],
+          ['Výdaje na dopravní infrastrukturu (rozpočet SFDI)', 'sfdi_pct', CFG.colorCompare],
+          ['Ropa a zemní plyn', 'gdp_share_pct', CFG.colorGdp],
+        ];
         // Labels on the lines instead of a legend, each where its line has
         // room: imports right of their 2022 peak, level with its top; MŠMT
         // over its line on the left, its halo cutting the line; SFDI under its
         // line on the right (above it runs the imports'). x in years, y in
-        // % HDP: the last row's baseline. Defence has none.
+        // % HDP: the last row's baseline.
         const lineLabels = {
           'Ropa a zemní plyn': { x: 2022.3, y: 4.85, lines: ['**Ropa**', '**a zemní plyn**'] },
           'Výdaje na školství (rozpočet MŠMT)': { x: 2017.45, y: 3.25, lines: ['Výdaje', 'na školství'] },
@@ -1309,15 +1171,15 @@ document.addEventListener('DOMContentLoaded', () => {
           lines.flatMap(([series, field]) => payments.map(d => ({ ...d, series, pct: d[field] }))), {
             multi: true, x: d => d.year, y: d => d.pct, legend: false,
             dashed: series => series !== 'Ropa a zemní plyn', dashArray: CFG.compareDash,
-            lineLabels: Object.fromEntries(lines.filter(([series]) => lineLabels[series])
-              .map(([series, , color]) => [series, { ...lineLabels[series], color: readable(color) }])),
-            yLabel: '% HDP', yLabelInline: CFG.kpiUnitInline,
+            lineLabels: Object.fromEntries(lines.map(([series, , color]) =>
+              [series, { ...lineLabels[series], color: readable(color) }])),
+            yLabel: '% HDP', yLabelInline: true,
             width: w, height: kpiHeight(), margins: kpiMargins,
             theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
             xTickValues: xTicks, xFormat: String,
             yDomain: [0, 5], yTickValues: d3.range(0, 6), yFormat: v => fokFormatNumber(v, 0),
             tooltipHtml: d => head(d.year) + lines.slice().reverse().map(([series, field]) =>
-              plain(`${compared ? series + ': ' : ''}${fokFormatNumber(d[field], 1)} % HDP`)).join('<br>'),
+              plain(`${series}: ${fokFormatNumber(d[field], 1)} % HDP`)).join('<br>'),
           });
       }],
 
@@ -1330,7 +1192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // into its row (levelKpi).
       ['#chart-celkem-energie', energy('#chart-celkem-energie', energie, FOSIL, {
         yMax: 800, yTickValues: d3.range(0, 801, 200), yGridValues: d3.range(0, 801, 100),
-        yLabelInline: CFG.kpiUnitInline, margins: kpiMargins, height: kpiHeight(0),
+        yLabelInline: true, margins: kpiMargins, height: kpiHeight(0),
         legendOptions: { ...kpiLegend, fontSize: 11, itemSpacing: 4, justify: 'space-between' },
       })],
 
@@ -1347,22 +1209,16 @@ document.addEventListener('DOMContentLoaded', () => {
       })],
       ['#chart-plyn-energie', fuelEnergy('#chart-plyn-energie', plyn.energie, PLYN,
         { arrows: russiaEndNote('#chart-plyn-energie', 380) })],
-      ['#chart-ropa-czk-roky', yearSpendRows('#chart-ropa-czk-roky', 'crude_oil', ROPA)],
-      ['#chart-plyn-czk-roky', yearSpendRows('#chart-plyn-czk-roky', 'natural_gas', PLYN)],
-      ['#chart-ropa-mini',    minis('#chart-ropa-mini', ropa.energie, ROPA)],
-      ['#chart-plyn-mini',    minis('#chart-plyn-mini', plyn.energie, PLYN)],
       ['#chart-ropa-czk-mesice',     spendMonths('#chart-ropa-czk-mesice', 'crude_oil', CFG.colorRopa,
         { arrows: hormuzArrow('#chart-ropa-czk-mesice', 'crude_oil') })],
       ['#chart-plyn-czk-mesice',     spendMonths('#chart-plyn-czk-mesice', 'natural_gas', CFG.colorPlyn)],
-      ['#chart-ropa-czk-tiles',      spendRows('#chart-ropa-czk-tiles', 'crude_oil', ROPA)],
-      ['#chart-plyn-czk-tiles',      spendRows('#chart-plyn-czk-tiles', 'natural_gas', PLYN)],
       ['#chart-ropa-energie-mesice', importMonths('#chart-ropa-energie-mesice', 'crude_oil', ROPA)],
       ['#chart-plyn-energie-mesice', importMonths('#chart-plyn-energie-mesice', 'natural_gas', PLYN,
         { arrows: refillArrow('#chart-plyn-energie-mesice') })],
-      ['#chart-ropa-cena',           price('#chart-ropa-cena', 'years', 'crude_oil', ROPA, CFG.colorRopa)],
-      ['#chart-plyn-cena',           price('#chart-plyn-cena', 'years', 'natural_gas', PLYN, CFG.colorPlyn)],
-      ['#chart-ropa-cena-mesice',    price('#chart-ropa-cena-mesice', 'months', 'crude_oil', ROPA, CFG.colorRopa)],
-      ['#chart-plyn-cena-mesice',    price('#chart-plyn-cena-mesice', 'months', 'natural_gas', PLYN, CFG.colorPlyn)],
+      ['#chart-ropa-cena',           price('#chart-ropa-cena', 'years', 'crude_oil', CFG.colorRopa)],
+      ['#chart-plyn-cena',           price('#chart-plyn-cena', 'years', 'natural_gas', CFG.colorPlyn)],
+      ['#chart-ropa-cena-mesice',    price('#chart-ropa-cena-mesice', 'months', 'crude_oil', CFG.colorRopa)],
+      ['#chart-plyn-cena-mesice',    price('#chart-plyn-cena-mesice', 'months', 'natural_gas', CFG.colorPlyn)],
       ['#chart-tool',         toolChart],
       ['#chart-tool-tiles',   toolTiles],
     ];
@@ -1387,32 +1243,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const drawAll = () => {
-      theme = makeTheme();
       // Before measuring: these decide which charts show at all.
-      // A class per reader toggle, for the CSS that swaps a chart for its tiles.
-      Object.entries(toggles).forEach(([key, on]) => document.body.classList.toggle(`tiles-${key}`, on));
       document.body.classList.toggle('tiles-toolTiles', toolView().tiles);
       document.querySelectorAll('.fuel-plot').forEach(p => { p.style.minHeight = ''; });
       document.body.classList.toggle('span-long', span === 'long');
       document.body.classList.toggle('span-recent', span === 'recent');
-      document.body.style.setProperty('--dovoz-chart-fraction', CFG.chartFraction);
-      document.body.classList.toggle('fuel-boxed', CFG.fuelBoxed);
-      document.body.classList.toggle('fuel-box-colored', CFG.fuelBoxColored);
-      document.body.style.setProperty('--dovoz-color-ropa', CFG.colorRopa);
-      document.body.style.setProperty('--dovoz-color-plyn', CFG.colorPlyn);
-      // The KPI row is reordered in the DOM, not with CSS order, so reading
-      // and tabbing follow what is on screen.
-      const kpiRow = document.getElementById('main-charts');
-      const panelOf = id => document.getElementById(id).closest('.chart-panel');
-      kpiRow.insertBefore(panelOf('kpi-gdp'),
-        CFG.gdpFirst ? kpiRow.firstElementChild : panelOf('kpi-total').nextElementSibling);
       charts().forEach(([sel, draw]) => {
         const w = Math.round(document.querySelector(sel).getBoundingClientRect().width);
         if (w > 0) draw(w);
       });
       levelKpi();
     };
-    window.DOVOZ_REDRAW = drawAll;
     // The collapsed explorer has no width, so drawAll skips it; draw it once
     // opened.
     $('#nastroj-collapse').on('shown.bs.collapse', drawAll);

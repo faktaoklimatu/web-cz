@@ -15,7 +15,6 @@ include_in_search: true
 extra-scripts:
 - /assets-local/js/dovoz-fosilnich-paliv.js
 - /assets-local/js/chart-download.js
-- /assets-local/js/dovoz-dev-sidebar.js
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
@@ -84,20 +83,14 @@ extra-scripts:
         <div class="chart-head">
           <h3 class="chart-title" id="chart-ropa-czk-title">Výdaje za ropu</h3>
         </div>
-        <div class="fuel-plot" data-tiles="yearSpendByCountry">
-          <div id="chart-ropa-czk" class="whole"></div>
-          <div id="chart-ropa-czk-roky" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-ropa-czk"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-czk" filename="vydaje-za-ropu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title" id="chart-ropa-energie-title">Dovoz ropy</h3>
         </div>
-        <div class="fuel-plot" data-tiles="minis">
-          <div id="chart-ropa-energie" class="whole"></div>
-          <div id="chart-ropa-mini" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-ropa-energie"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-energie" filename="dovoz-ropy" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
       </div>
       <div class="fuel-figure" data-span="long">
@@ -111,10 +104,7 @@ extra-scripts:
         <div class="chart-head">
           <h3 class="chart-title" id="chart-ropa-czk-mesice-title">Výdaje za ropu za posledních 36 měsíců</h3>
         </div>
-        <div class="fuel-plot" data-tiles="spendByCountry">
-          <div id="chart-ropa-czk-mesice" class="whole"></div>
-          <div id="chart-ropa-czk-tiles" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-ropa-czk-mesice"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-ropa-czk-mesice" filename="vydaje-za-ropu-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek krize|v Hormuzském průlivu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
@@ -144,20 +134,14 @@ extra-scripts:
         <div class="chart-head">
           <h3 class="chart-title" id="chart-plyn-czk-title">Výdaje za zemní plyn</h3>
         </div>
-        <div class="fuel-plot" data-tiles="yearSpendByCountry">
-          <div id="chart-plyn-czk" class="whole"></div>
-          <div id="chart-plyn-czk-roky" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-plyn-czk"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-czk" filename="vydaje-za-zemni-plyn" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Začátek ruské|invaze na Ukrajinu" %}
       </div>
       <div class="fuel-figure" data-span="long">
         <div class="chart-head">
           <h3 class="chart-title" id="chart-plyn-energie-title">Dovoz zemního plynu</h3>
         </div>
-        <div class="fuel-plot" data-tiles="minis">
-          <div id="chart-plyn-energie" class="whole"></div>
-          <div id="chart-plyn-mini" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-plyn-energie"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-energie" filename="dovoz-zemniho-plynu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow="Postupný konec|dovozu z Ruska" %}
       </div>
       <div class="fuel-figure" data-span="long">
@@ -171,10 +155,7 @@ extra-scripts:
         <div class="chart-head">
           <h3 class="chart-title" id="chart-plyn-czk-mesice-title">Výdaje za zemní plyn za posledních 36 měsíců</h3>
         </div>
-        <div class="fuel-plot" data-tiles="spendByCountry">
-          <div id="chart-plyn-czk-mesice" class="whole"></div>
-          <div id="chart-plyn-czk-tiles" class="mini-grid tiles"></div>
-        </div>
+        <div id="chart-plyn-czk-mesice"></div>
         {% include includes-local/dovoz-chart-foot.html chart="chart-plyn-czk-mesice" filename="vydaje-za-zemni-plyn-36-mesicu" source="Zdroj: ČSÚ, statistika zahraničního obchodu" %}
       </div>
       <div class="fuel-figure" data-span="recent">
@@ -194,7 +175,8 @@ extra-scripts:
     </div>
 
     {% comment %} Interaktivní graf: ovládání nastavuje TOOL v dovoz-fosilnich-paliv.js,
-    stahování obstarává chart-download.js podle data-* atributů tlačítek. Rozbalovací
+    stahování PNG/SVG obstarává chart-download.js podle data-* atributů tlačítek,
+    CSV (#tool-csv) skládá dovoz-fosilnich-paliv.js z právě zobrazených dat. Rozbalovací
     jako expander.html z web-core; sbalený se nekreslí, po rozbalení ho překreslí
     DOVOZ_REDRAW. {% endcomment %}
     <div class="tool">
@@ -262,7 +244,8 @@ extra-scripts:
           <span id="tool-source">Zdroj: ČSÚ, statistika zahraničního obchodu (dovoz podle země původu); energie přepočtena výhřevností</span>
           <span class="chart-downloads">Stáhnout:
             <button type="button" class="chart-download" data-format="png" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">PNG</button>,
-            <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">SVG</button>
+            <button type="button" class="chart-download" data-svg="tool-svg" data-filename="dovoz-fosilnich-paliv.svg" data-title="#tool-title" data-note="#tool-summary" data-source="#tool-source">SVG</button>,
+            <button type="button" class="chart-download-csv" id="tool-csv">CSV</button>
           </span>
         </div>
       </div>
