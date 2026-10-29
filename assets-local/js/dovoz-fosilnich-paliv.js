@@ -1110,6 +1110,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // other cards share — measured after each draw, see levelKpi.
     let kpiGrow = 0;
 
+    // The KPI charts' axes, from the data: spending to the next 100 mld. Kč
+    // (grid every 50), the GDP shares to the next whole per cent.
+    const kpiCzkTop = Math.ceil(d3.max(payments, d => d.total_czk_mld) / 100) * 100;
+    const kpiPctTop = Math.ceil(d3.max(payments, d => Math.max(d.gdp_share_pct, d.msmt_pct, d.sfdi_pct)));
+    const paymentIn = year => payments.find(d => d.year === Math.floor(year));
+
     const charts = () => [
       ['#chart-celkem-czk', w => {
         const chart = fokBarChartStacked('#chart-celkem-czk',
@@ -1121,7 +1127,7 @@ document.addEventListener('DOMContentLoaded', () => {
           yLabel: 'mld. Kč', yLabelInline: true,
           width: w, height: kpiHeight(), theme, margins: kpiMargins,
           xTickValues: xTicks.map(String),
-          yMax: 400, yTickValues: d3.range(0, 401, 100), yGridValues: d3.range(0, 401, 50),
+          yMax: kpiCzkTop, yTickValues: d3.range(0, kpiCzkTop + 1, 100), yGridValues: d3.range(0, kpiCzkTop + 1, 50),
           legend: false,
           yFormat: v => fokFormatNumber(v, 0),
           // The whole year whichever band is hovered: the sum, then the two
@@ -1131,15 +1137,16 @@ document.addEventListener('DOMContentLoaded', () => {
             + [['plyn', 'Zemní plyn', CFG.colorPlyn], ['ropa', 'Ropa', CFG.colorRopa]].map(([k, label, color]) =>
                 `<span style="color:${color}">■</span> ` + plain(`${label}: ${czkMld(raw[k])}`)).join('<br>'),
         });
-        // The legend over the plot's empty top left, its corner at 320 mld. Kč
-        // and 2017.3 (a year a band), plyn over ropa as they stack.
-        const x = chart.xScale, year = 2017.3;
+        // The legend over the plot's empty top left, its corner at four fifths
+        // of the axis and 0.3 of a year into the first (a year a band), plyn
+        // over ropa as they stack.
+        const x = chart.xScale, year = YEAR_FROM + 0.3;
         fokLegendSvg(chart.g, [
           { label: 'Zemní plyn', color: CFG.colorPlyn },
           { label: 'Ropa', color: CFG.colorRopa },
         ], {
           x: x(String(Math.floor(year))) + x.bandwidth() / 2 + (year % 1) * x.step(),
-          y: chart.yScale(320), labelColor: kpiLegend.labelColor,
+          y: chart.yScale(0.8 * kpiCzkTop), labelColor: kpiLegend.labelColor,
         }, theme);
         return chart;
       }],
@@ -1156,12 +1163,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // room: imports right of their 2022 peak, level with its top; MŠMT
         // over its line on the left, its halo cutting the line; SFDI under its
         // line on the right (above it runs the imports'). x in years, y in
-        // % HDP: the last row's baseline.
+        // % HDP: the last row's baseline, offset from its line's value in
+        // that year, so the labels follow the data.
+        const peak = payments.reduce((a, b) => b.gdp_share_pct > a.gdp_share_pct ? b : a);
+        const at = (x, field, dy) => ({ x, y: paymentIn(x)[field] + dy });
         const lineLabels = {
-          'Ropa a zemní plyn': { x: 2022.3, y: 4.85, lines: ['**Ropa**', '**a zemní plyn**'] },
-          'Výdaje na školství (rozpočet MŠMT)': { x: 2017.45, y: 3.25, lines: ['Výdaje', 'na školství'] },
+          'Ropa a zemní plyn': { ...at(peak.year + 0.3, 'gdp_share_pct', -0.08), lines: ['**Ropa**', '**a zemní plyn**'] },
+          'Výdaje na školství (rozpočet MŠMT)': { ...at(YEAR_FROM + 0.45, 'msmt_pct', 0.23), lines: ['Výdaje', 'na školství'] },
           'Výdaje na dopravní infrastrukturu (rozpočet SFDI)':
-            { x: 2024.35, y: 1.22, anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
+            { ...at(YEAR_TO - 0.65, 'sfdi_pct', -0.64), anchor: 'end', lines: ['Výdaje na dopravní', 'infrastrukturu'] },
         };
         return fokLineChart('#chart-celkem-hdp',
           lines.flatMap(([series, field]) => payments.map(d => ({ ...d, series, pct: d[field] }))), {
@@ -1173,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             width: w, height: kpiHeight(), margins: kpiMargins,
             theme: { ...theme, colors: { ...theme.colors, categorical: lines.map(l => l[2]) } },
             xTickValues: xTicks, xFormat: String,
-            yDomain: [0, 5], yTickValues: d3.range(0, 6), yFormat: v => fokFormatNumber(v, 0),
+            yDomain: [0, kpiPctTop], yTickValues: d3.range(0, kpiPctTop + 1), yFormat: v => fokFormatNumber(v, 0),
             tooltipHtml: d => head(d.year) + lines.slice().reverse().map(([series, field]) =>
               plain(`${series}: ${fokFormatNumber(d[field], 1)} % HDP`)).join('<br>'),
           });
@@ -1195,12 +1205,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ['#chart-ropa-czk',     money('#chart-ropa-czk', 'crude_oil', ropa.czk, CFG.colorRopa)],
       ['#chart-ropa-energie', fuelEnergy('#chart-ropa-energie', ropa.energie, ROPA,
         { arrows: russiaEndNote('#chart-ropa-energie', 0.95 * maxE) })],
-      // The 2022 peak, pointed out (fokArrow): from the text right of the bar
-      // down onto its top.
+      // The 2022 peak, pointed out (fokArrow): from the text right of the bar,
+      // 15 % of the shared axis over its top, down onto it.
       ['#chart-plyn-czk',     money('#chart-plyn-czk', 'natural_gas', plyn.czk, CFG.colorPlyn, {
         arrows: arrowsFor('#chart-plyn-czk', {
           target: [2022, plyn.czk.find(d => d.year === 2022).czk_mld],
-          textEnd: [2022.8, 270],
+          textEnd: [2022.8, plyn.czk.find(d => d.year === 2022).czk_mld + 0.15 * maxCzk],
         }),
       })],
       ['#chart-plyn-energie', fuelEnergy('#chart-plyn-energie', plyn.energie, PLYN,
