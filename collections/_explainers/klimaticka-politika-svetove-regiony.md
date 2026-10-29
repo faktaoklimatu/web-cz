@@ -238,7 +238,7 @@ USA se díky **rozvoji těžby ropy a plynu z břidlic** dostaly do **pozice vý
 
 **Zemní plyn:** Země je zcela soběstačná. USA jsou největším producentem plynu a zároveň největším exportérem LNG na světě (zásobují zejména evropské a asijské trhy).
 
-**Uhlí:** Protože americké elektrárny přecházejí na plyn a domácí spotřeba uhlí klesá. Necelou čtvrtinu svého uhlí US vyváží.(do Indie a dalších asijských zemí a nově i do Evropy).
+**Uhlí:** Protože americké elektrárny přecházejí na plyn a domácí spotřeba uhlí klesá. Necelou čtvrtinu svého uhlí USA vyváží (do Indie a dalších asijských zemí a nově i do Evropy).
 
 </div>
 
