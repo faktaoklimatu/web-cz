@@ -764,8 +764,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // The period slider, in months: a month's index is year·12 + month − 1.
     // By year it steps twelve at a time, each thumb on a January standing for
     // its whole year; by month, one. Switching keeps the period: a year's
-    // "to" opens out to its last month, a month's falls back to its year. The
-    // stretch between the thumbs is drawn darker.
+    // "to" opens out to its last month, a month's falls back to its year. By
+    // year it ends at the last complete year, as a part-year total would read
+    // as a collapse; the months run on to the newest. The stretch between the
+    // thumbs is drawn darker.
     const mIdx = d => d.year * 12 + d.month - 1;
     const idxYear = i => Math.floor(i / 12);
     const lastIdx = mIdx(toolMonths[toolMonths.length - 1]);
@@ -780,10 +782,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const setSlider = (from, to) => {
       const byYear = TOOL.step === 'years';
       [toolFrom, toolTo].forEach(r => Object.assign(r, {
-        min: TOOL_FIRST * 12, max: byYear ? lastYear * 12 : lastIdx, step: byYear ? 12 : 1,
+        min: TOOL_FIRST * 12, max: byYear ? lastFullYear * 12 : lastIdx, step: byYear ? 12 : 1,
       }));
-      toolFrom.value = byYear ? idxYear(from) * 12 : from;
+      // A range input clamps its value to max, so both thumbs can land on the
+      // last complete year: "from" then steps back one.
       toolTo.value = byYear ? idxYear(to) * 12 : Math.min(idxYear(to) * 12 + 11, lastIdx);
+      toolFrom.value = Math.min(byYear ? idxYear(from) * 12 : from, +toolTo.value - +toolTo.step);
       paintRange();
     };
     setSlider(YEAR_FROM * 12, lastYear * 12);
@@ -827,8 +831,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const byCountry = TOOL.split && splitAllowed;
       // Years for the year view and the axis ticks, months for the month view.
       const fromIdx = +toolFrom.value, toIdx = +toolTo.value;
-      let from = idxYear(fromIdx), to = idxYear(toIdx);
-      if (TOOL.step === 'years') { to = Math.min(to, lastFullYear); from = Math.min(from, to - 1); }
+      const from = idxYear(fromIdx), to = idxYear(toIdx);
       return {
         fuels, price, splitAllowed, byCountry, from, to, fromIdx, toIdx,
         codes: fuels.length > 1 ? BOTH : codesOf(fuels[0]),
@@ -1032,7 +1035,7 @@ document.addEventListener('DOMContentLoaded', () => {
           price: `Celní hodnota dělená výhřevností dovozu, v ${PRICE_UNIT}` }[TOOL.metric]
           + (TOOL.step === 'years' ? ', roční' : ', měsíční') + (v.price ? ' průměry.' : ' součty.'),
         v.tiles ? 'Každá země zvlášť, na společné ose.' : '',
-        TOOL.step === 'years' && idxYear(+toolTo.value) > lastFullYear ? `Rok ${lastFullYear + 1} je neúplný, ukazují ho měsíce.` : '',
+        TOOL.step === 'years' && v.to === lastFullYear && lastYear > lastFullYear ? `Rok ${lastYear} je neúplný, ukazují ho měsíce.` : '',
         v.price && v.byCountry ? 'Země s malým dovozem graf vynechává.' : '',
       ].filter(Boolean).join(' ');
     };
