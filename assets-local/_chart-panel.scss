@@ -1,0 +1,215 @@
+// d3 chart panels in the look of the CBAM explainer charts (_cbam-charts.scss)
+// with the ETS dashboard's source / download foot (_ets-dashboard.scss).
+// Markup: includes-local/chart-panel.html. First used by the explainer
+// klimaticka-politika-svetove-regiony.
+
+.d3-panel {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    margin: 1.5rem 0 2rem;
+
+    .d3-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #2d3748;
+        margin: 0 0 14px;
+    }
+
+    // Metric switch, inserted by the page script above the svg.
+    .seg {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e2e8f0;
+
+        button {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            padding: 4px 12px 6px 0;
+            margin-right: 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #718096;
+        }
+
+        button:hover:not(.active) {
+            color: #515b66;
+        }
+
+        button.active {
+            color: #2d3748;
+            border-bottom-color: #2d3748;
+        }
+    }
+
+    svg {
+        width: 100%;
+        display: block;
+        overflow: visible;
+    }
+
+    .chart-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-end;
+        gap: 4px 16px;
+        padding-top: 1rem;
+        font-size: 0.8rem;
+        color: #a0aec0;
+
+        a,
+        a:hover {
+            color: #a0aec0;
+        }
+
+        // "Stáhnout: PNG, SVG" reads as one phrase, keep it on one line.
+        .chart-downloads {
+            white-space: nowrap;
+        }
+
+        .chart-download {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .chart-download:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .d3-title {
+            font-size: 18px;
+        }
+    }
+}
+
+// Appended to <body> by the page script, positioned against the viewport.
+.d3-tooltip {
+    position: fixed;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    line-height: 1.6;
+    max-width: 280px;
+    font-family: 'Roboto', system-ui, sans-serif;
+
+    .swatch {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+    }
+}
+
+// Region colours, also read by the page's grafy.js (REGIONS).
+:root {
+    --region-eu: #36369b;
+    --region-cina: #e0495a;
+    --region-usa: #3b85d8;
+    --region-indie: #8546af;
+}
+.region-eu    { --region: var(--region-eu); }
+.region-cina  { --region: var(--region-cina); }
+.region-usa   { --region: var(--region-usa); }
+.region-indie { --region: var(--region-indie); }
+
+// A line in the region colour above each region heading, as long as the
+// region's annual greenhouse gas emissions: the EU's, the smallest, is 24 px
+// and the others scale from it (EDGAR 2026, 2025 totals in emise-ghg.csv:
+// EU 3.13, USA 6.02, India 4.51, China 15.98 Gt CO₂eq). A region heading
+// carries its region class in the markdown ({: .js-toc-ignore .region-eu});
+// not the headings inside the region boxes.
+$region-rule: 2.5px;
+$region-rule-gap: 6px;
+@each $key, $k in (eu 1.0, cina 5.11, usa 1.925, indie 1.442) {
+    $length: 24px * $k;
+    :is(h3, h4).region-#{$key}:not(.region-box *) {
+        padding-top: $region-rule + $region-rule-gap;
+        background: linear-gradient(var(--region), var(--region)) left top / #{$length} #{$region-rule} no-repeat;
+    }
+}
+
+// "Hlavní charakteristiky": a 2×2 grid of region boxes listing only the key
+// phrases, each behind an icon and linking to its paragraph under the grid.
+.region-box {
+    h3, h4 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+}
+.region-grid .region-box { height: 100%; }
+.region-grid .region-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.region-grid .region-box li {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
+// Only the pointer gives the link away.
+.region-grid .region-box li a,
+.region-grid .region-box li a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+// Each key phrase's Font Awesome icon in a full circle of the region colour.
+.region-grid .region-icon {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: 0.85em;
+    background: var(--region);
+    color: #fff;
+}
+
+// Imports and exports by fuel, and the emission figures under each region.
+.region-stats {
+    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
+    strong { color: inherit; }
+    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
+}
+.region-detail {
+    width: 75%;
+}
+
+// The title stays in the PNG/SVG export (chart-download.js reads its text)
+// but not on the page, where the section heading above already says it.
+.d3-panel.no-title .d3-title { display: none; }
+// No source / download line under the chart (the export still reads the source).
+.d3-panel.no-foot .chart-foot { display: none; }
+// Space around the charts that differ from the default.
+#graf-podil { margin: 32px 0 64px; }
+#graf-cile { margin: 48px 0 64px; }
+
+// web-core pads every div inside an expandable box (.expandable-content div),
+// so the panel's own nested divs stacked up an indent. Keep the panel flush.
+.expandable-content .d3-panel,
+.expandable-content .d3-panel div { padding: 0; }

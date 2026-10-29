@@ -261,7 +261,9 @@
       const link = el.querySelector && el.querySelector("a");
       return {
         text, weight,
-        size: Math.round(parseFloat(cs.fontSize)),
+        // data-export-size pins the size in the file when the page shows the
+        // element smaller or hides it.
+        size: +el.dataset?.exportSize || Math.round(parseFloat(cs.fontSize)),
         fill: cs.color,
         href: link ? link.href : null,
       };

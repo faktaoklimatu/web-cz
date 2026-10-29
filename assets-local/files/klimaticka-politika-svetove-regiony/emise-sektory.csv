@@ -1,0 +1,100 @@
+region,sector,gas,mt_co2eq
+cina,Agriculture,CH4,483.46
+eu,Agriculture,CH4,230.76
+indie,Agriculture,CH4,594.51
+usa,Agriculture,CH4,255.04
+cina,Agriculture,CO2,20.64
+eu,Agriculture,CO2,9.84
+indie,Agriculture,CO2,32.2
+usa,Agriculture,CO2,6.67
+cina,Agriculture,N2O,258.89
+eu,Agriculture,N2O,140.16
+indie,Agriculture,N2O,207.46
+usa,Agriculture,N2O,136.23
+cina,Buildings,CH4,27.34
+eu,Buildings,CH4,15.43
+indie,Buildings,CH4,39.58
+usa,Buildings,CH4,6.74
+cina,Buildings,CO2,575.37
+eu,Buildings,CO2,413.06
+indie,Buildings,CO2,201.92
+usa,Buildings,CO2,539.0
+cina,Buildings,N2O,8.37
+eu,Buildings,N2O,6.71
+indie,Buildings,N2O,8.8
+usa,Buildings,N2O,4.48
+cina,Fuel Production,CH4,745.52
+eu,Fuel Production,CH4,51.97
+indie,Fuel Production,CH4,104.51
+usa,Fuel Production,CH4,427.59
+cina,Fuel Production,CO2,770.14
+eu,Fuel Production,CO2,148.13
+indie,Fuel Production,CO2,114.06
+usa,Fuel Production,CO2,289.65
+cina,Fuel Production,N2O,1.46
+eu,Fuel Production,N2O,0.11
+indie,Fuel Production,N2O,0.15
+usa,Fuel Production,N2O,0.41
+cina,Industrial Combustion,CH4,4.0
+eu,Industrial Combustion,CH4,1.29
+indie,Industrial Combustion,CH4,4.29
+usa,Industrial Combustion,CH4,1.44
+cina,Industrial Combustion,CO2,2665.49
+eu,Industrial Combustion,CO2,327.08
+indie,Industrial Combustion,CO2,671.7
+usa,Industrial Combustion,CO2,454.29
+cina,Industrial Combustion,N2O,5.79
+eu,Industrial Combustion,N2O,1.68
+indie,Industrial Combustion,N2O,5.78
+usa,Industrial Combustion,N2O,1.88
+cina,Power Industry,CH4,4.27
+eu,Power Industry,CH4,2.09
+indie,Power Industry,CH4,1.1
+usa,Power Industry,CH4,1.96
+cina,Power Industry,CO2,6565.02
+eu,Power Industry,CO2,590.88
+indie,Power Industry,CO2,1545.97
+usa,Power Industry,CO2,1565.11
+cina,Power Industry,N2O,64.81
+eu,Power Industry,N2O,6.49
+indie,Power Industry,N2O,24.58
+usa,Power Industry,N2O,6.43
+cina,Processes,CH4,8.34
+eu,Processes,CH4,0.7
+indie,Processes,CH4,0.43
+usa,Processes,CH4,1.24
+cina,Processes,CO2,1348.44
+eu,Processes,CO2,175.35
+indie,Processes,CO2,273.65
+usa,Processes,CO2,159.73
+cina,Processes,F-gases,797.54
+eu,Processes,F-gases,57.66
+indie,Processes,F-gases,116.52
+usa,Processes,F-gases,207.66
+cina,Processes,N2O,203.53
+eu,Processes,N2O,15.88
+indie,Processes,N2O,20.43
+usa,Processes,N2O,28.4
+cina,Transport,CH4,6.21
+eu,Transport,CH4,1.63
+indie,Transport,CH4,2.82
+usa,Transport,CH4,4.45
+cina,Transport,CO2,1088.25
+eu,Transport,CO2,778.14
+indie,Transport,CO2,369.96
+usa,Transport,CO2,1724.64
+cina,Transport,N2O,25.3
+eu,Transport,N2O,7.26
+indie,Transport,N2O,8.92
+usa,Transport,N2O,20.94
+cina,Waste,CH4,201.72
+eu,Waste,CH4,119.73
+indie,Waste,CH4,136.18
+usa,Waste,CH4,152.24
+cina,Waste,CO2,23.74
+eu,Waste,CO2,2.03
+indie,Waste,CO2,0.1
+cina,Waste,N2O,77.33
+eu,Waste,N2O,23.09
+indie,Waste,N2O,22.4
+usa,Waste,N2O,22.08
