@@ -588,7 +588,7 @@
   // block starts in, nudged sideways where narrow regions would collide.
   //   o.rows: [{region, value, share}]
   function waffle(svg, width, o) {
-    const top = 0;
+    const top = o.unit ? 26 + unitCaption(svg, o.unit, 13, width) : 0;
     const ROWS = 4, COLS = 25, NAME_SIZE = 15, LABEL_GAP = 12, SQUARE_GAP = 2, REST_GAP_COLS = 1;
     const cell = width * 0.8 * 0.8 / COLS;   // 4/5 of the width for 4 × 25, scaled down to 0.8
     const counts = largestRemainder(o.rows.map(d => d.share), ROWS * COLS);
@@ -852,7 +852,7 @@
                 value: world - d3.sum(rows, d => d.value) });
     rows.forEach(d => { d.share = d.value / world * 100; });
     mount("graf-podil", (svg, w) => waffle(svg, w, {
-      rows, short: "Mt CO₂eq",
+      rows, short: "Mt CO₂eq", unit: "Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2024",
     }));
   });
 
