@@ -929,8 +929,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4 : 1, the label in the line's grey darkened to read. With both shown,
     // the earlier's label goes a row higher, so on a narrow chart they never
     // run into each other; the chart's top margin makes the room (toolChart).
-    const contextMarkers = (withLabels = true) => {
-      const shown = CONTEXT.filter(e => TOOL[e.option]);
+    // An event is in view when its year (by year) or month (by month) is in
+    // the period. Spending draws it within that column, so the last one
+    // counts; the other metrics on a line scale that ends where the last
+    // year or month starts, so it does not.
+    const contextInView = ({ date: [y, m] }, v) => {
+      const [at, lo, hi] = TOOL.step === 'years' ? [y, v.from, v.to] : [y * 12 + m - 1, v.fromIdx, v.toIdx];
+      return at >= lo && (TOOL.metric === 'czk' ? at <= hi : at < hi);
+    };
+    const contextShown = v => CONTEXT.filter(e => TOOL[e.option] && contextInView(e, v));
+    const contextMarkers = (v, withLabels = true) => {
+      const shown = contextShown(v);
       return shown.map(({ label, date: [y, m, d] }, i) => {
         const text = withLabels ? label : '';
         const style = { color: CFG.colorCompare, dash: CFG.compareDash, width: CFG.lineWidth * 0.75,
@@ -953,6 +962,11 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.tool [data-when]').forEach(el => {
         el.style.visibility = v[el.dataset.when] ? '' : 'hidden';
       });
+      // Likewise a context event outside the period, which would draw nothing.
+      CONTEXT.forEach(e => {
+        document.querySelector(`.tool [data-option="${e.option}"]`).closest('label')
+          .style.visibility = contextInView(e, v) ? '' : 'hidden';
+      });
       document.getElementById('tool-period').textContent = periodText(v);
 
       const sum = r => d3.sum(keys, k => r[k]);
@@ -971,7 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .map(label => ({ label })), legendWidth, 4).height;
       const height = Math.max(Math.round(w * CFG.toolAspect), 360);
       // A row more over the plot for each context label past the first.
-      const markerRoom = Math.max(0, CONTEXT.filter(e => TOOL[e.option]).length - 1) * fokMarkerRow(theme);
+      const markerRoom = Math.max(0, contextShown(v).length - 1) * fokMarkerRow(theme);
       const swatch = c => `<span style="color:${c}">■</span> `;
       // Imports also give each band's share of that year's or month's total.
       const share = (r, k) => TOOL.metric === 'energy' && keys.length > 1 && sum(r) > 0
@@ -984,7 +998,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const common = {
         width: w, height, theme,
         margins: { bottom: theme.margins.bottom + legendRoom, top: theme.margins.top + markerRoom },
-        yLabel: unit, yLabelInline: true, yFormat: x => fokFormatNumber(x, 0), legend: false, markers: contextMarkers(),
+        yLabel: unit, yLabelInline: true, yFormat: x => fokFormatNumber(x, 0), legend: false, markers: contextMarkers(v),
       };
 
       let chart;
@@ -1053,7 +1067,7 @@ document.addEventListener('DOMContentLoaded', () => {
         d3.select('#tool-svg').attr('id', null);
         countryRows('#chart-tool-tiles', '#chart-tool', rows, v.codes, {
           key: d => d.key, plotH: toolScale.plotH, top: toolScale.top,
-          unit, fmt, label: d => d.label, markers: contextMarkers(),
+          unit, fmt, label: d => d.label, markers: contextMarkers(v),
           ticks: TOOL.step === 'years' ? ticks.map(String) : ticks.map(y => `${y}-1`).filter(k => rows.some(r => r.key === k)),
           tickFormat: k => k.split('-')[0],
         }).attr('id', 'tool-svg');
@@ -1065,7 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tiles('#chart-tool-tiles', '#chart-tool', v.codes, (node, k, t) => {
         fokLineChart(node, rows, {
           width: t.width, height: t.height, margins: t.margins, yFormat: t.yFormat,
-          yLabel: t.first ? unit : undefined, markers: contextMarkers(false),
+          yLabel: t.first ? unit : undefined, markers: contextMarkers(v, false),
           tooltipHtml: r => head(r.label) + plain(`${t.label}: ${fmt(r[k])}`),
           x: d => d.x, y: d => d[k],
           area: TOOL.metric === 'energy', areaOpacity: CFG.areaOpacity,
