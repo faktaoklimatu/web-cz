@@ -663,11 +663,16 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltipHtml: d => head(`${monthLong(d.month)} ${d.year}`) + plain(czkMld(d.czk)),
         ...extra,
       });
+    // The 36 months roll on with the data, and an arrow pinned to a month
+    // would be drawn off the plot once that month leaves them. An arrow is
+    // drawn only while the window holds its target and the months its text
+    // runs over: from `[year, month]` to `[year2, month2]`.
+    const inRecent = (from, to) => [from, to].every(([y, m]) => recent.some(d => d.year === y && d.month === m));
     // The Hormuz crisis (28 February 2026, see CONTEXT) on the 36 months'
     // spending: onto March, its first month, from text left of January, over
-    // the months before it. The tip stops at 11 mld. Kč, or on the bar's top
-    // where the bar is taller.
-    const hormuzArrow = (sel, commodity) => arrowsFor(sel, {
+    // the half-year before it. The tip stops at 11 mld. Kč, or on the bar's
+    // top where the bar is taller.
+    const hormuzArrow = (sel, commodity) => !inRecent([2025, 7], [2026, 3]) ? [] : arrowsFor(sel, {
       target: ['2026-3', Math.max(11, monthCzk(commodity, 2026, 3))],
       textEnd: ['2026-1', 13.5], side: 'left',
     });
@@ -686,9 +691,9 @@ document.addEventListener('DOMContentLoaded', () => {
       ...extra,
     });
     // Gas's 36 months of imports: June 2025, the peak, as storage fills for
-    // the winter — onto the top of the stack, from text over the months
-    // before it, high on the axis (recentTop), where they leave room.
-    const refillArrow = sel => arrowsFor(sel, {
+    // the winter — onto the top of the stack, from text over the half-year
+    // before April, high on the axis (recentTop), where they leave room.
+    const refillArrow = sel => !inRecent([2024, 10], [2025, 6]) ? [] : arrowsFor(sel, {
       target: [2025 + 5 / 12, monthE('natural_gas', 2025, 6)],
       textEnd: [2025.25, 0.87 * recentTop], side: 'left',
     });
