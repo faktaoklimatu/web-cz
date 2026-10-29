@@ -1,6 +1,6 @@
 ---
 layout:      explainer
-title:       "Jak se ke klimatické politice staví USA, Čína a Indie ve srovnání s EU"
+title:       "Srovnání klimaticko-energetické politiky EU, Číny, USA a Indie"
 slug:        "klimaticka-politika-svetove-regiony"
 published:   2026-10-30
 authors:
