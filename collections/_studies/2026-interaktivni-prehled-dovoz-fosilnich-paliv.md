@@ -1,7 +1,7 @@
 ---
 layout:        empty
 type:          "Interaktivní přehled"
-title:         "Dovoz ropy a zemního plynu do ČR"
+title:         "Dovoz ropy a zemního plynu do&nbsp;ČR"
 slug:          2026-interaktivni-prehled-dovoz-fosilnich-paliv
 body-class:    dovoz-fosilnich-paliv
 redirect_from:
