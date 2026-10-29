@@ -18,7 +18,6 @@ extra-scripts:
 - /assets-local/js/chart-download.js
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="/assets-local/charts/fok-theme.js"></script>

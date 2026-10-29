@@ -1,0 +1,16 @@
+<!-- Nabídka povolenek vs. uhlíkový rozpočet 2031–2040, drawn by assets-local/js/revize-ets-nabidka.js.
+     Roboto is self-hosted (assets-local/_roboto.scss), the same files the download outlines. -->
+<style>
+.ets-nabidka { margin-top: 2rem; font-family: Roboto, system-ui, sans-serif; }
+#ets-nabidka { position: relative; }
+#ets-nabidka .tip { position: absolute; display: none; max-width: 260px; pointer-events: none; padding: 8px 12px; background: #fff; border: 1px solid #e8eef6; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1); font-size: 12px; line-height: 1.4; color: #3a3a45; }
+.ets-nabidka svg { display: block; width: 100%; height: auto; }
+</style>
+
+<div class="ets-nabidka">
+  <div id="ets-nabidka"></div>
+{% capture zdroj %}Zdroj: <a href="https://www.oeko.de/publikation/assessing-the-2026-commission-proposal-for-the-eu-ets-1/">Öko-Institut (2026)</a>{% endcapture %}
+{% include includes-local/chart-foot.html
+   title="Porovnání potenciální nabídky povolenek a poptávky po povolenkách dle Öko-Institutu"
+   svg="ets-nabidka-svg" file="ets-nabidka-vs-rozpocet" source=zdroj %}
+</div>

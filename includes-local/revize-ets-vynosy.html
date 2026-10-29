@@ -1,0 +1,17 @@
+<!-- Pravidla pro využití výnosů z dražeb povolenek: dosud vs. návrh revize,
+     drawn by assets-local/js/revize-ets-vynosy.js (shared bits: revize-ets-svg.js).
+     Roboto is self-hosted (assets-local/_roboto.scss), the same files the download outlines. -->
+<style>
+.ets-vynosy-graf { margin-top: 2rem; }
+@media (min-width: 768px) { .ets-vynosy-graf { width: 80%; } }  /* footer included */
+#ets-vynosy { font-family: Roboto, system-ui, sans-serif; }
+#ets-vynosy svg { display: block; width: 100%; height: auto; }
+</style>
+
+<div class="ets-vynosy-graf">
+<div id="ets-vynosy"></div>
+{% capture zdroj %}Zdroj: <a href="https://ec.europa.eu/commission/presscorner/detail/cs/ip_26_1596">Návrh revize směrnice o EU ETS</a>{% endcapture %}
+{% include includes-local/chart-foot.html
+   title="Nová pravidla pro využití aukčních výnosů v EU ETS"
+   svg="ets-vynosy-svg" file="ets-vyuziti-vynosu" source=zdroj %}
+</div>

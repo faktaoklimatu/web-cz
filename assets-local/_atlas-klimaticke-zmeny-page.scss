@@ -182,19 +182,6 @@
         background: white;
     }
 
-    // No portraits in the testimonials: single column, name stacked above the
-    // institution, rows sized to their content instead of the 1fr/1fr split.
-    // Full nesting needed to outweigh the shared .testimonial-card rule.
-    .testimonials-section .testimonial-card .person-info {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-
-        .name {
-            align-self: start;
-            margin-bottom: 0.1rem;
-        }
-    }
-
     @media (min-width: 969px) {
         // ponytail: nowrap on the container keeps the three CTAs on one line; they
         // overflow the grid column on purpose. Widen .hero-content columns instead

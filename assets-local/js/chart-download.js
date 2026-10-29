@@ -13,13 +13,18 @@
  * data-format="png" rasterises instead, at PNG_SCALE times the chart's size on
  * screen; the filename's extension follows the format either way.
  *
- * data-title / data-subtitle / data-note / data-source are optional selectors.
- * The first two are drawn into a band above the chart; the note opens the band
- * below it, flush left, and the source closes it, under the CREDIT line — on the page all three live in the panel's HTML rather than in
+ * data-title / data-subtitle / data-note / data-source are optional selectors
+ * (data-title-inset overrides the title's left inset, in px). The first two are
+ * drawn into a band above the chart; the note opens the band below it, flush
+ * left, and the source closes it, under the CREDIT line — on the page they live
+ * in the panel's HTML rather than in
  * the SVG, so the file would otherwise lose them. The page's own "Stáhnout SVG"
  * button is never drawn: it is a control, meaningless once the file is open
  * elsewhere. Everything else is read off the live chart, so the file follows
  * the page's CSS without repeating any of it here.
+ *
+ * A chart's own text marked data-export-omit (a heading that the file gets
+ * from data-title instead) is left out of the file.
  *
  * Text is converted to outlines so the file survives a trip to a machine
  * without the webfont — the usual destination is print. That needs the font as
@@ -44,6 +49,7 @@
   // weights the charts actually ask for; see nearestWeight().
   const FONTS = {
     roboto: {
+      300: "/assets-local/fonts/Roboto-300.ttf",
       400: "/assets-local/fonts/Roboto-400.ttf",
       500: "/assets-local/fonts/Roboto-500.ttf",
       600: "/assets-local/fonts/Roboto-600.ttf",
@@ -116,13 +122,12 @@
   // getComputedTextLength() reads 0 on a detached node — so it is measured on
   // a canvas instead of in the DOM.
   const measureCtx = document.createElement("canvas").getContext("2d");
-
-  // Wraps runs of text, each in its own weight — a bold title with its period
-  // in regular, say: [{ text, weight }] — to `width`. Breaks only at spaces, so a
-  // comma right after a run stays with it. Returns the lines, each as its
-  // runs again, [{ t, weight }], a space that opens a run kept at its start.
+  // Wraps runs of text, each in its own weight and colour — a bold title with
+  // its period in regular, say: [{ text, weight, fill }] — to `width`. Breaks
+  // only at spaces, so a comma right after a run stays with it. Returns the
+  // lines, each as its runs again, [{ t, weight, fill }].
   function wrapRuns(runs, size, family, width) {
-    const tokens = [];   // words glued by no space, each [{ t, weight }]
+    const tokens = [];   // words glued by no space, each [{ t, weight, fill }]
     let space = true;
     runs.forEach(r => r.text.split(/(\s+)/).forEach(part => {
       if (!part) return;
@@ -206,16 +211,31 @@
       if (!text.trim()) return { pos, paths: [] };
 
       const font = fonts.byWeight[nearestWeight(fonts.weights, weight)];
-      let x = pos.x;
-      if (anchor === "middle" || anchor === "end") {
-        const advance = font.getAdvanceWidth(text, fontSize);
-        x -= anchor === "middle" ? advance / 2 : advance;
+      const advance = font.getAdvanceWidth(text, fontSize);
+      // Where the browser put this run's first character. It has already
+      // applied text-anchor to the whole line, which matters when a line is
+      // several tspans (a bold word in a right-aligned note): anchoring each
+      // run on its own would stack them on top of one another. The anchor
+      // arithmetic below is only the fallback for a node that cannot answer.
+      let x = pos.x, y = pos.y;
+      try {
+        const start = node.getStartPositionOfChar(0);
+        x = start.x;
+        y = start.y;
+      } catch (e) {
+        if (anchor === "middle" || anchor === "end") {
+          x -= anchor === "middle" ? advance / 2 : advance;
+        }
       }
-      const path = font.getPath(text, x, pos.y, fontSize);
+      const path = font.getPath(text, x, y, fontSize);
       const el = document.createElementNS(SVG_NS, "path");
       el.setAttribute("d", path.toPathData(2));
       el.setAttribute("fill", fill);
-      return { pos, paths: [el] };
+      // Hand back where this run ends, not where it began: a following tspan
+      // without its own x (a bold word, then the rest of the line) continues
+      // from here, as it does in the browser. Returning the start drew every
+      // run of a mixed-weight line on top of the first.
+      return { pos: { x: x + advance, y }, paths: [el] };
     }
 
     const { paths } = draw(textEl, {
@@ -235,8 +255,9 @@
     const cloneTexts = clone.querySelectorAll("text");
     if (liveTexts.length !== cloneTexts.length) return false;   // out of step, leave as text
     liveTexts.forEach((liveText, i) => {
-      const paths = outlineText(liveText, fonts, window.getComputedStyle(liveText));
       const target = cloneTexts[i];
+      if (liveText.hasAttribute("data-export-omit")) { target.remove(); return; }
+      const paths = outlineText(liveText, fonts, window.getComputedStyle(liveText));
       const g = document.createElementNS(SVG_NS, "g");
       // A <text> can carry its own transform — the sankey rotates its node
       // labels that way in the transposed layout — and the outlines are in that
@@ -257,25 +278,20 @@
     const el = document.getElementById(btn.dataset.svg);
     const src = el && (el.tagName.toLowerCase() === "svg" ? el : el.querySelector("svg"));
     if (!src) throw new Error(`chybí <svg id="${btn.dataset.svg}">`);
-    // The chart sits PAD in from the file's sides, level with the text above
-    // and below it: its own labels may run to the edge of its <svg>.
     const rect = src.getBoundingClientRect();
-    const cw = Math.round(rect.width), h = Math.round(rect.height);
-    const w = cw + 2 * PAD;
+    const w = Math.round(rect.width), h = Math.round(rect.height);
     const family = window.getComputedStyle(src).fontFamily;
 
     // Sizes and colours come off the live elements, so the export follows the
     // page's CSS tokens as they are retuned rather than repeating them here.
-    // A child element with a weight of its own — the explorer's title sets its
-    // period in regular — becomes a run of that weight (wrapRuns).
     function itemFrom(selector, weight) {
       const el = selector && document.querySelector(selector);
       const text = el && el.textContent.trim();
       if (!text) return null;
       const cs = window.getComputedStyle(el);
       const link = el.querySelector && el.querySelector("a");
-      // A child element is a run of its own weight and colour (a coloured
-      // word in a title); bare text takes the block's.
+      // A child element is a run of its own weight and colour (the period in
+      // regular, a fuel's name in its colour); bare text takes the block's.
       const runs = Array.from(el.childNodes).map(n => ({
         text: n.textContent,
         weight: n.nodeType === 1 ? parseInt(window.getComputedStyle(n).fontWeight, 10) || weight : weight,
@@ -293,13 +309,13 @@
     // Returns the baseline of the last line, which is what the band's height
     // is then measured from. `anchor` of "end" hangs the lines off the right
     // margin; x is then the edge they end at, not the one they start from.
-    function layout(items, startY, anchor) {
-      const x = anchor === "end" ? w - PAD : PAD;
+    function layout(items, startY, anchor, inset = PAD) {
+      const x = anchor === "end" ? w - PAD : inset;
       let y = startY;
       const lines = [];
       items.forEach((it, i) => {
         if (i) y += Math.round(it.size * 0.5);   // gap between blocks
-        wrapRuns(it.runs || [{ text: it.text, weight: it.weight }], it.size, family, w - 2 * PAD).forEach(segs => {
+        wrapRuns(it.runs || [{ text: it.text, weight: it.weight }], it.size, family, w - inset - PAD).forEach(segs => {
           y += Math.round(it.size * 1.3);
           lines.push({ segs, y, x, anchor, size: it.size, fill: it.fill, href: it.href });
         });
@@ -309,7 +325,9 @@
 
     const headItems = [itemFrom(btn.dataset.title, 700), itemFrom(btn.dataset.subtitle, 400)]
       .filter(Boolean);
-    const head = layout(headItems, PAD);
+    // data-title-inset="0" puts the title flush with a chart drawn edge to edge.
+    const inset = btn.dataset.titleInset ? +btn.dataset.titleInset : PAD;
+    const head = layout(headItems, PAD, "start", inset);
     const headerH = head.lines.length ? head.end + PAD : 0;
 
     // Credit and source go under the chart, credit first. The "Stáhnout SVG"
@@ -323,7 +341,7 @@
     };
     // A note (data-note) opens the footer, flush left under the chart as on
     // the page; credit and source follow beneath it.
-    const note = layout([itemFrom(btn.dataset.note, 400)].filter(Boolean), headerH + h + PAD);
+    const note = layout([itemFrom(btn.dataset.note, 400)].filter(Boolean), headerH + h + PAD, "start", inset);
     const footTop = note.lines.length ? note.end + PAD : headerH + h + PAD;
 
     // The two sit on one line. Measuring first rather than assuming they fit:
@@ -389,9 +407,9 @@
       const stroke = el.getAttribute("stroke");
       if (!stroke || stroke === "none") el.remove();
     });
-    inner.setAttribute("x", PAD);
+    inner.setAttribute("x", 0);
     inner.setAttribute("y", headerH);
-    inner.setAttribute("width", cw);
+    inner.setAttribute("width", w);
     inner.setAttribute("height", h);
     out.appendChild(inner);
 
@@ -471,7 +489,7 @@
 
   // A raster has one fixed resolution, so it is drawn larger than the chart is
   // on screen — otherwise it is unusable in anything but a web page.
-  const PNG_SCALE = 2;
+  const PNG_SCALE = 4;
 
   // Rasterised by handing the SVG to an <img> and drawing that onto a canvas.
   // An <img> may not load anything external, which is exactly why the outline
@@ -525,6 +543,9 @@
     const { out, inner, src, family, lines } = buildSvg(btn);
     return loadFamily(primaryFamily(family)).then(fonts => {
       const outlined = !!fonts && outlineInto(inner, src, fonts);
+      // outlineInto drops omitted text itself (it needs the clone's texts in
+      // step with the live ones until then); text left live is dropped here.
+      if (!outlined) inner.querySelectorAll("[data-export-omit]").forEach(el => el.remove());
       appendLines(out, lines, outlined ? fonts : null);
       return emit(out, btn);
     });

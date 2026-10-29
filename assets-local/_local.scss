@@ -1,4 +1,5 @@
 @use "colors";
+@use "roboto";
 @use "product-page";
 @use "atlas-dekarbonizace-page";
 @use "atlas-klimaticke-zmeny-page";
@@ -7,6 +8,7 @@
 @use "dovoz-fosilnich-paliv";
 @use "cbam-charts";
 @use "cbam-vypocet";
+@use "ets-dashboard";
 
 /* Local CSS for Czech web version */
 
@@ -101,6 +103,57 @@ $c-callout-text: #373633;
     border-radius: 0.5rem;
     background: $c-callout-background;
     color: $c-callout-text;
+}
+
+// Commentary in explainers ("Komentář Fakt o klimatu:", "Komentář Centra pro…"):
+// <div class="callout-commentary" markdown="1">…</div> around the heading and its paragraphs,
+// so the line runs unbroken along all of them. Grey as .contrast-figure (web-core).
+$callout-commentary-size: 0.9rem;
+$callout-commentary-logo: 16px;
+
+.callout-commentary {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: $callout-commentary-size;
+    margin-bottom: 1.5rem;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    // A chart box inside a commentary (revize-ets: the Öko-Institut chart) is not commentary text,
+    // and the commentary's own line already marks it off: no second line from .contrast-figure.
+    .longread-figure {
+        border-left: none;
+        padding-inline-start: 0;
+        // A toggle between two paragraphs of the commentary: its title in the
+        // commentary's type size, and none of the figure's usual 2rem of air.
+        margin-block: 0.75rem;
+
+        .expander-block { margin-block: 0; }
+        a.expander, .expander-title { font-size: $callout-commentary-size; }
+        .expander-title p { margin: 0; }
+    }
+
+    // Org mark before the "Komentář …:" heading: <div class="callout-commentary fok|cde">.
+    // Decorative — the heading names the org right beside it.
+    &.fok > p:first-child,
+    &.cde > p:first-child {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        &::before {
+            content: "";
+            flex: none;
+            width: $callout-commentary-logo;
+            height: $callout-commentary-logo;
+            background: center / contain no-repeat;
+        }
+    }
+
+    &.fok > p:first-child::before { background-image: url("/assets-local/logo-no-text.svg"); }
+    &.cde > p:first-child::before { background-image: url("/assets-local/author-logos/cde-znak.png"); }
 }
 
 .extremy-kulicka {

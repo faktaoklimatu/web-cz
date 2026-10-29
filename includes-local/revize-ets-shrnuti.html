@@ -1,0 +1,80 @@
+<style>
+/* Boxy po vzoru #cbam-vypocet: rámeček v barvě boxu a jemná výplň. */
+.ets-shrnuti { display: grid; grid-template-columns: 1fr; gap: .75rem; margin-block: 2rem; color: #3b3b93; }
+.ets-shrnuti .box { padding: .8rem; border: 1px solid currentColor; border-radius: 6px; background: rgba(59, 59, 147, .02); }
+.ets-shrnuti .box-title { font-size: 1.2rem; font-weight: 400; line-height: 1.15; margin: 0 0 .75rem; }
+.ets-shrnuti .box-title strong { font-weight: 700; }
+.ets-shrnuti .box-note { font-size: .9rem; line-height: 1.25; color: #555; margin: 0 0 .75rem; }
+.ets-shrnuti .box-note strong { color: #3b3b93; }
+.ets-shrnuti ul { list-style: none; padding: 0; margin: 0; }
+.ets-shrnuti li { display: grid; grid-template-columns: 1.6rem 1fr; column-gap: .5rem; font-size: .9rem; line-height: 1.25; margin-bottom: .6rem; }
+.ets-shrnuti li .icon { display: flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: #3b3b93; color: #fff; font-size: .8rem; }
+.ets-shrnuti li strong { display: block; }
+.ets-shrnuti svg { display: block; width: 100%; max-width: 20rem; }
+.ets-shrnuti svg text { font-size: 12px; font-weight: 700; }
+@media (min-width: 576px) { .ets-shrnuti { grid-template-columns: repeat(2, 1fr); } }
+/* At four columns the double-width sectors box fills the eighth slot; at two it would leave holes. */
+@media (min-width: 1200px) { .ets-shrnuti { grid-template-columns: repeat(4, 1fr); } .ets-shrnuti .box-wide { grid-column: span 2; } }
+</style>
+
+<div class="ets-shrnuti wide-figure-desktop">
+  <div class="box">
+    <p class="box-title"><strong>Zpomalení tempa snižování emisí</strong></p>
+    <!-- ponytail: schéma, ne data. Strop 2030 ≈ 842 Mt, krok = LRF × 2 084 Mt (průměr 2008–2012);
+         současnost 4,4 % → nula 2040, revize 3,7 % (2031–2035) a 1,7 % → nula 2048.
+         Čísla odděluje čárka, ne mezera: space-replacement.rb (web-core) by mezeru před trojciferným číslem
+         nahradil úzkou nezlomitelnou mezerou a rozbil viewBox i points. -->
+    <svg viewBox="0,0,200,152" role="img" aria-label="Současná trajektorie emisního stropu klesá na nulu v roce 2040, podle revize až v roce 2048.">
+      <line x1="10" y1="130" x2="194" y2="130" stroke="#515b66" stroke-width="1"/>
+      <polyline fill="none" stroke="#515b66" stroke-width="3" points="16.0,23.1,25.9,23.1,25.9,36.1,35.8,36.1,35.8,49.2,45.6,49.2,45.6,62.3,55.5,62.3,55.5,75.3,65.4,75.3,65.4,88.4,75.3,88.4,75.3,101.5,85.2,101.5,85.2,114.5,95.1,114.5,95.1,127.6,104.9,127.6,104.9,130.0"/>
+      <polyline fill="none" stroke="#3b3b93" stroke-width="3" points="16.0,21.0,25.9,21.0,25.9,32.0,35.8,32.0,35.8,43.0,45.6,43.0,45.6,54.0,55.5,54.0,55.5,64.9,65.4,64.9,65.4,70.0,75.3,70.0,75.3,75.0,85.2,75.0,85.2,80.1,95.1,80.1,95.1,85.1,104.9,85.1,104.9,90.2,114.8,90.2,114.8,95.2,124.7,95.2,124.7,100.3,134.6,100.3,134.6,105.3,144.5,105.3,144.5,110.4,154.4,110.4,154.4,115.4,164.2,115.4,164.2,120.5,174.1,120.5,174.1,125.5,184.0,125.5,184.0,130.0"/>
+      <text x="112" y="80" fill="#3b3b93">revize</text>
+      <text x="16" y="108" fill="#515b66">současná</text>
+      <text x="16" y="122" fill="#515b66">trajektorie</text>
+      <text x="16" y="148" fill="#515b66" text-anchor="middle">2031</text>
+      <text x="104.9" y="148" fill="#515b66" text-anchor="middle">2040</text>
+      <text x="184" y="148" fill="#3b3b93" text-anchor="middle">2048</text>
+    </svg>
+  </div>
+
+  <div class="box box-wide">
+    <p class="box-title">Rozšíření <strong>o další sektory</strong></p>
+    <ul>
+      <li><span class="icon" aria-hidden="true"><i class="fa-solid fa-plane"></i></span>
+        <span><strong>Lety z EHP do třetích zemí v okruhu 5 tisíc kilometrů</strong> od letiště ve Frankfurtu <strong>+ veškeré soukromé lety</strong>
+          od roku 2029</span></li>
+      <li><span class="icon" aria-hidden="true"><i class="fa-solid fa-ship"></i></span>
+        <span><strong>Lodě s tonáží 400–5&nbsp;000</strong>
+          od roku 2031</span></li>
+      <li><span class="icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></span>
+        <span><strong>Spalování komunálního odpadu</strong>
+          postupně v letech 2031–2034</span></li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Využití <strong>mezinárodních kreditů</strong></p>
+    <p class="box-note">Komise uvolní do dražby 260 mil. povolenek a výnosy využije na nákup <strong>mezinárodních kreditů</strong> v objemu 260 Mt CO<sub>2</sub>.</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Zahrnutí <strong>negativních emisí</strong></p>
+    <p class="box-note">Komise uvolní do dražby 250 mil. povolenek a výnosy využije na nákup <strong>certifikátů dokládajících odstranění emisí</strong>.</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Založení <strong>Průmyslové dekarbonizační banky</strong></p>
+    <p class="box-note">Banka doplní Inovační a Modernizační fond při <strong>podpoře průmyslu v dekarbonizaci</strong>. Bude fungovat ve dvou fázích.</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title"><strong>Nová pravidla pro využití výnosů</strong></p>
+    <p class="box-note">Státy budou muset nejméně <strong>polovinu výnosů</strong> z dražeb použít přímo na dekarbonizaci sektorů v ETS.</p>
+    <p class="box-note"><strong>Modernizační fond</strong> bude fungovat i po roce 2030.</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title"><strong>Bezplatné povolenky nejméně do roku 2038</strong></p>
+    <p class="box-note">Odvětví v CBAM budou dostávat bezplatné povolenky o čtyři roky déle. Nově ale firmy budou muset předložit <strong>plán investic do dekarbonizace</strong>.</p>
+  </div>
+</div>
