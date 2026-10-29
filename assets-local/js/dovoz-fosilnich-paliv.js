@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (+toolFrom.value >= +toolTo.value)
         r.value = r === toolFrom ? +toolTo.value - +r.step : +toolFrom.value + +r.step;
       paintRange();
-      drawAll();
+      drawTool();
     }));
     document.querySelectorAll('.tool [data-control] button').forEach(b => b.addEventListener('click', () => {
       const group = b.closest('[data-control]');
@@ -804,7 +804,7 @@ document.addEventListener('DOMContentLoaded', () => {
       TOOL[group.dataset.control] = b.dataset.value;
       group.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
       if (group.dataset.control === 'step') setSlider(from, to);
-      drawAll();
+      drawTool();
     }));
     // Palivo: checkboxes, either fuel or both, never neither — the last one
     // ticked stays ticked.
@@ -813,13 +813,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const picked = fuelBoxes.filter(b => b.checked).map(b => b.dataset.fuel);
       if (!picked.length) { box.checked = true; return; }
       TOOL.fuel = picked.length > 1 ? 'both' : picked[0];
-      drawAll();
+      drawTool();
     }));
     // Členění: a checkbox, by country or the total (TOOL.split, data-option).
     const splitBox = document.querySelector('.tool [data-option="split"]');
     document.querySelectorAll('.tool [data-option]').forEach(box => box.addEventListener('change', () => {
       TOOL[box.dataset.option] = box.checked;
-      drawAll();
+      drawTool();
     }));
 
     // What the controls add up to. Prices by country only for one fuel: a
@@ -1123,8 +1123,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => URL.revokeObjectURL(a.href));
     });
 
-    // Each entry draws into its container at that container's own width;
-    // hidden containers measure 0 and are skipped.
     // The KPI cards' legends: above the chart, square swatches, each label in
     // its swatch's colour (darkened where it would not read on white) and a
     // third of a swatch away from it.
@@ -1255,6 +1253,10 @@ document.addEventListener('DOMContentLoaded', () => {
       ['#chart-plyn-cena',           price('#chart-plyn-cena', 'years', 'natural_gas', CFG.colorPlyn)],
       ['#chart-ropa-cena-mesice',    price('#chart-ropa-cena-mesice', 'months', 'crude_oil', CFG.colorRopa)],
       ['#chart-plyn-cena-mesice',    price('#chart-plyn-cena-mesice', 'months', 'natural_gas', CFG.colorPlyn)],
+    ];
+    // The explorer, drawn after the rest and on its own when its controls
+    // change: the whole chart first, as the tiles lie over its box.
+    const toolCharts = [
       ['#chart-tool',         toolChart],
       ['#chart-tool-tiles',   toolTiles],
     ];
@@ -1278,22 +1280,35 @@ document.addEventListener('DOMContentLoaded', () => {
         .forEach(([sel, draw]) => draw(Math.round(document.querySelector(sel).getBoundingClientRect().width)));
     };
 
-    const drawAll = () => {
-      // Before measuring: these decide which charts show at all.
+    // Each entry draws into its container at that container's own width;
+    // hidden containers measure 0 and are skipped.
+    const drawEach = list => list.forEach(([sel, draw]) => {
+      const w = Math.round(document.querySelector(sel).getBoundingClientRect().width);
+      if (w > 0) draw(w);
+    });
+    // Before measuring: these decide which of the explorer's boxes show.
+    const prepareTool = () => {
       document.body.classList.toggle('tiles-toolTiles', toolView().tiles);
+      document.querySelector('.tool .fuel-plot').style.minHeight = '';
+    };
+    const drawAll = () => {
+      prepareTool();
       document.querySelectorAll('.fuel-plot').forEach(p => { p.style.minHeight = ''; });
       document.body.classList.toggle('span-long', span === 'long');
       document.body.classList.toggle('span-recent', span === 'recent');
-      charts().forEach(([sel, draw]) => {
-        const w = Math.round(document.querySelector(sel).getBoundingClientRect().width);
-        if (w > 0) draw(w);
-      });
+      drawEach([...charts(), ...toolCharts]);
       levelKpi();
+    };
+    // The explorer's controls redraw the explorer alone, once a frame: a
+    // dragged slider fires many input events between two paints.
+    let toolFrame;
+    const drawTool = () => {
+      cancelAnimationFrame(toolFrame);
+      toolFrame = requestAnimationFrame(() => { prepareTool(); drawEach(toolCharts); });
     };
     // The collapsed explorer has no width, so drawAll skips it; draw it once
     // opened.
-    $('#nastroj-collapse').on('shown.bs.collapse', drawAll);
-    // ponytail: any control redraws every chart, not just its own — cheap here.
+    $('#nastroj-collapse').on('shown.bs.collapse', drawTool);
     drawAll();
     // The left margins are measured in Roboto: once it loads, again.
     document.fonts.ready.then(drawAll);
