@@ -299,7 +299,8 @@ body.dovoz-fosilnich-paliv {
     .chart-panel,
     .fuel-figure,
     .span-select,
-    .tool {
+    .tool,
+    .sources a.expander {
         font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
     }
 
@@ -361,8 +362,19 @@ body.dovoz-fosilnich-paliv {
         margin-top: 56px;
     }
 
-    /* The explorer's heading is the expander link that opens it. */
-    .tool a.expander {
+    /* The sources under the explorer, collapsed the same way. */
+    .sources {
+        margin-top: 40px;
+    }
+
+    .sources-body {
+        margin-top: 16px;
+    }
+
+    /* The explorer's heading, and the sources', is the expander link that
+       opens it. */
+    .tool a.expander,
+    .sources a.expander {
         align-items: center;
         cursor: pointer;
 
@@ -562,6 +574,15 @@ body.dovoz-fosilnich-paliv {
         }
     }
 
+    /* A caveat under a chart in the fuel columns (the prices aren't exchange
+       prices). */
+    .chart-note {
+        margin: 8px 0 0;
+        font-size: var(--dovoz-note-size);
+        line-height: 1.45;
+        color: #718096;
+    }
+
     /* What the chart shows: units, step and caveats. Under the chart, as in
        the ETS overview, so a summary that wraps further never moves the chart;
        it is still the subtitle of a downloaded file. */
@@ -571,8 +592,11 @@ body.dovoz-fosilnich-paliv {
         color: #718096;
     }
 
-    /* Source, and "Stáhnout: PNG, SVG" read as one phrase that never wraps. */
+    /* Source, and "Stáhnout: PNG, SVG" read as one phrase that never wraps.
+       The shared include (chart-foot.html) brings its own margin; the
+       columns' spacing is this page's. */
     .chart-foot {
+        margin-bottom: 0;
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;

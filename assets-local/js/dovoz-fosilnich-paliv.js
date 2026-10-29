@@ -127,6 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
     : { of: 'výhřevnosti', name: 'výhřevnost', in: 've výhřevnosti' };
   // The page's text that names it (a source line in the .md).
   document.querySelectorAll('[data-energy-basis]').forEach(el => { el.textContent = BASIS.in; });
+  // …and that quotes CONVERSIONS (the sources section), with the decimals given.
+  document.querySelectorAll('[data-conversion]').forEach(el => {
+    const v = el.dataset.conversion.split('.').reduce((o, k) => o?.[k], CONVERSIONS);
+    if (v != null) el.textContent = fokFormatNumber(v, String(v).split('.')[1]?.length ?? 0);
+  });
   // Energy in CFG.energyUnit; `perPJ` is how many of it make a PJ.
   const ENERGY = { twh: { label: 'TWh', perPJ: 1 / 3.6 }, pj: { label: 'PJ', perPJ: 1 } }[CFG.energyUnit];
   const toEnergy = (kg, commodity) => kg * CV[commodity] * 1e-9 * ENERGY.perPJ;
@@ -544,6 +549,27 @@ document.addEventListener('DOMContentLoaded', () => {
           yFormat: first ? v => fokFormatNumber(v, 0) : () => '',
         });
       });
+      // Laid out, the tiles become one SVG, as countryRows' rows are one, so a
+      // download takes them all: each tile's <svg> nested where it stood, each
+      // name as text in its place.
+      const box = grid.node().getBoundingClientRect();
+      const at = el => { const r = el.getBoundingClientRect(); return { x: r.left - box.left, y: r.top - box.top, w: r.width, h: r.height }; };
+      const parts = [...grid.node().children].map(cell => {
+        const label = cell.querySelector('.mini-label');
+        return { svg: cell.querySelector('svg'), s: at(cell.querySelector('svg')), l: at(label),
+          text: label.textContent, color: label.style.color };
+      });
+      grid.html('').style('grid-template-columns', '1fr').style('grid-template-rows', '1fr');
+      const out = fokResponsiveSVG(grid, `0 0 ${Math.round(box.width)} ${Math.round(box.height)}`);
+      parts.forEach(p => {
+        out.append('text').attr('x', p.l.x).attr('y', p.l.y + p.l.h / 2).attr('dy', '0.35em')
+          .attr('fill', p.color).attr('font-family', theme.font).attr('font-size', 13).attr('font-weight', 600)
+          .text(p.text);
+        d3.select(p.svg).attr('class', null).attr('overflow', 'visible')
+          .attr('x', p.s.x).attr('y', p.s.y).attr('width', p.s.w).attr('height', p.s.h);
+        out.node().appendChild(p.svg);
+      });
+      return out;
     };
 
     // Spending: one row of columns per country, stacked in a single chart —
@@ -1091,6 +1117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const yTop = d3.nice(0, toolTops(v).tiles || 1, 3)[1];
       const ends = rows.length ? [rows[0], rows[rows.length - 1]] : [];
+      d3.select('#tool-svg').attr('id', null);
       tiles('#chart-tool-tiles', '#chart-tool', v.codes, (node, k, t) => {
         fokLineChart(node, rows, {
           width: t.width, height: t.height, margins: t.margins, yFormat: t.yFormat,
@@ -1106,12 +1133,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // stay inside the tile instead of running into the next one.
         d3.select(node).selectAll('.fok-axis--x .tick text')
           .attr('text-anchor', (_, i, all) => i === 0 ? 'start' : i === all.length - 1 ? 'end' : 'middle');
-      });
+      }).attr('id', 'tool-svg');
     };
 
     // "Stáhnout: CSV" under the explorer: what it shows, as a table — a row
-    // per year or month, a column per series, in the chart's unit. A BOM, so
-    // Excel reads the diacritics as UTF-8.
+    // per year or month, a column per series, in the chart's unit. Czech
+    // conventions, as Czech Excel opens it: ";" between fields, a decimal
+    // comma, and a BOM so the diacritics read as UTF-8.
     document.getElementById('tool-csv').addEventListener('click', () => {
       const v = toolView();
       const { rows, keys, labels, lines, unit } = toolData(v);
@@ -1120,9 +1148,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const table = [
         ['rok', ...(byMonth ? ['měsíc'] : []), ...series.map(([, label]) => `${label} [${unit}]`)],
         ...rows.map(r => [r.year, ...(byMonth ? [r.month] : []),
-          ...series.map(([k]) => Number.isFinite(r[k]) ? +r[k].toFixed(3) : '')]),
+          ...series.map(([k]) => Number.isFinite(r[k]) ? String(+r[k].toFixed(3)).replace('.', ',') : '')]),
       ];
-      const blob = new Blob(['﻿' + d3.csvFormatRows(table)], { type: 'text/csv;charset=utf-8' });
+      const blob = new Blob(['\ufeff' + d3.dsvFormat(';').formatRows(table)], { type: 'text/csv;charset=utf-8' });
       const a = Object.assign(document.createElement('a'),
         { href: URL.createObjectURL(blob), download: 'dovoz-fosilnich-paliv.csv' });
       a.click();
