@@ -292,11 +292,16 @@
       const link = el.querySelector && el.querySelector("a");
       // A child element is a run of its own weight and colour (the period in
       // regular, a fuel's name in its colour); bare text takes the block's.
-      const runs = Array.from(el.childNodes).map(n => ({
-        text: n.textContent,
-        weight: n.nodeType === 1 ? parseInt(window.getComputedStyle(n).fontWeight, 10) || weight : weight,
-        fill: n.nodeType === 1 ? window.getComputedStyle(n).color : null,
-      }));
+      // So does a link: the site's link colour means nothing in a file, where
+      // the line keeps the link itself (href, below).
+      const runs = Array.from(el.childNodes).map(n => {
+        const own = n.nodeType === 1 && n.tagName !== "A" && window.getComputedStyle(n);
+        return {
+          text: n.textContent,
+          weight: own ? parseInt(own.fontWeight, 10) || weight : weight,
+          fill: own ? own.color : null,
+        };
+      });
       return {
         text, weight, runs,
         size: Math.round(parseFloat(cs.fontSize)),
