@@ -193,8 +193,10 @@ fuels:
         </div>
         <div class="control-group control-group--inline">
           <span class="control-label">Kontext</span>
-          <label class="chart-toggle"><input type="checkbox" data-option="invasion" autocomplete="off"> začátek ruské invaze na Ukrajinu</label>
-          <label class="chart-toggle"><input type="checkbox" data-option="hormuz" autocomplete="off"> začátek krize v Hormuzském průlivu</label>
+          {% comment %} Text volby je i popiskem události v grafu; datum je
+          v CONTEXT v dovoz-fosilnich-paliv.js. {% endcomment %}
+          <label class="chart-toggle"><input type="checkbox" data-option="invasion" autocomplete="off"> Začátek ruské invaze na Ukrajinu</label>
+          <label class="chart-toggle"><input type="checkbox" data-option="hormuz" autocomplete="off"> Začátek krize v Hormuzském průlivu</label>
         </div>
       </div>
       <div class="chart-panel tool-panel">

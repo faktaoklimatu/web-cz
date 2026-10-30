@@ -919,12 +919,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     // Context events, each a checkbox under Kontext: a dated line on the year
     // scale, or within its column for spending. Without labels in the tiles.
+    // The label is the checkbox's own text, in the .md.
+    const contextToggle = option => document.querySelector(`.tool [data-option="${option}"]`).closest('label');
     const CONTEXT = [
-      { option: 'invasion', label: 'Začátek ruské invaze na Ukrajinu', date: [2022, 2, 24] },
+      { option: 'invasion', date: [2022, 2, 24] },
       // US and Israeli strikes on Iran, 28 February 2026; Iran declared the
       // strait closed on 4 March (en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis).
-      { option: 'hormuz', label: 'Začátek krize v Hormuzském průlivu', date: [2026, 2, 28] },
-    ];
+      { option: 'hormuz', date: [2026, 2, 28] },
+    ].map(e => ({ ...e, label: contextToggle(e.option).textContent.trim() }));
     // Drawn as the KPI's comparisons are (Výdaje na školství): grey, dashed
     // 4 : 1, the label in the line's grey darkened to read. With both shown,
     // the earlier's label goes a row higher, so on a narrow chart they never
@@ -981,8 +983,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       // Likewise a context event outside the period, which would draw nothing.
       CONTEXT.forEach(e => {
-        document.querySelector(`.tool [data-option="${e.option}"]`).closest('label')
-          .style.visibility = contextInView(e, v) ? '' : 'hidden';
+        contextToggle(e.option).style.visibility = contextInView(e, v) ? '' : 'hidden';
       });
       document.getElementById('tool-period').textContent = periodText(v);
 
