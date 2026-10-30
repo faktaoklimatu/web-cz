@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const bold = t => `<span style="font-weight:700">${t}</span>`;
       const html = `<div style="font-family:${FoKTheme.font};max-width:280px">`
         + `<strong>${fokFormatNumber(totalE(last), 0)} TWh výhřevnosti</strong><br>`
-        + `Energie dovezené ropy a zemního plynu ve ${bold('výhřevnosti')}, tak jak ji používají energetické bilance (ČSÚ, Eurostat).</div>`;
+        + `Energie dovezené ropy a zemního plynu vyjádřená ve ${bold('výhřevnosti')}, jak ji uvádějí energetické bilance ČSÚ a Eurostatu.</div>`;
       const tip = fokTooltip(FoKTheme);
       d3.select(document.getElementById('kpi-energy').closest('.kpi')).classed('kpi--info', true)
         .on('mouseenter', e => { tip.show(html); tip.move(e); })
@@ -638,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Twelve labels fit a half-row on a desktop, not on a phone.
     const isNarrow = sel => document.querySelector(sel).getBoundingClientRect().width < 440;
     // 24 February 2022: day 55 of the year, on the year-fraction scale of the month charts.
-    const INVASION = { x: 2022 + 54 / 365, label: 'Ruská invaze na Ukrajinu' };
+    const INVASION = { x: 2022 + 54 / 365, label: 'Začátek ruské invaze na Ukrajinu' };
 
     // The columns' last two charts: the latest 36 months, money then energy.
     // Spending shares an axis across the fuels, like the yearly charts.
@@ -1053,7 +1053,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('tool-summary').textContent = [
         { energy: 'Energie dovozu v TWh výhřevnosti',
           czk: 'Celní hodnota dovozu v mld. Kč',
-          price: `Celní hodnota dělená výhřevností dovozu, v ${PRICE_UNIT}` }[TOOL.metric]
+          price: `Celní hodnota dovozu dělená jeho energií ve výhřevnosti, v ${PRICE_UNIT}` }[TOOL.metric]
           + (TOOL.step === 'years' ? ', roční' : ', měsíční') + (v.price ? ' průměry.' : ' součty.'),
         v.tiles ? 'Každá země zvlášť, na společné ose.' : '',
         TOOL.step === 'years' && v.to === lastFullYear && lastYear > lastFullYear ? `Rok ${lastYear} je neúplný, ukazují ho měsíce.` : '',

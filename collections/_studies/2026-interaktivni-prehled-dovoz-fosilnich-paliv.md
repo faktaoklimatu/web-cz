@@ -1,7 +1,7 @@
 ---
 layout:        empty
 type:          "Interaktivní přehled"
-title:         "Dovoz ropy a zemního plynu do&nbsp;ČR"
+title:         "Dovoz ropy a zemního plynu do&nbsp;Česka"
 slug:          2026-interaktivni-prehled-dovoz-fosilnich-paliv
 body-class:    dovoz-fosilnich-paliv
 redirect_from:
@@ -9,7 +9,7 @@ redirect_from:
 published:     2026-10-30
 caption:       "Kolik Česko platí za dovoz ropy a zemního plynu a odkud je dováží?"
 intro: |
-    V posledních letech se výrazně měnila cena ropy a zemního plynu na světových trzích, což vedlo k výkyvům nákladů na jejich dovoz do Česka. Po ruské invazi na Ukrajinu vzrostly ceny fosilních paliv (až k vrcholu v roce 2022) a Evropa postupně snižovala jejich dovoz z Ruska. V roce 2026 další cenový šok vyvolala krize v Hormuzském průlivu.
+    V posledních letech se výrazně měnily ceny ropy a zemního plynu na světových trzích, což vedlo k výkyvům nákladů na jejich dovoz do Česka. Po ruské invazi na Ukrajinu vzrostly ceny fosilních paliv (až k vrcholu v roce 2022) a Evropa postupně snižovala jejich dovoz z Ruska. V roce 2026 další cenový šok vyvolala krize v Hormuzském průlivu.
 preview_type: "Interaktivní přehled"
 preview_image: "/assets/studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.png"
 include_in_search: true
@@ -29,7 +29,7 @@ fuels:
     energie: "Postupný konec|dovozu z Ruska"
     czk-mesice: "Začátek krize|v Hormuzském průlivu"
   intro: |
-    **Ropa je klíčová pro výrobu pohonných hmot**, dále pak jako surovina pro chemický průmysl. V Evropě tvoří ropa jen asi 40 % ceny pohonných hmot (kvůli vysokému zdanění), proto na čerpacích stanicích nejsou tak výrazné cenové výkyvy jako v ceně samotné komodity.
+    **Ropa je klíčová pro výrobu pohonných hmot**, slouží také jako surovina pro chemický průmysl. Ceny benzínu a nafty na čerpacích stanicích mají menší výkyvy, protože cena samotné ropy tvoří asi jen 40 % ceny pohonných hmot (kvůli vysokému zdanění).
 - name: Zemní plyn
   slug: plyn
   acc: zemní plyn
@@ -39,7 +39,7 @@ fuels:
     energie: "Postupný konec|dovozu z Ruska"
     energie-mesice: "Sezónní vrchol|doplňování zásobníků"
   intro: |
-    **Zemní plyn je zásadní zdroj tepla v budovách a průmyslu** (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí dále růst.
+    **Zemní plyn je zásadní zdroj tepla v budovách a průmyslu** (tvoří asi 20 % celkové konečné spotřeby energie v Česku). Také se využívá na výrobu elektřiny a dálkově dodávaného tepla, zde jeho význam bude v dalších letech při odchodu od uhlí růst.
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
@@ -63,7 +63,7 @@ fuels:
     <div class="chart-row" id="main-charts">
       <div class="chart-panel">
         <div class="kpi">
-          <div class="kpi-label">Výdaje za ropu a plyn</div>
+          <div class="kpi-label">Výdaje za ropu a zemní plyn</div>
           <div class="kpi-value" id="kpi-total"></div>
         </div>
         <div id="chart-celkem-czk"></div>
@@ -130,7 +130,7 @@ fuels:
         </div>
         <div id="{{ id }}"></div>
         {%- if metric == "cena" %}
-        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená jeho množstvím (přepočteným na výhřevnost), nikoli burzovní cena.</p>
+        <p class="chart-note">Průměrná dovozní cena je celní hodnota dovozu dělená energií dovezeného paliva (ve výhřevnosti), nikoli burzovní cena.</p>
         {%- endif %}
         {% include includes-local/chart-foot.html svg=id file=file title_from=title_id source="Zdroj: ČSÚ, statistika zahraničního obchodu" arrow=arrow %}
       </div>
