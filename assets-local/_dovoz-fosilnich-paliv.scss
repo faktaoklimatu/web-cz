@@ -6,7 +6,7 @@
  * fok-theme.js and charts/_charts.scss — so there are no colours, fonts or
  * sizes for the chart contents in this file.
  *
- * Scoped to the page's body class: the names are ordinary (.kpi-card,
+ * Scoped to the page's body class: the names are ordinary (.kpi,
  * .chart-panel) and main.scss pulls this file in BEFORE the universal rules,
  * so an unscoped copy would also lose to web-core at equal specificity.
  *
@@ -304,7 +304,7 @@ body.dovoz-fosilnich-paliv {
     }
 
     /* ── The explorer by country ("každá země ve vlastním grafu") ─────────── */
-    /* A .fuel-plot holds the whole chart and its tiles; drawAll sets
+    /* A .fuel-plot holds the whole chart and its tiles; prepareTool sets
        body.tiles-toolTiles while they are on. The whole chart stays laid out,
        only hidden, and the tiles are drawn over its box — so switching never
        changes the figure's height and the page does not jump. tiles() in the
