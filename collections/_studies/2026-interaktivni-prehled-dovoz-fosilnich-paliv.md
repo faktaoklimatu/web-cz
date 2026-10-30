@@ -17,16 +17,14 @@ extra-scripts:
 - /assets-local/js/dovoz-fosilnich-paliv.js
 - /assets-local/js/chart-download.js
 # Sloupce paliv: nadpis s úvodem (markdown), pak grafy, viz smyčka níže.
-# acc/gen: 4. a 2. pád názvu do nadpisů grafů, file_*: totéž v názvech
-# stahovaných souborů. arrows: text šipky v grafu podle id grafu bez
+# acc/gen: 4. a 2. pád názvu do nadpisů grafů (z nadpisu přes slugify
+# i do názvů stahovaných souborů). arrows: text šipky v grafu podle id grafu bez
 # předpony (řádky oddělené „|“); kam míří, určuje dovoz-fosilnich-paliv.js.
 fuels:
 - name: Ropa
   slug: ropa
   acc: ropu
   gen: ropy
-  file_acc: ropu
-  file_gen: ropy
   arrows:
     energie: "Postupný konec|dovozu z Ruska"
     czk-mesice: "Začátek krize|v Hormuzském průlivu"
@@ -36,8 +34,6 @@ fuels:
   slug: plyn
   acc: zemní plyn
   gen: zemního plynu
-  file_acc: zemni-plyn
-  file_gen: zemniho-plynu
   arrows:
     czk: "Začátek ruské|invaze na Ukrajinu"
     energie: "Postupný konec|dovozu z Ruska"
@@ -119,17 +115,14 @@ fuels:
       {%- case metric %}
       {%- when "czk" %}
         {%- assign title = "Výdaje za " | append: fuel.acc %}
-        {%- assign file = "vydaje-za-" | append: fuel.file_acc %}
       {%- when "energie" %}
         {%- assign title = "Dovoz " | append: fuel.gen %}
-        {%- assign file = "dovoz-" | append: fuel.file_gen %}
       {%- else %}
         {%- assign title = "Průměrná dovozní cena " | append: fuel.gen %}
-        {%- assign file = "dovozni-cena-" | append: fuel.file_gen %}
       {%- endcase %}
       {%- assign id = "chart-" | append: fuel.slug | append: "-" | append: key %}
       {%- assign title_id = id | append: "-title" %}
-      {%- assign file = file | append: file_end %}
+      {%- assign file = title | slugify: "latin" | append: file_end %}
       {%- assign arrow = fuel.arrows[key] %}
       <div class="fuel-figure" data-span="{{ span }}">
         <div class="chart-head">
