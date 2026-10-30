@@ -130,6 +130,7 @@ subtopics:
   - emisni-povolenky-ets
   - zpoplatneni-emisi-svet
   - repowereu
+  - 2026-interaktivni-prehled-dovoz-fosilnich-paliv
   - vyvoj-systemu-elektriny
   - ceny-elektriny-oze
   - 21-rust-cen-elektriny

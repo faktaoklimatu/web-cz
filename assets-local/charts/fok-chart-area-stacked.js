@@ -29,7 +29,18 @@
  *   labels        {object}    { key: labelString }
  *   proportional  {boolean}   normalize each row to 100 % (default false)
  *   legend        {boolean}   render a color legend below the chart (default false)
+ *   totalLine     {string}    colour of a solid line along the top of the stack (the total)
+ *   yMax          {number}    fixed top of the y-axis, e.g. to share a scale between charts
+ *   xDomain       {[min,max]} override x scale domain, e.g. a full year of months
+ *   xFormat       {function}  tick formatter for x axis
+ *   markers       {object[]}  events: { x, label } — a dashed vertical line, label above the plot
  *   yLabel        {string}    y-axis label
+ *   yLabelInline  {boolean}   the unit after the top tick label, not above the axis
+ *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
+ *   arrows        {object[]}  annotation arrows, as fokArrow's, with target, textEnd and
+ *                             controls as [x, y] in data units; the chart grows upward
+ *                             to fit their text
  *   title         {string}    chart title
  *   yFormat       {function}  override y-axis tick formatter
  *   tooltipHtml   {function}  (row) => HTML string shown on hover
@@ -43,7 +54,7 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   const margin = fokMargin(options.margins ?? {}, theme);
   const W      = options.width  ?? 800;
   const H      = options.height ?? 420;
-  const inner  = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const inner  = { h: H - margin.top - margin.bottom };
 
   const keys   = options.keys   ?? [];
   const colors = options.colors ?? {};
@@ -64,6 +75,19 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
 
   // Stack
   const series = d3.stack().keys(keys)(rows);
+
+  // The y scale first: the left margin fits its labels, the plot takes the rest.
+  const yMax   = options.proportional ? 100
+    : options.yMax ?? d3.max(series, s => d3.max(s, d => d[1]));
+  const yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]);
+  const yAxis  = {
+    tickValues: options.yTickValues ?? (options.proportional ? [0, 25, 50, 75, 100] : undefined),
+    tickFormat: options.yFormat
+      ?? (options.proportional ? v => `${Math.round(v)} %` : v => fokFormatNumber(v)),
+    gridValues: options.yGridValues,
+  };
+  margin.left ??= fokAxisYWidth(yScale, yAxis, theme);
+  inner.w = W - margin.left - margin.right;
 
   // ── Clear container ─────────────────────────────────────────────────────
   const container = d3.select(containerSelector);
@@ -86,19 +110,14 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
   const g   = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
   // ── Scales ──────────────────────────────────────────────────────────────
-  const xScale = d3.scaleLinear().domain(d3.extent(xVals)).range([0, inner.w]);
-  const yMax   = options.proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
-  const yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]);
+  const xScale = d3.scaleLinear().domain(options.xDomain ?? d3.extent(xVals)).range([0, inner.w]);
 
   // ── Grid + Axes ──────────────────────────────────────────────────────────
-  const yFmt = options.yFormat
-    ?? (options.proportional ? v => `${Math.round(v)} %` : v => fokFormatNumber(v));
 
   g.append('g')
     .attr('class', 'fok-axis fok-axis--y')
     .call(fokAxisY(yScale, {
-      tickValues: options.yTickValues ?? (options.proportional ? [0, 25, 50, 75, 100] : undefined),
-      tickFormat: yFmt,
+      ...yAxis,
       gridLines:  true,
       gridWidth:  inner.w,
     }, theme));
@@ -108,29 +127,21 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     .attr('transform', `translate(0,${inner.h})`)
     .call(fokAxisX(xScale, {
       tickValues: options.xTickValues ?? xVals,
-      tickFormat: v => String(Math.round(v)),
+      tickFormat: options.xFormat ?? (v => String(Math.round(v))),
     }, theme));
 
-  // ── Y-axis label ─────────────────────────────────────────────────────────
-  if (options.yLabel) {
-    g.append('text')
-      .attr('class', 'fok-axis-label')
-      .attr('x', -margin.left + 4)
-      .attr('y', -10)
-      .attr('text-anchor', 'start')
-      .attr('fill', theme.colors.grey)
-      .attr('font-family', theme.font)
-      .attr('font-size', theme.fontSize.axisLabel)
-      .text(options.yLabel);
-  }
-
   // ── Area + separator line generators ─────────────────────────────────────
+  // A row with a missing value (NaN) stacks to NaN from that band up, and both
+  // generators leave a gap there rather than drawing garbage.
+  const known = d => Number.isFinite(d[0]) && Number.isFinite(d[1]);
   const areaGen = d3.area()
+    .defined(known)
     .x((d, i) => xScale(xVals[i]))
     .y0(d => yScale(d[0]))
     .y1(d => yScale(d[1]));
 
   const topLineGen = d3.line()
+    .defined(known)
     .x((d, i) => xScale(xVals[i]))
     .y(d => yScale(d[1]));
 
@@ -154,6 +165,16 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
       .attr('opacity', 0.5)
       .attr('d', topLineGen);
   });
+
+  if (options.totalLine && series.length) {
+    g.append('path')
+      .datum(series[series.length - 1])
+      .attr('fill', 'none')
+      .attr('stroke', options.totalLine)
+      .attr('stroke-width', 2)
+      .attr('pointer-events', 'none')
+      .attr('d', topLineGen);
+  }
 
   // ── Tooltip + vertical crosshair ─────────────────────────────────────────
   const tip = fokTooltip(theme);
@@ -220,11 +241,27 @@ function fokAreaChartStacked(containerSelector, data, options = {}) {
     });
   }
 
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  fokMarkers(g, options.markers, m => xScale(m.x), inner, theme);
+
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend) {
     const legendItems = keys.map(k => ({ label: labels[k] ?? k, color: colors[k] ?? '#888' }));
-    fokLegend(container, legendItems, {}, theme);
+    fokLegend(container, legendItems, options.legendOptions, theme);
   }
 
-  return { svg, tip };
+  // ── Y-axis unit, over the data ────────────────────────────────────────────
+  if (options.yLabel) {
+    fokAxisYLabel(g, yScale, yAxis, options.yLabel,
+      { marginLeft: margin.left, inline: options.yLabelInline }, theme);
+  }
+
+  // ── Arrows (options.arrows) ──────────────────────────────────────────────
+  if (options.arrows?.length) {
+    fokArrowsIn(g, options.arrows, ([x, y]) => [xScale(x), yScale(y)], theme);
+    fokFitTop(svg, g, margin, W, H);
+  }
+
+  // The plot group and scales too, for whatever a page draws over the chart.
+  return { svg, tip, g, xScale, yScale };
 }

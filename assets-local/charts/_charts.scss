@@ -99,10 +99,14 @@
         gap: 8px;
     }
 
+    &--top {
+        margin: 0 0 0.5rem;
+    }
+
+    // The gap to the label is fokLegend's `gap`, as the label's margin.
     &__item {
         display: flex;
         align-items: center;
-        gap: 6px;
     }
 
     &__swatch {

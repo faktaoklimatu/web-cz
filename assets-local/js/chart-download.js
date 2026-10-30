@@ -1,6 +1,7 @@
 /* Shared download buttons for the site's d3 charts — SVG or PNG.
  *
- * Drop the script on a page and give any button the class and the target (data-svg):
+ * Drop the script on a page and give any button the class and the target (data-svg,
+ * the id of the <svg> or of the element holding it):
  *
  *   <button type="button" class="chart-download"
  *           data-svg="ets-svg-timeline"
@@ -12,10 +13,11 @@
  * data-format="png" rasterises instead, at PNG_SCALE times the chart's size on
  * screen; the filename's extension follows the format either way.
  *
- * data-title / data-subtitle / data-source are optional selectors (data-title-inset
- * overrides the title's left inset, in px). The first
- * two are drawn into a band above the chart and the third below it, under the
- * CREDIT line — on the page all three live in the panel's HTML rather than in
+ * data-title / data-subtitle / data-note / data-source are optional selectors
+ * (data-title-inset overrides the title's left inset, in px). The first two are
+ * drawn into a band above the chart; the note opens the band below it, flush
+ * left, and the source closes it, under the CREDIT line — on the page they live
+ * in the panel's HTML rather than in
  * the SVG, so the file would otherwise lose them. The page's own "Stáhnout SVG"
  * button is never drawn: it is a control, meaningless once the file is open
  * elsewhere. Everything else is read off the live chart, so the file follows
@@ -120,16 +122,42 @@
   // getComputedTextLength() reads 0 on a detached node — so it is measured on
   // a canvas instead of in the DOM.
   const measureCtx = document.createElement("canvas").getContext("2d");
-  function wrapToWidth(text, font, width) {
-    measureCtx.font = font;
+  // Wraps runs of text, each in its own weight and colour — a bold title with
+  // its period in regular, say: [{ text, weight, fill }] — to `width`. Breaks
+  // only at spaces, so a comma right after a run stays with it. Returns the
+  // lines, each as its runs again, [{ t, weight, fill }].
+  function wrapRuns(runs, size, family, width) {
+    const tokens = [];   // words glued by no space, each [{ t, weight, fill }]
+    let space = true;
+    runs.forEach(r => r.text.split(/(\s+)/).forEach(part => {
+      if (!part) return;
+      if (/^\s+$/.test(part)) { space = true; return; }
+      if (space || !tokens.length) tokens.push([]);
+      tokens[tokens.length - 1].push({ t: part, weight: r.weight, fill: r.fill });
+      space = false;
+    }));
+    // A line's runs: neighbours of one weight and colour merged, a space
+    // between tokens.
+    const segsOf = line => line.reduce((segs, token, i) => {
+      token.forEach((word, j) => {
+        const t = (i && !j ? " " : "") + word.t;
+        const last = segs[segs.length - 1];
+        if (last && last.weight === word.weight && last.fill === word.fill) last.t += t;
+        else segs.push({ t, weight: word.weight, fill: word.fill });
+      });
+      return segs;
+    }, []);
+    const widthOf = segs => segs.reduce((sum, g) => {
+      measureCtx.font = `${g.weight} ${size}px ${family}`;
+      return sum + measureCtx.measureText(g.t).width;
+    }, 0);
     const lines = [];
-    let line = "";
-    text.split(/\s+/).filter(Boolean).forEach(word => {
-      const next = line ? line + " " + word : word;
-      if (line && measureCtx.measureText(next).width > width) { lines.push(line); line = word; }
-      else line = next;
+    let line = [];
+    tokens.forEach(token => {
+      if (line.length && widthOf(segsOf(line.concat([token]))) > width) { lines.push(segsOf(line)); line = []; }
+      line.push(token);
     });
-    if (line) lines.push(line);
+    if (line.length) lines.push(segsOf(line));
     return lines;
   }
 
@@ -245,7 +273,10 @@
   // ── Export ────────────────────────────────────────────────────────────────
 
   function buildSvg(btn) {
-    const src = document.getElementById(btn.dataset.svg);
+    // data-svg names the <svg>, or the box a chart draws its <svg> into — a
+    // chart redrawn there gets a new one each time.
+    const el = document.getElementById(btn.dataset.svg);
+    const src = el && (el.tagName.toLowerCase() === "svg" ? el : el.querySelector("svg"));
     if (!src) throw new Error(`chybí <svg id="${btn.dataset.svg}">`);
     const rect = src.getBoundingClientRect();
     const w = Math.round(rect.width), h = Math.round(rect.height);
@@ -259,8 +290,20 @@
       if (!text) return null;
       const cs = window.getComputedStyle(el);
       const link = el.querySelector && el.querySelector("a");
+      // A child element is a run of its own weight and colour (the period in
+      // regular, a fuel's name in its colour); bare text takes the block's.
+      // So does a link: the site's link colour means nothing in a file, where
+      // the line keeps the link itself (href, below).
+      const runs = Array.from(el.childNodes).map(n => {
+        const own = n.nodeType === 1 && n.tagName !== "A" && window.getComputedStyle(n);
+        return {
+          text: n.textContent,
+          weight: own ? parseInt(own.fontWeight, 10) || weight : weight,
+          fill: own ? own.color : null,
+        };
+      });
       return {
-        text, weight,
+        text, weight, runs,
         size: Math.round(parseFloat(cs.fontSize)),
         fill: cs.color,
         href: link ? link.href : null,
@@ -277,9 +320,9 @@
       const lines = [];
       items.forEach((it, i) => {
         if (i) y += Math.round(it.size * 0.5);   // gap between blocks
-        wrapToWidth(it.text, `${it.weight} ${it.size}px ${family}`, w - inset - PAD).forEach(t => {
+        wrapRuns(it.runs || [{ text: it.text, weight: it.weight }], it.size, family, w - inset - PAD).forEach(segs => {
           y += Math.round(it.size * 1.3);
-          lines.push({ t, y, x, anchor, size: it.size, weight: it.weight, fill: it.fill, href: it.href });
+          lines.push({ segs, y, x, anchor, size: it.size, fill: it.fill, href: it.href });
         });
       });
       return { lines, end: y };
@@ -301,7 +344,10 @@
       size: source ? source.size : 13,
       fill: source ? source.fill : "#a0aec0",
     };
-    const footTop = headerH + h + PAD;
+    // A note (data-note) opens the footer, flush left under the chart as on
+    // the page; credit and source follow beneath it.
+    const note = layout([itemFrom(btn.dataset.note, 400)].filter(Boolean), headerH + h + PAD, "start", inset);
+    const footTop = note.lines.length ? note.end + PAD : headerH + h + PAD;
 
     // The two sit on one line. Measuring first rather than assuming they fit:
     // a narrow export, or a source naming several datasets, would otherwise run
@@ -372,7 +418,7 @@
     inner.setAttribute("height", h);
     out.appendChild(inner);
 
-    return { out, inner, src, family, lines: head.lines.concat(foot.lines) };
+    return { out, inner, src, family, lines: head.lines.concat(note.lines, foot.lines) };
   }
 
   // The heading and the credit line are this script's own drawing, so unlike
@@ -380,24 +426,40 @@
   // to read — every value is already in hand, and each line is emitted straight
   // as text or as outlines. A line carrying an href is wrapped in an SVG <a>,
   // so the source stays reachable from the file itself.
+  // A line is its runs (segs, from wrapRuns), or one text `t` in `weight`.
   function appendLines(out, lines, fonts) {
     lines.forEach(l => {
+      const segs = l.segs || [{ t: l.t, weight: l.weight }];
       let node;
       if (fonts) {
-        const font = fonts.byWeight[nearestWeight(fonts.weights, l.weight)];
-        node = document.createElementNS(SVG_NS, "path");
-        const x = l.anchor === "end" ? l.x - font.getAdvanceWidth(l.t, l.size) : l.x;
-        node.setAttribute("d", font.getPath(l.t, x, l.y, l.size).toPathData(2));
+        // Run after run along the baseline; anchored at the end, the whole
+        // line's advance is taken off first.
+        const fontOf = g => fonts.byWeight[nearestWeight(fonts.weights, g.weight)];
+        const total = segs.reduce((sum, g) => sum + fontOf(g).getAdvanceWidth(g.t, l.size), 0);
+        let x = l.anchor === "end" ? l.x - total : l.x;
+        node = document.createElementNS(SVG_NS, "g");
         node.setAttribute("fill", l.fill);
+        segs.forEach(g => {
+          const path = document.createElementNS(SVG_NS, "path");
+          path.setAttribute("d", fontOf(g).getPath(g.t, x, l.y, l.size).toPathData(2));
+          if (g.fill) path.setAttribute("fill", g.fill);
+          node.appendChild(path);
+          x += fontOf(g).getAdvanceWidth(g.t, l.size);
+        });
       } else {
         node = document.createElementNS(SVG_NS, "text");
         node.setAttribute("x", l.x);
         node.setAttribute("y", l.y);
         if (l.anchor) node.setAttribute("text-anchor", l.anchor);
         node.setAttribute("font-size", l.size);
-        node.setAttribute("font-weight", l.weight);
         node.setAttribute("fill", l.fill);
-        node.textContent = l.t;
+        segs.forEach(g => {
+          const span = document.createElementNS(SVG_NS, "tspan");
+          span.setAttribute("font-weight", g.weight);
+          if (g.fill) span.setAttribute("fill", g.fill);
+          span.textContent = g.t;
+          node.appendChild(span);
+        });
       }
       if (l.href) {
         const a = document.createElementNS(SVG_NS, "a");
