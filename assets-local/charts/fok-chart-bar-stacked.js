@@ -44,7 +44,13 @@
  *   legend        {boolean}    render legend       (default true when >1 key)
  *   legendDirection {'horizontal'|'vertical'}      (default 'horizontal')
  *   tooltipHtml   {function}   (rawRow, key) => HTML
+ *   yMax          {number}     fixed top of the y-axis, e.g. to share a scale between charts
+ *   markers       {object[]}   events: { band, offset, label } — a dashed vertical line at
+ *                              `offset` (0–1, default 0.5) across that category's band
  *   yLabel        {string}
+ *   yLabelInline  {boolean}   the unit after the top tick label, not above the axis
+ *   yGridValues   {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object}    passed to fokLegend: position, radius, gap, labelColor
  *   title         {string}
  *   width/height  {number}
  *   margins       {object}
@@ -56,7 +62,7 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
   const margin  = fokMargin(options.margins ?? {}, theme);
   const W       = options.width  ?? 800;
   const H       = options.height ?? 420;
-  const inner   = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const inner   = { h: H - margin.top - margin.bottom };
 
   const keys        = options.keys        ?? [];
   const colorMap    = options.colors      ?? {};
@@ -91,37 +97,47 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
       .text(options.title);
   }
 
+  // ── D3 stack ──────────────────────────────────────────────────────────────
+  const stack  = d3.stack().keys(keys);
+  const series = stack(rows);
+  const yMax   = proportional ? 100 : options.yMax ?? d3.max(series, s => d3.max(s, d => d[1]));
+  const cats   = rows.map(r => r._x);
+
+  // ── Scales ────────────────────────────────────────────────────────────────
+  // The y scale first: the left margin fits its labels, the plot takes the rest.
+  const pctFmt = v => Math.round(v) + ' %';
+  let xScale, yScale, yAxis;
+  if (!horiz) {
+    yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]).nice();
+    yAxis  = {
+      ticks:      options.yTicks ?? 6,
+      tickValues: options.yTickValues,
+      tickFormat: proportional ? pctFmt : (options.yFormat ?? (v => fokFormatNumber(v))),
+      gridValues: options.yGridValues,
+    };
+  } else {
+    yScale = d3.scaleBand().domain(cats).range([0, inner.h])
+      .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
+    yAxis  = { tickFormat: options.xFormat };
+  }
+  margin.left ??= fokAxisYWidth(yScale, yAxis, theme);
+  inner.w = W - margin.left - margin.right;
+  if (!horiz) {
+    xScale = d3.scaleBand().domain(cats).range([0, inner.w])
+      .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
+  } else {
+    xScale = d3.scaleLinear().domain([0, yMax]).range([0, inner.w]);
+  }
+
   // ── SVG scaffold ──────────────────────────────────────────────────────────
   const svg = fokResponsiveSVG(container, `0 0 ${W} ${H}`);
   const g   = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-  // ── D3 stack ──────────────────────────────────────────────────────────────
-  const stack  = d3.stack().keys(keys);
-  const series = stack(rows);
-  const yMax   = proportional ? 100 : d3.max(series, s => d3.max(s, d => d[1]));
-  const cats   = rows.map(r => r._x);
-
-  // ── Scales ────────────────────────────────────────────────────────────────
-  let xScale, yScale;
-  if (!horiz) {
-    xScale = d3.scaleBand().domain(cats).range([0, inner.w])
-      .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
-    yScale = d3.scaleLinear().domain([0, yMax]).range([inner.h, 0]).nice();
-  } else {
-    xScale = d3.scaleLinear().domain([0, yMax]).range([0, inner.w]);
-    yScale = d3.scaleBand().domain(cats).range([0, inner.h])
-      .paddingInner(theme.bar.padding).paddingOuter(theme.bar.padding / 2);
-  }
-
   // ── Axes ──────────────────────────────────────────────────────────────────
-  const pctFmt = v => Math.round(v) + ' %';
-
   if (!horiz) {
     g.append('g').attr('class', 'fok-axis fok-axis--y')
       .call(fokAxisY(yScale, {
-        ticks:      options.yTicks ?? 6,
-        tickValues: options.yTickValues,
-        tickFormat: proportional ? pctFmt : (options.yFormat ?? (v => fokFormatNumber(v))),
+        ...yAxis,
         gridLines:  true,
         gridWidth:  inner.w,
       }, theme));
@@ -132,7 +148,7 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
   } else {
     // Horizontal: y-axis = categories (band), x-axis = values
     g.append('g').attr('class', 'fok-axis fok-axis--y')
-      .call(fokAxisY(yScale, { tickFormat: options.xFormat, gridLines: false }, theme));
+      .call(fokAxisY(yScale, { ...yAxis, gridLines: false }, theme));
 
     g.append('g').attr('class', 'fok-axis fok-axis--x')
       .attr('transform', `translate(0,${inner.h})`)
@@ -144,18 +160,8 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
       }, theme));
   }
 
-  // ── y-axis label (horizontal, above chart) ────────────────────────────────
-  if (options.yLabel && !horiz) {
-    g.append('text')
-      .attr('class', 'fok-axis-label')
-      .attr('x', -margin.left + 4)
-      .attr('y', -10)
-      .attr('text-anchor', 'start')
-      .attr('fill', theme.colors.grey)
-      .attr('font-family', theme.font)
-      .attr('font-size', theme.fontSize.axisLabel)
-      .text(options.yLabel);
-  }
+  // Horizontal: the unit under the value axis. A vertical chart's unit is
+  // drawn last, by fokAxisYLabel.
   if (options.yLabel && horiz) {
     g.append('text')
       .attr('class', 'fok-axis-label')
@@ -265,12 +271,25 @@ function fokBarChartStacked(containerSelector, data, options = {}) {
     }
   });
 
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  if (!horiz) {
+    fokMarkers(g, options.markers, m => xScale(m.band) == null ? null
+      : xScale(m.band) + (m.offset ?? 0.5) * xScale.bandwidth(), inner, theme);
+  }
+
   // ── Legend ────────────────────────────────────────────────────────────────
   const showLegend = options.legend !== false && keys.length > 1;
   if (showLegend) {
     const items = keys.map(k => ({ label: labelMap[k] ?? k, color: colorMap[k] ?? theme.colors.primary }));
-    fokLegend(container, items, { direction: options.legendDirection ?? 'horizontal' }, theme);
+    fokLegend(container, items, { direction: options.legendDirection ?? 'horizontal', ...options.legendOptions }, theme);
   }
 
-  return { svg, tip };
+  // ── Y-axis unit, over the data ────────────────────────────────────────────
+  if (options.yLabel && !horiz) {
+    fokAxisYLabel(g, yScale, yAxis, options.yLabel,
+      { marginLeft: margin.left, inline: options.yLabelInline }, theme);
+  }
+
+  // The plot group and scales too, for whatever a page draws over the chart.
+  return { svg, tip, g, xScale, yScale };
 }

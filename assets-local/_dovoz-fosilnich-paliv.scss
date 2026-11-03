@@ -1,0 +1,620 @@
+/* Dovoz fosilních paliv do ČR — collections/_studies/2026-interaktivni-prehled-dovoz-fosilnich-paliv.md
+ *
+ * Only the page's own furniture lives here: the KPI row, the panels the charts
+ * sit in and the headings between them. Everything inside a panel is drawn by
+ * the shared chart library (assets-local/charts/), which styles itself from
+ * fok-theme.js and charts/_charts.scss — so there are no colours, fonts or
+ * sizes for the chart contents in this file.
+ *
+ * Scoped to the page's body class: the names are ordinary (.kpi,
+ * .chart-panel) and main.scss pulls this file in BEFORE the universal rules,
+ * so an unscoped copy would also lose to web-core at equal specificity.
+ *
+ * Set by `body-class: dovoz-fosilnich-paliv` in the page's front matter.
+ */
+body.dovoz-fosilnich-paliv {
+    --dovoz-border: 1px solid #e2e8f0;
+    --dovoz-gap: 16px;
+    --dovoz-pad-y: 16px;            /* panel padding */
+    --dovoz-pad-x: 18px;
+    --dovoz-heading-size: 24px;     /* Ropa / Zemní plyn */
+    --dovoz-chart-title-size: 18px; /* the h3 over each chart */
+    --dovoz-kpi-label-size: 13px;
+    --dovoz-kpi-value-size: 24px;
+    --dovoz-text-size: 14px;        /* the segmented buttons */
+    --dovoz-chart-gap: 48px;        /* fuel columns: above a chart that follows a chart */
+    --dovoz-note-size: 13px;        /* .filter-summary */
+
+    /* web-core paints only every other .section white and lets the rest show
+       body's #f7f7f7 — which left the charts on grey. The panels are white, so
+       the whole page is set white and their borders do the separating.
+       Outranks .section:nth-of-type(odd) (0,2,0) at (0,2,1), so load order
+       relative to the universal rules does not matter. */
+    .section {
+        background-color: #fff;
+    }
+
+    /* Panels share a row while there is room and stack on a phone. The row owns
+       the spacing, so the panels' own bottom margin is dropped inside it. */
+    .chart-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--dovoz-gap);
+    }
+
+    .chart-row > .chart-panel {
+        flex: 1;
+        min-width: 280px;
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* The KPI cards share their rows — header, legend, chart — through
+       subgrid, so the charts' time axes stay level however tall each legend is
+       (the GDP chart has none). The chart's container spans the last two rows
+       and passes them on to the legend and the SVG the library puts in it.
+       Without subgrid support the cards simply stack their contents. */
+    #main-charts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        row-gap: 0;
+
+        > .chart-panel {
+            display: grid;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+        }
+
+        > .chart-panel > [id^="chart-celkem"] {
+            grid-row: span 2;
+            display: grid;
+            grid-template-rows: subgrid;
+        }
+
+        .fok-chart-svg {
+            grid-row: 2;
+        }
+
+        /* No legend above it: the chart takes the legend row as well, and
+           levelKpi draws it that much taller. */
+        .fok-chart-svg:first-child {
+            grid-row: 1 / span 2;
+        }
+
+        /* A one-line legend in a row a two-line one sets: at the top, not
+           spread down it. */
+        .fok-legend {
+            align-self: start;
+        }
+    }
+
+    /* The fuel columns' headings, and the exploration's. Page text, not drawn
+       by the chart library — hence the explicit font below. */
+    .fuel-heading {
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+        font-size: var(--dovoz-heading-size);
+        font-weight: 700;
+        color: #2d3748;
+        margin: 0 0 12px;
+    }
+
+    /* ── Fuel columns ──────────────────────────────────────────────────────── */
+    /* Ropa left, plyn right. Each column is exactly seven children — the
+       heading with its intro, then three long-term charts and three of the
+       latest 36 months — and the grid flows them down the columns over shared
+       rows, so every chart sits level with its counterpart even where the
+       intros or titles differ in length. On a phone it is one column in source
+       order: all of ropa, then plyn. */
+    .fuel-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(7, auto);
+        grid-auto-flow: column;
+        column-gap: 48px;
+        margin-top: 16px;
+    }
+
+    /* The one span selector, above both columns: the explorer's buttons. */
+    .span-select {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 767.98px) {
+        .fuel-columns {
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: none;
+            grid-auto-flow: row;
+        }
+
+        .fuel-columns > .fuel-head:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+    /* A figure is as tall as its counterpart in the other column (they share
+       a grid row); the title takes up the difference, so where one wraps and
+       the other does not the charts under them still sit level. */
+    .fuel-figure {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+
+        > .chart-head {
+            flex-grow: 1;
+        }
+    }
+
+    /* A chart under another chart of its span (the other span's sit between
+       them in the source, hidden) gets more room above its title. */
+    .fuel-figure[data-span="long"] + .fuel-figure[data-span="long"],
+    .fuel-figure[data-span="recent"] + .fuel-figure[data-span="recent"] {
+        margin-top: var(--dovoz-chart-gap);
+    }
+
+    /* The intro under a fuel's heading: page text, set like an explainer's —
+       the site's own paragraph, untouched by this page. */
+    .fuel-intro {
+        margin-top: 12px;
+    }
+
+    /* The fuel's name and its intro: one grid item, so the column stays
+       seven children and both intros share a row. */
+    .fuel-head {
+        margin-bottom: 12px;
+
+        .fuel-heading {
+            margin: 0;
+        }
+    }
+
+    /* drawAll sets body.span-long / span-recent from the selector. The other
+       span's charts go, and the grid holds four rows a column (the head and
+       three charts) instead of seven — else the column flow would pull the
+       second fuel's items into the first column. */
+    &.span-long .fuel-columns [data-span="recent"],
+    &.span-recent .fuel-columns [data-span="long"] {
+        display: none;
+    }
+
+    &.span-long .fuel-columns,
+    &.span-recent .fuel-columns {
+        grid-template-rows: repeat(4, auto);
+    }
+
+    /* On a desktop a chart takes three quarters of its column's width. */
+    @media (min-width: 768px) {
+        .fuel-figure > * {
+            width: 75%;
+        }
+    }
+
+    /* A chart's name; a long title wraps. */
+    .chart-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+
+        .chart-title {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+    }
+
+    /* A checkbox, kept quiet: small, in the axis grey. */
+    .chart-toggle {
+        display: inline-flex;
+        flex: none;
+        white-space: nowrap;
+        align-items: center;
+        gap: 4px;
+        margin: 0 0 8px;
+        font-size: 13px;
+        color: #718096;
+        cursor: pointer;
+        user-select: none;
+
+        input {
+            margin: 0;
+            accent-color: #3e3e4c;
+        }
+
+        &:has(input:disabled) {
+            color: #cbd5e0;
+            cursor: not-allowed;
+        }
+    }
+
+    /* The explorer's checkboxes in place of buttons (Palivo, Členění): a row
+       as tall as a row of buttons, so the groups' first lines stay level, and
+       labels as big and as dark as the buttons' text. */
+    .control-options {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 12px;
+        min-height: 31px;
+
+        .chart-toggle {
+            margin: 0;
+            gap: 6px;
+            font-size: var(--dovoz-text-size);
+            color: #515b66;
+        }
+    }
+
+    /* ── KPI heading ───────────────────────────────────────────────────────── */
+    /* The headline figure and the chart that unpacks it share one panel, split
+       by a rule. The negative margins cancel the panel's own padding so that
+       rule runs the panel's full width instead of stopping at the text. */
+    .kpi {
+        margin: calc(-1 * var(--dovoz-pad-y)) calc(-1 * var(--dovoz-pad-x)) 16px;
+        padding: var(--dovoz-pad-y) var(--dovoz-pad-x);
+        border-bottom: var(--dovoz-border);
+        color: #515b66;
+    }
+
+    /* A KPI that explains itself in a tooltip (the imports' unit). */
+    .kpi--info {
+        cursor: pointer;
+    }
+
+    .kpi-label {
+        font-size: var(--dovoz-kpi-label-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        margin-bottom: 0;
+    }
+
+    /* Chart titles in the fuel columns and the explorer: h3s under the h2s,
+       in Roboto like the charts. Page text, not the library's own titles, whose
+       type it sets inline, out of reach of this file. */
+    .chart-title {
+        margin: 0 0 8px;
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+        font-size: var(--dovoz-chart-title-size);
+        font-weight: 700;
+        line-height: 1.25;
+        color: #2d3748;
+    }
+
+    .kpi-value {
+        font-size: var(--dovoz-kpi-value-size);
+        font-weight: 700;
+    }
+
+    /* ── Chart panels ──────────────────────────────────────────────────────── */
+    .chart-panel {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 8px;
+        border: var(--dovoz-border);
+        padding: var(--dovoz-pad-y) var(--dovoz-pad-x);
+        margin-bottom: var(--dovoz-gap);
+    }
+
+    /* The charts set a font-family inline on everything they draw; this only
+       catches the KPI row and anything a chart leaves unstyled. */
+    .chart-panel,
+    .fuel-figure,
+    .span-select,
+    .tool {
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+
+    /* ── The explorer by country ("každá země ve vlastním grafu") ─────────── */
+    /* A .fuel-plot holds the whole chart and its tiles; prepareTool sets
+       body.tiles-toolTiles while they are on. The whole chart stays laid out,
+       only hidden, and the tiles are drawn over its box — so switching never
+       changes the figure's height and the page does not jump. tiles() in the
+       script sets the grid's height, columns and the margins. */
+    .fuel-plot {
+        position: relative;
+
+        .tiles {
+            display: none;
+        }
+    }
+
+    &.tiles-toolTiles [data-tiles="toolTiles"] {
+        .whole {
+            visibility: hidden;
+        }
+
+        .tiles {
+            display: grid;
+        }
+    }
+
+    /* The first tile in each row is wider by its axis, so all plots are
+       equally wide (MINI_AXIS and MINI_EDGE in the script). */
+    .mini-grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        gap: 4px 12px;
+
+        > .mini-first {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    .mini-label {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #515b66;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* ── The explorer ─────────────────────────────────────────────────────── */
+    /* One chart, every view: the controls above it in a wrapping row, the
+       chart in a panel with its title, summary, source and downloads — the
+       same pieces, in the same order, as the ETS overview's panels, so
+       chart-download.js reads the same data-* attributes. */
+    .tool {
+        margin-top: 56px;
+    }
+
+    /* The explorer's heading is the expander link that opens it. */
+    .tool a.expander {
+        align-items: center;
+        cursor: pointer;
+
+        .fuel-heading {
+            margin: 0;
+        }
+    }
+
+    #nastroj-collapse > .tool-controls {
+        margin-top: 16px;
+    }
+
+    /* The generated title takes up to two lines on a phone; the room is kept
+       for both, so a shorter title does not move the chart either. */
+    @media (max-width: 767.98px) {
+        .tool-panel .chart-title {
+            min-height: 2.5em;
+        }
+    }
+
+    /* The explorer's generated title, half as big again as the charts', its
+       period in regular. */
+    .tool-panel .chart-title {
+        font-size: calc(1.5 * var(--dovoz-chart-title-size));
+    }
+
+    .chart-title-period {
+        font-weight: 400;
+    }
+
+    .tool-controls {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 12px 28px;
+        margin-bottom: 16px;
+    }
+
+    .control-group {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* Context events: the label and its checkboxes on one line, so the group
+       takes a line of height at most. */
+    .control-group--inline {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 16px;
+
+        .chart-toggle {
+            margin: 0;
+        }
+    }
+
+    .control-group--years {
+        flex: 1 1 200px;
+        max-width: 280px;
+    }
+
+    .control-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .control-label {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #515b66;
+        white-space: nowrap;
+    }
+
+    .control-value {
+        font-size: 14px;
+        font-weight: 700;
+        color: #2d3748;
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* A row of buttons, the pressed one dark; a disabled one (prices by
+       country with both fuels picked) goes grey. */
+    .seg-buttons {
+        display: flex;
+        width: fit-content;
+        overflow: hidden;
+        border: var(--dovoz-border);
+        border-radius: 6px;
+
+        button {
+            border: 0;
+            background: #fff;
+            padding: 4px 12px;
+            font: inherit;
+            font-size: var(--dovoz-text-size);
+            color: #515b66;
+            cursor: pointer;
+        }
+
+        button + button {
+            border-left: var(--dovoz-border);
+        }
+
+        button[aria-pressed="true"] {
+            background: #3e3e4c;
+            color: #fff;
+        }
+
+        button:disabled {
+            color: #cbd5e0;
+            background: #fff;
+            cursor: not-allowed;
+        }
+    }
+
+    /* Two native range inputs stacked into one slider with two thumbs. The
+       inputs ignore the pointer and their thumbs take it, so either end can be
+       dragged; each still works from the keyboard. The track is drawn once,
+       under both, so neither input hides the other's thumb. */
+    .dual-range {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 24px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 10px;
+            height: 4px;
+            border-radius: 2px;
+            background: #e2e8f0;
+        }
+
+        input {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 24px;
+            margin: 0;
+            background: none;
+            appearance: none;
+            pointer-events: none;
+        }
+
+        // The picked stretch, darker, between the two thumbs' centres: a
+        // thumb is 16px, so its centre runs from 8px to 100% − 8px. JS sets
+        // --from and --to as shares of the slider's range.
+        .range-fill {
+            position: absolute;
+            top: 10px;
+            height: 4px;
+            left: calc(8px + (100% - 16px) * var(--from, 0));
+            right: calc(8px + (100% - 16px) * (1 - var(--to, 1)));
+            border-radius: 2px;
+            background: #3e3e4c;
+            pointer-events: none;
+        }
+
+        input::-webkit-slider-runnable-track {
+            height: 24px;
+            background: none;
+        }
+
+        input::-webkit-slider-thumb {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            margin-top: 4px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background: #3e3e4c;
+            box-shadow: 0 0 0 1px #cbd5e0;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        input::-moz-range-track {
+            background: none;
+        }
+
+        input::-moz-range-thumb {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background: #3e3e4c;
+            box-shadow: 0 0 0 1px #cbd5e0;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    }
+
+    /* A caveat under a chart in the fuel columns (the prices aren't exchange
+       prices). */
+    .chart-note {
+        margin: 8px 0 0;
+        font-size: var(--dovoz-note-size);
+        line-height: 1.45;
+        color: #718096;
+    }
+
+    /* What the chart shows: units, step and caveats. Under the chart, as in
+       the ETS overview, so a summary that wraps further never moves the chart;
+       it is still the subtitle of a downloaded file. */
+    .filter-summary {
+        margin: 8px 0 0;
+        font-size: var(--dovoz-note-size);
+        color: #718096;
+    }
+
+    /* Source, and "Stáhnout: PNG, SVG" read as one phrase that never wraps.
+       The shared include (chart-foot.html) brings its own margin; the
+       columns' spacing is this page's. */
+    .chart-foot {
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 4px 16px;
+        padding-top: 8px;
+        font-size: 13px;
+        color: #a0aec0;
+
+        a,
+        a:hover {
+            color: #a0aec0;
+        }
+    }
+
+    .chart-downloads {
+        white-space: nowrap;
+    }
+
+    .chart-download,
+    .chart-download-csv {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

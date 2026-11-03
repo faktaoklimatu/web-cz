@@ -8,6 +8,9 @@ assets-local/js/chart-download.js — musí být v extra-scripts stránky.
             uvádí okolní text); vykreslí se nad graf písmem Roboto
   source    HTML řádku se zdrojem („Zdroj: …“)
   subtitle  nepovinné: selektor poznámky, která se v souboru vykreslí nad graf
+  title_from nepovinné: id nadpisu, který už na stránce je (místo title)
+  arrow     nepovinné: text šipky v grafu, řádky oddělené „|“; kam míří, určuje
+            skript stránky (dovoz-fosilnich-paliv.js)
 {%- endcomment -%}
 <style>
 .chart-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: 4px 16px; margin-bottom: 2rem; padding-top: .4rem; font-size: .8rem; color: #a0aec0; }
@@ -22,10 +25,10 @@ assets-local/js/chart-download.js — musí být v extra-scripts stránky.
 {%- if include.title %}
 <p class="chart-foot-title" id="{{ include.svg }}-nadpis" hidden>{{ include.title }}</p>
 {%- endif %}
-<div class="chart-foot">
+<div class="chart-foot" data-chart="{{ include.svg }}"{% if include.arrow %} data-arrow="{{ include.arrow | escape }}"{% endif %}>
   <span id="{{ include.svg }}-zdroj">{{ include.source }}</span>
   <span class="chart-downloads">Stáhnout:
-    <button type="button" class="chart-download" data-format="png" data-svg="{{ include.svg }}" data-filename="{{ include.file }}.png"{% if include.title %} data-title="#{{ include.svg }}-nadpis" data-title-inset="0"{% endif %} data-source="#{{ include.svg }}-zdroj"{% if include.subtitle %} data-subtitle="{{ include.subtitle }}"{% endif %}>PNG</button>,
-    <button type="button" class="chart-download" data-svg="{{ include.svg }}" data-filename="{{ include.file }}.svg"{% if include.title %} data-title="#{{ include.svg }}-nadpis" data-title-inset="0"{% endif %} data-source="#{{ include.svg }}-zdroj"{% if include.subtitle %} data-subtitle="{{ include.subtitle }}"{% endif %}>SVG</button>
+    <button type="button" class="chart-download" data-format="png" data-svg="{{ include.svg }}" data-filename="{{ include.file }}.png"{% if include.title %} data-title="#{{ include.svg }}-nadpis" data-title-inset="0"{% elsif include.title_from %} data-title="#{{ include.title_from }}" data-title-inset="0"{% endif %} data-source="#{{ include.svg }}-zdroj"{% if include.subtitle %} data-subtitle="{{ include.subtitle }}"{% endif %}>PNG</button>,
+    <button type="button" class="chart-download" data-svg="{{ include.svg }}" data-filename="{{ include.file }}.svg"{% if include.title %} data-title="#{{ include.svg }}-nadpis" data-title-inset="0"{% elsif include.title_from %} data-title="#{{ include.title_from }}" data-title-inset="0"{% endif %} data-source="#{{ include.svg }}-zdroj"{% if include.subtitle %} data-subtitle="{{ include.subtitle }}"{% endif %}>SVG</button>
   </span>
 </div>

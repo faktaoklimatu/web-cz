@@ -29,14 +29,25 @@
  *   series      {function}  accessor for series key (multi-series mode)
  *   multi       {boolean}   treat data as multi-series (default false)
  *   area        {boolean}   fill area under line(s) (default false)
+ *   areaOpacity {number}    opacity of that fill (default 0.18)
  *   legend      {boolean}   render a legend (multi-series, default false)
  *   yLabel      {string}    y-axis label
+ *   yLabelInline {boolean}   the unit after the top tick label, not above the axis
+ *   yGridValues  {number[]}  grid lines at these values too, between the labelled ticks
+ *   legendOptions {object} passed to fokLegend: position, radius, gap, labelColor
+ *   dashArray   {string}    stroke-dasharray of the dashed series (default '5 4')
+ *   lineLabels   {object}    direct labels by series: { x, y, anchor, lines, color }
  *   xLabel      {string}    x-axis label
  *   title       {string}    chart title
  *   yDomain     {[min,max]} override y scale domain
  *   xDomain     {[min,max]} override x scale domain
  *   yFormat     {function}  tick formatter for y axis
  *   xFormat     {function}  tick formatter for x axis
+ *   markers     {object[]}  events: { x, label } — a dashed vertical line, label above the plot
+ *   dashed      {function}  (seriesKey) => true draws that series dashed and a little
+ *                           thinner — for references and projections, per the guidelines
+ *   partialAfter {number|Date} every line dashed past this x, as dashed series are:
+ *                           the run into a part-period (a year not yet complete)
  *   tooltipHtml {function}  (d) => HTML string for hovered point tooltip
  *   width       {number}    viewBox width  (default 800)
  *   height      {number}    viewBox height (default 420)
@@ -49,7 +60,7 @@ function fokLineChart(containerSelector, data, options = {}) {
   const margin = fokMargin(options.margins ?? {}, theme);
   const W      = options.width  ?? 800;
   const H      = options.height ?? 420;
-  const inner  = { w: W - margin.left - margin.right, h: H - margin.top - margin.bottom };
+  const inner  = { h: H - margin.top - margin.bottom };
 
   const xAcc = options.x      ?? (d => d.date);
   const yAcc = options.y      ?? (d => d.value);
@@ -66,11 +77,28 @@ function fokLineChart(containerSelector, data, options = {}) {
   const seriesKeys   = [...seriesMap.keys()];
   const colorScale   = fokColorOrdinal(seriesKeys, theme);
 
-  const allPoints = data.map(d => ({ _x: xAcc(d), _y: +yAcc(d), _k: kAcc(d), _raw: d }));
+  // A point without a value (NaN) is a gap in its line, and no hover target.
+  const allPoints = data.map(d => ({ _x: xAcc(d), _y: +yAcc(d), _k: kAcc(d), _raw: d }))
+    .filter(p => Number.isFinite(p._y));
   const xExtent = options.xDomain ?? d3.extent(allPoints, p => p._x);
   const yAll    = allPoints.map(p => p._y);
   const yMin    = options.yDomain ? options.yDomain[0] : Math.min(0, d3.min(yAll));
   const yMax    = options.yDomain ? options.yDomain[1] : d3.max(yAll);
+
+  // The y scale first: the left margin fits its labels, the plot takes the rest.
+  // A domain given is kept as it is; one taken from the data is rounded out.
+  const yScale = d3.scaleLinear()
+    .domain([yMin, yMax])
+    .range([inner.h, 0]);
+  if (!options.yDomain) yScale.nice();
+  const yAxis = {
+    ticks:      options.yTicks      ?? 6,
+    tickValues: options.yTickValues,
+    tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
+    gridValues: options.yGridValues,
+  };
+  margin.left ??= fokAxisYWidth(yScale, yAxis, theme);
+  inner.w = W - margin.left - margin.right;
 
   // ── Clear container ─────────────────────────────────────────────────────
   const container = d3.select(containerSelector);
@@ -107,18 +135,11 @@ function fokLineChart(containerSelector, data, options = {}) {
     ? d3.scaleTime().domain(xExtent).range([0, inner.w])
     : d3.scaleLinear().domain(xExtent).range([0, inner.w]);
 
-  const yScale = d3.scaleLinear()
-    .domain([yMin, yMax])
-    .range([inner.h, 0])
-    .nice();
-
   // ── Grid + Axes ──────────────────────────────────────────────────────────
   g.append('g')
     .attr('class', 'fok-axis fok-axis--y')
     .call(fokAxisY(yScale, {
-      ticks:      options.yTicks      ?? 6,
-      tickValues: options.yTickValues,
-      tickFormat: options.yFormat ?? (v => fokFormatNumber(v)),
+      ...yAxis,
       gridLines: true,
       gridWidth: inner.w,
     }, theme));
@@ -131,24 +152,17 @@ function fokLineChart(containerSelector, data, options = {}) {
       tickFormat: options.xFormat,
     }, theme));
 
-  // ── Axis labels ──────────────────────────────────────────────────────────
-  if (options.yLabel) {
-    g.append('text')
-      .attr('class', 'fok-axis-label')
-      .attr('x', -margin.left + 4)
-      .attr('y', -10)
-      .attr('text-anchor', 'start')
-      .attr('fill', theme.colors.grey)
-      .attr('font-family', theme.font)
-      .attr('font-size', theme.fontSize.axisLabel)
-      .text(options.yLabel);
-  }
-
   // ── Line/area generators ─────────────────────────────────────────────────
-  const lineGen = d3.line()
+  const known = d => d._y != null && !isNaN(d._y);
+  const lineOf = defined => d3.line()
     .x(d => xScale(d._x))
     .y(d => yScale(d._y))
-    .defined(d => d._y != null && !isNaN(d._y));
+    .defined(defined);
+  const lineGen = lineOf(known);
+  // With partialAfter, a line in two: solid up to that x, dashed from it on.
+  const after = options.partialAfter;
+  const upTo = after == null ? lineGen : lineOf(d => known(d) && d._x <= after);
+  const past = after == null ? null : lineOf(d => known(d) && d._x >= after);
 
   const areaGen = d3.area()
     .x(d => xScale(d._x))
@@ -173,19 +187,34 @@ function fokLineChart(containerSelector, data, options = {}) {
         .attr('fill', color)
         .attr('stroke', '#fff')
         .attr('stroke-width', 0.5)
-        .attr('opacity', 0.18);
+        .attr('opacity', options.areaOpacity ?? 0.18);
     }
 
-    seriesG.append('path')
+    const dashed = options.dashed?.(key);
+    const drawLine = (gen, dash) => seriesG.append('path')
       .datum(pts)
       .attr('class', 'fok-line')
-      .attr('d', lineGen)
+      .attr('d', gen)
       .attr('fill', 'none')
       .attr('stroke', color)
-      .attr('stroke-width', theme.line.strokeWidth)
+      .attr('stroke-width', theme.line.strokeWidth * (dash ? 0.75 : 1))
+      .attr('stroke-dasharray', dash ? options.dashArray ?? '5 4' : null)
       .attr('stroke-linejoin', 'round')
-      .attr('stroke-linecap', 'round');
+      .attr('stroke-linecap', dash ? 'butt' : 'round');
+    // A dashed series stays whole; the others split at partialAfter.
+    if (dashed || !past) drawLine(dashed ? lineGen : upTo, dashed);
+    else { drawLine(upTo, false); drawLine(past, true); }
   });
+
+  // ── Direct labels (options.lineLabels) ───────────────────────────────────
+  // { [series]: { x, y, anchor, lines, color } }, x and y in data units: the
+  // last line's baseline sits at (x, y), the others above it (see fokLabel).
+  Object.entries(options.lineLabels ?? {}).forEach(([key, l]) => {
+    fokLabel(g, xScale(l.x), yScale(l.y), { color: colorScale(key), ...l }, theme);
+  });
+
+  // ── Event markers (see fokMarkers) ───────────────────────────────────────
+  fokMarkers(g, options.markers, m => xScale(m.x), inner, theme);
 
   // ── Tooltip overlay ───────────────────────────────────────────────────────
   const tip = fokTooltip(theme);
@@ -242,8 +271,14 @@ function fokLineChart(containerSelector, data, options = {}) {
 
   // ── Legend ────────────────────────────────────────────────────────────────
   if (options.legend && options.multi) {
-    const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k) }));
-    fokLegend(container, legendItems, {}, theme);
+    const legendItems = seriesKeys.map(k => ({ label: k, color: colorScale(k), dashed: !!options.dashed?.(k) }));
+    fokLegend(container, legendItems, options.legendOptions, theme);
+  }
+
+  // ── Y-axis unit, over the data ────────────────────────────────────────────
+  if (options.yLabel) {
+    fokAxisYLabel(g, yScale, yAxis, options.yLabel,
+      { marginLeft: margin.left, inline: options.yLabelInline }, theme);
   }
 
   return { svg, tip };

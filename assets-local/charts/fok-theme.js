@@ -67,11 +67,12 @@ const FoKTheme = {
     titleBold:  700,
   },
 
+  // No left: by default a chart's left margin fits its y-axis labels
+  // (fokAxisYWidth). Pass margins.left to fix it.
   margins: {
     top:    24,
     right:  20,
     bottom: 40,
-    left:   52,
   },
 
   axis: {
