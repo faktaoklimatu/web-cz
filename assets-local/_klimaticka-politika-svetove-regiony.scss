@@ -1,0 +1,90 @@
+// The explainer klimaticka-politika-svetove-regiony: region colours, region
+// boxes and the space around its charts. The charts themselves: _chart-panel.scss.
+
+// Region colours, also read by the page's grafy.js (REGIONS).
+:root {
+    --region-eu: #36369b;
+    --region-cina: #e0495a;
+    --region-usa: #3b85d8;
+    --region-indie: #8546af;
+}
+.region-eu    { --region: var(--region-eu); }
+.region-cina  { --region: var(--region-cina); }
+.region-usa   { --region: var(--region-usa); }
+.region-indie { --region: var(--region-indie); }
+
+// A line in the region colour above each region heading, as long as the
+// region's annual greenhouse gas emissions: the EU's, the smallest, is 24 px
+// and the others scale from it (EDGAR 2026, 2025 totals in emise-ghg.csv:
+// EU 3.13, USA 6.02, India 4.51, China 15.98 Gt CO₂eq). A region heading
+// carries its region class in the markdown ({: .js-toc-ignore .region-eu});
+// not the headings inside the region boxes.
+$region-rule: 2.5px;
+$region-rule-gap: 6px;
+@each $key, $k in (eu 1.0, cina 5.11, usa 1.925, indie 1.442) {
+    $length: 24px * $k;
+    :is(h3, h4).region-#{$key}:not(.region-box *) {
+        padding-top: $region-rule + $region-rule-gap;
+        background: linear-gradient(var(--region), var(--region)) left top / #{$length} #{$region-rule} no-repeat;
+    }
+}
+
+// "Hlavní charakteristiky": a 2×2 grid of region boxes listing only the key
+// phrases, each behind an icon and linking to its paragraph under the grid.
+.region-box {
+    h3, h4 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+}
+.region-grid .region-box { height: 100%; }
+.region-grid .region-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.region-grid .region-box li {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
+// Only the pointer gives the link away.
+.region-grid .region-box li a,
+.region-grid .region-box li a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+// Each key phrase's Font Awesome icon in a full circle of the region colour.
+.region-grid .region-icon {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: 0.85em;
+    background: var(--region);
+    color: #fff;
+}
+
+// Imports and exports by fuel, and the emission figures under each region.
+.region-stats {
+    p { font-size: 0.9rem; margin-bottom: 0.25rem; }
+    strong { color: inherit; }
+    .stat-icon { display: inline-block; width: 1.4em; text-align: center; }
+}
+// Narrower than the text on wider screens; full width on a phone.
+@media (min-width: 768px) {
+    .region-detail { width: 75%; }
+}
+
+// Space around the charts that differ from the default.
+#graf-podil { margin: 32px 0 64px; }
+#graf-cile { margin: 48px 0 64px; }
