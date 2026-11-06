@@ -1,0 +1,102 @@
+// d3 chart panels in the look of the CBAM explainer charts (_cbam-charts.scss)
+// with the shared source / download foot (includes-local/chart-foot.html, which
+// brings its own styles). Markup: includes-local/chart-panel.html. First used by
+// the explainer klimaticka-politika-svetove-regiony.
+
+.d3-panel {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    margin: 1.5rem 0 2rem;
+
+    .d3-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #2d3748;
+        margin: 0 0 14px;
+    }
+
+    // Metric switch, inserted by the page script above the svg.
+    .seg {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e2e8f0;
+
+        button {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            padding: 4px 12px 6px 0;
+            margin-right: 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #718096;
+        }
+
+        button:hover:not(.active) {
+            color: #515b66;
+        }
+
+        button.active {
+            color: #2d3748;
+            border-bottom-color: #2d3748;
+        }
+    }
+
+    svg {
+        width: 100%;
+        display: block;
+        overflow: visible;
+    }
+
+    // chart-foot.html's own spacing is for the ETS pages; the panel has its own
+    // bottom margin.
+    .chart-foot {
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 640px) {
+        .d3-title {
+            font-size: 18px;
+        }
+    }
+}
+
+// Appended to <body> by the page script, positioned against the viewport.
+.d3-tooltip {
+    position: fixed;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    line-height: 1.6;
+    max-width: 280px;
+    font-family: 'Roboto', system-ui, sans-serif;
+
+    .swatch {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+    }
+}
+
+// The title stays in the PNG/SVG export (chart-download.js reads its text)
+// but not on the page, where the section heading above already says it.
+.d3-panel.no-title .d3-title { display: none; }
+// No source / download line under the chart (the export still reads the source).
+.d3-panel.no-foot .chart-foot { display: none; }
+
+// web-core pads every div inside an expandable box (.expandable-content div),
+// so the panel's own nested divs stacked up an indent. Keep the panel flush.
+.expandable-content .d3-panel,
+.expandable-content .d3-panel div { padding: 0; }
