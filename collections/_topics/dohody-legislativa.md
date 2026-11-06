@@ -108,6 +108,7 @@ subtopics:
 
   content:
   - svetove-dohody
+  - klimaticka-politika-svetove-regiony
   - svetove-dohody-biodiverzita
   - pozice-akteru-cop
   - akteri-klimatickych-jednani
