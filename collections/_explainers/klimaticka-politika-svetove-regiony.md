@@ -2,7 +2,7 @@
 layout:      explainer
 title:       "Srovnání klimaticko-energetické politiky EU, Číny, USA a Indie"
 slug:        "klimaticka-politika-svetove-regiony"
-published:   2026-10-30
+published:   2026-11-06
 authors:
   - id: "eliska-soperova"
   - ids: ["katerina-kolouchova", "ondras-pribyla"]
@@ -25,7 +25,7 @@ perex: |
     Od přijetí Pařížské dohody se celosvětový přístup k dekarbonizaci zásadně proměnil. Snižování emisí už není jen environmentálním či morálním imperativem, ale je přímo spojené s otázkami energetické bezpečnosti a stává se předmětem soupeření o budoucí ekonomický růst. Environmentální cíle se tak dnes neoddělitelně prolínají s energetickou a průmyslovou politikou. Zatímco Evropská unie k této transformaci přistupuje primárně skrze klimatickou legislativu a regulace, ostatní světoví hráči vycházejí z odlišných podmínek a volí jiné nástroje. V praxi však dosahují značných pokroků a v řadě technologických i průmyslových ohledů EU předstihují.
 ---
 
-Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s přístupem USA, Číny a Indie. Společně **tito čtyři aktéři představují největší světové emitenty skleníkových plynů** a zodpovídají za více než polovinu globálních emisí skleníkových plynů. Podrobněji srovnáváme jejich regulatorní rámce i reálný pokrok v dekarbonizaci a ukazujeme souvislosti s energetickou strukturou jejich ekonomik (import a export jednotlivých paliv), stejně jako limity plynoucí z odlišných politických systémů či socioekonomické reality.
+Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s přístupem USA, Číny a Indie. Společně **tito čtyři aktéři představují největší světové emitenty skleníkových plynů** a zodpovídají za více než polovinu globálních emisí. Podrobněji srovnáváme jejich regulatorní rámce i reálný pokrok v dekarbonizaci a ukazujeme souvislosti s energetickou strukturou jejich ekonomik (import a export jednotlivých paliv), stejně jako limity plynoucí z odlišných politických systémů či socioekonomické reality.
 
 {% include includes-local/chart-panel.html
     id="graf-podil"
@@ -33,7 +33,6 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
     title="Podíl Číny, USA, Indie a EU na globálních emisích skleníkových plynů v roce 2025"
     source='<a href="https://edgar.jrc.ec.europa.eu/report_2026">EDGAR</a>'
 %}
-
 
 ## Hlavní charakteristiky
 
@@ -49,6 +48,17 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 - <i class="fa-solid fa-earth-europe region-icon" aria-hidden="true"></i> [**Vedoucí role v ochraně klimatu**](#eu-vedouci-role)
 
 </div></div>
+<div class="col-12 col-md-6 mb-4"><div class="region-box region-usa" markdown="1">
+
+### USA
+{: .js-toc-ignore .region-usa}
+
+- <i class="fa-solid fa-percent region-icon" aria-hidden="true"></i> [**Daňové úlevy a protekcionismus**](#usa-danove-ulevy)
+- <i class="fa-solid fa-arrow-right-arrow-left region-icon" aria-hidden="true"></i> [**Politická polarizace a nestabilita**](#usa-polarizace)
+- <i class="fa-solid fa-oil-well region-icon" aria-hidden="true"></i> [**Tržní pragmatismus**](#usa-pragmatismus)
+- <i class="fa-solid fa-map-location-dot region-icon" aria-hidden="true"></i> [**Autonomie jednotlivých států**](#usa-autonomie)
+
+</div></div>
 <div class="col-12 col-md-6 mb-4"><div class="region-box region-cina" markdown="1">
 
 ### Čína
@@ -59,17 +69,6 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 - <i class="fa-solid fa-solar-panel region-icon" aria-hidden="true"></i> [**Domácí rozvoj obnovitelných zdrojů a elektromobility**](#cina-domaci-rozvoj)
 - <i class="fa-solid fa-sitemap region-icon" aria-hidden="true"></i> [**Centrální řízení**](#cina-centralni-rizeni)
 - <i class="fa-solid fa-leaf region-icon" aria-hidden="true"></i> [**Ideologické ukotvení**](#cina-ideologie)
-
-</div></div>
-<div class="col-12 col-md-6 mb-4"><div class="region-box region-usa" markdown="1">
-
-### USA
-{: .js-toc-ignore .region-usa}
-
-- <i class="fa-solid fa-percent region-icon" aria-hidden="true"></i> [**Daňové úlevy a protekcionismus**](#usa-danove-ulevy)
-- <i class="fa-solid fa-arrow-right-arrow-left region-icon" aria-hidden="true"></i> [**Politická polarizace a nestabilita**](#usa-polarizace)
-- <i class="fa-solid fa-oil-well region-icon" aria-hidden="true"></i> [**Tržní pragmatismus**](#usa-pragmatismus)
-- <i class="fa-solid fa-map-location-dot region-icon" aria-hidden="true"></i> [**Autonomie jednotlivých států**](#usa-autonomie)
 
 </div></div>
 <div class="col-12 col-md-6 mb-4"><div class="region-box region-indie" markdown="1">
@@ -99,6 +98,21 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 **Vedoucí role v ochraně klimatu:** Evropská unie je průkopníkem klimatické politiky a hlavním tahounem v mezinárodních jednáních. Stála u zrodu klíčových smluv a dlouhodobě prosazuje ambiciózní cíle. Ostatní země motivuje ke snižování emisí buď příkladem, nebo přímým ekonomickým tlakem, jak ukazuje [mechanismus uhlíkového vyrovnání na hranicích](/explainery/cbam) (*Carbon Border Adjustment Mechanism*, CBAM).
 {: #eu-vedouci-role}
 
+### USA
+{: .js-toc-ignore .region-usa}
+
+**Daňové úlevy a protekcionismus:** Federální klimaticko-energetická politika klade důraz spíše na masivní daňové úlevy než na regulaci („cukr bez biče“). Podmínky těchto úlev zároveň zvýhodňují výrobu v USA.
+{: #usa-danove-ulevy}
+
+**Politická polarizace a nestabilita:** Klimatická agenda je v USA předmětem tvrdého kulturně-politického boje, což vede k nestabilitě federální politiky v dlouhodobém horizontu. Zatímco Bidenova administrativa prosadila rekordní podporu čistým technologiím, Donald Trump tuto agendu odmítá, podporuje fosilní průmysl a stáhl USA z Pařížské dohody.
+{: #usa-polarizace}
+
+**Tržní pragmatismus:** Spojené státy těží nejvíce ropy a zemního plynu na světě a zároveň vyvážejí nejvíce zkapalněného zemního plynu (*Liquefied Natural Gas*, LNG). Systém nepenalizuje fosilní průmysl, zároveň se v zemi kvůli ekonomické výhodnosti budují i obnovitelné zdroje.
+{: #usa-pragmatismus}
+
+**Autonomie jednotlivých států:** Různé státy se v přístupu k energetické transformaci velmi liší – například Kalifornie či New York postupují podobně jako EU, zatímco republikánské státy jako Texas nebo Západní Virginie se jakožto velcí producenti ropy a uhlí otevřeně staví proti jakýmkoliv klimatickým opatřením.
+{: #usa-autonomie}
+
 ### Čína
 {: .js-toc-ignore .region-cina}
 
@@ -117,21 +131,6 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 **Ideologické ukotvení:** Ochrana přírody a rozvoj čistých technologií jsou základními kameny tzv. ekologické civilizace, oficiální ideologie, která ovlivňuje tvorbu politik v Číně. Podle ní se Čína posouvá do vyššího vývojového stádia, kde člověk a příroda žijí v harmonii.
 {: #cina-ideologie}
 
-### USA
-{: .js-toc-ignore .region-usa}
-
-**Daňové úlevy a protekcionismus:** Federální klimaticko-energetická politika klade důraz spíše na masivní daňové úlevy než na regulaci („cukr bez biče“). Podmínky těchto úlev zároveň zvýhodňují výrobu v USA.
-{: #usa-danove-ulevy}
-
-**Politická polarizace a nestabilita:** Klimatická agenda je v USA předmětem tvrdého kulturně-politického boje, což vede k nestabilitě federální politiky v dlouhodobém horizontu. Zatímco Bidenova administrativa prosadila rekordní podporu čistým technologiím, Donald Trump tuto agendu odmítá, podporuje fosilní průmysl a stáhl USA z Pařížské dohody.
-{: #usa-polarizace}
-
-**Tržní pragmatismus:** Spojené státy těží nejvíce ropy a zemního plynu na světě a zároveň vyvážejí nejvíce zkapalněného zemního plynu (*Liquefied Natural Gas*, LNG). Systém nepenalizuje fosilní průmysl, zároveň se v zemi kvůli ekonomické výhodnosti budují i obnovitelné zdroje.
-{: #usa-pragmatismus}
-
-**Autonomie jednotlivých států:** Různé státy se v přístupu k energetické transformaci velmi liší – například Kalifornie či New York postupují podobně jako EU, zatímco republikánské státy jako Texas nebo Západní Virginie se jakožto velcí producenti ropy a uhlí otevřeně staví proti jakýmkoliv klimatickým opatřením.
-{: #usa-autonomie}
-
 ### Indie
 {: .js-toc-ignore .region-indie}
 
@@ -144,13 +143,12 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 **Klimatické finance a sociální spravedlnost:** Indie je rozvojová ekonomika a významný příjemce mezinárodní rozvojové pomoci. Prioritou je zajištění cenově dostupné energie pro stamiliony lidí, kteří se teprve vymaňují z chudoby. Zároveň je Indie aktivní v mezinárodních jednáních, kde usiluje o reformy mezinárodních finančních institucí s cílem zprostředkovat rozvojovým zemím potřebné financování energetické transformace.
 {: #indie-finance}
 
-
 ## Klimatické cíle, hlavní nástroje a řízení
 
 {% include includes-local/chart-panel.html
     id="graf-cile"
-    class="no-foot"
-    title=" "
+    class="no-title no-foot"
+    title="Klimatické cíle EU, USA, Číny a Indie"
     source='národní příspěvky (NDC) a strategie jednotlivých zemí, zpracování Fakta o klimatu'
 %}
 
@@ -163,7 +161,7 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
     slug="zelena-dohoda-pro-evropu"
 %}
 
-**Politiky a strategické dokumenty:** EU je průkopníkem klimatické politiky. V návaznosti na závazky přijaté v rámci Pařížské dohody vytvořila vlastní komplexní systém cílů, regulací a technologických standardů. Klíčovým mezníkem je přijetí zastřešující strategie **Zelená dohoda v roce 2019** a **Evropského klimatického zákona** v roce 2021. Dříve samostatná agenda klimatické politiky se v posledních letech postupně propojuje s řešením **energetické bezpečnosti** a ochranou hospodářské **konkurenceschopnosti**, a to zejména po přijetí Dohody pro čistý průmysl (*Clean Industrial Deal*, CID).
+**Politiky a strategie:** EU je průkopníkem klimatické politiky. V návaznosti na závazky přijaté v rámci Pařížské dohody vytvořila vlastní komplexní systém cílů, regulací a technologických standardů. Klíčovým mezníkem je přijetí zastřešující strategie **Zelená dohoda v roce 2019** a **Evropského klimatického zákona** v roce 2021. Dříve samostatná agenda klimatické politiky se v posledních letech postupně propojuje s řešením **energetické bezpečnosti** a ochranou hospodářské **konkurenceschopnosti**, a to zejména po přijetí Dohody pro čistý průmysl (*Clean Industrial Deal*, CID).
 
 {% include preview-box.html
     title="Jak funguje zpoplatnění emisí v EU?"
@@ -171,7 +169,7 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
     slug="emisni-povolenky-ets"
 %}
 
-**Nástroje:** Nejúčinnějším nástrojem je tržní mechanismus **obchodování s emisními povolenkami** (EU ETS). V sektorech ETS 1 (průmysl a energetika) došlo od roku 2005 ke snížení emisí o polovinu, proto se v rámci ETS 2 od roku 2028 rozšiřuje i na budovy a silniční dopravu. Výnosy z prodeje povolenek financují čisté technologie (Modernizační a Inovační fond) i zmírnění sociálních dopadů (Sociální klimatický fond). Tržní mechanismus doplňují sektorové cíle (podíl OZE, energetická účinnost), technické standardy (emisní limity vozidel) a [zelená taxonomie](/infografiky/taxonomie-eu). Ta definuje, které ekonomické aktivity jsou udržitelné, a přesměrovává tak soukromé investice na jejich podporu.
+**Nástroje:** Nejúčinnějším nástrojem je tržní mechanismus **obchodování s emisními povolenkami** (EU ETS). V sektorech ETS 1 (průmysl a energetika) došlo od roku 2005 ke snížení emisí o polovinu, proto se v rámci ETS 2 od roku 2028 rozšiřuje obchodování i na budovy a silniční dopravu. Výnosy z prodeje povolenek financují čisté technologie (Modernizační a Inovační fond) i zmírnění sociálních dopadů (Sociální klimatický fond). Tržní mechanismus doplňují sektorové cíle (podíl OZE, energetická účinnost), technické standardy (emisní limity vozidel) a [zelená taxonomie](/infografiky/taxonomie-eu). Ta definuje, které ekonomické aktivity jsou udržitelné, a přesměrovává tak soukromé investice na jejich podporu.
 
 **Řízení:** Klimatická politika EU vzniká víceúrovňovým procesem, na kterém se podílejí unijní instituce, členské státy i veřejnost. Legislativní proces stojí na třech pilířích: Evropská komise pravidla navrhuje, zatímco Rada EU (členské státy) a Evropský parlament (reprezentující občany) je společně schvalují. Výsledná legislativa má dvě hlavní formy. Směrnice určuje závazný cíl, ale nechává na státech, aby rozhodly, jakým způsobem cíle dosáhnou. Pro sjednocení pravidel pak slouží nařízení, která jsou plošně účinná ihned po schválení.
 
@@ -185,7 +183,8 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 
 ### USA
 {: .js-toc-ignore .region-usa}
-**Strategie a politiky:** Za Bidenovy administrativy se klimatická politika opírala jak o mezinárodní rámec Pařížské dohody, tak o národní strategie. V roce 2021 vydala Bidenova administrativa dlouhodobou klimatickou strategii s cílem dosáhnout klimatické neutrality do roku 2050. V prosinci 2024 pak, ještě před návratem Trumpa do úřadu, USA zveřejnily aktualizovaný mezinárodní emisní závazek pro rok 2035. S návratem Trumpa **USA odstoupily od Pařížské dohody** a upustily od všech klimatických strategií.
+
+**Politiky a strategie:** Za Bidenovy administrativy se klimatická politika opírala jak o mezinárodní rámec Pařížské dohody, tak o národní strategie. V roce 2021 vydala Bidenova administrativa dlouhodobou klimatickou strategii s cílem dosáhnout klimatické neutrality do roku 2050. V prosinci 2024 pak, ještě před návratem Trumpa do úřadu, USA zveřejnily aktualizovaný mezinárodní emisní závazek pro rok 2035. S návratem Trumpa **USA odstoupily od Pařížské dohody** a upustily od všech klimatických strategií.
 
 **Nástroje:** V USA je energetická transformace poháněna trhem. Hlavními nástroji státu jsou **daňové úlevy**, na nichž stál Bidenův ambiciózní **zákon o snížení inflace** (*Inflation Reduction Act*, IRA). Ten je zavedl pro čisté technologie, jako jsou elektromobily a obnovitelné zdroje. Následná Trumpova administrativa tuto podporu sice zrušila, energetická transformace však pokračuje dál, a to díky přetrvávající ekonomické atraktivitě čistých technologií.
 
@@ -193,7 +192,8 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 
 ### Čína
 {: .js-toc-ignore .region-cina}
-**Politiky a strategie:** Čína si stanovuje své dlouhodobé cíle prostřednictvím mezinárodních závazků v rámci Pařížské dohody. Takto přijala svůj tzv. **dvojí emisní cíl** (*dual carbon target*) zvrácení nárůstu emisí uhlíku do roku 2030 a dosažení uhlíkové neutrality do roku 2060, stejně jako svůj první absolutní emisní cíl pro rok 2035. Detailně však Čína plánuje klimatickou politiku v rámci svých **pětiletých plánů**, v nichž klimatická politika dostala s postupem času vlastní kapitolu.
+
+**Politiky a strategie:** Čína si stanovuje své dlouhodobé cíle prostřednictvím mezinárodních závazků v rámci Pařížské dohody. Takto přijala svůj tzv. **dvojí emisní cíl** (*dual carbon target*): zvrácení nárůstu emisí uhlíku do roku 2030 a dosažení uhlíkové neutrality do roku 2060, stejně jako svůj první absolutní emisní cíl pro rok 2035. Detailně však Čína plánuje klimatickou politiku v rámci svých **pětiletých plánů**, v nichž dostala s postupem času vlastní kapitolu.
 
 **Nástroje:** Rozvoj čistých technologií v Číně stojí především na systému **centrálně stanovených cílů** a **masivní dotační politice**. Stát cíleně financuje výzkum a optimalizaci výrobních procesů, což v kombinaci s kontrolou dodavatelských řetězců a tvrdou konkurencí na domácím trhu vedlo k radikálnímu snížení výrobních nákladů. Díky této veřejné podpoře a obrovským úsporám z rozsahu Čína srazila ceny zelených technologií na minimum, čímž zásadně přispěla k jejich zlevnění po celém světě.
 
@@ -209,11 +209,12 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 
 ### Indie
 {: .js-toc-ignore .region-indie}
+
 **Politiky a strategie:** Klimatická politika Indie se opírá o mezinárodní klimatický rámec pod Pařížskou dohodou, v němž země pravidelně přijímá své mezinárodní závazky. Indie si kromě cíle **klimatické neutrality v roce 2070** stanovila také dva další oficiální cíle pro emisní intenzitu a podíl nefosilních zdrojů na instalovaném výkonu elektráren. Kromě toho Indie přijala zastřešující národní politický rámec [*National Action Plan on Climate Change*](https://moef.gov.in/uploads/2018/04/NAP_E.pdf) (NAPCC) a disponuje řadou sektorových strategií s dalšími indikativními cíli. Například v národním plánu pro elektřinu Indie hodlá vybudovat 280 GW solární kapacity do roku 2030 a v rámci národního plánu pro dopravu si Indie stanovila za cíl dosáhnout 30% podílu elektroaut do stejného roku.
 
 **Nástroje:** Indie staví svou klimatickou politiku na kombinaci různých opatření od přímých dotací přes tržní pobídky až po technologické standardy. Zásadním nástrojem dekarbonizace se staly **elektronické reverzní aukce** (pořádané agenturou SECI), v nichž developeři v reálném čase snižují výkupní ceny elektřiny na minimum výměnou za dlouhodobé kontrakty se státním odběratelem. Tento tržní tlak u velkých zdrojů doplňují cílené dotační programy pro fotovoltaiku na obytných budovách a v zemědělství (např. PM-KUSUM a PM Surya Ghar).
 
-**Řízení:** V Indii je v otázce klimatu vedoucím orgánem *Ministry of New and Renewable Energy*, který je podporován expertními institucemi, jako jsou *NITI Aayog* – vládní think tank zabývající se veřejnou politikou, a *National Institute of Solar Energy* (NISE) – nezávislá výzkumná organizace zaměřená na solární energetiku. V Indii funguje „kooperativní federalismus“: klimatické politiky a strategie jsou přijímány centrální vládou a státy a svazová území se na implementaci výrazně podílejí tím, že si mohou přizpůsobit strategie svým specifickým podmínkám.
+**Řízení:** V Indii je v otázce klimatu vedoucím orgánem *Ministry of New and Renewable Energy*, který je podporován expertními institucemi, jako jsou *NITI Aayog* – vládní think tank zabývající se veřejnou politikou, a *National Institute of Solar Energy* (NISE) – výzkumná organizace zaměřená na solární energetiku. V Indii funguje „kooperativní federalismus“: klimatické politiky a strategie jsou přijímány centrální vládou; státy a svazová území se na implementaci výrazně podílejí tím, že si mohou přizpůsobit strategie svým specifickým podmínkám.
 
 ## Energetická soběstačnost (import a export paliv)
 
@@ -229,7 +230,8 @@ Tento text zasazuje přístup EU do globálního kontextu a srovnává jej s př
 
 ### Evropská unie
 {: .js-toc-ignore .region-eu}
-Dovoz pokrývá [~60 %](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/wdn-20260318-1) spotřeby primární energie v EU. Jde tak o **jeden z globálně nejméně soběstačných regionů**. Dříve EU dovážela podstatnou část ropy a zemního plynu z Ruska, po ruské invazi na Ukrajinu v roce 2022 však své dodavatelské řetězce radikálně změnila.
+
+Dovoz pokrývá zhruba [60 %](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/wdn-20260318-1) spotřeby primární energie v EU. Jde tak o **jeden z globálně nejméně soběstačných regionů**. Dříve EU dovážela podstatnou část ropy a zemního plynu z Ruska, po ruské invazi na Ukrajinu v roce 2022 však své dodavatelské řetězce radikálně změnila.
 
 <div class="region-detail region-stats" markdown="1">
 
@@ -237,12 +239,13 @@ Dovoz pokrývá [~60 %](https://ec.europa.eu/eurostat/web/products-eurostat-news
 
 **Zemní plyn:** Z dovozu pochází [85 %](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Energy_statistics_-_an_overview#Energy_dependency) spotřeby plynu v EU. Ruský potrubní plyn byl z velké části nahrazen dodávkami z Norska (to se stalo největším dodavatelem s podílem kolem [30 %](https://energy.ec.europa.eu/news/quarterly-reports-highlight-solar-record-and-progress-away-russian-gas-2025-07-04_en) celkového dovozu) a masivním dovozem zkapalněného plynu z USA a oblasti Perského zálivu.
 
-**Uhlí:** Dovozní závislost u černého uhlí je [~60 %](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Coal_production_and_consumption_statistics#:~:text=In%202024%2C%20solar%20overtook%20coal%20as%20a,of%20hard%20coal%20and%20brown%20coal%2C%202025.) (hnědé se těží lokálně). Hlavní dodavatelské země: USA, Kolumbie, Austrálie, Kazachstán či Jihoafrická republika.
+**Uhlí:** Dovozní závislost u černého uhlí je asi [60 %](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Coal_production_and_consumption_statistics) (hnědé se těží lokálně). Hlavní dodavatelské země: USA, Kolumbie, Austrálie, Kazachstán či Jihoafrická republika.
 
 </div>
 
 ### USA
 {: .js-toc-ignore .region-usa}
+
 USA se díky **rozvoji těžby ropy a plynu z břidlic** [dostaly](https://www.eia.gov/energyexplained/us-energy-facts/imports-and-exports.php) do **pozice vývozce energie**. To jim poskytuje geopolitickou nezávislost a průmyslovou výhodu v podobě levných domácích surovin; zároveň se to promítá i do jejich přístupu ke globálnímu odchodu od fosilních paliv.
 
 <div class="region-detail region-stats" markdown="1">
@@ -251,13 +254,14 @@ USA se díky **rozvoji těžby ropy a plynu z břidlic** [dostaly](https://www.e
 
 **Zemní plyn:** Země je zcela [soběstačná](https://www.energy.gov/sites/default/files/2026-07/Natural%20Gas%20Imports%20and%20Exports%20Monthly%20April%202026.pdf). USA jsou největším producentem plynu a zároveň největším exportérem LNG na světě (zásobují zejména evropské a asijské trhy).
 
-**Uhlí:** Protože americké elektrárny přecházejí na plyn a domácí spotřeba uhlí [klesá](https://www.eia.gov/coal/annual/). Necelou čtvrtinu svého uhlí USA vyváží (do Indie a dalších asijských zemí a nově i do Evropy).
+**Uhlí:** Protože americké elektrárny přecházejí na plyn a domácí spotřeba uhlí [klesá](https://www.eia.gov/coal/annual/), necelou čtvrtinu svého uhlí USA vyváží (do Indie a dalších asijských zemí a nově i do Evropy).
 
 </div>
 
 ### Čína
 {: .js-toc-ignore .region-cina}
-Čína si i přes masivní nárůst spotřeby udržuje **vysokou energetickou soběstačnost** – domácí produkce pokrývá asi [85 %](https://english.www.gov.cn/news/202412/14/content_WS675ce85ac6d0868f4e8edf3d.html) spotřeby primární energie, dovoz tedy jen ~15 %. **V absolutních číslech je však gigantickým dovozcem.** Svou strategickou zranitelnost kompenzuje světově bezprecedentním budováním obnovitelných zdrojů a rozsáhlou domácí těžbou uhlí.
+
+Čína si i přes masivní nárůst spotřeby udržuje **vysokou energetickou soběstačnost** – domácí produkce pokrývá asi [85 %](https://english.www.gov.cn/news/202412/14/content_WS675ce85ac6d0868f4e8edf3d.html) spotřeby primární energie, dovoz tedy jen zhruba 15 %. **V absolutních číslech je však gigantickým dovozcem.** Svou strategickou zranitelnost kompenzuje světově bezprecedentním budováním obnovitelných zdrojů a rozsáhlou domácí těžbou uhlí.
 
 <div class="region-detail region-stats" markdown="1">
 
@@ -271,7 +275,8 @@ USA se díky **rozvoji těžby ropy a plynu z břidlic** [dostaly](https://www.e
 
 ### Indie
 {: .js-toc-ignore .region-indie}
-Indie dováží téměř [40 %](https://www.iea.org/countries/india/energy-mix) své primární energie. Indie má **mimořádně nízkou energetickou soběstačnost**. Zemi s více než miliardovou populací a prudce rostoucí průmyslovou výrobou chybí domácí zdroje ropy a plynu, což její ekonomiku činí **silně závislou na cenách na světových trzích**.
+
+Indie dováží téměř [40 %](https://www.iea.org/countries/india/energy-mix) své primární energie. Indie má **velmi nízkou energetickou soběstačnost**. Zemi s více než miliardovou populací a prudce rostoucí průmyslovou výrobou chybí domácí zdroje ropy a plynu, což její ekonomiku činí **silně závislou na cenách na světových trzích**.
 
 <div class="region-detail region-stats" markdown="1">
 
@@ -294,6 +299,7 @@ Indie dováží téměř [40 %](https://www.iea.org/countries/india/energy-mix) 
 
 ### Evropská unie
 {: .js-toc-ignore .region-eu}
+
 Zatímco globálně emise rostou, EU je **od roku 1990 snížila o [36 %](https://edgar.jrc.ec.europa.eu/report_2026)** (k roku 2025). Největší zásluhu na tom mají energetika a průmysl, kde k poklesu přispěly: útlum využívání uhlí, rozvoj obnovitelných zdrojů a vyšší efektivita výroby. Přesto tyto sektory patří mezi největší zdroje emisí, a to kvůli přetrvávající závislosti EU na zemním plynu. Nejslabším článkem zůstává doprava, kde kvůli pokračujícímu využívání fosilních paliv emise klesly jen minimálně a v mnoha členských státech stále rostou. I přes dosavadní úspěchy však není jisté, zda EU svých ambiciózních klimatických cílů dosáhne. Proto bude naprosto klíčové důsledné zavádění dalších klimatických opatření a politik samotnými členskými státy.
 
 <div class="region-stats" markdown="1">
@@ -302,12 +308,13 @@ Zatímco globálně emise rostou, EU je **od roku 1990 snížila o [36 %](https:
 
 <i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **7,06 t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **16,27 %**
+<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **16,3 %**
 
 </div>
 
 ### USA
 {: .js-toc-ignore .region-usa}
+
 Na rozdíl od EU **snížily** USA **své emise oproti roku 1990 pouze o [3 %](https://edgar.jrc.ec.europa.eu/report_2026)**. Největší pokles zaznamenala energetika, a to hlavně díky přechodu z uhlí na levný zemní plyn po břidlicové revoluci (tzv. *Shale Boom*) v roce 2005. Největším znečišťovatelem se tak stala doprava, kde za vysokými emisemi stojí extrémní závislost na osobních autech a rozlehlost amerických měst. Energetika však stále zůstává vysoce znečišťujícím sektorem, a to proto, že USA jsou největším producentem a vývozcem ropy a zemního plynu. Navzdory Trumpově klimaskeptické politice predikce ukazují, že USA jsou na cestě ke snížení emisí [o 26 % až 41 %](https://rhg.com/research/taking-stock-2025/) do roku 2040 oproti hodnotám z roku 2005 a [k dekarbonizaci v roce 2058](https://www.dnv.com/energy-transition-outlook/north-america/). Klíčový je trh, který pod tlakem globální ekonomiky pohání rozvoj čistých technologií, a to navzdory všem překážkám ze strany americké vlády.
 
 <div class="region-stats" markdown="1">
@@ -316,12 +323,13 @@ Na rozdíl od EU **snížily** USA **své emise oproti roku 1990 pouze o [3 %](h
 
 <i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **17,53 t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **23,52 %**
+<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **23,5 %**
 
 </div>
 
 ### Čína
 {: .js-toc-ignore .region-cina}
+
 Jako „světová továrna“ a prudce se rozvíjející ekonomika je Čína největším globálním emitentem; její **emise však v posledních dvou letech stagnují,** a to díky masivnímu rozvoji obnovitelných zdrojů energie. Tento trend vytváří paradox, kdy je země zároveň největším znečišťovatelem i světovým lídrem v kapacitě OZE. Klíčovým zdrojem znečištění zůstává sektor výroby elektřiny a tepla poháněný uhlím. Naopak doprava tvoří pouhých [7 %](https://edgar.jrc.ec.europa.eu/report_2026) čínských emisí, mnohem méně, než je tomu u vyspělých ekonomik. Svůj podíl má na tom velký rozvoj elektromobility.
 
 <div class="region-stats" markdown="1">
@@ -330,12 +338,13 @@ Jako „světová továrna“ a prudce se rozvíjející ekonomika je Čína nej
 
 <i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **11,11 t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **15,42 %**
+<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **15,4 %**
 
 </div>
 
 ### Indie
 {: .js-toc-ignore .region-indie}
+
 Indie je příkladem rychle se rozvíjející ekonomiky, jejíž emise prudce rostou. Přesto **nárůst emisí v poslední době výrazně zpomaluje**, a to zejména díky masivní výstavbě solárních parků, která zároveň zásadně přispěla k tomu, aby měli všichni obyvatelé Indie přístup k elektřině. Na rozdíl od ostatních zemí je v Indii jedním z největších znečišťovatelů sektor zemědělství, který je významným zdrojem emisí metanu a je zodpovědný za pětinu všech emisí. Nejvíce znečišťujícím sektorem však zůstává výroba elektřiny a tepla, kde je Indie, podobně jako Čína, závislá na uhlí.
 
 <div class="region-stats" markdown="1">
@@ -344,7 +353,7 @@ Indie je příkladem rychle se rozvíjející ekonomiky, jejíž emise prudce ro
 
 <i class="fa-solid fa-user stat-icon" aria-hidden="true"></i> Emise na hlavu: **3,11 t CO<sub>2</sub>eq**
 
-<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **3,57 %**
+<i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i> Podíl na historických emisích CO<sub>2</sub>: **3,6 %**
 
 </div>
 
@@ -361,18 +370,22 @@ Indie je příkladem rychle se rozvíjející ekonomiky, jejíž emise prudce ro
 
 #### Evropská unie
 {: .js-toc-ignore .region-eu}
+
 V posledních letech začínají v unijním mixu výroby elektřiny hrát **zásadní roli nízkoemisní zdroje** a podíl zemního plynu na výrobě elektřiny se snižuje. Aktuálně **[71 %](https://ember-energy.org/latest-insights/european-electricity-review-2026/) elektřiny pochází z čistých zdrojů** (vítr, slunce, biomasa, vodní energie nebo jádro) a z toho [30 p. b.](https://ember-energy.org/latest-insights/european-electricity-review-2026/) obstarávají solární a větrná energie. V EU největší rozvoj zažívá solární energetika: v posledních pěti letech produkce elektřiny ze slunce rostla meziročně o [21 %](https://ember-energy.org/latest-insights/european-electricity-review-2026/). Zároveň rok 2025 byl rokem, kdy ze slunce a větru pocházelo víc elektřiny než z fosilních zdrojů ve 14 z 27 členských zemí EU.
 
 #### USA
 {: .js-toc-ignore .region-usa}
+
 Přestože se OZE v USA začaly rozvíjet později a o něco pomaleji, i USA zažívají v posledních letech prudký **rozvoj solární a větrné energie**. Aktuálně **[43 %](https://ember-energy.org/countries-and-regions/united-states-of-america/) elektřiny pochází z čistých zdrojů** a z toho [19 p. b.](https://ember-energy.org/countries-and-regions/united-states-of-america/) ze slunce a větru. Podíl elektřiny z obnovitelných zdrojů je v některých amerických státech ještě vyšší. Například v Kalifornii dosahuje přibližně [60 %](https://www.chooseenergy.com/data-center/electricity-sources-by-state/). V Kansasu [50 %](https://www.chooseenergy.com/data-center/electricity-sources-by-state/) elektřiny pochází pouze z větru.
 
 #### Čína
 {: .js-toc-ignore .region-cina}
+
 Čínský **mix výroby elektřiny byl historicky postaven na uhelných zdrojích**. To se ale v posledních letech mění. Čína je **regionem s největším nárůstem solární a větrné kapacity** ve velmi krátké době. Elektřina z obnovitelných zdrojů tak z velké části uspokojuje rostoucí poptávku po elektřině a rok 2025 byl prvním rokem, kdy solární a větrná kapacita byla vyšší než ta uhelná. Aktuálně **[42 %](https://ember-energy.org/countries-and-regions/china/) elektřiny pochází z čistých zdrojů**, z toho polovina z větru a slunce.
 
 #### Indie
 {: .js-toc-ignore .region-indie}
+
 Podobně jako Čína se i Indie potýká s prudkým nárůstem poptávky po elektřině a její **mix je založený především na uhlí**. V posledních pěti letech však Indie masivně staví solární zdroje a bateriová úložiště. Podíl elektřiny z OZE tak rychle roste, zatímco podíl elektřiny z uhlí se snížil [ze 75 % v roce 2023 na 71 % v roce 2025](https://ember-energy.org/latest-insights/global-electricity-review-2026/). Aktuálně tak **[27 %](https://ember-energy.org/countries-and-regions/india/) elektřiny pochází z čistých zdrojů** a z toho [14 p. b.](https://ember-energy.org/countries-and-regions/india/) ze slunce a větru.
 
 ### Rozvoj obnovitelných zdrojů
@@ -396,8 +409,7 @@ Právě rozšiřování kapacity obnovitelných zdrojů je oblast, kde rozvojov�
 
 ### Elektromobilita
 
-
-V oblasti elektromobility je **Čína jasným světovým lídrem**. Na domácím trhu tvoří elektromobily již přes polovinu prodejů nových aut a čínští výrobci ovládají i globální scénu. V roce 2025 [60 %](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary) celosvětově prodaných elektromobilů pocházelo z Číny, zatímco z EU a USA pocházelo shodně pouze [15 %](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary).
+V oblasti elektromobility je **Čína jasným světovým lídrem**. Na domácím trhu tvoří elektromobily již přes polovinu prodejů nových aut a čínští výrobci ovládají i globální scénu. V roce 2025 pocházelo z Číny [60 %](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary) celosvětově prodaných elektromobilů, zatímco z EU a USA pocházelo shodně pouze [15 %](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary).
 
 {% include includes-local/chart-panel.html
     id="graf-elektromobily"
@@ -410,9 +422,9 @@ Elektrifikace je vedle výstavby OZE druhým pilířem dekarbonizace. K jejímu 
 
 Čína vede zejména díky rychlé instalaci tepelných čerpadel a rozvoji elektromobility. Role uhlí v sektoru budov a průmyslu tak klesá a elektřina se v těchto odvětvích stala hlavním zdrojem energie, rychle posiluje i v dopravě. Důležité je také posilování přenosových soustav a velká výstavba bateriových úložišť, které umožňují rychlou integraci OZE do elektrické sítě.
 
-Oproti tomu míra elektrifikace v USA a EU už od roku 2010 stagnuje na hodnotách kolem 22 %, a to zejména kvůli nedostatečné kapacitě elektrické sítě a chybějícím bateriovým uložištím.
+Oproti tomu míra elektrifikace v USA a EU už od roku 2010 stagnuje na hodnotách kolem 22 % (mimo jiné kvůli nedostatečné kapacitě elektrické sítě).
 
-Elektrifikace v Indii je sice pomalejší, ale to se v posledních letech mění. Pohání ji rychlá výstavba OZE, zejména velkých solárních parků, doplněná rozvojem rezidenční a zemědělské fotovoltaiky a instalací elektrických čerpadel. Odbyt elektromobilů neroste tak rychle, s podporou vlády však dochází k rychlé elektrifikaci dvou- a tříkolových vozidel, která aktuálně tvoří přes [88 %](https://www.imarcgroup.com/india-electric-two-wheeler-market#:~:text=Table_content%3A%20%7C%20Report%20Features%20%7C%20Details%20%7C,Okinawa%20Autotech%2C%20Revolt%20Intellicorp%20Private%20Limited%2C%20etc.) všech prodaných elektrovozidel.
+Elektrifikace v Indii je sice pomalejší, ale to se v posledních letech mění. Pohání ji rychlá výstavba OZE, zejména velkých solárních parků, doplněná rozvojem rezidenční a zemědělské fotovoltaiky a instalací elektrických čerpadel. Odbyt elektromobilů neroste tak rychle, s podporou vlády však dochází k rychlé elektrifikaci dvou- a tříkolových vozidel, která aktuálně tvoří přes [88 %](https://www.imarcgroup.com/india-electric-two-wheeler-market) všech prodaných elektrovozidel.
 
 {% include includes-local/chart-panel.html
     id="graf-elektrifikace"
@@ -445,7 +457,7 @@ Samotná výše investic však přímo neodráží skutečné tempo dekarbonizac
 
 {% include figure.html
     name="cop30-zaverecne-plenum.jpg"
-    caption="Vyjednavači se radí u stolu předsednictví během přestávky v závěrečném plenárním zasedání COP30 v Belému."
+    caption="Vyjednavači se radí u stolu předsednictví během přestávky v závěrečném plenárním zasedání COP30 v Belému"
     alt="Fotografie skupiny vyjednavačů, kteří se skloněni radí kolem sedícího muže u stolu s cedulkou COP President"
     source-text="UN Climate Change, Flickr"
     source-url="https://www.flickr.com/photos/unfccc/54940354665/"
@@ -453,16 +465,20 @@ Samotná výše investic však přímo neodráží skutečné tempo dekarbonizac
 
 ### Evropská unie
 {: .js-toc-ignore .region-eu}
+
 EU je **dlouhodobým lídrem v mezinárodní klimatické politice**. Ambiciózní cíle [prosazovala](https://climate.ec.europa.eu/news-other-reads/news/historic-climate-deal-paris-eu-leads-global-efforts-2015-12-12_en) již od podpisu Rámcové úmluvy OSN o změně klimatu (*United Nations Framework Convention on Climate Change*, UNFCCC) v roce 1992 i při vyjednání [Pařížské dohody](https://mzp.gov.cz/cz/zahranicni-vztahy/mezinarodni-smlouvy-v-oblasti-zivotniho-prostredi/parizska-dohoda) v roce 2015. Její vystupování však bývá komplikované a nejednotné. Jelikož je životní prostředí sdílenou kompetencí, musí EU před jednáními složitě hledat shodu mezi všemi členskými státy. Na mezinárodní úrovni ji pak reprezentují Evropská komise a aktuální předsednická země Rady EU. Jednání se účastní také předseda Evropské rady a své delegace vysílají i samotné členské státy, aby mohly hájit své individuální zájmy.
 
 ### USA
 {: .js-toc-ignore .region-usa}
+
 USA hrají v klimatických jednáních **klíčovou roli díky svému ekonomickému vlivu** a vysokým emisím. Do jednání jsou zapojeny od přijetí UNFCCC v roce 1992, prosazují však spíše flexibilní a tržní mechanismy než závazné emisní cíle. Z toho důvodu neratifikovaly Kjótský protokol. V roce 2014 USA [oznámily](https://obamawhitehouse.archives.gov/the-press-office/2014/11/11/us-china-joint-announcement-climate-change) s Čínou společné klimatické kroky a později se připojily k Pařížské dohodě, která umožňuje státům stanovovat si vlastní dobrovolné cíle. Přesto USA za vlády Donalda Trumpa od Pařížské dohody odstoupily a oznámily také odstoupení od UNFCCC.
 
 ### Čína
 {: .js-toc-ignore .region-cina}
-Čína je smluvní stranou UNFCCC a připojila se ke Kjótskému protokolu i Pařížské dohodě. **Prosazuje princip společné, ale rozdílné odpovědnosti** a nadále **trvá na statusu rozvojové země**, který jí dává větší flexibilitu při snižování emisí. Přestože sama finanční pomoc nepožaduje, poskytuje ji jiným rozvojovým státům skrze vlastní iniciativy (jako *South–South Cooperation* nebo *Belt and Road Initiative*). Do mezinárodních jednání se zapojuje stále aktivněji a akcentuje obchodní spolupráci, což jí pomáhá posilovat globální vliv a podporovat domácí sektor čistých technologií. Dělá to však spíše z ekonomických a mocenských důvodů, a ne pro záchranu klimatu. Proto mnozí pozorovatelé nevěří, že by se Čína ujala role lídra v mezinárodních klimatických jednáních.
+
+Čína je smluvní stranou UNFCCC a připojila se ke Kjótskému protokolu i Pařížské dohodě. **Prosazuje princip společné, ale rozdílné odpovědnosti** a nadále **trvá na statusu rozvojové země**, který jí dává větší flexibilitu při snižování emisí. Přestože sama finanční pomoc nepožaduje, poskytuje ji jiným rozvojovým státům skrze vlastní iniciativy (jako *South–South Cooperation* nebo *Belt and Road Initiative*). Do mezinárodních jednání se zapojuje stále aktivněji a akcentuje obchodní spolupráci, což jí pomáhá posilovat globální vliv a podporovat domácí sektor čistých technologií. Podle západní interpretace to však dělá spíše z ekonomických a mocenských důvodů, a ne pro záchranu klimatu. Proto mnozí pozorovatelé nevěří, že by se Čína ujala role lídra v mezinárodních klimatických jednáních.
 
 ### Indie
 {: .js-toc-ignore .region-indie}
+
 Jakožto velký **zastánce multilateralismu** je Indie aktivním členem mezinárodních jednání a podporuje mezinárodní spolupráci. Dlouhodobě prosazuje **princip společné, ale rozdílné odpovědnosti** a klimatické spravedlnosti. Tyto zásady nevyužívá ke zbavení se odpovědnosti, ale k získání potřebné flexibility pro svůj rozvoj. Dlouhodobě požaduje předvídatelné a dostatečné klimatické finance ze strany vyspělých států, které hodnotí jako nezbytné pro dekarbonizaci rozvojového světa. Za tímto účelem se kromě mezinárodních klimatických jednání zapojuje do řady iniciativ, které také vede. Jejich cílem je reformovat mezinárodní finanční instituce a zpřístupnit finance pro energetickou transformaci a ochranu klimatu rozvojovým státům.
