@@ -1,0 +1,20 @@
+{%- comment -%}
+A d3 chart in the CBAM / ETS dashboard style: a title, an empty <svg> the page
+script draws into (legend and unit caption included, so the PNG/SVG export
+carries them), and the shared source / download foot (chart-foot.html).
+Styles: assets-local/_chart-panel.scss.
+
+The title is a div, not an h2, so it stays out of the article's table of contents.
+
+Params: id (required), title, source (HTML, e.g. '<a href="…">Ember</a>'),
+class (extra classes on the panel: no-title hides the title on the page, the
+export keeps it at data-export-size; no-foot hides the source / download line)
+{%- endcomment -%}
+{%- capture panel_source %}Zdroj: {{ include.source }}{% endcapture -%}
+{%- capture panel_svg %}{{ include.id }}-svg{% endcapture -%}
+{%- capture panel_title %}{{ include.id }}-title{% endcapture -%}
+<div class="d3-panel {{ include.class }}" id="{{ include.id }}">
+  <div class="d3-title" id="{{ panel_title }}" data-export-size="21">{{ include.title }}</div>
+  <svg id="{{ panel_svg }}"></svg>
+  {% include includes-local/chart-foot.html svg=panel_svg file=include.id title_from=panel_title source=panel_source %}
+</div>
