@@ -40,6 +40,13 @@
     .map(([k, v]) => [k, TEXT.includes(k) ? v : v === "" ? null : +v])));
 
   const tip = fokTooltip(theme);
+  // A touch never leaves the mark it tapped: its tooltip stays until the next tap or a scroll.
+  const leave = (ev, fn) => { if (ev.pointerType !== "touch") fn(); };
+  addEventListener("scroll", () => tip.hide(), { passive: true });
+  const hover = (sel, html) => sel
+    .on("pointerenter", (ev, d) => { tip.show(html(d)); tip.move(ev); })
+    .on("pointermove", ev => tip.move(ev))
+    .on("pointerleave", ev => leave(ev, tip.hide));
 
   // Width of `text` at `size` px in the chart font. Measured on a canvas, so
   // before the webfont loads it measures the fallback; pages redraw once
@@ -55,161 +62,55 @@
   // curve bends it: its two control points as [along, across] the chord, in chord lengths.
   const LAYOUT = {
     "graf-slozky-ceny-cz": {
-      "wide": {
-        "vat": {
-          "dx": -4,
-          "dy": -41,
-          "curve": [
-            0.326,
-            0.238,
-            0.485,
-            -0.395
-          ]
-        },
-        "tax": {
-          "dx": -1,
-          "dy": -17
-        },
-        "netc": {
-          "dx": -2,
-          "dy": 19,
-          "curve": [
-            0.429,
-            -0.175,
-            0.48,
-            0.246
-          ]
-        },
-        "nrg": {
-          "dx": -1,
-          "dy": -42
-        }
-      }
+      wide: {
+        vat: { dx: -4, dy: -41, curve: [0.326, 0.238, 0.485, -0.395] },
+        tax: { dx: -1, dy: -17 },
+        netc: { dx: -2, dy: 19, curve: [0.429, -0.175, 0.48, 0.246] },
+        nrg: { dx: -1, dy: -42 },
+      },
     },
     "graf-spot-dynamicke": {
-      "wide": {
-        "poznamka": {
-          "dx": 158,
-          "dy": 117,
-          "curve": [
-            0.339,
-            0.206,
-            0.636,
-            0.307
-          ],
-          "start": [
-            -8,
-            -3
-          ],
-          "tip": [
-            1,
-            -6
-          ]
-        }
-      }
+      wide: {
+        poznamka: { dx: 158, dy: 117, curve: [0.339, 0.206, 0.636, 0.307], start: [-8, -3], tip: [1, -6] },
+      },
     },
     "graf-spot-fixovane": {
-      "wide": {
-        "poznamka": {
-          "dx": 8,
-          "dy": 135,
-          "start": [
-            14,
-            -16
-          ],
-          "curve": [
-            0.25,
-            0.55,
-            0.75,
-            0.55
-          ]
-        }
-      }
+      wide: {
+        poznamka: { dx: 8, dy: 135, start: [14, -16], curve: [0.25, 0.55, 0.75, 0.55] },
+      },
     },
     "graf-ceny-eu-komponenty": {
-      "wide": {
-        "zaporne": {
-          "dx": -11,
-          "dy": 14,
-          "curve": [
-            0.287,
-            -0.413,
-            0.72,
-            -0.3
-          ]
-        }
-      }
+      wide: {
+        zaporne: { dx: -11, dy: 14, curve: [0.287, -0.413, 0.72, -0.3] },
+      },
     },
     "graf-naklady-nemecko": {
-      "wide": {
-        "kriz": {
-          "curve": [
-            0.337,
-            -0.234,
-            0.452,
-            0.365
-          ]
-        }
-      }
+      wide: {
+        kriz: { curve: [0.337, -0.234, 0.452, 0.365] },
+      },
     },
     "graf-slevy": {
-      "wide": {
-        "poznamka": {
-          "dx": -17,
-          "dy": -18,
-          "curve": [
-            0.378,
-            0.202,
-            0.531,
-            -0.334
-          ]
-        }
-      }
+      wide: {
+        poznamka: { dx: -17, dy: -18, curve: [0.378, 0.202, 0.531, -0.334] },
+      },
     },
     "graf-zastropovane": {
-      "wide": {
-        "poznamka": {
-          "curve": [
-            0.506,
-            0.127,
-            0.381,
-            -0.331
-          ],
-          "start": [
-            85,
-            -12
-          ],
-          "tip": [
-            -5,
-            18
-          ]
-        }
-      }
+      wide: {
+        poznamka: { curve: [0.506, 0.127, 0.381, -0.331], start: [85, -12], tip: [-5, 18] },
+      },
     },
     "graf-scatter-site": {
-      "wide": {
-        "belgie": {
-          "dx": 7,
-          "dy": -23
-        },
-        "nizozemsko": {
-          "dx": 150,
-          "dy": 127
-        }
-      }
+      wide: {
+        belgie: { dx: 7, dy: -23 },
+        nizozemsko: { dx: 150, dy: 127 },
+      },
     },
     "graf-scatter-plyn": {
-      "wide": {
-        "rostla": {
-          "dx": 30,
-          "dy": -1
-        },
-        "finsko": {
-          "dx": 18,
-          "dy": 14
-        }
-      }
-    }
+      wide: {
+        rostla: { dx: 30, dy: -1 },
+        finsko: { dx: 18, dy: 14 },
+      },
+    },
   };
   const variantOf = w => w < 500 ? "narrow" : "wide";
 
@@ -312,12 +213,7 @@
       .attr("x", barX).attr("width", barW)
       .attr("y", p => y(p.y0 + p.v)).attr("height", p => y(p.y0) - y(p.y0 + p.v))
       .attr("fill", p => p.color).attr("stroke", "#fff").attr("stroke-width", 1)
-      .on("mouseover", (ev, p) => {
-        tip.show(`<strong>${p.label}</strong><br>${num(p.v)} ${UNIT} (${num(p.v / total * 100, 1)} %)`);
-        tip.move(ev);
-      })
-      .on("mousemove", ev => tip.move(ev))
-      .on("mouseleave", () => tip.hide());
+      .call(hover, p => `<strong>${p.label}</strong><br>${num(p.v)} ${UNIT} (${num(p.v / total * 100, 1)} %)`);
 
     g.selectAll("text.val").data(parts.filter(p => y(p.y0) - y(p.y0 + p.v) >= 18)).join("text")
       .attr("class", "val").attr("x", barX + barW / 2).attr("y", p => y(p.y0 + p.v / 2)).attr("dy", "0.35em")
@@ -361,7 +257,8 @@
   function countryBarWidth(width) {
     const ticks = [0, 0.1, 0.2, 0.3, 0.4];
     const left = fokAxisYWidth(d3.scaleLinear().domain([0, 0.4]), { tickValues: ticks, tickFormat: v => num(v) }, theme);
-    return (width - left - 2) / (27 - COUNTRY_PADDING + 2 * COUNTRY_PADDING) * (1 - COUNTRY_PADDING);
+    const n = Object.keys(ISO2).length;
+    return (width - left - 2) / (n - COUNTRY_PADDING + 2 * COUNTRY_PADDING) * (1 - COUNTRY_PADDING);
   }
   // Height of the country charts in px per €/kWh, the same in both, so that a
   // bar is as tall in one as in the other; narrower on phones.
@@ -404,9 +301,9 @@
 
   // Bars by country, highest first, Česko darker and bold. Plain (o.stacked
   // false: the total) or the components stacked, negative ones hatched below
-  // zero, with the total as a marker. o: { rows, stacked, top, extras(g, s) }
-  // where `top` is the height the chart's own things above the y label take
-  // (drawn by o.above(svg, width) → height) and extras draws over the plot.
+  // zero, with the total as a marker. o: { rows, stacked, labels, above, extras(g, s) }
+  // where o.above(svg, width, fontSize) draws the chart's own things above the
+  // y label and returns their height, and extras draws over the plot.
   function countryBars(svg, ctx, o) {
     const narrow = variantOf(ctx.width) === "narrow", fontSize = narrow ? 11 : 12;
     const rows = o.rows.slice().sort((a, b) => b.total - a.total);
@@ -435,10 +332,6 @@
     const g = svg.append("g").attr("transform", `translate(${left},${plotTop})`);
     g.append("g").call(fokAxisY(y, { ...axis, gridWidth: innerW }, theme));
 
-    const hover = (sel, html) => sel
-      .on("mouseover", (ev, d) => { tip.show(html(d)); tip.move(ev); })
-      .on("mousemove", ev => tip.move(ev))
-      .on("mouseleave", () => tip.hide());
     const head = r => `<strong>${countryName.of(ISO2[r.Country])}</strong><br>`;
 
     if (!o.stacked) {
@@ -530,6 +423,7 @@
   const CAPTION = [[["Průměrná cena elektřiny"]]];
   // Room right of the last panel for the gridlines' end and the last year label's overhang.
   const RIGHT = GRID_PAD + 8;
+  // The top of the line charts' scale: at least Y_MAX, more if the data go higher.
   const Y_MAX = 0.38, X_TICKS = [2017, 2020, YEAR];
 
   // The width of a small-multiples panel in a row of `slots`, and the gap between panels.
@@ -559,9 +453,11 @@
     const slots = variant === "narrow" ? cols : o.slots ?? cols;
     const nameH = 26, axisH = TICK_GAP + TICK + 28;
     let noteTop = legendH + 8;
-    const ticks = [0, 0.1, 0.2, 0.3];
+    const shown = o.rows.filter(d => o.countries.includes(d.Country) && d.Year >= X_TICKS[0]);
+    const yMax = Math.max(Y_MAX, d3.max(shown, d => d3.max(series, sr => d[sr.key])));
+    const ticks = d3.range(0, Math.floor(yMax * 10 + 1e-9) + 1).map(i => i / 10);
     const axis = { tickValues: ticks, tickFormat: v => num(v) };
-    const y = d3.scaleLinear().domain([0, Y_MAX]).range([PLOT_H[variant], 0]);
+    const y = d3.scaleLinear().domain([0, yMax]).range([PLOT_H[variant], 0]);
     const left = fokAxisYWidth(y, axis, theme) + GRID_PAD;
     // The caption is one line, the unit a second, level with the top tick: room above the plot if the tick is too near its top.
     const topY = y(d3.max(ticks)), captionH = Math.max(6, Math.ceil(lineH + 6 - topY));
@@ -596,22 +492,23 @@
       // The unit after the top tick label, over the data like the library's other axis units.
       if (i === 0) fokAxisYLabel(ax, y, axis, UNIT, { inline: true }, theme);
 
-      if (code === o.note.target.country) {
-        const d = data.find(r => r.Year === o.note.target.year);
-        target = [panelX(i) + x(d.Year) + (o.note.target.dx ?? 0), plotTop + y(d[o.note.target.key]) + (o.note.target.dy ?? 0)];
+      const nt = o.note;
+      if (code === nt.country) {
+        const d = data.find(r => r.Year === nt.year);
+        target = [panelX(i) + x(d.Year) + (nt.dx ?? 0), plotTop + y(d[nt.key]) + (nt.dy ?? 0)];
       }
 
       const rule = p.append("line").attr("y1", 0).attr("y2", y(0))
         .attr("stroke", theme.colors.text).attr("stroke-width", 1).style("display", "none");
       p.append("rect").attr("width", panelW).attr("height", y(0)).attr("fill", "transparent")
-        .on("mousemove", ev => {
+        .on("pointermove", ev => {
           const d = d3.least(data, r => Math.abs(x(r.Year) - d3.pointer(ev)[0]));
           rule.style("display", null).attr("x1", x(d.Year)).attr("x2", x(d.Year));
           tip.show(`<strong>${countryName.of(ISO2[code])}, ${d.Year}</strong><br>` + series.filter(sr => d[sr.key] != null)
             .map(sr => `<span style="color:${sr.color}">■</span> ${sr.label}: ${num(d[sr.key], 3)} ${UNIT}`).join("<br>"));
           tip.move(ev);
         })
-        .on("mouseleave", () => { rule.style("display", "none"); tip.hide(); });
+        .on("pointerleave", ev => leave(ev, () => { rule.style("display", "none"); tip.hide(); }));
     });
 
     // The note: above the panels with its arrow leaving from under the text, or
@@ -677,6 +574,8 @@
     const bw = x.bandwidth(), top = legendH + 14, plotTop = top + nameH + captionH;
     const panelX = i => left + i * (panelW + gapX);
     const sub = narrow ? 9 : 10, subH = sub * 1.25;
+    // The first panel's lowest band: its negative tax, which the note's arrow points into, near its bottom.
+    const neg = Math.min(0, panels[0].rows[0].tax);
     let target;
 
     panels.forEach((pn, i) => {
@@ -701,8 +600,7 @@
           const neg = r[sr.key] < 0;
           p.append("rect").datum(r).attr("x", x(r.band)).attr("width", bw).attr("y", y0).attr("height", h)
             .attr("fill", neg ? "#fff" : part.color)
-            .on("mouseover", (ev, r2) => { tip.show(tipHtml(r2)); tip.move(ev); })
-            .on("mousemove", ev => tip.move(ev)).on("mouseleave", () => tip.hide());
+            .call(hover, tipHtml);
           if (neg) fokHatch(p, x(r.band), y0, bw, h, part.color);
         });
       });
@@ -732,14 +630,14 @@
       runs(p, x(BANDS[4]) + bw, ly + sub * 0.6, i === 0 ? [...last, ...unitsR.map(t => [[t]])] : last,
         theme.colors.grey, sub).attr("text-anchor", "end");
 
-      if (i === 0) target = [panelX(0) + x(BANDS[0]) + bw, plotTop + y(-0.6)];
+      if (i === 0) target = [panelX(0) + x(BANDS[0]) + bw, plotTop + y(0.86 * neg)];
     });
 
     const n = o.note;
     annotation(svg.append("g"), ctx, {
       key: "poznamka", lines: narrow ? n.narrow : n.wide, color: theme.colors.grey, fontSize, target,
       // Wide: the four lines centred on the arrow, which leaves level from their middle.
-      at: [target[0] + (narrow ? 16 : 60), narrow ? plotTop + y(-0.33) : target[1] - 1.5 * lineH],
+      at: [target[0] + (narrow ? 16 : 60), narrow ? plotTop + y(0.47 * neg) : target[1] - 1.5 * lineH],
       from: narrow ? undefined : [-6, 1.5 * lineH],
     });
 
@@ -791,7 +689,7 @@
     const isHl = c => c in o.highlight;
     const drawLines = list => list.forEach(([c, pts]) => {
       const t = trend(pts);
-      if (t) g.append("path").attr("d", d3.line()(t.map(([a, b]) => [x(a), y(b)])).replace(/NaN/g, "0"))
+      if (t) g.append("path").attr("d", d3.line()(t.map(([a, b]) => [x(a), y(b)])))
         .attr("fill", "none").attr("stroke", isHl(c) ? o.highlight[c] : LINE_GREY)
         .attr("stroke-width", isHl(c) ? 2.5 : 1).attr("stroke-linecap", "butt");
     });
@@ -799,8 +697,7 @@
     const drawDots = list => list.forEach(([c, pts]) => g.selectAll(null).data(pts).join("circle")
       .attr("cx", d => x(d.x)).attr("cy", d => y(d.y)).attr("r", isHl(c) ? 3.5 : 2.5)
       .attr("fill", isHl(c) ? o.highlight[c] : DOT_GREY).attr("stroke", "#fff").attr("stroke-width", 0.8)
-      .on("mouseover", (ev, d) => { tip.show(tipHtml(d)); tip.move(ev); })
-      .on("mousemove", ev => tip.move(ev)).on("mouseleave", () => tip.hide()));
+      .call(hover, tipHtml));
     const plain = countries.filter(([c]) => !isHl(c)), picked = countries.filter(([c]) => isHl(c));
     drawLines(plain);
     drawDots(plain);
@@ -855,8 +752,8 @@
 
     const series = d3.stack().keys(EEG.map(k => k.key)).offset(d3.stackOffsetDiverging)(rows);
     const lo = d3.min(series, sr => d3.min(sr, d => d[0])), hi = d3.max(series, sr => d3.max(sr, d => d[1]));
-    const ticks = [-10, 0, 10, 20, 30];
     const domain = [Math.floor(lo * 2) / 2, Math.max(hi, 30)];
+    const ticks = d3.range(Math.ceil(domain[0] / 10), Math.floor(domain[1] / 10) + 1).map(i => i * 10);
     const plotH = Math.round((domain[1] - domain[0]) * EEG_PX[variant]);
     const y = d3.scaleLinear().domain(domain).range([plotH, 0]);
     const axis = { tickValues: ticks, tickFormat: v => num(v, 0).replace("-", "−") };
@@ -892,8 +789,7 @@
         const neg = r[sr.key] < 0;
         g.append("rect").datum(r).attr("x", x(r.year)).attr("width", bw).attr("y", y0).attr("height", h)
           .attr("fill", neg ? "#fff" : c).attr("stroke", "#fff").attr("stroke-width", 0.5)
-          .on("mouseover", (ev, r2) => { tip.show(tipHtml(r2)); tip.move(ev); })
-          .on("mousemove", ev => tip.move(ev)).on("mouseleave", () => tip.hide());
+          .call(hover, tipHtml);
         if (neg) fokHatch(g, x(r.year), y0, bw, h, c);
       });
     });
@@ -951,8 +847,12 @@
   });
 
   csv("electricity-prices-household-bands.csv").then(rows => {
+    const countries = ["NLD", "IRL", "AUT"];
+    const missing = countries.flatMap(c => BANDS.filter(b => !rows.some(d => d.Country === c && d.Year === YEAR && d.Band === b))
+      .map(b => `${c} ${b}`));
+    if (missing.length) return console.warn(`ceny-elektriny-oze: no ${YEAR} band rows for ${missing.join(", ")}`);
     mount("graf-slevy", (svg, ctx) => bandMultiples(svg, ctx, {
-      rows, countries: ["NLD", "IRL", "AUT"],
+      rows, countries,
       // Four lines at every width.
       note: (lines => ({ wide: lines, narrow: lines }))(
         [[["Daňová sleva se v"]], [["Nizozemsku nejvýrazněji"]], [["projevila "], ["u domácností", "b"]], [["s nejnižší spotřebou", "b"]]]),
@@ -968,12 +868,12 @@
       .map(d => ({ Country: d.Country, ...Object.fromEntries(COMPONENTS.map(c => [c.key, c.of(d)])) }))
       .map(d => ({ ...d, total: d3.sum(COMPONENTS, c => d[c.key]) }));
     const eu = year.find(d => d.Country === "EU");
+    if (!eu) console.warn(`ceny-elektriny-oze: no EU row for ${YEAR}, chart 04 drawn without the average`);
     const members = year.filter(d => ISO2[d.Country]);
     if (members.length !== 27) console.warn(`ceny-elektriny-oze: ${members.length} EU members in ${YEAR}`);
 
     // Dvě bodové závislosti: all years, the 27 members (the data's EU average and Norway are left out).
     const dots = rows.filter(d => ISO2[d.Country]);
-    const GREY_BOLD = "b";
     const RED = "#cb4f5f", DARKRED = "#8f0d0d", ORANGE = "#e8582b", PURPLE = "#9a4a88", LILAC = "#c49ac5", TEAL = "#1f8a8f";
     const gas = dots.filter(d => d.GasPrice != null && d.NRG_SUP != null)
       .map(d => ({ c: d.Country, year: d.Year, x: d.GasPrice, y: d.NRG_SUP }));
@@ -989,7 +889,7 @@
           lines: [[["Ceny v "], ["Řecku", "b", DARKRED], [", "], ["Irsku", "b", RED], [" a "], ["Itálii", "b", ORANGE], [" jsou silně"]],
             [["provázané s cenami zemního plynu"]]] },
         { key: "rostla", at: [0.71, 0.3], target: [0.64, 0.238], shape: "elbow",
-          lines: [[["Cena elektřiny téměř "], ["ve všech", GREY_BOLD]], [["státech ", GREY_BOLD], ["rostla", "b", LILAC], [" s cenou zemního"]],
+          lines: [[["Cena elektřiny téměř "], ["ve všech", "b"]], [["státech ", "b"], ["rostla", "b", LILAC], [" s cenou zemního"]],
             [["plynu, jen různým tempem"]]] },
         { key: "finsko", at: [0.81, 0.067],
           lines: [[["Ceny ve "], ["Finsku", "b", PURPLE], [" jsou na"]], [["zemní plyn méně citlivé"]]] },
@@ -1019,7 +919,7 @@
 
     mount("graf-ceny-eu", (svg, ctx) => countryBars(svg, ctx, {
       rows: members,
-      extras: (g, s) => {
+      extras: eu && ((g, s) => {
         g.append("line").attr("x2", s.innerW).attr("y1", s.y(eu.total)).attr("y2", s.y(eu.total))
           .attr("stroke", "#708090").attr("stroke-width", 1).attr("stroke-dasharray", "6 4");
         // Both left-aligned, at the left end of the longer one, which ends at the plot's edge.
@@ -1034,7 +934,7 @@
           key: "poznamka", at: [x0, s.y(eu.total) - 3.2 * s.fontSize * 1.25], background: true,
           lines: note.map(t => [[t]]), color: theme.colors.grey, fontSize: s.fontSize,
         });
-      },
+      }),
     }));
 
     const NOTES = {
@@ -1047,13 +947,14 @@
         atPanel: 3, fromFrac: 0.1, sideNote: true },
     };
     const multiples = (id, countries, note, extra) => mount(id, (svg, ctx) =>
-      lineMultiples(svg, ctx, { rows, countries, note: { ...note, target: note }, ...extra }));
+      lineMultiples(svg, ctx, { rows, countries, note, ...extra }));
     // Three panels in a row of four: the last slot stays free.
     multiples("graf-spot-dynamicke", ["DNK", "ESP", "GRC"], NOTES.dynamicke, { slots: 4 });
     multiples("graf-spot-fixovane", ["CZE", "DEU", "FRA"], NOTES.fixovane, { slots: 4 });
 
     // Zastropování: the same, plus industry's price, four countries.
-    const SERIES_NH = [...SERIES, { key: "NRG_SUP_nh", label: "Průmysl a komerční sféra", color: "#7272bf", kind: "marker" }];
+    const NH_COLOR = "#7272bf";
+    const SERIES_NH = [...SERIES, { key: "NRG_SUP_nh", label: "Průmysl a komerční sféra", color: NH_COLOR, kind: "marker" }];
     csv("electricity-prices-nonhousehold.csv").then(nh => {
       const nhPrice = new Map(nh.map(d => [d.Country + d.Year, d.NRG_SUP]));
       const both = rows.map(d => ({ ...d, NRG_SUP_nh: nhPrice.get(d.Country + d.Year) ?? null }));
@@ -1061,10 +962,10 @@
         rows: both, countries: ["HUN", "BGR", "POL", "SVK"], series: SERIES_NH,
         note: { country: "BGR", year: 2022, key: "SpotPrice", dx: 10, dy: 24, color: theme.colors.grey,
           lines: [[["V Bulharsku se ceny regulují pouze "], ["domácnostem", "c", SERIES[1].color], ["."]],
-            [["Průmysl", "b", "#7272bf"], [" je plně vystaven velkoobchodním výkyvům"]]],
+            [["Průmysl", "b", NH_COLOR], [" je plně vystaven velkoobchodním výkyvům"]]],
           narrow: [[["V Bulharsku se ceny"]], [["regulují pouze "], ["domácnostem", "c", SERIES[1].color], ["."]],
-            [["Průmysl", "b", "#7272bf"], [" je plně vystaven"]], [["velkoobchodním výkyvům"]]],
-          below: true, atPanel: 1, fromFrac: 0.36, target: { country: "BGR", year: 2022, key: "SpotPrice", dx: 10, dy: 24 } },
+            [["Průmysl", "b", NH_COLOR], [" je plně vystaven"]], [["velkoobchodním výkyvům"]]],
+          below: true, atPanel: 1, fromFrac: 0.36 },
       }));
     });
 
