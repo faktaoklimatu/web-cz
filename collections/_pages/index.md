@@ -66,7 +66,7 @@ slug: index
   <div class="section tab-pane fade bg-extralight-gray pt-4 pb-4" id="tab3" role="tabpanel" aria-labelledby="tab-role-3"><div class="container">
     <p class="lead mb-0">Kromě infografik, článků a rešerší tvoříme i materiály pro vzdělávání a zpracováváme odborné studie.</p>
 
-    {% assign featured_slugs = "2026-six-objectives-for-a-successful-capacity-market, 2026-konec-uhli-v-cesku, atlas-dekarbonizace" | split: ", " %}
+    {% assign featured_slugs = "2026-analyza-opatreni-domacnosti, 2026-six-objectives-for-a-successful-capacity-market, atlas-dekarbonizace" | split: ", " %}
     {%- include preview-blocks-expandable.html slugs=featured_slugs rows=1 no_include_tags=true %}
 
     <a href="/publikace" class="btn btn-primary"><i class="fas fa-fw fa-book"></i> Všechny publikace</a>
