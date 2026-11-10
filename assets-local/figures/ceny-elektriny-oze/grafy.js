@@ -50,10 +50,9 @@
     return c.measureText(text).width;
   };
 
-  // Annotation texts sit at a default place, moved by px offsets per chart and
-  // per width ("narrow" under 500 px). With ?dev=1 the texts can be dragged;
-  // "Kopírovat layout" copies the offsets to paste here.
-  // The positions set in ?dev=1 and copied with "Kopírovat layout" (wide only so far).
+  // Where the notes stand: px offsets per chart, width ("wide" from 500 px up; a phone uses the notes' own places)
+  // and note. dx, dy move the text; start and tip move the arrow's ends (from its `from` and `target`);
+  // curve bends it: its two control points as [along, across] the chord, in chord lengths.
   const LAYOUT = {
     "graf-slozky-ceny-cz": {
       "wide": {
@@ -212,31 +211,7 @@
       }
     }
   };
-  const DEV = new URLSearchParams(location.search).has("dev");
-  const STORE = "fok-layout:" + location.pathname;
   const variantOf = w => w < 500 ? "narrow" : "wide";
-  if (DEV) {
-    try { Object.assign(LAYOUT, JSON.parse(localStorage.getItem(STORE)) ?? {}); } catch (e) { /* private mode */ }
-    const bar = d3.select("body").append("div")
-      .style("position", "fixed").style("left", "12px").style("bottom", "12px").style("z-index", 9999)
-      .style("display", "flex").style("gap", "6px");
-    bar.append("button").text("Kopírovat layout").on("click", () => {
-      // Untouched texts leave empty objects behind: dropped, as are the levels they empty.
-      const prune = o => Object.fromEntries(Object.entries(o).flatMap(([k, v]) => {
-        if (Array.isArray(v) || typeof v !== "object") return [[k, v]];
-        const p = prune(v);
-        return Object.keys(p).length ? [[k, p]] : [];
-      }));
-      const json = JSON.stringify(prune(LAYOUT), (k, v) =>
-        typeof v !== "number" ? v : +v.toFixed(k === "dx" || k === "dy" ? 0 : 3), 2);
-      navigator.clipboard.writeText(json);
-      console.log(json);
-    });
-    bar.append("button").text("Reset").on("click", () => {
-      try { localStorage.removeItem(STORE); } catch (e) { /* private mode */ }
-      location.reload();
-    });
-  }
 
   // Lines of runs [text, style, colour?]: "b" bold in the text's colour, "c" the
   // colour, none grey; a third item gives the run its own colour.
@@ -260,73 +235,24 @@
     elbow: (s, t) => [[lerp(s[0], t[0], 0.7), s[1]], [t[0], lerp(s[1], t[1], 0.3)]],
   };
 
-  // A text at `at` (px, moved by the layout's dx, dy), with an arrow from its
-  // first line's left end to `target` if there is one. The arrow's bend is
-  // `curve`: its two control points as [along, across] the chord from text to
-  // target, in chord lengths, so it keeps its shape at any width.
-  // a: { key, at, target?, lines, color, fontSize, anchor?, background?, from?, shape? }
-  // `from`: [dx, dy] from `at`, where the arrow leaves, e.g. under the text;
-  // without it the arrow leaves from the text's left end.
+  // A text at `at` (px, moved by the layout), with an arrow from it to `target` if there is one.
+  // a: { key, at, target?, lines, color, fontSize, anchor?, background?, from?, shape?, maxX? }
+  // `from`: [dx, dy] from `at`, where the arrow leaves, e.g. under the text; without it, from the text's left end.
+  // `maxX`: the furthest right the text may start, whatever the layout moves it by.
   function annotation(g, ctx, a) {
-    const v = ((LAYOUT[ctx.id] ??= {})[variantOf(ctx.width)] ??= {});
-    const o = DEV ? (v[a.key] ??= {}) : (v[a.key] ?? {});
-    // `maxX`: the furthest right the text may start, whatever the layout moves it by.
+    const o = LAYOUT[ctx.id]?.[variantOf(ctx.width)]?.[a.key] ?? {};
     const at = [Math.min(a.at[0] + (o.dx ?? 0), a.maxX ?? Infinity), a.at[1] + (o.dy ?? 0)];
-    // Where the arrow starts, relative to the text's position: the layout's `start` (set by dragging
-    // the square handle in ?dev=1), else the note's `from`, else the text's own left end.
     const fromOff = o.start ?? a.from;
     const s = fromOff ? [at[0] + fromOff[0], at[1] + fromOff[1]] : at;
-    const save = () => {
-      try { localStorage.setItem(STORE, JSON.stringify(LAYOUT)); } catch (e) { /* private mode */ }
-      ctx.redraw();
-    };
-    // Measured against the <svg>: the redraw replaces the group the dragged element was in.
-    const drag = on => d3.drag().container(function () { return this.ownerSVGElement; }).on("drag", on);
 
     if (a.target) {
-      // The arrow's tip: the note's target, moved by the layout's `tip` (the round handle in ?dev=1).
       const t = [a.target[0] + (o.tip?.[0] ?? 0), a.target[1] + (o.tip?.[1] ?? 0)];
       const d = [t[0] - s[0], t[1] - s[1]], p = [-d[1], d[0]];
-      const L2 = d[0] ** 2 + d[1] ** 2 || 1;
       const toPx = (u, n) => [s[0] + u * d[0] + n * p[0], s[1] + u * d[1] + n * p[1]];
-      const toCurve = c => {
-        const r = [c[0] - s[0], c[1] - s[1]];
-        return [(r[0] * d[0] + r[1] * d[1]) / L2, (r[0] * p[0] + r[1] * p[1]) / L2];
-      };
-      // Default: level out of the text, level into the target.
-      const controls = () => o.curve ? [toPx(o.curve[0], o.curve[1]), toPx(o.curve[2], o.curve[3])]
+      // Without a curve in the layout: the shape's default bend.
+      const controls = o.curve ? [toPx(o.curve[0], o.curve[1]), toPx(o.curve[2], o.curve[3])]
         : SHAPES[a.shape ?? "level"](s, t);
-      fokArrow(g, { target: t, textEnd: s, controls: controls(), lines: [], background: false, color: a.color }, theme);
-      if (DEV) {
-        const cs = controls();
-        [[s, cs[0]], [t, cs[1]]].forEach(([from, c]) => g.append("line")
-          .attr("x1", from[0]).attr("y1", from[1]).attr("x2", c[0]).attr("y2", c[1])
-          .attr("stroke", "#1a88ff").attr("stroke-width", 0.75).attr("stroke-dasharray", "2 2"));
-        cs.forEach((c, i) => g.append("circle").attr("cx", c[0]).attr("cy", c[1]).attr("r", 4)
-          .attr("fill", "#fff").attr("stroke", "#1a88ff").attr("stroke-width", 1.5).style("cursor", "grab")
-          .call(drag(ev => {
-            const now = controls();
-            now[i] = [now[i][0] + ev.dx, now[i][1] + ev.dy];
-            o.curve = [...toCurve(now[0]), ...toCurve(now[1])];
-            save();
-          })));
-        // The tip of the arrow: a filled circle.
-        g.append("circle").attr("cx", t[0]).attr("cy", t[1]).attr("r", 5)
-          .attr("fill", "#1a88ff").attr("stroke", "#fff").attr("stroke-width", 1.5).style("cursor", "grab")
-          .call(drag(ev => {
-            const cur = o.tip ?? [0, 0];   // read now: a redraw replaces this handler's closure mid-drag
-            o.tip = [Math.round(cur[0] + ev.dx), Math.round(cur[1] + ev.dy)];
-            save();
-          }));
-        // The start of the arrow: a square, dragged to anywhere (the curve keeps its shape relative to the chord).
-        g.append("rect").attr("x", s[0] - 4).attr("y", s[1] - 4).attr("width", 8).attr("height", 8)
-          .attr("fill", "#fff").attr("stroke", "#1a88ff").attr("stroke-width", 2).style("cursor", "grab")
-          .call(drag(ev => {
-            const cur = o.start ?? a.from ?? [0, 0];   // read now: a redraw replaces this handler's closure mid-drag
-            o.start = [Math.round(cur[0] + ev.dx), Math.round(cur[1] + ev.dy)];
-            save();
-          }));
-      }
+      fokArrow(g, { target: t, textEnd: s, controls, lines: [], background: false, color: a.color }, theme);
     }
 
     // A white halo round the letters keeps gridlines and data from running through them.
@@ -338,18 +264,11 @@
       g.insert("rect", () => text.node()).attr("x", b.x - 4).attr("y", b.y - 2)
         .attr("width", b.width + 8).attr("height", b.height + 4).attr("fill", "#fff");
     }
-    if (DEV) {
-      text.style("cursor", "move").call(drag(ev => {
-        o.dx = (o.dx ?? 0) + ev.dx;
-        o.dy = (o.dy ?? 0) + ev.dy;
-        save();
-      }));
-    }
   }
 
   // Draws into the panel's <svg> now, on every width change and once the
   // webfont is in (labels are measured). `draw(svg, ctx)` returns the height;
-  // ctx is { id, width, redraw }.
+  // ctx is { id, width }.
   function mount(id, draw) {
     const el = document.getElementById(id + "-svg");
     if (!el) return;
@@ -360,7 +279,7 @@
       last = w;
       const svg = d3.select(el);
       svg.selectAll("*").remove();
-      svg.attr("width", w).attr("height", draw(svg, { id, width: w, redraw }));
+      svg.attr("width", w).attr("height", draw(svg, { id, width: w }));
     };
     new ResizeObserver(() => { if (el.parentNode.clientWidth !== last) redraw(); }).observe(el.parentNode);
     document.fonts.ready.then(redraw);
