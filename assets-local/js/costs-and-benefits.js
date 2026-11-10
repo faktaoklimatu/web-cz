@@ -85,10 +85,21 @@
     let x = event.clientX + pad, y = event.clientY + pad;
     if (x + tw > window.innerWidth  - 4) x = event.clientX - tw - pad;
     if (y + th > window.innerHeight - 4) y = event.clientY - th - pad;
+    x = Math.max(4, Math.min(x, window.innerWidth - tw - 4));
+    y = Math.max(4, y);
     tip.style.left = x + 'px';
     tip.style.top  = y + 'px';
   }
   function hideTip() { tip.style.display = 'none'; }
+
+  const MOBILE = window.matchMedia('(max-width: 767.98px)');   // matches the page CSS breakpoint
+
+  // Min column widths and long header texts can outgrow the container on mobile;
+  // widen the SVG to its content so the .wide-figure-mobile scroller reaches the edge.
+  function fitSvgWidth(svg, minW) {
+    const bb = svg.node().getBBox();
+    svg.attr('width', Math.max(minW, Math.ceil(bb.x + bb.width)));
+  }
 
   // ── Global x-axis domain ─────────────────────────────────────────────────
   // Computed once at init across all measures × all parameter combinations.
@@ -243,6 +254,40 @@
       lbl.addEventListener('mouseout',  hideTip);
     });
     updateCarbonLock();
+  }
+
+  // Mobile: the controls bar isn't sticky. Once it scrolls away, a bottom button
+  // with the current settings opens it as a bottom sheet.
+  function setupMobileControls() {
+    const nav    = document.getElementById('secondary-navbar');
+    const toggle = document.getElementById('controls-toggle');
+    const spacer = document.getElementById('controls-spacer');
+    if (!nav || !toggle || !spacer) return;
+    const summary = toggle.querySelector('.controls-toggle-summary');
+
+    const updateSummary = () => {
+      const active = id => document.querySelector(`#${id} .seg-btn.is-active`)?.textContent.trim();
+      const carbon = state.fuelScenario === 'NZ'
+        ? 'uhlík dle scénáře'
+        : document.getElementById('carbon-price-value').textContent;
+      summary.textContent = [active('fuel-scenario-seg'), 'náklady: ' + active('capex-level-seg').toLowerCase(), carbon].join(' · ');
+    };
+    const setOpen = open => {
+      // Keep the page from jumping: the spacer takes the bar's place (incl. its negative margin).
+      spacer.style.height = open ? nav.offsetHeight + parseFloat(getComputedStyle(nav).marginTop) + 'px' : '';
+      nav.classList.toggle('is-sheet', open);
+      toggle.hidden = open;
+    };
+
+    nav.addEventListener('click', updateSummary);
+    nav.addEventListener('input', updateSummary);
+    nav.querySelector('.controls-done').addEventListener('click', () => setOpen(false));
+    toggle.addEventListener('click', () => setOpen(true));
+    new IntersectionObserver(([e]) => {
+      if (!nav.classList.contains('is-sheet')) toggle.hidden = e.isIntersecting;
+    }).observe(nav);
+    MOBILE.addEventListener('change', () => setOpen(false));
+    updateSummary();
   }
 
   // Under Net-zero the carbon price follows the scenario trajectory, so the slider
@@ -528,6 +573,7 @@
     });
 
     rowSel.exit().transition().duration(ANIM_MS).attr('opacity', 0).remove();
+    fitSvgWidth(svg, totalW);
   }
 
   // ── Detailed measure chart ────────────────────────────────────────────────
@@ -902,8 +948,9 @@
     // ── X axis (bottom, grey) ─────────────────────────────────────────────────
     svg.append('g').attr('class', 'chart-axis')
       .attr('transform', `translate(${LABEL_W},${MARGIN.top + rows.length * ROW_H})`)
-      .call(d3.axisBottom(xScale).ticks(5).tickFormat(xAxisFmt))
+      .call(d3.axisBottom(xScale).ticks(chartW < 300 ? 2 : 5).tickFormat(xAxisFmt))
       .call(sel => { sel.selectAll('.tick line').attr('stroke', CLR_SUB); sel.select('.domain').remove(); });
+    fitSvgWidth(svg, totalW);
   }
 
   function renderMeasureChart(container, section, measureName) {
@@ -986,6 +1033,7 @@
   let navRows       = [];     // every clickable row in visual order — drives ←/→ nav in the detail card
 
   function toggleRowDetail(_container, row) {
+    if (MOBILE.matches) return;   // the detail card doesn't fit a phone
     if (openMeasureId === row.measureId) {
       openMeasureId = null;
       openRowMeta   = null;
@@ -1628,6 +1676,7 @@
     // Transport uses fixed group headings (Nové / Ojeté) — no per-measure reordering needed.
 
     setupControls();
+    setupMobileControls();
     renderAll();
     window.addEventListener('resize', renderAll);
 
