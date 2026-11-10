@@ -1082,7 +1082,8 @@
       above: (svg, width, fontSize) => {
         const l = legend(svg.append("g"), LEGEND, width, fontSize);
         legendAt = l.at;
-        return l.h + 2 * fontSize;   // room for the note on negative taxes
+        // Room for the note on negative taxes: on a phone the legend takes two rows and the note hangs lower.
+        return l.h + (variantOf(width) === "narrow" ? 4.4 : 2) * fontSize;
       },
       extras: (g, s) => {
         const [hx, hy] = legendAt.neg;
